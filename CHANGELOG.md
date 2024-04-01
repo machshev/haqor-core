@@ -49,4 +49,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Initial commit ([`a1a531c`](https://github.com/machshev/haqor-core/commit/a1a531c31bde85553302f0c8a6281e66266a256e))
     - Initial commit ([`50258fc`](https://github.com/machshev/haqor-core/commit/50258fcbb73c0dcf8a4f748bf11a2a7407b838a3))
 </details>
-
