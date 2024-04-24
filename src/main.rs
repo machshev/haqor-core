@@ -43,6 +43,11 @@ enum Commands {
     Read { bible: String },
 }
 
+#[derive(Debug, Serialize, Deserialize, Default)]
+struct HaqorConfig {
+    default_bible: String,
+}
+
 fn main() -> Result<()> {
     let cli = Cli::parse();
 
