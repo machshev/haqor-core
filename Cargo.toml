@@ -17,4 +17,4 @@ futures = "0.3.29"
 log = "0.4.22"
 sqlite = "0.36.1"
 reqwest = { version = "0.12", features = ["blocking", "json", "gzip"] }
-anyhow = "1.0.81"
+anyhow = "1.0.90"
