@@ -6,71 +6,41 @@
       url = "github:oxalica/rust-overlay/stable";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    cargo2nix = {
-      url = "github:cargo2nix/cargo2nix/main";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-      inputs.rust-overlay.follows = "rust-overlay";
-    };
   };
 
   outputs = inputs:
     with inputs;
       flake-utils.lib.eachDefaultSystem (
         system: let
+          overlays = [ (import rust-overlay) ];
           pkgs = import nixpkgs {
-            inherit system;
-            overlays = [cargo2nix.overlays.default];
+            inherit system overlays;
           };
 
-          rustPkgs = pkgs.rustBuilder.makePackageSet {
-            rustChannel = "stable";
-            rustVersion = "1.86.0";
-            packageFun = import ./Cargo.nix;
-          };
-
-          # The workspace defines a development shell with all of the dependencies
-          # and environment settings necessary for a regular `cargo build`
-          workspaceShell = rustPkgs.workspaceShell {
-            # This adds cargo2nix to the project shell via the cargo2nix flake
-            packages = [
-              cargo2nix.packages."${system}".cargo2nix
-              pkgs.cargo
-              pkgs.cargo-nextest
-              pkgs.cargo-vet
-              pkgs.rustc
-
-              pkgs.rust-analyzer
-              pkgs.rustfmt
-
-              pkgs.adrs
-
-              # If the dependencies need system libs, you usually need pkg-config + the lib
-              pkgs.pkg-config
-              pkgs.openssl
-            ];
-
-            env = {
-              RUST_BACKTRACE = "full";
-            };
-          };
-        in rec {
-          packages = {
-            # replace hello-world with your package name
-            haqor = rustPkgs.workspace.haqor-core {};
-            default = packages.haqor;
-          };
+        in {
 
           devShells = {
-            default = workspaceShell; # nix develop
-          };
+            default = with pkgs; mkShell {
+              buildInputs = [
+                (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default))
+                cargo-nextest
+                cargo-udeps
+                cargo-vet
 
-          apps = rec {
-            haqor = {
-              type = "app";
-              program = "${packages.default}/bin/haqor";
+                rust-analyzer
+                rustfmt
+
+                adrs
+
+                # If the dependencies need system libs, you usually need pkg-config + the lib
+                pkg-config
+                openssl
+
+              ];
+              env = {
+                RUST_BACKTRACE = "full";
+              };
             };
-            default = haqor;
           };
 
           formatter = nixpkgs.legacyPackages.${system}.alejandra;
