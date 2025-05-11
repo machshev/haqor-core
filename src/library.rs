@@ -1,5 +1,6 @@
 // Library of resources
 
+use anyhow::Result;
 use log::info;
 use std::env;
 use std::fs::File;
@@ -27,22 +28,23 @@ impl Default for Library {
 }
 
 impl Library {
-    pub fn get_library(base_path: &Path) -> Library {
-        Library {
+    pub fn get_library(base_path: &Path) -> Result<Library> {
+        Ok(Library {
             base_path: base_path.to_path_buf(),
-        }
+        })
     }
 
-    pub fn save_bible(&self, name: &str, content: &[u8]) {
+    pub fn save_bible(&self, name: &str, content: &[u8]) -> Result<()> {
         let file_path = self.base_path.join(format!("{}.bbl.mybible.gz", name));
 
         info!("Saving bible to {:?}", file_path);
 
-        std::fs::create_dir_all(self.base_path.as_path())
-            .expect("failed to create parent directories");
+        std::fs::create_dir_all(self.base_path.as_path())?;
 
-        let mut out = File::create(file_path).expect("failed to create file");
-        out.write_all(content).expect("failed to write file");
+        let mut out = File::create(file_path)?;
+        out.write_all(content)?;
+
+        Ok(())
     }
 
     pub fn get_bible(&self, name: &str) -> Bible {
@@ -55,7 +57,7 @@ impl Library {
             file_path.exists()
         );
 
-        Bible::load(&name, file_path)
+        Bible::load(&name, file_path).unwrap()
     }
 }
 
@@ -77,7 +79,7 @@ mod tests {
 
     #[test]
     fn test_get_library() {
-        let lib = Library::get_library(Path::new("../test_library"));
+        let lib = Library::get_library(Path::new("../test_library")).unwrap();
 
         assert_eq!(lib.base_path, Path::new("../test_library"));
     }
