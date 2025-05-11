@@ -25,6 +25,7 @@
 //! library. This also means it's easy to implement lookups and searches as SQL
 //! queries.
 
+use anyhow::Result;
 use bytes::Bytes;
 use log::info;
 use reqwest::StatusCode;

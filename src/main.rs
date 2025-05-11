@@ -73,7 +73,7 @@ fn main() -> Result<()> {
             let repo = ResourceRepo::default();
             let bible_data = repo.fetch_bible(&bible).unwrap();
 
-            library.save_bible(&bible, &bible_data);
+            library.save_bible(&bible, &bible_data)?;
         }
         Commands::Read { bible } => {
             let bible: Bible = library.get_bible(&bible);
