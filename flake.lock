@@ -1,49 +1,5 @@
 {
   "nodes": {
-    "cargo2nix": {
-      "inputs": {
-        "flake-compat": "flake-compat",
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "rust-overlay": [
-          "rust-overlay"
-        ]
-      },
-      "locked": {
-        "lastModified": 1744177389,
-        "narHash": "sha256-CFATjAeDep0gOwO6u0PAtKaWF7JiUYeMYKh6TL0Lbqc=",
-        "owner": "cargo2nix",
-        "repo": "cargo2nix",
-        "rev": "0319f4f85433478279a6b8d03033b04d1fda828b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "cargo2nix",
-        "ref": "main",
-        "repo": "cargo2nix",
-        "type": "github"
-      }
-    },
-    "flake-compat": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1696426674,
-        "narHash": "sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "0f9255e01c2351cc7d116c072cb317785dd33b33",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "type": "github"
-      }
-    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -80,7 +36,6 @@
     },
     "root": {
       "inputs": {
-        "cargo2nix": "cargo2nix",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
         "rust-overlay": "rust-overlay"
