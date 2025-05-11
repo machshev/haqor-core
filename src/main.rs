@@ -49,7 +49,8 @@ fn main() -> Result<()> {
     // If $RUST_LOG is not explicitly set, then use the number of -v flags to
     // determine the log level defaulting to Errors only.
     if env::var("RUST_LOG").is_err() {
-        env::set_var(
+        // TODO: Audit that the environment access only happens in single-threaded code.
+        unsafe { env::set_var(
             "RUST_LOG",
             match cli.verbose {
                 0 => "Error",
@@ -57,7 +58,7 @@ fn main() -> Result<()> {
                 2 => "Debug",
                 _ => "Trace",
             },
-        );
+        ) };
     }
     env_logger::init();
 
