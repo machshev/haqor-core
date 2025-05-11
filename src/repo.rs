@@ -25,7 +25,9 @@
 //! library. This also means it's easy to implement lookups and searches as SQL
 //! queries.
 
-use log::debug;
+use bytes::Bytes;
+use log::info;
+use reqwest::StatusCode;
 
 #[derive(Debug)]
 pub struct ResourceRepo {
@@ -43,13 +45,17 @@ impl Default for ResourceRepo {
 }
 
 impl ResourceRepo {
-    pub fn fetch_bible(&self, name: &str) {
+    pub fn fetch_bible(&self, name: &str) -> Result<Bytes, String> {
         let bible_url = format!("{}{}.bbl.mybible.gz", self.url, name);
 
-        let resp = reqwest::blocking::get(bible_url).expect("request failed");
-        let body = resp.bytes().expect("body invalid");
+        info!("Downloading {}", bible_url);
 
-        debug!("Number of bytes {}", body.len());
+        let resp = reqwest::blocking::get(bible_url).expect("request made");
+
+        match resp.status() {
+            StatusCode::OK => Ok(resp.bytes().unwrap()),
+            s => Err(format!("Error: {}", s)),
+        }
     }
 }
 
