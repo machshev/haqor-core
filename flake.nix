@@ -37,9 +37,6 @@
                 openssl
 
               ];
-              env = {
-                RUST_BACKTRACE = "full";
-              };
             };
           };
 

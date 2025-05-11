@@ -33,8 +33,8 @@ impl Library {
         }
     }
 
-    pub fn save_bible(&self, file_name: &str, content: &[u8]) {
-        let file_path = self.base_path.join(format!("{}.bbl.mybible.gz", file_name));
+    pub fn save_bible(&self, name: &str, content: &[u8]) {
+        let file_path = self.base_path.join(format!("{}.bbl.mybible.gz", name));
 
         info!("Saving bible to {:?}", file_path);
 
@@ -46,7 +46,6 @@ impl Library {
     }
 
     pub fn get_bible(&self, name: &str) -> Bible {
-        let name: String = name.to_string();
         let file_path: PathBuf = self.base_path.join(format!("{}.bbl.mybible.gz", name));
 
         log::info!(
@@ -56,7 +55,7 @@ impl Library {
             file_path.exists()
         );
 
-        Bible { name }
+        Bible::load(&name, file_path)
     }
 }
 

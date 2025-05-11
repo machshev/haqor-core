@@ -50,15 +50,17 @@ fn main() -> Result<()> {
     // determine the log level defaulting to Errors only.
     if env::var("RUST_LOG").is_err() {
         // TODO: Audit that the environment access only happens in single-threaded code.
-        unsafe { env::set_var(
-            "RUST_LOG",
-            match cli.verbose {
-                0 => "Error",
-                1 => "Info",
-                2 => "Debug",
-                _ => "Trace",
-            },
-        ) };
+        unsafe {
+            env::set_var(
+                "RUST_LOG",
+                match cli.verbose {
+                    0 => "Error",
+                    1 => "Info",
+                    2 => "Debug",
+                    _ => "Trace",
+                },
+            )
+        };
     }
     env_logger::init();
 
@@ -66,8 +68,12 @@ fn main() -> Result<()> {
 
     match cli.command {
         Commands::Fetch { bible } => {
+            // TODO: These operations should probably be wrapped in a higher level
+            // library.download(name: &str, repo: ResourceRepo)
             let repo = ResourceRepo::default();
-            repo.fetch_bible(&bible);
+            let bible_data = repo.fetch_bible(&bible).unwrap();
+
+            library.save_bible(&bible, &bible_data);
         }
         Commands::Read { bible } => {
             let bible: Bible = library.get_bible(&bible);
