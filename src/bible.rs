@@ -2,6 +2,7 @@
 
 use anyhow::Result;
 use rusqlite::Connection;
+use std::fmt;
 use std::path::PathBuf;
 
 #[derive(Debug)]
@@ -10,11 +11,27 @@ pub struct BibleMeta {
     pub version: String,
 }
 
+impl fmt::Display for BibleMeta {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(
+            f,
+            "Description: {}\nversion: {}",
+            self.description, self.version
+        )
+    }
+}
+
 #[derive(Debug)]
 pub struct Bible {
     pub name: String,
     meta: BibleMeta,
     db: Connection,
+}
+
+impl fmt::Display for Bible {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "Name: {}\n{}", self.name, self.meta)
+    }
 }
 
 impl Bible {
