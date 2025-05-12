@@ -59,6 +59,26 @@ impl Library {
 
         Bible::load(&name, file_path).unwrap()
     }
+
+    pub fn list_bibles(&self) -> Result<Vec<String>> {
+        let bibles: Vec<String> = self
+            .base_path
+            .read_dir()?
+            .map(|entry| {
+                entry
+                    .expect("file exists")
+                    .file_name()
+                    .into_string()
+                    .unwrap()
+                    .split(".")
+                    .nth(0)
+                    .expect("filename contains . seporator")
+                    .into()
+            })
+            .collect();
+
+        Ok(bibles)
+    }
 }
 
 #[cfg(test)]

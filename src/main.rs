@@ -37,10 +37,14 @@ enum Commands {
     #[command(arg_required_else_help = true)]
     Fetch {
         /// Name of the bible to download
-        bible: String,
+        name: String,
     },
+    /// List bibles in library
+    List {},
+    /// Show bible description
+    Show { name: String },
     /// Read bible verse
-    Read { bible: String },
+    Read { name: String },
 }
 
 fn main() -> Result<()> {
@@ -67,18 +71,28 @@ fn main() -> Result<()> {
     let library = Library::default();
 
     match cli.command {
-        Commands::Fetch { bible } => {
+        Commands::Fetch { name } => {
             // TODO: These operations should probably be wrapped in a higher level
             // library.download(name: &str, repo: ResourceRepo)
             let repo = ResourceRepo::default();
-            let bible_data = repo.fetch_bible(&bible).unwrap();
+            let bible_data = repo.fetch_bible(&name).unwrap();
 
-            library.save_bible(&bible, &bible_data)?;
+            library.save_bible(&name, &bible_data)?;
         }
-        Commands::Read { bible } => {
-            let bible: Bible = library.get_bible(&bible);
+        Commands::List {} => {
+            let bibles = library.list_bibles()?;
 
-            info!("Bible: {:?}", bible);
+            print!("{:?}", bibles);
+        }
+        Commands::Show { name } => {
+            let bible: Bible = library.get_bible(&name);
+
+            print!("Bible loaded:\n{}", bible);
+        }
+        Commands::Read { name } => {
+            let bible: Bible = library.get_bible(&name);
+
+            info!("Bible loaded:\n{}", bible);
         }
     }
     Ok(())
