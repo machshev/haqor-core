@@ -2,7 +2,6 @@
 
 use anyhow::Result;
 use log::info;
-use std::env;
 use std::fs::File;
 use std::io::Write;
 use std::path::{Path, PathBuf};
@@ -16,13 +15,6 @@ pub struct Library {
 
 impl Default for Library {
     fn default() -> Self {
-        let base_path: PathBuf = match env::var("HAQOR_LIBRARY_PATH") {
-            Ok(i) => PathBuf::from(i),
-            _ => dirs::data_dir()
-                .expect("Can't access data dir")
-                .join("haqor/library"),
-        };
-
         Library { base_path }
     }
 }

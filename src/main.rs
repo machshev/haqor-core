@@ -7,10 +7,9 @@
 
 use anyhow::Result;
 use clap::{Parser, Subcommand};
+use haqor_core::bible::Bible;
 use log::info;
 use std::env;
-
-use haqor_core::{bible::Bible, library::Library, repo::ResourceRepo};
 
 /// Summarise bible resource
 #[derive(Parser, Debug)]
@@ -33,18 +32,8 @@ struct Cli {
 
 #[derive(Subcommand, Debug)]
 enum Commands {
-    /// Fetch bible from remote repository
-    #[command(arg_required_else_help = true)]
-    Fetch {
-        /// Name of the bible to download
-        name: String,
-    },
-    /// List bibles in library
-    List {},
-    /// Show bible description
-    Show { name: String },
-    /// Read bible verse
-    Read { name: String },
+    /// Get bible verse
+    Get { book: u8, chapter: u8, verse: u8 },
 }
 
 fn main() -> Result<()> {
@@ -68,31 +57,17 @@ fn main() -> Result<()> {
     }
     env_logger::init();
 
-    let library = Library::default();
-
     match cli.command {
-        Commands::Fetch { name } => {
-            // TODO: These operations should probably be wrapped in a higher level
-            // library.download(name: &str, repo: ResourceRepo)
-            let repo = ResourceRepo::default();
-            let bible_data = repo.fetch_bible(&name).unwrap();
+        Commands::Get {
+            book,
+            chapter,
+            verse,
+        } => {
+            info!("Bible reference:{} {}:{}", book, chapter, verse);
 
-            library.save_bible(&name, &bible_data)?;
-        }
-        Commands::List {} => {
-            let bibles = library.list_bibles()?;
+            let bible: Bible = Bible::default();
 
-            print!("{:?}", bibles);
-        }
-        Commands::Show { name } => {
-            let bible: Bible = library.get_bible(&name);
-
-            print!("Bible loaded:\n{}", bible);
-        }
-        Commands::Read { name } => {
-            let bible: Bible = library.get_bible(&name);
-
-            info!("Bible loaded:\n{}", bible);
+            println!("{}", bible.get(book, chapter, verse)?)
         }
     }
     Ok(())
