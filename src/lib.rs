@@ -13,7 +13,3 @@
 
 /// utilities for interacting with bible resources
 pub mod bible;
-/// Library of bible resources
-pub mod library;
-/// Interact with external repositories of bible resources
-pub mod repo;
