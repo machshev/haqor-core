@@ -13,16 +13,16 @@ Accepted
 When switching between projects it's a challenge to make sure the development
 environment is set up as required for each project. We want to make it easy for
 anyone to quickly set up a development environment and focus on the development
-itself and not on seting up toolchains.
+itself and not on setting up toolchains.
 
-In the context of this ADR we are defining development enviroment as the
+In the context of this ADR we are defining development environment as the
 toolchains and the dependencies, rather than the IDE and configuration of the
-IDE itself. We asume that each developer has their own editor configuration as
+IDE itself. We assume that each developer has their own editor configuration as
 they like it and so this is explicitly out of scope.
 
 ## Decision
 
-Provide flake based nix development shell with a working set of dependancies.
+Provide flake based nix development shell with a working set of dependencies.
 NixOS is not required to use this, nix can be used on your favourite distro.
 It's not required to use the nix devshell, but should simplify the setup for
 those who want to use it.
