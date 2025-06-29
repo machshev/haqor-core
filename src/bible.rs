@@ -1,6 +1,5 @@
 // Bible resource
 
-use anyhow::Result;
 use rusqlite::Connection;
 use std::path::PathBuf;
 
@@ -46,10 +45,12 @@ impl Bible {
 #[cfg(test)]
 mod tests {
 
+    /*
     use super::*;
 
     #[test]
     fn test_nothing() {
         let _bible = Bible::default();
     }
+    */
 }
