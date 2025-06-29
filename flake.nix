@@ -27,6 +27,7 @@
                 cargo-udeps
                 cargo-vet
                 cargo-about
+                cargo-release
 
                 rust-analyzer
                 rustfmt

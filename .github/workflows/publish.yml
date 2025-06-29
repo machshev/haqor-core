@@ -1,0 +1,68 @@
+on:
+  push:
+    tags:
+      - "*"
+
+name: Publish
+
+jobs:
+
+  build_and_test_linux:
+    name: Build and Test (Linux)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: taiki-e/install-action@nextest
+      - name: "Build and test"
+        run: cargo nextest run --workspace --all-features --no-tests=pass
+
+  crates_io_publish:
+    name: Publish (crates.io)
+    needs:
+      - build_and_test_linux
+
+    environment: cargo
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: cargo-release cache restore
+        id: cargo_release_cache_restore
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.cargo/bin/cargo-release
+          key: ${{ runner.os }}-cargo-release
+
+      - run: cargo install cargo-release
+        if: steps.cargo_release_cache_restore.outputs.cache-hit != 'true'
+
+      - name: cargo-release cache save
+        id: cargo_release_cache_save
+        uses: actions/cache/save@v4
+        if: always() && steps.cargo_release_cache_restore.outputs.cache-hit != 'true'
+        with:
+          path: ~/.cargo/bin/cargo-release
+          key: ${{ runner.os }}-cargo-release
+
+      - name: cargo login
+        env:
+          CRATES_IO_API_TOKEN: ${{ secrets.CRATES_IO_API_TOKEN }}
+        run: |
+          echo "$CRATES_IO_API_TOKEN" | cargo login
+
+      - name: "cargo release publish"
+        run: |
+          cargo release \
+            publish \
+            --workspace \
+            --all-features \
+            --allow-branch HEAD \
+            --no-confirm \
+            --no-verify \
+            --execute
