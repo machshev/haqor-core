@@ -26,11 +26,13 @@
                 cargo-nextest
                 cargo-udeps
                 cargo-vet
+                cargo-about
 
                 rust-analyzer
                 rustfmt
 
                 adrs
+                typos
 
                 sqlitebrowser
 

@@ -70,7 +70,7 @@ Rather than what appears to have happened with SWORD modules, where English is t
 
 Within Haqor, bible text should be in the original language.
 From there words can be indexed by lexical form and morphology.
-Lexicons will be provided that are indexed by lexical form directly rather than some intemediate index number such as strongs numbers.
+Lexicons will be provided that are indexed by lexical form directly rather than some intermediate index number such as strongs numbers.
 Morphology keys can be provided in formats similar to the various "Readers Hebrew Bibles" available in print form.
 
 The exact format of these modules will be defined in further ADRs.

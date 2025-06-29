@@ -1,48 +1,68 @@
-name: Cargo Build & Test
+name: CI
 
 on:
   push:
     branches: ["main"]
   pull_request:
-    branches: ["main"]
+    branches: ["**"]
 
 env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build_and_test:
+
+  fmt:
+    name: Rustfmt
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: nightly
+          components: rustfmt
+
+      - run: cargo fmt --all -- --check
+
+  docs_and_spell_check:
+    name: Docs and Spell Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      RUSTDOCFLAGS: "-Dwarnings"
+    steps:
+      - name: Checkout Actions Repository
+        uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Check spelling
+        uses: crate-ci/typos@master
+
+      - run: cargo doc --no-deps
+
+  clippy:
+    name: Clippy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: nightly
+          components: clippy
+
+      - name: "Run clippy"
+        # we cannot use `--all-features` because `envman` has features that are mutually exclusive.
+        run: |
+          cargo clippy
+
+  build_and_test_linux:
     name: Build and test
     runs-on: ubuntu-latest
-
-    environment: cargo
 
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
-
-      - name: Cache
-        id: cache-publish-action
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
-
-      - name: Build
-        run: cargo build --verbose
-      - name: Test
-        run: cargo test --verbose
-
-      - name: Login into crates.io
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-        run: cargo login ${{ secrets.CARGO_REGISTRY_TOKEN }}
-      - name: Build binaries in "release" mode
-        run: cargo build -r
-      - name: "Package for crates.io"
-        run: cargo package # publishes a package as a tarball
-
-      - name: "Publish to crates.io"
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-        run: cargo publish
+      - uses: taiki-e/install-action@nextest
+      - name: "Build and test"
+        run: cargo nextest run --workspace --all-features --no-tests=pass
