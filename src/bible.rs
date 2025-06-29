@@ -1,7 +1,11 @@
 // Bible resource
 
-use rusqlite::Connection;
-use std::path::PathBuf;
+use rusqlite::{Connection, MAIN_DB};
+use rust_embed::Embed;
+
+#[derive(Embed)]
+#[folder = "data/"]
+struct Asset;
 
 #[derive(Debug)]
 pub struct Bible {
@@ -10,15 +14,11 @@ pub struct Bible {
 
 impl Default for Bible {
     fn default() -> Self {
-        let file_path: PathBuf = dirs::data_dir()
-            .expect("Can't access data dir")
-            .join("haqor/haqor.db");
+        let haqor_db = Asset::get("haqor.db").unwrap();
+        let data = Box::new(haqor_db.data.into_owned());
 
-        if !file_path.exists() {
-            panic!("Bible database file doesn't exist: {:?}", file_path)
-        }
-
-        let db = Connection::open(&file_path).unwrap();
+        let mut db = Connection::open_in_memory().unwrap();
+        db.deserialize_bytes(MAIN_DB, Box::leak(data)).unwrap();
 
         Bible { db }
     }
@@ -32,25 +32,15 @@ impl Bible {
             |row| row.get(0),
         )
     }
-
-    /*        let meta = db.query_row("SELECT Title, Version from Details", (), |row| {
-                Ok(BibleMeta {
-                    description: row.get(0)?,
-                    version: row.get(1)?,
-                })
-            })?;
-    */
 }
 
 #[cfg(test)]
 mod tests {
 
-    /*
     use super::*;
 
     #[test]
-    fn test_nothing() {
+    fn test_database_open() {
         let _bible = Bible::default();
     }
-    */
 }
