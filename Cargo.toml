@@ -18,5 +18,5 @@ log = "0.4.22"
 reqwest = { version = "0.12", features = ["blocking", "json", "gzip"] }
 anyhow = "1.0.81"
 bytes = "1.10.1"
-rusqlite = { version = "0.35.0", features = ["bundled", "serialize"] }
+rusqlite = { version = "0.37.0", features = ["bundled", "serialize"] }
 rust-embed = "8.7.2"
