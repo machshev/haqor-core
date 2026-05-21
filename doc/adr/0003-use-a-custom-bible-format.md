@@ -44,13 +44,13 @@ However for Haqor this makes it impossible support every mysword bible module.
 Because reliably seporating the text from the presentation for each module would mean writing a new parser for each module.
 
 Haqor cares about the actual words, while applications like mysword only cares about verses.
-If a verse can be renderred with a WebView as valid HTML then that's all that matters.
+If a verse can be rendered with a WebView as valid HTML then that's all that matters.
 It's up to the module developers to make sure they put in strongs number based tags in the right places.
 
 ### lexical indexing
 
 SWORD based modules (including mysword) all assume strongs numbers as the primary index for lexicons.
-While this works farily well for Hebrew and Greek, it doesn't work at all for Aramaic/Syriac where SEDRA DB would be more appropriate.
+While this works fairly well for Hebrew and Greek, it doesn't work at all for Aramaic/Syriac where SEDRA DB would be more appropriate.
 Also while many Hebrew lexicons have strongs based indexing, this isn't neceserily the ideal index.
 
 ## Decision
