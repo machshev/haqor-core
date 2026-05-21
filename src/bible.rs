@@ -32,6 +32,24 @@ impl Bible {
             |row| row.get(0),
         )
     }
+
+    pub fn get_chapter(&self, book: u8, chapter: u8) -> rusqlite::Result<Vec<(u8, String)>> {
+        let mut stmt = self.db.prepare(
+            "SELECT verse, words FROM hebrew WHERE book = ?1 AND chapter = ?2 ORDER BY verse",
+        )?;
+        let verses = stmt
+            .query_map([book, chapter], |row| Ok((row.get(0)?, row.get(1)?)))?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        Ok(verses)
+    }
+
+    pub fn chapter_count(&self, book: u8) -> rusqlite::Result<u8> {
+        self.db.query_row(
+            "SELECT MAX(chapter) FROM hebrew WHERE book = ?1",
+            [book],
+            |row| row.get(0),
+        )
+    }
 }
 
 #[cfg(test)]
