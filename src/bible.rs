@@ -33,10 +33,16 @@ impl Bible {
         )
     }
 
-    pub fn get_chapter(&self, book: u8, chapter: u8) -> rusqlite::Result<Vec<(u8, String)>> {
-        let mut stmt = self.db.prepare(
-            "SELECT verse, words FROM hebrew WHERE book = ?1 AND chapter = ?2 ORDER BY verse",
-        )?;
+    pub fn get_chapter(
+        &self,
+        book: u8,
+        chapter: u8,
+        syriac: bool,
+    ) -> rusqlite::Result<Vec<(u8, String)>> {
+        let table = if syriac { "syriac" } else { "hebrew" };
+        let mut stmt = self.db.prepare(&format!(
+            "SELECT verse, words FROM {table} WHERE book = ?1 AND chapter = ?2 ORDER BY verse",
+        ))?;
         let verses = stmt
             .query_map([book, chapter], |row| Ok((row.get(0)?, row.get(1)?)))?
             .collect::<rusqlite::Result<Vec<_>>>()?;
