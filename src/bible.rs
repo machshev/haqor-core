@@ -19,6 +19,14 @@ pub struct WordMorphology {
     pub suffix: Option<String>,
 }
 
+#[derive(Debug)]
+pub struct BdbEntry {
+    pub headword: String,
+    pub consonants: String,
+    pub gloss: String,
+    pub content_json: String,
+}
+
 #[derive(Embed)]
 #[folder = "data/"]
 struct Asset;
@@ -88,6 +96,23 @@ impl Bible {
         )
     }
 
+    pub fn get_bdb_by_consonants(&self, consonants: &str) -> rusqlite::Result<Vec<BdbEntry>> {
+        let mut stmt = self.db.prepare(
+            "SELECT headword, consonants, gloss, content_json FROM bdb WHERE consonants = ?1",
+        )?;
+        let entries = stmt
+            .query_map([consonants], |row| {
+                Ok(BdbEntry {
+                    headword: row.get(0)?,
+                    consonants: row.get(1)?,
+                    gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
+                    content_json: row.get(3)?,
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        Ok(entries)
+    }
+
     pub fn chapter_count(&self, book: u8) -> rusqlite::Result<u8> {
         self.db.query_row(
             "SELECT MAX(chapter) FROM hebrew WHERE book = ?1",
@@ -105,6 +130,15 @@ mod tests {
     #[test]
     fn test_database_open() {
         let _bible = Bible::default();
+    }
+
+    #[test]
+    fn test_get_bdb_by_consonants() {
+        let bible = Bible::default();
+        let entries = bible.get_bdb_by_consonants("אלהים").unwrap();
+        assert!(!entries.is_empty());
+        assert!(entries.iter().all(|e| e.consonants == "אלהים"));
+        assert!(!entries[0].content_json.is_empty());
     }
 
     #[test]
