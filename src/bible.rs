@@ -3,6 +3,22 @@
 use rusqlite::{Connection, MAIN_DB};
 use rust_embed::Embed;
 
+#[derive(Debug)]
+pub struct WordMorphology {
+    pub raw: String,
+    pub word: String,
+    pub consonants: String,
+    pub count: i32,
+    pub unknown: bool,
+    pub vav_con: bool,
+    pub article: bool,
+    pub prepositions: Option<String>,
+    pub gender: Option<String>,
+    pub number: Option<String>,
+    pub prefix: Option<String>,
+    pub suffix: Option<String>,
+}
+
 #[derive(Embed)]
 #[folder = "data/"]
 struct Asset;
@@ -49,6 +65,29 @@ impl Bible {
         Ok(verses)
     }
 
+    pub fn get_word_morphology(&self, raw: &str) -> rusqlite::Result<WordMorphology> {
+        self.db.query_row(
+            "SELECT raw, word, constanants, count, unknown, vav_con, article, prepositions, gender, number, prefix, suffix FROM words WHERE raw = ?1",
+            [raw],
+            |row| {
+                Ok(WordMorphology {
+                    raw: row.get(0)?,
+                    word: row.get(1)?,
+                    consonants: row.get(2)?,
+                    count: row.get(3)?,
+                    unknown: row.get(4)?,
+                    vav_con: row.get(5)?,
+                    article: row.get(6)?,
+                    prepositions: row.get(7)?,
+                    gender: row.get(8)?,
+                    number: row.get(9)?,
+                    prefix: row.get(10)?,
+                    suffix: row.get(11)?,
+                })
+            },
+        )
+    }
+
     pub fn chapter_count(&self, book: u8) -> rusqlite::Result<u8> {
         self.db.query_row(
             "SELECT MAX(chapter) FROM hebrew WHERE book = ?1",
@@ -66,5 +105,14 @@ mod tests {
     #[test]
     fn test_database_open() {
         let _bible = Bible::default();
+    }
+
+    #[test]
+    fn test_get_word_morphology() {
+        let bible = Bible::default();
+        // אֱלֹהִים (Elohim) - a simple word without prefix/suffix complications
+        let morph = bible.get_word_morphology("אֱלֹהִים").unwrap();
+        assert_eq!(morph.consonants, "אלהים");
+        assert!(morph.count > 0);
     }
 }
