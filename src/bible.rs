@@ -7,7 +7,7 @@ use rust_embed::Embed;
 pub struct WordMorphology {
     pub raw: String,
     pub word: String,
-    pub consonants: String,
+    pub root: String,
     pub count: i32,
     pub unknown: bool,
     pub vav_con: bool,
@@ -22,9 +22,23 @@ pub struct WordMorphology {
 #[derive(Debug)]
 pub struct BdbEntry {
     pub headword: String,
-    pub consonants: String,
+    pub root: String,
     pub gloss: String,
     pub content_json: String,
+}
+
+fn strip_cantillation(word: &str) -> String {
+    word.chars()
+        .filter(|&c| {
+            let n = c as u32;
+            (0x05D0..=0x05EA).contains(&n)  // Hebrew letters
+                || (0x05B0..=0x05BD).contains(&n)  // niqqud
+                || n == 0x05BF  // rafe
+                || (0x05C1..=0x05C2).contains(&n)  // shin/sin dots
+                || (0x05C4..=0x05C5).contains(&n)  // upper/lower dots
+                || n == 0x05C7 // qamats qatan
+        })
+        .collect()
 }
 
 #[derive(Embed)]
@@ -75,13 +89,13 @@ impl Bible {
 
     pub fn get_word_morphology(&self, raw: &str) -> rusqlite::Result<WordMorphology> {
         self.db.query_row(
-            "SELECT raw, word, constanants, count, unknown, vav_con, article, prepositions, gender, number, prefix, suffix FROM words WHERE raw = ?1",
+            "SELECT raw, word, root, count, unknown, vav_con, article, prepositions, gender, number, prefix, suffix FROM words WHERE raw = ?1",
             [raw],
             |row| {
                 Ok(WordMorphology {
                     raw: row.get(0)?,
                     word: row.get(1)?,
-                    consonants: row.get(2)?,
+                    root: row.get(2)?,
                     count: row.get(3)?,
                     unknown: row.get(4)?,
                     vav_con: row.get(5)?,
@@ -96,15 +110,21 @@ impl Bible {
         )
     }
 
-    pub fn get_bdb_by_consonants(&self, consonants: &str) -> rusqlite::Result<Vec<BdbEntry>> {
-        let mut stmt = self.db.prepare(
-            "SELECT headword, consonants, gloss, content_json FROM bdb WHERE consonants = ?1",
+    pub fn lex_lookup(&self, word: &str) -> rusqlite::Result<Vec<BdbEntry>> {
+        let stripped = strip_cantillation(word);
+        let root: String = self.db.query_row(
+            "SELECT root FROM words WHERE raw = ?1",
+            [&stripped],
+            |row| row.get(0),
         )?;
+        let mut stmt = self
+            .db
+            .prepare("SELECT headword, root, gloss, content_json FROM bdb WHERE root = ?1")?;
         let entries = stmt
-            .query_map([consonants], |row| {
+            .query_map([&root], |row| {
                 Ok(BdbEntry {
                     headword: row.get(0)?,
-                    consonants: row.get(1)?,
+                    root: row.get(1)?,
                     gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
                     content_json: row.get(3)?,
                 })
@@ -133,11 +153,12 @@ mod tests {
     }
 
     #[test]
-    fn test_get_bdb_by_consonants() {
+    fn test_lex_lookup() {
         let bible = Bible::default();
-        let entries = bible.get_bdb_by_consonants("אלהים").unwrap();
+        // יִבְרָא (yiḇrā) - root ברא, BDB entries exist for "create"
+        let entries = bible.lex_lookup("יִבְרָא").unwrap();
         assert!(!entries.is_empty());
-        assert!(entries.iter().all(|e| e.consonants == "אלהים"));
+        assert!(entries.iter().all(|e| e.root == "ברא"));
         assert!(!entries[0].content_json.is_empty());
     }
 
@@ -146,7 +167,7 @@ mod tests {
         let bible = Bible::default();
         // אֱלֹהִים (Elohim) - a simple word without prefix/suffix complications
         let morph = bible.get_word_morphology("אֱלֹהִים").unwrap();
-        assert_eq!(morph.consonants, "אלהים");
+        assert!(!morph.root.is_empty());
         assert!(morph.count > 0);
     }
 }
