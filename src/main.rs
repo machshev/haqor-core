@@ -5,11 +5,12 @@
 //! for testing during development although this may expand to become a fully
 //! fledged CLI based bible app.
 
-use anyhow::Result;
+use anyhow::{Context, Result};
 use clap::{Parser, Subcommand};
 use haqor_core::bible::Bible;
 use log::info;
 use std::env;
+use std::path::PathBuf;
 
 /// Summarise bible resource
 #[derive(Parser, Debug)]
@@ -34,6 +35,21 @@ struct Cli {
 enum Commands {
     /// Get bible verse
     Get { book: u8, chapter: u8, verse: u8 },
+    /// Database management
+    Db {
+        #[command(subcommand)]
+        command: DbCommands,
+    },
+}
+
+#[derive(Subcommand, Debug)]
+enum DbCommands {
+    /// Copy haqor.db from bible-modules output to data/haqor.db
+    Update {
+        /// Source path (defaults to ../bible-modules/modules/haqor/haqor.db)
+        #[arg(short, long)]
+        source: Option<PathBuf>,
+    },
 }
 
 fn main() -> Result<()> {
@@ -69,6 +85,26 @@ fn main() -> Result<()> {
 
             println!("{}", bible.get(book, chapter, verse)?)
         }
+        Commands::Db { command } => match command {
+            DbCommands::Update { source } => {
+                let src = source.unwrap_or_else(|| {
+                    PathBuf::from("../bible-modules/modules/haqor/haqor.db")
+                });
+                let dst = PathBuf::from("data/haqor.db");
+
+                info!("Copying {} -> {}", src.display(), dst.display());
+
+                let bytes = std::fs::copy(&src, &dst).with_context(|| {
+                    format!("Failed to copy {} to {}", src.display(), dst.display())
+                })?;
+
+                println!(
+                    "Updated {} ({} bytes)",
+                    dst.display(),
+                    bytes
+                );
+            }
+        },
     }
     Ok(())
 }

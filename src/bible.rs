@@ -57,6 +57,13 @@ pub struct SedraEntry {
     pub meaning: String,
 }
 
+#[derive(Debug)]
+pub struct WordOccurrence {
+    pub book: u8,
+    pub chapter: u8,
+    pub verse: u8,
+}
+
 fn strip_cantillation(word: &str) -> String {
     word.chars()
         .filter(|&c| {
@@ -228,6 +235,40 @@ impl Bible {
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         Ok(entries)
+    }
+
+    pub fn word_occurrences(&self, raw: &str) -> rusqlite::Result<Vec<WordOccurrence>> {
+        let mut stmt = self.db.prepare(
+            "SELECT book, chapter, verse FROM occurrences \
+             WHERE raw = ?1 ORDER BY book, chapter, verse",
+        )?;
+        let occurrences = stmt
+            .query_map([raw], |row| {
+                Ok(WordOccurrence {
+                    book: row.get(0)?,
+                    chapter: row.get(1)?,
+                    verse: row.get(2)?,
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        Ok(occurrences)
+    }
+
+    pub fn word_occurrences_root(&self, root: &str) -> rusqlite::Result<Vec<WordOccurrence>> {
+        let mut stmt = self.db.prepare(
+            "SELECT DISTINCT book, chapter, verse FROM occurrences \
+             WHERE constanants = ?1 ORDER BY book, chapter, verse",
+        )?;
+        let occurrences = stmt
+            .query_map([root], |row| {
+                Ok(WordOccurrence {
+                    book: row.get(0)?,
+                    chapter: row.get(1)?,
+                    verse: row.get(2)?,
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        Ok(occurrences)
     }
 
     pub fn chapter_count(&self, book: u8) -> rusqlite::Result<u8> {
