@@ -27,6 +27,36 @@ pub struct BdbEntry {
     pub content_json: String,
 }
 
+#[derive(Debug)]
+pub struct AraMorphology {
+    pub raw: String,
+    pub word: String,
+    pub root: String,
+    pub count: i32,
+    pub gender: Option<String>,
+    pub person: Option<String>,
+    pub number: Option<String>,
+    pub state: Option<String>,
+    pub tense: Option<String>,
+    pub form: Option<String>,
+    pub suffix: Option<String>,
+}
+
+#[derive(Debug)]
+pub struct AraEntry {
+    pub headword: String,
+    pub root: String,
+    pub gloss: String,
+    pub content_json: String,
+}
+
+#[derive(Debug)]
+pub struct SedraEntry {
+    pub lexeme: String,
+    pub root: String,
+    pub meaning: String,
+}
+
 fn strip_cantillation(word: &str) -> String {
     word.chars()
         .filter(|&c| {
@@ -127,6 +157,73 @@ impl Bible {
                     root: row.get(1)?,
                     gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
                     content_json: row.get(3)?,
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        Ok(entries)
+    }
+
+    pub fn get_word_morphology_ara(&self, raw: &str) -> rusqlite::Result<AraMorphology> {
+        self.db.query_row(
+            "SELECT raw, word, root, count, gender, person, number, state, tense, form, suffix \
+             FROM words_aramaic WHERE raw = ?1",
+            [raw],
+            |row| {
+                let ne = |s: Option<String>| s.filter(|v| !v.is_empty());
+                Ok(AraMorphology {
+                    raw: row.get(0)?,
+                    word: row.get(1)?,
+                    root: row.get(2)?,
+                    count: row.get(3)?,
+                    gender: ne(row.get(4)?),
+                    person: ne(row.get(5)?),
+                    number: ne(row.get(6)?),
+                    state: ne(row.get(7)?),
+                    tense: ne(row.get(8)?),
+                    form: ne(row.get(9)?),
+                    suffix: ne(row.get(10)?),
+                })
+            },
+        )
+    }
+
+    pub fn lex_lookup_ara(&self, word: &str) -> rusqlite::Result<Vec<AraEntry>> {
+        let root: String = self.db.query_row(
+            "SELECT root FROM words_aramaic WHERE raw = ?1",
+            [word],
+            |row| row.get(0),
+        )?;
+        let mut stmt = self.db.prepare(
+            "SELECT headword, root, gloss, content_json FROM bdb_aramaic WHERE root = ?1",
+        )?;
+        let entries = stmt
+            .query_map([&root], |row| {
+                Ok(AraEntry {
+                    headword: row.get(0)?,
+                    root: row.get(1)?,
+                    gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
+                    content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        Ok(entries)
+    }
+
+    pub fn sedra_lookup(&self, word: &str) -> rusqlite::Result<Vec<SedraEntry>> {
+        let root: String = self.db.query_row(
+            "SELECT root FROM words_aramaic WHERE raw = ?1",
+            [word],
+            |row| row.get(0),
+        )?;
+        let mut stmt = self
+            .db
+            .prepare("SELECT lexeme, root, meaning FROM sedra WHERE root = ?1")?;
+        let entries = stmt
+            .query_map([&root], |row| {
+                Ok(SedraEntry {
+                    lexeme: row.get(0)?,
+                    root: row.get(1)?,
+                    meaning: row.get(2)?,
                 })
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
