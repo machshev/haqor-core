@@ -13,3 +13,6 @@
 
 /// utilities for interacting with bible resources
 pub mod bible;
+
+/// Biblical Hebrew verb/noun paradigm generator (algorithmic, not DB-backed).
+pub mod morphology;
