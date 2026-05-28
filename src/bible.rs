@@ -64,6 +64,31 @@ pub struct WordOccurrence {
     pub verse: u8,
 }
 
+/// BDB headwords use Unicode NFC combining order (vowels CCC=17 before dagesh/dots CCC=21-24),
+/// but Cardo and the biblical text data expect traditional Hebrew order (dagesh/dots first).
+/// Bubble-swap any vowel that precedes a higher-priority dot/dagesh mark.
+fn normalize_hebrew_combining(text: &str) -> String {
+    let mut chars: Vec<char> = text.chars().collect();
+    let mut i = 0;
+    while i + 1 < chars.len() {
+        if is_heb_vowel(chars[i]) && is_heb_dot(chars[i + 1]) {
+            chars.swap(i, i + 1);
+        } else {
+            i += 1;
+        }
+    }
+    chars.into_iter().collect()
+}
+
+fn is_heb_vowel(c: char) -> bool {
+    let n = c as u32;
+    (0x05B0..=0x05BD).contains(&n) && n != 0x05BC || n == 0x05C7
+}
+
+fn is_heb_dot(c: char) -> bool {
+    matches!(c as u32, 0x05BC | 0x05C1 | 0x05C2)
+}
+
 fn strip_cantillation(word: &str) -> String {
     word.chars()
         .filter(|&c| {
@@ -160,7 +185,7 @@ impl Bible {
         let entries = stmt
             .query_map([&root], |row| {
                 Ok(BdbEntry {
-                    headword: row.get(0)?,
+                    headword: normalize_hebrew_combining(row.get::<_, String>(0)?.as_str()),
                     root: row.get(1)?,
                     gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
                     content_json: row.get(3)?,
@@ -206,7 +231,7 @@ impl Bible {
         let entries = stmt
             .query_map([&root], |row| {
                 Ok(AraEntry {
-                    headword: row.get(0)?,
+                    headword: normalize_hebrew_combining(row.get::<_, String>(0)?.as_str()),
                     root: row.get(1)?,
                     gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
                     content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
