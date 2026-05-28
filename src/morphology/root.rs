@@ -1,0 +1,217 @@
+//! Triliteral root parsing and gizra (irregular-class) detection.
+
+use super::hebrew::letter;
+
+/// Irregular root classes. A root may sit in several at once (doubly weak).
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum Gizra {
+    /// Strong (regular) — no guttural and no weak letters.
+    Strong,
+    /// I-Guttural: first radical is א/ה/ח/ע (also ר for non-doubling).
+    PeGuttural,
+    /// II-Guttural: middle radical is א/ה/ח/ע/ר.
+    AyinGuttural,
+    /// III-Guttural: third radical is ח/ע (א and ה have their own classes).
+    LamedGuttural,
+    /// I-Aleph: first radical is א (e.g., אכל, אמר). Subset of PeGuttural with
+    /// its own Qal Imperfect pattern (yōʔkal, yōʔmar).
+    PeAleph,
+    /// III-Aleph: third radical is א (e.g., מצא, ברא). The א quiesces, lengthening
+    /// the preceding vowel.
+    LamedAleph,
+    /// III-He: third radical written ה but historically III-Yod
+    /// (e.g., בנה, עשה). Whole sub-paradigm with apocopated jussive/wayyiqtol.
+    LamedHe,
+    /// I-Nun: first radical is נ (e.g., נפל, נתן). The nun assimilates as
+    /// a dagesh in the following radical when no vowel intervenes.
+    PeNun,
+    /// I-Yod: first radical is י, historically either original I-Vav (most
+    /// verbs — ישב, ילד, ידע) or true I-Yod (יטב, יבש).
+    PeYod,
+    /// Hollow (II-Vav/Yod): middle radical is ו or י (e.g., קום, שים).
+    Hollow,
+    /// Geminate: 2nd and 3rd radicals are identical (e.g., סבב, חנן).
+    Geminate,
+}
+
+/// A 3-radical Hebrew verb/noun root with its detected irregular classes.
+#[derive(Debug, Clone)]
+pub struct Root {
+    pub letters: [char; 3],
+    pub classes: Vec<Gizra>,
+}
+
+impl Root {
+    /// Parse a root from a Hebrew string. Strips niqqud and whitespace,
+    /// expects exactly three consonants. Final-form letters (ך/ם/ן/ף/ץ) are
+    /// normalised back to their base forms.
+    pub fn parse(s: &str) -> Result<Self, RootError> {
+        let letters: Vec<char> = s
+            .chars()
+            .filter_map(|c| {
+                let n = c as u32;
+                if !(0x05D0..=0x05EA).contains(&n) {
+                    return None;
+                }
+                Some(match c {
+                    '\u{05DA}' => letter::KAF,
+                    '\u{05DD}' => letter::MEM,
+                    '\u{05DF}' => letter::NUN,
+                    '\u{05E3}' => letter::PE,
+                    '\u{05E5}' => letter::TSADE,
+                    other => other,
+                })
+            })
+            .collect();
+        if letters.len() != 3 {
+            return Err(RootError::WrongLength(letters.len()));
+        }
+        let letters = [letters[0], letters[1], letters[2]];
+        Ok(Root::from_letters(letters))
+    }
+
+    pub fn from_letters(letters: [char; 3]) -> Self {
+        let classes = detect_gizra(letters);
+        Root { letters, classes }
+    }
+
+    pub fn pe(&self) -> char {
+        self.letters[0]
+    }
+    pub fn ayin(&self) -> char {
+        self.letters[1]
+    }
+    pub fn lamed(&self) -> char {
+        self.letters[2]
+    }
+
+    pub fn has(&self, g: Gizra) -> bool {
+        self.classes.contains(&g)
+    }
+
+    /// Returns true if this root has no irregular features at all.
+    pub fn is_strong(&self) -> bool {
+        self.classes == [Gizra::Strong]
+    }
+}
+
+#[derive(Debug)]
+pub enum RootError {
+    WrongLength(usize),
+}
+
+impl std::fmt::Display for RootError {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            RootError::WrongLength(n) => {
+                write!(f, "root must have exactly 3 consonants, got {n}")
+            }
+        }
+    }
+}
+
+impl std::error::Error for RootError {}
+
+fn detect_gizra(letters: [char; 3]) -> Vec<Gizra> {
+    use letter::*;
+    let mut out = Vec::new();
+    let [p, a, l] = letters;
+
+    let is_gut = |c: char| matches!(c, ALEF | HE | HET | AYIN);
+
+    // PeAleph is a more specific subset of PeGuttural — emit both so callers
+    // can choose the most specific rule.
+    if p == ALEF {
+        out.push(Gizra::PeAleph);
+    }
+    if is_gut(p) {
+        out.push(Gizra::PeGuttural);
+    } else if p == NUN {
+        out.push(Gizra::PeNun);
+    } else if p == YOD {
+        out.push(Gizra::PeYod);
+    }
+
+    // Middle radical
+    if a == VAV || a == YOD {
+        out.push(Gizra::Hollow);
+    } else if is_gut(a) || a == RESH {
+        out.push(Gizra::AyinGuttural);
+    }
+
+    // Third radical
+    if l == ALEF {
+        out.push(Gizra::LamedAleph);
+    } else if l == HE {
+        out.push(Gizra::LamedHe);
+    } else if matches!(l, HET | AYIN) {
+        out.push(Gizra::LamedGuttural);
+    }
+
+    // Geminate: 2nd == 3rd. Only flag when middle isn't already classed
+    // as hollow (a ≠ vav/yod); a geminate hollow is vanishingly rare.
+    if a == l && a != VAV && a != YOD {
+        out.push(Gizra::Geminate);
+    }
+
+    if out.is_empty() {
+        out.push(Gizra::Strong);
+    }
+    out
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn strong_root() {
+        let r = Root::parse("קטל").unwrap();
+        assert!(r.is_strong());
+    }
+
+    #[test]
+    fn pe_nun() {
+        let r = Root::parse("נפל").unwrap();
+        assert!(r.has(Gizra::PeNun));
+    }
+
+    #[test]
+    fn lamed_he() {
+        let r = Root::parse("בנה").unwrap();
+        assert!(r.has(Gizra::LamedHe));
+    }
+
+    #[test]
+    fn hollow() {
+        let r = Root::parse("קום").unwrap();
+        assert!(r.has(Gizra::Hollow));
+    }
+
+    #[test]
+    fn geminate() {
+        let r = Root::parse("סבב").unwrap();
+        assert!(r.has(Gizra::Geminate));
+    }
+
+    #[test]
+    fn doubly_weak_pe_yod_lamed_he() {
+        // ירה (to teach, throw)
+        let r = Root::parse("ירה").unwrap();
+        assert!(r.has(Gizra::PeYod));
+        assert!(r.has(Gizra::LamedHe));
+    }
+
+    #[test]
+    fn pe_aleph_implies_pe_guttural() {
+        let r = Root::parse("אכל").unwrap();
+        assert!(r.has(Gizra::PeAleph));
+        assert!(r.has(Gizra::PeGuttural));
+    }
+
+    #[test]
+    fn niqqud_stripped() {
+        let r = Root::parse("קָטַל").unwrap();
+        assert_eq!(r.letters[0], letter::QOF);
+    }
+}
