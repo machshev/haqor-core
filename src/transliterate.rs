@@ -53,7 +53,7 @@ const MAP: &[(char, char, char)] = &[
     ('o', '\u{05B8}', '\u{0734}'),  // qamats ↔ zqapha
     ('u', '\u{05BB}', '\u{073E}'),  // qubuts ↔ esasa
     ('*', '\u{0308}', '\u{0308}'),  // seyame (combining diaeresis, both)
-    ('_', '_', '_'),
+    ('_', '_', '\u{0748}'),         // linea occultans (silent letter): bare in Hebrew storage, oblique line below in Syriac
     ('-', '-', '-'),
 ];
 
@@ -86,6 +86,73 @@ pub fn hebrew_to_sedra(text: &str) -> String {
     text.chars()
         .map(|c| MAP.iter().find(|(_, h, _)| *h == c).map_or(c, |(s, _, _)| *s))
         .collect()
+}
+
+/// Render stored NT Hebrew for *display*. The stored form is a lossless
+/// bijection of the SEDRA transliteration (see [`sedra_to_hebrew`]); that form
+/// round-trips to Syriac exactly but reads as non-idiomatic Hebrew. This makes
+/// it look like ordinary pointed Hebrew **without** touching storage or the
+/// Syriac round trip:
+///   - drops rafe (U+05BF) — Syriac marks rukkakha, Hebrew leaves soft BGDKT bare;
+///   - drops the linea occultans marker (`_`, silent letter) — no Hebrew equivalent;
+///   - folds the last consonant of each word to its final form.
+///
+/// Not lossless and never fed back into Hebrew↔Syriac conversion.
+pub fn hebrew_display(text: &str) -> String {
+    let stripped: String = text.chars().filter(|&c| c != '\u{05BF}' && c != '_').collect();
+    stripped
+        .split_inclusive(' ')
+        .map(final_form_word)
+        .collect()
+}
+
+/// Fold the last Hebrew consonant of a single token (which may carry a trailing
+/// space and combining marks) to its final form.
+fn final_form_word(token: &str) -> String {
+    let mut chars: Vec<char> = token.chars().collect();
+    if let Some(i) = chars.iter().rposition(|&c| is_hebrew_consonant(c)) {
+        chars[i] = final_form(chars[i]);
+    }
+    chars.into_iter().collect()
+}
+
+fn is_hebrew_consonant(c: char) -> bool {
+    ('\u{05D0}'..='\u{05EA}').contains(&c)
+}
+
+/// Canonicalise an NT Hebrew word for lexicon matching against `strVocalised`.
+/// A word tapped in the app may be in display form ([`hebrew_display`]: rafe
+/// dropped, final letters folded) or in the raw stored form. Folding finals
+/// back to medial and dropping rafe maps both to the same key; the stored side
+/// is matched after `replace`-ing rafe out (it has no final forms). Final-form
+/// folding is 1:1, so this reversal is exact.
+pub fn lookup_key(word: &str) -> String {
+    word.chars()
+        .filter(|&c| c != '\u{05BF}' && c != '_')
+        .map(medial_form)
+        .collect()
+}
+
+fn medial_form(c: char) -> char {
+    match c {
+        '\u{05DA}' => '\u{05DB}', // final kaf → kaf
+        '\u{05DD}' => '\u{05DE}', // final mem → mem
+        '\u{05DF}' => '\u{05E0}', // final nun → nun
+        '\u{05E3}' => '\u{05E4}', // final pe → pe
+        '\u{05E5}' => '\u{05E6}', // final tsadi → tsadi
+        other => other,
+    }
+}
+
+fn final_form(c: char) -> char {
+    match c {
+        '\u{05DB}' => '\u{05DA}', // kaf → final kaf
+        '\u{05DE}' => '\u{05DD}', // mem → final mem
+        '\u{05E0}' => '\u{05DF}', // nun → final nun
+        '\u{05E4}' => '\u{05E3}', // pe → final pe
+        '\u{05E6}' => '\u{05E5}', // tsadi → final tsadi
+        other => other,
+    }
 }
 
 #[cfg(test)]
@@ -121,6 +188,45 @@ mod tests {
         for word in ["AoAaR", "B'oAAaR", "C'ToBoA", "B,A*", "BR-ABA", "A;XNON"] {
             assert_eq!(hebrew_to_sedra(&sedra_to_hebrew(word)), word);
         }
+    }
+
+    #[test]
+    fn display_drops_rafe_and_folds_finals() {
+        // SEDRA "AaB,oHoT,C,uON" → stored Hebrew has rafe and medial finals.
+        let stored = sedra_to_hebrew("AaB,oHoT,C,uON");
+        assert!(stored.contains('\u{05BF}'));
+        let shown = hebrew_display(&stored);
+        assert!(!shown.contains('\u{05BF}'), "rafe must be gone");
+        assert!(shown.ends_with('\u{05DF}'), "trailing nun → final nun");
+        // Matching key reconstructs the rafe-less stored form, so lexicon
+        // lookup of the displayed word still resolves.
+        let stored_key: String = stored.chars().filter(|&c| c != '\u{05BF}').collect();
+        assert_eq!(lookup_key(&shown), stored_key);
+    }
+
+    #[test]
+    fn linea_occultans_drops_in_hebrew_renders_in_syriac() {
+        // SEDRA "OLaAKaOH_;" (Matt 1:2 "and his brothers") — the `_` marks a
+        // silent he. Hebrew drops it; Syriac shows the oblique line below.
+        let stored = sedra_to_hebrew("OLaAKaOH_;");
+        assert!(stored.contains('_'));
+        assert!(!hebrew_display(&stored).contains('_'), "underscore must be gone");
+        let syr = hebrew_to_syriac(&stored);
+        assert!(syr.contains('\u{0748}') && !syr.contains('_'));
+        assert_eq!(syriac_to_hebrew(&syr), stored); // still round-trips
+        // Displayed word still resolves: its key equals the rafe/underscore-
+        // stripped stored form used by the lexicon query.
+        let key: String = stored.chars().filter(|&c| c != '\u{05BF}' && c != '_').collect();
+        assert_eq!(lookup_key(&hebrew_display(&stored)), key);
+    }
+
+    #[test]
+    fn lookup_key_matches_raw_and_display() {
+        let stored = sedra_to_hebrew("C'T,oB,oA");
+        let shown = hebrew_display(&stored);
+        let expected: String = stored.chars().filter(|&c| c != '\u{05BF}').collect();
+        assert_eq!(lookup_key(&shown), expected);
+        assert_eq!(lookup_key(&stored), expected);
     }
 
     #[test]
