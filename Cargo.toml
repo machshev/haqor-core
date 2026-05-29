@@ -19,3 +19,5 @@ anyhow = "1.0.81"
 bytes = "1.10.1"
 rusqlite = { version = "0.37.0", features = ["bundled", "serialize"] }
 rust-embed = { version = "8.7.2", features = ["debug-embed"] }
+quick-xml = "0.37"
+csv = "1.3"
