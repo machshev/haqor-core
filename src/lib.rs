@@ -16,3 +16,7 @@ pub mod bible;
 
 /// Biblical Hebrew verb/noun paradigm generator (algorithmic, not DB-backed).
 pub mod morphology;
+
+/// Generate Haqor data tables from original source texts (Rust port of the
+/// bible-modules pipeline).
+pub mod generate;
