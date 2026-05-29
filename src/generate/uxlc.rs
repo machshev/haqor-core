@@ -148,7 +148,10 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
 }
 
 /// Read the `n` attribute of an element as a number.
-fn attr_n(e: &quick_xml::events::BytesStart, reader: &Reader<std::io::BufReader<std::fs::File>>) -> Result<u8> {
+fn attr_n(
+    e: &quick_xml::events::BytesStart,
+    reader: &Reader<std::io::BufReader<std::fs::File>>,
+) -> Result<u8> {
     let attr = e
         .try_get_attribute("n")?
         .context("element missing `n` attribute")?;

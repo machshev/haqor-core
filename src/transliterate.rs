@@ -53,7 +53,7 @@ const MAP: &[(char, char, char)] = &[
     ('o', '\u{05B8}', '\u{0734}'),  // qamats ↔ zqapha
     ('u', '\u{05BB}', '\u{073E}'),  // qubuts ↔ esasa
     ('*', '\u{0308}', '\u{0308}'),  // seyame (combining diaeresis, both)
-    ('_', '_', '\u{0748}'),         // linea occultans (silent letter): bare in Hebrew storage, oblique line below in Syriac
+    ('_', '_', '\u{0748}'), // linea occultans (silent letter): bare in Hebrew storage, oblique line below in Syriac
     ('-', '-', '-'),
 ];
 
@@ -61,7 +61,11 @@ const MAP: &[(char, char, char)] = &[
 /// pass through unchanged.
 pub fn sedra_to_hebrew(word: &str) -> String {
     word.chars()
-        .map(|c| MAP.iter().find(|(s, _, _)| *s == c).map_or(c, |(_, h, _)| *h))
+        .map(|c| {
+            MAP.iter()
+                .find(|(s, _, _)| *s == c)
+                .map_or(c, |(_, h, _)| *h)
+        })
         .collect()
 }
 
@@ -69,14 +73,22 @@ pub fn sedra_to_hebrew(word: &str) -> String {
 /// words) pass through unchanged.
 pub fn hebrew_to_syriac(text: &str) -> String {
     text.chars()
-        .map(|c| MAP.iter().find(|(_, h, _)| *h == c).map_or(c, |(_, _, s)| *s))
+        .map(|c| {
+            MAP.iter()
+                .find(|(_, h, _)| *h == c)
+                .map_or(c, |(_, _, s)| *s)
+        })
         .collect()
 }
 
 /// Convert Syriac text back to NT Hebrew. Exact inverse of [`hebrew_to_syriac`].
 pub fn syriac_to_hebrew(text: &str) -> String {
     text.chars()
-        .map(|c| MAP.iter().find(|(_, _, s)| *s == c).map_or(c, |(_, h, _)| *h))
+        .map(|c| {
+            MAP.iter()
+                .find(|(_, _, s)| *s == c)
+                .map_or(c, |(_, h, _)| *h)
+        })
         .collect()
 }
 
@@ -84,7 +96,11 @@ pub fn syriac_to_hebrew(text: &str) -> String {
 /// [`sedra_to_hebrew`].
 pub fn hebrew_to_sedra(text: &str) -> String {
     text.chars()
-        .map(|c| MAP.iter().find(|(_, h, _)| *h == c).map_or(c, |(s, _, _)| *s))
+        .map(|c| {
+            MAP.iter()
+                .find(|(_, h, _)| *h == c)
+                .map_or(c, |(s, _, _)| *s)
+        })
         .collect()
 }
 
@@ -99,11 +115,11 @@ pub fn hebrew_to_sedra(text: &str) -> String {
 ///
 /// Not lossless and never fed back into Hebrew↔Syriac conversion.
 pub fn hebrew_display(text: &str) -> String {
-    let stripped: String = text.chars().filter(|&c| c != '\u{05BF}' && c != '_').collect();
-    stripped
-        .split_inclusive(' ')
-        .map(final_form_word)
-        .collect()
+    let stripped: String = text
+        .chars()
+        .filter(|&c| c != '\u{05BF}' && c != '_')
+        .collect();
+    stripped.split_inclusive(' ').map(final_form_word).collect()
 }
 
 /// Fold the last Hebrew consonant of a single token (which may carry a trailing
@@ -210,13 +226,19 @@ mod tests {
         // silent he. Hebrew drops it; Syriac shows the oblique line below.
         let stored = sedra_to_hebrew("OLaAKaOH_;");
         assert!(stored.contains('_'));
-        assert!(!hebrew_display(&stored).contains('_'), "underscore must be gone");
+        assert!(
+            !hebrew_display(&stored).contains('_'),
+            "underscore must be gone"
+        );
         let syr = hebrew_to_syriac(&stored);
         assert!(syr.contains('\u{0748}') && !syr.contains('_'));
         assert_eq!(syriac_to_hebrew(&syr), stored); // still round-trips
         // Displayed word still resolves: its key equals the rafe/underscore-
         // stripped stored form used by the lexicon query.
-        let key: String = stored.chars().filter(|&c| c != '\u{05BF}' && c != '_').collect();
+        let key: String = stored
+            .chars()
+            .filter(|&c| c != '\u{05BF}' && c != '_')
+            .collect();
         assert_eq!(lookup_key(&hebrew_display(&stored)), key);
     }
 

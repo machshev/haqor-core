@@ -325,9 +325,7 @@ fn perfect_suffix_kind(pgn: Pgn) -> Suffix {
 fn imperfect_suffix_kind(pgn: Pgn) -> Suffix {
     match (pgn.gender, pgn.number) {
         // -î (2fs), -û (3mp, 2mp)
-        (Some(Gender::Feminine), Some(Number::Singular))
-            if pgn.person == Some(Person::Second) =>
-        {
+        (Some(Gender::Feminine), Some(Number::Singular)) if pgn.person == Some(Person::Second) => {
             Suffix::Vocalic
         }
         (Some(Gender::Masculine), Some(Number::Plural)) => Suffix::Vocalic,
@@ -684,10 +682,11 @@ fn build_imperfect(root: &Root, binyan: Binyan, pgn: Pgn, _jussive: bool) -> Vec
     let mut prefix_vowel = prefix.vowel;
     // 1cs in Qal: ʔeqṭōl — prefix vowel is segol, not hiriq (alef can't take
     // hiriq + closed syllable in Qal). Apply for binyanim that use hiriq.
-    if pgn.person == Some(Person::First) && pgn.number == Some(Number::Singular) {
-        if let Hiriq = prefix.vowel {
-            prefix_vowel = Segol;
-        }
+    if pgn.person == Some(Person::First)
+        && pgn.number == Some(Number::Singular)
+        && let Hiriq = prefix.vowel
+    {
+        prefix_vowel = Segol;
     }
 
     let mut out: Vec<Cons> = Vec::new();
@@ -719,10 +718,10 @@ fn build_imperfect(root: &Root, binyan: Binyan, pgn: Pgn, _jussive: bool) -> Vec
     out.push(c2);
 
     // ---- Optional mater after C2 (Hiphil) ----
-    if matches!(suffix, Suffix::Zero) {
-        if let Some(m) = prefix.mater_after_c2_long {
-            out.push(Cons::new(m));
-        }
+    if matches!(suffix, Suffix::Zero)
+        && let Some(m) = prefix.mater_after_c2_long
+    {
+        out.push(Cons::new(m));
     }
 
     // ---- C3 ----
@@ -834,11 +833,11 @@ fn build_imperative(root: &Root, binyan: Binyan, pgn: Pgn) -> Vec<Cons> {
 
     // C1
     let v1 = match binyan {
-        Binyan::Qal => Sheva,    // qəṭol
-        Binyan::Niphal => Sheva, // hiqqāṭēl — C1 sheva (silent under dagesh)
-        Binyan::Piel => Patah,   // qaṭṭēl
+        Binyan::Qal => Sheva,      // qəṭol
+        Binyan::Niphal => Sheva,   // hiqqāṭēl — C1 sheva (silent under dagesh)
+        Binyan::Piel => Patah,     // qaṭṭēl
         Binyan::Hithpael => Patah, // hitqaṭṭēl
-        Binyan::Hiphil => Sheva, // haqṭēl
+        Binyan::Hiphil => Sheva,   // haqṭēl
         _ => Sheva,
     };
     let mut c1 = rad(root.pe(), 1).with_vowel(v1);
@@ -871,13 +870,13 @@ fn build_imperative(root: &Root, binyan: Binyan, pgn: Pgn) -> Vec<Cons> {
     }
     out.push(c2);
 
-    if matches!(suffix, Suffix::Zero) {
-        if let Some(m) = prefix.mater_after_c2_long {
-            // Hiphil imperative ms is haqṭēl with TSERE, no mater yod.
-            // Skip mater for Hiphil here.
-            if binyan != Binyan::Hiphil {
-                out.push(Cons::new(m));
-            }
+    if matches!(suffix, Suffix::Zero)
+        && let Some(m) = prefix.mater_after_c2_long
+    {
+        // Hiphil imperative ms is haqṭēl with TSERE, no mater yod.
+        // Skip mater for Hiphil here.
+        if binyan != Binyan::Hiphil {
+            out.push(Cons::new(m));
         }
     }
 
@@ -889,10 +888,11 @@ fn build_imperative(root: &Root, binyan: Binyan, pgn: Pgn) -> Vec<Cons> {
         c3.vowel = Some(Sheva);
     }
     // Hiphil imperative ms has tsere on C2 (haqṭēl), no v3.
-    if binyan == Binyan::Hiphil && matches!(suffix, Suffix::Zero) {
-        if let Some(i) = radical_idx(&out, 2) {
-            out[i].vowel = Some(Tsere);
-        }
+    if binyan == Binyan::Hiphil
+        && matches!(suffix, Suffix::Zero)
+        && let Some(i) = radical_idx(&out, 2)
+    {
+        out[i].vowel = Some(Tsere);
     }
     out.push(c3);
 
@@ -1236,13 +1236,7 @@ fn apply_gizra(
     (seq, attested)
 }
 
-fn apply_pe_nun(
-    seq: &mut Vec<Cons>,
-    root: &Root,
-    binyan: Binyan,
-    form: Form,
-    _pgn: Pgn,
-) -> bool {
+fn apply_pe_nun(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, _pgn: Pgn) -> bool {
     // Qal Imperfect / Imperative / Inf. Construct: nun closes a syllable
     // before C2 and assimilates as a dagesh on C2.
     // Niphal: ni- + nC2C3 → nin- + nC2C3 — the prefix nun stays, the root
@@ -1277,12 +1271,12 @@ fn apply_pe_nun(
         | (Binyan::Niphal, Form::Perfect)
         | (Binyan::Hiphil, _)
         | (Binyan::Hophal, _) => {
-            if let Some(idx) = c1_idx {
-                if idx + 1 < seq.len() {
-                    seq.remove(idx);
-                    seq[idx].dagesh = true;
-                    changed = true;
-                }
+            if let Some(idx) = c1_idx
+                && idx + 1 < seq.len()
+            {
+                seq.remove(idx);
+                seq[idx].dagesh = true;
+                changed = true;
             }
         }
         (Binyan::Qal, Form::Imperative) | (Binyan::Qal, Form::InfinitiveConstruct) => {
@@ -1297,13 +1291,7 @@ fn apply_pe_nun(
     changed
 }
 
-fn apply_pe_yod(
-    seq: &mut Vec<Cons>,
-    root: &Root,
-    binyan: Binyan,
-    form: Form,
-    _pgn: Pgn,
-) -> bool {
+fn apply_pe_yod(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, _pgn: Pgn) -> bool {
     // I-Yod is the most complex weak class. In Qal Imperfect of originally
     // I-Vav verbs (yāšab, yāḏaʿ, etc.), the yod drops and the prefix vowel
     // becomes tsere: yēšēb. In Niphal & Hiphil the original vav reappears.
@@ -1345,13 +1333,7 @@ fn apply_pe_yod(
     changed
 }
 
-fn apply_hollow(
-    seq: &mut Vec<Cons>,
-    root: &Root,
-    binyan: Binyan,
-    form: Form,
-    _pgn: Pgn,
-) -> bool {
+fn apply_hollow(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, _pgn: Pgn) -> bool {
     // Hollow verbs lose their middle radical in almost every form. The
     // characteristic vowel takes its place: Qal Perfect qām (kāmū), Qal
     // Imperfect yāqûm, Hiphil hēqîm.
@@ -1400,13 +1382,7 @@ fn apply_hollow(
     changed
 }
 
-fn apply_geminate(
-    seq: &mut Vec<Cons>,
-    root: &Root,
-    binyan: Binyan,
-    form: Form,
-    _pgn: Pgn,
-) -> bool {
+fn apply_geminate(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, _pgn: Pgn) -> bool {
     // Geminate roots fuse the two identical radicals into one with dagesh
     // forte in most forms. Qal Perfect 3ms: sāḇaḇ → סָבַב (often as written).
     // Qal Imperfect 3ms: yāsōḇ — drop one C and add dagesh.
@@ -1439,13 +1415,7 @@ fn apply_geminate(
     changed
 }
 
-fn apply_lamed_he(
-    seq: &mut Vec<Cons>,
-    root: &Root,
-    binyan: Binyan,
-    form: Form,
-    pgn: Pgn,
-) -> bool {
+fn apply_lamed_he(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, pgn: Pgn) -> bool {
     // III-He (originally III-Yod). The final he is etymological — it's a
     // mater for various endings depending on form:
     //   Qal Perfect 3ms: bānâ  (בָּנָה) — C1-C2-â (qamats + he)
@@ -1475,14 +1445,26 @@ fn apply_lamed_he(
     let c2_idx = radical_idx(seq, 2);
     let c3_idx = radical_idx(seq, 3);
     match (binyan, form, pgn.person, pgn.gender, pgn.number) {
-        (Binyan::Qal, Form::Perfect, Some(Person::Third), Some(Gender::Masculine), Some(Number::Singular)) => {
+        (
+            Binyan::Qal,
+            Form::Perfect,
+            Some(Person::Third),
+            Some(Gender::Masculine),
+            Some(Number::Singular),
+        ) => {
             // bānâ: change C2 vowel from patah to qamats.
             if let Some(i) = c2_idx {
                 seq[i].vowel = Some(Qamats);
             }
             changed = true;
         }
-        (Binyan::Qal, Form::Perfect, Some(Person::Third), Some(Gender::Feminine), Some(Number::Singular)) => {
+        (
+            Binyan::Qal,
+            Form::Perfect,
+            Some(Person::Third),
+            Some(Gender::Feminine),
+            Some(Number::Singular),
+        ) => {
             // bāntâ — replace the C3 he with a tav-qamats; final he stays.
             // Strong gave us [...ayin-sheva, he-qamats, he]. Rewrite C3:
             if let Some(i) = c3_idx {
@@ -1492,21 +1474,39 @@ fn apply_lamed_he(
             }
             changed = true;
         }
-        (Binyan::Qal, Form::Imperfect, Some(Person::Third), Some(Gender::Masculine), Some(Number::Singular)) => {
+        (
+            Binyan::Qal,
+            Form::Imperfect,
+            Some(Person::Third),
+            Some(Gender::Masculine),
+            Some(Number::Singular),
+        ) => {
             // yibnê: change C2 vowel from holam to segol.
             if let Some(i) = c2_idx {
                 seq[i].vowel = Some(Segol);
             }
             changed = true;
         }
-        (Binyan::Qal, Form::Imperative, Some(_), Some(Gender::Masculine), Some(Number::Singular)) => {
+        (
+            Binyan::Qal,
+            Form::Imperative,
+            Some(_),
+            Some(Gender::Masculine),
+            Some(Number::Singular),
+        ) => {
             // bənê: C2 takes tsere.
             if let Some(i) = c2_idx {
                 seq[i].vowel = Some(Tsere);
             }
             changed = true;
         }
-        (Binyan::Qal, Form::Jussive, Some(Person::Third), Some(Gender::Masculine), Some(Number::Singular)) => {
+        (
+            Binyan::Qal,
+            Form::Jussive,
+            Some(Person::Third),
+            Some(Gender::Masculine),
+            Some(Number::Singular),
+        ) => {
             // Apocopated: yiḇen — drop the final he.
             if let Some(i) = c3_idx {
                 seq.remove(i);
@@ -1537,13 +1537,7 @@ fn apply_lamed_he(
     changed
 }
 
-fn apply_lamed_aleph(
-    seq: &mut Vec<Cons>,
-    root: &Root,
-    binyan: Binyan,
-    form: Form,
-    pgn: Pgn,
-) -> bool {
+fn apply_lamed_aleph(seq: &mut [Cons], root: &Root, binyan: Binyan, form: Form, pgn: Pgn) -> bool {
     // III-Aleph: the alef quiesces. In Qal Perfect 3ms (māṣāʔ → מָצָא),
     // the patah on C2 lengthens to qamats. In forms with consonantal
     // suffix the alef vowel "carries" before -tî: māṣā(ʔ)ṯî.
@@ -1552,29 +1546,28 @@ fn apply_lamed_aleph(
         return false;
     }
     use Vowel::*;
-    match (binyan, form, pgn.person, pgn.gender, pgn.number) {
-        (Binyan::Qal, Form::Perfect, Some(Person::Third), Some(Gender::Masculine), Some(Number::Singular)) => {
-            // māṣāʔ: change C2's vowel from patah to qamats.
-            if let Some(i) = radical_idx(seq, 2) {
-                seq[i].vowel = Some(Qamats);
-            }
-            changed = true;
+    if let (
+        Binyan::Qal,
+        Form::Perfect,
+        Some(Person::Third),
+        Some(Gender::Masculine),
+        Some(Number::Singular),
+    ) = (binyan, form, pgn.person, pgn.gender, pgn.number)
+    {
+        // māṣāʔ: change C2's vowel from patah to qamats.
+        if let Some(i) = radical_idx(seq, 2) {
+            seq[i].vowel = Some(Qamats);
         }
-        _ => {}
+        changed = true;
     }
     changed
 }
 
-fn apply_pe_aleph(
-    seq: &mut Vec<Cons>,
-    root: &Root,
-    binyan: Binyan,
-    form: Form,
-    _pgn: Pgn,
-) -> bool {
+fn apply_pe_aleph(seq: &mut [Cons], root: &Root, binyan: Binyan, form: Form, _pgn: Pgn) -> bool {
     // Pe-Aleph in Qal Imperfect: yōʔkal (יֹאכַל). Prefix vowel becomes
     // holam, the alef quiesces and takes no vowel, C2 takes patah.
-    if binyan != Binyan::Qal || !matches!(form, Form::Imperfect | Form::Cohortative | Form::Jussive) {
+    if binyan != Binyan::Qal || !matches!(form, Form::Imperfect | Form::Cohortative | Form::Jussive)
+    {
         return false;
     }
     use Vowel::*;
@@ -1594,7 +1587,7 @@ fn apply_pe_aleph(
     changed
 }
 
-fn apply_guttural(seq: &mut Vec<Cons>, root: &Root) -> bool {
+fn apply_guttural(seq: &mut [Cons], root: &Root) -> bool {
     // For each consonant slot:
     //   - If the letter is a guttural (א ה ח ע) or resh and the slot has
     //     dagesh, remove the dagesh (gutturals don't double; resh usually
@@ -1604,21 +1597,20 @@ fn apply_guttural(seq: &mut Vec<Cons>, root: &Root) -> bool {
     //     vocal, which we approximate by "guttural is the FIRST letter of
     //     the word" or "preceded by a long vowel".
     let mut changed = false;
-    for i in 0..seq.len() {
-        let c = seq[i];
+    for c in seq.iter_mut() {
         if c.dagesh && hebrew::rejects_dagesh(c.letter) {
-            seq[i].dagesh = false;
+            c.dagesh = false;
             changed = true;
         }
-        if let Some(Vowel::Sheva) = c.vowel {
-            if hebrew::is_guttural(c.letter) {
-                // Heuristic: turn into hataf-patah, except after a long
-                // vowel which still allows a silent sheva — but Biblical
-                // Hebrew normally substitutes hataf there too in
-                // word-initial / consonant-cluster contexts.
-                seq[i].vowel = Some(Vowel::HatafPatah);
-                changed = true;
-            }
+        if let Some(Vowel::Sheva) = c.vowel
+            && hebrew::is_guttural(c.letter)
+        {
+            // Heuristic: turn into hataf-patah, except after a long
+            // vowel which still allows a silent sheva — but Biblical
+            // Hebrew normally substitutes hataf there too in
+            // word-initial / consonant-cluster contexts.
+            c.vowel = Some(Vowel::HatafPatah);
+            changed = true;
         }
     }
     let _ = root; // future use: PeGuttural-specific prefix vowel changes
@@ -1692,10 +1684,7 @@ mod tests {
         let root = Root::parse("קטל").unwrap();
         let p = generate_paradigm(&root);
         let f = pick(&p, Binyan::Piel, Form::Perfect, THREE_MS);
-        assert_eq!(
-            f.text,
-            "\u{05E7}\u{05B4}\u{05D8}\u{05BC}\u{05B5}\u{05DC}",
-        );
+        assert_eq!(f.text, "\u{05E7}\u{05B4}\u{05D8}\u{05BC}\u{05B5}\u{05DC}",);
     }
 
     #[test]
@@ -1704,10 +1693,7 @@ mod tests {
         let root = Root::parse("קטל").unwrap();
         let p = generate_paradigm(&root);
         let f = pick(&p, Binyan::Pual, Form::Perfect, THREE_MS);
-        assert_eq!(
-            f.text,
-            "\u{05E7}\u{05BB}\u{05D8}\u{05BC}\u{05B7}\u{05DC}",
-        );
+        assert_eq!(f.text, "\u{05E7}\u{05BB}\u{05D8}\u{05BC}\u{05B7}\u{05DC}",);
     }
 
     #[test]
@@ -1791,10 +1777,7 @@ mod tests {
         let p = generate_paradigm(&root);
         let f = pick(&p, Binyan::Qal, Form::Perfect, THREE_MS);
         // bet+dagesh+qamats, nun+qamats, he
-        assert_eq!(
-            f.text,
-            "\u{05D1}\u{05BC}\u{05B8}\u{05E0}\u{05B8}\u{05D4}",
-        );
+        assert_eq!(f.text, "\u{05D1}\u{05BC}\u{05B8}\u{05E0}\u{05B8}\u{05D4}",);
     }
 
     #[test]
@@ -1809,10 +1792,7 @@ mod tests {
             Pgn::new(Person::First, Gender::Common, Number::Plural),
         );
         // nun+hiriq, pe+dagesh+holam, lamed
-        assert_eq!(
-            f.text,
-            "\u{05E0}\u{05B4}\u{05E4}\u{05BC}\u{05B9}\u{05DC}",
-        );
+        assert_eq!(f.text, "\u{05E0}\u{05B4}\u{05E4}\u{05BC}\u{05B9}\u{05DC}",);
     }
 
     #[test]
@@ -1822,10 +1802,7 @@ mod tests {
         let p = generate_paradigm(&root);
         let f = pick(&p, Binyan::Qal, Form::Imperfect, THREE_MS);
         // yod+qamats, qof, vav+dagesh, mem (final)
-        assert_eq!(
-            f.text,
-            "\u{05D9}\u{05B8}\u{05E7}\u{05D5}\u{05BC}\u{05DD}",
-        );
+        assert_eq!(f.text, "\u{05D9}\u{05B8}\u{05E7}\u{05D5}\u{05BC}\u{05DD}",);
     }
 
     #[test]

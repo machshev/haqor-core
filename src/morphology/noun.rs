@@ -16,16 +16,16 @@ use super::{Gender, Number, Person};
 
 /// Possessive pronominal suffixes attached to nouns/prepositions.
 const PRON_SUFFIXES: &[(Person, Gender, Number)] = &[
-    (Person::First, Gender::Common, Number::Singular),  // -î
+    (Person::First, Gender::Common, Number::Singular), // -î
     (Person::Second, Gender::Masculine, Number::Singular), // -ḵā
     (Person::Second, Gender::Feminine, Number::Singular), // -ēḵ
     (Person::Third, Gender::Masculine, Number::Singular), // -ô
     (Person::Third, Gender::Feminine, Number::Singular), // -āh
-    (Person::First, Gender::Common, Number::Plural),    // -ēnû
+    (Person::First, Gender::Common, Number::Plural),   // -ēnû
     (Person::Second, Gender::Masculine, Number::Plural), // -ḵem
     (Person::Second, Gender::Feminine, Number::Plural), // -ḵen
     (Person::Third, Gender::Masculine, Number::Plural), // -ām
-    (Person::Third, Gender::Feminine, Number::Plural),  // -ān
+    (Person::Third, Gender::Feminine, Number::Plural), // -ān
 ];
 
 /// What kind of noun stem we're inflecting. Most Biblical Hebrew masculine
@@ -117,23 +117,24 @@ fn parse_pointed(text: &str) -> Vec<Cons> {
 
 /// Generate the inflectional paradigm of a noun stem.
 pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
-    let mut out = Vec::new();
-    out.push(NounInflection {
-        label: "Singular Absolute".to_string(),
-        text: hebrew::render(&stem.absolute_singular),
-    });
-    out.push(NounInflection {
-        label: "Singular Construct".to_string(),
-        text: hebrew::render(&singular_construct(stem)),
-    });
-    out.push(NounInflection {
-        label: "Plural Absolute".to_string(),
-        text: hebrew::render(&plural_absolute(stem)),
-    });
-    out.push(NounInflection {
-        label: "Plural Construct".to_string(),
-        text: hebrew::render(&plural_construct(stem)),
-    });
+    let mut out = vec![
+        NounInflection {
+            label: "Singular Absolute".to_string(),
+            text: hebrew::render(&stem.absolute_singular),
+        },
+        NounInflection {
+            label: "Singular Construct".to_string(),
+            text: hebrew::render(&singular_construct(stem)),
+        },
+        NounInflection {
+            label: "Plural Absolute".to_string(),
+            text: hebrew::render(&plural_absolute(stem)),
+        },
+        NounInflection {
+            label: "Plural Construct".to_string(),
+            text: hebrew::render(&plural_construct(stem)),
+        },
+    ];
     if matches!(stem.kind, NounStemKind::Masculine) {
         // Dual mostly survives in body parts & paired items (יָדַיִם, רַגְלַיִם).
         out.push(NounInflection {
@@ -144,7 +145,12 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
 
     // Pronominal suffixes (singular base).
     for &(p, g, n) in PRON_SUFFIXES {
-        let label = format!("Sg + {}{}{}", pgn_letters(p, g, n).0, pgn_letters(p, g, n).1, pgn_letters(p, g, n).2);
+        let label = format!(
+            "Sg + {}{}{}",
+            pgn_letters(p, g, n).0,
+            pgn_letters(p, g, n).1,
+            pgn_letters(p, g, n).2
+        );
         out.push(NounInflection {
             label,
             text: hebrew::render(&with_pron_suffix(stem, false, p, g, n)),
@@ -152,7 +158,12 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
     }
     // Pronominal suffixes (plural base).
     for &(p, g, n) in PRON_SUFFIXES {
-        let label = format!("Pl + {}{}{}", pgn_letters(p, g, n).0, pgn_letters(p, g, n).1, pgn_letters(p, g, n).2);
+        let label = format!(
+            "Pl + {}{}{}",
+            pgn_letters(p, g, n).0,
+            pgn_letters(p, g, n).1,
+            pgn_letters(p, g, n).2
+        );
         out.push(NounInflection {
             label,
             text: hebrew::render(&with_pron_suffix(stem, true, p, g, n)),
@@ -195,14 +206,14 @@ fn singular_construct(stem: &NounStem) -> Vec<Cons> {
         NounStemKind::FeminineHe => {
             // Replace final he with tav: tôrâ → tôraṯ.
             let mut out = stem.absolute_singular.clone();
-            if let Some(last) = out.last() {
-                if last.letter == letter::HE {
-                    out.pop();
-                    if let Some(prev) = out.last_mut() {
-                        prev.vowel = Some(Patah);
-                    }
-                    out.push(Cons::new(letter::TAV));
+            if let Some(last) = out.last()
+                && last.letter == letter::HE
+            {
+                out.pop();
+                if let Some(prev) = out.last_mut() {
+                    prev.vowel = Some(Patah);
                 }
+                out.push(Cons::new(letter::TAV));
             }
             out
         }
@@ -212,15 +223,14 @@ fn singular_construct(stem: &NounStem) -> Vec<Cons> {
 
 /// Construct-state reduction: both propretonic v1 and pretonic v2 shorten
 /// (דָּבָר → דְּבַר).
-fn reduce_construct_masculine(seq: &mut Vec<Cons>) {
+fn reduce_construct_masculine(seq: &mut [Cons]) {
     use Vowel::*;
     reduce_propretonic(seq);
-    if seq.len() >= 2 {
-        if let Some(v) = seq[1].vowel {
-            if v == Qamats {
-                seq[1].vowel = Some(Patah);
-            }
-        }
+    if seq.len() >= 2
+        && let Some(v) = seq[1].vowel
+        && v == Qamats
+    {
+        seq[1].vowel = Some(Patah);
     }
 }
 
@@ -229,12 +239,11 @@ fn reduce_construct_masculine(seq: &mut Vec<Cons>) {
 /// דְּבָרִים).
 fn reduce_propretonic(seq: &mut [Cons]) {
     use Vowel::*;
-    if seq.len() >= 3 {
-        if let Some(v) = seq[0].vowel {
-            if matches!(v, Qamats | Tsere) {
-                seq[0].vowel = Some(Sheva);
-            }
-        }
+    if seq.len() >= 3
+        && let Some(v) = seq[0].vowel
+        && matches!(v, Qamats | Tsere)
+    {
+        seq[0].vowel = Some(Sheva);
     }
 }
 
@@ -254,10 +263,10 @@ fn plural_absolute(stem: &NounStem) -> Vec<Cons> {
         }
         NounStemKind::FeminineHe => {
             // Drop the final he and add -ôt.
-            if let Some(last) = out.last() {
-                if last.letter == letter::HE {
-                    out.pop();
-                }
+            if let Some(last) = out.last()
+                && last.letter == letter::HE
+            {
+                out.pop();
             }
             if let Some(last) = out.last_mut() {
                 last.vowel = Some(Holam);
@@ -314,26 +323,20 @@ fn dual_absolute(stem: &NounStem) -> Vec<Cons> {
 /// singular stem. The whole list of plural-base endings is:
 ///   1cs -ay, 2ms -êḵā, 2fs -ayiḵ, 3ms -āw, 3fs -êhā, 1cp -ênû,
 ///   2mp -êḵem, 2fp -êḵen, 3mp -êhem, 3fp -êhen.
-fn with_pron_suffix(
-    stem: &NounStem,
-    plural: bool,
-    p: Person,
-    g: Gender,
-    n: Number,
-) -> Vec<Cons> {
+fn with_pron_suffix(stem: &NounStem, plural: bool, p: Person, g: Gender, n: Number) -> Vec<Cons> {
     use Vowel::*;
     let mut out = stem.absolute_singular.clone();
 
     // For feminine -â stems, restore the -t connector before any suffix.
     if matches!(stem.kind, NounStemKind::FeminineHe) {
-        if let Some(last) = out.last() {
-            if last.letter == letter::HE {
-                out.pop();
-                if let Some(prev) = out.last_mut() {
-                    prev.vowel = Some(Qamats);
-                }
-                out.push(Cons::new(letter::TAV));
+        if let Some(last) = out.last()
+            && last.letter == letter::HE
+        {
+            out.pop();
+            if let Some(prev) = out.last_mut() {
+                prev.vowel = Some(Qamats);
             }
+            out.push(Cons::new(letter::TAV));
         }
     } else {
         // Propretonic reduction; pretonic stays long because the suffix
@@ -498,10 +501,7 @@ mod tests {
         let forms = inflect_noun(&stem);
         // Plural absolute should be דְּבָרִים — dalet+dagesh+sheva, bet+qamats,
         // resh+hiriq, yod, mem (traditional combining order).
-        let pl = forms
-            .iter()
-            .find(|f| f.label == "Plural Absolute")
-            .unwrap();
+        let pl = forms.iter().find(|f| f.label == "Plural Absolute").unwrap();
         assert_eq!(
             pl.text,
             "\u{05D3}\u{05BC}\u{05B0}\u{05D1}\u{05B8}\u{05E8}\u{05B4}\u{05D9}\u{05DD}",

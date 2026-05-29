@@ -102,91 +102,103 @@ pub struct SedraLexemeSummary {
 // rather than the packed 32-bit integer described in the README.
 
 fn decode_gender(k: i64) -> Option<String> {
-    Some(match k {
-        1 => "Common",
-        2 => "Masculine",
-        3 => "Feminine",
-        _ => return None,
-    }
-    .to_string())
+    Some(
+        match k {
+            1 => "Common",
+            2 => "Masculine",
+            3 => "Feminine",
+            _ => return None,
+        }
+        .to_string(),
+    )
 }
 
 fn decode_person(k: i64) -> Option<String> {
-    Some(match k {
-        1 => "Third",
-        2 => "Second",
-        3 => "First",
-        _ => return None,
-    }
-    .to_string())
+    Some(
+        match k {
+            1 => "Third",
+            2 => "Second",
+            3 => "First",
+            _ => return None,
+        }
+        .to_string(),
+    )
 }
 
 fn decode_number(k: i64) -> Option<String> {
-    Some(match k {
-        1 => "Singular",
-        2 => "Plural",
-        _ => return None,
-    }
-    .to_string())
+    Some(
+        match k {
+            1 => "Singular",
+            2 => "Plural",
+            _ => return None,
+        }
+        .to_string(),
+    )
 }
 
 fn decode_state(k: i64) -> Option<String> {
-    Some(match k {
-        1 => "Absolute",
-        2 => "Construct",
-        3 => "Emphatic",
-        _ => return None,
-    }
-    .to_string())
+    Some(
+        match k {
+            1 => "Absolute",
+            2 => "Construct",
+            3 => "Emphatic",
+            _ => return None,
+        }
+        .to_string(),
+    )
 }
 
 fn decode_tense(k: i64) -> Option<String> {
-    Some(match k {
-        1 => "Perfect",
-        2 => "Imperfect",
-        3 => "Imperative",
-        4 => "Infinitive",
-        5 => "Active participle",
-        6 => "Passive participle",
-        7 => "Participle",
-        _ => return None,
-    }
-    .to_string())
+    Some(
+        match k {
+            1 => "Perfect",
+            2 => "Imperfect",
+            3 => "Imperative",
+            4 => "Infinitive",
+            5 => "Active participle",
+            6 => "Passive participle",
+            7 => "Participle",
+            _ => return None,
+        }
+        .to_string(),
+    )
 }
 
 fn decode_form(k: i64) -> Option<String> {
-    Some(match k {
-        1 => "Peal",
-        2 => "Ethpeal",
-        3 => "Pael",
-        4 => "Ethpaal",
-        5 => "Aphel",
-        6 => "Ettaphal",
-        7 => "Shaphel",
-        8 => "Eshtaphal",
-        9 => "Saphel",
-        10 => "Estaphal",
-        11 => "Pauel",
-        12 => "Ethpaual",
-        13 => "Paiel",
-        14 => "Ethpaial",
-        15 => "Palpal",
-        16 => "Ethpalpal",
-        17 => "Palpel",
-        18 => "Ethpalpal",
-        19 => "Pamel",
-        20 => "Ethpamal",
-        21 => "Parel",
-        22 => "Ethparal",
-        23 => "Pali",
-        24 => "Ethpali",
-        25 => "Pahli",
-        26 => "Ethpahli",
-        27 => "Taphel",
-        28 => "Ethaphal",
-        _ => return None,
-    }
-    .to_string())
+    Some(
+        match k {
+            1 => "Peal",
+            2 => "Ethpeal",
+            3 => "Pael",
+            4 => "Ethpaal",
+            5 => "Aphel",
+            6 => "Ettaphal",
+            7 => "Shaphel",
+            8 => "Eshtaphal",
+            9 => "Saphel",
+            10 => "Estaphal",
+            11 => "Pauel",
+            12 => "Ethpaual",
+            13 => "Paiel",
+            14 => "Ethpaial",
+            15 => "Palpal",
+            16 => "Ethpalpal",
+            17 => "Palpel",
+            18 => "Ethpalpal",
+            19 => "Pamel",
+            20 => "Ethpamal",
+            21 => "Parel",
+            22 => "Ethparal",
+            23 => "Pali",
+            24 => "Ethpali",
+            25 => "Pahli",
+            26 => "Ethpahli",
+            27 => "Taphel",
+            28 => "Ethaphal",
+            _ => return None,
+        }
+        .to_string(),
+    )
 }
 
 /// Compact pronominal-suffix label, e.g. `3ms suffix`. `None` when the word
@@ -302,14 +314,16 @@ impl Default for Bible {
         // Legacy Python-generated DB: lexicon, morphology, occurrences, syriac.
         let haqor_db = Asset::get("haqor.db").unwrap();
         let haqor_data = Box::new(haqor_db.data.into_owned());
-        db.deserialize_bytes(MAIN_DB, Box::leak(haqor_data)).unwrap();
+        db.deserialize_bytes(MAIN_DB, Box::leak(haqor_data))
+            .unwrap();
 
         // Rust-generated bible text, attached as a second schema `bibledb`.
         db.execute_batch("ATTACH DATABASE ':memory:' AS bibledb")
             .unwrap();
         let bible_db = Asset::get("bible.db").unwrap();
         let bible_data = Box::new(bible_db.data.into_owned());
-        db.deserialize_bytes(c"bibledb", Box::leak(bible_data)).unwrap();
+        db.deserialize_bytes(c"bibledb", Box::leak(bible_data))
+            .unwrap();
 
         // Rust-generated SEDRA lexicon (roots, lexemes, words, english) in
         // Hebrew Unicode, attached as a third schema `sedradb`.
@@ -317,7 +331,8 @@ impl Default for Bible {
             .unwrap();
         let sedra_db = Asset::get("sedra.db").unwrap();
         let sedra_data = Box::new(sedra_db.data.into_owned());
-        db.deserialize_bytes(c"sedradb", Box::leak(sedra_data)).unwrap();
+        db.deserialize_bytes(c"sedradb", Box::leak(sedra_data))
+            .unwrap();
 
         Bible { db }
     }
@@ -584,7 +599,10 @@ impl Bible {
     /// final forms, so OT roots are folded to medial before matching. Restricted
     /// to OT books (<40) so these never duplicate the SEDRA-derived NT
     /// occurrences. Roots without a Hebrew cognate simply yield nothing.
-    pub fn ot_root_occurrences(&self, sedra_key_root: i64) -> rusqlite::Result<Vec<WordOccurrence>> {
+    pub fn ot_root_occurrences(
+        &self,
+        sedra_key_root: i64,
+    ) -> rusqlite::Result<Vec<WordOccurrence>> {
         let root: String = self.db.query_row(
             "SELECT strRoot FROM sedradb.roots WHERE keyRoot = ?1",
             [sedra_key_root],
@@ -812,7 +830,8 @@ mod tests {
         assert!(!info[0].root.is_empty());
         assert!(!info[0].lexeme.is_empty());
         assert!(
-            info.iter().any(|w| w.meanings.iter().any(|m| m.contains("book"))),
+            info.iter()
+                .any(|w| w.meanings.iter().any(|m| m.contains("book"))),
             "expected a 'book' gloss"
         );
         // sedra_lookup flattens the same data into (lexeme, meaning) entries.
@@ -843,7 +862,11 @@ mod tests {
         let detailed = bible.sedra_root_occurrences_detailed(w.key_root).unwrap();
         assert!(!detailed.is_empty());
         assert!(detailed.iter().all(|o| o.book >= 40));
-        assert!(detailed.iter().all(|o| (o.lexeme_index as usize) < tree.len()));
+        assert!(
+            detailed
+                .iter()
+                .all(|o| (o.lexeme_index as usize) < tree.len())
+        );
         assert!(detailed.iter().all(|o| !o.words.is_empty()));
         let distinct_verses: std::collections::HashSet<_> = detailed
             .iter()

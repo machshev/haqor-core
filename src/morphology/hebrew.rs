@@ -251,10 +251,7 @@ mod tests {
             Cons::new(letter::TET).with_vowel(Vowel::Patah),
             Cons::new(letter::LAMED),
         ];
-        assert_eq!(
-            render(&seq),
-            "\u{05E7}\u{05B8}\u{05D8}\u{05B7}\u{05DC}",
-        );
+        assert_eq!(render(&seq), "\u{05E7}\u{05B8}\u{05D8}\u{05B7}\u{05DC}",);
     }
 
     #[test]
@@ -265,10 +262,7 @@ mod tests {
             Cons::new(letter::LAMED).with_vowel(Vowel::Segol),
             Cons::new(letter::KAF),
         ];
-        assert_eq!(
-            render(&seq),
-            "\u{05DE}\u{05B6}\u{05DC}\u{05B6}\u{05DA}",
-        );
+        assert_eq!(render(&seq), "\u{05DE}\u{05B6}\u{05DC}\u{05B6}\u{05DA}",);
     }
 
     #[test]
