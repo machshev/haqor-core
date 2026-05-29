@@ -81,6 +81,17 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/bible.db")]
         output: PathBuf,
     },
+    /// Generate the SEDRA tables (roots, lexemes, words, english) mirroring the
+    /// SEDRA source files losslessly, with transliteration columns rendered into
+    /// Hebrew Unicode.
+    GenSedra {
+        /// Source texts directory (defaults to src_texts/)
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+        /// Output database path
+        #[arg(short, long, default_value = "data/sedra.db")]
+        output: PathBuf,
+    },
 }
 
 fn main() -> Result<()> {
@@ -143,6 +154,10 @@ fn main() -> Result<()> {
             }
             DbCommands::GenBible { src_texts, output } => {
                 let total = haqor_core::generate::generate_bible(&src_texts, &output)?;
+                println!("Wrote {} rows to {}", total, output.display());
+            }
+            DbCommands::GenSedra { src_texts, output } => {
+                let total = haqor_core::generate::generate_sedra(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
             }
         },

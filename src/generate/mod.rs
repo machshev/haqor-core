@@ -5,6 +5,7 @@
 //! UXLC plus NT Syriac transliterated into Hebrew letters from SEDRA).
 
 mod sedra;
+mod sedra_db;
 mod uxlc;
 
 use std::path::Path;
@@ -53,4 +54,10 @@ pub fn generate_bible(src_texts: &Path, output: &Path) -> Result<usize> {
     let total = ot.len() + nt.len();
     info!("Wrote {total} rows to {}", output.display());
     Ok(total)
+}
+
+/// Generate a standalone SQLite database mirroring the SEDRA source files
+/// losslessly, with transliteration columns rendered into Hebrew Unicode.
+pub fn generate_sedra(src_texts: &Path, output: &Path) -> Result<usize> {
+    sedra_db::generate_sedra(src_texts, output)
 }

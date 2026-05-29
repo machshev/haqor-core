@@ -80,6 +80,14 @@ pub fn syriac_to_hebrew(text: &str) -> String {
         .collect()
 }
 
+/// Convert Hebrew text back to its SEDRA transliteration. Exact inverse of
+/// [`sedra_to_hebrew`].
+pub fn hebrew_to_sedra(text: &str) -> String {
+    text.chars()
+        .map(|c| MAP.iter().find(|(_, h, _)| *h == c).map_or(c, |(s, _, _)| *s))
+        .collect()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -104,6 +112,15 @@ mod tests {
         // Hebrew carries dagesh; Syriac carries qushshaya.
         assert!(heb.contains('\u{05BC}'));
         assert!(syr.contains('\u{0741}'));
+    }
+
+    #[test]
+    fn sedra_hebrew_round_trips() {
+        // Every SEDRA symbol that occurs in the SEDRA source tables must
+        // survive sedra → Hebrew → sedra unchanged (lossless storage).
+        for word in ["AoAaR", "B'oAAaR", "C'ToBoA", "B,A*", "BR-ABA", "A;XNON"] {
+            assert_eq!(hebrew_to_sedra(&sedra_to_hebrew(word)), word);
+        }
     }
 
     #[test]
