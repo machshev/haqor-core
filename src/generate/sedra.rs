@@ -13,8 +13,8 @@ use std::path::Path;
 
 use anyhow::{Context, Result};
 
-use crate::generate::translit;
 use crate::generate::uxlc::Verse;
+use crate::transliterate;
 
 /// SEDRA book ids start at 52 (Matthew); Haqor book numbers start at 40.
 const SEDRA_BOOK_OFFSET: u8 = 12;
@@ -68,7 +68,7 @@ pub fn parse_all(sedra_dir: &Path) -> Result<Vec<Verse>> {
             let vocalised = words
                 .get(&key)
                 .with_context(|| format!("word id {key} not found in tblWords.txt"))?;
-            hebrew_words.push(translit::to_hebrew(vocalised));
+            hebrew_words.push(transliterate::sedra_to_hebrew(vocalised));
         }
 
         verses.push(Verse {
