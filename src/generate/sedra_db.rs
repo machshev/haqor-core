@@ -69,8 +69,8 @@ fn column_type(name: &str) -> &'static str {
 /// Load one SEDRA table into the database. Returns the number of rows written.
 fn load_table(db: &mut Connection, sedra_dir: &Path, spec: &TableSpec) -> Result<usize> {
     let path = sedra_dir.join(spec.file);
-    let mut reader = csv::Reader::from_path(&path)
-        .with_context(|| format!("opening {}", path.display()))?;
+    let mut reader =
+        csv::Reader::from_path(&path).with_context(|| format!("opening {}", path.display()))?;
 
     let headers: Vec<String> = reader.headers()?.iter().map(str::to_owned).collect();
 
@@ -87,8 +87,7 @@ fn load_table(db: &mut Connection, sedra_dir: &Path, spec: &TableSpec) -> Result
         [],
     )?;
 
-    let placeholders: Vec<String> =
-        (1..=headers.len()).map(|n| format!("?{n}")).collect();
+    let placeholders: Vec<String> = (1..=headers.len()).map(|n| format!("?{n}")).collect();
     let insert_sql = format!(
         "INSERT INTO {} VALUES ({})",
         spec.table,
@@ -146,8 +145,8 @@ pub fn generate_sedra(src_texts: &Path, output: &Path) -> Result<usize> {
             .with_context(|| format!("removing existing {}", output.display()))?;
     }
 
-    let mut db = Connection::open(output)
-        .with_context(|| format!("opening {}", output.display()))?;
+    let mut db =
+        Connection::open(output).with_context(|| format!("opening {}", output.display()))?;
 
     let mut total = 0;
     for spec in TABLES {
@@ -191,7 +190,10 @@ fn load_occurrences(db: &mut Connection, sedra_dir: &Path) -> Result<usize> {
             }
             let mut fields = line.splitn(4, ',');
             let sedra_book: u8 = fields.next().context("cache line missing book")?.parse()?;
-            let chapter: u8 = fields.next().context("cache line missing chapter")?.parse()?;
+            let chapter: u8 = fields
+                .next()
+                .context("cache line missing chapter")?
+                .parse()?;
             let verse: u8 = fields.next().context("cache line missing verse")?.parse()?;
             let ids = fields.next().context("cache line missing word ids")?;
             let book = sedra_book - SEDRA_BOOK_OFFSET;

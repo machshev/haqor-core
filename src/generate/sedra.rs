@@ -4,7 +4,7 @@
 //! assembled from two checked-in source files:
 //!   - `tblWords.txt`  — SEDRA3 words table; `keyWord` → `strVocalised`.
 //!   - `BFBS.cache`     — `book,chapter,verse,wid wid ...` per verse, where
-//!                        `book` is the SEDRA book id (Matthew = 52).
+//!     `book` is the SEDRA book id (Matthew = 52).
 //!
 //! Each word's vocalised transliteration is converted to Hebrew letters.
 
@@ -21,8 +21,8 @@ const SEDRA_BOOK_OFFSET: u8 = 12;
 
 /// Load `tblWords.txt` into a `keyWord` → `strVocalised` map.
 fn load_words(path: &Path) -> Result<HashMap<u64, String>> {
-    let mut reader = csv::Reader::from_path(path)
-        .with_context(|| format!("opening {}", path.display()))?;
+    let mut reader =
+        csv::Reader::from_path(path).with_context(|| format!("opening {}", path.display()))?;
 
     let headers = reader.headers()?.clone();
     let key_idx = column(&headers, "keyWord")?;
@@ -58,7 +58,10 @@ pub fn parse_all(sedra_dir: &Path) -> Result<Vec<Verse>> {
         }
         let mut fields = line.splitn(4, ',');
         let sedra_book: u8 = fields.next().context("cache line missing book")?.parse()?;
-        let chapter: u8 = fields.next().context("cache line missing chapter")?.parse()?;
+        let chapter: u8 = fields
+            .next()
+            .context("cache line missing chapter")?
+            .parse()?;
         let verse: u8 = fields.next().context("cache line missing verse")?.parse()?;
         let ids = fields.next().context("cache line missing word ids")?;
 

@@ -135,9 +135,8 @@ fn main() -> Result<()> {
         }
         Commands::Db { command } => match command {
             DbCommands::Update { source } => {
-                let src = source.unwrap_or_else(|| {
-                    PathBuf::from("../bible-modules/modules/haqor/haqor.db")
-                });
+                let src = source
+                    .unwrap_or_else(|| PathBuf::from("../bible-modules/modules/haqor/haqor.db"));
                 let dst = PathBuf::from("data/haqor.db");
 
                 info!("Copying {} -> {}", src.display(), dst.display());
@@ -146,11 +145,7 @@ fn main() -> Result<()> {
                     format!("Failed to copy {} to {}", src.display(), dst.display())
                 })?;
 
-                println!(
-                    "Updated {} ({} bytes)",
-                    dst.display(),
-                    bytes
-                );
+                println!("Updated {} ({} bytes)", dst.display(), bytes);
             }
             DbCommands::GenBible { src_texts, output } => {
                 let total = haqor_core::generate::generate_bible(&src_texts, &output)?;
@@ -183,10 +178,7 @@ fn print_morphology(root_input: &str, binyan_filter: Option<&str>) -> Result<()>
         .with_context(|| format!("could not parse root '{root_input}'"))?;
 
     let filter = match binyan_filter {
-        Some(b) => Some(
-            parse_binyan(b)
-                .with_context(|| format!("unknown binyan '{b}'"))?,
-        ),
+        Some(b) => Some(parse_binyan(b).with_context(|| format!("unknown binyan '{b}'"))?),
         None => None,
     };
 
@@ -201,10 +193,10 @@ fn print_morphology(root_input: &str, binyan_filter: Option<&str>) -> Result<()>
     let paradigm = morphology::generate_paradigm(&root);
 
     for &binyan in &morphology::Binyan::ALL {
-        if let Some(only) = filter {
-            if binyan != only {
-                continue;
-            }
+        if let Some(only) = filter
+            && binyan != only
+        {
+            continue;
         }
         let any = paradigm.forms.iter().any(|f| f.binyan == binyan);
         if !any {

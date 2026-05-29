@@ -35,8 +35,8 @@ pub fn generate_bible(src_texts: &Path, output: &Path) -> Result<usize> {
             .with_context(|| format!("removing existing {}", output.display()))?;
     }
 
-    let mut db = Connection::open(output)
-        .with_context(|| format!("opening {}", output.display()))?;
+    let mut db =
+        Connection::open(output).with_context(|| format!("opening {}", output.display()))?;
     db.execute(
         "CREATE TABLE bible(book INT, chapter INT, verse INT, words TEXT)",
         [],
