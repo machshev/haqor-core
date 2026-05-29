@@ -1,0 +1,144 @@
+//! SEDRA database generator.
+//!
+//! Builds a standalone SQLite database whose tables mirror the SEDRA 3 source
+//! files (`tblRoots.txt`, `tblLexemes.txt`, `tblWords.txt`, `tblEnglish.txt`)
+//! losslessly. Every column from each source file is preserved; the only
+//! transformation is that the Syriac transliteration columns (`strRoot`,
+//! `strLexeme`, `strWord`, `strVocalised`) are rendered into Hebrew Unicode via
+//! the bijective map in [`crate::transliterate`], so the original SEDRA
+//! transliteration round-trips exactly (`hebrew_to_sedra`).
+//!
+//! Numeric columns (those whose name starts with `key`/`int`) get INTEGER
+//! affinity; everything else is TEXT. The first column of each file is its
+//! primary key. Sorting keys and English meaning text are stored verbatim.
+
+use std::path::Path;
+
+use anyhow::{Context, Result};
+use log::info;
+use rusqlite::Connection;
+
+use crate::transliterate;
+
+/// One source file → one table. `translit` lists the columns whose SEDRA
+/// transliteration is rendered into Hebrew Unicode.
+struct TableSpec {
+    table: &'static str,
+    file: &'static str,
+    translit: &'static [&'static str],
+}
+
+const TABLES: &[TableSpec] = &[
+    TableSpec {
+        table: "roots",
+        file: "tblRoots.txt",
+        translit: &["strRoot"],
+    },
+    TableSpec {
+        table: "lexemes",
+        file: "tblLexemes.txt",
+        translit: &["strLexeme"],
+    },
+    TableSpec {
+        table: "words",
+        file: "tblWords.txt",
+        translit: &["strWord", "strVocalised"],
+    },
+    TableSpec {
+        table: "english",
+        file: "tblEnglish.txt",
+        translit: &[],
+    },
+];
+
+/// SQLite type affinity inferred from a SEDRA column name.
+fn column_type(name: &str) -> &'static str {
+    if name.starts_with("key") || name.starts_with("int") {
+        "INTEGER"
+    } else {
+        "TEXT"
+    }
+}
+
+/// Load one SEDRA table into the database. Returns the number of rows written.
+fn load_table(db: &mut Connection, sedra_dir: &Path, spec: &TableSpec) -> Result<usize> {
+    let path = sedra_dir.join(spec.file);
+    let mut reader = csv::Reader::from_path(&path)
+        .with_context(|| format!("opening {}", path.display()))?;
+
+    let headers: Vec<String> = reader.headers()?.iter().map(str::to_owned).collect();
+
+    let columns_sql: Vec<String> = headers
+        .iter()
+        .enumerate()
+        .map(|(i, name)| {
+            let pk = if i == 0 { " PRIMARY KEY" } else { "" };
+            format!("{name} {}{pk}", column_type(name))
+        })
+        .collect();
+    db.execute(
+        &format!("CREATE TABLE {}({})", spec.table, columns_sql.join(", ")),
+        [],
+    )?;
+
+    let placeholders: Vec<String> =
+        (1..=headers.len()).map(|n| format!("?{n}")).collect();
+    let insert_sql = format!(
+        "INSERT INTO {} VALUES ({})",
+        spec.table,
+        placeholders.join(", ")
+    );
+
+    let translit: Vec<bool> = headers
+        .iter()
+        .map(|h| spec.translit.contains(&h.as_str()))
+        .collect();
+
+    let tx = db.transaction()?;
+    let mut rows = 0;
+    {
+        let mut stmt = tx.prepare(&insert_sql)?;
+        for record in reader.records() {
+            let record = record?;
+            let values: Vec<String> = record
+                .iter()
+                .enumerate()
+                .map(|(i, field)| {
+                    if translit[i] {
+                        transliterate::sedra_to_hebrew(field)
+                    } else {
+                        field.to_owned()
+                    }
+                })
+                .collect();
+            stmt.execute(rusqlite::params_from_iter(values.iter()))?;
+            rows += 1;
+        }
+    }
+    tx.commit()?;
+    Ok(rows)
+}
+
+/// Generate a standalone SQLite database mirroring the SEDRA source files, with
+/// transliteration columns rendered into Hebrew Unicode.
+pub fn generate_sedra(src_texts: &Path, output: &Path) -> Result<usize> {
+    let sedra_dir = src_texts.join("SEDRA");
+
+    if output.exists() {
+        std::fs::remove_file(output)
+            .with_context(|| format!("removing existing {}", output.display()))?;
+    }
+
+    let mut db = Connection::open(output)
+        .with_context(|| format!("opening {}", output.display()))?;
+
+    let mut total = 0;
+    for spec in TABLES {
+        let rows = load_table(&mut db, &sedra_dir, spec)?;
+        info!("  {} rows -> {}", rows, spec.table);
+        total += rows;
+    }
+
+    info!("Wrote {total} rows to {}", output.display());
+    Ok(total)
+}
