@@ -578,6 +578,38 @@ impl Bible {
         .collect()
     }
 
+    /// OT (Hebrew Bible) occurrences of the same consonantal root as a SEDRA
+    /// NT root, pulled from the legacy haqor.db `occurrences`/`words` tables.
+    /// The SEDRA root is rendered with medial letter forms while OT roots use
+    /// final forms, so OT roots are folded to medial before matching. Restricted
+    /// to OT books (<40) so these never duplicate the SEDRA-derived NT
+    /// occurrences. Roots without a Hebrew cognate simply yield nothing.
+    pub fn ot_root_occurrences(&self, sedra_key_root: i64) -> rusqlite::Result<Vec<WordOccurrence>> {
+        let root: String = self.db.query_row(
+            "SELECT strRoot FROM sedradb.roots WHERE keyRoot = ?1",
+            [sedra_key_root],
+            |row| row.get(0),
+        )?;
+        let key = crate::transliterate::lookup_key(&root);
+        let mut stmt = self.db.prepare(
+            "SELECT DISTINCT o.book, o.chapter, o.verse \
+             FROM occurrences o JOIN words w ON o.raw = w.raw \
+             WHERE o.book < 40 AND replace(replace(replace(replace(replace( \
+                 w.root, char(1498), char(1499)), char(1501), char(1502)), \
+                 char(1503), char(1504)), char(1507), char(1508)), \
+                 char(1509), char(1510)) = ?1 \
+             ORDER BY o.book, o.chapter, o.verse",
+        )?;
+        stmt.query_map([key], |row| {
+            Ok(WordOccurrence {
+                book: row.get(0)?,
+                chapter: row.get(1)?,
+                verse: row.get(2)?,
+            })
+        })?
+        .collect()
+    }
+
     /// NT occurrences of every lexeme of a root, each tagged with the lexeme's
     /// position in the root tree so the UI can filter by lexeme. `lexeme_index`
     /// matches the ordering of [`Bible::sedra_root_tree`] (lexemes ordered by
@@ -792,6 +824,12 @@ mod tests {
         let tree = bible.sedra_root_tree(w.key_root, w.key_lexeme).unwrap();
         assert!(tree.len() > 1, "root should have several lexemes");
         assert_eq!(tree.iter().filter(|l| l.is_current).count(), 1);
+
+        // OT occurrences of the same root (כתב "write") come from legacy
+        // haqor.db, are all OT (<40), and never overlap the NT SEDRA set.
+        let ot_occ = bible.ot_root_occurrences(w.key_root).unwrap();
+        assert!(!ot_occ.is_empty(), "expected OT occurrences for root כתב");
+        assert!(ot_occ.iter().all(|o| o.book < 40));
 
         // Occurrences: lexeme is a subset of the root family, both non-empty.
         let lex_occ = bible.sedra_lexeme_occurrences(w.key_lexeme).unwrap();
