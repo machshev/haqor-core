@@ -20,3 +20,6 @@ pub mod morphology;
 /// Generate Haqor data tables from original source texts (Rust port of the
 /// bible-modules pipeline).
 pub mod generate;
+
+/// Lossless SEDRA→Hebrew transliteration and Hebrew↔Syriac conversion.
+pub mod transliterate;

@@ -5,7 +5,6 @@
 //! UXLC plus NT Syriac transliterated into Hebrew letters from SEDRA).
 
 mod sedra;
-mod translit;
 mod uxlc;
 
 use std::path::Path;

@@ -114,11 +114,19 @@ pub struct Bible {
 
 impl Default for Bible {
     fn default() -> Self {
-        let haqor_db = Asset::get("haqor.db").unwrap();
-        let data = Box::new(haqor_db.data.into_owned());
-
         let mut db = Connection::open_in_memory().unwrap();
-        db.deserialize_bytes(MAIN_DB, Box::leak(data)).unwrap();
+
+        // Legacy Python-generated DB: lexicon, morphology, occurrences, syriac.
+        let haqor_db = Asset::get("haqor.db").unwrap();
+        let haqor_data = Box::new(haqor_db.data.into_owned());
+        db.deserialize_bytes(MAIN_DB, Box::leak(haqor_data)).unwrap();
+
+        // Rust-generated bible text, attached as a second schema `bibledb`.
+        db.execute_batch("ATTACH DATABASE ':memory:' AS bibledb")
+            .unwrap();
+        let bible_db = Asset::get("bible.db").unwrap();
+        let bible_data = Box::new(bible_db.data.into_owned());
+        db.deserialize_bytes(c"bibledb", Box::leak(bible_data)).unwrap();
 
         Bible { db }
     }
@@ -127,7 +135,7 @@ impl Default for Bible {
 impl Bible {
     pub fn get(&self, book: u8, chapter: u8, verse: u8) -> rusqlite::Result<String> {
         self.db.query_row(
-            "SELECT words FROM hebrew WHERE book == ?1 AND chapter == ?2 AND verse == ?3",
+            "SELECT words FROM bibledb.bible WHERE book == ?1 AND chapter == ?2 AND verse == ?3",
             [book, chapter, verse],
             |row| row.get(0),
         )
@@ -139,12 +147,20 @@ impl Bible {
         chapter: u8,
         syriac: bool,
     ) -> rusqlite::Result<Vec<(u8, String)>> {
-        let table = if syriac { "syriac" } else { "hebrew" };
-        let mut stmt = self.db.prepare(&format!(
-            "SELECT verse, words FROM {table} WHERE book = ?1 AND chapter = ?2 ORDER BY verse",
-        ))?;
+        let mut stmt = self.db.prepare(
+            "SELECT verse, words FROM bibledb.bible WHERE book = ?1 AND chapter = ?2 ORDER BY verse",
+        )?;
         let verses = stmt
-            .query_map([book, chapter], |row| Ok((row.get(0)?, row.get(1)?)))?
+            .query_map([book, chapter], |row| {
+                let verse: u8 = row.get(0)?;
+                let words: String = row.get(1)?;
+                let words = if syriac {
+                    crate::transliterate::hebrew_to_syriac(&words)
+                } else {
+                    words
+                };
+                Ok((verse, words))
+            })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         Ok(verses)
     }
@@ -298,7 +314,7 @@ impl Bible {
 
     pub fn chapter_count(&self, book: u8) -> rusqlite::Result<u8> {
         self.db.query_row(
-            "SELECT MAX(chapter) FROM hebrew WHERE book = ?1",
+            "SELECT MAX(chapter) FROM bibledb.bible WHERE book = ?1",
             [book],
             |row| row.get(0),
         )
@@ -313,6 +329,50 @@ mod tests {
     #[test]
     fn test_database_open() {
         let _bible = Bible::default();
+    }
+
+    #[test]
+    fn test_get_reads_bible_table() {
+        let bible = Bible::default();
+
+        // OT (Genesis 1:1) comes from the UXLC source: 7 words, ends with sof
+        // pasuq, first letter is bet.
+        let ot = bible.get(1, 1, 1).unwrap();
+        assert_eq!(ot.split(' ').count(), 7);
+        assert!(ot.starts_with('ב'));
+        assert!(ot.ends_with('׃'));
+
+        // NT (Matthew 1:1, book 40) is SEDRA transliterated into Hebrew: 8
+        // words, first word is כּתָבָא (kaf with dagesh).
+        let matt = bible.get(40, 1, 1).unwrap();
+        assert_eq!(matt.split(' ').count(), 8);
+        assert!(matt.starts_with('כ'));
+    }
+
+    #[test]
+    fn nt_hebrew_round_trips_through_syriac() {
+        let bible = Bible::default();
+        let mut stmt = bible
+            .db
+            .prepare("SELECT words FROM bibledb.bible WHERE book >= 40")
+            .unwrap();
+        let rows = stmt
+            .query_map([], |row| row.get::<_, String>(0))
+            .unwrap()
+            .collect::<rusqlite::Result<Vec<_>>>()
+            .unwrap();
+        assert_eq!(rows.len(), 7958);
+        for hebrew in rows {
+            let syriac = crate::transliterate::hebrew_to_syriac(&hebrew);
+            let back = crate::transliterate::syriac_to_hebrew(&syriac);
+            assert_eq!(back, hebrew, "round trip failed for NT verse");
+        }
+    }
+
+    #[test]
+    fn test_chapter_count() {
+        let bible = Bible::default();
+        assert_eq!(bible.chapter_count(1).unwrap(), 50); // Genesis has 50 chapters
     }
 
     #[test]
