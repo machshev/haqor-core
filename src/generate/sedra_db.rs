@@ -26,6 +26,8 @@ struct TableSpec {
     table: &'static str,
     file: &'static str,
     translit: &'static [&'static str],
+    /// Columns to build a secondary index on (the join keys into parent tables).
+    indexes: &'static [&'static str],
 }
 
 const TABLES: &[TableSpec] = &[
@@ -33,21 +35,25 @@ const TABLES: &[TableSpec] = &[
         table: "roots",
         file: "tblRoots.txt",
         translit: &["strRoot"],
+        indexes: &[],
     },
     TableSpec {
         table: "lexemes",
         file: "tblLexemes.txt",
         translit: &["strLexeme"],
+        indexes: &["keyRoot"],
     },
     TableSpec {
         table: "words",
         file: "tblWords.txt",
         translit: &["strWord", "strVocalised"],
+        indexes: &["keyLexeme"],
     },
     TableSpec {
         table: "english",
         file: "tblEnglish.txt",
         translit: &[],
+        indexes: &["keyLexeme"],
     },
 ];
 
@@ -116,6 +122,17 @@ fn load_table(db: &mut Connection, sedra_dir: &Path, spec: &TableSpec) -> Result
         }
     }
     tx.commit()?;
+
+    for column in spec.indexes {
+        db.execute(
+            &format!(
+                "CREATE INDEX idx_{table}_{column} ON {table}({column})",
+                table = spec.table,
+            ),
+            [],
+        )?;
+    }
+
     Ok(rows)
 }
 
@@ -139,6 +156,58 @@ pub fn generate_sedra(src_texts: &Path, output: &Path) -> Result<usize> {
         total += rows;
     }
 
+    let occ = load_occurrences(&mut db, &sedra_dir)?;
+    info!("  {occ} rows -> occurrences");
+    total += occ;
+
     info!("Wrote {total} rows to {}", output.display());
     Ok(total)
+}
+
+/// SEDRA book ids start at 52 (Matthew); Haqor book numbers start at 40.
+const SEDRA_BOOK_OFFSET: u8 = 12;
+
+/// Build the NT `occurrences` table from `BFBS.cache`: one row per word token,
+/// mapping `keyWord` to its (book, chapter, verse). This lets us list verses by
+/// lexeme or root via joins onto `words`/`lexemes`. Books use Haqor numbering
+/// (Matthew = 40), matching the `bible` table.
+fn load_occurrences(db: &mut Connection, sedra_dir: &Path) -> Result<usize> {
+    let cache = std::fs::read_to_string(sedra_dir.join("BFBS.cache"))
+        .with_context(|| format!("reading BFBS.cache in {}", sedra_dir.display()))?;
+
+    db.execute(
+        "CREATE TABLE occurrences(keyWord INTEGER, book INTEGER, chapter INTEGER, verse INTEGER)",
+        [],
+    )?;
+
+    let tx = db.transaction()?;
+    let mut rows = 0;
+    {
+        let mut stmt = tx.prepare("INSERT INTO occurrences VALUES (?1, ?2, ?3, ?4)")?;
+        for line in cache.lines() {
+            let line = line.trim();
+            if line.is_empty() {
+                continue;
+            }
+            let mut fields = line.splitn(4, ',');
+            let sedra_book: u8 = fields.next().context("cache line missing book")?.parse()?;
+            let chapter: u8 = fields.next().context("cache line missing chapter")?.parse()?;
+            let verse: u8 = fields.next().context("cache line missing verse")?.parse()?;
+            let ids = fields.next().context("cache line missing word ids")?;
+            let book = sedra_book - SEDRA_BOOK_OFFSET;
+            for id in ids.split(' ') {
+                let key: i64 = id.parse()?;
+                stmt.execute((key, book, chapter, verse))?;
+                rows += 1;
+            }
+        }
+    }
+    tx.commit()?;
+
+    db.execute(
+        "CREATE INDEX idx_occurrences_keyWord ON occurrences(keyWord)",
+        [],
+    )?;
+
+    Ok(rows)
 }
