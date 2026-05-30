@@ -96,6 +96,21 @@ impl Prefilter {
         }
         None
     }
+
+    /// Decide whether to exclude a token from verb parsing, given whether the
+    /// parser found a plausible verb reading for it.
+    ///
+    /// Function words are always excluded — their headwords are not verbs.
+    /// A proper-noun match, however, *yields* to the verb parser when the token
+    /// also has a plausible verb reading: many names are homographs of genuine
+    /// verb forms (e.g. שָׁאַל "he asked" vs שָׁאוּל), and excluding those costs
+    /// recall. Names with no verb reading stay excluded.
+    pub fn exclude(&self, surface: &str, has_plausible_verb: bool) -> Option<&'static str> {
+        match self.classify(surface) {
+            Some("proper") if has_plausible_verb => None,
+            other => other,
+        }
+    }
 }
 
 /// Split a pointed string into clusters of `base letter + following points`.

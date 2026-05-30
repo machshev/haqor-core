@@ -225,6 +225,14 @@ struct Score {
     prefilter_excluded_function: usize,
     /// False exclusions attributed to the proper-noun list.
     prefilter_excluded_proper: usize,
+    /// Verb-aware (refined) false exclusions: function words plus proper nouns
+    /// with no plausible verb reading.
+    prefilter_refined_excluded: usize,
+    /// Refined false exclusions still attributed to the proper-noun list.
+    prefilter_refined_excluded_proper: usize,
+    /// Proper-noun matches rescued by the verb-aware rule (had a plausible verb
+    /// reading, so no longer excluded) that are gold verbs — recall clawed back.
+    prefilter_rescued_proper: usize,
 }
 
 impl Score {
@@ -239,6 +247,9 @@ impl Score {
         self.prefilter_excluded += o.prefilter_excluded;
         self.prefilter_excluded_function += o.prefilter_excluded_function;
         self.prefilter_excluded_proper += o.prefilter_excluded_proper;
+        self.prefilter_refined_excluded += o.prefilter_refined_excluded;
+        self.prefilter_refined_excluded_proper += o.prefilter_refined_excluded_proper;
+        self.prefilter_rescued_proper += o.prefilter_rescued_proper;
         self
     }
 }
@@ -298,19 +309,41 @@ pub fn parse_eval(
             {
                 s.aligned = 1;
             }
-            if let Some(class) = prefilter.as_ref().and_then(|pf| pf.classify(&g.surface)) {
-                s.prefilter_excluded = 1;
-                match class {
-                    "function" => s.prefilter_excluded_function = 1,
-                    "proper" => s.prefilter_excluded_proper = 1,
-                    _ => {}
-                }
-            }
             let matches = if soft {
                 parse_word_disambiguated(&g.surface, roots.as_ref())
             } else {
                 parse_word_filtered(&g.surface, roots.as_ref())
             };
+            // A plausible verb reading: at least one fully-modelled (attested)
+            // candidate — the same signal the generate-and-test parser trusts.
+            let has_plausible = matches.iter().any(|m| m.attested);
+
+            if let Some(pf) = prefilter.as_ref() {
+                // Lexical (pure) classification — the cost of the un-refined filter.
+                if let Some(class) = pf.classify(&g.surface) {
+                    s.prefilter_excluded = 1;
+                    match class {
+                        "function" => s.prefilter_excluded_function = 1,
+                        "proper" => s.prefilter_excluded_proper = 1,
+                        _ => {}
+                    }
+                }
+                // Verb-aware (refined) classification — proper nouns with a
+                // plausible verb reading yield to the parser.
+                match pf.exclude(&g.surface, has_plausible) {
+                    Some(class) => {
+                        s.prefilter_refined_excluded = 1;
+                        if class == "proper" {
+                            s.prefilter_refined_excluded_proper = 1;
+                        }
+                    }
+                    None if pf.classify(&g.surface) == Some("proper") => {
+                        // Was a proper-noun match, now rescued by the verb rule.
+                        s.prefilter_rescued_proper = 1;
+                    }
+                    None => {}
+                }
+            }
             if matches.is_empty() {
                 return s;
             }
@@ -402,6 +435,23 @@ fn print_report(s: &Score, aligned: bool, prefilter: bool) {
         println!(
             "    via function list: {:>7}   via proper-noun list: {:>7}",
             s.prefilter_excluded_function, s.prefilter_excluded_proper
+        );
+        println!();
+        println!(
+            "  verb-aware (proper-noun yields to plausible verb reading):"
+        );
+        println!(
+            "    refined false exclusions: {:>7}  ({:.2}% of gold verbs)",
+            s.prefilter_refined_excluded,
+            pct(s.prefilter_refined_excluded, t)
+        );
+        println!(
+            "    via function list: {:>7}   via proper-noun list: {:>7}",
+            s.prefilter_excluded_function, s.prefilter_refined_excluded_proper
+        );
+        println!(
+            "    proper-noun matches rescued: {:>7}  (recall clawed back)",
+            s.prefilter_rescued_proper
         );
     }
 }
