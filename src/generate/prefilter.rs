@@ -32,6 +32,9 @@ const PROCLITICS: [char; 7] = [
     '\u{05D5}', '\u{05D1}', '\u{05DB}', '\u{05DC}', '\u{05DE}', '\u{05D4}', '\u{05E9}',
 ];
 
+/// Dagesh point — a forte here marks the doubling the definite article induces.
+const DAGESH: char = '\u{05BC}';
+
 /// Curated closed-class function words (exact pointed forms). Pronouns,
 /// demonstratives, interrogatives/relative, independent prepositions, and the
 /// common particles/negatives/adverbs. Deliberately omits forms that are also
@@ -50,6 +53,40 @@ const FUNCTION_WORDS: &[&str] = &[
     // particles / negatives / adverbs
     "לֹא", "אַל", "אִם", "כִּי", "גַּם", "אַף", "רַק", "אַךְ", "הִנֵּה", "נָא", "פֶּן", "שָׁם",
     "פֹּה", "כֹּה", "כֵּן", "עַתָּה", "אָז", "מְאֹד", "אֵין", "יֵשׁ", "אוֹ", "כֹּל", "כָּל",
+    // inflected prepositions / object marker / particles carrying a pronominal
+    // suffix — closed-class paradigms, never verbs, so always safe to exclude.
+    // ל "to/for"
+    "לִי", "לְךָ", "לָךְ", "לוֹ", "לָהּ", "לָנוּ", "לָכֶם", "לָכֶן", "לָהֶם", "לָהֶן",
+    // ב "in/with"
+    "בִּי", "בְּךָ", "בָּךְ", "בּוֹ", "בָּהּ", "בָּנוּ", "בָּכֶם", "בָּם", "בָּהֶם", "בָּהֶן",
+    // עִם "with"
+    "עִמִּי", "עִמְּךָ", "עִמָּךְ", "עִמּוֹ", "עִמָּהּ", "עִמָּנוּ", "עִמָּכֶם", "עִמָּהֶם",
+    // אֵת object marker
+    "אֹתִי", "אֹתְךָ", "אֹתָךְ", "אֹתוֹ", "אֹתָהּ", "אֹתָנוּ", "אֶתְכֶם", "אֶתְכֶן", "אֹתָם",
+    "אֹתָן", "אֶתְהֶם", "אֶתְהֶן",
+    // אֵת/אִתּ "with (accompaniment)"
+    "אִתִּי", "אִתְּךָ", "אִתָּךְ", "אִתּוֹ", "אִתָּהּ", "אִתָּנוּ", "אִתְּכֶם", "אִתָּם", "אִתָּן",
+    // אֶל "to/toward"
+    "אֵלַי", "אֵלֶיךָ", "אֵלַיִךְ", "אֵלָיו", "אֵלֶיהָ", "אֵלֵינוּ", "אֲלֵיכֶם", "אֲלֵיכֶן",
+    "אֲלֵיהֶם", "אֲלֵיהֶן",
+    // עַל "upon/against"
+    "עָלַי", "עָלֶיךָ", "עָלַיִךְ", "עָלָיו", "עָלֶיהָ", "עָלֵינוּ", "עֲלֵיכֶם", "עֲלֵיכֶן",
+    "עֲלֵיהֶם", "עֲלֵיהֶן",
+    // מִן "from"
+    "מִמֶּנִּי", "מִמְּךָ", "מִמֵּךְ", "מִמֶּנּוּ", "מִמֶּנָּה", "מִכֶּם", "מִכֶּן", "מֵהֶם", "מֵהֶן",
+    "מֵהֵמָּה",
+    // הִנֵּה "behold" + suffix
+    "הִנְנִי", "הִנֶּנִּי", "הִנּוֹ", "הִנָּם",
+];
+
+/// The Tetragrammaton and its surface variants. The lexicon carries the divine
+/// name with a holem on the he (יְהֹוָה, Strong's 3068/3069), but the Masoretic
+/// text writes the Qere-perpetuum pointing without it (יְהוָה / יְהוִה / יֱהוִה),
+/// so it never matches the lexicon's proper-noun inventory. We add the attested
+/// surface forms directly. The proclitic-peeled remainders (יהוָה / יהוִה, with no
+/// shewa under the yod) let prefixed forms — לַיהוָה, בַּיהוָה, וַיהוָה — resolve too.
+const DIVINE_NAMES: &[&str] = &[
+    "יְהוָה", "יְהוִה", "יֱהוִה", "יהוָה", "יהוִה",
 ];
 
 /// Recognises non-verb tokens by exact pointed form.
@@ -79,6 +116,14 @@ impl Prefilter {
                 proper.insert(n);
             }
         }
+        // The divine name is absent from the lexicon's pointing (see DIVINE_NAMES);
+        // add its attested surface forms so it is recognised as a proper noun.
+        proper.extend(
+            DIVINE_NAMES
+                .iter()
+                .map(|s| normalize_surface(s))
+                .filter(|s| !s.is_empty()),
+        );
         Ok(Self { function, proper })
     }
 
@@ -127,8 +172,27 @@ fn clusters(s: &str) -> Vec<String> {
     out
 }
 
+/// Remove a dagesh (forte) from the first cluster of `form`, returning the
+/// normalised remainder if one was present. When the definite article attaches —
+/// either written (הַ) or assimilated into a preposition (בַּ = בְּ+הַ) — it doubles
+/// the following consonant with a dagesh forte that the bare lexical form lacks.
+/// Stripping it lets a peeled remainder match its citation form (הַזֶּה→זֶה,
+/// בַּיּוֹם→יוֹם). Operates on a [`normalize_surface`]-ordered string, where the
+/// dagesh sorts after the vowel within the cluster.
+fn strip_initial_dagesh(form: &str) -> Option<String> {
+    let cl = clusters(form);
+    let first = cl.first()?;
+    if !first.contains(DAGESH) {
+        return None;
+    }
+    let stripped: String = first.chars().filter(|&c| c != DAGESH).collect();
+    Some(std::iter::once(stripped).chain(cl[1..].iter().cloned()).collect())
+}
+
 /// The surface itself plus every remainder after peeling 1–2 leading proclitic
-/// clusters (so prefixed function words/names still match their base form).
+/// clusters (so prefixed function words/names still match their base form). For
+/// each peeled remainder, the article-doubled variant is also offered with its
+/// dagesh forte stripped (see [`strip_initial_dagesh`]).
 fn deprefixed_forms(surface: &str) -> Vec<String> {
     let cl = clusters(surface);
     let mut forms = vec![surface.to_string()];
@@ -138,7 +202,11 @@ fn deprefixed_forms(surface: &str) -> Vec<String> {
             .iter()
             .all(|c| c.chars().next().is_some_and(|b| PROCLITICS.contains(&b)));
         if all_proclitic {
-            forms.push(cl[k..].concat());
+            let rem: String = cl[k..].concat();
+            if let Some(bare) = strip_initial_dagesh(&rem) {
+                forms.push(bare);
+            }
+            forms.push(rem);
         }
     }
     forms
@@ -176,5 +244,36 @@ mod tests {
     fn ignores_ordinary_verb() {
         let pf = func_only();
         assert_eq!(pf.classify(&normalize_surface("שָׁמַר")), None);
+    }
+
+    #[test]
+    fn matches_suffixed_preposition() {
+        let pf = func_only();
+        // closed-class preposition + pronominal suffix — never a verb.
+        assert_eq!(pf.classify(&normalize_surface("לוֹ")), Some("function"));
+        assert_eq!(pf.classify(&normalize_surface("עָלָיו")), Some("function"));
+        assert_eq!(pf.classify(&normalize_surface("אֹתוֹ")), Some("function"));
+        assert_eq!(pf.classify(&normalize_surface("מִמֶּנּוּ")), Some("function"));
+    }
+
+    #[test]
+    fn matches_divine_name_and_prefixed() {
+        let pf = Prefilter {
+            function: HashSet::new(),
+            proper: DIVINE_NAMES.iter().map(|s| normalize_surface(s)).collect(),
+        };
+        assert_eq!(pf.classify(&normalize_surface("יְהוָה")), Some("proper"));
+        // לַיהוָה = proclitic לַ + the peeled remainder יהוָה (no shewa on yod).
+        assert_eq!(pf.classify(&normalize_surface("לַיהוָה")), Some("proper"));
+    }
+
+    #[test]
+    fn matches_article_doubled_function_word() {
+        let pf = func_only();
+        // הַזֶּה = article הַ + זֶה, with the article doubling the zayin (dagesh
+        // forte) that the bare demonstrative lacks.
+        assert_eq!(pf.classify(&normalize_surface("הַזֶּה")), Some("function"));
+        // הַזֹּאת = article + זֹאת.
+        assert_eq!(pf.classify(&normalize_surface("הַזֹּאת")), Some("function"));
     }
 }
