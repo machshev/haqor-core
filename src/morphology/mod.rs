@@ -21,10 +21,12 @@
 
 pub mod hebrew;
 pub mod noun;
+pub mod parse;
 pub mod root;
 pub mod verb;
 
 pub use noun::{NounInflection, NounStem, inflect_noun};
+pub use parse::{VerbMatch, parse_word};
 pub use root::{Gizra, Root, RootError};
 pub use verb::{Binyan, Form, Paradigm, Pgn, VerbForm, generate_paradigm};
 

@@ -71,6 +71,9 @@ pub enum Form {
     Imperative,
     Cohortative,
     Jussive,
+    /// Vav-consecutive imperfect (preterite / narrative past): וַ + a forte
+    /// dagesh on the prefix consonant over the short (jussive) stem.
+    Wayyiqtol,
     InfinitiveConstruct,
     InfinitiveAbsolute,
     ParticipleActive,
@@ -85,6 +88,7 @@ impl Form {
             Form::Imperative => "Imperative",
             Form::Cohortative => "Cohortative",
             Form::Jussive => "Jussive",
+            Form::Wayyiqtol => "Wayyiqtol",
             Form::InfinitiveConstruct => "Inf. Construct",
             Form::InfinitiveAbsolute => "Inf. Absolute",
             Form::ParticipleActive => "Participle (act.)",
@@ -255,6 +259,7 @@ const FORMS_FOR_PARADIGM: &[Form] = &[
     Form::Imperative,
     Form::Cohortative,
     Form::Jussive,
+    Form::Wayyiqtol,
     Form::InfinitiveConstruct,
     Form::InfinitiveAbsolute,
     Form::ParticipleActive,
@@ -274,7 +279,7 @@ fn binyan_has_form(binyan: Binyan, form: Form) -> bool {
 fn pgns_for_form(form: Form) -> &'static [Pgn] {
     match form {
         Form::Perfect => PERFECT_PGNS,
-        Form::Imperfect => IMPERFECT_PGNS,
+        Form::Imperfect | Form::Wayyiqtol => IMPERFECT_PGNS,
         Form::Imperative => IMPERATIVE_PGNS,
         Form::Cohortative => COHORTATIVE_PGNS,
         Form::Jussive => JUSSIVE_PGNS,
@@ -287,9 +292,58 @@ fn pgns_for_form(form: Form) -> &'static [Pgn] {
 }
 
 fn generate_one(root: &Root, binyan: Binyan, form: Form, pgn: Pgn) -> (String, bool) {
+    if form == Form::Wayyiqtol {
+        return build_wayyiqtol(root, binyan, pgn);
+    }
     let seq = build_strong(root, binyan, form, pgn);
     let (seq, attested) = apply_gizra(seq, root, binyan, form, pgn);
     (hebrew::render(&seq), attested)
+}
+
+/// Build a vav-consecutive imperfect (wayyiqtol). The base is the short
+/// (jussive) stem where one exists for this PGN, otherwise the ordinary
+/// imperfect. We then prepend the consecutive vav — patah plus a forte dagesh
+/// doubling the prefix consonant, or qamats with no dagesh before the
+/// non-doubling 1cs aleph.
+///
+/// Stress retraction (nesiga) shortens the hollow stem vowel: the jussive's
+/// holam becomes qamats (wayyāqom → וַיָּקָם), except when a quiescent III-aleph
+/// preserves it (wayyāḇōʔ → וַיָּבֹא). Retracted hollow forms depend on the
+/// verb's lexical vowel class, so they're flagged `attested = false`.
+fn build_wayyiqtol(root: &Root, binyan: Binyan, pgn: Pgn) -> (String, bool) {
+    let short = JUSSIVE_PGNS.contains(&pgn);
+    let base_form = if short {
+        Form::Jussive
+    } else {
+        Form::Imperfect
+    };
+    let seq = build_strong(root, binyan, base_form, pgn);
+    let (mut seq, attested) = apply_gizra(seq, root, binyan, base_form, pgn);
+
+    if short
+        && root.has(Gizra::Hollow)
+        && root.lamed() != letter::ALEF
+        && let Some(i) = radical_idx(&seq, 1)
+        && seq[i].vowel == Some(Vowel::Holam)
+    {
+        seq[i].vowel = Some(Vowel::Qamats);
+    }
+
+    let prefix_is_aleph = seq
+        .first()
+        .map(|c| c.letter == letter::ALEF)
+        .unwrap_or(false);
+    if let Some(first) = seq.first_mut() {
+        first.dagesh = !prefix_is_aleph;
+    }
+    let vav_vowel = if prefix_is_aleph {
+        Vowel::Qamats
+    } else {
+        Vowel::Patah
+    };
+    seq.insert(0, Cons::new(letter::VAV).with_vowel(vav_vowel));
+
+    (hebrew::render(&seq), attested && !root.has(Gizra::Hollow))
 }
 
 // ----------------------------------------------------------------------------
@@ -377,6 +431,7 @@ fn build_strong(root: &Root, binyan: Binyan, form: Form, pgn: Pgn) -> Vec<Cons> 
         Form::Imperfect => build_imperfect(root, binyan, pgn, false),
         Form::Cohortative => build_cohortative(root, binyan, pgn),
         Form::Jussive => build_imperfect(root, binyan, pgn, true),
+        Form::Wayyiqtol => unreachable!("wayyiqtol is built via build_wayyiqtol"),
         Form::Imperative => build_imperative(root, binyan, pgn),
         Form::InfinitiveConstruct => build_inf_construct(root, binyan),
         Form::InfinitiveAbsolute => build_inf_absolute(root, binyan),
@@ -1353,7 +1408,6 @@ fn apply_hollow(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, _p
         }
         (Binyan::Qal, Form::Imperfect)
         | (Binyan::Qal, Form::Cohortative)
-        | (Binyan::Qal, Form::Jussive)
         | (Binyan::Qal, Form::Imperative)
         | (Binyan::Qal, Form::InfinitiveConstruct) => {
             // yāqûm: prefix vowel → qamats, C1 loses vowel, C2 becomes
@@ -1367,6 +1421,21 @@ fn apply_hollow(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, _p
             if let Some(c2_idx) = radical_idx(seq, 2) {
                 seq[c2_idx] = Cons::mater(letter::VAV);
                 seq[c2_idx].dagesh = true;
+                changed = true;
+            }
+        }
+        (Binyan::Qal, Form::Jussive) => {
+            // Short (apocopated) jussive yāqōm (יָקֹם): prefix vowel → qamats,
+            // C1 takes a holam, and the middle radical drops entirely — no
+            // vav-shureq mater, unlike the long imperfect yāqûm.
+            if let Some(c1_idx) = radical_idx(seq, 1) {
+                if c1_idx > 0 {
+                    seq[c1_idx - 1].vowel = Some(Vowel::Qamats);
+                }
+                seq[c1_idx].vowel = Some(Vowel::Holam);
+            }
+            if let Some(c2_idx) = radical_idx(seq, 2) {
+                seq.remove(c2_idx);
                 changed = true;
             }
         }
@@ -1507,16 +1576,17 @@ fn apply_lamed_he(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
             Some(Gender::Masculine),
             Some(Number::Singular),
         ) => {
-            // Apocopated: yiḇen — drop the final he.
+            // Apocopated jussive yiḇen (יִבֶן): drop the final he, then break
+            // the resulting C1-C2 word-final cluster with a helping segol on
+            // C1 while C2 closes the syllable vowel-less.
             if let Some(i) = c3_idx {
                 seq.remove(i);
-                if let Some(i2) = c2_idx {
-                    // Indices shift if c3 was after c2 — c2 stays put.
-                    let _ = i2;
-                    if let Some(j) = radical_idx(seq, 2) {
-                        seq[j].vowel = Some(Segol);
-                    }
-                }
+            }
+            if let Some(j) = radical_idx(seq, 2) {
+                seq[j].vowel = None;
+            }
+            if let Some(j) = radical_idx(seq, 1) {
+                seq[j].vowel = Some(Segol);
             }
             changed = true;
         }
@@ -1816,6 +1886,26 @@ mod tests {
             f.text,
             "\u{05D9}\u{05B4}\u{05D1}\u{05B0}\u{05E0}\u{05B6}\u{05D4}",
         );
+    }
+
+    #[test]
+    fn lamed_he_qal_jussive_3ms_apocopated() {
+        // בנה → 3ms jussive יִבֶן (apocopated: he dropped, segol on C1,
+        // C2 closes the syllable).
+        let root = Root::parse("בנה").unwrap();
+        let p = generate_paradigm(&root);
+        let f = pick(&p, Binyan::Qal, Form::Jussive, THREE_MS);
+        assert_eq!(f.text, "יִבֶן");
+    }
+
+    #[test]
+    fn hollow_qal_jussive_3ms_short() {
+        // קום → 3ms jussive יָקֹם (short form: holam on C1, middle radical
+        // dropped, no vav-shureq mater).
+        let root = Root::parse("קום").unwrap();
+        let p = generate_paradigm(&root);
+        let f = pick(&p, Binyan::Qal, Form::Jussive, THREE_MS);
+        assert_eq!(f.text, "יָקֹם");
     }
 
     #[test]

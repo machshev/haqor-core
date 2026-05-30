@@ -197,6 +197,50 @@ impl Cons {
     }
 }
 
+/// Parse a fully-pointed Hebrew word into `Cons` slots. Each consonant is one
+/// slot; the marks that follow it (dagesh, shin/sin dot, vowel) attach to it.
+/// Final-form letters are normalised back to their base forms so `render`
+/// re-applies them. Characters outside the niqqud set we model (cantillation,
+/// meteg, maqaf, …) are ignored, so cantillated text parses to its bare
+/// consonant+vowel form.
+pub fn parse_pointed(text: &str) -> Vec<Cons> {
+    let mut out: Vec<Cons> = Vec::new();
+    for ch in text.chars() {
+        let n = ch as u32;
+        if (0x05D0..=0x05EA).contains(&n) {
+            let base = match ch {
+                '\u{05DA}' => letter::KAF,
+                '\u{05DD}' => letter::MEM,
+                '\u{05DF}' => letter::NUN,
+                '\u{05E3}' => letter::PE,
+                '\u{05E5}' => letter::TSADE,
+                c => c,
+            };
+            out.push(Cons::new(base));
+        } else if let Some(last) = out.last_mut() {
+            match n {
+                0x05B0 => last.vowel = Some(Vowel::Sheva),
+                0x05B1 => last.vowel = Some(Vowel::HatafSegol),
+                0x05B2 => last.vowel = Some(Vowel::HatafPatah),
+                0x05B3 => last.vowel = Some(Vowel::HatafQamats),
+                0x05B4 => last.vowel = Some(Vowel::Hiriq),
+                0x05B5 => last.vowel = Some(Vowel::Tsere),
+                0x05B6 => last.vowel = Some(Vowel::Segol),
+                0x05B7 => last.vowel = Some(Vowel::Patah),
+                0x05B8 => last.vowel = Some(Vowel::Qamats),
+                0x05B9 => last.vowel = Some(Vowel::Holam),
+                0x05BB => last.vowel = Some(Vowel::Qubuts),
+                0x05BC => last.dagesh = true,
+                0x05C1 => last.sin_shin = Some(SinShin::Shin),
+                0x05C2 => last.sin_shin = Some(SinShin::Sin),
+                0x05C7 => last.vowel = Some(Vowel::QamatsQatan),
+                _ => {}
+            }
+        }
+    }
+    out
+}
+
 /// One of the בגדכפת (begedkefet) letters that take a dagesh lene when
 /// they begin a syllable (word start or after a silent sheva).
 fn is_begedkefet(c: char) -> bool {
