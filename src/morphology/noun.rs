@@ -31,7 +31,7 @@ const PRON_SUFFIXES: &[(Person, Gender, Number)] = &[
 /// What kind of noun stem we're inflecting. Most Biblical Hebrew masculine
 /// nouns add -îm in the plural and pronominal suffixes attach to the plain
 /// stem; feminine nouns ending in -â / -t have their own pattern.
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum NounStemKind {
     /// Masculine, no overt ending (e.g. דָּבָר, סוּס).
     Masculine,

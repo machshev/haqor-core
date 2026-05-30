@@ -92,7 +92,11 @@ impl NounInventory {
     pub fn parse(&self, word: &str) -> Vec<NounMatch> {
         let seq = hebrew::parse_pointed(word);
         let mut matches = Vec::new();
-        let mut seen = HashSet::new();
+        // Dedup by the analysis content, not the stem id: distinct lexicon
+        // lemmas (e.g. the common noun מֶלֶךְ and the name "Molech") can render
+        // to the same stem text and inflect identically, which would otherwise
+        // emit duplicate rows.
+        let mut seen: HashSet<(String, NounStemKind, String, String)> = HashSet::new();
 
         let max_strip = 2usize.min(seq.len().saturating_sub(2));
         for strip in 0..=max_strip {
@@ -105,8 +109,9 @@ impl NounInventory {
                 continue;
             };
             for (id, label) in entries {
-                if seen.insert((*id, label.clone(), strip)) {
-                    let (stem, kind) = &self.stems[*id];
+                let (stem, kind) = &self.stems[*id];
+                let key = (stem.clone(), *kind, label.clone(), prefix.clone());
+                if seen.insert(key) {
                     matches.push(NounMatch {
                         stem: stem.clone(),
                         kind: *kind,

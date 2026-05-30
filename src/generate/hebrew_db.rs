@@ -16,9 +16,14 @@
 //!                  backbone.
 //! - `occurrences`— one row per token position (surface_id → book/chapter/verse),
 //!                  mirroring SEDRA's occurrences table.
-//! - `analyses`   — one row per candidate analysis (root/binyan/form/pgn/…);
+//! - `analyses`   — one row per candidate verb analysis (root/binyan/form/pgn/…);
 //!                  empty for unparsed surfaces, one for unambiguous, many for
 //!                  homographs.
+//! - `noun_analyses` — one row per candidate noun analysis (stem/class/inflected
+//!                  slot/prefix), produced by reverse-parsing each surface
+//!                  against the lexicon's common-, adjective- and proper-noun
+//!                  paradigms. Independent of the verb pass, so a true homograph
+//!                  carries rows in both. Only populated when a lexicon is given.
 //! - `roots`      — distinct roots seen, with gizra and frequency.
 //!
 //! Two views make the gaps reviewable, frequency-ranked so the highest-impact
@@ -39,8 +44,9 @@ use log::info;
 use rayon::prelude::*;
 use rusqlite::Connection;
 
-use crate::morphology::{VerbMatch, parse_word};
+use crate::morphology::{NounInventory, NounMatch, VerbMatch, parse_word};
 
+use super::lexicon_db::{load_noun_inventory, load_proper_inventory};
 use super::prefilter::Prefilter;
 
 /// OT books are 1..=39 in Haqor numbering; NT starts at 40.
@@ -201,13 +207,14 @@ fn gizra_label(m: &VerbMatch) -> String {
 fn create_schema(db: &Connection) -> Result<()> {
     db.execute_batch(
         "CREATE TABLE surface(
-            surface_id    INTEGER PRIMARY KEY,
-            text          TEXT    NOT NULL,
-            occurrences   INTEGER NOT NULL,
-            n_candidates  INTEGER NOT NULL,
-            parsed        INTEGER NOT NULL,
-            attested      INTEGER NOT NULL,
-            lexical_class TEXT
+            surface_id        INTEGER PRIMARY KEY,
+            text              TEXT    NOT NULL,
+            occurrences       INTEGER NOT NULL,
+            n_candidates      INTEGER NOT NULL,
+            n_noun_candidates INTEGER NOT NULL,
+            parsed            INTEGER NOT NULL,
+            attested          INTEGER NOT NULL,
+            lexical_class     TEXT
          );
          CREATE TABLE occurrences(
             surface_id INTEGER NOT NULL,
@@ -227,6 +234,14 @@ fn create_schema(db: &Connection) -> Result<()> {
             vav_consecutive INTEGER NOT NULL,
             attested        INTEGER NOT NULL
          );
+         CREATE TABLE noun_analyses(
+            analysis_id INTEGER PRIMARY KEY,
+            surface_id  INTEGER NOT NULL,
+            stem        TEXT    NOT NULL,
+            kind        TEXT    NOT NULL,
+            label       TEXT    NOT NULL,
+            prefix      TEXT    NOT NULL
+         );
          CREATE TABLE roots(
             root          TEXT PRIMARY KEY,
             gizra         TEXT NOT NULL,
@@ -242,12 +257,21 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
         "CREATE INDEX idx_occurrences_surface ON occurrences(surface_id);
          CREATE INDEX idx_analyses_surface ON analyses(surface_id);
          CREATE INDEX idx_analyses_root ON analyses(root);
+         CREATE INDEX idx_noun_analyses_surface ON noun_analyses(surface_id);
 
          CREATE VIEW review_missing AS
             SELECT surface_id, text, occurrences
             FROM surface
-            WHERE n_candidates = 0 AND lexical_class IS NULL
+            WHERE n_candidates = 0 AND n_noun_candidates = 0
+                  AND lexical_class IS NULL
             ORDER BY occurrences DESC;
+
+         CREATE VIEW review_nouns AS
+            SELECT s.surface_id, s.text, s.occurrences, s.lexical_class,
+                   n.stem, n.kind, n.label, n.prefix
+            FROM surface s
+            JOIN noun_analyses n ON n.surface_id = s.surface_id
+            ORDER BY s.occurrences DESC, s.surface_id, n.stem;
 
          CREATE VIEW review_ambiguous AS
             SELECT s.surface_id, s.text, s.occurrences, s.n_candidates,
@@ -336,6 +360,44 @@ pub fn generate_hebrew(
         );
     }
 
+    // Noun pass: when a lexicon is available, reverse-parse every surface
+    // against the inflectional paradigms of its common-noun, adjective and
+    // proper-noun headwords. This is independent of the verb parser, so a
+    // genuine noun/verb homograph keeps both readings; function words (which
+    // are never nouns) are skipped, mirroring the verb pass.
+    let noun_inventory = match lexicon_db {
+        Some(p) => {
+            let mut stems = load_noun_inventory(p)?;
+            stems.extend(load_proper_inventory(p)?);
+            let inv = NounInventory::build(&stems);
+            info!(
+                "Noun-parsing {} surfaces against {} stems",
+                surfaces.len(),
+                inv.len()
+            );
+            Some(inv)
+        }
+        None => None,
+    };
+    let noun_analyses: Vec<Vec<NounMatch>> = match &noun_inventory {
+        Some(inv) => surfaces
+            .par_iter()
+            .zip(classes.par_iter())
+            .map(|(t, class)| {
+                if *class == Some("function") {
+                    Vec::new()
+                } else {
+                    inv.parse(t)
+                }
+            })
+            .collect(),
+        None => vec![Vec::new(); surfaces.len()],
+    };
+    if noun_inventory.is_some() {
+        let noun_parsed = noun_analyses.iter().filter(|a| !a.is_empty()).count();
+        info!("  {noun_parsed} surfaces matched a noun analysis");
+    }
+
     // Occurrence counts per surface.
     let mut counts = vec![0u32; surfaces.len()];
     for occ in &occurrences {
@@ -350,26 +412,37 @@ pub fn generate_hebrew(
         Connection::open(output).with_context(|| format!("opening {}", output.display()))?;
     create_schema(&db)?;
 
-    let parsed_surfaces = analyses.iter().filter(|a| !a.is_empty()).count();
+    let parsed_surfaces = analyses
+        .iter()
+        .zip(noun_analyses.iter())
+        .filter(|(verb, noun)| !verb.is_empty() || !noun.is_empty())
+        .count();
 
     let tx = db.transaction()?;
     {
         let mut surf_stmt = tx.prepare(
-            "INSERT INTO surface(surface_id, text, occurrences, n_candidates, parsed, attested, \
-             lexical_class) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
+            "INSERT INTO surface(surface_id, text, occurrences, n_candidates, \
+             n_noun_candidates, parsed, attested, lexical_class) \
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
         )?;
         let mut ana_stmt = tx.prepare(
             "INSERT INTO analyses(surface_id, root, gizra, binyan, form, pgn, prefix, \
              vav_consecutive, attested) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
         )?;
+        let mut noun_stmt = tx.prepare(
+            "INSERT INTO noun_analyses(surface_id, stem, kind, label, prefix) \
+             VALUES (?1, ?2, ?3, ?4, ?5)",
+        )?;
         for (id, matches) in analyses.iter().enumerate() {
+            let nouns = &noun_analyses[id];
             let any_attested = matches.iter().any(|m| m.attested);
             surf_stmt.execute((
                 id as i64,
                 &surfaces[id],
                 counts[id] as i64,
                 matches.len() as i64,
-                (!matches.is_empty()) as i64,
+                nouns.len() as i64,
+                (!matches.is_empty() || !nouns.is_empty()) as i64,
                 any_attested as i64,
                 classes[id],
             ))?;
@@ -385,6 +458,15 @@ pub fn generate_hebrew(
                     &m.prefix,
                     m.vav_consecutive as i64,
                     m.attested as i64,
+                ))?;
+            }
+            for n in nouns {
+                noun_stmt.execute((
+                    id as i64,
+                    &n.stem,
+                    format!("{:?}", n.kind),
+                    &n.label,
+                    &n.prefix,
                 ))?;
             }
         }
