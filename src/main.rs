@@ -98,6 +98,30 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/sedra.db")]
         output: PathBuf,
     },
+    /// Build hebrew.db: reverse-parse every OT word in the `bible` table into
+    /// candidate verb analyses, storing surfaces, occurrences, analyses and
+    /// roots, plus review views for the unparsed and ambiguous tokens.
+    GenHebrew {
+        /// Bible database path
+        #[arg(short, long, default_value = "data/bible.db")]
+        bible_db: PathBuf,
+        /// Output database path
+        #[arg(short, long, default_value = "data/hebrew.db")]
+        output: PathBuf,
+    },
+    /// Prototype: reverse-parse every OT word in the `bible` table and report
+    /// how much of the text the morphology generator can account for.
+    ParseOt {
+        /// Bible database path
+        #[arg(short, long, default_value = "data/bible.db")]
+        bible_db: PathBuf,
+        /// Limit to a single OT book (Haqor numbering, 1..=39)
+        #[arg(short, long)]
+        book: Option<u8>,
+        /// Cap on verses processed (0 = all)
+        #[arg(short, long, default_value_t = 0)]
+        limit: usize,
+    },
 }
 
 fn main() -> Result<()> {
@@ -163,6 +187,24 @@ fn main() -> Result<()> {
             DbCommands::GenSedra { src_texts, output } => {
                 let total = haqor_core::generate::generate_sedra(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
+            }
+            DbCommands::GenHebrew { bible_db, output } => {
+                let (surfaces, occurrences, parsed) =
+                    haqor_core::generate::generate_hebrew(&bible_db, &output)?;
+                println!(
+                    "Wrote {} surfaces ({} parsed), {} occurrences to {}",
+                    surfaces,
+                    parsed,
+                    occurrences,
+                    output.display()
+                );
+            }
+            DbCommands::ParseOt {
+                bible_db,
+                book,
+                limit,
+            } => {
+                haqor_core::generate::parse_ot_coverage(&bible_db, book, limit)?;
             }
         },
     }

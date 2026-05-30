@@ -4,9 +4,14 @@
 //! table at a time. Currently it generates the `bible` table (OT text from
 //! UXLC plus NT Syriac transliterated into Hebrew letters from SEDRA).
 
+mod hebrew_db;
+mod occurrences;
 mod sedra;
 mod sedra_db;
 mod uxlc;
+
+pub use hebrew_db::generate_hebrew;
+pub use occurrences::parse_ot_coverage;
 
 use std::path::Path;
 
