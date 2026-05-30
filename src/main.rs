@@ -62,10 +62,19 @@ enum Commands {
     Noun {
         /// Singular absolute form, fully pointed (e.g. דָּבָר)
         stem: String,
-        /// Stem class: "m" (masculine, default), "f" (feminine -ה), or "ft"
-        /// (feminine -ת)
+        /// Stem class: "m" (masculine, default), "f" (feminine -ה), "ft"
+        /// (feminine -ת), or "s" (segolate, e.g. מֶלֶךְ)
         #[arg(short, long, default_value = "m")]
         kind: String,
+    },
+    /// Parse a fully-pointed OT word into every candidate noun analysis, driven
+    /// by the lexicon's noun headwords as the stem inventory.
+    ParseNoun {
+        /// Fully-pointed Hebrew word (e.g. מְלָכִים). Cantillation is ignored.
+        word: String,
+        /// Lexicon database supplying the noun-stem inventory.
+        #[arg(short, long, default_value = "data/lexicon.db")]
+        lexicon_db: PathBuf,
     },
 }
 
@@ -203,6 +212,9 @@ fn main() -> Result<()> {
         }
         Commands::Noun { stem, kind } => {
             print_noun(&stem, &kind)?;
+        }
+        Commands::ParseNoun { word, lexicon_db } => {
+            print_parse_noun(&word, &lexicon_db)?;
         }
         Commands::Db { command } => match command {
             DbCommands::Update { source } => {
@@ -399,8 +411,10 @@ fn print_noun(stem_input: &str, kind: &str) -> Result<()> {
     let stem = match kind {
         "m" => morphology::NounStem::masculine(stem_input),
         "f" => morphology::NounStem::feminine_he(stem_input),
+        "ft" => morphology::NounStem::feminine_t(stem_input),
+        "s" => morphology::NounStem::segolate(stem_input),
         other => {
-            anyhow::bail!("unknown noun kind '{other}' (expected m, f, or ft)");
+            anyhow::bail!("unknown noun kind '{other}' (expected m, f, ft, or s)");
         }
     };
     let forms = morphology::inflect_noun(&stem);
@@ -408,6 +422,38 @@ fn print_noun(stem_input: &str, kind: &str) -> Result<()> {
     println!();
     for f in forms {
         println!("  {:<24} {}", f.label, f.text);
+    }
+    Ok(())
+}
+
+fn print_parse_noun(word: &str, lexicon_db: &std::path::Path) -> Result<()> {
+    let stems = haqor_core::generate::load_noun_inventory(lexicon_db)
+        .with_context(|| format!("loading noun inventory from {}", lexicon_db.display()))?;
+    let inventory = morphology::NounInventory::build(&stems);
+    let matches = inventory.parse(word);
+
+    println!("Word: {word}");
+    println!("({} noun stems in inventory)", inventory.len());
+    println!();
+    if matches.is_empty() {
+        println!("No noun analyses found.");
+        println!();
+        println!(
+            "(Driven by the lexicon's noun headwords; only stem classes the\n \
+             generator models — segolate plus the masculine/feminine endings —\n \
+             and only forms spelled exactly as the input will match.)"
+        );
+        return Ok(());
+    }
+    println!("{} candidate analysis/analyses:", matches.len());
+    println!();
+    for m in &matches {
+        let prefix = if m.prefix.is_empty() {
+            String::new()
+        } else {
+            format!("[{}] ", m.prefix)
+        };
+        println!("  {prefix}{}  {:?}  {}", m.stem, m.kind, m.label);
     }
     Ok(())
 }

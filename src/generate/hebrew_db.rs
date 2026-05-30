@@ -282,29 +282,59 @@ pub fn generate_hebrew(
         Some(p) => Some(Prefilter::load(p)?),
         None => None,
     };
-    let classes: Vec<Option<&'static str>> = surfaces
+    let lexical: Vec<Option<&'static str>> = surfaces
         .iter()
         .map(|t| prefilter.as_ref().and_then(|pf| pf.classify(t)))
         .collect();
-    if prefilter.is_some() {
-        let filtered = classes.iter().filter(|c| c.is_some()).count();
-        info!("  pre-filtered {filtered} non-verb surfaces (skipped from parsing)");
-    }
 
     // Reverse-parse every distinct surface in parallel; parse_word is pure.
-    // Pre-filtered non-verb surfaces are skipped (left with no analyses).
+    // Function words always bypass the parser. Proper nouns are still parsed:
+    // the verb-aware rule lets a name yield to a plausible (attested) verb
+    // reading rather than being excluded outright (many names are verb
+    // homographs). Unclassified tokens parse normally.
     info!("Reverse-parsing {} distinct surfaces", surfaces.len());
-    let analyses: Vec<Vec<VerbMatch>> = surfaces
+    let raw: Vec<Vec<VerbMatch>> = surfaces
         .par_iter()
-        .zip(classes.par_iter())
+        .zip(lexical.par_iter())
         .map(|(t, class)| {
-            if class.is_some() {
+            if *class == Some("function") {
                 Vec::new()
             } else {
                 parse_word(t)
             }
         })
         .collect();
+
+    // Final exclusion is verb-aware: a proper-noun match yields to the parser
+    // when it has a plausible verb reading. The stored `lexical_class` reflects
+    // this refined decision, and analyses for still-excluded tokens are dropped.
+    let classes: Vec<Option<&'static str>> = surfaces
+        .iter()
+        .zip(raw.iter())
+        .map(|(t, matches)| {
+            let has_plausible = matches.iter().any(|m| m.attested);
+            prefilter
+                .as_ref()
+                .and_then(|pf| pf.exclude(t, has_plausible))
+        })
+        .collect();
+    let analyses: Vec<Vec<VerbMatch>> = raw
+        .into_iter()
+        .zip(classes.iter())
+        .map(|(matches, class)| if class.is_some() { Vec::new() } else { matches })
+        .collect();
+    if prefilter.is_some() {
+        let filtered = classes.iter().filter(|c| c.is_some()).count();
+        let rescued = lexical
+            .iter()
+            .zip(classes.iter())
+            .filter(|(lex, fin)| **lex == Some("proper") && fin.is_none())
+            .count();
+        info!(
+            "  pre-filtered {filtered} non-verb surfaces (skipped); \
+             {rescued} proper-noun surfaces rescued as plausible verbs"
+        );
+    }
 
     // Occurrence counts per surface.
     let mut counts = vec![0u32; surfaces.len()];

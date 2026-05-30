@@ -34,7 +34,7 @@ use quick_xml::Reader;
 use quick_xml::events::Event;
 use rusqlite::Connection;
 
-use crate::morphology::Root;
+use crate::morphology::{NounStem, Root};
 
 /// Which prose section text is currently being accumulated into.
 #[derive(Clone, Copy, PartialEq)]
@@ -522,6 +522,28 @@ pub fn load_root_inventory(lexicon_db: &Path) -> Result<HashSet<[char; 3]>> {
         }
     }
     Ok(set)
+}
+
+/// Load a noun-stem inventory from a built `lexicon.db` for the reverse noun
+/// parser. Every common-noun and adjective headword (`pos` of `n-m`/`n-f`/`n`
+/// or `a`/`a-…`, which excludes proper nouns `n-pr*`/`np`, verbs, and adverbs)
+/// is classified into an inflection class by [`NounStem::classify`]. Returns one
+/// [`NounStem`] per distinct headword.
+pub fn load_noun_inventory(lexicon_db: &Path) -> Result<Vec<NounStem>> {
+    let db = Connection::open(lexicon_db)
+        .with_context(|| format!("opening {}", lexicon_db.display()))?;
+    let mut stmt = db.prepare(
+        "SELECT DISTINCT word FROM english \
+         WHERE word <> '' AND (\
+            pos LIKE 'n-m%' OR pos LIKE 'n-f%' OR pos = 'n' \
+            OR pos = 'a' OR pos LIKE 'a-%')",
+    )?;
+    let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
+    let mut stems = Vec::new();
+    for word in rows {
+        stems.push(NounStem::classify(&word?));
+    }
+    Ok(stems)
 }
 
 /// Generate a standalone SQLite database with the Strong's `english`, full
