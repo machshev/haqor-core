@@ -54,14 +54,14 @@ impl NounStem {
     /// The string should be the singular absolute form, fully pointed.
     pub fn masculine(text: &str) -> Self {
         NounStem {
-            absolute_singular: parse_pointed(text),
+            absolute_singular: hebrew::parse_pointed(text),
             kind: NounStemKind::Masculine,
         }
     }
 
     pub fn feminine_he(text: &str) -> Self {
         NounStem {
-            absolute_singular: parse_pointed(text),
+            absolute_singular: hebrew::parse_pointed(text),
             kind: NounStemKind::FeminineHe,
         }
     }
@@ -72,47 +72,6 @@ impl NounStem {
 pub struct NounInflection {
     pub label: String,
     pub text: String,
-}
-
-/// Parse a fully-pointed Hebrew word into `Cons` slots. Each consonant is
-/// one slot; following marks (dagesh, shin/sin dot, vowel) attach to it.
-fn parse_pointed(text: &str) -> Vec<Cons> {
-    let mut out: Vec<Cons> = Vec::new();
-    for ch in text.chars() {
-        let n = ch as u32;
-        if (0x05D0..=0x05EA).contains(&n) {
-            // Strip final forms back to base letters so render() applies them again.
-            let base = match ch {
-                '\u{05DA}' => letter::KAF,
-                '\u{05DD}' => letter::MEM,
-                '\u{05DF}' => letter::NUN,
-                '\u{05E3}' => letter::PE,
-                '\u{05E5}' => letter::TSADE,
-                c => c,
-            };
-            out.push(Cons::new(base));
-        } else if let Some(last) = out.last_mut() {
-            match n {
-                0x05B0 => last.vowel = Some(Vowel::Sheva),
-                0x05B1 => last.vowel = Some(Vowel::HatafSegol),
-                0x05B2 => last.vowel = Some(Vowel::HatafPatah),
-                0x05B3 => last.vowel = Some(Vowel::HatafQamats),
-                0x05B4 => last.vowel = Some(Vowel::Hiriq),
-                0x05B5 => last.vowel = Some(Vowel::Tsere),
-                0x05B6 => last.vowel = Some(Vowel::Segol),
-                0x05B7 => last.vowel = Some(Vowel::Patah),
-                0x05B8 => last.vowel = Some(Vowel::Qamats),
-                0x05B9 => last.vowel = Some(Vowel::Holam),
-                0x05BB => last.vowel = Some(Vowel::Qubuts),
-                0x05BC => last.dagesh = true,
-                0x05C1 => last.sin_shin = Some(super::hebrew::SinShin::Shin),
-                0x05C2 => last.sin_shin = Some(super::hebrew::SinShin::Sin),
-                0x05C7 => last.vowel = Some(Vowel::QamatsQatan),
-                _ => {}
-            }
-        }
-    }
-    out
 }
 
 /// Generate the inflectional paradigm of a noun stem.
@@ -488,7 +447,7 @@ mod tests {
     #[test]
     fn parses_pointed_word() {
         // דָּבָר
-        let seq = parse_pointed("דָּבָר");
+        let seq = hebrew::parse_pointed("דָּבָר");
         // dalet (with dagesh + qamats), bet (with qamats), resh
         assert_eq!(seq.len(), 3);
         assert!(seq[0].dagesh);

@@ -51,6 +51,12 @@ enum Commands {
         #[arg(short, long)]
         binyan: Option<String>,
     },
+    /// Parse a fully-pointed OT word into every candidate verb analysis
+    /// (root + binyan + form + person/gender/number)
+    Parse {
+        /// Fully-pointed Hebrew word (e.g. שָׁמַר). Cantillation is ignored.
+        word: String,
+    },
     /// Inflect a Hebrew noun stem (singular absolute) across state, number,
     /// and pronominal suffixes
     Noun {
@@ -129,6 +135,9 @@ fn main() -> Result<()> {
         }
         Commands::Morph { root, binyan } => {
             print_morphology(&root, binyan.as_deref())?;
+        }
+        Commands::Parse { word } => {
+            print_parse(&word);
         }
         Commands::Noun { stem, kind } => {
             print_noun(&stem, &kind)?;
@@ -209,6 +218,7 @@ fn print_morphology(root_input: &str, binyan_filter: Option<&str>) -> Result<()>
             morphology::Form::Imperative,
             morphology::Form::Cohortative,
             morphology::Form::Jussive,
+            morphology::Form::Wayyiqtol,
             morphology::Form::InfinitiveConstruct,
             morphology::Form::InfinitiveAbsolute,
             morphology::Form::ParticipleActive,
@@ -239,6 +249,44 @@ fn print_morphology(root_input: &str, binyan_filter: Option<&str>) -> Result<()>
     }
     println!("(* = generated from strong-verb fallback; gizra rule not yet modelled)");
     Ok(())
+}
+
+fn print_parse(word: &str) {
+    let matches = morphology::parse_word(word);
+    println!("Word: {word}");
+    println!();
+    if matches.is_empty() {
+        println!("No verb analyses found.");
+        println!();
+        println!(
+            "(Only verbs are parsed, and only forms the generator spells exactly\n \
+             as the input — plene/defective and vav-consecutive variants may miss.)"
+        );
+        return;
+    }
+    println!("{} candidate analysis/analyses:", matches.len());
+    println!();
+    for m in &matches {
+        let root: String = m.root.letters.iter().collect();
+        let mark = if m.attested { " " } else { "*" };
+        let prefix = if m.prefix.is_empty() {
+            String::new()
+        } else if m.vav_consecutive {
+            format!("[{} wayyiqtol] ", m.prefix)
+        } else {
+            format!("[{}] ", m.prefix)
+        };
+        let label = m.pgn.label();
+        let label = if label.is_empty() { "-" } else { &label };
+        println!(
+            "  {mark}{prefix}root {root}  {:<8} {:<14} {}",
+            m.binyan.name(),
+            m.form.name(),
+            label,
+        );
+    }
+    println!();
+    println!("(* = matched a strong-verb fallback; gizra rule not yet modelled)");
 }
 
 fn print_noun(stem_input: &str, kind: &str) -> Result<()> {
