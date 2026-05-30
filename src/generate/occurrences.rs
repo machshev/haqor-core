@@ -74,10 +74,11 @@ fn has_hebrew_letter(token: &str) -> bool {
 /// scans all of them. `limit` caps the number of verses processed (0 = no cap),
 /// which keeps quick sampling runs fast.
 pub fn parse_ot_coverage(bible_db: &Path, book_filter: Option<u8>, limit: usize) -> Result<()> {
-    let db = Connection::open(bible_db)
-        .with_context(|| format!("opening {}", bible_db.display()))?;
+    let db =
+        Connection::open(bible_db).with_context(|| format!("opening {}", bible_db.display()))?;
 
-    let mut sql = format!("SELECT book, chapter, verse, words FROM bible WHERE book < {NT_FIRST_BOOK}");
+    let mut sql =
+        format!("SELECT book, chapter, verse, words FROM bible WHERE book < {NT_FIRST_BOOK}");
     if let Some(b) = book_filter {
         sql.push_str(&format!(" AND book = {b}"));
     }

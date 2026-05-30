@@ -122,6 +122,32 @@ enum DbCommands {
         #[arg(short, long, default_value_t = 0)]
         limit: usize,
     },
+    /// Generate the `english` Strong's gloss table from the HebrewLexicon
+    /// source (HebrewStrong.xml), keyed by Strong's number for joining onto
+    /// morphhb lemmas.
+    GenLexicon {
+        /// Source texts directory (defaults to src_texts/)
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+        /// Output database path
+        #[arg(short, long, default_value = "data/lexicon.db")]
+        output: PathBuf,
+    },
+    /// Accuracy harness: score the reverse-parser against OSHB (morphhb) gold
+    /// tags. Runs our own parser on OSHB's surface text and compares the derived
+    /// analysis to the gold morphology — the lexicon is the scorer, not the
+    /// source of the answer.
+    ParseEval {
+        /// Path to the cloned morphhb repo (expects a `wlc/` subdir)
+        #[arg(short, long, default_value = "src_texts/morphhb")]
+        morphhb: PathBuf,
+        /// Bible database for the alignment check (None to skip)
+        #[arg(short, long, default_value = "data/bible.db")]
+        bible_db: PathBuf,
+        /// Cap on gold verb tokens scored (0 = all)
+        #[arg(short, long, default_value_t = 0)]
+        limit: usize,
+    },
 }
 
 fn main() -> Result<()> {
@@ -205,6 +231,17 @@ fn main() -> Result<()> {
                 limit,
             } => {
                 haqor_core::generate::parse_ot_coverage(&bible_db, book, limit)?;
+            }
+            DbCommands::GenLexicon { src_texts, output } => {
+                let total = haqor_core::generate::generate_lexicon(&src_texts, &output)?;
+                println!("Wrote {} rows to {}", total, output.display());
+            }
+            DbCommands::ParseEval {
+                morphhb,
+                bible_db,
+                limit,
+            } => {
+                haqor_core::generate::parse_eval(&morphhb, Some(&bible_db), limit)?;
             }
         },
     }
