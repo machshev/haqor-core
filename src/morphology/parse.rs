@@ -85,6 +85,19 @@ pub struct VerbMatch {
     pub vav_consecutive: bool,
 }
 
+/// Compare two rendered forms ignoring the sin/shin dot. The generator always
+/// renders ש with a shin dot (it has no lexical knowledge of which roots are
+/// sin), so a sin-pointed surface — עָשָׂה, נָשָׂא, שָׂם — could never exact-match an
+/// otherwise-identical generated form. Candidate roots already key on the bare
+/// letter ש and we report roots by their bare letters, so collapsing the dot in
+/// the surface match recovers every sin verb without admitting new roots.
+fn forms_match(generated: &str, target: &str) -> bool {
+    fn strip_dot(s: &str) -> String {
+        s.chars().filter(|&c| c != '\u{05C1}' && c != '\u{05C2}').collect()
+    }
+    generated == target || strip_dot(generated) == strip_dot(target)
+}
+
 /// Parse a fully-pointed word into every verb analysis that can produce it.
 pub fn parse_word(word: &str) -> Vec<VerbMatch> {
     parse_word_filtered(word, None)
@@ -120,7 +133,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                 // Wayyiqtol is handled by the dedicated pass below, with the
                 // consecutive vav recognised as such rather than as a plain
                 // proclitic; skip it here to avoid duplicate analyses.
-                if vf.form == Form::Wayyiqtol || vf.text != target {
+                if vf.form == Form::Wayyiqtol || !forms_match(&vf.text, &target) {
                     continue;
                 }
                 if seen.insert((letters, vf.binyan, vf.form, vf.pgn, strip, false)) {
@@ -153,7 +166,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                 .entry(letters)
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
             for vf in &paradigm.forms {
-                if vf.form != Form::Wayyiqtol || vf.text != target {
+                if vf.form != Form::Wayyiqtol || !forms_match(&vf.text, &target) {
                     continue;
                 }
                 if seen.insert((letters, vf.binyan, vf.form, vf.pgn, 0, true)) {
@@ -326,6 +339,14 @@ mod tests {
                 && m.pgn.label() == "3ms"
                 && m.vav_consecutive
         }));
+    }
+
+    #[test]
+    fn parses_sin_root_qal_perfect() {
+        // עָשָׂה — Qal perfect 3ms of עשׂה (sin). The generator renders ש with a
+        // shin dot, so the match must ignore the sin/shin distinction.
+        let matches = parse_word("עָשָׂה");
+        assert!(has_match(&matches, "עשה", Binyan::Qal, Form::Perfect, "3ms"));
     }
 
     #[test]
