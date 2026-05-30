@@ -26,7 +26,7 @@ pub mod root;
 pub mod verb;
 
 pub use noun::{NounInflection, NounStem, inflect_noun};
-pub use parse::{VerbMatch, parse_word};
+pub use parse::{VerbMatch, parse_word, parse_word_disambiguated, parse_word_filtered};
 pub use root::{Gizra, Root, RootError};
 pub use verb::{Binyan, Form, Paradigm, Pgn, VerbForm, generate_paradigm};
 

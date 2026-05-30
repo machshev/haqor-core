@@ -34,7 +34,8 @@ use rayon::prelude::*;
 use rusqlite::Connection;
 
 use super::hebrew_db::normalize_surface;
-use crate::morphology::{Binyan, Form, parse_word};
+use super::lexicon_db::load_root_inventory;
+use crate::morphology::{Binyan, Form, parse_word_disambiguated, parse_word_filtered};
 
 /// OT books are 1..=39 in Haqor numbering; NT starts at 40.
 const NT_FIRST_BOOK: u8 = 40;
@@ -234,9 +235,17 @@ impl Score {
 /// Score the parser against OSHB gold tags and print a report.
 ///
 /// `morphhb_dir` is the cloned morphhb repo (expects a `wlc/` subdir).
-/// `bible_db`, if given, enables the alignment metric. `limit` caps the number
-/// of gold verb tokens scored (0 = all) for quick sampling.
-pub fn parse_eval(morphhb_dir: &Path, bible_db: Option<&Path>, limit: usize) -> Result<()> {
+/// `bible_db`, if given, enables the alignment metric. `lexicon_db`, if given,
+/// loads the real-root inventory and restricts the parser's candidate roots to
+/// it (so the report measures the filtered parser). `limit` caps the number of
+/// gold verb tokens scored (0 = all) for quick sampling.
+pub fn parse_eval(
+    morphhb_dir: &Path,
+    bible_db: Option<&Path>,
+    lexicon_db: Option<&Path>,
+    soft: bool,
+    limit: usize,
+) -> Result<()> {
     let gold = collect_gold(morphhb_dir)?;
     let gold = match limit {
         0 => &gold[..],
@@ -247,6 +256,19 @@ pub fn parse_eval(morphhb_dir: &Path, bible_db: Option<&Path>, limit: usize) -> 
         Some(p) => Some(bible_surfaces(p)?),
         None => None,
     };
+
+    let roots = match lexicon_db {
+        Some(p) => Some(load_root_inventory(p)?),
+        None => None,
+    };
+    if let Some(set) = roots.as_ref() {
+        let mode = if soft {
+            "disambiguate-only (keep lone/all-out-of-inventory parses)"
+        } else {
+            "hard prune"
+        };
+        println!("(root filter on: {} roots, {mode})\n", set.len());
+    }
 
     let score = gold
         .par_iter()
@@ -261,7 +283,11 @@ pub fn parse_eval(morphhb_dir: &Path, bible_db: Option<&Path>, limit: usize) -> 
             {
                 s.aligned = 1;
             }
-            let matches = parse_word(&g.surface);
+            let matches = if soft {
+                parse_word_disambiguated(&g.surface, roots.as_ref())
+            } else {
+                parse_word_filtered(&g.surface, roots.as_ref())
+            };
             if matches.is_empty() {
                 return s;
             }

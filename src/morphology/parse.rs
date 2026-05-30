@@ -37,7 +37,7 @@
 //! modelled, so a form spelled differently from what the generator emits will
 //! not match.
 
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 
 use super::hebrew::{self, Cons, Vowel, letter};
 use super::root::Root;
@@ -87,6 +87,15 @@ pub struct VerbMatch {
 
 /// Parse a fully-pointed word into every verb analysis that can produce it.
 pub fn parse_word(word: &str) -> Vec<VerbMatch> {
+    parse_word_filtered(word, None)
+}
+
+/// Like [`parse_word`], but restrict candidate roots to those in `roots` (the
+/// real-root inventory). With a filter, the generate-and-test enumeration skips
+/// roots the lexicon doesn't attest, which both prunes spurious homograph
+/// analyses and speeds parsing. Passing `None` enumerates every triliteral, the
+/// behaviour of [`parse_word`].
+pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Vec<VerbMatch> {
     let seq = hebrew::parse_pointed(word);
     let mut matches = Vec::new();
     let mut seen = std::collections::HashSet::new();
@@ -103,7 +112,7 @@ pub fn parse_word(word: &str) -> Vec<VerbMatch> {
         let target = hebrew::render(remainder);
         let prefix = hebrew::render(&seq[..strip]);
 
-        for letters in candidate_roots(remainder) {
+        for letters in candidate_roots(remainder, roots) {
             let paradigm = memo
                 .entry(letters)
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
@@ -139,7 +148,7 @@ pub fn parse_word(word: &str) -> Vec<VerbMatch> {
     }) && seq.len() >= 3
     {
         let target = hebrew::render(&seq);
-        for letters in candidate_roots(&seq[1..]) {
+        for letters in candidate_roots(&seq[1..], roots) {
             let paradigm = memo
                 .entry(letters)
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
@@ -174,10 +183,33 @@ pub fn parse_word(word: &str) -> Vec<VerbMatch> {
     matches
 }
 
+/// Disambiguate-only filter: parse unrestricted, then drop candidates whose
+/// root the inventory doesn't attest — but only when that *leaves* at least one
+/// analysis and there were several to begin with. A lone analysis is kept even
+/// if its root is absent (the inventory can't disambiguate a single candidate,
+/// so filtering there only costs recall), and a token whose every candidate is
+/// out-of-inventory is returned untouched rather than zeroed. So this never
+/// loses a parse relative to [`parse_word`]; it only prunes genuine ambiguity.
+pub fn parse_word_disambiguated(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Vec<VerbMatch> {
+    let matches = parse_word(word);
+    let Some(set) = roots else {
+        return matches;
+    };
+    if matches.len() <= 1 {
+        return matches;
+    }
+    let kept: Vec<VerbMatch> = matches
+        .iter()
+        .filter(|m| set.contains(&m.root.letters))
+        .cloned()
+        .collect();
+    if kept.is_empty() { matches } else { kept }
+}
+
 /// Enumerate every triliteral root that could underlie the surface
 /// consonants. The alphabet is the distinct surface consonants together with
 /// the weak letters; each of the three radical slots ranges over it.
-fn candidate_roots(seq: &[Cons]) -> Vec<[char; 3]> {
+fn candidate_roots(seq: &[Cons], roots: Option<&HashSet<[char; 3]>>) -> Vec<[char; 3]> {
     let mut alphabet: Vec<char> = Vec::new();
     for c in seq {
         if !alphabet.contains(&c.letter) {
@@ -191,11 +223,16 @@ fn candidate_roots(seq: &[Cons]) -> Vec<[char; 3]> {
     }
 
     let mut out = Vec::new();
-    let mut seen = std::collections::HashSet::new();
+    let mut seen = HashSet::new();
     for &a in &alphabet {
         for &b in &alphabet {
             for &c in &alphabet {
                 let r = [a, b, c];
+                // Drop roots the inventory doesn't attest before they reach the
+                // (expensive) paradigm generation and surface match.
+                if roots.is_some_and(|set| !set.contains(&r)) {
+                    continue;
+                }
                 if seen.insert(r) {
                     out.push(r);
                 }

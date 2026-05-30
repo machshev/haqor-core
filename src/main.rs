@@ -144,6 +144,14 @@ enum DbCommands {
         /// Bible database for the alignment check (None to skip)
         #[arg(short, long, default_value = "data/bible.db")]
         bible_db: PathBuf,
+        /// Lexicon database; when given, restricts candidate roots to its
+        /// `roots` inventory so the report measures the filtered parser.
+        #[arg(short, long)]
+        lexicon_db: Option<PathBuf>,
+        /// Disambiguate-only: apply the root filter solely to break ties
+        /// (>1 candidate), never dropping a lone parse. Requires --lexicon-db.
+        #[arg(short, long)]
+        soft: bool,
         /// Cap on gold verb tokens scored (0 = all)
         #[arg(short, long, default_value_t = 0)]
         limit: usize,
@@ -239,9 +247,17 @@ fn main() -> Result<()> {
             DbCommands::ParseEval {
                 morphhb,
                 bible_db,
+                lexicon_db,
+                soft,
                 limit,
             } => {
-                haqor_core::generate::parse_eval(&morphhb, Some(&bible_db), limit)?;
+                haqor_core::generate::parse_eval(
+                    &morphhb,
+                    Some(&bible_db),
+                    lexicon_db.as_deref(),
+                    soft,
+                    limit,
+                )?;
             }
         },
     }

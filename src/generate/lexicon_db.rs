@@ -25,6 +25,7 @@
 //! Cross-reference `<w src="…">` elements inside the prose are flattened to
 //! their text.
 
+use std::collections::{BTreeSet, HashSet};
 use std::path::Path;
 
 use anyhow::{Context, Result};
@@ -32,6 +33,8 @@ use log::info;
 use quick_xml::Reader;
 use quick_xml::events::Event;
 use rusqlite::Connection;
+
+use crate::morphology::Root;
 
 /// Which prose section text is currently being accumulated into.
 #[derive(Clone, Copy, PartialEq)]
@@ -392,6 +395,129 @@ fn load_lexical_index(db: &mut Connection, path: &Path) -> Result<usize> {
     Ok(rows)
 }
 
+/// Harvest the explicit `etym root="…"` attributes from LexicalIndex.xml. These
+/// are the lexicographers' canonical roots (e.g. `אבד`), already unpointed
+/// consonants. Returns the raw root strings; normalisation to a triliteral is
+/// done by the caller via [`Root::parse`].
+fn collect_etym_roots(path: &Path) -> Result<Vec<String>> {
+    let mut reader =
+        Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
+    let mut buf = Vec::new();
+    let mut out = Vec::new();
+    loop {
+        // <etym> may carry text children, so it is a Start event; the root is
+        // on the attribute, not the body.
+        match reader.read_event_into(&mut buf)? {
+            Event::Start(e) | Event::Empty(e) if e.name().as_ref() == b"etym" => {
+                if let Some(a) = e.try_get_attribute("root")? {
+                    out.push(a.decode_and_unescape_value(reader.decoder())?.into_owned());
+                }
+            }
+            Event::Eof => break,
+            _ => {}
+        }
+        buf.clear();
+    }
+    Ok(out)
+}
+
+/// Build the authoritative `roots` inventory: every distinct triliteral root
+/// the lexicon knows about, used to prune the reverse-parser's over-generated
+/// candidate roots. Two independent sources are unioned, each normalised
+/// through [`Root::parse`] (folds final forms, strips niqqud, keeps only
+/// exactly-triliteral entries):
+///
+/// - **Strong's lemmas** — `english.word`, excluding proper nouns (`n-pr*`,
+///   `np`), whose names fold to spurious triliterals. A verb root frequently
+///   surfaces only as a noun/adjective lemma, so restricting to verbs alone
+///   dropped real roots; every common lexeme contributes its root.
+/// - **`etym root` attributes** from LexicalIndex.xml — the lexicographers'
+///   canonical roots, which cover roots that never surface as a lemma.
+///
+/// Neither source alone is complete (etym misses common verbs like עשה/ישב),
+/// so the union is the inventory.
+fn load_roots(db: &mut Connection, lexical_index: &Path) -> Result<usize> {
+    db.execute(
+        "CREATE TABLE roots(\
+            root_id INTEGER PRIMARY KEY, \
+            root TEXT NOT NULL UNIQUE, \
+            gizra TEXT NOT NULL, \
+            from_strong INTEGER NOT NULL, \
+            from_etym INTEGER NOT NULL)",
+        [],
+    )?;
+
+    // Source 1: lemmas already loaded into `english`, minus proper nouns.
+    let mut strong_roots: BTreeSet<String> = BTreeSet::new();
+    {
+        let mut stmt = db.prepare(
+            "SELECT word FROM english WHERE pos NOT LIKE 'n-pr%' AND pos <> 'np'",
+        )?;
+        let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
+        for word in rows {
+            if let Ok(root) = Root::parse(&word?) {
+                strong_roots.insert(root.letters.iter().collect());
+            }
+        }
+    }
+
+    // Source 2: explicit etym roots.
+    let mut etym_roots: BTreeSet<String> = BTreeSet::new();
+    for raw in collect_etym_roots(lexical_index)? {
+        if let Ok(root) = Root::parse(&raw) {
+            etym_roots.insert(root.letters.iter().collect());
+        }
+    }
+
+    let all: BTreeSet<&String> = strong_roots.union(&etym_roots).collect();
+
+    let tx = db.transaction()?;
+    let mut rows = 0;
+    {
+        let mut stmt = tx.prepare(
+            "INSERT INTO roots(root, gizra, from_strong, from_etym) VALUES (?1, ?2, ?3, ?4)",
+        )?;
+        for root_str in &all {
+            let gizra = Root::parse(root_str)
+                .map(|r| {
+                    r.classes
+                        .iter()
+                        .map(|g| format!("{g:?}"))
+                        .collect::<Vec<_>>()
+                        .join(",")
+                })
+                .unwrap_or_default();
+            stmt.execute((
+                root_str,
+                gizra,
+                strong_roots.contains(*root_str) as i64,
+                etym_roots.contains(*root_str) as i64,
+            ))?;
+            rows += 1;
+        }
+    }
+    tx.commit()?;
+    Ok(rows)
+}
+
+/// Load the `roots` inventory from a built `lexicon.db` into a set of
+/// triliterals, the form [`crate::morphology::parse_word_filtered`] consumes to
+/// prune candidate roots. Each stored root is exactly three folded consonants.
+pub fn load_root_inventory(lexicon_db: &Path) -> Result<HashSet<[char; 3]>> {
+    let db = Connection::open(lexicon_db)
+        .with_context(|| format!("opening {}", lexicon_db.display()))?;
+    let mut stmt = db.prepare("SELECT root FROM roots")?;
+    let mut set = HashSet::new();
+    let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
+    for root in rows {
+        let chars: Vec<char> = root?.chars().collect();
+        if let [a, b, c] = chars[..] {
+            set.insert([a, b, c]);
+        }
+    }
+    Ok(set)
+}
+
 /// Generate a standalone SQLite database with the Strong's `english`, full
 /// `bdb`, and `lexical_index` glue tables from the HebrewLexicon source.
 pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
@@ -411,8 +537,10 @@ pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
     info!("  {bdb} rows -> bdb");
     let index = load_lexical_index(&mut db, &dir.join("LexicalIndex.xml"))?;
     info!("  {index} rows -> lexical_index");
+    let roots = load_roots(&mut db, &dir.join("LexicalIndex.xml"))?;
+    info!("  {roots} rows -> roots");
 
-    let total = strongs + bdb + index;
+    let total = strongs + bdb + index + roots;
     info!("Wrote {total} rows to {}", output.display());
     Ok(total)
 }
