@@ -81,6 +81,7 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
     let mut entry: Option<Entry> = None;
     let mut section = Section::None;
     let mut in_headword = false;
+    let mut headword_done = false;
     let mut in_def = false;
     let mut def_buf = String::new();
 
@@ -102,15 +103,20 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
                         }
                         entry = Some(ent);
                         section = Section::None;
+                        headword_done = false;
                     }
                     b"w" => {
-                        // The headword is the only <w> carrying an `xlit` attr;
-                        // cross-reference <w src="…"> elements lack it and just
-                        // contribute their text to the active prose section.
+                        // The headword is the FIRST <w> in the entry. Alternate
+                        // spellings quoted inside <source> (e.g. הִיא, לוֹא) also
+                        // carry an `xlit` attr, so guard on `headword_done` or
+                        // they get appended to the headword; their text instead
+                        // belongs to the active prose section.
                         if let Some(ent) = entry.as_mut()
+                            && !headword_done
                             && let Some(a) = e.try_get_attribute("xlit")?
                         {
                             in_headword = true;
+                            headword_done = true;
                             ent.xlit = a.decode_and_unescape_value(reader.decoder())?.into_owned();
                             if let Some(p) = e.try_get_attribute("pron")? {
                                 ent.pron =

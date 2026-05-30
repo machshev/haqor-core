@@ -35,6 +35,7 @@ use rusqlite::Connection;
 
 use super::hebrew_db::normalize_surface;
 use super::lexicon_db::load_root_inventory;
+use super::prefilter::Prefilter;
 use crate::morphology::{Binyan, Form, parse_word_disambiguated, parse_word_filtered};
 
 /// OT books are 1..=39 in Haqor numbering; NT starts at 40.
@@ -217,6 +218,13 @@ struct Score {
     correct_but_ambiguous: usize,
     /// In bible.db's surface set (transferable to our own text).
     aligned: usize,
+    /// Gold says this is a verb, but the lexical pre-filter would exclude it
+    /// from parsing (a false exclusion — the cost of the pre-filter).
+    prefilter_excluded: usize,
+    /// False exclusions attributed to the function-word list.
+    prefilter_excluded_function: usize,
+    /// False exclusions attributed to the proper-noun list.
+    prefilter_excluded_proper: usize,
 }
 
 impl Score {
@@ -228,6 +236,9 @@ impl Score {
         self.unambiguous_correct += o.unambiguous_correct;
         self.correct_but_ambiguous += o.correct_but_ambiguous;
         self.aligned += o.aligned;
+        self.prefilter_excluded += o.prefilter_excluded;
+        self.prefilter_excluded_function += o.prefilter_excluded_function;
+        self.prefilter_excluded_proper += o.prefilter_excluded_proper;
         self
     }
 }
@@ -261,6 +272,10 @@ pub fn parse_eval(
         Some(p) => Some(load_root_inventory(p)?),
         None => None,
     };
+    let prefilter = match lexicon_db {
+        Some(p) => Some(Prefilter::load(p)?),
+        None => None,
+    };
     if let Some(set) = roots.as_ref() {
         let mode = if soft {
             "disambiguate-only (keep lone/all-out-of-inventory parses)"
@@ -282,6 +297,14 @@ pub fn parse_eval(
                 .is_some_and(|set| set.contains(&g.surface))
             {
                 s.aligned = 1;
+            }
+            if let Some(class) = prefilter.as_ref().and_then(|pf| pf.classify(&g.surface)) {
+                s.prefilter_excluded = 1;
+                match class {
+                    "function" => s.prefilter_excluded_function = 1,
+                    "proper" => s.prefilter_excluded_proper = 1,
+                    _ => {}
+                }
             }
             let matches = if soft {
                 parse_word_disambiguated(&g.surface, roots.as_ref())
@@ -314,7 +337,7 @@ pub fn parse_eval(
         })
         .reduce(Score::default, Score::merge);
 
-    print_report(&score, surfaces.is_some());
+    print_report(&score, surfaces.is_some(), prefilter.is_some());
     Ok(())
 }
 
@@ -326,7 +349,7 @@ fn pct(n: usize, total: usize) -> f64 {
     }
 }
 
-fn print_report(s: &Score, aligned: bool) {
+fn print_report(s: &Score, aligned: bool, prefilter: bool) {
     let t = s.tokens;
     println!("Parser vs OSHB gold (Hebrew verb tokens)");
     println!("  gold verb tokens:        {t}");
@@ -366,6 +389,19 @@ fn print_report(s: &Score, aligned: bool) {
             "  alignment: {:>7}  ({:.1}%) of gold surfaces are present in bible.db",
             s.aligned,
             pct(s.aligned, t)
+        );
+    }
+    if prefilter {
+        println!();
+        println!(
+            "  pre-filter false exclusions: {:>7}  ({:.2}% of gold verbs the lexical \
+             pre-filter would wrongly skip)",
+            s.prefilter_excluded,
+            pct(s.prefilter_excluded, t)
+        );
+        println!(
+            "    via function list: {:>7}   via proper-noun list: {:>7}",
+            s.prefilter_excluded_function, s.prefilter_excluded_proper
         );
     }
 }
