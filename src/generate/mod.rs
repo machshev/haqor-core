@@ -15,7 +15,9 @@ mod uxlc;
 
 pub use harness::parse_eval;
 pub use hebrew_db::generate_hebrew;
-pub use lexicon_db::{generate_lexicon, load_noun_inventory, load_root_inventory};
+pub use lexicon_db::{
+    generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
+};
 pub use occurrences::parse_ot_coverage;
 
 use std::path::Path;

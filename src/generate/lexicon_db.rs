@@ -546,6 +546,28 @@ pub fn load_noun_inventory(lexicon_db: &Path) -> Result<Vec<NounStem>> {
     Ok(stems)
 }
 
+/// Load a proper-noun stem inventory from a built `lexicon.db` for the reverse
+/// noun parser. Every proper-noun headword (`pos` `n-pr*` / `np`) is classified
+/// into an inflection class by [`NounStem::classify`]. Names overwhelmingly
+/// occur as the bare lemma (optionally with proclitics), but classifying them
+/// lets the few that take pronominal suffixes or gentilic/plural forms match
+/// too; because downstream matching is exact, a mis-guessed class only loses
+/// recall and never invents a spurious analysis.
+pub fn load_proper_inventory(lexicon_db: &Path) -> Result<Vec<NounStem>> {
+    let db = Connection::open(lexicon_db)
+        .with_context(|| format!("opening {}", lexicon_db.display()))?;
+    let mut stmt = db.prepare(
+        "SELECT DISTINCT word FROM english \
+         WHERE word <> '' AND (pos LIKE 'n-pr%' OR pos = 'np')",
+    )?;
+    let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
+    let mut stems = Vec::new();
+    for word in rows {
+        stems.push(NounStem::classify(&word?));
+    }
+    Ok(stems)
+}
+
 /// Generate a standalone SQLite database with the Strong's `english`, full
 /// `bdb`, and `lexical_index` glue tables from the HebrewLexicon source.
 pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
