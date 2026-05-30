@@ -41,6 +41,8 @@ use rusqlite::Connection;
 
 use crate::morphology::{VerbMatch, parse_word};
 
+use super::prefilter::Prefilter;
+
 /// OT books are 1..=39 in Haqor numbering; NT starts at 40.
 const NT_FIRST_BOOK: u8 = 40;
 
@@ -60,14 +62,40 @@ fn has_hebrew_letter(token: &str) -> bool {
         .any(|c| (0x05D0..=0x05EA).contains(&(c as u32)))
 }
 
+/// Canonical combining class for the niqqud points [`normalize_surface`] keeps;
+/// base letters and anything else return 0 (a non-combining boundary). Used to
+/// reorder marks within a cluster so source forms that differ only in mark order
+/// (e.g. shin-dot before vs. after a vowel) collapse to one surface.
+fn combining_class(c: char) -> u8 {
+    match c as u32 {
+        0x05B0 => 10,
+        0x05B1 => 11,
+        0x05B2 => 12,
+        0x05B3 => 13,
+        0x05B4 => 14,
+        0x05B5 => 15,
+        0x05B6 => 16,
+        0x05B7 => 17,
+        0x05B8 | 0x05C7 => 18,
+        0x05B9 => 19,
+        0x05BB => 20,
+        0x05BC => 21,
+        0x05C1 => 24,
+        0x05C2 => 25,
+        _ => 0,
+    }
+}
+
 /// Reduce a raw token to exactly the characters the morphology parser consumes:
 /// the consonants (including final forms) and the niqqud points it recognises.
 /// Cantillation (te'amim), meteg, rafe and other marks are dropped, so tokens
 /// that differ only in cantillation collapse to a single surface — the parser
-/// already ignores those marks, so they never affect the analysis. The result
-/// is still readable pointed Hebrew and serves as the stored display form.
+/// already ignores those marks, so they never affect the analysis. Marks within
+/// each consonant cluster are sorted into canonical (combining-class) order so
+/// order variants in the source collapse too. The result is still readable
+/// pointed Hebrew and serves as the stored display form.
 pub(crate) fn normalize_surface(token: &str) -> String {
-    token
+    let kept: Vec<char> = token
         .chars()
         .filter(|&c| {
             let n = c as u32;
@@ -77,7 +105,27 @@ pub(crate) fn normalize_surface(token: &str) -> String {
                     0x05B0..=0x05B9 | 0x05BB | 0x05BC | 0x05C1 | 0x05C2 | 0x05C7
                 )
         })
-        .collect()
+        .collect();
+
+    // Stable canonical reordering: sort each run of combining marks (ccc > 0)
+    // by combining class, leaving base letters as fixed boundaries.
+    let mut out = String::with_capacity(kept.len() * 2);
+    let mut i = 0;
+    while i < kept.len() {
+        if combining_class(kept[i]) == 0 {
+            out.push(kept[i]);
+            i += 1;
+        } else {
+            let start = i;
+            while i < kept.len() && combining_class(kept[i]) != 0 {
+                i += 1;
+            }
+            let mut run = kept[start..i].to_vec();
+            run.sort_by_key(|&c| combining_class(c));
+            out.extend(run);
+        }
+    }
+    out
 }
 
 /// A single OT token position.
@@ -153,12 +201,13 @@ fn gizra_label(m: &VerbMatch) -> String {
 fn create_schema(db: &Connection) -> Result<()> {
     db.execute_batch(
         "CREATE TABLE surface(
-            surface_id   INTEGER PRIMARY KEY,
-            text         TEXT    NOT NULL,
-            occurrences  INTEGER NOT NULL,
-            n_candidates INTEGER NOT NULL,
-            parsed       INTEGER NOT NULL,
-            attested     INTEGER NOT NULL
+            surface_id    INTEGER PRIMARY KEY,
+            text          TEXT    NOT NULL,
+            occurrences   INTEGER NOT NULL,
+            n_candidates  INTEGER NOT NULL,
+            parsed        INTEGER NOT NULL,
+            attested      INTEGER NOT NULL,
+            lexical_class TEXT
          );
          CREATE TABLE occurrences(
             surface_id INTEGER NOT NULL,
@@ -197,7 +246,7 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
          CREATE VIEW review_missing AS
             SELECT surface_id, text, occurrences
             FROM surface
-            WHERE n_candidates = 0
+            WHERE n_candidates = 0 AND lexical_class IS NULL
             ORDER BY occurrences DESC;
 
          CREATE VIEW review_ambiguous AS
@@ -206,7 +255,7 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
                    a.prefix, a.vav_consecutive, a.attested
             FROM surface s
             JOIN analyses a ON a.surface_id = s.surface_id
-            WHERE s.n_candidates > 1
+            WHERE s.n_candidates > 1 AND s.lexical_class IS NULL
             ORDER BY s.occurrences DESC, s.surface_id, a.attested DESC;",
     )?;
     Ok(())
@@ -214,7 +263,11 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
 
 /// Build `hebrew.db` from `bible.db`. Returns (distinct surfaces, occurrences,
 /// parsed surfaces).
-pub fn generate_hebrew(bible_db: &Path, output: &Path) -> Result<(usize, usize, usize)> {
+pub fn generate_hebrew(
+    bible_db: &Path,
+    output: &Path,
+    lexicon_db: Option<&Path>,
+) -> Result<(usize, usize, usize)> {
     info!("Reading OT tokens from {}", bible_db.display());
     let (surfaces, occurrences) = collect_tokens(bible_db)?;
     info!(
@@ -223,9 +276,35 @@ pub fn generate_hebrew(bible_db: &Path, output: &Path) -> Result<(usize, usize, 
         occurrences.len()
     );
 
+    // Optional lexical pre-filter: recognise non-verb tokens (closed-class
+    // function words + proper nouns) so they bypass the verb parser entirely.
+    let prefilter = match lexicon_db {
+        Some(p) => Some(Prefilter::load(p)?),
+        None => None,
+    };
+    let classes: Vec<Option<&'static str>> = surfaces
+        .iter()
+        .map(|t| prefilter.as_ref().and_then(|pf| pf.classify(t)))
+        .collect();
+    if prefilter.is_some() {
+        let filtered = classes.iter().filter(|c| c.is_some()).count();
+        info!("  pre-filtered {filtered} non-verb surfaces (skipped from parsing)");
+    }
+
     // Reverse-parse every distinct surface in parallel; parse_word is pure.
+    // Pre-filtered non-verb surfaces are skipped (left with no analyses).
     info!("Reverse-parsing {} distinct surfaces", surfaces.len());
-    let analyses: Vec<Vec<VerbMatch>> = surfaces.par_iter().map(|t| parse_word(t)).collect();
+    let analyses: Vec<Vec<VerbMatch>> = surfaces
+        .par_iter()
+        .zip(classes.par_iter())
+        .map(|(t, class)| {
+            if class.is_some() {
+                Vec::new()
+            } else {
+                parse_word(t)
+            }
+        })
+        .collect();
 
     // Occurrence counts per surface.
     let mut counts = vec![0u32; surfaces.len()];
@@ -246,8 +325,8 @@ pub fn generate_hebrew(bible_db: &Path, output: &Path) -> Result<(usize, usize, 
     let tx = db.transaction()?;
     {
         let mut surf_stmt = tx.prepare(
-            "INSERT INTO surface(surface_id, text, occurrences, n_candidates, parsed, attested) \
-             VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
+            "INSERT INTO surface(surface_id, text, occurrences, n_candidates, parsed, attested, \
+             lexical_class) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
         )?;
         let mut ana_stmt = tx.prepare(
             "INSERT INTO analyses(surface_id, root, gizra, binyan, form, pgn, prefix, \
@@ -262,6 +341,7 @@ pub fn generate_hebrew(bible_db: &Path, output: &Path) -> Result<(usize, usize, 
                 matches.len() as i64,
                 (!matches.is_empty()) as i64,
                 any_attested as i64,
+                classes[id],
             ))?;
             for m in matches {
                 let root: String = m.root.letters.iter().collect();

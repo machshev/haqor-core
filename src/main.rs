@@ -108,6 +108,10 @@ enum DbCommands {
         /// Output database path
         #[arg(short, long, default_value = "data/hebrew.db")]
         output: PathBuf,
+        /// Lexicon database; when given, its proper nouns plus a curated
+        /// closed-class list pre-filter non-verb tokens out of verb parsing.
+        #[arg(short, long)]
+        lexicon_db: Option<PathBuf>,
     },
     /// Prototype: reverse-parse every OT word in the `bible` table and report
     /// how much of the text the morphology generator can account for.
@@ -222,9 +226,16 @@ fn main() -> Result<()> {
                 let total = haqor_core::generate::generate_sedra(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
             }
-            DbCommands::GenHebrew { bible_db, output } => {
-                let (surfaces, occurrences, parsed) =
-                    haqor_core::generate::generate_hebrew(&bible_db, &output)?;
+            DbCommands::GenHebrew {
+                bible_db,
+                output,
+                lexicon_db,
+            } => {
+                let (surfaces, occurrences, parsed) = haqor_core::generate::generate_hebrew(
+                    &bible_db,
+                    &output,
+                    lexicon_db.as_deref(),
+                )?;
                 println!(
                     "Wrote {} surfaces ({} parsed), {} occurrences to {}",
                     surfaces,
