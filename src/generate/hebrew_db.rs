@@ -9,9 +9,11 @@
 //! be reviewed and the engine improved over successive passes.
 //!
 //! Tables:
-//! - `surface`    — one row per distinct OT token: its text, how often it
-//!                  occurs, how many candidate analyses it has, and whether any
-//!                  is attested. This is the review backbone.
+//! - `surface`    — one row per distinct OT token (cantillation-normalised, so
+//!                  forms differing only in te'amim collapse together): its
+//!                  text, how often it occurs, how many candidate analyses it
+//!                  has, and whether any is attested. This is the review
+//!                  backbone.
 //! - `occurrences`— one row per token position (surface_id → book/chapter/verse),
 //!                  mirroring SEDRA's occurrences table.
 //! - `analyses`   — one row per candidate analysis (root/binyan/form/pgn/…);
@@ -58,6 +60,26 @@ fn has_hebrew_letter(token: &str) -> bool {
         .any(|c| (0x05D0..=0x05EA).contains(&(c as u32)))
 }
 
+/// Reduce a raw token to exactly the characters the morphology parser consumes:
+/// the consonants (including final forms) and the niqqud points it recognises.
+/// Cantillation (te'amim), meteg, rafe and other marks are dropped, so tokens
+/// that differ only in cantillation collapse to a single surface — the parser
+/// already ignores those marks, so they never affect the analysis. The result
+/// is still readable pointed Hebrew and serves as the stored display form.
+pub(crate) fn normalize_surface(token: &str) -> String {
+    token
+        .chars()
+        .filter(|&c| {
+            let n = c as u32;
+            (0x05D0..=0x05EA).contains(&n)
+                || matches!(
+                    n,
+                    0x05B0..=0x05B9 | 0x05BB | 0x05BC | 0x05C1 | 0x05C2 | 0x05C7
+                )
+        })
+        .collect()
+}
+
 /// A single OT token position.
 struct Occurrence {
     surface_id: usize,
@@ -93,15 +115,16 @@ fn collect_tokens(bible_db: &Path) -> Result<(Vec<String>, Vec<Occurrence>)> {
     for row in rows {
         let (book, chapter, verse, words) = row?;
         for token in tokenize(&words) {
-            if !has_hebrew_letter(token) {
+            let norm = normalize_surface(token);
+            if !has_hebrew_letter(&norm) {
                 continue;
             }
-            let surface_id = match index.get(token) {
+            let surface_id = match index.get(&norm) {
                 Some(&id) => id,
                 None => {
                     let id = surfaces.len();
-                    index.insert(token.to_owned(), id);
-                    surfaces.push(token.to_owned());
+                    index.insert(norm.clone(), id);
+                    surfaces.push(norm);
                     id
                 }
             };
@@ -256,8 +279,9 @@ pub fn generate_hebrew(bible_db: &Path, output: &Path) -> Result<(usize, usize, 
             }
         }
 
-        let mut occ_stmt =
-            tx.prepare("INSERT INTO occurrences(surface_id, book, chapter, verse) VALUES (?1, ?2, ?3, ?4)")?;
+        let mut occ_stmt = tx.prepare(
+            "INSERT INTO occurrences(surface_id, book, chapter, verse) VALUES (?1, ?2, ?3, ?4)",
+        )?;
         for occ in &occurrences {
             occ_stmt.execute((
                 occ.surface_id as i64,
