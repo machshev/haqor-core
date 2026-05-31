@@ -189,6 +189,55 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
             text: hebrew::render(&with_pron_suffix(stem, true, p, g, n)),
         });
     }
+    // Feminine -ôt plurals keep the -ōt marker and attach the suffix after the
+    // tav. Both ending sets occur: the plural set (מִצְותָיו -āw, מִצְותֶיךָ) and
+    // the singular set fused onto -ōt (מִשְׁפְּחֹתָם -ām, לְצִבְאֹתָם). Emit both.
+    if matches!(stem.kind, NounStemKind::FeminineHe | NounStemKind::FeminineT) {
+        for &(p, g, n) in PRON_SUFFIXES {
+            let label = format!(
+                "Pl + {}{}{}",
+                pgn_letters(p, g, n).0,
+                pgn_letters(p, g, n).1,
+                pgn_letters(p, g, n).2
+            );
+            for use_plural_set in [true, false] {
+                let mut base = feminine_plural_suffix_base(stem);
+                append_pron_suffix(&mut base, use_plural_set, p, g, n);
+                out.push(NounInflection {
+                    label: label.clone(),
+                    text: hebrew::render(&base),
+                });
+            }
+        }
+    }
+
+    // Segolates commonly take a segol "helping" vowel before the 2nd-person
+    // suffixes instead of the silent sheva of the contracted base — עַבְדֶּךָ
+    // beside עַבְדְּךָ, נַפְשֶׁךָ, חַסְדֶּךָ. Emit those as extra singular-base
+    // forms (the sheva variants are already produced by the loop above).
+    if stem.kind == NounStemKind::Segolate {
+        use Vowel::*;
+        let variants: [(&str, Gender, Number, &[(char, Option<Vowel>)]); 3] = [
+            ("Sg + 2ms", Gender::Masculine, Number::Singular, &[(letter::KAF, Some(Qamats))]),
+            ("Sg + 2mp", Gender::Masculine, Number::Plural, &[(letter::KAF, Some(Segol)), (letter::MEM, None)]),
+            ("Sg + 2fp", Gender::Feminine, Number::Plural, &[(letter::KAF, Some(Segol)), (letter::NUN, None)]),
+        ];
+        for (label, _g, _n, suffix) in variants {
+            let mut base = segolate_singular_base(stem);
+            if let Some(last) = base.last_mut() {
+                last.vowel = Some(Segol);
+            }
+            for &(ltr, v) in suffix {
+                let mut c = Cons::new(ltr);
+                c.vowel = v;
+                base.push(c);
+            }
+            out.push(NounInflection {
+                label: label.to_string(),
+                text: hebrew::render(&base),
+            });
+        }
+    }
     out
 }
 
@@ -330,6 +379,31 @@ fn plural_construct(stem: &NounStem) -> Vec<Cons> {
     }
 }
 
+/// Suffix base for a feminine -ôt plural noun: the -ōt marker is retained and
+/// the pronominal suffix attaches after the tav (מִשְׁפְּחֹתָם, מִצְותָיו). The
+/// pretonic vowel before the holam reduces, since the stress shifts to the
+/// suffix. The tav is left vowelless for the suffix ending to set.
+fn feminine_plural_suffix_base(stem: &NounStem) -> Vec<Cons> {
+    use Vowel::*;
+    let mut base = plural_absolute(stem); // … ō + tav
+    let n = base.len();
+    // Reduce the pretonic vowel: the consonant before the holam-bearing one
+    // (which is two before the final tav). Keep the very first radical intact;
+    // reduce_propretonic handles that slot.
+    if n >= 3
+        && let Some(i) = n.checked_sub(3)
+        && i >= 1
+        && matches!(base[i].vowel, Some(Qamats) | Some(Tsere))
+    {
+        set_seg_vowel(&mut base[i], Sheva);
+    }
+    reduce_propretonic(&mut base);
+    if let Some(last) = base.last_mut() {
+        last.vowel = None;
+    }
+    base
+}
+
 fn dual_absolute(stem: &NounStem) -> Vec<Cons> {
     use Vowel::*;
     let mut out = stem.absolute_singular.clone();
@@ -418,8 +492,10 @@ fn append_pron_suffix(out: &mut Vec<Cons>, plural: bool, p: Person, g: Gender, n
                 out.push(Cons::new(letter::YOD));
             }
             (Person::Second, Gender::Masculine, Number::Singular) => {
-                // -êḵā
-                set_last_vowel(out, Tsere);
+                // -ɛ́ḵā: the plural "your (ms)" suffix is segol-yod, not tsere
+                // (דְּבָרֶיךָ, עֵינֶיךָ) — tsere appears only on the heavier
+                // -ênû/-êḵem/-êhem suffixes below.
+                set_last_vowel(out, Segol);
                 out.push(Cons::new(letter::YOD));
                 out.push(Cons::new(letter::KAF).with_vowel(Qamats));
             }
@@ -436,8 +512,9 @@ fn append_pron_suffix(out: &mut Vec<Cons>, plural: bool, p: Person, g: Gender, n
                 out.push(Cons::new(letter::VAV));
             }
             (Person::Third, Gender::Feminine, Number::Singular) => {
-                // -êhā
-                set_last_vowel(out, Tsere);
+                // -ɛ́hā: like the 2ms above, the plural "her" suffix takes segol-yod
+                // (סוּסֶיהָ, מִגְרָשֶׁיהָ), not tsere.
+                set_last_vowel(out, Segol);
                 out.push(Cons::new(letter::YOD));
                 out.push(Cons::new(letter::HE).with_vowel(Qamats));
             }
@@ -496,9 +573,9 @@ fn append_pron_suffix(out: &mut Vec<Cons>, plural: bool, p: Person, g: Gender, n
                 out.push(Cons::new(letter::KAF));
             }
             (Person::Third, Gender::Masculine, Number::Singular) => {
-                // -ô (defective; could also be holam+vav)
-                set_last_vowel(out, Holam);
-                out.push(Cons::new(letter::VAV));
+                // -ô written holam-male: the suffix vowel sits on the mater vav
+                // and the preceding radical stays bare (סוּסוֹ, נַפְשׁוֹ, דְּבָרוֹ).
+                out.push(Cons::new(letter::VAV).with_vowel(Holam));
             }
             (Person::Third, Gender::Feminine, Number::Singular) => {
                 // -āh (with mappiq)

@@ -19,13 +19,16 @@
 //! - Noun inflection (state + pronominal suffixes) from a supplied stem
 //!   in `noun.rs`.
 
+pub mod gold_noun;
 pub mod hebrew;
+pub mod irregular_noun;
 pub mod noun;
 pub mod noun_parse;
 pub mod parse;
 pub mod root;
 pub mod verb;
 
+pub use irregular_noun::{IRREGULAR_NOUNS, IrregularNoun};
 pub use noun::{NounInflection, NounStem, NounStemKind, inflect_noun};
 pub use noun_parse::{NounInventory, NounMatch, parse_noun_word};
 pub use parse::{VerbMatch, parse_word, parse_word_disambiguated, parse_word_filtered};

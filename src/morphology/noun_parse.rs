@@ -58,6 +58,14 @@ pub struct NounInventory {
     forms: HashMap<String, Vec<(usize, String)>>,
 }
 
+/// Normalise a rendered form for indexing/lookup: collapse the qamats-qatan
+/// point (U+05C7) to a plain qamats (U+05B8). The generator emits qamats-qatan
+/// under o-class segolate bases (קׇדְשׁוֹ), but the WLC text writes a plain
+/// qamats there (קָדְשׁוֹ); collapsing both ends keeps the match exact.
+fn norm_key(s: &str) -> String {
+    s.replace('\u{05C7}', "\u{05B8}")
+}
+
 impl NounInventory {
     /// Compile a set of stems into a reverse-parsing inventory.
     pub fn build(stems: &[NounStem]) -> Self {
@@ -67,7 +75,7 @@ impl NounInventory {
             rendered.push((hebrew::render(&stem.absolute_singular), stem.kind));
             for inflection in inflect_noun(stem) {
                 forms
-                    .entry(inflection.text)
+                    .entry(norm_key(&inflection.text))
                     .or_default()
                     .push((id, inflection.label));
             }
@@ -75,6 +83,45 @@ impl NounInventory {
         NounInventory {
             stems: rendered,
             forms,
+        }
+    }
+
+    /// Register the curated irregular-noun inventory: lemmas whose inflected
+    /// forms are suppletive or otherwise unmodelable by [`inflect_noun`]
+    /// (בֵּן, אִישׁ→אֲנָשִׁים, …). Each gold-attested proclitic-free surface is
+    /// indexed to its lemma, so matching stays exact; proclitics are peeled by
+    /// [`Self::parse`]. Forms are run through the same parse→render round-trip
+    /// as generated forms so their mark order matches the lookup key.
+    pub fn add_irregulars(&mut self) {
+        for noun in super::irregular_noun::IRREGULAR_NOUNS {
+            let id = self.stems.len();
+            self.stems.push((
+                hebrew::render(&hebrew::parse_pointed(noun.lemma)),
+                NounStemKind::Masculine,
+            ));
+            let label = format!("Irregular ({})", noun.gloss);
+            for form in noun.forms {
+                let key = norm_key(&hebrew::render(&hebrew::parse_pointed(form)));
+                self.forms.entry(key).or_default().push((id, label.clone()));
+            }
+        }
+    }
+
+    /// Register the gold-harvested common-noun inventory: attested surface
+    /// forms the generator can't produce (broken plurals, reduced construct
+    /// stems — דִּבְרֵי, יְמֵי, צְבָאוֹת), each mapped to its lexicon lemma. Like
+    /// [`Self::add_irregulars`], forms are run through the parse→render
+    /// round-trip so their mark order matches the lookup key.
+    pub fn add_gold_nouns(&mut self) {
+        for &(form, lemma, gloss) in super::gold_noun::GOLD_NOUNS {
+            let id = self.stems.len();
+            self.stems.push((
+                hebrew::render(&hebrew::parse_pointed(lemma)),
+                NounStemKind::Masculine,
+            ));
+            let label = format!("Noun ({gloss})");
+            let key = norm_key(&hebrew::render(&hebrew::parse_pointed(form)));
+            self.forms.entry(key).or_default().push((id, label));
         }
     }
 
@@ -103,21 +150,33 @@ impl NounInventory {
             if seq[..strip].iter().any(|c| !PROCLITICS.contains(&c.letter)) {
                 continue;
             }
-            let target = hebrew::render(&seq[strip..]);
             let prefix = hebrew::render(&seq[..strip]);
-            let Some(entries) = self.forms.get(&target) else {
-                continue;
-            };
-            for (id, label) in entries {
-                let (stem, kind) = &self.stems[*id];
-                let key = (stem.clone(), *kind, label.clone(), prefix.clone());
-                if seen.insert(key) {
-                    matches.push(NounMatch {
-                        stem: stem.clone(),
-                        kind: *kind,
-                        label: label.clone(),
-                        prefix: prefix.clone(),
-                    });
+            // Two candidate stem renderings for the peeled remainder: as written,
+            // and (when a proclitic was peeled) with the first consonant's dagesh
+            // forte removed. The definite article — written (הַ) or assimilated
+            // into the preposition (בַּ = בְּ+הַ) — doubles the following consonant,
+            // so the bare lexical form carries no such dagesh (הַיּוֹם→יוֹם).
+            let mut rest = seq[strip..].to_vec();
+            let mut targets = vec![norm_key(&hebrew::render(&rest))];
+            if strip > 0 && rest.first().is_some_and(|c| c.dagesh) {
+                rest[0].dagesh = false;
+                targets.push(norm_key(&hebrew::render(&rest)));
+            }
+            for target in targets {
+                let Some(entries) = self.forms.get(&target) else {
+                    continue;
+                };
+                for (id, label) in entries {
+                    let (stem, kind) = &self.stems[*id];
+                    let key = (stem.clone(), *kind, label.clone(), prefix.clone());
+                    if seen.insert(key) {
+                        matches.push(NounMatch {
+                            stem: stem.clone(),
+                            kind: *kind,
+                            label: label.clone(),
+                            prefix: prefix.clone(),
+                        });
+                    }
                 }
             }
         }
@@ -176,5 +235,34 @@ mod tests {
         let stems = vec![NounStem::masculine("דָּבָר")];
         let matches = parse_noun_word("דָּבָר", &stems);
         assert!(matches.iter().any(|m| m.label == "Singular Absolute"));
+    }
+
+    #[test]
+    fn parses_with_definite_article() {
+        // הַיּוֹם = article הַ + יוֹם, doubling the yod with a dagesh forte the
+        // bare lemma lacks; the forte is stripped so the stem still matches.
+        let stems = vec![NounStem::masculine("יוֹם")];
+        let matches = parse_noun_word("הַיּוֹם", &stems);
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.label == "Singular Absolute" && !m.prefix.is_empty()),
+            "expected article-prefixed singular, got {matches:?}"
+        );
+    }
+
+    #[test]
+    fn parses_preposition_plus_article() {
+        // בַּיּוֹם = בְּ + הַ + יוֹם; the article assimilates into the preposition,
+        // leaving a forte on the yod. Peeling ב and stripping the forte recovers
+        // the lemma.
+        let stems = vec![NounStem::masculine("יוֹם")];
+        let matches = parse_noun_word("בַּיּוֹם", &stems);
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.label == "Singular Absolute" && !m.prefix.is_empty()),
+            "expected preposition+article singular, got {matches:?}"
+        );
     }
 }

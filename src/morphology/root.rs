@@ -132,8 +132,11 @@ fn detect_gizra(letters: [char; 3]) -> Vec<Gizra> {
         out.push(Gizra::PeYod);
     }
 
-    // Middle radical
-    if a == VAV || a == YOD {
+    // Middle radical. A vav/yod middle is hollow only in a genuinely
+    // biconsonantal root (קום, שׂים, בוא). When the third radical is he the
+    // root is III-He (היה, חיה, צוה, קוה): the middle yod/vav is a true
+    // consonant and the verb inflects as lamed-he, not hollow.
+    if (a == VAV || a == YOD) && l != HE {
         out.push(Gizra::Hollow);
     } else if is_gut(a) || a == RESH {
         out.push(Gizra::AyinGuttural);
@@ -192,6 +195,17 @@ mod tests {
     fn geminate() {
         let r = Root::parse("סבב").unwrap();
         assert!(r.has(Gizra::Geminate));
+    }
+
+    #[test]
+    fn lamed_he_with_weak_middle_is_not_hollow() {
+        // היה, חיה, צוה, קוה: a vav/yod middle radical is consonantal when the
+        // root is III-He, so these inflect as lamed-he, never hollow.
+        for r in ["היה", "צוה", "קוה"] {
+            let root = Root::parse(r).unwrap();
+            assert!(root.has(Gizra::LamedHe), "{r} should be III-He");
+            assert!(!root.has(Gizra::Hollow), "{r} should not be hollow");
+        }
     }
 
     #[test]

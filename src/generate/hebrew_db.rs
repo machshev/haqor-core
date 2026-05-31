@@ -285,21 +285,20 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
     Ok(())
 }
 
-/// Build `hebrew.db` from `bible.db`. Returns (distinct surfaces, occurrences,
-/// parsed surfaces).
-pub fn generate_hebrew(
-    bible_db: &Path,
-    output: &Path,
-    lexicon_db: Option<&Path>,
-) -> Result<(usize, usize, usize)> {
-    info!("Reading OT tokens from {}", bible_db.display());
-    let (surfaces, occurrences) = collect_tokens(bible_db)?;
-    info!(
-        "  {} distinct surfaces, {} occurrences",
-        surfaces.len(),
-        occurrences.len()
-    );
+/// The analyses derived for a batch of surfaces: the refined lexical class, the
+/// kept verb analyses, and the noun analyses — one entry per input surface, in
+/// the same order. Shared by the full build and the incremental pass so both
+/// classify and parse identically.
+struct SurfaceAnalysis {
+    classes: Vec<Option<&'static str>>,
+    verb: Vec<Vec<VerbMatch>>,
+    noun: Vec<Vec<NounMatch>>,
+}
 
+/// Run the lexical pre-filter, verb parser and noun parser over `surfaces`.
+/// Loads the prefilter and noun inventory from `lexicon_db` when given; without
+/// a lexicon, every surface is verb-parsed with no class and no noun pass.
+fn analyze_surfaces(surfaces: &[String], lexicon_db: Option<&Path>) -> Result<SurfaceAnalysis> {
     // Optional lexical pre-filter: recognise non-verb tokens (closed-class
     // function words + proper nouns) so they bypass the verb parser entirely.
     let prefilter = match lexicon_db {
@@ -342,7 +341,7 @@ pub fn generate_hebrew(
                 .and_then(|pf| pf.exclude(t, has_plausible))
         })
         .collect();
-    let analyses: Vec<Vec<VerbMatch>> = raw
+    let verb: Vec<Vec<VerbMatch>> = raw
         .into_iter()
         .zip(classes.iter())
         .map(|(matches, class)| if class.is_some() { Vec::new() } else { matches })
@@ -369,7 +368,9 @@ pub fn generate_hebrew(
         Some(p) => {
             let mut stems = load_noun_inventory(p)?;
             stems.extend(load_proper_inventory(p)?);
-            let inv = NounInventory::build(&stems);
+            let mut inv = NounInventory::build(&stems);
+            inv.add_irregulars();
+            inv.add_gold_nouns();
             info!(
                 "Noun-parsing {} surfaces against {} stems",
                 surfaces.len(),
@@ -379,7 +380,7 @@ pub fn generate_hebrew(
         }
         None => None,
     };
-    let noun_analyses: Vec<Vec<NounMatch>> = match &noun_inventory {
+    let noun: Vec<Vec<NounMatch>> = match &noun_inventory {
         Some(inv) => surfaces
             .par_iter()
             .zip(classes.par_iter())
@@ -394,9 +395,107 @@ pub fn generate_hebrew(
         None => vec![Vec::new(); surfaces.len()],
     };
     if noun_inventory.is_some() {
-        let noun_parsed = noun_analyses.iter().filter(|a| !a.is_empty()).count();
+        let noun_parsed = noun.iter().filter(|a| !a.is_empty()).count();
         info!("  {noun_parsed} surfaces matched a noun analysis");
     }
+
+    Ok(SurfaceAnalysis {
+        classes,
+        verb,
+        noun,
+    })
+}
+
+/// Insert the verb/noun analysis rows for one surface into the prepared
+/// statements. Shared by the full build and the incremental update.
+fn insert_analyses(
+    id: i64,
+    verb: &[VerbMatch],
+    noun: &[NounMatch],
+    ana_stmt: &mut rusqlite::Statement<'_>,
+    noun_stmt: &mut rusqlite::Statement<'_>,
+) -> Result<()> {
+    for m in verb {
+        let root: String = m.root.letters.iter().collect();
+        ana_stmt.execute((
+            id,
+            root,
+            gizra_label(m),
+            m.binyan.name(),
+            m.form.name(),
+            m.pgn.label(),
+            &m.prefix,
+            m.vav_consecutive as i64,
+            m.attested as i64,
+        ))?;
+    }
+    for n in noun {
+        noun_stmt.execute((id, &n.stem, format!("{:?}", n.kind), &n.label, &n.prefix))?;
+    }
+    Ok(())
+}
+
+/// Recompute the `roots` aggregate table from the current `analyses` rows.
+/// Idempotent: clears and rebuilds, so it is safe to call after either a full
+/// build or an incremental update.
+fn rebuild_roots(db: &Connection) -> Result<()> {
+    db.execute_batch(
+        "DELETE FROM roots;
+         INSERT INTO roots(root, gizra, n_forms, n_occurrences)
+         SELECT root, gizra, COUNT(*) AS n_forms, SUM(occ) AS n_occurrences
+         FROM (
+            SELECT a.root AS root, MIN(a.gizra) AS gizra, s.occurrences AS occ
+            FROM analyses a
+            JOIN surface s ON s.surface_id = a.surface_id
+            GROUP BY a.root, a.surface_id
+         )
+         GROUP BY root;",
+    )?;
+    Ok(())
+}
+
+/// Build `hebrew.db`, or incrementally improve an existing one. Returns
+/// (distinct surfaces, occurrences, parsed surfaces).
+///
+/// By default this is **incremental**: if `output` already exists, only the
+/// surfaces still in `review_missing` (no verb/noun analysis and no lexical
+/// class) are re-analysed and updated in place — fast iteration when the engine
+/// or lexicon improves. `limit` (when non-zero) caps the incremental pass to the
+/// `limit` highest-frequency missing surfaces, for even faster iteration. Pass
+/// `force = true` (or run with no existing DB) to wipe and rebuild everything
+/// from `bible_db`; `limit` is ignored in that case.
+pub fn generate_hebrew(
+    bible_db: &Path,
+    output: &Path,
+    lexicon_db: Option<&Path>,
+    force: bool,
+    limit: usize,
+) -> Result<(usize, usize, usize)> {
+    if !force && output.exists() {
+        return update_missing(output, lexicon_db, limit);
+    }
+    build_hebrew(bible_db, output, lexicon_db)
+}
+
+/// Full build: read every OT token from `bible_db` and write a fresh `hebrew.db`.
+fn build_hebrew(
+    bible_db: &Path,
+    output: &Path,
+    lexicon_db: Option<&Path>,
+) -> Result<(usize, usize, usize)> {
+    info!("Reading OT tokens from {}", bible_db.display());
+    let (surfaces, occurrences) = collect_tokens(bible_db)?;
+    info!(
+        "  {} distinct surfaces, {} occurrences",
+        surfaces.len(),
+        occurrences.len()
+    );
+
+    let SurfaceAnalysis {
+        classes,
+        verb: analyses,
+        noun: noun_analyses,
+    } = analyze_surfaces(&surfaces, lexicon_db)?;
 
     // Occurrence counts per surface.
     let mut counts = vec![0u32; surfaces.len()];
@@ -446,29 +545,7 @@ pub fn generate_hebrew(
                 any_attested as i64,
                 classes[id],
             ))?;
-            for m in matches {
-                let root: String = m.root.letters.iter().collect();
-                ana_stmt.execute((
-                    id as i64,
-                    root,
-                    gizra_label(m),
-                    m.binyan.name(),
-                    m.form.name(),
-                    m.pgn.label(),
-                    &m.prefix,
-                    m.vav_consecutive as i64,
-                    m.attested as i64,
-                ))?;
-            }
-            for n in nouns {
-                noun_stmt.execute((
-                    id as i64,
-                    &n.stem,
-                    format!("{:?}", n.kind),
-                    &n.label,
-                    &n.prefix,
-                ))?;
-            }
+            insert_analyses(id as i64, matches, nouns, &mut ana_stmt, &mut noun_stmt)?;
         }
 
         let mut occ_stmt = tx.prepare(
@@ -488,17 +565,7 @@ pub fn generate_hebrew(
     // Roots aggregated from analyses, weighting each distinct surface by its
     // occurrence count (so n_occurrences reflects how often the root is seen,
     // not just how many forms reference it).
-    db.execute_batch(
-        "INSERT INTO roots(root, gizra, n_forms, n_occurrences)
-         SELECT root, gizra, COUNT(*) AS n_forms, SUM(occ) AS n_occurrences
-         FROM (
-            SELECT a.root AS root, MIN(a.gizra) AS gizra, s.occurrences AS occ
-            FROM analyses a
-            JOIN surface s ON s.surface_id = a.surface_id
-            GROUP BY a.root, a.surface_id
-         )
-         GROUP BY root;",
-    )?;
+    rebuild_roots(&db)?;
 
     create_indexes_and_views(&db)?;
 
@@ -510,4 +577,96 @@ pub fn generate_hebrew(
         output.display()
     );
     Ok((surfaces.len(), occurrences.len(), parsed_surfaces))
+}
+
+/// Incremental pass: re-analyse only the surfaces still in `review_missing`
+/// (no verb/noun analysis, no lexical class) and update them in place. Existing
+/// rows for already-resolved surfaces are left untouched, so this is cheap to
+/// re-run as the engine or lexicon improves. Returns the whole-DB
+/// (surfaces, occurrences, parsed) so callers can report current totals.
+fn update_missing(
+    output: &Path,
+    lexicon_db: Option<&Path>,
+    limit: usize,
+) -> Result<(usize, usize, usize)> {
+    let mut db =
+        Connection::open(output).with_context(|| format!("opening {}", output.display()))?;
+
+    // The surfaces with nothing yet — exactly the review_missing population,
+    // highest-frequency first so a `limit` keeps the most impactful words.
+    let missing: Vec<(i64, String)> = {
+        let mut sql = String::from(
+            "SELECT surface_id, text FROM surface \
+             WHERE n_candidates = 0 AND n_noun_candidates = 0 AND lexical_class IS NULL \
+             ORDER BY occurrences DESC, surface_id",
+        );
+        if limit > 0 {
+            sql.push_str(&format!(" LIMIT {limit}"));
+        }
+        let mut stmt = db.prepare(&sql)?;
+        let rows = stmt.query_map([], |r| Ok((r.get::<_, i64>(0)?, r.get::<_, String>(1)?)))?;
+        rows.collect::<rusqlite::Result<_>>()?
+    };
+    info!("Incremental: re-analysing {} missing surfaces", missing.len());
+
+    let texts: Vec<String> = missing.iter().map(|(_, t)| t.clone()).collect();
+    let SurfaceAnalysis {
+        classes,
+        verb,
+        noun,
+    } = analyze_surfaces(&texts, lexicon_db)?;
+
+    let mut resolved = 0usize;
+    let tx = db.transaction()?;
+    {
+        let mut surf_stmt = tx.prepare(
+            "UPDATE surface SET n_candidates = ?2, n_noun_candidates = ?3, \
+             parsed = ?4, attested = ?5, lexical_class = ?6 WHERE surface_id = ?1",
+        )?;
+        let mut ana_stmt = tx.prepare(
+            "INSERT INTO analyses(surface_id, root, gizra, binyan, form, pgn, prefix, \
+             vav_consecutive, attested) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
+        )?;
+        let mut noun_stmt = tx.prepare(
+            "INSERT INTO noun_analyses(surface_id, stem, kind, label, prefix) \
+             VALUES (?1, ?2, ?3, ?4, ?5)",
+        )?;
+        for (i, (id, _)) in missing.iter().enumerate() {
+            let matches = &verb[i];
+            let nouns = &noun[i];
+            let class = classes[i];
+            // Skip rows that are still unresolved, so we never rewrite a row to
+            // its existing (empty) state.
+            if matches.is_empty() && nouns.is_empty() && class.is_none() {
+                continue;
+            }
+            resolved += 1;
+            let any_attested = matches.iter().any(|m| m.attested);
+            surf_stmt.execute((
+                id,
+                matches.len() as i64,
+                nouns.len() as i64,
+                (!matches.is_empty() || !nouns.is_empty()) as i64,
+                any_attested as i64,
+                class,
+            ))?;
+            insert_analyses(*id, matches, nouns, &mut ana_stmt, &mut noun_stmt)?;
+        }
+    }
+    tx.commit()?;
+
+    rebuild_roots(&db)?;
+
+    let (surfaces, parsed, occurrences): (usize, usize, usize) = db.query_row(
+        "SELECT (SELECT COUNT(*) FROM surface), \
+                (SELECT COUNT(*) FROM surface WHERE parsed = 1), \
+                (SELECT COUNT(*) FROM occurrences)",
+        [],
+        |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+    )?;
+    info!(
+        "Incremental: resolved {resolved} of {} missing surfaces",
+        missing.len()
+    );
+    Ok((surfaces, occurrences, parsed))
 }
