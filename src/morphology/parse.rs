@@ -23,12 +23,11 @@
 //!
 //! Vav-consecutive forms are handled: weqatal (וְ + perfect) falls out of the
 //! ordinary prefix peeling, and wayyiqtol (וַ + a forte dagesh on the prefix
-//! consonant) is recovered by [`strip_wayyiqtol`] and matched against the
-//! imperfect/jussive. Strong-verb and III-He wayyiqtol match cleanly (the
-//! latter via the apocopated jussive, e.g. וַיִּבֶן). Hollow and I-Aleph
-//! wayyiqtol still miss: their surface vowel comes from stress retraction
-//! (nesiga, e.g. וַיָּקָם / וַיֹּאמֶר) and is partly lexical, so it is not
-//! emitted by the forward generator.
+//! consonant) is matched directly against the generated Wayyiqtol forms.
+//! Strong-verb, III-He (via the apocopated jussive, e.g. וַיִּבֶן), hollow
+//! (וַיָּקָם) and I-Aleph (וַיֹּאמֶר) wayyiqtol all match: the forward generator
+//! models the stress-retraction (nesiga) vowel changes — hollow holam → qamats,
+//! I-Aleph patah → segol.
 //!
 //! Limitations: only verbs are parsed. A noun's pattern (mishqal) cannot be
 //! derived from its root, so the noun generator takes a stem rather than a
@@ -95,7 +94,52 @@ fn forms_match(generated: &str, target: &str) -> bool {
     fn strip_dot(s: &str) -> String {
         s.chars().filter(|&c| c != '\u{05C1}' && c != '\u{05C2}').collect()
     }
-    generated == target || strip_dot(generated) == strip_dot(target)
+    // Collapse a plene holam (a vav mater carrying holam after a vowelless
+    // consonant) onto the preceding consonant, so plene יוֹשֵׁב and defective
+    // יֹשֵׁב normalise to the same form. Plene/defective is purely orthographic —
+    // the same lexeme, same analysis — so this only recovers spelling variants
+    // and never merges distinct words (a holam mater is the sole thing removed).
+    fn collapse_holam(s: &str) -> String {
+        let mut out: Vec<Cons> = Vec::new();
+        for c in hebrew::parse_pointed(s) {
+            if c.letter == letter::VAV && c.vowel == Some(Vowel::Holam) {
+                if let Some(prev) = out.last_mut() {
+                    if prev.vowel.is_none() {
+                        prev.vowel = Some(Vowel::Holam);
+                        continue;
+                    }
+                }
+            }
+            out.push(c);
+        }
+        hebrew::render(&out)
+    }
+    // Collapse a plene shureq (a vav mater bearing the dagesh-as-shureq point
+    // after a vowelless consonant) onto the preceding consonant as a qubuts, so
+    // plene יָמוּתוּ and defective יָמֻתוּ normalise alike. Like holam this is
+    // purely orthographic — same lexeme, same analysis — and exact-match still
+    // governs, so it only recovers spelling variants.
+    fn collapse_shureq(s: &str) -> String {
+        let mut out: Vec<Cons> = Vec::new();
+        for c in hebrew::parse_pointed(s) {
+            if c.letter == letter::VAV && c.dagesh && c.vowel.is_none() {
+                if let Some(prev) = out.last_mut() {
+                    if prev.vowel.is_none() {
+                        prev.vowel = Some(Vowel::Qubuts);
+                        continue;
+                    }
+                }
+            }
+            out.push(c);
+        }
+        hebrew::render(&out)
+    }
+    if generated == target || strip_dot(generated) == strip_dot(target) {
+        return true;
+    }
+    let g = collapse_shureq(&collapse_holam(generated));
+    let t = collapse_shureq(&collapse_holam(target));
+    g == t || strip_dot(&g) == strip_dot(&t)
 }
 
 /// Parse a fully-pointed word into every verb analysis that can produce it.
@@ -122,8 +166,71 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
             continue;
         }
         let remainder = &seq[strip..];
-        let target = hebrew::render(remainder);
         let prefix = hebrew::render(&seq[..strip]);
+
+        // Candidate stem renderings. Normally just the peeled remainder, but a
+        // proclitic (ל/ב/כ) prefixed to a pe-aleph stem swallows the aleph's
+        // hataf: the preposition takes the contracted vowel and the aleph
+        // quiesces vowel-less — לֵאמֹר = lē + ʔ(ă)mōr, the Qal inf. construct of
+        // אמר. Restore the aleph's hataf-patah so the bare generated form
+        // (אֲמֹר) matches. Exact-match keeps this safe: it only ever recovers
+        // the genuine contracted reading.
+        let mut targets = vec![hebrew::render(remainder)];
+        // Conjunction sandhi וְ + yəC → וִyC: before a sheva-bearing yod the
+        // conjunction takes hiriq and the yod quiesces into a mater, so a weqatal
+        // / conjoined I-yod form surfaces with a vowel-less yod (וִידַעְתֶּם) where
+        // the bare stem has yod + sheva (יְדַעְתֶּם). Restore the sheva so the stem
+        // matches. Only when the peeled proclitic was a hiriq-vav.
+        if strip > 0
+            && seq[strip - 1].letter == letter::VAV
+            && seq[strip - 1].vowel == Some(Vowel::Hiriq)
+            && remainder
+                .first()
+                .is_some_and(|c| c.letter == letter::YOD && c.vowel.is_none())
+        {
+            let mut alt = remainder.to_vec();
+            alt[0].vowel = Some(Vowel::Sheva);
+            targets.push(hebrew::render(&alt));
+        }
+        // Conjunction sandhi וְ + Cˇ(hataf) → וִ + Cˇ(sheva): before a guttural
+        // bearing a hataf vowel the conjunction takes hiriq and the hataf reduces
+        // to a plain (silent) sheva — wihyîtem (וִהְיִיתֶם) from the bare hĕyîtem
+        // (הֱיִיתֶם). Restore the hataf so the bare stem matches. Only after a
+        // peeled hiriq-vav.
+        if strip > 0
+            && seq[strip - 1].letter == letter::VAV
+            && seq[strip - 1].vowel == Some(Vowel::Hiriq)
+            && remainder
+                .first()
+                .is_some_and(|c| hebrew::is_guttural(c.letter) && c.vowel == Some(Vowel::Sheva))
+        {
+            for hataf in [Vowel::HatafSegol, Vowel::HatafPatah] {
+                let mut alt = remainder.to_vec();
+                alt[0].vowel = Some(hataf);
+                targets.push(hebrew::render(&alt));
+            }
+        }
+        if strip > 0
+            && remainder
+                .first()
+                .is_some_and(|c| c.letter == letter::ALEF && c.vowel.is_none())
+        {
+            for hataf in [Vowel::HatafPatah, Vowel::HatafSegol] {
+                let mut alt = remainder.to_vec();
+                alt[0].vowel = Some(hataf);
+                targets.push(hebrew::render(&alt));
+            }
+        }
+        // The article (and the relative ש) double the first stem consonant with
+        // a forte dagesh — הַיֹּשְׁבִים = ha + (y)yōšḇîm. The generated bare stem
+        // carries no such dagesh, so strip it from the first consonant to expose
+        // the underlying form. Only attempted when a proclitic was peeled, and
+        // exact-match still governs, so this only recovers genuine readings.
+        if strip > 0 && remainder.first().is_some_and(|c| c.dagesh) {
+            let mut alt = remainder.to_vec();
+            alt[0].dagesh = false;
+            targets.push(hebrew::render(&alt));
+        }
 
         for letters in candidate_roots(remainder, roots) {
             let paradigm = memo
@@ -133,7 +240,9 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                 // Wayyiqtol is handled by the dedicated pass below, with the
                 // consecutive vav recognised as such rather than as a plain
                 // proclitic; skip it here to avoid duplicate analyses.
-                if vf.form == Form::Wayyiqtol || !forms_match(&vf.text, &target) {
+                if vf.form == Form::Wayyiqtol
+                    || !targets.iter().any(|t| forms_match(&vf.text, t))
+                {
                     continue;
                 }
                 if seen.insert((letters, vf.binyan, vf.form, vf.pgn, strip, false)) {
@@ -233,6 +342,12 @@ fn candidate_roots(seq: &[Cons], roots: Option<&HashSet<[char; 3]>>) -> Vec<[cha
         if !alphabet.contains(&w) {
             alphabet.push(w);
         }
+    }
+    // לקח assimilates its C1 lamed into a dagesh (יִקַּח) or drops it entirely
+    // (קַח, קַחַת), so the surface may lack the lamed. Include it so that root
+    // is reachable; the lexicon filter and exact surface match keep it safe.
+    if !alphabet.contains(&letter::LAMED) {
+        alphabet.push(letter::LAMED);
     }
 
     let mut out = Vec::new();
@@ -338,6 +453,145 @@ mod tests {
                 && m.form == Form::Wayyiqtol
                 && m.pgn.label() == "3ms"
                 && m.vav_consecutive
+        }));
+    }
+
+    #[test]
+    fn parses_pe_aleph_wayyiqtol() {
+        // וַיֹּאמֶר — wayyiqtol of אמר, the single most common verb form in the
+        // OT. The C2 patah of the imperfect (יֹאמַר) retracts to segol.
+        let matches = parse_word("וַיֹּאמֶר");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "אמר"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Wayyiqtol
+                && m.pgn.label() == "3ms"
+                && m.vav_consecutive
+        }));
+    }
+
+    #[test]
+    fn parses_pe_aleph_wayyiqtol_plural() {
+        // וַיֹּאמְרוּ — wayyiqtol 3mp of אמר; the vocalic suffix keeps C2 sheva.
+        let matches = parse_word("וַיֹּאמְרוּ");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "אמר"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Wayyiqtol
+                && m.pgn.label() == "3mp"
+                && m.vav_consecutive
+        }));
+    }
+
+    #[test]
+    fn parses_lamed_aleph_imperfect() {
+        // יִקְרָא — Qal imperfect of קרא; the quiescent alef lengthens the
+        // thematic holam to qamats.
+        let matches = parse_word("יִקְרָא");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "קרא"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Imperfect
+                && m.pgn.label() == "3ms"
+        }));
+    }
+
+    #[test]
+    fn parses_lamed_guttural_imperfect() {
+        // יִשְׁלַח — Qal imperfect of שלח; the final guttural lowers the thematic
+        // holam to patah.
+        let matches = parse_word("יִשְׁלַח");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "שלח"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Imperfect
+                && m.pgn.label() == "3ms"
+        }));
+    }
+
+    #[test]
+    fn parses_lamed_he_inf_construct() {
+        // לַעֲשׂוֹת — ל + Qal infinitive construct of עשה; the he becomes a tav
+        // and the linking vowel is a plene holam on a vav mater (עֲשׂוֹת).
+        let matches = parse_word("לַעֲשׂוֹת");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "עשה"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::InfinitiveConstruct
+        }));
+    }
+
+    #[test]
+    fn parses_lamed_he_imperfect_persons() {
+        // III-He imperfect beyond 3ms: יִבְנֶה (3ms, segol + he kept), תִּבְנֶה
+        // (3fs/2ms, same grade), and the vocalic-suffix plural יִבְנוּ (3mp, he
+        // elides and C2 loses its vowel).
+        let m1 = parse_word("תִּבְנֶה");
+        assert!(m1.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "בנה"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Imperfect
+        }));
+        let m2 = parse_word("יִבְנוּ");
+        assert!(m2.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "בנה"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Imperfect
+                && m.pgn.label() == "3mp"
+        }));
+    }
+
+    #[test]
+    fn parses_lamed_he_guttural_wayyiqtol() {
+        // וַיַּעַשׂ — apocopated wayyiqtol of עשה. The dropped he leaves a C1-C2
+        // cluster broken by a helping vowel; the guttural C1 (ayin) takes patah,
+        // not the segol a non-guttural C1 would (cf. וַיִּבֶן).
+        let matches = parse_word("וַיַּעַשׂ");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "עשה"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Wayyiqtol
+        }));
+    }
+
+    #[test]
+    fn parses_lemor_contraction() {
+        // לֵאמֹר — ל + Qal infinitive construct of אמר. The preposition swallows
+        // the pe-aleph's hataf (the aleph quiesces vowel-less) and takes a
+        // tsere; restoring the aleph's hataf lets the bare form (אֲמֹר) match.
+        let matches = parse_word("לֵאמֹר");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "אמר"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::InfinitiveConstruct
+                && !m.prefix.is_empty()
+        }));
+    }
+
+    #[test]
+    fn parses_haya_imperfect() {
+        // יִהְיֶה — Qal imperfect 3ms of היה. Lexically irregular: the C1 he
+        // closes the prefix syllable with a silent sheva (not a hataf) and the
+        // hiriq prefix is kept, unlike a regular I-guttural III-He verb.
+        let matches = parse_word("יִהְיֶה");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "היה"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Imperfect
+                && m.pgn.label() == "3ms"
+        }));
+    }
+
+    #[test]
+    fn parses_pe_guttural_imperfect() {
+        // יַעֲמֹד — Qal imperfect of עמד; the initial guttural lowers the hiriq
+        // prefix to patah and takes a hataf-patah.
+        let matches = parse_word("יַעֲמֹד");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "עמד"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Imperfect
+                && m.pgn.label() == "3ms"
         }));
     }
 

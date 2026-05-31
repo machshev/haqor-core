@@ -77,6 +77,64 @@ const FUNCTION_WORDS: &[&str] = &[
     "מֵהֵמָּה",
     // הִנֵּה "behold" + suffix
     "הִנְנִי", "הִנֶּנִּי", "הִנּוֹ", "הִנָּם",
+    // Pentateuchal ketiv of the 3fs pronoun (written הוא, read הִיא), plus its
+    // demonstrative use after the article. Closed-class, never a verb.
+    "הִוא", "הַהִוא", "הַהוּא",
+    // pausal / variant 2ms pronoun
+    "אָתָּה",
+    // poetic & defective suffixed prepositions the citation set above misses:
+    // אֶל "to" (pausal/defective), מִן "from" (poetic לָמוֹ), עִם "with",
+    // אַחַר/אַחֲרֵי "after", תַּחַת "under", כְּ "like".
+    "אֵלָי", "אֲלֵהֶם", "אֲלֵיהֶן", "לָמוֹ", "בָּמוֹ", "כְּמוֹ", "כָּמוֹנִי", "כָּמוֹךָ", "כָּמֹהוּ",
+    "עִמָּדִי", "עִמָּדוֹ",
+    "אַחֲרַי", "אַחֲרֶיךָ", "אַחֲרָיו", "אַחֲרֶיהָ", "אַחֲרֵינוּ", "אַחֲרֵיכֶם", "אַחֲרֵיהֶם",
+    "תַּחְתַּי", "תַּחְתֶּיךָ", "תַּחְתָּיו", "תַּחְתֵּינוּ", "תַּחְתֵּיהֶם", "תַּחְתָּם",
+    // high-frequency adverbs with no verb homograph in this exact pointing
+    "סָבִיב", "יַחְדָּו", "יַחַד", "אֵיךְ", "אֵיכָה", "מַדּוּעַ", "לָכֵן", "אוּלַי",
+    "טֶרֶם", "אָמֵן", "סֶלָה",
+    // Aramaic relative/genitive particle דִּי "which/of" (also the noun דַּי
+    // "sufficiency"); closed-class, never a verb.
+    "דִּי",
+    // Dagesh-less surface variants of closed-class forms. The Masoretic DB
+    // surfaces (and proclitic-peeled remainders like the בֵין of וּבֵין) often
+    // drop the dagesh that the citation spelling carries, so list them so they
+    // classify as function words too. אָנִי is the qamats-pointed variant of אֲנִי.
+    "בוֹ", "בֵין", "אָנִי",
+    // Dagesh-less surface variants of suffixed prepositions (the begedkefet drops
+    // its lene after certain preceding words): בִי/בְךָ/בָהֶם/בָכֶם beside the
+    // dotted בִּי/בְּךָ/בָּהֶם/בָּכֶם already listed. Plus further closed-class
+    // preposition/particle + suffix paradigms attested in the text.
+    "בִי", "בְךָ", "בָהֶם", "בָכֶם",
+    "עָלָי", "עָלָיִךְ", "מֵעָלָי", "אַחֲרָי", "עֲלֵהֶם", "עָלֵימוֹ",
+    "עִמָּם", "מִמֶּךָּ", "תַּחְתֶּיהָ", "נֶגְדּוֹ", "לְנֶגְדִּי", "בַּעֲדוֹ",
+    "כָמוֹךָ", "אוֹתָךְ",
+    // אֵין/אַיִן "there is not" + suffix; הִנֵּה "behold" + suffix.
+    "אֵינֶנּוּ", "אֵינְךָ", "הִנֵּנִי",
+    "אֵינֶנִּי", "אֵינָם", "אֵינֶנָּה", "אֵינְכֶם", "הִנְּךָ",
+    // closed-class preposition/particle + suffix (defective & variant spellings)
+    "כָּכֶם", "אַחֲרֵיהֶן", "אֲלֵכֶם", "נֶגְדֶּךָ", "כָמֹהוּ", "כָמוֹנִי",
+    "אֵלָיִךְ", "תַּחְתָּי", "נֶגְדִּי", "בֵּינֵינוּ", "תַחְתָּיו", "אֶצְלוֹ", "לְנֶגְדָּם",
+    "אֶצְלִי", "עֲלֵהֶן", "תַחְתָּם", "לְמַעַנְכֶם", "יֶשְׁנוֹ", "בֵּינֵיהֶם",
+    // High-frequency adverbs/particles missing their dagesh-less or variant
+    // surface: כֹה (כֹּה without lene), חִנָּם "freely", מַעְלָה "upward"
+    // (covers וָמַעְלָה / לְמַעְלָה after proclitic-peeling).
+    "כֹה", "חִנָּם", "מַעְלָה",
+    // Frozen prepositions — lexicalised bound infinitives/nominals that never
+    // function as live verbs: לִקְרַאת "to meet" (+suffix), בַּעֲבוּר "for the
+    // sake of", and the adverbial הַרְבֵּה "much/many".
+    "לִקְרַאת", "לִקְרָאתוֹ", "בַּעֲבוּר", "הַרְבֵּה",
+    // Number + pronominal suffix — closed-class, never a verb: שְׁנֵיהֶם "the
+    // two of them".
+    "שְׁנֵיהֶם",
+    // Aramaic closed-class particles: דְּנָה "this", אֱדַיִן/בֵּאדַיִן "then",
+    // דִי "which/of" (dagesh-less variant of the דִּי already listed).
+    "דְּנָה", "אֱדַיִן", "בֵּאדַיִן", "דִי", "קֳבֵל", "קֳדָם",
+    // Adverb פֹה "here" — the dagesh-less variant of the פֹּה already listed.
+    "פֹה",
+    // Frozen adverbs/interjections — closed-class, never live verbs:
+    // מִלְמָעְלָה "from above", פִּתְאֹם "suddenly", אָכֵן "surely/indeed",
+    // חָלִילָה "far be it".
+    "מִלְמָעְלָה", "פִּתְאֹם", "אָכֵן", "חָלִילָה",
 ];
 
 /// The Tetragrammaton and its surface variants. The lexicon carries the divine
@@ -120,6 +178,15 @@ impl Prefilter {
         // add its attested surface forms so it is recognised as a proper noun.
         proper.extend(
             DIVINE_NAMES
+                .iter()
+                .map(|s| normalize_surface(s))
+                .filter(|s| !s.is_empty()),
+        );
+        // Many names never match the lexicon by exact pointing (plene/defective,
+        // pausal, or simply absent — see [`super::proper_names`]); add the
+        // gold-harvested attested surface forms directly.
+        proper.extend(
+            super::proper_names::PROPER_NAMES
                 .iter()
                 .map(|s| normalize_surface(s))
                 .filter(|s| !s.is_empty()),
@@ -196,6 +263,13 @@ fn strip_initial_dagesh(form: &str) -> Option<String> {
 fn deprefixed_forms(surface: &str) -> Vec<String> {
     let cl = clusters(surface);
     let mut forms = vec![surface.to_string()];
+    // A function word can pick up a conjunctive dagesh forte on its first
+    // consonant from the preceding word (dehiq / atthat mer'ahevin): לָּךְ, נָּא,
+    // בִי, בְךָ all carry a forte the citation form lacks. Offer the bare surface
+    // with that initial dagesh stripped so it still matches its headword.
+    if let Some(bare) = strip_initial_dagesh(surface) {
+        forms.push(bare);
+    }
     let max = 2.min(cl.len().saturating_sub(1));
     for k in 1..=max {
         let all_proclitic = cl[..k]

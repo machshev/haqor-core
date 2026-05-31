@@ -117,10 +117,21 @@ enum DbCommands {
         /// Output database path
         #[arg(short, long, default_value = "data/hebrew.db")]
         output: PathBuf,
-        /// Lexicon database; when given, its proper nouns plus a curated
-        /// closed-class list pre-filter non-verb tokens out of verb parsing.
-        #[arg(short, long)]
+        /// Lexicon database; its proper nouns plus a curated closed-class list
+        /// pre-filter non-verb tokens out of verb parsing. Defaults to the
+        /// in-repo data/lexicon.db.
+        #[arg(short, long, default_value = "data/lexicon.db")]
         lexicon_db: Option<PathBuf>,
+        /// Wipe and rebuild the whole database. Without this, an existing
+        /// database is updated incrementally: only the still-unresolved
+        /// (`review_missing`) surfaces are re-analysed.
+        #[arg(short, long)]
+        force: bool,
+        /// In incremental mode, only re-analyse the N highest-frequency missing
+        /// surfaces (0 = all). Lets you iterate on the most impactful words
+        /// without re-parsing the whole review_missing backlog.
+        #[arg(short = 'n', long, default_value_t = 0)]
+        limit: usize,
     },
     /// Prototype: reverse-parse every OT word in the `bible` table and report
     /// how much of the text the morphology generator can account for.
@@ -242,11 +253,15 @@ fn main() -> Result<()> {
                 bible_db,
                 output,
                 lexicon_db,
+                force,
+                limit,
             } => {
                 let (surfaces, occurrences, parsed) = haqor_core::generate::generate_hebrew(
                     &bible_db,
                     &output,
                     lexicon_db.as_deref(),
+                    force,
+                    limit,
                 )?;
                 println!(
                     "Wrote {} surfaces ({} parsed), {} occurrences to {}",
@@ -429,7 +444,9 @@ fn print_noun(stem_input: &str, kind: &str) -> Result<()> {
 fn print_parse_noun(word: &str, lexicon_db: &std::path::Path) -> Result<()> {
     let stems = haqor_core::generate::load_noun_inventory(lexicon_db)
         .with_context(|| format!("loading noun inventory from {}", lexicon_db.display()))?;
-    let inventory = morphology::NounInventory::build(&stems);
+    let mut inventory = morphology::NounInventory::build(&stems);
+    inventory.add_irregulars();
+    inventory.add_gold_nouns();
     let matches = inventory.parse(word);
 
     println!("Word: {word}");

@@ -243,7 +243,7 @@ pub fn parse_pointed(text: &str) -> Vec<Cons> {
 
 /// One of the בגדכפת (begedkefet) letters that take a dagesh lene when
 /// they begin a syllable (word start or after a silent sheva).
-fn is_begedkefet(c: char) -> bool {
+pub(crate) fn is_begedkefet(c: char) -> bool {
     matches!(
         c,
         letter::BET | letter::GIMEL | letter::DALET | letter::KAF | letter::PE | letter::TAV
@@ -278,6 +278,12 @@ pub fn render(seq: &[Cons]) -> String {
         }
         if let Some(v) = c.vowel {
             out.push(v.niqqud());
+        } else if i == last_idx && c.letter == letter::KAF {
+            // Masoretic convention writes a silent sheva under a vowel-less
+            // word-final kaf (מֶלֶךְ, מָלַךְ, וַיֵּלֶךְ). It's the one final letter
+            // that reliably carries it, so the generator's bare output would
+            // otherwise never match the pointed surface.
+            out.push(Vowel::Sheva.niqqud());
         }
     }
     out
@@ -300,13 +306,13 @@ mod tests {
 
     #[test]
     fn render_applies_final_form() {
-        // מֶלֶךְ → final kaf with no vowel (no auto-sheva)
+        // מֶלֶךְ → final kaf, which takes a Masoretic silent sheva when vowel-less
         let seq = [
             Cons::new(letter::MEM).with_vowel(Vowel::Segol),
             Cons::new(letter::LAMED).with_vowel(Vowel::Segol),
             Cons::new(letter::KAF),
         ];
-        assert_eq!(render(&seq), "\u{05DE}\u{05B6}\u{05DC}\u{05B6}\u{05DA}",);
+        assert_eq!(render(&seq), "\u{05DE}\u{05B6}\u{05DC}\u{05B6}\u{05DA}\u{05B0}",);
     }
 
     #[test]
