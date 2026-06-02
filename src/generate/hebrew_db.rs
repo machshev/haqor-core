@@ -100,7 +100,7 @@ fn combining_class(c: char) -> u8 {
 /// each consonant cluster are sorted into canonical (combining-class) order so
 /// order variants in the source collapse too. The result is still readable
 /// pointed Hebrew and serves as the stored display form.
-pub(crate) fn normalize_surface(token: &str) -> String {
+pub fn normalize_surface(token: &str) -> String {
     let kept: Vec<char> = token
         .chars()
         .filter(|&c| {

@@ -33,8 +33,145 @@ use log::info;
 use quick_xml::Reader;
 use quick_xml::events::Event;
 use rusqlite::Connection;
+use serde_json::{Map, Value, json};
 
 use crate::morphology::{NounStem, Root};
+
+/// Map a BDB scripture-reference book code (the `r="Lev.19.28"` attribute) to
+/// the full English book name the app's BDB cross-reference handler expects
+/// (`Genesis`, `I Samuel`, `Song of Songs`, …). Covers the 39 OT books plus a
+/// few spelling variants that occur in the source; unknown codes yield `None`
+/// (the reference still renders as text, just not tappable).
+fn osis_book(code: &str) -> Option<&'static str> {
+    Some(match code {
+        "Gen" => "Genesis",
+        "Exod" | "Ex" => "Exodus",
+        "Lev" => "Leviticus",
+        "Num" => "Numbers",
+        "Deut" => "Deuteronomy",
+        "Josh" | "Jos" => "Joshua",
+        "Judg" | "Jugd" => "Judges",
+        "Ruth" => "Ruth",
+        "1Sam" => "I Samuel",
+        "2Sam" => "II Samuel",
+        "1Kgs" | "iKgs" => "I Kings",
+        "2Kgs" => "II Kings",
+        "Isa" | "Is" => "Isaiah",
+        "Jer" => "Jeremiah",
+        "Ezek" | "Ez" => "Ezekiel",
+        "Hos" | "Ho" | "Hosea" => "Hosea",
+        "Joel" => "Joel",
+        "Amos" => "Amos",
+        "Obad" => "Obadiah",
+        "Jonah" => "Jonah",
+        "Mic" => "Micah",
+        "Nah" => "Nahum",
+        "Hab" => "Habakkuk",
+        "Zeph" | "Zp" => "Zephaniah",
+        "Hag" => "Haggai",
+        "Zech" | "Zec" => "Zechariah",
+        "Mal" => "Malachi",
+        "Ps" => "Psalms",
+        "Prov" => "Proverbs",
+        "Job" | "Jb" => "Job",
+        "Song" => "Song of Songs",
+        "Lam" => "Lamentations",
+        "Eccl" => "Ecclesiastes",
+        "Esth" => "Esther",
+        "Dan" => "Daniel",
+        "Ezra" => "Ezra",
+        "Neh" => "Nehemiah",
+        "1Chr" => "I Chronicles",
+        "2Chr" => "II Chronicles",
+        _ => return None,
+    })
+}
+
+/// Convert a BDB `r` reference attribute (`Lev.19.28`) into the `Book C:V` href
+/// the app parses (`Leviticus 19:28`). Returns `None` when the book code is
+/// unknown or the shape isn't `Book.Chapter.Verse`.
+fn ref_href(r: &str) -> Option<String> {
+    let mut parts = r.split('.');
+    let book = osis_book(parts.next()?)?;
+    let chapter = parts.next()?;
+    let verse = parts.next()?;
+    if parts.next().is_some() {
+        return None;
+    }
+    if chapter.parse::<u32>().is_err() || verse.parse::<u32>().is_err() {
+        return None;
+    }
+    Some(format!("{book} {chapter}:{verse}"))
+}
+
+/// One styled run of text in a BDB definition, mirroring the span objects the
+/// app's `_BdbContent` widget renders: `t` (text) plus optional `b`/`i`/`s`/
+/// `rtl` style flags and an `href` cross-reference target.
+#[derive(Clone, Copy, Default)]
+struct Style {
+    b: bool,
+    i: bool,
+    s: bool,
+    rtl: bool,
+}
+
+fn span(text: &str, style: Style, href: Option<&str>) -> Option<Value> {
+    if text.is_empty() {
+        return None;
+    }
+    let mut m = Map::new();
+    m.insert("t".into(), json!(text));
+    if style.b {
+        m.insert("b".into(), json!(true));
+    }
+    if style.i {
+        m.insert("i".into(), json!(true));
+    }
+    if style.s {
+        m.insert("s".into(), json!(true));
+    }
+    if style.rtl {
+        m.insert("rtl".into(), json!(true));
+    }
+    if let Some(h) = href {
+        m.insert("href".into(), json!(h));
+    }
+    Some(Value::Object(m))
+}
+
+/// A node in a BDB entry's sense tree: an optional `num` (sense number), an
+/// optional `form` (the `<stem>`, e.g. `Qal`/`Niph`), its definition spans, and
+/// any nested sub-senses.
+#[derive(Default)]
+struct Sense {
+    num: Option<String>,
+    form: String,
+    definition: Vec<Value>,
+    senses: Vec<Sense>,
+}
+
+impl Sense {
+    fn to_json(&self) -> Value {
+        let mut m = Map::new();
+        if let Some(n) = &self.num {
+            m.insert("num".into(), json!(n));
+        }
+        let form = self.form.trim();
+        if !form.is_empty() {
+            m.insert("form".into(), json!(form));
+        }
+        if !self.definition.is_empty() {
+            m.insert("definition".into(), Value::Array(self.definition.clone()));
+        }
+        if !self.senses.is_empty() {
+            m.insert(
+                "senses".into(),
+                Value::Array(self.senses.iter().map(Sense::to_json).collect()),
+            );
+        }
+        Value::Object(m)
+    }
+}
 
 /// Which prose section text is currently being accumulated into.
 #[derive(Clone, Copy, PartialEq)]
@@ -202,22 +339,52 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
     Ok(rows)
 }
 
-#[derive(Default)]
-struct BdbEntry {
-    bdb_id: String,
-    word: String,
-    pos: String,
-    gloss_parts: Vec<String>,
-    definition: String,
-    status: String,
+/// Parse BrownDriverBriggs.xml into the `bdb` table, preserving the sense tree
+/// as structured `content_json` and keying every entry to its triliteral root.
+/// Returns rows written.
+///
+/// BDB groups its entries into `<section>`s, each headed by a `type="root"`
+/// entry whose headword fixes the root for that section; the derivative entries
+/// that follow (nouns, adjectives, …) inherit it. We reduce the root entry's
+/// headword to a triliteral via [`Root::parse`] — the same normalisation the
+/// reverse parser and `roots` table use — so a stored root joins directly onto
+/// `hebrew.db`'s `analyses.root`.
+///
+/// Each entry's prose becomes a `content_json` of the form
+/// `{"senses":[{num?,form?,definition:[{t,b?,i?,s?,rtl?,href?}],senses?}]}`,
+/// matching the span schema the app's `_BdbContent` widget renders: `<def>`
+/// becomes a bold span, `<ref>` an href span (book code mapped to the app's
+/// `Book C:V` form), `<w>`/`<foreign>` an RTL/italic span, and `<stem>` the
+/// sense's `form`. The leading headword gloss is also kept flat in `gloss`.
+/// Consonant skeleton of a pointed Hebrew word: niqqud and any non-letter marks
+/// stripped, final-form letters folded to their medial base. Used as the noun
+/// bridge — `hebrew.db` noun stems carry final forms and vowels, so matching a
+/// stem to its BDB lexeme (and thence its root) needs both sides reduced to bare
+/// medial consonants.
+fn consonants(word: &str) -> String {
+    word.chars()
+        .filter_map(|c| {
+            let n = c as u32;
+            if !(0x05D0..=0x05EA).contains(&n) {
+                return None;
+            }
+            Some(match c {
+                '\u{05DA}' => '\u{05DB}',
+                '\u{05DD}' => '\u{05DE}',
+                '\u{05DF}' => '\u{05E0}',
+                '\u{05E3}' => '\u{05E4}',
+                '\u{05E5}' => '\u{05E6}',
+                other => other,
+            })
+        })
+        .collect()
 }
 
-/// Parse BrownDriverBriggs.xml into the `bdb` table. Returns rows written.
 fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
     db.execute(
         "CREATE TABLE bdb(\
-            bdb_id TEXT PRIMARY KEY, word TEXT, pos TEXT, \
-            gloss TEXT, definition TEXT, status TEXT)",
+            bdb_id TEXT PRIMARY KEY, root TEXT NOT NULL, word TEXT, cons TEXT, pos TEXT, \
+            gloss TEXT, content_json TEXT, status TEXT)",
         [],
     )?;
 
@@ -225,96 +392,203 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
         Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
     let mut buf = Vec::new();
 
-    let mut entry: Option<BdbEntry> = None;
+    // Per-entry parse state.
+    let mut bdb_id = String::new();
+    let mut is_root_entry = false;
+    let mut word = String::new();
+    let mut pos = String::new();
+    let mut status = String::new();
+    // Sense stack: index 0 is the entry's intro (headword pos/def), deeper
+    // indices are nested <sense> elements currently open.
+    let mut stack: Vec<Sense> = Vec::new();
+    let mut gloss_parts: Vec<String> = Vec::new();
+
+    // Inline styling + routing flags.
     let mut headword_done = false;
     let mut in_headword = false;
-    let mut in_pos = false;
-    let mut in_def = false;
+    let mut in_stem = false;
     let mut in_status = false;
-    let mut def_buf = String::new();
+    let mut in_pos = false;
+    let mut style = Style::default();
+    let mut href: Option<String> = None;
+
+    // Root inherited across a section from its `type="root"` entry.
+    let mut current_root = String::new();
 
     let tx = db.transaction()?;
     let mut rows = 0;
     {
-        let mut stmt = tx.prepare("INSERT OR REPLACE INTO bdb VALUES (?1, ?2, ?3, ?4, ?5, ?6)")?;
+        let mut stmt = tx
+            .prepare("INSERT OR REPLACE INTO bdb VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)")?;
         loop {
             match reader.read_event_into(&mut buf)? {
                 Event::Start(e) => match e.name().as_ref() {
+                    b"section" => current_root.clear(),
                     b"entry" => {
-                        let mut ent = BdbEntry::default();
-                        if let Some(a) = e.try_get_attribute("id")? {
-                            ent.bdb_id =
-                                a.decode_and_unescape_value(reader.decoder())?.into_owned();
-                        }
-                        entry = Some(ent);
+                        bdb_id = e
+                            .try_get_attribute("id")?
+                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .transpose()?
+                            .map(|v| v.into_owned())
+                            .unwrap_or_default();
+                        is_root_entry = e
+                            .try_get_attribute("type")?
+                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .transpose()?
+                            .map(|v| v == "root")
+                            .unwrap_or(false);
+                        word.clear();
+                        pos.clear();
+                        status.clear();
+                        gloss_parts.clear();
+                        stack = vec![Sense::default()];
                         headword_done = false;
+                        in_headword = false;
+                        in_stem = false;
+                        in_status = false;
+                        in_pos = false;
+                        style = Style::default();
+                        href = None;
                     }
-                    // The headword is the first <w> in the entry; later <w
-                    // src="…"> are cross-references whose text stays in the prose.
-                    b"w" if entry.is_some() && !headword_done => {
+                    // First <w> is the headword; later <w src="…"> are inline
+                    // cross-references rendered as RTL Hebrew spans.
+                    b"w" if !stack.is_empty() && !headword_done => {
                         in_headword = true;
                         headword_done = true;
                     }
-                    b"pos" => in_pos = true,
-                    b"def" => {
-                        in_def = true;
-                        def_buf.clear();
-                    }
+                    b"w" => style.rtl = true,
                     b"sense" => {
-                        // Preserve the sense number inline in the flat article.
-                        if let Some(ent) = entry.as_mut()
-                            && let Some(a) = e.try_get_attribute("n")?
-                        {
-                            let n = a.decode_and_unescape_value(reader.decoder())?;
-                            ent.definition.push_str(&format!(" ({n}) "));
-                        }
+                        let num = e
+                            .try_get_attribute("n")?
+                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .transpose()?
+                            .map(|v| v.into_owned());
+                        stack.push(Sense {
+                            num,
+                            ..Sense::default()
+                        });
+                    }
+                    b"stem" => in_stem = true,
+                    b"def" => style.b = true,
+                    b"pos" => {
+                        style.i = true;
+                        in_pos = true;
+                    }
+                    b"foreign" => style.i = true,
+                    b"ref" => {
+                        href = e
+                            .try_get_attribute("r")?
+                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .transpose()?
+                            .and_then(|r| ref_href(&r));
                     }
                     b"status" => in_status = true,
                     _ => {}
                 },
                 Event::Text(t) => {
-                    if let Some(ent) = entry.as_mut() {
-                        let txt = t.unescape()?;
-                        if in_headword {
-                            ent.word.push_str(&txt);
-                        } else if in_status {
-                            ent.status.push_str(&txt);
-                        } else {
+                    let txt = t.unescape()?;
+                    if in_headword {
+                        word.push_str(&txt);
+                    } else if in_stem {
+                        if let Some(top) = stack.last_mut() {
+                            top.form.push_str(&txt);
+                        }
+                    } else if in_status {
+                        status.push_str(&txt);
+                    } else {
+                        let is_top = stack.len() == 1;
+                        if let Some(top) = stack.last_mut() {
                             if in_pos {
-                                ent.pos.push_str(&txt);
+                                pos.push_str(txt.trim());
                             }
-                            ent.definition.push_str(&txt);
-                            if in_def {
-                                def_buf.push_str(&txt);
+                            // Headword-level <def> text is the entry's gloss.
+                            if style.b && is_top {
+                                let g = tidy(&txt);
+                                if !g.is_empty() {
+                                    gloss_parts.push(g);
+                                }
+                            }
+                            if let Some(sp) = span(&txt, style, href.as_deref()) {
+                                top.definition.push(sp);
                             }
                         }
                     }
                 }
                 Event::End(e) => match e.name().as_ref() {
-                    b"w" => in_headword = false,
-                    b"pos" => in_pos = false,
-                    b"def" => {
-                        if let Some(ent) = entry.as_mut() {
-                            let g = tidy(&def_buf);
-                            if !g.is_empty() {
-                                ent.gloss_parts.push(g);
-                            }
+                    b"w" => {
+                        if in_headword {
+                            in_headword = false;
+                        } else {
+                            style.rtl = false;
                         }
-                        in_def = false;
                     }
+                    b"stem" => in_stem = false,
+                    b"def" => style.b = false,
+                    b"pos" => {
+                        style.i = false;
+                        in_pos = false;
+                    }
+                    b"foreign" => style.i = false,
+                    b"ref" => href = None,
                     b"status" => in_status = false,
-                    b"entry" => {
-                        if let Some(ent) = entry.take() {
-                            stmt.execute((
-                                ent.bdb_id,
-                                tidy(&ent.word),
-                                tidy(&ent.pos),
-                                ent.gloss_parts.join("; "),
-                                tidy(&ent.definition),
-                                tidy(&ent.status),
-                            ))?;
-                            rows += 1;
+                    b"sense" => {
+                        if stack.len() > 1 {
+                            let done = stack.pop().unwrap();
+                            stack.last_mut().unwrap().senses.push(done);
                         }
+                    }
+                    b"entry" => {
+                        let intro = stack.pop().unwrap_or_default();
+                        stack.clear();
+
+                        // The intro's own definition spans (headword pos/def)
+                        // become a leading sense; its collected <sense> children
+                        // follow.
+                        let mut senses: Vec<Value> = Vec::new();
+                        if !intro.definition.is_empty() {
+                            senses.push(
+                                Sense {
+                                    definition: intro.definition.clone(),
+                                    ..Sense::default()
+                                }
+                                .to_json(),
+                            );
+                        }
+                        senses.extend(intro.senses.iter().map(Sense::to_json));
+                        let content_json = Value::Object({
+                            let mut m = Map::new();
+                            m.insert("senses".into(), Value::Array(senses));
+                            m
+                        })
+                        .to_string();
+
+                        let word = tidy(&word);
+                        if is_root_entry
+                            && let Ok(r) = Root::parse(&word)
+                        {
+                            current_root = r.letters.iter().collect();
+                        }
+                        // Derivatives inherit the section root; if it is still
+                        // unknown, fall back to parsing this headword.
+                        let root = if !current_root.is_empty() {
+                            current_root.clone()
+                        } else {
+                            Root::parse(&word)
+                                .map(|r| r.letters.iter().collect())
+                                .unwrap_or_default()
+                        };
+
+                        stmt.execute((
+                            &bdb_id,
+                            &root,
+                            &word,
+                            consonants(&word),
+                            tidy(&pos),
+                            gloss_parts.join("; "),
+                            &content_json,
+                            tidy(&status),
+                        ))?;
+                        rows += 1;
                     }
                     _ => {}
                 },
@@ -325,6 +599,9 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
         }
     }
     tx.commit()?;
+
+    db.execute("CREATE INDEX idx_bdb_root ON bdb(root)", [])?;
+    db.execute("CREATE INDEX idx_bdb_cons ON bdb(cons)", [])?;
     Ok(rows)
 }
 

@@ -1,6 +1,6 @@
 // Bible resource
 
-use rusqlite::{Connection, MAIN_DB};
+use rusqlite::{Connection, MAIN_DB, OptionalExtension};
 use rust_embed::Embed;
 use std::collections::HashMap;
 
@@ -26,6 +26,33 @@ pub struct BdbEntry {
     pub root: String,
     pub gloss: String,
     pub content_json: String,
+}
+
+/// The analysis chosen to describe one OT (Hebrew Bible) surface form, drawn
+/// from the `hebrewdb` reverse-parse engine output and bridged to BDB glosses
+/// via the consonantal root. Verb readings carry binyan/tense/person-gender-
+/// number; noun readings carry gender/number/state. `root` is the consonantal
+/// root used to pull the glossed root tree from `lexdb.bdb`.
+#[derive(Debug, Default)]
+pub struct HebrewWord {
+    /// Normalised pointed surface form (matches `hebrewdb.surface.text`).
+    pub word: String,
+    /// Consonantal root bridging to `lexdb.bdb.root`. Empty if unresolved.
+    pub root: String,
+    /// First BDB gloss for the looked-up lexeme/root.
+    pub gloss: String,
+    /// Binyan (Qal, Niphal, …) for verbs; `None` for nouns.
+    pub form: Option<String>,
+    /// Tense/aspect (Perfect, Imperfect, Imperative, …) for verbs.
+    pub tense: Option<String>,
+    pub person: Option<String>,
+    pub gender: Option<String>,
+    pub number: Option<String>,
+    /// Noun state (Absolute, Construct, …) or irregular label.
+    pub state: Option<String>,
+    /// Attached prefix cluster (article/preposition/vav), as pointed Hebrew.
+    pub prefix: Option<String>,
+    pub vav_con: bool,
 }
 
 #[derive(Debug)]
@@ -223,6 +250,44 @@ fn decode_suffix(person: i64, gender: i64, number: i64) -> Option<String> {
     Some(format!("{p}{g}{n} suffix"))
 }
 
+/// Decode a verb PGN tag (e.g. `3ms`, `2fp`, empty for infinitives) into the
+/// person, gender and number chip labels. Each component is independent so
+/// participles (`ms`, no person) and infinitives (empty) decode cleanly.
+fn decode_pgn(pgn: &str) -> (Option<String>, Option<String>, Option<String>) {
+    let mut person = None;
+    let mut gender = None;
+    let mut number = None;
+    for c in pgn.chars() {
+        match c {
+            '1' => person = Some("First".to_string()),
+            '2' => person = Some("Second".to_string()),
+            '3' => person = Some("Third".to_string()),
+            'm' => gender = Some("Masculine".to_string()),
+            'f' => gender = Some("Feminine".to_string()),
+            'c' => gender = Some("Common".to_string()),
+            's' => number = Some("Singular".to_string()),
+            'p' => number = Some("Plural".to_string()),
+            'd' => number = Some("Dual".to_string()),
+            _ => {}
+        }
+    }
+    (person, gender, number)
+}
+
+/// Split a noun label (e.g. `Singular Absolute`, `Plural Construct`,
+/// `Irregular (God)`) into a number and a state. Irregular/atypical labels with
+/// no leading number word are passed through whole as the state.
+fn decode_noun_label(label: &str) -> (Option<String>, Option<String>) {
+    if let Some((num, rest)) = label.split_once(' ')
+        && matches!(num, "Singular" | "Plural" | "Dual")
+    {
+        let state = (!rest.is_empty()).then(|| rest.to_string());
+        return (Some(num.to_string()), state);
+    }
+    let state = (!label.is_empty()).then(|| label.to_string());
+    (None, state)
+}
+
 #[derive(Debug)]
 pub struct WordOccurrence {
     pub book: u8,
@@ -284,6 +349,28 @@ fn display(s: String) -> String {
     crate::transliterate::hebrew_display(&s)
 }
 
+/// Consonant skeleton of a pointed Hebrew word: niqqud stripped, final forms
+/// folded to medial. Mirrors `lexicon_db::consonants` so a `hebrew.db` noun stem
+/// can be matched to its BDB lexeme via the indexed `bdb.cons` column.
+fn fold_consonants(word: &str) -> String {
+    word.chars()
+        .filter_map(|c| {
+            let n = c as u32;
+            if !(0x05D0..=0x05EA).contains(&n) {
+                return None;
+            }
+            Some(match c {
+                '\u{05DA}' => '\u{05DB}',
+                '\u{05DD}' => '\u{05DE}',
+                '\u{05DF}' => '\u{05E0}',
+                '\u{05E3}' => '\u{05E4}',
+                '\u{05E5}' => '\u{05E6}',
+                other => other,
+            })
+        })
+        .collect()
+}
+
 fn strip_cantillation(word: &str) -> String {
     word.chars()
         .filter(|&c| {
@@ -332,6 +419,25 @@ impl Default for Bible {
         let sedra_db = Asset::get("sedra.db").unwrap();
         let sedra_data = Box::new(sedra_db.data.into_owned());
         db.deserialize_bytes(c"sedradb", Box::leak(sedra_data))
+            .unwrap();
+
+        // Rust reverse-parse engine output for the OT (Hebrew Bible): distinct
+        // surface forms, candidate verb/noun analyses, roots and occurrences.
+        db.execute_batch("ATTACH DATABASE ':memory:' AS hebrewdb")
+            .unwrap();
+        let hebrew_db = Asset::get("hebrew.db").unwrap();
+        let hebrew_data = Box::new(hebrew_db.data.into_owned());
+        db.deserialize_bytes(c"hebrewdb", Box::leak(hebrew_data))
+            .unwrap();
+
+        // OpenScriptures HebrewLexicon (Strong's + BrownDriverBriggs), attached
+        // as `lexdb`. The `bdb` table is root-keyed so it joins to `hebrewdb`
+        // analyses to give glossed root trees with structured definitions.
+        db.execute_batch("ATTACH DATABASE ':memory:' AS lexdb")
+            .unwrap();
+        let lexicon_db = Asset::get("lexicon.db").unwrap();
+        let lexicon_data = Box::new(lexicon_db.data.into_owned());
+        db.deserialize_bytes(c"lexdb", Box::leak(lexicon_data))
             .unwrap();
 
         Bible { db }
@@ -416,6 +522,253 @@ impl Bible {
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         Ok(entries)
+    }
+
+    /// Reverse-parse a single OT surface form via `hebrewdb`, choosing the most
+    /// plausible analysis and bridging it to a BDB gloss through the consonantal
+    /// root. The input is normalised with the same [`crate::generate::
+    /// normalize_surface`] the parse engine used, so callers may pass raw
+    /// pointed/cantillated text. Returns `None` when no surface matches or the
+    /// surface carries no verb or noun analysis.
+    ///
+    /// Disambiguation: among the candidate verb analyses, one whose root has a
+    /// BDB entry is strongly preferred (over-generated spurious roots have no
+    /// lexicon entry), then attestation, then candidate order. A verb reading is
+    /// chosen over a noun reading only when its root resolves in BDB; otherwise a
+    /// resolvable noun reading wins, falling back to whatever analysis exists.
+    pub fn hebrew_word_info(&self, word: &str) -> Option<HebrewWord> {
+        let norm = crate::generate::normalize_surface(word);
+
+        // Best verb analysis: BDB-resolvable first, then attested, then order.
+        let verb = self
+            .db
+            .query_row(
+                "SELECT a.root, a.binyan, a.form, a.pgn, a.prefix, a.vav_consecutive, \
+                        EXISTS(SELECT 1 FROM lexdb.bdb b WHERE b.root = a.root) AS has_bdb \
+                 FROM hebrewdb.analyses a \
+                 JOIN hebrewdb.surface s ON s.surface_id = a.surface_id \
+                 WHERE s.text = ?1 \
+                 ORDER BY has_bdb DESC, a.attested DESC, a.analysis_id ASC \
+                 LIMIT 1",
+                [&norm],
+                |row| {
+                    Ok((
+                        row.get::<_, String>(0)?,
+                        row.get::<_, String>(1)?,
+                        row.get::<_, String>(2)?,
+                        row.get::<_, String>(3)?,
+                        row.get::<_, String>(4)?,
+                        row.get::<_, i64>(5)? != 0,
+                        row.get::<_, i64>(6)? != 0,
+                    ))
+                },
+            )
+            .optional()
+            .ok()?;
+
+        // Candidate noun analyses, resolved to a BDB root by folding the stem to
+        // bare medial consonants and matching `bdb.cons`. The first stem that
+        // resolves wins; otherwise the first candidate is kept unresolved so the
+        // morphology still shows even without a lexicon bridge.
+        let noun_rows = {
+            let mut stmt = self
+                .db
+                .prepare(
+                    "SELECT n.kind, n.label, n.prefix, n.stem \
+                     FROM hebrewdb.noun_analyses n \
+                     JOIN hebrewdb.surface s ON s.surface_id = n.surface_id \
+                     WHERE s.text = ?1 ORDER BY n.analysis_id ASC",
+                )
+                .ok()?;
+            stmt.query_map([&norm], |row| {
+                Ok((
+                    row.get::<_, String>(0)?,
+                    row.get::<_, String>(1)?,
+                    row.get::<_, String>(2)?,
+                    row.get::<_, String>(3)?,
+                ))
+            })
+            .ok()?
+            .collect::<rusqlite::Result<Vec<_>>>()
+            .ok()?
+        };
+
+        // (kind, label, prefix, root, gloss): root/gloss empty if unresolved.
+        let noun: Option<(String, String, String, String, String)> = {
+            let mut chosen: Option<(String, String, String, String, String)> = None;
+            for (kind, label, prefix, stem) in noun_rows {
+                let resolved = self.hebrew_cons_root(&fold_consonants(&stem));
+                let resolves = resolved.is_some();
+                let (root, gloss) = resolved.unwrap_or_default();
+                if resolves {
+                    chosen = Some((kind, label, prefix, root, gloss));
+                    break;
+                }
+                chosen.get_or_insert((kind, label, prefix, root, gloss));
+            }
+            chosen
+        };
+
+        let verb_resolves = verb.as_ref().is_some_and(|v| v.6);
+        let noun_resolves = noun.as_ref().is_some_and(|n| !n.3.is_empty());
+
+        // Prefer a BDB-resolvable verb; else a resolvable noun; else whatever
+        // analysis exists (verb before noun).
+        if let Some((root, binyan, tense, pgn, prefix, vav_con, _)) = verb
+            .as_ref()
+            .filter(|_| verb_resolves || !noun_resolves)
+        {
+            let (person, gender, number) = decode_pgn(pgn);
+            let gloss = self.hebrew_root_gloss(root);
+            return Some(HebrewWord {
+                word: norm,
+                root: root.clone(),
+                gloss,
+                form: (!binyan.is_empty()).then(|| binyan.clone()),
+                tense: (!tense.is_empty()).then(|| tense.clone()),
+                person,
+                gender,
+                number,
+                state: None,
+                prefix: (!prefix.is_empty()).then(|| prefix.clone()),
+                vav_con: *vav_con,
+            });
+        }
+
+        if let Some((kind, label, prefix, root, gloss)) = noun {
+            let (number, state) = decode_noun_label(&label);
+            return Some(HebrewWord {
+                word: norm,
+                root,
+                gloss,
+                form: None,
+                tense: None,
+                person: None,
+                gender: (!kind.is_empty()).then_some(kind),
+                number,
+                state,
+                prefix: (!prefix.is_empty()).then_some(prefix),
+                vav_con: false,
+            });
+        }
+
+        None
+    }
+
+    /// Resolve a folded consonant skeleton to a BDB `(root, gloss)` via the
+    /// indexed `cons` column — the noun bridge. `None` when no lexeme matches.
+    fn hebrew_cons_root(&self, cons: &str) -> Option<(String, String)> {
+        if cons.is_empty() {
+            return None;
+        }
+        self.db
+            .query_row(
+                "SELECT root, gloss FROM lexdb.bdb WHERE cons = ?1 ORDER BY bdb_id LIMIT 1",
+                [cons],
+                |row| {
+                    Ok((
+                        row.get::<_, String>(0)?,
+                        row.get::<_, Option<String>>(1)?.unwrap_or_default(),
+                    ))
+                },
+            )
+            .optional()
+            .ok()
+            .flatten()
+    }
+
+    /// First non-empty BDB gloss for a consonantal root (the root's primary
+    /// lexeme leads the section, so this is the headline meaning).
+    fn hebrew_root_gloss(&self, root: &str) -> String {
+        self.db
+            .query_row(
+                "SELECT gloss FROM lexdb.bdb \
+                 WHERE root = ?1 AND gloss IS NOT NULL AND gloss <> '' \
+                 ORDER BY bdb_id LIMIT 1",
+                [root],
+                |row| row.get::<_, String>(0),
+            )
+            .optional()
+            .ok()
+            .flatten()
+            .unwrap_or_default()
+    }
+
+    /// The glossed root tree for an OT word: every BDB lexeme sharing the
+    /// consonantal root, each with its structured definition JSON. This is the
+    /// OT analogue of [`Bible::sedra_root_tree`].
+    pub fn hebrew_bdb_by_root(&self, root: &str) -> rusqlite::Result<Vec<BdbEntry>> {
+        if root.is_empty() {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare(
+            "SELECT word, root, gloss, content_json FROM lexdb.bdb \
+             WHERE root = ?1 ORDER BY bdb_id",
+        )?;
+        let entries = stmt
+            .query_map([root], |row| {
+                Ok(BdbEntry {
+                    headword: normalize_hebrew_combining(
+                        row.get::<_, Option<String>>(0)?.unwrap_or_default().as_str(),
+                    ),
+                    root: row.get(1)?,
+                    gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
+                    content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        Ok(entries)
+    }
+
+    /// OT verses where this exact surface form occurs.
+    pub fn hebrew_surface_occurrences(
+        &self,
+        word: &str,
+    ) -> rusqlite::Result<Vec<WordOccurrence>> {
+        let norm = crate::generate::normalize_surface(word);
+        let mut stmt = self.db.prepare(
+            "SELECT o.book, o.chapter, o.verse FROM hebrewdb.occurrences o \
+             JOIN hebrewdb.surface s ON s.surface_id = o.surface_id \
+             WHERE s.text = ?1 ORDER BY o.book, o.chapter, o.verse",
+        )?;
+        stmt.query_map([&norm], |row| {
+            Ok(WordOccurrence {
+                book: row.get(0)?,
+                chapter: row.get(1)?,
+                verse: row.get(2)?,
+            })
+        })?
+        .collect()
+    }
+
+    /// OT verses where any surface form of the given consonantal root occurs —
+    /// both verb forms (root carried directly on the analysis) and noun forms
+    /// (stem resolved to the same root via BDB).
+    pub fn hebrew_root_occurrences(
+        &self,
+        root: &str,
+    ) -> rusqlite::Result<Vec<WordOccurrence>> {
+        if root.is_empty() {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare(
+            "SELECT DISTINCT o.book, o.chapter, o.verse FROM hebrewdb.occurrences o \
+             WHERE o.surface_id IN ( \
+                 SELECT a.surface_id FROM hebrewdb.analyses a WHERE a.root = ?1 \
+                 UNION \
+                 SELECT n.surface_id FROM hebrewdb.noun_analyses n \
+                 JOIN lexdb.bdb b ON b.word = n.stem AND b.root = ?1 \
+             ) \
+             ORDER BY o.book, o.chapter, o.verse",
+        )?;
+        stmt.query_map([root], |row| {
+            Ok(WordOccurrence {
+                book: row.get(0)?,
+                chapter: row.get(1)?,
+                verse: row.get(2)?,
+            })
+        })?
+        .collect()
     }
 
     pub fn get_word_morphology_ara(&self, raw: &str) -> rusqlite::Result<AraMorphology> {
@@ -873,6 +1226,50 @@ mod tests {
             .map(|o| (o.book, o.chapter, o.verse))
             .collect();
         assert_eq!(distinct_verses.len(), root_occ.len());
+    }
+
+    #[test]
+    fn test_hebrew_word_info_verb() {
+        let bible = Bible::default();
+        // בָּרָא "created" (Gen 1:1), root ברא — a strong III-aleph verb that
+        // bridges directly to BDB.
+        let info = bible.hebrew_word_info("בָּרָא").expect("verb should parse");
+        assert_eq!(info.root, "ברא");
+        assert!(info.gloss.to_lowercase().contains("create"));
+        assert_eq!(info.tense.as_deref(), Some("Perfect"));
+        assert_eq!(info.person.as_deref(), Some("Third"));
+
+        // Root tree: glossed BDB lexemes of the root, with structured content.
+        let tree = bible.hebrew_bdb_by_root(&info.root).unwrap();
+        assert!(!tree.is_empty());
+        assert!(tree.iter().all(|e| e.root == "ברא"));
+        assert!(tree.iter().any(|e| !e.content_json.is_empty()));
+
+        // Occurrences: this form is a subset of the whole root's occurrences.
+        let form = bible.hebrew_surface_occurrences("בָּרָא").unwrap();
+        let root = bible.hebrew_root_occurrences(&info.root).unwrap();
+        assert!(!form.is_empty());
+        assert!(root.len() >= form.len());
+        assert!(root.iter().all(|o| o.book < 40));
+    }
+
+    #[test]
+    fn test_hebrew_word_info_noun() {
+        let bible = Bible::default();
+        // אֱלֹהִים "God" — a noun whose stem matches a BDB headword (root אלה).
+        let info = bible.hebrew_word_info("אֱלֹהִים").expect("noun should parse");
+        assert_eq!(info.root, "אלה");
+        assert_eq!(info.gender.as_deref(), Some("Masculine"));
+        let tree = bible.hebrew_bdb_by_root(&info.root).unwrap();
+        assert!(!tree.is_empty());
+
+        // הָאָרֶץ "the earth" — prefixed noun with a final-tsade stem (אֶרֶץ).
+        // The pointed stem misses BDB's headword spelling, so the consonant
+        // bridge (fold to medial ארצ) is what resolves it to root ארצ.
+        let earth = bible.hebrew_word_info("הָאָרֶץ").expect("noun should parse");
+        assert_eq!(earth.root, "ארצ");
+        assert!(!bible.hebrew_bdb_by_root(&earth.root).unwrap().is_empty());
+        assert!(!bible.hebrew_root_occurrences(&earth.root).unwrap().is_empty());
     }
 
     #[test]
