@@ -295,6 +295,17 @@ pub struct WordOccurrence {
     pub verse: u8,
 }
 
+/// An OT verse where some inflected form of a root occurs, tagged with the
+/// surface form found there so the UI can filter a root's occurrences by form
+/// (the OT analogue of the NT lexeme filter). One row per (verse, surface form).
+#[derive(Debug)]
+pub struct HebrewOccurrence {
+    pub book: u8,
+    pub chapter: u8,
+    pub verse: u8,
+    pub form: String,
+}
+
 /// An NT verse where some lexeme of a root occurs, tagged with which lexeme of
 /// the root tree it belongs to (`lexeme_index` aligns with the order returned
 /// by [`Bible::sedra_root_tree`]) and the distinct word forms found there.
@@ -766,6 +777,40 @@ impl Bible {
                 book: row.get(0)?,
                 chapter: row.get(1)?,
                 verse: row.get(2)?,
+            })
+        })?
+        .collect()
+    }
+
+    /// OT root occurrences tagged with the surface form found in each verse, so
+    /// the UI can filter the root's occurrences by inflected form. Same root
+    /// matching as [`Bible::hebrew_root_occurrences`], but emits one row per
+    /// (verse, surface form) instead of collapsing to distinct verses.
+    pub fn hebrew_root_occurrences_detailed(
+        &self,
+        root: &str,
+    ) -> rusqlite::Result<Vec<HebrewOccurrence>> {
+        if root.is_empty() {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare(
+            "SELECT DISTINCT o.book, o.chapter, o.verse, s.text \
+             FROM hebrewdb.occurrences o \
+             JOIN hebrewdb.surface s ON s.surface_id = o.surface_id \
+             WHERE o.surface_id IN ( \
+                 SELECT a.surface_id FROM hebrewdb.analyses a WHERE a.root = ?1 \
+                 UNION \
+                 SELECT n.surface_id FROM hebrewdb.noun_analyses n \
+                 JOIN lexdb.bdb b ON b.word = n.stem AND b.root = ?1 \
+             ) \
+             ORDER BY o.book, o.chapter, o.verse, s.text",
+        )?;
+        stmt.query_map([root], |row| {
+            Ok(HebrewOccurrence {
+                book: row.get(0)?,
+                chapter: row.get(1)?,
+                verse: row.get(2)?,
+                form: row.get(3)?,
             })
         })?
         .collect()
