@@ -148,6 +148,12 @@ enum DbCommands {
         /// Only preview the N highest-frequency missing surfaces (0 = all).
         #[arg(short = 'n', long, default_value_t = 30)]
         limit: usize,
+        /// Which subset to loop on: hebrew (default), aramaic, or all.
+        #[arg(short = 'L', long, default_value = "hebrew")]
+        language: String,
+        /// Restrict to a book or book range, e.g. "Gen" or "Gen-Deut".
+        #[arg(short = 'p', long)]
+        passage: Option<String>,
     },
     /// Prototype: reverse-parse every OT word in the `bible` table and report
     /// how much of the text the morphology generator can account for.
@@ -291,8 +297,20 @@ fn main() -> Result<()> {
                 output,
                 lexicon_db,
                 limit,
+                language,
+                passage,
             } => {
-                haqor_core::generate::preview_missing(&output, lexicon_db.as_deref(), limit)?;
+                let range = passage
+                    .as_deref()
+                    .map(haqor_core::generate::parse_passage)
+                    .transpose()?;
+                haqor_core::generate::preview_missing(
+                    &output,
+                    lexicon_db.as_deref(),
+                    limit,
+                    &language,
+                    range,
+                )?;
             }
             DbCommands::ParseOt {
                 bible_db,

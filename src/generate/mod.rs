@@ -15,7 +15,9 @@ mod sedra_db;
 mod uxlc;
 
 pub use harness::parse_eval;
-pub use hebrew_db::{generate_hebrew, normalize_surface, preview_missing};
+pub use hebrew_db::{
+    book_number, generate_hebrew, normalize_surface, parse_passage, preview_missing,
+};
 pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
 };

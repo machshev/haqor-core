@@ -38,6 +38,8 @@
 
 use std::collections::{HashMap, HashSet};
 
+use rayon::prelude::*;
+
 use super::hebrew::{self, Cons, Vowel, letter};
 use super::root::Root;
 use super::verb::{Binyan, Form, Paradigm, Pgn, generate_paradigm};
@@ -85,6 +87,42 @@ pub struct VerbMatch {
     /// The pronominal object suffix on the verb, if any (its person/gender/
     /// number). `None` when no object suffix was matched.
     pub object_suffix: Option<Pgn>,
+}
+
+/// The canonical key two rendered forms share **iff** [`forms_match`] accepts
+/// them. `forms_match`'s loosest clause is "equal after collapsing plene
+/// holam/shureq onto the preceding consonant and stripping the sin/shin dot",
+/// and its stricter clauses all imply that one, so equality of this key is
+/// exactly `forms_match`. Building a `HashMap<key, analyses>` from every
+/// generated form turns reverse parsing from per-surface generate-and-test into
+/// an O(1) lookup. Keep this in lock-step with [`forms_match`].
+pub(crate) fn canonical_key(form: &str) -> String {
+    // Two sequential passes, faithfully mirroring forms_match's collapse_holam
+    // then collapse_shureq (each re-parses the previous pass's output), then the
+    // sin/shin-dot strip — so the key is byte-identical to forms_match's loosest
+    // comparison on any input.
+    fn collapse(form: &str, shureq: bool) -> String {
+        let mut out: Vec<Cons> = Vec::new();
+        for c in hebrew::parse_pointed(form) {
+            // holam pass: a vav bearing holam; shureq pass: a vav bearing the
+            // dagesh-as-shureq point with no vowel. Matches forms_match exactly.
+            let is_mater = c.letter == letter::VAV
+                && if shureq { c.dagesh && c.vowel.is_none() } else { c.vowel == Some(Vowel::Holam) };
+            if is_mater {
+                if let Some(prev) = out.last_mut() {
+                    if prev.vowel.is_none() {
+                        prev.vowel = Some(if shureq { Vowel::Qubuts } else { Vowel::Holam });
+                        continue;
+                    }
+                }
+            }
+            out.push(c);
+        }
+        hebrew::render(&out)
+    }
+    let holam = collapse(form, false);
+    let shureq = collapse(&holam, true);
+    shureq.chars().filter(|&c| c != '\u{05C1}' && c != '\u{05C2}').collect()
 }
 
 /// Compare two rendered forms ignoring the sin/shin dot. The generator always
@@ -145,6 +183,79 @@ fn forms_match(generated: &str, target: &str) -> bool {
     g == t || strip_dot(&g) == strip_dot(&t)
 }
 
+/// Candidate stem renderings for one proclitic peeling: the bare peeled
+/// `remainder` plus the sandhi variants that restore a stem the proclitic
+/// altered (conjunction וְ+yəC / וְ+hataf, a quiesced pe-aleph hataf, and the
+/// article's forte dagesh). Shared by [`parse_word_filtered`] and
+/// [`parse_word_indexed`] so both peel identically.
+fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String> {
+    let mut targets = vec![hebrew::render(remainder)];
+    // וְ + yəC → וִyC: a sheva-bearing yod quiesces to a mater after a hiriq-vav.
+    if strip > 0
+        && seq[strip - 1].letter == letter::VAV
+        && seq[strip - 1].vowel == Some(Vowel::Hiriq)
+        && remainder
+            .first()
+            .is_some_and(|c| c.letter == letter::YOD && c.vowel.is_none())
+    {
+        let mut alt = remainder.to_vec();
+        alt[0].vowel = Some(Vowel::Sheva);
+        targets.push(hebrew::render(&alt));
+    }
+    // וְ + Cˇ(hataf) → וִ + Cˇ(sheva): a guttural's hataf reduces after a hiriq-vav.
+    if strip > 0
+        && seq[strip - 1].letter == letter::VAV
+        && seq[strip - 1].vowel == Some(Vowel::Hiriq)
+        && remainder
+            .first()
+            .is_some_and(|c| hebrew::is_guttural(c.letter) && c.vowel == Some(Vowel::Sheva))
+    {
+        for hataf in [Vowel::HatafSegol, Vowel::HatafPatah] {
+            let mut alt = remainder.to_vec();
+            alt[0].vowel = Some(hataf);
+            targets.push(hebrew::render(&alt));
+        }
+    }
+    // A proclitic onto a pe-aleph stem swallows the aleph's hataf (לֵאמֹר): restore it.
+    if strip > 0
+        && remainder
+            .first()
+            .is_some_and(|c| c.letter == letter::ALEF && c.vowel.is_none())
+    {
+        for hataf in [Vowel::HatafPatah, Vowel::HatafSegol] {
+            let mut alt = remainder.to_vec();
+            alt[0].vowel = Some(hataf);
+            targets.push(hebrew::render(&alt));
+        }
+    }
+    // The article / relative doubles the first stem consonant; strip that dagesh.
+    if strip > 0 && remainder.first().is_some_and(|c| c.dagesh) {
+        let mut alt = remainder.to_vec();
+        alt[0].dagesh = false;
+        targets.push(hebrew::render(&alt));
+    }
+    targets
+}
+
+/// Stable ordering shared by all parse entry points: attested analyses first,
+/// bare forms before object-suffixed, then by root/binyan/form/pgn/suffix.
+fn sort_matches(matches: &mut [VerbMatch]) {
+    matches.sort_by(|a, b| {
+        b.attested
+            .cmp(&a.attested)
+            .then_with(|| a.object_suffix.is_some().cmp(&b.object_suffix.is_some()))
+            .then_with(|| a.root.letters.cmp(&b.root.letters))
+            .then_with(|| (a.binyan as usize).cmp(&(b.binyan as usize)))
+            .then_with(|| (a.form as usize).cmp(&(b.form as usize)))
+            .then_with(|| a.pgn.label().cmp(&b.pgn.label()))
+            .then_with(|| {
+                a.object_suffix
+                    .map(|p| p.label())
+                    .cmp(&b.object_suffix.map(|p| p.label()))
+            })
+    });
+}
+
 /// Parse a fully-pointed word into every verb analysis that can produce it.
 pub fn parse_word(word: &str) -> Vec<VerbMatch> {
     parse_word_filtered(word, None)
@@ -170,70 +281,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         }
         let remainder = &seq[strip..];
         let prefix = hebrew::render(&seq[..strip]);
-
-        // Candidate stem renderings. Normally just the peeled remainder, but a
-        // proclitic (ל/ב/כ) prefixed to a pe-aleph stem swallows the aleph's
-        // hataf: the preposition takes the contracted vowel and the aleph
-        // quiesces vowel-less — לֵאמֹר = lē + ʔ(ă)mōr, the Qal inf. construct of
-        // אמר. Restore the aleph's hataf-patah so the bare generated form
-        // (אֲמֹר) matches. Exact-match keeps this safe: it only ever recovers
-        // the genuine contracted reading.
-        let mut targets = vec![hebrew::render(remainder)];
-        // Conjunction sandhi וְ + yəC → וִyC: before a sheva-bearing yod the
-        // conjunction takes hiriq and the yod quiesces into a mater, so a weqatal
-        // / conjoined I-yod form surfaces with a vowel-less yod (וִידַעְתֶּם) where
-        // the bare stem has yod + sheva (יְדַעְתֶּם). Restore the sheva so the stem
-        // matches. Only when the peeled proclitic was a hiriq-vav.
-        if strip > 0
-            && seq[strip - 1].letter == letter::VAV
-            && seq[strip - 1].vowel == Some(Vowel::Hiriq)
-            && remainder
-                .first()
-                .is_some_and(|c| c.letter == letter::YOD && c.vowel.is_none())
-        {
-            let mut alt = remainder.to_vec();
-            alt[0].vowel = Some(Vowel::Sheva);
-            targets.push(hebrew::render(&alt));
-        }
-        // Conjunction sandhi וְ + Cˇ(hataf) → וִ + Cˇ(sheva): before a guttural
-        // bearing a hataf vowel the conjunction takes hiriq and the hataf reduces
-        // to a plain (silent) sheva — wihyîtem (וִהְיִיתֶם) from the bare hĕyîtem
-        // (הֱיִיתֶם). Restore the hataf so the bare stem matches. Only after a
-        // peeled hiriq-vav.
-        if strip > 0
-            && seq[strip - 1].letter == letter::VAV
-            && seq[strip - 1].vowel == Some(Vowel::Hiriq)
-            && remainder
-                .first()
-                .is_some_and(|c| hebrew::is_guttural(c.letter) && c.vowel == Some(Vowel::Sheva))
-        {
-            for hataf in [Vowel::HatafSegol, Vowel::HatafPatah] {
-                let mut alt = remainder.to_vec();
-                alt[0].vowel = Some(hataf);
-                targets.push(hebrew::render(&alt));
-            }
-        }
-        if strip > 0
-            && remainder
-                .first()
-                .is_some_and(|c| c.letter == letter::ALEF && c.vowel.is_none())
-        {
-            for hataf in [Vowel::HatafPatah, Vowel::HatafSegol] {
-                let mut alt = remainder.to_vec();
-                alt[0].vowel = Some(hataf);
-                targets.push(hebrew::render(&alt));
-            }
-        }
-        // The article (and the relative ש) double the first stem consonant with
-        // a forte dagesh — הַיֹּשְׁבִים = ha + (y)yōšḇîm. The generated bare stem
-        // carries no such dagesh, so strip it from the first consonant to expose
-        // the underlying form. Only attempted when a proclitic was peeled, and
-        // exact-match still governs, so this only recovers genuine readings.
-        if strip > 0 && remainder.first().is_some_and(|c| c.dagesh) {
-            let mut alt = remainder.to_vec();
-            alt[0].dagesh = false;
-            targets.push(hebrew::render(&alt));
-        }
+        let targets = peeling_targets(&seq, strip, remainder);
 
         for letters in candidate_roots(remainder, roots) {
             let paradigm = memo
@@ -314,23 +362,160 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         }
     }
 
-    // Attested (fully-modelled) analyses first, then a stable ordering.
-    matches.sort_by(|a, b| {
-        b.attested
-            .cmp(&a.attested)
-            // Bare forms before object-suffixed ones, so a first-match lookup
-            // prefers the simpler analysis.
-            .then_with(|| a.object_suffix.is_some().cmp(&b.object_suffix.is_some()))
-            .then_with(|| a.root.letters.cmp(&b.root.letters))
-            .then_with(|| (a.binyan as usize).cmp(&(b.binyan as usize)))
-            .then_with(|| (a.form as usize).cmp(&(b.form as usize)))
-            .then_with(|| a.pgn.label().cmp(&b.pgn.label()))
-            .then_with(|| {
-                a.object_suffix
-                    .map(|p| p.label())
-                    .cmp(&b.object_suffix.map(|p| p.label()))
+    sort_matches(&mut matches);
+    matches
+}
+
+/// One analysis in the reverse index — the surface-independent part of a
+/// [`VerbMatch`] (everything but the peeled prefix and vav-consecutive flag,
+/// which are decided at lookup time).
+#[derive(Clone)]
+struct IndexEntry {
+    letters: [char; 3],
+    binyan: Binyan,
+    form: Form,
+    pgn: Pgn,
+    object_suffix: Option<Pgn>,
+    attested: bool,
+}
+
+/// The 22 base Hebrew consonants (no final forms) — the radical alphabet.
+const HEBREW_CONSONANTS: [char; 22] = [
+    letter::ALEF, letter::BET, letter::GIMEL, letter::DALET, letter::HE, letter::VAV,
+    letter::ZAYIN, letter::HET, letter::TET, letter::YOD, letter::KAF, letter::LAMED,
+    letter::MEM, letter::NUN, letter::SAMEKH, letter::AYIN, letter::PE, letter::TSADE,
+    letter::QOF, letter::RESH, letter::SHIN, letter::TAV,
+];
+
+/// A reverse lookup index mapping each generated form's [`canonical_key`] to the
+/// analyses that produce it. Built once over every triliteral root, it turns
+/// reverse parsing from per-surface generate-and-test (O(surfaces × roots ×
+/// paradigm)) into O(surfaces) hash lookups. Use [`parse_word_indexed`] to query.
+pub struct ReverseIndex {
+    map: HashMap<String, Vec<IndexEntry>>,
+}
+
+impl ReverseIndex {
+    /// Generate the paradigm of every one of the 22³ triliteral roots and index
+    /// every form by its canonical key. The all-roots space is a superset of any
+    /// surface's candidate roots, and a non-matching root simply contributes keys
+    /// no surface hits — so lookups return exactly what [`parse_word`] would find.
+    pub fn build() -> Self {
+        let mut roots: Vec<[char; 3]> = Vec::with_capacity(22 * 22 * 22);
+        for &a in &HEBREW_CONSONANTS {
+            for &b in &HEBREW_CONSONANTS {
+                for &c in &HEBREW_CONSONANTS {
+                    roots.push([a, b, c]);
+                }
+            }
+        }
+        let per_root: Vec<Vec<(String, IndexEntry)>> = roots
+            .par_iter()
+            .map(|&letters| {
+                let para = generate_paradigm(&Root::from_letters(letters));
+                para.forms
+                    .iter()
+                    .map(|vf| {
+                        (
+                            canonical_key(&vf.text),
+                            IndexEntry {
+                                letters,
+                                binyan: vf.binyan,
+                                form: vf.form,
+                                pgn: vf.pgn,
+                                object_suffix: vf.object_suffix,
+                                attested: vf.attested,
+                            },
+                        )
+                    })
+                    .collect()
             })
-    });
+            .collect();
+        let mut map: HashMap<String, Vec<IndexEntry>> = HashMap::new();
+        for entry in per_root.into_iter().flatten() {
+            map.entry(entry.0).or_default().push(entry.1);
+        }
+        ReverseIndex { map }
+    }
+
+    fn get(&self, key: &str) -> &[IndexEntry] {
+        self.map.get(key).map(Vec::as_slice).unwrap_or(&[])
+    }
+}
+
+/// Index-backed twin of [`parse_word_filtered`]: identical proclitic peeling,
+/// sandhi target variants, wayyiqtol handling, dedup and ordering, but each
+/// candidate-root enumeration + paradigm match is replaced by a hash lookup of
+/// the target's [`canonical_key`]. With the same `roots` filter it returns the
+/// same analyses as `parse_word_filtered`, far faster in bulk.
+pub fn parse_word_indexed(
+    word: &str,
+    index: &ReverseIndex,
+    roots: Option<&HashSet<[char; 3]>>,
+) -> Vec<VerbMatch> {
+    let seq = hebrew::parse_pointed(word);
+    let mut matches = Vec::new();
+    let mut seen = std::collections::HashSet::new();
+    let in_filter = |letters: &[char; 3]| roots.is_none_or(|set| set.contains(letters));
+
+    let max_strip = 2usize.min(seq.len().saturating_sub(2));
+    for strip in 0..=max_strip {
+        if seq[..strip].iter().any(|c| !PROCLITICS.contains(&c.letter)) {
+            continue;
+        }
+        let remainder = &seq[strip..];
+        let prefix = hebrew::render(&seq[..strip]);
+        let targets = peeling_targets(&seq, strip, remainder);
+
+        for t in &targets {
+            for e in index.get(&canonical_key(t)) {
+                // Wayyiqtol is handled by the dedicated pass below.
+                if e.form == Form::Wayyiqtol || !in_filter(&e.letters) {
+                    continue;
+                }
+                if seen.insert((e.letters, e.binyan, e.form, e.pgn, e.object_suffix, strip, false)) {
+                    matches.push(VerbMatch {
+                        root: Root::from_letters(e.letters),
+                        binyan: e.binyan,
+                        form: e.form,
+                        pgn: e.pgn,
+                        attested: e.attested,
+                        prefix: prefix.clone(),
+                        vav_consecutive: false,
+                        object_suffix: e.object_suffix,
+                    });
+                }
+            }
+        }
+    }
+
+    // Wayyiqtol: the generator emits the וַ + forte dagesh in the form itself, so
+    // the whole word's key hits the Wayyiqtol entries directly.
+    if seq.first().is_some_and(|c| {
+        c.letter == letter::VAV && matches!(c.vowel, Some(Vowel::Patah | Vowel::Qamats))
+    }) && seq.len() >= 3
+    {
+        let key = canonical_key(&hebrew::render(&seq));
+        for e in index.get(&key) {
+            if e.form != Form::Wayyiqtol || !in_filter(&e.letters) {
+                continue;
+            }
+            if seen.insert((e.letters, e.binyan, e.form, e.pgn, e.object_suffix, 0, true)) {
+                matches.push(VerbMatch {
+                    root: Root::from_letters(e.letters),
+                    binyan: e.binyan,
+                    form: e.form,
+                    pgn: e.pgn,
+                    attested: e.attested,
+                    prefix: String::new(),
+                    vav_consecutive: true,
+                    object_suffix: e.object_suffix,
+                });
+            }
+        }
+    }
+
+    sort_matches(&mut matches);
     matches
 }
 
@@ -673,6 +858,37 @@ mod tests {
                 && m.form == Form::Imperfect
                 && m.object_suffix.map(|p| p.label()).as_deref() == Some("2ms")
         }));
+    }
+
+    #[test]
+    fn indexed_matches_per_surface() {
+        // The reverse index must return exactly what parse_word does. Compare the
+        // sorted (root, binyan, form, pgn, suffix, prefix, vav) tuples on a varied
+        // sample spanning strong, weak, prefixed, suffixed and wayyiqtol forms.
+        let index = ReverseIndex::build();
+        let sample = [
+            "קָטַל", "שָׁמַר", "וְשָׁמַר", "יִשְׁמֹר", "וַיִּשְׁמֹר", "הִקְטִיל", "נִשְׁמַר",
+            "עָשָׂה", "יַעֲשֶׂה", "וַיַּעַשׂ", "לֵאמֹר", "שְׁלָחַנִי", "יְבָרֶכְךָ",
+            "וַיִּתְּנֵם", "בְּמָלְכוֹ", "הוֹלִידוֹ", "מֶלֶךְ", "וַיָּקָם", "יֵלֵכוּ",
+        ];
+        let key = |m: &VerbMatch| {
+            (
+                m.root.letters,
+                m.binyan as usize,
+                m.form as usize,
+                m.pgn.label(),
+                m.object_suffix.map(|p| p.label()),
+                m.prefix.clone(),
+                m.vav_consecutive,
+            )
+        };
+        for w in sample {
+            let mut a: Vec<_> = parse_word(w).iter().map(key).collect();
+            let mut b: Vec<_> = parse_word_indexed(w, &index, None).iter().map(key).collect();
+            a.sort();
+            b.sort();
+            assert_eq!(a, b, "index/per-surface mismatch for {w}");
+        }
     }
 
     #[test]

@@ -31,7 +31,10 @@ pub mod verb;
 pub use irregular_noun::{IRREGULAR_NOUNS, IrregularNoun};
 pub use noun::{NounInflection, NounStem, NounStemKind, inflect_noun};
 pub use noun_parse::{NounInventory, NounMatch, parse_noun_word};
-pub use parse::{VerbMatch, parse_word, parse_word_disambiguated, parse_word_filtered};
+pub use parse::{
+    ReverseIndex, VerbMatch, parse_word, parse_word_disambiguated, parse_word_filtered,
+    parse_word_indexed,
+};
 pub use root::{Gizra, Root, RootError};
 pub use verb::{Binyan, Form, Paradigm, Pgn, VerbForm, generate_paradigm};
 

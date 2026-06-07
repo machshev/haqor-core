@@ -44,7 +44,7 @@ use log::info;
 use rayon::prelude::*;
 use rusqlite::Connection;
 
-use crate::morphology::{NounInventory, NounMatch, VerbMatch, parse_word};
+use crate::morphology::{NounInventory, NounMatch, ReverseIndex, VerbMatch, parse_word_indexed};
 
 use super::lexicon_db::{load_noun_inventory, load_proper_inventory};
 use super::prefilter::Prefilter;
@@ -57,6 +57,75 @@ const GENESIS: u8 = 1;
 const JEREMIAH: u8 = 13;
 const DANIEL: u8 = 35;
 const EZRA: u8 = 36;
+
+/// Map a book name or common abbreviation (case-insensitive), or a bare number
+/// string, to its Haqor (Tanakh-order) book number 1..=39.
+pub fn book_number(token: &str) -> Option<u8> {
+    let t = token.trim().to_ascii_lowercase();
+    if let Ok(n) = t.parse::<u8>() {
+        return (1..=39).contains(&n).then_some(n);
+    }
+    const BOOKS: &[(u8, &[&str])] = &[
+        (1, &["gen", "genesis"]),
+        (2, &["exod", "ex", "exodus"]),
+        (3, &["lev", "leviticus"]),
+        (4, &["num", "numbers"]),
+        (5, &["deut", "deuteronomy"]),
+        (6, &["josh", "jos", "joshua"]),
+        (7, &["judg", "judges"]),
+        (8, &["1sam", "1samuel"]),
+        (9, &["2sam", "2samuel"]),
+        (10, &["1kgs", "1kings"]),
+        (11, &["2kgs", "2kings"]),
+        (12, &["isa", "is", "isaiah"]),
+        (13, &["jer", "jeremiah"]),
+        (14, &["ezek", "ez", "ezekiel"]),
+        (15, &["hos", "hosea"]),
+        (16, &["joel"]),
+        (17, &["amos"]),
+        (18, &["obad", "obadiah"]),
+        (19, &["jonah", "jon"]),
+        (20, &["mic", "micah"]),
+        (21, &["nah", "nahum"]),
+        (22, &["hab", "habakkuk"]),
+        (23, &["zeph", "zep", "zephaniah"]),
+        (24, &["hag", "haggai"]),
+        (25, &["zech", "zec", "zechariah"]),
+        (26, &["mal", "malachi"]),
+        (27, &["ps", "psa", "psalm", "psalms"]),
+        (28, &["prov", "proverbs"]),
+        (29, &["job"]),
+        (30, &["song", "sos", "canticles"]),
+        (31, &["ruth"]),
+        (32, &["lam", "lamentations"]),
+        (33, &["eccl", "qoh", "ecclesiastes"]),
+        (34, &["esth", "esther"]),
+        (35, &["dan", "daniel"]),
+        (36, &["ezra"]),
+        (37, &["neh", "nehemiah"]),
+        (38, &["1chr", "1chron", "1chronicles"]),
+        (39, &["2chr", "2chron", "2chronicles"]),
+    ];
+    BOOKS
+        .iter()
+        .find(|(_, names)| names.contains(&t.as_str()))
+        .map(|(n, _)| *n)
+}
+
+/// Parse a passage filter like `Gen` or `Gen-Deut` into an inclusive Haqor
+/// book-number range. A single book yields `(n, n)`.
+pub fn parse_passage(s: &str) -> Result<(u8, u8)> {
+    let (lo_s, hi_s) = match s.split_once('-') {
+        Some((a, b)) => (a, b),
+        None => (s, s),
+    };
+    let lo = book_number(lo_s).with_context(|| format!("unknown book '{}'", lo_s.trim()))?;
+    let hi = book_number(hi_s).with_context(|| format!("unknown book '{}'", hi_s.trim()))?;
+    if lo > hi {
+        anyhow::bail!("passage '{s}' starts after it ends (Tanakh order)");
+    }
+    Ok((lo, hi))
+}
 
 /// Is `(book, chapter, verse)` inside one of the Biblical Aramaic sections?
 ///
@@ -355,11 +424,14 @@ fn analyze_surfaces(surfaces: &[String], lexicon_db: Option<&Path>) -> Result<Su
         .map(|t| prefilter.as_ref().and_then(|pf| pf.classify(t)))
         .collect();
 
-    // Reverse-parse every distinct surface in parallel; parse_word is pure.
-    // Function words always bypass the parser. Proper nouns are still parsed:
-    // the verb-aware rule lets a name yield to a plausible (attested) verb
-    // reading rather than being excluded outright (many names are verb
-    // homographs). Unclassified tokens parse normally.
+    // Reverse-parse every distinct surface in parallel. Build the reverse index
+    // once (all roots' paradigms, keyed by canonical form) and look each surface
+    // up — orders of magnitude faster than per-surface generate-and-test, and it
+    // returns exactly what `parse_word` would. Function words always bypass the
+    // parser; proper nouns are still parsed (the verb-aware rule lets a name
+    // yield to a plausible verb reading); unclassified tokens parse normally.
+    info!("Building reverse-parse index over all triliteral roots");
+    let index = ReverseIndex::build();
     info!("Reverse-parsing {} distinct surfaces", surfaces.len());
     let raw: Vec<Vec<VerbMatch>> = surfaces
         .par_iter()
@@ -368,7 +440,7 @@ fn analyze_surfaces(surfaces: &[String], lexicon_db: Option<&Path>) -> Result<Su
             if *class == Some("function") {
                 Vec::new()
             } else {
-                parse_word(t)
+                parse_word_indexed(t, &index, None)
             }
         })
         .collect();
@@ -644,10 +716,18 @@ fn build_hebrew(
 /// `db review-missing -n N` to see which of the top-N missing your change now
 /// accounts for, repeat. When satisfied, commit the change to the DB with the
 /// incremental `db gen-hebrew -n N` pass. Returns (previewed, would_resolve).
+///
+/// `language` selects which subset to loop on: `"hebrew"` (the default — the
+/// Hebrew backlog), `"aramaic"` (surfaces in the Biblical Aramaic sections), or
+/// `"all"`. `passage`, when given, is an inclusive Haqor book-number range that
+/// restricts the preview to surfaces occurring in those books (see
+/// [`parse_passage`]) — e.g. just Genesis, or Genesis–Deuteronomy.
 pub fn preview_missing(
     output: &Path,
     lexicon_db: Option<&Path>,
     limit: usize,
+    language: &str,
+    passage: Option<(u8, u8)>,
 ) -> Result<(usize, usize)> {
     let db =
         Connection::open(output).with_context(|| format!("opening {}", output.display()))?;
@@ -655,10 +735,21 @@ pub fn preview_missing(
     let missing: Vec<(i64, String, i64)> = {
         let mut sql = String::from(
             "SELECT surface_id, text, occurrences FROM surface \
-             WHERE n_candidates = 0 AND n_noun_candidates = 0 AND lexical_class IS NULL \
-             AND language IS NULL \
-             ORDER BY occurrences DESC, surface_id",
+             WHERE n_candidates = 0 AND n_noun_candidates = 0 AND lexical_class IS NULL",
         );
+        match language {
+            "aramaic" => sql.push_str(" AND language = 'aramaic'"),
+            "all" => {}
+            "hebrew" => sql.push_str(" AND language IS NULL"),
+            other => anyhow::bail!("unknown --language '{other}' (use hebrew, aramaic, or all)"),
+        }
+        if let Some((lo, hi)) = passage {
+            sql.push_str(&format!(
+                " AND surface_id IN (SELECT surface_id FROM occurrences \
+                  WHERE book BETWEEN {lo} AND {hi})"
+            ));
+        }
+        sql.push_str(" ORDER BY occurrences DESC, surface_id");
         if limit > 0 {
             sql.push_str(&format!(" LIMIT {limit}"));
         }
@@ -677,7 +768,15 @@ pub fn preview_missing(
     } = analyze_surfaces(&texts, lexicon_db)?;
 
     let mut resolved = 0usize;
-    println!("Previewing top {} missing surfaces:\n", missing.len());
+    let scope = match passage {
+        Some((lo, hi)) if lo == hi => format!(" in book {lo}"),
+        Some((lo, hi)) => format!(" in books {lo}–{hi}"),
+        None => String::new(),
+    };
+    println!(
+        "Previewing top {} {language} missing surfaces{scope}:\n",
+        missing.len()
+    );
     for (i, (_, text, occ)) in missing.iter().enumerate() {
         let v = &verb[i];
         let n = &noun[i];
