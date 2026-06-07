@@ -234,6 +234,29 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
             }
         }
     }
+    // Gentilic / -î adjective nouns (ʕiḇrî עִבְרִי, miṣrî, pᵊnîmî, šᵊlîšî): the
+    // final -î (a vowelless yod mater on a hiriq) pluralizes by simply appending
+    // mem (ʕiḇrîm עִבְרִים) and forms its feminine by appending tav (ʕiḇrît,
+    // pᵊnîmît פְּנִימִית) — the generic -îm/-â plural machinery mishandles the
+    // existing yod. Additive.
+    if let [.., prev, last] = stem.absolute_singular.as_slice()
+        && last.letter == letter::YOD
+        && last.vowel.is_none()
+        && prev.vowel == Some(Vowel::Hiriq)
+    {
+        let mut plural = stem.absolute_singular.clone();
+        plural.push(Cons::new(letter::MEM));
+        out.push(NounInflection {
+            label: "Plural Absolute".to_string(),
+            text: hebrew::render(&plural),
+        });
+        let mut feminine = stem.absolute_singular.clone();
+        feminine.push(Cons::new(letter::TAV));
+        out.push(NounInflection {
+            label: "Feminine Singular".to_string(),
+            text: hebrew::render(&feminine),
+        });
+    }
     // Pronominal suffixes (singular base).
     for &(p, g, n) in PRON_SUFFIXES {
         let label = format!(
