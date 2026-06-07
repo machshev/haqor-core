@@ -3027,8 +3027,12 @@ fn apply_geminate(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
         | (Binyan::Qal, Form::Jussive)
         | (Binyan::Qal, Form::Imperative)
         | (Binyan::Qal, Form::InfinitiveConstruct) => {
-            // yāsōḇ: drop C3, add dagesh to (the remaining) C2, prefix vowel
-            // → qamats, C1 loses its vowel.
+            // yāsōḇ: drop C3, carry the holam theme on C1, double the (remaining)
+            // C2, prefix vowel → qamats. Putting the holam on C1 and clearing C2
+            // gives the canonical yā-sōḇ; crucially it also produces the vocalic
+            // plural yā-sōḇ-ḇû (יָסֹבּוּ) — the strong builder reduces C2 to a
+            // sheva there, which the old "C1 vowelless, holam left on C2" shape
+            // mangled into יָסְבְּוּ.
             if let Some(c3_idx) = radical_idx(seq, 3) {
                 seq.remove(c3_idx);
                 changed = true;
@@ -3037,10 +3041,11 @@ fn apply_geminate(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
                 if c1_idx > 0 {
                     seq[c1_idx - 1].vowel = Some(Vowel::Qamats);
                 }
-                seq[c1_idx].vowel = None;
+                seq[c1_idx].vowel = Some(Vowel::Holam);
             }
             if let Some(c2_idx) = radical_idx(seq, 2) {
                 seq[c2_idx].dagesh = true;
+                seq[c2_idx].vowel = None;
             }
         }
         _ => {}
