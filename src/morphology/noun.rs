@@ -187,6 +187,53 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
         });
     }
 
+    // Directional / locative he (he-locale): an unstressed -â appended to the
+    // noun marks motion toward — ʾarṣâ אַרְצָה, miḏbārâ מִדְבָּרָה, ṣāp̄ônâ
+    // צָפוֹנָה, miṣraymâ מִצְרַיְמָה (the article in hab-baytâ הַבַּיְתָה / hāhārâ
+    // is a proclitic the parser peels off this base). Built from the segolate
+    // qatl base, else the absolute: a dual -ayim penult reduces, the final true
+    // consonant takes the linking qamats, and a he mater is appended. Skipped for
+    // feminine -â/-t nouns (which don't take the directional) and for nouns
+    // already ending in a vowel or mater.
+    {
+        let mut base = match stem.kind {
+            NounStemKind::Segolate => segolate_singular_base(stem),
+            NounStemKind::FeminineHe | NounStemKind::FeminineT => Vec::new(),
+            _ => stem.absolute_singular.clone(),
+        };
+        let n = base.len();
+        if n >= 2
+            && base[n - 1].vowel.is_none()
+            && !matches!(
+                base[n - 1].letter,
+                letter::HE | letter::ALEF | letter::VAV | letter::YOD
+            )
+        {
+            // Dual -ayim (miṣrayim → miṣray-mâ): the penult yod's hiriq reduces.
+            let dual = base[n - 1].letter == letter::MEM
+                && base[n - 2].letter == letter::YOD
+                && base[n - 2].vowel == Some(Vowel::Hiriq);
+            if dual {
+                base[n - 2].vowel = Some(Vowel::Sheva);
+            }
+            base[n - 1].vowel = Some(Vowel::Qamats);
+            base.push(Cons::new(letter::HE));
+            out.push(NounInflection {
+                label: "Directional".to_string(),
+                text: hebrew::render(&base),
+            });
+            // Pausal/lengthened dual twin: the patah of the syllable before the
+            // reduced yod lengthens to qamats — miṣraymâ מִצְרַיְמָה beside
+            // miṣrāymâ מִצְרָיְמָה. Emit both so either spelling matches.
+            if dual && n >= 3 && base[n - 3].vowel == Some(Vowel::Patah) {
+                base[n - 3].vowel = Some(Vowel::Qamats);
+                out.push(NounInflection {
+                    label: "Directional".to_string(),
+                    text: hebrew::render(&base),
+                });
+            }
+        }
+    }
     // Pronominal suffixes (singular base).
     for &(p, g, n) in PRON_SUFFIXES {
         let label = format!(
