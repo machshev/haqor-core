@@ -4356,9 +4356,33 @@ fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -
 fn qal_imperative_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
     use Vowel::*;
     let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
-    if matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
-        || matches!(c1, letter::VAV | letter::YOD | letter::NUN)
-    {
+    if matches!(c1, letter::VAV | letter::YOD | letter::NUN) {
+        return Vec::new();
+    }
+    // III-He imperative + suffix: the etymological he elides and the suffix
+    // attaches straight to C2, which carries the linking vowel — ʕănēnî (עֲנֵנִי),
+    // bᵊnēhû (בְּנֵהוּ). C1 takes a sheva (a hataf under a guttural, via
+    // apply_guttural). No C3 in the stem.
+    if c3 == letter::HE {
+        let mut out = Vec::new();
+        let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
+            let mut seq = vec![
+                Cons::radical(c1, 1).with_vowel(Sheva),
+                Cons::radical(c2, 2).with_vowel(link),
+            ];
+            seq.extend_from_slice(tail);
+            apply_guttural(&mut seq, root);
+            out.push((obj, hebrew::render(&seq)));
+        };
+        emit(OBJ_1CS, Tsere, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]); // -ēnî
+        emit(OBJ_1CS, Tsere, &[Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq), Cons::new(letter::YOD)]); // -ēnnî
+        emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]); // -ēhû
+        emit(OBJ_3FS, Segol, &[ocv(letter::HE, Qamats)]); // -ehā
+        emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]); // -ēnû
+        emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]); // -ēm
+        return out;
+    }
+    if matches!(c3, letter::ALEF | letter::VAV | letter::YOD) {
         return Vec::new();
     }
     let mut out = Vec::new();
@@ -4400,9 +4424,14 @@ fn hiphil_imperative_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         return Vec::new();
     }
     let last = seq[n - 1];
-    // C3 must be a true final consonant (vowelless or the rendered silent sheva
-    // under a final kaf); reject mater/weak finals.
-    if matches!(last.vowel, Some(v) if v != Vowel::Sheva)
+    // A III-guttural Hiphil imperative ends in that guttural with a furtive patah
+    // (hôšēaʕ הוֹשֵׁעַ); the suffixed form retunes the theme and the guttural takes
+    // the link vowel (hôšîʕēnî הוֹשִׁיעֵנִי), so allow a final het/ayin+patah.
+    let guttural =
+        matches!(last.letter, letter::HET | letter::AYIN) && last.vowel == Some(Vowel::Patah);
+    // Otherwise C3 must be a true final consonant (vowelless or the rendered
+    // silent sheva under a final kaf); reject mater/weak finals.
+    if (matches!(last.vowel, Some(v) if v != Vowel::Sheva) && !guttural)
         || matches!(last.letter, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
     {
         return Vec::new();
