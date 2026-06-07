@@ -314,6 +314,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && form == Form::Perfect)
                 .then(|| guttural_perfect_patah_variant(&text))
                 .flatten();
+                // Silent-sheva twin of an I-guttural derived-stem perfect, where
+                // the guttural's hataf is written as a plain sheva (nehĕp̄aḵ
+                // נֶהֱפַּךְ → nehpaḵ נֶהְפַּךְ, heḥĕzîq → heḥzîq).
+                let guttural_silent_sheva = (matches!(
+                    binyan,
+                    Binyan::Niphal | Binyan::Hiphil | Binyan::Hophal | Binyan::Hithpael
+                ) && form == Form::Perfect)
+                .then(|| guttural_silent_sheva_variant(&text))
+                .flatten();
                 // Hollow Qal active participle qāmÌ„ shape (רֹץ → רָץ).
                 let hollow_ptcp = (binyan == Binyan::Qal
                     && form == Form::ParticipleActive
@@ -483,6 +492,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_guttural_segol,
                     lamed_guttural_perf_sheva,
                     qal_a_theme,
+                    guttural_silent_sheva,
                 ]
                 .into_iter()
                 .flatten()
@@ -3709,6 +3719,34 @@ fn maqaf_segol_variant(text: &str) -> Option<String> {
     }
     seq[n - 2].vowel = Some(Vowel::Segol);
     Some(hebrew::render(&seq))
+}
+
+/// Silent-sheva twin of a word whose C1 guttural carries a composite (hataf)
+/// vowel in a closed syllable. A guttural prefers a hataf where a plain
+/// consonant would take a silent sheva — the derived-stem perfect of an
+/// I-guttural root (neʔĕsap̄, nehĕp̄aḵ נֶהֱפַּךְ, heḥĕzîq) — but the Masoretes
+/// frequently write the plain silent sheva instead (נֶהְפַּךְ, נֶעְזַב, הֶחְזִיק).
+/// Converts the first guttural hataf that is preceded by a consonant bearing a
+/// full short vowel to a plain sheva. Additive: the twin only matches surfaces
+/// spelled that way.
+fn guttural_silent_sheva_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    for i in 1..seq.len() {
+        if hebrew::is_guttural(seq[i].letter)
+            && matches!(
+                seq[i].vowel,
+                Some(Vowel::HatafSegol | Vowel::HatafPatah | Vowel::HatafQamats)
+            )
+            && matches!(
+                seq[i - 1].vowel,
+                Some(Vowel::Segol | Vowel::Patah | Vowel::Hiriq)
+            )
+        {
+            seq[i].vowel = Some(Vowel::Sheva);
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
 }
 
 /// Guttural-lowered alternant of a III-guttural Piel/Hithpael whose theme tsere
