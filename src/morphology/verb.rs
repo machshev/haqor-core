@@ -380,7 +380,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)
                 {
                     match (binyan, form) {
+                        (_, Form::Perfect) if root.lamed() == letter::HE => {
+                            lamed_he_perfect_object_suffixes(&text)
+                        }
                         (Binyan::Qal, Form::Perfect) => qal_perfect_object_suffixes(root),
+                        (Binyan::Piel | Binyan::Pual | Binyan::Hithpael, Form::Perfect) => {
+                            derived_perfect_object_suffixes(&text)
+                        }
                         (_, Form::Imperfect | Form::Jussive | Form::Wayyiqtol) => {
                             imperfect_object_suffixes(&text, root)
                         }
@@ -3893,6 +3899,82 @@ fn qal_perfect_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
     // Heavy 2mp/2fp attach to the qᵊṭal- (C2 patah) grade.
     out.push((OBJ_2MP, build(Patah, Some(Sheva), &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])));
     out
+}
+
+/// Piel/Pual/Hithpael perfect 3ms with a pronominal object suffix, built from the
+/// bare perfect `base_text`. Unlike the Qal (whose suffix grade qᵊṭāl- differs
+/// from the base qāṭal), these stems keep their first syllable and only the theme
+/// vowel on the doubled C2 reduces to a vocal sheva before the suffix: dibbēr →
+/// dibbᵊrô (דִּבְּרוֹ), dibbᵊranî (דִּבְּרַנִי), bērak → bērᵊḵô. C3 then takes the
+/// same perfect linking vowels + suffix consonants as the Qal. The base must end
+/// in a true final consonant — III-He (ṣiwwâ) and III-guttural shapes are left to
+/// other paths. Additive: a mis-modelled connecting vowel simply fails to match.
+fn derived_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(base_text);
+    let n = seq.len();
+    if n < 3 {
+        return Vec::new();
+    }
+    let last = seq[n - 1];
+    if matches!(last.vowel, Some(v) if v != Sheva)
+        || matches!(last.letter, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
+    {
+        return Vec::new();
+    }
+    // Reduce the theme on C2 (seq[n-2]) to sheva — keeping any forte dagesh —
+    // and give C3 (seq[n-1]) the linking vowel, then append the suffix tail.
+    let build = |link: Option<Vowel>, tail: &[Cons]| -> String {
+        let mut s = seq.clone();
+        s[n - 2].vowel = Some(Sheva);
+        s[n - 1].vowel = link;
+        s.extend_from_slice(tail);
+        hebrew::render(&s)
+    };
+    vec![
+        (OBJ_1CS, build(Some(Patah), &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])), // -anî
+        (OBJ_2MS, build(Some(Sheva), &[ocv(letter::KAF, Qamats)])),                        // -ᵊḵā
+        (OBJ_2FS, build(Some(Tsere), &[ocv(letter::KAF, Sheva)])),                         // -ēḵ
+        (OBJ_3MS, build(None, &[Cons::new(letter::VAV).with_vowel(Holam)])),               // -ô
+        (OBJ_3FS, build(Some(Qamats), &[Cons::new(letter::HE).with_dagesh()])),            // -āh
+        (OBJ_1CP, build(Some(Qamats), &[Cons::new(letter::NUN), oshureq()])),              // -ānû
+        (OBJ_3MP, build(Some(Qamats), &[Cons::new(letter::MEM)])),                         // -ām
+        (OBJ_3FP, build(Some(Qamats), &[Cons::new(letter::NUN)])),                         // -ān
+        (OBJ_2MP, build(Some(Sheva), &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])), // -ᵊḵem
+    ]
+}
+
+/// III-He perfect 3ms with a pronominal object suffix, any binyan, built from the
+/// bare perfect `base_text` (…C2-qamats + etymological he mater: ʕāśâ עָשָׂה,
+/// ṣiwwâ צִוָּה, heʿĕlâ הֶעֱלָה). The he mater drops and the suffix attaches to the
+/// stem's -ā: the light suffixes keep that qamats (ʕāśāhû עָשָׂהוּ, ṣiwwānî,
+/// ṣiwwāhû צִוָּהוּ), while the heavy -ḵā/-ḵem reduce it to a vocal sheva
+/// (ṣiwwᵊḵā צִוְּךָ, ʕāśᵊḵā). Additive — only exact matches survive.
+fn lamed_he_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(base_text);
+    let n = seq.len();
+    if n < 3 || seq[n - 1].letter != letter::HE || seq[n - 2].vowel != Some(Qamats) {
+        return Vec::new();
+    }
+    // Drop the he mater; the C2 (now last) carries the suffix's connecting vowel.
+    let stem = seq[..n - 1].to_vec();
+    let emit = |c2v: Vowel, tail: &[Cons]| -> String {
+        let mut s = stem.clone();
+        if let Some(c) = s.last_mut() {
+            c.vowel = Some(c2v);
+        }
+        s.extend_from_slice(tail);
+        hebrew::render(&s)
+    };
+    vec![
+        (OBJ_1CS, emit(Qamats, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])), // -ānî
+        (OBJ_3MS, emit(Qamats, &[Cons::new(letter::HE), oshureq()])),                // -āhû
+        (OBJ_1CP, emit(Qamats, &[Cons::new(letter::NUN), oshureq()])),               // -ānû
+        (OBJ_3MP, emit(Qamats, &[Cons::new(letter::MEM)])),                          // -ām
+        (OBJ_2MS, emit(Sheva, &[ocv(letter::KAF, Qamats)])),                         // -ᵊḵā
+        (OBJ_2MP, emit(Sheva, &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])),  // -ᵊḵem
+    ]
 }
 
 /// Reduce the first stem vowel of a perfect base to sheva (propretonic
