@@ -218,6 +218,9 @@ pub struct VerbForm {
     /// combination; false if the generator fell back to the strong-verb
     /// pattern for a class it doesn't yet specialise on.
     pub attested: bool,
+    /// The pronominal object suffix attached to this form, if any (its
+    /// person/gender/number). `None` for the bare conjugated form.
+    pub object_suffix: Option<Pgn>,
 }
 
 /// The full paradigm of a root: every binyan × form × PGN we can generate.
@@ -296,12 +299,36 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && hebrew::is_guttural(root.pe()))
                 .then(|| guttural_hataf_pausal_variant(&text))
                 .flatten();
+                // Patah-prefix twin of the I-guttural Niphal/Hiphil perfect
+                // (neḥĕzaq נֶחֱזַק beside naʕăśâ נַעֲשָׂה).
+                let guttural_perfect_patah = (matches!(binyan, Binyan::Niphal | Binyan::Hiphil)
+                    && form == Form::Perfect)
+                .then(|| guttural_perfect_patah_variant(&text))
+                .flatten();
+                // Pronominal object-suffixed forms for the 3ms host (computed
+                // from &text before it is moved into the base VerbForm below).
+                let object_suffixed: Vec<(Pgn, String)> = if pgn
+                    == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)
+                {
+                    match (binyan, form) {
+                        (Binyan::Qal, Form::Perfect) => qal_perfect_object_suffixes(root),
+                        (_, Form::Imperfect | Form::Jussive | Form::Wayyiqtol) => {
+                            imperfect_object_suffixes(&text, root)
+                        }
+                        _ => Vec::new(),
+                    }
+                } else if form == Form::InfinitiveConstruct {
+                    inf_construct_object_suffixes(root, binyan, &text)
+                } else {
+                    Vec::new()
+                };
                 forms.push(VerbForm {
                     binyan,
                     form,
                     pgn,
                     text,
                     attested,
+                    object_suffix: None,
                 });
                 for alt in [
                     maqaf,
@@ -313,6 +340,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     piel_pausal,
                     qal_pausal,
                     guttural_imperative_pausal,
+                    guttural_perfect_patah,
                 ]
                 .into_iter()
                 .flatten()
@@ -323,7 +351,22 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         pgn,
                         text: alt,
                         attested,
+                        object_suffix: None,
                     });
+                }
+                // Object-suffixed forms (deduped by surface+suffix).
+                let mut osuf_seen = std::collections::HashSet::new();
+                for (obj, t) in object_suffixed {
+                    if osuf_seen.insert((obj, t.clone())) {
+                        forms.push(VerbForm {
+                            binyan,
+                            form,
+                            pgn,
+                            text: t,
+                            attested,
+                            object_suffix: Some(obj),
+                        });
+                    }
                 }
                 // Paragogic-he (emphatic) imperative twin for the 2ms: an -â
                 // appends to the bare imperative, sharing the reduced stem of
@@ -350,6 +393,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             pgn,
                             text: hebrew::render(&seq),
                             attested: attested_fs,
+                            object_suffix: None,
                         });
                     }
                 }
@@ -372,6 +416,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             pgn,
                             text: hebrew::render(&seq),
                             attested,
+                            object_suffix: None,
                         });
                     }
                 }
@@ -391,6 +436,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             pgn,
                             text: hebrew::render(&cseq),
                             attested: c_attested,
+                            object_suffix: None,
                         });
                     }
                 }
@@ -418,6 +464,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             pgn,
                             text: hebrew::render(&seq),
                             attested: c_attested,
+                            object_suffix: None,
                         });
                     }
                 }
@@ -3053,6 +3100,229 @@ fn guttural_lowered_variant(text: &str) -> Option<String> {
     seq[n - 2].vowel = Some(Vowel::Patah);
     seq[n - 1].vowel = None;
     Some(hebrew::render(&seq))
+}
+
+/// Patah-prefix twin of the I-guttural Niphal/Hiphil perfect. The generator
+/// builds these with a segol preformative and a hataf-segol on the C1 guttural
+/// (neḥĕzaq נֶחֱזַק, heʕĕmîd הֶעֱמִיד — see [`apply_pe_guttural`]), but for some
+/// I-guttural roots the preformative surfaces with patah and the guttural with
+/// hataf-patah: naʕăśâ (נַעֲשָׂה), the Niphal perfect of עשה. Both spellings are
+/// attested across roots, so emit the patah twin alongside the segol base —
+/// generate-and-test only gains matches. Returns `None` unless the word opens
+/// with a segol-bearing consonant followed by a guttural bearing hataf-segol.
+fn guttural_perfect_patah_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() < 2 {
+        return None;
+    }
+    if seq[0].vowel != Some(Vowel::Segol)
+        || seq[1].vowel != Some(Vowel::HatafSegol)
+        || !hebrew::is_guttural(seq[1].letter)
+    {
+        return None;
+    }
+    seq[0].vowel = Some(Vowel::Patah);
+    seq[1].vowel = Some(Vowel::HatafPatah);
+    Some(hebrew::render(&seq))
+}
+
+// ----- Pronominal object suffixes -------------------------------------------
+//
+// Finite verbs take pronominal *object* suffixes — "he sent me" (שְׁלָחַנִי),
+// "I will bless you" (יְבָרֶכְךָ), "and he gave them" (וַיִּתְּנֵם). The suffix
+// attaches to a "connecting" grade of the stem: stress shifts onto the ending,
+// so the stem's own vowels reduce, and a linking vowel joins stem to suffix.
+//
+// We model the two highest-frequency hosts — the Qal Perfect 3ms and the
+// Imperfect/Jussive/Wayyiqtol 3ms — for a single (3ms) subject. As with every
+// reverse-parse target this is generate-and-test: an imperfectly modelled
+// connecting stem simply fails to exact-match a real surface (costing recall,
+// never correctness), so emitting a small spread of plausible stems is safe.
+// Weak hosts whose suffixed stem is idiosyncratic (III-He עָשָׂהוּ, the geminating
+// I-Nun/III-He Hiphil וַיַּכֵּהוּ) are left for a later pass.
+
+const OBJ_1CS: Pgn = Pgn::new(Person::First, Gender::Common, Number::Singular);
+const OBJ_2MS: Pgn = Pgn::new(Person::Second, Gender::Masculine, Number::Singular);
+const OBJ_2FS: Pgn = Pgn::new(Person::Second, Gender::Feminine, Number::Singular);
+const OBJ_3MS: Pgn = Pgn::new(Person::Third, Gender::Masculine, Number::Singular);
+const OBJ_3FS: Pgn = Pgn::new(Person::Third, Gender::Feminine, Number::Singular);
+const OBJ_1CP: Pgn = Pgn::new(Person::First, Gender::Common, Number::Plural);
+const OBJ_2MP: Pgn = Pgn::new(Person::Second, Gender::Masculine, Number::Plural);
+const OBJ_3MP: Pgn = Pgn::new(Person::Third, Gender::Masculine, Number::Plural);
+const OBJ_3FP: Pgn = Pgn::new(Person::Third, Gender::Feminine, Number::Plural);
+
+/// A vowelled consonant, for assembling suffix tails.
+fn ocv(letter: char, v: Vowel) -> Cons {
+    Cons::new(letter).with_vowel(v)
+}
+/// A shureq written as a vav mater bearing the dagesh point (וּ).
+fn oshureq() -> Cons {
+    Cons::new(letter::VAV).with_dagesh()
+}
+
+/// Qal Perfect 3ms with a pronominal object suffix. The connecting stem is
+/// qᵊṭāl- (C1 propretonically reduced to sheva, C2 qamats), the suffix joins C3
+/// with a linking vowel: qᵊṭāl-á-nî (קְטָלַנִי), qᵊṭāl-ᵊ-ḵā (קְטָלְךָ), qᵊṭāl-ô
+/// (קְטָלוֹ), qᵊṭāl-ā-m (קְטָלָם). Restricted to the strong/guttural shape — a 3ms
+/// ending in a true final consonant — so I-weak and III-weak roots (whose
+/// suffixed perfect is irregular) are skipped.
+fn qal_perfect_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
+    if matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
+        || matches!(c1, letter::VAV | letter::YOD | letter::NUN)
+    {
+        return Vec::new();
+    }
+    // Build qᵊṭāC3- with an optional C3 link vowel (None leaves C3 vowelless,
+    // for the holam-vav 3ms ô written on the mater), append the tail, then let
+    // apply_guttural fix a guttural C1/C2 (sheva → hataf).
+    let build = |c2v: Vowel, link: Option<Vowel>, tail: &[Cons]| -> String {
+        let mut c3c = Cons::radical(c3, 3);
+        c3c.vowel = link;
+        let mut seq = vec![Cons::radical(c1, 1).with_vowel(Sheva), Cons::radical(c2, 2).with_vowel(c2v), c3c];
+        seq.extend_from_slice(tail);
+        apply_guttural(&mut seq, root);
+        hebrew::render(&seq)
+    };
+    let mut out = Vec::new();
+    // Light suffixes attach to the qᵊṭāl- (C2 qamats) grade.
+    out.push((OBJ_1CS, build(Qamats, Some(Patah), &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])));
+    out.push((OBJ_2MS, build(Qamats, Some(Sheva), &[ocv(letter::KAF, Qamats)])));
+    out.push((OBJ_2FS, build(Qamats, Some(Tsere), &[ocv(letter::KAF, Sheva)])));
+    // 3ms ô — holam carried on the vav mater (qᵊṭālô קְטָלוֹ).
+    out.push((OBJ_3MS, build(Qamats, None, &[Cons::new(letter::VAV).with_vowel(Holam)])));
+    out.push((OBJ_3FS, build(Qamats, Some(Qamats), &[Cons::new(letter::HE).with_dagesh()])));
+    out.push((OBJ_1CP, build(Qamats, Some(Qamats), &[Cons::new(letter::NUN), oshureq()])));
+    out.push((OBJ_3MP, build(Qamats, Some(Qamats), &[Cons::new(letter::MEM)])));
+    out.push((OBJ_3FP, build(Qamats, Some(Qamats), &[Cons::new(letter::NUN)])));
+    // Heavy 2mp/2fp attach to the qᵊṭal- (C2 patah) grade.
+    out.push((OBJ_2MP, build(Patah, Some(Sheva), &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])));
+    out
+}
+
+/// Imperfect-family (Imperfect / Jussive / Wayyiqtol) 3ms with a pronominal
+/// object suffix, built from the bare 3ms `base_text` so weak-root prefixes and
+/// gemination already in the base carry through. The theme vowel reduces and the
+/// suffix joins C3: yiqṭᵊl-ḗnî / -énnî (1cs), -ᵊḵā (2ms, e.g. yᵊḇāreḵḵā
+/// יְבָרֶכְךָ), -ḗhû / -énnû (3ms), -ḗm (3mp). Two theme reductions (sheva and
+/// segol) are emitted per suffix and exact-match keeps the real one. Skipped
+/// when the base does not end in a true final consonant (III-He/-Aleph matres).
+fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(base_text);
+    let n = seq.len();
+    if n < 3 {
+        return Vec::new();
+    }
+    let last = seq[n - 1];
+    // The bare 3ms ends in a true final consonant (C3 of yiqṭōl, the nun of
+    // wayyittēn). It is either vowelless or carries the Masoretic silent sheva
+    // that `render` writes under a final kaf (יְבָרֵךְ). A real vowel or a mater
+    // final (HE/ALEF, or a vowelless VAV/YOD) means a weak/derived shape we
+    // don't model here.
+    if matches!(last.vowel, Some(v) if v != Vowel::Sheva)
+        || matches!(last.letter, letter::HE | letter::ALEF)
+        || matches!(last.letter, letter::VAV | letter::YOD)
+    {
+        return Vec::new();
+    }
+    let mut out = Vec::new();
+    let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
+        for theme in [Sheva, Segol] {
+            let mut s = seq.clone();
+            s[n - 2].vowel = Some(theme);
+            s[n - 1].vowel = Some(link);
+            s.extend_from_slice(tail);
+            out.push((obj, hebrew::render(&s)));
+        }
+    };
+    // 1cs: plain -ēnî and energic -ennî.
+    emit(OBJ_1CS, Tsere, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]);
+    emit(OBJ_1CS, Segol, &[Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq), Cons::new(letter::YOD)]);
+    // 2ms -ᵊḵā, 2fs -ēḵ.
+    emit(OBJ_2MS, Sheva, &[ocv(letter::KAF, Qamats)]);
+    emit(OBJ_2FS, Sheva, &[ocv(letter::KAF, Sheva)]);
+    // 3ms: plain -ēhû and energic -ennû.
+    emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]);
+    emit(OBJ_3MS, Segol, &[Cons::new(letter::NUN).with_dagesh(), oshureq()]);
+    // 3fs -ehā.
+    emit(OBJ_3FS, Segol, &[ocv(letter::HE, Qamats)]);
+    // 1cp -ēnû.
+    emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]);
+    // 3mp -ēm.
+    emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]);
+    // 2mp -ᵊḵem.
+    emit(OBJ_2MP, Sheva, &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)]);
+    out
+}
+
+/// The nominal/possessive suffix set, as (object PGN, linking vowel on the
+/// final stem consonant, tail consonants). An infinitive construct takes these
+/// — "his reigning" mālḵô (מָלְכוֹ), "to possess it" — exactly as a noun does,
+/// not the verbal -anî/-ēhû set.
+fn nominal_suffix_tails() -> Vec<(Pgn, Option<Vowel>, Vec<Cons>)> {
+    use Vowel::*;
+    vec![
+        (OBJ_1CS, Some(Hiriq), vec![Cons::new(letter::YOD)]),                          // -î
+        (OBJ_2MS, Some(Sheva), vec![ocv(letter::KAF, Qamats)]),                        // -ᵊḵā
+        (OBJ_2FS, Some(Tsere), vec![ocv(letter::KAF, Sheva)]),                         // -ēḵ
+        (OBJ_3MS, None, vec![Cons::new(letter::VAV).with_vowel(Holam)]),               // -ô (holam on vav)
+        (OBJ_3FS, Some(Qamats), vec![Cons::new(letter::HE).with_dagesh()]),            // -āh
+        (OBJ_1CP, Some(Tsere), vec![Cons::new(letter::NUN), oshureq()]),               // -ēnû
+        (OBJ_2MP, Some(Sheva), vec![ocv(letter::KAF, Segol), Cons::new(letter::MEM)]), // -ᵊḵem
+        (OBJ_3MP, Some(Qamats), vec![Cons::new(letter::MEM)]),                         // -ām
+        (OBJ_3FP, Some(Qamats), vec![Cons::new(letter::NUN)]),                         // -ān
+    ]
+}
+
+/// Infinitive construct with a pronominal suffix ("in his reigning" בְּמָלְכוֹ,
+/// "his begetting" הוֹלִידוֹ). The Qal infinitive shifts to the qoṭl- grade
+/// before a suffix (mᵊlōḵ → mālḵ-) — built here from the radicals (C1 qamets-
+/// hatuf, C2 silent sheva), trying both the regular and qatan qamats glyphs.
+/// Other binyanim keep their bare infinitive shape and simply take the suffix
+/// on C3 (haqṭîl → haqṭîl-ô). Strong/true-final-consonant shapes only.
+fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let mut out = Vec::new();
+    if binyan == Binyan::Qal {
+        let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
+        if matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
+            || matches!(c1, letter::VAV | letter::YOD | letter::NUN)
+        {
+            return out;
+        }
+        for (obj, link, tail) in nominal_suffix_tails() {
+            for c1v in [Qamats, QamatsQatan] {
+                let mut c3c = Cons::radical(c3, 3);
+                c3c.vowel = link;
+                let mut seq = vec![Cons::radical(c1, 1).with_vowel(c1v), Cons::radical(c2, 2).with_vowel(Sheva), c3c];
+                seq.extend(tail.clone());
+                apply_guttural(&mut seq, root);
+                out.push((obj, hebrew::render(&seq)));
+            }
+        }
+    } else {
+        let seq = hebrew::parse_pointed(base_text);
+        let n = seq.len();
+        if n < 2 {
+            return out;
+        }
+        let last = seq[n - 1];
+        if matches!(last.vowel, Some(v) if v != Vowel::Sheva)
+            || matches!(last.letter, letter::HE | letter::ALEF)
+            || matches!(last.letter, letter::VAV | letter::YOD)
+        {
+            return out;
+        }
+        for (obj, link, tail) in nominal_suffix_tails() {
+            let mut s = seq.clone();
+            s[n - 1].vowel = link;
+            s.extend(tail);
+            out.push((obj, hebrew::render(&s)));
+        }
+    }
+    out
 }
 
 /// Pausal alternant: a stressed patah in the final closed syllable lengthens to

@@ -82,6 +82,9 @@ pub struct VerbMatch {
     /// True when the prefix is a vav-consecutive: a wayyiqtol (וַ + dagesh,
     /// matched against the imperfect/jussive) or a weqatal (וְ + perfect).
     pub vav_consecutive: bool,
+    /// The pronominal object suffix on the verb, if any (its person/gender/
+    /// number). `None` when no object suffix was matched.
+    pub object_suffix: Option<Pgn>,
 }
 
 /// Compare two rendered forms ignoring the sin/shin dot. The generator always
@@ -245,7 +248,15 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                 {
                     continue;
                 }
-                if seen.insert((letters, vf.binyan, vf.form, vf.pgn, strip, false)) {
+                if seen.insert((
+                    letters,
+                    vf.binyan,
+                    vf.form,
+                    vf.pgn,
+                    vf.object_suffix,
+                    strip,
+                    false,
+                )) {
                     matches.push(VerbMatch {
                         root: Root::from_letters(letters),
                         binyan: vf.binyan,
@@ -254,6 +265,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                         attested: vf.attested,
                         prefix: prefix.clone(),
                         vav_consecutive: false,
+                        object_suffix: vf.object_suffix,
                     });
                 }
             }
@@ -278,7 +290,15 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                 if vf.form != Form::Wayyiqtol || !forms_match(&vf.text, &target) {
                     continue;
                 }
-                if seen.insert((letters, vf.binyan, vf.form, vf.pgn, 0, true)) {
+                if seen.insert((
+                    letters,
+                    vf.binyan,
+                    vf.form,
+                    vf.pgn,
+                    vf.object_suffix,
+                    0,
+                    true,
+                )) {
                     matches.push(VerbMatch {
                         root: Root::from_letters(letters),
                         binyan: vf.binyan,
@@ -287,6 +307,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                         attested: vf.attested,
                         prefix: String::new(),
                         vav_consecutive: true,
+                        object_suffix: vf.object_suffix,
                     });
                 }
             }
@@ -297,10 +318,18 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
     matches.sort_by(|a, b| {
         b.attested
             .cmp(&a.attested)
+            // Bare forms before object-suffixed ones, so a first-match lookup
+            // prefers the simpler analysis.
+            .then_with(|| a.object_suffix.is_some().cmp(&b.object_suffix.is_some()))
             .then_with(|| a.root.letters.cmp(&b.root.letters))
             .then_with(|| (a.binyan as usize).cmp(&(b.binyan as usize)))
             .then_with(|| (a.form as usize).cmp(&(b.form as usize)))
             .then_with(|| a.pgn.label().cmp(&b.pgn.label()))
+            .then_with(|| {
+                a.object_suffix
+                    .map(|p| p.label())
+                    .cmp(&b.object_suffix.map(|p| p.label()))
+            })
     });
     matches
 }
@@ -615,5 +644,43 @@ mod tests {
                 && m.pgn.label() == "3ms"
                 && !m.prefix.is_empty()
         }));
+    }
+
+    /// Does any candidate carry this root/form/object-suffix?
+    fn has_obj(matches: &[VerbMatch], root: &str, form: Form, obj: &str) -> bool {
+        matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == root
+                && m.form == form
+                && m.object_suffix.map(|p| p.label()).as_deref() == Some(obj)
+        })
+    }
+
+    #[test]
+    fn parses_perfect_object_suffix() {
+        // שְׁלָחַנִי — Qal perfect 3ms of שלח + 1cs object ("he sent me").
+        let matches = parse_word("שְׁלָחַנִי");
+        assert!(has_obj(&matches, "שלח", Form::Perfect, "1cs"));
+    }
+
+    #[test]
+    fn parses_imperfect_object_suffix() {
+        // יְבָרֶכְךָ — Piel imperfect 3ms of ברך + 2ms object ("he will bless you").
+        let matches = parse_word("יְבָרֶכְךָ");
+        assert!(matches.iter().any(|m| {
+            // root.letters stores base (non-final) forms: kaf כ, not ך.
+            m.root.letters.iter().collect::<String>() == "ברכ"
+                && m.binyan == Binyan::Piel
+                && m.form == Form::Imperfect
+                && m.object_suffix.map(|p| p.label()).as_deref() == Some("2ms")
+        }));
+    }
+
+    #[test]
+    fn parses_wayyiqtol_object_suffix() {
+        // וַיִּתְּנֵם — wayyiqtol of נתן + 3mp object ("and he gave them"), the
+        // weak I-Nun base form carrying through to the suffixed form.
+        let matches = parse_word("וַיִּתְּנֵם");
+        // root.letters stores base (non-final) forms: nun נ, not ן.
+        assert!(has_obj(&matches, "נתנ", Form::Wayyiqtol, "3mp"));
     }
 }

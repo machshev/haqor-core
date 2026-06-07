@@ -49,8 +49,43 @@ use crate::morphology::{NounInventory, NounMatch, VerbMatch, parse_word};
 use super::lexicon_db::{load_noun_inventory, load_proper_inventory};
 use super::prefilter::Prefilter;
 
-/// OT books are 1..=39 in Haqor numbering; NT starts at 40.
+/// OT books are 1..=39 in Haqor (Tanakh-order) numbering; NT starts at 40.
 const NT_FIRST_BOOK: u8 = 40;
+
+/// Haqor book numbers for the books carrying Biblical Aramaic.
+const GENESIS: u8 = 1;
+const JEREMIAH: u8 = 13;
+const DANIEL: u8 = 35;
+const EZRA: u8 = 36;
+
+/// Is `(book, chapter, verse)` inside one of the Biblical Aramaic sections?
+///
+/// Biblical Hebrew prose has well-defined Aramaic passages that the Hebrew
+/// morphology engine cannot (and should not) parse: Daniel 2:4b–7:28, Ezra
+/// 4:8–6:18 and 7:12–26, Jeremiah 10:11, plus two words in Genesis 31:47. We
+/// mark these at verse granularity. The boundary verse Daniel 2:4 is mixed
+/// (Hebrew "…אֲרָמִית" then Aramaic); it is included, but the per-surface
+/// "occurs only in Aramaic verses" test that consumes this keeps shared Hebrew
+/// words (וַיְדַבְּרוּ, אֲרָמִית, …) — which also occur in Hebrew verses — from
+/// being mismarked.
+fn is_aramaic(book: u8, chapter: u8, verse: u8) -> bool {
+    match book {
+        GENESIS => chapter == 31 && verse == 47,
+        JEREMIAH => chapter == 10 && verse == 11,
+        DANIEL => {
+            (chapter == 2 && verse >= 4)
+                || (3..=6).contains(&chapter)
+                || (chapter == 7 && verse <= 28)
+        }
+        EZRA => {
+            (chapter == 4 && verse >= 8)
+                || chapter == 5
+                || (chapter == 6 && verse <= 18)
+                || (chapter == 7 && (12..=26).contains(&verse))
+        }
+        _ => false,
+    }
+}
 
 /// Hebrew maqaf joins two orthographic words; split on it so each is parsed
 /// independently.
@@ -214,7 +249,8 @@ fn create_schema(db: &Connection) -> Result<()> {
             n_noun_candidates INTEGER NOT NULL,
             parsed            INTEGER NOT NULL,
             attested          INTEGER NOT NULL,
-            lexical_class     TEXT
+            lexical_class     TEXT,
+            language          TEXT
          );
          CREATE TABLE occurrences(
             surface_id INTEGER NOT NULL,
@@ -232,7 +268,8 @@ fn create_schema(db: &Connection) -> Result<()> {
             pgn             TEXT    NOT NULL,
             prefix          TEXT    NOT NULL,
             vav_consecutive INTEGER NOT NULL,
-            attested        INTEGER NOT NULL
+            attested        INTEGER NOT NULL,
+            obj_suffix      TEXT    NOT NULL
          );
          CREATE TABLE noun_analyses(
             analysis_id INTEGER PRIMARY KEY,
@@ -263,7 +300,7 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
             SELECT surface_id, text, occurrences
             FROM surface
             WHERE n_candidates = 0 AND n_noun_candidates = 0
-                  AND lexical_class IS NULL
+                  AND lexical_class IS NULL AND language IS NULL
             ORDER BY occurrences DESC;
 
          CREATE VIEW review_nouns AS
@@ -271,6 +308,7 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
                    n.stem, n.kind, n.label, n.prefix
             FROM surface s
             JOIN noun_analyses n ON n.surface_id = s.surface_id
+            WHERE s.language IS NULL
             ORDER BY s.occurrences DESC, s.surface_id, n.stem;
 
          CREATE VIEW review_ambiguous AS
@@ -280,7 +318,14 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
             FROM surface s
             JOIN analyses a ON a.surface_id = s.surface_id
             WHERE s.n_candidates > 1 AND s.lexical_class IS NULL
-            ORDER BY s.occurrences DESC, s.surface_id, a.attested DESC;",
+                  AND s.language IS NULL
+            ORDER BY s.occurrences DESC, s.surface_id, a.attested DESC;
+
+         CREATE VIEW review_aramaic AS
+            SELECT surface_id, text, occurrences, parsed
+            FROM surface
+            WHERE language = 'aramaic'
+            ORDER BY occurrences DESC;",
     )?;
     Ok(())
 }
@@ -427,6 +472,7 @@ fn insert_analyses(
             &m.prefix,
             m.vav_consecutive as i64,
             m.attested as i64,
+            m.object_suffix.map(|p| p.label()).unwrap_or_default(),
         ))?;
     }
     for n in noun {
@@ -497,11 +543,19 @@ fn build_hebrew(
         noun: noun_analyses,
     } = analyze_surfaces(&surfaces, lexicon_db)?;
 
-    // Occurrence counts per surface.
+    // Occurrence counts per surface, plus a per-surface flag for surfaces that
+    // occur *only* in Biblical Aramaic verses (and so are Aramaic, not Hebrew
+    // the engine failed on). A surface shared with any Hebrew verse is treated
+    // as Hebrew, so words on the mixed Daniel 2:4 boundary stay analysable.
     let mut counts = vec![0u32; surfaces.len()];
+    let mut has_hebrew = vec![false; surfaces.len()];
     for occ in &occurrences {
         counts[occ.surface_id] += 1;
+        if !is_aramaic(occ.book, occ.chapter, occ.verse) {
+            has_hebrew[occ.surface_id] = true;
+        }
     }
+    let aramaic_only: Vec<bool> = has_hebrew.iter().map(|&h| !h).collect();
 
     if output.exists() {
         std::fs::remove_file(output)
@@ -521,12 +575,13 @@ fn build_hebrew(
     {
         let mut surf_stmt = tx.prepare(
             "INSERT INTO surface(surface_id, text, occurrences, n_candidates, \
-             n_noun_candidates, parsed, attested, lexical_class) \
-             VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
+             n_noun_candidates, parsed, attested, lexical_class, language) \
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
         )?;
         let mut ana_stmt = tx.prepare(
             "INSERT INTO analyses(surface_id, root, gizra, binyan, form, pgn, prefix, \
-             vav_consecutive, attested) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
+             vav_consecutive, attested, obj_suffix) \
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)",
         )?;
         let mut noun_stmt = tx.prepare(
             "INSERT INTO noun_analyses(surface_id, stem, kind, label, prefix) \
@@ -544,6 +599,7 @@ fn build_hebrew(
                 (!matches.is_empty() || !nouns.is_empty()) as i64,
                 any_attested as i64,
                 classes[id],
+                aramaic_only[id].then_some("aramaic"),
             ))?;
             insert_analyses(id as i64, matches, nouns, &mut ana_stmt, &mut noun_stmt)?;
         }
@@ -579,6 +635,100 @@ fn build_hebrew(
     Ok((surfaces.len(), occurrences.len(), parsed_surfaces))
 }
 
+/// Read-only preview for the fast iteration loop: take the `limit` highest-
+/// frequency surfaces still in `review_missing` and run the *current* analysis
+/// pipeline over them, printing what each would now resolve to — verb analysis,
+/// noun analysis, lexical class, or still-missing — without touching the DB.
+///
+/// This is the tight inner loop: make a parser/lexicon change, run
+/// `db review-missing -n N` to see which of the top-N missing your change now
+/// accounts for, repeat. When satisfied, commit the change to the DB with the
+/// incremental `db gen-hebrew -n N` pass. Returns (previewed, would_resolve).
+pub fn preview_missing(
+    output: &Path,
+    lexicon_db: Option<&Path>,
+    limit: usize,
+) -> Result<(usize, usize)> {
+    let db =
+        Connection::open(output).with_context(|| format!("opening {}", output.display()))?;
+
+    let missing: Vec<(i64, String, i64)> = {
+        let mut sql = String::from(
+            "SELECT surface_id, text, occurrences FROM surface \
+             WHERE n_candidates = 0 AND n_noun_candidates = 0 AND lexical_class IS NULL \
+             AND language IS NULL \
+             ORDER BY occurrences DESC, surface_id",
+        );
+        if limit > 0 {
+            sql.push_str(&format!(" LIMIT {limit}"));
+        }
+        let mut stmt = db.prepare(&sql)?;
+        let rows = stmt.query_map([], |r| {
+            Ok((r.get::<_, i64>(0)?, r.get::<_, String>(1)?, r.get::<_, i64>(2)?))
+        })?;
+        rows.collect::<rusqlite::Result<_>>()?
+    };
+
+    let texts: Vec<String> = missing.iter().map(|(_, t, _)| t.clone()).collect();
+    let SurfaceAnalysis {
+        classes,
+        verb,
+        noun,
+    } = analyze_surfaces(&texts, lexicon_db)?;
+
+    let mut resolved = 0usize;
+    println!("Previewing top {} missing surfaces:\n", missing.len());
+    for (i, (_, text, occ)) in missing.iter().enumerate() {
+        let v = &verb[i];
+        let n = &noun[i];
+        let class = classes[i];
+        let result = if let Some(c) = class {
+            format!("→ lexical:{c}")
+        } else if !v.is_empty() {
+            let m = &v[0];
+            let root: String = m.root.letters.iter().collect();
+            let more = if v.len() > 1 {
+                format!(" (+{} more)", v.len() - 1)
+            } else {
+                String::new()
+            };
+            let suf = m
+                .object_suffix
+                .map(|p| format!(" +{}", p.label()))
+                .unwrap_or_default();
+            format!(
+                "→ verb {root} {} {} {}{}{}",
+                m.binyan.name(),
+                m.form.name(),
+                m.pgn.label(),
+                suf,
+                more
+            )
+        } else if !n.is_empty() {
+            let m = &n[0];
+            let more = if n.len() > 1 {
+                format!(" (+{} more)", n.len() - 1)
+            } else {
+                String::new()
+            };
+            format!("→ noun {} {}{}", m.stem, m.label, more)
+        } else {
+            "still missing".to_string()
+        };
+        let resolves = class.is_some() || !v.is_empty() || !n.is_empty();
+        if resolves {
+            resolved += 1;
+        }
+        let mark = if resolves { "✓" } else { " " };
+        println!("  {mark} {text:<20} (×{occ:<3})  {result}");
+    }
+    println!(
+        "\n{resolved} of {} would now resolve.",
+        missing.len()
+    );
+    Ok((missing.len(), resolved))
+}
+
 /// Incremental pass: re-analyse only the surfaces still in `review_missing`
 /// (no verb/noun analysis, no lexical class) and update them in place. Existing
 /// rows for already-resolved surfaces are left untouched, so this is cheap to
@@ -598,6 +748,7 @@ fn update_missing(
         let mut sql = String::from(
             "SELECT surface_id, text FROM surface \
              WHERE n_candidates = 0 AND n_noun_candidates = 0 AND lexical_class IS NULL \
+             AND language IS NULL \
              ORDER BY occurrences DESC, surface_id",
         );
         if limit > 0 {
@@ -625,7 +776,8 @@ fn update_missing(
         )?;
         let mut ana_stmt = tx.prepare(
             "INSERT INTO analyses(surface_id, root, gizra, binyan, form, pgn, prefix, \
-             vav_consecutive, attested) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
+             vav_consecutive, attested, obj_suffix) \
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)",
         )?;
         let mut noun_stmt = tx.prepare(
             "INSERT INTO noun_analyses(surface_id, stem, kind, label, prefix) \

@@ -135,6 +135,17 @@ const FUNCTION_WORDS: &[&str] = &[
     // מִלְמָעְלָה "from above", פִּתְאֹם "suddenly", אָכֵן "surely/indeed",
     // חָלִילָה "far be it".
     "מִלְמָעְלָה", "פִּתְאֹם", "אָכֵן", "חָלִילָה",
+    // Optative particle לוּ / לֻא "if only, would that" (Strong 3863) — closed-
+    // class, never a verb. (לֹא the negative is already listed above.)
+    "לוּ", "לֻא",
+    // Aramaic closed-class preposition + pronominal suffix לֵהּ "to him", and the
+    // Aramaic 3fs/3mp/2mp variants; never a Hebrew verb.
+    "לֵהּ", "לַהּ", "לְהוֹן", "לְכוֹן", "לָנָא",
+    // Poetic/relative particles and interjections, plus a pronoun spelling
+    // variant — all closed-class, never verbs: זוּ "which/this" (relative,
+    // Strong 2098), אֲהָהּ "alas", רֵיקָם "in vain/empty-handed" (frozen adverb),
+    // אֲנָחְנוּ "we" (defective spelling of אֲנַחְנוּ already listed).
+    "זוּ", "אֲהָהּ", "רֵיקָם", "אֲנָחְנוּ",
 ];
 
 /// The Tetragrammaton and its surface variants. The lexicon carries the divine

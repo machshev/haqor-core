@@ -133,6 +133,22 @@ enum DbCommands {
         #[arg(short = 'n', long, default_value_t = 0)]
         limit: usize,
     },
+    /// Fast iteration loop: re-run the *current* parser over the N highest-
+    /// frequency surfaces still in `review_missing` and print what each would
+    /// now resolve to, without modifying the database. Make a parser fix, run
+    /// this to see which top-N missing it accounts for, repeat; commit with
+    /// `gen-hebrew -n N` once satisfied.
+    ReviewMissing {
+        /// Hebrew database path
+        #[arg(short, long, default_value = "data/hebrew.db")]
+        output: PathBuf,
+        /// Lexicon database (defaults to the in-repo data/lexicon.db).
+        #[arg(short, long, default_value = "data/lexicon.db")]
+        lexicon_db: Option<PathBuf>,
+        /// Only preview the N highest-frequency missing surfaces (0 = all).
+        #[arg(short = 'n', long, default_value_t = 30)]
+        limit: usize,
+    },
     /// Prototype: reverse-parse every OT word in the `bible` table and report
     /// how much of the text the morphology generator can account for.
     ParseOt {
@@ -140,10 +156,10 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/bible.db")]
         bible_db: PathBuf,
         /// Limit to a single OT book (Haqor numbering, 1..=39)
-        #[arg(short, long)]
+        #[arg(long)]
         book: Option<u8>,
         /// Cap on verses processed (0 = all)
-        #[arg(short, long, default_value_t = 0)]
+        #[arg(short = 'n', long, default_value_t = 0)]
         limit: usize,
     },
     /// Generate the `english` Strong's gloss table from the HebrewLexicon
@@ -177,7 +193,7 @@ enum DbCommands {
         #[arg(short, long)]
         soft: bool,
         /// Cap on gold verb tokens scored (0 = all)
-        #[arg(short, long, default_value_t = 0)]
+        #[arg(short = 'n', long, default_value_t = 0)]
         limit: usize,
     },
 }
@@ -270,6 +286,13 @@ fn main() -> Result<()> {
                     occurrences,
                     output.display()
                 );
+            }
+            DbCommands::ReviewMissing {
+                output,
+                lexicon_db,
+                limit,
+            } => {
+                haqor_core::generate::preview_missing(&output, lexicon_db.as_deref(), limit)?;
             }
             DbCommands::ParseOt {
                 bible_db,
@@ -411,11 +434,16 @@ fn print_parse(word: &str) {
         };
         let label = m.pgn.label();
         let label = if label.is_empty() { "-" } else { &label };
+        let suffix = m
+            .object_suffix
+            .map(|p| format!(" + obj {}", p.label()))
+            .unwrap_or_default();
         println!(
-            "  {mark}{prefix}root {root}  {:<8} {:<14} {}",
+            "  {mark}{prefix}root {root}  {:<8} {:<14} {}{}",
             m.binyan.name(),
             m.form.name(),
             label,
+            suffix,
         );
     }
     println!();
