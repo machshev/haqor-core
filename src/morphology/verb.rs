@@ -4377,12 +4377,19 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     // final guttural+patah through.
     let guttural_a =
         matches!(last.letter, letter::HET | letter::AYIN) && last.vowel == Some(Patah);
+    // A Hiphil long-î host whose C3 is a quiescent aleph (the doubly-weak hollow
+    // III-aleph בוא: yāḇîʔ יָבִיא): the suffix joins that aleph (yᵊḇîʔēm יְבִיאֵם),
+    // so let a final aleph through when the …C(hiriq)-YOD-aleph shape is present.
+    let plene_i = n >= 4
+        && seq[n - 2].letter == letter::YOD
+        && seq[n - 2].vowel.is_none()
+        && seq[n - 3].vowel == Some(Hiriq);
     // Otherwise the bare 3ms ends in a true final consonant (C3 of yiqṭōl, the
     // nun of wayyittēn): vowelless, or the Masoretic silent sheva `render` writes
     // under a final kaf (יְבָרֵךְ). A real vowel or a mater final (HE/ALEF, or a
     // vowelless VAV/YOD) means a weak/derived shape we don't model here.
     if (matches!(last.vowel, Some(v) if v != Vowel::Sheva) && !guttural_a)
-        || matches!(last.letter, letter::HE | letter::ALEF)
+        || (matches!(last.letter, letter::HE | letter::ALEF) && !plene_i)
         || matches!(last.letter, letter::VAV | letter::YOD)
     {
         return Vec::new();
@@ -4399,17 +4406,11 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     } else {
         &[Sheva, Segol]
     };
-    // Hiphil (strong or hollow) carries a long hiriq-yod î theme before C3
-    // (yaqrîḇ יַקְרִיב, yāšîḇ יָשִׁיב) which is *retained* under a suffix rather
-    // than reduced: yaqrîḇēhû יַקְרִיבֵהוּ, yᵊšîḇennû יְשִׁיבֶנּוּ. Detect that
-    // …C(hiriq)-YOD-C3 shape; the suffix joins C3 with the î kept. A qamats
-    // preformative (the hollow Hiphil yā-/ʾā-) reduces propretonically when the
-    // stress shifts onto the suffix (ʾāšîḇ → ʾăšîḇennû אֲשִׁיבֶנּוּ); the strong
-    // Hiphil's patah preformative stays.
-    let plene_i = n >= 4
-        && seq[n - 2].letter == letter::YOD
-        && seq[n - 2].vowel.is_none()
-        && seq[n - 3].vowel == Some(Hiriq);
+    // The Hiphil long hiriq-yod î theme before C3 (yaqrîḇ יַקְרִיב, yāšîḇ יָשִׁיב)
+    // is *retained* under a suffix rather than reduced: yaqrîḇēhû יַקְרִיבֵהוּ,
+    // yᵊšîḇennû יְשִׁיבֶנּוּ (`plene_i`, computed above). The suffix joins C3 with
+    // the î kept; a qamats preformative (hollow yā-/ʾā-) reduces propretonically
+    // (ʾāšîḇ → ʾăšîḇennû אֲשִׁיבֶנּוּ), the strong Hiphil's patah stays.
     let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
         if plene_i {
             let mut s = seq.clone();
