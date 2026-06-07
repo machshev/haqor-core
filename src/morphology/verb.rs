@@ -3626,10 +3626,19 @@ fn apply_pe_guttural(seq: &mut [Cons], root: &Root, binyan: Binyan, form: Form, 
                 changed = true;
             }
         }
+        // The C1 hataf echoes the preformative: the segol prefixes (he-/ne-
+        // perfect, Niphal participle ne-) take hataf-segol — heḥĕzîq, neʔĕmān —
+        // but the Hiphil participle keeps its patah ma- preformative, so its
+        // guttural takes hataf-patah: maḥărîd (מַחֲרִיד), maʕămîd (מַעֲמִיד).
+        let prefix_patah = seq.first().is_some_and(|c| c.vowel == Some(Vowel::Patah));
         if let Some(i) = radical_idx(seq, 1)
             && seq[i].vowel == Some(Vowel::Sheva)
         {
-            seq[i].vowel = Some(Vowel::HatafSegol);
+            seq[i].vowel = Some(if prefix_patah {
+                Vowel::HatafPatah
+            } else {
+                Vowel::HatafSegol
+            });
             changed = true;
         }
         return changed;
