@@ -362,6 +362,11 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     (a_text != text).then_some(a_text)
                 })
                 .flatten();
+                // Paragogic-nun twin of the vocalic-suffix imperfect (tōʔmᵊrûn
+                // תֹּאמְרוּן, yᵊšûḇûn). Any binyan; the long imperfect only.
+                let paragogic_nun = (form == Form::Imperfect
+                    && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
+                .then(|| paragogic_nun_variant(&text));
                 // III-Guttural Qal Perfect vocalic suffix sheva variant —
                 // יָדְעוּ beside יָדָעוּ, יָדְעָה beside יָדָעָה.
                 let lamed_guttural_perf_sheva = (binyan == Binyan::Qal
@@ -499,6 +504,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_guttural_perf_sheva,
                     qal_a_theme,
                     guttural_silent_sheva,
+                    paragogic_nun,
                 ]
                 .into_iter()
                 .flatten()
@@ -3743,6 +3749,17 @@ fn maqaf_segol_variant(text: &str) -> Option<String> {
     }
     seq[n - 2].vowel = Some(Vowel::Segol);
     Some(hebrew::render(&seq))
+}
+
+/// Paragogic-nun twin of a vocalic-suffix imperfect: the long/energic imperfect
+/// appends a nun to the plural -û / 2fs -î ending — tōʔmᵊrûn (תֹּאמְרוּן),
+/// yᵊšûḇûn (יְשׁוּבוּן), taʕăśûn (תַּעֲשׂוּן), tiqṭᵊlîn. Re-rendered so the nun takes
+/// its word-final form. The -ûn spelling differs from the bare -û, so this only
+/// adds recall.
+fn paragogic_nun_variant(text: &str) -> String {
+    let mut seq = hebrew::parse_pointed(text);
+    seq.push(Cons::new(letter::NUN));
+    hebrew::render(&seq)
 }
 
 /// Stative twin(s) of a Qal perfect 3ms: the dynamic qāṭal default (ṭāhar) gives
