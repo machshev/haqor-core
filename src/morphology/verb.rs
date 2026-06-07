@@ -430,6 +430,18 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular)
                 {
                     hiphil_imperative_object_suffixes(&text)
+                } else if form == Form::Imperative
+                    && matches!(
+                        (pgn.person, pgn.gender, pgn.number),
+                        // The vocalic-subject imperatives (2mp -û, 2fs -î) take
+                        // object suffixes on the retained subject vowel exactly
+                        // like the imperfect plural host: hallᵊlûhû (הַלְלוּהוּ),
+                        // šmāʕûnî. Binyan-agnostic — operates on the surface.
+                        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Plural))
+                            | (Some(Person::Second), Some(Gender::Feminine), Some(Number::Singular))
+                    )
+                {
+                    imperfect_vocalic_object_suffixes(&text)
                 } else {
                     Vec::new()
                 };
