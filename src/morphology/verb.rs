@@ -3159,7 +3159,14 @@ fn apply_lamed_he(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
             match perfect_suffix_kind(pgn) {
                 Suffix::Consonantal | Suffix::Heavy => {
                     if let Some(i) = c2_idx {
-                        seq[i].vowel = Some(Hiriq);
+                        // Qal/Piel/Pual take hiriq before the î-mater (ʿāśîtî,
+                        // ṣiwwîtî); the Hiphil and Niphal take tsere — hirbêtî
+                        // (הִרְבֵּיתִי), higlêtā, niḡlêtî.
+                        seq[i].vowel = Some(if matches!(binyan, Binyan::Hiphil | Binyan::Niphal) {
+                            Tsere
+                        } else {
+                            Hiriq
+                        });
                     }
                     if let Some(i) = c3_idx {
                         seq[i] = Cons::mater(letter::YOD);
