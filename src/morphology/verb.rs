@@ -273,6 +273,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                 .then(|| hiphil_plene_variant(&text))
                 .flatten();
+                // Defective twin of the vocalic-suffix Hiphil — the dominant
+                // prose wayyiqtol (wayyaggidû וַיַּגִּדוּ beside וַיַּגִּידוּ).
+                let hiphil_defective = (binyan == Binyan::Hiphil
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+                    && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
+                .then(|| hiphil_defective_variant(&text))
+                .flatten();
                 // Pausal twin of the Piel/Hithpael vocalic-suffix imperfect:
                 // the reduced theme sheva restores to tsere in pause
                 // (yᵉḏabbᵊrû → yᵉḏabbērû, יְדַבֵּרוּ).
@@ -441,6 +448,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     paragogic,
                     hiphil_apoc,
                     hiphil_plene,
+                    hiphil_defective,
                     piel_pausal,
                     qal_pausal,
                     guttural_imperative_pausal,
@@ -4149,20 +4157,37 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
         return Vec::new();
     }
     let last = seq[n - 1];
-    // The bare 3ms ends in a true final consonant (C3 of yiqṭōl, the nun of
-    // wayyittēn). It is either vowelless or carries the Masoretic silent sheva
-    // that `render` writes under a final kaf (יְבָרֵךְ). A real vowel or a mater
-    // final (HE/ALEF, or a vowelless VAV/YOD) means a weak/derived shape we
-    // don't model here.
-    if matches!(last.vowel, Some(v) if v != Vowel::Sheva)
+    // A III-guttural verb's bare 3ms ends in that guttural carrying patah — the
+    // a-theme (Qal yišmaʕ יִשְׁמַע) or the guttural-lowered Piel theme (yᵉšallaḥ
+    // יְשַׁלַּח). The suffixed forms reduce that theme and the guttural takes the
+    // link vowel (yišmāʕēnî יִשְׁמָעֵנִי, yᵉšallᵊḥēm יְשַׁלְּחֵם), so allow this
+    // final guttural+patah through.
+    let guttural_a =
+        matches!(last.letter, letter::HET | letter::AYIN) && last.vowel == Some(Patah);
+    // Otherwise the bare 3ms ends in a true final consonant (C3 of yiqṭōl, the
+    // nun of wayyittēn): vowelless, or the Masoretic silent sheva `render` writes
+    // under a final kaf (יְבָרֵךְ). A real vowel or a mater final (HE/ALEF, or a
+    // vowelless VAV/YOD) means a weak/derived shape we don't model here.
+    if (matches!(last.vowel, Some(v) if v != Vowel::Sheva) && !guttural_a)
         || matches!(last.letter, letter::HE | letter::ALEF)
         || matches!(last.letter, letter::VAV | letter::YOD)
     {
         return Vec::new();
     }
     let mut out = Vec::new();
+    // An a-theme base (C2 patah — the Qal III-guttural yišmaʕ, or a lexical
+    // stative) lengthens that pretonic a to qamats in the open syllable before
+    // the suffix (yišmāʕēnî יִשְׁמָעֵנִי), beside the sheva/segol the strong
+    // reduction gives; emit all three so generate-and-test matches whichever the
+    // surface uses. (Piel's C2 carries tsere, not patah, so it keeps sheva/segol.)
+    let c2_patah = seq[n - 2].vowel == Some(Patah);
+    let themes: &[Vowel] = if c2_patah {
+        &[Sheva, Segol, Qamats]
+    } else {
+        &[Sheva, Segol]
+    };
     let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
-        for theme in [Sheva, Segol] {
+        for &theme in themes {
             let mut s = seq.clone();
             s[n - 2].vowel = Some(theme);
             s[n - 1].vowel = Some(link);
@@ -4503,6 +4528,31 @@ fn hiphil_plene_variant(text: &str) -> Option<String> {
         return None;
     }
     seq.insert(i + 1, Cons::new(letter::YOD));
+    Some(hebrew::render(&seq))
+}
+
+/// Defective alternant of a plene Hiphil imperfect/jussive/wayyiqtol with a
+/// vocalic suffix: the long theme î is written with a yod mater in the base
+/// (yaggîdû יַגִּידוּ, yaqrîbû יַקְרִיבוּ), but the Masoretic text very commonly
+/// drops the mater (yaggidû יַגִּדוּ, wayyaggidû וַיַּגִּדוּ — the dominant prose
+/// wayyiqtol shape). Removes the yod mater that follows the theme C2's hiriq.
+/// Returns `None` when the theme carries no such yod (already defective, or the
+/// yod is the suffix as in the 2fs תַּקְרִיבִי).
+fn hiphil_defective_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    // The prefix is patah and C1 a sheva, so the first plain hiriq is the theme
+    // C2's; a vowelless yod immediately after it is the mater to drop.
+    let i = seq.iter().position(|c| c.vowel == Some(Vowel::Hiriq))?;
+    let yod = seq.get(i + 1)?;
+    if yod.letter != letter::YOD || yod.vowel.is_some() || yod.dagesh {
+        return None;
+    }
+    // Keep at least the suffix vowel beyond the dropped yod, so we never strip a
+    // word-final plene yod (which would be the 2fs/1cs suffix, not the mater).
+    if i + 2 >= seq.len() {
+        return None;
+    }
+    seq.remove(i + 1);
     Some(hebrew::render(&seq))
 }
 
