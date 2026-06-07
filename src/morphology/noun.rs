@@ -233,6 +233,62 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
             });
         }
     }
+    // Geminate-origin monosyllabic nouns (בַּד, כֵּן, עֵת, חֹק, כֹּל…) double their
+    // final consonant before a pronominal suffix and shorten the stem vowel to
+    // its short a/i/u counterpart: baddô בַּדּוֹ, kannô כַּנּוֹ, ʕittô עִתּוֹ,
+    // ḥuqqô חֻקּוֹ, lᵊḇaddᵊḵā. The base-vowel class is lexical and we don't mark
+    // it, so emit all three short-vowel variants as generate-and-test alternants;
+    // only the attested one matches a surface, the rest match nothing. Restricted
+    // to a true CvC monosyllable whose final radical can take a forte dagesh
+    // (excludes the gutturals and resh).
+    if stem.kind == NounStemKind::Masculine
+        && let [c1, c2] = stem.absolute_singular.as_slice()
+        && c1.vowel.is_some()
+        && c2.vowel.is_none()
+        && !c2.dagesh
+        && !hebrew::is_guttural(c2.letter)
+        && c2.letter != letter::RESH
+    {
+        for short in [Vowel::Patah, Vowel::Hiriq, Vowel::Qubuts] {
+            let gem_base = |connector: Option<Vowel>| {
+                let mut c1c = c1.clone();
+                c1c.vowel = Some(short);
+                let mut c2c = c2.clone();
+                c2c.dagesh = true;
+                c2c.vowel = connector;
+                vec![c1c, c2c]
+            };
+            for &(p, g, n) in PRON_SUFFIXES {
+                let mut base = gem_base(None);
+                append_pron_suffix(&mut base, false, p, g, n);
+                out.push(NounInflection {
+                    label: format!(
+                        "Sg + {}{}{} (geminate)",
+                        pgn_letters(p, g, n).0,
+                        pgn_letters(p, g, n).1,
+                        pgn_letters(p, g, n).2
+                    ),
+                    text: hebrew::render(&base),
+                });
+            }
+            // The heavy 2nd-person suffixes take a segol connector on the doubled
+            // radical rather than the bare sheva: lᵊḇaddᵊḵā beside lᵊḇaddɛḵā
+            // (לְבַדֶּךָ), baddᵊḵem beside baddɛḵem.
+            let mut k2ms = gem_base(Some(Vowel::Segol));
+            k2ms.push(Cons::new(letter::KAF).with_vowel(Vowel::Qamats));
+            out.push(NounInflection {
+                label: "Sg + 2ms (geminate)".to_string(),
+                text: hebrew::render(&k2ms),
+            });
+            let mut k2mp = gem_base(Some(Vowel::Segol));
+            k2mp.push(Cons::new(letter::KAF).with_vowel(Vowel::Segol));
+            k2mp.push(Cons::new(letter::MEM));
+            out.push(NounInflection {
+                label: "Sg + 2mp (geminate)".to_string(),
+                text: hebrew::render(&k2mp),
+            });
+        }
+    }
     // Pronominal suffixes (plural base).
     for &(p, g, n) in PRON_SUFFIXES {
         let label = format!(
