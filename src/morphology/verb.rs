@@ -3164,6 +3164,15 @@ fn apply_lamed_he(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
                             seq[i + 1].dagesh = false;
                         }
                     }
+                    // The 2fs ending is a word-final tav here (ʿāśît עָשִׂית,
+                    // bānît בָּנִית): its silent sheva is not written in the MT,
+                    // so drop it. Only the 2fs ends in a bare consonant among the
+                    // consonantal/heavy suffixes (1cs -î, 2ms -ā, 1cp -û, 2mp -m).
+                    if let Some(last) = seq.last_mut()
+                        && last.vowel == Some(Sheva)
+                    {
+                        last.vowel = None;
+                    }
                 }
                 Suffix::Vocalic => {
                     if let Some(i) = c3_idx {
