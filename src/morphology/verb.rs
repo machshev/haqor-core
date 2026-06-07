@@ -374,11 +374,20 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 } else {
                     Vec::new()
                 };
-                // Pronominal object-suffixed forms for the 3ms host (computed
-                // from &text before it is moved into the base VerbForm below).
-                let object_suffixed: Vec<(Pgn, String)> = if pgn
-                    == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)
+                // Pronominal object-suffixed forms (computed from &text before it
+                // is moved into the base VerbForm below).
+                let object_suffixed: Vec<(Pgn, String)> = if matches!(
+                    form,
+                    Form::Imperfect | Form::Jussive | Form::Wayyiqtol
+                ) && imperfect_suffix_kind(pgn) == Suffix::Zero
                 {
+                    // Consonantal (zero-suffix) imperfect hosts — the 3ms and the
+                    // other singular subjects 1cs/2ms/3fs (and 1cp) — all take
+                    // object suffixes the same way: the prefix differs but the
+                    // stem reduction and linking vowel do not (ʾešmᵊrēhû
+                    // אֶשְׁמְרֵהוּ, tišmᵊrennû).
+                    imperfect_object_suffixes(&text, root)
+                } else if pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular) {
                     match (binyan, form) {
                         (_, Form::Perfect) if root.lamed() == letter::HE => {
                             lamed_he_perfect_object_suffixes(&text)
@@ -386,9 +395,6 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         (Binyan::Qal, Form::Perfect) => qal_perfect_object_suffixes(root),
                         (Binyan::Piel | Binyan::Pual | Binyan::Hithpael, Form::Perfect) => {
                             derived_perfect_object_suffixes(&text)
-                        }
-                        (_, Form::Imperfect | Form::Jussive | Form::Wayyiqtol) => {
-                            imperfect_object_suffixes(&text, root)
                         }
                         _ => Vec::new(),
                     }
@@ -4280,7 +4286,32 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     } else {
         &[Sheva, Segol]
     };
+    // Hiphil (strong or hollow) carries a long hiriq-yod î theme before C3
+    // (yaqrîḇ יַקְרִיב, yāšîḇ יָשִׁיב) which is *retained* under a suffix rather
+    // than reduced: yaqrîḇēhû יַקְרִיבֵהוּ, yᵊšîḇennû יְשִׁיבֶנּוּ. Detect that
+    // …C(hiriq)-YOD-C3 shape; the suffix joins C3 with the î kept. A qamats
+    // preformative (the hollow Hiphil yā-/ʾā-) reduces propretonically when the
+    // stress shifts onto the suffix (ʾāšîḇ → ʾăšîḇennû אֲשִׁיבֶנּוּ); the strong
+    // Hiphil's patah preformative stays.
+    let plene_i = n >= 4
+        && seq[n - 2].letter == letter::YOD
+        && seq[n - 2].vowel.is_none()
+        && seq[n - 3].vowel == Some(Hiriq);
     let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
+        if plene_i {
+            let mut s = seq.clone();
+            if s[0].vowel == Some(Qamats) {
+                s[0].vowel = Some(if hebrew::is_guttural(s[0].letter) {
+                    HatafPatah
+                } else {
+                    Sheva
+                });
+            }
+            s[n - 1].vowel = Some(link);
+            s.extend_from_slice(tail);
+            out.push((obj, hebrew::render(&s)));
+            return;
+        }
         for &theme in themes {
             let mut s = seq.clone();
             s[n - 2].vowel = Some(theme);
