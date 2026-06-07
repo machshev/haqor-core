@@ -885,4 +885,6 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("עֵדֻת", "עֵדוּת", "testimony"),
     ("חַצְרֵיהֶן", "חָצֵר", "court; enclosure"),
     ("יְמָנִית", "יְמָנִי", "right (side)"),
+    ("מָעְלָה", "מַעֲלָה", "upwards"),
+    ("אִשֵּׁה", "אִשָּׁה", "burnt-offering; sacrifice"),
 ];

@@ -36,7 +36,7 @@
 //! fixes in the morphology code (or a future lexeme inventory), not hand-edits
 //! to the data.
 
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::path::Path;
 
 use anyhow::{Context, Result};
@@ -44,9 +44,11 @@ use log::info;
 use rayon::prelude::*;
 use rusqlite::Connection;
 
-use crate::morphology::{NounInventory, NounMatch, ReverseIndex, VerbMatch, parse_word_indexed};
+use crate::morphology::{
+    NounInventory, NounMatch, ReverseIndex, VerbMatch, parse_word_filtered, parse_word_indexed,
+};
 
-use super::lexicon_db::{load_noun_inventory, load_proper_inventory};
+use super::lexicon_db::{load_noun_inventory, load_proper_inventory, load_root_inventory};
 use super::prefilter::Prefilter;
 
 /// OT books are 1..=39 in Haqor (Tanakh-order) numbering; NT starts at 40.
@@ -409,10 +411,27 @@ struct SurfaceAnalysis {
     noun: Vec<Vec<NounMatch>>,
 }
 
+/// How the verb pass enumerates candidate analyses. Both return the same matches
+/// for a given surface (modulo the optional root filter); they only differ in the
+/// time/space tradeoff — see [`analyze_surfaces`].
+enum VerbStrategy<'a> {
+    /// Build the all-roots reverse index once, then O(1)-look-up each surface.
+    /// Worth its ~22s/2GB build only for large batches (the full rebuild).
+    Indexed,
+    /// Per-surface generate-and-test, optionally restricted to a lexicon root
+    /// inventory. Cheap for a handful of surfaces; with a filter, cheap for many.
+    PerSurface(Option<&'a HashSet<[char; 3]>>),
+}
+
 /// Run the lexical pre-filter, verb parser and noun parser over `surfaces`.
 /// Loads the prefilter and noun inventory from `lexicon_db` when given; without
 /// a lexicon, every surface is verb-parsed with no class and no noun pass.
-fn analyze_surfaces(surfaces: &[String], lexicon_db: Option<&Path>) -> Result<SurfaceAnalysis> {
+/// `strategy` selects the verb-enumeration tradeoff (see [`VerbStrategy`]).
+fn analyze_surfaces(
+    surfaces: &[String],
+    lexicon_db: Option<&Path>,
+    strategy: VerbStrategy,
+) -> Result<SurfaceAnalysis> {
     // Optional lexical pre-filter: recognise non-verb tokens (closed-class
     // function words + proper nouns) so they bypass the verb parser entirely.
     let prefilter = match lexicon_db {
@@ -424,26 +443,64 @@ fn analyze_surfaces(surfaces: &[String], lexicon_db: Option<&Path>) -> Result<Su
         .map(|t| prefilter.as_ref().and_then(|pf| pf.classify(t)))
         .collect();
 
-    // Reverse-parse every distinct surface in parallel. Build the reverse index
-    // once (all roots' paradigms, keyed by canonical form) and look each surface
-    // up — orders of magnitude faster than per-surface generate-and-test, and it
-    // returns exactly what `parse_word` would. Function words always bypass the
-    // parser; proper nouns are still parsed (the verb-aware rule lets a name
-    // yield to a plausible verb reading); unclassified tokens parse normally.
-    info!("Building reverse-parse index over all triliteral roots");
-    let index = ReverseIndex::build();
-    info!("Reverse-parsing {} distinct surfaces", surfaces.len());
-    let raw: Vec<Vec<VerbMatch>> = surfaces
-        .par_iter()
-        .zip(lexical.par_iter())
-        .map(|(t, class)| {
-            if *class == Some("function") {
-                Vec::new()
-            } else {
-                parse_word_indexed(t, &index, None)
-            }
-        })
-        .collect();
+    // Reverse-parse every distinct surface in parallel. Two strategies (see
+    // [`VerbStrategy`]) that the caller picks by batch size:
+    //
+    // - `Indexed` (full rebuild, ~40k surfaces): build the all-roots reverse index
+    //   once (every triliteral root's ~2.7k-form paradigm, keyed by canonical
+    //   form) and look each surface up. The ~22s/2GB index build amortises over
+    //   tens of thousands of O(1) lookups, and it stays unfiltered.
+    // - `PerSurface(roots)` (preview / small `-n`): skip the index and run
+    //   per-surface generate-and-test. With a lexicon root filter each surface
+    //   only generates paradigms for the *real* roots its letters could spell (a
+    //   handful), instead of the ~700 letter-combinations an unfiltered scan would
+    //   — and the 22s index build is avoided entirely. This is what makes
+    //   `db review-missing -n N` snappy. Note: a root filter means the verb pass
+    //   sees only attested roots, so the preview is faithful to the *filtered*
+    //   analysis; a surface that would only resolve to a non-lexicon (likely
+    //   spurious) root shows as still-missing here. `PerSurface(None)` matches the
+    //   unfiltered index exactly but regenerates every candidate paradigm, so it is
+    //   only sensible for a few surfaces.
+    //
+    // Function words always bypass the parser; proper nouns are still parsed (the
+    // verb-aware rule lets a name yield to a plausible verb reading); unclassified
+    // tokens parse normally.
+    let raw: Vec<Vec<VerbMatch>> = match strategy {
+        VerbStrategy::Indexed => {
+            info!("Building reverse-parse index over all triliteral roots");
+            let index = ReverseIndex::build();
+            info!("Reverse-parsing {} distinct surfaces (indexed)", surfaces.len());
+            surfaces
+                .par_iter()
+                .zip(lexical.par_iter())
+                .map(|(t, class)| {
+                    if *class == Some("function") {
+                        Vec::new()
+                    } else {
+                        parse_word_indexed(t, &index, None)
+                    }
+                })
+                .collect()
+        }
+        VerbStrategy::PerSurface(roots) => {
+            info!(
+                "Reverse-parsing {} distinct surfaces (per-surface{})",
+                surfaces.len(),
+                if roots.is_some() { ", lexicon-filtered" } else { "" }
+            );
+            surfaces
+                .par_iter()
+                .zip(lexical.par_iter())
+                .map(|(t, class)| {
+                    if *class == Some("function") {
+                        Vec::new()
+                    } else {
+                        parse_word_filtered(t, roots)
+                    }
+                })
+                .collect()
+        }
+    };
 
     // Final exclusion is verb-aware: a proper-noun match yields to the parser
     // when it has a plausible verb reading. The stored `lexical_class` reflects
@@ -613,7 +670,7 @@ fn build_hebrew(
         classes,
         verb: analyses,
         noun: noun_analyses,
-    } = analyze_surfaces(&surfaces, lexicon_db)?;
+    } = analyze_surfaces(&surfaces, lexicon_db, VerbStrategy::Indexed)?;
 
     // Occurrence counts per surface, plus a per-surface flag for surfaces that
     // occur *only* in Biblical Aramaic verses (and so are Aramaic, not Hebrew
@@ -761,11 +818,27 @@ pub fn preview_missing(
     };
 
     let texts: Vec<String> = missing.iter().map(|(_, t, _)| t.clone()).collect();
+    // Pick the verb-parse strategy by batch size. The all-roots index costs a
+    // fixed ~22s to build but then resolves any number of surfaces; per-surface
+    // generate-and-test (filtered to the lexicon's real roots) costs ~0.2s/surface
+    // but nothing up front. For the small top-N the tight inner loop runs, going
+    // per-surface skips the 22s build entirely (~6s for the default -n 30); past
+    // the crossover the index is cheaper, so larger previews fall back to it.
+    const INDEX_CROSSOVER: usize = 80;
+    let roots = match lexicon_db {
+        Some(p) => Some(load_root_inventory(p)?),
+        None => None,
+    };
+    let strategy = if texts.len() <= INDEX_CROSSOVER {
+        VerbStrategy::PerSurface(roots.as_ref())
+    } else {
+        VerbStrategy::Indexed
+    };
     let SurfaceAnalysis {
         classes,
         verb,
         noun,
-    } = analyze_surfaces(&texts, lexicon_db)?;
+    } = analyze_surfaces(&texts, lexicon_db, strategy)?;
 
     let mut resolved = 0usize;
     let scope = match passage {
@@ -860,11 +933,13 @@ fn update_missing(
     info!("Incremental: re-analysing {} missing surfaces", missing.len());
 
     let texts: Vec<String> = missing.iter().map(|(_, t)| t.clone()).collect();
+    // This pass writes analyses into the DB, so it must match the full rebuild's
+    // unfiltered semantics — use the same indexed (all-roots) verb pass.
     let SurfaceAnalysis {
         classes,
         verb,
         noun,
-    } = analyze_surfaces(&texts, lexicon_db)?;
+    } = analyze_surfaces(&texts, lexicon_db, VerbStrategy::Indexed)?;
 
     let mut resolved = 0usize;
     let tx = db.transaction()?;

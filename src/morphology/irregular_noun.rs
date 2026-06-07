@@ -292,4 +292,45 @@ pub const IRREGULAR_NOUNS: &[IrregularNoun] = &[
             "שְׂפָתָיִם", "שְׂפָתֵינוּ",
         ],
     },
+    // תָּוֶךְ "midst": a masculine singular whose suffixed/bound base is the
+    // hollow-vav grade tôḵ- (תּוֹכ-), not the lemma pointing tāwɛḵ — the noun
+    // generator can't derive the vav-grade base, so list the attested forms.
+    IrregularNoun {
+        lemma: "תָּוֶךְ",
+        gloss: "midst",
+        forms: &[
+            "תָּוֶךְ", "תּוֹךְ", "תּוֹכוֹ", "תּוֹכָם", "תּוֹכָהּ", "תּוֹכְךָ",
+            "תּוֹכֵךְ", "תּוֹכֵנוּ", "תּוֹכְכֶם",
+        ],
+    },
+    // צָבָא "host; army": a masculine noun taking the feminine -ôt plural
+    // (ṣᵊḇāʾôt צְבָאוֹת) and an i-class -ōt suffix base (ṣiḇʾōṯām צִבְאֹתָם),
+    // which the masculine generator (-îm plural) doesn't produce.
+    IrregularNoun {
+        lemma: "צָבָא",
+        gloss: "host; army",
+        forms: &[
+            "צָבָא", "צְבָא", "צְבָאוֹת", "צִבְאוֹת", "צְבָאוֹ", "צְבָאָם",
+            "צִבְאֹתָם", "צִבְאוֹתָם", "צְבָאֲךָ", "צְבָאֵךְ", "צְבָאוֹתָיו",
+        ],
+    },
+    // פְּקֻדָּה "oversight; mustering; store": a feminine -â noun with a geminate
+    // (dageshed) middle radical and the -ōt plural; suffixed on the -t connector
+    // (pᵊquddāṯām פְּקֻדָּתָם) — the -â generator mis-reads the dageshed he tail.
+    IrregularNoun {
+        lemma: "פְּקֻדָּה",
+        gloss: "oversight; mustering; store",
+        forms: &[
+            "פְּקֻדָּה", "פְּקֻדַּת", "פְּקֻדּוֹת", "פְּקֻדֹּת", "פְּקֻדָּתוֹ",
+            "פְּקֻדָּתָם", "פְּקֻדָּתְךָ", "פְּקֻדָּתֵךְ",
+        ],
+    },
+    IrregularNoun {
+        lemma: "מֵאָה",
+        gloss: "hundred",
+        forms: &[
+            "מֵאָה", "מְאַת", "מָאתַיִם", "מָאתָיִם", "מֵאוֹת", "מֵאֹת",
+            "מֵאוֹתָיו", "מֵאוֹתָם",
+        ],
+    },
 ];

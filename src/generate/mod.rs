@@ -14,7 +14,7 @@ mod sedra;
 mod sedra_db;
 mod uxlc;
 
-pub use harness::parse_eval;
+pub use harness::{eval_from_db, parse_eval};
 pub use hebrew_db::{
     book_number, generate_hebrew, normalize_surface, parse_passage, preview_missing,
 };

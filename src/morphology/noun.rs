@@ -100,6 +100,30 @@ impl NounStem {
             absolute_singular: seq,
         }
     }
+
+    /// For a segolate stem, the same stem with its first vowel forced to each of
+    /// the three base classes — a (segol), i (tsere), u (holam). The segolate
+    /// base vowel can't be read off the absolute pointing (קֶרֶב looks a-class
+    /// but is i-class: קִרְבְּךָ), so we emit all three paradigms; exact-match
+    /// downstream keeps only the spellings that actually occur, so the wrong two
+    /// classes cost nothing. Non-segolates return just themselves.
+    pub fn class_variants(self) -> Vec<NounStem> {
+        use Vowel::*;
+        if self.kind != NounStemKind::Segolate || self.absolute_singular.is_empty() {
+            return vec![self];
+        }
+        // a-class surfaces as segol, or patah next to a guttural (naʕar נַעַר,
+        // paḥad פַּחַד); i-class as tsere; u-class as holam. Emit all four so the
+        // real one matches and a guttural a-class isn't lost.
+        [Segol, Patah, Tsere, Holam]
+            .into_iter()
+            .map(|v| {
+                let mut s = self.clone();
+                s.absolute_singular[0].vowel = Some(v);
+                s
+            })
+            .collect()
+    }
 }
 
 /// Guess a stem class from its pointed singular-absolute `Cons` sequence.
@@ -175,6 +199,39 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
             label,
             text: hebrew::render(&with_pron_suffix(stem, false, p, g, n)),
         });
+        // Archaic 3ms suffix -ēhû (e.g. לְמִינֵהוּ).
+        if (p, g, n) == (Person::Third, Gender::Masculine, Number::Singular) {
+            let mut base = match stem.kind {
+                NounStemKind::Segolate => segolate_singular_base(stem),
+                NounStemKind::FeminineHe => {
+                    let mut out = stem.absolute_singular.clone();
+                    if let Some(last) = out.last()
+                        && last.letter == letter::HE
+                    {
+                        out.pop();
+                        if let Some(prev) = out.last_mut() {
+                            prev.vowel = Some(Vowel::Qamats);
+                        }
+                        out.push(Cons::new(letter::TAV));
+                    }
+                    out
+                }
+                _ => {
+                    let mut out = stem.absolute_singular.clone();
+                    reduce_heavy_masculine(&mut out);
+                    out
+                }
+            };
+            if let Some(last) = base.last_mut() {
+                last.vowel = Some(Vowel::Tsere);
+            }
+            base.push(Cons::new(letter::HE));
+            base.push(Cons::new(letter::VAV).with_dagesh());
+            out.push(NounInflection {
+                label: "Sg + 3ms (archaic)".to_string(),
+                text: hebrew::render(&base),
+            });
+        }
     }
     // Pronominal suffixes (plural base).
     for &(p, g, n) in PRON_SUFFIXES {
@@ -318,13 +375,34 @@ fn reduce_propretonic(seq: &mut [Cons]) {
     }
 }
 
+/// Reduction before a stress-bearing ending (plural -îm/-ê or a pronominal
+/// suffix), for the masculine/sound pattern. Normally the propretonic v1
+/// reduces (דָּבָר → דְּבָרִים). But when v1 is an **unchangeable holam** — the
+/// qōṭēl / active-participle noun pattern ʔōyēḇ, šōp̄ēṭ, kōhēn — v1 stays and the
+/// pretonic v2 (tsere/qamats) reduces instead: ʔōyēḇ → ʔōyᵊḇîm / ʔōyᵊḇāw
+/// (אֹיֵב → אֹיְבִים / אֹיְבָיו), šōp̄ēṭ → šōp̄ᵊṭîm. Only for the heavy endings, so
+/// the singular construct (which keeps the tsere: שֹׁפֵט) is unaffected.
+fn reduce_heavy_masculine(seq: &mut [Cons]) {
+    use Vowel::*;
+    if seq.len() < 3 {
+        return;
+    }
+    match seq[0].vowel {
+        Some(Qamats) | Some(Tsere) => seq[0].vowel = Some(Sheva),
+        Some(Holam) if matches!(seq[1].vowel, Some(Tsere) | Some(Qamats)) => {
+            seq[1].vowel = Some(Sheva);
+        }
+        _ => {}
+    }
+}
+
 fn plural_absolute(stem: &NounStem) -> Vec<Cons> {
     use Vowel::*;
     let mut out = stem.absolute_singular.clone();
     match stem.kind {
         NounStemKind::Masculine => {
-            // Reduce first vowel propretonically, then add -îm.
-            reduce_propretonic(&mut out);
+            // Reduce before the heavy -îm ending, then add it.
+            reduce_heavy_masculine(&mut out);
             // Last consonant gets hiriq, then yod (mater), then mem.
             if let Some(last) = out.last_mut() {
                 last.vowel = Some(Hiriq);
@@ -365,7 +443,7 @@ fn plural_construct(stem: &NounStem) -> Vec<Cons> {
             // -ê: tsere + yod, no mem. Both vowels reduce (dīḇrê-style; we
             // simplify to dəḇərê-style propretonic-only reduction here).
             let mut out = stem.absolute_singular.clone();
-            reduce_propretonic(&mut out);
+            reduce_heavy_masculine(&mut out);
             if let Some(last) = out.last_mut() {
                 last.vowel = Some(Tsere);
             }
@@ -431,13 +509,23 @@ fn with_pron_suffix(stem: &NounStem, plural: bool, p: Person, g: Gender, n: Numb
     let mut out = match stem.kind {
         // Segolates restore their original CVCC base under the suffix: the
         // singular base (malk-, malkî) restores the historic vowel and silent
-        // sheva, the plural base (məlāk-, məlākay) is the qətāl- shape.
+        // sheva, the plural base (məlāk-, məlākay) is the qətāl- shape. The heavy
+        // plural suffixes (-ḵem/-ḵen/-hem/-hen) attach instead to the plural
+        // *construct* base (ʔaḏnê- → אַדְנֵיהֶם, niskê- → נִסְכֵּיהֶם), not the
+        // longer absolute base the light suffixes use (ʔăḏānɛ́ḵā).
         NounStemKind::Segolate => {
             return {
-                let mut base = if plural {
-                    segolate_plural_base(stem)
-                } else {
+                let mut base = if !plural {
                     segolate_singular_base(stem)
+                } else if is_heavy_suffix(p, n) {
+                    let mut b = segolate_plural_construct(stem); // …ê + yod mater
+                    b.pop(); // drop the yod; append_pron_suffix re-sets the ending
+                    if let Some(last) = b.last_mut() {
+                        last.vowel = None;
+                    }
+                    b
+                } else {
+                    segolate_plural_base(stem)
                 };
                 append_pron_suffix(&mut base, plural, p, g, n);
                 base
@@ -458,16 +546,23 @@ fn with_pron_suffix(stem: &NounStem, plural: bool, p: Person, g: Gender, n: Numb
             out
         }
         _ => {
-            // Propretonic reduction; pretonic stays long because the suffix
-            // carries the stress.
+            // Reduction before the suffix (which carries the stress): v1
+            // propretonic, or the qōṭēl v2 when v1 is an unchangeable holam.
             let mut out = stem.absolute_singular.clone();
-            reduce_propretonic(&mut out);
+            reduce_heavy_masculine(&mut out);
             out
         }
     };
 
     append_pron_suffix(&mut out, plural, p, g, n);
     out
+}
+
+/// The "heavy" plural pronominal suffixes — 2mp -ḵem, 2fp -ḵen, 3mp -hem,
+/// 3fp -hen — whose extra consonant shifts stress so they attach to the
+/// construct base rather than the longer light-suffix base.
+fn is_heavy_suffix(p: Person, n: Number) -> bool {
+    n == Number::Plural && matches!(p, Person::Second | Person::Third)
 }
 
 /// Attach the pronominal-suffix vowel + consonants to `out`, whose last `Cons`
@@ -796,6 +891,19 @@ mod tests {
         // קֹדֶשׁ "holiness" (u-class): qudš-.
         let forms = inflect_noun(&NounStem::segolate("קֹדֶשׁ"));
         assert_eq!(form_text(&forms, "Plural Absolute"), norm("קֳדָשִׁים"));
+    }
+
+    #[test]
+    fn inflect_qotel_noun() {
+        // אֹיֵב "enemy" (qōṭēl pattern: unchangeable holam v1, tsere v2). Under a
+        // heavy ending the tsere reduces, not the holam: אֹיְבִים / אֹיְבָיו /
+        // אֹיְבֵיכֶם — but the singular construct keeps the tsere.
+        let forms = inflect_noun(&NounStem::masculine("אֹיֵב"));
+        assert_eq!(form_text(&forms, "Singular Construct"), norm("אֹיֵב"));
+        assert_eq!(form_text(&forms, "Plural Absolute"), norm("אֹיְבִים"));
+        assert_eq!(form_text(&forms, "Pl + 3ms"), norm("אֹיְבָיו"));
+        assert_eq!(form_text(&forms, "Pl + 2mp"), norm("אֹיְבֵיכֶם"));
+        assert_eq!(form_text(&forms, "Sg + 3ms"), norm("אֹיְבוֹ"));
     }
 
     #[test]

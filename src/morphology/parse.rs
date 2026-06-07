@@ -234,6 +234,23 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
         alt[0].dagesh = false;
         targets.push(hebrew::render(&alt));
     }
+    // After a proclitic prefix, a begedkefet consonant in the stem may carry
+    // a dagesh lene that the generator does not produce (e.g. לִזְבֹּחַ vs
+    // לִזְבֹחַ). Emit a variant with all begedkefet dageshes stripped so the
+    // forms_match comparison can still succeed.
+    if strip > 0 {
+        let mut alt = remainder.to_vec();
+        let mut changed = false;
+        for c in &mut alt {
+            if hebrew::is_begedkefet(c.letter) && c.dagesh {
+                c.dagesh = false;
+                changed = true;
+            }
+        }
+        if changed {
+            targets.push(hebrew::render(&alt));
+        }
+    }
     targets
 }
 
@@ -898,5 +915,41 @@ mod tests {
         let matches = parse_word("וַיִּתְּנֵם");
         // root.letters stores base (non-final) forms: nun נ, not ן.
         assert!(has_obj(&matches, "נתנ", Form::Wayyiqtol, "3mp"));
+    }
+
+    #[test]
+    fn parses_perfect_nonsubject_object_suffix() {
+        // נְתַתִּיךָ — Qal perfect 1cs of נתן + 2ms ("I gave you").
+        let m1 = parse_word("נְתַתִּיךָ");
+        assert!(m1.iter().any(|m| m.root.letters.iter().collect::<String>() == "נתנ"
+            && m.form == Form::Perfect
+            && m.pgn.label() == "1cs"
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("2ms")));
+        // אֲהַבְתָּנוּ — Qal perfect 2ms of אהב + 1cp ("you loved us").
+        let m2 = parse_word("אֲהַבְתָּנוּ");
+        assert!(has_obj(&m2, "אהב", Form::Perfect, "1cp"));
+        // גְּנָבוּךָ — Qal perfect 3cp of גנב + 2ms ("they stole you").
+        let m3 = parse_word("גְּנָבוּךָ");
+        assert!(has_obj(&m3, "גנב", Form::Perfect, "2ms"));
+    }
+
+    #[test]
+    fn parses_participle_object_suffix() {
+        // מְצַוְּךָ — Piel participle ms of צוה (III-He) + 2ms ("the one commanding you").
+        let m1 = parse_word("מְצַוְּךָ");
+        assert!(m1.iter().any(|m| m.root.letters.iter().collect::<String>() == "צוה"
+            && m.binyan == Binyan::Piel
+            && m.form == Form::ParticipleActive
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("2ms")));
+        // שֹׁמֶרְךָ — Qal participle ms of שמר + 2ms ("the one keeping you").
+        let m2 = parse_word("שֹׁמֶרְךָ");
+        assert!(has_obj(&m2, "שמר", Form::ParticipleActive, "2ms"));
+    }
+
+    #[test]
+    fn parses_hiphil_imperative_object_suffix() {
+        // הַצִּילֵנִי — Hiphil imperative 2ms of נצל + 1cs ("deliver me").
+        let matches = parse_word("הַצִּילֵנִי");
+        assert!(has_obj(&matches, "נצל", Form::Imperative, "1cs"));
     }
 }

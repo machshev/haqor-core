@@ -201,6 +201,11 @@ enum DbCommands {
         /// Cap on gold verb tokens scored (0 = all)
         #[arg(short = 'n', long, default_value_t = 0)]
         limit: usize,
+        /// Score an already-built hebrew.db's stored analyses directly (a DB
+        /// join, no reparse) instead of re-running the parser. Ignores the
+        /// lexicon/soft options.
+        #[arg(long)]
+        from_db: Option<PathBuf>,
     },
 }
 
@@ -329,14 +334,19 @@ fn main() -> Result<()> {
                 lexicon_db,
                 soft,
                 limit,
+                from_db,
             } => {
-                haqor_core::generate::parse_eval(
-                    &morphhb,
-                    Some(&bible_db),
-                    lexicon_db.as_deref(),
-                    soft,
-                    limit,
-                )?;
+                if let Some(hebrew_db) = from_db {
+                    haqor_core::generate::eval_from_db(&morphhb, &hebrew_db, limit)?;
+                } else {
+                    haqor_core::generate::parse_eval(
+                        &morphhb,
+                        Some(&bible_db),
+                        lexicon_db.as_deref(),
+                        soft,
+                        limit,
+                    )?;
+                }
             }
         },
     }

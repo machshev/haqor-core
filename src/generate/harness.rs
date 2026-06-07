@@ -36,7 +36,9 @@ use rusqlite::Connection;
 use super::hebrew_db::normalize_surface;
 use super::lexicon_db::load_root_inventory;
 use super::prefilter::Prefilter;
-use crate::morphology::{Binyan, Form, parse_word_disambiguated, parse_word_filtered};
+use crate::morphology::{
+    Binyan, Form, ReverseIndex, parse_word_disambiguated, parse_word_indexed,
+};
 
 /// OT books are 1..=39 in Haqor numbering; NT starts at 40.
 const NT_FIRST_BOOK: u8 = 40;
@@ -296,6 +298,10 @@ pub fn parse_eval(
         println!("(root filter on: {} roots, {mode})\n", set.len());
     }
 
+    // Build the reverse index once so each gold token is a hash lookup rather
+    // than per-token generate-and-test (the same speedup the DB build uses).
+    let index = ReverseIndex::build();
+
     let score = gold
         .par_iter()
         .map(|g| {
@@ -310,9 +316,12 @@ pub fn parse_eval(
                 s.aligned = 1;
             }
             let matches = if soft {
+                // Soft (disambiguate-only) keeps the per-surface path: parse
+                // unrestricted, then drop out-of-inventory roots only when that
+                // leaves a parse. Rarely used; not on the hot default path.
                 parse_word_disambiguated(&g.surface, roots.as_ref())
             } else {
-                parse_word_filtered(&g.surface, roots.as_ref())
+                parse_word_indexed(&g.surface, &index, roots.as_ref())
             };
             // A plausible verb reading: at least one fully-modelled (attested)
             // candidate — the same signal the generate-and-test parser trusts.
@@ -371,6 +380,90 @@ pub fn parse_eval(
         .reduce(Score::default, Score::merge);
 
     print_report(&score, surfaces.is_some(), prefilter.is_some());
+    Ok(())
+}
+
+/// Score the **already-built `hebrew.db`** against OSHB gold, instead of
+/// re-running the parser. `hebrew.db.analyses` *is* the committed parser output,
+/// so this is a pure DB join — instant, and it measures exactly what shipped
+/// (the unfiltered analyses). Each gold verb token is matched to its surface's
+/// stored candidate analyses by cantillation-normalised text; a gold surface
+/// absent from the DB (the ~1% OSHB/UXLC misalignment) counts as unaligned.
+pub fn eval_from_db(morphhb_dir: &Path, hebrew_db: &Path, limit: usize) -> Result<()> {
+    let gold = collect_gold(morphhb_dir)?;
+    let gold = match limit {
+        0 => &gold[..],
+        n => &gold[..n.min(gold.len())],
+    };
+
+    // surface text → its stored verb analyses (binyan name, form name, pgn label).
+    let db = Connection::open(hebrew_db)
+        .with_context(|| format!("opening {}", hebrew_db.display()))?;
+    let mut stmt = db.prepare(
+        "SELECT s.text, a.binyan, a.form, a.pgn \
+         FROM analyses a JOIN surface s ON s.surface_id = a.surface_id",
+    )?;
+    let mut by_surface: std::collections::HashMap<String, Vec<(String, String, String)>> =
+        std::collections::HashMap::new();
+    let rows = stmt.query_map([], |r| {
+        Ok((
+            r.get::<_, String>(0)?,
+            r.get::<_, String>(1)?,
+            r.get::<_, String>(2)?,
+            r.get::<_, String>(3)?,
+        ))
+    })?;
+    for row in rows {
+        let (text, b, f, p) = row?;
+        by_surface.entry(text).or_default().push((b, f, p));
+    }
+    // Every surface present in the DB (whether or not it got a verb analysis),
+    // for the alignment metric — distinct from "parsed".
+    let mut all_surfaces = std::collections::HashSet::new();
+    {
+        let mut s = db.prepare("SELECT text FROM surface")?;
+        let rows = s.query_map([], |r| r.get::<_, String>(0))?;
+        for t in rows {
+            all_surfaces.insert(t?);
+        }
+    }
+
+    let score = gold
+        .par_iter()
+        .map(|g| {
+            let mut s = Score {
+                tokens: 1,
+                ..Default::default()
+            };
+            if all_surfaces.contains(&g.surface) {
+                s.aligned = 1;
+            }
+            let Some(cands) = by_surface.get(&g.surface).filter(|c| !c.is_empty()) else {
+                return s;
+            };
+            s.parsed = 1;
+            let (gb, gf) = (g.binyan.name(), g.form.name());
+            let full = cands
+                .iter()
+                .any(|(b, f, p)| b == gb && f == gf && *p == g.pgn);
+            let bf = cands.iter().any(|(b, f, _)| b == gb && f == gf);
+            if full {
+                s.recall_full = 1;
+                if cands.len() == 1 {
+                    s.unambiguous_correct = 1;
+                } else {
+                    s.correct_but_ambiguous = 1;
+                }
+            }
+            if bf {
+                s.recall_binyan_form = 1;
+            }
+            s
+        })
+        .reduce(Score::default, Score::merge);
+
+    println!("Scoring hebrew.db analyses vs OSHB gold (no reparse)\n");
+    print_report(&score, true, false);
     Ok(())
 }
 

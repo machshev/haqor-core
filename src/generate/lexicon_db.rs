@@ -809,6 +809,25 @@ pub fn load_root_inventory(lexicon_db: &Path) -> Result<HashSet<[char; 3]>> {
 pub fn load_noun_inventory(lexicon_db: &Path) -> Result<Vec<NounStem>> {
     let db = Connection::open(lexicon_db)
         .with_context(|| format!("opening {}", lexicon_db.display()))?;
+
+    // Two sources, unioned: Strong's `english` headwords (n-m/n-f/n/adjective)
+    // and the much larger BDB common-noun set (`bdb.pos` like `n.m`/`n.f`/`n.[m.]`,
+    // excluding proper nouns `n.pr*`, which `load_proper_inventory` covers). BDB
+    // adds ~1,265 stems the Strong's list lacks (נֶסֶךְ, קֶרֶב, …). Dedup on the
+    // cantillation-stripped form so the same lemma from both sources is one stem;
+    // exact-match downstream means a stray stem only ever loses recall, never
+    // invents an analysis.
+    let mut seen: HashSet<String> = HashSet::new();
+    let mut stems = Vec::new();
+    let add = |word: String, stems: &mut Vec<NounStem>, seen: &mut HashSet<String>| {
+        let key: String = word.chars().filter(|c| !is_cantillation(*c)).collect();
+        if !key.is_empty() && seen.insert(key) {
+            // Segolates expand to all three base classes (see class_variants);
+            // other stems yield just themselves.
+            stems.extend(NounStem::classify(&word).class_variants());
+        }
+    };
+
     let mut stmt = db.prepare(
         "SELECT DISTINCT word FROM english \
          WHERE word <> '' AND (\
@@ -816,11 +835,26 @@ pub fn load_noun_inventory(lexicon_db: &Path) -> Result<Vec<NounStem>> {
             OR pos = 'a' OR pos LIKE 'a-%')",
     )?;
     let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
-    let mut stems = Vec::new();
     for word in rows {
-        stems.push(NounStem::classify(&word?));
+        add(word?, &mut stems, &mut seen);
     }
+
+    let mut bdb = db.prepare(
+        "SELECT DISTINCT word FROM bdb \
+         WHERE word <> '' AND pos LIKE 'n.%' AND pos NOT LIKE 'n.pr%'",
+    )?;
+    let rows = bdb.query_map([], |r| r.get::<_, String>(0))?;
+    for word in rows {
+        add(word?, &mut stems, &mut seen);
+    }
+
     Ok(stems)
+}
+
+/// Hebrew cantillation accents (te'amim) and meteg, which BDB lemmas carry but
+/// the parser's surfaces do not. Stripped when keying noun stems for dedup.
+fn is_cantillation(c: char) -> bool {
+    matches!(c as u32, 0x0591..=0x05AF | 0x05BD | 0x05BF)
 }
 
 /// Load a proper-noun stem inventory from a built `lexicon.db` for the reverse
@@ -838,9 +872,25 @@ pub fn load_proper_inventory(lexicon_db: &Path) -> Result<Vec<NounStem>> {
          WHERE word <> '' AND (pos LIKE 'n-pr%' OR pos = 'np')",
     )?;
     let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
+
+    let mut seen: HashSet<String> = HashSet::new();
     let mut stems = Vec::new();
+    let add = |word: String, stems: &mut Vec<NounStem>, seen: &mut HashSet<String>| {
+        let key: String = word.chars().filter(|c| !is_cantillation(*c)).collect();
+        if !key.is_empty() && seen.insert(key) {
+            stems.push(NounStem::classify(&word));
+        }
+    };
+
     for word in rows {
-        stems.push(NounStem::classify(&word?));
+        let word = word?;
+        // Some proper nouns in the lexicon are multi-word (e.g. "עֲבֵד נְגוֹ").
+        // Since the Bible tokenizer splits on spaces, we need the individual
+        // parts in the inventory too.
+        for part in word.split_whitespace() {
+            add(part.to_string(), &mut stems, &mut seen);
+        }
+        add(word, &mut stems, &mut seen);
     }
     Ok(stems)
 }

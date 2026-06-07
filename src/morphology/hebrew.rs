@@ -69,6 +69,13 @@ pub fn is_guttural(c: char) -> bool {
     matches!(c, letter::ALEF | letter::HE | letter::HET | letter::AYIN)
 }
 
+pub fn is_sibilant(c: char) -> bool {
+    matches!(
+        c,
+        letter::ZAYIN | letter::SAMEKH | letter::TSADE | letter::SHIN
+    )
+}
+
 /// Resh behaves like a guttural for non-doubling, but takes vowels normally.
 pub fn rejects_dagesh(c: char) -> bool {
     is_guttural(c) || c == letter::RESH
