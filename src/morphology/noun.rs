@@ -610,6 +610,18 @@ fn with_pron_suffix(stem: &NounStem, plural: bool, p: Person, g: Gender, n: Numb
         }
     };
 
+    // A noun ending in a final guttural with a furtive patah (kōₐḥ כֹּחַ, rûₐḥ
+    // רוּחַ) loses that patah before a suffix — the suffix attaches to the bare
+    // guttural (kōḥô כֹּחוֹ). The furtive patah is only present on a word-final
+    // ח/ע after a heterogeneous vowel, so clearing it here is safe.
+    if !plural
+        && let Some(last) = out.last_mut()
+        && matches!(last.letter, letter::HET | letter::AYIN)
+        && last.vowel == Some(Vowel::Patah)
+    {
+        last.vowel = None;
+    }
+
     append_pron_suffix(&mut out, plural, p, g, n);
     out
 }
