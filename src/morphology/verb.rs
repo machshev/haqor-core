@@ -241,7 +241,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 continue;
             }
             for &pgn in pgns_for_form(form) {
-                let (text, attested) = generate_one(root, binyan, form, pgn);
+                let (text, attested) = generate_one(root, binyan, form, pgn, false);
                 // Alternant spellings share this slot's analysis label and are
                 // pushed AFTER the base form, so a first-match lookup still
                 // returns the canonical spelling.
@@ -289,7 +289,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                 .then(|| {
                     let zero = Pgn::new(Person::Third, Gender::Masculine, Number::Singular);
-                    let (zero_text, _) = generate_one(root, binyan, form, zero);
+                    let (zero_text, _) = generate_one(root, binyan, form, zero, false);
                     qal_pausal_variant(&zero_text, &text)
                 })
                 .flatten();
@@ -331,6 +331,20 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::PeGuttural)
                     && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
                 .then(|| pe_guttural_imperfect_segol_variant(&text))
+                .flatten();
+                // Qal a-theme (stative) imperfect alternant — yiqtal beside the
+                // default yiqtōl (yiḡdal יִגְדַּל, yiqrab יִקְרַב), and likewise the
+                // jussive and wayyiqtol (wayyiḡdal וַיִּגְדַּל). Statives are a
+                // lexical class we don't mark, so we emit the a-theme form for
+                // every Qal root and keep it only when it actually differs from
+                // the default; the patah spelling differs from the holam one, so
+                // a surface matches at most one and no ambiguity is added.
+                let qal_a_theme = (binyan == Binyan::Qal
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
+                .then(|| {
+                    let (a_text, _) = generate_one(root, binyan, form, pgn, true);
+                    (a_text != text).then_some(a_text)
+                })
                 .flatten();
                 // III-Guttural Qal Perfect vocalic suffix sheva variant —
                 // יָדְעוּ beside יָדָעוּ, יָדְעָה beside יָדָעָה.
@@ -436,6 +450,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_aleph_tsere,
                     pe_guttural_segol,
                     lamed_guttural_perf_sheva,
+                    qal_a_theme,
                 ]
                 .into_iter()
                 .flatten()
@@ -483,7 +498,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular)
                 {
                     let fs = Pgn::new(Person::Second, Gender::Feminine, Number::Singular);
-                    let (base, attested_fs) = generate_one(root, binyan, form, fs);
+                    let (base, attested_fs) = generate_one(root, binyan, form, fs, false);
                     let mut seq = hebrew::parse_pointed(&base);
                     let n = seq.len();
                     if n >= 2
@@ -511,7 +526,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)
                     && root.lamed() == letter::RESH
                 {
-                    let (base, _) = generate_one(root, binyan, form, pgn);
+                    let (base, _) = generate_one(root, binyan, form, pgn, false);
                     let mut seq = hebrew::parse_pointed(&base);
                     if let Some(c) = seq.iter_mut().rev().find(|c| c.vowel == Some(Vowel::Segol)) {
                         c.vowel = Some(Vowel::Tsere);
@@ -532,7 +547,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn.gender == Some(Gender::Masculine)
                     && pgn.number == Some(Number::Plural)
                 {
-                    let seq = build_strong(root, binyan, form, pgn);
+                    let seq = build_strong(root, binyan, form, pgn, false);
                     let (seq, c_attested) = apply_gizra(seq, root, binyan, form, pgn);
                     if let Some(cseq) = participle_mp_construct(&seq) {
                         forms.push(VerbForm {
@@ -555,7 +570,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn.gender == Some(Gender::Masculine)
                     && pgn.number == Some(Number::Singular)
                 {
-                    let seq = build_strong(root, binyan, form, pgn);
+                    let seq = build_strong(root, binyan, form, pgn, false);
                     let (mut seq, c_attested) = apply_gizra(seq, root, binyan, form, pgn);
                     let n = seq.len();
                     if n >= 2
@@ -748,11 +763,17 @@ fn pgns_for_form(form: Form) -> &'static [Pgn] {
     }
 }
 
-fn generate_one(root: &Root, binyan: Binyan, form: Form, pgn: Pgn) -> (String, bool) {
+fn generate_one(
+    root: &Root,
+    binyan: Binyan,
+    form: Form,
+    pgn: Pgn,
+    force_a_theme: bool,
+) -> (String, bool) {
     if form == Form::Wayyiqtol {
-        return build_wayyiqtol(root, binyan, pgn);
+        return build_wayyiqtol(root, binyan, pgn, force_a_theme);
     }
-    let seq = build_strong(root, binyan, form, pgn);
+    let seq = build_strong(root, binyan, form, pgn, force_a_theme);
     let (seq, attested) = apply_gizra(seq, root, binyan, form, pgn);
     (hebrew::render(&seq), attested)
 }
@@ -767,14 +788,19 @@ fn generate_one(root: &Root, binyan: Binyan, form: Form, pgn: Pgn) -> (String, b
 /// holam becomes qamats (wayyāqom → וַיָּקָם), except when a quiescent III-aleph
 /// preserves it (wayyāḇōʔ → וַיָּבֹא). Retracted hollow forms depend on the
 /// verb's lexical vowel class, so they're flagged `attested = false`.
-fn build_wayyiqtol(root: &Root, binyan: Binyan, pgn: Pgn) -> (String, bool) {
+fn build_wayyiqtol(
+    root: &Root,
+    binyan: Binyan,
+    pgn: Pgn,
+    force_a_theme: bool,
+) -> (String, bool) {
     let short = JUSSIVE_PGNS.contains(&pgn) || pgn.person == Some(Person::First);
     let base_form = if short {
         Form::Jussive
     } else {
         Form::Imperfect
     };
-    let seq = build_strong(root, binyan, base_form, pgn);
+    let seq = build_strong(root, binyan, base_form, pgn, force_a_theme);
     let (mut seq, attested) = apply_gizra(seq, root, binyan, base_form, pgn);
 
     if short
@@ -960,12 +986,18 @@ struct ImperfectPrefix {
 }
 
 /// Build the strong-verb form for (binyan, form, pgn) as a `Vec<Cons>`.
-fn build_strong(root: &Root, binyan: Binyan, form: Form, pgn: Pgn) -> Vec<Cons> {
+fn build_strong(
+    root: &Root,
+    binyan: Binyan,
+    form: Form,
+    pgn: Pgn,
+    force_a_theme: bool,
+) -> Vec<Cons> {
     match form {
         Form::Perfect => build_perfect(root, binyan, pgn),
-        Form::Imperfect => build_imperfect(root, binyan, pgn, false),
+        Form::Imperfect => build_imperfect(root, binyan, pgn, false, force_a_theme),
         Form::Cohortative => build_cohortative(root, binyan, pgn),
-        Form::Jussive => build_imperfect(root, binyan, pgn, true),
+        Form::Jussive => build_imperfect(root, binyan, pgn, true, force_a_theme),
         Form::Wayyiqtol => unreachable!("wayyiqtol is built via build_wayyiqtol"),
         Form::Imperative => build_imperative(root, binyan, pgn),
         Form::InfinitiveConstruct => build_inf_construct(root, binyan),
@@ -1313,14 +1345,24 @@ const QAL_A_THEME: [[char; 3]; 2] = [
     [letter::HET, letter::ZAYIN, letter::QOF],
 ];
 
-fn build_imperfect(root: &Root, binyan: Binyan, pgn: Pgn, _jussive: bool) -> Vec<Cons> {
+fn build_imperfect(
+    root: &Root,
+    binyan: Binyan,
+    pgn: Pgn,
+    _jussive: bool,
+    force_a_theme: bool,
+) -> Vec<Cons> {
     use Vowel::*;
     let mut prefix = imperfect_prefix(binyan);
     // Qal a-theme: a quiescent middle aleph (yišʔal) or a lexically a-class root
     // (yiškab) takes patah where the default paradigm would place holam.
+    // `force_a_theme` additionally requests it for any Qal root, so the paradigm
+    // can emit the stative yiqtal (יִגְדַּל) as an alternant of the default yiqtōl
+    // — statives are a lexical class we don't otherwise mark.
     if binyan == Binyan::Qal
         && prefix.v2_long == Holam
         && (root.ayin() == letter::ALEF
+            || force_a_theme
             || QAL_A_THEME.contains(&[root.pe(), root.ayin(), root.lamed()]))
     {
         prefix.v2_long = Patah;
@@ -1442,6 +1484,7 @@ fn build_cohortative(root: &Root, binyan: Binyan, pgn: Pgn) -> Vec<Cons> {
             Gender::Common,
             pgn.number.unwrap_or(Number::Singular),
         ),
+        false,
         false,
     );
     // The base imperfect we just built had Suffix::Zero. To turn it into a
