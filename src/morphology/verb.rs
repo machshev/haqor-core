@@ -380,6 +380,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::Hollow)
                 {
                     hollow_hiphil_otav_perfect(root, pgn)
+                } else if binyan == Binyan::Qal
+                    && form == Form::Perfect
+                    && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)
+                {
+                    // Stative qāṭēl/qāṭōl perfect 3ms twins (ṭāhēr טָהֵר, qāṭōn).
+                    qal_stative_perfect_variants(&text)
                 } else {
                     Vec::new()
                 };
@@ -3719,6 +3725,35 @@ fn maqaf_segol_variant(text: &str) -> Option<String> {
     }
     seq[n - 2].vowel = Some(Vowel::Segol);
     Some(hebrew::render(&seq))
+}
+
+/// Stative twin(s) of a Qal perfect 3ms: the dynamic qāṭal default (ṭāhar) gives
+/// way to the qāṭēl (ṭāhēr טָהֵר, zāqēn זָקֵן, kāḇēḏ) or qāṭōl (qāṭōn קָטֹן, yāḵōl)
+/// theme in the lexically-stative verbs, which we don't otherwise mark. Returns
+/// the tsere and holam twins of the C2 theme patah. Additive: only the attested
+/// theme matches a surface (patah/tsere/holam are distinct spellings).
+fn qal_stative_perfect_variants(text: &str) -> Vec<String> {
+    let seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 2 {
+        return Vec::new();
+    }
+    // C3 must be a true final consonant; the theme sits on C2 = seq[n-2].
+    let last = &seq[n - 1];
+    if !(last.vowel.is_none() || last.vowel == Some(Vowel::Sheva))
+        || matches!(last.letter, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
+        || seq[n - 2].vowel != Some(Vowel::Patah)
+    {
+        return Vec::new();
+    }
+    [Vowel::Tsere, Vowel::Holam]
+        .into_iter()
+        .map(|v| {
+            let mut s = seq.clone();
+            s[n - 2].vowel = Some(v);
+            hebrew::render(&s)
+        })
+        .collect()
 }
 
 /// Silent-sheva twin of a word whose C1 guttural carries a composite (hataf)
