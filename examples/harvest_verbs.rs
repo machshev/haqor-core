@@ -31,8 +31,10 @@ fn stem_name_full(c: char) -> Option<&'static str> {
 }
 
 // Strong's numbers of genuinely-irregular verbs to harvest wholesale regardless
-// of (modeled) stem: 7812 שׁחה הִשְׁתַּחֲוָה (Hithpael w/ metathesis + hollow + III-he).
-const IRREGULAR_STRONGS: &[i64] = &[7812];
+// of (modeled) stem — forms the triliteral generator structurally cannot make:
+//   7812 שׁחה הִשְׁתַּחֲוָה  (Hithpael w/ sibilant metathesis + hollow + III-he)
+//   1961 היה,  2421 חיה     (suppletive: aleph-preformative אֶהְיֶה/וָאֱהִי, apocope)
+const IRREGULAR_STRONGS: &[i64] = &[7812, 1961, 2421];
 
 fn conj_name(c: char) -> Option<&'static str> {
     Some(match c {
