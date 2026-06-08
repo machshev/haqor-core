@@ -3095,6 +3095,12 @@ fn apply_pe_yod(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, pg
                     seq[idx - 1].vowel = None;
                 }
                 seq[idx] = Cons::new(letter::VAV).with_vowel(Vowel::Holam);
+                // C1 is now an open vav-mater syllable (nô-), so a begedkefet C2
+                // is spirant — drop the dagesh lene the strong builder added when
+                // C1 still carried a silent sheva (nôṯar נוֹתַר, not נוֹתַּר).
+                if let Some(c2) = radical_idx(seq, 2) {
+                    seq[c2].dagesh = false;
+                }
                 changed = true;
             }
         }
@@ -6075,6 +6081,21 @@ mod tests {
             },
         ]);
         assert!(has_text(&p, Binyan::Qal, Form::Perfect, pgn, &expected));
+    }
+
+    #[test]
+    fn pe_vav_niphal_begedkefet_c2_stays_spirant() {
+        // יתר Niphal Perfect 3ms: ni+w contracts to nô-, an open vav-mater
+        // syllable, so the begedkefet tav is spirant → נוֹתַר (not נוֹתַּר).
+        let root = Root::parse("יתר").unwrap();
+        let p = generate_paradigm(&root);
+        let expected = hebrew::render(&[
+            Cons::new(letter::NUN),
+            Cons::new(letter::VAV).with_vowel(Vowel::Holam),
+            Cons::new(letter::TAV).with_vowel(Vowel::Patah),
+            Cons::new(letter::RESH),
+        ]);
+        assert!(has_text(&p, Binyan::Niphal, Form::Perfect, THREE_MS, &expected));
     }
 
     #[test]
