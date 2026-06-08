@@ -386,14 +386,40 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
 /// One analysis in the reverse index — the surface-independent part of a
 /// [`VerbMatch`] (everything but the peeled prefix and vav-consecutive flag,
 /// which are decided at lookup time).
+///
+/// The index holds ~54M of these (every form of every triliteral root), so the
+/// struct is kept as small as possible: the three radicals are stored as their
+/// index into [`HEBREW_CONSONANTS`] (a single byte each) rather than as `char`
+/// (four bytes each), cutting the struct from 24 to 13 bytes and saving roughly
+/// half a gigabyte across the whole index. [`IndexEntry::letters`] rebuilds the
+/// `[char; 3]` on demand at lookup time.
 #[derive(Clone)]
 struct IndexEntry {
-    letters: [char; 3],
+    radicals: [u8; 3],
     binyan: Binyan,
     form: Form,
     pgn: Pgn,
     object_suffix: Option<Pgn>,
     attested: bool,
+}
+
+impl IndexEntry {
+    /// The radical letters as Hebrew `char`s, decoded from the packed indices.
+    fn letters(&self) -> [char; 3] {
+        self.radicals.map(|i| HEBREW_CONSONANTS[i as usize])
+    }
+}
+
+/// Pack a triliteral root's `char` radicals into their [`HEBREW_CONSONANTS`]
+/// indices. Every root indexed comes from that array, so each radical is always
+/// found.
+fn pack_radicals(letters: [char; 3]) -> [u8; 3] {
+    letters.map(|c| {
+        HEBREW_CONSONANTS
+            .iter()
+            .position(|&h| h == c)
+            .expect("root radical is a base Hebrew consonant") as u8
+    })
 }
 
 /// The 22 base Hebrew consonants (no final forms) — the radical alphabet.
@@ -407,9 +433,37 @@ const HEBREW_CONSONANTS: [char; 22] = [
 /// A reverse lookup index mapping each generated form's [`canonical_key`] to the
 /// analyses that produce it. Built once over every triliteral root, it turns
 /// reverse parsing from per-surface generate-and-test (O(surfaces × roots ×
-/// paradigm)) into O(surfaces) hash lookups. Use [`parse_word_indexed`] to query.
+/// paradigm)) into O(surfaces × log N) lookups. Use [`parse_word_indexed`] to
+/// query.
+///
+/// The index holds ~54M form entries over ~34M distinct keys. A
+/// `HashMap<_, Vec<IndexEntry>>` would pay for 34M separate per-key `Vec`
+/// allocations, a hashtable rounded up to the next power of two (~1.7× slack at
+/// this size), and a fragmenting parallel build. Instead the entries live in one
+/// flat `Vec` sorted by key hash: no per-key allocation, no table slack, and a
+/// lookup is a binary search for the key's run. Resting footprint is just the
+/// 54M packed entries (~1.7 GB) rather than the multi-gigabyte `HashMap`.
 pub struct ReverseIndex {
-    map: HashMap<String, Vec<IndexEntry>>,
+    /// `(key_hash, entry)` pairs sorted by `key_hash`. All entries sharing a key
+    /// form a contiguous run, found by [`ReverseIndex::get`].
+    entries: Vec<(u128, IndexEntry)>,
+}
+
+/// A 128-bit hash of a [`canonical_key`], used as the [`ReverseIndex`] key in
+/// place of the owned `String`. Two independently-seeded 64-bit SipHashes are
+/// concatenated; `DefaultHasher::new` uses fixed keys, so the hash is
+/// deterministic across runs. Collisions across the index's ~34M distinct keys
+/// are vanishingly improbable in a 128-bit space.
+fn key_hash(canonical: &str) -> u128 {
+    use std::hash::{Hash, Hasher};
+    use std::collections::hash_map::DefaultHasher;
+    let mut hi = DefaultHasher::new();
+    canonical.hash(&mut hi);
+    let mut lo = DefaultHasher::new();
+    // A distinct salt so the two halves are independent.
+    lo.write_u8(0x9e);
+    canonical.hash(&mut lo);
+    ((hi.finish() as u128) << 64) | (lo.finish() as u128)
 }
 
 impl ReverseIndex {
@@ -417,6 +471,18 @@ impl ReverseIndex {
     /// every form by its canonical key. The all-roots space is a superset of any
     /// surface's candidate roots, and a non-matching root simply contributes keys
     /// no surface hits — so lookups return exactly what [`parse_word`] would find.
+    ///
+    /// Each form's key is a 128-bit hash of its [`canonical_key`] (see
+    /// [`key_hash`]): 16 inline bytes, no allocation, and at 128 bits an
+    /// accidental collision across the ~34M distinct keys is astronomically
+    /// unlikely (~1e-24), so lookups return exactly what a string-keyed index
+    /// would.
+    ///
+    /// Paradigm generation runs in parallel (one `Vec` of `(key, entry)` pairs
+    /// per root); the per-root vectors are then concatenated into the single flat
+    /// `entries` vector and sorted by key. The concatenation frees each root's
+    /// vector as it is consumed, so peak build memory is roughly the flat vector
+    /// plus the still-pending per-root vectors, not a multiple of the final size.
     pub fn build() -> Self {
         let mut roots: Vec<[char; 3]> = Vec::with_capacity(22 * 22 * 22);
         for &a in &HEBREW_CONSONANTS {
@@ -426,17 +492,18 @@ impl ReverseIndex {
                 }
             }
         }
-        let per_root: Vec<Vec<(String, IndexEntry)>> = roots
+        let per_root: Vec<Vec<(u128, IndexEntry)>> = roots
             .par_iter()
             .map(|&letters| {
+                let radicals = pack_radicals(letters);
                 let para = generate_paradigm(&Root::from_letters(letters));
                 para.forms
                     .iter()
                     .map(|vf| {
                         (
-                            canonical_key(&vf.text),
+                            key_hash(&canonical_key(&vf.text)),
                             IndexEntry {
-                                letters,
+                                radicals,
                                 binyan: vf.binyan,
                                 form: vf.form,
                                 pgn: vf.pgn,
@@ -448,15 +515,26 @@ impl ReverseIndex {
                     .collect()
             })
             .collect();
-        let mut map: HashMap<String, Vec<IndexEntry>> = HashMap::new();
-        for entry in per_root.into_iter().flatten() {
-            map.entry(entry.0).or_default().push(entry.1);
+
+        let total: usize = per_root.iter().map(Vec::len).sum();
+        let mut entries: Vec<(u128, IndexEntry)> = Vec::with_capacity(total);
+        for chunk in per_root {
+            entries.extend(chunk);
         }
-        ReverseIndex { map }
+        entries.par_sort_unstable_by_key(|&(k, _)| k);
+        ReverseIndex { entries }
     }
 
-    fn get(&self, key: &str) -> &[IndexEntry] {
-        self.map.get(key).map(Vec::as_slice).unwrap_or(&[])
+    /// The `(key, analysis)` pairs whose key hash equals `key`, as a contiguous
+    /// run of the sorted `entries`. Empty when no form hashes to `key`. Callers
+    /// read the [`IndexEntry`] from each pair's `.1`.
+    fn get(&self, key: u128) -> &[(u128, IndexEntry)] {
+        let start = self.entries.partition_point(|&(k, _)| k < key);
+        let mut end = start;
+        while end < self.entries.len() && self.entries[end].0 == key {
+            end += 1;
+        }
+        &self.entries[start..end]
     }
 }
 
@@ -485,14 +563,15 @@ pub fn parse_word_indexed(
         let targets = peeling_targets(&seq, strip, remainder);
 
         for t in &targets {
-            for e in index.get(&canonical_key(t)) {
+            for (_, e) in index.get(key_hash(&canonical_key(t))) {
+                let letters = e.letters();
                 // Wayyiqtol is handled by the dedicated pass below.
-                if e.form == Form::Wayyiqtol || !in_filter(&e.letters) {
+                if e.form == Form::Wayyiqtol || !in_filter(&letters) {
                     continue;
                 }
-                if seen.insert((e.letters, e.binyan, e.form, e.pgn, e.object_suffix, strip, false)) {
+                if seen.insert((letters, e.binyan, e.form, e.pgn, e.object_suffix, strip, false)) {
                     matches.push(VerbMatch {
-                        root: Root::from_letters(e.letters),
+                        root: Root::from_letters(letters),
                         binyan: e.binyan,
                         form: e.form,
                         pgn: e.pgn,
@@ -512,14 +591,15 @@ pub fn parse_word_indexed(
         c.letter == letter::VAV && matches!(c.vowel, Some(Vowel::Patah | Vowel::Qamats))
     }) && seq.len() >= 3
     {
-        let key = canonical_key(&hebrew::render(&seq));
-        for e in index.get(&key) {
-            if e.form != Form::Wayyiqtol || !in_filter(&e.letters) {
+        let key = key_hash(&canonical_key(&hebrew::render(&seq)));
+        for (_, e) in index.get(key) {
+            let letters = e.letters();
+            if e.form != Form::Wayyiqtol || !in_filter(&letters) {
                 continue;
             }
-            if seen.insert((e.letters, e.binyan, e.form, e.pgn, e.object_suffix, 0, true)) {
+            if seen.insert((letters, e.binyan, e.form, e.pgn, e.object_suffix, 0, true)) {
                 matches.push(VerbMatch {
-                    root: Root::from_letters(e.letters),
+                    root: Root::from_letters(letters),
                     binyan: e.binyan,
                     form: e.form,
                     pgn: e.pgn,
