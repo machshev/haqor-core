@@ -451,6 +451,29 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let paragogic_nun = (form == Form::Imperfect
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                 .then(|| paragogic_nun_variant(&text));
+                // Propretonic-reduced paragogic-nun twin of the hollow Qal
+                // imperfect plural (yāšûḇû → yᵉšûḇûn יְשׁוּבוּן, yᵉqûmûn).
+                let hollow_paragogic_nun = (binyan == Binyan::Qal
+                    && root.has(Gizra::Hollow)
+                    && form == Form::Imperfect
+                    && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
+                .then(|| hollow_paragogic_nun_variant(&text))
+                .flatten();
+                // Retained-yod twin of the I-yod Qal imperfect/wayyiqtol
+                // (yēraš יֵרַשׁ → yîraš יִירַשׁ, wayyîraš וַיִּירַשׁ). Applied to both
+                // the default theme and the a-theme alternant, since the attested
+                // retained-yod forms are a-theme (yîraš, not the e-theme yîrēš).
+                let pe_yod_retained: Vec<String> = if binyan == Binyan::Qal
+                    && root.has(Gizra::PeYod)
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+                {
+                    std::iter::once(text.clone())
+                        .chain(qal_a_theme.clone())
+                        .filter_map(|t| pe_yod_retained_variant(&t))
+                        .collect()
+                } else {
+                    Vec::new()
+                };
                 // III-Guttural Qal Perfect vocalic suffix sheva variant —
                 // יָדְעוּ beside יָדָעוּ, יָדְעָה beside יָדָעָה.
                 let lamed_guttural_perf_sheva = (binyan == Binyan::Qal
@@ -602,10 +625,21 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     qal_a_theme,
                     guttural_silent_sheva,
                     paragogic_nun,
+                    hollow_paragogic_nun,
                 ]
                 .into_iter()
                 .flatten()
                 {
+                    forms.push(VerbForm {
+                        binyan,
+                        form,
+                        pgn,
+                        text: alt,
+                        attested,
+                        object_suffix: None,
+                    });
+                }
+                for alt in pe_yod_retained {
                     forms.push(VerbForm {
                         binyan,
                         form,
@@ -4033,6 +4067,55 @@ fn paragogic_nun_variant(text: &str) -> String {
     hebrew::render(&seq)
 }
 
+/// Paragogic-nun twin of a hollow Qal vocalic-suffix imperfect, with the
+/// propretonic prefix reduction the long ending forces. In the bare plural the
+/// open prefix syllable is pretonic and keeps its long qamats (yāšûḇû יָשׁוּבוּ);
+/// appending the stressed -ûn pushes the prefix into the propretonic position,
+/// where the open-syllable qamats reduces to a vocal sheva: yᵉšûḇûn (יְשׁוּבוּן),
+/// yᵉqûmûn (יְקוּמוּן). Returns the reduced-prefix form, or `None` when the
+/// preformative isn't an open qamats syllable. Additive — the sheva spelling
+/// differs from the plain qamats append in [`paragogic_nun_variant`].
+fn hollow_paragogic_nun_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let pre = seq.first()?;
+    if !matches!(pre.letter, letter::YOD | letter::TAV | letter::ALEF | letter::NUN)
+        || pre.vowel != Some(Vowel::Qamats)
+    {
+        return None;
+    }
+    seq[0].vowel = Some(Vowel::Sheva);
+    seq.push(Cons::new(letter::NUN));
+    Some(hebrew::render(&seq))
+}
+
+/// Retained-yod twin of a I-yod Qal imperfect/wayyiqtol. The "true" I-yod roots
+/// (ירש, ירא, יבש, יקץ) do not elide the radical yod the way the I-waw class
+/// does (ישב → yēšēḇ); instead the preformative takes hiriq and the radical yod
+/// surfaces as a mater: yîraš (יִירַשׁ), yîrᵊšû (יִירְשׁוּ), wayyîraš (וַיִּירַשׁ).
+/// The base builder produces only the elided tsere form (yēraš יֵרַשׁ), so this
+/// rewrites the preformative tsere to hiriq and inserts the yod mater after it.
+/// The preformative is `seq[0]`, or `seq[1]` past a wayyiqtol vav. Additive: the
+/// hiriq+yod spelling differs from the tsere one, so only the attested form
+/// matches.
+fn pe_yod_retained_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    // Locate the preformative: skip a leading vav-consecutive.
+    let p = if seq.first().is_some_and(|c| c.letter == letter::VAV) && seq.len() > 1 {
+        1
+    } else {
+        0
+    };
+    let pre = seq.get(p)?;
+    if !matches!(pre.letter, letter::YOD | letter::TAV | letter::ALEF | letter::NUN)
+        || pre.vowel != Some(Vowel::Tsere)
+    {
+        return None;
+    }
+    seq[p].vowel = Some(Vowel::Hiriq);
+    seq.insert(p + 1, Cons::mater(letter::YOD));
+    Some(hebrew::render(&seq))
+}
+
 /// Stative twin(s) of a Qal perfect 3ms: the dynamic qāṭal default (ṭāhar) gives
 /// way to the qāṭēl (ṭāhēr טָהֵר, zāqēn זָקֵן, kāḇēḏ) or qāṭōl (qāṭōn קָטֹן, yāḵōl)
 /// theme in the lexically-stative verbs, which we don't otherwise mark. Returns
@@ -4068,8 +4151,10 @@ fn qal_stative_perfect_variants(text: &str) -> Vec<String> {
 /// I-guttural root (neʔĕsap̄, nehĕp̄aḵ נֶהֱפַּךְ, heḥĕzîq) — but the Masoretes
 /// frequently write the plain silent sheva instead (נֶהְפַּךְ, נֶעְזַב, הֶחְזִיק).
 /// Converts the first guttural hataf that is preceded by a consonant bearing a
-/// full short vowel to a plain sheva. Additive: the twin only matches surfaces
-/// spelled that way.
+/// full short vowel to a plain sheva. The now-silent sheva closes the syllable,
+/// so a following בגדכפת consonant takes a dagesh lene (nehĕp̄aḵ → nehpaḵ →
+/// nehpáḵ נֶהְפַּךְ, with the pe plosive). Additive: the twin only matches
+/// surfaces spelled that way.
 fn guttural_silent_sheva_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     for i in 1..seq.len() {
@@ -4084,6 +4169,11 @@ fn guttural_silent_sheva_variant(text: &str) -> Option<String> {
             )
         {
             seq[i].vowel = Some(Vowel::Sheva);
+            if let Some(next) = seq.get_mut(i + 1) {
+                if hebrew::is_begedkefet(next.letter) {
+                    next.dagesh = true;
+                }
+            }
             return Some(hebrew::render(&seq));
         }
     }
@@ -5857,5 +5947,53 @@ mod tests {
             Cons::new(letter::KAF).with_vowel(Vowel::Qamats),
         ]);
         assert_eq!(text, Some(expected));
+    }
+
+    /// Whether the paradigm contains some (possibly alternant) form for the
+    /// given (binyan, form, pgn) whose surface equals `text`.
+    fn has_text(p: &Paradigm, binyan: Binyan, form: Form, pgn: Pgn, text: &str) -> bool {
+        p.forms
+            .iter()
+            .any(|f| f.binyan == binyan && f.form == form && f.pgn == pgn && f.text == text)
+    }
+
+    const THREE_MP: Pgn = Pgn::new(Person::Third, Gender::Masculine, Number::Plural);
+
+    #[test]
+    fn niphal_iguttural_silent_sheva_takes_dagesh_lene() {
+        // הפך Niphal Perfect 3ms: the silent-sheva twin of nehĕp̄aḵ closes the
+        // first syllable, so the pe takes a dagesh lene → נֶהְפַּךְ.
+        let root = Root::parse("הפך").unwrap();
+        let p = generate_paradigm(&root);
+        // נ+segol, ה+sheva, פ+dagesh+patah, ך (final kaf carries silent sheva).
+        let expected = hebrew::render(&[
+            Cons::new(letter::NUN).with_vowel(Vowel::Segol),
+            Cons::new(letter::HE).with_vowel(Vowel::Sheva),
+            {
+                let mut c = Cons::new(letter::PE).with_vowel(Vowel::Patah);
+                c.dagesh = true;
+                c
+            },
+            Cons::new(letter::KAF),
+        ]);
+        assert!(has_text(&p, Binyan::Niphal, Form::Perfect, THREE_MS, &expected));
+    }
+
+    #[test]
+    fn pe_yod_retained_imperfect() {
+        // ירש Qal Imperfect: the retained-yod twins yîraš / yîrᵊšû.
+        let root = Root::parse("ירש").unwrap();
+        let p = generate_paradigm(&root);
+        assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִירַשׁ"));
+        assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MP, "יִירְשׁוּ"));
+    }
+
+    #[test]
+    fn hollow_paragogic_nun_reduces_prefix() {
+        // שוב Qal Imperfect 3mp: the paragogic-nun twin reduces the propretonic
+        // prefix qamats to sheva → yᵉšûḇûn (יְשׁוּבוּן).
+        let root = Root::parse("שוב").unwrap();
+        let p = generate_paradigm(&root);
+        assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MP, "יְשׁוּבוּן"));
     }
 }
