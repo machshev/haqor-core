@@ -335,6 +335,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::Hollow))
                 .then(|| hollow_hiphil_participle_variant(root, pgn))
                 .flatten();
+                // Hollow Hophal participle mûC1āC3 shape (מוּקָם, מוּשָׁב).
+                let hollow_hophal_ptcp = (binyan == Binyan::Hophal
+                    && form == Form::ParticipleActive
+                    && root.has(Gizra::Hollow))
+                .then(|| hollow_hophal_participle_variant(root, pgn))
+                .flatten();
                 // PeAleph Qal Imperfect tsere variant — יֹאכֵל beside יֹאכַל.
                 let pe_aleph_tsere = (binyan == Binyan::Qal
                     && root.has(Gizra::PeAleph)
@@ -505,6 +511,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     guttural_perfect_patah,
                     hollow_ptcp,
                     hollow_hiphil_ptcp,
+                    hollow_hophal_ptcp,
                     pe_aleph_tsere,
                     lamed_aleph_tsere,
                     pe_guttural_segol,
@@ -769,6 +776,43 @@ fn hollow_hiphil_participle_variant(root: &Root, pgn: Pgn) -> Option<String> {
         Cons::new(letter::MEM).with_vowel(mem_vowel),
         rad(root.pe(), 1).with_vowel(Hiriq),
         Cons::new(letter::YOD),
+        match c3_vowel {
+            Some(v) => c3.with_vowel(v),
+            None => c3,
+        },
+    ];
+    seq.append(&mut tail);
+    Some(hebrew::render(&seq))
+}
+
+/// Hollow Hophal participle: like the Hiphil case the strong `moqṭāl` base keeps
+/// the middle vav (mŏqwām מׇקְוָם); the real shape is mûC1āC3 — mûqām (מוּקָם),
+/// mûšāḇ (מוּשָׁב), pl. mûqāmîm — the û (shureq) of the hollow Hophal under the
+/// preformative mem, then C1 with qamats. C1's qamats is pretonic and stays
+/// across the endings; the û never reduces. Caller gates to (Hophal,
+/// ParticipleActive, Hollow). Additive alternant.
+fn hollow_hophal_participle_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    use Vowel::*;
+    // The stem vowel (qamats) sits on C1; C3 is the bare final radical in the ms
+    // and carries the inflectional ending vowel otherwise.
+    let (c3_vowel, mut tail): (Option<Vowel>, Vec<Cons>) = match (pgn.gender, pgn.number) {
+        (Some(Gender::Masculine), Some(Number::Singular)) => (None, vec![]),
+        (Some(Gender::Masculine), Some(Number::Plural)) => {
+            (Some(Hiriq), vec![Cons::new(letter::YOD), Cons::new(letter::MEM)])
+        }
+        (Some(Gender::Feminine), Some(Number::Singular)) => {
+            (Some(Qamats), vec![Cons::new(letter::HE)])
+        }
+        (Some(Gender::Feminine), Some(Number::Plural)) => {
+            (Some(Holam), vec![Cons::new(letter::TAV)])
+        }
+        _ => return None,
+    };
+    let c3 = rad(root.lamed(), 3);
+    let mut seq = vec![
+        Cons::new(letter::MEM),
+        Cons::new(letter::VAV).with_dagesh(),
+        rad(root.pe(), 1).with_vowel(Qamats),
         match c3_vowel {
             Some(v) => c3.with_vowel(v),
             None => c3,
