@@ -255,6 +255,10 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let maqaf = maqaf_segol_variant(&text);
                 let guttural_lowered = guttural_lowered_variant(&text);
                 let pausal = pausal_qamats_variant(&text);
+                // I-yod Hiphil ê-twin (הֵיטִיב, הֵילִיל, הֵיטֵב).
+                let pe_yod_hiphil_e = (binyan == Binyan::Hiphil && root.has(Gizra::PeYod))
+                    .then(|| pe_yod_hiphil_e_variant(&text))
+                    .flatten();
                 // I-guttural Qal imperfect/wayyiqtol holam plural (יַעֲמֹדוּ).
                 let pe_guttural_impf_hataf = (binyan == Binyan::Qal
                     && root.has(Gizra::PeGuttural)
@@ -558,6 +562,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     geminate_qal_perf,
                     pe_guttural_impf_hataf,
                     pe_guttural_impf_silent,
+                    pe_yod_hiphil_e,
                     paragogic,
                     hiphil_apoc,
                     hiphil_plene,
@@ -5094,6 +5099,24 @@ fn pausal_perfect_c2_variant(root: &Root, text: &str) -> Option<String> {
             c.vowel = Some(Vowel::Qamats);
             return Some(hebrew::render(&seq));
         }
+    }
+    None
+}
+
+/// I-yod (true pe-yod) Hiphil ê-twin: original-yod verbs (יטב, ילל, יבש, ינק)
+/// form the Hiphil with a tsere-yod preformative — hêṭîḇ הֵיטִיב, hêlîl הֵילִיל,
+/// inf. abs. hêṭēḇ הֵיטֵב — where original-vav verbs (ישב, ירד) take the holam-vav
+/// the generator emits for every pe-yod root (hôṭîḇ הוֹטִיב). Surface yod can't
+/// tell the two apart, so we emit the ê-twin for any pe-yod Hiphil by swapping
+/// the וֹ preformative mater for ֵי; additive, so the wrong twin never matches a
+/// true I-vav verb. One transform covers the whole paradigm (the preformative is
+/// uniform across perfect/imperfect/participle/infinitive).
+fn pe_yod_hiphil_e_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() >= 2 && seq[1].letter == letter::VAV && seq[1].vowel == Some(Vowel::Holam) {
+        seq[0].vowel = Some(Vowel::Tsere);
+        seq[1] = Cons::new(letter::YOD);
+        return Some(hebrew::render(&seq));
     }
     None
 }
