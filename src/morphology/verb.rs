@@ -347,6 +347,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::Hollow))
                 .then(|| hollow_qal_perfect_heavy_suffix_variant(root, pgn))
                 .flatten();
+                // II-guttural derived-stem hataf twin (בָּרֲכוּ, וַיְבָרֲכוּ).
+                let ayin_guttural_hataf = (matches!(
+                    binyan,
+                    Binyan::Piel | Binyan::Pual | Binyan::Hithpael
+                ) && root.has(Gizra::AyinGuttural))
+                .then(|| ayin_guttural_hataf_variant(root, &text))
+                .flatten();
                 // Pe-aleph wayyiqtol 1cp segol twin (וַנֹּאמֶר beside וַנֹּאמַר).
                 let pe_aleph_wayy_1cp = (binyan == Binyan::Qal
                     && form == Form::Wayyiqtol
@@ -535,6 +542,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_hophal_ptcp,
                     hollow_qal_perf_heavy,
                     lamed_aleph_ptcp,
+                    ayin_guttural_hataf,
                     pe_aleph_wayy_1cp,
                     pe_aleph_tsere,
                     lamed_aleph_tsere,
@@ -906,6 +914,25 @@ fn pe_aleph_wayyiqtol_segol_variant(text: &str) -> Option<String> {
     if c.vowel == Some(Vowel::Patah) {
         c.vowel = Some(Vowel::Segol);
         return Some(hebrew::render(&seq));
+    }
+    None
+}
+
+/// II-guttural derived-stem hataf twin: when the middle radical is a guttural or
+/// resh, the vocal sheva it would take before a vocalic suffix becomes a
+/// hataf-patah — bērᵊḵû → bārăḵû (בָּרֲכוּ), wayᵊḇārᵊḵû → wayᵊḇārăḵû (וַיְבָרֲכוּ).
+/// The strong Piel/Pual/Hithpael base leaves a plain sheva (בָּרְכוּ). Caller
+/// gates to (Piel|Pual|Hithpael, AyinGuttural); additive — re-points the C2
+/// (root.ayin()) sheva, which in these stems is only ever the pre-suffixal
+/// vocal one.
+fn ayin_guttural_hataf_variant(root: &Root, text: &str) -> Option<String> {
+    let g = root.ayin();
+    let mut seq = hebrew::parse_pointed(text);
+    for c in seq.iter_mut() {
+        if c.letter == g && c.vowel == Some(Vowel::Sheva) {
+            c.vowel = Some(Vowel::HatafPatah);
+            return Some(hebrew::render(&seq));
+        }
     }
     None
 }
