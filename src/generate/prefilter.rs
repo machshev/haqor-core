@@ -148,6 +148,194 @@ const FUNCTION_WORDS: &[&str] = &[
     "זוּ", "אֲהָהּ", "רֵיקָם", "אֲנָחְנוּ",
 ];
 
+/// Closed-class surfaces matched by **exact** pointed form — no proclitic
+/// peeling. Harvested from gold (every attested reading is a
+/// particle/pronoun/preposition/adverb/conjunction + optional suffix — never a
+/// verb/noun/adjective), these are the inflected-function-word tail of
+/// review_missing (עוֹדֶנּוּ, בֵּינוֹ, אֵיפֹה, אֲחֹרַנִּית …). They are matched
+/// exactly, *not* via [`deprefixed_forms`], because many are short suffixed
+/// forms (לָה, אֱהִי) that a real verb could peel down to — e.g. מָשְׁלָה loses
+/// mem+shin to "לָה" — and peel-matching them would wrongly silence that verb.
+/// Exact match is collision-free: the listed surface is never itself a verb.
+const FUNCTION_WORDS_EXACT: &[&str] = &[
+    "אֱהִי",
+    "אֱלֵי",
+    "אֲבוֹי",
+    "אֲחֹרַנִּית",
+    "אֲל",
+    "אֲלֵהֶן",
+    "אִשׁ",
+    "אֵיכָכָה",
+    "אֵיכֹה",
+    "אֵינֵמוֹ",
+    "אֵיפֹה",
+    "אֵלֵימוֹ",
+    "אֵלָו",
+    "אֵפוֹ",
+    "אֵפוֹא",
+    "אֶמֶשׁ",
+    "אֶצְלָהּ",
+    "אֶצְלָם",
+    "אַחֲלֵי",
+    "אַחֲלַי",
+    "אַחֲרַיִךְ",
+    "אַחַרֶיךָ",
+    "אַיֶּכָּה",
+    "אַלְלַי",
+    "אַתֵּנָה",
+    "אָיִן",
+    "אָמֶשׁ",
+    "אָנֶה",
+    "אָנָּא",
+    "אָנָּה",
+    "אָתְּ",
+    "אָתּ",
+    "אֹתְכָה",
+    "אֹתָכָה",
+    "אֹתָנָה",
+    "אוֹתְהֶם",
+    "אוֹתְהֶן",
+    "אוֹתָנָה",
+    "אוֹתָנוּ",
+    "בְּמוֹ",
+    "בְּעוֹדֶנִּי",
+    "בְּעוֹדֶנּוּ",
+    "בְּפִתְאֹם",
+    "בְמוֹ",
+    "בִּלְעָדָי",
+    "בִּלְתֶּךָ",
+    "בֵּינְךָ",
+    "בֵּינֵיכֶם",
+    "בֵּינֵכֶם",
+    "בֵּינֵנוּ",
+    "בֵּינֹתֵינוּ",
+    "בֵּינֹתָם",
+    "בֵּינוֹ",
+    "בֵּינוֹת",
+    "בֵּינוֹתֵינוּ",
+    "בֵינֵיהֶם",
+    "בֵינֵינוּ",
+    "בַּעֲדֵינוּ",
+    "בַּעֲדֵךְ",
+    "בַּעֲדֶךָ",
+    "בַּעֲדָהּ",
+    "בַעֲדָהּ",
+    "בַעֲדוֹ",
+    "הֲ",
+    "הֲמִבַּלְעֲדֵי",
+    "הִנֶּה",
+    "הִנֶּךָּ",
+    "הִנֶּנּוּ",
+    "הַאִשׁ",
+    "הַעוֹדֶנּוּ",
+    "הָהּ",
+    "הוֹ",
+    "וְאִילוֹ",
+    "וְאֵיכָכָה",
+    "וְאֵינֵךְ",
+    "וְאֵינֵמוֹ",
+    "וְאֵיפֹה",
+    "וְאֶתְמוּל",
+    "וְאַחֲרַיִךְ",
+    "וְאַתֵּנָה",
+    "וְאוֹתָנוּ",
+    "וְנֶגְדָּם",
+    "וְעָדֵיכֶם",
+    "וְעָדֶיךָ",
+    "וְעֹדֶנּוּ",
+    "וְעוֹדֶנּוּ",
+    "וְתַחְתֶּיהָ",
+    "וְתַחְתַּי",
+    "וָאָיִן",
+    "וּבִלְעָדֶיךָ",
+    "וּבֵינְךָ",
+    "וּבֵינֵיהֶם",
+    "וּבֵינֵיכֶם",
+    "וּבֵינֵךְ",
+    "וּבֵינֶיךָ",
+    "וּבֵינֶךָ",
+    "וּבַעֲבוּר",
+    "וּכְמוֹ",
+    "וּלְמָטָּה",
+    "וּמִבַּלְעָדַי",
+    "וּמִלְמַעְלָה",
+    "וּפִתְאֹם",
+    "זֹּה",
+    "זוּלָתֶךָ",
+    "חָלִלָה",
+    "יֶּשׁ",
+    "יֶשְׁךָ",
+    "יֶשְׁכֶם",
+    "יַחְדָּיו",
+    "יָּחַד",
+    "כְמוֹ",
+    "כָּמֹנוּ",
+    "כָּמוֹהָ",
+    "כָמֹנוּ",
+    "כָמוֹהָ",
+    "כָמוֹנוּ",
+    "לְאָיִן",
+    "לְבַעֲבוּר",
+    "לְמָטָּה",
+    "לְמוֹ",
+    "לְמוֹאל",
+    "לְנֶגְדְּכֶם",
+    "לִפְנִימָה",
+    "לַפַּלְמוֹנִי",
+    "לָה",
+    "לָכֶנָה",
+    "לא",
+    "מִבֵּינוֹת",
+    "מִבַּלְעֲדֵי",
+    "מִבַּלְעָדַי",
+    "מִלְּמָטָּה",
+    "מִמֶּךָ",
+    "מִנְהֶם",
+    "מִפְּנִימָה",
+    "מֵאֶצְלָם",
+    "מֵאַחֲרָיִךְ",
+    "מֵהֵנָה",
+    "מָּטָּה",
+    "מָּעְלָה",
+    "מָטָּה",
+    "נִכְחוֹ",
+    "נֶגְדְּךָ",
+    "נֶגְדָּהּ",
+    "נֶגְדָּם",
+    "נֶגְדָה",
+    "נָחְנוּ",
+    "עֲדֶן",
+    "עֲדֶנָה",
+    "עֲלֵכֶם",
+    "עֳלֶיהָ",
+    "עָדֶיהָ",
+    "עָדֶיךָ",
+    "עָדָיו",
+    "עָלָיְכִי",
+    "עָתָּה",
+    "עֹדֶנּוּ",
+    "עוֹדֶנִּי",
+    "עוֹדֶנָּה",
+    "עוֹדֶנּוּ",
+    "עוֹדָךְ",
+    "פְּלֹנִי",
+    "פְּנִימָה",
+    "פְנִימָה",
+    "פִּתְאוֹם",
+    "פִתְאֹם",
+    "קְדֹרַנִּית",
+    "תַּחְתֵּיכֶם",
+    "תַּחְתֵּנִי",
+    "תַּחְתֶּנָּה",
+    "תַחְתֵּיהֶם",
+    "תַחְתֵּיהֶן",
+    "תַחְתֵּיכֶם",
+    "תַחְתֵּינוּ",
+    "תַחְתֶּיהָ",
+    "תַחְתֶּיךָ",
+    "תַחְתָּי",
+];
+
 /// The Tetragrammaton and its surface variants. The lexicon carries the divine
 /// name with a holem on the he (יְהֹוָה, Strong's 3068/3069), but the Masoretic
 /// text writes the Qere-perpetuum pointing without it (יְהוָה / יְהוִה / יֱהוִה),
@@ -161,6 +349,9 @@ const DIVINE_NAMES: &[&str] = &[
 /// Recognises non-verb tokens by exact pointed form.
 pub struct Prefilter {
     function: HashSet<String>,
+    /// Exact-match (no proclitic peeling) closed-class forms — see
+    /// [`FUNCTION_WORDS_EXACT`].
+    function_exact: HashSet<String>,
     proper: HashSet<String>,
 }
 
@@ -168,6 +359,11 @@ impl Prefilter {
     /// Build from the curated function words plus the lexicon's proper nouns.
     pub fn load(lexicon_db: &Path) -> Result<Self> {
         let function: HashSet<String> = FUNCTION_WORDS
+            .iter()
+            .map(|s| normalize_surface(s))
+            .filter(|s| !s.is_empty())
+            .collect();
+        let function_exact: HashSet<String> = FUNCTION_WORDS_EXACT
             .iter()
             .map(|s| normalize_surface(s))
             .filter(|s| !s.is_empty())
@@ -202,13 +398,22 @@ impl Prefilter {
                 .map(|s| normalize_surface(s))
                 .filter(|s| !s.is_empty()),
         );
-        Ok(Self { function, proper })
+        Ok(Self {
+            function,
+            function_exact,
+            proper,
+        })
     }
 
     /// Classify a cantillation-normalised surface. Returns `"function"` or
     /// `"proper"` if the form — or a de-prefixed remainder — is a known
     /// non-verb, else `None` (parse it as a verb).
     pub fn classify(&self, surface: &str) -> Option<&'static str> {
+        // Exact-match closed-class forms first (no proclitic peeling, so no
+        // collision with a verb that could peel down to a short suffixed form).
+        if self.function_exact.contains(surface) {
+            return Some("function");
+        }
         for form in deprefixed_forms(surface) {
             if self.function.contains(&form) {
                 return Some("function");
@@ -307,6 +512,10 @@ mod tests {
                 .iter()
                 .map(|s| normalize_surface(s))
                 .collect(),
+            function_exact: FUNCTION_WORDS_EXACT
+                .iter()
+                .map(|s| normalize_surface(s))
+                .collect(),
             proper: HashSet::new(),
         }
     }
@@ -345,11 +554,24 @@ mod tests {
     fn matches_divine_name_and_prefixed() {
         let pf = Prefilter {
             function: HashSet::new(),
+            function_exact: HashSet::new(),
             proper: DIVINE_NAMES.iter().map(|s| normalize_surface(s)).collect(),
         };
         assert_eq!(pf.classify(&normalize_surface("יְהוָה")), Some("proper"));
         // לַיהוָה = proclitic לַ + the peeled remainder יהוָה (no shewa on yod).
         assert_eq!(pf.classify(&normalize_surface("לַיהוָה")), Some("proper"));
+    }
+
+    #[test]
+    fn exact_function_word_matches_only_exact_form() {
+        let pf = func_only();
+        // עוֹדֶנּוּ (עוֹד + suffix) is in the exact set — matched verbatim.
+        assert_eq!(pf.classify(&normalize_surface("עוֹדֶנּוּ")), Some("function"));
+        // But "לָה" (exact-only) must NOT be reached by peeling a real verb:
+        // מָשְׁלָה "she ruled" can peel mem+shin down to לָה, yet stays a verb.
+        assert_eq!(pf.classify(&normalize_surface("מָשְׁלָה")), None);
+        // וָאֱהִי "and I was" (היה wayyiqtol) must not match exact-only "אֱהִי".
+        assert_eq!(pf.classify(&normalize_surface("וָאֱהִי")), None);
     }
 
     #[test]
