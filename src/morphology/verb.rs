@@ -255,6 +255,10 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let maqaf = maqaf_segol_variant(&text);
                 let guttural_lowered = guttural_lowered_variant(&text);
                 let pausal = pausal_qamats_variant(&text);
+                // Interior pausal of the Qal perfect (יָדָעְתָּ, שָׁמָרְתָּ, יָצָאוּ).
+                let pausal_perf = (binyan == Binyan::Qal && form == Form::Perfect)
+                    .then(|| pausal_perfect_c2_variant(root, &text))
+                    .flatten();
                 let paragogic = (form == Form::Perfect
                     && pgn.person == Some(Person::Second)
                     && pgn.gender == Some(Gender::Masculine)
@@ -529,6 +533,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     maqaf,
                     guttural_lowered,
                     pausal,
+                    pausal_perf,
                     paragogic,
                     hiphil_apoc,
                     hiphil_plene,
@@ -4972,6 +4977,25 @@ fn pausal_qamats_variant(text: &str) -> Option<String> {
     }
     seq[n - 2].vowel = Some(Vowel::Qamats);
     Some(hebrew::render(&seq))
+}
+
+/// Pausal twin of the Qal perfect's interior theme: in pause the stress holds on
+/// the second radical and its vowel lengthens to qamats — the patah of the
+/// consonantal-suffix forms (qāṭaltā → qāṭāltā, yāḏaʕtā → יָדָעְתָּ, šāmartā →
+/// שָׁמָרְתָּ) and the reduced sheva of the vocalic 3fs/3cp (qāṭᵊlû → qāṭālû,
+/// yāṣᵊʔû → יָצָאוּ). [`pausal_qamats_variant`] only lengthens a *word-final*
+/// patah, so it misses these interior cases. We re-point the middle radical
+/// (root.ayin()); caller gates to (Qal, Perfect). Additive alternant.
+fn pausal_perfect_c2_variant(root: &Root, text: &str) -> Option<String> {
+    let c2 = root.ayin();
+    let mut seq = hebrew::parse_pointed(text);
+    for c in seq.iter_mut() {
+        if c.letter == c2 && matches!(c.vowel, Some(Vowel::Patah) | Some(Vowel::Sheva)) {
+            c.vowel = Some(Vowel::Qamats);
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
 }
 
 /// Pausal twin of an I-guttural III-He Qal imperative: the propretonic
