@@ -255,6 +255,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let maqaf = maqaf_segol_variant(&text);
                 let guttural_lowered = guttural_lowered_variant(&text);
                 let pausal = pausal_qamats_variant(&text);
+                // Geminate Qal perfect a-class (סַבּוּ, רַבּוּ, סַבּוֹתָ).
+                let geminate_qal_perf = (binyan == Binyan::Qal
+                    && form == Form::Perfect
+                    && root.has(Gizra::Geminate))
+                .then(|| geminate_qal_perfect_variant(root, pgn))
+                .flatten();
                 // Interior pausal of the Qal/Niphal perfect (יָדָעְתָּ, שָׁמָרְתָּ,
                 // יָצָאוּ, נִלְחָמוּ).
                 let pausal_perf = (matches!(binyan, Binyan::Qal | Binyan::Niphal)
@@ -536,6 +542,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     guttural_lowered,
                     pausal,
                     pausal_perf,
+                    geminate_qal_perf,
                     paragogic,
                     hiphil_apoc,
                     hiphil_plene,
@@ -4978,6 +4985,74 @@ fn pausal_qamats_variant(text: &str) -> Option<String> {
         return None;
     }
     seq[n - 2].vowel = Some(Vowel::Qamats);
+    Some(hebrew::render(&seq))
+}
+
+/// Geminate Qal perfect (a-class): the two identical radicals contract to one
+/// doubled C2, which the strong builder leaves as two separate radicals (רָבַב).
+/// The contracted paradigm — sab סַב, sabbâ סַבָּה, sabbû סַבּוּ, and the
+/// ô-linked consonantal-suffix forms sabbôṯā סַבּוֹתָ, sabbôṯî, sabbôṯem, sabbônû
+/// — cascades to all a-class geminates (סבב, תמם, רבב, קלל). Built from the root;
+/// caller gates to (Qal, Perfect, Geminate). Additive (an e/o-class geminate
+/// just never matches the a-class spelling).
+fn geminate_qal_perfect_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    use Vowel::*;
+    let c1 = rad(root.pe(), 1).with_vowel(Patah);
+    let cc = rad(root.ayin(), 2).with_dagesh();
+    // ô link (vav + holam) shared by every consonantal-suffix form.
+    let olink = || vec![cc, Cons::new(letter::VAV).with_vowel(Holam)];
+    let seq: Vec<Cons> = match (pgn.person, pgn.gender, pgn.number) {
+        (Some(Person::Third), Some(Gender::Masculine), Some(Number::Singular)) => {
+            vec![c1, rad(root.ayin(), 2)]
+        }
+        (Some(Person::Third), Some(Gender::Feminine), Some(Number::Singular)) => {
+            vec![c1, cc.with_vowel(Qamats), Cons::new(letter::HE)]
+        }
+        (Some(Person::Third), _, Some(Number::Plural)) => {
+            vec![c1, cc, Cons::new(letter::VAV).with_dagesh()]
+        }
+        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Singular)) => {
+            let mut s = vec![c1];
+            s.extend(olink());
+            s.push(Cons::new(letter::TAV).with_vowel(Qamats));
+            s
+        }
+        (Some(Person::Second), Some(Gender::Feminine), Some(Number::Singular)) => {
+            let mut s = vec![c1];
+            s.extend(olink());
+            s.push(Cons::new(letter::TAV));
+            s
+        }
+        (Some(Person::First), _, Some(Number::Singular)) => {
+            let mut s = vec![c1];
+            s.extend(olink());
+            s.push(Cons::new(letter::TAV).with_vowel(Hiriq));
+            s.push(Cons::new(letter::YOD));
+            s
+        }
+        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Plural)) => {
+            let mut s = vec![c1];
+            s.extend(olink());
+            s.push(Cons::new(letter::TAV).with_vowel(Segol));
+            s.push(Cons::new(letter::MEM));
+            s
+        }
+        (Some(Person::Second), Some(Gender::Feminine), Some(Number::Plural)) => {
+            let mut s = vec![c1];
+            s.extend(olink());
+            s.push(Cons::new(letter::TAV).with_vowel(Segol));
+            s.push(Cons::new(letter::NUN));
+            s
+        }
+        (Some(Person::First), _, Some(Number::Plural)) => {
+            let mut s = vec![c1];
+            s.extend(olink());
+            s.push(Cons::new(letter::NUN));
+            s.push(Cons::new(letter::VAV).with_dagesh());
+            s
+        }
+        _ => return None,
+    };
     Some(hebrew::render(&seq))
 }
 
