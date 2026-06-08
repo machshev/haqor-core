@@ -347,6 +347,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::Hollow))
                 .then(|| hollow_qal_perfect_heavy_suffix_variant(root, pgn))
                 .flatten();
+                // III-aleph participle plural reduction (נִמְצְאִים, נִמְצְאוֹת).
+                let lamed_aleph_ptcp = (matches!(
+                    form,
+                    Form::ParticipleActive | Form::ParticiplePassive
+                ) && root.has(Gizra::LamedAleph)
+                    && pgn.number == Some(Number::Plural))
+                .then(|| lamed_aleph_participle_reduce_variant(&text))
+                .flatten();
                 // PeAleph Qal Imperfect tsere variant — יֹאכֵל beside יֹאכַל.
                 let pe_aleph_tsere = (binyan == Binyan::Qal
                     && root.has(Gizra::PeAleph)
@@ -519,6 +527,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_hiphil_ptcp,
                     hollow_hophal_ptcp,
                     hollow_qal_perf_heavy,
+                    lamed_aleph_ptcp,
                     pe_aleph_tsere,
                     lamed_aleph_tsere,
                     pe_guttural_segol,
@@ -854,6 +863,23 @@ fn hollow_qal_perfect_heavy_suffix_variant(root: &Root, pgn: Pgn) -> Option<Stri
     last.vowel = Some(Vowel::Segol);
     seq.push(Cons::new(tail));
     Some(hebrew::render(&seq))
+}
+
+/// III-aleph participle plural reduction: before a vocalic ending the final
+/// aleph turns consonantal again and the thematic qamats on the preceding
+/// radical reduces to a vocal sheva — niCˌāʔ → niCˌᵉʔîm: nimṣāʔ נִמְצָא →
+/// nimṣᵉʔîm נִמְצְאִים, fp נִמְצְאוֹת; likewise the Niphal/Pual/Hophal participles
+/// of any III-aleph root. The strong base wrongly keeps the qamats
+/// (נִמְצָאִים). Caller gates to (participle, LamedAleph, plural). Additive.
+fn lamed_aleph_participle_reduce_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    for i in 1..seq.len() {
+        if seq[i].letter == letter::ALEF && seq[i - 1].vowel == Some(Vowel::Qamats) {
+            seq[i - 1].vowel = Some(Vowel::Sheva);
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
 }
 
 /// Furtive-patah twin: when a form ends in a vowelless guttural ח or ע preceded
