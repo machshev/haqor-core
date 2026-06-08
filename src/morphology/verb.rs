@@ -255,6 +255,11 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let maqaf = maqaf_segol_variant(&text);
                 let guttural_lowered = guttural_lowered_variant(&text);
                 let pausal = pausal_qamats_variant(&text);
+                // I-guttural Hiphil C2 spirantization (הֶעֱבִיר, הַאֲבַדְתִּי).
+                let hiphil_guttural_c2_spirant = (binyan == Binyan::Hiphil
+                    && root.has(Gizra::PeGuttural))
+                .then(|| hiphil_guttural_c2_spirant_variant(root, &text))
+                .flatten();
                 // I-yod Hiphil ê-twin (הֵיטִיב, הֵילִיל, הֵיטֵב).
                 let pe_yod_hiphil_e = (binyan == Binyan::Hiphil && root.has(Gizra::PeYod))
                     .then(|| pe_yod_hiphil_e_variant(&text))
@@ -573,6 +578,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_guttural_impf_hataf,
                     pe_guttural_impf_silent,
                     pe_guttural_impf_silent_pl,
+                    hiphil_guttural_c2_spirant,
                     pe_yod_hiphil_e,
                     paragogic,
                     hiphil_apoc,
@@ -3911,6 +3917,15 @@ fn apply_pe_guttural(seq: &mut [Cons], root: &Root, binyan: Binyan, form: Form, 
                 Vowel::HatafSegol
             });
             changed = true;
+            // The hataf opens the C1 syllable, so a begedkefet C2 spirantizes —
+            // heʕĕḇîr הֶעֱבִיר not הֶעֱבִּיר (contrast strong hikbîd, where C1's
+            // silent sheva closes the syllable and the dagesh lene stays).
+            if let Some(j) = radical_idx(seq, 2)
+                && seq[j].dagesh
+                && hebrew::is_begedkefet(seq[j].letter)
+            {
+                seq[j].dagesh = false;
+            }
         }
         return changed;
     }
@@ -5018,6 +5033,24 @@ fn pausal_qamats_variant(text: &str) -> Option<String> {
     }
     seq[n - 2].vowel = Some(Vowel::Qamats);
     Some(hebrew::render(&seq))
+}
+
+/// I-guttural Hiphil C2 spirantization twin: after the open hataf syllable the
+/// preformative opens (heʕĕ-, haʕă-), so a begedkefet second radical spirantizes
+/// — heʕĕḇîr הֶעֱבִיר, haʕăḇîr הַעֲבִיר, hāʔăḇadtî הַאֲבַדְתִּי — but the builder
+/// leaves the dagesh lene it would take after a closed syllable (הֶעֱבִּיר).
+/// Strips a dagesh on the second radical (root.ayin()). Caller gates to (Hiphil,
+/// PeGuttural). Additive.
+fn hiphil_guttural_c2_spirant_variant(root: &Root, text: &str) -> Option<String> {
+    let c2 = root.ayin();
+    let mut seq = hebrew::parse_pointed(text);
+    for c in seq.iter_mut() {
+        if c.letter == c2 && c.dagesh && hebrew::is_begedkefet(c.letter) {
+            c.dagesh = false;
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
 }
 
 /// Plural sibling of the silent-sheva twin, built from the root (the generator's
