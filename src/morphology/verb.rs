@@ -329,6 +329,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::Hollow))
                 .then(|| hollow_qal_participle_variant(&text))
                 .flatten();
+                // Hollow Hiphil active participle mēCîC shape (מֵבִיא, מְבִיאִים).
+                let hollow_hiphil_ptcp = (binyan == Binyan::Hiphil
+                    && form == Form::ParticipleActive
+                    && root.has(Gizra::Hollow))
+                .then(|| hollow_hiphil_participle_variant(root, pgn))
+                .flatten();
                 // PeAleph Qal Imperfect tsere variant — יֹאכֵל beside יֹאכַל.
                 let pe_aleph_tsere = (binyan == Binyan::Qal
                     && root.has(Gizra::PeAleph)
@@ -498,6 +504,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     guttural_imperative_pausal,
                     guttural_perfect_patah,
                     hollow_ptcp,
+                    hollow_hiphil_ptcp,
                     pe_aleph_tsere,
                     lamed_aleph_tsere,
                     pe_guttural_segol,
@@ -731,6 +738,44 @@ fn hollow_qal_participle_variant(text: &str) -> Option<String> {
         return Some(hebrew::render(&seq));
     }
     None
+}
+
+/// Hollow Hiphil active participle: the strong `maqṭîl` base mishandles a hollow
+/// root by keeping the middle vav as a radical (mabwîʔ מַבְוִיא). The real shape
+/// drops the middle radical entirely — mēCîC: mēḇîʔ (מֵבִיא), pl. mᵉḇîʔîm
+/// (מְבִיאִים), fs mᵉḇîʔâ (מְבִיאָה), fp mᵉḇîʔôt (מְבִיאוֹת); likewise mēqîm קום,
+/// mēšîḇ שוב. The mem carries tsere in the ms but reduces propretonically to a
+/// vocal sheva once an ending shifts the stress. Built straight from the root;
+/// caller gates to (Hiphil, ParticipleActive, Hollow). Additive alternant —
+/// exact-match keeps only the spelling that occurs.
+fn hollow_hiphil_participle_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    use Vowel::*;
+    let (mem_vowel, c3_vowel, mut tail): (Vowel, Option<Vowel>, Vec<Cons>) =
+        match (pgn.gender, pgn.number) {
+            (Some(Gender::Masculine), Some(Number::Singular)) => (Tsere, None, vec![]),
+            (Some(Gender::Masculine), Some(Number::Plural)) => {
+                (Sheva, Some(Hiriq), vec![Cons::new(letter::YOD), Cons::new(letter::MEM)])
+            }
+            (Some(Gender::Feminine), Some(Number::Singular)) => {
+                (Sheva, Some(Qamats), vec![Cons::new(letter::HE)])
+            }
+            (Some(Gender::Feminine), Some(Number::Plural)) => {
+                (Sheva, Some(Holam), vec![Cons::new(letter::TAV)])
+            }
+            _ => return None,
+        };
+    let c3 = rad(root.lamed(), 3);
+    let mut seq = vec![
+        Cons::new(letter::MEM).with_vowel(mem_vowel),
+        rad(root.pe(), 1).with_vowel(Hiriq),
+        Cons::new(letter::YOD),
+        match c3_vowel {
+            Some(v) => c3.with_vowel(v),
+            None => c3,
+        },
+    ];
+    seq.append(&mut tail);
+    Some(hebrew::render(&seq))
 }
 
 /// Furtive-patah twin: when a form ends in a vowelless guttural ח or ע preceded
