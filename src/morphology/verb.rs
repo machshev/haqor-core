@@ -266,7 +266,17 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!((pgn.gender, pgn.number), (Some(Gender::Masculine), Some(Number::Plural))))
                 .then(|| pe_guttural_imperfect_holam_plural_variant(root, pgn))
                 .flatten();
+                // Silent-sheva twin for gutturals that close the syllable (יַחְפֹּץ,
+                // יַחְפֹּצוּ) — singular and plural, derived from the hataf form.
                 let pe_guttural_impf_silent = (binyan == Binyan::Qal
+                    && root.has(Gizra::PeGuttural)
+                    && matches!(
+                        form,
+                        Form::Imperfect | Form::Wayyiqtol | Form::Jussive | Form::Cohortative
+                    ))
+                .then(|| pe_guttural_qal_silent_twin_variant(root, &text))
+                .flatten();
+                let pe_guttural_impf_silent_pl = (binyan == Binyan::Qal
                     && root.has(Gizra::PeGuttural)
                     && matches!(form, Form::Imperfect | Form::Wayyiqtol)
                     && matches!((pgn.gender, pgn.number), (Some(Gender::Masculine), Some(Number::Plural))))
@@ -562,6 +572,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     geminate_qal_perf,
                     pe_guttural_impf_hataf,
                     pe_guttural_impf_silent,
+                    pe_guttural_impf_silent_pl,
                     pe_yod_hiphil_e,
                     paragogic,
                     hiphil_apoc,
@@ -5009,6 +5020,62 @@ fn pausal_qamats_variant(text: &str) -> Option<String> {
     Some(hebrew::render(&seq))
 }
 
+/// Plural sibling of the silent-sheva twin, built from the root (the generator's
+/// primary 3mp/2mp form is the reduced sheva shape, so there is no hataf plural
+/// for the transform to re-point): yaḥpōṣû יַחְפֹּצוּ, taḥpōṣû.
+fn pe_guttural_imperfect_holam_plural_silent_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    use Vowel::*;
+    if !hebrew::is_guttural(root.pe()) {
+        return None;
+    }
+    let prefix = match (pgn.person, pgn.gender) {
+        (Some(Person::Third), Some(Gender::Masculine)) => letter::YOD,
+        (Some(Person::Second), Some(Gender::Masculine)) => letter::TAV,
+        _ => return None,
+    };
+    let mut c2 = rad(root.ayin(), 2).with_vowel(Holam);
+    if hebrew::is_begedkefet(c2.letter) {
+        c2 = c2.with_dagesh();
+    }
+    let seq = vec![
+        Cons::new(prefix).with_vowel(Patah),
+        rad(root.pe(), 1).with_vowel(Sheva),
+        c2,
+        rad(root.lamed(), 3),
+        Cons::new(letter::VAV).with_dagesh(),
+    ];
+    Some(hebrew::render(&seq))
+}
+
+/// I-guttural Qal imperfect silent-sheva twin: a guttral that closes the first
+/// syllable takes a silent sheva (and a begedkefet C2 a dagesh lene) rather than
+/// the composite sheva the generator emits — yaḥăp̄ōṣ יַחֲפֹץ → yaḥpōṣ יַחְפֹּץ,
+/// likewise the plural יַחְפֹּצוּ. Transforms any generated form whose first
+/// radical guttural carries a hataf: re-points it to a silent sheva. Caller
+/// gates to (Qal, PeGuttural, imperfect family). Additive — for gutturals that
+/// genuinely keep the hataf (יַעֲמֹד) the silent twin simply never matches.
+fn pe_guttural_qal_silent_twin_variant(root: &Root, text: &str) -> Option<String> {
+    let g = root.pe();
+    if !hebrew::is_guttural(g) {
+        return None;
+    }
+    let mut seq = hebrew::parse_pointed(text);
+    for i in 0..seq.len() {
+        if seq[i].letter == g
+            && matches!(seq[i].vowel, Some(Vowel::HatafPatah) | Some(Vowel::HatafSegol))
+        {
+            seq[i].vowel = Some(Vowel::Sheva);
+            if let Some(c2) = seq.get_mut(i + 1)
+                && hebrew::is_begedkefet(c2.letter)
+            {
+                c2.dagesh = true;
+            }
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
+}
+
 /// Geminate Qal perfect (a-class): the two identical radicals contract to one
 /// doubled C2, which the strong builder leaves as two separate radicals (רָבַב).
 /// The contracted paradigm — sab סַב, sabbâ סַבָּה, sabbû סַבּוּ, and the
@@ -5147,35 +5214,6 @@ fn pe_guttural_imperfect_holam_plural_variant(root: &Root, pgn: Pgn) -> Option<S
     Some(hebrew::render(&seq))
 }
 
-/// Sibling of [`pe_guttural_imperfect_holam_plural_variant`] for the gutturals
-/// that close the first syllable with a *silent* sheva instead of a hataf —
-/// yaḥpōṣû יַחְפֹּצוּ (ḥet), yaḥšōḇû. Same o-theme holam plural; only the first
-/// radical's pointing differs (vowelless rather than hataf-patah).
-fn pe_guttural_imperfect_holam_plural_silent_variant(root: &Root, pgn: Pgn) -> Option<String> {
-    use Vowel::*;
-    if !hebrew::is_guttural(root.pe()) {
-        return None;
-    }
-    let prefix = match (pgn.person, pgn.gender) {
-        (Some(Person::Third), Some(Gender::Masculine)) => letter::YOD,
-        (Some(Person::Second), Some(Gender::Masculine)) => letter::TAV,
-        _ => return None,
-    };
-    // The silent sheva closes the first syllable, so a begedkefet C2 takes a
-    // dagesh lene (yaḥpōṣû → יַחְפֹּצוּ).
-    let mut c2 = rad(root.ayin(), 2).with_vowel(Holam);
-    if hebrew::is_begedkefet(c2.letter) {
-        c2 = c2.with_dagesh();
-    }
-    let seq = vec![
-        Cons::new(prefix).with_vowel(Patah),
-        rad(root.pe(), 1).with_vowel(Sheva),
-        c2,
-        rad(root.lamed(), 3),
-        Cons::new(letter::VAV).with_dagesh(),
-    ];
-    Some(hebrew::render(&seq))
-}
 
 /// Pausal twin of an I-guttural III-He Qal imperative: the propretonic
 /// hataf-patah under the word-initial guttural lengthens to qamats when the
