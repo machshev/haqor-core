@@ -347,6 +347,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::Hollow))
                 .then(|| hollow_qal_perfect_heavy_suffix_variant(root, pgn))
                 .flatten();
+                // Pe-aleph wayyiqtol 1cp segol twin (וַנֹּאמֶר beside וַנֹּאמַר).
+                let pe_aleph_wayy_1cp = (binyan == Binyan::Qal
+                    && form == Form::Wayyiqtol
+                    && root.has(Gizra::PeAleph)
+                    && pgn == Pgn::new(Person::First, Gender::Common, Number::Plural))
+                .then(|| pe_aleph_wayyiqtol_segol_variant(&text))
+                .flatten();
                 // III-aleph participle plural reduction (נִמְצְאִים, נִמְצְאוֹת).
                 let lamed_aleph_ptcp = (matches!(
                     form,
@@ -528,6 +535,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_hophal_ptcp,
                     hollow_qal_perf_heavy,
                     lamed_aleph_ptcp,
+                    pe_aleph_wayy_1cp,
                     pe_aleph_tsere,
                     lamed_aleph_tsere,
                     pe_guttural_segol,
@@ -878,6 +886,26 @@ fn lamed_aleph_participle_reduce_variant(text: &str) -> Option<String> {
             seq[i - 1].vowel = Some(Vowel::Sheva);
             return Some(hebrew::render(&seq));
         }
+    }
+    None
+}
+
+/// Pe-aleph wayyiqtol 1cp segol twin (וַנֹּאמֶר). The stress-retracted wayyiqtol
+/// lowers the theme to segol for most persons (3ms וַיֹּאמֶר, 2ms וַתֹּאמֶר), but
+/// the generator keeps the patah on the 1cp (וַנֹּאמַר) the way it must for the
+/// 1cs (וָאֹמַר, whose aleph merges). The 1cp behaves like the 2ms/3ms, so emit
+/// the segol twin. Caller gates to (Qal, Wayyiqtol, PeAleph, 1cp). Additive.
+fn pe_aleph_wayyiqtol_segol_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    // The theme sits on the penultimate consonant (before the final radical).
+    let n = seq.len();
+    if n < 2 {
+        return None;
+    }
+    let c = &mut seq[n - 2];
+    if c.vowel == Some(Vowel::Patah) {
+        c.vowel = Some(Vowel::Segol);
+        return Some(hebrew::render(&seq));
     }
     None
 }
