@@ -341,6 +341,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::Hollow))
                 .then(|| hollow_hophal_participle_variant(root, pgn))
                 .flatten();
+                // Hollow Qal perfect heavy 2mp/2fp suffix (קַמְתֶּם, בָּאתֶם).
+                let hollow_qal_perf_heavy = (binyan == Binyan::Qal
+                    && form == Form::Perfect
+                    && root.has(Gizra::Hollow))
+                .then(|| hollow_qal_perfect_heavy_suffix_variant(root, pgn))
+                .flatten();
                 // PeAleph Qal Imperfect tsere variant — יֹאכֵל beside יֹאכַל.
                 let pe_aleph_tsere = (binyan == Binyan::Qal
                     && root.has(Gizra::PeAleph)
@@ -512,6 +518,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_ptcp,
                     hollow_hiphil_ptcp,
                     hollow_hophal_ptcp,
+                    hollow_qal_perf_heavy,
                     pe_aleph_tsere,
                     lamed_aleph_tsere,
                     pe_guttural_segol,
@@ -819,6 +826,33 @@ fn hollow_hophal_participle_variant(root: &Root, pgn: Pgn) -> Option<String> {
         },
     ];
     seq.append(&mut tail);
+    Some(hebrew::render(&seq))
+}
+
+/// Hollow Qal perfect 2mp/2fp (קַמְתֶּם, קַמְתֶּן; III-aleph בָּאתֶם). The light
+/// consonantal-suffix forms (2ms קַמְתָּ, 1cs קַמְתִּי) already generate, but the
+/// heavy -תֶם/-תֶן endings come out reduced (qᵊ/bᵊ-) instead of keeping the stem
+/// vowel. That vowel is identical to the 2ms's (patah for an ā-stem like קום,
+/// qamats for III-aleph בוא), so we derive the form from the 2ms — swapping its
+/// final -תָּ (tav+qamats) for -תֶם/-תֶן — which carries the right vowel for
+/// either class for free. Caller gates to (Qal, Perfect, Hollow, 2mp|2fp).
+fn hollow_qal_perfect_heavy_suffix_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    let tail = match (pgn.person, pgn.gender, pgn.number) {
+        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Plural)) => letter::MEM,
+        (Some(Person::Second), Some(Gender::Feminine), Some(Number::Plural)) => letter::NUN,
+        _ => return None,
+    };
+    let two_ms = Pgn::new(Person::Second, Gender::Masculine, Number::Singular);
+    let (base, _) = generate_one(root, Binyan::Qal, Form::Perfect, two_ms, false);
+    let mut seq = hebrew::parse_pointed(&base);
+    // The 2ms ends in tav + qamats; re-point the tav to segol and add the
+    // heavy-ending consonant (keeping the tav's dagesh lene).
+    let last = seq.last_mut()?;
+    if last.letter != letter::TAV {
+        return None;
+    }
+    last.vowel = Some(Vowel::Segol);
+    seq.push(Cons::new(tail));
     Some(hebrew::render(&seq))
 }
 
