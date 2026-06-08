@@ -4555,13 +4555,13 @@ fn nominal_suffix_tails() -> Vec<(Pgn, Option<Vowel>, Vec<Cons>)> {
 fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -> Vec<(Pgn, String)> {
     use Vowel::*;
     let mut out = Vec::new();
-    if binyan == Binyan::Qal {
-        let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
-        if matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
-            || matches!(c1, letter::VAV | letter::YOD | letter::NUN)
-        {
-            return out;
-        }
+    let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
+    let strong_qal = binyan == Binyan::Qal
+        && !matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
+        && !matches!(c1, letter::VAV | letter::YOD | letter::NUN);
+    if strong_qal {
+        // Strong Qal: the base inf-construct (qᵊṭōl) reduces to the qoṭl- grade
+        // before a suffix (šomrî), so build that from the radicals.
         for (obj, link, tail) in nominal_suffix_tails() {
             for c1v in [Qamats, QamatsQatan] {
                 let mut c3c = Cons::radical(c3, 3);
@@ -4573,6 +4573,10 @@ fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -
             }
         }
     } else {
+        // Derived stems and the weak Qal inf-constructs (the pe-yod/pe-nun ṣēʾṯ
+        // צֵאת, šeḇeṯ, tēṯ, daʕaṯ): the base form is already the suffix base, so
+        // the suffix attaches straight to its final consonant (ṣêṯām בְּצֵאתָם,
+        // ṣêṯᵊḵā צֵאתְךָ).
         let seq = hebrew::parse_pointed(base_text);
         let n = seq.len();
         if n < 2 {
@@ -4585,11 +4589,29 @@ fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -
         {
             return out;
         }
-        for (obj, link, tail) in nominal_suffix_tails() {
-            let mut s = seq.clone();
-            s[n - 1].vowel = link;
-            s.extend(tail);
-            out.push((obj, hebrew::render(&s)));
+        // Pe-yod segholate infinitive construct (šeḇeṯ שֶׁבֶת, leḵeṯ לֶכֶת):
+        // the two surviving radicals both carry segol. Before a suffix they
+        // reduce to C1=hiriq, C2=silent sheva (šibtô שִׁבְתּוֹ).
+        let segholate = n >= 3
+            && seq[n - 1].letter == letter::TAV
+            && seq[0].vowel == Some(Vowel::Segol)
+            && seq[1].vowel == Some(Vowel::Segol);
+        if segholate {
+            for (obj, link, tail) in nominal_suffix_tails() {
+                let mut s = seq.clone();
+                s[0].vowel = Some(Vowel::Hiriq);
+                s[1].vowel = Some(Vowel::Sheva);
+                s[n - 1].vowel = link;
+                s.extend(tail);
+                out.push((obj, hebrew::render(&s)));
+            }
+        } else {
+            for (obj, link, tail) in nominal_suffix_tails() {
+                let mut s = seq.clone();
+                s[n - 1].vowel = link;
+                s.extend(tail);
+                out.push((obj, hebrew::render(&s)));
+            }
         }
     }
     out
@@ -5251,5 +5273,111 @@ mod tests {
                 && f.text == "הַאֲזִינָה"
         });
         assert!(f.is_some(), "expected הַאֲזִינָה in paradigm");
+    }
+
+    fn find_object_suffix(
+        forms: &[VerbForm],
+        binyan: Binyan,
+        form: Form,
+        obj: Pgn,
+    ) -> Option<String> {
+        forms
+            .iter()
+            .find(|f| {
+                f.binyan == binyan
+                    && f.form == form
+                    && f.pgn == Pgn::none()
+                    && f.object_suffix == Some(obj)
+            })
+            .map(|f| f.text.clone())
+    }
+
+    #[test]
+    fn strong_qal_inf_construct_3ms() {
+        // קטל → qoṭlô (קָטְלוֹ — strong Qal inf construct shifts to qoṭl-grade).
+        let root = Root::parse("קטל").unwrap();
+        let p = generate_paradigm(&root);
+        let text = find_object_suffix(&p.forms, Binyan::Qal, Form::InfinitiveConstruct, OBJ_3MS);
+        let expected = hebrew::render(&[
+            Cons::radical('ק', 1).with_vowel(Vowel::Qamats),
+            Cons::radical('ט', 2).with_vowel(Vowel::Sheva),
+            Cons::radical('ל', 3),
+            Cons::new(letter::VAV).with_vowel(Vowel::Holam),
+        ]);
+        assert_eq!(text, Some(expected));
+    }
+
+    #[test]
+    fn strong_qal_inf_construct_3mp() {
+        let root = Root::parse("קטל").unwrap();
+        let p = generate_paradigm(&root);
+        let text = find_object_suffix(&p.forms, Binyan::Qal, Form::InfinitiveConstruct, OBJ_3MP);
+        let expected = hebrew::render(&[
+            Cons::radical('ק', 1).with_vowel(Vowel::Qamats),
+            Cons::radical('ט', 2).with_vowel(Vowel::Sheva),
+            Cons::radical('ל', 3).with_vowel(Vowel::Qamats),
+            Cons::new(letter::MEM),
+        ]);
+        assert_eq!(text, Some(expected));
+    }
+
+    #[test]
+    fn pe_yod_inf_construct_3mp() {
+        // יצא → צֵאת → ṣêṯām (צֵאתָם — non-segholate weak Qal retains the III-aleph).
+        let root = Root::parse("יצא").unwrap();
+        let p = generate_paradigm(&root);
+        let text = find_object_suffix(&p.forms, Binyan::Qal, Form::InfinitiveConstruct, OBJ_3MP);
+        let expected = hebrew::render(&[
+            Cons::new('צ').with_vowel(Vowel::Tsere),
+            Cons::new(letter::ALEF),
+            Cons::new('ת').with_vowel(Vowel::Qamats),
+            Cons::new(letter::MEM),
+        ]);
+        assert_eq!(text, Some(expected));
+    }
+
+    #[test]
+    fn pe_yod_segholate_inf_construct_3ms() {
+        // ישב → שֶׁבֶת → šibtô (שִׁבְתּוֹ — segholate weak Qal).
+        let root = Root::parse("ישב").unwrap();
+        let p = generate_paradigm(&root);
+        let text = find_object_suffix(&p.forms, Binyan::Qal, Form::InfinitiveConstruct, OBJ_3MS);
+        let expected = hebrew::render(&[
+            Cons::new('ש').with_vowel(Vowel::Hiriq),
+            Cons::new('ב').with_vowel(Vowel::Sheva),
+            Cons::new('ת'),
+            Cons::new(letter::VAV).with_vowel(Vowel::Holam),
+        ]);
+        assert_eq!(text, Some(expected));
+    }
+
+    #[test]
+    fn pe_yod_segholate_inf_construct_3mp() {
+        // ישב → šibtām (שִׁבְתָּם).
+        let root = Root::parse("ישב").unwrap();
+        let p = generate_paradigm(&root);
+        let text = find_object_suffix(&p.forms, Binyan::Qal, Form::InfinitiveConstruct, OBJ_3MP);
+        let expected = hebrew::render(&[
+            Cons::new('ש').with_vowel(Vowel::Hiriq),
+            Cons::new('ב').with_vowel(Vowel::Sheva),
+            Cons::new('ת').with_vowel(Vowel::Qamats),
+            Cons::new(letter::MEM),
+        ]);
+        assert_eq!(text, Some(expected));
+    }
+
+    #[test]
+    fn pe_yod_segholate_inf_construct_2ms() {
+        // ישב → šibtᵊḵā (שִׁבְתְּךָ).
+        let root = Root::parse("ישב").unwrap();
+        let p = generate_paradigm(&root);
+        let text = find_object_suffix(&p.forms, Binyan::Qal, Form::InfinitiveConstruct, OBJ_2MS);
+        let expected = hebrew::render(&[
+            Cons::new('ש').with_vowel(Vowel::Hiriq),
+            Cons::new('ב').with_vowel(Vowel::Sheva),
+            Cons::new('ת').with_vowel(Vowel::Sheva),
+            Cons::new(letter::KAF).with_vowel(Vowel::Qamats),
+        ]);
+        assert_eq!(text, Some(expected));
     }
 }
