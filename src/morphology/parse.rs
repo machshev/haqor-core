@@ -228,6 +228,20 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
             targets.push(hebrew::render(&alt));
         }
     }
+    // Dehiq / conjunctive doubling: a word whose first consonant is a
+    // non-begedkefet letter carrying a dagesh forte (נַּעֲשֶׂה, נּוֹרָא, יּוֹסִיף)
+    // was doubled by the preceding word's stress (the dagesh is never
+    // etymological word-initially), so the generator never produces it. Strip
+    // it and re-match the bare stem.
+    if strip == 0
+        && remainder
+            .first()
+            .is_some_and(|c| c.dagesh && !hebrew::is_begedkefet(c.letter))
+    {
+        let mut alt = remainder.to_vec();
+        alt[0].dagesh = false;
+        targets.push(hebrew::render(&alt));
+    }
     // The article / relative doubles the first stem consonant; strip that dagesh.
     if strip > 0 && remainder.first().is_some_and(|c| c.dagesh) {
         let mut alt = remainder.to_vec();
@@ -1031,5 +1045,17 @@ mod tests {
         // הַצִּילֵנִי — Hiphil imperative 2ms of נצל + 1cs ("deliver me").
         let matches = parse_word("הַצִּילֵנִי");
         assert!(has_obj(&matches, "נצל", Form::Imperative, "1cs"));
+    }
+
+    #[test]
+    fn strips_word_initial_dehiq_dagesh() {
+        // נַּעֲשֶׂה — עשה Qal Imperfect 1cp ("we will do") with a conjunctive
+        // (dehiq) dagesh forte on the word-initial nun; the generator never
+        // produces the doubled nun, so the parser must strip it.
+        let matches = parse_word("נַּעֲשֶׂה");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "עשה"
+            && m.binyan == Binyan::Qal
+            && m.form == Form::Imperfect
+            && m.pgn.label() == "1cp"));
     }
 }
