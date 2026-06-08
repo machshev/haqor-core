@@ -255,8 +255,10 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let maqaf = maqaf_segol_variant(&text);
                 let guttural_lowered = guttural_lowered_variant(&text);
                 let pausal = pausal_qamats_variant(&text);
-                // Interior pausal of the Qal perfect (יָדָעְתָּ, שָׁמָרְתָּ, יָצָאוּ).
-                let pausal_perf = (binyan == Binyan::Qal && form == Form::Perfect)
+                // Interior pausal of the Qal/Niphal perfect (יָדָעְתָּ, שָׁמָרְתָּ,
+                // יָצָאוּ, נִלְחָמוּ).
+                let pausal_perf = (matches!(binyan, Binyan::Qal | Binyan::Niphal)
+                    && form == Form::Perfect)
                     .then(|| pausal_perfect_c2_variant(root, &text))
                     .flatten();
                 let paragogic = (form == Form::Perfect
@@ -4990,7 +4992,14 @@ fn pausal_perfect_c2_variant(root: &Root, text: &str) -> Option<String> {
     let c2 = root.ayin();
     let mut seq = hebrew::parse_pointed(text);
     for c in seq.iter_mut() {
-        if c.letter == c2 && matches!(c.vowel, Some(Vowel::Patah) | Some(Vowel::Sheva)) {
+        // patah (qāṭaltā), the reduced sheva of 3fs/3cp, or the hataf-patah a
+        // guttural C2 takes there (nilḥămû → נִלְחָמוּ) all lengthen to qamats.
+        if c.letter == c2
+            && matches!(
+                c.vowel,
+                Some(Vowel::Patah) | Some(Vowel::Sheva) | Some(Vowel::HatafPatah)
+            )
+        {
             c.vowel = Some(Vowel::Qamats);
             return Some(hebrew::render(&seq));
         }
