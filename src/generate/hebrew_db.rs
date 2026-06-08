@@ -45,7 +45,8 @@ use rayon::prelude::*;
 use rusqlite::Connection;
 
 use crate::morphology::{
-    NounInventory, NounMatch, ReverseIndex, VerbMatch, parse_word_filtered, parse_word_indexed,
+    IrregularVerb, NounInventory, NounMatch, ReverseIndex, VerbMatch, irregular_verb,
+    parse_word_filtered, parse_word_indexed,
 };
 
 use super::lexicon_db::{load_noun_inventory, load_proper_inventory, load_root_inventory};
@@ -409,6 +410,10 @@ struct SurfaceAnalysis {
     classes: Vec<Option<&'static str>>,
     verb: Vec<Vec<VerbMatch>>,
     noun: Vec<Vec<NounMatch>>,
+    /// Exact-match readings from the curated unmodeled-stem verb table
+    /// ([`irregular_verb`]). These contribute to `n_candidates` (they are verbs)
+    /// and are stored in `analyses` like generated verb matches.
+    gold: Vec<Vec<&'static IrregularVerb>>,
 }
 
 /// How the verb pass enumerates candidate analyses. Both return the same matches
@@ -573,10 +578,20 @@ fn analyze_surfaces(
         info!("  {noun_parsed} surfaces matched a noun analysis");
     }
 
+    // Curated unmodeled-stem verb table: exact (full-surface) match. Gold-precise,
+    // so it only adds the correct reading and never false-matches a surface the
+    // generator already covers (those surfaces are absent from the table).
+    let iv = irregular_verb::lookup();
+    let gold: Vec<Vec<&'static IrregularVerb>> = surfaces
+        .iter()
+        .map(|t| iv.get(t.as_str()).cloned().unwrap_or_default())
+        .collect();
+
     Ok(SurfaceAnalysis {
         classes,
         verb,
         noun,
+        gold,
     })
 }
 
@@ -586,6 +601,7 @@ fn insert_analyses(
     id: i64,
     verb: &[VerbMatch],
     noun: &[NounMatch],
+    gold: &[&IrregularVerb],
     ana_stmt: &mut rusqlite::Statement<'_>,
     noun_stmt: &mut rusqlite::Statement<'_>,
 ) -> Result<()> {
@@ -602,6 +618,23 @@ fn insert_analyses(
             m.vav_consecutive as i64,
             m.attested as i64,
             m.object_suffix.map(|p| p.label()).unwrap_or_default(),
+        ))?;
+    }
+    // Curated unmodeled-stem verbs: gold-precise, so always attested; the whole
+    // surface is the matched form (no separated proclitic), and they carry no
+    // generated object suffix.
+    for g in gold {
+        ana_stmt.execute((
+            id,
+            g.root,
+            "Irregular",
+            g.binyan,
+            g.form,
+            g.pgn,
+            "",
+            0_i64,
+            1_i64,
+            "",
         ))?;
     }
     for n in noun {
@@ -670,6 +703,7 @@ fn build_hebrew(
         classes,
         verb: analyses,
         noun: noun_analyses,
+        gold: gold_analyses,
     } = analyze_surfaces(&surfaces, lexicon_db, VerbStrategy::Indexed)?;
 
     // Occurrence counts per surface, plus a per-surface flag for surfaces that
@@ -697,7 +731,8 @@ fn build_hebrew(
     let parsed_surfaces = analyses
         .iter()
         .zip(noun_analyses.iter())
-        .filter(|(verb, noun)| !verb.is_empty() || !noun.is_empty())
+        .zip(gold_analyses.iter())
+        .filter(|((verb, noun), gold)| !verb.is_empty() || !noun.is_empty() || !gold.is_empty())
         .count();
 
     let tx = db.transaction()?;
@@ -718,19 +753,22 @@ fn build_hebrew(
         )?;
         for (id, matches) in analyses.iter().enumerate() {
             let nouns = &noun_analyses[id];
-            let any_attested = matches.iter().any(|m| m.attested);
+            let gold = &gold_analyses[id];
+            // Gold readings are exact-match and always attested; they count as
+            // verb candidates (n_candidates) so the surface leaves review_missing.
+            let any_attested = matches.iter().any(|m| m.attested) || !gold.is_empty();
             surf_stmt.execute((
                 id as i64,
                 &surfaces[id],
                 counts[id] as i64,
-                matches.len() as i64,
+                (matches.len() + gold.len()) as i64,
                 nouns.len() as i64,
-                (!matches.is_empty() || !nouns.is_empty()) as i64,
+                (!matches.is_empty() || !nouns.is_empty() || !gold.is_empty()) as i64,
                 any_attested as i64,
                 classes[id],
                 aramaic_only[id].then_some("aramaic"),
             ))?;
-            insert_analyses(id as i64, matches, nouns, &mut ana_stmt, &mut noun_stmt)?;
+            insert_analyses(id as i64, matches, nouns, gold, &mut ana_stmt, &mut noun_stmt)?;
         }
 
         let mut occ_stmt = tx.prepare(
@@ -838,6 +876,7 @@ pub fn preview_missing(
         classes,
         verb,
         noun,
+        gold,
     } = analyze_surfaces(&texts, lexicon_db, strategy)?;
 
     let mut resolved = 0usize;
@@ -853,9 +892,14 @@ pub fn preview_missing(
     for (i, (_, text, occ)) in missing.iter().enumerate() {
         let v = &verb[i];
         let n = &noun[i];
+        let g = &gold[i];
         let class = classes[i];
         let result = if let Some(c) = class {
             format!("→ lexical:{c}")
+        } else if !g.is_empty() {
+            let m = g[0];
+            let more = if g.len() > 1 { format!(" (+{} more)", g.len() - 1) } else { String::new() };
+            format!("→ verb* {} {} {} {}{}", m.root, m.binyan, m.form, m.pgn, more)
         } else if !v.is_empty() {
             let m = &v[0];
             let root: String = m.root.letters.iter().collect();
@@ -887,7 +931,7 @@ pub fn preview_missing(
         } else {
             "still missing".to_string()
         };
-        let resolves = class.is_some() || !v.is_empty() || !n.is_empty();
+        let resolves = class.is_some() || !v.is_empty() || !n.is_empty() || !g.is_empty();
         if resolves {
             resolved += 1;
         }
@@ -939,6 +983,7 @@ fn update_missing(
         classes,
         verb,
         noun,
+        gold,
     } = analyze_surfaces(&texts, lexicon_db, VerbStrategy::Indexed)?;
 
     let mut resolved = 0usize;
@@ -960,23 +1005,24 @@ fn update_missing(
         for (i, (id, _)) in missing.iter().enumerate() {
             let matches = &verb[i];
             let nouns = &noun[i];
+            let golds = &gold[i];
             let class = classes[i];
             // Skip rows that are still unresolved, so we never rewrite a row to
             // its existing (empty) state.
-            if matches.is_empty() && nouns.is_empty() && class.is_none() {
+            if matches.is_empty() && nouns.is_empty() && golds.is_empty() && class.is_none() {
                 continue;
             }
             resolved += 1;
-            let any_attested = matches.iter().any(|m| m.attested);
+            let any_attested = matches.iter().any(|m| m.attested) || !golds.is_empty();
             surf_stmt.execute((
                 id,
-                matches.len() as i64,
+                (matches.len() + golds.len()) as i64,
                 nouns.len() as i64,
-                (!matches.is_empty() || !nouns.is_empty()) as i64,
+                (!matches.is_empty() || !nouns.is_empty() || !golds.is_empty()) as i64,
                 any_attested as i64,
                 class,
             ))?;
-            insert_analyses(*id, matches, nouns, &mut ana_stmt, &mut noun_stmt)?;
+            insert_analyses(*id, matches, nouns, golds, &mut ana_stmt, &mut noun_stmt)?;
         }
     }
     tx.commit()?;

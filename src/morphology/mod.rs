@@ -22,6 +22,7 @@
 pub mod gold_noun;
 pub mod hebrew;
 pub mod irregular_noun;
+pub mod irregular_verb;
 pub mod noun;
 pub mod noun_parse;
 pub mod parse;
@@ -29,6 +30,7 @@ pub mod root;
 pub mod verb;
 
 pub use irregular_noun::{IRREGULAR_NOUNS, IrregularNoun};
+pub use irregular_verb::{IRREGULAR_VERBS, IrregularVerb};
 pub use noun::{NounInflection, NounStem, NounStemKind, inflect_noun};
 pub use noun_parse::{NounInventory, NounMatch, parse_noun_word};
 pub use parse::{

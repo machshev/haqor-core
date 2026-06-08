@@ -399,9 +399,13 @@ pub fn eval_from_db(morphhb_dir: &Path, hebrew_db: &Path, limit: usize) -> Resul
     // surface text → its stored verb analyses (binyan name, form name, pgn label).
     let db = Connection::open(hebrew_db)
         .with_context(|| format!("opening {}", hebrew_db.display()))?;
+    // Exclude curated-harvest rows (gizra = 'Irregular'): the harness measures
+    // what the *generator* produces, so a hand-listed lookup form must not be
+    // credited as a parse. Generated analyses carry a gizra class, never this.
     let mut stmt = db.prepare(
         "SELECT s.text, a.binyan, a.form, a.pgn \
-         FROM analyses a JOIN surface s ON s.surface_id = a.surface_id",
+         FROM analyses a JOIN surface s ON s.surface_id = a.surface_id \
+         WHERE a.gizra <> 'Irregular'",
     )?;
     let mut by_surface: std::collections::HashMap<String, Vec<(String, String, String)>> =
         std::collections::HashMap::new();
