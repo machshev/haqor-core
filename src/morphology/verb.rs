@@ -459,6 +459,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                 .then(|| hollow_paragogic_nun_variant(&text))
                 .flatten();
+                // III-guttural perfect 2fs helping-patah twin (yāḏaʕt → yāḏaʕat
+                // יָדַעַתְּ, hišbaʕat, lāqaḥat): a final het/ayin can't close the
+                // syllable before the -t, so a furtive helping patah surfaces.
+                let lamed_guttural_perf_2fs = (form == Form::Perfect
+                    && pgn == Pgn::new(Person::Second, Gender::Feminine, Number::Singular)
+                    && matches!(root.lamed(), letter::HET | letter::AYIN))
+                .then(|| lamed_guttural_perfect_2fs_helping_variant(&text))
+                .flatten();
                 // Retained-yod twin of the I-yod Qal imperfect/wayyiqtol
                 // (yēraš יֵרַשׁ → yîraš יִירַשׁ, wayyîraš וַיִּירַשׁ). Applied to both
                 // the default theme and the a-theme alternant, since the attested
@@ -626,6 +634,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     guttural_silent_sheva,
                     paragogic_nun,
                     hollow_paragogic_nun,
+                    lamed_guttural_perf_2fs,
                 ]
                 .into_iter()
                 .flatten()
@@ -2139,6 +2148,23 @@ fn build_participle(root: &Root, binyan: Binyan, pgn: Pgn, passive: bool) -> Vec
             rad(root.lamed(), 3),
         ],
     };
+
+    // Dagesh lene on a begedkefet C2 in the prefixed binyanim: the prefix
+    // syllable closes on C1's silent sheva (maq-, niq-, hoq-), so a begedkefet
+    // C2 begins a new syllable and takes a dagesh lene (maqtîr → מַזְכִּיר,
+    // niḵtāḇ → נִכְתָּב). The perfect and imperfect builders already apply this;
+    // the participle builder didn't, leaving the C2 spirantised (מַזְכִיר).
+    if matches!(binyan, Binyan::Niphal | Binyan::Hiphil | Binyan::Hophal)
+        && hebrew::is_begedkefet(root.ayin())
+        && base
+            .iter()
+            .find(|c| c.role == Role::Radical(1))
+            .is_some_and(|c| c.vowel == Some(Sheva))
+    {
+        if let Some(c2) = base.iter_mut().find(|c| c.role == Role::Radical(2)) {
+            c2.dagesh = true;
+        }
+    }
 
     // Inflect for gender/number. The ms is `base` as-is.
     // fs uses -et / -â depending on binyan; we'll standardise on -ת ending
@@ -4306,6 +4332,28 @@ fn lamed_guttural_perfect_sheva_variant(text: &str) -> Option<String> {
     None
 }
 
+/// III-guttural perfect 2fs helping-patah twin: the 2fs afformative -t closes
+/// the stem (yāḏaʕt יָדַעְתְּ), but a final het/ayin can't sit vowelless before
+/// the tav, so a furtive helping patah surfaces on the guttural — yāḏaʕat
+/// (יָדַעַתְּ), lāqaḥat, hišbaʕat. Replaces the silent sheva under the final
+/// radical guttural (the consonant before the suffix tav) with patah. Additive:
+/// the helping-patah spelling differs from the bare silent-sheva one.
+fn lamed_guttural_perfect_2fs_helping_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 2 || seq[n - 1].letter != letter::TAV {
+        return None;
+    }
+    let g = &mut seq[n - 2];
+    if matches!(g.letter, letter::HET | letter::AYIN)
+        && matches!(g.vowel, None | Some(Vowel::Sheva))
+    {
+        g.vowel = Some(Vowel::Patah);
+        return Some(hebrew::render(&seq));
+    }
+    None
+}
+
 // ----- Pronominal object suffixes -------------------------------------------
 //
 // Finite verbs take pronominal *object* suffixes — "he sent me" (שְׁלָחַנִי),
@@ -5986,6 +6034,47 @@ mod tests {
         let p = generate_paradigm(&root);
         assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִירַשׁ"));
         assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MP, "יִירְשׁוּ"));
+    }
+
+    #[test]
+    fn hiphil_participle_begedkefet_c2_dagesh() {
+        // זכר Hiphil participle ms: maqtîl closes the prefix on the zayin's
+        // silent sheva, so the begedkefet kaf takes a dagesh lene → מַזְכִּיר.
+        let root = Root::parse("זכר").unwrap();
+        let p = generate_paradigm(&root);
+        let expected = hebrew::render(&[
+            Cons::new(letter::MEM).with_vowel(Vowel::Patah),
+            Cons::new(letter::ZAYIN).with_vowel(Vowel::Sheva),
+            {
+                let mut c = Cons::new(letter::KAF).with_vowel(Vowel::Hiriq);
+                c.dagesh = true;
+                c
+            },
+            Cons::new(letter::YOD),
+            Cons::new(letter::RESH),
+        ]);
+        let pgn = Pgn::gn(Gender::Masculine, Number::Singular);
+        assert!(has_text(&p, Binyan::Hiphil, Form::ParticipleActive, pgn, &expected));
+    }
+
+    #[test]
+    fn lamed_guttural_perfect_2fs_helping_patah() {
+        // ידע Qal Perfect 2fs: the final ayin takes a furtive helping patah
+        // before the -t afformative → יָדַעַתְּ (the tav carries a dagesh).
+        let root = Root::parse("ידע").unwrap();
+        let p = generate_paradigm(&root);
+        let pgn = Pgn::new(Person::Second, Gender::Feminine, Number::Singular);
+        let expected = hebrew::render(&[
+            Cons::new(letter::YOD).with_vowel(Vowel::Qamats),
+            Cons::new(letter::DALET).with_vowel(Vowel::Patah),
+            Cons::new(letter::AYIN).with_vowel(Vowel::Patah),
+            {
+                let mut c = Cons::new(letter::TAV).with_vowel(Vowel::Sheva);
+                c.dagesh = true;
+                c
+            },
+        ]);
+        assert!(has_text(&p, Binyan::Qal, Form::Perfect, pgn, &expected));
     }
 
     #[test]
