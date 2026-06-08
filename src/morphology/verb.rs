@@ -255,6 +255,19 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let maqaf = maqaf_segol_variant(&text);
                 let guttural_lowered = guttural_lowered_variant(&text);
                 let pausal = pausal_qamats_variant(&text);
+                // I-guttural Qal imperfect/wayyiqtol holam plural (יַעֲמֹדוּ).
+                let pe_guttural_impf_hataf = (binyan == Binyan::Qal
+                    && root.has(Gizra::PeGuttural)
+                    && matches!(form, Form::Imperfect | Form::Wayyiqtol)
+                    && matches!((pgn.gender, pgn.number), (Some(Gender::Masculine), Some(Number::Plural))))
+                .then(|| pe_guttural_imperfect_holam_plural_variant(root, pgn))
+                .flatten();
+                let pe_guttural_impf_silent = (binyan == Binyan::Qal
+                    && root.has(Gizra::PeGuttural)
+                    && matches!(form, Form::Imperfect | Form::Wayyiqtol)
+                    && matches!((pgn.gender, pgn.number), (Some(Gender::Masculine), Some(Number::Plural))))
+                .then(|| pe_guttural_imperfect_holam_plural_silent_variant(root, pgn))
+                .flatten();
                 // Geminate Qal perfect a-class (סַבּוּ, רַבּוּ, סַבּוֹתָ).
                 let geminate_qal_perf = (binyan == Binyan::Qal
                     && form == Form::Perfect
@@ -543,6 +556,8 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pausal,
                     pausal_perf,
                     geminate_qal_perf,
+                    pe_guttural_impf_hataf,
+                    pe_guttural_impf_silent,
                     paragogic,
                     hiphil_apoc,
                     hiphil_plene,
@@ -5080,6 +5095,62 @@ fn pausal_perfect_c2_variant(root: &Root, text: &str) -> Option<String> {
         }
     }
     None
+}
+
+/// I-guttural Qal imperfect/wayyiqtol vocalic plural (3mp/2mp): the o-theme keeps
+/// its holam before the -û ending and the first-radical guttural takes a composite
+/// sheva — yaʕămōḏû יַעֲמֹדוּ, taḥăp̄ōṣû, yaʕăḇōrû — where the strong builder
+/// reduces to a plain sheva (יַעַמְדוּ). Built straight from the root: prefix +
+/// patah, C1 + hataf-patah, C2 + holam, C3, vav (shureq). Caller gates to (Qal,
+/// PeGuttural, Imperfect|Wayyiqtol, 3mp|2mp). Additive.
+fn pe_guttural_imperfect_holam_plural_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    use Vowel::*;
+    if !hebrew::is_guttural(root.pe()) {
+        return None;
+    }
+    let prefix = match (pgn.person, pgn.gender) {
+        (Some(Person::Third), Some(Gender::Masculine)) => letter::YOD,
+        (Some(Person::Second), Some(Gender::Masculine)) => letter::TAV,
+        _ => return None,
+    };
+    let seq = vec![
+        Cons::new(prefix).with_vowel(Patah),
+        rad(root.pe(), 1).with_vowel(HatafPatah),
+        rad(root.ayin(), 2).with_vowel(Holam),
+        rad(root.lamed(), 3),
+        Cons::new(letter::VAV).with_dagesh(),
+    ];
+    Some(hebrew::render(&seq))
+}
+
+/// Sibling of [`pe_guttural_imperfect_holam_plural_variant`] for the gutturals
+/// that close the first syllable with a *silent* sheva instead of a hataf —
+/// yaḥpōṣû יַחְפֹּצוּ (ḥet), yaḥšōḇû. Same o-theme holam plural; only the first
+/// radical's pointing differs (vowelless rather than hataf-patah).
+fn pe_guttural_imperfect_holam_plural_silent_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    use Vowel::*;
+    if !hebrew::is_guttural(root.pe()) {
+        return None;
+    }
+    let prefix = match (pgn.person, pgn.gender) {
+        (Some(Person::Third), Some(Gender::Masculine)) => letter::YOD,
+        (Some(Person::Second), Some(Gender::Masculine)) => letter::TAV,
+        _ => return None,
+    };
+    // The silent sheva closes the first syllable, so a begedkefet C2 takes a
+    // dagesh lene (yaḥpōṣû → יַחְפֹּצוּ).
+    let mut c2 = rad(root.ayin(), 2).with_vowel(Holam);
+    if hebrew::is_begedkefet(c2.letter) {
+        c2 = c2.with_dagesh();
+    }
+    let seq = vec![
+        Cons::new(prefix).with_vowel(Patah),
+        rad(root.pe(), 1).with_vowel(Sheva),
+        c2,
+        rad(root.lamed(), 3),
+        Cons::new(letter::VAV).with_dagesh(),
+    ];
+    Some(hebrew::render(&seq))
 }
 
 /// Pausal twin of an I-guttural III-He Qal imperative: the propretonic
