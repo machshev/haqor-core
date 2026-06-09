@@ -581,6 +581,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 {
                     // Nun-retained Qal inf-construct (נְפֹל beside the dropped פֹּל).
                     vec![hebrew::render(&pe_nun_inf_construct_retained(root))]
+                } else if binyan == Binyan::Qal
+                    && form == Form::ParticipleActive
+                    && pgn == Pgn::gn(Gender::Feminine, Number::Singular)
+                {
+                    // -â feminine participle (יוֹלֵדָה) beside the segolate יֹלֶדֶת.
+                    vec![hebrew::render(&qal_participle_fs_a_variant(root))]
                 } else {
                     Vec::new()
                 };
@@ -4388,6 +4394,21 @@ fn geminate_hiphil_perfect_variant(root: &Root, pgn: Pgn) -> Option<Vec<Cons>> {
     } else {
         None
     }
+}
+
+/// The -â feminine of a Qal active participle (qōṭēlâ), beside the segolate
+/// qōṭelet the builder makes: yôlēḏâ יוֹלֵדָה ("woman in labour"), šōmᵊrâ. Built
+/// from the radicals — C1 holam, C2 tsere, C3 qamats, he. Additive.
+fn qal_participle_fs_a_variant(root: &Root) -> Vec<Cons> {
+    use Vowel::*;
+    let mut seq = vec![
+        rad(root.pe(), 1).with_vowel(Holam),
+        rad(root.ayin(), 2).with_vowel(Tsere),
+        rad(root.lamed(), 3).with_vowel(Qamats),
+        Cons::new(letter::HE),
+    ];
+    apply_guttural(&mut seq, root);
+    seq
 }
 
 /// Geminate Niphal perfect nāCaC (נָסַב, נָשַׁם): nun-qamats prefix, C1-patah, the

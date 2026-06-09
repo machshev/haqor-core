@@ -1058,6 +1058,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_qal_participle_fs_a_form() {
+        // יוֹלֵדָה — ילד Qal active participle fs ("woman in labour"); the -â
+        // feminine (qōṭēlâ), beside the segolate yōleḏeṯ.
+        let matches = parse_word("יוֹלֵדָה");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "ילד"
+            && m.form == Form::ParticipleActive));
+    }
+
+    #[test]
     fn parses_geminate_niphal_perfect() {
         // נָשַׁמּוּ — שמם Niphal perfect 3cp ("they were made desolate"); the
         // doubled radical contracts to nāCaC, doubling before the vocalic -û.
