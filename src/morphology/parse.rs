@@ -1058,6 +1058,20 @@ mod tests {
     }
 
     #[test]
+    fn parses_enemy_and_mp_participle_1cs_suffix() {
+        // אוֹיְבַי — איב (now a true-triliteral qōṭēl, not hollow) participle mp +
+        // 1cs ("my enemies").
+        let m1 = parse_word("אוֹיְבַי");
+        assert!(m1.iter().any(|m| m.root.letters.iter().collect::<String>() == "איב"
+            && m.form == Form::ParticipleActive
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+        // The -ay form cascades to any mp participle (שֹׁמְרַי "those keeping me").
+        let m2 = parse_word("שֹׁמְרַי");
+        assert!(m2.iter().any(|m| m.root.letters.iter().collect::<String>() == "שמר"
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+    }
+
+    #[test]
     fn parses_segholate_infinitive_object_suffix_segol_grade() {
         // בְּלֶכְתּוֹ — הלך Qal inf construct (leḵeṯ) + 3ms ("in his going"); C1
         // keeps segol (leḵtô), unlike the I-yod hiriq grade (šibtô).

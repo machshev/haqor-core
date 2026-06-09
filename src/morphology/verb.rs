@@ -4998,6 +4998,14 @@ fn participle_mp_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
     s3ms.push(Cons::new(letter::VAV));
     out.push((OBJ_3MS, hebrew::render(&s3ms)));
 
+    // -ay (1cs): the construct tsere-yod lowers to patah-yod — ʾōyᵊḇay אֹיְבַי,
+    // sûsay. The final yod (already present in the construct) is the suffix.
+    let mut s1cs = construct.clone();
+    if let Some(c) = s1cs.iter_mut().rev().nth(1) {
+        c.vowel = Some(Patah);
+    }
+    out.push((OBJ_1CS, hebrew::render(&s1cs)));
+
     out
 }
 
