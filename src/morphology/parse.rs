@@ -1058,6 +1058,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_lamed_aleph_plural_object_suffix() {
+        // וַיִּמְצָאֻהוּ — מצא Qal imperfect 3mp + 3ms ("and they found him"); the
+        // quiescent aleph carries the subject û defectively as a qubuts.
+        let matches = parse_word("וַיִּמְצָאֻהוּ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "מצא"
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("3ms")));
+    }
+
+    #[test]
     fn parses_pe_vav_niphal_imperfect() {
         // וַיִּוָּעַץ — יעץ Niphal wayyiqtol ("and he took counsel"); the I-vav
         // root doubles the vav (yiwwāʕaṣ), not the yod the builder defaults to.

@@ -5035,6 +5035,39 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
 /// carried by the base form's own label, so only the object PGN varies here.
 /// `base_text` is the bare 3mp/2mp/2fs surface; it must end in a vocalic mater
 /// (vav-shureq for -û, or a bare yod for -î).
+/// Object suffixes on a strong III-aleph plural imperfect (yimṣᵊʔû יִמְצְאוּ +
+/// "him/them"). The C2 sheva lengthens to qamats and the quiescent aleph keeps
+/// the subject û — plene on a vav (yimṣāʔûm יִמְצָאוּם) or defective as a qubuts
+/// on the aleph (yimṣāʔuhû יִמְצָאֻהוּ). `seq` is the bare 3mp ending
+/// `…C2(sheva) ALEF(∅) VAV(shureq)`; the caller has verified that shape.
+fn lamed_aleph_vocalic_object_suffixes(seq: &[Cons]) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let n = seq.len();
+    let tails: &[(Pgn, &[Cons])] = &[
+        (OBJ_3MS, &[Cons::new(letter::HE), Cons::new(letter::VAV).with_dagesh()]),
+        (OBJ_3FS, &[Cons::new(letter::HE).with_vowel(Qamats)]),
+        (OBJ_1CS, &[Cons::new(letter::NUN).with_vowel(Hiriq), Cons::new(letter::YOD)]),
+        (OBJ_2MS, &[ocv(letter::KAF, Qamats)]),
+        (OBJ_1CP, &[Cons::new(letter::NUN), Cons::new(letter::VAV).with_dagesh()]),
+        (OBJ_3MP, &[Cons::new(letter::MEM)]),
+    ];
+    let mut out = Vec::new();
+    for &(obj, tail) in tails {
+        // Plene: C2 → qamats, keep the aleph + vav-shureq, append the suffix.
+        let mut plene = seq.to_vec();
+        plene[n - 3].vowel = Some(Qamats);
+        plene.extend_from_slice(tail);
+        out.push((obj, hebrew::render(&plene)));
+        // Defective: C2 → qamats, drop the vav and put qubuts on the aleph.
+        let mut defec = seq[..n - 1].to_vec();
+        defec[n - 3].vowel = Some(Qamats);
+        defec[n - 2].vowel = Some(Qubuts);
+        defec.extend_from_slice(tail);
+        out.push((obj, hebrew::render(&defec)));
+    }
+    out
+}
+
 fn imperfect_vocalic_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
     use Vowel::*;
     let seq = hebrew::parse_pointed(base_text);
@@ -5052,10 +5085,23 @@ fn imperfect_vocalic_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
     } else {
         return Vec::new();
     };
+    // The object-suffix tails that attach after a vocalic subject (-û/-î).
+    // (Declared before the III-aleph branch, which reuses them.)
+    // ── see `tails` below ──
     // The stem consonant under the subject vowel must be a true final consonant
     // (vowelless apart from the mater), i.e. a strong base — weak/III-he plural
-    // bases (…וּ on a he/aleph, or a doubly-vocalic shape) are not modelled.
+    // bases (…וּ on a he/aleph, or a doubly-vocalic shape) are not modelled,
+    // except the strong III-aleph plural (yimṣᵊʔû): the C2 sheva lengthens to
+    // qamats and the quiescent aleph keeps the û (plene יִמְצָאוּם) or carries it
+    // defectively (יִמְצָאֻהוּ). Handled by `lamed_aleph_vocalic_object_suffixes`.
     let stem = seq[n - 2];
+    if is_u
+        && stem.letter == letter::ALEF
+        && stem.vowel.is_none()
+        && seq[n - 3].vowel == Some(Sheva)
+    {
+        return lamed_aleph_vocalic_object_suffixes(&seq);
+    }
     if stem.vowel.is_some() || matches!(stem.letter, letter::HE | letter::ALEF) {
         return Vec::new();
     }
