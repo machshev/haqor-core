@@ -1058,6 +1058,25 @@ mod tests {
     }
 
     #[test]
+    fn parses_pe_vav_niphal_imperfect() {
+        // וַיִּוָּעַץ — יעץ Niphal wayyiqtol ("and he took counsel"); the I-vav
+        // root doubles the vav (yiwwāʕaṣ), not the yod the builder defaults to.
+        let matches = parse_word("וַיִּוָּעַץ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "יעצ"
+            && m.binyan == Binyan::Niphal));
+    }
+
+    #[test]
+    fn parses_nun_retained_imperative() {
+        // נְטֵה — נטה Qal imperative ("stretch out"); the nun is kept, not
+        // assimilated.
+        let matches = parse_word("נְטֵה");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "נטה"
+            && m.binyan == Binyan::Qal
+            && m.form == Form::Imperative));
+    }
+
+    #[test]
     fn parses_geminate_imperative_object_suffix() {
         // חָנֵּנִי — חנן Qal imperative 2ms + 1cs ("be gracious to me"); the
         // geminate radical contracts to a single dageshed nun.

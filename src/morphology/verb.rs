@@ -465,6 +465,18 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                 .then(|| paragogic_nun_theme_variants(&text))
                 .unwrap_or_default();
+                // I-vav Niphal imperfect vav-doubling twins (וַיִּוָּעַץ).
+                let pe_yod_niphal_vav: Vec<String> = (binyan == Binyan::Niphal
+                    && root.has(Gizra::PeYod)
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
+                .then(|| pe_yod_niphal_vav_variants(&text))
+                .unwrap_or_default();
+                // Nun-retained I-nun Qal imperative twin (נְטֵה, נְצֹר).
+                let pe_nun_imperative_retained = (binyan == Binyan::Qal
+                    && form == Form::Imperative
+                    && root.pe() == letter::NUN)
+                .then(|| pe_nun_imperative_retained_variant(&text))
+                .flatten();
                 // III-guttural perfect 2fs helping-patah twin (yāḏaʕt → yāḏaʕat
                 // יָדַעַתְּ, hišbaʕat, lāqaḥat): a final het/ayin can't close the
                 // syllable before the -t, so a furtive helping patah surfaces.
@@ -641,6 +653,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     paragogic_nun,
                     hollow_paragogic_nun,
                     lamed_guttural_perf_2fs,
+                    pe_nun_imperative_retained,
                 ]
                 .into_iter()
                 .flatten()
@@ -654,7 +667,11 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         object_suffix: None,
                     });
                 }
-                for alt in pe_yod_retained.into_iter().chain(paragogic_nun_theme) {
+                for alt in pe_yod_retained
+                    .into_iter()
+                    .chain(paragogic_nun_theme)
+                    .chain(pe_yod_niphal_vav)
+                {
                     forms.push(VerbForm {
                         binyan,
                         form,
@@ -4197,6 +4214,47 @@ fn pe_yod_retained_variant(text: &str) -> Option<String> {
     }
     seq[p].vowel = Some(Vowel::Hiriq);
     seq.insert(p + 1, Cons::mater(letter::YOD));
+    Some(hebrew::render(&seq))
+}
+
+/// Vav-doubling twins of a I-vav Niphal imperfect/wayyiqtol. The generator
+/// treats the radical as a yod and doubles it (yiyyāʕēṣ וַיִּיָּעֵץ), but the
+/// historically I-vav roots double the vav: yiwwāʕēṣ, and before a guttural C2
+/// the tsere lowers to patah (wayyiwwāʕaṣ וַיִּוָּעַץ). Finds the doubled radical
+/// (a dageshed yod bearing qamats) and re-spells it as a vav; emits both the
+/// tsere-kept and patah-lowered twins. Additive.
+fn pe_yod_niphal_vav_variants(text: &str) -> Vec<String> {
+    let seq = hebrew::parse_pointed(text);
+    let Some(j) = seq
+        .iter()
+        .position(|c| c.letter == letter::YOD && c.dagesh && c.vowel == Some(Vowel::Qamats))
+    else {
+        return Vec::new();
+    };
+    let mut base = seq.clone();
+    base[j].letter = letter::VAV;
+    let mut out = vec![hebrew::render(&base)];
+    // patah twin: lower a following guttural's tsere/segol theme to patah.
+    if let Some(c2) = base.get_mut(j + 1) {
+        if hebrew::is_guttural(c2.letter) && matches!(c2.vowel, Some(Vowel::Tsere | Vowel::Segol)) {
+            c2.vowel = Some(Vowel::Patah);
+            out.push(hebrew::render(&base));
+        }
+    }
+    out
+}
+
+/// Nun-retained twin of a I-nun Qal imperative. Most I-nun roots assimilate the
+/// nun in the imperative (naṭṭēl → ṭēl), but several keep it (nᵊṭēh נְטֵה, nᵊṣōr
+/// נְצֹר, nᵊśāʔ). The builder produces only the assimilated stem, so prepend a
+/// sheva-nun to restore the strong shape. Additive: only the retaining roots
+/// match the nun-initial spelling.
+fn pe_nun_imperative_retained_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.first().is_some_and(|c| c.letter == letter::NUN) {
+        return None; // already nun-initial
+    }
+    seq.insert(0, Cons::new(letter::NUN).with_vowel(Vowel::Sheva));
     Some(hebrew::render(&seq))
 }
 
