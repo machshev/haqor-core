@@ -1058,6 +1058,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_lamed_he_hiphil_apocope() {
+        // וַיַּשְׁקְ — שקה Hiphil apocopated wayyiqtol ("and he watered"); the
+        // segol/î + he drops, the qof closing on a silent sheva.
+        let matches = parse_word("וַיַּשְׁקְ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שקה"
+            && m.binyan == Binyan::Hiphil));
+    }
+
+    #[test]
     fn parses_hollow_hiphil_perfect_object_suffix() {
         // וַהֲשִׁבֹתִים — שוב Hiphil perfect 1cs + 3mp ("and I will restore them");
         // the suffix attaches to the linking-ô perfect stem (hăšîḇōṯî-).

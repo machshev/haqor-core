@@ -485,6 +485,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
                 .then(|| pe_yod_niphal_vav_variants(&text))
                 .unwrap_or_default();
+                // III-He Hiphil apocopated wayyiqtol/jussive (יַשְׁקֶה → וַיַּשְׁקְ).
+                let lamed_he_hiphil_apoc = (binyan == Binyan::Hiphil
+                    && root.lamed() == letter::HE
+                    && matches!(form, Form::Wayyiqtol | Form::Jussive))
+                .then(|| lamed_he_hiphil_apocope_variant(&text))
+                .flatten();
                 // Pausal o-theme imperative/inf-construct twin (אֱמֹר → אֱמָר).
                 let pausal_qotol = (binyan == Binyan::Qal
                     && matches!(form, Form::Imperative | Form::InfinitiveConstruct))
@@ -735,6 +741,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_guttural_perf_2fs,
                     pe_nun_imperative_retained,
                     pausal_qotol,
+                    lamed_he_hiphil_apoc,
                 ]
                 .into_iter()
                 .flatten()
@@ -6013,6 +6020,34 @@ fn guttural_hataf_pausal_variant(text: &str) -> Option<String> {
 /// וַיַּגֵּד). This is the dominant prose shape of the Hiphil short imperfect.
 /// Returns the shortened spelling, or `None` when no such hiriq-yod theme is
 /// present (e.g. the vocalic-suffix 2fs תַּקְרִבִי, where the yod is the suffix).
+/// III-He Hiphil apocopated wayyiqtol/jussive: the segol/tsere + etymological he
+/// drops, leaving C2 to close the word on a silent sheva — yašqeh יַשְׁקֶה →
+/// wayyašq וַיַּשְׁקְ, wattašq. Requires a `…C2(tsere/segol) HE` ending.
+fn lamed_he_hiphil_apocope_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 3 || seq[n - 1].letter != letter::HE {
+        return None;
+    }
+    if matches!(seq[n - 2].vowel, Some(Vowel::Tsere | Vowel::Segol)) {
+        // …C2(tsere/segol) HE  → drop the he, C2 closes on a silent sheva.
+        seq.pop();
+        seq.last_mut().unwrap().vowel = Some(Vowel::Sheva);
+        Some(hebrew::render(&seq))
+    } else if seq[n - 2].letter == letter::YOD
+        && seq[n - 2].vowel.is_none()
+        && seq.get(n - 3).is_some_and(|c| c.vowel == Some(Vowel::Hiriq))
+    {
+        // …C2(hiriq) YOD(mater) HE  (plene î) → drop the yod mater and he, C2
+        // closes on a silent sheva: wayyašqîh → wayyašq וַיַּשְׁקְ.
+        seq.truncate(n - 2);
+        seq.last_mut().unwrap().vowel = Some(Vowel::Sheva);
+        Some(hebrew::render(&seq))
+    } else {
+        None
+    }
+}
+
 fn hiphil_apocope_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     // The theme î is a vowelless yod mater preceded by a hiriq-bearing
