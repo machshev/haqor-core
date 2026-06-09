@@ -216,6 +216,20 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
             targets.push(hebrew::render(&alt));
         }
     }
+    // Any proclitic onto a I-guttural stem may close that guttural's syllable on
+    // a silent sheva where the generator writes a hataf (לַעְזֹר for la-ʕăzōr,
+    // בְּעְבֹר): restore the hataf so the forms_match comparison succeeds.
+    if strip > 0
+        && remainder
+            .first()
+            .is_some_and(|c| hebrew::is_guttural(c.letter) && c.vowel == Some(Vowel::Sheva))
+    {
+        for hataf in [Vowel::HatafPatah, Vowel::HatafSegol, Vowel::HatafQamats] {
+            let mut alt = remainder.to_vec();
+            alt[0].vowel = Some(hataf);
+            targets.push(hebrew::render(&alt));
+        }
+    }
     // A proclitic onto a pe-aleph stem swallows the aleph's hataf (לֵאמֹר): restore it.
     if strip > 0
         && remainder
@@ -1074,6 +1088,14 @@ mod tests {
         assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "יצק"
             && m.binyan == Binyan::Qal
             && m.form == Form::Imperfect));
+    }
+
+    #[test]
+    fn parses_proclitic_iguttural_silent_sheva() {
+        // לַעְזֹר — לְ + עֲזֹר ("to help"); the proclitic closes the ayin on a
+        // silent sheva, which the parser restores to the generator's hataf.
+        let matches = parse_word("לַעְזֹר");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "עזר"));
     }
 
     #[test]
