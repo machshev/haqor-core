@@ -1048,6 +1048,14 @@ mod tests {
     }
 
     #[test]
+    fn parses_geminate_imperative_object_suffix() {
+        // חָנֵּנִי — חנן Qal imperative 2ms + 1cs ("be gracious to me"); the
+        // geminate radical contracts to a single dageshed nun.
+        let matches = parse_word("חָנֵּנִי");
+        assert!(has_obj(&matches, "חננ", Form::Imperative, "1cs"));
+    }
+
+    #[test]
     fn parses_theme_restored_paragogic_nun() {
         // תֹּאבֵדוּן — אבד Qal Imperfect 2mp: the energic -ûn restores the C2
         // tsere the bare plural reduced (tōʔḇᵊḏû → tōʔḇēḏûn).

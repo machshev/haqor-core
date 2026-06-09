@@ -674,18 +674,28 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         object_suffix: None,
                     });
                 }
-                // Object-suffixed forms (deduped by surface+suffix).
+                // Object-suffixed forms (deduped by surface+suffix). For a
+                // geminate root the strong builder leaves the doubled radical
+                // uncontracted (ḥānᵊnēnî חָנְנֵנִי); the attested form collapses
+                // the Cˇ + C into a single dageshed radical (ḥonnēnî חָנֵּנִי), so
+                // emit that contracted twin alongside.
+                let geminate = root.ayin() == root.lamed();
                 let mut osuf_seen = std::collections::HashSet::new();
                 for (obj, t) in object_suffixed {
-                    if osuf_seen.insert((obj, t.clone())) {
-                        forms.push(VerbForm {
-                            binyan,
-                            form,
-                            pgn,
-                            text: t,
-                            attested,
-                            object_suffix: Some(obj),
-                        });
+                    let contracted = geminate
+                        .then(|| geminate_contract_variant(&t, root.lamed()))
+                        .flatten();
+                    for surf in std::iter::once(t).chain(contracted) {
+                        if osuf_seen.insert((obj, surf.clone())) {
+                            forms.push(VerbForm {
+                                binyan,
+                                form,
+                                pgn,
+                                text: surf,
+                                attested,
+                                object_suffix: Some(obj),
+                            });
+                        }
                     }
                 }
                 // Paragogic-he (emphatic) imperative twin for the 2ms: an -â
@@ -4368,6 +4378,28 @@ fn lamed_guttural_perfect_sheva_variant(text: &str) -> Option<String> {
             && seq[i + 1].vowel.is_none()
         {
             seq[i].vowel = Some(Vowel::Sheva);
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
+}
+
+/// Geminate-contraction twin of a suffixed form whose doubled radical the
+/// strong builder spelled out in full: the first `[L + vocal sheva][L + vowel]`
+/// pair (both the geminate radical `l`) collapses into one dageshed `L` carrying
+/// the second's vowel — ḥānᵊnēnî חָנְנֵנִי → ḥonnēnî חָנֵּנִי, sabbēnî. Returns
+/// `None` when no such adjacent pair is present. Additive: the contracted
+/// spelling differs from the spelled-out one.
+fn geminate_contract_variant(text: &str, l: char) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    for i in 0..seq.len().saturating_sub(1) {
+        if seq[i].letter == l
+            && seq[i].vowel == Some(Vowel::Sheva)
+            && seq[i + 1].letter == l
+            && seq[i + 1].vowel.is_some()
+        {
+            seq[i + 1].dagesh = true;
+            seq.remove(i);
             return Some(hebrew::render(&seq));
         }
     }
