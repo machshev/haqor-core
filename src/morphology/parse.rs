@@ -1058,6 +1058,16 @@ mod tests {
     }
 
     #[test]
+    fn parses_pe_nun_niphal_participle() {
+        // נִבְּאִים — נבא Niphal participle mp ("prophesying"); the radical nun
+        // assimilates into the bet (niḇbᵊʔîm), as in the perfect.
+        let matches = parse_word("נִבְּאִים");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "נבא"
+            && m.binyan == Binyan::Niphal
+            && m.form == Form::ParticipleActive));
+    }
+
+    #[test]
     fn parses_lamed_aleph_plural_object_suffix() {
         // וַיִּמְצָאֻהוּ — מצא Qal imperfect 3mp + 3ms ("and they found him"); the
         // quiescent aleph carries the subject û defectively as a qubuts.

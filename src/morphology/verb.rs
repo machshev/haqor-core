@@ -2988,6 +2988,11 @@ fn apply_pe_nun(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, _p
         | (Binyan::Qal, Form::Cohortative)
         | (Binyan::Qal, Form::Jussive)
         | (Binyan::Niphal, Form::Perfect)
+        // The Niphal participle (niqṭāl) has the same C1-silent-sheva shape as
+        // the perfect, so the radical nun assimilates the same way: niḇbā נִבָּא,
+        // mp niḇbᵊʔîm נִבְּאִים, niggāš.
+        | (Binyan::Niphal, Form::ParticipleActive)
+        | (Binyan::Niphal, Form::ParticiplePassive)
         | (Binyan::Hiphil, _)
         | (Binyan::Hophal, _) => {
             if let Some(idx) = c1_idx
