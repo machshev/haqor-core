@@ -491,6 +491,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
                 .then(|| pe_aleph_patah_variant(&text))
                 .flatten();
+                // III-He Qal doubled-final apocope wayyiqtol (וַיֵּשְׁתְּ, וַתֵּבְךְּ).
+                let lamed_he_doubled_apoc = (binyan == Binyan::Qal
+                    && root.lamed() == letter::HE
+                    && form == Form::Wayyiqtol
+                    && imperfect_suffix_kind(pgn) == Suffix::Zero)
+                .then(|| lamed_he_doubled_apocope_variant(root, &text))
+                .flatten();
                 // III-He Hiphil apocopated wayyiqtol/jussive (יַשְׁקֶה → וַיַּשְׁקְ).
                 let lamed_he_hiphil_apoc = (binyan == Binyan::Hiphil
                     && root.lamed() == letter::HE
@@ -749,6 +756,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pausal_qotol,
                     lamed_he_hiphil_apoc,
                     pe_aleph_patah,
+                    lamed_he_doubled_apoc,
                 ]
                 .into_iter()
                 .flatten()
@@ -4470,6 +4478,42 @@ fn hollow_hiphil_inf_construct(root: &Root) -> Vec<Cons> {
         Cons::mater(letter::YOD),
         rad(root.lamed(), 3),
     ]
+}
+
+/// Doubled-final apocope of a III-He Qal wayyiqtol (שתה, בכה): the etymological
+/// he drops and the surviving C2 doubles, giving a tsere-prefixed monosyllable —
+/// wayyēšt וַיֵּשְׁתְּ (שתה), wattēḇk וַתֵּבְךְּ (בכה). Built from the preformative
+/// (the consonant after the wayyiqtol vav) + C1 (silent sheva) + C2 (dagesh,
+/// silent sheva). Returns `None` if the form isn't a vav-prefixed wayyiqtol.
+fn lamed_he_doubled_apocope_variant(root: &Root, text: &str) -> Option<String> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(text);
+    if seq.first().map(|c| c.letter) != Some(letter::VAV) || seq.len() < 2 {
+        return None;
+    }
+    let pre = seq[1].letter;
+    if !matches!(pre, letter::YOD | letter::TAV | letter::ALEF | letter::NUN) {
+        return None;
+    }
+    let mut out = vec![
+        Cons::new(letter::VAV).with_vowel(Patah),
+        {
+            let mut c = Cons::new(pre).with_vowel(Tsere);
+            c.dagesh = true;
+            c
+        },
+        rad(root.pe(), 1).with_vowel(Sheva),
+        {
+            let mut c = rad(root.ayin(), 2).with_vowel(Sheva);
+            c.dagesh = true;
+            c
+        },
+    ];
+    // A final guttural/resh C2 can't take the dagesh; drop it there.
+    if hebrew::rejects_dagesh(root.ayin()) {
+        out.last_mut().unwrap().dagesh = false;
+    }
+    Some(hebrew::render(&out))
 }
 
 /// Patah-pattern twin of a I-aleph Qal imperfect/wayyiqtol. The builder gives

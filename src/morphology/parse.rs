@@ -1058,6 +1058,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_lamed_he_doubled_apocope() {
+        // וַיֵּשְׁתְּ — שתה Qal wayyiqtol ("and he drank"); the he drops and C2
+        // doubles into a tsere-prefixed monosyllable (wayyēšt).
+        let matches = parse_word("וַיֵּשְׁתְּ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שתה"
+            && m.form == Form::Wayyiqtol));
+    }
+
+    #[test]
     fn parses_pe_aleph_patah_wayyiqtol() {
         // וַיַּאַסְפוּ — אסף Qal wayyiqtol 3mp ("and they gathered"); the I-aleph
         // patah grade (yaʾasp̄û) beside the builder's segol yeʾesp̄û.
