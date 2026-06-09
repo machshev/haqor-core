@@ -485,6 +485,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
                 .then(|| pe_yod_niphal_vav_variants(&text))
                 .unwrap_or_default();
+                // I-aleph Qal patah-pattern imperfect/wayyiqtol (וַיַּאַסְפוּ).
+                let pe_aleph_patah = (binyan == Binyan::Qal
+                    && root.pe() == letter::ALEF
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
+                .then(|| pe_aleph_patah_variant(&text))
+                .flatten();
                 // III-He Hiphil apocopated wayyiqtol/jussive (יַשְׁקֶה → וַיַּשְׁקְ).
                 let lamed_he_hiphil_apoc = (binyan == Binyan::Hiphil
                     && root.lamed() == letter::HE
@@ -742,6 +748,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_nun_imperative_retained,
                     pausal_qotol,
                     lamed_he_hiphil_apoc,
+                    pe_aleph_patah,
                 ]
                 .into_iter()
                 .flatten()
@@ -4463,6 +4470,33 @@ fn hollow_hiphil_inf_construct(root: &Root) -> Vec<Cons> {
         Cons::mater(letter::YOD),
         rad(root.lamed(), 3),
     ]
+}
+
+/// Patah-pattern twin of a I-aleph Qal imperfect/wayyiqtol. The builder gives
+/// the segol grade (yeʾĕsōp̄ וַיֶּאֱסֹף, plural yeʾĕsᵊp̄û); these verbs also take
+/// the patah grade where the preformative and the aleph both carry patah and the
+/// aleph closes the syllable — wayyaʾasp̄û וַיַּאַסְפוּ, wayyaʾăsōp̄. Changes the
+/// preformative segol → patah and the C1 aleph's hataf → patah. The preformative
+/// is `seq[0]`, or `seq[1]` past a wayyiqtol vav. Additive.
+fn pe_aleph_patah_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let p = if seq.first().is_some_and(|c| c.letter == letter::VAV) && seq.len() > 1 {
+        1
+    } else {
+        0
+    };
+    if seq.get(p).map(|c| c.vowel) != Some(Some(Vowel::Segol))
+        || seq.get(p + 1).map(|c| c.letter) != Some(letter::ALEF)
+        || !matches!(
+            seq.get(p + 1).and_then(|c| c.vowel),
+            Some(Vowel::HatafSegol | Vowel::HatafPatah | Vowel::Segol)
+        )
+    {
+        return None;
+    }
+    seq[p].vowel = Some(Vowel::Patah);
+    seq[p + 1].vowel = Some(Vowel::Patah);
+    Some(hebrew::render(&seq))
 }
 
 /// Vav-doubling twins of a I-vav Niphal imperfect/wayyiqtol. The generator

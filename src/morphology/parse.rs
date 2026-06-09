@@ -1058,6 +1058,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_pe_aleph_patah_wayyiqtol() {
+        // וַיַּאַסְפוּ — אסף Qal wayyiqtol 3mp ("and they gathered"); the I-aleph
+        // patah grade (yaʾasp̄û) beside the builder's segol yeʾesp̄û.
+        let matches = parse_word("וַיַּאַסְפוּ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "אספ"
+            && m.binyan == Binyan::Qal));
+    }
+
+    #[test]
     fn parses_lamed_he_hiphil_apocope() {
         // וַיַּשְׁקְ — שקה Hiphil apocopated wayyiqtol ("and he watered"); the
         // segol/î + he drops, the qof closing on a silent sheva.
