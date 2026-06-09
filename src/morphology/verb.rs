@@ -538,8 +538,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     // other singular subjects 1cs/2ms/3fs (and 1cp) — all take
                     // object suffixes the same way: the prefix differs but the
                     // stem reduction and linking vowel do not (ʾešmᵊrēhû
-                    // אֶשְׁמְרֵהוּ, tišmᵊrennû).
-                    imperfect_object_suffixes(&text, root)
+                    // אֶשְׁמְרֵהוּ, tišmᵊrennû). A III-He host elides its he and links
+                    // on a tsere instead (yaʕănēhû יַעֲנֵהוּ).
+                    if root.lamed() == letter::HE {
+                        lamed_he_imperfect_object_suffixes(&text)
+                    } else {
+                        imperfect_object_suffixes(&text, root)
+                    }
                 } else if pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular) {
                     match (binyan, form) {
                         (_, Form::Perfect) if root.lamed() == letter::HE => {
@@ -4698,6 +4703,38 @@ fn lamed_he_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         (OBJ_3MP, emit(Qamats, &[Cons::new(letter::MEM)])),                          // -ām
         (OBJ_2MS, emit(Sheva, &[ocv(letter::KAF, Qamats)])),                         // -ᵊḵā
         (OBJ_2MP, emit(Sheva, &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])),  // -ᵊḵem
+    ]
+}
+
+/// III-He imperfect/jussive/wayyiqtol 3ms (or other zero-suffix subject) with a
+/// pronominal object suffix. The base ends in the segol + etymological he
+/// (yaʕăneh יַעֲנֶה, yaʕăleh); the he elides and the suffix joins C2 with a
+/// connecting tsere — yaʕănēhû יַעֲנֵהוּ, yaʕănēnî, yaʕălēhû — beside the heavier
+/// 2ms/2mp on a sheva-grade C2. Mirrors [`lamed_he_perfect_object_suffixes`] but
+/// for the imperfect's tsere link. Requires the segol+he ending.
+fn lamed_he_imperfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(base_text);
+    let n = seq.len();
+    if n < 3 || seq[n - 1].letter != letter::HE || seq[n - 2].vowel != Some(Segol) {
+        return Vec::new();
+    }
+    let stem = seq[..n - 1].to_vec();
+    let emit = |c2v: Vowel, tail: &[Cons]| -> String {
+        let mut s = stem.clone();
+        if let Some(c) = s.last_mut() {
+            c.vowel = Some(c2v);
+        }
+        s.extend_from_slice(tail);
+        hebrew::render(&s)
+    };
+    vec![
+        (OBJ_1CS, emit(Tsere, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])), // -ēnî
+        (OBJ_3MS, emit(Tsere, &[Cons::new(letter::HE), oshureq()])),                // -ēhû
+        (OBJ_3FS, emit(Segol, &[ocv(letter::HE, Qamats)])),                         // -ehā
+        (OBJ_1CP, emit(Tsere, &[Cons::new(letter::NUN), oshureq()])),               // -ēnû
+        (OBJ_3MP, emit(Tsere, &[Cons::new(letter::MEM)])),                          // -ēm
+        (OBJ_2MS, emit(Sheva, &[ocv(letter::KAF, Qamats)])),                        // -ᵊḵā
     ]
 }
 

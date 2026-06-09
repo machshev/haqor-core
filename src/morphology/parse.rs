@@ -1058,6 +1058,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_lamed_he_imperfect_object_suffix() {
+        // וַיַּעֲנֵנִי — ענה Qal wayyiqtol + 1cs ("and he answered me"); the he
+        // elides and the suffix links on a tsere.
+        let matches = parse_word("וַיַּעֲנֵנִי");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "ענה"
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+    }
+
+    #[test]
     fn parses_pe_guttural_wayyiqtol_object_suffix() {
         // וַיַּעַזְבֵנִי — עזב Qal wayyiqtol + 1cs ("and he forsook me"); the C1
         // ayin's hataf fills to a full patah as the suffixed stem closes it.
