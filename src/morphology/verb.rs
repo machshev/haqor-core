@@ -4737,14 +4737,22 @@ fn lamed_he_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         s.extend_from_slice(tail);
         hebrew::render(&s)
     };
-    vec![
-        (OBJ_1CS, emit(Qamats, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])), // -ānî
-        (OBJ_3MS, emit(Qamats, &[Cons::new(letter::HE), oshureq()])),                // -āhû
-        (OBJ_1CP, emit(Qamats, &[Cons::new(letter::NUN), oshureq()])),               // -ānû
-        (OBJ_3MP, emit(Qamats, &[Cons::new(letter::MEM)])),                          // -ām
-        (OBJ_2MS, emit(Sheva, &[ocv(letter::KAF, Qamats)])),                         // -ᵊḵā
-        (OBJ_2MP, emit(Sheva, &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])),  // -ᵊḵem
-    ]
+    // Light suffixes: the Qal/Piel keep the stem's -ā (qamats), but the Hiphil
+    // III-He links on a patah (hirʔanî הִרְאַנִי, not hirʔānî); emit both grades.
+    let nun_yod = [ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)];
+    let he_u = [Cons::new(letter::HE), oshureq()];
+    let nun_u = [Cons::new(letter::NUN), oshureq()];
+    let mem = [Cons::new(letter::MEM)];
+    let mut out = Vec::new();
+    for link in [Qamats, Patah] {
+        out.push((OBJ_1CS, emit(link, &nun_yod))); // -ānî / -anî
+        out.push((OBJ_3MS, emit(link, &he_u)));    // -āhû / -ahû
+        out.push((OBJ_1CP, emit(link, &nun_u)));   // -ānû / -anû
+        out.push((OBJ_3MP, emit(link, &mem)));     // -ām / -am
+    }
+    out.push((OBJ_2MS, emit(Sheva, &[ocv(letter::KAF, Qamats)])));                        // -ᵊḵā
+    out.push((OBJ_2MP, emit(Sheva, &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)]))); // -ᵊḵem
+    out
 }
 
 /// III-He imperfect/jussive/wayyiqtol 3ms (or other zero-suffix subject) with a

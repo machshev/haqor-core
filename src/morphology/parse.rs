@@ -1058,6 +1058,19 @@ mod tests {
     }
 
     #[test]
+    fn parses_hiphil_lamed_he_perfect_patah_suffix() {
+        // הִרְאַנִי — ראה Hiphil perfect 3ms + 1cs ("he showed me"); the III-He
+        // Hiphil links the suffix on a patah, not the Qal's qamats.
+        let matches = parse_word("הִרְאַנִי");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "ראה"
+            && m.binyan == Binyan::Hiphil
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+        // Regression: the Qal qamats grade still parses (עָשָׂהוּ).
+        let m2 = parse_word("עָשָׂהוּ");
+        assert!(m2.iter().any(|m| m.root.letters.iter().collect::<String>() == "עשה"));
+    }
+
+    #[test]
     fn parses_iguttural_cohortative_silent_sheva() {
         // אֶעְבְּרָה — עבר Qal cohortative 1cs ("let me cross over"); the I-guttural
         // takes a silent sheva closing the prefix syllable, the bet a dagesh lene.
