@@ -1058,6 +1058,16 @@ mod tests {
     }
 
     #[test]
+    fn parses_hollow_hiphil_infinitive_object_suffix() {
+        // לַהֲמִיתוֹ — מות Hiphil inf construct + 3ms ("to kill him"); the hāmîṯ
+        // infinitive reduces to hămîṯ- before the suffix.
+        let matches = parse_word("לַהֲמִיתוֹ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "מות"
+            && m.binyan == Binyan::Hiphil
+            && m.form == Form::InfinitiveConstruct));
+    }
+
+    #[test]
     fn parses_hiphil_lamed_he_perfect_patah_suffix() {
         // הִרְאַנִי — ראה Hiphil perfect 3ms + 1cs ("he showed me"); the III-He
         // Hiphil links the suffix on a patah, not the Qal's qamats.

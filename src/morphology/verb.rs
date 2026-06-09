@@ -533,6 +533,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 {
                     // Stative qāṭēl/qāṭōl perfect 3ms twins (ṭāhēr טָהֵר, qāṭōn).
                     qal_stative_perfect_variants(&text)
+                } else if binyan == Binyan::Hiphil
+                    && form == Form::InfinitiveConstruct
+                    && root.has(Gizra::Hollow)
+                {
+                    // Hollow Hiphil inf-construct hāCîC (הָמִית, הָקִים, הָבִיא),
+                    // which the strong builder + gizra pass leaves empty.
+                    vec![hebrew::render(&hollow_hiphil_inf_construct(root))]
                 } else {
                     Vec::new()
                 };
@@ -4245,6 +4252,20 @@ fn pe_yod_retained_variant(text: &str) -> Option<String> {
     Some(hebrew::render(&seq))
 }
 
+/// The hollow Hiphil infinitive construct hāCîC (הָקִים, הָמִית, הָבִיא): he with
+/// qamats, C1 with the long hiriq-yod î, C3. The strong builder's haqṭîl shape
+/// leaves no usable form for a hollow root (the gizra pass voids it), so build it
+/// from the radicals. (C2, the etymological vav/yod, is absorbed into the î.)
+fn hollow_hiphil_inf_construct(root: &Root) -> Vec<Cons> {
+    use Vowel::*;
+    vec![
+        Cons::new(letter::HE).with_vowel(Qamats),
+        rad(root.pe(), 1).with_vowel(Hiriq),
+        Cons::mater(letter::YOD),
+        rad(root.lamed(), 3),
+    ]
+}
+
 /// Vav-doubling twins of a I-vav Niphal imperfect/wayyiqtol. The generator
 /// treats the radical as a yod and doubles it (yiyyāʕēṣ וַיִּיָּעֵץ), but the
 /// historically I-vav roots double the vav: yiwwāʕēṣ, and before a guttural C2
@@ -5301,6 +5322,27 @@ fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -
     use Vowel::*;
     let mut out = Vec::new();
     let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
+    // Hollow Hiphil inf-construct (hāmîṯ הָמִית): before a suffix the qamats on
+    // the he reduces propretonically to hataf-patah and the î is retained —
+    // hămîṯô הֲמִיתוֹ, hămîṯām. Build from the radicals (the strong path has no
+    // form to start from).
+    if binyan == Binyan::Hiphil && matches!(c2, letter::VAV | letter::YOD) {
+        for (obj, link, tail) in nominal_suffix_tails() {
+            let mut seq = vec![
+                Cons::new(letter::HE).with_vowel(HatafPatah),
+                Cons::radical(c1, 1).with_vowel(Hiriq),
+                Cons::mater(letter::YOD),
+                {
+                    let mut c = Cons::radical(c3, 3);
+                    c.vowel = link;
+                    c
+                },
+            ];
+            seq.extend(tail);
+            out.push((obj, hebrew::render(&seq)));
+        }
+        return out;
+    }
     let strong_qal = binyan == Binyan::Qal
         && !matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
         && !matches!(c1, letter::VAV | letter::YOD | letter::NUN);
