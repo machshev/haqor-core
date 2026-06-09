@@ -1058,6 +1058,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_nun_retained_infinitive_construct() {
+        // בִּנְפֹל — נפל Qal inf construct ("in falling"); the nun is kept (nᵊp̄ōl),
+        // not assimilated to the dropped pōl.
+        let matches = parse_word("בִּנְפֹל");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "נפל"
+            && m.form == Form::InfinitiveConstruct));
+    }
+
+    #[test]
     fn parses_geminate_hiphil_perfect() {
         // הֵחֵלּוּ — חלל Hiphil perfect 3cp ("they began"); the doubled radical
         // contracts to the hēCēC shape, doubling before the vocalic -û.

@@ -548,6 +548,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     // Hollow Hiphil inf-construct hāCîC (הָמִית, הָקִים, הָבִיא),
                     // which the strong builder + gizra pass leaves empty.
                     vec![hebrew::render(&hollow_hiphil_inf_construct(root))]
+                } else if binyan == Binyan::Qal
+                    && form == Form::InfinitiveConstruct
+                    && root.pe() == letter::NUN
+                {
+                    // Nun-retained Qal inf-construct (נְפֹל beside the dropped פֹּל).
+                    vec![hebrew::render(&pe_nun_inf_construct_retained(root))]
                 } else {
                     Vec::new()
                 };
@@ -4322,6 +4328,22 @@ fn pe_yod_niphal_vav_variants(text: &str) -> Vec<String> {
         }
     }
     out
+}
+
+/// Nun-retained twin of a I-nun Qal infinitive construct. The builder drops the
+/// nun (and dageshes C2: nᵊp̄ōl → pōl פֹּל), but many I-nun roots keep it,
+/// surfacing as the plain qᵊṭōl shape — nᵊp̄ōl נְפֹל (בִּנְפֹל), nᵊṣōr, nᵊṯōš. Built
+/// straight from the radicals (C1 sheva, C2 holam, C3) so no compensatory dagesh
+/// is carried. Additive.
+fn pe_nun_inf_construct_retained(root: &Root) -> Vec<Cons> {
+    use Vowel::*;
+    let mut seq = vec![
+        rad(root.pe(), 1).with_vowel(Sheva),
+        rad(root.ayin(), 2).with_vowel(Holam),
+        rad(root.lamed(), 3),
+    ];
+    apply_guttural(&mut seq, root);
+    seq
 }
 
 /// Nun-retained twin of a I-nun Qal imperative. Most I-nun roots assimilate the
