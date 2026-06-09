@@ -1058,6 +1058,17 @@ mod tests {
     }
 
     #[test]
+    fn parses_hollow_hiphil_perfect_object_suffix() {
+        // וַהֲשִׁבֹתִים — שוב Hiphil perfect 1cs + 3mp ("and I will restore them");
+        // the suffix attaches to the linking-ô perfect stem (hăšîḇōṯî-).
+        let matches = parse_word("וַהֲשִׁבֹתִים");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שוב"
+            && m.binyan == Binyan::Hiphil
+            && m.form == Form::Perfect
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("3mp")));
+    }
+
+    #[test]
     fn parses_qal_participle_fs_a_form() {
         // יוֹלֵדָה — ילד Qal active participle fs ("woman in labour"); the -â
         // feminine (qōṭēlâ), beside the segolate yōleḏeṯ.

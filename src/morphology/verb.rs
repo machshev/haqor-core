@@ -592,7 +592,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 };
                 // Pronominal object-suffixed forms (computed from &text before it
                 // is moved into the base VerbForm below).
-                let object_suffixed: Vec<(Pgn, String)> = if matches!(
+                let mut object_suffixed: Vec<(Pgn, String)> = if matches!(
                     form,
                     Form::Imperfect | Form::Jussive | Form::Wayyiqtol
                 ) && imperfect_suffix_kind(pgn) == Suffix::Zero
@@ -678,6 +678,18 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 } else {
                     Vec::new()
                 };
+                // Hollow Hiphil perfect: the object-suffix base is the linking-ô
+                // stem (hăqîmôṯî הֲקִימוֹתִי), an alternant the dispatch above can't
+                // see (the primary `text` is the strong fallback). Run the
+                // subject-suffix builder over each otav base — it no-ops for any
+                // non-1cs/2ms/3cp subject: hăšîḇōṯîm וַהֲשִׁבֹתִים.
+                if binyan == Binyan::Hiphil && form == Form::Perfect && root.has(Gizra::Hollow) {
+                    let mut extra = Vec::new();
+                    for base in hollow_hiphil_otav_perfect(root, pgn) {
+                        extra.extend(perfect_subject_object_suffixes(&base, pgn, root, binyan));
+                    }
+                    object_suffixed.extend(extra);
+                }
                 forms.push(VerbForm {
                     binyan,
                     form,
