@@ -717,12 +717,11 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     let contracted = geminate
                         .then(|| geminate_contract_variant(&t, root.lamed()))
                         .flatten();
-                    // Defective twin of a Hiphil suffixed form: the î mater
-                    // (hiriq + yod) is often written bare (yᵉḇîʔēhû יְבִיאֵהוּ →
-                    // yᵉḇiʔēhû יְבִאֵהוּ, וַיְבִאֵהוּ via the vav peel).
-                    let defective = (binyan == Binyan::Hiphil)
-                        .then(|| strip_hiriq_yod_mater_variant(&t))
-                        .flatten();
+                    // Defective twins of a suffixed form: a medial î mater
+                    // (hiriq + yod) is often written bare — yᵉḇîʔēhû יְבִיאֵהוּ →
+                    // יְבִאֵהוּ (Hiphil stem î), ṣiwwîṯîḵā צִוִּיתִיךָ → צִוִּיתִךָ
+                    // (the -tî afformative). Each interior î is dropped in turn.
+                    let defective = strip_hiriq_yod_mater_variants(&t);
                     // I-guttural twin: when the reduced suffixed stem closes the
                     // C1-guttural syllable (yaʕăzᵊḇēnî → yaʕazḇēnî יַעַזְבֵנִי,
                     // וַיַּעַזְבֵנִי), the hataf under the guttural fills to its
@@ -4533,20 +4532,24 @@ fn guttural_hataf_to_full_variant(text: &str) -> Option<String> {
 /// drops the yod, leaving a bare hiriq — yᵉḇîʔēhû יְבִיאֵהוּ → yᵉḇiʔēhû יְבִאֵהוּ.
 /// Returns `None` when no such hiriq+yod is present. Additive: the defective
 /// spelling differs from the plene one.
-fn strip_hiriq_yod_mater_variant(text: &str) -> Option<String> {
-    let mut seq = hebrew::parse_pointed(text);
+fn strip_hiriq_yod_mater_variants(text: &str) -> Vec<String> {
+    let seq = hebrew::parse_pointed(text);
+    let mut out = Vec::new();
     // Require something after the yod so a word-final suffix yod (the 1cs -nî)
-    // is never mistaken for the medial î mater.
+    // is never mistaken for a medial î mater. Each interior hiriq+yod is dropped
+    // independently — a suffixed form can carry more than one î (the Hiphil/III-He
+    // stem î and the -tî afformative), and either may be written defectively.
     for i in 0..seq.len().saturating_sub(2) {
         if seq[i].vowel == Some(Vowel::Hiriq)
             && seq[i + 1].letter == letter::YOD
             && seq[i + 1].vowel.is_none()
         {
-            seq.remove(i + 1);
-            return Some(hebrew::render(&seq));
+            let mut s = seq.clone();
+            s.remove(i + 1);
+            out.push(hebrew::render(&s));
         }
     }
-    None
+    out
 }
 
 /// Geminate-contraction twin of a suffixed form whose doubled radical the
