@@ -459,6 +459,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                 .then(|| hollow_paragogic_nun_variant(&text))
                 .flatten();
+                // Theme-restored paragogic-nun twins (yišmāʕûn תִּשְׁמָעוּן,
+                // tōʔḇēḏûn תֹּאבֵדוּן) — any binyan, the -û plural imperfect.
+                let paragogic_nun_theme: Vec<String> = (form == Form::Imperfect
+                    && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
+                .then(|| paragogic_nun_theme_variants(&text))
+                .unwrap_or_default();
                 // III-guttural perfect 2fs helping-patah twin (yāḏaʕt → yāḏaʕat
                 // יָדַעַתְּ, hišbaʕat, lāqaḥat): a final het/ayin can't close the
                 // syllable before the -t, so a furtive helping patah surfaces.
@@ -648,7 +654,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         object_suffix: None,
                     });
                 }
-                for alt in pe_yod_retained {
+                for alt in pe_yod_retained.into_iter().chain(paragogic_nun_theme) {
                     forms.push(VerbForm {
                         binyan,
                         form,
@@ -4097,6 +4103,36 @@ fn paragogic_nun_variant(text: &str) -> String {
     let mut seq = hebrew::parse_pointed(text);
     seq.push(Cons::new(letter::NUN));
     hebrew::render(&seq)
+}
+
+/// Theme-restored paragogic-nun twins of a vocalic-suffix (-û) imperfect. The
+/// bare plural reduces the theme vowel to a vocal sheva (yišmᵊʕû, yēlᵊḵû,
+/// tōʔḇᵊḏû); the energic -ûn form restores it to its full grade — qamats for the
+/// a-theme/guttural verbs (yišmāʕûn תִּשְׁמָעוּן, yiškāḇûn, yḥpāṣûn) or tsere for
+/// the e-theme (tōʔḇēḏûn תֹּאבֵדוּן, yēlēḵûn יֵלֵכוּן). The consonant before C3
+/// (which precedes the final vav-shureq) carries the restored vowel. Emits both
+/// the qamats and tsere twins; only the attested grade matches a real surface.
+fn paragogic_nun_theme_variants(text: &str) -> Vec<String> {
+    let seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    // Need …[restore-consonant + Sheva][C3 vowelless][vav-shureq]. The -û plural
+    // ends in a vav carrying the shureq dagesh with no vowel of its own.
+    if n < 3
+        || !(seq[n - 1].letter == letter::VAV && seq[n - 1].dagesh && seq[n - 1].vowel.is_none())
+        || seq[n - 2].vowel.is_some()
+        || seq[n - 3].vowel != Some(Vowel::Sheva)
+    {
+        return Vec::new();
+    }
+    [Vowel::Qamats, Vowel::Tsere]
+        .into_iter()
+        .map(|theme| {
+            let mut s = seq.clone();
+            s[n - 3].vowel = Some(theme);
+            s.push(Cons::new(letter::NUN));
+            hebrew::render(&s)
+        })
+        .collect()
 }
 
 /// Paragogic-nun twin of a hollow Qal vocalic-suffix imperfect, with the

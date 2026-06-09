@@ -1048,6 +1048,19 @@ mod tests {
     }
 
     #[test]
+    fn parses_theme_restored_paragogic_nun() {
+        // תֹּאבֵדוּן — אבד Qal Imperfect 2mp: the energic -ûn restores the C2
+        // tsere the bare plural reduced (tōʔḇᵊḏû → tōʔḇēḏûn).
+        let matches = parse_word("תֹּאבֵדוּן");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "אבד"
+            && m.form == Form::Imperfect));
+        // תִּשְׁמָעוּן — שמע, the qamats (a-theme) twin.
+        let m2 = parse_word("תִּשְׁמָעוּן");
+        assert!(m2.iter().any(|m| m.root.letters.iter().collect::<String>() == "שמע"
+            && m.form == Form::Imperfect));
+    }
+
+    #[test]
     fn parses_imperfect_energic_3fs_object_suffix() {
         // אֶתְּנֶנָּה — Qal imperfect 1cs of נתן + energic 3fs ("I will give it").
         let matches = parse_word("אֶתְּנֶנָּה");
