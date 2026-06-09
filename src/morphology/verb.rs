@@ -491,14 +491,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 .then(|| pausal_qotol_variant(&text))
                 .flatten();
                 // I-guttural Qal imperfect-family silent-sheva twin (אֶעְבְּרָה).
-                let qal_iguttural_silent = (binyan == Binyan::Qal
+                let qal_iguttural_silent: Vec<String> = (binyan == Binyan::Qal
                     && matches!(
                         form,
                         Form::Imperfect | Form::Cohortative | Form::Jussive | Form::Wayyiqtol
                     )
                     && root.has(Gizra::PeGuttural))
-                .then(|| qal_iguttural_silent_sheva_variant(&text))
-                .flatten();
+                .then(|| qal_iguttural_silent_sheva_variants(&text))
+                .unwrap_or_default();
                 // Nun-retained I-nun Qal imperative twin (נְטֵה, נְצֹר).
                 let pe_nun_imperative_retained = (binyan == Binyan::Qal
                     && form == Form::Imperative
@@ -708,7 +708,6 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_paragogic_nun,
                     lamed_guttural_perf_2fs,
                     pe_nun_imperative_retained,
-                    qal_iguttural_silent,
                     pausal_qotol,
                 ]
                 .into_iter()
@@ -728,6 +727,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(paragogic_nun_theme)
                     .chain(pausal_plural)
                     .chain(iguttural_reduced)
+                    .chain(qal_iguttural_silent)
                     .chain(pe_yod_niphal_vav)
                 {
                     forms.push(VerbForm {
@@ -4523,18 +4523,18 @@ fn guttural_silent_sheva_variant(text: &str) -> Option<String> {
 /// silent sheva and a following בגדכפת consonant a dagesh lene — ʾeʕbᵊrâ
 /// אֶעְבְּרָה. Converts the C1 guttural's segol/hataf-segol/hataf-patah (preceded
 /// by the prefix vowel) to a plain sheva. Additive.
-fn qal_iguttural_silent_sheva_variant(text: &str) -> Option<String> {
+fn qal_iguttural_silent_sheva_variants(text: &str) -> Vec<String> {
     let mut seq = hebrew::parse_pointed(text);
     // C1 is the second slot (after the one-letter preformative).
     if seq.len() < 3 || !hebrew::is_guttural(seq[1].letter) {
-        return None;
+        return Vec::new();
     }
     if !matches!(
         seq[1].vowel,
         Some(Vowel::Segol | Vowel::HatafSegol | Vowel::HatafPatah)
     ) || seq[0].vowel.is_none()
     {
-        return None;
+        return Vec::new();
     }
     seq[1].vowel = Some(Vowel::Sheva);
     if let Some(next) = seq.get_mut(2) {
@@ -4542,7 +4542,17 @@ fn qal_iguttural_silent_sheva_variant(text: &str) -> Option<String> {
             next.dagesh = true;
         }
     }
-    Some(hebrew::render(&seq))
+    // The I-guttural preformative vowel varies patah (yaʕămōḏ) / segol (yeʾĕsōp̄);
+    // emit the silent-sheva form with both so e.g. yehgeh יֶהְגֶּה is reached from
+    // a patah-prefixed base.
+    [Vowel::Patah, Vowel::Segol]
+        .into_iter()
+        .map(|pv| {
+            let mut s = seq.clone();
+            s[0].vowel = Some(pv);
+            hebrew::render(&s)
+        })
+        .collect()
 }
 
 /// Guttural-lowered alternant of a III-guttural Piel/Hithpael whose theme tsere
