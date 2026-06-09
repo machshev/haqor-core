@@ -135,11 +135,11 @@ fn detect_gizra(letters: [char; 3]) -> Vec<Gizra> {
     // Middle radical. A vav/yod middle is hollow only in a genuinely
     // biconsonantal root (קום, שׂים, בוא). When the third radical is he the
     // root is III-He (היה, חיה, צוה, קוה): the middle yod/vav is a true
-    // consonant and the verb inflects as lamed-he, not hollow. אֹיֵב "enemy"
-    // (root איב) is the one frequent exception with a true medial-yod radical —
-    // a qōṭēl participle (ʾōyēḇ, pl. ʾōyᵊḇ-), not a hollow verb.
-    let true_triliteral_yod = letters == [ALEF, YOD, BET];
-    if (a == VAV || a == YOD) && l != HE && !true_triliteral_yod {
+    // consonant and the verb inflects as lamed-he, not hollow. A few roots have
+    // a genuine medial-vav/yod radical and inflect as strong triliterals rather
+    // than hollow: איב (ʾōyēḇ "enemy", qōṭēl participle) and גוע (yiḡwaʕ "expire").
+    let true_triliteral_c2 = matches!(letters, [ALEF, YOD, BET] | [GIMEL, VAV, AYIN]);
+    if (a == VAV || a == YOD) && l != HE && !true_triliteral_c2 {
         out.push(Gizra::Hollow);
     } else if is_gut(a) || a == RESH {
         out.push(Gizra::AyinGuttural);

@@ -1067,6 +1067,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_gava_strong_not_hollow() {
+        // וַיִּגְוַע — גוע wayyiqtol ("and he expired"); the medial vav is a true
+        // radical, so it inflects as a strong III-guttural, not a hollow verb.
+        let matches = parse_word("וַיִּגְוַע");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "גוע"
+            && m.binyan == Binyan::Qal));
+    }
+
+    #[test]
     fn parses_pe_aleph_patah_wayyiqtol() {
         // וַיַּאַסְפוּ — אסף Qal wayyiqtol 3mp ("and they gathered"); the I-aleph
         // patah grade (yaʾasp̄û) beside the builder's segol yeʾesp̄û.
