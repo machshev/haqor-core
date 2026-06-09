@@ -485,6 +485,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
                 .then(|| pe_yod_niphal_vav_variants(&text))
                 .unwrap_or_default();
+                // I-nun-style I-yod Qal imperfect (יצק → יִצֹק).
+                let pe_yod_as_pe_nun = (binyan == Binyan::Qal
+                    && root.has(Gizra::PeYod)
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
+                .then(|| pe_yod_as_pe_nun_variant(&text))
+                .flatten();
                 // I-aleph Qal patah-pattern imperfect/wayyiqtol (וַיַּאַסְפוּ).
                 let pe_aleph_patah = (binyan == Binyan::Qal
                     && root.pe() == letter::ALEF
@@ -757,6 +763,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_he_hiphil_apoc,
                     pe_aleph_patah,
                     lamed_he_doubled_apoc,
+                    pe_yod_as_pe_nun,
                 ]
                 .into_iter()
                 .flatten()
@@ -4514,6 +4521,29 @@ fn lamed_he_doubled_apocope_variant(root: &Root, text: &str) -> Option<String> {
         out.last_mut().unwrap().dagesh = false;
     }
     Some(hebrew::render(&out))
+}
+
+/// I-nun-style twin of a I-yod Qal imperfect: a few I-yod roots (יצק "pour")
+/// drop the yod the way a I-nun root does, the preformative taking hiriq and the
+/// theme an o-vowel — yiṣōq יִצֹק, wayyiṣōq וַיִּצֹק. The builder gives the I-vav
+/// elided e-grade (yēṣēq יֵצֵק); this rewrites the preformative tsere to hiriq
+/// and the C2 tsere to holam. The preformative is `seq[0]`, or `seq[1]` past a
+/// wayyiqtol vav. Additive — only the o-grade roots match.
+fn pe_yod_as_pe_nun_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let p = if seq.first().is_some_and(|c| c.letter == letter::VAV) && seq.len() > 1 {
+        1
+    } else {
+        0
+    };
+    if seq.get(p).and_then(|c| c.vowel) != Some(Vowel::Tsere)
+        || seq.get(p + 1).and_then(|c| c.vowel) != Some(Vowel::Tsere)
+    {
+        return None;
+    }
+    seq[p].vowel = Some(Vowel::Hiriq);
+    seq[p + 1].vowel = Some(Vowel::Holam);
+    Some(hebrew::render(&seq))
 }
 
 /// Patah-pattern twin of a I-aleph Qal imperfect/wayyiqtol. The builder gives

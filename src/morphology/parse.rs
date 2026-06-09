@@ -1067,6 +1067,16 @@ mod tests {
     }
 
     #[test]
+    fn parses_pe_yod_as_pe_nun_imperfect() {
+        // וַיִּצֹק — יצק Qal wayyiqtol ("and he poured"); the I-yod drops like a
+        // I-nun, the prefix taking hiriq and the theme holam (yiṣōq).
+        let matches = parse_word("וַיִּצֹק");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "יצק"
+            && m.binyan == Binyan::Qal
+            && m.form == Form::Imperfect));
+    }
+
+    #[test]
     fn parses_gava_strong_not_hollow() {
         // וַיִּגְוַע — גוע wayyiqtol ("and he expired"); the medial vav is a true
         // radical, so it inflects as a strong III-guttural, not a hollow verb.
