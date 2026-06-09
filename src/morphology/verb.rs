@@ -527,6 +527,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::Hollow)
                 {
                     hollow_hiphil_otav_perfect(root, pgn)
+                } else if binyan == Binyan::Hiphil
+                    && form == Form::Perfect
+                    && root.ayin() == root.lamed()
+                {
+                    // Geminate Hiphil perfect hēCēC (הֵחֵל, הֵחֵלּוּ, הֵחֵלָּה).
+                    geminate_hiphil_perfect_variant(root, pgn)
+                        .map(|s| vec![hebrew::render(&s)])
+                        .unwrap_or_default()
                 } else if binyan == Binyan::Qal
                     && form == Form::Perfect
                     && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)
@@ -4250,6 +4258,29 @@ fn pe_yod_retained_variant(text: &str) -> Option<String> {
     seq[p].vowel = Some(Vowel::Hiriq);
     seq.insert(p + 1, Cons::mater(letter::YOD));
     Some(hebrew::render(&seq))
+}
+
+/// Geminate Hiphil perfect hēCēC (הֵחֵל, הֵסֵב): he + C1 both tsere, the doubled
+/// radical collapsing to a single C2. The strong builder spells חלל as a 3-radical
+/// heqṭîl (הֶחֱלִיל); this builds the contracted form for the common subjects.
+/// Before a vocalic afformative the radical doubles (dagesh): 3cp hēḥēllû הֵחֵלּוּ,
+/// 3fs hēḥēllâ הֵחֵלָּה. Returns `None` for the heavy/consonantal subjects (which
+/// take the hăsibbôṯ- linking-ô stem, not modelled here).
+fn geminate_hiphil_perfect_variant(root: &Root, pgn: Pgn) -> Option<Vec<Cons>> {
+    use Vowel::*;
+    let c = root.ayin(); // == root.lamed() for a geminate root
+    let he = Cons::new(letter::HE).with_vowel(Tsere);
+    let c1 = rad(root.pe(), 1).with_vowel(Tsere);
+    let three = |g: Gender, num: Number| pgn == Pgn::new(Person::Third, g, num);
+    if three(Gender::Masculine, Number::Singular) {
+        Some(vec![he, c1, rad(c, 2)])
+    } else if three(Gender::Common, Number::Plural) {
+        Some(vec![he, c1, rad(c, 2).with_dagesh(), oshureq()])
+    } else if three(Gender::Feminine, Number::Singular) {
+        Some(vec![he, c1, rad(c, 2).with_dagesh().with_vowel(Qamats), Cons::new(letter::HE)])
+    } else {
+        None
+    }
 }
 
 /// The hollow Hiphil infinitive construct hāCîC (הָקִים, הָמִית, הָבִיא): he with

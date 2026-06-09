@@ -1058,6 +1058,17 @@ mod tests {
     }
 
     #[test]
+    fn parses_geminate_hiphil_perfect() {
+        // הֵחֵלּוּ — חלל Hiphil perfect 3cp ("they began"); the doubled radical
+        // contracts to the hēCēC shape, doubling before the vocalic -û.
+        let matches = parse_word("הֵחֵלּוּ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "חלל"
+            && m.binyan == Binyan::Hiphil
+            && m.form == Form::Perfect
+            && m.pgn.label() == "3cp"));
+    }
+
+    #[test]
     fn parses_hollow_hiphil_infinitive_object_suffix() {
         // לַהֲמִיתוֹ — מות Hiphil inf construct + 3ms ("to kill him"); the hāmîṯ
         // infinitive reduces to hămîṯ- before the suffix.
