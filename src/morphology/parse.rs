@@ -1058,6 +1058,16 @@ mod tests {
     }
 
     #[test]
+    fn parses_pausal_qotol_imperative() {
+        // אֱמָר — אמר Qal imperative 2ms in pause; the theme holam lengthens to
+        // qamats (ʾĕmār), beside the contextual ʾĕmōr.
+        let matches = parse_word("אֱמָר");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "אמר"
+            && m.binyan == Binyan::Qal
+            && m.form == Form::Imperative));
+    }
+
+    #[test]
     fn parses_iguttural_silent_sheva_imperfect_plural() {
         // וְיַחְפְּרוּ — חפר Qal imperfect 3mp; the I-guttural closes the prefix
         // syllable on a silent sheva, the pe taking a dagesh lene (yaḥpᵊrû).

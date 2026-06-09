@@ -485,6 +485,11 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
                 .then(|| pe_yod_niphal_vav_variants(&text))
                 .unwrap_or_default();
+                // Pausal o-theme imperative/inf-construct twin (אֱמֹר → אֱמָר).
+                let pausal_qotol = (binyan == Binyan::Qal
+                    && matches!(form, Form::Imperative | Form::InfinitiveConstruct))
+                .then(|| pausal_qotol_variant(&text))
+                .flatten();
                 // I-guttural Qal imperfect-family silent-sheva twin (אֶעְבְּרָה).
                 let qal_iguttural_silent = (binyan == Binyan::Qal
                     && matches!(
@@ -704,6 +709,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_guttural_perf_2fs,
                     pe_nun_imperative_retained,
                     qal_iguttural_silent,
+                    pausal_qotol,
                 ]
                 .into_iter()
                 .flatten()
@@ -4231,6 +4237,26 @@ fn paragogic_nun_theme_variants(text: &str) -> Vec<String> {
             hebrew::render(&s)
         })
         .collect()
+}
+
+/// Pausal twin of a Qal o-theme imperative / infinitive construct: in pause the
+/// theme holam on C2 lengthens to qamats — ʾĕmōr אֱמֹר → ʾĕmār אֱמָר, ʾĕḵōl →
+/// ʾĕḵāl (לֶאֱכָל), šᵊmōr → šᵊmār. Changes the penultimate consonant's holam to
+/// qamats when the last consonant is a true final. Additive.
+fn pausal_qotol_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 2 || seq[n - 2].vowel != Some(Vowel::Holam) {
+        return None;
+    }
+    let last = &seq[n - 1];
+    if !(last.vowel.is_none() || last.vowel == Some(Vowel::Sheva))
+        || matches!(last.letter, letter::HE | letter::VAV | letter::YOD)
+    {
+        return None;
+    }
+    seq[n - 2].vowel = Some(Vowel::Qamats);
+    Some(hebrew::render(&seq))
 }
 
 /// Reduced-plural twin of a I-guttural Qal o-theme imperfect. The strong plural
