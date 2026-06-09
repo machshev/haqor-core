@@ -685,7 +685,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     let contracted = geminate
                         .then(|| geminate_contract_variant(&t, root.lamed()))
                         .flatten();
-                    for surf in std::iter::once(t).chain(contracted) {
+                    // Defective twin of a Hiphil suffixed form: the î mater
+                    // (hiriq + yod) is often written bare (yᵉḇîʔēhû יְבִיאֵהוּ →
+                    // yᵉḇiʔēhû יְבִאֵהוּ, וַיְבִאֵהוּ via the vav peel).
+                    let defective = (binyan == Binyan::Hiphil)
+                        .then(|| strip_hiriq_yod_mater_variant(&t))
+                        .flatten();
+                    for surf in std::iter::once(t).chain(contracted).chain(defective) {
                         if osuf_seen.insert((obj, surf.clone())) {
                             forms.push(VerbForm {
                                 binyan,
@@ -4378,6 +4384,27 @@ fn lamed_guttural_perfect_sheva_variant(text: &str) -> Option<String> {
             && seq[i + 1].vowel.is_none()
         {
             seq[i].vowel = Some(Vowel::Sheva);
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
+}
+
+/// Defective twin of a form carrying an î mater: the first hiriq-bearing
+/// consonant followed by a vowelless yod mater (the plene î of הִקְטִיל / יְבִיא)
+/// drops the yod, leaving a bare hiriq — yᵉḇîʔēhû יְבִיאֵהוּ → yᵉḇiʔēhû יְבִאֵהוּ.
+/// Returns `None` when no such hiriq+yod is present. Additive: the defective
+/// spelling differs from the plene one.
+fn strip_hiriq_yod_mater_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    // Require something after the yod so a word-final suffix yod (the 1cs -nî)
+    // is never mistaken for the medial î mater.
+    for i in 0..seq.len().saturating_sub(2) {
+        if seq[i].vowel == Some(Vowel::Hiriq)
+            && seq[i + 1].letter == letter::YOD
+            && seq[i + 1].vowel.is_none()
+        {
+            seq.remove(i + 1);
             return Some(hebrew::render(&seq));
         }
     }

@@ -1048,6 +1048,16 @@ mod tests {
     }
 
     #[test]
+    fn parses_defective_hollow_hiphil_object_suffix() {
+        // וַיְבִאֵהוּ — בוא Hiphil + 3ms ("and he brought him"); the î mater is
+        // written defectively (yᵉḇiʔ-, not the plene yᵉḇîʔ-).
+        let matches = parse_word("וַיְבִאֵהוּ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "בוא"
+            && m.binyan == Binyan::Hiphil
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("3ms")));
+    }
+
+    #[test]
     fn parses_geminate_imperative_object_suffix() {
         // חָנֵּנִי — חנן Qal imperative 2ms + 1cs ("be gracious to me"); the
         // geminate radical contracts to a single dageshed nun.
