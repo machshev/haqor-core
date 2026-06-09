@@ -4858,9 +4858,11 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     // 3ms: plain -ēhû and energic -ennû.
     emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]);
     emit(OBJ_3MS, Segol, &[Cons::new(letter::NUN).with_dagesh(), oshureq()]);
-    // 3fs: link-vowel -ehā and the mappiq-he -āh (wayyilkᵉdāh וַיִּלְכְּדָהּ).
+    // 3fs: link-vowel -ehā, the mappiq-he -āh (wayyilkᵉdāh וַיִּלְכְּדָהּ), and
+    // the energic -ennā (yišmᵊrennā, ʾettᵉnennā אֶתְּנֶנָּה, yᵉsîrennā).
     emit(OBJ_3FS, Segol, &[ocv(letter::HE, Qamats)]);
     emit(OBJ_3FS, Qamats, &[Cons::new(letter::HE).with_dagesh()]);
+    emit(OBJ_3FS, Segol, &[Cons::new(letter::NUN).with_dagesh().with_vowel(Qamats), Cons::new(letter::HE)]);
     // 1cp -ēnû.
     emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]);
     // 3mp -ēm.

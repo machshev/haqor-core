@@ -1048,6 +1048,13 @@ mod tests {
     }
 
     #[test]
+    fn parses_imperfect_energic_3fs_object_suffix() {
+        // אֶתְּנֶנָּה — Qal imperfect 1cs of נתן + energic 3fs ("I will give it").
+        let matches = parse_word("אֶתְּנֶנָּה");
+        assert!(has_obj(&matches, "נתנ", Form::Imperfect, "3fs"));
+    }
+
+    #[test]
     fn strips_word_initial_dehiq_dagesh() {
         // נַּעֲשֶׂה — עשה Qal Imperfect 1cp ("we will do") with a conjunctive
         // (dehiq) dagesh forte on the word-initial nun; the generator never
