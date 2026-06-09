@@ -4843,8 +4843,12 @@ fn perfect_subject_object_suffixes(base_text: &str, pgn: Pgn, root: &Root, binya
             return out;
         }
         let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
+        // The Qal perfect of I-yod/I-nun roots is regular (yāḏaʕ, nāp̄al), so the
+        // qᵊṭāl-û connecting stem builds straight from the radicals — only the
+        // truly reshaping classes (III-weak, hollow) are excluded.
         if matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
-            || matches!(c1, letter::VAV | letter::YOD | letter::NUN)
+            || matches!(c2, letter::VAV | letter::YOD)
+            || c1 == letter::VAV
         {
             return out;
         }

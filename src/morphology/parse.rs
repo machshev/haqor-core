@@ -1058,6 +1058,14 @@ mod tests {
     }
 
     #[test]
+    fn parses_pe_yod_perfect_3cp_object_suffix() {
+        // יְדָעוּם — ידע Qal perfect 3cp + 3mp ("they knew them"); the I-yod
+        // perfect is regular, so the qᵊṭāl-û connecting stem applies.
+        let matches = parse_word("יְדָעוּם");
+        assert!(has_obj(&matches, "ידע", Form::Perfect, "3mp"));
+    }
+
+    #[test]
     fn parses_lamed_he_imperfect_object_suffix() {
         // וַיַּעֲנֵנִי — ענה Qal wayyiqtol + 1cs ("and he answered me"); the he
         // elides and the suffix links on a tsere.
