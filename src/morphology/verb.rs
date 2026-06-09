@@ -708,7 +708,16 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     let defective = (binyan == Binyan::Hiphil)
                         .then(|| strip_hiriq_yod_mater_variant(&t))
                         .flatten();
-                    for surf in std::iter::once(t).chain(contracted).chain(defective) {
+                    // I-guttural twin: when the reduced suffixed stem closes the
+                    // C1-guttural syllable (yaʕăzᵊḇēnî → yaʕazḇēnî יַעַזְבֵנִי,
+                    // וַיַּעַזְבֵנִי), the hataf under the guttural fills to its
+                    // matching short vowel.
+                    let guttural = guttural_hataf_to_full_variant(&t);
+                    for surf in std::iter::once(t)
+                        .chain(contracted)
+                        .chain(defective)
+                        .chain(guttural)
+                    {
                         if osuf_seen.insert((obj, surf.clone())) {
                             forms.push(VerbForm {
                                 binyan,
@@ -4447,6 +4456,29 @@ fn lamed_guttural_perfect_sheva_variant(text: &str) -> Option<String> {
             && seq[i + 1].vowel.is_none()
         {
             seq[i].vowel = Some(Vowel::Sheva);
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
+}
+
+/// Full-vowel twin of a suffixed form whose C1 guttural carries a hataf that the
+/// reduction should have closed: a guttural with hataf-patah/segol immediately
+/// followed by a consonant bearing a vocal sheva fills to the matching short
+/// vowel, closing its syllable — yaʕăzᵊḇēnî יַעֲזְבֵנִי → yaʕazḇēnî יַעַזְבֵנִי
+/// (וַיַּעַזְבֵנִי), yahărgēhû → yahargēhû. Returns `None` when no such guttural is
+/// present. Additive.
+fn guttural_hataf_to_full_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    for i in 0..seq.len().saturating_sub(1) {
+        let full = match seq[i].vowel {
+            Some(Vowel::HatafPatah) => Vowel::Patah,
+            Some(Vowel::HatafSegol) => Vowel::Segol,
+            Some(Vowel::HatafQamats) => Vowel::QamatsQatan,
+            _ => continue,
+        };
+        if hebrew::is_guttural(seq[i].letter) && seq[i + 1].vowel == Some(Vowel::Sheva) {
+            seq[i].vowel = Some(full);
             return Some(hebrew::render(&seq));
         }
     }

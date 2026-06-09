@@ -1058,6 +1058,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_pe_guttural_wayyiqtol_object_suffix() {
+        // וַיַּעַזְבֵנִי — עזב Qal wayyiqtol + 1cs ("and he forsook me"); the C1
+        // ayin's hataf fills to a full patah as the suffixed stem closes it.
+        let matches = parse_word("וַיַּעַזְבֵנִי");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "עזב"
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+    }
+
+    #[test]
     fn parses_pe_nun_niphal_participle() {
         // נִבְּאִים — נבא Niphal participle mp ("prophesying"); the radical nun
         // assimilates into the bet (niḇbᵊʔîm), as in the perfect.
