@@ -1058,6 +1058,17 @@ mod tests {
     }
 
     #[test]
+    fn parses_geminate_niphal_perfect() {
+        // נָשַׁמּוּ — שמם Niphal perfect 3cp ("they were made desolate"); the
+        // doubled radical contracts to nāCaC, doubling before the vocalic -û.
+        let matches = parse_word("נָשַׁמּוּ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שממ"
+            && m.binyan == Binyan::Niphal
+            && m.form == Form::Perfect
+            && m.pgn.label() == "3cp"));
+    }
+
+    #[test]
     fn parses_pausal_qotol_imperative() {
         // אֱמָר — אמר Qal imperative 2ms in pause; the theme holam lengthens to
         // qamats (ʾĕmār), beside the contextual ʾĕmōr.

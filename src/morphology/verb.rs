@@ -554,6 +554,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     geminate_hiphil_perfect_variant(root, pgn)
                         .map(|s| vec![hebrew::render(&s)])
                         .unwrap_or_default()
+                } else if binyan == Binyan::Niphal
+                    && form == Form::Perfect
+                    && root.ayin() == root.lamed()
+                {
+                    // Geminate Niphal perfect nāCaC (נָשַׁם, נָשַׁמּוּ, נָסַבּוּ).
+                    geminate_niphal_perfect_variant(root, pgn)
+                        .map(|s| vec![hebrew::render(&s)])
+                        .unwrap_or_default()
                 } else if binyan == Binyan::Qal
                     && form == Form::Perfect
                     && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)
@@ -4377,6 +4385,27 @@ fn geminate_hiphil_perfect_variant(root: &Root, pgn: Pgn) -> Option<Vec<Cons>> {
         Some(vec![he, c1, rad(c, 2).with_dagesh(), oshureq()])
     } else if three(Gender::Feminine, Number::Singular) {
         Some(vec![he, c1, rad(c, 2).with_dagesh().with_vowel(Qamats), Cons::new(letter::HE)])
+    } else {
+        None
+    }
+}
+
+/// Geminate Niphal perfect nāCaC (נָסַב, נָשַׁם): nun-qamats prefix, C1-patah, the
+/// doubled radical collapsing to a single C2. The strong builder spells שמם as a
+/// 3-radical niqṭal (נִשְׁמַם); this builds the contracted form. Before a vocalic
+/// afformative the radical doubles: 3cp nāšammû נָשַׁמּוּ, 3fs nāšammâ נָשַׁמָּה.
+fn geminate_niphal_perfect_variant(root: &Root, pgn: Pgn) -> Option<Vec<Cons>> {
+    use Vowel::*;
+    let c = root.ayin(); // == root.lamed()
+    let nun = Cons::new(letter::NUN).with_vowel(Qamats);
+    let c1 = rad(root.pe(), 1).with_vowel(Patah);
+    let three = |g: Gender, num: Number| pgn == Pgn::new(Person::Third, g, num);
+    if three(Gender::Masculine, Number::Singular) {
+        Some(vec![nun, c1, rad(c, 2)])
+    } else if three(Gender::Common, Number::Plural) {
+        Some(vec![nun, c1, rad(c, 2).with_dagesh(), oshureq()])
+    } else if three(Gender::Feminine, Number::Singular) {
+        Some(vec![nun, c1, rad(c, 2).with_dagesh().with_vowel(Qamats), Cons::new(letter::HE)])
     } else {
         None
     }
