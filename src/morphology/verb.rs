@@ -465,6 +465,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                 .then(|| paragogic_nun_theme_variants(&text))
                 .unwrap_or_default();
+                // Pausal theme-restored plural (yišmāʕû יִשְׁמָעוּ), the same
+                // restored grade minus the energic nun.
+                let pausal_plural: Vec<String> = (form == Form::Imperfect
+                    && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
+                .then(|| pausal_imperfect_plural_variants(&text))
+                .unwrap_or_default();
                 // I-vav Niphal imperfect vav-doubling twins (וַיִּוָּעַץ).
                 let pe_yod_niphal_vav: Vec<String> = (binyan == Binyan::Niphal
                     && root.has(Gizra::PeYod)
@@ -706,6 +712,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 for alt in pe_yod_retained
                     .into_iter()
                     .chain(paragogic_nun_theme)
+                    .chain(pausal_plural)
                     .chain(pe_yod_niphal_vav)
                 {
                     forms.push(VerbForm {
@@ -4212,6 +4219,31 @@ fn paragogic_nun_theme_variants(text: &str) -> Vec<String> {
             let mut s = seq.clone();
             s[n - 3].vowel = Some(theme);
             s.push(Cons::new(letter::NUN));
+            hebrew::render(&s)
+        })
+        .collect()
+}
+
+/// Pausal twin of a vocalic-suffix (-û) imperfect: in pause the theme vowel the
+/// bare plural reduced to sheva is restored to its full grade on the consonant
+/// before C3 — qamats (yišmāʕû יִשְׁמָעוּ, yiqrāḇû) or tsere — exactly the grade
+/// the energic -ûn restores, but with no nun. Returns both twins; only the
+/// attested grade matches. (Same shape test as [`paragogic_nun_theme_variants`].)
+fn pausal_imperfect_plural_variants(text: &str) -> Vec<String> {
+    let seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 3
+        || !(seq[n - 1].letter == letter::VAV && seq[n - 1].dagesh && seq[n - 1].vowel.is_none())
+        || seq[n - 2].vowel.is_some()
+        || seq[n - 3].vowel != Some(Vowel::Sheva)
+    {
+        return Vec::new();
+    }
+    [Vowel::Qamats, Vowel::Tsere]
+        .into_iter()
+        .map(|theme| {
+            let mut s = seq.clone();
+            s[n - 3].vowel = Some(theme);
             hebrew::render(&s)
         })
         .collect()

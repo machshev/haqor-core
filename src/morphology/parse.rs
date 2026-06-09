@@ -1058,6 +1058,16 @@ mod tests {
     }
 
     #[test]
+    fn parses_pausal_imperfect_plural() {
+        // יִשְׁמָעוּ — שמע Qal imperfect 3mp in pause; the theme restores to
+        // qamats (yišmāʕû), unlike the contextual yišmᵊʕû.
+        let matches = parse_word("יִשְׁמָעוּ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שמע"
+            && m.form == Form::Imperfect
+            && m.pgn.label() == "3mp"));
+    }
+
+    #[test]
     fn parses_nun_retained_infinitive_construct() {
         // בִּנְפֹל — נפל Qal inf construct ("in falling"); the nun is kept (nᵊp̄ōl),
         // not assimilated to the dropped pōl.
