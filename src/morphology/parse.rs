@@ -1058,6 +1058,15 @@ mod tests {
     }
 
     #[test]
+    fn parses_iguttural_cohortative_silent_sheva() {
+        // אֶעְבְּרָה — עבר Qal cohortative 1cs ("let me cross over"); the I-guttural
+        // takes a silent sheva closing the prefix syllable, the bet a dagesh lene.
+        let matches = parse_word("אֶעְבְּרָה");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "עבר"
+            && m.binyan == Binyan::Qal));
+    }
+
+    #[test]
     fn parses_enemy_and_mp_participle_1cs_suffix() {
         // אוֹיְבַי — איב (now a true-triliteral qōṭēl, not hollow) participle mp +
         // 1cs ("my enemies").

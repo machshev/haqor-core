@@ -471,6 +471,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
                 .then(|| pe_yod_niphal_vav_variants(&text))
                 .unwrap_or_default();
+                // I-guttural Qal imperfect-family silent-sheva twin (אֶעְבְּרָה).
+                let qal_iguttural_silent = (binyan == Binyan::Qal
+                    && matches!(
+                        form,
+                        Form::Imperfect | Form::Cohortative | Form::Jussive | Form::Wayyiqtol
+                    )
+                    && root.has(Gizra::PeGuttural))
+                .then(|| qal_iguttural_silent_sheva_variant(&text))
+                .flatten();
                 // Nun-retained I-nun Qal imperative twin (נְטֵה, נְצֹר).
                 let pe_nun_imperative_retained = (binyan == Binyan::Qal
                     && form == Form::Imperative
@@ -659,6 +668,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_paragogic_nun,
                     lamed_guttural_perf_2fs,
                     pe_nun_imperative_retained,
+                    qal_iguttural_silent,
                 ]
                 .into_iter()
                 .flatten()
@@ -4339,6 +4349,34 @@ fn guttural_silent_sheva_variant(text: &str) -> Option<String> {
         }
     }
     None
+}
+
+/// Silent-sheva twin of a I-guttural Qal imperfect-family form whose C1 guttural
+/// opens its own syllable on a segol/hataf (ʾeʕeḇᵊrâ אֶעֶבְרָה, yaʕăḇōr): the
+/// Masoretes often close the prefix syllable instead, the guttural taking a
+/// silent sheva and a following בגדכפת consonant a dagesh lene — ʾeʕbᵊrâ
+/// אֶעְבְּרָה. Converts the C1 guttural's segol/hataf-segol/hataf-patah (preceded
+/// by the prefix vowel) to a plain sheva. Additive.
+fn qal_iguttural_silent_sheva_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    // C1 is the second slot (after the one-letter preformative).
+    if seq.len() < 3 || !hebrew::is_guttural(seq[1].letter) {
+        return None;
+    }
+    if !matches!(
+        seq[1].vowel,
+        Some(Vowel::Segol | Vowel::HatafSegol | Vowel::HatafPatah)
+    ) || seq[0].vowel.is_none()
+    {
+        return None;
+    }
+    seq[1].vowel = Some(Vowel::Sheva);
+    if let Some(next) = seq.get_mut(2) {
+        if hebrew::is_begedkefet(next.letter) {
+            next.dagesh = true;
+        }
+    }
+    Some(hebrew::render(&seq))
 }
 
 /// Guttural-lowered alternant of a III-guttural Piel/Hithpael whose theme tsere
