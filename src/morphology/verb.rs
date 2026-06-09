@@ -471,6 +471,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                 .then(|| pausal_imperfect_plural_variants(&text))
                 .unwrap_or_default();
+                // I-guttural o-theme imperfect plural with the holam reduced
+                // (yaḥpōrû → yaḥpᵊrû יַחְפְּרוּ).
+                let iguttural_reduced = (binyan == Binyan::Qal
+                    && root.has(Gizra::PeGuttural)
+                    && form == Form::Imperfect
+                    && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
+                .then(|| iguttural_reduced_plural_variant(&text))
+                .flatten();
                 // I-vav Niphal imperfect vav-doubling twins (וַיִּוָּעַץ).
                 let pe_yod_niphal_vav: Vec<String> = (binyan == Binyan::Niphal
                     && root.has(Gizra::PeYod)
@@ -713,6 +721,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .into_iter()
                     .chain(paragogic_nun_theme)
                     .chain(pausal_plural)
+                    .chain(iguttural_reduced)
                     .chain(pe_yod_niphal_vav)
                 {
                     forms.push(VerbForm {
@@ -4222,6 +4231,32 @@ fn paragogic_nun_theme_variants(text: &str) -> Vec<String> {
             hebrew::render(&s)
         })
         .collect()
+}
+
+/// Reduced-plural twin of a I-guttural Qal o-theme imperfect. The strong plural
+/// reduces the holam theme to a vocal sheva (yišmōr → yišmᵊrû), but the
+/// I-guttural builder keeps it (yaḥpōrû יַחְפֹּרוּ); the reduced spelling yaḥpᵊrû
+/// (יַחְפְּרוּ, וְיַחְפְּרוּ) also occurs. Reduces the holam on the consonant before
+/// C3 to sheva. Additive.
+fn iguttural_reduced_plural_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    // [prefix] C1-guttural(patah/hataf) C2(sheva) … VAV(shureq): the guttural
+    // closes the prefix syllable on a silent sheva and a begedkefet C2 takes a
+    // dagesh lene — yaḥap̄rû יַחַפְרוּ → yaḥpᵊrû יַחְפְּרוּ.
+    if n < 4
+        || !(seq[n - 1].letter == letter::VAV && seq[n - 1].dagesh && seq[n - 1].vowel.is_none())
+        || !hebrew::is_guttural(seq[1].letter)
+        || !matches!(seq[1].vowel, Some(Vowel::Patah | Vowel::HatafPatah | Vowel::HatafSegol))
+        || seq[2].vowel != Some(Vowel::Sheva)
+    {
+        return None;
+    }
+    seq[1].vowel = Some(Vowel::Sheva);
+    if hebrew::is_begedkefet(seq[2].letter) {
+        seq[2].dagesh = true;
+    }
+    Some(hebrew::render(&seq))
 }
 
 /// Pausal twin of a vocalic-suffix (-û) imperfect: in pause the theme vowel the

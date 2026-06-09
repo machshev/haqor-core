@@ -1058,6 +1058,16 @@ mod tests {
     }
 
     #[test]
+    fn parses_iguttural_silent_sheva_imperfect_plural() {
+        // וְיַחְפְּרוּ — חפר Qal imperfect 3mp; the I-guttural closes the prefix
+        // syllable on a silent sheva, the pe taking a dagesh lene (yaḥpᵊrû).
+        let matches = parse_word("וְיַחְפְּרוּ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "חפר"
+            && m.form == Form::Imperfect
+            && m.pgn.label() == "3mp"));
+    }
+
+    #[test]
     fn parses_pausal_imperfect_plural() {
         // יִשְׁמָעוּ — שמע Qal imperfect 3mp in pause; the theme restores to
         // qamats (yišmāʕû), unlike the contextual yišmᵊʕû.
