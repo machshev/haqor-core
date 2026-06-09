@@ -1058,6 +1058,18 @@ mod tests {
     }
 
     #[test]
+    fn parses_segholate_infinitive_object_suffix_segol_grade() {
+        // בְּלֶכְתּוֹ — הלך Qal inf construct (leḵeṯ) + 3ms ("in his going"); C1
+        // keeps segol (leḵtô), unlike the I-yod hiriq grade (šibtô).
+        let matches = parse_word("בְּלֶכְתּוֹ");
+        assert!(matches.iter().any(|m| m.form == Form::InfinitiveConstruct
+            && m.object_suffix.map(|p| p.label()).as_deref() == Some("3ms")));
+        // Regression: the hiriq grade still parses (בְּשִׁבְתְּךָ, ישב).
+        let m2 = parse_word("בְּשִׁבְתְּךָ");
+        assert!(m2.iter().any(|m| m.form == Form::InfinitiveConstruct));
+    }
+
+    #[test]
     fn parses_pe_yod_perfect_3cp_object_suffix() {
         // יְדָעוּם — ידע Qal perfect 3cp + 3mp ("they knew them"); the I-yod
         // perfect is regular, so the qᵊṭāl-û connecting stem applies.

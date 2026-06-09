@@ -5278,20 +5278,23 @@ fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -
             return out;
         }
         // Pe-yod segholate infinitive construct (šeḇeṯ שֶׁבֶת, leḵeṯ לֶכֶת):
-        // the two surviving radicals both carry segol. Before a suffix they
-        // reduce to C1=hiriq, C2=silent sheva (šibtô שִׁבְתּוֹ).
+        // the two surviving radicals both carry segol. Before a suffix C2 goes to
+        // a silent sheva and C1 either reduces to hiriq (the I-yod šibtô שִׁבְתּוֹ)
+        // or keeps its segol (leḵtô לֶכְתּוֹ, ridtô); emit both grades.
         let segholate = n >= 3
             && seq[n - 1].letter == letter::TAV
             && seq[0].vowel == Some(Vowel::Segol)
             && seq[1].vowel == Some(Vowel::Segol);
         if segholate {
             for (obj, link, tail) in nominal_suffix_tails() {
-                let mut s = seq.clone();
-                s[0].vowel = Some(Vowel::Hiriq);
-                s[1].vowel = Some(Vowel::Sheva);
-                s[n - 1].vowel = link;
-                s.extend(tail);
-                out.push((obj, hebrew::render(&s)));
+                for c1v in [Vowel::Hiriq, Vowel::Segol] {
+                    let mut s = seq.clone();
+                    s[0].vowel = Some(c1v);
+                    s[1].vowel = Some(Vowel::Sheva);
+                    s[n - 1].vowel = link;
+                    s.extend(tail.clone());
+                    out.push((obj, hebrew::render(&s)));
+                }
             }
         } else {
             for (obj, link, tail) in nominal_suffix_tails() {
