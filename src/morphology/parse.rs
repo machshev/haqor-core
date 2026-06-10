@@ -89,23 +89,38 @@ pub struct VerbMatch {
     pub object_suffix: Option<Pgn>,
 }
 
-/// The canonical key two rendered forms share **iff** [`forms_match`] accepts
-/// them. `forms_match`'s loosest clause is "equal after collapsing plene
-/// holam/shureq onto the preceding consonant and stripping the sin/shin dot",
-/// and its stricter clauses all imply that one, so equality of this key is
-/// exactly `forms_match`. Building a `HashMap<key, analyses>` from every
-/// generated form turns reverse parsing from per-surface generate-and-test into
-/// an O(1) lookup. Keep this in lock-step with [`forms_match`].
+/// The canonical key defining when two rendered forms count as the same
+/// surface form: equal after collapsing a plene holam/shureq vav mater onto
+/// the preceding consonant and stripping the sin/shin dot. [`forms_match`] is
+/// key equality, and the [`ReverseIndex`] maps each generated form's key to
+/// its analyses, turning reverse parsing from per-surface generate-and-test
+/// into an O(1) lookup — both paths share this one normalisation, so they
+/// cannot diverge. Any future orthographic relaxation belongs here and
+/// nowhere else.
+///
+/// Why each relaxation is safe (recovers spelling variants without merging
+/// distinct words):
+/// - Plene holam (a vav mater carrying holam after a vowelless consonant)
+///   collapses onto that consonant, so plene יוֹשֵׁב and defective יֹשֵׁב
+///   normalise alike. Plene/defective is purely orthographic — same lexeme,
+///   same analysis — and a holam mater is the sole thing removed.
+/// - Plene shureq (a vav bearing the dagesh-as-shureq point, no vowel)
+///   collapses to qubuts on the preceding consonant, so יָמוּתוּ and יָמֻתוּ
+///   normalise alike. Orthographic for the same reason.
+/// - The sin/shin dot is stripped because the generator always renders ש with
+///   a shin dot (it has no lexical knowledge of which roots are sin), so a
+///   sin-pointed surface — עָשָׂה, נָשָׂא, שָׂם — could never exact-match an
+///   otherwise-identical generated form. Candidate roots already key on the
+///   bare letter ש and roots are reported by their bare letters, so collapsing
+///   the dot recovers every sin verb without admitting new roots.
 pub(crate) fn canonical_key(form: &str) -> String {
-    // Two sequential passes, faithfully mirroring forms_match's collapse_holam
-    // then collapse_shureq (each re-parses the previous pass's output), then the
-    // sin/shin-dot strip — so the key is byte-identical to forms_match's loosest
-    // comparison on any input.
+    // Two sequential passes — holam then shureq, each re-parsing the previous
+    // pass's output — then the sin/shin-dot strip.
     fn collapse(form: &str, shureq: bool) -> String {
         let mut out: Vec<Cons> = Vec::new();
         for c in hebrew::parse_pointed(form) {
             // holam pass: a vav bearing holam; shureq pass: a vav bearing the
-            // dagesh-as-shureq point with no vowel. Matches forms_match exactly.
+            // dagesh-as-shureq point with no vowel.
             let is_mater = c.letter == letter::VAV
                 && if shureq { c.dagesh && c.vowel.is_none() } else { c.vowel == Some(Vowel::Holam) };
             if is_mater {
@@ -125,62 +140,27 @@ pub(crate) fn canonical_key(form: &str) -> String {
     shureq.chars().filter(|&c| c != '\u{05C1}' && c != '\u{05C2}').collect()
 }
 
-/// Compare two rendered forms ignoring the sin/shin dot. The generator always
-/// renders ש with a shin dot (it has no lexical knowledge of which roots are
-/// sin), so a sin-pointed surface — עָשָׂה, נָשָׂא, שָׂם — could never exact-match an
-/// otherwise-identical generated form. Candidate roots already key on the bare
-/// letter ש and we report roots by their bare letters, so collapsing the dot in
-/// the surface match recovers every sin verb without admitting new roots.
-fn forms_match(generated: &str, target: &str) -> bool {
-    fn strip_dot(s: &str) -> String {
-        s.chars().filter(|&c| c != '\u{05C1}' && c != '\u{05C2}').collect()
-    }
-    // Collapse a plene holam (a vav mater carrying holam after a vowelless
-    // consonant) onto the preceding consonant, so plene יוֹשֵׁב and defective
-    // יֹשֵׁב normalise to the same form. Plene/defective is purely orthographic —
-    // the same lexeme, same analysis — so this only recovers spelling variants
-    // and never merges distinct words (a holam mater is the sole thing removed).
-    fn collapse_holam(s: &str) -> String {
-        let mut out: Vec<Cons> = Vec::new();
-        for c in hebrew::parse_pointed(s) {
-            if c.letter == letter::VAV && c.vowel == Some(Vowel::Holam) {
-                if let Some(prev) = out.last_mut() {
-                    if prev.vowel.is_none() {
-                        prev.vowel = Some(Vowel::Holam);
-                        continue;
-                    }
-                }
-            }
-            out.push(c);
-        }
-        hebrew::render(&out)
-    }
-    // Collapse a plene shureq (a vav mater bearing the dagesh-as-shureq point
-    // after a vowelless consonant) onto the preceding consonant as a qubuts, so
-    // plene יָמוּתוּ and defective יָמֻתוּ normalise alike. Like holam this is
-    // purely orthographic — same lexeme, same analysis — and exact-match still
-    // governs, so it only recovers spelling variants.
-    fn collapse_shureq(s: &str) -> String {
-        let mut out: Vec<Cons> = Vec::new();
-        for c in hebrew::parse_pointed(s) {
-            if c.letter == letter::VAV && c.dagesh && c.vowel.is_none() {
-                if let Some(prev) = out.last_mut() {
-                    if prev.vowel.is_none() {
-                        prev.vowel = Some(Vowel::Qubuts);
-                        continue;
-                    }
-                }
-            }
-            out.push(c);
-        }
-        hebrew::render(&out)
-    }
-    if generated == target || strip_dot(generated) == strip_dot(target) {
+/// Compare a generated form against the parse targets up to the orthographic
+/// normalisation of [`canonical_key`]. Key equality is the single definition
+/// of a match, shared with the [`ReverseIndex`], so the direct and indexed
+/// parse paths cannot diverge. `target_keys` are the targets' precomputed
+/// canonical keys — computed once per peeling, not once per generated form.
+///
+/// Two fast paths skip the allocation-heavy key computation for almost every
+/// generated form: byte equality, and a first-letter guard — canonicalisation
+/// never touches the first letter (a vav mater only collapses onto a
+/// *previous* consonant, and the stripped sin/shin dot follows its letter),
+/// so forms whose first letters differ can never share a key.
+fn forms_match(generated: &str, targets: &[String], target_keys: &[String]) -> bool {
+    if targets.iter().any(|t| t == generated) {
         return true;
     }
-    let g = collapse_shureq(&collapse_holam(generated));
-    let t = collapse_shureq(&collapse_holam(target));
-    g == t || strip_dot(&g) == strip_dot(&t)
+    let g0 = generated.chars().next();
+    if !targets.iter().any(|t| t.chars().next() == g0) {
+        return false;
+    }
+    let key = canonical_key(generated);
+    target_keys.iter().any(|k| *k == key)
 }
 
 /// Candidate stem renderings for one proclitic peeling: the bare peeled
@@ -327,6 +307,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         let remainder = &seq[strip..];
         let prefix = hebrew::render(&seq[..strip]);
         let targets = peeling_targets(&seq, strip, remainder);
+        let target_keys: Vec<String> = targets.iter().map(|t| canonical_key(t)).collect();
 
         for letters in candidate_roots(remainder, roots) {
             let paradigm = memo
@@ -337,7 +318,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                 // consecutive vav recognised as such rather than as a plain
                 // proclitic; skip it here to avoid duplicate analyses.
                 if vf.form == Form::Wayyiqtol
-                    || !targets.iter().any(|t| forms_match(&vf.text, t))
+                    || !forms_match(&vf.text, &targets, &target_keys)
                 {
                     continue;
                 }
@@ -374,13 +355,14 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         c.letter == letter::VAV && matches!(c.vowel, Some(Vowel::Patah | Vowel::Qamats))
     }) && seq.len() >= 3
     {
-        let target = hebrew::render(&seq);
+        let targets = [hebrew::render(&seq)];
+        let target_keys = [canonical_key(&targets[0])];
         for letters in candidate_roots(&seq[1..], roots) {
             let paradigm = memo
                 .entry(letters)
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
             for vf in &paradigm.forms {
-                if vf.form != Form::Wayyiqtol || !forms_match(&vf.text, &target) {
+                if vf.form != Form::Wayyiqtol || !forms_match(&vf.text, &targets, &target_keys) {
                     continue;
                 }
                 if seen.insert((
