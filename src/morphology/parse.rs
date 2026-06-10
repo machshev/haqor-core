@@ -1146,6 +1146,16 @@ mod tests {
     }
 
     #[test]
+    fn parses_hollow_niphal_perfect() {
+        // נָפֹצוּ — פוץ Niphal perfect 3cp ("they were scattered"); the hollow ô
+        // sits on C1 (nāp̄ôṣû), not the strong נִפְוַץ.
+        let matches = parse_word("נָפֹצוּ");
+        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "פוצ"
+            && m.binyan == Binyan::Niphal
+            && m.form == Form::Perfect));
+    }
+
+    #[test]
     fn parses_geminate_niphal_perfect() {
         // נָשַׁמּוּ — שמם Niphal perfect 3cp ("they were made desolate"); the
         // doubled radical contracts to nāCaC, doubling before the vocalic -û.

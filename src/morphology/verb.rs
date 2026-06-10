@@ -587,6 +587,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     geminate_niphal_perfect_variant(root, pgn)
                         .map(|s| vec![hebrew::render(&s)])
                         .unwrap_or_default()
+                } else if binyan == Binyan::Niphal
+                    && form == Form::Perfect
+                    && root.has(Gizra::Hollow)
+                {
+                    // Hollow Niphal perfect nāCôC (נָכוֹן, נָפֹצוּ).
+                    hollow_niphal_perfect_variant(root, pgn)
+                        .map(|s| vec![hebrew::render(&s)])
+                        .unwrap_or_default()
                 } else if binyan == Binyan::Qal
                     && form == Form::Perfect
                     && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)
@@ -4450,6 +4458,28 @@ fn qal_participle_fs_a_variant(root: &Root) -> Vec<Cons> {
     ];
     apply_guttural(&mut seq, root);
     seq
+}
+
+/// Hollow Niphal perfect nāCôC (נָכוֹן, נָפוֹץ): nun-qamats prefix, the hollow ô
+/// on C1, C3. The strong builder treats the vav as a consonant (נִפְוַץ); this
+/// builds the contracted form for the common third-person subjects — 3cp nāp̄ôṣû
+/// נָפֹצוּ, 3fs nāḵônâ. The ô is written defectively (holam on C1); the plene
+/// (vav mater) spelling matches via the parser's holam collapse.
+fn hollow_niphal_perfect_variant(root: &Root, pgn: Pgn) -> Option<Vec<Cons>> {
+    use Vowel::*;
+    let nun = Cons::new(letter::NUN).with_vowel(Qamats);
+    let c1 = rad(root.pe(), 1).with_vowel(Holam);
+    let c3 = rad(root.lamed(), 3);
+    let three = |g: Gender, num: Number| pgn == Pgn::new(Person::Third, g, num);
+    if three(Gender::Masculine, Number::Singular) {
+        Some(vec![nun, c1, c3])
+    } else if three(Gender::Common, Number::Plural) {
+        Some(vec![nun, c1, c3, oshureq()])
+    } else if three(Gender::Feminine, Number::Singular) {
+        Some(vec![nun, c1, c3.with_vowel(Qamats), Cons::new(letter::HE)])
+    } else {
+        None
+    }
 }
 
 /// Geminate Niphal perfect nāCaC (נָסַב, נָשַׁם): nun-qamats prefix, C1-patah, the
