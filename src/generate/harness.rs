@@ -269,6 +269,7 @@ pub fn parse_eval(
     lexicon_db: Option<&Path>,
     soft: bool,
     limit: usize,
+    misses: usize,
 ) -> Result<()> {
     let gold = collect_gold(morphhb_dir)?;
     let gold = match limit {
@@ -302,7 +303,11 @@ pub fn parse_eval(
     // than per-token generate-and-test (the same speedup the DB build uses).
     let index = ReverseIndex::build();
 
-    let score = gold
+    // (kind, surface, gold tag) per failing token — aggregated for the
+    // `--misses` report.
+    type Miss = (&'static str, String, String);
+
+    let (score, miss_list): (Score, Vec<Miss>) = gold
         .par_iter()
         .map(|g| {
             let mut s = Score {
@@ -352,8 +357,9 @@ pub fn parse_eval(
                     None => {}
                 }
             }
+            let gold_tag = || format!("{:?} {:?} {}", g.binyan, g.form, g.pgn);
             if matches.is_empty() {
-                return s;
+                return (s, Some(("unparsed", g.surface.clone(), gold_tag())));
             }
             s.parsed = 1;
 
@@ -374,11 +380,48 @@ pub fn parse_eval(
             if bf {
                 s.recall_binyan_form = 1;
             }
-            s
+            let miss = if full {
+                None
+            } else if bf {
+                Some(("wrong-pgn", g.surface.clone(), gold_tag()))
+            } else {
+                Some(("wrong-analysis", g.surface.clone(), gold_tag()))
+            };
+            (s, miss)
         })
-        .reduce(Score::default, Score::merge);
+        .fold(
+            || (Score::default(), Vec::new()),
+            |(acc, mut v), (s, m)| {
+                if misses > 0 && let Some(m) = m {
+                    v.push(m);
+                }
+                (acc.merge(s), v)
+            },
+        )
+        .reduce(
+            || (Score::default(), Vec::new()),
+            |(a, mut va), (b, vb)| {
+                va.extend(vb);
+                (a.merge(b), va)
+            },
+        );
 
     print_report(&score, surfaces.is_some(), prefilter.is_some());
+
+    if misses > 0 {
+        // Aggregate identical (surface, gold) failures and print the most
+        // frequent — the highest-leverage targets for the next parser fix.
+        let mut counts: std::collections::HashMap<Miss, usize> = std::collections::HashMap::new();
+        for m in miss_list {
+            *counts.entry(m).or_insert(0) += 1;
+        }
+        let mut rows: Vec<(Miss, usize)> = counts.into_iter().collect();
+        rows.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
+        println!("\ntop {} misses (kind, count, surface, gold):", misses.min(rows.len()));
+        for ((kind, surface, tag), n) in rows.into_iter().take(misses) {
+            println!("  {kind:14} {n:5}  {surface}  [{tag}]");
+        }
+    }
     Ok(())
 }
 

@@ -206,6 +206,10 @@ enum DbCommands {
         /// lexicon/soft options.
         #[arg(long)]
         from_db: Option<PathBuf>,
+        /// Print the top-N most frequent failing surfaces (unparsed or
+        /// gold-analysis-missing) with their gold tags (0 = off)
+        #[arg(long, default_value_t = 0)]
+        misses: usize,
     },
 }
 
@@ -335,6 +339,7 @@ fn main() -> Result<()> {
                 soft,
                 limit,
                 from_db,
+                misses,
             } => {
                 if let Some(hebrew_db) = from_db {
                     haqor_core::generate::eval_from_db(&morphhb, &hebrew_db, limit)?;
@@ -345,6 +350,7 @@ fn main() -> Result<()> {
                         lexicon_db.as_deref(),
                         soft,
                         limit,
+                        misses,
                     )?;
                 }
             }
