@@ -37,7 +37,7 @@ use super::hebrew_db::normalize_surface;
 use super::lexicon_db::load_root_inventory;
 use super::prefilter::Prefilter;
 use crate::morphology::{
-    Binyan, Form, ReverseIndex, parse_word_disambiguated, parse_word_indexed,
+    Binyan, Form, ReverseIndex, parse_word_indexed, parse_word_indexed_disambiguated,
 };
 
 /// OT books are 1..=39 in Haqor numbering; NT starts at 40.
@@ -316,10 +316,9 @@ pub fn parse_eval(
                 s.aligned = 1;
             }
             let matches = if soft {
-                // Soft (disambiguate-only) keeps the per-surface path: parse
-                // unrestricted, then drop out-of-inventory roots only when that
-                // leaves a parse. Rarely used; not on the hot default path.
-                parse_word_disambiguated(&g.surface, roots.as_ref())
+                // Soft (disambiguate-only): parse unrestricted via the index,
+                // then drop out-of-inventory roots only when that leaves a parse.
+                parse_word_indexed_disambiguated(&g.surface, &index, roots.as_ref())
             } else {
                 parse_word_indexed(&g.surface, &index, roots.as_ref())
             };

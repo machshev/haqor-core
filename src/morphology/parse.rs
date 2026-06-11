@@ -634,7 +634,23 @@ pub fn parse_word_indexed(
 /// out-of-inventory is returned untouched rather than zeroed. So this never
 /// loses a parse relative to [`parse_word`]; it only prunes genuine ambiguity.
 pub fn parse_word_disambiguated(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Vec<VerbMatch> {
-    let matches = parse_word(word);
+    disambiguate(parse_word(word), roots)
+}
+
+/// Index-backed twin of [`parse_word_disambiguated`]: the unrestricted parse is
+/// a [`ReverseIndex`] lookup instead of generate-and-test, then the same
+/// disambiguate-only inventory filter is applied to the result.
+pub fn parse_word_indexed_disambiguated(
+    word: &str,
+    index: &ReverseIndex,
+    roots: Option<&HashSet<[char; 3]>>,
+) -> Vec<VerbMatch> {
+    disambiguate(parse_word_indexed(word, index, None), roots)
+}
+
+/// The disambiguate-only inventory filter shared by the generate-and-test and
+/// index-backed soft parsers (see [`parse_word_disambiguated`] for semantics).
+fn disambiguate(matches: Vec<VerbMatch>, roots: Option<&HashSet<[char; 3]>>) -> Vec<VerbMatch> {
     let Some(set) = roots else {
         return matches;
     };
