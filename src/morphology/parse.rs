@@ -312,6 +312,13 @@ fn add_label_twins(matches: &mut Vec<VerbMatch>) {
             t.form = Form::Jussive;
             twins.push(t);
         }
+        // A paragogic-he first-person form is tagged either Cohortative or
+        // plain Imperfect by OSHB (אַגִּידָה vs וְאַגִּידָה) — emit both labels.
+        if m.form == Form::Cohortative {
+            let mut t = m.clone();
+            t.form = Form::Imperfect;
+            twins.push(t);
+        }
         let vav_peel = {
             let mut ch = m.prefix.chars();
             ch.next() == Some('\u{05D5}')
