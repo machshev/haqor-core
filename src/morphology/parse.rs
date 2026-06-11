@@ -107,6 +107,10 @@ pub struct VerbMatch {
 /// - Plene shureq (a vav bearing the dagesh-as-shureq point, no vowel)
 ///   collapses to qubuts on the preceding consonant, so יָמוּתוּ and יָמֻתוּ
 ///   normalise alike. Orthographic for the same reason.
+/// - Qamats-qatan (U+05C7) folds to plain qamats (U+05B8): the generator
+///   distinguishes the o-class qamats (Hophal hoqṭal הׇקְטַל), but the
+///   Masoretic text writes both with the one qamats sign, so a generated
+///   qamats-qatan could never match a real surface.
 /// - The sin/shin dot is stripped because the generator always renders ש with
 ///   a shin dot (it has no lexical knowledge of which roots are sin), so a
 ///   sin-pointed surface — עָשָׂה, נָשָׂא, שָׂם — could never exact-match an
@@ -137,7 +141,11 @@ pub(crate) fn canonical_key(form: &str) -> String {
     }
     let holam = collapse(form, false);
     let shureq = collapse(&holam, true);
-    shureq.chars().filter(|&c| c != '\u{05C1}' && c != '\u{05C2}').collect()
+    shureq
+        .chars()
+        .filter(|&c| c != '\u{05C1}' && c != '\u{05C2}')
+        .map(|c| if c == '\u{05C7}' { '\u{05B8}' } else { c })
+        .collect()
 }
 
 /// Compare a generated form against the parse targets up to the orthographic
@@ -242,6 +250,18 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
         alt[0].dagesh = false;
         targets.push(hebrew::render(&alt));
     }
+    // A bare word whose first begedkefet consonant lacks the dagesh lene was
+    // preceded by a vowel-final word in close juncture (לֹא תְגַלֵּה) — the
+    // generator always writes the word-initial dagesh, so restore it.
+    if strip == 0
+        && remainder
+            .first()
+            .is_some_and(|c| hebrew::is_begedkefet(c.letter) && !c.dagesh)
+    {
+        let mut alt = remainder.to_vec();
+        alt[0].dagesh = true;
+        targets.push(hebrew::render(&alt));
+    }
     // After a proclitic prefix, a begedkefet consonant in the stem may carry
     // a dagesh lene that the generator does not produce (e.g. לִזְבֹּחַ vs
     // לִזְבֹחַ). Emit a variant with all begedkefet dageshes stripped so the
@@ -260,6 +280,58 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
         }
     }
     targets
+}
+
+/// Label twins added after matching, shared by the generate-and-test and
+/// index-backed parsers so they cannot diverge.
+///
+/// - **Jussive → Imperfect**: the "short imperfect" is morphology, not mood —
+///   gold analyses tag forms like יְהִי and וְיָשֹׁב as plain Imperfect when the
+///   context isn't volitive. Every Jussive analysis therefore also stands as an
+///   Imperfect analysis of the same surface.
+/// - **וַ-peel → Wayyiqtol**: a match found by peeling a patah/qamats vav off an
+///   Imperfect/Jussive stem (the peel's article rule absorbs the forte dagesh:
+///   וַיֶּאֱהַב, וַיִּצֹק) *is* a wayyiqtol — the dedicated Wayyiqtol forms only
+///   cover the short-base spellings, so re-label the peeled analyses too.
+fn add_label_twins(matches: &mut Vec<VerbMatch>) {
+    let mut seen: std::collections::HashSet<_> = matches
+        .iter()
+        .map(|m| (m.root.letters, m.binyan, m.form, m.pgn, m.object_suffix, m.prefix.clone(), m.vav_consecutive))
+        .collect();
+    let mut twins = Vec::new();
+    for m in matches.iter() {
+        if m.form == Form::Jussive {
+            let mut t = m.clone();
+            t.form = Form::Imperfect;
+            twins.push(t);
+        }
+        // And the reverse: a long imperfect surface is tagged Jussive when the
+        // context is volitive (יִהְיוּ "let them be").
+        if m.form == Form::Imperfect {
+            let mut t = m.clone();
+            t.form = Form::Jussive;
+            twins.push(t);
+        }
+        let vav_peel = {
+            let mut ch = m.prefix.chars();
+            ch.next() == Some('\u{05D5}')
+                && matches!(ch.next(), Some('\u{05B7}' | '\u{05B8}'))
+                && ch.next().is_none()
+        };
+        if vav_peel && matches!(m.form, Form::Imperfect | Form::Jussive) {
+            let mut t = m.clone();
+            t.form = Form::Wayyiqtol;
+            t.prefix = String::new();
+            t.vav_consecutive = true;
+            twins.push(t);
+        }
+    }
+    for t in twins {
+        let key = (t.root.letters, t.binyan, t.form, t.pgn, t.object_suffix, t.prefix.clone(), t.vav_consecutive);
+        if seen.insert(key) {
+            matches.push(t);
+        }
+    }
 }
 
 /// Stable ordering shared by all parse entry points: attested analyses first,
@@ -389,6 +461,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         }
     }
 
+    add_label_twins(&mut matches);
     sort_matches(&mut matches);
     matches
 }
@@ -622,6 +695,7 @@ pub fn parse_word_indexed(
         }
     }
 
+    add_label_twins(&mut matches);
     sort_matches(&mut matches);
     matches
 }

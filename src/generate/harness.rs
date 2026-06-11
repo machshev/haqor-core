@@ -103,7 +103,14 @@ fn parse_gold(morph: &str, surface: String) -> Option<Gold> {
         let conj = chars.next()?;
         let rest: Vec<char> = chars.collect();
         let binyan = map_stem(stem)?;
-        let form = map_conj(conj)?;
+        let mut form = map_conj(conj)?;
+        // Only Qal distinguishes active and passive participles in our
+        // paradigm; every other binyan files its single participle under
+        // `ParticipleActive` (see `binyan_has_form`). Align the gold tag so
+        // Pual/Hophal passive participles (`s`) are comparable.
+        if form == Form::ParticiplePassive && binyan != Binyan::Qal {
+            form = Form::ParticipleActive;
+        }
         let pgn: String = match conj {
             // Participles: gender + number + state — drop the state letter so
             // the label matches our person-less participle PGN.

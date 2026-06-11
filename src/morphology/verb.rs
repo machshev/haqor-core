@@ -201,6 +201,22 @@ const JUSSIVE_PGNS: &[Pgn] = &[
     Pgn::new(Person::Second, Gender::Feminine, Number::Singular),
 ];
 
+/// The full jussive paradigm includes the plurals (negative commands like
+/// אַל־תִּירְאוּ are tagged jussive), whose forms coincide with the imperfect.
+/// [`JUSSIVE_PGNS`] stays the singular short-form set — it doubles as the
+/// "build the wayyiqtol from the jussive base" test, which must not catch the
+/// plurals.
+const JUSSIVE_PARADIGM_PGNS: &[Pgn] = &[
+    Pgn::new(Person::Third, Gender::Masculine, Number::Singular),
+    Pgn::new(Person::Third, Gender::Feminine, Number::Singular),
+    Pgn::new(Person::Second, Gender::Masculine, Number::Singular),
+    Pgn::new(Person::Second, Gender::Feminine, Number::Singular),
+    Pgn::new(Person::Third, Gender::Masculine, Number::Plural),
+    Pgn::new(Person::Third, Gender::Feminine, Number::Plural),
+    Pgn::new(Person::Second, Gender::Masculine, Number::Plural),
+    Pgn::new(Person::Second, Gender::Feminine, Number::Plural),
+];
+
 const PARTICIPLE_PGNS: &[Pgn] = &[
     Pgn::gn(Gender::Masculine, Number::Singular),
     Pgn::gn(Gender::Feminine, Number::Singular),
@@ -295,7 +311,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 .flatten();
                 // Interior pausal of the Qal/Niphal perfect (יָדָעְתָּ, שָׁמָרְתָּ,
                 // יָצָאוּ, נִלְחָמוּ).
-                let pausal_perf = (matches!(binyan, Binyan::Qal | Binyan::Niphal)
+                let pausal_perf = (matches!(binyan, Binyan::Qal | Binyan::Niphal | Binyan::Piel)
                     && form == Form::Perfect)
                     .then(|| pausal_perfect_c2_variant(root, &text))
                     .flatten();
@@ -333,8 +349,9 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 // the reduced theme sheva restores to tsere in pause
                 // (yᵉḏabbᵊrû → yᵉḏabbērû, יְדַבֵּרוּ).
                 let piel_pausal = (matches!(binyan, Binyan::Piel | Binyan::Hithpael)
-                    && matches!(form, Form::Imperfect | Form::Wayyiqtol)
-                    && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
+                    && (matches!(form, Form::Imperfect | Form::Wayyiqtol)
+                        && imperfect_suffix_kind(pgn) == Suffix::Vocalic
+                        || form == Form::Cohortative))
                 .then(|| piel_pausal_variant(&text))
                 .flatten();
                 // Pausal twin of the Qal vocalic-suffix imperfect: the reduced
@@ -454,6 +471,245 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     (a_text != text).then_some(a_text)
                 })
                 .flatten();
+                // Pausal twin of the a-theme imperfect: the patah theme
+                // lengthens to qamats in pause — yiḇḥar → yiḇḥār יִבְחָר.
+                let qal_a_theme_pausal = (binyan == Binyan::Qal
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
+                .then(|| qal_a_theme.as_deref().and_then(pausal_qamats_variant))
+                .flatten();
+                // Silent-sheva + pausal twins of the a-theme I-guttural
+                // imperfect family: the hataf grade (ʾeḥĕḏal אֶחֱדַל) closes on
+                // a silent sheva (ʾeḥdal אֶחְדַּל, וַיֶּחְדַּל) and lengthens in
+                // pause (ʾeḥdāl אֶחְדָּל).
+                let pe_guttural_a_silent: Vec<String> = (binyan == Binyan::Qal
+                    && root.has(Gizra::PeGuttural)
+                    && matches!(
+                        form,
+                        Form::Imperfect | Form::Jussive | Form::Wayyiqtol | Form::Cohortative
+                    ))
+                .then(|| {
+                    qal_a_theme
+                        .iter()
+                        .filter_map(|t| pe_guttural_qal_silent_twin_variant(root, t))
+                        .flat_map(|s| {
+                            let pausal = pausal_qamats_variant(&s);
+                            std::iter::once(s).chain(pausal)
+                        })
+                        .collect()
+                })
+                .unwrap_or_default();
+                // III-aleph derived-stem imperfect qamats twin: the theme tsere
+                // before the quiescent aleph also surfaces as qamats —
+                // yiṭṭammāʾ יִטַּמָּא, yiṯḥaṭṭāʾ יִתְחַטָּא.
+                let lamed_aleph_impf_qamats = (matches!(
+                    binyan,
+                    Binyan::Piel | Binyan::Pual | Binyan::Hithpael
+                ) && root.lamed() == letter::ALEF
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let n = seq.len();
+                    (n >= 2
+                        && seq[n - 1].letter == letter::ALEF
+                        && seq[n - 1].vowel.is_none()
+                        && seq[n - 2].vowel == Some(Vowel::Tsere))
+                    .then(|| {
+                        seq[n - 2].vowel = Some(Vowel::Qamats);
+                        hebrew::render(&seq)
+                    })
+                })
+                .flatten();
+                // III-He Piel infinitive absolute (naqqēh וְנַקֵּה).
+                let piel_inf_abs_lamed_he = (binyan == Binyan::Piel
+                    && form == Form::InfinitiveAbsolute
+                    && root.lamed() == letter::HE)
+                .then(|| {
+                    let mut c1 = rad(root.pe(), 1).with_vowel(Vowel::Patah);
+                    if hebrew::is_begedkefet(root.pe()) {
+                        c1 = c1.with_dagesh();
+                    }
+                    Some(hebrew::render(&[
+                        c1,
+                        rad(root.ayin(), 2).with_dagesh().with_vowel(Vowel::Tsere),
+                        Cons::new(letter::HE),
+                    ]))
+                })
+                .flatten();
+                // Hollow Hiphil infinitive absolute hāCēC (הָשֵׁב, הָקֵם).
+                let hollow_hiphil_inf_abs = (binyan == Binyan::Hiphil
+                    && form == Form::InfinitiveAbsolute
+                    && root.has(Gizra::Hollow))
+                .then(|| {
+                    Some(hebrew::render(&[
+                        Cons::new(letter::HE).with_vowel(Vowel::Qamats),
+                        rad(root.pe(), 1).with_vowel(Vowel::Tsere),
+                        rad(root.lamed(), 3),
+                    ]))
+                })
+                .flatten();
+                // הלך: the rare retained-he imperfect (yahălōḵ יַהֲלֹךְ) beside
+                // the suppletive יֵלֵךְ.
+                let halak_retained = (is_halak(root)
+                    && binyan == Binyan::Qal
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+                    && imperfect_suffix_kind(pgn) == Suffix::Zero)
+                .then(|| {
+                    Some(hebrew::render(&[
+                        Cons::new(prefix_letter(pgn)).with_vowel(Vowel::Patah),
+                        rad(letter::HE, 1).with_vowel(Vowel::HatafPatah),
+                        rad(letter::LAMED, 2).with_vowel(Vowel::Holam),
+                        rad(letter::KAF, 3),
+                    ]))
+                })
+                .flatten();
+                // Reduced defective Hiphil participle plural: the defective
+                // theme hiriq reduces — maḥṣᵊrîm מַחְצְרִים beside מַחְצִרִים.
+                let hiphil_ptcp_reduced = (binyan == Binyan::Hiphil
+                    && form == Form::ParticipleActive
+                    && pgn.number == Some(Number::Plural))
+                .then(|| {
+                    let defective = hiphil_defective_variant(&text)?;
+                    let mut seq = hebrew::parse_pointed(&defective);
+                    let n = seq.len();
+                    (n >= 5 && seq[n - 4].vowel == Some(Vowel::Hiriq)).then(|| {
+                        seq[n - 4].vowel = Some(Vowel::Sheva);
+                        hebrew::render(&seq)
+                    })
+                })
+                .flatten();
+                // Short 1cs wayyiqtol from the 3ms short base: the preformative
+                // swaps to aleph under a qamats vav — wayyáʿan וַיַּעַן →
+                // wāʾáʿan וָאַעַן, וָאַעַשׂ.
+                let wayyiqtol_1cs_short = (form == Form::Wayyiqtol
+                    && pgn == Pgn::new(Person::First, Gender::Common, Number::Singular))
+                .then(|| {
+                    let (t3, _) = generate_one(
+                        root,
+                        binyan,
+                        Form::Wayyiqtol,
+                        Pgn::new(Person::Third, Gender::Masculine, Number::Singular),
+                        false,
+                    );
+                    let mut seq = hebrew::parse_pointed(&t3);
+                    (seq.len() >= 3
+                        && seq[0].letter == letter::VAV
+                        && seq[0].vowel == Some(Vowel::Patah)
+                        && seq[1].letter == letter::YOD)
+                    .then(|| {
+                        seq[0].vowel = Some(Vowel::Qamats);
+                        seq[1].letter = letter::ALEF;
+                        seq[1].dagesh = false;
+                        hebrew::render(&seq)
+                    })
+                })
+                .flatten();
+                // Hollow III-aleph Qal perfect 2fs (bāʾt בָּאת).
+                let hollow_qal_perf_2fs = (binyan == Binyan::Qal
+                    && form == Form::Perfect
+                    && root.has(Gizra::Hollow)
+                    && root.lamed() == letter::ALEF
+                    && pgn == Pgn::new(Person::Second, Gender::Feminine, Number::Singular))
+                .then(|| {
+                    Some(hebrew::render(&[
+                        rad(root.pe(), 1).with_vowel(Vowel::Qamats),
+                        rad(root.lamed(), 3),
+                        Cons::new(letter::TAV),
+                    ]))
+                })
+                .flatten();
+                // Geminate Hiphil imperfect family (יָחֵל, וַיָּחֵלּוּ) and the
+                // linking-ô consonantal perfect (וַהֲשִׁמֹּתִי).
+                let geminate_hiphil_impf = (binyan == Binyan::Hiphil
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+                    && root.ayin() == root.lamed())
+                .then(|| geminate_hiphil_imperfect_variant(root, pgn))
+                .flatten()
+                .map(|t| {
+                    if form == Form::Wayyiqtol {
+                        let mut seq = hebrew::parse_pointed(&t);
+                        if let Some(first) = seq.first_mut() {
+                            if first.letter == letter::ALEF {
+                                let s = hebrew::render(&seq);
+                                let mut out = vec![Cons::new(letter::VAV).with_vowel(Vowel::Qamats)];
+                                out.extend(hebrew::parse_pointed(&s));
+                                return hebrew::render(&out);
+                            }
+                            first.dagesh = true;
+                        }
+                        seq.insert(0, Cons::new(letter::VAV).with_vowel(Vowel::Patah));
+                        hebrew::render(&seq)
+                    } else {
+                        t
+                    }
+                });
+                let geminate_hiphil_perf_otav: Vec<String> = (binyan == Binyan::Hiphil
+                    && form == Form::Perfect
+                    && root.ayin() == root.lamed()
+                    && perfect_suffix_kind(pgn) == Suffix::Consonantal)
+                .then(|| geminate_hiphil_perfect_otav_variants(root, pgn))
+                .unwrap_or_default();
+                // Hollow Hophal perfect hûCaC (הוּבָא, הוּשַׁב).
+                let hollow_hophal_perf: Vec<String> = (binyan == Binyan::Hophal
+                    && form == Form::Perfect
+                    && root.has(Gizra::Hollow))
+                .then(|| hollow_hophal_perfect_variants(root, pgn))
+                .unwrap_or_default();
+                // Niphal wayyiqtol nesiga patah twin: the final tsere lowers
+                // under the retracted stress — וַתֵּעָצַר beside תֵּעָצֵר.
+                let niphal_wayy_patah = (binyan == Binyan::Niphal
+                    && form == Form::Wayyiqtol
+                    && imperfect_suffix_kind(pgn) == Suffix::Zero)
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let c = seq
+                        .iter_mut()
+                        .rev()
+                        .find(|c| c.vowel == Some(Vowel::Tsere))?;
+                    c.vowel = Some(Vowel::Patah);
+                    Some(hebrew::render(&seq))
+                })
+                .flatten();
+                // III-He Qal infinitive absolute vav-holam twin: hāyô הָיוֹ
+                // beside hāyōh הָיֹה.
+                let lamed_he_inf_abs_vav = (binyan == Binyan::Qal
+                    && form == Form::InfinitiveAbsolute
+                    && root.lamed() == letter::HE)
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let n = seq.len();
+                    (n >= 2
+                        && seq[n - 1].letter == letter::HE
+                        && seq[n - 1].vowel.is_none()
+                        && seq[n - 2].vowel == Some(Vowel::Holam))
+                    .then(|| {
+                        seq[n - 2].vowel = None;
+                        seq[n - 1] = Cons::new(letter::VAV).with_vowel(Vowel::Holam);
+                        hebrew::render(&seq)
+                    })
+                })
+                .flatten();
+                // Pual participle qamats twin (מְאָדָּם beside מְאֻדָּם).
+                let pual_ptcp_qamats = (binyan == Binyan::Pual
+                    && matches!(form, Form::ParticipleActive | Form::ParticiplePassive))
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let c = seq
+                        .iter_mut()
+                        .find(|c| c.vowel == Some(Vowel::Qubuts))?;
+                    c.vowel = Some(Vowel::Qamats);
+                    Some(hebrew::render(&seq))
+                })
+                .flatten();
+                // III-aleph Piel/Pual/Hithpael consonantal perfect quiescent
+                // twin (קִנֵּאתִי beside the strong קִנַּאְתִּי).
+                let lamed_aleph_derived_perf = (matches!(
+                    binyan,
+                    Binyan::Piel | Binyan::Pual | Binyan::Hithpael
+                ) && form == Form::Perfect
+                    && root.lamed() == letter::ALEF
+                    && perfect_suffix_kind(pgn) == Suffix::Consonantal)
+                .then(|| lamed_aleph_derived_perfect_variant(&text))
+                .flatten();
                 // Paragogic-nun twin of the vocalic-suffix imperfect (tōʔmᵊrûn
                 // תֹּאמְרוּן, yᵊšûḇûn). Any binyan; the long imperfect only.
                 let paragogic_nun = (form == Form::Imperfect
@@ -475,7 +731,10 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 .unwrap_or_default();
                 // Pausal theme-restored plural (yišmāʕû יִשְׁמָעוּ), the same
                 // restored grade minus the energic nun.
-                let pausal_plural: Vec<String> = (form == Form::Imperfect
+                let pausal_plural: Vec<String> = (matches!(
+                    form,
+                    Form::Imperfect | Form::Jussive
+                )
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                 .then(|| pausal_imperfect_plural_variants(&text))
                 .unwrap_or_default();
@@ -514,6 +773,173 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Zero)
                 .then(|| pe_aleph_wayyiqtol_pausal_variant(&text))
                 .flatten();
+                // Stative (e-class) Qal perfect 3ms twin: qāṭēl beside qāṭal —
+                // ṭāmēʾ טָמֵא, mālēʾ מָלֵא, yārēʾ יָרֵא.
+                let qal_stative_perfect = (binyan == Binyan::Qal
+                    && form == Form::Perfect
+                    && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular))
+                .then(|| perfect_stative_tsere_variant(&text))
+                .flatten();
+                // Tsere-kept twin of the Hiphil short wayyiqtol: nesiga is not
+                // universal — וַיַּגֵּד beside וַיַּגֶּד, וַיַּקְרֵב, וַיַּשְׁלֵךְ.
+                let hiphil_wayyiqtol_tsere = (binyan == Binyan::Hiphil
+                    && form == Form::Wayyiqtol
+                    && imperfect_suffix_kind(pgn) == Suffix::Zero)
+                .then(|| final_segol_to_tsere_variant(&text))
+                .flatten();
+                // Long (imperfect-shaped) twin of the III-He jussive: the
+                // apocope is not obligatory — יַעֲשֶׂה, יִהְיֶה are tagged
+                // jussive in context.
+                let jussive_long = (form == Form::Jussive
+                    && root.lamed() == letter::HE
+                    && imperfect_suffix_kind(pgn) == Suffix::Zero)
+                .then(|| {
+                    let (t, _) = generate_one(root, binyan, Form::Imperfect, pgn, false);
+                    (t != text).then_some(t)
+                })
+                .flatten();
+                // Long twin of the short-based wayyiqtol: the 1cs regularly
+                // keeps the long form (וָאֶרְאֶה beside וָאֵרֶא), and the
+                // III-He third persons attest it too (וַיַּכֶּה, וַיַּעֲשֶׂה).
+                let wayyiqtol_long = (form == Form::Wayyiqtol
+                    && (pgn.person == Some(Person::First) || root.lamed() == letter::HE)
+                    && imperfect_suffix_kind(pgn) == Suffix::Zero)
+                .then(|| {
+                    let (t, _) = build_wayyiqtol_long(root, binyan, pgn, false);
+                    (t != text).then_some(t)
+                })
+                .flatten();
+                // Cohortative-shaped 1cs/1cp wayyiqtol twin (the paragogic -â
+                // under the consecutive vav): וָאֹמְרָה, וָאֶתְּנָה, וָאֶשְׁלְחָה.
+                let wayyiqtol_cohortative = (form == Form::Wayyiqtol
+                    && pgn.person == Some(Person::First))
+                .then(|| {
+                    let (t, att) = generate_one(root, binyan, Form::Cohortative, pgn, false);
+                    att.then(|| {
+                        let mut seq = hebrew::parse_pointed(&t);
+                        let aleph = seq.first().is_some_and(|c| c.letter == letter::ALEF);
+                        if !aleph && let Some(first) = seq.first_mut() {
+                            first.dagesh = true;
+                        }
+                        seq.insert(
+                            0,
+                            Cons::new(letter::VAV).with_vowel(if aleph {
+                                Vowel::Qamats
+                            } else {
+                                Vowel::Patah
+                            }),
+                        );
+                        hebrew::render(&seq)
+                    })
+                })
+                .flatten();
+                // Hollow Niphal participle ms — identical to the contracted
+                // perfect 3ms (nāḵôn נָכוֹן).
+                let hollow_niphal_participle = (binyan == Binyan::Niphal
+                    && root.has(Gizra::Hollow)
+                    && form == Form::ParticipleActive
+                    && pgn == Pgn::gn(Gender::Masculine, Number::Singular))
+                .then(|| {
+                    hollow_niphal_perfect_variant(
+                        root,
+                        Pgn::new(Person::Third, Gender::Masculine, Number::Singular),
+                    )
+                    .map(|seq| hebrew::render(&seq))
+                })
+                .flatten();
+                // Patah twin of the hollow short wayyiqtol: the retracted
+                // qamats (Qal וַיָּסָר) and the î-class nesiga segol (Hiphil
+                // וַיָּסֶר) both have an attested patah grade — וַיָּסַר for
+                // either binyan, וַיָּצַר.
+                let hollow_wayyiqtol_patah = (matches!(binyan, Binyan::Qal | Binyan::Hiphil)
+                    && root.has(Gizra::Hollow)
+                    && form == Form::Wayyiqtol
+                    && imperfect_suffix_kind(pgn) == Suffix::Zero)
+                .then(|| hollow_wayyiqtol_patah_variant(&text))
+                .flatten();
+                // ô-class hollow Qal perfect twin: the stative holam grade —
+                // ṭôḇ (טוֹב), bōšû (בֹּשׁוּ) — beside the default qām qamats.
+                let hollow_perfect_holam = (binyan == Binyan::Qal
+                    && root.has(Gizra::Hollow)
+                    && form == Form::Perfect
+                    && perfect_suffix_kind(pgn) != Suffix::Consonantal)
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let c = seq.iter_mut().find(|c| c.vowel == Some(Vowel::Qamats))?;
+                    c.vowel = Some(Vowel::Holam);
+                    Some(hebrew::render(&seq))
+                })
+                .flatten();
+                // Stative Qal active-participle ms twin: the e-class verbs use
+                // the perfect-shaped qāṭēl as their participle — yārēʾ יָרֵא.
+                let qal_stative_participle = (binyan == Binyan::Qal
+                    && form == Form::ParticipleActive
+                    && pgn == Pgn::gn(Gender::Masculine, Number::Singular)
+                    && !root.has(Gizra::Hollow)
+                    && root.lamed() != letter::HE)
+                .then(|| {
+                    let mut c1 = rad(root.pe(), 1).with_vowel(Vowel::Qamats);
+                    if hebrew::is_begedkefet(root.pe()) {
+                        c1 = c1.with_dagesh();
+                    }
+                    Some(hebrew::render(&[
+                        c1,
+                        rad(root.ayin(), 2).with_vowel(Vowel::Tsere),
+                        rad(root.lamed(), 3),
+                    ]))
+                })
+                .flatten();
+                // III-He apocopated imperative 2ms twin — Piel ṣaw צַו beside
+                // the full צַוֵּה.
+                let lamed_he_imp_apoc = (root.lamed() == letter::HE
+                    && form == Form::Imperative
+                    && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular))
+                .then(|| lamed_he_imperative_apocope_variant(&text))
+                .flatten();
+                // III-He Hiphil apocopated segholate imperative 2ms — herep̄
+                // הֶרֶף (רפה), hereḇ הֶרֶב (רבה) beside the full הַרְפֵּה.
+                let hiphil_imp_segholate = (binyan == Binyan::Hiphil
+                    && root.lamed() == letter::HE
+                    && form == Form::Imperative
+                    && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular))
+                .then(|| {
+                    Some(hebrew::render(&[
+                        Cons::new(letter::HE).with_vowel(Vowel::Segol),
+                        rad(root.pe(), 1).with_vowel(Vowel::Segol),
+                        rad(root.ayin(), 2),
+                    ]))
+                })
+                .flatten();
+                // Feminine-shaped Qal infinitive-construct twin: the -â
+                // infinitives yirʾâ (לְיִרְאָה), ʾahăḇâ (לְאַהֲבָה).
+                let qal_inf_fem: Vec<String> = (binyan == Binyan::Qal
+                    && form == Form::InfinitiveConstruct
+                    && root.lamed() != letter::HE)
+                .then(|| {
+                    let (v1, v2) = if hebrew::is_guttural(root.ayin()) {
+                        (Vowel::Patah, Vowel::HatafPatah)
+                    } else {
+                        (Vowel::Hiriq, Vowel::Sheva)
+                    };
+                    // The o-grade twin with C1 qamats(-qatan) is also attested:
+                    // ṭomʾâ לְטָמְאָה beside the i-grade yirʾâ לְיִרְאָה.
+                    [(v1, v2), (Vowel::Qamats, v2)]
+                        .into_iter()
+                        .map(|(v1, v2)| {
+                            let mut c1 = rad(root.pe(), 1).with_vowel(v1);
+                            if hebrew::is_begedkefet(root.pe()) {
+                                c1 = c1.with_dagesh();
+                            }
+                            hebrew::render(&[
+                                c1,
+                                rad(root.ayin(), 2).with_vowel(v2),
+                                rad(root.lamed(), 3).with_vowel(Vowel::Qamats),
+                                Cons::new(letter::HE),
+                            ])
+                        })
+                        .collect()
+                })
+                .unwrap_or_default();
                 // Pausal twin of the o-class hollow wayyiqtol: stress
                 // retraction shortened the holam to qamats (וַיָּמָת), but in
                 // pause the holam survives — וַיָּמֹת, וַיָּנֹס.
@@ -523,6 +949,27 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && form == Form::Wayyiqtol
                     && imperfect_suffix_kind(pgn) == Suffix::Zero)
                 .then(|| hollow_wayyiqtol_pausal_variant(&text))
+                .flatten();
+                // III-guttural fs segolate participle patah twin: šōmaʿaṯ
+                // שֹׁמַעַת beside שֹׁמֶעֶת.
+                let lamed_guttural_fs_ptcp = (matches!(
+                    form,
+                    Form::ParticipleActive | Form::ParticiplePassive
+                ) && pgn == Pgn::gn(Gender::Feminine, Number::Singular)
+                    && matches!(root.lamed(), letter::HET | letter::AYIN))
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let n = seq.len();
+                    (n >= 3
+                        && seq[n - 1].letter == letter::TAV
+                        && seq[n - 2].vowel == Some(Vowel::Segol)
+                        && seq[n - 3].vowel == Some(Vowel::Segol))
+                    .then(|| {
+                        seq[n - 2].vowel = Some(Vowel::Patah);
+                        seq[n - 3].vowel = Some(Vowel::Patah);
+                        hebrew::render(&seq)
+                    })
+                })
                 .flatten();
                 // Hollow Qal participle twins: the stative tsere class (mēṯ
                 // מֵת, mēṯîm מֵתִים) beside the default qām, plus the fs
@@ -594,6 +1041,135 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && perfect_suffix_kind(pgn) == Suffix::Consonantal)
                 .then(|| lamed_he_perfect_tsere_variant(&text))
                 .flatten();
+                // The Hiphil's reverse twin: built tsere-yod (הִכֵּיתָ), the
+                // hiriq-yod spelling also attested (הִכִּיתָ).
+                let lamed_he_perf_hiriq = (binyan == Binyan::Hiphil
+                    && form == Form::Perfect
+                    && root.lamed() == letter::HE
+                    && perfect_suffix_kind(pgn) == Suffix::Consonantal)
+                .then(|| lamed_he_perfect_hiriq_variant(&text))
+                .flatten();
+                // Patah-theme Piel/Hithpael perfect 3ms twin (בֵּרַךְ, חִשַּׁב,
+                // טִהַר, הִתְחַזַּק).
+                let piel_perf_patah = (matches!(binyan, Binyan::Piel | Binyan::Hithpael)
+                    && form == Form::Perfect
+                    && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular))
+                .then(|| piel_perfect_patah_theme_variant(&text))
+                .flatten();
+                // Segol-prefix III-He Hiphil perfect twin (הֶגְלָה).
+                let hiphil_perf_segol = (binyan == Binyan::Hiphil
+                    && form == Form::Perfect
+                    && root.lamed() == letter::HE)
+                .then(|| hiphil_perfect_segol_prefix_variant(&text))
+                .flatten();
+                // Short III-He imperfect 3fp/2fp twin (תִּהְיֶיןָ).
+                let lamed_he_fp_short = (root.lamed() == letter::HE
+                    && matches!(form, Form::Imperfect | Form::Jussive)
+                    && pgn.number == Some(Number::Plural)
+                    && pgn.gender == Some(Gender::Feminine))
+                .then(|| lamed_he_imperfect_fp_short_variant(&text))
+                .flatten();
+                // Pausal-tsere III-He twin (תְּגַלֵּה beside תְּגַלֶּה).
+                let lamed_he_pausal = (root.lamed() == letter::HE
+                    && matches!(
+                        form,
+                        Form::Imperfect | Form::Jussive | Form::Cohortative | Form::Imperative
+                    ))
+                .then(|| lamed_he_pausal_tsere_variant(&text))
+                .flatten();
+                // Niphal imperfect 1cs hiriq preformative twin (אִדָּרֵשׁ).
+                let niphal_1cs_hiriq = (binyan == Binyan::Niphal
+                    && matches!(form, Form::Imperfect | Form::Cohortative)
+                    && pgn.person == Some(Person::First)
+                    && pgn.number == Some(Number::Singular))
+                .then(|| niphal_1cs_hiriq_variant(&text))
+                .flatten();
+                // Hophal u-grade preformative twin (מֻפְקָד, הֻשְׁלַךְ).
+                let hophal_qubuts = (binyan == Binyan::Hophal)
+                    .then(|| hophal_qubuts_variant(&text))
+                    .flatten();
+                // I-guttural Niphal perfect i-grade twin (נִהְיָה, נִהְיְתָה).
+                let niphal_pe_guttural_hiriq = (binyan == Binyan::Niphal
+                    && form == Form::Perfect
+                    && root.has(Gizra::PeGuttural))
+                .then(|| pe_guttural_niphal_hiriq_variant(&text))
+                .flatten();
+                // חיה/היה short imperfect segol-prefix twin (וַיֶּחִי).
+                let chayah_segol = ((is_chayah(root) || is_hayah(root))
+                    && binyan == Binyan::Qal
+                    && matches!(form, Form::Jussive | Form::Wayyiqtol)
+                    && imperfect_suffix_kind(pgn) == Suffix::Zero)
+                .then(|| sheva_prefix_segol_variant(&text))
+                .flatten();
+                // שחה Hithpael: the defective infinitive (לְהִשְׁתַּחֲות) and the
+                // pausal short wayyiqtol/jussive (וַיִּשְׁתָּחוּ).
+                let shachah_inf_defective = (is_shachah(root)
+                    && binyan == Binyan::Hithpael
+                    && form == Form::InfinitiveConstruct)
+                .then(|| shachah_inf_defective_variant(&text))
+                .flatten();
+                let shachah_pausal = (is_shachah(root)
+                    && binyan == Binyan::Hithpael
+                    && matches!(form, Form::Jussive | Form::Wayyiqtol)
+                    && imperfect_suffix_kind(pgn) == Suffix::Zero)
+                .then(|| shachah_pausal_qamats_variant(&text))
+                .flatten();
+                // Pausal segholate infinitive twin (לָשָׁבֶת).
+                let segholate_inf_pausal = (binyan == Binyan::Qal
+                    && form == Form::InfinitiveConstruct)
+                .then(|| segholate_inf_pausal_variant(&text))
+                .flatten();
+                // Piel infinitive absolute tsere twin: beside qaṭṭōl the
+                // construct-shaped qaṭṭēl serves as the absolute (mahēr מַהֵר).
+                let piel_inf_abs_tsere = (binyan == Binyan::Piel
+                    && form == Form::InfinitiveAbsolute)
+                .then(|| {
+                    let (t, _) =
+                        generate_one(root, binyan, Form::InfinitiveConstruct, pgn, false);
+                    (t != text).then_some(t)
+                })
+                .flatten();
+                // III-He cohortative: the -â paragogic cannot attach to the -eh
+                // stem, so the plain imperfect form serves as the cohortative
+                // (וְנַעֲלֶה is tagged cohortative).
+                let lamed_he_cohortative = (form == Form::Cohortative
+                    && root.lamed() == letter::HE)
+                .then(|| {
+                    let (t, _) = generate_one(root, binyan, Form::Imperfect, pgn, false);
+                    (t != text).then_some(t)
+                })
+                .flatten();
+                // Geminate Hiphil participle (מֵרַע, מְרֵעִים) and Niphal
+                // imperfect (יִסַּב, יִסַּבּוּ) contracted twins.
+                let geminate_hiphil_ptcp: Vec<String> = (binyan == Binyan::Hiphil
+                    && form == Form::ParticipleActive
+                    && root.ayin() == root.lamed())
+                .then(|| geminate_hiphil_participle_variants(root, pgn))
+                .unwrap_or_default();
+                let geminate_niphal_impf = (binyan == Binyan::Niphal
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+                    && root.ayin() == root.lamed())
+                .then(|| geminate_niphal_imperfect_variant(root, pgn))
+                .flatten()
+                .map(|t| {
+                    if form == Form::Wayyiqtol {
+                        let mut seq = hebrew::parse_pointed(&t);
+                        if let Some(first) = seq.first_mut() {
+                            first.dagesh = true;
+                        }
+                        seq.insert(0, Cons::new(letter::VAV).with_vowel(Vowel::Patah));
+                        hebrew::render(&seq)
+                    } else {
+                        t
+                    }
+                });
+                // Doubly-weak hollow III-aleph Hiphil perfect (הֵבֵאתָ, וַהֲבֵאתֶם).
+                let hollow_lamed_aleph_perf: Vec<String> = (binyan == Binyan::Hiphil
+                    && form == Form::Perfect
+                    && root.has(Gizra::Hollow)
+                    && root.lamed() == letter::ALEF)
+                .then(|| hollow_lamed_aleph_hiphil_perfect_variants(root, pgn))
+                .unwrap_or_default();
                 // I-yod Qal perfect heavy-afformative hiriq twin: yᵊraštem
                 // יְרַשְׁתֶּם beside the attested i-grade yᵊrištem (וִירִשְׁתֶּם,
                 // the וִי- conjunction sandhi peeled by the parser).
@@ -688,14 +1264,27 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 {
                     // Nun-retained Qal inf-construct (נְפֹל beside the dropped פֹּל).
                     let mut v = vec![hebrew::render(&pe_nun_inf_construct_retained(root))];
+                    // III-aleph (נשא): beside the tsere-on-C2 שֵׂאת the reduced
+                    // grade śᵊʾēṯ שְׂאֵת is the common spelling.
+                    if root.lamed() == letter::ALEF {
+                        v.push(hebrew::render(&[
+                            rad(root.ayin(), 2).with_vowel(Vowel::Sheva),
+                            rad(root.lamed(), 3).with_vowel(Vowel::Tsere),
+                            Cons::new(letter::TAV),
+                        ]));
+                    }
                     // נתן clips both nuns: the inf-construct is tēṯ תֵּת (לָתֵת).
                     // Emit it with and without the word-initial dagesh lene so
                     // both the bare and the proclitic-peeled surfaces match.
                     if root.ayin() == letter::TAV && root.lamed() == letter::NUN {
                         let t1 = rad(letter::TAV, 2).with_vowel(Vowel::Tsere);
+                        // The tsere lowers to segol before a maqqef (לָתֶת־).
+                        let t1s = rad(letter::TAV, 2).with_vowel(Vowel::Segol);
                         let t3 = Cons::new(letter::TAV);
                         v.push(hebrew::render(&[t1.with_dagesh(), t3]));
                         v.push(hebrew::render(&[t1, t3]));
+                        v.push(hebrew::render(&[t1s.with_dagesh(), t3]));
+                        v.push(hebrew::render(&[t1s, t3]));
                     }
                     v
                 } else if binyan == Binyan::Qal
@@ -718,6 +1307,35 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 {
                     // -â feminine participle (יוֹלֵדָה) beside the segolate יֹלֶדֶת.
                     vec![hebrew::render(&qal_participle_fs_a_variant(root))]
+                } else if binyan == Binyan::Piel
+                    && form == Form::InfinitiveConstruct
+                    && root.pe() == letter::SHIN
+                    && root.ayin() == letter::RESH
+                    && root.lamed() == letter::TAV
+                {
+                    // שרת's lexicalized Piel infinitive šārēṯ (לְשָׁרֵת): the resh
+                    // refuses the doubling and the first syllable lengthens.
+                    vec![hebrew::render(&[
+                        rad(letter::SHIN, 1).with_vowel(Vowel::Qamats),
+                        rad(letter::RESH, 2).with_vowel(Vowel::Tsere),
+                        Cons::new(letter::TAV),
+                    ])]
+                } else if binyan == Binyan::Hiphil
+                    && form == Form::InfinitiveConstruct
+                    && root.ayin() == root.lamed()
+                {
+                    // Geminate Hiphil inf-construct hāCēC (הָפֵר, הָסֵב) and the
+                    // a-grade a final guttural takes (הָרַע).
+                    let theme = if hebrew::is_guttural(root.lamed()) {
+                        Vowel::Patah
+                    } else {
+                        Vowel::Tsere
+                    };
+                    vec![hebrew::render(&[
+                        Cons::new(letter::HE).with_vowel(Vowel::Qamats),
+                        rad(root.pe(), 1).with_vowel(theme),
+                        rad(root.lamed(), 3),
+                    ])]
                 } else {
                     Vec::new()
                 };
@@ -748,6 +1366,17 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         (Binyan::Piel | Binyan::Pual | Binyan::Hithpael, Form::Perfect) => {
                             derived_perfect_object_suffixes(&text)
                         }
+                        (Binyan::Hiphil, Form::Perfect) => {
+                            // The bare 3ms text and the hollow î alternants
+                            // (הֵבִיא) are all suffix hosts.
+                            let mut v = hiphil_perfect_object_suffixes(&text);
+                            if root.has(Gizra::Hollow) {
+                                for base in hollow_hiphil_otav_perfect(root, pgn) {
+                                    v.extend(hiphil_perfect_object_suffixes(&base));
+                                }
+                            }
+                            v
+                        }
                         _ => Vec::new(),
                     }
                 } else if matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
@@ -770,15 +1399,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     )
                 {
                     perfect_subject_object_suffixes(&text, pgn, root, binyan)
-                } else if matches!(form, Form::ParticipleActive | Form::ParticiplePassive)
-                    && pgn.gender == Some(Gender::Masculine)
-                {
+                } else if matches!(form, Form::ParticipleActive | Form::ParticiplePassive) {
                     // The participle is the noun-like host; it takes the
                     // nominal suffix set.
-                    if pgn.number == Some(Number::Singular) {
+                    if pgn == Pgn::gn(Gender::Masculine, Number::Singular) {
                         participle_object_suffixes(&text)
-                    } else if pgn.number == Some(Number::Plural) {
+                    } else if pgn == Pgn::gn(Gender::Masculine, Number::Plural) {
                         participle_mp_object_suffixes(&text)
+                    } else if pgn == Pgn::gn(Gender::Feminine, Number::Plural) {
+                        participle_fp_object_suffixes(&text)
                     } else {
                         Vec::new()
                     }
@@ -794,6 +1423,11 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular)
                 {
                     hiphil_imperative_object_suffixes(&text)
+                } else if matches!(binyan, Binyan::Piel | Binyan::Hithpael)
+                    && form == Form::Imperative
+                    && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular)
+                {
+                    piel_imperative_object_suffixes(&text)
                 } else if form == Form::Imperative
                     && matches!(
                         (pgn.person, pgn.gender, pgn.number),
@@ -805,7 +1439,31 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             | (Some(Person::Second), Some(Gender::Feminine), Some(Number::Singular))
                     )
                 {
-                    imperfect_vocalic_object_suffixes(&text)
+                    let mut v = imperfect_vocalic_object_suffixes(&text);
+                    // The Qal 2mp host also appears in its theme-restored
+                    // (pausal-style) grade — C1 sheva, C2 qamats — under the
+                    // suffix: šᵊmāʕûnî שְׁמָעוּנִי beside שִׁמְעוּנִי.
+                    if binyan == Binyan::Qal
+                        && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Plural)
+                        && !matches!(
+                            root.lamed(),
+                            letter::HE | letter::ALEF
+                        )
+                        && !root.has(Gizra::Hollow)
+                    {
+                        let mut c1 = rad(root.pe(), 1).with_vowel(Vowel::Sheva);
+                        if hebrew::is_begedkefet(root.pe()) {
+                            c1 = c1.with_dagesh();
+                        }
+                        let restored = hebrew::render(&[
+                            c1,
+                            rad(root.ayin(), 2).with_vowel(Vowel::Qamats),
+                            rad(root.lamed(), 3),
+                            oshureq(),
+                        ]);
+                        v.extend(imperfect_vocalic_object_suffixes(&restored));
+                    }
+                    v
                 } else {
                     Vec::new()
                 };
@@ -914,12 +1572,52 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_he_hiphil_apoc,
                     pe_aleph_patah,
                     pe_aleph_pausal,
+                    qal_stative_perfect,
+                    qal_stative_participle,
+                    hollow_perfect_holam,
+                    hollow_wayyiqtol_patah,
+                    lamed_he_imp_apoc,
+                    hiphil_imp_segholate,
+                    hiphil_wayyiqtol_tsere,
+                    jussive_long,
+                    wayyiqtol_long,
+                    wayyiqtol_cohortative,
+                    hollow_niphal_participle,
                     hollow_wayyiqtol_pausal,
                     lamed_he_doubled_apoc,
                     pe_yod_as_pe_nun,
                     pe_yod_hiphil_defective,
                     pe_yod_perf_hiriq,
                     lamed_he_perf_tsere,
+                    lamed_he_perf_hiriq,
+                    piel_perf_patah,
+                    hiphil_perf_segol,
+                    lamed_he_fp_short,
+                    lamed_he_pausal,
+                    niphal_1cs_hiriq,
+                    lamed_aleph_derived_perf,
+                    qal_a_theme_pausal,
+                    lamed_aleph_impf_qamats,
+                    piel_inf_abs_lamed_he,
+                    hollow_hiphil_inf_abs,
+                    halak_retained,
+                    hiphil_ptcp_reduced,
+                    wayyiqtol_1cs_short,
+                    hollow_qal_perf_2fs,
+                    lamed_guttural_fs_ptcp,
+                    niphal_wayy_patah,
+                    lamed_he_inf_abs_vav,
+                    pual_ptcp_qamats,
+                    hophal_qubuts,
+                    niphal_pe_guttural_hiriq,
+                    chayah_segol,
+                    shachah_inf_defective,
+                    shachah_pausal,
+                    segholate_inf_pausal,
+                    piel_inf_abs_tsere,
+                    lamed_he_cohortative,
+                    geminate_niphal_impf,
+                    geminate_hiphil_impf,
                 ]
                 .into_iter()
                 .flatten()
@@ -941,6 +1639,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(qal_iguttural_silent)
                     .chain(pe_yod_niphal_vav)
                     .chain(hollow_participle)
+                    .chain(geminate_hiphil_ptcp)
+                    .chain(hollow_lamed_aleph_perf)
+                    .chain(qal_inf_fem)
+                    .chain(pe_guttural_a_silent)
+                    .chain(geminate_hiphil_perf_otav)
+                    .chain(hollow_hophal_perf)
                 {
                     forms.push(VerbForm {
                         binyan,
@@ -1026,6 +1730,21 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             attested: attested_fs,
                             object_suffix: None,
                         });
+                        // The o-grade twin with C1 qamats(-qatan) — zoḵrâ
+                        // זָכְרָה beside the i-grade šiḵḇâ שִׁכְבָה.
+                        if binyan == Binyan::Qal
+                            && seq.first().is_some_and(|c| c.vowel == Some(Vowel::Hiriq))
+                        {
+                            seq[0].vowel = Some(Vowel::Qamats);
+                            forms.push(VerbForm {
+                                binyan,
+                                form,
+                                pgn,
+                                text: hebrew::render(&seq),
+                                attested: attested_fs,
+                                object_suffix: None,
+                            });
+                        }
                     }
                 }
                 // Tsere twin for the resh-final Piel/Hithpael perfect 3ms: the
@@ -1069,6 +1788,26 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             attested: c_attested,
                             object_suffix: None,
                         });
+                    }
+                    // The hollow Qal alternants (בָּאִים) live outside the strong
+                    // builder; derive their constructs too (בָּאֵי).
+                    if binyan == Binyan::Qal && root.has(Gizra::Hollow) {
+                        for alt in hollow_participle_twins(root, pgn)
+                            .into_iter()
+                            .chain(hollow_qal_participle_variant(&hebrew::render(&seq)))
+                        {
+                            let aseq = hebrew::parse_pointed(&alt);
+                            if let Some(cseq) = participle_mp_construct(&aseq) {
+                                forms.push(VerbForm {
+                                    binyan,
+                                    form,
+                                    pgn,
+                                    text: hebrew::render(&cseq),
+                                    attested: c_attested,
+                                    object_suffix: None,
+                                });
+                            }
+                        }
                     }
                 }
                 // Construct-state twin for the masculine-singular III-He
@@ -1423,7 +2162,7 @@ fn pgns_for_form(form: Form) -> &'static [Pgn] {
         Form::Imperfect | Form::Wayyiqtol => IMPERFECT_PGNS,
         Form::Imperative => IMPERATIVE_PGNS,
         Form::Cohortative => COHORTATIVE_PGNS,
-        Form::Jussive => JUSSIVE_PGNS,
+        Form::Jussive => JUSSIVE_PARADIGM_PGNS,
         Form::InfinitiveConstruct | Form::InfinitiveAbsolute => {
             const NONE: &[Pgn] = &[Pgn::none()];
             NONE
@@ -1464,6 +2203,28 @@ fn build_wayyiqtol(
     force_a_theme: bool,
 ) -> (String, bool) {
     let short = JUSSIVE_PGNS.contains(&pgn) || pgn.person == Some(Person::First);
+    build_wayyiqtol_with(root, binyan, pgn, force_a_theme, short)
+}
+
+/// Long (imperfect-based) wayyiqtol, for the persons where [`build_wayyiqtol`]
+/// would default to the short jussive base — the non-apocopated twin (וָאֶרְאֶה,
+/// וַיַּכֶּה).
+fn build_wayyiqtol_long(
+    root: &Root,
+    binyan: Binyan,
+    pgn: Pgn,
+    force_a_theme: bool,
+) -> (String, bool) {
+    build_wayyiqtol_with(root, binyan, pgn, force_a_theme, false)
+}
+
+fn build_wayyiqtol_with(
+    root: &Root,
+    binyan: Binyan,
+    pgn: Pgn,
+    force_a_theme: bool,
+    short: bool,
+) -> (String, bool) {
     let base_form = if short {
         Form::Jussive
     } else {
@@ -1495,8 +2256,10 @@ fn build_wayyiqtol(
 
     // Hiphil short-wayyiqtol nesiga: the jussive's tsere theme retracts to
     // segol under the consecutive vav — wayyaggēḏ → וַיַּגֶּד, וַיֹּסֶף,
-    // וַיּוֹלֶד. III-aleph keeps the tsere (the quiescent aleph wants the long
-    // vowel), and the hollow class is handled above.
+    // וַיּוֹלֶד. A final guttural prefers the a-class instead: the tsere (and
+    // its furtive patah) collapse to a plain patah — wayyôšaʿ וַיּוֹשַׁע.
+    // III-aleph keeps the tsere (the quiescent aleph wants the long vowel),
+    // and the hollow class is handled above.
     if short
         && binyan == Binyan::Hiphil
         && !root.has(Gizra::Hollow)
@@ -1504,7 +2267,17 @@ fn build_wayyiqtol(
         && let Some(i) = radical_idx(&seq, 2)
         && seq[i].vowel == Some(Vowel::Tsere)
     {
-        seq[i].vowel = Some(Vowel::Segol);
+        let guttural_final = seq
+            .last()
+            .is_some_and(|c| matches!(c.letter, letter::HET | letter::AYIN));
+        if guttural_final {
+            seq[i].vowel = Some(Vowel::Patah);
+            if let Some(last) = seq.last_mut() {
+                last.vowel = None; // the furtive patah goes with the tsere
+            }
+        } else {
+            seq[i].vowel = Some(Vowel::Segol);
+        }
     }
 
     // I-Aleph nesiga: the imperfect's stressed C2 patah (yōʔmar) retracts to
@@ -2255,7 +3028,7 @@ fn build_imperative(root: &Root, binyan: Binyan, pgn: Pgn, force_a_theme: bool) 
     // C1
     let v1 = match binyan {
         Binyan::Qal => Sheva,      // qəṭol
-        Binyan::Niphal => Sheva,   // hiqqāṭēl — C1 sheva (silent under dagesh)
+        Binyan::Niphal => Qamats,  // hiqqāṭēl — doubled C1 carries the qamats
         Binyan::Piel => Patah,     // qaṭṭēl
         Binyan::Hithpael => Patah, // hitqaṭṭēl
         Binyan::Hiphil => Sheva,   // haqṭēl
@@ -2426,16 +3199,27 @@ fn build_inf_absolute(root: &Root, binyan: Binyan) -> Vec<Cons> {
         Binyan::Hiphil => vec![
             Cons::new(letter::HE).with_vowel(Patah),
             rad(root.pe(), 1).with_vowel(Sheva),
-            rad(root.ayin(), 2).with_vowel(Tsere),
+            inf_abs_c2_lene(root),
             rad(root.lamed(), 3),
         ],
         Binyan::Hophal => vec![
             Cons::new(letter::HE).with_vowel(QamatsQatan),
             rad(root.pe(), 1).with_vowel(Sheva),
-            rad(root.ayin(), 2).with_vowel(Tsere),
+            inf_abs_c2_lene(root),
             rad(root.lamed(), 3),
         ],
     }
+}
+
+/// Hiphil/Hophal inf-abs C2: C1's silent sheva closes the prefix syllable, so
+/// a begedkefet C2 begins the next syllable with a dagesh lene — harbēh
+/// (הַרְבֵּה), not הַרְבֵה.
+fn inf_abs_c2_lene(root: &Root) -> Cons {
+    let mut c2 = rad(root.ayin(), 2).with_vowel(Vowel::Tsere);
+    if hebrew::is_begedkefet(root.ayin()) && !hebrew::is_guttural(root.pe()) {
+        c2 = c2.with_dagesh();
+    }
+    c2
 }
 
 // ----- Participles -----------------------------------------------------------
@@ -3016,6 +3800,32 @@ fn apply_gizra(
         attested = true;
     }
 
+    // יכל "to be able" — its Qal imperfect is unique: a û theme sits on the
+    // preformative with the radical yod lost entirely — yûḵal (יוּכַל), tûḵal
+    // (תּוּכַל), ʾûḵal (אוּכַל), plural yûḵəlû (יוּכְלוּ). Rebuild from the
+    // preformative letter + shureq + C2/C3, keeping the strong build's
+    // person/gender suffix tail.
+    if is_yakol(root)
+        && binyan == Binyan::Qal
+        && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+    {
+        let pl = seq.first().map(|c| c.letter).unwrap_or(letter::YOD);
+        if let Some(c3) = radical_idx(&seq, 3) {
+            let tail: Vec<Cons> = seq[c3..].to_vec();
+            let mut new = vec![Cons::new(pl), Cons::new(letter::VAV).with_dagesh()];
+            new.push(rad(root.ayin(), 2).with_vowel(
+                if imperfect_suffix_kind(pgn) == Suffix::Vocalic {
+                    Vowel::Sheva
+                } else {
+                    Vowel::Patah
+                },
+            ));
+            new.extend(tail);
+            seq = new;
+            attested = true;
+        }
+    }
+
     // בושׁ "to be ashamed" — corrected as the ô-class hollow in apply_hollow,
     // but its preformative is tsere not qamats (yēḇôš יֵבוֹשׁ, yēḇōšû יֵבֹשׁוּ),
     // and its perfect carries holam on C1 rather than qamats (bōšû בֹשׁוּ).
@@ -3110,6 +3920,20 @@ fn apply_gizra(
                 seq.push(Cons::new(letter::TAV));
                 attested = true;
             }
+        } else if form == Form::Jussive
+            && imperfect_suffix_kind(pgn) == Suffix::Zero
+        {
+            // The apocopated jussive/wayyiqtol 3ms — yištáḥû (וַיִּשְׁתַּחוּ):
+            // the he drops and the etymological vav radical survives as a
+            // word-final shureq carrying the syllable. The derived-stem
+            // apocope arm has already removed the he and bared C2; rewrite
+            // the tail as ḥet + shureq.
+            if let Some(c2) = radical_idx(&seq, 2) {
+                seq[c2].vowel = None;
+                seq.truncate(c2 + 1);
+                seq.push(Cons::new(letter::VAV).with_dagesh());
+                attested = true;
+            }
         }
     }
 
@@ -3180,6 +4004,12 @@ fn is_yare(root: &Root) -> bool {
     root.pe() == letter::YOD && root.ayin() == letter::RESH && root.lamed() == letter::ALEF
 }
 
+/// יכל "to be able" — a I-yod root whose Qal imperfect is suppletive-looking:
+/// the û theme on the preformative with the radical yod lost — yûḵal (יוּכַל).
+fn is_yakol(root: &Root) -> bool {
+    root.pe() == letter::YOD && root.ayin() == letter::KAF && root.lamed() == letter::LAMED
+}
+
 /// יטב "to be good/well" — a true I-Yod root (not an original I-Vav). Unlike
 /// the I-Vav majority (yēšēḇ), the yod is retained as a hiriq-yod mater and the
 /// theme lowers to patah: yîṭaḇ (יִיטַב), wayyîṭaḇ (וַיִּיטַב), rather than the
@@ -3228,11 +4058,19 @@ fn apply_iyod_segholate_infinitive(seq: &mut Vec<Cons>) {
     if let Some(idx) = radical_idx(seq, 1) {
         seq.remove(idx);
     }
+    // A guttural C3 prefers the a-class segolate pattern — dáʿaṯ (דַּעַת,
+    // ידע), not the e-class šeḇeṯ.
+    let guttural_c3 = radical_idx(seq, 3).is_some_and(|i| hebrew::is_guttural(seq[i].letter));
+    let v = if guttural_c3 {
+        Vowel::Patah
+    } else {
+        Vowel::Segol
+    };
     if let Some(i) = radical_idx(seq, 2) {
-        seq[i].vowel = Some(Vowel::Segol);
+        seq[i].vowel = Some(v);
     }
     if let Some(i) = radical_idx(seq, 3) {
-        seq[i].vowel = Some(Vowel::Segol);
+        seq[i].vowel = Some(v);
     }
     seq.push(Cons::new(letter::TAV));
 }
@@ -3252,6 +4090,14 @@ fn apply_hithpael_metathesis(seq: &mut Vec<Cons>, _root: &Root) -> bool {
     }
 
     let c1 = seq[c1_idx].letter;
+    // Dental assimilation: the infix tav assimilates fully into a dental C1
+    // (ט/ד/ת) as a forte dagesh — hiṭṭahēr הִטַּהֵר, middabbēr מִטַּהֵר-style,
+    // not *hiṯṭahēr.
+    if matches!(c1, letter::TET | letter::DALET | letter::TAV) {
+        seq.remove(t_idx);
+        seq[t_idx].dagesh = true;
+        return true;
+    }
     if !hebrew::is_sibilant(c1) {
         return false;
     }
@@ -3310,6 +4156,15 @@ fn apply_pe_nun(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, _p
     // We choose the "dropped nun" form as the typical pattern.
 
     let mut changed = false;
+    // A guttural (or resh) C2 refuses the assimilation dagesh, so the nun stays
+    // and the strong shape stands: yinhaḡ יִנְהַג, yinʿar — not *yihaḡ. The one
+    // exception is the Niphal of a ḥet root, where assimilation with virtual
+    // doubling is the attested shape (niḥam נִחַם, niḥamtî נִחַמְתִּי).
+    if (hebrew::is_guttural(root.ayin()) || root.ayin() == letter::RESH)
+        && !(binyan == Binyan::Niphal && root.ayin() == letter::HET)
+    {
+        return false;
+    }
     // C1 is the radical-1 slot — uniquely identified by its Role tag, so we
     // don't confuse it with the 1cp prefix nun or the 3fp/2fp -nâ suffix nun.
     let _ = root;
@@ -3617,6 +4472,18 @@ fn apply_hollow(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, pg
                 changed = true;
             }
         }
+        (Binyan::Niphal, Form::Imperfect | Form::Jussive | Form::Wayyiqtol) => {
+            // Hollow Niphal imperfect: yimmôṭ (יִמּוֹט) — the doubled C1
+            // carries the ô written plene on the middle vav; the strong
+            // build's C1 qamats and C2 tsere are both replaced.
+            if let Some(c2) = radical_idx(seq, 2) {
+                seq[c2] = Cons::new(letter::VAV).with_vowel(Vowel::Holam);
+                if let Some(c1) = radical_idx(seq, 1) {
+                    seq[c1].vowel = None;
+                }
+                changed = true;
+            }
+        }
         (Binyan::Qal, Form::InfinitiveAbsolute) => {
             // môṯ (מוֹת), qôm, śôm: the inf-abs holam is written plene on a
             // middle vav (a yod-class radical is re-spelt as vav) and C1 drops
@@ -3860,6 +4727,15 @@ fn apply_lamed_he(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
         return false;
     }
     use Vowel::*;
+
+    // The plural jussives never apocopate — their forms coincide with the
+    // imperfect (תִּרְאוּ, אַל־תַּעֲשׂוּ) — so route them through the imperfect
+    // arm below rather than leaving the strong-form he tail untouched.
+    let form = if form == Form::Jussive && pgn.number == Some(Number::Plural) {
+        Form::Imperfect
+    } else {
+        form
+    };
 
     // Hiphil III-He Perfect interposes the î-mater (yod) between C2 and the
     // etymological he in the Zero/Vocalic grades (build_perfect line ~1013),
@@ -4860,6 +5736,21 @@ fn lamed_he_perfect_tsere_variant(text: &str) -> Option<String> {
     Some(hebrew::render(&seq))
 }
 
+/// The reverse twin for the Hiphil: its III-He consonantal-suffix linking
+/// vowel is built as tsere-yod (הִכֵּיתָ) but the hiriq-yod spelling is
+/// attested too — hikkîṯā הִכִּיתָ, הִגְלִיתָ. Additive.
+fn lamed_he_perfect_hiriq_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let i = (0..seq.len().saturating_sub(2)).find(|&i| {
+        seq[i].vowel == Some(Vowel::Tsere)
+            && seq[i + 1].letter == letter::YOD
+            && seq[i + 1].vowel.is_none()
+            && seq[i + 2].letter == letter::TAV
+    })?;
+    seq[i].vowel = Some(Vowel::Hiriq);
+    Some(hebrew::render(&seq))
+}
+
 /// Hiriq-theme twin of the I-yod Qal perfect before a heavy afformative:
 /// yᵊraštem יְרַשְׁתֶּם beside the attested i-grade yᵊrištem (וִירִשְׁתֶּם — the
 /// conjunction sandhi וִי- is peeled by the parser, the bare stem matches
@@ -5122,6 +6013,80 @@ fn pe_aleph_wayyiqtol_pausal_variant(text: &str) -> Option<String> {
         return None;
     }
     seq[n - 2].vowel = Some(Vowel::Patah);
+    Some(hebrew::render(&seq))
+}
+
+/// Stative (e-class) twin of the Qal perfect 3ms: the theme patah — or, after
+/// a quiescent III-aleph, qamats — raised to tsere: šāmēr beside šāmar, mālēʾ
+/// (מָלֵא) beside the māṣāʾ shape, ṭāmēʾ, yārēʾ. Additive.
+fn perfect_stative_tsere_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 2 || seq[n - 1].vowel.is_some() {
+        return None;
+    }
+    let expect = if seq[n - 1].letter == letter::ALEF {
+        Vowel::Qamats
+    } else {
+        Vowel::Patah
+    };
+    if seq[n - 2].vowel != Some(expect) {
+        return None;
+    }
+    seq[n - 2].vowel = Some(Vowel::Tsere);
+    Some(hebrew::render(&seq))
+}
+
+/// Tsere twin of a final-syllable nesiga segol — the stress-retracted segol
+/// (וַיַּגֶּד) beside the tsere-kept spelling (וַיַּגֵּד, וַיַּקְרֵב). Additive.
+fn final_segol_to_tsere_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    // A word-final kaf carries an explicit sheva (וַיַּשְׁלֶךְ); any other final
+    // consonant closes the word bare.
+    if n < 2
+        || !matches!(seq[n - 1].vowel, None | Some(Vowel::Sheva))
+        || seq[n - 2].vowel != Some(Vowel::Segol)
+    {
+        return None;
+    }
+    seq[n - 2].vowel = Some(Vowel::Tsere);
+    Some(hebrew::render(&seq))
+}
+
+/// Patah twin of a hollow short wayyiqtol's retracted theme — the qamats
+/// (וַיָּסָר, Qal) or nesiga segol (וַיָּסֶר, Hiphil) beside the attested patah
+/// grade וַיָּסַר. Additive.
+fn hollow_wayyiqtol_patah_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 4
+        || seq[n - 1].vowel.is_some()
+        || !matches!(seq[n - 2].vowel, Some(Vowel::Qamats | Vowel::Segol))
+    {
+        return None;
+    }
+    seq[n - 2].vowel = Some(Vowel::Patah);
+    Some(hebrew::render(&seq))
+}
+
+/// Apocopated twin of a III-He imperative 2ms: drop the final he and bare the
+/// preceding consonant — Piel ṣawwēh צַוֵּה → ṣaw צַו (a word-final consonant
+/// cannot hold the forte). Additive.
+fn lamed_he_imperative_apocope_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 3
+        || seq[n - 1].letter != letter::HE
+        || seq[n - 1].vowel.is_some()
+        || !matches!(seq[n - 2].vowel, Some(Vowel::Tsere | Vowel::Segol))
+    {
+        return None;
+    }
+    seq.pop();
+    let last = seq.last_mut().unwrap();
+    last.vowel = None;
+    last.dagesh = false;
     Some(hebrew::render(&seq))
 }
 
@@ -5466,11 +6431,13 @@ fn pe_guttural_imperfect_segol_variant(text: &str) -> Option<String> {
 /// יָדְעָה beside יָדָעָה. Returns the sheva twin or None.
 fn lamed_guttural_perfect_sheva_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
-    // Look for: consonant + qamats (C2) + guttural (C3, vowelless) + suffix.
+    // Look for: consonant + qamats (C2) + guttural C3 + suffix. The guttural
+    // is vowelless before the shureq -û (יָדָעוּ) but itself carries the
+    // suffix qamats in the 3fs -â (שָׁמָעָה → שָׁמְעָה).
     for i in 0..seq.len().saturating_sub(2) {
         if seq[i].vowel == Some(Vowel::Qamats)
             && matches!(seq[i + 1].letter, letter::HET | letter::AYIN)
-            && seq[i + 1].vowel.is_none()
+            && matches!(seq[i + 1].vowel, None | Some(Vowel::Qamats))
         {
             seq[i].vowel = Some(Vowel::Sheva);
             return Some(hebrew::render(&seq));
@@ -5614,8 +6581,10 @@ fn oshureq() -> Cons {
 fn qal_perfect_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
     use Vowel::*;
     let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
+    // The perfect keeps all three radicals even in the I-nun class (nᵊṯānām
+    // נְתָנָם is regular), so only weak C3 and I-vav/yod shapes are excluded.
     if matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
-        || matches!(c1, letter::VAV | letter::YOD | letter::NUN)
+        || matches!(c1, letter::VAV | letter::YOD)
     {
         return Vec::new();
     }
@@ -5631,16 +6600,19 @@ fn qal_perfect_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
         hebrew::render(&seq)
     };
     let mut out = Vec::new();
-    // Light suffixes attach to the qᵊṭāl- (C2 qamats) grade.
-    out.push((OBJ_1CS, build(Qamats, Some(Patah), &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])));
-    out.push((OBJ_2MS, build(Qamats, Some(Sheva), &[ocv(letter::KAF, Qamats)])));
-    out.push((OBJ_2FS, build(Qamats, Some(Tsere), &[ocv(letter::KAF, Sheva)])));
-    // 3ms ô — holam carried on the vav mater (qᵊṭālô קְטָלוֹ).
-    out.push((OBJ_3MS, build(Qamats, None, &[Cons::new(letter::VAV).with_vowel(Holam)])));
-    out.push((OBJ_3FS, build(Qamats, Some(Qamats), &[Cons::new(letter::HE).with_dagesh()])));
-    out.push((OBJ_1CP, build(Qamats, Some(Qamats), &[Cons::new(letter::NUN), oshureq()])));
-    out.push((OBJ_3MP, build(Qamats, Some(Qamats), &[Cons::new(letter::MEM)])));
-    out.push((OBJ_3FP, build(Qamats, Some(Qamats), &[Cons::new(letter::NUN)])));
+    // Light suffixes attach to the qᵊṭāl- (C2 qamats) grade — the statives on
+    // their tsere grade instead (ʾăhēḇô אֲהֵבוֹ), so emit both.
+    for c2v in [Qamats, Tsere] {
+        out.push((OBJ_1CS, build(c2v, Some(Patah), &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])));
+        out.push((OBJ_2MS, build(c2v, Some(Sheva), &[ocv(letter::KAF, Qamats)])));
+        out.push((OBJ_2FS, build(c2v, Some(Tsere), &[ocv(letter::KAF, Sheva)])));
+        // 3ms ô — holam carried on the vav mater (qᵊṭālô קְטָלוֹ).
+        out.push((OBJ_3MS, build(c2v, None, &[Cons::new(letter::VAV).with_vowel(Holam)])));
+        out.push((OBJ_3FS, build(c2v, Some(Qamats), &[Cons::new(letter::HE).with_dagesh()])));
+        out.push((OBJ_1CP, build(c2v, Some(Qamats), &[Cons::new(letter::NUN), oshureq()])));
+        out.push((OBJ_3MP, build(c2v, Some(Qamats), &[Cons::new(letter::MEM)])));
+        out.push((OBJ_3FP, build(c2v, Some(Qamats), &[Cons::new(letter::NUN)])));
+    }
     // Heavy 2mp/2fp attach to the qᵊṭal- (C2 patah) grade.
     out.push((OBJ_2MP, build(Patah, Some(Sheva), &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])));
     out
@@ -5662,31 +6634,108 @@ fn derived_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         return Vec::new();
     }
     let last = seq[n - 1];
+    // A III-aleph base (ṭimmēʾ טִמֵּא): the theme reduces and the suffix joins
+    // the quiescent aleph — ṭimmᵊʾô וְטִמְּאוֹ.
+    if last.letter == letter::ALEF && last.vowel.is_none() && seq[n - 2].vowel == Some(Tsere) {
+        let build = |link: Option<Vowel>, tail: &[Cons]| -> String {
+            let mut s = seq.clone();
+            s[n - 2].vowel = Some(Sheva);
+            s[n - 1].vowel = link;
+            s.extend_from_slice(tail);
+            hebrew::render(&s)
+        };
+        return vec![
+            (OBJ_1CS, build(Some(Patah), &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])),
+            (OBJ_2MS, build(Some(HatafPatah), &[ocv(letter::KAF, Qamats)])),
+            (OBJ_3MS, build(None, &[Cons::new(letter::VAV).with_vowel(Holam)])),
+            (OBJ_3FS, build(Some(Qamats), &[Cons::new(letter::HE).with_dagesh()])),
+            (OBJ_1CP, build(Some(Qamats), &[Cons::new(letter::NUN), oshureq()])),
+            (OBJ_3MP, build(Some(Qamats), &[Cons::new(letter::MEM)])),
+        ];
+    }
     if matches!(last.vowel, Some(v) if v != Sheva)
         || matches!(last.letter, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
     {
         return Vec::new();
     }
-    // Reduce the theme on C2 (seq[n-2]) to sheva — keeping any forte dagesh —
-    // and give C3 (seq[n-1]) the linking vowel, then append the suffix tail.
-    let build = |link: Option<Vowel>, tail: &[Cons]| -> String {
+    // Reduce the theme on C2 (seq[n-2]) — to a vocal sheva, or the hataf-patah
+    // an undageshable guttural takes instead (ṭihăr-ô וְטִהֲרוֹ) — keeping any
+    // forte dagesh, and give C3 (seq[n-1]) the linking vowel, then append the
+    // suffix tail.
+    let reduced = if hebrew::is_guttural(seq[n - 2].letter) {
+        HatafPatah
+    } else {
+        Sheva
+    };
+    let build = |theme: Vowel, link: Option<Vowel>, tail: &[Cons]| -> String {
         let mut s = seq.clone();
-        s[n - 2].vowel = Some(Sheva);
+        s[n - 2].vowel = Some(theme);
         s[n - 1].vowel = link;
         s.extend_from_slice(tail);
         hebrew::render(&s)
     };
     vec![
-        (OBJ_1CS, build(Some(Patah), &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])), // -anî
-        (OBJ_2MS, build(Some(Sheva), &[ocv(letter::KAF, Qamats)])),                        // -ᵊḵā
-        (OBJ_2FS, build(Some(Tsere), &[ocv(letter::KAF, Sheva)])),                         // -ēḵ
-        (OBJ_3MS, build(None, &[Cons::new(letter::VAV).with_vowel(Holam)])),               // -ô
-        (OBJ_3FS, build(Some(Qamats), &[Cons::new(letter::HE).with_dagesh()])),            // -āh
-        (OBJ_1CP, build(Some(Qamats), &[Cons::new(letter::NUN), oshureq()])),              // -ānû
-        (OBJ_3MP, build(Some(Qamats), &[Cons::new(letter::MEM)])),                         // -ām
-        (OBJ_3FP, build(Some(Qamats), &[Cons::new(letter::NUN)])),                         // -ān
-        (OBJ_2MP, build(Some(Sheva), &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])), // -ᵊḵem
+        (OBJ_1CS, build(reduced, Some(Patah), &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)])), // -anî
+        (OBJ_2MS, build(reduced, Some(Sheva), &[ocv(letter::KAF, Qamats)])),                        // -ᵊḵā
+        // The sheva-link 2ms also keeps a full patah theme: bēraḵḵā בֵּרַכְךָ.
+        (OBJ_2MS, build(Patah, Some(Sheva), &[ocv(letter::KAF, Qamats)])),
+        (OBJ_2FS, build(reduced, Some(Tsere), &[ocv(letter::KAF, Sheva)])),                         // -ēḵ
+        (OBJ_3MS, build(reduced, None, &[Cons::new(letter::VAV).with_vowel(Holam)])),               // -ô
+        (OBJ_3FS, build(reduced, Some(Qamats), &[Cons::new(letter::HE).with_dagesh()])),            // -āh
+        (OBJ_1CP, build(reduced, Some(Qamats), &[Cons::new(letter::NUN), oshureq()])),              // -ānû
+        (OBJ_3MP, build(reduced, Some(Qamats), &[Cons::new(letter::MEM)])),                         // -ām
+        (OBJ_3FP, build(reduced, Some(Qamats), &[Cons::new(letter::NUN)])),                         // -ān
+        (OBJ_2MP, build(reduced, Some(Sheva), &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])), // -ᵊḵem
+        (OBJ_2MP, build(Patah, Some(Sheva), &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)])),
     ]
+}
+
+/// Hiphil perfect 3ms with a pronominal object suffix, built from the bare
+/// perfect `base_text`: the long î theme is retained and the suffix joins C3 —
+/// hisgîrô וְהִסְגִּירוֹ, hēḇîʾanî → with the first syllable reduced
+/// propretonically, hĕḇîʾanî הֱבִיאַנִי. Additive: only exact matches survive.
+fn hiphil_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(base_text);
+    let n = seq.len();
+    if n < 3 {
+        return Vec::new();
+    }
+    let last = seq[n - 1];
+    // C3 must be a true final consonant or a quiescent aleph after the î.
+    if matches!(last.vowel, Some(v) if v != Sheva)
+        || matches!(last.letter, letter::HE | letter::VAV | letter::YOD)
+    {
+        return Vec::new();
+    }
+    // Hosts: the base, plus a propretonically-reduced first syllable when it
+    // carries a tsere/hiriq (הֵבִיא → הֱבִיא).
+    let mut hosts = vec![seq.clone()];
+    if seq[0].letter == letter::HE && matches!(seq[0].vowel, Some(Tsere)) {
+        let mut reduced = seq.clone();
+        reduced[0].vowel = Some(HatafSegol);
+        hosts.push(reduced);
+    }
+    let aleph = last.letter == letter::ALEF;
+    let tails: Vec<(Pgn, Option<Vowel>, Vec<Cons>)> = vec![
+        (OBJ_1CS, Some(Patah), vec![ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]), // -anî
+        (OBJ_2MS, Some(if aleph { HatafPatah } else { Sheva }), vec![ocv(letter::KAF, Qamats)]), // -ᵊḵā
+        (OBJ_3MS, None, vec![Cons::new(letter::VAV).with_vowel(Holam)]),               // -ô
+        (OBJ_3FS, Some(Qamats), vec![Cons::new(letter::HE).with_dagesh()]),            // -āh
+        (OBJ_1CP, Some(Qamats), vec![Cons::new(letter::NUN), oshureq()]),              // -ānû
+        (OBJ_3MP, Some(Qamats), vec![Cons::new(letter::MEM)]),                         // -ām
+        (OBJ_3FP, Some(Qamats), vec![Cons::new(letter::NUN)]),                         // -ān
+    ];
+    let mut out = Vec::new();
+    for host in &hosts {
+        for (obj, link, tail) in &tails {
+            let mut s = host.clone();
+            s[n - 1].vowel = *link;
+            s.extend(tail.iter().cloned());
+            out.push((*obj, hebrew::render(&s)));
+        }
+    }
+    out
 }
 
 /// III-He perfect 3ms with a pronominal object suffix, any binyan, built from the
@@ -5950,6 +6999,18 @@ fn participle_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
             s.extend(tail);
             out.push((obj, hebrew::render(&s)));
         }
+        // The verbal-style tails also occur on the tsere link: ʿōśēhû
+        // עֹשֵׂהוּ, ʿōśēnî.
+        let mut emit = |obj: Pgn, tail: &[Cons]| {
+            let mut s = stem.clone();
+            if let Some(c) = s.last_mut() {
+                c.vowel = Some(Tsere);
+            }
+            s.extend_from_slice(tail);
+            out.push((obj, hebrew::render(&s)));
+        };
+        emit(OBJ_3MS, &[Cons::new(letter::HE), oshureq()]);
+        emit(OBJ_1CS, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]);
         return out;
     }
 
@@ -5961,8 +7022,9 @@ fn participle_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
     }
     // The theme vowel sits on the consonant before C3 (seq[n-2]); reduce it to
     // sheva, and also emit the segol twin for the heavy 2ms/2fs/2mp suffixes
-    // (šōmerḵā). The suffix joins C3.
-    for theme in [Sheva, Segol] {
+    // (šōmerḵā) and the hiriq twin a yod theme consonant prefers (ʾōyiḇḵā
+    // אֹיִבְךָ). The suffix joins C3.
+    for theme in [Sheva, Segol, Hiriq] {
         for (obj, link, tail) in nominal_suffix_tails() {
             let mut s = seq.clone();
             s[n - 2].vowel = Some(theme);
@@ -6000,6 +7062,38 @@ fn participle_mp_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
     s3mp.push(Cons::new(letter::MEM));
     out.push((OBJ_3MP, hebrew::render(&s3mp)));
 
+    // -êḵem (2mp): construct + kaf-segol-mem — ʾōyᵊḇêḵem אֹיְבֵיכֶם.
+    let mut s2mp = construct.clone();
+    s2mp.push(Cons::new(letter::KAF).with_vowel(Segol));
+    s2mp.push(Cons::new(letter::MEM));
+    out.push((OBJ_2MP, hebrew::render(&s2mp)));
+
+    // -êhen (3fp): construct + he-segol-nun.
+    let mut s3fp = construct.clone();
+    s3fp.push(Cons::new(letter::HE).with_vowel(Segol));
+    s3fp.push(Cons::new(letter::NUN));
+    out.push((OBJ_3FP, hebrew::render(&s3fp)));
+
+    // -eyhā (3fs): construct (reduced tsere → segol) + he-qamats — yōšᵊḇeyhā
+    // יֹשְׁבֶיהָ.
+    let mut s3fs = construct.clone();
+    if let Some(c) = s3fs.iter_mut().rev().nth(1) {
+        c.vowel = Some(Segol);
+    }
+    s3fs.push(Cons::new(letter::HE).with_vowel(Qamats));
+    out.push((OBJ_3FS, hebrew::render(&s3fs)));
+
+    // -ayiḵ (2fs): construct tsere lowers to patah, the yod takes hiriq, final kaf.
+    let mut s2fs = construct.clone();
+    if let Some(c) = s2fs.iter_mut().rev().nth(1) {
+        c.vowel = Some(Patah);
+    }
+    if let Some(c) = s2fs.last_mut() {
+        c.vowel = Some(Hiriq);
+    }
+    s2fs.push(Cons::new(letter::KAF).with_vowel(Sheva));
+    out.push((OBJ_2FS, hebrew::render(&s2fs)));
+
     // -ênû (1cp): construct + nun-shureq.
     let mut s1cp = construct.clone();
     s1cp.push(Cons::new(letter::NUN));
@@ -6030,6 +7124,59 @@ fn participle_mp_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
     }
     out.push((OBJ_1CS, hebrew::render(&s1cs)));
 
+    out
+}
+
+/// Active/passive **feminine-plural participle** with a pronominal suffix.
+/// Built from the bare absolute -ôṯ surface (נִפְלָאוֹת), whose construct is
+/// identical except that the pretonic qamats reduces to vocal sheva
+/// (nip̄lᵊʾôṯ-): both grades are emitted as hosts and the plural-noun suffix
+/// set joins the ôṯ — nip̄lᵊʾôṯāyw נִפְלְאוֹתָיו, nip̄lᵊʾôṯeyḵā נִפְלְאוֹתֶיךָ.
+fn participle_fp_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(base_text);
+    let n = seq.len();
+    // Require the -ôṯ ending: a final vowelless tav after a holam (written on a
+    // vav mater or directly on the previous consonant).
+    if n < 3 || seq[n - 1].letter != letter::TAV || seq[n - 1].vowel.is_some() {
+        return Vec::new();
+    }
+    let holam = (seq[n - 2].letter == letter::VAV && seq[n - 2].vowel == Some(Holam))
+        || seq[n - 2].vowel == Some(Holam);
+    if !holam {
+        return Vec::new();
+    }
+    // Hosts: the absolute, plus the construct grade with the last qamats before
+    // the ôṯ reduced to sheva.
+    let mut hosts = vec![seq.clone()];
+    if let Some(c) = seq[..n - 2]
+        .iter()
+        .rposition(|c| c.vowel == Some(Qamats))
+    {
+        let mut reduced = seq.clone();
+        reduced[c].vowel = Some(Sheva);
+        hosts.push(reduced);
+    }
+    // Plural-noun suffix tails joining the tav.
+    let tails: Vec<(Pgn, Vowel, Vec<Cons>)> = vec![
+        (OBJ_1CS, Patah, vec![Cons::new(letter::YOD)]),                                  // -ay
+        (OBJ_2MS, Segol, vec![Cons::new(letter::YOD), ocv(letter::KAF, Qamats)]),        // -eyḵā
+        (OBJ_3MS, Qamats, vec![Cons::new(letter::YOD), Cons::new(letter::VAV)]),         // -āyw
+        (OBJ_3FS, Segol, vec![Cons::new(letter::YOD), ocv(letter::HE, Qamats)]),         // -eyhā
+        (OBJ_1CP, Tsere, vec![Cons::new(letter::YOD), Cons::new(letter::NUN), oshureq()]), // -ênû
+        (OBJ_2MP, Tsere, vec![Cons::new(letter::YOD), ocv(letter::KAF, Segol), Cons::new(letter::MEM)]), // -êḵem
+        (OBJ_3MP, Tsere, vec![Cons::new(letter::YOD), ocv(letter::HE, Segol), Cons::new(letter::MEM)]),  // -êhem
+        (OBJ_3MP, Qamats, vec![Cons::new(letter::MEM)]),                                 // -ām
+    ];
+    let mut out = Vec::new();
+    for host in &hosts {
+        for (obj, link, tail) in &tails {
+            let mut s = host.clone();
+            s[n - 1].vowel = Some(*link);
+            s.extend(tail.iter().cloned());
+            out.push((*obj, hebrew::render(&s)));
+        }
+    }
     out
 }
 
@@ -6066,6 +7213,30 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     // nun of wayyittēn): vowelless, or the Masoretic silent sheva `render` writes
     // under a final kaf (יְבָרֵךְ). A real vowel or a mater final (HE/ALEF, or a
     // vowelless VAV/YOD) means a weak/derived shape we don't model here.
+    // A III-aleph host (yimṣāʾ יִמְצָא): the theme qamats stays and the suffix
+    // joins the quiescent aleph directly — yimṣāʾḗhû וַיִּמְצָאֵהוּ.
+    let lamed_aleph_host = last.letter == letter::ALEF
+        && last.vowel.is_none()
+        && n >= 3
+        && seq[n - 2].vowel == Some(Qamats);
+    if lamed_aleph_host {
+        let mut out = Vec::new();
+        let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
+            let mut s = seq.clone();
+            s[n - 1].vowel = Some(link);
+            s.extend_from_slice(tail);
+            out.push((obj, hebrew::render(&s)));
+        };
+        emit(OBJ_1CS, Tsere, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]);
+        emit(OBJ_1CS, Segol, &[Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq), Cons::new(letter::YOD)]);
+        emit(OBJ_2MS, HatafPatah, &[ocv(letter::KAF, Qamats)]);
+        emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]);
+        emit(OBJ_3MS, Segol, &[Cons::new(letter::NUN).with_dagesh(), oshureq()]);
+        emit(OBJ_3FS, Segol, &[ocv(letter::HE, Qamats)]);
+        emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]);
+        emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]);
+        return out;
+    }
     if (matches!(last.vowel, Some(v) if v != Vowel::Sheva) && !guttural_a)
         || (matches!(last.letter, letter::HE | letter::ALEF) && !plene_i)
         || matches!(last.letter, letter::VAV | letter::YOD)
@@ -6088,6 +7259,11 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     // (tōʾḵal תֹּאכַל) reduces that theme to a hataf-patah under the suffix
     // (even on a non-guttural): tōʾḵălennû תֹּאכֲלֶנּוּ.
     if n >= 4 && seq[n - 3].letter == letter::ALEF && seq[n - 3].vowel.is_none() {
+        themes.push(HatafPatah);
+    }
+    // An undageshable theme consonant (guttural or resh) reduces to a hataf
+    // rather than a sheva: wayḇārăḵēhû וַיְבָרֲכֵהוּ.
+    if hebrew::is_guttural(seq[n - 2].letter) || seq[n - 2].letter == letter::RESH {
         themes.push(HatafPatah);
     }
     // The Hiphil long hiriq-yod î theme before C3 (yaqrîḇ יַקְרִיב, yāšîḇ יָשִׁיב)
@@ -6129,8 +7305,9 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     // 1cs: plain -ēnî and energic -ennî.
     emit(OBJ_1CS, Tsere, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]);
     emit(OBJ_1CS, Segol, &[Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq), Cons::new(letter::YOD)]);
-    // 2ms -ᵊḵā, 2fs -ēḵ.
+    // 2ms -ᵊḵā, the energic -ekkā (ʾeʿezḇekkā אֶעֶזְבֶךָּ), 2fs -ēḵ.
     emit(OBJ_2MS, Sheva, &[ocv(letter::KAF, Qamats)]);
+    emit(OBJ_2MS, Segol, &[Cons::new(letter::KAF).with_dagesh().with_vowel(Qamats)]);
     emit(OBJ_2FS, Sheva, &[ocv(letter::KAF, Sheva)]);
     // 3ms: plain -ēhû and energic -ennû.
     emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]);
@@ -6284,6 +7461,8 @@ fn nominal_suffix_tails() -> Vec<(Pgn, Option<Vowel>, Vec<Cons>)> {
     vec![
         (OBJ_1CS, Some(Hiriq), vec![Cons::new(letter::YOD)]),                          // -î
         (OBJ_2MS, Some(Sheva), vec![ocv(letter::KAF, Qamats)]),                        // -ᵊḵā
+        // Long 2ms -ḵâ with the he mater (bôʾăḵâ בֹּאֲכָה, מַלְכָּכָה-style spellings).
+        (OBJ_2MS, Some(Sheva), vec![ocv(letter::KAF, Qamats), Cons::new(letter::HE)]), // -ᵊḵâ
         (OBJ_2FS, Some(Tsere), vec![ocv(letter::KAF, Sheva)]),                         // -ēḵ
         (OBJ_3MS, None, vec![Cons::new(letter::VAV).with_vowel(Holam)]),               // -ô (holam on vav)
         (OBJ_3FS, Some(Qamats), vec![Cons::new(letter::HE).with_dagesh()]),            // -āh
@@ -6319,6 +7498,87 @@ fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -
                     c.vowel = link;
                     c
                 },
+            ];
+            seq.extend(tail);
+            out.push((obj, hebrew::render(&seq)));
+        }
+        return out;
+    }
+    // Hollow Qal (בּוֹא, קוּם): the bare infinitive is already the suffix base;
+    // the suffix joins C3 directly. Both the plene (vav mater) and defective
+    // spellings occur — bᵊḇōʾô בְּבֹאוֹ beside בּוֹאוֹ — as do both word-initial
+    // dagesh-lene states (the proclitic peel exposes the soft one). A guttural
+    // or aleph C3 takes a hataf-patah for the sheva-link suffixes (bôʾăḵā
+    // בּוֹאֲךָ) and quiesces before the -ô.
+    if binyan == Binyan::Qal
+        && matches!(c2, letter::VAV | letter::YOD)
+        && c3 != letter::HE
+    {
+        let u_class = hollow_class(root) == HollowClass::Shureq;
+        for (obj, link, tail) in nominal_suffix_tails() {
+            let link = if link == Some(Sheva) && hebrew::is_guttural(c3) {
+                Some(HatafPatah)
+            } else {
+                link
+            };
+            let mut c3c = Cons::radical(c3, 3);
+            c3c.vowel = link;
+            for first_dagesh in [true, false] {
+                let mut c1c = Cons::radical(c1, 1);
+                c1c.dagesh = first_dagesh;
+                // Plene: C1 + vav mater carrying the theme.
+                let mater = if u_class {
+                    Cons::new(letter::VAV).with_dagesh()
+                } else {
+                    Cons::new(letter::VAV).with_vowel(Holam)
+                };
+                let mut plene = vec![c1c, mater, c3c];
+                plene.extend(tail.clone());
+                out.push((obj, hebrew::render(&plene)));
+                // Defective: the theme written on C1 itself.
+                let mut c1d = c1c;
+                c1d.vowel = Some(if u_class { Qubuts } else { Holam });
+                let mut defective = vec![c1d, c3c];
+                defective.extend(tail.clone());
+                out.push((obj, hebrew::render(&defective)));
+            }
+        }
+        return out;
+    }
+    // Geminate Qal (תֹּם, סֹב): before a suffix the doubled radical surfaces as
+    // a single dageshed consonant on a short-vowel stem — tummām תֻּמָּם,
+    // subbô סֻבּוֹ; the holam grade (ḥonnô) also occurs. Both word-initial
+    // dagesh-lene states are emitted for the proclitic peel.
+    if binyan == Binyan::Qal && c2 == c3 && !hebrew::is_guttural(c2) && c2 != letter::RESH {
+        for (obj, link, tail) in nominal_suffix_tails() {
+            for v1 in [Qubuts, Holam] {
+                for first_dagesh in [true, false] {
+                    let mut c1c = Cons::radical(c1, 1).with_vowel(v1);
+                    c1c.dagesh = first_dagesh;
+                    let mut c2c = Cons::radical(c2, 2).with_dagesh();
+                    c2c.vowel = link;
+                    let mut seq = vec![c1c, c2c];
+                    seq.extend(tail.clone());
+                    out.push((obj, hebrew::render(&seq)));
+                }
+            }
+        }
+        return out;
+    }
+    // שרת: the Piel infinitive is the lexicalized šārēṯ (שָׁרֵת); its theme
+    // reduces before a suffix — šārᵊṯô לְשָׁרְתוֹ.
+    if binyan == Binyan::Piel
+        && c1 == letter::SHIN
+        && c2 == letter::RESH
+        && c3 == letter::TAV
+    {
+        for (obj, link, tail) in nominal_suffix_tails() {
+            let mut t = Cons::radical(c3, 3);
+            t.vowel = link;
+            let mut seq = vec![
+                Cons::radical(c1, 1).with_vowel(Qamats),
+                Cons::radical(c2, 2).with_vowel(Sheva),
+                t,
             ];
             seq.extend(tail);
             out.push((obj, hebrew::render(&seq)));
@@ -6421,24 +7681,35 @@ fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -
         if segholate {
             for (obj, link, tail) in nominal_suffix_tails() {
                 for c1v in [Vowel::Hiriq, Vowel::Segol] {
-                    let mut s = seq.clone();
-                    s[0].vowel = Some(c1v);
-                    s[1].vowel = Some(Vowel::Sheva);
-                    s[n - 1].vowel = link;
-                    s.extend(tail.clone());
-                    out.push((obj, hebrew::render(&s)));
+                    // After the now-silent C2 sheva the tav takes a dagesh
+                    // lene (šiḇtᵊḵā שִׁבְתְּךָ); emit both spellings.
+                    for dagesh in [false, true] {
+                        let mut s = seq.clone();
+                        s[0].vowel = Some(c1v);
+                        s[1].vowel = Some(Vowel::Sheva);
+                        s[n - 1].vowel = link;
+                        s[n - 1].dagesh = dagesh;
+                        s.extend(tail.clone());
+                        out.push((obj, hebrew::render(&s)));
+                    }
                 }
             }
         } else {
             // The Piel theme tsere on the doubled C2 (dabbēr דַּבֵּר) reduces
             // to a vocal sheva before a vowel-initial suffix: dabbᵊrô
-            // (בְּדַבְּרוֹ), qaddᵊšô (לְקַדְּשׁוֹ). The sheva-link suffixes (-ᵊḵā,
-            // -ᵊḵem) keep the full tsere instead (dabberḵā), so the reduced
-            // twin is emitted only for the vowel links.
+            // (בְּדַבְּרוֹ), qaddᵊšô (לְקַדְּשׁוֹ) — a hataf-patah under an
+            // undageshable guttural C2 (naḥămô לְנַחֲמוֹ). The sheva-link
+            // suffixes (-ᵊḵā, -ᵊḵem) keep the full tsere instead (dabberḵā),
+            // so the reduced twin is emitted only for the vowel links.
             let piel_theme = matches!(binyan, Binyan::Piel | Binyan::Pual | Binyan::Hithpael)
                 && n >= 2
-                && seq[n - 2].dagesh
+                && (seq[n - 2].dagesh || hebrew::is_guttural(seq[n - 2].letter))
                 && seq[n - 2].vowel == Some(Vowel::Tsere);
+            let piel_reduced = if hebrew::is_guttural(seq[n - 2].letter) {
+                Vowel::HatafPatah
+            } else {
+                Vowel::Sheva
+            };
             for (obj, link, tail) in nominal_suffix_tails() {
                 let mut s = seq.clone();
                 s[n - 1].vowel = link;
@@ -6446,10 +7717,19 @@ fn inf_construct_object_suffixes(root: &Root, binyan: Binyan, base_text: &str) -
                 out.push((obj, hebrew::render(&s)));
                 if piel_theme && link != Some(Vowel::Sheva) {
                     let mut s = seq.clone();
-                    s[n - 2].vowel = Some(Vowel::Sheva);
+                    s[n - 2].vowel = Some(piel_reduced);
                     s[n - 1].vowel = link;
-                    s.extend(tail);
+                    s.extend(tail.clone());
                     out.push((obj, hebrew::render(&s)));
+                    // A guttural theme also closes on a plain silent sheva
+                    // (hiṯyaḥśām וְהִתְיַחְשָׂם).
+                    if piel_reduced != Vowel::Sheva {
+                        let mut s = seq.clone();
+                        s[n - 2].vowel = Some(Vowel::Sheva);
+                        s[n - 1].vowel = link;
+                        s.extend(tail);
+                        out.push((obj, hebrew::render(&s)));
+                    }
                 }
             }
         }
@@ -6515,6 +7795,64 @@ fn qal_imperative_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
     out
 }
 
+/// Piel/Hithpael imperative (2ms) with a pronominal object suffix, built from
+/// the bare imperative `base_text`. The theme vowel on the (doubled) C2 reduces
+/// to a vocal sheva before the verbal suffix — lammᵊḏēnî לַמְּדֵנִי from לַמֵּד,
+/// qaddᵊšēm — a hataf-patah under an undageshable guttural C2. A III-He base
+/// (ḥayyê חַיֵּה) elides its he and the suffix joins C2's linking vowel directly:
+/// ḥayyēnî חַיֵּנִי. Additive: a mis-modelled grade simply fails to match.
+fn piel_imperative_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(base_text);
+    let n = seq.len();
+    if n < 2 {
+        return Vec::new();
+    }
+    let mut out = Vec::new();
+    let tails: Vec<(Pgn, Vowel, Vec<Cons>)> = vec![
+        (OBJ_1CS, Tsere, vec![ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]), // -ēnî
+        (OBJ_1CS, Segol, vec![Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq), Cons::new(letter::YOD)]), // -ennî
+        (OBJ_3MS, Tsere, vec![Cons::new(letter::HE), oshureq()]),                // -ēhû
+        (OBJ_3MS, Segol, vec![Cons::new(letter::NUN).with_dagesh(), oshureq()]), // -ennû
+        (OBJ_3FS, Segol, vec![ocv(letter::HE, Qamats)]),                         // -ehā
+        (OBJ_1CP, Tsere, vec![Cons::new(letter::NUN), oshureq()]),               // -ēnû
+        (OBJ_3MP, Tsere, vec![Cons::new(letter::MEM)]),                          // -ēm
+        (OBJ_2MS, Sheva, vec![ocv(letter::KAF, Qamats)]),                        // -ᵊḵā
+    ];
+    let last = seq[n - 1];
+    if last.letter == letter::HE && matches!(seq[n - 2].vowel, Some(Tsere | Segol)) {
+        // III-He: drop the he; C2 carries the linking vowel.
+        for (obj, link, tail) in &tails {
+            let mut s = seq[..n - 1].to_vec();
+            if let Some(c) = s.last_mut() {
+                c.vowel = Some(*link);
+            }
+            s.extend(tail.iter().cloned());
+            out.push((*obj, hebrew::render(&s)));
+        }
+        return out;
+    }
+    // Strong shape: C3 must be a true final consonant.
+    if matches!(last.vowel, Some(v) if v != Sheva)
+        || matches!(last.letter, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
+    {
+        return Vec::new();
+    }
+    let reduced = if hebrew::is_guttural(seq[n - 2].letter) {
+        HatafPatah
+    } else {
+        Sheva
+    };
+    for (obj, link, tail) in &tails {
+        let mut s = seq.clone();
+        s[n - 2].vowel = Some(reduced);
+        s[n - 1].vowel = Some(*link);
+        s.extend(tail.iter().cloned());
+        out.push((*obj, hebrew::render(&s)));
+    }
+    out
+}
+
 /// Hiphil imperative (2ms) with a pronominal object suffix. Before a suffix the
 /// Hiphil imperative shows its long hiriq-yod (î) theme and the final radical
 /// takes a tsere linking vowel + the *verbal* suffix set: haḏrîḵēnî
@@ -6571,6 +7909,13 @@ fn hiphil_imperative_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         s.push(last.with_vowel(link));
         s.extend_from_slice(tail);
         out.push((obj, hebrew::render(&s)));
+        // The suffix moves the stress: a qamats prefix syllable (the hollow
+        // hā- of הָבֵן) reduces propretonically to hataf-patah — hăḇînēnî
+        // הֲבִינֵנִי.
+        if s[0].vowel == Some(Qamats) {
+            s[0].vowel = Some(HatafPatah);
+            out.push((obj, hebrew::render(&s)));
+        }
     };
     emit(OBJ_1CS, Tsere, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]); // -ēnî
     emit(OBJ_1CS, Segol, &[Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq), Cons::new(letter::YOD)]); // -ennî
@@ -6595,7 +7940,9 @@ fn pausal_qamats_variant(text: &str) -> Option<String> {
         return None;
     }
     let last = &seq[n - 1];
-    if last.vowel.is_some()
+    // A final kaf carries the Masoretic silent sheva — still a closed syllable.
+    let final_kaf_sheva = last.letter == letter::KAF && last.vowel == Some(Vowel::Sheva);
+    if (last.vowel.is_some() && !final_kaf_sheva)
         || matches!(
             last.letter,
             letter::HE | letter::ALEF | letter::YOD | letter::VAV
@@ -7009,6 +8356,404 @@ fn qal_pausal_variant(zero: &str, vocalic: &str) -> Option<String> {
     Some(hebrew::render(&vseq))
 }
 
+/// Patah-theme twin of the Piel perfect 3ms: beside the tsere theme (qiṭṭēl,
+/// בֵּרֵךְ, חִשֵּׁב, טִהֵר) the a-grade is freely attested — bēraḵ בֵּרַךְ,
+/// ḥiššaḇ חִשַּׁב, ṭihar טִהַר. Lowers the last tsere/segol to patah.
+fn piel_perfect_patah_theme_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let c = seq
+        .iter_mut()
+        .rev()
+        .find(|c| matches!(c.vowel, Some(Vowel::Tsere | Vowel::Segol)))?;
+    c.vowel = Some(Vowel::Patah);
+    Some(hebrew::render(&seq))
+}
+
+/// Segol-prefix twin of the III-He Hiphil perfect: heḡlâ הֶגְלָה beside the
+/// regular hiḡlâ הִגְלָה.
+fn hiphil_perfect_segol_prefix_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let first = seq.first_mut()?;
+    if first.letter != letter::HE || first.vowel != Some(Vowel::Hiriq) {
+        return None;
+    }
+    first.vowel = Some(Vowel::Segol);
+    Some(hebrew::render(&seq))
+}
+
+/// Short twin of the III-He imperfect 3fp/2fp: the -еynâ ending drops its final
+/// he and the nun carries the qamats — tihyeynā תִּהְיֶינָה → tihyeyn תִּהְיֶיןָ.
+fn lamed_he_imperfect_fp_short_variant(text: &str) -> Option<String> {
+    let seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 4
+        || seq[n - 1].letter != letter::HE
+        || seq[n - 1].vowel.is_some()
+        || seq[n - 2].letter != letter::NUN
+        || seq[n - 2].vowel != Some(Vowel::Qamats)
+        || seq[n - 3].letter != letter::YOD
+    {
+        return None;
+    }
+    Some(hebrew::render(&seq[..n - 1]))
+}
+
+/// Pausal-tsere twin of a III-He form: the final segol before the etymological
+/// he lengthens in pause — tᵊḡalleh תְּגַלֶּה → tᵊḡallēh תְּגַלֵּה.
+fn lamed_he_pausal_tsere_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 2
+        || seq[n - 1].letter != letter::HE
+        || seq[n - 1].vowel.is_some()
+        || seq[n - 2].vowel != Some(Vowel::Segol)
+    {
+        return None;
+    }
+    seq[n - 2].vowel = Some(Vowel::Tsere);
+    Some(hebrew::render(&seq))
+}
+
+/// Hiriq twin of the Niphal imperfect 1cs preformative: ʾiddārēš אִדָּרֵשׁ beside
+/// the regular ʾeddārēš אֶדָּרֵשׁ.
+fn niphal_1cs_hiriq_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let first = seq.first_mut()?;
+    if first.letter != letter::ALEF || first.vowel != Some(Vowel::Segol) {
+        return None;
+    }
+    first.vowel = Some(Vowel::Hiriq);
+    Some(hebrew::render(&seq))
+}
+
+/// Qubuts twin of the Hophal preformative: the o-grade qamats-qatan
+/// (מׇפְקָד, הׇשְׁלַךְ) has a freely attested u-grade — מֻפְקָד, הֻשְׁלַךְ.
+fn hophal_qubuts_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let c = seq
+        .iter_mut()
+        .find(|c| c.vowel.is_some())?;
+    if c.vowel != Some(Vowel::QamatsQatan) {
+        return None;
+    }
+    c.vowel = Some(Vowel::Qubuts);
+    Some(hebrew::render(&seq))
+}
+
+/// Hiriq + silent-sheva twin of a I-guttural Niphal perfect: nehĕyâ נֶהֱיָה has
+/// the attested i-grade nihyâ נִהְיָה (and 3fs נִהְיְתָה). The preformative takes
+/// hiriq and the guttural closes the syllable on a plain sheva.
+fn pe_guttural_niphal_hiriq_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() < 3
+        || seq[0].letter != letter::NUN
+        || !matches!(seq[0].vowel, Some(Vowel::Segol | Vowel::Patah))
+        || !hebrew::is_guttural(seq[1].letter)
+        || !matches!(
+            seq[1].vowel,
+            Some(Vowel::HatafSegol | Vowel::HatafPatah | Vowel::Sheva | Vowel::Segol)
+        )
+    {
+        return None;
+    }
+    seq[0].vowel = Some(Vowel::Hiriq);
+    seq[1].vowel = Some(Vowel::Sheva);
+    Some(hebrew::render(&seq))
+}
+
+/// Segol twin of the חיה/היה short wayyiqtol/jussive: the sheva preformative
+/// fills to segol with the forte restored — wayḥî וַיְחִי beside wayyeḥî וַיֶּחִי.
+fn sheva_prefix_segol_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() >= 3
+        && seq[0].letter == letter::VAV
+        && matches!(seq[0].vowel, Some(Vowel::Patah))
+        && seq[1].vowel == Some(Vowel::Sheva)
+    {
+        seq[1].vowel = Some(Vowel::Segol);
+        seq[1].dagesh = true;
+        return Some(hebrew::render(&seq));
+    }
+    if seq.len() >= 2 && seq[0].vowel == Some(Vowel::Sheva) {
+        seq[0].vowel = Some(Vowel::Segol);
+        return Some(hebrew::render(&seq));
+    }
+    None
+}
+
+/// Defective twin of the שחה Hithpael infinitive: the vav-holam mater before
+/// the tav written as a bare vav — הִשְׁתַּחֲוֹת → הִשְׁתַּחֲות.
+fn shachah_inf_defective_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 2 || seq[n - 1].letter != letter::TAV {
+        return None;
+    }
+    let v = &mut seq[n - 2];
+    if v.letter != letter::VAV || v.vowel != Some(Vowel::Holam) {
+        return None;
+    }
+    v.vowel = None;
+    Some(hebrew::render(&seq))
+}
+
+/// Pausal twin of the שחה Hithpael short wayyiqtol/jussive: the patah on the
+/// infix tav lengthens — wayyištáḥû וַיִּשְׁתַּחוּ → וַיִּשְׁתָּחוּ.
+fn shachah_pausal_qamats_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let i = seq.iter().position(|c| {
+        c.letter == letter::TAV && c.vowel == Some(Vowel::Patah)
+    })?;
+    if seq.get(i + 1).map(|c| c.letter) != Some(letter::HET) {
+        return None;
+    }
+    seq[i].vowel = Some(Vowel::Qamats);
+    Some(hebrew::render(&seq))
+}
+
+/// Geminate Hiphil active participle — mēCaC/mēCēC with the doubled radical
+/// contracted: mēraʿ מֵרַע (רעע), plural mᵊrēCîm with the propretonic reduced
+/// (mᵊrēʿîm מְרֵעִים).
+fn geminate_hiphil_participle_variants(root: &Root, pgn: Pgn) -> Vec<String> {
+    use Vowel::*;
+    let theme = if hebrew::is_guttural(root.lamed()) || root.lamed() == letter::RESH {
+        Patah
+    } else {
+        Tsere
+    };
+    if pgn == Pgn::gn(Gender::Masculine, Number::Singular) {
+        vec![hebrew::render(&[
+            Cons::new(letter::MEM).with_vowel(Tsere),
+            rad(root.pe(), 1).with_vowel(theme),
+            rad(root.lamed(), 3),
+        ])]
+    } else if pgn == Pgn::gn(Gender::Masculine, Number::Plural) {
+        vec![hebrew::render(&[
+            Cons::new(letter::MEM).with_vowel(Sheva),
+            rad(root.pe(), 1).with_vowel(Tsere),
+            rad(root.lamed(), 3).with_vowel(Hiriq),
+            Cons::mater(letter::YOD),
+            Cons::new(letter::MEM),
+        ])]
+    } else {
+        Vec::new()
+    }
+}
+
+/// Geminate Niphal imperfect with the doubled radical contracted: yissaḇ יִסַּב,
+/// plural yissabbû יִסַּבּוּ (the doubling restored before the vocalic subject).
+fn geminate_niphal_imperfect_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    use Vowel::*;
+    let pre = prefix_letter(pgn);
+    if hebrew::is_guttural(root.pe()) || root.pe() == letter::RESH {
+        return None;
+    }
+    let c1 = rad(root.pe(), 1).with_vowel(Patah).with_dagesh();
+    match imperfect_suffix_kind(pgn) {
+        Suffix::Zero => Some(hebrew::render(&[
+            Cons::new(pre).with_vowel(Hiriq),
+            c1,
+            rad(root.lamed(), 3),
+        ])),
+        Suffix::Vocalic => {
+            let fem_sg = pgn.gender == Some(Gender::Feminine) && pgn.number == Some(Number::Singular);
+            let mut seq = vec![Cons::new(pre).with_vowel(Hiriq), c1];
+            if fem_sg {
+                seq.push(rad(root.lamed(), 3).with_dagesh().with_vowel(Hiriq));
+                seq.push(Cons::mater(letter::YOD));
+            } else {
+                seq.push(rad(root.lamed(), 3).with_dagesh());
+                seq.push(oshureq());
+            }
+            Some(hebrew::render(&seq))
+        }
+        _ => None,
+    }
+}
+
+/// Geminate Hiphil imperfect with the doubled radical contracted: yāḥēl יָחֵל,
+/// plural yāḥēllû יָחֵלּוּ (the doubling restored before the vocalic subject).
+fn geminate_hiphil_imperfect_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    use Vowel::*;
+    let pre = Cons::new(prefix_letter(pgn)).with_vowel(Qamats);
+    let c1 = rad(root.pe(), 1).with_vowel(Tsere);
+    match imperfect_suffix_kind(pgn) {
+        Suffix::Zero => Some(hebrew::render(&[pre, c1, rad(root.lamed(), 3)])),
+        Suffix::Vocalic => {
+            let fem_sg =
+                pgn.gender == Some(Gender::Feminine) && pgn.number == Some(Number::Singular);
+            let mut seq = vec![pre, c1];
+            if fem_sg {
+                seq.push(rad(root.lamed(), 3).with_dagesh().with_vowel(Hiriq));
+                seq.push(Cons::mater(letter::YOD));
+            } else {
+                seq.push(rad(root.lamed(), 3).with_dagesh());
+                seq.push(oshureq());
+            }
+            Some(hebrew::render(&seq))
+        }
+        _ => None,
+    }
+}
+
+/// Geminate Hiphil perfect before a consonantal afformative: the contracted
+/// stem takes the linking ô — hăšimmōṯî הֲשִׁמֹּתִי (and the unreduced hē-grade
+/// הֲ/הִ twins).
+fn geminate_hiphil_perfect_otav_variants(root: &Root, pgn: Pgn) -> Vec<String> {
+    use Vowel::*;
+    if hebrew::is_guttural(root.pe()) || root.pe() == letter::RESH {
+        return Vec::new();
+    }
+    let tail: Vec<Cons> = match (pgn.person, pgn.gender, pgn.number) {
+        (Some(Person::First), _, Some(Number::Singular)) => {
+            vec![ocv(letter::TAV, Hiriq), Cons::mater(letter::YOD)]
+        }
+        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Singular)) => {
+            vec![ocv(letter::TAV, Qamats)]
+        }
+        (Some(Person::Second), Some(Gender::Feminine), Some(Number::Singular)) => {
+            vec![Cons::new(letter::TAV)]
+        }
+        (Some(Person::First), _, Some(Number::Plural)) => {
+            vec![Cons::new(letter::NUN), oshureq()]
+        }
+        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Plural)) => {
+            vec![ocv(letter::TAV, Segol), Cons::new(letter::MEM)]
+        }
+        (Some(Person::Second), Some(Gender::Feminine), Some(Number::Plural)) => {
+            vec![ocv(letter::TAV, Segol), Cons::new(letter::NUN)]
+        }
+        _ => return Vec::new(),
+    };
+    let mut out = Vec::new();
+    for he_vowel in [HatafPatah, Hiriq, Tsere] {
+        let mut seq = vec![
+            Cons::new(letter::HE).with_vowel(he_vowel),
+            rad(root.pe(), 1).with_vowel(Hiriq),
+            rad(root.lamed(), 3).with_dagesh().with_vowel(Holam),
+        ];
+        seq.extend(tail.clone());
+        out.push(hebrew::render(&seq));
+    }
+    out
+}
+
+/// Hollow Hophal perfect hûCāC (הוּבָא, הוּשַׁב): he + shureq prefix, the theme
+/// on C1, the etymological vav absorbed.
+fn hollow_hophal_perfect_variants(root: &Root, pgn: Pgn) -> Vec<String> {
+    use Vowel::*;
+    let he = Cons::new(letter::HE);
+    let shureq = oshureq();
+    let c3 = rad(root.lamed(), 3);
+    let three = |g: Gender, num: Number| pgn == Pgn::new(Person::Third, g, num);
+    let mut out = Vec::new();
+    let themes = [Patah, Qamats];
+    if three(Gender::Masculine, Number::Singular) {
+        for theme in themes {
+            out.push(hebrew::render(&[
+                he,
+                shureq,
+                rad(root.pe(), 1).with_vowel(theme),
+                c3,
+            ]));
+        }
+    } else if three(Gender::Common, Number::Plural) {
+        out.push(hebrew::render(&[
+            he,
+            shureq,
+            rad(root.pe(), 1).with_vowel(Sheva),
+            c3,
+            oshureq(),
+        ]));
+    } else if three(Gender::Feminine, Number::Singular) {
+        out.push(hebrew::render(&[
+            he,
+            shureq,
+            rad(root.pe(), 1).with_vowel(Sheva),
+            c3.with_vowel(Qamats),
+            Cons::new(letter::HE),
+        ]));
+    }
+    out
+}
+
+/// Contracted perfect of the doubly-weak hollow III-aleph Hiphil (בוא): before
+/// a consonantal afformative the stem is hēḇēʾ-, the aleph quiescing so the tav
+/// stays soft — hēḇēʾṯā הֵבֵאתָ, hăḇêṯem (the reduced-prefix weqatal grade)
+/// וַהֲבֵאתֶם.
+fn hollow_lamed_aleph_hiphil_perfect_variants(root: &Root, pgn: Pgn) -> Vec<String> {
+    use Vowel::*;
+    let tail: Vec<Cons> = match (pgn.person, pgn.gender, pgn.number) {
+        (Some(Person::First), _, Some(Number::Singular)) => {
+            vec![ocv(letter::TAV, Hiriq), Cons::mater(letter::YOD)]
+        }
+        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Singular)) => {
+            vec![ocv(letter::TAV, Qamats)]
+        }
+        (Some(Person::Second), Some(Gender::Feminine), Some(Number::Singular)) => {
+            vec![Cons::new(letter::TAV)]
+        }
+        (Some(Person::First), _, Some(Number::Plural)) => {
+            vec![Cons::new(letter::NUN), oshureq()]
+        }
+        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Plural)) => {
+            vec![ocv(letter::TAV, Segol), Cons::new(letter::MEM)]
+        }
+        (Some(Person::Second), Some(Gender::Feminine), Some(Number::Plural)) => {
+            vec![ocv(letter::TAV, Segol), Cons::new(letter::NUN)]
+        }
+        _ => return Vec::new(),
+    };
+    let mut out = Vec::new();
+    for he_vowel in [Tsere, HatafPatah] {
+        let mut seq = vec![
+            Cons::new(letter::HE).with_vowel(he_vowel),
+            rad(root.pe(), 1).with_vowel(Tsere),
+            rad(root.lamed(), 3),
+        ];
+        seq.extend(tail.clone());
+        out.push(hebrew::render(&seq));
+    }
+    out
+}
+
+/// III-aleph derived-stem perfect with a consonantal afformative: the strong
+/// builder closes the aleph on a silent sheva (qinnaʾtî קִנַּאְתִּי), but the
+/// aleph quiesces — the theme patah lengthens to tsere and the now-postvocalic
+/// tav loses its dagesh lene: qinnēʾṯî קִנֵּאתִי.
+fn lamed_aleph_derived_perfect_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let i = seq
+        .iter()
+        .position(|c| c.letter == letter::ALEF && c.vowel == Some(Vowel::Sheva))?;
+    if i == 0 || i + 1 >= seq.len() || seq[i - 1].vowel != Some(Vowel::Patah) {
+        return None;
+    }
+    seq[i - 1].vowel = Some(Vowel::Tsere);
+    seq[i].vowel = None;
+    if seq[i + 1].letter == letter::TAV {
+        seq[i + 1].dagesh = false;
+    }
+    Some(hebrew::render(&seq))
+}
+
+/// Pausal twin of the segholate -t infinitive construct: the first segol
+/// lengthens to qamats — šeḇeṯ שֶׁבֶת → šāḇeṯ שָׁבֶת (לָשָׁבֶת).
+fn segholate_inf_pausal_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 3
+        || seq[n - 1].letter != letter::TAV
+        || seq[n - 1].vowel.is_some()
+        || seq[0].vowel != Some(Vowel::Segol)
+        || seq[1].vowel != Some(Vowel::Segol)
+    {
+        return None;
+    }
+    seq[0].vowel = Some(Vowel::Qamats);
+    Some(hebrew::render(&seq))
+}
+
 fn apply_guttural(seq: &mut [Cons], root: &Root) -> bool {
     // For each consonant slot:
     //   - If the letter is a guttural (א ה ח ע) or resh and the slot has
@@ -7020,6 +8765,11 @@ fn apply_guttural(seq: &mut [Cons], root: &Root) -> bool {
     //     the word" or "preceded by a long vowel".
     let mut changed = false;
     for i in 0..seq.len() {
+        // A word-final he with a dagesh is a mappiq (the consonantal 3fs
+        // suffix -āh, לְכָדָהּ), not a doubling — leave it alone.
+        if seq[i].letter == letter::HE && i == seq.len() - 1 {
+            continue;
+        }
         if seq[i].dagesh && hebrew::rejects_dagesh(seq[i].letter) {
             seq[i].dagesh = false;
             changed = true;
