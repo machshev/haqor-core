@@ -117,9 +117,22 @@ pub struct VerbMatch {
 ///   otherwise-identical generated form. Candidate roots already key on the
 ///   bare letter ש and roots are reported by their bare letters, so collapsing
 ///   the dot recovers every sin verb without admitting new roots.
+/// - Plene hiriq (a bare yod mater — no vowel, no dagesh — after a hiriq)
+///   drops, so plene וַיָּשִׂימוּ and defective וַיָּשִׂמוּ normalise alike.
+///   A vowelless, dagesh-less yod after hiriq is always a mater (a consonantal
+///   yod there would carry its own vowel or sheva), so only orthography is
+///   removed. Word-final ־ִי also collapses, which is safe for the same
+///   reason: no form ends in a bare hiriq, so keys can only meet other
+///   hiriq-yod keys.
+/// - A dagesh on resh, aleph, het, or ayin is dropped: these letters cannot
+///   be doubled, so a generated dagesh there (a strong-pattern forte landing
+///   on them, e.g. geminate הֵפֵרּוּ, תָּרֵעּוּ) is an artefact, and the rare
+///   Masoretic anomalies normalise onto the same key. He is left untouched —
+///   its dagesh point is the mappiq (the consonantal 3fs suffix ־ָהּ), which
+///   is meaningful.
 pub(crate) fn canonical_key(form: &str) -> String {
     // Two sequential passes — holam then shureq, each re-parsing the previous
-    // pass's output — then the sin/shin-dot strip.
+    // pass's output — then a hiriq-yod/resh pass and the sin/shin-dot strip.
     fn collapse(form: &str, shureq: bool) -> String {
         let mut out: Vec<Cons> = Vec::new();
         for c in hebrew::parse_pointed(form) {
@@ -141,7 +154,24 @@ pub(crate) fn canonical_key(form: &str) -> String {
     }
     let holam = collapse(form, false);
     let shureq = collapse(&holam, true);
-    shureq
+    let mut out: Vec<Cons> = Vec::new();
+    for mut c in hebrew::parse_pointed(&shureq) {
+        if matches!(
+            c.letter,
+            letter::RESH | letter::ALEF | letter::HET | letter::AYIN
+        ) {
+            c.dagesh = false;
+        }
+        if c.letter == letter::YOD
+            && !c.dagesh
+            && c.vowel.is_none()
+            && out.last().is_some_and(|p| p.vowel == Some(Vowel::Hiriq))
+        {
+            continue;
+        }
+        out.push(c);
+    }
+    hebrew::render(&out)
         .chars()
         .filter(|&c| c != '\u{05C1}' && c != '\u{05C2}')
         .map(|c| if c == '\u{05C7}' { '\u{05B8}' } else { c })
@@ -218,6 +248,21 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
             targets.push(hebrew::render(&alt));
         }
     }
+    // A conjunction can hataf-colour even a non-guttural's initial sheva
+    // (וּשֲׁמָע, וּזֲהַב): restore the plain sheva.
+    if strip > 0
+        && remainder.first().is_some_and(|c| {
+            !hebrew::is_guttural(c.letter)
+                && matches!(
+                    c.vowel,
+                    Some(Vowel::HatafPatah | Vowel::HatafSegol | Vowel::HatafQamats)
+                )
+        })
+    {
+        let mut alt = remainder.to_vec();
+        alt[0].vowel = Some(Vowel::Sheva);
+        targets.push(hebrew::render(&alt));
+    }
     // A proclitic onto a pe-aleph stem swallows the aleph's hataf (לֵאמֹר): restore it.
     if strip > 0
         && remainder
@@ -265,18 +310,22 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
     // After a proclitic prefix, a begedkefet consonant in the stem may carry
     // a dagesh lene that the generator does not produce (e.g. לִזְבֹּחַ vs
     // לִזְבֹחַ). Emit a variant with all begedkefet dageshes stripped so the
-    // forms_match comparison can still succeed.
+    // forms_match comparison can still succeed. Applied to every target
+    // accumulated above, not just the bare remainder — the transforms
+    // compose (לַחְפֹּר needs both the hataf restore and the dagesh strip).
     if strip > 0 {
-        let mut alt = remainder.to_vec();
-        let mut changed = false;
-        for c in &mut alt {
-            if hebrew::is_begedkefet(c.letter) && c.dagesh {
-                c.dagesh = false;
-                changed = true;
+        for t in targets.clone() {
+            let mut alt = hebrew::parse_pointed(&t);
+            let mut changed = false;
+            for c in &mut alt {
+                if hebrew::is_begedkefet(c.letter) && c.dagesh {
+                    c.dagesh = false;
+                    changed = true;
+                }
             }
-        }
-        if changed {
-            targets.push(hebrew::render(&alt));
+            if changed {
+                targets.push(hebrew::render(&alt));
+            }
         }
     }
     targets
