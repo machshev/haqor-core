@@ -4,6 +4,7 @@
 //! table at a time. Currently it generates the `bible` table (OT text from
 //! UXLC plus NT Syriac transliterated into Hebrew letters from SEDRA).
 
+mod haqor_db;
 mod harness;
 mod hebrew_db;
 mod lexicon_db;
@@ -14,6 +15,7 @@ mod sedra;
 mod sedra_db;
 mod uxlc;
 
+pub use haqor_db::shrink_haqor;
 pub use harness::{eval_from_db, parse_eval};
 pub use hebrew_db::{
     book_number, generate_hebrew, normalize_surface, parse_passage, preview_missing,

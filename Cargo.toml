@@ -8,6 +8,13 @@ repository = "https://github.com/machshev/haqor-core"
 readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+default = []
+# Embed data/*.db into the binary and provide `Bible::default()`, for a
+# self-contained binary. Off by default: the CLI and tests read data/ off
+# disk, and the haqor app ships the files as Flutter assets — both via the
+# file-backed `Bible::open`.
+embedded = ["dep:rust-embed", "rusqlite/serialize"]
 
 # Tests exercise the morphology generator heavily (the reverse-index test
 # generates the paradigm of every 22³ root); unoptimized they are unusably
@@ -23,8 +30,8 @@ log = "0.4.22"
 reqwest = { version = "0.12", features = ["blocking", "json", "gzip"] }
 anyhow = "1.0.81"
 bytes = "1.10.1"
-rusqlite = { version = "0.37.0", features = ["bundled", "serialize"] }
-rust-embed = { version = "8.7.2", features = ["debug-embed"] }
+rusqlite = { version = "0.37.0", features = ["bundled"] }
+rust-embed = { version = "8.7.2", features = ["debug-embed"], optional = true }
 quick-xml = "0.37"
 serde_json = "1.0"
 csv = "1.3"
