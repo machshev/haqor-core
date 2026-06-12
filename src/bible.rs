@@ -1,7 +1,5 @@
 // Bible resource
 
-#[cfg(feature = "embedded")]
-use rusqlite::MAIN_DB;
 use rusqlite::{Connection, OpenFlags, OptionalExtension};
 #[cfg(feature = "embedded")]
 use rust_embed::Embed;
@@ -352,8 +350,8 @@ fn fold_consonants(word: &str) -> String {
 #[folder = "data/"]
 struct Asset;
 
-/// The auxiliary databases attached alongside the main `haqor.db` schema,
-/// paired with the schema names the queries expect.
+/// The databases attached to an otherwise-empty main connection, paired with
+/// the schema names the queries expect.
 const ATTACHED_DBS: [(&str, &str); 4] = [
     // Rust-generated bible text.
     ("bible.db", "bibledb"),
@@ -379,12 +377,6 @@ impl Default for Bible {
     fn default() -> Self {
         let mut db = Connection::open_in_memory().unwrap();
 
-        // Legacy Python-generated DB: lexicon, morphology, occurrences.
-        let haqor_db = Asset::get("haqor.db").unwrap();
-        let haqor_data = Box::new(haqor_db.data.into_owned());
-        db.deserialize_bytes(MAIN_DB, Box::leak(haqor_data))
-            .unwrap();
-
         for (file, schema) in ATTACHED_DBS {
             db.execute_batch(&format!("ATTACH DATABASE ':memory:' AS {schema}"))
                 .unwrap();
@@ -399,17 +391,20 @@ impl Default for Bible {
 
 impl Bible {
     /// Open the databases file-backed and read-only from `data_dir`, which
-    /// must contain `haqor.db` plus the four attached databases (`bible.db`,
-    /// `sedra.db`, `hebrew.db`, `lexicon.db`).
+    /// must contain the four attached databases (`bible.db`, `sedra.db`,
+    /// `hebrew.db`, `lexicon.db`).
     ///
     /// The files are opened with `immutable=1`, so SQLite creates no journal
     /// or lock files and the directory may be read-only — but the files must
     /// not be modified while the connection is open.
     pub fn open<P: AsRef<Path>>(data_dir: P) -> rusqlite::Result<Self> {
         let dir = data_dir.as_ref();
+        // Empty in-memory main schema; all data lives in the attached files.
+        // The URI flag is what lets the ATTACH below use `file:...?immutable=1`.
         let db = Connection::open_with_flags(
-            db_uri(dir, "haqor.db"),
-            OpenFlags::SQLITE_OPEN_READ_ONLY
+            ":memory:",
+            OpenFlags::SQLITE_OPEN_READ_WRITE
+                | OpenFlags::SQLITE_OPEN_CREATE
                 | OpenFlags::SQLITE_OPEN_URI
                 | OpenFlags::SQLITE_OPEN_NO_MUTEX,
         )?;
@@ -870,13 +865,15 @@ impl Bible {
     }
 
     /// OT (Hebrew Bible) occurrences of the same consonantal root as a SEDRA
-    /// NT root, pulled from the legacy haqor.db `root_occurrences` table (one
-    /// row per distinct root/verse pair, root pre-folded to medial letter
-    /// forms — see `generate::shrink_haqor`). The SEDRA root is rendered with
-    /// medial forms, so the [`crate::transliterate::lookup_key`] of it matches
-    /// directly. OT books only (<40), so these never duplicate the
-    /// SEDRA-derived NT occurrences. Roots without a Hebrew cognate simply
-    /// yield nothing.
+    /// NT root, answered from `hebrewdb`/`lexdb` like
+    /// [`Bible::hebrew_root_occurrences`]. The SEDRA root is rendered with
+    /// medial letter forms, so its [`crate::transliterate::lookup_key`]
+    /// matches the medial-form roots in those databases directly. Unlike the
+    /// Hebrew lookup, the noun arm also accepts a consonantal-headword match
+    /// (`bdb.cons`): SEDRA roots are often biliteral (יד, לב, הר) where BDB
+    /// keys the noun under an empty or geminate root. OT books only, so these
+    /// never duplicate the SEDRA-derived NT occurrences. Roots without a
+    /// Hebrew cognate simply yield nothing.
     pub fn ot_root_occurrences(
         &self,
         sedra_key_root: i64,
@@ -887,9 +884,19 @@ impl Bible {
             |row| row.get(0),
         )?;
         let key = crate::transliterate::lookup_key(&root);
+        if key.is_empty() {
+            return Ok(Vec::new());
+        }
         let mut stmt = self.db.prepare(
-            "SELECT book, chapter, verse FROM root_occurrences \
-             WHERE root = ?1 ORDER BY book, chapter, verse",
+            "SELECT DISTINCT o.book, o.chapter, o.verse FROM hebrewdb.occurrences o \
+             WHERE o.surface_id IN ( \
+                 SELECT a.surface_id FROM hebrewdb.analyses a WHERE a.root = ?1 \
+                 UNION \
+                 SELECT n.surface_id FROM hebrewdb.noun_analyses n \
+                 JOIN lexdb.bdb b ON b.word = n.stem \
+                 WHERE b.root = ?1 OR b.cons = ?1 \
+             ) \
+             ORDER BY o.book, o.chapter, o.verse",
         )?;
         stmt.query_map([key], |row| {
             Ok(WordOccurrence {
@@ -1002,7 +1009,7 @@ mod embedded_tests {
 
     #[test]
     fn test_embedded_database_open() {
-        if Asset::get("haqor.db").is_none() {
+        if Asset::get("bible.db").is_none() {
             eprintln!("skipping: data/*.db not embedded in this build");
             return;
         }
@@ -1021,7 +1028,7 @@ mod tests {
     /// folder; skip the DB-backed tests in that case.
     macro_rules! require_data {
         () => {
-            if !Path::new("data/haqor.db").exists() {
+            if !Path::new("data/bible.db").exists() {
                 eprintln!("skipping: data/*.db not generated in this checkout");
                 return;
             }
@@ -1114,8 +1121,9 @@ mod tests {
         assert!(tree.len() > 1, "root should have several lexemes");
         assert_eq!(tree.iter().filter(|l| l.is_current).count(), 1);
 
-        // OT occurrences of the same root (כתב "write") come from legacy
-        // haqor.db, are all OT (<40), and never overlap the NT SEDRA set.
+        // OT occurrences of the same root (כתב "write") come from the
+        // hebrewdb/lexdb lookup, are all OT (<40), and never overlap the NT
+        // SEDRA set.
         let ot_occ = bible.ot_root_occurrences(w.key_root).unwrap();
         assert!(!ot_occ.is_empty(), "expected OT occurrences for root כתב");
         assert!(ot_occ.iter().all(|o| o.book < 40));
