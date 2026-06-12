@@ -80,12 +80,6 @@ enum Commands {
 
 #[derive(Subcommand, Debug)]
 enum DbCommands {
-    /// Copy haqor.db from bible-modules output to data/haqor.db
-    Update {
-        /// Source path (defaults to ../bible-modules/modules/haqor/haqor.db)
-        #[arg(short, long)]
-        source: Option<PathBuf>,
-    },
     /// Generate the `bible` table (OT UXLC + NT SEDRA transliterated) into a
     /// standalone SQLite database from the checked-in source texts.
     GenBible {
@@ -259,20 +253,6 @@ fn main() -> Result<()> {
             print_parse_noun(&word, &lexicon_db)?;
         }
         Commands::Db { command } => match command {
-            DbCommands::Update { source } => {
-                let src = source
-                    .unwrap_or_else(|| PathBuf::from("../bible-modules/modules/haqor/haqor.db"));
-                let dst = PathBuf::from("data/haqor.db");
-
-                info!("Copying {} -> {}", src.display(), dst.display());
-
-                std::fs::copy(&src, &dst).with_context(|| {
-                    format!("Failed to copy {} to {}", src.display(), dst.display())
-                })?;
-                let bytes = haqor_core::generate::shrink_haqor(&dst)?;
-
-                println!("Updated {} ({} bytes)", dst.display(), bytes);
-            }
             DbCommands::GenBible { src_texts, output } => {
                 let total = haqor_core::generate::generate_bible(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
