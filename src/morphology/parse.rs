@@ -144,13 +144,12 @@ pub(crate) fn canonical_key(form: &str) -> String {
                 } else {
                     c.vowel == Some(Vowel::Holam)
                 };
-            if is_mater {
-                if let Some(prev) = out.last_mut() {
-                    if prev.vowel.is_none() {
-                        prev.vowel = Some(if shureq { Vowel::Qubuts } else { Vowel::Holam });
-                        continue;
-                    }
-                }
+            if is_mater
+                && let Some(prev) = out.last_mut()
+                && prev.vowel.is_none()
+            {
+                prev.vowel = Some(if shureq { Vowel::Qubuts } else { Vowel::Holam });
+                continue;
             }
             out.push(c);
         }
@@ -202,7 +201,7 @@ fn forms_match(generated: &str, targets: &[String], target_keys: &[String]) -> b
         return false;
     }
     let key = canonical_key(generated);
-    target_keys.iter().any(|k| *k == key)
+    target_keys.contains(&key)
 }
 
 /// Candidate stem renderings for one proclitic peeling: the bare peeled
@@ -607,7 +606,7 @@ const HEBREW_CONSONANTS: [char; 22] = [
     letter::TAV,
 ];
 
-/// A reverse lookup index mapping each generated form's [`canonical_key`] to the
+/// A reverse lookup index mapping each generated form's `canonical_key` to the
 /// analyses that produce it. Built once over every triliteral root, it turns
 /// reverse parsing from per-surface generate-and-test (O(surfaces × roots ×
 /// paradigm)) into O(surfaces × log N) lookups. Use [`parse_word_indexed`] to
@@ -649,8 +648,8 @@ impl ReverseIndex {
     /// surface's candidate roots, and a non-matching root simply contributes keys
     /// no surface hits — so lookups return exactly what [`parse_word`] would find.
     ///
-    /// Each form's key is a 128-bit hash of its [`canonical_key`] (see
-    /// [`key_hash`]): 16 inline bytes, no allocation, and at 128 bits an
+    /// Each form's key is a 128-bit hash of its `canonical_key` (see
+    /// `key_hash`): 16 inline bytes, no allocation, and at 128 bits an
     /// accidental collision across the ~34M distinct keys is astronomically
     /// unlikely (~1e-24), so lookups return exactly what a string-keyed index
     /// would.
@@ -718,7 +717,7 @@ impl ReverseIndex {
 /// Index-backed twin of [`parse_word_filtered`]: identical proclitic peeling,
 /// sandhi target variants, wayyiqtol handling, dedup and ordering, but each
 /// candidate-root enumeration + paradigm match is replaced by a hash lookup of
-/// the target's [`canonical_key`]. With the same `roots` filter it returns the
+/// the target's `canonical_key`. With the same `roots` filter it returns the
 /// same analyses as `parse_word_filtered`, far faster in bulk.
 pub fn parse_word_indexed(
     word: &str,

@@ -1153,13 +1153,27 @@ mod tests {
 
     use super::*;
 
+    /// The data/*.db files are generated locally (`db gen-*` / legacy Python
+    /// pipeline) and not committed, so CI checkouts embed an empty data/
+    /// folder; skip the DB-backed tests in that case.
+    macro_rules! require_data {
+        () => {
+            if Asset::get("haqor.db").is_none() {
+                eprintln!("skipping: data/*.db not embedded in this build");
+                return;
+            }
+        };
+    }
+
     #[test]
     fn test_database_open() {
+        require_data!();
         let _bible = Bible::default();
     }
 
     #[test]
     fn test_get_reads_bible_table() {
+        require_data!();
         let bible = Bible::default();
 
         // OT (Genesis 1:1) comes from the UXLC source: 7 words, ends with sof
@@ -1178,6 +1192,7 @@ mod tests {
 
     #[test]
     fn nt_hebrew_round_trips_through_syriac() {
+        require_data!();
         let bible = Bible::default();
         let mut stmt = bible
             .db
@@ -1198,12 +1213,14 @@ mod tests {
 
     #[test]
     fn test_chapter_count() {
+        require_data!();
         let bible = Bible::default();
         assert_eq!(bible.chapter_count(1).unwrap(), 50); // Genesis has 50 chapters
     }
 
     #[test]
     fn test_lex_lookup() {
+        require_data!();
         let bible = Bible::default();
         // יִבְרָא (yiḇrā) - root ברא, BDB entries exist for "create"
         let entries = bible.lex_lookup("יִבְרָא").unwrap();
@@ -1214,6 +1231,7 @@ mod tests {
 
     #[test]
     fn test_sedra_word_info() {
+        require_data!();
         let bible = Bible::default();
         // First word of Matthew 1:1 (NT) is כתבא "book/writing/Scripture".
         let matt = bible.get(40, 1, 1).unwrap();
@@ -1270,6 +1288,7 @@ mod tests {
 
     #[test]
     fn test_hebrew_word_info_verb() {
+        require_data!();
         let bible = Bible::default();
         // בָּרָא "created" (Gen 1:1), root ברא — a strong III-aleph verb that
         // bridges directly to BDB.
@@ -1295,6 +1314,7 @@ mod tests {
 
     #[test]
     fn test_hebrew_word_info_noun() {
+        require_data!();
         let bible = Bible::default();
         // אֱלֹהִים "God" — a noun whose stem matches a BDB headword (root אלה).
         let info = bible.hebrew_word_info("אֱלֹהִים").expect("noun should parse");
@@ -1319,6 +1339,7 @@ mod tests {
 
     #[test]
     fn test_get_word_morphology() {
+        require_data!();
         let bible = Bible::default();
         // אֱלֹהִים (Elohim) - a simple word without prefix/suffix complications
         let morph = bible.get_word_morphology("אֱלֹהִים").unwrap();

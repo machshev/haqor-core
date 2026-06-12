@@ -9,28 +9,26 @@
 //! be reviewed and the engine improved over successive passes.
 //!
 //! Tables:
-//! - `surface`    — one row per distinct OT token (cantillation-normalised, so
-//!                  forms differing only in te'amim collapse together): its
-//!                  text, how often it occurs, how many candidate analyses it
-//!                  has, and whether any is attested. This is the review
-//!                  backbone.
-//! - `occurrences`— one row per token position (surface_id → book/chapter/verse),
-//!                  mirroring SEDRA's occurrences table.
-//! - `analyses`   — one row per candidate verb analysis (root/binyan/form/pgn/…);
-//!                  empty for unparsed surfaces, one for unambiguous, many for
-//!                  homographs.
+//! - `surface` — one row per distinct OT token (cantillation-normalised, so
+//!   forms differing only in te'amim collapse together): its text, how often
+//!   it occurs, how many candidate analyses it has, and whether any is
+//!   attested. This is the review backbone.
+//! - `occurrences` — one row per token position (surface_id →
+//!   book/chapter/verse), mirroring SEDRA's occurrences table.
+//! - `analyses` — one row per candidate verb analysis (root/binyan/form/pgn/…);
+//!   empty for unparsed surfaces, one for unambiguous, many for homographs.
 //! - `noun_analyses` — one row per candidate noun analysis (stem/class/inflected
-//!                  slot/prefix), produced by reverse-parsing each surface
-//!                  against the lexicon's common-, adjective- and proper-noun
-//!                  paradigms. Independent of the verb pass, so a true homograph
-//!                  carries rows in both. Only populated when a lexicon is given.
-//! - `roots`      — distinct roots seen, with gizra and frequency.
+//!   slot/prefix), produced by reverse-parsing each surface against the
+//!   lexicon's common-, adjective- and proper-noun paradigms. Independent of
+//!   the verb pass, so a true homograph carries rows in both. Only populated
+//!   when a lexicon is given.
+//! - `roots` — distinct roots seen, with gizra and frequency.
 //!
 //! Two views make the gaps reviewable, frequency-ranked so the highest-impact
 //! cases come first:
-//! - `review_missing`   — surfaces with no analysis (the "missing bits").
+//! - `review_missing` — surfaces with no analysis (the "missing bits").
 //! - `review_ambiguous` — surfaces with >1 candidate, joined to their analyses
-//!                        (the "multi-candidate roots").
+//!   (the "multi-candidate roots").
 //!
 //! The DB is fully regenerable from the engine; manual review is meant to drive
 //! fixes in the morphology code (or a future lexeme inventory), not hand-edits

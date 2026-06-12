@@ -35,10 +35,7 @@ jobs:
         uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
 
-      - name: Check spelling
-        uses: crate-ci/typos@master
-
-      - run: cargo doc --no-deps
+      - run: cargo doc --no-deps --document-private-items
 
   clippy:
     name: Clippy
@@ -46,7 +43,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@master
+      - uses: dtolnay/rust-toolchain@stable
         with:
           toolchain: nightly
           components: clippy

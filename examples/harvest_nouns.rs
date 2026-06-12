@@ -81,9 +81,7 @@ fn main() -> anyhow::Result<()> {
     // (and not verb-headed). Returns Some(strong) for the noun head.
     // Returns (strong, is_proper) for the noun/adjective head, or None.
     fn noun_head(morph: &str, lem: &str) -> Option<(i64, bool)> {
-        let Some(body) = morph.strip_prefix('H') else {
-            return None;
-        }; // Hebrew only
+        let body = morph.strip_prefix('H')?; // Hebrew only
         let msegs: Vec<&str> = body.split('/').collect();
         let lsegs: Vec<&str> = lem.split('/').collect();
         if msegs.iter().any(|s| {

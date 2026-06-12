@@ -159,6 +159,10 @@ pub struct NounInflection {
     pub text: String,
 }
 
+/// One segolate helping-vowel row: label, suffix gender/number, and the
+/// suffix consonants appended to the singular base.
+type SegolateSuffixRow<'a> = (&'a str, Gender, Number, &'a [(char, Option<Vowel>)]);
+
 /// Generate the inflectional paradigm of a noun stem.
 pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
     let mut out = vec![
@@ -321,9 +325,9 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
     {
         for short in [Vowel::Patah, Vowel::Hiriq, Vowel::Qubuts] {
             let gem_base = |connector: Option<Vowel>| {
-                let mut c1c = c1.clone();
+                let mut c1c = *c1;
                 c1c.vowel = Some(short);
-                let mut c2c = c2.clone();
+                let mut c2c = *c2;
                 c2c.dagesh = true;
                 c2c.vowel = connector;
                 vec![c1c, c2c]
@@ -403,7 +407,7 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
     // forms (the sheva variants are already produced by the loop above).
     if stem.kind == NounStemKind::Segolate {
         use Vowel::*;
-        let variants: [(&str, Gender, Number, &[(char, Option<Vowel>)]); 3] = [
+        let variants: [SegolateSuffixRow; 3] = [
             (
                 "Sg + 2ms",
                 Gender::Masculine,

@@ -106,8 +106,10 @@ pub fn parse_ot_coverage(bible_db: &Path, book_filter: Option<u8>, limit: usize)
         .map(|token| {
             let matches = parse_word(token);
             let n = matches.len();
-            let mut s = Stats::default();
-            s.tokens = 1;
+            let mut s = Stats {
+                tokens: 1,
+                ..Default::default()
+            };
             s.ambiguity[n.min(5)] = 1;
             if n > 0 {
                 s.parsed = 1;
