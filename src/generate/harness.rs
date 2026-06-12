@@ -399,7 +399,9 @@ pub fn parse_eval(
         .fold(
             || (Score::default(), Vec::new()),
             |(acc, mut v), (s, m)| {
-                if misses > 0 && let Some(m) = m {
+                if misses > 0
+                    && let Some(m) = m
+                {
                     v.push(m);
                 }
                 (acc.merge(s), v)
@@ -424,7 +426,10 @@ pub fn parse_eval(
         }
         let mut rows: Vec<(Miss, usize)> = counts.into_iter().collect();
         rows.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
-        println!("\ntop {} misses (kind, count, surface, gold):", misses.min(rows.len()));
+        println!(
+            "\ntop {} misses (kind, count, surface, gold):",
+            misses.min(rows.len())
+        );
         for ((kind, surface, tag), n) in rows.into_iter().take(misses) {
             println!("  {kind:14} {n:5}  {surface}  [{tag}]");
         }
@@ -446,8 +451,8 @@ pub fn eval_from_db(morphhb_dir: &Path, hebrew_db: &Path, limit: usize) -> Resul
     };
 
     // surface text → its stored verb analyses (binyan name, form name, pgn label).
-    let db = Connection::open(hebrew_db)
-        .with_context(|| format!("opening {}", hebrew_db.display()))?;
+    let db =
+        Connection::open(hebrew_db).with_context(|| format!("opening {}", hebrew_db.display()))?;
     // Exclude curated-harvest rows (gizra = 'Irregular'): the harness measures
     // what the *generator* produces, so a hand-listed lookup form must not be
     // credited as a parse. Generated analyses carry a gizra class, never this.
@@ -583,9 +588,7 @@ fn print_report(s: &Score, aligned: bool, prefilter: bool) {
             s.prefilter_excluded_function, s.prefilter_excluded_proper
         );
         println!();
-        println!(
-            "  verb-aware (proper-noun yields to plausible verb reading):"
-        );
+        println!("  verb-aware (proper-noun yields to plausible verb reading):");
         println!(
             "    refined false exclusions: {:>7}  ({:.2}% of gold verbs)",
             s.prefilter_refined_excluded,

@@ -474,7 +474,10 @@ fn analyze_surfaces(
         VerbStrategy::Indexed => {
             info!("Building reverse-parse index over all triliteral roots");
             let index = ReverseIndex::build();
-            info!("Reverse-parsing {} distinct surfaces (indexed)", surfaces.len());
+            info!(
+                "Reverse-parsing {} distinct surfaces (indexed)",
+                surfaces.len()
+            );
             surfaces
                 .par_iter()
                 .zip(lexical.par_iter())
@@ -491,7 +494,11 @@ fn analyze_surfaces(
             info!(
                 "Reverse-parsing {} distinct surfaces (per-surface{})",
                 surfaces.len(),
-                if roots.is_some() { ", lexicon-filtered" } else { "" }
+                if roots.is_some() {
+                    ", lexicon-filtered"
+                } else {
+                    ""
+                }
             );
             surfaces
                 .par_iter()
@@ -768,7 +775,14 @@ fn build_hebrew(
                 classes[id],
                 aramaic_only[id].then_some("aramaic"),
             ))?;
-            insert_analyses(id as i64, matches, nouns, gold, &mut ana_stmt, &mut noun_stmt)?;
+            insert_analyses(
+                id as i64,
+                matches,
+                nouns,
+                gold,
+                &mut ana_stmt,
+                &mut noun_stmt,
+            )?;
         }
 
         let mut occ_stmt = tx.prepare(
@@ -824,8 +838,7 @@ pub fn preview_missing(
     language: &str,
     passage: Option<(u8, u8)>,
 ) -> Result<(usize, usize)> {
-    let db =
-        Connection::open(output).with_context(|| format!("opening {}", output.display()))?;
+    let db = Connection::open(output).with_context(|| format!("opening {}", output.display()))?;
 
     let missing: Vec<(i64, String, i64)> = {
         let mut sql = String::from(
@@ -850,7 +863,11 @@ pub fn preview_missing(
         }
         let mut stmt = db.prepare(&sql)?;
         let rows = stmt.query_map([], |r| {
-            Ok((r.get::<_, i64>(0)?, r.get::<_, String>(1)?, r.get::<_, i64>(2)?))
+            Ok((
+                r.get::<_, i64>(0)?,
+                r.get::<_, String>(1)?,
+                r.get::<_, i64>(2)?,
+            ))
         })?;
         rows.collect::<rusqlite::Result<_>>()?
     };
@@ -898,8 +915,15 @@ pub fn preview_missing(
             format!("→ lexical:{c}")
         } else if !g.is_empty() {
             let m = g[0];
-            let more = if g.len() > 1 { format!(" (+{} more)", g.len() - 1) } else { String::new() };
-            format!("→ verb* {} {} {} {}{}", m.root, m.binyan, m.form, m.pgn, more)
+            let more = if g.len() > 1 {
+                format!(" (+{} more)", g.len() - 1)
+            } else {
+                String::new()
+            };
+            format!(
+                "→ verb* {} {} {} {}{}",
+                m.root, m.binyan, m.form, m.pgn, more
+            )
         } else if !v.is_empty() {
             let m = &v[0];
             let root: String = m.root.letters.iter().collect();
@@ -938,10 +962,7 @@ pub fn preview_missing(
         let mark = if resolves { "✓" } else { " " };
         println!("  {mark} {text:<20} (×{occ:<3})  {result}");
     }
-    println!(
-        "\n{resolved} of {} would now resolve.",
-        missing.len()
-    );
+    println!("\n{resolved} of {} would now resolve.", missing.len());
     Ok((missing.len(), resolved))
 }
 
@@ -974,7 +995,10 @@ fn update_missing(
         let rows = stmt.query_map([], |r| Ok((r.get::<_, i64>(0)?, r.get::<_, String>(1)?)))?;
         rows.collect::<rusqlite::Result<_>>()?
     };
-    info!("Incremental: re-analysing {} missing surfaces", missing.len());
+    info!(
+        "Incremental: re-analysing {} missing surfaces",
+        missing.len()
+    );
 
     let texts: Vec<String> = missing.iter().map(|(_, t)| t.clone()).collect();
     // This pass writes analyses into the DB, so it must match the full rebuild's

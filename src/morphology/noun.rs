@@ -375,7 +375,10 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
     // Feminine -ôt plurals keep the -ōt marker and attach the suffix after the
     // tav. Both ending sets occur: the plural set (מִצְותָיו -āw, מִצְותֶיךָ) and
     // the singular set fused onto -ōt (מִשְׁפְּחֹתָם -ām, לְצִבְאֹתָם). Emit both.
-    if matches!(stem.kind, NounStemKind::FeminineHe | NounStemKind::FeminineT) {
+    if matches!(
+        stem.kind,
+        NounStemKind::FeminineHe | NounStemKind::FeminineT
+    ) {
         for &(p, g, n) in PRON_SUFFIXES {
             let label = format!(
                 "Pl + {}{}{}",
@@ -401,9 +404,24 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
     if stem.kind == NounStemKind::Segolate {
         use Vowel::*;
         let variants: [(&str, Gender, Number, &[(char, Option<Vowel>)]); 3] = [
-            ("Sg + 2ms", Gender::Masculine, Number::Singular, &[(letter::KAF, Some(Qamats))]),
-            ("Sg + 2mp", Gender::Masculine, Number::Plural, &[(letter::KAF, Some(Segol)), (letter::MEM, None)]),
-            ("Sg + 2fp", Gender::Feminine, Number::Plural, &[(letter::KAF, Some(Segol)), (letter::NUN, None)]),
+            (
+                "Sg + 2ms",
+                Gender::Masculine,
+                Number::Singular,
+                &[(letter::KAF, Some(Qamats))],
+            ),
+            (
+                "Sg + 2mp",
+                Gender::Masculine,
+                Number::Plural,
+                &[(letter::KAF, Some(Segol)), (letter::MEM, None)],
+            ),
+            (
+                "Sg + 2fp",
+                Gender::Feminine,
+                Number::Plural,
+                &[(letter::KAF, Some(Segol)), (letter::NUN, None)],
+            ),
         ];
         for (label, _g, _n, suffix) in variants {
             let mut base = segolate_singular_base(stem);

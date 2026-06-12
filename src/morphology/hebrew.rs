@@ -319,7 +319,10 @@ mod tests {
             Cons::new(letter::LAMED).with_vowel(Vowel::Segol),
             Cons::new(letter::KAF),
         ];
-        assert_eq!(render(&seq), "\u{05DE}\u{05B6}\u{05DC}\u{05B6}\u{05DA}\u{05B0}",);
+        assert_eq!(
+            render(&seq),
+            "\u{05DE}\u{05B6}\u{05DC}\u{05B6}\u{05DA}\u{05B0}",
+        );
     }
 
     #[test]

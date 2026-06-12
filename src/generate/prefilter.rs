@@ -41,57 +41,211 @@ const DAGESH: char = '\u{05BC}';
 /// common verbs (e.g. עוֹד) so the filter never costs verb recall.
 const FUNCTION_WORDS: &[&str] = &[
     // personal pronouns
-    "אֲנִי", "אָנֹכִי", "אַתָּה", "אַתְּ", "אַתֶּם", "אַתֶּן", "הוּא", "הִיא", "הֵם", "הֵמָּה", "הֵן",
-    "הֵנָּה", "אֲנַחְנוּ", "נַחְנוּ",
+    "אֲנִי",
+    "אָנֹכִי",
+    "אַתָּה",
+    "אַתְּ",
+    "אַתֶּם",
+    "אַתֶּן",
+    "הוּא",
+    "הִיא",
+    "הֵם",
+    "הֵמָּה",
+    "הֵן",
+    "הֵנָּה",
+    "אֲנַחְנוּ",
+    "נַחְנוּ",
     // demonstratives
-    "זֶה", "זֹאת", "זוֹ", "אֵלֶּה",
+    "זֶה",
+    "זֹאת",
+    "זוֹ",
+    "אֵלֶּה",
     // interrogatives / relative
-    "מִי", "מָה", "מַה", "מֶה", "אֲשֶׁר",
+    "מִי",
+    "מָה",
+    "מַה",
+    "מֶה",
+    "אֲשֶׁר",
     // independent prepositions
-    "אֶל", "עַל", "עַד", "אַחַר", "אַחֲרֵי", "בֵּין", "תַּחַת", "נֶגֶד", "לִפְנֵי", "עִם", "מִן",
-    "אֵת", "אֶת", "יַעַן", "לְמַעַן",
+    "אֶל",
+    "עַל",
+    "עַד",
+    "אַחַר",
+    "אַחֲרֵי",
+    "בֵּין",
+    "תַּחַת",
+    "נֶגֶד",
+    "לִפְנֵי",
+    "עִם",
+    "מִן",
+    "אֵת",
+    "אֶת",
+    "יַעַן",
+    "לְמַעַן",
     // particles / negatives / adverbs
-    "לֹא", "אַל", "אִם", "כִּי", "גַּם", "אַף", "רַק", "אַךְ", "הִנֵּה", "נָא", "פֶּן", "שָׁם",
-    "פֹּה", "כֹּה", "כֵּן", "עַתָּה", "אָז", "מְאֹד", "אֵין", "יֵשׁ", "אוֹ", "כֹּל", "כָּל",
+    "לֹא",
+    "אַל",
+    "אִם",
+    "כִּי",
+    "גַּם",
+    "אַף",
+    "רַק",
+    "אַךְ",
+    "הִנֵּה",
+    "נָא",
+    "פֶּן",
+    "שָׁם",
+    "פֹּה",
+    "כֹּה",
+    "כֵּן",
+    "עַתָּה",
+    "אָז",
+    "מְאֹד",
+    "אֵין",
+    "יֵשׁ",
+    "אוֹ",
+    "כֹּל",
+    "כָּל",
     // inflected prepositions / object marker / particles carrying a pronominal
     // suffix — closed-class paradigms, never verbs, so always safe to exclude.
     // ל "to/for"
-    "לִי", "לְךָ", "לָךְ", "לוֹ", "לָהּ", "לָנוּ", "לָכֶם", "לָכֶן", "לָהֶם", "לָהֶן",
+    "לִי",
+    "לְךָ",
+    "לָךְ",
+    "לוֹ",
+    "לָהּ",
+    "לָנוּ",
+    "לָכֶם",
+    "לָכֶן",
+    "לָהֶם",
+    "לָהֶן",
     // ב "in/with"
-    "בִּי", "בְּךָ", "בָּךְ", "בּוֹ", "בָּהּ", "בָּנוּ", "בָּכֶם", "בָּם", "בָּהֶם", "בָּהֶן",
+    "בִּי",
+    "בְּךָ",
+    "בָּךְ",
+    "בּוֹ",
+    "בָּהּ",
+    "בָּנוּ",
+    "בָּכֶם",
+    "בָּם",
+    "בָּהֶם",
+    "בָּהֶן",
     // עִם "with"
-    "עִמִּי", "עִמְּךָ", "עִמָּךְ", "עִמּוֹ", "עִמָּהּ", "עִמָּנוּ", "עִמָּכֶם", "עִמָּהֶם",
+    "עִמִּי",
+    "עִמְּךָ",
+    "עִמָּךְ",
+    "עִמּוֹ",
+    "עִמָּהּ",
+    "עִמָּנוּ",
+    "עִמָּכֶם",
+    "עִמָּהֶם",
     // אֵת object marker
-    "אֹתִי", "אֹתְךָ", "אֹתָךְ", "אֹתוֹ", "אֹתָהּ", "אֹתָנוּ", "אֶתְכֶם", "אֶתְכֶן", "אֹתָם",
-    "אֹתָן", "אֶתְהֶם", "אֶתְהֶן",
+    "אֹתִי",
+    "אֹתְךָ",
+    "אֹתָךְ",
+    "אֹתוֹ",
+    "אֹתָהּ",
+    "אֹתָנוּ",
+    "אֶתְכֶם",
+    "אֶתְכֶן",
+    "אֹתָם",
+    "אֹתָן",
+    "אֶתְהֶם",
+    "אֶתְהֶן",
     // אֵת/אִתּ "with (accompaniment)"
-    "אִתִּי", "אִתְּךָ", "אִתָּךְ", "אִתּוֹ", "אִתָּהּ", "אִתָּנוּ", "אִתְּכֶם", "אִתָּם", "אִתָּן",
+    "אִתִּי",
+    "אִתְּךָ",
+    "אִתָּךְ",
+    "אִתּוֹ",
+    "אִתָּהּ",
+    "אִתָּנוּ",
+    "אִתְּכֶם",
+    "אִתָּם",
+    "אִתָּן",
     // אֶל "to/toward"
-    "אֵלַי", "אֵלֶיךָ", "אֵלַיִךְ", "אֵלָיו", "אֵלֶיהָ", "אֵלֵינוּ", "אֲלֵיכֶם", "אֲלֵיכֶן",
-    "אֲלֵיהֶם", "אֲלֵיהֶן",
+    "אֵלַי",
+    "אֵלֶיךָ",
+    "אֵלַיִךְ",
+    "אֵלָיו",
+    "אֵלֶיהָ",
+    "אֵלֵינוּ",
+    "אֲלֵיכֶם",
+    "אֲלֵיכֶן",
+    "אֲלֵיהֶם",
+    "אֲלֵיהֶן",
     // עַל "upon/against"
-    "עָלַי", "עָלֶיךָ", "עָלַיִךְ", "עָלָיו", "עָלֶיהָ", "עָלֵינוּ", "עֲלֵיכֶם", "עֲלֵיכֶן",
-    "עֲלֵיהֶם", "עֲלֵיהֶן",
+    "עָלַי",
+    "עָלֶיךָ",
+    "עָלַיִךְ",
+    "עָלָיו",
+    "עָלֶיהָ",
+    "עָלֵינוּ",
+    "עֲלֵיכֶם",
+    "עֲלֵיכֶן",
+    "עֲלֵיהֶם",
+    "עֲלֵיהֶן",
     // מִן "from"
-    "מִמֶּנִּי", "מִמְּךָ", "מִמֵּךְ", "מִמֶּנּוּ", "מִמֶּנָּה", "מִכֶּם", "מִכֶּן", "מֵהֶם", "מֵהֶן",
+    "מִמֶּנִּי",
+    "מִמְּךָ",
+    "מִמֵּךְ",
+    "מִמֶּנּוּ",
+    "מִמֶּנָּה",
+    "מִכֶּם",
+    "מִכֶּן",
+    "מֵהֶם",
+    "מֵהֶן",
     "מֵהֵמָּה",
     // הִנֵּה "behold" + suffix
-    "הִנְנִי", "הִנֶּנִּי", "הִנּוֹ", "הִנָּם",
+    "הִנְנִי",
+    "הִנֶּנִּי",
+    "הִנּוֹ",
+    "הִנָּם",
     // Pentateuchal ketiv of the 3fs pronoun (written הוא, read הִיא), plus its
     // demonstrative use after the article. Closed-class, never a verb.
-    "הִוא", "הַהִוא", "הַהוּא",
+    "הִוא",
+    "הַהִוא",
+    "הַהוּא",
     // pausal / variant 2ms pronoun
     "אָתָּה",
     // poetic & defective suffixed prepositions the citation set above misses:
     // אֶל "to" (pausal/defective), מִן "from" (poetic לָמוֹ), עִם "with",
     // אַחַר/אַחֲרֵי "after", תַּחַת "under", כְּ "like".
-    "אֵלָי", "אֲלֵהֶם", "אֲלֵיהֶן", "לָמוֹ", "בָּמוֹ", "כְּמוֹ", "כָּמוֹנִי", "כָּמוֹךָ", "כָּמֹהוּ",
-    "עִמָּדִי", "עִמָּדוֹ",
-    "אַחֲרַי", "אַחֲרֶיךָ", "אַחֲרָיו", "אַחֲרֶיהָ", "אַחֲרֵינוּ", "אַחֲרֵיכֶם", "אַחֲרֵיהֶם",
-    "תַּחְתַּי", "תַּחְתֶּיךָ", "תַּחְתָּיו", "תַּחְתֵּינוּ", "תַּחְתֵּיהֶם", "תַּחְתָּם",
+    "אֵלָי",
+    "אֲלֵהֶם",
+    "אֲלֵיהֶן",
+    "לָמוֹ",
+    "בָּמוֹ",
+    "כְּמוֹ",
+    "כָּמוֹנִי",
+    "כָּמוֹךָ",
+    "כָּמֹהוּ",
+    "עִמָּדִי",
+    "עִמָּדוֹ",
+    "אַחֲרַי",
+    "אַחֲרֶיךָ",
+    "אַחֲרָיו",
+    "אַחֲרֶיהָ",
+    "אַחֲרֵינוּ",
+    "אַחֲרֵיכֶם",
+    "אַחֲרֵיהֶם",
+    "תַּחְתַּי",
+    "תַּחְתֶּיךָ",
+    "תַּחְתָּיו",
+    "תַּחְתֵּינוּ",
+    "תַּחְתֵּיהֶם",
+    "תַּחְתָּם",
     // high-frequency adverbs with no verb homograph in this exact pointing
-    "סָבִיב", "יַחְדָּו", "יַחַד", "אֵיךְ", "אֵיכָה", "מַדּוּעַ", "לָכֵן", "אוּלַי",
-    "טֶרֶם", "אָמֵן", "סֶלָה",
+    "סָבִיב",
+    "יַחְדָּו",
+    "יַחַד",
+    "אֵיךְ",
+    "אֵיכָה",
+    "מַדּוּעַ",
+    "לָכֵן",
+    "אוּלַי",
+    "טֶרֶם",
+    "אָמֵן",
+    "סֶלָה",
     // Aramaic relative/genitive particle דִּי "which/of" (also the noun דַּי
     // "sufficiency"); closed-class, never a verb.
     "דִּי",
@@ -99,53 +253,112 @@ const FUNCTION_WORDS: &[&str] = &[
     // surfaces (and proclitic-peeled remainders like the בֵין of וּבֵין) often
     // drop the dagesh that the citation spelling carries, so list them so they
     // classify as function words too. אָנִי is the qamats-pointed variant of אֲנִי.
-    "בוֹ", "בֵין", "אָנִי",
+    "בוֹ",
+    "בֵין",
+    "אָנִי",
     // Dagesh-less surface variants of suffixed prepositions (the begedkefet drops
     // its lene after certain preceding words): בִי/בְךָ/בָהֶם/בָכֶם beside the
     // dotted בִּי/בְּךָ/בָּהֶם/בָּכֶם already listed. Plus further closed-class
     // preposition/particle + suffix paradigms attested in the text.
-    "בִי", "בְךָ", "בָהֶם", "בָכֶם",
-    "עָלָי", "עָלָיִךְ", "מֵעָלָי", "אַחֲרָי", "עֲלֵהֶם", "עָלֵימוֹ",
-    "עִמָּם", "מִמֶּךָּ", "תַּחְתֶּיהָ", "נֶגְדּוֹ", "לְנֶגְדִּי", "בַּעֲדוֹ",
-    "כָמוֹךָ", "אוֹתָךְ",
+    "בִי",
+    "בְךָ",
+    "בָהֶם",
+    "בָכֶם",
+    "עָלָי",
+    "עָלָיִךְ",
+    "מֵעָלָי",
+    "אַחֲרָי",
+    "עֲלֵהֶם",
+    "עָלֵימוֹ",
+    "עִמָּם",
+    "מִמֶּךָּ",
+    "תַּחְתֶּיהָ",
+    "נֶגְדּוֹ",
+    "לְנֶגְדִּי",
+    "בַּעֲדוֹ",
+    "כָמוֹךָ",
+    "אוֹתָךְ",
     // אֵין/אַיִן "there is not" + suffix; הִנֵּה "behold" + suffix.
-    "אֵינֶנּוּ", "אֵינְךָ", "הִנֵּנִי",
-    "אֵינֶנִּי", "אֵינָם", "אֵינֶנָּה", "אֵינְכֶם", "הִנְּךָ",
+    "אֵינֶנּוּ",
+    "אֵינְךָ",
+    "הִנֵּנִי",
+    "אֵינֶנִּי",
+    "אֵינָם",
+    "אֵינֶנָּה",
+    "אֵינְכֶם",
+    "הִנְּךָ",
     // closed-class preposition/particle + suffix (defective & variant spellings)
-    "כָּכֶם", "אַחֲרֵיהֶן", "אֲלֵכֶם", "נֶגְדֶּךָ", "כָמֹהוּ", "כָמוֹנִי",
-    "אֵלָיִךְ", "תַּחְתָּי", "נֶגְדִּי", "בֵּינֵינוּ", "תַחְתָּיו", "אֶצְלוֹ", "לְנֶגְדָּם",
-    "אֶצְלִי", "עֲלֵהֶן", "תַחְתָּם", "לְמַעַנְכֶם", "יֶשְׁנוֹ", "בֵּינֵיהֶם",
+    "כָּכֶם",
+    "אַחֲרֵיהֶן",
+    "אֲלֵכֶם",
+    "נֶגְדֶּךָ",
+    "כָמֹהוּ",
+    "כָמוֹנִי",
+    "אֵלָיִךְ",
+    "תַּחְתָּי",
+    "נֶגְדִּי",
+    "בֵּינֵינוּ",
+    "תַחְתָּיו",
+    "אֶצְלוֹ",
+    "לְנֶגְדָּם",
+    "אֶצְלִי",
+    "עֲלֵהֶן",
+    "תַחְתָּם",
+    "לְמַעַנְכֶם",
+    "יֶשְׁנוֹ",
+    "בֵּינֵיהֶם",
     // High-frequency adverbs/particles missing their dagesh-less or variant
     // surface: כֹה (כֹּה without lene), חִנָּם "freely", מַעְלָה "upward"
     // (covers וָמַעְלָה / לְמַעְלָה after proclitic-peeling).
-    "כֹה", "חִנָּם", "מַעְלָה",
+    "כֹה",
+    "חִנָּם",
+    "מַעְלָה",
     // Frozen prepositions — lexicalised bound infinitives/nominals that never
     // function as live verbs: לִקְרַאת "to meet" (+suffix), בַּעֲבוּר "for the
     // sake of", and the adverbial הַרְבֵּה "much/many".
-    "לִקְרַאת", "לִקְרָאתוֹ", "בַּעֲבוּר", "הַרְבֵּה",
+    "לִקְרַאת",
+    "לִקְרָאתוֹ",
+    "בַּעֲבוּר",
+    "הַרְבֵּה",
     // Number + pronominal suffix — closed-class, never a verb: שְׁנֵיהֶם "the
     // two of them".
     "שְׁנֵיהֶם",
     // Aramaic closed-class particles: דְּנָה "this", אֱדַיִן/בֵּאדַיִן "then",
     // דִי "which/of" (dagesh-less variant of the דִּי already listed).
-    "דְּנָה", "אֱדַיִן", "בֵּאדַיִן", "דִי", "קֳבֵל", "קֳדָם",
+    "דְּנָה",
+    "אֱדַיִן",
+    "בֵּאדַיִן",
+    "דִי",
+    "קֳבֵל",
+    "קֳדָם",
     // Adverb פֹה "here" — the dagesh-less variant of the פֹּה already listed.
     "פֹה",
     // Frozen adverbs/interjections — closed-class, never live verbs:
     // מִלְמָעְלָה "from above", פִּתְאֹם "suddenly", אָכֵן "surely/indeed",
     // חָלִילָה "far be it".
-    "מִלְמָעְלָה", "פִּתְאֹם", "אָכֵן", "חָלִילָה",
+    "מִלְמָעְלָה",
+    "פִּתְאֹם",
+    "אָכֵן",
+    "חָלִילָה",
     // Optative particle לוּ / לֻא "if only, would that" (Strong 3863) — closed-
     // class, never a verb. (לֹא the negative is already listed above.)
-    "לוּ", "לֻא",
+    "לוּ",
+    "לֻא",
     // Aramaic closed-class preposition + pronominal suffix לֵהּ "to him", and the
     // Aramaic 3fs/3mp/2mp variants; never a Hebrew verb.
-    "לֵהּ", "לַהּ", "לְהוֹן", "לְכוֹן", "לָנָא",
+    "לֵהּ",
+    "לַהּ",
+    "לְהוֹן",
+    "לְכוֹן",
+    "לָנָא",
     // Poetic/relative particles and interjections, plus a pronoun spelling
     // variant — all closed-class, never verbs: זוּ "which/this" (relative,
     // Strong 2098), אֲהָהּ "alas", רֵיקָם "in vain/empty-handed" (frozen adverb),
     // אֲנָחְנוּ "we" (defective spelling of אֲנַחְנוּ already listed).
-    "זוּ", "אֲהָהּ", "רֵיקָם", "אֲנָחְנוּ",
+    "זוּ",
+    "אֲהָהּ",
+    "רֵיקָם",
+    "אֲנָחְנוּ",
 ];
 
 /// Closed-class surfaces matched by **exact** pointed form — no proclitic
@@ -342,9 +555,7 @@ const FUNCTION_WORDS_EXACT: &[&str] = &[
 /// so it never matches the lexicon's proper-noun inventory. We add the attested
 /// surface forms directly. The proclitic-peeled remainders (יהוָה / יהוִה, with no
 /// shewa under the yod) let prefixed forms — לַיהוָה, בַּיהוָה, וַיהוָה — resolve too.
-const DIVINE_NAMES: &[&str] = &[
-    "יְהוָה", "יְהוִה", "יֱהוִה", "יהוָה", "יהוִה",
-];
+const DIVINE_NAMES: &[&str] = &["יְהוָה", "יְהוִה", "יֱהוִה", "יהוָה", "יהוִה"];
 
 /// Recognises non-verb tokens by exact pointed form.
 pub struct Prefilter {
@@ -469,7 +680,11 @@ fn strip_initial_dagesh(form: &str) -> Option<String> {
         return None;
     }
     let stripped: String = first.chars().filter(|&c| c != DAGESH).collect();
-    Some(std::iter::once(stripped).chain(cl[1..].iter().cloned()).collect())
+    Some(
+        std::iter::once(stripped)
+            .chain(cl[1..].iter().cloned())
+            .collect(),
+    )
 }
 
 /// The surface itself plus every remainder after peeling 1–2 leading proclitic

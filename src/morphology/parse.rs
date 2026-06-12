@@ -139,7 +139,11 @@ pub(crate) fn canonical_key(form: &str) -> String {
             // holam pass: a vav bearing holam; shureq pass: a vav bearing the
             // dagesh-as-shureq point with no vowel.
             let is_mater = c.letter == letter::VAV
-                && if shureq { c.dagesh && c.vowel.is_none() } else { c.vowel == Some(Vowel::Holam) };
+                && if shureq {
+                    c.dagesh && c.vowel.is_none()
+                } else {
+                    c.vowel == Some(Vowel::Holam)
+                };
             if is_mater {
                 if let Some(prev) = out.last_mut() {
                     if prev.vowel.is_none() {
@@ -345,7 +349,17 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
 fn add_label_twins(matches: &mut Vec<VerbMatch>) {
     let mut seen: std::collections::HashSet<_> = matches
         .iter()
-        .map(|m| (m.root.letters, m.binyan, m.form, m.pgn, m.object_suffix, m.prefix.clone(), m.vav_consecutive))
+        .map(|m| {
+            (
+                m.root.letters,
+                m.binyan,
+                m.form,
+                m.pgn,
+                m.object_suffix,
+                m.prefix.clone(),
+                m.vav_consecutive,
+            )
+        })
         .collect();
     let mut twins = Vec::new();
     for m in matches.iter() {
@@ -383,7 +397,15 @@ fn add_label_twins(matches: &mut Vec<VerbMatch>) {
         }
     }
     for t in twins {
-        let key = (t.root.letters, t.binyan, t.form, t.pgn, t.object_suffix, t.prefix.clone(), t.vav_consecutive);
+        let key = (
+            t.root.letters,
+            t.binyan,
+            t.form,
+            t.pgn,
+            t.object_suffix,
+            t.prefix.clone(),
+            t.vav_consecutive,
+        );
         if seen.insert(key) {
             matches.push(t);
         }
@@ -445,9 +467,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                 // Wayyiqtol is handled by the dedicated pass below, with the
                 // consecutive vav recognised as such rather than as a plain
                 // proclitic; skip it here to avoid duplicate analyses.
-                if vf.form == Form::Wayyiqtol
-                    || !forms_match(&vf.text, &targets, &target_keys)
-                {
+                if vf.form == Form::Wayyiqtol || !forms_match(&vf.text, &targets, &target_keys) {
                     continue;
                 }
                 if seen.insert((
@@ -563,10 +583,28 @@ fn pack_radicals(letters: [char; 3]) -> [u8; 3] {
 
 /// The 22 base Hebrew consonants (no final forms) — the radical alphabet.
 const HEBREW_CONSONANTS: [char; 22] = [
-    letter::ALEF, letter::BET, letter::GIMEL, letter::DALET, letter::HE, letter::VAV,
-    letter::ZAYIN, letter::HET, letter::TET, letter::YOD, letter::KAF, letter::LAMED,
-    letter::MEM, letter::NUN, letter::SAMEKH, letter::AYIN, letter::PE, letter::TSADE,
-    letter::QOF, letter::RESH, letter::SHIN, letter::TAV,
+    letter::ALEF,
+    letter::BET,
+    letter::GIMEL,
+    letter::DALET,
+    letter::HE,
+    letter::VAV,
+    letter::ZAYIN,
+    letter::HET,
+    letter::TET,
+    letter::YOD,
+    letter::KAF,
+    letter::LAMED,
+    letter::MEM,
+    letter::NUN,
+    letter::SAMEKH,
+    letter::AYIN,
+    letter::PE,
+    letter::TSADE,
+    letter::QOF,
+    letter::RESH,
+    letter::SHIN,
+    letter::TAV,
 ];
 
 /// A reverse lookup index mapping each generated form's [`canonical_key`] to the
@@ -594,8 +632,8 @@ pub struct ReverseIndex {
 /// deterministic across runs. Collisions across the index's ~34M distinct keys
 /// are vanishingly improbable in a 128-bit space.
 fn key_hash(canonical: &str) -> u128 {
-    use std::hash::{Hash, Hasher};
     use std::collections::hash_map::DefaultHasher;
+    use std::hash::{Hash, Hasher};
     let mut hi = DefaultHasher::new();
     canonical.hash(&mut hi);
     let mut lo = DefaultHasher::new();
@@ -708,7 +746,15 @@ pub fn parse_word_indexed(
                 if e.form == Form::Wayyiqtol || !in_filter(&letters) {
                     continue;
                 }
-                if seen.insert((letters, e.binyan, e.form, e.pgn, e.object_suffix, strip, false)) {
+                if seen.insert((
+                    letters,
+                    e.binyan,
+                    e.form,
+                    e.pgn,
+                    e.object_suffix,
+                    strip,
+                    false,
+                )) {
                     matches.push(VerbMatch {
                         root: Root::from_letters(letters),
                         binyan: e.binyan,
@@ -1067,7 +1113,13 @@ mod tests {
         // עָשָׂה — Qal perfect 3ms of עשׂה (sin). The generator renders ש with a
         // shin dot, so the match must ignore the sin/shin distinction.
         let matches = parse_word("עָשָׂה");
-        assert!(has_match(&matches, "עשה", Binyan::Qal, Form::Perfect, "3ms"));
+        assert!(has_match(
+            &matches,
+            "עשה",
+            Binyan::Qal,
+            Form::Perfect,
+            "3ms"
+        ));
     }
 
     #[test]
@@ -1120,9 +1172,25 @@ mod tests {
         // sample spanning strong, weak, prefixed, suffixed and wayyiqtol forms.
         let index = ReverseIndex::build();
         let sample = [
-            "קָטַל", "שָׁמַר", "וְשָׁמַר", "יִשְׁמֹר", "וַיִּשְׁמֹר", "הִקְטִיל", "נִשְׁמַר",
-            "עָשָׂה", "יַעֲשֶׂה", "וַיַּעַשׂ", "לֵאמֹר", "שְׁלָחַנִי", "יְבָרֶכְךָ",
-            "וַיִּתְּנֵם", "בְּמָלְכוֹ", "הוֹלִידוֹ", "מֶלֶךְ", "וַיָּקָם", "יֵלֵכוּ",
+            "קָטַל",
+            "שָׁמַר",
+            "וְשָׁמַר",
+            "יִשְׁמֹר",
+            "וַיִּשְׁמֹר",
+            "הִקְטִיל",
+            "נִשְׁמַר",
+            "עָשָׂה",
+            "יַעֲשֶׂה",
+            "וַיַּעַשׂ",
+            "לֵאמֹר",
+            "שְׁלָחַנִי",
+            "יְבָרֶכְךָ",
+            "וַיִּתְּנֵם",
+            "בְּמָלְכוֹ",
+            "הוֹלִידוֹ",
+            "מֶלֶךְ",
+            "וַיָּקָם",
+            "יֵלֵכוּ",
         ];
         let key = |m: &VerbMatch| {
             (
@@ -1137,7 +1205,10 @@ mod tests {
         };
         for w in sample {
             let mut a: Vec<_> = parse_word(w).iter().map(key).collect();
-            let mut b: Vec<_> = parse_word_indexed(w, &index, None).iter().map(key).collect();
+            let mut b: Vec<_> = parse_word_indexed(w, &index, None)
+                .iter()
+                .map(key)
+                .collect();
             a.sort();
             b.sort();
             assert_eq!(a, b, "index/per-surface mismatch for {w}");
@@ -1157,10 +1228,13 @@ mod tests {
     fn parses_perfect_nonsubject_object_suffix() {
         // נְתַתִּיךָ — Qal perfect 1cs of נתן + 2ms ("I gave you").
         let m1 = parse_word("נְתַתִּיךָ");
-        assert!(m1.iter().any(|m| m.root.letters.iter().collect::<String>() == "נתנ"
-            && m.form == Form::Perfect
-            && m.pgn.label() == "1cs"
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("2ms")));
+        assert!(
+            m1.iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "נתנ"
+                    && m.form == Form::Perfect
+                    && m.pgn.label() == "1cs"
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("2ms"))
+        );
         // אֲהַבְתָּנוּ — Qal perfect 2ms of אהב + 1cp ("you loved us").
         let m2 = parse_word("אֲהַבְתָּנוּ");
         assert!(has_obj(&m2, "אהב", Form::Perfect, "1cp"));
@@ -1173,10 +1247,13 @@ mod tests {
     fn parses_participle_object_suffix() {
         // מְצַוְּךָ — Piel participle ms of צוה (III-He) + 2ms ("the one commanding you").
         let m1 = parse_word("מְצַוְּךָ");
-        assert!(m1.iter().any(|m| m.root.letters.iter().collect::<String>() == "צוה"
-            && m.binyan == Binyan::Piel
-            && m.form == Form::ParticipleActive
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("2ms")));
+        assert!(
+            m1.iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "צוה"
+                    && m.binyan == Binyan::Piel
+                    && m.form == Form::ParticipleActive
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("2ms"))
+        );
         // שֹׁמֶרְךָ — Qal participle ms of שמר + 2ms ("the one keeping you").
         let m2 = parse_word("שֹׁמֶרְךָ");
         assert!(has_obj(&m2, "שמר", Form::ParticipleActive, "2ms"));
@@ -1194,9 +1271,13 @@ mod tests {
         // וַיְבִאֵהוּ — בוא Hiphil + 3ms ("and he brought him"); the î mater is
         // written defectively (yᵉḇiʔ-, not the plene yᵉḇîʔ-).
         let matches = parse_word("וַיְבִאֵהוּ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "בוא"
-            && m.binyan == Binyan::Hiphil
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("3ms")));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "בוא"
+                    && m.binyan == Binyan::Hiphil
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("3ms"))
+        );
     }
 
     #[test]
@@ -1204,8 +1285,9 @@ mod tests {
         // וַיֵּשְׁתְּ — שתה Qal wayyiqtol ("and he drank"); the he drops and C2
         // doubles into a tsere-prefixed monosyllable (wayyēšt).
         let matches = parse_word("וַיֵּשְׁתְּ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שתה"
-            && m.form == Form::Wayyiqtol));
+        assert!(matches.iter().any(
+            |m| m.root.letters.iter().collect::<String>() == "שתה" && m.form == Form::Wayyiqtol
+        ));
     }
 
     #[test]
@@ -1213,9 +1295,13 @@ mod tests {
         // וַיִּצֹק — יצק Qal wayyiqtol ("and he poured"); the I-yod drops like a
         // I-nun, the prefix taking hiriq and the theme holam (yiṣōq).
         let matches = parse_word("וַיִּצֹק");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "יצק"
-            && m.binyan == Binyan::Qal
-            && m.form == Form::Imperfect));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "יצק"
+                    && m.binyan == Binyan::Qal
+                    && m.form == Form::Imperfect)
+        );
     }
 
     #[test]
@@ -1223,7 +1309,11 @@ mod tests {
         // לַעְזֹר — לְ + עֲזֹר ("to help"); the proclitic closes the ayin on a
         // silent sheva, which the parser restores to the generator's hataf.
         let matches = parse_word("לַעְזֹר");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "עזר"));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "עזר")
+        );
     }
 
     #[test]
@@ -1231,8 +1321,12 @@ mod tests {
         // וַיִּגְוַע — גוע wayyiqtol ("and he expired"); the medial vav is a true
         // radical, so it inflects as a strong III-guttural, not a hollow verb.
         let matches = parse_word("וַיִּגְוַע");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "גוע"
-            && m.binyan == Binyan::Qal));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "גוע"
+                    && m.binyan == Binyan::Qal)
+        );
     }
 
     #[test]
@@ -1240,8 +1334,12 @@ mod tests {
         // וַיַּאַסְפוּ — אסף Qal wayyiqtol 3mp ("and they gathered"); the I-aleph
         // patah grade (yaʾasp̄û) beside the builder's segol yeʾesp̄û.
         let matches = parse_word("וַיַּאַסְפוּ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "אספ"
-            && m.binyan == Binyan::Qal));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "אספ"
+                    && m.binyan == Binyan::Qal)
+        );
     }
 
     #[test]
@@ -1249,8 +1347,12 @@ mod tests {
         // וַיַּשְׁקְ — שקה Hiphil apocopated wayyiqtol ("and he watered"); the
         // segol/î + he drops, the qof closing on a silent sheva.
         let matches = parse_word("וַיַּשְׁקְ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שקה"
-            && m.binyan == Binyan::Hiphil));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "שקה"
+                    && m.binyan == Binyan::Hiphil)
+        );
     }
 
     #[test]
@@ -1258,10 +1360,14 @@ mod tests {
         // וַהֲשִׁבֹתִים — שוב Hiphil perfect 1cs + 3mp ("and I will restore them");
         // the suffix attaches to the linking-ô perfect stem (hăšîḇōṯî-).
         let matches = parse_word("וַהֲשִׁבֹתִים");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שוב"
-            && m.binyan == Binyan::Hiphil
-            && m.form == Form::Perfect
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("3mp")));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "שוב"
+                    && m.binyan == Binyan::Hiphil
+                    && m.form == Form::Perfect
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("3mp"))
+        );
     }
 
     #[test]
@@ -1269,8 +1375,12 @@ mod tests {
         // יוֹלֵדָה — ילד Qal active participle fs ("woman in labour"); the -â
         // feminine (qōṭēlâ), beside the segolate yōleḏeṯ.
         let matches = parse_word("יוֹלֵדָה");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "ילד"
-            && m.form == Form::ParticipleActive));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "ילד"
+                    && m.form == Form::ParticipleActive)
+        );
     }
 
     #[test]
@@ -1278,9 +1388,13 @@ mod tests {
         // נָפֹצוּ — פוץ Niphal perfect 3cp ("they were scattered"); the hollow ô
         // sits on C1 (nāp̄ôṣû), not the strong נִפְוַץ.
         let matches = parse_word("נָפֹצוּ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "פוצ"
-            && m.binyan == Binyan::Niphal
-            && m.form == Form::Perfect));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "פוצ"
+                    && m.binyan == Binyan::Niphal
+                    && m.form == Form::Perfect)
+        );
     }
 
     #[test]
@@ -1288,10 +1402,14 @@ mod tests {
         // נָשַׁמּוּ — שמם Niphal perfect 3cp ("they were made desolate"); the
         // doubled radical contracts to nāCaC, doubling before the vocalic -û.
         let matches = parse_word("נָשַׁמּוּ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שממ"
-            && m.binyan == Binyan::Niphal
-            && m.form == Form::Perfect
-            && m.pgn.label() == "3cp"));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "שממ"
+                    && m.binyan == Binyan::Niphal
+                    && m.form == Form::Perfect
+                    && m.pgn.label() == "3cp")
+        );
     }
 
     #[test]
@@ -1299,9 +1417,13 @@ mod tests {
         // אֱמָר — אמר Qal imperative 2ms in pause; the theme holam lengthens to
         // qamats (ʾĕmār), beside the contextual ʾĕmōr.
         let matches = parse_word("אֱמָר");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "אמר"
-            && m.binyan == Binyan::Qal
-            && m.form == Form::Imperative));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "אמר"
+                    && m.binyan == Binyan::Qal
+                    && m.form == Form::Imperative)
+        );
     }
 
     #[test]
@@ -1309,9 +1431,13 @@ mod tests {
         // וְיַחְפְּרוּ — חפר Qal imperfect 3mp; the I-guttural closes the prefix
         // syllable on a silent sheva, the pe taking a dagesh lene (yaḥpᵊrû).
         let matches = parse_word("וְיַחְפְּרוּ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "חפר"
-            && m.form == Form::Imperfect
-            && m.pgn.label() == "3mp"));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "חפר"
+                    && m.form == Form::Imperfect
+                    && m.pgn.label() == "3mp")
+        );
     }
 
     #[test]
@@ -1319,9 +1445,13 @@ mod tests {
         // יִשְׁמָעוּ — שמע Qal imperfect 3mp in pause; the theme restores to
         // qamats (yišmāʕû), unlike the contextual yišmᵊʕû.
         let matches = parse_word("יִשְׁמָעוּ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "שמע"
-            && m.form == Form::Imperfect
-            && m.pgn.label() == "3mp"));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "שמע"
+                    && m.form == Form::Imperfect
+                    && m.pgn.label() == "3mp")
+        );
     }
 
     #[test]
@@ -1329,8 +1459,12 @@ mod tests {
         // בִּנְפֹל — נפל Qal inf construct ("in falling"); the nun is kept (nᵊp̄ōl),
         // not assimilated to the dropped pōl.
         let matches = parse_word("בִּנְפֹל");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "נפל"
-            && m.form == Form::InfinitiveConstruct));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "נפל"
+                    && m.form == Form::InfinitiveConstruct)
+        );
     }
 
     #[test]
@@ -1338,10 +1472,14 @@ mod tests {
         // הֵחֵלּוּ — חלל Hiphil perfect 3cp ("they began"); the doubled radical
         // contracts to the hēCēC shape, doubling before the vocalic -û.
         let matches = parse_word("הֵחֵלּוּ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "חלל"
-            && m.binyan == Binyan::Hiphil
-            && m.form == Form::Perfect
-            && m.pgn.label() == "3cp"));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "חלל"
+                    && m.binyan == Binyan::Hiphil
+                    && m.form == Form::Perfect
+                    && m.pgn.label() == "3cp")
+        );
     }
 
     #[test]
@@ -1349,9 +1487,13 @@ mod tests {
         // לַהֲמִיתוֹ — מות Hiphil inf construct + 3ms ("to kill him"); the hāmîṯ
         // infinitive reduces to hămîṯ- before the suffix.
         let matches = parse_word("לַהֲמִיתוֹ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "מות"
-            && m.binyan == Binyan::Hiphil
-            && m.form == Form::InfinitiveConstruct));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "מות"
+                    && m.binyan == Binyan::Hiphil
+                    && m.form == Form::InfinitiveConstruct)
+        );
     }
 
     #[test]
@@ -1359,12 +1501,19 @@ mod tests {
         // הִרְאַנִי — ראה Hiphil perfect 3ms + 1cs ("he showed me"); the III-He
         // Hiphil links the suffix on a patah, not the Qal's qamats.
         let matches = parse_word("הִרְאַנִי");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "ראה"
-            && m.binyan == Binyan::Hiphil
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "ראה"
+                    && m.binyan == Binyan::Hiphil
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs"))
+        );
         // Regression: the Qal qamats grade still parses (עָשָׂהוּ).
         let m2 = parse_word("עָשָׂהוּ");
-        assert!(m2.iter().any(|m| m.root.letters.iter().collect::<String>() == "עשה"));
+        assert!(
+            m2.iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "עשה")
+        );
     }
 
     #[test]
@@ -1372,8 +1521,12 @@ mod tests {
         // אֶעְבְּרָה — עבר Qal cohortative 1cs ("let me cross over"); the I-guttural
         // takes a silent sheva closing the prefix syllable, the bet a dagesh lene.
         let matches = parse_word("אֶעְבְּרָה");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "עבר"
-            && m.binyan == Binyan::Qal));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "עבר"
+                    && m.binyan == Binyan::Qal)
+        );
     }
 
     #[test]
@@ -1381,13 +1534,19 @@ mod tests {
         // אוֹיְבַי — איב (now a true-triliteral qōṭēl, not hollow) participle mp +
         // 1cs ("my enemies").
         let m1 = parse_word("אוֹיְבַי");
-        assert!(m1.iter().any(|m| m.root.letters.iter().collect::<String>() == "איב"
-            && m.form == Form::ParticipleActive
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+        assert!(
+            m1.iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "איב"
+                    && m.form == Form::ParticipleActive
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs"))
+        );
         // The -ay form cascades to any mp participle (שֹׁמְרַי "those keeping me").
         let m2 = parse_word("שֹׁמְרַי");
-        assert!(m2.iter().any(|m| m.root.letters.iter().collect::<String>() == "שמר"
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+        assert!(
+            m2.iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "שמר"
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs"))
+        );
     }
 
     #[test]
@@ -1415,8 +1574,12 @@ mod tests {
         // וַיַּעֲנֵנִי — ענה Qal wayyiqtol + 1cs ("and he answered me"); the he
         // elides and the suffix links on a tsere.
         let matches = parse_word("וַיַּעֲנֵנִי");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "ענה"
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "ענה"
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs"))
+        );
     }
 
     #[test]
@@ -1424,8 +1587,12 @@ mod tests {
         // וַיַּעַזְבֵנִי — עזב Qal wayyiqtol + 1cs ("and he forsook me"); the C1
         // ayin's hataf fills to a full patah as the suffixed stem closes it.
         let matches = parse_word("וַיַּעַזְבֵנִי");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "עזב"
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs")));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "עזב"
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("1cs"))
+        );
     }
 
     #[test]
@@ -1433,9 +1600,13 @@ mod tests {
         // נִבְּאִים — נבא Niphal participle mp ("prophesying"); the radical nun
         // assimilates into the bet (niḇbᵊʔîm), as in the perfect.
         let matches = parse_word("נִבְּאִים");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "נבא"
-            && m.binyan == Binyan::Niphal
-            && m.form == Form::ParticipleActive));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "נבא"
+                    && m.binyan == Binyan::Niphal
+                    && m.form == Form::ParticipleActive)
+        );
     }
 
     #[test]
@@ -1443,8 +1614,12 @@ mod tests {
         // וַיִּמְצָאֻהוּ — מצא Qal imperfect 3mp + 3ms ("and they found him"); the
         // quiescent aleph carries the subject û defectively as a qubuts.
         let matches = parse_word("וַיִּמְצָאֻהוּ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "מצא"
-            && m.object_suffix.map(|p| p.label()).as_deref() == Some("3ms")));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "מצא"
+                    && m.object_suffix.map(|p| p.label()).as_deref() == Some("3ms"))
+        );
     }
 
     #[test]
@@ -1452,8 +1627,12 @@ mod tests {
         // וַיִּוָּעַץ — יעץ Niphal wayyiqtol ("and he took counsel"); the I-vav
         // root doubles the vav (yiwwāʕaṣ), not the yod the builder defaults to.
         let matches = parse_word("וַיִּוָּעַץ");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "יעצ"
-            && m.binyan == Binyan::Niphal));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "יעצ"
+                    && m.binyan == Binyan::Niphal)
+        );
     }
 
     #[test]
@@ -1461,9 +1640,13 @@ mod tests {
         // נְטֵה — נטה Qal imperative ("stretch out"); the nun is kept, not
         // assimilated.
         let matches = parse_word("נְטֵה");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "נטה"
-            && m.binyan == Binyan::Qal
-            && m.form == Form::Imperative));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "נטה"
+                    && m.binyan == Binyan::Qal
+                    && m.form == Form::Imperative)
+        );
     }
 
     #[test]
@@ -1479,12 +1662,14 @@ mod tests {
         // תֹּאבֵדוּן — אבד Qal Imperfect 2mp: the energic -ûn restores the C2
         // tsere the bare plural reduced (tōʔḇᵊḏû → tōʔḇēḏûn).
         let matches = parse_word("תֹּאבֵדוּן");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "אבד"
-            && m.form == Form::Imperfect));
+        assert!(matches.iter().any(
+            |m| m.root.letters.iter().collect::<String>() == "אבד" && m.form == Form::Imperfect
+        ));
         // תִּשְׁמָעוּן — שמע, the qamats (a-theme) twin.
         let m2 = parse_word("תִּשְׁמָעוּן");
-        assert!(m2.iter().any(|m| m.root.letters.iter().collect::<String>() == "שמע"
-            && m.form == Form::Imperfect));
+        assert!(m2.iter().any(
+            |m| m.root.letters.iter().collect::<String>() == "שמע" && m.form == Form::Imperfect
+        ));
     }
 
     #[test]
@@ -1500,9 +1685,13 @@ mod tests {
         // (dehiq) dagesh forte on the word-initial nun; the generator never
         // produces the doubled nun, so the parser must strip it.
         let matches = parse_word("נַּעֲשֶׂה");
-        assert!(matches.iter().any(|m| m.root.letters.iter().collect::<String>() == "עשה"
-            && m.binyan == Binyan::Qal
-            && m.form == Form::Imperfect
-            && m.pgn.label() == "1cp"));
+        assert!(
+            matches
+                .iter()
+                .any(|m| m.root.letters.iter().collect::<String>() == "עשה"
+                    && m.binyan == Binyan::Qal
+                    && m.form == Form::Imperfect
+                    && m.pgn.label() == "1cp")
+        );
     }
 }

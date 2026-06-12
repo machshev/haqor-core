@@ -418,8 +418,8 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
     let tx = db.transaction()?;
     let mut rows = 0;
     {
-        let mut stmt = tx
-            .prepare("INSERT OR REPLACE INTO bdb VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)")?;
+        let mut stmt =
+            tx.prepare("INSERT OR REPLACE INTO bdb VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)")?;
         loop {
             match reader.read_event_into(&mut buf)? {
                 Event::Start(e) => match e.name().as_ref() {
@@ -563,9 +563,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         .to_string();
 
                         let word = tidy(&word);
-                        if is_root_entry
-                            && let Ok(r) = Root::parse(&word)
-                        {
+                        if is_root_entry && let Ok(r) = Root::parse(&word) {
                             current_root = r.letters.iter().collect();
                         }
                         // Derivatives inherit the section root; if it is still
@@ -733,9 +731,8 @@ fn load_roots(db: &mut Connection, lexical_index: &Path) -> Result<usize> {
     // Source 1: lemmas already loaded into `english`, minus proper nouns.
     let mut strong_roots: BTreeSet<String> = BTreeSet::new();
     {
-        let mut stmt = db.prepare(
-            "SELECT word FROM english WHERE pos NOT LIKE 'n-pr%' AND pos <> 'np'",
-        )?;
+        let mut stmt =
+            db.prepare("SELECT word FROM english WHERE pos NOT LIKE 'n-pr%' AND pos <> 'np'")?;
         let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
         for word in rows {
             if let Ok(root) = Root::parse(&word?) {

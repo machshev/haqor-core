@@ -625,9 +625,8 @@ impl Bible {
 
         // Prefer a BDB-resolvable verb; else a resolvable noun; else whatever
         // analysis exists (verb before noun).
-        if let Some((root, binyan, tense, pgn, prefix, vav_con, _)) = verb
-            .as_ref()
-            .filter(|_| verb_resolves || !noun_resolves)
+        if let Some((root, binyan, tense, pgn, prefix, vav_con, _)) =
+            verb.as_ref().filter(|_| verb_resolves || !noun_resolves)
         {
             let (person, gender, number) = decode_pgn(pgn);
             let gloss = self.hebrew_root_gloss(root);
@@ -720,7 +719,9 @@ impl Bible {
             .query_map([root], |row| {
                 Ok(BdbEntry {
                     headword: normalize_hebrew_combining(
-                        row.get::<_, Option<String>>(0)?.unwrap_or_default().as_str(),
+                        row.get::<_, Option<String>>(0)?
+                            .unwrap_or_default()
+                            .as_str(),
                     ),
                     root: row.get(1)?,
                     gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
@@ -732,10 +733,7 @@ impl Bible {
     }
 
     /// OT verses where this exact surface form occurs.
-    pub fn hebrew_surface_occurrences(
-        &self,
-        word: &str,
-    ) -> rusqlite::Result<Vec<WordOccurrence>> {
+    pub fn hebrew_surface_occurrences(&self, word: &str) -> rusqlite::Result<Vec<WordOccurrence>> {
         let norm = crate::generate::normalize_surface(word);
         let mut stmt = self.db.prepare(
             "SELECT o.book, o.chapter, o.verse FROM hebrewdb.occurrences o \
@@ -755,10 +753,7 @@ impl Bible {
     /// OT verses where any surface form of the given consonantal root occurs —
     /// both verb forms (root carried directly on the analysis) and noun forms
     /// (stem resolved to the same root via BDB).
-    pub fn hebrew_root_occurrences(
-        &self,
-        root: &str,
-    ) -> rusqlite::Result<Vec<WordOccurrence>> {
+    pub fn hebrew_root_occurrences(&self, root: &str) -> rusqlite::Result<Vec<WordOccurrence>> {
         if root.is_empty() {
             return Ok(Vec::new());
         }
@@ -1314,7 +1309,12 @@ mod tests {
         let earth = bible.hebrew_word_info("הָאָרֶץ").expect("noun should parse");
         assert_eq!(earth.root, "ארצ");
         assert!(!bible.hebrew_bdb_by_root(&earth.root).unwrap().is_empty());
-        assert!(!bible.hebrew_root_occurrences(&earth.root).unwrap().is_empty());
+        assert!(
+            !bible
+                .hebrew_root_occurrences(&earth.root)
+                .unwrap()
+                .is_empty()
+        );
     }
 
     #[test]
