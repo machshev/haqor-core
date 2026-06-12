@@ -242,7 +242,7 @@ fn main() -> Result<()> {
         } => {
             info!("Bible reference:{} {}:{}", book, chapter, verse);
 
-            let bible: Bible = Bible::default();
+            let bible = Bible::open("data")?;
 
             println!("{}", bible.get(book, chapter, verse)?)
         }
@@ -266,9 +266,10 @@ fn main() -> Result<()> {
 
                 info!("Copying {} -> {}", src.display(), dst.display());
 
-                let bytes = std::fs::copy(&src, &dst).with_context(|| {
+                std::fs::copy(&src, &dst).with_context(|| {
                     format!("Failed to copy {} to {}", src.display(), dst.display())
                 })?;
+                let bytes = haqor_core::generate::shrink_haqor(&dst)?;
 
                 println!("Updated {} ({} bytes)", dst.display(), bytes);
             }

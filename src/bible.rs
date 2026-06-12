@@ -1,24 +1,12 @@
 // Bible resource
 
-use rusqlite::{Connection, MAIN_DB, OptionalExtension};
+#[cfg(feature = "embedded")]
+use rusqlite::MAIN_DB;
+use rusqlite::{Connection, OpenFlags, OptionalExtension};
+#[cfg(feature = "embedded")]
 use rust_embed::Embed;
 use std::collections::HashMap;
-
-#[derive(Debug)]
-pub struct WordMorphology {
-    pub raw: String,
-    pub word: String,
-    pub root: String,
-    pub count: i32,
-    pub unknown: bool,
-    pub vav_con: bool,
-    pub article: bool,
-    pub prepositions: Option<String>,
-    pub gender: Option<String>,
-    pub number: Option<String>,
-    pub prefix: Option<String>,
-    pub suffix: Option<String>,
-}
+use std::path::Path;
 
 #[derive(Debug)]
 pub struct BdbEntry {
@@ -53,29 +41,6 @@ pub struct HebrewWord {
     /// Attached prefix cluster (article/preposition/vav), as pointed Hebrew.
     pub prefix: Option<String>,
     pub vav_con: bool,
-}
-
-#[derive(Debug)]
-pub struct AraMorphology {
-    pub raw: String,
-    pub word: String,
-    pub root: String,
-    pub count: i32,
-    pub gender: Option<String>,
-    pub person: Option<String>,
-    pub number: Option<String>,
-    pub state: Option<String>,
-    pub tense: Option<String>,
-    pub form: Option<String>,
-    pub suffix: Option<String>,
-}
-
-#[derive(Debug)]
-pub struct AraEntry {
-    pub headword: String,
-    pub root: String,
-    pub gloss: String,
-    pub content_json: String,
 }
 
 #[derive(Debug)]
@@ -382,77 +347,87 @@ fn fold_consonants(word: &str) -> String {
         .collect()
 }
 
-fn strip_cantillation(word: &str) -> String {
-    word.chars()
-        .filter(|&c| {
-            let n = c as u32;
-            (0x05D0..=0x05EA).contains(&n)  // Hebrew letters
-                || (0x05B0..=0x05BD).contains(&n)  // niqqud
-                || n == 0x05BF  // rafe
-                || (0x05C1..=0x05C2).contains(&n)  // shin/sin dots
-                || (0x05C4..=0x05C5).contains(&n)  // upper/lower dots
-                || n == 0x05C7 // qamats qatan
-        })
-        .collect()
-}
-
+#[cfg(feature = "embedded")]
 #[derive(Embed)]
 #[folder = "data/"]
 struct Asset;
+
+/// The auxiliary databases attached alongside the main `haqor.db` schema,
+/// paired with the schema names the queries expect.
+const ATTACHED_DBS: [(&str, &str); 4] = [
+    // Rust-generated bible text.
+    ("bible.db", "bibledb"),
+    // Rust-generated SEDRA lexicon (roots, lexemes, words, english) in
+    // Hebrew Unicode.
+    ("sedra.db", "sedradb"),
+    // Rust reverse-parse engine output for the OT (Hebrew Bible): distinct
+    // surface forms, candidate verb/noun analyses, roots and occurrences.
+    ("hebrew.db", "hebrewdb"),
+    // OpenScriptures HebrewLexicon (Strong's + BrownDriverBriggs). The `bdb`
+    // table is root-keyed so it joins to `hebrewdb` analyses to give glossed
+    // root trees with structured definitions.
+    ("lexicon.db", "lexdb"),
+];
 
 #[derive(Debug)]
 pub struct Bible {
     db: Connection,
 }
 
+#[cfg(feature = "embedded")]
 impl Default for Bible {
     fn default() -> Self {
         let mut db = Connection::open_in_memory().unwrap();
 
-        // Legacy Python-generated DB: lexicon, morphology, occurrences, syriac.
+        // Legacy Python-generated DB: lexicon, morphology, occurrences.
         let haqor_db = Asset::get("haqor.db").unwrap();
         let haqor_data = Box::new(haqor_db.data.into_owned());
         db.deserialize_bytes(MAIN_DB, Box::leak(haqor_data))
             .unwrap();
 
-        // Rust-generated bible text, attached as a second schema `bibledb`.
-        db.execute_batch("ATTACH DATABASE ':memory:' AS bibledb")
-            .unwrap();
-        let bible_db = Asset::get("bible.db").unwrap();
-        let bible_data = Box::new(bible_db.data.into_owned());
-        db.deserialize_bytes(c"bibledb", Box::leak(bible_data))
-            .unwrap();
-
-        // Rust-generated SEDRA lexicon (roots, lexemes, words, english) in
-        // Hebrew Unicode, attached as a third schema `sedradb`.
-        db.execute_batch("ATTACH DATABASE ':memory:' AS sedradb")
-            .unwrap();
-        let sedra_db = Asset::get("sedra.db").unwrap();
-        let sedra_data = Box::new(sedra_db.data.into_owned());
-        db.deserialize_bytes(c"sedradb", Box::leak(sedra_data))
-            .unwrap();
-
-        // Rust reverse-parse engine output for the OT (Hebrew Bible): distinct
-        // surface forms, candidate verb/noun analyses, roots and occurrences.
-        db.execute_batch("ATTACH DATABASE ':memory:' AS hebrewdb")
-            .unwrap();
-        let hebrew_db = Asset::get("hebrew.db").unwrap();
-        let hebrew_data = Box::new(hebrew_db.data.into_owned());
-        db.deserialize_bytes(c"hebrewdb", Box::leak(hebrew_data))
-            .unwrap();
-
-        // OpenScriptures HebrewLexicon (Strong's + BrownDriverBriggs), attached
-        // as `lexdb`. The `bdb` table is root-keyed so it joins to `hebrewdb`
-        // analyses to give glossed root trees with structured definitions.
-        db.execute_batch("ATTACH DATABASE ':memory:' AS lexdb")
-            .unwrap();
-        let lexicon_db = Asset::get("lexicon.db").unwrap();
-        let lexicon_data = Box::new(lexicon_db.data.into_owned());
-        db.deserialize_bytes(c"lexdb", Box::leak(lexicon_data))
-            .unwrap();
+        for (file, schema) in ATTACHED_DBS {
+            db.execute_batch(&format!("ATTACH DATABASE ':memory:' AS {schema}"))
+                .unwrap();
+            let asset = Asset::get(file).unwrap();
+            let data = Box::new(asset.data.into_owned());
+            db.deserialize_bytes(schema, Box::leak(data)).unwrap();
+        }
 
         Bible { db }
     }
+}
+
+impl Bible {
+    /// Open the databases file-backed and read-only from `data_dir`, which
+    /// must contain `haqor.db` plus the four attached databases (`bible.db`,
+    /// `sedra.db`, `hebrew.db`, `lexicon.db`).
+    ///
+    /// The files are opened with `immutable=1`, so SQLite creates no journal
+    /// or lock files and the directory may be read-only — but the files must
+    /// not be modified while the connection is open.
+    pub fn open<P: AsRef<Path>>(data_dir: P) -> rusqlite::Result<Self> {
+        let dir = data_dir.as_ref();
+        let db = Connection::open_with_flags(
+            db_uri(dir, "haqor.db"),
+            OpenFlags::SQLITE_OPEN_READ_ONLY
+                | OpenFlags::SQLITE_OPEN_URI
+                | OpenFlags::SQLITE_OPEN_NO_MUTEX,
+        )?;
+        for (file, schema) in ATTACHED_DBS {
+            db.execute(
+                &format!("ATTACH DATABASE ?1 AS {schema}"),
+                [db_uri(dir, file)],
+            )?;
+        }
+        Ok(Bible { db })
+    }
+}
+
+/// SQLite URI for a read-only database file. Note that SQLite %-decodes URI
+/// paths, so this would mangle a directory containing literal `%` characters;
+/// app data directories never do.
+fn db_uri(dir: &Path, file: &str) -> String {
+    format!("file:{}?immutable=1", dir.join(file).display())
 }
 
 impl Bible {
@@ -487,52 +462,6 @@ impl Bible {
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         Ok(verses)
-    }
-
-    pub fn get_word_morphology(&self, raw: &str) -> rusqlite::Result<WordMorphology> {
-        self.db.query_row(
-            "SELECT raw, word, root, count, unknown, vav_con, article, prepositions, gender, number, prefix, suffix FROM words WHERE raw = ?1",
-            [raw],
-            |row| {
-                Ok(WordMorphology {
-                    raw: row.get(0)?,
-                    word: row.get(1)?,
-                    root: row.get(2)?,
-                    count: row.get(3)?,
-                    unknown: row.get(4)?,
-                    vav_con: row.get(5)?,
-                    article: row.get(6)?,
-                    prepositions: row.get(7)?,
-                    gender: row.get(8)?,
-                    number: row.get(9)?,
-                    prefix: row.get(10)?,
-                    suffix: row.get(11)?,
-                })
-            },
-        )
-    }
-
-    pub fn lex_lookup(&self, word: &str) -> rusqlite::Result<Vec<BdbEntry>> {
-        let stripped = strip_cantillation(word);
-        let root: String = self.db.query_row(
-            "SELECT root FROM words WHERE raw = ?1",
-            [&stripped],
-            |row| row.get(0),
-        )?;
-        let mut stmt = self
-            .db
-            .prepare("SELECT headword, root, gloss, content_json FROM bdb WHERE root = ?1")?;
-        let entries = stmt
-            .query_map([&root], |row| {
-                Ok(BdbEntry {
-                    headword: normalize_hebrew_combining(row.get::<_, String>(0)?.as_str()),
-                    root: row.get(1)?,
-                    gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
-                    content_json: row.get(3)?,
-                })
-            })?
-            .collect::<rusqlite::Result<Vec<_>>>()?;
-        Ok(entries)
     }
 
     /// Reverse-parse a single OT surface form via `hebrewdb`, choosing the most
@@ -811,52 +740,6 @@ impl Bible {
         .collect()
     }
 
-    pub fn get_word_morphology_ara(&self, raw: &str) -> rusqlite::Result<AraMorphology> {
-        self.db.query_row(
-            "SELECT raw, word, root, count, gender, person, number, state, tense, form, suffix \
-             FROM words_aramaic WHERE raw = ?1",
-            [raw],
-            |row| {
-                let ne = |s: Option<String>| s.filter(|v| !v.is_empty());
-                Ok(AraMorphology {
-                    raw: row.get(0)?,
-                    word: row.get(1)?,
-                    root: row.get(2)?,
-                    count: row.get(3)?,
-                    gender: ne(row.get(4)?),
-                    person: ne(row.get(5)?),
-                    number: ne(row.get(6)?),
-                    state: ne(row.get(7)?),
-                    tense: ne(row.get(8)?),
-                    form: ne(row.get(9)?),
-                    suffix: ne(row.get(10)?),
-                })
-            },
-        )
-    }
-
-    pub fn lex_lookup_ara(&self, word: &str) -> rusqlite::Result<Vec<AraEntry>> {
-        let root: String = self.db.query_row(
-            "SELECT root FROM words_aramaic WHERE raw = ?1",
-            [word],
-            |row| row.get(0),
-        )?;
-        let mut stmt = self.db.prepare(
-            "SELECT headword, root, gloss, content_json FROM bdb_aramaic WHERE root = ?1",
-        )?;
-        let entries = stmt
-            .query_map([&root], |row| {
-                Ok(AraEntry {
-                    headword: normalize_hebrew_combining(row.get::<_, String>(0)?.as_str()),
-                    root: row.get(1)?,
-                    gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
-                    content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
-                })
-            })?
-            .collect::<rusqlite::Result<Vec<_>>>()?;
-        Ok(entries)
-    }
-
     /// Full SEDRA lexicon entry for an NT word. `vocalised` is the displayed
     /// Hebrew word (matched directly against `sedradb.words.strVocalised`,
     /// since the NT bible text is the same bijective transliteration). Returns
@@ -987,11 +870,13 @@ impl Bible {
     }
 
     /// OT (Hebrew Bible) occurrences of the same consonantal root as a SEDRA
-    /// NT root, pulled from the legacy haqor.db `occurrences`/`words` tables.
-    /// The SEDRA root is rendered with medial letter forms while OT roots use
-    /// final forms, so OT roots are folded to medial before matching. Restricted
-    /// to OT books (<40) so these never duplicate the SEDRA-derived NT
-    /// occurrences. Roots without a Hebrew cognate simply yield nothing.
+    /// NT root, pulled from the legacy haqor.db `root_occurrences` table (one
+    /// row per distinct root/verse pair, root pre-folded to medial letter
+    /// forms — see `generate::shrink_haqor`). The SEDRA root is rendered with
+    /// medial forms, so the [`crate::transliterate::lookup_key`] of it matches
+    /// directly. OT books only (<40), so these never duplicate the
+    /// SEDRA-derived NT occurrences. Roots without a Hebrew cognate simply
+    /// yield nothing.
     pub fn ot_root_occurrences(
         &self,
         sedra_key_root: i64,
@@ -1003,13 +888,8 @@ impl Bible {
         )?;
         let key = crate::transliterate::lookup_key(&root);
         let mut stmt = self.db.prepare(
-            "SELECT DISTINCT o.book, o.chapter, o.verse \
-             FROM occurrences o JOIN words w ON o.raw = w.raw \
-             WHERE o.book < 40 AND replace(replace(replace(replace(replace( \
-                 w.root, char(1498), char(1499)), char(1501), char(1502)), \
-                 char(1503), char(1504)), char(1507), char(1508)), \
-                 char(1509), char(1510)) = ?1 \
-             ORDER BY o.book, o.chapter, o.verse",
+            "SELECT book, chapter, verse FROM root_occurrences \
+             WHERE root = ?1 ORDER BY book, chapter, verse",
         )?;
         stmt.query_map([key], |row| {
             Ok(WordOccurrence {
@@ -1105,40 +985,6 @@ impl Bible {
         Ok(entries)
     }
 
-    pub fn word_occurrences(&self, raw: &str) -> rusqlite::Result<Vec<WordOccurrence>> {
-        let mut stmt = self.db.prepare(
-            "SELECT book, chapter, verse FROM occurrences \
-             WHERE raw = ?1 ORDER BY book, chapter, verse",
-        )?;
-        let occurrences = stmt
-            .query_map([raw], |row| {
-                Ok(WordOccurrence {
-                    book: row.get(0)?,
-                    chapter: row.get(1)?,
-                    verse: row.get(2)?,
-                })
-            })?
-            .collect::<rusqlite::Result<Vec<_>>>()?;
-        Ok(occurrences)
-    }
-
-    pub fn word_occurrences_root(&self, root: &str) -> rusqlite::Result<Vec<WordOccurrence>> {
-        let mut stmt = self.db.prepare(
-            "SELECT DISTINCT book, chapter, verse FROM occurrences \
-             WHERE constanants = ?1 ORDER BY book, chapter, verse",
-        )?;
-        let occurrences = stmt
-            .query_map([root], |row| {
-                Ok(WordOccurrence {
-                    book: row.get(0)?,
-                    chapter: row.get(1)?,
-                    verse: row.get(2)?,
-                })
-            })?
-            .collect::<rusqlite::Result<Vec<_>>>()?;
-        Ok(occurrences)
-    }
-
     pub fn chapter_count(&self, book: u8) -> rusqlite::Result<u8> {
         self.db.query_row(
             "SELECT MAX(chapter) FROM bibledb.bible WHERE book = ?1",
@@ -1148,18 +994,35 @@ impl Bible {
     }
 }
 
+/// `Bible::default()` only exists with the `embedded` feature, so its test
+/// lives in its own module; run with `cargo test --features embedded`.
+#[cfg(all(test, feature = "embedded"))]
+mod embedded_tests {
+    use super::*;
+
+    #[test]
+    fn test_embedded_database_open() {
+        if Asset::get("haqor.db").is_none() {
+            eprintln!("skipping: data/*.db not embedded in this build");
+            return;
+        }
+        let bible = Bible::default();
+        assert!(bible.get(1, 1, 1).unwrap().starts_with('ב'));
+    }
+}
+
 #[cfg(test)]
 mod tests {
 
     use super::*;
 
     /// The data/*.db files are generated locally (`db gen-*` / legacy Python
-    /// pipeline) and not committed, so CI checkouts embed an empty data/
+    /// pipeline) and not committed, so CI checkouts have an empty data/
     /// folder; skip the DB-backed tests in that case.
     macro_rules! require_data {
         () => {
-            if Asset::get("haqor.db").is_none() {
-                eprintln!("skipping: data/*.db not embedded in this build");
+            if !Path::new("data/haqor.db").exists() {
+                eprintln!("skipping: data/*.db not generated in this checkout");
                 return;
             }
         };
@@ -1168,13 +1031,20 @@ mod tests {
     #[test]
     fn test_database_open() {
         require_data!();
-        let _bible = Bible::default();
+        let bible = Bible::open("data").unwrap();
+
+        // One query per attached schema to prove every ATTACH succeeded.
+        let ot = bible.get(1, 1, 1).unwrap();
+        assert!(ot.starts_with('ב'));
+        assert!(!bible.sedra_word_info("כּתָבָא").unwrap().is_empty());
+        assert!(bible.hebrew_word_info("בָּרָא").is_some());
+        assert!(!bible.hebrew_bdb_by_root("ברא").unwrap().is_empty());
     }
 
     #[test]
     fn test_get_reads_bible_table() {
         require_data!();
-        let bible = Bible::default();
+        let bible = Bible::open("data").unwrap();
 
         // OT (Genesis 1:1) comes from the UXLC source: 7 words, ends with sof
         // pasuq, first letter is bet.
@@ -1193,7 +1063,7 @@ mod tests {
     #[test]
     fn nt_hebrew_round_trips_through_syriac() {
         require_data!();
-        let bible = Bible::default();
+        let bible = Bible::open("data").unwrap();
         let mut stmt = bible
             .db
             .prepare("SELECT words FROM bibledb.bible WHERE book >= 40")
@@ -1214,25 +1084,14 @@ mod tests {
     #[test]
     fn test_chapter_count() {
         require_data!();
-        let bible = Bible::default();
+        let bible = Bible::open("data").unwrap();
         assert_eq!(bible.chapter_count(1).unwrap(), 50); // Genesis has 50 chapters
-    }
-
-    #[test]
-    fn test_lex_lookup() {
-        require_data!();
-        let bible = Bible::default();
-        // יִבְרָא (yiḇrā) - root ברא, BDB entries exist for "create"
-        let entries = bible.lex_lookup("יִבְרָא").unwrap();
-        assert!(!entries.is_empty());
-        assert!(entries.iter().all(|e| e.root == "ברא"));
-        assert!(!entries[0].content_json.is_empty());
     }
 
     #[test]
     fn test_sedra_word_info() {
         require_data!();
-        let bible = Bible::default();
+        let bible = Bible::open("data").unwrap();
         // First word of Matthew 1:1 (NT) is כתבא "book/writing/Scripture".
         let matt = bible.get(40, 1, 1).unwrap();
         let first = matt.split(' ').next().unwrap();
@@ -1289,7 +1148,7 @@ mod tests {
     #[test]
     fn test_hebrew_word_info_verb() {
         require_data!();
-        let bible = Bible::default();
+        let bible = Bible::open("data").unwrap();
         // בָּרָא "created" (Gen 1:1), root ברא — a strong III-aleph verb that
         // bridges directly to BDB.
         let info = bible.hebrew_word_info("בָּרָא").expect("verb should parse");
@@ -1315,7 +1174,7 @@ mod tests {
     #[test]
     fn test_hebrew_word_info_noun() {
         require_data!();
-        let bible = Bible::default();
+        let bible = Bible::open("data").unwrap();
         // אֱלֹהִים "God" — a noun whose stem matches a BDB headword (root אלה).
         let info = bible.hebrew_word_info("אֱלֹהִים").expect("noun should parse");
         assert_eq!(info.root, "אלה");
@@ -1335,15 +1194,5 @@ mod tests {
                 .unwrap()
                 .is_empty()
         );
-    }
-
-    #[test]
-    fn test_get_word_morphology() {
-        require_data!();
-        let bible = Bible::default();
-        // אֱלֹהִים (Elohim) - a simple word without prefix/suffix complications
-        let morph = bible.get_word_morphology("אֱלֹהִים").unwrap();
-        assert!(!morph.root.is_empty());
-        assert!(morph.count > 0);
     }
 }
