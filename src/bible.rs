@@ -41,6 +41,27 @@ pub struct HebrewWord {
     pub vav_con: bool,
 }
 
+/// One entry of the frequency-ordered learner vocabulary: a distinct OT
+/// surface form with its exact occurrence count and a best-effort bridge to
+/// root, gloss and morphology.
+#[derive(Debug)]
+pub struct VocabEntry {
+    /// Pointed surface form as it appears in the text (trope stripped).
+    pub surface: String,
+    /// Exact number of OT occurrences of this surface form.
+    pub occurrences: u32,
+    /// Pre-filter class for surfaces that never reached the parse engine:
+    /// "function" (closed-class particle) or "proper" (name).
+    pub lexical_class: Option<String>,
+    /// Consonantal root bridging to `lexdb.bdb.root`. Empty when unresolved.
+    pub root: String,
+    /// First matching BDB gloss. Empty when unresolved.
+    pub gloss: String,
+    /// Short human-readable morphology summary, e.g. "Qal wayyiqtol 3ms".
+    /// Empty for unparsed forms.
+    pub morph: String,
+}
+
 #[derive(Debug)]
 pub struct SedraEntry {
     pub lexeme: String,
@@ -343,6 +364,112 @@ fn fold_consonants(word: &str) -> String {
             })
         })
         .collect()
+}
+
+/// One-letter proclitic spellings tried (in order) when a vocabulary surface
+/// form fails to resolve whole: conjunction vav, article, and the
+/// inseparable prepositions, each with the English meaning shown on the card.
+const PROCLITICS: [(&str, &str); 16] = [
+    ("וְ", "and"),
+    ("וּ", "and"),
+    ("וַ", "and"),
+    ("הַ", "the"),
+    ("הָ", "the"),
+    ("בְּ", "in"),
+    ("בַּ", "in the"),
+    ("בָּ", "in the"),
+    ("לְ", "to"),
+    ("לַ", "to the"),
+    ("לָ", "to the"),
+    ("לֵ", "to"),
+    ("לִ", "to"),
+    ("מִ", "from"),
+    ("מֵ", "from"),
+    ("כְּ", "like"),
+];
+
+/// Remainder of `surface` after removing a proclitic spelling, dropping the
+/// dagesh the article/preposition doubles into the next consonant (it may
+/// sit before or after that consonant's vowel). `None` when the proclitic
+/// doesn't lead the surface or too little would remain.
+fn strip_proclitic(surface: &str, proclitic: &str) -> Option<String> {
+    let rest = surface.strip_prefix(proclitic)?;
+    let mut chars: Vec<char> = rest.chars().collect();
+    if chars.len() < 2 {
+        return None;
+    }
+    for i in 1..chars.len() {
+        if !(0x0591..=0x05C7).contains(&(chars[i] as u32)) {
+            break;
+        }
+        if chars[i] == '\u{05BC}' {
+            chars.remove(i);
+            break;
+        }
+    }
+    Some(chars.into_iter().collect())
+}
+
+/// Remove cantillation accents and meteg, leaving consonants and vowel
+/// points — BDB headwords carry stress accents that surface forms don't.
+fn strip_accents(word: &str) -> String {
+    word.chars()
+        .filter(|&c| {
+            let n = c as u32;
+            !(0x0591..=0x05AF).contains(&n) && n != 0x05BD
+        })
+        .collect()
+}
+
+/// Compact human-readable morphology line for a vocabulary card, e.g.
+/// "Qal wayyiqtol 3ms" for verbs or "noun, plural construct" for nouns,
+/// prefixed with any attached cluster ("הַ־ + …").
+fn morph_summary(info: &HebrewWord) -> String {
+    let body = if let Some(binyan) = &info.form {
+        let mut s = binyan.clone();
+        if let Some(tense) = &info.tense {
+            s.push(' ');
+            s.push_str(&tense.to_lowercase());
+        }
+        let pgn: String = [
+            info.person.as_deref().map(|p| match p {
+                "First" => "1",
+                "Second" => "2",
+                _ => "3",
+            }),
+            info.gender.as_deref().map(|g| match g {
+                "Masculine" => "m",
+                "Feminine" => "f",
+                _ => "c",
+            }),
+            info.number.as_deref().map(|n| match n {
+                "Singular" => "s",
+                "Plural" => "p",
+                _ => "d",
+            }),
+        ]
+        .into_iter()
+        .flatten()
+        .collect();
+        if !pgn.is_empty() {
+            s.push(' ');
+            s.push_str(&pgn);
+        }
+        s
+    } else {
+        let mut parts = vec!["noun".to_string()];
+        if let Some(number) = &info.number {
+            parts.push(number.to_lowercase());
+        }
+        if let Some(state) = &info.state {
+            parts.push(state.to_lowercase());
+        }
+        parts.join(" ")
+    };
+    match &info.prefix {
+        Some(prefix) => format!("{prefix}־ + {body}"),
+        None => body,
+    }
 }
 
 #[cfg(feature = "embedded")]
@@ -654,6 +781,133 @@ impl Bible {
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         Ok(entries)
+    }
+
+    /// The learner vocabulary: distinct Hebrew (non-Aramaic) surface forms in
+    /// descending occurrence order, each bridged to a BDB gloss where
+    /// possible. Resolution order per surface: the parse engine's best
+    /// analysis ([`Bible::hebrew_word_info`]); an exact pointed-headword BDB
+    /// match; the first glossed BDB lexeme sharing the consonant skeleton;
+    /// the same lexicon lookups after stripping a leading vav conjunction.
+    pub fn vocab(&self, limit: u32, offset: u32) -> rusqlite::Result<Vec<VocabEntry>> {
+        let mut stmt = self.db.prepare(
+            "SELECT text, occurrences, lexical_class FROM hebrewdb.surface \
+             WHERE language IS NULL \
+             ORDER BY occurrences DESC, surface_id \
+             LIMIT ?1 OFFSET ?2",
+        )?;
+        let rows = stmt
+            .query_map([limit, offset], |row| {
+                Ok((
+                    row.get::<_, String>(0)?,
+                    row.get::<_, u32>(1)?,
+                    row.get::<_, Option<String>>(2)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        Ok(rows
+            .into_iter()
+            .map(|(surface, occurrences, lexical_class)| {
+                let (root, gloss, morph) = self.vocab_resolve(&surface);
+                VocabEntry {
+                    surface,
+                    occurrences,
+                    lexical_class,
+                    root,
+                    gloss,
+                    morph,
+                }
+            })
+            .collect())
+    }
+
+    /// Best-effort `(root, gloss, morph)` for one vocabulary surface form.
+    ///
+    /// Citation-form lexicon matches are trusted over candidate parses, which
+    /// otherwise read common singular nouns as spurious verb forms (מֶלֶךְ as
+    /// "go!" rather than "king"); for the same reason a proclitic-stripped
+    /// citation match (הַ + מֶלֶךְ) is tried before the parser too. The parser
+    /// then covers genuinely inflected forms, and a pointing-blind consonant
+    /// match is the last resort.
+    fn vocab_resolve(&self, surface: &str) -> (String, String, String) {
+        if let Some((root, gloss)) = self.vocab_bdb_exact(surface) {
+            return (root, gloss, String::new());
+        }
+        // One-letter proclitics (and/the/in/to/from/like) hide many frequent
+        // forms from the lexicon; retry on the remainder. The pointing-blind
+        // fallback needs three consonants left — short remainders (ךָ, נֵי)
+        // match unrelated lexemes.
+        for (proclitic, meaning) in PROCLITICS {
+            if let Some(rest) = strip_proclitic(surface, proclitic) {
+                let matched = self.vocab_bdb_exact(&rest).or_else(|| {
+                    (fold_consonants(&rest).chars().count() >= 3)
+                        .then(|| self.vocab_bdb_cons(&rest))
+                        .flatten()
+                });
+                if let Some((root, gloss)) = matched {
+                    return (root, gloss, format!("{proclitic}־ ({meaning}) + {rest}"));
+                }
+            }
+        }
+        if let Some(info) = self
+            .hebrew_word_info(surface)
+            .filter(|i| !i.gloss.is_empty())
+        {
+            let morph = morph_summary(&info);
+            return (info.root, info.gloss, morph);
+        }
+        if let Some((root, gloss)) = self.vocab_bdb_cons(surface) {
+            return (root, gloss, String::new());
+        }
+        (String::new(), String::new(), String::new())
+    }
+
+    /// The glossed BDB lexeme whose pointed headword (accents stripped)
+    /// matches the surface exactly — the citation-form bridge. Both sides
+    /// are reordered to traditional combining order before comparison
+    /// (surfaces store vowel-before-dagesh, headwords vary).
+    fn vocab_bdb_exact(&self, surface: &str) -> Option<(String, String)> {
+        let canonical = normalize_hebrew_combining(surface);
+        self.vocab_bdb_rows(surface)?
+            .into_iter()
+            .find(|(word, _, _)| normalize_hebrew_combining(&strip_accents(word)) == canonical)
+            .map(|(_, root, gloss)| (root, gloss))
+    }
+
+    /// The first glossed BDB lexeme sharing the surface's consonant skeleton —
+    /// a last-resort bridge that ignores pointing.
+    fn vocab_bdb_cons(&self, surface: &str) -> Option<(String, String)> {
+        self.vocab_bdb_rows(surface)?
+            .into_iter()
+            .next()
+            .map(|(_, root, gloss)| (root, gloss))
+    }
+
+    /// Glossed BDB `(word, root, gloss)` rows matching the surface's
+    /// consonant skeleton, in lexicon order.
+    fn vocab_bdb_rows(&self, surface: &str) -> Option<Vec<(String, String, String)>> {
+        let cons = fold_consonants(surface);
+        if cons.is_empty() {
+            return None;
+        }
+        let mut stmt = self
+            .db
+            .prepare(
+                "SELECT word, root, gloss FROM lexdb.bdb \
+                 WHERE cons = ?1 AND gloss IS NOT NULL AND gloss <> '' \
+                 ORDER BY bdb_id",
+            )
+            .ok()?;
+        stmt.query_map([&cons], |row| {
+            Ok((
+                row.get::<_, Option<String>>(0)?.unwrap_or_default(),
+                row.get::<_, String>(1)?,
+                row.get::<_, String>(2)?,
+            ))
+        })
+        .ok()?
+        .collect::<rusqlite::Result<Vec<_>>>()
+        .ok()
     }
 
     /// OT verses where this exact surface form occurs.
