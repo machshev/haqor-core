@@ -35,7 +35,7 @@ use quick_xml::events::Event;
 use rusqlite::Connection;
 use serde_json::{Map, Value, json};
 
-use crate::morphology::{NounStem, Root};
+use crate::morphology::{Gizra, NounStem, Root, hebrew};
 
 /// Map a BDB scripture-reference book code (the `r="Lev.19.28"` attribute) to
 /// the full English book name the app's BDB cross-reference handler expects
@@ -793,6 +793,20 @@ pub fn load_root_inventory(lexicon_db: &Path) -> Result<HashSet<[char; 3]>> {
         let chars: Vec<char> = root?.chars().collect();
         if let [a, b, c] = chars[..] {
             set.insert([a, b, c]);
+            // A hollow root's medial vav/yod spelling is lexically arbitrary,
+            // but it selects the û-class (יָקוּם) vs î-class (יָשִׂים) inflection.
+            // BDB records only one spelling per hollow lexeme (שׂום, לון, מוש —
+            // never the yod twin), so î-class surfaces (יָשִׂים, שִׂים, יָלִין)
+            // of a vav-spelled root — and vice versa — would be pruned by the
+            // filter. Admit the medial twin so both inflection classes survive.
+            let root = Root::from_letters([a, b, c]);
+            if root.has(Gizra::Hollow) {
+                let twin = match b {
+                    hebrew::letter::VAV => hebrew::letter::YOD,
+                    _ => hebrew::letter::VAV,
+                };
+                set.insert([a, twin, c]);
+            }
         }
     }
     Ok(set)

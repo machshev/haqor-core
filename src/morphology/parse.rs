@@ -124,6 +124,9 @@ pub struct VerbMatch {
 ///   removed. Word-final ־ִי also collapses, which is safe for the same
 ///   reason: no form ends in a bare hiriq, so keys can only meet other
 ///   hiriq-yod keys.
+/// - A guttural's hataf vowel (hataf-patah/segol/qamats) folds to one: the
+///   colour is phonologically conditioned, not lexically contrastive, so a
+///   generated הֲיוֹת and the attested הֱיוֹת normalise alike.
 /// - A dagesh on resh, aleph, het, or ayin is dropped: these letters cannot
 ///   be doubled, so a generated dagesh there (a strong-pattern forte landing
 ///   on them, e.g. geminate הֵפֵרּוּ, תָּרֵעּוּ) is an artefact, and the rare
@@ -165,6 +168,21 @@ pub(crate) fn canonical_key(form: &str) -> String {
         ) {
             c.dagesh = false;
         }
+        // A guttural's hataf colour (hataf-patah / -segol / -qamats) is
+        // phonologically conditioned, not lexically contrastive: the generator
+        // writes one (the III-He inf-construct of היה comes out הֲיוֹת with
+        // hataf-patah) where the Masoretes wrote another (הֱיוֹת, hataf-segol).
+        // The consonantal skeleton and every other vowel are identical, so
+        // folding the three hatafs to one on a guttural recovers the spelling
+        // variant without ever merging distinct analyses.
+        if hebrew::is_guttural(c.letter)
+            && matches!(
+                c.vowel,
+                Some(Vowel::HatafPatah | Vowel::HatafSegol | Vowel::HatafQamats)
+            )
+        {
+            c.vowel = Some(Vowel::HatafPatah);
+        }
         if c.letter == letter::YOD
             && !c.dagesh
             && c.vowel.is_none()
@@ -178,6 +196,33 @@ pub(crate) fn canonical_key(form: &str) -> String {
         .chars()
         .filter(|&c| c != '\u{05C1}' && c != '\u{05C2}')
         .map(|c| if c == '\u{05C7}' { '\u{05B8}' } else { c })
+        .collect()
+}
+
+/// A surface carries no niqqud at all — every slot is a bare consonant with no
+/// vowel and no dagesh. This is the *ketiv* case: the OSHB written tradition
+/// records some words consonant-only (the qere supplies the pointing), so the
+/// vocalised candidates can never be reached through [`canonical_key`], which
+/// preserves vowels. Detecting it lets the parser fall back to a consonantal
+/// skeleton match (see [`skeleton`]). A genuinely pointed word always carries at
+/// least one vowel (even an all-sheva spelling marks the shevas), so this never
+/// misfires on vocalised text.
+fn is_unpointed(seq: &[Cons]) -> bool {
+    !seq.is_empty() && seq.iter().all(|c| c.vowel.is_none() && !c.dagesh)
+}
+
+/// The consonantal skeleton of a (possibly pointed) form — just its letters,
+/// with final-form normalisation already applied by [`hebrew::parse_pointed`].
+/// Used only to match a fully-unpointed ketiv surface against the vocalised
+/// candidates: their niqqud is stripped to the same bare-consonant sequence.
+/// Matres are kept (they are consonants in the skeleton), so this matches only
+/// when the ketiv and the generated form share an orthography; a defective vs
+/// plene divergence (עשיתי vs the generated עשית) simply won't match, which is
+/// the conservative outcome.
+fn skeleton(form: &str) -> String {
+    hebrew::parse_pointed(form)
+        .iter()
+        .map(|c| c.letter)
         .collect()
 }
 
@@ -445,6 +490,9 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
     let mut matches = Vec::new();
     let mut seen = std::collections::HashSet::new();
     let mut memo: HashMap<[char; 3], Paradigm> = HashMap::new();
+    // Fully-unpointed ketiv surfaces can't reach a vocalised candidate through
+    // canonical_key, so match on the bare consonant skeleton instead.
+    let unpointed = is_unpointed(&seq);
 
     // Peel 0, 1, or 2 leading proclitics. We always keep at least two
     // consonants of stem so there is something to analyse as a verb.
@@ -457,16 +505,26 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         let prefix = hebrew::render(&seq[..strip]);
         let targets = peeling_targets(&seq, strip, remainder);
         let target_keys: Vec<String> = targets.iter().map(|t| canonical_key(t)).collect();
+        let target_skels: Vec<String> = if unpointed {
+            targets.iter().map(|t| skeleton(t)).collect()
+        } else {
+            Vec::new()
+        };
 
         for letters in candidate_roots(remainder, roots) {
             let paradigm = memo
                 .entry(letters)
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
             for vf in &paradigm.forms {
+                let hit = if unpointed {
+                    target_skels.contains(&skeleton(&vf.text))
+                } else {
+                    forms_match(&vf.text, &targets, &target_keys)
+                };
                 // Wayyiqtol is handled by the dedicated pass below, with the
                 // consecutive vav recognised as such rather than as a plain
                 // proclitic; skip it here to avoid duplicate analyses.
-                if vf.form == Form::Wayyiqtol || !forms_match(&vf.text, &targets, &target_keys) {
+                if vf.form == Form::Wayyiqtol || !hit {
                     continue;
                 }
                 if seen.insert((
@@ -499,17 +557,24 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
     // consonants after the consecutive vav. Weqatal (וְ + perfect) needs no
     // special handling — it surfaces above as a plain vav prefix on a perfect.
     if seq.first().is_some_and(|c| {
-        c.letter == letter::VAV && matches!(c.vowel, Some(Vowel::Patah | Vowel::Qamats))
+        c.letter == letter::VAV
+            && (matches!(c.vowel, Some(Vowel::Patah | Vowel::Qamats)) || unpointed)
     }) && seq.len() >= 3
     {
         let targets = [hebrew::render(&seq)];
         let target_keys = [canonical_key(&targets[0])];
+        let target_skel = skeleton(&targets[0]);
         for letters in candidate_roots(&seq[1..], roots) {
             let paradigm = memo
                 .entry(letters)
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
             for vf in &paradigm.forms {
-                if vf.form != Form::Wayyiqtol || !forms_match(&vf.text, &targets, &target_keys) {
+                let hit = if unpointed {
+                    skeleton(&vf.text) == target_skel
+                } else {
+                    forms_match(&vf.text, &targets, &target_keys)
+                };
+                if vf.form != Form::Wayyiqtol || !hit {
                     continue;
                 }
                 if seen.insert((
@@ -725,6 +790,13 @@ pub fn parse_word_indexed(
     roots: Option<&HashSet<[char; 3]>>,
 ) -> Vec<VerbMatch> {
     let seq = hebrew::parse_pointed(word);
+    // The index is keyed by canonical_key, which keeps vowels, so a fully
+    // unpointed ketiv surface can never hit it. Fall back to the generate-and-
+    // test parser, which skeleton-matches such surfaces (and stays fast because
+    // the root filter bounds the enumeration).
+    if is_unpointed(&seq) {
+        return parse_word_filtered(word, roots);
+    }
     let mut matches = Vec::new();
     let mut seen = std::collections::HashSet::new();
     let in_filter = |letters: &[char; 3]| roots.is_none_or(|set| set.contains(letters));
@@ -820,6 +892,13 @@ pub fn parse_word_indexed_disambiguated(
     index: &ReverseIndex,
     roots: Option<&HashSet<[char; 3]>>,
 ) -> Vec<VerbMatch> {
+    // An unpointed ketiv surface bypasses the index; route it through the
+    // root-filtered generate-and-test parser directly rather than the
+    // unrestricted index lookup (which would enumerate every triliteral on the
+    // skeleton fallback). The inventory filter is the disambiguation here.
+    if is_unpointed(&hebrew::parse_pointed(word)) {
+        return parse_word_filtered(word, roots);
+    }
     disambiguate(parse_word_indexed(word, index, None), roots)
 }
 
@@ -966,6 +1045,108 @@ mod tests {
                 && m.pgn.label() == "3ms"
                 && m.vav_consecutive
         }));
+    }
+
+    #[test]
+    fn parses_lamed_aleph_imperfect_nun() {
+        // תִּקְרֶאנָה — III-aleph 3fp imperfect of קרא: the quiescent aleph
+        // takes no vowel and C2 (resh) carries segol before the -nâ ending.
+        let matches = parse_word("תִּקְרֶאנָה");
+        assert!(has_match(
+            &matches,
+            "קרא",
+            Binyan::Qal,
+            Form::Imperfect,
+            "3fp"
+        ));
+    }
+
+    #[test]
+    fn parses_hollow_hiphil_perfect_tsere_grade() {
+        // הֲקֵמֹתָ — Hiphil perfect 2ms of קום in the tsere grade of the
+        // linking-ô stem (beside the î-plene הֲקִימֹתָ).
+        let matches = parse_word("הֲקֵמֹתָ");
+        assert!(has_match(
+            &matches,
+            "קומ",
+            Binyan::Hiphil,
+            Form::Perfect,
+            "2ms"
+        ));
+    }
+
+    #[test]
+    fn parses_pe_guttural_a_theme_pausal_plural() {
+        // יֶחְדָּלוּ — stative I-guttural 3mp imperfect of חדל: the silent-sheva
+        // C1 with the patah theme restored to qamats under the bare-plural stress.
+        let matches = parse_word("יֶחְדָּלוּ");
+        assert!(has_match(
+            &matches,
+            "חדל",
+            Binyan::Qal,
+            Form::Imperfect,
+            "3mp"
+        ));
+    }
+
+    #[test]
+    fn parses_unpointed_ketiv_wayyiqtol() {
+        // ויאמר — an unpointed ketiv surface. Its niqqud-less skeleton can't
+        // reach the vocalised candidates through canonical_key, so the parser
+        // falls back to a consonant-skeleton match: וַיֹּאמֶר (Qal Wayyiqtol 3ms
+        // of אמר) shares the skeleton ויאמר.
+        let matches = parse_word("ויאמר");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "אמר"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Wayyiqtol
+                && m.pgn.label() == "3ms"
+                && m.vav_consecutive
+        }));
+    }
+
+    #[test]
+    fn pointed_word_is_not_skeleton_matched() {
+        // A normally-pointed surface must NOT pick up skeleton matches: שָׁמַר
+        // parses to exactly its Qal perfect 3ms, not to every form sharing the
+        // skeleton שמר (e.g. an imperfect would need different vowels).
+        let matches = parse_word("שָׁמַר");
+        assert!(has_match(
+            &matches,
+            "שמר",
+            Binyan::Qal,
+            Form::Perfect,
+            "3ms"
+        ));
+        assert!(!matches.iter().any(|m| m.form == Form::Imperfect));
+    }
+
+    #[test]
+    fn parses_ayin_guttural_piel_perfect_hiriq() {
+        // נִאֲצוּ — Piel perfect 3cp of נאץ: the C2 aleph forgoes the forte, so
+        // the C1 prefix keeps its short hiriq (beside the lengthened נֵאֲצוּ).
+        let matches = parse_word("נִאֲצוּ");
+        assert!(has_match(
+            &matches,
+            "נאצ",
+            Binyan::Piel,
+            Form::Perfect,
+            "3cp"
+        ));
+    }
+
+    #[test]
+    fn parses_lamed_aleph_derived_perfect_qamats() {
+        // קֹרָא — Pual perfect 3ms of קרא: the patah before the word-final
+        // quiescent aleph lengthens to qamats (was generating קֹרַא).
+        let matches = parse_word("קֹרָא");
+        assert!(has_match(
+            &matches,
+            "קרא",
+            Binyan::Pual,
+            Form::Perfect,
+            "3ms"
+        ));
     }
 
     #[test]

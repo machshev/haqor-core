@@ -310,11 +310,24 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 .then(|| pe_guttural_imperfect_holam_plural_silent_variant(root, pgn))
                 .flatten();
                 // Its interior-pausal grades (yeḥdālû יֶחְדָּלוּ) — the theme
-                // restores under stress; the transforms compose.
+                // restores under stress; the transforms compose. The o-theme
+                // build above only reaches the holam-class pausal (yaḥpōṣû →
+                // yaḥpōṣû); the stative a-theme qamats plural is built directly.
                 let pe_guttural_impf_silent_pl_pausal: Vec<String> = pe_guttural_impf_silent_pl
                     .as_deref()
                     .map(pausal_imperfect_plural_variants)
                     .unwrap_or_default();
+                let pe_guttural_impf_a_silent_pl: Vec<String> = if binyan == Binyan::Qal
+                    && root.has(Gizra::PeGuttural)
+                    && matches!(form, Form::Imperfect | Form::Wayyiqtol)
+                    && matches!(
+                        (pgn.gender, pgn.number),
+                        (Some(Gender::Masculine), Some(Number::Plural))
+                    ) {
+                    pe_guttural_imperfect_a_plural_silent_variants(root, pgn)
+                } else {
+                    Default::default()
+                };
                 // Geminate Qal perfect a-class (סַבּוּ, רַבּוּ, סַבּוֹתָ).
                 let geminate_qal_perf =
                     (binyan == Binyan::Qal && form == Form::Perfect && root.has(Gizra::Geminate))
@@ -556,6 +569,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && root.has(Gizra::AyinGuttural))
                     .then(|| ayin_guttural_hataf_variant(root, &text))
                     .flatten();
+                // II-guttural Piel/Hithpael perfect virtual-doubling hiriq twin
+                // (נִאֲצוּ beside נֵאֲצוּ).
+                let piel_perf_guttural_hiriq =
+                    (matches!(binyan, Binyan::Piel | Binyan::Pual | Binyan::Hithpael)
+                        && form == Form::Perfect
+                        && hebrew::is_guttural(root.ayin()))
+                    .then(|| piel_perfect_guttural_hiriq_variant(root, &text))
+                    .flatten();
                 // Pe-aleph wayyiqtol 1cp segol twin (וַנֹּאמֶר beside וַנֹּאמַר).
                 let pe_aleph_wayy_1cp = (binyan == Binyan::Qal
                     && form == Form::Wayyiqtol
@@ -661,6 +682,18 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 } else {
                     Default::default()
                 };
+                // III-aleph Qal imperfect/imperative -nâ (3fp/2fp) segol twin
+                // (תִּקְרֶאנָה, תֵּצֶאנָה, תִּשֶּׂאנָה).
+                let lamed_aleph_impf_nun = (binyan == Binyan::Qal
+                    && root.lamed() == letter::ALEF
+                    && matches!(
+                        form,
+                        Form::Imperfect | Form::Jussive | Form::Wayyiqtol | Form::Imperative
+                    )
+                    && pgn.gender == Some(Gender::Feminine)
+                    && pgn.number == Some(Number::Plural))
+                .then(|| lamed_aleph_imperfect_nun_variant(&text))
+                .flatten();
                 // III-aleph derived-stem imperfect qamats twin: the theme tsere
                 // before the quiescent aleph also surfaces as qamats —
                 // yiṭṭammāʾ יִטַּמָּא, yiṯḥaṭṭāʾ יִתְחַטָּא.
@@ -2382,6 +2415,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_qal_perf_heavy,
                     lamed_aleph_ptcp,
                     ayin_guttural_hataf,
+                    piel_perf_guttural_hiriq,
                     pe_aleph_wayy_1cp,
                     pe_aleph_tsere,
                     lamed_aleph_tsere,
@@ -2423,6 +2457,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_aleph_derived_perf,
                     qal_a_theme_pausal,
                     lamed_aleph_impf_qamats,
+                    lamed_aleph_impf_nun,
                     piel_inf_abs_lamed_he,
                     hollow_hiphil_inf_abs,
                     halak_retained,
@@ -2492,6 +2527,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(niphal_1cs_hiriq)
                     .chain(pe_nun_impf_retained)
                     .chain(pe_guttural_impf_silent_pl_pausal)
+                    .chain(pe_guttural_impf_a_silent_pl)
                     .chain(geminate_niphal_impf)
                     .chain(piel_pausal_zero)
                     .chain(niphal_pe_guttural_ptcp_a)
@@ -2945,6 +2981,23 @@ fn ayin_guttural_hataf_variant(root: &Root, text: &str) -> Option<String> {
         }
     }
     None
+}
+
+/// II-guttural Piel/Hithpael perfect virtual-doubling twin: where the guttural
+/// C2 forgoes the forte the C1 prefix may keep its short hiriq (niʾăṣû נִאֲצוּ,
+/// niʾēṣ נִאֵץ) instead of compensatorily lengthening to tsere (nēʾēṣ נֵאֵץ).
+/// Emit the hiriq grade beside the builder's lengthened one. The structural
+/// guard (a tsere on C1 directly before the guttural C2) keeps it inert for the
+/// stems and persons that never lengthen there.
+fn piel_perfect_guttural_hiriq_variant(root: &Root, text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let i = (1..seq.len()).find(|&i| {
+        seq[i].letter == root.ayin()
+            && hebrew::is_guttural(seq[i].letter)
+            && seq[i - 1].vowel == Some(Vowel::Tsere)
+    })?;
+    seq[i - 1].vowel = Some(Vowel::Hiriq);
+    Some(hebrew::render(&seq))
 }
 
 /// Furtive-patah twin: when a form ends in a vowelless guttural ח or ע preceded
@@ -5575,6 +5628,25 @@ fn hollow_hiphil_otav_perfect(root: &Root, pgn: Pgn) -> Vec<String> {
         build(Patah, true, false),
         build(Patah, false, false),
     ];
+    // The tsere grade of the linking-ô perfect: hăqēmōtā (הֲקֵמֹתָ), hăšēḇōtā
+    // (וַהֲשֵׁבֹתָ) — C1 takes tsere (the ē of the bare hēqîm stem) instead of
+    // the î, so no yod mater, but the holam link to the afformative stays. The
+    // unreduced patah-he grade pairs with it, and the link writes plene or
+    // defective.
+    for he_v in [HatafPatah, Patah] {
+        for plene_c3 in [true, false] {
+            let mut seq = vec![
+                Cons::new(letter::HE).with_vowel(he_v),
+                Cons::new(c1).with_vowel(Tsere),
+                Cons::new(c3).with_vowel(Holam),
+            ];
+            if plene_c3 {
+                seq.push(Cons::new(letter::VAV).with_vowel(Holam));
+            }
+            seq.extend(suffix.iter().cloned());
+            out.push(hebrew::render(&seq));
+        }
+    }
     // The contracted short-stem grade without the linking ô — hēqamtā
     // הֵקַמְתָּ, hēnap̄tā וְהֵנַפְתָּ (and the reduced hă- twin). The begedkefet
     // afformative tav keeps its dagesh lene after the now-closed syllable.
@@ -5625,7 +5697,13 @@ fn apply_geminate(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
                 seq[c1_idx].vowel = Some(Vowel::Holam);
             }
             if let Some(c2_idx) = radical_idx(seq, 2) {
-                seq[c2_idx].dagesh = true;
+                // The fused radical doubles (dagesh forte) only when something
+                // follows to close the syllable — the vocalic plural yāsōḇḇû
+                // (יָסֹבּוּ). Word-final it cannot be doubled, so the bare forms
+                // surface single and undageshed: imperative sōḇ (סֹב), inf-cstr
+                // tōm (תֹּם), imperfect 3ms yāsōḇ (יָסֹב). A stray forte there
+                // produced יָסֹּב, which matches no Masoretic surface.
+                seq[c2_idx].dagesh = c2_idx + 1 < seq.len();
                 seq[c2_idx].vowel = None;
             }
         }
@@ -6002,6 +6080,37 @@ fn apply_lamed_he(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
             }
             changed = true;
         }
+        (Binyan::Qal, Form::ParticiplePassive, _, gender, number) => {
+            // III-He Qal passive participle: the etymological III-yod resurfaces
+            // as a consonantal yod where the strong qāṭûl builder left the mater
+            // he (build_participle put the shureq vav before it):
+            //   ms nāṭûy   (נָטוּי)  — C3 he → bare yod.
+            //   fs nəṭûyâ  (נְטוּיָה) — C3 he (qamats) → yod-qamats; the -â he kept.
+            //   mp nəṭûyîm (נְטוּיִם) — C3 he (hiriq) → yod-hiriq; the -îm mater yod drops.
+            //   fp nəṭûyôt (נְטוּיוֹת) — C3 he → bare yod; holam-vav + tav follow.
+            if let Some(i) = c3_idx {
+                match (gender, number) {
+                    (Some(Gender::Masculine), Some(Number::Singular)) => {
+                        seq[i] = Cons::new(letter::YOD);
+                    }
+                    (Some(Gender::Feminine), Some(Number::Singular)) => {
+                        seq[i] = Cons::new(letter::YOD).with_vowel(Qamats);
+                    }
+                    (Some(Gender::Masculine), Some(Number::Plural)) => {
+                        seq[i] = Cons::new(letter::YOD).with_vowel(Hiriq);
+                        if i + 1 < seq.len() && seq[i + 1].letter == letter::YOD {
+                            seq.remove(i + 1);
+                        }
+                    }
+                    (Some(Gender::Feminine), Some(Number::Plural)) => {
+                        seq[i] = Cons::new(letter::YOD);
+                        seq.insert(i + 1, Cons::new(letter::VAV).with_vowel(Holam));
+                    }
+                    _ => {}
+                }
+            }
+            changed = true;
+        }
         (_, Form::ParticipleActive, _, gender, number) => {
             // III-He active participle qōṭeh (qōṭ-e + etymological he), the same
             // ending across binyanim (the binyan's prefix/doubling is already set
@@ -6149,13 +6258,15 @@ fn apply_lamed_aleph(seq: &mut [Cons], root: &Root, binyan: Binyan, form: Form, 
         seq[i].vowel = Some(Qamats);
         changed = true;
     }
-    // Any binyan, imperfect family: a patah immediately before a word-final
-    // quiescent alef lengthens to qamats — the alef can't close the syllable.
-    // Covers the hollow Hophal (yûḇāʾ יוּבָא, not יוּבַא) and the patah-theme
-    // derived stems generally.
+    // Any binyan, imperfect family + perfect: a patah immediately before a
+    // word-final quiescent alef lengthens to qamats — the alef can't close the
+    // syllable. Covers the hollow Hophal (yûḇāʾ יוּבָא, not יוּבַא), the
+    // patah-theme derived imperfects generally, and the derived-stem perfect 3ms
+    // (Pual qōrāʾ קֹרָא, not קֹרַא). A consonantal suffix moves the alef off the
+    // word edge, so the guard leaves those (qōraʾtā קֹרַאְתָּ) untouched.
     if matches!(
         form,
-        Form::Imperfect | Form::Jussive | Form::Cohortative | Form::Wayyiqtol
+        Form::Imperfect | Form::Jussive | Form::Cohortative | Form::Wayyiqtol | Form::Perfect
     ) && let Some(last) = seq.last()
         && last.letter == letter::ALEF
         && last.vowel.is_none()
@@ -7455,6 +7566,33 @@ fn lamed_aleph_perfect_tsere_variant(text: &str) -> Option<String> {
             seq[i].vowel = Some(Vowel::Tsere);
             return Some(hebrew::render(&seq));
         }
+    }
+    None
+}
+
+/// III-aleph imperfect-family / imperative -nâ (3fp/2fp): the quiescent aleph
+/// takes no vowel and the radical before it carries segol — tiqreʔnâ
+/// (תִּקְרֶאנָה), tēṣeʔnâ (תֵּצֶאנָה), tiśśeʔnâ (תִּשֶּׂאנָה) — beside the builder's
+/// patah/qamats spellings (תִּקְרַאְנָה, תִּקְרָאֲנָה). The -nâ closes the syllable
+/// after the quiescent aleph, so the long thematic vowel (holam → qamats) the
+/// open imperfect would take never appears; the short segol is what surfaces.
+fn lamed_aleph_imperfect_nun_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 4 {
+        return None;
+    }
+    // Match a trailing ...C2 + aleph + nun(qamats) + he(vowelless), the -nâ
+    // ending sitting on the quiescent C3 aleph.
+    if seq[n - 1].letter == letter::HE
+        && seq[n - 1].vowel.is_none()
+        && seq[n - 2].letter == letter::NUN
+        && seq[n - 2].vowel == Some(Vowel::Qamats)
+        && seq[n - 3].letter == letter::ALEF
+    {
+        seq[n - 3].vowel = None;
+        seq[n - 4].vowel = Some(Vowel::Segol);
+        return Some(hebrew::render(&seq));
     }
     None
 }
@@ -9698,6 +9836,42 @@ fn pe_guttural_imperfect_holam_plural_silent_variant(root: &Root, pgn: Pgn) -> O
         Cons::new(letter::VAV).with_dagesh(),
     ];
     Some(hebrew::render(&seq))
+}
+
+/// A-theme (stative) sibling of [`pe_guttural_imperfect_holam_plural_silent_variant`]:
+/// for stative I-guttural roots the imperfect theme is patah, which restores to
+/// qamats under the stress of the bare -û plural — yeḥdālû יֶחְדָּלוּ, yaḥdālû,
+/// and the 2mp taḥdālû. The C1 guttural closes on a silent sheva. Both prefix
+/// vowels (segol / patah) are emitted, since the stative preformative varies.
+/// Built from the root: the generator's 3mp/2mp is the reduced-sheva shape, so
+/// there is no full-grade plural for a re-pointing transform to act on.
+fn pe_guttural_imperfect_a_plural_silent_variants(root: &Root, pgn: Pgn) -> Vec<String> {
+    use Vowel::*;
+    if !hebrew::is_guttural(root.pe()) {
+        return Vec::new();
+    }
+    let prefix = match (pgn.person, pgn.gender) {
+        (Some(Person::Third), Some(Gender::Masculine)) => letter::YOD,
+        (Some(Person::Second), Some(Gender::Masculine)) => letter::TAV,
+        _ => return Vec::new(),
+    };
+    let mut c2 = rad(root.ayin(), 2).with_vowel(Qamats);
+    if hebrew::is_begedkefet(c2.letter) {
+        c2 = c2.with_dagesh();
+    }
+    [Segol, Patah]
+        .into_iter()
+        .map(|pv| {
+            let seq = vec![
+                Cons::new(prefix).with_vowel(pv),
+                rad(root.pe(), 1).with_vowel(Sheva),
+                c2,
+                rad(root.lamed(), 3),
+                Cons::new(letter::VAV).with_dagesh(),
+            ];
+            hebrew::render(&seq)
+        })
+        .collect()
 }
 
 /// I-guttural Qal imperfect silent-sheva twin: a guttral that closes the first
