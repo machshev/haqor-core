@@ -780,9 +780,16 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
                     && imperfect_suffix_kind(pgn) == Suffix::Zero)
                     .then(|| {
+                        // The aleph preformative (1cs) lowers to the segol grade
+                        // — ʾehĕlōḵ אֶהֱלֹךְ beside yahălōḵ יַהֲלֹךְ.
+                        let (pre_v, he_v) = if prefix_letter(pgn) == letter::ALEF {
+                            (Vowel::Segol, Vowel::HatafSegol)
+                        } else {
+                            (Vowel::Patah, Vowel::HatafPatah)
+                        };
                         Some(hebrew::render(&[
-                            Cons::new(prefix_letter(pgn)).with_vowel(Vowel::Patah),
-                            rad(letter::HE, 1).with_vowel(Vowel::HatafPatah),
+                            Cons::new(prefix_letter(pgn)).with_vowel(pre_v),
+                            rad(letter::HE, 1).with_vowel(he_v),
                             rad(letter::LAMED, 2).with_vowel(Vowel::Holam),
                             rad(letter::KAF, 3),
                         ]))
@@ -1478,6 +1485,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         Form::Imperfect | Form::Jussive | Form::Cohortative | Form::Imperative
                     ))
                 .then(|| lamed_he_pausal_tsere_variant(&text))
+                .flatten();
+                // He-less -nâ spelling of the fp afformative (תָּשֹׁבְןָ).
+                let fp_nah_heless = (matches!(
+                    form,
+                    Form::Imperfect | Form::Jussive | Form::Wayyiqtol
+                ) && pgn.number == Some(Number::Plural)
+                    && pgn.gender == Some(Gender::Feminine))
+                .then(|| fp_nah_heless_variant(&text))
                 .flatten();
                 // Archaic III-He retained-yod plural (יֶאֱתָיוּ, יֶהֱמָיוּן). The
                 // pe-guttural segol-grade plurals (יֶהֱמוּ) are hosts too, so the
@@ -2597,6 +2612,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hiphil_inf_abs_plene,
                     aleph_prefix_hataf_segol,
                     pe_yod_imperative_tsere,
+                    fp_nah_heless,
                 ]
                 .into_iter()
                 .flatten()
@@ -10493,6 +10509,24 @@ fn lamed_he_imperfect_fp_short_variant(text: &str) -> Option<String> {
         return None;
     }
     Some(hebrew::render(&seq[..n - 1]))
+}
+
+/// He-less spelling of the 3fp/2fp -nâ afformative: the final he is dropped and
+/// the nun takes the qamats directly — tāšōḇnâ תָּשֹׁבְנָה → תָּשֹׁבְןָ. Additive.
+fn fp_nah_heless_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n >= 2
+        && seq[n - 1].letter == letter::HE
+        && seq[n - 1].vowel.is_none()
+        && seq[n - 2].letter == letter::NUN
+        && seq[n - 2].vowel == Some(Vowel::Qamats)
+    {
+        seq.pop();
+        Some(hebrew::render(&seq))
+    } else {
+        None
+    }
 }
 
 /// Archaic III-He plural imperfect/imperative with the retained third radical:
