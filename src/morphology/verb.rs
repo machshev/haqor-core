@@ -1359,6 +1359,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Zero)
                     .then(|| lamed_he_doubled_apocope_variant(root, &text))
                     .flatten();
+                // ראה tsere-segol jussive/imperfect 3ms: beside the patah-prefix
+                // apocopated yarʔ (the וַיַּרְא base, built in apply_gizra), the
+                // 3ms also surfaces with the tsere prefix over a segol C1 — yēreʔ
+                // יֵרֶא ("let him see/appear"), matching the non-3ms tēreʔ shape.
+                let raah_apoc_tsere = (is_raah(root)
+                    && binyan == Binyan::Qal
+                    && matches!(form, Form::Jussive | Form::Imperfect)
+                    && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular))
+                .then(|| raah_apocopated_tsere_variant(root));
                 // Defective twin of the I-yod Hiphil's ô prefix: the vav mater
                 // dropped and the holam written on the preformative —
                 // וַיּוֹסֶף → וַיֹּסֶף, יוֹסִיף → יֹסִיף.
@@ -2478,6 +2487,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     wayyiqtol_cohortative,
                     hollow_wayyiqtol_pausal,
                     lamed_he_doubled_apoc,
+                    raah_apoc_tsere,
                     pe_yod_as_pe_nun,
                     pe_yod_hiphil_defective,
                     pe_yod_perf_hiriq,
@@ -4983,6 +4993,18 @@ fn is_laqah(root: &Root) -> bool {
 /// jussive/wayyiqtol 3ms (וַיַּרְא).
 fn is_raah(root: &Root) -> bool {
     root.pe() == letter::RESH && root.ayin() == letter::ALEF && root.lamed() == letter::HE
+}
+
+/// ראה tsere-segol jussive/imperfect 3ms — yēreʔ יֵרֶא: a tsere prefix yod over a
+/// segol C1 resh, the C2 aleph quiescent and the III-he dropped. Built directly
+/// (the canonical form is the patah-prefix yarʔ); caller gates to ראה 3ms.
+fn raah_apocopated_tsere_variant(root: &Root) -> String {
+    let seq = [
+        Cons::new(letter::YOD).with_vowel(Vowel::Tsere),
+        Cons::radical(root.pe(), 1).with_vowel(Vowel::Segol),
+        Cons::radical(root.ayin(), 2),
+    ];
+    hebrew::render(&seq)
 }
 
 /// חיה "to live" — III-he with an irregular apocopated jussive/wayyiqtol 3ms
@@ -11654,6 +11676,15 @@ mod tests {
         assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִיבָשׁ"));
         let p = generate_paradigm(&Root::parse("ישן").unwrap());
         assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִישָׁן"));
+    }
+
+    #[test]
+    fn raah_apocopated_tsere_jussive() {
+        // ראה Qal jussive/imperfect 3ms also surfaces as the tsere-segol yēreʔ
+        // יֵרֶא ("let him see/appear"), beside the patah-prefix apocope yarʔ.
+        let p = generate_paradigm(&Root::parse("ראה").unwrap());
+        assert!(has_text(&p, Binyan::Qal, Form::Jussive, THREE_MS, "יֵרֶא"));
+        assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יֵרֶא"));
     }
 
     #[test]
