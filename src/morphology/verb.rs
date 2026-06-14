@@ -1474,6 +1474,31 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     ))
                 .then(|| lamed_he_pausal_tsere_variant(&text))
                 .flatten();
+                // Archaic III-He retained-yod plural (יֶאֱתָיוּ, יֶהֱמָיוּן). The
+                // pe-guttural segol-grade plurals (יֶהֱמוּ) are hosts too, so the
+                // guttural verbs reach their attested segol vocalisation.
+                let lamed_he_retained_yod: Vec<String> = if root.lamed() == letter::HE
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Imperative)
+                    && pgn.number == Some(Number::Plural)
+                    && pgn.gender == Some(Gender::Masculine)
+                {
+                    std::iter::once(text.as_str())
+                        .chain(pe_guttural_loud_segol_pl.iter().map(String::as_str))
+                        .chain(pe_guttural_loud_from_silent.iter().map(String::as_str))
+                        .flat_map(lamed_he_retained_yod_plural_variants)
+                        .collect()
+                } else {
+                    Vec::new()
+                };
+                // III-Aleph III-He-style -ōṯ/-ôṯ infinitive construct (מַלֹּאת).
+                let lamed_aleph_inf_ot: Vec<String> = if root.lamed() == letter::ALEF
+                    && form == Form::InfinitiveConstruct
+                    && matches!(binyan, Binyan::Qal | Binyan::Piel)
+                {
+                    lamed_aleph_inf_ot_variants(&text)
+                } else {
+                    Vec::new()
+                };
                 // Niphal imperfect 1cs hiriq preformative twin (אִדָּרֵשׁ).
                 let niphal_1cs_hiriq: Vec<String> = if binyan == Binyan::Niphal
                     && matches!(
@@ -1806,18 +1831,35 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         })
                     })
                     .flatten();
-                // ירא: the imperative keeps its yod — yᵊrāʾ יְרָא.
-                let yare_imperative = (is_yare(root)
+                // ירא: the imperative keeps its yod — yᵊrāʾ יְרָא (2ms),
+                // yᵊrʾû יְראוּ (2mp), yirʾî יִרְאִי (2fs).
+                let yare_imperative: Vec<String> = if is_yare(root)
                     && binyan == Binyan::Qal
                     && form == Form::Imperative
-                    && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular))
-                .then(|| {
-                    hebrew::render(&[
-                        rad(letter::YOD, 1).with_vowel(Vowel::Sheva),
-                        rad(letter::RESH, 2).with_vowel(Vowel::Qamats),
-                        rad(letter::ALEF, 3),
-                    ])
-                });
+                {
+                    match (pgn.gender, pgn.number) {
+                        (Some(Gender::Masculine), Some(Number::Singular)) => vec![hebrew::render(&[
+                            rad(letter::YOD, 1).with_vowel(Vowel::Sheva),
+                            rad(letter::RESH, 2).with_vowel(Vowel::Qamats),
+                            rad(letter::ALEF, 3),
+                        ])],
+                        (Some(Gender::Masculine), Some(Number::Plural)) => vec![hebrew::render(&[
+                            rad(letter::YOD, 1).with_vowel(Vowel::Sheva),
+                            rad(letter::RESH, 2),
+                            rad(letter::ALEF, 3),
+                            Cons::new(letter::VAV).with_dagesh(),
+                        ])],
+                        (Some(Gender::Feminine), Some(Number::Singular)) => vec![hebrew::render(&[
+                            rad(letter::YOD, 1).with_vowel(Vowel::Hiriq),
+                            rad(letter::RESH, 2),
+                            rad(letter::ALEF, 3).with_vowel(Vowel::Hiriq),
+                            Cons::mater(letter::YOD),
+                        ])],
+                        _ => Vec::new(),
+                    }
+                } else {
+                    Vec::new()
+                };
                 // Nun-retained I-nun imperfect twin (yinṣᵊrû יִנְצְרוּ and its
                 // pausal יִנְצֹרוּ) beside the assimilated default (יִצְּרוּ).
                 let pe_nun_impf_retained: Vec<String> = if binyan == Binyan::Qal
@@ -2539,7 +2581,6 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_he_inf_oh,
                     hiphil_inf_abs_plene,
                     aleph_prefix_hataf_segol,
-                    yare_imperative,
                     pe_yod_imperative_tsere,
                 ]
                 .into_iter()
@@ -2583,6 +2624,9 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(hollow_hophal_perf)
                     .chain(cohortative_long)
                     .chain(wayyiqtol_cohortative_long)
+                    .chain(yare_imperative)
+                    .chain(lamed_he_retained_yod)
+                    .chain(lamed_aleph_inf_ot)
                 {
                     forms.push(VerbForm {
                         binyan,
@@ -10434,6 +10478,71 @@ fn lamed_he_imperfect_fp_short_variant(text: &str) -> Option<String> {
         return None;
     }
     Some(hebrew::render(&seq[..n - 1]))
+}
+
+/// Archaic III-He plural imperfect/imperative with the retained third radical:
+/// the original yod resurfaces before the plural -û ending, the stem consonant
+/// taking a qamats — yeʾĕṯāyû יֶאֱתָיוּ (beside the contracted יֶאֱתוּ),
+/// yehĕmāyûn יֶהֱמָיוּן. Both the bare -āyû and the paragogic-nun -āyûn are
+/// attested, so emit both.
+fn lamed_he_retained_yod_plural_variants(text: &str) -> Vec<String> {
+    let seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    // Locate the plural shureq vav, optionally trailed by a paragogic nun.
+    let vi = if n >= 1
+        && seq[n - 1].letter == letter::VAV
+        && seq[n - 1].dagesh
+        && seq[n - 1].vowel.is_none()
+    {
+        n - 1
+    } else if n >= 2
+        && seq[n - 1].letter == letter::NUN
+        && seq[n - 1].vowel.is_none()
+        && seq[n - 2].letter == letter::VAV
+        && seq[n - 2].dagesh
+        && seq[n - 2].vowel.is_none()
+    {
+        n - 2
+    } else {
+        return Vec::new();
+    };
+    // The stem consonant before the shureq must be bare (the slot the elided
+    // third radical vacated); skip if it already carries a vowel or is a mater.
+    if vi == 0
+        || seq[vi - 1].vowel.is_some()
+        || matches!(seq[vi - 1].letter, letter::VAV | letter::YOD)
+    {
+        return Vec::new();
+    }
+    let mut stem = seq[..vi].to_vec();
+    stem[vi - 1].vowel = Some(Vowel::Qamats);
+    stem.push(Cons::new(letter::YOD));
+    stem.push(Cons::new(letter::VAV).with_dagesh());
+    let bare = hebrew::render(&stem);
+    stem.push(Cons::new(letter::NUN));
+    let paragogic = hebrew::render(&stem);
+    vec![bare, paragogic]
+}
+
+/// III-Aleph infinitive construct on the III-He pattern: מלא and its kin take
+/// the -ōṯ / -ôṯ ending with C2 holding the o-grade holam — mallōʾṯ לְמַלֹּאת,
+/// mallōʾôṯ לְמַלֹּאות (Piel), mᵊlōʾṯ כִּמְלֹאת (Qal). Both the bare -ṯ and the
+/// mater-vav -ôṯ are attested.
+fn lamed_aleph_inf_ot_variants(text: &str) -> Vec<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 2 || seq[n - 1].letter != letter::ALEF || seq[n - 1].vowel.is_some() {
+        return Vec::new();
+    }
+    // The o-grade holam sits on C2 (already there in the Qal; the Piel's tsere
+    // lowers to it).
+    seq[n - 2].vowel = Some(Vowel::Holam);
+    let mut with_t = seq.clone();
+    with_t.push(Cons::new(letter::TAV));
+    let mut with_vt = seq;
+    with_vt.push(Cons::mater(letter::VAV));
+    with_vt.push(Cons::new(letter::TAV));
+    vec![hebrew::render(&with_t), hebrew::render(&with_vt)]
 }
 
 /// Pausal-tsere twin of a III-He form: the final segol before the etymological
