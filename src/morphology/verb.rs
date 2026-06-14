@@ -532,6 +532,8 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         | Form::Jussive
                         | Form::Wayyiqtol
                         | Form::InfinitiveConstruct
+                        | Form::ParticipleActive
+                        | Form::ParticiplePassive
                 ))
                 .then(|| guttural_silent_sheva_variant(&text))
                 .flatten();
@@ -1443,7 +1445,10 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let lamed_he_perf_hiriq = (binyan == Binyan::Hiphil
                     && form == Form::Perfect
                     && root.lamed() == letter::HE
-                    && perfect_suffix_kind(pgn) == Suffix::Consonantal)
+                    && matches!(
+                        perfect_suffix_kind(pgn),
+                        Suffix::Consonantal | Suffix::Heavy
+                    ))
                     .then(|| lamed_he_perfect_hiriq_variant(&text))
                     .flatten();
                 // Patah-theme Piel/Hithpael perfect 3ms twin (בֵּרַךְ, חִשַּׁב,
