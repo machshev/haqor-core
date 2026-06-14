@@ -393,8 +393,10 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         .flatten();
                 // Interior pausal of the Qal/Niphal perfect (יָדָעְתָּ, שָׁמָרְתָּ,
                 // יָצָאוּ, נִלְחָמוּ).
-                let pausal_perf = (matches!(binyan, Binyan::Qal | Binyan::Niphal | Binyan::Piel)
-                    && form == Form::Perfect)
+                // The C2 theme patah lengthens to qamats in pause across the
+                // binyanim — qāṭāltā, hiṯhallāḵtā הִתְהַלָּכְתָּ, hiršāʿnû
+                // הִרְשָׁעְנוּ.
+                let pausal_perf = (form == Form::Perfect)
                     .then(|| pausal_perfect_c2_variant(root, &text))
                     .flatten();
                 let paragogic = (form == Form::Perfect
