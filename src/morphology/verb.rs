@@ -2033,9 +2033,19 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && form == Form::Perfect
                         && root.ayin() == root.lamed()
                     {
-                        // Geminate Hiphil perfect hēCēC (הֵחֵל, הֵחֵלּוּ, הֵחֵלָּה).
+                        // Geminate Hiphil perfect hēCēC (הֵחֵל, הֵחֵלּוּ, הֵחֵלָּה),
+                        // with the patah-theme twin (hēmar הֵמַר, hēsabbû הֵסַבּוּ,
+                        // hēsabbâ): C1's e-grade tsere lowers to a.
                         geminate_hiphil_perfect_variant(root, pgn)
-                            .map(|s| vec![hebrew::render(&s)])
+                            .map(|s| {
+                                let mut out = vec![hebrew::render(&s)];
+                                if s.get(1).map(|c| c.vowel) == Some(Some(Vowel::Tsere)) {
+                                    let mut p = s.clone();
+                                    p[1].vowel = Some(Vowel::Patah);
+                                    out.push(hebrew::render(&p));
+                                }
+                                out
+                            })
                             .unwrap_or_default()
                     } else if binyan == Binyan::Niphal
                         && form == Form::InfinitiveConstruct
