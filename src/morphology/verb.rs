@@ -9016,6 +9016,14 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
             out.push((obj, hebrew::render(&s)));
             return;
         }
+        // A guttural C3 can't carry the silent-sheva link of the -ḵā/-ḵem
+        // suffixes; it takes a hataf-patah instead — ʾešlāḥăḵā אֶשְׁלָחֲךָ, not
+        // אֶשְׁלָחְךָ.
+        let link = if link == Sheva && hebrew::is_guttural(seq[n - 1].letter) {
+            HatafPatah
+        } else {
+            link
+        };
         for &theme in themes.iter() {
             let mut s = seq.clone();
             s[n - 2].vowel = Some(theme);
@@ -9638,43 +9646,95 @@ fn qal_imperative_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
         emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]); // -ēm
         return out;
     }
-    if matches!(c3, letter::ALEF | letter::VAV | letter::YOD) {
+    // III-Aleph imperative + suffix: the quiescent aleph keeps the linking
+    // vowel and C2 takes the qamats that the open pretonic syllable demands —
+    // rᵊp̄āʔēnî רְפָאֵנִי, mᵊṣāʔēm. C1 reduces to a sheva (a hataf under a
+    // guttural, via apply_guttural).
+    if c3 == letter::ALEF {
+        let mut out = Vec::new();
+        let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
+            let mut seq = vec![
+                Cons::radical(c1, 1).with_vowel(Sheva),
+                Cons::radical(c2, 2).with_vowel(Qamats),
+                Cons::radical(c3, 3).with_vowel(link),
+            ];
+            seq.extend_from_slice(tail);
+            apply_guttural(&mut seq, root);
+            out.push((obj, hebrew::render(&seq)));
+        };
+        emit(
+            OBJ_1CS,
+            Tsere,
+            &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)],
+        ); // -ēnî
+        emit(
+            OBJ_1CS,
+            Segol,
+            &[
+                Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq),
+                Cons::new(letter::YOD),
+            ],
+        ); // -ennî
+        emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]); // -ēhû
+        emit(OBJ_3FS, Segol, &[ocv(letter::HE, Qamats)]); // -ehā
+        emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]); // -ēnû
+        emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]); // -ēm
+        return out;
+    }
+    if matches!(c3, letter::VAV | letter::YOD) {
         return Vec::new();
     }
     let mut out = Vec::new();
-    let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
+    let mut emit = |obj: Pgn, c1_vowel: Vowel, c2_vowel: Vowel, link: Vowel, tail: &[Cons]| {
         let mut seq = vec![
-            Cons::radical(c1, 1).with_vowel(Qamats),
-            Cons::radical(c2, 2).with_vowel(Sheva),
+            Cons::radical(c1, 1).with_vowel(c1_vowel),
+            Cons::radical(c2, 2).with_vowel(c2_vowel),
             Cons::radical(c3, 3).with_vowel(link),
         ];
         seq.extend_from_slice(tail);
         apply_guttural(&mut seq, root);
         out.push((obj, hebrew::render(&seq)));
     };
-    emit(
-        OBJ_1CS,
-        Tsere,
-        &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)],
-    ); // -ēnî
-    emit(
-        OBJ_1CS,
-        Segol,
-        &[
-            Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq),
-            Cons::new(letter::YOD),
-        ],
-    ); // -ennî
-    emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]); // -ēhû
-    emit(
-        OBJ_3MS,
-        Segol,
-        &[Cons::new(letter::NUN).with_dagesh(), oshureq()],
-    ); // -ennû
-    emit(OBJ_2MS, Sheva, &[ocv(letter::KAF, Qamats)]); // -ᵊḵā
-    emit(OBJ_3FS, Segol, &[ocv(letter::HE, Qamats)]); // -ehā
-    emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]); // -ēnû
-    emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]); // -ēm
+    // Two gradings of the qoṭl- base, both emitted (each matches at most one
+    // surface): the strong qāṭl- (C1 qamats, C2 sheva → šomrēnî), and — when C2
+    // is a guttural that can't take the silent sheva — the qᵊṭāl- shape with C1
+    // reduced to sheva and the qamats kept on C2 (bᵊḥānēnî בְּחָנֵנִי).
+    let gradings: &[(Vowel, Vowel)] = if hebrew::is_guttural(c2) {
+        &[(Qamats, Sheva), (Sheva, Qamats)]
+    } else {
+        &[(Qamats, Sheva)]
+    };
+    for &(g1, g2) in gradings {
+        emit(
+            OBJ_1CS,
+            g1,
+            g2,
+            Tsere,
+            &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)],
+        ); // -ēnî
+        emit(
+            OBJ_1CS,
+            g1,
+            g2,
+            Segol,
+            &[
+                Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq),
+                Cons::new(letter::YOD),
+            ],
+        ); // -ennî
+        emit(OBJ_3MS, g1, g2, Tsere, &[Cons::new(letter::HE), oshureq()]); // -ēhû
+        emit(
+            OBJ_3MS,
+            g1,
+            g2,
+            Segol,
+            &[Cons::new(letter::NUN).with_dagesh(), oshureq()],
+        ); // -ennû
+        emit(OBJ_2MS, g1, g2, Sheva, &[ocv(letter::KAF, Qamats)]); // -ᵊḵā
+        emit(OBJ_3FS, g1, g2, Segol, &[ocv(letter::HE, Qamats)]); // -ehā
+        emit(OBJ_1CP, g1, g2, Tsere, &[Cons::new(letter::NUN), oshureq()]); // -ēnû
+        emit(OBJ_3MP, g1, g2, Tsere, &[Cons::new(letter::MEM)]); // -ēm
+    }
     out
 }
 
@@ -11594,6 +11654,33 @@ mod tests {
         assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִיבָשׁ"));
         let p = generate_paradigm(&Root::parse("ישן").unwrap());
         assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִישָׁן"));
+    }
+
+    #[test]
+    fn imperfect_object_suffix_2ms_guttural_c3() {
+        // A III-guttural C3 takes a hataf-patah link before the -ḵā suffix, not a
+        // plain sheva: ʾešlāḥăḵā אֶשְׁלָחֲךָ ("I will send you"), not אֶשְׁלָחְךָ.
+        let p = generate_paradigm(&Root::parse("שלח").unwrap());
+        assert!(any_text(&p, "אֶשְׁלָחֲךָ"));
+    }
+
+    #[test]
+    fn lamed_aleph_imperative_object_suffix() {
+        // III-aleph imperative + suffix: the quiescent aleph keeps the link vowel
+        // and C2 takes qamats — rᵊp̄āʔēnî רְפָאֵנִי.
+        let p = generate_paradigm(&Root::parse("רפא").unwrap());
+        assert!(any_text(&p, "רְפָאֵנִי"));
+    }
+
+    #[test]
+    fn guttural_c2_imperative_object_suffix() {
+        // C2-guttural imperative + suffix: the guttural keeps the qamats and C1
+        // reduces to a sheva — bᵊḥānēnî בְּחָנֵנִי. The strong שמר shape is
+        // unaffected (šomrēnî שָׁמְרֵנִי).
+        let p = generate_paradigm(&Root::parse("בחן").unwrap());
+        assert!(any_text(&p, "בְּחָנֵנִי"));
+        let p = generate_paradigm(&Root::parse("שמר").unwrap());
+        assert!(any_text(&p, "שָׁמְרֵנִי"));
     }
 
     #[test]
