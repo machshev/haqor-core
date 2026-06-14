@@ -656,6 +656,25 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         })
                     })
                     .flatten();
+                // Loud (hataf-segol) twin of the pe-guttural imperfect plural:
+                // the segol-prefix grade where the guttural C1 takes a
+                // hataf-segol rather than the silent sheva — yeʾĕrōḇû יֶאֱרֹבוּ
+                // (o-theme), yeḥĕrāḇû יֶחֱרָבוּ (pausal a-theme). Built by applying
+                // the segol shift ([C-patah][guttural-hatafpatah] →
+                // [C-segol][guttural-hatafsegol]) to the hataf-patah plural bases.
+                let pe_guttural_loud_segol_pl: Vec<String> = if binyan == Binyan::Qal
+                    && root.has(Gizra::PeGuttural)
+                    && matches!(form, Form::Imperfect | Form::Wayyiqtol | Form::Jussive)
+                {
+                    pe_guttural_impf_hataf
+                        .iter()
+                        .cloned()
+                        .chain(qal_a_theme_pausal.clone())
+                        .filter_map(|t| pe_guttural_imperfect_segol_variant(&t))
+                        .collect()
+                } else {
+                    Vec::new()
+                };
                 // Silent-sheva + pausal twins of the a-theme I-guttural
                 // imperfect family: the hataf grade (ʾeḥĕḏal אֶחֱדַל) closes on
                 // a silent sheva (ʾeḥdal אֶחְדַּל, וַיֶּחְדַּל) and lengthens in
@@ -682,6 +701,16 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 } else {
                     Default::default()
                 };
+                // Loud twin of the silent-sheva pe-guttural plural: where that
+                // form closed the segol prefix on a *silent* sheva (yeḥrāḇû
+                // יֶחְרָבוּ), the guttural can instead open the next syllable with
+                // a hataf-segol — yeḥĕrāḇû יֶחֱרָבוּ, yeḥĕrāḏû יֶחֱרָדוּ.
+                let pe_guttural_loud_from_silent: Vec<String> = pe_guttural_a_silent
+                    .iter()
+                    .chain(pe_guttural_impf_silent_pl_pausal.iter())
+                    .chain(pe_guttural_impf_a_silent_pl.iter())
+                    .filter_map(|t| guttural_segol_silent_to_hataf_variant(t))
+                    .collect();
                 // III-aleph Qal imperfect/imperative -nâ (3fp/2fp) segol twin
                 // (תִּקְרֶאנָה, תֵּצֶאנָה, תִּשֶּׂאנָה).
                 let lamed_aleph_impf_nun = (binyan == Binyan::Qal
@@ -2538,6 +2567,8 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(hollow_lamed_aleph_perf)
                     .chain(qal_inf_fem)
                     .chain(pe_guttural_a_silent)
+                    .chain(pe_guttural_loud_segol_pl)
+                    .chain(pe_guttural_loud_from_silent)
                     .chain(geminate_hiphil_perf_otav)
                     .chain(hollow_hophal_perf)
                     .chain(cohortative_long)
@@ -7633,6 +7664,26 @@ fn lamed_aleph_imperfect_nun_variant(text: &str) -> Option<String> {
 /// may surface as segol instead of patah, with a matching hataf-segol on C1 —
 /// יֶחֱטָא beside יַחֲטָא, וַיֶּחֱזַק beside וַיַּחֲזֹק. Returns the segol twin or
 /// None.
+/// Loud twin of a segol-prefix form whose guttural closed the prefix syllable on
+/// a silent sheva: a vowelless guttural preceded by a segol opens the next
+/// syllable with a hataf-segol instead — yeḥrāḇû יֶחְרָבוּ → yeḥĕrāḇû יֶחֱרָבוּ.
+/// Returns `None` when no such guttural is present. Additive.
+fn guttural_segol_silent_to_hataf_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    for i in 1..seq.len() {
+        // The guttural closes the prefix syllable on a silent sheva, which
+        // `render` writes (Some(Sheva)) — or, word-finally, leaves bare (None).
+        if hebrew::is_guttural(seq[i].letter)
+            && matches!(seq[i].vowel, None | Some(Vowel::Sheva))
+            && seq[i - 1].vowel == Some(Vowel::Segol)
+        {
+            seq[i].vowel = Some(Vowel::HatafSegol);
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
+}
+
 fn pe_guttural_imperfect_segol_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     // Find a guttural with hataf-patah, preceded by a consonant with patah.
@@ -8995,6 +9046,9 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
         &[Cons::new(letter::KAF).with_dagesh().with_vowel(Qamats)],
     );
     emit(OBJ_2FS, Sheva, &[ocv(letter::KAF, Sheva)]);
+    // 2fs -ēḵ: the tsere link on C3 + a bare final kaf (yiḡʾālēḵ יִגְאָלֵךְ,
+    // tōʔḵᵊlēḵ תֹּאכְלֵךְ) — the regular shape, beside the reduced -ᵊḵ above.
+    emit(OBJ_2FS, Tsere, &[Cons::new(letter::KAF)]);
     // 3ms: plain -ēhû and energic -ennû.
     emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]);
     emit(
@@ -11540,6 +11594,28 @@ mod tests {
         assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִיבָשׁ"));
         let p = generate_paradigm(&Root::parse("ישן").unwrap());
         assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִישָׁן"));
+    }
+
+    #[test]
+    fn imperfect_object_suffix_2fs_tsere() {
+        // 2fs object suffix on the imperfect is the tsere-link -ēḵ, not only the
+        // reduced -ᵊḵ: yiḡʾālēḵ יִגְאָלֵךְ ("he will redeem you[f]"), tōʔḵᵊlēḵ
+        // תֹּאכְלֵךְ.
+        let p = generate_paradigm(&Root::parse("גאל").unwrap());
+        assert!(any_text(&p, "יִגְאָלֵךְ"));
+        let p = generate_paradigm(&Root::parse("אכל").unwrap());
+        assert!(any_text(&p, "תֹּאכְלֵךְ"));
+    }
+
+    #[test]
+    fn pe_guttural_loud_segol_imperfect_plural() {
+        // Pe-guttural Qal imperfect 3mp loud (hataf-segol) twin: the segol-prefix
+        // grade where the guttural opens the next syllable — yeʾĕrōḇû יֶאֱרֹבוּ
+        // (o-theme), yeḥĕrāḇû יֶחֱרָבוּ (pausal a-theme).
+        let p = generate_paradigm(&Root::parse("ארב").unwrap());
+        assert!(any_text(&p, "יֶאֱרֹבוּ"));
+        let p = generate_paradigm(&Root::parse("חרב").unwrap());
+        assert!(any_text(&p, "יֶחֱרָבוּ"));
     }
 
     #[test]
