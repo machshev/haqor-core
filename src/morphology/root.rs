@@ -112,6 +112,20 @@ impl std::fmt::Display for RootError {
 
 impl std::error::Error for RootError {}
 
+/// Stative lexemes whose third radical he is consonantal (written with mappiq),
+/// not a weak III-He mater. They inflect as strong triliterals. See the use site
+/// in [`detect_gizra`].
+pub(crate) fn is_consonantal_he_root(letters: [char; 3]) -> bool {
+    use letter::*;
+    matches!(
+        letters,
+        [GIMEL, BET, HE]   // גבה  be high
+        | [NUN, GIMEL, HE] // נגה  shine
+        | [TAV, MEM, HE]   // תמה  be astonished
+        | [KAF, MEM, HE]   // כמה  long for
+    )
+}
+
 fn detect_gizra(letters: [char; 3]) -> Vec<Gizra> {
     use letter::*;
     let mut out = Vec::new();
@@ -149,7 +163,15 @@ fn detect_gizra(letters: [char; 3]) -> Vec<Gizra> {
     if l == ALEF {
         out.push(Gizra::LamedAleph);
     } else if l == HE {
-        out.push(Gizra::LamedHe);
+        // A handful of stative lexemes carry a *consonantal* final he (written
+        // with mappiq: gāḇah גָּבַהּ, nāḡah נָגַהּ, tāmah תָּמַהּ, kāmah כָּמַהּ).
+        // These do not inflect as weak III-He — the he is a true third radical
+        // and the verb runs as a strong triliteral — so they must be kept out of
+        // the LamedHe class. Root letters alone can't tell גָּבַהּ from בָּנָה, so
+        // this is a lexical exception list.
+        if !is_consonantal_he_root(letters) {
+            out.push(Gizra::LamedHe);
+        }
     } else if matches!(l, HET | AYIN) {
         out.push(Gizra::LamedGuttural);
     }

@@ -1909,6 +1909,10 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 {
                     std::iter::once(text.clone())
                         .chain(qal_a_theme.clone())
+                        // The pausal a-theme too: the retained-yod stative
+                        // surfaces with the lengthened qamats theme — yîḇāš
+                        // (יִיבָשׁ), yîšān (יִישָׁן) — beside the contextual patah.
+                        .chain(qal_a_theme_pausal.clone())
                         .flat_map(|t| {
                             // The mater spelling (וַיִּירָא) and its defective
                             // twin (וַיִּרָא — hiriq written bare).
@@ -4429,6 +4433,23 @@ fn apply_gizra(
         attested |= apply_lamed_aleph(&mut seq, root, binyan, form, pgn);
     }
 
+    // Consonantal-he statives (גבה, נגה, תמה, כמה): the strong builder produced
+    // the right skeleton (gāḇah, gāḇhû, the a-theme yiḡbah), but a word-final
+    // consonantal he needs its mappiq to mark it as a true radical — gāḇah is
+    // written גָּבַהּ, not the homographic III-He גָּבַה. Set the dagesh point on
+    // any final vowelless he so canonical_key (which keeps the he's dagesh)
+    // matches the attested mappiq spelling.
+    if root.lamed() == letter::HE && crate::morphology::root::is_consonantal_he_root(root.letters)
+    {
+        attested = true;
+        if let Some(last) = seq.last_mut()
+            && last.letter == letter::HE
+            && last.vowel.is_none()
+        {
+            last.dagesh = true;
+        }
+    }
+
     // I-Aleph: in Qal Imperfect, prefix vowel becomes holam (yōʔkal).
     if root.has(Gizra::PeAleph) {
         attested |= apply_pe_aleph(&mut seq, root, binyan, form, pgn);
@@ -6600,11 +6621,22 @@ fn paragogic_nun_theme_variants(text: &str) -> Vec<String> {
     let seq = hebrew::parse_pointed(text);
     let n = seq.len();
     // Need …[restore-consonant + Sheva][C3 vowelless][vav-shureq]. The -û plural
-    // ends in a vav carrying the shureq dagesh with no vowel of its own.
+    // ends in a vav carrying the shureq dagesh with no vowel of its own. When the
+    // restore-consonant is a guttural it bears a hataf rather than a vocal sheva
+    // in the bare plural (yišʾălû יִשְׁאֲלוּ), so accept that too — the energic
+    // grade restores it to qamats/tsere just the same (yišʾālûn יִשְׁאָלוּן).
+    let restore_ok = seq.get(n.wrapping_sub(3)).is_some_and(|c| {
+        c.vowel == Some(Vowel::Sheva)
+            || (hebrew::is_guttural(c.letter)
+                && matches!(
+                    c.vowel,
+                    Some(Vowel::HatafPatah | Vowel::HatafSegol | Vowel::HatafQamats)
+                ))
+    });
     if n < 3
         || !(seq[n - 1].letter == letter::VAV && seq[n - 1].dagesh && seq[n - 1].vowel.is_none())
         || seq[n - 2].vowel.is_some()
-        || seq[n - 3].vowel != Some(Vowel::Sheva)
+        || !restore_ok
     {
         return Vec::new();
     }
@@ -11476,5 +11508,47 @@ mod tests {
         assert!(any_text(&p, "תֵּת"));
         assert!(any_text(&p, "תִּתּוֹ"));
         assert!(any_text(&p, "תִּתִּי"));
+    }
+
+    #[test]
+    fn consonantal_he_stative_strong() {
+        // גבה "be high": a consonantal-he stative, not weak III-He. It inflects
+        // as a strong triliteral with a mappiq on the word-final he — gāḇah
+        // גָּבַהּ (not the III-He גָּבָה), gāḇhû גָּבְהוּ, and the a-theme wayyiqtol
+        // wayyiḡbah וַיִּגְבַּהּ.
+        let root = Root::parse("גבה").unwrap();
+        assert!(!root.has(Gizra::LamedHe), "גבה must not be classed III-He");
+        let p = generate_paradigm(&root);
+        assert!(has_text(&p, Binyan::Qal, Form::Perfect, THREE_MS, "גָּבַהּ"));
+        let three_cp = Pgn::new(Person::Third, Gender::Common, Number::Plural);
+        assert!(has_text(&p, Binyan::Qal, Form::Perfect, three_cp, "גָּבְהוּ"));
+        assert!(has_text(
+            &p,
+            Binyan::Qal,
+            Form::Wayyiqtol,
+            THREE_MS,
+            "וַיִּגְבַּהּ"
+        ));
+    }
+
+    #[test]
+    fn pe_yod_retained_imperfect_pausal_qamats() {
+        // יבש / ישן Qal Imperfect: the retained-yod stative surfaces with the
+        // lengthened pausal qamats theme — yîḇāš יִיבָשׁ, yîšān יִישָׁן — beside
+        // the contextual patah.
+        let p = generate_paradigm(&Root::parse("יבש").unwrap());
+        assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִיבָשׁ"));
+        let p = generate_paradigm(&Root::parse("ישן").unwrap());
+        assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יִישָׁן"));
+    }
+
+    #[test]
+    fn paragogic_nun_theme_guttural_c2() {
+        // שאל Qal Imperfect 3mp: the bare plural carries a hataf on the guttural
+        // C2 (yišʾălû יִשְׁאֲלוּ); the energic -ûn restores the qamats theme on
+        // that guttural just as it does on a vocal-sheva consonant — yišʾālûn
+        // יִשְׁאָלוּן.
+        let p = generate_paradigm(&Root::parse("שאל").unwrap());
+        assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MP, "יִשְׁאָלוּן"));
     }
 }
