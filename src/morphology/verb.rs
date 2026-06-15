@@ -592,6 +592,21 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && root.has(Gizra::AyinGuttural))
                     .then(|| ayin_guttural_hataf_variant(root, &text))
                     .flatten();
+                // II-guttural Qal imperative a-harmony twin: the vocalic-suffix
+                // forms (qiṭlû/qiṭlî) have C2 close the first syllable on a
+                // silent sheva (זִעְקוּ), but a guttural C2 cannot — it opens
+                // with a hataf-patah and the hiriq harmonises to patah:
+                // zaʿăqû זַעֲקוּ, šaʾălû שַׁאֲלוּ, baḥărû בַּחֲרוּ.
+                let qal_imperative_ayin_gutt = (binyan == Binyan::Qal
+                    && form == Form::Imperative
+                    && root.has(Gizra::AyinGuttural)
+                    && matches!(
+                        (pgn.gender, pgn.number),
+                        (Some(Gender::Feminine), Some(Number::Singular))
+                            | (Some(Gender::Masculine), Some(Number::Plural))
+                    ))
+                .then(|| qal_imperative_ayin_guttural_a_variant(root, &text))
+                .flatten();
                 // II-guttural Piel/Hithpael perfect virtual-doubling hiriq twin
                 // (נִאֲצוּ beside נֵאֲצוּ).
                 let piel_perf_guttural_hiriq =
@@ -1370,6 +1385,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         })
                     })
                     .flatten();
+                // III-He participle fs construct: the -â feminine (qamats-he,
+                // maʕălâ מַעֲלָה, ʕōśâ עֹשָׂה) bound form replaces the he with a
+                // tav and shortens the qamats to patah — maʕălaṯ מַעֲלַת,
+                // ʕōśaṯ עֹשַׂת. Spans every binyan's III-He active/passive ptcp.
+                let lamed_he_ptcp_fs_cstr = (root.lamed() == letter::HE
+                    && matches!(form, Form::ParticipleActive | Form::ParticiplePassive)
+                    && pgn == Pgn::gn(Gender::Feminine, Number::Singular))
+                .then(|| lamed_he_participle_fs_construct_variant(&text))
+                .flatten();
                 // Hollow Qal participle twins: the stative tsere class (mēṯ
                 // מֵת, mēṯîm מֵתִים) beside the default qām, plus the fs
                 // qamats-he alternant (bāʾâ בָּאָה) and its -aṯ construct
@@ -2237,7 +2261,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     } else if pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular) {
                         match (binyan, form) {
                             (_, Form::Perfect) if root.lamed() == letter::HE => {
-                                lamed_he_perfect_object_suffixes(&text)
+                                // The segol-prefix III-He Hiphil twin (herʾâ
+                                // הֶרְאָה) is a suffix host too — herʾām הֶרְאָם.
+                                let mut v = lamed_he_perfect_object_suffixes(&text);
+                                if let Some(base) = hiphil_perf_segol.as_ref() {
+                                    v.extend(lamed_he_perfect_object_suffixes(base));
+                                }
+                                v
                             }
                             (Binyan::Qal, Form::Perfect) => qal_perfect_object_suffixes(root),
                             (Binyan::Piel | Binyan::Pual | Binyan::Hithpael, Form::Perfect) => {
@@ -2559,6 +2589,8 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_qal_perf_heavy,
                     lamed_aleph_ptcp,
                     ayin_guttural_hataf,
+                    qal_imperative_ayin_gutt,
+                    lamed_he_ptcp_fs_cstr,
                     piel_perf_guttural_hiriq,
                     pe_aleph_wayy_1cp,
                     pe_aleph_tsere,
@@ -3129,6 +3161,46 @@ fn ayin_guttural_hataf_variant(root: &Root, text: &str) -> Option<String> {
             c.vowel = Some(Vowel::HatafPatah);
             return Some(hebrew::render(&seq));
         }
+    }
+    None
+}
+
+/// III-He participle fs construct: the -â feminine ending (qamats on the last
+/// stem consonant + he, maʕălâ מַעֲלָה) binds as -aṯ — the he becomes a tav and
+/// the qamats shortens to patah: maʕălaṯ מַעֲלַת. Returns `None` unless the form
+/// ends in a vowelless he preceded by a qamats.
+fn lamed_he_participle_fs_construct_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n >= 2
+        && seq[n - 1].letter == letter::HE
+        && seq[n - 1].vowel.is_none()
+        && seq[n - 2].vowel == Some(Vowel::Qamats)
+    {
+        seq[n - 1] = Cons::new(letter::TAV);
+        seq[n - 2].vowel = Some(Vowel::Patah);
+        return Some(hebrew::render(&seq));
+    }
+    None
+}
+
+/// II-guttural Qal imperative a-harmony twin: the vocalic-suffix imperative
+/// (qiṭlû/qiṭlî) gives C2 a silent sheva that closes the C1 syllable — but a
+/// guttural C2 opens with a hataf-patah instead, and the C1 hiriq harmonises
+/// to patah: ziʿqû זִעְקוּ → zaʿăqû זַעֲקוּ. Caller gates to (Qal, Imperative,
+/// AyinGuttural, 2fs|2mp); additive. C1 is seq[0] and the guttural C2 seq[1]
+/// (no prefix in the Qal imperative).
+fn qal_imperative_ayin_guttural_a_variant(root: &Root, text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() >= 2
+        && seq[0].letter == root.pe()
+        && seq[0].vowel == Some(Vowel::Hiriq)
+        && seq[1].letter == root.ayin()
+        && seq[1].vowel == Some(Vowel::Sheva)
+    {
+        seq[0].vowel = Some(Vowel::Patah);
+        seq[1].vowel = Some(Vowel::HatafPatah);
+        return Some(hebrew::render(&seq));
     }
     None
 }
@@ -4185,6 +4257,17 @@ fn build_imperative(root: &Root, binyan: Binyan, pgn: Pgn, force_a_theme: bool) 
     };
     let mut c2 = rad(root.ayin(), 2).with_vowel(v2);
     if matches!(binyan, Binyan::Piel | Binyan::Pual | Binyan::Hithpael) {
+        c2 = c2.with_dagesh();
+    }
+    // Dagesh lene on a begedkefet C2: in the Hiphil imperative the C1 sheva is
+    // silent (it closes the haC- prefix syllable: haš-kēm), so a begedkefet C2
+    // opens the next syllable with a dagesh lene — haškēm הַשְׁכֵּם. A guttural
+    // C1 can't carry the silent sheva, so it doesn't apply there. (Qal's C1
+    // sheva is vocal — šᵊmōr — and Niphal/Hithpael double or close differently.)
+    if binyan == Binyan::Hiphil
+        && hebrew::is_begedkefet(root.ayin())
+        && !hebrew::is_guttural(root.pe())
+    {
         c2 = c2.with_dagesh();
     }
     out.push(c2);
@@ -9834,10 +9917,12 @@ fn qal_imperative_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
         out.push((obj, hebrew::render(&seq)));
     };
     // Two gradings of the qoṭl- base, both emitted (each matches at most one
-    // surface): the strong qāṭl- (C1 qamats, C2 sheva → šomrēnî), and — when C2
-    // is a guttural that can't take the silent sheva — the qᵊṭāl- shape with C1
-    // reduced to sheva and the qamats kept on C2 (bᵊḥānēnî בְּחָנֵנִי).
-    let gradings: &[(Vowel, Vowel)] = if hebrew::is_guttural(c2) {
+    // surface): the strong qāṭl- (C1 qamats, C2 sheva → šomrēnî), and the
+    // qᵊṭāl- shape with C1 reduced to sheva and the qamats on C2. The latter
+    // covers a C2 guttural that can't take the silent sheva (bᵊḥānēnî
+    // בְּחָנֵנִי) and the III-guttural a-theme imperative (šᵊmaʕ שְׁמַע → with
+    // the theme patah lengthening to qamats: šᵊmāʕēnî שְׁמָעֵנִי, šᵊlāḥēnî).
+    let gradings: &[(Vowel, Vowel)] = if hebrew::is_guttural(c2) || hebrew::is_guttural(c3) {
         &[(Qamats, Sheva), (Sheva, Qamats)]
     } else {
         &[(Qamats, Sheva)]
