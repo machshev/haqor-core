@@ -1637,6 +1637,25 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.has(Gizra::PeGuttural))
                 .then(|| pe_guttural_niphal_hiriq_variant(&text))
                 .flatten();
+                // I-guttural Niphal perfect hataf-segol twin: when a vocalic
+                // afformative reduces C2 to a silent sheva, apply_guttural
+                // promotes the C1 hataf-segol to a full segol (neʾesp̄û
+                // נֶאֶסְפוּ). The MT keeps the hataf — neʾĕsp̄û נֶאֱסְפוּ,
+                // neʾĕlāḥû נֶאֱלָחוּ — so restore it as a twin.
+                let niphal_pe_guttural_hataf = (binyan == Binyan::Niphal
+                    && form == Form::Perfect
+                    && root.has(Gizra::PeGuttural))
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let i = (1..seq.len().saturating_sub(1)).find(|&i| {
+                        seq[i].letter == root.pe()
+                            && seq[i].vowel == Some(Vowel::Segol)
+                            && seq[i + 1].vowel == Some(Vowel::Sheva)
+                    })?;
+                    seq[i].vowel = Some(Vowel::HatafSegol);
+                    Some(hebrew::render(&seq))
+                })
+                .flatten();
                 // חיה/היה short imperfect segol-prefix twin (וַיֶּחִי).
                 let chayah_segol = ((is_chayah(root) || is_hayah(root))
                     && binyan == Binyan::Qal
@@ -2727,6 +2746,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pual_ptcp_qamats,
                     hophal_qubuts,
                     niphal_pe_guttural_hiriq,
+                    niphal_pe_guttural_hataf,
                     chayah_segol,
                     shachah_inf_defective,
                     shachah_pausal,
