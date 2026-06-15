@@ -311,6 +311,24 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
         alt[0].vowel = Some(Vowel::Sheva);
         targets.push(hebrew::render(&alt));
     }
+    // He-syncope: a ל/ב/כ preposition before an infinitive can absorb the
+    // preformative he of a Niphal/Hiphil infinitive, taking that he's vowel as
+    // the he elides — lᵊ+hērāʾôṯ → lērāʾôṯ לֵרָאוֹת. The generator always keeps
+    // the he, so restore it (with the proclitic's vowel) to match. Limited to
+    // the tsere/patah grades that flag the absorbed infinitive he.
+    if strip > 0
+        && matches!(
+            seq[strip - 1].letter,
+            letter::LAMED | letter::BET | letter::KAF
+        )
+        && matches!(seq[strip - 1].vowel, Some(Vowel::Tsere | Vowel::Patah))
+        && remainder.first().is_some_and(|c| c.letter != letter::HE)
+    {
+        let vowel = seq[strip - 1].vowel.unwrap();
+        let mut alt = vec![Cons::new(letter::HE).with_vowel(vowel)];
+        alt.extend_from_slice(remainder);
+        targets.push(hebrew::render(&alt));
+    }
     // A proclitic onto a pe-aleph stem swallows the aleph's hataf (לֵאמֹר): restore it.
     if strip > 0
         && remainder

@@ -1903,6 +1903,38 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         apply_guttural(&mut seq, root);
                         hebrew::render(&seq)
                     });
+                // The same -ōh he-final twin for the derived-stem III-He
+                // infinitive construct (hērāʾōh הֵרָאֹה beside hērāʾôṯ הֵרָאוֹת,
+                // hēʿāśōh הֵעָשֹׂה): derive it from the generated -ôṯ text by
+                // dropping the vav+tav mater ending and re-pointing the radical
+                // it left with a holam, then a final he.
+                let lamed_he_inf_oh_derived = (root.lamed() == letter::HE
+                    && matches!(
+                        binyan,
+                        Binyan::Niphal
+                            | Binyan::Hiphil
+                            | Binyan::Piel
+                            | Binyan::Pual
+                            | Binyan::Hithpael
+                    )
+                    && form == Form::InfinitiveConstruct)
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let n = seq.len();
+                    (n >= 3
+                        && seq[n - 1].letter == letter::TAV
+                        && seq[n - 2].letter == letter::VAV)
+                        .then(|| {
+                            seq.pop();
+                            seq.pop();
+                            if let Some(c) = seq.last_mut() {
+                                c.vowel = Some(Vowel::Holam);
+                            }
+                            seq.push(Cons::new(letter::HE));
+                            hebrew::render(&seq)
+                        })
+                })
+                .flatten();
                 // Plene tsere-yod spelling of the Hiphil infinitive absolute
                 // (haškêm הַשְׁכֵּים beside הַשְׁכֵּם).
                 let hiphil_inf_abs_plene = (binyan == Binyan::Hiphil
@@ -2708,6 +2740,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_niphal_inf,
                     lamed_he_fs_ptcp_iyya,
                     lamed_he_inf_oh,
+                    lamed_he_inf_oh_derived,
                     hiphil_inf_abs_plene,
                     aleph_prefix_hataf_segol,
                     pe_yod_imperative_tsere,
