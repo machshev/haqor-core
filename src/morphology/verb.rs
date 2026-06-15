@@ -2456,7 +2456,11 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && form == Form::Imperative
                         && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular)
                     {
-                        hiphil_imperative_object_suffixes(&text)
+                        if root.lamed() == letter::HE {
+                            lamed_he_hiphil_imperative_object_suffixes(&text)
+                        } else {
+                            hiphil_imperative_object_suffixes(&text)
+                        }
                     } else if matches!(binyan, Binyan::Piel | Binyan::Hithpael)
                         && form == Form::Imperative
                         && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular)
@@ -10233,6 +10237,38 @@ fn piel_imperative_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         s[n - 1].vowel = Some(*link);
         s.extend(tail.iter().cloned());
         out.push((*obj, hebrew::render(&s)));
+    }
+    out
+}
+
+/// III-He Hiphil imperative (2ms) with a pronominal object suffix. The bare
+/// imperative is haqṭēh (harʾēh הַרְאֵה, hôrēh הוֹרֵה, hakkēh הַכֵּה); before a
+/// suffix the final he elides and the suffix attaches to the C2 tsere link —
+/// hôrēnî הוֹרֵנִי, harʾēnû הַרְאֵנוּ, hakkēnî/hakkênî הַכֵּינִי. Both the
+/// defective and the plene tsere-yod spellings occur. Additive.
+fn lamed_he_hiphil_imperative_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let mut seq = hebrew::parse_pointed(base_text);
+    if seq.last().map(|c| c.letter) != Some(letter::HE) || seq.len() < 3 {
+        return Vec::new();
+    }
+    seq.pop(); // drop the final he; the C2 tsere is the link vowel
+    let tails: &[(Pgn, &[Cons])] = &[
+        (OBJ_1CS, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]),
+        (OBJ_1CP, &[Cons::new(letter::NUN), oshureq()]),
+        (OBJ_3MS, &[Cons::new(letter::HE), oshureq()]),
+        (OBJ_3MP, &[Cons::new(letter::MEM)]),
+    ];
+    let mut out = Vec::new();
+    for &(obj, tail) in tails {
+        for plene in [false, true] {
+            let mut s = seq.clone();
+            if plene {
+                s.push(Cons::mater(letter::YOD));
+            }
+            s.extend_from_slice(tail);
+            out.push((obj, hebrew::render(&s)));
+        }
     }
     out
 }
