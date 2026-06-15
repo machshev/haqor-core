@@ -8337,6 +8337,11 @@ fn hiphil_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
             vec![ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)],
         ), // -anî
         (
+            OBJ_1CS,
+            Some(Qamats),
+            vec![ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)],
+        ), // -ānî (hiṣṣîlānî הִצִּילָנִי)
+        (
             OBJ_2MS,
             Some(if aleph { HatafPatah } else { Sheva }),
             vec![ocv(letter::KAF, Qamats)],
@@ -9224,10 +9229,10 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
                     Sheva
                 });
             }
-            // A quiescent-aleph C3 can't carry the silent-sheva link of the
-            // -ḵā/-ḵem suffixes; it takes a hataf-patah instead:
-            // yᵊḇîʾăḵā (יְבִיאֲךָ), not יְבִיאְךָ.
-            let link = if link == Sheva && s[n - 1].letter == letter::ALEF {
+            // A guttural C3 can't carry the silent-sheva link of the -ḵā/-ḵem
+            // suffixes; it takes a hataf-patah instead: yᵊḇîʾăḵā (יְבִיאֲךָ),
+            // ʾôḏîʕăḵā (אוֹדִיעֲךָ), not יְבִיאְךָ / אוֹדִיעְךָ.
+            let link = if link == Sheva && hebrew::is_guttural(s[n - 1].letter) {
                 HatafPatah
             } else {
                 link
@@ -9267,8 +9272,10 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
             Cons::new(letter::YOD),
         ],
     );
-    // 2ms -ᵊḵā, the energic -ekkā (ʾeʿezḇekkā אֶעֶזְבֶךָּ), 2fs -ēḵ.
+    // 2ms -ᵊḵā, the segol-link -eḵā (ʾămîṯeḵā אֲמִיתֶךָ, yišmāreḵā), the energic
+    // -ekkā (ʾeʿezḇekkā אֶעֶזְבֶךָּ), 2fs -ēḵ.
     emit(OBJ_2MS, Sheva, &[ocv(letter::KAF, Qamats)]);
+    emit(OBJ_2MS, Segol, &[ocv(letter::KAF, Qamats)]);
     emit(
         OBJ_2MS,
         Segol,
@@ -10975,9 +10982,6 @@ fn geminate_hiphil_imperfect_variant(root: &Root, pgn: Pgn) -> Option<String> {
 /// הֲ/הִ twins).
 fn geminate_hiphil_perfect_otav_variants(root: &Root, pgn: Pgn) -> Vec<String> {
     use Vowel::*;
-    if hebrew::is_guttural(root.pe()) {
-        return Vec::new();
-    }
     let tail: Vec<Cons> = match (pgn.person, pgn.gender, pgn.number) {
         (Some(Person::First), _, Some(Number::Singular)) => {
             vec![ocv(letter::TAV, Hiriq), Cons::mater(letter::YOD)]
@@ -11008,19 +11012,31 @@ fn geminate_hiphil_perfect_otav_variants(root: &Root, pgn: Pgn) -> Vec<String> {
     } else {
         &[(Hiriq, true)]
     };
-    for he_vowel in [HatafPatah, Hiriq, Tsere] {
+    for he_vowel in [HatafPatah, Patah, Hiriq, Tsere] {
         for &(c1v, dagesh) in grades {
-            let mut c2 = rad(root.lamed(), 3).with_vowel(Holam);
-            if dagesh {
-                c2 = c2.with_dagesh();
+            // The linking ô on the (doubled) contracted radical writes either
+            // defectively — the holam sits on C2 (haḥillōṯî הַחִלֹּתִי) — or
+            // plene, with C2 bare and a vav mater carrying the holam
+            // (haḥillôṯā הַחִלּוֹתָ).
+            for plene in [false, true] {
+                let mut c2 = rad(root.lamed(), 3);
+                if dagesh {
+                    c2 = c2.with_dagesh();
+                }
+                let mut seq = vec![
+                    Cons::new(letter::HE).with_vowel(he_vowel),
+                    rad(root.pe(), 1).with_vowel(c1v),
+                ];
+                if plene {
+                    seq.push(c2);
+                    seq.push(Cons::new(letter::VAV).with_vowel(Holam));
+                } else {
+                    c2.vowel = Some(Holam);
+                    seq.push(c2);
+                }
+                seq.extend(tail.clone());
+                out.push(hebrew::render(&seq));
             }
-            let mut seq = vec![
-                Cons::new(letter::HE).with_vowel(he_vowel),
-                rad(root.pe(), 1).with_vowel(c1v),
-                c2,
-            ];
-            seq.extend(tail.clone());
-            out.push(hebrew::render(&seq));
         }
     }
     out
