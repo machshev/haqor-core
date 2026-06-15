@@ -177,8 +177,10 @@ fn detect_gizra(letters: [char; 3]) -> Vec<Gizra> {
     }
 
     // Geminate: 2nd == 3rd. Only flag when middle isn't already classed
-    // as hollow (a ≠ vav/yod); a geminate hollow is vanishingly rare.
-    if a == l && a != VAV && a != YOD {
+    // as hollow (a ≠ vav/yod); a geminate hollow is vanishingly rare. A
+    // final he is the weak III-He marker, not a true repeated radical, so
+    // C2==C3==he (קהה, כהה, דהה) is III-He, not geminate.
+    if a == l && a != VAV && a != YOD && l != HE {
         out.push(Gizra::Geminate);
     }
 
