@@ -651,6 +651,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && pgn.number == Some(Number::Singular)))
                 .then(|| pe_aleph_holam_variant(&text))
                 .flatten();
+                // Uncontracted Hiphil imperfect twin — יְהוֹשִׁיעַ beside יוֹשִׁיעַ.
+                let hiphil_uncontracted = (binyan == Binyan::Hiphil
+                    && matches!(
+                        form,
+                        Form::Imperfect | Form::Jussive | Form::Cohortative
+                    ))
+                .then(|| hiphil_imperfect_uncontracted_variant(&text))
+                .flatten();
                 // LamedAleph Qal Perfect tsere variant — שָׂנֵאתִי beside שָׂנָאתִי.
                 let lamed_aleph_tsere = (binyan == Binyan::Qal
                     && root.has(Gizra::LamedAleph)
@@ -2741,6 +2749,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_aleph_wayy_1cp,
                     pe_aleph_tsere,
                     pe_aleph_holam,
+                    hiphil_uncontracted,
                     lamed_aleph_tsere,
                     pe_guttural_segol,
                     lamed_guttural_perf_sheva,
@@ -8012,6 +8021,29 @@ fn guttural_perfect_patah_variant(text: &str) -> Option<String> {
 /// shortens to tsere (יֹאחֵז). A reduced guttural C2 (sheva before a vocalic
 /// afformative) reopens with hataf-patah (יֹאחֲזוּ). Skips the 1cs, whose
 /// aleph preformative would merge with the C1 aleph. Additive.
+/// Uncontracted (archaic) twin of a Hiphil imperfect whose preformative has
+/// contracted onto the holam of a pe-vav/pe-yod stem — yôšîₐʿ (יוֹשִׁיעַ) beside
+/// the full yᵊhôšîₐʿ (יְהוֹשִׁיעַ), where the original he of the Hiphil resurfaces.
+/// Detects a vowelless preformative followed immediately by a holam-vav, sets the
+/// preformative to vocal sheva, and reinserts the he before the vav. Additive.
+fn hiphil_imperfect_uncontracted_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() < 2
+        || seq[0].vowel.is_some()
+        || !matches!(
+            seq[0].letter,
+            letter::YOD | letter::TAV | letter::NUN | letter::ALEF
+        )
+        || seq[1].letter != letter::VAV
+        || seq[1].vowel != Some(Vowel::Holam)
+    {
+        return None;
+    }
+    seq[0].vowel = Some(Vowel::Sheva);
+    seq.insert(1, Cons::new(letter::HE));
+    Some(hebrew::render(&seq))
+}
+
 fn pe_aleph_holam_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     // Find the C1 aleph: a non-initial aleph carrying a segol/hataf opening vowel,
@@ -9781,7 +9813,39 @@ fn imperfect_vocalic_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         defec.extend_from_slice(tail);
         out.push((obj, hebrew::render(&defec)));
     }
-    let _ = is_u;
+    // Energic (retained paragogic nun) plural variants: the -ûn imperfect keeps
+    // its nun before a light object suffix instead of dropping it — yimṣāʾŭnᵊnî
+    // (יִמְצָאֻנְנִי), yᵊšārᵊṯûneḵā (יְשָׁרְתוּנֶךָ). The nun links with sheva before
+    // the nun-initial 1cs/1cp suffix (the doubled נְנִי/נְנוּ spelling) and with
+    // segol before the 2ms/2fs kaf. Only on a -û plural subject.
+    if is_u {
+        let energic: &[(Pgn, Vowel, &[Cons])] = &[
+            (
+                OBJ_1CS,
+                Sheva,
+                &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)],
+            ),
+            (OBJ_1CP, Sheva, &[Cons::new(letter::NUN), oshureq()]),
+            (OBJ_2MS, Segol, &[ocv(letter::KAF, Qamats)]),
+            (OBJ_2FS, Segol, &[ocv(letter::KAF, Sheva)]),
+        ];
+        for &(obj, nv, tail) in energic {
+            // Plene base (…וּן-): keep the mater, add the energic nun + suffix.
+            let mut plene = seq.clone();
+            plene.push(ocv(letter::NUN, nv));
+            plene.extend_from_slice(tail);
+            out.push((obj, hebrew::render(&plene)));
+            // Defective base (…ֻן-): subject vowel on the stem consonant.
+            let mut defec = seq.clone();
+            defec.truncate(n - 1);
+            if let Some(c) = defec.last_mut() {
+                c.vowel = Some(mater_vowel);
+            }
+            defec.push(ocv(letter::NUN, nv));
+            defec.extend_from_slice(tail);
+            out.push((obj, hebrew::render(&defec)));
+        }
+    }
     out
 }
 
