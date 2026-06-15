@@ -659,6 +659,17 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     ))
                 .then(|| hiphil_imperfect_uncontracted_variant(&text))
                 .flatten();
+                // The yê- contracted twin (yêlîl יֵילִיל) is itself a host for the
+                // uncontracted split — yᵊyêlîl (יְיֵלִיל) from ילל.
+                let hiphil_uncontracted_e = (binyan == Binyan::Hiphil
+                    && matches!(
+                        form,
+                        Form::Imperfect | Form::Jussive | Form::Cohortative
+                    ))
+                .then(|| {
+                    hiphil_imperfect_uncontracted_variant(pe_yod_hiphil_e.as_deref()?)
+                })
+                .flatten();
                 // LamedAleph Qal Perfect tsere variant — שָׂנֵאתִי beside שָׂנָאתִי.
                 let lamed_aleph_tsere = (binyan == Binyan::Qal
                     && root.has(Gizra::LamedAleph)
@@ -2750,6 +2761,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_aleph_tsere,
                     pe_aleph_holam,
                     hiphil_uncontracted,
+                    hiphil_uncontracted_e,
                     lamed_aleph_tsere,
                     pe_guttural_segol,
                     lamed_guttural_perf_sheva,
@@ -8022,26 +8034,42 @@ fn guttural_perfect_patah_variant(text: &str) -> Option<String> {
 /// afformative) reopens with hataf-patah (יֹאחֲזוּ). Skips the 1cs, whose
 /// aleph preformative would merge with the C1 aleph. Additive.
 /// Uncontracted (archaic) twin of a Hiphil imperfect whose preformative has
-/// contracted onto the holam of a pe-vav/pe-yod stem — yôšîₐʿ (יוֹשִׁיעַ) beside
-/// the full yᵊhôšîₐʿ (יְהוֹשִׁיעַ), where the original he of the Hiphil resurfaces.
-/// Detects a vowelless preformative followed immediately by a holam-vav, sets the
-/// preformative to vocal sheva, and reinserts the he before the vav. Additive.
+/// contracted onto the stem vowel. Two shapes:
+///   • pe-vav/pe-yod holam stem — yôšîₐʿ (יוֹשִׁיעַ) → yᵊhôšîₐʿ (יְהוֹשִׁיעַ),
+///     the original Hiphil he resurfacing before the holam-vav;
+///   • pe-yod tsere stem — yêlîl (יֵילִיל) → yᵊyêlîl (יְיֵלִיל), the merged
+///     yod-mater splitting back into a vocal-sheva preformative + tsere yod.
+/// Detects a preformative consonant (vowelless, or tsere over a yod mater) and
+/// rebuilds the full prefix. Additive.
 fn hiphil_imperfect_uncontracted_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     if seq.len() < 2
-        || seq[0].vowel.is_some()
         || !matches!(
             seq[0].letter,
             letter::YOD | letter::TAV | letter::NUN | letter::ALEF
         )
-        || seq[1].letter != letter::VAV
-        || seq[1].vowel != Some(Vowel::Holam)
     {
         return None;
     }
-    seq[0].vowel = Some(Vowel::Sheva);
-    seq.insert(1, Cons::new(letter::HE));
-    Some(hebrew::render(&seq))
+    // pe-vav/pe-yod holam: vowelless preformative + holam-vav → sheva + he + vav.
+    if seq[0].vowel.is_none()
+        && seq[1].letter == letter::VAV
+        && seq[1].vowel == Some(Vowel::Holam)
+    {
+        seq[0].vowel = Some(Vowel::Sheva);
+        seq.insert(1, Cons::new(letter::HE));
+        return Some(hebrew::render(&seq));
+    }
+    // pe-yod tsere: preformative tsere + vowelless yod mater → sheva + tsere yod.
+    if seq[0].vowel == Some(Vowel::Tsere)
+        && seq[1].letter == letter::YOD
+        && seq[1].vowel.is_none()
+    {
+        seq[0].vowel = Some(Vowel::Sheva);
+        seq[1].vowel = Some(Vowel::Tsere);
+        return Some(hebrew::render(&seq));
+    }
+    None
 }
 
 fn pe_aleph_holam_variant(text: &str) -> Option<String> {
