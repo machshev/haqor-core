@@ -848,6 +848,42 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 .flatten();
                 // Short 1cs wayyiqtol from the 3ms short base: the preformative
                 // swaps to aleph under a qamats vav — wayyáʿan וַיַּעַן →
+                // III-aleph perfect bare-tav fs: the quiescent aleph leaves the
+                // -t afformative with neither a dagesh nor a silent sheva —
+                // qārāʾt קָרָאת. This spells both the 2fs perfect and the archaic
+                // 3fs -āṯ (wᵊqārāʾt šᵊmô וְקָרָאת שְׁמוֹ, Isa 7:14).
+                let lamed_aleph_perf_bare_t: Option<String> = (root.lamed() == letter::ALEF
+                    && form == Form::Perfect
+                    && pgn.gender == Some(Gender::Feminine)
+                    && pgn.number == Some(Number::Singular)
+                    && matches!(pgn.person, Some(Person::Second | Person::Third)))
+                .then(|| -> Option<String> {
+                    // The 2fs surface already carries the gizra-correct stem
+                    // vowels; the 3fs reuses that same stem, so derive both from
+                    // the 2fs form.
+                    let base = if pgn.person == Some(Person::Second) {
+                        text.clone()
+                    } else {
+                        generate_one(
+                            root,
+                            binyan,
+                            Form::Perfect,
+                            Pgn::new(Person::Second, Gender::Feminine, Number::Singular),
+                            false,
+                        )
+                        .0
+                    };
+                    let mut seq = hebrew::parse_pointed(&base);
+                    let last = seq.last_mut()?;
+                    if last.letter == letter::TAV && last.vowel == Some(Vowel::Sheva) {
+                        last.vowel = None;
+                        last.dagesh = false;
+                        Some(hebrew::render(&seq))
+                    } else {
+                        None
+                    }
+                })
+                .flatten();
                 // wāʾáʿan וָאַעַן, וָאַעַשׂ.
                 let wayyiqtol_1cs_short = (form == Form::Wayyiqtol
                     && pgn == Pgn::new(Person::First, Gender::Common, Number::Singular))
@@ -2591,6 +2627,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     ayin_guttural_hataf,
                     qal_imperative_ayin_gutt,
                     lamed_he_ptcp_fs_cstr,
+                    lamed_aleph_perf_bare_t,
                     piel_perf_guttural_hiriq,
                     pe_aleph_wayy_1cp,
                     pe_aleph_tsere,
