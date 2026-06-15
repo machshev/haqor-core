@@ -495,8 +495,11 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     {
                         let seq = hebrew::parse_pointed(&text);
                         let n = seq.len();
+                        // The theme sits on C3 (n-2); the word-final consonant
+                        // (n-1) is either bare or carries a silent sheva (final
+                        // kaf, yiṯhallēḵ יִתְהַלֵּךְ) — both leave the theme final.
                         if n < 2
-                            || seq[n - 1].vowel.is_some()
+                            || !matches!(seq[n - 1].vowel, None | Some(Vowel::Sheva))
                             || seq[n - 2].vowel != Some(Vowel::Tsere)
                         {
                             Vec::new()
