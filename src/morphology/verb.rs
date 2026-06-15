@@ -1304,14 +1304,18 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .then(|| hollow_wayyiqtol_patah_variant(&text))
                     .flatten();
                 // ô-class hollow Qal perfect twin: the stative holam grade —
-                // ṭôḇ (טוֹב), bōšû (בֹּשׁוּ) — beside the default qām qamats.
+                // ṭôḇ (טוֹב), bōšû (בֹּשׁוּ) — beside the default qām qamats. Before
+                // a consonantal afformative the stem vowel is a short patah in the
+                // default grade (baštî בַּשְׁתִּי), so the ô-class twin lifts that
+                // patah to holam instead: bōštî בֹּשְׁתִּי, bōšnû בֹּשְׁנוּ.
                 let hollow_perfect_holam = (binyan == Binyan::Qal
                     && root.has(Gizra::Hollow)
-                    && form == Form::Perfect
-                    && perfect_suffix_kind(pgn) != Suffix::Consonantal)
+                    && form == Form::Perfect)
                     .then(|| {
                         let mut seq = hebrew::parse_pointed(&text);
-                        let c = seq.iter_mut().find(|c| c.vowel == Some(Vowel::Qamats))?;
+                        let c = seq
+                            .iter_mut()
+                            .find(|c| matches!(c.vowel, Some(Vowel::Qamats | Vowel::Patah)))?;
                         c.vowel = Some(Vowel::Holam);
                         Some(hebrew::render(&seq))
                     })
