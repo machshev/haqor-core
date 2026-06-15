@@ -8645,6 +8645,70 @@ fn perfect_subject_object_suffixes(
         // restored): ʾăḵālatHû אֲכָלָתְהוּ, yᵊlāḏatḵā יְלָדַתְךָ, the contracted
         // -attû גְּנָבַתּוּ, and -āṯam וַאֲכָלָתַם. Strong/I-guttural shapes only.
         let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
+        // Hiphil 3fs host: the heqṭîlâ base restores the -aṯ afformative before
+        // a suffix — heḥĕzîqaṯhû הֶחֱזִיקַתְהוּ, hēmîṯāṯhû הֱמִיתָתְהוּ,
+        // hiḏbîqāṯhû הִדְבִּיקָתְהוּ. The heqṭîl stem vowel does not shift, so we
+        // derive the host straight from the 3fs text: drop its final -â (the
+        // qamats sits on the last radical, then a he mater), re-point that
+        // radical, and attach the afformative tav + suffix.
+        if binyan == Binyan::Hiphil
+            && !matches!(c3, letter::HE | letter::VAV | letter::YOD)
+        {
+            let mut prefix = hebrew::parse_pointed(base_text);
+            if prefix.last().map(|c| c.letter) == Some(letter::HE) {
+                prefix.pop();
+            }
+            if prefix.len() < 2 {
+                return out;
+            }
+            // The heavy afformative+suffix shifts the stress two syllables
+            // forward, reducing the hollow Hiphil's propretonic preformative
+            // tsere to hataf-segol (hēmîṯ → hĕmîṯ, hēṣîq → hĕṣîq); emit both.
+            let mut prefixes = vec![prefix.clone()];
+            if prefix.first().map(|c| c.letter == letter::HE && c.vowel == Some(Tsere))
+                == Some(true)
+            {
+                let mut reduced = prefix.clone();
+                reduced[0].vowel = Some(HatafSegol);
+                prefixes.push(reduced);
+            }
+            for prefix in &prefixes {
+            for c3v in [Patah, Qamats] {
+                let mut push = |obj: Pgn, tv: Option<Vowel>, dagesh: bool, tail: &[Cons]| {
+                    let mut s = prefix.clone();
+                    if let Some(c) = s.last_mut() {
+                        c.vowel = Some(c3v);
+                    }
+                    let mut t = Cons::new(letter::TAV);
+                    t.vowel = tv;
+                    if dagesh {
+                        t = t.with_dagesh();
+                    }
+                    s.push(t);
+                    s.extend_from_slice(tail);
+                    out.push((obj, hebrew::render(&s)));
+                };
+                push(OBJ_3MS, Some(Sheva), false, &[Cons::new(letter::HE), oshureq()]);
+                push(OBJ_3MS, None, true, &[oshureq()]);
+                push(
+                    OBJ_1CS,
+                    Some(Sheva),
+                    false,
+                    &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)],
+                );
+                push(OBJ_2MS, Some(Sheva), false, &[ocv(letter::KAF, Qamats)]);
+                push(
+                    OBJ_3FS,
+                    Some(Qamats),
+                    true,
+                    &[Cons::new(letter::HE).with_dagesh()],
+                );
+                push(OBJ_3MP, Some(Patah), false, &[Cons::new(letter::MEM)]);
+                push(OBJ_1CP, Some(Sheva), false, &[Cons::new(letter::NUN), oshureq()]);
+            }
+            }
+            return out;
+        }
         if matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
             || matches!(c2, letter::VAV | letter::YOD)
             || c1 == letter::VAV
