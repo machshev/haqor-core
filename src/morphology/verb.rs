@@ -3017,6 +3017,25 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         });
                     }
                 }
+                // Archaic 2fs perfect twin: the older (and frequent ketiv) 2fs
+                // perfect keeps the long -tî afformative, making it homographic
+                // with the 1cs (ʕāśîṯî עָשִׂיתִי spells both "I did" and archaic
+                // "you (f.) did"; also יָלַדְתִּי, נָתַתִּי). Emit the 1cs surface
+                // under the 2fs label so the gold 2fs reading matches.
+                if form == Form::Perfect
+                    && pgn == Pgn::new(Person::Second, Gender::Feminine, Number::Singular)
+                {
+                    let cs1 = Pgn::new(Person::First, Gender::Common, Number::Singular);
+                    let (base, attested_1cs) = generate_one(root, binyan, form, cs1, false);
+                    forms.push(VerbForm {
+                        binyan,
+                        form,
+                        pgn,
+                        text: base,
+                        attested: attested_1cs,
+                        object_suffix: None,
+                    });
+                }
                 // Construct-state twin for masculine-plural participles
                 // (-îm → -ê). Same (binyan, form, pgn) label; only the
                 // surface differs, which is all reverse-parsing needs.
