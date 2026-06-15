@@ -9868,6 +9868,39 @@ fn inf_construct_object_suffixes(
             out.push((obj, hebrew::render(&seq)));
         }
     }
+    // Pe-yod -t infinitive host: the dropped-yod infinitive is a segolate
+    // (šeḇeṯ שֶׁבֶת, daʕaṯ דַעַת) or a quiescent-aleph CēT (ṣêṯ צֵאת). Derive the
+    // suffix base from that infinitive (base_text) rather than the radicals, so
+    // the per-root ground vowel and the III-aleph quiescence carry through:
+    //   segolate (C3 voweled) → the ground vowel returns to C1 (segol→hiriq,
+    //     šeḇeṯ→šiḇt-; patah held, daʕaṯ→daʕt-) and C3 reduces to a sheva,
+    //     giving šiḇtô שִׁבְתּוֹ, šiḇtām שִׁבְתָּם, šiḇtᵊḵā שִׁבְתְּךָ.
+    //   quiescent CēT (C3 bare) → C1/C3 are untouched and the affix tav simply
+    //     takes the link vowel: ṣêṯām צֵאתָם.
+    // Emitted before the yod-retained qoṭl- host below so the segolate base is
+    // the primary suffix form.
+    if binyan == Binyan::Qal && c1 == letter::YOD {
+        let base = hebrew::parse_pointed(base_text);
+        if base.len() == 3 && base[2].letter == letter::TAV && base[2].vowel.is_none() {
+            let segolate = base[1].vowel.is_some();
+            for (obj, link, tail) in nominal_suffix_tails() {
+                let mut head0 = base[0];
+                let mut head1 = base[1];
+                if segolate {
+                    if head0.vowel == Some(Segol) {
+                        head0.vowel = Some(Hiriq);
+                    }
+                    head1.vowel = Some(Sheva);
+                }
+                let mut t = Cons::new(letter::TAV);
+                t.vowel = link;
+                let mut seq = vec![head0, head1, t];
+                seq.extend(tail);
+                apply_guttural(&mut seq, root);
+                out.push((obj, hebrew::render(&seq)));
+            }
+        }
+    }
     // Pe-nun / pe-yod Qal inf-construct also has a nun/yod-RETAINED qoṭl- host
     // beside the assimilated/segholate one (gōʕô גֹּעוֹ but also nāḡʕô נָגְעוֹ;
     // šeḇtô שִׁבְתּוֹ but also yāsdô יָסְדוֹ): the full triliteral takes the same
