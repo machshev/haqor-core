@@ -280,6 +280,25 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let pe_yod_hiphil_e = (binyan == Binyan::Hiphil && root.has(Gizra::PeYod))
                     .then(|| pe_yod_hiphil_e_variant(&text))
                     .flatten();
+                // Plene-theme twin of the pe-yod Hiphil inf-absolute: the theme
+                // tsere of hêṭēḇ הֵיטֵב is commonly written with a yod mater —
+                // hêṭêḇ הֵיטֵיב.
+                let pe_yod_hiphil_e_plene = (binyan == Binyan::Hiphil
+                    && root.has(Gizra::PeYod)
+                    && form == Form::InfinitiveAbsolute)
+                .then(|| {
+                    let base = pe_yod_hiphil_e.as_ref()?;
+                    let mut seq = hebrew::parse_pointed(base);
+                    if seq.len() >= 3 {
+                        let theme = seq.len() - 2;
+                        if seq[theme].vowel == Some(Vowel::Tsere) {
+                            seq.insert(theme + 1, Cons::mater(letter::YOD));
+                            return Some(hebrew::render(&seq));
+                        }
+                    }
+                    None
+                })
+                .flatten();
                 // I-guttural Qal imperfect/wayyiqtol holam plural (יַעֲמֹדוּ).
                 let pe_guttural_impf_hataf = (binyan == Binyan::Qal
                     && root.has(Gizra::PeGuttural)
@@ -2284,6 +2303,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         )
                     {
                         let mut v = perfect_subject_object_suffixes(&text, pgn, root, binyan);
+                        // The hollow-Hiphil linking-ô perfect bases (hăḇîʾōṯî
+                        // הֲבִיאֹתִי, hăqîmōṯā) are suffix hosts on the same
+                        // consonantal afformatives — hăḇîʾōṯîw הֲבִיאֹתִיו.
+                        if binyan == Binyan::Hiphil && root.has(Gizra::Hollow) {
+                            for base in hollow_hiphil_otav_perfect(root, pgn) {
+                                v.extend(perfect_subject_object_suffixes(&base, pgn, root, binyan));
+                            }
+                        }
                         // The 3cp -û is a vocalic host in any binyan: the suffix
                         // joins the subject vowel directly on the base surface —
                         // rāʾûḵā רָאוּךָ (III-he), ḥērᵊp̄ûnî חֵרְפוּנִי (Piel), and the
@@ -2517,6 +2544,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_guttural_impf_silent_pl,
                     hiphil_guttural_c2_spirant,
                     pe_yod_hiphil_e,
+                    pe_yod_hiphil_e_plene,
                     paragogic,
                     hiphil_apoc,
                     hiphil_plene,
@@ -3876,7 +3904,15 @@ fn build_imperfect(
     // hiriq + closed syllable in Qal). Apply for binyanim that use hiriq.
     let is_1cs = pgn.person == Some(Person::First) && pgn.number == Some(Number::Singular);
     if is_1cs && let Hiriq = prefix.vowel {
-        prefix_vowel = Segol;
+        // The Niphal closes its prefix syllable with a dagesh forte in C1
+        // (ʾeqqāṭēl אֶקָּטֵל → segol). But when C1 rejects the dagesh (a
+        // guttural or resh) the doubling compensates by lengthening the prefix
+        // — and that tsere reaches the 1cs aleph too (ʾērāʾeh אֵרָאֶה, matching
+        // 3ms yērāʾeh). Leave the hiriq so the downstream guttural pass
+        // lengthens it uniformly instead of pre-lowering to segol.
+        if !(binyan == Binyan::Niphal && hebrew::rejects_dagesh(root.pe())) {
+            prefix_vowel = Segol;
+        }
     }
 
     // Qal a-theme statives with a guttural C1 (ח/ע) take a segol preformative
@@ -5715,7 +5751,6 @@ fn hollow_hiphil_otav_perfect(root: &Root, pgn: Pgn) -> Vec<String> {
     if !root.has(Gizra::Hollow)
         || perfect_suffix_kind(pgn) != Suffix::Consonantal
             && perfect_suffix_kind(pgn) != Suffix::Heavy
-        || root.lamed() == letter::ALEF
     {
         return Vec::new();
     }
@@ -5752,6 +5787,10 @@ fn hollow_hiphil_otav_perfect(root: &Root, pgn: Pgn) -> Vec<String> {
     };
     let c1 = root.pe();
     let c3 = root.lamed();
+    // A III-aleph C3 carries the linking holam on the aleph itself (hăḇîʾōṯî
+    // הֲבִיאֹתִי) — it never spells the holam with a following vav mater, so the
+    // "plene" link collapses onto the bare aleph for these roots.
+    let c3_alef = c3 == letter::ALEF;
     let build = |prefix_vowel: Vowel, plene_c1: bool, plene_c3: bool| -> String {
         let mut seq: Vec<Cons> = Vec::new();
         seq.push(Cons::new(letter::HE).with_vowel(prefix_vowel));
@@ -5759,7 +5798,7 @@ fn hollow_hiphil_otav_perfect(root: &Root, pgn: Pgn) -> Vec<String> {
         if plene_c1 {
             seq.push(Cons::mater(letter::YOD));
         }
-        if plene_c3 {
+        if plene_c3 && !c3_alef {
             seq.push(Cons::new(c3).with_vowel(Holam));
             seq.push(Cons::new(letter::VAV).with_vowel(Holam));
         } else {
@@ -5791,7 +5830,7 @@ fn hollow_hiphil_otav_perfect(root: &Root, pgn: Pgn) -> Vec<String> {
                 Cons::new(c1).with_vowel(Tsere),
                 Cons::new(c3).with_vowel(Holam),
             ];
-            if plene_c3 {
+            if plene_c3 && !c3_alef {
                 seq.push(Cons::new(letter::VAV).with_vowel(Holam));
             }
             seq.extend(suffix.iter().cloned());
