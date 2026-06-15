@@ -7271,13 +7271,14 @@ fn pe_yod_retained_defective_variant(text: &str) -> Option<String> {
 /// perfect by the caller.
 fn lamed_he_perfect_tsere_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
-    // The linking vowel is the hiriq whose yod mater is followed by the tav
-    // afformative (…וִּי-תִ-י: skip C1's own hiriq, and the 1cs -tî tail).
+    // The linking vowel is the hiriq whose yod mater is followed by a
+    // consonantal afformative — tav (-tî/-tā/-tem) or nun (1cp -nû). Skip
+    // C1's own hiriq and the 1cs -tî tail.
     let i = (0..seq.len().saturating_sub(2)).find(|&i| {
         seq[i].vowel == Some(Vowel::Hiriq)
             && seq[i + 1].letter == letter::YOD
             && seq[i + 1].vowel.is_none()
-            && seq[i + 2].letter == letter::TAV
+            && matches!(seq[i + 2].letter, letter::TAV | letter::NUN)
     })?;
     seq[i].vowel = Some(Vowel::Tsere);
     Some(hebrew::render(&seq))
@@ -7292,7 +7293,7 @@ fn lamed_he_perfect_hiriq_variant(text: &str) -> Option<String> {
         seq[i].vowel == Some(Vowel::Tsere)
             && seq[i + 1].letter == letter::YOD
             && seq[i + 1].vowel.is_none()
-            && seq[i + 2].letter == letter::TAV
+            && matches!(seq[i + 2].letter, letter::TAV | letter::NUN)
     })?;
     seq[i].vowel = Some(Vowel::Hiriq);
     Some(hebrew::render(&seq))
@@ -9228,6 +9229,23 @@ fn participle_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
             letter::HE | letter::ALEF | letter::VAV | letter::YOD
         )
     {
+        return out;
+    }
+    // An î-stem participle (Hiphil môšîaʿ מוֹשִׁיעַ, mēqîm) carries a long
+    // hiriq written with a yod mater immediately before C3. That mater is
+    // fixed — it does not reduce — so the suffix simply joins C3 and the yod
+    // stays a bare mater: môšîʿēḵ מוֹשִׁיעֵךְ, môšîʿēnî. (Without this guard the
+    // theme loop below would wrongly point the mater yod with a sheva.)
+    if seq[n - 2].letter == letter::YOD
+        && seq[n - 2].vowel.is_none()
+        && seq.get(n - 3).and_then(|c| c.vowel) == Some(Hiriq)
+    {
+        for (obj, link, tail) in nominal_suffix_tails() {
+            let mut s = seq.clone();
+            s[n - 1].vowel = link;
+            s.extend(tail);
+            out.push((obj, hebrew::render(&s)));
+        }
         return out;
     }
     // The theme vowel sits on the consonant before C3 (seq[n-2]); reduce it to
