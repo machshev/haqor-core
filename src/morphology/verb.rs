@@ -638,6 +638,19 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!(form, Form::Imperfect | Form::Jussive))
                 .then(|| pe_aleph_imperfect_tsere_variant(&text))
                 .flatten();
+                // PeAleph Qal holam-contraction twin for roots outside YO_ROOTS
+                // that nonetheless attest it — יֹאחֵז beside יֶאֱחֹז, וַיֹּאחֲזוּ
+                // beside וַיֶּאֶחְזוּ. Skips the 1cs (double-aleph merge).
+                let pe_aleph_holam = (binyan == Binyan::Qal
+                    && root.has(Gizra::PeAleph)
+                    && matches!(
+                        form,
+                        Form::Imperfect | Form::Jussive | Form::Cohortative | Form::Wayyiqtol
+                    )
+                    && !(pgn.person == Some(Person::First)
+                        && pgn.number == Some(Number::Singular)))
+                .then(|| pe_aleph_holam_variant(&text))
+                .flatten();
                 // LamedAleph Qal Perfect tsere variant — שָׂנֵאתִי beside שָׂנָאתִי.
                 let lamed_aleph_tsere = (binyan == Binyan::Qal
                     && root.has(Gizra::LamedAleph)
@@ -2161,13 +2174,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 // I-yod Qal perfect heavy-afformative hiriq twin: yᵊraštem
                 // יְרַשְׁתֶּם beside the attested i-grade yᵊrištem (וִירִשְׁתֶּם,
                 // the וִי- conjunction sandhi peeled by the parser).
+                // Fires only when the theme has reduced (C1 yod → sheva), i.e.
+                // before a consonantal/heavy afformative (yᵊraštem → yᵊrištem,
+                // יְרַשְׁתֶּם → יְרִשְׁתֶּם) or an object suffix on the 2ms/1cs
+                // perfect (wîrištām וִירִשְׁתָּם, wîrištāh וִירִשְׁתָּהּ); the bare
+                // qamats forms keep C1 qamats and the function's own guard skips
+                // them.
                 let pe_yod_perf_hiriq = (binyan == Binyan::Qal
                     && form == Form::Perfect
-                    && root.has(Gizra::PeYod)
-                    && matches!(
-                        (pgn.person, pgn.number),
-                        (Some(Person::Second), Some(Number::Plural))
-                    ))
+                    && root.has(Gizra::PeYod))
                 .then(|| pe_yod_perfect_heavy_hiriq_variant(&text))
                 .flatten();
                 // Retained-yod twin of the I-yod Qal imperfect/wayyiqtol
@@ -2725,6 +2740,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     piel_perf_guttural_hiriq,
                     pe_aleph_wayy_1cp,
                     pe_aleph_tsere,
+                    pe_aleph_holam,
                     lamed_aleph_tsere,
                     pe_guttural_segol,
                     lamed_guttural_perf_sheva,
@@ -7831,17 +7847,26 @@ fn qal_stative_perfect_variants(text: &str) -> Vec<String> {
     if n < 2 || seq[0].vowel != Some(Vowel::Qamats) {
         return Vec::new();
     }
-    let Some(i) = (1..n).find(|&i| seq[i].vowel == Some(Vowel::Patah)) else {
-        return Vec::new();
-    };
-    [Vowel::Tsere, Vowel::Holam]
-        .into_iter()
-        .map(|v| {
-            let mut s = seq.clone();
-            s[i].vowel = Some(v);
-            hebrew::render(&s)
-        })
-        .collect()
+    if let Some(i) = (1..n).find(|&i| seq[i].vowel == Some(Vowel::Patah)) {
+        return [Vowel::Tsere, Vowel::Holam]
+            .into_iter()
+            .map(|v| {
+                let mut s = seq.clone();
+                s[i].vowel = Some(v);
+                hebrew::render(&s)
+            })
+            .collect();
+    }
+    // No theme patah: a vocalic afformative has reduced it to sheva (qāṭlû). The
+    // tsere stative reduces likewise (kāḇēḏ → kāḇᵊḏû), but the qāṭōl stative keeps
+    // its holam under C2 — yāḵōl → yāḵōlû (יָכֹלוּ), yāḵōlâ (יָכֹלָה). Emit the
+    // holam twin on the first reduced (sheva) slot after C1.
+    if let Some(i) = (1..n).find(|&i| seq[i].vowel == Some(Vowel::Sheva)) {
+        let mut s = seq.clone();
+        s[i].vowel = Some(Vowel::Holam);
+        return vec![hebrew::render(&s)];
+    }
+    Vec::new()
 }
 
 /// Silent-sheva twin of a word whose C1 guttural carries a composite (hataf)
@@ -7978,6 +8003,42 @@ fn guttural_perfect_patah_variant(text: &str) -> Option<String> {
 /// יֹאכְלוּ. The pattern has an aleph (C1) with no vowel, followed by a consonant
 /// with a short a-class vowel (patah or qamats) that should also get a tsere
 /// variant. Returns the tsere twin or None.
+/// Holam-contraction twin for a I-aleph Qal imperfect-family form of a root
+/// outside [`YO_ROOTS`] but which nonetheless admits the contracted yōʔ- pattern
+/// in attested usage — yeʔĕḥōz (יֶאֱחֹז) beside yōʔḥēz (יֹאחֵז), wayyeʾeḥᵊzû
+/// (וַיֶּאֶחְזוּ) beside wayyōʾḥăzû (וַיֹּאחֲזוּ). The default is the regular
+/// I-guttural segol class; this twin contracts it: the prefix segol/patah → holam,
+/// the C1 aleph quiesces (drops its vowel), and the C2 holam of the long grade
+/// shortens to tsere (יֹאחֵז). A reduced guttural C2 (sheva before a vocalic
+/// afformative) reopens with hataf-patah (יֹאחֲזוּ). Skips the 1cs, whose
+/// aleph preformative would merge with the C1 aleph. Additive.
+fn pe_aleph_holam_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    // Find the C1 aleph: a non-initial aleph carrying a segol/hataf opening vowel,
+    // immediately preceded by a prefix consonant with a segol or patah.
+    let a = (1..seq.len()).find(|&i| {
+        seq[i].letter == letter::ALEF
+            && matches!(
+                seq[i].vowel,
+                Some(Vowel::Segol | Vowel::HatafSegol | Vowel::HatafPatah)
+            )
+            && matches!(seq[i - 1].vowel, Some(Vowel::Segol | Vowel::Patah))
+            && seq[i - 1].letter != letter::ALEF
+    })?;
+    seq[a - 1].vowel = Some(Vowel::Holam);
+    seq[a].vowel = None;
+    if let Some(c2) = seq.get_mut(a + 1) {
+        match c2.vowel {
+            Some(Vowel::Holam) => c2.vowel = Some(Vowel::Tsere),
+            Some(Vowel::Sheva) if hebrew::is_guttural(c2.letter) => {
+                c2.vowel = Some(Vowel::HatafPatah)
+            }
+            _ => {}
+        }
+    }
+    Some(hebrew::render(&seq))
+}
+
 fn pe_aleph_imperfect_tsere_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     // Find a vowelless aleph followed by a consonant with patah or qamats.
@@ -8996,6 +9057,16 @@ fn perfect_subject_object_suffixes(
                 }
             }
         }
+    }
+    // Pe-yod perfect hosts reduce C1 to sheva before a suffix; the C2 theme patah
+    // can then surface as hiriq — wîrištām וִירִשְׁתָּם, wîrištāh וִירִשְׁתָּהּ
+    // (2ms ירש + suffix). Emit the hiriq twin of every patah-themed host.
+    if root.has(Gizra::PeYod) {
+        let extra: Vec<(Pgn, String)> = out
+            .iter()
+            .filter_map(|(p, t)| pe_yod_perfect_heavy_hiriq_variant(t).map(|h| (*p, h)))
+            .collect();
+        out.extend(extra);
     }
     out
 }
