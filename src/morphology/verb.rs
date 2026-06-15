@@ -1556,6 +1556,26 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular))
                 .then(|| piel_perfect_patah_theme_variant(&text))
                 .flatten();
+                // I-grade twin of the Piel/Hithpael perfect before a
+                // consonantal/heavy afformative: the theme holds hiriq instead
+                // of lowering to patah — hiṯqaddištem הִתְקַדִּשְׁתֶּם (the
+                // dominant Hithpael shape), qiddištî. Lower the doubled-C2 patah
+                // back to hiriq.
+                let piel_perf_hiriq = (matches!(binyan, Binyan::Piel | Binyan::Hithpael)
+                    && form == Form::Perfect
+                    && matches!(
+                        perfect_suffix_kind(pgn),
+                        Suffix::Consonantal | Suffix::Heavy
+                    ))
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let c = seq
+                        .iter_mut()
+                        .find(|c| c.dagesh && c.vowel == Some(Vowel::Patah))?;
+                    c.vowel = Some(Vowel::Hiriq);
+                    Some(hebrew::render(&seq))
+                })
+                .flatten();
                 // Segol-prefix III-He Hiphil perfect twin (הֶגְלָה).
                 let hiphil_perf_segol = (binyan == Binyan::Hiphil
                     && form == Form::Perfect
@@ -2730,6 +2750,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_he_perf_tsere,
                     lamed_he_perf_hiriq,
                     piel_perf_patah,
+                    piel_perf_hiriq,
                     hiphil_perf_segol,
                     lamed_he_fp_short,
                     lamed_he_pausal,
