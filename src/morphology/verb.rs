@@ -1497,6 +1497,9 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         let mut seq = hebrew::parse_pointed(&text);
                         (seq.first().and_then(|c| c.vowel) == Some(Vowel::Qamats)).then(|| {
                             seq[0].vowel = Some(Vowel::Sheva);
+                            // A I-guttural C1 cannot bear the bare vocal sheva —
+                            // it takes a hataf-patah: ḥălûṣ חֲלוּץ, not חְלוּץ.
+                            apply_guttural(&mut seq, root);
                             hebrew::render(&seq)
                         })
                     })
