@@ -9222,6 +9222,32 @@ fn participle_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         return out;
     }
 
+    // An î-stem participle (Hiphil môšîaʿ מוֹשִׁיעַ, môṣîʾ מוֹצִיא, mēqîm) carries
+    // a long hiriq written with a yod mater immediately before C3. That mater
+    // is fixed — it does not reduce — so the suffix joins C3 directly and the
+    // yod stays a bare mater: môšîʿēḵ מוֹשִׁיעֵךְ, môšîʿēnî. A quiescent aleph C3
+    // takes a hataf-patah for the sheva-link suffixes (môṣîʾăḵā מוֹצִיאֲךָ) and
+    // quiesces (bare) before the -ô. Runs *before* the strong-skip below, which
+    // would otherwise bail on the aleph/furtive final and never emit these.
+    if seq[n - 2].letter == letter::YOD
+        && seq[n - 2].vowel.is_none()
+        && seq.get(n - 3).and_then(|c| c.vowel) == Some(Hiriq)
+        && !matches!(last.letter, letter::HE | letter::VAV | letter::YOD)
+    {
+        let aleph = last.letter == letter::ALEF;
+        for (obj, link, tail) in nominal_suffix_tails() {
+            let link = if aleph && link == Some(Sheva) {
+                Some(HatafPatah)
+            } else {
+                link
+            };
+            let mut s = seq.clone();
+            s[n - 1].vowel = link;
+            s.extend(tail);
+            out.push((obj, hebrew::render(&s)));
+        }
+        return out;
+    }
     // Strong participle: ends in a true final radical. Skip mater/weak finals.
     if matches!(last.vowel, Some(v) if v != Vowel::Sheva)
         || matches!(
@@ -9229,23 +9255,6 @@ fn participle_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
             letter::HE | letter::ALEF | letter::VAV | letter::YOD
         )
     {
-        return out;
-    }
-    // An î-stem participle (Hiphil môšîaʿ מוֹשִׁיעַ, mēqîm) carries a long
-    // hiriq written with a yod mater immediately before C3. That mater is
-    // fixed — it does not reduce — so the suffix simply joins C3 and the yod
-    // stays a bare mater: môšîʿēḵ מוֹשִׁיעֵךְ, môšîʿēnî. (Without this guard the
-    // theme loop below would wrongly point the mater yod with a sheva.)
-    if seq[n - 2].letter == letter::YOD
-        && seq[n - 2].vowel.is_none()
-        && seq.get(n - 3).and_then(|c| c.vowel) == Some(Hiriq)
-    {
-        for (obj, link, tail) in nominal_suffix_tails() {
-            let mut s = seq.clone();
-            s[n - 1].vowel = link;
-            s.extend(tail);
-            out.push((obj, hebrew::render(&s)));
-        }
         return out;
     }
     // The theme vowel sits on the consonant before C3 (seq[n-2]); reduce it to
