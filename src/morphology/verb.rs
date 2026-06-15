@@ -9777,7 +9777,11 @@ fn inf_construct_object_suffixes(
         // A final aleph stays as a host — the link vowel lands on it and it
         // quiesces (hôṣîʾām לְהוֹצִיאָם); he/vav/yod finals are maters and
         // can't carry the suffix.
-        if matches!(last.vowel, Some(v) if v != Vowel::Sheva)
+        // A III-guttural inf-construct ends in that guttural carrying a furtive
+        // patah (Piel šallēaḥ שַׁלֵּחַ, hôšîaʕ) — not a real vowel; the suffix
+        // replaces it (šallᵊḥām שַׁלְּחָם), so let it through like a bare final.
+        let furtive = hebrew::is_guttural(last.letter) && last.vowel == Some(Vowel::Patah);
+        if (matches!(last.vowel, Some(v) if v != Vowel::Sheva) && !furtive)
             || matches!(last.letter, letter::HE | letter::VAV | letter::YOD)
         {
             return out;
