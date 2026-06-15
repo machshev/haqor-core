@@ -9740,6 +9740,31 @@ fn inf_construct_object_suffixes(
             out.push((obj, hebrew::render(&seq)));
         }
     }
+    // Pe-nun / pe-yod Qal inf-construct also has a nun/yod-RETAINED qoṭl- host
+    // beside the assimilated/segholate one (gōʕô גֹּעוֹ but also nāḡʕô נָגְעוֹ;
+    // šeḇtô שִׁבְתּוֹ but also yāsdô יָסְדוֹ): the full triliteral takes the same
+    // qoṭl- grade as a strong root (C1 qamats, C2 sheva, C3 + link). Additive —
+    // fall through to the segholate/assimilated host below.
+    if binyan == Binyan::Qal
+        && matches!(c1, letter::NUN | letter::YOD)
+        && !matches!(c2, letter::VAV | letter::YOD)
+        && !matches!(c3, letter::HE | letter::VAV | letter::YOD)
+    {
+        for (obj, link, tail) in nominal_suffix_tails() {
+            for c1v in [Qamats, QamatsQatan, Hiriq] {
+                let mut c3c = Cons::radical(c3, 3);
+                c3c.vowel = link;
+                let mut seq = vec![
+                    Cons::radical(c1, 1).with_vowel(c1v),
+                    Cons::radical(c2, 2).with_vowel(Sheva),
+                    c3c,
+                ];
+                seq.extend(tail.clone());
+                apply_guttural(&mut seq, root);
+                out.push((obj, hebrew::render(&seq)));
+            }
+        }
+    }
     // A quiescent III-aleph rides the strong host (the link vowel lands on
     // the aleph — qorʾî קָרְאִי), so only the true mater finals are excluded.
     let strong_qal = binyan == Binyan::Qal
@@ -9761,6 +9786,33 @@ fn inf_construct_object_suffixes(
                 seq.extend(tail.clone());
                 apply_guttural(&mut seq, root);
                 out.push((obj, hebrew::render(&seq)));
+            }
+        }
+        // The heavy 2mp -ḵem shifts the stress two syllables forward, so the
+        // stem takes the propretonic-qamats grade qᵊṭāl- (C1 reduces to a
+        // vocal sheva / hataf, C2 carries the qamats): ʾăḵālḵem אֲכָלְכֶם,
+        // ʕăzāḇḵem עֲזָבְכֶם, ʾăḇāḏḵem אֲבָדְכֶם — beside the plain qoṭl- host
+        // (the lighter -ḵā keeps qoṭl-, ʾoḵlᵊḵā).
+        for (obj, link, tail) in nominal_suffix_tails() {
+            if obj != OBJ_2MP {
+                continue;
+            }
+            let mut c3c = Cons::radical(c3, 3);
+            c3c.vowel = link;
+            let mut seq = vec![
+                Cons::radical(c1, 1).with_vowel(Sheva),
+                Cons::radical(c2, 2).with_vowel(Qamats),
+                c3c,
+            ];
+            seq.extend(tail.clone());
+            apply_guttural(&mut seq, root);
+            out.push((obj, hebrew::render(&seq)));
+            // An I-aleph C1 also surfaces with hataf-segol here (ʾĕmārḵem
+            // אֱמָרְכֶם beside the hataf-patah ʾăḵālḵem).
+            if c1 == letter::ALEF && seq[0].vowel == Some(HatafPatah) {
+                let mut s2 = seq.clone();
+                s2[0].vowel = Some(HatafSegol);
+                out.push((obj, hebrew::render(&s2)));
             }
         }
     } else {
