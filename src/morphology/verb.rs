@@ -1306,6 +1306,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Zero)
                     .then(|| hollow_wayyiqtol_patah_variant(&text))
                     .flatten();
+                // Plene -ênâ twin of the hollow Qal 3fp/2fp imperfect/wayyiqtol
+                // (tᵊqûmênâ תְּקוּמֶינָה beside tāqûmnâ).
+                let hollow_impf_fp_plene = (binyan == Binyan::Qal
+                    && root.has(Gizra::Hollow)
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+                    && pgn.gender == Some(Gender::Feminine)
+                    && pgn.number == Some(Number::Plural))
+                .then(|| hollow_imperfect_fp_plene_variant(&text))
+                .flatten();
                 // ô-class hollow Qal perfect twin: the stative holam grade —
                 // ṭôḇ (טוֹב), bōšû (בֹּשׁוּ) — beside the default qām qamats. Before
                 // a consonantal afformative the stem vowel is a short patah in the
@@ -2735,6 +2744,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     qal_stative_participle,
                     hollow_perfect_holam,
                     hollow_wayyiqtol_patah,
+                    hollow_impf_fp_plene,
                     lamed_he_imp_apoc,
                     hiphil_imp_segholate,
                     hiphil_wayyiqtol_tsere,
@@ -7605,6 +7615,32 @@ fn hollow_wayyiqtol_patah_variant(text: &str) -> Option<String> {
         return None;
     }
     seq[n - 2].vowel = Some(Vowel::Patah);
+    Some(hebrew::render(&seq))
+}
+
+/// Plene -ênâ twin of the hollow Qal imperfect/wayyiqtol 3fp/2fp: beside the
+/// builder's tāqûmnâ (תָּקוּמְנָה) the long ending with a segol-yod surfaces —
+/// tᵊqûmênâ (תְּקוּמֶינָה), tᵊp̄ûṣênâ (תְּפוּצֶינָה). The prefix reduces to a
+/// sheva, C2 takes segol, and a yod mater is inserted before the -nâ suffix
+/// (nun-qamats + he). `text` is the builder's …C2(sheva)-nun(qamats)-he form.
+fn hollow_imperfect_fp_plene_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 4
+        || seq[n - 1].letter != letter::HE
+        || seq[n - 1].vowel.is_some()
+        || seq[n - 2].letter != letter::NUN
+        || seq[n - 2].vowel != Some(Vowel::Qamats)
+    {
+        return None;
+    }
+    // The imperfect preformative reduces to a sheva. In the wayyiqtol the
+    // consecutive vav (wa-) leads, so the preformative — keeping its dagesh
+    // forte — is the second consonant: watt- → wattᵊqûmênâ וַתְּקוּמֶינָה.
+    let prefix = usize::from(seq[0].letter == letter::VAV && seq[0].vowel == Some(Vowel::Patah));
+    seq[prefix].vowel = Some(Vowel::Sheva);
+    seq[n - 3].vowel = Some(Vowel::Segol);
+    seq.insert(n - 2, Cons::mater(letter::YOD));
     Some(hebrew::render(&seq))
 }
 
