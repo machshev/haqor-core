@@ -2053,6 +2053,38 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 } else {
                     Default::default()
                 };
+                // Qamats-grade twin of the segolate ־ֶת feminine participle:
+                // beside the segol-grade qōṭelet the builder makes (ʿōmedeṯ
+                // עֹמֶדֶת, niqṭeleṯ נִשְׁבֶּרֶת, mᵊquṭṭeleṯ מְסֻתֶּרֶת) some forms
+                // keep a long qamats on C2 — ʿōmādeṯ עֹמָדֶת, yōšāḇeṯ יֹשָׁבֶת,
+                // ʾōḵāleṯ אֹכָלֶת, niqṭāleṯ נִשְׁבָּרֶת, mᵊquṭṭāleṯ מְסֻתָּרֶת. The
+                // C3-segol filter skips the guttural ־ַחַת ending (which has no
+                // segol there), leaving that to its own pathway. Additive.
+                let fs_ptcp_qamats_grade: Vec<String> = if matches!(
+                    form,
+                    Form::ParticipleActive | Form::ParticiplePassive
+                ) && pgn == Pgn::gn(Gender::Feminine, Number::Singular)
+                {
+                    let qamats_grade = |t: &str| -> Option<String> {
+                        let mut seq = hebrew::parse_pointed(t);
+                        let n = seq.len();
+                        (n >= 3
+                            && seq[n - 1].letter == letter::TAV
+                            && seq[n - 1].vowel.is_none()
+                            && seq[n - 2].vowel == Some(Vowel::Segol)
+                            && seq[n - 3].vowel == Some(Vowel::Segol))
+                        .then(|| {
+                            seq[n - 3].vowel = Some(Vowel::Qamats);
+                            hebrew::render(&seq)
+                        })
+                    };
+                    std::iter::once(text.as_str())
+                        .chain(derived_fs_ptcp_et.iter().map(String::as_str))
+                        .filter_map(qamats_grade)
+                        .collect()
+                } else {
+                    Default::default()
+                };
                 // III-aleph contracted fs participle twin: the aleph quiesces
                 // and the segolate pair contracts to tsere — yōṣēṯ יֹצֵאת
                 // beside יֹצֶאֶת.
@@ -3079,6 +3111,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(geminate_hiphil_ptcp)
                     .chain(geminate_niphal_ptcp)
                     .chain(derived_fs_ptcp_et)
+                    .chain(fs_ptcp_qamats_grade)
                     .chain(hiphil_perf_patah_he)
                     .chain(hollow_niphal_participle)
                     .chain(niphal_1cs_hiriq)

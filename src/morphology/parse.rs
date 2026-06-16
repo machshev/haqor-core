@@ -1175,6 +1175,29 @@ mod tests {
     }
 
     #[test]
+    fn parses_qamats_grade_segolate_fs_participle() {
+        // עֹמָדֶת — Qal fs active participle of עמד in the qamats grade
+        // (qōṭāleṯ), beside the segol-grade עֹמֶדֶת the builder makes.
+        let matches = parse_word("עֹמָדֶת");
+        assert!(has_match(
+            &matches,
+            "עמד",
+            Binyan::Qal,
+            Form::ParticipleActive,
+            "fs"
+        ));
+        // מְסֻתָּרֶת — the same qamats grade in a derived stem (Pual of סתר).
+        let matches = parse_word("מְסֻתָּרֶת");
+        assert!(has_match(
+            &matches,
+            "סתר",
+            Binyan::Pual,
+            Form::ParticipleActive,
+            "fs"
+        ));
+    }
+
+    #[test]
     fn parses_ayin_guttural_piel_perfect_hiriq() {
         // נִאֲצוּ — Piel perfect 3cp of נאץ: the C2 aleph forgoes the forte, so
         // the C1 prefix keeps its short hiriq (beside the lengthened נֵאֲצוּ).
