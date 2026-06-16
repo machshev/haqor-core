@@ -2490,19 +2490,27 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             .flat_map(|s| {
                                 // i-class (stative) tsere twin of the 3ms: nāmēs
                                 // נָמֵס, nāqēl נָקֵל beside the a-class nāmas.
-                                let tsere = (pgn
+                                let is_3ms = pgn
                                     == Pgn::new(
                                         Person::Third,
                                         Gender::Masculine,
                                         Number::Singular,
                                     )
-                                    && s.get(1).and_then(|c| c.vowel) == Some(Vowel::Patah))
-                                .then(|| {
+                                    && s.get(1).and_then(|c| c.vowel) == Some(Vowel::Patah);
+                                let tsere = is_3ms.then(|| {
                                     let mut t = s.clone();
                                     t[1].vowel = Some(Vowel::Tsere);
                                     hebrew::render(&t)
                                 });
-                                std::iter::once(hebrew::render(&s)).chain(tsere)
+                                // Pausal/long a-class twin: nāmās נָמָס beside the
+                                // context-form nāmas נָמַס — C1 patah lengthens to
+                                // qamats.
+                                let qamats = is_3ms.then(|| {
+                                    let mut t = s.clone();
+                                    t[1].vowel = Some(Vowel::Qamats);
+                                    hebrew::render(&t)
+                                });
+                                std::iter::once(hebrew::render(&s)).chain(tsere).chain(qamats)
                             })
                             .collect::<Vec<_>>()
                     } else if binyan == Binyan::Niphal
@@ -3474,6 +3482,27 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         })
         .collect();
     forms.extend(imp_segol);
+
+    // Guttural pausal imperfect-plural twin: a theme guttural reduced to a hataf
+    // before the -û suffix restores to its full grade under pause (יִיעֲפוּ →
+    // יִיעָפוּ). Run over finished imperfect-family plurals.
+    let gutt_pausal: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            matches!(
+                f.form,
+                Form::Imperfect | Form::Wayyiqtol | Form::Jussive | Form::Cohortative
+            ) && matches!(f.pgn.number, Some(Number::Plural))
+                && f.object_suffix.is_none()
+        })
+        .filter_map(|f| {
+            guttural_pausal_imperfect_plural_variant(&f.text).map(|t| VerbForm {
+                text: t,
+                ..f.clone()
+            })
+        })
+        .collect();
+    forms.extend(gutt_pausal);
 
     // Feminine-participle twins, run as a post-pass so they see *every*
     // generated -â/segolate fs participle — the strong primary plus the hollow,
@@ -7717,6 +7746,33 @@ fn iguttural_reduced_plural_variant(text: &str) -> Option<String> {
 /// before C3 — qamats (yišmāʕû יִשְׁמָעוּ, yiqrāḇû) or tsere — exactly the grade
 /// the energic -ûn restores, but with no nun. Returns both twins; only the
 /// attested grade matches. (Same shape test as [`paragogic_nun_theme_variants`].)
+/// Guttural pausal twin of a vocalic-suffix (-û) imperfect: a theme guttural
+/// that the bare plural reduced to a hataf restores under pause to the full
+/// grade it echoes — hataf-patah → qamats (yîʕăp̄û יִיעֲפוּ → yîʕāp̄û יִיעָפוּ),
+/// hataf-segol → tsere. Unlike [`pausal_imperfect_plural_variants`] this fires
+/// for *any* imperfect plural with a guttural theme consonant (II-guttural and
+/// pe-yod/ayin-guttural roots the pe-guttural gating misses), but only one
+/// grade per hataf — so it stays a single additive twin, never the strong-verb
+/// 3-grade fan-out that would triple the imperfect-plural index.
+fn guttural_pausal_imperfect_plural_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 3
+        || !(seq[n - 1].letter == letter::VAV && seq[n - 1].dagesh && seq[n - 1].vowel.is_none())
+        || seq[n - 2].vowel.is_some()
+        || !hebrew::is_guttural(seq[n - 3].letter)
+    {
+        return None;
+    }
+    let restored = match seq[n - 3].vowel {
+        Some(Vowel::HatafPatah) => Vowel::Qamats,
+        Some(Vowel::HatafSegol) => Vowel::Tsere,
+        _ => return None,
+    };
+    seq[n - 3].vowel = Some(restored);
+    Some(hebrew::render(&seq))
+}
+
 fn pausal_imperfect_plural_variants(text: &str) -> Vec<String> {
     let seq = hebrew::parse_pointed(text);
     let n = seq.len();
@@ -13147,6 +13203,24 @@ mod tests {
         assert!(any_text(&p, "יוֹדֶה"));
         assert!(any_text(&p, "יוֹדוּ"));
         assert!(any_text(&p, "הוֹדוּ"));
+    }
+
+    #[test]
+    fn geminate_niphal_perfect_qamats_3ms() {
+        // Geminate Niphal perfect 3ms a-class has a context grade nāmas נָמַס and
+        // a pausal/long grade nāmās נָמָס, beside the i-class nāmēs נָמֵס.
+        let p = generate_paradigm(&Root::parse("מסס").unwrap());
+        assert!(has_text(&p, Binyan::Niphal, Form::Perfect, THREE_MS, "נָמָס"));
+        assert!(has_text(&p, Binyan::Niphal, Form::Perfect, THREE_MS, "נָמֵס"));
+    }
+
+    #[test]
+    fn guttural_pausal_imperfect_plural() {
+        // A theme guttural reduced to a hataf before -û restores to its full
+        // grade in pause — yîʕăp̄û יִיעֲפוּ → yîʕāp̄û יִיעָפוּ (יעף).
+        let p = generate_paradigm(&Root::parse("יעף").unwrap());
+        let three_mp = Pgn::new(Person::Third, Gender::Masculine, Number::Plural);
+        assert!(has_text(&p, Binyan::Qal, Form::Imperfect, three_mp, "יִיעָפוּ"));
     }
 
     #[test]
