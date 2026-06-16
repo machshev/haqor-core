@@ -3217,12 +3217,29 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             })
                         })
                         .flatten();
+                    // Hiphil inf-construct + suffix prefix attenuation: the haC-
+                    // prefix he commonly attenuates to a hiriq before a suffix —
+                    // hašmîḏô הַשְׁמִידוֹ → hišmîḏô הִשְׁמִידוֹ, hišmiḏḵā הִשְׁמִדְךָ,
+                    // hišlîḵô הִשְׁלִיכוֹ.
+                    let hiphil_inf_hi = (binyan == Binyan::Hiphil
+                        && form == Form::InfinitiveConstruct)
+                        .then(|| {
+                            let mut seq = hebrew::parse_pointed(&t);
+                            (seq.first().map(|c| (c.letter, c.vowel))
+                                == Some((letter::HE, Some(Vowel::Patah))))
+                            .then(|| {
+                                seq[0].vowel = Some(Vowel::Hiriq);
+                                hebrew::render(&seq)
+                            })
+                        })
+                        .flatten();
                     for surf in std::iter::once(t)
                         .chain(contracted)
                         .chain(defective)
                         .chain(guttural)
                         .chain(ayin_hataf)
                         .chain(hiphil_he_reduced)
+                        .chain(hiphil_inf_hi)
                     {
                         if osuf_seen.insert((obj, surf.clone())) {
                             forms.push(VerbForm {
@@ -10811,6 +10828,14 @@ fn inf_construct_object_suffixes(
     // form to start from).
     if binyan == Binyan::Hiphil && matches!(c2, letter::VAV | letter::YOD) {
         for (obj, link, tail) in nominal_suffix_tails() {
+            // A quiescent/guttural C3 (the aleph of בוא) can't carry the plain
+            // sheva-link, so it takes a hataf-patah — hăḇîʾăḵā הֲבִיאֲךָ,
+            // hăḇîʾăḵem הֲבִיאֲכֶם.
+            let link = if link == Some(Sheva) && hebrew::is_guttural(c3) {
+                Some(HatafPatah)
+            } else {
+                link
+            };
             let mut seq = vec![
                 Cons::new(letter::HE).with_vowel(HatafPatah),
                 Cons::radical(c1, 1).with_vowel(Hiriq),
