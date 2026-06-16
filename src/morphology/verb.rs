@@ -989,6 +989,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.ayin() == root.lamed())
                 .then(|| geminate_hophal_imperfect_variant(root, pgn))
                 .flatten();
+                // Geminate Hophal perfect contracted twin (הוּחַד, הוּחַדָּה).
+                let geminate_hophal_perf: Vec<String> = if binyan == Binyan::Hophal
+                    && form == Form::Perfect
+                    && root.ayin() == root.lamed()
+                {
+                    geminate_hophal_perfect_variant(root, pgn)
+                } else {
+                    Default::default()
+                };
                 // Geminate Hiphil wayyiqtol with the stress-retracted patah
                 // preformative and pe-nun-style C1 doubling — wayyassēbbû
                 // וַיַּסֵּבּוּ beside the qamats grade וַיָּסֵבּוּ.
@@ -2886,6 +2895,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(pe_guttural_loud_segol_pl)
                     .chain(pe_guttural_loud_from_silent)
                     .chain(geminate_hiphil_perf_otav)
+                    .chain(geminate_hophal_perf)
                     .chain(hollow_hophal_perf)
                     .chain(cohortative_long)
                     .chain(wayyiqtol_cohortative_long)
@@ -11505,6 +11515,53 @@ fn geminate_hophal_imperfect_variant(root: &Root, pgn: Pgn) -> Option<String> {
         }
         _ => None,
     }
+}
+
+/// Geminate Hophal perfect, doubled radical contracted onto a u-class prefix:
+/// hûḥad הוּחַד (3ms), hûḥaddâ הוּחַדָּה (3fs), hûḥaddû (3cp). The prefix writes
+/// plene (he + shureq vav) or defective (he + qubuts); C1 takes patah and the
+/// contracted radical doubles (dagesh) before a vocalic afformative. Only the
+/// vocalic-afformative persons (3ms/3fs/3cp) are modelled; the consonantal-
+/// suffix persons take a different (ô-linking) stem left to a later pass.
+/// Additive.
+fn geminate_hophal_perfect_variant(root: &Root, pgn: Pgn) -> Vec<String> {
+    use Vowel::*;
+    let lamed = root.lamed();
+    let dagesh_ok = !hebrew::rejects_dagesh(lamed);
+    let tail: Vec<Cons> = match (pgn.person, pgn.gender, pgn.number) {
+        // 3ms: a single radical closes the word; no afformative, no doubling.
+        (Some(Person::Third), Some(Gender::Masculine), Some(Number::Singular)) => {
+            vec![rad(lamed, 3)]
+        }
+        // 3fs -â: doubled radical + qamats, with a he mater.
+        (Some(Person::Third), Some(Gender::Feminine), Some(Number::Singular)) => {
+            let mut c = rad(lamed, 3).with_vowel(Qamats);
+            if dagesh_ok {
+                c = c.with_dagesh();
+            }
+            vec![c, Cons::mater(letter::HE)]
+        }
+        // 3cp -û: doubled radical + shureq.
+        (Some(Person::Third), Some(Gender::Common), Some(Number::Plural)) => {
+            let mut c = rad(lamed, 3);
+            if dagesh_ok {
+                c = c.with_dagesh();
+            }
+            vec![c, oshureq()]
+        }
+        _ => return Vec::new(),
+    };
+    let c1 = rad(root.pe(), 1).with_vowel(Patah);
+    let mut out = Vec::new();
+    // Plene prefix: he + shureq vav (הוּ-).
+    let mut plene = vec![Cons::new(letter::HE), oshureq(), c1];
+    plene.extend(tail.clone());
+    out.push(hebrew::render(&plene));
+    // Defective prefix: he + qubuts (הֻ-).
+    let mut defec = vec![Cons::new(letter::HE).with_vowel(Qubuts), c1];
+    defec.extend(tail);
+    out.push(hebrew::render(&defec));
+    out
 }
 
 /// Geminate Hiphil imperfect with the doubled radical contracted: yāḥēl יָחֵל,
