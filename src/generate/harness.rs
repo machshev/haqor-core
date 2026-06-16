@@ -416,24 +416,7 @@ pub fn parse_eval(
         );
 
     print_report(&score, surfaces.is_some(), prefilter.is_some());
-
-    if misses > 0 {
-        // Aggregate identical (surface, gold) failures and print the most
-        // frequent — the highest-leverage targets for the next parser fix.
-        let mut counts: std::collections::HashMap<Miss, usize> = std::collections::HashMap::new();
-        for m in miss_list {
-            *counts.entry(m).or_insert(0) += 1;
-        }
-        let mut rows: Vec<(Miss, usize)> = counts.into_iter().collect();
-        rows.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
-        println!(
-            "\ntop {} misses (kind, count, surface, gold):",
-            misses.min(rows.len())
-        );
-        for ((kind, surface, tag), n) in rows.into_iter().take(misses) {
-            println!("  {kind:14} {n:5}  {surface}  [{tag}]");
-        }
-    }
+    print_misses(miss_list, misses);
     Ok(())
 }
 
@@ -443,7 +426,12 @@ pub fn parse_eval(
 /// (the unfiltered analyses). Each gold verb token is matched to its surface's
 /// stored candidate analyses by cantillation-normalised text; a gold surface
 /// absent from the DB (the ~1% OSHB/UXLC misalignment) counts as unaligned.
-pub fn eval_from_db(morphhb_dir: &Path, hebrew_db: &Path, limit: usize) -> Result<()> {
+pub fn eval_from_db(
+    morphhb_dir: &Path,
+    hebrew_db: &Path,
+    limit: usize,
+    misses: usize,
+) -> Result<()> {
     let gold = collect_gold(morphhb_dir)?;
     let gold = match limit {
         0 => &gold[..],
@@ -486,18 +474,26 @@ pub fn eval_from_db(morphhb_dir: &Path, hebrew_db: &Path, limit: usize) -> Resul
         }
     }
 
-    let score = gold
+    type Miss = (&'static str, String, String);
+    let (score, miss_list): (Score, Vec<Miss>) = gold
         .par_iter()
         .map(|g| {
             let mut s = Score {
                 tokens: 1,
                 ..Default::default()
             };
-            if all_surfaces.contains(&g.surface) {
+            // The DB keys surfaces by `normalize_surface` (canonical combining
+            // order); the raw gold surface may order a consonant's dagesh+vowel
+            // differently (e.g. וַיַּעַן), so normalise before the lookup or the
+            // join spuriously misses those — inflating the miss list with common,
+            // perfectly-parseable verbs.
+            let key = normalize_surface(&g.surface);
+            if all_surfaces.contains(&key) {
                 s.aligned = 1;
             }
-            let Some(cands) = by_surface.get(&g.surface).filter(|c| !c.is_empty()) else {
-                return s;
+            let gold_tag = || format!("{:?} {:?} {}", g.binyan, g.form, g.pgn);
+            let Some(cands) = by_surface.get(&key).filter(|c| !c.is_empty()) else {
+                return (s, Some(("unparsed", g.surface.clone(), gold_tag())));
             };
             s.parsed = 1;
             let (gb, gf) = (g.binyan.name(), g.form.name());
@@ -516,13 +512,61 @@ pub fn eval_from_db(morphhb_dir: &Path, hebrew_db: &Path, limit: usize) -> Resul
             if bf {
                 s.recall_binyan_form = 1;
             }
-            s
+            let miss = if full {
+                None
+            } else if bf {
+                Some(("wrong-pgn", g.surface.clone(), gold_tag()))
+            } else {
+                Some(("wrong-analysis", g.surface.clone(), gold_tag()))
+            };
+            (s, miss)
         })
-        .reduce(Score::default, Score::merge);
+        .fold(
+            || (Score::default(), Vec::new()),
+            |(acc, mut v), (s, m)| {
+                if misses > 0
+                    && let Some(m) = m
+                {
+                    v.push(m);
+                }
+                (acc.merge(s), v)
+            },
+        )
+        .reduce(
+            || (Score::default(), Vec::new()),
+            |(a, mut va), (b, vb)| {
+                va.extend(vb);
+                (a.merge(b), va)
+            },
+        );
 
     println!("Scoring hebrew.db analyses vs OSHB gold (no reparse)\n");
     print_report(&score, true, false);
+    print_misses(miss_list, misses);
     Ok(())
+}
+
+/// Aggregate identical (kind, surface, gold) failures and print the most
+/// frequent — the highest-leverage targets for the next parser fix. Shared by
+/// the in-memory and DB-join evals. A no-op when `misses == 0`.
+fn print_misses(miss_list: Vec<(&'static str, String, String)>, misses: usize) {
+    if misses == 0 {
+        return;
+    }
+    let mut counts: std::collections::HashMap<(&'static str, String, String), usize> =
+        std::collections::HashMap::new();
+    for m in miss_list {
+        *counts.entry(m).or_insert(0) += 1;
+    }
+    let mut rows: Vec<_> = counts.into_iter().collect();
+    rows.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
+    println!(
+        "\ntop {} misses (kind, count, surface, gold):",
+        misses.min(rows.len())
+    );
+    for ((kind, surface, tag), n) in rows.into_iter().take(misses) {
+        println!("  {kind:14} {n:5}  {surface}  [{tag}]");
+    }
 }
 
 fn pct(n: usize, total: usize) -> f64 {

@@ -323,7 +323,7 @@ fn main() -> Result<()> {
                 misses,
             } => {
                 if let Some(hebrew_db) = from_db {
-                    haqor_core::generate::eval_from_db(&morphhb, &hebrew_db, limit)?;
+                    haqor_core::generate::eval_from_db(&morphhb, &hebrew_db, limit, misses)?;
                 } else {
                     haqor_core::generate::parse_eval(
                         &morphhb,
