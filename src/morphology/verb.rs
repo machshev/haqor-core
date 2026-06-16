@@ -11034,13 +11034,14 @@ fn inf_construct_object_suffixes(
                 out.push((obj, hebrew::render(&seq)));
             }
         }
-        // The heavy 2mp -ḵem shifts the stress two syllables forward, so the
-        // stem takes the propretonic-qamats grade qᵊṭāl- (C1 reduces to a
-        // vocal sheva / hataf, C2 carries the qamats): ʾăḵālḵem אֲכָלְכֶם,
-        // ʕăzāḇḵem עֲזָבְכֶם, ʾăḇāḏḵem אֲבָדְכֶם — beside the plain qoṭl- host
-        // (the lighter -ḵā keeps qoṭl-, ʾoḵlᵊḵā).
+        // The heavy 2nd-person suffixes shift the stress forward, so the stem
+        // takes the propretonic-qamats grade qᵊṭāl- (C1 reduces to a vocal
+        // sheva / hataf, C2 carries the qamats): ʾăḵālḵem אֲכָלְכֶם, ʕăzāḇḵem
+        // עֲזָבְכֶם — and the 2ms -ḵā does the same (ʾăḵālḵā אֲכָלְךָ, ʾămārḵā
+        // אֲמָרְךָ, ʕămāḏḵā עֲמָדְךָ, rᵊḏāp̄ḵā לִרְדָפְךָ), beside the plain qoṭl-
+        // host (ʾoḵlᵊḵā) which also occurs.
         for (obj, link, tail) in nominal_suffix_tails() {
-            if obj != OBJ_2MP {
+            if obj != OBJ_2MP && obj != OBJ_2MS {
                 continue;
             }
             let mut c3c = Cons::radical(c3, 3);
