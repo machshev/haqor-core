@@ -3010,10 +3010,23 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     // וַיַּעַזְבֵנִי), the hataf under the guttural fills to its
                     // matching short vowel.
                     let guttural = guttural_hataf_to_full_variant(&t);
+                    // II-guttural derived-stem twin: a suffixed host that closes
+                    // the guttural C2 on a silent sheva (bārᵊḵēnî בָּרְכֵנִי,
+                    // pēʾrᵊḵā) instead opens it on a hataf-patah — bārăḵēnî
+                    // בָּרֲכֵנִי, pēʾărᵊḵā פֵאֲרָךְ, lᵊḇārăḵô וּלְבָרֲכוֹ. The
+                    // imperfect host already bakes this in; cover imperative /
+                    // infinitive / perfect hosts here.
+                    let ayin_hataf = (matches!(
+                        binyan,
+                        Binyan::Piel | Binyan::Pual | Binyan::Hithpael
+                    ) && root.has(Gizra::AyinGuttural))
+                    .then(|| ayin_guttural_hataf_variant(root, &t))
+                    .flatten();
                     for surf in std::iter::once(t)
                         .chain(contracted)
                         .chain(defective)
                         .chain(guttural)
+                        .chain(ayin_hataf)
                     {
                         if osuf_seen.insert((obj, surf.clone())) {
                             forms.push(VerbForm {
