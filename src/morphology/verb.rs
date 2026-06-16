@@ -3456,6 +3456,25 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(furtive);
 
+    // Guttural-C2 imperative segol twin: the a-class plural imperative that
+    // surfaces as patah + hataf-patah (אַחֲזוּ, אַהֲבוּ) also attenuates to segol +
+    // hataf-segol (אֶחֱזוּ, אֶהֱבוּ). Run over finished imperative plurals.
+    let imp_segol: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            f.form == Form::Imperative
+                && matches!(f.pgn.number, Some(Number::Plural))
+                && f.object_suffix.is_none()
+        })
+        .filter_map(|f| {
+            guttural_imperative_segol_variant(&f.text).map(|t| VerbForm {
+                text: t,
+                ..f.clone()
+            })
+        })
+        .collect();
+    forms.extend(imp_segol);
+
     // Feminine-participle twins, run as a post-pass so they see *every*
     // generated -â/segolate fs participle — the strong primary plus the hollow,
     // pe-guttural and derived-stem variants other twins contribute. Each is a
@@ -11498,6 +11517,28 @@ fn pe_guttural_qal_silent_twin_variant(root: &Root, text: &str) -> Option<String
     None
 }
 
+/// Segol-harmony twin for a guttural C2 imperative plural: a stressed a-class
+/// guttural that surfaces as patah + hataf-patah (ʔaḥăzû אַחֲזוּ, ʔahăḇû אַהֲבוּ)
+/// also attenuates to segol + hataf-segol (ʔeḥĕzû אֶחֱזוּ, ʔehĕḇû אֶהֱבוּ) — the
+/// same segolization the I-guttural imperfect already takes (yeḥĕzaq יֶחֱזַק).
+/// The bare builder only emits the patah grade for the imperative; add the
+/// segol twin. Additive: a root whose C2 is not a guttural never produces the
+/// patah/hataf-patah pair this matches.
+fn guttural_imperative_segol_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    for i in 0..seq.len().saturating_sub(1) {
+        if seq[i].vowel == Some(Vowel::Patah)
+            && seq[i + 1].vowel == Some(Vowel::HatafPatah)
+            && hebrew::is_guttural(seq[i + 1].letter)
+        {
+            seq[i].vowel = Some(Vowel::Segol);
+            seq[i + 1].vowel = Some(Vowel::HatafSegol);
+            return Some(hebrew::render(&seq));
+        }
+    }
+    None
+}
+
 /// Geminate Qal perfect (a-class): the two identical radicals contract to one
 /// doubled C2, which the strong builder leaves as two separate radicals (רָבַב).
 /// The contracted paradigm — sab סַב, sabbâ סַבָּה, sabbû סַבּוּ, and the
@@ -13106,6 +13147,18 @@ mod tests {
         assert!(any_text(&p, "יוֹדֶה"));
         assert!(any_text(&p, "יוֹדוּ"));
         assert!(any_text(&p, "הוֹדוּ"));
+    }
+
+    #[test]
+    fn guttural_c2_imperative_segol() {
+        // Guttural-C2 a-class plural imperative attenuates patah+hataf-patah to
+        // segol+hataf-segol — ʔeḥĕzû אֶחֱזוּ (אחז), ʔehĕḇû אֶהֱבוּ (אהב), beside
+        // the אַחֲזוּ/אַהֲבוּ grade the bare builder already emits.
+        let two_mp = Pgn::new(Person::Second, Gender::Masculine, Number::Plural);
+        let ahz = generate_paradigm(&Root::parse("אחז").unwrap());
+        assert!(has_text(&ahz, Binyan::Qal, Form::Imperative, two_mp, "אֶחֱזוּ"));
+        let ahb = generate_paradigm(&Root::parse("אהב").unwrap());
+        assert!(has_text(&ahb, Binyan::Qal, Form::Imperative, two_mp, "אֶהֱבוּ"));
     }
 
     #[test]
