@@ -3523,6 +3523,52 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(short_cohort);
 
+    // Niphal inf-absolute = inf-construct alias: the Niphal infinitive absolute
+    // is attested both in the niqṭôl grade (נִכְבֹּד, which the builder labels
+    // inf-absolute) and in the hiqqāṭēl grade identical to the inf-construct
+    // (הִכָּרֵת, הִפָּקֵד, הִשָּׁמֵד). Relabel each Niphal inf-construct as an
+    // inf-absolute twin. No new surface — the inf-construct spelling is already
+    // in the index.
+    let niphal_inf_abs: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| f.binyan == Binyan::Niphal && f.form == Form::InfinitiveConstruct)
+        .map(|f| VerbForm {
+            form: Form::InfinitiveAbsolute,
+            ..f.clone()
+        })
+        .collect();
+    forms.extend(niphal_inf_abs);
+
+    // Holam-retaining plural imperative: beside the qiṭlû grade (גִּזְרוּ) the
+    // o-class Qal imperative also keeps the 2ms holam before -û — qᵊṭōlû גְּזֹרוּ,
+    // זְכֹרוּ, שְׁפֹטוּ, with I-guttural hataf carried through (עֲמֹדוּ, הֲרֹגוּ).
+    // Derive the 2mp from each bare holam-theme 2ms by appending a shureq vav.
+    let holam_imp_pl: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            f.binyan == Binyan::Qal
+                && f.form == Form::Imperative
+                && f.pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular)
+                && f.object_suffix.is_none()
+        })
+        .filter_map(|f| {
+            let mut seq = hebrew::parse_pointed(&f.text);
+            let n = seq.len();
+            // qᵊṭōl: holam on C2 (the second-to-last consonant), bare C3.
+            if n < 2 || seq[n - 2].vowel != Some(Vowel::Holam) || seq[n - 1].vowel.is_some() {
+                return None;
+            }
+            seq.push(Cons::new(letter::VAV).with_dagesh());
+            Some(VerbForm {
+                form: Form::Imperative,
+                pgn: Pgn::new(Person::Second, Gender::Masculine, Number::Plural),
+                text: hebrew::render(&seq),
+                ..f.clone()
+            })
+        })
+        .collect();
+    forms.extend(holam_imp_pl);
+
     // Feminine-participle twins, run as a post-pass so they see *every*
     // generated -â/segolate fs participle — the strong primary plus the hollow,
     // pe-guttural and derived-stem variants other twins contribute. Each is a
@@ -13222,6 +13268,31 @@ mod tests {
         assert!(any_text(&p, "יוֹדֶה"));
         assert!(any_text(&p, "יוֹדוּ"));
         assert!(any_text(&p, "הוֹדוּ"));
+    }
+
+    #[test]
+    fn niphal_inf_absolute_hiqqatel() {
+        // Niphal inf-absolute is attested in the hiqqāṭēl grade identical to the
+        // inf-construct — hikkārēṯ הִכָּרֵת (כרת), hippāqēḏ הִפָּקֵד (פקד).
+        let p = generate_paradigm(&Root::parse("פקד").unwrap());
+        assert!(has_text(
+            &p,
+            Binyan::Niphal,
+            Form::InfinitiveAbsolute,
+            Pgn::none(),
+            "הִפָּקֵד"
+        ));
+    }
+
+    #[test]
+    fn holam_plural_imperative() {
+        // o-class Qal imperative keeps the 2ms holam before -û — gᵊzōrû גְּזֹרוּ
+        // (גזר), zᵊḵōrû זְכֹרוּ (זכר), beside the qiṭlû grade גִּזְרוּ.
+        let two_mp = Pgn::new(Person::Second, Gender::Masculine, Number::Plural);
+        let g = generate_paradigm(&Root::parse("גזר").unwrap());
+        assert!(has_text(&g, Binyan::Qal, Form::Imperative, two_mp, "גְּזֹרוּ"));
+        let z = generate_paradigm(&Root::parse("זכר").unwrap());
+        assert!(has_text(&z, Binyan::Qal, Form::Imperative, two_mp, "זְכֹרוּ"));
     }
 
     #[test]
