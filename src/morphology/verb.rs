@@ -2171,12 +2171,30 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 .flatten();
                 // Piel infinitive absolute tsere twin: beside qaṭṭōl the
                 // construct-shaped qaṭṭēl serves as the absolute (mahēr מַהֵר).
-                let piel_inf_abs_tsere = (binyan == Binyan::Piel
+                let piel_inf_abs_tsere = (matches!(binyan, Binyan::Piel | Binyan::Hithpael)
                     && form == Form::InfinitiveAbsolute)
                     .then(|| {
                         let (t, _) =
                             generate_one(root, binyan, Form::InfinitiveConstruct, pgn, false);
                         (t != text).then_some(t)
+                    })
+                    .flatten();
+                // Niphal he-prefixed infinitive absolute (hiqqāṭōl): beside the
+                // niqṭōl base the Niphal also attests the inf-construct's
+                // he-prefixed shape with a holam theme — hēʾāḵōl הֵאָכֹל,
+                // hinnāṯōn הִנָּתֹן. Take the inf-construct form and lower its
+                // final tsere/segol theme to holam.
+                let niphal_inf_abs_he = (binyan == Binyan::Niphal
+                    && form == Form::InfinitiveAbsolute)
+                    .then(|| {
+                        let (t, _) =
+                            generate_one(root, binyan, Form::InfinitiveConstruct, pgn, false);
+                        let mut seq = hebrew::parse_pointed(&t);
+                        let i = seq
+                            .iter()
+                            .rposition(|c| matches!(c.vowel, Some(Vowel::Tsere | Vowel::Segol)))?;
+                        seq[i].vowel = Some(Vowel::Holam);
+                        Some(hebrew::render(&seq))
                     })
                     .flatten();
                 // III-He cohortative: the -â paragogic cannot attach to the -eh
@@ -2880,6 +2898,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     shachah_pausal,
                     segholate_inf_pausal,
                     piel_inf_abs_tsere,
+                    niphal_inf_abs_he,
                     lamed_he_cohortative,
                     geminate_hiphil_impf,
                     geminate_hophal_impf,
