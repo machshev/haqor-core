@@ -1107,6 +1107,19 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     Some(hebrew::render(&seq))
                 })
                 .flatten();
+                // Pual holam twin before a non-doubling guttural C2: the u of the
+                // prefix lengthens compensatorily to ō — mᵊṭōhār מְטֹהָר (טהר),
+                // yᵊḇōraḵ. (Resh/aleph already lengthen via apply_guttural, so the
+                // holam מְצֹרָע, מְבֹרָךְ is built there.) Additive.
+                let pual_guttural_holam = (binyan == Binyan::Pual
+                    && matches!(root.ayin(), letter::HE | letter::HET | letter::AYIN))
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let c = seq.iter_mut().find(|c| c.vowel == Some(Vowel::Qubuts))?;
+                    c.vowel = Some(Vowel::Holam);
+                    Some(hebrew::render(&seq))
+                })
+                .flatten();
                 // III-aleph Piel/Pual/Hithpael consonantal perfect quiescent
                 // twin (קִנֵּאתִי beside the strong קִנַּאְתִּי).
                 let lamed_aleph_derived_perf =
@@ -3021,6 +3034,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     niphal_wayy_patah,
                     lamed_he_inf_abs_vav,
                     pual_ptcp_qamats,
+                    pual_guttural_holam,
                     hophal_qubuts,
                     niphal_pe_guttural_hiriq,
                     niphal_pe_guttural_hataf,
