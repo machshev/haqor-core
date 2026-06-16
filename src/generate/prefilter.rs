@@ -35,6 +35,9 @@ const PROCLITICS: [char; 7] = [
 /// Dagesh point — a forte here marks the doubling the definite article induces.
 const DAGESH: char = '\u{05BC}';
 
+/// Conjunction/wayyiqtol vav — the one proclitic that brings no article forte.
+const VAV: char = '\u{05D5}';
+
 /// Curated closed-class function words (exact pointed forms). Pronouns,
 /// demonstratives, interrogatives/relative, independent prepositions, and the
 /// common particles/negatives/adverbs. Deliberately omits forms that are also
@@ -708,7 +711,19 @@ fn deprefixed_forms(surface: &str) -> Vec<String> {
             .all(|c| c.chars().next().is_some_and(|b| PROCLITICS.contains(&b)));
         if all_proclitic {
             let rem: String = cl[k..].concat();
-            if let Some(bare) = strip_initial_dagesh(&rem) {
+            // The article (and the ב/כ/ל/מ/שׁ prefixes that absorb it or assimilate
+            // into a forte) doubles the remainder's first consonant with a dagesh
+            // the citation form lacks; strip it so the headword matches
+            // (בַּיּוֹם→יוֹם). But the conjunction/wayyiqtol vav induces no such
+            // forte — a dagesh after a peeled וַ is a verb's preformative gemination
+            // (וַיַּעַן "and he answered"), and stripping it would spuriously match a
+            // function-word homograph (the conjunction יַעַן "because"), hiding the
+            // verb from the parser. So skip the strip when the last peeled proclitic
+            // is vav.
+            let last_is_vav = cl[k - 1].starts_with(VAV);
+            if !last_is_vav
+                && let Some(bare) = strip_initial_dagesh(&rem)
+            {
                 forms.push(bare);
             }
             forms.push(rem);
