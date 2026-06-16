@@ -9564,12 +9564,29 @@ fn participle_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         }
         return out;
     }
-    // Strong participle: ends in a true final radical. Skip mater/weak finals.
-    if matches!(last.vowel, Some(v) if v != Vowel::Sheva)
-        || matches!(
-            last.letter,
-            letter::HE | letter::ALEF | letter::VAV | letter::YOD
-        )
+    // Strong participle: ends in a true final radical. Skip mater/weak finals,
+    // but admit two near-strong III-weak shapes whose suffix still joins C3:
+    //  - a III-guttural with a furtive patah (šōlēaḥ שֹׁלֵחַ, yōḏēaʕ) — the
+    //    furtive patah drops before a suffix (šōlᵊḥî שֹׁלְחִי);
+    //  - a quiescent III-aleph after a tsere/segol theme (mōṣēʾ מֹצֵא, mᵊśannēʾ)
+    //    — the aleph carries the link vowel (mōṣᵊʾî מֹצְאִי, mᵊśanʾî).
+    // In both the theme on seq[n-2] reduces and the loop overwrites the final.
+    let theme_before = matches!(
+        seq.get(n.wrapping_sub(2)).and_then(|c| c.vowel),
+        Some(Vowel::Tsere | Vowel::Segol)
+    );
+    let furtive_guttural = matches!(last.letter, letter::HET | letter::AYIN)
+        && last.vowel == Some(Vowel::Patah)
+        && theme_before;
+    let quiescent_aleph =
+        last.letter == letter::ALEF && last.vowel.is_none() && theme_before;
+    if !furtive_guttural
+        && !quiescent_aleph
+        && (matches!(last.vowel, Some(v) if v != Vowel::Sheva)
+            || matches!(
+                last.letter,
+                letter::HE | letter::ALEF | letter::VAV | letter::YOD
+            ))
     {
         return out;
     }
