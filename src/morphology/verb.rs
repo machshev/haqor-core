@@ -3566,6 +3566,27 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(niphal_inf_abs);
 
+    // Hollow/I-weak Hiphil imperative 2ms with retained î: beside the
+    // apocopated haqṭēl (הָקֵם, הָבֵא) the full î grade is attested for the
+    // imperative — hāḇîʾ הָבִיא, hôṣîʾ הוֹצִיא, hāsîr הָסִיר, hārîm הָרִים —
+    // spelled exactly like the Hiphil inf-construct. Relabel the bare hollow /
+    // pe-yod Hiphil inf-construct as an imperative 2ms twin (no new surface).
+    let hiphil_inf_imperative: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            f.binyan == Binyan::Hiphil
+                && f.form == Form::InfinitiveConstruct
+                && f.object_suffix.is_none()
+                && (root.has(Gizra::Hollow) || root.has(Gizra::PeYod))
+        })
+        .map(|f| VerbForm {
+            form: Form::Imperative,
+            pgn: Pgn::new(Person::Second, Gender::Masculine, Number::Singular),
+            ..f.clone()
+        })
+        .collect();
+    forms.extend(hiphil_inf_imperative);
+
     // Holam-retaining plural imperative: beside the qiṭlû grade (גִּזְרוּ) the
     // o-class Qal imperative also keeps the 2ms holam before -û — qᵊṭōlû גְּזֹרוּ,
     // זְכֹרוּ, שְׁפֹטוּ, with I-guttural hataf carried through (עֲמֹדוּ, הֲרֹגוּ).
@@ -13341,6 +13362,17 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn hollow_hiphil_imperative_retained_i() {
+        // The full î-grade Hiphil imperative (hāḇîʾ הָבִיא, hāsîr הָסִיר) is
+        // spelled like the inf-construct, beside the apocopated הָבֵא/הָסֵר.
+        let two_ms = Pgn::new(Person::Second, Gender::Masculine, Number::Singular);
+        let bw = generate_paradigm(&Root::parse("בוא").unwrap());
+        assert!(has_text(&bw, Binyan::Hiphil, Form::Imperative, two_ms, "הָבִיא"));
+        let sr = generate_paradigm(&Root::parse("סור").unwrap());
+        assert!(has_text(&sr, Binyan::Hiphil, Form::Imperative, two_ms, "הָסִיר"));
     }
 
     #[test]
