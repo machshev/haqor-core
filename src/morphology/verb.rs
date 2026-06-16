@@ -2486,8 +2486,25 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     {
                         // Geminate Niphal perfect nāCaC (נָשַׁם, נָשַׁמּוּ, נָסַבּוּ).
                         geminate_niphal_perfect_variant(root, pgn)
-                            .map(|s| vec![hebrew::render(&s)])
-                            .unwrap_or_default()
+                            .into_iter()
+                            .flat_map(|s| {
+                                // i-class (stative) tsere twin of the 3ms: nāmēs
+                                // נָמֵס, nāqēl נָקֵל beside the a-class nāmas.
+                                let tsere = (pgn
+                                    == Pgn::new(
+                                        Person::Third,
+                                        Gender::Masculine,
+                                        Number::Singular,
+                                    )
+                                    && s.get(1).and_then(|c| c.vowel) == Some(Vowel::Patah))
+                                .then(|| {
+                                    let mut t = s.clone();
+                                    t[1].vowel = Some(Vowel::Tsere);
+                                    hebrew::render(&t)
+                                });
+                                std::iter::once(hebrew::render(&s)).chain(tsere)
+                            })
+                            .collect::<Vec<_>>()
                     } else if binyan == Binyan::Niphal
                         && form == Form::Perfect
                         && root.has(Gizra::Hollow)
