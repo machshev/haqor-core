@@ -1618,6 +1618,31 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     ))
                     .then(|| lamed_he_perfect_hiriq_variant(&text))
                     .flatten();
+                // III-He Hophal consonantal-suffix perfect tsere twin: the
+                // Hophal builds the linking vowel as hiriq-yod (hoglîṯî
+                // הׇגְלִיתִי) but the tsere-yod spelling is attested too
+                // (hoglêṯî), mirroring the Hiphil. Additive.
+                let lamed_he_hophal_perf_tsere = (binyan == Binyan::Hophal
+                    && form == Form::Perfect
+                    && root.lamed() == letter::HE
+                    && matches!(
+                        perfect_suffix_kind(pgn),
+                        Suffix::Consonantal | Suffix::Heavy
+                    ))
+                    .then(|| lamed_he_perfect_tsere_variant(&text))
+                    .flatten();
+                // I-guttural Hophal loud-preformative twin (הָחֳלֵיתִי, הָעֳמַד):
+                // the guttural C1 trades its silent sheva for a hataf-qamats and
+                // the prefix qamats-qatan opens to a full qamats.
+                let iguttural_hophal_loud = (binyan == Binyan::Hophal
+                    && root.has(Gizra::PeGuttural))
+                .then(|| iguttural_hophal_loud_preformative_variant(&text))
+                .flatten();
+                // The loud preformative also composes with the III-He tsere
+                // twin (hoḥŏlêṯî הָחֳלֵיתִי), so chain the two transforms.
+                let iguttural_hophal_loud_tsere = lamed_he_hophal_perf_tsere
+                    .as_deref()
+                    .and_then(iguttural_hophal_loud_preformative_variant);
                 // Patah-theme Piel/Hithpael perfect 3ms twin (בֵּרַךְ, חִשַּׁב,
                 // טִהַר, הִתְחַזַּק).
                 let piel_perf_patah = (matches!(binyan, Binyan::Piel | Binyan::Hithpael)
@@ -2825,6 +2850,9 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_yod_perf_hiriq,
                     lamed_he_perf_tsere,
                     lamed_he_perf_hiriq,
+                    lamed_he_hophal_perf_tsere,
+                    iguttural_hophal_loud,
+                    iguttural_hophal_loud_tsere,
                     piel_perf_patah,
                     piel_perf_hiriq,
                     hiphil_perf_segol,
@@ -7982,6 +8010,27 @@ fn guttural_silent_sheva_variant(text: &str) -> Option<String> {
         }
     }
     None
+}
+
+/// Loud-preformative twin of an I-guttural Hophal: the strong base closes the
+/// prefix syllable on a qamats-qatan with the guttural C1 taking a silent sheva
+/// (hoḥlêṯî הׇחְלֵיתִי). A I-guttural cannot carry silent sheva comfortably, so
+/// the Masoretes open the prefix on a full qamats and give the guttural a
+/// hataf-qamats — hoḥŏlêṯî הָחֳלֵיתִי, hoʕŏmaḏ הָעֳמַד. Promotes seq[0]'s
+/// qamats-qatan → qamats and the C1 guttural's silent sheva → hataf-qamats.
+/// Additive.
+fn iguttural_hophal_loud_preformative_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() < 2
+        || seq[0].vowel != Some(Vowel::QamatsQatan)
+        || !hebrew::is_guttural(seq[1].letter)
+        || seq[1].vowel != Some(Vowel::Sheva)
+    {
+        return None;
+    }
+    seq[0].vowel = Some(Vowel::Qamats);
+    seq[1].vowel = Some(Vowel::HatafQamats);
+    Some(hebrew::render(&seq))
 }
 
 /// Silent-sheva twin of a I-guttural Qal imperfect-family form whose C1 guttural
