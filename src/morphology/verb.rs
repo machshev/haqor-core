@@ -3132,11 +3132,26 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     ) && root.has(Gizra::AyinGuttural))
                     .then(|| ayin_guttural_hataf_variant(root, &t))
                     .flatten();
+                    // Hiphil he-prefix reduction before a stress-shifting suffix:
+                    // the propretonic tsere on the he reduces to a hataf-segol —
+                    // hēḇîʾûm הֵבִיאוּם → heḇîʾûm הֱבִיאוּם.
+                    let hiphil_he_reduced = (binyan == Binyan::Hiphil)
+                        .then(|| {
+                            let mut seq = hebrew::parse_pointed(&t);
+                            (seq.first().map(|c| (c.letter, c.vowel))
+                                == Some((letter::HE, Some(Vowel::Tsere))))
+                            .then(|| {
+                                seq[0].vowel = Some(Vowel::HatafSegol);
+                                hebrew::render(&seq)
+                            })
+                        })
+                        .flatten();
                     for surf in std::iter::once(t)
                         .chain(contracted)
                         .chain(defective)
                         .chain(guttural)
                         .chain(ayin_hataf)
+                        .chain(hiphil_he_reduced)
                     {
                         if osuf_seen.insert((obj, surf.clone())) {
                             forms.push(VerbForm {
