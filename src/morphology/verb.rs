@@ -3464,6 +3464,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 .into_iter()
                 .chain(fs_participle_construct_at(&f.text))
                 .chain(fs_participle_guttural_at(&f.text, root.lamed()))
+                .chain(fs_participle_lamed_aleph_at(&f.text, root.lamed()))
                 .map(|t| VerbForm {
                     text: t,
                     ..f.clone()
@@ -3557,6 +3558,9 @@ fn fs_participle_construct_at(text: &str) -> Option<String> {
     (n >= 2
         && seq[n - 1].letter == letter::HE
         && seq[n - 1].vowel.is_none()
+        // A III-aleph stem quiesces the aleph instead of giving it a patah —
+        // handled by fs_participle_lamed_aleph_at.
+        && seq[n - 2].letter != letter::ALEF
         && seq[n - 2].vowel == Some(Vowel::Qamats))
     .then(|| {
         seq.pop();
@@ -3565,6 +3569,37 @@ fn fs_participle_construct_at(text: &str) -> Option<String> {
         seq.push(Cons::new(letter::TAV));
         hebrew::render(&seq)
     })
+}
+
+/// III-aleph feminine participle bound/contracted form: the quiescent final
+/// aleph takes no vowel and the C2 vowel resolves to tsere or stays qamats —
+/// niplēʾṯ נִפְלֵאת / niplāʾṯ נִפְלָאת (Niphal פלא), nissēʾṯ נִשֵּׂאת (נשא). Built
+/// from the -â absolute (…C2 + aleph-qamats + he).
+fn fs_participle_lamed_aleph_at(text: &str, lamed: char) -> Vec<String> {
+    if lamed != letter::ALEF {
+        return Vec::new();
+    }
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 3
+        || seq[n - 1].letter != letter::HE
+        || seq[n - 2].letter != letter::ALEF
+        || seq[n - 2].vowel != Some(Vowel::Qamats)
+    {
+        return Vec::new();
+    }
+    seq.pop();
+    let n = seq.len();
+    seq[n - 1].vowel = None; // aleph quiesces
+    [Vowel::Tsere, Vowel::Qamats]
+        .into_iter()
+        .map(|v| {
+            let mut s = seq.clone();
+            s[n - 2].vowel = Some(v);
+            s.push(Cons::new(letter::TAV));
+            hebrew::render(&s)
+        })
+        .collect()
 }
 
 /// Guttural-C3 ־ַחַת/־ַעַת feminine participle: a final guttural takes neither
