@@ -1437,17 +1437,30 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         // sheva instead of the hataf (roḥṣâ לְרָחְצָה).
                         [(v1, v2), (Vowel::Qamats, v2), (Vowel::Qamats, Vowel::Sheva)]
                             .into_iter()
-                            .map(|(v1, v2)| {
-                                let mut c1 = rad(root.pe(), 1).with_vowel(v1);
-                                if hebrew::is_begedkefet(root.pe()) {
-                                    c1 = c1.with_dagesh();
-                                }
-                                hebrew::render(&[
-                                    c1,
+                            .flat_map(|(v1, v2)| {
+                                let c1 = || {
+                                    let mut c = rad(root.pe(), 1).with_vowel(v1);
+                                    if hebrew::is_begedkefet(root.pe()) {
+                                        c = c.with_dagesh();
+                                    }
+                                    c
+                                };
+                                // The free form ends in -â (C3 qamats + he mater);
+                                // its construct swaps that for -aṯ (C3 patah + tav):
+                                // ʾahăḇâ אַהֲבָה → ʾahăḇaṯ אַהֲבַת, yirʾâ → yirʾaṯ.
+                                let free = hebrew::render(&[
+                                    c1(),
                                     rad(root.ayin(), 2).with_vowel(v2),
                                     rad(root.lamed(), 3).with_vowel(Vowel::Qamats),
                                     Cons::new(letter::HE),
-                                ])
+                                ]);
+                                let cstr = hebrew::render(&[
+                                    c1(),
+                                    rad(root.ayin(), 2).with_vowel(v2),
+                                    rad(root.lamed(), 3).with_vowel(Vowel::Patah),
+                                    Cons::new(letter::TAV),
+                                ]);
+                                [free, cstr]
                             })
                             .collect()
                     }
