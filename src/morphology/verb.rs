@@ -3177,25 +3177,63 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             attested: c_attested,
                             object_suffix: None,
                         });
-                    }
-                    // The hollow Qal alternants (בָּאִים) live outside the strong
-                    // builder; derive their constructs too (בָּאֵי).
-                    if binyan == Binyan::Qal && root.has(Gizra::Hollow) {
-                        for alt in hollow_participle_twins(root, pgn)
-                            .into_iter()
-                            .chain(hollow_qal_participle_variant(&hebrew::render(&seq)))
-                        {
-                            let aseq = hebrew::parse_pointed(&alt);
-                            if let Some(cseq) = participle_mp_construct(&aseq) {
-                                forms.push(VerbForm {
-                                    binyan,
-                                    form,
-                                    pgn,
-                                    text: hebrew::render(&cseq),
-                                    attested: c_attested,
-                                    object_suffix: None,
-                                });
+                        // Construct propretonic reduction: a C2-radical qamats
+                        // (Niphal nišbārê→nišbᵊrê נִשְׁבְּרֵי, Pual mᵊlummāḏê→mᵊlummᵊḏê
+                        // מְלֻמְּדֵי) reduces to a sheva; any C2 dagesh (Pual) stays.
+                        let mut rseq = cseq.clone();
+                        let mut reduced = false;
+                        for c in rseq.iter_mut() {
+                            if c.role == Role::Radical(2) && c.vowel == Some(Vowel::Qamats) {
+                                c.vowel = Some(Vowel::Sheva);
+                                reduced = true;
                             }
+                        }
+                        if reduced {
+                            forms.push(VerbForm {
+                                binyan,
+                                form,
+                                pgn,
+                                text: hebrew::render(&rseq),
+                                attested: c_attested,
+                                object_suffix: None,
+                            });
+                        }
+                    }
+                    // The hollow alternants live outside the strong builder
+                    // (Qal בָּאִים, Hiphil מְשִׁיבִים, Hophal מוּשָׁבִים); derive their
+                    // mp constructs too — בָּאֵי, מְשִׁיבֵי, מוּשָׁבֵי.
+                    let hollow_alts: Vec<String> = if root.has(Gizra::Hollow) {
+                        match binyan {
+                            Binyan::Qal => hollow_participle_twins(root, pgn)
+                                .into_iter()
+                                .chain(hollow_qal_participle_variant(&hebrew::render(&seq)))
+                                .collect(),
+                            Binyan::Hiphil if form == Form::ParticipleActive => {
+                                hollow_hiphil_participle_variant(root, pgn)
+                                    .into_iter()
+                                    .collect()
+                            }
+                            Binyan::Hophal if form == Form::ParticipleActive => {
+                                hollow_hophal_participle_variant(root, pgn)
+                                    .into_iter()
+                                    .collect()
+                            }
+                            _ => Vec::new(),
+                        }
+                    } else {
+                        Vec::new()
+                    };
+                    for alt in hollow_alts {
+                        let aseq = hebrew::parse_pointed(&alt);
+                        if let Some(cseq) = participle_mp_construct(&aseq) {
+                            forms.push(VerbForm {
+                                binyan,
+                                form,
+                                pgn,
+                                text: hebrew::render(&cseq),
+                                attested: c_attested,
+                                object_suffix: None,
+                            });
                         }
                     }
                 }
