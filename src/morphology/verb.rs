@@ -10470,7 +10470,12 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
         return out;
     }
     if (matches!(last.vowel, Some(v) if v != Vowel::Sheva) && !guttural_a)
-        || (matches!(last.letter, letter::HE | letter::ALEF) && !plene_i)
+        // A III-He final is always a mater (reject); a final aleph is a host
+        // only when the long-î (plene_i) or hollow long-mater shape carries it —
+        // the hollow III-aleph בוא (yāḇôʾ יָבוֹא) joins the suffix on its aleph,
+        // yᵊḇôʾennû יְבוֹאֶנּוּ, tᵊḇôʾēhû תְּבוֹאֵהוּ.
+        || (last.letter == letter::HE && !plene_i)
+        || (last.letter == letter::ALEF && !plene_i && !long_mater)
         || matches!(last.letter, letter::VAV | letter::YOD)
     {
         return Vec::new();
@@ -13390,6 +13395,21 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn hollow_lamed_aleph_imperfect_object_suffix() {
+        // Hollow III-aleph בוא imperfect joins the suffix on its quiescent
+        // aleph, the prefix reducing to a sheva — yᵊḇôʾennû יְבוֹאֶנּוּ.
+        let p = generate_paradigm(&Root::parse("בוא").unwrap());
+        let three_ms = Pgn::new(Person::Third, Gender::Masculine, Number::Singular);
+        assert!(p.forms.iter().any(|f| f.binyan == Binyan::Qal
+            && f.form == Form::Imperfect
+            && f.pgn == three_ms
+            && f.object_suffix.is_some()
+            // prefix yod (05D9) carries a sheva (05B0): yᵊḇôʾ-.
+            && f.text.starts_with("\u{05D9}\u{05B0}")
+            && f.text.contains('\u{05D0}'))); // aleph host present
     }
 
     #[test]
