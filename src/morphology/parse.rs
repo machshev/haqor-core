@@ -215,14 +215,34 @@ fn is_unpointed(seq: &[Cons]) -> bool {
 /// with final-form normalisation already applied by [`hebrew::parse_pointed`].
 /// Used only to match a fully-unpointed ketiv surface against the vocalised
 /// candidates: their niqqud is stripped to the same bare-consonant sequence.
-/// Matres are kept (they are consonants in the skeleton), so this matches only
-/// when the ketiv and the generated form share an orthography; a defective vs
-/// plene divergence (עשיתי vs the generated עשית) simply won't match, which is
-/// the conservative outcome.
+/// Matres are kept (they are consonants in the skeleton); [`fold_matres`]
+/// removes them when a defective/plene divergence would otherwise block the
+/// match.
 fn skeleton(form: &str) -> String {
     hebrew::parse_pointed(form)
         .iter()
         .map(|c| c.letter)
+        .collect()
+}
+
+/// Drop the *matres lectionis* — the non-initial vav and yod that spell a long
+/// vowel rather than a consonant — from a consonant skeleton. The ketiv often
+/// writes a vowel plene (אכתוב) where the generator spells it defective
+/// (אֶכְתֹּב, skeleton אכתב), or vice versa; folding both skeletons to their
+/// vowel-letter-free core lets the two align. Applied symmetrically to surface
+/// and candidate, it can only *add* skeleton matches, never remove one — so it
+/// never costs recall, only the precision of a surface that is already a bare
+/// unpointed ketiv (a degenerate, multiply-ambiguous case regardless).
+///
+/// The first letter is always kept: a word-initial vav/yod is the conjunction
+/// proclitic or a pe-vav/pe-yod radical, never a vowel letter. Aleph and he are
+/// left in place — they double as quiescent radicals far more often, and the
+/// observed divergences are all vav/yod plene.
+fn fold_matres(skel: &str) -> String {
+    skel.chars()
+        .enumerate()
+        .filter(|&(i, c)| i == 0 || (c != letter::VAV && c != letter::YOD))
+        .map(|(_, c)| c)
         .collect()
 }
 
@@ -524,7 +544,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         let targets = peeling_targets(&seq, strip, remainder);
         let target_keys: Vec<String> = targets.iter().map(|t| canonical_key(t)).collect();
         let target_skels: Vec<String> = if unpointed {
-            targets.iter().map(|t| skeleton(t)).collect()
+            targets.iter().map(|t| fold_matres(&skeleton(t))).collect()
         } else {
             Vec::new()
         };
@@ -535,7 +555,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
             for vf in &paradigm.forms {
                 let hit = if unpointed {
-                    target_skels.contains(&skeleton(&vf.text))
+                    target_skels.contains(&fold_matres(&skeleton(&vf.text)))
                 } else {
                     forms_match(&vf.text, &targets, &target_keys)
                 };
@@ -581,14 +601,14 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
     {
         let targets = [hebrew::render(&seq)];
         let target_keys = [canonical_key(&targets[0])];
-        let target_skel = skeleton(&targets[0]);
+        let target_skel = fold_matres(&skeleton(&targets[0]));
         for letters in candidate_roots(&seq[1..], roots) {
             let paradigm = memo
                 .entry(letters)
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
             for vf in &paradigm.forms {
                 let hit = if unpointed {
-                    skeleton(&vf.text) == target_skel
+                    fold_matres(&skeleton(&vf.text)) == target_skel
                 } else {
                     forms_match(&vf.text, &targets, &target_keys)
                 };
@@ -1120,6 +1140,21 @@ mod tests {
                 && m.form == Form::Wayyiqtol
                 && m.pgn.label() == "3ms"
                 && m.vav_consecutive
+        }));
+    }
+
+    #[test]
+    fn parses_unpointed_ketiv_plene_imperfect() {
+        // אכתוב — an unpointed ketiv that spells the holam plene with a vav,
+        // where the generator writes the Qal imperfect 1cs defective (אֶכְתֹּב,
+        // skeleton אכתב). Folding the matres off both skeletons lets ketiv
+        // plene align with generated defective.
+        let matches = parse_word("אכתוב");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "כתב"
+                && m.binyan == Binyan::Qal
+                && m.form == Form::Imperfect
+                && m.pgn.label() == "1cs"
         }));
     }
 
