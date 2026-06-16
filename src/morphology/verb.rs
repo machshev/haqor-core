@@ -10441,6 +10441,34 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
         emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]);
         return out;
     }
+    // Derived-stem III-aleph imperfect (Piel yᵉḥaṭṭēʾ יְחַטֵּא, yᵉmallēʾ, yᵉnaśśēʾ):
+    // the tsere/segol theme reduces to a sheva on the (still-doubled) C2 and the
+    // quiescent aleph carries the link vowel under the suffix — wayḥaṭṭᵊʾēhû
+    // וַיְחַטְּאֵהוּ, waynaśśᵊʾēhû וַיְנַשְּׂאֵהוּ.
+    let lamed_aleph_derived =
+        last.letter == letter::ALEF && last.vowel.is_none() && matches!(seq[n - 2].vowel, Some(Tsere | Segol));
+    if lamed_aleph_derived {
+        let mut out = Vec::new();
+        let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
+            let mut s = seq.clone();
+            s[n - 2].vowel = Some(Sheva); // theme reduces, C2 keeps its dagesh
+            s[n - 1].vowel = Some(link); // quiescent aleph takes the link
+            s.extend_from_slice(tail);
+            out.push((obj, hebrew::render(&s)));
+        };
+        emit(OBJ_1CS, Tsere, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]);
+        emit(
+            OBJ_1CS,
+            Segol,
+            &[Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq), Cons::new(letter::YOD)],
+        );
+        emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]);
+        emit(OBJ_3MS, Segol, &[Cons::new(letter::NUN).with_dagesh(), oshureq()]);
+        emit(OBJ_3FS, Segol, &[ocv(letter::HE, Qamats)]);
+        emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]);
+        emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]);
+        return out;
+    }
     if (matches!(last.vowel, Some(v) if v != Vowel::Sheva) && !guttural_a)
         || (matches!(last.letter, letter::HE | letter::ALEF) && !plene_i)
         || matches!(last.letter, letter::VAV | letter::YOD)
@@ -13362,6 +13390,20 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn derived_lamed_aleph_imperfect_object_suffix() {
+        // Piel III-aleph imperfect: the tsere theme reduces and the quiescent
+        // aleph takes the link — yᵉḥaṭṭᵊʾēhû יְחַטְּאֵהוּ (חטא + 3ms).
+        let p = generate_paradigm(&Root::parse("חטא").unwrap());
+        let three_ms = Pgn::new(Person::Third, Gender::Masculine, Number::Singular);
+        assert!(p.forms.iter().any(|f| f.binyan == Binyan::Piel
+            && f.form == Form::Imperfect
+            && f.pgn == three_ms
+            && f.object_suffix == Some(three_ms)
+            // quiescent aleph (05D0) carries the tsere link (05B5): ...אֵהוּ.
+            && f.text.contains("\u{05D0}\u{05B5}")));
     }
 
     #[test]
