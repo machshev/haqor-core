@@ -6392,6 +6392,14 @@ fn hollow_hiphil_otav_perfect(root: &Root, pgn: Pgn) -> Vec<String> {
             out.push(hebrew::render(&merged));
         }
     }
+    // The 2ms perfect also takes the paragogic he (-tā → -tāh): hărîmôṯâ
+    // הֲרִימוֹתָה, hēmattâ הֵמַתָּה. Mirror every 2ms form with a trailing he.
+    if (pgn.person, pgn.gender, pgn.number)
+        == (Some(Person::Second), Some(Gender::Masculine), Some(Number::Singular))
+    {
+        let with_he: Vec<String> = out.iter().map(|s| format!("{s}\u{05D4}")).collect();
+        out.extend(with_he);
+    }
     out
 }
 
