@@ -9609,6 +9609,20 @@ fn participle_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
             out.push((obj, hebrew::render(&s)));
         }
     }
+    // Quiescent III-aleph before a heavy (sheva-link) suffix: the aleph can't
+    // bear the silent sheva, so it opens on a hataf-patah and the theme
+    // lengthens to patah — śōnaʾăḵā שֹׂנַאֲךָ, śōnaʾăḵem.
+    if quiescent_aleph {
+        for (obj, link, tail) in nominal_suffix_tails() {
+            if link == Some(Vowel::Sheva) {
+                let mut s = seq.clone();
+                s[n - 2].vowel = Some(Vowel::Patah);
+                s[n - 1].vowel = Some(Vowel::HatafPatah);
+                s.extend(tail);
+                out.push((obj, hebrew::render(&s)));
+            }
+        }
+    }
     out
 }
 
