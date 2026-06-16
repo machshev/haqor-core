@@ -1497,6 +1497,32 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         })
                     })
                     .flatten();
+                // Unreduced -â fs participle twin for the derived stems: beside
+                // the propretonically-reduced miṯnakkᵊrâ מִתְנַכְּרָה the thematic
+                // tsere is often retained — miṯnakkērâ מִתְנַכֵּרָה. Build the ms
+                // base and append -â (C3 qamats + he) without reducing. Strong
+                // roots only (a weak ms base would be mis-shaped).
+                let ptcp_fs_unreduced_a = (matches!(
+                    form,
+                    Form::ParticipleActive | Form::ParticiplePassive
+                ) && pgn == Pgn::gn(Gender::Feminine, Number::Singular)
+                    && binyan != Binyan::Qal)
+                .then(|| {
+                    // The -â form ends [...C2-sheva][C3-qamats][he]; the C2 sheva
+                    // is the propretonically reduced thematic tsere — restore it.
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let n = seq.len();
+                    (n >= 3
+                        && seq[n - 1].letter == letter::HE
+                        && seq[n - 1].vowel.is_none()
+                        && seq[n - 2].vowel == Some(Vowel::Qamats)
+                        && seq[n - 3].vowel == Some(Vowel::Sheva))
+                    .then(|| {
+                        seq[n - 3].vowel = Some(Vowel::Tsere);
+                        hebrew::render(&seq)
+                    })
+                })
+                .flatten();
                 // III-He participle fs construct: the -â feminine (qamats-he,
                 // maʕălâ מַעֲלָה, ʕōśâ עֹשָׂה) bound form replaces the he with a
                 // tav and shortens the qamats to patah — maʕălaṯ מַעֲלַת,
@@ -2904,6 +2930,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     iguttural_hophal_loud,
                     iguttural_hophal_loud_tsere,
                     niphal_iguttural_he_tsere,
+                    ptcp_fs_unreduced_a,
                     piel_perf_patah,
                     piel_perf_hiriq,
                     hiphil_perf_segol,
