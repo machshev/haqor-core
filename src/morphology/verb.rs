@@ -6378,6 +6378,19 @@ fn hollow_hiphil_otav_perfect(root: &Root, pgn: Pgn) -> Vec<String> {
         }
         seq.extend(tail);
         out.push(hebrew::render(&seq));
+        // When C3 is the afformative's own consonant (a tav-root like מות
+        // before the -tî/-tā/-tem tav afformatives), the two coalesce into a
+        // single dageshed radical carrying the afformative vowel — hēmattî
+        // הֵמַתִּי, hēmattā הֵמַתָּה — rather than the doubled-spelling הֵמַתְתִּי.
+        if suffix.first().is_some_and(|f| f.letter == c3) {
+            let mut merged = vec![
+                Cons::new(letter::HE).with_vowel(he_v),
+                Cons::new(c1).with_vowel(Patah),
+                Cons::new(c3).with_dagesh().with_vowel(suffix[0].vowel.unwrap_or(Hiriq)),
+            ];
+            merged.extend(suffix.iter().skip(1).cloned());
+            out.push(hebrew::render(&merged));
+        }
     }
     out
 }
