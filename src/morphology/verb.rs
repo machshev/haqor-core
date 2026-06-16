@@ -1673,6 +1673,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     ))
                     .then(|| lamed_he_perfect_hiriq_variant(&text))
                     .flatten();
+                // Paragogic-he on the III-He Hiphil hiriq perfect 2ms (hikkîṯā →
+                // hikkîṯâ הִכִּיתָה): the bulk paragogic twin only sees the primary
+                // tsere text (hikkêṯā→hikkêṯâ), so add it to the hiriq variant.
+                let lamed_he_perf_hiriq_paragogic = (pgn
+                    == Pgn::new(Person::Second, Gender::Masculine, Number::Singular))
+                .then_some(())
+                .and(lamed_he_perf_hiriq.as_deref())
+                .map(|t| format!("{t}\u{05D4}"));
                 // III-He Hophal consonantal-suffix perfect tsere twin: the
                 // Hophal builds the linking vowel as hiriq-yod (hoglîṯî
                 // הׇגְלִיתִי) but the tsere-yod spelling is attested too
@@ -2964,6 +2972,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_yod_perf_hiriq,
                     lamed_he_perf_tsere,
                     lamed_he_perf_hiriq,
+                    lamed_he_perf_hiriq_paragogic,
                     lamed_he_hophal_perf_tsere,
                     iguttural_hophal_loud,
                     iguttural_hophal_loud_tsere,
