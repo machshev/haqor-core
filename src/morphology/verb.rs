@@ -2733,6 +2733,16 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                                 v.extend(perfect_subject_object_suffixes(&base, pgn, root, binyan));
                             }
                         }
+                        // The III-He Hiphil î-grade host (hikkîṯî הִכִּיתִי beside
+                        // hikkêṯî) and the pe-guttural patah-grade host
+                        // (haʔăḇaḏtî הַאֲבַדְתִּי beside heʔĕḇaḏtî) carry the same
+                        // afformative suffixes — hikkîṯîw הִכִּיתִיו, haʔăḇaḏtîḵā.
+                        if let Some(base) = lamed_he_perf_hiriq.as_ref() {
+                            v.extend(perfect_subject_object_suffixes(base, pgn, root, binyan));
+                        }
+                        for base in &hiphil_perf_patah_he {
+                            v.extend(perfect_subject_object_suffixes(base, pgn, root, binyan));
+                        }
                         // The 3cp -û is a vocalic host in any binyan: the suffix
                         // joins the subject vowel directly on the base surface —
                         // rāʾûḵā רָאוּךָ (III-he), ḥērᵊp̄ûnî חֵרְפוּנִי (Piel), and the
@@ -9565,8 +9575,17 @@ fn lamed_he_imperfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
 /// Mutates `seq[0]`'s vowel in place. (Strong/most weak perfects carry the C1
 /// vowel on `seq[0]`; the few prefixed shapes — none in the perfect — are not a
 /// concern here.)
-fn reduce_perfect_c1(seq: &mut [Cons]) {
+fn reduce_perfect_c1(seq: &mut [Cons], binyan: Binyan) {
     use Vowel::*;
+    // The propretonic reduction acts on the Qal first *radical* standing in an
+    // open syllable (qāṭaltî → qᵊṭal-, pe-guttural ʕāmaḏtî → ʕămaḏ-). In the
+    // derived stems the first letter is a prefix (the Hiphil/Niphal/Hithpael
+    // he/nun, the Piel doubled radical) whose vowel does not reduce — leaving it
+    // alone keeps the patah-grade Hiphil host intact (haʔăḇaḏtî → haʔăḇaḏtîḵā,
+    // not hăʔăḇaḏtîḵā).
+    if binyan != Binyan::Qal {
+        return;
+    }
     if let Some(first) = seq.first_mut()
         && matches!(first.vowel, Some(Qamats | Patah))
     {
@@ -9618,7 +9637,7 @@ fn perfect_subject_object_suffixes(
             return out;
         }
         let mut base = seq.clone();
-        reduce_perfect_c1(&mut base);
+        reduce_perfect_c1(&mut base, binyan);
         let mut push = |obj: Pgn, tail: &[Cons]| {
             let mut s = base.clone();
             s.extend_from_slice(tail);
@@ -9639,7 +9658,7 @@ fn perfect_subject_object_suffixes(
             return out;
         }
         let mut base = seq.clone();
-        reduce_perfect_c1(&mut base);
+        reduce_perfect_c1(&mut base, binyan);
         // The -tā theme appears both shortened to patah (gᵊmaltanî) and
         // retained as qamats (ʾăhaḇtānû) before a suffix; emit both.
         let mut push = |obj: Pgn, tail: &[Cons]| {
@@ -13268,6 +13287,34 @@ mod tests {
         assert!(any_text(&p, "יוֹדֶה"));
         assert!(any_text(&p, "יוֹדוּ"));
         assert!(any_text(&p, "הוֹדוּ"));
+    }
+
+    #[test]
+    fn hiphil_perfect_1cs_suffix_host_grades() {
+        // The III-He Hiphil perfect î-grade host (הִכִּיתִי) and the pe-guttural
+        // patah-grade host (הַאֲבַדְתִּי) carry object suffixes beside the primary
+        // tsere/segol grades: hikkîṯîḵ הִכִּיתִיךְ, haʔăḇaḏtîḵā הַאֲבַדְתִּיךָ.
+        let one_cs = Pgn::new(Person::First, Gender::Common, Number::Singular);
+        let two_fs = Pgn::new(Person::Second, Gender::Feminine, Number::Singular);
+        let two_ms = Pgn::new(Person::Second, Gender::Masculine, Number::Singular);
+        // III-He î-grade host: hikkîṯîḵ הִכִּיתִיךְ (root has hiriq C2, not the
+        // primary tsere הִכֵּיתִיךְ).
+        let nkh = generate_paradigm(&Root::parse("נכה").unwrap());
+        assert!(nkh.forms.iter().any(|f| f.binyan == Binyan::Hiphil
+            && f.form == Form::Perfect
+            && f.pgn == one_cs
+            && f.object_suffix == Some(two_fs)
+            && f.text.contains('\u{05B4}') // hiriq present (î-grade)
+            && !f.text.contains('\u{05B5}'))); // no tsere (ê-grade)
+        // pe-guttural patah-grade host: haʔăḇaḏtîḵā הַאֲבַדְתִּיךָ (prefix he keeps
+        // patah, not reduced to hataf-segol).
+        let abd = generate_paradigm(&Root::parse("אבד").unwrap());
+        assert!(abd.forms.iter().any(|f| f.binyan == Binyan::Hiphil
+            && f.form == Form::Perfect
+            && f.pgn == one_cs
+            && f.object_suffix == Some(two_ms)
+            // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
+            && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
     }
 
     #[test]
