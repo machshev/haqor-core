@@ -1189,6 +1189,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular))
                 .then(|| perfect_stative_tsere_variant(&text))
                 .flatten();
+                // ē-stative Qal perfect 3cp twin: the stative theme tsere
+                // normally reduces to a vocal sheva before the -û afformative
+                // (yāʿᵊp̄û יָעֲפוּ), but it can be kept under stress/pause —
+                // yāʿēp̄û יָעֵפוּ. Additive: matches only the retained spelling.
+                let qal_stative_perfect_plural = (binyan == Binyan::Qal
+                    && form == Form::Perfect
+                    && pgn == Pgn::new(Person::Third, Gender::Common, Number::Plural))
+                .then(|| perfect_stative_tsere_plural_variant(&text))
+                .flatten();
                 // Tsere-kept twin of the Hiphil short wayyiqtol: nesiga is not
                 // universal — וַיַּגֵּד beside וַיַּגֶּד, וַיַּקְרֵב, וַיַּשְׁלֵךְ.
                 let hiphil_wayyiqtol_tsere = (binyan == Binyan::Hiphil
@@ -2952,6 +2961,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_aleph_patah,
                     pe_aleph_pausal,
                     qal_stative_perfect,
+                    qal_stative_perfect_plural,
                     qal_stative_participle,
                     hollow_perfect_holam,
                     hollow_wayyiqtol_patah,
@@ -7934,6 +7944,31 @@ fn perfect_stative_tsere_variant(text: &str) -> Option<String> {
         return None;
     }
     seq[n - 2].vowel = Some(Vowel::Tsere);
+    Some(hebrew::render(&seq))
+}
+
+/// Tsere-retained twin of the ē-stative Qal perfect 3cp. The builder reduces
+/// the stative theme tsere to a vocal sheva (or guttural hataf-patah) before
+/// the -û afformative — yāʿᵊp̄û יָעֲפוּ; the retained-tsere spelling yāʿēp̄û
+/// יָעֵפוּ surfaces under stress. The 3cp ends in a bare C3 followed by the
+/// shureq vav, so the theme consonant is the third unit from the end.
+fn perfect_stative_tsere_plural_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    // 3cp shape: … C2(reduced) C3(bare) VAV(shureq).
+    if n < 4
+        || seq[n - 1].letter != letter::VAV
+        || !seq[n - 1].dagesh
+        || seq[n - 1].vowel.is_some()
+        || seq[n - 2].vowel.is_some()
+    {
+        return None;
+    }
+    // The theme consonant must carry a reducible vowel to "restore" to tsere.
+    if !matches!(seq[n - 3].vowel, Some(Vowel::Sheva | Vowel::HatafPatah)) {
+        return None;
+    }
+    seq[n - 3].vowel = Some(Vowel::Tsere);
     Some(hebrew::render(&seq))
 }
 
