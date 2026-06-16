@@ -116,6 +116,12 @@ enum DbCommands {
         /// in-repo data/lexicon.db.
         #[arg(short, long, default_value = "data/lexicon.db")]
         lexicon_db: Option<PathBuf>,
+        /// Skip the lexicon prefilter entirely (store the unfiltered parser
+        /// output). Use with a throwaway `-o` path to build an eval DB whose
+        /// `parse-eval --from-db` score matches the unfiltered in-memory eval
+        /// (minus only the DB-join alignment floor) — not for the shipped DB.
+        #[arg(long)]
+        no_prefilter: bool,
         /// Wipe and rebuild the whole database. Without this, an existing
         /// database is updated incrementally: only the still-unresolved
         /// (`review_missing`) surfaces are re-analysed.
@@ -265,16 +271,17 @@ fn main() -> Result<()> {
                 bible_db,
                 output,
                 lexicon_db,
+                no_prefilter,
                 force,
                 limit,
             } => {
-                let (surfaces, occurrences, parsed) = haqor_core::generate::generate_hebrew(
-                    &bible_db,
-                    &output,
-                    lexicon_db.as_deref(),
-                    force,
-                    limit,
-                )?;
+                let lexicon = if no_prefilter {
+                    None
+                } else {
+                    lexicon_db.as_deref()
+                };
+                let (surfaces, occurrences, parsed) =
+                    haqor_core::generate::generate_hebrew(&bible_db, &output, lexicon, force, limit)?;
                 println!(
                     "Wrote {} surfaces ({} parsed), {} occurrences to {}",
                     surfaces,
