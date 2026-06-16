@@ -1399,6 +1399,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular))
                 .then(|| lamed_he_imperative_apocope_variant(&text))
                 .flatten();
+                // Pausal twin of that apocopated imperative: at a major pause the
+                // final closed-syllable patah lengthens to qamats — has הַס → hās
+                // הָס (הסה). The bulk pausal pass only sees the base imperative
+                // (הַסֵּה, which it rejects), so derive it from the apocope here.
+                let lamed_he_imp_apoc_pausal =
+                    lamed_he_imp_apoc.as_deref().and_then(pausal_qamats_variant);
                 // III-He Hiphil apocopated segholate imperative 2ms — herep̄
                 // הֶרֶף (רפה), hereḇ הֶרֶב (רבה) beside the full הַרְפֵּה.
                 let hiphil_imp_segholate = (binyan == Binyan::Hiphil
@@ -2792,6 +2798,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_wayyiqtol_patah,
                     hollow_impf_fp_plene,
                     lamed_he_imp_apoc,
+                    lamed_he_imp_apoc_pausal,
                     hiphil_imp_segholate,
                     hiphil_wayyiqtol_tsere,
                     jussive_long,
@@ -10370,7 +10377,11 @@ fn inf_construct_object_suffixes(
 fn qal_imperative_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
     use Vowel::*;
     let (c1, c2, c3) = (root.pe(), root.ayin(), root.lamed());
-    if matches!(c1, letter::VAV | letter::YOD | letter::NUN) {
+    // A weak C1 (pe-vav/yod/nun) reshapes the bare imperative, so the strong
+    // C1-sheva stem below is wrong for it — except a III-He pe-nun keeps its nun
+    // in the imperative (nᵊḥê נְחֵה, not the assimilated imperfect form), so the
+    // III-He branch's C1-sheva stem is correct: nᵊḥēnî נְחֵנִי. Exempt III-He.
+    if matches!(c1, letter::VAV | letter::YOD | letter::NUN) && c3 != letter::HE {
         return Vec::new();
     }
     // III-He imperative + suffix: the etymological he elides and the suffix
