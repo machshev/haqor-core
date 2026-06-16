@@ -1190,6 +1190,40 @@ mod tests {
     }
 
     #[test]
+    fn parses_guttural_fs_participle_aat() {
+        // נִשְׁמַעַת — Niphal fs participle of שמע; the final guttural opens the
+        // segolate to the ־ַעַת ending.
+        assert!(has_match(
+            &parse_word("נִשְׁמַעַת"),
+            "שמע",
+            Binyan::Niphal,
+            Form::ParticipleActive,
+            "fs"
+        ));
+        // מִתְלַקַּחַת — the same for the Hithpael of לקח.
+        assert!(has_match(
+            &parse_word("מִתְלַקַּחַת"),
+            "לקח",
+            Binyan::Hithpael,
+            Form::ParticipleActive,
+            "fs"
+        ));
+    }
+
+    #[test]
+    fn parses_pe_guttural_niphal_fs_participle() {
+        // נֶהְפָּכֶת — Niphal fs participle of הפך: the pe-guttural closes with a
+        // silent sheva (not a hataf), and the segolate keeps qamats on C2.
+        assert!(has_match(
+            &parse_word("נֶהְפָּכֶת"),
+            "הפכ",
+            Binyan::Niphal,
+            Form::ParticipleActive,
+            "fs"
+        ));
+    }
+
+    #[test]
     fn parses_qamats_grade_segolate_fs_participle() {
         // עֹמָדֶת — Qal fs active participle of עמד in the qamats grade
         // (qōṭāleṯ), beside the segol-grade עֹמֶדֶת the builder makes.

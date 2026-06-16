@@ -2053,65 +2053,6 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 } else {
                     Default::default()
                 };
-                // Qamats-grade twin of the segolate ־ֶת feminine participle:
-                // beside the segol-grade qōṭelet the builder makes (ʿōmedeṯ
-                // עֹמֶדֶת, niqṭeleṯ נִשְׁבֶּרֶת, mᵊquṭṭeleṯ מְסֻתֶּרֶת) some forms
-                // keep a long qamats on C2 — ʿōmādeṯ עֹמָדֶת, yōšāḇeṯ יֹשָׁבֶת,
-                // ʾōḵāleṯ אֹכָלֶת, niqṭāleṯ נִשְׁבָּרֶת, mᵊquṭṭāleṯ מְסֻתָּרֶת. The
-                // C3-segol filter skips the guttural ־ַחַת ending (which has no
-                // segol there), leaving that to its own pathway. Additive.
-                let fs_ptcp_qamats_grade: Vec<String> = if matches!(
-                    form,
-                    Form::ParticipleActive | Form::ParticiplePassive
-                ) && pgn == Pgn::gn(Gender::Feminine, Number::Singular)
-                {
-                    let qamats_grade = |t: &str| -> Option<String> {
-                        let mut seq = hebrew::parse_pointed(t);
-                        let n = seq.len();
-                        (n >= 3
-                            && seq[n - 1].letter == letter::TAV
-                            && seq[n - 1].vowel.is_none()
-                            && seq[n - 2].vowel == Some(Vowel::Segol)
-                            && seq[n - 3].vowel == Some(Vowel::Segol))
-                        .then(|| {
-                            seq[n - 3].vowel = Some(Vowel::Qamats);
-                            hebrew::render(&seq)
-                        })
-                    };
-                    std::iter::once(text.as_str())
-                        .chain(derived_fs_ptcp_et.iter().map(String::as_str))
-                        .filter_map(qamats_grade)
-                        .collect()
-                } else {
-                    Default::default()
-                };
-                // Construct ־ַת of the Qal passive participle fs: the absolute
-                // qᵊṭûlâ (אֲהוּבָה) bound to a following noun shortens its final
-                // -â to -aṯ — ʾăhûḇaṯ אֲהוּבַת, bᵊʿûlaṯ בְּעוּלַת, ḥăḡûraṯ חֲגוּרַת.
-                // Emitted plene; the defective qubuts spelling (אֲהֻבַת) matches
-                // via canonical_key's shureq collapse. Additive.
-                let qal_passive_ptcp_construct: Vec<String> = if binyan == Binyan::Qal
-                    && form == Form::ParticiplePassive
-                    && pgn == Pgn::gn(Gender::Feminine, Number::Singular)
-                {
-                    let mut seq = hebrew::parse_pointed(&text);
-                    let n = seq.len();
-                    (n >= 2
-                        && seq[n - 1].letter == letter::HE
-                        && seq[n - 1].vowel.is_none()
-                        && seq[n - 2].vowel == Some(Vowel::Qamats))
-                    .then(|| {
-                        seq.pop();
-                        let n = seq.len();
-                        seq[n - 1].vowel = Some(Vowel::Patah);
-                        seq.push(Cons::new(letter::TAV));
-                        hebrew::render(&seq)
-                    })
-                    .into_iter()
-                    .collect()
-                } else {
-                    Default::default()
-                };
                 // III-aleph contracted fs participle twin: the aleph quiesces
                 // and the segolate pair contracts to tsere — yōṣēṯ יֹצֵאת
                 // beside יֹצֶאֶת.
@@ -3138,8 +3079,6 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(geminate_hiphil_ptcp)
                     .chain(geminate_niphal_ptcp)
                     .chain(derived_fs_ptcp_et)
-                    .chain(fs_ptcp_qamats_grade)
-                    .chain(qal_passive_ptcp_construct)
                     .chain(hiphil_perf_patah_he)
                     .chain(hollow_niphal_participle)
                     .chain(niphal_1cs_hiriq)
@@ -3486,10 +3425,177 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(furtive);
 
+    // Feminine-participle twins, run as a post-pass so they see *every*
+    // generated -â/segolate fs participle — the strong primary plus the hollow,
+    // pe-guttural and derived-stem variants other twins contribute. Each is a
+    // single extra form per source, additive and monotonic-safe for recall:
+    //   * qamats-grade segolate (qōṭāleṯ): עֹמָדֶת beside עֹמֶדֶת, נִשְׁבָּרֶת,
+    //     מְסֻתָּרֶת.
+    //   * construct ־ַת: the -â shortens — אֲהוּבַת, מַחְכִּימַת, מְשִׁיבַת.
+    //   * guttural-C3 ־ַחַת/־ַעַת: a final guttural opens the segolate to patah —
+    //     נִשְׁמַעַת, מְצֹרַעַת, מִתְלַקַּחַת, נֹכָחַת.
+    let is_fs_ptcp = |f: &VerbForm| {
+        matches!(
+            f.form,
+            Form::ParticipleActive | Form::ParticiplePassive
+        ) && f.pgn == Pgn::gn(Gender::Feminine, Number::Singular)
+            && f.object_suffix.is_none()
+    };
+    // First derive the segolate ־ֶת from *every* generated -â fs participle (the
+    // per-cell `derived_fs_ptcp_et` only sees the strong primary, so the
+    // silent-sheva pe-guttural Niphal -â נֶהְפָּכָה never reached it). Extend
+    // before the grade twins so they see the new segolates.
+    let segolates: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| is_fs_ptcp(f))
+        .filter_map(|f| {
+            fs_participle_segolate_et(&f.text, root, f.binyan).map(|t| VerbForm {
+                text: t,
+                ..f.clone()
+            })
+        })
+        .collect();
+    forms.extend(segolates);
+    let ptcp_twins: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| is_fs_ptcp(f))
+        .flat_map(|f| {
+            fs_participle_qamats_grade(&f.text)
+                .into_iter()
+                .chain(fs_participle_construct_at(&f.text))
+                .chain(fs_participle_guttural_at(&f.text, root.lamed()))
+                .map(|t| VerbForm {
+                    text: t,
+                    ..f.clone()
+                })
+        })
+        .collect();
+    forms.extend(ptcp_twins);
+
     Paradigm {
         root: root.clone(),
         forms,
     }
+}
+
+/// Segolate ־ֶת feminine participle derived from the -â absolute, for the
+/// derived stems (mᵊḏabbereṯ מְדַבֶּרֶת, niqṭeleṯ נֶהְפֶּכֶת, the Hiphil maqṭeleṯ
+/// with its î dropping). Run over every generated -â form so it reaches the
+/// hollow, pe-guttural and Hophal-qubuts variants the per-cell twin misses.
+/// Qal keeps the segolate the main builder already makes, and the hollow /
+/// geminate / III-he/aleph classes their own pathways.
+fn fs_participle_segolate_et(text: &str, root: &Root, binyan: Binyan) -> Option<String> {
+    if binyan == Binyan::Qal
+        || root.has(Gizra::Hollow)
+        || matches!(root.lamed(), letter::HE | letter::ALEF)
+    {
+        return None;
+    }
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 3 || seq[n - 1].letter != letter::HE || seq[n - 2].vowel != Some(Vowel::Qamats) {
+        return None;
+    }
+    seq.pop();
+    let n = seq.len();
+    seq[n - 1].vowel = Some(Vowel::Segol);
+    if n >= 3
+        && seq[n - 2].letter == letter::YOD
+        && seq[n - 2].vowel.is_none()
+        && seq[n - 3].vowel == Some(Vowel::Hiriq)
+    {
+        // Hiphil: the î mater drops and its hiriq lowers.
+        seq.remove(n - 2);
+        seq[n - 3].vowel = Some(Vowel::Segol);
+    } else if n >= 2
+        && matches!(
+            seq[n - 2].vowel,
+            // A guttural C2 carries a hataf in the -â (mᵊraḥăp̄â מְרַחֲפָה); it
+            // lowers to the same plain segol — mᵊraḥep̄eṯ מְרַחֶפֶת.
+            Some(Vowel::Sheva)
+                | Some(Vowel::Qamats)
+                | Some(Vowel::Hiriq)
+                | Some(Vowel::HatafPatah)
+                | Some(Vowel::HatafSegol)
+                | Some(Vowel::HatafQamats)
+        )
+    {
+        seq[n - 2].vowel = Some(Vowel::Segol);
+    } else {
+        return None;
+    }
+    seq.push(Cons::new(letter::TAV));
+    Some(hebrew::render(&seq))
+}
+
+/// Qamats-grade twin of the segolate ־ֶת feminine participle: beside the
+/// segol-grade qōṭelet the builder makes (עֹמֶדֶת, נִשְׁבֶּרֶת, מְסֻתֶּרֶת) some
+/// forms keep a long qamats on C2 — עֹמָדֶת, נִשְׁבָּרֶת, מְסֻתָּרֶת. The C3-segol
+/// guard skips the guttural ־ַחַת ending (handled by [`fs_participle_guttural_at`]).
+fn fs_participle_qamats_grade(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    (n >= 3
+        && seq[n - 1].letter == letter::TAV
+        && seq[n - 1].vowel.is_none()
+        && seq[n - 2].vowel == Some(Vowel::Segol)
+        && seq[n - 3].vowel == Some(Vowel::Segol))
+    .then(|| {
+        seq[n - 3].vowel = Some(Vowel::Qamats);
+        hebrew::render(&seq)
+    })
+}
+
+/// Construct ־ַת of a feminine participle: the absolute -â form bound to a
+/// following noun shortens its final -â to -aṯ — the Qal passive qᵊṭûlâ →
+/// qᵊṭûlaṯ (אֲהוּבָה → אֲהוּבַת; the defective qubuts spelling אֲהֻבַת matches via
+/// canonical_key's shureq collapse) and the derived active maqṭîlâ → maqṭîlaṯ
+/// (מַחְכִּימָה → מַחְכִּימַת, מְשִׁיבָה → מְשִׁיבַת).
+fn fs_participle_construct_at(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    (n >= 2
+        && seq[n - 1].letter == letter::HE
+        && seq[n - 1].vowel.is_none()
+        && seq[n - 2].vowel == Some(Vowel::Qamats))
+    .then(|| {
+        seq.pop();
+        let n = seq.len();
+        seq[n - 1].vowel = Some(Vowel::Patah);
+        seq.push(Cons::new(letter::TAV));
+        hebrew::render(&seq)
+    })
+}
+
+/// Guttural-C3 ־ַחַת/־ַעַת feminine participle: a final guttural takes neither
+/// the segolate's helping segol nor a closing cluster, so the helper opens to
+/// patah and the stem vowel follows — nišmaʿaṯ נִשְׁמַעַת, mᵊṣōraʿaṯ מְצֹרַעַת,
+/// mitlaqqaḥaṯ מִתְלַקַּחַת — beside a qamats-grade nōḵāḥaṯ נֹכָחַת. Built off the
+/// segol-grade segolate (C3 guttural carrying segol): C3→patah, C2→{patah,
+/// qamats}.
+fn fs_participle_guttural_at(text: &str, lamed: char) -> Vec<String> {
+    if !hebrew::is_guttural(lamed) {
+        return Vec::new();
+    }
+    let open = |c2: Vowel| -> Option<String> {
+        let mut seq = hebrew::parse_pointed(text);
+        let n = seq.len();
+        (n >= 3
+            && seq[n - 1].letter == letter::TAV
+            && seq[n - 1].vowel.is_none()
+            && seq[n - 2].letter == lamed
+            && seq[n - 2].vowel == Some(Vowel::Segol)
+            && seq[n - 3].vowel == Some(Vowel::Segol))
+        .then(|| {
+            seq[n - 2].vowel = Some(Vowel::Patah);
+            seq[n - 3].vowel = Some(c2);
+            hebrew::render(&seq)
+        })
+    };
+    [open(Vowel::Patah), open(Vowel::Qamats)]
+        .into_iter()
+        .flatten()
+        .collect()
 }
 
 /// Pausal-tsere twin: a form ending in a vocalic suffix (û = vav-shureq, or î =
