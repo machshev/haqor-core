@@ -3504,6 +3504,25 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(gutt_pausal);
 
+    // Short-cohortative alias: OSHB tags many bare 1st-person imperfects (no -â
+    // ending, אֶמְצָא, אֶפֹּל, אֲמַדֵּד, אָבוֹא, and object-suffixed אַכֶּנּוּ) as
+    // cohortative by mood. The short cohortative is spelled identically to the
+    // imperfect, so relabel every 1cs/1cp imperfect (including its object-suffix
+    // forms) as a cohortative twin. Adds no new surface — only a second analysis
+    // label on a spelling already in the index — beside the built -â cohortative.
+    let short_cohort: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            f.form == Form::Imperfect
+                && matches!(f.pgn.person, Some(Person::First))
+        })
+        .map(|f| VerbForm {
+            form: Form::Cohortative,
+            ..f.clone()
+        })
+        .collect();
+    forms.extend(short_cohort);
+
     // Feminine-participle twins, run as a post-pass so they see *every*
     // generated -â/segolate fs participle — the strong primary plus the hollow,
     // pe-guttural and derived-stem variants other twins contribute. Each is a
@@ -13203,6 +13222,18 @@ mod tests {
         assert!(any_text(&p, "יוֹדֶה"));
         assert!(any_text(&p, "יוֹדוּ"));
         assert!(any_text(&p, "הוֹדוּ"));
+    }
+
+    #[test]
+    fn short_cohortative_alias() {
+        // The bare (no -â) 1cs/1cp cohortative is spelled like the imperfect;
+        // OSHB tags it cohortative by mood. ʔemṣāʔ אֶמְצָא (מצא), ʔeppōl אֶפֹּל
+        // (נפל) parse as cohortative beside imperfect.
+        let one_cs = Pgn::new(Person::First, Gender::Common, Number::Singular);
+        let p = generate_paradigm(&Root::parse("מצא").unwrap());
+        assert!(has_text(&p, Binyan::Qal, Form::Cohortative, one_cs, "אֶמְצָא"));
+        let np = generate_paradigm(&Root::parse("נפל").unwrap());
+        assert!(has_text(&np, Binyan::Qal, Form::Cohortative, one_cs, "אֶפֹּל"));
     }
 
     #[test]
