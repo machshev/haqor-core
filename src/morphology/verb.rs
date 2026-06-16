@@ -566,6 +566,20 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let guttural_silent_pausal = guttural_silent_sheva
                     .as_deref()
                     .and_then(|t| pausal_perfect_c2_variant(root, t));
+                // I-guttural Hiphil imperative segol-prefix twin (הֶעֱמִיקוּ,
+                // הֶחֱשׁוּ): the hē- prefix attenuates to segol before the guttural
+                // C1, mirroring the perfect's הֶעֱמִיק. Applied to the primary
+                // imperative and to its silent-sheva grade (הֶעְמִיקוּ).
+                let hiphil_iguttural_imp_segol = (binyan == Binyan::Hiphil
+                    && root.has(Gizra::PeGuttural)
+                    && form == Form::Imperative)
+                .then(|| hiphil_iguttural_segol_prefix_variant(&text))
+                .flatten();
+                let hiphil_iguttural_imp_segol_silent = (binyan == Binyan::Hiphil
+                    && form == Form::Imperative)
+                .then_some(())
+                .and(guttural_silent_sheva.as_deref())
+                .and_then(hiphil_iguttural_segol_prefix_variant);
                 // Hollow Qal active participle qāmÌ„ shape (רֹץ → רָץ).
                 let hollow_ptcp = (binyan == Binyan::Qal
                     && form == Form::ParticipleActive
@@ -2931,6 +2945,8 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     iguttural_hophal_loud_tsere,
                     niphal_iguttural_he_tsere,
                     ptcp_fs_unreduced_a,
+                    hiphil_iguttural_imp_segol,
+                    hiphil_iguttural_imp_segol_silent,
                     piel_perf_patah,
                     piel_perf_hiriq,
                     hiphil_perf_segol,
@@ -3458,6 +3474,27 @@ fn hollow_hophal_participle_variant(root: &Root, pgn: Pgn) -> Option<String> {
         },
     ];
     seq.append(&mut tail);
+    Some(hebrew::render(&seq))
+}
+
+/// I-guttural Hiphil segol-prefix twin: the hē- (haC-) prefix attenuates to
+/// segol before a guttural C1 — heʕĕmîqû הֶעֱמִיקוּ beside haʕămîqû, heḥĕšû הֶחֱשׁוּ.
+/// The prefix patah → segol; a following guttural's hataf-patah → hataf-segol (a
+/// silent sheva, where the prefix syllable closes, stays). The perfect already
+/// generates this grade; this lifts it to the imperative. Additive.
+fn hiphil_iguttural_segol_prefix_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() < 2
+        || seq[0].letter != letter::HE
+        || seq[0].vowel != Some(Vowel::Patah)
+        || !hebrew::is_guttural(seq[1].letter)
+    {
+        return None;
+    }
+    seq[0].vowel = Some(Vowel::Segol);
+    if seq[1].vowel == Some(Vowel::HatafPatah) {
+        seq[1].vowel = Some(Vowel::HatafSegol);
+    }
     Some(hebrew::render(&seq))
 }
 
