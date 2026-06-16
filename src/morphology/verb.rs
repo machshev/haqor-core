@@ -2590,6 +2590,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         )
                     {
                         let mut v = perfect_subject_object_suffixes(&text, pgn, root, binyan);
+                        // The III-aleph perfect has a tsere-theme twin (śānēʾṯî
+                        // שָׂנֵאתִי beside śānāʾṯî); its suffixed hosts carry the
+                        // tsere through — śᵊnēʾṯîm שְׂנֵאתִים beside śᵊnāʾṯîm.
+                        if let Some(base) = lamed_aleph_tsere.as_ref() {
+                            v.extend(perfect_subject_object_suffixes(base, pgn, root, binyan));
+                        }
                         // The hollow-Hiphil linking-ô perfect bases (hăḇîʾōṯî
                         // הֲבִיאֹתִי, hăqîmōṯā) are suffix hosts on the same
                         // consonantal afformatives — hăḇîʾōṯîw הֲבִיאֹתִיו.
