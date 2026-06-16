@@ -2085,6 +2085,33 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 } else {
                     Default::default()
                 };
+                // Construct ־ַת of the Qal passive participle fs: the absolute
+                // qᵊṭûlâ (אֲהוּבָה) bound to a following noun shortens its final
+                // -â to -aṯ — ʾăhûḇaṯ אֲהוּבַת, bᵊʿûlaṯ בְּעוּלַת, ḥăḡûraṯ חֲגוּרַת.
+                // Emitted plene; the defective qubuts spelling (אֲהֻבַת) matches
+                // via canonical_key's shureq collapse. Additive.
+                let qal_passive_ptcp_construct: Vec<String> = if binyan == Binyan::Qal
+                    && form == Form::ParticiplePassive
+                    && pgn == Pgn::gn(Gender::Feminine, Number::Singular)
+                {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let n = seq.len();
+                    (n >= 2
+                        && seq[n - 1].letter == letter::HE
+                        && seq[n - 1].vowel.is_none()
+                        && seq[n - 2].vowel == Some(Vowel::Qamats))
+                    .then(|| {
+                        seq.pop();
+                        let n = seq.len();
+                        seq[n - 1].vowel = Some(Vowel::Patah);
+                        seq.push(Cons::new(letter::TAV));
+                        hebrew::render(&seq)
+                    })
+                    .into_iter()
+                    .collect()
+                } else {
+                    Default::default()
+                };
                 // III-aleph contracted fs participle twin: the aleph quiesces
                 // and the segolate pair contracts to tsere — yōṣēṯ יֹצֵאת
                 // beside יֹצֶאֶת.
@@ -3112,6 +3139,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(geminate_niphal_ptcp)
                     .chain(derived_fs_ptcp_et)
                     .chain(fs_ptcp_qamats_grade)
+                    .chain(qal_passive_ptcp_construct)
                     .chain(hiphil_perf_patah_he)
                     .chain(hollow_niphal_participle)
                     .chain(niphal_1cs_hiriq)

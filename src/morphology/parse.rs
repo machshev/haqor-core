@@ -1175,6 +1175,21 @@ mod tests {
     }
 
     #[test]
+    fn parses_qal_passive_participle_fs_construct() {
+        // אֲהֻבַת — construct of the Qal fs passive participle אֲהוּבָה (root
+        // אהב); the -â shortens to -aṯ. Generated plene (אֲהוּבַת), the
+        // defective qubuts spelling matches via the shureq collapse.
+        let matches = parse_word("אֲהֻבַת");
+        assert!(has_match(
+            &matches,
+            "אהב",
+            Binyan::Qal,
+            Form::ParticiplePassive,
+            "fs"
+        ));
+    }
+
+    #[test]
     fn parses_qamats_grade_segolate_fs_participle() {
         // עֹמָדֶת — Qal fs active participle of עמד in the qamats grade
         // (qōṭāleṯ), beside the segol-grade עֹמֶדֶת the builder makes.
