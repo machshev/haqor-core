@@ -1200,6 +1200,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::new(Person::Third, Gender::Common, Number::Plural))
                 .then(|| perfect_stative_tsere_plural_variant(&text))
                 .flatten();
+                // Retained-tsere twin of the Piel perfect 3fs/3cp: the doubled
+                // theme tsere can be kept before the vocalic afformative —
+                // šiḥēṯû שִׁחֵתוּ, liqqēṭâ לִקֵּטָה. Additive.
+                let piel_perfect_retained_tsere = (binyan == Binyan::Piel
+                    && form == Form::Perfect
+                    && (pgn == Pgn::new(Person::Third, Gender::Feminine, Number::Singular)
+                        || pgn == Pgn::new(Person::Third, Gender::Common, Number::Plural)))
+                .then(|| piel_perfect_retained_tsere_variant(&text))
+                .flatten();
                 // Tsere-kept twin of the Hiphil short wayyiqtol: nesiga is not
                 // universal — וַיַּגֵּד beside וַיַּגֶּד, וַיַּקְרֵב, וַיַּשְׁלֵךְ.
                 let hiphil_wayyiqtol_tsere = (binyan == Binyan::Hiphil
@@ -2964,6 +2973,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_aleph_pausal,
                     qal_stative_perfect,
                     qal_stative_perfect_plural,
+                    piel_perfect_retained_tsere,
                     qal_stative_participle,
                     hollow_perfect_holam,
                     hollow_wayyiqtol_patah,
@@ -7967,6 +7977,34 @@ fn perfect_stative_tsere_plural_variant(text: &str) -> Option<String> {
         return None;
     }
     // The theme consonant must carry a reducible vowel to "restore" to tsere.
+    if !matches!(seq[n - 3].vowel, Some(Vowel::Sheva | Vowel::HatafPatah)) {
+        return None;
+    }
+    seq[n - 3].vowel = Some(Vowel::Tsere);
+    Some(hebrew::render(&seq))
+}
+
+/// Retained-tsere twin of the Piel perfect before a vocalic afformative. The
+/// builder reduces the doubled-C2 theme tsere to a vocal sheva (or guttural
+/// hataf-patah) — šiḥᵃṯû שִׁחֲתוּ, liqqᵊṭâ לִקְּטָה; the retained spelling
+/// šiḥēṯû שִׁחֵתוּ, liqqēṭâ לִקֵּטָה surfaces beside it. The theme consonant is
+/// the third unit from the end for both -û (…C3, VAV) and -â (…C3-qamats, HE).
+fn piel_perfect_retained_tsere_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 4 {
+        return None;
+    }
+    let vocalic = (seq[n - 1].letter == letter::VAV
+        && seq[n - 1].dagesh
+        && seq[n - 1].vowel.is_none()
+        && seq[n - 2].vowel.is_none())
+        || (seq[n - 1].letter == letter::HE
+            && seq[n - 1].vowel.is_none()
+            && seq[n - 2].vowel == Some(Vowel::Qamats));
+    if !vocalic {
+        return None;
+    }
     if !matches!(seq[n - 3].vowel, Some(Vowel::Sheva | Vowel::HatafPatah)) {
         return None;
     }
