@@ -1643,6 +1643,32 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let iguttural_hophal_loud_tsere = lamed_he_hophal_perf_tsere
                     .as_deref()
                     .and_then(iguttural_hophal_loud_preformative_variant);
+                // I-guttural Niphal he-prefix compensatory-lengthening twin: in
+                // the he-prefixed imperative / infinitive the C1 ayin/het reject
+                // the doubling and — unlike the doubling binyanim's virtual
+                // doubling — the Niphal prefix lengthens its hiriq to tsere:
+                // hēʕāṣēr הֵעָצֵר, hēḥāšēḇ הֵחָשֵׁב (the imperfect yēʕāṣēr already
+                // shows it; aleph lengthens through apply_guttural).
+                let niphal_iguttural_he_tsere = (binyan == Binyan::Niphal
+                    && matches!(
+                        form,
+                        Form::Imperative
+                            | Form::InfinitiveConstruct
+                            | Form::InfinitiveAbsolute
+                    )
+                    && matches!(root.pe(), letter::AYIN | letter::HET))
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    (seq.len() >= 2
+                        && seq[0].letter == letter::HE
+                        && seq[0].vowel == Some(Vowel::Hiriq)
+                        && seq[1].letter == root.pe())
+                    .then(|| {
+                        seq[0].vowel = Some(Vowel::Tsere);
+                        hebrew::render(&seq)
+                    })
+                })
+                .flatten();
                 // Patah-theme Piel/Hithpael perfect 3ms twin (בֵּרַךְ, חִשַּׁב,
                 // טִהַר, הִתְחַזַּק).
                 let piel_perf_patah = (matches!(binyan, Binyan::Piel | Binyan::Hithpael)
@@ -2871,6 +2897,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_he_hophal_perf_tsere,
                     iguttural_hophal_loud,
                     iguttural_hophal_loud_tsere,
+                    niphal_iguttural_he_tsere,
                     piel_perf_patah,
                     piel_perf_hiriq,
                     hiphil_perf_segol,
