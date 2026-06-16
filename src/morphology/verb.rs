@@ -646,10 +646,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && pgn.number == Some(Number::Plural))
                     .then(|| lamed_aleph_participle_reduce_variant(&text))
                     .flatten();
-                // PeAleph Qal Imperfect tsere variant — יֹאכֵל beside יֹאכַל.
+                // PeAleph Qal Imperfect tsere variant — יֹאכֵל beside יֹאכַל;
+                // the 1cs holam-merge contraction (אֹכֵל) and its wayyiqtol
+                // (wāʾōḵēl וָאֹכֵל) carry the same theme tsere.
                 let pe_aleph_tsere = (binyan == Binyan::Qal
                     && root.has(Gizra::PeAleph)
-                    && matches!(form, Form::Imperfect | Form::Jussive))
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol))
                 .then(|| pe_aleph_imperfect_tsere_variant(&text))
                 .flatten();
                 // PeAleph Qal holam-contraction twin for roots outside YO_ROOTS
@@ -8472,11 +8474,13 @@ fn pe_aleph_holam_variant(text: &str) -> Option<String> {
 
 fn pe_aleph_imperfect_tsere_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
-    // Find a vowelless aleph followed by a consonant with patah or qamats.
-    // Replace that vowel with tsere.
-    let aleph_idx = seq
-        .iter()
-        .position(|c| c.letter == letter::ALEF && c.vowel.is_none())?;
+    // The theme consonant sits right after the aleph: a vowelless aleph in the
+    // prefixed persons (yōʾḵal יֹאכַל) or, in the 1cs, the preformative aleph
+    // into which the root aleph merges and which carries the holam (ʾōḵal
+    // אֹכַל). Replace the theme patah/qamats with tsere.
+    let aleph_idx = seq.iter().position(|c| {
+        c.letter == letter::ALEF && matches!(c.vowel, None | Some(Vowel::Holam))
+    })?;
     let target_idx = aleph_idx + 1;
     if target_idx < seq.len() && matches!(seq[target_idx].vowel, Some(Vowel::Patah | Vowel::Qamats))
     {
