@@ -1419,6 +1419,21 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 // (הַסֵּה, which it rejects), so derive it from the apocope here.
                 let lamed_he_imp_apoc_pausal =
                     lamed_he_imp_apoc.as_deref().and_then(pausal_qamats_variant);
+                // I-guttural III-He apocopated imperative: the apocope closes the
+                // final syllable on the bare last radical (haʕăl → haʕal הַעַל,
+                // עלה Hiphil), so the C1 guttural's hataf-patah fills to a full
+                // patah. Promote a hataf-patah guttural that a vowelless
+                // (syllable-closing) consonant follows.
+                let lamed_he_imp_apoc_guttural = lamed_he_imp_apoc.as_deref().and_then(|t| {
+                    let mut seq = hebrew::parse_pointed(t);
+                    let i = seq.iter().position(|c| {
+                        hebrew::is_guttural(c.letter) && c.vowel == Some(Vowel::HatafPatah)
+                    })?;
+                    (seq.get(i + 1).is_some_and(|c| c.vowel.is_none())).then(|| {
+                        seq[i].vowel = Some(Vowel::Patah);
+                        hebrew::render(&seq)
+                    })
+                });
                 // III-He Hiphil apocopated segholate imperative 2ms — herep̄
                 // הֶרֶף (רפה), hereḇ הֶרֶב (רבה) beside the full הַרְפֵּה.
                 let hiphil_imp_segholate = (binyan == Binyan::Hiphil
@@ -2245,6 +2260,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         (t != text).then_some(t)
                     })
                     .flatten();
+                // Pausal-segol twin of the Piel/Hithpael inf-abs (dabbēr → dabber
+                // דַּבֶּר): the theme tsere lowers to segol at a pause.
+                let piel_inf_abs_segol = piel_inf_abs_tsere.as_deref().and_then(|t| {
+                    let mut seq = hebrew::parse_pointed(t);
+                    let i = seq.iter().rposition(|c| c.vowel == Some(Vowel::Tsere))?;
+                    seq[i].vowel = Some(Vowel::Segol);
+                    Some(hebrew::render(&seq))
+                });
                 // Niphal he-prefixed infinitive absolute (hiqqāṭōl): beside the
                 // niqṭōl base the Niphal also attests the inf-construct's
                 // he-prefixed shape with a holam theme — hēʾāḵōl הֵאָכֹל,
@@ -2926,6 +2949,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_wayyiqtol_patah,
                     hollow_impf_fp_plene,
                     lamed_he_imp_apoc,
+                    lamed_he_imp_apoc_guttural,
                     lamed_he_imp_apoc_pausal,
                     hiphil_imp_segholate,
                     hiphil_wayyiqtol_tsere,
@@ -2974,6 +2998,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     shachah_pausal,
                     segholate_inf_pausal,
                     piel_inf_abs_tsere,
+                    piel_inf_abs_segol,
                     niphal_inf_abs_he,
                     lamed_he_cohortative,
                     geminate_hiphil_impf,
