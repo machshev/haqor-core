@@ -1129,15 +1129,17 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     Some(hebrew::render(&seq))
                 })
                 .flatten();
-                // III-aleph Piel/Pual/Hithpael consonantal perfect quiescent
-                // twin (קִנֵּאתִי beside the strong קִנַּאְתִּי).
-                let lamed_aleph_derived_perf =
-                    (matches!(binyan, Binyan::Piel | Binyan::Pual | Binyan::Hithpael)
-                        && form == Form::Perfect
-                        && root.lamed() == letter::ALEF
-                        && perfect_suffix_kind(pgn) == Suffix::Consonantal)
-                        .then(|| lamed_aleph_derived_perfect_variant(&text))
-                        .flatten();
+                // III-aleph Piel/Pual/Hithpael/Niphal consonantal perfect
+                // quiescent twin (קִנֵּאתִי beside the strong קִנַּאְתִּי; nibbēʾṯā
+                // נִבֵּאתָ, niṭmēʾṯ נִטְמֵאת beside נִבַּאְתָּ/נִטְמַאְתְּ).
+                let lamed_aleph_derived_perf = (matches!(
+                    binyan,
+                    Binyan::Piel | Binyan::Pual | Binyan::Hithpael | Binyan::Niphal
+                ) && form == Form::Perfect
+                    && root.lamed() == letter::ALEF
+                    && perfect_suffix_kind(pgn) == Suffix::Consonantal)
+                    .then(|| lamed_aleph_derived_perfect_variant(&text))
+                    .flatten();
                 // Paragogic-nun twin of the vocalic-suffix imperfect (tōʔmᵊrûn
                 // תֹּאמְרוּן, yᵊšûḇûn). Any binyan; the long imperfect only.
                 let paragogic_nun = (form == Form::Imperfect
@@ -13493,6 +13495,19 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn niphal_lamed_aleph_perfect_quiescent() {
+        // III-aleph Niphal perfect before a consonantal afformative quiesces the
+        // aleph and takes a tsere theme — nibbēʾṯā נִבֵּאתָ (נבא, 2ms).
+        let two_ms = Pgn::new(Person::Second, Gender::Masculine, Number::Singular);
+        let p = generate_paradigm(&Root::parse("נבא").unwrap());
+        assert!(p.forms.iter().any(|f| f.binyan == Binyan::Niphal
+            && f.form == Form::Perfect
+            && f.pgn == two_ms
+            // tsere (05B5) sits immediately before the quiescent (bare) aleph.
+            && f.text.contains("\u{05B5}\u{05D0}")));
     }
 
     #[test]
