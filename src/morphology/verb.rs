@@ -3629,6 +3629,31 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(paragogic);
 
+    // Paragogic-he cohortative over finished 1st-person imperfect twins: the
+    // per-cell cohortative builder draws only on the primary imperfect, so the
+    // theme-restored grades (the qamats a-class ʾeḥkām אֶחְכָּם) never yield their
+    // cohortative ʾeḥkāmâ אֶחְכָּמָה, weʾeṣʕāqâ וְאֶצְעָקָה. Run the -â builder over
+    // every finished 1cs/1cp imperfect (1st-person only, so the index cost is
+    // small); dedup drops the repeats of the primary grade.
+    let cohort_twins: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            f.form == Form::Imperfect
+                && f.pgn.person == Some(Person::First)
+                && f.object_suffix.is_none()
+        })
+        .flat_map(|f| {
+            cohortative_paragogic_variants(&f.text)
+                .into_iter()
+                .map(move |t| VerbForm {
+                    form: Form::Cohortative,
+                    text: t,
+                    ..f.clone()
+                })
+        })
+        .collect();
+    forms.extend(cohort_twins);
+
     // Short-cohortative alias: OSHB tags many bare 1st-person imperfects (no -â
     // ending, אֶמְצָא, אֶפֹּל, אֲמַדֵּד, אָבוֹא, and object-suffixed אַכֶּנּוּ) as
     // cohortative by mood. The short cohortative is spelled identically to the
