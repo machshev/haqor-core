@@ -1249,6 +1249,15 @@ pub const IRREGULAR_VERBS: &[IrregularVerb] = &[
         pgn: "3ms",
     },
     IrregularVerb {
+        // Quadriliteral root כרסם "devour" (Ps 80:14); the triliteral generator
+        // cannot model a four-radical root. + 3fs object suffix in the surface.
+        surface: "יְכַרְסְמֶנָּה",
+        root: "כרסם",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
         surface: "יְכוֹנְנֶהָ",
         root: "כונ",
         binyan: "Polel",
@@ -1799,6 +1808,15 @@ pub const IRREGULAR_VERBS: &[IrregularVerb] = &[
         root: "כרר",
         binyan: "Pilpel",
         form: "Participle (act.)",
+        pgn: "ms",
+    },
+    IrregularVerb {
+        // Quadriliteral root כרבל "wrap/robe" (1 Chr 15:27), Pual passive
+        // participle; a four-radical root the triliteral generator cannot model.
+        surface: "מְכֻרְבָּל",
+        root: "כרבל",
+        binyan: "Pual",
+        form: "Participle (pas.)",
         pgn: "ms",
     },
     IrregularVerb {
