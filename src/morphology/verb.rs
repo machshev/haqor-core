@@ -378,27 +378,36 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         Some(hebrew::render(&seq))
                     })
                     .flatten();
-                // Contracted geminate Qal imperative with the qamats stem —
-                // ronnû רָנּוּ, ronnî רָנִּי (רנן).
-                let geminate_qal_imv = (binyan == Binyan::Qal
+                // Contracted geminate Qal imperative — both the qamats stem
+                // (ronnû רָנּוּ, ronnî רָנִּי) and the holam stem (sōbbî סֹבִּי,
+                // gōzzî גֹזִּי, rōnnî רֹנִּי) occur. Build both C1 grades.
+                let geminate_qal_imv_grades: Vec<String> = if binyan == Binyan::Qal
                     && form == Form::Imperative
                     && root.ayin() == root.lamed()
                     && !hebrew::is_guttural(root.ayin())
-                    && root.ayin() != letter::RESH)
-                    .then(|| {
-                        let c2 = rad(root.ayin(), 2).with_dagesh();
-                        let tail: Vec<Cons> = match (pgn.gender, pgn.number) {
-                            (Some(Gender::Masculine), Some(Number::Plural)) => vec![c2, oshureq()],
-                            (Some(Gender::Feminine), Some(Number::Singular)) => {
-                                vec![c2.with_vowel(Vowel::Hiriq), Cons::mater(letter::YOD)]
-                            }
-                            _ => return None,
-                        };
-                        let mut seq = vec![rad(root.pe(), 1).with_vowel(Vowel::Qamats)];
-                        seq.extend(tail);
-                        Some(hebrew::render(&seq))
-                    })
-                    .flatten();
+                    && root.ayin() != letter::RESH
+                {
+                    [Vowel::Qamats, Vowel::Holam]
+                        .into_iter()
+                        .filter_map(|v1| {
+                            let c2 = rad(root.ayin(), 2).with_dagesh();
+                            let tail: Vec<Cons> = match (pgn.gender, pgn.number) {
+                                (Some(Gender::Masculine), Some(Number::Plural)) => {
+                                    vec![c2, oshureq()]
+                                }
+                                (Some(Gender::Feminine), Some(Number::Singular)) => {
+                                    vec![c2.with_vowel(Vowel::Hiriq), Cons::mater(letter::YOD)]
+                                }
+                                _ => return None,
+                            };
+                            let mut seq = vec![rad(root.pe(), 1).with_vowel(v1)];
+                            seq.extend(tail);
+                            Some(hebrew::render(&seq))
+                        })
+                        .collect()
+                } else {
+                    Vec::new()
+                };
                 // נגש: the o-grade vocalic imperative gōšû גֹּשׁוּ beside גְּשׁוּ.
                 let nagash_imv_holam =
                     (is_nagash(root) && binyan == Binyan::Qal && form == Form::Imperative)
@@ -3093,7 +3102,6 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     maen_ptcp,
                     geminate_qal_perf_pausal,
                     geminate_qal_perf_hataf,
-                    geminate_qal_imv,
                     nagash_imv_holam,
                     hiphil_impf_sheva,
                     hollow_niphal_inf,
@@ -3150,6 +3158,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(yare_imperative)
                     .chain(lamed_he_retained_yod)
                     .chain(lamed_aleph_inf_ot)
+                    .chain(geminate_qal_imv_grades)
                 {
                     forms.push(VerbForm {
                         binyan,
@@ -13427,6 +13436,19 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn geminate_imperative_holam_grade() {
+        // The contracted geminate Qal imperative occurs in both the qamats stem
+        // (rānnî) and the holam stem (sōbbî סֹבִּי, gōzzî גֹזִּי, rōnnî רֹנִּי).
+        let two_fs = Pgn::new(Person::Second, Gender::Feminine, Number::Singular);
+        let sbb = generate_paradigm(&Root::parse("סבב").unwrap());
+        // holam (05B9) on C1, then dageshed bet — סֹבִּ-.
+        assert!(sbb.forms.iter().any(|f| f.binyan == Binyan::Qal
+            && f.form == Form::Imperative
+            && f.pgn == two_fs
+            && f.text.contains('\u{05B9}')));
     }
 
     #[test]
