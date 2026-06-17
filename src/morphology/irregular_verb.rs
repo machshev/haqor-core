@@ -26,14 +26,89 @@ pub struct IrregularVerb {
     pub pgn: &'static str,
 }
 
-/// Build a surface → readings lookup over [`IRREGULAR_VERBS`].
+/// Build a surface → readings lookup over [`IRREGULAR_VERBS`] and
+/// [`IRREGULAR_VOCALIZATIONS`].
 pub fn lookup() -> HashMap<&'static str, Vec<&'static IrregularVerb>> {
     let mut m: HashMap<&'static str, Vec<&'static IrregularVerb>> = HashMap::new();
-    for v in IRREGULAR_VERBS {
+    for v in IRREGULAR_VERBS.iter().chain(IRREGULAR_VOCALIZATIONS) {
         m.entry(v.surface).or_default().push(v);
     }
     m
 }
+
+/// Attested forms of the *modeled* stems (Qal/Niphal/Piel/…) whose vocalization
+/// the algorithmic generator does not produce — hapax / anomalous / doubly-weak
+/// spellings (euphonic dagesh חָדֵלּוּ, the doubly-weak צוה contraction לְצַוּת,
+/// the segol שְׁאֶלְתֶּם, etc.). Like [`IRREGULAR_VERBS`] these are gold-precise
+/// full-surface matches that only ever add the correct reading; they exist for
+/// the downstream product (the accuracy harness measures the generator and
+/// excludes these gizra='Irregular' rows, so they never inflate it).
+pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
+    IrregularVerb {
+        // Euphonic dagesh forte in C3 (Judg 5:6-7); generator builds חָדֵלוּ.
+        surface: "חָדֵלּוּ",
+        root: "חדל",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // C2-aleph segol theme before the heavy afformative; generator: שְׁאַלְתֶּם.
+        surface: "שְׁאֶלְתֶּם",
+        root: "שאל",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // Archaic/Aramaic-flavoured imperative (Isa 21:12,14).
+        surface: "אֵתָיוּ",
+        root: "אתה",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // Anomalous patah-retaining + dagesh construct participle (Isa 23:8-9).
+        surface: "נִכְבַּדֵּי",
+        root: "כבד",
+        binyan: "Niphal",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
+        // Niphal perfect with o-theme (גאל II "defile", Lam 4:14).
+        surface: "נְגֹאֲלוּ",
+        root: "גאל",
+        binyan: "Niphal",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // Doubly-weak III-he + C2-vav Piel infinitive construct (with ל), צוה.
+        surface: "לְצַוּת",
+        root: "צוה",
+        binyan: "Piel",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // Doubly-weak Piel participle + 2ms suffix -ekkā, צוה.
+        surface: "מְצַוֶּךָּ",
+        root: "צוה",
+        binyan: "Piel",
+        form: "Participle (act.)",
+        pgn: "ms",
+    },
+    IrregularVerb {
+        // III-he/aleph Piel imperfect 2mp (תאה "mark out", Num 34:7-8).
+        surface: "תְּתָאוּ",
+        root: "תאה",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "2mp",
+    },
+];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
 pub const IRREGULAR_VERBS: &[IrregularVerb] = &[
