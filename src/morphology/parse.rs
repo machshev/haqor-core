@@ -316,6 +316,29 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
             targets.push(hebrew::render(&alt));
         }
     }
+    // A proclitic's added syllable can propretonically reduce a I-guttural
+    // stem's full vowel to a hataf: the interrogative/article he onto a Qal
+    // perfect — heḥŏḏaltî הֶחֳדַלְתִּי for ḥāḏaltî חָדַלְתִּי — drops the het's
+    // qamats to hataf-qamats. The generator writes the full vowel, so raise the
+    // hataf back to its matching grade (hataf-qamats → qamats, etc.) to match.
+    if strip > 0
+        && remainder.first().is_some_and(|c| {
+            hebrew::is_guttural(c.letter)
+                && matches!(
+                    c.vowel,
+                    Some(Vowel::HatafQamats | Vowel::HatafPatah | Vowel::HatafSegol)
+                )
+        })
+    {
+        let full = match remainder[0].vowel {
+            Some(Vowel::HatafQamats) => Vowel::Qamats,
+            Some(Vowel::HatafPatah) => Vowel::Patah,
+            _ => Vowel::Segol,
+        };
+        let mut alt = remainder.to_vec();
+        alt[0].vowel = Some(full);
+        targets.push(hebrew::render(&alt));
+    }
     // A conjunction can hataf-colour even a non-guttural's initial sheva
     // (וּשֲׁמָע, וּזֲהַב): restore the plain sheva.
     if strip > 0
