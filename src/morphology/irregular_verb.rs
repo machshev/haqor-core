@@ -287,6 +287,72 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Participle (act.)",
         pgn: "fp",
     },
+    IrregularVerb {
+        // Lengthened (paragogic-he) Hiphil imperative, î-grade (יטב; Ps 36:11,
+        // Isa 23:16) — the rare emphatic imperative the generator omits.
+        surface: "הֵיטִיבָה",
+        root: "יטב",
+        binyan: "Hiphil",
+        form: "Imperative",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // Aramaic-flavoured Hiphil imperative 2mp of אתה "bring" (Isa 21:14).
+        surface: "הֵתָיוּ",
+        root: "אתה",
+        binyan: "Hiphil",
+        form: "Imperative",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // Geminate Hiphil perfect 3cp "they blossomed" (נצץ; Song 6:11, 7:13).
+        surface: "הֵנֵצוּ",
+        root: "נצצ",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // Apocopated III-he Qal wayyiqtol 1cp "and we were" (היה; Num 13:33).
+        surface: "וַנְּהִי",
+        root: "היה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "1cp",
+    },
+    IrregularVerb {
+        // III-he Piel perfect 3ms "he rebuked / grew dim" (כהה; 1 Sam 3:13).
+        surface: "כֵּהָה",
+        root: "כהה",
+        binyan: "Piel",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Pual participle ms "polished/burnished" (מרט, with ו; 1 Kgs 7:45).
+        surface: "וּמוֹרָט",
+        root: "מרט",
+        binyan: "Pual",
+        form: "Participle (act.)",
+        pgn: "ms",
+    },
+    IrregularVerb {
+        // Hollow Niphal participle ms "discerning" (בין, with ו; Gen 41:33,39).
+        surface: "וּנְבוֹן",
+        root: "בינ",
+        binyan: "Niphal",
+        form: "Participle (act.)",
+        pgn: "ms",
+    },
+    IrregularVerb {
+        // Qamats-grade Hiphil infinitive absolute "abundantly" (רבה; Amos 4:9)
+        // beside the usual הַרְבֵּה.
+        surface: "הַרְבָּה",
+        root: "רבה",
+        binyan: "Hiphil",
+        form: "Inf. Absolute",
+        pgn: "",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
