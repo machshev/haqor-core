@@ -10111,9 +10111,12 @@ fn participle_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         && seq.get(n - 3).and_then(|c| c.vowel) == Some(Hiriq)
         && !matches!(last.letter, letter::HE | letter::VAV | letter::YOD)
     {
-        let aleph = last.letter == letter::ALEF;
+        // A guttural C3 (quiescent aleph môṣîʾ, or the furtive-patah ayin/het of
+        // môšîaʕ מוֹשִׁיעַ, yôḏîaʕ) takes a hataf-patah for the sheva-link suffixes
+        // — môšîʕăḵā מוֹשִׁיעֲךָ, yôḏîʕăḵā מוֹדִיעֲךָ — not a silent sheva.
+        let guttural_final = hebrew::is_guttural(last.letter);
         for (obj, link, tail) in nominal_suffix_tails() {
-            let link = if aleph && link == Some(Sheva) {
+            let link = if guttural_final && link == Some(Sheva) {
                 Some(HatafPatah)
             } else {
                 link
@@ -13449,6 +13452,21 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn iwaw_hiphil_participle_guttural_suffix_link() {
+        // The î-stem Hiphil participle with a guttural C3 (môšîaʕ מוֹשִׁיעַ) links
+        // the 2ms suffix on a hataf-patah, not a sheva — môšîʕăḵā מוֹשִׁיעֲךָ.
+        let p = generate_paradigm(&Root::parse("ישע").unwrap());
+        let ms = Pgn::gn(Gender::Masculine, Number::Singular);
+        let two_ms = Pgn::new(Person::Second, Gender::Masculine, Number::Singular);
+        assert!(p.forms.iter().any(|f| f.binyan == Binyan::Hiphil
+            && f.form == Form::ParticipleActive
+            && f.pgn == ms
+            && f.object_suffix == Some(two_ms)
+            // ayin (05E2) carries hataf-patah (05B2).
+            && f.text.contains("\u{05E2}\u{05B2}")));
     }
 
     #[test]
