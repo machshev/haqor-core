@@ -278,6 +278,15 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Imperfect",
         pgn: "1cs",
     },
+    IrregularVerb {
+        // Pual fp participle construct with irregular de-gemination (קצע
+        // "corner", with ל; Ezek 46:22) — not the regular doubled מְקֻצְּעֹת.
+        surface: "לִמְקֻצְעֹת",
+        root: "קצע",
+        binyan: "Pual",
+        form: "Participle (act.)",
+        pgn: "fp",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
