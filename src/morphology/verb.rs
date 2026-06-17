@@ -3610,6 +3610,25 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(gutt_pausal);
 
+    // Paragogic-nun over finished long-imperfect vocalic forms: the per-cell
+    // twin only appends the nun to the primary cell, so the theme-grade and
+    // guttural twins (the pe-guttural segol a-class yeḥpāṣû יֶחְפָּצוּ) never get
+    // their -ûn. Append the nun to every finished imperfect -û/-î form so those
+    // twins gain it too (yeḥpāṣûn יֶחְפָּצוּן). Dedup drops the primary repeats.
+    let paragogic: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            f.form == Form::Imperfect
+                && imperfect_suffix_kind(f.pgn) == Suffix::Vocalic
+                && f.object_suffix.is_none()
+        })
+        .map(|f| VerbForm {
+            text: paragogic_nun_variant(&f.text),
+            ..f.clone()
+        })
+        .collect();
+    forms.extend(paragogic);
+
     // Short-cohortative alias: OSHB tags many bare 1st-person imperfects (no -â
     // ending, אֶמְצָא, אֶפֹּל, אֲמַדֵּד, אָבוֹא, and object-suffixed אַכֶּנּוּ) as
     // cohortative by mood. The short cohortative is spelled identically to the
