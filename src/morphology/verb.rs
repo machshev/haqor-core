@@ -12432,10 +12432,29 @@ fn geminate_hiphil_participle_variants(root: &Root, pgn: Pgn) -> Vec<String> {
         Tsere
     };
     if pgn == Pgn::gn(Gender::Masculine, Number::Singular) {
-        vec![hebrew::render(&[
+        // The tsere theme (mēsēḇ מֵסֵב, mēp̄ēr מֵפֵר) occurs even when C3 is a
+        // guttural/resh; emit it beside the patah grade (mēp̄ar מֵפַר, mēraʕ).
+        let mut out = vec![hebrew::render(&[
             Cons::new(letter::MEM).with_vowel(Tsere),
-            rad(root.pe(), 1).with_vowel(theme),
+            rad(root.pe(), 1).with_vowel(Tsere),
             rad(root.lamed(), 3),
+        ])];
+        if theme == Patah {
+            out.push(hebrew::render(&[
+                Cons::new(letter::MEM).with_vowel(Tsere),
+                rad(root.pe(), 1).with_vowel(Patah),
+                rad(root.lamed(), 3),
+            ]));
+        }
+        out
+    } else if pgn == Pgn::gn(Gender::Feminine, Number::Singular) {
+        // fs: the prefix mem reduces and the doubled radical carries qamats —
+        // mᵊṣērâ מְצֵרָה (צרר), mᵊsibbâ.
+        vec![hebrew::render(&[
+            Cons::new(letter::MEM).with_vowel(Sheva),
+            rad(root.pe(), 1).with_vowel(Tsere),
+            rad(root.lamed(), 3).with_vowel(Qamats),
+            Cons::mater(letter::HE),
         ])]
     } else if pgn == Pgn::gn(Gender::Masculine, Number::Plural) {
         vec![hebrew::render(&[
@@ -13495,6 +13514,23 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn geminate_hiphil_participle_tsere_and_fs() {
+        // The contracted geminate Hiphil participle keeps a tsere theme even
+        // with a resh C3 (mēp̄ēr מֵפֵר, פרר), and the fs is mᵊṣērâ מְצֵרָה (צרר).
+        let ms = Pgn::gn(Gender::Masculine, Number::Singular);
+        let fs = Pgn::gn(Gender::Feminine, Number::Singular);
+        let prr = generate_paradigm(&Root::parse("פרר").unwrap());
+        assert!(prr.forms.iter().any(|f| f.binyan == Binyan::Hiphil
+            && f.form == Form::ParticipleActive
+            && f.pgn == ms
+            && f.text.contains("\u{05E4}\u{05B5}"))); // pe + tsere
+        let crr = generate_paradigm(&Root::parse("צרר").unwrap());
+        assert!(crr.forms.iter().any(|f| f.binyan == Binyan::Hiphil
+            && f.form == Form::ParticipleActive
+            && f.pgn == fs));
     }
 
     #[test]
