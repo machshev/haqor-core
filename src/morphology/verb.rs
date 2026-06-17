@@ -1131,13 +1131,18 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 .flatten();
                 // III-aleph Piel/Pual/Hithpael/Niphal consonantal perfect
                 // quiescent twin (קִנֵּאתִי beside the strong קִנַּאְתִּי; nibbēʾṯā
-                // נִבֵּאתָ, niṭmēʾṯ נִטְמֵאת beside נִבַּאְתָּ/נִטְמַאְתְּ).
+                // נִבֵּאתָ, niṭmēʾṯ נִטְמֵאת beside נִבַּאְתָּ/נִטְמַאְתְּ). The heavy
+                // 2mp/2fp afformatives quiesce the same way — millēʾṯem מִלֵּאתֶם
+                // beside the strong מִלַּאְתֶּם.
                 let lamed_aleph_derived_perf = (matches!(
                     binyan,
                     Binyan::Piel | Binyan::Pual | Binyan::Hithpael | Binyan::Niphal
                 ) && form == Form::Perfect
                     && root.lamed() == letter::ALEF
-                    && perfect_suffix_kind(pgn) == Suffix::Consonantal)
+                    && matches!(
+                        perfect_suffix_kind(pgn),
+                        Suffix::Consonantal | Suffix::Heavy
+                    ))
                     .then(|| lamed_aleph_derived_perfect_variant(&text))
                     .flatten();
                 // Paragogic-nun twin of the vocalic-suffix imperfect (tōʔmᵊrûn
