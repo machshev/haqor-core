@@ -360,6 +360,17 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         hebrew::render(&seq)
                     })
                 });
+                // The 2ms perfect also takes the paragogic he (sakkōṯâ סַכֹּתָה
+                // beside sakkôṯā): mirror the form with a trailing he.
+                let geminate_qal_perf_paragogic = geminate_qal_perf.as_deref().and_then(|t| {
+                    ((pgn.person, pgn.gender, pgn.number)
+                        == (
+                            Some(Person::Second),
+                            Some(Gender::Masculine),
+                            Some(Number::Singular),
+                        ))
+                    .then(|| format!("{t}\u{05D4}"))
+                });
                 // Uncontracted geminate perfect with the doubled radical on a
                 // hataf (ṣālălû צָלֲלוּ beside the plain-sheva צָלְלוּ).
                 let geminate_qal_perf_hataf = (binyan == Binyan::Qal
@@ -3160,6 +3171,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     maen_ptcp,
                     geminate_qal_perf_pausal,
                     geminate_qal_perf_hataf,
+                    geminate_qal_perf_paragogic,
                     nagash_imv_holam,
                     hiphil_impf_sheva,
                     hollow_niphal_inf,
