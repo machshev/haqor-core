@@ -2526,7 +2526,22 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                                     t[1].vowel = Some(Vowel::Qamats);
                                     hebrew::render(&t)
                                 });
-                                std::iter::once(hebrew::render(&s)).chain(tsere).chain(qamats)
+                                // o-class twin: the geminate Niphal perfect also
+                                // takes a holam theme — nāzōllû נָזֹלּוּ beside
+                                // nāzallû, nāsōḇ beside nāsaḇ. Holds across the
+                                // subjects this builder emits (3ms/3fs/3cp), so
+                                // gate only on C1 carrying the a-class patah.
+                                let holam = (s.get(1).and_then(|c| c.vowel)
+                                    == Some(Vowel::Patah))
+                                .then(|| {
+                                    let mut t = s.clone();
+                                    t[1].vowel = Some(Vowel::Holam);
+                                    hebrew::render(&t)
+                                });
+                                std::iter::once(hebrew::render(&s))
+                                    .chain(tsere)
+                                    .chain(qamats)
+                                    .chain(holam)
                             })
                             .collect::<Vec<_>>()
                     } else if binyan == Binyan::Niphal
