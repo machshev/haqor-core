@@ -2548,10 +2548,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && form == Form::Perfect
                         && root.has(Gizra::Hollow)
                     {
-                        // Hollow Niphal perfect nāCôC (נָכוֹן, נָפֹצוּ).
-                        hollow_niphal_perfect_variant(root, pgn)
+                        // Hollow Niphal perfect nāCôC (נָכוֹן, נָפֹצוּ); the
+                        // consonantal/heavy afformatives take the -ōṯ- linking
+                        // (nᵉqōṭōṯem נְקֹטֹתֶם) the base builder leaves to the
+                        // strong fallback.
+                        let mut v = hollow_niphal_perfect_variant(root, pgn)
                             .map(|s| vec![hebrew::render(&s)])
-                            .unwrap_or_default()
+                            .unwrap_or_default();
+                        v.extend(hollow_niphal_otav_perfect(root, pgn));
+                        v
                     } else if binyan == Binyan::Qal && form == Form::Perfect {
                         // Stative qāṭēl/qāṭōl perfect twins (ṭāhēr טָהֵר, qāṭōn,
                         // yāḡōrtî יָגֹרְתִּי) — any subject whose theme patah
@@ -8288,6 +8293,52 @@ fn qal_participle_fs_a_variant(root: &Root) -> Vec<Cons> {
 /// builds the contracted form for the common third-person subjects — 3cp nāp̄ôṣû
 /// נָפֹצוּ, 3fs nāḵônâ. The ô is written defectively (holam on C1); the plene
 /// (vav mater) spelling matches via the parser's holam collapse.
+/// Hollow Niphal perfect consonantal/heavy-suffix host: the contracted nāqôṭ
+/// stem takes an -ōṯ- linking like the Hiphil hăqîmōṯî — nᵉqōṭōṯem נְקֹטֹתֶם,
+/// nᵉqōṭōṯî. The prefix nun reduces to sheva and C1/C3 both carry holam, then
+/// the consonantal afformative. Emitted defectively (the parser's holam
+/// collapse matches plene spellings). Gated to hollow roots + a consonantal /
+/// heavy suffix.
+fn hollow_niphal_otav_perfect(root: &Root, pgn: Pgn) -> Option<String> {
+    use Vowel::*;
+    if !root.has(Gizra::Hollow)
+        || !matches!(
+            perfect_suffix_kind(pgn),
+            Suffix::Consonantal | Suffix::Heavy
+        )
+    {
+        return None;
+    }
+    let suffix: Vec<Cons> = match (pgn.person, pgn.gender, pgn.number) {
+        (Some(Person::First), _, Some(Number::Singular)) => {
+            vec![Cons::new(letter::TAV).with_vowel(Hiriq), Cons::new(letter::YOD)]
+        }
+        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Singular)) => {
+            vec![Cons::new(letter::TAV).with_vowel(Qamats)]
+        }
+        (Some(Person::Second), Some(Gender::Feminine), Some(Number::Singular)) => {
+            vec![Cons::new(letter::TAV).with_vowel(Sheva)]
+        }
+        (Some(Person::First), _, Some(Number::Plural)) => {
+            vec![Cons::new(letter::NUN), Cons::new(letter::VAV).with_dagesh()]
+        }
+        (Some(Person::Second), Some(Gender::Masculine), Some(Number::Plural)) => {
+            vec![Cons::new(letter::TAV).with_vowel(Segol), Cons::new(letter::MEM)]
+        }
+        (Some(Person::Second), Some(Gender::Feminine), Some(Number::Plural)) => {
+            vec![Cons::new(letter::TAV).with_vowel(Segol), Cons::new(letter::NUN)]
+        }
+        _ => return None,
+    };
+    let mut seq = vec![
+        Cons::new(letter::NUN).with_vowel(Sheva),
+        rad(root.pe(), 1).with_vowel(Holam),
+        rad(root.lamed(), 3).with_vowel(Holam),
+    ];
+    seq.extend(suffix);
+    Some(hebrew::render(&seq))
+}
+
 fn hollow_niphal_perfect_variant(root: &Root, pgn: Pgn) -> Option<Vec<Cons>> {
     use Vowel::*;
     let nun = Cons::new(letter::NUN).with_vowel(Qamats);
