@@ -3566,6 +3566,38 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(niphal_inf_abs);
 
+    // I-guttural Niphal perfect hataf-segol twin: the guttural C1 after the
+    // segol prefix carries a hataf-segol, which the 3ms builder gets (נֶעֱזַב)
+    // but the vocalic-afformative forms leave as a plain segol (נֶעֶזָבָה). Lift
+    // a nun-segol + guttural-segol opening to the hataf — neʕĕzāḇâ נֶעֱזָבָה,
+    // nehĕrāsâ נֶהֱרָסָה, neʔĕlāmâ נֶאֱלָמָה.
+    let niphal_gutt_hatef: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            f.binyan == Binyan::Niphal
+                && f.form == Form::Perfect
+                && hebrew::is_guttural(root.pe())
+        })
+        .filter_map(|f| {
+            let mut seq = hebrew::parse_pointed(&f.text);
+            if seq.len() >= 2
+                && seq[0].letter == letter::NUN
+                && seq[0].vowel == Some(Vowel::Segol)
+                && seq[1].letter == root.pe()
+                && seq[1].vowel == Some(Vowel::Segol)
+            {
+                seq[1].vowel = Some(Vowel::HatafSegol);
+                Some(VerbForm {
+                    text: hebrew::render(&seq),
+                    ..f.clone()
+                })
+            } else {
+                None
+            }
+        })
+        .collect();
+    forms.extend(niphal_gutt_hatef);
+
     // Hollow/I-weak Hiphil imperative 2ms with retained î: beside the
     // apocopated haqṭēl (הָקֵם, הָבֵא) the full î grade is attested for the
     // imperative — hāḇîʾ הָבִיא, hôṣîʾ הוֹצִיא, hāsîr הָסִיר, hārîm הָרִים —
@@ -13395,6 +13427,19 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn iguttural_niphal_perfect_3fs_hatef() {
+        // I-guttural Niphal perfect 3fs lifts the guttural C1 from a plain segol
+        // to a hataf-segol — neʕĕzāḇâ נֶעֱזָבָה (עזב), nehĕrāsâ נֶהֱרָסָה (הרס).
+        let three_fs = Pgn::new(Person::Third, Gender::Feminine, Number::Singular);
+        let p = generate_paradigm(&Root::parse("עזב").unwrap());
+        assert!(p.forms.iter().any(|f| f.binyan == Binyan::Niphal
+            && f.form == Form::Perfect
+            && f.pgn == three_fs
+            // guttural ʕ (05E2) carries hataf-segol (05B1).
+            && f.text.contains("\u{05E2}\u{05B1}")));
     }
 
     #[test]
