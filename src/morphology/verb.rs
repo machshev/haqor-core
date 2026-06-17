@@ -10018,7 +10018,10 @@ fn perfect_subject_object_suffixes(
             }
             return out;
         }
-        if matches!(c3, letter::HE | letter::ALEF | letter::VAV | letter::YOD)
+        // III-aleph (C3=aleph) flows through the strong stem: the 3fs -aṯ
+        // afformative keeps the aleph consonantal with its own theme vowel —
+        // nᵉśāʾaṯnî נְשָׂאַתְנִי (apply_guttural strips any aleph dagesh).
+        if matches!(c3, letter::HE | letter::VAV | letter::YOD)
             || matches!(c2, letter::VAV | letter::YOD)
             || c1 == letter::VAV
         {
