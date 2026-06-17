@@ -168,6 +168,57 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Imperfect",
         pgn: "3fs",
     },
+    IrregularVerb {
+        // Hothpaal-style census form, qamats + no doubling (Num 1:47 etc.);
+        // generator builds the regular doubled הִתְפַּקְּדוּ.
+        surface: "הִתְפָּקְדוּ",
+        root: "פקד",
+        binyan: "Hithpael",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // Hollow/II-aleph Qal participle "those who despise" (Ezek 28:24,26).
+        surface: "הַשָּׁאטִים",
+        root: "שאט",
+        binyan: "Qal",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
+        // Qal participle fp of אתה "the things to come" (Isa 41:23, 44:7).
+        surface: "הָאֹתִיּוֹת",
+        root: "אתה",
+        binyan: "Qal",
+        form: "Participle (act.)",
+        pgn: "fp",
+    },
+    IrregularVerb {
+        // Paragogic-he on a 3fs wayyiqtol of עגב (Ezek 23:3).
+        surface: "וַתַּעְגְּבָה",
+        root: "עגב",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // Doubly-weak pe-nun + consonantal-he Hiphil imperfect, mappiq
+        // (נגה "illumine", 2 Sam 22:29).
+        surface: "יַגִּיהַּ",
+        root: "נגה",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Doubly-weak pe-yod + III-he Qal infinitive construct (ירה "shoot",
+        // with ל; 1 Sam 20:36, 2 Chr 35:23).
+        surface: "לִירוֹת",
+        root: "ירה",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
