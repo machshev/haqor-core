@@ -3005,6 +3005,24 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         _ => {}
                     }
                 }
+                // I-guttural Hophal imperfect object-suffix host in its loud
+                // compensatory grade (tāʕāḇḏēm תָעָבְדֵם beside the strong-built
+                // tŏʕḇāḏēm תׇּעְבָדֵם): the guttural rejects the virtual doubling,
+                // so the prefix qamats-qatan opens to a full qamats with no
+                // dagesh and the guttural carries the theme. Narrowly gated, so
+                // it adds at most one variant per existing suffixed form.
+                if binyan == Binyan::Hophal
+                    && root.has(Gizra::PeGuttural)
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+                {
+                    let extra: Vec<(Pgn, String)> = object_suffixed
+                        .iter()
+                        .filter_map(|(p, s)| {
+                            iguttural_hophal_imperfect_suffix_loud(s).map(|v| (*p, v))
+                        })
+                        .collect();
+                    object_suffixed.extend(extra);
+                }
                 forms.push(VerbForm {
                     binyan,
                     form,
@@ -8869,6 +8887,29 @@ fn guttural_silent_sheva_variant(text: &str) -> Option<String> {
 /// hataf-qamats — hoḥŏlêṯî הָחֳלֵיתִי, hoʕŏmaḏ הָעֳמַד. Promotes seq[0]'s
 /// qamats-qatan → qamats and the C1 guttural's silent sheva → hataf-qamats.
 /// Additive.
+/// I-guttural Hophal imperfect object-suffix host in its loud (compensatory)
+/// grade. The strong suffix host builds the prefix(qamats-qatan, virtual
+/// dagesh) + guttural(sheva) + C2(qamats) shape — tŏʕḇāḏēm תׇּעְבָדֵם — but the
+/// guttural rejects the doubling: the prefix qamats-qatan opens to a full
+/// qamats with no dagesh, the guttural opens to a matching qamats, and the
+/// theme reduces to sheva — tāʕāḇḏēm תָעָבְדֵם. Fires only on that exact shape.
+fn iguttural_hophal_imperfect_suffix_loud(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() < 4
+        || seq[0].vowel != Some(Vowel::QamatsQatan)
+        || !hebrew::is_guttural(seq[1].letter)
+        || seq[1].vowel != Some(Vowel::Sheva)
+        || seq[2].vowel != Some(Vowel::Qamats)
+    {
+        return None;
+    }
+    seq[0].vowel = Some(Vowel::Qamats);
+    seq[0].dagesh = false;
+    seq[1].vowel = Some(Vowel::Qamats);
+    seq[2].vowel = Some(Vowel::Sheva);
+    Some(hebrew::render(&seq))
+}
+
 fn iguttural_hophal_loud_preformative_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     if seq.len() < 2
