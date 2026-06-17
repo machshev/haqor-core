@@ -2774,6 +2774,19 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                             for t in &hollow_participle {
                                 v.extend(participle_object_suffixes(t));
                             }
+                            // The hollow Hiphil participle (mēḇîʾ מֵבִיא) is a
+                            // suffix host too — beside the strong-built מַבְוִיא the
+                            // bare text gives. The tsere prefix also reduces
+                            // propretonically before the suffix (mᵊḇîʾăḵā מְבִיאֲךָ,
+                            // mᵊqîmî מְקִימִי), so feed both grades.
+                            if let Some(t) = &hollow_hiphil_ptcp {
+                                v.extend(participle_object_suffixes(t));
+                                let mut seq = hebrew::parse_pointed(t);
+                                if seq.first().map(|c| c.vowel) == Some(Some(Vowel::Tsere)) {
+                                    seq[0].vowel = Some(Vowel::Sheva);
+                                    v.extend(participle_object_suffixes(&hebrew::render(&seq)));
+                                }
+                            }
                             v
                         } else if pgn == Pgn::gn(Gender::Masculine, Number::Plural) {
                             let mut v = participle_mp_object_suffixes(&text);
@@ -13436,6 +13449,20 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn hollow_hiphil_participle_object_suffix() {
+        // The hollow Hiphil participle (mēḇîʾ מֵבִיא) hosts object suffixes with
+        // the tsere prefix reducing propretonically — mᵊḇîʾăḵā מְבִיאֲךָ.
+        let p = generate_paradigm(&Root::parse("בוא").unwrap());
+        let ms = Pgn::gn(Gender::Masculine, Number::Singular);
+        assert!(p.forms.iter().any(|f| f.binyan == Binyan::Hiphil
+            && f.form == Form::ParticipleActive
+            && f.pgn == ms
+            && f.object_suffix.is_some()
+            // mem (05DE) + sheva (05B0) prefix, then bet-hiriq...
+            && f.text.starts_with("\u{05DE}\u{05B0}\u{05D1}")));
     }
 
     #[test]
