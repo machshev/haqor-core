@@ -3620,6 +3620,47 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(niphal_gutt_hatef);
 
+    // Hollow Qal perfect qamats twin before a consonantal afformative: beside
+    // the context grade maṯnû מַתְנוּ the pausal/long grade māṯnû מָתְנוּ occurs —
+    // the contracted stem's patah lengthens to qamats. Lift the first radical.
+    let hollow_perf_qamats: Vec<VerbForm> = if root.has(Gizra::Hollow) {
+        forms
+            .iter()
+            .filter(|f| {
+                f.binyan == Binyan::Qal
+                    && f.form == Form::Perfect
+                    && f.object_suffix.is_none()
+                    && matches!(
+                        (f.pgn.person, f.pgn.number),
+                        (Some(Person::First), Some(Number::Plural))
+                            | (Some(Person::Second), _)
+                            | (Some(Person::First), Some(Number::Singular))
+                    )
+            })
+            .filter_map(|f| {
+                let mut seq = hebrew::parse_pointed(&f.text);
+                // First radical (pe) carries patah, second slot a silent sheva
+                // (the contracted stem before the consonantal afformative).
+                if seq.len() >= 3
+                    && seq[0].letter == root.pe()
+                    && seq[0].vowel == Some(Vowel::Patah)
+                    && seq[1].vowel == Some(Vowel::Sheva)
+                {
+                    seq[0].vowel = Some(Vowel::Qamats);
+                    Some(VerbForm {
+                        text: hebrew::render(&seq),
+                        ..f.clone()
+                    })
+                } else {
+                    None
+                }
+            })
+            .collect()
+    } else {
+        Vec::new()
+    };
+    forms.extend(hollow_perf_qamats);
+
     // Hollow/I-weak Hiphil imperative 2ms with retained î: beside the
     // apocopated haqṭēl (הָקֵם, הָבֵא) the full î grade is attested for the
     // imperative — hāḇîʾ הָבִיא, hôṣîʾ הוֹצִיא, hāsîr הָסִיר, hārîm הָרִים —
@@ -13452,6 +13493,19 @@ mod tests {
             && f.object_suffix == Some(two_ms)
             // prefix he keeps patah (הַ), not reduced to hataf-segol (הֱ).
             && f.text.chars().take(2).eq(['\u{05D4}', '\u{05B7}'])));
+    }
+
+    #[test]
+    fn hollow_perfect_qamats_before_consonant_suffix() {
+        // Hollow Qal perfect before a consonantal afformative has a pausal/long
+        // grade beside the context patah — māṯnû מָתְנוּ beside maṯnû מַתְנוּ.
+        let p = generate_paradigm(&Root::parse("מות").unwrap());
+        let one_cp = Pgn::new(Person::First, Gender::Common, Number::Plural);
+        assert!(p.forms.iter().any(|f| f.binyan == Binyan::Qal
+            && f.form == Form::Perfect
+            && f.pgn == one_cp
+            // mem (05DE) carries qamats (05B8).
+            && f.text.starts_with("\u{05DE}\u{05B8}")));
     }
 
     #[test]
