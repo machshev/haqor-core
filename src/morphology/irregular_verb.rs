@@ -219,6 +219,65 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Inf. Construct",
         pgn: "",
     },
+    IrregularVerb {
+        // Apocopated III-he Qal jussive "may he have dominion" (Ps 72:8), final
+        // sheva + dagesh.
+        surface: "וְיֵרְדְּ",
+        root: "רדה",
+        binyan: "Qal",
+        form: "Jussive",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Pe-yod Qal perfect 2fs with holam theme, וְיֹלַדְתְּ (Gen 16:11, Judg 13:5,7).
+        surface: "וְיֹלַדְתְּ",
+        root: "ילד",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "2fs",
+    },
+    IrregularVerb {
+        // Apocopated III-he Qal wayyiqtol "and he took captive" (Num 21:1).
+        surface: "וַיִּשְׁבְּ",
+        root: "שבה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Defectively-pointed וַיֹּאמְרוּ (medial sheva omitted in the text).
+        surface: "וַיֹּאמרוּ",
+        root: "אמר",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // III-he Qal imperative 2ms with a-vowels, אָרָה "pluck" (Ps 80:13, Song 5:1).
+        surface: "אָרָה",
+        root: "ארה",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // Geminate Hiphil imperfect 1cs "I will do harm" (רעע); generator reads
+        // it otherwise.
+        surface: "אָרַע",
+        root: "רעע",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // Contracted I-aleph Hiphil imperfect 1cs "I will gather" (אסף, the two
+        // alephs merging; Mic 4:6, Zeph 1:2).
+        surface: "אֹסֵף",
+        root: "אסף",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
