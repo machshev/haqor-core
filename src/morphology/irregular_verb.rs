@@ -108,6 +108,66 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Imperfect",
         pgn: "2mp",
     },
+    IrregularVerb {
+        // Qal vocalization of ערמ "be crafty" (1 Sam 23:22); generator reads it
+        // only as Hiphil.
+        surface: "יַעְרִם",
+        root: "ערמ",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Niphal perfect 3fs of the highly-irregular היה (Mic 2:4 etc.).
+        surface: "וְנִהְיָתָה",
+        root: "היה",
+        binyan: "Niphal",
+        form: "Perfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // Noun-like Qal infinitive construct of יכל "be able" (Num 14:16).
+        surface: "יְכֹלֶת",
+        root: "יכל",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // III-guttural Hithpael imperfect, theme qamats before furtive ʿayin
+        // (Prov 18:1); generator builds the regular patah יִתְגַּלַּע.
+        surface: "יִתְגַּלָּע",
+        root: "גלע",
+        binyan: "Hithpael",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // II-guttural Hithpael imperfect compensatory variant (נחם); generator
+        // builds the regular virtual-doubling יִתְנַחֵם.
+        surface: "יִתְנֶחָם",
+        root: "נחם",
+        binyan: "Hithpael",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // III-he/aleph Qal participle of נשא II "lend on interest" (creditor),
+        // segol theme written with final aleph (Deut 24:11 etc.).
+        surface: "נֹשֶׁא",
+        root: "נשא",
+        binyan: "Qal",
+        form: "Participle (act.)",
+        pgn: "ms",
+    },
+    IrregularVerb {
+        // Geminate Qal imperfect 3fs, poetic energic spelling (Prov 1:20, 8:3).
+        surface: "תָּרֹנָּה",
+        root: "רננ",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3fs",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
