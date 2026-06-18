@@ -321,6 +321,7 @@ const FUNCTION_WORDS: &[&str] = &[
     // sake of", and the adverbial הַרְבֵּה "much/many".
     "לִקְרַאת",
     "לִקְרָאתוֹ",
+    "לִקְרַאתְכֶם",
     "בַּעֲבוּר",
     "הַרְבֵּה",
     // Number + pronominal suffix — closed-class, never a verb: שְׁנֵיהֶם "the
@@ -362,6 +363,11 @@ const FUNCTION_WORDS: &[&str] = &[
     "אֲהָהּ",
     "רֵיקָם",
     "אֲנָחְנוּ",
+    // Adverb "afterward" written as a single orthographic word in the Leningrad
+    // text — אַחֲרֵי + כֵן with no separating space (morphhb analyses it as two
+    // words, so the joined token never matches by parts). Closed-class; listed
+    // here (peeled) so the וְ-prefixed וְאַחֲרֵיכֵן resolves too.
+    "אַחֲרֵיכֵן",
 ];
 
 /// Closed-class surfaces matched by **exact** pointed form — no proclitic
@@ -476,6 +482,7 @@ const FUNCTION_WORDS_EXACT: &[&str] = &[
     "וּמִבַּלְעָדַי",
     "וּמִלְמַעְלָה",
     "וּפִתְאֹם",
+    "זֹה",
     "זֹּה",
     "זוּלָתֶךָ",
     "חָלִלָה",
