@@ -3654,6 +3654,24 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(cohort_twins);
 
+    // Pe-yod Hophal o/u twin: the contracted preformative is spelled with a
+    // shureq (hûšaḇ הוּשַׁב) or, for some roots, a holam-mater (hôḏaʕ הוֹדַע).
+    // apply_pe_yod builds the shureq; mirror every pe-yod Hophal form with its
+    // holam-vav grade.
+    if root.has(Gizra::PeYod) {
+        let hophal_holam: Vec<VerbForm> = forms
+            .iter()
+            .filter(|f| f.binyan == Binyan::Hophal)
+            .filter_map(|f| {
+                pe_yod_hophal_holam_variant(&f.text).map(|t| VerbForm {
+                    text: t,
+                    ..f.clone()
+                })
+            })
+            .collect();
+        forms.extend(hophal_holam);
+    }
+
     // Short-cohortative alias: OSHB tags many bare 1st-person imperfects (no -â
     // ending, אֶמְצָא, אֶפֹּל, אֲמַדֵּד, אָבוֹא, and object-suffixed אַכֶּנּוּ) as
     // cohortative by mood. The short cohortative is spelled identically to the
@@ -6635,6 +6653,24 @@ fn apply_pe_yod(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, pg
                 changed = true;
             }
         }
+        (Binyan::Hophal, _) => {
+            // Hophal of original I-Vav: the vav reappears as a shureq mater and
+            // the preformative loses its vowel, contracting to hû-/yû- —
+            // hûšaḇ (הוּשַׁב), hûraḏ (הוּרַד), hûlaḏ (הוּלַד). The strong builder
+            // wrongly keeps the yod consonantal (הׇיְשַׁב), so rebuild it.
+            if let Some(idx) = radical_idx(seq, 1) {
+                if idx > 0 {
+                    seq[idx - 1].vowel = None;
+                }
+                seq[idx] = oshureq();
+                // C1 is now an open vav-mater syllable (hû-), so a begedkefet C2
+                // spirantises — drop the dagesh lene the strong builder added.
+                if let Some(c2) = radical_idx(seq, 2) {
+                    seq[c2].dagesh = false;
+                }
+                changed = true;
+            }
+        }
         (Binyan::Niphal, Form::Perfect | Form::ParticipleActive) => {
             // Niphal perfect & participle of original I-Vav: like the Hiphil,
             // the vav reappears as a holam-male after the nun preformative,
@@ -9448,6 +9484,24 @@ fn ocv(letter: char, v: Vowel) -> Cons {
 /// A shureq written as a vav mater bearing the dagesh point (וּ).
 fn oshureq() -> Cons {
     Cons::new(letter::VAV).with_dagesh()
+}
+
+/// Holam-mater twin of a contracted pe-yod Hophal: the shureq preformative
+/// hû- (וּ, a vowelless vav with dagesh after a vowelless preformative) also
+/// surfaces as a holam-mater hô- (וֹ) — hôḏaʕ הוֹדַע beside hûḏaʕ. Additive.
+fn pe_yod_hophal_holam_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() < 3
+        || seq[0].vowel.is_some()
+        || seq[1].letter != letter::VAV
+        || !seq[1].dagesh
+        || seq[1].vowel.is_some()
+    {
+        return None;
+    }
+    seq[1].dagesh = false;
+    seq[1].vowel = Some(Vowel::Holam);
+    Some(hebrew::render(&seq))
 }
 
 /// Qal Perfect 3ms with a pronominal object suffix. The connecting stem is
