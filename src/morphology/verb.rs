@@ -9561,7 +9561,9 @@ pub(crate) fn host_object_suffixes(
     } else if matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
         && imperfect_suffix_kind(pgn) == Suffix::Vocalic
     {
-        imperfect_vocalic_object_suffixes(text)
+        let mut v = imperfect_vocalic_object_suffixes(text);
+        v.extend(plene_hiriq_vocalic_object_suffixes(text));
+        v
     } else if form == Form::Perfect
         && matches!(
             (pgn.person, pgn.gender, pgn.number),
@@ -9622,7 +9624,9 @@ pub(crate) fn host_object_suffixes(
                 | (Some(Second), Some(Feminine), Some(Singular))
         )
     {
-        imperfect_vocalic_object_suffixes(text)
+        let mut v = imperfect_vocalic_object_suffixes(text);
+        v.extend(plene_hiriq_vocalic_object_suffixes(text));
+        v
     } else {
         Vec::new()
     }
@@ -11255,6 +11259,47 @@ fn imperfect_vocalic_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
             defec.extend_from_slice(tail);
             out.push((obj, hebrew::render(&defec)));
         }
+    }
+    out
+}
+
+/// Object suffixes on a vocalic host whose `-î` subject is written as a *plene
+/// hiriq* — a consonant bearing hiriq followed by a yod mater (haśmîʕî
+/// הַשְׁמִיעִי, the î-stem Hiphil 2fs imperative/imperfect). The generic
+/// [`imperfect_vocalic_object_suffixes`] models only the bare-mater shape (a
+/// vowelless consonant carrying the mater) and bails here, because the stem
+/// consonant carries the hiriq — so the suffixed forms (haśmîʕînî
+/// הַשְׁמִיעִינִי) were unreachable. The suffix simply joins the plene base.
+///
+/// Reached only through [`host_object_suffixes`], so these land in the
+/// object-suffix sub-index ([`crate::morphology::parse`]'s `obj_index`), not the
+/// main paradigm index — whose host×suffix cross-product over every root is the
+/// cost this whole approach is designed to avoid.
+fn plene_hiriq_vocalic_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(base_text);
+    let n = seq.len();
+    // Require a …C(hiriq) yod(bare mater) ending.
+    if n < 3
+        || seq[n - 1].letter != letter::YOD
+        || seq[n - 1].vowel.is_some()
+        || seq[n - 2].vowel != Some(Hiriq)
+    {
+        return Vec::new();
+    }
+    let tails: &[(Pgn, &[Cons])] = &[
+        (OBJ_3MS, &[Cons::new(letter::HE), oshureq()]),
+        (OBJ_3FS, &[Cons::new(letter::HE).with_vowel(Qamats)]),
+        (OBJ_1CS, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]),
+        (OBJ_2MS, &[ocv(letter::KAF, Qamats)]),
+        (OBJ_1CP, &[Cons::new(letter::NUN), oshureq()]),
+        (OBJ_3MP, &[Cons::new(letter::MEM)]),
+    ];
+    let mut out = Vec::new();
+    for &(obj, tail) in tails {
+        let mut s = seq.clone();
+        s.extend_from_slice(tail);
+        out.push((obj, hebrew::render(&s)));
     }
     out
 }
