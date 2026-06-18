@@ -2169,4 +2169,29 @@ pub const PROPER_NAMES: &[&str] = &[
     "תֵּמָא",
     "תַּלְמָי",
     "תַחְפְּנֵס",
+    // Gold-confirmed proper nouns harvested from review_missing (2026-06-18):
+    // OSHB tags each surface Np/Ng but the lexicon citation doesn't reach the
+    // attested spelling/prefix. Distinctive skeletons only (no verb-homograph
+    // collision); short ambiguous skeletons (שׁוא, רפא, נתן…) deliberately left out.
+    "הַקַּרְקָּעָה",
+    "פְרָעֹה",
+    "עֻזִּיָהוּ",
+    "עֻזִיָהוּ",
+    "נְבוּכַדְנֶאצַר",
+    "לְדַרְיוֹשׁ",
+    "לִירוּשֳׁלִָם",
+    "יְרוּשָׁלַם",
+    "יִהוֹשֻׁעַ",
+    "יְהוֹשֻׁעָ",
+    "יֵשׁוּע",
+    "וּשְׁמַעְיָּהוּ",
+    "וְיִשִׁיָּהוּ",
+    "חֲזָהאֵל",
+    "חְזָהאֵל",
+    "אֲרַיָּוֶךְ",
+    "בִנָימִן",
+    "מִיּשְׂרָאֵל",
+    "הַשׁוּנַּמִּית",
+    "הַיִּשְׁרְאֵלִית",
+    "הַלְוִּיִּם",
 ];
