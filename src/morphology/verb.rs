@@ -1633,10 +1633,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 } else {
                     Default::default()
                 };
-                // III-He Qal doubled-final apocope wayyiqtol (וַיֵּשְׁתְּ, וַתֵּבְךְּ).
+                // III-He Qal doubled-final apocope, wayyiqtol (וַיֵּשְׁתְּ,
+                // וַתֵּבְךְּ) and the bare jussive it is built from (תֵּשְׁתְּ "drink",
+                // Lev 10:9 HVqj2ms).
                 let lamed_he_doubled_apoc = (binyan == Binyan::Qal
                     && root.lamed() == letter::HE
-                    && form == Form::Wayyiqtol
+                    && matches!(form, Form::Wayyiqtol | Form::Jussive)
                     && imperfect_suffix_kind(pgn) == Suffix::Zero)
                     .then(|| lamed_he_doubled_apocope_variant(root, &text))
                     .flatten();
@@ -8613,27 +8615,32 @@ fn hollow_hiphil_inf_construct(root: &Root) -> Vec<Cons> {
 fn lamed_he_doubled_apocope_variant(root: &Root, text: &str) -> Option<String> {
     use Vowel::*;
     let seq = hebrew::parse_pointed(text);
-    if seq.first().map(|c| c.letter) != Some(letter::VAV) || seq.len() < 2 {
-        return None;
-    }
-    let pre = seq[1].letter;
+    // The wayyiqtol carries a leading vav (וַיֵּשְׁתְּ); the bare jussive is the
+    // same shape without it (יֵשְׁתְּ, 2ms תֵּשְׁתְּ "drink", Lev 10:9).
+    let has_vav = seq.first().map(|c| c.letter) == Some(letter::VAV);
+    let pre_idx = usize::from(has_vav);
+    let pre = seq.get(pre_idx).map(|c| c.letter)?;
     if !matches!(pre, letter::YOD | letter::TAV | letter::ALEF | letter::NUN) {
         return None;
     }
-    let mut out = vec![
-        Cons::new(letter::VAV).with_vowel(Patah),
-        {
-            let mut c = Cons::new(pre).with_vowel(Tsere);
-            c.dagesh = true;
-            c
-        },
-        rad(root.pe(), 1).with_vowel(Sheva),
-        {
-            let mut c = rad(root.ayin(), 2).with_vowel(Sheva);
-            c.dagesh = true;
-            c
-        },
-    ];
+    let mut out = Vec::with_capacity(4);
+    if has_vav {
+        out.push(Cons::new(letter::VAV).with_vowel(Patah));
+    }
+    out.push({
+        let mut c = Cons::new(pre).with_vowel(Tsere);
+        // The wayyiqtol always doubles the preformative (forte); the bare
+        // jussive only carries a dagesh lene on a begedkefet preformative —
+        // תֵּשְׁתְּ (tav) but יֵשְׁתְּ / אֵשְׁתְּ (yod/aleph, no dagesh).
+        c.dagesh = has_vav || hebrew::is_begedkefet(pre);
+        c
+    });
+    out.push(rad(root.pe(), 1).with_vowel(Sheva));
+    out.push({
+        let mut c = rad(root.ayin(), 2).with_vowel(Sheva);
+        c.dagesh = true;
+        c
+    });
     // A final guttural/resh C2 can't take the dagesh; drop it there.
     if hebrew::rejects_dagesh(root.ayin()) {
         out.last_mut().unwrap().dagesh = false;
@@ -14323,6 +14330,16 @@ mod tests {
         let p = generate_paradigm(&Root::parse("ראה").unwrap());
         assert!(has_text(&p, Binyan::Qal, Form::Jussive, THREE_MS, "יֵרֶא"));
         assert!(has_text(&p, Binyan::Qal, Form::Imperfect, THREE_MS, "יֵרֶא"));
+    }
+
+    #[test]
+    fn lamed_he_qal_jussive_tsere_apocope() {
+        // שתה Qal apocopated jussive also takes the tsere-preformative
+        // resolution (C1 on a vocal sheva, doubled final): tēšt תֵּשְׁתְּ "drink"
+        // (Lev 10:9 HVqj2ms), 3ms yēšt יֵשְׁתְּ — beside the segolate tišet תִּשֶׁתּ.
+        let p = generate_paradigm(&Root::parse("שתה").unwrap());
+        assert!(has_text(&p, Binyan::Qal, Form::Jussive, TWO_MS, "תֵּשְׁתְּ"));
+        assert!(has_text(&p, Binyan::Qal, Form::Jussive, THREE_MS, "יֵשְׁתְּ"));
     }
 
     #[test]
