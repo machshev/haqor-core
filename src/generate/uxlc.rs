@@ -55,6 +55,38 @@ pub const OT_BOOKS: &[&str] = &[
     "Chronicles_2",
 ];
 
+/// Hebrew maqaf (U+05BE) — the word-joining hyphen.
+const MAQAF: char = '\u{05BE}';
+
+/// Strip a stray *word-internal* maqaf, one with a Hebrew letter still to come.
+///
+/// UXLC joins two words by trailing a maqaf on each `<w>`, so a maqaf is never
+/// legitimately word-internal. The Leningrad source carries exactly one such
+/// artifact: Psalm 67:2 spells יָאֵר as `יָאֵ֥־<x>c</x>ר`, the maqaf stranded on
+/// the fragment before an inline editorial note. With the note dropped the
+/// maqaf lands mid-word, and any downstream maqaf-splitting tokeniser (the
+/// surface generator, and ../haqor's word-info panel) then breaks the word into
+/// the stub יָאֵ and a bogus one-letter ר. Removing the internal maqaf restores
+/// the WLC reading יָאֵר. A trailing maqaf (כָּל־, the normal word-joiner) is
+/// kept untouched.
+fn strip_internal_maqaf(word: &str) -> String {
+    if !word.contains(MAQAF) {
+        return word.to_string();
+    }
+    let chars: Vec<char> = word.chars().collect();
+    chars
+        .iter()
+        .enumerate()
+        .filter(|&(i, &c)| {
+            !(c == MAQAF
+                && chars[i + 1..]
+                    .iter()
+                    .any(|&d| (0x05D0..=0x05EA).contains(&(d as u32))))
+        })
+        .map(|(_, &c)| c)
+        .collect()
+}
+
 /// A single verse: book, chapter, verse, and the space-joined words.
 pub struct Verse {
     pub book: u8,
@@ -110,12 +142,13 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
             Event::End(e) => {
                 if e.name().as_ref() == b"w" {
                     in_word = false;
+                    let assembled = strip_internal_maqaf(&std::mem::take(&mut word));
                     chapters
                         .entry(chapter)
                         .or_default()
                         .entry(verse)
                         .or_default()
-                        .push(std::mem::take(&mut word));
+                        .push(assembled);
                 }
             }
             Event::Text(t) if in_word => {
@@ -157,4 +190,19 @@ fn attr_n(
         .context("element missing `n` attribute")?;
     let value = attr.decode_and_unescape_value(reader.decoder())?;
     Ok(value.parse()?)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn strips_only_word_internal_maqaf() {
+        // Ps 67:2 יָאֵ֥־ר → the stray internal maqaf is removed, recovering יָאֵר.
+        assert_eq!(strip_internal_maqaf("יָאֵ֥־ר"), "יָאֵ֥ר");
+        // A trailing maqaf (the normal word-joiner, e.g. כָּל־) is left untouched.
+        assert_eq!(strip_internal_maqaf("כָּל־"), "כָּל־");
+        // A word with no maqaf is returned verbatim.
+        assert_eq!(strip_internal_maqaf("שָׁמַיִם"), "שָׁמַיִם");
+    }
 }
