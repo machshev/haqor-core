@@ -3619,6 +3619,26 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(gutt_pausal);
 
+    // III-guttural Piel/Hithpael imperfect pausal twin: the patah theme of a
+    // doubled-C2 imperfect whose final ח/ע blocks the tsere (yiṯgallaʕ
+    // יִתְגַּלַּע) lengthens to qamats in pause (יִתְגַּלָּע). Run over finished
+    // zero-suffix Piel/Hithpael imperfect-family forms.
+    let piel_gutt_pausal: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            matches!(f.binyan, Binyan::Piel | Binyan::Hithpael)
+                && matches!(f.form, Form::Imperfect | Form::Wayyiqtol | Form::Jussive)
+                && f.object_suffix.is_none()
+        })
+        .filter_map(|f| {
+            guttural_pausal_imperfect_patah_variant(&f.text).map(|t| VerbForm {
+                text: t,
+                ..f.clone()
+            })
+        })
+        .collect();
+    forms.extend(piel_gutt_pausal);
+
     // Paragogic-nun over finished long-imperfect vocalic forms: the per-cell
     // twin only appends the nun to the primary cell, so the theme-grade and
     // guttural twins (the pe-guttural segol a-class yeḥpāṣû יֶחְפָּצוּ) never get
@@ -8124,6 +8144,28 @@ fn guttural_pausal_imperfect_plural_variant(text: &str) -> Option<String> {
         _ => return None,
     };
     seq[n - 3].vowel = Some(restored);
+    Some(hebrew::render(&seq))
+}
+
+/// III-guttural Piel/Hithpael imperfect pausal twin: a III-guttural Piel/
+/// Hithpael imperfect closes the doubled C2 on a patah theme, since the final
+/// ח/ע blocks the strong tsere (yiṯgallaʕ יִתְגַּלַּע). That stressed patah
+/// lengthens to qamats in pause — yiṯgallāʕ יִתְגַּלָּע. Run over finished
+/// zero-suffix Piel/Hithpael imperfect-family forms whose final consonant is a
+/// bare ח/ע and whose penult carries patah; raise that patah to qamats. The
+/// furtive-patah grade (יִתְגַּלֵּעַ) carries its vowel ON the final guttural, so
+/// the `vowel.is_none()` test skips it — no double-fire. Additive alternant.
+fn guttural_pausal_imperfect_patah_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 3
+        || !matches!(seq[n - 1].letter, letter::HET | letter::AYIN)
+        || seq[n - 1].vowel.is_some()
+        || seq[n - 2].vowel != Some(Vowel::Patah)
+    {
+        return None;
+    }
+    seq[n - 2].vowel = Some(Vowel::Qamats);
     Some(hebrew::render(&seq))
 }
 
