@@ -466,8 +466,12 @@ fn peel_object_suffix(seq: &[Cons]) -> Vec<(Vec<Cons>, Pgn)> {
         |c: &Cons| c.letter == letter::VAV && c.dagesh && c.vowel.is_none();
     let mut out = Vec::new();
 
-    // -hû (הוּ) 3ms: he + shureq.
-    if is_shureq(last) && prev.letter == letter::HE && prev.vowel.is_none() {
+    // -hû (הוּ) 3ms: he + shureq. The contracted -attû (a dagesh-doubled tav +
+    // shureq, the 3fs-perfect host ʔăḵālattû אֲכָלָתּוּ) is 3ms too.
+    if is_shureq(last)
+        && ((prev.letter == letter::HE && prev.vowel.is_none())
+            || (prev.letter == letter::TAV && prev.dagesh))
+    {
         out.push((seq[..n - 2].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
     }
     // -nû (נוּ) 1cp vs energic -ennû (נּוּ) 3ms: nun + shureq, split on the dagesh.
@@ -494,24 +498,54 @@ fn peel_object_suffix(seq: &[Cons]) -> Vec<(Vec<Cons>, Pgn)> {
     {
         out.push((seq[..n - 2].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Plural)));
     }
-    // -ḵā (ךָ) 2ms: kaf-qamats.
+    // -ḵā (ךָ) 2ms: kaf-qamats; also the he-mater spelling -ḵâ (כָה), a
+    // kaf-qamats followed by a bare he.
     if last.letter == letter::KAF && last.vowel == Some(Vowel::Qamats) {
         out.push((seq[..n - 1].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Singular)));
     }
-    // -eḵ / -āḵ (ךְ) 2fs: bare final kaf.
+    if last.letter == letter::HE
+        && last.vowel.is_none()
+        && !last.dagesh
+        && prev.letter == letter::KAF
+        && prev.vowel == Some(Vowel::Qamats)
+    {
+        out.push((seq[..n - 2].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Singular)));
+    }
+    // bare final kaf: -eḵ 2fs and pausal -āḵ 2ms are homographs (the
+    // preceding vowel distinguishes them) — emit both, additively.
     if last.letter == letter::KAF && matches!(last.vowel, None | Some(Vowel::Sheva)) {
         out.push((seq[..n - 1].to_vec(), pgn(Person::Second, Gender::Feminine, Number::Singular)));
+        out.push((seq[..n - 1].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Singular)));
     }
-    // -hā (הָ) 3fs: he-qamats.
-    if last.letter == letter::HE && last.vowel == Some(Vowel::Qamats) {
+    // -hā (הָ) 3fs: he-qamats; the mappiq -āh (he with a dagesh point, its
+    // qamats on the preceding consonant); or the energic -ennâ (a bare he after
+    // a dagesh-doubled nun, niṯʾaḵlennâ נִתְאַכְלֶנָּה).
+    if last.letter == letter::HE
+        && (last.vowel == Some(Vowel::Qamats)
+            || (last.dagesh && last.vowel.is_none())
+            || (last.vowel.is_none() && prev.letter == letter::NUN && prev.dagesh))
+    {
         out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Feminine, Number::Singular)));
     }
     // -ô (וֹ) 3ms: vav-holam (also a mater in the host — ambiguous, additive).
+    // Preceded by mem it is also the poetic -mô 3mp (yišmᵊrēmô).
     if last.letter == letter::VAV && last.vowel == Some(Vowel::Holam) {
         out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
+        if prev.letter == letter::MEM {
+            out.push((seq[..n - 2].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Plural)));
+        }
     }
-    // -ām / -ēm / -m (ם) 3mp: final mem (not the -ḵem case, which has kaf before).
-    if last.letter == letter::MEM && prev.letter != letter::KAF {
+    // Bare final vav (no vowel, no shureq dagesh): the -w 3ms (after a 1cs
+    // perfect, ʔăḵaltîw) and, after a yod, the plural-host -āyw (his …s).
+    if last.letter == letter::VAV && last.vowel.is_none() && !last.dagesh {
+        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
+        if prev.letter == letter::YOD {
+            out.push((seq[..n - 2].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
+        }
+    }
+    // -ām / -ēm / -m (ם) 3mp: final mem. (The -ḵem 2mp above keys off
+    // kaf-segol; a mem after a root kaf still takes the plain 3mp reading.)
+    if last.letter == letter::MEM {
         out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Plural)));
     }
     // -n / -ān (ן) 3fp: final nun with no vowel of its own.
@@ -2134,5 +2168,36 @@ mod tests {
                     && m.form == Form::Imperfect
                     && m.pgn.label() == "1cp")
         );
+    }
+}
+
+#[cfg(test)]
+mod peel_coverage {
+    use super::*;
+
+    /// The peeler is the inverse of the object-suffix builders: every suffixed
+    /// surface the generator produces should peel back to its object Pgn. Assert
+    /// that holds for ≥99% of generated suffixed forms across a weak-root sample
+    /// (the residue is the ambiguous bare -î 1cs we deliberately don't peel).
+    #[test]
+    fn peeler_inverts_generated_suffixes() {
+        let roots = [
+            "שמר", "קטל", "ברך", "בוא", "קום", "שית", "עשה", "בנה", "ידע", "נתן",
+            "שלח", "אכל",
+        ];
+        let (mut total, mut ok) = (0usize, 0usize);
+        for r in roots {
+            let root = Root::parse(r).unwrap();
+            for vf in &generate_paradigm(&root).forms {
+                let Some(obj) = vf.object_suffix else { continue };
+                total += 1;
+                let seq = hebrew::parse_pointed(&vf.text);
+                if peel_object_suffix(&seq).into_iter().any(|(_, p)| p == obj) {
+                    ok += 1;
+                }
+            }
+        }
+        let pct = 100.0 * ok as f64 / total as f64;
+        assert!(pct >= 99.0, "peeler coverage {ok}/{total} = {pct:.1}% < 99%");
     }
 }
