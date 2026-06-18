@@ -4,7 +4,8 @@ Date: 2026-06-18
 
 ## Status
 
-Proposed
+Accepted — Option C implemented (build-time host-suffix index + parse-on-failure
+lookup). See "Consequences → Outcome" below.
 
 ## Context
 
@@ -84,3 +85,30 @@ carries the host's `(binyan, form, pgn)` and the peeled ending gives the
 - Whichever path: the accuracy harness measures the *generator*, so verify
   obj-suffix coverage against the **in-memory** eval (and product coverage via
   `gen-hebrew` db queries), not the from-db proxy.
+
+### Outcome (implemented)
+
+A variant of **Option C** landed. The host link-stem peeler (`peel_object_suffix`,
+increments 1–2) drives the **generate-and-test** parser's fallback
+(`object_suffix_fallback`): on a zero-match surface it peels a pronominal ending,
+enumerates the reduced stem's roots, and re-applies the suffix builders
+(`host_object_suffixes` — the core of `generate_paradigm`'s suffix dispatch,
+without its twin-base locals) to every *bare* host form, including the
+theme/guttural/post-pass twins the generator never threaded.
+
+For the **indexed** parser (which both the in-memory eval and `gen-hebrew` use),
+the same expansion is precomputed once at `ReverseIndex::build` into a separate
+`obj_index` and consulted by a lookup (`object_suffix_fallback_indexed`). Keeping
+it out of the main `entries` and gating both fallbacks on a *failed parse* means:
+
+- the indexed and generate-and-test parsers stay in agreement on parsing surfaces
+  (neither fallback fires for them — the `indexed_matches_per_surface` parity test
+  still holds);
+- a per-surface generate-and-test is avoided in bulk — the fallback fires on every
+  non-verb word too, so doing it live cost 8–30 min over a full text; the lookup
+  keeps `gen-hebrew --no-prefilter` at ~110 s (was ~43 s).
+
+Result: in-memory full recall 70826 → 70859 (+33), parsed +51; from-db +32. This
+is the first systematic dent in the obj-suffix bucket without the index blowup.
+Remaining gaps are host grades `host_object_suffixes` still can't build and the
+lean fallback-root enumeration's weak-radical misses — additive, safe to widen.

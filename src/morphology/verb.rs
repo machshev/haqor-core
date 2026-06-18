@@ -9513,6 +9513,121 @@ fn pe_yod_hophal_holam_variant(text: &str) -> Option<String> {
     Some(hebrew::render(&seq))
 }
 
+/// The object-suffixed surfaces a *bare host form* produces, keyed only by its
+/// `(binyan, form, pgn, text)`. This is the core of the object-suffix dispatch
+/// inside [`generate_paradigm`] — the primary builder calls — *without* that
+/// site's hand-threaded twin-base extensions.
+///
+/// `generate_paradigm` indexes the suffixed forms of the *primary* host plus a
+/// long tail of explicitly-threaded twin bases (theme-restored, guttural,
+/// hollow, weak). The reverse parser's object-suffix peel fallback instead
+/// re-applies this core to *every* finished host form of a candidate root —
+/// including the twins that arrive as their own `forms` entries (separate
+/// `VerbForm`s and the post-pass additions like paragogic-nun / cohortative /
+/// fs-participle). So a suffixed surface whose host grade was never expanded
+/// into the index is still recovered by generate-and-test, and twin coverage
+/// needs no twin logic here: each twin host arrives as its own
+/// `(binyan, form, pgn, text)` tuple.
+pub(crate) fn host_object_suffixes(
+    binyan: Binyan,
+    form: Form,
+    pgn: Pgn,
+    text: &str,
+    root: &Root,
+) -> Vec<(Pgn, String)> {
+    use Gender::*;
+    use Number::*;
+    use Person::*;
+    if matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+        && imperfect_suffix_kind(pgn) == Suffix::Zero
+    {
+        if root.lamed() == letter::HE {
+            lamed_he_imperfect_object_suffixes(text)
+        } else {
+            imperfect_object_suffixes(text, root)
+        }
+    } else if pgn == Pgn::new(Third, Masculine, Singular) {
+        match (binyan, form) {
+            (_, Form::Perfect) if root.lamed() == letter::HE => {
+                lamed_he_perfect_object_suffixes(text)
+            }
+            (Binyan::Qal, Form::Perfect) => qal_perfect_object_suffixes(root),
+            (Binyan::Piel | Binyan::Pual | Binyan::Hithpael, Form::Perfect) => {
+                derived_perfect_object_suffixes(text)
+            }
+            (Binyan::Hiphil, Form::Perfect) => hiphil_perfect_object_suffixes(text),
+            _ => Vec::new(),
+        }
+    } else if matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+        && imperfect_suffix_kind(pgn) == Suffix::Vocalic
+    {
+        imperfect_vocalic_object_suffixes(text)
+    } else if form == Form::Perfect
+        && matches!(
+            (pgn.person, pgn.gender, pgn.number),
+            (Some(First), Some(Common), Some(Singular | Plural))
+                | (Some(Second), Some(Masculine), Some(Singular))
+                | (Some(Third), Some(Feminine), Some(Singular))
+                | (Some(Third), Some(Common), Some(Plural))
+        )
+    {
+        let mut v = perfect_subject_object_suffixes(text, pgn, root, binyan);
+        // The 3cp -û is a vocalic host: the suffix joins the subject vowel
+        // directly on the base surface (rāʾûḵā, ḥērᵊp̄ûnî).
+        if pgn == Pgn::new(Third, Common, Plural) {
+            v.extend(imperfect_vocalic_object_suffixes(text));
+        }
+        v
+    } else if matches!(form, Form::ParticipleActive | Form::ParticiplePassive) {
+        if pgn == Pgn::gn(Masculine, Singular) {
+            participle_object_suffixes(text)
+        } else if pgn == Pgn::gn(Masculine, Plural) {
+            participle_mp_object_suffixes(text)
+        } else if pgn == Pgn::gn(Feminine, Plural) {
+            participle_fp_object_suffixes(text)
+        } else if pgn == Pgn::gn(Feminine, Singular) {
+            participle_fs_object_suffixes(text)
+        } else {
+            Vec::new()
+        }
+    } else if form == Form::InfinitiveConstruct {
+        inf_construct_object_suffixes(root, binyan, text)
+    } else if binyan == Binyan::Qal
+        && form == Form::Imperative
+        && pgn == Pgn::new(Second, Masculine, Singular)
+    {
+        if root.has(Gizra::Hollow) {
+            imperfect_object_suffixes(text, root)
+        } else {
+            qal_imperative_object_suffixes(root)
+        }
+    } else if binyan == Binyan::Hiphil
+        && form == Form::Imperative
+        && pgn == Pgn::new(Second, Masculine, Singular)
+    {
+        if root.lamed() == letter::HE {
+            lamed_he_hiphil_imperative_object_suffixes(text)
+        } else {
+            hiphil_imperative_object_suffixes(text)
+        }
+    } else if matches!(binyan, Binyan::Piel | Binyan::Hithpael)
+        && form == Form::Imperative
+        && pgn == Pgn::new(Second, Masculine, Singular)
+    {
+        piel_imperative_object_suffixes(text)
+    } else if form == Form::Imperative
+        && matches!(
+            (pgn.person, pgn.gender, pgn.number),
+            (Some(Second), Some(Masculine), Some(Plural))
+                | (Some(Second), Some(Feminine), Some(Singular))
+        )
+    {
+        imperfect_vocalic_object_suffixes(text)
+    } else {
+        Vec::new()
+    }
+}
+
 /// Qal Perfect 3ms with a pronominal object suffix. The connecting stem is
 /// qᵊṭāl- (C1 propretonically reduced to sheva, C2 qamats), the suffix joins C3
 /// with a linking vowel: qᵊṭāl-á-nî (קְטָלַנִי), qᵊṭāl-ᵊ-ḵā (קְטָלְךָ), qᵊṭāl-ô

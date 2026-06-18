@@ -42,7 +42,7 @@ use rayon::prelude::*;
 
 use super::hebrew::{self, Cons, Vowel, letter};
 use super::root::Root;
-use super::verb::{Binyan, Form, Paradigm, Pgn, generate_paradigm};
+use super::verb::{Binyan, Form, Paradigm, Pgn, generate_paradigm, host_object_suffixes};
 use super::{Gender, Number, Person};
 
 /// Weak letters that may be a radical hidden from the surface form: an
@@ -555,6 +555,193 @@ fn peel_object_suffix(seq: &[Cons]) -> Vec<(Vec<Cons>, Pgn)> {
     out
 }
 
+/// Lean candidate roots for the object-suffix peel fallback: triliterals (every
+/// position drawn from, so geminates included) over just the distinct consonants
+/// present in the peeled stems. An object-suffix host is a finite verb that keeps
+/// all its radicals on the surface for the strong and guttural classes, so the
+/// stem's own consonants already contain the root and we can skip
+/// [`candidate_roots`]' weak-letter + lamed padding — which cubes the root count
+/// and is what would make this per-surface generate-and-test prohibitive when run
+/// over every word (the parser fires the fallback on any zero-match surface). A
+/// stem left with fewer than three distinct consonants (a hidden weak radical)
+/// pads with the weak letters, cheap because that alphabet is then tiny.
+fn fallback_roots(stems: &[&[Cons]], roots: Option<&HashSet<[char; 3]>>) -> Vec<[char; 3]> {
+    let mut alphabet: Vec<char> = Vec::new();
+    for stem in stems {
+        for c in stem.iter() {
+            if !alphabet.contains(&c.letter) {
+                alphabet.push(c.letter);
+            }
+        }
+    }
+    if alphabet.len() < 3 {
+        for &w in &WEAK {
+            if !alphabet.contains(&w) {
+                alphabet.push(w);
+            }
+        }
+    }
+    let mut out = Vec::new();
+    let mut seen = HashSet::new();
+    for &a in &alphabet {
+        for &b in &alphabet {
+            for &c in &alphabet {
+                let r = [a, b, c];
+                if roots.is_some_and(|set| !set.contains(&r)) {
+                    continue;
+                }
+                if seen.insert(r) {
+                    out.push(r);
+                }
+            }
+        }
+    }
+    out
+}
+
+/// Object-suffix peel fallback for the **generate-and-test** parser (ADR-0004
+/// Option C): recover a suffixed surface whose host grade the generator's own
+/// suffix dispatch never threaded. For each proclitic strip level, peel a
+/// recognised pronominal ending to learn the candidate object `Pgn`s and a
+/// reduced stem, enumerate the stem's candidate roots, and re-apply the host
+/// suffix builders ([`host_object_suffixes`]) to every *bare* host form of each
+/// root — including the theme/guttural and post-pass twins that arrive as their
+/// own `forms` entries. A form is kept only when its rendered surface exactly
+/// matches the (de-prefixed) target: generate-and-test, so a host grade that
+/// can't produce the surface drops out and there are no false positives.
+///
+/// The indexed parser uses [`ReverseIndex::obj_index`] (a precomputed lookup)
+/// for the same job; this generate-driven variant serves [`parse_word_filtered`]
+/// when there is no index. Run only when ordinary parsing found nothing, so the
+/// paradigm generation it needs is paid on the small minority of surfaces that
+/// otherwise fail, and it can only *add* analyses — never remove or change one.
+fn object_suffix_fallback(
+    seq: &[Cons],
+    roots: Option<&HashSet<[char; 3]>>,
+    matches: &mut Vec<VerbMatch>,
+    seen: &mut HashSet<([char; 3], Binyan, Form, Pgn, Option<Pgn>, usize, bool)>,
+) {
+    let max_strip = 2usize.min(seq.len().saturating_sub(2));
+    let mut memo: HashMap<[char; 3], Paradigm> = HashMap::new();
+    for strip in 0..=max_strip {
+        if seq[..strip].iter().any(|c| !PROCLITICS.contains(&c.letter)) {
+            continue;
+        }
+        let remainder = &seq[strip..];
+        let prefix = hebrew::render(&seq[..strip]);
+        let target_key = canonical_key(&hebrew::render(remainder));
+        // Peel a pronominal ending to learn which object Pgns the surface could
+        // carry and a reduced stem.
+        let peels = peel_object_suffix(remainder);
+        if peels.is_empty() {
+            continue;
+        }
+        let obj_pgns: HashSet<Pgn> = peels.iter().map(|(_, p)| *p).collect();
+        let stems: Vec<&[Cons]> = peels.iter().map(|(s, _)| s.as_slice()).collect();
+        for letters in fallback_roots(&stems, roots) {
+            let root = Root::from_letters(letters);
+            let paradigm = memo.entry(letters).or_insert_with(|| generate_paradigm(&root));
+            for vf in paradigm.forms.iter().filter(|vf| vf.object_suffix.is_none()) {
+                // A Wayyiqtol host carries its own וַ, so it can only match the
+                // unstripped surface (strip 0).
+                if vf.form == Form::Wayyiqtol && strip > 0 {
+                    continue;
+                }
+                for (obj, surface) in
+                    host_object_suffixes(vf.binyan, vf.form, vf.pgn, &vf.text, &root)
+                {
+                    if !obj_pgns.contains(&obj) || canonical_key(&surface) != target_key {
+                        continue;
+                    }
+                    let vav = vf.form == Form::Wayyiqtol;
+                    let key = (
+                        letters,
+                        vf.binyan,
+                        vf.form,
+                        vf.pgn,
+                        Some(obj),
+                        if vav { 0 } else { strip },
+                        vav,
+                    );
+                    if seen.insert(key) {
+                        matches.push(VerbMatch {
+                            root: Root::from_letters(letters),
+                            binyan: vf.binyan,
+                            form: vf.form,
+                            pgn: vf.pgn,
+                            attested: false,
+                            prefix: if vav { String::new() } else { prefix.clone() },
+                            vav_consecutive: vav,
+                            object_suffix: Some(obj),
+                        });
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Object-suffix fallback for the **indexed** parser: the lookup twin of
+/// [`object_suffix_fallback`]. A suffixed surface that failed to parse is looked
+/// up — at each proclitic strip level, with the same sandhi variants the main
+/// loop tries — in [`ReverseIndex::obj_index`], the precomputed expansion of
+/// every bare host's object suffixes. The gating on a failed parse keeps this in
+/// step with the generate-and-test parser (neither fires for a surface that
+/// already parses) while costing only a hash lookup, so it stays cheap even when
+/// run over every word of a text.
+fn object_suffix_fallback_indexed(
+    seq: &[Cons],
+    index: &ReverseIndex,
+    roots: Option<&HashSet<[char; 3]>>,
+    matches: &mut Vec<VerbMatch>,
+    seen: &mut HashSet<([char; 3], Binyan, Form, Pgn, Option<Pgn>, usize, bool)>,
+) {
+    let in_filter = |letters: &[char; 3]| roots.is_none_or(|set| set.contains(letters));
+    let max_strip = 2usize.min(seq.len().saturating_sub(2));
+    for strip in 0..=max_strip {
+        if seq[..strip].iter().any(|c| !PROCLITICS.contains(&c.letter)) {
+            continue;
+        }
+        let remainder = &seq[strip..];
+        let prefix = hebrew::render(&seq[..strip]);
+        for t in peeling_targets(seq, strip, remainder) {
+            for (_, e) in index.obj_get(key_hash(&canonical_key(&t))) {
+                let letters = e.letters();
+                if !in_filter(&letters) {
+                    continue;
+                }
+                // A Wayyiqtol host carries its own וַ — only the unstripped
+                // surface (strip 0) can match it.
+                let vav = e.form == Form::Wayyiqtol;
+                if vav && strip > 0 {
+                    continue;
+                }
+                let key = (
+                    letters,
+                    e.binyan,
+                    e.form,
+                    e.pgn,
+                    e.object_suffix,
+                    if vav { 0 } else { strip },
+                    vav,
+                );
+                if seen.insert(key) {
+                    matches.push(VerbMatch {
+                        root: Root::from_letters(letters),
+                        binyan: e.binyan,
+                        form: e.form,
+                        pgn: e.pgn,
+                        attested: e.attested,
+                        prefix: if vav { String::new() } else { prefix.clone() },
+                        vav_consecutive: vav,
+                        object_suffix: e.object_suffix,
+                    });
+                }
+            }
+        }
+    }
+}
+
 /// Label twins added after matching, shared by the generate-and-test and
 /// index-backed parsers so they cannot diverge.
 ///
@@ -777,6 +964,9 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         }
     }
 
+    if matches.is_empty() {
+        object_suffix_fallback(&seq, roots, &mut matches, &mut seen);
+    }
     add_label_twins(&mut matches);
     sort_matches(&mut matches);
     matches
@@ -864,6 +1054,16 @@ pub struct ReverseIndex {
     /// `(key_hash, entry)` pairs sorted by `key_hash`. All entries sharing a key
     /// form a contiguous run, found by [`ReverseIndex::get`].
     entries: Vec<(u128, IndexEntry)>,
+    /// Object-suffixed forms of every bare host (via [`host_object_suffixes`]),
+    /// keyed like `entries` and consulted only by the indexed parser's
+    /// object-suffix fallback. Kept separate from `entries` so it is queried
+    /// solely when a surface fails to parse — that gating is what keeps the
+    /// indexed and generate-and-test parsers in agreement on parsing surfaces
+    /// (the fallback never fires for them). Each entry's `object_suffix` is set.
+    /// This precomputes the suffix expansion once at build, so the fallback is a
+    /// hash lookup, not a per-surface generate-and-test (which would cost minutes
+    /// over a full text, since it fires on every non-verb word too).
+    obj_index: Vec<(u128, IndexEntry)>,
 }
 
 /// A 128-bit hash of a [`canonical_key`], used as the [`ReverseIndex`] key in
@@ -909,12 +1109,14 @@ impl ReverseIndex {
                 }
             }
         }
-        let per_root: Vec<Vec<(u128, IndexEntry)>> = roots
+        let per_root: Vec<(Vec<(u128, IndexEntry)>, Vec<(u128, IndexEntry)>)> = roots
             .par_iter()
             .map(|&letters| {
                 let radicals = pack_radicals(letters);
-                let para = generate_paradigm(&Root::from_letters(letters));
-                para.forms
+                let root = Root::from_letters(letters);
+                let para = generate_paradigm(&root);
+                let entries: Vec<(u128, IndexEntry)> = para
+                    .forms
                     .iter()
                     .map(|vf| {
                         (
@@ -929,17 +1131,49 @@ impl ReverseIndex {
                             },
                         )
                     })
-                    .collect()
+                    .collect();
+                // Object-suffix the bare hosts (twins included, since every twin
+                // is its own bare `forms` entry) and index the resulting
+                // surfaces. This catches the host grades the generator's own
+                // suffix dispatch never threads — the obj-suffix coverage gap —
+                // without expanding the host×suffix cross-product into `entries`.
+                let obj: Vec<(u128, IndexEntry)> = para
+                    .forms
+                    .iter()
+                    .filter(|vf| vf.object_suffix.is_none())
+                    .flat_map(|vf| {
+                        host_object_suffixes(vf.binyan, vf.form, vf.pgn, &vf.text, &root)
+                            .into_iter()
+                            .map(move |(obj_pgn, surface)| {
+                                (
+                                    key_hash(&canonical_key(&surface)),
+                                    IndexEntry {
+                                        radicals,
+                                        binyan: vf.binyan,
+                                        form: vf.form,
+                                        pgn: vf.pgn,
+                                        object_suffix: Some(obj_pgn),
+                                        attested: false,
+                                    },
+                                )
+                            })
+                    })
+                    .collect();
+                (entries, obj)
             })
             .collect();
 
-        let total: usize = per_root.iter().map(Vec::len).sum();
+        let total: usize = per_root.iter().map(|(e, _)| e.len()).sum();
+        let obj_total: usize = per_root.iter().map(|(_, o)| o.len()).sum();
         let mut entries: Vec<(u128, IndexEntry)> = Vec::with_capacity(total);
-        for chunk in per_root {
+        let mut obj_index: Vec<(u128, IndexEntry)> = Vec::with_capacity(obj_total);
+        for (chunk, obj) in per_root {
             entries.extend(chunk);
+            obj_index.extend(obj);
         }
         entries.par_sort_unstable_by_key(|&(k, _)| k);
-        ReverseIndex { entries }
+        obj_index.par_sort_unstable_by_key(|&(k, _)| k);
+        ReverseIndex { entries, obj_index }
     }
 
     /// The `(key, analysis)` pairs whose key hash equals `key`, as a contiguous
@@ -952,6 +1186,17 @@ impl ReverseIndex {
             end += 1;
         }
         &self.entries[start..end]
+    }
+
+    /// Like [`ReverseIndex::get`] but over the object-suffix index — the run of
+    /// suffixed-host analyses whose key hash equals `key`.
+    fn obj_get(&self, key: u128) -> &[(u128, IndexEntry)] {
+        let start = self.obj_index.partition_point(|&(k, _)| k < key);
+        let mut end = start;
+        while end < self.obj_index.len() && self.obj_index[end].0 == key {
+            end += 1;
+        }
+        &self.obj_index[start..end]
     }
 }
 
@@ -1044,6 +1289,9 @@ pub fn parse_word_indexed(
         }
     }
 
+    if matches.is_empty() {
+        object_suffix_fallback_indexed(&seq, index, roots, &mut matches, &mut seen);
+    }
     add_label_twins(&mut matches);
     sort_matches(&mut matches);
     matches
