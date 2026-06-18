@@ -511,7 +511,8 @@ pub const PROPER_NAMES: &[&str] = &[
     "מִכְמָשׂ",
     "מַקֵּדָה",
     "מָעוֹן",
-    "מִּצְפָּתָ",
+    // Mizpah + directional he ("to Mizpah"), 8 occ.; earlier entry dropped the final he.
+    "מִּצְפָּתָה",
     "נְחֶמְיָה",
     "עֲדָיָה",
     "עֲרֹעֵר",
