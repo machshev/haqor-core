@@ -43,6 +43,7 @@ use rayon::prelude::*;
 use super::hebrew::{self, Cons, Vowel, letter};
 use super::root::Root;
 use super::verb::{Binyan, Form, Paradigm, Pgn, generate_paradigm};
+use super::{Gender, Number, Person};
 
 /// Weak letters that may be a radical hidden from the surface form: an
 /// assimilated I-Nun, an elided I-Yod/Vav, the dropped middle radical of a
@@ -438,6 +439,86 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
         }
     }
     targets
+}
+
+/// Strip a recognised pronominal object-suffix ending off a parsed verb surface,
+/// returning `(host stem before the suffix, object Pgn)` for every ending that
+/// matches. The host's linking vowel stays on the returned stem — it is part of
+/// the reduced host theme, not the suffix (peeling `-ēhû` off yišmᵊrēhû
+/// יִשְׁמְרֵהוּ leaves yišmᵊrē יִשְׁמְרֵ). Ambiguous endings yield several
+/// candidates; callers treat each additively.
+///
+/// This is increment 1 of the object-suffix architecture in
+/// `doc/adr/0004-object-suffix-handling.md` (the inverse of the suffix-append
+/// the object-suffix *builders* perform). It is verified by unit tests and is
+/// the foundation for the host link-stem index + parse-time peeling that the
+/// later increments add; it is intentionally not yet wired into the parsers.
+fn peel_object_suffix(seq: &[Cons]) -> Vec<(Vec<Cons>, Pgn)> {
+    let n = seq.len();
+    if n < 2 {
+        return Vec::new();
+    }
+    let last = &seq[n - 1];
+    let prev = &seq[n - 2];
+    let pgn = |p, g, num| Pgn::new(p, g, num);
+    // A shureq is rendered as a bare vav carrying the dagesh point (וּ).
+    let is_shureq =
+        |c: &Cons| c.letter == letter::VAV && c.dagesh && c.vowel.is_none();
+    let mut out = Vec::new();
+
+    // -hû (הוּ) 3ms: he + shureq.
+    if is_shureq(last) && prev.letter == letter::HE && prev.vowel.is_none() {
+        out.push((seq[..n - 2].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
+    }
+    // -nû (נוּ) 1cp vs energic -ennû (נּוּ) 3ms: nun + shureq, split on the dagesh.
+    if is_shureq(last) && prev.letter == letter::NUN {
+        let (p, g, num) = if prev.dagesh {
+            (Person::Third, Gender::Masculine, Number::Singular)
+        } else {
+            (Person::First, Gender::Common, Number::Plural)
+        };
+        out.push((seq[..n - 2].to_vec(), pgn(p, g, num)));
+    }
+    // -nî (נִי) 1cs (energic -ennî/-ēnnî identical for our purposes): nun + yod.
+    if last.letter == letter::YOD
+        && last.vowel.is_none()
+        && prev.letter == letter::NUN
+        && matches!(prev.vowel, Some(Vowel::Hiriq) | None)
+    {
+        out.push((seq[..n - 2].to_vec(), pgn(Person::First, Gender::Common, Number::Singular)));
+    }
+    // -ḵem (כֶם) 2mp: kaf-segol + mem.
+    if last.letter == letter::MEM
+        && prev.letter == letter::KAF
+        && prev.vowel == Some(Vowel::Segol)
+    {
+        out.push((seq[..n - 2].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Plural)));
+    }
+    // -ḵā (ךָ) 2ms: kaf-qamats.
+    if last.letter == letter::KAF && last.vowel == Some(Vowel::Qamats) {
+        out.push((seq[..n - 1].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Singular)));
+    }
+    // -eḵ / -āḵ (ךְ) 2fs: bare final kaf.
+    if last.letter == letter::KAF && matches!(last.vowel, None | Some(Vowel::Sheva)) {
+        out.push((seq[..n - 1].to_vec(), pgn(Person::Second, Gender::Feminine, Number::Singular)));
+    }
+    // -hā (הָ) 3fs: he-qamats.
+    if last.letter == letter::HE && last.vowel == Some(Vowel::Qamats) {
+        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Feminine, Number::Singular)));
+    }
+    // -ô (וֹ) 3ms: vav-holam (also a mater in the host — ambiguous, additive).
+    if last.letter == letter::VAV && last.vowel == Some(Vowel::Holam) {
+        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
+    }
+    // -ām / -ēm / -m (ם) 3mp: final mem (not the -ḵem case, which has kaf before).
+    if last.letter == letter::MEM && prev.letter != letter::KAF {
+        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Plural)));
+    }
+    // -n / -ān (ן) 3fp: final nun with no vowel of its own.
+    if last.letter == letter::NUN && last.vowel.is_none() {
+        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Feminine, Number::Plural)));
+    }
+    out
 }
 
 /// Label twins added after matching, shared by the generate-and-test and
@@ -1025,6 +1106,38 @@ fn candidate_roots(seq: &[Cons], roots: Option<&HashSet<[char; 3]>>) -> Vec<[cha
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    /// Does `peel_object_suffix` recover the expected (stem, object-Pgn) for a
+    /// known suffixed surface?
+    fn peels_to(surface: &str, stem: &str, obj: Pgn) -> bool {
+        // Normalise the expected stem through the same parse/render round-trip
+        // so combining-mark order matches the peeled output.
+        let want = hebrew::render(&hebrew::parse_pointed(stem));
+        let seq = hebrew::parse_pointed(surface);
+        peel_object_suffix(&seq)
+            .into_iter()
+            .any(|(s, p)| p == obj && hebrew::render(&s) == want)
+    }
+
+    #[test]
+    fn peels_pronominal_object_suffixes() {
+        let p = |pe, g, n| Pgn::new(pe, g, n);
+        // yišmᵊrēhû יִשְׁמְרֵהוּ → host yišmᵊrē + 3ms.
+        assert!(peels_to("יִשְׁמְרֵהוּ", "יִשְׁמְרֵ", p(Person::Third, Gender::Masculine, Number::Singular)));
+        // yišmᵊrēnî יִשְׁמְרֵנִי → 1cs.
+        assert!(peels_to("יִשְׁמְרֵנִי", "יִשְׁמְרֵ", p(Person::First, Gender::Common, Number::Singular)));
+        // energic yišmᵊrennû יִשְׁמְרֶנּוּ → 3ms.
+        assert!(peels_to("יִשְׁמְרֶנּוּ", "יִשְׁמְרֶ", p(Person::Third, Gender::Masculine, Number::Singular)));
+        // yišmārḵā יִשְׁמָרְךָ → 2ms.
+        assert!(peels_to("יִשְׁמָרְךָ", "יִשְׁמָרְ", p(Person::Second, Gender::Masculine, Number::Singular)));
+        // qûmēnî קוּמֵנִי (hollow imperative host) → 1cs.
+        assert!(peels_to("קוּמֵנִי", "קוּמֵ", p(Person::First, Gender::Common, Number::Singular)));
+        // A bare form with no pronominal ending peels nothing spurious as 3ms-hû.
+        let bare = hebrew::parse_pointed("יִשְׁמֹר");
+        assert!(!peel_object_suffix(&bare)
+            .iter()
+            .any(|(_, p)| *p == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)));
+    }
 
     fn has_match(
         matches: &[VerbMatch],
