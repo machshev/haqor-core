@@ -2845,7 +2845,16 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && form == Form::Imperative
                         && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular)
                     {
-                        qal_imperative_object_suffixes(root)
+                        // The hollow imperative keeps its long mater (qûm קוּם,
+                        // šîṯ שִׁית); the radical-built strong host wrongly treats
+                        // the vav/yod as a consonant (קָוְמֵהוּ). Route it through
+                        // the long-mater-aware imperfect host builder instead —
+                        // qûmēnî קוּמֵנִי, šîṯēm.
+                        if root.has(Gizra::Hollow) {
+                            imperfect_object_suffixes(&text, root)
+                        } else {
+                            qal_imperative_object_suffixes(root)
+                        }
                     } else if binyan == Binyan::Hiphil
                         && form == Form::Imperative
                         && pgn == Pgn::new(Person::Second, Gender::Masculine, Number::Singular)
