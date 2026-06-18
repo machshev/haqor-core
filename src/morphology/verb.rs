@@ -3639,6 +3639,32 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(piel_gutt_pausal);
 
+    // I-guttural derived-stem silent-sheva twin over finished forms: the per-cell
+    // `guttural_silent_sheva` local silences the hataf of only the PRIMARY grade,
+    // so reduced grades that are themselves twins keep their hataf — the defective
+    // Hiphil participle maḥăṣᵊrîm מַחֲצְרִים never yields its silent-sheva spelling
+    // maḥṣᵊrîm מַחְצְרִים (the qere of the quadriliteral trumpeter, root חצר). Run
+    // the hataf→silent-sheva transform over every finished PeGuttural derived-stem
+    // form; additive, and dedup drops the primary repeats.
+    let gutt_silent: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            root.has(Gizra::PeGuttural)
+                && matches!(
+                    f.binyan,
+                    Binyan::Niphal | Binyan::Hiphil | Binyan::Hophal | Binyan::Hithpael
+                )
+                && f.object_suffix.is_none()
+        })
+        .filter_map(|f| {
+            guttural_silent_sheva_variant(&f.text).map(|t| VerbForm {
+                text: t,
+                ..f.clone()
+            })
+        })
+        .collect();
+    forms.extend(gutt_silent);
+
     // Paragogic-nun over finished long-imperfect vocalic forms: the per-cell
     // twin only appends the nun to the primary cell, so the theme-grade and
     // guttural twins (the pe-guttural segol a-class yeḥpāṣû יֶחְפָּצוּ) never get

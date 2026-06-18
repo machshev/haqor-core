@@ -247,6 +247,35 @@ fn fold_matres(skel: &str) -> String {
         .collect()
 }
 
+/// Collapse a reduplicated consonant — an adjacent identical pair — to a single
+/// letter in a consonant skeleton. Biblical Hebrew has a few quadriliteral verbs
+/// built by reduplicating a radical of a triliteral (חצצר "sound a trumpet",
+/// from חצר); their plene ketiv spells the doubled radical out (מחצצרים, skeleton
+/// מחצצרם) where the qere and the generator use the reduced triliteral (מַחְצְרִים,
+/// skeleton מחצרם). Collapsing adjacent duplicates on both the surface and
+/// candidate skeletons converts the quadriliteral ketiv to its triliteral
+/// paradigm so the two align. Applied symmetrically and only in the already-
+/// degenerate unpointed-ketiv path, so — like [`fold_matres`] — it can only *add*
+/// skeleton matches, never remove one, and never costs recall.
+fn fold_reduplication(skel: &str) -> String {
+    let mut out = String::new();
+    let mut prev = None;
+    for c in skel.chars() {
+        if Some(c) != prev {
+            out.push(c);
+        }
+        prev = Some(c);
+    }
+    out
+}
+
+/// The unpointed-ketiv skeleton key: matres folded out, then any reduplicated
+/// consonant collapsed. Shared by surface and candidate so the two paths stay
+/// symmetric (see [`fold_matres`], [`fold_reduplication`]).
+fn ketiv_skeleton(form: &str) -> String {
+    fold_reduplication(&fold_matres(&skeleton(form)))
+}
+
 /// Compare a generated form against the parse targets up to the orthographic
 /// normalisation of [`canonical_key`]. Key equality is the single definition
 /// of a match, shared with the [`ReverseIndex`], so the direct and indexed
@@ -869,7 +898,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         let targets = peeling_targets(&seq, strip, remainder);
         let target_keys: Vec<String> = targets.iter().map(|t| canonical_key(t)).collect();
         let target_skels: Vec<String> = if unpointed {
-            targets.iter().map(|t| fold_matres(&skeleton(t))).collect()
+            targets.iter().map(|t| ketiv_skeleton(t)).collect()
         } else {
             Vec::new()
         };
@@ -880,7 +909,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
             for vf in &paradigm.forms {
                 let hit = if unpointed {
-                    target_skels.contains(&fold_matres(&skeleton(&vf.text)))
+                    target_skels.contains(&ketiv_skeleton(&vf.text))
                 } else {
                     forms_match(&vf.text, &targets, &target_keys)
                 };
@@ -926,14 +955,14 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
     {
         let targets = [hebrew::render(&seq)];
         let target_keys = [canonical_key(&targets[0])];
-        let target_skel = fold_matres(&skeleton(&targets[0]));
+        let target_skel = ketiv_skeleton(&targets[0]);
         for letters in candidate_roots(&seq[1..], roots) {
             let paradigm = memo
                 .entry(letters)
                 .or_insert_with(|| generate_paradigm(&Root::from_letters(letters)));
             for vf in &paradigm.forms {
                 let hit = if unpointed {
-                    fold_matres(&skeleton(&vf.text)) == target_skel
+                    ketiv_skeleton(&vf.text) == target_skel
                 } else {
                     forms_match(&vf.text, &targets, &target_keys)
                 };
@@ -1573,6 +1602,37 @@ mod tests {
                 && m.binyan == Binyan::Qal
                 && m.form == Form::Imperfect
                 && m.pgn.label() == "1cs"
+        }));
+    }
+
+    #[test]
+    fn parses_pointed_quadriliteral_trumpeter() {
+        // מַחְצְרִים — the qere of the quadriliteral trumpeter (H2690 חצצר),
+        // tagged Hiphil participle active mp. Its pointed surface is already
+        // triliteral-shaped (root חצר, ח/צ/ר); the silent-sheva grade of the
+        // reduced Hiphil participle (maḥṣᵊrîm) is what occurs.
+        let matches = parse_word("מַחְצְרִים");
+        assert!(has_match(
+            &matches,
+            "חצר",
+            Binyan::Hiphil,
+            Form::ParticipleActive,
+            "mp"
+        ));
+    }
+
+    #[test]
+    fn parses_unpointed_quadriliteral_ketiv() {
+        // מחצצרים — the plene ketiv of the same trumpeter, spelling the
+        // reduplicated radical out (ח-צ-צ-ר). Collapsing the doubled צ on the
+        // skeleton converts the quadriliteral to its triliteral חצר paradigm so
+        // the Hiphil participle active mp is recovered.
+        let matches = parse_word("מחצצרים");
+        assert!(matches.iter().any(|m| {
+            m.root.letters.iter().collect::<String>() == "חצר"
+                && m.binyan == Binyan::Hiphil
+                && m.form == Form::ParticipleActive
+                && m.pgn.label() == "mp"
         }));
     }
 
