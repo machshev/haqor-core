@@ -11125,6 +11125,11 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]);
     // 3mp -ēm, and the archaic poetic -ēmô (tᵊšîṯēmô תְּשִׁיתֵמוֹ).
     emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]);
+    // The hollow î/û Hiphil host links the 3mp suffix with a patah rather than
+    // the usual tsere — ʾāmîl → ʾămîlam (אֲמִילַם, "I will cut them off").
+    if long_mater {
+        emit(OBJ_3MP, Patah, &[Cons::new(letter::MEM)]);
+    }
     emit(
         OBJ_3MP,
         Tsere,
