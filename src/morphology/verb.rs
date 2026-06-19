@@ -12783,7 +12783,18 @@ fn lamed_he_retained_yod_plural_variants(text: &str) -> Vec<String> {
     let bare = hebrew::render(&stem);
     stem.push(Cons::new(letter::NUN));
     let paragogic = hebrew::render(&stem);
-    vec![bare, paragogic]
+    let mut out = vec![bare, paragogic];
+    // A I-guttural imperative prefixes a full tsere rather than the hataf the
+    // bare base carries — the archaic imperative ʾēṯāyû אֵתָיוּ (אתה "come!"),
+    // beside the hataf-segol ʾĕṯāyû the imperfect/contracted base gives.
+    if hebrew::is_guttural(stem[0].letter) && matches!(stem[0].vowel, Some(Vowel::HatafSegol)) {
+        stem[0].vowel = Some(Vowel::Tsere);
+        let paragogic_tsere = hebrew::render(&stem);
+        stem.pop(); // drop the paragogic nun
+        out.push(hebrew::render(&stem));
+        out.push(paragogic_tsere);
+    }
+    out
 }
 
 /// III-Aleph infinitive construct on the III-He pattern: מלא and its kin take
