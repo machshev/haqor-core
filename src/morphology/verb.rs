@@ -7408,7 +7408,15 @@ fn apply_lamed_he(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
                     if matches!(binyan, Binyan::Piel | Binyan::Pual | Binyan::Hithpael)
                         && hebrew::is_guttural(seq[i].letter)
                     {
-                        seq[i].vowel = Some(Sheva);
+                        // A quiescent aleph C2 (the doubly-weak II-aleph III-He
+                        // ראה) takes no vowel — it quiesces and the preceding
+                        // compensatory qamats carries the syllable: yiṯrāʾû
+                        // יִתְרָאוּ. A het/ayin takes the vocal (hataf) sheva.
+                        seq[i].vowel = if seq[i].letter == letter::ALEF {
+                            None
+                        } else {
+                            Some(Sheva)
+                        };
                     } else {
                         seq[i].vowel = c3_vowel;
                     }
