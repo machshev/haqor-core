@@ -11730,6 +11730,28 @@ fn inf_construct_object_suffixes(
                 out.push((obj, hebrew::render(&seq)));
             }
         }
+        // A II-guttural Qal inf-construct of the segolate type (ṣaʕaḏ צַעַד)
+        // takes its suffixes on the a-grade qaṭl- stem: C1 keeps the patah
+        // ground vowel and C2 closes the syllable on a silent sheva, so a
+        // begedkefet C3 opens the next with a dagesh lene — ṣaʕdᵊḵā צַעְדְּךָ
+        // (2 Sam 5:24). Gated to the guttural C2 so it doesn't broaden every
+        // strong root's index.
+        if hebrew::is_guttural(c2) {
+            for (obj, link, tail) in nominal_suffix_tails() {
+                let mut c3c = Cons::radical(c3, 3);
+                c3c.vowel = link;
+                if hebrew::is_begedkefet(c3) {
+                    c3c = c3c.with_dagesh();
+                }
+                let mut seq = vec![
+                    Cons::radical(c1, 1).with_vowel(Patah),
+                    Cons::radical(c2, 2).with_vowel(Sheva),
+                    c3c,
+                ];
+                seq.extend(tail.clone());
+                out.push((obj, hebrew::render(&seq)));
+            }
+        }
         // The heavy 2nd-person suffixes shift the stress forward, so the stem
         // takes the propretonic-qamats grade qᵊṭāl- (C1 reduces to a vocal
         // sheva / hataf, C2 carries the qamats): ʾăḵālḵem אֲכָלְכֶם, ʕăzāḇḵem
