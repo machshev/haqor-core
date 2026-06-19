@@ -12053,12 +12053,17 @@ fn qal_imperative_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
     // covers a C2 guttural that can't take the silent sheva (bᵊḥānēnî
     // בְּחָנֵנִי) and the III-guttural a-theme imperative (šᵊmaʕ שְׁמַע → with
     // the theme patah lengthening to qamats: šᵊmāʕēnî שְׁמָעֵנִי, šᵊlāḥēnî).
-    let gradings: &[(Vowel, Vowel)] = if hebrew::is_guttural(c2) || hebrew::is_guttural(c3) {
-        &[(Qamats, Sheva), (Sheva, Qamats)]
-    } else {
-        &[(Qamats, Sheva)]
-    };
-    for &(g1, g2) in gradings {
+    let mut gradings: Vec<(Vowel, Vowel)> = vec![(Qamats, Sheva)];
+    if hebrew::is_guttural(c2) || hebrew::is_guttural(c3) {
+        gradings.push((Sheva, Qamats));
+    }
+    // A I-guttural C1 prefers a patah over the qamats(-qatan) the qāṭl- base
+    // would put in its closed syllable — ḥaḇlēhû חַבְלֵהוּ (חבל "take in
+    // pledge"), not ḥoḇlēhû.
+    if hebrew::is_guttural(c1) {
+        gradings.push((Patah, Sheva));
+    }
+    for &(g1, g2) in &gradings {
         emit(
             OBJ_1CS,
             g1,
