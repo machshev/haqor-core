@@ -696,6 +696,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::gn(Gender::Masculine, Number::Singular))
                 .then(|| lamed_aleph_participle_ms_segol_variant(&text))
                 .flatten();
+                // III-He fp active participle retained-yod twin (ʾōṯiyyôṯ
+                // אֹתִיּוֹת).
+                let lamed_he_ptcp_fp_yod = (binyan == Binyan::Qal
+                    && form == Form::ParticipleActive
+                    && root.lamed() == letter::HE
+                    && pgn == Pgn::gn(Gender::Feminine, Number::Plural))
+                .then(|| hebrew::render(&lamed_he_participle_fp_retained_yod_variant(root)));
                 // PeAleph Qal Imperfect tsere variant — יֹאכֵל beside יֹאכַל;
                 // the 1cs holam-merge contraction (אֹכֵל) and its wayyiqtol
                 // (wāʾōḵēl וָאֹכֵל) carry the same theme tsere.
@@ -3132,6 +3139,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_qal_perf_heavy,
                     lamed_aleph_ptcp,
                     lamed_aleph_ptcp_segol,
+                    lamed_he_ptcp_fp_yod,
                     ayin_guttural_hataf,
                     qal_imperative_ayin_gutt,
                     lamed_he_ptcp_fs_cstr,
@@ -4344,6 +4352,25 @@ fn lamed_aleph_participle_ms_segol_variant(text: &str) -> Option<String> {
         return Some(hebrew::render(&seq));
     }
     None
+}
+
+/// Retained-yod twin of a III-He active participle fp: the etymological third
+/// radical yod resurfaces (doubled) before the -ôṯ ending instead of eliding,
+/// giving the archaic ʾōṯiyyôṯ אֹתִיּוֹת ("the things to come", אתה Isa 41:23)
+/// beside the contracted ʾōṯôṯ. Built from the radicals: C1 holam, C2 hiriq, a
+/// dagesh-doubled yod, then the holam-vav + tav. Caller gates to (Qal,
+/// ParticipleActive, fp, LamedHe). Additive.
+fn lamed_he_participle_fp_retained_yod_variant(root: &Root) -> Vec<Cons> {
+    use Vowel::*;
+    let mut seq = vec![
+        rad(root.pe(), 1).with_vowel(Holam),
+        rad(root.ayin(), 2).with_vowel(Hiriq),
+        Cons::new(letter::YOD).with_dagesh(),
+        Cons::new(letter::VAV).with_vowel(Holam),
+        Cons::new(letter::TAV),
+    ];
+    apply_guttural(&mut seq, root);
+    seq
 }
 
 /// Pe-aleph wayyiqtol 1cp segol twin (וַנֹּאמֶר). The stress-retracted wayyiqtol
