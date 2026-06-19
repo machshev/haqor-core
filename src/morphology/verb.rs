@@ -1141,6 +1141,18 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 } else {
                     Default::default()
                 };
+                // A C3-nun root's fp -nâ afformative contracts with the radical
+                // nun: the two coalesce into one doubled nun — tārōnnâ תָּרֹנָּה
+                // (רנן imperfect 3fp), haʾzēnnâ (אזן). The uncontracted
+                // …C3-nun(sheva)-nun(qamats) twin already exists; merge it.
+                let c3_nun_contract = (matches!(
+                    form,
+                    Form::Imperfect | Form::Jussive | Form::Wayyiqtol | Form::Imperative
+                ) && root.lamed() == letter::NUN
+                    && pgn.gender == Some(Gender::Feminine)
+                    && pgn.number == Some(Number::Plural))
+                .then(|| geminate_contract_variant(&text, letter::NUN))
+                .flatten();
                 // Hollow Hophal perfect hûCaC (הוּבָא, הוּשַׁב).
                 let hollow_hophal_perf: Vec<String> =
                     if binyan == Binyan::Hophal && form == Form::Perfect && root.has(Gizra::Hollow)
@@ -3206,6 +3218,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     qal_stative_perfect_plural,
                     piel_perfect_retained_tsere,
                     piel_perf_retained_tsere_hiriq,
+                    c3_nun_contract,
                     qal_stative_participle,
                     hollow_perfect_holam,
                     hollow_wayyiqtol_patah,
