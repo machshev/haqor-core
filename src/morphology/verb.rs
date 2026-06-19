@@ -10098,6 +10098,12 @@ fn lamed_he_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         OBJ_2MP,
         emit(Sheva, &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)]),
     )); // -ᵊḵem
+    // A he-prefixed derived perfect (Hiphil hirbâ הִרְבָּה) links the 2ms on a
+    // segol rather than the sheva the Qal takes — hirbeḵā הִרְבֶּךָ ("he will
+    // make you numerous", Deut 7:13), beside hirbᵊḵā.
+    if seq[0].letter == letter::HE && matches!(seq[0].vowel, Some(Hiriq | Segol)) {
+        out.push((OBJ_2MS, emit(Segol, &[ocv(letter::KAF, Qamats)]))); // -eḵā
+    }
     // 3fs mappiq-he -āh (ṣiwwāh צִוָּהּ) and the pausal -āḵ (ṣiwwāḵ צִוָּךְ).
     out.push((
         OBJ_3FS,
