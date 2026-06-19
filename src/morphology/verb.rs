@@ -12064,6 +12064,28 @@ fn qal_imperative_object_suffixes(root: &Root) -> Vec<(Pgn, String)> {
     if matches!(c1, letter::VAV | letter::YOD | letter::NUN) && c3 != letter::HE {
         return Vec::new();
     }
+    // לקח drops its lamed in the imperative (qaḥ קַח), like a I-nun verb, so the
+    // suffix joins the qāḥ- stem — qof qamats, the guttural het taking the link
+    // vowel: qāḥēnî קָחֵנִי, qāḥennû קָחֶנּוּ, qāḥēm קָחֵם. The strong path below
+    // wrongly keeps the lamed (lᵊqāḥennû).
+    if is_laqah(root) {
+        let mut out = Vec::new();
+        let mut emit = |obj: Pgn, link: Vowel, tail: &[Cons]| {
+            let mut seq = vec![
+                rad(letter::QOF, 2).with_vowel(Qamats),
+                rad(letter::HET, 3).with_vowel(link),
+            ];
+            seq.extend_from_slice(tail);
+            out.push((obj, hebrew::render(&seq)));
+        };
+        emit(OBJ_1CS, Tsere, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]);
+        emit(OBJ_3MS, Tsere, &[Cons::new(letter::HE), oshureq()]);
+        emit(OBJ_3MS, Segol, &[Cons::new(letter::NUN).with_dagesh(), oshureq()]);
+        emit(OBJ_3FS, Segol, &[ocv(letter::HE, Qamats)]);
+        emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]);
+        emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]);
+        return out;
+    }
     // III-He imperative + suffix: the etymological he elides and the suffix
     // attaches straight to C2, which carries the linking vowel — ʕănēnî (עֲנֵנִי),
     // bᵊnēhû (בְּנֵהוּ). C1 takes a sheva (a hataf under a guttural, via
