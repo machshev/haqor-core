@@ -1307,6 +1307,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         || pgn == Pgn::new(Person::Third, Gender::Common, Number::Plural)))
                 .then(|| piel_perfect_retained_tsere_variant(&text))
                 .flatten();
+                // …and its hiriq-prefix twin for a II-aleph root, whose
+                // quiescent C2 keeps the retained tsere rather than reducing:
+                // niʾēp̄û נִאֵפוּ (נאף), beside the nēʾēp̄û the retained-tsere
+                // twin gives.
+                let piel_perf_retained_tsere_hiriq = piel_perfect_retained_tsere
+                    .as_deref()
+                    .and_then(|t| piel_perfect_guttural_hiriq_variant(root, t));
                 // Tsere-kept twin of the Hiphil short wayyiqtol: nesiga is not
                 // universal — וַיַּגֵּד beside וַיַּגֶּד, וַיַּקְרֵב, וַיַּשְׁלֵךְ.
                 let hiphil_wayyiqtol_tsere = (binyan == Binyan::Hiphil
@@ -3189,6 +3196,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     qal_stative_perfect,
                     qal_stative_perfect_plural,
                     piel_perfect_retained_tsere,
+                    piel_perf_retained_tsere_hiriq,
                     qal_stative_participle,
                     hollow_perfect_holam,
                     hollow_wayyiqtol_patah,
