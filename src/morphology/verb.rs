@@ -1082,6 +1082,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.ayin() == root.lamed())
                 .then(|| geminate_hophal_imperfect_variant(root, pgn))
                 .flatten();
+                // Geminate Hophal participle contracted twin (מוּסָב, מֻסַבֹּת).
+                let geminate_hophal_ptcp: Vec<String> = if binyan == Binyan::Hophal
+                    && matches!(form, Form::ParticipleActive | Form::ParticiplePassive)
+                    && root.ayin() == root.lamed()
+                {
+                    geminate_hophal_participle_variants(root, pgn)
+                } else {
+                    Default::default()
+                };
                 // Geminate Hophal perfect contracted twin (הוּחַד, הוּחַדָּה).
                 let geminate_hophal_perf: Vec<String> = if binyan == Binyan::Hophal
                     && form == Form::Perfect
@@ -3320,6 +3329,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(pe_guttural_loud_from_silent)
                     .chain(geminate_hiphil_perf_otav)
                     .chain(geminate_hophal_perf)
+                    .chain(geminate_hophal_ptcp)
                     .chain(hollow_hophal_perf)
                     .chain(cohortative_long)
                     .chain(wayyiqtol_cohortative_long)
@@ -13217,6 +13227,45 @@ fn geminate_hiphil_participle_variants(root: &Root, pgn: Pgn) -> Vec<String> {
     } else {
         Vec::new()
     }
+}
+
+/// Geminate Hophal participle with the doubled radical contracted: the mu-
+/// prefix (qubuts, the shureq plene folds to it in canonical_key) and the
+/// doubled C carrying the inflectional vowel — ms mûsāḇ מוּסָב, fp mûsabbōṯ
+/// מֻסַבֹּת (סבב), fs mûsabbâ, mp mûsabbîm. Caller gates to (Hophal, participle,
+/// geminate). Additive.
+fn geminate_hophal_participle_variants(root: &Root, pgn: Pgn) -> Vec<String> {
+    use Vowel::*;
+    let c1 = root.pe();
+    let c = root.lamed(); // == root.ayin() for a geminate root
+    let mem = Cons::new(letter::MEM).with_vowel(Qubuts);
+    let v = match (pgn.gender, pgn.number) {
+        (Some(Gender::Masculine), Some(Number::Singular)) => {
+            // mûsāḇ — single radical, no contraction needed.
+            vec![mem, rad(c1, 1).with_vowel(Qamats), rad(c, 3)]
+        }
+        (Some(Gender::Feminine), Some(Number::Singular)) => vec![
+            mem,
+            rad(c1, 1).with_vowel(Patah),
+            rad(c, 3).with_dagesh().with_vowel(Qamats),
+            Cons::mater(letter::HE),
+        ],
+        (Some(Gender::Masculine), Some(Number::Plural)) => vec![
+            mem,
+            rad(c1, 1).with_vowel(Patah),
+            rad(c, 3).with_dagesh().with_vowel(Hiriq),
+            Cons::mater(letter::YOD),
+            Cons::new(letter::MEM),
+        ],
+        (Some(Gender::Feminine), Some(Number::Plural)) => vec![
+            mem,
+            rad(c1, 1).with_vowel(Patah),
+            rad(c, 3).with_dagesh().with_vowel(Holam),
+            Cons::new(letter::TAV),
+        ],
+        _ => return Vec::new(),
+    };
+    vec![hebrew::render(&v)]
 }
 
 /// Geminate Niphal imperfect with the doubled radical contracted: yissaḇ יִסַּב,
