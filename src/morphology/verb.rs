@@ -10593,6 +10593,17 @@ fn participle_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
         };
         emit(OBJ_3MS, &[Cons::new(letter::HE), oshureq()]);
         emit(OBJ_1CS, &[ocv(letter::NUN, Hiriq), Cons::new(letter::YOD)]);
+        // The energic 2ms -ekkā attaches on a segol link, the doubled radical
+        // keeping its dagesh — mᵊṣawwekkā מְצַוֶּךָּ ("the one commanding you",
+        // Deut 28:8), beside the plain -ᵊḵā above.
+        {
+            let mut s = stem.clone();
+            if let Some(c) = s.last_mut() {
+                c.vowel = Some(Segol);
+            }
+            s.push(Cons::new(letter::KAF).with_dagesh().with_vowel(Qamats));
+            out.push((OBJ_2MS, hebrew::render(&s)));
+        }
         return out;
     }
 
