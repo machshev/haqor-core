@@ -2512,13 +2512,30 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         // hēsabbâ): C1's e-grade tsere lowers to a.
                         geminate_hiphil_perfect_variant(root, pgn)
                             .map(|s| {
-                                let mut out = vec![hebrew::render(&s)];
+                                let mut seqs = vec![s.clone()];
                                 if s.get(1).map(|c| c.vowel) == Some(Some(Vowel::Tsere)) {
                                     let mut p = s.clone();
                                     p[1].vowel = Some(Vowel::Patah);
-                                    out.push(hebrew::render(&p));
+                                    seqs.push(p);
                                 }
-                                out
+                                // The 3cp doubled radical also appears
+                                // undageshed before the vocalic -û: hēnēṣû
+                                // הֵנֵצוּ (נצץ) beside hēnēṣṣû.
+                                if pgn
+                                    == Pgn::new(Person::Third, Gender::Common, Number::Plural)
+                                {
+                                    for base in seqs.clone() {
+                                        if let Some(i) = base
+                                            .iter()
+                                            .position(|c| c.letter == root.ayin() && c.dagesh)
+                                        {
+                                            let mut nd = base.clone();
+                                            nd[i].dagesh = false;
+                                            seqs.push(nd);
+                                        }
+                                    }
+                                }
+                                seqs.iter().map(|s| hebrew::render(s)).collect::<Vec<_>>()
                             })
                             .unwrap_or_default()
                     } else if binyan == Binyan::Niphal
