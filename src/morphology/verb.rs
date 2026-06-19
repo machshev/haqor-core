@@ -689,6 +689,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && pgn.number == Some(Number::Plural))
                     .then(|| lamed_aleph_participle_reduce_variant(&text))
                     .flatten();
+                // III-aleph ms active participle segol twin (nōśeʾ נֹשֶׁא).
+                let lamed_aleph_ptcp_segol = (binyan == Binyan::Qal
+                    && form == Form::ParticipleActive
+                    && root.has(Gizra::LamedAleph)
+                    && pgn == Pgn::gn(Gender::Masculine, Number::Singular))
+                .then(|| lamed_aleph_participle_ms_segol_variant(&text))
+                .flatten();
                 // PeAleph Qal Imperfect tsere variant — יֹאכֵל beside יֹאכַל;
                 // the 1cs holam-merge contraction (אֹכֵל) and its wayyiqtol
                 // (wāʾōḵēl וָאֹכֵל) carry the same theme tsere.
@@ -3124,6 +3131,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hollow_hophal_ptcp,
                     hollow_qal_perf_heavy,
                     lamed_aleph_ptcp,
+                    lamed_aleph_ptcp_segol,
                     ayin_guttural_hataf,
                     qal_imperative_ayin_gutt,
                     lamed_he_ptcp_fs_cstr,
@@ -4316,6 +4324,24 @@ fn lamed_aleph_participle_reduce_variant(text: &str) -> Option<String> {
             seq[i - 1].vowel = Some(Vowel::Sheva);
             return Some(hebrew::render(&seq));
         }
+    }
+    None
+}
+
+/// Segol twin of a III-aleph ms active participle: the tsere C2 holds before the
+/// quiescent aleph lowers to segol — nōśēʾ נֹשֵׂא → nōśeʾ נֹשֶׁא (נשא). Additive;
+/// the segol spelling differs from the tsere base. Caller gates to (Qal,
+/// ParticipleActive, ms, LamedAleph).
+fn lamed_aleph_participle_ms_segol_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n >= 2
+        && seq[n - 1].letter == letter::ALEF
+        && seq[n - 1].vowel.is_none()
+        && seq[n - 2].vowel == Some(Vowel::Tsere)
+    {
+        seq[n - 2].vowel = Some(Vowel::Segol);
+        return Some(hebrew::render(&seq));
     }
     None
 }
