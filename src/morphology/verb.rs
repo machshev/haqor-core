@@ -1184,9 +1184,10 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let paragogic_nun = (form == Form::Imperfect
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
                     .then(|| paragogic_nun_variant(&text));
-                // Propretonic-reduced paragogic-nun twin of the hollow Qal
-                // imperfect plural (yāšûḇû → yᵉšûḇûn יְשׁוּבוּן, yᵉqûmûn).
-                let hollow_paragogic_nun = (binyan == Binyan::Qal
+                // Propretonic-reduced paragogic-nun twin of the hollow Qal/Hiphil
+                // imperfect plural (yāšûḇû → yᵉšûḇûn יְשׁוּבוּן, yᵉqûmûn; the
+                // hollow Hiphil yānîʕû → yᵊnîʕûn יְנִיעוּן).
+                let hollow_paragogic_nun = (matches!(binyan, Binyan::Qal | Binyan::Hiphil)
                     && root.has(Gizra::Hollow)
                     && form == Form::Imperfect
                     && imperfect_suffix_kind(pgn) == Suffix::Vocalic)
