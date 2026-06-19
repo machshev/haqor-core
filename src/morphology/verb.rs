@@ -11146,6 +11146,21 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
         Sheva,
         &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)],
     );
+    // A derived-stem (Piel) host whose theme reduces under an undageshable C2
+    // (guttural/resh → hataf-patah) links the energic 1cs with a patah rather
+    // than the usual segol — tᵊḇārăḵannî תְּבָרֲכַנִּי (ברך), tᵊḇaʕătannî
+    // תְּבַעֲתַנִּי (בעת). Gated to the reduced-theme (non-a-theme) hosts.
+    if (hebrew::is_guttural(seq[n - 2].letter) || seq[n - 2].letter == letter::RESH)
+        && !c2_patah
+        && !long_mater
+    {
+        let mut s = seq.clone();
+        s[n - 2].vowel = Some(HatafPatah);
+        s[n - 1].vowel = Some(Patah);
+        s.push(Cons::new(letter::NUN).with_dagesh().with_vowel(Hiriq));
+        s.push(Cons::new(letter::YOD));
+        out.push((OBJ_1CS, hebrew::render(&s)));
+    }
     out
 }
 
