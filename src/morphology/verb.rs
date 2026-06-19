@@ -9905,6 +9905,10 @@ fn derived_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
                 OBJ_2FS,
                 build(reduced, Some(Tsere), &[ocv(letter::KAF, Sheva)]),
             ), // -ēḵ
+            // The qamats-link bare-kaf -āḵ: the 2fs (pēʾărāḵ פֵאֲרָךְ "he has
+            // glorified you", Isa 60:9) and the homographic 2ms pausal.
+            (OBJ_2FS, build(reduced, Some(Qamats), &[Cons::new(letter::KAF)])), // -āḵ
+            (OBJ_2MS, build(reduced, Some(Qamats), &[Cons::new(letter::KAF)])), // -āḵ (pausal)
             (
                 OBJ_3MS,
                 build(reduced, None, &[Cons::new(letter::VAV).with_vowel(Holam)]),
