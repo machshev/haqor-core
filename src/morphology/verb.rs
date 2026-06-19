@@ -10897,7 +10897,9 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     // A Hiphil long-î host whose C3 is a quiescent aleph (the doubly-weak hollow
     // III-aleph בוא: yāḇîʔ יָבִיא): the suffix joins that aleph (yᵊḇîʔēm יְבִיאֵם),
     // so let a final aleph through when the …C(hiriq)-YOD-aleph shape is present.
-    let plene_i = n >= 4
+    // n>=3 also catches the bare hollow-yod imperative (šîṯ שִׁית, routed here by
+    // the dispatcher): the î-mater stays and the suffix joins C3 — šîṯēmô שִׁיתֵמוֹ.
+    let plene_i = n >= 3
         && seq[n - 2].letter == letter::YOD
         && seq[n - 2].vowel.is_none()
         && seq[n - 3].vowel == Some(Hiriq);
