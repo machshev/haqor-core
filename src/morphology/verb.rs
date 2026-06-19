@@ -12296,6 +12296,9 @@ fn hiphil_imperative_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
     ); // -ennû
     emit(OBJ_2MS, Sheva, &[ocv(letter::KAF, Qamats)]); // -ᵊḵā
     emit(OBJ_3FS, Segol, &[ocv(letter::HE, Qamats)]); // -ehā
+    // The mappiq-he 3fs -āh: C3 takes the qamats, the he a mappiq —
+    // hašḥîṯāh הַשְׁחִיתָהּ ("destroy it", Jer 36:29).
+    emit(OBJ_3FS, Qamats, &[Cons::new(letter::HE).with_dagesh()]); // -āh
     emit(OBJ_1CP, Tsere, &[Cons::new(letter::NUN), oshureq()]); // -ēnû
     emit(OBJ_3MP, Tsere, &[Cons::new(letter::MEM)]); // -ēm
     out
