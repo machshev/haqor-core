@@ -11652,16 +11652,27 @@ fn inf_construct_object_suffixes(
     // strong path after emitting these.
     if binyan == Binyan::Qal && c1 == letter::QOF && c2 == letter::RESH && c3 == letter::ALEF {
         for (obj, link, tail) in nominal_suffix_tails() {
-            let mut t = Cons::new(letter::TAV);
-            t.vowel = link;
-            let mut seq = vec![
-                rad(c1, 1).with_vowel(Sheva),
-                rad(c2, 2).with_vowel(Qamats),
-                rad(c3, 3),
-                t,
-            ];
-            seq.extend(tail);
-            out.push((obj, hebrew::render(&seq)));
+            // The light suffixes shift the stress and lengthen C2 to qamats
+            // (liqrāṯô); the heavy 2nd-person -ᵊḵā/-ᵊḵem also keep the stress on
+            // the base, so C2 holds its patah too — liqraʾṯᵊḵem לִקְרַאתְכֶם,
+            // beside the qamats grade.
+            let c2_grades: &[Vowel] = if matches!(obj, OBJ_2MS | OBJ_2MP) {
+                &[Qamats, Patah]
+            } else {
+                &[Qamats]
+            };
+            for &c2v in c2_grades {
+                let mut t = Cons::new(letter::TAV);
+                t.vowel = link;
+                let mut seq = vec![
+                    rad(c1, 1).with_vowel(Sheva),
+                    rad(c2, 2).with_vowel(c2v),
+                    rad(c3, 3),
+                    t,
+                ];
+                seq.extend(tail.clone());
+                out.push((obj, hebrew::render(&seq)));
+            }
         }
     }
     // Pe-yod -t infinitive host: the dropped-yod infinitive is a segolate
