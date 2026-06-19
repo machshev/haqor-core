@@ -658,6 +658,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     ))
                 .then(|| qal_imperative_ayin_guttural_a_variant(root, &text))
                 .flatten();
+                // II-aleph Qal perfect segol twin: the quiescing C2 aleph
+                // colors its theme patah to segol before a consonantal/heavy
+                // afformative — šᵊʾaltem → šᵊʾeltem שְׁאֶלְתֶּם (שאל).
+                let ayin_aleph_perf_segol = (binyan == Binyan::Qal
+                    && form == Form::Perfect
+                    && root.ayin() == letter::ALEF
+                    && matches!(perfect_suffix_kind(pgn), Suffix::Consonantal | Suffix::Heavy))
+                .then(|| ayin_aleph_perfect_segol_variant(&text))
+                .flatten();
                 // II-guttural Piel/Hithpael perfect virtual-doubling hiriq twin
                 // (נִאֲצוּ beside נֵאֲצוּ).
                 let piel_perf_guttural_hiriq =
@@ -3102,6 +3111,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_he_ptcp_fs_cstr,
                     lamed_aleph_perf_bare_t,
                     piel_perf_guttural_hiriq,
+                    ayin_aleph_perf_segol,
                     pe_aleph_wayy_1cp,
                     pe_aleph_tsere,
                     pe_aleph_holam,
@@ -4308,6 +4318,21 @@ fn pe_aleph_wayyiqtol_segol_variant(text: &str) -> Option<String> {
     if c.vowel == Some(Vowel::Patah) {
         c.vowel = Some(Vowel::Segol);
         return Some(hebrew::render(&seq));
+    }
+    None
+}
+
+/// II-aleph Qal perfect segol twin: before a consonantal/heavy afformative the
+/// quiescing C2 aleph colors its theme patah to segol — šᵊʾaltem → šᵊʾeltem
+/// שְׁאֶלְתֶּם (שאל). Caller gates to (Qal, Perfect, C2==aleph, consonantal/heavy
+/// suffix); additive — re-points the first aleph that carries the theme patah.
+fn ayin_aleph_perfect_segol_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    for c in seq.iter_mut() {
+        if c.letter == letter::ALEF && c.vowel == Some(Vowel::Patah) {
+            c.vowel = Some(Vowel::Segol);
+            return Some(hebrew::render(&seq));
+        }
     }
     None
 }
