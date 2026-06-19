@@ -10126,6 +10126,18 @@ fn lamed_he_imperfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
                 &[Cons::new(letter::KAF).with_dagesh().with_vowel(Qamats)],
             ),
         ), // -ekkā
+        // The energic -ekkā with a he mater (yakkekkâ יַכֶּכָּה, "he will
+        // strike you"), beside the bare -ekkā spelling above.
+        (
+            OBJ_2MS,
+            emit(
+                Segol,
+                &[
+                    Cons::new(letter::KAF).with_dagesh().with_vowel(Qamats),
+                    Cons::new(letter::HE),
+                ],
+            ),
+        ), // -ekkâ
     ]
 }
 
