@@ -905,6 +905,26 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         ]))
                     })
                     .flatten();
+                // III-He Hiphil infinitive absolute qamats twin: beside the
+                // tsere harbēh הַרְבֵּה, the C2 also carries qamats — harbâ
+                // הַרְבָּה ("abundantly", רבה), the form built like the perfect.
+                let lamed_he_hiphil_inf_abs_qamats = (binyan == Binyan::Hiphil
+                    && form == Form::InfinitiveAbsolute
+                    && root.lamed() == letter::HE)
+                .then(|| {
+                    let mut c2 = rad(root.ayin(), 2).with_vowel(Vowel::Qamats);
+                    if hebrew::is_begedkefet(root.ayin()) {
+                        c2 = c2.with_dagesh();
+                    }
+                    let mut seq = vec![
+                        Cons::new(letter::HE).with_vowel(Vowel::Patah),
+                        rad(root.pe(), 1).with_vowel(Vowel::Sheva),
+                        c2,
+                        Cons::new(letter::HE),
+                    ];
+                    apply_guttural(&mut seq, root);
+                    hebrew::render(&seq)
+                });
                 // Hollow Hiphil infinitive absolute hāCēC (הָשֵׁב, הָקֵם).
                 let hollow_hiphil_inf_abs = (binyan == Binyan::Hiphil
                     && form == Form::InfinitiveAbsolute
@@ -3207,6 +3227,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_aleph_impf_qamats,
                     lamed_aleph_impf_nun,
                     piel_inf_abs_lamed_he,
+                    lamed_he_hiphil_inf_abs_qamats,
                     hollow_hiphil_inf_abs,
                     halak_retained,
                     hiphil_ptcp_reduced,
