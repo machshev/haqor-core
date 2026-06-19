@@ -11836,12 +11836,17 @@ fn inf_construct_object_suffixes(
             // so the reduced twin is emitted only for the vowel links.
             // The Niphal theme tsere (hiššāmēḏ הִשָּׁמֵד) reduces the same way
             // before the vowel links — hiššāmᵊḏāḵ הִשָּׁמְדָךְ.
+            // An undageshable resh carries the Piel doubling virtually, so its
+            // theme tsere reduces just like a guttural's — bārēḵ → bārăḵô
+            // לְבָרֲכוֹ (ברך), not the dageshed-C2 dabbᵊrô.
+            let undageshable_c2 =
+                hebrew::is_guttural(seq[n - 2].letter) || seq[n - 2].letter == letter::RESH;
             let piel_theme = (matches!(binyan, Binyan::Piel | Binyan::Pual | Binyan::Hithpael)
                 && n >= 2
-                && (seq[n - 2].dagesh || hebrew::is_guttural(seq[n - 2].letter))
+                && (seq[n - 2].dagesh || undageshable_c2)
                 || binyan == Binyan::Niphal && n >= 2)
                 && seq[n - 2].vowel == Some(Vowel::Tsere);
-            let piel_reduced = if hebrew::is_guttural(seq[n - 2].letter) {
+            let piel_reduced = if undageshable_c2 {
                 Vowel::HatafPatah
             } else {
                 Vowel::Sheva
