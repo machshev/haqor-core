@@ -524,14 +524,28 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         {
                             Vec::new()
                         } else {
-                            [Vowel::Qamats, Vowel::Patah]
+                            let mut variants: Vec<String> = [Vowel::Qamats, Vowel::Patah]
                                 .into_iter()
                                 .map(|v| {
                                     let mut s = seq.clone();
                                     s[n - 2].vowel = Some(v);
                                     hebrew::render(&s)
                                 })
-                                .collect()
+                                .collect();
+                            // When C2 is a guttural, the theme lengthening to
+                            // qamats in pause lowers the preceding C1 patah to
+                            // segol (segol harmony): yiṯnaḥēm → yiṯneḥām
+                            // יִתְנֶחָם (נחם Hithpael, Ps 135:14).
+                            if n >= 3
+                                && hebrew::is_guttural(seq[n - 2].letter)
+                                && seq[n - 3].vowel == Some(Vowel::Patah)
+                            {
+                                let mut s = seq.clone();
+                                s[n - 2].vowel = Some(Vowel::Qamats);
+                                s[n - 3].vowel = Some(Vowel::Segol);
+                                variants.push(hebrew::render(&s));
+                            }
+                            variants
                         }
                     } else {
                         Vec::new()
