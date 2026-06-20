@@ -3898,6 +3898,37 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(gutt_pausal);
 
+    // I-guttural reduced-theme plural grades (יֶחְרְדוּ / יֶחֱזְקוּ): the segol-
+    // preformative imperfect plural the builder over-vocalises as יֶחֶרְדוּ also
+    // attests a silent-sheva and a hataf-segol grade on the guttural. Run over
+    // finished Qal imperfect-family plurals. Two twins per cell, gated to
+    // I-guttural roots + no object suffix — bounded fan-out.
+    let iguttural_reduced_pl: Vec<VerbForm> = if hebrew::is_guttural(root.pe()) {
+        forms
+            .iter()
+            .filter(|f| {
+                f.binyan == Binyan::Qal
+                    && matches!(
+                        f.form,
+                        Form::Imperfect | Form::Wayyiqtol | Form::Jussive | Form::Cohortative
+                    )
+                    && matches!(f.pgn.number, Some(Number::Plural))
+                    && f.object_suffix.is_none()
+            })
+            .flat_map(|f| {
+                iguttural_segol_plural_reduced_grades(&f.text)
+                    .into_iter()
+                    .map(move |t| VerbForm {
+                        text: t,
+                        ..f.clone()
+                    })
+            })
+            .collect()
+    } else {
+        Vec::new()
+    };
+    forms.extend(iguttural_reduced_pl);
+
     // III-guttural Piel/Hithpael imperfect pausal twin: the patah theme of a
     // doubled-C2 imperfect whose final ח/ע blocks the tsere (yiṯgallaʕ
     // יִתְגַּלַּע) lengthens to qamats in pause (יִתְגַּלָּע). Run over finished
@@ -8507,6 +8538,36 @@ fn iguttural_reduced_plural_variant(text: &str) -> Option<String> {
 /// pe-yod/ayin-guttural roots the pe-guttural gating misses), but only one
 /// grade per hataf — so it stays a single additive twin, never the strong-verb
 /// 3-grade fan-out that would triple the imperfect-plural index.
+/// Reduced-theme plural grades of the I-guttural segol-preformative imperfect:
+/// the generator emits the over-vocalised segol-on-guttural shape (yeḥerᵊḏû
+/// יֶחֶרְדוּ), but the attested reduced plural closes the segol prefix on the
+/// guttural with either a silent sheva (yeḥrᵊḏû יֶחְרְדוּ, חרד/חמר) or a
+/// hataf-segol (yeḥĕzᵊqû יֶחֱזְקוּ, חזק). Detects [pre-segol][guttural-segol]
+/// [C-sheva] and returns both grades. Additive; the over-vocalised base stays.
+fn iguttural_segol_plural_reduced_grades(text: &str) -> Vec<String> {
+    let seq = hebrew::parse_pointed(text);
+    if seq.len() < 3
+        || seq[0].vowel != Some(Vowel::Segol)
+        || !matches!(
+            seq[0].letter,
+            letter::YOD | letter::TAV | letter::NUN | letter::ALEF
+        )
+        || !hebrew::is_guttural(seq[1].letter)
+        || seq[1].vowel != Some(Vowel::Segol)
+        || seq[2].vowel != Some(Vowel::Sheva)
+    {
+        return Vec::new();
+    }
+    [Vowel::Sheva, Vowel::HatafSegol]
+        .into_iter()
+        .map(|v| {
+            let mut s = seq.clone();
+            s[1].vowel = Some(v);
+            hebrew::render(&s)
+        })
+        .collect()
+}
+
 fn guttural_pausal_imperfect_plural_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     let n = seq.len();
