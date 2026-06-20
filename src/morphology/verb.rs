@@ -1335,6 +1335,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && pgn == Pgn::new(Person::Third, Gender::Common, Number::Plural))
                 .then(|| perfect_stative_tsere_plural_variant(&text))
                 .flatten();
+                // ē-stative Qal perfect 3fs twin (ḥāp̄ērâ חָפֵרָה).
+                let qal_stative_perfect_3fs = (binyan == Binyan::Qal
+                    && form == Form::Perfect
+                    && pgn == Pgn::new(Person::Third, Gender::Feminine, Number::Singular))
+                .then(|| perfect_stative_tsere_3fs_variant(root, &text))
+                .flatten();
                 // Retained-tsere twin of the Piel perfect 3fs/3cp: the doubled
                 // theme tsere can be kept before the vocalic afformative —
                 // šiḥēṯû שִׁחֵתוּ, liqqēṭâ לִקֵּטָה. Additive.
@@ -3278,6 +3284,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_aleph_pausal,
                     qal_stative_perfect,
                     qal_stative_perfect_plural,
+                    qal_stative_perfect_3fs,
                     piel_perfect_retained_tsere,
                     piel_perf_retained_tsere_hiriq,
                     c3_nun_contract,
@@ -9041,6 +9048,28 @@ fn perfect_stative_tsere_variant(text: &str) -> Option<String> {
 /// the -û afformative — yāʿᵊp̄û יָעֲפוּ; the retained-tsere spelling yāʿēp̄û
 /// יָעֵפוּ surfaces under stress. The 3cp ends in a bare C3 followed by the
 /// shureq vav, so the theme consonant is the third unit from the end.
+/// 3fs sibling of [`perfect_stative_tsere_plural_variant`]: the stative theme
+/// tsere is kept before the -â afformative — ḥāp̄ērâ חָפֵרָה (חפר) beside the
+/// reduced ḥāp̄ᵊrâ. The 3fs shape is C2(reduced) C3(qamats) + he mater; the
+/// root gate (C3 = lamed-radical, C2 = ayin-radical) keeps III-weak 3fs forms,
+/// whose final he/tav belongs to the stem, out.
+fn perfect_stative_tsere_3fs_variant(root: &Root, text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 4
+        || seq[n - 1].letter != letter::HE
+        || seq[n - 1].vowel.is_some()
+        || seq[n - 2].letter != root.lamed()
+        || seq[n - 2].vowel != Some(Vowel::Qamats)
+        || seq[n - 3].letter != root.ayin()
+        || !matches!(seq[n - 3].vowel, Some(Vowel::Sheva | Vowel::HatafPatah))
+    {
+        return None;
+    }
+    seq[n - 3].vowel = Some(Vowel::Tsere);
+    Some(hebrew::render(&seq))
+}
+
 fn perfect_stative_tsere_plural_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     let n = seq.len();
