@@ -118,12 +118,32 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "3ms",
     },
     IrregularVerb {
-        // Niphal perfect 3fs of the highly-irregular היה (Mic 2:4 etc.).
-        surface: "וְנִהְיָתָה",
-        root: "היה",
-        binyan: "Niphal",
+        // Wayyiqtol of חלק "divide" + 3mp suffix: segol preformative with a
+        // qamats (qamats-hatuf) under the C1 guttural (1 Chr 23-24); generator
+        // builds the patah-prefix וַיַּחַלְקֵם.
+        surface: "וַיֶּחָלְקֵם",
+        root: "חלק",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Qal imperfect of רדף "pursue" + 2ms suffix: anomalous dagesh + hataf-
+        // patah under C2 dalet (יִרְדֲּפֶךָ, Ezek 35:6).
+        surface: "יִרְדֲּפֶךָ",
+        root: "רדף",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Hollow שית "set" Qal perfect 2ms + 1cs suffix: patah + dageshed tav
+        // host šatt- (שַׁתַּנִי, Ps 88:7).
+        surface: "שַׁתַּנִי",
+        root: "שית",
+        binyan: "Qal",
         form: "Perfect",
-        pgn: "3fs",
+        pgn: "2ms",
     },
     IrregularVerb {
         // Noun-like Qal infinitive construct of יכל "be able" (Num 14:16).
