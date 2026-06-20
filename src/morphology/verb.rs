@@ -1728,6 +1728,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Zero)
                     .then(|| lamed_he_doubled_apocope_variant(root, &text))
                     .flatten();
+                // Hiriq-prefix twin of the III-He doubled apocope: some roots
+                // keep the imperfect's hiriq preformative rather than raising it
+                // to tsere — wayyíšb וַיִּשְׁבְּ (שבה) beside wayyḗšt וַיֵּשְׁתְּ.
+                let lamed_he_doubled_apoc_hiriq = lamed_he_doubled_apoc
+                    .as_deref()
+                    .and_then(apocope_prefix_hiriq_variant);
                 // ראה tsere-segol jussive/imperfect 3ms: beside the patah-prefix
                 // apocopated yarʔ (the וַיַּרְא base, built in apply_gizra), the
                 // 3ms also surfaces with the tsere prefix over a segol C1 — yēreʔ
@@ -3243,6 +3249,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     wayyiqtol_cohortative,
                     hollow_wayyiqtol_pausal,
                     lamed_he_doubled_apoc,
+                    lamed_he_doubled_apoc_hiriq,
                     raah_apoc_tsere,
                     pe_yod_as_pe_nun,
                     pe_yod_hiphil_defective,
@@ -8799,6 +8806,18 @@ fn hollow_hiphil_inf_construct(root: &Root) -> Vec<Cons> {
 /// wayyēšt וַיֵּשְׁתְּ (שתה), wattēḇk וַתֵּבְךְּ (בכה). Built from the preformative
 /// (the consonant after the wayyiqtol vav) + C1 (silent sheva) + C2 (dagesh,
 /// silent sheva). Returns `None` if the form isn't a vav-prefixed wayyiqtol.
+/// Swap a doubled-apocope preformative's tsere to hiriq (וַיֵּשְׁבְּ → וַיִּשְׁבְּ).
+/// The preformative is `seq[0]`, or `seq[1]` past a wayyiqtol vav.
+fn apocope_prefix_hiriq_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let p = usize::from(seq.first().map(|c| c.letter) == Some(letter::VAV));
+    if seq.get(p).and_then(|c| c.vowel) != Some(Vowel::Tsere) {
+        return None;
+    }
+    seq[p].vowel = Some(Vowel::Hiriq);
+    Some(hebrew::render(&seq))
+}
+
 fn lamed_he_doubled_apocope_variant(root: &Root, text: &str) -> Option<String> {
     use Vowel::*;
     let seq = hebrew::parse_pointed(text);
