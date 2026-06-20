@@ -823,12 +823,24 @@ const SUMMARY_MISSES: usize = 10;
 /// Best-effort — a query error is logged, not propagated, so it never fails an
 /// otherwise-complete build.
 fn print_coverage_summary(db: &Connection, parsed: usize, total: usize) {
-    let pct = if total > 0 {
-        parsed as f64 / total as f64 * 100.0
-    } else {
-        0.0
-    };
-    println!("Parse coverage: {parsed}/{total} surfaces ({pct:.1}%)");
+    let pct = |n: usize| if total > 0 { n as f64 / total as f64 * 100.0 } else { 0.0 };
+    println!("Parse coverage: {parsed}/{total} surfaces ({:.1}%)", pct(parsed));
+
+    // The review_missing population — surfaces with no analysis and no lexical
+    // class, excluding Aramaic — is the true "missing" set the grind targets,
+    // both as a distinct-surface count and weighted by occurrences in the text.
+    let missing: rusqlite::Result<(i64, i64)> = db.query_row(
+        "SELECT COUNT(*), COALESCE(SUM(occurrences), 0) FROM review_missing",
+        [],
+        |r| Ok((r.get(0)?, r.get(1)?)),
+    );
+    match missing {
+        Ok((n, occ)) => println!(
+            "Missing: {n}/{total} surfaces ({:.1}%), {occ} occurrences",
+            pct(n as usize)
+        ),
+        Err(e) => log::warn!("missing-count query failed: {e}"),
+    }
 
     // review_missing is already ordered occurrences-DESC, so LIMIT takes the top.
     let rows: rusqlite::Result<Vec<(String, i64)>> = (|| {
