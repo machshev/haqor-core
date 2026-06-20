@@ -3795,6 +3795,37 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(pausal_q);
 
+    // III-aleph bare-tav twin over finished forms: the 2fs (and archaic 3fs)
+    // perfect leaves the -t afformative on a silent (unwritten) sheva after the
+    // quiescent aleph — qārāʾt קָרָאת, ṭāmēʾt טָמֵאת. The per-cell bare-t twin
+    // only reaches the primary a-theme stem; the ē-stative tsere alternate
+    // (ṭāmēʾtᵊ → ṭāmēʾt) is itself a twin, so drop the final tav sheva over every
+    // finished III-aleph perfect form ending in [aleph][tav-sheva].
+    if root.lamed() == letter::ALEF {
+        let bare_t: Vec<VerbForm> = forms
+            .iter()
+            .filter(|f| f.form == Form::Perfect && f.object_suffix.is_none())
+            .filter_map(|f| {
+                let mut seq = hebrew::parse_pointed(&f.text);
+                let n = seq.len();
+                (n >= 2
+                    && seq[n - 1].letter == letter::TAV
+                    && seq[n - 1].vowel == Some(Vowel::Sheva)
+                    && seq[n - 2].letter == letter::ALEF
+                    && seq[n - 2].vowel.is_none())
+                .then(|| {
+                    seq[n - 1].vowel = None;
+                    seq[n - 1].dagesh = false;
+                    VerbForm {
+                        text: hebrew::render(&seq),
+                        ..f.clone()
+                    }
+                })
+            })
+            .collect();
+        forms.extend(bare_t);
+    }
+
     // Furtive-patah twin: a word ending in a guttural ח/ע after a heterogeneous
     // (non-a) vowel takes a furtive patah under that guttural — môšîaʕ (מוֹשִׁיעַ),
     // šōmēaʕ (שֹׁמֵעַ), yašmîaʕ. The bare generator omits it; add the twin.
