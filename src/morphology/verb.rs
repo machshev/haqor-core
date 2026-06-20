@@ -9513,12 +9513,19 @@ fn hiphil_imperfect_uncontracted_variant(text: &str) -> Option<String> {
     {
         return None;
     }
+    // The reduced preformative vowel: a silent sheva, except the 1cs aleph is a
+    // guttural and takes a hataf-patah instead (ʾăyêlîl אֲיֵלִיל, not אְיֵלִיל).
+    let reduced = if seq[0].letter == letter::ALEF {
+        Vowel::HatafPatah
+    } else {
+        Vowel::Sheva
+    };
     // pe-vav/pe-yod holam: vowelless preformative + holam-vav → sheva + he + vav.
     if seq[0].vowel.is_none()
         && seq[1].letter == letter::VAV
         && seq[1].vowel == Some(Vowel::Holam)
     {
-        seq[0].vowel = Some(Vowel::Sheva);
+        seq[0].vowel = Some(reduced);
         seq.insert(1, Cons::new(letter::HE));
         return Some(hebrew::render(&seq));
     }
@@ -9527,7 +9534,7 @@ fn hiphil_imperfect_uncontracted_variant(text: &str) -> Option<String> {
         && seq[1].letter == letter::YOD
         && seq[1].vowel.is_none()
     {
-        seq[0].vowel = Some(Vowel::Sheva);
+        seq[0].vowel = Some(reduced);
         seq[1].vowel = Some(Vowel::Tsere);
         return Some(hebrew::render(&seq));
     }
