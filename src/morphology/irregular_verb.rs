@@ -182,6 +182,41 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // III-He Hophal perfect 3fs of עלה, holam preformative + hataf-patah
+        // guttural (הֹעֲלָתָה, Nah 2:8); generator builds the qamats-hatuf הׇעְלָתָה.
+        surface: "הֹעֲלָתָה",
+        root: "עלה",
+        binyan: "Hophal",
+        form: "Perfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // III-He Hophal perfect 2ms of ראה (הָרְאֵתָ, Deut 4:35).
+        surface: "הָרְאֵתָ",
+        root: "ראה",
+        binyan: "Hophal",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // III-ayin Hiphil perfect 2ms of ידע, patah under the guttural + plain
+        // tav (הוֹדַעַתָ, 1 Sam 28:15); generator builds הוֹדַעְתָּ.
+        surface: "הוֹדַעַתָ",
+        root: "ידע",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // Stative Qal imperative 2fs of חרב, qamats-hatuf theme (חֳרָבִי,
+        // Jer 50:21 etc.); generator builds חִרְבִי.
+        surface: "חֳרָבִי",
+        root: "חרב",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2fs",
+    },
+    IrregularVerb {
         // Noun-like Qal infinitive construct of יכל "be able" (Num 14:16).
         surface: "יְכֹלֶת",
         root: "יכל",
