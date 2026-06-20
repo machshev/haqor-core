@@ -3636,11 +3636,29 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     let seq = build_strong(root, binyan, form, pgn, false);
                     let (seq, c_attested) = apply_gizra(seq, root, binyan, form, pgn);
                     if let Some(cseq) = participle_mp_construct(&seq) {
+                        let cstr = hebrew::render(&cseq);
+                        // pe-yod Hiphil ê-twin of the construct: the per-cell
+                        // pe_yod_hiphil_e only reaches the absolute, so derive
+                        // the construct's ê-spelling here too — môṭîḇê מוֹטִיבֵי →
+                        // mêṭîḇê מֵיטִיבֵי.
+                        if binyan == Binyan::Hiphil
+                            && root.has(Gizra::PeYod)
+                            && let Some(e) = pe_yod_hiphil_e_variant(&cstr)
+                        {
+                            forms.push(VerbForm {
+                                binyan,
+                                form,
+                                pgn,
+                                text: e,
+                                attested: c_attested,
+                                object_suffix: None,
+                            });
+                        }
                         forms.push(VerbForm {
                             binyan,
                             form,
                             pgn,
-                            text: hebrew::render(&cseq),
+                            text: cstr,
                             attested: c_attested,
                             object_suffix: None,
                         });
