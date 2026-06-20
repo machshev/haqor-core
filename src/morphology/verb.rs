@@ -5369,10 +5369,16 @@ fn build_imperfect(
     out.push(c1);
 
     // ---- C2 ----
-    let v2 = match suffix {
+    let mut v2 = match suffix {
         Suffix::Vocalic => prefix.v2_vocalic,
         _ => prefix.v2_long,
     };
+    // Hiphil retains tsere (not the long î) before the consonantal -nâ
+    // afformative: taqṭēlnâ (תַּקְטֵלְנָה), haʾăzēnnâ. Mirrors the ms imperative
+    // haqṭēl and the zero-suffix jussive shortening above.
+    if binyan == Binyan::Hiphil && suffix == Suffix::Consonantal {
+        v2 = Tsere;
+    }
     let mut c2 = rad(root.ayin(), 2).with_vowel(v2);
     if matches!(binyan, Binyan::Piel | Binyan::Pual | Binyan::Hithpael) {
         c2 = c2.with_dagesh();
@@ -5643,9 +5649,11 @@ fn build_imperative(root: &Root, binyan: Binyan, pgn: Pgn, force_a_theme: bool) 
         // vocal here.
         c3.vowel = Some(Sheva);
     }
-    // Hiphil imperative ms has tsere on C2 (haqṭēl), no v3.
+    // Hiphil imperative C2 takes tsere in the ms (haqṭēl, zero suffix) and
+    // before the consonantal -nâ afformative (haqṭēlnâ, haʾăzēnnâ) — the
+    // long î only surfaces with the vocalic suffixes (haqṭîlî, haqṭîlû).
     if binyan == Binyan::Hiphil
-        && matches!(suffix, Suffix::Zero)
+        && matches!(suffix, Suffix::Zero | Suffix::Consonantal)
         && let Some(i) = radical_idx(&out, 2)
     {
         out[i].vowel = Some(Tsere);
