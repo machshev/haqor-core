@@ -118,13 +118,14 @@ pub struct VerbMatch {
 ///   otherwise-identical generated form. Candidate roots already key on the
 ///   bare letter ש and roots are reported by their bare letters, so collapsing
 ///   the dot recovers every sin verb without admitting new roots.
-/// - Plene hiriq (a bare yod mater — no vowel, no dagesh — after a hiriq)
-///   drops, so plene וַיָּשִׂימוּ and defective וַיָּשִׂמוּ normalise alike.
-///   A vowelless, dagesh-less yod after hiriq is always a mater (a consonantal
-///   yod there would carry its own vowel or sheva), so only orthography is
-///   removed. Word-final ־ִי also collapses, which is safe for the same
-///   reason: no form ends in a bare hiriq, so keys can only meet other
-///   hiriq-yod keys.
+/// - Plene hiriq/tsere (a bare yod mater — no vowel, no dagesh — after a hiriq
+///   or tsere) drops, so plene וַיָּשִׂימוּ and defective וַיָּשִׂמוּ normalise
+///   alike, as do plene הֵבֵיאתָ and defective הֵבֵאתָ (tsere-yod ê-mater).
+///   A vowelless, dagesh-less yod after an î/ê vowel is always a mater (a
+///   consonantal yod there would carry its own vowel or sheva), so only
+///   orthography is removed. Word-final ־ִי / ־ֵי also collapse, which is safe
+///   for the same reason: no form ends in a bare hiriq/tsere consonant, so keys
+///   can only meet other î/ê-yod keys (e.g. the mp construct -ê שֹׁמְרֵי).
 /// - A guttural's hataf vowel (hataf-patah/segol/qamats) folds to one: the
 ///   colour is phonologically conditioned, not lexically contrastive, so a
 ///   generated הֲיוֹת and the attested הֱיוֹת normalise alike.
@@ -187,7 +188,9 @@ pub(crate) fn canonical_key(form: &str) -> String {
         if c.letter == letter::YOD
             && !c.dagesh
             && c.vowel.is_none()
-            && out.last().is_some_and(|p| p.vowel == Some(Vowel::Hiriq))
+            && out
+                .last()
+                .is_some_and(|p| matches!(p.vowel, Some(Vowel::Hiriq | Vowel::Tsere)))
         {
             continue;
         }
