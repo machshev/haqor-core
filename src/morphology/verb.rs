@@ -2422,6 +2422,27 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         })
                 })
                 .flatten();
+                // pe-aleph III-He contracted plural imperative tsere twin: beside
+                // the hataf-segol base ʾĕp̄û אֱפוּ (אפה), the C1 guttural prefix
+                // also surfaces with a full tsere — ʾēp̄û אֵפוּ. (The retained-yod
+                // אֵתָיוּ twin covers the uncontracted shape; this is its
+                // contracted sibling.)
+                let lamed_he_guttural_imp_tsere = (binyan == Binyan::Qal
+                    && form == Form::Imperative
+                    && root.has(Gizra::LamedHe)
+                    && hebrew::is_guttural(root.pe()))
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    (seq
+                        .last()
+                        .is_some_and(|c| c.letter == letter::VAV && c.dagesh && c.vowel.is_none())
+                        && seq.first().and_then(|c| c.vowel) == Some(Vowel::HatafSegol))
+                    .then(|| {
+                        seq[0].vowel = Some(Vowel::Tsere);
+                        hebrew::render(&seq)
+                    })
+                })
+                .flatten();
                 // Piel infinitive absolute tsere twin: beside qaṭṭōl the
                 // construct-shaped qaṭṭēl serves as the absolute (mahēr מַהֵר).
                 let piel_inf_abs_tsere = (matches!(binyan, Binyan::Piel | Binyan::Hithpael)
@@ -3319,6 +3340,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hiphil_inf_abs_plene,
                     aleph_prefix_hataf_segol,
                     pe_yod_imperative_tsere,
+                    lamed_he_guttural_imp_tsere,
                     fp_nah_heless,
                 ]
                 .into_iter()
