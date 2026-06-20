@@ -743,6 +743,16 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     hiphil_imperfect_uncontracted_variant(pe_yod_hiphil_e.as_deref()?)
                 })
                 .flatten();
+                // He-retained uncontracted twin (yᵊhêlîl יְהֵילִיל) from both the
+                // direct tsere-yod base and the holam→ê alternate.
+                let hiphil_uncontracted_he = (binyan == Binyan::Hiphil
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Cohortative))
+                .then(|| {
+                    hiphil_imperfect_uncontracted_he_variant(&text).or_else(|| {
+                        hiphil_imperfect_uncontracted_he_variant(pe_yod_hiphil_e.as_deref()?)
+                    })
+                })
+                .flatten();
                 // LamedAleph Qal Perfect tsere variant — שָׂנֵאתִי beside שָׂנָאתִי.
                 let lamed_aleph_tsere = (binyan == Binyan::Qal
                     && root.has(Gizra::LamedAleph)
@@ -3244,6 +3254,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pe_aleph_holam,
                     hiphil_uncontracted,
                     hiphil_uncontracted_e,
+                    hiphil_uncontracted_he,
                     lamed_aleph_tsere,
                     pe_guttural_segol,
                     lamed_guttural_perf_sheva,
@@ -9567,6 +9578,38 @@ fn hiphil_imperfect_uncontracted_variant(text: &str) -> Option<String> {
     {
         seq[0].vowel = Some(reduced);
         seq[1].vowel = Some(Vowel::Tsere);
+        return Some(hebrew::render(&seq));
+    }
+    None
+}
+
+/// He-retained uncontracted Hiphil imperfect of the tsere-yod (ê) class: the
+/// preformative reduces and the Hiphil hê re-surfaces between it and the yod
+/// mater — yᵊhêlîl יְהֵילִיל (Hos 7:14), beside the he-less yᵊyêlîl יְיֵלִיל
+/// that [`hiphil_imperfect_uncontracted_variant`] builds. The 1cs aleph takes a
+/// hataf-patah (ʾăhêlîl), every other preformative a silent sheva. (The
+/// holam-vav class already re-inserts the hê in the contraction variant.)
+fn hiphil_imperfect_uncontracted_he_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() < 2
+        || !matches!(
+            seq[0].letter,
+            letter::YOD | letter::TAV | letter::NUN | letter::ALEF
+        )
+    {
+        return None;
+    }
+    let reduced = if seq[0].letter == letter::ALEF {
+        Vowel::HatafPatah
+    } else {
+        Vowel::Sheva
+    };
+    if seq[0].vowel == Some(Vowel::Tsere)
+        && seq[1].letter == letter::YOD
+        && seq[1].vowel.is_none()
+    {
+        seq[0].vowel = Some(reduced);
+        seq.insert(1, Cons::new(letter::HE).with_vowel(Vowel::Tsere));
         return Some(hebrew::render(&seq));
     }
     None
