@@ -8759,7 +8759,7 @@ fn qal_participle_fs_a_variant(root: &Root) -> Vec<Cons> {
 /// the consonantal afformative. Emitted defectively (the parser's holam
 /// collapse matches plene spellings). Gated to hollow roots + a consonantal /
 /// heavy suffix.
-fn hollow_niphal_otav_perfect(root: &Root, pgn: Pgn) -> Option<String> {
+fn hollow_niphal_otav_perfect(root: &Root, pgn: Pgn) -> Vec<String> {
     use Vowel::*;
     if !root.has(Gizra::Hollow)
         || !matches!(
@@ -8767,7 +8767,7 @@ fn hollow_niphal_otav_perfect(root: &Root, pgn: Pgn) -> Option<String> {
             Suffix::Consonantal | Suffix::Heavy
         )
     {
-        return None;
+        return Vec::new();
     }
     let suffix: Vec<Cons> = match (pgn.person, pgn.gender, pgn.number) {
         (Some(Person::First), _, Some(Number::Singular)) => {
@@ -8788,15 +8788,27 @@ fn hollow_niphal_otav_perfect(root: &Root, pgn: Pgn) -> Option<String> {
         (Some(Person::Second), Some(Gender::Feminine), Some(Number::Plural)) => {
             vec![Cons::new(letter::TAV).with_vowel(Segol), Cons::new(letter::NUN)]
         }
-        _ => return None,
+        _ => return Vec::new(),
     };
-    let mut seq = vec![
-        Cons::new(letter::NUN).with_vowel(Sheva),
-        rad(root.pe(), 1).with_vowel(Holam),
-        rad(root.lamed(), 3).with_vowel(Holam),
+    // C1 carries the contracted theme. The common spelling is holam (emitted
+    // defectively, matched plene via holam-collapse); a u-class variant is also
+    // attested — shureq plene (nᵊsûḡōṯî נְסוּגֹתִי) and its defective qubuts
+    // (nᵊḇunōṯî נְבֻנֹתִי, matched plene נְבֻנוֹתִי via the C3 holam-collapse).
+    let c1_themes: [Vec<Cons>; 3] = [
+        vec![rad(root.pe(), 1).with_vowel(Holam)],
+        vec![rad(root.pe(), 1), oshureq()],
+        vec![rad(root.pe(), 1).with_vowel(Qubuts)],
     ];
-    seq.extend(suffix);
-    Some(hebrew::render(&seq))
+    c1_themes
+        .into_iter()
+        .map(|c1| {
+            let mut seq = vec![Cons::new(letter::NUN).with_vowel(Sheva)];
+            seq.extend(c1);
+            seq.push(rad(root.lamed(), 3).with_vowel(Holam));
+            seq.extend(suffix.iter().cloned());
+            hebrew::render(&seq)
+        })
+        .collect()
 }
 
 fn hollow_niphal_perfect_variant(root: &Root, pgn: Pgn) -> Option<Vec<Cons>> {
