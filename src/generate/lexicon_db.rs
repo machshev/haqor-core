@@ -830,33 +830,45 @@ pub fn load_noun_inventory(lexicon_db: &Path) -> Result<Vec<NounStem>> {
     // invents an analysis.
     let mut seen: HashSet<String> = HashSet::new();
     let mut stems = Vec::new();
-    let add = |word: String, stems: &mut Vec<NounStem>, seen: &mut HashSet<String>| {
+    let add = |word: String, is_adj: bool, stems: &mut Vec<NounStem>, seen: &mut HashSet<String>| {
         let key: String = word.chars().filter(|c| !is_cantillation(*c)).collect();
         if !key.is_empty() && seen.insert(key) {
             // Segolates expand to all three base classes (see class_variants);
-            // other stems yield just themselves.
-            stems.extend(NounStem::classify(&word).class_variants());
+            // other stems yield just themselves. The adjective flag enables
+            // agreement inflection (feminine sg/pl) and rides through both.
+            stems.extend(
+                NounStem::classify(&word)
+                    .with_adjective(is_adj)
+                    .class_variants(),
+            );
         }
     };
 
+    // Strong's `english` headwords: nouns (n-m/n-f/n) and adjectives (a/a-*).
     let mut stmt = db.prepare(
-        "SELECT DISTINCT word FROM english \
+        "SELECT DISTINCT word, (pos = 'a' OR pos LIKE 'a-%') AS is_adj FROM english \
          WHERE word <> '' AND (\
             pos LIKE 'n-m%' OR pos LIKE 'n-f%' OR pos = 'n' \
             OR pos = 'a' OR pos LIKE 'a-%')",
     )?;
-    let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
-    for word in rows {
-        add(word?, &mut stems, &mut seen);
+    let rows = stmt.query_map([], |r| Ok((r.get::<_, String>(0)?, r.get::<_, bool>(1)?)))?;
+    for row in rows {
+        let (word, is_adj) = row?;
+        add(word, is_adj, &mut stems, &mut seen);
     }
 
+    // BDB common nouns (`n.*`, excluding proper nouns `n.pr*`) plus adjectives
+    // (`adj*` — adj, adj.gent, …; ~550 stems the Strong's list and the n.* query
+    // both miss). Proper-noun adjectives stay excluded (they start `n.pr`).
     let mut bdb = db.prepare(
-        "SELECT DISTINCT word FROM bdb \
-         WHERE word <> '' AND pos LIKE 'n.%' AND pos NOT LIKE 'n.pr%'",
+        "SELECT DISTINCT word, (pos LIKE 'adj%') AS is_adj FROM bdb \
+         WHERE word <> '' AND (\
+            (pos LIKE 'n.%' AND pos NOT LIKE 'n.pr%') OR pos LIKE 'adj%')",
     )?;
-    let rows = bdb.query_map([], |r| r.get::<_, String>(0))?;
-    for word in rows {
-        add(word?, &mut stems, &mut seen);
+    let rows = bdb.query_map([], |r| Ok((r.get::<_, String>(0)?, r.get::<_, bool>(1)?)))?;
+    for row in rows {
+        let (word, is_adj) = row?;
+        add(word, is_adj, &mut stems, &mut seen);
     }
 
     Ok(stems)

@@ -246,6 +246,60 @@ mod tests {
     }
 
     #[test]
+    fn parses_adjective_feminine_singular() {
+        // רָחָב "broad" (adjective) → feminine singular רְחָבָה, with propretonic
+        // reduction of the first qamats. וּרְחָבָה in Exod 3:8.
+        let stems = vec![NounStem::masculine("רָחָב").with_adjective(true)];
+        let m = parse_noun_word("רְחָבָה", &stems);
+        assert!(
+            m.iter()
+                .any(|m| m.label == "Feminine Singular" && m.prefix.is_empty()),
+            "expected feminine-singular adjective, got {m:?}"
+        );
+        // …and with the conjunction peeled.
+        let m = parse_noun_word("וּרְחָבָה", &stems);
+        assert!(
+            m.iter()
+                .any(|m| m.label == "Feminine Singular" && !m.prefix.is_empty()),
+            "expected prefixed feminine-singular adjective, got {m:?}"
+        );
+    }
+
+    #[test]
+    fn parses_adjective_feminine_plural() {
+        // גָּדוֹל "great" → feminine plural גְּדוֹלוֹת (plene -ôt).
+        let stems = vec![NounStem::masculine("גָּדוֹל").with_adjective(true)];
+        let m = parse_noun_word("גְּדוֹלוֹת", &stems);
+        assert!(
+            m.iter().any(|m| m.label == "Feminine Plural"),
+            "expected feminine-plural adjective, got {m:?}"
+        );
+    }
+
+    #[test]
+    fn parses_guttural_adjective_feminine() {
+        // חָדָשׁ "new" → חֲדָשָׁה: the guttural C1 takes hataf-patah, not sheva.
+        let stems = vec![NounStem::masculine("חָדָשׁ").with_adjective(true)];
+        let m = parse_noun_word("חֲדָשָׁה", &stems);
+        assert!(
+            m.iter().any(|m| m.label == "Feminine Singular"),
+            "expected guttural feminine-singular adjective, got {m:?}"
+        );
+    }
+
+    #[test]
+    fn non_adjective_masculine_has_no_feminine() {
+        // A plain masculine noun must NOT sprout a feminine -â (it would invent
+        // spurious analyses). דָּבָר → no דְּבָרָה.
+        let stems = vec![NounStem::masculine("דָּבָר")];
+        let m = parse_noun_word("דְּבָרָה", &stems);
+        assert!(
+            !m.iter().any(|m| m.label.starts_with("Feminine")),
+            "plain masculine noun should not feminize, got {m:?}"
+        );
+    }
+
+    #[test]
     fn parses_with_proclitic() {
         // וּמְלָכִים — conjunction ו + plural of מֶלֶךְ. The prefix is reported
         // separately. (parse_pointed ignores the shureq dagesh on the vav.)

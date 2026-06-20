@@ -51,11 +51,16 @@ enum Commands {
         #[arg(short, long)]
         binyan: Option<String>,
     },
-    /// Parse a fully-pointed OT word into every candidate verb analysis
-    /// (root + binyan + form + person/gender/number)
+    /// Parse a fully-pointed OT word into every candidate analysis: verbs
+    /// (root + binyan + form + person/gender/number) and, when the lexicon is
+    /// available, nouns and adjectives (lemma + class + inflected slot).
     Parse {
         /// Fully-pointed Hebrew word (e.g. שָׁמַר). Cantillation is ignored.
         word: String,
+        /// Lexicon database supplying the noun/adjective stem inventory. If it
+        /// is missing, only the (DB-free) verb analysis is reported.
+        #[arg(short, long, default_value = "data/lexicon.db")]
+        lexicon_db: PathBuf,
     },
     /// Inflect a Hebrew noun stem (singular absolute) across state, number,
     /// and pronominal suffixes
@@ -249,8 +254,8 @@ fn main() -> Result<()> {
         Commands::Morph { root, binyan } => {
             print_morphology(&root, binyan.as_deref())?;
         }
-        Commands::Parse { word } => {
-            print_parse(&word);
+        Commands::Parse { word, lexicon_db } => {
+            print_parse(&word, &lexicon_db)?;
         }
         Commands::Noun { stem, kind } => {
             print_noun(&stem, &kind)?;
@@ -429,21 +434,26 @@ fn print_morphology(root_input: &str, binyan_filter: Option<&str>) -> Result<()>
     Ok(())
 }
 
-fn print_parse(word: &str) {
-    let matches = morphology::parse_word(word);
+/// Combined parse report: every verb analysis (DB-free) plus every noun/
+/// adjective analysis (driven by the lexicon inventory, skipped if it is
+/// missing).
+fn print_parse(word: &str, lexicon_db: &std::path::Path) -> Result<()> {
     println!("Word: {word}");
     println!();
+    print_verb_section(word);
+    println!();
+    print_noun_section(word, lexicon_db)?;
+    Ok(())
+}
+
+/// Verb half of the parse report.
+fn print_verb_section(word: &str) {
+    let matches = morphology::parse_word(word);
     if matches.is_empty() {
-        println!("No verb analyses found.");
-        println!();
-        println!(
-            "(Only verbs are parsed, and only forms the generator spells exactly\n \
-             as the input — plene/defective and vav-consecutive variants may miss.)"
-        );
+        println!("Verbs: no analyses found.");
         return;
     }
-    println!("{} candidate analysis/analyses:", matches.len());
-    println!();
+    println!("Verbs — {} candidate analysis/analyses:", matches.len());
     for m in &matches {
         let root: String = m.root.letters.iter().collect();
         let mark = if m.attested { " " } else { "*" };
@@ -468,8 +478,43 @@ fn print_parse(word: &str) {
             suffix,
         );
     }
-    println!();
-    println!("(* = matched a strong-verb fallback; gizra rule not yet modelled)");
+    println!("  (* = matched a strong-verb fallback; gizra rule not yet modelled)");
+}
+
+/// Noun/adjective half of the parse report. If `lexicon_db` is missing, prints a
+/// note and returns Ok (so the verb-only report still works without the DB).
+fn print_noun_section(word: &str, lexicon_db: &std::path::Path) -> Result<()> {
+    if !lexicon_db.exists() {
+        println!(
+            "Nouns/adjectives: skipped (lexicon {} not found; pass --lexicon-db).",
+            lexicon_db.display()
+        );
+        return Ok(());
+    }
+    let stems = haqor_core::generate::load_noun_inventory(lexicon_db)
+        .with_context(|| format!("loading noun inventory from {}", lexicon_db.display()))?;
+    let mut inventory = morphology::NounInventory::build(&stems);
+    inventory.add_irregulars();
+    inventory.add_gold_nouns();
+    let matches = inventory.parse(word);
+
+    if matches.is_empty() {
+        println!("Nouns/adjectives: no analyses found.");
+        return Ok(());
+    }
+    println!(
+        "Nouns/adjectives — {} candidate analysis/analyses:",
+        matches.len()
+    );
+    for m in &matches {
+        let prefix = if m.prefix.is_empty() {
+            String::new()
+        } else {
+            format!("[{}] ", m.prefix)
+        };
+        println!("  {prefix}{}  {:?}  {}", m.stem, m.kind, m.label);
+    }
+    Ok(())
 }
 
 fn print_noun(stem_input: &str, kind: &str) -> Result<()> {

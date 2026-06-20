@@ -52,6 +52,11 @@ pub enum NounStemKind {
 pub struct NounStem {
     pub absolute_singular: Vec<Cons>,
     pub kind: NounStemKind,
+    /// True when the stem is an adjective (lexicon `pos` `a`/`adj`). Adjectives
+    /// inflect for agreement — a masculine headword also produces a feminine
+    /// singular (-â) and masculine/feminine plurals (-îm/-ôt) — which true
+    /// masculine nouns do not. Off by default; set via [`Self::with_adjective`].
+    pub is_adjective: bool,
 }
 
 impl NounStem {
@@ -61,6 +66,7 @@ impl NounStem {
         NounStem {
             absolute_singular: hebrew::parse_pointed(text),
             kind: NounStemKind::Masculine,
+            is_adjective: false,
         }
     }
 
@@ -68,6 +74,7 @@ impl NounStem {
         NounStem {
             absolute_singular: hebrew::parse_pointed(text),
             kind: NounStemKind::FeminineHe,
+            is_adjective: false,
         }
     }
 
@@ -75,6 +82,7 @@ impl NounStem {
         NounStem {
             absolute_singular: hebrew::parse_pointed(text),
             kind: NounStemKind::FeminineT,
+            is_adjective: false,
         }
     }
 
@@ -84,7 +92,15 @@ impl NounStem {
         NounStem {
             absolute_singular: hebrew::parse_pointed(text),
             kind: NounStemKind::Segolate,
+            is_adjective: false,
         }
+    }
+
+    /// Mark this stem as an adjective (enables agreement inflection). Builder so
+    /// it composes with [`Self::classify`] and [`Self::class_variants`].
+    pub fn with_adjective(mut self, is_adjective: bool) -> Self {
+        self.is_adjective = is_adjective;
+        self
     }
 
     /// Build a stem from a pointed singular-absolute headword, guessing the
@@ -98,6 +114,7 @@ impl NounStem {
         NounStem {
             kind: classify_kind(&seq),
             absolute_singular: seq,
+            is_adjective: false,
         }
     }
 
@@ -259,6 +276,55 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
         out.push(NounInflection {
             label: "Feminine Singular".to_string(),
             text: hebrew::render(&feminine),
+        });
+    }
+    // Adjective agreement: a masculine adjective headword (gāḏôl גָּדוֹל, rāḥāḇ
+    // רָחָב, ṭôḇ טוֹב) also inflects for a feminine singular (-â: gᵊḏôlâ, rᵊḥāḇâ)
+    // and a feminine plural (-ôt: gᵊḏôlôt, rᵊḥāḇôt); the masculine plural (-îm)
+    // is already produced by the standard Masculine machinery above. The base
+    // takes the same propretonic reduction as before the heavy -îm ending. Gated
+    // on `is_adjective` so true masculine nouns don't sprout spurious feminines.
+    // The -ôt plural is emitted both plene (mater vav) and defective so either
+    // WLC spelling matches; additive, exact-match keeps only what occurs.
+    if stem.is_adjective && stem.kind == NounStemKind::Masculine {
+        let mut base = stem.absolute_singular.clone();
+        reduce_heavy_masculine(&mut base);
+        // A guttural C1 can't carry the plain reduced sheva — it takes hataf-patah
+        // (ḥāḏāš חָדָשׁ → ḥăḏāšâ חֲדָשָׁה, not ḥᵊḏāšâ).
+        if let Some(first) = base.first_mut()
+            && first.vowel == Some(Vowel::Sheva)
+            && hebrew::is_guttural(first.letter)
+        {
+            first.vowel = Some(Vowel::Sheva.guttural_sheva());
+        }
+
+        let mut fem_sg = base.clone();
+        if let Some(last) = fem_sg.last_mut() {
+            last.vowel = Some(Vowel::Qamats);
+        }
+        fem_sg.push(Cons::new(letter::HE));
+        out.push(NounInflection {
+            label: "Feminine Singular".to_string(),
+            text: hebrew::render(&fem_sg),
+        });
+
+        // Plene -ôt: holam-male written on a mater vav before the tav.
+        let mut fem_pl_plene = base.clone();
+        fem_pl_plene.push(Cons::new(letter::VAV).with_vowel(Vowel::Holam));
+        fem_pl_plene.push(Cons::new(letter::TAV));
+        out.push(NounInflection {
+            label: "Feminine Plural".to_string(),
+            text: hebrew::render(&fem_pl_plene),
+        });
+        // Defective -ōt: holam point on the last radical, no mater vav.
+        let mut fem_pl_def = base.clone();
+        if let Some(last) = fem_pl_def.last_mut() {
+            last.vowel = Some(Vowel::Holam);
+        }
+        fem_pl_def.push(Cons::new(letter::TAV));
+        out.push(NounInflection {
+            label: "Feminine Plural".to_string(),
+            text: hebrew::render(&fem_pl_def),
         });
     }
     // Pronominal suffixes (singular base).
