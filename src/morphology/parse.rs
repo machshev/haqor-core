@@ -716,13 +716,24 @@ fn object_suffix_fallback(
 }
 
 /// Object-suffix fallback for the **indexed** parser: the lookup twin of
-/// [`object_suffix_fallback`]. A suffixed surface that failed to parse is looked
-/// up — at each proclitic strip level, with the same sandhi variants the main
-/// loop tries — in [`ReverseIndex::obj_index`], the precomputed expansion of
-/// every bare host's object suffixes. The gating on a failed parse keeps this in
-/// step with the generate-and-test parser (neither fires for a surface that
-/// already parses) while costing only a hash lookup, so it stays cheap even when
-/// run over every word of a text.
+/// [`object_suffix_fallback`]. A suffixed surface that failed to parse is, at
+/// each proclitic strip level and with the same sandhi variants the main loop
+/// tries, **peeled** ([`peel_object_suffix`]) to its connecting stem(s); the
+/// stem key ([`connecting_stem_key`]) finds the host entries in
+/// [`ReverseIndex::obj_index`], and the candidate's full canonical surface hash
+/// must match one of an entry's `endings` to confirm the exact form. This is the
+/// ADR-0004 Option C lookup: the index holds connecting stems, not the
+/// host×suffix cross-product, but the surface-hash gate makes a match yield
+/// exactly what the old full-surface index did.
+///
+/// An un-peelable surface (none of the recognised endings apply) is also probed
+/// directly under its own canonical-surface key, which is where the builder
+/// files such surfaces — so coverage is a superset of the peel paths and nothing
+/// the old index held becomes unreachable.
+///
+/// The gating on a failed parse keeps this in step with the generate-and-test
+/// parser (neither fires for a surface that already parses); the work is a peel
+/// plus a hash lookup, so it stays cheap even when run over every word of a text.
 fn object_suffix_fallback_indexed(
     seq: &[Cons],
     index: &ReverseIndex,
@@ -739,37 +750,57 @@ fn object_suffix_fallback_indexed(
         let remainder = &seq[strip..];
         let prefix = hebrew::render(&seq[..strip]);
         for t in peeling_targets(seq, strip, remainder) {
-            for (_, e) in index.obj_get(key_hash(&canonical_key(&t))) {
-                let letters = e.letters();
-                if !in_filter(&letters) {
-                    continue;
-                }
-                // A Wayyiqtol host carries its own וַ — only the unstripped
-                // surface (strip 0) can match it.
-                let vav = e.form == Form::Wayyiqtol;
-                if vav && strip > 0 {
-                    continue;
-                }
-                let key = (
-                    letters,
-                    e.binyan,
-                    e.form,
-                    e.pgn,
-                    e.object_suffix,
-                    if vav { 0 } else { strip },
-                    vav,
-                );
-                if seen.insert(key) {
-                    matches.push(VerbMatch {
-                        root: Root::from_letters(letters),
-                        binyan: e.binyan,
-                        form: e.form,
-                        pgn: e.pgn,
-                        attested: e.attested,
-                        prefix: if vav { String::new() } else { prefix.clone() },
-                        vav_consecutive: vav,
-                        object_suffix: e.object_suffix,
-                    });
+            let target_hash = (key_hash(&canonical_key(&t)) as u64) & ENDING_HASH_MASK;
+            // Stem keys to probe: every peel of the target, plus the target's own
+            // canonical-surface key for un-peelable entries the builder filed
+            // whole. The surface-hash gate below rejects any spurious stem hit.
+            let mut keys: Vec<u64> = peel_object_suffix(&hebrew::parse_pointed(&t))
+                .iter()
+                .map(|(s, _)| connecting_stem_key(s))
+                .collect();
+            keys.push(key_hash(&canonical_key(&t)) as u64);
+            keys.sort_unstable();
+            keys.dedup();
+            for k in keys {
+                for (_, e) in index.obj_get(k) {
+                    let letters = e.letters();
+                    if !in_filter(&letters) {
+                        continue;
+                    }
+                    // A Wayyiqtol host carries its own וַ — only the unstripped
+                    // surface (strip 0) can match it.
+                    let vav = e.form == Form::Wayyiqtol;
+                    if vav && strip > 0 {
+                        continue;
+                    }
+                    for &packed in index
+                        .obj_endings(e)
+                        .iter()
+                        .filter(|&&p| p & ENDING_HASH_MASK == target_hash)
+                    {
+                        let obj = pgn_decode((packed & 0xFF) as u8);
+                        let key = (
+                            letters,
+                            e.binyan,
+                            e.form,
+                            e.pgn,
+                            Some(obj),
+                            if vav { 0 } else { strip },
+                            vav,
+                        );
+                        if seen.insert(key) {
+                            matches.push(VerbMatch {
+                                root: Root::from_letters(letters),
+                                binyan: e.binyan,
+                                form: e.form,
+                                pgn: e.pgn,
+                                attested: false,
+                                prefix: if vav { String::new() } else { prefix.clone() },
+                                vav_consecutive: vav,
+                                object_suffix: Some(obj),
+                            });
+                        }
+                    }
                 }
             }
         }
@@ -1033,6 +1064,43 @@ impl IndexEntry {
     }
 }
 
+/// An object-suffix host in the [`ReverseIndex::obj_index`], keyed by its
+/// *connecting stem* rather than by each suffixed surface (ADR-0004 Option C).
+///
+/// The generator expands every bare host into ~15 suffixed surfaces. Indexing
+/// each surface separately (the earlier design) repeats the host's
+/// `(binyan, form, pgn)` metadata 15× and multiplies the obj index. Instead we
+/// file the host once per *connecting-stem key* ([`connecting_stem_key`] — the
+/// reduced stem the suffixes attach to, with its final link vowel cleared so all
+/// suffixes of one grade share a key) and carry the suffixed surfaces as a run of
+/// packed `u64` endings ([`pack_ending`]) in the shared `obj_endings` arena. The
+/// stem key only narrows the candidate set; the per-ending surface hash is the
+/// exactness gate, so a lookup yields exactly what the full-surface index did —
+/// the equivalence is by construction, since build and parse both reach the key
+/// through the same [`peel_object_suffix`] + `canonical_key`.
+///
+/// `attested` is always false for object-suffixed forms, so it is not stored.
+/// The host's suffixed surfaces are not stored inline — a `Vec` per entry would
+/// cost a header plus an allocation across tens of millions of entries — but as
+/// a contiguous `[end_start, end_start + end_len)` run of packed endings in the
+/// index's shared [`ReverseIndex::obj_endings`] arena (CSR layout).
+#[derive(Clone)]
+struct ObjStemEntry {
+    radicals: [u8; 3],
+    binyan: Binyan,
+    form: Form,
+    pgn: Pgn,
+    end_start: u32,
+    end_len: u32,
+}
+
+impl ObjStemEntry {
+    /// The radical letters as Hebrew `char`s, decoded from the packed indices.
+    fn letters(&self) -> [char; 3] {
+        self.radicals.map(|i| HEBREW_CONSONANTS[i as usize])
+    }
+}
+
 /// Pack a triliteral root's `char` radicals into their [`HEBREW_CONSONANTS`]
 /// indices. Every root indexed comes from that array, so each radical is always
 /// found.
@@ -1097,7 +1165,18 @@ pub struct ReverseIndex {
     /// This precomputes the suffix expansion once at build, so the fallback is a
     /// hash lookup, not a per-surface generate-and-test (which would cost minutes
     /// over a full text, since it fires on every non-verb word too).
-    obj_index: Vec<(u128, IndexEntry)>,
+    ///
+    /// Keyed by *connecting stem* ([`connecting_stem_key`]), not by suffixed
+    /// surface — see [`ObjStemEntry`]. Each entry holds the host metadata once
+    /// and points at a run of its suffixed surfaces in `obj_endings`, so the obj
+    /// index no longer stores the full host×suffix cross-product. The key is a
+    /// `u64` (not the `u128` of `entries`) because the per-ending surface hash,
+    /// not the stem key, is the exactness gate, so a stem-key collision is
+    /// harmless (it only widens the candidate scan).
+    obj_index: Vec<(u64, ObjStemEntry)>,
+    /// CSR arena of packed endings ([`pack_ending`]) shared by every
+    /// [`ObjStemEntry`]; an entry's endings are `obj_endings[end_start..][..end_len]`.
+    obj_endings: Vec<u64>,
 }
 
 /// A 128-bit hash of a [`canonical_key`], used as the [`ReverseIndex`] key in
@@ -1115,6 +1194,95 @@ fn key_hash(canonical: &str) -> u128 {
     lo.write_u8(0x9e);
     canonical.hash(&mut lo);
     ((hi.finish() as u128) << 64) | (lo.finish() as u128)
+}
+
+/// The connecting-stem key for an object-suffix host (ADR-0004 Option C): the
+/// hash of the canonical reduced stem with its final consonant's vowel cleared.
+///
+/// [`peel_object_suffix`] strips the suffix consonants but leaves the *linking*
+/// vowel on the last stem consonant (qᵊṭāl-**a**-nî, qᵊṭāl-**ᵊ**-ḵā, qᵊṭāl-ô).
+/// Clearing it folds every suffix of one host grade onto a single key, which is
+/// what collapses the host×suffix cross-product. Exactness is not lost: the
+/// caller still gates on the full canonical surface hash, so the key need only
+/// be a deterministic function of the peeled stem that build and parse share.
+///
+/// The stem is canonicalised *before* the final vowel is cleared, not after: a
+/// plene stem ending in a holam/shureq **mater** (a vav written for the vowel)
+/// must fold onto the preceding consonant — as `canonical_key` does — so it keys
+/// identically to the defective spelling the generator emits. Clearing first
+/// would strip the mater's vowel and leave a bare vav that no longer folds,
+/// splitting plene and defective spellings of one stem into two keys and dropping
+/// the plene surface (it still passes the surface-hash gate, but the stem lookup
+/// never reaches it).
+fn connecting_stem_key(stem: &[Cons]) -> u64 {
+    let mut s = hebrew::parse_pointed(&canonical_key(&hebrew::render(stem)));
+    if let Some(last) = s.last_mut() {
+        last.vowel = None;
+    }
+    key_hash(&hebrew::render(&s)) as u64
+}
+
+/// Pack an object-suffix [`Pgn`] into 6 bits (the low byte of a stored ending).
+/// Object suffixes always fill all three axes, but the codec round-trips `None`
+/// axes too (code 0) so it is total. Each axis is 0–3, two bits each.
+fn pgn_code(p: Pgn) -> u8 {
+    let person = match p.person {
+        None => 0,
+        Some(Person::First) => 1,
+        Some(Person::Second) => 2,
+        Some(Person::Third) => 3,
+    };
+    let gender = match p.gender {
+        None => 0,
+        Some(Gender::Masculine) => 1,
+        Some(Gender::Feminine) => 2,
+        Some(Gender::Common) => 3,
+    };
+    let number = match p.number {
+        None => 0,
+        Some(Number::Singular) => 1,
+        Some(Number::Plural) => 2,
+        Some(Number::Dual) => 3,
+    };
+    (person << 4) | (gender << 2) | number
+}
+
+/// Inverse of [`pgn_code`].
+fn pgn_decode(code: u8) -> Pgn {
+    let person = match (code >> 4) & 0b11 {
+        1 => Some(Person::First),
+        2 => Some(Person::Second),
+        3 => Some(Person::Third),
+        _ => None,
+    };
+    let gender = match (code >> 2) & 0b11 {
+        1 => Some(Gender::Masculine),
+        2 => Some(Gender::Feminine),
+        3 => Some(Gender::Common),
+        _ => None,
+    };
+    let number = match code & 0b11 {
+        1 => Some(Number::Singular),
+        2 => Some(Number::Plural),
+        3 => Some(Number::Dual),
+        _ => None,
+    };
+    Pgn {
+        person,
+        gender,
+        number,
+    }
+}
+
+/// An object-suffix host's suffixed surface, packed into one `u64` for the CSR
+/// ending arena: the high 56 bits are the canonical surface hash, the low 8 the
+/// suffix [`pgn_code`]. The 56-bit hash is the exactness gate; sacrificing the
+/// low 8 bits of the hash keeps the ending at 8 bytes, and a 56-bit collision
+/// would have to land inside the same stem entry's handful of endings to mislead.
+const ENDING_HASH_MASK: u64 = !0xFFu64;
+
+fn pack_ending(surf_hash: u64, obj: Pgn) -> u64 {
+    (surf_hash & ENDING_HASH_MASK) | pgn_code(obj) as u64
 }
 
 impl ReverseIndex {
@@ -1143,7 +1311,12 @@ impl ReverseIndex {
                 }
             }
         }
-        let per_root: Vec<(Vec<(u128, IndexEntry)>, Vec<(u128, IndexEntry)>)> = roots
+        type RootBuild = (
+            Vec<(u128, IndexEntry)>,
+            Vec<(u64, ObjStemEntry)>,
+            Vec<u64>,
+        );
+        let per_root: Vec<RootBuild> = roots
             .par_iter()
             .map(|&letters| {
                 let radicals = pack_radicals(letters);
@@ -1167,47 +1340,88 @@ impl ReverseIndex {
                     })
                     .collect();
                 // Object-suffix the bare hosts (twins included, since every twin
-                // is its own bare `forms` entry) and index the resulting
-                // surfaces. This catches the host grades the generator's own
-                // suffix dispatch never threads — the obj-suffix coverage gap —
-                // without expanding the host×suffix cross-product into `entries`.
-                let obj: Vec<(u128, IndexEntry)> = para
-                    .forms
-                    .iter()
-                    .filter(|vf| vf.object_suffix.is_none())
-                    .flat_map(|vf| {
+                // is its own bare `forms` entry). This catches the host grades the
+                // generator's own suffix dispatch never threads — the obj-suffix
+                // coverage gap — without expanding the host×suffix cross-product
+                // into `entries`. Filed per *connecting stem* (ADR-0004 Option C):
+                // each host's ~15 suffixed surfaces collapse onto the few stem
+                // grades they attach to, carried as packed endings in this root's
+                // local arena (offset into the global arena at assembly time).
+                let mut obj: Vec<(u64, ObjStemEntry)> = Vec::new();
+                let mut endings_arena: Vec<u64> = Vec::new();
+                for vf in para.forms.iter().filter(|vf| vf.object_suffix.is_none()) {
+                    // Group this host's suffixed surfaces by connecting-stem key.
+                    let mut by_stem: HashMap<u64, Vec<u64>> = HashMap::new();
+                    for (obj_pgn, surface) in
                         host_object_suffixes(vf.binyan, vf.form, vf.pgn, &vf.text, &root)
-                            .into_iter()
-                            .map(move |(obj_pgn, surface)| {
-                                (
-                                    key_hash(&canonical_key(&surface)),
-                                    IndexEntry {
-                                        radicals,
-                                        binyan: vf.binyan,
-                                        form: vf.form,
-                                        pgn: vf.pgn,
-                                        object_suffix: Some(obj_pgn),
-                                        attested: false,
-                                    },
-                                )
-                            })
-                    })
-                    .collect();
-                (entries, obj)
+                    {
+                        let packed =
+                            pack_ending(key_hash(&canonical_key(&surface)) as u64, obj_pgn);
+                        let peels = peel_object_suffix(&hebrew::parse_pointed(&surface));
+                        // The stem key(s) this surface lands under. An un-peelable
+                        // surface is filed under its own full-surface key, which
+                        // the parser also probes directly, so it stays reachable.
+                        let mut keys: Vec<u64> = if peels.is_empty() {
+                            vec![key_hash(&canonical_key(&surface)) as u64]
+                        } else {
+                            peels.iter().map(|(s, _)| connecting_stem_key(s)).collect()
+                        };
+                        keys.sort_unstable();
+                        keys.dedup();
+                        for k in keys {
+                            let v = by_stem.entry(k).or_default();
+                            if !v.contains(&packed) {
+                                v.push(packed);
+                            }
+                        }
+                    }
+                    for (stem_key, endings) in by_stem {
+                        let end_start = endings_arena.len() as u32;
+                        endings_arena.extend_from_slice(&endings);
+                        obj.push((
+                            stem_key,
+                            ObjStemEntry {
+                                radicals,
+                                binyan: vf.binyan,
+                                form: vf.form,
+                                pgn: vf.pgn,
+                                end_start,
+                                end_len: endings.len() as u32,
+                            },
+                        ));
+                    }
+                }
+                (entries, obj, endings_arena)
             })
             .collect();
 
-        let total: usize = per_root.iter().map(|(e, _)| e.len()).sum();
-        let obj_total: usize = per_root.iter().map(|(_, o)| o.len()).sum();
+        let total: usize = per_root.iter().map(|(e, _, _)| e.len()).sum();
+        let obj_total: usize = per_root.iter().map(|(_, o, _)| o.len()).sum();
+        let end_total: usize = per_root.iter().map(|(_, _, d)| d.len()).sum();
         let mut entries: Vec<(u128, IndexEntry)> = Vec::with_capacity(total);
-        let mut obj_index: Vec<(u128, IndexEntry)> = Vec::with_capacity(obj_total);
-        for (chunk, obj) in per_root {
+        let mut obj_index: Vec<(u64, ObjStemEntry)> = Vec::with_capacity(obj_total);
+        let mut obj_endings: Vec<u64> = Vec::with_capacity(end_total);
+        for (chunk, mut obj, endings) in per_root {
             entries.extend(chunk);
+            // Re-base each entry's arena range onto the growing global arena
+            // before appending this root's endings to it.
+            let offset = obj_endings.len() as u32;
+            for (_, e) in obj.iter_mut() {
+                e.end_start += offset;
+            }
             obj_index.extend(obj);
+            obj_endings.extend(endings);
         }
         entries.par_sort_unstable_by_key(|&(k, _)| k);
+        // Sorting reorders the (key, entry) pairs; each entry's arena range
+        // travels with it and the arena itself is untouched, so the ranges stay
+        // valid.
         obj_index.par_sort_unstable_by_key(|&(k, _)| k);
-        ReverseIndex { entries, obj_index }
+        ReverseIndex {
+            entries,
+            obj_index,
+            obj_endings,
+        }
     }
 
     /// The `(key, analysis)` pairs whose key hash equals `key`, as a contiguous
@@ -1223,14 +1437,21 @@ impl ReverseIndex {
     }
 
     /// Like [`ReverseIndex::get`] but over the object-suffix index — the run of
-    /// suffixed-host analyses whose key hash equals `key`.
-    fn obj_get(&self, key: u128) -> &[(u128, IndexEntry)] {
+    /// connecting-stem hosts whose stem-key hash equals `key`.
+    fn obj_get(&self, key: u64) -> &[(u64, ObjStemEntry)] {
         let start = self.obj_index.partition_point(|&(k, _)| k < key);
         let mut end = start;
         while end < self.obj_index.len() && self.obj_index[end].0 == key {
             end += 1;
         }
         &self.obj_index[start..end]
+    }
+
+    /// The packed endings ([`pack_ending`]) of an [`ObjStemEntry`], read from the
+    /// shared CSR arena.
+    fn obj_endings(&self, e: &ObjStemEntry) -> &[u64] {
+        let start = e.end_start as usize;
+        &self.obj_endings[start..start + e.end_len as usize]
     }
 }
 
@@ -2512,5 +2733,88 @@ mod peel_coverage {
         }
         let pct = 100.0 * ok as f64 / total as f64;
         assert!(pct >= 99.0, "peeler coverage {ok}/{total} = {pct:.1}% < 99%");
+    }
+
+    /// ADR-0004 Option C equivalence oracle, scoped to the rewrite itself: the
+    /// connecting-stem `obj_index` must still recover every suffixed surface the
+    /// old full-surface index held. We drive [`object_suffix_fallback_indexed`]
+    /// directly (the parser gates it behind a failed parse, which would mask the
+    /// index under main-`entries` hits and proclitic alternatives — a pre-existing
+    /// parity concern, not this index's job) and assert each generated suffixed
+    /// surface peels back to its host. Coverage in this direction proves nothing
+    /// became unreachable; the surface-hash gate makes the reverse (no spurious
+    /// match) hold by construction. Spans strong, weak and twin hosts.
+    #[test]
+    fn obj_index_recovers_every_generated_suffix() {
+        let index = ReverseIndex::build();
+        let roots = [
+            "שמר", "קטל", "ברך", "בוא", "קום", "עשה", "בנה", "נתן", "שלח", "אכל",
+            "ראה", "ישב", "סבב", "מצא", "לקח",
+        ];
+        let (mut total, mut missed) = (0usize, 0usize);
+        for r in roots {
+            let root = Root::parse(r).unwrap();
+            for vf in generate_paradigm(&root)
+                .forms
+                .iter()
+                .filter(|vf| vf.object_suffix.is_none())
+            {
+                for (obj, surface) in
+                    host_object_suffixes(vf.binyan, vf.form, vf.pgn, &vf.text, &root)
+                {
+                    total += 1;
+                    let seq = hebrew::parse_pointed(&surface);
+                    let mut matches = Vec::new();
+                    let mut seen = HashSet::new();
+                    object_suffix_fallback_indexed(
+                        &seq, &index, None, &mut matches, &mut seen,
+                    );
+                    let found = matches.iter().any(|m| {
+                        m.root.letters == root.letters
+                            && m.binyan == vf.binyan
+                            && m.form == vf.form
+                            && m.pgn == vf.pgn
+                            && m.object_suffix == Some(obj)
+                    });
+                    if !found {
+                        missed += 1;
+                        eprintln!(
+                            "obj_index miss: {surface} (root {r}, {:?} {:?} {} + {})",
+                            vf.binyan,
+                            vf.form,
+                            vf.pgn.label(),
+                            obj.label()
+                        );
+                    }
+                }
+            }
+        }
+        assert_eq!(missed, 0, "{missed}/{total} generated suffixed surfaces unrecoverable");
+    }
+
+    /// Report the obj-index shrink (ADR-0004 Option C). The old design stored one
+    /// `(key, entry)` per suffixed surface; the new one stores one `ObjStemEntry`
+    /// per connecting stem, listing those surfaces as `endings`. The sum of
+    /// `endings` lengths is exactly the old entry count, so their ratio is the
+    /// entry-count shrink. Run with `--nocapture` to see the numbers.
+    #[test]
+    #[ignore = "diagnostic: builds the full index; run explicitly with --nocapture"]
+    fn obj_index_shrink_stats() {
+        let index = ReverseIndex::build();
+        let new_entries = index.obj_index.len();
+        // One ending == one suffixed surface == one entry in the old full-surface
+        // design, so the arena length is exactly the old entry count.
+        let old_entries = index.obj_endings.len();
+        let new_bytes = index.obj_index.capacity() * std::mem::size_of::<(u64, ObjStemEntry)>()
+            + index.obj_endings.capacity() * std::mem::size_of::<u64>();
+        let old_bytes = old_entries * std::mem::size_of::<(u128, IndexEntry)>();
+        eprintln!(
+            "obj_index: {new_entries} stem entries + {old_entries} endings vs {old_entries} \
+             surface entries ({:.2}× fewer entries); ~{} MB vs ~{} MB ({:.2}× smaller)",
+            old_entries as f64 / new_entries as f64,
+            new_bytes / 1_000_000,
+            old_bytes / 1_000_000,
+            old_bytes as f64 / new_bytes as f64,
+        );
     }
 }

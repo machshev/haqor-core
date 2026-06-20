@@ -4,8 +4,9 @@ Date: 2026-06-18
 
 ## Status
 
-Accepted — Option C implemented (build-time host-suffix index + parse-on-failure
-lookup). See "Consequences → Outcome" below.
+Accepted — Option C fully implemented. First as a build-time host-suffix index +
+parse-on-failure lookup ("Outcome (implemented)"), then as the connecting-stem
+index the decision actually called for ("Outcome (revised)"). See below.
 
 ## Context
 
@@ -112,3 +113,41 @@ Result: in-memory full recall 70826 → 70859 (+33), parsed +51; from-db +32. Th
 is the first systematic dent in the obj-suffix bucket without the index blowup.
 Remaining gaps are host grades `host_object_suffixes` still can't build and the
 lean fallback-root enumeration's weak-radical misses — additive, safe to widen.
+
+### Outcome (revised) — the connecting-stem index
+
+The "Outcome (implemented)" above still stored the full host×suffix
+cross-product; it only *gated* it (out of `entries`, consulted on failed parse).
+That solved the eval/query blowup but not the index-size goal Option C set out
+to reach. This revision delivers the connecting-stem index proper.
+
+`obj_index` is now keyed by **connecting stem** (`connecting_stem_key`), not by
+suffixed surface, with each host's surfaces carried as a run of packed endings
+in a shared CSR arena (`obj_endings`):
+
+- **Stem key.** `peel_object_suffix` strips the suffix consonants but leaves the
+  linking vowel on the last stem consonant; clearing it folds every suffix of one
+  host grade onto one key. Critically the stem is *canonicalised before* the
+  vowel is cleared — clearing first strips a plene holam/shureq **mater** to a
+  bare vav that `canonical_key` can no longer fold, splitting plene/defective
+  spellings of one stem into two keys. (That bug cost −1 recall until fixed.)
+- **Endings.** Each suffixed surface is one `u64`: high 56 bits the canonical
+  surface hash, low 8 the suffix `Pgn` code. The hash is the **exactness gate** —
+  a lookup returns exactly what the full-surface index did — so the stem key need
+  only narrow the candidate set, and a stem-key collision is harmless. That also
+  lets the stem key be a `u64` (vs the `u128` of `entries`).
+- **Equivalence by construction.** Build and parse reach the key through the same
+  `peel_object_suffix` + `canonical_key`, and the gate is the same canonical
+  surface hash both stored and probed. Verified by `obj_index_recovers_every_
+  generated_suffix` (0 misses over a strong/weak/twin root sample) and by the
+  in-memory accuracy harness: parsed 71640, full recall 71011 — **identical to
+  the pre-change baseline**.
+- **Size.** 230.3M surface entries → 51.1M stem entries + a 230.3M-`u64` arena;
+  obj-index footprint ~7368 MB → ~3068 MB, **2.40× smaller**. (A naïve `Vec`
+  per entry was briefly *larger* than the old design — the per-entry header,
+  allocation and `Pgn` padding ate the win; the CSR arena + `u64` packing is what
+  realises the shrink.)
+
+Coverage is unchanged, so the remaining obj-suffix tail (host grades
+`host_object_suffixes` still can't build) is still widened the same additive way —
+now against a 2.4×-smaller index.
