@@ -53,6 +53,15 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "3cp",
     },
     IrregularVerb {
+        // Geminate המם "rout" Qal wayyiqtol + 3mp suffix with anomalous u-theme
+        // host yəhummēm (וַיְהֻמֵּם, Exod 14:24 etc.); generator reads it as Pual.
+        surface: "וַיְהֻמֵּם",
+        root: "הממ",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
         // C2-aleph segol theme before the heavy afformative; generator: שְׁאַלְתֶּם.
         surface: "שְׁאֶלְתֶּם",
         root: "שאל",

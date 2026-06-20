@@ -5882,13 +5882,22 @@ fn build_inf_construct(root: &Root, binyan: Binyan) -> Vec<Cons> {
             rad(root.ayin(), 2).with_dagesh().with_vowel(Tsere),
             rad(root.lamed(), 3),
         ],
-        Binyan::Hiphil => vec![
-            Cons::new(letter::HE).with_vowel(Patah),
-            rad(root.pe(), 1).with_vowel(Sheva),
-            rad(root.ayin(), 2).with_vowel(Hiriq),
-            Cons::new(letter::YOD),
-            rad(root.lamed(), 3),
-        ],
+        Binyan::Hiphil => {
+            // C1's silent sheva closes the prefix syllable, so a begedkefet C2
+            // takes a dagesh lene — haz-kîr (הַזְכִּיר), not הַזְכִיר. Mirrors
+            // inf_abs_c2_lene (which only handled the absolute).
+            let mut c2 = rad(root.ayin(), 2).with_vowel(Hiriq);
+            if hebrew::is_begedkefet(root.ayin()) && !hebrew::is_guttural(root.pe()) {
+                c2 = c2.with_dagesh();
+            }
+            vec![
+                Cons::new(letter::HE).with_vowel(Patah),
+                rad(root.pe(), 1).with_vowel(Sheva),
+                c2,
+                Cons::new(letter::YOD),
+                rad(root.lamed(), 3),
+            ]
+        }
         Binyan::Hophal => vec![
             Cons::new(letter::HE).with_vowel(QamatsQatan),
             rad(root.pe(), 1).with_vowel(Sheva),
