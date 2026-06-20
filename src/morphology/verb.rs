@@ -4078,6 +4078,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .flat_map(|f| {
             cohortative_paragogic_variants(&f.text)
                 .into_iter()
+                .chain(short_imperative_paragogic_variants(&f.text))
                 .map(move |t| VerbForm {
                     text: t,
                     ..f.clone()
@@ -5720,6 +5721,36 @@ fn cohortative_paragogic_variants(impf_text: &str) -> Vec<String> {
             s[n - 2].vowel = Some(v);
             out.push(hebrew::render(&s));
         }
+    }
+    out
+}
+
+/// Paragogic-he emphatic imperative for a *two-consonant* host — a pe-weak
+/// imperative that dropped C1 (rēḏ רֵד, šēḇ שֵׁב) or a contracted geminate
+/// (qāḇ קָב). The general [`cohortative_paragogic_variants`] needs ≥3 elements,
+/// so handle the short hosts here: C2 takes qamats + a bare he, and a reducible
+/// C1 theme also drops to sheva (šᵊḇâ שְׁבָה beside šēḇâ).
+fn short_imperative_paragogic_variants(text: &str) -> Vec<String> {
+    use Vowel::*;
+    let seq = hebrew::parse_pointed(text);
+    if seq.len() != 2 {
+        return Vec::new();
+    }
+    let last = seq[1];
+    if last.letter == letter::HE || !(last.vowel.is_none() || last.vowel == Some(Sheva)) {
+        return Vec::new();
+    }
+    let mut out = Vec::new();
+    // Theme kept: C1 keeps its vowel, C2 → qamats + he (qāḇâ קָבָה, rēḏâ רֵדָה).
+    let mut kept = seq.clone();
+    kept[1].vowel = Some(Qamats);
+    kept.push(Cons::new(letter::HE));
+    out.push(hebrew::render(&kept));
+    // Reduced: a reducible C1 theme drops to sheva (šēḇ → šᵊḇâ שְׁבָה).
+    if matches!(seq[0].vowel, Some(Tsere | Segol | Hiriq | Patah)) {
+        let mut s = kept.clone();
+        s[0].vowel = Some(Sheva);
+        out.push(hebrew::render(&s));
     }
     out
 }
