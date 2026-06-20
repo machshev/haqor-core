@@ -3726,6 +3726,37 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(pausal);
 
+    // Pausal-qamats twin: a stressed a-theme patah in a closed final syllable
+    // lengthens to qamats in pause — yišmaʕ → yišmāʕ (יִשְׁמָע), ʾîḡaʕ → ʾîḡāʕ
+    // (אִיגָע). The per-cell qal_a_theme_pausal only reaches the a-theme
+    // *alternate*; for stative roots the a-theme is the primary form (and its
+    // pe-yod-retained twins are themselves alternates), so run the transform
+    // over every finished Qal imperfect-family form. The variant's guard fires
+    // only on a patah-then-final-consonant tail, leaving o-theme (holam)
+    // imperfects untouched; additive, so exact-match keeps only attested pausals.
+    let pausal_q: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            f.binyan == Binyan::Qal
+                && matches!(
+                    f.form,
+                    Form::Imperfect
+                        | Form::Wayyiqtol
+                        | Form::Jussive
+                        | Form::Cohortative
+                        | Form::Imperative
+                )
+                && f.object_suffix.is_none()
+        })
+        .filter_map(|f| {
+            pausal_qamats_variant(&f.text).map(|t| VerbForm {
+                text: t,
+                ..f.clone()
+            })
+        })
+        .collect();
+    forms.extend(pausal_q);
+
     // Furtive-patah twin: a word ending in a guttural ח/ע after a heterogeneous
     // (non-a) vowel takes a furtive patah under that guttural — môšîaʕ (מוֹשִׁיעַ),
     // šōmēaʕ (שֹׁמֵעַ), yašmîaʕ. The bare generator omits it; add the twin.
