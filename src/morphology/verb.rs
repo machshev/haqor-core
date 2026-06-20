@@ -2016,6 +2016,14 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     Some(hebrew::render(&seq))
                 })
                 .flatten();
+                // Pausal/uncontracted qamats twin of the I-guttural Niphal
+                // perfect i-grade: the per-cell `pausal_perf` lengthens C2 only
+                // in the PRIMARY grade (segol-prefix nehĕyāṯâ נֶהֶיָתָה), so the
+                // hiriq-prefix grade nihyᵊṯâ נִהְיְתָה keeps its reduced C2.
+                // Restore the C2 qamats there too — nihyāṯâ נִהְיָתָה.
+                let niphal_pe_guttural_hiriq_pausal = niphal_pe_guttural_hiriq
+                    .as_deref()
+                    .and_then(|t| pausal_perfect_c2_variant(root, t));
                 // חיה/היה short imperfect segol-prefix twin (וַיֶּחִי).
                 let chayah_segol = ((is_chayah(root) || is_hayah(root))
                     && binyan == Binyan::Qal
@@ -3308,6 +3316,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     pual_guttural_holam,
                     hophal_qubuts,
                     niphal_pe_guttural_hiriq,
+                    niphal_pe_guttural_hiriq_pausal,
                     niphal_pe_guttural_hataf,
                     chayah_segol,
                     shachah_inf_defective,
