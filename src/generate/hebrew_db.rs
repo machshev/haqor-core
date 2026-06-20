@@ -811,7 +811,43 @@ fn build_hebrew(
         occurrences.len(),
         output.display()
     );
+    print_coverage_summary(&db, parsed_surfaces, surfaces.len());
     Ok((surfaces.len(), occurrences.len(), parsed_surfaces))
+}
+
+/// Number of highest-frequency missing surfaces summarised after a build.
+const SUMMARY_MISSES: usize = 10;
+
+/// Print a coverage summary to stdout: the parse rate and the top
+/// [`SUMMARY_MISSES`] highest-frequency surfaces still in `review_missing`.
+/// Best-effort — a query error is logged, not propagated, so it never fails an
+/// otherwise-complete build.
+fn print_coverage_summary(db: &Connection, parsed: usize, total: usize) {
+    let pct = if total > 0 {
+        parsed as f64 / total as f64 * 100.0
+    } else {
+        0.0
+    };
+    println!("Parse coverage: {parsed}/{total} surfaces ({pct:.1}%)");
+
+    // review_missing is already ordered occurrences-DESC, so LIMIT takes the top.
+    let rows: rusqlite::Result<Vec<(String, i64)>> = (|| {
+        let mut stmt = db.prepare("SELECT text, occurrences FROM review_missing LIMIT ?1")?;
+        stmt.query_map([SUMMARY_MISSES as i64], |r| {
+            Ok((r.get::<_, String>(0)?, r.get::<_, i64>(1)?))
+        })?
+        .collect()
+    })();
+    match rows {
+        Ok(rows) if !rows.is_empty() => {
+            println!("\ntop {} missing surfaces (count, surface):", rows.len());
+            for (text, count) in rows {
+                println!("  {count:>6}  {text}");
+            }
+        }
+        Ok(_) => {}
+        Err(e) => log::warn!("coverage summary query failed: {e}"),
+    }
 }
 
 /// Read-only preview for the fast iteration loop: take the `limit` highest-
@@ -1062,5 +1098,6 @@ fn update_missing(
         "Incremental: resolved {resolved} of {} missing surfaces",
         missing.len()
     );
+    print_coverage_summary(&db, parsed, surfaces);
     Ok((surfaces, occurrences, parsed))
 }
