@@ -217,6 +217,50 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "2fs",
     },
     IrregularVerb {
+        // Hollow רום Niphal imperfect 3mp with euphonic dagesh in C3 mem
+        // (יֵרוֹמּוּ, Ps 89:17 etc.); generator builds the single-mem יֵרוֹמוּ.
+        surface: "יֵרוֹמּוּ",
+        root: "רום",
+        binyan: "Niphal",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // Denominal ימן "go to the right" Hiphil participle mp, yod kept
+        // consonantal (מַיְמִינִים, 1 Chr 12:2); generator contracts it.
+        surface: "מַיְמִינִים",
+        root: "ימן",
+        binyan: "Hiphil",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
+        // Hithpolel of הלל "praise/boast" (OSHB-tagged Hithpael), o-stem
+        // reduplicated base the generator's Hithpael doesn't model (Ps 5:6 etc.).
+        surface: "יִתְהֹלְלוּ",
+        root: "הלל",
+        binyan: "Hithpael",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // Qamats-theme spelling of the same Hithpolel (יִתְהֹלָלוּ, Jer 46:9 etc.).
+        surface: "יִתְהֹלָלוּ",
+        root: "הלל",
+        binyan: "Hithpael",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // Hithpolel of מלל "languish" (OSHB-tagged Hithpael), o-stem base
+        // (יִתְמֹלָלוּ, Ps 58:8).
+        surface: "יִתְמֹלָלוּ",
+        root: "מלל",
+        binyan: "Hithpael",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
         // Noun-like Qal infinitive construct of יכל "be able" (Num 14:16).
         surface: "יְכֹלֶת",
         root: "יכל",
