@@ -6795,6 +6795,12 @@ fn apply_pe_yod(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, pg
         return true;
     }
     match (binyan, form) {
+        (Binyan::Qal, Form::InfinitiveConstruct) if root.has(Gizra::LamedHe) => {
+            // pe-yod + III-He (ירה, ידה): the yod is RETAINED and the III-He
+            // -ōt infinitive pattern wins — yərôṯ (יְרוֹת), yəḏôṯ (יְדוֹת). Leave
+            // the strong sequence untouched here so apply_lamed_he can shape it;
+            // the segholate/drop-yod arms below would otherwise mangle it (רוֹתת).
+        }
         (Binyan::Qal, Form::InfinitiveConstruct) if root.lamed() != letter::ALEF => {
             // Segholate infinitive with a tav afformative: šeḇeṯ (שֶׁבֶת),
             // redeṯ (רֶדֶת), leḵeṯ. The initial yod drops and both surviving

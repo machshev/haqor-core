@@ -306,9 +306,14 @@ fn forms_match(generated: &str, targets: &[String], target_keys: &[String]) -> b
 /// [`parse_word_indexed`] so both peel identically.
 fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String> {
     let mut targets = vec![hebrew::render(remainder)];
-    // וְ + yəC → וִyC: a sheva-bearing yod quiesces to a mater after a hiriq-vav.
+    // וְ/לְ/בְּ/כְּ + yəC → CִyC: a sheva-bearing yod quiesces to a mater after a
+    // proclitic that took hiriq — the conjunction (וִיהִי) and the ל/ב/כ
+    // prepositions alike (לִירוֹת for lə+yərôṯ, בִּימֵי, כִּירֹא).
     if strip > 0
-        && seq[strip - 1].letter == letter::VAV
+        && matches!(
+            seq[strip - 1].letter,
+            letter::VAV | letter::LAMED | letter::BET | letter::KAF
+        )
         && seq[strip - 1].vowel == Some(Vowel::Hiriq)
         && remainder
             .first()
