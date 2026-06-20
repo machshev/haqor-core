@@ -41,8 +41,10 @@ enum Commands {
         #[command(subcommand)]
         command: DbCommands,
     },
-    /// Generate the verb paradigm of a 3-letter Hebrew root
-    Morph {
+    // ---- Paradigm generators (lemma → inflected forms) ----
+    /// Generate the verb paradigm of a 3-letter Hebrew root. (Alias: morph)
+    #[command(visible_alias = "morph")]
+    Verb {
         /// 3-letter Hebrew root (e.g. קטל). Niqqud is ignored; final-form
         /// letters are normalised back to their base forms.
         root: String,
@@ -50,17 +52,6 @@ enum Commands {
         /// Hithpael, Hiphil, Hophal)
         #[arg(short, long)]
         binyan: Option<String>,
-    },
-    /// Parse a fully-pointed OT word into every candidate analysis: verbs
-    /// (root + binyan + form + person/gender/number) and, when the lexicon is
-    /// available, nouns and adjectives (lemma + class + inflected slot).
-    Parse {
-        /// Fully-pointed Hebrew word (e.g. שָׁמַר). Cantillation is ignored.
-        word: String,
-        /// Lexicon database supplying the noun/adjective stem inventory. If it
-        /// is missing, only the (DB-free) verb analysis is reported.
-        #[arg(short, long, default_value = "data/lexicon.db")]
-        lexicon_db: PathBuf,
     },
     /// Inflect a Hebrew noun stem (singular absolute) across state, number,
     /// and pronominal suffixes
@@ -72,12 +63,51 @@ enum Commands {
         #[arg(short, long, default_value = "m")]
         kind: String,
     },
+    /// Inflect a Hebrew adjective stem (masculine singular absolute) across
+    /// gender/number agreement, state, number, and pronominal suffixes.
+    Adjective {
+        /// Masculine singular absolute form, fully pointed (e.g. גָּדוֹל)
+        stem: String,
+        /// Stem class: "m" (masculine, default), "f" (feminine -ה), "ft"
+        /// (feminine -ת), or "s" (segolate)
+        #[arg(short, long, default_value = "m")]
+        kind: String,
+    },
+
+    // ---- Parsers (surface word → candidate analyses) ----
+    /// Parse a fully-pointed OT word into every candidate analysis, trying each
+    /// part of speech quickest-to-slowest: verbs (DB-free) first, then nouns
+    /// and adjectives (driven by the lexicon inventory, skipped if it is
+    /// missing).
+    Parse {
+        /// Fully-pointed Hebrew word (e.g. שָׁמַר). Cantillation is ignored.
+        word: String,
+        /// Lexicon database supplying the noun/adjective stem inventory. If it
+        /// is missing, only the (DB-free) verb analysis is reported.
+        #[arg(short, long, default_value = "data/lexicon.db")]
+        lexicon_db: PathBuf,
+    },
+    /// Parse a fully-pointed OT word into every candidate verb analysis
+    /// (root + binyan + form + person/gender/number). DB-free.
+    ParseVerb {
+        /// Fully-pointed Hebrew word (e.g. שָׁמַר). Cantillation is ignored.
+        word: String,
+    },
     /// Parse a fully-pointed OT word into every candidate noun analysis, driven
     /// by the lexicon's noun headwords as the stem inventory.
     ParseNoun {
         /// Fully-pointed Hebrew word (e.g. מְלָכִים). Cantillation is ignored.
         word: String,
         /// Lexicon database supplying the noun-stem inventory.
+        #[arg(short, long, default_value = "data/lexicon.db")]
+        lexicon_db: PathBuf,
+    },
+    /// Parse a fully-pointed OT word into every candidate adjective analysis,
+    /// driven by the lexicon's adjective headwords as the stem inventory.
+    ParseAdjective {
+        /// Fully-pointed Hebrew word (e.g. גְּדוֹלָה). Cantillation is ignored.
+        word: String,
+        /// Lexicon database supplying the adjective-stem inventory.
         #[arg(short, long, default_value = "data/lexicon.db")]
         lexicon_db: PathBuf,
     },
@@ -251,17 +281,28 @@ fn main() -> Result<()> {
 
             println!("{}", bible.get(book, chapter, verse)?)
         }
-        Commands::Morph { root, binyan } => {
+        Commands::Verb { root, binyan } => {
             print_morphology(&root, binyan.as_deref())?;
+        }
+        Commands::Noun { stem, kind } => {
+            print_noun(&stem, &kind, false)?;
+        }
+        Commands::Adjective { stem, kind } => {
+            print_noun(&stem, &kind, true)?;
         }
         Commands::Parse { word, lexicon_db } => {
             print_parse(&word, &lexicon_db)?;
         }
-        Commands::Noun { stem, kind } => {
-            print_noun(&stem, &kind)?;
+        Commands::ParseVerb { word } => {
+            println!("Word: {word}");
+            println!();
+            print_verb_section(&word);
         }
         Commands::ParseNoun { word, lexicon_db } => {
-            print_parse_noun(&word, &lexicon_db)?;
+            print_parse_pos(&word, &lexicon_db, false)?;
+        }
+        Commands::ParseAdjective { word, lexicon_db } => {
+            print_parse_pos(&word, &lexicon_db, true)?;
         }
         Commands::Db { command } => match command {
             DbCommands::GenBible { src_texts, output } => {
@@ -434,15 +475,27 @@ fn print_morphology(root_input: &str, binyan_filter: Option<&str>) -> Result<()>
     Ok(())
 }
 
-/// Combined parse report: every verb analysis (DB-free) plus every noun/
-/// adjective analysis (driven by the lexicon inventory, skipped if it is
-/// missing).
+/// Combined parse report, tried quickest-to-slowest: every verb analysis
+/// (DB-free) first, then the lexicon-driven noun and adjective analyses. If
+/// `lexicon_db` is missing, only the verb half is shown.
 fn print_parse(word: &str, lexicon_db: &std::path::Path) -> Result<()> {
     println!("Word: {word}");
     println!();
     print_verb_section(word);
     println!();
-    print_noun_section(word, lexicon_db)?;
+    if !lexicon_db.exists() {
+        println!(
+            "Nouns/adjectives: skipped (lexicon {} not found; pass --lexicon-db).",
+            lexicon_db.display()
+        );
+        return Ok(());
+    }
+    let (adjectives, nouns): (Vec<_>, Vec<_>) = parse_inventory(word, lexicon_db)?
+        .into_iter()
+        .partition(|m| m.is_adjective);
+    print_pos_section("Nouns", &nouns);
+    println!();
+    print_pos_section("Adjectives", &adjectives);
     Ok(())
 }
 
@@ -481,52 +534,53 @@ fn print_verb_section(word: &str) {
     println!("  (* = matched a strong-verb fallback; gizra rule not yet modelled)");
 }
 
-/// Noun/adjective half of the parse report. If `lexicon_db` is missing, prints a
-/// note and returns Ok (so the verb-only report still works without the DB).
-fn print_noun_section(word: &str, lexicon_db: &std::path::Path) -> Result<()> {
-    if !lexicon_db.exists() {
-        println!(
-            "Nouns/adjectives: skipped (lexicon {} not found; pass --lexicon-db).",
-            lexicon_db.display()
-        );
-        return Ok(());
-    }
+/// Build the lexicon-driven inventory (common nouns + adjectives + the
+/// irregular/gold harvests) and parse `word` into every candidate analysis.
+fn parse_inventory(word: &str, lexicon_db: &std::path::Path) -> Result<Vec<morphology::NounMatch>> {
     let stems = haqor_core::generate::load_noun_inventory(lexicon_db)
         .with_context(|| format!("loading noun inventory from {}", lexicon_db.display()))?;
     let mut inventory = morphology::NounInventory::build(&stems);
     inventory.add_irregulars();
     inventory.add_gold_nouns();
-    let matches = inventory.parse(word);
-
-    if matches.is_empty() {
-        println!("Nouns/adjectives: no analyses found.");
-        return Ok(());
-    }
-    println!(
-        "Nouns/adjectives — {} candidate analysis/analyses:",
-        matches.len()
-    );
-    for m in &matches {
-        let prefix = if m.prefix.is_empty() {
-            String::new()
-        } else {
-            format!("[{}] ", m.prefix)
-        };
-        println!("  {prefix}{}  {:?}  {}", m.stem, m.kind, m.label);
-    }
-    Ok(())
+    Ok(inventory.parse(word))
 }
 
-fn print_noun(stem_input: &str, kind: &str) -> Result<()> {
+/// Print one part-of-speech section of a parse report.
+fn print_pos_section(label: &str, matches: &[morphology::NounMatch]) {
+    if matches.is_empty() {
+        println!("{label}: no analyses found.");
+        return;
+    }
+    println!("{label} — {} candidate analysis/analyses:", matches.len());
+    for m in matches {
+        print_match_row(m);
+    }
+}
+
+/// Print one noun/adjective analysis row: optional proclitic prefix, lemma,
+/// stem class, and the inflected slot label.
+fn print_match_row(m: &morphology::NounMatch) {
+    let prefix = if m.prefix.is_empty() {
+        String::new()
+    } else {
+        format!("[{}] ", m.prefix)
+    };
+    println!("  {prefix}{}  {:?}  {}", m.stem, m.kind, m.label);
+}
+
+fn print_noun(stem_input: &str, kind: &str, is_adjective: bool) -> Result<()> {
     let stem = match kind {
         "m" => morphology::NounStem::masculine(stem_input),
         "f" => morphology::NounStem::feminine_he(stem_input),
         "ft" => morphology::NounStem::feminine_t(stem_input),
         "s" => morphology::NounStem::segolate(stem_input),
         other => {
-            anyhow::bail!("unknown noun kind '{other}' (expected m, f, ft, or s)");
+            anyhow::bail!("unknown stem kind '{other}' (expected m, f, ft, or s)");
         }
     };
+    // Adjective stems get agreement inflection (feminine sg/pl) on top of the
+    // shared state/number/suffix paradigm.
+    let stem = stem.with_adjective(is_adjective);
     let forms = morphology::inflect_noun(&stem);
     println!("Stem: {stem_input}");
     println!();
@@ -536,22 +590,23 @@ fn print_noun(stem_input: &str, kind: &str) -> Result<()> {
     Ok(())
 }
 
-fn print_parse_noun(word: &str, lexicon_db: &std::path::Path) -> Result<()> {
-    let stems = haqor_core::generate::load_noun_inventory(lexicon_db)
-        .with_context(|| format!("loading noun inventory from {}", lexicon_db.display()))?;
-    let mut inventory = morphology::NounInventory::build(&stems);
-    inventory.add_irregulars();
-    inventory.add_gold_nouns();
-    let matches = inventory.parse(word);
+/// Single-part-of-speech parse report: nouns only (`want_adjective = false`) or
+/// adjectives only (`want_adjective = true`), filtered out of the lexicon-driven
+/// inventory.
+fn print_parse_pos(word: &str, lexicon_db: &std::path::Path, want_adjective: bool) -> Result<()> {
+    let pos = if want_adjective { "adjective" } else { "noun" };
+    let matches: Vec<_> = parse_inventory(word, lexicon_db)?
+        .into_iter()
+        .filter(|m| m.is_adjective == want_adjective)
+        .collect();
 
     println!("Word: {word}");
-    println!("({} noun stems in inventory)", inventory.len());
     println!();
     if matches.is_empty() {
-        println!("No noun analyses found.");
+        println!("No {pos} analyses found.");
         println!();
         println!(
-            "(Driven by the lexicon's noun headwords; only stem classes the\n \
+            "(Driven by the lexicon's {pos} headwords; only stem classes the\n \
              generator models — segolate plus the masculine/feminine endings —\n \
              and only forms spelled exactly as the input will match.)"
         );
@@ -560,12 +615,7 @@ fn print_parse_noun(word: &str, lexicon_db: &std::path::Path) -> Result<()> {
     println!("{} candidate analysis/analyses:", matches.len());
     println!();
     for m in &matches {
-        let prefix = if m.prefix.is_empty() {
-            String::new()
-        } else {
-            format!("[{}] ", m.prefix)
-        };
-        println!("  {prefix}{}  {:?}  {}", m.stem, m.kind, m.label);
+        print_match_row(m);
     }
     Ok(())
 }

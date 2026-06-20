@@ -41,6 +41,9 @@ pub struct NounMatch {
     pub stem: String,
     /// The lemma's stem class.
     pub kind: NounStemKind,
+    /// True when the matched lemma is an adjective headword (agreement
+    /// inflection), so callers can report nouns and adjectives separately.
+    pub is_adjective: bool,
     /// Which inflected slot matched, e.g. "Plural Construct" or "Sg + 3ms".
     pub label: String,
     /// The proclitic prefix consumed before the stem, rendered to Hebrew (empty
@@ -52,8 +55,8 @@ pub struct NounMatch {
 /// surface form is indexed to the analyses that generate it, so parsing a word
 /// is a hash lookup rather than a scan over the whole inventory.
 pub struct NounInventory {
-    /// Rendered lemma + class, indexed by stem id.
-    stems: Vec<(String, NounStemKind)>,
+    /// Rendered lemma + class + adjective flag, indexed by stem id.
+    stems: Vec<(String, NounStemKind, bool)>,
     /// Generated surface form → (stem id, slot label).
     forms: HashMap<String, Vec<(usize, String)>>,
 }
@@ -96,7 +99,11 @@ impl NounInventory {
         let mut forms: HashMap<String, Vec<(usize, String)>> = HashMap::new();
         let mut rendered = Vec::with_capacity(stems.len());
         for (id, stem) in stems.iter().enumerate() {
-            rendered.push((hebrew::render(&stem.absolute_singular), stem.kind));
+            rendered.push((
+                hebrew::render(&stem.absolute_singular),
+                stem.kind,
+                stem.is_adjective,
+            ));
             for inflection in inflect_noun(stem) {
                 if let Some(pausal) = pausal_dual_variant(&inflection.text) {
                     forms
@@ -128,6 +135,7 @@ impl NounInventory {
             self.stems.push((
                 hebrew::render(&hebrew::parse_pointed(noun.lemma)),
                 NounStemKind::Masculine,
+                false,
             ));
             let label = format!("Irregular ({})", noun.gloss);
             for form in noun.forms {
@@ -148,6 +156,7 @@ impl NounInventory {
             self.stems.push((
                 hebrew::render(&hebrew::parse_pointed(lemma)),
                 NounStemKind::Masculine,
+                false,
             ));
             let label = format!("Noun ({gloss})");
             let key = norm_key(&hebrew::render(&hebrew::parse_pointed(form)));
@@ -173,7 +182,7 @@ impl NounInventory {
         // lemmas (e.g. the common noun מֶלֶךְ and the name "Molech") can render
         // to the same stem text and inflect identically, which would otherwise
         // emit duplicate rows.
-        let mut seen: HashSet<(String, NounStemKind, String, String)> = HashSet::new();
+        let mut seen: HashSet<(String, NounStemKind, bool, String, String)> = HashSet::new();
 
         let max_strip = 2usize.min(seq.len().saturating_sub(2));
         for strip in 0..=max_strip {
@@ -197,12 +206,19 @@ impl NounInventory {
                     continue;
                 };
                 for (id, label) in entries {
-                    let (stem, kind) = &self.stems[*id];
-                    let key = (stem.clone(), *kind, label.clone(), prefix.clone());
+                    let (stem, kind, is_adjective) = &self.stems[*id];
+                    let key = (
+                        stem.clone(),
+                        *kind,
+                        *is_adjective,
+                        label.clone(),
+                        prefix.clone(),
+                    );
                     if seen.insert(key) {
                         matches.push(NounMatch {
                             stem: stem.clone(),
                             kind: *kind,
+                            is_adjective: *is_adjective,
                             label: label.clone(),
                             prefix: prefix.clone(),
                         });
