@@ -396,13 +396,17 @@ fn peeling_targets(seq: &[Cons], strip: usize, remainder: &[Cons]) -> Vec<String
     // preformative he of a Niphal/Hiphil infinitive, taking that he's vowel as
     // the he elides — lᵊ+hērāʾôṯ → lērāʾôṯ לֵרָאוֹת. The generator always keeps
     // the he, so restore it (with the proclitic's vowel) to match. Limited to
-    // the tsere/patah grades that flag the absorbed infinitive he.
+    // the tsere/patah/qamats grades that flag the absorbed infinitive he — the
+    // qamats covers the hollow Hiphil inf-construct lā+hāḇîʾ → lāḇîʾ (לָבִיא).
     if strip > 0
         && matches!(
             seq[strip - 1].letter,
             letter::LAMED | letter::BET | letter::KAF
         )
-        && matches!(seq[strip - 1].vowel, Some(Vowel::Tsere | Vowel::Patah))
+        && matches!(
+            seq[strip - 1].vowel,
+            Some(Vowel::Tsere | Vowel::Patah | Vowel::Qamats)
+        )
         && remainder.first().is_some_and(|c| c.letter != letter::HE)
     {
         let vowel = seq[strip - 1].vowel.unwrap();
