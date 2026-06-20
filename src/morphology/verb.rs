@@ -4066,6 +4066,26 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(cohort_twins);
 
+    // Paragogic-he emphatic imperative: a 2ms imperative takes the same -â
+    // ending as the cohortative (qūmâ קוּמָה, qoḇâ קָבָה, rēḏâ רֵדָה, hêṭîḇâ
+    // הֵיטִיבָה, sᵊʕāḏâ סְעָדָה). Reuse the cohortative -â builder over finished
+    // imperative hosts; it self-gates to consonant-final hosts, so the vocalic
+    // 2fs/2mp (-î/-û) and III-he (final he) imperatives are skipped. The label
+    // stays Imperative — only the text changes.
+    let imv_paragogic: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| f.form == Form::Imperative && f.object_suffix.is_none())
+        .flat_map(|f| {
+            cohortative_paragogic_variants(&f.text)
+                .into_iter()
+                .map(move |t| VerbForm {
+                    text: t,
+                    ..f.clone()
+                })
+        })
+        .collect();
+    forms.extend(imv_paragogic);
+
     // Pe-yod Hophal o/u twin: the contracted preformative is spelled with a
     // shureq (hûšaḇ הוּשַׁב) or, for some roots, a holam-mater (hôḏaʕ הוֹדַע).
     // apply_pe_yod builds the shureq; mirror every pe-yod Hophal form with its
