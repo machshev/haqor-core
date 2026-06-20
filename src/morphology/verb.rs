@@ -797,6 +797,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 // (לִשְׁכַּב) beside the default šᵊḵōḇ. Like the imperfect
                 // a-theme it is emitted for every root and matches only when
                 // attested.
+                // Retained-yod Qal imperative of true I-yod roots (יְצֹק, יְרֵה).
+                let pe_yod_retained_imv = (binyan == Binyan::Qal
+                    && form == Form::Imperative
+                    && root.has(Gizra::PeYod))
+                .then(|| pe_yod_retained_imperative_variant(root, pgn))
+                .flatten();
                 // Uncontracted geminate Qal inf-construct (sᵊḇōḇ סְבֹב).
                 let geminate_qal_inf = (binyan == Binyan::Qal
                     && form == Form::InfinitiveConstruct
@@ -3368,6 +3374,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     geminate_hophal_impf,
                     geminate_hiphil_wayy,
                     qal_a_theme_inf,
+                    pe_yod_retained_imv,
                     geminate_qal_inf,
                     piel_guttural_qamats,
                     niphal_impf_fp_patah,
@@ -9784,6 +9791,25 @@ fn hiphil_imperfect_uncontracted_he_variant(text: &str) -> Option<String> {
         return Some(hebrew::render(&seq));
     }
     None
+}
+
+/// Retained-yod Qal imperative of the true I-yod roots (יצק, ידה, ירה): where
+/// the I-vav roots drop the C1 in the imperative (ירד→רֵד), the true I-yod roots
+/// keep it as a strong consonant — yᵊṣōq יְצֹק, yᵊrēh יְרֵה, yᵊḏû יְדוּ. Build the
+/// strong (yod-retained) imperative and apply only the III-weak ending (not the
+/// pe-yod drop). The generator can't tell true-I-yod from I-vav, so this is
+/// additive — a spurious יְרֹד for an I-vav root matches nothing.
+fn pe_yod_retained_imperative_variant(root: &Root, pgn: Pgn) -> Option<String> {
+    if !root.has(Gizra::PeYod) {
+        return None;
+    }
+    let mut seq = build_strong(root, Binyan::Qal, Form::Imperative, pgn, false);
+    if root.lamed() == letter::HE {
+        apply_lamed_he(&mut seq, root, Binyan::Qal, Form::Imperative, pgn);
+    } else if root.lamed() == letter::ALEF {
+        apply_lamed_aleph(&mut seq, root, Binyan::Qal, Form::Imperative, pgn);
+    }
+    Some(hebrew::render(&seq))
 }
 
 /// Uncontracted geminate Qal infinitive construct: the doubled radical is
