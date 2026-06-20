@@ -13806,13 +13806,20 @@ fn hollow_lamed_aleph_hiphil_perfect_variants(root: &Root, pgn: Pgn) -> Vec<Stri
     };
     let mut out = Vec::new();
     for he_vowel in [Tsere, HatafPatah] {
-        let mut seq = vec![
-            Cons::new(letter::HE).with_vowel(he_vowel),
-            rad(root.pe(), 1).with_vowel(Tsere),
-            rad(root.lamed(), 3),
-        ];
-        seq.extend(tail.clone());
-        out.push(hebrew::render(&seq));
+        // The theme tsere is written defectively (hēḇēʾṯā הֵבֵאתָ) or plene with
+        // a yod mater between C1 and the quiescent aleph (hēḇêʾṯā הֵבֵיאתָ).
+        for plene in [false, true] {
+            let mut seq = vec![
+                Cons::new(letter::HE).with_vowel(he_vowel),
+                rad(root.pe(), 1).with_vowel(Tsere),
+            ];
+            if plene {
+                seq.push(Cons::mater(letter::YOD));
+            }
+            seq.push(rad(root.lamed(), 3));
+            seq.extend(tail.clone());
+            out.push(hebrew::render(&seq));
+        }
     }
     out
 }
