@@ -953,6 +953,18 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     ]))
                 })
                 .flatten();
+                // Plene-yod spelling of the same (hāqêm → hāqêm הָקֵים).
+                let hollow_hiphil_inf_abs_plene = (binyan == Binyan::Hiphil
+                    && form == Form::InfinitiveAbsolute
+                    && root.has(Gizra::Hollow))
+                .then(|| {
+                    hebrew::render(&[
+                        Cons::new(letter::HE).with_vowel(Vowel::Qamats),
+                        rad(root.pe(), 1).with_vowel(Vowel::Tsere),
+                        Cons::mater(letter::YOD),
+                        rad(root.lamed(), 3),
+                    ])
+                });
                 // הלך: the rare retained-he imperfect (yahălōḵ יַהֲלֹךְ) beside
                 // the suppletive יֵלֵךְ.
                 let halak_retained = (is_halak(root)
@@ -3329,6 +3341,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     piel_inf_abs_lamed_he,
                     lamed_he_hiphil_inf_abs_qamats,
                     hollow_hiphil_inf_abs,
+                    hollow_hiphil_inf_abs_plene,
                     halak_retained,
                     hiphil_ptcp_reduced,
                     wayyiqtol_1cs_short,
