@@ -146,6 +146,42 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "2ms",
     },
     IrregularVerb {
+        // Stative I-guttural imperative 2mp, pausal qamats theme (ʾehāḇû אֱהָבוּ,
+        // Zech 8:17,19); generator builds the segol אֶהֱבוּ.
+        surface: "אֱהָבוּ",
+        root: "אהב",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // Qal imperfect 1cs of בחר, secondary hataf-patah under the non-guttural
+        // C1 (אֶבֲחַר, Job 34:4,33); generator builds the silent-sheva אֶבְחַר.
+        surface: "אֶבֲחַר",
+        root: "בחר",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // Geminate Qal imperfect 1cs of תמם with a tsere-yod preformative
+        // (אֵיתָם, Hos 5:9 etc.); not produced by the geminate builder.
+        surface: "אֵיתָם",
+        root: "תמם",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // Piel cohortative 1cs of לקט with a qamats-qatan theme (אֲלַקֳטָה,
+        // Ruth 2:2,7); generator builds the sheva/tsere אֲלַקְּטָה.
+        surface: "אֲלַקֳטָה",
+        root: "לקט",
+        binyan: "Piel",
+        form: "Cohortative",
+        pgn: "1cs",
+    },
+    IrregularVerb {
         // Noun-like Qal infinitive construct of יכל "be able" (Num 14:16).
         surface: "יְכֹלֶת",
         root: "יכל",
