@@ -2379,6 +2379,33 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         })
                 })
                 .flatten();
+                // The tsere-he twin of the same derived III-He infinitive
+                // construct (kallēh כַּלֵּה beside kallōh כַּלֹּה / kallôṯ
+                // כַּלּוֹת): the doubling/active stems also point the surviving
+                // radical with tsere before the final he.
+                let lamed_he_inf_eh_derived = (root.lamed() == letter::HE
+                    && matches!(
+                        binyan,
+                        Binyan::Piel | Binyan::Hiphil | Binyan::Hithpael
+                    )
+                    && form == Form::InfinitiveConstruct)
+                .then(|| {
+                    let mut seq = hebrew::parse_pointed(&text);
+                    let n = seq.len();
+                    (n >= 3
+                        && seq[n - 1].letter == letter::TAV
+                        && seq[n - 2].letter == letter::VAV)
+                        .then(|| {
+                            seq.pop();
+                            seq.pop();
+                            if let Some(c) = seq.last_mut() {
+                                c.vowel = Some(Vowel::Tsere);
+                            }
+                            seq.push(Cons::new(letter::HE));
+                            hebrew::render(&seq)
+                        })
+                })
+                .flatten();
                 // Plene tsere-yod spelling of the Hiphil infinitive absolute
                 // (haškêm הַשְׁכֵּים beside הַשְׁכֵּם).
                 let hiphil_inf_abs_plene = (binyan == Binyan::Hiphil
@@ -2849,18 +2876,30 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && form == Form::InfinitiveConstruct
                         && root.ayin() == root.lamed()
                     {
-                        // Geminate Hiphil inf-construct hāCēC (הָפֵר, הָסֵב) and the
-                        // a-grade a final guttural takes (הָרַע).
-                        let theme = if hebrew::is_guttural(root.lamed()) {
-                            Vowel::Patah
+                        // Geminate Hiphil inf-construct hāCēC (הָפֵר, הָסֵב). A
+                        // final guttural keeps the tsere on C1 and surfaces a
+                        // furtive patah on the guttural — hārēaʿ (הָרֵעַ); the
+                        // bare a-grade (הָרַע) also occurs, so emit both.
+                        if hebrew::is_guttural(root.lamed()) {
+                            vec![
+                                hebrew::render(&[
+                                    Cons::new(letter::HE).with_vowel(Vowel::Qamats),
+                                    rad(root.pe(), 1).with_vowel(Vowel::Tsere),
+                                    rad(root.lamed(), 3).with_vowel(Vowel::Patah),
+                                ]),
+                                hebrew::render(&[
+                                    Cons::new(letter::HE).with_vowel(Vowel::Qamats),
+                                    rad(root.pe(), 1).with_vowel(Vowel::Patah),
+                                    rad(root.lamed(), 3),
+                                ]),
+                            ]
                         } else {
-                            Vowel::Tsere
-                        };
-                        vec![hebrew::render(&[
-                            Cons::new(letter::HE).with_vowel(Vowel::Qamats),
-                            rad(root.pe(), 1).with_vowel(theme),
-                            rad(root.lamed(), 3),
-                        ])]
+                            vec![hebrew::render(&[
+                                Cons::new(letter::HE).with_vowel(Vowel::Qamats),
+                                rad(root.pe(), 1).with_vowel(Vowel::Tsere),
+                                rad(root.lamed(), 3),
+                            ])]
+                        }
                     } else {
                         Vec::new()
                     };
@@ -3391,6 +3430,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_he_fs_ptcp_iyya,
                     lamed_he_inf_oh,
                     lamed_he_inf_oh_derived,
+                    lamed_he_inf_eh_derived,
                     hiphil_inf_abs_plene,
                     aleph_prefix_hataf_segol,
                     pe_yod_imperative_tsere,
@@ -9002,6 +9042,15 @@ fn geminate_niphal_participle_variants(root: &Root, pgn: Pgn) -> Vec<String> {
     use Vowel::*;
     let c = root.ayin(); // == root.lamed()
     if hebrew::is_guttural(c) || c == letter::RESH {
+        // The doubled radical can't carry a dagesh, so only the contracted ms
+        // qamats-theme participle surfaces — nāḇār נָבָר (ברר).
+        if pgn == Pgn::gn(Gender::Masculine, Number::Singular) {
+            return vec![hebrew::render(&[
+                Cons::new(letter::NUN).with_vowel(Qamats),
+                rad(root.pe(), 1).with_vowel(Qamats),
+                rad(root.lamed(), 3),
+            ])];
+        }
         return Vec::new();
     }
     if pgn == Pgn::gn(Gender::Masculine, Number::Singular) {
