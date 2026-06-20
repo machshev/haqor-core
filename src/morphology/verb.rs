@@ -797,6 +797,12 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 // (לִשְׁכַּב) beside the default šᵊḵōḇ. Like the imperfect
                 // a-theme it is emitted for every root and matches only when
                 // attested.
+                // Uncontracted geminate Qal inf-construct (sᵊḇōḇ סְבֹב).
+                let geminate_qal_inf = (binyan == Binyan::Qal
+                    && form == Form::InfinitiveConstruct
+                    && root.ayin() == root.lamed())
+                .then(|| geminate_qal_inf_construct_variant(root))
+                .flatten();
                 let qal_a_theme_inf = (binyan == Binyan::Qal
                     && form == Form::InfinitiveConstruct
                     && root.lamed() != letter::HE)
@@ -3342,6 +3348,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     geminate_hophal_impf,
                     geminate_hiphil_wayy,
                     qal_a_theme_inf,
+                    geminate_qal_inf,
                     piel_guttural_qamats,
                     niphal_impf_fp_patah,
                     niphal_impf_a,
@@ -9613,6 +9620,23 @@ fn hiphil_imperfect_uncontracted_he_variant(text: &str) -> Option<String> {
         return Some(hebrew::render(&seq));
     }
     None
+}
+
+/// Uncontracted geminate Qal infinitive construct: the doubled radical is
+/// written out with the strong-verb qᵊṭōl shape — sᵊḇōḇ סְבֹב (סבב), gᵊzōz גְזֹז
+/// (גזז), ṣᵊrōr צְרֹר (צרר) — beside the contracted סֹב the builder produces.
+/// C1 + sheva, C2 + holam, C3. Caller gates to (Qal, InfinitiveConstruct,
+/// geminate). Additive.
+fn geminate_qal_inf_construct_variant(root: &Root) -> Option<String> {
+    if root.ayin() != root.lamed() {
+        return None;
+    }
+    let seq = vec![
+        rad(root.pe(), 1).with_vowel(Vowel::Sheva),
+        rad(root.ayin(), 2).with_vowel(Vowel::Holam),
+        rad(root.lamed(), 3),
+    ];
+    Some(hebrew::render(&seq))
 }
 
 fn pe_aleph_holam_variant(text: &str) -> Option<String> {
