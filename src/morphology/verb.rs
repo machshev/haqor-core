@@ -2030,6 +2030,16 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && imperfect_suffix_kind(pgn) == Suffix::Zero)
                     .then(|| shachah_pausal_qamats_variant(&text))
                     .flatten();
+                // III-He Piel/Pual inf-construct with a vav C2 (צוה): the -ōṯ
+                // ending's holam-mater vav collides with the doubled C2 vav,
+                // giving a spurious double vav (ṣawwōṯ צַוּוֹת). The attested
+                // contracted spelling drops the mater — ṣawwṯ צַוּת (לְצַוּת).
+                let lamed_he_vav_inf_contract = (matches!(binyan, Binyan::Piel | Binyan::Pual)
+                    && form == Form::InfinitiveConstruct
+                    && root.ayin() == letter::VAV
+                    && root.lamed() == letter::HE)
+                    .then(|| lamed_he_vav_inf_contract_variant(&text))
+                    .flatten();
                 // Pausal segholate infinitive twin (לָשָׁבֶת).
                 let segholate_inf_pausal = (binyan == Binyan::Qal
                     && form == Form::InfinitiveConstruct)
@@ -3273,6 +3283,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     niphal_pe_guttural_hataf,
                     chayah_segol,
                     shachah_inf_defective,
+                    lamed_he_vav_inf_contract,
                     shachah_pausal,
                     segholate_inf_pausal,
                     piel_inf_abs_tsere,
@@ -13172,6 +13183,26 @@ fn sheva_prefix_segol_variant(text: &str) -> Option<String> {
 
 /// Defective twin of the שחה Hithpael infinitive: the vav-holam mater before
 /// the tav written as a bare vav — הִשְׁתַּחֲוֹת → הִשְׁתַּחֲות.
+/// III-He Piel/Pual inf-construct with a vav C2 (צוה → צַוֹּת/צַוּת): collapse the
+/// spurious double vav left when the -ōṯ holam-mater vav lands beside the doubled
+/// C2 vav (ṣawwōṯ צַוּוֹת → ṣawwṯ צַוּת).
+fn lamed_he_vav_inf_contract_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 3 || seq[n - 1].letter != letter::TAV {
+        return None;
+    }
+    // ...vav(dagesh) vav(holam) tav  →  ...vav(dagesh) tav
+    if seq[n - 2].letter != letter::VAV || seq[n - 2].vowel != Some(Vowel::Holam) {
+        return None;
+    }
+    if seq[n - 3].letter != letter::VAV {
+        return None;
+    }
+    seq.remove(n - 2);
+    Some(hebrew::render(&seq))
+}
+
 fn shachah_inf_defective_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
     let n = seq.len();
