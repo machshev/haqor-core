@@ -8039,6 +8039,10 @@ fn apply_lamed_he(seq: &mut Vec<Cons>, root: &Root, binyan: Binyan, form: Form, 
             }
             if let Some(j) = radical_idx(seq, 2) {
                 seq[j].vowel = None;
+                // C2 now closes the word after a vowel (the C1 helping segol),
+                // so a begedkefet C2 spirantises — yireḇ (יִרֶב, from rḇh), not
+                // יִרֶבּ; the lene dagesh of the imperfect base (yirbɛ) is lost.
+                seq[j].dagesh = false;
             }
             if let Some(j) = radical_idx(seq, 1) {
                 seq[j].vowel = Some(if hebrew::is_guttural(seq[j].letter) {
