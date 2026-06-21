@@ -98,6 +98,8 @@ const FUNCTION_WORDS: &[&str] = &[
     // יְהִוה — a hiriq-pointed variant of the Tetragrammaton (closed-class divine
     // name, never a verb).
     "יְהִוה",
+    // כְּמּוֹ — dagesh variant of the preposition כְּמוֹ "like / as" (poetic).
+    "כְּמּוֹ",
     "יַעַן",
     "לְמַעַן",
     // particles / negatives / adverbs

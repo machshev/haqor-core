@@ -4840,4 +4840,7 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("רְכֻּלָּתְךָ", "רְכֻלָּה", "trade"),
     ("מִזְבֵחַ", "מִזְבֵּחַ", "altar"),
     ("אֲדנָי", "אָדוֹן", "sovereign; controller"),
+    ("יַּיִן", "יַיִן", "wine; intoxication"),
+    ("טֹוּב", "טוֹב", "good; pleasant; agreeable"),
+    ("רֵיַּח", "רֵיחַ", "odor; scent"),
 ];
