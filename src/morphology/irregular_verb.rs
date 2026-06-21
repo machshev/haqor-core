@@ -502,6 +502,34 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
 pub const IRREGULAR_VERBS: &[IrregularVerb] = &[
     IrregularVerb {
+        // Denominal שׂמאל "go to the left" (from שְׂמֹאל) — a quadriliteral the
+        // triliteral generator can't represent, so list its attested Hiphil
+        // forms. Cohortative 1cs, Gen 13:9 (וְאַשְׂמְאִילָה, "I will go left");
+        // the counterpart ימן "go right" is already curated above.
+        surface: "וְאַשְׂמְאִילָה",
+        root: "שמאל",
+        binyan: "Hiphil",
+        form: "Cohortative",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // שׂמאל Hiphil imperfect 2mp, Isa 30:21 (תַשְׂמְאִילוּ).
+        surface: "תַשְׂמְאִילוּ",
+        root: "שמאל",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // שׂמאל Hiphil participle mp, 1 Chr 12:2 (וּמַשְׂמִאלִים), paired with
+        // the curated ימן participle מַיְמִינִים from the same verse.
+        surface: "וּמַשְׂמִאלִים",
+        root: "שמאל",
+        binyan: "Hiphil",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
         surface: "אֲכַלְכֵּל",
         root: "כול",
         binyan: "Pilpel",
