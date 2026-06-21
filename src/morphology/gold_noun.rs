@@ -4822,4 +4822,9 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("תוֹלָעַת", "תּוֹלָע", "maggot"),
     ("תוֹעֲבֹתָם", "תּוֹעֵבַה", "disgusting"),
     ("תוֹעֲבוֹתַיִךְ", "תּוֹעֵבַה", "disgusting"),
+    ("נֶגֶע", "נֶגַע", "blow; spot"),
+    ("שֶׁה", "שֶׂה", "sheep; goat"),
+    ("דֶּשׁן", "דֶּשֶׁן", "fat; fatness; abundance; ashes"),
+    ("חֲמִשָׁה", "חָמֵשׁ", "five"),
+    ("צָהֳרַיִם", "צֹהַר", "light; window; double light; noon"),
 ];
