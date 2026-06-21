@@ -64,6 +64,26 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // Pe-yod יחם "be in heat/conceive" (Jacob's flocks, Gen 30): the Qal
+        // wayyiqtol 3fp takes the archaic YOD prefix (וַיֵּחַמְנָה) where the
+        // generator builds the standard tav-prefix (וַתֵּחַמְנָה).
+        surface: "וַיֵּחַמְנָה",
+        root: "יחם",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3fp",
+    },
+    IrregularVerb {
+        // יחם Piel infinitive construct + 3fs energic suffix לְיַחְמֵנָּה
+        // ("to conceive [at the sight of them]", Gen 30:41) — pe-yod Piel
+        // inf+suffix the generator doesn't build.
+        surface: "לְיַחְמֵנָּה",
+        root: "יחם",
+        binyan: "Piel",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
         // מול "circumcise" inflects its Niphal geminate-style — a doubled C1
         // mem with holam after the hiriq prefix (nimmōl) — where the hollow
         // generator builds נָמֹל. Perfect 3cp נִמֹּלוּ (Gen 17:27).
