@@ -64,6 +64,16 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // נתן Qal infinitive construct, un-assimilated qamats-theme variant
+        // nᵊṯān (נְתָן, Gen 38:9 / Num 20:21 "to give seed") — beside the
+        // generator's נְתֹן (holam) and assimilated תֵּת.
+        surface: "נְתָן",
+        root: "נתן",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
         // Geminate חנן "be gracious" Qal perfect 3ms + 1cs suffix, contracted —
         // the two nuns collapse to one dageshed radical: ḥannanî (חַנַּנִי,
         // Gen 33:11 "God has been gracious to me") — where the generator spells
