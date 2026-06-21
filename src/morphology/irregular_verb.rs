@@ -956,6 +956,70 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Imperfect",
         pgn: "3ms",
     },
+    IrregularVerb {
+        // III-He כבה Qal imperfect 3fs "(the fire) shall not be put out" (Lev
+        // 6:6) — tiḵbeh, a III-He segol-host imperfect the generator does not
+        // build.
+        surface: "תִכְבֶה",
+        root: "כבה",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // III-aleph טמא Piel infinitive construct + 2mp suffix "when you defile
+        // (the land)" (Lev 18:28) — bᵉṭammaʾăḵem, with the proclitic בְּ.
+        surface: "בְּטַמַּאֲכֶם",
+        root: "טמא",
+        binyan: "Piel",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // נחל Hithpael perfect (weqatal) 2mp "you shall take them as an
+        // inheritance" (Lev 25:46) — wᵉhiṯnaḥaltem.
+        surface: "וְהִתְנַחֲלְתֶּם",
+        root: "נחל",
+        binyan: "Hithpael",
+        form: "Perfect",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // פרר Hiphil infinitive construct + 2mp suffix "your breaking (my
+        // covenant)" (Lev 26:15) — lᵉhap̄rᵉḵem, with the proclitic לְ.
+        surface: "לְהַפְרְכֶם",
+        root: "פרר",
+        binyan: "Hiphil",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // קרב Qal infinitive construct + 3mp suffix "and when they came near (to
+        // the altar)" (Exod 40:32) — ûḇᵉqorḇāṯām, with the proclitics וּבְ.
+        surface: "וּבְקָרְבָתָם",
+        root: "קרב",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // קרב Qal infinitive construct + 3mp suffix "when they drew near (before
+        // the LORD)" (Lev 16:1) — bᵉqorḇāṯām, with the proclitic בְּ.
+        surface: "בְּקָרְבָתָם",
+        root: "קרב",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // III-He/weak דוה Qal infinitive construct + 3fs suffix "in the days of
+        // her menstruation" (Lev 12:2) — dᵉwōṯāh.
+        surface: "דְּותָהּ",
+        root: "דוה",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
