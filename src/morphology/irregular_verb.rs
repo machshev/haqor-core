@@ -53,6 +53,24 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "3cp",
     },
     IrregularVerb {
+        // מול "circumcise" inflects its Niphal geminate-style — a doubled C1
+        // mem with holam after the hiriq prefix (nimmōl) — where the hollow
+        // generator builds נָמֹל. Perfect 3cp נִמֹּלוּ (Gen 17:27).
+        surface: "נִמֹּלוּ",
+        root: "מול",
+        binyan: "Niphal",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // Same nimmōl pattern, Niphal participle mp נִמֹּלִים (Josh 5:8).
+        surface: "נִמֹּלִים",
+        root: "מול",
+        binyan: "Niphal",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
         // Geminate המם "rout" Qal wayyiqtol + 3mp suffix with anomalous u-theme
         // host yəhummēm (וַיְהֻמֵּם, Exod 14:24 etc.); generator reads it as Pual.
         surface: "וַיְהֻמֵּם",
