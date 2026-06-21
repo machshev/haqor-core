@@ -11247,6 +11247,9 @@ fn perfect_subject_object_suffixes(
             ),
             (OBJ_3FS, &[Cons::new(letter::HE).with_vowel(Qamats)]),
             (OBJ_3MP, &[Cons::new(letter::MEM)]),
+            // 2ms -ḵā: nᵊḡaʕănûḵā (נְגַעֲנוּךָ, נגע, Gen 26:29 "we have not
+            // touched you"), qᵊḇaʕănûḵā (קְבַעֲנוּךָ, קבע).
+            (OBJ_2MS, &[ocv(letter::KAF, Qamats)]),
         ];
         for &(obj, tail) in tails {
             for nv in [Some(Qubuts), None] {
@@ -11264,6 +11267,14 @@ fn perfect_subject_object_suffixes(
                 s.extend_from_slice(tail);
                 apply_guttural(&mut s, root);
                 out.push((obj, hebrew::render(&s)));
+                // A guttural C3 closing the syllable takes the silent sheva
+                // above, but before a consonantal suffix the MT also writes the
+                // vocal hataf-patah — nᵊḡaʕănûḵā beside nᵊḡaʕnûḵā. Emit it too.
+                if hebrew::is_guttural(c3) {
+                    let mut h = s.clone();
+                    h[2].vowel = Some(HatafPatah);
+                    out.push((obj, hebrew::render(&h)));
+                }
             }
         }
     } else if is(Person::Third, Gender::Common, Number::Plural) && binyan == Binyan::Qal {
