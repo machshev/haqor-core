@@ -87,6 +87,63 @@ fn strip_internal_maqaf(word: &str) -> String {
         .collect()
 }
 
+/// A handful of UXLC `<w>` elements erroneously fuse two orthographic words
+/// into one token with no separator (neither space nor maqaf) — e.g. Num 12:9
+/// "וַיִּחַר אַף" is stored as the single glued `<w>וַיִּחַרְאַף`. The morphhb WLC
+/// keeps these as two `<w>`, and so should we: a glued token is both
+/// un-analysable by the morphology generator and visibly wrong in the app's
+/// verse text. Keyed on the accent-stripped form (so the rule is robust to
+/// ta'amim/meteg placement); the value is the restored space-separated words.
+/// Deliberately precise — the legitimate one-word הַלְלוּיָהּ (shureq) does not
+/// match the erroneous sheva-pointed הַלְלְויָהּ here.
+fn split_glued_word(word: &str) -> Option<&'static str> {
+    // (glued form, restored split). The glued keys are written in the readable
+    // vowel-then-dagesh order; `glue_key` makes the comparison robust to UXLC's
+    // dagesh-then-vowel mark ordering (and stray accents/meteg).
+    const FIXES: &[(&str, &str)] = &[
+        // וַיִּחַר אַף "and (the) anger burned" (Num 12:9; 2Sam 6:7 drops the sheva)
+        ("וַיִּחַרְאַף", "וַיִּחַר אַף"),
+        ("וַיִּחַראַף", "וַיִּחַר אַף"),
+        // אֲבִי עַד "Everlasting Father" (Isa 9:5)
+        ("אֲבִיעַד", "אֲבִי עַד"),
+        // הַלְלוּ יָהּ "praise Yah" (Ps 106:1)
+        ("הַלְלְויָהּ", "הַלְלוּ יָהּ"),
+        // לְמַ בָּרִאשׁוֹנָה "because at the first" (1Chr 15:13)
+        ("לְמַבָּרִאשׁוֹנָה", "לְמַ בָּרִאשׁוֹנָה"),
+    ];
+    let key = glue_key(word);
+    FIXES
+        .iter()
+        .find(|(glued, _)| glue_key(glued) == key)
+        .map(|(_, split)| *split)
+}
+
+/// Order-insensitive match key: drop cantillation accents and meteg, then sort
+/// the combining marks within each consonant cluster, so a vowel-then-dagesh
+/// spelling compares equal to UXLC's dagesh-then-vowel one.
+fn glue_key(word: &str) -> Vec<char> {
+    let mut out: Vec<char> = Vec::new();
+    let mut cluster: Vec<char> = Vec::new();
+    let flush = |cluster: &mut Vec<char>, out: &mut Vec<char>| {
+        cluster.sort_unstable();
+        out.append(cluster);
+    };
+    for c in word.chars() {
+        let cp = c as u32;
+        if matches!(cp, 0x0591..=0x05AF | 0x05BD) {
+            continue; // cantillation accent / meteg
+        }
+        if (0x05D0..=0x05EA).contains(&cp) {
+            flush(&mut cluster, &mut out); // base letter → close prior cluster
+            out.push(c);
+        } else {
+            cluster.push(c); // point (vowel / dagesh / sin-shin dot)
+        }
+    }
+    flush(&mut cluster, &mut out);
+    out
+}
+
 /// A single verse: book, chapter, verse, and the space-joined words.
 pub struct Verse {
     pub book: u8,
@@ -143,6 +200,8 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                 if e.name().as_ref() == b"w" {
                     in_word = false;
                     let assembled = strip_internal_maqaf(&std::mem::take(&mut word));
+                    let assembled =
+                        split_glued_word(&assembled).map_or(assembled, str::to_string);
                     chapters
                         .entry(chapter)
                         .or_default()
