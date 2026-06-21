@@ -10988,7 +10988,10 @@ fn perfect_subject_object_suffixes(
         };
         push(OBJ_2MS, &[ocv(letter::KAF, Qamats)]);
         push(OBJ_2FS, &[ocv(letter::KAF, Sheva)]);
+        // 3ms on the retained î: the bare-vav -îw (הֲבִיאֹתִיו) and the fuller
+        // -îhû (הֲבִיאוֹתִיהוּ, הַעִירֹתִיהוּ, וְהִגַּעְתִּיהוּ).
         push(OBJ_3MS, &[Cons::new(letter::VAV)]);
+        push(OBJ_3MS, &[Cons::new(letter::HE), oshureq()]);
         push(OBJ_3FS, &[ocv(letter::HE, Qamats)]);
         push(OBJ_1CP, &[Cons::new(letter::NUN), oshureq()]);
         push(OBJ_3MP, &[Cons::new(letter::MEM)]);
