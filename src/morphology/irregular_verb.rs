@@ -64,6 +64,26 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // I-guttural Qal wayyiqtol with a SILENT sheva closing the prefix
+        // syllable, where apply_guttural writes the vocal hataf-patah —
+        // wayyaʿḇōr (וַיַּעְבֹר, עבר, Gen 41:46 "and he passed through") for
+        // וַיַּעֲבֹר.
+        surface: "וַיַּעְבֹר",
+        root: "עבר",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Same silent-guttural wayyiqtol, wattaʿgaḇ (וַתַּעְגַּב, עגב "lust",
+        // Ezek 23:5) for וַתַּעֲגַּב.
+        surface: "וַתַּעְגַּב",
+        root: "עגב",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3fs",
+    },
+    IrregularVerb {
         // נתן Qal infinitive construct, un-assimilated qamats-theme variant
         // nᵊṯān (נְתָן, Gen 38:9 / Num 20:21 "to give seed") — beside the
         // generator's נְתֹן (holam) and assimilated תֵּת.
