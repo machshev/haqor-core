@@ -64,6 +64,24 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // גנב Qal passive participle fs construct with the archaic
+        // hireq-compaginis -î ending — gᵊnuḇtî (גְּנֻבְתִי / וּגְנֻבְתִי, Gen
+        // 31:39 "stolen of day ... stolen of night") — where the generator
+        // builds the ordinary -aṯ construct (גְּנֻבַת).
+        surface: "גְּנֻבְתִי",
+        root: "גנב",
+        binyan: "Qal",
+        form: "Participle (pas.)",
+        pgn: "fs",
+    },
+    IrregularVerb {
+        surface: "וּגְנֻבְתִי",
+        root: "גנב",
+        binyan: "Qal",
+        form: "Participle (pas.)",
+        pgn: "fs",
+    },
+    IrregularVerb {
         // עשה Qal infinitive absolute with the guttural C1 reduced to a
         // hataf-patah — ʿăśô (עֲשׂוֹ, Gen 31:28 "you have done foolishly in
         // doing") — where the generator (and WLC) build the full qamats grade
