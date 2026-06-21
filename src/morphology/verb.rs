@@ -11893,6 +11893,13 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     } else {
         vec![Sheva, Segol]
     };
+    // A doubled stem (Piel/Pual/Hithpael — C2 carries the forte dagesh) keeps
+    // its underlying tsere theme before a suffix even when the bare III-guttural
+    // form lowered it to patah: yᵊšallēḥăḵā (אֲשַׁלֵּחֲךָ, שלח Piel + 2ms),
+    // beside the reduced yᵊšallᵊḥăḵā.
+    if seq[n - 2].dagesh {
+        themes.push(Tsere);
+    }
     // A I-aleph host whose quiescent aleph precedes the theme consonant
     // (tōʾḵal תֹּאכַל) reduces that theme to a hataf-patah under the suffix
     // (even on a non-guttural): tōʾḵălennû תֹּאכֲלֶנּוּ.
