@@ -809,6 +809,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && root.ayin() == root.lamed())
                 .then(|| geminate_qal_inf_construct_variant(root))
                 .flatten();
+                // Retained-yod Qal inf-construct + feminine -ɛṯ (יְבֹשׁ/יְבֹשֶׁת).
+                let pe_yod_retained_inf: Vec<String> = if binyan == Binyan::Qal
+                    && form == Form::InfinitiveConstruct
+                    && root.has(Gizra::PeYod)
+                {
+                    pe_yod_retained_inf_construct_variants(root)
+                } else {
+                    Vec::new()
+                };
                 let qal_a_theme_inf = (binyan == Binyan::Qal
                     && form == Form::InfinitiveConstruct
                     && root.lamed() != letter::HE)
@@ -3489,6 +3498,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     .chain(niphal_pe_guttural_ptcp_a)
                     .chain(hollow_lamed_aleph_perf)
                     .chain(qal_inf_fem)
+                    .chain(pe_yod_retained_inf)
                     .chain(pe_guttural_a_silent)
                     .chain(pe_guttural_loud_segol_pl)
                     .chain(pe_guttural_loud_from_silent)
@@ -10042,6 +10052,29 @@ fn pe_yod_retained_imperative_variant(root: &Root, pgn: Pgn) -> Option<String> {
         apply_lamed_aleph(&mut seq, root, Binyan::Qal, Form::Imperative, pgn);
     }
     Some(hebrew::render(&seq))
+}
+
+/// Retained-yod Qal infinitive construct of a true I-yod root: the strong
+/// qᵊṭōl shape with the yod kept (yᵊḇōš יְבֹשׁ, from יבש) rather than the
+/// segolate yod-dropping form (בֶּשֶׁת) the builder produces, plus its feminine
+/// segolate -ɛṯ verbal noun (yᵊḇōšeṯ יְבֹשֶׁת, Gen 8:7 "the drying up of the
+/// waters"). Additive; caller gates to (Qal, InfinitiveConstruct, PeYod).
+fn pe_yod_retained_inf_construct_variants(root: &Root) -> Vec<String> {
+    if root.lamed() == letter::HE || root.lamed() == letter::ALEF {
+        return Vec::new();
+    }
+    let bare = [
+        rad(root.pe(), 1).with_vowel(Vowel::Sheva),
+        rad(root.ayin(), 2).with_vowel(Vowel::Holam),
+        rad(root.lamed(), 3),
+    ];
+    let fem = [
+        rad(root.pe(), 1).with_vowel(Vowel::Sheva),
+        rad(root.ayin(), 2).with_vowel(Vowel::Holam),
+        rad(root.lamed(), 3).with_vowel(Vowel::Segol),
+        Cons::new(letter::TAV),
+    ];
+    vec![hebrew::render(&bare), hebrew::render(&fem)]
 }
 
 /// Uncontracted geminate Qal infinitive construct: the doubled radical is
