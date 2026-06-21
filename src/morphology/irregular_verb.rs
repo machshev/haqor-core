@@ -64,6 +64,17 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // חבא "hide" (I-guttural + III-aleph) Niphal perfect 2ms with the
+        // a-grade silent-sheva guttural — naḥbēʾtā (נַחְבֵּאתָ, 1 Sam 19:2,
+        // weqatal "and hide yourself") — where the generator builds the e-grade
+        // hataf prefix (נֶחֱבֵאתָ).
+        surface: "נַחְבֵּאתָ",
+        root: "חבא",
+        binyan: "Niphal",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
         // Pe-yod יחם "be in heat/conceive" (Jacob's flocks, Gen 30): the Qal
         // wayyiqtol 3fp takes the archaic YOD prefix (וַיֵּחַמְנָה) where the
         // generator builds the standard tav-prefix (וַתֵּחַמְנָה).
