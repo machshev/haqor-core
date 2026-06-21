@@ -668,6 +668,17 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Inf. Absolute",
         pgn: "",
     },
+    IrregularVerb {
+        // להה "languish" (C2=C3=he, treated as III-He) Qal wayyiqtol 3fs — the
+        // anomalous hapax wattēlah (וַתֵּלַהּ, Gen 47:13 "and the land of Egypt
+        // languished"), with a tsere prefix + mappiq-he stem the generator does
+        // not produce (BDB 3856a flags the vocalization as irregular).
+        surface: "וַתֵּלַהּ",
+        root: "להה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3fs",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
