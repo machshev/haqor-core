@@ -105,6 +105,9 @@ const FUNCTION_WORDS: &[&str] = &[
     "וְאָּנֹכִי",
     // וְעַין — conjunction + the place-name עַיִן "Ain" (1Chr 4:32); a proper noun.
     "וְעַין",
+    // לְמַ — preposition לְ + defectively-written interrogative מָה ("for what /
+    // because"), split out of the glued לְמַבָּרִאשׁוֹנָה (1Chr 15:13); closed-class.
+    "לְמַ",
     "יַעַן",
     "לְמַעַן",
     // particles / negatives / adverbs
