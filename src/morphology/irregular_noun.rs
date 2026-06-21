@@ -147,6 +147,9 @@ pub const IRREGULAR_NOUNS: &[IrregularNoun] = &[
         lemma: "בֵּן",
         gloss: "son",
         forms: &[
+            // Defective spelling of "his son" (בְּנוֹ), vocal sheva under the
+            // bet omitted (Gen 25:6).
+            "בּנוֹ",
             "בְּנֵי",
             "בֶּן",
             "בְנֵי",
