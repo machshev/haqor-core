@@ -2305,6 +2305,12 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
     IrregularVerb { surface: "וְהֵעָתֶר", root: "עתר", binyan: "Niphal", form: "Inf. Construct", pgn: "" },
     IrregularVerb { surface: "וְהָכִונוּ", root: "כון", binyan: "Hiphil", form: "Imperative", pgn: "2mp" },
     IrregularVerb { surface: "לִמְעָול", root: "מעל", binyan: "Qal", form: "Inf. Construct", pgn: "" },
+    IrregularVerb { surface: "דְּעֶה", root: "ידע", binyan: "Qal", form: "Imperative", pgn: "2ms" },
+    IrregularVerb { surface: "שְׁתוֹ", root: "שתה", binyan: "Qal", form: "Inf. Absolute", pgn: "" },
+    IrregularVerb { surface: "צַדְּקֶךָּ", root: "צדק", binyan: "Piel", form: "Inf. Construct", pgn: "" },
+    // Hithpael with the prefix-ת assimilated into the dageshed C1 (תִּתְכַּסֶּה →
+    // תִּכַּסֶּה), Prov 26:26 "hatred covers itself".
+    IrregularVerb { surface: "תִּכַּסֶּה", root: "כסה", binyan: "Hithpael", form: "Imperfect", pgn: "3fs" },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
