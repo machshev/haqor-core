@@ -4087,6 +4087,25 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(imv_paragogic);
 
+    // III-He perfect 3fs apocopated -āṯ twin (הָגְלָת beside הׇגְלָתָה).
+    if root.lamed() == letter::HE {
+        let apoc_3fs: Vec<VerbForm> = forms
+            .iter()
+            .filter(|f| {
+                f.form == Form::Perfect
+                    && f.pgn == Pgn::new(Person::Third, Gender::Feminine, Number::Singular)
+                    && f.object_suffix.is_none()
+            })
+            .filter_map(|f| {
+                lamed_he_perfect_3fs_apocopated(&f.text).map(|t| VerbForm {
+                    text: t,
+                    ..f.clone()
+                })
+            })
+            .collect();
+        forms.extend(apoc_3fs);
+    }
+
     // Pe-yod Hophal o/u twin: the contracted preformative is spelled with a
     // shureq (hûšaḇ הוּשַׁב) or, for some roots, a holam-mater (hôḏaʕ הוֹדַע).
     // apply_pe_yod builds the shureq; mirror every pe-yod Hophal form with its
@@ -5723,6 +5742,26 @@ fn cohortative_paragogic_variants(impf_text: &str) -> Vec<String> {
         }
     }
     out
+}
+
+/// III-He perfect 3fs apocopated -āṯ twin: beside the full gālᵊṯâ (גָּלְתָה,
+/// hoglāṯâ הׇגְלָתָה) the older form drops the final he-mater and the tav's
+/// vowel, leaving the bare -āṯ ending — hoglāṯ (הָגְלָת, gold for גלה Hophal
+/// 3fs). Fires only on the qamats-grade host [..., C(qamats), tav, he].
+fn lamed_he_perfect_3fs_apocopated(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 4 || seq[n - 1].letter != letter::HE || seq[n - 2].letter != letter::TAV {
+        return None;
+    }
+    if seq[n - 3].vowel != Some(Vowel::Qamats) {
+        return None;
+    }
+    seq.pop(); // drop the final he-mater
+    if let Some(t) = seq.last_mut() {
+        t.vowel = None; // strip the tav's vowel: -āṯâ → -āṯ
+    }
+    Some(hebrew::render(&seq))
 }
 
 /// Paragogic-he emphatic imperative for a *two-consonant* host — a pe-weak
