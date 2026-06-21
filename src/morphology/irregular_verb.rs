@@ -870,6 +870,92 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Wayyiqtol",
         pgn: "3ms",
     },
+    IrregularVerb {
+        // III-He עשה Qal infinitive construct + 3ms suffix "to do it" (Exod
+        // 18:18) — ʿăśōhû, the holam-host inf-construct the generator does not
+        // build with the -hû suffix.
+        surface: "עֲשֹׂהוּ",
+        root: "עשה",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // שפט Qal imperfect 3mp, plene-vav (defectiva-reversed) spelling —
+        // yišpûṭû (יִשְׁפּוּטוּ, Exod 18:26 "they would judge") for יִשְׁפְּטוּ.
+        surface: "יִשְׁפּוּטוּ",
+        root: "שפט",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // גרש Piel perfect (weqatal) 2ms + archaic 3mp suffix -āmô "and you shall
+        // drive them out" (Exod 23:31) — wᵉḡēraštāmô.
+        surface: "וְגֵרַשְׁתָּמוֹ",
+        root: "גרש",
+        binyan: "Piel",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // היה Qal imperfect 3fp with a doubling dagesh in the yod — tihyeynâ
+        // (תִּהְיֶיּןָ for תִּהְיֶיןָ, e.g. Exod 25:27); the bible.db token carries
+        // the dagesh the generator does not.
+        surface: "תִּהְיֶיּןָ",
+        root: "היה",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3fp",
+    },
+    IrregularVerb {
+        // לבש Qal imperfect 3ms + 3mp suffix "the priest shall wear them" (Exod
+        // 29:30) — yilbāšām, a qamats-host + -ām suffix the generator doesn't
+        // build.
+        surface: "יִלְבָּשָׁם",
+        root: "לבש",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // זכר Niphal imperfect 3fs "shall be remembered / counted male" (Exod
+        // 34:19) — tizzāḵār, with the a-theme the generator's Niphal imperfect
+        // does not produce.
+        surface: "תִּזָּכָר",
+        root: "זכר",
+        binyan: "Niphal",
+        form: "Imperfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // III-He כלה Qal wayyiqtol 3fs "and the work was finished" (Exod 39:32) —
+        // wattēḵel, tsere prefix + segol theme beside the Piel וַתְּכַל.
+        surface: "וַתֵּכֶל",
+        root: "כלה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // III-He כלה Piel imperfect 1cs + 2ms suffix "lest I consume you" (Exod
+        // 33:3) — ʾăḵelḵā, the segol-host + -ḵā suffix the generator doesn't
+        // build.
+        surface: "אֲכֶלְךָ",
+        root: "כלה",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // III-He ראה Qal imperfect 3ms + 1cs suffix "no man shall see me (and
+        // live)" (Exod 33:20) — yirʾanî, an apocopated III-He host + -anî suffix.
+        surface: "יִרְאַנִי",
+        root: "ראה",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
@@ -3229,6 +3315,15 @@ pub const IRREGULAR_VERBS: &[IrregularVerb] = &[
         binyan: "Tiphil",
         form: "Perfect",
         pgn: "1cs",
+    },
+    IrregularVerb {
+        // Silent-sheva spelling variant of the Hishtaphel 2ms imperfect found in
+        // bible.db (תִשְׁתַּחְוֶה for תִשְׁתַּחֲוֶה).
+        surface: "תִשְׁתַּחְוֶה",
+        root: "שחה",
+        binyan: "Hishtaphel",
+        form: "Imperfect",
+        pgn: "2ms",
     },
     IrregularVerb {
         surface: "תִשְׁתַּחֲוֶה",
