@@ -208,6 +208,18 @@ pub(crate) fn canonical_key(form: &str) -> String {
     {
         penult.vowel = None;
     }
+    // A mappiq (dagesh) on a word-final he is non-contrastive in a verb form —
+    // the verb index holds only verb forms, whose III-He final he is a silent
+    // mater, never a consonantal he. The MT occasionally marks one anyway
+    // (אֶעֱשֶׂהּ, Gen 2:18, 1cs imperfect of עשה). Strip it so the marked and
+    // unmarked spellings share a key. (Not done in the noun parser's norm_key:
+    // there a mappiq-he is the 3fs suffix and *is* contrastive — סוּסָהּ vs סוּסָה.)
+    if let Some(last) = out.last_mut()
+        && last.letter == letter::HE
+        && last.dagesh
+    {
+        last.dagesh = false;
+    }
     hebrew::render(&out)
         .chars()
         .filter(|&c| c != '\u{05C1}' && c != '\u{05C2}')
