@@ -100,6 +100,11 @@ const FUNCTION_WORDS: &[&str] = &[
     "יְהִוה",
     // כְּמּוֹ — dagesh variant of the preposition כְּמוֹ "like / as" (poetic).
     "כְּמּוֹ",
+    // וְאָּנֹכִי — conjunction + dagesh variant of the independent pronoun אָנֹכִי
+    // "I" (1Kgs 3:7); closed-class, never a verb.
+    "וְאָּנֹכִי",
+    // וְעַין — conjunction + the place-name עַיִן "Ain" (1Chr 4:32); a proper noun.
+    "וְעַין",
     "יַעַן",
     "לְמַעַן",
     // particles / negatives / adverbs

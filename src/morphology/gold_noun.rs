@@ -4843,4 +4843,10 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("יַּיִן", "יַיִן", "wine; intoxication"),
     ("טֹוּב", "טוֹב", "good; pleasant; agreeable"),
     ("רֵיַּח", "רֵיחַ", "odor; scent"),
+    ("שַׁלְהֶבֶתְיָה", "שַׁלְהֶבֶת", "flare of fire"),
+    ("מַחֲמַדִּים", "מַחְמָד", "delightful; a delight"),
+    ("אַיְל", "אַיִל", "strength; chief; ram; pilaster; oak"),
+    ("חֲמִשִׁים", "חֲמִשִּׁים", "fifty"),
+    ("מַמְּלָכָה", "מַמְלָכָה", "dominion; rule; realm"),
+    ("בִּירָינִיּוֹת", "בִּירָנִית", "fortress"),
 ];
