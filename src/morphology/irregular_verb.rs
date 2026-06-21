@@ -1235,6 +1235,114 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Inf. Construct",
         pgn: "",
     },
+    IrregularVerb {
+        // נצר Qal imperfect 3ms + 3ms energic suffix "he kept him (as the apple
+        // of his eye)" (Deut 32:10) — yiṣṣᵉrenhû.
+        surface: "יִצְּרֶנְהוּ",
+        root: "נצר",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // III-He שׁיה Qal imperfect 2ms, apocopated "you forgot (the God who bore
+        // you)" (Deut 32:18) — teši.
+        surface: "תֶּשִׁי",
+        root: "שיה",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // III-He פאה Hiphil cohortative 1cs + 3mp suffix "I would have scattered
+        // them (into corners)" (Deut 32:26) — ʾap̄ʾêhem.
+        surface: "אַפְאֵיהֶם",
+        root: "פאה",
+        binyan: "Hiphil",
+        form: "Cohortative",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // עזר Qal imperfect 3mp + 2mp suffix "let them help you" (Deut 32:38) —
+        // wᵉyaʿzᵉruḵem.
+        surface: "וְיַעְזְרֻכֶם",
+        root: "עזר",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // Hollow בוא Qal imperfect 3fs + paragogic he "let (the good will) come"
+        // (Deut 33:16) — tāḇôʾtâ.
+        surface: "תָּבוֹאתָה",
+        root: "בוא",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // צפן Qal wayyiqtol 3fs + 3ms suffix "and she hid him" (Josh 2:4) —
+        // wattiṣpᵉnô.
+        surface: "וַתִּצְפְּנוֹ",
+        root: "צפן",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // III-He עלה Hiphil perfect 3fs + 3mp suffix "she had brought them up (to
+        // the roof)" (Josh 2:6) — heʿĕlāṯam.
+        surface: "הֶעֱלָתַם",
+        root: "עלה",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // III-aleph חבא Hiphil perfect 3fs "(Rahab) hid (the messengers)" (Josh
+        // 6:17) — heḥbᵉʾaṯâ.
+        surface: "הֶחְבְּאַתָה",
+        root: "חבא",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // עבר Hiphil perfect 2ms "why have you brought this people over (the
+        // Jordan)" (Josh 7:7) — hēʿăḇartā, the I-guttural tsere-prefix variant.
+        surface: "הֵעֲבַרְתָּ",
+        root: "עבר",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // אחז Niphal perfect 3cp "they had taken possession" (Josh 22:9) —
+        // nōʾăḥăzû (cf. the weqatal וְנֹאחֲזוּ of Num 32:30).
+        surface: "נֹאחֲזוּ",
+        root: "אחז",
+        binyan: "Niphal",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // I-yod ירא Qal infinitive construct "to fear (the LORD)" (Josh 22:25) —
+        // yᵉrōʾ, holam-host variant of the usual יִרְאָה / יְרֹא.
+        surface: "יְרֹא",
+        root: "ירא",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // I-guttural אסף Qal wayyiqtol 3ms "and he gathered (all the tribes)"
+        // (Josh 24:1) — wayyeʾesōp̄, plain-segol variant of וַיֶּאֱסֹף.
+        surface: "וַיֶּאֶסֹף",
+        root: "אסף",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).

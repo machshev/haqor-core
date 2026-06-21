@@ -4827,4 +4827,5 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("דֶּשׁן", "דֶּשֶׁן", "fat; fatness; abundance; ashes"),
     ("חֲמִשָׁה", "חָמֵשׁ", "five"),
     ("צָהֳרַיִם", "צֹהַר", "light; window; double light; noon"),
+    ("לֵחֹה", "לֵחַ", "freshness; vigor"),
 ];

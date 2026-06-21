@@ -86,6 +86,9 @@ const FUNCTION_WORDS: &[&str] = &[
     "מִן",
     "אֵת",
     "אֶת",
+    // אֶתּ — dagesh variant of the object marker/preposition אֶת (Judg 1:19 "with",
+    // Song 2:14 object marker), where the following word's loss leaves a dagesh.
+    "אֶתּ",
     "יַעַן",
     "לְמַעַן",
     // particles / negatives / adverbs
