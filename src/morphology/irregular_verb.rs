@@ -64,6 +64,17 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // עשה Qal infinitive absolute with the guttural C1 reduced to a
+        // hataf-patah — ʿăśô (עֲשׂוֹ, Gen 31:28 "you have done foolishly in
+        // doing") — where the generator (and WLC) build the full qamats grade
+        // (עָשׂוֹ).
+        surface: "עֲשׂוֹ",
+        root: "עשה",
+        binyan: "Qal",
+        form: "Inf. Absolute",
+        pgn: "",
+    },
+    IrregularVerb {
         // חבא "hide" (I-guttural + III-aleph) Niphal perfect 2ms with the
         // a-grade silent-sheva guttural — naḥbēʾtā (נַחְבֵּאתָ, 1 Sam 19:2,
         // weqatal "and hide yourself") — where the generator builds the e-grade
