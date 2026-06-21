@@ -1732,6 +1732,68 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Inf. Construct",
         pgn: "",
     },
+    IrregularVerb {
+        // עצר Qal imperfect 3ms + 2ms suffix "lest the rain stop you" (1Kgs
+        // 18:44).
+        surface: "יַעַצָרְכָה",
+        root: "עצר",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // III-aleph רפא Piel perfect 1cs "I have healed these waters" (2Kgs
+        // 2:21).
+        surface: "רִפִּאתִי",
+        root: "רפא",
+        binyan: "Piel",
+        form: "Perfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // בקע Piel wayyiqtol 3fp "and they (the bears) tore (the children)" (2Kgs
+        // 2:24).
+        surface: "וַתְּבַקַּעְנָה",
+        root: "בקע",
+        binyan: "Piel",
+        form: "Wayyiqtol",
+        pgn: "3fp",
+    },
+    IrregularVerb {
+        // III-He ראה Qal wayyiqtol 3ms "and he saw" (patah variant of וַיַּרְא).
+        surface: "וַיַּרַא",
+        root: "ראה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // יטב Hiphil wayyiqtol 3fs "and she beautified (her head)" (2Kgs 9:30,
+        // Jezebel).
+        surface: "וַתֵּיטֶב",
+        root: "יטב",
+        binyan: "Hiphil",
+        form: "Wayyiqtol",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // רוץ Qal participle mp absolute + article, archaic -în "the runners /
+        // royal guard" (2Kgs 11:13).
+        surface: "הָרָצִין",
+        root: "רוץ",
+        binyan: "Qal",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
+        // III-He עשה Qal wayyiqtol 3ms "and he did (evil)" (patah variant of
+        // וַיַּעֲשֶׂה).
+        surface: "וַיַּעַשֶׂה",
+        root: "עשה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
