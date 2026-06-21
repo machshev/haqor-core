@@ -772,6 +772,104 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Imperfect",
         pgn: "2mp",
     },
+    IrregularVerb {
+        // נשׂג Hiphil wayyiqtol 3mp "and they overtook" (Exod 14:9, the Egyptians
+        // overtaking Israel). The Leningrad/bible.db token spells the sin without
+        // the doubling dagesh (וַיַּשִׂיגוּ for וַיַּשִּׂיגוּ).
+        surface: "וַיַּשִׂיגוּ",
+        root: "נשג",
+        binyan: "Hiphil",
+        form: "Wayyiqtol",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // נוה Hiphil imperfect 1cs + 3ms suffix "and I will glorify him"
+        // (Exod 15:2, Song of the Sea) — wᵉʾanwēhû, an archaic poetic form the
+        // generator does not build.
+        surface: "וְאַנְוֵהוּ",
+        root: "נוה",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // כסה Piel imperfect 3mp + archaic 3mp suffix -ēmô "the deeps cover them"
+        // (Exod 15:5) — yᵉḵasyumô, the rare yod-retaining III-He poetic stem with
+        // the -mô suffix.
+        surface: "יְכַסְיֻמוּ",
+        root: "כסה",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // אדר Niphal participle ms construct + hireq compaginis "glorious in
+        // power" (Exod 15:6) — neʾdārî, the archaic construct -î the generator's
+        // participle paradigm does not carry.
+        surface: "נֶאְדָּרִי",
+        root: "אדר",
+        binyan: "Niphal",
+        form: "Participle (act.)",
+        pgn: "ms",
+    },
+    IrregularVerb {
+        // מלא Qal imperfect 3fs + archaic 3mp suffix -ēmô "my desire shall be
+        // full of them" (Exod 15:9) — timlāʾēmô, a poetic suffix the generator
+        // does not produce.
+        surface: "תִּמְלָאֵמוֹ",
+        root: "מלא",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // נהל Piel perfect 2ms "you have guided" (Exod 15:13) — nēhaltā, tsere
+        // theme where the generator builds the hiriq/patah grade.
+        surface: "נֵהַלְתָּ",
+        root: "נהל",
+        binyan: "Piel",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // יצא Hiphil perfect 2mp "you have brought us out" (Exod 16:3) —
+        // hôṣēʾṯem, a III-aleph Hiphil perfect 2mp the generator does not build.
+        surface: "הוֹצֵאתֶם",
+        root: "יצא",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // אמר Qal wayyiqtol 3ms, defective spelling without the doubling dagesh
+        // in the yod — wayyōʾmer (וַיֹאמֶר for וַיֹּאמֶר, Exod 16:9 "and Moses
+        // said"); the bible.db token preserves this Leningrad defective form.
+        surface: "וַיֹאמֶר",
+        root: "אמר",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Quadriliteral חספס Pual participle ms "fine, flake-like" (Exod 16:14,
+        // the manna) — mᵉḥuspās; a four-radical root outside the triliteral
+        // paradigm generator.
+        surface: "מְחֻסְפָּס",
+        root: "חספס",
+        binyan: "Pual",
+        form: "Participle (act.)",
+        pgn: "ms",
+    },
+    IrregularVerb {
+        // III-He חדה Qal wayyiqtol 3ms, apocopated with a bare dagesh closing the
+        // final dalet — wayyiḥad (וַיִּחַדְּ, Exod 18:9 "and Jethro rejoiced") —
+        // beside the generator's וַיִּחַד.
+        surface: "וַיִּחַדְּ",
+        root: "חדה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
