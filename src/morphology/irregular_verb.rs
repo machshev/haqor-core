@@ -679,6 +679,99 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Wayyiqtol",
         pgn: "3fs",
     },
+    IrregularVerb {
+        // ילד Piel infinitive construct + 2fp suffix — bᵊyalleḏḵen (בְּיַלֶּדְכֶן,
+        // Exod 1:16 "when you help give birth"), the proclitic-בְּ temporal
+        // infinitive; the generator does not build the Piel inf-construct host
+        // with the 2fp possessive suffix.
+        surface: "בְּיַלֶּדְכֶן",
+        root: "ילד",
+        binyan: "Piel",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // יטב (pe-yod) Hiphil wayyiqtol 3ms with the yod-grade short stem —
+        // wayyêṭeḇ (וַיֵּיטֶב, Exod 1:20 "and God dealt well with"); the generator
+        // builds the yod-grade long imperfect יֵיטִיב but only the vav-grade short
+        // form וַיּוֹטֶב for the wayyiqtol.
+        surface: "וַיֵּיטֶב",
+        root: "יטב",
+        binyan: "Hiphil",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // יצב Hithpael wayyiqtol 3fs, contracted — the yod assimilates so
+        // hiṯyaṣṣēḇ surfaces as wattēṣaṣṣaḇ (וַתֵּתַצַּב, Exod 2:4 "and she
+        // stationed herself") beside the uncontracted וַתִּתְיַצֵּב.
+        surface: "וַתֵּתַצַּב",
+        root: "יצב",
+        binyan: "Hithpael",
+        form: "Wayyiqtol",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // III-aleph מלא Piel wayyiqtol 3fp — wattᵊmalleʾnâ (וַתְּמַלֶּאנָה, Exod
+        // 2:16 "and they filled"), segol theme + silent aleph before the -nâ
+        // afformative, where the generator over-vocalizes the aleph
+        // (תְּמַלֵּאֲנָה).
+        surface: "וַתְּמַלֶּאנָה",
+        root: "מלא",
+        binyan: "Piel",
+        form: "Wayyiqtol",
+        pgn: "3fp",
+    },
+    IrregularVerb {
+        // III-aleph קרא Qal imperative 2fp, anomalous -en ending — qirʾen
+        // (קִרְאֶן, Exod 2:20 "call him") for the expected קְרֶאןָ / קְרֶאנָה.
+        surface: "קִרְאֶן",
+        root: "קרא",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2fp",
+    },
+    IrregularVerb {
+        // יסף Hiphil imperfect 2mp + paragogic nun, defective aleph spelling —
+        // tōʾsip̄ûn (תֹאסִפוּן, Exod 5:7 "you shall not continue to give") where
+        // the generator builds the plene vav grade תּוֹסִיפוּן.
+        surface: "תֹאסִפוּן",
+        root: "יסף",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // עשה Qal wayyiqtol 3mp with full patah on the guttural C1 where the
+        // generator writes hataf-patah — wayyaʿaśû (וַיַּעַשׂוּ, Exod 7:10 "and
+        // they did so"); BHS preserves this Leningrad form beside וַיַּעֲשׂוּ.
+        surface: "וַיַּעַשׂוּ",
+        root: "עשה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // הלך Qal wayyiqtol 3fs treated as a strong I-guttural-style verb —
+        // wattihălaḵ (וַתִּהֲלַךְ, Exod 9:23 "and fire ran along"), the full
+        // hireq-prefix form beside the usual pe-vav-style וַתֵּלֶךְ.
+        surface: "וַתִּהֲלַךְ",
+        root: "הלך",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // Geminate חגג Qal imperfect 2mp + 3ms suffix — tᵊḥāgguhû (תְּחָגֻּהוּ,
+        // Exod 12:14 "you shall keep it as a feast"), qamats theme + dageshed
+        // gimel + qubuts host before the -hû suffix, which the generator's
+        // geminate object-suffix hosts do not produce.
+        surface: "תְּחָגֻּהוּ",
+        root: "חגג",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "2mp",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
