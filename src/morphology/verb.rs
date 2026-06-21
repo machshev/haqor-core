@@ -7094,11 +7094,7 @@ fn apply_hithpael_metathesis(seq: &mut Vec<Cons>, _root: &Root) -> bool {
     seq[t_idx].vowel = v_tav;
     seq[c1_idx].vowel = v_c1;
 
-    // The TAV now follows a silent sheva (on the sibilant); give it a
-    // dagesh lene.
-    seq[c1_idx].dagesh = true;
-
-    // Emphatic assimilation.
+    // Emphatic assimilation of the metathesised infix.
     match c1 {
         letter::ZAYIN => {
             // hit-z... → hiz-d... (dalet)
@@ -7110,6 +7106,13 @@ fn apply_hithpael_metathesis(seq: &mut Vec<Cons>, _root: &Root) -> bool {
         }
         _ => {}
     }
+
+    // The infix now follows a silent sheva (on the sibilant) and takes a
+    // dagesh lene — but only if it is still a begedkefet letter: the tav of the
+    // ס/שׁ metathesis (hist-) and the dalet of the ז assimilation (hizd-) do,
+    // the emphatic TET of the צ assimilation (hiṣṭ-) does NOT — niṣṭaddāq
+    // נִצְטַדָּק, not נִצְטַּדָּק.
+    seq[c1_idx].dagesh = hebrew::is_begedkefet(seq[c1_idx].letter);
 
     true
 }
