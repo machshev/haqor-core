@@ -64,6 +64,17 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // Geminate חנן "be gracious" Qal perfect 3ms + 1cs suffix, contracted —
+        // the two nuns collapse to one dageshed radical: ḥannanî (חַנַּנִי,
+        // Gen 33:11 "God has been gracious to me") — where the generator spells
+        // the uncontracted חֲנָנַנִי.
+        surface: "חַנַּנִי",
+        root: "חנן",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
         // גנב Qal passive participle fs construct with the archaic
         // hireq-compaginis -î ending — gᵊnuḇtî (גְּנֻבְתִי / וּגְנֻבְתִי, Gen
         // 31:39 "stolen of day ... stolen of night") — where the generator
