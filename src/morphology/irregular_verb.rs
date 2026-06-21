@@ -1406,6 +1406,332 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Wayyiqtol",
         pgn: "3mp",
     },
+    // ── Judges/Samuel/Kings tail (gold-precise, OSHB) ──
+    IrregularVerb {
+        // נתק Qal weqatal 1cp + 3ms suffix "we will draw him away" (Judg 20:32).
+        surface: "וּנְתַקְּנֻהוּ",
+        root: "נתק",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "1cp",
+    },
+    IrregularVerb {
+        // רדף Hiphil perfect 3cp + 3ms suffix "they pursued him" (Judg 20:43).
+        surface: "הִרְדִיפֻהוּ",
+        root: "רדף",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // פקד Hithpael wayyiqtol 3ms "and it was mustered" (Judg 21:9).
+        surface: "וַיִּתְפָּקֵד",
+        root: "פקד",
+        binyan: "Hithpael",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // שכר Hithpael imperfect 2fs + paragogic nun "how long will you be drunk"
+        // (1Sam 1:14).
+        surface: "תִּשְׁתַּכָּרִין",
+        root: "שכר",
+        binyan: "Hithpael",
+        form: "Imperfect",
+        pgn: "2fs",
+    },
+    IrregularVerb {
+        // שאל Qal perfect 1cs + 3ms suffix "I asked him of the LORD" (1Sam 1:20).
+        surface: "שְׁאִלְתִּיו",
+        root: "שאל",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // שמם Hiphil wayyiqtol 3ms + 3mp suffix "and he devastated them" (1Sam
+        // 5:6), with an extra dagesh in bible.db.
+        surface: "וַיְשִּׁמֵּם",
+        root: "שמם",
+        binyan: "Hiphil",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // ישר Qal wayyiqtol 3fp "and the cows went straight" (1Sam 6:12).
+        surface: "וַיִשַּׁרְנָה",
+        root: "ישר",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3fp",
+    },
+    IrregularVerb {
+        // מאן Piel wayyiqtol 3mp "and they refused" (1Sam 8:19), patah variant.
+        surface: "וַיְמַאֲנוּ",
+        root: "מאן",
+        binyan: "Piel",
+        form: "Wayyiqtol",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // רצץ Qal perfect 2ms + 1cp suffix "you have oppressed us" (1Sam 12:4).
+        surface: "רַצּוֹתָנוּ",
+        root: "רצץ",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // III-aleph חטא Qal participle mp absolute "sinning" (1Sam 14:33).
+        surface: "חֹטִאים",
+        root: "חטא",
+        binyan: "Qal",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
+        // שאר Hiphil cohortative 1cp "let us not leave a man" (1Sam 14:36).
+        surface: "נַשְׁאֵר",
+        root: "שאר",
+        binyan: "Hiphil",
+        form: "Cohortative",
+        pgn: "1cp",
+    },
+    IrregularVerb {
+        // רוח Qal perfect 3ms (weqatal) "and Saul was refreshed" (1Sam 16:23).
+        surface: "וְרָוַח",
+        root: "רוח",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // שמע Niphal wayyiqtol 3mp "and the words were heard" (1Sam 17:31).
+        surface: "וַיְּשָּׁמְעוּ",
+        root: "שמע",
+        binyan: "Niphal",
+        form: "Wayyiqtol",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // אהב Qal perfect 3fs + 3ms suffix "Michal loved him" (1Sam 18:28),
+        // patah variant.
+        surface: "אַהֵבַתְהוּ",
+        root: "אהב",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // יסף Hiphil wayyiqtol 3ms "and Saul continued/did again" (1Sam 18:29).
+        surface: "וַיֹּאסֶף",
+        root: "יסף",
+        binyan: "Hiphil",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // חבא Niphal perfect (weqatal) 2ms "and you shall hide yourself" (1Sam
+        // 19:2); cf. the bare נַחְבֵּאתָ.
+        surface: "וְנַחְבֵּאתָ",
+        root: "חבא",
+        binyan: "Niphal",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // רמה Piel perfect 2fs + 1cs suffix "you deceived me" (1Sam 19:17).
+        surface: "רִמִּיתִנִי",
+        root: "רמה",
+        binyan: "Piel",
+        form: "Perfect",
+        pgn: "2fs",
+    },
+    IrregularVerb {
+        // שלח Qal participle ms construct + 2ms suffix "the one who sends you"
+        // (1Sam 21:3).
+        surface: "שֹׁלֵחֲךָ",
+        root: "שלח",
+        binyan: "Qal",
+        form: "Participle (act.)",
+        pgn: "ms",
+    },
+    IrregularVerb {
+        // נתן Qal imperative 2ms + 3fs suffix "give it (to me)" (1Sam 21:10).
+        surface: "תְּנֶנָּה",
+        root: "נתן",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // שנה Piel wayyiqtol 3ms + 3ms suffix "and he changed his behavior" (1Sam
+        // 21:14).
+        surface: "וַיְשַׁנּוֹ",
+        root: "שנה",
+        binyan: "Piel",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // III-aleph קרא Qal wayyiqtol 1cs + paragogic he "and I summoned you"
+        // (1Sam 28:15).
+        surface: "וָאֶקְרָאֶה",
+        root: "קרא",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // III-aleph פלא Niphal perfect 3fs "your love was wonderful" (2Sam 1:26).
+        surface: "נִפְלְאַתָה",
+        root: "פלא",
+        binyan: "Niphal",
+        form: "Perfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // III-He עשה Qal imperfect 1cs "what shall I do" (variant of אֶעֱשֶׂה).
+        surface: "אֶעֶשֶׂה",
+        root: "עשה",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // נגש Hophal perfect 3cp "your feet were brought into fetters" (2Sam
+        // 3:34), patah variant of הֻגָּשׁוּ.
+        surface: "הֻגַּשׁוּ",
+        root: "נגש",
+        binyan: "Hophal",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // PeAleph אחז Qal wayyiqtol 3ms holam contraction "and he took hold"
+        // (2Sam 6:6).
+        surface: "וַיֹּאחֶז",
+        root: "אחז",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Geminate קלל Niphal perfect (weqatal) 1cs "and I will be lightly
+        // esteemed" (2Sam 6:22).
+        surface: "וּנְקַלֹּתִי",
+        root: "קלל",
+        binyan: "Niphal",
+        form: "Perfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // III-He עוה Hiphil infinitive construct + 3ms suffix "when he commits
+        // iniquity" (2Sam 7:14), proclitic בְּ.
+        surface: "בְּהַעֲותוֹ",
+        root: "עוה",
+        binyan: "Hiphil",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // III-He נכה Hiphil wayyiqtol 3ms + 3ms suffix "and the one struck the
+        // other" (2Sam 14:6).
+        surface: "וַיַּכּוֹ",
+        root: "נכה",
+        binyan: "Hiphil",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // נשק Qal infinitive construct "to kiss" (2Sam 20:9), proclitic לְ.
+        surface: "לִנְשָׁק",
+        root: "נשק",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // יקע Hiphil perfect (weqatal) 1cp + 3mp suffix "and we will hang them"
+        // (2Sam 21:6).
+        surface: "וְהוֹקַעֲנוּם",
+        root: "יקע",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "1cp",
+    },
+    IrregularVerb {
+        // Geminate ברר Niphal imperfect 2ms "you show yourself pure" (2Sam
+        // 22:27).
+        surface: "תִּתָּבָר",
+        root: "ברר",
+        binyan: "Niphal",
+        form: "Imperfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // Geminate דקק Hiphil imperfect 1cs + 3mp suffix "I beat them small"
+        // (2Sam 22:43).
+        surface: "אֲדִקֵּם",
+        root: "דקק",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // ארך Hiphil perfect (weqatal) 1cs "then I will lengthen your days" (1Kgs
+        // 3:14), patah variant.
+        surface: "וְהַאַרַכְתִּי",
+        root: "ארך",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // III-aleph נשא Qal participle fs construct "carrying (gold)" (1Kgs
+        // 10:22).
+        surface: "נֹשְׂאֵת",
+        root: "נשא",
+        binyan: "Qal",
+        form: "Participle (act.)",
+        pgn: "fs",
+    },
+    IrregularVerb {
+        // III-He צוה Piel imperfect 1cs + 2ms suffix "I will command you" (1Kgs
+        // 11:38), patah variant of אֲצַוֶּךָ.
+        surface: "אֲצַוַּךָ",
+        root: "צוה",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // קשר Qal wayyiqtol 3ms "and he conspired" (1Kgs 15:27), silent-sheva
+        // variant of וַיִּקְשֹׁר.
+        surface: "וַיִּקשֹׁר",
+        root: "קשר",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Reduplicated כול (Pilpel, gold-tagged Piel) perfect 3ms + 3mp suffix
+        // "and he sustained them" (1Kgs 18:4).
+        surface: "וְכִלְכְּלָם",
+        root: "כול",
+        binyan: "Piel",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // עזב Qal infinitive construct + 2mp suffix "when you forsake" (1Kgs
+        // 18:18), proclitic בַּ.
+        surface: "בַּעַזָבְכֶם",
+        root: "עזב",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
