@@ -4832,4 +4832,5 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("אֲלֹהֵי", "אֱלֹהִים", "gods; God; magistrates"),
     ("מִזְרָקות", "מִזְרָק", "bowl"),
     ("חַיָתוֹ", "חַיָּה", "living thing; beast"),
+    ("מוֹסרֵי", "מוֹסֵר", "band; bond"),
 ];

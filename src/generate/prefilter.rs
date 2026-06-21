@@ -89,6 +89,9 @@ const FUNCTION_WORDS: &[&str] = &[
     // אֶתּ — dagesh variant of the object marker/preposition אֶת (Judg 1:19 "with",
     // Song 2:14 object marker), where the following word's loss leaves a dagesh.
     "אֶתּ",
+    // וּמֵאֲחֲרַי — conjunction + "from after me" (מֵאַחֲרַי + extra hataf), the
+    // closed-class compound preposition אַחַר + 1cs suffix (Jer 3:19).
+    "וּמֵאֲחֲרַי",
     "יַעַן",
     "לְמַעַן",
     // particles / negatives / adverbs
