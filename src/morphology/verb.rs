@@ -2132,11 +2132,13 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     Some(hebrew::render(&seq))
                 })
                 .flatten();
-                // Niphal imperfect 3fp/2fp patah-theme twin: tēʾāḵalnâ
-                // (תֵּאָכַלְנָה), tizzāḵarnâ (תִּזָּכַרְנָה) beside the builder's
-                // tsere.
+                // Niphal imperfect/wayyiqtol 3fp/2fp patah-theme twin: tēʾāḵalnâ
+                // (תֵּאָכַלְנָה), tizzāḵarnâ (תִּזָּכַרְנָה), wattippāqaḥnâ
+                // (וַתִּפָּקַחְנָה) beside the builder's tsere. A III-guttural C3
+                // that apply_guttural promoted to a hataf-patah (קֵחֲנָה) takes
+                // its silent sheva back as it closes the syllable (קַחְנָה).
                 let niphal_impf_fp_patah = (binyan == Binyan::Niphal
-                    && matches!(form, Form::Imperfect | Form::Jussive)
+                    && matches!(form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
                     && pgn.gender == Some(Gender::Feminine)
                     && pgn.number == Some(Number::Plural))
                 .then(|| {
@@ -2146,10 +2148,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                         && seq[n - 1].letter == letter::HE
                         && seq[n - 2].letter == letter::NUN
                         && seq[n - 2].vowel == Some(Vowel::Qamats)
-                        && seq[n - 3].vowel == Some(Vowel::Sheva)
+                        && (seq[n - 3].vowel == Some(Vowel::Sheva)
+                            || (hebrew::is_guttural(seq[n - 3].letter)
+                                && seq[n - 3].vowel == Some(Vowel::HatafPatah)))
                         && seq[n - 4].vowel == Some(Vowel::Tsere))
                     .then(|| {
                         seq[n - 4].vowel = Some(Vowel::Patah);
+                        if hebrew::is_guttural(seq[n - 3].letter) {
+                            seq[n - 3].vowel = Some(Vowel::Sheva);
+                        }
                         hebrew::render(&seq)
                     })
                 })
