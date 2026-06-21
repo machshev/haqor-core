@@ -1343,6 +1343,69 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Wayyiqtol",
         pgn: "3ms",
     },
+    IrregularVerb {
+        // נגש Hiphil wayyiqtol 3ms "and he brought (it) near" (Judg 6:19) —
+        // wayyaggaš, patah-theme short form beside the generator's וַיַּגֵּשׁ.
+        surface: "וַיַּגַּשׁ",
+        root: "נגש",
+        binyan: "Hiphil",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // III-He חנה Qal wayyiqtol 3mp + paragogic nun "and they camped (in
+        // Arnon)" (Judg 11:18) — wayyaḥănûn.
+        surface: "וַיַּחֲנון",
+        root: "חנה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // כרע Hiphil perfect 2fs + 1cs suffix "you have brought me very low"
+        // (Judg 11:35, Jephthah's daughter) — hiḵraʿtinî.
+        surface: "הִכְרַעְתִּנִי",
+        root: "כרע",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2fs",
+    },
+    IrregularVerb {
+        // נתן Qal perfect (weqatal) 1cp + 2ms suffix "we will give you (into the
+        // hand of the Philistines)" (Judg 15:13) — ûnᵉṯannûḵā.
+        surface: "וּנְתַנּוּךָ",
+        root: "נתן",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "1cp",
+    },
+    IrregularVerb {
+        // Reduplicated מהה (Hithpalpel, gold-tagged Hithpael) imperative 2mp
+        // "tarry/linger" (Judg 19:8) — wᵉhiṯmahmᵉhû.
+        surface: "וְהִתְמַהְמְהוּ",
+        root: "מהה",
+        binyan: "Hithpael",
+        form: "Imperative",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // Geminate בלל Qal wayyiqtol 3ms "and he gave fodder (to the donkeys)"
+        // (Judg 19:21) — wayyāḇol.
+        surface: "וַיָּבָול",
+        root: "בלל",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // פקד Hithpael wayyiqtol 3mp "and they were mustered" (Judg 20:15) —
+        // wayyiṯpāqᵉḏû.
+        surface: "וַיִּתְפָּקְדוּ",
+        root: "פקד",
+        binyan: "Hithpael",
+        form: "Wayyiqtol",
+        pgn: "3mp",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
