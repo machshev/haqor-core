@@ -66,7 +66,21 @@ pub struct NounInventory {
 /// under o-class segolate bases (קׇדְשׁוֹ), but the WLC text writes a plain
 /// qamats there (קָדְשׁוֹ); collapsing both ends keeps the match exact.
 fn norm_key(s: &str) -> String {
-    s.replace('\u{05C7}', "\u{05B8}")
+    use super::hebrew::Vowel;
+    // A silent sheva on the consonant before a word-final quiescent aleph
+    // (שָׁוְא → שָׁוא) is non-contrastive — the aleph carries no vowel and closes
+    // no syllable. bible.db routinely drops it; fold it out on both index and
+    // lookup so the two spellings share a key.
+    let mut seq = hebrew::parse_pointed(s);
+    if let [.., penult, last] = seq.as_mut_slice()
+        && last.letter == letter::ALEF
+        && last.vowel.is_none()
+        && !last.dagesh
+        && penult.vowel == Some(Vowel::Sheva)
+    {
+        penult.vowel = None;
+    }
+    hebrew::render(&seq).replace('\u{05C7}', "\u{05B8}")
 }
 
 /// Pausal alternant of a dual -ayim ending: the patah of the dual suffix

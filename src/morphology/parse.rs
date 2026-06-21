@@ -196,6 +196,18 @@ pub(crate) fn canonical_key(form: &str) -> String {
         }
         out.push(c);
     }
+    // A silent sheva on the consonant before a word-final quiescent aleph
+    // (שָׁוְא → שָׁוא) is non-contrastive: the aleph carries no vowel and closes
+    // no syllable, so the preceding sheva merely marks the closed syllable.
+    // bible.db routinely drops it; fold it out so both spellings share a key.
+    if let [.., penult, last] = out.as_mut_slice()
+        && last.letter == letter::ALEF
+        && last.vowel.is_none()
+        && !last.dagesh
+        && penult.vowel == Some(Vowel::Sheva)
+    {
+        penult.vowel = None;
+    }
     hebrew::render(&out)
         .chars()
         .filter(|&c| c != '\u{05C1}' && c != '\u{05C2}')
