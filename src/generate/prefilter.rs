@@ -92,6 +92,9 @@ const FUNCTION_WORDS: &[&str] = &[
     // וּמֵאֲחֲרַי — conjunction + "from after me" (מֵאַחֲרַי + extra hataf), the
     // closed-class compound preposition אַחַר + 1cs suffix (Jer 3:19).
     "וּמֵאֲחֲרַי",
+    // לְמַען — defective spelling (no ayin vowel) of the particle לְמַעַן "for the
+    // sake of / in order that" (1Chr 28:8).
+    "לְמַען",
     "יַעַן",
     "לְמַעַן",
     // particles / negatives / adverbs
