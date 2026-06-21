@@ -4400,6 +4400,26 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         })
         .collect();
     forms.extend(ptcp_twins);
+    // Paragogic-he spelling of the 2ms object suffix: the final kaf+qamats of
+    // -ḵā / energic -ekkā also appears with a he mater (-ḵāh / -ekkāh) —
+    // ʾăḇārɛḵkāh (וַאֲבָרֶכְכָה, ברך cohortative+2ms), yimṣāʾekkāh (יִמְצָאֶכָּה).
+    // Mirror every 2ms-suffixed form ending in kaf+qamats with a trailing he.
+    let kah_twins: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| f.object_suffix == Some(OBJ_2MS))
+        .filter_map(|f| {
+            let mut seq = hebrew::parse_pointed(&f.text);
+            let last = *seq.last()?;
+            (last.letter == letter::KAF && last.vowel == Some(Vowel::Qamats)).then(|| {
+                seq.push(Cons::new(letter::HE));
+                VerbForm {
+                    text: hebrew::render(&seq),
+                    ..f.clone()
+                }
+            })
+        })
+        .collect();
+    forms.extend(kah_twins);
 
     Paradigm {
         root: root.clone(),
