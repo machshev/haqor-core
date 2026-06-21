@@ -64,6 +64,17 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // צוה (doubly-weak) Pual perfect 2ms, tsere theme + paragogic he —
+        // ṣuwwêṯâ (צֻוֵּיתָה, Gen 45:19 "you are commanded") — the generator's
+        // tsere-theme alternant (צֻוֵּיתָ) doesn't compose with its paragogic-he
+        // twin, so only צֻוֵּיתָ and צֻוִּיתָה are built.
+        surface: "צֻוֵּיתָה",
+        root: "צוה",
+        binyan: "Pual",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
         // III-aleph Qal perfect (weqatal) 3ms + 3ms suffix with the -āhû link —
         // qᵊrāʾāhû (וּקְרָאָהוּ, קרא "befall", Gen 42:38 "and harm befalls him")
         // — where the generator builds only the -ô 3ms suffix (קְרָאוֹ).
