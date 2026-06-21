@@ -170,6 +170,16 @@ pub(crate) fn canonical_key(form: &str) -> String {
         ) {
             c.dagesh = false;
         }
+        // The MT omits dagesh forte variably on the sonorants ל/מ/נ (GKC §20m):
+        // the generator always doubles a Piel/Pual/Hithpael C2 or a geminate
+        // radical, but the Masoretes sometimes leave it bare — תְּכַלֶנָּה
+        // (Gen 6:16, Piel 2ms+suffix of כלה) for the regular תְּכַלֶּנָּה. A
+        // forte dagesh on these letters is thus non-contrastive for the verb
+        // index; fold it out so the marked and bare spellings share a key.
+        // (Resh, just above, is the same phenomenon — already folded there.)
+        if matches!(c.letter, letter::LAMED | letter::MEM | letter::NUN) {
+            c.dagesh = false;
+        }
         // A guttural's hataf colour (hataf-patah / -segol / -qamats) is
         // phonologically conditioned, not lexically contrastive: the generator
         // writes one (the III-He inf-construct of היה comes out הֲיוֹת with
