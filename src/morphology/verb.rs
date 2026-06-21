@@ -11913,13 +11913,6 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
     } else {
         vec![Sheva, Segol]
     };
-    // A doubled stem (Piel/Pual/Hithpael — C2 carries the forte dagesh) keeps
-    // its underlying tsere theme before a suffix even when the bare III-guttural
-    // form lowered it to patah: yᵊšallēḥăḵā (אֲשַׁלֵּחֲךָ, שלח Piel + 2ms),
-    // beside the reduced yᵊšallᵊḥăḵā.
-    if seq[n - 2].dagesh {
-        themes.push(Tsere);
-    }
     // A I-aleph host whose quiescent aleph precedes the theme consonant
     // (tōʾḵal תֹּאכַל) reduces that theme to a hataf-patah under the suffix
     // (even on a non-guttural): tōʾḵălennû תֹּאכֲלֶנּוּ.
@@ -12070,6 +12063,22 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
         s.push(ocv(letter::NUN, Hiriq));
         s.push(Cons::new(letter::YOD));
         out.push((OBJ_1CS, hebrew::render(&s)));
+    }
+    // A doubled stem (Piel/Pual/Hithpael — C2 forte) keeps its underlying tsere
+    // theme before the 2ms suffix even when the bare III-guttural form lowered
+    // it to patah: yᵊšallēḥăḵā (אֲשַׁלֵּחֲךָ, שלח Piel + 2ms). Scoped to the 2ms
+    // suffix alone — the other suffixes already emit the right grade — so it
+    // adds just one form per doubled-stem host, not one per suffix.
+    if seq[n - 2].dagesh && !long_mater {
+        let mut s = seq.clone();
+        s[n - 2].vowel = Some(Tsere);
+        s[n - 1].vowel = Some(if hebrew::is_guttural(seq[n - 1].letter) {
+            HatafPatah
+        } else {
+            Sheva
+        });
+        s.push(ocv(letter::KAF, Qamats));
+        out.push((OBJ_2MS, hebrew::render(&s)));
     }
     out
 }
