@@ -12021,6 +12021,18 @@ fn imperfect_object_suffixes(base_text: &str, _root: &Root) -> Vec<(Pgn, String)
         s.push(Cons::new(letter::YOD));
         out.push((OBJ_1CS, hebrew::render(&s)));
     }
+    // An a-theme/stative host (C2 patah, lengthened to qamats in the open
+    // syllable before the suffix) also links the plain 1cs with a patah — the
+    // -anî beside the regular -ēnî: yiḏbāqanî (תִּדְבָּקַנִי, דבק 3fs+1cs,
+    // Gen 19:19), yeʾĕhāḇanî (יֶאֱהָבַנִי, אהב). Only the qamats theme carries it.
+    if c2_patah && !long_mater {
+        let mut s = seq.clone();
+        s[n - 2].vowel = Some(Qamats);
+        s[n - 1].vowel = Some(Patah);
+        s.push(ocv(letter::NUN, Hiriq));
+        s.push(Cons::new(letter::YOD));
+        out.push((OBJ_1CS, hebrew::render(&s)));
+    }
     out
 }
 
