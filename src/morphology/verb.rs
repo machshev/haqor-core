@@ -4098,6 +4098,48 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(imv_paragogic);
 
+    // He-less -nâ spelling of the fp afformative, as a post-pass over EVERY
+    // finished fp imperfect/jussive/wayyiqtol form: the per-cell twin only sees
+    // the primary (e.g. segol תֵּלֶדְנָה), so the patah twin תֵּלַדְנָה never
+    // yielded its contracted תֵּלַדְןָ (וַתֵּלַדְןָ). Re-apply over all forms.
+    let fp_heless: Vec<VerbForm> = forms
+        .iter()
+        .filter(|f| {
+            matches!(f.form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+                && f.pgn.number == Some(Number::Plural)
+                && f.pgn.gender == Some(Gender::Feminine)
+                && f.object_suffix.is_none()
+        })
+        .filter_map(|f| {
+            fp_nah_heless_variant(&f.text).map(|t| VerbForm {
+                text: t,
+                ..f.clone()
+            })
+        })
+        .collect();
+    forms.extend(fp_heless);
+
+    // III-He fp imperfect/jussive/wayyiqtol defective -еnâ (drop the plene yod):
+    // post-pass so it sees every prefix-grade twin (וַתַּעֲלֶנָה, וַתִּדְלֶנָה).
+    if root.lamed() == letter::HE {
+        let fp_defective: Vec<VerbForm> = forms
+            .iter()
+            .filter(|f| {
+                matches!(f.form, Form::Imperfect | Form::Jussive | Form::Wayyiqtol)
+                    && f.pgn.number == Some(Number::Plural)
+                    && f.pgn.gender == Some(Gender::Feminine)
+                    && f.object_suffix.is_none()
+            })
+            .filter_map(|f| {
+                lamed_he_imperfect_fp_defective_variant(&f.text).map(|t| VerbForm {
+                    text: t,
+                    ..f.clone()
+                })
+            })
+            .collect();
+        forms.extend(fp_defective);
+    }
+
     // III-He perfect 3fs apocopated -āṯ twin (הָגְלָת beside הׇגְלָתָה).
     if root.lamed() == letter::HE {
         let apoc_3fs: Vec<VerbForm> = forms
@@ -13530,6 +13572,28 @@ fn lamed_he_imperfect_fp_short_variant(text: &str) -> Option<String> {
         return None;
     }
     Some(hebrew::render(&seq[..n - 1]))
+}
+
+/// Defective twin of the III-He imperfect/jussive/wayyiqtol 3fp/2fp -еynâ: the
+/// plene yod mater is dropped, leaving the segol + -nâ — taʕăleynâ תַּעֲלֶינָה →
+/// taʕălenâ תַּעֲלֶנָה (וַתַּעֲלֶנָה, וַתִּדְלֶנָה). canonical_key does not fold
+/// segol-yod, so the defective spelling is a genuinely distinct form.
+fn lamed_he_imperfect_fp_defective_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let n = seq.len();
+    if n < 5
+        || seq[n - 1].letter != letter::HE
+        || seq[n - 1].vowel.is_some()
+        || seq[n - 2].letter != letter::NUN
+        || seq[n - 2].vowel != Some(Vowel::Qamats)
+        || seq[n - 3].letter != letter::YOD
+        || seq[n - 3].vowel.is_some()
+        || !matches!(seq[n - 4].vowel, Some(Vowel::Segol | Vowel::Tsere))
+    {
+        return None;
+    }
+    seq.remove(n - 3); // drop the plene yod
+    Some(hebrew::render(&seq))
 }
 
 /// He-less spelling of the 3fp/2fp -nâ afformative: the final he is dropped and
