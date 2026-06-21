@@ -150,6 +150,9 @@ pub const IRREGULAR_NOUNS: &[IrregularNoun] = &[
             // Defective spelling of "his son" (בְּנוֹ), vocal sheva under the
             // bet omitted (Gen 25:6).
             "בּנוֹ",
+            // Defective spelling of "my son" (בְּנִי), nun pointed with sheva
+            // rather than hiriq (Gen 38:11).
+            "בְנְי",
             "בְּנֵי",
             "בֶּן",
             "בְנֵי",
