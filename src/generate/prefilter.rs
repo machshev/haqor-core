@@ -95,6 +95,9 @@ const FUNCTION_WORDS: &[&str] = &[
     // לְמַען — defective spelling (no ayin vowel) of the particle לְמַעַן "for the
     // sake of / in order that" (1Chr 28:8).
     "לְמַען",
+    // יְהִוה — a hiriq-pointed variant of the Tetragrammaton (closed-class divine
+    // name, never a verb).
+    "יְהִוה",
     "יַעַן",
     "לְמַעַן",
     // particles / negatives / adverbs

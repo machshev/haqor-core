@@ -4839,4 +4839,5 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("נָסֵבָּה", "נְסִבָּה", "environment; circumstance; turn of affairs"),
     ("רְכֻּלָּתְךָ", "רְכֻלָּה", "trade"),
     ("מִזְבֵחַ", "מִזְבֵּחַ", "altar"),
+    ("אֲדנָי", "אָדוֹן", "sovereign; controller"),
 ];
