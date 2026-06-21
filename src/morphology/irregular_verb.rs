@@ -53,6 +53,17 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "3cp",
     },
     IrregularVerb {
+        // I-guttural Qal cohortative 1cs with the "loud" a-grade — patah prefix
+        // and a full patah on the guttural C1 (ʾahargâ) where the generator
+        // builds the segol/hataf grades (אֶהֶרְגָה). Gen 27:41 (Esau, "and I
+        // will slay my brother Jacob"). The bible.db token carries the וְ.
+        surface: "וְאַהַרְגָה",
+        root: "הרג",
+        binyan: "Qal",
+        form: "Cohortative",
+        pgn: "1cs",
+    },
+    IrregularVerb {
         // מול "circumcise" inflects its Niphal geminate-style — a doubled C1
         // mem with holam after the hiriq prefix (nimmōl) — where the hollow
         // generator builds נָמֹל. Perfect 3cp נִמֹּלוּ (Gen 17:27).
