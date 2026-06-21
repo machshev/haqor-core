@@ -64,6 +64,16 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // III-He Piel perfect 3ms + 1cs suffix of נשה "forget" — naššanî
+        // (נַשַּׁנִי, Gen 41:51, the Manasseh etymology "God has made me forget")
+        // — a III-He derived-perfect + object suffix the generator doesn't build.
+        surface: "נַשַּׁנִי",
+        root: "נשה",
+        binyan: "Piel",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
         // I-guttural Qal wayyiqtol with a SILENT sheva closing the prefix
         // syllable, where apply_guttural writes the vocal hataf-patah —
         // wayyaʿḇōr (וַיַּעְבֹר, עבר, Gen 41:46 "and he passed through") for
