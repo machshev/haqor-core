@@ -64,6 +64,16 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // III-aleph Qal perfect (weqatal) 3ms + 3ms suffix with the -āhû link —
+        // qᵊrāʾāhû (וּקְרָאָהוּ, קרא "befall", Gen 42:38 "and harm befalls him")
+        // — where the generator builds only the -ô 3ms suffix (קְרָאוֹ).
+        surface: "וּקְרָאָהוּ",
+        root: "קרא",
+        binyan: "Qal",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
         // III-He Piel perfect 3ms + 1cs suffix of נשה "forget" — naššanî
         // (נַשַּׁנִי, Gen 41:51, the Manasseh etymology "God has made me forget")
         // — a III-He derived-perfect + object suffix the generator doesn't build.
