@@ -1794,6 +1794,185 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Wayyiqtol",
         pgn: "3ms",
     },
+    // ── Isaiah tail (gold-precise, OSHB) ──
+    IrregularVerb {
+        // עכס Piel imperfect 3fp "making a tinkling with their feet" (Isa 3:16).
+        surface: "תְּעַכַּסְנָה",
+        root: "עכס",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "3fp",
+    },
+    IrregularVerb {
+        // Hollow חוש Hiphil imperfect 3ms + paragogic he "let him hasten his work"
+        // (Isa 5:19).
+        surface: "יָחִישָׁה",
+        root: "חוש",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // III-He גבה Hiphil infinitive absolute "make it deep" (Isa 7:11).
+        surface: "הַגְבֵּהַּ",
+        root: "גבה",
+        binyan: "Hiphil",
+        form: "Inf. Absolute",
+        pgn: "",
+    },
+    IrregularVerb {
+        // PeAleph אחז Qal imperfect 3mp + paragogic nun "they will be seized"
+        // (Isa 13:8), holam contraction.
+        surface: "יֹאחֵזוּן",
+        root: "אחז",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // III-He נגה Hiphil imperfect 3ms "(the moon) will not shed its light"
+        // (Isa 13:10).
+        surface: "יַגִּיהַ",
+        root: "נגה",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // רטש Piel imperfect 3fp "will dash the young to pieces" (Isa 13:18).
+        surface: "תְּרַטַּשְׁנָה",
+        root: "רטש",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "3fp",
+    },
+    IrregularVerb {
+        // זנח Hiphil perfect (weqatal) 3cp "and the rivers will become foul" (Isa
+        // 19:6).
+        surface: "וְהֶאֶזְנִיחוּ",
+        root: "זנח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // סחר Qal participle mp construct + 3fs suffix "her merchants" (Isa 23:8).
+        surface: "סֹחֲרֶיה",
+        root: "סחר",
+        binyan: "Qal",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
+        // כבד Niphal participle mp construct "the honoured of the earth" (Isa
+        // 23:8), dagesh-less variant of נִכְבַּדֵּי.
+        surface: "נִכְבַדֵּי",
+        root: "כבד",
+        binyan: "Niphal",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
+        // עבר Qal imperative 2fs "pass over to Tarshish" (Isa 23:12).
+        surface: "עֲבֹרִי",
+        root: "עבר",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2fs",
+    },
+    IrregularVerb {
+        // III-He קוה Piel perfect 1cp + 2ms suffix "we have waited for you" (Isa
+        // 26:8).
+        surface: "קִוִּינוּךָ",
+        root: "קוה",
+        binyan: "Piel",
+        form: "Perfect",
+        pgn: "1cp",
+    },
+    IrregularVerb {
+        // שׂדד Piel imperfect 3ms "(does he) harrow his ground" (Isa 28:24).
+        surface: "וִיַשַׂדֵּד",
+        root: "שדד",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // III-He תמה Qal imperative 2mp "be amazed and wonder" (Isa 29:9).
+        surface: "וּתְמָהוּ",
+        root: "תמה",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // יקש Qal imperfect 3mp + paragogic nun "they lay a snare" (Isa 29:21).
+        surface: "יְקֹשׁוּן",
+        root: "יקש",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // בטח Qal participle fp absolute "you complacent women" (Isa 32:9),
+        // sheva-less variant.
+        surface: "בֹּטחוֹת",
+        root: "בטח",
+        binyan: "Qal",
+        form: "Participle (act.)",
+        pgn: "fp",
+    },
+    IrregularVerb {
+        // אכל Qal imperfect 3fs + 2mp suffix "your breath shall devour you" (Isa
+        // 33:11).
+        surface: "תֹּאכַלְכֶם",
+        root: "אכל",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // שלך Hophal imperfect 3mp "their slain shall be cast out" (Isa 34:3).
+        surface: "יֻשְׁלָכוּ",
+        root: "שלך",
+        binyan: "Hophal",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // III-aleph קרא Qal imperative 2mp "seek and read" (Isa 34:16).
+        surface: "וּקְרָאוּ",
+        root: "קרא",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // Hollow שׂושׂ Qal imperfect 3mp + 3mp suffix "the desert shall be glad
+        // for them" (Isa 35:1).
+        surface: "יְשֻׂשׂוּם",
+        root: "שוש",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // מהר Niphal participle mp construct "to the anxious of heart" (Isa
+        // 35:4), proclitic לְ.
+        surface: "לְנִמְהֲרֵי",
+        root: "מהר",
+        binyan: "Niphal",
+        form: "Participle (act.)",
+        pgn: "mp",
+    },
+    IrregularVerb {
+        // ישע Hiphil imperfect 3ms + 2mp suffix "he will save you" (Isa 35:4).
+        surface: "וְיֹשַׁעֲכֶם",
+        root: "ישע",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
