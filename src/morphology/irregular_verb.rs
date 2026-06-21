@@ -1020,6 +1020,221 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Inf. Construct",
         pgn: "",
     },
+    IrregularVerb {
+        // Geminate מקק Niphal imperfect 3mp "they shall rot away (in their
+        // iniquity)" (Lev 26:39) — yimmaqqû.
+        surface: "יִמָּקּוּ",
+        root: "מקק",
+        binyan: "Niphal",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // נפל Hiphil infinitive construct "to make (the thigh) fall away" (Num
+        // 5:22), proclitics וְ + לַ — wᵉlanpil.
+        surface: "וְלַנְפִּל",
+        root: "נפל",
+        binyan: "Hiphil",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // טהר Hithpael perfect (weqatal) 3cp "and let them purify themselves"
+        // (Num 8:7) — wᵉhiṭṭehārû, segol-theme variant of וְהִטַּהֲרוּ.
+        surface: "וְהִטֶּהָרוּ",
+        root: "טהר",
+        binyan: "Hithpael",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // אצל Qal wayyiqtol 3ms "and he reserved/withdrew (of the spirit)" (Num
+        // 11:25) — wayyāʾṣel.
+        surface: "וַיָּאצֶל",
+        root: "אצל",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // נאץ Piel imperfect 3mp + 1cs suffix "how long will they spurn me" (Num
+        // 14:11) — yᵉnaʾăṣunî.
+        surface: "יְנַאֲצֻנִי",
+        root: "נאץ",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "3mp",
+    },
+    IrregularVerb {
+        // III-He כלה Piel 1cs "that I may consume them" (Num 16:21 / 17:10) —
+        // wāʾăḵalleh, patah-aleph variant; the consonantal form is a homograph
+        // between the imperfect and the cohortative, so both are listed.
+        surface: "וַאַכַלֶּה",
+        root: "כלה",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        surface: "וַאַכַלֶּה",
+        root: "כלה",
+        binyan: "Piel",
+        form: "Cohortative",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        // Hollow גוע Qal infinitive construct "to perish" (Num 17:28), proclitic
+        // לְ — liḡwōaʿ.
+        surface: "לִגְועַ",
+        root: "גוע",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // III-He פדה Qal passive participle ms construct + 3ms suffix "those of it
+        // to be redeemed" (Num 18:16) — pᵉḏûyāw.
+        surface: "וּפְדוּיָו",
+        root: "פדה",
+        binyan: "Qal",
+        form: "Participle (pass.)",
+        pgn: "ms",
+    },
+    IrregularVerb {
+        // ראה Qal wayyiqtol 3fs + 1cs suffix "and she (the donkey) saw me" (Num
+        // 22:33) — wattirʾanî.
+        surface: "וַתִּרְאַנִי",
+        root: "ראה",
+        binyan: "Qal",
+        form: "Wayyiqtol",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // III-aleph נשא Hithpael imperfect 3fs "and his kingdom shall be exalted"
+        // (Num 24:7) — wᵉṯinnaśśēʾ.
+        surface: "וְתִנַּשֵּׂא",
+        root: "נשא",
+        binyan: "Hithpael",
+        form: "Imperfect",
+        pgn: "3fs",
+    },
+    IrregularVerb {
+        // Geminate פרר Hiphil imperfect 3ms + 3ms suffix "if her husband annuls
+        // it" (Num 30:14) — yᵉp̄ērennû.
+        surface: "יְפֵרֶנּוּ",
+        root: "פרר",
+        binyan: "Hiphil",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // Hollow בוא Hiphil perfect 1cp + 3mp suffix "until we have brought them"
+        // (Num 32:17) — hăḇîʾōnum.
+        surface: "הֲבִיאֹנֻם",
+        root: "בוא",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "1cp",
+    },
+    IrregularVerb {
+        // אחז Niphal perfect (weqatal) 3cp "and they shall take possession" (Num
+        // 32:30) — wᵉnōʾăḥăzû.
+        surface: "וְנֹאחֲזוּ",
+        root: "אחז",
+        binyan: "Niphal",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // נחל Hithpael imperfect 2mp "you shall divide it as inheritance" (Num
+        // 33:54) — tiṯneḥālû, segol-theme variant of תִּתְנַחֲלוּ.
+        surface: "תִּתְנֶחָלוּ",
+        root: "נחל",
+        binyan: "Hithpael",
+        form: "Imperfect",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // ראה Hiphil perfect 3ms + 2ms suffix "he showed you (his great fire)"
+        // (Deut 4:36) — herʾăḵā.
+        surface: "הֶרְאֲךָ",
+        root: "ראה",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // שמר Qal infinitive construct + 3ms suffix "and because of his keeping
+        // (the oath)" (Deut 7:8), proclitics וּ + מִ — ûmiššomrô.
+        surface: "וּמִשָּׁמְרו",
+        root: "שמר",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // Hollow שׂים Qal imperfect 3ms + 3mp suffix "he will lay them (on those
+        // who hate you)" (Deut 7:15) — yᵉśîmām.
+        surface: "יְשִׂימָם",
+        root: "שים",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // אבד Hiphil perfect (weqatal) 2ms + 3mp suffix "and you shall destroy
+        // them" (Deut 9:3) — wᵉhaʾăḇaḏtām.
+        surface: "וְהַאַבַדְתָּם",
+        root: "אבד",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // קרב Qal infinitive construct + 2mp suffix "when you draw near to the
+        // battle" (Deut 20:2), proclitic כְּ — kᵉqorbᵉḵem.
+        surface: "כְּקָרָבְכֶם",
+        root: "קרב",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        // יסר Piel perfect (weqatal) 3cp "and they chastise him" (Deut 21:18) —
+        // wᵉyissᵉrû, reduced-sheva variant of וְיִסְּרוּ.
+        surface: "וְיסְּרוּ",
+        root: "יסר",
+        binyan: "Piel",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        // III-aleph יצא Hiphil perfect (weqatal) 2mp "and you shall bring them
+        // out" (Deut 22:24) — wᵉhôṣēʾṯem.
+        surface: "וְהוֹצֵאתֶם",
+        root: "יצא",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        // פאר Piel imperfect 2ms "you shall not go over the boughs again" (Deut
+        // 24:20) — tᵉp̄āʾēr.
+        surface: "תְפַאֵר",
+        root: "פאר",
+        binyan: "Piel",
+        form: "Imperfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        // Hollow דושׁ Qal infinitive construct + 3ms suffix "while it treads out
+        // the grain" (Deut 25:4), proclitic בְּ — bᵉḏîšô.
+        surface: "בְּדִישׁוֹ",
+        root: "דוש",
+        binyan: "Qal",
+        form: "Inf. Construct",
+        pgn: "",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
