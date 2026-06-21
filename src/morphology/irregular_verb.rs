@@ -2311,6 +2311,14 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
     // Hithpael with the prefix-ת assimilated into the dageshed C1 (תִּתְכַּסֶּה →
     // תִּכַּסֶּה), Prov 26:26 "hatred covers itself".
     IrregularVerb { surface: "תִּכַּסֶּה", root: "כסה", binyan: "Hithpael", form: "Imperfect", pgn: "3fs" },
+    // III-He רבה Piel imperative 2ms "increase your army" (Judg 9:29).
+    IrregularVerb { surface: "רַבֶּה", root: "רבה", binyan: "Piel", form: "Imperative", pgn: "2ms" },
+    // III-He רדה Hiphil imperfect 3ms, apocopated "he subdues nations" (Isa 41:2).
+    IrregularVerb { surface: "יַרְדְּ", root: "רדה", binyan: "Hiphil", form: "Imperfect", pgn: "3ms" },
+    // III-aleph שׁנא "change" Qal imperfect 3ms "the fine gold is changed" (Lam 4:1).
+    IrregularVerb { surface: "יִשְׁנֶא", root: "שנא", binyan: "Qal", form: "Imperfect", pgn: "3ms" },
+    // שׁנא "change" Pual imperfect 3ms "the boldness of his face is changed" (Eccl 8:1).
+    IrregularVerb { surface: "יְשֻׁנֶּא", root: "שנא", binyan: "Pual", form: "Imperfect", pgn: "3ms" },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
