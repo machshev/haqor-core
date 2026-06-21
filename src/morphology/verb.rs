@@ -10688,7 +10688,21 @@ fn derived_perfect_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
                     &[ocv(letter::KAF, Segol), Cons::new(letter::MEM)],
                 ),
             ), // -ᵊḵem
+            // Segol-link 2ms -eḵā: a guttural C2 keeps its hataf and the link
+            // vowel surfaces as segol — riḥămeḵā רִחֲמֶךָ, šērešeḵā.
+            (
+                OBJ_2MS,
+                build(reduced, Some(Segol), &[ocv(letter::KAF, Qamats)]),
+            ), // -eḵā
         ]);
+    }
+    // Segol-theme 2ms: the Piel tsere theme half-opens to segol before -ḵā
+    // (qibbeṣḵā קִבֶּצְךָ, šērešḵā שֵׁרֶשְׁךָ) when C2 is not a guttural.
+    if !hebrew::is_guttural(seq[n - 2].letter) {
+        out.push((
+            OBJ_2MS,
+            build(Segol, Some(Sheva), &[ocv(letter::KAF, Qamats)]),
+        ));
     }
     // The sheva-link 2ms/2mp also keep a full patah theme: bēraḵḵā בֵּרַכְךָ.
     out.push((
@@ -11047,9 +11061,14 @@ fn perfect_subject_object_suffixes(
         // derive the host straight from the 3fs text: drop its final -â (the
         // qamats sits on the last radical, then a he mater), re-point that
         // radical, and attach the afformative tav + suffix.
-        if binyan == Binyan::Hiphil
-            && !matches!(c3, letter::HE | letter::VAV | letter::YOD)
+        if matches!(
+            binyan,
+            Binyan::Hiphil | Binyan::Piel | Binyan::Pual | Binyan::Hithpael
+        ) && !matches!(c3, letter::HE | letter::VAV | letter::YOD)
         {
+            // Derive the suffix host straight from the 3fs base (drop its final
+            // -â, restore the -aṯ afformative): heqṭîlaṯ- (Hiphil) and qiṭṭᵊlaṯ-
+            // (Piel/Pual/Hithpael — ḥillᵊqaṯtāh חִלְּקַתָּה, biʕăṯaṯnî בִּעֲתָתְנִי).
             let mut prefix = hebrew::parse_pointed(base_text);
             if prefix.last().map(|c| c.letter) == Some(letter::HE) {
                 prefix.pop();
