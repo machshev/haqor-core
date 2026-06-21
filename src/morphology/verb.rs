@@ -1900,6 +1900,15 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                 let iguttural_hophal_loud_tsere = lamed_he_hophal_perf_tsere
                     .as_deref()
                     .and_then(iguttural_hophal_loud_preformative_variant);
+                // The same I-guttural Hophal, holam-prefix + hataf-patah grade
+                // (hoʕălâ הֹעֲלָה), built from the primary and the III-He tsere.
+                let iguttural_hophal_holam = (binyan == Binyan::Hophal
+                    && root.has(Gizra::PeGuttural))
+                .then(|| iguttural_hophal_holam_variant(&text))
+                .flatten();
+                let iguttural_hophal_holam_tsere = lamed_he_hophal_perf_tsere
+                    .as_deref()
+                    .and_then(iguttural_hophal_holam_variant);
                 // I-guttural Niphal he-prefix compensatory-lengthening twin: in
                 // the he-prefixed imperative / infinitive the C1 ayin/het reject
                 // the doubling and — unlike the doubling binyanim's virtual
@@ -3370,6 +3379,8 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_he_hophal_perf_tsere,
                     iguttural_hophal_loud,
                     iguttural_hophal_loud_tsere,
+                    iguttural_hophal_holam,
+                    iguttural_hophal_holam_tsere,
                     niphal_iguttural_he_tsere,
                     ptcp_fs_unreduced_a,
                     hiphil_iguttural_imp_segol,
@@ -9761,6 +9772,26 @@ fn iguttural_hophal_loud_preformative_variant(text: &str) -> Option<String> {
     }
     seq[0].vowel = Some(Vowel::Qamats);
     seq[1].vowel = Some(Vowel::HatafQamats);
+    Some(hebrew::render(&seq))
+}
+
+/// Holam-prefix twin of an I-guttural Hophal: beside the qamats-qatan/hataf-
+/// qamats loud grade (הָעֳלָה) the prefix is also spelled with a plain holam and
+/// the guttural C1 takes a hataf-patah — hoʕălâ (הֹעֲלָה). canonical_key folds
+/// qamats-qatan→qamats but NOT holam, so this spelling is a genuine separate
+/// form. Promotes seq[0]'s qamats-qatan → holam and the guttural's silent sheva
+/// → hataf-patah. Additive.
+fn iguttural_hophal_holam_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    if seq.len() < 2
+        || seq[0].vowel != Some(Vowel::QamatsQatan)
+        || !hebrew::is_guttural(seq[1].letter)
+        || seq[1].vowel != Some(Vowel::Sheva)
+    {
+        return None;
+    }
+    seq[0].vowel = Some(Vowel::Holam);
+    seq[1].vowel = Some(Vowel::HatafPatah);
     Some(hebrew::render(&seq))
 }
 
