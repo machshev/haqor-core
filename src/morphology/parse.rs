@@ -195,16 +195,17 @@ pub(crate) fn canonical_key(form: &str) -> String {
         {
             c.vowel = Some(Vowel::HatafPatah);
         }
-        // A resh is a half-guttural: it normally takes a plain vocal sheva (the
-        // generator writes one — נִבְרְכוּ), but the Masoretes often colour it as
-        // a hataf (נִבְרֲכוּ, the Niphal perfect 3cp of ברך, Gen 12:3). The hataf
-        // is non-contrastive on a resh, so fold it back to a sheva to match.
-        if c.letter == letter::RESH
-            && matches!(
-                c.vowel,
-                Some(Vowel::HatafPatah | Vowel::HatafSegol | Vowel::HatafQamats)
-            )
-        {
+        // A hataf vowel on a NON-guttural consonant is a Masoretic colouring of
+        // an ordinary vocal sheva — the generator only ever writes hatafs on
+        // gutturals (via apply_guttural), so on any other letter the hataf is
+        // non-contrastive. Fold it back to a sheva: a half-guttural resh
+        // (נִבְרֲכוּ ← נִבְרְכוּ), a geminate C2 (גֹּזֲזֵי ← גֹּזְזֵי), the
+        // consonant before a -ḵā suffix (מַדְרִיכֲךָ), etc. Symmetric, so it only
+        // ever adds matches.
+        else if matches!(
+            c.vowel,
+            Some(Vowel::HatafPatah | Vowel::HatafSegol | Vowel::HatafQamats)
+        ) {
             c.vowel = Some(Vowel::Sheva);
         }
         if c.letter == letter::YOD
