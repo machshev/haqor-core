@@ -75,6 +75,9 @@ const FUNCTION_WORDS: &[&str] = &[
     "עַד",
     "אַחַר",
     "אַחֲרֵי",
+    // bible.db variant with a full patah on the guttural het (אַחַרֵי) beside
+    // the hataf-patah headword above.
+    "אַחַרֵי",
     "בֵּין",
     "תַּחַת",
     "נֶגֶד",
