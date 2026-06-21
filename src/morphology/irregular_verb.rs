@@ -64,6 +64,16 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // לקח (irregular pe-lamed) Qal imperative 2ms + 3mp suffix — qāḥem
+        // (קָחֶם, Gen 48:9 "take them"); the generator builds the imperfect
+        // hosts but not the bare imperative qaḥ + object suffix.
+        surface: "קָחֶם",
+        root: "לקח",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2ms",
+    },
+    IrregularVerb {
         // צוה (doubly-weak) Pual perfect 2ms, tsere theme + paragogic he —
         // ṣuwwêṯâ (צֻוֵּיתָה, Gen 45:19 "you are commanded") — the generator's
         // tsere-theme alternant (צֻוֵּיתָ) doesn't compose with its paragogic-he
