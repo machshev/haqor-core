@@ -4850,7 +4850,7 @@ fn lamed_he_participle_fs_construct_variant(text: &str) -> Option<String> {
 /// (qiṭlû/qiṭlî) gives C2 a silent sheva that closes the C1 syllable — but a
 /// guttural C2 opens with a hataf-patah instead, and the C1 hiriq harmonises
 /// to patah: ziʿqû זִעְקוּ → zaʿăqû זַעֲקוּ. Caller gates to (Qal, Imperative,
-/// AyinGuttural, 2fs|2mp); additive. C1 is seq[0] and the guttural C2 seq[1]
+/// AyinGuttural, 2fs|2mp); additive. C1 is seq\[0\] and the guttural C2 seq\[1\]
 /// (no prefix in the Qal imperative).
 fn qal_imperative_ayin_guttural_a_variant(root: &Root, text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
@@ -8763,8 +8763,8 @@ fn iguttural_reduced_plural_variant(text: &str) -> Option<String> {
 /// the generator emits the over-vocalised segol-on-guttural shape (yeḥerᵊḏû
 /// יֶחֶרְדוּ), but the attested reduced plural closes the segol prefix on the
 /// guttural with either a silent sheva (yeḥrᵊḏû יֶחְרְדוּ, חרד/חמר) or a
-/// hataf-segol (yeḥĕzᵊqû יֶחֱזְקוּ, חזק). Detects [pre-segol][guttural-segol]
-/// [C-sheva] and returns both grades. Additive; the over-vocalised base stays.
+/// hataf-segol (yeḥĕzᵊqû יֶחֱזְקוּ, חזק). Detects \[pre-segol\]\[guttural-segol\]
+/// \[C-sheva\] and returns both grades. Additive; the over-vocalised base stays.
 fn iguttural_segol_plural_reduced_grades(text: &str) -> Vec<String> {
     let seq = hebrew::parse_pointed(text);
     if seq.len() < 3
@@ -9808,7 +9808,7 @@ fn guttural_silent_sheva_variant(text: &str) -> Option<String> {
 /// prefix syllable on a qamats-qatan with the guttural C1 taking a silent sheva
 /// (hoḥlêṯî הׇחְלֵיתִי). A I-guttural cannot carry silent sheva comfortably, so
 /// the Masoretes open the prefix on a full qamats and give the guttural a
-/// hataf-qamats — hoḥŏlêṯî הָחֳלֵיתִי, hoʕŏmaḏ הָעֳמַד. Promotes seq[0]'s
+/// hataf-qamats — hoḥŏlêṯî הָחֳלֵיתִי, hoʕŏmaḏ הָעֳמַד. Promotes seq\[0\]'s
 /// qamats-qatan → qamats and the C1 guttural's silent sheva → hataf-qamats.
 /// Additive.
 /// I-guttural Hophal imperfect object-suffix host in its loud (compensatory)
@@ -9852,7 +9852,7 @@ fn iguttural_hophal_loud_preformative_variant(text: &str) -> Option<String> {
 /// qamats loud grade (הָעֳלָה) the prefix is also spelled with a plain holam and
 /// the guttural C1 takes a hataf-patah — hoʕălâ (הֹעֲלָה). canonical_key folds
 /// qamats-qatan→qamats but NOT holam, so this spelling is a genuine separate
-/// form. Promotes seq[0]'s qamats-qatan → holam and the guttural's silent sheva
+/// form. Promotes seq\[0\]'s qamats-qatan → holam and the guttural's silent sheva
 /// → hataf-patah. Additive.
 fn iguttural_hophal_holam_variant(text: &str) -> Option<String> {
     let mut seq = hebrew::parse_pointed(text);
@@ -9959,7 +9959,7 @@ fn guttural_perfect_patah_variant(text: &str) -> Option<String> {
 /// with a short a-class vowel (patah or qamats) that should also get a tsere
 /// variant. Returns the tsere twin or None.
 /// Holam-contraction twin for a I-aleph Qal imperfect-family form of a root
-/// outside [`YO_ROOTS`] but which nonetheless admits the contracted yōʔ- pattern
+/// outside `YO_ROOTS` but which nonetheless admits the contracted yōʔ- pattern
 /// in attested usage — yeʔĕḥōz (יֶאֱחֹז) beside yōʔḥēz (יֹאחֵז), wayyeʾeḥᵊzû
 /// (וַיֶּאֶחְזוּ) beside wayyōʾḥăzû (וַיֹּאחֲזוּ). The default is the regular
 /// I-guttural segol class; this twin contracts it: the prefix segol/patah → holam,
