@@ -45,6 +45,10 @@ use super::root::Root;
 use super::verb::{Binyan, Form, Paradigm, Pgn, generate_paradigm, host_object_suffixes};
 use super::{Gender, Number, Person};
 
+/// Dedup key for object-suffix verb matches: root, binyan, form, host PGN,
+/// optional object-suffix PGN, strip length, and a flag distinguishing variants.
+type ObjSuffixSeen = HashSet<([char; 3], Binyan, Form, Pgn, Option<Pgn>, usize, bool)>;
+
 /// Weak letters that may be a radical hidden from the surface form: an
 /// assimilated I-Nun, an elided I-Yod/Vav, the dropped middle radical of a
 /// hollow root, an apocopated III-He, or a quiescent III/I-Aleph.
@@ -746,7 +750,7 @@ fn object_suffix_fallback(
     seq: &[Cons],
     roots: Option<&HashSet<[char; 3]>>,
     matches: &mut Vec<VerbMatch>,
-    seen: &mut HashSet<([char; 3], Binyan, Form, Pgn, Option<Pgn>, usize, bool)>,
+    seen: &mut ObjSuffixSeen,
 ) {
     let max_strip = 2usize.min(seq.len().saturating_sub(2));
     let mut memo: HashMap<[char; 3], Paradigm> = HashMap::new();
@@ -838,7 +842,7 @@ fn object_suffix_fallback_indexed(
     index: &ReverseIndex,
     roots: Option<&HashSet<[char; 3]>>,
     matches: &mut Vec<VerbMatch>,
-    seen: &mut HashSet<([char; 3], Binyan, Form, Pgn, Option<Pgn>, usize, bool)>,
+    seen: &mut ObjSuffixSeen,
 ) {
     let in_filter = |letters: &[char; 3]| roots.is_none_or(|set| set.contains(letters));
     let max_strip = 2usize.min(seq.len().saturating_sub(2));
