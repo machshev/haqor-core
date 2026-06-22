@@ -823,8 +823,17 @@ const SUMMARY_MISSES: usize = 10;
 /// Best-effort — a query error is logged, not propagated, so it never fails an
 /// otherwise-complete build.
 fn print_coverage_summary(db: &Connection, parsed: usize, total: usize) {
-    let pct = |n: usize| if total > 0 { n as f64 / total as f64 * 100.0 } else { 0.0 };
-    println!("Parse coverage: {parsed}/{total} surfaces ({:.1}%)", pct(parsed));
+    let pct = |n: usize| {
+        if total > 0 {
+            n as f64 / total as f64 * 100.0
+        } else {
+            0.0
+        }
+    };
+    println!(
+        "Parse coverage: {parsed}/{total} surfaces ({:.1}%)",
+        pct(parsed)
+    );
 
     // The review_missing population — surfaces with no analysis and no lexical
     // class, excluding Aramaic — is the true "missing" set the grind targets,

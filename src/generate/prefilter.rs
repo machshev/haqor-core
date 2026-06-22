@@ -753,9 +753,7 @@ fn deprefixed_forms(surface: &str) -> Vec<String> {
             // verb from the parser. So skip the strip when the last peeled proclitic
             // is vav.
             let last_is_vav = cl[k - 1].starts_with(VAV);
-            if !last_is_vav
-                && let Some(bare) = strip_initial_dagesh(&rem)
-            {
+            if !last_is_vav && let Some(bare) = strip_initial_dagesh(&rem) {
                 forms.push(bare);
             }
             forms.push(rem);

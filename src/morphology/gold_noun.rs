@@ -4835,7 +4835,11 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("מוֹסרֵי", "מוֹסֵר", "band; bond"),
     ("סִרְיֹנּוֹ", "סִרְיֹן", "coat of mail"),
     ("לִבְּהֶן", "לֵב", "heart; feelings; will; intellect; centre"),
-    ("תּוֹעֲבוֹתֵיהֶן", "תּוֹעֵבַה", "disgusting; abhorrence; idolatry; idol"),
+    (
+        "תּוֹעֲבוֹתֵיהֶן",
+        "תּוֹעֵבַה",
+        "disgusting; abhorrence; idolatry; idol",
+    ),
     ("נָסֵבָּה", "נְסִבָּה", "environment; circumstance; turn of affairs"),
     ("רְכֻּלָּתְךָ", "רְכֻלָּה", "trade"),
     ("מִזְבֵחַ", "מִזְבֵּחַ", "altar"),

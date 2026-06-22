@@ -830,19 +830,20 @@ pub fn load_noun_inventory(lexicon_db: &Path) -> Result<Vec<NounStem>> {
     // invents an analysis.
     let mut seen: HashSet<String> = HashSet::new();
     let mut stems = Vec::new();
-    let add = |word: String, is_adj: bool, stems: &mut Vec<NounStem>, seen: &mut HashSet<String>| {
-        let key: String = word.chars().filter(|c| !is_cantillation(*c)).collect();
-        if !key.is_empty() && seen.insert(key) {
-            // Segolates expand to all three base classes (see class_variants);
-            // other stems yield just themselves. The adjective flag enables
-            // agreement inflection (feminine sg/pl) and rides through both.
-            stems.extend(
-                NounStem::classify(&word)
-                    .with_adjective(is_adj)
-                    .class_variants(),
-            );
-        }
-    };
+    let add =
+        |word: String, is_adj: bool, stems: &mut Vec<NounStem>, seen: &mut HashSet<String>| {
+            let key: String = word.chars().filter(|c| !is_cantillation(*c)).collect();
+            if !key.is_empty() && seen.insert(key) {
+                // Segolates expand to all three base classes (see class_variants);
+                // other stems yield just themselves. The adjective flag enables
+                // agreement inflection (feminine sg/pl) and rides through both.
+                stems.extend(
+                    NounStem::classify(&word)
+                        .with_adjective(is_adj)
+                        .class_variants(),
+                );
+            }
+        };
 
     // Strong's `english` headwords: nouns (n-m/n-f/n) and adjectives (a/a-*).
     let mut stmt = db.prepare(

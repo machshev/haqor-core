@@ -200,8 +200,7 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                 if e.name().as_ref() == b"w" {
                     in_word = false;
                     let assembled = strip_internal_maqaf(&std::mem::take(&mut word));
-                    let assembled =
-                        split_glued_word(&assembled).map_or(assembled, str::to_string);
+                    let assembled = split_glued_word(&assembled).map_or(assembled, str::to_string);
                     chapters
                         .entry(chapter)
                         .or_default()

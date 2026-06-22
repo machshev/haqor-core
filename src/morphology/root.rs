@@ -122,7 +122,7 @@ pub(crate) fn is_consonantal_he_root(letters: [char; 3]) -> bool {
         [GIMEL, BET, HE]   // גבה  be high
         | [NUN, GIMEL, HE] // נגה  shine
         | [TAV, MEM, HE]   // תמה  be astonished
-        | [KAF, MEM, HE]   // כמה  long for
+        | [KAF, MEM, HE] // כמה  long for
     )
 }
 

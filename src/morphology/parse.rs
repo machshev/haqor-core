@@ -550,8 +550,7 @@ fn peel_object_suffix(seq: &[Cons]) -> Vec<(Vec<Cons>, Pgn)> {
     let prev = &seq[n - 2];
     let pgn = |p, g, num| Pgn::new(p, g, num);
     // A shureq is rendered as a bare vav carrying the dagesh point (וּ).
-    let is_shureq =
-        |c: &Cons| c.letter == letter::VAV && c.dagesh && c.vowel.is_none();
+    let is_shureq = |c: &Cons| c.letter == letter::VAV && c.dagesh && c.vowel.is_none();
     let mut out = Vec::new();
 
     // -hû (הוּ) 3ms: he + shureq. The contracted -attû (a dagesh-doubled tav +
@@ -560,7 +559,10 @@ fn peel_object_suffix(seq: &[Cons]) -> Vec<(Vec<Cons>, Pgn)> {
         && ((prev.letter == letter::HE && prev.vowel.is_none())
             || (prev.letter == letter::TAV && prev.dagesh))
     {
-        out.push((seq[..n - 2].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
+        out.push((
+            seq[..n - 2].to_vec(),
+            pgn(Person::Third, Gender::Masculine, Number::Singular),
+        ));
     }
     // -nû (נוּ) 1cp vs energic -ennû (נּוּ) 3ms: nun + shureq, split on the dagesh.
     if is_shureq(last) && prev.letter == letter::NUN {
@@ -577,19 +579,26 @@ fn peel_object_suffix(seq: &[Cons]) -> Vec<(Vec<Cons>, Pgn)> {
         && prev.letter == letter::NUN
         && matches!(prev.vowel, Some(Vowel::Hiriq) | None)
     {
-        out.push((seq[..n - 2].to_vec(), pgn(Person::First, Gender::Common, Number::Singular)));
+        out.push((
+            seq[..n - 2].to_vec(),
+            pgn(Person::First, Gender::Common, Number::Singular),
+        ));
     }
     // -ḵem (כֶם) 2mp: kaf-segol + mem.
-    if last.letter == letter::MEM
-        && prev.letter == letter::KAF
-        && prev.vowel == Some(Vowel::Segol)
+    if last.letter == letter::MEM && prev.letter == letter::KAF && prev.vowel == Some(Vowel::Segol)
     {
-        out.push((seq[..n - 2].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Plural)));
+        out.push((
+            seq[..n - 2].to_vec(),
+            pgn(Person::Second, Gender::Masculine, Number::Plural),
+        ));
     }
     // -ḵā (ךָ) 2ms: kaf-qamats; also the he-mater spelling -ḵâ (כָה), a
     // kaf-qamats followed by a bare he.
     if last.letter == letter::KAF && last.vowel == Some(Vowel::Qamats) {
-        out.push((seq[..n - 1].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Singular)));
+        out.push((
+            seq[..n - 1].to_vec(),
+            pgn(Person::Second, Gender::Masculine, Number::Singular),
+        ));
     }
     if last.letter == letter::HE
         && last.vowel.is_none()
@@ -597,13 +606,22 @@ fn peel_object_suffix(seq: &[Cons]) -> Vec<(Vec<Cons>, Pgn)> {
         && prev.letter == letter::KAF
         && prev.vowel == Some(Vowel::Qamats)
     {
-        out.push((seq[..n - 2].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Singular)));
+        out.push((
+            seq[..n - 2].to_vec(),
+            pgn(Person::Second, Gender::Masculine, Number::Singular),
+        ));
     }
     // bare final kaf: -eḵ 2fs and pausal -āḵ 2ms are homographs (the
     // preceding vowel distinguishes them) — emit both, additively.
     if last.letter == letter::KAF && matches!(last.vowel, None | Some(Vowel::Sheva)) {
-        out.push((seq[..n - 1].to_vec(), pgn(Person::Second, Gender::Feminine, Number::Singular)));
-        out.push((seq[..n - 1].to_vec(), pgn(Person::Second, Gender::Masculine, Number::Singular)));
+        out.push((
+            seq[..n - 1].to_vec(),
+            pgn(Person::Second, Gender::Feminine, Number::Singular),
+        ));
+        out.push((
+            seq[..n - 1].to_vec(),
+            pgn(Person::Second, Gender::Masculine, Number::Singular),
+        ));
     }
     // -hā (הָ) 3fs: he-qamats; the mappiq -āh (he with a dagesh point, its
     // qamats on the preceding consonant); or the energic -ennâ (a bare he after
@@ -613,32 +631,53 @@ fn peel_object_suffix(seq: &[Cons]) -> Vec<(Vec<Cons>, Pgn)> {
             || (last.dagesh && last.vowel.is_none())
             || (last.vowel.is_none() && prev.letter == letter::NUN && prev.dagesh))
     {
-        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Feminine, Number::Singular)));
+        out.push((
+            seq[..n - 1].to_vec(),
+            pgn(Person::Third, Gender::Feminine, Number::Singular),
+        ));
     }
     // -ô (וֹ) 3ms: vav-holam (also a mater in the host — ambiguous, additive).
     // Preceded by mem it is also the poetic -mô 3mp (yišmᵊrēmô).
     if last.letter == letter::VAV && last.vowel == Some(Vowel::Holam) {
-        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
+        out.push((
+            seq[..n - 1].to_vec(),
+            pgn(Person::Third, Gender::Masculine, Number::Singular),
+        ));
         if prev.letter == letter::MEM {
-            out.push((seq[..n - 2].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Plural)));
+            out.push((
+                seq[..n - 2].to_vec(),
+                pgn(Person::Third, Gender::Masculine, Number::Plural),
+            ));
         }
     }
     // Bare final vav (no vowel, no shureq dagesh): the -w 3ms (after a 1cs
     // perfect, ʔăḵaltîw) and, after a yod, the plural-host -āyw (his …s).
     if last.letter == letter::VAV && last.vowel.is_none() && !last.dagesh {
-        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
+        out.push((
+            seq[..n - 1].to_vec(),
+            pgn(Person::Third, Gender::Masculine, Number::Singular),
+        ));
         if prev.letter == letter::YOD {
-            out.push((seq[..n - 2].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Singular)));
+            out.push((
+                seq[..n - 2].to_vec(),
+                pgn(Person::Third, Gender::Masculine, Number::Singular),
+            ));
         }
     }
     // -ām / -ēm / -m (ם) 3mp: final mem. (The -ḵem 2mp above keys off
     // kaf-segol; a mem after a root kaf still takes the plain 3mp reading.)
     if last.letter == letter::MEM {
-        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Masculine, Number::Plural)));
+        out.push((
+            seq[..n - 1].to_vec(),
+            pgn(Person::Third, Gender::Masculine, Number::Plural),
+        ));
     }
     // -n / -ān (ן) 3fp: final nun with no vowel of its own.
     if last.letter == letter::NUN && last.vowel.is_none() {
-        out.push((seq[..n - 1].to_vec(), pgn(Person::Third, Gender::Feminine, Number::Plural)));
+        out.push((
+            seq[..n - 1].to_vec(),
+            pgn(Person::Third, Gender::Feminine, Number::Plural),
+        ));
     }
     out
 }
@@ -728,8 +767,14 @@ fn object_suffix_fallback(
         let stems: Vec<&[Cons]> = peels.iter().map(|(s, _)| s.as_slice()).collect();
         for letters in fallback_roots(&stems, roots) {
             let root = Root::from_letters(letters);
-            let paradigm = memo.entry(letters).or_insert_with(|| generate_paradigm(&root));
-            for vf in paradigm.forms.iter().filter(|vf| vf.object_suffix.is_none()) {
+            let paradigm = memo
+                .entry(letters)
+                .or_insert_with(|| generate_paradigm(&root));
+            for vf in paradigm
+                .forms
+                .iter()
+                .filter(|vf| vf.object_suffix.is_none())
+            {
                 // A Wayyiqtol host carries its own וַ, so it can only match the
                 // unstripped surface (strip 0).
                 if vf.form == Form::Wayyiqtol && strip > 0 {
@@ -1365,11 +1410,7 @@ impl ReverseIndex {
                 }
             }
         }
-        type RootBuild = (
-            Vec<(u128, IndexEntry)>,
-            Vec<(u64, ObjStemEntry)>,
-            Vec<u64>,
-        );
+        type RootBuild = (Vec<(u128, IndexEntry)>, Vec<(u64, ObjStemEntry)>, Vec<u64>);
         let per_root: Vec<RootBuild> = roots
             .par_iter()
             .map(|&letters| {
@@ -1714,20 +1755,42 @@ mod tests {
     fn peels_pronominal_object_suffixes() {
         let p = |pe, g, n| Pgn::new(pe, g, n);
         // yišmᵊrēhû יִשְׁמְרֵהוּ → host yišmᵊrē + 3ms.
-        assert!(peels_to("יִשְׁמְרֵהוּ", "יִשְׁמְרֵ", p(Person::Third, Gender::Masculine, Number::Singular)));
+        assert!(peels_to(
+            "יִשְׁמְרֵהוּ",
+            "יִשְׁמְרֵ",
+            p(Person::Third, Gender::Masculine, Number::Singular)
+        ));
         // yišmᵊrēnî יִשְׁמְרֵנִי → 1cs.
-        assert!(peels_to("יִשְׁמְרֵנִי", "יִשְׁמְרֵ", p(Person::First, Gender::Common, Number::Singular)));
+        assert!(peels_to(
+            "יִשְׁמְרֵנִי",
+            "יִשְׁמְרֵ",
+            p(Person::First, Gender::Common, Number::Singular)
+        ));
         // energic yišmᵊrennû יִשְׁמְרֶנּוּ → 3ms.
-        assert!(peels_to("יִשְׁמְרֶנּוּ", "יִשְׁמְרֶ", p(Person::Third, Gender::Masculine, Number::Singular)));
+        assert!(peels_to(
+            "יִשְׁמְרֶנּוּ",
+            "יִשְׁמְרֶ",
+            p(Person::Third, Gender::Masculine, Number::Singular)
+        ));
         // yišmārḵā יִשְׁמָרְךָ → 2ms.
-        assert!(peels_to("יִשְׁמָרְךָ", "יִשְׁמָרְ", p(Person::Second, Gender::Masculine, Number::Singular)));
+        assert!(peels_to(
+            "יִשְׁמָרְךָ",
+            "יִשְׁמָרְ",
+            p(Person::Second, Gender::Masculine, Number::Singular)
+        ));
         // qûmēnî קוּמֵנִי (hollow imperative host) → 1cs.
-        assert!(peels_to("קוּמֵנִי", "קוּמֵ", p(Person::First, Gender::Common, Number::Singular)));
+        assert!(peels_to(
+            "קוּמֵנִי",
+            "קוּמֵ",
+            p(Person::First, Gender::Common, Number::Singular)
+        ));
         // A bare form with no pronominal ending peels nothing spurious as 3ms-hû.
         let bare = hebrew::parse_pointed("יִשְׁמֹר");
-        assert!(!peel_object_suffix(&bare)
-            .iter()
-            .any(|(_, p)| *p == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)));
+        assert!(
+            !peel_object_suffix(&bare)
+                .iter()
+                .any(|(_, p)| *p == Pgn::new(Person::Third, Gender::Masculine, Number::Singular))
+        );
     }
 
     fn has_match(
@@ -2770,14 +2833,15 @@ mod peel_coverage {
     #[test]
     fn peeler_inverts_generated_suffixes() {
         let roots = [
-            "שמר", "קטל", "ברך", "בוא", "קום", "שית", "עשה", "בנה", "ידע", "נתן",
-            "שלח", "אכל",
+            "שמר", "קטל", "ברך", "בוא", "קום", "שית", "עשה", "בנה", "ידע", "נתן", "שלח", "אכל",
         ];
         let (mut total, mut ok) = (0usize, 0usize);
         for r in roots {
             let root = Root::parse(r).unwrap();
             for vf in &generate_paradigm(&root).forms {
-                let Some(obj) = vf.object_suffix else { continue };
+                let Some(obj) = vf.object_suffix else {
+                    continue;
+                };
                 total += 1;
                 let seq = hebrew::parse_pointed(&vf.text);
                 if peel_object_suffix(&seq).into_iter().any(|(_, p)| p == obj) {
@@ -2786,7 +2850,10 @@ mod peel_coverage {
             }
         }
         let pct = 100.0 * ok as f64 / total as f64;
-        assert!(pct >= 99.0, "peeler coverage {ok}/{total} = {pct:.1}% < 99%");
+        assert!(
+            pct >= 99.0,
+            "peeler coverage {ok}/{total} = {pct:.1}% < 99%"
+        );
     }
 
     /// ADR-0004 Option C equivalence oracle, scoped to the rewrite itself: the
@@ -2802,8 +2869,8 @@ mod peel_coverage {
     fn obj_index_recovers_every_generated_suffix() {
         let index = ReverseIndex::build();
         let roots = [
-            "שמר", "קטל", "ברך", "בוא", "קום", "עשה", "בנה", "נתן", "שלח", "אכל",
-            "ראה", "ישב", "סבב", "מצא", "לקח",
+            "שמר", "קטל", "ברך", "בוא", "קום", "עשה", "בנה", "נתן", "שלח", "אכל", "ראה", "ישב",
+            "סבב", "מצא", "לקח",
         ];
         let (mut total, mut missed) = (0usize, 0usize);
         for r in roots {
@@ -2820,9 +2887,7 @@ mod peel_coverage {
                     let seq = hebrew::parse_pointed(&surface);
                     let mut matches = Vec::new();
                     let mut seen = HashSet::new();
-                    object_suffix_fallback_indexed(
-                        &seq, &index, None, &mut matches, &mut seen,
-                    );
+                    object_suffix_fallback_indexed(&seq, &index, None, &mut matches, &mut seen);
                     let found = matches.iter().any(|m| {
                         m.root.letters == root.letters
                             && m.binyan == vf.binyan
@@ -2843,7 +2908,10 @@ mod peel_coverage {
                 }
             }
         }
-        assert_eq!(missed, 0, "{missed}/{total} generated suffixed surfaces unrecoverable");
+        assert_eq!(
+            missed, 0,
+            "{missed}/{total} generated suffixed surfaces unrecoverable"
+        );
     }
 
     /// Report the obj-index shrink (ADR-0004 Option C). The old design stored one

@@ -326,8 +326,9 @@ fn main() -> Result<()> {
                 } else {
                     lexicon_db.as_deref()
                 };
-                let (surfaces, occurrences, parsed) =
-                    haqor_core::generate::generate_hebrew(&bible_db, &output, lexicon, force, limit)?;
+                let (surfaces, occurrences, parsed) = haqor_core::generate::generate_hebrew(
+                    &bible_db, &output, lexicon, force, limit,
+                )?;
                 println!(
                     "Wrote {} surfaces ({} parsed), {} occurrences to {}",
                     surfaces,
