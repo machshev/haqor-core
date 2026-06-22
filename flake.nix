@@ -17,7 +17,21 @@
             inherit system overlays;
           };
 
+          # SemVer bump helper: bump-version <major|minor|patch|X.Y.Z> [--tag]
+          bump-version = pkgs.writeShellApplication {
+            name = "bump-version";
+            runtimeInputs = with pkgs; [ gnugrep gnused gawk coreutils git ];
+            text = builtins.readFile ./scripts/bump-version.sh;
+          };
+
         in {
+
+          packages.bump-version = bump-version;
+
+          apps.bump-version = {
+            type = "app";
+            program = "${bump-version}/bin/bump-version";
+          };
 
           devShells = {
             default = with pkgs; mkShell {
@@ -28,6 +42,8 @@
                 cargo-vet
                 cargo-about
                 cargo-release
+
+                bump-version
 
                 rust-analyzer
                 rustfmt
