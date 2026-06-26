@@ -4071,6 +4071,145 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Imperfect",
         pgn: "3ms",
     },
+    // נוח Hiphil B "set down / deposit" (הִנִּיחַ, geminated nun) — the lexically
+    // distinct second causative of נוּחַ, beside Hiphil A "give rest" (הֵנִיחַ, which
+    // the generator builds). The B paradigm geminates C1 like a pe-nun stem, so
+    // the reverse parser can only reconstruct it under a fabricated root (ננח);
+    // list the attested surfaces under the canonical נוח so the stored analysis
+    // carries the real root. (Gen 2:15, 19:16, Exod 16:33–34, Num 17:19, …)
+    IrregularVerb {
+        surface: "הַנַּח",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Imperative",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        surface: "הִנִּחַ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        surface: "הַנִּחוּ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Imperative",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        surface: "הִנִּיחַ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        surface: "הַנִּיחָה",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Imperative",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        surface: "הַנִּיחוּ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Imperative",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        surface: "הִנִּיחוּ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        surface: "וְהַנַּח",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Imperative",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        surface: "וְהִנַּחְתָּ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        surface: "וְהִנַּחְתּוֹ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        surface: "וְהִנַּחְתִּי",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "1cs",
+    },
+    IrregularVerb {
+        surface: "וְהִנַּחְתֶּם",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2mp",
+    },
+    IrregularVerb {
+        surface: "וְהִנַּחְתָּם",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "2ms",
+    },
+    IrregularVerb {
+        surface: "וְהִנִּיחַ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        surface: "וְהִנִּיחוּ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3cp",
+    },
+    IrregularVerb {
+        surface: "וְהִנִּיחָם",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Perfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        surface: "וַיַּנַּח",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Wayyiqtol",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        surface: "לְהַנִּיחָם",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Inf. Construct",
+        pgn: "",
+    },
+    IrregularVerb {
+        surface: "מַנִּיחַ",
+        root: "נוח",
+        binyan: "Hiphil",
+        form: "Participle (act.)",
+        pgn: "ms",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
