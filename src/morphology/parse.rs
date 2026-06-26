@@ -1414,6 +1414,14 @@ impl ReverseIndex {
                 }
             }
         }
+        Self::build_from_roots(&roots)
+    }
+
+    /// Build a [`ReverseIndex`] over an explicit set of roots rather than the
+    /// whole 22³ space. [`build`](Self::build) is this over every triliteral;
+    /// tests use it to construct a small, cheap index whose lookups are still
+    /// exact for the roots it contains (a non-indexed root simply never matches).
+    fn build_from_roots(roots: &[[char; 3]]) -> Self {
         type RootBuild = (Vec<(u128, IndexEntry)>, Vec<(u64, ObjStemEntry)>, Vec<u64>);
         let per_root: Vec<RootBuild> = roots
             .par_iter()
@@ -2295,7 +2303,15 @@ mod tests {
         }));
     }
 
+    // The all-roots oracle: every triliteral's full paradigm. This is the
+    // exhaustive correctness check, but building the whole index costs minutes
+    // and many gigabytes, so it can't run under the default (parallel,
+    // process-per-test) CI run — two concurrent builds OOM the runner. Run it
+    // explicitly during the grind. CI coverage of the indexed path comes from
+    // the scoped `indexed_matches_per_surface_scoped` below, which builds a tiny
+    // index whose lookups are still exact for the roots it contains.
     #[test]
+    #[ignore = "builds the full index; run explicitly"]
     fn indexed_matches_per_surface() {
         // The reverse index must return exactly what parse_word does. Compare the
         // sorted (root, binyan, form, pgn, suffix, prefix, vav) tuples on a varied
@@ -2342,6 +2358,70 @@ mod tests {
             a.sort();
             b.sort();
             assert_eq!(a, b, "index/per-surface mismatch for {w}");
+        }
+    }
+
+    #[test]
+    fn indexed_matches_per_surface_scoped() {
+        // CI-affordable twin of `indexed_matches_per_surface`: build a tiny index
+        // over only the roots the sample touches, then assert the indexed parser
+        // agrees with generate-and-test *restricted to the same roots*. Filtering
+        // both sides to the same root set makes the comparison exact — the index
+        // holds exactly these roots, and the obj-suffix fallback gate (which keys
+        // off whether the non-suffixed pass found anything) then fires identically
+        // on both. So this is the per-surface equivalence theorem, scoped to the
+        // roots in `index`; the full all-roots oracle above proves it everywhere.
+        // Parse the roots so each is stored as base (non-final) radicals, the
+        // form `build_from_roots`/`pack_radicals` require.
+        let root_letters: Vec<[char; 3]> = [
+            "קטל", "שמר", "עשה", "אמר", "שלח", "ברך", "נתן", "מלך", "ילד", "קום", "הלך",
+        ]
+        .iter()
+        .map(|r| Root::parse(r).unwrap().letters)
+        .collect();
+        let index = ReverseIndex::build_from_roots(&root_letters);
+        let scope: HashSet<[char; 3]> = root_letters.iter().copied().collect();
+        let sample = [
+            "קָטַל",
+            "שָׁמַר",
+            "וְשָׁמַר",
+            "יִשְׁמֹר",
+            "וַיִּשְׁמֹר",
+            "הִקְטִיל",
+            "נִשְׁמַר",
+            "עָשָׂה",
+            "יַעֲשֶׂה",
+            "וַיַּעַשׂ",
+            "לֵאמֹר",
+            "שְׁלָחַנִי",
+            "יְבָרֶכְךָ",
+            "וַיִּתְּנֵם",
+            "בְּמָלְכוֹ",
+            "וַיָּקָם",
+        ];
+        let key = |m: &VerbMatch| {
+            (
+                m.root.letters,
+                m.binyan as usize,
+                m.form as usize,
+                m.pgn.label(),
+                m.object_suffix.map(|p| p.label()),
+                m.prefix.clone(),
+                m.vav_consecutive,
+            )
+        };
+        for w in sample {
+            let mut a: Vec<_> = parse_word_filtered(w, Some(&scope))
+                .iter()
+                .map(key)
+                .collect();
+            let mut b: Vec<_> = parse_word_indexed(w, &index, None)
+                .iter()
+                .map(key)
+                .collect();
+            a.sort();
+            b.sort();
+            assert_eq!(a, b, "scoped index/per-surface mismatch for {w}");
         }
     }
 
@@ -2871,11 +2951,19 @@ mod peel_coverage {
     /// match) hold by construction. Spans strong, weak and twin hosts.
     #[test]
     fn obj_index_recovers_every_generated_suffix() {
-        let index = ReverseIndex::build();
         let roots = [
             "שמר", "קטל", "ברך", "בוא", "קום", "עשה", "בנה", "נתן", "שלח", "אכל", "ראה", "ישב",
             "סבב", "מצא", "לקח",
         ];
+        // The probe only touches these roots, and a root absent from the index
+        // simply never matches — so a scoped index over exactly these roots is
+        // equivalent here and avoids the minutes/many-GB full all-roots build
+        // (which OOMs the parallel CI run).
+        let root_letters: Vec<[char; 3]> = roots
+            .iter()
+            .map(|r| Root::parse(r).unwrap().letters)
+            .collect();
+        let index = ReverseIndex::build_from_roots(&root_letters);
         let (mut total, mut missed) = (0usize, 0usize);
         for r in roots {
             let root = Root::parse(r).unwrap();
