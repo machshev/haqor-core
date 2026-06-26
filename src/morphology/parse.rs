@@ -1667,7 +1667,7 @@ pub fn parse_word_indexed(
 /// out-of-inventory is returned untouched rather than zeroed. So this never
 /// loses a parse relative to [`parse_word`]; it only prunes genuine ambiguity.
 pub fn parse_word_disambiguated(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Vec<VerbMatch> {
-    disambiguate(parse_word(word), roots)
+    disambiguate_matches(parse_word(word), roots)
 }
 
 /// Index-backed twin of [`parse_word_disambiguated`]: the unrestricted parse is
@@ -1685,12 +1685,22 @@ pub fn parse_word_indexed_disambiguated(
     if is_unpointed(&hebrew::parse_pointed(word)) {
         return parse_word_filtered(word, roots);
     }
-    disambiguate(parse_word_indexed(word, index, None), roots)
+    disambiguate_matches(parse_word_indexed(word, index, None), roots)
 }
 
 /// The disambiguate-only inventory filter shared by the generate-and-test and
 /// index-backed soft parsers (see [`parse_word_disambiguated`] for semantics).
-fn disambiguate(matches: Vec<VerbMatch>, roots: Option<&HashSet<[char; 3]>>) -> Vec<VerbMatch> {
+///
+/// Exposed so a caller that already holds a parsed candidate list can thin it
+/// against the lexicon without re-parsing (the db build applies it as a
+/// post-filter so the prefilter's proper-noun rescue still sees every
+/// candidate). Recall-neutral: it never empties a non-empty list — a lone
+/// candidate, or a list whose every root is out-of-inventory, is returned
+/// untouched, so it only prunes genuine over-generated ambiguity.
+pub fn disambiguate_matches(
+    matches: Vec<VerbMatch>,
+    roots: Option<&HashSet<[char; 3]>>,
+) -> Vec<VerbMatch> {
     let Some(set) = roots else {
         return matches;
     };

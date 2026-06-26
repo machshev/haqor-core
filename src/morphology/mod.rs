@@ -34,8 +34,8 @@ pub use irregular_verb::{IRREGULAR_VERBS, IrregularVerb};
 pub use noun::{NounInflection, NounStem, NounStemKind, inflect_noun};
 pub use noun_parse::{NounInventory, NounMatch, parse_noun_word};
 pub use parse::{
-    ReverseIndex, VerbMatch, parse_word, parse_word_disambiguated, parse_word_filtered,
-    parse_word_indexed, parse_word_indexed_disambiguated,
+    ReverseIndex, VerbMatch, disambiguate_matches, parse_word, parse_word_disambiguated,
+    parse_word_filtered, parse_word_indexed, parse_word_indexed_disambiguated,
 };
 pub use root::{Gizra, Root, RootError};
 pub use verb::{Binyan, Form, Paradigm, Pgn, VerbForm, generate_paradigm};
