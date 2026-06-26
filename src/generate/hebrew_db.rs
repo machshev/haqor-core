@@ -44,7 +44,7 @@ use rusqlite::Connection;
 
 use crate::morphology::{
     IrregularVerb, NounInventory, NounMatch, ReverseIndex, VerbMatch, irregular_verb,
-    parse_word_filtered, parse_word_indexed,
+    disambiguate_matches, parse_word_filtered, parse_word_indexed,
 };
 
 use super::lexicon_db::{load_noun_inventory, load_proper_inventory, load_root_inventory};
@@ -441,6 +441,15 @@ fn analyze_surfaces(
         Some(p) => Some(Prefilter::load(p)?),
         None => None,
     };
+    // Lexicon root inventory for disambiguation: the all-roots index over-generates
+    // candidates on fabricated weak roots, so once a surface is matched we drop
+    // candidates whose root the lexicon doesn't attest (see
+    // [`parse_word_indexed_disambiguated`]). The filter is recall-neutral — it never
+    // empties a surface's candidate list — so it only prunes spurious ambiguity.
+    let roots = match lexicon_db {
+        Some(p) => Some(load_root_inventory(p)?),
+        None => None,
+    };
     let lexical: Vec<Option<&'static str>> = surfaces
         .iter()
         .map(|t| prefilter.as_ref().and_then(|pf| pf.classify(t)))
@@ -525,10 +534,23 @@ fn analyze_surfaces(
                 .and_then(|pf| pf.exclude(t, has_plausible))
         })
         .collect();
+    // Drop excluded tokens, then disambiguate the survivors against the lexicon
+    // root inventory: the all-roots index over-generates candidates on fabricated
+    // weak roots, so we prune any candidate whose root the lexicon doesn't attest.
+    // This runs *after* the rescue decision above (which needs the full candidate
+    // set to judge `has_plausible`), so it only thins the stored ambiguity and
+    // never changes whether a token is kept. `disambiguate_matches` is recall-
+    // neutral — it never empties a non-empty candidate list (see its docs).
     let verb: Vec<Vec<VerbMatch>> = raw
         .into_iter()
         .zip(classes.iter())
-        .map(|(matches, class)| if class.is_some() { Vec::new() } else { matches })
+        .map(|(matches, class)| {
+            if class.is_some() {
+                Vec::new()
+            } else {
+                disambiguate_matches(matches, roots.as_ref())
+            }
+        })
         .collect();
     if prefilter.is_some() {
         let filtered = classes.iter().filter(|c| c.is_some()).count();
