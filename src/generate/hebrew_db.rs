@@ -530,12 +530,28 @@ fn analyze_surfaces(
         }
     };
 
+    // Disambiguate first, against the lexicon root inventory: the all-roots index
+    // over-generates candidates on fabricated weak roots, so we prune any candidate
+    // whose root the lexicon doesn't attest. This must precede the verb-aware
+    // rescue decision below, because `disambiguate_matches` is *not* fully recall-
+    // neutral — its fallback drops candidates whose root is made entirely of weak
+    // letters (an all-weak out-of-inventory root only ever matches a noun/numeral
+    // fragment, never a real verb). A proper noun whose sole verb reading is such a
+    // root (מִכָיְהוּ → fabricated יהה) would otherwise be judged "plausible verb"
+    // on the raw set, rescued away from its proper-noun label, then have that
+    // reading vanish here — leaving it unclassified and falsely "missing". Judging
+    // `has_plausible` on the disambiguated set keeps it labelled "proper".
+    let disambiguated: Vec<Vec<VerbMatch>> = raw
+        .into_iter()
+        .map(|matches| disambiguate_matches(matches, roots.as_ref()))
+        .collect();
+
     // Final exclusion is verb-aware: a proper-noun match yields to the parser
-    // when it has a plausible verb reading. The stored `lexical_class` reflects
-    // this refined decision, and analyses for still-excluded tokens are dropped.
+    // when it has a plausible (surviving) verb reading. The stored `lexical_class`
+    // reflects this refined decision, and analyses for excluded tokens are dropped.
     let classes: Vec<Option<&'static str>> = surfaces
         .iter()
-        .zip(raw.iter())
+        .zip(disambiguated.iter())
         .map(|(t, matches)| {
             let has_plausible = matches.iter().any(|m| m.attested);
             prefilter
@@ -543,23 +559,10 @@ fn analyze_surfaces(
                 .and_then(|pf| pf.exclude(t, has_plausible))
         })
         .collect();
-    // Drop excluded tokens, then disambiguate the survivors against the lexicon
-    // root inventory: the all-roots index over-generates candidates on fabricated
-    // weak roots, so we prune any candidate whose root the lexicon doesn't attest.
-    // This runs *after* the rescue decision above (which needs the full candidate
-    // set to judge `has_plausible`), so it only thins the stored ambiguity and
-    // never changes whether a token is kept. `disambiguate_matches` is recall-
-    // neutral — it never empties a non-empty candidate list (see its docs).
-    let mut verb: Vec<Vec<VerbMatch>> = raw
+    let mut verb: Vec<Vec<VerbMatch>> = disambiguated
         .into_iter()
         .zip(classes.iter())
-        .map(|(matches, class)| {
-            if class.is_some() {
-                Vec::new()
-            } else {
-                disambiguate_matches(matches, roots.as_ref())
-            }
-        })
+        .map(|(matches, class)| if class.is_some() { Vec::new() } else { matches })
         .collect();
     if prefilter.is_some() {
         let filtered = classes.iter().filter(|c| c.is_some()).count();
