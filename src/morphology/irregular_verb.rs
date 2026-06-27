@@ -4656,6 +4656,26 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         form: "Jussive",
         pgn: "2ms",
     },
+    IrregularVerb {
+        // נוא "forbid/restrain" Hiphil jussive 3ms — yānî (יָנִי, Ps 141:5 "let it
+        // not [the oil] adorn/break my head"); a hollow-root Hiphil jussive the
+        // generator's paradigm doesn't spell.
+        surface: "יָנִי",
+        root: "נוא",
+        binyan: "Hiphil",
+        form: "Jussive",
+        pgn: "3ms",
+    },
+    IrregularVerb {
+        // הוה "be/become" Qal imperative 2ms — hĕwēʾ (הֱוֵא, Job 37:6 "Be [thou
+        // on the] earth"); an archaic III-He/hollow imperative absent from the
+        // generated paradigm.
+        surface: "הֱוֵא",
+        root: "הוה",
+        binyan: "Qal",
+        form: "Imperative",
+        pgn: "2ms",
+    },
 ];
 
 /// Attested unmodeled-stem verb surfaces, harvested from gold (see module docs).
