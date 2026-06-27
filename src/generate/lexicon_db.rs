@@ -780,13 +780,15 @@ fn load_roots(db: &mut Connection, lexical_index: &Path) -> Result<usize> {
     Ok(rows)
 }
 
-/// Load the `roots` inventory from a built `lexicon.db` into a set of
-/// triliterals, the form [`crate::morphology::parse_word_filtered`] consumes to
-/// prune candidate roots. Each stored root is exactly three folded consonants.
-pub fn load_root_inventory(lexicon_db: &Path) -> Result<HashSet<[char; 3]>> {
+/// Load a triliteral-root set from `lexicon.db`, selecting rows with the given
+/// SQL predicate over the `roots` table. Each stored root is three folded
+/// consonants; hollow roots additionally contribute their medial vav/yod twin
+/// (see below). Shared by [`load_root_inventory`] and
+/// [`load_canonical_root_inventory`].
+fn load_roots_where(lexicon_db: &Path, predicate: &str) -> Result<HashSet<[char; 3]>> {
     let db = Connection::open(lexicon_db)
         .with_context(|| format!("opening {}", lexicon_db.display()))?;
-    let mut stmt = db.prepare("SELECT root FROM roots")?;
+    let mut stmt = db.prepare(&format!("SELECT root FROM roots WHERE {predicate}"))?;
     let mut set = HashSet::new();
     let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
     for root in rows {
@@ -810,6 +812,27 @@ pub fn load_root_inventory(lexicon_db: &Path) -> Result<HashSet<[char; 3]>> {
         }
     }
     Ok(set)
+}
+
+/// Load the `roots` inventory from a built `lexicon.db` into a set of
+/// triliterals, the form [`crate::morphology::parse_word_filtered`] consumes to
+/// prune candidate roots. Each stored root is exactly three folded consonants.
+pub fn load_root_inventory(lexicon_db: &Path) -> Result<HashSet<[char; 3]>> {
+    load_roots_where(lexicon_db, "1")
+}
+
+/// Load only the *canonical* roots — those carried by the lexicographers' etym
+/// tree (`from_etym = 1`) — plus their hollow twins. This is a strict subset of
+/// [`load_root_inventory`]: it excludes roots that exist only as the folded
+/// skeleton of a Strong's lemma (`from_etym = 0`), which for nouns like יוֹם
+/// "day" (→ יומ/יימ) or מַיִם "water" (→ מימ/מום) are not real verb roots and
+/// whose generated paradigms collide en masse with noun morphology (the ־ִים
+/// masculine plural especially). Real hollow verbs whose î-spelling looks
+/// strong-only (חיל, דיש, זוד) are recovered via the hollow twin of their
+/// canonical vav-spelled etym root (חול, דוש, זיד). Used to suppress spurious
+/// verb readings on surfaces the noun pass already explains.
+pub fn load_canonical_root_inventory(lexicon_db: &Path) -> Result<HashSet<[char; 3]>> {
+    load_roots_where(lexicon_db, "from_etym = 1")
 }
 
 /// Load a noun-stem inventory from a built `lexicon.db` for the reverse noun

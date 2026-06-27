@@ -47,7 +47,9 @@ use crate::morphology::{
     irregular_verb, parse_word_filtered, parse_word_indexed,
 };
 
-use super::lexicon_db::{load_noun_inventory, load_proper_inventory, load_root_inventory};
+use super::lexicon_db::{
+    load_canonical_root_inventory, load_noun_inventory, load_proper_inventory, load_root_inventory,
+};
 use super::prefilter::Prefilter;
 
 /// OT books are 1..=39 in Haqor (Tanakh-order) numbering; NT starts at 40.
@@ -450,6 +452,13 @@ fn analyze_surfaces(
         Some(p) => Some(load_root_inventory(p)?),
         None => None,
     };
+    // Canonical (etym-tree) roots only — a strict subset used by the noun-explained
+    // precision pass below to suppress spurious verb readings under noun-skeleton
+    // roots (יומ/יימ from "day", מימ from "water") that the full inventory admits.
+    let canonical_roots = match lexicon_db {
+        Some(p) => Some(load_canonical_root_inventory(p)?),
+        None => None,
+    };
     let lexical: Vec<Option<&'static str>> = surfaces
         .iter()
         .map(|t| prefilter.as_ref().and_then(|pf| pf.classify(t)))
@@ -605,18 +614,27 @@ fn analyze_surfaces(
         info!("  {noun_parsed} surfaces matched a noun analysis");
     }
 
-    // Recall-safe precision pass: when a surface's verb readings survive only via
-    // `disambiguate_matches`' out-of-inventory fallback (every candidate root is
-    // a fabricated reconstruction) AND the noun pass already explains the surface,
-    // the verb readings are spurious — a real noun (יִרְאָתְךָ, מַצֵּבֹתָם) picking
-    // up a collapse-root verb parse. Drop them. This cannot lower verb recall: the
-    // accuracy harness scores gold *verb* tokens (and never on the root), so a
-    // noun surface contributes no recall to lose. A genuine verb/noun homograph is
-    // untouched — its real root is in the inventory, so it never hits the fallback.
-    if let Some(set) = roots.as_ref() {
+    // Recall-safe precision pass: drop a surface's verb readings when the noun
+    // pass already explains it AND none of those readings rests on a *canonical*
+    // root (one in the lexicographers' etym tree). Two spurious sources are swept:
+    //   - out-of-inventory fallback reconstructions (יִרְאָתְךָ, מַצֵּבֹתָם), kept
+    //     by `disambiguate_matches` only because every candidate is out-of-
+    //     inventory; and
+    //   - in-inventory noun-skeleton roots that are not real verb roots — יוֹם
+    //     "day" → יומ/יימ, מַיִם "water" → מימ — whose hollow paradigms collide en
+    //     masse with the ־ִים plural (בָּתִּים, שָׁנִים parsed as imperfects).
+    // This cannot lower verb recall: the accuracy harness scores gold *verb*
+    // tokens and never the root, so noise on a noun surface contributes none. A
+    // genuine verb/noun homograph keeps its canonical root and is untouched; real
+    // hollow verbs whose î-spelling looks strong-only (חיל, דיש) are canonical via
+    // the hollow twin of their vav-spelled etym root.
+    // Per-candidate (not all-or-nothing): a noun surface can carry both a
+    // canonical-root collision (בָּתִּים under geminate יממ) and noun-skeleton
+    // noise (under יומ/יימ); keep the former path consistent and strip the latter.
+    if let Some(set) = canonical_roots.as_ref() {
         for (v, n) in verb.iter_mut().zip(noun.iter()) {
-            if !n.is_empty() && v.iter().any(|m| !set.contains(&m.root.letters)) {
-                v.clear();
+            if !n.is_empty() {
+                v.retain(|m| set.contains(&m.root.letters));
             }
         }
     }
