@@ -6727,11 +6727,15 @@ fn apply_gizra(
         attested = true;
     }
 
-    // חרה "to be(come) hot/angry" — its apocopated jussive 3ms keeps the hiriq
-    // prefix (yiḥar → וַיִּחַר), unlike the otherwise-parallel עלה which lowers it
-    // to patah (וַיַּעַל). apply_pe_guttural has lowered the prefix to patah for
-    // the guttural ḥet; restore the hiriq for this lexeme.
-    if is_charah(root)
+    // חרה "be angry" and חנה "encamp" keep the hiriq prefix in the apocopated
+    // jussive 3ms — yiḥar (וַיִּחַר), yiḥan (וַיִּחַן) — where apply_pe_guttural has
+    // lowered it to patah for the guttural ḥet; restore the hiriq. This is
+    // lexically idiosyncratic, not a ḥet-initial rule: the parallel חצה "divide"
+    // does lower to patah (וַיַּחַץ), as do the ayin-initial עלה/עשה. Identify the
+    // two by C2 (resh / nun); חיה → yəḥî is patah-free and handled separately.
+    if root.pe() == letter::HET
+        && (root.ayin() == letter::RESH || root.ayin() == letter::NUN)
+        && root.lamed() == letter::HE
         && binyan == Binyan::Qal
         && form == Form::Jussive
         && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular)
@@ -6960,13 +6964,6 @@ fn is_chayah(root: &Root) -> bool {
 /// וַיְהִי, תְּהִי / וַתְּהִי).
 fn is_hayah(root: &Root) -> bool {
     root.pe() == letter::HE && root.ayin() == letter::YOD && root.lamed() == letter::HE
-}
-
-/// חרה "to be(come) hot/angry" — III-he, I-guttural whose apocopated jussive 3ms
-/// keeps the hiriq prefix (יִחַר / וַיִּחַר) rather than lowering it to patah the
-/// way the parallel עלה does (וַיַּעַל).
-fn is_charah(root: &Root) -> bool {
-    root.pe() == letter::HET && root.ayin() == letter::RESH && root.lamed() == letter::HE
 }
 
 /// ירא "to fear" — a I-yod, III-aleph verb whose Qal imperfect is irregular: it
@@ -9715,6 +9712,23 @@ fn pe_yod_niphal_vav_variants(text: &str) -> Vec<String> {
     {
         c2.vowel = Some(Vowel::Patah);
         out.push(hebrew::render(&base));
+    }
+    // III-guttural patah twin: when C3 is a word-final guttural carrying a
+    // furtive patah, the tsere/segol theme on C2 lowers to patah and the furtive
+    // disappears — yiwwāḏēaʿ (יִוָּדֵעַ) → yiwwāḏaʿ (יִוָּדַע, ידע Niphal).
+    let mut g = seq.clone();
+    g[j].letter = letter::VAV;
+    if j + 2 == g.len() - 1
+        && matches!(
+            g.get(j + 1).and_then(|c| c.vowel),
+            Some(Vowel::Tsere | Vowel::Segol)
+        )
+        && g.get(j + 2)
+            .is_some_and(|c| hebrew::is_guttural(c.letter) && c.vowel == Some(Vowel::Patah))
+    {
+        g[j + 1].vowel = Some(Vowel::Patah);
+        g[j + 2].vowel = None;
+        out.push(hebrew::render(&g));
     }
     out
 }
