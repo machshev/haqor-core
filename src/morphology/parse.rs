@@ -37,6 +37,7 @@
 //! not match.
 
 use std::collections::{HashMap, HashSet};
+use std::sync::{Arc, LazyLock, RwLock};
 
 use rayon::prelude::*;
 
@@ -92,6 +93,34 @@ pub struct VerbMatch {
     /// The pronominal object suffix on the verb, if any (its person/gender/
     /// number). `None` when no object suffix was matched.
     pub object_suffix: Option<Pgn>,
+    /// How closely this candidate's generated spelling matches the surface —
+    /// the primary spelling-quality signal for ranking (see [`MatchFidelity`]).
+    /// Assigned by [`assign_fidelity`] after matching, so every construction
+    /// site initialises it to [`MatchFidelity::Folded`] and the post-pass
+    /// overwrites it.
+    pub fidelity: MatchFidelity,
+}
+
+/// How closely a candidate's generated spelling matches the surface. The
+/// matcher accepts a candidate when its generated form shares the surface's
+/// [`canonical_key`] — but that key deliberately folds out orthographic
+/// distinctions (a variably-omitted sonorant dagesh, plene/defective matres, a
+/// guttural's hataf colour), so a *folded* match is less certain than one whose
+/// bytes are identical. Ranking exact matches first floats the natural reading
+/// up: וַתַּעֲלֶנָה matches the fp afformative exactly, but the energic-3fs+object
+/// reading only after the §20m dagesh fold — so the former outranks the latter
+/// without dropping it. Variants are ordered best-first (`Exact < Folded <
+/// Skeleton`).
+#[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord)]
+pub enum MatchFidelity {
+    /// The surface is byte-identical to a generated form (after the lossless
+    /// combining-mark normalisation of `parse_pointed`/`render`).
+    Exact,
+    /// The surface matched only through a `canonical_key` relaxation.
+    Folded,
+    /// An unpointed-ketiv consonantal-skeleton match — the loosest tier, with
+    /// no vowels to compare at all.
+    Skeleton,
 }
 
 /// The canonical key defining when two rendered forms count as the same
@@ -810,6 +839,7 @@ fn object_suffix_fallback(
                             prefix: if vav { String::new() } else { prefix.clone() },
                             vav_consecutive: vav,
                             object_suffix: Some(obj),
+                            fidelity: MatchFidelity::Folded,
                         });
                     }
                 }
@@ -901,6 +931,7 @@ fn object_suffix_fallback_indexed(
                                 prefix: if vav { String::new() } else { prefix.clone() },
                                 vav_consecutive: vav,
                                 object_suffix: Some(obj),
+                                fidelity: MatchFidelity::Folded,
                             });
                         }
                     }
@@ -987,13 +1018,130 @@ fn add_label_twins(matches: &mut Vec<VerbMatch>) {
     }
 }
 
-/// Stable ordering shared by all parse entry points: attested analyses first,
-/// bare forms before object-suffixed, then by root/binyan/form/pgn/suffix.
+/// Assign each match its [`MatchFidelity`] by testing whether the surface stem
+/// is byte-identical to one of the generator's spellings for the candidate's
+/// cell (via the [`cached_root_fidelity`] per-root index). Shared by both parse
+/// entry points (the indexed parser keeps only a key hash, not the generated
+/// spelling, so neither path can set this at match time) so the two rank
+/// identically. Twin-aware: the cell's set holds every alternant spelling, so an
+/// exact match against any twin counts.
+fn assign_fidelity(seq: &[Cons], matches: &mut [VerbMatch]) {
+    // Nothing to rank with a single (or no) candidate, so skip the paradigm
+    // regeneration entirely — this is the overwhelming majority of surfaces in
+    // a bulk build, and the leading cost saver there.
+    if matches.len() <= 1 {
+        return;
+    }
+    if is_unpointed(seq) {
+        for m in matches.iter_mut() {
+            m.fidelity = MatchFidelity::Skeleton;
+        }
+        return;
+    }
+    let normalized = undot(&hebrew::render(seq));
+    for m in matches.iter_mut() {
+        // The surface stem this candidate must spell exactly: the normalised
+        // surface with the match's proclitic prefix peeled off the front.
+        let undot_prefix = undot(&m.prefix);
+        let Some(stem) = normalized.strip_prefix(&undot_prefix) else {
+            continue;
+        };
+        let idx = cached_root_fidelity(m.root.letters);
+        let key = cell_key(m.binyan, m.form, m.pgn, m.object_suffix);
+        if idx.cells.get(&key).is_some_and(|set| set.contains(stem)) {
+            m.fidelity = MatchFidelity::Exact;
+        }
+    }
+}
+
+/// Strip the sin/shin dot: the generator does not always emit it and
+/// `canonical_key` folds it out anyway, so a missing dot is a cosmetic
+/// difference, not the kind of spelling fold (dagesh, mater, hataf) that should
+/// demote a reading from exact.
+fn undot(s: &str) -> String {
+    s.chars().filter(|&c| c != '\u{05C1}' && c != '\u{05C2}').collect()
+}
+
+/// [`MatchFidelity`] for an indexed match: `Exact` when the surface stem's raw
+/// (undotted) spelling hash equals the matched entry's, else `Folded` (the match
+/// survived only a `canonical_key` fold). See [`IndexEntry::raw_hash`].
+fn fidelity_from_raw(entry_raw: u32, target_raw: u32) -> MatchFidelity {
+    if entry_raw == target_raw {
+        MatchFidelity::Exact
+    } else {
+        MatchFidelity::Folded
+    }
+}
+
+/// A cell key: the (binyan, form, pgn, object-suffix) tuple identifying one
+/// paradigm slot, as small hashable scalars/labels.
+type CellKey = (usize, usize, String, Option<String>);
+
+fn cell_key(binyan: Binyan, form: Form, pgn: Pgn, suffix: Option<Pgn>) -> CellKey {
+    (
+        binyan as usize,
+        form as usize,
+        pgn.label(),
+        suffix.map(|p| p.label()),
+    )
+}
+
+/// Per-root exact-spelling index for [`MatchFidelity`]: each paradigm cell
+/// mapped to the set of undotted spellings the generator emits for it (one per
+/// alternant twin). A candidate is `Exact` when the surface stem (the surface
+/// with the match's proclitic prefix peeled) is in its cell's set.
+struct RootFidelity {
+    cells: HashMap<CellKey, HashSet<String>>,
+}
+
+/// Process-wide cache of [`RootFidelity`] indexes, keyed by root letters. Built
+/// once per root from its paradigm and reused for every surface that shares the
+/// root, turning fidelity assignment into an O(1) lookup per candidate instead
+/// of an allocate-and-compare scan over the whole paradigm. `generate_paradigm`
+/// is pure, so a stale read is impossible; the `RwLock` lets the rayon-parallel
+/// build read concurrently and serialises only the first-miss insert per root.
+static FIDELITY_CACHE: LazyLock<RwLock<HashMap<[char; 3], Arc<RootFidelity>>>> =
+    LazyLock::new(|| RwLock::new(HashMap::new()));
+
+fn cached_root_fidelity(letters: [char; 3]) -> Arc<RootFidelity> {
+    if let Some(p) = FIDELITY_CACHE.read().unwrap().get(&letters) {
+        return p.clone();
+    }
+    let paradigm = generate_paradigm(&Root::from_letters(letters));
+    let mut cells: HashMap<CellKey, HashSet<String>> = HashMap::new();
+    for vf in &paradigm.forms {
+        cells
+            .entry(cell_key(vf.binyan, vf.form, vf.pgn, vf.object_suffix))
+            .or_default()
+            .insert(undot(&vf.text));
+    }
+    let idx = Arc::new(RootFidelity { cells });
+    FIDELITY_CACHE
+        .write()
+        .unwrap()
+        .entry(letters)
+        .or_insert(idx)
+        .clone()
+}
+
+/// Stable ordering shared by all parse entry points: attested (fully-modelled)
+/// analyses first, bare forms before object-suffixed, then exact spelling
+/// matches before fold-rescued ones, then by root/binyan/form/pgn/suffix.
+///
+/// Fidelity is deliberately a *tiebreaker below* the attested and bare-vs-
+/// suffixed priors, not the primary key. An exact byte-match is not the same as
+/// the correct reading — a spurious analysis can spell the surface exactly while
+/// the intended one only matched through a fold — so ranking fidelity first
+/// promotes those spurious exact matches over more plausible folded readings
+/// (Hophal-imperative-of-a-weak-root outranking the obvious parse). Kept below
+/// the proven priors, it only discriminates *within* an equally-ranked class —
+/// e.g. two bare modelled forms — where preferring the exact spelling is safe.
 fn sort_matches(matches: &mut [VerbMatch]) {
     matches.sort_by(|a, b| {
         b.attested
             .cmp(&a.attested)
             .then_with(|| a.object_suffix.is_some().cmp(&b.object_suffix.is_some()))
+            .then_with(|| a.fidelity.cmp(&b.fidelity))
             .then_with(|| a.root.letters.cmp(&b.root.letters))
             .then_with(|| (a.binyan as usize).cmp(&(b.binyan as usize)))
             .then_with(|| (a.form as usize).cmp(&(b.form as usize)))
@@ -1076,6 +1224,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                         prefix: prefix.clone(),
                         vav_consecutive: false,
                         object_suffix: vf.object_suffix,
+                        fidelity: MatchFidelity::Folded,
                     });
                 }
             }
@@ -1126,6 +1275,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
                         prefix: String::new(),
                         vav_consecutive: true,
                         object_suffix: vf.object_suffix,
+                        fidelity: MatchFidelity::Folded,
                     });
                 }
             }
@@ -1136,6 +1286,7 @@ pub fn parse_word_filtered(word: &str, roots: Option<&HashSet<[char; 3]>>) -> Ve
         object_suffix_fallback(&seq, roots, &mut matches, &mut seen);
     }
     add_label_twins(&mut matches);
+    assign_fidelity(&seq, &mut matches);
     sort_matches(&mut matches);
     matches
 }
@@ -1158,6 +1309,16 @@ struct IndexEntry {
     pgn: Pgn,
     object_suffix: Option<Pgn>,
     attested: bool,
+    /// A `u32` hash of the *raw* generated spelling (sin/shin dot stripped, see
+    /// [`undot`]) — the exactness signal for [`MatchFidelity`]. The `u128` key is
+    /// the `canonical_key` hash (folded), so it cannot tell an exact spelling
+    /// from a fold-rescued one; this lets the indexed parser do that in O(1) by
+    /// comparing against the surface stem's raw hash, without regenerating the
+    /// paradigm. `u32` (not `u64`) so it fits the struct's existing alignment
+    /// padding — zero added footprint across the ~54M-entry index. A 32-bit
+    /// collision only ever mislabels one folded reading as exact — a ranking
+    /// nudge, never a recall change.
+    raw_hash: u32,
 }
 
 impl IndexEntry {
@@ -1442,6 +1603,7 @@ impl ReverseIndex {
                                 pgn: vf.pgn,
                                 object_suffix: vf.object_suffix,
                                 attested: vf.attested,
+                                raw_hash: key_hash(&undot(&vf.text)) as u32,
                             },
                         )
                     })
@@ -1594,6 +1756,9 @@ pub fn parse_word_indexed(
         let targets = peeling_targets(&seq, strip, remainder);
 
         for t in &targets {
+            // The surface stem's raw hash: exact iff it equals a matched entry's
+            // raw spelling hash (see [`IndexEntry::raw_hash`]).
+            let t_raw = key_hash(&undot(t)) as u32;
             for (_, e) in index.get(key_hash(&canonical_key(t))) {
                 let letters = e.letters();
                 // Wayyiqtol is handled by the dedicated pass below.
@@ -1618,6 +1783,7 @@ pub fn parse_word_indexed(
                         prefix: prefix.clone(),
                         vav_consecutive: false,
                         object_suffix: e.object_suffix,
+                        fidelity: fidelity_from_raw(e.raw_hash, t_raw),
                     });
                 }
             }
@@ -1630,7 +1796,9 @@ pub fn parse_word_indexed(
         c.letter == letter::VAV && matches!(c.vowel, Some(Vowel::Patah | Vowel::Qamats))
     }) && seq.len() >= 3
     {
-        let key = key_hash(&canonical_key(&hebrew::render(&seq)));
+        let whole = hebrew::render(&seq);
+        let t_raw = key_hash(&undot(&whole)) as u32;
+        let key = key_hash(&canonical_key(&whole));
         for (_, e) in index.get(key) {
             let letters = e.letters();
             if e.form != Form::Wayyiqtol || !in_filter(&letters) {
@@ -1646,6 +1814,7 @@ pub fn parse_word_indexed(
                     prefix: String::new(),
                     vav_consecutive: true,
                     object_suffix: e.object_suffix,
+                    fidelity: fidelity_from_raw(e.raw_hash, t_raw),
                 });
             }
         }
@@ -1655,6 +1824,11 @@ pub fn parse_word_indexed(
         object_suffix_fallback_indexed(&seq, index, roots, &mut matches, &mut seen);
     }
     add_label_twins(&mut matches);
+    // Fidelity is set inline above from each entry's raw-spelling hash — an O(1)
+    // exactness check that needs no paradigm regeneration. The object-suffix
+    // fallback (fires only when nothing else matched) and label twins keep the
+    // `Folded` default. Unpointed-ketiv surfaces never reach here — they are
+    // delegated to the live parser at the top of this function.
     sort_matches(&mut matches);
     matches
 }
