@@ -200,6 +200,51 @@ pub fn inflect_noun(stem: &NounStem) -> Vec<NounInflection> {
             text: hebrew::render(&plural_construct(stem)),
         },
     ];
+    // Feminine -â additive twins. The base construct/plural builders leave the
+    // first syllable unreduced and write the -ôt plural defectively; emit the
+    // reduced construct and plene plural beside them so attested spellings match.
+    // Additive (never replacing), so lexemes that genuinely keep the long first
+    // vowel (bāmâ → bāmaṯ) or the defective plural are unaffected.
+    if matches!(stem.kind, NounStemKind::FeminineHe) {
+        use Vowel::*;
+        // Reduced construct: as the stress shifts to the -aṯ ending the open
+        // propretonic first vowel reduces — ʿēḏâ → ʿăḏaṯ (עֲדַת), šānâ → šᵊnaṯ
+        // (שְׁנַת), pēʾâ → pᵊʾaṯ (פְּאַת). A guttural takes hataf-patah, others a
+        // bare sheva; an unchangeable first vowel (tôrâ's holam) does not match.
+        let mut c = singular_construct(stem);
+        if c.len() >= 3
+            && let Some(v0) = c[0].vowel
+            && matches!(v0, Tsere | Qamats)
+        {
+            c[0].vowel = Some(if hebrew::is_guttural(c[0].letter) {
+                HatafPatah
+            } else {
+                Sheva
+            });
+            out.push(NounInflection {
+                label: "Singular Construct".to_string(),
+                text: hebrew::render(&c),
+            });
+        }
+        // Plene -ôt plural (absolute = construct for feminines): the holam rides a
+        // mater vav before the tav — tôrôṯ (תּוֹרוֹת), ʿēḏôṯ (עֵדוֹת) — beside the
+        // defective tôrōṯ the base builder emits.
+        let mut p = stem.absolute_singular.clone();
+        if p.last().is_some_and(|l| l.letter == letter::HE) {
+            p.pop();
+            if let Some(last) = p.last_mut() {
+                last.vowel = None;
+            }
+            p.push(Cons::new(letter::VAV).with_vowel(Holam));
+            p.push(Cons::new(letter::TAV));
+            for label in ["Plural Absolute", "Plural Construct"] {
+                out.push(NounInflection {
+                    label: label.to_string(),
+                    text: hebrew::render(&p),
+                });
+            }
+        }
+    }
     if matches!(stem.kind, NounStemKind::Masculine) {
         // Dual mostly survives in body parts & paired items (יָדַיִם, רַגְלַיִם).
         out.push(NounInflection {
