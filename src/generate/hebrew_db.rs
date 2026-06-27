@@ -43,8 +43,8 @@ use rayon::prelude::*;
 use rusqlite::Connection;
 
 use crate::morphology::{
-    IrregularVerb, NounInventory, NounMatch, ReverseIndex, VerbMatch, irregular_verb,
-    disambiguate_matches, parse_word_filtered, parse_word_indexed,
+    IrregularVerb, NounInventory, NounMatch, ReverseIndex, VerbMatch, disambiguate_matches,
+    irregular_verb, parse_word_filtered, parse_word_indexed,
 };
 
 use super::lexicon_db::{load_noun_inventory, load_proper_inventory, load_root_inventory};
@@ -541,7 +541,7 @@ fn analyze_surfaces(
     // set to judge `has_plausible`), so it only thins the stored ambiguity and
     // never changes whether a token is kept. `disambiguate_matches` is recall-
     // neutral — it never empties a non-empty candidate list (see its docs).
-    let verb: Vec<Vec<VerbMatch>> = raw
+    let mut verb: Vec<Vec<VerbMatch>> = raw
         .into_iter()
         .zip(classes.iter())
         .map(|(matches, class)| {
@@ -603,6 +603,22 @@ fn analyze_surfaces(
     if noun_inventory.is_some() {
         let noun_parsed = noun.iter().filter(|a| !a.is_empty()).count();
         info!("  {noun_parsed} surfaces matched a noun analysis");
+    }
+
+    // Recall-safe precision pass: when a surface's verb readings survive only via
+    // `disambiguate_matches`' out-of-inventory fallback (every candidate root is
+    // a fabricated reconstruction) AND the noun pass already explains the surface,
+    // the verb readings are spurious — a real noun (יִרְאָתְךָ, מַצֵּבֹתָם) picking
+    // up a collapse-root verb parse. Drop them. This cannot lower verb recall: the
+    // accuracy harness scores gold *verb* tokens (and never on the root), so a
+    // noun surface contributes no recall to lose. A genuine verb/noun homograph is
+    // untouched — its real root is in the inventory, so it never hits the fallback.
+    if let Some(set) = roots.as_ref() {
+        for (v, n) in verb.iter_mut().zip(noun.iter()) {
+            if !n.is_empty() && v.iter().any(|m| !set.contains(&m.root.letters)) {
+                v.clear();
+            }
+        }
     }
 
     // Curated unmodeled-stem verb table: exact (full-surface) match. Gold-precise,

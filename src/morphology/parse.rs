@@ -1694,9 +1694,12 @@ pub fn parse_word_indexed_disambiguated(
 /// Exposed so a caller that already holds a parsed candidate list can thin it
 /// against the lexicon without re-parsing (the db build applies it as a
 /// post-filter so the prefilter's proper-noun rescue still sees every
-/// candidate). Recall-neutral: it never empties a non-empty list — a lone
-/// candidate, or a list whose every root is out-of-inventory, is returned
-/// untouched, so it only prunes genuine over-generated ambiguity.
+/// candidate). Recall-neutral for in-inventory roots: it never empties a list
+/// that has any in-inventory candidate, so it only prunes over-generated
+/// ambiguity. When *every* candidate is out-of-inventory it preserves them (a
+/// genuine weak verb whose canonical-root paradigm can't spell the surface
+/// survives, pending curation) — except fully-collapsed all-weak roots, which
+/// are dropped (see below).
 pub fn disambiguate_matches(
     matches: Vec<VerbMatch>,
     roots: Option<&HashSet<[char; 3]>>,
@@ -1712,7 +1715,21 @@ pub fn disambiguate_matches(
         .filter(|m| set.contains(&m.root.letters))
         .cloned()
         .collect();
-    if kept.is_empty() { matches } else { kept }
+    if !kept.is_empty() {
+        return kept;
+    }
+    // Fallback: every candidate is out-of-inventory. Preserve them so a genuine
+    // weak verb whose canonical root can't spell the surface survives — but drop
+    // any root made *entirely* of weak letters (ייי, יוי, נוי). A real verb
+    // always leaves a strong radical in the surface, so an all-weak out-of-
+    // inventory root only ever matches a noun/numeral fragment: שְׁנֵי "two of"
+    // reads as a 1cp imperfect of ייי once שְׁ is peeled and נ taken as the
+    // preformative. Real all-weak roots (היה, ינה, נוה) are in the inventory and
+    // never reach this branch.
+    matches
+        .into_iter()
+        .filter(|m| !m.root.letters.iter().all(|c| WEAK.contains(c)))
+        .collect()
 }
 
 /// Enumerate every triliteral root that could underlie the surface
