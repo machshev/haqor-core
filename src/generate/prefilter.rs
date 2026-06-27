@@ -235,6 +235,7 @@ const FUNCTION_WORDS: &[&str] = &[
     "הִנֶּנִּי",
     "הִנּוֹ",
     "הִנָּם",
+    "הִנְנוּ",
     // Pentateuchal ketiv of the 3fs pronoun (written הוא, read הִיא), plus its
     // demonstrative use after the article. Closed-class, never a verb.
     "הִוא",

@@ -4868,4 +4868,12 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("חֲמִשִׁים", "חֲמִשִּׁים", "fifty"),
     ("מַמְּלָכָה", "מַמְלָכָה", "dominion; rule; realm"),
     ("בִּירָינִיּוֹת", "בִּירָנִית", "fortress"),
+    // שֵׁן "tooth" dual construct + 1cs suffix, pausal qamats (שִׁנָּי, Job 19:20;
+    // בְ-prefixed in Job 13:14, covered by proclitic peeling); engine builds שִׁנַּי.
+    ("שִׁנָּי", "שֵׁן", "tooth; sharp; ivory; cliff"),
+    // מַאֲוַי "desire" masc. plural construct (Ps 140:9 "the desires of the wicked").
+    ("מַאֲוַיֵּי", "מַאֲוַי", "desire"),
+    // בֵּן "son" masc. plural construct, pausal qamats-yod (בְנָי, 1Chr 24:23
+    // "and the sons of Jeriah"); engine builds the standard בְּנֵי.
+    ("בְנָי", "בֵּן", "son; child; descendant"),
 ];
