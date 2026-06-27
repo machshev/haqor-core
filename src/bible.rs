@@ -593,15 +593,19 @@ impl Bible {
     /// pointed/cantillated text. Returns `None` when no surface matches or the
     /// surface carries no verb or noun analysis.
     ///
-    /// Disambiguation: among the candidate verb analyses, one whose root has a
-    /// BDB entry is strongly preferred (over-generated spurious roots have no
-    /// lexicon entry), then attestation, then candidate order. A verb reading is
-    /// chosen over a noun reading only when its root resolves in BDB; otherwise a
-    /// resolvable noun reading wins, falling back to whatever analysis exists.
+    /// Disambiguation: pick the top-ranked candidate verb analysis. Rows are
+    /// stored in `analysis_id` order, which the build sets to OSHB corpus
+    /// attestation (most-attested reading first — lifts top-1 from ~53% to ~98%),
+    /// then the generator's own `sort_matches` order (attested-before-fallback,
+    /// bare-before-suffixed, exact-before-folded) for the unattested tail. A verb
+    /// reading is chosen over a noun reading only when its root resolves in BDB;
+    /// otherwise a resolvable noun reading wins, falling back to whatever exists.
     pub fn hebrew_word_info(&self, word: &str) -> Option<HebrewWord> {
         let norm = crate::generate::normalize_surface(word);
 
-        // Best verb analysis: BDB-resolvable first, then attested, then order.
+        // Top verb analysis by stored rank (attestation, then generator order).
+        // `analysis_id` is unique, so it alone determines the pick; `has_bdb` is
+        // still selected for the verb-vs-noun decision below.
         let verb = self
             .db
             .query_row(
@@ -610,7 +614,7 @@ impl Bible {
                  FROM hebrewdb.analyses a \
                  JOIN hebrewdb.surface s ON s.surface_id = a.surface_id \
                  WHERE s.text = ?1 \
-                 ORDER BY has_bdb DESC, a.attested DESC, a.analysis_id ASC \
+                 ORDER BY a.analysis_id ASC \
                  LIMIT 1",
                 [&norm],
                 |row| {
