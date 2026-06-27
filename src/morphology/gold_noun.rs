@@ -13,6 +13,21 @@
 /// (surface form, lemma, gloss) for attested common nouns the generator cannot
 /// produce, sorted by descending corpus frequency.
 pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
+    // Irregular plurals / constructs the engine cannot build: יָם's geminate-
+    // doubling plural (יַמִּים), the pretonic-reduced feminine plural מַמְלְכוֹת,
+    // the suppletive plural construct מְתֵי (מַת), כִּלְיָה's plural (plene כְּלָיוֹת
+    // and the defective כְּלָיֹת behind הַכְּלָיֹת), the valley noun גֵּיא, and the
+    // feminine segolate דַּעַת (pausal דָּעַת/דָעַת). Proclitics are peeled before
+    // matching, so וּ/בְּ/הַ-prefixed spellings are covered by the bare form.
+    ("יַמִּים", "יָם", "sea; large body of water"),
+    ("מַמְלְכוֹת", "מַמְלָכָה", "dominion; rule; realm"),
+    ("מְתֵי", "מַת", "adult; man"),
+    ("גֵּיא", "גַּיְא", "valley; gorge"),
+    ("כְּלָיוֹת", "כִּלְיָה", "kidney"),
+    ("כְּלָיֹת", "כִּלְיָה", "kidney"),
+    ("דַּעַת", "דַּעַת", "knowledge"),
+    ("דָּעַת", "דַּעַת", "knowledge"),
+    ("דָעַת", "דַּעַת", "knowledge"),
     ("עֵינֵי", "עַיִן", "eye; fountain; eye"),
     ("אֱלֹהֶי", "אֱלֹהִים", "gods; God; magistrates"),
     ("צְבָאוֹת", "צָבָא", "mass; army; campaign; hardship; worship"),
