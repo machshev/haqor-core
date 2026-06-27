@@ -134,6 +134,13 @@ const FUNCTION_WORDS: &[&str] = &[
     "אוֹ",
     "כֹּל",
     "כָּל",
+    // cardinal "two" in construct — the numeral שְׁנַיִם/שְׁתַּיִם (OSHB Ac…),
+    // never a verb. Deprefixable so proclitic forms (וּשְׁתֵּי, לִשְׁנֵי, מִשְׁתֵּים)
+    // are caught too; at 4 letters they don't collide with a deprefixed verb.
+    "שְׁנֵי",
+    "שְׁתֵּי",
+    "שְׁנֵים",
+    "שְׁתֵּים",
     // inflected prepositions / object marker / particles carrying a pronominal
     // suffix — closed-class paradigms, never verbs, so always safe to exclude.
     // ל "to/for"
