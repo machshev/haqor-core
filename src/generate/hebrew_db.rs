@@ -737,13 +737,51 @@ pub fn generate_hebrew(
     bible_db: &Path,
     output: &Path,
     lexicon_db: Option<&Path>,
+    morphhb_dir: Option<&Path>,
     force: bool,
     limit: usize,
 ) -> Result<(usize, usize, usize)> {
     if !force && output.exists() {
-        return update_missing(output, lexicon_db, limit);
+        return update_missing(output, lexicon_db, morphhb_dir, limit);
     }
-    build_hebrew(bible_db, output, lexicon_db)
+    build_hebrew(bible_db, output, lexicon_db, morphhb_dir)
+}
+
+/// Re-order each surface's verb analyses by OSHB corpus attestation, most-
+/// attested first. Stable (`sort_by_cached_key`), so equally-attested analyses
+/// — including the unattested majority, all at count 0 — keep the parser's
+/// `sort_matches` order. A no-op (with a warning) if `morphhb_dir` is absent or
+/// missing on disk, so a build without the source still succeeds.
+///
+/// This embeds OSHB (CC BY 4.0) tagging frequency as a ranking prior; the
+/// generator still produces the candidate *set*, attestation only orders it.
+fn rank_by_attestation(
+    surfaces: &[String],
+    analyses: &mut [Vec<VerbMatch>],
+    morphhb_dir: Option<&Path>,
+) -> Result<()> {
+    let Some(dir) = morphhb_dir.filter(|d| d.exists()) else {
+        info!("morphhb unavailable; skipping attestation ranking (generator order kept)");
+        return Ok(());
+    };
+    info!("Ranking analyses by OSHB corpus attestation");
+    let attest = crate::generate::harness::collect_attestation(dir)?;
+    for (t, matches) in surfaces.iter().zip(analyses.iter_mut()) {
+        if matches.len() > 1 {
+            matches.sort_by_cached_key(|m| {
+                let key = (
+                    t.clone(),
+                    (
+                        m.binyan.name().to_string(),
+                        m.form.name().to_string(),
+                        m.pgn.label(),
+                    ),
+                );
+                std::cmp::Reverse(attest.get(&key).copied().unwrap_or(0))
+            });
+        }
+    }
+    Ok(())
 }
 
 /// Full build: read every OT token from `bible_db` and write a fresh `hebrew.db`.
@@ -751,6 +789,7 @@ fn build_hebrew(
     bible_db: &Path,
     output: &Path,
     lexicon_db: Option<&Path>,
+    morphhb_dir: Option<&Path>,
 ) -> Result<(usize, usize, usize)> {
     info!("Reading OT tokens from {}", bible_db.display());
     let (surfaces, occurrences) = collect_tokens(bible_db)?;
@@ -762,10 +801,17 @@ fn build_hebrew(
 
     let SurfaceAnalysis {
         classes,
-        verb: analyses,
+        verb: mut analyses,
         noun: noun_analyses,
         gold: gold_analyses,
     } = analyze_surfaces(&surfaces, lexicon_db, VerbStrategy::Indexed)?;
+
+    // Rank each surface's analyses most-attested-first using OSHB corpus
+    // frequency — the dominant ranking signal (lifts top-1 from ~53% to ~89%,
+    // see the attestation metric in the eval harness). Stable, so analyses of
+    // equal attestation keep their `sort_matches` order. Skipped if morphhb is
+    // unavailable (the order then falls back to the generator's own ranking).
+    rank_by_attestation(&surfaces, &mut analyses, morphhb_dir)?;
 
     // Occurrence counts per surface, plus a per-surface flag for surfaces that
     // occur *only* in Biblical Aramaic verses (and so are Aramaic, not Hebrew
@@ -1085,6 +1131,7 @@ pub fn preview_missing(
 fn update_missing(
     output: &Path,
     lexicon_db: Option<&Path>,
+    morphhb_dir: Option<&Path>,
     limit: usize,
 ) -> Result<(usize, usize, usize)> {
     let mut db =
@@ -1116,10 +1163,11 @@ fn update_missing(
     // unfiltered semantics — use the same indexed (all-roots) verb pass.
     let SurfaceAnalysis {
         classes,
-        verb,
+        mut verb,
         noun,
         gold,
     } = analyze_surfaces(&texts, lexicon_db, VerbStrategy::Indexed)?;
+    rank_by_attestation(&texts, &mut verb, morphhb_dir)?;
 
     let mut resolved = 0usize;
     let tx = db.transaction()?;

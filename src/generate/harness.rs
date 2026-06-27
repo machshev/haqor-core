@@ -147,6 +147,28 @@ fn collect_gold(morphhb_dir: &Path) -> Result<Vec<Gold>> {
     Ok(out)
 }
 
+/// Corpus attestation counts for ranking: how many OSHB gold tokens carry each
+/// `(surface, (binyan, form, pgn))` analysis. The surface is `normalize_surface`d
+/// and the analysis tuple is rendered exactly as a stored/parsed candidate
+/// (`binyan.name()`, `form.name()`, `pgn.label()`), so a build candidate can look
+/// up its own corpus frequency directly. Used by the build to rank a surface's
+/// analyses most-attested-first (the dominant ranking signal — see the top-1
+/// attestation metric in [`eval_from_db`]).
+pub(crate) type AttestMap = std::collections::HashMap<(String, (String, String, String)), u32>;
+
+pub(crate) fn collect_attestation(morphhb_dir: &Path) -> Result<AttestMap> {
+    let gold = collect_gold(morphhb_dir)?;
+    let mut map = AttestMap::new();
+    for g in gold {
+        let key = (
+            normalize_surface(&g.surface),
+            (g.binyan.name().to_string(), g.form.name().to_string(), g.pgn),
+        );
+        *map.entry(key).or_default() += 1;
+    }
+    Ok(map)
+}
+
 fn collect_book(path: &Path, out: &mut Vec<Gold>) -> Result<()> {
     let mut reader = Reader::from_file(path)?;
     let mut buf = Vec::new();
@@ -221,6 +243,19 @@ struct Score {
     recall_full: usize,
     /// A candidate matched the gold (binyan, form), ignoring PGN.
     recall_binyan_form: usize,
+    /// The *top-ranked* (first) candidate matched the gold (binyan, form, pgn) —
+    /// the ranking-quality metric. `recall_full` asks "is gold anywhere in the
+    /// list"; this asks "is gold the one we'd show first".
+    top1_full: usize,
+    /// Top-1 if candidates were ranked by *leave-one-out* corpus attestation
+    /// (this token's own gold count decremented), tie-broken by the stored
+    /// order. The honest ceiling for attestation ranking: singletons earn no
+    /// self-credit, so a win means other occurrences of the surface taught us
+    /// the reading. Measures whether wiring OSHB frequency into ranking helps.
+    attest_top1: usize,
+    /// Token sits on a surface OSHB tags with >1 distinct analysis — the
+    /// irreducible multi-gold ambiguity that bounds any ranking's ceiling.
+    multi_gold: usize,
     /// Exactly one candidate, and it matched the gold fully.
     unambiguous_correct: usize,
     /// Gold present among candidates, but >1 candidate (a lexicon could pick).
@@ -250,6 +285,9 @@ impl Score {
         self.parsed += o.parsed;
         self.recall_full += o.recall_full;
         self.recall_binyan_form += o.recall_binyan_form;
+        self.top1_full += o.top1_full;
+        self.attest_top1 += o.attest_top1;
+        self.multi_gold += o.multi_gold;
         self.unambiguous_correct += o.unambiguous_correct;
         self.correct_but_ambiguous += o.correct_but_ambiguous;
         self.aligned += o.aligned;
@@ -444,10 +482,14 @@ pub fn eval_from_db(
     // Exclude curated-harvest rows (gizra = 'Irregular'): the harness measures
     // what the *generator* produces, so a hand-listed lookup form must not be
     // credited as a parse. Generated analyses carry a gizra class, never this.
+    // ORDER BY analysis_id so each surface's candidate vec preserves the stored
+    // ranking (insert order = `sort_matches` order); the first element is the
+    // top-ranked reading, which the top-1 metric tests against gold.
     let mut stmt = db.prepare(
         "SELECT s.text, a.binyan, a.form, a.pgn \
          FROM analyses a JOIN surface s ON s.surface_id = a.surface_id \
-         WHERE a.gizra <> 'Irregular'",
+         WHERE a.gizra <> 'Irregular' \
+         ORDER BY a.analysis_id",
     )?;
     let mut by_surface: std::collections::HashMap<String, Vec<(String, String, String)>> =
         std::collections::HashMap::new();
@@ -472,6 +514,32 @@ pub fn eval_from_db(
         for t in rows {
             all_surfaces.insert(t?);
         }
+    }
+
+    // Corpus attestation counts: (normalised surface, (binyan, form, pgn)) →
+    // how many gold tokens carry that exact analysis. Feeds the leave-one-out
+    // attestation-ranking metric (`attest_top1`). Keyed identically to the
+    // candidate tuples so a candidate can look up its own corpus frequency.
+    let mut attest: std::collections::HashMap<(String, (String, String, String)), usize> =
+        std::collections::HashMap::new();
+    for g in gold.iter() {
+        let entry = (
+            normalize_surface(&g.surface),
+            (
+                g.binyan.name().to_string(),
+                g.form.name().to_string(),
+                g.pgn.clone(),
+            ),
+        );
+        *attest.entry(entry).or_default() += 1;
+    }
+    // How many distinct gold analyses each surface carries — surfaces with >1
+    // are irreducibly ambiguous in the corpus (no single ranking can top-1 all
+    // their occurrences), bounding the attestation-ranking ceiling.
+    let mut distinct_by_surface: std::collections::HashMap<String, usize> =
+        std::collections::HashMap::new();
+    for (surf, _) in attest.keys() {
+        *distinct_by_surface.entry(surf.clone()).or_default() += 1;
     }
 
     type Miss = (&'static str, String, String);
@@ -501,6 +569,46 @@ pub fn eval_from_db(
                 .iter()
                 .any(|(b, f, p)| b == gb && f == gf && *p == g.pgn);
             let bf = cands.iter().any(|(b, f, _)| b == gb && f == gf);
+            // Top-1: is the highest-ranked candidate the gold reading?
+            if let Some((b, f, p)) = cands.first()
+                && b == gb
+                && f == gf
+                && *p == g.pgn
+            {
+                s.top1_full = 1;
+            }
+            // Leave-one-out attestation top-1: rank candidates by their corpus
+            // frequency with THIS token's own gold count removed, tie-broken by
+            // stored order. The winner is the most-attested-elsewhere reading.
+            let loo = |c: &(String, String, String)| -> usize {
+                let n = attest
+                    .get(&(key.clone(), c.clone()))
+                    .copied()
+                    .unwrap_or(0);
+                // Decrement self: this token contributes 1 to its own gold's count.
+                if c.0 == gb && c.1 == gf && c.2 == g.pgn {
+                    n.saturating_sub(1)
+                } else {
+                    n
+                }
+            };
+            // argmax by (loo count, then a *neutral* lexicographic tiebreak on
+            // the analysis tuple). Tie-breaking on stored order would make this
+            // circular once the DB is itself attestation-ranked (the order would
+            // encode the answer); a fixed lexicographic order keeps the metric a
+            // pure measure of what leave-one-out attestation alone can decide.
+            if let Some(best) = cands
+                .iter()
+                .max_by_key(|c| (loo(c), std::cmp::Reverse((*c).clone())))
+                && best.0 == gb
+                && best.1 == gf
+                && best.2 == g.pgn
+            {
+                s.attest_top1 = 1;
+            }
+            if distinct_by_surface.get(&key).copied().unwrap_or(0) > 1 {
+                s.multi_gold = 1;
+            }
             if full {
                 s.recall_full = 1;
                 if cands.len() == 1 {
@@ -598,6 +706,26 @@ fn print_report(s: &Score, aligned: bool, prefilter: bool) {
         "    binyan+form only:      {:>7}  ({:.1}% of tokens)",
         s.recall_binyan_form,
         pct(s.recall_binyan_form, t)
+    );
+    println!();
+    println!("  ranking (gold is the TOP-ranked candidate):");
+    println!(
+        "    top-1 binyan+form+pgn: {:>7}  ({:.1}% of tokens, {:.1}% of recall-full)",
+        s.top1_full,
+        pct(s.top1_full, t),
+        pct(s.top1_full, s.recall_full)
+    );
+    println!(
+        "    top-1 w/ attestation:  {:>7}  ({:.1}% of tokens, {:.1}% of recall-full) [leave-one-out]",
+        s.attest_top1,
+        pct(s.attest_top1, t),
+        pct(s.attest_top1, s.recall_full)
+    );
+    println!(
+        "    multi-gold (ambiguous):{:>7}  ({:.1}% of tokens, {:.1}% of recall-full) [ranking ceiling]",
+        s.multi_gold,
+        pct(s.multi_gold, t),
+        pct(s.multi_gold, s.recall_full)
     );
     println!();
     println!("  of the fully-correct tokens:");

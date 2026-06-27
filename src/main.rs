@@ -151,6 +151,11 @@ enum DbCommands {
         /// in-repo data/lexicon.db.
         #[arg(short, long, default_value = "data/lexicon.db")]
         lexicon_db: Option<PathBuf>,
+        /// Source texts directory holding the morphhb/ OSHB tagging, used to
+        /// rank each surface's analyses by corpus attestation (most-attested
+        /// first). If absent, the generator's own ordering is kept.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
         /// Skip the lexicon prefilter entirely (store the unfiltered parser
         /// output). Use with a throwaway `-o` path to build an eval DB whose
         /// `parse-eval --from-db` score matches the unfiltered in-memory eval
@@ -317,6 +322,7 @@ fn main() -> Result<()> {
                 bible_db,
                 output,
                 lexicon_db,
+                src_texts,
                 no_prefilter,
                 force,
                 limit,
@@ -326,8 +332,14 @@ fn main() -> Result<()> {
                 } else {
                     lexicon_db.as_deref()
                 };
+                let morphhb = src_texts.join("morphhb");
                 let (surfaces, occurrences, parsed) = haqor_core::generate::generate_hebrew(
-                    &bible_db, &output, lexicon, force, limit,
+                    &bible_db,
+                    &output,
+                    lexicon,
+                    Some(&morphhb),
+                    force,
+                    limit,
                 )?;
                 println!(
                     "Wrote {} surfaces ({} parsed), {} occurrences to {}",
@@ -524,15 +536,21 @@ fn print_verb_section(word: &str) {
             .object_suffix
             .map(|p| format!(" + obj {}", p.label()))
             .unwrap_or_default();
+        let fid = match m.fidelity {
+            morphology::MatchFidelity::Exact => "exact ",
+            morphology::MatchFidelity::Folded => "folded",
+            morphology::MatchFidelity::Skeleton => "skel  ",
+        };
         println!(
-            "  {mark}{prefix}root {root}  {:<8} {:<14} {}{}",
+            "  {fid} {mark}{prefix}root {root}  {:<8} {:<14} {}{}",
             m.binyan.name(),
             m.form.name(),
             label,
             suffix,
         );
     }
-    println!("  (* = matched a strong-verb fallback; gizra rule not yet modelled)");
+    println!("  (fidelity: exact=byte-identical, folded=matched via a spelling fold;");
+    println!("   * = matched a strong-verb fallback; gizra rule not yet modelled)");
 }
 
 /// Build the lexicon-driven inventory (common nouns + adjectives + the
