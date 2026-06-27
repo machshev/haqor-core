@@ -1784,6 +1784,23 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     && matches!(form, Form::Jussive | Form::Imperfect)
                     && pgn == Pgn::new(Person::Third, Gender::Masculine, Number::Singular))
                 .then(|| raah_apocopated_tsere_variant(root));
+                // Pe-nun III-He Qal apocopated jussive/wayyiqtol: the nun fuses
+                // into C2 as a forte dagesh (yiṭṭeh יִטֶּה), apocope drops the he
+                // and the word-final C2 sheds the forte, lengthening the prefix
+                // hiriq to tsere — yēṭ (יֵט), tēṭ (תֵּט), wayyiqtol וַיֵּט/וַתֵּט
+                // (נטה). Additive twin beside the apocopated hiriq base (built in
+                // apply_gizra), so roots that keep the hiriq apocope (נזה → וַיִּז)
+                // are unaffected. The 2fs carries a vocalic -î and is excluded.
+                let penun_lamed_he_apoc_tsere = (root.has(Gizra::PeNun)
+                    && root.has(Gizra::LamedHe)
+                    && !root.has(Gizra::Hollow)
+                    && binyan == Binyan::Qal
+                    && matches!(form, Form::Jussive | Form::Wayyiqtol)
+                    && pgn.number == Some(Number::Singular)
+                    && !(pgn.person == Some(Person::Second)
+                        && pgn.gender == Some(Gender::Feminine)))
+                .then(|| apocope_prefix_tsere_variant(&text))
+                .flatten();
                 // Defective twin of the I-yod Hiphil's ô prefix: the vav mater
                 // dropped and the holam written on the preformative —
                 // וַיּוֹסֶף → וַיֹּסֶף, יוֹסִיף → יֹסִיף.
@@ -3367,6 +3384,7 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
                     lamed_he_doubled_apoc,
                     lamed_he_doubled_apoc_hiriq,
                     raah_apoc_tsere,
+                    penun_lamed_he_apoc_tsere,
                     pe_yod_as_pe_nun,
                     pe_yod_hiphil_defective,
                     pe_yod_perf_hiriq,
@@ -9284,6 +9302,21 @@ fn apocope_prefix_hiriq_variant(text: &str) -> Option<String> {
         return None;
     }
     seq[p].vowel = Some(Vowel::Hiriq);
+    Some(hebrew::render(&seq))
+}
+
+/// Mirror of [`apocope_prefix_hiriq_variant`]: raise an apocopated jussive/
+/// wayyiqtol's prefix *hiriq* to *tsere*. The pe-nun III-He compensatory
+/// lengthening — when the assimilated nun's forte dagesh is shed at the now
+/// word-final C2, the prefix hiriq lengthens: yiṭ (יִט) → yēṭ (יֵט), וַיִּט →
+/// וַיֵּט (נטה). The preformative is `seq[0]`, or `seq[1]` past a wayyiqtol vav.
+fn apocope_prefix_tsere_variant(text: &str) -> Option<String> {
+    let mut seq = hebrew::parse_pointed(text);
+    let p = usize::from(seq.first().map(|c| c.letter) == Some(letter::VAV));
+    if seq.get(p).and_then(|c| c.vowel) != Some(Vowel::Hiriq) {
+        return None;
+    }
+    seq[p].vowel = Some(Vowel::Tsere);
     Some(hebrew::render(&seq))
 }
 
