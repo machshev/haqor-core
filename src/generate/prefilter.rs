@@ -405,6 +405,18 @@ const FUNCTION_WORDS: &[&str] = &[
 /// mem+shin to "לָה" — and peel-matching them would wrongly silence that verb.
 /// Exact match is collision-free: the listed surface is never itself a verb.
 const FUNCTION_WORDS_EXACT: &[&str] = &[
+    // Interjections & interrogative-place particles — never verbs (OSHB tags them
+    // Tj / Ti), but short enough that the deprefix path would silence a real verb
+    // peeling down to them (e.g. a proclitic + אֵי / הֶן), so match exactly only.
+    // הֶן is the segol particle "behold/if", beside the tsere pronoun הֵן.
+    "הוֹי",
+    "אוֹי",
+    "אֵי",
+    "אַיֵּה",
+    "הֶן",
+    // לוֹא — plene spelling of the negative לֹא "not"; the deprefixable לֹא is
+    // already listed, but לוֹא's skeleton (לוא) collided with verb deprefixings.
+    "לוֹא",
     "אֱהִי",
     "אֱלֵי",
     "אֲבוֹי",
