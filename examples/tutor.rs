@@ -5,7 +5,14 @@
 //! Uses a throwaway in-memory progress.db so runs are reproducible.
 
 use haqor_core::bible::Bible;
-use haqor_core::tutor::{Grade, StudyItem, Track};
+use haqor_core::tutor::{Grade, StudyItem, Track, WordAspect, WordCard};
+
+fn word_track(w: &WordCard) -> Track {
+    match w.aspect {
+        WordAspect::Read => Track::WordRead,
+        WordAspect::Mean => Track::WordMean,
+    }
+}
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let steps: usize = std::env::args().nth(1).map_or(Ok(60), |a| a.parse())?;
@@ -32,15 +39,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
             }
             StudyItem::NewWord(w) => {
+                let t = word_track(&w);
                 println!(
-                    "{i:>3}  NEW WORD    {}  ({}x)  {} [{}] new_glyphs={}",
-                    w.surface, w.occurrences, w.gloss, w.morph, w.new_glyphs.len()
+                    "{i:>3}  NEW WORD/{:?}  {}  ({}x)  {} [{}]",
+                    w.aspect, w.surface, w.occurrences, w.gloss, w.morph
                 );
-                bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                bible.submit_review(t, &w.surface, Grade::Good, now)?
             }
             StudyItem::ReviewWord(w) => {
-                println!("{i:>3}  rev word    {}", w.surface);
-                bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                let t = word_track(&w);
+                println!("{i:>3}  rev word/{:?}  {}", w.aspect, w.surface);
+                bible.submit_review(t, &w.surface, Grade::Good, now)?
             }
             StudyItem::ReadVerse(v) => {
                 println!(
