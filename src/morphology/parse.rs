@@ -95,7 +95,7 @@ pub struct VerbMatch {
     pub object_suffix: Option<Pgn>,
     /// How closely this candidate's generated spelling matches the surface —
     /// the primary spelling-quality signal for ranking (see [`MatchFidelity`]).
-    /// Assigned by [`assign_fidelity`] after matching, so every construction
+    /// Assigned by `assign_fidelity` after matching, so every construction
     /// site initialises it to [`MatchFidelity::Folded`] and the post-pass
     /// overwrites it.
     pub fidelity: MatchFidelity,
@@ -103,7 +103,7 @@ pub struct VerbMatch {
 
 /// How closely a candidate's generated spelling matches the surface. The
 /// matcher accepts a candidate when its generated form shares the surface's
-/// [`canonical_key`] — but that key deliberately folds out orthographic
+/// `canonical_key` — but that key deliberately folds out orthographic
 /// distinctions (a variably-omitted sonorant dagesh, plene/defective matres, a
 /// guttural's hataf colour), so a *folded* match is less certain than one whose
 /// bytes are identical. Ranking exact matches first floats the natural reading
