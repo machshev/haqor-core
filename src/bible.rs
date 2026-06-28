@@ -729,6 +729,26 @@ impl Bible {
         }
         Ok(Bible { db })
     }
+
+    /// Attach a writable `progress.db` (created if absent) under the `progress`
+    /// schema and ensure its tables exist. Unlike the corpus databases — which
+    /// [`Bible::open`] attaches read-only (`immutable=1`) — this one is
+    /// read-write: the spaced-repetition tutor ([`crate::tutor`]) persists its
+    /// review scheduling here. Call once after opening; tutor methods assume it.
+    pub fn attach_progress<P: AsRef<Path>>(&self, progress_db: P) -> rusqlite::Result<()> {
+        self.db.execute(
+            "ATTACH DATABASE ?1 AS progress",
+            [progress_db.as_ref().to_string_lossy().as_ref()],
+        )?;
+        crate::tutor::init_progress_schema(&self.db)
+    }
+
+    /// Crate-internal access to the underlying connection (all corpus schemas
+    /// plus, once [`Bible::attach_progress`] has run, `progress`), for sibling
+    /// modules such as [`crate::tutor`] that query across them.
+    pub(crate) fn conn(&self) -> &Connection {
+        &self.db
+    }
 }
 
 /// SQLite URI for a read-only database file. Note that SQLite %-decodes URI
