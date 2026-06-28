@@ -648,6 +648,10 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
 
     // Root inherited across a section from its `type="root"` entry.
     let mut current_root = String::new();
+    // The Biblical Aramaic parts (`<part xml:lang="arc">`) are ordered
+    // alphabetically rather than by root, which changes how the section root is
+    // inherited (see the entry-end handler).
+    let mut is_aramaic = false;
 
     let tx = db.transaction()?;
     let mut rows = 0;
@@ -657,6 +661,14 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
         loop {
             match reader.read_event_into(&mut buf)? {
                 Event::Start(e) => match e.name().as_ref() {
+                    b"part" => {
+                        is_aramaic = e
+                            .try_get_attribute("xml:lang")?
+                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .transpose()?
+                            .map(|v| v == "arc")
+                            .unwrap_or(false);
+                    }
                     b"section" => current_root.clear(),
                     b"entry" => {
                         bdb_id = e
@@ -862,9 +874,31 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         if is_root_entry && let Ok(r) = Root::parse(&word) {
                             current_root = r.letters.iter().collect();
                         }
-                        // Derivatives inherit the section root; if it is still
-                        // unknown, fall back to parsing this headword.
-                        let root = if !current_root.is_empty() {
+                        let cons = consonants(&word);
+                        // The Hebrew lexicon is curated by root, so derivatives
+                        // inherit the section root unconditionally (falling back
+                        // to parsing this headword when none is set). The
+                        // Biblical Aramaic parts are instead ordered
+                        // alphabetically: each section opens with a (often
+                        // content-less) root header, then lists unrelated lemmas
+                        // alphabetically. Inheriting across that tail wrongly
+                        // files e.g. אִגְּרָא "letter" under אבה. Genuine Aramaic
+                        // derivatives keep the root as a consonant prefix
+                        // (אחר → אחרי, אחרין …), so there we inherit only when the
+                        // skeleton begins with the root; otherwise key the entry
+                        // on its own root, falling back to its skeleton so
+                        // unparsable particles don't collapse into one bucket.
+                        let root: String = if is_aramaic {
+                            if !current_root.is_empty() && cons.starts_with(&current_root) {
+                                current_root.clone()
+                            } else {
+                                Root::parse(&word)
+                                    .ok()
+                                    .map(|r| r.letters.iter().collect::<String>())
+                                    .filter(|r| !r.is_empty())
+                                    .unwrap_or_else(|| cons.clone())
+                            }
+                        } else if !current_root.is_empty() {
                             current_root.clone()
                         } else {
                             Root::parse(&word)
@@ -876,7 +910,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             &bdb_id,
                             &root,
                             &word,
-                            consonants(&word),
+                            &cons,
                             tidy(&pos),
                             gloss,
                             &content_json,
