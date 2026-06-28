@@ -201,6 +201,98 @@ fn tidy(s: &str) -> String {
     s.split_whitespace().collect::<Vec<_>>().join(" ")
 }
 
+/// Normalise the text of one definition span. The BDB XML is mixed content
+/// laid out across lines, so raw text nodes carry the source file's newlines
+/// and tab indentation between inline elements — which the app renders
+/// verbatim as stray whitespace. Collapse internal runs to single spaces, but
+/// keep a single leading/trailing space when the original had one so adjacent
+/// styled runs stay separated (`"= "` + `"decide"`). A whitespace-only node is
+/// structural indentation when it spans a line break (drop it) or a real
+/// same-line gap otherwise (keep one space).
+fn tidy_span_text(s: &str) -> String {
+    let core = tidy(s);
+    if core.is_empty() {
+        return if s.contains('\n') {
+            String::new()
+        } else {
+            " ".to_string()
+        };
+    }
+    let mut out = String::with_capacity(core.len() + 2);
+    if s.starts_with(char::is_whitespace) {
+        out.push(' ');
+    }
+    out.push_str(&core);
+    if s.ends_with(char::is_whitespace) {
+        out.push(' ');
+    }
+    out
+}
+
+/// A short fallback gloss for a BDB entry whose headword carried no bold
+/// `<def>`, so [`load_bdb`] collected nothing into `gloss`. These are mostly
+/// proper names and cross-references ("v. אבה"), whose meaning lives in the
+/// part-of-speech marker and the plain descriptive text of the senses rather
+/// than a tagged definition — without this the app's Lexicon tab shows a blank
+/// gloss for ~40% of entries (every Simeon, Shimei, place name, …).
+///
+/// We take the entry's leading sense plus its first descriptive sub-sense,
+/// concatenating their plain span text (scripture citations dropped — they are
+/// locators, not meaning) and stripping the leading BDB occurrence-count digits.
+/// The part-of-speech marker (`n.pr.m.`) is kept so a bare name still reads as
+/// one. Empty when the entry has no usable definition text at all.
+fn fallback_gloss(senses: &[Value]) -> String {
+    let sense_text = |s: &Value| -> String {
+        let Some(defs) = s.get("definition").and_then(Value::as_array) else {
+            return String::new();
+        };
+        let mut out = String::new();
+        for sp in defs {
+            if sp.get("href").is_some() {
+                continue;
+            }
+            if let Some(t) = sp.get("t").and_then(Value::as_str) {
+                out.push_str(t);
+            }
+        }
+        tidy(&out)
+    };
+
+    // Leading sense (often just the POS marker), then the first sense that adds
+    // descriptive words — enough to name a proper noun, not the whole list.
+    let mut parts: Vec<String> = Vec::new();
+    for s in senses {
+        let t = sense_text(s);
+        if !t.is_empty() {
+            parts.push(t);
+        }
+        if parts.len() >= 2 {
+            break;
+        }
+    }
+    let joined = parts.join(" ");
+
+    // Drop a leading bare occurrence count ("44 n.pr.m. …" → "n.pr.m. …").
+    let body = joined
+        .split_once(' ')
+        .filter(|(head, _)| !head.is_empty() && head.chars().all(|c| c.is_ascii_digit()))
+        .map_or(joined.as_str(), |(_, rest)| rest);
+
+    let cleaned = body.trim().trim_end_matches([',', ';', ':']).trim();
+
+    // Safety cap: keep glosses to a single readable phrase, on a word boundary.
+    const MAX: usize = 80;
+    if cleaned.chars().count() <= MAX {
+        return cleaned.to_string();
+    }
+    let cut = cleaned
+        .char_indices()
+        .nth(MAX)
+        .map_or(cleaned.len(), |(i, _)| i);
+    let cut = cleaned[..cut].rfind(' ').unwrap_or(cut);
+    format!("{}…", cleaned[..cut].trim_end())
+}
+
 /// Parse HebrewStrong.xml and insert one row per entry. Returns rows written.
 fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
     db.execute(
@@ -508,7 +600,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                                     gloss_parts.push(g);
                                 }
                             }
-                            if let Some(sp) = span(&txt, style, href.as_deref()) {
+                            if let Some(sp) = span(&tidy_span_text(&txt), style, href.as_deref()) {
                                 top.definition.push(sp);
                             }
                         }
@@ -555,6 +647,16 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             );
                         }
                         senses.extend(intro.senses.iter().map(Sense::to_json));
+                        // The headline gloss is the headword's bold <def> text;
+                        // when an entry has none (proper names, cross-references)
+                        // derive a readable fallback from the sense text so the
+                        // Lexicon tab is never blank.
+                        let gloss = if gloss_parts.is_empty() {
+                            fallback_gloss(&senses)
+                        } else {
+                            gloss_parts.join("; ")
+                        };
+
                         let content_json = Value::Object({
                             let mut m = Map::new();
                             m.insert("senses".into(), Value::Array(senses));
@@ -582,7 +684,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             &word,
                             consonants(&word),
                             tidy(&pos),
-                            gloss_parts.join("; "),
+                            gloss,
                             &content_json,
                             tidy(&status),
                         ))?;
@@ -967,4 +1069,57 @@ pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
     let total = strongs + bdb + index + roots;
     info!("Wrote {total} rows to {}", output.display());
     Ok(total)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use serde_json::json;
+
+    // Build a `senses` array shaped like the one `load_bdb` assembles, so the
+    // fallback runs against the same JSON the entry handler passes in.
+    fn senses(v: Value) -> Vec<Value> {
+        v.as_array().unwrap().clone()
+    }
+
+    #[test]
+    fn fallback_names_a_proper_noun_from_its_first_descriptive_sense() {
+        // שִׁמְעוֹן: leading sense is just the occurrence count + POS marker; the
+        // identity lives in the first numbered sense.
+        let s = senses(json!([
+            {"definition": [{"t": " 44 "}, {"i": true, "t": "n.pr.m"}, {"t": ". "}]},
+            {"num": "1", "definition": [{"t": "second son of Jacob and Leah"}]},
+            {"num": "2", "definition": [{"t": "tribal name"}]},
+        ]));
+        assert_eq!(fallback_gloss(&s), "n.pr.m. second son of Jacob and Leah");
+    }
+
+    #[test]
+    fn fallback_uses_inline_description_and_drops_citations() {
+        // שָׁמָע: one sense, POS + description + a scripture ref locator.
+        let s = senses(json!([
+            {"definition": [
+                {"t": " "}, {"i": true, "t": "n.pr.m"}, {"t": ". a hero of David "},
+                {"href": "I Chronicles 11:44", "t": "1 Ch 11:44"},
+            ]},
+        ]));
+        assert_eq!(fallback_gloss(&s), "n.pr.m. a hero of David");
+    }
+
+    #[test]
+    fn fallback_is_empty_when_there_is_no_text() {
+        assert_eq!(fallback_gloss(&[]), "");
+        // Only a scripture ref — no descriptive words to show.
+        let s = senses(json!([{"definition": [{"t": " "}, {"href": "x", "t": "2 S 23:31"}]}]));
+        assert_eq!(fallback_gloss(&s), "");
+    }
+
+    #[test]
+    fn fallback_truncates_on_a_word_boundary() {
+        let long = "a".repeat(40) + " " + &"b".repeat(60);
+        let s = senses(json!([{"definition": [{"t": long}]}]));
+        let g = fallback_gloss(&s);
+        assert!(g.ends_with('…'));
+        assert!(!g.contains('b'), "should cut at the space before the long run");
+    }
 }
