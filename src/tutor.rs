@@ -279,6 +279,47 @@ fn is_vowel_point(c: char) -> bool {
     matches!(c as u32, 0x05B0..=0x05B9 | 0x05BB | 0x05C7)
 }
 
+/// Gutturals — the only consonants a hataf (reduced) vowel sits under.
+const GUTTURALS: [&str; 4] = ["א", "ה", "ח", "ע"];
+/// Clear, common consonants preferred when a vowel is shown in isolation; any
+/// consonant is grammatical for an ordinary (non-hataf) vowel.
+const CLEAR_HOSTS: [&str; 6] = ["מ", "ל", "נ", "ר", "ת", "ב"];
+
+fn is_hataf(vowel: char) -> bool {
+    matches!(vowel as u32, 0x05B1 | 0x05B2 | 0x05B3)
+}
+
+/// Preferred consonants that can legitimately carry `vowel`.
+fn valid_host_prefs(vowel: char) -> &'static [&'static str] {
+    if is_hataf(vowel) {
+        &GUTTURALS
+    } else {
+        &CLEAR_HOSTS
+    }
+}
+
+/// The consonant `vowel` sits on in `surface`: the nearest preceding base letter
+/// (final forms folded). None if no consonant precedes it.
+fn contextual_host(surface: &str, vowel: char) -> Option<String> {
+    let mut on = None;
+    for c in surface.chars() {
+        if c == vowel {
+            break;
+        }
+        if is_consonant(c) {
+            on = Some(fold_final(c).to_string());
+        }
+    }
+    on
+}
+
+/// The consonant to teach before `vowel` when no valid host is learnt yet: the
+/// one it sits on in the word (needed for the word anyway), else its first valid
+/// preferred host.
+fn host_to_teach(surface: &str, vowel: char) -> String {
+    contextual_host(surface, vowel).unwrap_or_else(|| valid_host_prefs(vowel)[0].to_string())
+}
+
 /// Decompose a (normalized) surface into its distinct teachable glyphs in
 /// first-seen order: consonants (final forms folded) and niqqud points. The
 /// surface text already contains only these characters.
@@ -339,10 +380,9 @@ impl Bible {
         }
         if let Some((g, _)) = glyph {
             let ch = g.chars().next();
-            let host = if ch.is_some_and(is_vowel_point) {
-                self.known_consonant_host()?
-            } else {
-                None
+            let host = match ch {
+                Some(c) if is_vowel_point(c) => self.known_vowel_host("", c)?,
+                _ => None,
             };
             return Ok(Some(StudyItem::ReviewGlyph(GlyphCard {
                 is_consonant: ch.is_some_and(is_consonant),
@@ -353,25 +393,38 @@ impl Bible {
         Ok(None)
     }
 
-    /// An already-learnt consonant to display a vowel on, preferring clear
-    /// single-sound letters, else any known consonant. None if the learner knows
-    /// no consonants yet (so the card falls back to a dotted circle).
-    fn known_consonant_host(&self) -> rusqlite::Result<Option<String>> {
-        const PREFER: [&str; 6] = ["מ", "ל", "נ", "ר", "ת", "ב"];
-        for p in PREFER {
-            let known = self
-                .conn()
-                .query_row(
-                    "SELECT 1 FROM progress.glyph_srs WHERE glyph = ?1",
-                    params![p],
-                    |_| Ok(()),
-                )
-                .optional()?
-                .is_some();
-            if known {
-                return Ok(Some(p.to_string()));
+    /// Whether a glyph has been introduced.
+    fn glyph_known(&self, glyph: &str) -> rusqlite::Result<bool> {
+        Ok(self
+            .conn()
+            .query_row(
+                "SELECT 1 FROM progress.glyph_srs WHERE glyph = ?1",
+                params![glyph],
+                |_| Ok(()),
+            )
+            .optional()?
+            .is_some())
+    }
+
+    /// A *learnt* consonant that can legitimately carry `vowel`: the one it sits
+    /// on in `surface` (real context) when learnt, else a learnt letter from its
+    /// valid set (gutturals for a hataf, any letter otherwise). None when no
+    /// suitable host is learnt yet — the caller then teaches one first.
+    fn known_vowel_host(&self, surface: &str, vowel: char) -> rusqlite::Result<Option<String>> {
+        if let Some(ctx) = contextual_host(surface, vowel) {
+            if self.glyph_known(&ctx)? {
+                return Ok(Some(ctx));
             }
         }
+        for g in valid_host_prefs(vowel) {
+            if self.glyph_known(g)? {
+                return Ok(Some(g.to_string()));
+            }
+        }
+        if is_hataf(vowel) {
+            return Ok(None); // a hataf needs a guttural; none learnt yet
+        }
+        // Any learnt consonant can carry an ordinary vowel.
         self.conn()
             .query_row(
                 "SELECT glyph FROM progress.glyph_srs \
@@ -382,41 +435,24 @@ impl Bible {
             .optional()
     }
 
-    /// Choose the host consonant for a glyph card. Vowels get the consonant they
-    /// actually sit on in `surface` if it is already learnt (familiar context),
-    /// else any known consonant; consonants and reading marks get none.
-    fn glyph_host(&self, surface: &str, glyph: &str) -> rusqlite::Result<Option<String>> {
-        let Some(ch) = glyph.chars().next() else {
-            return Ok(None);
-        };
+    /// Build the next NewGlyph item. A vowel is shown on a learnt valid host;
+    /// if none is learnt yet, teach a valid host consonant first instead.
+    fn new_glyph_item(&self, surface: &str, g: &GlyphCard) -> rusqlite::Result<StudyItem> {
+        let ch = g.glyph.chars().next().unwrap_or(' ');
         if !is_vowel_point(ch) {
-            return Ok(None);
+            return Ok(StudyItem::NewGlyph(g.clone()));
         }
-        // The consonant this vowel sits on: the nearest preceding base letter.
-        let mut on: Option<String> = None;
-        for c in surface.chars() {
-            if c == ch {
-                break;
-            }
-            if is_consonant(c) {
-                on = Some(fold_final(c).to_string());
-            }
+        match self.known_vowel_host(surface, ch)? {
+            Some(host) => Ok(StudyItem::NewGlyph(GlyphCard {
+                host: Some(host),
+                ..g.clone()
+            })),
+            None => Ok(StudyItem::NewGlyph(GlyphCard {
+                glyph: host_to_teach(surface, ch),
+                is_consonant: true,
+                host: None,
+            })),
         }
-        if let Some(h) = &on {
-            let known = self
-                .conn()
-                .query_row(
-                    "SELECT 1 FROM progress.glyph_srs WHERE glyph = ?1",
-                    params![h],
-                    |_| Ok(()),
-                )
-                .optional()?
-                .is_some();
-            if known {
-                return Ok(on);
-            }
-        }
-        self.known_consonant_host()
     }
 
     /// The not-yet-readable verse needing the fewest new words, tie-broken by
@@ -573,11 +609,7 @@ impl Bible {
                 Some((b, c, v)) => match self.next_word_in_verse(b, c, v)? {
                     Some(word) => {
                         return Ok(match word.new_glyphs.first() {
-                            Some(g) => {
-                                let mut g = g.clone();
-                                g.host = self.glyph_host(&word.surface, &g.glyph)?;
-                                StudyItem::NewGlyph(g)
-                            }
+                            Some(g) => self.new_glyph_item(&word.surface, g)?,
                             None => StudyItem::NewWord(word),
                         });
                     }
