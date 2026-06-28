@@ -33,6 +33,14 @@ const KNOWN_REPS: i64 = 1;
 const DEFAULT_EASE: f64 = 2.5;
 const MIN_EASE: f64 = 1.3;
 
+/// Reading marks that punctuate verses but never appear inside a word surface:
+/// the sof pasuq (the verse-ending "full stop") and the maqaf (joins short
+/// words into one reading unit). They are taught from the verse itself — the
+/// first time the learner completes a verse containing one not yet seen — since
+/// tokenisation splits on the maqaf and normalisation drops both. Ordered
+/// sof-pasuq-first as every verse ends in one.
+const READING_MARKS: [char; 2] = ['\u{05C3}', '\u{05BE}'];
+
 const SECONDS_PER_DAY: i64 = 86_400;
 
 /// How the learner rated a card, mapped onto SM-2 behaviour.
@@ -485,6 +493,11 @@ impl Bible {
                         });
                     }
                     None => {
+                        // Before the reward read, teach any verse punctuation
+                        // (sof pasuq / maqaf) the learner has not yet seen.
+                        if let Some(mark) = self.next_unseen_reading_mark(b, c, v)? {
+                            return Ok(StudyItem::NewGlyph(mark));
+                        }
                         // Verse complete: record it, reward with a read, advance.
                         self.conn().execute(
                             "INSERT INTO progress.verse_progress(book, chapter, verse, state, last_read_epoch) \
@@ -569,6 +582,34 @@ impl Bible {
         }
         let _ = introduced_new;
         self.next_study_item(now)
+    }
+
+    /// The first [`READING_MARKS`] punctuation mark present in verse `(b,c,v)`'s
+    /// display text that the learner has not yet been introduced to, if any.
+    fn next_unseen_reading_mark(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Option<GlyphCard>> {
+        let text = self.get(b, c, v)?;
+        for mark in READING_MARKS {
+            if !text.contains(mark) {
+                continue;
+            }
+            let key = mark.to_string();
+            let seen = self
+                .conn()
+                .query_row(
+                    "SELECT 1 FROM progress.glyph_srs WHERE glyph = ?1",
+                    params![key],
+                    |_| Ok(()),
+                )
+                .optional()?
+                .is_some();
+            if !seen {
+                return Ok(Some(GlyphCard {
+                    glyph: key,
+                    is_consonant: false,
+                }));
+            }
+        }
+        Ok(None)
     }
 
     /// Up to `limit` other verses sharing a word with `(b,c,v)` that are now
