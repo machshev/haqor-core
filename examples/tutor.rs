@@ -21,7 +21,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     for i in 0..steps {
         item = match item {
             StudyItem::NewGlyph(g) => {
-                println!("{i:>3}  NEW GLYPH   {}  (consonant={})", g.glyph, g.is_consonant);
+                println!(
+                    "{i:>3}  NEW GLYPH   {}  (consonant={}, host={:?})",
+                    g.glyph, g.is_consonant, g.host
+                );
                 bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
             }
             StudyItem::ReviewGlyph(g) => {

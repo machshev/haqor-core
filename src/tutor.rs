@@ -164,6 +164,10 @@ pub struct GlyphCard {
     pub glyph: String,
     /// True for a base consonant, false for a vowel/dagesh/sin-shin point.
     pub is_consonant: bool,
+    /// For a vowel point, an already-learnt consonant to display it on, so the
+    /// learner meets the mark in a familiar context (and a sounded-out syllable)
+    /// rather than on a bare circle. None for consonants and reading marks.
+    pub host: Option<String>,
 }
 
 /// A word to learn or review.
@@ -268,6 +272,13 @@ fn is_consonant(c: char) -> bool {
     (0x05D0..=0x05EA).contains(&(c as u32))
 }
 
+/// A proper vowel point (sheva through holam, qubuts, qamats qatan) — the marks
+/// taught on a host consonant. Excludes dagesh and the shin/sin dots, which stay
+/// on the dotted circle since they don't generalise across consonants.
+fn is_vowel_point(c: char) -> bool {
+    matches!(c as u32, 0x05B0..=0x05B9 | 0x05BB | 0x05C7)
+}
+
 /// Decompose a (normalized) surface into its distinct teachable glyphs in
 /// first-seen order: consonants (final forms folded) and niqqud points. The
 /// surface text already contains only these characters.
@@ -286,6 +297,7 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
             out.push(GlyphCard {
                 glyph: key,
                 is_consonant: cons,
+                host: None,
             });
         }
     }
@@ -326,12 +338,85 @@ impl Bible {
             return Ok(self.word_card(&s)?.map(StudyItem::ReviewWord));
         }
         if let Some((g, _)) = glyph {
+            let ch = g.chars().next();
+            let host = if ch.is_some_and(is_vowel_point) {
+                self.known_consonant_host()?
+            } else {
+                None
+            };
             return Ok(Some(StudyItem::ReviewGlyph(GlyphCard {
-                is_consonant: g.chars().next().is_some_and(is_consonant),
+                is_consonant: ch.is_some_and(is_consonant),
                 glyph: g,
+                host,
             })));
         }
         Ok(None)
+    }
+
+    /// An already-learnt consonant to display a vowel on, preferring clear
+    /// single-sound letters, else any known consonant. None if the learner knows
+    /// no consonants yet (so the card falls back to a dotted circle).
+    fn known_consonant_host(&self) -> rusqlite::Result<Option<String>> {
+        const PREFER: [&str; 6] = ["מ", "ל", "נ", "ר", "ת", "ב"];
+        for p in PREFER {
+            let known = self
+                .conn()
+                .query_row(
+                    "SELECT 1 FROM progress.glyph_srs WHERE glyph = ?1",
+                    params![p],
+                    |_| Ok(()),
+                )
+                .optional()?
+                .is_some();
+            if known {
+                return Ok(Some(p.to_string()));
+            }
+        }
+        self.conn()
+            .query_row(
+                "SELECT glyph FROM progress.glyph_srs \
+                 WHERE unicode(glyph) BETWEEN 1488 AND 1514 LIMIT 1",
+                [],
+                |r| r.get(0),
+            )
+            .optional()
+    }
+
+    /// Choose the host consonant for a glyph card. Vowels get the consonant they
+    /// actually sit on in `surface` if it is already learnt (familiar context),
+    /// else any known consonant; consonants and reading marks get none.
+    fn glyph_host(&self, surface: &str, glyph: &str) -> rusqlite::Result<Option<String>> {
+        let Some(ch) = glyph.chars().next() else {
+            return Ok(None);
+        };
+        if !is_vowel_point(ch) {
+            return Ok(None);
+        }
+        // The consonant this vowel sits on: the nearest preceding base letter.
+        let mut on: Option<String> = None;
+        for c in surface.chars() {
+            if c == ch {
+                break;
+            }
+            if is_consonant(c) {
+                on = Some(fold_final(c).to_string());
+            }
+        }
+        if let Some(h) = &on {
+            let known = self
+                .conn()
+                .query_row(
+                    "SELECT 1 FROM progress.glyph_srs WHERE glyph = ?1",
+                    params![h],
+                    |_| Ok(()),
+                )
+                .optional()?
+                .is_some();
+            if known {
+                return Ok(on);
+            }
+        }
+        self.known_consonant_host()
     }
 
     /// The not-yet-readable verse needing the fewest new words, tie-broken by
@@ -488,7 +573,11 @@ impl Bible {
                 Some((b, c, v)) => match self.next_word_in_verse(b, c, v)? {
                     Some(word) => {
                         return Ok(match word.new_glyphs.first() {
-                            Some(g) => StudyItem::NewGlyph(g.clone()),
+                            Some(g) => {
+                                let mut g = g.clone();
+                                g.host = self.glyph_host(&word.surface, &g.glyph)?;
+                                StudyItem::NewGlyph(g)
+                            }
                             None => StudyItem::NewWord(word),
                         });
                     }
@@ -606,6 +695,7 @@ impl Bible {
                 return Ok(Some(GlyphCard {
                     glyph: key,
                     is_consonant: false,
+                    host: None,
                 }));
             }
         }
