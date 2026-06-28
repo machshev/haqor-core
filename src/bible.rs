@@ -421,6 +421,116 @@ fn strip_accents(word: &str) -> String {
         .collect()
 }
 
+/// Curated `(surface, root, gloss)` for high-frequency closed-class words whose
+/// consonant skeleton collides with an unrelated lexeme, so the BDB lookups in
+/// [`lexicon_fallback`] would otherwise bridge them to the wrong sense — כִּי
+/// "that/because" shares כ-י with the verb כוה "burn", אֲשֶׁר "who/which" with
+/// אשׁר "go straight", אֶת (object marker) with the pronoun "thou", אִם "if"
+/// with אֵם "mother". These are among the most frequent words in the OT, so a
+/// wrong gloss is conspicuous; consulting this table first pins the
+/// function-word sense. Keyed by accent-stripped pointed form; root is left
+/// empty for the bare particles (as their BDB headwords are).
+const CURATED_GLOSSES: &[(&str, &str, &str)] = &[
+    ("אֶת", "", "mark of the accusative; with"),
+    ("אֲשֶׁר", "", "who; which; that"),
+    ("כִּי", "", "that; because; for; when"),
+    ("אִם", "", "if; whether"),
+    ("אַל", "", "not; do not"),
+    ("אֵין", "", "there is not; nothing; without"),
+    ("לָהֶם", "", "to them; for them"),
+    ("לוֹ", "", "to him; for him"),
+    ("עַד", "", "until; as far as; while"),
+    ("לִפְנֵי", "פנה", "before; in the presence of"),
+    ("כֵּן", "", "so; thus"),
+];
+
+/// Curated `(root, gloss)` for a surface, ignoring cantillation and combining
+/// order — the override consulted ahead of the BDB lookups (see
+/// [`CURATED_GLOSSES`]).
+fn curated_gloss(surface: &str) -> Option<(String, String)> {
+    let canonical = normalize_hebrew_combining(&strip_accents(surface));
+    CURATED_GLOSSES.iter().find_map(|(key, root, gloss)| {
+        (normalize_hebrew_combining(&strip_accents(key)) == canonical)
+            .then(|| (root.to_string(), gloss.to_string()))
+    })
+}
+
+/// Lexicon-only `(root, gloss, prefix)` for a surface with no generated
+/// analysis — the function-word / proper-noun bridge. Consults the curated
+/// override first, then an exact pointed headword, then a proclitic-stripped
+/// match, then a pointing-blind consonant match. The connection must have the
+/// BDB lexicon attached as `lexdb` (true of both the runtime [`Bible`]
+/// connection and the gen-hebrew build, which uses this to precompute the
+/// `lexical_analyses` table). `prefix` is the proclitic spelling when one was
+/// stripped, otherwise empty.
+pub(crate) fn lexicon_fallback(db: &Connection, surface: &str) -> Option<(String, String, String)> {
+    if let Some((root, gloss)) = curated_gloss(surface).or_else(|| bdb_exact(db, surface)) {
+        return Some((root, gloss, String::new()));
+    }
+    for (proclitic, _) in PROCLITICS {
+        if let Some(rest) = strip_proclitic(surface, proclitic) {
+            let matched = curated_gloss(&rest)
+                .or_else(|| bdb_exact(db, &rest))
+                .or_else(|| {
+                    (fold_consonants(&rest).chars().count() >= 3)
+                        .then(|| bdb_cons(db, &rest))
+                        .flatten()
+                });
+            if let Some((root, gloss)) = matched {
+                return Some((root, gloss, proclitic.to_string()));
+            }
+        }
+    }
+    bdb_cons(db, surface).map(|(root, gloss)| (root, gloss, String::new()))
+}
+
+/// The glossed BDB lexeme whose pointed headword (accents stripped) matches the
+/// surface exactly — the citation-form bridge. Both sides are reordered to
+/// traditional combining order before comparison (surfaces store
+/// vowel-before-dagesh, headwords vary).
+fn bdb_exact(db: &Connection, surface: &str) -> Option<(String, String)> {
+    let canonical = normalize_hebrew_combining(surface);
+    bdb_rows(db, surface)?
+        .into_iter()
+        .find(|(word, _, _)| normalize_hebrew_combining(&strip_accents(word)) == canonical)
+        .map(|(_, root, gloss)| (root, gloss))
+}
+
+/// The first glossed BDB lexeme sharing the surface's consonant skeleton — a
+/// last-resort bridge that ignores pointing.
+fn bdb_cons(db: &Connection, surface: &str) -> Option<(String, String)> {
+    bdb_rows(db, surface)?
+        .into_iter()
+        .next()
+        .map(|(_, root, gloss)| (root, gloss))
+}
+
+/// Glossed BDB `(word, root, gloss)` rows matching the surface's consonant
+/// skeleton, in lexicon order.
+fn bdb_rows(db: &Connection, surface: &str) -> Option<Vec<(String, String, String)>> {
+    let cons = fold_consonants(surface);
+    if cons.is_empty() {
+        return None;
+    }
+    let mut stmt = db
+        .prepare(
+            "SELECT word, root, gloss FROM lexdb.bdb \
+             WHERE cons = ?1 AND gloss IS NOT NULL AND gloss <> '' \
+             ORDER BY bdb_id",
+        )
+        .ok()?;
+    stmt.query_map([&cons], |row| {
+        Ok((
+            row.get::<_, Option<String>>(0)?.unwrap_or_default(),
+            row.get::<_, String>(1)?,
+            row.get::<_, String>(2)?,
+        ))
+    })
+    .ok()?
+    .collect::<rusqlite::Result<Vec<_>>>()
+    .ok()
+}
+
 /// Compact human-readable morphology line for a vocabulary card, e.g.
 /// "Qal wayyiqtol 3ms" for verbs or "noun, plural construct" for nouns,
 /// prefixed with any attached cluster ("הַ־ + …").
@@ -717,6 +827,47 @@ impl Bible {
             });
         }
 
+        // Closed-class function words (and proper nouns) carry a surface row but
+        // no generated verb/noun analysis — the prefilter strips their spurious
+        // verb readings and they are not nouns. The gen-hebrew build precomputes
+        // a lexicon bridge for them into `lexical_analyses`; read it back so the
+        // app shows a gloss instead of "no OT parse". A missing table (an older
+        // db) just yields `None`, the previous behaviour.
+        let bridge = self
+            .db
+            .query_row(
+                "SELECT la.root, la.gloss, la.prefix \
+                 FROM hebrewdb.lexical_analyses la \
+                 JOIN hebrewdb.surface s ON s.surface_id = la.surface_id \
+                 WHERE s.text = ?1",
+                [&norm],
+                |row| {
+                    Ok((
+                        row.get::<_, String>(0)?,
+                        row.get::<_, String>(1)?,
+                        row.get::<_, String>(2)?,
+                    ))
+                },
+            )
+            .optional()
+            .ok()
+            .flatten();
+        if let Some((root, gloss, prefix)) = bridge {
+            return Some(HebrewWord {
+                word: norm,
+                root,
+                gloss,
+                form: None,
+                tense: None,
+                person: None,
+                gender: None,
+                number: None,
+                state: None,
+                prefix: (!prefix.is_empty()).then_some(prefix),
+                vav_con: false,
+            });
+        }
+
         None
     }
 
@@ -834,7 +985,7 @@ impl Bible {
     /// then covers genuinely inflected forms, and a pointing-blind consonant
     /// match is the last resort.
     fn vocab_resolve(&self, surface: &str) -> (String, String, String) {
-        if let Some((root, gloss)) = self.vocab_bdb_exact(surface) {
+        if let Some((root, gloss)) = curated_gloss(surface).or_else(|| bdb_exact(&self.db, surface)) {
             return (root, gloss, String::new());
         }
         // One-letter proclitics (and/the/in/to/from/like) hide many frequent
@@ -843,11 +994,13 @@ impl Bible {
         // match unrelated lexemes.
         for (proclitic, meaning) in PROCLITICS {
             if let Some(rest) = strip_proclitic(surface, proclitic) {
-                let matched = self.vocab_bdb_exact(&rest).or_else(|| {
-                    (fold_consonants(&rest).chars().count() >= 3)
-                        .then(|| self.vocab_bdb_cons(&rest))
-                        .flatten()
-                });
+                let matched = curated_gloss(&rest)
+                    .or_else(|| bdb_exact(&self.db, &rest))
+                    .or_else(|| {
+                        (fold_consonants(&rest).chars().count() >= 3)
+                            .then(|| bdb_cons(&self.db, &rest))
+                            .flatten()
+                    });
                 if let Some((root, gloss)) = matched {
                     return (root, gloss, format!("{proclitic}־ ({meaning}) + {rest}"));
                 }
@@ -860,59 +1013,15 @@ impl Bible {
             let morph = morph_summary(&info);
             return (info.root, info.gloss, morph);
         }
-        if let Some((root, gloss)) = self.vocab_bdb_cons(surface) {
+        if let Some((root, gloss)) = bdb_cons(&self.db, surface) {
             return (root, gloss, String::new());
         }
         (String::new(), String::new(), String::new())
     }
 
-    /// The glossed BDB lexeme whose pointed headword (accents stripped)
-    /// matches the surface exactly — the citation-form bridge. Both sides
-    /// are reordered to traditional combining order before comparison
-    /// (surfaces store vowel-before-dagesh, headwords vary).
-    fn vocab_bdb_exact(&self, surface: &str) -> Option<(String, String)> {
-        let canonical = normalize_hebrew_combining(surface);
-        self.vocab_bdb_rows(surface)?
-            .into_iter()
-            .find(|(word, _, _)| normalize_hebrew_combining(&strip_accents(word)) == canonical)
-            .map(|(_, root, gloss)| (root, gloss))
-    }
-
-    /// The first glossed BDB lexeme sharing the surface's consonant skeleton —
-    /// a last-resort bridge that ignores pointing.
-    fn vocab_bdb_cons(&self, surface: &str) -> Option<(String, String)> {
-        self.vocab_bdb_rows(surface)?
-            .into_iter()
-            .next()
-            .map(|(_, root, gloss)| (root, gloss))
-    }
-
-    /// Glossed BDB `(word, root, gloss)` rows matching the surface's
-    /// consonant skeleton, in lexicon order.
-    fn vocab_bdb_rows(&self, surface: &str) -> Option<Vec<(String, String, String)>> {
-        let cons = fold_consonants(surface);
-        if cons.is_empty() {
-            return None;
-        }
-        let mut stmt = self
-            .db
-            .prepare(
-                "SELECT word, root, gloss FROM lexdb.bdb \
-                 WHERE cons = ?1 AND gloss IS NOT NULL AND gloss <> '' \
-                 ORDER BY bdb_id",
-            )
-            .ok()?;
-        stmt.query_map([&cons], |row| {
-            Ok((
-                row.get::<_, Option<String>>(0)?.unwrap_or_default(),
-                row.get::<_, String>(1)?,
-                row.get::<_, String>(2)?,
-            ))
-        })
-        .ok()?
-        .collect::<rusqlite::Result<Vec<_>>>()
-        .ok()
-    }
+    // The BDB lexicon bridge lives in free functions ([`lexicon_fallback`] and
+    // friends) so the gen-hebrew build can precompute it against the same
+    // `lexdb.bdb` schema with no `Bible` instance.
 
     /// OT verses where this exact surface form occurs.
     pub fn hebrew_surface_occurrences(&self, word: &str) -> rusqlite::Result<Vec<WordOccurrence>> {
@@ -1460,5 +1569,52 @@ mod tests {
                 .unwrap()
                 .is_empty()
         );
+    }
+
+    #[test]
+    fn test_hebrew_word_info_function_word() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // וְעַתָּה "and now" — a closed-class adverb with a surface row but no
+        // generated verb/noun analysis (the prefilter strips its spurious verb
+        // reading). The lexicon fallback strips the vav and bridges to BDB.
+        let info = bible
+            .hebrew_word_info("וְעַתָּה")
+            .expect("function word should resolve via lexicon");
+        assert!(info.gloss.to_lowercase().contains("now"));
+        assert!(info.prefix.is_some());
+        assert!(info.form.is_none());
+        assert!(info.tense.is_none());
+    }
+
+    #[test]
+    fn test_curated_gloss_overrides_homograph() {
+        // The curated override pins the function-word sense for closed-class
+        // words whose consonant skeleton collides with an unrelated lexeme,
+        // ahead of any BDB lookup. כִּי "that/because" must not bridge to the
+        // verb כוה "burn"; אֲשֶׁר "who/which" not to אשׁר "go straight".
+        assert_eq!(
+            curated_gloss("כִּי"),
+            Some((String::new(), "that; because; for; when".to_string()))
+        );
+        let (_, asher) = curated_gloss("אֲשֶׁר").expect("relative particle is curated");
+        assert!(asher.starts_with("who"));
+        // Matching ignores cantillation, so an accented surface still resolves.
+        assert!(curated_gloss("אֲשֶׁ\u{0596}ר").is_some());
+        // An ordinary word is left for the BDB lookups.
+        assert_eq!(curated_gloss("מֶלֶךְ"), None);
+    }
+
+    #[test]
+    fn test_hebrew_word_info_curated_function_word() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // כִּי bridges through the precomputed lexical_analyses table; the
+        // curated gloss must win over the homographic verb root כוה ("burn").
+        let info = bible
+            .hebrew_word_info("כִּי")
+            .expect("כִּי should resolve via the lexicon bridge");
+        assert!(info.gloss.contains("because"));
+        assert!(!info.gloss.to_lowercase().contains("burn"));
     }
 }

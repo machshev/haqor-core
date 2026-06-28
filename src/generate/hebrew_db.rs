@@ -351,6 +351,12 @@ fn create_schema(db: &Connection) -> Result<()> {
             label       TEXT    NOT NULL,
             prefix      TEXT    NOT NULL
          );
+         CREATE TABLE lexical_analyses(
+            surface_id INTEGER PRIMARY KEY,
+            root       TEXT NOT NULL,
+            gloss      TEXT NOT NULL,
+            prefix     TEXT NOT NULL
+         );
          CREATE TABLE roots(
             root          TEXT PRIMARY KEY,
             gizra         TEXT NOT NULL,
@@ -726,6 +732,62 @@ fn rebuild_roots(db: &Connection) -> Result<()> {
     Ok(())
 }
 
+/// Precompute the BDB lexicon bridge for every surface with no verb or noun
+/// analysis (function words, proper nouns, and the still-unparsed tail). These
+/// carry a surface row but no generated analysis, so the runtime parse lookup
+/// would otherwise return nothing for them. Resolving each to a `(root, gloss,
+/// prefix)` at build time turns the runtime read into a single indexed lookup
+/// (see [`crate::bible::Bible::hebrew_word_info`]).
+///
+/// A no-op without a lexicon (there is nothing to bridge to). Idempotent:
+/// clears `lexical_analyses` first, so it is safe on a rebuilt db.
+fn populate_lexical_bridge(db: &mut Connection, lexicon_db: Option<&Path>) -> Result<usize> {
+    let Some(lexicon) = lexicon_db else {
+        return Ok(0);
+    };
+    db.execute(
+        "ATTACH DATABASE ?1 AS lexdb",
+        [lexicon.to_string_lossy().as_ref()],
+    )?;
+
+    // Surfaces that produced no analysis of either kind.
+    let unanalysed: Vec<(i64, String)> = {
+        let mut stmt = db.prepare(
+            "SELECT s.surface_id, s.text FROM surface s \
+             WHERE NOT EXISTS (SELECT 1 FROM analyses a WHERE a.surface_id = s.surface_id) \
+               AND NOT EXISTS (SELECT 1 FROM noun_analyses n WHERE n.surface_id = s.surface_id) \
+             ORDER BY s.surface_id",
+        )?;
+        stmt.query_map([], |row| Ok((row.get(0)?, row.get(1)?)))?
+            .collect::<rusqlite::Result<Vec<_>>>()?
+    };
+
+    // Resolve each against BDB (immutable borrows of the same connection lexdb
+    // is attached to) before opening the write transaction.
+    let bridged: Vec<(i64, String, String, String)> = unanalysed
+        .iter()
+        .filter_map(|(id, text)| {
+            crate::bible::lexicon_fallback(db, text)
+                .map(|(root, gloss, prefix)| (*id, root, gloss, prefix))
+        })
+        .collect();
+
+    let tx = db.transaction()?;
+    {
+        tx.execute("DELETE FROM lexical_analyses", [])?;
+        let mut stmt = tx.prepare(
+            "INSERT INTO lexical_analyses(surface_id, root, gloss, prefix) \
+             VALUES (?1, ?2, ?3, ?4)",
+        )?;
+        for (id, root, gloss, prefix) in &bridged {
+            stmt.execute((id, root, gloss, prefix))?;
+        }
+    }
+    tx.commit()?;
+    db.execute_batch("DETACH DATABASE lexdb")?;
+    Ok(bridged.len())
+}
+
 /// Build `hebrew.db`, or incrementally improve an existing one. Returns
 /// (distinct surfaces, occurrences, parsed surfaces).
 ///
@@ -908,6 +970,9 @@ fn build_hebrew(
     rebuild_roots(&db)?;
 
     create_indexes_and_views(&db)?;
+
+    let bridged = populate_lexical_bridge(&mut db, lexicon_db)?;
+    info!("Bridged {bridged} unparsed surfaces to the BDB lexicon");
 
     info!(
         "Wrote {} surfaces ({} parsed), {} occurrences to {}",
