@@ -22,6 +22,11 @@ use rusqlite::{Connection, OptionalExtension, params};
 
 use crate::bible::Bible;
 
+/// A due glyph candidate `(glyph, due_epoch)`.
+type GlyphRow = Option<(String, i64)>;
+/// A due word candidate `(surface, aspect, due_epoch)`.
+type WordRow = Option<(String, String, i64)>;
+
 /// SM-2 ease bounds.
 const DEFAULT_EASE: f64 = 2.5;
 const MIN_EASE: f64 = 1.3;
@@ -246,10 +251,10 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             |r| r.get(0),
         )
         .optional()?;
-    if let Some(sql) = word_sql {
-        if !sql.contains("aspect") {
-            db.execute_batch("DROP TABLE progress.word_srs")?;
-        }
+    if let Some(sql) = word_sql
+        && !sql.contains("aspect")
+    {
+        db.execute_batch("DROP TABLE progress.word_srs")?;
     }
 
     db.execute_batch(
@@ -315,7 +320,7 @@ fn is_vowel_point(c: char) -> bool {
 }
 
 fn is_hataf(vowel: char) -> bool {
-    matches!(vowel as u32, 0x05B1 | 0x05B2 | 0x05B3)
+    matches!(vowel as u32, 0x05B1..=0x05B3)
 }
 
 /// Preferred consonants that can legitimately carry `vowel`.
@@ -431,10 +436,10 @@ impl Bible {
     // --- host selection for vowels ------------------------------------------
 
     fn known_vowel_host(&self, surface: &str, vowel: char) -> rusqlite::Result<Option<String>> {
-        if let Some(ctx) = contextual_host(surface, vowel) {
-            if self.glyph_known(&ctx)? {
-                return Ok(Some(ctx));
-            }
+        if let Some(ctx) = contextual_host(surface, vowel)
+            && self.glyph_known(&ctx)?
+        {
+            return Ok(Some(ctx));
         }
         for g in valid_host_prefs(vowel) {
             if self.glyph_known(g)? {
@@ -639,8 +644,7 @@ impl Bible {
 
         let gmap = |r: &rusqlite::Row| Ok((r.get(0)?, r.get(1)?));
         let wmap = |r: &rusqlite::Row| Ok((r.get(0)?, r.get(1)?, r.get(2)?));
-        let (glyph, word): (Option<(String, i64)>, Option<(String, String, i64)>) = if pull_forward
-        {
+        let (glyph, word): (GlyphRow, WordRow) = if pull_forward {
             (
                 self.conn().query_row(&gsql, [], gmap).optional()?,
                 self.conn().query_row(&wsql, [], wmap).optional()?,
@@ -733,51 +737,49 @@ impl Bible {
         if let Some(review) = self.next_review(now, false)? {
             return Ok(review);
         }
-        loop {
-            let target = match self.meta_target()? {
-                Some(t) => t,
-                None => match self.next_target_verse()? {
-                    Some(t) => {
-                        self.set_meta_target(Some(t))?;
-                        t
-                    }
-                    None => {
-                        // Nothing new to learn; keep any in-learning cards going.
-                        return Ok(self.next_review(now, true)?.unwrap_or(StudyItem::Done));
-                    }
-                },
-            };
-            let (b, c, v) = target;
-
-            if let Some(item) = self.next_introduction(b, c, v)? {
-                return Ok(item);
-            }
-            if !self.verse_done(b, c, v)? {
-                // Words mid-learning: drill a learning card toward graduation.
-                if let Some(review) = self.next_review(now, true)? {
-                    return Ok(review);
+        let target = match self.meta_target()? {
+            Some(t) => t,
+            None => match self.next_target_verse()? {
+                Some(t) => {
+                    self.set_meta_target(Some(t))?;
+                    t
                 }
-            }
-            // Verse fully learnt: teach any unseen reading marks, then read it.
-            if let Some(mark) = self.next_unseen_reading_mark(b, c, v)? {
-                return Ok(StudyItem::NewGlyph(mark));
-            }
-            self.conn().execute(
-                "INSERT INTO progress.verse_progress(book, chapter, verse, state, last_read_epoch) \
-                 VALUES (?1, ?2, ?3, 'readable', ?4) \
-                 ON CONFLICT(book, chapter, verse) DO UPDATE SET \
-                    state = 'readable', last_read_epoch = excluded.last_read_epoch",
-                params![b, c, v, now],
-            )?;
-            self.set_meta_target(None)?;
-            let examples = self.readable_examples(b, c, v, 3)?;
-            return Ok(StudyItem::ReadVerse(VerseCard {
-                book: b,
-                chapter: c,
-                verse: v,
-                examples,
-            }));
+                None => {
+                    // Nothing new to learn; keep any in-learning cards going.
+                    return Ok(self.next_review(now, true)?.unwrap_or(StudyItem::Done));
+                }
+            },
+        };
+        let (b, c, v) = target;
+
+        if let Some(item) = self.next_introduction(b, c, v)? {
+            return Ok(item);
         }
+        if !self.verse_done(b, c, v)? {
+            // Words mid-learning: drill a learning card toward graduation.
+            if let Some(review) = self.next_review(now, true)? {
+                return Ok(review);
+            }
+        }
+        // Verse fully learnt: teach any unseen reading marks, then read it.
+        if let Some(mark) = self.next_unseen_reading_mark(b, c, v)? {
+            return Ok(StudyItem::NewGlyph(mark));
+        }
+        self.conn().execute(
+            "INSERT INTO progress.verse_progress(book, chapter, verse, state, last_read_epoch) \
+             VALUES (?1, ?2, ?3, 'readable', ?4) \
+             ON CONFLICT(book, chapter, verse) DO UPDATE SET \
+                state = 'readable', last_read_epoch = excluded.last_read_epoch",
+            params![b, c, v, now],
+        )?;
+        self.set_meta_target(None)?;
+        let examples = self.readable_examples(b, c, v, 3)?;
+        Ok(StudyItem::ReadVerse(VerseCard {
+            book: b,
+            chapter: c,
+            verse: v,
+            examples,
+        }))
     }
 
     /// Record a graded review and return the next item. The `track` selects the
