@@ -233,6 +233,36 @@ fn tidy_span_text(s: &str) -> String {
     out
 }
 
+/// Expand the BDB abbreviation `v.` (Latin *vide*, "see") to the English word
+/// in definition text, so a cross-reference reads `see X` rather than `v. X`.
+/// Only the standalone token is touched, so `adv.`/`deriv.`/`subv.` are left
+/// intact; and `v.` immediately before a number is a verse citation, not
+/// *vide*, so it is kept too. Leading/trailing spacing is preserved (the spans
+/// abut styled runs, so the gap carries meaning).
+fn expand_vide(s: &str) -> String {
+    let toks: Vec<&str> = s.split_whitespace().collect();
+    if toks.is_empty() {
+        return s.to_string();
+    }
+    let mut parts: Vec<&str> = Vec::with_capacity(toks.len());
+    for (i, t) in toks.iter().enumerate() {
+        let next_is_num = toks
+            .get(i + 1)
+            .and_then(|n| n.chars().next())
+            .is_some_and(|c| c.is_ascii_digit());
+        parts.push(if *t == "v." && !next_is_num { "see" } else { t });
+    }
+    let mut out = String::with_capacity(s.len() + 4);
+    if s.starts_with(char::is_whitespace) {
+        out.push(' ');
+    }
+    out.push_str(&parts.join(" "));
+    if s.ends_with(char::is_whitespace) {
+        out.push(' ');
+    }
+    out
+}
+
 /// A short fallback gloss for a BDB entry whose headword carried no bold
 /// `<def>`, so [`load_bdb`] collected nothing into `gloss`. These are mostly
 /// proper names and cross-references ("v. אבה"), whose meaning lives in the
@@ -669,7 +699,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                                 }
                             }
                             if let Some(sp) = span(
-                                &tidy_span_text(&txt),
+                                &expand_vide(&tidy_span_text(&txt)),
                                 style,
                                 href.as_deref(),
                                 xref.as_deref(),
@@ -1177,6 +1207,24 @@ mod tests {
     // fallback runs against the same JSON the entry handler passes in.
     fn senses(v: Value) -> Vec<Value> {
         v.as_array().unwrap().clone()
+    }
+
+    #[test]
+    fn expand_vide_replaces_the_standalone_token_only() {
+        // The cross-reference stub (its own text node, spaces preserved).
+        assert_eq!(expand_vide(" v. "), " see ");
+        // Mid-phrase vide.
+        assert_eq!(expand_vide("in Naphtali, v. "), "in Naphtali, see ");
+        // "see also", "see supr.".
+        assert_eq!(expand_vide(" v. also "), " see also ");
+        // Tokens that merely end in "v." are untouched.
+        assert_eq!(expand_vide("adv. of negation"), "adv. of negation");
+        assert_eq!(expand_vide(" deriv. unknown "), " deriv. unknown ");
+        // "v." before a number is a verse citation, not vide.
+        assert_eq!(expand_vide("v. 18"), "v. 18");
+        // Whitespace-only / empty nodes pass through unchanged.
+        assert_eq!(expand_vide(" "), " ");
+        assert_eq!(expand_vide(""), "");
     }
 
     #[test]

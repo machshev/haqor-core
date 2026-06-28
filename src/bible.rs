@@ -1673,7 +1673,7 @@ mod tests {
     fn test_hebrew_bdb_xref_navigation() {
         require_data!();
         let bible = Bible::open("data").unwrap();
-        // נַחְנוּ (id n.cr.am) is a cross-reference stub "v. אֲנַחְנוּ": its content
+        // נַחְנוּ (id n.cr.am) is a cross-reference stub "see אֲנַחְנוּ": its content
         // carries the target's entry id as an `xref` the app navigates to.
         let stub = bible
             .hebrew_bdb_by_id("n.cr.am")
