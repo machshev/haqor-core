@@ -1159,7 +1159,8 @@ impl Bible {
     /// then covers genuinely inflected forms, and a pointing-blind consonant
     /// match is the last resort.
     fn vocab_resolve(&self, surface: &str) -> (String, String, String) {
-        if let Some((root, gloss)) = curated_gloss(surface).or_else(|| bdb_exact(&self.db, surface)) {
+        if let Some((root, gloss)) = curated_gloss(surface).or_else(|| bdb_exact(&self.db, surface))
+        {
             return (root, gloss, String::new());
         }
         // One-letter proclitics (and/the/in/to/from/like) hide many frequent
@@ -1728,12 +1729,15 @@ mod tests {
         // proper names (שִׁמְעוֹן Simeon, שִׁמְעִי Shimei, …). The app splits the
         // tree on `is_proper_noun` to head the names off on their own.
         let tree = bible.hebrew_bdb_by_root("שמע").unwrap();
-        let (common, proper): (Vec<_>, Vec<_>) =
-            tree.iter().partition(|e| !e.is_proper_noun());
+        let (common, proper): (Vec<_>, Vec<_>) = tree.iter().partition(|e| !e.is_proper_noun());
         // The verb "hear" lands in the common group; the name "Simeon" in the
         // proper group.
         assert!(common.iter().any(|e| e.gloss == "hear"));
-        assert!(proper.iter().any(|e| e.gloss.contains("second son of Jacob")));
+        assert!(
+            proper
+                .iter()
+                .any(|e| e.gloss.contains("second son of Jacob"))
+        );
         // The marker drives the split, and `prep`/`pron` never read as proper.
         assert!(proper.iter().all(|e| e.pos.starts_with("n.pr")));
         assert!(common.iter().all(|e| !e.pos.starts_with("n.pr")));
@@ -1903,7 +1907,10 @@ mod tests {
         let entries = bible
             .hebrew_bdb_for_surface(&info.word, info.prefix.as_deref().unwrap_or(""))
             .unwrap();
-        assert!(!entries.is_empty(), "function word should have a lexicon entry");
+        assert!(
+            !entries.is_empty(),
+            "function word should have a lexicon entry"
+        );
         assert!(entries.iter().any(|e| e.gloss.contains("who")));
         assert!(
             entries.iter().all(|e| !e.gloss.contains("waters")),
