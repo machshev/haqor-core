@@ -560,19 +560,33 @@ fn consonants(word: &str) -> String {
         .collect()
 }
 
-/// Pre-scan BDB to map every entry id to its headword (the first `<w>`'s text).
+/// What a BDB entry id resolves to, gathered in the pre-scan: its headword
+/// (the first `<w>`'s text) and its part-of-speech marker. Both are needed by
+/// [`load_bdb`] when it reaches a cross-reference, which names its target by id
+/// alone: the headword fills in the visible link text, and the pos is inherited
+/// so the redirect groups with the entry it points at rather than as "other".
+#[derive(Default, Clone)]
+struct BdbRef {
+    headword: String,
+    pos: String,
+}
+
+/// Pre-scan BDB to map every entry id to its [`BdbRef`] (headword + pos).
 /// Cross-references inside an entry point at a target by id alone — the empty
 /// `<w src="a.eg.aa"/>` form carries no text — so [`load_bdb`] needs this map to
-/// fill in what the target reads as. One cheap pass; the file is ~20MB.
-fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, String>> {
+/// fill in what the target reads as, and to adopt its grammatical class. One
+/// cheap pass; the file is ~20MB.
+fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, BdbRef>> {
     let mut reader =
         Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
     let mut buf = Vec::new();
     let mut map = std::collections::HashMap::new();
     let mut id = String::new();
     let mut word = String::new();
+    let mut pos = String::new();
     let mut in_headword = false;
     let mut headword_done = false;
+    let mut in_pos = false;
     loop {
         match reader.read_event_into(&mut buf)? {
             Event::Start(e) => match e.name().as_ref() {
@@ -584,19 +598,29 @@ fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, String
                         .map(|v| v.into_owned())
                         .unwrap_or_default();
                     word.clear();
+                    pos.clear();
                     headword_done = false;
                 }
                 b"w" if !headword_done => {
                     in_headword = true;
                     headword_done = true;
                 }
+                b"pos" => in_pos = true,
                 _ => {}
             },
             Event::Text(t) if in_headword => word.push_str(&t.unescape()?),
+            Event::Text(t) if in_pos => pos.push_str(t.unescape()?.trim()),
             Event::End(e) => match e.name().as_ref() {
                 b"w" => in_headword = false,
+                b"pos" => in_pos = false,
                 b"entry" if !id.is_empty() => {
-                    map.insert(id.clone(), tidy(&word));
+                    map.insert(
+                        id.clone(),
+                        BdbRef {
+                            headword: tidy(&word),
+                            pos: tidy(&pos),
+                        },
+                    );
                 }
                 _ => {}
             },
@@ -612,7 +636,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
     db.execute(
         "CREATE TABLE bdb(\
             bdb_id TEXT PRIMARY KEY, root TEXT NOT NULL, word TEXT, cons TEXT, pos TEXT, \
-            gloss TEXT, content_json TEXT, status TEXT)",
+            gloss TEXT, content_json TEXT, status TEXT, type TEXT)",
         [],
     )?;
 
@@ -645,6 +669,10 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
     let mut href: Option<String> = None;
     // BDB entry id a cross-reference `<w src>` points at, for the open `<w>`.
     let mut xref: Option<String> = None;
+    // The entry's *first* `<w src>` target — its primary cross-reference. A bare
+    // redirect entry (e.g. אבוגיל "v. אֲבִיגַיִל") carries no pos of its own, so it
+    // inherits this target's pos and groups with the entry it points at.
+    let mut first_xref: Option<String> = None;
 
     // Root inherited across a section from its `type="root"` entry.
     let mut current_root = String::new();
@@ -656,8 +684,8 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
     let tx = db.transaction()?;
     let mut rows = 0;
     {
-        let mut stmt =
-            tx.prepare("INSERT OR REPLACE INTO bdb VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)")?;
+        let mut stmt = tx
+            .prepare("INSERT OR REPLACE INTO bdb VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)")?;
         loop {
             match reader.read_event_into(&mut buf)? {
                 Event::Start(e) => match e.name().as_ref() {
@@ -696,6 +724,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         style = Style::default();
                         href = None;
                         xref = None;
+                        first_xref = None;
                     }
                     // First <w> is the headword; later <w src="…"> are inline
                     // cross-references rendered as RTL Hebrew spans, tappable to
@@ -711,6 +740,9 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             .map(|a| a.decode_and_unescape_value(reader.decoder()))
                             .transpose()?
                             .map(|v| v.into_owned());
+                        if first_xref.is_none() && xref.is_some() {
+                            first_xref = xref.clone();
+                        }
                     }
                     b"sense" => {
                         let num = e
@@ -770,7 +802,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             let display = match xref.as_deref() {
                                 Some(x) if tidy(&txt) == x => headwords
                                     .get(x)
-                                    .cloned()
+                                    .map(|r| r.headword.clone())
                                     .unwrap_or_else(|| txt.to_string()),
                                 _ => txt.to_string(),
                             };
@@ -796,15 +828,20 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         .map(|a| a.decode_and_unescape_value(reader.decoder()))
                         .transpose()?
                         .map(|v| v.into_owned())
-                        && let Some(target) = headwords.get(&src)
-                        && let Some(top) = stack.last_mut()
                     {
-                        let rtl = Style {
-                            rtl: true,
-                            ..Style::default()
-                        };
-                        if let Some(sp) = span(target, rtl, None, Some(&src)) {
-                            top.definition.push(sp);
+                        if first_xref.is_none() {
+                            first_xref = Some(src.clone());
+                        }
+                        if let Some(target) = headwords.get(&src)
+                            && let Some(top) = stack.last_mut()
+                        {
+                            let rtl = Style {
+                                rtl: true,
+                                ..Style::default()
+                            };
+                            if let Some(sp) = span(&target.headword, rtl, None, Some(&src)) {
+                                top.definition.push(sp);
+                            }
                         }
                     }
                 }
@@ -870,6 +907,27 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         })
                         .to_string();
 
+                        // A bare cross-reference entry — no pos and no definition
+                        // of its own, just "v. <target>" (e.g. אבוגיל → אֲבִיגַיִל)
+                        // — adopts its target's pos so a variant spelling groups
+                        // with the lexeme it redirects to rather than as "other".
+                        let pos = tidy(&pos);
+                        let pos = if pos.is_empty()
+                            && gloss_parts.is_empty()
+                            && let Some(src) = &first_xref
+                        {
+                            headwords
+                                .get(src)
+                                .map(|r| r.pos.clone())
+                                .unwrap_or_default()
+                        } else {
+                            pos
+                        };
+                        // `type="root"` section headers fix the root for the
+                        // lexemes that follow; the app heads them separately
+                        // rather than listing them among the root's lexemes.
+                        let entry_type = if is_root_entry { "root" } else { "" };
+
                         let word = tidy(&word);
                         if is_root_entry && let Ok(r) = Root::parse(&word) {
                             current_root = r.letters.iter().collect();
@@ -911,10 +969,11 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             &root,
                             &word,
                             &cons,
-                            tidy(&pos),
+                            &pos,
                             gloss,
                             &content_json,
                             tidy(&status),
+                            entry_type,
                         ))?;
                         rows += 1;
                     }

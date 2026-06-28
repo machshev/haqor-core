@@ -13,8 +13,14 @@ pub struct BdbEntry {
     pub gloss: String,
     pub content_json: String,
     /// BDB part-of-speech marker (e.g. `n.pr.m`, `n.[m.]`, `vb`), as stored.
-    /// Empty when the source entry carried none.
+    /// Empty when the source entry carried none; for a bare cross-reference the
+    /// build inherits the target's marker so the redirect groups with it.
     pub pos: String,
+    /// True for a BDB `type="root"` section header — the entry that fixes the
+    /// root for the lexemes that follow. When such a header carries no part of
+    /// speech of its own (it is pure root etymology, not a lexeme), the app
+    /// heads it under "Root" rather than among the root's actual lexemes.
+    pub is_root: bool,
 }
 
 impl BdbEntry {
@@ -24,6 +30,42 @@ impl BdbEntry {
     /// a separate heading rather than inline with the common lexemes.
     pub fn is_proper_noun(&self) -> bool {
         self.pos.starts_with("n.pr")
+    }
+
+    /// A coarse part-of-speech bucket derived from the BDB `pos` marker, used by
+    /// the app to head a root's lexemes under their grammatical class (verbs,
+    /// nouns, adjectives, …) rather than one undifferentiated list. Returns a
+    /// stable lowercase key; `"other"` covers particles, pronouns, and any entry
+    /// whose marker is empty or unrecognised.
+    ///
+    /// The marker is normalised (whitespace stripped, lowercased) before
+    /// matching so spaced variants like `n. pr. m.` and compound markers like
+    /// `n.pr.m.colladj.gent` classify by their leading class. Order matters:
+    /// `n.pr` is tested before the bare-noun `n` so proper names never fall
+    /// through to the common-noun bucket.
+    pub fn pos_category(&self) -> &'static str {
+        let p: String = self
+            .pos
+            .chars()
+            .filter(|c| !c.is_whitespace())
+            .collect::<String>()
+            .to_ascii_lowercase();
+        if p.starts_with("n.pr") {
+            "proper"
+        } else if p.starts_with("vb") {
+            "verb"
+        } else if p.starts_with("adv") {
+            "adverb"
+        } else if p.starts_with("adj") {
+            "adjective"
+        } else if p.starts_with('n') {
+            "noun"
+        } else if self.is_root {
+            // A pos-less section header — pure root etymology, not a lexeme.
+            "root"
+        } else {
+            "other"
+        }
     }
 
     /// True when the entry carries something to display — a gloss or at least
@@ -968,7 +1010,7 @@ impl Bible {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare(
-            "SELECT word, root, gloss, content_json, pos FROM lexdb.bdb \
+            "SELECT word, root, gloss, content_json, pos, type FROM lexdb.bdb \
              WHERE cons = ?1 ORDER BY bdb_id",
         )?;
         let rows = stmt
@@ -979,6 +1021,7 @@ impl Bible {
                     row.get::<_, Option<String>>(2)?.unwrap_or_default(),
                     row.get::<_, Option<String>>(3)?.unwrap_or_default(),
                     row.get::<_, Option<String>>(4)?.unwrap_or_default(),
+                    row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
                 ))
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
@@ -994,12 +1037,13 @@ impl Bible {
             .filter(|(w, ..)| {
                 !has_exact || normalize_hebrew_combining(&strip_accents(w)) == canonical
             })
-            .map(|(word, root, gloss, content_json, pos)| BdbEntry {
+            .map(|(word, root, gloss, content_json, pos, is_root)| BdbEntry {
                 headword: normalize_hebrew_combining(&word),
                 root,
                 gloss,
                 content_json,
                 pos,
+                is_root,
             })
             .filter(BdbEntry::has_content)
             .collect())
@@ -1013,7 +1057,7 @@ impl Bible {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare(
-            "SELECT word, root, gloss, content_json, pos FROM lexdb.bdb \
+            "SELECT word, root, gloss, content_json, pos, type FROM lexdb.bdb \
              WHERE root = ?1 ORDER BY bdb_id",
         )?;
         let entries = stmt
@@ -1028,6 +1072,7 @@ impl Bible {
                     gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
                     content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
                     pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
+                    is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
                 })
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
@@ -1046,7 +1091,7 @@ impl Bible {
         }
         self.db
             .query_row(
-                "SELECT word, root, gloss, content_json, pos FROM lexdb.bdb \
+                "SELECT word, root, gloss, content_json, pos, type FROM lexdb.bdb \
                  WHERE bdb_id = ?1",
                 [bdb_id],
                 |row| {
@@ -1060,6 +1105,7 @@ impl Bible {
                         gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
                         content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
                         pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
+                        is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
                     })
                 },
             )
@@ -1691,6 +1737,36 @@ mod tests {
         // The marker drives the split, and `prep`/`pron` never read as proper.
         assert!(proper.iter().all(|e| e.pos.starts_with("n.pr")));
         assert!(common.iter().all(|e| !e.pos.starts_with("n.pr")));
+    }
+
+    #[test]
+    fn test_hebrew_bdb_pos_category() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        let tree = bible.hebrew_bdb_by_root("אבה").unwrap();
+        let cat = |id: &str| {
+            tree.iter()
+                .find(|e| e.gloss.starts_with(id) || e.headword == id)
+                .map(BdbEntry::pos_category)
+        };
+        // The verb heads the "verb" group; the names group as "proper".
+        assert_eq!(cat("be willing"), Some("verb"));
+        assert_eq!(cat("my father is joy"), Some("proper")); // אֲבִיגַיִל
+        // אבוגיל is a bare cross-reference ("see אֲבִיגַיִל"): it carries no pos of
+        // its own but inherits the target's, so it groups with the proper names
+        // rather than falling through to "other".
+        let abugil = bible.hebrew_bdb_by_id("a.ae.bd").unwrap().unwrap();
+        assert!(abugil.gloss.starts_with("see"));
+        assert_eq!(abugil.pos_category(), "proper");
+        // The pos-less "father" section header (type="root") is the root's
+        // etymology, not a lexeme; it heads the "root" group.
+        let header = bible.hebrew_bdb_by_id("a.ae.aa").unwrap().unwrap();
+        assert!(header.is_root && header.pos.is_empty());
+        assert_eq!(header.pos_category(), "root");
+        // A root header that *does* carry a pos (the verb אָבָה) stays a verb.
+        let verb = bible.hebrew_bdb_by_id("a.ad.aa").unwrap().unwrap();
+        assert!(verb.is_root);
+        assert_eq!(verb.pos_category(), "verb");
     }
 
     #[test]
