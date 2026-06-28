@@ -118,6 +118,60 @@ fn split_glued_word(word: &str) -> Option<&'static str> {
         .map(|(_, split)| *split)
 }
 
+/// YHWH consonant skeleton (yod, he, vav, he) — the divine name.
+const YHWH: [char; 4] = ['\u{05D9}', '\u{05D4}', '\u{05D5}', '\u{05D4}'];
+
+/// Proclitic consonants that may attach to the front of the divine name: the
+/// conjunction vav and the inseparable prepositions lamed / bet / kaf / mem
+/// (one or two of them, e.g. וּבַ in וּבַיהוָה).
+const PROCLITICS: [char; 5] = ['\u{05D5}', '\u{05DC}', '\u{05D1}', '\u{05DB}', '\u{05DE}'];
+
+/// The reconstructed pronunciation pointing of the divine name, "Yahweh"
+/// (yod-patah, he-sheva, vav-segol, he).
+const YAHWEH: &str = "\u{05D9}\u{05B7}\u{05D4}\u{05B0}\u{05D5}\u{05B6}\u{05D4}";
+
+/// Restore the divine name's pronounced vocalisation. See ADR 0005.
+///
+/// The Masoretes never wrote the spoken vowels of the Tetragrammaton; they
+/// pointed the consonants יהוה with the vowels of the *substitute* read in its
+/// place — usually אֲדֹנָי ("Adonai"), giving יְהוָה, or אֱלֹהִים when Adonai
+/// already stands adjacent, giving יְהוִה (with plene יְהֹוָה/יְהֹוִה and the
+/// hataf-segol יֱהוִה variants). Romanising those points yields the non-word
+/// "yehva", which misleads a reader-tutor and obscures the name. We re-point the
+/// consonants to their reconstructed pronunciation יַהְוֶה ("Yahweh").
+///
+/// Matches the bare name and any form behind up to two proclitics (לַיהוָה,
+/// וַיהוָה, מֵיְהוָה, וּבַיהוָה …): the proclitic letters and their pointing are
+/// kept, only the four name-consonants are re-pointed. A trailing maqaf joining
+/// the name to the next word is preserved. Returns `None` (leave untouched) for
+/// anything else — the consonant string יהוה is, in the Masoretic text, reserved
+/// for the divine name (יְהוּדָה "Judah" carries a dalet and does not match).
+fn repoint_divine_name(word: &str) -> Option<String> {
+    let bases: Vec<(usize, char)> = word
+        .char_indices()
+        .filter(|&(_, c)| (0x05D0..=0x05EA).contains(&(c as u32)))
+        .collect();
+    // YHWH, optionally behind one or two proclitic consonants.
+    if !(4..=6).contains(&bases.len()) {
+        return None;
+    }
+    let (prefix, name) = bases.split_at(bases.len() - 4);
+    if name.iter().map(|&(_, c)| c).ne(YHWH)
+        || prefix.iter().any(|&(_, c)| !PROCLITICS.contains(&c))
+    {
+        return None;
+    }
+    // Keep the proclitic (consonants + pointing) up to the name's yod, substitute
+    // the canonical pointing for the four name-consonants, then keep whatever
+    // follows the final he past its accents (a word-joining maqaf, if any).
+    let name_start = name[0].0;
+    let after_he = name[3].0 + '\u{05D4}'.len_utf8();
+    let suffix = word[after_he..]
+        .find(|c: char| !matches!(c as u32, 0x0591..=0x05AF | 0x05BD))
+        .map_or("", |off| &word[after_he + off..]);
+    Some(format!("{}{YAHWEH}{}", &word[..name_start], suffix))
+}
+
 /// Order-insensitive match key: drop cantillation accents and meteg, then sort
 /// the combining marks within each consonant cluster, so a vowel-then-dagesh
 /// spelling compares equal to UXLC's dagesh-then-vowel one.
@@ -201,6 +255,7 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                     in_word = false;
                     let assembled = strip_internal_maqaf(&std::mem::take(&mut word));
                     let assembled = split_glued_word(&assembled).map_or(assembled, str::to_string);
+                    let assembled = repoint_divine_name(&assembled).unwrap_or(assembled);
                     chapters
                         .entry(chapter)
                         .or_default()
@@ -262,5 +317,37 @@ mod tests {
         assert_eq!(strip_internal_maqaf("כָּל־"), "כָּל־");
         // A word with no maqaf is returned verbatim.
         assert_eq!(strip_internal_maqaf("שָׁמַיִם"), "שָׁמַיִם");
+    }
+
+    #[test]
+    fn repoints_divine_name_and_its_variants() {
+        // All qere-perpetuum pointings of the bare name → reconstructed Yahweh.
+        for src in ["יְהוָה", "יְהוִה", "יְהֹוָה", "יְהֹוִה", "יֱהוִה"]
+        {
+            assert_eq!(repoint_divine_name(src).as_deref(), Some(YAHWEH));
+        }
+        // Cantillation on the bare name is dropped with the old pointing.
+        assert_eq!(repoint_divine_name("יְהוָ֖ה").as_deref(), Some(YAHWEH));
+    }
+
+    #[test]
+    fn repoints_proclitic_forms_keeping_the_prefix() {
+        // The proclitic and its vowel survive; only the name is re-pointed.
+        assert_eq!(repoint_divine_name("לַיהוָה").as_deref(), Some("לַיַהְוֶה"));
+        assert_eq!(repoint_divine_name("וַיהוָה").as_deref(), Some("וַיַהְוֶה"));
+        assert_eq!(repoint_divine_name("בַּיהוָה").as_deref(), Some("בַּיַהְוֶה"));
+        assert_eq!(repoint_divine_name("מֵיְהוָה").as_deref(), Some("מֵיַהְוֶה"));
+        // Two proclitics (vav + bet).
+        assert_eq!(repoint_divine_name("וּבַיהוָה").as_deref(), Some("וּבַיַהְוֶה"));
+    }
+
+    #[test]
+    fn leaves_other_words_untouched() {
+        // Judah shares the yod-he-vav skeleton but carries a dalet.
+        assert_eq!(repoint_divine_name("יְהוּדָה"), None);
+        assert_eq!(repoint_divine_name("בִּיהוּדָה"), None);
+        // The short form יָהּ (Yah) is only two consonants — not the Tetragrammaton.
+        assert_eq!(repoint_divine_name("יָהּ"), None);
+        assert_eq!(repoint_divine_name("שָׁמַיִם"), None);
     }
 }

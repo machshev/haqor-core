@@ -354,7 +354,11 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
     for c in surface.chars() {
         let g = fold_final(c);
         let cons = is_consonant(g);
-        if !cons && !matches!(g as u32, 0x05B0..=0x05B9 | 0x05BB | 0x05BC | 0x05C1 | 0x05C2 | 0x05C7)
+        if !cons
+            && !matches!(
+                g as u32,
+                0x05B0..=0x05B9 | 0x05BB | 0x05BC | 0x05C1 | 0x05C2 | 0x05C7
+            )
         {
             continue;
         }
@@ -607,7 +611,7 @@ impl Bible {
                     return Ok(self.word_card(&surface, aspect)?.map(StudyItem::NewWord));
                 }
                 Some(s) if !s.graduated() => return Ok(None), // still being learnt
-                Some(_) => {} // graduated; move to the next aspect
+                Some(_) => {}                                 // graduated; move to the next aspect
             }
         }
         Ok(None)
@@ -643,8 +647,12 @@ impl Bible {
             )
         } else {
             (
-                self.conn().query_row(&gsql, params![now], gmap).optional()?,
-                self.conn().query_row(&wsql, params![now], wmap).optional()?,
+                self.conn()
+                    .query_row(&gsql, params![now], gmap)
+                    .optional()?,
+                self.conn()
+                    .query_row(&wsql, params![now], wmap)
+                    .optional()?,
             )
         };
 
@@ -800,7 +808,16 @@ impl Bible {
                      ON CONFLICT(glyph) DO UPDATE SET ease=excluded.ease, \
                         interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
                         reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
-                    params![key, next.ease, next.interval_days, due, next.reps, next.lapses, now, grade_i],
+                    params![
+                        key,
+                        next.ease,
+                        next.interval_days,
+                        due,
+                        next.reps,
+                        next.lapses,
+                        now,
+                        grade_i
+                    ],
                 )?;
             }
             Track::WordRead | Track::WordMean => {
@@ -821,8 +838,18 @@ impl Bible {
                      ON CONFLICT(surface, aspect) DO UPDATE SET ease=excluded.ease, \
                         interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
                         reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
-                    params![key, aspect.as_str(), surface_id, next.ease, next.interval_days,
-                            due, next.reps, next.lapses, now, grade_i],
+                    params![
+                        key,
+                        aspect.as_str(),
+                        surface_id,
+                        next.ease,
+                        next.interval_days,
+                        due,
+                        next.reps,
+                        next.lapses,
+                        now,
+                        grade_i
+                    ],
                 )?;
             }
         }
@@ -872,9 +899,11 @@ impl Bible {
             [],
             |r| r.get(0),
         )?;
-        let total_verses = self
-            .conn()
-            .query_row("SELECT COUNT(*) FROM hebrewdb.verse_stats", [], |r| r.get(0))?;
+        let total_verses =
+            self.conn()
+                .query_row("SELECT COUNT(*) FROM hebrewdb.verse_stats", [], |r| {
+                    r.get(0)
+                })?;
         Ok(TutorProgress {
             glyphs_known,
             words_known,
@@ -941,12 +970,17 @@ mod tests {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
-        bible.conn().execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
         init_progress_schema(bible.conn())?;
 
         let now = 1_700_000_000;
         let mut item = bible.next_study_item(now)?;
-        assert!(matches!(item, StudyItem::NewGlyph(_) | StudyItem::NewWord(_)));
+        assert!(matches!(
+            item,
+            StudyItem::NewGlyph(_) | StudyItem::NewWord(_)
+        ));
         assert!(bible.meta_target()?.is_some());
 
         let mut saw_read = false;
