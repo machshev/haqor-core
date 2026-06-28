@@ -1012,6 +1012,36 @@ impl Bible {
         Ok(entries)
     }
 
+    /// The single BDB lexeme with this entry id (`bdb.bdb_id`), or `None` if no
+    /// row matches. Follows a Lexicon cross-reference: a `<w src>` span carries
+    /// the target entry id, and the resolved entry's `root` drives the
+    /// destination root tree the app navigates to.
+    pub fn hebrew_bdb_by_id(&self, bdb_id: &str) -> rusqlite::Result<Option<BdbEntry>> {
+        if bdb_id.is_empty() {
+            return Ok(None);
+        }
+        self.db
+            .query_row(
+                "SELECT word, root, gloss, content_json, pos FROM lexdb.bdb \
+                 WHERE bdb_id = ?1",
+                [bdb_id],
+                |row| {
+                    Ok(BdbEntry {
+                        headword: normalize_hebrew_combining(
+                            row.get::<_, Option<String>>(0)?
+                                .unwrap_or_default()
+                                .as_str(),
+                        ),
+                        root: row.get(1)?,
+                        gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
+                        content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
+                        pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
+                    })
+                },
+            )
+            .optional()
+    }
+
     /// The learner vocabulary: distinct Hebrew (non-Aramaic) surface forms in
     /// descending occurrence order, each bridged to a BDB gloss where
     /// possible. Resolution order per surface: the parse engine's best
@@ -1637,6 +1667,32 @@ mod tests {
         // The marker drives the split, and `prep`/`pron` never read as proper.
         assert!(proper.iter().all(|e| e.pos.starts_with("n.pr")));
         assert!(common.iter().all(|e| !e.pos.starts_with("n.pr")));
+    }
+
+    #[test]
+    fn test_hebrew_bdb_xref_navigation() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // נַחְנוּ (id n.cr.am) is a cross-reference stub "v. אֲנַחְנוּ": its content
+        // carries the target's entry id as an `xref` the app navigates to.
+        let stub = bible
+            .hebrew_bdb_by_id("n.cr.am")
+            .unwrap()
+            .expect("stub entry exists");
+        assert!(stub.content_json.contains("\"xref\":\"a.ef.ac\""));
+
+        // Following that id resolves to a real lexeme with a root, so the app
+        // can land on the target's root tree.
+        let target = bible
+            .hebrew_bdb_by_id("a.ef.ac")
+            .unwrap()
+            .expect("xref target exists");
+        assert!(!target.root.is_empty());
+        assert!(!bible.hebrew_bdb_by_root(&target.root).unwrap().is_empty());
+
+        // Empty id and unknown id resolve to nothing rather than erroring.
+        assert!(bible.hebrew_bdb_by_id("").unwrap().is_none());
+        assert!(bible.hebrew_bdb_by_id("no.such.id").unwrap().is_none());
     }
 
     #[test]

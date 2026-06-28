@@ -106,7 +106,8 @@ fn ref_href(r: &str) -> Option<String> {
 
 /// One styled run of text in a BDB definition, mirroring the span objects the
 /// app's `_BdbContent` widget renders: `t` (text) plus optional `b`/`i`/`s`/
-/// `rtl` style flags and an `href` cross-reference target.
+/// `rtl` style flags, an `href` scripture-reference target, and an `xref` BDB
+/// entry id (the `<w src>` cross-reference target the app navigates to).
 #[derive(Clone, Copy, Default)]
 struct Style {
     b: bool,
@@ -115,7 +116,7 @@ struct Style {
     rtl: bool,
 }
 
-fn span(text: &str, style: Style, href: Option<&str>) -> Option<Value> {
+fn span(text: &str, style: Style, href: Option<&str>, xref: Option<&str>) -> Option<Value> {
     if text.is_empty() {
         return None;
     }
@@ -135,6 +136,9 @@ fn span(text: &str, style: Style, href: Option<&str>) -> Option<Value> {
     }
     if let Some(h) = href {
         m.insert("href".into(), json!(h));
+    }
+    if let Some(x) = xref {
+        m.insert("xref".into(), json!(x));
     }
     Some(Value::Object(m))
 }
@@ -443,10 +447,11 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
 /// `hebrew.db`'s `analyses.root`.
 ///
 /// Each entry's prose becomes a `content_json` of the form
-/// `{"senses":[{num?,form?,definition:[{t,b?,i?,s?,rtl?,href?}],senses?}]}`,
+/// `{"senses":[{num?,form?,definition:[{t,b?,i?,s?,rtl?,href?,xref?}],senses?}]}`,
 /// matching the span schema the app's `_BdbContent` widget renders: `<def>`
 /// becomes a bold span, `<ref>` an href span (book code mapped to the app's
-/// `Book C:V` form), `<w>`/`<foreign>` an RTL/italic span, and `<stem>` the
+/// `Book C:V` form), `<w>`/`<foreign>` an RTL/italic span (a `<w src>` also
+/// carries `xref`, the target entry id the app navigates to), and `<stem>` the
 /// sense's `form`. The leading headword gloss is also kept flat in `gloss`.
 /// Consonant skeleton of a pointed Hebrew word: niqqud and any non-letter marks
 /// stripped, final-form letters folded to their medial base. Used as the noun
@@ -472,6 +477,54 @@ fn consonants(word: &str) -> String {
         .collect()
 }
 
+/// Pre-scan BDB to map every entry id to its headword (the first `<w>`'s text).
+/// Cross-references inside an entry point at a target by id alone — the empty
+/// `<w src="a.eg.aa"/>` form carries no text — so [`load_bdb`] needs this map to
+/// fill in what the target reads as. One cheap pass; the file is ~20MB.
+fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, String>> {
+    let mut reader =
+        Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
+    let mut buf = Vec::new();
+    let mut map = std::collections::HashMap::new();
+    let mut id = String::new();
+    let mut word = String::new();
+    let mut in_headword = false;
+    let mut headword_done = false;
+    loop {
+        match reader.read_event_into(&mut buf)? {
+            Event::Start(e) => match e.name().as_ref() {
+                b"entry" => {
+                    id = e
+                        .try_get_attribute("id")?
+                        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                        .transpose()?
+                        .map(|v| v.into_owned())
+                        .unwrap_or_default();
+                    word.clear();
+                    headword_done = false;
+                }
+                b"w" if !headword_done => {
+                    in_headword = true;
+                    headword_done = true;
+                }
+                _ => {}
+            },
+            Event::Text(t) if in_headword => word.push_str(&t.unescape()?),
+            Event::End(e) => match e.name().as_ref() {
+                b"w" => in_headword = false,
+                b"entry" if !id.is_empty() => {
+                    map.insert(id.clone(), tidy(&word));
+                }
+                _ => {}
+            },
+            Event::Eof => break,
+            _ => {}
+        }
+        buf.clear();
+    }
+    Ok(map)
+}
+
 fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
     db.execute(
         "CREATE TABLE bdb(\
@@ -479,6 +532,10 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
             gloss TEXT, content_json TEXT, status TEXT)",
         [],
     )?;
+
+    // Cross-reference targets are resolved to their headword text via this map
+    // (built in a cheap first pass, since a target may be defined later).
+    let headwords = bdb_headwords(path)?;
 
     let mut reader =
         Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
@@ -503,6 +560,8 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
     let mut in_pos = false;
     let mut style = Style::default();
     let mut href: Option<String> = None;
+    // BDB entry id a cross-reference `<w src>` points at, for the open `<w>`.
+    let mut xref: Option<String> = None;
 
     // Root inherited across a section from its `type="root"` entry.
     let mut current_root = String::new();
@@ -541,14 +600,23 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         in_pos = false;
                         style = Style::default();
                         href = None;
+                        xref = None;
                     }
                     // First <w> is the headword; later <w src="…"> are inline
-                    // cross-references rendered as RTL Hebrew spans.
+                    // cross-references rendered as RTL Hebrew spans, tappable to
+                    // navigate to the entry named by `src`.
                     b"w" if !stack.is_empty() && !headword_done => {
                         in_headword = true;
                         headword_done = true;
                     }
-                    b"w" => style.rtl = true,
+                    b"w" => {
+                        style.rtl = true;
+                        xref = e
+                            .try_get_attribute("src")?
+                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .transpose()?
+                            .map(|v| v.into_owned());
+                    }
                     b"sense" => {
                         let num = e
                             .try_get_attribute("n")?
@@ -600,9 +668,37 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                                     gloss_parts.push(g);
                                 }
                             }
-                            if let Some(sp) = span(&tidy_span_text(&txt), style, href.as_deref()) {
+                            if let Some(sp) = span(
+                                &tidy_span_text(&txt),
+                                style,
+                                href.as_deref(),
+                                xref.as_deref(),
+                            ) {
                                 top.definition.push(sp);
                             }
+                        }
+                    }
+                }
+                // A self-closing `<w src="…"/>` cross-reference carries no text,
+                // so its target headword is unknown until resolved through the
+                // pre-built map. Emit it as a tappable RTL span (the same shape a
+                // text-bearing `<w src>` produces) so the entry no longer reads
+                // as a bare "v.".
+                Event::Empty(e) if e.name().as_ref() == b"w" => {
+                    if let Some(src) = e
+                        .try_get_attribute("src")?
+                        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                        .transpose()?
+                        .map(|v| v.into_owned())
+                        && let Some(target) = headwords.get(&src)
+                        && let Some(top) = stack.last_mut()
+                    {
+                        let rtl = Style {
+                            rtl: true,
+                            ..Style::default()
+                        };
+                        if let Some(sp) = span(target, rtl, None, Some(&src)) {
+                            top.definition.push(sp);
                         }
                     }
                 }
@@ -612,6 +708,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             in_headword = false;
                         } else {
                             style.rtl = false;
+                            xref = None;
                         }
                     }
                     b"stem" => in_stem = false,
