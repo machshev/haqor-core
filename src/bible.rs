@@ -25,6 +25,27 @@ impl BdbEntry {
     pub fn is_proper_noun(&self) -> bool {
         self.pos.starts_with("n.pr")
     }
+
+    /// True when the entry carries something to display — a gloss or at least
+    /// one structured sense. BDB heads each section with a `type="root"` entry
+    /// that fixes the root for the lexemes that follow; some of those headers
+    /// (e.g. the Biblical Aramaic appendix opener `xa.ac.aa`, headword `אבה`)
+    /// have no definition of their own, so they reduce to an empty gloss and
+    /// `{"senses":[]}`. They serve only to set the section root, and would
+    /// otherwise surface as blank duplicate rows in a root tree (the Aramaic
+    /// `אבה` collides with the Hebrew root `אבה` "be willing"). The row stays in
+    /// the DB — cross-references still navigate to it by id — it is just hidden
+    /// from the root-tree listing.
+    fn has_content(&self) -> bool {
+        !self.gloss.is_empty()
+            || serde_json::from_str::<serde_json::Value>(&self.content_json)
+                .ok()
+                .and_then(|v| {
+                    v.get("senses")
+                        .map(|s| s.as_array().is_some_and(|a| !a.is_empty()))
+                })
+                .unwrap_or(false)
+    }
 }
 
 /// The analysis chosen to describe one OT (Hebrew Bible) surface form, drawn
@@ -980,6 +1001,7 @@ impl Bible {
                 content_json,
                 pos,
             })
+            .filter(BdbEntry::has_content)
             .collect())
     }
 
@@ -1009,7 +1031,9 @@ impl Bible {
                 })
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
-        Ok(entries)
+        // Drop content-less section root-headers (empty gloss + no senses); they
+        // would render as blank rows in the tree. See [`BdbEntry::has_content`].
+        Ok(entries.into_iter().filter(BdbEntry::has_content).collect())
     }
 
     /// The single BDB lexeme with this entry id (`bdb.bdb_id`), or `None` if no
@@ -1693,6 +1717,28 @@ mod tests {
         // Empty id and unknown id resolve to nothing rather than erroring.
         assert!(bible.hebrew_bdb_by_id("").unwrap().is_none());
         assert!(bible.hebrew_bdb_by_id("no.such.id").unwrap().is_none());
+    }
+
+    #[test]
+    fn test_hebrew_bdb_root_tree_hides_empty_section_headers() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // The Hebrew root אבה ("be willing", header a.ae.aa) and the Biblical
+        // Aramaic appendix section opener (xa.ac.aa, also headword אבה) share the
+        // reduced root "אבה". The Aramaic header has no gloss and `{"senses":[]}`,
+        // so it must not appear as a blank second row in the tree.
+        let tree = bible.hebrew_bdb_by_root("אבה").unwrap();
+        assert!(!tree.is_empty());
+        assert!(
+            tree.iter().all(BdbEntry::has_content),
+            "root tree must not list content-less section headers"
+        );
+        // The empty stub stays reachable by id (one cross-reference targets it).
+        let stub = bible
+            .hebrew_bdb_by_id("xa.ac.aa")
+            .unwrap()
+            .expect("section header still resolvable by id");
+        assert!(!stub.has_content());
     }
 
     #[test]
