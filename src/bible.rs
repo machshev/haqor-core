@@ -12,6 +12,19 @@ pub struct BdbEntry {
     pub root: String,
     pub gloss: String,
     pub content_json: String,
+    /// BDB part-of-speech marker (e.g. `n.pr.m`, `n.[m.]`, `vb`), as stored.
+    /// Empty when the source entry carried none.
+    pub pos: String,
+}
+
+impl BdbEntry {
+    /// True when this lexeme is a proper noun — any BDB `n.pr.*` part of
+    /// speech (names of people, places, peoples, deities). A root's proper
+    /// names crowd out its actual semantic range, so the app lists them under
+    /// a separate heading rather than inline with the common lexemes.
+    pub fn is_proper_noun(&self) -> bool {
+        self.pos.starts_with("n.pr")
+    }
 }
 
 /// The analysis chosen to describe one OT (Hebrew Bible) surface form, drawn
@@ -910,6 +923,66 @@ impl Bible {
             .unwrap_or_default()
     }
 
+    /// BDB lexeme(s) for a bridged surface that has no triliteral root — the
+    /// function words and particles whose BDB entry carries an empty `root`
+    /// column (so [`Bible::hebrew_bdb_by_root`] can never reach them), plus the
+    /// curated closed-class glosses. The lookup mirrors the bridge that produced
+    /// the gloss: any stored proclitic is stripped, then the exact pointed
+    /// headword is preferred — so מִי resolves to "who?" alone rather than the
+    /// whole מ־י consonant group (which also holds מַי "waters"). When no
+    /// headword matches exactly it falls back to the consonant group, the same
+    /// last resort the bridge uses.
+    pub fn hebrew_bdb_for_surface(
+        &self,
+        word: &str,
+        prefix: &str,
+    ) -> rusqlite::Result<Vec<BdbEntry>> {
+        let target = if prefix.is_empty() {
+            word.to_string()
+        } else {
+            strip_proclitic(word, prefix).unwrap_or_else(|| word.to_string())
+        };
+        let cons = fold_consonants(&target);
+        if cons.is_empty() {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare(
+            "SELECT word, root, gloss, content_json, pos FROM lexdb.bdb \
+             WHERE cons = ?1 ORDER BY bdb_id",
+        )?;
+        let rows = stmt
+            .query_map([&cons], |row| {
+                Ok((
+                    row.get::<_, Option<String>>(0)?.unwrap_or_default(),
+                    row.get::<_, String>(1)?,
+                    row.get::<_, Option<String>>(2)?.unwrap_or_default(),
+                    row.get::<_, Option<String>>(3)?.unwrap_or_default(),
+                    row.get::<_, Option<String>>(4)?.unwrap_or_default(),
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+
+        // Prefer the exact pointed headword (accents stripped on both sides, as
+        // in `bdb_exact`); keep the whole consonant group only when none matches.
+        let canonical = normalize_hebrew_combining(&strip_accents(&target));
+        let has_exact = rows
+            .iter()
+            .any(|(w, ..)| normalize_hebrew_combining(&strip_accents(w)) == canonical);
+        Ok(rows
+            .into_iter()
+            .filter(|(w, ..)| {
+                !has_exact || normalize_hebrew_combining(&strip_accents(w)) == canonical
+            })
+            .map(|(word, root, gloss, content_json, pos)| BdbEntry {
+                headword: normalize_hebrew_combining(&word),
+                root,
+                gloss,
+                content_json,
+                pos,
+            })
+            .collect())
+    }
+
     /// The glossed root tree for an OT word: every BDB lexeme sharing the
     /// consonantal root, each with its structured definition JSON. This is the
     /// OT analogue of [`Bible::sedra_root_tree`].
@@ -918,7 +991,7 @@ impl Bible {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare(
-            "SELECT word, root, gloss, content_json FROM lexdb.bdb \
+            "SELECT word, root, gloss, content_json, pos FROM lexdb.bdb \
              WHERE root = ?1 ORDER BY bdb_id",
         )?;
         let entries = stmt
@@ -932,6 +1005,7 @@ impl Bible {
                     root: row.get(1)?,
                     gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
                     content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
+                    pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
                 })
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
@@ -1547,6 +1621,25 @@ mod tests {
     }
 
     #[test]
+    fn test_hebrew_bdb_proper_noun_grouping() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // Root שמע holds both common lexemes (שָׁמַע "hear") and a crowd of
+        // proper names (שִׁמְעוֹן Simeon, שִׁמְעִי Shimei, …). The app splits the
+        // tree on `is_proper_noun` to head the names off on their own.
+        let tree = bible.hebrew_bdb_by_root("שמע").unwrap();
+        let (common, proper): (Vec<_>, Vec<_>) =
+            tree.iter().partition(|e| !e.is_proper_noun());
+        // The verb "hear" lands in the common group; the name "Simeon" in the
+        // proper group.
+        assert!(common.iter().any(|e| e.gloss == "hear"));
+        assert!(proper.iter().any(|e| e.gloss.contains("second son of Jacob")));
+        // The marker drives the split, and `prep`/`pron` never read as proper.
+        assert!(proper.iter().all(|e| e.pos.starts_with("n.pr")));
+        assert!(common.iter().all(|e| !e.pos.starts_with("n.pr")));
+    }
+
+    #[test]
     fn test_hebrew_word_info_noun() {
         require_data!();
         let bible = Bible::open("data").unwrap();
@@ -1616,5 +1709,31 @@ mod tests {
             .expect("כִּי should resolve via the lexicon bridge");
         assert!(info.gloss.contains("because"));
         assert!(!info.gloss.to_lowercase().contains("burn"));
+    }
+
+    #[test]
+    fn test_hebrew_bdb_for_surface_function_word() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // מִי ("who?") has an empty BDB root, so the by-root tree is empty but the
+        // surface lookup finds the lexeme — and the exact-headword preference
+        // excludes the homographic מַי ("waters") sharing the מ־י skeleton.
+        let info = bible.hebrew_word_info("מִי").expect("מִי should bridge");
+        assert!(info.root.is_empty());
+        assert!(bible.hebrew_bdb_by_root(&info.root).unwrap().is_empty());
+
+        let entries = bible
+            .hebrew_bdb_for_surface(&info.word, info.prefix.as_deref().unwrap_or(""))
+            .unwrap();
+        assert!(!entries.is_empty(), "function word should have a lexicon entry");
+        assert!(entries.iter().any(|e| e.gloss.contains("who")));
+        assert!(
+            entries.iter().all(|e| !e.gloss.contains("waters")),
+            "exact headword match must exclude מַי (waters)"
+        );
+        assert!(
+            entries.iter().any(|e| !e.content_json.is_empty()),
+            "the Lexicon tab needs definition content"
+        );
     }
 }
