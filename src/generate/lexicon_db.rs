@@ -684,8 +684,8 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
     let tx = db.transaction()?;
     let mut rows = 0;
     {
-        let mut stmt = tx
-            .prepare("INSERT OR REPLACE INTO bdb VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)")?;
+        let mut stmt =
+            tx.prepare("INSERT OR REPLACE INTO bdb VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)")?;
         loop {
             match reader.read_event_into(&mut buf)? {
                 Event::Start(e) => match e.name().as_ref() {
@@ -1392,7 +1392,10 @@ mod tests {
         assert_eq!(expand_abbreviations("(id. [X])"), "(same as [X])");
         assert_eq!(expand_abbreviations("√ of foll.)"), "√ of following)");
         assert_eq!(expand_abbreviations("(cf. X, perh."), "(compare X, perhaps");
-        assert_eq!(expand_abbreviations(" deriv. unknown "), " derivation unknown ");
+        assert_eq!(
+            expand_abbreviations(" deriv. unknown "),
+            " derivation unknown "
+        );
         // Tokens not in the table (incl. POS codes) are left untouched.
         assert_eq!(expand_abbreviations("adv. of negation"), "adv. of negation");
         assert_eq!(expand_abbreviations(" n.pr.m. subst. "), " n.pr.m. subst. ");
@@ -1457,6 +1460,9 @@ mod tests {
         let s = senses(json!([{"definition": [{"t": long}]}]));
         let g = fallback_gloss(&s);
         assert!(g.ends_with('…'));
-        assert!(!g.contains('b'), "should cut at the space before the long run");
+        assert!(
+            !g.contains('b'),
+            "should cut at the space before the long run"
+        );
     }
 }

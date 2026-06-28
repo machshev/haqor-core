@@ -162,7 +162,11 @@ pub(crate) fn collect_attestation(morphhb_dir: &Path) -> Result<AttestMap> {
     for g in gold {
         let key = (
             normalize_surface(&g.surface),
-            (g.binyan.name().to_string(), g.form.name().to_string(), g.pgn),
+            (
+                g.binyan.name().to_string(),
+                g.form.name().to_string(),
+                g.pgn,
+            ),
         );
         *map.entry(key).or_default() += 1;
     }
@@ -581,10 +585,7 @@ pub fn eval_from_db(
             // frequency with THIS token's own gold count removed, tie-broken by
             // stored order. The winner is the most-attested-elsewhere reading.
             let loo = |c: &(String, String, String)| -> usize {
-                let n = attest
-                    .get(&(key.clone(), c.clone()))
-                    .copied()
-                    .unwrap_or(0);
+                let n = attest.get(&(key.clone(), c.clone())).copied().unwrap_or(0);
                 // Decrement self: this token contributes 1 to its own gold's count.
                 if c.0 == gb && c.1 == gf && c.2 == g.pgn {
                     n.saturating_sub(1)

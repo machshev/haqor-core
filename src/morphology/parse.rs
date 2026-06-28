@@ -1059,7 +1059,9 @@ fn assign_fidelity(seq: &[Cons], matches: &mut [VerbMatch]) {
 /// difference, not the kind of spelling fold (dagesh, mater, hataf) that should
 /// demote a reading from exact.
 fn undot(s: &str) -> String {
-    s.chars().filter(|&c| c != '\u{05C1}' && c != '\u{05C2}').collect()
+    s.chars()
+        .filter(|&c| c != '\u{05C1}' && c != '\u{05C2}')
+        .collect()
 }
 
 /// [`MatchFidelity`] for an indexed match: `Exact` when the surface stem's raw
