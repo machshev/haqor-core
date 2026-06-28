@@ -233,26 +233,68 @@ fn tidy_span_text(s: &str) -> String {
     out
 }
 
-/// Expand the BDB abbreviation `v.` (Latin *vide*, "see") to the English word
-/// in definition text, so a cross-reference reads `see X` rather than `v. X`.
-/// Only the standalone token is touched, so `adv.`/`deriv.`/`subv.` are left
-/// intact; and `v.` immediately before a number is a verse citation, not
-/// *vide*, so it is kept too. Leading/trailing spacing is preserved (the spans
+/// Expand the abbreviations BDB uses to save print space into plain English,
+/// since the app is under no such constraint. Covers cross-reference,
+/// equivalence, hedging, meta and grammatical abbreviations; part-of-speech
+/// codes (`n.pr.m`, `vb`, …) and ambiguous one-letter forms are deliberately
+/// left as-is.
+///
+/// Only standalone tokens are touched, so `adv.`/`subst.` and the like keep
+/// their own trailing dots. Enclosing brackets and trailing punctuation are
+/// peeled off before matching and restored after, so `(foll.` and `id.)` are
+/// caught too. `v.` immediately before a number is a verse citation ("v. 18"),
+/// not *vide*, so it stays. Leading/trailing spacing is preserved (the spans
 /// abut styled runs, so the gap carries meaning).
-fn expand_vide(s: &str) -> String {
+fn expand_abbreviations(s: &str) -> String {
     let toks: Vec<&str> = s.split_whitespace().collect();
     if toks.is_empty() {
         return s.to_string();
     }
-    let mut parts: Vec<&str> = Vec::with_capacity(toks.len());
+    let mut parts: Vec<String> = Vec::with_capacity(toks.len());
     for (i, t) in toks.iter().enumerate() {
+        // Peel enclosing brackets/punctuation, keeping the abbreviation's own
+        // trailing dot (so `(id.)` → lead `(`, core `id.`, trail `)`).
+        let after_lead = t.trim_start_matches(['(', '[', '{']);
+        let lead = &t[..t.len() - after_lead.len()];
+        let core = after_lead.trim_end_matches([')', ']', '}', ',', ';']);
+        let trail = &after_lead[core.len()..];
+
         let next_is_num = toks
             .get(i + 1)
             .and_then(|n| n.chars().next())
             .is_some_and(|c| c.is_ascii_digit());
-        parts.push(if *t == "v." && !next_is_num { "see" } else { t });
+        let expanded = match core {
+            // Cross-reference and direction.
+            "v." | "vid." if !next_is_num => "see",
+            "cf." => "compare",
+            "sub." => "under",
+            "supr." => "above",
+            "infr." => "below",
+            "foll." => "following",
+            "prec." => "preceding",
+            // Equivalence.
+            "id." => "same as",
+            // Hedging.
+            "prob." => "probably",
+            "perh." => "perhaps",
+            "usu." => "usually",
+            "esp." => "especially",
+            "dub." => "dubious",
+            "opp." => "opposite",
+            // Meta.
+            "mng." => "meaning",
+            "deriv." => "derivation",
+            "abbrev." => "abbreviation",
+            // Grammar.
+            "pl." => "plural",
+            "sg." => "singular",
+            "abs." => "absolute",
+            "cstr." => "construct",
+            _ => core,
+        };
+        parts.push(format!("{lead}{expanded}{trail}"));
     }
-    let mut out = String::with_capacity(s.len() + 4);
+    let mut out = String::with_capacity(s.len() + 16);
     if s.starts_with(char::is_whitespace) {
         out.push(' ');
     }
@@ -306,11 +348,22 @@ fn fallback_gloss(senses: &[Value]) -> String {
     }
     let joined = parts.join(" ");
 
-    // Drop a leading bare occurrence count ("44 n.pr.m. …" → "n.pr.m. …").
-    let body = joined
-        .split_once(' ')
-        .filter(|(head, _)| !head.is_empty() && head.chars().all(|c| c.is_ascii_digit()))
-        .map_or(joined.as_str(), |(_, rest)| rest);
+    // Drop orphaned punctuation tokens — empty brackets left by a bracketed
+    // headword (`[]`) and stray `.`/`,`/`;` left where a dropped scripture
+    // reference used to sit ("id. [זֵרֹעַ] , , ." → "id. [זֵרֹעַ]") — plus a
+    // leading bare occurrence count ("44 n.pr.m. …" → "n.pr.m. …"). Tokens that
+    // carry a letter or a meaningful symbol (`=`, `√`, a bracketed word) stay.
+    let mut toks: Vec<&str> = joined
+        .split_whitespace()
+        .filter(|t| !t.chars().all(|c| "[](){}.,;:".contains(c)))
+        .collect();
+    if toks
+        .first()
+        .is_some_and(|t| t.chars().all(|c| c.is_ascii_digit()))
+    {
+        toks.remove(0);
+    }
+    let body = toks.join(" ");
 
     let cleaned = body.trim().trim_end_matches([',', ';', ':']).trim();
 
@@ -698,8 +751,19 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                                     gloss_parts.push(g);
                                 }
                             }
+                            // Some `<w src>` cross-references print their target's
+                            // entry id as the visible text (e.g. `<w src="g.cl.ad">
+                            // g.cl.ad</w>`) — gibberish to a reader. When the text
+                            // is just the id, swap in the resolved headword.
+                            let display = match xref.as_deref() {
+                                Some(x) if tidy(&txt) == x => headwords
+                                    .get(x)
+                                    .cloned()
+                                    .unwrap_or_else(|| txt.to_string()),
+                                _ => txt.to_string(),
+                            };
                             if let Some(sp) = span(
-                                &expand_vide(&tidy_span_text(&txt)),
+                                &expand_abbreviations(&tidy_span_text(&display)),
                                 style,
                                 href.as_deref(),
                                 xref.as_deref(),
@@ -778,11 +842,14 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         // when an entry has none (proper names, cross-references)
                         // derive a readable fallback from the sense text so the
                         // Lexicon tab is never blank.
-                        let gloss = if gloss_parts.is_empty() {
+                        // Expand abbreviations on the assembled gloss, not just
+                        // per span: an abbreviation can straddle two text nodes
+                        // ("id" + ". [") and only become a token once joined.
+                        let gloss = expand_abbreviations(&if gloss_parts.is_empty() {
                             fallback_gloss(&senses)
                         } else {
                             gloss_parts.join("; ")
-                        };
+                        });
 
                         let content_json = Value::Object({
                             let mut m = Map::new();
@@ -1210,21 +1277,37 @@ mod tests {
     }
 
     #[test]
-    fn expand_vide_replaces_the_standalone_token_only() {
-        // The cross-reference stub (its own text node, spaces preserved).
-        assert_eq!(expand_vide(" v. "), " see ");
-        // Mid-phrase vide.
-        assert_eq!(expand_vide("in Naphtali, v. "), "in Naphtali, see ");
-        // "see also", "see supr.".
-        assert_eq!(expand_vide(" v. also "), " see also ");
-        // Tokens that merely end in "v." are untouched.
-        assert_eq!(expand_vide("adv. of negation"), "adv. of negation");
-        assert_eq!(expand_vide(" deriv. unknown "), " deriv. unknown ");
+    fn expand_abbreviations_replaces_standalone_tokens_only() {
+        // v. (vide): the cross-reference stub, spaces preserved.
+        assert_eq!(expand_abbreviations(" v. "), " see ");
+        assert_eq!(
+            expand_abbreviations("in Naphtali, v. "),
+            "in Naphtali, see "
+        );
+        assert_eq!(expand_abbreviations(" v. also "), " see also ");
+        // id. (idem): equivalence cross-reference.
+        assert_eq!(
+            expand_abbreviations("n.[m.] id. [זֵרֹעַ]"),
+            "n.[m.] same as [זֵרֹעַ]"
+        );
+        // A spread of the other expansions.
+        assert_eq!(
+            expand_abbreviations("cf. sub. supr. foll. prob. mng. dub. only pl."),
+            "compare under above following probably meaning dubious only plural"
+        );
+        // Enclosing brackets/punctuation are peeled and restored.
+        assert_eq!(expand_abbreviations("(id. [X])"), "(same as [X])");
+        assert_eq!(expand_abbreviations("√ of foll.)"), "√ of following)");
+        assert_eq!(expand_abbreviations("(cf. X, perh."), "(compare X, perhaps");
+        assert_eq!(expand_abbreviations(" deriv. unknown "), " derivation unknown ");
+        // Tokens not in the table (incl. POS codes) are left untouched.
+        assert_eq!(expand_abbreviations("adv. of negation"), "adv. of negation");
+        assert_eq!(expand_abbreviations(" n.pr.m. subst. "), " n.pr.m. subst. ");
         // "v." before a number is a verse citation, not vide.
-        assert_eq!(expand_vide("v. 18"), "v. 18");
+        assert_eq!(expand_abbreviations("v. 18"), "v. 18");
         // Whitespace-only / empty nodes pass through unchanged.
-        assert_eq!(expand_vide(" "), " ");
-        assert_eq!(expand_vide(""), "");
+        assert_eq!(expand_abbreviations(" "), " ");
+        assert_eq!(expand_abbreviations(""), "");
     }
 
     #[test]
@@ -1237,6 +1320,22 @@ mod tests {
             {"num": "2", "definition": [{"t": "tribal name"}]},
         ]));
         assert_eq!(fallback_gloss(&s), "n.pr.m. second son of Jacob and Leah");
+    }
+
+    #[test]
+    fn fallback_drops_orphaned_brackets_and_stray_punctuation() {
+        // זֵרְעֹן (g.cl.ae): a bracketed headword leaves an empty "[]" and a
+        // dropped scripture ref leaves a dangling ".". The bracketed cross-ref
+        // word and the POS marker (both carry letters) survive.
+        let s = senses(json!([{
+            "definition": [
+                {"t": "["}, {"t": "] "}, {"i": true, "t": "n.[m.]"},
+                {"t": " id. ["}, {"rtl": true, "t": "זֵרֹעַ", "xref": "g.cl.ad"},
+                {"t": "], only pl. "},
+                {"href": "Daniel 1:16", "t": "Dn 1:16"}, {"t": ". "},
+            ],
+        }]));
+        assert_eq!(fallback_gloss(&s), "n.[m.] id. [זֵרֹעַ], only pl.");
     }
 
     #[test]
