@@ -557,6 +557,52 @@ impl Bible {
         Ok(out)
     }
 
+    /// Other *surfaces* (Hebrew) for a multiple-choice reading quiz: already-read
+    /// words first (familiar), topped up with frequent words. The app
+    /// transliterates each into the option labels and drops any that collide, so
+    /// a few extra are returned for margin. Empty when too few exist.
+    fn reading_distractors(&self, surface: &str) -> rusqlite::Result<Vec<String>> {
+        const WANT: usize = 5;
+        let mut out: Vec<String> = Vec::new();
+        let mut seen: std::collections::HashSet<String> = std::collections::HashSet::new();
+        seen.insert(surface.to_string());
+
+        let mut candidates: Vec<String> = Vec::new();
+        {
+            let mut stmt = self.conn().prepare(
+                "SELECT s.text FROM progress.word_srs ws \
+                 JOIN hebrewdb.surface s ON s.surface_id = ws.surface_id \
+                 WHERE ws.aspect = 'read' AND s.text != ?1 \
+                 ORDER BY ws.introduced_epoch DESC LIMIT 60",
+            )?;
+            let rows = stmt.query_map(params![surface], |r| r.get::<_, String>(0))?;
+            for row in rows {
+                candidates.push(row?);
+            }
+        }
+        {
+            let mut stmt = self.conn().prepare(
+                "SELECT text FROM hebrewdb.surface \
+                 WHERE text != ?1 AND n_candidates > 0 \
+                 ORDER BY occurrences DESC LIMIT 80",
+            )?;
+            let rows = stmt.query_map(params![surface], |r| r.get::<_, String>(0))?;
+            for row in rows {
+                candidates.push(row?);
+            }
+        }
+
+        for cand in candidates {
+            if out.len() >= WANT {
+                break;
+            }
+            if seen.insert(cand.clone()) {
+                out.push(cand);
+            }
+        }
+        Ok(out)
+    }
+
     /// Up to three plausible *other* glosses for a multiple-choice meaning quiz:
     /// meanings the learner has already studied first (familiar, so genuinely
     /// confusable), topped up with the most frequent words' glosses. Deduplicated
@@ -649,7 +695,7 @@ impl Bible {
 
         let distractors = match aspect {
             WordAspect::Mean => self.meaning_distractors(surface, &gloss)?,
-            WordAspect::Read => Vec::new(),
+            WordAspect::Read => self.reading_distractors(surface)?,
         };
 
         Ok(Some(WordCard {
