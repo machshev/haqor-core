@@ -70,6 +70,23 @@ impl Grade {
             _ => None,
         }
     }
+
+    /// Map a self-assessed confidence (`0..=100`, from the grading slider) onto
+    /// an SM-2 grade. For a multiple-choice answer pass `correct`: a wrong pick
+    /// is always [`Grade::Again`] regardless of confidence (you didn't know it),
+    /// while a correct pick is graded purely on confidence — so a lucky guess
+    /// rated low still lapses rather than counting as known.
+    pub fn from_confidence(confidence: u8, correct: Option<bool>) -> Grade {
+        if correct == Some(false) {
+            return Grade::Again;
+        }
+        match confidence {
+            0..=24 => Grade::Again,
+            25..=54 => Grade::Hard,
+            55..=84 => Grade::Good,
+            _ => Grade::Easy,
+        }
+    }
 }
 
 /// The two things learned about a word, in order: how to *read* it (its
@@ -192,6 +209,10 @@ pub struct GlyphCard {
     /// For a vowel point, an already-learnt consonant to display it on (so it is
     /// taught as a sounded-out syllable). None for consonants and reading marks.
     pub host: Option<String>,
+    /// Other already-introduced glyphs of the same kind, offered as wrong
+    /// answers when this card is quizzed multiple-choice. Empty on `New*` cards
+    /// and whenever too few peers exist for a quiz (the app then self-grades).
+    pub distractors: Vec<String>,
 }
 
 /// A word to learn or review, for a particular [`WordAspect`].
@@ -204,6 +225,10 @@ pub struct WordCard {
     pub root: String,
     pub morph: String,
     pub aspect: WordAspect,
+    /// Other plausible glosses offered as wrong answers when a meaning card is
+    /// quizzed multiple-choice. Filled only for [`WordAspect::Mean`]; empty when
+    /// too few exist for a quiz (the app then self-grades).
+    pub distractors: Vec<String>,
 }
 
 /// A fully-learnt verse offered to read, with other now-readable passages.
@@ -373,6 +398,7 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
                 glyph: key,
                 is_consonant: cons,
                 host: None,
+                distractors: Vec::new(),
             });
         }
     }
@@ -475,6 +501,7 @@ impl Bible {
                 glyph: host_to_teach(surface, ch),
                 is_consonant: true,
                 host: None,
+                distractors: Vec::new(),
             })),
         }
     }
@@ -485,11 +512,104 @@ impl Bible {
             Some(c) if is_vowel_point(c) => self.known_vowel_host("", c)?,
             _ => None,
         };
+        let distractors = self.glyph_distractors(&glyph)?;
         Ok(GlyphCard {
             is_consonant: ch.is_some_and(is_consonant),
             glyph,
             host,
+            distractors,
         })
+    }
+
+    /// Up to three other already-introduced glyphs of the *same kind*
+    /// (consonant / vowel point / reading mark) as `glyph`, for a
+    /// multiple-choice quiz. Most-recently-introduced first; the app shuffles.
+    fn glyph_distractors(&self, glyph: &str) -> rusqlite::Result<Vec<String>> {
+        const WANT: usize = 3;
+        let Some(ch) = glyph.chars().next() else {
+            return Ok(Vec::new());
+        };
+        let cons = is_consonant(ch);
+        let vowel = is_vowel_point(ch);
+        let mut out = Vec::new();
+        let mut stmt = self.conn().prepare(
+            "SELECT glyph FROM progress.glyph_srs WHERE glyph != ?1 \
+             ORDER BY introduced_epoch DESC",
+        )?;
+        let rows = stmt.query_map(params![glyph], |r| r.get::<_, String>(0))?;
+        for row in rows {
+            if out.len() >= WANT {
+                break;
+            }
+            let g = row?;
+            let Some(gc) = g.chars().next() else { continue };
+            let same = if cons {
+                is_consonant(gc)
+            } else if vowel {
+                is_vowel_point(gc)
+            } else {
+                !is_consonant(gc) && !is_vowel_point(gc)
+            };
+            if same {
+                out.push(g);
+            }
+        }
+        Ok(out)
+    }
+
+    /// Up to three plausible *other* glosses for a multiple-choice meaning quiz:
+    /// meanings the learner has already studied first (familiar, so genuinely
+    /// confusable), topped up with the most frequent words' glosses. Deduplicated
+    /// against `gloss` and each other; the app adds the right answer and shuffles.
+    fn meaning_distractors(&self, surface: &str, gloss: &str) -> rusqlite::Result<Vec<String>> {
+        const WANT: usize = 3;
+        let mut out: Vec<String> = Vec::new();
+        if gloss.trim().is_empty() {
+            return Ok(out);
+        }
+        let mut seen: std::collections::HashSet<String> = std::collections::HashSet::new();
+        seen.insert(gloss.trim().to_lowercase());
+
+        let mut candidates: Vec<String> = Vec::new();
+        {
+            let mut stmt = self.conn().prepare(
+                "SELECT s.text FROM progress.word_srs ws \
+                 JOIN hebrewdb.surface s ON s.surface_id = ws.surface_id \
+                 WHERE ws.aspect = 'mean' AND s.text != ?1 \
+                 ORDER BY ws.introduced_epoch DESC LIMIT 60",
+            )?;
+            let rows = stmt.query_map(params![surface], |r| r.get::<_, String>(0))?;
+            for row in rows {
+                candidates.push(row?);
+            }
+        }
+        {
+            let mut stmt = self.conn().prepare(
+                "SELECT text FROM hebrewdb.surface \
+                 WHERE text != ?1 AND n_candidates > 0 \
+                 ORDER BY occurrences DESC LIMIT 80",
+            )?;
+            let rows = stmt.query_map(params![surface], |r| r.get::<_, String>(0))?;
+            for row in rows {
+                candidates.push(row?);
+            }
+        }
+
+        for cand in candidates {
+            if out.len() >= WANT {
+                break;
+            }
+            if let Some(w) = self.hebrew_word_info(&cand) {
+                let g = w.gloss.trim().to_string();
+                if g.is_empty() {
+                    continue;
+                }
+                if seen.insert(g.to_lowercase()) {
+                    out.push(g);
+                }
+            }
+        }
+        Ok(out)
     }
 
     // --- card builders -------------------------------------------------------
@@ -527,6 +647,11 @@ impl Bible {
             None => (String::new(), String::new(), String::new()),
         };
 
+        let distractors = match aspect {
+            WordAspect::Mean => self.meaning_distractors(surface, &gloss)?,
+            WordAspect::Read => Vec::new(),
+        };
+
         Ok(Some(WordCard {
             surface_id,
             surface: surface.to_string(),
@@ -535,6 +660,7 @@ impl Bible {
             root,
             morph,
             aspect,
+            distractors,
         }))
     }
 
@@ -693,6 +819,7 @@ impl Bible {
                     glyph: key,
                     is_consonant: false,
                     host: None,
+                    distractors: Vec::new(),
                 }));
             }
         }
@@ -947,6 +1074,26 @@ mod tests {
         assert_eq!((s.reps, s.interval_days), (0, 0));
         assert_eq!(s.lapses, 1);
         assert!(!s.graduated());
+    }
+
+    #[test]
+    fn confidence_maps_to_grades_and_quiz_gates() {
+        use Grade::*;
+        // Self-grade slider buckets.
+        assert_eq!(Grade::from_confidence(0, None), Again);
+        assert_eq!(Grade::from_confidence(24, None), Again);
+        assert_eq!(Grade::from_confidence(25, None), Hard);
+        assert_eq!(Grade::from_confidence(54, None), Hard);
+        assert_eq!(Grade::from_confidence(55, None), Good);
+        assert_eq!(Grade::from_confidence(84, None), Good);
+        assert_eq!(Grade::from_confidence(85, None), Easy);
+        assert_eq!(Grade::from_confidence(100, None), Easy);
+        // A wrong multiple-choice pick always lapses, however confident.
+        assert_eq!(Grade::from_confidence(100, Some(false)), Again);
+        // A correct pick is graded on confidence — a low-confidence (lucky) hit
+        // still lapses rather than counting as known.
+        assert_eq!(Grade::from_confidence(90, Some(true)), Easy);
+        assert_eq!(Grade::from_confidence(10, Some(true)), Again);
     }
 
     #[test]
