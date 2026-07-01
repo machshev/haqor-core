@@ -362,6 +362,23 @@ fn create_schema(db: &Connection) -> Result<()> {
             gizra         TEXT NOT NULL,
             n_forms       INTEGER NOT NULL,
             n_occurrences INTEGER NOT NULL
+         );
+         CREATE TABLE verse_word(
+            book       INTEGER NOT NULL,
+            chapter    INTEGER NOT NULL,
+            verse      INTEGER NOT NULL,
+            position   INTEGER NOT NULL,
+            surface_id INTEGER NOT NULL
+         );
+         CREATE TABLE verse_stats(
+            book          INTEGER NOT NULL,
+            chapter       INTEGER NOT NULL,
+            verse         INTEGER NOT NULL,
+            word_count    INTEGER NOT NULL,
+            distinct_count INTEGER NOT NULL,
+            min_occ       INTEGER NOT NULL,
+            sum_occ       INTEGER NOT NULL,
+            PRIMARY KEY (book, chapter, verse)
          );",
     )?;
     Ok(())
@@ -373,6 +390,8 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
          CREATE INDEX idx_analyses_surface ON analyses(surface_id);
          CREATE INDEX idx_analyses_root ON analyses(root);
          CREATE INDEX idx_noun_analyses_surface ON noun_analyses(surface_id);
+         CREATE INDEX idx_verse_word_ref ON verse_word(book, chapter, verse);
+         CREATE INDEX idx_verse_word_surface ON verse_word(surface_id);
 
          CREATE VIEW review_missing AS
             SELECT surface_id, text, occurrences
@@ -405,6 +424,89 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
             WHERE language = 'aramaic'
             ORDER BY occurrences DESC;",
     )?;
+    Ok(())
+}
+
+/// Per-verse accumulator while walking the (verse-grouped) occurrence stream.
+struct VerseAcc {
+    book: u8,
+    chapter: u8,
+    verse: u8,
+    /// Running word position; doubles as the final word_count once the verse ends.
+    position: i64,
+    distinct: HashSet<usize>,
+    min_occ: u32,
+    sum_occ: u64,
+}
+
+/// Populate `verse_word` (ordered surface per verse position) and `verse_stats`
+/// (per-verse difficulty) from the occurrence stream produced by
+/// [`collect_tokens`], which is already grouped in (book, chapter, verse) order.
+/// `counts[surface_id]` is the surface's total OT occurrence count, used to score
+/// each verse's rarest (`min_occ`) and total (`sum_occ`) word commonness.
+fn populate_verse_tables(
+    tx: &Connection,
+    occurrences: &[Occurrence],
+    counts: &[u32],
+) -> Result<()> {
+    let mut vw_stmt = tx.prepare(
+        "INSERT INTO verse_word(book, chapter, verse, position, surface_id) \
+         VALUES (?1, ?2, ?3, ?4, ?5)",
+    )?;
+    let mut vs_stmt = tx.prepare(
+        "INSERT INTO verse_stats(book, chapter, verse, word_count, distinct_count, \
+         min_occ, sum_occ) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
+    )?;
+
+    let flush = |acc: &VerseAcc, vs: &mut rusqlite::Statement| -> Result<()> {
+        vs.execute((
+            acc.book as i64,
+            acc.chapter as i64,
+            acc.verse as i64,
+            acc.position,
+            acc.distinct.len() as i64,
+            acc.min_occ as i64,
+            acc.sum_occ as i64,
+        ))?;
+        Ok(())
+    };
+
+    let mut cur: Option<VerseAcc> = None;
+    for occ in occurrences {
+        let same = cur.as_ref().is_some_and(|a| {
+            a.book == occ.book && a.chapter == occ.chapter && a.verse == occ.verse
+        });
+        if !same {
+            if let Some(acc) = &cur {
+                flush(acc, &mut vs_stmt)?;
+            }
+            cur = Some(VerseAcc {
+                book: occ.book,
+                chapter: occ.chapter,
+                verse: occ.verse,
+                position: 0,
+                distinct: HashSet::new(),
+                min_occ: u32::MAX,
+                sum_occ: 0,
+            });
+        }
+        let acc = cur.as_mut().expect("verse accumulator initialised above");
+        vw_stmt.execute((
+            occ.book as i64,
+            occ.chapter as i64,
+            occ.verse as i64,
+            acc.position,
+            occ.surface_id as i64,
+        ))?;
+        acc.position += 1;
+        acc.distinct.insert(occ.surface_id);
+        let c = counts[occ.surface_id];
+        acc.min_occ = acc.min_occ.min(c);
+        acc.sum_occ += c as u64;
+    }
+    if let Some(acc) = &cur {
+        flush(acc, &mut vs_stmt)?;
+    }
     Ok(())
 }
 
@@ -961,6 +1063,14 @@ fn build_hebrew(
                 occ.verse as i64,
             ))?;
         }
+
+        // Per-verse word index (ordered surfaces) and difficulty stats, derived
+        // from the same occurrence stream. `occurrences` is grouped by verse in
+        // (book, chapter, verse) order — see collect_tokens — so a single pass
+        // assigns each word its in-verse position and aggregates the stats the
+        // tutor's verse selection ranks on. min_occ is the rarest constituent
+        // surface (the verse's bottleneck word); sum_occ its total commonness.
+        populate_verse_tables(&tx, &occurrences, &counts)?;
     }
     tx.commit()?;
 

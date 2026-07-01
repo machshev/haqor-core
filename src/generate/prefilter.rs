@@ -95,9 +95,6 @@ const FUNCTION_WORDS: &[&str] = &[
     // לְמַען — defective spelling (no ayin vowel) of the particle לְמַעַן "for the
     // sake of / in order that" (1Chr 28:8).
     "לְמַען",
-    // יְהִוה — a hiriq-pointed variant of the Tetragrammaton (closed-class divine
-    // name, never a verb).
-    "יְהִוה",
     // כְּמּוֹ — dagesh variant of the preposition כְּמוֹ "like / as" (poetic).
     "כְּמּוֹ",
     // וְאָּנֹכִי — conjunction + dagesh variant of the independent pronoun אָנֹכִי
@@ -604,13 +601,12 @@ const FUNCTION_WORDS_EXACT: &[&str] = &[
     "תַחְתָּי",
 ];
 
-/// The Tetragrammaton and its surface variants. The lexicon carries the divine
-/// name with a holem on the he (יְהֹוָה, Strong's 3068/3069), but the Masoretic
-/// text writes the Qere-perpetuum pointing without it (יְהוָה / יְהוִה / יֱהוִה),
-/// so it never matches the lexicon's proper-noun inventory. We add the attested
-/// surface forms directly. The proclitic-peeled remainders (יהוָה / יהוִה, with no
-/// shewa under the yod) let prefixed forms — לַיהוָה, בַּיהוָה, וַיהוָה — resolve too.
-const DIVINE_NAMES: &[&str] = &["יְהוָה", "יְהוִה", "יֱהוִה", "יהוָה", "יהוִה"];
+// The divine name needs no entry here. On import it is re-pointed from the
+// Masoretic qere-perpetuum pointing to its reconstructed pronunciation יַהְוֶה
+// (see ADR 0005 / [`super::uxlc::repoint_divine_name`]), which is a homograph of
+// the III-he imperfect it derives from — so the verb parser resolves it (and its
+// proclitic forms) directly, like any other word. The old qere pointing had no
+// verb reading and so used to be listed here as a proper noun.
 
 /// Recognises non-verb tokens by exact pointed form.
 pub struct Prefilter {
@@ -647,14 +643,6 @@ impl Prefilter {
                 proper.insert(n);
             }
         }
-        // The divine name is absent from the lexicon's pointing (see DIVINE_NAMES);
-        // add its attested surface forms so it is recognised as a proper noun.
-        proper.extend(
-            DIVINE_NAMES
-                .iter()
-                .map(|s| normalize_surface(s))
-                .filter(|s| !s.is_empty()),
-        );
         // Many names never match the lexicon by exact pointing (plene/defective,
         // pausal, or simply absent — see [`super::proper_names`]); add the
         // gold-harvested attested surface forms directly.
@@ -828,18 +816,6 @@ mod tests {
         assert_eq!(pf.classify(&normalize_surface("עָלָיו")), Some("function"));
         assert_eq!(pf.classify(&normalize_surface("אֹתוֹ")), Some("function"));
         assert_eq!(pf.classify(&normalize_surface("מִמֶּנּוּ")), Some("function"));
-    }
-
-    #[test]
-    fn matches_divine_name_and_prefixed() {
-        let pf = Prefilter {
-            function: HashSet::new(),
-            function_exact: HashSet::new(),
-            proper: DIVINE_NAMES.iter().map(|s| normalize_surface(s)).collect(),
-        };
-        assert_eq!(pf.classify(&normalize_surface("יְהוָה")), Some("proper"));
-        // לַיהוָה = proclitic לַ + the peeled remainder יהוָה (no shewa on yod).
-        assert_eq!(pf.classify(&normalize_surface("לַיהוָה")), Some("proper"));
     }
 
     #[test]
