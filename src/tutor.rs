@@ -256,6 +256,36 @@ pub struct TutorProgress {
     pub total_verses: i64,
 }
 
+/// Richer spaced-repetition statistics for the tutor stats view. Cheap indexed
+/// counts over `progress.db`, computed on demand (not attached to every card
+/// like [`TutorProgress`]). A card is *learning* while `interval_days == 0` (in
+/// the short in-session steps) and *mature* once it graduates to day-scale
+/// spacing; *seen* is every introduced card.
+#[derive(Debug, Clone, Copy, Default)]
+pub struct TutorStats {
+    /// Letters/vowels/marks introduced, still in learning, and graduated.
+    pub glyphs_seen: i64,
+    pub glyphs_learning: i64,
+    pub glyphs_mature: i64,
+    /// Word meanings introduced, still in learning, and graduated.
+    pub words_seen: i64,
+    pub words_learning: i64,
+    pub words_mature: i64,
+    /// Cards whose next review is now due (`due_epoch <= now`).
+    pub glyphs_due: i64,
+    pub words_due: i64,
+    /// Card answers logged today (UTC day) and over all time.
+    pub reviews_today: i64,
+    pub reviews_total: i64,
+    /// Consecutive days (ending today or yesterday) with at least one review.
+    pub streak_days: i64,
+    /// Share of answers recalled (not "Again"), 0..=100; 0 when no reviews yet.
+    pub accuracy_pct: i64,
+    /// Verses every word of which is now known, out of the whole corpus.
+    pub verses_readable: i64,
+    pub total_verses: i64,
+}
+
 /// Surface-ids fully learnt (meaning graduated) — the "known" vocabulary for
 /// verse coverage. A subquery reused across selection joins.
 const DONE_SURFACES: &str = "SELECT surface_id FROM progress.word_srs \
@@ -313,7 +343,14 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
          CREATE TABLE IF NOT EXISTS progress.meta(
             key   TEXT PRIMARY KEY,
             value TEXT NOT NULL
-         );",
+         );
+         CREATE TABLE IF NOT EXISTS progress.reviews(
+            epoch INTEGER NOT NULL,
+            day   INTEGER NOT NULL,
+            track TEXT    NOT NULL,
+            grade INTEGER NOT NULL
+         );
+         CREATE INDEX IF NOT EXISTS progress.idx_reviews_day ON reviews(day);",
     )
 }
 
@@ -1049,6 +1086,16 @@ impl Bible {
                 )?;
             }
         }
+        // Log one review event per card answer (a syllable card grades several
+        // glyphs but is a single answer) for streak / activity / accuracy stats.
+        let track_str = match track {
+            Track::Glyph => "glyph",
+            Track::Word => "word",
+        };
+        self.conn().execute(
+            "INSERT INTO progress.reviews(epoch, day, track, grade) VALUES (?1, ?2, ?3, ?4)",
+            params![now, now.div_euclid(SECONDS_PER_DAY), track_str, grade_i],
+        )?;
         self.next_study_item(now)
     }
 
@@ -1108,13 +1155,102 @@ impl Bible {
         })
     }
 
+    /// Richer SRS statistics for the stats view: learning/mature splits, cards
+    /// due, activity (reviews today/total), streak, accuracy, and reading
+    /// coverage. All cheap indexed counts over `progress.db`.
+    pub fn tutor_stats(&self, now: i64) -> rusqlite::Result<TutorStats> {
+        let conn = self.conn();
+        let count = |sql: &str| -> rusqlite::Result<i64> { conn.query_row(sql, [], |r| r.get(0)) };
+
+        let glyphs_seen = count("SELECT COUNT(*) FROM progress.glyph_srs")?;
+        let glyphs_mature =
+            count("SELECT COUNT(*) FROM progress.glyph_srs WHERE interval_days >= 1")?;
+        let words_seen = count("SELECT COUNT(*) FROM progress.word_srs")?;
+        let words_mature =
+            count("SELECT COUNT(*) FROM progress.word_srs WHERE interval_days >= 1")?;
+
+        let glyphs_due = conn.query_row(
+            "SELECT COUNT(*) FROM progress.glyph_srs WHERE due_epoch <= ?1",
+            params![now],
+            |r| r.get(0),
+        )?;
+        let words_due = conn.query_row(
+            "SELECT COUNT(*) FROM progress.word_srs WHERE due_epoch <= ?1",
+            params![now],
+            |r| r.get(0),
+        )?;
+
+        let day_now = now.div_euclid(SECONDS_PER_DAY);
+        let reviews_today = conn.query_row(
+            "SELECT COUNT(*) FROM progress.reviews WHERE day = ?1",
+            params![day_now],
+            |r| r.get(0),
+        )?;
+        let reviews_total = count("SELECT COUNT(*) FROM progress.reviews")?;
+        let recalled = count("SELECT COUNT(*) FROM progress.reviews WHERE grade > 0")?;
+        let accuracy_pct = if reviews_total > 0 {
+            recalled * 100 / reviews_total
+        } else {
+            0
+        };
+
+        let verses_readable =
+            count("SELECT COUNT(*) FROM progress.verse_progress WHERE state = 'readable'")?;
+        let total_verses = count("SELECT COUNT(*) FROM hebrewdb.verse_stats")?;
+
+        Ok(TutorStats {
+            glyphs_seen,
+            glyphs_learning: glyphs_seen - glyphs_mature,
+            glyphs_mature,
+            words_seen,
+            words_learning: words_seen - words_mature,
+            words_mature,
+            glyphs_due,
+            words_due,
+            reviews_today,
+            reviews_total,
+            streak_days: self.review_streak(day_now)?,
+            accuracy_pct,
+            verses_readable,
+            total_verses,
+        })
+    }
+
+    /// Consecutive review days ending on `day_now` (or `day_now - 1`, so the
+    /// streak is not shown as broken until a whole day is missed).
+    fn review_streak(&self, day_now: i64) -> rusqlite::Result<i64> {
+        let mut stmt = self
+            .conn()
+            .prepare("SELECT DISTINCT day FROM progress.reviews ORDER BY day DESC")?;
+        let days: Vec<i64> = stmt
+            .query_map([], |r| r.get(0))?
+            .collect::<rusqlite::Result<_>>()?;
+        // Anchor on today if studied today, else yesterday — a still-alive streak
+        // that just hasn't been continued yet today.
+        let mut expected = match days.first() {
+            Some(&d) if d == day_now => day_now,
+            _ => day_now - 1,
+        };
+        let mut streak = 0;
+        for d in days {
+            if d == expected {
+                streak += 1;
+                expected -= 1;
+            } else if d < expected {
+                break;
+            }
+        }
+        Ok(streak)
+    }
+
     /// Wipe all tutor progress.
     pub fn reset_tutor(&self) -> rusqlite::Result<()> {
         self.conn().execute_batch(
             "DELETE FROM progress.glyph_srs;
              DELETE FROM progress.word_srs;
              DELETE FROM progress.verse_progress;
-             DELETE FROM progress.meta;",
+             DELETE FROM progress.meta;
+             DELETE FROM progress.reviews;",
         )
     }
 }
@@ -1208,6 +1344,42 @@ mod tests {
                 assert!(AUDIBLE_GUTTURALS.contains(&cps[0].to_string().as_str()));
             }
         }
+        Ok(())
+    }
+
+    #[test]
+    fn tutor_stats_track_activity_streak_and_accuracy() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let day = SECONDS_PER_DAY;
+        // Day 0: two answers within the same UTC day — one recalled, one lapse.
+        bible.submit_review(Track::Glyph, "מ", Grade::Good, 0)?;
+        bible.submit_review(Track::Glyph, "ל", Grade::Again, 100)?;
+        // Days 1 and 2: one answer each — a 3-day streak ending "today" (day 2).
+        bible.submit_review(Track::Glyph, "מ", Grade::Good, day)?;
+        bible.submit_review(Track::Glyph, "מ", Grade::Good, 2 * day)?;
+
+        let s = bible.tutor_stats(2 * day)?;
+        assert_eq!(s.reviews_total, 4);
+        assert_eq!(s.reviews_today, 1, "only the day-2 answer counts as today");
+        assert_eq!(s.streak_days, 3, "days 0, 1 and 2 are consecutive");
+        assert_eq!(s.accuracy_pct, 75, "3 of 4 answers recalled");
+        assert_eq!(s.glyphs_seen, 2, "two distinct glyphs introduced");
+
+        // A whole missed day breaks the streak: from day 4, day 2 is stale.
+        assert_eq!(bible.tutor_stats(4 * day)?.streak_days, 0);
+        // Studying "yesterday" (day 3) keeps the run 0..=3 alive today (day 4),
+        // even though today has no review yet — a 4-day streak.
+        bible.submit_review(Track::Glyph, "ל", Grade::Good, 3 * day)?;
+        assert_eq!(bible.tutor_stats(4 * day)?.streak_days, 4);
         Ok(())
     }
 
