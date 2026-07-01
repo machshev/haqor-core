@@ -18,6 +18,11 @@
 //! 2. **Word meaning** — once all a word's glyphs are known (so the learner can
 //!    already sound it out), drill what the word means.
 //!
+//! Verse-punctuating reading marks (sof pasuq, maqaf) carry no sound of their
+//! own, so they are shown once with an explanation the first time a verse
+//! needs them and never drilled with spaced repetition (see
+//! [`StudyItem::ExplainMark`]).
+//!
 //! Reviews are scheduled with a compact SM-2 with short in-session learning
 //! steps (so recall actually happens within a sitting, not only the next day),
 //! persisted in a writable `progress.db` (attached by
@@ -107,9 +112,11 @@ impl Grade {
     }
 }
 
-/// Which review track a card belongs to: an individual glyph (consonant, vowel,
-/// or reading mark) or a whole word's meaning. Reading is never a word-level
-/// track — vocalisation is learnt at the glyph/syllable level.
+/// Which review track a card belongs to: an individual glyph (consonant or
+/// vowel) or a whole word's meaning. Reading is never a word-level track —
+/// vocalisation is learnt at the glyph/syllable level. Reading marks (sof
+/// pasuq, maqaf) are neither — they are explained once, never drilled (see
+/// [`StudyItem::ExplainMark`]).
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Track {
     Glyph,
@@ -248,6 +255,10 @@ pub enum StudyItem {
     ReviewGlyph(GlyphCard),
     NewWord(WordCard),
     ReviewWord(WordCard),
+    /// A reading mark (sof pasuq, maqaf) shown with an explanation. Carries no
+    /// grade — the app just acknowledges it and asks for the next item, like
+    /// [`StudyItem::ReadVerse`]. Never revisited once shown.
+    ExplainMark(GlyphCard),
     ReadVerse(VerseCard),
     Done,
 }
@@ -355,7 +366,11 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             track TEXT    NOT NULL,
             grade INTEGER NOT NULL
          );
-         CREATE INDEX IF NOT EXISTS progress.idx_reviews_day ON reviews(day);",
+         CREATE INDEX IF NOT EXISTS progress.idx_reviews_day ON reviews(day);
+         CREATE TABLE IF NOT EXISTS progress.marks_seen(
+            mark             TEXT PRIMARY KEY,
+            introduced_epoch INTEGER NOT NULL
+         );",
     )
 }
 
@@ -993,6 +1008,21 @@ impl Bible {
         Ok(None)
     }
 
+    /// Whether a reading mark has already been shown (tracked in
+    /// `progress.marks_seen`, distinct from `glyph_srs`, since reading marks
+    /// are never drilled).
+    fn mark_seen(&self, mark: &str) -> rusqlite::Result<bool> {
+        Ok(self
+            .conn()
+            .query_row(
+                "SELECT 1 FROM progress.marks_seen WHERE mark = ?1",
+                params![mark],
+                |_| Ok(()),
+            )
+            .optional()?
+            .is_some())
+    }
+
     fn next_unseen_reading_mark(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Option<GlyphCard>> {
         let text = self.get(b, c, v)?;
         for mark in READING_MARKS {
@@ -1000,7 +1030,7 @@ impl Bible {
                 continue;
             }
             let key = mark.to_string();
-            if !self.glyph_known(&key)? {
+            if !self.mark_seen(&key)? {
                 return Ok(Some(GlyphCard {
                     glyph: key,
                     is_consonant: false,
@@ -1074,9 +1104,16 @@ impl Bible {
                 return Ok(review);
             }
         }
-        // Verse fully learnt: teach any unseen reading marks, then read it.
+        // Verse fully learnt: explain any unseen reading marks, then read it.
+        // Recorded as seen immediately (never drilled), mirroring how the
+        // verse itself is marked readable below.
         if let Some(mark) = self.next_unseen_reading_mark(b, c, v)? {
-            return Ok(StudyItem::NewGlyph(mark));
+            self.conn().execute(
+                "INSERT INTO progress.marks_seen(mark, introduced_epoch) VALUES (?1, ?2) \
+                 ON CONFLICT(mark) DO NOTHING",
+                params![mark.glyph, now],
+            )?;
+            return Ok(StudyItem::ExplainMark(mark));
         }
         self.conn().execute(
             "INSERT INTO progress.verse_progress(book, chapter, verse, state, last_read_epoch) \
@@ -1326,7 +1363,8 @@ impl Bible {
              DELETE FROM progress.word_srs;
              DELETE FROM progress.verse_progress;
              DELETE FROM progress.meta;
-             DELETE FROM progress.reviews;",
+             DELETE FROM progress.reviews;
+             DELETE FROM progress.marks_seen;",
         )
     }
 }
@@ -1587,6 +1625,7 @@ mod tests {
 
         let mut saw_read = false;
         let mut saw_word = false;
+        let mut saw_mark = false;
         for _ in 0..4000 {
             item = match item {
                 StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
@@ -1596,6 +1635,12 @@ mod tests {
                     saw_word = true;
                     bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
                 }
+                StudyItem::ExplainMark(_) => {
+                    // Gradeless, like ReadVerse: acknowledged just by asking
+                    // for the next item.
+                    saw_mark = true;
+                    bible.next_study_item(now)?
+                }
                 StudyItem::ReadVerse(_) => {
                     saw_read = true;
                     break;
@@ -1604,7 +1649,45 @@ mod tests {
             };
         }
         assert!(saw_word, "should drill word meaning via SRS");
+        assert!(saw_mark, "should explain the sof pasuq before reading");
         assert!(saw_read, "should finish and read the first verse");
+        Ok(())
+    }
+
+    #[test]
+    fn reading_mark_is_explained_once_and_never_drilled() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let now = 1_700_000_000;
+        let mut item = bible.next_study_item(now)?;
+        let mut mark_count = 0;
+        for _ in 0..4000 {
+            item = match item {
+                StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
+                    bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
+                }
+                StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
+                    bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::ExplainMark(_) => {
+                    mark_count += 1;
+                    bible.next_study_item(now)?
+                }
+                StudyItem::ReadVerse(_) | StudyItem::Done => break,
+            };
+        }
+        assert_eq!(mark_count, 1, "sof pasuq is explained exactly once");
+        // Never entered the drilled-glyph store, so it never comes up for
+        // review.
+        assert!(!bible.glyph_known("\u{05C3}")?);
         Ok(())
     }
 }
