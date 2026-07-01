@@ -246,6 +246,10 @@ pub struct VerseCard {
     pub chapter: u8,
     pub verse: u8,
     pub examples: Vec<(u8, u8, u8)>,
+    /// The verse's words in reading order, as `word_srs` surface keys — lets
+    /// the app let the learner flag which ones they misread, demoting just
+    /// those (see [`Bible::verse_words`]).
+    pub words: Vec<String>,
 }
 
 /// The next thing for the learner to do.
@@ -384,6 +388,16 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             params![mark.to_string()],
         )?;
     }
+
+    // `letter_identity` used to stop scanning at the first mark after a
+    // shin, so a geminated shin (dagesh *then* shin/sin dot, e.g.
+    // אַשּׁוּר/הַשּׁוֹפָר) was mistaught as a bare, dotless שׁ instead of
+    // folding the dot in. Purge that stale key; a correctly-dotted "שׁ"/"שׂ"
+    // row is unaffected and gets re-introduced normally if missing.
+    db.execute(
+        "DELETE FROM progress.glyph_srs WHERE glyph = ?1",
+        params![SHIN.to_string()],
+    )?;
     Ok(())
 }
 
@@ -431,18 +445,27 @@ fn is_shin_sin_dot(c: char) -> bool {
     matches!(c as u32, 0x05C1 | 0x05C2)
 }
 
-/// The glyph identity of consonant `letter` given the mark immediately
-/// following it: for bet/pe a dagesh, or for shin a shin/sin dot, changes the
-/// sound, so it is folded into the letter itself and the pair is taught as one
-/// atomic glyph rather than a letter plus a separately-drilled mark. Returns
-/// the glyph key and whether `next` was consumed into it.
-fn letter_identity(letter: char, next: Option<char>) -> (String, bool) {
-    match next {
-        Some(m) if is_dagesh(m) && DAGESH_LETTERS.contains(&letter) => {
-            (format!("{letter}{m}"), true)
+/// The glyph identity of consonant `letter` given the marks immediately
+/// following it in `rest`: for bet/pe a dagesh, or for shin a shin/sin dot,
+/// changes the sound, so it is folded into the letter itself and the pair is
+/// taught as one atomic glyph rather than a letter plus a separately-drilled
+/// mark. Shin can carry *both* a gemination dagesh and a shin/sin dot, in
+/// that canonical order (e.g. אַשּׁוּר, הַשּׁוֹפָר) — a doubled shin is not a
+/// distinct sound from a plain one, so the dagesh is skipped over (not
+/// folded, not taught) to find the dot that does determine the sound.
+/// Returns the glyph key and how many of `rest`'s chars were consumed into
+/// it.
+fn letter_identity(letter: char, rest: &[char]) -> (String, usize) {
+    match rest.first() {
+        Some(&m) if is_dagesh(m) && DAGESH_LETTERS.contains(&letter) => {
+            (format!("{letter}{m}"), 1)
         }
-        Some(m) if letter == SHIN && is_shin_sin_dot(m) => (format!("{letter}{m}"), true),
-        _ => (letter.to_string(), false),
+        Some(&m) if letter == SHIN && is_shin_sin_dot(m) => (format!("{letter}{m}"), 1),
+        Some(&m) if letter == SHIN && is_dagesh(m) => match rest.get(1) {
+            Some(&d) if is_shin_sin_dot(d) => (format!("{letter}{d}"), 2),
+            _ => (letter.to_string(), 0),
+        },
+        _ => (letter.to_string(), 0),
     }
 }
 
@@ -468,11 +491,9 @@ fn contextual_host(surface: &str, vowel: char) -> Option<String> {
             break;
         }
         if is_consonant(c) {
-            let (key, consumed) = letter_identity(fold_final(c), chars.get(i + 1).copied());
+            let (key, consumed) = letter_identity(fold_final(c), &chars[i + 1..]);
             on = Some(key);
-            if consumed {
-                i += 1;
-            }
+            i += consumed;
         }
         i += 1;
     }
@@ -504,9 +525,9 @@ fn split_glyph_key(key: &str) -> Vec<String> {
     while i < chars.len() {
         let c = fold_final(chars[i]);
         if is_consonant(c) {
-            let (tok, consumed) = letter_identity(c, chars.get(i + 1).copied());
+            let (tok, consumed) = letter_identity(c, &chars[i + 1..]);
             out.push(tok);
-            i += if consumed { 2 } else { 1 };
+            i += 1 + consumed;
         } else {
             out.push(c.to_string());
             i += 1;
@@ -529,7 +550,7 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
     while i < chars.len() {
         let c = chars[i];
         if is_consonant(c) {
-            let (key, consumed) = letter_identity(c, chars.get(i + 1).copied());
+            let (key, consumed) = letter_identity(c, &chars[i + 1..]);
             if seen.insert(key.clone()) {
                 out.push(GlyphCard {
                     glyph: key,
@@ -538,7 +559,7 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
                     distractors: Vec::new(),
                 });
             }
-            i += if consumed { 2 } else { 1 };
+            i += 1 + consumed;
             continue;
         }
         if is_vowel_point(c) {
@@ -995,22 +1016,42 @@ impl Bible {
 
     /// The next review card: the most-overdue introduced card (`pull_forward`
     /// false), or — to keep the session moving when nothing is strictly due —
-    /// the soonest still-in-learning card (`pull_forward` true).
+    /// the longest-waiting still-in-learning card (`pull_forward` true).
     fn next_review(&self, now: i64, pull_forward: bool) -> rusqlite::Result<Option<StudyItem>> {
-        // While learning, pull the soonest learning card forward (ignore due);
-        // otherwise take the most-overdue introduced card.
+        // No `reps > 0` guard on either query: a lapse (`Grade::Again`) resets
+        // `reps` to 0 on a card that's very much still in the table and due
+        // for a re-drill, so filtering on it stranded freshly-lapsed cards —
+        // never due, never pulled forward, never re-introduced (a row already
+        // exists) — permanently.
+        //
+        // Pull-forward orders by `introduced_epoch`, not `due_epoch`: a card
+        // repeatedly graded Again/Hard keeps resetting to the *shortest*
+        // learning step (`Srs::due_at`'s `reps == 0` case), so ordering by
+        // due_epoch would let it perpetually cut back to the front ahead of
+        // siblings that have made real progress (and so sit at a later,
+        // farther-out step) — starving them of the reviews they need to
+        // graduate and freezing the whole verse on the one stuck card.
+        // `introduced_epoch` is set once and never bumped by a re-grade, so it
+        // round-robins fairly by first-introduced order, while still
+        // eventually returning the stuck card once it's the only one left in
+        // the learning pool.
         let cond = if pull_forward {
-            "reps > 0 AND interval_days = 0"
+            "interval_days = 0"
         } else {
-            "reps > 0 AND due_epoch <= ?1"
+            "due_epoch <= ?1"
+        };
+        let order_col = if pull_forward {
+            "introduced_epoch"
+        } else {
+            "due_epoch"
         };
         let gsql = format!(
-            "SELECT glyph, due_epoch FROM progress.glyph_srs WHERE {cond} \
-             ORDER BY due_epoch ASC LIMIT 1"
+            "SELECT glyph, {order_col} FROM progress.glyph_srs WHERE {cond} \
+             ORDER BY {order_col} ASC LIMIT 1"
         );
         let wsql = format!(
-            "SELECT surface, due_epoch FROM progress.word_srs WHERE {cond} \
-             ORDER BY due_epoch ASC LIMIT 1"
+            "SELECT surface, {order_col} FROM progress.word_srs WHERE {cond} \
+             ORDER BY {order_col} ASC LIMIT 1"
         );
 
         let gmap = |r: &rusqlite::Row| Ok((r.get(0)?, r.get(1)?));
@@ -1163,11 +1204,13 @@ impl Bible {
         )?;
         self.set_meta_target(None)?;
         let examples = self.readable_examples(b, c, v, 3)?;
+        let words = self.verse_words(b, c, v)?;
         Ok(StudyItem::ReadVerse(VerseCard {
             book: b,
             chapter: c,
             verse: v,
             examples,
+            words,
         }))
     }
 
@@ -1257,6 +1300,19 @@ impl Bible {
             params![now, now.div_euclid(SECONDS_PER_DAY), track_str, grade_i],
         )?;
         self.next_study_item(now)
+    }
+
+    /// A verse's words in reading order, as `word_srs` surface keys — so the
+    /// app can offer them for the learner to flag ones they misread.
+    pub fn verse_words(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Vec<String>> {
+        let mut stmt = self.conn().prepare(
+            "SELECT s.text
+             FROM hebrewdb.verse_word vw
+             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+             WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
+             ORDER BY vw.position",
+        )?;
+        stmt.query_map(params![b, c, v], |r| r.get(0))?.collect()
     }
 
     /// Up to `limit` other verses sharing a word with `(b,c,v)` that are now
@@ -1619,6 +1675,22 @@ mod tests {
             .iter()
             .any(|c| c.is_consonant && c.glyph == format!("{SHIN}{SHIN_DOT}")));
 
+        // A geminated shin (dagesh forte, e.g. the assimilated definite
+        // article in אַשּׁוּר/הַשּׁוֹפָר) carries *both* a dagesh and a shin/sin
+        // dot, in that order — the dagesh must not stop the scan from finding
+        // the dot, or the doubled letter is mistaught as a dotless bare שׁ.
+        let geminated =
+            decompose_glyphs(&format!("{ALEF}{PATAH}{SHIN}{DAGESH}{SHIN_DOT}{QAMATS}{RESH}"));
+        let cons: Vec<&str> = geminated
+            .iter()
+            .filter(|c| c.is_consonant)
+            .map(|c| c.glyph.as_str())
+            .collect();
+        assert_eq!(
+            cons,
+            vec![ALEF.to_string(), format!("{SHIN}{SHIN_DOT}"), RESH.to_string()]
+        );
+
         // A dagesh on a non-begadkefat letter (pure gemination) isn't taught as
         // its own glyph, and doesn't change the host letter's identity.
         let gem = decompose_glyphs(&format!("{GIMEL}{DAGESH}{PATAH}{NUN}")); // dagesh chazak
@@ -1701,6 +1773,87 @@ mod tests {
         Ok(())
     }
 
+    /// Flagging a word as misread after `ReadVerse` (an "Again" grade on the
+    /// `word` track) must not re-serve the same verse to read forever. Before
+    /// the `next_review` fix, a lapse reset `reps` to 0, which the pull-forward
+    /// query's `reps > 0` guard then excluded — so the just-demoted word could
+    /// never be pulled forward for a re-drill, `next_target_verse` kept
+    /// re-picking the same still-unfinished verse, and `next_study_item` fell
+    /// straight through to `ReadVerse` again every single call.
+    #[test]
+    fn misread_word_does_not_re_serve_the_same_verse_forever() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let mut now = 1_700_000_000;
+        let mut item = bible.next_study_item(now)?;
+        let verse = loop {
+            now += 5;
+            item = match item {
+                StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
+                    bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
+                }
+                StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
+                    bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::ExplainMark(_) => bible.next_study_item(now)?,
+                StudyItem::ReadVerse(v) => break v,
+                StudyItem::Done => panic!("ran out of curriculum before a read"),
+            };
+        };
+        let misread = verse.words.first().cloned().expect("verse has words");
+
+        now += 5;
+        let after = bible.submit_review(Track::Word, &misread, Grade::Again, now)?;
+        let same_verse = |item: &StudyItem| match item {
+            StudyItem::ReadVerse(v) => {
+                (v.book, v.chapter, v.verse) == (verse.book, verse.chapter, verse.verse)
+            }
+            _ => false,
+        };
+        assert!(
+            !same_verse(&after),
+            "flagging a word should not immediately re-serve the same verse"
+        );
+
+        // The demoted word must actually be reachable again (not stranded).
+        let mut saw_misread_review = matches!(&after, StudyItem::ReviewWord(w) if w.surface == misread);
+        let mut item = after;
+        for _ in 0..500 {
+            if saw_misread_review {
+                break;
+            }
+            assert!(
+                !same_verse(&item),
+                "verse re-appeared before the misread word was ever reviewed"
+            );
+            now += 5;
+            item = match item {
+                StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
+                    bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
+                }
+                StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
+                    saw_misread_review |= w.surface == misread;
+                    bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::ExplainMark(_) => bible.next_study_item(now)?,
+                StudyItem::ReadVerse(_) | StudyItem::Done => break,
+            };
+        }
+        assert!(
+            saw_misread_review,
+            "the misread word should be pulled forward for review, not stranded"
+        );
+        Ok(())
+    }
+
     /// A word that never graduates (graded `Hard` forever, so it stays at
     /// `interval_days == 0`) must not block introducing a *different* word in
     /// the same verse. Before this was fixed, `next_introduction` only ever
@@ -1720,7 +1873,12 @@ mod tests {
             .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
         init_progress_schema(bible.conn())?;
 
-        let now = 1_700_000_000;
+        // A real session has wall-clock time passing between answers, which
+        // is what lets `introduced_epoch` order pull-forward fairly (see
+        // `next_review`); a frozen `now` makes every row's `introduced_epoch`
+        // identical and defeats that entirely, so advance it a little each
+        // card, like a learner actually answering at a steady pace.
+        let mut now = 1_700_000_000;
         let mut item = bible.next_study_item(now)?;
         let mut new_words = std::collections::HashSet::new();
         let mut stuck: Option<String> = None;
@@ -1728,6 +1886,7 @@ mod tests {
             if new_words.len() >= 2 {
                 break;
             }
+            now += 5;
             item = match item {
                 StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
                     bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
