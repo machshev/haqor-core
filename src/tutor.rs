@@ -311,6 +311,12 @@ pub struct TutorStats {
 const DONE_SURFACES: &str = "SELECT surface_id FROM progress.word_srs \
      WHERE interval_days >= 1";
 
+/// A verse's calibration difficulty: its rarest word's OT occurrence count.
+const DIFFICULTY: &str = "MIN(s.occurrences)";
+/// Excludes Biblical Aramaic verses from a `verse_word`/`surface` grouping —
+/// reused by every calibration query.
+const NOT_ARAMAIC: &str = "SUM(CASE WHEN s.language = 'aramaic' THEN 1 ELSE 0 END) = 0";
+
 /// SM-2 state for a card seeded as already-known by onboarding calibration
 /// (see [`Bible::seed_known_alphabet`], [`Bible::seed_known_vocab`]) rather
 /// than actually drilled: graduated, but due for a retention check in two
@@ -325,15 +331,19 @@ fn seeded_known_srs() -> Srs {
 }
 
 /// A verse shown during onboarding's vocabulary-calibration binary search
-/// (see [`Bible::calibration_probe`]): the hardest verse still readable if the
-/// learner already knows the `rank` most common words.
+/// (see [`Bible::calibration_probe`]): one of the corpus's distinct
+/// difficulty tiers, `tier` 0 being the easiest (most common rarest-word).
 #[derive(Debug, Clone)]
 pub struct CalibrationProbe {
     pub book: u8,
     pub chapter: u8,
     pub verse: u8,
     pub text: String,
-    pub rank: u32,
+    pub tier: u32,
+    /// This verse's difficulty: its rarest word's OT occurrence count. If the
+    /// learner can read this verse, every word occurring at least this often
+    /// is a reasonable "already known" cutoff (see [`Bible::seed_known_vocab`]).
+    pub min_occurrences: i64,
 }
 
 /// Create the `progress.db` tables if they do not yet exist. Idempotent. A
@@ -1541,12 +1551,25 @@ impl Bible {
         Ok(words == 0)
     }
 
-    /// Distinct Hebrew (non-Aramaic) vocabulary size — the domain for
-    /// [`Self::calibration_probe`]'s binary search over frequency rank, and
-    /// the same population [`crate::bible::Bible::vocab`] paginates over.
-    pub fn vocab_count(&self) -> rusqlite::Result<u32> {
+    /// The number of distinct verse-difficulty tiers — the domain for
+    /// [`Self::calibration_probe`]'s binary search. A verse's difficulty is
+    /// its rarest word's occurrence count; raw vocabulary rank is *not* a
+    /// usable search domain here, because Biblical Hebrew's frequency tail is
+    /// dominated by hapax legomena (~58% of the ~51k distinct surfaces occur
+    /// exactly once), so the bottom half of the rank space collapses to one
+    /// giant plateau of identical thresholds — searching it would just keep
+    /// re-serving the same verse. The distinct difficulty *values* are a much
+    /// smaller, well-behaved set (~80), one probe per genuinely distinguishable
+    /// step.
+    pub fn calibration_tier_count(&self) -> rusqlite::Result<u32> {
         self.conn().query_row(
-            "SELECT COUNT(*) FROM hebrewdb.surface WHERE language IS NULL",
+            &format!(
+                "SELECT COUNT(*) FROM (SELECT DISTINCT {DIFFICULTY} AS diff \
+                 FROM hebrewdb.verse_word vw \
+                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+                 GROUP BY vw.book, vw.chapter, vw.verse \
+                 HAVING {NOT_ARAMAIC})"
+            ),
             [],
             |r| r.get(0),
         )
@@ -1592,38 +1615,46 @@ impl Bible {
         Ok(())
     }
 
-    /// A representative verse for the vocabulary-calibration binary search: the
-    /// hardest not-Aramaic verse whose rarest word is at or just below
-    /// frequency `rank` (0 = the single most common word, matching
-    /// [`crate::bible::Bible::vocab`]'s ordering) — i.e. the hardest verse
-    /// still readable if the learner knows the `rank` most common words.
-    /// `None` once `rank` runs past the vocabulary or no verse qualifies.
-    pub fn calibration_probe(&self, rank: u32) -> rusqlite::Result<Option<CalibrationProbe>> {
-        let threshold: Option<i64> = self
+    /// A representative verse for the `tier`'th distinct difficulty tier
+    /// (0 = easiest — the most common rarest-word — counting up toward the
+    /// rarest), for the vocabulary-calibration binary search over
+    /// [`Self::calibration_tier_count`] tiers. `None` once `tier` runs past
+    /// the tier count.
+    pub fn calibration_probe(&self, tier: u32) -> rusqlite::Result<Option<CalibrationProbe>> {
+        let min_occurrences: Option<i64> = self
             .conn()
             .query_row(
-                "SELECT occurrences FROM hebrewdb.surface WHERE language IS NULL \
-                 ORDER BY occurrences DESC, surface_id LIMIT 1 OFFSET ?1",
-                params![rank],
+                &format!(
+                    "SELECT diff FROM (SELECT DISTINCT {DIFFICULTY} AS diff \
+                     FROM hebrewdb.verse_word vw \
+                     JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+                     GROUP BY vw.book, vw.chapter, vw.verse \
+                     HAVING {NOT_ARAMAIC}) \
+                     ORDER BY diff DESC LIMIT 1 OFFSET ?1"
+                ),
+                params![tier],
                 |r| r.get(0),
             )
             .optional()?;
-        let Some(threshold) = threshold else {
+        let Some(min_occurrences) = min_occurrences else {
             return Ok(None);
         };
 
+        // Any one verse at this exact difficulty; lowest reference first for
+        // a deterministic pick (many verses can tie on the same difficulty).
         let found: Option<(u8, u8, u8)> = self
             .conn()
             .query_row(
-                "SELECT vw.book, vw.chapter, vw.verse
-                 FROM hebrewdb.verse_word vw
-                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
-                 GROUP BY vw.book, vw.chapter, vw.verse
-                 HAVING SUM(CASE WHEN s.language = 'aramaic' THEN 1 ELSE 0 END) = 0
-                    AND MIN(s.occurrences) <= ?1
-                 ORDER BY MIN(s.occurrences) DESC
-                 LIMIT 1",
-                params![threshold],
+                &format!(
+                    "SELECT vw.book, vw.chapter, vw.verse
+                     FROM hebrewdb.verse_word vw
+                     JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+                     GROUP BY vw.book, vw.chapter, vw.verse
+                     HAVING {NOT_ARAMAIC} AND {DIFFICULTY} = ?1
+                     ORDER BY vw.book, vw.chapter, vw.verse
+                     LIMIT 1"
+                ),
+                params![min_occurrences],
                 |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
             )
             .optional()?;
@@ -1636,26 +1667,28 @@ impl Bible {
             chapter: c,
             verse: v,
             text,
-            rank,
+            tier,
+            min_occurrences,
         }))
     }
 
-    /// Finish vocabulary calibration: mark the `rank_cutoff` most common
-    /// (non-Aramaic) words as already known (graduated), so the ordinary
-    /// curriculum starts introducing new vocabulary from that frequency
-    /// boundary instead of from scratch. A no-op for `rank_cutoff == 0`.
-    pub fn seed_known_vocab(&self, rank_cutoff: u32, now: i64) -> rusqlite::Result<()> {
-        if rank_cutoff == 0 {
+    /// Finish vocabulary calibration: mark every (non-Aramaic) word occurring
+    /// at least `min_occurrences` times as already known (graduated), so the
+    /// ordinary curriculum starts introducing new vocabulary from that
+    /// frequency boundary instead of from scratch. A no-op for
+    /// `min_occurrences <= 0` (nothing confirmed known).
+    pub fn seed_known_vocab(&self, min_occurrences: i64, now: i64) -> rusqlite::Result<()> {
+        if min_occurrences <= 0 {
             return Ok(());
         }
         let seeded = seeded_known_srs();
         let due = seeded.due_at(now);
         let mut stmt = self.conn().prepare(
-            "SELECT text, surface_id FROM hebrewdb.surface WHERE language IS NULL \
-             ORDER BY occurrences DESC, surface_id LIMIT ?1",
+            "SELECT text, surface_id FROM hebrewdb.surface \
+             WHERE language IS NULL AND occurrences >= ?1",
         )?;
         let rows: Vec<(String, i64)> = stmt
-            .query_map(params![rank_cutoff], |r| Ok((r.get(0)?, r.get(1)?)))?
+            .query_map(params![min_occurrences], |r| Ok((r.get(0)?, r.get(1)?)))?
             .collect::<rusqlite::Result<_>>()?;
         for (surface, surface_id) in rows {
             self.conn().execute(
@@ -2293,11 +2326,14 @@ mod tests {
         Ok(())
     }
 
-    /// Calibration probes return progressively easier (more common minimum
-    /// word) verses as `rank` shrinks toward 0, and harder ones as it grows —
-    /// the property the app's binary search relies on.
+    /// Calibration probes return progressively easier (more common
+    /// rarest-word) verses as `tier` shrinks toward 0, and harder ones as it
+    /// grows — the property the app's binary search relies on. Critically,
+    /// every tier must be genuinely distinct (see
+    /// [`Bible::calibration_tier_count`]'s doc comment for why raw vocabulary
+    /// rank fails this): neighbouring tiers never probe the same verse.
     #[test]
-    fn calibration_probe_difficulty_tracks_rank() -> rusqlite::Result<()> {
+    fn calibration_probe_difficulty_tracks_tier_with_no_plateau() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
@@ -2308,24 +2344,29 @@ mod tests {
             .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
         init_progress_schema(bible.conn())?;
 
-        let easy = bible.calibration_probe(0)?.expect("rank 0 should resolve");
-        let count = bible.vocab_count()?;
-        let hard = bible
-            .calibration_probe(count - 1)?
-            .expect("last rank should resolve");
-        assert!(
-            easy.rank < hard.rank,
-            "sanity: probes echo back the requested rank"
-        );
-        // Past the end of the vocabulary there is nothing left to calibrate.
+        let count = bible.calibration_tier_count()?;
+        assert!(count > 1, "corpus should have multiple difficulty tiers");
+
+        let mut prev = bible.calibration_probe(0)?.expect("tier 0 should resolve");
+        for tier in 1..count {
+            let probe = bible
+                .calibration_probe(tier)?
+                .unwrap_or_else(|| panic!("tier {tier} should resolve"));
+            assert!(
+                probe.min_occurrences < prev.min_occurrences,
+                "tier {tier} must be strictly harder than the previous tier"
+            );
+            prev = probe;
+        }
+        // Past the last tier there is nothing left to calibrate.
         assert!(bible.calibration_probe(count)?.is_none());
         Ok(())
     }
 
-    /// Finishing calibration with a cutoff seeds exactly the top-`cutoff` most
-    /// common words as already known, and nothing beyond it.
+    /// Finishing calibration seeds every word at least as common as the
+    /// confirmed threshold as already known, and nothing rarer.
     #[test]
-    fn seed_known_vocab_marks_the_top_cutoff_words_known() -> rusqlite::Result<()> {
+    fn seed_known_vocab_marks_words_at_or_above_the_threshold_known() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
@@ -2337,28 +2378,62 @@ mod tests {
         init_progress_schema(bible.conn())?;
 
         let now = 1_700_000_000;
-        const CUTOFF: u32 = 50;
-        bible.seed_known_vocab(CUTOFF, now)?;
+        // A mid-corpus probe's exact threshold — real data, not a made-up cutoff.
+        let probe = bible
+            .calibration_probe(5)?
+            .expect("tier 5 should resolve on real data");
+        let threshold = probe.min_occurrences;
+        bible.seed_known_vocab(threshold, now)?;
 
         let known: i64 = bible.conn().query_row(
             &format!("SELECT COUNT(*) FROM ({DONE_SURFACES})"),
             [],
             |r| r.get(0),
         )?;
-        assert_eq!(known as u32, CUTOFF);
+        let expected: i64 = bible.conn().query_row(
+            "SELECT COUNT(*) FROM hebrewdb.surface WHERE language IS NULL AND occurrences >= ?1",
+            params![threshold],
+            |r| r.get(0),
+        )?;
+        assert_eq!(known, expected);
+        assert!(known > 0);
 
-        let top_word = bible.vocab(1, 0)?.into_iter().next().expect("has vocab");
-        assert!(
-            bible
-                .word_srs(&top_word.surface)?
-                .is_some_and(|s| s.graduated())
-        );
-        let far_word = bible
-            .vocab(1, CUTOFF + 500)?
-            .into_iter()
-            .next()
-            .expect("has vocab");
-        assert!(bible.word_srs(&far_word.surface)?.is_none());
+        // The single rarest word in the corpus must not be seeded.
+        let rarest = bible
+            .conn()
+            .query_row(
+                "SELECT text FROM hebrewdb.surface WHERE language IS NULL \
+                 ORDER BY occurrences ASC LIMIT 1",
+                [],
+                |r| r.get::<_, String>(0),
+            )
+            .optional()?;
+        if let Some(rarest) = rarest {
+            assert!(bible.word_srs(&rarest)?.is_none());
+        }
+        Ok(())
+    }
+
+    /// A no-op cutoff (nothing ever confirmed readable) must not seed anything.
+    #[test]
+    fn seed_known_vocab_with_zero_threshold_seeds_nothing() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        bible.seed_known_vocab(0, 1_700_000_000)?;
+        let known: i64 = bible.conn().query_row(
+            &format!("SELECT COUNT(*) FROM ({DONE_SURFACES})"),
+            [],
+            |r| r.get(0),
+        )?;
+        assert_eq!(known, 0);
         Ok(())
     }
 }
