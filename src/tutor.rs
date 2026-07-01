@@ -45,11 +45,23 @@ const SECONDS_PER_MIN: i64 = 60;
 /// Taught from the verse itself, sof-pasuq first.
 const READING_MARKS: [char; 2] = ['\u{05C3}', '\u{05BE}'];
 
-/// Gutturals — the only consonants a hataf (reduced) vowel sits under.
-const GUTTURALS: [&str; 4] = ["א", "ה", "ח", "ע"];
+/// Consonants whose modern transliteration is a silent onset (aleph, ayin) —
+/// never used as a syllable host, so a taught or quizzed syllable always sounds
+/// a consonant instead of collapsing to a bare vowel.
+const SILENT_HOSTS: [&str; 2] = ["א", "ע"];
+/// Gutturals that carry a hataf (reduced) vowel *and* have an audible onset
+/// (aleph and ayin are silent) — the hosts used to voice a hataf as a full
+/// syllable.
+const AUDIBLE_GUTTURALS: [&str; 2] = ["ה", "ח"];
 /// Clear, common consonants preferred when a vowel is shown in isolation; any
-/// consonant is grammatical for an ordinary (non-hataf) vowel.
+/// audible consonant is grammatical for an ordinary (non-hataf) vowel.
 const CLEAR_HOSTS: [&str; 6] = ["מ", "ל", "נ", "ר", "ת", "ב"];
+
+/// A consonant whose transliteration is silent, so it must not host a drill
+/// syllable (which would then read as just the vowel).
+fn is_silent_host(cons: &str) -> bool {
+    SILENT_HOSTS.contains(&cons)
+}
 
 /// How the learner rated a card, mapped onto SM-2 behaviour.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -334,7 +346,7 @@ fn is_hataf(vowel: char) -> bool {
 /// Preferred consonants that can legitimately carry `vowel`.
 fn valid_host_prefs(vowel: char) -> &'static [&'static str] {
     if is_hataf(vowel) {
-        &GUTTURALS
+        &AUDIBLE_GUTTURALS
     } else {
         &CLEAR_HOSTS
     }
@@ -354,9 +366,25 @@ fn contextual_host(surface: &str, vowel: char) -> Option<String> {
     on
 }
 
-/// The consonant to teach before `vowel` when no valid host is learnt yet.
+/// The consonant to teach before `vowel` when no valid host is learnt yet. A
+/// silent contextual consonant (aleph/ayin) is skipped so the taught host voices
+/// a full syllable.
 fn host_to_teach(surface: &str, vowel: char) -> String {
-    contextual_host(surface, vowel).unwrap_or_else(|| valid_host_prefs(vowel)[0].to_string())
+    contextual_host(surface, vowel)
+        .filter(|c| !is_silent_host(c))
+        .unwrap_or_else(|| valid_host_prefs(vowel)[0].to_string())
+}
+
+/// The glyph SRS keys a graded card touches. A single-codepoint key (a lone
+/// consonant, vowel, or reading mark) is graded as-is; a multi-codepoint
+/// syllable key (`"<consonant><vowel>"`) grades every glyph in it (finals
+/// folded), so reading the syllable credits its consonant *and* its vowel.
+fn split_glyph_key(key: &str) -> Vec<String> {
+    let chars: Vec<char> = key.chars().collect();
+    if chars.len() <= 1 {
+        return vec![key.to_string()];
+    }
+    chars.into_iter().map(|c| fold_final(c).to_string()).collect()
 }
 
 /// Decompose a (normalized) surface into its distinct teachable glyphs in
@@ -445,7 +473,10 @@ impl Bible {
     // --- host selection for vowels ------------------------------------------
 
     fn known_vowel_host(&self, surface: &str, vowel: char) -> rusqlite::Result<Option<String>> {
+        // Prefer the consonant the vowel actually sits on in the word, but only
+        // if it voices a syllable (not silent aleph/ayin).
         if let Some(ctx) = contextual_host(surface, vowel)
+            && !is_silent_host(&ctx)
             && self.glyph_known(&ctx)?
         {
             return Ok(Some(ctx));
@@ -458,10 +489,12 @@ impl Bible {
         if is_hataf(vowel) {
             return Ok(None);
         }
+        // Any known audible consonant (aleph/ayin excluded).
         self.conn()
             .query_row(
                 "SELECT glyph FROM progress.glyph_srs \
-                 WHERE unicode(glyph) BETWEEN 1488 AND 1514 LIMIT 1",
+                 WHERE unicode(glyph) BETWEEN 1488 AND 1514 \
+                   AND glyph NOT IN ('א','ע') LIMIT 1",
                 [],
                 |r| r.get(0),
             )
@@ -520,16 +553,18 @@ impl Bible {
         }
     }
 
-    /// A random already-known consonant that can legitimately carry `vowel`
-    /// (gutturals only for a hataf), for showing the vowel as a random syllable.
-    /// Falls back to the deterministic host picker if no random host qualifies.
+    /// A random already-known *audible* consonant that can legitimately carry
+    /// `vowel` (audible gutturals ה/ח only for a hataf; aleph/ayin excluded as
+    /// silent), for showing the vowel as a random full syllable. Falls back to
+    /// the deterministic host picker if no random host qualifies.
     fn random_vowel_host(&self, vowel: char) -> rusqlite::Result<Option<String>> {
         let sql = if is_hataf(vowel) {
             "SELECT glyph FROM progress.glyph_srs \
-             WHERE glyph IN ('א','ה','ח','ע') ORDER BY RANDOM() LIMIT 1"
+             WHERE glyph IN ('ה','ח') ORDER BY RANDOM() LIMIT 1"
         } else {
             "SELECT glyph FROM progress.glyph_srs \
-             WHERE unicode(glyph) BETWEEN 1488 AND 1514 ORDER BY RANDOM() LIMIT 1"
+             WHERE unicode(glyph) BETWEEN 1488 AND 1514 \
+               AND glyph NOT IN ('א','ע') ORDER BY RANDOM() LIMIT 1"
         };
         match self.conn().query_row(sql, [], |r| r.get(0)).optional()? {
             Some(h) => Ok(Some(h)),
@@ -537,26 +572,30 @@ impl Bible {
         }
     }
 
-    /// Up to three random nonsense syllables built from already-known consonants
-    /// and vowels, each a two-char `"<consonant><vowel>"` string, as wrong
-    /// answers for a vowel's multiple-choice reading quiz. A hataf vowel is only
-    /// paired with a guttural; the exact `host`+`vowel` combo is excluded. The
-    /// app transliterates and dedups, so a few extra are returned for margin.
+    /// Up to `WANT` random nonsense syllables built from already-known *audible*
+    /// consonants and vowels, each a two-char `"<consonant><vowel>"` string, as
+    /// wrong answers for a vowel's multiple-choice reading quiz. Silent hosts
+    /// (aleph/ayin) are excluded so every option is a full syllable; a hataf
+    /// vowel is only paired with an audible guttural (ה/ח); the exact
+    /// `host`+`vowel` combo is excluded. The app transliterates and dedups, so a
+    /// few extra are returned for margin.
     fn syllable_distractors(&self, host: &str, vowel: char) -> rusqlite::Result<Vec<String>> {
         const WANT: usize = 6;
         let mut out = Vec::new();
-        // v is a proper vowel point (sheva..holam=1456..1465, qubuts=1467,
-        // qamats-qatan=1479) — never a dagesh/sin-shin dot/mark that may also be
-        // in glyph_srs. A hataf (1457..1459) is only paired with a guttural.
+        // c is a known audible consonant (aleph/ayin excluded). v is a proper
+        // vowel point (sheva..holam=1456..1465, qubuts=1467, qamats-qatan=1479) —
+        // never a dagesh/sin-shin dot/mark that may also be in glyph_srs. A hataf
+        // (1457..1459) is only paired with an audible guttural (ה/ח).
         let mut stmt = self.conn().prepare(
             "SELECT c.glyph || v.glyph \
              FROM progress.glyph_srs c \
              JOIN progress.glyph_srs v \
              WHERE unicode(c.glyph) BETWEEN 1488 AND 1514 \
+               AND c.glyph NOT IN ('א','ע') \
                AND (unicode(v.glyph) BETWEEN 1456 AND 1465 \
                     OR unicode(v.glyph) IN (1467, 1479)) \
                AND NOT (unicode(v.glyph) BETWEEN 1457 AND 1459 \
-                        AND c.glyph NOT IN ('א','ה','ח','ע')) \
+                        AND c.glyph NOT IN ('ה','ח')) \
                AND NOT (c.glyph = ?1 AND v.glyph = ?2) \
              ORDER BY RANDOM() LIMIT ?3",
         )?;
@@ -943,8 +982,11 @@ impl Bible {
         }))
     }
 
-    /// Record a graded review and return the next item. The `track` selects the
-    /// glyph store or a word aspect; `key` is the glyph or surface.
+    /// Record a graded review and return the next item. `track` selects the glyph
+    /// store or the word store; `key` is a surface (word) or a glyph. A glyph key
+    /// may be a whole syllable (`"<consonant><vowel>"`): reading it correctly
+    /// demonstrates every glyph in it, so **each** glyph is graded, not just the
+    /// drilled vowel.
     pub fn submit_review(
         &self,
         track: Track,
@@ -952,37 +994,35 @@ impl Bible {
         grade: Grade,
         now: i64,
     ) -> rusqlite::Result<StudyItem> {
-        let prev = match track {
-            Track::Glyph => self.glyph_srs(key)?,
-            Track::Word => self.word_srs(key)?,
-        }
-        .unwrap_or_default();
-        let next = prev.graded(grade);
-        let due = next.due_at(now);
         let grade_i = grade as i64;
 
         match track {
             Track::Glyph => {
-                self.conn().execute(
-                    "INSERT INTO progress.glyph_srs(glyph, ease, interval_days, due_epoch, \
-                        reps, lapses, introduced_epoch, last_grade) \
-                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) \
-                     ON CONFLICT(glyph) DO UPDATE SET ease=excluded.ease, \
-                        interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
-                        reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
-                    params![
-                        key,
-                        next.ease,
-                        next.interval_days,
-                        due,
-                        next.reps,
-                        next.lapses,
-                        now,
-                        grade_i
-                    ],
-                )?;
+                for glyph in split_glyph_key(key) {
+                    let next = self.glyph_srs(&glyph)?.unwrap_or_default().graded(grade);
+                    self.conn().execute(
+                        "INSERT INTO progress.glyph_srs(glyph, ease, interval_days, due_epoch, \
+                            reps, lapses, introduced_epoch, last_grade) \
+                         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) \
+                         ON CONFLICT(glyph) DO UPDATE SET ease=excluded.ease, \
+                            interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
+                            reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
+                        params![
+                            glyph,
+                            next.ease,
+                            next.interval_days,
+                            next.due_at(now),
+                            next.reps,
+                            next.lapses,
+                            now,
+                            grade_i
+                        ],
+                    )?;
+                }
             }
             Track::Word => {
+                let next = self.word_srs(key)?.unwrap_or_default().graded(grade);
+                let due = next.due_at(now);
                 let surface_id: i64 = self.conn().query_row(
                     "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
                     params![key],
@@ -1135,33 +1175,66 @@ mod tests {
             .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
         init_progress_schema(bible.conn())?;
 
-        // Seed known consonants (incl. a guttural) and vowels (incl. a hataf).
+        // Seed audible consonants, audible gutturals (for hataf), plus a silent
+        // guttural (ע) and vowels incl. a hataf.
         let now = 1_700_000_000;
-        for g in ["מ", "ל", "ר", "ע", "ַ", "ֶ", "ֲ"] {
+        for g in ["מ", "ל", "ר", "ה", "ח", "ע", "ַ", "ֶ", "ֲ"] {
             bible.submit_review(Track::Glyph, g, Grade::Easy, now)?;
         }
 
-        // A non-hataf vowel: distractor syllables are consonant+vowel pairs, none
-        // equal to the exact correct combo, and never a bare glyph.
+        // A non-hataf vowel: distractor syllables are consonant+vowel pairs, on an
+        // audible consonant (never silent aleph/ayin), none equal to the correct
+        // combo, and never a bare glyph.
         let card = bible.review_glyph_card("ַ".to_string())?;
         let host = card.host.clone().expect("vowel gets a host");
+        assert!(!is_silent_host(&host), "host voices a syllable: {host}");
         assert!(!card.distractors.is_empty(), "should offer syllables");
         for d in &card.distractors {
             let cps: Vec<char> = d.chars().collect();
             assert_eq!(cps.len(), 2, "syllable is consonant+vowel: {d:?}");
-            assert!(is_consonant(cps[0]));
+            assert!(is_consonant(cps[0]) && !is_silent_host(&cps[0].to_string()));
             assert!(is_vowel_point(cps[1]));
             assert_ne!(*d, format!("{host}ַ"), "excludes the correct syllable");
         }
 
-        // A hataf vowel is only ever paired with a guttural host.
-        let hataf = bible.syllable_distractors("ע", 'ֲ')?;
+        // Distractors are random syllables; whenever one uses a hataf vowel it is
+        // paired only with an audible guttural (ה/ח), and never a silent host.
+        let hataf = bible.syllable_distractors("ה", 'ֲ')?;
+        assert!(!hataf.is_empty(), "hataf card should still offer syllables");
         for d in &hataf {
             let cps: Vec<char> = d.chars().collect();
+            assert!(!is_silent_host(&cps[0].to_string()));
             if is_hataf(cps[1]) {
-                assert!(GUTTURALS.contains(&cps[0].to_string().as_str()));
+                assert!(AUDIBLE_GUTTURALS.contains(&cps[0].to_string().as_str()));
             }
         }
+        Ok(())
+    }
+
+    #[test]
+    fn grading_a_syllable_credits_every_glyph() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        // Reading the syllable מַ correctly credits BOTH the consonant and vowel.
+        let now = 1_700_000_000;
+        bible.submit_review(Track::Glyph, "מַ", Grade::Good, now)?;
+        let m = bible.glyph_srs("מ")?.expect("consonant credited");
+        let a = bible.glyph_srs("ַ")?.expect("vowel credited");
+        assert_eq!(m.reps, 1);
+        assert_eq!(a.reps, 1);
+
+        // A lone glyph key still grades just that glyph.
+        assert_eq!(split_glyph_key("ל"), vec!["ל".to_string()]);
+        // Final forms fold when a syllable is split.
+        assert_eq!(split_glyph_key("ךַ"), vec!["כ".to_string(), "ַ".to_string()]);
         Ok(())
     }
 
