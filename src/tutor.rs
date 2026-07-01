@@ -371,7 +371,20 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             mark             TEXT PRIMARY KEY,
             introduced_epoch INTEGER NOT NULL
          );",
-    )
+    )?;
+
+    // Reading marks used to be drilled as ordinary glyphs before they were
+    // switched to a one-time explanation (see `ExplainMark`). A leftover
+    // `glyph_srs` row from that era makes a mark permanently eligible for
+    // `next_review`'s pull-forward rotation, so it resurfaces as a quiz card
+    // forever. Purge any such rows; harmless (and a no-op) once cleaned.
+    for mark in READING_MARKS {
+        db.execute(
+            "DELETE FROM progress.glyph_srs WHERE glyph = ?1",
+            params![mark.to_string()],
+        )?;
+    }
+    Ok(())
 }
 
 /// Fold a final-form consonant to its medial base so ך and כ are one glyph.
@@ -928,30 +941,56 @@ impl Bible {
         Ok(self.first_unfinished_word(b, c, v)?.is_none())
     }
 
-    /// The next thing to *introduce* (teach) toward the target verse, working one
-    /// word at a time: unseen glyphs, then — once all the word's glyphs are known
-    /// (so it can be sounded out) — the word's meaning. Returns None when the only
-    /// outstanding work is graduating cards already in learning (handled by
+    /// Every not-fully-learnt word in a verse, most common first. Unlike
+    /// [`Self::first_unfinished_word`] (used only to test verse completion),
+    /// this backs [`Self::next_introduction`]'s search for *something* left to
+    /// teach — so a word already mid-learning doesn't block introducing a
+    /// different word in the same verse.
+    fn unfinished_words(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Vec<String>> {
+        let mut stmt = self.conn().prepare(&format!(
+            "SELECT s.text
+             FROM hebrewdb.verse_word vw
+             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+             LEFT JOIN ({DONE_SURFACES}) done ON done.surface_id = vw.surface_id
+             WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
+               AND done.surface_id IS NULL
+             ORDER BY s.occurrences DESC"
+        ))?;
+        stmt.query_map(params![b, c, v], |r| r.get(0))?.collect()
+    }
+
+    /// The next thing to *introduce* (teach) toward the target verse: unseen
+    /// glyphs, then — once a word's glyphs are all known (so it can be sounded
+    /// out) — that word's meaning. Tries every not-fully-learnt word in the
+    /// verse, most common first, rather than stopping at the first one that
+    /// happens to already be mid-learning — otherwise the active card pool
+    /// never grows past whichever word is currently graduating (e.g. a
+    /// frequent word like the divine name, which always sorts first) and the
+    /// learner just keeps re-drilling it. Returns None only when every word is
+    /// either graduated or already fully introduced and mid-learning — the
+    /// remaining work is graduating cards already in learning (handled by
     /// pulling a learning review forward).
     fn next_introduction(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Option<StudyItem>> {
-        let Some(surface) = self.first_unfinished_word(b, c, v)? else {
-            return Ok(None);
-        };
-        // 1. Introduce unseen glyphs.
-        for g in decompose_glyphs(&surface) {
-            if !self.glyph_known(&g.glyph)? {
-                return Ok(Some(self.new_glyph_item(&surface, &g)?));
+        for surface in self.unfinished_words(b, c, v)? {
+            // 1. Introduce unseen glyphs.
+            for g in decompose_glyphs(&surface) {
+                if !self.glyph_known(&g.glyph)? {
+                    return Ok(Some(self.new_glyph_item(&surface, &g)?));
+                }
+            }
+            // 2. Drill this word's glyphs to "known" before the word itself;
+            // try the next word instead of giving up.
+            if !self.all_glyphs_graduated(&surface)? {
+                continue;
+            }
+            // 3. Word meaning (reading is already covered by the glyph/syllable
+            // drill). Already introduced (in learning or graduated) — try the
+            // next word instead of giving up.
+            if self.word_srs(&surface)?.is_none() {
+                return Ok(self.word_card(&surface)?.map(StudyItem::NewWord));
             }
         }
-        // 2. Drill the word's glyphs to "known" before the word itself.
-        if !self.all_glyphs_graduated(&surface)? {
-            return Ok(None);
-        }
-        // 3. Word meaning (reading is already covered by the glyph/syllable drill).
-        match self.word_srs(&surface)? {
-            None => Ok(self.word_card(&surface)?.map(StudyItem::NewWord)),
-            Some(_) => Ok(None), // in learning or graduated; nothing new to introduce
-        }
+        Ok(None)
     }
 
     /// The next review card: the most-overdue introduced card (`pull_forward`
@@ -1149,6 +1188,14 @@ impl Bible {
         match track {
             Track::Glyph => {
                 for glyph in split_glyph_key(key) {
+                    // Reading marks are explained once via `ExplainMark`, never
+                    // drilled — guard against a client mistakenly grading one
+                    // (or a stale key) from ever re-entering `glyph_srs`.
+                    if glyph.chars().count() == 1
+                        && READING_MARKS.contains(&glyph.chars().next().unwrap())
+                    {
+                        continue;
+                    }
                     let next = self.glyph_srs(&glyph)?.unwrap_or_default().graded(grade);
                     self.conn().execute(
                         "INSERT INTO progress.glyph_srs(glyph, ease, interval_days, due_epoch, \
@@ -1654,6 +1701,66 @@ mod tests {
         Ok(())
     }
 
+    /// A word that never graduates (graded `Hard` forever, so it stays at
+    /// `interval_days == 0`) must not block introducing a *different* word in
+    /// the same verse. Before this was fixed, `next_introduction` only ever
+    /// looked at the single most-common not-fully-learnt word — so once that
+    /// word (often a very frequent one, sorting first) was introduced but not
+    /// yet graduated, nothing else in the verse was ever introduced, and the
+    /// learner just kept re-drilling the same one or two cards forever.
+    #[test]
+    fn stuck_word_does_not_block_introducing_other_words() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let now = 1_700_000_000;
+        let mut item = bible.next_study_item(now)?;
+        let mut new_words = std::collections::HashSet::new();
+        let mut stuck: Option<String> = None;
+        for _ in 0..2000 {
+            if new_words.len() >= 2 {
+                break;
+            }
+            item = match item {
+                StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
+                    bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
+                }
+                StudyItem::NewWord(w) => {
+                    new_words.insert(w.surface.clone());
+                    if stuck.is_none() {
+                        stuck = Some(w.surface.clone());
+                    }
+                    // Hard, while still in the learning steps, repeats the
+                    // current step forever (see `Srs::graded`) — this word
+                    // never graduates.
+                    bible.submit_review(Track::Word, &w.surface, Grade::Hard, now)?
+                }
+                StudyItem::ReviewWord(w) => {
+                    let grade = if stuck.as_deref() == Some(w.surface.as_str()) {
+                        Grade::Hard
+                    } else {
+                        Grade::Good
+                    };
+                    bible.submit_review(Track::Word, &w.surface, grade, now)?
+                }
+                StudyItem::ExplainMark(_) => bible.next_study_item(now)?,
+                StudyItem::ReadVerse(_) | StudyItem::Done => break,
+            };
+        }
+        assert!(
+            new_words.len() >= 2,
+            "a second word should be introduced while the first is stuck mid-learning"
+        );
+        Ok(())
+    }
+
     #[test]
     fn reading_mark_is_explained_once_and_never_drilled() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
@@ -1687,6 +1794,54 @@ mod tests {
         assert_eq!(mark_count, 1, "sof pasuq is explained exactly once");
         // Never entered the drilled-glyph store, so it never comes up for
         // review.
+        assert!(!bible.glyph_known("\u{05C3}")?);
+        Ok(())
+    }
+
+    /// Before marks were switched to a one-time explanation, they were drilled
+    /// like ordinary glyphs, so some existing `progress.db` files still carry a
+    /// leftover `glyph_srs` row for one. Without a cleanup, that stale row makes
+    /// the mark permanently eligible for `next_review`'s pull-forward rotation —
+    /// it never graduates cleanly and keeps resurfacing as a quiz card forever,
+    /// crowding out real progression. `init_progress_schema` must purge it.
+    #[test]
+    fn stale_reading_mark_glyph_row_is_purged_on_init() -> rusqlite::Result<()> {
+        let db = Connection::open_in_memory()?;
+        db.execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(&db)?;
+        db.execute(
+            "INSERT INTO progress.glyph_srs(glyph, ease, interval_days, due_epoch, \
+                reps, lapses, introduced_epoch, last_grade) \
+             VALUES ('\u{05C3}', 2.5, 0, 0, 1, 0, 0, 2)",
+            [],
+        )?;
+        // Re-running init (as happens on every app start) must remove it.
+        init_progress_schema(&db)?;
+        let count: i64 = db.query_row(
+            "SELECT COUNT(*) FROM progress.glyph_srs WHERE glyph = '\u{05C3}'",
+            [],
+            |r| r.get(0),
+        )?;
+        assert_eq!(count, 0, "stale sof-pasuq glyph_srs row must be purged");
+        Ok(())
+    }
+
+    /// Grading a reading mark via `Track::Glyph` (e.g. a client that mistakenly
+    /// treats an `ExplainMark` card as gradable) must not resurrect it in
+    /// `glyph_srs`, or it would fall back into the forever-drilled state above.
+    #[test]
+    fn submit_review_ignores_reading_mark_glyph_keys() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        bible.submit_review(Track::Glyph, "\u{05C3}", Grade::Good, 1_700_000_000)?;
         assert!(!bible.glyph_known("\u{05C3}")?);
         Ok(())
     }
