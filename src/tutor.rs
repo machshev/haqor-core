@@ -6,11 +6,12 @@
 //! The curriculum, per target word, is layered so the learner always builds on
 //! what they can already read:
 //! 1. **Glyphs** — introduce each unseen consonant/niqqud point, then drill it
-//!    (a vowel as a nonsense syllable on a known consonant, e.g. בַ → "ba") with
-//!    SM-2 until *known*.
-//! 2. **Word reading** — once all the word's glyphs are known, drill reading the
-//!    whole word (its vocalisation) until known.
-//! 3. **Word meaning** — only then drill what the word means.
+//!    with SM-2 until *known*. Vowels are drilled as **random nonsense syllables**
+//!    (the vowel on a random already-known consonant, e.g. בַ → "ba"), quizzed
+//!    against other random known syllables — so vocalisation is learnt from the
+//!    letters themselves, never from reading whole real words.
+//! 2. **Word meaning** — once all a word's glyphs are known (so the learner can
+//!    already sound it out), drill what the word means.
 //!
 //! Reviews are scheduled with a compact SM-2 with short in-session learning
 //! steps (so recall actually happens within a sitting, not only the next day),
@@ -24,8 +25,8 @@ use crate::bible::Bible;
 
 /// A due glyph candidate `(glyph, due_epoch)`.
 type GlyphRow = Option<(String, i64)>;
-/// A due word candidate `(surface, aspect, due_epoch)`.
-type WordRow = Option<(String, String, i64)>;
+/// A due word candidate `(surface, due_epoch)`.
+type WordRow = Option<(String, i64)>;
 
 /// SM-2 ease bounds.
 const DEFAULT_EASE: f64 = 2.5;
@@ -89,30 +90,13 @@ impl Grade {
     }
 }
 
-/// The two things learned about a word, in order: how to *read* it (its
-/// vocalisation), then what it *means*.
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum WordAspect {
-    Read,
-    Mean,
-}
-
-impl WordAspect {
-    fn as_str(self) -> &'static str {
-        match self {
-            WordAspect::Read => "read",
-            WordAspect::Mean => "mean",
-        }
-    }
-}
-
-/// Which review track a card belongs to. Words split into their two aspects so
-/// each is scheduled independently.
+/// Which review track a card belongs to: an individual glyph (consonant, vowel,
+/// or reading mark) or a whole word's meaning. Reading is never a word-level
+/// track — vocalisation is learnt at the glyph/syllable level.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Track {
     Glyph,
-    WordRead,
-    WordMean,
+    Word,
 }
 
 /// Mutable SM-2 state for one card. `interval_days == 0` means the card is still
@@ -215,7 +199,8 @@ pub struct GlyphCard {
     pub distractors: Vec<String>,
 }
 
-/// A word to learn or review, for a particular [`WordAspect`].
+/// A word to learn or review. Words teach only meaning — by the time a word card
+/// appears, all its glyphs are known so the learner can already sound it out.
 #[derive(Debug, Clone)]
 pub struct WordCard {
     pub surface_id: i64,
@@ -224,10 +209,9 @@ pub struct WordCard {
     pub gloss: String,
     pub root: String,
     pub morph: String,
-    pub aspect: WordAspect,
-    /// Other plausible glosses offered as wrong answers when a meaning card is
-    /// quizzed multiple-choice. Filled only for [`WordAspect::Mean`]; empty when
-    /// too few exist for a quiz (the app then self-grades).
+    /// Other plausible glosses offered as wrong answers when the meaning is
+    /// quizzed multiple-choice. Empty when too few exist for a quiz (the app then
+    /// self-grades).
     pub distractors: Vec<String>,
 }
 
@@ -260,14 +244,15 @@ pub struct TutorProgress {
     pub total_verses: i64,
 }
 
-/// Surface-ids fully learnt (both aspects graduated) — the "known" vocabulary
-/// for verse coverage. A subquery reused across selection joins.
+/// Surface-ids fully learnt (meaning graduated) — the "known" vocabulary for
+/// verse coverage. A subquery reused across selection joins.
 const DONE_SURFACES: &str = "SELECT surface_id FROM progress.word_srs \
-     WHERE interval_days >= 1 GROUP BY surface_id HAVING COUNT(DISTINCT aspect) = 2";
+     WHERE interval_days >= 1";
 
 /// Create the `progress.db` tables if they do not yet exist. Idempotent. A
-/// pre-aspect `word_srs` (from before reading/meaning were split) is dropped and
-/// rebuilt — word progress resets once, glyph progress is kept.
+/// `word_srs` carrying the old per-aspect `aspect` column (from when reading and
+/// meaning were separate word tracks) is dropped and rebuilt — word progress
+/// resets once, glyph progress is kept.
 pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
     let word_sql: Option<String> = db
         .query_row(
@@ -277,7 +262,7 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
         )
         .optional()?;
     if let Some(sql) = word_sql
-        && !sql.contains("aspect")
+        && sql.contains("aspect")
     {
         db.execute_batch("DROP TABLE progress.word_srs")?;
     }
@@ -294,8 +279,7 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             last_grade       INTEGER NOT NULL
          );
          CREATE TABLE IF NOT EXISTS progress.word_srs(
-            surface          TEXT    NOT NULL,
-            aspect           TEXT    NOT NULL,
+            surface          TEXT    PRIMARY KEY,
             surface_id       INTEGER NOT NULL,
             ease             REAL    NOT NULL,
             interval_days    INTEGER NOT NULL,
@@ -303,8 +287,7 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             reps             INTEGER NOT NULL,
             lapses           INTEGER NOT NULL,
             introduced_epoch INTEGER NOT NULL,
-            last_grade       INTEGER NOT NULL,
-            PRIMARY KEY (surface, aspect)
+            last_grade       INTEGER NOT NULL
          );
          CREATE INDEX IF NOT EXISTS progress.idx_word_srs_id ON word_srs(surface_id);
          CREATE TABLE IF NOT EXISTS progress.verse_progress(
@@ -425,12 +408,12 @@ impl Bible {
             .optional()
     }
 
-    fn word_srs(&self, surface: &str, aspect: WordAspect) -> rusqlite::Result<Option<Srs>> {
+    fn word_srs(&self, surface: &str) -> rusqlite::Result<Option<Srs>> {
         self.conn()
             .query_row(
                 "SELECT ease, interval_days, reps, lapses FROM progress.word_srs \
-                 WHERE surface = ?1 AND aspect = ?2",
-                params![surface, aspect.as_str()],
+                 WHERE surface = ?1",
+                params![surface],
                 |r| {
                     Ok(Srs {
                         ease: r.get(0)?,
@@ -508,17 +491,83 @@ impl Bible {
 
     fn review_glyph_card(&self, glyph: String) -> rusqlite::Result<GlyphCard> {
         let ch = glyph.chars().next();
-        let host = match ch {
-            Some(c) if is_vowel_point(c) => self.known_vowel_host("", c)?,
-            _ => None,
+        // A vowel is drilled as a random nonsense syllable: it sits on a random
+        // already-known (valid) consonant, quizzed against other random known
+        // syllables. Consonants and marks quiz by name against same-kind peers.
+        match ch {
+            Some(c) if is_vowel_point(c) => {
+                let host = self.random_vowel_host(c)?;
+                let distractors = match &host {
+                    Some(h) => self.syllable_distractors(h, c)?,
+                    None => Vec::new(),
+                };
+                Ok(GlyphCard {
+                    is_consonant: false,
+                    glyph,
+                    host,
+                    distractors,
+                })
+            }
+            _ => {
+                let distractors = self.glyph_distractors(&glyph)?;
+                Ok(GlyphCard {
+                    is_consonant: ch.is_some_and(is_consonant),
+                    glyph,
+                    host: None,
+                    distractors,
+                })
+            }
+        }
+    }
+
+    /// A random already-known consonant that can legitimately carry `vowel`
+    /// (gutturals only for a hataf), for showing the vowel as a random syllable.
+    /// Falls back to the deterministic host picker if no random host qualifies.
+    fn random_vowel_host(&self, vowel: char) -> rusqlite::Result<Option<String>> {
+        let sql = if is_hataf(vowel) {
+            "SELECT glyph FROM progress.glyph_srs \
+             WHERE glyph IN ('א','ה','ח','ע') ORDER BY RANDOM() LIMIT 1"
+        } else {
+            "SELECT glyph FROM progress.glyph_srs \
+             WHERE unicode(glyph) BETWEEN 1488 AND 1514 ORDER BY RANDOM() LIMIT 1"
         };
-        let distractors = self.glyph_distractors(&glyph)?;
-        Ok(GlyphCard {
-            is_consonant: ch.is_some_and(is_consonant),
-            glyph,
-            host,
-            distractors,
-        })
+        match self.conn().query_row(sql, [], |r| r.get(0)).optional()? {
+            Some(h) => Ok(Some(h)),
+            None => self.known_vowel_host("", vowel),
+        }
+    }
+
+    /// Up to three random nonsense syllables built from already-known consonants
+    /// and vowels, each a two-char `"<consonant><vowel>"` string, as wrong
+    /// answers for a vowel's multiple-choice reading quiz. A hataf vowel is only
+    /// paired with a guttural; the exact `host`+`vowel` combo is excluded. The
+    /// app transliterates and dedups, so a few extra are returned for margin.
+    fn syllable_distractors(&self, host: &str, vowel: char) -> rusqlite::Result<Vec<String>> {
+        const WANT: usize = 6;
+        let mut out = Vec::new();
+        // v is a proper vowel point (sheva..holam=1456..1465, qubuts=1467,
+        // qamats-qatan=1479) — never a dagesh/sin-shin dot/mark that may also be
+        // in glyph_srs. A hataf (1457..1459) is only paired with a guttural.
+        let mut stmt = self.conn().prepare(
+            "SELECT c.glyph || v.glyph \
+             FROM progress.glyph_srs c \
+             JOIN progress.glyph_srs v \
+             WHERE unicode(c.glyph) BETWEEN 1488 AND 1514 \
+               AND (unicode(v.glyph) BETWEEN 1456 AND 1465 \
+                    OR unicode(v.glyph) IN (1467, 1479)) \
+               AND NOT (unicode(v.glyph) BETWEEN 1457 AND 1459 \
+                        AND c.glyph NOT IN ('א','ה','ח','ע')) \
+               AND NOT (c.glyph = ?1 AND v.glyph = ?2) \
+             ORDER BY RANDOM() LIMIT ?3",
+        )?;
+        let rows = stmt.query_map(
+            params![host, vowel.to_string(), WANT as i64],
+            |r| r.get::<_, String>(0),
+        )?;
+        for row in rows {
+            out.push(row?);
+        }
+        Ok(out)
     }
 
     /// Up to three other already-introduced glyphs of the *same kind*
@@ -557,52 +606,6 @@ impl Bible {
         Ok(out)
     }
 
-    /// Other *surfaces* (Hebrew) for a multiple-choice reading quiz: already-read
-    /// words first (familiar), topped up with frequent words. The app
-    /// transliterates each into the option labels and drops any that collide, so
-    /// a few extra are returned for margin. Empty when too few exist.
-    fn reading_distractors(&self, surface: &str) -> rusqlite::Result<Vec<String>> {
-        const WANT: usize = 5;
-        let mut out: Vec<String> = Vec::new();
-        let mut seen: std::collections::HashSet<String> = std::collections::HashSet::new();
-        seen.insert(surface.to_string());
-
-        let mut candidates: Vec<String> = Vec::new();
-        {
-            let mut stmt = self.conn().prepare(
-                "SELECT s.text FROM progress.word_srs ws \
-                 JOIN hebrewdb.surface s ON s.surface_id = ws.surface_id \
-                 WHERE ws.aspect = 'read' AND s.text != ?1 \
-                 ORDER BY ws.introduced_epoch DESC LIMIT 60",
-            )?;
-            let rows = stmt.query_map(params![surface], |r| r.get::<_, String>(0))?;
-            for row in rows {
-                candidates.push(row?);
-            }
-        }
-        {
-            let mut stmt = self.conn().prepare(
-                "SELECT text FROM hebrewdb.surface \
-                 WHERE text != ?1 AND n_candidates > 0 \
-                 ORDER BY occurrences DESC LIMIT 80",
-            )?;
-            let rows = stmt.query_map(params![surface], |r| r.get::<_, String>(0))?;
-            for row in rows {
-                candidates.push(row?);
-            }
-        }
-
-        for cand in candidates {
-            if out.len() >= WANT {
-                break;
-            }
-            if seen.insert(cand.clone()) {
-                out.push(cand);
-            }
-        }
-        Ok(out)
-    }
-
     /// Up to three plausible *other* glosses for a multiple-choice meaning quiz:
     /// meanings the learner has already studied first (familiar, so genuinely
     /// confusable), topped up with the most frequent words' glosses. Deduplicated
@@ -621,7 +624,7 @@ impl Bible {
             let mut stmt = self.conn().prepare(
                 "SELECT s.text FROM progress.word_srs ws \
                  JOIN hebrewdb.surface s ON s.surface_id = ws.surface_id \
-                 WHERE ws.aspect = 'mean' AND s.text != ?1 \
+                 WHERE s.text != ?1 \
                  ORDER BY ws.introduced_epoch DESC LIMIT 60",
             )?;
             let rows = stmt.query_map(params![surface], |r| r.get::<_, String>(0))?;
@@ -660,8 +663,8 @@ impl Bible {
 
     // --- card builders -------------------------------------------------------
 
-    /// Build a word card for `surface` and `aspect`, resolving gloss/root/morph.
-    fn word_card(&self, surface: &str, aspect: WordAspect) -> rusqlite::Result<Option<WordCard>> {
+    /// Build a meaning word card for `surface`, resolving gloss/root/morph.
+    fn word_card(&self, surface: &str) -> rusqlite::Result<Option<WordCard>> {
         let row: Option<(i64, i64)> = self
             .conn()
             .query_row(
@@ -693,10 +696,7 @@ impl Bible {
             None => (String::new(), String::new(), String::new()),
         };
 
-        let distractors = match aspect {
-            WordAspect::Mean => self.meaning_distractors(surface, &gloss)?,
-            WordAspect::Read => self.reading_distractors(surface)?,
-        };
+        let distractors = self.meaning_distractors(surface, &gloss)?;
 
         Ok(Some(WordCard {
             surface_id,
@@ -705,7 +705,6 @@ impl Bible {
             gloss,
             root,
             morph,
-            aspect,
             distractors,
         }))
     }
@@ -763,8 +762,8 @@ impl Bible {
     }
 
     /// The next thing to *introduce* (teach) toward the target verse, working one
-    /// word at a time: unseen glyphs, then — once all the word's glyphs are
-    /// known — the word's reading, then its meaning. Returns None when the only
+    /// word at a time: unseen glyphs, then — once all the word's glyphs are known
+    /// (so it can be sounded out) — the word's meaning. Returns None when the only
     /// outstanding work is graduating cards already in learning (handled by
     /// pulling a learning review forward).
     fn next_introduction(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Option<StudyItem>> {
@@ -781,17 +780,11 @@ impl Bible {
         if !self.all_glyphs_graduated(&surface)? {
             return Ok(None);
         }
-        // 3. Word reading, then 4. word meaning.
-        for aspect in [WordAspect::Read, WordAspect::Mean] {
-            match self.word_srs(&surface, aspect)? {
-                None => {
-                    return Ok(self.word_card(&surface, aspect)?.map(StudyItem::NewWord));
-                }
-                Some(s) if !s.graduated() => return Ok(None), // still being learnt
-                Some(_) => {}                                 // graduated; move to the next aspect
-            }
+        // 3. Word meaning (reading is already covered by the glyph/syllable drill).
+        match self.word_srs(&surface)? {
+            None => Ok(self.word_card(&surface)?.map(StudyItem::NewWord)),
+            Some(_) => Ok(None), // in learning or graduated; nothing new to introduce
         }
-        Ok(None)
     }
 
     /// The next review card: the most-overdue introduced card (`pull_forward`
@@ -810,12 +803,12 @@ impl Bible {
              ORDER BY due_epoch ASC LIMIT 1"
         );
         let wsql = format!(
-            "SELECT surface, aspect, due_epoch FROM progress.word_srs WHERE {cond} \
+            "SELECT surface, due_epoch FROM progress.word_srs WHERE {cond} \
              ORDER BY due_epoch ASC LIMIT 1"
         );
 
         let gmap = |r: &rusqlite::Row| Ok((r.get(0)?, r.get(1)?));
-        let wmap = |r: &rusqlite::Row| Ok((r.get(0)?, r.get(1)?, r.get(2)?));
+        let wmap = |r: &rusqlite::Row| Ok((r.get(0)?, r.get(1)?));
         let (glyph, word): (GlyphRow, WordRow) = if pull_forward {
             (
                 self.conn().query_row(&gsql, [], gmap).optional()?,
@@ -834,18 +827,13 @@ impl Bible {
 
         // Whichever is more due wins; ties go to the word.
         let word_wins = match (&word, &glyph) {
-            (Some((_, _, wd)), Some((_, gd))) => wd <= gd,
+            (Some((_, wd)), Some((_, gd))) => wd <= gd,
             (Some(_), None) => true,
             _ => false,
         };
         if word_wins {
-            let (surface, aspect, _) = word.expect("word_wins implies a word");
-            let aspect = if aspect == "mean" {
-                WordAspect::Mean
-            } else {
-                WordAspect::Read
-            };
-            return Ok(self.word_card(&surface, aspect)?.map(StudyItem::ReviewWord));
+            let (surface, _) = word.expect("word_wins implies a word");
+            return Ok(self.word_card(&surface)?.map(StudyItem::ReviewWord));
         }
         if let Some((g, _)) = glyph {
             return Ok(Some(StudyItem::ReviewGlyph(self.review_glyph_card(g)?)));
@@ -966,8 +954,7 @@ impl Bible {
     ) -> rusqlite::Result<StudyItem> {
         let prev = match track {
             Track::Glyph => self.glyph_srs(key)?,
-            Track::WordRead => self.word_srs(key, WordAspect::Read)?,
-            Track::WordMean => self.word_srs(key, WordAspect::Mean)?,
+            Track::Word => self.word_srs(key)?,
         }
         .unwrap_or_default();
         let next = prev.graded(grade);
@@ -995,27 +982,21 @@ impl Bible {
                     ],
                 )?;
             }
-            Track::WordRead | Track::WordMean => {
-                let aspect = if matches!(track, Track::WordMean) {
-                    WordAspect::Mean
-                } else {
-                    WordAspect::Read
-                };
+            Track::Word => {
                 let surface_id: i64 = self.conn().query_row(
                     "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
                     params![key],
                     |r| r.get(0),
                 )?;
                 self.conn().execute(
-                    "INSERT INTO progress.word_srs(surface, aspect, surface_id, ease, \
+                    "INSERT INTO progress.word_srs(surface, surface_id, ease, \
                         interval_days, due_epoch, reps, lapses, introduced_epoch, last_grade) \
-                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10) \
-                     ON CONFLICT(surface, aspect) DO UPDATE SET ease=excluded.ease, \
+                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9) \
+                     ON CONFLICT(surface) DO UPDATE SET ease=excluded.ease, \
                         interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
                         reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
                     params![
                         key,
-                        aspect.as_str(),
                         surface_id,
                         next.ease,
                         next.interval_days,
@@ -1143,6 +1124,48 @@ mod tests {
     }
 
     #[test]
+    fn vowel_review_builds_random_syllable_distractors() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        // Seed known consonants (incl. a guttural) and vowels (incl. a hataf).
+        let now = 1_700_000_000;
+        for g in ["מ", "ל", "ר", "ע", "ַ", "ֶ", "ֲ"] {
+            bible.submit_review(Track::Glyph, g, Grade::Easy, now)?;
+        }
+
+        // A non-hataf vowel: distractor syllables are consonant+vowel pairs, none
+        // equal to the exact correct combo, and never a bare glyph.
+        let card = bible.review_glyph_card("ַ".to_string())?;
+        let host = card.host.clone().expect("vowel gets a host");
+        assert!(!card.distractors.is_empty(), "should offer syllables");
+        for d in &card.distractors {
+            let cps: Vec<char> = d.chars().collect();
+            assert_eq!(cps.len(), 2, "syllable is consonant+vowel: {d:?}");
+            assert!(is_consonant(cps[0]));
+            assert!(is_vowel_point(cps[1]));
+            assert_ne!(*d, format!("{host}ַ"), "excludes the correct syllable");
+        }
+
+        // A hataf vowel is only ever paired with a guttural host.
+        let hataf = bible.syllable_distractors("ע", 'ֲ')?;
+        for d in &hataf {
+            let cps: Vec<char> = d.chars().collect();
+            if is_hataf(cps[1]) {
+                assert!(GUTTURALS.contains(&cps[0].to_string().as_str()));
+            }
+        }
+        Ok(())
+    }
+
+    #[test]
     fn glyph_decomposition_folds_finals_and_dedups() {
         let g = decompose_glyphs("מֶלֶךְ");
         let cons: Vec<&str> = g
@@ -1155,9 +1178,9 @@ mod tests {
     }
 
     /// End-to-end against the in-repo data DBs: cold start should walk
-    /// glyph → syllable drill → word reading → meaning and eventually read the
-    /// first verse, driven entirely by grading Good (pull-forward graduates the
-    /// learning steps at a fixed `now`).
+    /// glyph → syllable drill → word meaning and eventually read the first verse,
+    /// driven entirely by grading Good (pull-forward graduates the learning steps
+    /// at a fixed `now`).
     #[test]
     fn cold_start_reaches_a_read() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
@@ -1179,21 +1202,15 @@ mod tests {
         assert!(bible.meta_target()?.is_some());
 
         let mut saw_read = false;
-        let mut saw_word_review = false;
+        let mut saw_word = false;
         for _ in 0..4000 {
             item = match item {
                 StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
                     bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
                 }
                 StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
-                    if matches!(w.aspect, WordAspect::Read) {
-                        saw_word_review = true;
-                    }
-                    let track = match w.aspect {
-                        WordAspect::Read => Track::WordRead,
-                        WordAspect::Mean => Track::WordMean,
-                    };
-                    bible.submit_review(track, &w.surface, Grade::Good, now)?
+                    saw_word = true;
+                    bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
                 }
                 StudyItem::ReadVerse(_) => {
                     saw_read = true;
@@ -1202,7 +1219,7 @@ mod tests {
                 StudyItem::Done => break,
             };
         }
-        assert!(saw_word_review, "should drill word reading via SRS");
+        assert!(saw_word, "should drill word meaning via SRS");
         assert!(saw_read, "should finish and read the first verse");
         Ok(())
     }
