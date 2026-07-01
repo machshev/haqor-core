@@ -311,6 +311,31 @@ pub struct TutorStats {
 const DONE_SURFACES: &str = "SELECT surface_id FROM progress.word_srs \
      WHERE interval_days >= 1";
 
+/// SM-2 state for a card seeded as already-known by onboarding calibration
+/// (see [`Bible::seed_known_alphabet`], [`Bible::seed_known_vocab`]) rather
+/// than actually drilled: graduated, but due for a retention check in two
+/// weeks rather than treated as permanently mastered.
+fn seeded_known_srs() -> Srs {
+    Srs {
+        ease: DEFAULT_EASE,
+        interval_days: 14,
+        reps: 3,
+        lapses: 0,
+    }
+}
+
+/// A verse shown during onboarding's vocabulary-calibration binary search
+/// (see [`Bible::calibration_probe`]): the hardest verse still readable if the
+/// learner already knows the `rank` most common words.
+#[derive(Debug, Clone)]
+pub struct CalibrationProbe {
+    pub book: u8,
+    pub chapter: u8,
+    pub verse: u8,
+    pub text: String,
+    pub rank: u32,
+}
+
 /// Create the `progress.db` tables if they do not yet exist. Idempotent. A
 /// `word_srs` carrying the old per-aspect `aspect` column (from when reading and
 /// meaning were separate word tracks) is dropped and rebuilt — word progress
@@ -1489,6 +1514,170 @@ impl Bible {
         Ok(streak)
     }
 
+    // --- onboarding calibration ----------------------------------------------
+    //
+    // A brand-new learner otherwise has to grind through every glyph and every
+    // common word one SM-2 card at a time before reaching anything actually
+    // new to them. Onboarding (driven from the app, offered only while
+    // `progress.db` is still empty — see [`Self::needs_onboarding`]) lets them
+    // self-report already knowing the alphabet ([`Self::seed_known_alphabet`])
+    // and then calibrate a vocabulary baseline against real verses via binary
+    // search ([`Self::calibration_probe`], [`Self::seed_known_vocab`]) instead.
+
+    /// Whether the learner has no progress at all yet — the gate for offering
+    /// onboarding calibration instead of the ordinary cold-start curriculum.
+    /// Only checked once: any glyph or word progress (including calibration's
+    /// own seeding) means onboarding has already happened or been skipped.
+    pub fn needs_onboarding(&self) -> rusqlite::Result<bool> {
+        let glyphs: i64 =
+            self.conn()
+                .query_row("SELECT COUNT(*) FROM progress.glyph_srs", [], |r| r.get(0))?;
+        if glyphs > 0 {
+            return Ok(false);
+        }
+        let words: i64 =
+            self.conn()
+                .query_row("SELECT COUNT(*) FROM progress.word_srs", [], |r| r.get(0))?;
+        Ok(words == 0)
+    }
+
+    /// Distinct Hebrew (non-Aramaic) vocabulary size — the domain for
+    /// [`Self::calibration_probe`]'s binary search over frequency rank, and
+    /// the same population [`crate::bible::Bible::vocab`] paginates over.
+    pub fn vocab_count(&self) -> rusqlite::Result<u32> {
+        self.conn().query_row(
+            "SELECT COUNT(*) FROM hebrewdb.surface WHERE language IS NULL",
+            [],
+            |r| r.get(0),
+        )
+    }
+
+    /// Mark every glyph the curriculum would ever teach — every consonant and
+    /// vowel point [`decompose_glyphs`] produces across the whole non-Aramaic
+    /// corpus — as already graduated. For a learner who self-reports already
+    /// knowing the alphabet, so onboarding doesn't re-teach it letter by
+    /// letter. Existing progress (glyphs already introduced) is left alone.
+    pub fn seed_known_alphabet(&self, now: i64) -> rusqlite::Result<()> {
+        let mut glyphs = std::collections::HashSet::new();
+        {
+            let mut stmt = self
+                .conn()
+                .prepare("SELECT DISTINCT text FROM hebrewdb.surface WHERE language IS NULL")?;
+            let mut rows = stmt.query([])?;
+            while let Some(row) = rows.next()? {
+                let text: String = row.get(0)?;
+                for g in decompose_glyphs(&text) {
+                    glyphs.insert(g.glyph);
+                }
+            }
+        }
+        let seeded = seeded_known_srs();
+        for glyph in glyphs {
+            self.conn().execute(
+                "INSERT INTO progress.glyph_srs(glyph, ease, interval_days, due_epoch, \
+                    reps, lapses, introduced_epoch, last_grade) \
+                 VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, 2) \
+                 ON CONFLICT(glyph) DO NOTHING",
+                params![
+                    glyph,
+                    seeded.ease,
+                    seeded.interval_days,
+                    seeded.due_at(now),
+                    seeded.reps,
+                    seeded.lapses,
+                    now
+                ],
+            )?;
+        }
+        Ok(())
+    }
+
+    /// A representative verse for the vocabulary-calibration binary search: the
+    /// hardest not-Aramaic verse whose rarest word is at or just below
+    /// frequency `rank` (0 = the single most common word, matching
+    /// [`crate::bible::Bible::vocab`]'s ordering) — i.e. the hardest verse
+    /// still readable if the learner knows the `rank` most common words.
+    /// `None` once `rank` runs past the vocabulary or no verse qualifies.
+    pub fn calibration_probe(&self, rank: u32) -> rusqlite::Result<Option<CalibrationProbe>> {
+        let threshold: Option<i64> = self
+            .conn()
+            .query_row(
+                "SELECT occurrences FROM hebrewdb.surface WHERE language IS NULL \
+                 ORDER BY occurrences DESC, surface_id LIMIT 1 OFFSET ?1",
+                params![rank],
+                |r| r.get(0),
+            )
+            .optional()?;
+        let Some(threshold) = threshold else {
+            return Ok(None);
+        };
+
+        let found: Option<(u8, u8, u8)> = self
+            .conn()
+            .query_row(
+                "SELECT vw.book, vw.chapter, vw.verse
+                 FROM hebrewdb.verse_word vw
+                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+                 GROUP BY vw.book, vw.chapter, vw.verse
+                 HAVING SUM(CASE WHEN s.language = 'aramaic' THEN 1 ELSE 0 END) = 0
+                    AND MIN(s.occurrences) <= ?1
+                 ORDER BY MIN(s.occurrences) DESC
+                 LIMIT 1",
+                params![threshold],
+                |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+            )
+            .optional()?;
+        let Some((b, c, v)) = found else {
+            return Ok(None);
+        };
+        let text = self.get(b, c, v)?;
+        Ok(Some(CalibrationProbe {
+            book: b,
+            chapter: c,
+            verse: v,
+            text,
+            rank,
+        }))
+    }
+
+    /// Finish vocabulary calibration: mark the `rank_cutoff` most common
+    /// (non-Aramaic) words as already known (graduated), so the ordinary
+    /// curriculum starts introducing new vocabulary from that frequency
+    /// boundary instead of from scratch. A no-op for `rank_cutoff == 0`.
+    pub fn seed_known_vocab(&self, rank_cutoff: u32, now: i64) -> rusqlite::Result<()> {
+        if rank_cutoff == 0 {
+            return Ok(());
+        }
+        let seeded = seeded_known_srs();
+        let due = seeded.due_at(now);
+        let mut stmt = self.conn().prepare(
+            "SELECT text, surface_id FROM hebrewdb.surface WHERE language IS NULL \
+             ORDER BY occurrences DESC, surface_id LIMIT ?1",
+        )?;
+        let rows: Vec<(String, i64)> = stmt
+            .query_map(params![rank_cutoff], |r| Ok((r.get(0)?, r.get(1)?)))?
+            .collect::<rusqlite::Result<_>>()?;
+        for (surface, surface_id) in rows {
+            self.conn().execute(
+                "INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days, \
+                    due_epoch, reps, lapses, introduced_epoch, last_grade) \
+                 VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, 2) \
+                 ON CONFLICT(surface) DO NOTHING",
+                params![
+                    surface,
+                    surface_id,
+                    seeded.ease,
+                    seeded.interval_days,
+                    due,
+                    seeded.reps,
+                    seeded.lapses,
+                    now
+                ],
+            )?;
+        }
+        Ok(())
+    }
+
     /// Wipe all tutor progress.
     pub fn reset_tutor(&self) -> rusqlite::Result<()> {
         self.conn().execute_batch(
@@ -2056,6 +2245,120 @@ mod tests {
 
         bible.submit_review(Track::Glyph, "\u{05C3}", Grade::Good, 1_700_000_000)?;
         assert!(!bible.glyph_known("\u{05C3}")?);
+        Ok(())
+    }
+
+    #[test]
+    fn needs_onboarding_only_before_any_progress() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        assert!(bible.needs_onboarding()?);
+        bible.submit_review(Track::Glyph, "מ", Grade::Good, 1_700_000_000)?;
+        assert!(!bible.needs_onboarding()?);
+        Ok(())
+    }
+
+    /// Self-reporting a known alphabet must graduate every glyph the ordinary
+    /// curriculum would otherwise teach one at a time, so the very first study
+    /// item after seeding jumps straight to a word (never a `NewGlyph`).
+    #[test]
+    fn seed_known_alphabet_skips_glyph_teaching() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let now = 1_700_000_000;
+        bible.seed_known_alphabet(now)?;
+        assert!(bible.glyph_known("א")?, "aleph should be seeded");
+        assert!(bible.all_glyphs_graduated("בְּרֵאשִׁית")?);
+
+        match bible.next_study_item(now)? {
+            StudyItem::NewWord(_) => {}
+            other => panic!("expected NewWord straight away, got {other:?}"),
+        }
+        Ok(())
+    }
+
+    /// Calibration probes return progressively easier (more common minimum
+    /// word) verses as `rank` shrinks toward 0, and harder ones as it grows —
+    /// the property the app's binary search relies on.
+    #[test]
+    fn calibration_probe_difficulty_tracks_rank() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let easy = bible.calibration_probe(0)?.expect("rank 0 should resolve");
+        let count = bible.vocab_count()?;
+        let hard = bible
+            .calibration_probe(count - 1)?
+            .expect("last rank should resolve");
+        assert!(
+            easy.rank < hard.rank,
+            "sanity: probes echo back the requested rank"
+        );
+        // Past the end of the vocabulary there is nothing left to calibrate.
+        assert!(bible.calibration_probe(count)?.is_none());
+        Ok(())
+    }
+
+    /// Finishing calibration with a cutoff seeds exactly the top-`cutoff` most
+    /// common words as already known, and nothing beyond it.
+    #[test]
+    fn seed_known_vocab_marks_the_top_cutoff_words_known() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let now = 1_700_000_000;
+        const CUTOFF: u32 = 50;
+        bible.seed_known_vocab(CUTOFF, now)?;
+
+        let known: i64 = bible.conn().query_row(
+            &format!("SELECT COUNT(*) FROM ({DONE_SURFACES})"),
+            [],
+            |r| r.get(0),
+        )?;
+        assert_eq!(known as u32, CUTOFF);
+
+        let top_word = bible.vocab(1, 0)?.into_iter().next().expect("has vocab");
+        assert!(
+            bible
+                .word_srs(&top_word.surface)?
+                .is_some_and(|s| s.graduated())
+        );
+        let far_word = bible
+            .vocab(1, CUTOFF + 500)?
+            .into_iter()
+            .next()
+            .expect("has vocab");
+        assert!(bible.word_srs(&far_word.surface)?.is_none());
         Ok(())
     }
 }
