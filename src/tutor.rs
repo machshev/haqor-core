@@ -445,28 +445,48 @@ fn is_shin_sin_dot(c: char) -> bool {
     matches!(c as u32, 0x05C1 | 0x05C2)
 }
 
-/// The glyph identity of consonant `letter` given the marks immediately
-/// following it in `rest`: for bet/pe a dagesh, or for shin a shin/sin dot,
-/// changes the sound, so it is folded into the letter itself and the pair is
-/// taught as one atomic glyph rather than a letter plus a separately-drilled
-/// mark. Shin can carry *both* a gemination dagesh and a shin/sin dot, in
-/// that canonical order (e.g. אַשּׁוּר, הַשּׁוֹפָר) — a doubled shin is not a
-/// distinct sound from a plain one, so the dagesh is skipped over (not
-/// folded, not taught) to find the dot that does determine the sound.
-/// Returns the glyph key and how many of `rest`'s chars were consumed into
-/// it.
-fn letter_identity(letter: char, rest: &[char]) -> (String, usize) {
-    match rest.first() {
-        Some(&m) if is_dagesh(m) && DAGESH_LETTERS.contains(&letter) => {
-            (format!("{letter}{m}"), 1)
+/// The glyph identity of consonant `letter` given the mark cluster
+/// immediately following it in `rest` (vowel points, a dagesh, and a
+/// shin/sin dot, in any combination): for bet/pe a dagesh, or for shin a
+/// shin/sin dot, changes the sound, so it is folded into the letter itself
+/// and the pair is taught as one atomic glyph rather than a letter plus a
+/// separately-drilled mark.
+///
+/// The source text's *Unicode canonical* combining order places a
+/// consonant's vowel *before* its dagesh/shin-sin-dot (vowel points have a
+/// lower combining class), not after as the traditional transliteration
+/// order would suggest — e.g. הַשָּׁמַיִם encodes שׁ as shin, qamats, dagesh,
+/// shin-dot. So this scans the whole run of marks attached to `letter`
+/// (stopping at the next base consonant) rather than assuming the
+/// identity-changing mark sits immediately next, and separately reports
+/// which of those marks were vowel points so callers can still teach them.
+/// Returns the glyph key, the vowel points found in the cluster (in
+/// surface order), and how many of `rest`'s chars were consumed into it.
+fn letter_cluster(letter: char, rest: &[char]) -> (String, Vec<char>, usize) {
+    let mut vowels = Vec::new();
+    let mut dagesh = None;
+    let mut dot = None;
+    let mut consumed = 0;
+    for &c in rest {
+        if is_vowel_point(c) {
+            vowels.push(c);
+        } else if is_dagesh(c) && dagesh.is_none() {
+            dagesh = Some(c);
+        } else if is_shin_sin_dot(c) && dot.is_none() {
+            dot = Some(c);
+        } else {
+            break;
         }
-        Some(&m) if letter == SHIN && is_shin_sin_dot(m) => (format!("{letter}{m}"), 1),
-        Some(&m) if letter == SHIN && is_dagesh(m) => match rest.get(1) {
-            Some(&d) if is_shin_sin_dot(d) => (format!("{letter}{d}"), 2),
-            _ => (letter.to_string(), 0),
-        },
-        _ => (letter.to_string(), 0),
+        consumed += 1;
     }
+    let key = if DAGESH_LETTERS.contains(&letter) {
+        dagesh.map_or_else(|| letter.to_string(), |m| format!("{letter}{m}"))
+    } else if letter == SHIN {
+        dot.map_or_else(|| letter.to_string(), |m| format!("{letter}{m}"))
+    } else {
+        letter.to_string()
+    };
+    (key, vowels, consumed)
 }
 
 /// Preferred consonants that can legitimately carry `vowel`.
@@ -478,26 +498,24 @@ fn valid_host_prefs(vowel: char) -> &'static [&'static str] {
     }
 }
 
-/// The consonant `vowel` sits on in `surface`: the nearest preceding base
-/// letter, with a following dagesh/shin-sin-dot folded into its identity (see
-/// [`letter_identity`]).
+/// The consonant `vowel` sits on in `surface`: the base letter whose mark
+/// cluster contains that vowel occurrence, with a dagesh/shin-sin-dot in the
+/// same cluster folded into its identity (see [`letter_cluster`]).
 fn contextual_host(surface: &str, vowel: char) -> Option<String> {
     let chars: Vec<char> = surface.chars().collect();
-    let mut on = None;
     let mut i = 0;
     while i < chars.len() {
         let c = chars[i];
-        if c == vowel {
-            break;
-        }
         if is_consonant(c) {
-            let (key, consumed) = letter_identity(fold_final(c), &chars[i + 1..]);
-            on = Some(key);
+            let (key, vowels, consumed) = letter_cluster(fold_final(c), &chars[i + 1..]);
+            if vowels.contains(&vowel) {
+                return Some(key);
+            }
             i += consumed;
         }
         i += 1;
     }
-    on
+    None
 }
 
 /// The consonant to teach before `vowel` when no valid host is learnt yet. A
@@ -512,9 +530,9 @@ fn host_to_teach(surface: &str, vowel: char) -> String {
 /// The glyph SRS keys a graded card touches. A single-codepoint key (a lone
 /// consonant, vowel, or reading mark) is graded as-is; a multi-codepoint
 /// syllable key (`"<consonant><vowel>"`) grades every glyph in it — with a
-/// consonant's following dagesh/shin-sin-dot folded into it (see
-/// [`letter_identity`]) rather than split out as its own glyph — so reading
-/// the syllable credits its consonant *and* its vowel.
+/// consonant's dagesh/shin-sin-dot folded into it (see [`letter_cluster`])
+/// rather than split out as its own glyph — so reading the syllable credits
+/// its consonant *and* its vowel.
 fn split_glyph_key(key: &str) -> Vec<String> {
     let chars: Vec<char> = key.chars().collect();
     if chars.len() <= 1 {
@@ -525,8 +543,9 @@ fn split_glyph_key(key: &str) -> Vec<String> {
     while i < chars.len() {
         let c = fold_final(chars[i]);
         if is_consonant(c) {
-            let (tok, consumed) = letter_identity(c, &chars[i + 1..]);
+            let (tok, vowels, consumed) = letter_cluster(c, &chars[i + 1..]);
             out.push(tok);
+            out.extend(vowels.into_iter().map(|v| v.to_string()));
             i += 1 + consumed;
         } else {
             out.push(c.to_string());
@@ -537,11 +556,11 @@ fn split_glyph_key(key: &str) -> Vec<String> {
 }
 
 /// Decompose a (normalized) surface into its distinct teachable glyphs in
-/// first-seen order: consonants (finals folded, with a following
-/// dagesh/shin-sin-dot folded into begadkefat/shin letters — see
-/// [`letter_identity`]) and vowel points. A dagesh or shin/sin dot not folded
-/// into a letter this way is a gemination/orthographic mark that doesn't
-/// change the sound and is not taught as its own glyph.
+/// first-seen order: consonants (finals folded, with a dagesh/shin-sin-dot
+/// folded into begadkefat/shin letters — see [`letter_cluster`]) and vowel
+/// points. A dagesh or shin/sin dot not folded into a letter this way is a
+/// gemination/orthographic mark that doesn't change the sound and is not
+/// taught as its own glyph.
 fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
     let mut seen = std::collections::HashSet::new();
     let mut out = Vec::new();
@@ -550,7 +569,7 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
     while i < chars.len() {
         let c = chars[i];
         if is_consonant(c) {
-            let (key, consumed) = letter_identity(c, &chars[i + 1..]);
+            let (key, vowels, consumed) = letter_cluster(c, &chars[i + 1..]);
             if seen.insert(key.clone()) {
                 out.push(GlyphCard {
                     glyph: key,
@@ -558,6 +577,17 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
                     host: None,
                     distractors: Vec::new(),
                 });
+            }
+            for v in vowels {
+                let vk = v.to_string();
+                if seen.insert(vk.clone()) {
+                    out.push(GlyphCard {
+                        glyph: vk,
+                        is_consonant: false,
+                        host: None,
+                        distractors: Vec::new(),
+                    });
+                }
             }
             i += 1 + consumed;
             continue;
@@ -1689,6 +1719,30 @@ mod tests {
         assert_eq!(
             cons,
             vec![ALEF.to_string(), format!("{SHIN}{SHIN_DOT}"), RESH.to_string()]
+        );
+
+        // Real Bible text puts a consonant's vowel *before* its
+        // dagesh/shin-sin-dot (Unicode canonical combining order sorts vowel
+        // points ahead of the dagesh/dot classes) — the opposite of the
+        // traditional transliteration order used above. E.g. הַשָּׁמַיִם
+        // ("the heavens") encodes its שׁ as shin, qamats, dagesh, shin-dot.
+        let real_order = decompose_glyphs(&format!(
+            "{}{PATAH}{SHIN}{QAMATS}{DAGESH}{SHIN_DOT}{MEM}{PATAH}{RESH}",
+            ALEF
+        ));
+        let cons: Vec<&str> = real_order
+            .iter()
+            .filter(|c| c.is_consonant)
+            .map(|c| c.glyph.as_str())
+            .collect();
+        assert_eq!(
+            cons,
+            vec![ALEF.to_string(), format!("{SHIN}{SHIN_DOT}"), MEM.to_string(), RESH.to_string()],
+            "vowel-before-dagesh/dot ordering must still fold the shin/sin dot in"
+        );
+        assert!(
+            real_order.iter().any(|c| !c.is_consonant && c.glyph == QAMATS.to_string()),
+            "the vowel sitting between the letter and its dot is still taught"
         );
 
         // A dagesh on a non-begadkefat letter (pure gemination) isn't taught as
