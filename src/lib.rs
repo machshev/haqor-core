@@ -32,3 +32,7 @@ pub mod tutor;
 /// combining-order-insensitively — the tutor's meaning override, held in the
 /// core so the app stays presentation-only.
 pub mod vocab_gloss;
+
+/// Grammar concepts the tutor teaches (prefixes, conjugations, binyanim,
+/// construct, suffixes) with their teaching content, held in the core.
+pub mod grammar;
