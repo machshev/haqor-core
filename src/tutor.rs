@@ -230,7 +230,12 @@ pub struct WordCard {
     pub surface_id: i64,
     pub surface: String,
     pub occurrences: i64,
+    /// The lexeme's base sense (BDB gloss) — what the meaning quiz tests.
     pub gloss: String,
+    /// The specific inflected form rendered in English ("and he said", "his
+    /// word"), for the answer side of the card. Falls back to `gloss` for
+    /// function words / proper nouns. See [`crate::bible::inflected_gloss`].
+    pub inflected: String,
     pub root: String,
     pub morph: String,
     /// Other plausible glosses offered as wrong answers when the meaning is
@@ -1027,7 +1032,7 @@ impl Bible {
             return Ok(None);
         };
 
-        let (root, gloss, morph) = match self.hebrew_word_info(surface) {
+        let (root, gloss, inflected, morph) = match self.hebrew_word_info(surface) {
             Some(w) => {
                 let morph = [
                     w.form.as_deref(),
@@ -1041,9 +1046,10 @@ impl Bible {
                 .flatten()
                 .collect::<Vec<_>>()
                 .join(" ");
-                (w.root, w.gloss, morph)
+                let inflected = crate::bible::inflected_gloss(&w);
+                (w.root, w.gloss, inflected, morph)
             }
-            None => (String::new(), String::new(), String::new()),
+            None => (String::new(), String::new(), String::new(), String::new()),
         };
 
         let distractors = self.meaning_distractors(surface, &gloss)?;
@@ -1053,6 +1059,7 @@ impl Bible {
             surface: surface.to_string(),
             occurrences,
             gloss,
+            inflected,
             root,
             morph,
             distractors,

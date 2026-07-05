@@ -662,6 +662,350 @@ fn morph_summary(info: &HebrewWord) -> String {
     }
 }
 
+// --- English gloss inflection --------------------------------------------------
+//
+// The BDB gloss is a lexeme sense ("say", "send"); a learner meets an inflected
+// *form* ("and he said", "his word"). [`inflected_gloss`] turns the lexeme gloss
+// plus the parsed morphology into a natural English rendering of the specific
+// form. It is deliberately mechanical — verbs read as past/future/etc., nouns
+// take number/possessive/preposition — and rough on modal nuance; the curated
+// Dart overrides still win for the words where it matters most.
+
+/// Irregular English simple-past forms, for verb glosses. Only verbs that occur
+/// as common Biblical senses need cover here; anything absent falls back to the
+/// regular `-ed` rule in [`past_tense`].
+const IRREGULAR_PAST: &[(&str, &str)] = &[
+    ("say", "said"),
+    ("go", "went"),
+    ("come", "came"),
+    ("see", "saw"),
+    ("give", "gave"),
+    ("take", "took"),
+    ("make", "made"),
+    ("know", "knew"),
+    ("eat", "ate"),
+    ("do", "did"),
+    ("find", "found"),
+    ("hear", "heard"),
+    ("tell", "told"),
+    ("become", "became"),
+    ("build", "built"),
+    ("send", "sent"),
+    ("keep", "kept"),
+    ("stand", "stood"),
+    ("fall", "fell"),
+    ("bring", "brought"),
+    ("buy", "bought"),
+    ("seek", "sought"),
+    ("fight", "fought"),
+    ("put", "put"),
+    ("set", "set"),
+    ("cut", "cut"),
+    ("let", "let"),
+    ("sit", "sat"),
+    ("speak", "spoke"),
+    ("write", "wrote"),
+    ("bear", "bore"),
+    ("break", "broke"),
+    ("choose", "chose"),
+    ("rise", "rose"),
+    ("fear", "feared"),
+    ("hold", "held"),
+    ("lay", "laid"),
+    ("lead", "led"),
+    ("leave", "left"),
+    ("meet", "met"),
+    ("read", "read"),
+    ("run", "ran"),
+    ("show", "showed"),
+    ("shut", "shut"),
+    ("sell", "sold"),
+    ("throw", "threw"),
+    ("draw", "drew"),
+    ("dwell", "dwelt"),
+    ("weep", "wept"),
+    ("bind", "bound"),
+    ("wear", "wore"),
+    ("swear", "swore"),
+    ("smite", "smote"),
+    ("slay", "slew"),
+    ("flee", "fled"),
+    ("hide", "hid"),
+    ("shake", "shook"),
+    ("swim", "swam"),
+    ("drink", "drank"),
+];
+
+/// Irregular English plurals for noun glosses; regular nouns take the `-s`/`-es`
+/// rule in [`pluralize`].
+const IRREGULAR_PLURAL: &[(&str, &str)] = &[
+    ("man", "men"),
+    ("woman", "women"),
+    ("child", "children"),
+    ("foot", "feet"),
+    ("tooth", "teeth"),
+    ("ox", "oxen"),
+    ("person", "people"),
+    ("life", "lives"),
+    ("wife", "wives"),
+    ("knife", "knives"),
+    ("leaf", "leaves"),
+];
+
+/// The primary lexeme sense of a (possibly multi-part) BDB gloss suitable for
+/// English inflection: the first clean clause. BDB glosses are littered with
+/// cross-references ("see דָּאָה"), embedded Hebrew, parentheticals and
+/// grammatical abbreviations ("n.pr.m."); a clause carrying any of those is
+/// skipped, and an empty result signals the caller to leave the gloss
+/// uninflected rather than emit garbage like "see דָּאָהed".
+fn primary_sense(gloss: &str) -> String {
+    for clause in gloss.split([';', ',']) {
+        let c = clause.trim();
+        if c.is_empty() {
+            continue;
+        }
+        // Embedded Hebrew (a cross-reference), a parenthetical, or a "see …" /
+        // "√ …" / "cf …" reference — not a usable English sense.
+        let has_hebrew = c.chars().any(|ch| ('\u{0590}'..='\u{05FF}').contains(&ch));
+        let lower = c.to_lowercase();
+        let is_ref = lower.starts_with("see ")
+            || lower.starts_with("cf")
+            || lower.starts_with("id.")
+            || lower.contains("n.pr")
+            || c.starts_with('√')
+            || c.contains('(');
+        if has_hebrew || is_ref {
+            continue;
+        }
+        return c.trim_start_matches("to ").trim().to_string();
+    }
+    String::new()
+}
+
+/// English simple past of a base verb (`say` → `said`, `walk` → `walked`).
+fn past_tense(verb: &str) -> String {
+    if let Some((_, past)) = IRREGULAR_PAST.iter().find(|(v, _)| *v == verb) {
+        return (*past).to_string();
+    }
+    if verb == "be" {
+        return "was".to_string();
+    }
+    regular_suffix(verb, "ed")
+}
+
+/// English `-ing` form of a base verb (`say` → `saying`, `make` → `making`).
+fn ing_form(verb: &str) -> String {
+    if let Some(stem) = verb.strip_suffix('e')
+        && !verb.ends_with("ee")
+        && verb.len() > 2
+    {
+        return format!("{stem}ing");
+    }
+    format!("{verb}ing")
+}
+
+/// Apply a regular verbal/plural suffix, handling silent-e and consonant-y:
+/// `love`+`ed` → `loved`, `carry`+`ed` → `carried`, `walk`+`ed` → `walked`.
+fn regular_suffix(word: &str, suffix: &str) -> String {
+    let ed = suffix == "ed";
+    if let Some(stem) = word.strip_suffix('y')
+        && !stem.ends_with(['a', 'e', 'i', 'o', 'u'])
+        && !stem.is_empty()
+    {
+        return format!("{stem}i{suffix}");
+    }
+    if ed && word.ends_with('e') {
+        return format!("{word}d");
+    }
+    format!("{word}{suffix}")
+}
+
+/// English plural of a base noun.
+fn pluralize(noun: &str) -> String {
+    if let Some((_, pl)) = IRREGULAR_PLURAL.iter().find(|(s, _)| *s == noun) {
+        return (*pl).to_string();
+    }
+    if noun.ends_with(['s', 'x', 'z']) || noun.ends_with("ch") || noun.ends_with("sh") {
+        return format!("{noun}es");
+    }
+    regular_suffix(noun, "s")
+}
+
+/// Subject pronoun for a verb's person/gender/number (`he`, `she`, `they`, …),
+/// or `None` for a form with no person (participle, infinitive).
+fn subject_pronoun(w: &HebrewWord) -> Option<&'static str> {
+    let plural = matches!(w.number.as_deref(), Some("Plural") | Some("Dual"));
+    match w.person.as_deref()? {
+        "First" => Some(if plural { "we" } else { "I" }),
+        "Second" => Some("you"),
+        "Third" => Some(match (w.gender.as_deref(), plural) {
+            (_, true) => "they",
+            (Some("Feminine"), false) => "she",
+            _ => "he",
+        }),
+        _ => None,
+    }
+}
+
+/// Object pronoun for a verb's pronominal object suffix (`him`, `her`, `them`, …).
+fn object_pronoun(pgn: &str) -> Option<&'static str> {
+    Some(match pgn {
+        "3ms" => "him",
+        "3fs" => "her",
+        "3mp" | "3fp" | "3cp" => "them",
+        "1cs" => "me",
+        "1cp" => "us",
+        s if s.starts_with('2') => "you",
+        _ => return None,
+    })
+}
+
+/// Objective pronoun used as the subject of a let-clause (jussive/cohortative):
+/// `let him …`, `let me …`.
+fn let_subject(w: &HebrewWord) -> &'static str {
+    let plural = matches!(w.number.as_deref(), Some("Plural") | Some("Dual"));
+    match w.person.as_deref() {
+        Some("First") => {
+            if plural {
+                "us"
+            } else {
+                "me"
+            }
+        }
+        Some("Second") => "you",
+        _ => match (w.gender.as_deref(), plural) {
+            (_, true) => "them",
+            (Some("Feminine"), false) => "her",
+            _ => "him",
+        },
+    }
+}
+
+/// The English sense that a proclitic conjunction/preposition contributes when
+/// attached to a noun, keyed by the first letter of the pointed prefix cluster.
+fn proclitic_word(prefix: &str) -> Option<&'static str> {
+    match prefix.chars().next()? {
+        '\u{05D5}' => Some("and"),  // vav
+        '\u{05DC}' => Some("to"),   // lamed
+        '\u{05D1}' => Some("in"),   // bet
+        '\u{05DB}' => Some("like"), // kaf
+        '\u{05DE}' => Some("from"), // mem
+        '\u{05D4}' => Some("the"),  // he (article)
+        _ => None,
+    }
+}
+
+/// Render the specific inflected form of a word in English, from its lexeme
+/// gloss plus parsed morphology — "and he said", "his word", "the kings". Falls
+/// back to the bare gloss for function words, proper nouns, and anything with no
+/// usable sense.
+pub(crate) fn inflected_gloss(w: &HebrewWord) -> String {
+    let base = primary_sense(&w.gloss);
+    if base.is_empty() {
+        return w.gloss.clone();
+    }
+    if w.form.is_some() {
+        inflect_verb(w, &base)
+    } else if w.tense.is_none() && (w.number.is_some() || w.state.is_some()) {
+        inflect_noun(w, &base)
+    } else {
+        // Function word / proper noun: nothing mechanical to add.
+        w.gloss.clone()
+    }
+}
+
+fn inflect_verb(w: &HebrewWord, base: &str) -> String {
+    let obj = w.obj_suffix.as_deref().and_then(object_pronoun);
+    let with_obj = |s: String| match obj {
+        Some(o) => format!("{s} {o}"),
+        None => s,
+    };
+    // Is there a leading conjunction (vav-consecutive, or a proclitic vav)?
+    let and = w.vav_con
+        || w
+            .prefix
+            .as_deref()
+            .and_then(proclitic_word)
+            .is_some_and(|word| word == "and");
+    let subj = subject_pronoun(w);
+    let clause = |verb: String| {
+        let mut s = String::new();
+        if and {
+            s.push_str("and ");
+        }
+        if let Some(su) = subj {
+            s.push_str(su);
+            s.push(' ');
+        }
+        s.push_str(&verb);
+        s
+    };
+
+    match w.tense.as_deref() {
+        Some("Perfect") => with_obj(clause(past_tense(base))),
+        Some("Wayyiqtol") => {
+            // The wayyiqtol vav is intrinsic ("and …"), regardless of prefix.
+            let mut s = String::from("and ");
+            if let Some(su) = subj {
+                s.push_str(su);
+                s.push(' ');
+            }
+            s.push_str(&past_tense(base));
+            with_obj(s)
+        }
+        Some("Imperfect") => with_obj(clause(format!("will {base}"))),
+        Some("Cohortative") => with_obj(format!("let {} {base}", let_subject(w))),
+        Some("Jussive") => with_obj(format!("let {} {base}", let_subject(w))),
+        Some("Imperative") => with_obj(format!("{base}!")),
+        Some("Inf. Construct") | Some("Inf. Absolute") => format!("to {base}"),
+        Some("Participle (act.)") | Some("Participle") => with_obj(ing_form(base)),
+        Some("Participle (pas.)") | Some("Participle (pass.)") => past_tense(base),
+        _ => with_obj(clause(base.to_string())),
+    }
+}
+
+fn inflect_noun(w: &HebrewWord, base: &str) -> String {
+    // The noun label lives in `state`, e.g. "Absolute", "Construct", "Sg + 3ms".
+    let state = w.state.as_deref().unwrap_or("");
+    let plural = matches!(w.number.as_deref(), Some("Plural") | Some("Dual"))
+        || state.starts_with("Pl");
+    let head = if plural {
+        pluralize(base)
+    } else {
+        base.to_string()
+    };
+
+    // Pronominal-suffix labels look like "Sg + 3ms" / "Pl + 1cs".
+    let head = if let Some((_, sfx)) = state.split_once('+') {
+        let sfx = sfx.trim();
+        let poss = match sfx.get(..3).unwrap_or(sfx) {
+            "3ms" => "his",
+            "3fs" => "her",
+            "3mp" | "3fp" | "3cp" => "their",
+            "2ms" | "2fs" | "2mp" | "2fp" => "your",
+            "1cs" => "my",
+            "1cp" => "our",
+            _ => "",
+        };
+        if poss.is_empty() {
+            head
+        } else {
+            format!("{poss} {head}")
+        }
+    } else if state == "Construct" {
+        format!("{head} of")
+    } else {
+        head
+    };
+
+    // Attached preposition / conjunction / article.
+    match w.prefix.as_deref().and_then(proclitic_word) {
+        Some("the") => format!("the {head}"),
+        Some(prep) => format!("{prep} {head}"),
+        None => head,
+    }
+}
+
 #[cfg(feature = "embedded")]
 #[derive(Embed)]
 #[folder = "data/"]
@@ -1742,6 +2086,114 @@ mod tests {
             .map(|o| (o.book, o.chapter, o.verse))
             .collect();
         assert_eq!(distinct_verses.len(), root_occ.len());
+    }
+
+    #[test]
+    #[ignore]
+    fn inspect_real_inflected_glosses() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        for surface in [
+            "בָּרָא",       // Gen 1:1 "created"
+            "וַיֹּאמֶר",    // "and he said"
+            "וַיַּרְא",      // "and he saw"
+            "יִשְׁלַח",     // "he will send"
+            "שְׁמַע",       // "hear!"
+            "דְּבָרִים",    // "words"
+            "דְּבָרוֹ",     // "his word"
+            "הַמֶּלֶךְ",    // "the king"
+            "מְלָכִים",     // "kings"
+        ] {
+            match bible.hebrew_word_info(surface) {
+                Some(w) => eprintln!(
+                    "{surface:14} [{}] -> {}",
+                    morph_summary(&w),
+                    inflected_gloss(&w)
+                ),
+                None => eprintln!("{surface:14} -> (no parse)"),
+            }
+        }
+    }
+
+    #[test]
+    fn inflected_gloss_renders_forms_in_english() {
+        let verb = |tense: &str, pgn: (&str, &str, &str), gloss: &str| HebrewWord {
+            gloss: gloss.to_string(),
+            form: Some("Qal".to_string()),
+            tense: Some(tense.to_string()),
+            person: (!pgn.0.is_empty()).then(|| pgn.0.to_string()),
+            gender: (!pgn.1.is_empty()).then(|| pgn.1.to_string()),
+            number: (!pgn.2.is_empty()).then(|| pgn.2.to_string()),
+            ..Default::default()
+        };
+
+        // Perfect → past, with subject pronoun from PGN.
+        assert_eq!(
+            inflected_gloss(&verb("Perfect", ("Third", "Masculine", "Singular"), "say")),
+            "he said"
+        );
+        // The first clause of a multi-part gloss is the sense used.
+        assert_eq!(
+            inflected_gloss(&verb("Perfect", ("Third", "Feminine", "Singular"), "utter; say")),
+            "she uttered"
+        );
+        assert_eq!(
+            inflected_gloss(&verb("Perfect", ("First", "Common", "Singular"), "keep")),
+            "I kept"
+        );
+        // Wayyiqtol prepends "and"; regular -ed with silent e.
+        assert_eq!(
+            inflected_gloss(&verb("Wayyiqtol", ("Third", "Masculine", "Singular"), "love")),
+            "and he loved"
+        );
+        // Imperfect → will + base; imperative → base!.
+        assert_eq!(
+            inflected_gloss(&verb("Imperfect", ("Second", "Masculine", "Singular"), "send")),
+            "you will send"
+        );
+        assert_eq!(
+            inflected_gloss(&verb("Imperative", ("Second", "Masculine", "Singular"), "hear")),
+            "hear!"
+        );
+        // Infinitive → to + base; active participle → -ing.
+        assert_eq!(
+            inflected_gloss(&verb("Inf. Construct", ("", "", ""), "keep")),
+            "to keep"
+        );
+        assert_eq!(
+            inflected_gloss(&verb("Participle (act.)", ("", "Masculine", "Singular"), "make")),
+            "making"
+        );
+
+        // Object suffix appends an object pronoun.
+        let mut struck = verb("Wayyiqtol", ("Third", "Masculine", "Singular"), "smite");
+        struck.obj_suffix = Some("3ms".to_string());
+        assert_eq!(inflected_gloss(&struck), "and he smote him");
+
+        // Nouns: plural, construct, possessive suffix, article, preposition.
+        let noun = |number: Option<&str>, state: Option<&str>, gloss: &str| HebrewWord {
+            gloss: gloss.to_string(),
+            number: number.map(str::to_string),
+            state: state.map(str::to_string),
+            ..Default::default()
+        };
+        assert_eq!(inflected_gloss(&noun(Some("Plural"), Some("Absolute"), "king")), "kings");
+        assert_eq!(inflected_gloss(&noun(Some("Plural"), Some("Absolute"), "man")), "men");
+        assert_eq!(
+            inflected_gloss(&noun(Some("Singular"), Some("Construct"), "word")),
+            "word of"
+        );
+        assert_eq!(inflected_gloss(&noun(None, Some("Sg + 3ms"), "word")), "his word");
+        let mut the_king = noun(Some("Singular"), Some("Absolute"), "king");
+        the_king.prefix = Some("הַ".to_string());
+        assert_eq!(inflected_gloss(&the_king), "the king");
+
+        // Function words / proper nouns pass through unchanged.
+        let particle = HebrewWord {
+            gloss: "that; because".to_string(),
+            ..Default::default()
+        };
+        assert_eq!(inflected_gloss(&particle), "that; because");
     }
 
     #[test]
