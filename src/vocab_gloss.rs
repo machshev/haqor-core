@@ -226,8 +226,17 @@ mod tests {
     fn vocab_key_drops_dagesh_and_sorts_marks() {
         // בֶּן (bet + dagesh + segol) and בֶן (bet + segol) collapse.
         assert_eq!(vocab_key("בֶּן"), vocab_key("בֶן"));
+        assert_eq!(vocab_key("כָּל"), vocab_key("כָל"));
         // Cantillation and meteg are dropped.
         assert_eq!(vocab_key("דָּבָר"), vocab_key("דָּבָר\u{0591}"));
+        // Combining-mark order is normalised: mem + segol + dagesh (database NFC
+        // order, vowel before dagesh) matches mem + dagesh + segol (traditional).
+        let nfc: String = ['\u{05DE}', '\u{05B6}', '\u{05BC}'].iter().collect();
+        let traditional: String = ['\u{05DE}', '\u{05BC}', '\u{05B6}'].iter().collect();
+        assert_eq!(vocab_key(&nfc), vocab_key(&traditional));
+        // Meaningful distinctions are kept: different vowels, and the shin/sin dot.
+        assert_ne!(vocab_key("עַם"), vocab_key("עִם"));
+        assert_ne!(vocab_key("שׁ"), vocab_key("שׂ"));
     }
 
     #[test]
