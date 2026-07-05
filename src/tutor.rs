@@ -32,6 +32,7 @@
 //! [`crate::bible::Bible::attach_progress`]). Static selection runs over
 //! `hebrew.db`'s `verse_word` / `verse_stats` tables.
 
+use log::debug;
 use rusqlite::{Connection, OptionalExtension, params};
 
 use crate::bible::{Bible, HebrewWord};
@@ -426,6 +427,12 @@ const ALPHABET_CONSONANT_TARGET: i64 = 22;
 /// a couple of rare ones (qamats qatan, a rarely-seen hataf) that a learner may
 /// never meet, so grammar isn't gated behind a glyph that never appears.
 const ALPHABET_VOWEL_TARGET: i64 = 10;
+
+/// While learning letters, words of at most this many glyphs are preferred
+/// over longer ones — but only as a tie-break bucket ahead of frequency, not
+/// a hard cap: once short words in a verse run out, longer ones still get
+/// taught in frequency order rather than being skipped.
+const LETTER_LEARNING_SHORT_WORD_GLYPHS: i64 = 3;
 
 /// Within-verse ordering of not-yet-learnt words: a word building on an
 /// already-known root first, then the simplest grammatical form, then the most
@@ -1581,9 +1588,15 @@ impl Bible {
     /// grammar-free words are introducible) it drops the completability
     /// requirement — a verse may still contain not-yet-teachable grammar words —
     /// and instead orders by its cheapest introducible word: fewest *new letters*
-    /// (`popcount(glyph_mask & ~seen)`), then shortest, then most common. So the
-    /// learner meets the simplest, shortest words and builds the alphabet from
-    /// them, reusing letters already learnt. Biblical Aramaic verses excluded.
+    /// (`popcount(glyph_mask & ~seen)`), then a preference for words of at most
+    /// [`LETTER_LEARNING_SHORT_WORD_GLYPHS`] glyphs, then the most common
+    /// *surface* (`s.occurrences`, not root frequency — a rare inflected form
+    /// of a common root is still a rare surface) within that tier. So the
+    /// learner meets the simplest words first and builds the alphabet from
+    /// them, reusing letters already learnt, while still working through
+    /// short words in frequency order (and falling through to longer words,
+    /// still by frequency, once short ones run out). Biblical Aramaic verses
+    /// excluded.
     fn next_target_verse(
         &self,
         unlocked: i64,
@@ -1604,8 +1617,10 @@ impl Bible {
         let order = if letter_learning {
             format!(
                 "MIN(CASE WHEN {INTRO} THEN popcount(sm.glyph_mask & ~?2) END) ASC, \
-                 MIN(CASE WHEN {INTRO} THEN popcount(sm.glyph_mask) END) ASC, \
-                 MIN(CASE WHEN {INTRO} THEN COALESCE(r.n_occurrences, s.occurrences) END) DESC, \
+                 MIN(CASE WHEN {INTRO} THEN \
+                     CASE WHEN popcount(sm.glyph_mask) <= {LETTER_LEARNING_SHORT_WORD_GLYPHS} \
+                          THEN 0 ELSE 1 END END) ASC, \
+                 MIN(CASE WHEN {INTRO} THEN s.occurrences END) DESC, \
                  vw.book, vw.chapter, vw.verse"
             )
         } else {
@@ -1679,8 +1694,11 @@ impl Bible {
     /// (which sees every unknown word, so verse completion stays honest), a
     /// locked-grammar word is excluded here so it isn't taught before its rule
     /// unlocks. Ordered semantically ([`WORD_ORDER`]) normally, or — while
-    /// learning the alphabet — by fewest new letters then shortest, so the
-    /// simplest words come first.
+    /// learning the alphabet — by fewest new letters, then a preference for
+    /// short words ([`LETTER_LEARNING_SHORT_WORD_GLYPHS`]), then most common
+    /// surface within that tier (`s.occurrences`, not root frequency), so the
+    /// simplest words come first but frequency still
+    /// governs the order words are met in.
     fn unfinished_words(
         &self,
         b: u8,
@@ -1691,9 +1709,12 @@ impl Bible {
         letter_learning: bool,
     ) -> rusqlite::Result<Vec<String>> {
         let order = if letter_learning {
-            "ORDER BY popcount(sm.glyph_mask & ~?5) ASC, popcount(sm.glyph_mask) ASC, \
-             COALESCE(r.n_occurrences, s.occurrences) DESC, s.occurrences DESC"
-                .to_string()
+            format!(
+                "ORDER BY popcount(sm.glyph_mask & ~?5) ASC, \
+                 CASE WHEN popcount(sm.glyph_mask) <= {LETTER_LEARNING_SHORT_WORD_GLYPHS} \
+                      THEN 0 ELSE 1 END ASC, \
+                 s.occurrences DESC"
+            )
         } else {
             WORD_ORDER.to_string()
         };
@@ -1783,8 +1804,18 @@ impl Bible {
             (true, true) => self.prefer_new_letter(&settings)?,
             (false, true) => true,
             (true, false) => false,
-            (false, false) => return Ok(None),
+            (false, false) => {
+                debug!(
+                    "next_introduction: no candidate (glyph_budget={glyph_budget} \
+                     word_budget={word_budget})"
+                );
+                return Ok(None);
+            }
         };
+        debug!(
+            "next_introduction: ready_word={ready_word:?} new_letter={:?} do_letter={do_letter}",
+            new_letter.as_ref().map(|(s, g)| (s, &g.glyph))
+        );
 
         if do_letter {
             let (surface, g) = new_letter.expect("letter candidate present");
@@ -1950,17 +1981,21 @@ impl Bible {
             .flatten()
             .min();
         let Some(best) = best else {
+            debug!("next_review: pull_forward={pull_forward} -> nothing due");
             return Ok(None);
         };
         if due_of(&word) == Some(best) {
             let (surface, _) = word.expect("min came from word");
+            debug!("next_review: pull_forward={pull_forward} -> word {surface:?} (due={best})");
             return Ok(self.word_card(&surface)?.map(StudyItem::ReviewWord));
         }
         if due_of(&form) == Some(best) {
             let (surface, _) = form.expect("min came from form");
+            debug!("next_review: pull_forward={pull_forward} -> form {surface:?} (due={best})");
             return Ok(self.form_card(&surface)?.map(StudyItem::ReviewFormDrill));
         }
         let (g, _) = glyph.expect("min came from glyph");
+        debug!("next_review: pull_forward={pull_forward} -> glyph {g:?} (due={best})");
         Ok(Some(StudyItem::ReviewGlyph(self.review_glyph_card(g)?)))
     }
 
@@ -2033,7 +2068,9 @@ impl Bible {
     /// first; else introduce the next new thing for the target verse; else pull
     /// an in-learning card forward to keep drilling; else read the finished verse.
     pub fn next_study_item(&self, now: i64) -> rusqlite::Result<StudyItem> {
+        debug!("next_study_item: now={now}");
         if let Some(review) = self.next_review(now, false)? {
+            debug!("next_study_item: due review -> {review:?}");
             return Ok(review);
         }
         // Curriculum ordering (below) needs the per-surface root/form-tier cache;
@@ -2052,10 +2089,18 @@ impl Bible {
         } else {
             0
         };
+        debug!(
+            "next_study_item: unlocked={unlocked} letter_learning={letter_learning} \
+             seen_mask={seen_mask:#x}"
+        );
         let target = match self.meta_target()? {
-            Some(t) => t,
+            Some(t) => {
+                debug!("next_study_item: resuming meta_target={t:?}");
+                t
+            }
             None => match self.next_target_verse(unlocked, seen_mask, letter_learning)? {
                 Some(t) => {
+                    debug!("next_study_item: new target verse={t:?}");
                     self.set_meta_target(Some(t))?;
                     t
                 }
@@ -2070,6 +2115,11 @@ impl Bible {
                     if unlocked < total
                         && self.next_target_verse(total, seen_mask, false)?.is_some()
                     {
+                        debug!(
+                            "next_study_item: no target at unlocked={unlocked}; \
+                             advancing unlock_floor to {}",
+                            unlocked + 1
+                        );
                         self.conn().execute(
                             "INSERT INTO progress.meta(key, value) VALUES ('unlock_floor', ?1) \
                              ON CONFLICT(key) DO UPDATE SET value = excluded.value",
@@ -2077,6 +2127,7 @@ impl Bible {
                         )?;
                         return self.next_study_item(now);
                     }
+                    debug!("next_study_item: nothing new left; falling back to pull-forward review");
                     return Ok(self.next_review(now, true)?.unwrap_or(StudyItem::Done));
                 }
             },
@@ -2084,29 +2135,34 @@ impl Bible {
         let (b, c, v) = target;
 
         if let Some(item) = self.next_introduction(b, c, v, now, unlocked, seen_mask, letter_learning)? {
+            debug!("next_study_item: introducing {item:?}");
             return Ok(item);
         }
         if !self.verse_done(b, c, v)? {
             // Words mid-learning: drill a learning card toward graduation.
             if let Some(review) = self.next_review(now, true)? {
+                debug!("next_study_item: verse {b}/{c}/{v} not done; pull-forward review -> {review:?}");
                 return Ok(review);
             }
             // Nothing left to introduce or drill for this verse, yet it isn't
             // fully learnt — its remaining words need a still-locked grammar rule
             // (only possible while learning the alphabet). Don't mark it readable;
             // drop the target and move to a verse we can make progress on.
+            debug!("next_study_item: verse {b}/{c}/{v} stuck behind locked grammar; dropping target");
             self.set_meta_target(None)?;
             return self.next_study_item(now);
         }
         // Meanings known: introduce a form drill for each drillable word once
         // (its grammatical form, over and above its meaning) before reading.
         if let Some(form) = self.next_form_introduction(b, c, v, now)? {
+            debug!("next_study_item: form drill introduction -> {form:?}");
             return Ok(form);
         }
         // Verse fully learnt: explain any unseen reading marks, then read it.
         // Recorded as seen immediately (never drilled), mirroring how the
         // verse itself is marked readable below.
         if let Some(mark) = self.next_unseen_reading_mark(b, c, v)? {
+            debug!("next_study_item: explaining unseen reading mark {mark:?}");
             self.conn().execute(
                 "INSERT INTO progress.marks_seen(mark, introduced_epoch) VALUES (?1, ?2) \
                  ON CONFLICT(mark) DO NOTHING",
@@ -2114,6 +2170,7 @@ impl Bible {
             )?;
             return Ok(StudyItem::ExplainMark(mark));
         }
+        debug!("next_study_item: verse {b}/{c}/{v} fully learnt -> marking readable");
         self.conn().execute(
             "INSERT INTO progress.verse_progress(book, chapter, verse, state, last_read_epoch) \
              VALUES (?1, ?2, ?3, 'readable', ?4) \
@@ -2145,6 +2202,7 @@ impl Bible {
         grade: Grade,
         now: i64,
     ) -> rusqlite::Result<StudyItem> {
+        debug!("submit_review: track={track:?} key={key:?} grade={grade:?} now={now}");
         let grade_i = grade as i64;
 
         match track {
