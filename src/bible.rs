@@ -965,11 +965,14 @@ fn inflect_verb(w: &HebrewWord, base: &str) -> String {
 }
 
 /// Up to three *other* inflected glosses of the same word, contrasting the
-/// grammatical form — for a "which form is this?" multiple-choice drill. A verb
-/// varies its person/gender/number ("he said" vs "she said" vs "they said"); a
-/// suffixed noun varies its possessor ("his word" vs "their word"); a plain noun
-/// varies number and state ("king" vs "kings" vs "king of"). Empty when no
-/// meaningful contrast exists (the app then falls back to reveal-and-self-grade).
+/// grammatical form — for a "which form is this?" multiple-choice drill. A
+/// finite verb varies its person/gender/number ("he said" vs "she said" vs
+/// "they said"); a participle or infinitive (no person/gender/number axis
+/// changes its gloss) varies tense instead ("saying" vs "he said" vs "to
+/// say"); a suffixed noun varies its possessor ("his word" vs "their word");
+/// a plain noun varies number and state ("king" vs "kings" vs "king of").
+/// Empty when no meaningful contrast exists (the app then falls back to
+/// reveal-and-self-grade).
 pub(crate) fn form_distractors(w: &HebrewWord) -> Vec<String> {
     let correct = inflected_gloss(w);
     let mut out: Vec<String> = Vec::new();
@@ -996,6 +999,25 @@ pub(crate) fn form_distractors(w: &HebrewWord) -> Vec<String> {
             v.person = Some(p.to_string());
             v.gender = Some(g.to_string());
             v.number = Some(n.to_string());
+            consider(&v, &mut out);
+            if out.len() >= 3 {
+                break;
+            }
+        }
+    } else if w.form.is_some() {
+        // Participle or infinitive: person/gender/number don't change the
+        // English gloss (an act. participle is always "-ing"; an infinitive
+        // is always "to …"), so contrast the tense instead ("saying" vs "he
+        // said" vs "to say"). Perfect/Imperfect need a subject to render;
+        // default to third-masculine-singular.
+        for tense in ["Perfect", "Imperfect", "Imperative", "Participle", "Inf. Construct"] {
+            let mut v = w.clone();
+            v.tense = Some(tense.to_string());
+            if matches!(tense, "Perfect" | "Imperfect") {
+                v.person = Some("Third".to_string());
+                v.gender = Some("Masculine".to_string());
+                v.number = Some("Singular".to_string());
+            }
             consider(&v, &mut out);
             if out.len() >= 3 {
                 break;
@@ -2286,6 +2308,33 @@ mod tests {
             ..Default::default()
         };
         assert_eq!(inflected_gloss(&particle), "that; because");
+    }
+
+    #[test]
+    fn form_distractors_contrasts_tense_for_participle_and_infinitive() {
+        // Participles and infinitives have no person (and, for infinitives, no
+        // gender/number either), so the person/gender/number contrast the verb
+        // branch relies on can't fire for them — they must fall back to
+        // contrasting tense instead of coming back empty.
+        let verb = |tense: &str, pgn: (&str, &str, &str), gloss: &str| HebrewWord {
+            gloss: gloss.to_string(),
+            form: Some("Qal".to_string()),
+            tense: Some(tense.to_string()),
+            person: (!pgn.0.is_empty()).then(|| pgn.0.to_string()),
+            gender: (!pgn.1.is_empty()).then(|| pgn.1.to_string()),
+            number: (!pgn.2.is_empty()).then(|| pgn.2.to_string()),
+            ..Default::default()
+        };
+
+        let participle = verb("Participle (act.)", ("", "Masculine", "Singular"), "say");
+        let d = form_distractors(&participle);
+        assert!(!d.is_empty(), "participle should get form distractors, got none");
+        assert!(!d.contains(&"saying".to_string()), "must not include its own gloss");
+
+        let infinitive = verb("Inf. Construct", ("", "", ""), "say");
+        let d = form_distractors(&infinitive);
+        assert!(!d.is_empty(), "infinitive should get form distractors, got none");
+        assert!(!d.contains(&"to say".to_string()), "must not include its own gloss");
     }
 
     #[test]
