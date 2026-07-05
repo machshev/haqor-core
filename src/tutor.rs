@@ -121,6 +121,9 @@ impl Grade {
 pub enum Track {
     Glyph,
     Word,
+    /// A word's grammatical *form* — a "which form is this?" drill, tracked
+    /// separately from its meaning ([`Track::Word`]) in `form_srs`.
+    Form,
 }
 
 /// Mutable SM-2 state for one card. `interval_days == 0` means the card is still
@@ -285,6 +288,11 @@ pub enum StudyItem {
     ReviewGlyph(GlyphCard),
     NewWord(WordCard),
     ReviewWord(WordCard),
+    /// A "which form is this?" drill for a word whose meaning is already known:
+    /// the correct answer is the form's inflected gloss, the distractors are
+    /// other inflections of the same word. Graded on [`Track::Form`].
+    NewFormDrill(WordCard),
+    ReviewFormDrill(WordCard),
     /// A reading mark (sof pasuq, maqaf) shown with an explanation. Carries no
     /// grade — the app just acknowledges it and asks for the next item, like
     /// [`StudyItem::ReadVerse`]. Never revisited once shown.
@@ -437,6 +445,17 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             last_grade       INTEGER NOT NULL
          );
          CREATE INDEX IF NOT EXISTS progress.idx_word_srs_id ON word_srs(surface_id);
+         CREATE TABLE IF NOT EXISTS progress.form_srs(
+            surface          TEXT    PRIMARY KEY,
+            surface_id       INTEGER NOT NULL,
+            ease             REAL    NOT NULL,
+            interval_days    INTEGER NOT NULL,
+            due_epoch        INTEGER NOT NULL,
+            reps             INTEGER NOT NULL,
+            lapses           INTEGER NOT NULL,
+            introduced_epoch INTEGER NOT NULL,
+            last_grade       INTEGER NOT NULL
+         );
          CREATE TABLE IF NOT EXISTS progress.verse_progress(
             book           INTEGER NOT NULL,
             chapter        INTEGER NOT NULL,
@@ -798,6 +817,24 @@ impl Bible {
             .optional()
     }
 
+    fn form_srs(&self, surface: &str) -> rusqlite::Result<Option<Srs>> {
+        self.conn()
+            .query_row(
+                "SELECT ease, interval_days, reps, lapses FROM progress.form_srs \
+                 WHERE surface = ?1",
+                params![surface],
+                |r| {
+                    Ok(Srs {
+                        ease: r.get(0)?,
+                        interval_days: r.get(1)?,
+                        reps: r.get(2)?,
+                        lapses: r.get(3)?,
+                    })
+                },
+            )
+            .optional()
+    }
+
     fn glyph_known(&self, glyph: &str) -> rusqlite::Result<bool> {
         Ok(self.glyph_srs(glyph)?.is_some())
     }
@@ -1114,6 +1151,55 @@ impl Bible {
         }))
     }
 
+    /// Build a form-drill card for `surface`: the quiz answer is the form's
+    /// inflected gloss ("and he said"), the distractors are other inflections of
+    /// the same word ("and she said", "and they said"). Falls back to
+    /// reveal-and-self-grade when too few contrasting forms exist. Returns `None`
+    /// if the surface has no usable parse.
+    fn form_card(&self, surface: &str) -> rusqlite::Result<Option<WordCard>> {
+        let row: Option<(i64, i64)> = self
+            .conn()
+            .query_row(
+                "SELECT surface_id, occurrences FROM hebrewdb.surface WHERE text = ?1",
+                params![surface],
+                |r| Ok((r.get(0)?, r.get(1)?)),
+            )
+            .optional()?;
+        let Some((surface_id, occurrences)) = row else {
+            return Ok(None);
+        };
+        let Some(w) = self.hebrew_word_info(surface) else {
+            return Ok(None);
+        };
+        let inflected = crate::bible::inflected_gloss(&w);
+        let morph = [
+            w.form.as_deref(),
+            w.tense.as_deref(),
+            w.person.as_deref(),
+            w.gender.as_deref(),
+            w.number.as_deref(),
+            w.state.as_deref(),
+        ]
+        .into_iter()
+        .flatten()
+        .collect::<Vec<_>>()
+        .join(" ");
+        // The quiz answer is the inflected form; contrasting inflections are the
+        // wrong options. `gloss` carries the answer (as the meaning quiz does),
+        // `inflected` is cleared so the app shows no redundant line.
+        Ok(Some(WordCard {
+            surface_id,
+            surface: surface.to_string(),
+            occurrences,
+            gloss: inflected,
+            inflected: String::new(),
+            note: String::new(),
+            root: w.root.clone(),
+            morph,
+            distractors: crate::bible::form_distractors(&w),
+        }))
+    }
+
     // --- selection -----------------------------------------------------------
 
     /// Populate the `surface_meta` cache — one `(primary root, form tier)` per
@@ -1370,6 +1456,42 @@ impl Bible {
         Ok(None)
     }
 
+    /// A form drill to introduce for a word of the target verse whose meaning is
+    /// already known (graduated) and whose form is worth drilling
+    /// (`form_tier >= 2`), not yet started as a form drill. Simplest form first,
+    /// then most common. `None` once every drillable word has one. The
+    /// `form_srs` row is created when the card is first graded (like a word).
+    fn next_form_introduction(
+        &self,
+        b: u8,
+        c: u8,
+        v: u8,
+        _now: i64,
+    ) -> rusqlite::Result<Option<StudyItem>> {
+        let surface: Option<String> = self
+            .conn()
+            .query_row(
+                "SELECT s.text
+                 FROM hebrewdb.verse_word vw
+                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+                 JOIN progress.word_srs ws
+                   ON ws.surface_id = vw.surface_id AND ws.interval_days >= 1
+                 JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+                 LEFT JOIN progress.form_srs fs ON fs.surface_id = vw.surface_id
+                 WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
+                   AND sm.form_tier >= 2 AND fs.surface_id IS NULL
+                 ORDER BY sm.form_tier ASC, s.occurrences DESC
+                 LIMIT 1",
+                params![b, c, v],
+                |r| r.get(0),
+            )
+            .optional()?;
+        let Some(surface) = surface else {
+            return Ok(None);
+        };
+        Ok(self.form_card(&surface)?.map(StudyItem::NewFormDrill))
+    }
+
     /// The next review card: the most-overdue introduced card (`pull_forward`
     /// false), or — to keep the session moving when nothing is strictly due —
     /// the longest-waiting still-in-learning card (`pull_forward` true).
@@ -1401,47 +1523,43 @@ impl Bible {
         } else {
             "due_epoch"
         };
-        let gsql = format!(
-            "SELECT glyph, {order_col} FROM progress.glyph_srs WHERE {cond} \
-             ORDER BY {order_col} ASC LIMIT 1"
-        );
-        let wsql = format!(
-            "SELECT surface, {order_col} FROM progress.word_srs WHERE {cond} \
-             ORDER BY {order_col} ASC LIMIT 1"
-        );
-
-        let gmap = |r: &rusqlite::Row| Ok((r.get(0)?, r.get(1)?));
-        let wmap = |r: &rusqlite::Row| Ok((r.get(0)?, r.get(1)?));
-        let (glyph, word): (GlyphRow, WordRow) = if pull_forward {
-            (
-                self.conn().query_row(&gsql, [], gmap).optional()?,
-                self.conn().query_row(&wsql, [], wmap).optional()?,
-            )
-        } else {
-            (
-                self.conn()
-                    .query_row(&gsql, params![now], gmap)
-                    .optional()?,
-                self.conn()
-                    .query_row(&wsql, params![now], wmap)
-                    .optional()?,
-            )
+        // The most-due candidate from each of the three review stores.
+        let pick = |table: &str, key_col: &str| -> rusqlite::Result<Option<(String, i64)>> {
+            let sql = format!(
+                "SELECT {key_col}, {order_col} FROM progress.{table} WHERE {cond} \
+                 ORDER BY {order_col} ASC LIMIT 1"
+            );
+            let map = |r: &rusqlite::Row| Ok((r.get(0)?, r.get(1)?));
+            if pull_forward {
+                self.conn().query_row(&sql, [], map).optional()
+            } else {
+                self.conn().query_row(&sql, params![now], map).optional()
+            }
         };
+        let glyph: GlyphRow = pick("glyph_srs", "glyph")?;
+        let word: WordRow = pick("word_srs", "surface")?;
+        let form: WordRow = pick("form_srs", "surface")?;
 
-        // Whichever is more due wins; ties go to the word.
-        let word_wins = match (&word, &glyph) {
-            (Some((_, wd)), Some((_, gd))) => wd <= gd,
-            (Some(_), None) => true,
-            _ => false,
+        // Whichever is most due wins; a smaller `order_col` is more due. Ties
+        // break word → form → glyph (word meaning first).
+        let due_of = |r: &Option<(String, i64)>| r.as_ref().map(|(_, d)| *d);
+        let best = [due_of(&word), due_of(&form), due_of(&glyph)]
+            .into_iter()
+            .flatten()
+            .min();
+        let Some(best) = best else {
+            return Ok(None);
         };
-        if word_wins {
-            let (surface, _) = word.expect("word_wins implies a word");
+        if due_of(&word) == Some(best) {
+            let (surface, _) = word.expect("min came from word");
             return Ok(self.word_card(&surface)?.map(StudyItem::ReviewWord));
         }
-        if let Some((g, _)) = glyph {
-            return Ok(Some(StudyItem::ReviewGlyph(self.review_glyph_card(g)?)));
+        if due_of(&form) == Some(best) {
+            let (surface, _) = form.expect("min came from form");
+            return Ok(self.form_card(&surface)?.map(StudyItem::ReviewFormDrill));
         }
-        Ok(None)
+        let (g, _) = glyph.expect("min came from glyph");
+        Ok(Some(StudyItem::ReviewGlyph(self.review_glyph_card(g)?)))
     }
 
     /// Whether a reading mark has already been shown (tracked in
@@ -1542,6 +1660,11 @@ impl Bible {
             if let Some(review) = self.next_review(now, true)? {
                 return Ok(review);
             }
+        }
+        // Meanings known: introduce a form drill for each drillable word once
+        // (its grammatical form, over and above its meaning) before reading.
+        if let Some(form) = self.next_form_introduction(b, c, v, now)? {
+            return Ok(form);
         }
         // Verse fully learnt: explain any unseen reading marks, then read it.
         // Recorded as seen immediately (never drilled), mirroring how the
@@ -1647,12 +1770,41 @@ impl Bible {
                     ],
                 )?;
             }
+            Track::Form => {
+                let next = self.form_srs(key)?.unwrap_or_default().graded(grade);
+                let due = next.due_at(now);
+                let surface_id: i64 = self.conn().query_row(
+                    "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
+                    params![key],
+                    |r| r.get(0),
+                )?;
+                self.conn().execute(
+                    "INSERT INTO progress.form_srs(surface, surface_id, ease, \
+                        interval_days, due_epoch, reps, lapses, introduced_epoch, last_grade) \
+                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9) \
+                     ON CONFLICT(surface) DO UPDATE SET ease=excluded.ease, \
+                        interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
+                        reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
+                    params![
+                        key,
+                        surface_id,
+                        next.ease,
+                        next.interval_days,
+                        due,
+                        next.reps,
+                        next.lapses,
+                        now,
+                        grade_i
+                    ],
+                )?;
+            }
         }
         // Log one review event per card answer (a syllable card grades several
         // glyphs but is a single answer) for streak / activity / accuracy stats.
         let track_str = match track {
             Track::Glyph => "glyph",
             Track::Word => "word",
+            Track::Form => "form",
         };
         self.conn().execute(
             "INSERT INTO progress.reviews(epoch, day, track, grade) VALUES (?1, ?2, ?3, ?4)",
@@ -2012,6 +2164,7 @@ impl Bible {
              DELETE FROM progress.word_srs;
              DELETE FROM progress.verse_progress;
              DELETE FROM progress.meta;
+             DELETE FROM progress.form_srs;
              DELETE FROM progress.reviews;
              DELETE FROM progress.marks_seen;
              DELETE FROM progress.concepts_seen;
@@ -2083,6 +2236,9 @@ mod tests {
                 StudyItem::ReviewWord(w) => {
                     bible.submit_review(Track::Word, &w.surface, Grade::Easy, now)?
                 }
+                StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                    bible.submit_review(Track::Form, &w.surface, Grade::Easy, now)?
+                }
                 StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
                     bible.submit_review(Track::Glyph, &g.glyph, Grade::Easy, now)?
                 }
@@ -2129,6 +2285,9 @@ mod tests {
                 StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
                     bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
                 }
+                StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                    bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
                 StudyItem::ExplainGrammar(card) => {
                     // Content is populated and illustrated by the pending word.
                     assert!(!card.title.is_empty() && !card.explanation.is_empty());
@@ -2150,6 +2309,62 @@ mod tests {
         for c in &concepts {
             assert!(seen.insert(c.clone()), "concept {c:?} explained more than once");
         }
+        Ok(())
+    }
+
+    /// Once a word's meaning is known, its grammatical form is drilled too: a
+    /// gradeless-free "which form?" card whose answer is the inflected gloss and
+    /// whose options contrast other inflections, graded on its own `form_srs`
+    /// track and never shown for words with nothing to drill (tier < 2).
+    #[test]
+    fn form_is_drilled_after_meaning() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+        bible.seed_known_alphabet(1_700_000_000)?;
+
+        let mut now = 1_700_000_000;
+        let mut item = bible.next_study_item(now)?;
+        let mut drilled = 0;
+        for _ in 0..8000 {
+            if drilled >= 3 {
+                break;
+            }
+            now += 5;
+            item = match item {
+                StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
+                    bible.submit_review(Track::Glyph, &g.glyph, Grade::Easy, now)?
+                }
+                StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
+                    bible.submit_review(Track::Word, &w.surface, Grade::Easy, now)?
+                }
+                StudyItem::NewFormDrill(w) => {
+                    // The answer is the inflected form; a real grammar tier.
+                    assert!(!w.gloss.is_empty(), "form drill has an inflected answer");
+                    assert!(bible.form_srs(&w.surface)?.is_none(), "row created on grade");
+                    drilled += 1;
+                    let after = bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?;
+                    // Grading created the form_srs row.
+                    assert!(bible.form_srs(&w.surface)?.is_some());
+                    after
+                }
+                StudyItem::ReviewFormDrill(w) => {
+                    bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
+                    bible.next_study_item(now)?
+                }
+                StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
+                StudyItem::Done => break,
+            };
+        }
+        assert!(drilled >= 3, "form drills should appear once meanings are known");
         Ok(())
     }
 
@@ -2480,6 +2695,9 @@ mod tests {
                     saw_word = true;
                     bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
                 }
+                StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                    bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
                 StudyItem::ExplainMark(_) => {
                     // Gradeless, like ReadVerse: acknowledged just by asking
                     // for the next item.
@@ -2530,6 +2748,9 @@ mod tests {
                 StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
                     bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
                 }
+                StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                    bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
                 StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
                     bible.next_study_item(now)?
                 }
@@ -2571,6 +2792,9 @@ mod tests {
                 StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
                     saw_misread_review |= w.surface == misread;
                     bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                    bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
                 StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
                     bible.next_study_item(now)?
@@ -2640,6 +2864,9 @@ mod tests {
                     };
                     bible.submit_review(Track::Word, &w.surface, grade, now)?
                 }
+                StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                    bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
                 StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
                     bible.next_study_item(now)?
                 }
@@ -2681,6 +2908,9 @@ mod tests {
                 }
                 StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
                     bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                    bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
                 StudyItem::ExplainMark(g) => {
                     explained.push(g.glyph.clone());

@@ -95,7 +95,7 @@ impl BdbEntry {
 /// via the consonantal root. Verb readings carry binyan/tense/person-gender-
 /// number; noun readings carry gender/number/state. `root` is the consonantal
 /// root used to pull the glossed root tree from `lexdb.bdb`.
-#[derive(Debug, Default)]
+#[derive(Debug, Default, Clone)]
 pub struct HebrewWord {
     /// Normalised pointed surface form (matches `hebrewdb.surface.text`).
     pub word: String,
@@ -962,6 +962,77 @@ fn inflect_verb(w: &HebrewWord, base: &str) -> String {
         Some("Participle (pas.)") | Some("Participle (pass.)") => past_tense(base),
         _ => with_obj(clause(base.to_string())),
     }
+}
+
+/// Up to three *other* inflected glosses of the same word, contrasting the
+/// grammatical form — for a "which form is this?" multiple-choice drill. A verb
+/// varies its person/gender/number ("he said" vs "she said" vs "they said"); a
+/// suffixed noun varies its possessor ("his word" vs "their word"); a plain noun
+/// varies number and state ("king" vs "kings" vs "king of"). Empty when no
+/// meaningful contrast exists (the app then falls back to reveal-and-self-grade).
+pub(crate) fn form_distractors(w: &HebrewWord) -> Vec<String> {
+    let correct = inflected_gloss(w);
+    let mut out: Vec<String> = Vec::new();
+    let mut seen = std::collections::HashSet::new();
+    seen.insert(correct.to_lowercase());
+    let mut consider = |variant: &HebrewWord, out: &mut Vec<String>| {
+        let g = inflected_gloss(variant);
+        if !g.is_empty() && seen.insert(g.to_lowercase()) {
+            out.push(g);
+        }
+    };
+
+    if w.form.is_some() && w.person.is_some() {
+        // Verb: contrast the subject (and keep the same tense/binyan).
+        for (p, g, n) in [
+            ("Third", "Masculine", "Singular"),
+            ("Third", "Feminine", "Singular"),
+            ("Third", "Masculine", "Plural"),
+            ("First", "Common", "Singular"),
+            ("Second", "Masculine", "Singular"),
+            ("First", "Common", "Plural"),
+        ] {
+            let mut v = w.clone();
+            v.person = Some(p.to_string());
+            v.gender = Some(g.to_string());
+            v.number = Some(n.to_string());
+            consider(&v, &mut out);
+            if out.len() >= 3 {
+                break;
+            }
+        }
+    } else if w.form.is_none() {
+        let state = w.state.as_deref().unwrap_or("");
+        if let Some((num, _)) = state.split_once('+') {
+            // Suffixed noun: contrast the possessor.
+            let num = num.trim();
+            for sfx in ["3ms", "3fs", "3mp", "1cs", "2ms", "1cp"] {
+                let mut v = w.clone();
+                v.state = Some(format!("{num} + {sfx}"));
+                consider(&v, &mut out);
+                if out.len() >= 3 {
+                    break;
+                }
+            }
+        } else {
+            // Plain noun: contrast number and state.
+            for (num, st) in [
+                ("Singular", "Absolute"),
+                ("Plural", "Absolute"),
+                ("Singular", "Construct"),
+            ] {
+                let mut v = w.clone();
+                v.number = Some(num.to_string());
+                v.state = Some(st.to_string());
+                consider(&v, &mut out);
+                if out.len() >= 3 {
+                    break;
+                }
+            }
+        }
+    }
+    out.truncate(3);
+    out
 }
 
 fn inflect_noun(w: &HebrewWord, base: &str) -> String {
