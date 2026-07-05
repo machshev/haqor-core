@@ -27,3 +27,8 @@ pub mod transliterate;
 /// Spaced-repetition reading tutor: curriculum selection over the OT corpus
 /// plus SM-2 review scheduling persisted in a writable `progress.db`.
 pub mod tutor;
+
+/// Curated learner glosses for high-frequency surfaces, keyed dagesh- and
+/// combining-order-insensitively — the tutor's meaning override, held in the
+/// core so the app stays presentation-only.
+pub mod vocab_gloss;

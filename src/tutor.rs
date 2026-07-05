@@ -233,9 +233,13 @@ pub struct WordCard {
     /// The lexeme's base sense (BDB gloss) — what the meaning quiz tests.
     pub gloss: String,
     /// The specific inflected form rendered in English ("and he said", "his
-    /// word"), for the answer side of the card. Falls back to `gloss` for
-    /// function words / proper nouns. See [`crate::bible::inflected_gloss`].
+    /// word"), for the answer side of the card. Empty when a curated gloss
+    /// already gives the learner meaning, or for a function word / proper noun.
+    /// See [`crate::bible::inflected_gloss`].
     pub inflected: String,
+    /// Optional composition/teaching note for a curated word ("לְ (to) + ־וֹ
+    /// (him)"), empty otherwise. See [`crate::vocab_gloss`].
+    pub note: String,
     pub root: String,
     pub morph: String,
     /// Other plausible glosses offered as wrong answers when the meaning is
@@ -1003,14 +1007,20 @@ impl Bible {
             if out.len() >= WANT {
                 break;
             }
-            if let Some(w) = self.hebrew_word_info(&cand) {
-                let g = w.gloss.trim().to_string();
-                if g.is_empty() {
-                    continue;
-                }
-                if seen.insert(g.to_lowercase()) {
-                    out.push(g);
-                }
+            // Prefer a curated gloss (as the correct answer does), else the
+            // automatic bridge, so options read consistently.
+            let g = match crate::vocab_gloss::curated_gloss(&cand) {
+                Some(c) => c.gloss.trim().to_string(),
+                None => match self.hebrew_word_info(&cand) {
+                    Some(w) => w.gloss.trim().to_string(),
+                    None => continue,
+                },
+            };
+            if g.is_empty() {
+                continue;
+            }
+            if seen.insert(g.to_lowercase()) {
+                out.push(g);
             }
         }
         Ok(out)
@@ -1052,6 +1062,19 @@ impl Bible {
             None => (String::new(), String::new(), String::new(), String::new()),
         };
 
+        // A curated gloss (held in the core) is the final learner meaning where
+        // one exists — it overrides the automatic bridge and supplies the
+        // composition note. Its gloss is already form-specific, so no separate
+        // inflected line is shown.
+        let (gloss, inflected, note) = match crate::vocab_gloss::curated_gloss(surface) {
+            Some(c) => (
+                c.gloss.to_string(),
+                String::new(),
+                c.note.unwrap_or_default().to_string(),
+            ),
+            None => (gloss, inflected, String::new()),
+        };
+
         let distractors = self.meaning_distractors(surface, &gloss)?;
 
         Ok(Some(WordCard {
@@ -1060,6 +1083,7 @@ impl Bible {
             occurrences,
             gloss,
             inflected,
+            note,
             root,
             morph,
             distractors,
