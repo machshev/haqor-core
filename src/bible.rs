@@ -1117,8 +1117,28 @@ impl Default for Bible {
             db.deserialize_bytes(schema, Box::leak(data)).unwrap();
         }
 
+        register_sql_functions(&db).unwrap();
         Bible { db }
     }
+}
+
+/// Register the crate's custom SQLite scalar functions. `popcount(x)` returns the
+/// number of set bits in an integer (NULL → 0), used by the tutor to count how
+/// many *new* glyphs a word/verse introduces (`popcount(glyph_mask & ~known)`).
+fn register_sql_functions(db: &Connection) -> rusqlite::Result<()> {
+    use rusqlite::functions::FunctionFlags;
+    db.create_scalar_function(
+        "popcount",
+        1,
+        FunctionFlags::SQLITE_UTF8
+            | FunctionFlags::SQLITE_DETERMINISTIC
+            | FunctionFlags::SQLITE_INNOCUOUS,
+        |ctx| {
+            Ok(ctx
+                .get::<Option<i64>>(0)?
+                .map_or(0i64, |n| (n as u64).count_ones() as i64))
+        },
+    )
 }
 
 impl Bible {
@@ -1146,6 +1166,7 @@ impl Bible {
                 [db_uri(dir, file)],
             )?;
         }
+        register_sql_functions(&db)?;
         Ok(Bible { db })
     }
 
