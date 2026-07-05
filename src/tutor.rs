@@ -31,7 +31,7 @@
 
 use rusqlite::{Connection, OptionalExtension, params};
 
-use crate::bible::Bible;
+use crate::bible::{Bible, HebrewWord};
 
 /// A due glyph candidate `(glyph, due_epoch)`.
 type GlyphRow = Option<(String, i64)>;
@@ -311,6 +311,27 @@ pub struct TutorStats {
 const DONE_SURFACES: &str = "SELECT surface_id FROM progress.word_srs \
      WHERE interval_days >= 1";
 
+/// Roots the learner already knows — those with at least one fully-learnt
+/// (meaning-graduated) surface, resolved through the [`Bible::ensure_surface_meta`]
+/// cache. A new *form* of one of these roots is the cheapest thing to teach next,
+/// so verse and word selection prefer them. A subquery reused across joins.
+const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm \
+     JOIN progress.word_srs ws ON ws.surface_id = sm.surface_id \
+     WHERE ws.interval_days >= 1 AND sm.root <> ''";
+
+/// Bumped whenever [`form_tier`] or the primary-root resolution changes, so a
+/// stale [`Bible::ensure_surface_meta`] cache from an older build is rebuilt.
+const SURFACE_META_VERSION: i64 = 1;
+
+/// Within-verse ordering of not-yet-learnt words: a word building on an
+/// already-known root first, then the simplest grammatical form, then the most
+/// frequent root, then the most common surface. Assumes `sm` (surface_meta),
+/// `r` (roots) and `kr` ([`KNOWN_ROOTS`]) are joined and `s` is the surface row.
+const WORD_ORDER: &str = "ORDER BY (kr.root IS NOT NULL) DESC, \
+     COALESCE(sm.form_tier, 0) ASC, \
+     COALESCE(r.n_occurrences, s.occurrences) DESC, \
+     s.occurrences DESC";
+
 /// A verse's calibration difficulty: its rarest word's OT occurrence count.
 const DIFFICULTY: &str = "MIN(s.occurrences)";
 /// Excludes Biblical Aramaic verses from a `verse_word`/`surface` grouping —
@@ -409,6 +430,11 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
          CREATE TABLE IF NOT EXISTS progress.marks_seen(
             mark             TEXT PRIMARY KEY,
             introduced_epoch INTEGER NOT NULL
+         );
+         CREATE TABLE IF NOT EXISTS progress.surface_meta(
+            surface_id INTEGER PRIMARY KEY,
+            root       TEXT    NOT NULL,
+            form_tier  INTEGER NOT NULL
          );",
     )?;
 
@@ -641,6 +667,64 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
         i += 1;
     }
     out
+}
+
+/// The highest [`form_tier`] value — verbs in a rare derived stem, in the
+/// hardest conjugation, carrying a proclitic and an object suffix.
+const TIER_MAX: u8 = 13;
+
+/// A learner-difficulty tier for a word's grammatical *form*, independent of how
+/// rare the word is. `0` is a word with nothing to parse (a closed-class
+/// function word or proper noun, learnt whole); nominal inflections occupy the
+/// low tiers, verb conjugations the higher ones, so that the plainest forms of a
+/// root are introduced before its harder inflections. An attached proclitic
+/// (article/preposition/conjunction) and a pronominal object suffix each add a
+/// step; vav-consecutive is *not* added separately as it is already captured by
+/// the Wayyiqtol conjugation. See [`Bible::ensure_surface_meta`], which caches
+/// one tier per surface for the curriculum's ordering.
+fn form_tier(w: &HebrewWord) -> u8 {
+    let base = match &w.form {
+        // Verb: binyan (derivation) plus conjugation.
+        Some(binyan) => {
+            let stem = match binyan.as_str() {
+                "Qal" | "Qal passive" => 0,
+                "Niphal" | "Piel" | "Pual" | "Hiphil" | "Hophal" | "Hithpael" => 2,
+                _ => 3, // rare stems (Polel, Pilpel, Hishtaphel, …)
+            };
+            let is_3ms = w.person.as_deref() == Some("Third")
+                && w.gender.as_deref() == Some("Masculine")
+                && w.number.as_deref() == Some("Singular");
+            let conj = match w.tense.as_deref() {
+                // Perfect 3ms is the citation-like base; other PGN a touch more.
+                Some("Perfect") if is_3ms => 0,
+                Some("Perfect") => 1,
+                Some("Participle (act.)")
+                | Some("Participle (pas.)")
+                | Some("Participle (pass.)")
+                | Some("Participle") => 1,
+                Some("Imperfect") | Some("Wayyiqtol") | Some("Jussive") | Some("Cohortative") => 2,
+                Some("Imperative") | Some("Inf. Construct") | Some("Inf. Absolute") => 3,
+                _ => 2,
+            };
+            5 + stem + conj
+        }
+        // Noun / adjective / other nominal: has number/state but no verb form.
+        None if w.tense.is_none() && (w.number.is_some() || w.state.is_some()) => {
+            match w.state.as_deref() {
+                // A pronominal-suffix label from `decode_noun_label`, e.g. "Sg + 3ms".
+                Some(s) if s.contains('+') => 4,
+                Some("Construct") | Some("Directional") => 3,
+                _ => match w.number.as_deref() {
+                    Some("Plural") | Some("Dual") => 2,
+                    _ => 1, // singular absolute
+                },
+            }
+        }
+        // Function word / proper noun / unresolved: nothing to parse.
+        None => return 0,
+    };
+    let extra = w.prefix.is_some() as u8 + w.obj_suffix.is_some() as u8;
+    (base + extra).min(TIER_MAX)
 }
 
 impl Bible {
@@ -977,8 +1061,80 @@ impl Bible {
 
     // --- selection -----------------------------------------------------------
 
-    /// The next not-fully-learnt verse needing the fewest new words, tie-broken
-    /// by those words being the most common. Biblical Aramaic verses excluded.
+    /// Populate the `surface_meta` cache — one `(primary root, form tier)` per
+    /// non-Aramaic surface, resolved through [`Bible::hebrew_word_info`] — used to
+    /// order the curriculum by root frequency, root familiarity and form
+    /// simplicity. Idempotent and guarded by a version stamp in `meta`, so it runs
+    /// once (a corpus-wide pass over ~50k surfaces) and is a cheap no-op
+    /// thereafter; a bump to [`SURFACE_META_VERSION`] (or a swapped-in newer
+    /// `hebrew.db`) triggers a one-time rebuild.
+    fn ensure_surface_meta(&self) -> rusqlite::Result<()> {
+        let stamp: Option<i64> = self
+            .conn()
+            .query_row(
+                "SELECT CAST(value AS INTEGER) FROM progress.meta WHERE key = 'surface_meta_v'",
+                [],
+                |r| r.get(0),
+            )
+            .optional()?;
+        let expected = self.surface_count()?;
+        // Rebuild when the version changed or the row count no longer matches the
+        // corpus (a swapped-in db): a partial/stale cache would mis-order words.
+        let current: i64 = self.conn().query_row(
+            "SELECT COUNT(*) FROM progress.surface_meta",
+            [],
+            |r| r.get(0),
+        )?;
+        if stamp == Some(SURFACE_META_VERSION) && current == expected {
+            return Ok(());
+        }
+
+        let surfaces: Vec<(i64, String)> = {
+            let mut stmt = self
+                .conn()
+                .prepare("SELECT surface_id, text FROM hebrewdb.surface WHERE language IS NULL")?;
+            stmt.query_map([], |r| Ok((r.get(0)?, r.get(1)?)))?
+                .collect::<rusqlite::Result<_>>()?
+        };
+
+        self.conn().execute_batch("BEGIN")?;
+        self.conn().execute("DELETE FROM progress.surface_meta", [])?;
+        {
+            let mut ins = self.conn().prepare(
+                "INSERT INTO progress.surface_meta(surface_id, root, form_tier) \
+                 VALUES (?1, ?2, ?3)",
+            )?;
+            for (surface_id, text) in surfaces {
+                // `surface.text` is already the normalised form the resolver uses.
+                let (root, tier) = match self.hebrew_word_by_surface_id(surface_id, text) {
+                    Some(w) => (w.root.clone(), form_tier(&w) as i64),
+                    None => (String::new(), 0),
+                };
+                ins.execute(params![surface_id, root, tier])?;
+            }
+        }
+        self.conn().execute(
+            "INSERT INTO progress.meta(key, value) VALUES ('surface_meta_v', ?1) \
+             ON CONFLICT(key) DO UPDATE SET value = excluded.value",
+            params![SURFACE_META_VERSION.to_string()],
+        )?;
+        self.conn().execute_batch("COMMIT")?;
+        Ok(())
+    }
+
+    fn surface_count(&self) -> rusqlite::Result<i64> {
+        self.conn().query_row(
+            "SELECT COUNT(*) FROM hebrewdb.surface WHERE language IS NULL",
+            [],
+            |r| r.get(0),
+        )
+    }
+
+    /// The next not-fully-learnt verse to work toward. Prefers verses that
+    /// introduce the fewest brand-new roots (a new *form* of an already-known
+    /// root is the cheapest thing to learn), then — among the new roots — the
+    /// most frequent, then a verse with a simple form to start on, then the
+    /// fewest new words overall. Biblical Aramaic verses excluded.
     fn next_target_verse(&self) -> rusqlite::Result<Option<(u8, u8, u8)>> {
         self.conn()
             .query_row(
@@ -987,14 +1143,34 @@ impl Bible {
                      FROM hebrewdb.verse_word vw
                      JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
                      LEFT JOIN ({DONE_SURFACES}) done ON done.surface_id = vw.surface_id
+                     LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+                     LEFT JOIN hebrewdb.roots r ON r.root = sm.root
+                     LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
                      GROUP BY vw.book, vw.chapter, vw.verse
                      HAVING SUM(CASE WHEN s.language = 'aramaic' THEN 1 ELSE 0 END) = 0
                         AND COUNT(DISTINCT CASE WHEN done.surface_id IS NULL
                                                 THEN vw.surface_id END) >= 1
-                     ORDER BY MIN(CASE WHEN done.surface_id IS NULL THEN s.occurrences END) DESC,
-                              COUNT(DISTINCT CASE WHEN done.surface_id IS NULL
-                                                  THEN vw.surface_id END) ASC,
-                              vw.book, vw.chapter, vw.verse
+                     ORDER BY
+                        -- 1. Difficulty gate: the *rarest* new root (or, for a
+                        --    rootless word such as a proper noun, its own
+                        --    frequency) should be as common as possible. This is
+                        --    root-frequency-aware — an uncommon surface form of a
+                        --    common root still counts as common — while keeping
+                        --    rare-vocabulary verses (e.g. genealogies of obscure
+                        --    proper names) out of the early curriculum.
+                        MIN(CASE WHEN done.surface_id IS NULL
+                                 THEN COALESCE(r.n_occurrences, s.occurrences) END) DESC,
+                        -- 2. Prefer reusing known roots: fewest brand-new roots
+                        --    (a new *form* of an already-known root is cheapest).
+                        COUNT(DISTINCT CASE WHEN done.surface_id IS NULL AND kr.root IS NULL
+                                             AND sm.root <> '' THEN sm.root END) ASC,
+                        -- 3. A simple form to start on.
+                        MIN(CASE WHEN done.surface_id IS NULL
+                                 THEN COALESCE(sm.form_tier, 0) END) ASC,
+                        -- 4. Fewest new words overall.
+                        COUNT(DISTINCT CASE WHEN done.surface_id IS NULL
+                                            THEN vw.surface_id END) ASC,
+                        vw.book, vw.chapter, vw.verse
                      LIMIT 1"
                 ),
                 [],
@@ -1003,7 +1179,8 @@ impl Bible {
             .optional()
     }
 
-    /// The most common not-fully-learnt word in a verse, if any remain.
+    /// The next not-fully-learnt word in a verse to introduce, if any remain,
+    /// in [`WORD_ORDER`] (known-root, then simplest form, then common root).
     fn first_unfinished_word(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Option<String>> {
         self.conn()
             .query_row(
@@ -1012,9 +1189,12 @@ impl Bible {
                      FROM hebrewdb.verse_word vw
                      JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
                      LEFT JOIN ({DONE_SURFACES}) done ON done.surface_id = vw.surface_id
+                     LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+                     LEFT JOIN hebrewdb.roots r ON r.root = sm.root
+                     LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
                      WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
                        AND done.surface_id IS NULL
-                     ORDER BY s.occurrences DESC
+                     {WORD_ORDER}
                      LIMIT 1"
                 ),
                 params![b, c, v],
@@ -1038,9 +1218,12 @@ impl Bible {
              FROM hebrewdb.verse_word vw
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
              LEFT JOIN ({DONE_SURFACES}) done ON done.surface_id = vw.surface_id
+             LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+             LEFT JOIN hebrewdb.roots r ON r.root = sm.root
+             LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
              WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
                AND done.surface_id IS NULL
-             ORDER BY s.occurrences DESC"
+             {WORD_ORDER}"
         ))?;
         stmt.query_map(params![b, c, v], |r| r.get(0))?.collect()
     }
@@ -1225,6 +1408,9 @@ impl Bible {
         if let Some(review) = self.next_review(now, false)? {
             return Ok(review);
         }
+        // Curriculum ordering (below) needs the per-surface root/form-tier cache;
+        // build it once here (cheap version-stamp check thereafter).
+        self.ensure_surface_meta()?;
         let target = match self.meta_target()? {
             Some(t) => t,
             None => match self.next_target_verse()? {
@@ -1719,7 +1905,8 @@ impl Bible {
              DELETE FROM progress.verse_progress;
              DELETE FROM progress.meta;
              DELETE FROM progress.reviews;
-             DELETE FROM progress.marks_seen;",
+             DELETE FROM progress.marks_seen;
+             DELETE FROM progress.surface_meta;",
         )
     }
 }
@@ -1746,6 +1933,106 @@ mod tests {
         assert_eq!((s.reps, s.interval_days), (0, 0));
         assert_eq!(s.lapses, 1);
         assert!(!s.graduated());
+    }
+
+    /// Root-frequency verse selection must open the curriculum on common,
+    /// root-bearing vocabulary — not on genealogy lists of rare proper names
+    /// (which carry no root, so an earlier "fewest new roots" heuristic scored
+    /// them as trivially cheap and dived straight into Chronicles). Guards the
+    /// difficulty gate: the first words a fresh learner meets are mostly
+    /// content words with a resolved root.
+    #[test]
+    fn cold_start_opens_on_content_words_not_genealogy() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+        bible.seed_known_alphabet(1_700_000_000)?; // skip glyph teaching
+
+        let mut now = 1_700_000_000;
+        let mut item = bible.next_study_item(now)?;
+        let mut rooted = 0;
+        let mut total = 0;
+        for _ in 0..4000 {
+            if total >= 12 {
+                break;
+            }
+            now += 5;
+            item = match item {
+                StudyItem::NewWord(w) => {
+                    total += 1;
+                    if !w.root.is_empty() {
+                        rooted += 1;
+                    }
+                    bible.submit_review(Track::Word, &w.surface, Grade::Easy, now)?
+                }
+                StudyItem::ReviewWord(w) => {
+                    bible.submit_review(Track::Word, &w.surface, Grade::Easy, now)?
+                }
+                StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
+                    bible.submit_review(Track::Glyph, &g.glyph, Grade::Easy, now)?
+                }
+                StudyItem::ExplainMark(_) | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
+                StudyItem::Done => break,
+            };
+        }
+        assert_eq!(total, 12, "should introduce a dozen words quickly");
+        assert!(
+            rooted >= 8,
+            "early vocabulary should be mostly root-bearing content words, \
+             got only {rooted}/12 (a genealogy-of-proper-names regression)"
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn form_tier_orders_forms_by_simplicity() {
+        let verb = |binyan: &str, tense: &str, pgn: (&str, &str, &str)| HebrewWord {
+            form: Some(binyan.to_string()),
+            tense: Some(tense.to_string()),
+            person: (!pgn.0.is_empty()).then(|| pgn.0.to_string()),
+            gender: (!pgn.1.is_empty()).then(|| pgn.1.to_string()),
+            number: (!pgn.2.is_empty()).then(|| pgn.2.to_string()),
+            ..Default::default()
+        };
+        let noun = |number: Option<&str>, state: Option<&str>| HebrewWord {
+            number: number.map(str::to_string),
+            state: state.map(str::to_string),
+            ..Default::default()
+        };
+
+        // A function word / proper noun has nothing to parse.
+        assert_eq!(form_tier(&HebrewWord::default()), 0);
+
+        // Nouns: singular absolute < plural < construct < suffixed.
+        let sg = form_tier(&noun(Some("Singular"), Some("Absolute")));
+        let pl = form_tier(&noun(Some("Plural"), Some("Absolute")));
+        let cs = form_tier(&noun(Some("Singular"), Some("Construct")));
+        let sfx = form_tier(&noun(None, Some("Sg + 3ms")));
+        assert!(sg < pl && pl < cs && cs < sfx, "{sg} {pl} {cs} {sfx}");
+
+        // Every noun is simpler than every verb.
+        let qal_perf_3ms = form_tier(&verb("Qal", "Perfect", ("Third", "Masculine", "Singular")));
+        assert!(sfx < qal_perf_3ms, "nouns rank below verbs");
+
+        // Verbs: Qal perfect 3ms (citation-like) < other Qal PGN < imperfect
+        // < imperative; a derived stem outranks Qal; a suffix/prefix add a step.
+        let qal_perf_2ms = form_tier(&verb("Qal", "Perfect", ("Second", "Masculine", "Singular")));
+        let qal_impf = form_tier(&verb("Qal", "Imperfect", ("Third", "Masculine", "Singular")));
+        let qal_impv = form_tier(&verb("Qal", "Imperative", ("Second", "Masculine", "Singular")));
+        let piel_perf = form_tier(&verb("Piel", "Perfect", ("Third", "Masculine", "Singular")));
+        assert!(qal_perf_3ms < qal_perf_2ms, "3ms is the base perfect");
+        assert!(qal_perf_2ms < qal_impf && qal_impf < qal_impv);
+        assert!(qal_perf_3ms < piel_perf, "derived stem is harder than Qal");
+
+        let mut with_suffix = verb("Qal", "Perfect", ("Third", "Masculine", "Singular"));
+        with_suffix.obj_suffix = Some("3ms".to_string());
+        assert!(form_tier(&with_suffix) > qal_perf_3ms, "object suffix adds a step");
     }
 
     #[test]
@@ -2208,10 +2495,16 @@ mod tests {
             .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
         init_progress_schema(bible.conn())?;
 
+        // Walk well past the first readable verse, acknowledging reads and
+        // collecting every explained mark: which reading marks a verse needs
+        // depends on verse selection, so the invariant under test is that each
+        // distinct mark is explained *at most once* (never re-explained, never
+        // drilled), not that exactly one appears.
         let now = 1_700_000_000;
         let mut item = bible.next_study_item(now)?;
-        let mut mark_count = 0;
-        for _ in 0..4000 {
+        let mut explained: Vec<String> = Vec::new();
+        let mut reads = 0;
+        for _ in 0..8000 {
             item = match item {
                 StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
                     bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
@@ -2219,17 +2512,32 @@ mod tests {
                 StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
                     bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
                 }
-                StudyItem::ExplainMark(_) => {
-                    mark_count += 1;
+                StudyItem::ExplainMark(g) => {
+                    explained.push(g.glyph.clone());
                     bible.next_study_item(now)?
                 }
-                StudyItem::ReadVerse(_) | StudyItem::Done => break,
+                StudyItem::ReadVerse(_) => {
+                    reads += 1;
+                    if reads >= 3 {
+                        break;
+                    }
+                    bible.next_study_item(now)?
+                }
+                StudyItem::Done => break,
             };
         }
-        assert_eq!(mark_count, 1, "sof pasuq is explained exactly once");
-        // Never entered the drilled-glyph store, so it never comes up for
-        // review.
-        assert!(!bible.glyph_known("\u{05C3}")?);
+        assert!(!explained.is_empty(), "some reading mark should be explained");
+        let mut seen = std::collections::HashSet::new();
+        for mark in &explained {
+            assert!(
+                seen.insert(mark.clone()),
+                "reading mark {mark:?} was explained more than once"
+            );
+        }
+        // Never entered the drilled-glyph store, so it never comes up for review.
+        for mark in READING_MARKS {
+            assert!(!bible.glyph_known(&mark.to_string())?);
+        }
         Ok(())
     }
 

@@ -115,6 +115,10 @@ pub struct HebrewWord {
     /// Attached prefix cluster (article/preposition/vav), as pointed Hebrew.
     pub prefix: Option<String>,
     pub vav_con: bool,
+    /// Pronominal object suffix PGN on a verb (e.g. `3ms` in "he struck him"),
+    /// `None` when the form carries no object suffix. Used to inflect glosses
+    /// ("he struck him") and to rank form complexity.
+    pub obj_suffix: Option<String>,
 }
 
 /// One entry of the frequency-ordered learner vocabulary: a distinct OT
@@ -808,7 +812,30 @@ impl Bible {
     /// otherwise a resolvable noun reading wins, falling back to whatever exists.
     pub fn hebrew_word_info(&self, word: &str) -> Option<HebrewWord> {
         let norm = crate::generate::normalize_surface(word);
+        // `surface.text` is not indexed, so resolve the surface_id once here and
+        // key the (indexed) child-table lookups off it — one scan, not three.
+        let surface_id: i64 = self
+            .db
+            .query_row(
+                "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
+                [&norm],
+                |r| r.get(0),
+            )
+            .optional()
+            .ok()??;
+        self.hebrew_word_by_surface_id(surface_id, norm)
+    }
 
+    /// [`Bible::hebrew_word_info`] keyed by a known `surface_id` and its already
+    /// normalised `text`, so the analysis lookups hit `idx_analyses_surface` /
+    /// `idx_noun_analyses_surface` directly rather than scanning through the
+    /// unindexed `surface.text`. Used by the tutor's `surface_meta` build, which
+    /// resolves every surface in the corpus in one pass.
+    pub(crate) fn hebrew_word_by_surface_id(
+        &self,
+        surface_id: i64,
+        norm: String,
+    ) -> Option<HebrewWord> {
         // Top verb analysis by stored rank (attestation, then generator order).
         // `analysis_id` is unique, so it alone determines the pick; `has_bdb` is
         // still selected for the verb-vs-noun decision below.
@@ -816,13 +843,13 @@ impl Bible {
             .db
             .query_row(
                 "SELECT a.root, a.binyan, a.form, a.pgn, a.prefix, a.vav_consecutive, \
+                        a.obj_suffix, \
                         EXISTS(SELECT 1 FROM lexdb.bdb b WHERE b.root = a.root) AS has_bdb \
                  FROM hebrewdb.analyses a \
-                 JOIN hebrewdb.surface s ON s.surface_id = a.surface_id \
-                 WHERE s.text = ?1 \
+                 WHERE a.surface_id = ?1 \
                  ORDER BY a.analysis_id ASC \
                  LIMIT 1",
-                [&norm],
+                [surface_id],
                 |row| {
                     Ok((
                         row.get::<_, String>(0)?,
@@ -831,7 +858,8 @@ impl Bible {
                         row.get::<_, String>(3)?,
                         row.get::<_, String>(4)?,
                         row.get::<_, i64>(5)? != 0,
-                        row.get::<_, i64>(6)? != 0,
+                        row.get::<_, String>(6)?,
+                        row.get::<_, i64>(7)? != 0,
                     ))
                 },
             )
@@ -848,11 +876,10 @@ impl Bible {
                 .prepare(
                     "SELECT n.kind, n.label, n.prefix, n.stem \
                      FROM hebrewdb.noun_analyses n \
-                     JOIN hebrewdb.surface s ON s.surface_id = n.surface_id \
-                     WHERE s.text = ?1 ORDER BY n.analysis_id ASC",
+                     WHERE n.surface_id = ?1 ORDER BY n.analysis_id ASC",
                 )
                 .ok()?;
-            stmt.query_map([&norm], |row| {
+            stmt.query_map([surface_id], |row| {
                 Ok((
                     row.get::<_, String>(0)?,
                     row.get::<_, String>(1)?,
@@ -881,12 +908,12 @@ impl Bible {
             chosen
         };
 
-        let verb_resolves = verb.as_ref().is_some_and(|v| v.6);
+        let verb_resolves = verb.as_ref().is_some_and(|v| v.7);
         let noun_resolves = noun.as_ref().is_some_and(|n| !n.3.is_empty());
 
         // Prefer a BDB-resolvable verb; else a resolvable noun; else whatever
         // analysis exists (verb before noun).
-        if let Some((root, binyan, tense, pgn, prefix, vav_con, _)) =
+        if let Some((root, binyan, tense, pgn, prefix, vav_con, obj_suffix, _)) =
             verb.as_ref().filter(|_| verb_resolves || !noun_resolves)
         {
             let (person, gender, number) = decode_pgn(pgn);
@@ -903,6 +930,7 @@ impl Bible {
                 state: None,
                 prefix: (!prefix.is_empty()).then(|| prefix.clone()),
                 vav_con: *vav_con,
+                obj_suffix: (!obj_suffix.is_empty()).then(|| obj_suffix.clone()),
             });
         }
 
@@ -920,6 +948,7 @@ impl Bible {
                 state,
                 prefix: (!prefix.is_empty()).then_some(prefix),
                 vav_con: false,
+                obj_suffix: None,
             });
         }
 
@@ -934,9 +963,8 @@ impl Bible {
             .query_row(
                 "SELECT la.root, la.gloss, la.prefix \
                  FROM hebrewdb.lexical_analyses la \
-                 JOIN hebrewdb.surface s ON s.surface_id = la.surface_id \
-                 WHERE s.text = ?1",
-                [&norm],
+                 WHERE la.surface_id = ?1",
+                [surface_id],
                 |row| {
                     Ok((
                         row.get::<_, String>(0)?,
@@ -961,6 +989,7 @@ impl Bible {
                 state: None,
                 prefix: (!prefix.is_empty()).then_some(prefix),
                 vav_con: false,
+                obj_suffix: None,
             });
         }
 
