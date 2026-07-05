@@ -215,7 +215,8 @@ impl Srs {
     }
 }
 
-/// A teachable glyph: a single consonant (final forms folded) or a niqqud point.
+/// A teachable glyph: a single consonant (final forms taught as their own
+/// distinct glyph) or a niqqud point.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct GlyphCard {
     pub glyph: String,
@@ -1603,6 +1604,20 @@ impl Bible {
         seen_mask: i64,
         letter_learning: bool,
     ) -> rusqlite::Result<Option<(u8, u8, u8)>> {
+        self.next_target_verse_excluding(None, unlocked, seen_mask, letter_learning)
+    }
+
+    /// Same as [`Self::next_target_verse`], but skipping `exclude` — used to
+    /// find a *second* verse to interleave new material from when the pinned
+    /// target has nothing left to introduce right now (see
+    /// [`Self::next_study_item`]'s stall fallback).
+    fn next_target_verse_excluding(
+        &self,
+        exclude: Option<(u8, u8, u8)>,
+        unlocked: i64,
+        seen_mask: i64,
+        letter_learning: bool,
+    ) -> rusqlite::Result<Option<(u8, u8, u8)>> {
         // "introducible unknown word" in a CASE guard.
         const INTRO: &str =
             "done.surface_id IS NULL AND COALESCE(sm.concept_rank, -1) < ?1";
@@ -1633,6 +1648,20 @@ impl Bible {
              vw.book, vw.chapter, vw.verse"
                 .to_string()
         };
+        // Placeholder numbers for the exclude triple must slot in after
+        // whichever of ?1 (unlocked, always present) / ?2 (seen_mask, only
+        // while letter-learning) are already bound.
+        let exclude_base = if letter_learning { 3 } else { 2 };
+        let exclude_where = if exclude.is_some() {
+            format!(
+                "WHERE NOT (vw.book = ?{b} AND vw.chapter = ?{c} AND vw.verse = ?{v})",
+                b = exclude_base,
+                c = exclude_base + 1,
+                v = exclude_base + 2
+            )
+        } else {
+            String::new()
+        };
         let sql = format!(
             "SELECT vw.book, vw.chapter, vw.verse
              FROM hebrewdb.verse_word vw
@@ -1641,6 +1670,7 @@ impl Bible {
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
              LEFT JOIN hebrewdb.roots r ON r.root = sm.root
              LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
+             {exclude_where}
              GROUP BY vw.book, vw.chapter, vw.verse
              HAVING SUM(CASE WHEN s.language = 'aramaic' THEN 1 ELSE 0 END) = 0
                 AND COUNT(DISTINCT CASE WHEN {INTRO} THEN vw.surface_id END) >= 1
@@ -1648,10 +1678,20 @@ impl Bible {
              ORDER BY {order}
              LIMIT 1"
         );
-        // ?1 = unlocked (always); ?2 = seen mask (only referenced when learning).
+        // ?1 = unlocked (always); ?2 = seen mask (only referenced when learning);
+        // ?3..?5 = excluded book/chapter/verse (only when excluding).
         let mut p: Vec<&dyn rusqlite::ToSql> = vec![&unlocked];
         if letter_learning {
             p.push(&seen_mask);
+        }
+        let (eb, ec, ev);
+        if let Some((b, c, v)) = &exclude {
+            eb = *b;
+            ec = *c;
+            ev = *v;
+            p.push(&eb);
+            p.push(&ec);
+            p.push(&ev);
         }
         self.conn()
             .query_row(&sql, p.as_slice(), |r| {
@@ -2068,6 +2108,17 @@ impl Bible {
     /// first; else introduce the next new thing for the target verse; else pull
     /// an in-learning card forward to keep drilling; else read the finished verse.
     pub fn next_study_item(&self, now: i64) -> rusqlite::Result<StudyItem> {
+        self.next_study_item_impl(now, false)
+    }
+
+    /// Implements [`Self::next_study_item`]. `interleave_on_stall` additionally
+    /// tries a second verse for fresh material when the pinned target has
+    /// nothing left to introduce (see the call site in [`Self::submit_review`]);
+    /// it costs an extra whole-corpus query, so it's only worth paying right
+    /// after a lapse — the case that used to hand the learner straight back
+    /// the card they just got wrong, seconds before it would naturally recur
+    /// via `due_epoch`. Cheap, no-op internal recursive calls stay at `false`.
+    fn next_study_item_impl(&self, now: i64, interleave_on_stall: bool) -> rusqlite::Result<StudyItem> {
         debug!("next_study_item: now={now}");
         if let Some(review) = self.next_review(now, false)? {
             debug!("next_study_item: due review -> {review:?}");
@@ -2125,7 +2176,7 @@ impl Bible {
                              ON CONFLICT(key) DO UPDATE SET value = excluded.value",
                             params![(unlocked + 1).to_string()],
                         )?;
-                        return self.next_study_item(now);
+                        return self.next_study_item_impl(now, interleave_on_stall);
                     }
                     debug!("next_study_item: nothing new left; falling back to pull-forward review");
                     return Ok(self.next_review(now, true)?.unwrap_or(StudyItem::Done));
@@ -2139,6 +2190,34 @@ impl Bible {
             return Ok(item);
         }
         if !self.verse_done(b, c, v)? {
+            // The pinned verse has nothing new to teach right now (every
+            // remaining word is either locked or already mid-learning — e.g.
+            // during letter-learning only one word's glyphs may be fully
+            // known at a time). Rather than immediately re-drilling a card
+            // the learner just answered seconds ago (pull-forward below
+            // ignores `due_epoch` and would otherwise hand back the very
+            // card just graded, since it's the only thing in the learning
+            // pool), look for a second verse with fresh material to
+            // interleave — the just-graded card naturally resurfaces once
+            // it's actually due, via the check at the top of this function.
+            if interleave_on_stall {
+                if let Some((ab, ac, av)) = self.next_target_verse_excluding(
+                    Some((b, c, v)),
+                    unlocked,
+                    seen_mask,
+                    letter_learning,
+                )? {
+                    if let Some(item) =
+                        self.next_introduction(ab, ac, av, now, unlocked, seen_mask, letter_learning)?
+                    {
+                        debug!(
+                            "next_study_item: verse {b}/{c}/{v} has nothing new; \
+                             interleaving from {ab}/{ac}/{av} -> {item:?}"
+                        );
+                        return Ok(item);
+                    }
+                }
+            }
             // Words mid-learning: drill a learning card toward graduation.
             if let Some(review) = self.next_review(now, true)? {
                 debug!("next_study_item: verse {b}/{c}/{v} not done; pull-forward review -> {review:?}");
@@ -2150,7 +2229,7 @@ impl Bible {
             // drop the target and move to a verse we can make progress on.
             debug!("next_study_item: verse {b}/{c}/{v} stuck behind locked grammar; dropping target");
             self.set_meta_target(None)?;
-            return self.next_study_item(now);
+            return self.next_study_item_impl(now, interleave_on_stall);
         }
         // Meanings known: introduce a form drill for each drillable word once
         // (its grammatical form, over and above its meaning) before reading.
@@ -2305,7 +2384,12 @@ impl Bible {
             "INSERT INTO progress.reviews(epoch, day, track, grade) VALUES (?1, ?2, ?3, ?4)",
             params![now, now.div_euclid(SECONDS_PER_DAY), track_str, grade_i],
         )?;
-        self.next_study_item(now)
+        // A lapse justifies the extra whole-corpus query in
+        // `next_study_item_impl`'s stall fallback: without it, a just-failed
+        // card that's the only thing in the learning pool gets handed straight
+        // back before its `due_epoch`, drilling the same word over and over
+        // instead of resting it and teaching something new in the meantime.
+        self.next_study_item_impl(now, grade == Grade::Again)
     }
 
     /// A verse's words in reading order, as `word_srs` surface keys — so the
@@ -3663,6 +3747,81 @@ mod tests {
             new_words.len() >= 2,
             "a second word should be introduced while the first is stuck mid-learning"
         );
+        Ok(())
+    }
+
+    /// A lapsed word (`Grade::Again`) isn't due again for a full learning step
+    /// ([`LEARN_STEPS_MIN`]), so it shouldn't be handed straight back as the
+    /// very next card — that drills the same word back-to-back instead of
+    /// resting it and teaching something else in the meantime. Regression
+    /// test for the `next_study_item_impl` stall fallback.
+    ///
+    /// Constructs the narrow-pool scenario directly (via `progress.word_srs`)
+    /// rather than relying on natural pacing to reach it: the pinned target
+    /// verse's other words are all pre-graduated ("done"), leaving exactly one
+    /// unfinished word, which is freshly introduced and then failed. With no
+    /// other candidate in *this* verse, the old code fell straight through to
+    /// pull-forward, which ignores `due_epoch` and so handed the same word
+    /// straight back.
+    #[test]
+    fn lapsed_word_is_not_immediately_re_served() -> rusqlite::Result<()> {
+        let Some(bible) = open_with_progress() else {
+            return Ok(());
+        };
+        bible.seed_known_alphabet(1_700_000_000)?; // isolate word pacing from letters
+        bible.set_tutor_settings(&TutorSettings {
+            grammar_gating: false, // pin a verse without waiting on grammar unlocks
+            ..Default::default()
+        })?;
+
+        let now0 = 1_700_000_000;
+        let (b, c, v) = bible
+            .next_target_verse(i64::MAX, 0, false)?
+            .expect("a target verse exists");
+        let words = bible.unfinished_words(b, c, v, i64::MAX, 0, false)?;
+        assert!(!words.is_empty(), "target verse should have unfinished words");
+        let (last, rest) = words.split_last().expect("at least one word");
+
+        // Graduate every other word in the verse outright.
+        for surface in rest {
+            let surface_id: i64 = bible.conn().query_row(
+                "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
+                params![surface],
+                |r| r.get(0),
+            )?;
+            bible.conn().execute(
+                "INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days, \
+                    due_epoch, reps, lapses, introduced_epoch, last_grade) \
+                 VALUES (?1, ?2, 2.5, 10, ?3, 3, 0, ?4, 3)",
+                params![surface, surface_id, now0 + 10 * SECONDS_PER_DAY, now0],
+            )?;
+        }
+        bible.set_meta_target(Some((b, c, v)))?;
+
+        // Reach the one remaining word and fail it.
+        let mut now = now0;
+        let mut item = bible.next_study_item(now)?;
+        let mut hops = 0;
+        let failed_surface = loop {
+            hops += 1;
+            assert!(hops < 20, "should reach the remaining word quickly");
+            match item {
+                StudyItem::NewWord(w) if w.surface == *last => break w.surface,
+                StudyItem::ExplainGrammar(_) | StudyItem::ExplainMark(_) => {
+                    item = bible.next_study_item(now)?;
+                }
+                other => panic!("unexpected item before the target word: {other:?}"),
+            }
+        };
+        now += 5;
+        let next = bible.submit_review(Track::Word, &failed_surface, Grade::Again, now)?;
+        match next {
+            StudyItem::ReviewWord(w) | StudyItem::NewWord(w) => assert_ne!(
+                w.surface, failed_surface,
+                "a just-lapsed word shouldn't be re-served before its due time"
+            ),
+            _ => {}
+        }
         Ok(())
     }
 
