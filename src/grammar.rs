@@ -27,6 +27,27 @@ pub fn concept(key: &str) -> Option<&'static GrammarConcept> {
     CONCEPTS.iter().find(|c| c.key == key)
 }
 
+/// The total number of teachable grammar concepts — the top of the
+/// [`concept_rank`] scale and the cap for the tutor's unlock frontier.
+pub fn concept_count() -> usize {
+    CONCEPTS.len()
+}
+
+/// A word's grammatical *complexity rank*: the highest [`CONCEPTS`] index among
+/// the concepts it exercises (`CONCEPTS` is ordered by teaching difficulty), or
+/// `-1` when it exercises none (a proper noun, function word, plain absolute
+/// noun, or bare Qal verb). The tutor gates introduction on this so grammar
+/// rules unlock one at a time: a word is only introducible once every concept it
+/// uses — i.e. its rank — is below the current unlock frontier.
+pub fn concept_rank(w: &HebrewWord) -> i64 {
+    concepts_for(w)
+        .iter()
+        .filter_map(|k| CONCEPTS.iter().position(|c| &c.key == k))
+        .map(|i| i as i64)
+        .max()
+        .unwrap_or(-1)
+}
+
 /// The grammar concepts a parsed word exercises, in teaching order (attached
 /// proclitic first, then stem, then conjugation/number, then suffix). Only
 /// concepts with teaching content are returned.

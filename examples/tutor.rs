@@ -42,6 +42,22 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 println!("{i:>3}  rev word  {}", w.surface);
                 bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
             }
+            StudyItem::NewFormDrill(w) => {
+                println!("{i:>3}  NEW FORM  {}  → {} [{}]", w.surface, w.gloss, w.morph);
+                bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+            }
+            StudyItem::ReviewFormDrill(w) => {
+                println!("{i:>3}  rev form  {}", w.surface);
+                bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+            }
+            StudyItem::ExplainMark(g) => {
+                println!("{i:>3}  MARK      {}", g.glyph);
+                bible.next_study_item(now)?
+            }
+            StudyItem::ExplainGrammar(c) => {
+                println!("{i:>3}  GRAMMAR   [{}] {}", c.concept, c.title);
+                bible.next_study_item(now)?
+            }
             StudyItem::ReadVerse(v) => {
                 println!(
                     "{i:>3}  ===READ===  {} {}:{}   examples={:?}",
