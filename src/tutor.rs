@@ -14,7 +14,10 @@
 //!    (sh/s) change *sound*, so each pair is taught as two distinct letters
 //!    rather than a base consonant plus a separately-drilled mark (see
 //!    [`letter_identity`]); a dagesh elsewhere is pure gemination and isn't
-//!    taught as its own glyph.
+//!    taught as its own glyph. The five final forms (ך ם ן ף ץ) are the same
+//!    *sound* as their medial base but a distinct *shape* the reader must
+//!    recognise, so each is drilled as its own glyph (see [`decompose_glyphs`]);
+//!    they don't count toward the alphabet gate (see [`Bible::all_letters_known`]).
 //! 2. **Word meaning** — once all a word's glyphs are known (so the learner can
 //!    already sound it out), drill what the word means.
 //!
@@ -411,7 +414,8 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// from an older build is rebuilt. 2 added `concept_rank`; 3 added `glyph_mask`.
 const SURFACE_META_VERSION: i64 = 3;
 
-/// Distinct base consonants (finals folded, begadkefat/shin dot-pairs counted
+/// Distinct base consonants (final forms are drilled separately but don't count
+/// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
 /// once by their base letter) that must be graduated before the alphabet counts
 /// as "known" — no grammar rule unlocks until then. See
 /// [`Bible::all_letters_known`].
@@ -595,18 +599,6 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
     Ok(())
 }
 
-/// Fold a final-form consonant to its medial base so ך and כ are one glyph.
-fn fold_final(c: char) -> char {
-    match c {
-        '\u{05DA}' => '\u{05DB}',
-        '\u{05DD}' => '\u{05DE}',
-        '\u{05DF}' => '\u{05E0}',
-        '\u{05E3}' => '\u{05E4}',
-        '\u{05E5}' => '\u{05E6}',
-        other => other,
-    }
-}
-
 fn is_consonant(c: char) -> bool {
     (0x05D0..=0x05EA).contains(&(c as u32))
 }
@@ -623,8 +615,9 @@ fn is_hataf(vowel: char) -> bool {
 
 /// A stable bit index (0..=42) for a teachable glyph, so a surface's glyph set
 /// packs into an [`i64`] bitmask (see [`surface_glyph_mask`]) for letter-aware
-/// curriculum ordering. Base consonants take their offset from aleph (finals are
-/// folded by callers); the begadkefat/shin dot-pairs and the vowel points take
+/// curriculum ordering. Each consonant takes its offset from aleph (final forms
+/// have their own codepoints, so ך/כ land on distinct bits and are drilled as
+/// separate glyphs); the begadkefat/shin dot-pairs and the vowel points take
 /// fixed slots above them. `None` for anything not taught as its own glyph.
 fn glyph_bit(glyph: &str) -> Option<u32> {
     let mut chars = glyph.chars();
@@ -743,7 +736,7 @@ fn contextual_host(surface: &str, vowel: char) -> Option<String> {
     while i < chars.len() {
         let c = chars[i];
         if is_consonant(c) {
-            let (key, vowels, consumed) = letter_cluster(fold_final(c), &chars[i + 1..]);
+            let (key, vowels, consumed) = letter_cluster(c, &chars[i + 1..]);
             if vowels.contains(&vowel) {
                 return Some(key);
             }
@@ -777,7 +770,7 @@ fn split_glyph_key(key: &str) -> Vec<String> {
     let mut out = Vec::new();
     let mut i = 0;
     while i < chars.len() {
-        let c = fold_final(chars[i]);
+        let c = chars[i];
         if is_consonant(c) {
             let (tok, vowels, consumed) = letter_cluster(c, &chars[i + 1..]);
             out.push(tok);
@@ -792,7 +785,7 @@ fn split_glyph_key(key: &str) -> Vec<String> {
 }
 
 /// Decompose a (normalized) surface into its distinct teachable glyphs in
-/// first-seen order: consonants (finals folded, with a dagesh/shin-sin-dot
+/// first-seen order: consonants (final forms are their own glyph, with a dagesh/shin-sin-dot
 /// folded into begadkefat/shin letters — see [`letter_cluster`]) and vowel
 /// points. A dagesh or shin/sin dot not folded into a letter this way is a
 /// gemination/orthographic mark that doesn't change the sound and is not
@@ -800,7 +793,7 @@ fn split_glyph_key(key: &str) -> Vec<String> {
 fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
     let mut seen = std::collections::HashSet::new();
     let mut out = Vec::new();
-    let chars: Vec<char> = surface.chars().map(fold_final).collect();
+    let chars: Vec<char> = surface.chars().collect();
     let mut i = 0;
     while i < chars.len() {
         let c = chars[i];
@@ -1084,10 +1077,14 @@ impl Bible {
     /// the simplest words while building up the letters (see
     /// [`Self::unlocked_concepts`]). Consonants are counted by distinct leading
     /// codepoint so begadkefat/shin dot-pairs (`בּ`/`ב`) count once per letter.
+    /// Final forms (ך ם ן ף ץ) are their own drilled glyphs but are excluded
+    /// here, so the gate still means "the 22 base letters", not 22 of the 27
+    /// shapes (a learner could otherwise unlock grammar without a base letter).
     fn all_letters_known(&self) -> rusqlite::Result<bool> {
         let consonants: i64 = self.conn().query_row(
             "SELECT COUNT(DISTINCT unicode(substr(glyph, 1, 1))) FROM progress.glyph_srs \
-             WHERE interval_days >= 1 AND unicode(substr(glyph, 1, 1)) BETWEEN 1488 AND 1514",
+             WHERE interval_days >= 1 AND unicode(substr(glyph, 1, 1)) BETWEEN 1488 AND 1514 \
+               AND unicode(substr(glyph, 1, 1)) NOT IN (1498, 1501, 1503, 1507, 1509)",
             [],
             |r| r.get(0),
         )?;
@@ -3269,20 +3266,21 @@ mod tests {
 
         // A lone glyph key still grades just that glyph.
         assert_eq!(split_glyph_key("ל"), vec!["ל".to_string()]);
-        // Final forms fold when a syllable is split.
-        assert_eq!(split_glyph_key("ךַ"), vec!["כ".to_string(), "ַ".to_string()]);
+        // Final forms are their own glyph — no longer folded to the medial base.
+        assert_eq!(split_glyph_key("ךַ"), vec!["ך".to_string(), "ַ".to_string()]);
         Ok(())
     }
 
     #[test]
-    fn glyph_decomposition_folds_finals_and_dedups() {
+    fn glyph_decomposition_keeps_finals_distinct_and_dedups() {
+        // מֶלֶךְ ends in a final kaf, taught as its own glyph (not folded to כ).
         let g = decompose_glyphs("מֶלֶךְ");
         let cons: Vec<&str> = g
             .iter()
             .filter(|c| c.is_consonant)
             .map(|c| c.glyph.as_str())
             .collect();
-        assert_eq!(cons, vec!["מ", "ל", "כ"]);
+        assert_eq!(cons, vec!["מ", "ל", "ך"]);
         assert!(g.iter().any(|c| !c.is_consonant));
     }
 
