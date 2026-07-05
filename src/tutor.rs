@@ -363,6 +363,13 @@ pub struct TutorSettings {
     /// Vocabulary↔grammar balance, `0..=100`. Higher is more vocabulary-forward:
     /// it takes more graduated words to unlock each successive grammar rule.
     pub vocab_ratio: u8,
+    /// Letters↔words balance, `0..=100` — the share of *new-material*
+    /// introductions spent teaching new letters rather than the meaning of a
+    /// word already spelt with letters the learner knows. Lower is more
+    /// word-forward (read sooner with the letters you have); at `0` a new letter
+    /// is introduced only when no already-readable word is left to learn. See
+    /// [`Bible::next_introduction`].
+    pub letters_ratio: u8,
 }
 
 impl Default for TutorSettings {
@@ -372,6 +379,7 @@ impl Default for TutorSettings {
             words_per_batch: 8,
             grammar_gating: true,
             vocab_ratio: 75,
+            letters_ratio: 30,
         }
     }
 }
@@ -948,6 +956,8 @@ impl Bible {
                 .map_or(d.grammar_gating, |n| n != 0),
             vocab_ratio: get("setting.vocab_ratio")?
                 .map_or(d.vocab_ratio, |n| n.clamp(0, 100) as u8),
+            letters_ratio: get("setting.letters_ratio")?
+                .map_or(d.letters_ratio, |n| n.clamp(0, 100) as u8),
         })
     }
 
@@ -965,6 +975,34 @@ impl Bible {
         put("setting.words_per_batch", s.words_per_batch as i64)?;
         put("setting.grammar_gating", s.grammar_gating as i64)?;
         put("setting.vocab_ratio", s.vocab_ratio as i64)?;
+        put("setting.letters_ratio", s.letters_ratio as i64)?;
+        Ok(())
+    }
+
+    /// Running counts of new-letter and new-word introductions, kept in `meta`
+    /// so [`Self::next_introduction`] can hold the letter/word mix near
+    /// [`TutorSettings::letters_ratio`] over time. Reset with the rest of `meta`.
+    fn intro_counts(&self) -> rusqlite::Result<(i64, i64)> {
+        let get = |key: &str| -> rusqlite::Result<i64> {
+            Ok(self
+                .conn()
+                .query_row(
+                    "SELECT CAST(value AS INTEGER) FROM progress.meta WHERE key = ?1",
+                    params![key],
+                    |r| r.get(0),
+                )
+                .optional()?
+                .unwrap_or(0))
+        };
+        Ok((get("intro.letters")?, get("intro.words")?))
+    }
+
+    fn bump_intro_counter(&self, key: &str) -> rusqlite::Result<()> {
+        self.conn().execute(
+            "INSERT INTO progress.meta(key, value) VALUES (?1, 1) \
+             ON CONFLICT(key) DO UPDATE SET value = CAST(value AS INTEGER) + 1",
+            params![key],
+        )?;
         Ok(())
     }
 
@@ -1590,41 +1628,68 @@ impl Bible {
         // adding more. Computed once; both throttle first-exposure only.
         let glyph_budget = self.glyphs_in_learning()? < settings.letters_per_batch as i64;
         let word_budget = self.words_in_learning()? < settings.words_per_batch as i64;
-        for surface in self.unfinished_words(b, c, v)? {
-            // 1. Introduce unseen glyphs — but only while under the letters
-            // batch. When it's full, leave this word blocked (its glyphs aren't
-            // all known) and try the next; if none can proceed we consolidate.
-            for g in decompose_glyphs(&surface) {
-                if !self.glyph_known(&g.glyph)? {
-                    if !glyph_budget {
-                        break;
-                    }
-                    return Ok(Some(self.new_glyph_item(&surface, &g)?));
+        let surfaces = self.unfinished_words(b, c, v)?;
+
+        // The word candidate: a word already fully readable (all its glyphs are
+        // known *and* graduated, so it can be sounded out) whose meaning isn't
+        // learnt yet. Preferring this over introducing another new letter is
+        // what stops the curriculum racing ahead through the alphabet while
+        // earlier words wait — the learner reads words with the letters they
+        // already have.
+        let mut ready_word: Option<String> = None;
+        if word_budget {
+            for s in &surfaces {
+                if self.all_glyphs_graduated(s)? && self.word_srs(s)?.is_none() {
+                    ready_word = Some(s.clone());
+                    break;
                 }
-            }
-            // 2. Drill this word's glyphs to "known" before the word itself;
-            // try the next word instead of giving up.
-            if !self.all_glyphs_graduated(&surface)? {
-                continue;
-            }
-            // 3. Word meaning (reading is already covered by the glyph/syllable
-            // drill). Already introduced (in learning or graduated) — try the
-            // next word instead of giving up.
-            if self.word_srs(&surface)?.is_none() {
-                // While the words batch is full, don't open a new word (nor its
-                // grammar card, which only precedes it); consolidate first.
-                if !word_budget {
-                    continue;
-                }
-                // First introduce any unseen grammar concept the word exercises
-                // (one gradeless card per turn), then the word's meaning itself.
-                if let Some(card) = self.next_grammar_card(&surface, now)? {
-                    return Ok(Some(card));
-                }
-                return Ok(self.word_card(&surface)?.map(StudyItem::NewWord));
             }
         }
-        Ok(None)
+        // The letter candidate: the first unseen glyph of the highest-priority
+        // word still needing one (under the letters batch).
+        let mut new_letter: Option<(String, GlyphCard)> = None;
+        if glyph_budget {
+            'outer: for s in &surfaces {
+                for g in decompose_glyphs(s) {
+                    if !self.glyph_known(&g.glyph)? {
+                        new_letter = Some((s.clone(), g));
+                        break 'outer;
+                    }
+                }
+            }
+        }
+
+        // Choose between them by the letters↔words ratio. When only one is
+        // available, take it; when neither is, there's nothing to introduce.
+        let do_letter = match (ready_word.is_some(), new_letter.is_some()) {
+            (true, true) => self.prefer_new_letter(&settings)?,
+            (false, true) => true,
+            (true, false) => false,
+            (false, false) => return Ok(None),
+        };
+
+        if do_letter {
+            let (surface, g) = new_letter.expect("letter candidate present");
+            self.bump_intro_counter("intro.letters")?;
+            return Ok(Some(self.new_glyph_item(&surface, &g)?));
+        }
+        let surface = ready_word.expect("word candidate present");
+        // Introduce any unseen grammar concept the word exercises first (one
+        // gradeless card, not counted as a word introduction), then its meaning.
+        if let Some(card) = self.next_grammar_card(&surface, now)? {
+            return Ok(Some(card));
+        }
+        self.bump_intro_counter("intro.words")?;
+        Ok(self.word_card(&surface)?.map(StudyItem::NewWord))
+    }
+
+    /// Whether the next introduction should be a new letter rather than a
+    /// ready word's meaning, keeping the running letter share near
+    /// [`TutorSettings::letters_ratio`]: introduce a letter while letters are
+    /// under their target share of introductions so far.
+    fn prefer_new_letter(&self, s: &TutorSettings) -> rusqlite::Result<bool> {
+        let (letters, words) = self.intro_counts()?;
+        Ok(letters * 100 < s.letters_ratio as i64 * (letters + words + 1))
     }
 
     /// Whether a grammar concept has already been introduced.
@@ -2706,6 +2771,7 @@ mod tests {
             words_per_batch: 4,
             grammar_gating: false,
             vocab_ratio: 10,
+            letters_ratio: 55,
         };
         bible.set_tutor_settings(&s)?;
         assert_eq!(bible.tutor_settings()?, s);
@@ -2849,6 +2915,73 @@ mod tests {
             };
         }
         assert!(checked >= 5, "should introduce several words to check");
+        Ok(())
+    }
+
+    #[test]
+    fn letters_ratio_bounds_are_word_or_letter_forward() -> rusqlite::Result<()> {
+        let Some(bible) = open_with_progress() else {
+            return Ok(());
+        };
+        // With no introductions logged yet: letters-forward wants a letter,
+        // word-forward wants a word.
+        assert!(bible.prefer_new_letter(&TutorSettings {
+            letters_ratio: 100,
+            ..Default::default()
+        })?);
+        assert!(!bible.prefer_new_letter(&TutorSettings {
+            letters_ratio: 0,
+            ..Default::default()
+        })?);
+        Ok(())
+    }
+
+    #[test]
+    fn letters_ratio_prefers_words_over_racing_through_letters() -> rusqlite::Result<()> {
+        let Some(bible) = open_with_progress() else {
+            return Ok(());
+        };
+        // How many brand-new letters are introduced before the first word's
+        // meaning is reached, under a given letters↔words ratio.
+        let glyphs_before_first_word = |ratio: u8| -> rusqlite::Result<i64> {
+            bible.reset_tutor()?;
+            bible.set_tutor_settings(&TutorSettings {
+                letters_ratio: ratio,
+                ..Default::default()
+            })?;
+            let mut now = 1_700_000_000;
+            let mut item = bible.next_study_item(now)?;
+            let mut new_glyphs = 0;
+            for _ in 0..3000 {
+                now += 5;
+                item = match item {
+                    StudyItem::NewGlyph(g) => {
+                        new_glyphs += 1;
+                        bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
+                    }
+                    StudyItem::ReviewGlyph(g) => {
+                        bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
+                    }
+                    StudyItem::NewWord(_) => break, // reached the first word meaning
+                    StudyItem::ReviewWord(w) => {
+                        bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                    }
+                    StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                        bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                    }
+                    _ => bible.next_study_item(now)?,
+                };
+            }
+            Ok(new_glyphs)
+        };
+        let word_forward = glyphs_before_first_word(0)?;
+        let letter_forward = glyphs_before_first_word(100)?;
+        assert!(word_forward >= 1, "some letters must precede the very first word");
+        assert!(
+            word_forward < letter_forward,
+            "word-forward should reach a word with fewer new letters \
+             ({word_forward}) than letter-forward ({letter_forward})"
+        );
         Ok(())
     }
 
