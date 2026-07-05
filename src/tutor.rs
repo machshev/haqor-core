@@ -261,6 +261,23 @@ pub struct VerseCard {
     pub words: Vec<String>,
 }
 
+/// A grammar concept shown with a short explanation, illustrated by the word
+/// about to be learnt. Like [`StudyItem::ExplainMark`] it carries no grade — the
+/// app acknowledges it and asks for the next item — and is shown at most once
+/// (tracked in `progress.concepts_seen`). Content comes from [`crate::grammar`].
+#[derive(Debug, Clone)]
+pub struct GrammarCard {
+    /// Stable concept key (recorded once seen).
+    pub concept: String,
+    pub title: String,
+    pub explanation: String,
+    /// A compact formula ("וַ + imperfect → \"and he …\""), empty when none.
+    pub formula: String,
+    pub examples: Vec<String>,
+    /// The word about to be introduced, which exercises this concept.
+    pub example: WordCard,
+}
+
 /// The next thing for the learner to do.
 #[derive(Debug, Clone)]
 pub enum StudyItem {
@@ -272,6 +289,9 @@ pub enum StudyItem {
     /// grade — the app just acknowledges it and asks for the next item, like
     /// [`StudyItem::ReadVerse`]. Never revisited once shown.
     ExplainMark(GlyphCard),
+    /// A grammar concept the next word exercises, shown once before that word's
+    /// meaning card. Gradeless, like [`StudyItem::ExplainMark`].
+    ExplainGrammar(GrammarCard),
     ReadVerse(VerseCard),
     Done,
 }
@@ -444,6 +464,10 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             surface_id INTEGER PRIMARY KEY,
             root       TEXT    NOT NULL,
             form_tier  INTEGER NOT NULL
+         );
+         CREATE TABLE IF NOT EXISTS progress.concepts_seen(
+            concept          TEXT PRIMARY KEY,
+            introduced_epoch INTEGER NOT NULL
          );",
     )?;
 
@@ -1270,7 +1294,7 @@ impl Bible {
     /// either graduated or already fully introduced and mid-learning — the
     /// remaining work is graduating cards already in learning (handled by
     /// pulling a learning review forward).
-    fn next_introduction(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Option<StudyItem>> {
+    fn next_introduction(&self, b: u8, c: u8, v: u8, now: i64) -> rusqlite::Result<Option<StudyItem>> {
         for surface in self.unfinished_words(b, c, v)? {
             // 1. Introduce unseen glyphs.
             for g in decompose_glyphs(&surface) {
@@ -1287,8 +1311,61 @@ impl Bible {
             // drill). Already introduced (in learning or graduated) — try the
             // next word instead of giving up.
             if self.word_srs(&surface)?.is_none() {
+                // First introduce any unseen grammar concept the word exercises
+                // (one gradeless card per turn), then the word's meaning itself.
+                if let Some(card) = self.next_grammar_card(&surface, now)? {
+                    return Ok(Some(card));
+                }
                 return Ok(self.word_card(&surface)?.map(StudyItem::NewWord));
             }
+        }
+        Ok(None)
+    }
+
+    /// Whether a grammar concept has already been introduced.
+    fn concept_seen(&self, key: &str) -> rusqlite::Result<bool> {
+        Ok(self
+            .conn()
+            .query_row(
+                "SELECT 1 FROM progress.concepts_seen WHERE concept = ?1",
+                params![key],
+                |_| Ok(()),
+            )
+            .optional()?
+            .is_some())
+    }
+
+    /// The first grammar concept `surface` exercises that has not yet been
+    /// shown, as an [`StudyItem::ExplainGrammar`] card illustrated by the word
+    /// itself — marking it seen so it is shown at most once. `None` when the
+    /// word introduces no new concept (or has no parse).
+    fn next_grammar_card(&self, surface: &str, now: i64) -> rusqlite::Result<Option<StudyItem>> {
+        let Some(w) = self.hebrew_word_info(surface) else {
+            return Ok(None);
+        };
+        for key in crate::grammar::concepts_for(&w) {
+            if self.concept_seen(key)? {
+                continue;
+            }
+            let Some(c) = crate::grammar::concept(key) else {
+                continue;
+            };
+            let Some(example) = self.word_card(surface)? else {
+                return Ok(None);
+            };
+            self.conn().execute(
+                "INSERT INTO progress.concepts_seen(concept, introduced_epoch) VALUES (?1, ?2) \
+                 ON CONFLICT(concept) DO NOTHING",
+                params![key, now],
+            )?;
+            return Ok(Some(StudyItem::ExplainGrammar(GrammarCard {
+                concept: key.to_string(),
+                title: c.title.to_string(),
+                explanation: c.explanation.to_string(),
+                formula: c.formula.unwrap_or_default().to_string(),
+                examples: c.examples.iter().map(|s| s.to_string()).collect(),
+                example,
+            })));
         }
         Ok(None)
     }
@@ -1457,7 +1534,7 @@ impl Bible {
         };
         let (b, c, v) = target;
 
-        if let Some(item) = self.next_introduction(b, c, v)? {
+        if let Some(item) = self.next_introduction(b, c, v, now)? {
             return Ok(item);
         }
         if !self.verse_done(b, c, v)? {
@@ -1937,6 +2014,7 @@ impl Bible {
              DELETE FROM progress.meta;
              DELETE FROM progress.reviews;
              DELETE FROM progress.marks_seen;
+             DELETE FROM progress.concepts_seen;
              DELETE FROM progress.surface_meta;",
         )
     }
@@ -2008,7 +2086,9 @@ mod tests {
                 StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
                     bible.submit_review(Track::Glyph, &g.glyph, Grade::Easy, now)?
                 }
-                StudyItem::ExplainMark(_) | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
+                StudyItem::ExplainMark(_)
+                | StudyItem::ExplainGrammar(_)
+                | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
         }
@@ -2018,6 +2098,58 @@ mod tests {
             "early vocabulary should be mostly root-bearing content words, \
              got only {rooted}/12 (a genealogy-of-proper-names regression)"
         );
+        Ok(())
+    }
+
+    /// Grammar concepts are introduced as gradeless cards before the words that
+    /// use them, each at most once, and never block reaching a read.
+    #[test]
+    fn grammar_concepts_explained_once_before_words() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+        bible.seed_known_alphabet(1_700_000_000)?; // focus on words/grammar
+
+        let mut now = 1_700_000_000;
+        let mut item = bible.next_study_item(now)?;
+        let mut concepts: Vec<String> = Vec::new();
+        let mut saw_read = false;
+        for _ in 0..6000 {
+            now += 5;
+            item = match item {
+                StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
+                    bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
+                }
+                StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
+                    bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::ExplainGrammar(card) => {
+                    // Content is populated and illustrated by the pending word.
+                    assert!(!card.title.is_empty() && !card.explanation.is_empty());
+                    assert!(!card.example.surface.is_empty());
+                    concepts.push(card.concept.clone());
+                    bible.next_study_item(now)?
+                }
+                StudyItem::ExplainMark(_) => bible.next_study_item(now)?,
+                StudyItem::ReadVerse(_) => {
+                    saw_read = true;
+                    break;
+                }
+                StudyItem::Done => break,
+            };
+        }
+        assert!(saw_read, "grammar cards must not block reaching a read");
+        assert!(!concepts.is_empty(), "some grammar concept should be taught");
+        let mut seen = std::collections::HashSet::new();
+        for c in &concepts {
+            assert!(seen.insert(c.clone()), "concept {c:?} explained more than once");
+        }
         Ok(())
     }
 
@@ -2354,6 +2486,7 @@ mod tests {
                     saw_mark = true;
                     bible.next_study_item(now)?
                 }
+                StudyItem::ExplainGrammar(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) => {
                     saw_read = true;
                     break;
@@ -2397,7 +2530,9 @@ mod tests {
                 StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
                     bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
                 }
-                StudyItem::ExplainMark(_) => bible.next_study_item(now)?,
+                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
+                    bible.next_study_item(now)?
+                }
                 StudyItem::ReadVerse(v) => break v,
                 StudyItem::Done => panic!("ran out of curriculum before a read"),
             };
@@ -2437,7 +2572,9 @@ mod tests {
                     saw_misread_review |= w.surface == misread;
                     bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
                 }
-                StudyItem::ExplainMark(_) => bible.next_study_item(now)?,
+                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
+                    bible.next_study_item(now)?
+                }
                 StudyItem::ReadVerse(_) | StudyItem::Done => break,
             };
         }
@@ -2503,7 +2640,9 @@ mod tests {
                     };
                     bible.submit_review(Track::Word, &w.surface, grade, now)?
                 }
-                StudyItem::ExplainMark(_) => bible.next_study_item(now)?,
+                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
+                    bible.next_study_item(now)?
+                }
                 StudyItem::ReadVerse(_) | StudyItem::Done => break,
             };
         }
@@ -2547,6 +2686,7 @@ mod tests {
                     explained.push(g.glyph.clone());
                     bible.next_study_item(now)?
                 }
+                StudyItem::ExplainGrammar(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) => {
                     reads += 1;
                     if reads >= 3 {
@@ -2639,8 +2779,9 @@ mod tests {
     }
 
     /// Self-reporting a known alphabet must graduate every glyph the ordinary
-    /// curriculum would otherwise teach one at a time, so the very first study
-    /// item after seeding jumps straight to a word (never a `NewGlyph`).
+    /// curriculum would otherwise teach one at a time, so the learner never sees
+    /// a glyph card — the first cards are a word's grammar concept(s) and then
+    /// the word itself, never a `NewGlyph`/`ReviewGlyph`.
     #[test]
     fn seed_known_alphabet_skips_glyph_teaching() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
@@ -2653,16 +2794,28 @@ mod tests {
             .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
         init_progress_schema(bible.conn())?;
 
-        let now = 1_700_000_000;
+        let mut now = 1_700_000_000;
         bible.seed_known_alphabet(now)?;
         assert!(bible.glyph_known("א")?, "aleph should be seeded");
         assert!(bible.all_glyphs_graduated("בְּרֵאשִׁית")?);
 
-        match bible.next_study_item(now)? {
-            StudyItem::NewWord(_) => {}
-            other => panic!("expected NewWord straight away, got {other:?}"),
+        // The first card is a grammar concept or the word meaning — a glyph is
+        // never taught. Advance through any leading grammar cards to the word.
+        let mut item = bible.next_study_item(now)?;
+        for _ in 0..30 {
+            match item {
+                StudyItem::NewWord(_) => return Ok(()),
+                StudyItem::ExplainGrammar(_) => {
+                    now += 5;
+                    item = bible.next_study_item(now)?;
+                }
+                StudyItem::NewGlyph(_) | StudyItem::ReviewGlyph(_) => {
+                    panic!("a seeded alphabet must never teach a glyph, got {item:?}")
+                }
+                other => panic!("expected a word or grammar card, got {other:?}"),
+            }
         }
-        Ok(())
+        panic!("did not reach a word after seeding the alphabet");
     }
 
     /// Calibration probes return progressively easier (more common
