@@ -413,8 +413,10 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 
 /// Bumped whenever [`form_tier`], the primary-root resolution, or the cached
 /// `surface_meta` columns change, so a stale [`Bible::ensure_surface_meta`] cache
-/// from an older build is rebuilt. 2 added `concept_rank`; 3 added `glyph_mask`.
-const SURFACE_META_VERSION: i64 = 3;
+/// from an older build is rebuilt. 2 added `concept_rank`; 3 added `glyph_mask`;
+/// 4 added the `weqatal` concept, changing `concept_rank` for vav-prefixed
+/// perfect verbs.
+const SURFACE_META_VERSION: i64 = 4;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
