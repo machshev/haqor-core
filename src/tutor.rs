@@ -2738,18 +2738,20 @@ impl Bible {
         Ok(())
     }
 
-    /// Wipe all tutor progress.
+    /// Wipe all tutor progress. Leaves `surface_meta` (and its `surface_meta_v`
+    /// stamp in `meta`) alone: that cache is derived purely from `hebrew.db`,
+    /// not learner progress, and clearing it would force the ~50k-surface
+    /// `ensure_surface_meta` rebuild to redo its one-time scan on every reset.
     pub fn reset_tutor(&self) -> rusqlite::Result<()> {
         self.conn().execute_batch(
             "DELETE FROM progress.glyph_srs;
              DELETE FROM progress.word_srs;
              DELETE FROM progress.verse_progress;
-             DELETE FROM progress.meta;
+             DELETE FROM progress.meta WHERE key != 'surface_meta_v';
              DELETE FROM progress.form_srs;
              DELETE FROM progress.reviews;
              DELETE FROM progress.marks_seen;
-             DELETE FROM progress.concepts_seen;
-             DELETE FROM progress.surface_meta;",
+             DELETE FROM progress.concepts_seen;",
         )
     }
 }
