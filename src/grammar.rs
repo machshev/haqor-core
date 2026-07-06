@@ -71,6 +71,8 @@ pub fn concepts_for(w: &HebrewWord) -> Vec<&'static str> {
         keys.extend(k);
     }
 
+    let vav_prefix = w.prefix.as_deref().and_then(|p| p.chars().next()) == Some('\u{05D5}');
+
     if let Some(binyan) = w.form.as_deref() {
         // Verb: derived stem (Qal is the plain baseline, no card), then
         // conjugation, then a vav-consecutive / object-suffix note.
@@ -87,6 +89,8 @@ pub fn concepts_for(w: &HebrewWord) -> Vec<&'static str> {
             keys.push("wayyiqtol");
         }
         keys.extend(match w.tense.as_deref() {
+            // The weqatal card already covers the vav-consecutive perfect.
+            Some("Perfect") if vav_prefix => Some("weqatal"),
             Some("Perfect") => Some("perfect"),
             // The wayyiqtol card already covers the narrative imperfect.
             Some("Imperfect") if !w.vav_con => Some("imperfect"),
@@ -192,6 +196,15 @@ const CONCEPTS: &[GrammarConcept] = &[
             almost every story in the Bible.",
         formula: Some("וַ + imperfect → \"and he did …\""),
         examples: &["וַיֹּאמֶר — and he said", "וַיְהִי — and it came to pass"],
+    },
+    GrammarConcept {
+        key: "weqatal",
+        title: "The vav-consecutive perfect (וְ + perfect)",
+        explanation: "A וְ joined to a perfect verb often carries a future, command or \
+            sequence of instructions forward, rather than simply meaning \"and he did\" — \
+            it reads more like \"and he will do\" or \"and you shall do\".",
+        formula: Some("וְ + perfect → \"and (then) he will / shall do …\""),
+        examples: &["וְשָׁמַרְתָּ — and you shall keep", "וְהָיָה — and it will come to pass"],
     },
     GrammarConcept {
         key: "imperative",
@@ -317,6 +330,15 @@ mod tests {
         }
     }
 
+    fn verb_with_prefix(binyan: &str, tense: &str, prefix: &str) -> HebrewWord {
+        HebrewWord {
+            form: Some(binyan.to_string()),
+            tense: Some(tense.to_string()),
+            prefix: Some(prefix.to_string()),
+            ..Default::default()
+        }
+    }
+
     #[test]
     fn every_returned_concept_has_content() {
         // Any key concepts_for can emit must resolve to a card.
@@ -353,6 +375,19 @@ mod tests {
         let keys = concepts_for(&verb("Qal", "Imperfect", true));
         assert!(keys.contains(&"wayyiqtol"));
         assert!(!keys.contains(&"imperfect"), "narrative imperfect uses the wayyiqtol card");
+    }
+
+    #[test]
+    fn weqatal_supersedes_plain_perfect_card() {
+        let keys = concepts_for(&verb_with_prefix("Qal", "Perfect", "\u{05D5}\u{05B0}"));
+        assert!(keys.contains(&"weqatal"));
+        assert!(!keys.contains(&"perfect"), "vav-consecutive perfect uses the weqatal card");
+        assert!(keys.contains(&"conj-ve"), "still notes the attached vav");
+    }
+
+    #[test]
+    fn plain_perfect_unaffected_without_vav_prefix() {
+        assert!(concepts_for(&verb("Qal", "Perfect", false)).contains(&"perfect"));
     }
 
     #[test]
