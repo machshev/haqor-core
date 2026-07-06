@@ -522,6 +522,7 @@ const CURATED_GLOSSES: &[(&str, &str, &str)] = &[
     ("עַד", "", "until; as far as; while"),
     ("לִפְנֵי", "פנה", "before; in the presence of"),
     ("כֵּן", "", "so; thus"),
+    ("סוּס", "סוס", "horse"),
 ];
 
 /// Curated `(root, gloss)` for a surface, ignoring cantillation and combining
