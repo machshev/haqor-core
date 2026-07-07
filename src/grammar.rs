@@ -9,6 +9,9 @@
 //! only) and travels with the card.
 
 use crate::bible::HebrewWord;
+use crate::vocab_gloss::vocab_key;
+use std::collections::HashMap;
+use std::sync::OnceLock;
 
 /// A teachable grammar concept: a short explanation plus an optional formula and
 /// worked examples. Keyed by a stable `key` recorded in `progress.concepts_seen`
@@ -40,12 +43,35 @@ pub fn concept_count() -> usize {
 /// rules unlock one at a time: a word is only introducible once every concept it
 /// uses — i.e. its rank — is below the current unlock frontier.
 pub fn concept_rank(w: &HebrewWord) -> i64 {
-    concepts_for(w)
-        .iter()
+    rank_of(&concepts_for(w))
+}
+
+/// [`concept_rank`] keyed by the surface form: the rank of
+/// [`concepts_for_surface`], so curated function words and misparsed construct
+/// forms gate like everything else.
+pub fn concept_rank_for_surface(surface: &str, w: Option<&HebrewWord>) -> i64 {
+    rank_of(&concepts_for_surface(surface, w))
+}
+
+fn rank_of(keys: &[&'static str]) -> i64 {
+    keys.iter()
         .filter_map(|k| CONCEPTS.iter().position(|c| &c.key == k))
         .map(|i| i as i64)
         .max()
         .unwrap_or(-1)
+}
+
+/// The grammar concepts `surface` exercises. The curated [`SURFACE_CONCEPTS`]
+/// table wins where present — it covers closed-class words the reverse-parser
+/// never sees (standalone and suffixed prepositions) and frequent construct
+/// forms it misreads (דְּבַר surfaces as a Qal imperative) — otherwise the
+/// parse-derived [`concepts_for`] applies. `None` for `w` (no parse at all)
+/// classifies from the table alone.
+pub fn concepts_for_surface(surface: &str, w: Option<&HebrewWord>) -> Vec<&'static str> {
+    if let Some(keys) = surface_concepts(surface) {
+        return keys.to_vec();
+    }
+    w.map(concepts_for).unwrap_or_default()
 }
 
 /// The grammar concepts a parsed word exercises, in teaching order (attached
@@ -123,6 +149,127 @@ pub fn concepts_for(w: &HebrewWord) -> Vec<&'static str> {
     keys
 }
 
+/// The curated concepts for `surface`, if listed, matched through
+/// [`vocab_key`] so dagesh and mark-order variants collapse to one entry.
+fn surface_concepts(surface: &str) -> Option<&'static [&'static str]> {
+    static INDEX: OnceLock<HashMap<String, &'static [&'static str]>> = OnceLock::new();
+    INDEX
+        .get_or_init(|| {
+            SURFACE_CONCEPTS
+                .iter()
+                .map(|&(s, keys)| (vocab_key(s), keys))
+                .collect()
+        })
+        .get(&vocab_key(surface))
+        .copied()
+}
+
+/// Concepts for high-frequency surfaces the parse can't classify: closed-class
+/// function words never reach the reverse-parser (standalone prepositions and
+/// every suffixed preposition), and some frequent construct forms parse to a
+/// spurious verb or absolute reading. Each entry lists all concepts the surface
+/// exercises, proclitic first. Pronouns, particles and adverbs stay unlisted —
+/// they exercise no concept and remain ungated.
+#[rustfmt::skip]
+const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
+    // Standalone prepositions.
+    ("עַל", &["preposition"]),
+    ("אֶל", &["preposition"]),
+    ("עַד", &["preposition"]),
+    ("עִם", &["preposition"]),
+    ("אַחַר", &["preposition"]),
+    ("אַחֲרֵי", &["preposition"]),
+    ("תַּחַת", &["preposition"]),
+    ("בֵּין", &["preposition"]),
+    ("סָבִיב", &["preposition"]),
+    ("לְמַעַן", &["preposition"]),
+    ("כְּמוֹ", &["preposition"]),
+    ("לִפְנֵי", &["preposition"]),
+    ("מִפְּנֵי", &["preposition"]),
+    ("מֵעַל", &["prep-min", "preposition"]),
+    ("מֵאֵת", &["prep-min", "preposition"]),
+    ("וְעַל", &["conj-ve", "preposition"]),
+    ("וְאֶל", &["conj-ve", "preposition"]),
+    ("וְעַד", &["conj-ve", "preposition"]),
+    ("וּבֵין", &["conj-ve", "preposition"]),
+    // Suffixed standalone prepositions ("on him", "to me", "with us", …).
+    ("אֵלָיו", &["preposition"]),
+    ("אֵלַי", &["preposition"]),
+    ("אֵלֶיךָ", &["preposition"]),
+    ("אֵלֶיהָ", &["preposition"]),
+    ("אֲלֵיהֶם", &["preposition"]),
+    ("אֲלֵהֶם", &["preposition"]),
+    ("אֲלֵיכֶם", &["preposition"]),
+    ("עָלָיו", &["preposition"]),
+    ("עָלֶיהָ", &["preposition"]),
+    ("עָלַי", &["preposition"]),
+    ("עָלֶיךָ", &["preposition"]),
+    ("עֲלֵיהֶם", &["preposition"]),
+    ("עֲלֵיכֶם", &["preposition"]),
+    ("עִמּוֹ", &["preposition"]),
+    ("עִמִּי", &["preposition"]),
+    ("עִמָּךְ", &["preposition"]),
+    ("עִמְּךָ", &["preposition"]),
+    ("עִמָּנוּ", &["preposition"]),
+    ("אִתּוֹ", &["preposition"]),
+    ("אִתִּי", &["preposition"]),
+    ("אִתָּם", &["preposition"]),
+    ("אִתָּנוּ", &["preposition"]),
+    ("תַּחְתָּיו", &["preposition"]),
+    // Inseparable לְ — suffixed forms and opaque fusions.
+    ("לוֹ", &["prep-le"]),
+    ("לִי", &["prep-le"]),
+    ("לְךָ", &["prep-le"]),
+    ("לָךְ", &["prep-le"]),
+    ("לָהּ", &["prep-le"]),
+    ("לָהֶם", &["prep-le"]),
+    ("לָכֶם", &["prep-le"]),
+    ("לָנוּ", &["prep-le"]),
+    ("לַיַהְוֶה", &["prep-le"]),
+    ("לֵאמֹר", &["prep-le", "infinitive"]),
+    ("לַעֲשׂוֹת", &["prep-le", "infinitive"]),
+    // Inseparable בְּ — suffixed forms.
+    ("בּוֹ", &["prep-be"]),
+    ("בָּהּ", &["prep-be"]),
+    ("בָּהֶם", &["prep-be"]),
+    ("בִּי", &["prep-be"]),
+    ("בְּךָ", &["prep-be"]),
+    ("בָּךְ", &["prep-be"]),
+    ("בָּם", &["prep-be"]),
+    ("בָּכֶם", &["prep-be"]),
+    ("בַּיַהְוֶה", &["prep-be"]),
+    // Inseparable כְּ and מִן.
+    ("כַּאֲשֶׁר", &["prep-ke"]),
+    ("מִן", &["prep-min"]),
+    ("מִמֶּנּוּ", &["prep-min"]),
+    ("מִמֶּנִּי", &["prep-min"]),
+    ("מִמְּךָ", &["prep-min"]),
+    ("מִשָּׁם", &["prep-min"]),
+    ("וּמִן", &["conj-ve", "prep-min"]),
+    // Construct forms the parser misses or misreads.
+    ("כָּל", &["construct"]),
+    ("בְּנֵי", &["construct"]),
+    ("בֵּית", &["construct"]),
+    ("פְּנֵי", &["construct"]),
+    ("דִּבְרֵי", &["construct"]),
+    ("דְּבַר", &["construct"]),
+    ("אַנְשֵׁי", &["construct"]),
+    ("יְמֵי", &["construct"]),
+    ("שְׁנֵי", &["construct"]),
+    ("אֱלֹהֵי", &["construct"]),
+    ("וְכָל", &["conj-ve", "construct"]),
+    ("וּבְנֵי", &["conj-ve", "construct"]),
+    ("בְּכָל", &["prep-be", "construct"]),
+    ("בְּיַד", &["prep-be", "construct"]),
+    ("לְכָל", &["prep-le", "construct"]),
+    ("לִבְנֵי", &["prep-le", "construct"]),
+    ("לְבֵית", &["prep-le", "construct"]),
+    ("מִכָּל", &["prep-min", "construct"]),
+    ("מִכֹּל", &["prep-min", "construct"]),
+    ("מִבֵּית", &["prep-min", "construct"]),
+    ("כְּכָל", &["prep-ke", "construct"]),
+];
+
 /// The teaching content, in a rough introduction order.
 #[rustfmt::skip]
 const CONCEPTS: &[GrammarConcept] = &[
@@ -141,6 +288,15 @@ const CONCEPTS: &[GrammarConcept] = &[
             common way Hebrew links words and clauses.",
         formula: Some("וְ + word → \"and …\""),
         examples: &["וְהָאָרֶץ — and the earth", "וְאֶת — and (object marker)"],
+    },
+    GrammarConcept {
+        key: "preposition",
+        title: "Prepositions",
+        explanation: "Small words placed before another word tie it into the sentence — \
+            עַל (on), אֶל (to), עִם (with), תַּחַת (under). They can also carry a pronoun \
+            ending: עָלָיו (on him), אֵלַי (to me).",
+        formula: Some("preposition + noun → \"on / to / with …\""),
+        examples: &["עַל הָאָרֶץ — on the earth", "אֶל מֹשֶׁה — to Moses"],
     },
     GrammarConcept {
         key: "prep-be",
@@ -374,20 +530,65 @@ mod tests {
     fn wayyiqtol_supersedes_plain_imperfect_card() {
         let keys = concepts_for(&verb("Qal", "Imperfect", true));
         assert!(keys.contains(&"wayyiqtol"));
-        assert!(!keys.contains(&"imperfect"), "narrative imperfect uses the wayyiqtol card");
+        assert!(
+            !keys.contains(&"imperfect"),
+            "narrative imperfect uses the wayyiqtol card"
+        );
     }
 
     #[test]
     fn weqatal_supersedes_plain_perfect_card() {
         let keys = concepts_for(&verb_with_prefix("Qal", "Perfect", "\u{05D5}\u{05B0}"));
         assert!(keys.contains(&"weqatal"));
-        assert!(!keys.contains(&"perfect"), "vav-consecutive perfect uses the weqatal card");
+        assert!(
+            !keys.contains(&"perfect"),
+            "vav-consecutive perfect uses the weqatal card"
+        );
         assert!(keys.contains(&"conj-ve"), "still notes the attached vav");
     }
 
     #[test]
     fn plain_perfect_unaffected_without_vav_prefix() {
         assert!(concepts_for(&verb("Qal", "Perfect", false)).contains(&"perfect"));
+    }
+
+    #[test]
+    fn every_surface_concept_has_content() {
+        for (surface, keys) in SURFACE_CONCEPTS {
+            for key in *keys {
+                assert!(concept(key).is_some(), "no content for {key} ({surface})");
+            }
+        }
+    }
+
+    #[test]
+    fn function_words_classify_without_a_parse() {
+        // Standalone and suffixed prepositions never reach the parser.
+        assert_eq!(concepts_for_surface("עַל", None), vec!["preposition"]);
+        assert_eq!(concepts_for_surface("לוֹ", None), vec!["prep-le"]);
+        // Dagesh variants collapse through vocab_key.
+        assert_eq!(concepts_for_surface("בוֹ", None), vec!["prep-be"]);
+        // Pronouns exercise no concept and stay ungated.
+        assert!(concepts_for_surface("הוּא", None).is_empty());
+        assert_eq!(concept_rank_for_surface("הוּא", None), -1);
+    }
+
+    #[test]
+    fn surface_table_overrides_a_wrong_parse() {
+        // דְּבַר ("word of") misparses as a Qal imperative; the curated entry
+        // pins the construct reading for gating and the concept card.
+        let w = verb("Qal", "Imperative", false);
+        assert_eq!(concepts_for_surface("דְּבַר", Some(&w)), vec!["construct"]);
+        assert!(
+            concept_rank_for_surface("דְּבַר", Some(&w)) > concept_rank_for_surface("עַל", None),
+            "construct gates later than the preposition card"
+        );
+    }
+
+    #[test]
+    fn unlisted_surface_falls_back_to_the_parse() {
+        let w = verb("Piel", "Perfect", false);
+        assert_eq!(concepts_for_surface("קִדֵּשׁ", Some(&w)), concepts_for(&w));
     }
 
     #[test]
