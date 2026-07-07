@@ -447,8 +447,10 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// 4 added the `weqatal` concept, changing `concept_rank` for vav-prefixed
 /// perfect verbs; 5 made the shureq (וּ) its own teachable glyph, changing
 /// `glyph_mask`; 6 folded the corpus's dotless shins (יִשָּׂשכָר, a few
-/// scribal anomalies) into שׁ, changing `glyph_mask`.
-const SURFACE_META_VERSION: i64 = 6;
+/// scribal anomalies) into שׁ, changing `glyph_mask`; 7 added the standalone
+/// `preposition` concept and the curated surface-concept table (function-word
+/// prepositions and misparsed construct forms now carry a `concept_rank`).
+const SURFACE_META_VERSION: i64 = 7;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
@@ -1074,8 +1076,7 @@ impl Bible {
                 .map_or(d.letters_per_batch, |n| n.clamp(1, 255) as u8),
             words_per_batch: get("setting.words_per_batch")?
                 .map_or(d.words_per_batch, |n| n.clamp(1, 255) as u8),
-            grammar_gating: get("setting.grammar_gating")?
-                .map_or(d.grammar_gating, |n| n != 0),
+            grammar_gating: get("setting.grammar_gating")?.map_or(d.grammar_gating, |n| n != 0),
             vocab_ratio: get("setting.vocab_ratio")?
                 .map_or(d.vocab_ratio, |n| n.clamp(0, 100) as u8),
             letters_ratio: get("setting.letters_ratio")?
@@ -1190,7 +1191,9 @@ impl Bible {
     /// letter-aware ordering.
     fn seen_glyph_mask(&self) -> rusqlite::Result<i64> {
         let mut mask = 0i64;
-        let mut stmt = self.conn().prepare("SELECT glyph FROM progress.glyph_srs")?;
+        let mut stmt = self
+            .conn()
+            .prepare("SELECT glyph FROM progress.glyph_srs")?;
         let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
         for g in rows {
             if let Some(b) = glyph_bit(&g?) {
@@ -1265,7 +1268,12 @@ impl Bible {
     /// host consonant first if none is learnt yet). The very first final-form
     /// consonant is preceded by the one-time final-forms concept card instead
     /// (see [`Self::final_form_gated`]).
-    fn new_glyph_item(&self, surface: &str, g: &GlyphCard, now: i64) -> rusqlite::Result<StudyItem> {
+    fn new_glyph_item(
+        &self,
+        surface: &str,
+        g: &GlyphCard,
+        now: i64,
+    ) -> rusqlite::Result<StudyItem> {
         let ch = g.glyph.chars().next().unwrap_or(' ');
         if !is_vowel_point(ch) {
             return self.final_form_gated(g.clone(), now);
@@ -1422,10 +1430,9 @@ impl Bible {
                AND NOT (c.glyph = ?1 AND v.glyph = ?2) \
              ORDER BY RANDOM() LIMIT ?3",
         )?;
-        let rows = stmt.query_map(
-            params![host, vowel.to_string(), WANT as i64],
-            |r| r.get::<_, String>(0),
-        )?;
+        let rows = stmt.query_map(params![host, vowel.to_string(), WANT as i64], |r| {
+            r.get::<_, String>(0)
+        })?;
         for row in rows {
             out.push(row?);
         }
@@ -1439,9 +1446,8 @@ impl Bible {
         // material is still preferred.
         // The shureq glyph 'וּ' leads with a consonant codepoint but is a vowel,
         // never a syllable host.
-        let audible = |g: &str| {
-            g.chars().next().is_some_and(is_consonant) && !is_silent_host(g) && g != "וּ"
-        };
+        let audible =
+            |g: &str| g.chars().next().is_some_and(is_consonant) && !is_silent_host(g) && g != "וּ";
         let proper_vowel = |g: &str| {
             let mut cs = g.chars();
             cs.next().is_some_and(is_vowel_point) && cs.next().is_none()
@@ -1449,7 +1455,9 @@ impl Bible {
         let mut cons: Vec<String> = Vec::new();
         let mut vows: Vec<String> = Vec::new();
         {
-            let mut stmt = self.conn().prepare("SELECT glyph FROM progress.glyph_srs")?;
+            let mut stmt = self
+                .conn()
+                .prepare("SELECT glyph FROM progress.glyph_srs")?;
             let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
             for row in rows {
                 let g = row?;
@@ -1733,11 +1741,11 @@ impl Bible {
         let expected = self.surface_count()?;
         // Rebuild when the version changed or the row count no longer matches the
         // corpus (a swapped-in db): a partial/stale cache would mis-order words.
-        let current: i64 = self.conn().query_row(
-            "SELECT COUNT(*) FROM progress.surface_meta",
-            [],
-            |r| r.get(0),
-        )?;
+        let current: i64 =
+            self.conn()
+                .query_row("SELECT COUNT(*) FROM progress.surface_meta", [], |r| {
+                    r.get(0)
+                })?;
         if stamp == Some(SURFACE_META_VERSION) && current == expected {
             return Ok(());
         }
@@ -1751,7 +1759,8 @@ impl Bible {
         };
 
         self.conn().execute_batch("BEGIN")?;
-        self.conn().execute("DELETE FROM progress.surface_meta", [])?;
+        self.conn()
+            .execute("DELETE FROM progress.surface_meta", [])?;
         {
             let mut ins = self.conn().prepare(
                 "INSERT INTO progress.surface_meta(surface_id, root, form_tier, concept_rank, \
@@ -1760,13 +1769,11 @@ impl Bible {
             for (surface_id, text) in surfaces {
                 // `surface.text` is already the normalised form the resolver uses.
                 let mask = surface_glyph_mask(&text);
-                let (root, tier, crank) = match self.hebrew_word_by_surface_id(surface_id, text) {
-                    Some(w) => (
-                        w.root.clone(),
-                        form_tier(&w) as i64,
-                        crate::grammar::concept_rank(&w),
-                    ),
-                    None => (String::new(), 0, -1),
+                let parsed = self.hebrew_word_by_surface_id(surface_id, text.clone());
+                let crank = crate::grammar::concept_rank_for_surface(&text, parsed.as_ref());
+                let (root, tier) = match &parsed {
+                    Some(w) => (w.root.clone(), form_tier(w) as i64),
+                    None => (String::new(), 0),
                 };
                 ins.execute(params![surface_id, root, tier, crank, mask])?;
             }
@@ -1832,8 +1839,7 @@ impl Bible {
         letter_learning: bool,
     ) -> rusqlite::Result<Option<(u8, u8, u8)>> {
         // "introducible unknown word" in a CASE guard.
-        const INTRO: &str =
-            "done.surface_id IS NULL AND COALESCE(sm.concept_rank, -1) < ?1";
+        const INTRO: &str = "done.surface_id IS NULL AND COALESCE(sm.concept_rank, -1) < ?1";
         let completable_gate = if letter_learning {
             String::new()
         } else {
@@ -2179,12 +2185,12 @@ impl Bible {
     /// The first grammar concept `surface` exercises that has not yet been
     /// shown, as an [`StudyItem::ExplainGrammar`] card illustrated by the word
     /// itself — marking it seen so it is shown at most once. `None` when the
-    /// word introduces no new concept (or has no parse).
+    /// word introduces no new concept. Curated function words (prepositions,
+    /// suffixed prepositions) and misparsed construct forms classify through
+    /// [`crate::grammar::concepts_for_surface`] even without a parse.
     fn next_grammar_card(&self, surface: &str, now: i64) -> rusqlite::Result<Option<StudyItem>> {
-        let Some(w) = self.hebrew_word_info(surface) else {
-            return Ok(None);
-        };
-        for key in crate::grammar::concepts_for(&w) {
+        let w = self.hebrew_word_info(surface);
+        for key in crate::grammar::concepts_for_surface(surface, w.as_ref()) {
             if self.concept_seen(key)? {
                 continue;
             }
@@ -2400,7 +2406,11 @@ impl Bible {
     /// after a lapse — the case that used to hand the learner straight back
     /// the card they just got wrong, seconds before it would naturally recur
     /// via `due_epoch`. Cheap, no-op internal recursive calls stay at `false`.
-    fn next_study_item_impl(&self, now: i64, interleave_on_stall: bool) -> rusqlite::Result<StudyItem> {
+    fn next_study_item_impl(
+        &self,
+        now: i64,
+        interleave_on_stall: bool,
+    ) -> rusqlite::Result<StudyItem> {
         debug!("next_study_item: now={now}");
         if let Some(review) = self.next_review(now, false)? {
             debug!("next_study_item: due review -> {review:?}");
@@ -2460,14 +2470,18 @@ impl Bible {
                         )?;
                         return self.next_study_item_impl(now, interleave_on_stall);
                     }
-                    debug!("next_study_item: nothing new left; falling back to pull-forward review");
+                    debug!(
+                        "next_study_item: nothing new left; falling back to pull-forward review"
+                    );
                     return Ok(self.next_review(now, true)?.unwrap_or(StudyItem::Done));
                 }
             },
         };
         let (b, c, v) = target;
 
-        if let Some(item) = self.next_introduction(b, c, v, now, unlocked, seen_mask, letter_learning)? {
+        if let Some(item) =
+            self.next_introduction(b, c, v, now, unlocked, seen_mask, letter_learning)?
+        {
             debug!("next_study_item: introducing {item:?}");
             return Ok(item);
         }
@@ -2489,9 +2503,15 @@ impl Bible {
                     seen_mask,
                     letter_learning,
                 )? {
-                    if let Some(item) =
-                        self.next_introduction(ab, ac, av, now, unlocked, seen_mask, letter_learning)?
-                    {
+                    if let Some(item) = self.next_introduction(
+                        ab,
+                        ac,
+                        av,
+                        now,
+                        unlocked,
+                        seen_mask,
+                        letter_learning,
+                    )? {
                         debug!(
                             "next_study_item: verse {b}/{c}/{v} has nothing new; \
                              interleaving from {ab}/{ac}/{av} -> {item:?}"
@@ -2502,14 +2522,18 @@ impl Bible {
             }
             // Words mid-learning: drill a learning card toward graduation.
             if let Some(review) = self.next_review(now, true)? {
-                debug!("next_study_item: verse {b}/{c}/{v} not done; pull-forward review -> {review:?}");
+                debug!(
+                    "next_study_item: verse {b}/{c}/{v} not done; pull-forward review -> {review:?}"
+                );
                 return Ok(review);
             }
             // Nothing left to introduce or drill for this verse, yet it isn't
             // fully learnt — its remaining words need a still-locked grammar rule
             // (only possible while learning the alphabet). Don't mark it readable;
             // drop the target and move to a verse we can make progress on.
-            debug!("next_study_item: verse {b}/{c}/{v} stuck behind locked grammar; dropping target");
+            debug!(
+                "next_study_item: verse {b}/{c}/{v} stuck behind locked grammar; dropping target"
+            );
             self.set_meta_target(None)?;
             return self.next_study_item_impl(now, interleave_on_stall);
         }
@@ -2781,8 +2805,9 @@ impl Bible {
             "SELECT COUNT(DISTINCT unicode(substr(glyph, 1, 1))) FROM progress.glyph_srs \
              WHERE {LETTER} AND interval_days >= 1"
         ))?;
-        let vowels_seen =
-            count(&format!("SELECT COUNT(*) FROM progress.glyph_srs WHERE {VOWEL}"))?;
+        let vowels_seen = count(&format!(
+            "SELECT COUNT(*) FROM progress.glyph_srs WHERE {VOWEL}"
+        ))?;
         let vowels_mature = count(&format!(
             "SELECT COUNT(*) FROM progress.glyph_srs WHERE {VOWEL} AND interval_days >= 1"
         ))?;
@@ -3218,10 +3243,16 @@ mod tests {
             };
         }
         assert!(saw_read, "grammar cards must not block reaching a read");
-        assert!(!concepts.is_empty(), "some grammar concept should be taught");
+        assert!(
+            !concepts.is_empty(),
+            "some grammar concept should be taught"
+        );
         let mut seen = std::collections::HashSet::new();
         for c in &concepts {
-            assert!(seen.insert(c.clone()), "concept {c:?} explained more than once");
+            assert!(
+                seen.insert(c.clone()),
+                "concept {c:?} explained more than once"
+            );
         }
         Ok(())
     }
@@ -3268,7 +3299,10 @@ mod tests {
                 StudyItem::NewFormDrill(w) => {
                     // The answer is the inflected form; a real grammar tier.
                     assert!(!w.gloss.is_empty(), "form drill has an inflected answer");
-                    assert!(bible.form_srs(&w.surface)?.is_none(), "row created on grade");
+                    assert!(
+                        bible.form_srs(&w.surface)?.is_none(),
+                        "row created on grade"
+                    );
                     drilled += 1;
                     let after = bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?;
                     // Grading created the form_srs row.
@@ -3285,7 +3319,10 @@ mod tests {
                 StudyItem::Done => break,
             };
         }
-        assert!(drilled >= 3, "form drills should appear once meanings are known");
+        assert!(
+            drilled >= 3,
+            "form drills should appear once meanings are known"
+        );
         Ok(())
     }
 
@@ -3322,8 +3359,16 @@ mod tests {
         // Verbs: Qal perfect 3ms (citation-like) < other Qal PGN < imperfect
         // < imperative; a derived stem outranks Qal; a suffix/prefix add a step.
         let qal_perf_2ms = form_tier(&verb("Qal", "Perfect", ("Second", "Masculine", "Singular")));
-        let qal_impf = form_tier(&verb("Qal", "Imperfect", ("Third", "Masculine", "Singular")));
-        let qal_impv = form_tier(&verb("Qal", "Imperative", ("Second", "Masculine", "Singular")));
+        let qal_impf = form_tier(&verb(
+            "Qal",
+            "Imperfect",
+            ("Third", "Masculine", "Singular"),
+        ));
+        let qal_impv = form_tier(&verb(
+            "Qal",
+            "Imperative",
+            ("Second", "Masculine", "Singular"),
+        ));
         let piel_perf = form_tier(&verb("Piel", "Perfect", ("Third", "Masculine", "Singular")));
         assert!(qal_perf_3ms < qal_perf_2ms, "3ms is the base perfect");
         assert!(qal_perf_2ms < qal_impf && qal_impf < qal_impv);
@@ -3331,7 +3376,10 @@ mod tests {
 
         let mut with_suffix = verb("Qal", "Perfect", ("Third", "Masculine", "Singular"));
         with_suffix.obj_suffix = Some("3ms".to_string());
-        assert!(form_tier(&with_suffix) > qal_perf_3ms, "object suffix adds a step");
+        assert!(
+            form_tier(&with_suffix) > qal_perf_3ms,
+            "object suffix adds a step"
+        );
     }
 
     #[test]
@@ -3454,7 +3502,11 @@ mod tests {
         for g in ["א", "ל", "מ", "ר", "ב", "ן"] {
             bible.submit_review(Track::Glyph, g, Grade::Easy, now)?;
         }
-        assert_eq!(bible.unlocked_concepts(&s)?, 0, "grammar stays locked mid-alphabet");
+        assert_eq!(
+            bible.unlocked_concepts(&s)?,
+            0,
+            "grammar stays locked mid-alphabet"
+        );
         Ok(())
     }
 
@@ -3618,7 +3670,10 @@ mod tests {
         };
         let word_forward = glyphs_before_first_word(0)?;
         let letter_forward = glyphs_before_first_word(100)?;
-        assert!(word_forward >= 1, "some letters must precede the very first word");
+        assert!(
+            word_forward >= 1,
+            "some letters must precede the very first word"
+        );
         assert!(
             word_forward < letter_forward,
             "word-forward should reach a word with fewer new letters \
@@ -3648,9 +3703,11 @@ mod tests {
             let mut item = bible.next_study_item(now)?;
             for _ in 0..2000 {
                 if bible.tutor_progress()?.words_known >= 5 {
-                    return bible
-                        .conn()
-                        .query_row("SELECT COUNT(*) FROM progress.glyph_srs", [], |r| r.get(0));
+                    return bible.conn().query_row(
+                        "SELECT COUNT(*) FROM progress.glyph_srs",
+                        [],
+                        |r| r.get(0),
+                    );
                 }
                 now += 5;
                 item = match item {
@@ -3674,7 +3731,9 @@ mod tests {
         };
         let word_forward = letters_at_five_words(0)?;
         let letter_forward = letters_at_five_words(100)?;
-        eprintln!("glyphs seen at 5 words: words-forward={word_forward} letters-forward={letter_forward}");
+        eprintln!(
+            "glyphs seen at 5 words: words-forward={word_forward} letters-forward={letter_forward}"
+        );
         assert!(
             word_forward < letter_forward,
             "words-forward should know 5 words with fewer glyphs seen \
@@ -3706,8 +3765,14 @@ mod tests {
         assert_eq!(card.distractors.len(), 3, "topped up from upcoming glyphs");
         for d in &card.distractors {
             assert_ne!(d, "ס");
-            assert!(d.chars().next().is_some_and(is_consonant), "same kind: {d:?}");
-            assert!(!bible.glyph_known(d)?, "upcoming = not yet introduced: {d:?}");
+            assert!(
+                d.chars().next().is_some_and(is_consonant),
+                "same kind: {d:?}"
+            );
+            assert!(
+                !bible.glyph_known(d)?,
+                "upcoming = not yet introduced: {d:?}"
+            );
         }
 
         // One consonant and one vowel known: the syllable pool can't be filled
@@ -3873,17 +3938,22 @@ mod tests {
             .filter(|c| c.is_consonant)
             .map(|c| c.glyph.as_str())
             .collect();
-        assert_eq!(cons, vec![format!("{BET}{DAGESH}"), RESH.to_string(), ALEF.to_string()]);
+        assert_eq!(
+            cons,
+            vec![format!("{BET}{DAGESH}"), RESH.to_string(), ALEF.to_string()]
+        );
 
         // ש with a sin-dot is taught as sin, distinct from ש with a shin-dot.
         let sin = decompose_glyphs(&format!("{SHIN}{SIN_DOT}{QAMATS}{MEM}"));
-        assert!(sin
-            .iter()
-            .any(|c| c.is_consonant && c.glyph == format!("{SHIN}{SIN_DOT}")));
+        assert!(
+            sin.iter()
+                .any(|c| c.is_consonant && c.glyph == format!("{SHIN}{SIN_DOT}"))
+        );
         let shin = decompose_glyphs(&format!("{SHIN}{SHIN_DOT}{QAMATS}{MEM}"));
-        assert!(shin
-            .iter()
-            .any(|c| c.is_consonant && c.glyph == format!("{SHIN}{SHIN_DOT}")));
+        assert!(
+            shin.iter()
+                .any(|c| c.is_consonant && c.glyph == format!("{SHIN}{SHIN_DOT}"))
+        );
 
         // A genuinely dotless shin (the silent second shin of יִשָּׂשכָר, or a
         // Leningrad scribal omission like אִיש in Deut 24:16) folds into the
@@ -3915,8 +3985,9 @@ mod tests {
         // article in אַשּׁוּר/הַשּׁוֹפָר) carries *both* a dagesh and a shin/sin
         // dot, in that order — the dagesh must not stop the scan from finding
         // the dot, or the doubled letter is mistaught as a dotless bare שׁ.
-        let geminated =
-            decompose_glyphs(&format!("{ALEF}{PATAH}{SHIN}{DAGESH}{SHIN_DOT}{QAMATS}{RESH}"));
+        let geminated = decompose_glyphs(&format!(
+            "{ALEF}{PATAH}{SHIN}{DAGESH}{SHIN_DOT}{QAMATS}{RESH}"
+        ));
         let cons: Vec<&str> = geminated
             .iter()
             .filter(|c| c.is_consonant)
@@ -3924,7 +3995,11 @@ mod tests {
             .collect();
         assert_eq!(
             cons,
-            vec![ALEF.to_string(), format!("{SHIN}{SHIN_DOT}"), RESH.to_string()]
+            vec![
+                ALEF.to_string(),
+                format!("{SHIN}{SHIN_DOT}"),
+                RESH.to_string()
+            ]
         );
 
         // Real Bible text puts a consonant's vowel *before* its
@@ -3943,11 +4018,18 @@ mod tests {
             .collect();
         assert_eq!(
             cons,
-            vec![ALEF.to_string(), format!("{SHIN}{SHIN_DOT}"), MEM.to_string(), RESH.to_string()],
+            vec![
+                ALEF.to_string(),
+                format!("{SHIN}{SHIN_DOT}"),
+                MEM.to_string(),
+                RESH.to_string()
+            ],
             "vowel-before-dagesh/dot ordering must still fold the shin/sin dot in"
         );
         assert!(
-            real_order.iter().any(|c| !c.is_consonant && c.glyph == QAMATS.to_string()),
+            real_order
+                .iter()
+                .any(|c| !c.is_consonant && c.glyph == QAMATS.to_string()),
             "the vowel sitting between the letter and its dot is still taught"
         );
 
@@ -3963,8 +4045,7 @@ mod tests {
         // (dagesh chazak, e.g. חַוָּה) and stays plain ו.
         const HET: char = '\u{05D7}';
         const HE: char = '\u{05D4}';
-        let gem_vav =
-            decompose_glyphs(&format!("{HET}{PATAH}{VAV}{QAMATS}{DAGESH}{HE}{QAMATS}"));
+        let gem_vav = decompose_glyphs(&format!("{HET}{PATAH}{VAV}{QAMATS}{DAGESH}{HE}{QAMATS}"));
         assert!(gem_vav.iter().any(|c| c.glyph == VAV.to_string()));
         assert!(!gem_vav.iter().any(|c| c.glyph == format!("{VAV}{DAGESH}")));
         // Grading the shureq credits it as one atomic glyph.
@@ -4117,7 +4198,8 @@ mod tests {
         );
 
         // The demoted word must actually be reachable again (not stranded).
-        let mut saw_misread_review = matches!(&after, StudyItem::ReviewWord(w) if w.surface == misread);
+        let mut saw_misread_review =
+            matches!(&after, StudyItem::ReviewWord(w) if w.surface == misread);
         let mut item = after;
         for _ in 0..500 {
             if saw_misread_review {
@@ -4252,7 +4334,10 @@ mod tests {
             .next_target_verse(i64::MAX, 0, false)?
             .expect("a target verse exists");
         let words = bible.unfinished_words(b, c, v, i64::MAX, 0, false)?;
-        assert!(!words.is_empty(), "target verse should have unfinished words");
+        assert!(
+            !words.is_empty(),
+            "target verse should have unfinished words"
+        );
         let (last, rest) = words.split_last().expect("at least one word");
 
         // Graduate every other word in the verse outright.
@@ -4349,7 +4434,10 @@ mod tests {
                 StudyItem::Done => break,
             };
         }
-        assert!(!explained.is_empty(), "some reading mark should be explained");
+        assert!(
+            !explained.is_empty(),
+            "some reading mark should be explained"
+        );
         let mut seen = std::collections::HashSet::new();
         for mark in &explained {
             assert!(
@@ -4360,6 +4448,45 @@ mod tests {
         // Never entered the drilled-glyph store, so it never comes up for review.
         for mark in READING_MARKS {
             assert!(!bible.glyph_known(&mark.to_string())?);
+        }
+        Ok(())
+    }
+
+    /// Function words never reach the reverse-parser, but curated preposition
+    /// surfaces still issue their grammar card (once) through the surface-
+    /// concept table: עַל explains the standalone-preposition concept, לוֹ the
+    /// inseparable לְ.
+    #[test]
+    fn function_word_prepositions_issue_grammar_cards() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let now = 1_700_000_000;
+        // עַל resolves only through the gloss bridge — no morphology for
+        // concepts_for to classify; the card must come from the surface table.
+        let w = bible.hebrew_word_info("עַל").expect("bridge gloss");
+        assert!(w.form.is_none() && w.tense.is_none() && w.state.is_none());
+        match bible.next_grammar_card("עַל", now)? {
+            Some(StudyItem::ExplainGrammar(card)) => {
+                assert_eq!(card.concept, "preposition");
+                assert_eq!(card.example.surface, "עַל");
+            }
+            other => panic!("expected the preposition card for עַל, got {other:?}"),
+        }
+        // Shown at most once.
+        assert!(bible.next_grammar_card("אֶל", now)?.is_none());
+
+        // A suffixed inseparable preposition explains its prefix card.
+        match bible.next_grammar_card("לוֹ", now)? {
+            Some(StudyItem::ExplainGrammar(card)) => assert_eq!(card.concept, "prep-le"),
+            other => panic!("expected the prep-le card for לוֹ, got {other:?}"),
         }
         Ok(())
     }
