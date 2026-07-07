@@ -431,8 +431,9 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// from an older build is rebuilt. 2 added `concept_rank`; 3 added `glyph_mask`;
 /// 4 added the `weqatal` concept, changing `concept_rank` for vav-prefixed
 /// perfect verbs; 5 made the shureq (וּ) its own teachable glyph, changing
-/// `glyph_mask`.
-const SURFACE_META_VERSION: i64 = 5;
+/// `glyph_mask`; 6 folded the corpus's dotless shins (יִשָּׂשכָר, a few
+/// scribal anomalies) into שׁ, changing `glyph_mask`.
+const SURFACE_META_VERSION: i64 = 6;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
@@ -616,8 +617,11 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
     // `letter_identity` used to stop scanning at the first mark after a
     // shin, so a geminated shin (dagesh *then* shin/sin dot, e.g.
     // אַשּׁוּר/הַשּׁוֹפָר) was mistaught as a bare, dotless שׁ instead of
-    // folding the dot in. Purge that stale key; a correctly-dotted "שׁ"/"שׂ"
-    // row is unaffected and gets re-introduced normally if missing.
+    // folding the dot in — and the corpus's genuinely dotless shins
+    // (יִשָּׂשכָר, a few scribal anomalies) used to be introduced as a bare-ש
+    // glyph card instead of folding into שׁ. Purge that stale key; a
+    // correctly-dotted "שׁ"/"שׂ" row is unaffected and gets re-introduced
+    // normally if missing.
     db.execute(
         "DELETE FROM progress.glyph_srs WHERE glyph = ?1",
         params![SHIN.to_string()],
@@ -746,7 +750,13 @@ fn letter_cluster(letter: char, rest: &[char]) -> (String, Vec<char>, usize) {
     let key = if DAGESH_LETTERS.contains(&letter) {
         dagesh.map_or_else(|| letter.to_string(), |m| format!("{letter}{m}"))
     } else if letter == SHIN {
-        dot.map_or_else(|| letter.to_string(), |m| format!("{letter}{m}"))
+        // A shin always carries its shin/sin dot — except the conventionally
+        // silent, dotless second shin of יִשָּׂשכָר (Issachar) and a few
+        // Leningrad Codex scribal omissions (אִיש Deut 24:16, שֵיבָה Isa 46:4,
+        // …). A bare ש is not a distinct letter to learn, so fold it into the
+        // standard שׁ rather than introduce a dotless glyph card.
+        let m = dot.unwrap_or('\u{05C1}');
+        format!("{letter}{m}")
     } else if letter == VAV && vowels.is_empty() {
         // A vowel-less vav with a dagesh is the shureq vowel (וּ → "u"), a
         // distinct reading taught as its own glyph — without this, a word like
@@ -3820,6 +3830,32 @@ mod tests {
         assert!(shin
             .iter()
             .any(|c| c.is_consonant && c.glyph == format!("{SHIN}{SHIN_DOT}")));
+
+        // A genuinely dotless shin (the silent second shin of יִשָּׂשכָר, or a
+        // Leningrad scribal omission like אִיש in Deut 24:16) folds into the
+        // standard שׁ — a bare ש is never introduced as its own glyph.
+        const YOD: char = '\u{05D9}';
+        const KAF: char = '\u{05DB}';
+        const HIRIQ: char = '\u{05B4}';
+        let issachar = decompose_glyphs(&format!(
+            "{YOD}{HIRIQ}{SHIN}{QAMATS}{DAGESH}{SIN_DOT}{SHIN}{KAF}{QAMATS}{RESH}"
+        ));
+        let cons: Vec<&str> = issachar
+            .iter()
+            .filter(|c| c.is_consonant)
+            .map(|c| c.glyph.as_str())
+            .collect();
+        assert_eq!(
+            cons,
+            vec![
+                YOD.to_string(),
+                format!("{SHIN}{SIN_DOT}"),
+                format!("{SHIN}{SHIN_DOT}"),
+                KAF.to_string(),
+                RESH.to_string()
+            ],
+            "dotless shin folds to שׁ, never a bare ש glyph"
+        );
 
         // A geminated shin (dagesh forte, e.g. the assimilated definite
         // article in אַשּׁוּר/הַשּׁוֹפָר) carries *both* a dagesh and a shin/sin
