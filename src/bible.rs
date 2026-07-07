@@ -923,8 +923,7 @@ fn inflect_verb(w: &HebrewWord, base: &str) -> String {
     };
     // Is there a leading conjunction (vav-consecutive, or a proclitic vav)?
     let and = w.vav_con
-        || w
-            .prefix
+        || w.prefix
             .as_deref()
             .and_then(proclitic_word)
             .is_some_and(|word| word == "and");
@@ -1011,7 +1010,13 @@ pub(crate) fn form_distractors(w: &HebrewWord) -> Vec<String> {
         // is always "to …"), so contrast the tense instead ("saying" vs "he
         // said" vs "to say"). Perfect/Imperfect need a subject to render;
         // default to third-masculine-singular.
-        for tense in ["Perfect", "Imperfect", "Imperative", "Participle", "Inf. Construct"] {
+        for tense in [
+            "Perfect",
+            "Imperfect",
+            "Imperative",
+            "Participle",
+            "Inf. Construct",
+        ] {
             let mut v = w.clone();
             v.tense = Some(tense.to_string());
             if matches!(tense, "Perfect" | "Imperfect") {
@@ -1061,8 +1066,8 @@ pub(crate) fn form_distractors(w: &HebrewWord) -> Vec<String> {
 fn inflect_noun(w: &HebrewWord, base: &str) -> String {
     // The noun label lives in `state`, e.g. "Absolute", "Construct", "Sg + 3ms".
     let state = w.state.as_deref().unwrap_or("");
-    let plural = matches!(w.number.as_deref(), Some("Plural") | Some("Dual"))
-        || state.starts_with("Pl");
+    let plural =
+        matches!(w.number.as_deref(), Some("Plural") | Some("Dual")) || state.starts_with("Pl");
     let head = if plural {
         pluralize(base)
     } else {
@@ -2209,15 +2214,15 @@ mod tests {
         require_data!();
         let bible = Bible::open("data").unwrap();
         for surface in [
-            "בָּרָא",       // Gen 1:1 "created"
-            "וַיֹּאמֶר",    // "and he said"
-            "וַיַּרְא",      // "and he saw"
-            "יִשְׁלַח",     // "he will send"
-            "שְׁמַע",       // "hear!"
-            "דְּבָרִים",    // "words"
-            "דְּבָרוֹ",     // "his word"
-            "הַמֶּלֶךְ",    // "the king"
-            "מְלָכִים",     // "kings"
+            "בָּרָא",   // Gen 1:1 "created"
+            "וַיֹּאמֶר", // "and he said"
+            "וַיַּרְא",  // "and he saw"
+            "יִשְׁלַח",  // "he will send"
+            "שְׁמַע",   // "hear!"
+            "דְּבָרִים", // "words"
+            "דְּבָרוֹ",  // "his word"
+            "הַמֶּלֶךְ",  // "the king"
+            "מְלָכִים", // "kings"
         ] {
             match bible.hebrew_word_info(surface) {
                 Some(w) => eprintln!(
@@ -2249,7 +2254,11 @@ mod tests {
         );
         // The first clause of a multi-part gloss is the sense used.
         assert_eq!(
-            inflected_gloss(&verb("Perfect", ("Third", "Feminine", "Singular"), "utter; say")),
+            inflected_gloss(&verb(
+                "Perfect",
+                ("Third", "Feminine", "Singular"),
+                "utter; say"
+            )),
             "she uttered"
         );
         assert_eq!(
@@ -2258,16 +2267,28 @@ mod tests {
         );
         // Wayyiqtol prepends "and"; regular -ed with silent e.
         assert_eq!(
-            inflected_gloss(&verb("Wayyiqtol", ("Third", "Masculine", "Singular"), "love")),
+            inflected_gloss(&verb(
+                "Wayyiqtol",
+                ("Third", "Masculine", "Singular"),
+                "love"
+            )),
             "and he loved"
         );
         // Imperfect → will + base; imperative → base!.
         assert_eq!(
-            inflected_gloss(&verb("Imperfect", ("Second", "Masculine", "Singular"), "send")),
+            inflected_gloss(&verb(
+                "Imperfect",
+                ("Second", "Masculine", "Singular"),
+                "send"
+            )),
             "you will send"
         );
         assert_eq!(
-            inflected_gloss(&verb("Imperative", ("Second", "Masculine", "Singular"), "hear")),
+            inflected_gloss(&verb(
+                "Imperative",
+                ("Second", "Masculine", "Singular"),
+                "hear"
+            )),
             "hear!"
         );
         // Infinitive → to + base; active participle → -ing.
@@ -2276,7 +2297,11 @@ mod tests {
             "to keep"
         );
         assert_eq!(
-            inflected_gloss(&verb("Participle (act.)", ("", "Masculine", "Singular"), "make")),
+            inflected_gloss(&verb(
+                "Participle (act.)",
+                ("", "Masculine", "Singular"),
+                "make"
+            )),
             "making"
         );
 
@@ -2292,13 +2317,22 @@ mod tests {
             state: state.map(str::to_string),
             ..Default::default()
         };
-        assert_eq!(inflected_gloss(&noun(Some("Plural"), Some("Absolute"), "king")), "kings");
-        assert_eq!(inflected_gloss(&noun(Some("Plural"), Some("Absolute"), "man")), "men");
+        assert_eq!(
+            inflected_gloss(&noun(Some("Plural"), Some("Absolute"), "king")),
+            "kings"
+        );
+        assert_eq!(
+            inflected_gloss(&noun(Some("Plural"), Some("Absolute"), "man")),
+            "men"
+        );
         assert_eq!(
             inflected_gloss(&noun(Some("Singular"), Some("Construct"), "word")),
             "word of"
         );
-        assert_eq!(inflected_gloss(&noun(None, Some("Sg + 3ms"), "word")), "his word");
+        assert_eq!(
+            inflected_gloss(&noun(None, Some("Sg + 3ms"), "word")),
+            "his word"
+        );
         let mut the_king = noun(Some("Singular"), Some("Absolute"), "king");
         the_king.prefix = Some("הַ".to_string());
         assert_eq!(inflected_gloss(&the_king), "the king");
@@ -2329,13 +2363,25 @@ mod tests {
 
         let participle = verb("Participle (act.)", ("", "Masculine", "Singular"), "say");
         let d = form_distractors(&participle);
-        assert!(!d.is_empty(), "participle should get form distractors, got none");
-        assert!(!d.contains(&"saying".to_string()), "must not include its own gloss");
+        assert!(
+            !d.is_empty(),
+            "participle should get form distractors, got none"
+        );
+        assert!(
+            !d.contains(&"saying".to_string()),
+            "must not include its own gloss"
+        );
 
         let infinitive = verb("Inf. Construct", ("", "", ""), "say");
         let d = form_distractors(&infinitive);
-        assert!(!d.is_empty(), "infinitive should get form distractors, got none");
-        assert!(!d.contains(&"to say".to_string()), "must not include its own gloss");
+        assert!(
+            !d.is_empty(),
+            "infinitive should get form distractors, got none"
+        );
+        assert!(
+            !d.contains(&"to say".to_string()),
+            "must not include its own gloss"
+        );
     }
 
     #[test]
