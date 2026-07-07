@@ -30,6 +30,12 @@ pub fn concept(key: &str) -> Option<&'static GrammarConcept> {
     CONCEPTS.iter().find(|c| c.key == key)
 }
 
+/// Every teachable concept, in teaching order — the ordering used by the
+/// tutor's reference view of already-unlocked concepts.
+pub fn concepts() -> &'static [GrammarConcept] {
+    CONCEPTS
+}
+
 /// The total number of teachable grammar concepts — the top of the
 /// [`concept_rank`] scale and the cap for the tutor's unlock frontier.
 pub fn concept_count() -> usize {
