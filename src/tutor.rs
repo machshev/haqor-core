@@ -987,6 +987,18 @@ impl Bible {
         Ok(true)
     }
 
+    /// Every glyph of `surface` at least introduced (though possibly still in
+    /// learning) — the word is within reach: drilling what's already open,
+    /// with no further new letters, will make it readable.
+    fn all_glyphs_seen(&self, surface: &str) -> rusqlite::Result<bool> {
+        for g in decompose_glyphs(surface) {
+            if !self.glyph_known(&g.glyph)? {
+                return Ok(false);
+            }
+        }
+        Ok(true)
+    }
+
     // --- pacing settings & unlock frontier ----------------------------------
 
     /// The persisted curriculum-pacing settings, each field falling back to its
@@ -1798,10 +1810,13 @@ impl Bible {
     /// happens to already be mid-learning — otherwise the active card pool
     /// never grows past whichever word is currently graduating (e.g. a
     /// frequent word like the divine name, which always sorts first) and the
-    /// learner just keeps re-drilling it. Returns None only when every word is
-    /// either graduated or already fully introduced and mid-learning — the
-    /// remaining work is graduating cards already in learning (handled by
-    /// pulling a learning review forward).
+    /// learner just keeps re-drilling it. Returns None when every word is
+    /// either graduated or already fully introduced and mid-learning, or when
+    /// the only candidate is a new letter held back by the focus gate (letters
+    /// over their [`TutorSettings::letters_ratio`] share while a word is
+    /// within reach of the glyphs already open) — either way the remaining
+    /// work is graduating cards already in learning (handled by pulling a
+    /// learning review forward).
     fn next_introduction(
         &self,
         b: u8,
@@ -1826,18 +1841,36 @@ impl Bible {
         // learnt yet. Preferring this over introducing another new letter is
         // what stops the curriculum racing ahead through the alphabet while
         // earlier words wait — the learner reads words with the letters they
-        // already have.
+        // already have. `word_within_reach` additionally notes a word whose
+        // glyphs are all *seen* but not yet graduated (or ready but over the
+        // words batch): consolidating the in-learning cards would surface it,
+        // so a words-forward focus holds new letters back for it (below).
         let mut ready_word: Option<String> = None;
-        if word_budget {
-            for s in &surfaces {
-                if self.all_glyphs_graduated(s)? && self.word_srs(s)?.is_none() {
+        let mut word_within_reach = false;
+        for s in &surfaces {
+            if self.word_srs(s)?.is_some() {
+                continue;
+            }
+            if self.all_glyphs_graduated(s)? {
+                word_within_reach = true;
+                if word_budget && ready_word.is_none() {
                     ready_word = Some(s.clone());
-                    break;
                 }
+            } else if !word_within_reach && self.all_glyphs_seen(s)? {
+                word_within_reach = true;
+            }
+            if ready_word.is_some() {
+                break;
             }
         }
         // The letter candidate: the first unseen glyph of the highest-priority
-        // word still needing one (under the letters batch).
+        // word still needing one (under the letters batch). When letters are
+        // under their target share but the target verse has no unseen glyph
+        // left, pull the next letter from the whole corpus instead — without
+        // this the letters↔words focus can never actually run ahead of the
+        // verse at hand (verse selection deliberately minimises new letters,
+        // so in-verse candidates alone keep the mix pinned to the corpus
+        // order whatever the ratio).
         let mut new_letter: Option<(String, GlyphCard)> = None;
         if glyph_budget {
             'outer: for s in &surfaces {
@@ -1848,13 +1881,23 @@ impl Bible {
                     }
                 }
             }
+            if new_letter.is_none() && self.prefer_new_letter(&settings)? {
+                new_letter = self.alphabet_frontier_glyph(unlocked)?;
+            }
         }
 
-        // Choose between them by the letters↔words ratio. When only one is
-        // available, take it; when neither is, there's nothing to introduce.
+        // Choose between them by the letters↔words ratio. A ready word with no
+        // letter available is always taken; a letter with no ready word is
+        // taken only while letters are within their target share, or while no
+        // word is even within reach (so the letter is the only route to one) —
+        // otherwise returning None lets `next_study_item` pull an in-learning
+        // card forward, graduating the glyphs that surface the reachable word
+        // instead of racing ahead through the alphabet. Without that gate the
+        // ratio is a dead letter: it would only break the rare same-call tie,
+        // and the loser was introduced on the very next slot anyway.
         let do_letter = match (ready_word.is_some(), new_letter.is_some()) {
             (true, true) => self.prefer_new_letter(&settings)?,
-            (false, true) => true,
+            (false, true) => self.prefer_new_letter(&settings)? || !word_within_reach,
             (true, false) => false,
             (false, false) => {
                 debug!(
@@ -1874,7 +1917,12 @@ impl Bible {
             self.bump_intro_counter("intro.letters")?;
             return Ok(Some(self.new_glyph_item(&surface, &g)?));
         }
-        let surface = ready_word.expect("word candidate present");
+        let Some(surface) = ready_word else {
+            // A letter was available but held back by the focus gate: hand
+            // the turn to consolidation instead of introducing.
+            debug!("next_introduction: letter deferred by focus gate");
+            return Ok(None);
+        };
         // Introduce any unseen grammar concept the word exercises first (one
         // gradeless card, not counted as a word introduction), then its meaning.
         if let Some(card) = self.next_grammar_card(&surface, now)? {
@@ -1891,6 +1939,39 @@ impl Bible {
     fn prefer_new_letter(&self, s: &TutorSettings) -> rusqlite::Result<bool> {
         let (letters, words) = self.intro_counts()?;
         Ok(letters * 100 < s.letters_ratio as i64 * (letters + words + 1))
+    }
+
+    /// The most frequent teachable surface (not Aramaic, not behind a locked
+    /// grammar rule) that still contains a never-seen glyph, paired with that
+    /// glyph — the alphabet frontier used to introduce letters faster than the
+    /// target verse alone needs when the focus setting is letters-forward.
+    fn alphabet_frontier_glyph(
+        &self,
+        unlocked: i64,
+    ) -> rusqlite::Result<Option<(String, GlyphCard)>> {
+        let seen = self.seen_glyph_mask()?;
+        let surface: Option<String> = self
+            .conn()
+            .query_row(
+                "SELECT s.text FROM hebrewdb.surface s
+                 JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id
+                 WHERE COALESCE(sm.concept_rank, -1) < ?1
+                   AND popcount(sm.glyph_mask & ~?2) > 0
+                   AND COALESCE(s.language, '') <> 'aramaic'
+                 ORDER BY s.occurrences DESC LIMIT 1",
+                params![unlocked, seen],
+                |r| r.get(0),
+            )
+            .optional()?;
+        let Some(s) = surface else {
+            return Ok(None);
+        };
+        for g in decompose_glyphs(&s) {
+            if !self.glyph_known(&g.glyph)? {
+                return Ok(Some((s, g)));
+            }
+        }
+        Ok(None)
     }
 
     /// Whether a grammar concept has already been introduced.
@@ -3344,6 +3425,61 @@ mod tests {
             word_forward < letter_forward,
             "word-forward should reach a word with fewer new letters \
              ({word_forward}) than letter-forward ({letter_forward})"
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn letters_ratio_shifts_the_introduction_mix() -> rusqlite::Result<()> {
+        let Some(bible) = open_with_progress() else {
+            return Ok(());
+        };
+        // Long-run letter/word *totals* converge whatever the ratio (each item
+        // needs the same reviews and the corpus fixes which letters a word
+        // needs), so measure what the learner actually sees: how far the
+        // alphabet has raced ahead by the time a fixed number of words is
+        // known. Words-forward must hold back letters; letters-forward must
+        // press on with them.
+        let letters_at_five_words = |ratio: u8| -> rusqlite::Result<i64> {
+            bible.reset_tutor()?;
+            bible.set_tutor_settings(&TutorSettings {
+                letters_ratio: ratio,
+                ..Default::default()
+            })?;
+            let mut now = 1_700_000_000;
+            let mut item = bible.next_study_item(now)?;
+            for _ in 0..2000 {
+                if bible.tutor_progress()?.words_known >= 5 {
+                    return bible
+                        .conn()
+                        .query_row("SELECT COUNT(*) FROM progress.glyph_srs", [], |r| r.get(0));
+                }
+                now += 5;
+                item = match item {
+                    StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
+                        bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
+                    }
+                    StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
+                        bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                    }
+                    StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                        bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                    }
+                    StudyItem::ExplainMark(_)
+                    | StudyItem::ExplainGrammar(_)
+                    | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
+                    StudyItem::Done => break,
+                };
+            }
+            panic!("ratio {ratio}: never reached 5 known words (flow stalled?)");
+        };
+        let word_forward = letters_at_five_words(0)?;
+        let letter_forward = letters_at_five_words(100)?;
+        eprintln!("glyphs seen at 5 words: words-forward={word_forward} letters-forward={letter_forward}");
+        assert!(
+            word_forward < letter_forward,
+            "words-forward should know 5 words with fewer glyphs seen \
+             ({word_forward}) than letters-forward ({letter_forward})"
         );
         Ok(())
     }
