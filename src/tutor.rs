@@ -68,6 +68,15 @@ const READING_MARKS: [char; 2] = ['\u{05C3}', '\u{05BE}'];
 /// join the grammar unlock ordering.
 const FINAL_FORMS_CONCEPT: &str = "final_forms";
 
+/// The one-time language-intro deck, shown in this order before anything else
+/// is taught: how Hebrew is read (right to left), what the alphabet is (22
+/// letters, all consonants, no capitals), and what the vowel points are.
+/// Script concepts like [`FINAL_FORMS_CONCEPT`] — recorded once in
+/// `progress.concepts_seen`, kept out of the grammar unlock ordering; the
+/// teaching content is presentation and lives in the app, keyed by these keys
+/// (see [`StudyItem::ExplainIntro`]).
+const INTRO_CONCEPTS: [&str; 3] = ["intro_rtl", "intro_alphabet", "intro_vowels"];
+
 /// Consonants whose modern transliteration is a silent onset (aleph, ayin) —
 /// never used as a syllable host, so a taught or quizzed syllable always sounds
 /// a consonant instead of collapsing to a bare vowel.
@@ -295,6 +304,22 @@ pub struct GrammarCard {
     pub example: WordCard,
 }
 
+/// An explanation card the learner has already been shown, for the app's
+/// reference page (see [`Bible::seen_concepts`]). `kind` says how to render
+/// it: `"intro"` and `"final_forms"` cards keep their teaching content in the
+/// app (keyed by `key`), a `"mark"` card's `key` is the reading-mark glyph
+/// itself, and a `"grammar"` card carries its content from [`crate::grammar`]
+/// in the remaining fields (empty for the other kinds).
+#[derive(Debug, Clone)]
+pub struct SeenConcept {
+    pub kind: String,
+    pub key: String,
+    pub title: String,
+    pub explanation: String,
+    pub formula: String,
+    pub examples: Vec<String>,
+}
+
 /// The next thing for the learner to do.
 #[derive(Debug, Clone)]
 pub enum StudyItem {
@@ -321,6 +346,12 @@ pub enum StudyItem {
     /// [`StudyItem::ExplainMark`]; recorded in `progress.concepts_seen` under
     /// [`FINAL_FORMS_CONCEPT`].
     ExplainFinalForms(GlyphCard),
+    /// One card of the language-intro deck (reading direction, the alphabet,
+    /// the vowel points), carrying its [`INTRO_CONCEPTS`] key; the content is
+    /// presentation and lives in the app. Shown once each, before anything
+    /// else is taught. Gradeless, like [`StudyItem::ExplainMark`]; recorded in
+    /// `progress.concepts_seen`.
+    ExplainIntro(String),
     ReadVerse(VerseCard),
     Done,
 }
@@ -2412,6 +2443,21 @@ impl Bible {
         interleave_on_stall: bool,
     ) -> rusqlite::Result<StudyItem> {
         debug!("next_study_item: now={now}");
+        // The language-intro deck comes before everything, even due reviews:
+        // three one-time cards a brand-new learner needs before the first
+        // glyph (an existing learner sees each at most once too — the deck
+        // also backfills the reference page).
+        for key in INTRO_CONCEPTS {
+            if !self.concept_seen(key)? {
+                self.conn().execute(
+                    "INSERT INTO progress.concepts_seen(concept, introduced_epoch) VALUES (?1, ?2) \
+                     ON CONFLICT(concept) DO NOTHING",
+                    params![key, now],
+                )?;
+                debug!("next_study_item: intro card {key}");
+                return Ok(StudyItem::ExplainIntro(key.to_string()));
+            }
+        }
         if let Some(review) = self.next_review(now, false)? {
             debug!("next_study_item: due review -> {review:?}");
             return Ok(review);
@@ -2782,6 +2828,51 @@ impl Bible {
             verses_readable,
             total_verses,
         })
+    }
+
+    /// Every explanation card already shown, for the app's reference page:
+    /// the intro deck (in deck order), the final-forms card, reading marks (in
+    /// the order met) and grammar concepts (in teaching order). Only cards the
+    /// learner has actually seen are listed — the page grows as the tutor
+    /// unlocks them.
+    pub fn seen_concepts(&self) -> rusqlite::Result<Vec<SeenConcept>> {
+        let script = |kind: &str, key: &str| SeenConcept {
+            kind: kind.to_string(),
+            key: key.to_string(),
+            title: String::new(),
+            explanation: String::new(),
+            formula: String::new(),
+            examples: Vec::new(),
+        };
+        let mut out = Vec::new();
+        for key in INTRO_CONCEPTS {
+            if self.concept_seen(key)? {
+                out.push(script("intro", key));
+            }
+        }
+        if self.concept_seen(FINAL_FORMS_CONCEPT)? {
+            out.push(script("final_forms", FINAL_FORMS_CONCEPT));
+        }
+        let mut stmt = self
+            .conn()
+            .prepare("SELECT mark FROM progress.marks_seen ORDER BY introduced_epoch")?;
+        let marks: Vec<String> = stmt
+            .query_map([], |r| r.get(0))?
+            .collect::<rusqlite::Result<_>>()?;
+        out.extend(marks.iter().map(|m| script("mark", m)));
+        for c in crate::grammar::concepts() {
+            if self.concept_seen(c.key)? {
+                out.push(SeenConcept {
+                    kind: "grammar".to_string(),
+                    key: c.key.to_string(),
+                    title: c.title.to_string(),
+                    explanation: c.explanation.to_string(),
+                    formula: c.formula.unwrap_or_default().to_string(),
+                    examples: c.examples.iter().map(|s| s.to_string()).collect(),
+                });
+            }
+        }
+        Ok(out)
     }
 
     /// Richer SRS statistics for the stats view: learning/mature splits, cards
@@ -3175,6 +3266,7 @@ mod tests {
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
                 | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_)
                 | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
@@ -3232,9 +3324,9 @@ mod tests {
                     concepts.push(card.concept.clone());
                     bible.next_study_item(now)?
                 }
-                StudyItem::ExplainMark(_) | StudyItem::ExplainFinalForms(_) => {
-                    bible.next_study_item(now)?
-                }
+                StudyItem::ExplainMark(_)
+                | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) => {
                     saw_read = true;
                     break;
@@ -3254,6 +3346,62 @@ mod tests {
                 "concept {c:?} explained more than once"
             );
         }
+        // Every grammar card shown is now on the reference list, with content,
+        // in teaching (CONCEPTS) order.
+        let reference = bible.seen_concepts()?;
+        let grammar: Vec<&SeenConcept> = reference.iter().filter(|c| c.kind == "grammar").collect();
+        assert_eq!(grammar.len(), concepts.len());
+        for c in &grammar {
+            assert!(seen.contains(&c.key), "unshown concept {:?} listed", c.key);
+            assert!(!c.title.is_empty() && !c.explanation.is_empty());
+        }
+        let order: Vec<usize> = grammar
+            .iter()
+            .map(|c| {
+                crate::grammar::concepts()
+                    .iter()
+                    .position(|g| g.key == c.key)
+                    .unwrap()
+            })
+            .collect();
+        assert!(order.is_sorted(), "reference not in teaching order");
+        Ok(())
+    }
+
+    /// The three language-intro cards are the very first thing a fresh
+    /// progress DB serves — in deck order, each exactly once — and they then
+    /// appear on the [`Bible::seen_concepts`] reference list.
+    #[test]
+    fn intro_deck_served_first_and_once() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let now = 1_700_000_000;
+        assert!(bible.seen_concepts()?.is_empty(), "nothing unlocked yet");
+        for key in INTRO_CONCEPTS {
+            match bible.next_study_item(now)? {
+                StudyItem::ExplainIntro(k) => assert_eq!(k, key, "deck order"),
+                other => panic!("expected intro card {key:?}, got {other:?}"),
+            }
+        }
+        assert!(
+            !matches!(bible.next_study_item(now)?, StudyItem::ExplainIntro(_)),
+            "intro deck must not repeat"
+        );
+        let reference = bible.seen_concepts()?;
+        let intro: Vec<&str> = reference
+            .iter()
+            .filter(|c| c.kind == "intro")
+            .map(|c| c.key.as_str())
+            .collect();
+        assert_eq!(intro, INTRO_CONCEPTS);
         Ok(())
     }
 
@@ -3314,7 +3462,8 @@ mod tests {
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
-                | StudyItem::ExplainFinalForms(_) => bible.next_study_item(now)?,
+                | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
@@ -3545,6 +3694,7 @@ mod tests {
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
                 | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_)
                 | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
@@ -3604,6 +3754,7 @@ mod tests {
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
                 | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_)
                 | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
@@ -3723,6 +3874,7 @@ mod tests {
                     StudyItem::ExplainMark(_)
                     | StudyItem::ExplainGrammar(_)
                     | StudyItem::ExplainFinalForms(_)
+                    | StudyItem::ExplainIntro(_)
                     | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                     StudyItem::Done => break,
                 };
@@ -4098,6 +4250,13 @@ mod tests {
         init_progress_schema(bible.conn())?;
 
         let now = 1_700_000_000;
+        // The one-time language-intro deck comes first, then teaching begins.
+        for key in INTRO_CONCEPTS {
+            match bible.next_study_item(now)? {
+                StudyItem::ExplainIntro(k) => assert_eq!(k, key),
+                other => panic!("expected intro card {key:?}, got {other:?}"),
+            }
+        }
         let mut item = bible.next_study_item(now)?;
         assert!(matches!(
             item,
@@ -4126,9 +4285,9 @@ mod tests {
                     saw_mark = true;
                     bible.next_study_item(now)?
                 }
-                StudyItem::ExplainGrammar(_) | StudyItem::ExplainFinalForms(_) => {
-                    bible.next_study_item(now)?
-                }
+                StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) => {
                     saw_read = true;
                     break;
@@ -4177,7 +4336,8 @@ mod tests {
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
-                | StudyItem::ExplainFinalForms(_) => bible.next_study_item(now)?,
+                | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(v) => break v,
                 StudyItem::Done => panic!("ran out of curriculum before a read"),
             };
@@ -4223,7 +4383,8 @@ mod tests {
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
-                | StudyItem::ExplainFinalForms(_) => bible.next_study_item(now)?,
+                | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) | StudyItem::Done => break,
             };
         }
@@ -4294,7 +4455,8 @@ mod tests {
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
-                | StudyItem::ExplainFinalForms(_) => bible.next_study_item(now)?,
+                | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) | StudyItem::Done => break,
             };
         }
@@ -4367,7 +4529,8 @@ mod tests {
                 StudyItem::NewWord(w) if w.surface == *last => break w.surface,
                 StudyItem::ExplainGrammar(_)
                 | StudyItem::ExplainMark(_)
-                | StudyItem::ExplainFinalForms(_) => {
+                | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_) => {
                     item = bible.next_study_item(now)?;
                 }
                 other => panic!("unexpected item before the target word: {other:?}"),
@@ -4421,9 +4584,9 @@ mod tests {
                     explained.push(g.glyph.clone());
                     bible.next_study_item(now)?
                 }
-                StudyItem::ExplainGrammar(_) | StudyItem::ExplainFinalForms(_) => {
-                    bible.next_study_item(now)?
-                }
+                StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainFinalForms(_)
+                | StudyItem::ExplainIntro(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) => {
                     reads += 1;
                     if reads >= 3 {
@@ -4540,9 +4703,9 @@ mod tests {
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
-                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
-                    bible.next_study_item(now)?
-                }
+                StudyItem::ExplainMark(_)
+                | StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainIntro(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
@@ -4645,13 +4808,14 @@ mod tests {
         assert!(bible.glyph_known("א")?, "aleph should be seeded");
         assert!(bible.all_glyphs_graduated("בְּרֵאשִׁית")?);
 
-        // The first card is a grammar concept or the word meaning — a glyph is
-        // never taught. Advance through any leading grammar cards to the word.
+        // The first card past the intro deck is a grammar concept or the word
+        // meaning — a glyph is never taught. Advance through the intro deck
+        // and any leading grammar cards to the word.
         let mut item = bible.next_study_item(now)?;
         for _ in 0..30 {
             match item {
                 StudyItem::NewWord(_) => return Ok(()),
-                StudyItem::ExplainGrammar(_) => {
+                StudyItem::ExplainGrammar(_) | StudyItem::ExplainIntro(_) => {
                     now += 5;
                     item = bible.next_study_item(now)?;
                 }
