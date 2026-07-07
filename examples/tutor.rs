@@ -28,7 +28,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
             }
             StudyItem::ReviewGlyph(g) => {
-                println!("{i:>3}  rev glyph   {}  host={:?} d={:?}", g.glyph, g.host, g.distractors);
+                println!(
+                    "{i:>3}  rev glyph   {}  host={:?} d={:?}",
+                    g.glyph, g.host, g.distractors
+                );
                 bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
             }
             StudyItem::NewWord(w) => {
@@ -43,7 +46,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
             }
             StudyItem::NewFormDrill(w) => {
-                println!("{i:>3}  NEW FORM  {}  → {} [{}]", w.surface, w.gloss, w.morph);
+                println!(
+                    "{i:>3}  NEW FORM  {}  → {} [{}]",
+                    w.surface, w.gloss, w.morph
+                );
                 bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
             }
             StudyItem::ReviewFormDrill(w) => {

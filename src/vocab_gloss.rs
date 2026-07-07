@@ -244,7 +244,10 @@ mod tests {
         // "the word" is registered under הַדָּבָר; a dagesh-stripped spelling
         // still resolves.
         assert!(curated_gloss("הַדָּבָר").is_some());
-        assert_eq!(curated_gloss("אֶת").unwrap().gloss, "(marks the direct object)");
+        assert_eq!(
+            curated_gloss("אֶת").unwrap().gloss,
+            "(marks the direct object)"
+        );
         assert!(curated_gloss("כִּי").unwrap().note.is_none());
         // An ordinary content word is not curated.
         assert!(curated_gloss("בָּרָא").is_none());
