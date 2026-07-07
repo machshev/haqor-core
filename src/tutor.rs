@@ -13,8 +13,9 @@
 //!    following dagesh (vet→bet, fe→pe) and shin with a following shin/sin dot
 //!    (sh/s) change *sound*, so each pair is taught as two distinct letters
 //!    rather than a base consonant plus a separately-drilled mark (see
-//!    [`letter_identity`]); a dagesh elsewhere is pure gemination and isn't
-//!    taught as its own glyph. The five final forms (ך ם ן ף ץ) are the same
+//!    [`letter_identity`]); a vowel-less vav with a dagesh is the shureq vowel
+//!    (וּ → "u"), likewise taught as its own glyph; a dagesh elsewhere is pure
+//!    gemination and isn't taught. The five final forms (ך ם ן ף ץ) are the same
 //!    *sound* as their medial base but a distinct *shape* the reader must
 //!    recognise, so each is drilled as its own glyph (see [`decompose_glyphs`]);
 //!    they don't count toward the alphabet gate (see [`Bible::all_letters_known`]).
@@ -429,8 +430,9 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// `surface_meta` columns change, so a stale [`Bible::ensure_surface_meta`] cache
 /// from an older build is rebuilt. 2 added `concept_rank`; 3 added `glyph_mask`;
 /// 4 added the `weqatal` concept, changing `concept_rank` for vav-prefixed
-/// perfect verbs.
-const SURFACE_META_VERSION: i64 = 4;
+/// perfect verbs; 5 made the shureq (וּ) its own teachable glyph, changing
+/// `glyph_mask`.
+const SURFACE_META_VERSION: i64 = 5;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
@@ -637,12 +639,13 @@ fn is_hataf(vowel: char) -> bool {
     matches!(vowel as u32, 0x05B1..=0x05B3)
 }
 
-/// A stable bit index (0..=42) for a teachable glyph, so a surface's glyph set
+/// A stable bit index (0..=43) for a teachable glyph, so a surface's glyph set
 /// packs into an [`i64`] bitmask (see [`surface_glyph_mask`]) for letter-aware
 /// curriculum ordering. Each consonant takes its offset from aleph (final forms
 /// have their own codepoints, so ך/כ land on distinct bits and are drilled as
-/// separate glyphs); the begadkefat/shin dot-pairs and the vowel points take
-/// fixed slots above them. `None` for anything not taught as its own glyph.
+/// separate glyphs); the begadkefat/shin dot-pairs, the vowel points and the
+/// shureq take fixed slots above them. `None` for anything not taught as its
+/// own glyph.
 fn glyph_bit(glyph: &str) -> Option<u32> {
     let mut chars = glyph.chars();
     let first = chars.next()?;
@@ -652,6 +655,7 @@ fn glyph_bit(glyph: &str) -> Option<u32> {
         ('\u{05E4}', Some('\u{05BC}')) => Some(28), // פּ (pe)
         ('\u{05E9}', Some('\u{05C1}')) => Some(29), // שׁ (shin)
         ('\u{05E9}', Some('\u{05C2}')) => Some(30), // שׂ (sin)
+        ('\u{05D5}', Some('\u{05BC}')) => Some(43), // וּ (shureq)
         (c, None) if is_consonant(c) => Some(c as u32 - 0x05D0), // 0..=26
         (c, None) if is_vowel_point(c) => Some(31 + vowel_slot(c)), // 31..=42
         _ => None,
@@ -690,6 +694,12 @@ const DAGESH_LETTERS: [char; 2] = ['\u{05D1}', '\u{05E4}'];
 /// separately-drilled dot.
 const SHIN: char = '\u{05E9}';
 
+/// Vav, which when it carries a dagesh but no vowel of its own is not a
+/// consonant at all but the shureq vowel (וּ → "u") — taught as its own glyph,
+/// distinct from consonantal ו. A vav with both a vowel and a dagesh is an
+/// ordinary geminated consonant (e.g. חַוָּה) and stays plain ו.
+const VAV: char = '\u{05D5}';
+
 fn is_dagesh(c: char) -> bool {
     c as u32 == 0x05BC
 }
@@ -703,7 +713,8 @@ fn is_shin_sin_dot(c: char) -> bool {
 /// shin/sin dot, in any combination): for bet/pe a dagesh, or for shin a
 /// shin/sin dot, changes the sound, so it is folded into the letter itself
 /// and the pair is taught as one atomic glyph rather than a letter plus a
-/// separately-drilled mark.
+/// separately-drilled mark. A vowel-less vav folds its dagesh in the same
+/// way — that pair is the shureq vowel (וּ), not a consonant (see [`VAV`]).
 ///
 /// The source text's *Unicode canonical* combining order places a
 /// consonant's vowel *before* its dagesh/shin-sin-dot (vowel points have a
@@ -736,6 +747,12 @@ fn letter_cluster(letter: char, rest: &[char]) -> (String, Vec<char>, usize) {
         dagesh.map_or_else(|| letter.to_string(), |m| format!("{letter}{m}"))
     } else if letter == SHIN {
         dot.map_or_else(|| letter.to_string(), |m| format!("{letter}{m}"))
+    } else if letter == VAV && vowels.is_empty() {
+        // A vowel-less vav with a dagesh is the shureq vowel (וּ → "u"), a
+        // distinct reading taught as its own glyph — without this, a word like
+        // סוּס gates only on its consonants and "vav + dagesh = u" is never
+        // taught. With a vowel present the dagesh is gemination (חַוָּה).
+        dagesh.map_or_else(|| letter.to_string(), |m| format!("{letter}{m}"))
     } else {
         letter.to_string()
     };
@@ -810,10 +827,10 @@ fn split_glyph_key(key: &str) -> Vec<String> {
 
 /// Decompose a (normalized) surface into its distinct teachable glyphs in
 /// first-seen order: consonants (final forms are their own glyph, with a dagesh/shin-sin-dot
-/// folded into begadkefat/shin letters — see [`letter_cluster`]) and vowel
-/// points. A dagesh or shin/sin dot not folded into a letter this way is a
-/// gemination/orthographic mark that doesn't change the sound and is not
-/// taught as its own glyph.
+/// folded into begadkefat/shin letters and the shureq's dagesh into its vav —
+/// see [`letter_cluster`]) and vowel points. A dagesh or shin/sin dot not
+/// folded into a letter this way is a gemination/orthographic mark that
+/// doesn't change the sound and is not taught as its own glyph.
 fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
     let mut seen = std::collections::HashSet::new();
     let mut out = Vec::new();
@@ -1197,12 +1214,13 @@ impl Bible {
         if is_hataf(vowel) {
             return Ok(None);
         }
-        // Any known audible consonant (aleph/ayin excluded).
+        // Any known audible consonant (aleph/ayin excluded; the shureq glyph
+        // 'וּ' leads with a vav codepoint but is a vowel, never a host).
         self.conn()
             .query_row(
                 "SELECT glyph FROM progress.glyph_srs \
                  WHERE unicode(glyph) BETWEEN 1488 AND 1514 \
-                   AND glyph NOT IN ('א','ע') LIMIT 1",
+                   AND glyph NOT IN ('א','ע','וּ') LIMIT 1",
                 [],
                 |r| r.get(0),
             )
@@ -1272,7 +1290,7 @@ impl Bible {
         } else {
             "SELECT glyph FROM progress.glyph_srs \
              WHERE unicode(glyph) BETWEEN 1488 AND 1514 \
-               AND glyph NOT IN ('א','ע') ORDER BY RANDOM() LIMIT 1"
+               AND glyph NOT IN ('א','ע','וּ') ORDER BY RANDOM() LIMIT 1"
         };
         match self.conn().query_row(sql, [], |r| r.get(0)).optional()? {
             Some(h) => Ok(Some(h)),
@@ -1327,16 +1345,18 @@ impl Bible {
     fn syllable_distractors(&self, host: &str, vowel: char) -> rusqlite::Result<Vec<String>> {
         const WANT: usize = 6;
         let mut out = Vec::new();
-        // c is a known audible consonant (aleph/ayin excluded). v is a proper
-        // vowel point (sheva..holam=1456..1465, qubuts=1467, qamats-qatan=1479) —
-        // never a dagesh/sin-shin dot/mark that may also be in glyph_srs. A hataf
-        // (1457..1459) is only paired with an audible guttural (ה/ח).
+        // c is a known audible consonant (aleph/ayin excluded, as is the shureq
+        // glyph 'וּ' — a vowel that only *leads* with a vav codepoint). v is a
+        // proper vowel point (sheva..holam=1456..1465, qubuts=1467,
+        // qamats-qatan=1479) — never a dagesh/sin-shin dot/mark that may also be
+        // in glyph_srs. A hataf (1457..1459) is only paired with an audible
+        // guttural (ה/ח).
         let mut stmt = self.conn().prepare(
             "SELECT c.glyph || v.glyph \
              FROM progress.glyph_srs c \
              JOIN progress.glyph_srs v \
              WHERE unicode(c.glyph) BETWEEN 1488 AND 1514 \
-               AND c.glyph NOT IN ('א','ע') \
+               AND c.glyph NOT IN ('א','ע','וּ') \
                AND (unicode(v.glyph) BETWEEN 1456 AND 1465 \
                     OR unicode(v.glyph) IN (1467, 1479)) \
                AND NOT (unicode(v.glyph) BETWEEN 1457 AND 1459 \
@@ -1359,7 +1379,11 @@ impl Bible {
         // from them alone. Extend the pools with upcoming glyphs — the
         // known-glyph syllables already in `out` stay first, so familiar
         // material is still preferred.
-        let audible = |g: &str| g.chars().next().is_some_and(is_consonant) && !is_silent_host(g);
+        // The shureq glyph 'וּ' leads with a consonant codepoint but is a vowel,
+        // never a syllable host.
+        let audible = |g: &str| {
+            g.chars().next().is_some_and(is_consonant) && !is_silent_host(g) && g != "וּ"
+        };
         let proper_vowel = |g: &str| {
             let mut cs = g.chars();
             cs.next().is_some_and(is_vowel_point) && cs.next().is_none()
@@ -3835,6 +3859,28 @@ mod tests {
         assert!(
             real_order.iter().any(|c| !c.is_consonant && c.glyph == QAMATS.to_string()),
             "the vowel sitting between the letter and its dot is still taught"
+        );
+
+        // A vowel-less vav with a dagesh is the shureq vowel (וּ → "u") — its
+        // own glyph, so a word like סוּס gates on knowing the shureq, not just
+        // its consonants.
+        const VAV: char = '\u{05D5}';
+        const SAMEKH: char = '\u{05E1}';
+        let sus = decompose_glyphs(&format!("{SAMEKH}{VAV}{DAGESH}{SAMEKH}")); // סוּס
+        let glyphs: Vec<&str> = sus.iter().map(|c| c.glyph.as_str()).collect();
+        assert_eq!(glyphs, vec![SAMEKH.to_string(), format!("{VAV}{DAGESH}")]);
+        // …while a vav with a vowel of its own is a geminated consonant
+        // (dagesh chazak, e.g. חַוָּה) and stays plain ו.
+        const HET: char = '\u{05D7}';
+        const HE: char = '\u{05D4}';
+        let gem_vav =
+            decompose_glyphs(&format!("{HET}{PATAH}{VAV}{QAMATS}{DAGESH}{HE}{QAMATS}"));
+        assert!(gem_vav.iter().any(|c| c.glyph == VAV.to_string()));
+        assert!(!gem_vav.iter().any(|c| c.glyph == format!("{VAV}{DAGESH}")));
+        // Grading the shureq credits it as one atomic glyph.
+        assert_eq!(
+            split_glyph_key(&format!("{VAV}{DAGESH}")),
+            vec![format!("{VAV}{DAGESH}")]
         );
 
         // A dagesh on a non-begadkefat letter (pure gemination) isn't taught as
