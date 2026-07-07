@@ -309,13 +309,16 @@ pub enum StudyItem {
     Done,
 }
 
-/// Headline progress counters for a status header.
+/// Headline progress counters for a status header. All counts mean *graduated*
+/// (out of the in-session learning steps), so letters, vowels and words are on
+/// the same standard — cards still being drilled are visible in [`TutorStats`]'s
+/// seen/learning split, not here.
 #[derive(Debug, Clone, Copy, Default)]
 pub struct TutorProgress {
-    /// Distinct base consonants introduced (begadkefat/shin dot-pairs folded to
+    /// Distinct base consonants graduated (begadkefat/shin dot-pairs folded to
     /// one leading codepoint; final forms kept as their own glyphs).
     pub letters_known: i64,
-    /// Vowel points introduced (sheva through holam, qubuts, qamats qatan).
+    /// Vowel points graduated (sheva through holam, qubuts, qamats qatan).
     pub vowels_known: i64,
     pub words_known: i64,
     pub verses_readable: i64,
@@ -330,7 +333,8 @@ pub struct TutorProgress {
 #[derive(Debug, Clone, Copy, Default)]
 pub struct TutorStats {
     /// Base consonants introduced, still in learning, and graduated (folded by
-    /// leading codepoint, matching [`TutorProgress::letters_known`]).
+    /// leading codepoint; `letters_mature` matches
+    /// [`TutorProgress::letters_known`]).
     pub letters_seen: i64,
     pub letters_learning: i64,
     pub letters_mature: i64,
@@ -2531,15 +2535,19 @@ impl Bible {
         // Consonants folded by leading codepoint (so בּ/ב count once); vowel
         // points counted individually. Mirrors the classification in
         // `all_letters_known`; dagesh/dots/marks fall into neither bucket.
+        // Graduated rows only, matching `words_known` ([`DONE_SURFACES`]) —
+        // counting glyphs at first sight next to graduated-only words made the
+        // alphabet look like it was racing ahead of the vocabulary.
         let letters_known = self.conn().query_row(
             "SELECT COUNT(DISTINCT unicode(substr(glyph, 1, 1))) FROM progress.glyph_srs \
-             WHERE unicode(substr(glyph, 1, 1)) BETWEEN 1488 AND 1514",
+             WHERE interval_days >= 1 AND unicode(substr(glyph, 1, 1)) BETWEEN 1488 AND 1514",
             [],
             |r| r.get(0),
         )?;
         let vowels_known = self.conn().query_row(
             "SELECT COUNT(*) FROM progress.glyph_srs \
-             WHERE unicode(glyph) BETWEEN 1456 AND 1465 OR unicode(glyph) IN (1467, 1479)",
+             WHERE interval_days >= 1 \
+               AND (unicode(glyph) BETWEEN 1456 AND 1465 OR unicode(glyph) IN (1467, 1479))",
             [],
             |r| r.get(0),
         )?;
