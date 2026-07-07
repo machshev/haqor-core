@@ -1280,13 +1280,50 @@ impl Bible {
         }
     }
 
+    /// Not-yet-introduced glyphs that pass `keep`, in roughly the order the
+    /// curriculum will introduce them — decomposed from the most frequent
+    /// surfaces still containing an unseen glyph, the same ordering as
+    /// [`Self::alphabet_frontier_glyph`]. This is the *upcoming* pool that tops
+    /// distractors up while too few peers have been introduced to quiz against.
+    fn upcoming_glyphs(
+        &self,
+        want: usize,
+        keep: impl Fn(&str) -> bool,
+    ) -> rusqlite::Result<Vec<String>> {
+        self.ensure_surface_meta()?;
+        let seen = self.seen_glyph_mask()?;
+        let mut out: Vec<String> = Vec::new();
+        let mut stmt = self.conn().prepare(
+            "SELECT s.text FROM hebrewdb.surface s \
+             JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id \
+             WHERE popcount(sm.glyph_mask & ~?1) > 0 \
+               AND COALESCE(s.language, '') <> 'aramaic' \
+             ORDER BY s.occurrences DESC LIMIT 60",
+        )?;
+        let rows = stmt.query_map(params![seen], |r| r.get::<_, String>(0))?;
+        'rows: for row in rows {
+            for g in decompose_glyphs(&row?) {
+                if out.len() >= want {
+                    break 'rows;
+                }
+                if !keep(&g.glyph) || out.contains(&g.glyph) || self.glyph_known(&g.glyph)? {
+                    continue;
+                }
+                out.push(g.glyph);
+            }
+        }
+        Ok(out)
+    }
+
     /// Up to `WANT` random nonsense syllables built from already-known *audible*
     /// consonants and vowels, each a two-char `"<consonant><vowel>"` string, as
     /// wrong answers for a vowel's multiple-choice reading quiz. Silent hosts
     /// (aleph/ayin) are excluded so every option is a full syllable; a hataf
     /// vowel is only paired with an audible guttural (ה/ח); the exact
     /// `host`+`vowel` combo is excluded. The app transliterates and dedups, so a
-    /// few extra are returned for margin.
+    /// few extra are returned for margin. Early on, when too few glyphs are
+    /// known to fill the pool, syllables built from *upcoming* glyphs (see
+    /// [`Self::upcoming_glyphs`]) top it up.
     fn syllable_distractors(&self, host: &str, vowel: char) -> rusqlite::Result<Vec<String>> {
         const WANT: usize = 6;
         let mut out = Vec::new();
@@ -1314,12 +1351,69 @@ impl Bible {
         for row in rows {
             out.push(row?);
         }
+        if out.len() >= WANT {
+            return Ok(out);
+        }
+
+        // A fresh start: too few glyphs are known to build enough syllables
+        // from them alone. Extend the pools with upcoming glyphs — the
+        // known-glyph syllables already in `out` stay first, so familiar
+        // material is still preferred.
+        let audible = |g: &str| g.chars().next().is_some_and(is_consonant) && !is_silent_host(g);
+        let proper_vowel = |g: &str| {
+            let mut cs = g.chars();
+            cs.next().is_some_and(is_vowel_point) && cs.next().is_none()
+        };
+        let mut cons: Vec<String> = Vec::new();
+        let mut vows: Vec<String> = Vec::new();
+        {
+            let mut stmt = self.conn().prepare("SELECT glyph FROM progress.glyph_srs")?;
+            let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
+            for row in rows {
+                let g = row?;
+                if audible(&g) {
+                    cons.push(g);
+                } else if proper_vowel(&g) {
+                    vows.push(g);
+                }
+            }
+        }
+        for g in self.upcoming_glyphs(12, |g| audible(g) || proper_vowel(g))? {
+            if audible(&g) {
+                cons.push(g);
+            } else {
+                vows.push(g);
+            }
+        }
+        // Walk the consonant×vowel grid diagonally so consecutive fills vary
+        // both components rather than repeating one vowel across hosts.
+        for offset in 0..vows.len() {
+            for (ci, c) in cons.iter().enumerate() {
+                if out.len() >= WANT {
+                    return Ok(out);
+                }
+                let v = &vows[(ci + offset) % vows.len()];
+                let vc = v.chars().next().expect("vowel glyph nonempty");
+                if is_hataf(vc) && !AUDIBLE_GUTTURALS.contains(&c.as_str()) {
+                    continue;
+                }
+                if c == host && vc == vowel {
+                    continue;
+                }
+                let syl = format!("{c}{v}");
+                if !out.contains(&syl) {
+                    out.push(syl);
+                }
+            }
+        }
         Ok(out)
     }
 
-    /// Up to three other already-introduced glyphs of the *same kind*
-    /// (consonant / vowel point / reading mark) as `glyph`, for a
-    /// multiple-choice quiz. Most-recently-introduced first; the app shuffles.
+    /// Up to three other glyphs of the *same kind* (consonant / vowel point /
+    /// reading mark) as `glyph`, for a multiple-choice quiz. Already-introduced
+    /// glyphs first (most recent first — familiar, so genuinely confusable),
+    /// topped up with *upcoming* glyphs while too few peers have been
+    /// introduced (the first letters of a fresh start). The app shuffles.
     fn glyph_distractors(&self, glyph: &str) -> rusqlite::Result<Vec<String>> {
         const WANT: usize = 3;
         let Some(ch) = glyph.chars().next() else {
@@ -1327,6 +1421,18 @@ impl Bible {
         };
         let cons = is_consonant(ch);
         let vowel = is_vowel_point(ch);
+        let same_kind = |g: &str| {
+            let Some(gc) = g.chars().next() else {
+                return false;
+            };
+            if cons {
+                is_consonant(gc)
+            } else if vowel {
+                is_vowel_point(gc)
+            } else {
+                !is_consonant(gc) && !is_vowel_point(gc)
+            }
+        };
         let mut out = Vec::new();
         let mut stmt = self.conn().prepare(
             "SELECT glyph FROM progress.glyph_srs WHERE glyph != ?1 \
@@ -1338,17 +1444,14 @@ impl Bible {
                 break;
             }
             let g = row?;
-            let Some(gc) = g.chars().next() else { continue };
-            let same = if cons {
-                is_consonant(gc)
-            } else if vowel {
-                is_vowel_point(gc)
-            } else {
-                !is_consonant(gc) && !is_vowel_point(gc)
-            };
-            if same {
+            if same_kind(&g) {
                 out.push(g);
             }
+        }
+        if out.len() < WANT {
+            // `upcoming_glyphs` skips introduced glyphs, so nothing here can
+            // duplicate `out` or the reviewed `glyph` itself.
+            out.extend(self.upcoming_glyphs(WANT - out.len(), same_kind)?);
         }
         Ok(out)
     }
@@ -3489,6 +3592,48 @@ mod tests {
             "words-forward should know 5 words with fewer glyphs seen \
              ({word_forward}) than letters-forward ({letter_forward})"
         );
+        Ok(())
+    }
+
+    /// A fresh start has almost no introduced peers to quiz against: the first
+    /// letter's review must still offer a full multiple-choice pool, topped up
+    /// with *upcoming* glyphs (never-introduced, same kind), and a vowel's
+    /// syllable quiz likewise builds from upcoming consonants and vowels.
+    #[test]
+    fn early_reviews_fall_back_on_upcoming_glyph_distractors() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        // Only one consonant introduced — no peers at all.
+        let now = 1_700_000_000;
+        bible.submit_review(Track::Glyph, "ס", Grade::Good, now)?;
+        let card = bible.review_glyph_card("ס".to_string())?;
+        assert_eq!(card.distractors.len(), 3, "topped up from upcoming glyphs");
+        for d in &card.distractors {
+            assert_ne!(d, "ס");
+            assert!(d.chars().next().is_some_and(is_consonant), "same kind: {d:?}");
+            assert!(!bible.glyph_known(d)?, "upcoming = not yet introduced: {d:?}");
+        }
+
+        // One consonant and one vowel known: the syllable pool can't be filled
+        // from known glyphs alone, so upcoming ones complete it.
+        bible.submit_review(Track::Glyph, "ֶ", Grade::Good, now)?;
+        let card = bible.review_glyph_card("ֶ".to_string())?;
+        let host = card.host.clone().expect("vowel gets a host");
+        assert!(card.distractors.len() >= 3, "enough syllables for a quiz");
+        for d in &card.distractors {
+            let cps: Vec<char> = d.chars().collect();
+            assert!(is_consonant(cps[0]) && !is_silent_host(&cps[0].to_string()));
+            assert!(is_vowel_point(*cps.last().unwrap()));
+            assert_ne!(*d, format!("{host}ֶ"), "excludes the correct syllable");
+        }
         Ok(())
     }
 
