@@ -19,6 +19,8 @@
 //!    *sound* as their medial base but a distinct *shape* the reader must
 //!    recognise, so each is drilled as its own glyph (see [`decompose_glyphs`]);
 //!    they don't count toward the alphabet gate (see [`Bible::all_letters_known`]).
+//!    The first final form a learner meets is gated behind a one-time gradeless
+//!    card explaining the concept (see [`StudyItem::ExplainFinalForms`]).
 //! 2. **Word meaning** — once all a word's glyphs are known (so the learner can
 //!    already sound it out), drill what the word means.
 //!
@@ -59,6 +61,12 @@ const SECONDS_PER_MIN: i64 = 60;
 /// the sof pasuq (verse-ending "full stop") and the maqaf (joins short words).
 /// Taught from the verse itself, sof-pasuq first.
 const READING_MARKS: [char; 2] = ['\u{05C3}', '\u{05BE}'];
+
+/// `progress.concepts_seen` key for the one-time final-forms explanation card
+/// (see [`StudyItem::ExplainFinalForms`]). Kept out of [`crate::grammar`]'s
+/// concept list — it's a script concept, not a grammar rule, so it must not
+/// join the grammar unlock ordering.
+const FINAL_FORMS_CONCEPT: &str = "final_forms";
 
 /// Consonants whose modern transliteration is a silent onset (aleph, ayin) —
 /// never used as a syllable host, so a taught or quizzed syllable always sounds
@@ -306,6 +314,13 @@ pub enum StudyItem {
     /// A grammar concept the next word exercises, shown once before that word's
     /// meaning card. Gradeless, like [`StudyItem::ExplainMark`].
     ExplainGrammar(GrammarCard),
+    /// The final-forms concept — five letters (ך ם ן ף ץ) take a different
+    /// shape at the end of a word — shown once, gating the first final-form
+    /// glyph the learner meets (the card carries that glyph; the glyph itself
+    /// is introduced on the next call). Gradeless, like
+    /// [`StudyItem::ExplainMark`]; recorded in `progress.concepts_seen` under
+    /// [`FINAL_FORMS_CONCEPT`].
+    ExplainFinalForms(GlyphCard),
     ReadVerse(VerseCard),
     Done,
 }
@@ -631,6 +646,15 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
 
 fn is_consonant(c: char) -> bool {
     (0x05D0..=0x05EA).contains(&(c as u32))
+}
+
+/// One of the five final (sofit) letter forms ך ם ן ף ץ — the end-of-word
+/// shape of kaf/mem/nun/pe/tsadi, drilled as its own glyph.
+fn is_final_form(c: char) -> bool {
+    matches!(
+        c,
+        '\u{05DA}' | '\u{05DD}' | '\u{05DF}' | '\u{05E3}' | '\u{05E5}'
+    )
 }
 
 /// A proper vowel point (sheva through holam, qubuts, qamats qatan) — taught on
@@ -1238,24 +1262,48 @@ impl Bible {
     }
 
     /// Build a NewGlyph item, showing a vowel on a learnt valid host (teaching a
-    /// host consonant first if none is learnt yet).
-    fn new_glyph_item(&self, surface: &str, g: &GlyphCard) -> rusqlite::Result<StudyItem> {
+    /// host consonant first if none is learnt yet). The very first final-form
+    /// consonant is preceded by the one-time final-forms concept card instead
+    /// (see [`Self::final_form_gated`]).
+    fn new_glyph_item(&self, surface: &str, g: &GlyphCard, now: i64) -> rusqlite::Result<StudyItem> {
         let ch = g.glyph.chars().next().unwrap_or(' ');
         if !is_vowel_point(ch) {
-            return Ok(StudyItem::NewGlyph(g.clone()));
+            return self.final_form_gated(g.clone(), now);
         }
         match self.known_vowel_host(surface, ch)? {
             Some(host) => Ok(StudyItem::NewGlyph(GlyphCard {
                 host: Some(host),
                 ..g.clone()
             })),
-            None => Ok(StudyItem::NewGlyph(GlyphCard {
-                glyph: host_to_teach(surface, ch),
-                is_consonant: true,
-                host: None,
-                distractors: Vec::new(),
-            })),
+            None => self.final_form_gated(
+                GlyphCard {
+                    glyph: host_to_teach(surface, ch),
+                    is_consonant: true,
+                    host: None,
+                    distractors: Vec::new(),
+                },
+                now,
+            ),
         }
+    }
+
+    /// Wrap a new consonant card in the final-forms gate: the first time the
+    /// glyph to introduce is a final form, return the one-time
+    /// [`StudyItem::ExplainFinalForms`] card instead, marking the concept seen
+    /// immediately (like a grammar concept) — the glyph itself is introduced on
+    /// the next call.
+    fn final_form_gated(&self, g: GlyphCard, now: i64) -> rusqlite::Result<StudyItem> {
+        if g.glyph.chars().next().is_some_and(is_final_form)
+            && !self.concept_seen(FINAL_FORMS_CONCEPT)?
+        {
+            self.conn().execute(
+                "INSERT INTO progress.concepts_seen(concept, introduced_epoch) VALUES (?1, ?2) \
+                 ON CONFLICT(concept) DO NOTHING",
+                params![FINAL_FORMS_CONCEPT, now],
+            )?;
+            return Ok(StudyItem::ExplainFinalForms(g));
+        }
+        Ok(StudyItem::NewGlyph(g))
     }
 
     fn review_glyph_card(&self, glyph: String) -> rusqlite::Result<GlyphCard> {
@@ -2056,7 +2104,7 @@ impl Bible {
         if do_letter {
             let (surface, g) = new_letter.expect("letter candidate present");
             self.bump_intro_counter("intro.letters")?;
-            return Ok(Some(self.new_glyph_item(&surface, &g)?));
+            return Ok(Some(self.new_glyph_item(&surface, &g, now)?));
         }
         let Some(surface) = ready_word else {
             // A letter was available but held back by the focus gate: hand
@@ -3101,6 +3149,7 @@ mod tests {
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainFinalForms(_)
                 | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
@@ -3158,7 +3207,9 @@ mod tests {
                     concepts.push(card.concept.clone());
                     bible.next_study_item(now)?
                 }
-                StudyItem::ExplainMark(_) => bible.next_study_item(now)?,
+                StudyItem::ExplainMark(_) | StudyItem::ExplainFinalForms(_) => {
+                    bible.next_study_item(now)?
+                }
                 StudyItem::ReadVerse(_) => {
                     saw_read = true;
                     break;
@@ -3227,9 +3278,9 @@ mod tests {
                 StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
-                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
-                    bible.next_study_item(now)?
-                }
+                StudyItem::ExplainMark(_)
+                | StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainFinalForms(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
@@ -3441,6 +3492,7 @@ mod tests {
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainFinalForms(_)
                 | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
@@ -3499,6 +3551,7 @@ mod tests {
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainFinalForms(_)
                 | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                 StudyItem::Done => break,
             };
@@ -3612,6 +3665,7 @@ mod tests {
                     }
                     StudyItem::ExplainMark(_)
                     | StudyItem::ExplainGrammar(_)
+                    | StudyItem::ExplainFinalForms(_)
                     | StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
                     StudyItem::Done => break,
                 };
@@ -3991,7 +4045,9 @@ mod tests {
                     saw_mark = true;
                     bible.next_study_item(now)?
                 }
-                StudyItem::ExplainGrammar(_) => bible.next_study_item(now)?,
+                StudyItem::ExplainGrammar(_) | StudyItem::ExplainFinalForms(_) => {
+                    bible.next_study_item(now)?
+                }
                 StudyItem::ReadVerse(_) => {
                     saw_read = true;
                     break;
@@ -4038,9 +4094,9 @@ mod tests {
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
-                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
-                    bible.next_study_item(now)?
-                }
+                StudyItem::ExplainMark(_)
+                | StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainFinalForms(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(v) => break v,
                 StudyItem::Done => panic!("ran out of curriculum before a read"),
             };
@@ -4083,9 +4139,9 @@ mod tests {
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
-                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
-                    bible.next_study_item(now)?
-                }
+                StudyItem::ExplainMark(_)
+                | StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainFinalForms(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) | StudyItem::Done => break,
             };
         }
@@ -4154,9 +4210,9 @@ mod tests {
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
-                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
-                    bible.next_study_item(now)?
-                }
+                StudyItem::ExplainMark(_)
+                | StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainFinalForms(_) => bible.next_study_item(now)?,
                 StudyItem::ReadVerse(_) | StudyItem::Done => break,
             };
         }
@@ -4224,7 +4280,9 @@ mod tests {
             assert!(hops < 20, "should reach the remaining word quickly");
             match item {
                 StudyItem::NewWord(w) if w.surface == *last => break w.surface,
-                StudyItem::ExplainGrammar(_) | StudyItem::ExplainMark(_) => {
+                StudyItem::ExplainGrammar(_)
+                | StudyItem::ExplainMark(_)
+                | StudyItem::ExplainFinalForms(_) => {
                     item = bible.next_study_item(now)?;
                 }
                 other => panic!("unexpected item before the target word: {other:?}"),
@@ -4278,7 +4336,9 @@ mod tests {
                     explained.push(g.glyph.clone());
                     bible.next_study_item(now)?
                 }
-                StudyItem::ExplainGrammar(_) => bible.next_study_item(now)?,
+                StudyItem::ExplainGrammar(_) | StudyItem::ExplainFinalForms(_) => {
+                    bible.next_study_item(now)?
+                }
                 StudyItem::ReadVerse(_) => {
                     reads += 1;
                     if reads >= 3 {
@@ -4301,6 +4361,73 @@ mod tests {
         for mark in READING_MARKS {
             assert!(!bible.glyph_known(&mark.to_string())?);
         }
+        Ok(())
+    }
+
+    /// The first final-form glyph (ך ם ן ף ץ) is gated behind the one-time
+    /// final-forms concept card: the explanation appears before any final form
+    /// is introduced, exactly once, and the finals themselves are still drilled
+    /// as their own glyphs afterwards.
+    #[test]
+    fn final_forms_explained_once_before_first_final_glyph() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let now = 1_700_000_000;
+        let mut item = bible.next_study_item(now)?;
+        let mut explains = 0;
+        let mut finals_introduced = 0;
+        for _ in 0..4000 {
+            item = match item {
+                StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
+                    if g.glyph.chars().next().is_some_and(is_final_form) {
+                        assert_eq!(
+                            explains, 1,
+                            "final form {:?} introduced without the concept card",
+                            g.glyph
+                        );
+                        finals_introduced += 1;
+                    }
+                    bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
+                }
+                StudyItem::ExplainFinalForms(g) => {
+                    explains += 1;
+                    assert!(
+                        g.glyph.chars().next().is_some_and(is_final_form),
+                        "concept card should carry the final form about to be taught, got {:?}",
+                        g.glyph
+                    );
+                    assert_eq!(finals_introduced, 0, "explanation must come first");
+                    bible.next_study_item(now)?
+                }
+                StudyItem::NewWord(w) | StudyItem::ReviewWord(w) => {
+                    bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
+                    bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::ExplainMark(_) | StudyItem::ExplainGrammar(_) => {
+                    bible.next_study_item(now)?
+                }
+                StudyItem::ReadVerse(_) => bible.next_study_item(now)?,
+                StudyItem::Done => break,
+            };
+            if finals_introduced >= 2 {
+                break;
+            }
+        }
+        assert_eq!(explains, 1, "final-forms card should be shown exactly once");
+        assert!(
+            finals_introduced >= 1,
+            "a final-form glyph should still be introduced after the card"
+        );
         Ok(())
     }
 
