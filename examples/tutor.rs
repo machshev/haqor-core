@@ -58,6 +58,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 println!("{i:>3}  GRAMMAR   [{}] {}", c.concept, c.title);
                 bible.next_study_item(now)?
             }
+            StudyItem::ExplainFinalForms(g) => {
+                println!("{i:>3}  FINALS    {}", g.glyph);
+                bible.next_study_item(now)?
+            }
             StudyItem::ReadVerse(v) => {
                 println!(
                     "{i:>3}  ===READ===  {} {}:{}   examples={:?}",
