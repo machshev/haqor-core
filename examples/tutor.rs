@@ -74,8 +74,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let p = bible.tutor_progress()?;
     println!(
-        "\nprogress: {} glyphs, {} words known, {}/{} verses readable",
-        p.glyphs_known, p.words_known, p.verses_readable, p.total_verses
+        "\nprogress: {} letters, {} vowels, {} words known, {}/{} verses readable",
+        p.letters_known, p.vowels_known, p.words_known, p.verses_readable, p.total_verses
     );
     Ok(())
 }

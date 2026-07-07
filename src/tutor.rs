@@ -312,7 +312,11 @@ pub enum StudyItem {
 /// Headline progress counters for a status header.
 #[derive(Debug, Clone, Copy, Default)]
 pub struct TutorProgress {
-    pub glyphs_known: i64,
+    /// Distinct base consonants introduced (begadkefat/shin dot-pairs folded to
+    /// one leading codepoint; final forms kept as their own glyphs).
+    pub letters_known: i64,
+    /// Vowel points introduced (sheva through holam, qubuts, qamats qatan).
+    pub vowels_known: i64,
     pub words_known: i64,
     pub verses_readable: i64,
     pub total_verses: i64,
@@ -325,15 +329,21 @@ pub struct TutorProgress {
 /// spacing; *seen* is every introduced card.
 #[derive(Debug, Clone, Copy, Default)]
 pub struct TutorStats {
-    /// Letters/vowels/marks introduced, still in learning, and graduated.
-    pub glyphs_seen: i64,
-    pub glyphs_learning: i64,
-    pub glyphs_mature: i64,
+    /// Base consonants introduced, still in learning, and graduated (folded by
+    /// leading codepoint, matching [`TutorProgress::letters_known`]).
+    pub letters_seen: i64,
+    pub letters_learning: i64,
+    pub letters_mature: i64,
+    /// Vowel points introduced, still in learning, and graduated.
+    pub vowels_seen: i64,
+    pub vowels_learning: i64,
+    pub vowels_mature: i64,
     /// Word meanings introduced, still in learning, and graduated.
     pub words_seen: i64,
     pub words_learning: i64,
     pub words_mature: i64,
-    /// Cards whose next review is now due (`due_epoch <= now`).
+    /// Cards whose next review is now due (`due_epoch <= now`); every glyph
+    /// (letters, vowels, marks) and word counts here.
     pub glyphs_due: i64,
     pub words_due: i64,
     /// Card answers logged today (UTC day) and over all time.
@@ -2437,9 +2447,21 @@ impl Bible {
 
     /// Headline counters for a progress display.
     pub fn tutor_progress(&self) -> rusqlite::Result<TutorProgress> {
-        let glyphs_known =
-            self.conn()
-                .query_row("SELECT COUNT(*) FROM progress.glyph_srs", [], |r| r.get(0))?;
+        // Consonants folded by leading codepoint (so בּ/ב count once); vowel
+        // points counted individually. Mirrors the classification in
+        // `all_letters_known`; dagesh/dots/marks fall into neither bucket.
+        let letters_known = self.conn().query_row(
+            "SELECT COUNT(DISTINCT unicode(substr(glyph, 1, 1))) FROM progress.glyph_srs \
+             WHERE unicode(substr(glyph, 1, 1)) BETWEEN 1488 AND 1514",
+            [],
+            |r| r.get(0),
+        )?;
+        let vowels_known = self.conn().query_row(
+            "SELECT COUNT(*) FROM progress.glyph_srs \
+             WHERE unicode(glyph) BETWEEN 1456 AND 1465 OR unicode(glyph) IN (1467, 1479)",
+            [],
+            |r| r.get(0),
+        )?;
         let words_known = self.conn().query_row(
             &format!("SELECT COUNT(*) FROM ({DONE_SURFACES})"),
             [],
@@ -2456,7 +2478,8 @@ impl Bible {
                     r.get(0)
                 })?;
         Ok(TutorProgress {
-            glyphs_known,
+            letters_known,
+            vowels_known,
             words_known,
             verses_readable,
             total_verses,
@@ -2470,9 +2493,25 @@ impl Bible {
         let conn = self.conn();
         let count = |sql: &str| -> rusqlite::Result<i64> { conn.query_row(sql, [], |r| r.get(0)) };
 
-        let glyphs_seen = count("SELECT COUNT(*) FROM progress.glyph_srs")?;
-        let glyphs_mature =
-            count("SELECT COUNT(*) FROM progress.glyph_srs WHERE interval_days >= 1")?;
+        // Letters folded by leading codepoint (בּ/ב count once); vowel points
+        // counted individually. Mature rows are a subset of seen, so both
+        // distinct/plain counts keep `learning = seen - mature` non-negative.
+        const LETTER: &str = "unicode(substr(glyph, 1, 1)) BETWEEN 1488 AND 1514";
+        const VOWEL: &str =
+            "(unicode(glyph) BETWEEN 1456 AND 1465 OR unicode(glyph) IN (1467, 1479))";
+        let letters_seen = count(&format!(
+            "SELECT COUNT(DISTINCT unicode(substr(glyph, 1, 1))) FROM progress.glyph_srs \
+             WHERE {LETTER}"
+        ))?;
+        let letters_mature = count(&format!(
+            "SELECT COUNT(DISTINCT unicode(substr(glyph, 1, 1))) FROM progress.glyph_srs \
+             WHERE {LETTER} AND interval_days >= 1"
+        ))?;
+        let vowels_seen =
+            count(&format!("SELECT COUNT(*) FROM progress.glyph_srs WHERE {VOWEL}"))?;
+        let vowels_mature = count(&format!(
+            "SELECT COUNT(*) FROM progress.glyph_srs WHERE {VOWEL} AND interval_days >= 1"
+        ))?;
         let words_seen = count("SELECT COUNT(*) FROM progress.word_srs")?;
         let words_mature =
             count("SELECT COUNT(*) FROM progress.word_srs WHERE interval_days >= 1")?;
@@ -2507,9 +2546,12 @@ impl Bible {
         let total_verses = count("SELECT COUNT(*) FROM hebrewdb.verse_stats")?;
 
         Ok(TutorStats {
-            glyphs_seen,
-            glyphs_learning: glyphs_seen - glyphs_mature,
-            glyphs_mature,
+            letters_seen,
+            letters_learning: letters_seen - letters_mature,
+            letters_mature,
+            vowels_seen,
+            vowels_learning: vowels_seen - vowels_mature,
+            vowels_mature,
             words_seen,
             words_learning: words_seen - words_mature,
             words_mature,
@@ -3379,7 +3421,7 @@ mod tests {
         assert_eq!(s.reviews_today, 1, "only the day-2 answer counts as today");
         assert_eq!(s.streak_days, 3, "days 0, 1 and 2 are consecutive");
         assert_eq!(s.accuracy_pct, 75, "3 of 4 answers recalled");
-        assert_eq!(s.glyphs_seen, 2, "two distinct glyphs introduced");
+        assert_eq!(s.letters_seen, 2, "two distinct consonants introduced");
 
         // A whole missed day breaks the streak: from day 4, day 2 is stale.
         assert_eq!(bible.tutor_stats(4 * day)?.streak_days, 0);
