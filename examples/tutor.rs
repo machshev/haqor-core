@@ -56,6 +56,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 println!("{i:>3}  rev form  {}", w.surface);
                 bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
             }
+            StudyItem::ExplainIntro(key) => {
+                println!("{i:>3}  INTRO     [{key}]");
+                bible.next_study_item(now)?
+            }
             StudyItem::ExplainMark(g) => {
                 println!("{i:>3}  MARK      {}", g.glyph);
                 bible.next_study_item(now)?

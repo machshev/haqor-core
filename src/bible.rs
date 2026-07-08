@@ -1274,6 +1274,11 @@ impl Bible {
     /// bare-before-suffixed, exact-before-folded) for the unattested tail. A verb
     /// reading is chosen over a noun reading only when its root resolves in BDB;
     /// otherwise a resolvable noun reading wins, falling back to whatever exists.
+    /// Exception: when the noun reading resolves *and* carries the definite
+    /// article, a verb reading that merely shadows the article loses to it —
+    /// the article never prefixes a finite verb, so הַמֶּלֶךְ is "the king",
+    /// not a he-peeled imperative of הלך (article + participle stays a verb
+    /// reading: that combination is real Hebrew).
     pub fn hebrew_word_info(&self, word: &str) -> Option<HebrewWord> {
         let norm = crate::generate::normalize_surface(word);
         // `surface.text` is not indexed, so resolve the surface_id once here and
@@ -1307,7 +1312,7 @@ impl Bible {
             .db
             .query_row(
                 "SELECT a.root, a.binyan, a.form, a.pgn, a.prefix, a.vav_consecutive, \
-                        a.obj_suffix, \
+                        a.obj_suffix, a.attested, \
                         EXISTS(SELECT 1 FROM lexdb.bdb b WHERE b.root = a.root) AS has_bdb \
                  FROM hebrewdb.analyses a \
                  WHERE a.surface_id = ?1 \
@@ -1324,6 +1329,7 @@ impl Bible {
                         row.get::<_, i64>(5)? != 0,
                         row.get::<_, String>(6)?,
                         row.get::<_, i64>(7)? != 0,
+                        row.get::<_, i64>(8)? != 0,
                     ))
                 },
             )
@@ -1372,12 +1378,32 @@ impl Bible {
             chosen
         };
 
-        let verb_resolves = verb.as_ref().is_some_and(|v| v.7);
         let noun_resolves = noun.as_ref().is_some_and(|n| !n.3.is_empty());
+        // A resolvable noun reading led by the definite article beats a verb
+        // reading that only exists by mistreating that article: a he-peeled
+        // non-participle (the article never prefixes a finite verb — הָעָם is
+        // not an imperative of עמה) or a strong-verb fallback that buries the
+        // article inside the root (הַיּוֹם as *הימ). The he must carry real
+        // article pointing (patah/qamats/segol): a hataf-patah he is the
+        // interrogative, whose verb reading is genuine (הֲתֵלֵךְ "will you
+        // go?" is not "your mound"). Article + participle is real Hebrew, so
+        // participles keep their verb reading.
+        let article_pointed = |prefix: &str| {
+            let mut cs = prefix.chars();
+            cs.next() == Some('\u{05D4}')
+                && matches!(cs.next(), Some('\u{05B7}' | '\u{05B8}' | '\u{05B6}'))
+        };
+        let article_noun = noun_resolves && noun.as_ref().is_some_and(|n| article_pointed(&n.2));
+        let verb_shadows_article = verb.as_ref().is_some_and(|v| {
+            let participle = v.2.contains("Participle");
+            (!participle && v.4.starts_with('\u{05D4}')) || (!v.7 && v.0.starts_with('\u{05D4}'))
+        });
+        let verb_resolves =
+            verb.as_ref().is_some_and(|v| v.8) && !(article_noun && verb_shadows_article);
 
         // Prefer a BDB-resolvable verb; else a resolvable noun; else whatever
         // analysis exists (verb before noun).
-        if let Some((root, binyan, tense, pgn, prefix, vav_con, obj_suffix, _)) =
+        if let Some((root, binyan, tense, pgn, prefix, vav_con, obj_suffix, _, _)) =
             verb.as_ref().filter(|_| verb_resolves || !noun_resolves)
         {
             let (person, gender, number) = decode_pgn(pgn);

@@ -480,8 +480,11 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// `glyph_mask`; 6 folded the corpus's dotless shins (יִשָּׂשכָר, a few
 /// scribal anomalies) into שׁ, changing `glyph_mask`; 7 added the standalone
 /// `preposition` concept and the curated surface-concept table (function-word
-/// prepositions and misparsed construct forms now carry a `concept_rank`).
-const SURFACE_META_VERSION: i64 = 7;
+/// prepositions and misparsed construct forms now carry a `concept_rank`);
+/// 8 stopped spurious verb readings shadowing the definite article
+/// ([`Bible::hebrew_word_info`]), dropping article+noun words like הָאָרֶץ
+/// from verb-concept ranks to the article's rank.
+const SURFACE_META_VERSION: i64 = 8;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
@@ -4936,6 +4939,78 @@ mod tests {
             |r| r.get(0),
         )?;
         assert_eq!(known, 0);
+        Ok(())
+    }
+
+    /// Article-prefixed nouns are gated behind the definite-article concept
+    /// card — not the spurious verb readings the reverse-parser also carries
+    /// for them (הַמֶּלֶךְ as a he-peeled imperative of הלך, הַיּוֹם as a
+    /// Piel infinitive of *הימ). Each must classify as exactly ["article"]
+    /// (rank 0, unlocked with the first grammar rule) and issue the article
+    /// card, once, before being introduced as a word.
+    #[test]
+    fn article_words_gate_behind_the_article_card() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let now = 1_700_000_000;
+        for s in ["הַמֶּלֶךְ", "הָאָרֶץ", "הַשָּׁמַיִם", "הָעָם", "הַיּוֹם", "הַדָּבָר"]
+        {
+            let w = bible.hebrew_word_info(s);
+            // The chosen reading is the article+noun one, not a verb.
+            let parsed = w.as_ref().unwrap_or_else(|| panic!("{s} should parse"));
+            assert!(
+                parsed.form.is_none() && parsed.tense.is_none(),
+                "{s} should read as article + noun, got verb {:?} {:?}",
+                parsed.form,
+                parsed.tense
+            );
+            let concepts = crate::grammar::concepts_for_surface(s, w.as_ref());
+            assert_eq!(concepts, vec!["article"], "concepts for {s}");
+            assert_eq!(
+                crate::grammar::concept_rank_for_surface(s, w.as_ref()),
+                0,
+                "rank for {s}"
+            );
+            match bible.next_grammar_card(s, now)? {
+                Some(StudyItem::ExplainGrammar(card)) => {
+                    assert_eq!(card.concept, "article", "card for {s}");
+                    assert_eq!(card.example.surface, s);
+                }
+                other => panic!("expected the article card for {s}, got {other:?}"),
+            }
+            // Shown at most once; reset so each surface is tested independently.
+            assert!(bible.next_grammar_card(s, now)?.is_none());
+            bible
+                .conn()
+                .execute("DELETE FROM progress.concepts_seen", [])?;
+        }
+
+        // Article + participle is real Hebrew — the participle keeps its verb
+        // reading (and its participle concept) rather than flattening to a
+        // noun: הַיֹּשֵׁב "the one dwelling".
+        let w = bible.hebrew_word_info("הַיֹּשֵׁב").expect("participle parses");
+        assert!(
+            w.tense.as_deref().is_some_and(|t| t.contains("Participle")),
+            "הַיֹּשֵׁב should keep its participle reading, got {w:?}"
+        );
+
+        // A hataf-patah he is the interrogative, not the article — the verb
+        // reading is genuine and must survive even though a noun reading
+        // resolves (הֲתֵלֵךְ "will you go?", not תֵּל "your mound").
+        let w = bible.hebrew_word_info("הֲתֵלֵךְ").expect("interrogative parses");
+        assert_eq!(
+            (w.root.as_str(), w.tense.as_deref()),
+            ("הלכ", Some("Imperfect")),
+            "הֲתֵלֵךְ should keep its interrogative verb reading, got {w:?}"
+        );
         Ok(())
     }
 }
