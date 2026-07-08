@@ -485,8 +485,10 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// ([`Bible::hebrew_word_info`]), dropping article+noun words like הָאָרֶץ
 /// from verb-concept ranks to the article's rank; 9 added the
 /// `object-marker` concept ahead of every other rank and curated the אֶת
-/// family into the surface-concept table.
-const SURFACE_META_VERSION: i64 = 9;
+/// family into the surface-concept table; 10 stopped the lexicon bridge
+/// serving BDB cross-reference stubs, changing the primary root for the
+/// re-bridged function words (אֵלָי no longer resolves to the stub's אלח).
+const SURFACE_META_VERSION: i64 = 10;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
