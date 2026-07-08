@@ -224,61 +224,96 @@ const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
     ("וְאֶל", &["conj-ve", "preposition"]),
     ("וְעַד", &["conj-ve", "preposition"]),
     ("וּבֵין", &["conj-ve", "preposition"]),
-    // Suffixed standalone prepositions ("on him", "to me", "with us", …).
-    ("אֵלָיו", &["preposition"]),
-    ("אֵלַי", &["preposition"]),
-    ("אֵלֶיךָ", &["preposition"]),
-    ("אֵלֶיהָ", &["preposition"]),
-    ("אֲלֵיהֶם", &["preposition"]),
-    ("אֲלֵהֶם", &["preposition"]),
-    ("אֲלֵיכֶם", &["preposition"]),
-    ("עָלָיו", &["preposition"]),
-    ("עָלֶיהָ", &["preposition"]),
-    ("עָלַי", &["preposition"]),
-    ("עָלֶיךָ", &["preposition"]),
-    ("עֲלֵיהֶם", &["preposition"]),
-    ("עֲלֵיכֶם", &["preposition"]),
-    ("עִמּוֹ", &["preposition"]),
-    ("עִמִּי", &["preposition"]),
-    ("עִמָּךְ", &["preposition"]),
-    ("עִמְּךָ", &["preposition"]),
-    ("עִמָּנוּ", &["preposition"]),
-    ("אִתּוֹ", &["preposition"]),
-    ("אִתִּי", &["preposition"]),
-    ("אִתָּם", &["preposition"]),
-    ("אִתָּנוּ", &["preposition"]),
-    ("אִתָּךְ", &["preposition"]),
-    ("אִתְּךָ", &["preposition"]),
-    ("אִתְּכֶם", &["preposition"]),
-    ("תַּחְתָּיו", &["preposition"]),
+    // Suffixed standalone prepositions ("on him", "to me", "with us", …) —
+    // every form gates behind the pronoun-ending card as well as the
+    // preposition card. Pausal twins (אֵלָי, עָלָי, אַחֲרָי) are separate
+    // surfaces: vocab_key keeps vowel points, so they need their own entries.
+    ("אֵלָיו", &["preposition", "prep-suffix"]),
+    ("אֵלַי", &["preposition", "prep-suffix"]),
+    ("אֵלָי", &["preposition", "prep-suffix"]),
+    ("אֵלַיִךְ", &["preposition", "prep-suffix"]),
+    ("אֵלֶיךָ", &["preposition", "prep-suffix"]),
+    ("אֵלֶיהָ", &["preposition", "prep-suffix"]),
+    ("אֵלֵינוּ", &["preposition", "prep-suffix"]),
+    ("אֲלֵיהֶם", &["preposition", "prep-suffix"]),
+    ("אֲלֵהֶם", &["preposition", "prep-suffix"]),
+    ("אֲלֵיכֶם", &["preposition", "prep-suffix"]),
+    ("עָלָיו", &["preposition", "prep-suffix"]),
+    ("עָלֶיהָ", &["preposition", "prep-suffix"]),
+    ("עָלַי", &["preposition", "prep-suffix"]),
+    ("עָלָי", &["preposition", "prep-suffix"]),
+    ("עָלַיִךְ", &["preposition", "prep-suffix"]),
+    ("עָלָיִךְ", &["preposition", "prep-suffix"]),
+    ("עָלֶיךָ", &["preposition", "prep-suffix"]),
+    ("עָלֵינוּ", &["preposition", "prep-suffix"]),
+    ("עֲלֵיהֶם", &["preposition", "prep-suffix"]),
+    ("עֲלֵהֶם", &["preposition", "prep-suffix"]),
+    ("עֲלֵיהֶן", &["preposition", "prep-suffix"]),
+    ("עֲלֵיכֶם", &["preposition", "prep-suffix"]),
+    ("עָלֵימוֹ", &["preposition", "prep-suffix"]),
+    ("עִמּוֹ", &["preposition", "prep-suffix"]),
+    ("עִמִּי", &["preposition", "prep-suffix"]),
+    ("עִמָּדִי", &["preposition", "prep-suffix"]),
+    ("עִמָּךְ", &["preposition", "prep-suffix"]),
+    ("עִמְּךָ", &["preposition", "prep-suffix"]),
+    ("עִמָּהּ", &["preposition", "prep-suffix"]),
+    ("עִמָּם", &["preposition", "prep-suffix"]),
+    ("עִמָּכֶם", &["preposition", "prep-suffix"]),
+    ("עִמָּנוּ", &["preposition", "prep-suffix"]),
+    ("אִתּוֹ", &["preposition", "prep-suffix"]),
+    ("אִתִּי", &["preposition", "prep-suffix"]),
+    ("אִתָּם", &["preposition", "prep-suffix"]),
+    ("אִתָּנוּ", &["preposition", "prep-suffix"]),
+    ("אִתָּךְ", &["preposition", "prep-suffix"]),
+    ("אִתְּךָ", &["preposition", "prep-suffix"]),
+    ("אִתְּכֶם", &["preposition", "prep-suffix"]),
+    ("אַחֲרָיו", &["preposition", "prep-suffix"]),
+    ("אַחֲרַי", &["preposition", "prep-suffix"]),
+    ("אַחֲרָי", &["preposition", "prep-suffix"]),
+    ("אַחֲרֶיךָ", &["preposition", "prep-suffix"]),
+    ("אַחֲרֶיהָ", &["preposition", "prep-suffix"]),
+    ("אַחֲרֵיהֶם", &["preposition", "prep-suffix"]),
+    ("תַּחְתָּיו", &["preposition", "prep-suffix"]),
+    ("תַּחְתֶּיהָ", &["preposition", "prep-suffix"]),
+    ("בֵּינִי", &["preposition", "prep-suffix"]),
+    ("כָּמוֹךָ", &["preposition", "prep-suffix"]),
+    ("כָּמֹהוּ", &["preposition", "prep-suffix"]),
+    ("בַּעֲדוֹ", &["preposition", "prep-suffix"]),
+    ("בְּעַד", &["preposition"]),
     // Inseparable לְ — suffixed forms and opaque fusions.
-    ("לוֹ", &["prep-le"]),
-    ("לִי", &["prep-le"]),
-    ("לְךָ", &["prep-le"]),
-    ("לָךְ", &["prep-le"]),
-    ("לָהּ", &["prep-le"]),
-    ("לָהֶם", &["prep-le"]),
-    ("לָכֶם", &["prep-le"]),
-    ("לָנוּ", &["prep-le"]),
+    ("לוֹ", &["prep-le", "prep-suffix"]),
+    ("לִי", &["prep-le", "prep-suffix"]),
+    ("לְךָ", &["prep-le", "prep-suffix"]),
+    ("לָךְ", &["prep-le", "prep-suffix"]),
+    ("לָהּ", &["prep-le", "prep-suffix"]),
+    ("לָהֶם", &["prep-le", "prep-suffix"]),
+    ("לָהֶן", &["prep-le", "prep-suffix"]),
+    ("לָכֶם", &["prep-le", "prep-suffix"]),
+    ("לָנוּ", &["prep-le", "prep-suffix"]),
+    ("לָמוֹ", &["prep-le", "prep-suffix"]),
     ("לַיַהְוֶה", &["prep-le"]),
     ("לֵאמֹר", &["prep-le", "infinitive"]),
     ("לַעֲשׂוֹת", &["prep-le", "infinitive"]),
     // Inseparable בְּ — suffixed forms.
-    ("בּוֹ", &["prep-be"]),
-    ("בָּהּ", &["prep-be"]),
-    ("בָּהֶם", &["prep-be"]),
-    ("בִּי", &["prep-be"]),
-    ("בְּךָ", &["prep-be"]),
-    ("בָּךְ", &["prep-be"]),
-    ("בָּם", &["prep-be"]),
-    ("בָּכֶם", &["prep-be"]),
+    ("בּוֹ", &["prep-be", "prep-suffix"]),
+    ("בָּהּ", &["prep-be", "prep-suffix"]),
+    ("בָּהֶם", &["prep-be", "prep-suffix"]),
+    ("בִּי", &["prep-be", "prep-suffix"]),
+    ("בְּךָ", &["prep-be", "prep-suffix"]),
+    ("בָּךְ", &["prep-be", "prep-suffix"]),
+    ("בָּם", &["prep-be", "prep-suffix"]),
+    ("בָּנוּ", &["prep-be", "prep-suffix"]),
+    ("בָּכֶם", &["prep-be", "prep-suffix"]),
     ("בַּיַהְוֶה", &["prep-be"]),
     // Inseparable כְּ and מִן.
     ("כַּאֲשֶׁר", &["prep-ke"]),
     ("מִן", &["prep-min"]),
-    ("מִמֶּנּוּ", &["prep-min"]),
-    ("מִמֶּנִּי", &["prep-min"]),
-    ("מִמְּךָ", &["prep-min"]),
+    ("מִמֶּנּוּ", &["prep-min", "prep-suffix"]),
+    ("מִמֶּנִּי", &["prep-min", "prep-suffix"]),
+    ("מִמֶּנָּה", &["prep-min", "prep-suffix"]),
+    ("מִמְּךָ", &["prep-min", "prep-suffix"]),
+    ("מִמֶּךָּ", &["prep-min", "prep-suffix"]),
+    ("מֵהֶם", &["prep-min", "prep-suffix"]),
     ("מִשָּׁם", &["prep-min"]),
     ("וּמִן", &["conj-ve", "prep-min"]),
     // Construct forms the parser misses or misreads.
@@ -338,10 +373,19 @@ const CONCEPTS: &[GrammarConcept] = &[
         key: "preposition",
         title: "Prepositions",
         explanation: "Small words placed before another word tie it into the sentence — \
-            עַל (on), אֶל (to), עִם (with), תַּחַת (under). They can also carry a pronoun \
-            ending: עָלָיו (on him), אֵלַי (to me).",
+            עַל (on), אֶל (to), עִם (with), תַּחַת (under).",
         formula: Some("preposition + noun → \"on / to / with …\""),
         examples: &["עַל הָאָרֶץ — on the earth", "אֶל מֹשֶׁה — to Moses"],
+    },
+    GrammarConcept {
+        key: "prep-suffix",
+        title: "Pronoun endings on prepositions",
+        explanation: "Hebrew has no separate word for \"me\" or \"him\" after a \
+            preposition — the pronoun is joined onto its end as a suffix: אֵלַי (to me), \
+            עָלָיו (on him), עִמָּנוּ (with us). At a pause in the verse the vowel often \
+            lengthens: אֵלַי becomes אֵלָי.",
+        formula: Some("preposition + ־ִי / ־וֹ / ־ָם → \"… me / him / them\""),
+        examples: &["אֵלַי — to me", "עָלָיו — on him", "עִמָּנוּ — with us"],
     },
     GrammarConcept {
         key: "prep-be",
@@ -610,12 +654,37 @@ mod tests {
     fn function_words_classify_without_a_parse() {
         // Standalone and suffixed prepositions never reach the parser.
         assert_eq!(concepts_for_surface("עַל", None), vec!["preposition"]);
-        assert_eq!(concepts_for_surface("לוֹ", None), vec!["prep-le"]);
+        assert_eq!(
+            concepts_for_surface("לוֹ", None),
+            vec!["prep-le", "prep-suffix"]
+        );
         // Dagesh variants collapse through vocab_key.
-        assert_eq!(concepts_for_surface("בוֹ", None), vec!["prep-be"]);
+        assert_eq!(
+            concepts_for_surface("בוֹ", None),
+            vec!["prep-be", "prep-suffix"]
+        );
         // Pronouns exercise no concept and stay ungated.
         assert!(concepts_for_surface("הוּא", None).is_empty());
         assert_eq!(concept_rank_for_surface("הוּא", None), -1);
+    }
+
+    #[test]
+    fn suffixed_prepositions_gate_behind_the_pronoun_ending_card() {
+        // Every suffixed form — including the pausal twins, which are distinct
+        // vocab_keys (vowel points are kept) — carries prep-suffix, so none is
+        // introducible before the pronoun-ending card unlocks.
+        for s in ["אֵלַי", "אֵלָי", "עָלַי", "עָלָי", "אַחֲרָיו", "מֵהֶם"] {
+            let keys = concepts_for_surface(s, None);
+            assert!(keys.contains(&"prep-suffix"), "{s} should carry prep-suffix");
+            assert!(
+                concept_rank_for_surface(s, None) > concept_rank_for_surface("אֶל", None),
+                "{s} gates later than the bare preposition"
+            );
+        }
+        // The bare prepositions themselves don't mention the suffix card.
+        for s in ["אֶל", "עַל", "מִן", "בְּעַד"] {
+            assert!(!concepts_for_surface(s, None).contains(&"prep-suffix"));
+        }
     }
 
     #[test]

@@ -490,8 +490,11 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// re-bridged function words (אֵלָי no longer resolves to the stub's אלח);
 /// 11 gave the noun bridge the same stub-filtered ranked lookup plus the
 /// curated overrides (סוּס resolves to "horse"/root סוס, not the preceding
-/// bird entry's root סוכ).
-const SURFACE_META_VERSION: i64 = 11;
+/// bird entry's root סוכ); 12 added the `prep-suffix` concept (pronoun
+/// endings on prepositions) and curated every suffixed-preposition family
+/// behind it — including pausal twins like אֵלָי, which previously missed
+/// the table entirely and were introduced ungated.
+const SURFACE_META_VERSION: i64 = 12;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
@@ -4684,11 +4687,20 @@ mod tests {
         // Shown at most once.
         assert!(bible.next_grammar_card("אֶל", now)?.is_none());
 
-        // A suffixed inseparable preposition explains its prefix card.
+        // A suffixed inseparable preposition explains its prefix card first,
+        // then the pronoun-ending card on the next call — both gate it.
         match bible.next_grammar_card("לוֹ", now)? {
             Some(StudyItem::ExplainGrammar(card)) => assert_eq!(card.concept, "prep-le"),
             other => panic!("expected the prep-le card for לוֹ, got {other:?}"),
         }
+        match bible.next_grammar_card("לוֹ", now)? {
+            Some(StudyItem::ExplainGrammar(card)) => assert_eq!(card.concept, "prep-suffix"),
+            other => panic!("expected the prep-suffix card for לוֹ, got {other:?}"),
+        }
+        // Once seen, the whole suffixed family shares the card: the pausal
+        // form אֵלָי (a distinct vocab_key from אֵלַי) introduces nothing new
+        // beyond it — the preposition card was issued for עַל above.
+        assert!(bible.next_grammar_card("אֵלָי", now)?.is_none());
         Ok(())
     }
 
@@ -5111,10 +5123,11 @@ mod tests {
         assert!(bible.next_grammar_card("אֹתוֹ", now)?.is_none());
         assert!(bible.next_grammar_card("אֵת", now)?.is_none());
 
-        // The אִתּ־ "with" forms are the preposition, not the object marker.
+        // The אִתּ־ "with" forms are the (suffixed) preposition, not the
+        // object marker.
         assert_eq!(
             crate::grammar::concepts_for_surface("אִתְּכֶם", None),
-            vec!["preposition"]
+            vec!["preposition", "prep-suffix"]
         );
         Ok(())
     }
