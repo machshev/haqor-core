@@ -171,13 +171,39 @@ fn surface_concepts(surface: &str) -> Option<&'static [&'static str]> {
 }
 
 /// Concepts for high-frequency surfaces the parse can't classify: closed-class
-/// function words never reach the reverse-parser (standalone prepositions and
-/// every suffixed preposition), and some frequent construct forms parse to a
-/// spurious verb or absolute reading. Each entry lists all concepts the surface
-/// exercises, proclitic first. Pronouns, particles and adverbs stay unlisted —
-/// they exercise no concept and remain ungated.
+/// function words never reach the reverse-parser (the object marker, standalone
+/// prepositions and every suffixed preposition), and some frequent construct
+/// forms parse to a spurious verb or absolute reading. Each entry lists all
+/// concepts the surface exercises, proclitic first. Pronouns and adverbs stay
+/// unlisted — they exercise no concept and remain ungated.
 #[rustfmt::skip]
 const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
+    // The definite direct-object marker, its suffixed forms ("him", "them",
+    // "you"…) in both defective (אֹתוֹ) and plene (אוֹתוֹ) spellings, and the
+    // frequent vav-prefixed combinations. The similar אִתּ־ forms below are the
+    // preposition אֵת "with", a different lexeme.
+    ("אֶת", &["object-marker"]),
+    ("אֵת", &["object-marker"]),
+    ("וְאֶת", &["conj-ve", "object-marker"]),
+    ("וְאֵת", &["conj-ve", "object-marker"]),
+    ("אֹתוֹ", &["object-marker"]),
+    ("אוֹתוֹ", &["object-marker"]),
+    ("אֹתָהּ", &["object-marker"]),
+    ("אוֹתָהּ", &["object-marker"]),
+    ("אֹתִי", &["object-marker"]),
+    ("אוֹתִי", &["object-marker"]),
+    ("אֹתְךָ", &["object-marker"]),
+    ("אוֹתְךָ", &["object-marker"]),
+    ("אֹתָךְ", &["object-marker"]),
+    ("אוֹתָךְ", &["object-marker"]),
+    ("אֹתָם", &["object-marker"]),
+    ("אוֹתָם", &["object-marker"]),
+    ("אֹתָנוּ", &["object-marker"]),
+    ("אֶתְכֶם", &["object-marker"]),
+    ("אֶתְהֶם", &["object-marker"]),
+    ("אֶתְהֶן", &["object-marker"]),
+    ("וְאֹתוֹ", &["conj-ve", "object-marker"]),
+    ("וְאֹתִי", &["conj-ve", "object-marker"]),
     // Standalone prepositions.
     ("עַל", &["preposition"]),
     ("אֶל", &["preposition"]),
@@ -221,6 +247,9 @@ const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
     ("אִתִּי", &["preposition"]),
     ("אִתָּם", &["preposition"]),
     ("אִתָּנוּ", &["preposition"]),
+    ("אִתָּךְ", &["preposition"]),
+    ("אִתְּךָ", &["preposition"]),
+    ("אִתְּכֶם", &["preposition"]),
     ("תַּחְתָּיו", &["preposition"]),
     // Inseparable לְ — suffixed forms and opaque fusions.
     ("לוֹ", &["prep-le"]),
@@ -279,6 +308,16 @@ const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
 /// The teaching content, in a rough introduction order.
 #[rustfmt::skip]
 const CONCEPTS: &[GrammarConcept] = &[
+    GrammarConcept {
+        key: "object-marker",
+        title: "The object marker אֶת",
+        explanation: "אֶת — the most common word in the Bible — has no meaning of its \
+            own: it points at the definite direct object, the person or thing the verb \
+            acts on, and is left untranslated. With a pronoun ending it is the object \
+            itself: אֹתוֹ (him), אֹתָם (them).",
+        formula: Some("verb + אֶת + definite noun → (marks the object)"),
+        examples: &["וַיַּרְא אֶת הָאוֹר — and he saw the light", "אֹתוֹ — him"],
+    },
     GrammarConcept {
         key: "article",
         title: "The definite article",

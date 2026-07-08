@@ -483,8 +483,10 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// prepositions and misparsed construct forms now carry a `concept_rank`);
 /// 8 stopped spurious verb readings shadowing the definite article
 /// ([`Bible::hebrew_word_info`]), dropping article+noun words like הָאָרֶץ
-/// from verb-concept ranks to the article's rank.
-const SURFACE_META_VERSION: i64 = 8;
+/// from verb-concept ranks to the article's rank; 9 added the
+/// `object-marker` concept ahead of every other rank and curated the אֶת
+/// family into the surface-concept table.
+const SURFACE_META_VERSION: i64 = 9;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
@@ -1243,7 +1245,7 @@ impl Bible {
     /// learner stays on simple, grammar-free words while learning the letters —
     /// after which rules unlock one at a time, one per
     /// [`TutorSettings::words_per_concept`] graduated words (the first, the
-    /// definite article, the moment letters are done). A stored `unlock_floor`
+    /// object marker אֶת, the moment letters are done). A stored `unlock_floor`
     /// (the stall safety valve in [`Self::next_study_item`]) raises it further.
     fn unlocked_concepts(&self, s: &TutorSettings) -> rusqlite::Result<i64> {
         let total = crate::grammar::concept_count() as i64;
@@ -4946,8 +4948,8 @@ mod tests {
     /// card — not the spurious verb readings the reverse-parser also carries
     /// for them (הַמֶּלֶךְ as a he-peeled imperative of הלך, הַיּוֹם as a
     /// Piel infinitive of *הימ). Each must classify as exactly ["article"]
-    /// (rank 0, unlocked with the first grammar rule) and issue the article
-    /// card, once, before being introduced as a word.
+    /// (the article's own early rank, not a verb concept's) and issue the
+    /// article card, once, before being introduced as a word.
     #[test]
     fn article_words_gate_behind_the_article_card() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
@@ -4974,9 +4976,13 @@ mod tests {
             );
             let concepts = crate::grammar::concepts_for_surface(s, w.as_ref());
             assert_eq!(concepts, vec!["article"], "concepts for {s}");
+            let article_rank = crate::grammar::concepts()
+                .iter()
+                .position(|c| c.key == "article")
+                .expect("article concept exists") as i64;
             assert_eq!(
                 crate::grammar::concept_rank_for_surface(s, w.as_ref()),
-                0,
+                article_rank,
                 "rank for {s}"
             );
             match bible.next_grammar_card(s, now)? {
@@ -5010,6 +5016,69 @@ mod tests {
             (w.root.as_str(), w.tense.as_deref()),
             ("הלכ", Some("Imperfect")),
             "הֲתֵלֵךְ should keep its interrogative verb reading, got {w:?}"
+        );
+        Ok(())
+    }
+
+    /// The direct-object marker אֶת — the most common word in the Bible — is a
+    /// function word: it must be gated behind (and issue) the object-marker
+    /// concept card rather than being introduced as an ordinary vocabulary
+    /// word, and its whole family (אֵת, וְאֶת, suffixed אֹתוֹ/אֹתָם/אֶתְכֶם)
+    /// shares the one card.
+    #[test]
+    fn object_marker_gates_behind_its_grammar_card() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        // Every family member classifies to the object-marker concept (so none
+        // of them is rank −1 / ungated any more), through vocab_key matching
+        // even without a parse.
+        for s in ["אֶת", "אֵת", "אֹתוֹ", "אוֹתָם", "אֶתְכֶם", "אֹתָהּ"] {
+            assert_eq!(
+                crate::grammar::concepts_for_surface(s, None),
+                vec!["object-marker"],
+                "concepts for {s}"
+            );
+        }
+        // The vav-prefixed forms note the conjunction first, then the marker.
+        assert_eq!(
+            crate::grammar::concepts_for_surface("וְאֶת", None),
+            vec!["conj-ve", "object-marker"]
+        );
+
+        // אֶת is the very first concept in teaching order — unlocked the
+        // moment the alphabet is done.
+        let w = bible.hebrew_word_info("אֶת");
+        assert_eq!(
+            crate::grammar::concept_rank_for_surface("אֶת", w.as_ref()),
+            0,
+            "the object marker should be the first-ranked concept"
+        );
+
+        // The card is issued once for the first family member met, then never
+        // again — the rest introduce as plain words.
+        let now = 1_700_000_000;
+        match bible.next_grammar_card("אֶת", now)? {
+            Some(StudyItem::ExplainGrammar(card)) => {
+                assert_eq!(card.concept, "object-marker");
+                assert_eq!(card.example.surface, "אֶת");
+            }
+            other => panic!("expected the object-marker card for אֶת, got {other:?}"),
+        }
+        assert!(bible.next_grammar_card("אֹתוֹ", now)?.is_none());
+        assert!(bible.next_grammar_card("אֵת", now)?.is_none());
+
+        // The אִתּ־ "with" forms are the preposition, not the object marker.
+        assert_eq!(
+            crate::grammar::concepts_for_surface("אִתְּכֶם", None),
+            vec!["preposition"]
         );
         Ok(())
     }
