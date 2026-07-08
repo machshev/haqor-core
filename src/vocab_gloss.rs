@@ -205,6 +205,7 @@ const CURATED: &[(&str, &str, Option<&str>)] = &[
     ("בֵּית", "house of", Some("Construct of בַּיִת (house).")),
     ("לְבֵית", "to the house of", Some("לְ (to) + בֵּית")),
     ("הַבַּיִת", "the house", Some("הַ (the) + בַּיִת")),
+    ("פָּנִים", "face, faces", Some("Plural in form, usually singular in meaning.")),
     ("פְּנֵי", "face of", Some("Construct of פָּנִים (face).")),
     ("מִפְּנֵי", "from before, because of", Some("מִ (from) + פְּנֵי")),
     ("לִפְנֵי", "before, in front of", Some("לְ (to) + פְּנֵי (face of)")),
@@ -224,6 +225,9 @@ const CURATED: &[(&str, &str, Option<&str>)] = &[
     ("מֵאוֹת", "hundreds", Some("Plural of מֵאָה (hundred).")),
     ("מֵאָה", "hundred", None),
     ("מַיִם", "water", None),
+    ("מָיִם", "water", Some("Pausal form of מַיִם.")),
+    ("הַמַּיִם", "the water", Some("הַ (the) + מַיִם")),
+    ("הַמָּיִם", "the water", Some("הַ (the) + מַיִם, pausal form.")),
     ("רַבִּים", "many", Some("Plural of רַב (much, many).")),
 
     // אֱלֹהִים family.
@@ -240,7 +244,9 @@ const CURATED: &[(&str, &str, Option<&str>)] = &[
     ("הָעָם", "the people", Some("הָ (the) + עַם")),
     ("הָעִיר", "the city", Some("הָ (the) + עִיר")),
     ("הַשָּׁמַיִם", "the heavens", Some("הַ (the) + שָׁמַיִם")),
+    ("הַשָּׁמָיִם", "the heavens", Some("הַ (the) + שָׁמַיִם, pausal form.")),
     ("שָׁמַיִם", "heavens, sky", None),
+    ("שָׁמָיִם", "heavens, sky", Some("Pausal form of שָׁמַיִם.")),
     ("הַכֹּהֲנִים", "the priests", Some("הַ (the) + plural of כֹּהֵן")),
     ("הַכֹּהֵן", "the priest", Some("הַ (the) + כֹּהֵן")),
     ("הַגּוֹיִם", "the nations", Some("הַ (the) + plural of גּוֹי")),

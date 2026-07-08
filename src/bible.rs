@@ -523,6 +523,16 @@ const CURATED_GLOSSES: &[(&str, &str, &str)] = &[
     ("לִפְנֵי", "פנה", "before; in the presence of"),
     ("כֵּן", "", "so; thus"),
     ("סוּס", "סוס", "horse"),
+    // Plural/dual-tantum nouns whose BDB consonant group is unreachable from
+    // the folded surface: BDB files the articles under the shortened skeleton
+    // (מַיִם under מי "waters", שָׁמַיִם under שמי, root שמה) or keeps only a
+    // cross-reference stub at the full skeleton (פנימ "see פנה"), so the
+    // pointing-blind fallback cannot bridge them. These also carry junk verb
+    // readings (מַיִם as a Qal jussive of יממ), which the curated noun
+    // demotes — see `hebrew_word_by_surface_id`.
+    ("מַיִם", "", "water; waters"),
+    ("שָׁמַיִם", "שמה", "heavens; sky"),
+    ("פָּנִים", "פנה", "face; faces"),
     // Suffixed prepositions and pronouns whose BDB consonant group holds only
     // a cross-reference stub (or an unrelated lexeme), so the pointing-blind
     // fallback cannot reach a usable sense: אֵלַי collides with אֻלַי "see
@@ -1551,24 +1561,34 @@ impl Bible {
             .ok()?
         };
 
-        // (kind, label, prefix, root, gloss): root/gloss empty if unresolved.
-        let noun: Option<(String, String, String, String, String)> = {
-            let mut chosen: Option<(String, String, String, String, String)> = None;
+        // (kind, label, prefix, root, gloss, resolved, curated): root/gloss
+        // empty if unresolved. `resolved` is tracked as a flag rather than
+        // inferred from a non-empty root, because a curated lexeme can pin a
+        // gloss while (following BDB) carrying no root — מַיִם "water".
+        // `curated` marks a curated-table hit, which outranks any verb
+        // reading below: the table exists to pin exactly the high-frequency
+        // words whose skeleton collides with an unrelated lexeme, and such
+        // words also attract junk verb parses (מַיִם as a jussive of יממ).
+        let noun: Option<(String, String, String, String, String, bool, bool)> = {
+            let mut chosen = None;
             for (kind, label, prefix, stem) in noun_rows {
-                let resolved = curated_gloss(&stem)
-                    .or_else(|| self.hebrew_cons_root(&fold_consonants(&stem)));
+                let curated = curated_gloss(&stem);
+                let is_curated = curated.is_some();
+                let resolved =
+                    curated.or_else(|| self.hebrew_cons_root(&fold_consonants(&stem)));
                 let resolves = resolved.is_some();
                 let (root, gloss) = resolved.unwrap_or_default();
                 if resolves {
-                    chosen = Some((kind, label, prefix, root, gloss));
+                    chosen = Some((kind, label, prefix, root, gloss, true, is_curated));
                     break;
                 }
-                chosen.get_or_insert((kind, label, prefix, root, gloss));
+                chosen.get_or_insert((kind, label, prefix, root, gloss, false, false));
             }
             chosen
         };
 
-        let noun_resolves = noun.as_ref().is_some_and(|n| !n.3.is_empty());
+        let noun_resolves = noun.as_ref().is_some_and(|n| n.5);
+        let noun_curated = noun.as_ref().is_some_and(|n| n.6);
         // A resolvable noun reading led by the definite article beats a verb
         // reading that only exists by mistreating that article: a he-peeled
         // non-participle (the article never prefixes a finite verb — הָעָם is
@@ -1588,8 +1608,9 @@ impl Bible {
             let participle = v.2.contains("Participle");
             (!participle && v.4.starts_with('\u{05D4}')) || (!v.7 && v.0.starts_with('\u{05D4}'))
         });
-        let verb_resolves =
-            verb.as_ref().is_some_and(|v| v.8) && !(article_noun && verb_shadows_article);
+        let verb_resolves = verb.as_ref().is_some_and(|v| v.8)
+            && !(article_noun && verb_shadows_article)
+            && !noun_curated;
 
         // Prefer a BDB-resolvable verb; else a resolvable noun; else whatever
         // analysis exists (verb before noun).
@@ -1614,7 +1635,7 @@ impl Bible {
             });
         }
 
-        if let Some((kind, label, prefix, root, gloss)) = noun {
+        if let Some((kind, label, prefix, root, gloss, _, _)) = noun {
             let (number, state) = decode_noun_label(&label);
             return Some(HebrewWord {
                 word: norm,
@@ -2336,6 +2357,29 @@ mod tests {
         assert!(!bible.sedra_word_info("כּתָבָא").unwrap().is_empty());
         assert!(bible.hebrew_word_info("בָּרָא").is_some());
         assert!(!bible.hebrew_bdb_by_root("ברא").unwrap().is_empty());
+    }
+
+    /// Plural/dual-tantum nouns whose BDB article is filed under a shortened
+    /// consonant group (מַיִם under מי, שָׁמַיִם under שמי) must resolve as
+    /// curated nouns — not fall through to a junk verb reading (a jussive of
+    /// יממ) or come back unglossed. The pausal spellings share the analyses,
+    /// so they resolve identically.
+    #[test]
+    fn plural_tantum_nouns_resolve_as_nouns() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+
+        for (surface, gloss) in [
+            ("מַיִם", "water; waters"),
+            ("הַמַּיִם", "water; waters"),
+            ("שָׁמַיִם", "heavens; sky"),
+            ("הַשָּׁמָיִם", "heavens; sky"), // pausal, Gen 1:1
+            ("פָּנִים", "face; faces"),
+        ] {
+            let w = bible.hebrew_word_info(surface).unwrap();
+            assert_eq!(w.gloss, gloss, "wrong gloss for {surface}: {w:?}");
+            assert!(w.tense.is_none(), "verb reading won for {surface}: {w:?}");
+        }
     }
 
     #[test]
