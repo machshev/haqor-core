@@ -547,8 +547,13 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// plural-tantum nouns מַיִם/שָׁמַיִם/פָּנִים (BDB files them under
 /// shortened consonant groups, so they carded blank or as a junk verb) and
 /// ranked implausibly-peeled noun analyses last (הַשָּׁ+מָיִם no longer
-/// shadows הַ+שָׁמַיִם).
-const SURFACE_META_VERSION: i64 = 16;
+/// shadows הַ+שָׁמַיִם); 17 flagged names by the resolved BDB lexeme's `pos`
+/// (`n.pr*` / `adj.gent`) — most name entries carry only an etymology gloss
+/// ("God hides"), so the gloss-text sniff missed ~40% of names (and every
+/// gentilic), letting genealogy verses rank as easy and one-off names card
+/// as vocabulary — and let a curated vocabulary gloss override the bridge
+/// (בְּנֵי "sons of" bridges to BDB's *Bani* and was wrongly name-flagged).
+const SURFACE_META_VERSION: i64 = 17;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
@@ -1737,6 +1742,9 @@ impl Bible {
             let g = match crate::vocab_gloss::curated_gloss(&cand) {
                 Some(c) => c.gloss.trim().to_string(),
                 None => match self.hebrew_word_info(&cand) {
+                    // A name's bridged gloss is an etymology ("my father is
+                    // rescue"), not a meaning — never offer one.
+                    Some(w) if w.is_name => continue,
                     Some(w) => w.gloss.trim().to_string(),
                     None => continue,
                 },
@@ -1768,26 +1776,48 @@ impl Bible {
         let Some((surface_id, occurrences)) = row else {
             return Ok(None);
         };
+        // The cached name classification (see `ensure_surface_meta`) knows
+        // signals the resolver alone can't see — the pre-filter's `proper`
+        // class catches names BDB never resolves (עִדּוֹא, which would
+        // otherwise card with a blank gloss) or resolves without a `pos`
+        // marker (אֱלִישָׁמָע "God has heard"). Absent row (the cache hasn't
+        // been built, e.g. in isolated tests) just means no extra signal.
+        let meta_name: bool = self
+            .conn()
+            .query_row(
+                "SELECT is_name FROM progress.surface_meta WHERE surface_id = ?1",
+                params![surface_id],
+                |r| Ok(r.get::<_, i64>(0)? != 0),
+            )
+            .optional()?
+            .unwrap_or(false);
 
-        let (mut root, gloss, inflected, mut morph) = match self.hebrew_word_info(surface) {
-            Some(w) => {
-                let morph = [
-                    w.form.as_deref(),
-                    w.tense.as_deref(),
-                    w.person.as_deref(),
-                    w.gender.as_deref(),
-                    w.number.as_deref(),
-                    w.state.as_deref(),
-                ]
-                .into_iter()
-                .flatten()
-                .collect::<Vec<_>>()
-                .join(" ");
-                let inflected = crate::bible::inflected_gloss(&w);
-                (w.root, w.gloss, inflected, morph)
-            }
-            None => (String::new(), String::new(), String::new(), String::new()),
-        };
+        let (mut root, gloss, inflected, mut morph, resolved_name) =
+            match self.hebrew_word_info(surface) {
+                Some(w) => {
+                    let morph = [
+                        w.form.as_deref(),
+                        w.tense.as_deref(),
+                        w.person.as_deref(),
+                        w.gender.as_deref(),
+                        w.number.as_deref(),
+                        w.state.as_deref(),
+                    ]
+                    .into_iter()
+                    .flatten()
+                    .collect::<Vec<_>>()
+                    .join(" ");
+                    let inflected = crate::bible::inflected_gloss(&w);
+                    (w.root, w.gloss, inflected, morph, w.is_name)
+                }
+                None => (
+                    String::new(),
+                    String::new(),
+                    String::new(),
+                    String::new(),
+                    false,
+                ),
+            };
 
         // A curated gloss (held in the core) is the final learner meaning where
         // one exists — it overrides the automatic bridge and supplies the
@@ -1806,7 +1836,15 @@ impl Bible {
             ),
             None => match crate::bible::prefixed_name_gloss(surface) {
                 Some((g, note)) => (g, String::new(), note),
-                None if crate::bible::is_name_gloss(&gloss) => {
+                // A curated famous name is exempt from the pos/meta signals:
+                // it is in `CURATED_NAMES` precisely because its BDB gloss is
+                // already usable ("Aaron", "Esau") — serve that, not
+                // "(a name)". A gloss that embeds the raw BDB citation still
+                // falls through (it is not a meaning for anyone).
+                None if (!crate::vocab_gloss::curated_name(surface)
+                    && (meta_name || resolved_name))
+                    || crate::bible::is_name_gloss(&gloss) =>
+                {
                     let note = crate::bible::name_description(&gloss);
                     root.clear();
                     morph.clear();
@@ -1916,11 +1954,12 @@ impl Bible {
             return Ok(());
         }
 
-        let surfaces: Vec<(i64, String)> = {
-            let mut stmt = self
-                .conn()
-                .prepare("SELECT surface_id, text FROM hebrewdb.surface WHERE language IS NULL")?;
-            stmt.query_map([], |r| Ok((r.get(0)?, r.get(1)?)))?
+        let surfaces: Vec<(i64, String, Option<String>)> = {
+            let mut stmt = self.conn().prepare(
+                "SELECT surface_id, text, lexical_class FROM hebrewdb.surface \
+                 WHERE language IS NULL",
+            )?;
+            stmt.query_map([], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)))?
                 .collect::<rusqlite::Result<_>>()?
         };
 
@@ -1932,7 +1971,7 @@ impl Bible {
                 "INSERT INTO progress.surface_meta(surface_id, root, form_tier, concept_rank, \
                     glyph_mask, is_name) VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
             )?;
-            for (surface_id, text) in surfaces {
+            for (surface_id, text, lexical_class) in surfaces {
                 // `surface.text` is already the normalised form the resolver uses.
                 let mask = surface_glyph_mask(&text);
                 let parsed = self.hebrew_word_by_surface_id(surface_id, text.clone());
@@ -1941,16 +1980,37 @@ impl Bible {
                     Some(w) => (w.root.clone(), form_tier(w) as i64),
                     None => (String::new(), 0),
                 };
-                // A proper name: BDB marks the long tail with `n.pr`; the
-                // famous names whose entries lack the marker (or are missing
-                // outright) are curated, and their proclitic-prefixed forms
-                // (לְיַעֲקֹב) classify through the same composition the card
-                // builder uses.
-                let is_name = parsed
-                    .as_ref()
-                    .is_some_and(|w| crate::bible::is_name_gloss(&w.gloss))
-                    || crate::vocab_gloss::curated_name(&text)
-                    || crate::bible::prefixed_name_gloss(&text).is_some();
+                // A proper name, by any of the available signals: the noun
+                // bridge flags lexemes BDB marks `n.pr*` / `adj.gent` in the
+                // `pos` column (`w.is_name` — most name entries carry a bare
+                // etymology gloss like "God hides", so the marker never
+                // reaches the gloss text); glosses that *do* embed the
+                // citation (the build-time bridge table) are caught by the
+                // text sniff; proclitic-prefixed curated names (לְיַעֲקֹב)
+                // classify through the same composition the card builder uses;
+                // and the lexical pre-filter's `proper` class covers the names
+                // BDB never resolves (עִדּוֹא cards blank) or whose entry
+                // carries no `pos` at all (אֱלִישָׁמָע "God has heard") —
+                // vetoed when the surface exactly heads a real vocabulary
+                // article (זָהָב is in the proper list via Di-zahab but *is*
+                // "gold"). A curated gloss overrides everything, exactly as it
+                // does on the card: curated names are names (מֹשֶׁה), curated
+                // vocabulary is not (בְּנֵי "sons of" bridges to BDB's *Bani*).
+                let is_name = if crate::vocab_gloss::curated_name(&text) {
+                    true
+                } else if crate::vocab_gloss::curated_gloss(&text).is_some() {
+                    false
+                } else {
+                    parsed
+                        .as_ref()
+                        .is_some_and(|w| w.is_name || crate::bible::is_name_gloss(&w.gloss))
+                        || crate::bible::prefixed_name_gloss(&text).is_some()
+                        || (lexical_class.as_deref() == Some("proper")
+                            && !self.bdb_exact_vocab_match(
+                                &text,
+                                parsed.as_ref().and_then(|w| w.prefix.as_deref()),
+                            ))
+                };
                 ins.execute(params![surface_id, root, tier, crank, mask, is_name as i64])?;
             }
         }
@@ -2472,8 +2532,11 @@ impl Bible {
     /// A form drill to introduce for a word of the target verse whose meaning is
     /// already known (graduated) and whose form is worth drilling
     /// (`form_tier >= 2`), not yet started as a form drill. Simplest form first,
-    /// then most common. `None` once every drillable word has one. The
-    /// `form_srs` row is created when the card is first graded (like a word).
+    /// then most common. Never a proper name: a name card is *seeded* graduated
+    /// after one showing, which would otherwise make it instantly form-drillable
+    /// — quizzing inflections of its junk bridged gloss ("the adj.gent.s").
+    /// `None` once every drillable word has one. The `form_srs` row is created
+    /// when the card is first graded (like a word).
     fn next_form_introduction(
         &self,
         b: u8,
@@ -2493,6 +2556,7 @@ impl Bible {
                  LEFT JOIN progress.form_srs fs ON fs.surface_id = vw.surface_id
                  WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
                    AND sm.form_tier >= 2 AND fs.surface_id IS NULL
+                   AND sm.is_name = 0
                  ORDER BY sm.form_tier ASC, s.occurrences DESC
                  LIMIT 1",
                 params![b, c, v],
@@ -2523,7 +2587,11 @@ impl Bible {
         } else {
             "1=1"
         };
-        let order = if random { "RANDOM()" } else { "s.occurrences DESC" };
+        let order = if random {
+            "RANDOM()"
+        } else {
+            "s.occurrences DESC"
+        };
         let mut stmt = self.conn().prepare(&format!(
             "SELECT ws.surface FROM progress.word_srs ws \
              JOIN hebrewdb.surface s ON s.surface_id = ws.surface_id \
@@ -2582,9 +2650,9 @@ impl Bible {
         let mut out: Vec<String> = Vec::new();
         let mut seen: std::collections::HashSet<&str> = own.into_iter().collect();
         let introduced: Vec<String> = {
-            let mut stmt = self.conn().prepare(
-                "SELECT key FROM progress.suffix_srs ORDER BY introduced_epoch",
-            )?;
+            let mut stmt = self
+                .conn()
+                .prepare("SELECT key FROM progress.suffix_srs ORDER BY introduced_epoch")?;
             let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
             rows.collect::<Result<_, _>>()?
         };
@@ -2680,10 +2748,15 @@ impl Bible {
         // Whichever is most due wins; a smaller `order_col` is more due. Ties
         // break word → form → suffix → glyph (word meaning first).
         let due_of = |r: &Option<(String, i64)>| r.as_ref().map(|(_, d)| *d);
-        let best = [due_of(&word), due_of(&form), due_of(&suffix), due_of(&glyph)]
-            .into_iter()
-            .flatten()
-            .min();
+        let best = [
+            due_of(&word),
+            due_of(&form),
+            due_of(&suffix),
+            due_of(&glyph),
+        ]
+        .into_iter()
+        .flatten()
+        .min();
         let Some(best) = best else {
             debug!("next_review: pull_forward={pull_forward} -> nothing due");
             return Ok(None);
@@ -3155,7 +3228,12 @@ impl Bible {
 
     /// [`Self::verse_words`] with each word's proper-name flag (from the
     /// `surface_meta` cache), for rendering names distinctly in the verse.
-    pub fn verse_words_flagged(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Vec<(String, bool)>> {
+    pub fn verse_words_flagged(
+        &self,
+        b: u8,
+        c: u8,
+        v: u8,
+    ) -> rusqlite::Result<Vec<(String, bool)>> {
         let mut stmt = self.conn().prepare(
             "SELECT s.text, COALESCE(sm.is_name, 0)
              FROM hebrewdb.verse_word vw
@@ -3722,8 +3800,28 @@ mod tests {
             "citation kept as note, got {:?}",
             card.note
         );
-        assert!(card.root.is_empty(), "spurious root hidden: {:?}", card.root);
+        assert!(
+            card.root.is_empty(),
+            "spurious root hidden: {:?}",
+            card.root
+        );
         assert!(card.distractors.is_empty(), "name cards self-grade");
+
+        // אֶלְיַחְבָּא — a name whose BDB entry carries `n.pr.m` only in the
+        // `pos` column; the gloss is the bare etymology "God hides", so the
+        // gloss-text sniff alone carded it as vocabulary (root אלה).
+        let card = bible.word_card("אֶלְיַחְבָּא")?.expect("Eliahba exists");
+        assert_eq!(card.gloss, NAME_GLOSS);
+        assert!(
+            card.root.is_empty(),
+            "spurious root hidden: {:?}",
+            card.root
+        );
+        // הַשַּׁעַלְבֹנִי — a gentilic (`adj.gent`) whose gloss is the bare
+        // abbreviation; it carded as "the adj.gent.".
+        let card = bible.word_card("הַשַּׁעַלְבֹנִי")?.expect("gentilic exists");
+        assert_eq!(card.gloss, NAME_GLOSS);
+        assert!(!card.note.contains("adj.gent"), "note: {:?}", card.note);
 
         // Famous names the bridge mis-glosses are curated.
         for (surface, gloss) in [
@@ -3777,13 +3875,44 @@ mod tests {
                 != 0
         };
         // The genealogy names that used to be scheduled early (their bridged
-        // roots are common homographs), plus a curated famous name.
-        for name in ["אֶזְבָּי", "חֶצְרוֹ", "נַעֲרַי", "מֹשֶׁה", "לְיַעֲקֹב"] {
+        // roots are common homographs), plus a curated famous name, plus the
+        // pos-only-marked names and a gentilic the gloss sniff used to miss
+        // (the Ezra 7:5 genealogy carded them as vocabulary and left them
+        // uncoloured in the verse).
+        for name in [
+            "אֶזְבָּי",
+            "חֶצְרוֹ",
+            "נַעֲרַי",
+            "מֹשֶׁה",
+            "לְיַעֲקֹב",
+            "אֶלְיַחְבָּא",
+            "הַשַּׁעַלְבֹנִי",
+            "אֲבִישׁוּעַ",
+            "אֶלְעָזָר",
+            "פִּינְחָס",
+            "אַהֲרֹן",
+            // Names BDB never resolves (blank card without the pre-filter's
+            // `proper` class) or resolves with an empty `pos`.
+            "עִדּוֹא",
+            "חִלְקִיָּה",
+            "אֱלִישָׁמָע",
+        ] {
             assert!(flag(name), "{name} should be flagged as a name");
         }
-        for word in ["דָּבָר", "אָדָם", "הָאָרֶץ"] {
+        // Homograph collisions with rare place-names must stay vocabulary:
+        // זָהָב "gold" (Di-zahab), אֶלֶף "thousand" (the city Eleph), בְּנֵי
+        // "sons of" (Bene-jaakan) are all in the pre-filter's proper list —
+        // as is הָרֹאשׁ "the chief" (via *Rosh* son of Benjamin), whose
+        // vocabulary reading only shows after peeling the article.
+        for word in ["דָּבָר", "אָדָם", "הָאָרֶץ", "זָהָב", "אֶלֶף", "בְּנֵי", "הָרֹאשׁ"]
+        {
             assert!(!flag(word), "{word} should not be flagged as a name");
         }
+
+        // A curated famous name keeps its usable BDB gloss on the card — the
+        // name flag must not degrade it to "(a name)".
+        let card = bible.word_card("אַהֲרֹן")?.expect("Aaron has a surface");
+        assert_eq!(card.gloss, "Aaron");
 
         // The verse card carries the flags, aligned with its words.
         let (b, c, v): (u8, u8, u8) = bible.conn().query_row(

@@ -174,6 +174,16 @@ pub(crate) fn collect_attestation(morphhb_dir: &Path) -> Result<AttestMap> {
 }
 
 fn collect_book(path: &Path, out: &mut Vec<Gold>) -> Result<()> {
+    for_each_token(path, |surface, morph| {
+        if let Some(g) = parse_gold(morph, surface.to_string()) {
+            out.push(g);
+        }
+    })
+}
+
+/// Walk every `<w morph="…">token</w>` of a morphhb WLC OSIS book, calling `f`
+/// with the cantillation-normalised surface and its raw morph code.
+fn for_each_token(path: &Path, mut f: impl FnMut(&str, &str)) -> Result<()> {
     let mut reader = Reader::from_file(path)?;
     let mut buf = Vec::new();
     let mut in_word = false;
@@ -202,10 +212,8 @@ fn collect_book(path: &Path, out: &mut Vec<Gold>) -> Result<()> {
                 in_word = false;
                 if !morph.is_empty() {
                     let surface = normalize_surface(&text);
-                    if !surface.is_empty()
-                        && let Some(g) = parse_gold(&morph, surface)
-                    {
-                        out.push(g);
+                    if !surface.is_empty() {
+                        f(&surface, &morph);
                     }
                 }
             }
@@ -215,6 +223,51 @@ fn collect_book(path: &Path, out: &mut Vec<Gold>) -> Result<()> {
         buf.clear();
     }
     Ok(())
+}
+
+/// Whether an OSHB morph code tags its token as a proper name or gentilic:
+/// after the language letter (`H`/`A`), any `/`-separated morpheme segment
+/// that is exactly `Np` (proper noun) or starts with `Ng` (gentilic). A
+/// prefixed name ("HC/Np", "HR/Np") counts; a Niphal perfect verb ("HVNp3ms")
+/// does not — `Np` must be the whole segment.
+fn name_morph(morph: &str) -> bool {
+    let code = morph
+        .strip_prefix('H')
+        .or_else(|| morph.strip_prefix('A'))
+        .unwrap_or(morph);
+    code.split('/')
+        .any(|seg| seg == "Np" || seg.starts_with("Ng"))
+}
+
+/// Per-surface gold name attestation from the OSHB tagging: for each
+/// cantillation-normalised surface, `(name_tokens, total_tokens)` — how many
+/// of its corpus occurrences are tagged proper noun / gentilic
+/// ([`name_morph`]), out of all its tagged occurrences. A surface whose every
+/// token is so tagged is authoritatively a name (nothing else it could be);
+/// one with any other reading attested (בֶּן "son", זָהָב "gold") is
+/// authoritatively vocabulary, whatever a headword list says.
+pub(crate) type NameAttestMap = std::collections::HashMap<String, (u32, u32)>;
+
+pub(crate) fn collect_name_attestation(morphhb_dir: &Path) -> Result<NameAttestMap> {
+    let wlc = morphhb_dir.join("wlc");
+    let mut paths: Vec<_> = std::fs::read_dir(&wlc)
+        .with_context(|| format!("reading {}", wlc.display()))?
+        .filter_map(|e| e.ok().map(|e| e.path()))
+        .filter(|p| p.extension().is_some_and(|x| x == "xml"))
+        .collect();
+    paths.sort();
+
+    let mut map = NameAttestMap::new();
+    for path in paths {
+        for_each_token(&path, |surface, morph| {
+            let e = map.entry(surface.to_string()).or_default();
+            e.1 += 1;
+            if name_morph(morph) {
+                e.0 += 1;
+            }
+        })?;
+    }
+    Ok(map)
 }
 
 /// Load the set of distinct cantillation-normalised OT surfaces present in
