@@ -56,6 +56,20 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 println!("{i:>3}  rev form  {}", w.surface);
                 bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
             }
+            StudyItem::NewSuffixDrill(s) => {
+                println!(
+                    "{i:>3}  NEW SUFFIX  [{}] {}+{} = {} ({})",
+                    s.key, s.stem, s.suffix, s.meaning, s.surface
+                );
+                bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
+            }
+            StudyItem::ReviewSuffixDrill(s) => {
+                println!(
+                    "{i:>3}  rev suffix  [{}] on {}  d={:?}",
+                    s.key, s.surface, s.distractors
+                );
+                bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
+            }
             StudyItem::ExplainIntro(key) => {
                 println!("{i:>3}  INTRO     [{key}]");
                 bible.next_study_item(now)?

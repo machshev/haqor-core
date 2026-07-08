@@ -146,6 +146,10 @@ pub enum Track {
     /// A word's grammatical *form* — a "which form is this?" drill, tracked
     /// separately from its meaning ([`Track::Word`]) in `form_srs`.
     Form,
+    /// A pronominal ending (־ִי "me", ־וֹ "him") drilled highlighted on a
+    /// rotating known host word, tracked per person-gender-number key in
+    /// `suffix_srs` (see [`crate::pronoun_suffix`]).
+    Suffix,
 }
 
 /// Mutable SM-2 state for one card. `interval_days == 0` means the card is still
@@ -274,6 +278,31 @@ pub struct WordCard {
     pub distractors: Vec<String>,
 }
 
+/// A pronominal-ending drill: the ending shown on a host word the learner
+/// already knows, with the ending's span highlighted (the app renders `stem`
+/// plain and `suffix` in red, the way a new vowel is taught on its host
+/// consonant). The quiz asks which pronoun the ending stands for; reviews
+/// rotate the host across known suffixed words so the ending — not one
+/// word's shape — is what's being learnt.
+#[derive(Debug, Clone)]
+pub struct SuffixCard {
+    /// Person-gender-number key ("1cs", "3ms") — the [`Track::Suffix`]
+    /// grading key, recorded in `progress.suffix_srs`.
+    pub key: String,
+    /// The pronoun the ending stands for ("me", "him") — the quiz answer.
+    pub meaning: String,
+    /// The host word carrying the ending; `surface == stem + suffix`.
+    pub surface: String,
+    pub stem: String,
+    pub suffix: String,
+    /// The host's learner gloss ("to me"), for the answer side. Empty when
+    /// no curated or bridge gloss exists.
+    pub gloss: String,
+    /// Other endings' meanings as wrong answers (introduced endings first,
+    /// topped up from the inventory). Empty when too few exist for a quiz.
+    pub distractors: Vec<String>,
+}
+
 /// A fully-learnt verse offered to read, with other now-readable passages.
 #[derive(Debug, Clone)]
 pub struct VerseCard {
@@ -332,6 +361,11 @@ pub enum StudyItem {
     /// other inflections of the same word. Graded on [`Track::Form`].
     NewFormDrill(WordCard),
     ReviewFormDrill(WordCard),
+    /// A pronominal ending drilled highlighted on a known host word (see
+    /// [`SuffixCard`]). Introduced once the ending's concept card has been
+    /// shown and a host word has graduated; graded on [`Track::Suffix`].
+    NewSuffixDrill(SuffixCard),
+    ReviewSuffixDrill(SuffixCard),
     /// A reading mark (sof pasuq, maqaf) shown with an explanation. Carries no
     /// grade — the app just acknowledges it and asks for the next item, like
     /// [`StudyItem::ReadVerse`]. Never revisited once shown.
@@ -619,6 +653,16 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
          CREATE TABLE IF NOT EXISTS progress.form_srs(
             surface          TEXT    PRIMARY KEY,
             surface_id       INTEGER NOT NULL,
+            ease             REAL    NOT NULL,
+            interval_days    INTEGER NOT NULL,
+            due_epoch        INTEGER NOT NULL,
+            reps             INTEGER NOT NULL,
+            lapses           INTEGER NOT NULL,
+            introduced_epoch INTEGER NOT NULL,
+            last_grade       INTEGER NOT NULL
+         );
+         CREATE TABLE IF NOT EXISTS progress.suffix_srs(
+            key              TEXT    PRIMARY KEY,
             ease             REAL    NOT NULL,
             interval_days    INTEGER NOT NULL,
             due_epoch        INTEGER NOT NULL,
@@ -1060,6 +1104,24 @@ impl Bible {
                 "SELECT ease, interval_days, reps, lapses FROM progress.form_srs \
                  WHERE surface = ?1",
                 params![surface],
+                |r| {
+                    Ok(Srs {
+                        ease: r.get(0)?,
+                        interval_days: r.get(1)?,
+                        reps: r.get(2)?,
+                        lapses: r.get(3)?,
+                    })
+                },
+            )
+            .optional()
+    }
+
+    fn suffix_srs(&self, key: &str) -> rusqlite::Result<Option<Srs>> {
+        self.conn()
+            .query_row(
+                "SELECT ease, interval_days, reps, lapses FROM progress.suffix_srs \
+                 WHERE key = ?1",
+                params![key],
                 |r| {
                     Ok(Srs {
                         ease: r.get(0)?,
@@ -2297,6 +2359,129 @@ impl Bible {
         Ok(self.form_card(&surface)?.map(StudyItem::NewFormDrill))
     }
 
+    // --- pronominal-ending drills --------------------------------------------
+
+    /// A known host word for the ending `key`: an introduced (optionally
+    /// graduated) `word_srs` surface that is a curated suffixed function word
+    /// carrying that ending. `random` rotates the host between reviews so the
+    /// ending is what gets learnt; otherwise the most frequent host is chosen
+    /// (the introduction card, deterministic).
+    fn suffix_host(
+        &self,
+        key: &str,
+        graduated_only: bool,
+        random: bool,
+    ) -> rusqlite::Result<Option<String>> {
+        let cond = if graduated_only {
+            "ws.interval_days >= 1"
+        } else {
+            "1=1"
+        };
+        let order = if random { "RANDOM()" } else { "s.occurrences DESC" };
+        let mut stmt = self.conn().prepare(&format!(
+            "SELECT ws.surface FROM progress.word_srs ws \
+             JOIN hebrewdb.surface s ON s.surface_id = ws.surface_id \
+             WHERE {cond} ORDER BY {order}"
+        ))?;
+        let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
+        for row in rows {
+            let surface = row?;
+            if !crate::grammar::pronoun_suffix_host(&surface) {
+                continue;
+            }
+            if let Some(split) = crate::pronoun_suffix::split_pronoun_suffix(&surface)
+                && split.key == key
+            {
+                return Ok(Some(surface));
+            }
+        }
+        Ok(None)
+    }
+
+    /// Build the drill card for ending `key` on `host`. `None` when the host
+    /// doesn't actually carry the ending (stale state).
+    fn suffix_card(&self, key: &str, host: &str) -> rusqlite::Result<Option<SuffixCard>> {
+        let Some(split) = crate::pronoun_suffix::split_pronoun_suffix(host) else {
+            return Ok(None);
+        };
+        if split.key != key {
+            return Ok(None);
+        }
+        // The host's learner gloss, as its word card would show it.
+        let gloss = match crate::vocab_gloss::curated_gloss(host) {
+            Some(c) => c.gloss.to_string(),
+            None => self
+                .hebrew_word_info(host)
+                .map(|w| w.gloss.trim().to_string())
+                .unwrap_or_default(),
+        };
+        Ok(Some(SuffixCard {
+            key: key.to_string(),
+            meaning: split.meaning.to_string(),
+            surface: host.to_string(),
+            stem: split.stem,
+            suffix: split.suffix,
+            gloss,
+            distractors: self.suffix_distractors(key)?,
+        }))
+    }
+
+    /// Other endings' meanings as wrong answers: already-introduced endings
+    /// first (in introduction order), topped up from the inventory (teaching
+    /// order) so early drills still fill a multiple-choice card — the same
+    /// top-up glyph distractors use.
+    fn suffix_distractors(&self, key: &str) -> rusqlite::Result<Vec<String>> {
+        const WANT: usize = 3;
+        let own = crate::pronoun_suffix::pronoun_suffix(key).map(|p| p.meaning);
+        let mut out: Vec<String> = Vec::new();
+        let mut seen: std::collections::HashSet<&str> = own.into_iter().collect();
+        let introduced: Vec<String> = {
+            let mut stmt = self.conn().prepare(
+                "SELECT key FROM progress.suffix_srs ORDER BY introduced_epoch",
+            )?;
+            let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
+            rows.collect::<Result<_, _>>()?
+        };
+        let inventory = crate::pronoun_suffix::PRONOUN_SUFFIXES
+            .iter()
+            .map(|p| p.key.to_string());
+        for k in introduced.into_iter().chain(inventory) {
+            if out.len() >= WANT {
+                break;
+            }
+            let Some(p) = crate::pronoun_suffix::pronoun_suffix(&k) else {
+                continue;
+            };
+            if seen.insert(p.meaning) {
+                out.push(p.meaning.to_string());
+            }
+        }
+        Ok(out)
+    }
+
+    /// A new pronominal-ending drill, once its concept has been taught: the
+    /// first inventory ending (teaching order) with no `suffix_srs` row yet
+    /// and a graduated host word to show it on. The row is created when the
+    /// card is first graded, like a form drill.
+    fn next_suffix_introduction(&self, _now: i64) -> rusqlite::Result<Option<StudyItem>> {
+        // The pronoun-ending idea is explained by the prep-suffix card (or,
+        // for the אֹתוֹ family, the object-marker card) before any drilling.
+        if !self.concept_seen("prep-suffix")? && !self.concept_seen("object-marker")? {
+            return Ok(None);
+        }
+        for p in crate::pronoun_suffix::PRONOUN_SUFFIXES {
+            if self.suffix_srs(p.key)?.is_some() {
+                continue;
+            }
+            if let Some(host) = self.suffix_host(p.key, true, false)?
+                && let Some(card) = self.suffix_card(p.key, &host)?
+            {
+                return Ok(Some(StudyItem::NewSuffixDrill(card)));
+            }
+        }
+        Ok(None)
+    }
+
     /// The next review card: the most-overdue introduced card (`pull_forward`
     /// false), or — to keep the session moving when nothing is strictly due —
     /// the longest-waiting still-in-learning card (`pull_forward` true).
@@ -2344,11 +2529,12 @@ impl Bible {
         let glyph: GlyphRow = pick("glyph_srs", "glyph")?;
         let word: WordRow = pick("word_srs", "surface")?;
         let form: WordRow = pick("form_srs", "surface")?;
+        let suffix: WordRow = pick("suffix_srs", "key")?;
 
         // Whichever is most due wins; a smaller `order_col` is more due. Ties
-        // break word → form → glyph (word meaning first).
+        // break word → form → suffix → glyph (word meaning first).
         let due_of = |r: &Option<(String, i64)>| r.as_ref().map(|(_, d)| *d);
-        let best = [due_of(&word), due_of(&form), due_of(&glyph)]
+        let best = [due_of(&word), due_of(&form), due_of(&suffix), due_of(&glyph)]
             .into_iter()
             .flatten()
             .min();
@@ -2365,6 +2551,25 @@ impl Bible {
             let (surface, _) = form.expect("min came from form");
             debug!("next_review: pull_forward={pull_forward} -> form {surface:?} (due={best})");
             return Ok(self.form_card(&surface)?.map(StudyItem::ReviewFormDrill));
+        }
+        if due_of(&suffix) == Some(best) {
+            let (key, _) = suffix.expect("min came from suffix");
+            debug!("next_review: pull_forward={pull_forward} -> suffix {key:?} (due={best})");
+            // A random known host keeps the drill about the ending, not one
+            // word's shape. Every introduced ending had a host word; if none
+            // remains (stale state from a partial reset), drop the orphan row
+            // — it re-introduces itself once a host graduates again.
+            if let Some(host) = self.suffix_host(&key, false, true)?
+                && let Some(card) = self.suffix_card(&key, &host)?
+            {
+                return Ok(Some(StudyItem::ReviewSuffixDrill(card)));
+            }
+            debug!("next_review: no host renders suffix {key:?}; dropping the row");
+            self.conn().execute(
+                "DELETE FROM progress.suffix_srs WHERE key = ?1",
+                params![key],
+            )?;
+            return self.next_review(now, pull_forward);
         }
         let (g, _) = glyph.expect("min came from glyph");
         debug!("next_review: pull_forward={pull_forward} -> glyph {g:?} (due={best})");
@@ -2474,6 +2679,13 @@ impl Bible {
         if let Some(review) = self.next_review(now, false)? {
             debug!("next_study_item: due review -> {review:?}");
             return Ok(review);
+        }
+        // A pronominal ending whose concept card has been shown gets its
+        // drill introduced as soon as a host word graduates — consolidation
+        // on known material, ahead of anything new.
+        if let Some(item) = self.next_suffix_introduction(now)? {
+            debug!("next_study_item: suffix drill introduction -> {item:?}");
+            return Ok(item);
         }
         // Curriculum ordering (below) needs the per-surface root/form-tier cache;
         // build it once here (cheap version-stamp check thereafter).
@@ -2737,6 +2949,32 @@ impl Bible {
                     ],
                 )?;
             }
+            Track::Suffix => {
+                // Only inventory endings are drilled — ignore a stale or
+                // foreign key rather than let it haunt the review rotation
+                // (the same guard reading-mark glyph keys get).
+                if crate::pronoun_suffix::pronoun_suffix(key).is_some() {
+                    let next = self.suffix_srs(key)?.unwrap_or_default().graded(grade);
+                    self.conn().execute(
+                        "INSERT INTO progress.suffix_srs(key, ease, interval_days, due_epoch, \
+                            reps, lapses, introduced_epoch, last_grade) \
+                         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) \
+                         ON CONFLICT(key) DO UPDATE SET ease=excluded.ease, \
+                            interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
+                            reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
+                        params![
+                            key,
+                            next.ease,
+                            next.interval_days,
+                            next.due_at(now),
+                            next.reps,
+                            next.lapses,
+                            now,
+                            grade_i
+                        ],
+                    )?;
+                }
+            }
         }
         // Log one review event per card answer (a syllable card grades several
         // glyphs but is a single answer) for streak / activity / accuracy stats.
@@ -2744,6 +2982,7 @@ impl Bible {
             Track::Glyph => "glyph",
             Track::Word => "word",
             Track::Form => "form",
+            Track::Suffix => "suffix",
         };
         self.conn().execute(
             "INSERT INTO progress.reviews(epoch, day, track, grade) VALUES (?1, ?2, ?3, ?4)",
@@ -3194,6 +3433,7 @@ impl Bible {
              DELETE FROM progress.verse_progress;
              DELETE FROM progress.meta WHERE key != 'surface_meta_v';
              DELETE FROM progress.form_srs;
+             DELETE FROM progress.suffix_srs;
              DELETE FROM progress.reviews;
              DELETE FROM progress.marks_seen;
              DELETE FROM progress.concepts_seen;",
@@ -3273,6 +3513,9 @@ mod tests {
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Easy, now)?
                 }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Easy, now)?
+                }
                 StudyItem::NewGlyph(g) | StudyItem::ReviewGlyph(g) => {
                     bible.submit_review(Track::Glyph, &g.glyph, Grade::Easy, now)?
                 }
@@ -3329,6 +3572,9 @@ mod tests {
                 }
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
                 }
                 StudyItem::ExplainGrammar(card) => {
                     // Content is populated and illustrated by the pending word.
@@ -3500,6 +3746,9 @@ mod tests {
                 }
                 StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
@@ -3732,6 +3981,9 @@ mod tests {
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
+                }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
                 | StudyItem::ExplainFinalForms(_)
@@ -3791,6 +4043,9 @@ mod tests {
                 }
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Easy, now)?
+                }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Easy, now)?
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
@@ -3855,6 +4110,9 @@ mod tests {
                     StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                         bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                     }
+                    StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                        bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
+                    }
                     _ => bible.next_study_item(now)?,
                 };
             }
@@ -3911,6 +4169,9 @@ mod tests {
                     }
                     StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                         bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                    }
+                    StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                        bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
                     }
                     StudyItem::ExplainMark(_)
                     | StudyItem::ExplainGrammar(_)
@@ -4320,6 +4581,9 @@ mod tests {
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
+                }
                 StudyItem::ExplainMark(_) => {
                     // Gradeless, like ReadVerse: acknowledged just by asking
                     // for the next item.
@@ -4375,6 +4639,9 @@ mod tests {
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
                 }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
+                }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
                 | StudyItem::ExplainFinalForms(_)
@@ -4421,6 +4688,9 @@ mod tests {
                 }
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
@@ -4493,6 +4763,9 @@ mod tests {
                 }
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
@@ -4620,6 +4893,9 @@ mod tests {
                 }
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
                 }
                 StudyItem::ExplainMark(g) => {
                     explained.push(g.glyph.clone());
@@ -4752,6 +5028,9 @@ mod tests {
                 }
                 StudyItem::NewFormDrill(w) | StudyItem::ReviewFormDrill(w) => {
                     bible.submit_review(Track::Form, &w.surface, Grade::Good, now)?
+                }
+                StudyItem::NewSuffixDrill(s) | StudyItem::ReviewSuffixDrill(s) => {
+                    bible.submit_review(Track::Suffix, &s.key, Grade::Good, now)?
                 }
                 StudyItem::ExplainMark(_)
                 | StudyItem::ExplainGrammar(_)
@@ -5129,6 +5408,83 @@ mod tests {
             crate::grammar::concepts_for_surface("אִתְּכֶם", None),
             vec!["preposition", "prep-suffix"]
         );
+        Ok(())
+    }
+
+    /// Pronominal endings are drilled highlighted on known host words: once
+    /// the prep-suffix concept has been shown and a suffixed word has
+    /// graduated, the ending gets its own SRS card (stem + suffix split for
+    /// the app's red highlight), reviews rotate hosts, and nothing is
+    /// introduced before the concept card.
+    #[test]
+    fn pronoun_endings_drill_on_known_hosts() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+        let now = 1_700_000_000;
+
+        // Graduate two suffixed hosts: לוֹ (3ms) and אֵלַי (1cs).
+        for surface in ["לוֹ", "אֵלַי"] {
+            let id: i64 = bible.conn().query_row(
+                "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
+                params![surface],
+                |r| r.get(0),
+            )?;
+            bible.conn().execute(
+                "INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days, \
+                    due_epoch, reps, lapses, introduced_epoch, last_grade) \
+                 VALUES (?1, ?2, 2.5, 6, ?3, 3, 0, ?4, 2)",
+                params![surface, id, now + 999_999, now],
+            )?;
+        }
+
+        // No drill before the concept card has been shown.
+        assert!(bible.next_suffix_introduction(now)?.is_none());
+        bible.conn().execute(
+            "INSERT INTO progress.concepts_seen(concept, introduced_epoch) VALUES ('prep-suffix', ?1)",
+            params![now],
+        )?;
+
+        // 3ms leads the inventory; its only graduated host is לוֹ. The card
+        // splits for the highlight and quizzes the pronoun.
+        let card = match bible.next_suffix_introduction(now)? {
+            Some(StudyItem::NewSuffixDrill(c)) => c,
+            other => panic!("expected a new suffix drill, got {other:?}"),
+        };
+        assert_eq!(card.key, "3ms");
+        assert_eq!(card.surface, "לוֹ");
+        assert_eq!(format!("{}{}", card.stem, card.suffix), card.surface);
+        assert_eq!(card.meaning, "him");
+        assert_eq!(card.distractors.len(), 3);
+        assert!(!card.distractors.contains(&"him".to_string()));
+
+        // Grading creates the row; the next introduction moves to 1cs.
+        bible.submit_review(Track::Suffix, "3ms", Grade::Good, now)?;
+        assert!(bible.suffix_srs("3ms")?.is_some());
+        let card = match bible.next_suffix_introduction(now)? {
+            Some(StudyItem::NewSuffixDrill(c)) => c,
+            other => panic!("expected the 1cs drill next, got {other:?}"),
+        };
+        assert_eq!((card.key.as_str(), card.surface.as_str()), ("1cs", "אֵלַי"));
+        assert_eq!(card.stem, "אֵל");
+
+        // A due ending comes back as a review on a known host.
+        bible
+            .conn()
+            .execute("UPDATE progress.suffix_srs SET due_epoch = 0", [])?;
+        match bible.next_review(now, false)? {
+            Some(StudyItem::ReviewSuffixDrill(c)) => {
+                assert_eq!(c.key, "3ms");
+                assert_eq!(c.surface, "לוֹ");
+            }
+            other => panic!("expected a suffix review, got {other:?}"),
+        }
         Ok(())
     }
 }
