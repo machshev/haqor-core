@@ -314,12 +314,16 @@ pub struct VerseCard {
     /// the app let the learner flag which ones they misread, demoting just
     /// those (see [`Bible::verse_words`]).
     pub words: Vec<String>,
+    /// Aligned with `words`: true where the word is a proper name, so the app
+    /// can render names distinctly — a name is sounded out, not translated.
+    pub names: Vec<bool>,
 }
 
-/// A grammar concept shown with a short explanation, illustrated by the word
-/// about to be learnt. Like [`StudyItem::ExplainMark`] it carries no grade — the
-/// app acknowledges it and asks for the next item — and is shown at most once
-/// (tracked in `progress.concepts_seen`). Content comes from [`crate::grammar`].
+/// A grammar concept shown with a short explanation, illustrated by a familiar
+/// word that exercises it. Like [`StudyItem::ExplainMark`] it carries no grade —
+/// the app acknowledges it and asks for the next item — and is shown at most
+/// once (tracked in `progress.concepts_seen`). Content comes from
+/// [`crate::grammar`].
 #[derive(Debug, Clone)]
 pub struct GrammarCard {
     /// Stable concept key (recorded once seen).
@@ -329,7 +333,9 @@ pub struct GrammarCard {
     /// A compact formula ("וַ + imperfect → \"and he …\""), empty when none.
     pub formula: String,
     pub examples: Vec<String>,
-    /// The word about to be introduced, which exercises this concept.
+    /// A word illustrating this concept — the learner's most familiar (or the
+    /// corpus's most frequent) example, not necessarily the word about to be
+    /// introduced (see `Bible::grammar_example_surface`).
     pub example: WordCard,
 }
 
@@ -501,10 +507,13 @@ const DONE_SURFACES: &str = "SELECT surface_id FROM progress.word_srs \
 /// Roots the learner already knows — those with at least one fully-learnt
 /// (meaning-graduated) surface, resolved through the [`Bible::ensure_surface_meta`]
 /// cache. A new *form* of one of these roots is the cheapest thing to teach next,
-/// so verse and word selection prefer them. A subquery reused across joins.
+/// so verse and word selection prefer them. Proper names are excluded: a name's
+/// bridged root is usually a spurious homograph (אֶזְבָּי resolves to אות), so
+/// having met the name says nothing about the root. A subquery reused across
+/// joins.
 const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm \
      JOIN progress.word_srs ws ON ws.surface_id = sm.surface_id \
-     WHERE ws.interval_days >= 1 AND sm.root <> ''";
+     WHERE ws.interval_days >= 1 AND sm.root <> '' AND sm.is_name = 0";
 
 /// Bumped whenever [`form_tier`], the primary-root resolution, or the cached
 /// `surface_meta` columns change, so a stale [`Bible::ensure_surface_meta`] cache
@@ -531,8 +540,11 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// root-header stubs from the noun bridge (זָהָב carded "(√ of following;
 /// meaning dubious…)" instead of "gold"); 14 curated הוּא/הַהוּא and the
 /// ketiv הִוא (BDB's epicene "he; she; it" carded for the plain 3ms
-/// pronoun).
-const SURFACE_META_VERSION: i64 = 14;
+/// pronoun); 15 added the `is_name` column (proper names stop inheriting
+/// their bridged root's corpus frequency in verse/word ordering) and curated
+/// the famous names the bridge mis-glossed (מֹשֶׁה "draw", שְׁלֹמֹה
+/// "garment"), changing those surfaces' primary root.
+const SURFACE_META_VERSION: i64 = 15;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
@@ -553,13 +565,23 @@ const ALPHABET_VOWEL_TARGET: i64 = 10;
 /// taught in frequency order rather than being skipped.
 const LETTER_LEARNING_SHORT_WORD_GLYPHS: i64 = 3;
 
+/// A word's frequency for curriculum ordering: its root's corpus occurrences,
+/// falling back to the surface's own. A proper name never gets the root's
+/// count — its bridged root is usually a spurious homograph (חֶצְרוֹ resolves
+/// to חצר "courtyard"), which used to rank one-off genealogy names as if they
+/// were common vocabulary. Assumes `sm`, `r` and `s` are joined.
+const WORD_FREQ: &str = "CASE WHEN COALESCE(sm.is_name, 0) = 1 THEN s.occurrences \
+     ELSE COALESCE(r.n_occurrences, s.occurrences) END";
+
 /// Within-verse ordering of not-yet-learnt words: a word building on an
 /// already-known root first, then the simplest grammatical form, then the most
-/// frequent root, then the most common surface. Assumes `sm` (surface_meta),
-/// `r` (roots) and `kr` ([`KNOWN_ROOTS`]) are joined and `s` is the surface row.
+/// frequent root ([`WORD_FREQ`]), then the most common surface. Assumes `sm`
+/// (surface_meta), `r` (roots) and `kr` ([`KNOWN_ROOTS`]) are joined and `s` is
+/// the surface row.
 const WORD_ORDER: &str = "ORDER BY (kr.root IS NOT NULL) DESC, \
      COALESCE(sm.form_tier, 0) ASC, \
-     COALESCE(r.n_occurrences, s.occurrences) DESC, \
+     CASE WHEN COALESCE(sm.is_name, 0) = 1 THEN s.occurrences \
+          ELSE COALESCE(r.n_occurrences, s.occurrences) END DESC, \
      s.occurrences DESC";
 
 /// A verse's calibration difficulty: its rarest word's OT occurrence count.
@@ -567,6 +589,13 @@ const DIFFICULTY: &str = "MIN(s.occurrences)";
 /// Excludes Biblical Aramaic verses from a `verse_word`/`surface` grouping —
 /// reused by every calibration query.
 const NOT_ARAMAIC: &str = "SUM(CASE WHEN s.language = 'aramaic' THEN 1 ELSE 0 END) = 0";
+
+/// The learner-facing gloss for an uncurated proper name — the card says
+/// "this word is somebody's name" rather than serving BDB's citation
+/// ("n.pr.m. father of one of David's men") as if it were a meaning. Also the
+/// sentinel [`Bible::next_introduction`] matches to seed such cards known
+/// after a single showing instead of drilling them.
+const NAME_GLOSS: &str = "(a name)";
 
 /// SM-2 state for a card seeded as already-known by onboarding calibration
 /// (see [`Bible::seed_known_alphabet`], [`Bible::seed_known_vocab`]) rather
@@ -626,7 +655,7 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
         )
         .optional()?;
     if let Some(sql) = sm_sql
-        && !(sql.contains("concept_rank") && sql.contains("glyph_mask"))
+        && !(sql.contains("concept_rank") && sql.contains("glyph_mask") && sql.contains("is_name"))
     {
         db.execute_batch("DROP TABLE progress.surface_meta")?;
     }
@@ -703,7 +732,8 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             root         TEXT    NOT NULL,
             form_tier    INTEGER NOT NULL,
             concept_rank INTEGER NOT NULL,
-            glyph_mask   INTEGER NOT NULL
+            glyph_mask   INTEGER NOT NULL,
+            is_name      INTEGER NOT NULL
          );
          CREATE TABLE IF NOT EXISTS progress.concepts_seen(
             concept          TEXT PRIMARY KEY,
@@ -1707,7 +1737,9 @@ impl Bible {
                     None => continue,
                 },
             };
-            if g.is_empty() {
+            // BDB name citations ("n.pr.m. father of one of David's men")
+            // aren't meanings — never offer one as a wrong answer.
+            if g.is_empty() || crate::bible::is_name_gloss(&g) {
                 continue;
             }
             if seen.insert(g.to_lowercase()) {
@@ -1733,7 +1765,7 @@ impl Bible {
             return Ok(None);
         };
 
-        let (root, gloss, inflected, morph) = match self.hebrew_word_info(surface) {
+        let (mut root, gloss, inflected, mut morph) = match self.hebrew_word_info(surface) {
             Some(w) => {
                 let morph = [
                     w.form.as_deref(),
@@ -1756,17 +1788,37 @@ impl Bible {
         // A curated gloss (held in the core) is the final learner meaning where
         // one exists — it overrides the automatic bridge and supplies the
         // composition note. Its gloss is already form-specific, so no separate
-        // inflected line is shown.
+        // inflected line is shown. A proclitic-prefixed curated name composes
+        // the same way ("to Jacob" — the bridge would serve the homograph root
+        // "to heel"). An uncurated proper name (a BDB `n.pr` citation) has no
+        // meaning to learn: it cards as [`NAME_GLOSS`] with the citation kept
+        // as the note, and drops the spurious bridged root/morph — the
+        // scheduler seeds such cards known after one showing.
         let (gloss, inflected, note) = match crate::vocab_gloss::curated_gloss(surface) {
             Some(c) => (
                 c.gloss.to_string(),
                 String::new(),
                 c.note.unwrap_or_default().to_string(),
             ),
-            None => (gloss, inflected, String::new()),
+            None => match crate::bible::prefixed_name_gloss(surface) {
+                Some((g, note)) => (g, String::new(), note),
+                None if crate::bible::is_name_gloss(&gloss) => {
+                    let note = crate::bible::name_description(&gloss);
+                    root.clear();
+                    morph.clear();
+                    (NAME_GLOSS.to_string(), String::new(), note)
+                }
+                None => (gloss, inflected, String::new()),
+            },
         };
 
-        let distractors = self.meaning_distractors(surface, &gloss)?;
+        // A name card is reveal-and-self-grade — quizzing "(a name)" against
+        // real glosses is a giveaway, so it gets no distractors.
+        let distractors = if gloss == NAME_GLOSS {
+            Vec::new()
+        } else {
+            self.meaning_distractors(surface, &gloss)?
+        };
 
         Ok(Some(WordCard {
             surface_id,
@@ -1874,7 +1926,7 @@ impl Bible {
         {
             let mut ins = self.conn().prepare(
                 "INSERT INTO progress.surface_meta(surface_id, root, form_tier, concept_rank, \
-                    glyph_mask) VALUES (?1, ?2, ?3, ?4, ?5)",
+                    glyph_mask, is_name) VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
             )?;
             for (surface_id, text) in surfaces {
                 // `surface.text` is already the normalised form the resolver uses.
@@ -1885,7 +1937,17 @@ impl Bible {
                     Some(w) => (w.root.clone(), form_tier(w) as i64),
                     None => (String::new(), 0),
                 };
-                ins.execute(params![surface_id, root, tier, crank, mask])?;
+                // A proper name: BDB marks the long tail with `n.pr`; the
+                // famous names whose entries lack the marker (or are missing
+                // outright) are curated, and their proclitic-prefixed forms
+                // (לְיַעֲקֹב) classify through the same composition the card
+                // builder uses.
+                let is_name = parsed
+                    .as_ref()
+                    .is_some_and(|w| crate::bible::is_name_gloss(&w.gloss))
+                    || crate::vocab_gloss::curated_name(&text)
+                    || crate::bible::prefixed_name_gloss(&text).is_some();
+                ins.execute(params![surface_id, root, tier, crank, mask, is_name as i64])?;
             }
         }
         self.conn().execute(
@@ -1968,14 +2030,19 @@ impl Bible {
                  vw.book, vw.chapter, vw.verse"
             )
         } else {
-            "MIN(CASE WHEN done.surface_id IS NULL \
-                      THEN COALESCE(r.n_occurrences, s.occurrences) END) DESC, \
+            // Key 1 rates a verse by its rarest unknown word ([`WORD_FREQ`]:
+            // root frequency, but a name only ever counts its own surface —
+            // otherwise a genealogy of one-off names whose spurious roots are
+            // common vocabulary ranks as an easy verse).
+            format!(
+                "MIN(CASE WHEN done.surface_id IS NULL \
+                      THEN {WORD_FREQ} END) DESC, \
              COUNT(DISTINCT CASE WHEN done.surface_id IS NULL AND kr.root IS NULL \
                                   AND sm.root <> '' THEN sm.root END) ASC, \
              MIN(CASE WHEN done.surface_id IS NULL THEN COALESCE(sm.form_tier, 0) END) ASC, \
              COUNT(DISTINCT CASE WHEN done.surface_id IS NULL THEN vw.surface_id END) ASC, \
              vw.book, vw.chapter, vw.verse"
-                .to_string()
+            )
         };
         // Placeholder numbers for the exclude triple must slot in after
         // whichever of ?1 (unlocked, always present) / ?2 (seen_mask, only
@@ -2234,7 +2301,35 @@ impl Bible {
             return Ok(Some(card));
         }
         self.bump_intro_counter("intro.words")?;
-        Ok(self.word_card(&surface)?.map(StudyItem::NewWord))
+        let Some(card) = self.word_card(&surface)? else {
+            return Ok(None);
+        };
+        // An uncurated proper name has no meaning to drill — show it once and
+        // seed it known, so it counts toward verse readability without ever
+        // becoming a review card (the learner meets it highlighted in verses
+        // instead). Grading the shown card updates this seeded row, so a
+        // learner who answers "no idea" still pulls the name back into
+        // learning.
+        if card.gloss == NAME_GLOSS {
+            let seeded = seeded_known_srs();
+            self.conn().execute(
+                "INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days, \
+                    due_epoch, reps, lapses, introduced_epoch, last_grade) \
+                 VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, 2) \
+                 ON CONFLICT(surface) DO NOTHING",
+                params![
+                    surface,
+                    card.surface_id,
+                    seeded.ease,
+                    seeded.interval_days,
+                    seeded.due_at(now),
+                    seeded.reps,
+                    seeded.lapses,
+                    now
+                ],
+            )?;
+        }
+        Ok(Some(StudyItem::NewWord(card)))
     }
 
     /// Whether the next introduction should be a new letter rather than a
@@ -2292,12 +2387,51 @@ impl Bible {
             .is_some())
     }
 
+    /// The surface used to illustrate a grammar card: a word the learner has
+    /// already studied that exercises the concept as its hardest rule, else
+    /// the most frequent such word in the corpus — never a proper name —
+    /// falling back to the triggering word itself. A rare name like
+    /// הַכַּרְמְלִי makes a poor first example of the definite article when
+    /// הָאָרֶץ exists.
+    fn grammar_example_surface(&self, key: &str, trigger: &str) -> rusqlite::Result<String> {
+        let Some(rank) = crate::grammar::concept_index(key) else {
+            return Ok(trigger.to_string());
+        };
+        for studied_only in [true, false] {
+            let studied = if studied_only {
+                "JOIN progress.word_srs ws ON ws.surface_id = sm.surface_id"
+            } else {
+                ""
+            };
+            let found: Option<String> = self
+                .conn()
+                .query_row(
+                    &format!(
+                        "SELECT s.text FROM progress.surface_meta sm \
+                         JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+                         {studied} \
+                         WHERE sm.concept_rank = ?1 AND sm.is_name = 0 \
+                         ORDER BY s.occurrences DESC LIMIT 1"
+                    ),
+                    params![rank],
+                    |r| r.get(0),
+                )
+                .optional()?;
+            if let Some(s) = found {
+                return Ok(s);
+            }
+        }
+        Ok(trigger.to_string())
+    }
+
     /// The first grammar concept `surface` exercises that has not yet been
-    /// shown, as an [`StudyItem::ExplainGrammar`] card illustrated by the word
-    /// itself — marking it seen so it is shown at most once. `None` when the
-    /// word introduces no new concept. Curated function words (prepositions,
-    /// suffixed prepositions) and misparsed construct forms classify through
-    /// [`crate::grammar::concepts_for_surface`] even without a parse.
+    /// shown, as an [`StudyItem::ExplainGrammar`] card — marking it seen so it
+    /// is shown at most once. `None` when the word introduces no new concept.
+    /// Curated function words (prepositions, suffixed prepositions) and
+    /// misparsed construct forms classify through
+    /// [`crate::grammar::concepts_for_surface`] even without a parse. The
+    /// illustrating word is the most familiar example of the concept
+    /// ([`Self::grammar_example_surface`]), not necessarily `surface` itself.
     fn next_grammar_card(&self, surface: &str, now: i64) -> rusqlite::Result<Option<StudyItem>> {
         let w = self.hebrew_word_info(surface);
         for key in crate::grammar::concepts_for_surface(surface, w.as_ref()) {
@@ -2307,7 +2441,11 @@ impl Bible {
             let Some(c) = crate::grammar::concept(key) else {
                 continue;
             };
-            let Some(example) = self.word_card(surface)? else {
+            let example_surface = self.grammar_example_surface(key, surface)?;
+            let Some(example) = self
+                .word_card(&example_surface)?
+                .or(self.word_card(surface)?)
+            else {
                 return Ok(None);
             };
             self.conn().execute(
@@ -2840,13 +2978,14 @@ impl Bible {
         )?;
         self.set_meta_target(None)?;
         let examples = self.readable_examples(b, c, v, 3)?;
-        let words = self.verse_words(b, c, v)?;
+        let (words, names) = self.verse_words_flagged(b, c, v)?.into_iter().unzip();
         Ok(StudyItem::ReadVerse(VerseCard {
             book: b,
             chapter: c,
             verse: v,
             examples,
             words,
+            names,
         }))
     }
 
@@ -3003,14 +3142,28 @@ impl Bible {
     /// A verse's words in reading order, as `word_srs` surface keys — so the
     /// app can offer them for the learner to flag ones they misread.
     pub fn verse_words(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Vec<String>> {
+        Ok(self
+            .verse_words_flagged(b, c, v)?
+            .into_iter()
+            .map(|(w, _)| w)
+            .collect())
+    }
+
+    /// [`Self::verse_words`] with each word's proper-name flag (from the
+    /// `surface_meta` cache), for rendering names distinctly in the verse.
+    pub fn verse_words_flagged(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Vec<(String, bool)>> {
         let mut stmt = self.conn().prepare(
-            "SELECT s.text
+            "SELECT s.text, COALESCE(sm.is_name, 0)
              FROM hebrewdb.verse_word vw
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+             LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
              WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
              ORDER BY vw.position",
         )?;
-        stmt.query_map(params![b, c, v], |r| r.get(0))?.collect()
+        stmt.query_map(params![b, c, v], |r| {
+            Ok((r.get(0)?, r.get::<_, i64>(1)? != 0))
+        })?
+        .collect()
     }
 
     /// Up to `limit` other verses sharing a word with `(b,c,v)` that are now
@@ -3537,6 +3690,119 @@ mod tests {
             "early vocabulary should be mostly root-bearing content words, \
              got only {rooted}/12 (a genealogy-of-proper-names regression)"
         );
+        Ok(())
+    }
+
+    /// Proper names card as names, not as BDB citations or homograph senses:
+    /// an uncurated name shows "(a name)" with the citation as its note (no
+    /// spurious root, no quiz); a curated famous name shows its English name;
+    /// a proclitic-prefixed curated name composes ("to Jacob", not "to heel").
+    #[test]
+    fn name_cards_show_names_not_bdb_citations() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        // אֶזְבָּי — a one-occurrence name bridged to the spurious root אות
+        // with gloss "n.pr.m. father of one of David's men".
+        let card = bible.word_card("אֶזְבָּי")?.expect("Ezbai has a surface");
+        assert_eq!(card.gloss, NAME_GLOSS);
+        assert!(
+            card.note.contains("father of one of David"),
+            "citation kept as note, got {:?}",
+            card.note
+        );
+        assert!(card.root.is_empty(), "spurious root hidden: {:?}", card.root);
+        assert!(card.distractors.is_empty(), "name cards self-grade");
+
+        // Famous names the bridge mis-glosses are curated.
+        for (surface, gloss) in [
+            ("מֹשֶׁה", "Moses"),
+            ("אַבְרָהָם", "Abraham"),
+            ("שְׁלֹמֹה", "Solomon"),
+            ("נֹחַ", "Noah"),
+        ] {
+            let card = bible.word_card(surface)?.expect("surface exists");
+            assert_eq!(card.gloss, gloss, "curated name gloss for {surface}");
+        }
+        // A curated name still quizzes (its gloss is a real answer), and no
+        // BDB citation leaks into the options.
+        let card = bible.word_card("אַבְרָהָם")?.unwrap();
+        assert!(!card.distractors.is_empty(), "curated names quiz normally");
+        assert!(card.distractors.iter().all(|d| !d.contains("n.pr")));
+
+        // Proclitic-prefixed curated names compose mechanically.
+        let card = bible.word_card("לְיַעֲקֹב")?.expect("surface exists");
+        assert_eq!(card.gloss, "to Jacob");
+        Ok(())
+    }
+
+    /// The surface_meta cache flags proper names — BDB `n.pr` citations and
+    /// the curated famous names — and verse words carry the flag out to the
+    /// app so names render distinctly.
+    #[test]
+    fn surface_meta_flags_proper_names() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+        bible.ensure_surface_meta()?;
+
+        let flag = |s: &str| -> bool {
+            bible
+                .conn()
+                .query_row(
+                    "SELECT sm.is_name FROM progress.surface_meta sm \
+                     JOIN hebrewdb.surface su ON su.surface_id = sm.surface_id \
+                     WHERE su.text = ?1",
+                    params![s],
+                    |r| r.get::<_, i64>(0),
+                )
+                .expect("surface in meta")
+                != 0
+        };
+        // The genealogy names that used to be scheduled early (their bridged
+        // roots are common homographs), plus a curated famous name.
+        for name in ["אֶזְבָּי", "חֶצְרוֹ", "נַעֲרַי", "מֹשֶׁה", "לְיַעֲקֹב"] {
+            assert!(flag(name), "{name} should be flagged as a name");
+        }
+        for word in ["דָּבָר", "אָדָם", "הָאָרֶץ"] {
+            assert!(!flag(word), "{word} should not be flagged as a name");
+        }
+
+        // The verse card carries the flags, aligned with its words.
+        let (b, c, v): (u8, u8, u8) = bible.conn().query_row(
+            "SELECT vw.book, vw.chapter, vw.verse FROM hebrewdb.verse_word vw \
+             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+             WHERE s.text = 'אֶזְבָּי' LIMIT 1",
+            [],
+            |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+        )?;
+        let words = bible.verse_words_flagged(b, c, v)?;
+        assert!(
+            words.iter().any(|(w, is_name)| w == "אֶזְבָּי" && *is_name),
+            "verse words should flag the name: {words:?}"
+        );
+
+        // A grammar card triggered by an obscure word illustrates with a
+        // frequent non-name example instead (the article card that fired on
+        // הַכַּרְמְלִי used to show "the the Carmelite").
+        let example = bible.grammar_example_surface("article", "הַכַּרְמְלִי")?;
+        assert_ne!(example, "הַכַּרְמְלִי");
+        let card = bible.word_card(&example)?.expect("example has a card");
+        eprintln!("article example: {example} -> {}", card.gloss);
+        assert!(!card.gloss.is_empty());
         Ok(())
     }
 

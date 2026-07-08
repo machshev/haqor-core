@@ -42,6 +42,13 @@ pub fn concept_count() -> usize {
     CONCEPTS.len()
 }
 
+/// The teaching-order index of a concept key — the value a surface exercising
+/// this concept as its hardest rule carries as its [`concept_rank`]. `None`
+/// for an unknown key.
+pub fn concept_index(key: &str) -> Option<i64> {
+    CONCEPTS.iter().position(|c| c.key == key).map(|i| i as i64)
+}
+
 /// A word's grammatical *complexity rank*: the highest [`CONCEPTS`] index among
 /// the concepts it exercises (`CONCEPTS` is ordered by teaching difficulty), or
 /// `-1` when it exercises none (a proper noun, function word, plain absolute
