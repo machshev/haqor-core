@@ -3410,6 +3410,34 @@ mod tests {
         Ok(())
     }
 
+    /// A suffixed preposition whose BDB consonant group holds only a
+    /// cross-reference stub must not surface a card glossed with that stub.
+    /// אֵלָי (pausal "to me") once carded as gloss "see אוּלַי", root אלח —
+    /// the stub for אֻלַי, an unrelated lexeme sharing the א־ל־י skeleton.
+    #[test]
+    fn word_card_never_shows_cross_reference_stub() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let card = bible
+            .word_card("אֵלָי")?
+            .expect("pausal אֵלָי is a corpus surface");
+        assert_eq!(card.gloss, "to me");
+        assert_ne!(card.root, "אלח");
+        // The distractor pool must not smuggle a stub in either.
+        for d in &card.distractors {
+            assert!(!d.starts_with("see "), "stub distractor {d:?}");
+        }
+        Ok(())
+    }
+
     /// Once a word's meaning is known, its grammatical form is drilled too: a
     /// gradeless-free "which form?" card whose answer is the inflected gloss and
     /// whose options contrast other inflections, graded on its own `form_srs`
@@ -5011,7 +5039,9 @@ mod tests {
         // A hataf-patah he is the interrogative, not the article — the verb
         // reading is genuine and must survive even though a noun reading
         // resolves (הֲתֵלֵךְ "will you go?", not תֵּל "your mound").
-        let w = bible.hebrew_word_info("הֲתֵלֵךְ").expect("interrogative parses");
+        let w = bible
+            .hebrew_word_info("הֲתֵלֵךְ")
+            .expect("interrogative parses");
         assert_eq!(
             (w.root.as_str(), w.tense.as_deref()),
             ("הלכ", Some("Imperfect")),
@@ -5040,7 +5070,8 @@ mod tests {
         // Every family member classifies to the object-marker concept (so none
         // of them is rank −1 / ungated any more), through vocab_key matching
         // even without a parse.
-        for s in ["אֶת", "אֵת", "אֹתוֹ", "אוֹתָם", "אֶתְכֶם", "אֹתָהּ"] {
+        for s in ["אֶת", "אֵת", "אֹתוֹ", "אוֹתָם", "אֶתְכֶם", "אֹתָהּ"]
+        {
             assert_eq!(
                 crate::grammar::concepts_for_surface(s, None),
                 vec!["object-marker"],

@@ -1390,6 +1390,13 @@ fn update_missing(
 
     rebuild_roots(&db)?;
 
+    // The bridge derives from the lexicon and the bridge code, not from the
+    // re-analysed surfaces alone — refresh it every incremental pass so a
+    // gloss-selection fix reaches the DB without a full rebuild (it also
+    // drops rows for surfaces the pass just resolved).
+    let bridged = populate_lexical_bridge(&mut db, lexicon_db)?;
+    info!("Bridged {bridged} unparsed surfaces to the BDB lexicon");
+
     let (surfaces, parsed, occurrences): (usize, usize, usize) = db.query_row(
         "SELECT (SELECT COUNT(*) FROM surface), \
                 (SELECT COUNT(*) FROM surface WHERE parsed = 1), \
