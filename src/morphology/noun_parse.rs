@@ -190,6 +190,7 @@ impl NounInventory {
     /// Parse a fully-pointed word into every noun analysis the inventory can
     /// produce, trying the word bare and with 0/1/2 proclitics peeled.
     pub fn parse(&self, word: &str) -> Vec<NounMatch> {
+        use super::hebrew::Vowel;
         let seq = hebrew::parse_pointed(word);
         let mut matches = Vec::new();
         // Dedup by the analysis content, not the stem id: distinct lexicon
@@ -198,11 +199,30 @@ impl NounInventory {
         // emit duplicate rows.
         let mut seen: HashSet<(String, NounStemKind, bool, String, String)> = HashSet::new();
 
+        // A peeled ש is the relative proclitic, which geminates the next
+        // consonant like the article does: real only when that consonant
+        // carries a dagesh, is a guttural (which cannot double), or is
+        // sheva'd (where the doubling dagesh is routinely omitted). A peel
+        // that violates this (הַשָּׁ+מָיִם, שָׁ+מַיִם) is kept as a candidate
+        // but ranked below every plausible peel, so callers that take the
+        // first resolvable analysis never see it shadow the real reading.
+        let plausible_peel = |peeled: &[hebrew::Cons]| {
+            peeled.iter().enumerate().all(|(i, c)| {
+                c.letter != letter::SHIN
+                    || seq.get(i + 1).is_some_and(|next| {
+                        next.dagesh
+                            || next.vowel == Some(Vowel::Sheva)
+                            || hebrew::rejects_dagesh(next.letter)
+                    })
+            })
+        };
+
         let max_strip = 2usize.min(seq.len().saturating_sub(2));
         for strip in 0..=max_strip {
             if seq[..strip].iter().any(|c| !PROCLITICS.contains(&c.letter)) {
                 continue;
             }
+            let plausible = plausible_peel(&seq[..strip]);
             let prefix = hebrew::render(&seq[..strip]);
             // Two candidate stem renderings for the peeled remainder: as written,
             // and (when a proclitic was peeled) with the first consonant's dagesh
@@ -229,25 +249,32 @@ impl NounInventory {
                         prefix.clone(),
                     );
                     if seen.insert(key) {
-                        matches.push(NounMatch {
-                            stem: stem.clone(),
-                            kind: *kind,
-                            is_adjective: *is_adjective,
-                            label: label.clone(),
-                            prefix: prefix.clone(),
-                        });
+                        matches.push((
+                            plausible,
+                            NounMatch {
+                                stem: stem.clone(),
+                                kind: *kind,
+                                is_adjective: *is_adjective,
+                                label: label.clone(),
+                                prefix: prefix.clone(),
+                            },
+                        ));
                     }
                 }
             }
         }
 
-        matches.sort_by(|a, b| {
-            a.stem
-                .cmp(&b.stem)
+        // Plausibly-peeled analyses first — callers pick the first resolvable
+        // analysis in this order, so an implausible peel (הַשָּׁ+מָיִם) never
+        // shadows the real reading (הַ+שָׁמַיִם); it is still emitted last as
+        // a candidate. Ties keep the original stem/label/prefix order.
+        matches.sort_by(|(pa, a), (pb, b)| {
+            pb.cmp(pa)
+                .then_with(|| a.stem.cmp(&b.stem))
                 .then_with(|| a.label.cmp(&b.label))
                 .then_with(|| a.prefix.cmp(&b.prefix))
         });
-        matches
+        matches.into_iter().map(|(_, m)| m).collect()
     }
 }
 
