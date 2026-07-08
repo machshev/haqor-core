@@ -529,8 +529,10 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// behind it — including pausal twins like אֵלָי, which previously missed
 /// the table entirely and were introduced ungated; 13 dropped BDB
 /// root-header stubs from the noun bridge (זָהָב carded "(√ of following;
-/// meaning dubious…)" instead of "gold").
-const SURFACE_META_VERSION: i64 = 13;
+/// meaning dubious…)" instead of "gold"); 14 curated הוּא/הַהוּא and the
+/// ketiv הִוא (BDB's epicene "he; she; it" carded for the plain 3ms
+/// pronoun).
+const SURFACE_META_VERSION: i64 = 14;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
