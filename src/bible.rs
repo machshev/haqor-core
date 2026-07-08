@@ -630,6 +630,37 @@ fn cross_reference_gloss(gloss: &str) -> bool {
     ) && words.any(hebrew_word)
 }
 
+/// True when a BDB gloss is only a root-header stub — the entire gloss is one
+/// parenthetical remark introducing the derived words filed after it ("(√ of
+/// following; meaning dubious; compare Lag BN 55 Anm).", "(meaning unknown).")
+/// rather than a sense of its own. Such rows precede the real article in
+/// lexicon order (the זהב root header sorts before זָהָב "gold"), so the
+/// bridge must never serve one as a gloss; their `root` column is still
+/// self-referential, so they may name a root. Real glosses that merely open
+/// with a parenthetical ("(he)-ass", "(less oft. שַׁלֻּם) n.pr.m. king…")
+/// carry English after the closing paren and are kept, as is an unbalanced
+/// paren (truncated source text may still hold a sense).
+fn root_stub_gloss(gloss: &str) -> bool {
+    if !gloss.starts_with('(') {
+        return false;
+    }
+    let mut depth = 0usize;
+    for (i, ch) in gloss.char_indices() {
+        match ch {
+            '(' => depth += 1,
+            ')' => {
+                depth -= 1;
+                if depth == 0 {
+                    let rest = &gloss[i + 1..];
+                    return !rest.chars().any(|c| c.is_ascii_alphabetic());
+                }
+            }
+            _ => {}
+        }
+    }
+    false
+}
+
 /// The glossed BDB lexeme whose pointed headword (accents stripped) matches the
 /// surface exactly — the citation-form bridge. Both sides are reordered to
 /// traditional combining order before comparison (surfaces store
@@ -654,7 +685,9 @@ fn bdb_cons(db: &Connection, surface: &str) -> Option<(String, String)> {
 /// Glossed BDB `(word, root, gloss)` rows matching the surface's consonant
 /// skeleton, best gloss first. Cross-reference stubs ([`cross_reference_gloss`])
 /// are dropped outright — bridging to "see עלה" (and the stub's root, often a
-/// neighbouring article's) is worse than no bridge. Among the rest, glosses
+/// neighbouring article's) is worse than no bridge — as are root-header stubs
+/// ([`root_stub_gloss`]), which otherwise beat the real article by lexicon
+/// order (זהב's "(√ of following…)" vs "gold"). Among the rest, glosses
 /// that open with English rank before those led by a Hebrew citation
 /// ("עָ֑ל subst. height"), which mark secondary sub-entries; the sort is
 /// stable, so lexicon order breaks ties.
@@ -681,7 +714,7 @@ fn bdb_rows(db: &Connection, surface: &str) -> Option<Vec<(String, String, Strin
         .ok()?
         .collect::<rusqlite::Result<Vec<_>>>()
         .ok()?;
-    rows.retain(|(_, _, gloss)| !cross_reference_gloss(gloss));
+    rows.retain(|(_, _, gloss)| !cross_reference_gloss(gloss) && !root_stub_gloss(gloss));
     rows.sort_by_key(|(_, _, gloss)| {
         gloss
             .chars()
@@ -1574,7 +1607,9 @@ impl Bible {
     /// [`bdb_rows`] selection so cross-reference stubs are never bridged and
     /// English-led glosses beat Hebrew-citation sub-entries, exactly like the
     /// function-word bridge. When no glossed lexeme survives, a gloss-less
-    /// lexeme still names the root. `None` when no lexeme matches at all.
+    /// lexeme still names the root — as does a root-header stub (paren-led
+    /// gloss), whose root column is self-referential even though its gloss is
+    /// unusable. `None` when no lexeme matches at all.
     fn hebrew_cons_root(&self, cons: &str) -> Option<(String, String)> {
         if cons.is_empty() {
             return None;
@@ -1585,7 +1620,7 @@ impl Bible {
         self.db
             .query_row(
                 "SELECT root FROM lexdb.bdb \
-                 WHERE cons = ?1 AND (gloss IS NULL OR gloss = '') \
+                 WHERE cons = ?1 AND (gloss IS NULL OR gloss = '' OR gloss LIKE '(%') \
                  ORDER BY bdb_id LIMIT 1",
                 [cons],
                 |row| Ok((row.get::<_, String>(0)?, String::new())),
@@ -1614,7 +1649,7 @@ impl Bible {
         };
         let mut glosses: Vec<String> = rows
             .into_iter()
-            .filter(|gloss| !cross_reference_gloss(gloss))
+            .filter(|gloss| !cross_reference_gloss(gloss) && !root_stub_gloss(gloss))
             .collect();
         glosses.sort_by_key(|gloss| {
             gloss
@@ -2728,6 +2763,42 @@ mod tests {
         assert!(!cross_reference_gloss(
             "n.pr.loc. pass in Naphtali, see נקב."
         ));
+    }
+
+    #[test]
+    fn test_root_stub_gloss() {
+        // Root-header stubs: the whole gloss is one parenthetical remark.
+        assert!(root_stub_gloss(
+            "(√ of following; meaning dubious; compare Lag BN 55 Anm)."
+        ));
+        assert!(root_stub_gloss("(meaning unknown)."));
+        assert!(root_stub_gloss("(= בקק)."));
+        assert!(root_stub_gloss("(quadrilit. √ of following; see reff. below)"));
+        // Real glosses that merely open with a parenthetical.
+        assert!(!root_stub_gloss("(he)-ass"));
+        assert!(!root_stub_gloss("(less oft. שַׁלֻּם) n.pr.m. king of N. Israel"));
+        // Unbalanced paren (truncated source) may still hold a sense.
+        assert!(!root_stub_gloss("(† אֱדֹם n.pr.m. Edom"));
+        // Ordinary glosses.
+        assert!(!root_stub_gloss("gold"));
+        assert!(!root_stub_gloss("n.pr.m. (√ & meaning unknown) king of Gomorrah"));
+    }
+
+    #[test]
+    fn test_cons_bridge_skips_root_header_stubs() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // זהב: the root-header stub "(√ of following; meaning dubious…)"
+        // precedes the real article "gold" in lexicon order; the noun bridge
+        // must serve the article. This carded the stub on the זָהָב tutor word.
+        let (root, gloss) = bible.hebrew_cons_root("זהב").expect("זהב bridges");
+        assert_eq!(root, "זהב");
+        assert!(gloss.starts_with("gold"), "got {gloss:?}");
+        // A stub-only consonant group (לשכ holds just the root header) still
+        // names its self-referential root, but with no gloss.
+        let (root, gloss) = bible.hebrew_cons_root("לשכ").expect("לשכ names a root");
+        assert_eq!(root, "לשכ");
+        assert_eq!(gloss, "");
     }
 
     #[test]
