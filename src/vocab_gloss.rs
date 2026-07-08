@@ -60,6 +60,17 @@ pub fn curated_gloss(surface: &str) -> Option<CuratedGloss> {
     index().get(&vocab_key(surface)).copied()
 }
 
+/// Whether `surface` is one of the curated proper names — names whose BDB
+/// entry is missing or oddly glossed, so the automatic `n.pr` detection
+/// ([`crate::bible::is_name_gloss`]) can't see them. Complements that check
+/// wherever the tutor classifies names.
+pub fn curated_name(surface: &str) -> bool {
+    static NAMES: OnceLock<std::collections::HashSet<String>> = OnceLock::new();
+    NAMES
+        .get_or_init(|| CURATED_NAMES.iter().map(|s| vocab_key(s)).collect())
+        .contains(&vocab_key(surface))
+}
+
 fn index() -> &'static HashMap<String, CuratedGloss> {
     static INDEX: OnceLock<HashMap<String, CuratedGloss>> = OnceLock::new();
     INDEX.get_or_init(|| {
@@ -224,6 +235,8 @@ const CURATED: &[(&str, &str, Option<&str>)] = &[
     ("אֵל", "God, god", None),
 
     // Article + common noun forms the parser misreads.
+    ("מֶלֶךְ", "king", None),
+    ("הַמֶּלֶךְ", "the king", Some("הַ (the) + מֶלֶךְ")),
     ("הָעָם", "the people", Some("הָ (the) + עַם")),
     ("הָעִיר", "the city", Some("הָ (the) + עִיר")),
     ("הַשָּׁמַיִם", "the heavens", Some("הַ (the) + שָׁמַיִם")),
@@ -243,6 +256,46 @@ const CURATED: &[(&str, &str, Option<&str>)] = &[
     ("יוֹסֵף", "Joseph", Some("Means “he adds”.")),
     ("דָּוִיד", "David", Some("Later spelling of דָּוִד.")),
     ("יְהוֹשֻׁעַ", "Joshua", None),
+    // Names BDB shelters under another headword — or whose consonant skeleton
+    // collides with an ordinary lexeme, so the bridge serves the homograph's
+    // sense (מֹשֶׁה carded "draw", שְׁלֹמֹה "garment", נֹחַ "rest").
+    ("אַבְרָהָם", "Abraham", Some("Means “father of a multitude”; the patriarch, renamed from אַבְרָם.")),
+    ("אַבְרָם", "Abram", Some("Means “exalted father”; the patriarch's earlier name.")),
+    ("מֹשֶׁה", "Moses", Some("Perhaps “drawn out (of the water)”.")),
+    ("דָּוִד", "David", Some("Means “beloved”.")),
+    ("יַעֲקֹב", "Jacob", Some("Means “he grasps the heel”.")),
+    ("שָׂרָה", "Sarah", Some("Means “princess”.")),
+    ("שְׁלֹמֹה", "Solomon", Some("From שָׁלוֹם (peace).")),
+    ("יְהוּדָה", "Judah", None),
+    ("בִּנְיָמִן", "Benjamin", Some("Means “son of the right hand”.")),
+    ("בִּנְיָמִין", "Benjamin", Some("Means “son of the right hand”.")),
+    ("בָּבֶל", "Babylon", None),
+    ("אֵלִיָּהוּ", "Elijah", Some("Means “my God is the LORD”.")),
+    ("חִזְקִיָּהוּ", "Hezekiah", Some("Means “the LORD strengthens”.")),
+    ("יִרְמְיָהוּ", "Jeremiah", None),
+    ("יְחֶזְקֵאל", "Ezekiel", Some("Means “God strengthens”.")),
+    ("יְשַׁעְיָהוּ", "Isaiah", Some("Means “the LORD is salvation”.")),
+    ("נֹחַ", "Noah", Some("Means “rest”.")),
+    ("רָחֵל", "Rachel", Some("Means “ewe”.")),
+    ("לֵאָה", "Leah", None),
+    ("רִבְקָה", "Rebekah", None),
+    // Name homographs of ordinary words — glossed as both, not flagged as
+    // names (the ordinary sense is the one to learn).
+    ("אָדָם", "man, mankind; Adam", None),
+    ("לָבָן", "white; Laban", None),
+];
+
+/// Curated surfaces that are proper names (see [`curated_name`]): the names of
+/// [`CURATED`] plus famous names whose BDB gloss is already usable ("Esau",
+/// "Jerusalem") but carries no `n.pr` marker for the automatic detection.
+#[rustfmt::skip]
+const CURATED_NAMES: &[&str] = &[
+    "יִשְׂרָאֵל", "שָׁאוּל", "אַבְשָׁלוֹם", "יוֹסֵף", "דָּוִיד", "יְהוֹשֻׁעַ",
+    "אַבְרָהָם", "אַבְרָם", "מֹשֶׁה", "דָּוִד", "יַעֲקֹב", "יִצְחָק", "שָׂרָה",
+    "אַהֲרֹן", "שְׁלֹמֹה", "יְהוּדָה", "בִּנְיָמִן", "בִּנְיָמִין", "בָּבֶל",
+    "אֵלִיָּהוּ", "חִזְקִיָּהוּ", "יִרְמְיָהוּ", "יְחֶזְקֵאל", "יְשַׁעְיָהוּ",
+    "נֹחַ", "רָחֵל", "לֵאָה", "רִבְקָה", "עֵשָׂו", "אֶפְרַיִם", "יְרוּשָׁלִַם",
+    "מִצְרַיִם", "פַּרְעֹה", "שְׁמוּאֵל", "שִׁמְשׁוֹן",
 ];
 
 #[cfg(test)]

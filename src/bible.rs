@@ -874,6 +874,75 @@ const IRREGULAR_PLURAL: &[(&str, &str)] = &[
 /// grammatical abbreviations ("n.pr.m."); a clause carrying any of those is
 /// skipped, and an empty result signals the caller to leave the gloss
 /// uninflected rather than emit garbage like "see דָּאָהed".
+/// Whether a BDB gloss describes a proper name — a person, place or people
+/// marked `n.pr.m` / `n.pr.f` / `n.pr.loc` / `n.pr.gent` (the marker appears
+/// either leading the gloss or parenthesised inside it). Names carry no
+/// meaning to quiz and their bridged roots are usually spurious, so the tutor
+/// treats them separately (see `is_name` in [`crate::tutor`]).
+pub(crate) fn is_name_gloss(gloss: &str) -> bool {
+    gloss.contains("n.pr")
+}
+
+/// The human part of a BDB proper-name gloss — the citation minus its
+/// `n.pr.*` markers, any leading Hebrew headword and joining punctuation:
+/// "n.pr.m. father of one of David's men" → "father of one of David's men";
+/// "חֶצְרַי (n.pr.m.)—one of David's heroes" → "one of David's heroes".
+pub(crate) fn name_description(gloss: &str) -> String {
+    let mut s = gloss.to_string();
+    while let Some(i) = s.find("n.pr") {
+        let end = s[i..]
+            .char_indices()
+            .find(|&(_, c)| c.is_whitespace() || matches!(c, ')' | ']' | '—' | ',' | ';'))
+            .map_or(s.len(), |(j, _)| i + j);
+        s.replace_range(i..end, "");
+    }
+    s.trim_matches(|c: char| {
+        c.is_whitespace()
+            || matches!(c as u32, 0x0590..=0x05FF)
+            || matches!(c, '(' | ')' | '—' | '-' | '.' | ',' | ';' | ':')
+    })
+    .to_string()
+}
+
+/// A curated proper name behind one or two proclitics (לְיַעֲקֹב, וּלְיַעֲקֹב):
+/// the name's curated gloss composed with the prefixes' senses — `("to Jacob",
+/// note)`, `("and to Jacob", note)`. Without this the bridge serves the name's
+/// homograph root instead ("to heel"). `None` when no proclitic chain ends at
+/// a curated name.
+pub(crate) fn prefixed_name_gloss(surface: &str) -> Option<(String, String)> {
+    type Chain = Vec<(&'static str, &'static str)>;
+    fn strip_names(surface: &str, depth: u8) -> Option<(Chain, String, &'static str)> {
+        for (proclitic, sense) in PROCLITICS {
+            let Some(rest) = strip_proclitic(surface, proclitic) else {
+                continue;
+            };
+            // Names take no article, so "to the"-style senses drop it.
+            let sense = sense.trim_end_matches(" the");
+            if crate::vocab_gloss::curated_name(&rest)
+                && let Some(c) = crate::vocab_gloss::curated_gloss(&rest)
+            {
+                return Some((vec![(proclitic, sense)], rest, c.gloss));
+            }
+            if depth > 0
+                && let Some((mut chain, stem, gloss)) = strip_names(&rest, depth - 1)
+            {
+                chain.insert(0, (proclitic, sense));
+                return Some((chain, stem, gloss));
+            }
+        }
+        None
+    }
+    let (chain, stem, gloss) = strip_names(surface, 1)?;
+    let senses: Vec<&str> = chain.iter().map(|&(_, s)| s).collect();
+    let note = chain
+        .iter()
+        .map(|&(p, s)| format!("{p} ({s})"))
+        .chain([format!("{stem} ({gloss})")])
+        .collect::<Vec<_>>()
+        .join(" + ");
+    Some((format!("{} {gloss}", senses.join(" ")), note))
+}
+
 fn primary_sense(gloss: &str) -> String {
     for clause in gloss.split([';', ',']) {
         let c = clause.trim();
@@ -1212,8 +1281,10 @@ fn inflect_noun(w: &HebrewWord, base: &str) -> String {
         head
     };
 
-    // Attached preposition / conjunction / article.
+    // Attached preposition / conjunction / article. A gentilic gloss already
+    // leads with its article ("the Carmelite") — don't double it.
     match w.prefix.as_deref().and_then(proclitic_word) {
+        Some("the") if head.starts_with("the ") || head.starts_with("The ") => head,
         Some("the") => format!("the {head}"),
         Some(prep) => format!("{prep} {head}"),
         None => head,
@@ -2500,6 +2571,17 @@ mod tests {
         let mut the_king = noun(Some("Singular"), Some("Absolute"), "king");
         the_king.prefix = Some("הַ".to_string());
         assert_eq!(inflected_gloss(&the_king), "the king");
+
+        // A gentilic gloss already leading with "the" doesn't get a second
+        // article from the הַ prefix (הַכַּרְמְלִי is "the Carmelite", not
+        // "the the Carmelite").
+        let mut the_carmelite = noun(
+            Some("Singular"),
+            Some("Absolute"),
+            "the Carmelite; the Carmelitess",
+        );
+        the_carmelite.prefix = Some("הַ".to_string());
+        assert_eq!(inflected_gloss(&the_carmelite), "the Carmelite");
 
         // Function words / proper nouns pass through unchanged.
         let particle = HebrewWord {
