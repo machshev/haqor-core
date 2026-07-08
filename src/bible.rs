@@ -523,6 +523,48 @@ const CURATED_GLOSSES: &[(&str, &str, &str)] = &[
     ("לִפְנֵי", "פנה", "before; in the presence of"),
     ("כֵּן", "", "so; thus"),
     ("סוּס", "סוס", "horse"),
+    // Suffixed prepositions and pronouns whose BDB consonant group holds only
+    // a cross-reference stub (or an unrelated lexeme), so the pointing-blind
+    // fallback cannot reach a usable sense: אֵלַי collides with אֻלַי "see
+    // אוּלַי", הֲלֹא with הָלָא "removed far off", שָׁמָּה with שַׁמָּה
+    // "waste". Both regular and pausal pointings are listed where both occur.
+    ("אֵלַי", "", "to me; unto me"),
+    ("אֵלָי", "", "to me; unto me"),
+    ("מִמֶּנִּי", "", "from me"),
+    ("עִמָּדִי", "", "with me"),
+    ("לָמוֹ", "", "to them (poetic)"),
+    ("הִיא", "", "she; it"),
+    ("הַהִיא", "", "that (f.)"),
+    ("זֹאת", "", "this (f.)"),
+    ("זֹּאת", "", "this (f.)"),
+    ("אֲנַחְנוּ", "", "we"),
+    ("לְמַעַן", "", "for the sake of; in order that"),
+    ("לָכֵן", "", "therefore"),
+    ("שָׁמָּה", "", "there; to there"),
+    ("הֲלֹא", "", "is it not?; surely"),
+    ("יַעַן", "", "because; on account of"),
+    ("סֶלָה", "", "Selah — a pause (in Psalms)"),
+    ("חִנָּם", "", "for nothing; without cause"),
+    ("שְׁתֵּים", "", "two (f.)"),
+    ("פִּתְאֹם", "", "suddenly"),
+    // לְ + suffix spellings BDB only records as the stub לְכָה "see הָלַךְ";
+    // the doubled (post-maqqef) spellings are separate keys because the
+    // canonicalisation keeps dagesh.
+    ("לְךָ", "", "to you; for you (m.)"),
+    ("לְּךָ", "", "to you; for you (m.)"),
+    ("לָךְ", "", "to you; for you (f.)"),
+    ("לָּךְ", "", "to you; for you (f.)"),
+    ("לָהּ", "", "to her; for her"),
+    ("לָּהּ", "", "to her; for her"),
+    ("לָמָּה", "", "why?"),
+    ("לָמָה", "", "why?"),
+    ("לִקְרַאת", "קרא", "to meet; toward"),
+    ("לְבַדִּי", "בדד", "by myself; alone"),
+    // Proper names whose spelling only appears in BDB as a cross-reference to
+    // the fuller spelling (a different consonant group, so unreachable).
+    ("יְהוֹשֻׁעַ", "", "Joshua"),
+    ("אַבְשָׁלוֹם", "", "Absalom"),
+    ("יְחִזְקִיָּהוּ", "", "Hezekiah"),
 ];
 
 /// Curated `(root, gloss)` for a surface, ignoring cantillation and combining
@@ -565,6 +607,29 @@ pub(crate) fn lexicon_fallback(db: &Connection, surface: &str) -> Option<(String
     bdb_cons(db, surface).map(|(root, gloss)| (root, gloss, String::new()))
 }
 
+/// True when a BDB gloss is only a cross-reference to another article — "see
+/// עלה", "אֻלַי see אוּלַי", "under אול", "see sub I. כלל." — rather than a
+/// meaning. BDB files many headwords as stubs pointing into the article they
+/// are treated under, and those stubs sort *before* the real article, so the
+/// bridge must never serve one as a gloss. A stub needs a Hebrew target after
+/// the keyword: the bare gloss "see" (the verb רָאָה) and English glosses that
+/// merely start with "under" ("the under part") are kept. Leading Hebrew
+/// citation words are skipped before testing.
+fn cross_reference_gloss(gloss: &str) -> bool {
+    let hebrew_char = |c: char| matches!(c as u32, 0x0590..=0x05FF | 0xFB1D..=0xFB4F);
+    let hebrew_word = |w: &str| w.chars().any(hebrew_char);
+    let mut words = gloss.split_whitespace().skip_while(|w| {
+        w.chars()
+            .all(|c| hebrew_char(c) || c.is_ascii_punctuation())
+    });
+    matches!(
+        words
+            .next()
+            .map(|w| w.trim_matches(|c: char| c.is_ascii_punctuation())),
+        Some("see" | "under")
+    ) && words.any(hebrew_word)
+}
+
 /// The glossed BDB lexeme whose pointed headword (accents stripped) matches the
 /// surface exactly — the citation-form bridge. Both sides are reordered to
 /// traditional combining order before comparison (surfaces store
@@ -587,7 +652,12 @@ fn bdb_cons(db: &Connection, surface: &str) -> Option<(String, String)> {
 }
 
 /// Glossed BDB `(word, root, gloss)` rows matching the surface's consonant
-/// skeleton, in lexicon order.
+/// skeleton, best gloss first. Cross-reference stubs ([`cross_reference_gloss`])
+/// are dropped outright — bridging to "see עלה" (and the stub's root, often a
+/// neighbouring article's) is worse than no bridge. Among the rest, glosses
+/// that open with English rank before those led by a Hebrew citation
+/// ("עָ֑ל subst. height"), which mark secondary sub-entries; the sort is
+/// stable, so lexicon order breaks ties.
 fn bdb_rows(db: &Connection, surface: &str) -> Option<Vec<(String, String, String)>> {
     let cons = fold_consonants(surface);
     if cons.is_empty() {
@@ -600,16 +670,25 @@ fn bdb_rows(db: &Connection, surface: &str) -> Option<Vec<(String, String, Strin
              ORDER BY bdb_id",
         )
         .ok()?;
-    stmt.query_map([&cons], |row| {
-        Ok((
-            row.get::<_, Option<String>>(0)?.unwrap_or_default(),
-            row.get::<_, String>(1)?,
-            row.get::<_, String>(2)?,
-        ))
-    })
-    .ok()?
-    .collect::<rusqlite::Result<Vec<_>>>()
-    .ok()
+    let mut rows = stmt
+        .query_map([&cons], |row| {
+            Ok((
+                row.get::<_, Option<String>>(0)?.unwrap_or_default(),
+                row.get::<_, String>(1)?,
+                row.get::<_, String>(2)?,
+            ))
+        })
+        .ok()?
+        .collect::<rusqlite::Result<Vec<_>>>()
+        .ok()?;
+    rows.retain(|(_, _, gloss)| !cross_reference_gloss(gloss));
+    rows.sort_by_key(|(_, _, gloss)| {
+        gloss
+            .chars()
+            .next()
+            .is_some_and(|c| matches!(c as u32, 0x0590..=0x05FF))
+    });
+    Some(rows)
 }
 
 /// Compact human-readable morphology line for a vocabulary card, e.g.
@@ -2593,6 +2672,42 @@ mod tests {
         assert!(curated_gloss("אֲשֶׁ\u{0596}ר").is_some());
         // An ordinary word is left for the BDB lookups.
         assert_eq!(curated_gloss("מֶלֶךְ"), None);
+    }
+
+    #[test]
+    fn test_cross_reference_gloss() {
+        // Stubs: a "see"/"under" keyword pointing at a Hebrew target, with or
+        // without leading Hebrew citations.
+        assert!(cross_reference_gloss("see עלה"));
+        assert!(cross_reference_gloss("see sub I. כלל."));
+        assert!(cross_reference_gloss("אֻלַי see אוּלַי"));
+        assert!(cross_reference_gloss("עֵלָּא see עלה"));
+        assert!(cross_reference_gloss("under אול"));
+        assert!(cross_reference_gloss("חִיאֵל under חיה"));
+        // Not stubs: the verb רָאָה glossed as bare "see", English senses of
+        // "under", a Hebrew-citation-led real gloss, and a gloss that only
+        // mentions a reference after real content.
+        assert!(!cross_reference_gloss("see"));
+        assert!(!cross_reference_gloss("seeing"));
+        assert!(!cross_reference_gloss("the under part; underneath; below"));
+        assert!(!cross_reference_gloss("עָ֑ל subst. height"));
+        assert!(!cross_reference_gloss(
+            "n.pr.loc. pass in Naphtali, see נקב."
+        ));
+    }
+
+    #[test]
+    fn test_lexicon_fallback_skips_cross_reference_stubs() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // עַל: BDB files the preposition under the עלה article, leaving a
+        // "see עלה" stub first in the consonant group; the bridge must serve
+        // a real gloss (the prepositional article), never the stub.
+        let (_, gloss, _) = lexicon_fallback(bible.conn(), "עַל").expect("עַל bridges");
+        assert!(gloss.starts_with("upon"), "got {gloss:?}");
+        // גַּם: the stub "see גמם" precedes the real article "also; moreover".
+        let (_, gloss, _) = lexicon_fallback(bible.conn(), "גַּם").expect("גַּם bridges");
+        assert!(gloss.starts_with("also"), "got {gloss:?}");
     }
 
     #[test]
