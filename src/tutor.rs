@@ -543,8 +543,12 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// pronoun); 15 added the `is_name` column (proper names stop inheriting
 /// their bridged root's corpus frequency in verse/word ordering) and curated
 /// the famous names the bridge mis-glossed (מֹשֶׁה "draw", שְׁלֹמֹה
-/// "garment"), changing those surfaces' primary root.
-const SURFACE_META_VERSION: i64 = 15;
+/// "garment"), changing those surfaces' primary root; 16 curated the
+/// plural-tantum nouns מַיִם/שָׁמַיִם/פָּנִים (BDB files them under
+/// shortened consonant groups, so they carded blank or as a junk verb) and
+/// ranked implausibly-peeled noun analyses last (הַשָּׁ+מָיִם no longer
+/// shadows הַ+שָׁמַיִם).
+const SURFACE_META_VERSION: i64 = 16;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
