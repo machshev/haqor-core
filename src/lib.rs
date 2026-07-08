@@ -36,3 +36,7 @@ pub mod vocab_gloss;
 /// Grammar concepts the tutor teaches (prefixes, conjugations, binyanim,
 /// construct, suffixes) with their teaching content, held in the core.
 pub mod grammar;
+
+/// Pronominal-ending inventory and stem/suffix splitting for the tutor's
+/// suffix drill (the ending shown highlighted on a known host word).
+pub mod pronoun_suffix;

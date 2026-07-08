@@ -155,6 +155,17 @@ pub fn concepts_for(w: &HebrewWord) -> Vec<&'static str> {
     keys
 }
 
+/// Whether `surface` is a curated suffixed function word — an eligible host
+/// for the pronoun-ending drill (see `progress.suffix_srs` in
+/// [`crate::tutor`]). True for the suffixed prepositions and the suffixed
+/// object-marker forms; the bare words in those families are excluded by the
+/// caller's [`crate::pronoun_suffix::split_pronoun_suffix`] finding no ending.
+pub fn pronoun_suffix_host(surface: &str) -> bool {
+    surface_concepts(surface).is_some_and(|keys| {
+        keys.contains(&"prep-suffix") || keys.contains(&"object-marker")
+    })
+}
+
 /// The curated concepts for `surface`, if listed, matched through
 /// [`vocab_key`] so dagesh and mark-order variants collapse to one entry.
 fn surface_concepts(surface: &str) -> Option<&'static [&'static str]> {
@@ -666,6 +677,29 @@ mod tests {
         // Pronouns exercise no concept and stay ungated.
         assert!(concepts_for_surface("הוּא", None).is_empty());
         assert_eq!(concept_rank_for_surface("הוּא", None), -1);
+    }
+
+    #[test]
+    fn every_prep_suffix_surface_splits_for_the_drill() {
+        // Each curated suffixed preposition must be a drill host: eligible
+        // via pronoun_suffix_host and splittable into stem + ending.
+        for (surface, keys) in SURFACE_CONCEPTS {
+            if !keys.contains(&"prep-suffix") {
+                continue;
+            }
+            assert!(pronoun_suffix_host(surface), "{surface} not host-eligible");
+            assert!(
+                crate::pronoun_suffix::split_pronoun_suffix(surface).is_some(),
+                "{surface} carries prep-suffix but no ending splits"
+            );
+        }
+        // The suffixed object-marker forms host the same drill.
+        for s in ["אֹתוֹ", "אֹתָם", "אֶתְכֶם"] {
+            assert!(pronoun_suffix_host(s), "{s} not host-eligible");
+            assert!(crate::pronoun_suffix::split_pronoun_suffix(s).is_some());
+        }
+        // The bare words in those families never split, so they never host.
+        assert!(crate::pronoun_suffix::split_pronoun_suffix("אֶת").is_none());
     }
 
     #[test]
