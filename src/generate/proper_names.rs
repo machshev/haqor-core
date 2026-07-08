@@ -2194,4 +2194,9 @@ pub const PROPER_NAMES: &[&str] = &[
     "הַשׁוּנַּמִּית",
     "הַיִּשְׁרְאֵלִית",
     "הַלְוִּיִּם",
+    // Seraiah (2026-07-08): OSHB tags every occurrence Np, but Strong's files
+    // the name under a spelling the prefilter's exact-pointing match never
+    // reaches, so the tutor bridged it to שִׁרְיָה "lance; javelin" (whose
+    // pointing differs — no collision here) and carded the name as vocabulary.
+    "שְׂרָיָה",
 ];

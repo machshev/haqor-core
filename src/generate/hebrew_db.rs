@@ -759,6 +759,26 @@ fn analyze_surfaces(
         .map(|t| iv.get(t.as_str()).cloned().unwrap_or_default())
         .collect();
 
+    // A proper-noun surface is rescued from the pre-filter (class cleared)
+    // only because it has a plausible verb reading — but the precision pass
+    // above may have since dropped that reading (יִרְמְיָה "Jeremiah" loses
+    // its non-canonical parse to the noun pass). With nothing verbal left,
+    // the rescue no longer holds: re-classify, so the stored `lexical_class`
+    // keeps the pre-filter's `proper` verdict for downstream name detection.
+    let classes: Vec<Option<&'static str>> = classes
+        .into_iter()
+        .zip(surfaces.iter())
+        .zip(verb.iter())
+        .zip(gold.iter())
+        .map(|(((class, t), v), g)| {
+            if class.is_none() && v.is_empty() && g.is_empty() {
+                prefilter.as_ref().and_then(|pf| pf.exclude(t, false))
+            } else {
+                class
+            }
+        })
+        .collect();
+
     Ok(SurfaceAnalysis {
         classes,
         verb,
@@ -979,6 +999,54 @@ fn build_hebrew(
     // equal attestation keep their `sort_matches` order. Skipped if morphhb is
     // unavailable (the order then falls back to the generator's own ranking).
     rank_by_attestation(&surfaces, &mut analyses, morphhb_dir)?;
+
+    // Gold override for the stored `lexical_class` label (the analyses above
+    // are untouched, so parse coverage and the eval are unaffected): OSHB tags
+    // every token, so a surface whose occurrences are majority proper-noun /
+    // gentilic is authoritatively `proper` — including names the headword
+    // lists never reach by exact pointing (יִרְמְיָה, שְׂרָיָה) — and a
+    // majority-common one is authoritatively not, whatever the lists say:
+    // בֶּן "son" (1204× Ncmsc, 24× inside compound names like Ben-oni) and
+    // זָהָב "gold" reach the proper lists via the Levite *Ben* and the
+    // place-name Di-zahab. Surfaces absent from the gold map (UXLC/WLC
+    // pointing drift) keep the pre-filter's label; a `function` label always
+    // wins; and a downgrade never strips the label from an analysis-less
+    // surface — that would move it into `review_missing`, which tracks
+    // parser gaps, not names.
+    let classes: Vec<Option<&'static str>> = match morphhb_dir.filter(|d| d.exists()) {
+        Some(dir) => {
+            let names = crate::generate::harness::collect_name_attestation(dir)?;
+            let mut upgraded = 0usize;
+            let mut downgraded = 0usize;
+            let out = classes
+                .iter()
+                .enumerate()
+                .map(|(i, &class)| match names.get(&surfaces[i]) {
+                    Some(&(n, total)) if n * 2 > total && class.is_none() => {
+                        upgraded += 1;
+                        Some("proper")
+                    }
+                    Some(&(n, total))
+                        if n * 2 <= total
+                            && class == Some("proper")
+                            && (!analyses[i].is_empty()
+                                || !noun_analyses[i].is_empty()
+                                || !gold_analyses[i].is_empty()) =>
+                    {
+                        downgraded += 1;
+                        None
+                    }
+                    _ => class,
+                })
+                .collect();
+            info!(
+                "  gold name labels: {upgraded} surfaces marked proper, \
+                 {downgraded} proper labels dropped (majority-common in OSHB)"
+            );
+            out
+        }
+        None => classes,
+    };
 
     // Occurrence counts per surface, plus a per-surface flag for surfaces that
     // occur *only* in Biblical Aramaic verses (and so are Aramaic, not Hebrew

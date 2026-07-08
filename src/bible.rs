@@ -119,6 +119,13 @@ pub struct HebrewWord {
     /// `None` when the form carries no object suffix. Used to inflect glosses
     /// ("he struck him") and to rank form complexity.
     pub obj_suffix: Option<String>,
+    /// True when the resolved BDB lexeme is a proper name or gentilic (`pos`
+    /// `n.pr*` / `adj.gent`). Most name entries carry the marker only in the
+    /// `pos` column — their gloss is a bare etymology ("God hides") — so gloss
+    /// sniffing ([`is_name_gloss`]) alone misses them. The tutor cards such
+    /// words as "(a name)" and never lets them inherit their (usually
+    /// spurious) root's corpus frequency.
+    pub is_name: bool,
 }
 
 /// One entry of the frequency-ordered learner vocabulary: a distinct OT
@@ -674,6 +681,15 @@ fn root_stub_gloss(gloss: &str) -> bool {
     false
 }
 
+/// Whether a BDB `pos` marks a proper name or gentilic: `n.pr.m` / `n.pr.f` /
+/// `n.pr.loc` / `n.pr.gent` and the gentilic adjectives (`adj.gent`, "the
+/// Shaalbonite"). Most name entries carry the marker *only* here — the gloss
+/// column holds a bare etymology ("God hides"), so [`is_name_gloss`] alone
+/// misses them.
+fn name_pos(pos: &str) -> bool {
+    pos.starts_with("n.pr") || pos.starts_with("adj.gent")
+}
+
 /// The glossed BDB lexeme whose pointed headword (accents stripped) matches the
 /// surface exactly — the citation-form bridge. Both sides are reordered to
 /// traditional combining order before comparison (surfaces store
@@ -682,8 +698,8 @@ fn bdb_exact(db: &Connection, surface: &str) -> Option<(String, String)> {
     let canonical = normalize_hebrew_combining(surface);
     bdb_rows(db, surface)?
         .into_iter()
-        .find(|(word, _, _)| normalize_hebrew_combining(&strip_accents(word)) == canonical)
-        .map(|(_, root, gloss)| (root, gloss))
+        .find(|(word, ..)| normalize_hebrew_combining(&strip_accents(word)) == canonical)
+        .map(|(_, root, gloss, _)| (root, gloss))
 }
 
 /// The first glossed BDB lexeme sharing the surface's consonant skeleton — a
@@ -692,10 +708,10 @@ fn bdb_cons(db: &Connection, surface: &str) -> Option<(String, String)> {
     bdb_rows(db, surface)?
         .into_iter()
         .next()
-        .map(|(_, root, gloss)| (root, gloss))
+        .map(|(_, root, gloss, _)| (root, gloss))
 }
 
-/// Glossed BDB `(word, root, gloss)` rows matching the surface's consonant
+/// Glossed BDB `(word, root, gloss, pos)` rows matching the surface's consonant
 /// skeleton, best gloss first. Cross-reference stubs ([`cross_reference_gloss`])
 /// are dropped outright — bridging to "see עלה" (and the stub's root, often a
 /// neighbouring article's) is worse than no bridge — as are root-header stubs
@@ -704,14 +720,14 @@ fn bdb_cons(db: &Connection, surface: &str) -> Option<(String, String)> {
 /// that open with English rank before those led by a Hebrew citation
 /// ("עָ֑ל subst. height"), which mark secondary sub-entries; the sort is
 /// stable, so lexicon order breaks ties.
-fn bdb_rows(db: &Connection, surface: &str) -> Option<Vec<(String, String, String)>> {
+fn bdb_rows(db: &Connection, surface: &str) -> Option<Vec<(String, String, String, String)>> {
     let cons = fold_consonants(surface);
     if cons.is_empty() {
         return None;
     }
     let mut stmt = db
         .prepare(
-            "SELECT word, root, gloss FROM lexdb.bdb \
+            "SELECT word, root, gloss, pos FROM lexdb.bdb \
              WHERE cons = ?1 AND gloss IS NOT NULL AND gloss <> '' \
              ORDER BY bdb_id",
         )
@@ -722,13 +738,14 @@ fn bdb_rows(db: &Connection, surface: &str) -> Option<Vec<(String, String, Strin
                 row.get::<_, Option<String>>(0)?.unwrap_or_default(),
                 row.get::<_, String>(1)?,
                 row.get::<_, String>(2)?,
+                row.get::<_, Option<String>>(3)?.unwrap_or_default(),
             ))
         })
         .ok()?
         .collect::<rusqlite::Result<Vec<_>>>()
         .ok()?;
-    rows.retain(|(_, _, gloss)| !cross_reference_gloss(gloss) && !root_stub_gloss(gloss));
-    rows.sort_by_key(|(_, _, gloss)| {
+    rows.retain(|(_, _, gloss, _)| !cross_reference_gloss(gloss) && !root_stub_gloss(gloss));
+    rows.sort_by_key(|(_, _, gloss, _)| {
         gloss
             .chars()
             .next()
@@ -894,17 +911,20 @@ pub(crate) fn is_name_gloss(gloss: &str) -> bool {
 }
 
 /// The human part of a BDB proper-name gloss — the citation minus its
-/// `n.pr.*` markers, any leading Hebrew headword and joining punctuation:
-/// "n.pr.m. father of one of David's men" → "father of one of David's men";
-/// "חֶצְרַי (n.pr.m.)—one of David's heroes" → "one of David's heroes".
+/// `n.pr.*` / `adj.gent.*` markers, any leading Hebrew headword and joining
+/// punctuation: "n.pr.m. father of one of David's men" → "father of one of
+/// David's men"; "חֶצְרַי (n.pr.m.)—one of David's heroes" → "one of David's
+/// heroes"; a bare gentilic stub "adj.gent." → "".
 pub(crate) fn name_description(gloss: &str) -> String {
     let mut s = gloss.to_string();
-    while let Some(i) = s.find("n.pr") {
-        let end = s[i..]
-            .char_indices()
-            .find(|&(_, c)| c.is_whitespace() || matches!(c, ')' | ']' | '—' | ',' | ';'))
-            .map_or(s.len(), |(j, _)| i + j);
-        s.replace_range(i..end, "");
+    for marker in ["n.pr", "adj.gent"] {
+        while let Some(i) = s.find(marker) {
+            let end = s[i..]
+                .char_indices()
+                .find(|&(_, c)| c.is_whitespace() || matches!(c, ')' | ']' | '—' | ',' | ';'))
+                .map_or(s.len(), |(j, _)| i + j);
+            s.replace_range(i..end, "");
+        }
     }
     s.trim_matches(|c: char| {
         c.is_whitespace()
@@ -1561,34 +1581,56 @@ impl Bible {
             .ok()?
         };
 
-        // (kind, label, prefix, root, gloss, resolved, curated): root/gloss
-        // empty if unresolved. `resolved` is tracked as a flag rather than
-        // inferred from a non-empty root, because a curated lexeme can pin a
-        // gloss while (following BDB) carrying no root — מַיִם "water".
-        // `curated` marks a curated-table hit, which outranks any verb
+        // Root/gloss empty if unresolved. `resolved` is tracked as a flag
+        // rather than inferred from a non-empty root, because a curated lexeme
+        // can pin a gloss while (following BDB) carrying no root — מַיִם
+        // "water". `curated` marks a curated-table hit, which outranks any verb
         // reading below: the table exists to pin exactly the high-frequency
         // words whose skeleton collides with an unrelated lexeme, and such
         // words also attract junk verb parses (מַיִם as a jussive of יממ).
-        let noun: Option<(String, String, String, String, String, bool, bool)> = {
-            let mut chosen = None;
+        // `is_name` follows the resolved BDB lexeme's `pos` (curated lexemes
+        // are real vocabulary, never names).
+        struct NounReading {
+            kind: String,
+            label: String,
+            prefix: String,
+            root: String,
+            gloss: String,
+            resolved: bool,
+            curated: bool,
+            is_name: bool,
+        }
+        let noun: Option<NounReading> = {
+            let mut chosen: Option<NounReading> = None;
             for (kind, label, prefix, stem) in noun_rows {
                 let curated = curated_gloss(&stem);
                 let is_curated = curated.is_some();
-                let resolved =
-                    curated.or_else(|| self.hebrew_cons_root(&fold_consonants(&stem)));
+                let resolved = curated
+                    .map(|(root, gloss)| (root, gloss, false))
+                    .or_else(|| self.hebrew_cons_root(&fold_consonants(&stem)));
                 let resolves = resolved.is_some();
-                let (root, gloss) = resolved.unwrap_or_default();
+                let (root, gloss, is_name) = resolved.unwrap_or_default();
+                let reading = NounReading {
+                    kind,
+                    label,
+                    prefix,
+                    root,
+                    gloss,
+                    resolved: resolves,
+                    curated: is_curated,
+                    is_name,
+                };
                 if resolves {
-                    chosen = Some((kind, label, prefix, root, gloss, true, is_curated));
+                    chosen = Some(reading);
                     break;
                 }
-                chosen.get_or_insert((kind, label, prefix, root, gloss, false, false));
+                chosen.get_or_insert(reading);
             }
             chosen
         };
 
-        let noun_resolves = noun.as_ref().is_some_and(|n| n.5);
-        let noun_curated = noun.as_ref().is_some_and(|n| n.6);
+        let noun_resolves = noun.as_ref().is_some_and(|n| n.resolved);
+        let noun_curated = noun.as_ref().is_some_and(|n| n.curated);
         // A resolvable noun reading led by the definite article beats a verb
         // reading that only exists by mistreating that article: a he-peeled
         // non-participle (the article never prefixes a finite verb — הָעָם is
@@ -1603,7 +1645,8 @@ impl Bible {
             cs.next() == Some('\u{05D4}')
                 && matches!(cs.next(), Some('\u{05B7}' | '\u{05B8}' | '\u{05B6}'))
         };
-        let article_noun = noun_resolves && noun.as_ref().is_some_and(|n| article_pointed(&n.2));
+        let article_noun =
+            noun_resolves && noun.as_ref().is_some_and(|n| article_pointed(&n.prefix));
         let verb_shadows_article = verb.as_ref().is_some_and(|v| {
             let participle = v.2.contains("Participle");
             (!participle && v.4.starts_with('\u{05D4}')) || (!v.7 && v.0.starts_with('\u{05D4}'))
@@ -1632,24 +1675,26 @@ impl Bible {
                 prefix: (!prefix.is_empty()).then(|| prefix.clone()),
                 vav_con: *vav_con,
                 obj_suffix: (!obj_suffix.is_empty()).then(|| obj_suffix.clone()),
+                is_name: false,
             });
         }
 
-        if let Some((kind, label, prefix, root, gloss, _, _)) = noun {
-            let (number, state) = decode_noun_label(&label);
+        if let Some(n) = noun {
+            let (number, state) = decode_noun_label(&n.label);
             return Some(HebrewWord {
                 word: norm,
-                root,
-                gloss,
+                root: n.root,
+                gloss: n.gloss,
                 form: None,
                 tense: None,
                 person: None,
-                gender: (!kind.is_empty()).then_some(kind),
+                gender: (!n.kind.is_empty()).then_some(n.kind),
                 number,
                 state,
-                prefix: (!prefix.is_empty()).then_some(prefix),
+                prefix: (!n.prefix.is_empty()).then_some(n.prefix),
                 vav_con: false,
                 obj_suffix: None,
+                is_name: n.is_name,
             });
         }
 
@@ -1678,6 +1723,9 @@ impl Bible {
             .ok()
             .flatten();
         if let Some((root, gloss, prefix)) = bridge {
+            // The build-time bridge table carries no BDB `pos`; name detection
+            // for these falls back to the gloss-text sniff (`is_name_gloss`)
+            // in the tutor.
             return Some(HebrewWord {
                 word: norm,
                 root,
@@ -1691,38 +1739,96 @@ impl Bible {
                 prefix: (!prefix.is_empty()).then_some(prefix),
                 vav_con: false,
                 obj_suffix: None,
+                is_name: false,
             });
         }
 
         None
     }
 
-    /// Resolve a folded consonant skeleton to a BDB `(root, gloss)` via the
-    /// indexed `cons` column — the noun bridge. Goes through the ranked
+    /// Resolve a folded consonant skeleton to a BDB `(root, gloss, is_name)`
+    /// via the indexed `cons` column — the noun bridge. Goes through the ranked
     /// [`bdb_rows`] selection so cross-reference stubs are never bridged and
     /// English-led glosses beat Hebrew-citation sub-entries, exactly like the
-    /// function-word bridge. When no glossed lexeme survives, a gloss-less
-    /// lexeme still names the root — as does a root-header stub (paren-led
-    /// gloss), whose root column is self-referential even though its gloss is
-    /// unusable. `None` when no lexeme matches at all.
-    fn hebrew_cons_root(&self, cons: &str) -> Option<(String, String)> {
+    /// function-word bridge. `is_name` reports whether the *resolved* lexeme is
+    /// a proper name or gentilic ([`name_pos`]) — the classification follows
+    /// the entry whose gloss is served. When no glossed lexeme survives, a
+    /// gloss-less lexeme still names the root — as does a root-header stub
+    /// (paren-led gloss), whose root column is self-referential even though its
+    /// gloss is unusable. `None` when no lexeme matches at all.
+    fn hebrew_cons_root(&self, cons: &str) -> Option<(String, String, bool)> {
         if cons.is_empty() {
             return None;
         }
-        if let Some(hit) = bdb_cons(&self.db, cons) {
-            return Some(hit);
+        if let Some((_, root, gloss, pos)) =
+            bdb_rows(&self.db, cons).and_then(|rows| rows.into_iter().next())
+        {
+            return Some((root, gloss, name_pos(&pos)));
         }
         self.db
             .query_row(
-                "SELECT root FROM lexdb.bdb \
+                "SELECT root, pos FROM lexdb.bdb \
                  WHERE cons = ?1 AND (gloss IS NULL OR gloss = '' OR gloss LIKE '(%') \
                  ORDER BY bdb_id LIMIT 1",
                 [cons],
-                |row| Ok((row.get::<_, String>(0)?, String::new())),
+                |row| {
+                    Ok((
+                        row.get::<_, String>(0)?,
+                        String::new(),
+                        name_pos(&row.get::<_, Option<String>>(1)?.unwrap_or_default()),
+                    ))
+                },
             )
             .optional()
             .ok()
             .flatten()
+    }
+
+    /// Whether any BDB lexeme whose pointed headword matches `surface` — or,
+    /// when `prefix` strips, its de-prefixed stem (הָרֹאשׁ → רֹאשׁ) — exactly
+    /// (accents stripped, combining order normalised) carries a non-empty,
+    /// non-name part of speech — i.e. the surface is the citation form of real
+    /// vocabulary. Used to veto the lexical pre-filter's `proper` class on
+    /// name/vocabulary homograph collisions: זָהָב is in the pre-filter's
+    /// proper list (via the place-name Di-zahab) but exactly heads BDB's
+    /// "gold" article (`n.m`), so it stays vocabulary — as does הָרֹאשׁ "the
+    /// chief" (the proper list holds רֹאשׁ via *Rosh* son of Benjamin, and
+    /// the pre-filter classifies through de-prefixed forms too). An exact
+    /// match whose `pos` is empty (common on name entries, e.g. אֱלִישָׁמָע
+    /// "God has heard") is inconclusive and does not veto.
+    pub(crate) fn bdb_exact_vocab_match(&self, surface: &str, prefix: Option<&str>) -> bool {
+        if let Some(stem) = prefix.and_then(|p| strip_proclitic(surface, p))
+            && self.bdb_exact_vocab_match(&stem, None)
+        {
+            return true;
+        }
+        let cons = fold_consonants(surface);
+        if cons.is_empty() {
+            return false;
+        }
+        let Ok(mut stmt) = self
+            .db
+            .prepare("SELECT word, pos FROM lexdb.bdb WHERE cons = ?1")
+        else {
+            return false;
+        };
+        let Ok(rows) = stmt
+            .query_map([&cons], |row| {
+                Ok((
+                    row.get::<_, Option<String>>(0)?.unwrap_or_default(),
+                    row.get::<_, Option<String>>(1)?.unwrap_or_default(),
+                ))
+            })
+            .and_then(|rows| rows.collect::<rusqlite::Result<Vec<_>>>())
+        else {
+            return false;
+        };
+        let canonical = normalize_hebrew_combining(&strip_accents(surface));
+        rows.iter().any(|(word, pos)| {
+            !pos.is_empty()
+                && !name_pos(pos)
+                && normalize_hebrew_combining(&strip_accents(word)) == canonical
+        })
     }
 
     /// Headline BDB gloss for a consonantal root: the first non-stub gloss in
@@ -2902,15 +3008,21 @@ mod tests {
         ));
         assert!(root_stub_gloss("(meaning unknown)."));
         assert!(root_stub_gloss("(= בקק)."));
-        assert!(root_stub_gloss("(quadrilit. √ of following; see reff. below)"));
+        assert!(root_stub_gloss(
+            "(quadrilit. √ of following; see reff. below)"
+        ));
         // Real glosses that merely open with a parenthetical.
         assert!(!root_stub_gloss("(he)-ass"));
-        assert!(!root_stub_gloss("(less oft. שַׁלֻּם) n.pr.m. king of N. Israel"));
+        assert!(!root_stub_gloss(
+            "(less oft. שַׁלֻּם) n.pr.m. king of N. Israel"
+        ));
         // Unbalanced paren (truncated source) may still hold a sense.
         assert!(!root_stub_gloss("(† אֱדֹם n.pr.m. Edom"));
         // Ordinary glosses.
         assert!(!root_stub_gloss("gold"));
-        assert!(!root_stub_gloss("n.pr.m. (√ & meaning unknown) king of Gomorrah"));
+        assert!(!root_stub_gloss(
+            "n.pr.m. (√ & meaning unknown) king of Gomorrah"
+        ));
     }
 
     #[test]
@@ -2920,12 +3032,15 @@ mod tests {
         // זהב: the root-header stub "(√ of following; meaning dubious…)"
         // precedes the real article "gold" in lexicon order; the noun bridge
         // must serve the article. This carded the stub on the זָהָב tutor word.
-        let (root, gloss) = bible.hebrew_cons_root("זהב").expect("זהב bridges");
+        let (root, gloss, is_name) = bible.hebrew_cons_root("זהב").expect("זהב bridges");
         assert_eq!(root, "זהב");
         assert!(gloss.starts_with("gold"), "got {gloss:?}");
+        // זָהָב is also part of the place-name Di-zahab, but the resolved
+        // lexeme is the common noun — not a name.
+        assert!(!is_name);
         // A stub-only consonant group (לשכ holds just the root header) still
         // names its self-referential root, but with no gloss.
-        let (root, gloss) = bible.hebrew_cons_root("לשכ").expect("לשכ names a root");
+        let (root, gloss, _) = bible.hebrew_cons_root("לשכ").expect("לשכ names a root");
         assert_eq!(root, "לשכ");
         assert_eq!(gloss, "");
     }
