@@ -487,8 +487,11 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// `object-marker` concept ahead of every other rank and curated the אֶת
 /// family into the surface-concept table; 10 stopped the lexicon bridge
 /// serving BDB cross-reference stubs, changing the primary root for the
-/// re-bridged function words (אֵלָי no longer resolves to the stub's אלח).
-const SURFACE_META_VERSION: i64 = 10;
+/// re-bridged function words (אֵלָי no longer resolves to the stub's אלח);
+/// 11 gave the noun bridge the same stub-filtered ranked lookup plus the
+/// curated overrides (סוּס resolves to "horse"/root סוס, not the preceding
+/// bird entry's root סוכ).
+const SURFACE_META_VERSION: i64 = 11;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted

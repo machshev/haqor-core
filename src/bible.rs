@@ -1416,9 +1416,12 @@ impl Bible {
             .ok()?;
 
         // Candidate noun analyses, resolved to a BDB root by folding the stem to
-        // bare medial consonants and matching `bdb.cons`. The first stem that
-        // resolves wins; otherwise the first candidate is kept unresolved so the
-        // morphology still shows even without a lexicon bridge.
+        // bare medial consonants and matching `bdb.cons`; the curated overrides
+        // are consulted first so a homograph collision (סוּס the horse vs BDB's
+        // preceding "swallow; swift" bird entry) picks the intended lexeme. The
+        // first stem that resolves wins; otherwise the first candidate is kept
+        // unresolved so the morphology still shows even without a lexicon
+        // bridge.
         let noun_rows = {
             let mut stmt = self
                 .db
@@ -1445,7 +1448,8 @@ impl Bible {
         let noun: Option<(String, String, String, String, String)> = {
             let mut chosen: Option<(String, String, String, String, String)> = None;
             for (kind, label, prefix, stem) in noun_rows {
-                let resolved = self.hebrew_cons_root(&fold_consonants(&stem));
+                let resolved = curated_gloss(&stem)
+                    .or_else(|| self.hebrew_cons_root(&fold_consonants(&stem)));
                 let resolves = resolved.is_some();
                 let (root, gloss) = resolved.unwrap_or_default();
                 if resolves {
@@ -1566,42 +1570,59 @@ impl Bible {
     }
 
     /// Resolve a folded consonant skeleton to a BDB `(root, gloss)` via the
-    /// indexed `cons` column — the noun bridge. `None` when no lexeme matches.
+    /// indexed `cons` column — the noun bridge. Goes through the ranked
+    /// [`bdb_rows`] selection so cross-reference stubs are never bridged and
+    /// English-led glosses beat Hebrew-citation sub-entries, exactly like the
+    /// function-word bridge. When no glossed lexeme survives, a gloss-less
+    /// lexeme still names the root. `None` when no lexeme matches at all.
     fn hebrew_cons_root(&self, cons: &str) -> Option<(String, String)> {
         if cons.is_empty() {
             return None;
         }
+        if let Some(hit) = bdb_cons(&self.db, cons) {
+            return Some(hit);
+        }
         self.db
             .query_row(
-                "SELECT root, gloss FROM lexdb.bdb WHERE cons = ?1 ORDER BY bdb_id LIMIT 1",
+                "SELECT root FROM lexdb.bdb \
+                 WHERE cons = ?1 AND (gloss IS NULL OR gloss = '') \
+                 ORDER BY bdb_id LIMIT 1",
                 [cons],
-                |row| {
-                    Ok((
-                        row.get::<_, String>(0)?,
-                        row.get::<_, Option<String>>(1)?.unwrap_or_default(),
-                    ))
-                },
+                |row| Ok((row.get::<_, String>(0)?, String::new())),
             )
             .optional()
             .ok()
             .flatten()
     }
 
-    /// First non-empty BDB gloss for a consonantal root (the root's primary
-    /// lexeme leads the section, so this is the headline meaning).
+    /// Headline BDB gloss for a consonantal root: the first non-stub gloss in
+    /// lexicon order, with English-led glosses ranked before Hebrew-citation
+    /// sub-entries (mirroring [`bdb_rows`], but keyed by the `root` column).
     fn hebrew_root_gloss(&self, root: &str) -> String {
-        self.db
-            .query_row(
-                "SELECT gloss FROM lexdb.bdb \
-                 WHERE root = ?1 AND gloss IS NOT NULL AND gloss <> '' \
-                 ORDER BY bdb_id LIMIT 1",
-                [root],
-                |row| row.get::<_, String>(0),
-            )
-            .optional()
-            .ok()
-            .flatten()
-            .unwrap_or_default()
+        let Ok(mut stmt) = self.db.prepare(
+            "SELECT gloss FROM lexdb.bdb \
+             WHERE root = ?1 AND gloss IS NOT NULL AND gloss <> '' \
+             ORDER BY bdb_id",
+        ) else {
+            return String::new();
+        };
+        let Ok(rows) = stmt
+            .query_map([root], |row| row.get::<_, String>(0))
+            .and_then(|rows| rows.collect::<rusqlite::Result<Vec<_>>>())
+        else {
+            return String::new();
+        };
+        let mut glosses: Vec<String> = rows
+            .into_iter()
+            .filter(|gloss| !cross_reference_gloss(gloss))
+            .collect();
+        glosses.sort_by_key(|gloss| {
+            gloss
+                .chars()
+                .next()
+                .is_some_and(|c| matches!(c as u32, 0x0590..=0x05FF))
+        });
+        glosses.into_iter().next().unwrap_or_default()
     }
 
     /// BDB lexeme(s) for a bridged surface that has no triliteral root — the
@@ -2638,6 +2659,19 @@ mod tests {
                 .unwrap()
                 .is_empty()
         );
+    }
+
+    #[test]
+    fn test_hebrew_word_info_noun_homograph_curated() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // סוּס "horse" — a noun analysis whose consonant group holds two BDB
+        // homographs, with the rare bird ("swallow; swift") first by bdb_id
+        // and both rows carrying the neighbouring article's root סוכ. The
+        // noun bridge must take the curated horse entry, not the first row.
+        let info = bible.hebrew_word_info("סוּס").expect("noun should parse");
+        assert_eq!(info.gloss, "horse");
+        assert_eq!(info.root, "סוס");
     }
 
     #[test]
