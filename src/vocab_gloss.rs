@@ -129,7 +129,10 @@ const CURATED: &[(&str, &str, Option<&str>)] = &[
     // Pronouns.
     ("אַתָּה", "you (m.)", None),
     ("אַתֶּם", "you (plural)", None),
+    ("הוּא", "he, it", None),
+    ("הַהוּא", "that (m.)", Some("הַ (the) + הוּא (he)")),
     ("הִיא", "she, it", None),
+    ("הִוא", "she, it", Some("Ketiv spelling of הִיא (she), common in the Torah.")),
     ("הַהִיא", "that (f.)", Some("הַ (the) + הִיא (she)")),
     ("הֵם", "they", None),
     ("הֵמָּה", "they", None),
