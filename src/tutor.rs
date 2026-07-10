@@ -575,6 +575,14 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// vocabulary.
 const SURFACE_META_VERSION: i64 = 18;
 
+/// `concept_mask` sentinel for a surface the tutor cannot teach: no parse
+/// gloss, no curated gloss, and not a name — its card would be blank. The bit
+/// sits above every real concept bit and is never unlocked, so such a word is
+/// never introduced and (in normal mode) a verse containing one is never a
+/// target; the fix is data work (curation or analysis coverage), after which
+/// the next [`SURFACE_META_VERSION`] rebuild lets the word back in.
+const UNTEACHABLE_MASK: i64 = 1 << 62;
+
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
 /// once by their base letter) that must be graduated before the alphabet counts
@@ -696,9 +704,11 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
         db.execute_batch("DROP TABLE progress.word_srs")?;
     }
 
-    // `surface_meta` gained a `concept_rank` column (the grammar-unlock gate);
-    // drop an older schema so it is recreated (and `ensure_surface_meta`
-    // repopulated) with the new column. Cheap, rebuilt on the next study call.
+    // `surface_meta`'s columns have evolved (`concept_rank` became the
+    // set-valued `concept_mask` when grammar unlocks stopped being a fixed
+    // total order); drop an older schema so it is recreated (and
+    // `ensure_surface_meta` repopulated) with the current columns. Cheap,
+    // rebuilt on the next study call.
     let sm_sql: Option<String> = db
         .query_row(
             "SELECT sql FROM progress.sqlite_master WHERE type='table' AND name='surface_meta'",
@@ -707,7 +717,7 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
         )
         .optional()?;
     if let Some(sql) = sm_sql
-        && !(sql.contains("concept_rank") && sql.contains("glyph_mask") && sql.contains("is_name"))
+        && !(sql.contains("concept_mask") && sql.contains("glyph_mask") && sql.contains("is_name"))
     {
         db.execute_batch("DROP TABLE progress.surface_meta")?;
     }
@@ -783,13 +793,24 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             surface_id   INTEGER PRIMARY KEY,
             root         TEXT    NOT NULL,
             form_tier    INTEGER NOT NULL,
-            concept_rank INTEGER NOT NULL,
+            concept_mask INTEGER NOT NULL,
             glyph_mask   INTEGER NOT NULL,
             is_name      INTEGER NOT NULL
+         );
+         CREATE TABLE IF NOT EXISTS progress.verse_meta(
+            book         INTEGER NOT NULL,
+            chapter      INTEGER NOT NULL,
+            verse        INTEGER NOT NULL,
+            concept_mask INTEGER NOT NULL,
+            PRIMARY KEY (book, chapter, verse)
          );
          CREATE TABLE IF NOT EXISTS progress.concepts_seen(
             concept          TEXT PRIMARY KEY,
             introduced_epoch INTEGER NOT NULL
+         );
+         CREATE TABLE IF NOT EXISTS progress.concepts_unlocked(
+            concept        TEXT    PRIMARY KEY,
+            unlocked_epoch INTEGER NOT NULL
          );",
     )?;
 
@@ -1395,22 +1416,31 @@ impl Bible {
         Ok(mask)
     }
 
-    /// How many grammar rules (by ascending [`crate::grammar`] `CONCEPTS` index)
-    /// are currently available. With gating off, all of them. Otherwise **none**
-    /// until the whole alphabet is known ([`Self::all_letters_known`]) — the
-    /// learner stays on simple, grammar-free words while learning the letters —
-    /// after which rules unlock one at a time, one per
-    /// [`TutorSettings::words_per_concept`] graduated words (the first, the
-    /// object marker אֶת, the moment letters are done). A stored `unlock_floor`
-    /// (the stall safety valve in [`Self::next_study_item`]) raises it further.
-    fn unlocked_concepts(&self, s: &TutorSettings) -> rusqlite::Result<i64> {
+    /// The bitmask of currently unlocked grammar rules
+    /// ([`crate::grammar::concept_bit`] encoding). With gating off, all of
+    /// them. Otherwise **none** until the whole alphabet is known
+    /// ([`Self::all_letters_known`]) — the learner stays on simple,
+    /// grammar-free words while learning the letters — after which rules
+    /// unlock one at a time, one per [`TutorSettings::words_per_concept`]
+    /// graduated words (the first the moment letters are done). A stored
+    /// `unlock_floor` (the stall safety valve in [`Self::next_study_item`])
+    /// raises the count further.
+    ///
+    /// *Which* rule unlocks next is not a fixed order: concepts carry an
+    /// intrinsic-complexity `bucket` (every bucket-0 rule unlocks before any
+    /// bucket-1 rule), and within the current bucket the tutor picks the
+    /// locked concept that completes the most verses — i.e. maximises the
+    /// number of `progress.verse_meta` rows whose mask would fit inside the
+    /// new frontier. The choice is persisted in `progress.concepts_unlocked`,
+    /// so it is stable across sessions and survives re-derivations.
+    fn unlocked_concepts(&self, s: &TutorSettings, now: i64) -> rusqlite::Result<i64> {
         let total = crate::grammar::concept_count() as i64;
         if !s.grammar_gating {
-            return Ok(total);
+            return Ok(crate::grammar::all_concepts_mask());
         }
-        let mut unlocked = 0;
+        let mut target = 0;
         if self.all_letters_known()? {
-            unlocked = 1 + self.words_mature()? / s.words_per_concept();
+            target = 1 + self.words_mature()? / s.words_per_concept();
         }
         let floor: i64 = self
             .conn()
@@ -1421,7 +1451,77 @@ impl Bible {
             )
             .optional()?
             .unwrap_or(0);
-        Ok(unlocked.max(floor).min(total))
+        let target = target.max(floor).min(total);
+
+        // The persisted set (ignoring keys from an older concept inventory).
+        let mut mask = 0i64;
+        {
+            let mut stmt = self
+                .conn()
+                .prepare("SELECT concept FROM progress.concepts_unlocked")?;
+            let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
+            for key in rows {
+                if let Some(bit) = crate::grammar::concept_bit(&key?) {
+                    mask |= bit;
+                }
+            }
+        }
+        while (mask.count_ones() as i64) < target {
+            let Some(next) = self.next_concept_to_unlock(mask)? else {
+                break;
+            };
+            debug!("unlocked_concepts: unlocking [{next}] (mask={mask:#x})");
+            self.conn().execute(
+                "INSERT INTO progress.concepts_unlocked(concept, unlocked_epoch) \
+                 VALUES (?1, ?2) ON CONFLICT(concept) DO NOTHING",
+                params![next, now],
+            )?;
+            mask |= crate::grammar::concept_bit(next).unwrap_or(0);
+        }
+        Ok(mask)
+    }
+
+    /// The locked concept to unlock next: from the lowest bucket that still
+    /// has locked concepts, the one that moves the most verses closest to
+    /// completable — ties resolved by inventory order. `None` when everything
+    /// is unlocked.
+    ///
+    /// "Closest" is a proximity-weighted coverage score, `Σ 1/(1 + missing)`
+    /// over all verses, where `missing` is how many locked concepts the verse
+    /// would still need under `unlocked | candidate`. Counting only outright
+    /// completions would starve the verb concepts forever: a narrative verse
+    /// needs wayyiqtol *and* construct *and* a suffix rule before it
+    /// completes, so no verb ever won a completions-only vote and the flow
+    /// stayed stuck on verbless list-verses (genealogies, censuses). Under
+    /// the weighted score, appearing in thousands of nearly-ready narrative
+    /// verses is worth more than finishing a handful of name lists.
+    fn next_concept_to_unlock(&self, unlocked: i64) -> rusqlite::Result<Option<&'static str>> {
+        let locked: Vec<&'static crate::grammar::GrammarConcept> = crate::grammar::concepts()
+            .iter()
+            .filter(|c| {
+                crate::grammar::concept_bit(c.key).is_some_and(|b| unlocked & b == 0)
+            })
+            .collect();
+        let Some(bucket) = locked.iter().map(|c| c.bucket).min() else {
+            return Ok(None);
+        };
+        let mut best: Option<(&'static str, f64)> = None;
+        for c in locked.iter().filter(|c| c.bucket == bucket) {
+            let bit = crate::grammar::concept_bit(c.key).unwrap_or(0);
+            let frontier = unlocked | bit;
+            // Verses without the candidate's bit contribute identically for
+            // every candidate, so they cancel out of the comparison.
+            let gain: f64 = self.conn().query_row(
+                "SELECT COALESCE(SUM(1.0 / (1 + popcount(concept_mask & ~?1))), 0) \
+                 FROM progress.verse_meta",
+                params![frontier],
+                |r| r.get(0),
+            )?;
+            if best.is_none_or(|(_, g)| gain > g) {
+                best = Some((c.key, gain));
+            }
+        }
+        Ok(best.map(|(k, _)| k))
     }
 
     // --- host selection for vowels ------------------------------------------
@@ -2009,16 +2109,17 @@ impl Bible {
         self.conn().execute_batch("BEGIN")?;
         self.conn()
             .execute("DELETE FROM progress.surface_meta", [])?;
+        let mut concept_masks: std::collections::HashMap<i64, i64> = std::collections::HashMap::new();
         {
             let mut ins = self.conn().prepare(
-                "INSERT INTO progress.surface_meta(surface_id, root, form_tier, concept_rank, \
+                "INSERT INTO progress.surface_meta(surface_id, root, form_tier, concept_mask, \
                     glyph_mask, is_name) VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
             )?;
             for (surface_id, text, lexical_class) in surfaces {
                 // `surface.text` is already the normalised form the resolver uses.
                 let mask = surface_glyph_mask(&text);
                 let parsed = self.hebrew_word_by_surface_id(surface_id, text.clone());
-                let crank = crate::grammar::concept_rank_for_surface(&text, parsed.as_ref());
+                let cmask = crate::grammar::concept_mask_for_surface(&text, parsed.as_ref());
                 let (root, tier) = match &parsed {
                     Some(w) => (w.root.clone(), form_tier(w) as i64),
                     None => (String::new(), 0),
@@ -2054,7 +2155,60 @@ impl Bible {
                                 parsed.as_ref().and_then(|w| w.prefix.as_deref()),
                             ))
                 };
-                ins.execute(params![surface_id, root, tier, crank, mask, is_name as i64])?;
+                // A word whose card would show a blank gloss (no parse sense,
+                // no curated gloss, not a name) is marked unteachable rather
+                // than fed to the learner ranked by raw frequency.
+                let blank = parsed
+                    .as_ref()
+                    .is_none_or(|w| w.gloss.trim().is_empty())
+                    && crate::vocab_gloss::curated_gloss(&text).is_none()
+                    && crate::bible::prefixed_name_gloss(&text).is_none()
+                    && !is_name;
+                let cmask = if blank { UNTEACHABLE_MASK } else { cmask };
+                concept_masks.insert(surface_id, cmask);
+                ins.execute(params![surface_id, root, tier, cmask, mask, is_name as i64])?;
+            }
+        }
+        // Per-verse concept masks (the OR of every word's mask), for the
+        // unlock chooser: "how many verses would concept X newly complete?"
+        // is a static corpus property, so it is precomputed here. Verses with
+        // an Aramaic word (whose surfaces carry no meta row) are skipped —
+        // they are never study targets.
+        self.conn().execute("DELETE FROM progress.verse_meta", [])?;
+        {
+            let verse_masks = {
+                let mut stmt = self.conn().prepare(
+                    "SELECT vw.book, vw.chapter, vw.verse, vw.surface_id \
+                     FROM hebrewdb.verse_word vw ORDER BY vw.book, vw.chapter, vw.verse",
+                )?;
+                let mut acc: std::collections::HashMap<(u8, u8, u8), Option<i64>> =
+                    std::collections::HashMap::new();
+                let rows = stmt.query_map([], |r| {
+                    Ok((
+                        r.get::<_, u8>(0)?,
+                        r.get::<_, u8>(1)?,
+                        r.get::<_, u8>(2)?,
+                        r.get::<_, i64>(3)?,
+                    ))
+                })?;
+                for row in rows {
+                    let (b, c, v, sid) = row?;
+                    let entry = acc.entry((b, c, v)).or_insert(Some(0));
+                    *entry = match (entry.as_ref(), concept_masks.get(&sid)) {
+                        (Some(m), Some(w)) => Some(m | w),
+                        _ => None, // an Aramaic word poisons the verse
+                    };
+                }
+                acc
+            };
+            let mut ins = self.conn().prepare(
+                "INSERT INTO progress.verse_meta(book, chapter, verse, concept_mask) \
+                 VALUES (?1, ?2, ?3, ?4)",
+            )?;
+            for ((b, c, v), mask) in verse_masks {
+                if let Some(m) = mask {
+                    ins.execute(params![b, c, v, m])?;
+                }
             }
         }
         self.conn().execute(
@@ -2076,7 +2230,7 @@ impl Bible {
 
     /// The next verse to work toward, requiring at least one *introducible*
     /// unknown word — not yet learnt and not behind a still-locked grammar rule
-    /// (`concept_rank < unlocked`).
+    /// (its `concept_mask` fits inside the `unlocked` mask).
     ///
     /// In normal mode it also requires the verse be *completable* — no unknown
     /// word behind a locked rule — so it can actually be finished with the
@@ -2113,14 +2267,16 @@ impl Bible {
         seen_mask: i64,
         letter_learning: bool,
     ) -> rusqlite::Result<Option<(u8, u8, u8)>> {
-        // "introducible unknown word" in a CASE guard.
-        const INTRO: &str = "done.surface_id IS NULL AND COALESCE(sm.concept_rank, -1) < ?1";
+        // "introducible unknown word" in a CASE guard: every concept the word
+        // exercises is inside the unlocked mask (?1).
+        const INTRO: &str =
+            "done.surface_id IS NULL AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0";
         let completable_gate = if letter_learning {
             String::new()
         } else {
             format!(
                 "AND COUNT(DISTINCT CASE WHEN done.surface_id IS NULL \
-                      AND COALESCE(sm.concept_rank, -1) >= ?1 THEN vw.surface_id END) = 0"
+                      AND (COALESCE(sm.concept_mask, 0) & ~?1) != 0 THEN vw.surface_id END) = 0"
             )
         };
         let order = if letter_learning {
@@ -2231,7 +2387,7 @@ impl Bible {
     }
 
     /// The *introducible* not-fully-learnt words of a verse — unknown and not
-    /// behind a still-locked grammar rule (`concept_rank < unlocked`) — that
+    /// behind a still-locked grammar rule (`concept_mask` inside `unlocked`) — that
     /// [`Self::next_introduction`] may teach. Unlike [`Self::first_unfinished_word`]
     /// (which sees every unknown word, so verse completion stays honest), a
     /// locked-grammar word is excluded here so it isn't taught before its rule
@@ -2264,7 +2420,7 @@ impl Bible {
              LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
              WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
                AND done.surface_id IS NULL
-               AND COALESCE(sm.concept_rank, -1) < ?4
+               AND (COALESCE(sm.concept_mask, 0) & ~?4) = 0
              {order}"
         );
         let mut stmt = self.conn().prepare(&sql)?;
@@ -2455,7 +2611,7 @@ impl Bible {
             .query_row(
                 "SELECT s.text FROM hebrewdb.surface s
                  JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id
-                 WHERE COALESCE(sm.concept_rank, -1) < ?1
+                 WHERE (COALESCE(sm.concept_mask, 0) & ~?1) = 0
                    AND popcount(sm.glyph_mask & ~?2) > 0
                    AND COALESCE(s.language, '') <> 'aramaic'
                  ORDER BY s.occurrences DESC LIMIT 1",
@@ -2511,6 +2667,9 @@ impl Bible {
         let Some(rank) = crate::grammar::concept_index(key) else {
             return Ok(trigger.to_string());
         };
+        // "Exercises the concept as its hardest rule": the concept's bit is
+        // set and no higher-indexed bit is (indexes follow inventory order,
+        // which still encodes rough difficulty for display purposes).
         for studied_only in [true, false] {
             let studied = if studied_only {
                 "JOIN progress.word_srs ws ON ws.surface_id = sm.surface_id"
@@ -2524,10 +2683,11 @@ impl Bible {
                         "SELECT s.text FROM progress.surface_meta sm \
                          JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
                          {studied} \
-                         WHERE sm.concept_rank = ?1 AND sm.is_name = 0 \
+                         WHERE (sm.concept_mask & ?1) != 0 AND (sm.concept_mask >> (?2 + 1)) = 0 \
+                           AND sm.is_name = 0 \
                          ORDER BY s.occurrences DESC LIMIT 1"
                     ),
-                    params![rank],
+                    params![1i64 << rank, rank],
                     |r| r.get(0),
                 )
                 .optional()?;
@@ -2960,7 +3120,7 @@ impl Bible {
         // build it once here (cheap version-stamp check thereafter).
         self.ensure_surface_meta()?;
         let settings = self.tutor_settings()?;
-        let unlocked = self.unlocked_concepts(&settings)?;
+        let unlocked = self.unlocked_concepts(&settings, now)?;
         // Letter-learning phase: the alphabet isn't known yet, so no grammar rule
         // is unlocked — the curriculum stays on the simplest grammar-free words
         // (ordered by fewest new letters). `seen_mask` counts how many letters a
@@ -2973,8 +3133,9 @@ impl Bible {
             0
         };
         debug!(
-            "next_study_item: unlocked={unlocked} letter_learning={letter_learning} \
-             seen_mask={seen_mask:#x}"
+            "next_study_item: unlocked={unlocked:#x} ({} concepts) \
+             letter_learning={letter_learning} seen_mask={seen_mask:#x}",
+            unlocked.count_ones()
         );
         let target = match self.meta_target()? {
             Some(t) => {
@@ -2995,18 +3156,25 @@ impl Bible {
                     // corpus corner can never stall the flow. Otherwise nothing
                     // new is left; keep any in-learning cards going.
                     let total = crate::grammar::concept_count() as i64;
-                    if unlocked < total
-                        && self.next_target_verse(total, seen_mask, false)?.is_some()
+                    let count = unlocked.count_ones() as i64;
+                    if count < total
+                        && self
+                            .next_target_verse(
+                                crate::grammar::all_concepts_mask(),
+                                seen_mask,
+                                false,
+                            )?
+                            .is_some()
                     {
                         debug!(
-                            "next_study_item: no target at unlocked={unlocked}; \
+                            "next_study_item: no target at {count} unlocked concepts; \
                              advancing unlock_floor to {}",
-                            unlocked + 1
+                            count + 1
                         );
                         self.conn().execute(
                             "INSERT INTO progress.meta(key, value) VALUES ('unlock_floor', ?1) \
                              ON CONFLICT(key) DO UPDATE SET value = excluded.value",
-                            params![(unlocked + 1).to_string()],
+                            params![(count + 1).to_string()],
                         )?;
                         return self.next_study_item_impl(now, interleave_on_stall);
                     }
@@ -3733,7 +3901,8 @@ impl Bible {
              DELETE FROM progress.suffix_srs;
              DELETE FROM progress.reviews;
              DELETE FROM progress.marks_seen;
-             DELETE FROM progress.concepts_seen;",
+             DELETE FROM progress.concepts_seen;
+             DELETE FROM progress.concepts_unlocked;",
         )
     }
 }
@@ -4363,19 +4532,24 @@ mod tests {
             grammar_gating: false,
             ..Default::default()
         };
-        assert_eq!(bible.unlocked_concepts(&off)?, total);
+        assert_eq!(
+            bible.unlocked_concepts(&off, now)?.count_ones() as i64,
+            total
+        );
 
         // Gating on, alphabet not known → no grammar rule at all (the learner
         // stays on grammar-free words while learning the letters).
         let s = TutorSettings::default();
-        assert_eq!(bible.unlocked_concepts(&s)?, 0);
+        assert_eq!(bible.unlocked_concepts(&s, now)?, 0);
 
-        // Alphabet known but no vocabulary → the first rule (the article) unlocks.
+        // Alphabet known but no vocabulary → exactly one rule (chosen from
+        // bucket 0 by verse coverage) unlocks.
         bible.seed_known_alphabet(now)?;
-        assert_eq!(bible.unlocked_concepts(&s)?, 1);
+        let first = bible.unlocked_concepts(&s, now)?;
+        assert_eq!(first.count_ones(), 1);
 
         // Graduating one `words_per_concept` batch of vocabulary unlocks exactly
-        // one more rule.
+        // one more rule — and the earlier unlock is kept (the set only grows).
         let per = s.words_per_concept();
         for i in 0..per {
             bible.conn().execute(
@@ -4385,7 +4559,9 @@ mod tests {
                 params![format!("seed{i}"), 1_000_000 + i],
             )?;
         }
-        assert_eq!(bible.unlocked_concepts(&s)?, 2);
+        let second = bible.unlocked_concepts(&s, now)?;
+        assert_eq!(second.count_ones(), 2);
+        assert_eq!(second & first, first, "unlocked set only grows");
         Ok(())
     }
 
@@ -4395,15 +4571,15 @@ mod tests {
             return Ok(());
         };
         let s = TutorSettings::default();
-        // No letters yet → nothing unlocked.
-        assert_eq!(bible.unlocked_concepts(&s)?, 0);
-        // A partial alphabet (some consonants, no vowels) is still not "known".
         let now = 1_700_000_000;
+        // No letters yet → nothing unlocked.
+        assert_eq!(bible.unlocked_concepts(&s, now)?, 0);
+        // A partial alphabet (some consonants, no vowels) is still not "known".
         for g in ["א", "ל", "מ", "ר", "ב", "ן"] {
             bible.submit_review(Track::Glyph, g, Grade::Easy, now)?;
         }
         assert_eq!(
-            bible.unlocked_concepts(&s)?,
+            bible.unlocked_concepts(&s, now)?,
             0,
             "grammar stays locked mid-alphabet"
         );
@@ -4483,15 +4659,15 @@ mod tests {
                 StudyItem::NewWord(w) => {
                     // At introduction, every grammar rule the word needs must be
                     // within the current unlock frontier.
-                    let unlocked = bible.unlocked_concepts(&s)?;
-                    let rank: i64 = bible.conn().query_row(
-                        "SELECT concept_rank FROM progress.surface_meta WHERE surface_id = ?1",
+                    let unlocked = bible.unlocked_concepts(&s, now)?;
+                    let mask: i64 = bible.conn().query_row(
+                        "SELECT concept_mask FROM progress.surface_meta WHERE surface_id = ?1",
                         params![w.surface_id],
                         |r| r.get(0),
                     )?;
                     assert!(
-                        rank < unlocked,
-                        "introduced a locked-rule word (rank {rank} >= frontier {unlocked})"
+                        mask & !unlocked == 0,
+                        "introduced a locked-rule word (mask {mask:#x} outside frontier {unlocked:#x})"
                     );
                     checked += 1;
                     bible.submit_review(Track::Word, &w.surface, Grade::Easy, now)?
