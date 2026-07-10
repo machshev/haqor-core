@@ -565,8 +565,15 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// ("God hides"), so the gloss-text sniff missed ~40% of names (and every
 /// gentilic), letting genealogy verses rank as easy and one-off names card
 /// as vocabulary — and let a curated vocabulary gloss override the bridge
-/// (בְּנֵי "sons of" bridges to BDB's *Bani* and was wrongly name-flagged).
-const SURFACE_META_VERSION: i64 = 17;
+/// (בְּנֵי "sons of" bridges to BDB's *Bani* and was wrongly name-flagged);
+/// 18 recovered the grammar cell of opaque-labelled irregular/gold noun forms
+/// (a pronominal-suffix or plural tail on אֲבֹתָם/שְׁמוֹ/אֲנָשִׁים now gates
+/// and glosses like any suffixed noun), folded final-form proclitic letters so
+/// מֵאֶרֶץ's mem prefix classifies as prep-min, and sniffed the conjunctive
+/// vav on otherwise-unclassifiable surfaces (וָמַעְלָה) — closing the hole
+/// that let hundreds of suffixed rare forms rank as grammar-free beginner
+/// vocabulary.
+const SURFACE_META_VERSION: i64 = 18;
 
 /// Distinct base consonants (final forms are drilled separately but don't count
 /// here — see [`Bible::all_letters_known`]; begadkefat/shin dot-pairs counted
@@ -591,30 +598,43 @@ const LETTER_GLYPH_TOTAL: i64 = 27;
 /// opposed to [`ALPHABET_VOWEL_TARGET`] which gates grammar unlocking.
 const VOWEL_GLYPH_TOTAL: i64 = 12;
 
-/// While learning letters, words of at most this many glyphs are preferred
-/// over longer ones — but only as a tie-break bucket ahead of frequency, not
-/// a hard cap: once short words in a verse run out, longer ones still get
-/// taught in frequency order rather than being skipped.
-const LETTER_LEARNING_SHORT_WORD_GLYPHS: i64 = 3;
-
-/// A word's frequency for curriculum ordering: its root's corpus occurrences,
-/// falling back to the surface's own. A proper name never gets the root's
-/// count — its bridged root is usually a spurious homograph (חֶצְרוֹ resolves
+/// A word's frequency for curriculum ordering: its root's corpus occurrences —
+/// learning any form of a common root pays off across the whole family, so the
+/// root count stays the long-term signal — but *capped at 25× the surface's own
+/// count*, so a rare inflected spelling of a common root (וּלְצָרַעַת occurs
+/// once; its root is everywhere) can't masquerade as easy vocabulary and pin a
+/// verse full of one-off forms. A proper name never gets the root's count at
+/// all — its bridged root is usually a spurious homograph (חֶצְרוֹ resolves
 /// to חצר "courtyard"), which used to rank one-off genealogy names as if they
 /// were common vocabulary. Assumes `sm`, `r` and `s` are joined.
 const WORD_FREQ: &str = "CASE WHEN COALESCE(sm.is_name, 0) = 1 THEN s.occurrences \
-     ELSE COALESCE(r.n_occurrences, s.occurrences) END";
+     ELSE MIN(COALESCE(r.n_occurrences, s.occurrences), s.occurrences * 25) END";
 
 /// Within-verse ordering of not-yet-learnt words: a word building on an
 /// already-known root first, then the simplest grammatical form, then the most
 /// frequent root ([`WORD_FREQ`]), then the most common surface. Assumes `sm`
 /// (surface_meta), `r` (roots) and `kr` ([`KNOWN_ROOTS`]) are joined and `s` is
 /// the surface row.
-const WORD_ORDER: &str = "ORDER BY (kr.root IS NOT NULL) DESC, \
-     COALESCE(sm.form_tier, 0) ASC, \
-     CASE WHEN COALESCE(sm.is_name, 0) = 1 THEN s.occurrences \
-          ELSE COALESCE(r.n_occurrences, s.occurrences) END DESC, \
-     s.occurrences DESC";
+fn word_order() -> String {
+    format!(
+        "ORDER BY (kr.root IS NOT NULL) DESC, \
+         COALESCE(sm.form_tier, 0) ASC, \
+         {WORD_FREQ} DESC, \
+         s.occurrences DESC"
+    )
+}
+
+/// A word's desirability while the alphabet is still being learnt: its
+/// curriculum frequency ([`WORD_FREQ`]) discounted by a factor of 4 for every
+/// *new* letter it would introduce (`?N` is the seen-glyph mask). Frequency
+/// stays the dominant signal — a 500× word carrying one new letter still beats
+/// a 2× name spelled with known letters — while the discount keeps the learner
+/// on words within easy reach and feeds the alphabet a couple of letters at a
+/// time. (A shift past 63 yields 0 in SQLite, so all-new long words simply
+/// score 0 and sort last.)
+fn letter_learning_score(seen_mask_param: &str) -> String {
+    format!("({WORD_FREQ} >> (2 * popcount(sm.glyph_mask & ~{seen_mask_param})))")
+}
 
 /// A verse's calibration difficulty: its rarest word's OT occurrence count.
 const DIFFICULTY: &str = "MIN(s.occurrences)";
@@ -2067,15 +2087,11 @@ impl Bible {
     /// In `letter_learning` mode (the alphabet isn't known yet, so only
     /// grammar-free words are introducible) it drops the completability
     /// requirement — a verse may still contain not-yet-teachable grammar words —
-    /// and instead orders by its cheapest introducible word: fewest *new letters*
-    /// (`popcount(glyph_mask & ~seen)`), then a preference for words of at most
-    /// [`LETTER_LEARNING_SHORT_WORD_GLYPHS`] glyphs, then the most common
-    /// *surface* (`s.occurrences`, not root frequency — a rare inflected form
-    /// of a common root is still a rare surface) within that tier. So the
-    /// learner meets the simplest words first and builds the alphabet from
-    /// them, reusing letters already learnt, while still working through
-    /// short words in frequency order (and falling through to longer words,
-    /// still by frequency, once short ones run out). Biblical Aramaic verses
+    /// and instead rates each verse by its best introducible word under
+    /// [`letter_learning_score`]: frequency discounted 4× per new letter. So
+    /// the learner meets common words first, absorbing a couple of new letters
+    /// at a time, and the curriculum never digs into one-off names just because
+    /// they're short and spelled with known letters. Biblical Aramaic verses
     /// excluded.
     fn next_target_verse(
         &self,
@@ -2108,12 +2124,14 @@ impl Bible {
             )
         };
         let order = if letter_learning {
+            // Rate the verse by its single *best* introducible word — the one
+            // the tutor will actually teach next ([`letter_learning_score`]) —
+            // so verse choice and word choice agree; MAX, not MIN, because an
+            // unrelated rare word elsewhere in the verse shouldn't sink the
+            // verse carrying the best next word.
+            let score = letter_learning_score("?2");
             format!(
-                "MIN(CASE WHEN {INTRO} THEN popcount(sm.glyph_mask & ~?2) END) ASC, \
-                 MIN(CASE WHEN {INTRO} THEN \
-                     CASE WHEN popcount(sm.glyph_mask) <= {LETTER_LEARNING_SHORT_WORD_GLYPHS} \
-                          THEN 0 ELSE 1 END END) ASC, \
-                 MIN(CASE WHEN {INTRO} THEN s.occurrences END) DESC, \
+                "MAX(CASE WHEN {INTRO} THEN {score} END) DESC, \
                  vw.book, vw.chapter, vw.verse"
             )
         } else {
@@ -2184,8 +2202,9 @@ impl Bible {
     }
 
     /// The next not-fully-learnt word in a verse to introduce, if any remain,
-    /// in [`WORD_ORDER`] (known-root, then simplest form, then common root).
+    /// in [`word_order`] (known-root, then simplest form, then common root).
     fn first_unfinished_word(&self, b: u8, c: u8, v: u8) -> rusqlite::Result<Option<String>> {
+        let word_order = word_order();
         self.conn()
             .query_row(
                 &format!(
@@ -2198,7 +2217,7 @@ impl Bible {
                      LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
                      WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
                        AND done.surface_id IS NULL
-                     {WORD_ORDER}
+                     {word_order}
                      LIMIT 1"
                 ),
                 params![b, c, v],
@@ -2216,12 +2235,10 @@ impl Bible {
     /// [`Self::next_introduction`] may teach. Unlike [`Self::first_unfinished_word`]
     /// (which sees every unknown word, so verse completion stays honest), a
     /// locked-grammar word is excluded here so it isn't taught before its rule
-    /// unlocks. Ordered semantically ([`WORD_ORDER`]) normally, or — while
-    /// learning the alphabet — by fewest new letters, then a preference for
-    /// short words ([`LETTER_LEARNING_SHORT_WORD_GLYPHS`]), then most common
-    /// surface within that tier (`s.occurrences`, not root frequency), so the
-    /// simplest words come first but frequency still
-    /// governs the order words are met in.
+    /// unlocks. Ordered semantically ([`word_order`]) normally, or — while
+    /// learning the alphabet — by [`letter_learning_score`] (frequency
+    /// discounted 4× per new letter), so common words come first and new
+    /// letters arrive a couple at a time.
     fn unfinished_words(
         &self,
         b: u8,
@@ -2232,14 +2249,10 @@ impl Bible {
         letter_learning: bool,
     ) -> rusqlite::Result<Vec<String>> {
         let order = if letter_learning {
-            format!(
-                "ORDER BY popcount(sm.glyph_mask & ~?5) ASC, \
-                 CASE WHEN popcount(sm.glyph_mask) <= {LETTER_LEARNING_SHORT_WORD_GLYPHS} \
-                      THEN 0 ELSE 1 END ASC, \
-                 s.occurrences DESC"
-            )
+            let score = letter_learning_score("?5");
+            format!("ORDER BY {score} DESC, s.occurrences DESC")
         } else {
-            WORD_ORDER.to_string()
+            word_order()
         };
         let sql = format!(
             "SELECT s.text

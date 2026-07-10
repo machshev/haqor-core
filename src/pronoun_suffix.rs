@@ -191,24 +191,33 @@ fn match_ending(surface_clusters: &[Cluster], ending: &str) -> Option<usize> {
 /// [`crate::grammar::pronoun_suffix_host`]; the match alone is meaningless on
 /// arbitrary words.
 pub fn split_pronoun_suffix(surface: &str) -> Option<SuffixSplit> {
+    pronoun_suffix_splits(surface).into_iter().next()
+}
+
+/// Every pronominal-ending match on `surface`, longest ending first (ties in
+/// inventory order, like [`split_pronoun_suffix`] which is simply the first of
+/// these). Callers with their own plausibility anchor — e.g. requiring the
+/// remainder to cover a known stem's consonants, which is how שְׁמוֹ avoids
+/// the poetic 3mp ־מוֹ and splits at שֵׁם + ־וֹ — pick the first survivor.
+pub fn pronoun_suffix_splits(surface: &str) -> Vec<SuffixSplit> {
     let sc = clusters(surface);
-    let mut best: Option<(&'static PronounSuffix, usize, usize)> = None;
+    let mut all: Vec<(&'static PronounSuffix, usize, usize)> = Vec::new();
     for p in PRONOUN_SUFFIXES {
         for e in p.endings {
-            if let Some(at) = match_ending(&sc, e)
-                && best.is_none_or(|(_, _, len)| e.len() > len)
-            {
-                best = Some((p, at, e.len()));
+            if let Some(at) = match_ending(&sc, e) {
+                all.push((p, at, e.len()));
             }
         }
     }
-    let (p, at, _) = best?;
-    Some(SuffixSplit {
-        key: p.key,
-        meaning: p.meaning,
-        stem: surface[..at].to_string(),
-        suffix: surface[at..].to_string(),
-    })
+    all.sort_by(|a, b| b.2.cmp(&a.2));
+    all.into_iter()
+        .map(|(p, at, _)| SuffixSplit {
+            key: p.key,
+            meaning: p.meaning,
+            stem: surface[..at].to_string(),
+            suffix: surface[at..].to_string(),
+        })
+        .collect()
 }
 
 #[cfg(test)]

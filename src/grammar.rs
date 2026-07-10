@@ -84,7 +84,21 @@ pub fn concepts_for_surface(surface: &str, w: Option<&HebrewWord>) -> Vec<&'stat
     if let Some(keys) = surface_concepts(surface) {
         return keys.to_vec();
     }
-    w.map(concepts_for).unwrap_or_default()
+    let keys = w.map(concepts_for).unwrap_or_default();
+    // A surface with no classification at all still betrays a conjunctive vav
+    // in its spelling: essentially no Hebrew word begins with a pointed vav
+    // that isn't the proclitic "and" (וָמַעְלָה "and upward" reaches here with
+    // no parse and used to gate as grammar-free). Only the vav is recoverable
+    // this way, so the fallback stays minimal.
+    if keys.is_empty() {
+        let mut cs = surface.chars();
+        if cs.next() == Some('\u{05D5}')
+            && cs.next().is_some_and(|c| ('\u{05B0}'..='\u{05BC}').contains(&c))
+        {
+            return vec!["conj-ve"];
+        }
+    }
+    keys
 }
 
 /// The grammar concepts a parsed word exercises, in teaching order (attached
