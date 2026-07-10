@@ -475,6 +475,44 @@ const PROCLITICS: [(&str, &str); 16] = [
     ("כְּ", "like"),
 ];
 
+/// Fold final-form consonants (ם ן ך ף ץ) to their base letters. The noun
+/// generator renders a peeled proclitic cluster in isolation, so a mem
+/// proclitic comes back as final mem (מֵאֶרֶץ carries prefix `םֵ`) — which a
+/// literal comparison against the surface, or a match on the regular letter,
+/// silently misses.
+fn unfinalize(s: &str) -> String {
+    s.chars()
+        .map(|c| match c {
+            '\u{05DA}' => '\u{05DB}', // ך → כ
+            '\u{05DD}' => '\u{05DE}', // ם → מ
+            '\u{05DF}' => '\u{05E0}', // ן → נ
+            '\u{05E3}' => '\u{05E4}', // ף → פ
+            '\u{05E5}' => '\u{05E6}', // ץ → צ
+            c => c,
+        })
+        .collect()
+}
+
+/// Whether a pointed surface ends in a plural or dual ending — masculine
+/// ־ִים, feminine ־וֹת (plene or defective), or dual ־ַיִם. Used to recover
+/// the number of an opaque-labelled irregular noun form (אֲנָשִׁים, אָבוֹת)
+/// whose inventory entry carries no per-form cell. Dagesh and shin/sin dots
+/// are ignored: in the stored combining order a dot may sit *between* the
+/// tail's vowel and its consonant (אֲנָשִׁים ends hiriq, shin-dot, yod, mem).
+fn has_plural_tail(surface: &str) -> bool {
+    const TAILS: &[&str] = &[
+        "\u{05B4}\u{05D9}\u{05DD}",             // ־ִים
+        "\u{05D5}\u{05B9}\u{05EA}",             // ־וֹת (plene)
+        "\u{05B9}\u{05EA}",                     // ־ֹת (defective)
+        "\u{05B7}\u{05D9}\u{05B4}\u{05DD}",     // ־ַיִם (dual)
+    ];
+    let undotted: String = surface
+        .chars()
+        .filter(|&c| !matches!(c as u32, 0x05BC | 0x05BD | 0x05C1 | 0x05C2))
+        .collect();
+    TAILS.iter().any(|t| undotted.ends_with(t))
+}
+
 /// Remainder of `surface` after removing a proclitic spelling, dropping the
 /// dagesh the article/preposition doubles into the next consonant (it may
 /// sit before or after that consonant's vowel). `None` when the proclitic
@@ -1594,6 +1632,7 @@ impl Bible {
             kind: String,
             label: String,
             prefix: String,
+            stem: String,
             root: String,
             gloss: String,
             resolved: bool,
@@ -1613,7 +1652,8 @@ impl Bible {
                 let reading = NounReading {
                     kind,
                     label,
-                    prefix,
+                    prefix: unfinalize(&prefix),
+                    stem,
                     root,
                     gloss,
                     resolved: resolves,
@@ -1680,7 +1720,61 @@ impl Bible {
         }
 
         if let Some(n) = noun {
-            let (number, state) = decode_noun_label(&n.label);
+            let (mut number, mut state) = decode_noun_label(&n.label);
+            // A curated irregular / gold-harvested form carries only an opaque
+            // label ("Irregular (father)", "Noun (heel)") — the inventory lists
+            // attested surfaces per lemma with no per-form cell, so a possessive
+            // suffix or plural ending is invisible to morphology display and
+            // grammar gating (אֲבֹתָם taught as a plain grammar-free noun).
+            // Recover the cell structurally from the surface's tail: a
+            // pronominal ending upgrades the state to the "label + 3ms" shape
+            // [`inflect_noun`] and [`crate::grammar::concepts_for`] already
+            // understand; a plural/dual ending sets the number. Guarded by the
+            // consonantal skeleton: only a form whose consonants go beyond
+            // prefix + stem carries extra morphology — the lemma חַי must not
+            // sniff its own ־ַי as "my …", and plural-tantum מַיִם (whose
+            // curated lemma *is* the surface, dual tail and all) stays the
+            // plain "water" even when prefixed (הַמַּיִם).
+            let opaque = number.is_none()
+                && state
+                    .as_deref()
+                    .is_some_and(|s| s.starts_with("Irregular (") || s.starts_with("Noun ("));
+            let stem_cons = fold_consonants(&n.stem);
+            let inflected = fold_consonants(&norm)
+                != format!("{}{stem_cons}", fold_consonants(&n.prefix));
+            if opaque && inflected {
+                // Longest pronominal ending whose remainder still holds every
+                // stem consonant — without the anchor, שְׁמוֹ would split at
+                // the poetic 3mp ־מוֹ instead of שֵׁם + ־וֹ. A remainder
+                // running past the stem is a plural stem (אֲבֹתָם "their
+                // fathers", חַיֶּיךָ "your life"), so the number follows.
+                let splits: Vec<(&str, String)> = crate::pronoun_suffix::pronoun_suffix_splits(&norm)
+                    .into_iter()
+                    .map(|sp| (sp.key, fold_consonants(&sp.stem)))
+                    .collect();
+                let split = splits
+                    .iter()
+                    .find(|(_, rest)| {
+                        rest.ends_with(&stem_cons) || rest.starts_with(&stem_cons)
+                    })
+                    // A plural-tantum stem truncates before its suffix (פָּנָיו
+                    // keeps only פנ of פנים) — tolerate a remainder that is a
+                    // leading piece of the stem, but only when no full-stem
+                    // match exists, so שְׁמוֹ still prefers שֵׁם + ־וֹ.
+                    .or_else(|| {
+                        splits.iter().find(|(_, rest)| {
+                            rest.len() >= 4 && stem_cons.starts_with(rest.as_str())
+                        })
+                    });
+                if let Some((key, rest)) = split {
+                    state = state.map(|s| format!("{s} + {key}"));
+                    if rest.len() > stem_cons.len() + fold_consonants(&n.prefix).len() {
+                        number = Some("Plural".to_string());
+                    }
+                } else if has_plural_tail(&norm) {
+                    number = Some("Plural".to_string());
+                }
+            }
             return Some(HebrewWord {
                 word: norm,
                 root: n.root,
@@ -1736,7 +1830,7 @@ impl Bible {
                 gender: None,
                 number: None,
                 state: None,
-                prefix: (!prefix.is_empty()).then_some(prefix),
+                prefix: (!prefix.is_empty()).then(|| unfinalize(&prefix)),
                 vav_con: false,
                 obj_suffix: None,
                 is_name: false,
@@ -2591,6 +2685,58 @@ mod tests {
             .map(|o| (o.book, o.chapter, o.verse))
             .collect();
         assert_eq!(distinct_verses.len(), root_occ.len());
+    }
+
+    #[test]
+    fn opaque_irregular_labels_recover_suffix_and_plural_cells() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // Irregular-inventory forms carry only "Irregular (…)" labels; the
+        // pronominal-suffix / plural tail must be recovered from the surface
+        // so gating and gloss inflection see the real cell.
+        let w = bible.hebrew_word_info("שְׁמוֹ").unwrap();
+        assert!(
+            w.state.as_deref().unwrap_or("").contains("+ 3ms"),
+            "שְׁמוֹ (his name) should carry a 3ms suffix cell, got {:?}",
+            w.state
+        );
+        let w = bible.hebrew_word_info("אֲבֹתָם").unwrap();
+        assert!(
+            w.state.as_deref().unwrap_or("").contains("+ 3mp"),
+            "אֲבֹתָם (their fathers) should carry a 3mp suffix cell, got {:?}",
+            w.state
+        );
+        let w = bible.hebrew_word_info("אֲנָשִׁים").unwrap();
+        assert_eq!(
+            w.number.as_deref(),
+            Some("Plural"),
+            "אֲנָשִׁים (men) should recover its plural number"
+        );
+        // The bare lemma must not sniff its own tail as a suffix.
+        let w = bible.hebrew_word_info("חַי").unwrap();
+        assert!(
+            !w.state.as_deref().unwrap_or("").contains('+'),
+            "the bare lemma חַי must not read its ־ַי as a pronoun, got {:?}",
+            w.state
+        );
+        // A final-form proclitic letter (noun generator renders mem as ם)
+        // folds back to the base letter, so the prefix classifies (prep-min)
+        // and glosses ("from …").
+        let w = bible.hebrew_word_info("מֵאֶרֶץ").unwrap();
+        assert!(
+            w.prefix.as_deref().unwrap_or("").starts_with('\u{05DE}'),
+            "מֵאֶרֶץ's prefix should fold to a regular mem, got {:?}",
+            w.prefix
+        );
+        assert!(
+            crate::grammar::concepts_for_surface("מֵאֶרֶץ", Some(&w)).contains(&"prep-min"),
+            "מֵאֶרֶץ should gate behind prep-min"
+        );
+        // A surface with no parse at all still betrays its conjunctive vav.
+        assert_eq!(
+            crate::grammar::concepts_for_surface("וָמַעְלָה", None),
+            vec!["conj-ve"]
+        );
     }
 
     #[test]
