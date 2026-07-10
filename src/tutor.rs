@@ -593,8 +593,12 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// מֵאֶרֶץ's mem prefix classifies as prep-min, and sniffed the conjunctive
 /// vav on otherwise-unclassifiable surfaces (וָמַעְלָה) — closing the hole
 /// that let hundreds of suffixed rare forms rank as grammar-free beginner
-/// vocabulary.
-const SURFACE_META_VERSION: i64 = 18;
+/// vocabulary;
+/// 19 made the noun bridge prefer the BDB lexeme whose pointed headword
+/// matches the stem exactly (BDB files the verb before its derived nouns, so
+/// segolates like חֹדֶשׁ/מֶלֶךְ carded the verb's gloss) and curated
+/// חֹדֶשׁ "month; new moon".
+const SURFACE_META_VERSION: i64 = 19;
 
 /// `concept_mask` sentinel for a surface the tutor cannot teach: no parse
 /// gloss, no curated gloss, and not a name — its card would be blank. The bit
@@ -4488,6 +4492,30 @@ mod tests {
         // the answer with no redundant root line.
         let card = bible.word_card("בַּיִת")?.expect("בַּיִת is a surface");
         assert_eq!(card.root_gloss, "");
+        Ok(())
+    }
+
+    /// A segolate noun cards its own lexeme, not the verb BDB files first in
+    /// the consonant group: מֶלֶךְ is "king", not "possess, own exclusively";
+    /// חֹדֶשׁ is the curated "month", not "renew" (nor BDB's etymological
+    /// headline "newness").
+    #[test]
+    fn word_card_segolate_noun_beats_verb_group_order() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let card = bible.word_card("מֶלֶךְ")?.expect("מֶלֶךְ is a surface");
+        assert_eq!(card.gloss, "king", "got {card:?}");
+
+        let card = bible.word_card("חֹדֶשׁ")?.expect("חֹדֶשׁ is a surface");
+        assert_eq!(card.gloss, "month", "got {card:?}");
         Ok(())
     }
 

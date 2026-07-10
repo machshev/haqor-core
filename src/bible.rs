@@ -586,6 +586,10 @@ const CURATED_GLOSSES: &[(&str, &str, &str)] = &[
     // inflected form sharing the stem (שְׁמוֹ, אֲבֹתָם, בֵּיתוֹ, רֵעֵהוּ,
     // אֲנָשִׁים) resolves through these.
     ("שֵׁם", "", "name"),
+    // BDB's sense order is etymological, so even the exact-headword match
+    // leads with a sense a learner never meets: חֹדֶשׁ opens "newness"
+    // before "new moon; month".
+    ("חֹדֶשׁ", "חדש", "month; new moon"),
     ("אָב", "אבה", "father"),
     ("אֵם", "אממ", "mother"),
     ("בַּיִת", "בית", "house"),
@@ -1689,7 +1693,7 @@ impl Bible {
                 let is_curated = curated.is_some();
                 let resolved = curated
                     .map(|(root, gloss)| (root, gloss, false))
-                    .or_else(|| self.hebrew_cons_root(&fold_consonants(&stem)));
+                    .or_else(|| self.hebrew_cons_root(&stem));
                 let resolves = resolved.is_some();
                 let (root, gloss, is_name) = resolved.unwrap_or_default();
                 let reading = NounReading {
@@ -1915,24 +1919,35 @@ impl Bible {
         None
     }
 
-    /// Resolve a folded consonant skeleton to a BDB `(root, gloss, is_name)`
-    /// via the indexed `cons` column — the noun bridge. Goes through the ranked
+    /// Resolve a pointed noun stem to a BDB `(root, gloss, is_name)` via the
+    /// indexed `cons` column — the noun bridge. Goes through the ranked
     /// [`bdb_rows`] selection so cross-reference stubs are never bridged and
     /// English-led glosses beat Hebrew-citation sub-entries, exactly like the
-    /// function-word bridge. `is_name` reports whether the *resolved* lexeme is
-    /// a proper name or gentilic ([`name_pos`]) — the classification follows
-    /// the entry whose gloss is served. When no glossed lexeme survives, a
-    /// gloss-less lexeme still names the root — as does a root-header stub
-    /// (paren-led gloss), whose root column is self-referential even though its
-    /// gloss is unusable. `None` when no lexeme matches at all.
-    fn hebrew_cons_root(&self, cons: &str) -> Option<(String, String, bool)> {
+    /// function-word bridge. Within the group, a lexeme whose pointed headword
+    /// matches the stem exactly wins over group order: BDB files the verb
+    /// before its derived nouns (חָדַשׁ "renew" precedes חֹדֶשׁ "month",
+    /// מָלַךְ "reign" precedes מֶלֶךְ "king"), so a segolate stem would
+    /// otherwise card the verb's gloss. `is_name` reports whether the
+    /// *resolved* lexeme is a proper name or gentilic ([`name_pos`]) — the
+    /// classification follows the entry whose gloss is served. When no glossed
+    /// lexeme survives, a gloss-less lexeme still names the root — as does a
+    /// root-header stub (paren-led gloss), whose root column is
+    /// self-referential even though its gloss is unusable. `None` when no
+    /// lexeme matches at all.
+    fn hebrew_cons_root(&self, stem: &str) -> Option<(String, String, bool)> {
+        let cons = fold_consonants(stem);
         if cons.is_empty() {
             return None;
         }
-        if let Some((_, root, gloss, pos)) =
-            bdb_rows(&self.db, cons).and_then(|rows| rows.into_iter().next())
-        {
-            return Some((root, gloss, name_pos(&pos)));
+        if let Some(rows) = bdb_rows(&self.db, stem) {
+            let canonical = normalize_hebrew_combining(&strip_accents(stem));
+            if let Some((_, root, gloss, pos)) = rows
+                .iter()
+                .find(|(word, ..)| normalize_hebrew_combining(&strip_accents(word)) == canonical)
+                .or_else(|| rows.first())
+            {
+                return Some((root.clone(), gloss.clone(), name_pos(pos)));
+            }
         }
         self.db
             .query_row(
@@ -3284,6 +3299,23 @@ mod tests {
         let (root, gloss, _) = bible.hebrew_cons_root("לשכ").expect("לשכ names a root");
         assert_eq!(root, "לשכ");
         assert_eq!(gloss, "");
+    }
+
+    #[test]
+    fn test_cons_bridge_prefers_exact_pointed_headword() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // BDB files the verb before its derived nouns, so group order alone
+        // serves מָלַךְ "reign" (or worse, מלך "possess, own exclusively")
+        // for the segolate stem מֶלֶךְ. The pointed headword match must win.
+        let (_, gloss, is_name) = bible.hebrew_cons_root("מֶלֶךְ").expect("מֶלֶךְ bridges");
+        assert!(gloss.starts_with("king"), "got {gloss:?}");
+        // The n.pr.m. מֶלֶךְ (son of Micah) also matches exactly; lexicon
+        // order within the exact matches keeps the common noun first.
+        assert!(!is_name);
+        // A pointing that matches no headword still bridges via group order.
+        let (root, _, _) = bible.hebrew_cons_root("זהב").expect("bare cons bridges");
+        assert_eq!(root, "זהב");
     }
 
     #[test]
