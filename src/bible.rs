@@ -1153,18 +1153,38 @@ fn let_subject(w: &HebrewWord) -> &'static str {
     }
 }
 
-/// The English sense that a proclitic conjunction/preposition contributes when
-/// attached to a noun, keyed by the first letter of the pointed prefix cluster.
-fn proclitic_word(prefix: &str) -> Option<&'static str> {
-    match prefix.chars().next()? {
-        '\u{05D5}' => Some("and"),  // vav
-        '\u{05DC}' => Some("to"),   // lamed
-        '\u{05D1}' => Some("in"),   // bet
-        '\u{05DB}' => Some("like"), // kaf
-        '\u{05DE}' => Some("from"), // mem
-        '\u{05D4}' => Some("the"),  // he (article)
-        _ => None,
+/// The English senses a pointed proclitic cluster contributes, one per
+/// attached letter in order — `וְלַ` → `["and", "to", "the"]`. An article
+/// assimilated into an inseparable preposition leaves only its vowel behind
+/// (לַ/בָּ carry the article's patach/qamats), so that vowel contributes its
+/// own "the".
+fn proclitic_words(prefix: &str) -> Vec<&'static str> {
+    let chars: Vec<char> = prefix.chars().collect();
+    let mut out = Vec::new();
+    for (i, &c) in chars.iter().enumerate() {
+        let word = match c {
+            '\u{05D5}' => "and",                // vav
+            '\u{05DC}' => "to",                 // lamed
+            '\u{05D1}' => "in",                 // bet
+            '\u{05DB}' | '\u{05DA}' => "like",  // kaf
+            '\u{05DE}' | '\u{05DD}' => "from",  // mem (final form when peeled)
+            '\u{05D4}' => "the",                // he (article)
+            _ => continue,
+        };
+        out.push(word);
+        // The article's vowel under ל/ב/כ (a dagesh may sit between the
+        // letter and its vowel: בַּ is bet, dagesh, patach).
+        if matches!(word, "to" | "in" | "like") {
+            let vowel = chars[i + 1..]
+                .iter()
+                .take_while(|&&v| (0x0591..=0x05C7).contains(&(v as u32)))
+                .find(|&&v| matches!(v as u32, 0x05B0..=0x05BB | 0x05C7));
+            if vowel.is_some_and(|&v| matches!(v as u32, 0x05B7 | 0x05B8)) {
+                out.push("the");
+            }
+        }
     }
+    out
 }
 
 /// Render the specific inflected form of a word in English, from its lexeme
@@ -1196,8 +1216,7 @@ fn inflect_verb(w: &HebrewWord, base: &str) -> String {
     let and = w.vav_con
         || w.prefix
             .as_deref()
-            .and_then(proclitic_word)
-            .is_some_and(|word| word == "and");
+            .is_some_and(|p| proclitic_words(p).first() == Some(&"and"));
     let subj = subject_pronoun(w);
     let clause = |verb: String| {
         let mut s = String::new();
@@ -1228,6 +1247,7 @@ fn inflect_verb(w: &HebrewWord, base: &str) -> String {
         Some("Cohortative") => with_obj(format!("let {} {base}", let_subject(w))),
         Some("Jussive") => with_obj(format!("let {} {base}", let_subject(w))),
         Some("Imperative") => with_obj(format!("{base}!")),
+        Some("Inf. Construct") | Some("Inf. Absolute") if and => format!("and to {base}"),
         Some("Inf. Construct") | Some("Inf. Absolute") => format!("to {base}"),
         Some("Participle (act.)") | Some("Participle") => with_obj(ing_form(base)),
         Some("Participle (pas.)") | Some("Participle (pass.)") => past_tense(base),
@@ -1368,13 +1388,17 @@ fn inflect_noun(w: &HebrewWord, base: &str) -> String {
         head
     };
 
-    // Attached preposition / conjunction / article. A gentilic gloss already
+    // Attached preposition / conjunction / article cluster — every letter
+    // contributes its sense (וְלַ → "and to the"). A gentilic gloss already
     // leads with its article ("the Carmelite") — don't double it.
-    match w.prefix.as_deref().and_then(proclitic_word) {
-        Some("the") if head.starts_with("the ") || head.starts_with("The ") => head,
-        Some("the") => format!("the {head}"),
-        Some(prep) => format!("{prep} {head}"),
-        None => head,
+    let mut words = w.prefix.as_deref().map_or(Vec::new(), proclitic_words);
+    if head.starts_with("the ") || head.starts_with("The ") {
+        words.retain(|&p| p != "the");
+    }
+    if words.is_empty() {
+        head
+    } else {
+        format!("{} {head}", words.join(" "))
     }
 }
 
@@ -2918,6 +2942,26 @@ mod tests {
         let mut the_king = noun(Some("Singular"), Some("Absolute"), "king");
         the_king.prefix = Some("הַ".to_string());
         assert_eq!(inflected_gloss(&the_king), "the king");
+
+        // Every letter of a proclitic cluster contributes its sense, and the
+        // article assimilated into an inseparable preposition (the patach
+        // under the lamed of וְלַ) contributes its own "the".
+        let mut and_to_the_house = noun(Some("Singular"), Some("Absolute"), "house");
+        and_to_the_house.prefix = Some("וְלַ".to_string());
+        assert_eq!(inflected_gloss(&and_to_the_house), "and to the house");
+        // A dagesh between the preposition and the article's vowel (בַּ is
+        // bet, dagesh, patach) doesn't hide the article.
+        let mut in_the_day = noun(Some("Singular"), Some("Absolute"), "day");
+        in_the_day.prefix = Some("בַּ".to_string());
+        assert_eq!(inflected_gloss(&in_the_day), "in the day");
+        // Plain shva carries no article: לְ is bare "to".
+        let mut to_a_king = noun(Some("Singular"), Some("Absolute"), "king");
+        to_a_king.prefix = Some("לְ".to_string());
+        assert_eq!(inflected_gloss(&to_a_king), "to king");
+        // Explicit article letter after a preposition (מֵהָ) still reads once.
+        let mut from_the_land = noun(Some("Singular"), Some("Absolute"), "land");
+        from_the_land.prefix = Some("מֵהָ".to_string());
+        assert_eq!(inflected_gloss(&from_the_land), "from the land");
 
         // A gentilic gloss already leading with "the" doesn't get a second
         // article from the הַ prefix (הַכַּרְמְלִי is "the Carmelite", not

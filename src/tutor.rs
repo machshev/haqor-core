@@ -271,13 +271,16 @@ pub struct WordCard {
     /// the learner can check how they sounded it out
     /// (see [`crate::romanize::romanize`]).
     pub translit: String,
-    /// The lexeme's base sense (BDB gloss) — what the meaning quiz tests.
+    /// The learner meaning of *this surface* — what the meaning quiz tests.
+    /// The specific inflected form rendered in English where the parse
+    /// supports one ("and to the house"; see [`crate::bible::inflected_gloss`]),
+    /// the lexeme's base sense otherwise.
     pub gloss: String,
-    /// The specific inflected form rendered in English ("and he said", "his
-    /// word"), for the answer side of the card. Empty when a curated gloss
-    /// already gives the learner meaning, or for a function word / proper noun.
-    /// See [`crate::bible::inflected_gloss`].
-    pub inflected: String,
+    /// The lexeme's base sense (BDB gloss, "house") when it differs from the
+    /// form-specific `gloss` — a secondary "root meaning" line on the answer
+    /// side. Empty when `gloss` is already the base sense, or for a curated
+    /// word / function word / proper noun.
+    pub root_gloss: String,
     /// Optional composition/teaching note for a curated word ("לְ (to) + ־וֹ
     /// (him)"), empty otherwise. See [`crate::vocab_gloss`].
     pub note: String,
@@ -1913,14 +1916,16 @@ impl Bible {
                 break;
             }
             // Prefer a curated gloss (as the correct answer does), else the
-            // automatic bridge, so options read consistently.
+            // candidate's own form-level rendering — the correct answer is
+            // form-specific ("and to the house"), so lexeme-sense options
+            // ("son") would give it away by register alone.
             let g = match crate::vocab_gloss::curated_gloss(&cand) {
                 Some(c) => c.gloss.trim().to_string(),
                 None => match self.hebrew_word_info(&cand) {
                     // A name's bridged gloss is an etymology ("my father is
                     // rescue"), not a meaning — never offer one.
                     Some(w) if w.is_name => continue,
-                    Some(w) => w.gloss.trim().to_string(),
+                    Some(w) => crate::bible::inflected_gloss(&w).trim().to_string(),
                     None => continue,
                 },
             };
@@ -1997,13 +2002,13 @@ impl Bible {
         // A curated gloss (held in the core) is the final learner meaning where
         // one exists — it overrides the automatic bridge and supplies the
         // composition note. Its gloss is already form-specific, so no separate
-        // inflected line is shown. A proclitic-prefixed curated name composes
+        // root-meaning line is shown. A proclitic-prefixed curated name composes
         // the same way ("to Jacob" — the bridge would serve the homograph root
         // "to heel"). An uncurated proper name (a BDB `n.pr` citation) has no
         // meaning to learn: it cards as [`NAME_GLOSS`] with the citation kept
         // as the note, and drops the spurious bridged root/morph — the
         // scheduler seeds such cards known after one showing.
-        let (gloss, inflected, note) = match crate::vocab_gloss::curated_gloss(surface) {
+        let (gloss, root_gloss, note) = match crate::vocab_gloss::curated_gloss(surface) {
             Some(c) => (
                 c.gloss.to_string(),
                 String::new(),
@@ -2025,7 +2030,15 @@ impl Bible {
                     morph.clear();
                     (NAME_GLOSS.to_string(), String::new(), note)
                 }
-                None => (gloss, inflected, String::new()),
+                // The surface's own meaning is what the learner is reading, so
+                // the inflected rendering headlines (and is quizzed); the
+                // lexeme sense demotes to a "root meaning" line.
+                None if !inflected.is_empty()
+                    && inflected.to_lowercase() != gloss.to_lowercase() =>
+                {
+                    (inflected, gloss, String::new())
+                }
+                None => (gloss, String::new(), String::new()),
             },
         };
 
@@ -2043,7 +2056,7 @@ impl Bible {
             occurrences,
             translit: crate::romanize::romanize(surface),
             gloss,
-            inflected,
+            root_gloss,
             note,
             root,
             morph,
@@ -2086,14 +2099,14 @@ impl Bible {
         .join(" ");
         // The quiz answer is the inflected form; contrasting inflections are the
         // wrong options. `gloss` carries the answer (as the meaning quiz does),
-        // `inflected` is cleared so the app shows no redundant line.
+        // `root_gloss` is cleared so the app shows no redundant line.
         Ok(Some(WordCard {
             surface_id,
             surface: surface.to_string(),
             occurrences,
             translit: crate::romanize::romanize(surface),
             gloss: inflected,
-            inflected: String::new(),
+            root_gloss: String::new(),
             note: String::new(),
             root: w.root.clone(),
             morph,
@@ -4446,6 +4459,35 @@ mod tests {
         for d in &card.distractors {
             assert!(!d.starts_with("see "), "stub distractor {d:?}");
         }
+        Ok(())
+    }
+
+    /// A meaning card headlines (and quizzes) the meaning of the surface
+    /// being shown — proclitics and all — with the lexeme's base sense
+    /// demoted to the `root_gloss` line: וְלַבָּיִת is "and to the house",
+    /// not its root's "house".
+    #[test]
+    fn word_card_headlines_the_surface_meaning() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let card = bible
+            .word_card("וְלַבָּיִת")?
+            .expect("וְלַבָּיִת is a corpus surface");
+        assert_eq!(card.gloss, "and to the house");
+        assert_eq!(card.root_gloss, "house");
+
+        // A bare form whose rendering adds nothing keeps the base sense as
+        // the answer with no redundant root line.
+        let card = bible.word_card("בַּיִת")?.expect("בַּיִת is a surface");
+        assert_eq!(card.root_gloss, "");
         Ok(())
     }
 
