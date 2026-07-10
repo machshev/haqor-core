@@ -597,8 +597,10 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// 19 made the noun bridge prefer the BDB lexeme whose pointed headword
 /// matches the stem exactly (BDB files the verb before its derived nouns, so
 /// segolates like חֹדֶשׁ/מֶלֶךְ carded the verb's gloss) and curated
-/// חֹדֶשׁ "month; new moon".
-const SURFACE_META_VERSION: i64 = 19;
+/// חֹדֶשׁ "month; new moon";
+/// 20 curated בְּרִית "covenant" (the bridge resolved it to BDB's
+/// *Baal-berith* n.pr entry, so the ordinary noun carded "(a name)").
+const SURFACE_META_VERSION: i64 = 20;
 
 /// `concept_mask` sentinel for a surface the tutor cannot teach: no parse
 /// gloss, no curated gloss, and not a name — its card would be blank. The bit
@@ -642,6 +644,16 @@ const VOWEL_GLYPH_TOTAL: i64 = 12;
 /// were common vocabulary. Assumes `sm`, `r` and `s` are joined.
 const WORD_FREQ: &str = "CASE WHEN COALESCE(sm.is_name, 0) = 1 THEN s.occurrences \
      ELSE MIN(COALESCE(r.n_occurrences, s.occurrences), s.occurrences * 25) END";
+
+/// Not a proper name — the words that count as real vocabulary. A verse with
+/// no unknown real word teaches nothing and sorts last in targeting
+/// ([`Bible::next_target_verse_excluding`]); the vocabulary frontier is the
+/// best real word ([`Bible::frontier_word_score`]); the letter phase never
+/// introduces names at all; and a teaching pin (dropped unread) never deals
+/// its names ([`Bible::unfinished_words`]). Names are only ever show-once
+/// freebies met while finishing a verse that's actually being read. Assumes
+/// `sm` is joined.
+const NOT_NAME: &str = "COALESCE(sm.is_name, 0) = 0";
 
 /// Within-verse ordering of not-yet-learnt words: a word building on an
 /// already-known root first, then the simplest grammatical form, then the most
@@ -2282,7 +2294,9 @@ impl Bible {
 
     /// The rarest not-yet-learnt word of a verse, by curriculum frequency
     /// ([`WORD_FREQ`]) — what completing this verse would drag the learner
-    /// down to. `None` when every word is known.
+    /// down to. Names count at their own surface frequency: dealing a string
+    /// of one-off name cards to finish a genealogy is exactly the drag the
+    /// starvation guard exists to catch. `None` when every word is known.
     fn verse_min_unknown_freq(
         &self,
         b: u8,
@@ -2307,9 +2321,9 @@ impl Bible {
 
     /// The best word the tutor could teach right now — the maximum
     /// [`letter_learning_score`] (curriculum frequency, discounted for unseen
-    /// glyphs) over every introducible unknown word in the corpus. The
-    /// vocabulary frontier that [`Self::choose_target_verse`] compares
-    /// completable verses against.
+    /// glyphs) over every introducible unknown real word (not a name —
+    /// [`NOT_NAME`]) in the corpus. The vocabulary frontier that
+    /// [`Self::choose_target_verse`] compares completable verses against.
     fn frontier_word_score(
         &self,
         unlocked: i64,
@@ -2323,7 +2337,7 @@ impl Bible {
                  JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id
                  LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
                  LEFT JOIN hebrewdb.roots r ON r.root = sm.root
-                 WHERE done.vkey IS NULL
+                 WHERE done.vkey IS NULL AND {NOT_NAME}
                    AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0
                    AND COALESCE(s.language, '') <> 'aramaic'"
             ),
@@ -2411,9 +2425,19 @@ impl Bible {
         letter_learning: bool,
     ) -> rusqlite::Result<Option<(u8, u8, u8)>> {
         // "introducible unknown word" in a CASE guard: every concept the word
-        // exercises is inside the unlocked mask (?1).
+        // exercises is inside the unlocked mask (?1). In letter-learning mode
+        // a name isn't introducible at all — the letter phase has no
+        // completable-verse freebies, so a name card there is pure noise (a
+        // pinned royal chronicle used to deal six of them in a row) — and the
+        // gate below must agree with [`Self::unfinished_words`] or a chosen
+        // verse would have nothing to introduce and targeting would spin.
         const INTRO: &str =
             "done.vkey IS NULL AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0";
+        let intro = if letter_learning {
+            format!("{INTRO} AND {NOT_NAME}")
+        } else {
+            INTRO.to_string()
+        };
         let completable_gate = if letter_learning {
             String::new()
         } else {
@@ -2430,17 +2454,23 @@ impl Bible {
             // verse carrying the best next word.
             let score = letter_learning_score("?2");
             format!(
-                "MAX(CASE WHEN {INTRO} THEN {score} END) DESC, \
+                "MAX(CASE WHEN {intro} THEN {score} END) DESC, \
                  vw.book, vw.chapter, vw.verse"
             )
         } else {
             // Key 1 rates a verse by its rarest unknown word ([`WORD_FREQ`]:
             // root frequency, but a name only ever counts its own surface —
-            // otherwise a genealogy of one-off names whose spurious roots are
-            // common vocabulary ranks as an easy verse).
+            // a rare name is a real drag on completing the verse, keeping
+            // one-off genealogies ranked low). A verse with *no* unknown
+            // real word keys NULL and sorts last, however famous its names:
+            // it teaches nothing, so it mustn't outrank verses that do
+            // (יִשְׂרָאֵל's 2266 occurrences used to make a name-list verse
+            // look like prime material). Still targetable, so name-only
+            // verses complete once real vocabulary is exhausted, not before.
             format!(
-                "MIN(CASE WHEN done.vkey IS NULL \
-                      THEN {WORD_FREQ} END) DESC, \
+                "CASE WHEN COUNT(DISTINCT CASE WHEN done.vkey IS NULL AND {NOT_NAME} \
+                                THEN vw.surface_id END) = 0 THEN NULL \
+                  ELSE MIN(CASE WHEN done.vkey IS NULL THEN {WORD_FREQ} END) END DESC, \
              COUNT(DISTINCT CASE WHEN done.vkey IS NULL AND kr.root IS NULL \
                                   AND sm.root <> '' THEN sm.root END) ASC, \
              MIN(CASE WHEN done.vkey IS NULL THEN COALESCE(sm.form_tier, 0) END) ASC, \
@@ -2473,7 +2503,7 @@ impl Bible {
              {exclude_where}
              GROUP BY vw.book, vw.chapter, vw.verse
              HAVING SUM(CASE WHEN s.language = 'aramaic' THEN 1 ELSE 0 END) = 0
-                AND COUNT(DISTINCT CASE WHEN {INTRO} THEN vw.surface_id END) >= 1
+                AND COUNT(DISTINCT CASE WHEN {intro} THEN vw.surface_id END) >= 1
                 {completable_gate}
              ORDER BY {order}
              LIMIT 1"
@@ -2534,10 +2564,13 @@ impl Bible {
     /// [`Self::next_introduction`] may teach. Unlike [`Self::first_unfinished_word`]
     /// (which sees every unknown word, so verse completion stays honest), a
     /// locked-grammar word is excluded here so it isn't taught before its rule
-    /// unlocks. Ordered semantically ([`word_order`]) normally, or — while
-    /// learning the alphabet — by [`letter_learning_score`] (frequency
-    /// discounted 4× per new letter), so common words come first and new
-    /// letters arrive a couple at a time.
+    /// unlocks, and a proper name only qualifies when `include_names` is set —
+    /// reading the pinned verse genuinely needs its names, but a verse pinned
+    /// only for teaching (letter phase, starvation fallback) gets dropped
+    /// unread, so dealing its names would be pure noise. Ordered semantically
+    /// ([`word_order`]) normally, or — while learning the alphabet — by
+    /// [`letter_learning_score`] (frequency discounted 4× per new letter), so
+    /// common words come first and new letters arrive a couple at a time.
     fn unfinished_words(
         &self,
         b: u8,
@@ -2546,12 +2579,18 @@ impl Bible {
         unlocked: i64,
         seen_mask: i64,
         letter_learning: bool,
+        include_names: bool,
     ) -> rusqlite::Result<Vec<String>> {
         let order = if letter_learning {
             let score = letter_learning_score("?5");
             format!("ORDER BY {score} DESC, s.occurrences DESC")
         } else {
             word_order()
+        };
+        let name_gate = if include_names {
+            String::new()
+        } else {
+            format!("AND {NOT_NAME}")
         };
         let sql = format!(
             "SELECT s.text
@@ -2564,6 +2603,7 @@ impl Bible {
              WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
                AND done.vkey IS NULL
                AND (COALESCE(sm.concept_mask, 0) & ~?4) = 0
+               {name_gate}
              {order}"
         );
         let mut stmt = self.conn().prepare(&sql)?;
@@ -2572,6 +2612,34 @@ impl Bible {
             p.push(&seen_mask);
         }
         stmt.query_map(p.as_slice(), |r| r.get(0))?.collect()
+    }
+
+    /// Whether the verse can actually be finished and read under the current
+    /// grammar frontier — no unknown word behind a still-locked rule. The
+    /// same test as the targeting query's completable gate, for the pinned
+    /// verse alone: a completable pin is being *read* (its names must be
+    /// dealt), while a teaching pin will be dropped unread (they mustn't).
+    fn verse_completable(
+        &self,
+        b: u8,
+        c: u8,
+        v: u8,
+        unlocked: i64,
+    ) -> rusqlite::Result<bool> {
+        let locked: i64 = self.conn().query_row(
+            &format!(
+                "SELECT COUNT(*)
+                 FROM hebrewdb.verse_word vw
+                 LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+                 LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
+                 WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
+                   AND done.vkey IS NULL
+                   AND (COALESCE(sm.concept_mask, 0) & ~?4) != 0"
+            ),
+            params![b, c, v, unlocked],
+            |r| r.get(0),
+        )?;
+        Ok(locked == 0)
     }
 
     /// The next thing to *introduce* (teach) toward the target verse: unseen
@@ -2605,7 +2673,12 @@ impl Bible {
         // adding more. Computed once; both throttle first-exposure only.
         let glyph_budget = self.glyphs_in_learning()? < settings.letters_per_batch as i64;
         let word_budget = self.words_in_learning()? < settings.words_per_batch as i64;
-        let surfaces = self.unfinished_words(b, c, v, unlocked, seen_mask, letter_learning)?;
+        // Names are dealt (as show-once freebies) only when the pinned verse
+        // will actually be read — completable right now — never from a
+        // teaching pin that gets dropped unread.
+        let include_names = !letter_learning && self.verse_completable(b, c, v, unlocked)?;
+        let surfaces =
+            self.unfinished_words(b, c, v, unlocked, seen_mask, letter_learning, include_names)?;
 
         // The word candidate: a word already fully readable (all its glyphs are
         // known *and* graduated, so it can be sounded out) whose meaning isn't
@@ -5643,7 +5716,7 @@ mod tests {
         let (b, c, v) = bible
             .next_target_verse(i64::MAX, 0, false)?
             .expect("a target verse exists");
-        let words = bible.unfinished_words(b, c, v, i64::MAX, 0, false)?;
+        let words = bible.unfinished_words(b, c, v, i64::MAX, 0, false, true)?;
         assert!(
             !words.is_empty(),
             "target verse should have unfinished words"
