@@ -238,6 +238,7 @@ const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
     ("וְאֹתִי", &["conj-ve", "object-marker"]),
     // Standalone prepositions.
     ("עַל", &["preposition"]),
+    ("עֲלֵי", &["preposition"]),
     ("אֶל", &["preposition"]),
     ("עַד", &["preposition"]),
     ("עִם", &["preposition"]),
