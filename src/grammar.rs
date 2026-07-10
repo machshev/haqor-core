@@ -19,6 +19,15 @@ use std::sync::OnceLock;
 #[derive(Debug, Clone, Copy)]
 pub struct GrammarConcept {
     pub key: &'static str,
+    /// Intrinsic-complexity tier for the unlock order: every concept of bucket
+    /// N unlocks before any of bucket N+1, but *within* a bucket the tutor
+    /// picks dynamically — the locked concept that would make the most verses
+    /// completable next (see `Bible::unlocked_concepts`). Bucket 0 is the
+    /// one-letter proclitics and particles a first lesson can carry; bucket 1
+    /// is the core morphology reading needs (main verb conjugations, plural,
+    /// construct, pronoun endings); bucket 2 is refinements (volitives,
+    /// derived stems, verb object suffixes).
+    pub bucket: u8,
     pub title: &'static str,
     pub explanation: &'static str,
     pub formula: Option<&'static str>,
@@ -72,6 +81,27 @@ fn rank_of(keys: &[&'static str]) -> i64 {
         .map(|i| i as i64)
         .max()
         .unwrap_or(-1)
+}
+
+/// Bitmask of the concepts `surface` exercises (bit N = `CONCEPTS[N]`), `0`
+/// when it exercises none. The tutor stores this per surface and gates
+/// introduction on `mask & ~unlocked == 0` — every concept a word uses must be
+/// unlocked, with no fixed total order imposed on the unlocks themselves.
+pub fn concept_mask_for_surface(surface: &str, w: Option<&HebrewWord>) -> i64 {
+    concepts_for_surface(surface, w)
+        .iter()
+        .filter_map(|k| concept_index(k))
+        .fold(0i64, |m, i| m | (1 << i))
+}
+
+/// The bit for one concept key ([`concept_mask_for_surface`]'s encoding).
+pub fn concept_bit(key: &str) -> Option<i64> {
+    concept_index(key).map(|i| 1i64 << i)
+}
+
+/// Mask with every teachable concept's bit set — the "gating off" frontier.
+pub fn all_concepts_mask() -> i64 {
+    (1i64 << CONCEPTS.len()) - 1
 }
 
 /// The grammar concepts `surface` exercises. The curated [`SURFACE_CONCEPTS`]
@@ -346,9 +376,35 @@ const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
     ("מִמֶּנָּה", &["prep-min", "prep-suffix"]),
     ("מִמְּךָ", &["prep-min", "prep-suffix"]),
     ("מִמֶּךָּ", &["prep-min", "prep-suffix"]),
+    ("מִמֵּךְ", &["prep-min", "prep-suffix"]),
+    ("מִכֶּם", &["prep-min", "prep-suffix"]),
     ("מֵהֶם", &["prep-min", "prep-suffix"]),
+    ("מֵעָלָיו", &["prep-min", "preposition", "prep-suffix"]),
+    ("מִלְמָעְלָה", &["prep-min"]),
     ("מִשָּׁם", &["prep-min"]),
     ("וּמִן", &["conj-ve", "prep-min"]),
+    ("וְעִמּוֹ", &["conj-ve", "preposition", "prep-suffix"]),
+    ("וְאַחֲרָיו", &["conj-ve", "preposition", "prep-suffix"]),
+    ("וְלַאֲשֶׁר", &["conj-ve", "prep-le"]),
+    // Particle + pronoun-suffix compounds (drill hosts like the suffixed
+    // prepositions) and other fused spellings with no analysis row.
+    ("הִנְנִי", &["prep-suffix"]),
+    ("אֵינֶנּוּ", &["prep-suffix"]),
+    ("עוֹדֶנּוּ", &["prep-suffix"]),
+    ("הַכֹּל", &["article"]),
+    ("הָהֵם", &["article"]),
+    ("כָּזֹאת", &["prep-ke"]),
+    ("הַלְלוּ", &["binyan-piel", "imperative"]),
+    ("לִקְרָאתוֹ", &["prep-le", "prep-suffix"]),
+    ("בְּבֹאוֹ", &["prep-be", "infinitive", "suffix-possessive"]),
+    // Suffixed nouns of the לֵב/לֵבָב family (no analysis row).
+    ("לִבּוֹ", &["suffix-possessive"]),
+    ("לִבָּם", &["suffix-possessive"]),
+    ("לִבְּךָ", &["suffix-possessive"]),
+    ("בְּלִבּוֹ", &["prep-be", "suffix-possessive"]),
+    ("לְבָבוֹ", &["suffix-possessive"]),
+    ("לְבָבְךָ", &["suffix-possessive"]),
+    ("שְׁנֵיהֶם", &["suffix-possessive"]),
     // Construct forms the parser misses or misreads.
     ("כָּל", &["construct"]),
     ("בְּנֵי", &["construct"]),
@@ -378,6 +434,7 @@ const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
 const CONCEPTS: &[GrammarConcept] = &[
     GrammarConcept {
         key: "object-marker",
+        bucket: 0,
         title: "The object marker אֶת",
         explanation: "אֶת — the most common word in the Bible — has no meaning of its \
             own: it points at the definite direct object, the person or thing the verb \
@@ -388,6 +445,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "article",
+        bucket: 0,
         title: "The definite article",
         explanation: "A הַ joined to the front of a word means \"the\". It normally \
             doubles the first letter of the word (a dot in the letter).",
@@ -396,6 +454,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "conj-ve",
+        bucket: 0,
         title: "The conjunction \"and\"",
         explanation: "A וְ joined to the front of a word means \"and\". It is the most \
             common way Hebrew links words and clauses.",
@@ -404,6 +463,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "preposition",
+        bucket: 0,
         title: "Prepositions",
         explanation: "Small words placed before another word tie it into the sentence — \
             עַל (on), אֶל (to), עִם (with), תַּחַת (under).",
@@ -412,6 +472,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "prep-suffix",
+        bucket: 1,
         title: "Pronoun endings on prepositions",
         explanation: "Hebrew has no separate word for \"me\" or \"him\" after a \
             preposition — the pronoun is joined onto its end as a suffix: אֵלַי (to me), \
@@ -422,6 +483,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "prep-be",
+        bucket: 1,
         title: "The preposition בְּ",
         explanation: "A בְּ joined to the front of a word means \"in\", \"with\" or \"by\".",
         formula: Some("בְּ + noun → \"in / with …\""),
@@ -429,6 +491,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "prep-le",
+        bucket: 1,
         title: "The preposition לְ",
         explanation: "A לְ joined to the front of a word means \"to\" or \"for\". It also \
             marks the infinitive (\"to do\").",
@@ -437,6 +500,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "prep-ke",
+        bucket: 1,
         title: "The preposition כְּ",
         explanation: "A כְּ joined to the front of a word means \"like\" or \"as\".",
         formula: Some("כְּ + noun → \"like / as …\""),
@@ -444,6 +508,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "prep-min",
+        bucket: 1,
         title: "The preposition מִן",
         explanation: "מִן means \"from\" or \"out of\". Joined to a word it often appears \
             as מִ with the next letter doubled.",
@@ -452,6 +517,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "perfect",
+        bucket: 1,
         title: "The perfect (completed action)",
         explanation: "The Hebrew perfect describes an action viewed as complete. It is \
             usually translated as English past tense.",
@@ -460,6 +526,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "imperfect",
+        bucket: 1,
         title: "The imperfect (incomplete action)",
         explanation: "The imperfect describes action not yet complete — future, habitual \
             or ongoing. Often translated with \"will\".",
@@ -468,6 +535,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "wayyiqtol",
+        bucket: 1,
         title: "The narrative past (וַ + verb)",
         explanation: "Hebrew narrative is carried by a וַ joined to an imperfect verb (with \
             the next letter doubled). It reads as simple past — \"and he …\" — and drives \
@@ -477,6 +545,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "weqatal",
+        bucket: 1,
         title: "The vav-consecutive perfect (וְ + perfect)",
         explanation: "A וְ joined to a perfect verb often carries a future, command or \
             sequence of instructions forward, rather than simply meaning \"and he did\" — \
@@ -486,6 +555,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "imperative",
+        bucket: 1,
         title: "The imperative (commands)",
         explanation: "The imperative gives a command addressed to \"you\".",
         formula: Some("imperative → \"do …!\""),
@@ -493,6 +563,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "infinitive",
+        bucket: 1,
         title: "The infinitive",
         explanation: "The infinitive names the action itself — \"to keep\", \"keeping\". \
             It very often follows לְ (\"to do …\").",
@@ -501,6 +572,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "participle",
+        bucket: 1,
         title: "The participle",
         explanation: "The participle describes ongoing action or the one doing it — \
             \"keeping\", \"one who keeps\".",
@@ -509,6 +581,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "jussive-cohortative",
+        bucket: 2,
         title: "Wishes and exhortations",
         explanation: "Short volitional forms express a wish or exhortation: the jussive \
             (\"let him …\") and the cohortative (\"let me / let us …\").",
@@ -517,6 +590,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "binyan-niphal",
+        bucket: 2,
         title: "The Niphal stem",
         explanation: "The Niphal is usually the passive or reflexive counterpart of the \
             plain (Qal) verb — \"be done\" or \"do to oneself\".",
@@ -525,6 +599,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "binyan-piel",
+        bucket: 2,
         title: "The Piel stem",
         explanation: "The Piel often intensifies the plain verb or makes it factitive \
             (\"bring about\"). The middle letter is doubled.",
@@ -533,6 +608,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "binyan-pual",
+        bucket: 2,
         title: "The Pual stem",
         explanation: "The Pual is the passive of the Piel — the intensive action done to \
             the subject.",
@@ -541,6 +617,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "binyan-hiphil",
+        bucket: 2,
         title: "The Hiphil stem",
         explanation: "The Hiphil is causative — making someone or something do the action \
             (\"cause to …\"). It usually shows a ה prefix or an i-vowel.",
@@ -549,6 +626,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "binyan-hophal",
+        bucket: 2,
         title: "The Hophal stem",
         explanation: "The Hophal is the passive of the Hiphil — \"be caused to …\".",
         formula: Some("Hophal → passive of Hiphil"),
@@ -556,6 +634,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "binyan-hithpael",
+        bucket: 2,
         title: "The Hithpael stem",
         explanation: "The Hithpael is reflexive or reciprocal — doing the action to or \
             among oneselves. It shows a תְ infix.",
@@ -564,6 +643,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "noun-plural",
+        bucket: 1,
         title: "Plural nouns",
         explanation: "Masculine plurals end in ־ִים and feminine plurals in ־וֹת.",
         formula: Some("־ִים (m.) / ־וֹת (f.)"),
@@ -571,6 +651,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "construct",
+        bucket: 1,
         title: "The construct chain (\"X of Y\")",
         explanation: "To say \"the X of Y\", the first noun takes a shortened \"construct\" \
             form and is read together with the next: \"word of the king\".",
@@ -579,6 +660,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "suffix-possessive",
+        bucket: 1,
         title: "Possessive suffixes on nouns",
         explanation: "A pronoun can be joined to the end of a noun to show possession — \
             \"his word\", \"my people\".",
@@ -587,6 +669,7 @@ const CONCEPTS: &[GrammarConcept] = &[
     },
     GrammarConcept {
         key: "object-suffix",
+        bucket: 2,
         title: "Object suffixes on verbs",
         explanation: "A pronoun can be joined to the end of a verb to mark its object — \
             \"he kept him\", \"I will send them\".",

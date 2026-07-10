@@ -502,6 +502,7 @@ fn unfinalize(s: &str) -> String {
 fn has_plural_tail(surface: &str) -> bool {
     const TAILS: &[&str] = &[
         "\u{05B4}\u{05D9}\u{05DD}",             // ־ִים
+        "\u{05B4}\u{05DD}",                     // ־ִם (defective, נְשִׂיאִם)
         "\u{05D5}\u{05B9}\u{05EA}",             // ־וֹת (plene)
         "\u{05B9}\u{05EA}",                     // ־ֹת (defective)
         "\u{05B7}\u{05D9}\u{05B4}\u{05DD}",     // ־ַיִם (dual)
@@ -1770,11 +1771,19 @@ impl Bible {
                     .into_iter()
                     .map(|sp| (sp.key, fold_consonants(&sp.stem)))
                     .collect();
+                // A feminine stem trades its final ה for ת before a suffix
+                // (נְבֵלָה → נִבְלָתוֹ), so anchor on that shape too.
+                let fem_cons = stem_cons
+                    .strip_suffix('\u{05D4}')
+                    .map(|s| format!("{s}\u{05EA}"));
+                let anchored = |rest: &str| {
+                    rest.ends_with(&stem_cons)
+                        || rest.starts_with(&stem_cons)
+                        || fem_cons.as_deref().is_some_and(|f| rest.ends_with(f))
+                };
                 let split = splits
                     .iter()
-                    .find(|(_, rest)| {
-                        rest.ends_with(&stem_cons) || rest.starts_with(&stem_cons)
-                    })
+                    .find(|(_, rest)| anchored(rest))
                     // A plural-tantum stem truncates before its suffix (פָּנָיו
                     // keeps only פנ of פנים) — tolerate a remainder that is a
                     // leading piece of the stem, but only when no full-stem
@@ -1816,6 +1825,30 @@ impl Bible {
         // a lexicon bridge for them into `lexical_analyses`; read it back so the
         // app shows a gloss instead of "no OT parse". A missing table (an older
         // db) just yields `None`, the previous behaviour.
+        //
+        // A curated override wins over the baked bridge row: the build-time
+        // bridge consults [`CURATED_GLOSSES`] too, but entries added since the
+        // shipped hebrew.db was generated would otherwise be shadowed by the
+        // stale row (אוּלַי stayed bridged to the river Ulai), and surfaces
+        // with no row at all (עֲלֵי) would return no word info despite being
+        // curated.
+        if let Some((root, gloss)) = curated_gloss(&norm) {
+            return Some(HebrewWord {
+                word: norm,
+                root,
+                gloss,
+                form: None,
+                tense: None,
+                person: None,
+                gender: None,
+                number: None,
+                state: None,
+                prefix: None,
+                vav_con: false,
+                obj_suffix: None,
+                is_name: false,
+            });
+        }
         let bridge = self
             .db
             .query_row(

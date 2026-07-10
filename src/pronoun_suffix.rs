@@ -35,6 +35,7 @@ pub struct PronounSuffix {
 pub const PRONOUN_SUFFIXES: &[PronounSuffix] = &[
     PronounSuffix { key: "3ms", meaning: "him", endings: &[
         "\u{05B8}\u{05D9}\u{05D5}",           // ־ָיו  (עָלָיו, אֵלָיו)
+        "\u{05B4}\u{05D9}\u{05D5}",           // ־ִיו  (אָבִיו, פִּיו)
         "\u{05D4}\u{05D5}\u{05BC}",           // ־הוּ  (כָּמֹהוּ)
         "\u{05D5}\u{05B9}",                   // ־וֹ   (לוֹ, בּוֹ, אֹתוֹ)
     ]},
@@ -67,12 +68,14 @@ pub const PRONOUN_SUFFIXES: &[PronounSuffix] = &[
     ]},
     PronounSuffix { key: "2mp", meaning: "you (pl.)", endings: &[
         "\u{05B5}\u{05D9}\u{05DB}\u{05B6}\u{05DD}", // ־ֵיכֶם (עֲלֵיכֶם)
+        "\u{05DB}\u{05BC}\u{05B6}\u{05DD}",   // ־כֶּם (מִכֶּם — assimilated נ doubles)
         "\u{05DB}\u{05B6}\u{05DD}",           // ־כֶם  (לָכֶם, אֶתְכֶם)
     ]},
     PronounSuffix { key: "2fs", meaning: "you (f.)", endings: &[
         "\u{05B7}\u{05D9}\u{05B4}\u{05DA}\u{05B0}", // ־ַיִךְ (עָלַיִךְ)
         "\u{05B8}\u{05D9}\u{05B4}\u{05DA}\u{05B0}", // ־ָיִךְ (pausal עָלָיִךְ)
         "\u{05B8}\u{05DA}\u{05B0}",           // ־ָךְ  (לָךְ, עִמָּךְ)
+        "\u{05B5}\u{05DA}\u{05B0}",           // ־ֵךְ  (מִמֵּךְ)
     ]},
     PronounSuffix { key: "3fp", meaning: "them (f.)", endings: &[
         "\u{05B5}\u{05D9}\u{05D4}\u{05B6}\u{05DF}", // ־ֵיהֶן (עֲלֵיהֶן)
