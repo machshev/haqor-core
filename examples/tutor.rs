@@ -8,6 +8,7 @@ use haqor_core::bible::Bible;
 use haqor_core::tutor::{Grade, StudyItem, Track};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
+    env_logger::init();
     let steps: usize = std::env::args().nth(1).map_or(Ok(60), |a| a.parse())?;
 
     let bible = Bible::open("data")?;

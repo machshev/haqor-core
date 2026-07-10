@@ -405,8 +405,17 @@ pub struct TutorProgress {
     /// Distinct base consonants graduated (begadkefat/shin dot-pairs folded to
     /// one leading codepoint; final forms kept as their own glyphs).
     pub letters_known: i64,
+    /// Every base-consonant shape there is to learn ([`LETTER_GLYPH_TOTAL`]).
+    pub letters_total: i64,
     /// Vowel points graduated (sheva through holam, qubuts, qamats qatan).
     pub vowels_known: i64,
+    /// Every vowel-point glyph there is to learn ([`VOWEL_GLYPH_TOTAL`]).
+    pub vowels_total: i64,
+    /// Grammar rules taught so far (a [`crate::grammar::GrammarConcept`] card
+    /// shown), out of `grammar_total`.
+    pub grammar_known: i64,
+    /// Every teachable grammar concept ([`crate::grammar::concept_count`]).
+    pub grammar_total: i64,
     pub words_known: i64,
     pub verses_readable: i64,
     pub total_verses: i64,
@@ -433,6 +442,10 @@ pub struct TutorStats {
     pub words_seen: i64,
     pub words_learning: i64,
     pub words_mature: i64,
+    /// Grammar rules taught so far (gradeless, so there's no learning/mature
+    /// split — a concept is either shown or not) and the total teachable.
+    pub grammar_seen: i64,
+    pub grammar_total: i64,
     /// Cards whose next review is now due (`due_epoch <= now`); every glyph
     /// (letters, vowels, marks) and word counts here.
     pub glyphs_due: i64,
@@ -567,6 +580,16 @@ const ALPHABET_CONSONANT_TARGET: i64 = 22;
 /// a couple of rare ones (qamats qatan, a rarely-seen hataf) that a learner may
 /// never meet, so grammar isn't gated behind a glyph that never appears.
 const ALPHABET_VOWEL_TARGET: i64 = 10;
+
+/// Every base-consonant shape the tutor drills, base letters plus final forms
+/// (22 + 5) — the denominator for a "letters known" progress fraction, as
+/// opposed to [`ALPHABET_CONSONANT_TARGET`] which gates grammar unlocking.
+const LETTER_GLYPH_TOTAL: i64 = 27;
+
+/// Every vowel-point glyph the tutor drills (ten common niqqud plus qubuts and
+/// qamats qatan) — the denominator for a "vowels known" progress fraction, as
+/// opposed to [`ALPHABET_VOWEL_TARGET`] which gates grammar unlocking.
+const VOWEL_GLYPH_TOTAL: i64 = 12;
 
 /// While learning letters, words of at most this many glyphs are preferred
 /// over longer ones — but only as a tie-break bucket ahead of frequency, not
@@ -2451,6 +2474,20 @@ impl Bible {
             .is_some())
     }
 
+    /// How many [`crate::grammar`] concepts have been introduced so far, for
+    /// the progress displays (a plain query over `progress.concepts_seen`
+    /// restricted to grammar keys, rather than `crate::grammar::concept_count()`
+    /// calls to [`Self::concept_seen`]).
+    fn grammar_concepts_seen(&self) -> rusqlite::Result<i64> {
+        let keys: Vec<&str> = crate::grammar::concepts().iter().map(|c| c.key).collect();
+        let placeholders = keys.iter().map(|_| "?").collect::<Vec<_>>().join(",");
+        self.conn().query_row(
+            &format!("SELECT COUNT(*) FROM progress.concepts_seen WHERE concept IN ({placeholders})"),
+            rusqlite::params_from_iter(keys.iter()),
+            |r| r.get(0),
+        )
+    }
+
     /// The surface used to illustrate a grammar card: a word the learner has
     /// already studied that exercises the concept as its hardest rule, else
     /// the most frequent such word in the corpus — never a proper name —
@@ -3302,6 +3339,7 @@ impl Bible {
             [],
             |r| r.get(0),
         )?;
+        let grammar_known = self.grammar_concepts_seen()?;
         let verses_readable = self.conn().query_row(
             "SELECT COUNT(*) FROM progress.verse_progress WHERE state = 'readable'",
             [],
@@ -3314,7 +3352,11 @@ impl Bible {
                 })?;
         Ok(TutorProgress {
             letters_known,
+            letters_total: LETTER_GLYPH_TOTAL,
             vowels_known,
+            vowels_total: VOWEL_GLYPH_TOTAL,
+            grammar_known,
+            grammar_total: crate::grammar::concept_count() as i64,
             words_known,
             verses_readable,
             total_verses,
@@ -3396,6 +3438,7 @@ impl Bible {
         let words_seen = count("SELECT COUNT(*) FROM progress.word_srs")?;
         let words_mature =
             count("SELECT COUNT(*) FROM progress.word_srs WHERE interval_days >= 1")?;
+        let grammar_seen = self.grammar_concepts_seen()?;
 
         let glyphs_due = conn.query_row(
             "SELECT COUNT(*) FROM progress.glyph_srs WHERE due_epoch <= ?1",
@@ -3436,6 +3479,8 @@ impl Bible {
             words_seen,
             words_learning: words_seen - words_mature,
             words_mature,
+            grammar_seen,
+            grammar_total: crate::grammar::concept_count() as i64,
             glyphs_due,
             words_due,
             reviews_today,
