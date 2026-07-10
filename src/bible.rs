@@ -578,6 +578,18 @@ const CURATED_GLOSSES: &[(&str, &str, &str)] = &[
     ("מַיִם", "", "water; waters"),
     ("שָׁמַיִם", "שמה", "heavens; sky"),
     ("פָּנִים", "פנה", "face; faces"),
+    // Irregular-noun lemmas the pointing-blind consonant fallback bridges to
+    // the wrong homograph: שֵׁם lands on שָׁם "there", אָב on אֵב "freshness",
+    // אֵם on BDB's mislabelled אִם "if" row, בַּיִת on בֵּין "between",
+    // רֵעַ on רוּעַ "shouting", אִישׁ on the root-entry "be strong". Every
+    // inflected form sharing the stem (שְׁמוֹ, אֲבֹתָם, בֵּיתוֹ, רֵעֵהוּ,
+    // אֲנָשִׁים) resolves through these.
+    ("שֵׁם", "", "name"),
+    ("אָב", "אבה", "father"),
+    ("אֵם", "אממ", "mother"),
+    ("בַּיִת", "בית", "house"),
+    ("רֵעַ", "רעה", "friend; companion; fellow"),
+    ("אִישׁ", "איש", "man"),
     // Suffixed prepositions and pronouns whose BDB consonant group holds only
     // a cross-reference stub (or an unrelated lexeme), so the pointing-blind
     // fallback cannot reach a usable sense: אֵלַי collides with אֻלַי "see
@@ -599,6 +611,12 @@ const CURATED_GLOSSES: &[(&str, &str, &str)] = &[
     ("לְמַעַן", "", "for the sake of; in order that"),
     ("לָכֵן", "", "therefore"),
     ("שָׁמָּה", "", "there; to there"),
+    // BDB reaches these only through a homograph: אוּלַי "perhaps" collides
+    // with the river Ulai, עֲלֵי (poetic עַל) with an "Eli" cross-reference,
+    // אֵי "where?" with אִי "coast".
+    ("אוּלַי", "", "perhaps; peradventure"),
+    ("עֲלֵי", "", "upon; over (poetic form of עַל)"),
+    ("אֵי", "", "where?"),
     ("הֲלֹא", "", "is it not?; surely"),
     ("יַעַן", "", "because; on account of"),
     ("סֶלָה", "", "Selah — a pause (in Psalms)"),
