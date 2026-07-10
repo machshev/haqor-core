@@ -1,18 +1,27 @@
 //! Drive the spaced-repetition tutor headless against the in-repo data DBs,
 //! always answering "Good", and print each study item:
-//!   cargo run --example tutor -- [steps]
+//!   cargo run --example tutor -- [steps] [letters_ratio]
 //!
+//! `letters_ratio` (default 30) is the letters↔words focus slider; 100
+//! reproduces a learner who finishes the alphabet with almost no vocabulary.
 //! Uses a throwaway in-memory progress.db so runs are reproducible.
 
 use haqor_core::bible::Bible;
-use haqor_core::tutor::{Grade, StudyItem, Track};
+use haqor_core::tutor::{Grade, StudyItem, Track, TutorSettings};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     env_logger::init();
     let steps: usize = std::env::args().nth(1).map_or(Ok(60), |a| a.parse())?;
+    let letters_ratio: u8 = std::env::args()
+        .nth(2)
+        .map_or(Ok(TutorSettings::default().letters_ratio), |a| a.parse())?;
 
     let bible = Bible::open("data")?;
     bible.attach_progress(":memory:")?; // throwaway, reproducible
+    bible.set_tutor_settings(&TutorSettings {
+        letters_ratio,
+        ..TutorSettings::default()
+    })?;
 
     // Each card is answered with submit_review, whose return value is the next
     // card (one round-trip). ReadVerse carries no grade, so we advance with
