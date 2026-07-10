@@ -24,6 +24,10 @@ pub mod generate;
 /// Lossless SEDRA→Hebrew transliteration and Hebrew↔Syriac conversion.
 pub mod transliterate;
 
+/// Learner-facing romanization of pointed Hebrew ("how it sounds") — voices
+/// the tutor's cards in the core so the app stays presentation-only.
+pub mod romanize;
+
 /// Spaced-repetition reading tutor: curriculum selection over the OT corpus
 /// plus SM-2 review scheduling persisted in a writable `progress.db`.
 pub mod tutor;

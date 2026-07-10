@@ -239,7 +239,7 @@ impl Srs {
 
 /// A teachable glyph: a single consonant (final forms taught as their own
 /// distinct glyph) or a niqqud point.
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq, Default)]
 pub struct GlyphCard {
     pub glyph: String,
     /// True for a base consonant, false for a vowel/dagesh/sin-shin point.
@@ -247,10 +247,17 @@ pub struct GlyphCard {
     /// For a vowel point, an already-learnt consonant to display it on (so it is
     /// taught as a sounded-out syllable). None for consonants and reading marks.
     pub host: Option<String>,
+    /// The voiced reading of the taught syllable (`host` + `glyph`, e.g. "bah")
+    /// when the card has a host; empty for consonants and reading marks, which
+    /// quiz by name (see [`crate::romanize::voiced_syllable`]).
+    pub voiced: String,
     /// Other already-introduced glyphs of the same kind, offered as wrong
     /// answers when this card is quizzed multiple-choice. Empty on `New*` cards
     /// and whenever too few peers exist for a quiz (the app then self-grades).
     pub distractors: Vec<String>,
+    /// Aligned with `distractors` on a vowel card: each syllable's voiced
+    /// reading ("re", "bᵉ"); empty for consonants and reading marks.
+    pub voiced_distractors: Vec<String>,
 }
 
 /// A word to learn or review. Words teach only meaning — by the time a word card
@@ -260,6 +267,10 @@ pub struct WordCard {
     pub surface_id: i64,
     pub surface: String,
     pub occurrences: i64,
+    /// The surface's voiced reading ("bereshit"), shown under the Hebrew so
+    /// the learner can check how they sounded it out
+    /// (see [`crate::romanize::romanize`]).
+    pub translit: String,
     /// The lexeme's base sense (BDB gloss) — what the meaning quiz tests.
     pub gloss: String,
     /// The specific inflected form rendered in English ("and he said", "his
@@ -293,6 +304,8 @@ pub struct SuffixCard {
     pub meaning: String,
     /// The host word carrying the ending; `surface == stem + suffix`.
     pub surface: String,
+    /// The host's voiced reading (see [`crate::romanize::romanize`]).
+    pub translit: String,
     pub stem: String,
     pub suffix: String,
     /// The host's learner gloss ("to me"), for the answer side. Empty when
@@ -1082,8 +1095,7 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
                 out.push(GlyphCard {
                     glyph: key,
                     is_consonant: true,
-                    host: None,
-                    distractors: Vec::new(),
+                    ..Default::default()
                 });
             }
             for v in vowels {
@@ -1091,9 +1103,7 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
                 if seen.insert(vk.clone()) {
                     out.push(GlyphCard {
                         glyph: vk,
-                        is_consonant: false,
-                        host: None,
-                        distractors: Vec::new(),
+                        ..Default::default()
                     });
                 }
             }
@@ -1105,9 +1115,7 @@ fn decompose_glyphs(surface: &str) -> Vec<GlyphCard> {
             if seen.insert(key.clone()) {
                 out.push(GlyphCard {
                     glyph: key,
-                    is_consonant: false,
-                    host: None,
-                    distractors: Vec::new(),
+                    ..Default::default()
                 });
             }
         }
@@ -1579,6 +1587,7 @@ impl Bible {
         }
         match self.known_vowel_host(surface, ch)? {
             Some(host) => Ok(StudyItem::NewGlyph(GlyphCard {
+                voiced: crate::romanize::voiced_syllable(&host, ch),
                 host: Some(host),
                 ..g.clone()
             })),
@@ -1586,8 +1595,7 @@ impl Bible {
                 GlyphCard {
                     glyph: host_to_teach(surface, ch),
                     is_consonant: true,
-                    host: None,
-                    distractors: Vec::new(),
+                    ..Default::default()
                 },
                 now,
             ),
@@ -1627,6 +1635,14 @@ impl Bible {
                 };
                 Ok(GlyphCard {
                     is_consonant: false,
+                    voiced: host
+                        .as_deref()
+                        .map(|h| crate::romanize::voiced_syllable(h, c))
+                        .unwrap_or_default(),
+                    voiced_distractors: distractors
+                        .iter()
+                        .map(|s| crate::romanize::voiced_syllable_str(s))
+                        .collect(),
                     glyph,
                     host,
                     distractors,
@@ -1637,8 +1653,8 @@ impl Bible {
                 Ok(GlyphCard {
                     is_consonant: ch.is_some_and(is_consonant),
                     glyph,
-                    host: None,
                     distractors,
+                    ..Default::default()
                 })
             }
         }
@@ -2016,6 +2032,7 @@ impl Bible {
             surface_id,
             surface: surface.to_string(),
             occurrences,
+            translit: crate::romanize::romanize(surface),
             gloss,
             inflected,
             note,
@@ -2065,6 +2082,7 @@ impl Bible {
             surface_id,
             surface: surface.to_string(),
             occurrences,
+            translit: crate::romanize::romanize(surface),
             gloss: inflected,
             inflected: String::new(),
             note: String::new(),
@@ -2851,6 +2869,7 @@ impl Bible {
             key: key.to_string(),
             meaning: split.meaning.to_string(),
             surface: host.to_string(),
+            translit: crate::romanize::romanize(host),
             stem: split.stem,
             suffix: split.suffix,
             gloss,
@@ -3038,9 +3057,7 @@ impl Bible {
             if !self.mark_seen(&key)? {
                 return Ok(Some(GlyphCard {
                     glyph: key,
-                    is_consonant: false,
-                    host: None,
-                    distractors: Vec::new(),
+                    ..Default::default()
                 }));
             }
         }

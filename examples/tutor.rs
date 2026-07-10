@@ -23,22 +23,22 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         item = match item {
             StudyItem::NewGlyph(g) => {
                 println!(
-                    "{i:>3}  NEW GLYPH   {}  (consonant={}, host={:?})",
-                    g.glyph, g.is_consonant, g.host
+                    "{i:>3}  NEW GLYPH   {}  (consonant={}, host={:?}, voiced={:?})",
+                    g.glyph, g.is_consonant, g.host, g.voiced
                 );
                 bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
             }
             StudyItem::ReviewGlyph(g) => {
                 println!(
-                    "{i:>3}  rev glyph   {}  host={:?} d={:?}",
-                    g.glyph, g.host, g.distractors
+                    "{i:>3}  rev glyph   {}  host={:?} voiced={:?} d={:?} vd={:?}",
+                    g.glyph, g.host, g.voiced, g.distractors, g.voiced_distractors
                 );
                 bible.submit_review(Track::Glyph, &g.glyph, Grade::Good, now)?
             }
             StudyItem::NewWord(w) => {
                 println!(
-                    "{i:>3}  NEW WORD  {}  ({}x)  {} [{}]",
-                    w.surface, w.occurrences, w.gloss, w.morph
+                    "{i:>3}  NEW WORD  {}  \"{}\"  ({}x)  {} [{}]",
+                    w.surface, w.translit, w.occurrences, w.gloss, w.morph
                 );
                 bible.submit_review(Track::Word, &w.surface, Grade::Good, now)?
             }
