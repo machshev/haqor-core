@@ -303,6 +303,22 @@ const CURATED: &[(&str, &str, Option<&str>)] = &[
     ("הַמַּיִם", "the water", Some("הַ (the) + מַיִם")),
     ("הַמָּיִם", "the water", Some("הַ (the) + מַיִם, pausal form.")),
     ("רַבִּים", "many", Some("Plural of רַב (much, many).")),
+    // The bridge resolves בְּרִית to BDB's n.pr entry (Baal-berith, the god
+    // of Shechem) and carded the ordinary noun as "(a name)"; its suffixed
+    // forms fell to a verb homograph instead (בְּרִיתוֹ "you ate him").
+    ("בְּרִית", "covenant", None),
+    ("בְרִית", "covenant", None),
+    ("הַבְּרִית", "the covenant", Some("הַ (the) + בְּרִית")),
+    ("בְּרִיתִי", "my covenant", Some("בְּרִית + ־ִי (my)")),
+    ("בְרִיתִי", "my covenant", Some("בְּרִית + ־ִי (my)")),
+    ("בְּרִיתוֹ", "his covenant", Some("בְּרִית + ־וֹ (his)")),
+    ("בְרִיתוֹ", "his covenant", Some("בְּרִית + ־וֹ (his)")),
+    ("בְּרִיתְךָ", "your covenant", Some("בְּרִית + ־ְךָ (your)")),
+    ("בְרִיתְךָ", "your covenant", Some("בְּרִית + ־ְךָ (your)")),
+    ("בְרִיתֶךָ", "your covenant", Some("בְּרִית + ־ֶךָ (your), pausal form.")),
+    ("בְּרִיתֶךָ", "your covenant", Some("בְּרִית + ־ֶךָ (your), pausal form.")),
+    ("בְּרִיתֵךְ", "your covenant", Some("בְּרִית + ־ֵךְ (your, f.)")),
+    ("בְּרִיתְכֶם", "your covenant", Some("בְּרִית + ־ְכֶם (your, pl.)")),
 
     // אֱלֹהִים family.
     ("אֱלֹהִים", "God; gods", Some("Plural in form, usually singular in meaning when naming God.")),
