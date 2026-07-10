@@ -512,10 +512,15 @@ impl TutorSettings {
     }
 }
 
-/// Surface-ids fully learnt (meaning graduated) — the "known" vocabulary for
-/// verse coverage. A subquery reused across selection joins.
-const DONE_SURFACES: &str = "SELECT surface_id FROM progress.word_srs \
-     WHERE interval_days >= 1";
+/// Vocab keys fully learnt (meaning graduated) — the "known" vocabulary for
+/// verse coverage, folded through [`crate::vocab_gloss::vocab_key`] so a
+/// dagesh/mark-order spelling twin of a graduated word (שָׁם→שָּׁם, בֶּן→בֶן)
+/// counts as known instead of being dealt as a duplicate card. A subquery
+/// reused across selection joins; join it through `surface_meta.vkey`.
+const DONE_SURFACES: &str = "SELECT DISTINCT sm_done.vkey AS vkey \
+     FROM progress.word_srs ws_done \
+     JOIN progress.surface_meta sm_done ON sm_done.surface_id = ws_done.surface_id \
+     WHERE ws_done.interval_days >= 1";
 
 /// Roots the learner already knows — those with at least one fully-learnt
 /// (meaning-graduated) surface, resolved through the [`Bible::ensure_surface_meta`]
@@ -717,7 +722,7 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
         )
         .optional()?;
     if let Some(sql) = sm_sql
-        && !(sql.contains("concept_mask") && sql.contains("glyph_mask") && sql.contains("is_name"))
+        && !(sql.contains("concept_mask") && sql.contains("glyph_mask") && sql.contains("vkey"))
     {
         db.execute_batch("DROP TABLE progress.surface_meta")?;
     }
@@ -795,8 +800,10 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             form_tier    INTEGER NOT NULL,
             concept_mask INTEGER NOT NULL,
             glyph_mask   INTEGER NOT NULL,
-            is_name      INTEGER NOT NULL
+            is_name      INTEGER NOT NULL,
+            vkey         TEXT    NOT NULL
          );
+         CREATE INDEX IF NOT EXISTS progress.idx_surface_meta_vkey ON surface_meta(vkey);
          CREATE TABLE IF NOT EXISTS progress.verse_meta(
             book         INTEGER NOT NULL,
             chapter      INTEGER NOT NULL,
@@ -2113,7 +2120,7 @@ impl Bible {
         {
             let mut ins = self.conn().prepare(
                 "INSERT INTO progress.surface_meta(surface_id, root, form_tier, concept_mask, \
-                    glyph_mask, is_name) VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
+                    glyph_mask, is_name, vkey) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
             )?;
             for (surface_id, text, lexical_class) in surfaces {
                 // `surface.text` is already the normalised form the resolver uses.
@@ -2166,7 +2173,8 @@ impl Bible {
                     && !is_name;
                 let cmask = if blank { UNTEACHABLE_MASK } else { cmask };
                 concept_masks.insert(surface_id, cmask);
-                ins.execute(params![surface_id, root, tier, cmask, mask, is_name as i64])?;
+                let vkey = crate::vocab_gloss::vocab_key(&text);
+                ins.execute(params![surface_id, root, tier, cmask, mask, is_name as i64, vkey])?;
             }
         }
         // Per-verse concept masks (the OR of every word's mask), for the
@@ -2270,12 +2278,12 @@ impl Bible {
         // "introducible unknown word" in a CASE guard: every concept the word
         // exercises is inside the unlocked mask (?1).
         const INTRO: &str =
-            "done.surface_id IS NULL AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0";
+            "done.vkey IS NULL AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0";
         let completable_gate = if letter_learning {
             String::new()
         } else {
             format!(
-                "AND COUNT(DISTINCT CASE WHEN done.surface_id IS NULL \
+                "AND COUNT(DISTINCT CASE WHEN done.vkey IS NULL \
                       AND (COALESCE(sm.concept_mask, 0) & ~?1) != 0 THEN vw.surface_id END) = 0"
             )
         };
@@ -2296,12 +2304,12 @@ impl Bible {
             // otherwise a genealogy of one-off names whose spurious roots are
             // common vocabulary ranks as an easy verse).
             format!(
-                "MIN(CASE WHEN done.surface_id IS NULL \
+                "MIN(CASE WHEN done.vkey IS NULL \
                       THEN {WORD_FREQ} END) DESC, \
-             COUNT(DISTINCT CASE WHEN done.surface_id IS NULL AND kr.root IS NULL \
+             COUNT(DISTINCT CASE WHEN done.vkey IS NULL AND kr.root IS NULL \
                                   AND sm.root <> '' THEN sm.root END) ASC, \
-             MIN(CASE WHEN done.surface_id IS NULL THEN COALESCE(sm.form_tier, 0) END) ASC, \
-             COUNT(DISTINCT CASE WHEN done.surface_id IS NULL THEN vw.surface_id END) ASC, \
+             MIN(CASE WHEN done.vkey IS NULL THEN COALESCE(sm.form_tier, 0) END) ASC, \
+             COUNT(DISTINCT CASE WHEN done.vkey IS NULL THEN vw.surface_id END) ASC, \
              vw.book, vw.chapter, vw.verse"
             )
         };
@@ -2323,8 +2331,8 @@ impl Bible {
             "SELECT vw.book, vw.chapter, vw.verse
              FROM hebrewdb.verse_word vw
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
-             LEFT JOIN ({DONE_SURFACES}) done ON done.surface_id = vw.surface_id
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+             LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
              LEFT JOIN hebrewdb.roots r ON r.root = sm.root
              LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
              {exclude_where}
@@ -2367,12 +2375,12 @@ impl Bible {
                     "SELECT s.text
                      FROM hebrewdb.verse_word vw
                      JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
-                     LEFT JOIN ({DONE_SURFACES}) done ON done.surface_id = vw.surface_id
                      LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+                     LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
                      LEFT JOIN hebrewdb.roots r ON r.root = sm.root
                      LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
                      WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
-                       AND done.surface_id IS NULL
+                       AND done.vkey IS NULL
                      {word_order}
                      LIMIT 1"
                 ),
@@ -2414,12 +2422,12 @@ impl Bible {
             "SELECT s.text
              FROM hebrewdb.verse_word vw
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
-             LEFT JOIN ({DONE_SURFACES}) done ON done.surface_id = vw.surface_id
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+             LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
              LEFT JOIN hebrewdb.roots r ON r.root = sm.root
              LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
              WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
-               AND done.surface_id IS NULL
+               AND done.vkey IS NULL
                AND (COALESCE(sm.concept_mask, 0) & ~?4) = 0
              {order}"
         );
@@ -3483,9 +3491,10 @@ impl Bible {
                AND NOT (vw2.book = ?1 AND vw2.chapter = ?2 AND vw2.verse = ?3)
                AND NOT EXISTS (
                    SELECT 1 FROM hebrewdb.verse_word w3
-                   LEFT JOIN ({DONE_SURFACES}) done ON done.surface_id = w3.surface_id
+                   LEFT JOIN progress.surface_meta sm3 ON sm3.surface_id = w3.surface_id
+                   LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm3.vkey
                    WHERE w3.book = vw2.book AND w3.chapter = vw2.chapter
-                     AND w3.verse = vw2.verse AND done.surface_id IS NULL)
+                     AND w3.verse = vw2.verse AND done.vkey IS NULL)
              LIMIT ?4"
         ))?;
         let rows = stmt.query_map(params![b, c, v, limit], |r| {
@@ -5853,13 +5862,19 @@ mod tests {
         let threshold = probe.min_occurrences;
         bible.seed_known_vocab(threshold, now)?;
 
+        // Done-ness folds spelling twins through `surface_meta.vkey`, so the
+        // expected count is distinct keys, not raw surfaces — and the cache
+        // must exist for the fold to see the seeded rows.
+        bible.ensure_surface_meta()?;
         let known: i64 = bible.conn().query_row(
             &format!("SELECT COUNT(*) FROM ({DONE_SURFACES})"),
             [],
             |r| r.get(0),
         )?;
         let expected: i64 = bible.conn().query_row(
-            "SELECT COUNT(*) FROM hebrewdb.surface WHERE language IS NULL AND occurrences >= ?1",
+            "SELECT COUNT(DISTINCT sm.vkey) FROM progress.surface_meta sm \
+             JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+             WHERE s.occurrences >= ?1",
             params![threshold],
             |r| r.get(0),
         )?;
