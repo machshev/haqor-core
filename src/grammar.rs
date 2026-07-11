@@ -266,6 +266,17 @@ const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
     ("אֶתְהֶן", &["object-marker"]),
     ("וְאֹתוֹ", &["conj-ve", "object-marker"]),
     ("וְאֹתִי", &["conj-ve", "object-marker"]),
+    // The relative word אֲשֶׁר and its proclitic-prefixed spellings (כַּאֲשֶׁר
+    // "when/as" is כְּ + אֲשֶׁר; the dagesh-less כַאֲשֶׁר twin is a separate
+    // surface).
+    ("אֲשֶׁר", &["relative"]),
+    ("וַאֲשֶׁר", &["conj-ve", "relative"]),
+    ("בַּאֲשֶׁר", &["prep-be", "relative"]),
+    ("לַאֲשֶׁר", &["prep-le", "relative"]),
+    ("מֵאֲשֶׁר", &["prep-min", "relative"]),
+    ("וְכַאֲשֶׁר", &["conj-ve", "prep-ke", "relative"]),
+    ("וּבַאֲשֶׁר", &["conj-ve", "prep-be", "relative"]),
+    ("וּמֵאֲשֶׁר", &["conj-ve", "prep-min", "relative"]),
     // Standalone prepositions.
     ("עַל", &["preposition"]),
     ("עֲלֵי", &["preposition"]),
@@ -369,7 +380,8 @@ const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
     ("בָּכֶם", &["prep-be", "prep-suffix"]),
     ("בַּיַהְוֶה", &["prep-be"]),
     // Inseparable כְּ and מִן.
-    ("כַּאֲשֶׁר", &["prep-ke"]),
+    ("כַּאֲשֶׁר", &["prep-ke", "relative"]),
+    ("כַאֲשֶׁר", &["prep-ke", "relative"]),
     ("מִן", &["prep-min"]),
     ("מִמֶּנּוּ", &["prep-min", "prep-suffix"]),
     ("מִמֶּנִּי", &["prep-min", "prep-suffix"]),
@@ -385,7 +397,7 @@ const SURFACE_CONCEPTS: &[(&str, &[&str])] = &[
     ("וּמִן", &["conj-ve", "prep-min"]),
     ("וְעִמּוֹ", &["conj-ve", "preposition", "prep-suffix"]),
     ("וְאַחֲרָיו", &["conj-ve", "preposition", "prep-suffix"]),
-    ("וְלַאֲשֶׁר", &["conj-ve", "prep-le"]),
+    ("וְלַאֲשֶׁר", &["conj-ve", "prep-le", "relative"]),
     // Particle + pronoun-suffix compounds (drill hosts like the suffixed
     // prepositions) and other fused spellings with no analysis row.
     ("הִנְנִי", &["prep-suffix"]),
@@ -442,6 +454,20 @@ const CONCEPTS: &[GrammarConcept] = &[
             itself: אֹתוֹ (him), אֹתָם (them).",
         formula: Some("verb + אֶת + definite noun → (marks the object)"),
         examples: &["וַיַּרְא אֶת הָאוֹר — and he saw the light", "אֹתוֹ — him"],
+    },
+    GrammarConcept {
+        key: "relative",
+        bucket: 0,
+        title: "The relative word אֲשֶׁר",
+        explanation: "אֲשֶׁר — one of the most common words in the Bible — links a \
+            clause to the word before it. English needs three words for it: \"who\" \
+            for people, \"which\" or \"that\" for things — Hebrew uses אֲשֶׁר for all \
+            of them, and it never changes form. Context decides the translation.",
+        formula: Some("noun + אֲשֶׁר + clause → \"… who / which / that …\""),
+        examples: &[
+            "הָאִישׁ אֲשֶׁר — the man who",
+            "הַמָּקוֹם אֲשֶׁר — the place which",
+        ],
     },
     GrammarConcept {
         key: "article",

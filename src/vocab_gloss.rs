@@ -104,7 +104,12 @@ const CURATED: &[(&str, &str, Option<&str>)] = &[
     ("בַּיהוָה", "in the LORD", Some("בְּ (in) + the divine name")),
 
     // Core particles.
-    ("אֲשֶׁר", "who, which, that", None),
+    // Slashes, not commas: the card headlines the leading sense only, and the
+    // relative word is one word covering all three English renderings — the
+    // context, not the Hebrew, picks between them.
+    ("אֲשֶׁר", "who / which / that", Some("The relative word: links a clause to the word before it. \"Who\" for people, \"which\" or \"that\" for things — context decides.")),
+    ("כַּאֲשֶׁר", "as / when", Some("כְּ (as) + אֲשֶׁר (which) — the pair fuses to \"as\" or \"when\".")),
+    ("כַאֲשֶׁר", "as / when", Some("כְּ (as) + אֲשֶׁר (which) — the pair fuses to \"as\" or \"when\".")),
     ("כִּי", "for, because, that, when", None),
     ("עַד", "until, as far as", None),
     ("וְעַד", "and until", Some("וְ (and) + עַד")),
