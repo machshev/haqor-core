@@ -1034,6 +1034,29 @@ pub(crate) fn prefixed_name_gloss(surface: &str) -> Option<(String, String)> {
     Some((format!("{} {gloss}", senses.join(" ")), note))
 }
 
+/// The first sense of a multi-sense gloss, for a tutor card — "who; which;
+/// that" → "who", "there is not, without" → "there is not". Splits on ';' or
+/// ',' only outside parentheses, so a parenthetical qualifier survives whole
+/// ("(a name)", "Selah — a pause (in Psalms)"). The lexicon view keeps the
+/// full gloss; only the cards trim.
+pub(crate) fn leading_sense(gloss: &str) -> String {
+    let mut depth = 0u32;
+    for (i, c) in gloss.char_indices() {
+        match c {
+            '(' => depth += 1,
+            ')' => depth = depth.saturating_sub(1),
+            ';' | ',' if depth == 0 => {
+                let head = gloss[..i].trim();
+                if !head.is_empty() {
+                    return head.to_string();
+                }
+            }
+            _ => {}
+        }
+    }
+    gloss.trim().to_string()
+}
+
 fn primary_sense(gloss: &str) -> String {
     for clause in gloss.split([';', ',']) {
         let c = clause.trim();
@@ -1205,8 +1228,21 @@ pub(crate) fn inflected_gloss(w: &HebrewWord) -> String {
     } else if w.tense.is_none() && (w.number.is_some() || w.state.is_some()) {
         inflect_noun(w, &base)
     } else {
-        // Function word / proper noun: nothing mechanical to add.
-        w.gloss.clone()
+        // Function word / proper noun: nothing to inflect, but an attached
+        // proclitic cluster still contributes its senses (וַאֲשֶׁר "and who").
+        // Only the leading sense composes — prefixing the whole multi-sense
+        // gloss would conjoin one sense and orphan the rest ("and who;
+        // which; that").
+        let mut words = w.prefix.as_deref().map_or(Vec::new(), proclitic_words);
+        let first = leading_sense(&w.gloss);
+        if first.starts_with("the ") || first.starts_with("The ") {
+            words.retain(|&p| p != "the");
+        }
+        if words.is_empty() || first.is_empty() {
+            w.gloss.clone()
+        } else {
+            format!("{} {first}", words.join(" "))
+        }
     }
 }
 
@@ -2995,6 +3031,24 @@ mod tests {
             ..Default::default()
         };
         assert_eq!(inflected_gloss(&particle), "that; because");
+
+        // A proclitic on a function word still contributes its sense, composed
+        // with the leading sense only (וַאֲשֶׁר is "and who", not
+        // "and who; which; that").
+        let and_who = HebrewWord {
+            gloss: "who; which; that".to_string(),
+            prefix: Some("וַ".to_string()),
+            ..Default::default()
+        };
+        assert_eq!(inflected_gloss(&and_who), "and who");
+        // A suffixed preposition keeps its own "to" ("and to me", not
+        // "and me" via the verb-sense trim).
+        let and_to_me = HebrewWord {
+            gloss: "to me; unto me".to_string(),
+            prefix: Some("וְ".to_string()),
+            ..Default::default()
+        };
+        assert_eq!(inflected_gloss(&and_to_me), "and to me");
     }
 
     #[test]

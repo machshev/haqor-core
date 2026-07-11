@@ -1950,6 +1950,8 @@ impl Bible {
             if g.is_empty() || crate::bible::is_name_gloss(&g) {
                 continue;
             }
+            // Options trim to one sense like the answer does.
+            let g = crate::bible::leading_sense(&g);
             if seen.insert(g.to_lowercase()) {
                 out.push(g);
             }
@@ -2057,6 +2059,11 @@ impl Bible {
                 None => (gloss, String::new(), String::new()),
             },
         };
+
+        // The card headlines a single sense — the full multi-sense entry
+        // belongs to the lexicon view, not a quiz answer ("who", not
+        // "who; which; that").
+        let gloss = crate::bible::leading_sense(&gloss);
 
         // A name card is reveal-and-self-grade — quizzing "(a name)" against
         // real glosses is a giveaway, so it gets no distractors.
@@ -4575,6 +4582,17 @@ mod tests {
         // the answer with no redundant root line.
         let card = bible.word_card("בַּיִת")?.expect("בַּיִת is a surface");
         assert_eq!(card.root_gloss, "");
+
+        // A proclitic on a function word composes too — וַאֲשֶׁר carded bare
+        // "who; which; that", dropping the vav its transliteration voices.
+        let card = bible.word_card("וַאֲשֶׁר")?.expect("וַאֲשֶׁר is a surface");
+        assert_eq!(card.gloss, "and who");
+        assert_eq!(card.root_gloss, "who; which; that");
+
+        // The headline carries one sense only; the full entry stays on the
+        // root line / lexicon ("there is not", not "there is not, without").
+        let card = bible.word_card("אֵין")?.expect("אֵין is a surface");
+        assert_eq!(card.gloss, "there is not");
         Ok(())
     }
 
