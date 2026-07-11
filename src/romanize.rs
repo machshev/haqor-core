@@ -5,8 +5,10 @@
 //! This is deliberately *not* a scholarly transliteration. It makes pragmatic
 //! choices so the output reads naturally for a learner: modern consonant
 //! values (ח → "ch", צ → "ts"), aleph and ayin marked with an apostrophe,
-//! sheva voiced as "e", matres lectionis (a vowel-letter vav or yod) folded
-//! into the vowel they lengthen, and furtive patah read before its guttural
+//! vocal sheva voiced as "e" (silent sheva — word-final, or closing a
+//! syllable after a short vowel — is dropped: לָךְ → "lakh", מִדְבָּר →
+//! "midbar"), matres lectionis (a vowel-letter vav or yod) folded into the
+//! vowel they lengthen, and furtive patah read before its guttural
 //! (רוּחַ → "ruach"). Cantillation is ignored; spaces are kept and a maqaf
 //! becomes a hyphen.
 //!
@@ -84,8 +86,9 @@ fn consonant(c: char, dagesh: bool, sin_dot: bool) -> &'static str {
         '\u{05D7}' => "ch",
         '\u{05D8}' => "t",
         '\u{05D9}' => "y",
-        '\u{05DA}' => "kh", // final kaf
-        '\u{05DB}' => {
+        // Final and medial kaf soften identically; the dagesh of a 2ms
+        // suffix ־ךָּ keeps the hard value (מִמֶּךָּ → "mimeka").
+        '\u{05DA}' | '\u{05DB}' => {
             if dagesh {
                 "k"
             } else {
@@ -96,8 +99,7 @@ fn consonant(c: char, dagesh: bool, sin_dot: bool) -> &'static str {
         '\u{05DD}' | '\u{05DE}' => "m",
         '\u{05DF}' | '\u{05E0}' => "n",
         '\u{05E1}' => "s",
-        '\u{05E3}' => "f", // final pe
-        '\u{05E4}' => {
+        '\u{05E3}' | '\u{05E4}' => {
             if dagesh {
                 "p"
             } else {
@@ -190,10 +192,22 @@ pub fn voiced_syllable_str(syllable: &str) -> String {
 
 /// Romanize pointed Hebrew text word-by-word (see the module docs for the
 /// conventions). Cantillation is skipped; a maqaf becomes a hyphen.
+/// Whether a vowel point is short — the kind that closes its syllable on the
+/// next vowel-less consonant, making that consonant's sheva silent (the hiriq
+/// of מִדְבָּר silences the dalet's sheva: "midbar", not "midebar"). Qamats
+/// is treated as long: the corpus never marks qamats qatan, and a vocal "e"
+/// is the safer guess under a long vowel.
+fn is_short_vowel(m: char) -> bool {
+    matches!(m, '\u{05B4}' | '\u{05B6}' | '\u{05B7}' | '\u{05BB}')
+}
+
 pub fn romanize(text: &str) -> String {
     let clusters = clusters(text);
     let mut out = String::new();
     let mut last_vowel = "";
+    // Whether the previous cluster ended in a short vowel (no mater) — the
+    // condition under which a following sheva closes the syllable silently.
+    let mut last_short = false;
 
     for (k, cl) in clusters.iter().enumerate() {
         let base = cl[0];
@@ -201,42 +215,78 @@ pub fn romanize(text: &str) -> String {
         if base == ' ' {
             out.push(' ');
             last_vowel = "";
+            last_short = false;
             continue;
         }
         if base == '\u{05BE}' {
             out.push('-');
             last_vowel = "";
+            last_short = false;
             continue;
         }
 
         let marks = &cl[1..];
         let dagesh = marks.contains(&'\u{05BC}');
         let sin_dot = marks.contains(&'\u{05C2}');
+        let is_last = word_final(&clusters, k);
+        // A sheva is silent word-finally (לָךְ → "lakh") or when it closes a
+        // syllable after a short vowel (מִדְבָּר → "midbar") — unless its
+        // consonant carries dagesh forte, whose second half opens a new
+        // syllable (הַמְּלָכִים keeps its "e"). Word-initially and after a
+        // long vowel or another sheva it stays vocal.
+        let silent_sheva =
+            marks.contains(&'\u{05B0}') && (is_last || (last_short && !dagesh));
         let vowels: Vec<&str> = marks
             .iter()
+            .filter(|&&m| !(silent_sheva && m == '\u{05B0}'))
             .map(|&m| vowel(m))
             .filter(|v| !v.is_empty())
             .collect();
         let vstr = vowels.concat();
-        let is_last = word_final(&clusters, k);
 
         // Vav serving as a vowel letter: holam male (וֹ → o) or shuruq (וּ → u).
         if base == '\u{05D5}' {
             if marks.contains(&'\u{05B9}') {
                 out.push('o');
                 last_vowel = "o";
+                last_short = false;
                 continue;
             }
             if dagesh && vowels.is_empty() {
                 out.push('u');
                 last_vowel = "u";
+                last_short = false;
+                continue;
+            }
+            // A consonantal vav with no point at all mid-word is a
+            // defectively written holam (עָון → "avon", מִצְות → "mitsvot") —
+            // fully pointed text gives every consonant a vowel or sheva.
+            if marks.is_empty() && !is_last {
+                out.push_str("vo");
+                last_vowel = "o";
+                last_short = false;
                 continue;
             }
         }
 
-        // Yod as a mater lengthening a preceding hiriq (…ִי): fold into the "i".
-        if base == '\u{05D9}' && vowels.is_empty() && !dagesh && last_vowel == "i" {
-            continue;
+        if base == '\u{05D9}' && vowels.is_empty() && !dagesh {
+            // Yod as a mater lengthening a preceding hiriq (…ִי): fold into
+            // the "i" — and the vowel is long now, so a following sheva
+            // stays vocal.
+            if last_vowel == "i" {
+                last_short = false;
+                continue;
+            }
+            // The silent yod of the 3ms plural suffix ־ָיו (עָלָיו →
+            // "'alav"): qamats, then yod, then a bare word-final vav.
+            if last_vowel == "a"
+                && clusters
+                    .get(k + 1)
+                    .is_some_and(|n| n.len() == 1 && n[0] == '\u{05D5}')
+                && word_final(&clusters, k + 1)
+            {
+                continue;
+            }
         }
 
         // Furtive patah under a final guttural is sounded *before* it
@@ -248,12 +298,19 @@ pub fn romanize(text: &str) -> String {
             out.push('a');
             out.push_str(consonant(base, dagesh, sin_dot));
             last_vowel = "";
+            last_short = false;
             continue;
         }
 
         out.push_str(consonant(base, dagesh, sin_dot));
         out.push_str(&vstr);
         last_vowel = vowels.last().copied().unwrap_or("");
+        last_short = marks
+            .iter()
+            .rev()
+            .copied()
+            .find(|&m| !vowel(m).is_empty() || m == '\u{05B0}')
+            .is_some_and(is_short_vowel);
     }
 
     out
@@ -293,6 +350,42 @@ mod tests {
     #[test]
     fn maqaf_becomes_a_hyphen() {
         assert_eq!(romanize("עַל־כֵּן"), "'al-ken"); // ayin → '
+    }
+
+    #[test]
+    fn silent_sheva_is_dropped() {
+        // Word-final sheva (the 2fs suffix hosts of the pronoun drill).
+        assert_eq!(romanize("לָךְ"), "lakh");
+        assert_eq!(romanize("עִמָּךְ"), "'imakh");
+        // A sheva closing a syllable after a short vowel is silent…
+        assert_eq!(romanize("מִדְבָּר"), "midbar");
+        // …but stays vocal word-initially, and under dagesh forte.
+        assert_eq!(romanize("בְּרֵאשִׁית"), "bere'shit");
+        assert_eq!(romanize("הַמְּלָכִים"), "hamelakhim");
+    }
+
+    #[test]
+    fn silent_yod_of_the_3ms_plural_suffix() {
+        assert_eq!(romanize("עָלָיו"), "'alav");
+        assert_eq!(romanize("אֵלָיו"), "'elav");
+        assert_eq!(romanize("דְּבָרָיו"), "devarav");
+        // A word-final consonantal yod still sounds (גּוֹי "goy").
+        assert_eq!(romanize("גּוֹי"), "goy");
+    }
+
+    #[test]
+    fn defective_holam_on_consonantal_vav() {
+        // The corpus writes these with a bare, vowel-less vav; the missing
+        // holam must still be read.
+        assert_eq!(romanize("עָון"), "'avon");
+        assert_eq!(romanize("מִצְות"), "mitsvot");
+        assert_eq!(romanize("מִצְותָיו"), "mitsvotav");
+    }
+
+    #[test]
+    fn final_kaf_and_pe_honour_dagesh() {
+        assert_eq!(romanize("מִמֶּךָּ"), "mimeka"); // ־ךָּ hard k
+        assert_eq!(romanize("מִמְּךָ"), "mimekha"); // ־ךָ soft kh
     }
 
     #[test]
