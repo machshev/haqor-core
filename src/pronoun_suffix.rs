@@ -20,6 +20,10 @@
 /// (recorded in `progress.suffix_srs`), the pronoun it stands for, and every
 /// pointed spelling it takes on the curated host words (pausal and
 /// dagesh-bearing variants listed separately — matching is codepoint-exact).
+/// The ־ִי (hiriq-yod) variants are the connecting-vowel spellings the
+/// irregular kinship nouns join with (אָבִינוּ "our father", אָחִיךְ "your
+/// brother", פִּיהֶם "their mouth") — hosts for the opaque-label recovery in
+/// [`crate::bible`], not the drill.
 #[derive(Debug, Clone, Copy)]
 pub struct PronounSuffix {
     pub key: &'static str,
@@ -36,6 +40,7 @@ pub const PRONOUN_SUFFIXES: &[PronounSuffix] = &[
     PronounSuffix { key: "3ms", meaning: "him", endings: &[
         "\u{05B8}\u{05D9}\u{05D5}",           // ־ָיו  (עָלָיו, אֵלָיו)
         "\u{05B4}\u{05D9}\u{05D5}",           // ־ִיו  (אָבִיו, פִּיו)
+        "\u{05B4}\u{05D9}\u{05D4}\u{05D5}\u{05BC}", // ־ִיהוּ (אָבִיהוּ, פִּיהוּ)
         "\u{05D4}\u{05D5}\u{05BC}",           // ־הוּ  (כָּמֹהוּ)
         "\u{05D5}\u{05B9}",                   // ־וֹ   (לוֹ, בּוֹ, אֹתוֹ)
     ]},
@@ -47,38 +52,45 @@ pub const PRONOUN_SUFFIXES: &[PronounSuffix] = &[
     ]},
     PronounSuffix { key: "3mp", meaning: "them", endings: &[
         "\u{05B5}\u{05D9}\u{05D4}\u{05B6}\u{05DD}", // ־ֵיהֶם (עֲלֵיהֶם)
+        "\u{05B4}\u{05D9}\u{05D4}\u{05B6}\u{05DD}", // ־ִיהֶם (אֲבִיהֶם, פִּיהֶם)
         "\u{05D4}\u{05B6}\u{05DD}",           // ־הֶם  (לָהֶם, מֵהֶם)
         "\u{05DE}\u{05D5}\u{05B9}",           // ־מוֹ  (poetic לָמוֹ)
         "\u{05B8}\u{05DD}",                   // ־ָם  (אֹתָם, עִמָּם)
     ]},
     PronounSuffix { key: "2ms", meaning: "you (m.)", endings: &[
         "\u{05B6}\u{05D9}\u{05DA}\u{05B8}",   // ־ֶיךָ (אֵלֶיךָ, עָלֶיךָ)
+        "\u{05B4}\u{05D9}\u{05DA}\u{05B8}",   // ־ִיךָ (אָבִיךָ, פִּיךָ)
         "\u{05DA}\u{05B8}\u{05BC}",           // ־ךָּ  (מִמֶּךָּ)
         "\u{05DA}\u{05B8}",                   // ־ךָ  (לְךָ, עִמְּךָ)
     ]},
     PronounSuffix { key: "3fs", meaning: "her", endings: &[
         "\u{05B6}\u{05D9}\u{05D4}\u{05B8}",   // ־ֶיהָ (עָלֶיהָ, אֵלֶיהָ)
+        "\u{05B4}\u{05D9}\u{05D4}\u{05B8}",   // ־ִיהָ (אָבִיהָ, פִּיהָ)
         "\u{05E0}\u{05B8}\u{05BC}\u{05D4}",   // ־נָּה (מִמֶּנָּה)
         "\u{05B8}\u{05D4}\u{05BC}",           // ־ָהּ  (לָהּ, בָּהּ — mapiq)
     ]},
     PronounSuffix { key: "1cp", meaning: "us", endings: &[
         "\u{05B5}\u{05D9}\u{05E0}\u{05D5}\u{05BC}", // ־ֵינוּ (אֵלֵינוּ, עָלֵינוּ)
+        "\u{05B4}\u{05D9}\u{05E0}\u{05D5}\u{05BC}", // ־ִינוּ (אָבִינוּ, פִּינוּ)
         "\u{05E0}\u{05BC}\u{05D5}\u{05BC}",   // ־נּוּ (מִמֶּנּוּ)
         "\u{05B8}\u{05E0}\u{05D5}\u{05BC}",   // ־ָנוּ (לָנוּ, עִמָּנוּ)
     ]},
     PronounSuffix { key: "2mp", meaning: "you (pl.)", endings: &[
         "\u{05B5}\u{05D9}\u{05DB}\u{05B6}\u{05DD}", // ־ֵיכֶם (עֲלֵיכֶם)
+        "\u{05B4}\u{05D9}\u{05DB}\u{05B6}\u{05DD}", // ־ִיכֶם (אֲבִיכֶם, פִּיכֶם)
         "\u{05DB}\u{05BC}\u{05B6}\u{05DD}",   // ־כֶּם (מִכֶּם — assimilated נ doubles)
         "\u{05DB}\u{05B6}\u{05DD}",           // ־כֶם  (לָכֶם, אֶתְכֶם)
     ]},
     PronounSuffix { key: "2fs", meaning: "you (f.)", endings: &[
         "\u{05B7}\u{05D9}\u{05B4}\u{05DA}\u{05B0}", // ־ַיִךְ (עָלַיִךְ)
         "\u{05B8}\u{05D9}\u{05B4}\u{05DA}\u{05B0}", // ־ָיִךְ (pausal עָלָיִךְ)
+        "\u{05B4}\u{05D9}\u{05DA}\u{05B0}",   // ־ִיךְ (אָבִיךְ, אָחִיךְ)
         "\u{05B8}\u{05DA}\u{05B0}",           // ־ָךְ  (לָךְ, עִמָּךְ)
         "\u{05B5}\u{05DA}\u{05B0}",           // ־ֵךְ  (מִמֵּךְ)
     ]},
     PronounSuffix { key: "3fp", meaning: "them (f.)", endings: &[
         "\u{05B5}\u{05D9}\u{05D4}\u{05B6}\u{05DF}", // ־ֵיהֶן (עֲלֵיהֶן)
+        "\u{05B4}\u{05D9}\u{05D4}\u{05B6}\u{05DF}", // ־ִיהֶן (אֲבִיהֶן)
         "\u{05D4}\u{05B6}\u{05DF}",           // ־הֶן  (לָהֶן)
     ]},
 ];
@@ -267,6 +279,17 @@ mod tests {
         assert_eq!(split("מִמֶּנּוּ").key, "1cp");
         assert_eq!(split("מִמֶּנִּי").key, "1cs");
         assert_eq!(split("מִמֶּנָּה").key, "3fs");
+
+        // The ־ִי connecting-vowel spellings of the irregular kinship nouns.
+        assert_eq!(split("אָבִינוּ").key, "1cp");
+        assert_eq!(split("אָבִינוּ").stem, "אָב");
+        assert_eq!(split("אָבִיהָ").key, "3fs");
+        assert_eq!(split("אָחִיךְ").key, "2fs");
+        assert_eq!(split("אָבִיךָ").key, "2ms");
+        assert_eq!(split("אֲבִיהֶם").key, "3mp");
+        assert_eq!(split("אֲבִיכֶם").key, "2mp");
+        assert_eq!(split("אֲבִיהֶן").key, "3fp");
+        assert_eq!(split("פִּיהוּ").key, "3ms");
     }
 
     #[test]

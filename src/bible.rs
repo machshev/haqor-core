@@ -1836,14 +1836,17 @@ impl Bible {
                     .map(|sp| (sp.key, fold_consonants(&sp.stem)))
                     .collect();
                 // A feminine stem trades its final ה for ת before a suffix
-                // (נְבֵלָה → נִבְלָתוֹ), so anchor on that shape too.
+                // (נְבֵלָה → נִבְלָתוֹ), and פֶּה drops its ה outright
+                // (פִּיו, פִּיהֶם bind on פִּי), so anchor on those shapes too.
                 let fem_cons = stem_cons
                     .strip_suffix('\u{05D4}')
                     .map(|s| format!("{s}\u{05EA}"));
+                let he_dropped = stem_cons.strip_suffix('\u{05D4}').filter(|s| !s.is_empty());
                 let anchored = |rest: &str| {
                     rest.ends_with(&stem_cons)
                         || rest.starts_with(&stem_cons)
                         || fem_cons.as_deref().is_some_and(|f| rest.ends_with(f))
+                        || he_dropped.is_some_and(|d| rest.ends_with(d))
                 };
                 let split = splits
                     .iter()
@@ -2830,6 +2833,34 @@ mod tests {
         assert!(
             w.state.as_deref().unwrap_or("").contains("+ 3mp"),
             "אֲבֹתָם (their fathers) should carry a 3mp suffix cell, got {:?}",
+            w.state
+        );
+        // The kinship nouns bind their suffix on a ־ִי connecting vowel; the
+        // cell must recover so the card glosses possessively and gates behind
+        // suffix-possessive.
+        let w = bible.hebrew_word_info("אָבִינוּ").unwrap();
+        assert!(
+            w.state.as_deref().unwrap_or("").contains("+ 1cp"),
+            "אָבִינוּ (our father) should carry a 1cp suffix cell, got {:?}",
+            w.state
+        );
+        assert_eq!(inflected_gloss(&w), "our father");
+        assert!(
+            crate::grammar::concepts_for_surface("אָבִינוּ", Some(&w))
+                .contains(&"suffix-possessive"),
+            "אָבִינוּ should gate behind suffix-possessive"
+        );
+        let w = bible.hebrew_word_info("אָבִיהָ").unwrap();
+        assert!(
+            w.state.as_deref().unwrap_or("").contains("+ 3fs"),
+            "אָבִיהָ (her father) should carry a 3fs suffix cell, got {:?}",
+            w.state
+        );
+        // פֶּה drops its ה before the suffix — the anchor must still hold.
+        let w = bible.hebrew_word_info("פִּיו").unwrap();
+        assert!(
+            w.state.as_deref().unwrap_or("").contains("+ 3ms"),
+            "פִּיו (his mouth) should carry a 3ms suffix cell, got {:?}",
             w.state
         );
         let w = bible.hebrew_word_info("אֲנָשִׁים").unwrap();

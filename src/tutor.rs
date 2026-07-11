@@ -599,8 +599,14 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// segolates like חֹדֶשׁ/מֶלֶךְ carded the verb's gloss) and curated
 /// חֹדֶשׁ "month; new moon";
 /// 20 curated בְּרִית "covenant" (the bridge resolved it to BDB's
-/// *Baal-berith* n.pr entry, so the ordinary noun carded "(a name)").
-const SURFACE_META_VERSION: i64 = 21;
+/// *Baal-berith* n.pr entry, so the ordinary noun carded "(a name)");
+/// 21 gated אֲשֶׁר behind the relative-word concept card;
+/// 22 taught the pronominal-ending inventory the ־ִי connecting-vowel
+/// spellings the irregular kinship nouns join with (אָבִינוּ, אָחִיךְ,
+/// פִּיהֶם), so their suffix cell recovers — they gloss as "our father"
+/// instead of "father" and gate behind `suffix-possessive` instead of
+/// ranking as grammar-free beginner vocabulary.
+const SURFACE_META_VERSION: i64 = 22;
 
 /// `concept_mask` sentinel for a surface the tutor cannot teach: no parse
 /// gloss, no curated gloss, and not a name — its card would be blank. The bit
