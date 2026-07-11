@@ -2034,13 +2034,13 @@ impl Bible {
             // candidate's own form-level rendering — the correct answer is
             // form-specific ("and to the house"), so lexeme-sense options
             // ("son") would give it away by register alone.
-            let g = match crate::vocab_gloss::curated_gloss(&cand) {
-                Some(c) => c.gloss.trim().to_string(),
+            let (g, curated) = match crate::vocab_gloss::curated_gloss(&cand) {
+                Some(c) => (c.gloss.trim().to_string(), true),
                 None => match self.hebrew_word_info(&cand) {
                     // A name's bridged gloss is an etymology ("my father is
                     // rescue"), not a meaning — never offer one.
                     Some(w) if w.is_name => continue,
-                    Some(w) => crate::bible::inflected_gloss(&w).trim().to_string(),
+                    Some(w) => (crate::bible::inflected_gloss(&w).trim().to_string(), false),
                     None => continue,
                 },
             };
@@ -2049,8 +2049,13 @@ impl Bible {
             if g.is_empty() || crate::bible::is_name_gloss(&g) {
                 continue;
             }
-            // Options trim to one sense like the answer does.
-            let g = crate::bible::leading_sense(&g);
+            // Options render like the answer does: curated glosses verbatim,
+            // bridged ones trimmed to one sense.
+            let g = if curated {
+                g
+            } else {
+                crate::bible::leading_sense(&g)
+            };
             if seen.insert(g.to_lowercase()) {
                 out.push(g);
             }
@@ -2125,14 +2130,15 @@ impl Bible {
         // meaning to learn: it cards as [`NAME_GLOSS`] with the citation kept
         // as the note, and drops the spurious bridged root/morph — the
         // scheduler seeds such cards known after one showing.
-        let (gloss, root_gloss, note) = match crate::vocab_gloss::curated_gloss(surface) {
+        let (gloss, root_gloss, note, curated) = match crate::vocab_gloss::curated_gloss(surface) {
             Some(c) => (
                 c.gloss.to_string(),
                 String::new(),
                 c.note.unwrap_or_default().to_string(),
+                true,
             ),
             None => match crate::bible::prefixed_name_gloss(surface) {
-                Some((g, note)) => (g, String::new(), note),
+                Some((g, note)) => (g, String::new(), note, false),
                 // A curated famous name is exempt from the pos/meta signals:
                 // it is in `CURATED_NAMES` precisely because its BDB gloss is
                 // already usable ("Aaron", "Esau") — serve that, not
@@ -2145,7 +2151,7 @@ impl Bible {
                     let note = crate::bible::name_description(&gloss);
                     root.clear();
                     morph.clear();
-                    (NAME_GLOSS.to_string(), String::new(), note)
+                    (NAME_GLOSS.to_string(), String::new(), note, false)
                 }
                 // The surface's own meaning is what the learner is reading, so
                 // the inflected rendering headlines (and is quizzed); the
@@ -2153,16 +2159,23 @@ impl Bible {
                 None if !inflected.is_empty()
                     && inflected.to_lowercase() != gloss.to_lowercase() =>
                 {
-                    (inflected, gloss, String::new())
+                    (inflected, gloss, String::new(), false)
                 }
-                None => (gloss, String::new(), String::new()),
+                None => (gloss, String::new(), String::new(), false),
             },
         };
 
-        // The card headlines a single sense — the full multi-sense entry
-        // belongs to the lexicon view, not a quiz answer ("who", not
-        // "who; which; that").
-        let gloss = crate::bible::leading_sense(&gloss);
+        // A bridged card headlines a single sense — the full multi-sense
+        // entry belongs to the lexicon view, not a quiz answer ("who", not
+        // "who; which; that"). A curated gloss is served verbatim: it was
+        // hand-written as the final learner meaning (כִּי is "for, because,
+        // that, when", not "for"), and its card has no root-meaning line to
+        // carry the trimmed senses.
+        let gloss = if curated {
+            gloss
+        } else {
+            crate::bible::leading_sense(&gloss)
+        };
 
         // A name card is reveal-and-self-grade — quizzing "(a name)" against
         // real glosses is a giveaway, so it gets no distractors.
@@ -4638,10 +4651,14 @@ mod tests {
         assert_eq!(card.gloss, "and who");
         assert_eq!(card.root_gloss, "who; which; that");
 
-        // The headline carries one sense only; the full entry stays on the
-        // root line / lexicon ("there is not", not "there is not, without").
+        // A curated gloss is the final learner meaning, served verbatim —
+        // trimming it to one sense would lose the rest entirely (curated
+        // cards carry no root-meaning line): אֵין keeps "there is not,
+        // without", כִּי keeps all four of its senses.
         let card = bible.word_card("אֵין")?.expect("אֵין is a surface");
-        assert_eq!(card.gloss, "there is not");
+        assert_eq!(card.gloss, "there is not, without");
+        let card = bible.word_card("כִּי")?.expect("כִּי is a surface");
+        assert_eq!(card.gloss, "for, because, that, when");
         Ok(())
     }
 
