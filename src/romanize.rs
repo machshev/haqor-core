@@ -157,11 +157,11 @@ fn word_final(clusters: &[Vec<char>], k: usize) -> bool {
 }
 
 /// The onset sound of a single consonant glyph, for voicing a teaching
-/// syllable (e.g. building `הֶ` → "he"). Unlike [`romanize`] this bypasses the
-/// word-level heuristics — most importantly the "silent final he" rule that
-/// drops a vowel-less he — so a lone host consonant is never swallowed. A
-/// dagesh or sin dot carried in the glyph is honoured (בּ → "b", שׂ → "s"); a
-/// bare begadkefat letter takes its soft value (ב → "v").
+/// syllable (e.g. building `הֶ` → "he"). Unlike [`romanize`] this bypasses
+/// the word-level heuristics (mater folding, furtive patah, vav-as-vowel),
+/// which need neighbouring clusters and could otherwise swallow a lone host
+/// consonant. A dagesh or sin dot carried in the glyph is honoured (בּ →
+/// "b", שׂ → "s"); a bare begadkefat letter takes its soft value (ב → "v").
 pub fn consonant_onset(glyph: &str) -> &'static str {
     let mut chars = glyph.chars();
     let Some(c) = chars.next() else { return "" };
@@ -401,7 +401,7 @@ mod tests {
 
     #[test]
     fn onset_voices_a_lone_consonant() {
-        // The word-level "silent final he" rule must NOT apply to a syllable host.
+        // Word-level heuristics must NOT apply to a syllable host.
         assert_eq!(consonant_onset("ה"), "h");
         assert_eq!(consonant_onset("מ"), "m");
         assert_eq!(consonant_onset("ח"), "ch");
