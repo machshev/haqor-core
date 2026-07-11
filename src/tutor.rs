@@ -3302,6 +3302,26 @@ impl Bible {
 
     // --- meta / flow ---------------------------------------------------------
 
+    fn meta_value(&self, key: &str) -> rusqlite::Result<Option<String>> {
+        self.conn()
+            .query_row(
+                "SELECT value FROM progress.meta WHERE key = ?1",
+                params![key],
+                |r| r.get(0),
+            )
+            .optional()
+    }
+
+    fn set_meta_value(&self, key: &str, value: &str) -> rusqlite::Result<()> {
+        self.conn()
+            .execute(
+                "INSERT INTO progress.meta(key, value) VALUES (?1, ?2) \
+                 ON CONFLICT(key) DO UPDATE SET value = excluded.value",
+                params![key, value],
+            )
+            .map(|_| ())
+    }
+
     fn meta_target(&self) -> rusqlite::Result<Option<(u8, u8, u8)>> {
         let v: Option<String> = self
             .conn()
@@ -3454,12 +3474,22 @@ impl Bible {
         // ([`Self::next_grammar_card`]). At most one rule unlocks per verse;
         // a pin needing several (stale, from before that cap) is dropped and
         // re-picked instead. Letter-phase pins stay teaching-only: grammar
-        // is deliberately locked until the alphabet is done.
+        // is deliberately locked until the alphabet is done. The unlock scan
+        // (a bit_or over the verse joined against every learnt surface) runs
+        // once per pin, not per card — its result can't change while the pin
+        // holds, so a meta marker skips it on every later call.
         let unlocked = if letter_learning {
+            unlocked
+        } else if self.meta_value("target_unlocked")?.as_deref()
+            == Some(format!("{b}.{c}.{v}").as_str())
+        {
             unlocked
         } else {
             match self.unlock_verse_concepts(b, c, v, unlocked, now)? {
-                Some(u) => u,
+                Some(u) => {
+                    self.set_meta_value("target_unlocked", &format!("{b}.{c}.{v}"))?;
+                    u
+                }
                 None => {
                     debug!(
                         "next_study_item: verse {b}/{c}/{v} needs more than \
