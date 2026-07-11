@@ -2057,10 +2057,6 @@ impl Bible {
     /// self-referential even though its gloss is unusable. `None` when no
     /// lexeme matches at all.
     fn hebrew_cons_root(&self, stem: &str) -> Option<(String, String, bool)> {
-        let cons = fold_consonants(stem);
-        if cons.is_empty() {
-            return None;
-        }
         if let Some(rows) = bdb_rows(&self.db, stem) {
             let canonical = normalize_hebrew_combining(&strip_accents(stem));
             let exact = |(word, ..): &&(String, String, String, String)| {
@@ -2075,6 +2071,10 @@ impl Bible {
             {
                 return Some((root.clone(), gloss.clone(), name_pos(pos)));
             }
+        }
+        let cons = fold_consonants(stem);
+        if cons.is_empty() {
+            return None;
         }
         self.db
             .query_row(
