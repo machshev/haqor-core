@@ -1487,23 +1487,39 @@ impl Default for Bible {
     }
 }
 
-/// Register the crate's custom SQLite scalar functions. `popcount(x)` returns the
+/// Register the crate's custom SQLite functions. `popcount(x)` returns the
 /// number of set bits in an integer (NULL → 0), used by the tutor to count how
 /// many *new* glyphs a word/verse introduces (`popcount(glyph_mask & ~known)`).
+/// `bit_or(x)` is the matching aggregate — the bitwise OR of a group (NULL
+/// rows ignored, empty group → 0) — used to fold a verse's per-word concept
+/// masks into the set of grammar rules the verse still needs.
 fn register_sql_functions(db: &Connection) -> rusqlite::Result<()> {
-    use rusqlite::functions::FunctionFlags;
-    db.create_scalar_function(
-        "popcount",
-        1,
-        FunctionFlags::SQLITE_UTF8
-            | FunctionFlags::SQLITE_DETERMINISTIC
-            | FunctionFlags::SQLITE_INNOCUOUS,
-        |ctx| {
-            Ok(ctx
-                .get::<Option<i64>>(0)?
-                .map_or(0i64, |n| (n as u64).count_ones() as i64))
-        },
-    )
+    use rusqlite::functions::{Aggregate, Context, FunctionFlags};
+    let flags = FunctionFlags::SQLITE_UTF8
+        | FunctionFlags::SQLITE_DETERMINISTIC
+        | FunctionFlags::SQLITE_INNOCUOUS;
+    db.create_scalar_function("popcount", 1, flags, |ctx| {
+        Ok(ctx
+            .get::<Option<i64>>(0)?
+            .map_or(0i64, |n| (n as u64).count_ones() as i64))
+    })?;
+
+    struct BitOr;
+    impl Aggregate<i64, i64> for BitOr {
+        fn init(&self, _: &mut Context<'_>) -> rusqlite::Result<i64> {
+            Ok(0)
+        }
+        fn step(&self, ctx: &mut Context<'_>, acc: &mut i64) -> rusqlite::Result<()> {
+            if let Some(n) = ctx.get::<Option<i64>>(0)? {
+                *acc |= n;
+            }
+            Ok(())
+        }
+        fn finalize(&self, _: &mut Context<'_>, acc: Option<i64>) -> rusqlite::Result<i64> {
+            Ok(acc.unwrap_or(0))
+        }
+    }
+    db.create_aggregate_function("bit_or", 1, flags, BitOr)
 }
 
 impl Bible {
