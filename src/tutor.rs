@@ -628,10 +628,13 @@ const ALPHABET_VOWEL_TARGET: i64 = 10;
 /// opposed to [`ALPHABET_CONSONANT_TARGET`] which gates grammar unlocking.
 const LETTER_GLYPH_TOTAL: i64 = 27;
 
-/// Every vowel-point glyph the tutor drills (ten common niqqud plus qubuts and
-/// qamats qatan) — the denominator for a "vowels known" progress fraction, as
-/// opposed to [`ALPHABET_VOWEL_TARGET`] which gates grammar unlocking.
-const VOWEL_GLYPH_TOTAL: i64 = 12;
+/// Every vowel-point glyph the tutor drills (ten common niqqud plus qubuts) —
+/// the denominator for a "vowels known" progress fraction, as opposed to
+/// [`ALPHABET_VOWEL_TARGET`] which gates grammar unlocking. Qamats qatan
+/// (U+05C7) is a proper vowel ([`is_vowel`]) but the WLC encoding writes it as
+/// plain qamats — zero corpus surfaces contain it, so counting it in the
+/// denominator left the fraction permanently stuck at 11/12.
+const VOWEL_GLYPH_TOTAL: i64 = 11;
 
 /// A word's frequency for curriculum ordering: its root's corpus occurrences —
 /// learning any form of a common root pays off across the whole family, so the
