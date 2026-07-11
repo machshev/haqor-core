@@ -2032,7 +2032,10 @@ impl Bible {
     /// otherwise card the verb's gloss. When the verb's own headword *also*
     /// matches exactly (hollow and stative roots share the noun's pointing:
     /// אוֹר "be light"/"light", אָלָה "swear"/"oath"), a non-`vb` lexeme wins
-    /// the tie — this bridge only ever resolves noun stems. `is_name` reports
+    /// the tie — this bridge only ever resolves noun stems. Among those, a
+    /// proper-name entry ([`name_pos`]) loses to real vocabulary: BDB files
+    /// the place *Gur* before גּוּר "whelp" and *Amon* before אָמוֹן
+    /// "artificer", and the name would card as "(a name)". `is_name` reports
     /// whether the
     /// *resolved* lexeme is a proper name or gentilic ([`name_pos`]) — the
     /// classification follows the entry whose gloss is served. When no glossed
@@ -2052,7 +2055,8 @@ impl Bible {
             };
             if let Some((_, root, gloss, pos)) = rows
                 .iter()
-                .find(|row| exact(row) && !row.3.starts_with("vb"))
+                .find(|row| exact(row) && !row.3.starts_with("vb") && !name_pos(&row.3))
+                .or_else(|| rows.iter().find(|row| exact(row) && !row.3.starts_with("vb")))
                 .or_else(|| rows.iter().find(exact))
                 .or_else(|| rows.first())
             {
@@ -3385,6 +3389,19 @@ mod tests {
         let info = bible.hebrew_word_info("הָאוֹר").expect("noun should parse");
         assert_eq!(info.gloss, "light");
         assert_eq!(inflected_gloss(&info), "the light");
+    }
+
+    #[test]
+    fn test_cons_bridge_demotes_name_on_exact_headword_tie() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // גּוּר "whelp" — BDB files the place-name *Gur* (n.pr.loc,
+        // "sojourning; dwelling") before the common noun with identical
+        // pointing, so the exact-headword tie-break used to promote the name
+        // and the card read "(a name)". Real vocabulary must win the tie.
+        let (_, gloss, is_name) = bible.hebrew_cons_root("גּוּר").expect("גּוּר bridges");
+        assert_eq!(gloss, "whelp; young");
+        assert!(!is_name);
     }
 
     #[test]
