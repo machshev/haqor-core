@@ -693,15 +693,16 @@ fn letter_learning_score(seen_mask_param: &str) -> String {
 }
 
 /// A verse's desirability once the alphabet is known: its rarest unknown
-/// word's curriculum frequency ([`WORD_FREQ`]) discounted by a factor of 4 for
-/// every grammar rule its unknown words still need unlocked — the normal-phase
-/// twin of [`letter_learning_score`]. Frequency stays the dominant signal (a
-/// verse of common words behind two locked rules still beats a rare-word verse
+/// word's curriculum frequency ([`WORD_FREQ`]) discounted by a factor of 4 if
+/// its unknown words still need a grammar rule unlocked — the normal-phase
+/// twin of [`letter_learning_score`]. Targeting hard-gates candidates to at
+/// most [`MAX_UNLOCKS_PER_VERSE`] missing rule, so the discount only arbitrates
+/// rule-free versus one-rule verses: frequency stays the dominant signal (a
+/// verse of common words behind one locked rule still beats a rare-word verse
 /// behind none), so the tutor unlocks grammar exactly when common vocabulary
-/// is waiting on it, while a verse needing many rules must carry very common
-/// words to justify pulling them all in at once. `?N` is the unlocked-concepts
-/// mask; the unteachable bit is excluded (such verses are filtered out
-/// wholesale in the HAVING clause, and bit 62 would swamp the shift).
+/// is waiting on it. `?N` is the unlocked-concepts mask; the unteachable bit
+/// is excluded (such verses are filtered out wholesale in the HAVING clause,
+/// and bit 62 would swamp the shift).
 fn verse_unlock_score(unlocked_param: &str) -> String {
     let missing = verse_missing_concepts(unlocked_param);
     format!(
@@ -724,6 +725,14 @@ fn verse_missing_concepts(unlocked_param: &str) -> String {
         all = crate::grammar::all_concepts_mask()
     )
 }
+
+/// How many still-locked grammar rules pinning one verse may pull in. One:
+/// grammar arrives a single rule at a time, each unlocked by (and taught
+/// with) the verse that needs it — targeting excludes verses needing more
+/// ([`Bible::next_target_verse_excluding`]), and a pin that would need more
+/// anyway (stale, from before this gate) is dropped rather than unlocked
+/// ([`Bible::unlock_verse_concepts`]).
+const MAX_UNLOCKS_PER_VERSE: u32 = 1;
 
 /// A verse's calibration difficulty: its rarest word's OT occurrence count.
 const DIFFICULTY: &str = "MIN(s.occurrences)";
@@ -1602,13 +1611,16 @@ impl Bible {
         Ok(best.map(|(k, _)| k))
     }
 
-    /// Unlock every still-locked grammar rule the pinned verse's unknown
-    /// words need, persisting each in `progress.concepts_unlocked`, and
-    /// return the widened mask. Targeting already prefers verses needing the
-    /// fewest unlocks ([`verse_unlock_score`]); once a verse is pinned, its
-    /// rules are taught rather than the verse dropped. The unteachable bit
-    /// is not a concept and never unlocks (targeting excludes such verses;
-    /// a stale pre-existing pin still drops via the stuck-target path).
+    /// Unlock the still-locked grammar rule the pinned verse's unknown words
+    /// need, persisting it in `progress.concepts_unlocked`, and return the
+    /// widened mask. Targeting only pins verses needing at most
+    /// [`MAX_UNLOCKS_PER_VERSE`] rule ([`verse_unlock_score`]'s hard gate),
+    /// so grammar arrives one rule per verse; a pin that would need more —
+    /// stale, from before that gate, or drifted while other verses were
+    /// studied — returns `None` and the caller drops it rather than dumping
+    /// several rules at once. The unteachable bit is not a concept and never
+    /// unlocks (targeting excludes such verses; a stale pre-existing pin
+    /// still drops via the stuck-target path).
     fn unlock_verse_concepts(
         &self,
         b: u8,
@@ -1616,7 +1628,7 @@ impl Bible {
         v: u8,
         unlocked: i64,
         now: i64,
-    ) -> rusqlite::Result<i64> {
+    ) -> rusqlite::Result<Option<i64>> {
         let needed: i64 = self.conn().query_row(
             &format!(
                 "SELECT bit_or(CASE WHEN done.vkey IS NULL \
@@ -1631,7 +1643,10 @@ impl Bible {
         )?;
         let missing = needed & !unlocked & crate::grammar::all_concepts_mask();
         if missing == 0 {
-            return Ok(unlocked);
+            return Ok(Some(unlocked));
+        }
+        if missing.count_ones() > MAX_UNLOCKS_PER_VERSE {
+            return Ok(None);
         }
         for concept in crate::grammar::concepts() {
             let bit = crate::grammar::concept_bit(concept.key).unwrap_or(0);
@@ -1648,7 +1663,7 @@ impl Bible {
                 params![concept.key, now],
             )?;
         }
-        Ok(unlocked | missing)
+        Ok(Some(unlocked | missing))
     }
 
     // --- host selection for vowels ------------------------------------------
@@ -2446,14 +2461,18 @@ impl Bible {
         // ([`UNTEACHABLE_MASK`]) can never be completed — no rule unlock
         // helps — so it must never be pinned in normal mode (a letter-phase
         // pin is dropped unread anyway, and its rating only counts
-        // introducible words).
+        // introducible words). Normal mode also caps how many locked rules a
+        // candidate may pull in ([`MAX_UNLOCKS_PER_VERSE`]), so grammar
+        // arrives one rule per verse.
         let unteachable_gate = if letter_learning {
             String::new()
         } else {
             format!(
                 "AND SUM(CASE WHEN done.vkey IS NULL \
                       AND (COALESCE(sm.concept_mask, 0) & {UNTEACHABLE_MASK}) != 0 \
-                      THEN 1 ELSE 0 END) = 0"
+                      THEN 1 ELSE 0 END) = 0 \
+                 AND {missing} <= {MAX_UNLOCKS_PER_VERSE}",
+                missing = verse_missing_concepts("?1")
             )
         };
         let order = if letter_learning {
@@ -3416,16 +3435,27 @@ impl Bible {
         };
         let (b, c, v) = target;
 
-        // A pinned verse is a commitment to read it: unlock every grammar
-        // rule its unknown words still need, right now — the concept cards
-        // themselves still arrive one per rule, just before the first word
-        // that exercises each ([`Self::next_grammar_card`]). Letter-phase
-        // pins stay teaching-only: grammar is deliberately locked until the
-        // alphabet is done.
+        // A pinned verse is a commitment to read it: unlock the grammar rule
+        // its unknown words still need, right now — the concept card itself
+        // still arrives just before the first word that exercises it
+        // ([`Self::next_grammar_card`]). At most one rule unlocks per verse;
+        // a pin needing several (stale, from before that cap) is dropped and
+        // re-picked instead. Letter-phase pins stay teaching-only: grammar
+        // is deliberately locked until the alphabet is done.
         let unlocked = if letter_learning {
             unlocked
         } else {
-            self.unlock_verse_concepts(b, c, v, unlocked, now)?
+            match self.unlock_verse_concepts(b, c, v, unlocked, now)? {
+                Some(u) => u,
+                None => {
+                    debug!(
+                        "next_study_item: verse {b}/{c}/{v} needs more than \
+                         {MAX_UNLOCKS_PER_VERSE} locked rule; dropping target"
+                    );
+                    self.set_meta_target(None)?;
+                    return self.next_study_item_impl(now, interleave_on_stall);
+                }
+            }
         };
 
         if let Some(item) =
