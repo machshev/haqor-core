@@ -3972,8 +3972,18 @@ impl Bible {
     /// vowel point [`decompose_glyphs`] produces across the whole non-Aramaic
     /// corpus — as already graduated. For a learner who self-reports already
     /// knowing the alphabet, so onboarding doesn't re-teach it letter by
-    /// letter. Existing progress (glyphs already introduced) is left alone.
+    /// letter. The script explanation cards (the intro deck and final forms)
+    /// are marked seen too — they explain how to read, which this learner
+    /// already can — which also lands them on the reference page. Existing
+    /// progress (glyphs already introduced) is left alone.
     pub fn seed_known_alphabet(&self, now: i64) -> rusqlite::Result<()> {
+        for key in INTRO_CONCEPTS.iter().copied().chain([FINAL_FORMS_CONCEPT]) {
+            self.conn().execute(
+                "INSERT INTO progress.concepts_seen(concept, introduced_epoch) VALUES (?1, ?2) \
+                 ON CONFLICT(concept) DO NOTHING",
+                params![key, now],
+            )?;
+        }
         let mut glyphs = std::collections::HashSet::new();
         {
             let mut stmt = self
@@ -6044,16 +6054,25 @@ mod tests {
         assert!(bible.glyph_known("א")?, "aleph should be seeded");
         assert!(bible.all_glyphs_graduated("בְּרֵאשִׁית")?);
 
-        // The first card past the intro deck is a grammar concept or the word
-        // meaning — a glyph is never taught. Advance through the intro deck
-        // and any leading grammar cards to the word.
+        // A learner who already reads Hebrew skips the how-to-read cards
+        // entirely, but they still land on the reference page.
+        for key in INTRO_CONCEPTS.iter().copied().chain([FINAL_FORMS_CONCEPT]) {
+            assert!(bible.concept_seen(key)?, "{key} should be seeded as seen");
+        }
+
+        // The first card is a grammar concept or the word meaning — neither a
+        // glyph nor a how-to-read intro is ever taught. Advance through any
+        // leading grammar cards to the word.
         let mut item = bible.next_study_item(now)?;
         for _ in 0..30 {
             match item {
                 StudyItem::NewWord(_) => return Ok(()),
-                StudyItem::ExplainGrammar(_) | StudyItem::ExplainIntro(_) => {
+                StudyItem::ExplainGrammar(_) => {
                     now += 5;
                     item = bible.next_study_item(now)?;
+                }
+                StudyItem::ExplainIntro(_) => {
+                    panic!("a seeded alphabet must never show an intro card, got {item:?}")
                 }
                 StudyItem::NewGlyph(_) | StudyItem::ReviewGlyph(_) => {
                     panic!("a seeded alphabet must never teach a glyph, got {item:?}")
