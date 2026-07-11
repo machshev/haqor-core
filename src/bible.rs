@@ -1034,31 +1034,44 @@ pub(crate) fn prefixed_name_gloss(surface: &str) -> Option<(String, String)> {
     Some((format!("{} {gloss}", senses.join(" ")), note))
 }
 
-/// The first sense of a multi-sense gloss, for a tutor card — "who; which;
-/// that" → "who", "there is not, without" → "there is not". Splits on ';' or
-/// ',' only outside parentheses, so a parenthetical qualifier survives whole
-/// ("(a name)", "Selah — a pause (in Psalms)"). The lexicon view keeps the
-/// full gloss; only the cards trim.
-pub(crate) fn leading_sense(gloss: &str) -> String {
+/// A gloss's top-level clauses: split on ';' or ',' only outside
+/// parentheses, so a parenthetical qualifier travels whole with its clause
+/// ("(a name)", "Selah — a pause (in Psalms)"). The one splitting rule
+/// behind both [`leading_sense`] and [`primary_sense`], so the card headline
+/// and the root-meaning line can't disagree on where a sense ends.
+fn sense_clauses(gloss: &str) -> Vec<&str> {
+    let mut out = Vec::new();
     let mut depth = 0u32;
+    let mut start = 0;
     for (i, c) in gloss.char_indices() {
         match c {
             '(' => depth += 1,
             ')' => depth = depth.saturating_sub(1),
             ';' | ',' if depth == 0 => {
-                let head = gloss[..i].trim();
-                if !head.is_empty() {
-                    return head.to_string();
-                }
+                out.push(&gloss[start..i]);
+                start = i + c.len_utf8();
             }
             _ => {}
         }
     }
-    gloss.trim().to_string()
+    out.push(&gloss[start..]);
+    out
+}
+
+/// The first sense of a multi-sense gloss, for a tutor card — "who; which;
+/// that" → "who", "there is not, without" → "there is not". The lexicon view
+/// keeps the full gloss; only the cards trim.
+pub(crate) fn leading_sense(gloss: &str) -> String {
+    sense_clauses(gloss)
+        .into_iter()
+        .map(str::trim)
+        .find(|c| !c.is_empty())
+        .unwrap_or_else(|| gloss.trim())
+        .to_string()
 }
 
 fn primary_sense(gloss: &str) -> String {
-    for clause in gloss.split([';', ',']) {
+    for clause in sense_clauses(gloss) {
         let c = clause.trim();
         if c.is_empty() {
             continue;
