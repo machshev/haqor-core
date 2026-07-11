@@ -1181,11 +1181,13 @@ fn let_subject(w: &HebrewWord) -> &'static str {
 }
 
 /// The English senses a pointed proclitic cluster contributes, one per
-/// attached letter in order — `וְלַ` → `["and", "to", "the"]`. An article
-/// assimilated into an inseparable preposition leaves only its vowel behind
-/// (לַ/בָּ carry the article's patach/qamats), so that vowel contributes its
-/// own "the".
-fn proclitic_words(prefix: &str) -> Vec<&'static str> {
+/// attached letter in order — `וְלַ` → `["and", "to", "the"]`. With
+/// `infer_article`, an article assimilated into an inseparable preposition
+/// leaves only its vowel behind (לַ/בָּ carry the article's patach/qamats),
+/// so that vowel contributes its own "the" — sound for noun hosts, but a
+/// pretonic patach/qamats before a pronoun or particle (לָהֶם, בָּזֶה) is
+/// not an article, so function-word callers pass `false`.
+fn proclitic_words(prefix: &str, infer_article: bool) -> Vec<&'static str> {
     let chars: Vec<char> = prefix.chars().collect();
     let mut out = Vec::new();
     for (i, &c) in chars.iter().enumerate() {
@@ -1201,7 +1203,7 @@ fn proclitic_words(prefix: &str) -> Vec<&'static str> {
         out.push(word);
         // The article's vowel under ל/ב/כ (a dagesh may sit between the
         // letter and its vowel: בַּ is bet, dagesh, patach).
-        if matches!(word, "to" | "in" | "like") {
+        if infer_article && matches!(word, "to" | "in" | "like") {
             let vowel = chars[i + 1..]
                 .iter()
                 .take_while(|&&v| (0x0591..=0x05C7).contains(&(v as u32)))
@@ -1232,11 +1234,26 @@ pub(crate) fn inflected_gloss(w: &HebrewWord) -> String {
         // proclitic cluster still contributes its senses (וַאֲשֶׁר "and who").
         // Only the leading sense composes — prefixing the whole multi-sense
         // gloss would conjoin one sense and orphan the rest ("and who;
-        // which; that").
-        let mut words = w.prefix.as_deref().map_or(Vec::new(), proclitic_words);
-        let first = leading_sense(&w.gloss);
+        // which; that"). No article is inferred from the preposition's vowel:
+        // the patach/qamats of לָהֶם/בָּזֶה is pretonic, not an assimilated
+        // article. A preposition composes only with a sense English lets it
+        // govern — a pronoun (case-shifted: "in them", not "in they") or a
+        // demonstrative/relative; anything else ("until", "if") keeps the
+        // bare gloss rather than compose gibberish ("to until").
+        let mut words = w
+            .prefix
+            .as_deref()
+            .map_or(Vec::new(), |p| proclitic_words(p, false));
+        let mut first = leading_sense(&w.gloss);
         if first.starts_with("the ") || first.starts_with("The ") {
             words.retain(|&p| p != "the");
+        }
+        if words.iter().any(|&p| matches!(p, "to" | "in" | "like" | "from")) {
+            if let Some(obj) = object_form(&first) {
+                first = obj.to_string();
+            } else if !preposition_governable(&first) {
+                return w.gloss.clone();
+            }
         }
         if words.is_empty() || first.is_empty() {
             w.gloss.clone()
@@ -1244,6 +1261,33 @@ pub(crate) fn inflected_gloss(w: &HebrewWord) -> String {
             format!("{} {first}", words.join(" "))
         }
     }
+}
+
+/// The object-case form of an English subject pronoun ("they" → "them"), for
+/// composing a proclitic preposition with a pronoun gloss. `None` when the
+/// sense isn't a subject pronoun.
+fn object_form(sense: &str) -> Option<&'static str> {
+    Some(match sense {
+        "I" => "me",
+        "we" => "us",
+        "he" => "him",
+        "she" => "her",
+        "they" => "them",
+        "you" => "you",
+        "it" => "it",
+        _ => return None,
+    })
+}
+
+/// Whether an English preposition can grammatically govern this sense —
+/// demonstratives and relatives compose ("in this", "like that"); senses that
+/// are already object pronouns ("them"), or whole phrases led by one, also
+/// read naturally.
+fn preposition_governable(sense: &str) -> bool {
+    matches!(
+        sense,
+        "this" | "that" | "these" | "those" | "who" | "whom" | "which" | "all" | "here" | "there"
+    )
 }
 
 fn inflect_verb(w: &HebrewWord, base: &str) -> String {
@@ -1256,7 +1300,7 @@ fn inflect_verb(w: &HebrewWord, base: &str) -> String {
     let and = w.vav_con
         || w.prefix
             .as_deref()
-            .is_some_and(|p| proclitic_words(p).first() == Some(&"and"));
+            .is_some_and(|p| proclitic_words(p, false).first() == Some(&"and"));
     let subj = subject_pronoun(w);
     let clause = |verb: String| {
         let mut s = String::new();
@@ -1431,7 +1475,10 @@ fn inflect_noun(w: &HebrewWord, base: &str) -> String {
     // Attached preposition / conjunction / article cluster — every letter
     // contributes its sense (וְלַ → "and to the"). A gentilic gloss already
     // leads with its article ("the Carmelite") — don't double it.
-    let mut words = w.prefix.as_deref().map_or(Vec::new(), proclitic_words);
+    let mut words = w
+        .prefix
+        .as_deref()
+        .map_or(Vec::new(), |p| proclitic_words(p, true));
     if head.starts_with("the ") || head.starts_with("The ") {
         words.retain(|&p| p != "the");
     }
@@ -3104,6 +3151,38 @@ mod tests {
             ..Default::default()
         };
         assert_eq!(inflected_gloss(&and_to_me), "and to me");
+
+        // A preposition's pretonic patach/qamats before a function word is
+        // NOT an assimilated article (לָהֵמָּה is "to them", not "to the
+        // they") — and a pronoun after a preposition shifts to object case.
+        let to_them = HebrewWord {
+            gloss: "they".to_string(),
+            prefix: Some("לָ".to_string()),
+            ..Default::default()
+        };
+        assert_eq!(inflected_gloss(&to_them), "to them");
+        // A demonstrative composes as-is (בָּזֶה "in this").
+        let in_this = HebrewWord {
+            gloss: "this; here".to_string(),
+            prefix: Some("בָּ".to_string()),
+            ..Default::default()
+        };
+        assert_eq!(inflected_gloss(&in_this), "in this");
+        // A sense a preposition can't govern keeps the bare gloss — "to
+        // until" (לָעַד) and "in if" (בָּלוּ) are worse than no composition.
+        let forever = HebrewWord {
+            gloss: "until; as far as; while".to_string(),
+            prefix: Some("לָ".to_string()),
+            ..Default::default()
+        };
+        assert_eq!(inflected_gloss(&forever), "until; as far as; while");
+        // The conjunction still composes with anything (וְעַד "and until").
+        let and_until = HebrewWord {
+            gloss: "until; as far as; while".to_string(),
+            prefix: Some("וְ".to_string()),
+            ..Default::default()
+        };
+        assert_eq!(inflected_gloss(&and_until), "and until");
     }
 
     #[test]
