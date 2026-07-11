@@ -600,7 +600,7 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// חֹדֶשׁ "month; new moon";
 /// 20 curated בְּרִית "covenant" (the bridge resolved it to BDB's
 /// *Baal-berith* n.pr entry, so the ordinary noun carded "(a name)").
-const SURFACE_META_VERSION: i64 = 20;
+const SURFACE_META_VERSION: i64 = 21;
 
 /// `concept_mask` sentinel for a surface the tutor cannot teach: no parse
 /// gloss, no curated gloss, and not a name — its card would be blank. The bit
