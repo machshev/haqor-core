@@ -605,8 +605,11 @@ const KNOWN_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_meta sm
 /// spellings the irregular kinship nouns join with (אָבִינוּ, אָחִיךְ,
 /// פִּיהֶם), so their suffix cell recovers — they gloss as "our father"
 /// instead of "father" and gate behind `suffix-possessive` instead of
-/// ranking as grammar-free beginner vocabulary.
-const SURFACE_META_VERSION: i64 = 22;
+/// ranking as grammar-free beginner vocabulary;
+/// 23 broke the noun bridge's exact-headword tie in favour of non-verb
+/// lexemes (hollow/stative verbs share the derived noun's pointing, so
+/// הָאוֹר carded "the be" from אוֹר "be; become light").
+const SURFACE_META_VERSION: i64 = 23;
 
 /// `concept_mask` sentinel for a surface the tutor cannot teach: no parse
 /// gloss, no curated gloss, and not a name — its card would be blank. The bit

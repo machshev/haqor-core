@@ -1966,7 +1966,11 @@ impl Bible {
     /// matches the stem exactly wins over group order: BDB files the verb
     /// before its derived nouns (חָדַשׁ "renew" precedes חֹדֶשׁ "month",
     /// מָלַךְ "reign" precedes מֶלֶךְ "king"), so a segolate stem would
-    /// otherwise card the verb's gloss. `is_name` reports whether the
+    /// otherwise card the verb's gloss. When the verb's own headword *also*
+    /// matches exactly (hollow and stative roots share the noun's pointing:
+    /// אוֹר "be light"/"light", אָלָה "swear"/"oath"), a non-`vb` lexeme wins
+    /// the tie — this bridge only ever resolves noun stems. `is_name` reports
+    /// whether the
     /// *resolved* lexeme is a proper name or gentilic ([`name_pos`]) — the
     /// classification follows the entry whose gloss is served. When no glossed
     /// lexeme survives, a gloss-less lexeme still names the root — as does a
@@ -1980,9 +1984,13 @@ impl Bible {
         }
         if let Some(rows) = bdb_rows(&self.db, stem) {
             let canonical = normalize_hebrew_combining(&strip_accents(stem));
+            let exact = |(word, ..): &&(String, String, String, String)| {
+                normalize_hebrew_combining(&strip_accents(word)) == canonical
+            };
             if let Some((_, root, gloss, pos)) = rows
                 .iter()
-                .find(|(word, ..)| normalize_hebrew_combining(&strip_accents(word)) == canonical)
+                .find(|row| exact(row) && !row.3.starts_with("vb"))
+                .or_else(|| rows.iter().find(exact))
                 .or_else(|| rows.first())
             {
                 return Some((root.clone(), gloss.clone(), name_pos(pos)));
@@ -3273,6 +3281,18 @@ mod tests {
     }
 
     #[test]
+    fn test_hebrew_word_info_noun_verb_headword_tie() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // הָאוֹר "the light" — the hollow verb אוֹר "be; become light" heads
+        // BDB with the exact pointing of the derived noun, so the noun bridge
+        // used to serve the verb's gloss and the card read "the be".
+        let info = bible.hebrew_word_info("הָאוֹר").expect("noun should parse");
+        assert_eq!(info.gloss, "light");
+        assert_eq!(inflected_gloss(&info), "the light");
+    }
+
+    #[test]
     fn test_hebrew_word_info_noun_homograph_curated() {
         require_data!();
         let bible = Bible::open("data").unwrap();
@@ -3401,6 +3421,23 @@ mod tests {
         // A pointing that matches no headword still bridges via group order.
         let (root, _, _) = bible.hebrew_cons_root("זהב").expect("bare cons bridges");
         assert_eq!(root, "זהב");
+    }
+
+    #[test]
+    fn test_cons_bridge_prefers_noun_on_exact_headword_tie() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // Hollow/stative roots share the derived noun's pointing, so BOTH the
+        // verb and the noun headwords match the stem exactly and the verb wins
+        // the tie by lexicon order: הָאוֹר carded "the be" (אוֹר "be; become
+        // light" over "light"). The noun bridge resolves noun stems, so a
+        // non-verb lexeme must win the exact-match tie.
+        let (root, gloss, _) = bible.hebrew_cons_root("אוֹר").expect("אוֹר bridges");
+        assert_eq!(root, "אור");
+        assert!(gloss.starts_with("light"), "got {gloss:?}");
+        // Same shape on a stative: אָלָה heads both "swear; curse" and "oath".
+        let (_, gloss, _) = bible.hebrew_cons_root("אָלָה").expect("אָלָה bridges");
+        assert!(gloss.starts_with("oath"), "got {gloss:?}");
     }
 
     #[test]
