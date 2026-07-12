@@ -7,9 +7,9 @@ Rust source. The file has three arrays:
   surface when the imported BDB data is absent or chooses the wrong homograph.
 - `word_glosses` changes the learner-facing gloss. `note` is optional teaching
   text and `is_name` optionally marks a proper name.
-- `primary_analyses` pins one of `hebrew.db`'s verb analyses as the primary
-  reading for a surface. Use the browser editor to avoid transcribing its
-  morphology fields by hand.
+- `primary_analyses` pins one of `hebrew.db`'s verb or noun analyses as the
+  primary reading for a surface. Use the browser editor to avoid transcribing
+  its morphology fields by hand.
 
 For example:
 
@@ -61,7 +61,7 @@ edited directly. Use `--lexicon PATH` when browsing a database elsewhere.
 
 The **Ambiguous analyses** tab shows the 500 highest-frequency ambiguous
 surfaces from `data/hebrew.db`. Choosing a non-default reading creates a
-regeneration-safe `primary_analyses` override; choosing the current first row
-again removes it. Rebuild `lexicon.db` after saving. The alternatives remain in
-`hebrew.db`; only the primary reading used by the tutor changes. Use
-`--hebrew PATH` to review another generated database.
+regeneration-safe `primary_analyses` override; **Automatic selection** removes
+it. Verb and noun candidates are both shown. Rebuild `lexicon.db` after saving.
+The alternatives remain in `hebrew.db`; only the primary reading used by the
+tutor changes. Use `--hebrew PATH` to review another generated database.
