@@ -344,6 +344,16 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "1cs",
     },
     IrregularVerb {
+        // Qal imperfect 3ms of בחר with conjunction (וְיִבְחָר, 1 Sam 2:28;
+        // 1 Chr 28:4; Eccl 9:4). The a-theme is not generated for this root,
+        // leaving the surface to collide with the proper name יִבְחָר.
+        surface: "וְיִבְחָר",
+        root: "בחר",
+        binyan: "Qal",
+        form: "Imperfect",
+        pgn: "3ms",
+    },
+    IrregularVerb {
         // Geminate Qal imperfect 1cs of תמם with a tsere-yod preformative
         // (אֵיתָם, Hos 5:9 etc.); not produced by the geminate builder.
         surface: "אֵיתָם",

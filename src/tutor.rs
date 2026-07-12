@@ -4654,6 +4654,32 @@ mod tests {
         Ok(())
     }
 
+    #[test]
+    fn conjunctive_imperfect_cards_and_teaches_its_form() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        let surface = "וְיִבְחָר";
+        let info = bible
+            .hebrew_word_info(surface)
+            .expect("conjunctive imperfect has a verb analysis");
+        assert_eq!(info.tense.as_deref(), Some("Imperfect"));
+        assert_eq!(crate::bible::inflected_gloss(&info), "and he will choose");
+        assert!(crate::grammar::concepts_for(&info).contains(&"imperfect"));
+
+        let card = bible.word_card(surface)?.expect("surface has a word card");
+        assert_eq!(card.gloss, "and he will choose");
+        assert_eq!(card.root_gloss, "choose");
+        Ok(())
+    }
+
     /// A segolate noun cards its own lexeme, not the verb BDB files first in
     /// the consonant group: מֶלֶךְ is "king", not "possess, own exclusively";
     /// חֹדֶשׁ is the curated "month", not "renew" (nor BDB's etymological
