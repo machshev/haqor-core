@@ -147,6 +147,14 @@ fn respond(stream: &mut TcpStream, status: u16, content_type: &str, body: &str) 
 mod tests {
     use super::*;
 
+    #[test]
+    fn editor_exposes_structured_overlay_controls() {
+        assert!(EDITOR.contains("Add lexicon entry"));
+        assert!(EDITOR.contains("Add word gloss"));
+        assert!(EDITOR.contains("Proper name"));
+        assert!(!EDITOR.contains("Lexicon overlay JSON"));
+    }
+
     fn request(path: &Path, request: String) -> String {
         let listener = TcpListener::bind("127.0.0.1:0").unwrap();
         let address = listener.local_addr().unwrap();
