@@ -707,17 +707,19 @@ fn letter_learning_score(seen_mask_param: &str) -> String {
 }
 
 /// A verse's desirability once the alphabet is known: its rarest unknown
-/// word's curriculum frequency ([`WORD_FREQ`]) discounted by a factor of 4 if
-/// its unknown words still need a grammar rule unlocked — the normal-phase
-/// twin of [`letter_learning_score`]. `?N` is the unlocked-concepts mask; the unteachable bit
-/// is excluded (such verses are filtered out wholesale in the HAVING clause,
-/// and bit 62 would swamp the shift).
+/// non-name word's curriculum frequency ([`WORD_FREQ`]) discounted by a factor
+/// of 4 if its unknown words still need a grammar rule unlocked — the
+/// normal-phase twin of [`letter_learning_score`]. `?N` is the
+/// unlocked-concepts mask; the unteachable bit is excluded (such verses are
+/// filtered out wholesale in the HAVING clause, and bit 62 would swamp the
+/// shift).
 fn verse_unlock_score(unlocked_param: &str) -> String {
     let missing = verse_missing_concepts(unlocked_param);
     format!(
         "(CASE WHEN COUNT(DISTINCT CASE WHEN done.vkey IS NULL AND {NOT_NAME} \
                         THEN vw.surface_id END) = 0 THEN NULL \
-          ELSE MIN(CASE WHEN done.vkey IS NULL THEN {WORD_FREQ} END) \
+          ELSE MIN(CASE WHEN done.vkey IS NULL AND {NOT_NAME} \
+                        THEN {WORD_FREQ} END) \
                >> (2 * {missing}) END)"
     )
 }
@@ -2482,13 +2484,13 @@ impl Bible {
                  vw.book, vw.chapter, vw.verse"
             )
         } else {
-            // Key 1 rates a verse by its rarest unknown word ([`WORD_FREQ`]:
-            // root frequency, but a name only ever counts its own surface —
-            // a rare name is a real drag on completing the verse, keeping
-            // one-off genealogies ranked low), discounted 4× per grammar rule
-            // the verse still needs ([`verse_unlock_score`]) so the cheapest
-            // unlocks win when the vocabulary is comparable. A verse with
-            // *no* unknown real word keys NULL and sorts last, however famous
+            // Key 1 rates a verse by its rarest unknown non-name word
+            // ([`WORD_FREQ`]), discounted 4× per grammar rule the verse still
+            // needs ([`verse_unlock_score`]) so the cheapest unlocks win when
+            // the vocabulary is comparable. Unknown names do not lower that
+            // vocabulary floor; instead, key 3 explicitly prefers the verse
+            // with fewer names before considering root/form complexity. A
+            // verse with *no* unknown real word keys NULL and sorts last, however famous
             // its names: it teaches nothing, so it mustn't outrank verses
             // that do (יִשְׂרָאֵל's 2266 occurrences used to make a name-list
             // verse look like prime material). Still targetable, so name-only
@@ -2498,6 +2500,8 @@ impl Bible {
             format!(
                 "{score} DESC, \
              {missing} ASC, \
+             COUNT(DISTINCT CASE WHEN done.vkey IS NULL AND NOT ({NOT_NAME}) \
+                                  THEN vw.surface_id END) ASC, \
              COUNT(DISTINCT CASE WHEN done.vkey IS NULL AND kr.root IS NULL \
                                   AND sm.root <> '' THEN sm.root END) ASC, \
              MIN(CASE WHEN done.vkey IS NULL THEN COALESCE(sm.form_tier, 0) END) ASC, \
@@ -4240,6 +4244,49 @@ mod tests {
             "early vocabulary should be mostly root-bearing content words, \
              got only {rooted}/12 (a genealogy-of-proper-names regression)"
         );
+        Ok(())
+    }
+
+    /// A rare name in an otherwise approachable verse must not become the
+    /// verse's vocabulary floor. Names are completion overhead, ranked by the
+    /// separate name-count key; the primary score measures useful vocabulary.
+    #[test]
+    fn verse_unlock_score_ignores_name_frequency() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+        bible.ensure_surface_meta()?;
+
+        let score = verse_unlock_score("?1");
+        let (actual, non_name_floor, name_floor): (i64, i64, i64) = bible.conn().query_row(
+            &format!(
+                "SELECT {score},
+                        MIN(CASE WHEN {NOT_NAME} THEN {WORD_FREQ} END),
+                        MIN(CASE WHEN NOT ({NOT_NAME}) THEN {WORD_FREQ} END)
+                 FROM hebrewdb.verse_word vw
+                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+                 LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+                 LEFT JOIN hebrewdb.roots r ON r.root = sm.root
+                 LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
+                 GROUP BY vw.book, vw.chapter, vw.verse
+                 HAVING COUNT(CASE WHEN {NOT_NAME} THEN 1 END) > 0
+                    AND COUNT(CASE WHEN NOT ({NOT_NAME}) THEN 1 END) > 0
+                    AND MIN(CASE WHEN NOT ({NOT_NAME}) THEN {WORD_FREQ} END)
+                        < MIN(CASE WHEN {NOT_NAME} THEN {WORD_FREQ} END)
+                 LIMIT 1"
+            ),
+            params![crate::grammar::all_concepts_mask()],
+            |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+        )?;
+
+        assert!(name_floor < non_name_floor, "fixture must distinguish the scores");
+        assert_eq!(actual, non_name_floor);
         Ok(())
     }
 
