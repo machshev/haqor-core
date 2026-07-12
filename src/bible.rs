@@ -324,7 +324,7 @@ fn decode_suffix(person: i64, gender: i64, number: i64) -> Option<String> {
 /// Decode a verb PGN tag (e.g. `3ms`, `2fp`, empty for infinitives) into the
 /// person, gender and number chip labels. Each component is independent so
 /// participles (`ms`, no person) and infinitives (empty) decode cleanly.
-fn decode_pgn(pgn: &str) -> (Option<String>, Option<String>, Option<String>) {
+pub(crate) fn decode_pgn(pgn: &str) -> (Option<String>, Option<String>, Option<String>) {
     let mut person = None;
     let mut gender = None;
     let mut number = None;
@@ -348,7 +348,7 @@ fn decode_pgn(pgn: &str) -> (Option<String>, Option<String>, Option<String>) {
 /// Split a noun label (e.g. `Singular Absolute`, `Plural Construct`,
 /// `Irregular (God)`) into a number and a state. Irregular/atypical labels with
 /// no leading number word are passed through whole as the state.
-fn decode_noun_label(label: &str) -> (Option<String>, Option<String>) {
+pub(crate) fn decode_noun_label(label: &str) -> (Option<String>, Option<String>) {
     if let Some((num, rest)) = label.split_once(' ')
         && matches!(num, "Singular" | "Plural" | "Dual")
     {
