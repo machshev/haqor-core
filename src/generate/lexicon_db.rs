@@ -37,6 +37,44 @@ use serde_json::{Map, Value, json};
 
 use crate::morphology::{Gizra, NounStem, Root, hebrew};
 
+fn load_overlays(db: &mut Connection, path: &Path) -> Result<usize> {
+    let overlay = crate::lexicon_overlay::load(path)?;
+    db.execute_batch(
+        "CREATE TABLE lexicon_overrides(
+            surface TEXT PRIMARY KEY, root TEXT NOT NULL, gloss TEXT NOT NULL);
+         CREATE TABLE word_glosses(
+            surface TEXT PRIMARY KEY, gloss TEXT NOT NULL, note TEXT, is_name INTEGER NOT NULL);",
+    )?;
+    let tx = db.transaction()?;
+    let mut total = 0;
+    {
+        let mut lex =
+            tx.prepare("INSERT INTO lexicon_overrides(surface, root, gloss) VALUES (?1, ?2, ?3)")?;
+        for row in overlay["lexicon_entries"].as_array().unwrap() {
+            lex.execute((
+                row["surface"].as_str().unwrap(),
+                row["root"].as_str().unwrap_or(""),
+                row["gloss"].as_str().unwrap(),
+            ))?;
+            total += 1;
+        }
+        let mut words = tx.prepare(
+            "INSERT INTO word_glosses(surface, gloss, note, is_name) VALUES (?1, ?2, ?3, ?4)",
+        )?;
+        for row in overlay["word_glosses"].as_array().unwrap() {
+            words.execute((
+                row["surface"].as_str().unwrap(),
+                row["gloss"].as_str().unwrap_or(""),
+                row.get("note").and_then(Value::as_str),
+                i64::from(row.get("is_name").and_then(Value::as_bool).unwrap_or(false)),
+            ))?;
+            total += 1;
+        }
+    }
+    tx.commit()?;
+    Ok(total)
+}
+
 /// Map a BDB scripture-reference book code (the `r="Lev.19.28"` attribute) to
 /// the full English book name the app's BDB cross-reference handler expects
 /// (`Genesis`, `I Samuel`, `Song of Songs`, …). Covers the 39 OT books plus a
@@ -1353,7 +1391,11 @@ pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
     let roots = load_roots(&mut db, &dir.join("LexicalIndex.xml"))?;
     info!("  {roots} rows -> roots");
 
-    let total = strongs + bdb + index + roots;
+    let overlay_path = Path::new(env!("CARGO_MANIFEST_DIR")).join("data/lexicon_overrides.json");
+    let overlays = load_overlays(&mut db, &overlay_path)?;
+    info!("  {overlays} rows -> manual lexical overlays");
+
+    let total = strongs + bdb + index + roots + overlays;
     info!("Wrote {total} rows to {}", output.display());
     Ok(total)
 }

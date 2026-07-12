@@ -547,115 +547,14 @@ fn strip_accents(word: &str) -> String {
         .collect()
 }
 
-/// Curated `(surface, root, gloss)` for high-frequency closed-class words whose
-/// consonant skeleton collides with an unrelated lexeme, so the BDB lookups in
-/// [`lexicon_fallback`] would otherwise bridge them to the wrong sense — כִּי
-/// "that/because" shares כ-י with the verb כוה "burn", אֲשֶׁר "who/which" with
-/// אשׁר "go straight", אֶת (object marker) with the pronoun "thou", אִם "if"
-/// with אֵם "mother". These are among the most frequent words in the OT, so a
-/// wrong gloss is conspicuous; consulting this table first pins the
-/// function-word sense. Keyed by accent-stripped pointed form; root is left
-/// empty for the bare particles (as their BDB headwords are).
-const CURATED_GLOSSES: &[(&str, &str, &str)] = &[
-    ("אֶת", "", "mark of the accusative; with"),
-    ("אֲשֶׁר", "", "who; which; that"),
-    ("כִּי", "", "that; because; for; when"),
-    ("אִם", "", "if; whether"),
-    ("אַל", "", "not; do not"),
-    ("אֵין", "", "there is not; nothing; without"),
-    ("לָהֶם", "", "to them; for them"),
-    ("לוֹ", "", "to him; for him"),
-    ("עַד", "", "until; as far as; while"),
-    ("לִפְנֵי", "פנה", "before; in the presence of"),
-    ("כֵּן", "", "so; thus"),
-    ("סוּס", "סוס", "horse"),
-    // Plural/dual-tantum nouns whose BDB consonant group is unreachable from
-    // the folded surface: BDB files the articles under the shortened skeleton
-    // (מַיִם under מי "waters", שָׁמַיִם under שמי, root שמה) or keeps only a
-    // cross-reference stub at the full skeleton (פנימ "see פנה"), so the
-    // pointing-blind fallback cannot bridge them. These also carry junk verb
-    // readings (מַיִם as a Qal jussive of יממ), which the curated noun
-    // demotes — see `hebrew_word_by_surface_id`.
-    ("מַיִם", "", "water; waters"),
-    ("שָׁמַיִם", "שמה", "heavens; sky"),
-    ("פָּנִים", "פנה", "face; faces"),
-    // Irregular-noun lemmas the pointing-blind consonant fallback bridges to
-    // the wrong homograph: שֵׁם lands on שָׁם "there", אָב on אֵב "freshness",
-    // אֵם on BDB's mislabelled אִם "if" row, בַּיִת on בֵּין "between",
-    // רֵעַ on רוּעַ "shouting", אִישׁ on the root-entry "be strong". Every
-    // inflected form sharing the stem (שְׁמוֹ, אֲבֹתָם, בֵּיתוֹ, רֵעֵהוּ,
-    // אֲנָשִׁים) resolves through these.
-    ("שֵׁם", "", "name"),
-    // BDB's sense order is etymological, so even the exact-headword match
-    // leads with a sense a learner never meets: חֹדֶשׁ opens "newness"
-    // before "new moon; month".
-    ("חֹדֶשׁ", "חדש", "month; new moon"),
-    ("אָב", "אבה", "father"),
-    ("אֵם", "אממ", "mother"),
-    ("בַּיִת", "בית", "house"),
-    ("רֵעַ", "רעה", "friend; companion; fellow"),
-    ("אִישׁ", "איש", "man"),
-    // Suffixed prepositions and pronouns whose BDB consonant group holds only
-    // a cross-reference stub (or an unrelated lexeme), so the pointing-blind
-    // fallback cannot reach a usable sense: אֵלַי collides with אֻלַי "see
-    // אוּלַי", הֲלֹא with הָלָא "removed far off", שָׁמָּה with שַׁמָּה
-    // "waste". Both regular and pausal pointings are listed where both occur.
-    ("אֵלַי", "", "to me; unto me"),
-    ("אֵלָי", "", "to me; unto me"),
-    ("מִמֶּנִּי", "", "from me"),
-    ("עִמָּדִי", "", "with me"),
-    ("לָמוֹ", "", "to them (poetic)"),
-    ("הוּא", "", "he; it"),
-    ("הַהוּא", "", "that (m.)"),
-    ("הִיא", "", "she; it"),
-    ("הִוא", "", "she; it (ketiv of הִיא)"),
-    ("הַהִיא", "", "that (f.)"),
-    ("זֹאת", "", "this (f.)"),
-    ("זֹּאת", "", "this (f.)"),
-    ("אֲנַחְנוּ", "", "we"),
-    ("לְמַעַן", "", "for the sake of; in order that"),
-    ("לָכֵן", "", "therefore"),
-    ("שָׁמָּה", "", "there; to there"),
-    // BDB reaches these only through a homograph: אוּלַי "perhaps" collides
-    // with the river Ulai, עֲלֵי (poetic עַל) with an "Eli" cross-reference,
-    // אֵי "where?" with אִי "coast".
-    ("אוּלַי", "", "perhaps; peradventure"),
-    ("עֲלֵי", "", "upon; over (poetic form of עַל)"),
-    ("אֵי", "", "where?"),
-    ("הֲלֹא", "", "is it not?; surely"),
-    ("יַעַן", "", "because; on account of"),
-    ("סֶלָה", "", "Selah — a pause (in Psalms)"),
-    ("חִנָּם", "", "for nothing; without cause"),
-    ("שְׁתֵּים", "", "two (f.)"),
-    ("פִּתְאֹם", "", "suddenly"),
-    // לְ + suffix spellings BDB only records as the stub לְכָה "see הָלַךְ";
-    // the doubled (post-maqqef) spellings are separate keys because the
-    // canonicalisation keeps dagesh.
-    ("לְךָ", "", "to you; for you (m.)"),
-    ("לְּךָ", "", "to you; for you (m.)"),
-    ("לָךְ", "", "to you; for you (f.)"),
-    ("לָּךְ", "", "to you; for you (f.)"),
-    ("לָהּ", "", "to her; for her"),
-    ("לָּהּ", "", "to her; for her"),
-    ("לָמָּה", "", "why?"),
-    ("לָמָה", "", "why?"),
-    ("לִקְרַאת", "קרא", "to meet; toward"),
-    ("לְבַדִּי", "בדד", "by myself; alone"),
-    // Proper names whose spelling only appears in BDB as a cross-reference to
-    // the fuller spelling (a different consonant group, so unreachable).
-    ("יְהוֹשֻׁעַ", "", "Joshua"),
-    ("אַבְשָׁלוֹם", "", "Absalom"),
-    ("יְחִזְקִיָּהוּ", "", "Hezekiah"),
-];
-
 /// Curated `(root, gloss)` for a surface, ignoring cantillation and combining
 /// order — the override consulted ahead of the BDB lookups (see
-/// [`CURATED_GLOSSES`]).
+/// the checked-in lexical overlay).
 fn curated_gloss(surface: &str) -> Option<(String, String)> {
     let canonical = normalize_hebrew_combining(&strip_accents(surface));
-    CURATED_GLOSSES.iter().find_map(|(key, root, gloss)| {
-        (normalize_hebrew_combining(&strip_accents(key)) == canonical)
-            .then(|| (root.to_string(), gloss.to_string()))
+    crate::lexicon_overlay::lexicon_entries().find_map(|entry| {
+        (normalize_hebrew_combining(&strip_accents(entry.surface)) == canonical)
+            .then(|| (entry.root.to_string(), entry.gloss.to_string()))
     })
 }
 
@@ -1205,12 +1104,12 @@ fn proclitic_words(prefix: &str, infer_article: bool) -> Vec<&'static str> {
     let mut out = Vec::new();
     for (i, &c) in chars.iter().enumerate() {
         let word = match c {
-            '\u{05D5}' => "and",                // vav
-            '\u{05DC}' => "to",                 // lamed
-            '\u{05D1}' => "in",                 // bet
-            '\u{05DB}' | '\u{05DA}' => "like",  // kaf
-            '\u{05DE}' | '\u{05DD}' => "from",  // mem (final form when peeled)
-            '\u{05D4}' => "the",                // he (article)
+            '\u{05D5}' => "and",               // vav
+            '\u{05DC}' => "to",                // lamed
+            '\u{05D1}' => "in",                // bet
+            '\u{05DB}' | '\u{05DA}' => "like", // kaf
+            '\u{05DE}' | '\u{05DD}' => "from", // mem (final form when peeled)
+            '\u{05D4}' => "the",               // he (article)
             _ => continue,
         };
         out.push(word);
@@ -1261,7 +1160,10 @@ pub(crate) fn inflected_gloss(w: &HebrewWord) -> String {
         if first.starts_with("the ") || first.starts_with("The ") {
             words.retain(|&p| p != "the");
         }
-        if words.iter().any(|&p| matches!(p, "to" | "in" | "like" | "from")) {
+        if words
+            .iter()
+            .any(|&p| matches!(p, "to" | "in" | "like" | "from"))
+        {
             if let Some(obj) = object_form(&first) {
                 first = obj.to_string();
             } else if !preposition_governable(&first) {
@@ -1899,29 +1801,38 @@ impl Bible {
                     .as_deref()
                     .is_some_and(|s| s.starts_with("Irregular (") || s.starts_with("Noun ("));
             let stem_cons = fold_consonants(&n.stem);
-            let inflected = fold_consonants(&norm)
-                != format!("{}{stem_cons}", fold_consonants(&n.prefix));
+            let inflected =
+                fold_consonants(&norm) != format!("{}{stem_cons}", fold_consonants(&n.prefix));
             if opaque && inflected {
                 // Longest pronominal ending whose remainder still holds every
                 // stem consonant — without the anchor, שְׁמוֹ would split at
                 // the poetic 3mp ־מוֹ instead of שֵׁם + ־וֹ. A remainder
                 // running past the stem is a plural stem (אֲבֹתָם "their
                 // fathers", חַיֶּיךָ "your life"), so the number follows.
-                let splits: Vec<(&str, String)> = crate::pronoun_suffix::pronoun_suffix_splits(&norm)
-                    .into_iter()
-                    .map(|sp| (sp.key, fold_consonants(&sp.stem)))
-                    .collect();
+                let splits: Vec<(&str, String)> =
+                    crate::pronoun_suffix::pronoun_suffix_splits(&norm)
+                        .into_iter()
+                        .map(|sp| (sp.key, fold_consonants(&sp.stem)))
+                        .collect();
                 // A feminine stem trades its final ה for ת before a suffix
                 // (נְבֵלָה → נִבְלָתוֹ), and פֶּה drops its ה outright
                 // (פִּיו, פִּיהֶם bind on פִּי), so anchor on those shapes too.
                 let fem_cons = stem_cons
                     .strip_suffix('\u{05D4}')
                     .map(|s| format!("{s}\u{05EA}"));
+                let fem_plural_cons = stem_cons
+                    .strip_suffix('\u{05D4}')
+                    .map(|s| format!("{s}\u{05D5}\u{05EA}"));
                 let he_dropped = stem_cons.strip_suffix('\u{05D4}').filter(|s| !s.is_empty());
                 let anchored = |rest: &str| {
                     rest.ends_with(&stem_cons)
                         || rest.starts_with(&stem_cons)
-                        || fem_cons.as_deref().is_some_and(|f| rest.ends_with(f))
+                        || fem_cons
+                            .as_deref()
+                            .is_some_and(|f| rest.ends_with(f) || rest.starts_with(f))
+                        || fem_plural_cons
+                            .as_deref()
+                            .is_some_and(|f| rest.ends_with(f) || rest.starts_with(f))
                         || he_dropped.is_some_and(|d| rest.ends_with(d))
                 };
                 let split = splits
@@ -1970,7 +1881,7 @@ impl Bible {
         // db) just yields `None`, the previous behaviour.
         //
         // A curated override wins over the baked bridge row: the build-time
-        // bridge consults [`CURATED_GLOSSES`] too, but entries added since the
+        // bridge consults the lexical overlay too, but entries added since the
         // shipped hebrew.db was generated would otherwise be shadowed by the
         // stale row (אוּלַי stayed bridged to the river Ulai), and surfaces
         // with no row at all (עֲלֵי) would return no word info despite being
@@ -2065,7 +1976,10 @@ impl Bible {
             if let Some((_, root, gloss, pos)) = rows
                 .iter()
                 .find(|row| exact(row) && !row.3.starts_with("vb") && !name_pos(&row.3))
-                .or_else(|| rows.iter().find(|row| exact(row) && !row.3.starts_with("vb")))
+                .or_else(|| {
+                    rows.iter()
+                        .find(|row| exact(row) && !row.3.starts_with("vb"))
+                })
                 .or_else(|| rows.iter().find(exact))
                 .or_else(|| rows.first())
             {
@@ -2934,9 +2848,23 @@ mod tests {
         );
         assert_eq!(inflected_gloss(&w), "our father");
         assert!(
-            crate::grammar::concepts_for_surface("אָבִינוּ", Some(&w))
-                .contains(&"suffix-possessive"),
+            crate::grammar::concepts_for_surface("אָבִינוּ", Some(&w)).contains(&"suffix-possessive"),
             "אָבִינוּ should gate behind suffix-possessive"
+        );
+        // A feminine singular lemma replaces final ה with ת, then a plural
+        // stem can continue beyond it before taking the possessor suffix.
+        let w = bible.hebrew_word_info("עֲלִילוֹתָיו").unwrap();
+        assert!(
+            w.state.as_deref().unwrap_or("").contains("+ 3ms"),
+            "עֲלִילוֹתָיו (his deeds) should carry a 3ms suffix cell, got {:?}",
+            w.state
+        );
+        assert_eq!(w.number.as_deref(), Some("Plural"));
+        assert!(inflected_gloss(&w).starts_with("his "));
+        assert!(
+            crate::grammar::concepts_for_surface("עֲלִילוֹתָיו", Some(&w))
+                .contains(&"suffix-possessive"),
+            "עֲלִילוֹתָיו should gate behind suffix-possessive"
         );
         let w = bible.hebrew_word_info("אָבִיהָ").unwrap();
         assert!(

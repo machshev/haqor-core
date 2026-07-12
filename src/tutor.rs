@@ -652,7 +652,9 @@ const LEXICAL_BASE_READY: &str =
 /// its bare form has been introduced.
 /// 28 classifies the frozen לִקְרַאת family as verbal for Qal-first
 /// curriculum ordering while retaining its lexicalized gloss.
-const SURFACE_META_VERSION: i64 = 28;
+/// 29 recovers feminine-plural possessive cells such as עֲלִילוֹתָיו, so they
+/// gate behind possessive-suffix grammar and rank as complex noun forms.
+const SURFACE_META_VERSION: i64 = 29;
 
 /// `concept_mask` sentinel for a surface the tutor cannot teach: no parse
 /// gloss, no curated gloss, and not a name — its card would be blank. The bit
@@ -2757,6 +2759,11 @@ impl Bible {
              GROUP BY vw.book, vw.chapter, vw.verse
              HAVING SUM(CASE WHEN s.language = 'aramaic' THEN 1 ELSE 0 END) = 0
                 AND COUNT(DISTINCT CASE WHEN {intro} THEN vw.surface_id END) >= 1
+                AND (COUNT(DISTINCT CASE WHEN {intro} AND {NOT_NAME}
+                       THEN vw.surface_id END) >= 1
+                     OR SUM(CASE WHEN done.vkey IS NULL
+                          AND (COALESCE(sm.concept_mask, 0) & ~?1) != 0
+                          THEN 1 ELSE 0 END) = 0)
                 {unteachable_gate}
              ORDER BY {order}
              LIMIT 1"
@@ -5470,6 +5477,44 @@ mod tests {
         let second = bible.unlocked_concepts(&s, now)?;
         assert_eq!(second.count_ones(), 2);
         assert_eq!(second & first, first, "unlocked set only grows");
+        Ok(())
+    }
+
+    #[test]
+    fn target_does_not_pin_a_locked_verse_for_its_name_alone() -> rusqlite::Result<()> {
+        let Some(bible) = open_with_progress() else {
+            return Ok(());
+        };
+        let now = 1_700_000_000;
+        bible.seed_known_alphabet(now)?;
+        bible.ensure_surface_meta()?;
+        bible.conn().execute_batch(
+            "INSERT INTO progress.concepts_unlocked(concept, unlocked_epoch)
+                 VALUES ('conj-ve', 0);
+             INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days,
+                    due_epoch, reps, lapses, introduced_epoch, last_grade)
+                 SELECT text, surface_id, 2.5, 1, 0, 3, 0, 0, 3
+                 FROM hebrewdb.surface WHERE text IN ('כִּי', 'לֹא', 'וְלֹא');",
+        )?;
+        bible.ensure_readability_progress()?;
+        bible.set_tutor_settings(&TutorSettings {
+            vocab_priority: 25,
+            grammar_priority: 25,
+            verse_priority: 75,
+            ..TutorSettings::default()
+        })?;
+        let settings = bible.tutor_settings()?;
+        let unlocked = bible.unlocked_concepts(&settings, now)?;
+
+        // Numbers 21:31 has Israel (a name with no locked grammar) alongside
+        // ordinary words behind locked rules. It used to win the target query
+        // for the name, then `next_introduction` correctly refused to teach the
+        // name from an incompletable verse. Dropping and reselecting that same
+        // pin recursed forever.
+        assert_ne!(
+            bible.next_target_verse(unlocked, 0, false)?,
+            Some((4, 21, 31))
+        );
         Ok(())
     }
 
