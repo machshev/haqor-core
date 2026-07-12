@@ -50,6 +50,12 @@ enum Commands {
         /// Overlay JSON file to edit.
         #[arg(long, default_value = "data/lexicon_overrides.json")]
         overlay: PathBuf,
+        /// Generated lexicon database whose imported glosses can be browsed.
+        #[arg(long, default_value = "data/lexicon.db")]
+        lexicon: PathBuf,
+        /// Generated Hebrew database whose ambiguous analyses can be reviewed.
+        #[arg(long, default_value = "data/hebrew.db")]
+        hebrew: PathBuf,
     },
     // ---- Paradigm generators (lemma → inflected forms) ----
     /// Generate the verb paradigm of a 3-letter Hebrew root. (Alias: morph)
@@ -319,8 +325,13 @@ fn main() -> Result<()> {
         Commands::ParseAdjective { word, lexicon_db } => {
             print_parse_pos(&word, &lexicon_db, true)?;
         }
-        Commands::Admin { bind, overlay } => {
-            haqor_core::overlay_admin::serve(bind, overlay)?;
+        Commands::Admin {
+            bind,
+            overlay,
+            lexicon,
+            hebrew,
+        } => {
+            haqor_core::overlay_admin::serve(bind, overlay, lexicon, hebrew)?;
         }
         Commands::Db { command } => match command {
             DbCommands::GenBible { src_texts, output } => {

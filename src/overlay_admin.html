@@ -27,6 +27,12 @@
     .rows { display:grid; gap:.75rem; }
     .row { display:grid; grid-template-columns:minmax(10rem,1fr) minmax(9rem,1fr) minmax(15rem,2fr) auto; gap:.75rem; align-items:end; padding:.9rem; border:1px solid #394c43; border-radius:.55rem; background:#1d2924; }
     .row.word { grid-template-columns:minmax(10rem,1fr) minmax(15rem,1.5fr) minmax(15rem,2fr) auto; }
+    .row.imported { grid-template-columns:minmax(7rem,.7fr) minmax(10rem,1fr) minmax(9rem,1fr) minmax(15rem,2fr) auto; }
+    .ambiguity { padding:1rem; border:1px solid #394c43; border-radius:.55rem; background:#1d2924; }
+    .ambiguity h2 { margin:0 0 .7rem; font-size:1.3rem; } .ambiguity h2 small { color:var(--muted); font-size:.8rem; font-weight:400; }
+    .choice { display:flex; gap:.7rem; align-items:center; padding:.55rem; border-top:1px solid #34443d; cursor:pointer; }
+    .choice input { width:auto; } .choice code { color:#dcebe3; white-space:normal; }
+    .source { color:var(--muted); align-self:center; }
     .row .name-field { display:flex; gap:.5rem; align-items:center; min-height:2.6rem; white-space:nowrap; }
     .row .name-field input { width:auto; }
     .empty { padding:3rem; text-align:center; color:var(--muted); border:1px dashed var(--line); border-radius:.5rem; }
@@ -43,15 +49,19 @@
     <nav aria-label="Overlay sections">
       <button class="tab active" data-section="lexicon_entries">Lexicon entries <span id="lexicon-count"></span></button>
       <button class="tab" data-section="word_glosses">Word glosses <span id="word-count"></span></button>
+      <button class="tab" data-section="imported">Imported glosses <span id="imported-count"></span></button>
+      <button class="tab" data-section="primary_analyses">Ambiguous analyses <span id="ambiguous-count"></span></button>
     </nav>
     <div class="toolbar"><input id="search" type="search" placeholder="Search surfaces, roots, glosses, or notes…"><button class="secondary" id="add">Add lexicon entry</button></div>
     <section id="lexicon_entries" class="rows" aria-label="Lexicon entries"></section>
     <section id="word_glosses" class="rows" aria-label="Word glosses" hidden></section>
+    <section id="imported" class="rows" aria-label="Imported lexicon glosses" hidden></section>
+    <section id="primary_analyses" class="rows" aria-label="Ambiguous Hebrew analyses" hidden></section>
     <p class="hint">Saving validates every field and atomically replaces the overlay. Then run <code>cargo run -- db gen-lexicon</code> and <code>cargo run -- db gen-hebrew -n 0</code>.</p>
   </main>
   <script>
     const $=s=>document.querySelector(s), status=$('#status'), save=$('#save'), search=$('#search'), add=$('#add');
-    let overlay=null, active='lexicon_entries', dirty=false;
+    let overlay=null, imported=[], ambiguous=[], active='lexicon_entries', dirty=false;
     const show=(text,error=false)=>{status.textContent=text;status.className=error?'error':'';};
     const field=(label,key,value='',type='text')=>{const l=document.createElement('label');l.textContent=label;const i=document.createElement(type==='textarea'?'textarea':'input');if(type!=='textarea')i.type=type;i.dataset.key=key;i.value=value??'';if(key==='surface'||key==='root')i.dir='rtl';l.append(i);return l;};
     function row(section,item,index){
@@ -65,6 +75,22 @@
       }
       const del=document.createElement('button');del.type='button';del.className='delete';del.dataset.action='delete';del.textContent='Delete';card.append(del);return card;
     }
+    function importedRow(item){
+      const card=document.createElement('article');card.className='row imported';
+      const source=document.createElement('div');source.className='source';source.textContent=`${item.source} · ${item.id}`;
+      const surface=field('Pointed Hebrew surface','',item.surface),root=field('Root','',item.root);surface.querySelector('input').readOnly=true;root.querySelector('input').readOnly=true;
+      card.append(source,surface,root);
+      const gloss=field('Imported gloss','overlayGloss',item.gloss);card.append(gloss);
+      const create=document.createElement('button');create.type='button';create.className='secondary';create.dataset.action='create-overlay';create.textContent='Create overlay';card.append(create);
+      card.dataset.surface=item.surface;card.dataset.root=item.root??'';return card;
+    }
+    const analysisKey=a=>['root','binyan','form','pgn','prefix','vav_consecutive','obj_suffix'].map(k=>String(a[k]??'')).join('\u001f');
+    function ambiguityRow(item){
+      const card=document.createElement('article');card.className='ambiguity';
+      const title=document.createElement('h2');title.dir='rtl';title.append(item.surface);const meta=document.createElement('small');meta.textContent=` · ${item.occurrences} occurrences`;title.append(meta);card.append(title);
+      const selected=overlay.primary_analyses.find(v=>v.surface===item.surface);
+      item.analyses.forEach((analysis,index)=>{const label=document.createElement('label');label.className='choice';const radio=document.createElement('input');radio.type='radio';radio.name=`surface-${item.surface_id}`;radio.checked=selected?analysisKey(selected)===analysisKey(analysis):index===0;radio.onchange=()=>{const value={surface:item.surface,...analysis};delete value.analysis_id;delete value.attested;const at=overlay.primary_analyses.findIndex(v=>v.surface===item.surface);if(index===0){if(at>=0)overlay.primary_analyses.splice(at,1);}else if(at>=0)overlay.primary_analyses[at]=value;else overlay.primary_analyses.push(value);markDirty();render();};const text=document.createElement('code');text.textContent=`${analysis.root} · ${analysis.binyan} ${analysis.form} ${analysis.pgn||'—'}${analysis.prefix?' · prefix '+analysis.prefix:''}${analysis.obj_suffix?' · suffix '+analysis.obj_suffix:''}${analysis.vav_consecutive?' · vav-consecutive':''}${analysis.attested?' · attested':''}${index===0?' · current primary':''}`;label.append(radio,text);card.append(label);});return card;
+    }
     function render(){
       if(!overlay)return;const query=search.value.trim().toLocaleLowerCase();
       for(const section of ['lexicon_entries','word_glosses']){
@@ -72,19 +98,27 @@
         overlay[section].forEach((item,index)=>{const haystack=Object.values(item).join(' ').toLocaleLowerCase();if(query&&!haystack.includes(query))return;host.append(row(section,item,index));visible++;});
         if(!visible){const empty=document.createElement('div');empty.className='empty';empty.textContent=query?'No matching entries.':'No entries yet.';host.append(empty);}
       }
+      const importedHost=$('#imported');importedHost.replaceChildren();let importedVisible=0;
+      for(const item of imported){const haystack=Object.values(item).join(' ').toLocaleLowerCase();if(query&&!haystack.includes(query))continue;if(importedVisible<250)importedHost.append(importedRow(item));importedVisible++;}
+      if(!importedVisible){const empty=document.createElement('div');empty.className='empty';empty.textContent='No matching imported glosses.';importedHost.append(empty);}else if(importedVisible>250){const more=document.createElement('div');more.className='empty';more.textContent=`Showing 250 of ${importedVisible} matches. Refine the search to see more.`;importedHost.append(more);}
+      const ambiguityHost=$('#primary_analyses');ambiguityHost.replaceChildren();let ambiguousVisible=0;
+      for(const item of ambiguous){const haystack=(item.surface+' '+item.analyses.map(a=>Object.values(a).join(' ')).join(' ')).toLocaleLowerCase();if(query&&!haystack.includes(query))continue;ambiguityHost.append(ambiguityRow(item));ambiguousVisible++;}
+      if(!ambiguousVisible){const empty=document.createElement('div');empty.className='empty';empty.textContent='No matching ambiguous analyses.';ambiguityHost.append(empty);}
       $('#lexicon-count').textContent=`(${overlay.lexicon_entries.length})`;$('#word-count').textContent=`(${overlay.word_glosses.length})`;
+      $('#imported-count').textContent=`(${imported.length})`;
+      $('#ambiguous-count').textContent=`(${ambiguous.length})`;
     }
     function markDirty(){dirty=true;show('Unsaved changes');}
-    function select(section){active=section;document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.section===section));document.querySelectorAll('.rows').forEach(s=>s.hidden=s.id!==section);add.textContent=section==='lexicon_entries'?'Add lexicon entry':'Add word gloss';search.value='';render();}
+    function select(section){active=section;document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.section===section));document.querySelectorAll('.rows').forEach(s=>s.hidden=s.id!==section);add.hidden=section==='imported'||section==='primary_analyses';add.textContent=section==='lexicon_entries'?'Add lexicon entry':'Add word gloss';search.value='';render();}
     function validate(){
       for(const section of ['lexicon_entries','word_glosses']){const seen=new Set();for(let i=0;i<overlay[section].length;i++){const item=overlay[section][i],where=`${section} row ${i+1}`;if(!item.surface?.trim())throw new Error(`${where}: surface is required`);if(!item.gloss?.trim()&&!(section==='word_glosses'&&item.is_name))throw new Error(`${where}: gloss is required unless this is a proper-name marker`);if(seen.has(item.surface))throw new Error(`${where}: duplicate surface ${item.surface}`);seen.add(item.surface);}}
     }
-    document.addEventListener('input',e=>{const card=e.target.closest('.row');if(!card||!e.target.dataset.key)return;const item=overlay[card.parentElement.id][Number(card.dataset.index)],key=e.target.dataset.key;item[key]=e.target.type==='checkbox'?e.target.checked:e.target.value;if((key==='note'&&!item[key])||(key==='is_name'&&!item[key]))delete item[key];markDirty();});
-    document.addEventListener('click',e=>{const del=e.target.closest('[data-action="delete"]');if(!del)return;const card=del.closest('.row');overlay[card.parentElement.id].splice(Number(card.dataset.index),1);markDirty();render();});
+    document.addEventListener('input',e=>{const card=e.target.closest('.row');if(!card||!e.target.dataset.key||card.parentElement.id==='imported')return;const item=overlay[card.parentElement.id][Number(card.dataset.index)],key=e.target.dataset.key;item[key]=e.target.type==='checkbox'?e.target.checked:e.target.value;if((key==='note'&&!item[key])||(key==='is_name'&&!item[key]))delete item[key];markDirty();});
+    document.addEventListener('click',e=>{const del=e.target.closest('[data-action="delete"]');if(del){const card=del.closest('.row');overlay[card.parentElement.id].splice(Number(card.dataset.index),1);markDirty();render();return;}const create=e.target.closest('[data-action="create-overlay"]');if(!create)return;const card=create.closest('.row'),surface=card.dataset.surface,root=card.dataset.root,gloss=card.querySelector('[data-key="overlayGloss"]').value.trim();if(!gloss){show('Overlay gloss is required',true);return;}const existing=overlay.lexicon_entries.find(v=>v.surface===surface);if(existing){if(root)existing.root=root;existing.gloss=gloss;}else overlay.lexicon_entries.unshift({surface,root,gloss});markDirty();select('lexicon_entries');search.value=surface;render();});
     document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>select(b.dataset.section));search.oninput=render;
     add.onclick=()=>{const item=active==='lexicon_entries'?{surface:'',root:'',gloss:''}:{surface:'',gloss:''};overlay[active].unshift(item);search.value='';markDirty();render();const input=$('#'+active+' .row input');input?.focus();};
     save.onclick=async()=>{try{validate();}catch(e){show(e.message,true);return;}save.disabled=true;show('Saving…');try{const r=await fetch('/api/overlay',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(overlay)}),result=await r.json();if(!r.ok)throw new Error(result.error);dirty=false;show('Saved');}catch(e){show(e.message,true);}finally{save.disabled=false;}};
-    fetch('/api/overlay').then(async r=>{if(!r.ok)throw new Error((await r.json()).error);return r.json();}).then(v=>{overlay=v;render();show('Ready');}).catch(e=>show(e.message,true));
+    Promise.all(['/api/overlay','/api/lexicon','/api/ambiguous'].map(url=>fetch(url).then(async r=>{if(!r.ok)throw new Error((await r.json()).error);return r.json();}))).then(([value,catalogue,review])=>{overlay=value;imported=catalogue.entries;ambiguous=review.surfaces;render();show('Ready');}).catch(e=>show(e.message,true));
     addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
   </script>
 </body>
