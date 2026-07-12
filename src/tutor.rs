@@ -433,6 +433,12 @@ pub struct TutorProgress {
     /// Every teachable grammar concept ([`crate::grammar::concept_count`]).
     pub grammar_total: i64,
     pub words_known: i64,
+    /// Verses whose every required grammar rule is currently unlocked. This is
+    /// inclusive of `verses_readable`, so a stacked progress bar can render the
+    /// additional grammar-unlocked share as `verses_grammar_unlocked -
+    /// verses_readable`.
+    pub verses_grammar_unlocked: i64,
+    /// Verses that have actually been presented for reading.
     pub verses_readable: i64,
     pub total_verses: i64,
 }
@@ -3756,6 +3762,7 @@ impl Bible {
             |r| r.get(0),
         )?;
         let grammar_known = self.grammar_concepts_seen()?;
+        let verses_grammar_unlocked = self.verses_grammar_unlocked()?;
         let verses_readable = self.conn().query_row(
             "SELECT COUNT(*) FROM progress.verse_progress WHERE state = 'readable'",
             [],
@@ -3774,9 +3781,52 @@ impl Bible {
             grammar_known,
             grammar_total: crate::grammar::concept_count() as i64,
             words_known,
+            verses_grammar_unlocked,
             verses_readable,
             total_verses,
         })
+    }
+
+    /// Number of verses covered by the current grammar frontier. The generated
+    /// `verse_stats` table has one boolean column per grammar concept; a verse
+    /// is covered when none of its required columns belongs to a locked rule.
+    fn verses_grammar_unlocked(&self) -> rusqlite::Result<i64> {
+        let settings = self.tutor_settings()?;
+        if !settings.grammar_gating {
+            return self
+                .conn()
+                .query_row("SELECT COUNT(*) FROM hebrewdb.verse_stats", [], |r| {
+                    r.get(0)
+                });
+        }
+
+        let mut unlocked = 0i64;
+        let mut stmt = self
+            .conn()
+            .prepare("SELECT concept FROM progress.concepts_unlocked")?;
+        for key in stmt.query_map([], |r| r.get::<_, String>(0))? {
+            if let Some(bit) = crate::grammar::concept_bit(&key?) {
+                unlocked |= bit;
+            }
+        }
+
+        let locked_requirements = crate::grammar::concepts()
+            .iter()
+            .filter(|concept| {
+                crate::grammar::concept_bit(concept.key).is_some_and(|bit| unlocked & bit == 0)
+            })
+            .map(|concept| format!("{} = 0", concept.key.replace('-', "_")))
+            .collect::<Vec<_>>();
+        let where_clause = if locked_requirements.is_empty() {
+            String::new()
+        } else {
+            format!(" WHERE {}", locked_requirements.join(" AND "))
+        };
+        self.conn().query_row(
+            &format!("SELECT COUNT(*) FROM hebrewdb.verse_stats{where_clause}"),
+            [],
+            |r| r.get(0),
+        )
     }
 
     /// Every explanation card already shown, for the app's reference page:
@@ -4898,6 +4948,40 @@ mod tests {
         // A reset clears meta, restoring defaults.
         bible.reset_tutor()?;
         assert_eq!(bible.tutor_settings()?, TutorSettings::default());
+        Ok(())
+    }
+
+    #[test]
+    fn progress_counts_verses_inside_grammar_frontier() -> rusqlite::Result<()> {
+        let Some(bible) = open_with_progress() else {
+            return Ok(());
+        };
+        for concept in crate::grammar::concepts()
+            .iter()
+            .filter(|concept| concept.key != "article")
+        {
+            bible.conn().execute(
+                "INSERT INTO progress.concepts_unlocked(concept, unlocked_epoch) VALUES (?1, 0)",
+                params![concept.key],
+            )?;
+        }
+
+        let without_article: i64 = bible.conn().query_row(
+            "SELECT COUNT(*) FROM hebrewdb.verse_stats WHERE article = 0",
+            [],
+            |r| r.get(0),
+        )?;
+        assert_eq!(
+            bible.tutor_progress()?.verses_grammar_unlocked,
+            without_article
+        );
+
+        bible.set_tutor_settings(&TutorSettings {
+            grammar_gating: false,
+            ..TutorSettings::default()
+        })?;
+        let progress = bible.tutor_progress()?;
+        assert_eq!(progress.verses_grammar_unlocked, progress.total_verses);
         Ok(())
     }
 

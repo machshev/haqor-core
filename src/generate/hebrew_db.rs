@@ -312,7 +312,17 @@ fn gizra_label(m: &VerbMatch) -> String {
 }
 
 fn create_schema(db: &Connection) -> Result<()> {
-    db.execute_batch(
+    let grammar_columns = crate::grammar::concepts()
+        .iter()
+        .map(|concept| {
+            format!(
+                ",\n            {} INTEGER NOT NULL CHECK ({} IN (0, 1))",
+                concept.key.replace('-', "_"),
+                concept.key.replace('-', "_")
+            )
+        })
+        .collect::<String>();
+    db.execute_batch(&format!(
         "CREATE TABLE surface(
             surface_id        INTEGER PRIMARY KEY,
             text              TEXT    NOT NULL,
@@ -377,10 +387,10 @@ fn create_schema(db: &Connection) -> Result<()> {
             word_count    INTEGER NOT NULL,
             distinct_count INTEGER NOT NULL,
             min_occ       INTEGER NOT NULL,
-            sum_occ       INTEGER NOT NULL,
+            sum_occ       INTEGER NOT NULL{grammar_columns},
             PRIMARY KEY (book, chapter, verse)
-         );",
-    )?;
+         );"
+    ))?;
     Ok(())
 }
 
@@ -437,6 +447,7 @@ struct VerseAcc {
     distinct: HashSet<usize>,
     min_occ: u32,
     sum_occ: u64,
+    concept_mask: i64,
 }
 
 /// Populate `verse_word` (ordered surface per verse position) and `verse_stats`
@@ -448,18 +459,29 @@ fn populate_verse_tables(
     tx: &Connection,
     occurrences: &[Occurrence],
     counts: &[u32],
+    concept_masks: &[i64],
 ) -> Result<()> {
     let mut vw_stmt = tx.prepare(
         "INSERT INTO verse_word(book, chapter, verse, position, surface_id) \
          VALUES (?1, ?2, ?3, ?4, ?5)",
     )?;
-    let mut vs_stmt = tx.prepare(
+    let concepts = crate::grammar::concepts();
+    let columns = concepts
+        .iter()
+        .map(|c| c.key.replace('-', "_"))
+        .collect::<Vec<_>>()
+        .join(", ");
+    let placeholders = (1..=7 + concepts.len())
+        .map(|n| format!("?{n}"))
+        .collect::<Vec<_>>()
+        .join(", ");
+    let mut vs_stmt = tx.prepare(&format!(
         "INSERT INTO verse_stats(book, chapter, verse, word_count, distinct_count, \
-         min_occ, sum_occ) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
-    )?;
+         min_occ, sum_occ, {columns}) VALUES ({placeholders})"
+    ))?;
 
     let flush = |acc: &VerseAcc, vs: &mut rusqlite::Statement| -> Result<()> {
-        vs.execute((
+        let mut values = vec![
             acc.book as i64,
             acc.chapter as i64,
             acc.verse as i64,
@@ -467,7 +489,9 @@ fn populate_verse_tables(
             acc.distinct.len() as i64,
             acc.min_occ as i64,
             acc.sum_occ as i64,
-        ))?;
+        ];
+        values.extend((0..concepts.len()).map(|bit| (acc.concept_mask >> bit) & 1));
+        vs.execute(rusqlite::params_from_iter(values))?;
         Ok(())
     };
 
@@ -488,6 +512,7 @@ fn populate_verse_tables(
                 distinct: HashSet::new(),
                 min_occ: u32::MAX,
                 sum_occ: 0,
+                concept_mask: 0,
             });
         }
         let acc = cur.as_mut().expect("verse accumulator initialised above");
@@ -503,11 +528,70 @@ fn populate_verse_tables(
         let c = counts[occ.surface_id];
         acc.min_occ = acc.min_occ.min(c);
         acc.sum_occ += c as u64;
+        acc.concept_mask |= concept_masks[occ.surface_id];
     }
     if let Some(acc) = &cur {
         flush(acc, &mut vs_stmt)?;
     }
     Ok(())
+}
+
+/// Build the grammar mask baked into `verse_stats` for each surface. This uses
+/// the same surface-aware classifier as the tutor; curated closed-class and
+/// exceptional forms therefore override the generated morphology here too.
+fn surface_concept_masks(
+    surfaces: &[String],
+    verbs: &[Vec<VerbMatch>],
+    nouns: &[Vec<NounMatch>],
+    gold: &[Vec<&IrregularVerb>],
+) -> Vec<i64> {
+    surfaces
+        .iter()
+        .enumerate()
+        .map(|(id, surface)| {
+            let word = if let Some(m) = verbs[id].first() {
+                let pgn = m.pgn.label();
+                let (person, gender, number) = crate::bible::decode_pgn(&pgn);
+                Some(crate::bible::HebrewWord {
+                    word: surface.clone(),
+                    root: m.root.letters.iter().collect(),
+                    form: Some(m.binyan.name().to_string()),
+                    tense: Some(m.form.name().to_string()),
+                    person,
+                    gender,
+                    number,
+                    prefix: (!m.prefix.is_empty()).then(|| m.prefix.clone()),
+                    vav_con: m.vav_consecutive,
+                    obj_suffix: m.object_suffix.map(|p| p.label().to_string()),
+                    ..Default::default()
+                })
+            } else if let Some(g) = gold[id].first() {
+                let (person, gender, number) = crate::bible::decode_pgn(g.pgn);
+                Some(crate::bible::HebrewWord {
+                    word: surface.clone(),
+                    root: g.root.to_string(),
+                    form: Some(g.binyan.to_string()),
+                    tense: Some(g.form.to_string()),
+                    person,
+                    gender,
+                    number,
+                    ..Default::default()
+                })
+            } else {
+                nouns[id].first().map(|n| {
+                    let (number, state) = crate::bible::decode_noun_label(&n.label);
+                    crate::bible::HebrewWord {
+                        word: surface.clone(),
+                        number,
+                        state,
+                        prefix: (!n.prefix.is_empty()).then(|| n.prefix.clone()),
+                        ..Default::default()
+                    }
+                })
+            };
+            crate::grammar::concept_mask_for_surface(surface, word.as_ref())
+        })
+        .collect()
 }
 
 /// The analyses derived for a batch of surfaces: the refined lexical class, the
@@ -1061,6 +1145,7 @@ fn build_hebrew(
         }
     }
     let aramaic_only: Vec<bool> = has_hebrew.iter().map(|&h| !h).collect();
+    let concept_masks = surface_concept_masks(&surfaces, &analyses, &noun_analyses, &gold_analyses);
 
     if output.exists() {
         std::fs::remove_file(output)
@@ -1138,7 +1223,7 @@ fn build_hebrew(
         // assigns each word its in-verse position and aggregates the stats the
         // tutor's verse selection ranks on. min_occ is the rarest constituent
         // surface (the verse's bottleneck word); sum_occ its total commonness.
-        populate_verse_tables(&tx, &occurrences, &counts)?;
+        populate_verse_tables(&tx, &occurrences, &counts, &concept_masks)?;
     }
     tx.commit()?;
 
@@ -1478,4 +1563,51 @@ fn update_missing(
     );
     print_coverage_summary(&db, parsed, surfaces);
     Ok((surfaces, occurrences, parsed))
+}
+
+#[cfg(test)]
+mod verse_stats_tests {
+    use super::*;
+
+    #[test]
+    fn grammar_columns_are_boolean_and_or_each_words_rules() -> Result<()> {
+        let db = Connection::open_in_memory()?;
+        create_schema(&db)?;
+
+        let article = crate::grammar::concept_bit("article").unwrap();
+        let perfect = crate::grammar::concept_bit("perfect").unwrap();
+        let occurrences = vec![
+            Occurrence {
+                surface_id: 0,
+                book: 1,
+                chapter: 1,
+                verse: 1,
+            },
+            Occurrence {
+                surface_id: 1,
+                book: 1,
+                chapter: 1,
+                verse: 1,
+            },
+        ];
+        populate_verse_tables(&db, &occurrences, &[10, 20], &[article, perfect])?;
+
+        let flags: (i64, i64, i64) = db.query_row(
+            "SELECT article, perfect, imperfect FROM verse_stats \
+             WHERE book = 1 AND chapter = 1 AND verse = 1",
+            [],
+            |row| Ok((row.get(0)?, row.get(1)?, row.get(2)?)),
+        )?;
+        assert_eq!(flags, (1, 1, 0));
+        assert!(
+            db.execute(
+                "UPDATE verse_stats SET article = 2 \
+                 WHERE book = 1 AND chapter = 1 AND verse = 1",
+                [],
+            )
+            .is_err(),
+            "grammar columns must remain boolean"
+        );
+        Ok(())
+    }
 }
