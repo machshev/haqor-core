@@ -1,5 +1,6 @@
 //! Minimal local HTTP server for editing `data/lexicon_overrides.json`.
 
+use std::collections::HashSet;
 use std::io::{Read, Write};
 use std::net::{SocketAddr, TcpListener, TcpStream};
 use std::path::{Path, PathBuf};
@@ -95,28 +96,59 @@ fn read_ambiguous(path: &Path) -> Result<serde_json::Value> {
            WHERE n_candidates > 1 AND lexical_class IS NULL AND language IS NULL
            ORDER BY occurrences DESC, surface_id LIMIT 500
          )
-         SELECT s.surface_id, s.text, s.occurrences, a.analysis_id, a.root, a.binyan,
-                a.form, a.pgn, a.prefix, a.vav_consecutive, a.obj_suffix, a.attested
+         SELECT s.surface_id, s.text, s.occurrences, a.analysis_id, 'verb',
+                a.root, a.binyan, a.form, a.pgn, a.prefix, a.vav_consecutive,
+                a.obj_suffix, a.attested, '', '', ''
          FROM chosen c JOIN surface s USING(surface_id) JOIN analyses a USING(surface_id)
-         ORDER BY s.occurrences DESC, s.surface_id, a.analysis_id",
+         UNION ALL
+         SELECT s.surface_id, s.text, s.occurrences, n.analysis_id, 'noun',
+                '', '', '', '', n.prefix, 0, '', 1, n.stem, n.kind, n.label
+         FROM chosen c JOIN surface s USING(surface_id) JOIN noun_analyses n USING(surface_id)
+         ORDER BY 3 DESC, 1, 5 DESC, 4",
     )?;
     let mut surfaces: Vec<serde_json::Value> = Vec::new();
+    let mut identities = HashSet::new();
     let mapped = statement.query_map([], |row| {
         Ok((
             row.get::<_, i64>(0)?,
             row.get::<_, String>(1)?,
             row.get::<_, i64>(2)?,
-            json!({"analysis_id": row.get::<_, i64>(3)?, "root": row.get::<_, String>(4)?,
-          "binyan": row.get::<_, String>(5)?, "form": row.get::<_, String>(6)?,
-          "pgn": row.get::<_, String>(7)?, "prefix": row.get::<_, String>(8)?,
-          "vav_consecutive": row.get::<_, i64>(9)? != 0, "obj_suffix": row.get::<_, String>(10)?,
-          "attested": row.get::<_, i64>(11)? != 0}),
+            json!({"analysis_id": row.get::<_, i64>(3)?, "analysis_type": row.get::<_, String>(4)?,
+          "root": row.get::<_, String>(5)?, "binyan": row.get::<_, String>(6)?,
+          "form": row.get::<_, String>(7)?, "pgn": row.get::<_, String>(8)?,
+          "prefix": row.get::<_, String>(9)?, "vav_consecutive": row.get::<_, i64>(10)? != 0,
+          "obj_suffix": row.get::<_, String>(11)?, "attested": row.get::<_, i64>(12)? != 0,
+          "stem": row.get::<_, String>(13)?, "kind": row.get::<_, String>(14)?,
+          "label": row.get::<_, String>(15)?}),
         ))
     })?;
     for row in mapped {
         let (id, text, occurrences, analysis) = row?;
         if surfaces.last().and_then(|v| v["surface_id"].as_i64()) != Some(id) {
             surfaces.push(json!({"surface_id": id, "surface": text, "occurrences": occurrences, "analyses": []}));
+            identities.clear();
+        }
+        let fields: &[&str] = if analysis["analysis_type"] == "noun" {
+            &["analysis_type", "stem", "kind", "label", "prefix"]
+        } else {
+            &[
+                "analysis_type",
+                "root",
+                "binyan",
+                "form",
+                "pgn",
+                "prefix",
+                "vav_consecutive",
+                "obj_suffix",
+            ]
+        };
+        let identity = fields
+            .iter()
+            .map(|field| analysis[*field].to_string())
+            .collect::<Vec<_>>()
+            .join("\u{1f}");
+        if !identities.insert(identity) {
+            continue;
         }
         surfaces.last_mut().unwrap()["analyses"]
             .as_array_mut()
@@ -330,6 +362,34 @@ mod tests {
         let value = read_lexicon(&path).unwrap();
         assert_eq!(value["entries"].as_array().unwrap().len(), 2);
         assert_eq!(value["entries"][0]["surface"], "אָב");
+        std::fs::remove_file(path).unwrap();
+    }
+
+    #[test]
+    fn ambiguity_catalogue_includes_noun_candidates() {
+        let path =
+            std::env::temp_dir().join(format!("haqor-admin-ambiguity-{}.db", std::process::id()));
+        let db = Connection::open(&path).unwrap();
+        db.execute_batch(
+            "CREATE TABLE surface(surface_id INTEGER, text TEXT, occurrences INTEGER,
+                n_candidates INTEGER, lexical_class TEXT, language TEXT);
+             CREATE TABLE analyses(analysis_id INTEGER, surface_id INTEGER, root TEXT,
+                binyan TEXT, form TEXT, pgn TEXT, prefix TEXT, vav_consecutive INTEGER,
+                obj_suffix TEXT, attested INTEGER);
+             CREATE TABLE noun_analyses(analysis_id INTEGER, surface_id INTEGER, stem TEXT,
+                kind TEXT, label TEXT, prefix TEXT);
+             INSERT INTO surface VALUES (1, 'אִישׁ', 10, 2, NULL, NULL);
+             INSERT INTO analyses VALUES (1, 1, 'איש', 'Qal', 'Imperative', '2ms', '', 0, '', 1);
+             INSERT INTO noun_analyses VALUES (2, 1, 'אִישׁ', 'Masculine', 'Irregular (man)', '');
+             INSERT INTO noun_analyses VALUES (3, 1, 'אִישׁ', 'Masculine', 'Irregular (man)', '');",
+        )
+        .unwrap();
+        drop(db);
+        let value = read_ambiguous(&path).unwrap();
+        let analyses = value["surfaces"][0]["analyses"].as_array().unwrap();
+        assert!(analyses.iter().any(|a| a["analysis_type"] == "verb"));
+        assert!(analyses.iter().any(|a| a["analysis_type"] == "noun"));
+        assert_eq!(analyses.len(), 2, "equivalent noun rows are deduplicated");
         std::fs::remove_file(path).unwrap();
     }
 }

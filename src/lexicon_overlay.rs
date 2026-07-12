@@ -123,24 +123,35 @@ pub fn validate(value: &Value) -> Result<()> {
         .context("overlay `primary_analyses` must be an array")?;
     let mut seen = HashSet::new();
     for (i, row) in rows.iter().enumerate() {
-        let required = [
-            "surface",
-            "root",
-            "binyan",
-            "form",
-            "pgn",
-            "prefix",
-            "obj_suffix",
-        ];
+        let analysis_type = row
+            .get("analysis_type")
+            .and_then(Value::as_str)
+            .unwrap_or("verb");
+        if !matches!(analysis_type, "verb" | "noun") {
+            bail!("primary_analyses[{i}].analysis_type must be `verb` or `noun`");
+        }
+        let required: &[&str] = if analysis_type == "noun" {
+            &["surface", "stem", "kind", "label", "prefix"]
+        } else {
+            &[
+                "surface",
+                "root",
+                "binyan",
+                "form",
+                "pgn",
+                "prefix",
+                "obj_suffix",
+            ]
+        };
         for field in required {
-            if !row.get(field).is_some_and(Value::is_string) {
+            if !row.get(*field).is_some_and(Value::is_string) {
                 bail!("primary_analyses[{i}].{field} must be a string");
             }
         }
         if row["surface"].as_str().unwrap().trim().is_empty() {
             bail!("primary_analyses[{i}].surface must not be empty");
         }
-        if !row.get("vav_consecutive").is_some_and(Value::is_boolean) {
+        if analysis_type == "verb" && !row.get("vav_consecutive").is_some_and(Value::is_boolean) {
             bail!("primary_analyses[{i}].vav_consecutive must be a boolean");
         }
         if !seen.insert(row["surface"].as_str().unwrap()) {

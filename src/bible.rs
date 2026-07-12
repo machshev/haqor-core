@@ -1632,7 +1632,8 @@ impl Bible {
                  FROM hebrewdb.analyses a \
                  WHERE a.surface_id = ?1 \
                  ORDER BY EXISTS(SELECT 1 FROM lexdb.primary_analysis_overrides p \
-                    WHERE p.surface = ?2 AND p.root = a.root AND p.binyan = a.binyan \
+                    WHERE p.surface = ?2 AND p.analysis_type = 'verb' \
+                      AND p.root = a.root AND p.binyan = a.binyan \
                       AND p.form = a.form AND p.pgn = a.pgn AND p.prefix = a.prefix \
                       AND p.vav_consecutive = a.vav_consecutive \
                       AND p.obj_suffix = a.obj_suffix) DESC, a.analysis_id ASC \
@@ -1666,17 +1667,22 @@ impl Bible {
             let mut stmt = self
                 .db
                 .prepare(
-                    "SELECT n.kind, n.label, n.prefix, n.stem \
+                    "SELECT n.kind, n.label, n.prefix, n.stem, \
+                            EXISTS(SELECT 1 FROM lexdb.primary_analysis_overrides p \
+                              WHERE p.surface = ?2 AND p.analysis_type = 'noun' \
+                                AND p.stem = n.stem AND p.kind = n.kind \
+                                AND p.label = n.label AND p.prefix = n.prefix) AS forced \
                      FROM hebrewdb.noun_analyses n \
-                     WHERE n.surface_id = ?1 ORDER BY n.analysis_id ASC",
+                     WHERE n.surface_id = ?1 ORDER BY forced DESC, n.analysis_id ASC",
                 )
                 .ok()?;
-            stmt.query_map([surface_id], |row| {
+            stmt.query_map(rusqlite::params![surface_id, norm], |row| {
                 Ok((
                     row.get::<_, String>(0)?,
                     row.get::<_, String>(1)?,
                     row.get::<_, String>(2)?,
                     row.get::<_, String>(3)?,
+                    row.get::<_, i64>(4)? != 0,
                 ))
             })
             .ok()?
@@ -1703,10 +1709,11 @@ impl Bible {
             resolved: bool,
             curated: bool,
             is_name: bool,
+            forced: bool,
         }
         let noun: Option<NounReading> = {
             let mut chosen: Option<NounReading> = None;
-            for (kind, label, prefix, stem) in noun_rows {
+            for (kind, label, prefix, stem, forced) in noun_rows {
                 let curated = curated_gloss(&stem);
                 let is_curated = curated.is_some();
                 let resolved = curated
@@ -1724,8 +1731,9 @@ impl Bible {
                     resolved: resolves,
                     curated: is_curated,
                     is_name,
+                    forced,
                 };
-                if resolves {
+                if forced || resolves {
                     chosen = Some(reading);
                     break;
                 }
@@ -1736,6 +1744,17 @@ impl Bible {
 
         let noun_resolves = noun.as_ref().is_some_and(|n| n.resolved);
         let noun_curated = noun.as_ref().is_some_and(|n| n.curated);
+        let noun_forced = noun.as_ref().is_some_and(|n| n.forced);
+        let verb_forced = self
+            .db
+            .query_row(
+                "SELECT EXISTS(SELECT 1 FROM lexdb.primary_analysis_overrides \
+                 WHERE surface = ?1 AND analysis_type = 'verb')",
+                [&norm],
+                |row| row.get::<_, i64>(0),
+            )
+            .unwrap_or(0)
+            != 0;
         // A resolvable noun reading led by the definite article beats a verb
         // reading that only exists by mistreating that article: a he-peeled
         // non-participle (the article never prefixes a finite verb — הָעָם is
@@ -1762,8 +1781,9 @@ impl Bible {
 
         // Prefer a BDB-resolvable verb; else a resolvable noun; else whatever
         // analysis exists (verb before noun).
-        if let Some((root, binyan, tense, pgn, prefix, vav_con, obj_suffix, _, _)) =
-            verb.as_ref().filter(|_| verb_resolves || !noun_resolves)
+        if let Some((root, binyan, tense, pgn, prefix, vav_con, obj_suffix, _, _)) = verb
+            .as_ref()
+            .filter(|_| verb_forced || (!noun_forced && (verb_resolves || !noun_resolves)))
         {
             let (person, gender, number) = decode_pgn(pgn);
             let gloss = self.hebrew_root_gloss(root);
