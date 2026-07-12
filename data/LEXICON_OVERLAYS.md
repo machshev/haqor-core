@@ -38,3 +38,15 @@ cargo run -- db gen-hebrew -n 0
 `gen-lexicon` validates the JSON before writing the `lexicon_overrides` and
 `word_glosses` tables into `data/lexicon.db`. Invalid or duplicate entries stop
 generation with the relevant array index.
+
+## Browser editor
+
+Run the loopback-only admin server and open the printed address:
+
+```sh
+cargo run -- admin
+```
+
+The default is `http://127.0.0.1:8787`. Saving validates the full document and
+atomically replaces the overlay file. The server deliberately refuses a
+non-loopback bind because it has no authentication.

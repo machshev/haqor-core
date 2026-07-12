@@ -70,6 +70,24 @@ pub fn load(path: &std::path::Path) -> Result<Value> {
     Ok(value)
 }
 
+/// Validate and atomically save an overlay, returning the canonical pretty JSON.
+pub fn save(path: &std::path::Path, value: &Value) -> Result<String> {
+    validate(value)?;
+    let rendered = serde_json::to_string_pretty(value)? + "\n";
+    let file_name = path
+        .file_name()
+        .and_then(|v| v.to_str())
+        .unwrap_or("overlay.json");
+    let temporary = path.with_file_name(format!(".{file_name}.{}.tmp", std::process::id()));
+    std::fs::write(&temporary, rendered.as_bytes())
+        .with_context(|| format!("writing temporary overlay {}", temporary.display()))?;
+    if let Err(error) = std::fs::rename(&temporary, path) {
+        let _ = std::fs::remove_file(&temporary);
+        return Err(error).with_context(|| format!("replacing overlay {}", path.display()));
+    }
+    Ok(rendered)
+}
+
 pub fn validate(value: &Value) -> Result<()> {
     for section in ["lexicon_entries", "word_glosses"] {
         let rows = value
@@ -128,5 +146,19 @@ mod tests {
                 .to_string()
                 .contains("duplicate surface")
         );
+    }
+
+    #[test]
+    fn save_validates_before_replacing_the_file() {
+        let path = std::env::temp_dir().join(format!(
+            "haqor-overlay-save-{}-{}.json",
+            std::process::id(),
+            std::thread::current().name().unwrap_or("test")
+        ));
+        std::fs::write(&path, "original").unwrap();
+        let invalid = serde_json::json!({"lexicon_entries": [], "word_glosses": [{}]});
+        assert!(save(&path, &invalid).is_err());
+        assert_eq!(std::fs::read_to_string(&path).unwrap(), "original");
+        std::fs::remove_file(path).unwrap();
     }
 }

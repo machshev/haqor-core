@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Haqor Lexicon Overlay</title>
+  <style>
+    :root { color-scheme: light dark; font: 15px/1.45 system-ui, sans-serif; }
+    body { margin: 0; background: #18201d; color: #edf4ef; }
+    header { display:flex; gap:1rem; align-items:center; padding:1rem 1.5rem; background:#22302a; position:sticky; top:0; }
+    h1 { font-size:1.1rem; margin:0; flex:1; }
+    button { border:0; border-radius:.45rem; padding:.65rem 1rem; font-weight:700; cursor:pointer; background:#8ed0a9; color:#102019; }
+    button:disabled { opacity:.55; cursor:wait; }
+    main { padding:1.25rem 1.5rem; }
+    textarea { box-sizing:border-box; width:100%; min-height:calc(100vh - 9rem); resize:vertical; padding:1rem; border:1px solid #52635b; border-radius:.5rem; background:#101613; color:#f4faf6; font:14px/1.5 ui-monospace, monospace; tab-size:2; }
+    #status { min-width:14rem; text-align:right; color:#bdd0c5; }
+    #status.error { color:#ff9d9d; }
+    .hint { margin:.75rem 0 0; color:#aebdb5; }
+  </style>
+</head>
+<body>
+  <header><h1>Haqor · Lexicon overlay</h1><span id="status">Loading…</span><button id="save">Save overlay</button></header>
+  <main><textarea id="editor" spellcheck="false" aria-label="Lexicon overlay JSON"></textarea><p class="hint">Saving validates the complete overlay and writes it atomically. Run <code>cargo run -- db gen-lexicon</code> and <code>cargo run -- db gen-hebrew -n 0</code> afterward.</p></main>
+  <script>
+    const editor = document.querySelector('#editor'), status = document.querySelector('#status'), save = document.querySelector('#save');
+    const show = (text, error=false) => { status.textContent=text; status.className=error?'error':''; };
+    fetch('/api/overlay').then(async r => { if (!r.ok) throw new Error((await r.json()).error); return r.json(); }).then(v => { editor.value=JSON.stringify(v,null,2)+'\n'; show('Ready'); }).catch(e => show(e.message,true));
+    save.onclick = async () => {
+      let value; try { value=JSON.parse(editor.value); } catch(e) { show('Invalid JSON: '+e.message,true); return; }
+      save.disabled=true; show('Saving…');
+      try { const r=await fetch('/api/overlay',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(value)}); const result=await r.json(); if(!r.ok) throw new Error(result.error); editor.value=JSON.stringify(value,null,2)+'\n'; show('Saved'); }
+      catch(e) { show(e.message,true); } finally { save.disabled=false; }
+    };
+    editor.addEventListener('input',()=>show('Unsaved changes'));
+    addEventListener('beforeunload',e=>{if(status.textContent==='Unsaved changes'){e.preventDefault();e.returnValue='';}});
+  </script>
+</body>
+</html>
