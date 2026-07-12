@@ -501,9 +501,15 @@ pub struct TutorSettings {
     /// complexity expands one rule at a time (see [`Bible::unlocked_concepts`]).
     /// When false, every form is available immediately (the original behaviour).
     pub grammar_gating: bool,
-    /// Vocabulary↔grammar balance, `0..=100`. Higher is more vocabulary-forward:
-    /// it takes more graduated words to unlock each successive grammar rule.
-    pub vocab_ratio: u8,
+    /// Priority given to high-frequency vocabulary when choosing the next verse.
+    pub vocab_priority: u8,
+    /// Grammar-expansion priority. Higher values unlock rules after fewer
+    /// graduated words.
+    pub grammar_priority: u8,
+    /// Priority given to finishing nearly-readable verses when choosing the
+    /// next target, rather than using a verse merely as a carrier for the most
+    /// frequent available word.
+    pub verse_priority: u8,
     /// Letters↔words balance, `0..=100` — the share of *new-material*
     /// introductions spent teaching new letters rather than the meaning of a
     /// word already spelt with letters the learner knows. Lower is more
@@ -519,18 +525,21 @@ impl Default for TutorSettings {
             letters_per_batch: 3,
             words_per_batch: 8,
             grammar_gating: true,
-            vocab_ratio: 75,
+            vocab_priority: 75,
+            grammar_priority: 25,
+            verse_priority: 25,
             letters_ratio: 30,
         }
     }
 }
 
 impl TutorSettings {
-    /// Graduated words needed to unlock each successive grammar rule, derived
-    /// from [`Self::vocab_ratio`]: vocabulary-forward (high ratio) spaces the
-    /// rules further apart. At least 1 so grammar always eventually unlocks.
+    /// Graduated words needed to unlock each successive grammar rule. A high
+    /// grammar priority expands the frontier quickly; a low one leaves more
+    /// space for vocabulary consolidation. The range deliberately matches the
+    /// former vocabulary↔grammar balance (3..=30 words) for smooth migration.
     fn words_per_concept(&self) -> i64 {
-        (3 + self.vocab_ratio as i64 * 27 / 100).max(1)
+        30 - self.grammar_priority as i64 * 27 / 100
     }
 }
 
@@ -1471,8 +1480,17 @@ impl Bible {
             words_per_batch: get("setting.words_per_batch")?
                 .map_or(d.words_per_batch, |n| n.clamp(1, 255) as u8),
             grammar_gating: get("setting.grammar_gating")?.map_or(d.grammar_gating, |n| n != 0),
-            vocab_ratio: get("setting.vocab_ratio")?
-                .map_or(d.vocab_ratio, |n| n.clamp(0, 100) as u8),
+            // Migrate the former two-ended vocabulary↔grammar slider without
+            // rewriting the database: its value maps to vocabulary priority,
+            // and its inverse preserves the exact grammar unlock cadence.
+            vocab_priority: get("setting.vocab_priority")?
+                .or(get("setting.vocab_ratio")?)
+                .map_or(d.vocab_priority, |n| n.clamp(0, 100) as u8),
+            grammar_priority: get("setting.grammar_priority")?
+                .or(get("setting.vocab_ratio")?.map(|n| 100 - n))
+                .map_or(d.grammar_priority, |n| n.clamp(0, 100) as u8),
+            verse_priority: get("setting.verse_priority")?
+                .map_or(d.verse_priority, |n| n.clamp(0, 100) as u8),
             letters_ratio: get("setting.letters_ratio")?
                 .map_or(d.letters_ratio, |n| n.clamp(0, 100) as u8),
         })
@@ -1491,7 +1509,9 @@ impl Bible {
         put("setting.letters_per_batch", s.letters_per_batch as i64)?;
         put("setting.words_per_batch", s.words_per_batch as i64)?;
         put("setting.grammar_gating", s.grammar_gating as i64)?;
-        put("setting.vocab_ratio", s.vocab_ratio as i64)?;
+        put("setting.vocab_priority", s.vocab_priority as i64)?;
+        put("setting.grammar_priority", s.grammar_priority as i64)?;
+        put("setting.verse_priority", s.verse_priority as i64)?;
         put("setting.letters_ratio", s.letters_ratio as i64)?;
         Ok(())
     }
@@ -2682,6 +2702,7 @@ impl Bible {
         // pin is dropped unread anyway, and its rating only counts
         // introducible words).
         let unteachable_gate = String::new();
+        let settings = self.tutor_settings()?;
         let order = if letter_learning {
             // Rate the verse by its single *best* introducible word — the one
             // the tutor will actually teach next ([`letter_learning_score`]) —
@@ -2694,13 +2715,18 @@ impl Bible {
                  vw.book, vw.chapter, vw.verse"
             )
         } else {
-            // The verse is only a carrier for the globally best surface. It
-            // contributes no value heuristic of its own: candidates are first
-            // grammar/family filtered (`intro`), then ordered by root frequency.
+            // Balance globally useful vocabulary against completing a verse.
+            // Cap the frequency contribution at 10,000; inverse unknown count
+            // uses a 0..1,000 completion bonus so balanced settings still avoid
+            // short name lists while a high verse priority can win deliberately.
             format!(
-                "MAX(CASE WHEN {intro} THEN {WORD_FREQ} END) DESC, \
+                "(MIN(MAX(CASE WHEN {intro} THEN {WORD_FREQ} END), 10000) * {} \
+                  + (1000 / MAX(COUNT(DISTINCT CASE WHEN done.vkey IS NULL \
+                        THEN sm.vkey END), 1)) * {}) DESC, \
+             MAX(CASE WHEN {intro} THEN {WORD_FREQ} END) DESC, \
              MIN(CASE WHEN {intro} THEN COALESCE(sm.form_tier, 0) END) ASC, \
-             vw.book, vw.chapter, vw.verse"
+             vw.book, vw.chapter, vw.verse",
+                settings.vocab_priority, settings.verse_priority
             )
         };
         // Placeholder numbers for the exclude triple must slot in after
@@ -3662,7 +3688,7 @@ impl Bible {
 
         // Target selection only admits verses inside the paced grammar
         // frontier.  In particular, pinning a verse must not force-unlock a
-        // rule and bypass the learner's vocabulary/grammar balance setting.
+        // rule and bypass the learner's grammar-priority pacing setting.
 
         if let Some(item) =
             self.next_introduction(b, c, v, now, unlocked, seen_mask, letter_learning)?
@@ -5307,13 +5333,12 @@ mod tests {
     }
 
     #[test]
-    fn vocab_ratio_paces_concept_unlock_spacing() {
-        // A vocabulary-forward ratio spaces grammar rules further apart; the
-        // spacing is always at least one word.
+    fn grammar_priority_paces_concept_unlock_spacing() {
+        // Higher grammar priority unlocks rules after fewer words.
         let mut s = TutorSettings::default();
-        s.vocab_ratio = 0;
+        s.grammar_priority = 100;
         let fast = s.words_per_concept();
-        s.vocab_ratio = 100;
+        s.grammar_priority = 0;
         let slow = s.words_per_concept();
         assert!(fast >= 1 && fast < slow, "fast {fast} slow {slow}");
     }
@@ -5339,11 +5364,25 @@ mod tests {
         };
         // Unset → defaults.
         assert_eq!(bible.tutor_settings()?, TutorSettings::default());
+        bible.conn().execute(
+            "INSERT INTO progress.meta(key, value) VALUES ('setting.vocab_ratio', '80')",
+            [],
+        )?;
+        let migrated = bible.tutor_settings()?;
+        assert_eq!(migrated.vocab_priority, 80);
+        assert_eq!(migrated.grammar_priority, 20);
+        assert_eq!(migrated.verse_priority, TutorSettings::default().verse_priority);
+        bible.conn().execute(
+            "DELETE FROM progress.meta WHERE key = 'setting.vocab_ratio'",
+            [],
+        )?;
         let s = TutorSettings {
             letters_per_batch: 1,
             words_per_batch: 4,
             grammar_gating: false,
-            vocab_ratio: 10,
+            vocab_priority: 10,
+            grammar_priority: 90,
+            verse_priority: 80,
             letters_ratio: 55,
         };
         bible.set_tutor_settings(&s)?;
