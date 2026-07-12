@@ -52,18 +52,18 @@ fn vowel(c: char) -> &'static str {
 /// voicing must keep them apart for the quiz options to differ.
 pub fn vowel_vocalisation(c: char) -> &'static str {
     match c {
-        '\u{05B7}' => "a",   // patah
-        '\u{05B8}' => "ah",  // qamats
-        '\u{05B6}' => "e",   // segol
-        '\u{05B5}' => "ey",  // tsere
-        '\u{05B4}' => "i",   // hiriq
-        '\u{05B9}' => "oh",  // holam
-        '\u{05BB}' => "u",   // qubuts
-        '\u{05B0}' => "ᵉ",   // sheva (vocal, superscript)
-        '\u{05B1}' => "ᵉ",   // hataf segol
-        '\u{05B2}' => "ᵃ",   // hataf patah
-        '\u{05B3}' => "ᵒ",   // hataf qamats
-        '\u{05C7}' => "o",   // qamats qatan
+        '\u{05B7}' => "a",  // patah
+        '\u{05B8}' => "ah", // qamats
+        '\u{05B6}' => "e",  // segol
+        '\u{05B5}' => "ey", // tsere
+        '\u{05B4}' => "i",  // hiriq
+        '\u{05B9}' => "oh", // holam
+        '\u{05BB}' => "u",  // qubuts
+        '\u{05B0}' => "ᵉ",  // sheva (vocal, superscript)
+        '\u{05B1}' => "ᵉ",  // hataf segol
+        '\u{05B2}' => "ᵃ",  // hataf patah
+        '\u{05B3}' => "ᵒ",  // hataf qamats
+        '\u{05C7}' => "o",  // qamats qatan
         _ => "",
     }
 }
@@ -129,10 +129,10 @@ fn clusters(text: &str) -> Vec<Vec<char>> {
         if is_base(c) {
             out.push(vec![c]);
         } else if is_mark(c) {
-            if let Some(last) = out.last_mut() {
-                if is_base(last[0]) {
-                    last.push(c);
-                }
+            if let Some(last) = out.last_mut()
+                && is_base(last[0])
+            {
+                last.push(c);
             }
         } else if c == ' ' {
             out.push(vec![' ']);
@@ -184,7 +184,10 @@ pub fn voiced_syllable(host: &str, vowel: char) -> String {
 /// any combining order. The onset scan ignores the vowel and the vowel scan
 /// ignores the dots, so no positional split is needed.
 pub fn voiced_syllable_str(syllable: &str) -> String {
-    match syllable.chars().find(|&c| !vowel_vocalisation(c).is_empty()) {
+    match syllable
+        .chars()
+        .find(|&c| !vowel_vocalisation(c).is_empty())
+    {
         Some(v) => voiced_syllable(syllable, v),
         None => consonant_onset(syllable).to_string(),
     }
@@ -234,8 +237,7 @@ pub fn romanize(text: &str) -> String {
         // consonant carries dagesh forte, whose second half opens a new
         // syllable (הַמְּלָכִים keeps its "e"). Word-initially and after a
         // long vowel or another sheva it stays vocal.
-        let silent_sheva =
-            marks.contains(&'\u{05B0}') && (is_last || (last_short && !dagesh));
+        let silent_sheva = marks.contains(&'\u{05B0}') && (is_last || (last_short && !dagesh));
         let vowels: Vec<&str> = marks
             .iter()
             .filter(|&&m| !(silent_sheva && m == '\u{05B0}'))

@@ -501,11 +501,11 @@ fn unfinalize(s: &str) -> String {
 /// tail's vowel and its consonant (אֲנָשִׁים ends hiriq, shin-dot, yod, mem).
 fn has_plural_tail(surface: &str) -> bool {
     const TAILS: &[&str] = &[
-        "\u{05B4}\u{05D9}\u{05DD}",             // ־ִים
-        "\u{05B4}\u{05DD}",                     // ־ִם (defective, נְשִׂיאִם)
-        "\u{05D5}\u{05B9}\u{05EA}",             // ־וֹת (plene)
-        "\u{05B9}\u{05EA}",                     // ־ֹת (defective)
-        "\u{05B7}\u{05D9}\u{05B4}\u{05DD}",     // ־ַיִם (dual)
+        "\u{05B4}\u{05D9}\u{05DD}",         // ־ִים
+        "\u{05B4}\u{05DD}",                 // ־ִם (defective, נְשִׂיאִם)
+        "\u{05D5}\u{05B9}\u{05EA}",         // ־וֹת (plene)
+        "\u{05B9}\u{05EA}",                 // ־ֹת (defective)
+        "\u{05B7}\u{05D9}\u{05B4}\u{05DD}", // ־ַיִם (dual)
     ];
     let undotted: String = surface
         .chars()

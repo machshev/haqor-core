@@ -123,7 +123,9 @@ pub fn concepts_for_surface(surface: &str, w: Option<&HebrewWord>) -> Vec<&'stat
     if keys.is_empty() {
         let mut cs = surface.chars();
         if cs.next() == Some('\u{05D5}')
-            && cs.next().is_some_and(|c| ('\u{05B0}'..='\u{05BC}').contains(&c))
+            && cs
+                .next()
+                .is_some_and(|c| ('\u{05B0}'..='\u{05BC}').contains(&c))
         {
             return vec!["conj-ve"];
         }
@@ -212,9 +214,8 @@ pub fn concepts_for(w: &HebrewWord) -> Vec<&'static str> {
 /// object-marker forms; the bare words in those families are excluded by the
 /// caller's [`crate::pronoun_suffix::split_pronoun_suffix`] finding no ending.
 pub fn pronoun_suffix_host(surface: &str) -> bool {
-    surface_concepts(surface).is_some_and(|keys| {
-        keys.contains(&"prep-suffix") || keys.contains(&"object-marker")
-    })
+    surface_concepts(surface)
+        .is_some_and(|keys| keys.contains(&"prep-suffix") || keys.contains(&"object-marker"))
 }
 
 /// The curated concepts for `surface`, if listed, matched through
@@ -838,9 +839,13 @@ mod tests {
         // Every suffixed form — including the pausal twins, which are distinct
         // vocab_keys (vowel points are kept) — carries prep-suffix, so none is
         // introducible before the pronoun-ending card unlocks.
-        for s in ["אֵלַי", "אֵלָי", "עָלַי", "עָלָי", "אַחֲרָיו", "מֵהֶם"] {
+        for s in ["אֵלַי", "אֵלָי", "עָלַי", "עָלָי", "אַחֲרָיו", "מֵהֶם"]
+        {
             let keys = concepts_for_surface(s, None);
-            assert!(keys.contains(&"prep-suffix"), "{s} should carry prep-suffix");
+            assert!(
+                keys.contains(&"prep-suffix"),
+                "{s} should carry prep-suffix"
+            );
             assert!(
                 concept_rank_for_surface(s, None) > concept_rank_for_surface("אֶל", None),
                 "{s} gates later than the bare preposition"
