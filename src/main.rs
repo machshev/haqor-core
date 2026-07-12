@@ -11,6 +11,7 @@ use haqor_core::bible::Bible;
 use haqor_core::morphology;
 use log::info;
 use std::env;
+use std::net::SocketAddr;
 use std::path::PathBuf;
 
 /// Summarise bible resource
@@ -40,6 +41,15 @@ enum Commands {
     Db {
         #[command(subcommand)]
         command: DbCommands,
+    },
+    /// Serve the local browser editor for manual lexicon overlays.
+    Admin {
+        /// Loopback address for the editor. Non-loopback addresses are rejected.
+        #[arg(long, default_value = "127.0.0.1:8787")]
+        bind: SocketAddr,
+        /// Overlay JSON file to edit.
+        #[arg(long, default_value = "data/lexicon_overrides.json")]
+        overlay: PathBuf,
     },
     // ---- Paradigm generators (lemma → inflected forms) ----
     /// Generate the verb paradigm of a 3-letter Hebrew root. (Alias: morph)
@@ -308,6 +318,9 @@ fn main() -> Result<()> {
         }
         Commands::ParseAdjective { word, lexicon_db } => {
             print_parse_pos(&word, &lexicon_db, true)?;
+        }
+        Commands::Admin { bind, overlay } => {
+            haqor_core::overlay_admin::serve(bind, overlay)?;
         }
         Commands::Db { command } => match command {
             DbCommands::GenBible { src_texts, output } => {
