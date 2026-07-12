@@ -2833,9 +2833,7 @@ impl Bible {
     /// common words come first and new letters arrive a couple at a time.
     fn unfinished_words(
         &self,
-        b: u8,
-        c: u8,
-        v: u8,
+        (b, c, v): (u8, u8, u8),
         unlocked: i64,
         seen_mask: i64,
         letter_learning: bool,
@@ -2918,9 +2916,7 @@ impl Bible {
     /// learning review forward).
     fn next_introduction(
         &self,
-        b: u8,
-        c: u8,
-        v: u8,
+        (b, c, v): (u8, u8, u8),
         now: i64,
         unlocked: i64,
         seen_mask: i64,
@@ -2937,8 +2933,13 @@ impl Bible {
         // will actually be read — completable right now — never from a
         // teaching pin that gets dropped unread.
         let include_names = !letter_learning && self.verse_completable(b, c, v, unlocked)?;
-        let surfaces =
-            self.unfinished_words(b, c, v, unlocked, seen_mask, letter_learning, include_names)?;
+        let surfaces = self.unfinished_words(
+            (b, c, v),
+            unlocked,
+            seen_mask,
+            letter_learning,
+            include_names,
+        )?;
 
         // The word candidate: a word already fully readable (all its glyphs are
         // known *and* graduated, so it can be sounded out) whose meaning isn't
@@ -3698,7 +3699,7 @@ impl Bible {
         // rule and bypass the learner's grammar-priority pacing setting.
 
         if let Some(item) =
-            self.next_introduction(b, c, v, now, unlocked, seen_mask, letter_learning)?
+            self.next_introduction((b, c, v), now, unlocked, seen_mask, letter_learning)?
         {
             debug!("next_study_item: introducing {item:?}");
             return Ok(item);
@@ -3708,7 +3709,7 @@ impl Bible {
             // Qal base. Release the pin so targeting can go teach that base;
             // once it graduates this verse becomes eligible again.
             if self
-                .unfinished_words(b, c, v, unlocked, seen_mask, letter_learning, true)?
+                .unfinished_words((b, c, v), unlocked, seen_mask, letter_learning, true)?
                 .is_empty()
             {
                 self.set_meta_target(None)?;
@@ -3724,29 +3725,21 @@ impl Bible {
             // pool), look for a second verse with fresh material to
             // interleave — the just-graded card naturally resurfaces once
             // it's actually due, via the check at the top of this function.
-            if interleave_on_stall {
-                if let Some((ab, ac, av)) = self.next_target_verse_excluding(
+            if interleave_on_stall
+                && let Some((ab, ac, av)) = self.next_target_verse_excluding(
                     Some((b, c, v)),
                     unlocked,
                     seen_mask,
                     letter_learning,
-                )? {
-                    if let Some(item) = self.next_introduction(
-                        ab,
-                        ac,
-                        av,
-                        now,
-                        unlocked,
-                        seen_mask,
-                        letter_learning,
-                    )? {
-                        debug!(
-                            "next_study_item: verse {b}/{c}/{v} has nothing new; \
+                )?
+                && let Some(item) =
+                    self.next_introduction((ab, ac, av), now, unlocked, seen_mask, letter_learning)?
+            {
+                debug!(
+                    "next_study_item: verse {b}/{c}/{v} has nothing new; \
                              interleaving from {ab}/{ac}/{av} -> {item:?}"
-                        );
-                        return Ok(item);
-                    }
-                }
+                );
+                return Ok(item);
             }
             // Words mid-learning: drill a learning card toward graduation.
             if let Some(review) = self.next_review(now, true)? {
@@ -5378,7 +5371,10 @@ mod tests {
         let migrated = bible.tutor_settings()?;
         assert_eq!(migrated.vocab_priority, 80);
         assert_eq!(migrated.grammar_priority, 20);
-        assert_eq!(migrated.verse_priority, TutorSettings::default().verse_priority);
+        assert_eq!(
+            migrated.verse_priority,
+            TutorSettings::default().verse_priority
+        );
         bible.conn().execute(
             "DELETE FROM progress.meta WHERE key = 'setting.vocab_ratio'",
             [],
@@ -6401,7 +6397,7 @@ mod tests {
         let (b, c, v) = bible
             .next_target_verse(all_grammar, 0, false)?
             .expect("a target verse exists");
-        let words = bible.unfinished_words(b, c, v, all_grammar, 0, false, true)?;
+        let words = bible.unfinished_words((b, c, v), all_grammar, 0, false, true)?;
         assert!(
             !words.is_empty(),
             "target verse should have unfinished words"
