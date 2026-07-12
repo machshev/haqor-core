@@ -5,34 +5,87 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Haqor Lexicon Overlay</title>
   <style>
-    :root { color-scheme: light dark; font: 15px/1.45 system-ui, sans-serif; }
-    body { margin: 0; background: #18201d; color: #edf4ef; }
-    header { display:flex; gap:1rem; align-items:center; padding:1rem 1.5rem; background:#22302a; position:sticky; top:0; }
+    :root { color-scheme:dark; font:15px/1.45 system-ui,sans-serif; --panel:#22302a; --field:#101613; --line:#52635b; --muted:#aebdb5; --accent:#8ed0a9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#18201d; color:#edf4ef; }
+    header { display:flex; gap:1rem; align-items:center; padding:1rem 1.5rem; background:var(--panel); position:sticky; top:0; z-index:2; box-shadow:0 2px 10px #0005; }
     h1 { font-size:1.1rem; margin:0; flex:1; }
-    button { border:0; border-radius:.45rem; padding:.65rem 1rem; font-weight:700; cursor:pointer; background:#8ed0a9; color:#102019; }
+    button { border:0; border-radius:.45rem; padding:.65rem 1rem; font-weight:700; cursor:pointer; background:var(--accent); color:#102019; }
     button:disabled { opacity:.55; cursor:wait; }
-    main { padding:1.25rem 1.5rem; }
-    textarea { box-sizing:border-box; width:100%; min-height:calc(100vh - 9rem); resize:vertical; padding:1rem; border:1px solid #52635b; border-radius:.5rem; background:#101613; color:#f4faf6; font:14px/1.5 ui-monospace, monospace; tab-size:2; }
-    #status { min-width:14rem; text-align:right; color:#bdd0c5; }
+    button.secondary { background:#35483f; color:#edf4ef; border:1px solid var(--line); }
+    button.delete { background:transparent; color:#ffb4b4; border:1px solid #825454; padding:.45rem .7rem; }
+    main { max-width:1100px; margin:auto; padding:1.25rem 1.5rem 3rem; }
+    nav { display:flex; gap:.5rem; margin-bottom:1rem; }
+    nav button { background:#293a32; color:#cbd8d0; }
+    nav button.active { background:var(--accent); color:#102019; }
+    .toolbar { display:flex; gap:.75rem; align-items:center; margin-bottom:1rem; }
+    .toolbar input { flex:1; }
+    input,textarea { width:100%; border:1px solid var(--line); border-radius:.4rem; padding:.6rem .7rem; background:var(--field); color:#f4faf6; font:inherit; }
+    input[dir="rtl"] { font-size:1.2rem; }
+    textarea { min-height:4.5rem; resize:vertical; }
+    label { display:grid; gap:.3rem; color:#bfd0c6; font-size:.86rem; }
+    .rows { display:grid; gap:.75rem; }
+    .row { display:grid; grid-template-columns:minmax(10rem,1fr) minmax(9rem,1fr) minmax(15rem,2fr) auto; gap:.75rem; align-items:end; padding:.9rem; border:1px solid #394c43; border-radius:.55rem; background:#1d2924; }
+    .row.word { grid-template-columns:minmax(10rem,1fr) minmax(15rem,1.5fr) minmax(15rem,2fr) auto; }
+    .row .name-field { display:flex; gap:.5rem; align-items:center; min-height:2.6rem; white-space:nowrap; }
+    .row .name-field input { width:auto; }
+    .empty { padding:3rem; text-align:center; color:var(--muted); border:1px dashed var(--line); border-radius:.5rem; }
+    #status { min-width:13rem; text-align:right; color:#bdd0c5; }
     #status.error { color:#ff9d9d; }
-    .hint { margin:.75rem 0 0; color:#aebdb5; }
+    .hint { margin:1rem 0 0; color:var(--muted); }
+    [hidden] { display:none !important; }
+    @media (max-width:800px) { header { flex-wrap:wrap; } #status { order:3; width:100%; text-align:left; } .row,.row.word { grid-template-columns:1fr; } .toolbar { flex-wrap:wrap; } .toolbar input { flex-basis:100%; } }
   </style>
 </head>
 <body>
-  <header><h1>Haqor · Lexicon overlay</h1><span id="status">Loading…</span><button id="save">Save overlay</button></header>
-  <main><textarea id="editor" spellcheck="false" aria-label="Lexicon overlay JSON"></textarea><p class="hint">Saving validates the complete overlay and writes it atomically. Run <code>cargo run -- db gen-lexicon</code> and <code>cargo run -- db gen-hebrew -n 0</code> afterward.</p></main>
+  <header><h1>Haqor · Lexicon overlay</h1><span id="status">Loading…</span><button id="save">Save changes</button></header>
+  <main>
+    <nav aria-label="Overlay sections">
+      <button class="tab active" data-section="lexicon_entries">Lexicon entries <span id="lexicon-count"></span></button>
+      <button class="tab" data-section="word_glosses">Word glosses <span id="word-count"></span></button>
+    </nav>
+    <div class="toolbar"><input id="search" type="search" placeholder="Search surfaces, roots, glosses, or notes…"><button class="secondary" id="add">Add lexicon entry</button></div>
+    <section id="lexicon_entries" class="rows" aria-label="Lexicon entries"></section>
+    <section id="word_glosses" class="rows" aria-label="Word glosses" hidden></section>
+    <p class="hint">Saving validates every field and atomically replaces the overlay. Then run <code>cargo run -- db gen-lexicon</code> and <code>cargo run -- db gen-hebrew -n 0</code>.</p>
+  </main>
   <script>
-    const editor = document.querySelector('#editor'), status = document.querySelector('#status'), save = document.querySelector('#save');
-    const show = (text, error=false) => { status.textContent=text; status.className=error?'error':''; };
-    fetch('/api/overlay').then(async r => { if (!r.ok) throw new Error((await r.json()).error); return r.json(); }).then(v => { editor.value=JSON.stringify(v,null,2)+'\n'; show('Ready'); }).catch(e => show(e.message,true));
-    save.onclick = async () => {
-      let value; try { value=JSON.parse(editor.value); } catch(e) { show('Invalid JSON: '+e.message,true); return; }
-      save.disabled=true; show('Saving…');
-      try { const r=await fetch('/api/overlay',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(value)}); const result=await r.json(); if(!r.ok) throw new Error(result.error); editor.value=JSON.stringify(value,null,2)+'\n'; show('Saved'); }
-      catch(e) { show(e.message,true); } finally { save.disabled=false; }
-    };
-    editor.addEventListener('input',()=>show('Unsaved changes'));
-    addEventListener('beforeunload',e=>{if(status.textContent==='Unsaved changes'){e.preventDefault();e.returnValue='';}});
+    const $=s=>document.querySelector(s), status=$('#status'), save=$('#save'), search=$('#search'), add=$('#add');
+    let overlay=null, active='lexicon_entries', dirty=false;
+    const show=(text,error=false)=>{status.textContent=text;status.className=error?'error':'';};
+    const field=(label,key,value='',type='text')=>{const l=document.createElement('label');l.textContent=label;const i=document.createElement(type==='textarea'?'textarea':'input');if(type!=='textarea')i.type=type;i.dataset.key=key;i.value=value??'';if(key==='surface'||key==='root')i.dir='rtl';l.append(i);return l;};
+    function row(section,item,index){
+      const card=document.createElement('article');card.className='row '+(section==='word_glosses'?'word':'lexicon');card.dataset.index=index;
+      card.append(field('Pointed Hebrew surface','surface',item.surface));
+      if(section==='lexicon_entries') card.append(field('Root (optional)','root',item.root));
+      card.append(field(section==='lexicon_entries'?'Base gloss':'Learner gloss','gloss',item.gloss));
+      if(section==='word_glosses'){
+        card.append(field('Teaching note (optional)','note',item.note,'textarea'));
+        const controls=document.createElement('div'), name=document.createElement('label'), checkbox=document.createElement('input');controls.className='name-field';checkbox.type='checkbox';checkbox.dataset.key='is_name';checkbox.checked=!!item.is_name;name.append(checkbox,' Proper name');controls.append(name);card.append(controls);
+      }
+      const del=document.createElement('button');del.type='button';del.className='delete';del.dataset.action='delete';del.textContent='Delete';card.append(del);return card;
+    }
+    function render(){
+      if(!overlay)return;const query=search.value.trim().toLocaleLowerCase();
+      for(const section of ['lexicon_entries','word_glosses']){
+        const host=$('#'+section);host.replaceChildren();let visible=0;
+        overlay[section].forEach((item,index)=>{const haystack=Object.values(item).join(' ').toLocaleLowerCase();if(query&&!haystack.includes(query))return;host.append(row(section,item,index));visible++;});
+        if(!visible){const empty=document.createElement('div');empty.className='empty';empty.textContent=query?'No matching entries.':'No entries yet.';host.append(empty);}
+      }
+      $('#lexicon-count').textContent=`(${overlay.lexicon_entries.length})`;$('#word-count').textContent=`(${overlay.word_glosses.length})`;
+    }
+    function markDirty(){dirty=true;show('Unsaved changes');}
+    function select(section){active=section;document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.section===section));document.querySelectorAll('.rows').forEach(s=>s.hidden=s.id!==section);add.textContent=section==='lexicon_entries'?'Add lexicon entry':'Add word gloss';search.value='';render();}
+    function validate(){
+      for(const section of ['lexicon_entries','word_glosses']){const seen=new Set();for(let i=0;i<overlay[section].length;i++){const item=overlay[section][i],where=`${section} row ${i+1}`;if(!item.surface?.trim())throw new Error(`${where}: surface is required`);if(!item.gloss?.trim()&&!(section==='word_glosses'&&item.is_name))throw new Error(`${where}: gloss is required unless this is a proper-name marker`);if(seen.has(item.surface))throw new Error(`${where}: duplicate surface ${item.surface}`);seen.add(item.surface);}}
+    }
+    document.addEventListener('input',e=>{const card=e.target.closest('.row');if(!card||!e.target.dataset.key)return;const item=overlay[card.parentElement.id][Number(card.dataset.index)],key=e.target.dataset.key;item[key]=e.target.type==='checkbox'?e.target.checked:e.target.value;if((key==='note'&&!item[key])||(key==='is_name'&&!item[key]))delete item[key];markDirty();});
+    document.addEventListener('click',e=>{const del=e.target.closest('[data-action="delete"]');if(!del)return;const card=del.closest('.row');overlay[card.parentElement.id].splice(Number(card.dataset.index),1);markDirty();render();});
+    document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>select(b.dataset.section));search.oninput=render;
+    add.onclick=()=>{const item=active==='lexicon_entries'?{surface:'',root:'',gloss:''}:{surface:'',gloss:''};overlay[active].unshift(item);search.value='';markDirty();render();const input=$('#'+active+' .row input');input?.focus();};
+    save.onclick=async()=>{try{validate();}catch(e){show(e.message,true);return;}save.disabled=true;show('Saving…');try{const r=await fetch('/api/overlay',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(overlay)}),result=await r.json();if(!r.ok)throw new Error(result.error);dirty=false;show('Saved');}catch(e){show(e.message,true);}finally{save.disabled=false;}};
+    fetch('/api/overlay').then(async r=>{if(!r.ok)throw new Error((await r.json()).error);return r.json();}).then(v=>{overlay=v;render();show('Ready');}).catch(e=>show(e.message,true));
+    addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
   </script>
 </body>
 </html>
