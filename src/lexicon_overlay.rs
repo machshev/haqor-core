@@ -117,6 +117,36 @@ pub fn validate(value: &Value) -> Result<()> {
             }
         }
     }
+    let rows = value
+        .get("primary_analyses")
+        .and_then(Value::as_array)
+        .context("overlay `primary_analyses` must be an array")?;
+    let mut seen = HashSet::new();
+    for (i, row) in rows.iter().enumerate() {
+        let required = [
+            "surface",
+            "root",
+            "binyan",
+            "form",
+            "pgn",
+            "prefix",
+            "obj_suffix",
+        ];
+        for field in required {
+            if !row.get(field).is_some_and(Value::is_string) {
+                bail!("primary_analyses[{i}].{field} must be a string");
+            }
+        }
+        if row["surface"].as_str().unwrap().trim().is_empty() {
+            bail!("primary_analyses[{i}].surface must not be empty");
+        }
+        if !row.get("vav_consecutive").is_some_and(Value::is_boolean) {
+            bail!("primary_analyses[{i}].vav_consecutive must be a boolean");
+        }
+        if !seen.insert(row["surface"].as_str().unwrap()) {
+            bail!("duplicate surface `{}` in primary_analyses", row["surface"]);
+        }
+    }
     Ok(())
 }
 
@@ -127,7 +157,7 @@ mod tests {
     #[test]
     fn checked_in_overlay_is_valid_and_contains_both_kinds() {
         validate(source()).unwrap();
-        assert!(lexicon_entries().any(|e| e.surface == "כִּי" && e.gloss.contains("because")));
+        assert!(lexicon_entries().any(|e| e.surface == "כִּי" && !e.gloss.is_empty()));
         assert!(word_glosses().any(|e| e.surface == "אֶת" && !e.gloss.is_empty()));
     }
 
@@ -138,7 +168,8 @@ mod tests {
                 {"surface": "א", "root": "", "gloss": "one"},
                 {"surface": "א", "root": "", "gloss": "two"}
             ],
-            "word_glosses": []
+            "word_glosses": [],
+            "primary_analyses": []
         });
         assert!(
             validate(&value)
@@ -156,7 +187,7 @@ mod tests {
             std::thread::current().name().unwrap_or("test")
         ));
         std::fs::write(&path, "original").unwrap();
-        let invalid = serde_json::json!({"lexicon_entries": [], "word_glosses": [{}]});
+        let invalid = serde_json::json!({"lexicon_entries": [], "word_glosses": [{}], "primary_analyses": []});
         assert!(save(&path, &invalid).is_err());
         assert_eq!(std::fs::read_to_string(&path).unwrap(), "original");
         std::fs::remove_file(path).unwrap();

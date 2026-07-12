@@ -1631,9 +1631,13 @@ impl Bible {
                         EXISTS(SELECT 1 FROM lexdb.bdb b WHERE b.root = a.root) AS has_bdb \
                  FROM hebrewdb.analyses a \
                  WHERE a.surface_id = ?1 \
-                 ORDER BY a.analysis_id ASC \
+                 ORDER BY EXISTS(SELECT 1 FROM lexdb.primary_analysis_overrides p \
+                    WHERE p.surface = ?2 AND p.root = a.root AND p.binyan = a.binyan \
+                      AND p.form = a.form AND p.pgn = a.pgn AND p.prefix = a.prefix \
+                      AND p.vav_consecutive = a.vav_consecutive \
+                      AND p.obj_suffix = a.obj_suffix) DESC, a.analysis_id ASC \
                  LIMIT 1",
-                [surface_id],
+                rusqlite::params![surface_id, norm],
                 |row| {
                     Ok((
                         row.get::<_, String>(0)?,

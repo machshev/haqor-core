@@ -43,7 +43,11 @@ fn load_overlays(db: &mut Connection, path: &Path) -> Result<usize> {
         "CREATE TABLE lexicon_overrides(
             surface TEXT PRIMARY KEY, root TEXT NOT NULL, gloss TEXT NOT NULL);
          CREATE TABLE word_glosses(
-            surface TEXT PRIMARY KEY, gloss TEXT NOT NULL, note TEXT, is_name INTEGER NOT NULL);",
+            surface TEXT PRIMARY KEY, gloss TEXT NOT NULL, note TEXT, is_name INTEGER NOT NULL);
+         CREATE TABLE primary_analysis_overrides(
+            surface TEXT PRIMARY KEY, root TEXT NOT NULL, binyan TEXT NOT NULL,
+            form TEXT NOT NULL, pgn TEXT NOT NULL, prefix TEXT NOT NULL,
+            vav_consecutive INTEGER NOT NULL, obj_suffix TEXT NOT NULL);",
     )?;
     let tx = db.transaction()?;
     let mut total = 0;
@@ -67,6 +71,24 @@ fn load_overlays(db: &mut Connection, path: &Path) -> Result<usize> {
                 row["gloss"].as_str().unwrap_or(""),
                 row.get("note").and_then(Value::as_str),
                 i64::from(row.get("is_name").and_then(Value::as_bool).unwrap_or(false)),
+            ))?;
+            total += 1;
+        }
+        let mut primary = tx.prepare(
+            "INSERT INTO primary_analysis_overrides
+             (surface, root, binyan, form, pgn, prefix, vav_consecutive, obj_suffix)
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
+        )?;
+        for row in overlay["primary_analyses"].as_array().unwrap() {
+            primary.execute((
+                row["surface"].as_str().unwrap(),
+                row["root"].as_str().unwrap(),
+                row["binyan"].as_str().unwrap(),
+                row["form"].as_str().unwrap(),
+                row["pgn"].as_str().unwrap(),
+                row["prefix"].as_str().unwrap(),
+                i64::from(row["vav_consecutive"].as_bool().unwrap()),
+                row["obj_suffix"].as_str().unwrap(),
             ))?;
             total += 1;
         }

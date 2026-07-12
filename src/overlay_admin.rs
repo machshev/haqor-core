@@ -5,28 +5,35 @@ use std::net::{SocketAddr, TcpListener, TcpStream};
 use std::path::{Path, PathBuf};
 
 use anyhow::{Context, Result, bail};
+use rusqlite::Connection;
 use serde_json::json;
 
 const EDITOR: &str = include_str!("overlay_admin.html");
 const MAX_REQUEST_BYTES: usize = 4 * 1024 * 1024;
 
-pub fn serve(bind: SocketAddr, overlay: PathBuf) -> Result<()> {
+pub fn serve(bind: SocketAddr, overlay: PathBuf, lexicon: PathBuf, hebrew: PathBuf) -> Result<()> {
     if !bind.ip().is_loopback() {
         bail!(
             "refusing to expose the unauthenticated overlay editor on non-loopback address {bind}"
         );
     }
     crate::lexicon_overlay::load(&overlay)?;
+    read_lexicon(&lexicon)?;
+    read_ambiguous(&hebrew)?;
     let listener =
         TcpListener::bind(bind).with_context(|| format!("binding admin server to {bind}"))?;
     eprintln!("Overlay editor: http://{bind}");
     eprintln!("Editing: {}", overlay.display());
+    eprintln!("Browsing: {}", lexicon.display());
+    eprintln!("Reviewing: {}", hebrew.display());
     for stream in listener.incoming() {
         match stream {
             Ok(stream) => {
                 let path = overlay.clone();
+                let lexicon = lexicon.clone();
+                let hebrew = hebrew.clone();
                 std::thread::spawn(move || {
-                    if let Err(error) = handle(stream, &path) {
+                    if let Err(error) = handle(stream, &path, &lexicon, &hebrew) {
                         eprintln!("overlay editor request failed: {error:#}");
                     }
                 });
@@ -37,13 +44,31 @@ pub fn serve(bind: SocketAddr, overlay: PathBuf) -> Result<()> {
     Ok(())
 }
 
-fn handle(mut stream: TcpStream, overlay: &Path) -> Result<()> {
+fn handle(mut stream: TcpStream, overlay: &Path, lexicon: &Path, hebrew: &Path) -> Result<()> {
     let (method, target, body) = read_request(&mut stream)?;
     match (method.as_str(), target.as_str()) {
         ("GET", "/") => respond(&mut stream, 200, "text/html; charset=utf-8", EDITOR),
         ("GET", "/api/overlay") => match std::fs::read_to_string(overlay) {
             Ok(body) => respond(&mut stream, 200, "application/json; charset=utf-8", &body),
             Err(error) => error_response(&mut stream, 500, &error.to_string()),
+        },
+        ("GET", "/api/lexicon") => match read_lexicon(lexicon) {
+            Ok(value) => respond(
+                &mut stream,
+                200,
+                "application/json; charset=utf-8",
+                &value.to_string(),
+            ),
+            Err(error) => error_response(&mut stream, 500, &format!("{error:#}")),
+        },
+        ("GET", "/api/ambiguous") => match read_ambiguous(hebrew) {
+            Ok(value) => respond(
+                &mut stream,
+                200,
+                "application/json; charset=utf-8",
+                &value.to_string(),
+            ),
+            Err(error) => error_response(&mut stream, 500, &format!("{error:#}")),
         },
         ("PUT", "/api/overlay") => match serde_json::from_slice(&body)
             .context("request body is not valid JSON")
@@ -59,6 +84,75 @@ fn handle(mut stream: TcpStream, overlay: &Path) -> Result<()> {
         },
         _ => error_response(&mut stream, 404, "not found"),
     }
+}
+
+fn read_ambiguous(path: &Path) -> Result<serde_json::Value> {
+    let db = Connection::open_with_flags(path, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)
+        .with_context(|| format!("opening Hebrew database {}", path.display()))?;
+    let mut statement = db.prepare(
+        "WITH chosen AS (
+           SELECT surface_id FROM surface
+           WHERE n_candidates > 1 AND lexical_class IS NULL AND language IS NULL
+           ORDER BY occurrences DESC, surface_id LIMIT 500
+         )
+         SELECT s.surface_id, s.text, s.occurrences, a.analysis_id, a.root, a.binyan,
+                a.form, a.pgn, a.prefix, a.vav_consecutive, a.obj_suffix, a.attested
+         FROM chosen c JOIN surface s USING(surface_id) JOIN analyses a USING(surface_id)
+         ORDER BY s.occurrences DESC, s.surface_id, a.analysis_id",
+    )?;
+    let mut surfaces: Vec<serde_json::Value> = Vec::new();
+    let mapped = statement.query_map([], |row| {
+        Ok((
+            row.get::<_, i64>(0)?,
+            row.get::<_, String>(1)?,
+            row.get::<_, i64>(2)?,
+            json!({"analysis_id": row.get::<_, i64>(3)?, "root": row.get::<_, String>(4)?,
+          "binyan": row.get::<_, String>(5)?, "form": row.get::<_, String>(6)?,
+          "pgn": row.get::<_, String>(7)?, "prefix": row.get::<_, String>(8)?,
+          "vav_consecutive": row.get::<_, i64>(9)? != 0, "obj_suffix": row.get::<_, String>(10)?,
+          "attested": row.get::<_, i64>(11)? != 0}),
+        ))
+    })?;
+    for row in mapped {
+        let (id, text, occurrences, analysis) = row?;
+        if surfaces.last().and_then(|v| v["surface_id"].as_i64()) != Some(id) {
+            surfaces.push(json!({"surface_id": id, "surface": text, "occurrences": occurrences, "analyses": []}));
+        }
+        surfaces.last_mut().unwrap()["analyses"]
+            .as_array_mut()
+            .unwrap()
+            .push(analysis);
+    }
+    Ok(json!({"surfaces": surfaces}))
+}
+
+fn read_lexicon(path: &Path) -> Result<serde_json::Value> {
+    let db = Connection::open_with_flags(path, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)
+        .with_context(|| format!("opening lexicon database {}", path.display()))?;
+    let mut rows = Vec::new();
+    {
+        let mut statement = db.prepare(
+            "SELECT 'BDB', bdb_id, word, root, gloss FROM bdb
+             WHERE word IS NOT NULL AND word <> '' AND gloss IS NOT NULL AND gloss <> ''
+             UNION ALL
+             SELECT 'Strong', 'H' || strong, word, '', gloss FROM english
+             WHERE word IS NOT NULL AND word <> '' AND gloss IS NOT NULL AND gloss <> ''
+             ORDER BY 3, 1, 2",
+        )?;
+        let mapped = statement.query_map([], |row| {
+            Ok(json!({
+                "source": row.get::<_, String>(0)?,
+                "id": row.get::<_, String>(1)?,
+                "surface": row.get::<_, String>(2)?,
+                "root": row.get::<_, String>(3)?,
+                "gloss": row.get::<_, String>(4)?,
+            }))
+        })?;
+        for row in mapped {
+            rows.push(row?);
+        }
+    }
+    Ok(json!({"entries": rows}))
 }
 
 fn read_request(stream: &mut TcpStream) -> Result<(String, String, Vec<u8>)> {
@@ -152,16 +246,21 @@ mod tests {
         assert!(EDITOR.contains("Add lexicon entry"));
         assert!(EDITOR.contains("Add word gloss"));
         assert!(EDITOR.contains("Proper name"));
+        assert!(EDITOR.contains("Imported glosses"));
+        assert!(EDITOR.contains("Create overlay"));
+        assert!(EDITOR.contains("Ambiguous analyses"));
         assert!(!EDITOR.contains("Lexicon overlay JSON"));
     }
 
-    fn request(path: &Path, request: String) -> String {
+    fn request(path: &Path, lexicon: &Path, request: String) -> String {
         let listener = TcpListener::bind("127.0.0.1:0").unwrap();
         let address = listener.local_addr().unwrap();
         let overlay = path.to_owned();
+        let lexicon = lexicon.to_owned();
+        let hebrew = lexicon.clone();
         let server = std::thread::spawn(move || {
             let (stream, _) = listener.accept().unwrap();
-            handle(stream, &overlay).unwrap();
+            handle(stream, &overlay, &lexicon, &hebrew).unwrap();
         });
         let mut client = TcpStream::connect(address).unwrap();
         client.write_all(request.as_bytes()).unwrap();
@@ -175,11 +274,22 @@ mod tests {
     #[ignore = "requires loopback sockets, which some build sandboxes disable"]
     fn api_reads_and_validates_saves() {
         let path = std::env::temp_dir().join(format!("haqor-admin-{}.json", std::process::id()));
-        let original = json!({"lexicon_entries": [], "word_glosses": []});
+        let original = json!({"lexicon_entries": [], "word_glosses": [], "primary_analyses": []});
         std::fs::write(&path, serde_json::to_string(&original).unwrap()).unwrap();
+        let lexicon =
+            std::env::temp_dir().join(format!("haqor-admin-lexicon-{}.db", std::process::id()));
+        let db = Connection::open(&lexicon).unwrap();
+        db.execute_batch(
+            "CREATE TABLE bdb(bdb_id TEXT, word TEXT, root TEXT, gloss TEXT);
+             CREATE TABLE english(strong INTEGER, word TEXT, gloss TEXT);
+             INSERT INTO bdb VALUES ('a.b', 'אָב', 'אב', 'father');",
+        )
+        .unwrap();
+        drop(db);
 
         let response = request(
             &path,
+            &lexicon,
             "GET /api/overlay HTTP/1.1\r\nHost: localhost\r\n\r\n".into(),
         );
         assert!(response.starts_with("HTTP/1.1 200 OK"));
@@ -188,6 +298,7 @@ mod tests {
         let invalid = r#"{"lexicon_entries":[],"word_glosses":[{}]}"#;
         let response = request(
             &path,
+            &lexicon,
             format!(
                 "PUT /api/overlay HTTP/1.1\r\nHost: localhost\r\nContent-Length: {}\r\n\r\n{invalid}",
                 invalid.len()
@@ -199,6 +310,26 @@ mod tests {
                 .unwrap(),
             original
         );
+        std::fs::remove_file(path).unwrap();
+        std::fs::remove_file(lexicon).unwrap();
+    }
+
+    #[test]
+    fn lexicon_catalogue_reads_imported_glosses() {
+        let path =
+            std::env::temp_dir().join(format!("haqor-admin-catalogue-{}.db", std::process::id()));
+        let db = Connection::open(&path).unwrap();
+        db.execute_batch(
+            "CREATE TABLE bdb(bdb_id TEXT, word TEXT, root TEXT, gloss TEXT);
+             CREATE TABLE english(strong INTEGER, word TEXT, gloss TEXT);
+             INSERT INTO bdb VALUES ('a.b', 'אָב', 'אב', 'father');
+             INSERT INTO english VALUES (1, 'אָב', 'father');",
+        )
+        .unwrap();
+        drop(db);
+        let value = read_lexicon(&path).unwrap();
+        assert_eq!(value["entries"].as_array().unwrap().len(), 2);
+        assert_eq!(value["entries"][0]["surface"], "אָב");
         std::fs::remove_file(path).unwrap();
     }
 }

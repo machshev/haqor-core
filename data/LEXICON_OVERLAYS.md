@@ -1,12 +1,15 @@
 # Manual lexicon overlays
 
 Edit `lexicon_overrides.json` to correct imported lexical data without changing
-Rust source. The file has two arrays:
+Rust source. The file has three arrays:
 
 - `lexicon_entries` changes the root and base gloss selected for a pointed
   surface when the imported BDB data is absent or chooses the wrong homograph.
 - `word_glosses` changes the learner-facing gloss. `note` is optional teaching
   text and `is_name` optionally marks a proper name.
+- `primary_analyses` pins one of `hebrew.db`'s verb analyses as the primary
+  reading for a surface. Use the browser editor to avoid transcribing its
+  morphology fields by hand.
 
 For example:
 
@@ -50,3 +53,15 @@ cargo run -- admin
 The default is `http://127.0.0.1:8787`. Saving validates the full document and
 atomically replaces the overlay file. The server deliberately refuses a
 non-loopback bind because it has no authentication.
+
+The **Imported glosses** tab browses the BDB and Strong's glosses in
+`data/lexicon.db`. Change the proposed gloss and choose **Create overlay** to
+add or update a `lexicon_entries` row; the imported database row is never
+edited directly. Use `--lexicon PATH` when browsing a database elsewhere.
+
+The **Ambiguous analyses** tab shows the 500 highest-frequency ambiguous
+surfaces from `data/hebrew.db`. Choosing a non-default reading creates a
+regeneration-safe `primary_analyses` override; choosing the current first row
+again removes it. Rebuild `lexicon.db` after saving. The alternatives remain in
+`hebrew.db`; only the primary reading used by the tutor changes. Use
+`--hebrew PATH` to review another generated database.
