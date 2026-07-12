@@ -518,7 +518,7 @@ fn has_plural_tail(surface: &str) -> bool {
 /// dagesh the article/preposition doubles into the next consonant (it may
 /// sit before or after that consonant's vowel). `None` when the proclitic
 /// doesn't lead the surface or too little would remain.
-fn strip_proclitic(surface: &str, proclitic: &str) -> Option<String> {
+pub(crate) fn strip_proclitic(surface: &str, proclitic: &str) -> Option<String> {
     let rest = surface.strip_prefix(proclitic)?;
     let mut chars: Vec<char> = rest.chars().collect();
     if chars.len() < 2 {

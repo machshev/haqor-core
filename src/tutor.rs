@@ -569,6 +569,14 @@ const KNOWN_QAL_ROOTS: &str = "SELECT DISTINCT sm.root FROM progress.surface_met
 const FAMILY_READY: &str = "(sm.root = '' OR sm.is_name = 1 OR sm.form_tier < 5 \
       OR sm.family_base = 1 OR kqr.root IS NOT NULL)";
 
+/// SQL predicate saying that a proclitic-bearing surface may only be introduced
+/// after its bare lexical form has been introduced. Hebrew learners should meet עִם before וְעִם,
+/// בַּיִת before לַבַּיִת, and so on. If the stripped form is not itself an
+/// attested corpus surface there is nothing to teach separately, so the
+/// prefixed form remains eligible.
+const LEXICAL_BASE_READY: &str =
+    "(sm.base_surface_id = sm.surface_id OR base_ws.surface_id IS NOT NULL)";
+
 /// Bumped whenever [`form_tier`], the primary-root resolution, or the cached
 /// `surface_meta` columns change, so a stale [`Bible::ensure_surface_meta`] cache
 /// from an older build is rebuilt. 2 added `concept_rank`; 3 added `glyph_mask`;
@@ -631,7 +639,11 @@ const FAMILY_READY: &str = "(sm.root = '' OR sm.is_name = 1 OR sm.form_tier < 5 
 /// הָאוֹר carded "the be" from אוֹר "be; become light").
 /// 26 makes `family_base` select the simplest attested form when a verbal root
 /// has no Qal surface, instead of opening every derived form at once.
-const SURFACE_META_VERSION: i64 = 26;
+/// 27 adds the lexical-base cache, gating proclitic-bearing vocabulary until
+/// its bare form has been introduced.
+/// 28 classifies the frozen לִקְרַאת family as verbal for Qal-first
+/// curriculum ordering while retaining its lexicalized gloss.
+const SURFACE_META_VERSION: i64 = 28;
 
 /// `concept_mask` sentinel for a surface the tutor cannot teach: no parse
 /// gloss, no curated gloss, and not a name — its card would be blank. The bit
@@ -667,17 +679,17 @@ const LETTER_GLYPH_TOTAL: i64 = 27;
 /// denominator left the fraction permanently stuck at 11/12.
 const VOWEL_GLYPH_TOTAL: i64 = 11;
 
-/// A word's frequency for curriculum ordering: its root's corpus occurrences —
-/// learning any form of a common root pays off across the whole family, so the
-/// root count stays the long-term signal — but *capped at 25× the surface's own
-/// count*, so a rare inflected spelling of a common root (וּלְצָרַעַת occurs
-/// once; its root is everywhere) can't masquerade as easy vocabulary and pin a
-/// verse full of one-off forms. A proper name never gets the root's count at
-/// all — its bridged root is usually a spurious homograph (חֶצְרוֹ resolves
-/// to חצר "courtyard"), which used to rank one-off genealogy names as if they
-/// were common vocabulary. Assumes `sm`, `r` and `s` are joined.
-const WORD_FREQ: &str = "CASE WHEN COALESCE(sm.is_name, 0) = 1 THEN s.occurrences \
-     ELSE MIN(COALESCE(r.n_occurrences, s.occurrences), s.occurrences * 25) END";
+/// A word's frequency for curriculum ordering. The simplest attested verbal
+/// form that opens a root family uses the root's corpus frequency: choosing a
+/// common family opener unlocks useful related surfaces. Every subsequent form
+/// — and every nominal surface — must earn its place by its own frequency. This
+/// prevents a rare noun or inflection from borrowing a large (or spuriously
+/// bridged) root count: נְכֹאת occurs twice and therefore ranks as 2, not as 50
+/// through its polluted נכא root. `form_tier >= 5` identifies verbs; roots with
+/// no attested Qal still give their simplest attested verbal form the opener
+/// role assigned by `family_base`. Assumes `sm`, `r` and `s` are joined.
+const WORD_FREQ: &str = "CASE WHEN sm.family_base = 1 AND sm.form_tier >= 5 \
+     THEN COALESCE(r.n_occurrences, s.occurrences) ELSE s.occurrences END";
 
 /// Not a proper name — the words that count as real vocabulary. A verse with
 /// no unknown real word teaches nothing and sorts last in targeting
@@ -873,7 +885,9 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             is_name      INTEGER NOT NULL,
             is_qal       INTEGER NOT NULL,
             family_base  INTEGER NOT NULL,
-            vkey         TEXT    NOT NULL
+            vkey         TEXT    NOT NULL,
+            base_vkey    TEXT    NOT NULL,
+            base_surface_id INTEGER NOT NULL
          );
          CREATE INDEX IF NOT EXISTS progress.idx_surface_meta_vkey ON surface_meta(vkey);
          CREATE INDEX IF NOT EXISTS progress.idx_surface_meta_root ON surface_meta(root);
@@ -947,6 +961,32 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
     if !has_family_base {
         db.execute(
             "ALTER TABLE progress.surface_meta ADD COLUMN family_base INTEGER NOT NULL DEFAULT 1",
+            [],
+        )?;
+    }
+    let has_base_vkey = {
+        let mut stmt = db.prepare("PRAGMA progress.table_info(surface_meta)")?;
+        stmt.query_map([], |r| r.get::<_, String>(1))?
+            .collect::<rusqlite::Result<Vec<_>>>()?
+            .iter()
+            .any(|name| name == "base_vkey")
+    };
+    if !has_base_vkey {
+        db.execute(
+            "ALTER TABLE progress.surface_meta ADD COLUMN base_vkey TEXT NOT NULL DEFAULT ''",
+            [],
+        )?;
+    }
+    let has_base_surface_id = {
+        let mut stmt = db.prepare("PRAGMA progress.table_info(surface_meta)")?;
+        stmt.query_map([], |r| r.get::<_, String>(1))?
+            .collect::<rusqlite::Result<Vec<_>>>()?
+            .iter()
+            .any(|name| name == "base_surface_id")
+    };
+    if !has_base_surface_id {
+        db.execute(
+            "ALTER TABLE progress.surface_meta ADD COLUMN base_surface_id INTEGER NOT NULL DEFAULT 0",
             [],
         )?;
     }
@@ -1297,6 +1337,15 @@ fn form_tier(w: &HebrewWord) -> u8 {
     };
     let extra = w.prefix.is_some() as u8 + w.obj_suffix.is_some() as u8;
     (base + extra).min(TIER_MAX)
+}
+
+/// Frozen forms that the corpus prefilter intentionally treats as lexical
+/// items, but whose curriculum ordering still belongs to a verbal family.
+/// `לִקְרַאת` functions much like a preposition ("to meet; toward"), so it
+/// should keep that learner-facing gloss while waiting for the plain Qal
+/// citation form `קָרָא`. Its suffixed spellings belong to the same family.
+fn lexicalized_verb_tier(surface: &str) -> Option<u8> {
+    matches!(surface, "לִקְרַאת" | "לִקְרָאתוֹ" | "לִקְרַאתְכֶם").then_some(8)
 }
 
 impl Bible {
@@ -2273,22 +2322,27 @@ impl Bible {
         {
             let mut ins = self.conn().prepare(
                 "INSERT INTO progress.surface_meta(surface_id, root, form_tier, concept_mask, \
-                    glyph_mask, is_name, is_qal, family_base, vkey) \
-                 VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, 1, ?8)",
+                    glyph_mask, is_name, is_qal, family_base, vkey, base_vkey, base_surface_id) \
+                 VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, 1, ?8, ?9, ?1)",
             )?;
             for (surface_id, text, lexical_class) in surfaces {
                 // `surface.text` is already the normalised form the resolver uses.
                 let mask = surface_glyph_mask(&text);
                 let parsed = self.hebrew_word_by_surface_id(surface_id, text.clone());
                 let cmask = crate::grammar::concept_mask_for_surface(&text, parsed.as_ref());
+                let lexicalized_verb_tier = lexicalized_verb_tier(&text);
                 let (root, tier) = match &parsed {
-                    Some(w) => (w.root.clone(), form_tier(w) as i64),
+                    Some(w) => (
+                        w.root.clone(),
+                        lexicalized_verb_tier.unwrap_or_else(|| form_tier(w)) as i64,
+                    ),
                     None => (String::new(), 0),
                 };
-                let is_qal = parsed
-                    .as_ref()
-                    .and_then(|w| w.form.as_deref())
-                    .is_some_and(|form| form == "Qal" || form == "Qal passive");
+                let is_qal = lexicalized_verb_tier.is_some()
+                    || parsed
+                        .as_ref()
+                        .and_then(|w| w.form.as_deref())
+                        .is_some_and(|form| form == "Qal" || form == "Qal passive");
                 // A proper name, by any of the available signals: the noun
                 // bridge flags lexemes BDB marks `n.pr*` / `adj.gent` in the
                 // `pos` column (`w.is_name` — most name entries carry a bare
@@ -2330,6 +2384,12 @@ impl Bible {
                 let cmask = if blank { UNTEACHABLE_MASK } else { cmask };
                 concept_masks.insert(surface_id, cmask);
                 let vkey = crate::vocab_gloss::vocab_key(&text);
+                let base_vkey = parsed
+                    .as_ref()
+                    .and_then(|w| w.prefix.as_deref())
+                    .and_then(|prefix| crate::bible::strip_proclitic(&text, prefix))
+                    .map(|base| crate::vocab_gloss::vocab_key(&base))
+                    .unwrap_or_else(|| vkey.clone());
                 ins.execute(params![
                     surface_id,
                     root,
@@ -2338,10 +2398,28 @@ impl Bible {
                     mask,
                     is_name as i64,
                     is_qal as i64,
-                    vkey
+                    vkey,
+                    base_vkey
                 ])?;
             }
         }
+        // A mechanically stripped spelling is only a separate learning step
+        // when that bare form is actually attested. Normalising unattested
+        // bases back to the surface's own key makes the hot selection query a
+        // simple indexed join rather than a correlated existence check.
+        self.conn().execute(
+            "UPDATE progress.surface_meta AS sm SET base_vkey = vkey \
+             WHERE base_vkey <> vkey AND NOT EXISTS ( \
+                 SELECT 1 FROM progress.surface_meta base \
+                 WHERE base.vkey = sm.base_vkey)",
+            [],
+        )?;
+        self.conn().execute(
+            "UPDATE progress.surface_meta AS sm SET base_surface_id = ( \
+                 SELECT MIN(base.surface_id) FROM progress.surface_meta base \
+                 WHERE base.vkey = sm.base_vkey)",
+            [],
+        )?;
         // For a verbal family with an attested Qal, only its simplest Qal tier
         // is initially eligible. Without an attested Qal, the simplest form in
         // the family becomes the base instead.
@@ -2589,13 +2667,13 @@ impl Bible {
             format!(
                 "done.vkey IS NULL AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0 \
                  AND (COALESCE(sm.concept_mask, 0) & {UNTEACHABLE_MASK}) = 0 \
-                 AND {FAMILY_READY} AND {NOT_NAME}"
+                 AND {FAMILY_READY} AND {LEXICAL_BASE_READY} AND {NOT_NAME}"
             )
         } else {
             format!(
                 "done.vkey IS NULL AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0 \
                  AND (COALESCE(sm.concept_mask, 0) & {UNTEACHABLE_MASK}) = 0 \
-                 AND {FAMILY_READY}"
+                 AND {FAMILY_READY} AND {LEXICAL_BASE_READY}"
             )
         };
         // A verse with an unknown word whose card would be blank
@@ -2645,6 +2723,7 @@ impl Bible {
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
              LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
+             LEFT JOIN progress.word_srs base_ws ON base_ws.surface_id = sm.base_surface_id
              LEFT JOIN hebrewdb.roots r ON r.root = sm.root
              LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
              LEFT JOIN ({KNOWN_QAL_ROOTS}) kqr ON kqr.root = sm.root
@@ -2746,6 +2825,7 @@ impl Bible {
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
              LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
+             LEFT JOIN progress.word_srs base_ws ON base_ws.surface_id = sm.base_surface_id
              LEFT JOIN hebrewdb.roots r ON r.root = sm.root
              LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
              LEFT JOIN ({KNOWN_QAL_ROOTS}) kqr ON kqr.root = sm.root
@@ -2753,6 +2833,7 @@ impl Bible {
                AND done.vkey IS NULL
                AND (COALESCE(sm.concept_mask, 0) & ~?4) = 0
                AND {FAMILY_READY}
+               AND {LEXICAL_BASE_READY}
                {name_gate}
              {order}
              LIMIT 1"
@@ -4477,6 +4558,132 @@ mod tests {
         Ok(())
     }
 
+    /// Root frequency chooses which verbal family to open; it must not inflate
+    /// rare nouns or later forms once that choice has been made.
+    #[test]
+    fn root_frequency_only_boosts_verbal_family_openers() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+        bible.ensure_surface_meta()?;
+
+        let frequency = |surface: &str| -> rusqlite::Result<(i64, i64)> {
+            bible.conn().query_row(
+                &format!(
+                    "SELECT s.occurrences, {WORD_FREQ} \
+                     FROM hebrewdb.surface s \
+                     JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id \
+                     LEFT JOIN hebrewdb.roots r ON r.root = sm.root \
+                     WHERE s.text = ?1"
+                ),
+                params![surface],
+                |r| Ok((r.get(0)?, r.get(1)?)),
+            )
+        };
+
+        let (surface_frequency, curriculum_frequency) = frequency("נְכֹאת")?;
+        assert_eq!(surface_frequency, 2);
+        assert_eq!(curriculum_frequency, surface_frequency);
+
+        let (surface, surface_frequency, root_frequency): (String, i64, i64) =
+            bible.conn().query_row(
+                "SELECT s.text, s.occurrences, r.n_occurrences \
+                 FROM hebrewdb.surface s \
+                 JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id \
+                 JOIN hebrewdb.roots r ON r.root = sm.root \
+                 WHERE sm.family_base = 1 AND sm.form_tier >= 5 \
+                   AND r.n_occurrences > s.occurrences \
+                 ORDER BY r.n_occurrences DESC LIMIT 1",
+                [],
+                |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+            )?;
+        let (_, curriculum_frequency) = frequency(&surface)?;
+        assert_eq!(curriculum_frequency, root_frequency);
+        assert!(curriculum_frequency > surface_frequency);
+
+        let (later_qal, later_frequency): (String, i64) = bible.conn().query_row(
+            "SELECT s.text, s.occurrences \
+             FROM hebrewdb.surface s \
+             JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id \
+             JOIN hebrewdb.roots r ON r.root = sm.root \
+             WHERE sm.is_qal = 1 AND sm.family_base = 0 \
+               AND r.n_occurrences > s.occurrences \
+             ORDER BY r.n_occurrences DESC LIMIT 1",
+            [],
+            |r| Ok((r.get(0)?, r.get(1)?)),
+        )?;
+        let (_, curriculum_frequency) = frequency(&later_qal)?;
+        assert_eq!(curriculum_frequency, later_frequency);
+        Ok(())
+    }
+
+    /// The corpus treats לִקְרַאת as a frozen preposition for glossing, but
+    /// curriculum ordering must still hold it behind קָרָא, the Qal family base.
+    #[test]
+    fn lexicalized_liqrat_waits_for_qal_base() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+        bible.ensure_surface_meta()?;
+
+        let (liqrat_root, tier, is_qal, family_base): (String, i64, bool, bool) =
+            bible.conn().query_row(
+                "SELECT sm.root, sm.form_tier, sm.is_qal, sm.family_base \
+                 FROM progress.surface_meta sm \
+                 JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+                 WHERE s.text = 'לִקְרַאת'",
+                [],
+                |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?)),
+            )?;
+        assert_eq!(liqrat_root, "קרא");
+        assert!(
+            tier >= 5,
+            "lexicalized verb must pass through the family gate"
+        );
+        assert!(is_qal);
+        assert!(!family_base, "the infinitive must not open the family");
+
+        let ready = || -> rusqlite::Result<bool> {
+            bible.conn().query_row(
+                &format!(
+                    "SELECT {FAMILY_READY} FROM progress.surface_meta sm \
+                     JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+                     LEFT JOIN ({KNOWN_QAL_ROOTS}) kqr ON kqr.root = sm.root \
+                     WHERE s.text = 'לִקְרַאת'"
+                ),
+                [],
+                |r| r.get(0),
+            )
+        };
+        assert!(!ready()?, "לִקְרַאת must initially be held back");
+
+        let qara_id: i64 = bible.conn().query_row(
+            "SELECT surface_id FROM hebrewdb.surface WHERE text = 'קָרָא'",
+            [],
+            |r| r.get(0),
+        )?;
+        bible.conn().execute(
+            "INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days, \
+                due_epoch, reps, lapses, introduced_epoch, last_grade) \
+             VALUES ('קָרָא', ?1, 2.5, 1, 0, 3, 0, 0, 2)",
+            params![qara_id],
+        )?;
+        assert!(ready()?, "learning קָרָא must unlock לִקְרַאת");
+        Ok(())
+    }
+
     /// Proper names card as names, not as BDB citations or homograph senses:
     /// an uncurated name shows "(a name)" with the citation as its note (no
     /// spurious root, no quiz); a curated famous name shows its English name;
@@ -4638,6 +4845,65 @@ mod tests {
         let card = bible.word_card(&example)?.expect("example has a card");
         eprintln!("article example: {example} -> {}", card.gloss);
         assert!(!card.gloss.is_empty());
+        Ok(())
+    }
+
+    /// Attached proclitics are grammar layered onto vocabulary, not separate
+    /// lexical starting points: the learner must meet עִם before וְעִם.
+    #[test]
+    fn prefixed_word_waits_for_bare_lexical_form() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+        bible.ensure_surface_meta()?;
+
+        let (bare_id, bare_key): (i64, String) = bible.conn().query_row(
+            "SELECT sm.surface_id, sm.vkey FROM progress.surface_meta sm \
+             JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+             WHERE s.text = 'עִם'",
+            [],
+            |r| Ok((r.get(0)?, r.get(1)?)),
+        )?;
+        let (prefixed_key, base_key): (String, String) = bible.conn().query_row(
+            "SELECT sm.vkey, sm.base_vkey FROM progress.surface_meta sm \
+             JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+             WHERE s.text = 'וְעִם'",
+            [],
+            |r| Ok((r.get(0)?, r.get(1)?)),
+        )?;
+        assert_ne!(prefixed_key, bare_key);
+        assert_eq!(base_key, bare_key);
+
+        let ready = || -> rusqlite::Result<bool> {
+            bible.conn().query_row(
+                &format!(
+                    "SELECT {LEXICAL_BASE_READY} FROM progress.surface_meta sm \
+                     JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+                     LEFT JOIN progress.word_srs base_ws ON base_ws.surface_id = sm.base_surface_id \
+                     WHERE s.text = 'וְעִם'"
+                ),
+                [],
+                |r| r.get(0),
+            )
+        };
+        assert!(!ready()?, "prefixed form must initially be held back");
+
+        bible.conn().execute(
+            "INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days, \
+                due_epoch, reps, lapses, introduced_epoch, last_grade) \
+             VALUES ('עִם', ?1, 2.5, 1, 0, 1, 0, 0, 2)",
+            params![bare_id],
+        )?;
+        assert!(
+            ready()?,
+            "introducing the bare form unlocks its prefixed form"
+        );
         Ok(())
     }
 
