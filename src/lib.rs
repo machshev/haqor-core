@@ -37,6 +37,9 @@ pub mod tutor;
 /// core so the app stays presentation-only.
 pub mod vocab_gloss;
 
+/// Hand-maintained lexicon and learner-gloss overlays, merged by `gen-lexicon`.
+pub mod lexicon_overlay;
+
 /// Grammar concepts the tutor teaches (prefixes, conjugations, binyanim,
 /// construct, suffixes) with their teaching content, held in the core.
 pub mod grammar;
