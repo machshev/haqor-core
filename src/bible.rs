@@ -3,7 +3,7 @@
 use rusqlite::{Connection, OpenFlags, OptionalExtension};
 #[cfg(feature = "embedded")]
 use rust_embed::Embed;
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::path::Path;
 
 #[derive(Debug)]
@@ -556,6 +556,21 @@ fn curated_gloss(surface: &str) -> Option<(String, String)> {
         (normalize_hebrew_combining(&strip_accents(entry.surface)) == canonical)
             .then(|| (entry.root.to_string(), entry.gloss.to_string()))
     })
+}
+
+/// Apply learner-facing cleanup to one imported BDB row. Curated lexicon
+/// entries override terse or misleading BDB headlines, while root-section
+/// headwords keep their vowel points but drop cantillation and meteg.
+fn display_bdb_entry(mut entry: BdbEntry) -> BdbEntry {
+    if entry.pos_category() == "root" {
+        entry.headword = normalize_hebrew_combining(&strip_accents(&entry.headword));
+    }
+    if let Some((root, gloss)) = curated_gloss(&entry.headword)
+        && (root.is_empty() || root == entry.root)
+    {
+        entry.gloss = gloss;
+    }
+    entry
 }
 
 /// Lexicon-only `(root, gloss, prefix)` for a surface with no generated
@@ -1551,6 +1566,22 @@ impl Bible {
         Ok(display_hebrew(book, &words))
     }
 
+    /// Learner glosses aligned with the words in a verse.
+    pub fn verse_glosses(&self, book: u8, chapter: u8, verse: u8) -> rusqlite::Result<Vec<String>> {
+        let mut stmt = self.db.prepare("SELECT s.text FROM hebrewdb.verse_word vw JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 ORDER BY vw.position")?;
+        stmt.query_map([book, chapter, verse], |r| {
+            let word: String = r.get(0)?;
+            if let Some(curated) = crate::vocab_gloss::curated_gloss(&word) {
+                return Ok(curated.gloss.to_string());
+            }
+            Ok(self.hebrew_word_info(&word).map_or_else(String::new, |w| {
+                let gloss = inflected_gloss(&w);
+                if gloss.is_empty() { w.gloss } else { gloss }
+            }))
+        })?
+        .collect()
+    }
+
     pub fn get_chapter(
         &self,
         book: u8,
@@ -2080,25 +2111,37 @@ impl Bible {
         })
     }
 
-    /// Headline BDB gloss for a consonantal root: the first non-stub gloss in
-    /// lexicon order, with English-led glosses ranked before Hebrew-citation
-    /// sub-entries (mirroring [`bdb_rows`], but keyed by the `root` column).
+    /// Headline gloss for a consonantal root: a curated headword override when
+    /// present, otherwise the first non-stub BDB gloss in lexicon order, with
+    /// English-led glosses ranked before Hebrew-citation sub-entries (mirroring
+    /// [`bdb_rows`], but keyed by the `root` column).
     fn hebrew_root_gloss(&self, root: &str) -> String {
         let Ok(mut stmt) = self.db.prepare(
-            "SELECT gloss FROM lexdb.bdb \
+            "SELECT word, gloss FROM lexdb.bdb \
              WHERE root = ?1 AND gloss IS NOT NULL AND gloss <> '' \
              ORDER BY bdb_id",
         ) else {
             return String::new();
         };
         let Ok(rows) = stmt
-            .query_map([root], |row| row.get::<_, String>(0))
+            .query_map([root], |row| {
+                Ok((
+                    row.get::<_, Option<String>>(0)?.unwrap_or_default(),
+                    row.get::<_, String>(1)?,
+                ))
+            })
             .and_then(|rows| rows.collect::<rusqlite::Result<Vec<_>>>())
         else {
             return String::new();
         };
         let mut glosses: Vec<String> = rows
             .into_iter()
+            .map(|(word, imported)| {
+                curated_gloss(&word)
+                    .filter(|(curated_root, _)| curated_root == root)
+                    .map(|(_, gloss)| gloss)
+                    .unwrap_or(imported)
+            })
             .filter(|gloss| !cross_reference_gloss(gloss) && !root_stub_gloss(gloss))
             .collect();
         glosses.sort_by_key(|gloss| {
@@ -2161,13 +2204,15 @@ impl Bible {
             .filter(|(w, ..)| {
                 !has_exact || normalize_hebrew_combining(&strip_accents(w)) == canonical
             })
-            .map(|(word, root, gloss, content_json, pos, is_root)| BdbEntry {
-                headword: normalize_hebrew_combining(&word),
-                root,
-                gloss,
-                content_json,
-                pos,
-                is_root,
+            .map(|(word, root, gloss, content_json, pos, is_root)| {
+                display_bdb_entry(BdbEntry {
+                    headword: normalize_hebrew_combining(&word),
+                    root,
+                    gloss,
+                    content_json,
+                    pos,
+                    is_root,
+                })
             })
             .filter(BdbEntry::has_content)
             .collect())
@@ -2186,7 +2231,7 @@ impl Bible {
         )?;
         let entries = stmt
             .query_map([root], |row| {
-                Ok(BdbEntry {
+                Ok(display_bdb_entry(BdbEntry {
                     headword: normalize_hebrew_combining(
                         row.get::<_, Option<String>>(0)?
                             .unwrap_or_default()
@@ -2197,12 +2242,23 @@ impl Bible {
                     content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
                     pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
                     is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
-                })
+                }))
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         // Drop content-less section root-headers (empty gloss + no senses); they
-        // would render as blank rows in the tree. See [`BdbEntry::has_content`].
-        Ok(entries.into_iter().filter(BdbEntry::has_content).collect())
+        // would render as blank rows in the tree. Root headers imported from
+        // both the Hebrew and Aramaic sections can also differ only by a stress
+        // accent; after display normalisation, keep one copy of each headline.
+        // See [`BdbEntry::has_content`].
+        let mut seen_root_rows = HashSet::new();
+        Ok(entries
+            .into_iter()
+            .filter(BdbEntry::has_content)
+            .filter(|entry| {
+                entry.pos_category() != "root"
+                    || seen_root_rows.insert((entry.headword.clone(), entry.gloss.clone()))
+            })
+            .collect())
     }
 
     /// The single BDB lexeme with this entry id (`bdb.bdb_id`), or `None` if no
@@ -2219,7 +2275,7 @@ impl Bible {
                  WHERE bdb_id = ?1",
                 [bdb_id],
                 |row| {
-                    Ok(BdbEntry {
+                    Ok(display_bdb_entry(BdbEntry {
                         headword: normalize_hebrew_combining(
                             row.get::<_, Option<String>>(0)?
                                 .unwrap_or_default()
@@ -2230,7 +2286,7 @@ impl Bible {
                         content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
                         pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
                         is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
-                    })
+                    }))
                 },
             )
             .optional()
@@ -3205,6 +3261,17 @@ mod tests {
         assert_eq!(info.tense.as_deref(), Some("Perfect"));
         assert_eq!(info.person.as_deref(), Some("Third"));
 
+        // היה's BDB article begins "fall out; ...; be". The learner-facing
+        // inflection must use the copula, including its irregular English past.
+        let was = bible
+            .hebrew_word_info("הָיְתָה")
+            .expect("3fs perfect of היה should parse");
+        assert_eq!(was.root, "היה");
+        assert_eq!(was.gloss, "be");
+        assert_eq!(was.tense.as_deref(), Some("Perfect"));
+        assert_eq!(was.gender.as_deref(), Some("Feminine"));
+        assert_eq!(inflected_gloss(&was), "she was");
+
         // Root tree: glossed BDB lexemes of the root, with structured content.
         let tree = bible.hebrew_bdb_by_root(&info.root).unwrap();
         assert!(!tree.is_empty());
@@ -3217,6 +3284,23 @@ mod tests {
         assert!(!form.is_empty());
         assert!(root.len() >= form.len());
         assert!(root.iter().all(|o| o.book < 40));
+    }
+
+    #[test]
+    fn verse_glosses_prefer_intext_override_to_lexicon_gloss() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+
+        // Gen 1:1 contains אֵת at position 3. Its Lexicon header remains the
+        // descriptive entry, while the compact interlinear gloss points left
+        // toward the marked object.
+        let info = bible
+            .hebrew_word_info("אֵת")
+            .expect("object marker resolves");
+        assert_eq!(info.gloss, "mark of the accusative");
+        let glosses = bible.verse_glosses(1, 1, 1).unwrap();
+        assert_eq!(glosses[3], "←");
+        assert_eq!(glosses[5], "and ←");
     }
 
     #[test]
@@ -3326,9 +3410,26 @@ mod tests {
         // אֱלֹהִים "God" — a noun whose stem matches a BDB headword (root אלה).
         let info = bible.hebrew_word_info("אֱלֹהִים").expect("noun should parse");
         assert_eq!(info.root, "אלה");
+        assert_eq!(info.gloss, "God; gods");
         assert_eq!(info.gender.as_deref(), Some("Masculine"));
         let tree = bible.hebrew_bdb_by_root(&info.root).unwrap();
         assert!(!tree.is_empty());
+        let elohim = tree
+            .iter()
+            .find(|entry| entry.headword == "אֱלֹהִים")
+            .expect("Elohim should appear in its root tree");
+        assert_eq!(elohim.gloss, "God; gods");
+
+        // Hebrew and Aramaic BDB both contain the demonstrative root header;
+        // their only visible difference is a cantillation mark. The Lexicon
+        // Roots section should receive one accent-free row.
+        let these: Vec<_> = tree
+            .iter()
+            .filter(|entry| entry.pos_category() == "root" && entry.gloss == "these")
+            .collect();
+        assert_eq!(these.len(), 1);
+        assert_eq!(these[0].headword, "אֵלֶּה");
+        assert_eq!(strip_accents(&these[0].headword), these[0].headword);
 
         // הָאָרֶץ "the earth" — prefixed noun with a final-tsade stem (אֶרֶץ).
         // The pointed stem misses BDB's headword spelling, so the consonant
@@ -3342,6 +3443,27 @@ mod tests {
                 .unwrap()
                 .is_empty()
         );
+
+        // The conjunction does not turn the article+noun phrase into a verb.
+        // The generator used to retain a spurious Piel imperative of ארצ,
+        // which made the learner-facing gloss read "earth!".
+        let and_earth = bible
+            .hebrew_word_info("וְהָאָרֶץ")
+            .expect("conjunctive noun should parse");
+        assert_eq!(and_earth.root, "ארצ");
+        assert!(and_earth.form.is_none());
+        assert!(and_earth.tense.is_none());
+        assert_eq!(inflected_gloss(&and_earth), "and the earth");
+        let verb_rows: i64 = bible
+            .conn()
+            .query_row(
+                "SELECT COUNT(*) FROM hebrewdb.analyses a \
+                 JOIN hebrewdb.surface s USING(surface_id) WHERE s.text = ?1",
+                ["וְהָאָרֶץ"],
+                |row| row.get(0),
+            )
+            .unwrap();
+        assert_eq!(verb_rows, 0);
     }
 
     #[test]
