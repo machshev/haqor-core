@@ -20,8 +20,9 @@
 //! - `noun_analyses` — one row per candidate noun analysis (stem/class/inflected
 //!   slot/prefix), produced by reverse-parsing each surface against the
 //!   lexicon's common-, adjective- and proper-noun paradigms. Independent of
-//!   the verb pass, so a true homograph carries rows in both. Only populated
-//!   when a lexicon is given.
+//!   the verb pass. Generated verb readings are omitted when OSHB attests the
+//!   surface only as a noun; genuine verb/noun homographs keep both. Only
+//!   populated when a lexicon is given.
 //! - `roots` — distinct roots seen, with gizra and frequency.
 //!
 //! Two views make the gaps reviewable, frequency-ranked so the highest-impact
@@ -772,8 +773,10 @@ fn analyze_surfaces(
     // Noun pass: when a lexicon is available, reverse-parse every surface
     // against the inflectional paradigms of its common-noun, adjective and
     // proper-noun headwords. This is independent of the verb parser, so a
-    // genuine noun/verb homograph keeps both readings; function words (which
-    // are never nouns) are skipped, mirroring the verb pass.
+    // genuine noun/verb homograph initially keeps both readings; the corpus-
+    // attestation pass later removes the verb side when OSHB never uses that
+    // surface as a verb. Function words (which are never nouns) are skipped,
+    // mirroring the verb pass.
     let noun_inventory = match lexicon_db {
         Some(p) => {
             let mut stems = load_noun_inventory(p)?;
@@ -1018,17 +1021,17 @@ pub fn generate_hebrew(
     build_hebrew(bible_db, output, lexicon_db, morphhb_dir)
 }
 
-/// Re-order each surface's verb analyses by OSHB corpus attestation, most-
-/// attested first. Stable (`sort_by_cached_key`), so equally-attested analyses
-/// — including the unattested majority, all at count 0 — keep the parser's
+/// Remove generated verb readings from noun-parsed surfaces that OSHB never
+/// attests as verbs, then re-order the remaining verb analyses by corpus
+/// attestation, most-attested first. This removes false verb readings such as
+/// וְהָאָרֶץ as a Piel imperative while retaining genuine verb/noun homographs.
+/// Stable (`sort_by_cached_key`), so equally-attested analyses keep the parser's
 /// `sort_matches` order. A no-op (with a warning) if `morphhb_dir` is absent or
 /// missing on disk, so a build without the source still succeeds.
-///
-/// This embeds OSHB (CC BY 4.0) tagging frequency as a ranking prior; the
-/// generator still produces the candidate *set*, attestation only orders it.
 fn rank_by_attestation(
     surfaces: &[String],
     analyses: &mut [Vec<VerbMatch>],
+    noun_analyses: &[Vec<NounMatch>],
     morphhb_dir: Option<&Path>,
 ) -> Result<()> {
     let Some(dir) = morphhb_dir.filter(|d| d.exists()) else {
@@ -1037,6 +1040,11 @@ fn rank_by_attestation(
     };
     info!("Ranking analyses by OSHB corpus attestation");
     let attest = crate::generate::harness::collect_attestation(dir)?;
+    let attested_verb_surfaces: HashSet<String> =
+        attest.keys().map(|(surface, _)| surface.clone()).collect();
+    let (pruned_surfaces, pruned_analyses) =
+        prune_noun_only_verb_analyses(surfaces, analyses, noun_analyses, &attested_verb_surfaces);
+    info!("  removed {pruned_analyses} verb analyses from {pruned_surfaces} noun-only surfaces");
     for (t, matches) in surfaces.iter().zip(analyses.iter_mut()) {
         if matches.len() > 1 {
             matches.sort_by_cached_key(|m| {
@@ -1053,6 +1061,27 @@ fn rank_by_attestation(
         }
     }
     Ok(())
+}
+
+/// Drop every generated verb candidate for a surface that has at least one
+/// noun analysis but no corpus evidence of verbal use. Generic over the row
+/// types so the policy can be unit-tested independently of morphology setup.
+fn prune_noun_only_verb_analyses<V, N>(
+    surfaces: &[String],
+    verbs: &mut [Vec<V>],
+    nouns: &[Vec<N>],
+    attested_verb_surfaces: &HashSet<String>,
+) -> (usize, usize) {
+    let mut pruned_surfaces = 0;
+    let mut pruned_analyses = 0;
+    for ((surface, verb), noun) in surfaces.iter().zip(verbs.iter_mut()).zip(nouns) {
+        if !noun.is_empty() && !verb.is_empty() && !attested_verb_surfaces.contains(surface) {
+            pruned_surfaces += 1;
+            pruned_analyses += verb.len();
+            verb.clear();
+        }
+    }
+    (pruned_surfaces, pruned_analyses)
 }
 
 /// Full build: read every OT token from `bible_db` and write a fresh `hebrew.db`.
@@ -1082,7 +1111,7 @@ fn build_hebrew(
     // see the attestation metric in the eval harness). Stable, so analyses of
     // equal attestation keep their `sort_matches` order. Skipped if morphhb is
     // unavailable (the order then falls back to the generator's own ranking).
-    rank_by_attestation(&surfaces, &mut analyses, morphhb_dir)?;
+    rank_by_attestation(&surfaces, &mut analyses, &noun_analyses, morphhb_dir)?;
 
     // Gold override for the stored `lexical_class` label (the analyses above
     // are untouched, so parse coverage and the eval are unaffected): OSHB tags
@@ -1498,7 +1527,7 @@ fn update_missing(
         noun,
         gold,
     } = analyze_surfaces(&texts, lexicon_db, VerbStrategy::Indexed)?;
-    rank_by_attestation(&texts, &mut verb, morphhb_dir)?;
+    rank_by_attestation(&texts, &mut verb, &noun, morphhb_dir)?;
 
     let mut resolved = 0usize;
     let tx = db.transaction()?;
@@ -1568,6 +1597,41 @@ fn update_missing(
 #[cfg(test)]
 mod verse_stats_tests {
     use super::*;
+
+    #[test]
+    fn noun_only_surfaces_drop_generated_verb_candidates() {
+        let surfaces = vec![
+            "noun-only".to_string(),
+            "homograph".to_string(),
+            "verb-only".to_string(),
+        ];
+        let mut verbs = vec![vec![1, 2], vec![3], vec![4]];
+        let nouns = vec![vec![()], vec![()], Vec::new()];
+        let attested = HashSet::from(["homograph".to_string()]);
+
+        assert_eq!(
+            prune_noun_only_verb_analyses(&surfaces, &mut verbs, &nouns, &attested),
+            (1, 2)
+        );
+        assert!(verbs[0].is_empty());
+        assert_eq!(verbs[1], vec![3]);
+        assert_eq!(verbs[2], vec![4]);
+    }
+
+    #[test]
+    fn corpus_attestation_recognises_pointing_order_variants() -> Result<()> {
+        let morphhb = Path::new(env!("CARGO_MANIFEST_DIR")).join("src_texts/morphhb");
+        if !morphhb.join("wlc").exists() {
+            return Ok(());
+        }
+        let attest = crate::generate::harness::collect_attestation(&morphhb)?;
+        let surface = normalize_surface("שָׁלַח");
+        assert!(
+            attest.keys().any(|(candidate, _)| candidate == &surface),
+            "OSHB verb attestation should protect {surface} from noun-only pruning"
+        );
+        Ok(())
+    }
 
     #[test]
     fn grammar_columns_are_boolean_and_or_each_words_rules() -> Result<()> {
