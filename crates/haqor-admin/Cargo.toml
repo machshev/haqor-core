@@ -9,6 +9,6 @@ repository.workspace = true
 [dependencies]
 anyhow = "1.0.81"
 clap = { version = "4.5.42", features = ["derive"] }
-haqor-core = { path = "../haqor-core", version = "0.5.0" }
+haqor-core = { path = "../haqor-core", version = "0.6.0" }
 rusqlite = { version = "0.37.0", features = ["bundled"] }
 serde_json = "1.0"
