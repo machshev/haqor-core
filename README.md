@@ -27,6 +27,23 @@ cargo run -- db gen-hebrew --force
 cargo run -- admin
 ```
 
+### LAN progress sync
+
+Run a personal server on the LAN that the app can reach:
+
+```sh
+cargo run --release -- sync-server \
+  --bind 0.0.0.0:8788 \
+  --progress "$HOME/.local/share/haqor/progress.db" \
+  --token "choose-a-long-random-secret"
+```
+
+Then in the app open **Learn to read → Study pace → Progress sync**, enter the
+machine's LAN address (for example `http://192.168.1.10:8788`) and the same
+token. The app syncs when it launches and shortly after each answer. The
+built-in service uses HTTP with a bearer token, so run it only on a trusted
+LAN (or place it behind a VPN or HTTPS reverse proxy).
+
 The admin server can also be run independently:
 
 ```sh
