@@ -1541,6 +1541,20 @@ impl Bible {
         crate::tutor::init_progress_schema(&self.db)
     }
 
+    /// Export the learner's writable progress schema as a consistent SQLite
+    /// snapshot. This is the safe counterpart to copying `progress.db` while
+    /// a lesson is being answered.
+    pub fn export_progress_snapshot<P: AsRef<Path>>(&self, destination: P) -> rusqlite::Result<()> {
+        crate::progress_sync::export_progress_snapshot(&self.db, destination.as_ref())
+    }
+
+    /// Merge a progress snapshot received from another device. Corpus-derived
+    /// caches are refreshed lazily by the next tutor request, while individual
+    /// review state and one-time teaching concepts converge immediately.
+    pub fn merge_progress_snapshot<P: AsRef<Path>>(&self, snapshot: P) -> rusqlite::Result<()> {
+        crate::progress_sync::merge_progress_snapshot(&self.db, snapshot.as_ref())
+    }
+
     /// Crate-internal access to the underlying connection (all corpus schemas
     /// plus, once [`Bible::attach_progress`] has run, `progress`), for sibling
     /// modules such as [`crate::tutor`] that query across them.

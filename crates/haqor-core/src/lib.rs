@@ -15,6 +15,9 @@ pub mod lexicon_overlay;
 /// Pronominal-ending inventory and stem/suffix splitting.
 pub mod pronoun_suffix;
 
+/// Safe snapshot and merge support for synchronising learner progress.
+pub mod progress_sync;
+
 /// Learner-facing romanization of pointed Hebrew.
 pub mod romanize;
 
