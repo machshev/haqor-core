@@ -59,7 +59,7 @@ enum Commands {
         #[arg(long, default_value = "data/hebrew.db")]
         hebrew: PathBuf,
     },
-    /// Serve and merge encrypted-token protected learner progress on your LAN.
+    /// Serve and merge bearer-token protected learner progress on your LAN.
     SyncServer {
         /// LAN address to listen on. Use 0.0.0.0 to accept devices on the LAN.
         #[arg(long, default_value = "0.0.0.0:8788")]
