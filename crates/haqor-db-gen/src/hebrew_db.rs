@@ -39,7 +39,7 @@ use std::collections::{HashMap, HashSet};
 use std::path::Path;
 
 use anyhow::{Context, Result};
-use haqor_runtime::normalize_surface;
+use haqor_core::normalize_surface;
 use log::info;
 use rayon::prelude::*;
 use rusqlite::Connection;
@@ -248,7 +248,7 @@ fn gizra_label(m: &VerbMatch) -> String {
 }
 
 fn create_schema(db: &Connection) -> Result<()> {
-    let grammar_columns = haqor_runtime::grammar::concepts()
+    let grammar_columns = haqor_core::grammar::concepts()
         .iter()
         .map(|concept| {
             format!(
@@ -401,7 +401,7 @@ fn populate_verse_tables(
         "INSERT INTO verse_word(book, chapter, verse, position, surface_id) \
          VALUES (?1, ?2, ?3, ?4, ?5)",
     )?;
-    let concepts = haqor_runtime::grammar::concepts();
+    let concepts = haqor_core::grammar::concepts();
     let columns = concepts
         .iter()
         .map(|c| c.key.replace('-', "_"))
@@ -487,8 +487,8 @@ fn surface_concept_masks(
         .map(|(id, surface)| {
             let word = if let Some(m) = verbs[id].first() {
                 let pgn = m.pgn.label();
-                let (person, gender, number) = haqor_runtime::data_support::decode_pgn(&pgn);
-                Some(haqor_runtime::bible::HebrewWord {
+                let (person, gender, number) = haqor_core::data_support::decode_pgn(&pgn);
+                Some(haqor_core::bible::HebrewWord {
                     word: surface.clone(),
                     root: m.root.letters.iter().collect(),
                     form: Some(m.binyan.name().to_string()),
@@ -502,8 +502,8 @@ fn surface_concept_masks(
                     ..Default::default()
                 })
             } else if let Some(g) = gold[id].first() {
-                let (person, gender, number) = haqor_runtime::data_support::decode_pgn(g.pgn);
-                Some(haqor_runtime::bible::HebrewWord {
+                let (person, gender, number) = haqor_core::data_support::decode_pgn(g.pgn);
+                Some(haqor_core::bible::HebrewWord {
                     word: surface.clone(),
                     root: g.root.to_string(),
                     form: Some(g.binyan.to_string()),
@@ -515,8 +515,8 @@ fn surface_concept_masks(
                 })
             } else {
                 nouns[id].first().map(|n| {
-                    let (number, state) = haqor_runtime::data_support::decode_noun_label(&n.label);
-                    haqor_runtime::bible::HebrewWord {
+                    let (number, state) = haqor_core::data_support::decode_noun_label(&n.label);
+                    haqor_core::bible::HebrewWord {
                         word: surface.clone(),
                         number,
                         state,
@@ -525,7 +525,7 @@ fn surface_concept_masks(
                     }
                 })
             };
-            haqor_runtime::grammar::concept_mask_for_surface(surface, word.as_ref())
+            haqor_core::grammar::concept_mask_for_surface(surface, word.as_ref())
         })
         .collect()
 }
@@ -881,7 +881,7 @@ fn rebuild_roots(db: &Connection) -> Result<()> {
 /// carry a surface row but no generated analysis, so the runtime parse lookup
 /// would otherwise return nothing for them. Resolving each to a `(root, gloss,
 /// prefix)` at build time turns the runtime read into a single indexed lookup
-/// (see [`haqor_runtime::bible::Bible::hebrew_word_info`]).
+/// (see [`haqor_core::bible::Bible::hebrew_word_info`]).
 ///
 /// A no-op without a lexicon (there is nothing to bridge to). Idempotent:
 /// clears `lexical_analyses` first, so it is safe on a rebuilt db.
@@ -911,7 +911,7 @@ fn populate_lexical_bridge(db: &mut Connection, lexicon_db: Option<&Path>) -> Re
     let bridged: Vec<(i64, String, String, String)> = unanalysed
         .iter()
         .filter_map(|(id, text)| {
-            haqor_runtime::data_support::lexicon_fallback(db, text)
+            haqor_core::data_support::lexicon_fallback(db, text)
                 .map(|(root, gloss, prefix)| (*id, root, gloss, prefix))
         })
         .collect();
@@ -1573,8 +1573,8 @@ mod verse_stats_tests {
         let db = Connection::open_in_memory()?;
         create_schema(&db)?;
 
-        let article = haqor_runtime::grammar::concept_bit("article").unwrap();
-        let perfect = haqor_runtime::grammar::concept_bit("perfect").unwrap();
+        let article = haqor_core::grammar::concept_bit("article").unwrap();
+        let perfect = haqor_core::grammar::concept_bit("perfect").unwrap();
         let occurrences = vec![
             Occurrence {
                 surface_id: 0,

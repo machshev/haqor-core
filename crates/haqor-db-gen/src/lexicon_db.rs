@@ -38,7 +38,7 @@ use serde_json::{Map, Value, json};
 use haqor_morphology::{Gizra, NounStem, Root, hebrew};
 
 fn load_overlays(db: &mut Connection, path: &Path) -> Result<usize> {
-    let overlay = haqor_runtime::lexicon_overlay::load(path)?;
+    let overlay = haqor_core::lexicon_overlay::load(path)?;
     db.execute_batch(
         "CREATE TABLE lexicon_overrides(
             surface TEXT PRIMARY KEY, root TEXT NOT NULL, gloss TEXT NOT NULL);

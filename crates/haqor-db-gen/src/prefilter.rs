@@ -24,7 +24,7 @@ use std::path::Path;
 use anyhow::{Context, Result};
 use rusqlite::Connection;
 
-use haqor_runtime::normalize_surface;
+use haqor_core::normalize_surface;
 
 /// Single-consonant proclitics (conjunction ו, prepositions ב/כ/ל/מ, article ה,
 /// relative ש) — the same set the verb parser peels.

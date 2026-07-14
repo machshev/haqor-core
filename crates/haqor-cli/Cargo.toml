@@ -1,14 +1,20 @@
 [package]
-name = "haqor-admin"
+name = "haqor-cli"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
-description = "Local web editor for Haqor lexical overlays"
+description = "Command-line tools for Haqor"
 repository.workspace = true
+
+[[bin]]
+name = "haqor"
+path = "src/main.rs"
 
 [dependencies]
 anyhow = "1.0.81"
 clap = { version = "4.5.42", features = ["derive"] }
+env_logger = "0.11.5"
+haqor-admin = { path = "../haqor-admin" }
 haqor-core = { path = "../haqor-core" }
-rusqlite = { version = "0.37.0", features = ["bundled"] }
-serde_json = "1.0"
+haqor-db-gen = { path = "../haqor-db-gen" }
+log = "0.4.22"

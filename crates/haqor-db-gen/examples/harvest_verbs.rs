@@ -1,7 +1,7 @@
 //! Throwaway: harvest the curated irregular-verb table (unmodeled stems) from
 //! the OSHB gold, for the surfaces still in review_missing. Emits Rust tuples
 //! ready to paste into src/morphology/irregular_verb.rs.
-use haqor_data::normalize_surface;
+use haqor_db_gen::normalize_surface;
 use quick_xml::Reader;
 use quick_xml::events::Event;
 use rusqlite::Connection;
