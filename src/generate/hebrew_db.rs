@@ -39,6 +39,7 @@ use std::collections::{HashMap, HashSet};
 use std::path::Path;
 
 use anyhow::{Context, Result};
+use haqor_runtime::normalize_surface;
 use log::info;
 use rayon::prelude::*;
 use rusqlite::Connection;
@@ -174,72 +175,6 @@ fn has_hebrew_letter(token: &str) -> bool {
     token
         .chars()
         .any(|c| (0x05D0..=0x05EA).contains(&(c as u32)))
-}
-
-/// Canonical combining class for the niqqud points [`normalize_surface`] keeps;
-/// base letters and anything else return 0 (a non-combining boundary). Used to
-/// reorder marks within a cluster so source forms that differ only in mark order
-/// (e.g. shin-dot before vs. after a vowel) collapse to one surface.
-fn combining_class(c: char) -> u8 {
-    match c as u32 {
-        0x05B0 => 10,
-        0x05B1 => 11,
-        0x05B2 => 12,
-        0x05B3 => 13,
-        0x05B4 => 14,
-        0x05B5 => 15,
-        0x05B6 => 16,
-        0x05B7 => 17,
-        0x05B8 | 0x05C7 => 18,
-        0x05B9 => 19,
-        0x05BB => 20,
-        0x05BC => 21,
-        0x05C1 => 24,
-        0x05C2 => 25,
-        _ => 0,
-    }
-}
-
-/// Reduce a raw token to exactly the characters the morphology parser consumes:
-/// the consonants (including final forms) and the niqqud points it recognises.
-/// Cantillation (te'amim), meteg, rafe and other marks are dropped, so tokens
-/// that differ only in cantillation collapse to a single surface — the parser
-/// already ignores those marks, so they never affect the analysis. Marks within
-/// each consonant cluster are sorted into canonical (combining-class) order so
-/// order variants in the source collapse too. The result is still readable
-/// pointed Hebrew and serves as the stored display form.
-pub fn normalize_surface(token: &str) -> String {
-    let kept: Vec<char> = token
-        .chars()
-        .filter(|&c| {
-            let n = c as u32;
-            (0x05D0..=0x05EA).contains(&n)
-                || matches!(
-                    n,
-                    0x05B0..=0x05B9 | 0x05BB | 0x05BC | 0x05C1 | 0x05C2 | 0x05C7
-                )
-        })
-        .collect();
-
-    // Stable canonical reordering: sort each run of combining marks (ccc > 0)
-    // by combining class, leaving base letters as fixed boundaries.
-    let mut out = String::with_capacity(kept.len() * 2);
-    let mut i = 0;
-    while i < kept.len() {
-        if combining_class(kept[i]) == 0 {
-            out.push(kept[i]);
-            i += 1;
-        } else {
-            let start = i;
-            while i < kept.len() && combining_class(kept[i]) != 0 {
-                i += 1;
-            }
-            let mut run = kept[start..i].to_vec();
-            run.sort_by_key(|&c| combining_class(c));
-            out.extend(run);
-        }
-    }
-    out
 }
 
 /// A single OT token position.
@@ -552,7 +487,7 @@ fn surface_concept_masks(
         .map(|(id, surface)| {
             let word = if let Some(m) = verbs[id].first() {
                 let pgn = m.pgn.label();
-                let (person, gender, number) = crate::bible::decode_pgn(&pgn);
+                let (person, gender, number) = haqor_runtime::data_support::decode_pgn(&pgn);
                 Some(crate::bible::HebrewWord {
                     word: surface.clone(),
                     root: m.root.letters.iter().collect(),
@@ -567,7 +502,7 @@ fn surface_concept_masks(
                     ..Default::default()
                 })
             } else if let Some(g) = gold[id].first() {
-                let (person, gender, number) = crate::bible::decode_pgn(g.pgn);
+                let (person, gender, number) = haqor_runtime::data_support::decode_pgn(g.pgn);
                 Some(crate::bible::HebrewWord {
                     word: surface.clone(),
                     root: g.root.to_string(),
@@ -580,7 +515,7 @@ fn surface_concept_masks(
                 })
             } else {
                 nouns[id].first().map(|n| {
-                    let (number, state) = crate::bible::decode_noun_label(&n.label);
+                    let (number, state) = haqor_runtime::data_support::decode_noun_label(&n.label);
                     crate::bible::HebrewWord {
                         word: surface.clone(),
                         number,
@@ -976,7 +911,7 @@ fn populate_lexical_bridge(db: &mut Connection, lexicon_db: Option<&Path>) -> Re
     let bridged: Vec<(i64, String, String, String)> = unanalysed
         .iter()
         .filter_map(|(id, text)| {
-            crate::bible::lexicon_fallback(db, text)
+            haqor_runtime::data_support::lexicon_fallback(db, text)
                 .map(|(root, gloss, prefix)| (*id, root, gloss, prefix))
         })
         .collect();

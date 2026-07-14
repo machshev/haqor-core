@@ -4521,7 +4521,7 @@ mod tests {
     /// content words with a resolved root.
     #[test]
     fn cold_start_opens_on_content_words_not_genealogy() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -4588,7 +4588,7 @@ mod tests {
     /// rare nouns or later forms once that choice has been made.
     #[test]
     fn root_frequency_only_boosts_verbal_family_openers() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -4653,7 +4653,7 @@ mod tests {
     /// curriculum ordering must still hold it behind קָרָא, the Qal family base.
     #[test]
     fn lexicalized_liqrat_waits_for_qal_base() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -4716,7 +4716,7 @@ mod tests {
     /// a proclitic-prefixed curated name composes ("to Jacob", not "to heel").
     #[test]
     fn name_cards_show_names_not_bdb_citations() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -4785,7 +4785,7 @@ mod tests {
     /// app so names render distinctly.
     #[test]
     fn surface_meta_flags_proper_names() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -4878,7 +4878,7 @@ mod tests {
     /// lexical starting points: the learner must meet עִם before וְעִם.
     #[test]
     fn prefixed_word_waits_for_bare_lexical_form() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -4937,7 +4937,7 @@ mod tests {
     /// use them, each at most once, and never block reaching a read.
     #[test]
     fn grammar_concepts_explained_once_before_words() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5029,7 +5029,7 @@ mod tests {
     /// appear on the [`Bible::seen_concepts`] reference list.
     #[test]
     fn intro_deck_served_first_and_once() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5067,7 +5067,7 @@ mod tests {
     /// the stub for אֻלַי, an unrelated lexeme sharing the א־ל־י skeleton.
     #[test]
     fn word_card_never_shows_cross_reference_stub() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5095,7 +5095,7 @@ mod tests {
     /// not its root's "house".
     #[test]
     fn word_card_headlines_the_surface_meaning() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5135,7 +5135,7 @@ mod tests {
 
     #[test]
     fn conjunctive_imperfect_cards_and_teaches_its_form() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5165,7 +5165,7 @@ mod tests {
     /// headline "newness").
     #[test]
     fn word_card_segolate_noun_beats_verb_group_order() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5189,7 +5189,7 @@ mod tests {
     /// track and never shown for words with nothing to drill (tier < 2).
     #[test]
     fn form_is_drilled_after_meaning() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5344,7 +5344,7 @@ mod tests {
     }
 
     fn open_with_progress() -> Option<Bible> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return None;
         }
@@ -5788,7 +5788,7 @@ mod tests {
     /// syllable quiz likewise builds from upcoming consonants and vowels.
     #[test]
     fn early_reviews_fall_back_on_upcoming_glyph_distractors() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5832,7 +5832,7 @@ mod tests {
 
     #[test]
     fn vowel_review_builds_random_syllable_distractors() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5880,7 +5880,7 @@ mod tests {
 
     #[test]
     fn tutor_stats_track_activity_streak_and_accuracy() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -5916,7 +5916,7 @@ mod tests {
 
     #[test]
     fn grading_a_syllable_credits_every_glyph() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6127,7 +6127,7 @@ mod tests {
     /// at a fixed `now`).
     #[test]
     fn cold_start_reaches_a_read() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6201,7 +6201,7 @@ mod tests {
     /// straight through to `ReadVerse` again every single call.
     #[test]
     fn misread_word_does_not_re_serve_the_same_verse_forever() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6301,7 +6301,7 @@ mod tests {
     /// learner just kept re-drilling the same one or two cards forever.
     #[test]
     fn stuck_word_does_not_block_introducing_other_words() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6452,7 +6452,7 @@ mod tests {
 
     #[test]
     fn reading_mark_is_explained_once_and_never_drilled() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6526,7 +6526,7 @@ mod tests {
     /// inseparable לְ.
     #[test]
     fn function_word_prepositions_issue_grammar_cards() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6574,7 +6574,7 @@ mod tests {
     /// as their own glyphs afterwards.
     #[test]
     fn final_forms_explained_once_before_first_final_glyph() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6671,7 +6671,7 @@ mod tests {
     /// `glyph_srs`, or it would fall back into the forever-drilled state above.
     #[test]
     fn submit_review_ignores_reading_mark_glyph_keys() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6688,7 +6688,7 @@ mod tests {
 
     #[test]
     fn needs_onboarding_only_before_any_progress() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6710,7 +6710,7 @@ mod tests {
     /// the word itself, never a `NewGlyph`/`ReviewGlyph`.
     #[test]
     fn seed_known_alphabet_skips_glyph_teaching() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6762,7 +6762,7 @@ mod tests {
     /// rank fails this): neighbouring tiers never probe the same verse.
     #[test]
     fn calibration_probe_difficulty_tracks_tier_with_no_plateau() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6795,7 +6795,7 @@ mod tests {
     /// confirmed threshold as already known, and nothing rarer.
     #[test]
     fn seed_known_vocab_marks_words_at_or_above_the_threshold_known() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6851,7 +6851,7 @@ mod tests {
     /// A no-op cutoff (nothing ever confirmed readable) must not seed anything.
     #[test]
     fn seed_known_vocab_with_zero_threshold_seeds_nothing() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6879,7 +6879,7 @@ mod tests {
     /// article card, once, before being introduced as a word.
     #[test]
     fn article_words_gate_behind_the_article_card() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -6956,7 +6956,7 @@ mod tests {
     /// shares the one card.
     #[test]
     fn object_marker_gates_behind_its_grammar_card() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }
@@ -7021,7 +7021,7 @@ mod tests {
     /// introduced before the concept card.
     #[test]
     fn pronoun_endings_drill_on_known_hosts() -> rusqlite::Result<()> {
-        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data");
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("hebrew.db").exists() {
             return Ok(());
         }

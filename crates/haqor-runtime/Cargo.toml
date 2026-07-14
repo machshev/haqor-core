@@ -1,0 +1,18 @@
+[package]
+name = "haqor-runtime"
+version = "0.5.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+description = "Bible access and Hebrew learning runtime for Haqor"
+repository = "https://github.com/machshev/haqor-core"
+
+[features]
+default = []
+embedded = ["dep:rust-embed", "rusqlite/serialize"]
+
+[dependencies]
+anyhow = "1.0.81"
+log = "0.4.22"
+rusqlite = { version = "0.37.0", features = ["bundled", "functions"] }
+rust-embed = { version = "8.7.2", features = ["debug-embed"], optional = true }
+serde_json = "1.0"

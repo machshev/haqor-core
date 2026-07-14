@@ -9,7 +9,7 @@ use std::sync::OnceLock;
 use anyhow::{Context, Result, bail};
 use serde_json::Value;
 
-const SOURCE: &str = include_str!("../data/lexicon_overrides.json");
+const SOURCE: &str = include_str!("../../../data/lexicon_overrides.json");
 
 #[derive(Debug, Clone, Copy)]
 pub struct LexiconEntry {
