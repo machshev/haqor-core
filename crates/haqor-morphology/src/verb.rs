@@ -6423,7 +6423,7 @@ fn apply_gizra(
     // written גָּבַהּ, not the homographic III-He גָּבַה. Set the dagesh point on
     // any final vowelless he so canonical_key (which keeps the he's dagesh)
     // matches the attested mappiq spelling.
-    if root.lamed() == letter::HE && crate::morphology::root::is_consonantal_he_root(root.letters) {
+    if root.lamed() == letter::HE && crate::root::is_consonantal_he_root(root.letters) {
         attested = true;
         if let Some(last) = seq.last_mut()
             && last.letter == letter::HE
@@ -12348,7 +12348,7 @@ fn imperfect_vocalic_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
 /// הַשְׁמִיעִינִי) were unreachable. The suffix simply joins the plene base.
 ///
 /// Reached only through [`host_object_suffixes`], so these land in the
-/// object-suffix sub-index ([`crate::morphology::parse`]'s `obj_index`), not the
+/// object-suffix sub-index ([`crate::parse`]'s `obj_index`), not the
 /// main paradigm index — whose host×suffix cross-product over every root is the
 /// cost this whole approach is designed to avoid.
 fn plene_hiriq_vocalic_object_suffixes(base_text: &str) -> Vec<(Pgn, String)> {
@@ -14539,7 +14539,7 @@ fn apply_guttural(seq: &mut [Cons], root: &Root) -> bool {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::morphology::root::Root;
+    use crate::root::Root;
 
     /// Find the form for a specific (binyan, form, pgn) in a paradigm.
     fn pick(p: &Paradigm, binyan: Binyan, form: Form, pgn: Pgn) -> &VerbForm {
@@ -14929,12 +14929,12 @@ mod tests {
     /// before the dagesh; `render` emits dagesh first) can't cause a spurious
     /// byte-level mismatch.
     fn has_text(p: &Paradigm, binyan: Binyan, form: Form, pgn: Pgn, text: &str) -> bool {
-        let key = crate::morphology::parse::canonical_key(text);
+        let key = crate::parse::canonical_key(text);
         p.forms.iter().any(|f| {
             f.binyan == binyan
                 && f.form == form
                 && f.pgn == pgn
-                && crate::morphology::parse::canonical_key(&f.text) == key
+                && crate::parse::canonical_key(&f.text) == key
         })
     }
 
@@ -15068,10 +15068,10 @@ mod tests {
     /// has the given surface text, compared via [`canonical_key`] (see
     /// [`has_text`]).
     fn any_text(p: &Paradigm, text: &str) -> bool {
-        let key = crate::morphology::parse::canonical_key(text);
+        let key = crate::parse::canonical_key(text);
         p.forms
             .iter()
-            .any(|f| crate::morphology::parse::canonical_key(&f.text) == key)
+            .any(|f| crate::parse::canonical_key(&f.text) == key)
     }
 
     #[test]
