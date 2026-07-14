@@ -122,7 +122,7 @@ pub struct HebrewWord {
     /// True when the resolved BDB lexeme is a proper name or gentilic (`pos`
     /// `n.pr*` / `adj.gent`). Most name entries carry the marker only in the
     /// `pos` column — their gloss is a bare etymology ("God hides") — so gloss
-    /// sniffing ([`is_name_gloss`]) alone misses them. The tutor cards such
+    /// sniffing (`is_name_gloss`) alone misses them. The tutor cards such
     /// words as "(a name)" and never lets them inherit their (usually
     /// spurious) root's corpus frequency.
     pub is_name: bool,

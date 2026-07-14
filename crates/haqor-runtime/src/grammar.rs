@@ -4,7 +4,7 @@
 //! construct chains and suffixes all change what a form means. The tutor
 //! introduces each concept once, as a short gradeless card, the first time a
 //! word about to be learnt exercises it (see [`crate::tutor::StudyItem::
-//! ExplainGrammar`]). [`concepts_for`] maps a parsed word to the concepts it
+//! ExplainGrammar`]). [`concepts_for`](crate::grammar::concepts_for) maps a parsed word to the concepts it
 //! uses; the teaching content lives here in the core (the app is presentation
 //! only) and travels with the card.
 
@@ -58,7 +58,7 @@ pub fn concept_index(key: &str) -> Option<i64> {
     CONCEPTS.iter().position(|c| c.key == key).map(|i| i as i64)
 }
 
-/// A word's grammatical *complexity rank*: the highest [`CONCEPTS`] index among
+/// A word's grammatical *complexity rank*: the highest `CONCEPTS` index among
 /// the concepts it exercises (`CONCEPTS` is ordered by teaching difficulty), or
 /// `-1` when it exercises none (a proper noun, function word, plain absolute
 /// noun, or bare Qal verb). The tutor gates introduction on this so grammar
@@ -104,7 +104,7 @@ pub fn all_concepts_mask() -> i64 {
     (1i64 << CONCEPTS.len()) - 1
 }
 
-/// The grammar concepts `surface` exercises. The curated [`SURFACE_CONCEPTS`]
+/// The grammar concepts `surface` exercises. The curated `SURFACE_CONCEPTS`
 /// table wins where present — it covers closed-class words the reverse-parser
 /// never sees (standalone and suffixed prepositions) and frequent construct
 /// forms it misreads (דְּבַר surfaces as a Qal imperative) — otherwise the

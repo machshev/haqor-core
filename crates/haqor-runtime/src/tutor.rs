@@ -13,21 +13,21 @@
 //!    following dagesh (vet→bet, fe→pe) and shin with a following shin/sin dot
 //!    (sh/s) change *sound*, so each pair is taught as two distinct letters
 //!    rather than a base consonant plus a separately-drilled mark (see
-//!    [`letter_identity`]); a vowel-less vav with a dagesh is the shureq vowel
+//!    `letter_identity`); a vowel-less vav with a dagesh is the shureq vowel
 //!    (וּ → "u"), likewise taught as its own glyph; a dagesh elsewhere is pure
 //!    gemination and isn't taught. The five final forms (ך ם ן ף ץ) are the same
 //!    *sound* as their medial base but a distinct *shape* the reader must
-//!    recognise, so each is drilled as its own glyph (see [`decompose_glyphs`]);
-//!    they don't count toward the alphabet gate (see [`Bible::all_letters_known`]).
+//!    recognise, so each is drilled as its own glyph (see `decompose_glyphs`);
+//!    they don't count toward the alphabet gate (see `Bible::all_letters_known`).
 //!    The first final form a learner meets is gated behind a one-time gradeless
-//!    card explaining the concept (see [`StudyItem::ExplainFinalForms`]).
+//!    card explaining the concept (see [`crate::tutor::StudyItem::ExplainFinalForms`]).
 //! 2. **Word meaning** — once all a word's glyphs are known (so the learner can
 //!    already sound it out), drill what the word means.
 //!
 //! Verse-punctuating reading marks (sof pasuq, maqaf) carry no sound of their
 //! own, so they are shown once with an explanation the first time a verse
 //! needs them and never drilled with spaced repetition (see
-//! [`StudyItem::ExplainMark`]).
+//! [`crate::tutor::StudyItem::ExplainMark`]).
 //!
 //! Reviews are scheduled with a compact SM-2 with short in-session learning
 //! steps (so recall actually happens within a sitting, not only the next day),
@@ -273,7 +273,7 @@ pub struct WordCard {
     pub translit: String,
     /// The learner meaning of *this surface* — what the meaning quiz tests.
     /// The specific inflected form rendered in English where the parse
-    /// supports one ("and to the house"; see [`crate::bible::inflected_gloss`]),
+    /// supports one ("and to the house"; see `crate::bible::inflected_gloss`),
     /// the lexeme's base sense otherwise.
     pub gloss: String,
     /// The lexeme's base sense (BDB gloss, "house") when it differs from the
@@ -400,10 +400,10 @@ pub enum StudyItem {
     /// glyph the learner meets (the card carries that glyph; the glyph itself
     /// is introduced on the next call). Gradeless, like
     /// [`StudyItem::ExplainMark`]; recorded in `progress.concepts_seen` under
-    /// [`FINAL_FORMS_CONCEPT`].
+    /// `FINAL_FORMS_CONCEPT`.
     ExplainFinalForms(GlyphCard),
     /// One card of the language-intro deck (reading direction, the alphabet,
-    /// the vowel points), carrying its [`INTRO_CONCEPTS`] key; the content is
+    /// the vowel points), carrying its `INTRO_CONCEPTS` key; the content is
     /// presentation and lives in the app. Shown once each, before anything
     /// else is taught. Gradeless, like [`StudyItem::ExplainMark`]; recorded in
     /// `progress.concepts_seen`.
@@ -421,11 +421,11 @@ pub struct TutorProgress {
     /// Distinct base consonants graduated (begadkefat/shin dot-pairs folded to
     /// one leading codepoint; final forms kept as their own glyphs).
     pub letters_known: i64,
-    /// Every base-consonant shape there is to learn ([`LETTER_GLYPH_TOTAL`]).
+    /// Every base-consonant shape there is to learn (`LETTER_GLYPH_TOTAL`).
     pub letters_total: i64,
     /// Vowel points graduated (sheva through holam, qubuts, qamats qatan).
     pub vowels_known: i64,
-    /// Every vowel-point glyph there is to learn ([`VOWEL_GLYPH_TOTAL`]).
+    /// Every vowel-point glyph there is to learn (`VOWEL_GLYPH_TOTAL`).
     pub vowels_total: i64,
     /// Grammar rules taught so far (a [`crate::grammar::GrammarConcept`] card
     /// shown), out of `grammar_total`.
@@ -498,7 +498,7 @@ pub struct TutorSettings {
     /// the vocabulary ramp speed.
     pub words_per_batch: u8,
     /// Restrict introducible words to the grammar rules unlocked so far, so
-    /// complexity expands one rule at a time (see [`Bible::unlocked_concepts`]).
+    /// complexity expands one rule at a time (see `Bible::unlocked_concepts`).
     /// When false, every form is available immediately (the original behaviour).
     pub grammar_gating: bool,
     /// Priority given to high-frequency vocabulary when choosing the next verse.
@@ -515,7 +515,7 @@ pub struct TutorSettings {
     /// word already spelt with letters the learner knows. Lower is more
     /// word-forward (read sooner with the letters you have); at `0` a new letter
     /// is introduced only when no already-readable word is left to learn. See
-    /// [`Bible::next_introduction`].
+    /// `Bible::next_introduction`.
     pub letters_ratio: u8,
 }
 
@@ -685,7 +685,7 @@ const LETTER_GLYPH_TOTAL: i64 = 27;
 /// Every vowel-point glyph the tutor drills (ten common niqqud plus qubuts) —
 /// the denominator for a "vowels known" progress fraction, as opposed to
 /// [`ALPHABET_VOWEL_TARGET`] which gates grammar unlocking. Qamats qatan
-/// (U+05C7) is a proper vowel ([`is_vowel`]) but the WLC encoding writes it as
+/// (U+05C7) is a proper vowel (`is_vowel_point`) but the WLC encoding writes it as
 /// plain qamats — zero corpus surfaces contain it, so counting it in the
 /// denominator left the fraction permanently stuck at 11/12.
 const VOWEL_GLYPH_TOTAL: i64 = 11;
@@ -2642,7 +2642,7 @@ impl Bible {
     /// In normal mode every unknown word must be inside the paced grammar and
     /// root-family frontiers. A verse with an unknown unteachable word (blank card,
     /// [`UNTEACHABLE_MASK`]) can never be finished and is excluded outright.
-    /// Verses order by [`verse_unlock_score`]: rarest unknown word as common
+    /// Verses order by their unlock score: rarest unknown word as common
     /// as possible, discounted 4× per locked rule needed — so the tutor
     /// reaches for the fewest unlocks that keep the vocabulary prime — then
     /// by fewest missing rules, fewest new roots, simplest form, fewest new
@@ -2879,7 +2879,7 @@ impl Bible {
 
     /// Whether the verse can actually be finished and read under the current
     /// grammar frontier — no unknown word behind a still-locked rule. True
-    /// for every normal-mode pin once [`Self::unlock_verse_concepts`] has
+    /// for every normal-mode pin once the target's concepts have
     /// run (unless it holds an unteachable word); false for letter-phase
     /// teaching pins, which get dropped unread: a completable pin is being
     /// *read* (its names must be dealt), a teaching pin mustn't deal names.
@@ -4323,7 +4323,7 @@ impl Bible {
     }
 
     /// Mark every glyph the curriculum would ever teach — every consonant and
-    /// vowel point [`decompose_glyphs`] produces across the whole non-Aramaic
+    /// vowel point `decompose_glyphs` produces across the whole non-Aramaic
     /// corpus — as already graduated. For a learner who self-reports already
     /// knowing the alphabet, so onboarding doesn't re-teach it letter by
     /// letter. The script explanation cards (the intro deck and final forms)
@@ -5335,8 +5335,10 @@ mod tests {
     #[test]
     fn grammar_priority_paces_concept_unlock_spacing() {
         // Higher grammar priority unlocks rules after fewer words.
-        let mut s = TutorSettings::default();
-        s.grammar_priority = 100;
+        let mut s = TutorSettings {
+            grammar_priority: 100,
+            ..TutorSettings::default()
+        };
         let fast = s.words_per_concept();
         s.grammar_priority = 0;
         let slow = s.words_per_concept();

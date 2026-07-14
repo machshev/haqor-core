@@ -6,8 +6,9 @@
 //! as its own SRS card, shown highlighted on a rotating host word the learner
 //! already knows — the same explain-once-then-drill pattern vowels use.
 //!
-//! [`PRONOUN_SUFFIXES`] is the ending inventory, keyed by person-gender-number
-//! (the `suffix_srs` key). [`split_pronoun_suffix`] finds the longest ending a
+//! [`PRONOUN_SUFFIXES`](crate::pronoun_suffix::PRONOUN_SUFFIXES) is the ending
+//! inventory, keyed by person-gender-number (the `suffix_srs` key).
+//! [`split_pronoun_suffix`](crate::pronoun_suffix::split_pronoun_suffix) finds the longest ending a
 //! surface carries and splits it into a stem + suffix span, which the app
 //! renders with the suffix in red. Matching is on raw codepoints (dagesh
 //! variants are listed explicitly), so the split is exact for the curated
