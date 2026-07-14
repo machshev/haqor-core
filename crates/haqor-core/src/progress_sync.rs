@@ -236,4 +236,33 @@ mod tests {
         let _ = fs::remove_file(&incoming);
         Ok(())
     }
+
+    #[test]
+    fn export_creates_a_standalone_sqlite_snapshot() -> anyhow::Result<()> {
+        let source = temp_path("export-source.db");
+        let snapshot = temp_path("export-snapshot.db");
+        let _ = fs::remove_file(&source);
+        let _ = fs::remove_file(&snapshot);
+        let db = Connection::open_in_memory()?;
+        db.execute(
+            "ATTACH DATABASE ?1 AS progress",
+            [source.to_string_lossy().as_ref()],
+        )?;
+        init_progress_schema(&db)?;
+        db.execute(
+            "INSERT INTO progress.concepts_seen(concept, introduced_epoch) VALUES ('intro_rtl', 1)",
+            [],
+        )?;
+        export_progress_snapshot(&db, &snapshot)?;
+        assert!(is_sqlite_snapshot(&fs::read(&snapshot)?));
+        let copy = Connection::open(&snapshot)?;
+        assert_eq!(
+            copy.query_row("SELECT COUNT(*) FROM concepts_seen", [], |r| r
+                .get::<_, i64>(0))?,
+            1
+        );
+        let _ = fs::remove_file(&source);
+        let _ = fs::remove_file(&snapshot);
+        Ok(())
+    }
 }
