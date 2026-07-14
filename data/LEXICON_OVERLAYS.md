@@ -17,7 +17,7 @@ For example:
 {
   "surface": "כִּי",
   "root": "",
-  "gloss": "that; because; for; when"
+  "gloss": "for"
 }
 ```
 
