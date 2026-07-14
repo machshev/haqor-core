@@ -13,8 +13,8 @@ use std::path::Path;
 
 use anyhow::{Context, Result};
 
-use crate::generate::uxlc::Verse;
-use crate::transliterate;
+use crate::uxlc::Verse;
+use haqor_runtime::transliterate;
 
 /// SEDRA book ids start at 52 (Matthew); Haqor book numbers start at 40.
 const SEDRA_BOOK_OFFSET: u8 = 12;

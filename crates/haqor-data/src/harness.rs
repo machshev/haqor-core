@@ -1,6 +1,6 @@
 //! Accuracy harness: score the reverse-parser against OSHB gold tags.
 //!
-//! [`crate::morphology::parse_word`] generates candidate verb analyses by
+//! [`haqor_morphology::parse_word`] generates candidate verb analyses by
 //! generate-and-test. This module measures how good those analyses are by
 //! checking them against an independent gold standard — the OpenScriptures
 //! Hebrew Bible (OSHB / morphhb), a CC BY 4.0 tagging of the Westminster
@@ -35,7 +35,7 @@ use rusqlite::Connection;
 
 use super::lexicon_db::load_root_inventory;
 use super::prefilter::Prefilter;
-use crate::morphology::{
+use haqor_morphology::{
     Binyan, Form, ReverseIndex, parse_word_indexed, parse_word_indexed_disambiguated,
 };
 use haqor_runtime::normalize_surface;
@@ -49,7 +49,7 @@ struct Gold {
     surface: String,
     binyan: Binyan,
     form: Form,
-    /// PGN rendered the same way [`crate::morphology::Pgn::label`] renders ours
+    /// PGN rendered the same way [`haqor_morphology::Pgn::label`] renders ours
     /// (e.g. `3ms`, `ms` for participles, empty for infinitives), so the two
     /// can be string-compared.
     pgn: String,

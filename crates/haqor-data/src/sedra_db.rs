@@ -5,7 +5,7 @@
 //! losslessly. Every column from each source file is preserved; the only
 //! transformation is that the Syriac transliteration columns (`strRoot`,
 //! `strLexeme`, `strWord`, `strVocalised`) are rendered into Hebrew Unicode via
-//! the bijective map in [`crate::transliterate`], so the original SEDRA
+//! the bijective map in [`haqor_runtime::transliterate`], so the original SEDRA
 //! transliteration round-trips exactly (`hebrew_to_sedra`).
 //!
 //! Numeric columns (those whose name starts with `key`/`int`) get INTEGER
@@ -18,7 +18,7 @@ use anyhow::{Context, Result};
 use log::info;
 use rusqlite::Connection;
 
-use crate::transliterate;
+use haqor_runtime::transliterate;
 
 /// One source file → one table. `translit` lists the columns whose SEDRA
 /// transliteration is rendered into Hebrew Unicode.
