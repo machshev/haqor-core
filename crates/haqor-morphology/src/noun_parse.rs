@@ -2,7 +2,7 @@
 //! analyses that could have produced it.
 //!
 //! A noun's pattern (mishqal) can't be derived from its root the way a verb's
-//! paradigm can (see [`crate::morphology::parse`]), so there is no
+//! paradigm can (see [`crate::parse`]), so there is no
 //! candidate-root enumeration to drive generate-and-test. Instead the engine is
 //! driven by a *stem inventory* — the pointed noun headwords supplied by the
 //! caller (in practice, harvested from the lexicon). For each stem we run the

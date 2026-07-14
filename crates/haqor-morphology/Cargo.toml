@@ -1,0 +1,10 @@
+[package]
+name = "haqor-morphology"
+version = "0.5.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+description = "Biblical Hebrew morphology generation and parsing for Haqor"
+repository = "https://github.com/machshev/haqor-core"
+
+[dependencies]
+rayon = "1.12.0"
