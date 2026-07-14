@@ -3526,12 +3526,14 @@ mod tests {
         // words whose consonant skeleton collides with an unrelated lexeme,
         // ahead of any BDB lookup. כִּי "that/because" must not bridge to the
         // verb כוה "burn"; אֲשֶׁר "who/which" not to אשׁר "go straight".
+        // This is the concise lexicon gloss; the fuller learner-card gloss
+        // belongs to the separate `word_glosses` overlay.
         assert_eq!(
             curated_gloss("כִּי"),
-            Some((String::new(), "that; because; for; when".to_string()))
+            Some((String::new(), "for".to_string()))
         );
         let (_, asher) = curated_gloss("אֲשֶׁר").expect("relative particle is curated");
-        assert!(asher.starts_with("who"));
+        assert_eq!(asher, "that");
         // Matching ignores cantillation, so an accented surface still resolves.
         assert!(curated_gloss("אֲשֶׁ\u{0596}ר").is_some());
         // An ordinary word is left for the BDB lookups.
