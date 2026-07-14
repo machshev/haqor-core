@@ -1421,7 +1421,7 @@ fn inflect_noun(w: &HebrewWord, base: &str) -> String {
 
 #[cfg(feature = "embedded")]
 #[derive(Embed)]
-#[folder = "data/"]
+#[folder = "../../data/"]
 struct Asset;
 
 /// The databases attached to an otherwise-empty main connection, paired with
@@ -1608,8 +1608,8 @@ impl Bible {
 
     /// Reverse-parse a single OT surface form via `hebrewdb`, choosing the most
     /// plausible analysis and bridging it to a BDB gloss through the consonantal
-    /// root. The input is normalised with the same [`crate::generate::
-    /// normalize_surface`] the parse engine used, so callers may pass raw
+    /// root. The input is normalised with the same [`crate::normalize_surface`]
+    /// the parse engine used, so callers may pass raw
     /// pointed/cantillated text. Returns `None` when no surface matches or the
     /// surface carries no verb or noun analysis.
     ///
@@ -1626,7 +1626,7 @@ impl Bible {
     /// not a he-peeled imperative of הלך (article + participle stays a verb
     /// reading: that combination is real Hebrew).
     pub fn hebrew_word_info(&self, word: &str) -> Option<HebrewWord> {
-        let norm = crate::generate::normalize_surface(word);
+        let norm = crate::normalize_surface(word);
         // `surface.text` is not indexed, so resolve the surface_id once here and
         // key the (indexed) child-table lookups off it — one scan, not three.
         let surface_id: i64 = self
@@ -2380,7 +2380,7 @@ impl Bible {
 
     /// OT verses where this exact surface form occurs.
     pub fn hebrew_surface_occurrences(&self, word: &str) -> rusqlite::Result<Vec<WordOccurrence>> {
-        let norm = crate::generate::normalize_surface(word);
+        let norm = crate::normalize_surface(word);
         let mut stmt = self.db.prepare(
             "SELECT o.book, o.chapter, o.verse FROM hebrewdb.occurrences o \
              JOIN hebrewdb.surface s ON s.surface_id = o.surface_id \

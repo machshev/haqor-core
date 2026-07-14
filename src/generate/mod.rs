@@ -14,10 +14,9 @@ mod sedra;
 mod sedra_db;
 mod uxlc;
 
+pub use haqor_runtime::normalize_surface;
 pub use harness::{eval_from_db, parse_eval};
-pub use hebrew_db::{
-    book_number, generate_hebrew, normalize_surface, parse_passage, preview_missing,
-};
+pub use hebrew_db::{book_number, generate_hebrew, parse_passage, preview_missing};
 pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
 };

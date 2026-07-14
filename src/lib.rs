@@ -11,8 +11,9 @@
 //! Other options are available for the GUI, an interesting contender is
 //! [slint](https://slint.dev). Ideally the GUI would be pure Rust framework.
 
-/// utilities for interacting with bible resources
-pub mod bible;
+pub use haqor_runtime::{
+    bible, grammar, lexicon_overlay, pronoun_suffix, romanize, transliterate, tutor, vocab_gloss,
+};
 
 /// Biblical Hebrew verb/noun paradigm generator (algorithmic, not DB-backed).
 pub use haqor_morphology as morphology;
@@ -21,32 +22,5 @@ pub use haqor_morphology as morphology;
 /// bible-modules pipeline).
 pub mod generate;
 
-/// Lossless SEDRA→Hebrew transliteration and Hebrew↔Syriac conversion.
-pub mod transliterate;
-
-/// Learner-facing romanization of pointed Hebrew ("how it sounds") — voices
-/// the tutor's cards in the core so the app stays presentation-only.
-pub mod romanize;
-
-/// Spaced-repetition reading tutor: curriculum selection over the OT corpus
-/// plus SM-2 review scheduling persisted in a writable `progress.db`.
-pub mod tutor;
-
-/// Curated learner glosses for high-frequency surfaces, keyed dagesh- and
-/// combining-order-insensitively — the tutor's meaning override, held in the
-/// core so the app stays presentation-only.
-pub mod vocab_gloss;
-
-/// Hand-maintained lexicon and learner-gloss overlays, merged by `gen-lexicon`.
-pub mod lexicon_overlay;
-
 /// Loopback-only web editor for the hand-maintained lexical overlay.
 pub mod overlay_admin;
-
-/// Grammar concepts the tutor teaches (prefixes, conjugations, binyanim,
-/// construct, suffixes) with their teaching content, held in the core.
-pub mod grammar;
-
-/// Pronominal-ending inventory and stem/suffix splitting for the tutor's
-/// suffix drill (the ending shown highlighted on a known host word).
-pub mod pronoun_suffix;
