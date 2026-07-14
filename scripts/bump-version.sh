@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Bump the Haqor workspace version following SemVer.
 #
 # Usage:
@@ -5,8 +7,9 @@
 #   bump-version <X.Y.Z>               set an explicit version
 #   bump-version ... --tag             also create a git commit + vX.Y.Z tag
 #
-# Updates the [workspace.package] version in Cargo.toml and every local package
-# entry in Cargo.lock. Does not push or publish — use `cargo release` for that.
+# Updates the workspace package version, local dependency requirements, and
+# every local package entry in Cargo.lock. Does not push or publish — use
+# `cargo release` for that.
 
 set -euo pipefail
 
@@ -68,6 +71,11 @@ fi
 # Cargo.toml: replace the [workspace.package] version line.
 sed -i -E "0,/^version = \"$cur\"/ s//version = \"$new\"/" "$manifest"
 
+# Member manifests: keep publishable path dependency versions in lockstep.
+sed -i -E \
+    "/^haqor-(admin|core|db-gen|morphology) = / s/version = \"$cur\"/version = \"$new\"/" \
+    "$root"/crates/*/Cargo.toml
+
 # Cargo.lock: replace the version inside every local workspace package block.
 if [ -f "$lock" ]; then
     awk -v new="$new" '
@@ -80,7 +88,7 @@ fi
 echo "bumped $cur -> $new"
 
 if [ "$do_tag" -eq 1 ]; then
-    git -C "$root" add Cargo.toml Cargo.lock
+    git -C "$root" add Cargo.toml Cargo.lock crates/*/Cargo.toml
     git -C "$root" commit -m "chore: release v$new"
     git -C "$root" tag -a "v$new" -m "v$new"
     echo "committed and tagged v$new (not pushed)"

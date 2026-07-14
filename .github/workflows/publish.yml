@@ -7,22 +7,31 @@ name: Publish
 
 jobs:
 
-  build_and_test_linux:
-    name: Build and Test (Linux)
+  build_and_test:
+    name: Build and test (${{ matrix.crate }})
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        crate:
+          - haqor-admin
+          - haqor-cli
+          - haqor-core
+          - haqor-db-gen
+          - haqor-morphology
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
-
-      - uses: taiki-e/install-action@nextest
-      - name: "Build and test"
-        run: cargo nextest run --workspace --all-features --no-tests=pass
+      - name: Build
+        run: cargo build --package "${{ matrix.crate }}" --all-features
+      - name: Test
+        run: cargo test --package "${{ matrix.crate }}" --all-features
 
   crates_io_publish:
     name: Publish (crates.io)
     needs:
-      - build_and_test_linux
+      - build_and_test
 
     environment: cargo
 
