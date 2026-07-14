@@ -303,6 +303,7 @@ dependencies = [
  "haqor-admin",
  "haqor-core",
  "haqor-db-gen",
+ "haqor-sync-server",
  "log",
 ]
 
@@ -339,6 +340,15 @@ name = "haqor-morphology"
 version = "0.6.1"
 dependencies = [
  "rayon",
+]
+
+[[package]]
+name = "haqor-sync-server"
+version = "0.6.1"
+dependencies = [
+ "anyhow",
+ "clap",
+ "haqor-core",
 ]
 
 [[package]]

@@ -1,0 +1,12 @@
+[package]
+name = "haqor-sync-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "LAN learner-progress sync server for Haqor"
+repository.workspace = true
+
+[dependencies]
+anyhow = "1.0.81"
+clap = { version = "4.5.42", features = ["derive"] }
+haqor-core = { path = "../haqor-core", version = "0.6.1" }

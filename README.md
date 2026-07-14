@@ -32,7 +32,7 @@ cargo run -- admin
 Run a personal server on the LAN that the app can reach:
 
 ```sh
-cargo run --release -- sync-server \
+cargo run -p haqor-sync-server --release -- \
   --bind 0.0.0.0:8788 \
   --progress "$HOME/.local/share/haqor/progress.db" \
   --token "choose-a-long-random-secret"

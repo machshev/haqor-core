@@ -38,16 +38,10 @@
             };
 
           haqor = mkHaqorCrate "haqor-cli" "haqor";
-          sync-server = pkgs.writeShellApplication {
-            name = "haqor-sync-server";
-            runtimeInputs = [haqor];
-            text = ''
-              exec haqor sync-server "$@"
-            '';
-          };
+          haqor-sync-server = mkHaqorCrate "haqor-sync-server" "haqor-sync-server";
         in {
           packages = {
-            inherit bump-version haqor sync-server;
+            inherit bump-version haqor haqor-sync-server;
             haqor-cli = haqor;
             haqor-admin = mkHaqorCrate "haqor-admin" "haqor-admin";
             haqor-core = mkHaqorCrate "haqor-core" "haqor-core";
@@ -67,7 +61,7 @@
 
           apps.sync-server = {
             type = "app";
-            program = "${sync-server}/bin/haqor-sync-server";
+            program = "${haqor-sync-server}/bin/haqor-sync-server";
           };
 
           devShells = {
