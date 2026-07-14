@@ -19,7 +19,9 @@ pub use haqor_runtime::{
 pub use haqor_morphology as morphology;
 
 /// Generate Haqor data tables from original source texts.
+#[cfg(feature = "data")]
 pub use haqor_data as generate;
 
 /// Loopback-only web editor for the hand-maintained lexical overlay.
+#[cfg(feature = "admin")]
 pub use haqor_admin as overlay_admin;

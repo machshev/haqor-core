@@ -18,7 +18,17 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
-default = []
+default = ["tools"]
+admin = ["dep:haqor-admin"]
+data = ["dep:haqor-data"]
+tools = [
+    "admin",
+    "data",
+    "dep:anyhow",
+    "dep:clap",
+    "dep:env_logger",
+    "dep:log",
+]
 # Embed data/*.db into the binary and provide `Bible::default()`, for a
 # self-contained binary. Off by default: the CLI and tests read data/ off
 # disk, and the haqor app ships the files as Flutter assets — both via the
@@ -32,19 +42,20 @@ embedded = ["haqor-runtime/embedded"]
 opt-level = 3
 
 [dependencies]
-clap = { version = "4.5.42", features = ["derive"] }
-dirs = "5.0.1"
-env_logger = "0.11.5"
-log = "0.4.22"
-reqwest = { version = "0.12", features = ["blocking", "json", "gzip"] }
-anyhow = "1.0.81"
-bytes = "1.10.1"
-rusqlite = { version = "0.37.0", features = ["bundled", "functions"] }
-quick-xml = "0.37"
-serde_json = "1.0"
-csv = "1.3"
-rayon = "1.12.0"
+anyhow = { version = "1.0.81", optional = true }
+clap = { version = "4.5.42", features = ["derive"], optional = true }
+env_logger = { version = "0.11.5", optional = true }
+log = { version = "0.4.22", optional = true }
 haqor-morphology = { path = "crates/haqor-morphology" }
 haqor-runtime = { path = "crates/haqor-runtime" }
-haqor-data = { path = "crates/haqor-data" }
-haqor-admin = { path = "crates/haqor-admin" }
+haqor-data = { path = "crates/haqor-data", optional = true }
+haqor-admin = { path = "crates/haqor-admin", optional = true }
+
+[[bin]]
+name = "haqor-core"
+path = "src/main.rs"
+required-features = ["tools"]
+
+[[example]]
+name = "tutor"
+required-features = ["tools"]

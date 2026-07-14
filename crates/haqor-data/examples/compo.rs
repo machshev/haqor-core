@@ -1,4 +1,4 @@
-use haqor_core::generate::normalize_surface;
+use haqor_data::normalize_surface;
 use quick_xml::Reader;
 use quick_xml::events::Event;
 use rusqlite::Connection;

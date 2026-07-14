@@ -9,7 +9,7 @@
 //!
 //! This data lives here, in the core, rather than in the Flutter layer: the app
 //! is presentation only. Lookups normalise both the stored surface and the
-//! table's keys through [`vocab_key`], so combining-mark order and dagesh
+//! table's keys through [`vocab_key`](crate::vocab_gloss::vocab_key), so combining-mark order and dagesh
 //! variants (בֶּן/בֶן) collapse to one key.
 
 use std::collections::HashMap;
@@ -62,7 +62,7 @@ pub fn curated_gloss(surface: &str) -> Option<CuratedGloss> {
 
 /// Whether `surface` is one of the curated proper names — names whose BDB
 /// entry is missing or oddly glossed, so the automatic `n.pr` detection
-/// ([`crate::bible::is_name_gloss`]) can't see them. Complements that check
+/// (`crate::bible::is_name_gloss`) can't see them. Complements that check
 /// wherever the tutor classifies names.
 pub fn curated_name(surface: &str) -> bool {
     static NAMES: OnceLock<std::collections::HashSet<String>> = OnceLock::new();
