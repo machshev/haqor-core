@@ -35,10 +35,10 @@ use rusqlite::Connection;
 
 use super::lexicon_db::load_root_inventory;
 use super::prefilter::Prefilter;
+use haqor_core::normalize_surface;
 use haqor_morphology::{
     Binyan, Form, ReverseIndex, parse_word_indexed, parse_word_indexed_disambiguated,
 };
-use haqor_runtime::normalize_surface;
 
 /// OT books are 1..=39 in Haqor numbering; NT starts at 40.
 const NT_FIRST_BOOK: u8 = 40;

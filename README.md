@@ -5,24 +5,22 @@ the Haqor app.
 
 ## Workspace
 
-The root `haqor-core` package is the compatibility facade used by downstream
-applications. Its public runtime module paths remain stable, including
-`haqor_core::bible`, `haqor_core::tutor`, and `haqor_core::morphology`.
+The repository root is a virtual Cargo workspace. Its packages are split by
+responsibility:
 
-The implementation is split by responsibility:
-
-- `crates/haqor-runtime`: Bible access, tutor, grammar, glosses, and text helpers
+- `crates/haqor-core`: app-facing Bible access, tutor, grammar, glosses, and text helpers
 - `crates/haqor-morphology`: DB-free Hebrew morphology generation and parsing
-- `crates/haqor-data`: source-text parsing and generated-database pipelines
+- `crates/haqor-db-gen`: source-text parsing and generated-database pipelines
 - `crates/haqor-admin`: loopback-only lexical-overlay web server
+- `crates/haqor-cli`: the `haqor` command-line tool
 
-Tooling is enabled by the root package's default `tools` feature. Consumers
-that only need the app runtime can use `default-features = false`, as the Haqor
-Flutter bridge does, avoiding generator, CLI, and admin dependencies.
+Applications depend directly on `haqor-core`. Its public paths include
+`haqor_core::bible`, `haqor_core::tutor`, and `haqor_core::morphology`.
 
 ## Commands
 
-The existing CLI remains available from the workspace root:
+The CLI is the workspace's default member, so it remains available from the
+workspace root:
 
 ```sh
 cargo run -- db gen-hebrew --force

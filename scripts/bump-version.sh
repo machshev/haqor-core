@@ -1,12 +1,12 @@
-# Bump the haqor-core crate version following SemVer.
+# Bump the Haqor workspace version following SemVer.
 #
 # Usage:
 #   bump-version <major|minor|patch>   bump the matching component
 #   bump-version <X.Y.Z>               set an explicit version
 #   bump-version ... --tag             also create a git commit + vX.Y.Z tag
 #
-# Updates the [package] version in Cargo.toml and the matching entry in
-# Cargo.lock. Does not push or publish — use `cargo release` for that.
+# Updates the [workspace.package] version in Cargo.toml and every local package
+# entry in Cargo.lock. Does not push or publish — use `cargo release` for that.
 
 set -euo pipefail
 
@@ -65,13 +65,13 @@ if [ "$new" = "$cur" ]; then
     exit 1
 fi
 
-# Cargo.toml: replace the first (i.e. [package]) version line only.
+# Cargo.toml: replace the [workspace.package] version line.
 sed -i -E "0,/^version = \"$cur\"/ s//version = \"$new\"/" "$manifest"
 
-# Cargo.lock: replace the version inside the haqor-core package block.
+# Cargo.lock: replace the version inside every local workspace package block.
 if [ -f "$lock" ]; then
     awk -v new="$new" '
-        /^name = "haqor-core"$/ { in_pkg = 1 }
+        /^name = "haqor-(admin|cli|core|db-gen|morphology)"$/ { in_pkg = 1 }
         in_pkg && /^version = / { sub(/"[^"]+"/, "\"" new "\""); in_pkg = 0 }
         { print }
     ' "$lock" >"$lock.tmp" && mv "$lock.tmp" "$lock"

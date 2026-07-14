@@ -288,9 +288,22 @@ version = "0.5.0"
 dependencies = [
  "anyhow",
  "clap",
- "haqor-runtime",
+ "haqor-core",
  "rusqlite",
  "serde_json",
+]
+
+[[package]]
+name = "haqor-cli"
+version = "0.5.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "env_logger",
+ "haqor-admin",
+ "haqor-core",
+ "haqor-db-gen",
+ "log",
 ]
 
 [[package]]
@@ -298,23 +311,22 @@ name = "haqor-core"
 version = "0.5.0"
 dependencies = [
  "anyhow",
- "clap",
  "env_logger",
- "haqor-admin",
- "haqor-data",
  "haqor-morphology",
- "haqor-runtime",
  "log",
+ "rusqlite",
+ "rust-embed",
+ "serde_json",
 ]
 
 [[package]]
-name = "haqor-data"
+name = "haqor-db-gen"
 version = "0.5.0"
 dependencies = [
  "anyhow",
  "csv",
+ "haqor-core",
  "haqor-morphology",
- "haqor-runtime",
  "log",
  "quick-xml",
  "rayon",
@@ -327,17 +339,6 @@ name = "haqor-morphology"
 version = "0.5.0"
 dependencies = [
  "rayon",
-]
-
-[[package]]
-name = "haqor-runtime"
-version = "0.5.0"
-dependencies = [
- "anyhow",
- "log",
- "rusqlite",
- "rust-embed",
- "serde_json",
 ]
 
 [[package]]

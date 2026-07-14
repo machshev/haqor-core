@@ -1,7 +1,7 @@
 //! # Haqor
 //!
-//! `haqor-core` is a cli app that provides convenient access to the
-//! functionality in `haqor-core` library. At the moment this is mostly used
+//! `haqor` is a CLI app that provides convenient access to the functionality
+//! in the `haqor-core` library. At the moment this is mostly used
 //! for testing during development although this may expand to become a fully
 //! fledged CLI based bible app.
 
@@ -331,15 +331,15 @@ fn main() -> Result<()> {
             lexicon,
             hebrew,
         } => {
-            haqor_core::overlay_admin::serve(bind, overlay, lexicon, hebrew)?;
+            haqor_admin::serve(bind, overlay, lexicon, hebrew)?;
         }
         Commands::Db { command } => match command {
             DbCommands::GenBible { src_texts, output } => {
-                let total = haqor_core::generate::generate_bible(&src_texts, &output)?;
+                let total = haqor_db_gen::generate_bible(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
             }
             DbCommands::GenSedra { src_texts, output } => {
-                let total = haqor_core::generate::generate_sedra(&src_texts, &output)?;
+                let total = haqor_db_gen::generate_sedra(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
             }
             DbCommands::GenHebrew {
@@ -357,7 +357,7 @@ fn main() -> Result<()> {
                     lexicon_db.as_deref()
                 };
                 let morphhb = src_texts.join("morphhb");
-                let (surfaces, occurrences, parsed) = haqor_core::generate::generate_hebrew(
+                let (surfaces, occurrences, parsed) = haqor_db_gen::generate_hebrew(
                     &bible_db,
                     &output,
                     lexicon,
@@ -382,9 +382,9 @@ fn main() -> Result<()> {
             } => {
                 let range = passage
                     .as_deref()
-                    .map(haqor_core::generate::parse_passage)
+                    .map(haqor_db_gen::parse_passage)
                     .transpose()?;
-                haqor_core::generate::preview_missing(
+                haqor_db_gen::preview_missing(
                     &output,
                     lexicon_db.as_deref(),
                     limit,
@@ -397,10 +397,10 @@ fn main() -> Result<()> {
                 book,
                 limit,
             } => {
-                haqor_core::generate::parse_ot_coverage(&bible_db, book, limit)?;
+                haqor_db_gen::parse_ot_coverage(&bible_db, book, limit)?;
             }
             DbCommands::GenLexicon { src_texts, output } => {
-                let total = haqor_core::generate::generate_lexicon(&src_texts, &output)?;
+                let total = haqor_db_gen::generate_lexicon(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
             }
             DbCommands::ParseEval {
@@ -413,9 +413,9 @@ fn main() -> Result<()> {
                 misses,
             } => {
                 if let Some(hebrew_db) = from_db {
-                    haqor_core::generate::eval_from_db(&morphhb, &hebrew_db, limit, misses)?;
+                    haqor_db_gen::eval_from_db(&morphhb, &hebrew_db, limit, misses)?;
                 } else {
-                    haqor_core::generate::parse_eval(
+                    haqor_db_gen::parse_eval(
                         &morphhb,
                         Some(&bible_db),
                         lexicon_db.as_deref(),
@@ -580,7 +580,7 @@ fn print_verb_section(word: &str) {
 /// Build the lexicon-driven inventory (common nouns + adjectives + the
 /// irregular/gold harvests) and parse `word` into every candidate analysis.
 fn parse_inventory(word: &str, lexicon_db: &std::path::Path) -> Result<Vec<morphology::NounMatch>> {
-    let stems = haqor_core::generate::load_noun_inventory(lexicon_db)
+    let stems = haqor_db_gen::load_noun_inventory(lexicon_db)
         .with_context(|| format!("loading noun inventory from {}", lexicon_db.display()))?;
     let mut inventory = morphology::NounInventory::build(&stems);
     inventory.add_irregulars();

@@ -1,4 +1,7 @@
-//! App-facing Bible access and Hebrew learning runtime.
+//! App-facing Bible access and Hebrew learning core.
+
+/// Biblical Hebrew verb/noun paradigm generator (algorithmic, not DB-backed).
+pub use haqor_morphology as morphology;
 
 /// Utilities for interacting with Bible resources.
 pub mod bible;

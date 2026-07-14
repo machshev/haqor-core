@@ -1,61 +1,22 @@
 [workspace]
 members = [
     "crates/haqor-admin",
-    "crates/haqor-data",
+    "crates/haqor-cli",
+    "crates/haqor-core",
+    "crates/haqor-db-gen",
     "crates/haqor-morphology",
-    "crates/haqor-runtime",
 ]
+default-members = ["crates/haqor-cli"]
 resolver = "3"
 
-[package]
-name = "haqor-core"
+[workspace.package]
 version = "0.5.0"
 edition = "2024"
 license = "GPL-3.0-or-later"
-description = "Library providing convenient access to bible resources"
 repository = "https://github.com/machshev/haqor-core"
-readme = "README.md"
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[features]
-default = ["tools"]
-admin = ["dep:haqor-admin"]
-data = ["dep:haqor-data"]
-tools = [
-    "admin",
-    "data",
-    "dep:anyhow",
-    "dep:clap",
-    "dep:env_logger",
-    "dep:log",
-]
-# Embed data/*.db into the binary and provide `Bible::default()`, for a
-# self-contained binary. Off by default: the CLI and tests read data/ off
-# disk, and the haqor app ships the files as Flutter assets — both via the
-# file-backed `Bible::open`.
-embedded = ["haqor-runtime/embedded"]
 
 # Tests exercise the morphology generator heavily (the reverse-index test
 # generates the paradigm of every 22³ root); unoptimized they are unusably
 # slow, so optimize test builds.
 [profile.test]
 opt-level = 3
-
-[dependencies]
-anyhow = { version = "1.0.81", optional = true }
-clap = { version = "4.5.42", features = ["derive"], optional = true }
-env_logger = { version = "0.11.5", optional = true }
-log = { version = "0.4.22", optional = true }
-haqor-morphology = { path = "crates/haqor-morphology" }
-haqor-runtime = { path = "crates/haqor-runtime" }
-haqor-data = { path = "crates/haqor-data", optional = true }
-haqor-admin = { path = "crates/haqor-admin", optional = true }
-
-[[bin]]
-name = "haqor-core"
-path = "src/main.rs"
-required-features = ["tools"]
-
-[[example]]
-name = "tutor"
-required-features = ["tools"]

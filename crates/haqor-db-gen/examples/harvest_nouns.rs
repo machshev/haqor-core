@@ -3,7 +3,7 @@
 //! by design (gold_noun.rs); this completes that harvest for the current
 //! backlog. Emits (surface, lemma, gloss) tuples — full normalized surface, so
 //! the noun parser's strip-0 pass matches exactly.
-use haqor_data::normalize_surface;
+use haqor_db_gen::normalize_surface;
 use quick_xml::Reader;
 use quick_xml::events::Event;
 use rusqlite::Connection;

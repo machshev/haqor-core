@@ -18,7 +18,7 @@ pub fn serve(bind: SocketAddr, overlay: PathBuf, lexicon: PathBuf, hebrew: PathB
             "refusing to expose the unauthenticated overlay editor on non-loopback address {bind}"
         );
     }
-    haqor_runtime::lexicon_overlay::load(&overlay)?;
+    haqor_core::lexicon_overlay::load(&overlay)?;
     read_lexicon(&lexicon)?;
     read_ambiguous(&hebrew)?;
     let listener =
@@ -73,7 +73,7 @@ fn handle(mut stream: TcpStream, overlay: &Path, lexicon: &Path, hebrew: &Path) 
         },
         ("PUT", "/api/overlay") => match serde_json::from_slice(&body)
             .context("request body is not valid JSON")
-            .and_then(|value| haqor_runtime::lexicon_overlay::save(overlay, &value))
+            .and_then(|value| haqor_core::lexicon_overlay::save(overlay, &value))
         {
             Ok(_) => respond(
                 &mut stream,
