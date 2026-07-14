@@ -35,6 +35,9 @@
               cargoLock.lockFile = ./Cargo.lock;
               cargoBuildFlags = ["-p" crate];
               cargoTestFlags = ["-p" crate];
+              # The workspace test profile deliberately exercises every
+              # morphology paradigm and is too expensive for package builds.
+              doCheck = false;
             };
 
           haqor = mkHaqorCrate "haqor-cli" "haqor";
