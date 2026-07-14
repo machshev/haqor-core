@@ -5,6 +5,7 @@ members = [
     "crates/haqor-core",
     "crates/haqor-db-gen",
     "crates/haqor-morphology",
+    "crates/haqor-sync-server",
 ]
 default-members = ["crates/haqor-cli"]
 resolver = "3"

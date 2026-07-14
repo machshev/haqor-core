@@ -14,8 +14,6 @@ use std::env;
 use std::net::SocketAddr;
 use std::path::PathBuf;
 
-mod sync_server;
-
 /// Summarise bible resource
 #[derive(Parser, Debug)]
 #[command(name = "haqor")]
@@ -351,7 +349,7 @@ fn main() -> Result<()> {
             bind,
             progress,
             token,
-        } => sync_server::serve_progress(bind, &progress, &token)?,
+        } => haqor_sync_server::serve_progress(bind, &progress, &token)?,
         Commands::Db { command } => match command {
             DbCommands::GenBible { src_texts, output } => {
                 let total = haqor_db_gen::generate_bible(&src_texts, &output)?;
