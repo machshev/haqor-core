@@ -22,4 +22,4 @@ pub use haqor_morphology as morphology;
 pub use haqor_data as generate;
 
 /// Loopback-only web editor for the hand-maintained lexical overlay.
-pub mod overlay_admin;
+pub use haqor_admin as overlay_admin;

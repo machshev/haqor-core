@@ -572,6 +572,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "haqor-admin"
+version = "0.5.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "haqor-runtime",
+ "rusqlite",
+ "serde_json",
+]
+
+[[package]]
 name = "haqor-core"
 version = "0.5.0"
 dependencies = [
@@ -581,6 +592,7 @@ dependencies = [
  "csv",
  "dirs",
  "env_logger",
+ "haqor-admin",
  "haqor-data",
  "haqor-morphology",
  "haqor-runtime",

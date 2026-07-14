@@ -9,7 +9,7 @@ use anyhow::{Context, Result, bail};
 use rusqlite::Connection;
 use serde_json::json;
 
-const EDITOR: &str = include_str!("overlay_admin.html");
+const EDITOR: &str = include_str!("editor.html");
 const MAX_REQUEST_BYTES: usize = 4 * 1024 * 1024;
 
 pub fn serve(bind: SocketAddr, overlay: PathBuf, lexicon: PathBuf, hebrew: PathBuf) -> Result<()> {
@@ -18,7 +18,7 @@ pub fn serve(bind: SocketAddr, overlay: PathBuf, lexicon: PathBuf, hebrew: PathB
             "refusing to expose the unauthenticated overlay editor on non-loopback address {bind}"
         );
     }
-    crate::lexicon_overlay::load(&overlay)?;
+    haqor_runtime::lexicon_overlay::load(&overlay)?;
     read_lexicon(&lexicon)?;
     read_ambiguous(&hebrew)?;
     let listener =
@@ -73,7 +73,7 @@ fn handle(mut stream: TcpStream, overlay: &Path, lexicon: &Path, hebrew: &Path) 
         },
         ("PUT", "/api/overlay") => match serde_json::from_slice(&body)
             .context("request body is not valid JSON")
-            .and_then(|value| crate::lexicon_overlay::save(overlay, &value))
+            .and_then(|value| haqor_runtime::lexicon_overlay::save(overlay, &value))
         {
             Ok(_) => respond(
                 &mut stream,
