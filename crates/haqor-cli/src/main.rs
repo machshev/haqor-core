@@ -14,6 +14,8 @@ use std::env;
 use std::net::SocketAddr;
 use std::path::PathBuf;
 
+mod sync_server;
+
 /// Summarise bible resource
 #[derive(Parser, Debug)]
 #[command(name = "haqor")]
@@ -56,6 +58,18 @@ enum Commands {
         /// Generated Hebrew database whose ambiguous analyses can be reviewed.
         #[arg(long, default_value = "data/hebrew.db")]
         hebrew: PathBuf,
+    },
+    /// Serve and merge encrypted-token protected learner progress on your LAN.
+    SyncServer {
+        /// LAN address to listen on. Use 0.0.0.0 to accept devices on the LAN.
+        #[arg(long, default_value = "0.0.0.0:8788")]
+        bind: SocketAddr,
+        /// Canonical learner-progress database held by this server.
+        #[arg(long, default_value = "data/sync-progress.db")]
+        progress: PathBuf,
+        /// Secret shared with the app. Must be at least 16 characters.
+        #[arg(long)]
+        token: String,
     },
     // ---- Paradigm generators (lemma → inflected forms) ----
     /// Generate the verb paradigm of a 3-letter Hebrew root. (Alias: morph)
@@ -333,6 +347,11 @@ fn main() -> Result<()> {
         } => {
             haqor_admin::serve(bind, overlay, lexicon, hebrew)?;
         }
+        Commands::SyncServer {
+            bind,
+            progress,
+            token,
+        } => sync_server::serve_progress(bind, &progress, &token)?,
         Commands::Db { command } => match command {
             DbCommands::GenBible { src_texts, output } => {
                 let total = haqor_db_gen::generate_bible(&src_texts, &output)?;

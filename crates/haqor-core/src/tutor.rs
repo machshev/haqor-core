@@ -821,7 +821,8 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             reps             INTEGER NOT NULL,
             lapses           INTEGER NOT NULL,
             introduced_epoch INTEGER NOT NULL,
-            last_grade       INTEGER NOT NULL
+            last_grade       INTEGER NOT NULL,
+            updated_epoch    INTEGER NOT NULL DEFAULT 0
          );
          CREATE TABLE IF NOT EXISTS progress.word_srs(
             surface          TEXT    PRIMARY KEY,
@@ -832,7 +833,8 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             reps             INTEGER NOT NULL,
             lapses           INTEGER NOT NULL,
             introduced_epoch INTEGER NOT NULL,
-            last_grade       INTEGER NOT NULL
+            last_grade       INTEGER NOT NULL,
+            updated_epoch    INTEGER NOT NULL DEFAULT 0
          );
          CREATE INDEX IF NOT EXISTS progress.idx_word_srs_id ON word_srs(surface_id);
          CREATE TABLE IF NOT EXISTS progress.form_srs(
@@ -844,7 +846,8 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             reps             INTEGER NOT NULL,
             lapses           INTEGER NOT NULL,
             introduced_epoch INTEGER NOT NULL,
-            last_grade       INTEGER NOT NULL
+            last_grade       INTEGER NOT NULL,
+            updated_epoch    INTEGER NOT NULL DEFAULT 0
          );
          CREATE TABLE IF NOT EXISTS progress.suffix_srs(
             key              TEXT    PRIMARY KEY,
@@ -854,7 +857,8 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             reps             INTEGER NOT NULL,
             lapses           INTEGER NOT NULL,
             introduced_epoch INTEGER NOT NULL,
-            last_grade       INTEGER NOT NULL
+            last_grade       INTEGER NOT NULL,
+            updated_epoch    INTEGER NOT NULL DEFAULT 0
          );
          CREATE TABLE IF NOT EXISTS progress.surface_progress(
             surface_id      INTEGER PRIMARY KEY,
@@ -947,6 +951,24 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
          CREATE INDEX IF NOT EXISTS progress.idx_verse_progress_unknown
             ON verse_progress(unknown_words);",
     )?;
+
+    // A per-card modification time makes offline LAN sync deterministic. Older
+    // progress files did not record it; their zero value is resolved using the
+    // review count during their first merge.
+    for table in ["glyph_srs", "word_srs", "form_srs", "suffix_srs"] {
+        let has_updated_epoch = {
+            let mut stmt = db.prepare(&format!("PRAGMA progress.table_info({table})"))?;
+            stmt.query_map([], |r| r.get::<_, String>(1))?
+                .collect::<rusqlite::Result<Vec<_>>>()?
+                .iter()
+                .any(|name| name == "updated_epoch")
+        };
+        if !has_updated_epoch {
+            db.execute_batch(&format!(
+                "ALTER TABLE progress.{table} ADD COLUMN updated_epoch INTEGER NOT NULL DEFAULT 0"
+            ))?;
+        }
+    }
 
     // Older progress databases predate the root-family Qal marker.
     let has_is_qal = {
@@ -3825,11 +3847,12 @@ impl Bible {
                     let next = self.glyph_srs(&glyph)?.unwrap_or_default().graded(grade);
                     self.conn().execute(
                         "INSERT INTO progress.glyph_srs(glyph, ease, interval_days, due_epoch, \
-                            reps, lapses, introduced_epoch, last_grade) \
-                         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) \
+                            reps, lapses, introduced_epoch, last_grade, updated_epoch) \
+                         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9) \
                          ON CONFLICT(glyph) DO UPDATE SET ease=excluded.ease, \
                             interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
-                            reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
+                            reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade, \
+                            updated_epoch=excluded.updated_epoch",
                         params![
                             glyph,
                             next.ease,
@@ -3838,7 +3861,8 @@ impl Bible {
                             next.reps,
                             next.lapses,
                             now,
-                            grade_i
+                            grade_i,
+                            now
                         ],
                     )?;
                 }
@@ -3854,11 +3878,12 @@ impl Bible {
                 )?;
                 self.conn().execute(
                     "INSERT INTO progress.word_srs(surface, surface_id, ease, \
-                        interval_days, due_epoch, reps, lapses, introduced_epoch, last_grade) \
-                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9) \
+                        interval_days, due_epoch, reps, lapses, introduced_epoch, last_grade, updated_epoch) \
+                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10) \
                      ON CONFLICT(surface) DO UPDATE SET ease=excluded.ease, \
                         interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
-                        reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
+                        reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade, \
+                        updated_epoch=excluded.updated_epoch",
                     params![
                         key,
                         surface_id,
@@ -3868,7 +3893,8 @@ impl Bible {
                         next.reps,
                         next.lapses,
                         now,
-                        grade_i
+                        grade_i,
+                        now
                     ],
                 )?;
                 if !previous.graduated() && next.graduated() {
@@ -3891,11 +3917,12 @@ impl Bible {
                 )?;
                 self.conn().execute(
                     "INSERT INTO progress.form_srs(surface, surface_id, ease, \
-                        interval_days, due_epoch, reps, lapses, introduced_epoch, last_grade) \
-                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9) \
+                        interval_days, due_epoch, reps, lapses, introduced_epoch, last_grade, updated_epoch) \
+                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10) \
                      ON CONFLICT(surface) DO UPDATE SET ease=excluded.ease, \
                         interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
-                        reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
+                        reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade, \
+                        updated_epoch=excluded.updated_epoch",
                     params![
                         key,
                         surface_id,
@@ -3905,7 +3932,8 @@ impl Bible {
                         next.reps,
                         next.lapses,
                         now,
-                        grade_i
+                        grade_i,
+                        now
                     ],
                 )?;
             }
@@ -3917,11 +3945,12 @@ impl Bible {
                     let next = self.suffix_srs(key)?.unwrap_or_default().graded(grade);
                     self.conn().execute(
                         "INSERT INTO progress.suffix_srs(key, ease, interval_days, due_epoch, \
-                            reps, lapses, introduced_epoch, last_grade) \
-                         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) \
+                            reps, lapses, introduced_epoch, last_grade, updated_epoch) \
+                         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9) \
                          ON CONFLICT(key) DO UPDATE SET ease=excluded.ease, \
                             interval_days=excluded.interval_days, due_epoch=excluded.due_epoch, \
-                            reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade",
+                            reps=excluded.reps, lapses=excluded.lapses, last_grade=excluded.last_grade, \
+                            updated_epoch=excluded.updated_epoch",
                         params![
                             key,
                             next.ease,
@@ -3930,7 +3959,8 @@ impl Bible {
                             next.reps,
                             next.lapses,
                             now,
-                            grade_i
+                            grade_i,
+                            now
                         ],
                     )?;
                 }
