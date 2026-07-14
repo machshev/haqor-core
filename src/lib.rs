@@ -18,9 +18,8 @@ pub use haqor_runtime::{
 /// Biblical Hebrew verb/noun paradigm generator (algorithmic, not DB-backed).
 pub use haqor_morphology as morphology;
 
-/// Generate Haqor data tables from original source texts (Rust port of the
-/// bible-modules pipeline).
-pub mod generate;
+/// Generate Haqor data tables from original source texts.
+pub use haqor_data as generate;
 
 /// Loopback-only web editor for the hand-maintained lexical overlay.
 pub mod overlay_admin;

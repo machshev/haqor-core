@@ -2,7 +2,7 @@
 //!
 //! Builds a standalone `hebrew.db` for the Old Testament from what the
 //! algorithmic morphology engine can derive today: every OT word token is
-//! reverse-parsed ([`crate::morphology::parse_word`]) into candidate verb
+//! reverse-parsed ([`haqor_morphology::parse_word`]) into candidate verb
 //! analyses. The schema deliberately mirrors the spirit of the SEDRA db
 //! (`roots` / `words` / `occurrences`) but is built to grow: the bits the
 //! engine can't yet account for are not dropped, they are recorded so they can
@@ -44,7 +44,7 @@ use log::info;
 use rayon::prelude::*;
 use rusqlite::Connection;
 
-use crate::morphology::{
+use haqor_morphology::{
     IrregularVerb, NounInventory, NounMatch, ReverseIndex, VerbMatch, disambiguate_matches,
     irregular_verb, parse_word_filtered, parse_word_indexed,
 };
@@ -248,7 +248,7 @@ fn gizra_label(m: &VerbMatch) -> String {
 }
 
 fn create_schema(db: &Connection) -> Result<()> {
-    let grammar_columns = crate::grammar::concepts()
+    let grammar_columns = haqor_runtime::grammar::concepts()
         .iter()
         .map(|concept| {
             format!(
@@ -401,7 +401,7 @@ fn populate_verse_tables(
         "INSERT INTO verse_word(book, chapter, verse, position, surface_id) \
          VALUES (?1, ?2, ?3, ?4, ?5)",
     )?;
-    let concepts = crate::grammar::concepts();
+    let concepts = haqor_runtime::grammar::concepts();
     let columns = concepts
         .iter()
         .map(|c| c.key.replace('-', "_"))
@@ -488,7 +488,7 @@ fn surface_concept_masks(
             let word = if let Some(m) = verbs[id].first() {
                 let pgn = m.pgn.label();
                 let (person, gender, number) = haqor_runtime::data_support::decode_pgn(&pgn);
-                Some(crate::bible::HebrewWord {
+                Some(haqor_runtime::bible::HebrewWord {
                     word: surface.clone(),
                     root: m.root.letters.iter().collect(),
                     form: Some(m.binyan.name().to_string()),
@@ -503,7 +503,7 @@ fn surface_concept_masks(
                 })
             } else if let Some(g) = gold[id].first() {
                 let (person, gender, number) = haqor_runtime::data_support::decode_pgn(g.pgn);
-                Some(crate::bible::HebrewWord {
+                Some(haqor_runtime::bible::HebrewWord {
                     word: surface.clone(),
                     root: g.root.to_string(),
                     form: Some(g.binyan.to_string()),
@@ -516,7 +516,7 @@ fn surface_concept_masks(
             } else {
                 nouns[id].first().map(|n| {
                     let (number, state) = haqor_runtime::data_support::decode_noun_label(&n.label);
-                    crate::bible::HebrewWord {
+                    haqor_runtime::bible::HebrewWord {
                         word: surface.clone(),
                         number,
                         state,
@@ -525,7 +525,7 @@ fn surface_concept_masks(
                     }
                 })
             };
-            crate::grammar::concept_mask_for_surface(surface, word.as_ref())
+            haqor_runtime::grammar::concept_mask_for_surface(surface, word.as_ref())
         })
         .collect()
 }
@@ -881,7 +881,7 @@ fn rebuild_roots(db: &Connection) -> Result<()> {
 /// carry a surface row but no generated analysis, so the runtime parse lookup
 /// would otherwise return nothing for them. Resolving each to a `(root, gloss,
 /// prefix)` at build time turns the runtime read into a single indexed lookup
-/// (see [`crate::bible::Bible::hebrew_word_info`]).
+/// (see [`haqor_runtime::bible::Bible::hebrew_word_info`]).
 ///
 /// A no-op without a lexicon (there is nothing to bridge to). Idempotent:
 /// clears `lexical_analyses` first, so it is safe on a rebuilt db.
@@ -974,7 +974,7 @@ fn rank_by_attestation(
         return Ok(());
     };
     info!("Ranking analyses by OSHB corpus attestation");
-    let attest = crate::generate::harness::collect_attestation(dir)?;
+    let attest = crate::harness::collect_attestation(dir)?;
     let attested_verb_surfaces: HashSet<String> =
         attest.keys().map(|(surface, _)| surface.clone()).collect();
     let (pruned_surfaces, pruned_analyses) =
@@ -1063,7 +1063,7 @@ fn build_hebrew(
     // parser gaps, not names.
     let classes: Vec<Option<&'static str>> = match morphhb_dir.filter(|d| d.exists()) {
         Some(dir) => {
-            let names = crate::generate::harness::collect_name_attestation(dir)?;
+            let names = crate::harness::collect_name_attestation(dir)?;
             let mut upgraded = 0usize;
             let mut downgraded = 0usize;
             let out = classes
@@ -1555,11 +1555,11 @@ mod verse_stats_tests {
 
     #[test]
     fn corpus_attestation_recognises_pointing_order_variants() -> Result<()> {
-        let morphhb = Path::new(env!("CARGO_MANIFEST_DIR")).join("src_texts/morphhb");
+        let morphhb = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../src_texts/morphhb");
         if !morphhb.join("wlc").exists() {
             return Ok(());
         }
-        let attest = crate::generate::harness::collect_attestation(&morphhb)?;
+        let attest = crate::harness::collect_attestation(&morphhb)?;
         let surface = normalize_surface("שָׁלַח");
         assert!(
             attest.keys().any(|(candidate, _)| candidate == &surface),
@@ -1573,8 +1573,8 @@ mod verse_stats_tests {
         let db = Connection::open_in_memory()?;
         create_schema(&db)?;
 
-        let article = crate::grammar::concept_bit("article").unwrap();
-        let perfect = crate::grammar::concept_bit("perfect").unwrap();
+        let article = haqor_runtime::grammar::concept_bit("article").unwrap();
+        let perfect = haqor_runtime::grammar::concept_bit("perfect").unwrap();
         let occurrences = vec![
             Occurrence {
                 surface_id: 0,

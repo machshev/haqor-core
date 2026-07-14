@@ -2,7 +2,7 @@
 //! coverage.
 //!
 //! Walks every Old Testament word token in the `bible` table, runs the reverse
-//! morphology parser ([`crate::morphology::parse_word`]) on each, and tallies
+//! morphology parser ([`haqor_morphology::parse_word`]) on each, and tallies
 //! how many tokens the generator can account for. This is the exploratory step
 //! toward a SEDRA-equivalent `occurrences` table for the Hebrew Bible: before
 //! committing to a schema we want to know what fraction of real OT words the
@@ -17,7 +17,7 @@ use anyhow::{Context, Result};
 use rayon::prelude::*;
 use rusqlite::Connection;
 
-use crate::morphology::parse_word;
+use haqor_morphology::parse_word;
 
 /// OT books are 1..=39 in Haqor numbering; NT starts at 40.
 const NT_FIRST_BOOK: u8 = 40;

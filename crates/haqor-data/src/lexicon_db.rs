@@ -35,10 +35,10 @@ use quick_xml::events::Event;
 use rusqlite::Connection;
 use serde_json::{Map, Value, json};
 
-use crate::morphology::{Gizra, NounStem, Root, hebrew};
+use haqor_morphology::{Gizra, NounStem, Root, hebrew};
 
 fn load_overlays(db: &mut Connection, path: &Path) -> Result<usize> {
-    let overlay = crate::lexicon_overlay::load(path)?;
+    let overlay = haqor_runtime::lexicon_overlay::load(path)?;
     db.execute_batch(
         "CREATE TABLE lexicon_overrides(
             surface TEXT PRIMARY KEY, root TEXT NOT NULL, gloss TEXT NOT NULL);
@@ -1277,7 +1277,7 @@ fn load_roots_where(lexicon_db: &Path, predicate: &str) -> Result<HashSet<[char;
 }
 
 /// Load the `roots` inventory from a built `lexicon.db` into a set of
-/// triliterals, the form [`crate::morphology::parse_word_filtered`] consumes to
+/// triliterals, the form [`haqor_morphology::parse_word_filtered`] consumes to
 /// prune candidate roots. Each stored root is exactly three folded consonants.
 pub fn load_root_inventory(lexicon_db: &Path) -> Result<HashSet<[char; 3]>> {
     load_roots_where(lexicon_db, "1")
@@ -1426,7 +1426,8 @@ pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
     let roots = load_roots(&mut db, &dir.join("LexicalIndex.xml"))?;
     info!("  {roots} rows -> roots");
 
-    let overlay_path = Path::new(env!("CARGO_MANIFEST_DIR")).join("data/lexicon_overrides.json");
+    let overlay_path =
+        Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/lexicon_overrides.json");
     let overlays = load_overlays(&mut db, &overlay_path)?;
     info!("  {overlays} rows -> manual lexical overlays");
 

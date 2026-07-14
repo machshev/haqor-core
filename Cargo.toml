@@ -1,5 +1,9 @@
 [workspace]
-members = ["crates/haqor-morphology", "crates/haqor-runtime"]
+members = [
+    "crates/haqor-data",
+    "crates/haqor-morphology",
+    "crates/haqor-runtime",
+]
 resolver = "3"
 
 [package]
@@ -41,3 +45,4 @@ csv = "1.3"
 rayon = "1.12.0"
 haqor-morphology = { path = "crates/haqor-morphology" }
 haqor-runtime = { path = "crates/haqor-runtime" }
+haqor-data = { path = "crates/haqor-data" }
