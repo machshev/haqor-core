@@ -304,6 +304,22 @@ pub struct GlossOverride {
     pub updated_epoch: i64,
 }
 
+/// Counts for learner gloss corrections that are still active on this device.
+/// `redundant` entries produce exactly the same learner-facing card as the
+/// current bundled lexical data and can therefore be pruned safely.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct GlossOverrideStats {
+    pub total: i64,
+    pub redundant: i64,
+}
+
+/// Result of pruning redundant learner gloss corrections.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct GlossOverrideOptimization {
+    pub removed: i64,
+    pub stats: GlossOverrideStats,
+}
+
 /// A pronominal-ending drill: the ending shown on a host word the learner
 /// already knows, with the ending's span highlighted (the app renders `stem`
 /// plain and `suffix` in red, the way a new vowel is taught on its host
@@ -943,7 +959,8 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             surface       TEXT    PRIMARY KEY,
             gloss         TEXT    NOT NULL,
             note          TEXT    NOT NULL DEFAULT '',
-            updated_epoch INTEGER NOT NULL
+            updated_epoch INTEGER NOT NULL,
+            deleted       INTEGER NOT NULL DEFAULT 0
          );",
     )?;
 
@@ -992,6 +1009,23 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
                 "ALTER TABLE progress.{table} ADD COLUMN updated_epoch INTEGER NOT NULL DEFAULT 0"
             ))?;
         }
+    }
+
+    // Pruned gloss corrections need a synchronisable tombstone; otherwise an
+    // older copy still held by the LAN server would reappear on the next merge.
+    let gloss_overrides_have_deleted = {
+        let mut stmt = db.prepare("PRAGMA progress.table_info(gloss_overrides)")?;
+        stmt.query_map([], |r| r.get::<_, String>(1))?
+            .collect::<rusqlite::Result<Vec<_>>>()?
+            .iter()
+            .any(|name| name == "deleted")
+    };
+    if !gloss_overrides_have_deleted {
+        db.execute(
+            "ALTER TABLE progress.gloss_overrides \
+             ADD COLUMN deleted INTEGER NOT NULL DEFAULT 0",
+            [],
+        )?;
     }
 
     // Older progress databases predate the root-family Qal marker.
@@ -2177,11 +2211,16 @@ impl Bible {
             ));
         }
         self.conn().execute(
-            "INSERT INTO progress.gloss_overrides(surface, gloss, note, updated_epoch)
-             VALUES (?1, ?2, ?3, ?4)
+            "INSERT INTO progress.gloss_overrides(
+                 surface, gloss, note, updated_epoch, deleted)
+             VALUES (?1, ?2, ?3, ?4, 0)
              ON CONFLICT(surface) DO UPDATE SET
                 gloss=excluded.gloss, note=excluded.note,
-                updated_epoch=excluded.updated_epoch",
+                updated_epoch=MAX(
+                    excluded.updated_epoch,
+                    progress.gloss_overrides.updated_epoch + 1
+                ),
+                deleted=0",
             params![surface, gloss, note.trim(), updated_epoch],
         )?;
         Ok(())
@@ -2190,15 +2229,91 @@ impl Bible {
     fn tutor_gloss_override(&self, surface: &str) -> rusqlite::Result<Option<(String, String)>> {
         self.conn()
             .query_row(
-                "SELECT gloss, note FROM progress.gloss_overrides WHERE surface = ?1",
+                "SELECT gloss, note FROM progress.gloss_overrides
+                 WHERE surface = ?1 AND deleted = 0",
                 params![surface],
                 |r| Ok((r.get(0)?, r.get(1)?)),
             )
             .optional()
     }
 
+    fn redundant_tutor_gloss_override_surfaces(&self) -> rusqlite::Result<Vec<String>> {
+        let overrides = {
+            let mut statement = self.conn().prepare(
+                "SELECT surface, gloss, note FROM progress.gloss_overrides
+                 WHERE deleted = 0 ORDER BY surface",
+            )?;
+            statement
+                .query_map([], |row| {
+                    Ok((
+                        row.get::<_, String>(0)?,
+                        row.get::<_, String>(1)?,
+                        row.get::<_, String>(2)?,
+                    ))
+                })?
+                .collect::<rusqlite::Result<Vec<_>>>()?
+        };
+
+        let mut redundant = Vec::new();
+        for (surface, gloss, note) in overrides {
+            let Some(card) = self.word_card_with_tutor_override(&surface, false)? else {
+                continue;
+            };
+            if card.gloss == gloss && card.root_gloss.is_empty() && card.note == note {
+                redundant.push(surface);
+            }
+        }
+        Ok(redundant)
+    }
+
+    /// Count active local learner corrections and those now fully represented
+    /// by the bundled lexical data.
+    pub fn tutor_gloss_override_stats(&self) -> rusqlite::Result<GlossOverrideStats> {
+        let total = self.conn().query_row(
+            "SELECT COUNT(*) FROM progress.gloss_overrides WHERE deleted = 0",
+            [],
+            |row| row.get(0),
+        )?;
+        let redundant = self.redundant_tutor_gloss_override_surfaces()?.len() as i64;
+        Ok(GlossOverrideStats { total, redundant })
+    }
+
+    /// Hide corrections that no longer change the generated word card. Rows
+    /// become timestamped tombstones so the deletion converges through normal
+    /// progress sync instead of being resurrected by the server.
+    pub fn optimize_tutor_gloss_overrides(
+        &self,
+        updated_epoch: i64,
+    ) -> rusqlite::Result<GlossOverrideOptimization> {
+        let redundant = self.redundant_tutor_gloss_override_surfaces()?;
+        let transaction = self.conn().unchecked_transaction()?;
+        for surface in &redundant {
+            transaction.execute(
+                "UPDATE progress.gloss_overrides
+                 SET gloss = '', note = '',
+                     updated_epoch = MAX(updated_epoch + 1, ?2), deleted = 1
+                 WHERE surface = ?1 AND deleted = 0",
+                params![surface, updated_epoch],
+            )?;
+        }
+        transaction.commit()?;
+        let stats = self.tutor_gloss_override_stats()?;
+        Ok(GlossOverrideOptimization {
+            removed: redundant.len() as i64,
+            stats,
+        })
+    }
+
     /// Build a meaning word card for `surface`, resolving gloss/root/morph.
     fn word_card(&self, surface: &str) -> rusqlite::Result<Option<WordCard>> {
+        self.word_card_with_tutor_override(surface, true)
+    }
+
+    fn word_card_with_tutor_override(
+        &self,
+        surface: &str,
+        apply_tutor_override: bool,
+    ) -> rusqlite::Result<Option<WordCard>> {
         let row: Option<(i64, i64)> = self
             .conn()
             .query_row(
@@ -2312,7 +2427,12 @@ impl Bible {
         // A mobile admin correction is the last learner-facing layer. Keep it
         // separate from the generated lexicon until it has been reviewed and
         // pulled back into the JSON overlay.
-        let (gloss, root_gloss, note) = match self.tutor_gloss_override(surface)? {
+        let tutor_override = if apply_tutor_override {
+            self.tutor_gloss_override(surface)?
+        } else {
+            None
+        };
+        let (gloss, root_gloss, note) = match tutor_override {
             Some((gloss, note)) => (gloss, String::new(), note),
             None => (gloss, root_gloss, note),
         };
@@ -5270,6 +5390,66 @@ mod tests {
         assert_eq!(card.gloss, "there is not, without");
         let card = bible.word_card("כִּי")?.expect("כִּי is a surface");
         assert_eq!(card.gloss, "for, because, that, when");
+        Ok(())
+    }
+
+    #[test]
+    fn tutor_gloss_override_stats_and_optimization_use_upstream_card() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        // This correction has since landed in the checked-in overlay exactly,
+        // while the second still changes what the learner sees.
+        bible.set_tutor_gloss_override("כִּי", "for, because, that, when", "", 10)?;
+        bible.set_tutor_gloss_override("בַּיִת", "dwelling", "", 20)?;
+        assert_eq!(
+            bible.tutor_gloss_override_stats()?,
+            GlossOverrideStats {
+                total: 2,
+                redundant: 1,
+            }
+        );
+
+        let result = bible.optimize_tutor_gloss_overrides(30)?;
+        assert_eq!(result.removed, 1);
+        assert_eq!(
+            result.stats,
+            GlossOverrideStats {
+                total: 1,
+                redundant: 0,
+            }
+        );
+        assert_eq!(
+            bible.word_card("כִּי")?.expect("כִּי is a surface").gloss,
+            "for, because, that, when"
+        );
+        assert_eq!(
+            bible.word_card("בַּיִת")?.expect("בַּיִת is a surface").gloss,
+            "dwelling"
+        );
+        assert_eq!(
+            bible.conn().query_row(
+                "SELECT deleted FROM progress.gloss_overrides WHERE surface = 'כִּי'",
+                [],
+                |row| row.get::<_, i64>(0),
+            )?,
+            1
+        );
+
+        // A later edit reactivates a tombstoned correction even if this
+        // device's wall clock is behind the deletion timestamp.
+        bible.set_tutor_gloss_override("כִּי", "because", "", 5)?;
+        assert_eq!(
+            bible.word_card("כִּי")?.expect("כִּי is a surface").gloss,
+            "because"
+        );
         Ok(())
     }
 
