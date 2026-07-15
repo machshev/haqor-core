@@ -77,9 +77,17 @@ fn ensure_gloss_overrides(db: &Connection, schema: &str) -> rusqlite::Result<()>
             surface TEXT PRIMARY KEY,
             gloss TEXT NOT NULL,
             note TEXT NOT NULL DEFAULT '',
-            updated_epoch INTEGER NOT NULL
+            updated_epoch INTEGER NOT NULL,
+            deleted INTEGER NOT NULL DEFAULT 0
         )"
-    ))
+    ))?;
+    if !has_column(db, schema, "gloss_overrides", "deleted")? {
+        db.execute_batch(&format!(
+            "ALTER TABLE {schema}.gloss_overrides \
+             ADD COLUMN deleted INTEGER NOT NULL DEFAULT 0"
+        ))?;
+    }
+    Ok(())
 }
 
 fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
@@ -178,11 +186,13 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
                 CAST(progress.meta.value AS INTEGER), CAST(excluded.value AS INTEGER));",
         )?;
         db.execute_batch(
-            "INSERT INTO progress.gloss_overrides(surface, gloss, note, updated_epoch)
-             SELECT surface, gloss, note, updated_epoch FROM sync.gloss_overrides WHERE true
+            "INSERT INTO progress.gloss_overrides(
+                 surface, gloss, note, updated_epoch, deleted)
+             SELECT surface, gloss, note, updated_epoch, deleted
+             FROM sync.gloss_overrides WHERE true
              ON CONFLICT(surface) DO UPDATE SET
                 gloss=excluded.gloss, note=excluded.note,
-                updated_epoch=excluded.updated_epoch
+                updated_epoch=excluded.updated_epoch, deleted=excluded.deleted
              WHERE excluded.updated_epoch > progress.gloss_overrides.updated_epoch;",
         )?;
         Ok(())
@@ -213,10 +223,15 @@ pub fn read_gloss_overrides_file(path: &Path) -> rusqlite::Result<Vec<GlossOverr
     if !exists {
         return Ok(Vec::new());
     }
-    let mut statement = db.prepare(
+    let active_filter = if has_column(&db, "main", "gloss_overrides", "deleted")? {
+        "WHERE deleted = 0"
+    } else {
+        ""
+    };
+    let mut statement = db.prepare(&format!(
         "SELECT surface, gloss, note, updated_epoch FROM gloss_overrides
-         ORDER BY updated_epoch, surface",
-    )?;
+         {active_filter} ORDER BY updated_epoch, surface"
+    ))?;
     statement
         .query_map([], |r| {
             Ok(GlossOverride {
@@ -346,6 +361,44 @@ mod tests {
                 note: String::new(),
                 updated_epoch: 200,
             }]
+        );
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn gloss_override_tombstone_syncs_and_is_not_exported_for_review() -> anyhow::Result<()> {
+        let canonical = temp_path("canonical-gloss-delete.db");
+        let incoming = temp_path("incoming-gloss-delete.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        for (path, deleted, updated) in [(&canonical, 0_i64, 100_i64), (&incoming, 1_i64, 200_i64)]
+        {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            db.execute(
+                "INSERT INTO progress.gloss_overrides(
+                     surface, gloss, note, updated_epoch, deleted)
+                 VALUES ('דָּבָר', ?1, '', ?2, ?3)",
+                params![if deleted == 0 { "matter" } else { "" }, updated, deleted],
+            )?;
+        }
+
+        merge_progress_files(&canonical, &incoming)?;
+        assert!(read_gloss_overrides_file(&canonical)?.is_empty());
+        let db = Connection::open(&canonical)?;
+        assert_eq!(
+            db.query_row(
+                "SELECT deleted FROM gloss_overrides WHERE surface = 'דָּבָר'",
+                [],
+                |row| row.get::<_, i64>(0),
+            )?,
+            1
         );
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
