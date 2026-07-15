@@ -2847,6 +2847,18 @@ impl Bible {
         } else {
             String::new()
         };
+        // The exclusion path is specifically the post-lapse interleave: it
+        // needs a verse containing genuinely fresh material, not merely a
+        // second occurrence of the word that was just failed.
+        let (fresh_join, fresh_where) = if exclude.is_some() {
+            (
+                "LEFT JOIN progress.word_srs current_ws
+                   ON current_ws.surface_id = vw.surface_id",
+                "AND current_ws.surface_id IS NULL",
+            )
+        } else {
+            ("", "")
+        };
         let sql = format!(
             "SELECT vw.book, vw.chapter, vw.verse
              FROM hebrewdb.verse_word vw
@@ -2858,9 +2870,11 @@ impl Bible {
              JOIN progress.verse_progress vp ON vp.book = vw.book
                 AND vp.chapter = vw.chapter AND vp.verse = vw.verse
              LEFT JOIN progress.word_srs base_ws ON base_ws.surface_id = sm.base_surface_id
+             {fresh_join}
              LEFT JOIN hebrewdb.roots r ON r.root = sm.root
              LEFT JOIN ({KNOWN_QAL_ROOTS}) kqr ON kqr.root = sm.root
              WHERE {intro}
+             {fresh_where}
              {exclude_where}
              GROUP BY vw.book, vw.chapter, vw.verse
              HAVING MAX(CASE WHEN {NOT_NAME} THEN 1 ELSE 0 END) = 1
@@ -2976,8 +2990,7 @@ impl Bible {
                AND {FAMILY_READY}
                AND {LEXICAL_BASE_READY}
                {name_gate}
-             {order}
-             LIMIT 1"
+             {order}"
         );
         let mut stmt = self.conn().prepare(&sql)?;
         let mut p: Vec<&dyn rusqlite::ToSql> = vec![&b, &c, &v, &unlocked];
@@ -4638,12 +4651,10 @@ mod tests {
         assert!(!s.graduated());
     }
 
-    /// Root-frequency verse selection must open the curriculum on common,
-    /// root-bearing vocabulary — not on genealogy lists of rare proper names
-    /// (which carry no root, so an earlier "fewest new roots" heuristic scored
-    /// them as trivially cheap and dived straight into Chronicles). Guards the
-    /// difficulty gate: the first words a fresh learner meets are mostly
-    /// content words with a resolved root.
+    /// Root-frequency verse selection must open the curriculum on useful
+    /// vocabulary — not on genealogy lists of rare proper names. Rootlessness
+    /// itself is not the right proxy: indispensable function words such as
+    /// אֶת, אֲשֶׁר, כִּי, אֶל and לֹא legitimately have no lexical root.
     #[test]
     fn cold_start_opens_on_content_words_not_genealogy() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
@@ -4665,8 +4676,9 @@ mod tests {
 
         let mut now = 1_700_000_000;
         let mut item = bible.next_study_item(now)?;
-        let mut rooted = 0;
         let mut total = 0;
+        let mut introduced = Vec::new();
+        let mut proper_names = 0;
         for _ in 0..4000 {
             if total >= 12 {
                 break;
@@ -4675,9 +4687,13 @@ mod tests {
             item = match item {
                 StudyItem::NewWord(w) => {
                     total += 1;
-                    if !w.root.is_empty() {
-                        rooted += 1;
-                    }
+                    let is_name: bool = bible.conn().query_row(
+                        "SELECT is_name FROM progress.surface_meta WHERE surface_id = ?1",
+                        params![w.surface_id],
+                        |r| r.get(0),
+                    )?;
+                    proper_names += usize::from(is_name);
+                    introduced.push((w.surface.clone(), w.root.clone(), is_name));
                     bible.submit_review(Track::Word, &w.surface, Grade::Easy, now)?
                 }
                 StudyItem::ReviewWord(w) => {
@@ -4701,10 +4717,9 @@ mod tests {
             };
         }
         assert_eq!(total, 12, "should introduce a dozen words quickly");
-        assert!(
-            rooted >= 8,
-            "early vocabulary should be mostly root-bearing content words, \
-             got only {rooted}/12 (a genealogy-of-proper-names regression)"
+        assert_eq!(
+            proper_names, 0,
+            "early vocabulary should not contain proper-name cards: {introduced:?}"
         );
         Ok(())
     }
@@ -5241,11 +5256,11 @@ mod tests {
         let card = bible.word_card("בַּיִת")?.expect("בַּיִת is a surface");
         assert_eq!(card.root_gloss, "");
 
-        // A proclitic on a function word composes too — וַאֲשֶׁר carded bare
-        // "who; which; that", dropping the vav its transliteration voices.
+        // A proclitic on a function word composes too — the primary analysis
+        // curates אֲשֶׁר as "that", and the vav must remain in the result.
         let card = bible.word_card("וַאֲשֶׁר")?.expect("וַאֲשֶׁר is a surface");
-        assert_eq!(card.gloss, "and who");
-        assert_eq!(card.root_gloss, "who; which; that");
+        assert_eq!(card.gloss, "and that");
+        assert_eq!(card.root_gloss, "that");
 
         // A curated gloss is the final learner meaning, served verbatim —
         // trimming it to one sense would lose the rest entirely (curated
@@ -6586,6 +6601,7 @@ mod tests {
 
         let now0 = 1_700_000_000;
         bible.ensure_surface_meta()?;
+        bible.ensure_readability_progress()?;
         let all_grammar = crate::grammar::all_concepts_mask();
         let (b, c, v) = bible
             .next_target_verse(all_grammar, 0, false)?
@@ -6611,6 +6627,10 @@ mod tests {
                 params![surface, surface_id, now0 + 10 * SECONDS_PER_DAY, now0],
             )?;
         }
+        // The test seeds SRS rows directly, bypassing `submit_review`'s
+        // incremental surface/verse cache update. Refresh the derived state so
+        // selection sees those words as graduated, as it would in production.
+        bible.ensure_readability_progress()?;
         bible.set_meta_target(Some((b, c, v)))?;
 
         // Reach the one remaining word and fail it.
