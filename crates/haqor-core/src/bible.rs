@@ -1230,7 +1230,11 @@ fn inflect_verb(w: &HebrewWord, base: &str) -> String {
     let and = w.vav_con
         || w.prefix
             .as_deref()
-            .is_some_and(|p| proclitic_words(p, false).first() == Some(&"and"));
+            .is_some_and(|p| proclitic_words(p, false).first() == Some(&"and"))
+        // Exact-match irregular analyses retain the full corpus surface but
+        // have no generated prefix split. Recover an ordinary conjunctive vav
+        // from that surface so וְיִבְחָר still renders "and he will choose".
+        || (w.prefix.is_none() && w.word.starts_with("וְ"));
     let subj = subject_pronoun(w);
     let clause = |verb: String| {
         let mut s = String::new();
@@ -3080,6 +3084,13 @@ mod tests {
                 "send"
             )),
             "you will send"
+        );
+        let mut conjunctive_imperfect =
+            verb("Imperfect", ("Third", "Masculine", "Singular"), "choose");
+        conjunctive_imperfect.word = "וְיִבְחָר".to_string();
+        assert_eq!(
+            inflected_gloss(&conjunctive_imperfect),
+            "and he will choose"
         );
         assert_eq!(
             inflected_gloss(&verb(
