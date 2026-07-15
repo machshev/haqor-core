@@ -182,19 +182,15 @@ fn append_context_lines(lines: &mut Vec<Line<'static>>, value: &serde_json::Valu
     match value {
         serde_json::Value::Object(fields) => {
             for (key, value) in fields {
-                let label = if prefix.is_empty() {
+                // `details` is the wrapper used by the app around the useful
+                // screen-specific context; don't make it part of every label.
+                let label = if prefix.is_empty() || prefix == "details" {
                     key.clone()
                 } else {
                     format!("{prefix}.{key}")
                 };
                 match value {
-                    serde_json::Value::Object(_) => {
-                        lines.push(Line::from(Span::styled(
-                            format!("{label}:"),
-                            Style::default().fg(Color::Blue),
-                        )));
-                        append_context_lines(lines, value, &label);
-                    }
+                    serde_json::Value::Object(_) => append_context_lines(lines, value, &label),
                     serde_json::Value::Array(_) => {
                         lines.push(Line::from(vec![
                             Span::styled(format!("{label}: "), Style::default().fg(Color::Blue)),
@@ -251,6 +247,8 @@ mod tests {
             .collect::<Vec<_>>()
             .join("\n");
         assert!(rendered.contains("source: word_info"));
-        assert!(rendered.contains("details.result.gloss: father"));
+        assert!(rendered.contains("result.gloss: father"));
+        assert!(!rendered.contains("details:"));
+        assert!(!rendered.contains("details.lookup:"));
     }
 }
