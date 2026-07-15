@@ -87,6 +87,32 @@ local database or pass `--server` / `--token` to override either saved value.
 The command updates `word_glosses` atomically, preserving an existing proper-name
 marker. Regenerate the lexical databases afterwards as usual.
 
+## Mobile issue and idea log
+
+Admin mode also exposes a bug/idea flag in word information and on every tutor
+card. Each entry includes the visible word or complete tutor-card payload,
+platform details, and the reporter's note. Reports are stored in `progress.db`
+and travel through the same ordinary LAN snapshot sync as tutor gloss
+corrections.
+
+Download the canonical log to a local, gitignored JSON file with either a
+direct sync-server database path:
+
+```sh
+haqor-admin pull-issues --progress data/sync-progress.db
+```
+
+or the authenticated LAN endpoint:
+
+```sh
+haqor-admin pull-issues --server http://192.168.1.10:8788 --token 'your sync token'
+```
+
+With no source options, `pull-issues` uses the same saved app sync settings as
+`pull`. The default output is `data/issue_reports.json`; use `--output PATH` to
+write elsewhere. Each download atomically replaces the file with the complete
+canonical report set.
+
 The **Ambiguous analyses** tab shows the 500 highest-frequency ambiguous
 surfaces from `data/hebrew.db`. Choosing a non-default reading creates a
 regeneration-safe `primary_analyses` override; **Automatic selection** removes

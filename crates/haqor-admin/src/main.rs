@@ -52,6 +52,40 @@ enum Command {
         #[arg(long, default_value = "data/lexicon_overrides.json")]
         overlay: PathBuf,
     },
+    /// Download mobile bug reports and ideas from the synchronised progress data.
+    PullIssues {
+        /// Canonical learner-progress database held by haqor-sync-server. This is
+        /// used instead of the app's saved sync-server settings.
+        #[arg(long, conflicts_with = "server")]
+        progress: Option<PathBuf>,
+
+        /// Remote sync-server URL. Defaults to the Haqor app's saved setting.
+        #[arg(long, conflicts_with = "progress")]
+        server: Option<String>,
+
+        /// Sync token used with --server. Defaults to the Haqor app's saved token.
+        #[arg(long)]
+        token: Option<String>,
+
+        /// JSON file to replace atomically with the downloaded issue log.
+        #[arg(long, default_value = "data/issue_reports.json")]
+        output: PathBuf,
+    },
+}
+
+fn remote_settings(server: Option<String>, token: Option<String>) -> Result<(String, String)> {
+    let saved = if server.is_some() && token.is_some() {
+        None
+    } else {
+        Some(haqor_admin::read_default_app_sync_settings()?)
+    };
+    let server = server
+        .or_else(|| saved.as_ref().map(|settings| settings.server_url.clone()))
+        .expect("saved settings provide a server URL");
+    let token = token
+        .or_else(|| saved.map(|settings| settings.token))
+        .expect("saved settings provide a token");
+    Ok((server, token))
 }
 
 fn main() -> Result<()> {
@@ -72,22 +106,30 @@ fn main() -> Result<()> {
             let count = if let Some(progress) = progress {
                 haqor_admin::pull_gloss_overrides(&progress, &overlay)?
             } else {
-                let saved = if server.is_some() && token.is_some() {
-                    None
-                } else {
-                    Some(haqor_admin::read_default_app_sync_settings()?)
-                };
-                let server = server
-                    .or_else(|| saved.as_ref().map(|settings| settings.server_url.clone()))
-                    .expect("saved settings provide a server URL");
-                let token = token
-                    .or_else(|| saved.map(|settings| settings.token))
-                    .expect("saved settings provide a token");
+                let (server, token) = remote_settings(server, token)?;
                 haqor_admin::pull_gloss_overrides_from_server(&server, &token, &overlay)?
             };
             println!(
                 "Merged {count} tutor gloss correction(s) into {}",
                 overlay.display()
+            );
+            Ok(())
+        }
+        Command::PullIssues {
+            progress,
+            server,
+            token,
+            output,
+        } => {
+            let count = if let Some(progress) = progress {
+                haqor_admin::pull_issue_reports(&progress, &output)?
+            } else {
+                let (server, token) = remote_settings(server, token)?;
+                haqor_admin::pull_issue_reports_from_server(&server, &token, &output)?
+            };
+            println!(
+                "Downloaded {count} app issue report(s) to {}",
+                output.display()
             );
             Ok(())
         }

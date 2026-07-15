@@ -10,7 +10,7 @@ use std::path::Path;
 
 use rusqlite::Connection;
 
-use crate::tutor::{GlossOverride, init_progress_schema};
+use crate::tutor::{GlossOverride, IssueReport, init_progress_schema};
 
 /// SQLite's file header. Checking it before attaching keeps a bad HTTP body
 /// from becoming an opaque "file is not a database" error later on.
@@ -90,11 +90,26 @@ fn ensure_gloss_overrides(db: &Connection, schema: &str) -> rusqlite::Result<()>
     Ok(())
 }
 
+fn ensure_issue_reports(db: &Connection, schema: &str) -> rusqlite::Result<()> {
+    db.execute_batch(&format!(
+        "CREATE TABLE IF NOT EXISTS {schema}.issue_reports(
+            id            TEXT PRIMARY KEY,
+            report_type   TEXT NOT NULL,
+            note          TEXT NOT NULL,
+            context_json  TEXT NOT NULL,
+            created_epoch INTEGER NOT NULL,
+            updated_epoch INTEGER NOT NULL
+        )"
+    ))
+}
+
 fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     ensure_updated_epochs(db, "progress")?;
     ensure_updated_epochs(db, "sync")?;
     ensure_gloss_overrides(db, "progress")?;
     ensure_gloss_overrides(db, "sync")?;
+    ensure_issue_reports(db, "progress")?;
+    ensure_issue_reports(db, "sync")?;
     db.execute_batch("BEGIN IMMEDIATE")?;
     let result = (|| {
         // `updated_epoch` is the normal conflict resolution key. The `reps`
@@ -195,6 +210,21 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
                 updated_epoch=excluded.updated_epoch, deleted=excluded.deleted
              WHERE excluded.updated_epoch > progress.gloss_overrides.updated_epoch;",
         )?;
+        db.execute_batch(
+            "INSERT INTO progress.issue_reports(
+                 id, report_type, note, context_json, created_epoch, updated_epoch)
+             SELECT id, report_type, note, context_json, created_epoch, updated_epoch
+             FROM sync.issue_reports WHERE true
+             ON CONFLICT(id) DO UPDATE SET
+                report_type=excluded.report_type, note=excluded.note,
+                context_json=excluded.context_json,
+                created_epoch=MIN(
+                    progress.issue_reports.created_epoch,
+                    excluded.created_epoch
+                ),
+                updated_epoch=excluded.updated_epoch
+             WHERE excluded.updated_epoch > progress.issue_reports.updated_epoch;",
+        )?;
         Ok(())
     })();
     match result {
@@ -239,6 +269,36 @@ pub fn read_gloss_overrides_file(path: &Path) -> rusqlite::Result<Vec<GlossOverr
                 gloss: r.get(1)?,
                 note: r.get(2)?,
                 updated_epoch: r.get(3)?,
+            })
+        })?
+        .collect()
+}
+
+/// Read the app issue/idea log from a canonical sync database. Older sync
+/// databases simply return an empty log.
+pub fn read_issue_reports_file(path: &Path) -> rusqlite::Result<Vec<IssueReport>> {
+    let db = Connection::open_with_flags(path, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+    let exists: bool = db.query_row(
+        "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type='table' AND name='issue_reports')",
+        [],
+        |row| row.get(0),
+    )?;
+    if !exists {
+        return Ok(Vec::new());
+    }
+    let mut statement = db.prepare(
+        "SELECT id, report_type, note, context_json, created_epoch, updated_epoch
+         FROM issue_reports ORDER BY created_epoch, id",
+    )?;
+    statement
+        .query_map([], |row| {
+            Ok(IssueReport {
+                id: row.get(0)?,
+                report_type: row.get(1)?,
+                note: row.get(2)?,
+                context_json: row.get(3)?,
+                created_epoch: row.get(4)?,
+                updated_epoch: row.get(5)?,
             })
         })?
         .collect()
@@ -400,6 +460,54 @@ mod tests {
             )?,
             1
         );
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn issue_reports_are_unioned_and_newer_edits_win() -> anyhow::Result<()> {
+        let canonical = temp_path("canonical-issues.db");
+        let incoming = temp_path("incoming-issues.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        for (path, id, note, created, updated) in [
+            (&canonical, "device-a-1", "old note", 100_i64, 100_i64),
+            (&incoming, "device-a-1", "new note", 100_i64, 200_i64),
+        ] {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            db.execute(
+                "INSERT INTO progress.issue_reports(
+                     id, report_type, note, context_json, created_epoch, updated_epoch)
+                 VALUES (?1, 'bug', ?2, '{\"source\":\"tutor\"}', ?3, ?4)",
+                params![id, note, created, updated],
+            )?;
+        }
+        {
+            let db = Connection::open(&incoming)?;
+            db.execute(
+                "INSERT INTO issue_reports(
+                     id, report_type, note, context_json, created_epoch, updated_epoch)
+                 VALUES ('device-b-1', 'idea', 'another report',
+                         '{\"source\":\"word_info\"}', 150, 150)",
+                [],
+            )?;
+        }
+
+        merge_progress_files(&canonical, &incoming)?;
+        let reports = read_issue_reports_file(&canonical)?;
+        assert_eq!(reports.len(), 2);
+        assert_eq!(reports[0].id, "device-a-1");
+        assert_eq!(reports[0].note, "new note");
+        assert_eq!(reports[0].updated_epoch, 200);
+        assert_eq!(reports[1].id, "device-b-1");
+        assert_eq!(reports[1].report_type, "idea");
+
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
         Ok(())

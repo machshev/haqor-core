@@ -304,6 +304,19 @@ pub struct GlossOverride {
     pub updated_epoch: i64,
 }
 
+/// A bug report or idea captured from an admin-only app control. Reports live
+/// in the writable progress database so they can be recorded offline, carried
+/// by normal progress sync, and downloaded later with `haqor-admin`.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct IssueReport {
+    pub id: String,
+    pub report_type: String,
+    pub note: String,
+    pub context_json: String,
+    pub created_epoch: i64,
+    pub updated_epoch: i64,
+}
+
 /// Counts for learner gloss corrections that are still active on this device.
 /// `redundant` entries produce exactly the same learner-facing card as the
 /// current bundled lexical data and can therefore be pruned safely.
@@ -961,6 +974,14 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             note          TEXT    NOT NULL DEFAULT '',
             updated_epoch INTEGER NOT NULL,
             deleted       INTEGER NOT NULL DEFAULT 0
+         );
+         CREATE TABLE IF NOT EXISTS progress.issue_reports(
+            id            TEXT    PRIMARY KEY,
+            report_type   TEXT    NOT NULL,
+            note          TEXT    NOT NULL,
+            context_json  TEXT    NOT NULL,
+            created_epoch INTEGER NOT NULL,
+            updated_epoch INTEGER NOT NULL
          );",
     )?;
 
@@ -2192,6 +2213,60 @@ impl Bible {
     }
 
     // --- card builders -------------------------------------------------------
+
+    /// Store one admin bug report or idea in the synchronised progress
+    /// database. The opaque JSON object keeps app/card-specific diagnostics
+    /// extensible without requiring a database migration for every new field.
+    pub fn save_issue_report(
+        &self,
+        id: &str,
+        report_type: &str,
+        note: &str,
+        context_json: &str,
+        created_epoch: i64,
+        updated_epoch: i64,
+    ) -> rusqlite::Result<()> {
+        let id = id.trim();
+        let report_type = report_type.trim();
+        let note = note.trim();
+        let context_json = context_json.trim();
+        let valid_context = serde_json::from_str::<serde_json::Value>(context_json)
+            .is_ok_and(|value| value.is_object());
+        if id.is_empty()
+            || !matches!(report_type, "bug" | "idea")
+            || note.is_empty()
+            || !valid_context
+        {
+            return Err(rusqlite::Error::InvalidParameterName(
+                "issue id, type, note, and JSON object context must be valid".to_string(),
+            ));
+        }
+        self.conn().execute(
+            "INSERT INTO progress.issue_reports(
+                 id, report_type, note, context_json, created_epoch, updated_epoch)
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6)
+             ON CONFLICT(id) DO UPDATE SET
+                report_type=excluded.report_type, note=excluded.note,
+                context_json=excluded.context_json,
+                created_epoch=MIN(
+                    excluded.created_epoch,
+                    progress.issue_reports.created_epoch
+                ),
+                updated_epoch=MAX(
+                    excluded.updated_epoch,
+                    progress.issue_reports.updated_epoch + 1
+                )",
+            params![
+                id,
+                report_type,
+                note,
+                context_json,
+                created_epoch,
+                updated_epoch
+            ],
+        )?;
+        Ok(())
+    }
 
     /// Store a tutor-only learner gloss correction. It deliberately does not
     /// alter the bundled lexical data: review it later with `haqor-admin pull`
