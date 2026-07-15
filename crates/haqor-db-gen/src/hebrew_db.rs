@@ -592,6 +592,55 @@ fn analyze_surfaces(
         .map(|t| prefilter.as_ref().and_then(|pf| pf.classify(t)))
         .collect();
 
+    // Noun parsing is deliberately performed before verb parsing. A bare noun
+    // match is authoritative for the surface: attempting to parse it as a
+    // verb as well creates fabricated homographs (especially on weak roots),
+    // and can make the runtime bridge choose an unrelated BDB root. Prefixed
+    // noun matches do not suppress verbs because the prefix may be a genuine
+    // verbal proclitic/context rather than part of the noun lemma.
+    let noun_inventory = match lexicon_db {
+        Some(p) => {
+            let mut stems = load_noun_inventory(p)?;
+            stems.extend(load_proper_inventory(p)?);
+            let mut inv = NounInventory::build(&stems);
+            inv.add_irregulars();
+            inv.add_gold_nouns();
+            info!(
+                "Noun-parsing {} surfaces against {} stems",
+                surfaces.len(),
+                inv.len()
+            );
+            Some(inv)
+        }
+        None => None,
+    };
+    let noun: Vec<Vec<NounMatch>> = match &noun_inventory {
+        Some(inv) => surfaces
+            .par_iter()
+            .zip(lexical.par_iter())
+            .map(|(t, class)| {
+                if *class == Some("function") {
+                    Vec::new()
+                } else {
+                    inv.parse(t)
+                }
+            })
+            .collect(),
+        None => vec![Vec::new(); surfaces.len()],
+    };
+    let noun_exact: Vec<bool> = noun
+        .iter()
+        .map(|matches| matches.iter().any(|m| m.prefix.is_empty()))
+        .collect();
+    if noun_inventory.is_some() {
+        let noun_parsed = noun.iter().filter(|a| !a.is_empty()).count();
+        let exact_noun = noun_exact.iter().filter(|&&exact| exact).count();
+        info!(
+            "  {noun_parsed} surfaces matched a noun analysis; \
+             {exact_noun} have a bare exact noun match"
+        );
+    }
+
     // Reverse-parse every distinct surface in parallel. Two strategies (see
     // [`VerbStrategy`]) that the caller picks by batch size:
     //
@@ -625,8 +674,9 @@ fn analyze_surfaces(
             surfaces
                 .par_iter()
                 .zip(lexical.par_iter())
-                .map(|(t, class)| {
-                    if *class == Some("function") {
+                .zip(noun_exact.par_iter())
+                .map(|((t, class), exact_noun)| {
+                    if *class == Some("function") || *exact_noun {
                         Vec::new()
                     } else {
                         parse_word_indexed(t, &index, None)
@@ -647,8 +697,9 @@ fn analyze_surfaces(
             surfaces
                 .par_iter()
                 .zip(lexical.par_iter())
-                .map(|(t, class)| {
-                    if *class == Some("function") {
+                .zip(noun_exact.par_iter())
+                .map(|((t, class), exact_noun)| {
+                    if *class == Some("function") || *exact_noun {
                         Vec::new()
                     } else {
                         parse_word_filtered(t, roots)
@@ -703,48 +754,6 @@ fn analyze_surfaces(
             "  pre-filtered {filtered} non-verb surfaces (skipped); \
              {rescued} proper-noun surfaces rescued as plausible verbs"
         );
-    }
-
-    // Noun pass: when a lexicon is available, reverse-parse every surface
-    // against the inflectional paradigms of its common-noun, adjective and
-    // proper-noun headwords. This is independent of the verb parser, so a
-    // genuine noun/verb homograph initially keeps both readings; the corpus-
-    // attestation pass later removes the verb side when OSHB never uses that
-    // surface as a verb. Function words (which are never nouns) are skipped,
-    // mirroring the verb pass.
-    let noun_inventory = match lexicon_db {
-        Some(p) => {
-            let mut stems = load_noun_inventory(p)?;
-            stems.extend(load_proper_inventory(p)?);
-            let mut inv = NounInventory::build(&stems);
-            inv.add_irregulars();
-            inv.add_gold_nouns();
-            info!(
-                "Noun-parsing {} surfaces against {} stems",
-                surfaces.len(),
-                inv.len()
-            );
-            Some(inv)
-        }
-        None => None,
-    };
-    let noun: Vec<Vec<NounMatch>> = match &noun_inventory {
-        Some(inv) => surfaces
-            .par_iter()
-            .zip(classes.par_iter())
-            .map(|(t, class)| {
-                if *class == Some("function") {
-                    Vec::new()
-                } else {
-                    inv.parse(t)
-                }
-            })
-            .collect(),
-        None => vec![Vec::new(); surfaces.len()],
-    };
-    if noun_inventory.is_some() {
-        let noun_parsed = noun.iter().filter(|a| !a.is_empty()).count();
-        info!("  {noun_parsed} surfaces matched a noun analysis");
     }
 
     // Recall-safe precision pass: drop a surface's verb readings when the noun
