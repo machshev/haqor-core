@@ -71,6 +71,20 @@ enum Command {
         #[arg(long, default_value = "data/issue_reports.json")]
         output: PathBuf,
     },
+    /// Review issue reports in a terminal UI and resolve selected entries.
+    ReviewIssues {
+        /// Canonical learner-progress database to edit directly.
+        #[arg(long, conflicts_with = "server")]
+        progress: Option<PathBuf>,
+
+        /// Remote sync-server URL. Defaults to the Haqor app's saved setting.
+        #[arg(long, conflicts_with = "progress")]
+        server: Option<String>,
+
+        /// Sync token used with --server. Defaults to the Haqor app's saved token.
+        #[arg(long)]
+        token: Option<String>,
+    },
 }
 
 fn remote_settings(server: Option<String>, token: Option<String>) -> Result<(String, String)> {
@@ -131,6 +145,20 @@ fn main() -> Result<()> {
                 "Downloaded {count} app issue report(s) to {}",
                 output.display()
             );
+            Ok(())
+        }
+        Command::ReviewIssues {
+            progress,
+            server,
+            token,
+        } => {
+            let count = if let Some(progress) = progress {
+                haqor_admin::review_issue_reports(&progress)?
+            } else {
+                let (server, token) = remote_settings(server, token)?;
+                haqor_admin::review_issue_reports_from_server(&server, &token)?
+            };
+            println!("Resolved {count} app issue report(s).");
             Ok(())
         }
     }

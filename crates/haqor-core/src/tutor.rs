@@ -998,9 +998,24 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             note          TEXT    NOT NULL,
             context_json  TEXT    NOT NULL,
             created_epoch INTEGER NOT NULL,
-            updated_epoch INTEGER NOT NULL
+            updated_epoch INTEGER NOT NULL,
+            deleted       INTEGER NOT NULL DEFAULT 0
          );",
     )?;
+
+    let issue_reports_has_deleted = {
+        let mut stmt = db.prepare("PRAGMA progress.table_info(issue_reports)")?;
+        stmt.query_map([], |r| r.get::<_, String>(1))?
+            .collect::<rusqlite::Result<Vec<_>>>()?
+            .iter()
+            .any(|name| name == "deleted")
+    };
+    if !issue_reports_has_deleted {
+        db.execute_batch(
+            "ALTER TABLE progress.issue_reports \
+             ADD COLUMN deleted INTEGER NOT NULL DEFAULT 0",
+        )?;
+    }
 
     // `verse_progress` used to be a tiny read-history table. Readability is now
     // derived from graduated surfaces, so replace that incompatible layout.
@@ -2260,8 +2275,8 @@ impl Bible {
         }
         self.conn().execute(
             "INSERT INTO progress.issue_reports(
-                 id, report_type, note, context_json, created_epoch, updated_epoch)
-             VALUES (?1, ?2, ?3, ?4, ?5, ?6)
+                 id, report_type, note, context_json, created_epoch, updated_epoch, deleted)
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6, 0)
              ON CONFLICT(id) DO UPDATE SET
                 report_type=excluded.report_type, note=excluded.note,
                 context_json=excluded.context_json,
@@ -2272,7 +2287,8 @@ impl Bible {
                 updated_epoch=MAX(
                     excluded.updated_epoch,
                     progress.issue_reports.updated_epoch + 1
-                )",
+                ),
+                deleted=0",
             params![
                 id,
                 report_type,

@@ -99,9 +99,17 @@ fn ensure_issue_reports(db: &Connection, schema: &str) -> rusqlite::Result<()> {
             note          TEXT NOT NULL,
             context_json  TEXT NOT NULL,
             created_epoch INTEGER NOT NULL,
-            updated_epoch INTEGER NOT NULL
+            updated_epoch INTEGER NOT NULL,
+            deleted       INTEGER NOT NULL DEFAULT 0
         )"
-    ))
+    ))?;
+    if !has_column(db, schema, "issue_reports", "deleted")? {
+        db.execute_batch(&format!(
+            "ALTER TABLE {schema}.issue_reports \
+             ADD COLUMN deleted INTEGER NOT NULL DEFAULT 0"
+        ))?;
+    }
+    Ok(())
 }
 
 fn ensure_lexicon_entry_overrides(db: &Connection, schema: &str) -> rusqlite::Result<()> {
@@ -226,8 +234,8 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
         )?;
         db.execute_batch(
             "INSERT INTO progress.issue_reports(
-                 id, report_type, note, context_json, created_epoch, updated_epoch)
-             SELECT id, report_type, note, context_json, created_epoch, updated_epoch
+                 id, report_type, note, context_json, created_epoch, updated_epoch, deleted)
+             SELECT id, report_type, note, context_json, created_epoch, updated_epoch, deleted
              FROM sync.issue_reports WHERE true
              ON CONFLICT(id) DO UPDATE SET
                 report_type=excluded.report_type, note=excluded.note,
@@ -236,7 +244,8 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
                     progress.issue_reports.created_epoch,
                     excluded.created_epoch
                 ),
-                updated_epoch=excluded.updated_epoch
+                updated_epoch=excluded.updated_epoch,
+                deleted=excluded.deleted
              WHERE excluded.updated_epoch > progress.issue_reports.updated_epoch;",
         )?;
         db.execute_batch(
@@ -306,10 +315,15 @@ pub fn read_issue_reports_file(path: &Path) -> rusqlite::Result<Vec<IssueReport>
     if !has_issue_reports(&db)? {
         return Ok(Vec::new());
     }
-    let mut statement = db.prepare(
+    let active_filter = if has_column(&db, "main", "issue_reports", "deleted")? {
+        " WHERE deleted = 0"
+    } else {
+        ""
+    };
+    let mut statement = db.prepare(&format!(
         "SELECT id, report_type, note, context_json, created_epoch, updated_epoch
-         FROM issue_reports ORDER BY created_epoch, id",
-    )?;
+         FROM issue_reports{active_filter} ORDER BY created_epoch, id",
+    ))?;
     statement
         .query_map([], |row| {
             Ok(IssueReport {
@@ -322,6 +336,30 @@ pub fn read_issue_reports_file(path: &Path) -> rusqlite::Result<Vec<IssueReport>
             })
         })?
         .collect()
+}
+
+/// Mark issue reports as resolved in a writable progress snapshot. Resolved
+/// rows remain as tombstones so a stale phone snapshot cannot reintroduce them
+/// during the next normal progress sync.
+pub fn resolve_issue_reports_file(
+    path: &Path,
+    ids: &[String],
+    updated_epoch: i64,
+) -> rusqlite::Result<usize> {
+    let mut db = Connection::open(path)?;
+    ensure_issue_reports(&db, "main")?;
+    let transaction = db.transaction()?;
+    let mut resolved = 0;
+    for id in ids {
+        resolved += transaction.execute(
+            "UPDATE issue_reports
+             SET deleted = 1, updated_epoch = MAX(updated_epoch + 1, ?2)
+             WHERE id = ?1 AND deleted = 0",
+            rusqlite::params![id, updated_epoch],
+        )?;
+    }
+    transaction.commit()?;
+    Ok(resolved)
 }
 
 fn has_issue_reports(db: &Connection) -> rusqlite::Result<bool> {
@@ -593,6 +631,48 @@ mod tests {
         assert_eq!(reports[0].updated_epoch, 200);
         assert_eq!(reports[1].id, "device-b-1");
         assert_eq!(reports[1].report_type, "idea");
+
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn resolved_issue_report_tombstone_syncs_and_hides_the_report() -> anyhow::Result<()> {
+        let canonical = temp_path("canonical-issue-delete.db");
+        let incoming = temp_path("incoming-issue-delete.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        for path in [&canonical, &incoming] {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            db.execute(
+                "INSERT INTO progress.issue_reports(
+                     id, report_type, note, context_json, created_epoch, updated_epoch)
+                 VALUES ('phone-1', 'bug', 'already fixed', '{}', 100, 100)",
+                [],
+            )?;
+        }
+
+        assert_eq!(
+            resolve_issue_reports_file(&incoming, &["phone-1".to_string()], 200)?,
+            1
+        );
+        merge_progress_files(&canonical, &incoming)?;
+        assert!(read_issue_reports_file(&canonical)?.is_empty());
+        let db = Connection::open(&canonical)?;
+        assert_eq!(
+            db.query_row(
+                "SELECT deleted FROM issue_reports WHERE id = 'phone-1'",
+                [],
+                |row| row.get::<_, i64>(0),
+            )?,
+            1
+        );
 
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);

@@ -16,6 +16,8 @@ const MAX_SNAPSHOT_BYTES: usize = 64 * 1024 * 1024;
 const APP_ID: &str = "org.haqor";
 const LEGACY_APP_ID: &str = "com.example.haqor";
 
+mod issue_tui;
+
 /// The server credentials the Flutter app keeps in its platform preferences.
 /// They are read only for a `pull` invocation and are never printed.
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -222,6 +224,92 @@ pub fn pull_issue_reports_from_server(
     with_remote_progress(server_url, token, "issues", |progress| {
         pull_issue_reports(progress, output)
     })
+}
+
+/// Run an interactive terminal review of the issue log in a local progress
+/// snapshot. Pressing `s` in the review marks selected reports resolved in
+/// that snapshot; tombstones prevent stale devices from restoring them.
+pub fn review_issue_reports(progress: &Path) -> Result<usize> {
+    let reports = haqor_core::progress_sync::read_issue_reports_file(progress)
+        .with_context(|| format!("reading issue reports from {}", progress.display()))?;
+    let selected = issue_tui::review(&reports)?;
+    if selected.is_empty() {
+        return Ok(0);
+    }
+    let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
+    haqor_core::progress_sync::resolve_issue_reports_file(progress, &selected, updated_epoch)
+        .with_context(|| format!("resolving issue reports in {}", progress.display()))
+}
+
+/// Review the server's live issue log, then upload the selected resolution
+/// tombstones through the normal authenticated progress-sync route.
+pub fn review_issue_reports_from_server(server_url: &str, token: &str) -> Result<usize> {
+    if token.trim().is_empty() {
+        bail!("--token must not be empty");
+    }
+    let endpoint = parse_sync_endpoint(server_url)?;
+    eprintln!(
+        "Downloading app issue reports from {}:{}",
+        endpoint.host, endpoint.port
+    );
+    let snapshot = match fetch_sync_snapshot(&endpoint, token) {
+        Ok(snapshot) => snapshot,
+        Err(error) if error.to_string().contains("404 Not Found") => {
+            eprintln!(
+                "Sync server does not support snapshot downloads; using its compatible sync route"
+            );
+            post_sync_snapshot(&endpoint, token, &empty_progress_snapshot()?)?
+        }
+        Err(error) => return Err(error),
+    };
+    if !haqor_core::progress_sync::is_sqlite_snapshot(&snapshot) {
+        bail!("sync server returned an invalid progress snapshot");
+    }
+    let nonce = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
+    let temporary = std::env::temp_dir().join(format!(
+        "haqor-admin-review-issues-{}-{nonce}.db",
+        std::process::id()
+    ));
+    std::fs::write(&temporary, snapshot)
+        .with_context(|| format!("writing temporary sync snapshot {}", temporary.display()))?;
+    let result = (|| {
+        let reports_before = haqor_core::progress_sync::read_issue_reports_file(&temporary)?;
+        let resolved = review_issue_reports(&temporary)?;
+        if resolved == 0 {
+            return Ok(0);
+        }
+        let reports_after = haqor_core::progress_sync::read_issue_reports_file(&temporary)?;
+        let active_after = reports_after
+            .iter()
+            .map(|report| report.id.as_str())
+            .collect::<HashSet<_>>();
+        let resolved_ids = reports_before
+            .iter()
+            .filter(|report| !active_after.contains(report.id.as_str()))
+            .map(|report| report.id.as_str())
+            .collect::<HashSet<_>>();
+        eprintln!("Syncing {resolved} resolved app issue report(s) back to the server");
+        let merged = post_sync_snapshot(&endpoint, token, &std::fs::read(&temporary)?)?;
+        if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
+            bail!("sync server returned an invalid progress snapshot");
+        }
+        let merged_path = temporary.with_extension("merged.db");
+        std::fs::write(&merged_path, merged)?;
+        let merged_reports = haqor_core::progress_sync::read_issue_reports_file(&merged_path)?;
+        let _ = std::fs::remove_file(&merged_path);
+        if merged_reports
+            .iter()
+            .any(|report| resolved_ids.contains(report.id.as_str()))
+        {
+            bail!(
+                "the sync server did not retain resolved issue reports; update and restart \
+                 haqor-sync-server before resolving reports"
+            );
+        }
+        Ok(resolved)
+    })();
+    let _ = std::fs::remove_file(&temporary);
+    result
 }
 
 fn with_remote_progress<T>(
