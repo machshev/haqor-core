@@ -1,9 +1,10 @@
 //! Minimal local HTTP server for editing `data/lexicon_overrides.json`.
 
 use std::collections::HashSet;
-use std::io::{Read, Write};
-use std::net::{SocketAddr, TcpListener, TcpStream};
+use std::io::{BufRead, BufReader, Read, Write};
+use std::net::{SocketAddr, TcpListener, TcpStream, ToSocketAddrs};
 use std::path::{Path, PathBuf};
+use std::time::{Duration, SystemTime, UNIX_EPOCH};
 
 use anyhow::{Context, Result, bail};
 use rusqlite::Connection;
@@ -11,6 +12,13 @@ use serde_json::{Value, json};
 
 const EDITOR: &str = include_str!("editor.html");
 const MAX_REQUEST_BYTES: usize = 4 * 1024 * 1024;
+const MAX_SNAPSHOT_BYTES: usize = 64 * 1024 * 1024;
+
+struct SyncEndpoint {
+    host: String,
+    port: u16,
+    path: String,
+}
 
 /// Pull the mobile tutor gloss corrections from the canonical sync database
 /// into the hand-maintained `word_glosses` overlay. Existing rows retain their
@@ -46,6 +54,105 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
     }
     haqor_core::lexicon_overlay::save(overlay, &value)?;
     Ok(corrections.len())
+}
+
+/// Fetch the canonical progress snapshot from an authenticated LAN sync server
+/// and merge its mobile tutor corrections into the local overlay JSON.
+pub fn pull_gloss_overrides_from_server(
+    server_url: &str,
+    token: &str,
+    overlay: &Path,
+) -> Result<usize> {
+    if token.trim().is_empty() {
+        bail!("--token must not be empty");
+    }
+    let snapshot = fetch_sync_snapshot(&parse_sync_endpoint(server_url)?, token)?;
+    if !haqor_core::progress_sync::is_sqlite_snapshot(&snapshot) {
+        bail!("sync server returned an invalid progress snapshot");
+    }
+    let nonce = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
+    let temporary = std::env::temp_dir().join(format!(
+        "haqor-admin-pull-{}-{nonce}.db",
+        std::process::id()
+    ));
+    std::fs::write(&temporary, snapshot)
+        .with_context(|| format!("writing temporary sync snapshot {}", temporary.display()))?;
+    let result = pull_gloss_overrides(&temporary, overlay);
+    let _ = std::fs::remove_file(&temporary);
+    result
+}
+
+fn parse_sync_endpoint(input: &str) -> Result<SyncEndpoint> {
+    let rest = input
+        .trim()
+        .strip_prefix("http://")
+        .context("sync server must start with http://")?;
+    let (authority, path) = match rest.find('/') {
+        Some(index) => (&rest[..index], &rest[index..]),
+        None => (rest, "/v1/progress"),
+    };
+    if authority.is_empty() || authority.contains('@') {
+        bail!("sync server address is invalid");
+    }
+    let (host, port) = match authority.rsplit_once(':') {
+        Some((host, port)) if !host.is_empty() => (
+            host.to_string(),
+            port.parse().context("sync server port is invalid")?,
+        ),
+        _ => (authority.to_string(), 80),
+    };
+    Ok(SyncEndpoint {
+        host,
+        port,
+        path: path.to_string(),
+    })
+}
+
+fn fetch_sync_snapshot(endpoint: &SyncEndpoint, token: &str) -> Result<Vec<u8>> {
+    let address = format!("{}:{}", endpoint.host, endpoint.port);
+    let socket = address
+        .to_socket_addrs()
+        .with_context(|| format!("resolving sync server {}", endpoint.host))?
+        .next()
+        .context("sync server address did not resolve")?;
+    let mut stream = TcpStream::connect_timeout(&socket, Duration::from_secs(10))
+        .context("connecting to sync server")?;
+    let _ = stream.set_read_timeout(Some(Duration::from_secs(30)));
+    let _ = stream.set_write_timeout(Some(Duration::from_secs(30)));
+    write!(
+        stream,
+        "GET {} HTTP/1.1\r\nHost: {}\r\nAuthorization: Bearer {}\r\nConnection: close\r\n\r\n",
+        endpoint.path, endpoint.host, token
+    )?;
+
+    let mut reader = BufReader::new(stream);
+    let mut status = String::new();
+    reader.read_line(&mut status)?;
+    if !status.starts_with("HTTP/1.1 200") && !status.starts_with("HTTP/1.0 200") {
+        bail!("sync server returned {}", status.trim());
+    }
+    let mut content_length = None;
+    loop {
+        let mut line = String::new();
+        if reader.read_line(&mut line)? == 0 {
+            bail!("sync server closed the response headers early");
+        }
+        if line == "\r\n" {
+            break;
+        }
+        if let Some((name, value)) = line.split_once(':')
+            && name.eq_ignore_ascii_case("content-length")
+        {
+            content_length = value.trim().parse::<usize>().ok();
+        }
+    }
+    let length = content_length.context("sync server omitted Content-Length")?;
+    if length > MAX_SNAPSHOT_BYTES {
+        bail!("sync server returned an unexpectedly large snapshot");
+    }
+    let mut snapshot = vec![0; length];
+    reader.read_exact(&mut snapshot)?;
+    Ok(snapshot)
 }
 
 pub fn serve(bind: SocketAddr, overlay: PathBuf, lexicon: PathBuf, hebrew: PathBuf) -> Result<()> {

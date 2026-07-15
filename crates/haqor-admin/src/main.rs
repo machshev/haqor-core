@@ -32,9 +32,18 @@ struct Args {
 enum Command {
     /// Merge mobile tutor gloss corrections from the sync database into the overlay JSON.
     Pull {
-        /// Canonical learner-progress database held by haqor-sync-server.
-        #[arg(long, default_value = "data/sync-progress.db")]
-        progress: PathBuf,
+        /// Canonical learner-progress database held by haqor-sync-server. This is
+        /// the default source when --server is omitted.
+        #[arg(long, conflicts_with = "server")]
+        progress: Option<PathBuf>,
+
+        /// Remote sync-server URL, for example http://192.168.1.10:8788.
+        #[arg(long, conflicts_with = "progress")]
+        server: Option<String>,
+
+        /// Sync token required when pulling from --server.
+        #[arg(long, requires = "server")]
+        token: Option<String>,
 
         /// Overlay JSON file to update atomically.
         #[arg(long, default_value = "data/lexicon_overrides.json")]
@@ -45,8 +54,25 @@ enum Command {
 fn main() -> Result<()> {
     let args = Args::parse();
     match args.command {
-        Some(Command::Pull { progress, overlay }) => {
-            let count = haqor_admin::pull_gloss_overrides(&progress, &overlay)?;
+        Some(Command::Pull {
+            progress,
+            server,
+            token,
+            overlay,
+        }) => {
+            let count = match server {
+                Some(server) => haqor_admin::pull_gloss_overrides_from_server(
+                    &server,
+                    token.as_deref().ok_or_else(|| {
+                        anyhow::anyhow!("--token is required when using --server")
+                    })?,
+                    &overlay,
+                )?,
+                None => haqor_admin::pull_gloss_overrides(
+                    &progress.unwrap_or_else(|| PathBuf::from("data/sync-progress.db")),
+                    &overlay,
+                )?,
+            };
             println!(
                 "Merged {count} tutor gloss correction(s) into {}",
                 overlay.display()
