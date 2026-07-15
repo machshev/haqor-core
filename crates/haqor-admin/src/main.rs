@@ -33,16 +33,17 @@ enum Command {
     /// Merge mobile tutor gloss corrections from the sync database into the overlay JSON.
     Pull {
         /// Canonical learner-progress database held by haqor-sync-server. This is
-        /// the default source when --server is omitted.
+        /// used instead of the app's saved sync-server settings.
         #[arg(long, conflicts_with = "server")]
         progress: Option<PathBuf>,
 
-        /// Remote sync-server URL, for example http://192.168.1.10:8788.
+        /// Remote sync-server URL, for example http://192.168.1.10:8788. Defaults
+        /// to the Haqor app's saved sync-server setting.
         #[arg(long, conflicts_with = "progress")]
         server: Option<String>,
 
-        /// Sync token required when pulling from --server.
-        #[arg(long, requires = "server")]
+        /// Sync token used with --server. Defaults to the Haqor app's saved token.
+        #[arg(long)]
         token: Option<String>,
 
         /// Overlay JSON file to update atomically.
@@ -60,18 +61,23 @@ fn main() -> Result<()> {
             token,
             overlay,
         }) => {
-            let count = match server {
-                Some(server) => haqor_admin::pull_gloss_overrides_from_server(
-                    &server,
-                    token.as_deref().ok_or_else(|| {
-                        anyhow::anyhow!("--token is required when using --server")
-                    })?,
-                    &overlay,
-                )?,
-                None => haqor_admin::pull_gloss_overrides(
-                    &progress.unwrap_or_else(|| PathBuf::from("data/sync-progress.db")),
-                    &overlay,
-                )?,
+            let count = if let Some(progress) = progress {
+                haqor_admin::pull_gloss_overrides(&progress, &overlay)?
+            } else {
+                let saved = if server.is_some() && token.is_some() {
+                    None
+                } else {
+                    Some(haqor_admin::read_app_sync_settings(
+                        haqor_admin::DEFAULT_APP_SHARED_PREFERENCES,
+                    )?)
+                };
+                let server = server
+                    .or_else(|| saved.as_ref().map(|settings| settings.server_url.clone()))
+                    .expect("saved settings provide a server URL");
+                let token = token
+                    .or_else(|| saved.map(|settings| settings.token))
+                    .expect("saved settings provide a token");
+                haqor_admin::pull_gloss_overrides_from_server(&server, &token, &overlay)?
             };
             println!(
                 "Merged {count} tutor gloss correction(s) into {}",

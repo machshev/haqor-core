@@ -13,11 +13,57 @@ use serde_json::{Value, json};
 const EDITOR: &str = include_str!("editor.html");
 const MAX_REQUEST_BYTES: usize = 4 * 1024 * 1024;
 const MAX_SNAPSHOT_BYTES: usize = 64 * 1024 * 1024;
+pub const DEFAULT_APP_SHARED_PREFERENCES: &str =
+    "/home/jamesm/.local/share/com.example.haqor/shared_preferences.json";
+
+/// The server credentials the Flutter app keeps in its platform preferences.
+/// They are read only for a `pull` invocation and are never printed.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct AppSyncSettings {
+    pub server_url: String,
+    pub token: String,
+}
 
 struct SyncEndpoint {
     host: String,
     port: u16,
     path: String,
+}
+
+/// Read the sync endpoint the Haqor app has already been configured to use.
+/// Flutter's Linux shared-preference backend prefixes its keys with `flutter.`.
+pub fn read_app_sync_settings(path: impl AsRef<Path>) -> Result<AppSyncSettings> {
+    let path = path.as_ref();
+    let raw = std::fs::read_to_string(path)
+        .with_context(|| format!("reading app preferences {}", path.display()))?;
+    let preferences: Value = serde_json::from_str(&raw)
+        .with_context(|| format!("parsing app preferences {}", path.display()))?;
+    let text = |keys: &[&str], label: &str| -> Result<String> {
+        keys.iter()
+            .find_map(|key| preferences.get(*key).and_then(Value::as_str))
+            .map(str::trim)
+            .filter(|value| !value.is_empty())
+            .map(ToOwned::to_owned)
+            .with_context(|| {
+                format!(
+                    "{label} is not configured in {}; supply explicit --server and --token instead",
+                    path.display()
+                )
+            })
+    };
+    Ok(AppSyncSettings {
+        server_url: text(
+            &[
+                "flutter.progress_sync_server_url",
+                "progress_sync_server_url",
+            ],
+            "sync server URL",
+        )?,
+        token: text(
+            &["flutter.progress_sync_token", "progress_sync_token"],
+            "sync token",
+        )?,
+    })
 }
 
 /// Pull the mobile tutor gloss corrections from the canonical sync database
@@ -566,6 +612,28 @@ mod tests {
         assert!(rows[1].get("note").is_none());
         std::fs::remove_file(overlay)?;
         std::fs::remove_file(progress)?;
+        Ok(())
+    }
+
+    #[test]
+    fn reads_flutter_sync_settings_without_exposing_the_token() -> Result<()> {
+        let preferences = std::env::temp_dir().join(format!(
+            "haqor-admin-preferences-{}-{}.json",
+            std::process::id(),
+            std::thread::current().name().unwrap_or("test")
+        ));
+        std::fs::write(
+            &preferences,
+            r#"{"flutter.progress_sync_server_url":" http://192.168.1.10:8788 ","flutter.progress_sync_token":" secret "}"#,
+        )?;
+        assert_eq!(
+            read_app_sync_settings(&preferences)?,
+            AppSyncSettings {
+                server_url: "http://192.168.1.10:8788".to_string(),
+                token: "secret".to_string(),
+            }
+        );
+        std::fs::remove_file(preferences)?;
         Ok(())
     }
 }
