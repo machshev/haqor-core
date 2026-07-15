@@ -10,7 +10,7 @@ use std::path::Path;
 
 use rusqlite::Connection;
 
-use crate::tutor::{GlossOverride, IssueReport, init_progress_schema};
+use crate::tutor::{GlossOverride, IssueReport, LexiconEntryOverride, init_progress_schema};
 
 /// SQLite's file header. Checking it before attaching keeps a bad HTTP body
 /// from becoming an opaque "file is not a database" error later on.
@@ -103,11 +103,24 @@ fn ensure_issue_reports(db: &Connection, schema: &str) -> rusqlite::Result<()> {
     ))
 }
 
+fn ensure_lexicon_entry_overrides(db: &Connection, schema: &str) -> rusqlite::Result<()> {
+    db.execute_batch(&format!(
+        "CREATE TABLE IF NOT EXISTS {schema}.lexicon_entry_overrides(
+            surface       TEXT PRIMARY KEY,
+            root          TEXT NOT NULL DEFAULT '',
+            gloss         TEXT NOT NULL,
+            updated_epoch INTEGER NOT NULL
+        )"
+    ))
+}
+
 fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     ensure_updated_epochs(db, "progress")?;
     ensure_updated_epochs(db, "sync")?;
     ensure_gloss_overrides(db, "progress")?;
     ensure_gloss_overrides(db, "sync")?;
+    ensure_lexicon_entry_overrides(db, "progress")?;
+    ensure_lexicon_entry_overrides(db, "sync")?;
     ensure_issue_reports(db, "progress")?;
     ensure_issue_reports(db, "sync")?;
     db.execute_batch("BEGIN IMMEDIATE")?;
@@ -225,6 +238,17 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
                 updated_epoch=excluded.updated_epoch
              WHERE excluded.updated_epoch > progress.issue_reports.updated_epoch;",
         )?;
+        db.execute_batch(
+            "INSERT INTO progress.lexicon_entry_overrides(
+                 surface, root, gloss, updated_epoch)
+             SELECT surface, root, gloss, updated_epoch
+             FROM sync.lexicon_entry_overrides WHERE true
+             ON CONFLICT(surface) DO UPDATE SET
+                root=excluded.root, gloss=excluded.gloss,
+                updated_epoch=excluded.updated_epoch
+             WHERE excluded.updated_epoch >
+                   progress.lexicon_entry_overrides.updated_epoch;",
+        )?;
         Ok(())
     })();
     match result {
@@ -299,6 +323,38 @@ pub fn read_issue_reports_file(path: &Path) -> rusqlite::Result<Vec<IssueReport>
                 context_json: row.get(3)?,
                 created_epoch: row.get(4)?,
                 updated_epoch: row.get(5)?,
+            })
+        })?
+        .collect()
+}
+
+/// Read mobile word-info root/header corrections from a canonical sync DB.
+pub fn read_lexicon_entry_overrides_file(
+    path: &Path,
+) -> rusqlite::Result<Vec<LexiconEntryOverride>> {
+    let db = Connection::open_with_flags(path, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+    let exists: bool = db.query_row(
+        "SELECT EXISTS(
+            SELECT 1 FROM sqlite_master
+            WHERE type='table' AND name='lexicon_entry_overrides'
+        )",
+        [],
+        |row| row.get(0),
+    )?;
+    if !exists {
+        return Ok(Vec::new());
+    }
+    let mut statement = db.prepare(
+        "SELECT surface, root, gloss, updated_epoch
+         FROM lexicon_entry_overrides ORDER BY updated_epoch, surface",
+    )?;
+    statement
+        .query_map([], |row| {
+            Ok(LexiconEntryOverride {
+                surface: row.get(0)?,
+                root: row.get(1)?,
+                gloss: row.get(2)?,
+                updated_epoch: row.get(3)?,
             })
         })?
         .collect()
@@ -507,6 +563,46 @@ mod tests {
         assert_eq!(reports[0].updated_epoch, 200);
         assert_eq!(reports[1].id, "device-b-1");
         assert_eq!(reports[1].report_type, "idea");
+
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn lexicon_entry_overrides_sync_and_are_readable() -> anyhow::Result<()> {
+        let canonical = temp_path("canonical-lexicon-entry.db");
+        let incoming = temp_path("incoming-lexicon-entry.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        for (path, root, gloss, updated) in [
+            (&canonical, "דבר", "word", 100_i64),
+            (&incoming, "דבר", "matter", 200_i64),
+        ] {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            db.execute(
+                "INSERT INTO progress.lexicon_entry_overrides(
+                     surface, root, gloss, updated_epoch)
+                 VALUES ('דָּבָר', ?1, ?2, ?3)",
+                params![root, gloss, updated],
+            )?;
+        }
+
+        merge_progress_files(&canonical, &incoming)?;
+        assert_eq!(
+            read_lexicon_entry_overrides_file(&canonical)?,
+            vec![LexiconEntryOverride {
+                surface: "דָּבָר".to_string(),
+                root: "דבר".to_string(),
+                gloss: "matter".to_string(),
+                updated_epoch: 200,
+            }]
+        );
 
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);

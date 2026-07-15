@@ -98,13 +98,16 @@ pub fn read_app_sync_settings(path: impl AsRef<Path>) -> Result<AppSyncSettings>
     })
 }
 
-/// Pull the mobile tutor gloss corrections from the canonical sync database
-/// into the hand-maintained `word_glosses` overlay. Existing rows retain their
-/// `is_name` classification; only the learner gloss and teaching note come
-/// from the mobile correction.
+/// Pull mobile lexicon corrections from the canonical sync database into the
+/// hand-maintained overlay. Tutor corrections update `word_glosses`, while
+/// word-info corrections update `lexicon_entries` root/header gloss rows.
 pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
     let corrections = haqor_core::progress_sync::read_gloss_overrides_file(progress)
         .with_context(|| format!("reading tutor corrections from {}", progress.display()))?;
+    let lexicon_corrections = haqor_core::progress_sync::read_lexicon_entry_overrides_file(
+        progress,
+    )
+    .with_context(|| format!("reading word-info corrections from {}", progress.display()))?;
     let mut value = haqor_core::lexicon_overlay::load(overlay)?;
     let rows = value["word_glosses"]
         .as_array_mut()
@@ -130,12 +133,32 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
             object.insert("note".to_string(), Value::String(correction.note.clone()));
         }
     }
+    let rows = value["lexicon_entries"]
+        .as_array_mut()
+        .context("overlay `lexicon_entries` must be an array")?;
+    for correction in &lexicon_corrections {
+        let row = rows
+            .iter_mut()
+            .find(|row| row["surface"].as_str() == Some(&correction.surface));
+        let row = match row {
+            Some(row) => row,
+            None => {
+                rows.push(json!({"surface": correction.surface}));
+                rows.last_mut().expect("just pushed a row")
+            }
+        };
+        let object = row
+            .as_object_mut()
+            .context("overlay lexicon entry row must be an object")?;
+        object.insert("root".to_string(), Value::String(correction.root.clone()));
+        object.insert("gloss".to_string(), Value::String(correction.gloss.clone()));
+    }
     haqor_core::lexicon_overlay::save(overlay, &value)?;
-    Ok(corrections.len())
+    Ok(corrections.len() + lexicon_corrections.len())
 }
 
 /// Fetch the canonical progress snapshot from an authenticated LAN sync server
-/// and merge its mobile tutor corrections into the local overlay JSON.
+/// and merge its mobile lexicon corrections into the local overlay JSON.
 pub fn pull_gloss_overrides_from_server(
     server_url: &str,
     token: &str,
@@ -777,11 +800,16 @@ mod tests {
             "CREATE TABLE gloss_overrides(surface TEXT PRIMARY KEY, gloss TEXT NOT NULL,
                 note TEXT NOT NULL DEFAULT '', updated_epoch INTEGER NOT NULL);
              INSERT INTO gloss_overrides VALUES ('דָּבָר', 'matter', 'In this context.', 1);
-             INSERT INTO gloss_overrides VALUES ('טוֹב', 'good', '', 2);",
+             INSERT INTO gloss_overrides VALUES ('טוֹב', 'good', '', 2);
+             CREATE TABLE lexicon_entry_overrides(
+                surface TEXT PRIMARY KEY, root TEXT NOT NULL DEFAULT '',
+                gloss TEXT NOT NULL, updated_epoch INTEGER NOT NULL);
+             INSERT INTO lexicon_entry_overrides
+                VALUES ('דָּבָר', 'דבר', 'speech, word', 3);",
         )?;
         drop(db);
 
-        assert_eq!(pull_gloss_overrides(&progress, &overlay)?, 2);
+        assert_eq!(pull_gloss_overrides(&progress, &overlay)?, 3);
         let value: Value = serde_json::from_str(&std::fs::read_to_string(&overlay)?)?;
         let rows = value["word_glosses"].as_array().unwrap();
         assert_eq!(rows[0]["gloss"], "matter");
@@ -789,6 +817,10 @@ mod tests {
         assert_eq!(rows[0]["is_name"], true);
         assert_eq!(rows[1]["surface"], "טוֹב");
         assert!(rows[1].get("note").is_none());
+        let entry = &value["lexicon_entries"][0];
+        assert_eq!(entry["surface"], "דָּבָר");
+        assert_eq!(entry["root"], "דבר");
+        assert_eq!(entry["gloss"], "speech, word");
         std::fs::remove_file(overlay)?;
         std::fs::remove_file(progress)?;
         Ok(())

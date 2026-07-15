@@ -304,6 +304,17 @@ pub struct GlossOverride {
     pub updated_epoch: i64,
 }
 
+/// A mobile correction for the root/header gloss shown by word information.
+/// Like tutor gloss corrections, these remain in the writable progress DB
+/// until `haqor-admin pull` promotes them into `lexicon_entries`.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct LexiconEntryOverride {
+    pub surface: String,
+    pub root: String,
+    pub gloss: String,
+    pub updated_epoch: i64,
+}
+
 /// A bug report or idea captured from an admin-only app control. Reports live
 /// in the writable progress database so they can be recorded offline, carried
 /// by normal progress sync, and downloaded later with `haqor-admin`.
@@ -974,6 +985,12 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             note          TEXT    NOT NULL DEFAULT '',
             updated_epoch INTEGER NOT NULL,
             deleted       INTEGER NOT NULL DEFAULT 0
+         );
+         CREATE TABLE IF NOT EXISTS progress.lexicon_entry_overrides(
+            surface       TEXT    PRIMARY KEY,
+            root          TEXT    NOT NULL DEFAULT '',
+            gloss         TEXT    NOT NULL,
+            updated_epoch INTEGER NOT NULL
          );
          CREATE TABLE IF NOT EXISTS progress.issue_reports(
             id            TEXT    PRIMARY KEY,
@@ -2299,6 +2316,52 @@ impl Bible {
             params![surface, gloss, note.trim(), updated_epoch],
         )?;
         Ok(())
+    }
+
+    /// Store a mobile correction for the word-info root and header gloss.
+    pub fn set_lexicon_entry_override(
+        &self,
+        surface: &str,
+        root: &str,
+        gloss: &str,
+        updated_epoch: i64,
+    ) -> rusqlite::Result<()> {
+        let surface = surface.trim();
+        let root = root.trim();
+        let gloss = gloss.trim();
+        if surface.is_empty() || gloss.is_empty() {
+            return Err(rusqlite::Error::InvalidParameterName(
+                "surface and gloss must not be empty".to_string(),
+            ));
+        }
+        self.conn().execute(
+            "INSERT INTO progress.lexicon_entry_overrides(
+                 surface, root, gloss, updated_epoch)
+             VALUES (?1, ?2, ?3, ?4)
+             ON CONFLICT(surface) DO UPDATE SET
+                root=excluded.root, gloss=excluded.gloss,
+                updated_epoch=MAX(
+                    excluded.updated_epoch,
+                    progress.lexicon_entry_overrides.updated_epoch + 1
+                )",
+            params![surface, root, gloss, updated_epoch],
+        )?;
+        Ok(())
+    }
+
+    /// Return the active mobile word-info correction for this exact surface.
+    pub fn lexicon_entry_override(
+        &self,
+        surface: &str,
+    ) -> rusqlite::Result<Option<(String, String)>> {
+        self.conn()
+            .query_row(
+                "SELECT root, gloss FROM progress.lexicon_entry_overrides
+                 WHERE surface = ?1",
+                params![surface],
+                |row| Ok((row.get(0)?, row.get(1)?)),
+            )
+            .optional()
     }
 
     fn tutor_gloss_override(&self, surface: &str) -> rusqlite::Result<Option<(String, String)>> {
