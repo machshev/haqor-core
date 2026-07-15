@@ -59,12 +59,13 @@ The **Imported glosses** tab browses the BDB and Strong's glosses in
 add or update a `lexicon_entries` row; the imported database row is never
 edited directly. Use `--lexicon PATH` when browsing a database elsewhere.
 
-## Mobile tutor corrections
+## Mobile lexicon corrections
 
-Tutor admin mode stores quick, mobile-made gloss corrections in the app's
-`progress.db`. They are included in ordinary LAN progress sync, so review them
-on the machine that runs the sync server and merge them into the checked-in
-overlay with:
+Admin mode stores quick, mobile-made corrections in the app's `progress.db`.
+The tutor editor targets learner-facing `word_glosses`; the word-info editor
+keeps that layer separate and targets the `lexicon_entries` root/header gloss.
+Both are included in ordinary LAN progress sync, so review them on the machine
+that runs the sync server and merge them into the checked-in overlay with:
 
 ```sh
 haqor-admin pull --progress data/sync-progress.db --overlay data/lexicon_overrides.json
@@ -84,8 +85,9 @@ unset). It temporarily falls back to the old Flutter-template application ID
 so an upgrade does not lose existing sync settings. Use `--progress` to force a
 local database or pass `--server` / `--token` to override either saved value.
 
-The command updates `word_glosses` atomically, preserving an existing proper-name
-marker. Regenerate the lexical databases afterwards as usual.
+The command updates `word_glosses` and `lexicon_entries` atomically, preserving
+an existing proper-name marker. Regenerate the lexical databases afterwards as
+usual.
 
 ## Mobile issue and idea log
 

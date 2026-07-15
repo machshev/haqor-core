@@ -32,7 +32,7 @@ enum Command {
         #[arg(long, default_value = "data/hebrew.db")]
         hebrew: PathBuf,
     },
-    /// Merge mobile tutor gloss corrections from the sync database into the overlay JSON.
+    /// Merge mobile tutor and word-info corrections into the overlay JSON.
     Pull {
         /// Canonical learner-progress database held by haqor-sync-server. This is
         /// used instead of the app's saved sync-server settings.
@@ -110,7 +110,7 @@ fn main() -> Result<()> {
                 haqor_admin::pull_gloss_overrides_from_server(&server, &token, &overlay)?
             };
             println!(
-                "Merged {count} tutor gloss correction(s) into {}",
+                "Merged {count} mobile lexicon correction(s) into {}",
                 overlay.display()
             );
             Ok(())
