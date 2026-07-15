@@ -171,6 +171,15 @@ pub fn pull_gloss_overrides_from_server(
 
 /// Export the synchronised mobile bug/idea log as deterministic, pretty JSON.
 pub fn pull_issue_reports(progress: &Path, output: &Path) -> Result<usize> {
+    if !haqor_core::progress_sync::has_issue_reports_file(progress)
+        .with_context(|| format!("checking issue-report support in {}", progress.display()))?
+    {
+        bail!(
+            "the synced progress snapshot has no issue_reports table; the running \
+             haqor-sync-server is out of date. Update and restart it, then sync \
+             the app again; reports remain saved on the device"
+        );
+    }
     let reports = haqor_core::progress_sync::read_issue_reports_file(progress)
         .with_context(|| format!("reading issue reports from {}", progress.display()))?;
     let rows = reports
@@ -857,6 +866,27 @@ mod tests {
 
         std::fs::remove_file(progress)?;
         std::fs::remove_file(output)?;
+        Ok(())
+    }
+
+    #[test]
+    fn pull_issues_rejects_a_legacy_server_snapshot() -> Result<()> {
+        let base = std::env::temp_dir().join(format!(
+            "haqor-admin-pull-legacy-issues-{}",
+            std::process::id()
+        ));
+        let progress = base.with_extension("db");
+        let output = base.with_extension("json");
+        let _ = std::fs::remove_file(&progress);
+        let _ = std::fs::remove_file(&output);
+        Connection::open(&progress)?
+            .execute_batch("CREATE TABLE legacy_progress(value INTEGER NOT NULL);")?;
+
+        let error = pull_issue_reports(&progress, &output).unwrap_err();
+        assert!(error.to_string().contains("sync-server is out of date"));
+        assert!(!output.exists());
+
+        std::fs::remove_file(progress)?;
         Ok(())
     }
 

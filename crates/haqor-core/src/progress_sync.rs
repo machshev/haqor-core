@@ -6,6 +6,7 @@
 //! concepts and activity records are unioned.  This lets two devices make
 //! progress offline and converge when they next meet the LAN server.
 
+use std::collections::HashMap;
 use std::path::Path;
 
 use rusqlite::Connection;
@@ -302,12 +303,7 @@ pub fn read_gloss_overrides_file(path: &Path) -> rusqlite::Result<Vec<GlossOverr
 /// databases simply return an empty log.
 pub fn read_issue_reports_file(path: &Path) -> rusqlite::Result<Vec<IssueReport>> {
     let db = Connection::open_with_flags(path, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)?;
-    let exists: bool = db.query_row(
-        "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type='table' AND name='issue_reports')",
-        [],
-        |row| row.get(0),
-    )?;
-    if !exists {
+    if !has_issue_reports(&db)? {
         return Ok(Vec::new());
     }
     let mut statement = db.prepare(
@@ -326,6 +322,40 @@ pub fn read_issue_reports_file(path: &Path) -> rusqlite::Result<Vec<IssueReport>
             })
         })?
         .collect()
+}
+
+fn has_issue_reports(db: &Connection) -> rusqlite::Result<bool> {
+    db.query_row(
+        "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type='table' AND name='issue_reports')",
+        [],
+        |row| row.get(0),
+    )
+}
+
+/// Whether a progress snapshot was created by a core version that knows how
+/// to store issue reports. This lets admin tooling distinguish a genuinely
+/// empty report log from an old sync server that silently discarded the table.
+pub fn has_issue_reports_file(path: &Path) -> rusqlite::Result<bool> {
+    let db = Connection::open_with_flags(path, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+    has_issue_reports(&db)
+}
+
+/// Count uploaded issue reports that the server's merged response did not
+/// acknowledge at the same or a newer revision. Ordinary learning progress can
+/// still be merged locally before callers surface this compatibility failure.
+pub fn unmerged_issue_report_count(uploaded: &Path, merged: &Path) -> rusqlite::Result<usize> {
+    let merged_updates = read_issue_reports_file(merged)?
+        .into_iter()
+        .map(|report| (report.id, report.updated_epoch))
+        .collect::<HashMap<_, _>>();
+    Ok(read_issue_reports_file(uploaded)?
+        .into_iter()
+        .filter(|report| {
+            merged_updates
+                .get(&report.id)
+                .is_none_or(|updated| *updated < report.updated_epoch)
+        })
+        .count())
 }
 
 /// Read mobile word-info root/header corrections from a canonical sync DB.
@@ -566,6 +596,41 @@ mod tests {
 
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn old_server_snapshot_does_not_acknowledge_issue_reports() -> anyhow::Result<()> {
+        let uploaded = temp_path("uploaded-issues.db");
+        let legacy_response = temp_path("legacy-response.db");
+        let _ = fs::remove_file(&uploaded);
+        let _ = fs::remove_file(&legacy_response);
+        {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [uploaded.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            db.execute(
+                "INSERT INTO progress.issue_reports(
+                     id, report_type, note, context_json, created_epoch, updated_epoch)
+                 VALUES ('phone-1', 'bug', 'Missing report', '{}', 100, 100)",
+                [],
+            )?;
+        }
+        Connection::open(&legacy_response)?
+            .execute_batch("CREATE TABLE legacy_progress(value INTEGER NOT NULL);")?;
+
+        assert!(has_issue_reports_file(&uploaded)?);
+        assert!(!has_issue_reports_file(&legacy_response)?);
+        assert_eq!(unmerged_issue_report_count(&uploaded, &legacy_response)?, 1);
+
+        merge_progress_files(&legacy_response, &uploaded)?;
+        assert!(has_issue_reports_file(&legacy_response)?);
+        assert_eq!(unmerged_issue_report_count(&uploaded, &legacy_response)?, 0);
+        let _ = fs::remove_file(&uploaded);
+        let _ = fs::remove_file(&legacy_response);
         Ok(())
     }
 
