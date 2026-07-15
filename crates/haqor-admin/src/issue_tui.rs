@@ -1,4 +1,4 @@
-use std::io;
+use std::io::{self, Write};
 
 use anyhow::Result;
 use chrono::{Local, TimeZone};
@@ -51,7 +51,7 @@ pub(super) fn review(
     let mut resolving = vec![false; reports.len()];
     let mut resolved_count = 0;
     let mut status =
-        "↑/↓ or j/k move · e edit note · ? help · d/space resolve · p pull · s sync · q quit"
+        "↑/↓ or j/k move · c copy · e edit note · ? help · d/space resolve · p pull · s sync · q quit"
             .to_string();
     let mut editing: Option<(String, usize)> = None;
     let mut showing_help = false;
@@ -148,6 +148,13 @@ pub(super) fn review(
             KeyCode::Char('e') if !reports.is_empty() => {
                 let note = reports[selected].note.clone();
                 editing = Some((note.clone(), note.chars().count()));
+            }
+            KeyCode::Char('c') if !reports.is_empty() => {
+                let snippet = llm_snippet(&reports[selected]);
+                match copy_to_clipboard(&snippet) {
+                    Ok(()) => status = "Copied selected issue as an LLM snippet".to_string(),
+                    Err(error) => status = format!("Copy failed: {error}"),
+                }
             }
             KeyCode::Char('p') => match action(Action::Pull, &reports) {
                 Ok(result) => {
@@ -344,6 +351,7 @@ fn draw_help_dialog(frame: &mut ratatui::Frame) {
     frame.render_widget(Clear, area);
     let help = Text::from(vec![
         Line::from("↑/↓ or j/k   Select a report"),
+        Line::from("c             Copy selected report as an LLM snippet"),
         Line::from("e             Edit the selected note"),
         Line::from("d or Space    Mark/unmark for resolution"),
         Line::from("p             Pull the latest reports"),
@@ -360,6 +368,51 @@ fn draw_help_dialog(frame: &mut ratatui::Frame) {
         ),
         area,
     );
+}
+
+/// Keep the copied form compact while retaining the complete report payload.
+/// A single-line context value is easier for an LLM to consume and avoids
+/// spending prompt space on the review UI's presentation-only labels.
+fn llm_snippet(report: &IssueReport) -> String {
+    let context = serde_json::from_str::<serde_json::Value>(&report.context_json)
+        .map(|value| compact_json(&value))
+        .unwrap_or_else(|_| report.context_json.clone());
+    format!(
+        "[Haqor issue]\ntype: {}\nid: {}\nnote: {}\ncontext: {}",
+        report.report_type, report.id, report.note, context
+    )
+}
+
+/// Copy through OSC 52, which is supported by modern terminal emulators and
+/// also works when the admin command is running over SSH.
+fn copy_to_clipboard(text: &str) -> io::Result<()> {
+    let encoded = base64_encode(text.as_bytes());
+    let mut stdout = io::stdout();
+    write!(stdout, "\x1b]52;c;{encoded}\x07")?;
+    stdout.flush()
+}
+
+fn base64_encode(bytes: &[u8]) -> String {
+    const ALPHABET: &[u8; 64] = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    let mut encoded = String::with_capacity(bytes.len().div_ceil(3) * 4);
+    for chunk in bytes.chunks(3) {
+        let first = chunk[0];
+        let second = chunk.get(1).copied().unwrap_or(0);
+        let third = chunk.get(2).copied().unwrap_or(0);
+        encoded.push(ALPHABET[(first >> 2) as usize] as char);
+        encoded.push(ALPHABET[((first & 0x03) << 4 | second >> 4) as usize] as char);
+        encoded.push(if chunk.len() > 1 {
+            ALPHABET[((second & 0x0f) << 2 | third >> 6) as usize] as char
+        } else {
+            '='
+        });
+        encoded.push(if chunk.len() > 2 {
+            ALPHABET[(third & 0x3f) as usize] as char
+        } else {
+            '='
+        });
+    }
+    encoded
 }
 
 fn centered_rect(width_percent: u16, height: u16, area: Rect) -> Rect {
@@ -419,8 +472,31 @@ fn format_timestamp(epoch: i64) -> String {
 
 #[cfg(test)]
 mod tests {
-    use super::{append_context_lines, format_timestamp};
+    use super::{append_context_lines, base64_encode, format_timestamp, llm_snippet};
+    use haqor_core::tutor::IssueReport;
     use ratatui::text::Line;
+
+    #[test]
+    fn base64_encode_matches_standard_encoding() {
+        assert_eq!(base64_encode(b"Man"), "TWFu");
+        assert_eq!(base64_encode("שלום".as_bytes()), "16nXnNeV150=");
+    }
+
+    #[test]
+    fn llm_snippet_is_compact_and_keeps_context() {
+        let report = IssueReport {
+            id: "issue-1".to_string(),
+            report_type: "bug".to_string(),
+            note: "The answer is wrong".to_string(),
+            context_json: r#"{"screen":"tutor","word":"בְּרֵאשִׁית"}"#.to_string(),
+            created_epoch: 0,
+            updated_epoch: 0,
+        };
+        assert_eq!(
+            llm_snippet(&report),
+            "[Haqor issue]\ntype: bug\nid: issue-1\nnote: The answer is wrong\ncontext: {\"screen\":\"tutor\",\"word\":\"בְּרֵאשִׁית\"}"
+        );
+    }
 
     #[test]
     fn formats_created_epoch_for_the_review_table() {
