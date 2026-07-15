@@ -71,8 +71,8 @@ fn draw(frame: &mut ratatui::Frame, reports: &[IssueReport], selected: usize, re
     let areas = Layout::default()
         .direction(Direction::Vertical)
         .constraints([
-            Constraint::Min(8),
-            Constraint::Length(10),
+            Constraint::Percentage(38),
+            Constraint::Percentage(60),
             Constraint::Length(2),
         ])
         .split(frame.area());
