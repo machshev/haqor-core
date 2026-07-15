@@ -59,6 +59,20 @@ The **Imported glosses** tab browses the BDB and Strong's glosses in
 add or update a `lexicon_entries` row; the imported database row is never
 edited directly. Use `--lexicon PATH` when browsing a database elsewhere.
 
+## Mobile tutor corrections
+
+Tutor admin mode stores quick, mobile-made gloss corrections in the app's
+`progress.db`. They are included in ordinary LAN progress sync, so review them
+on the machine that runs the sync server and merge them into the checked-in
+overlay with:
+
+```sh
+haqor-admin pull --progress data/sync-progress.db --overlay data/lexicon_overrides.json
+```
+
+The command updates `word_glosses` atomically, preserving an existing proper-name
+marker. Regenerate the lexical databases afterwards as usual.
+
 The **Ambiguous analyses** tab shows the 500 highest-frequency ambiguous
 surfaces from `data/hebrew.db`. Choosing a non-default reading creates a
 regeneration-safe `primary_analyses` override; **Automatic selection** removes
