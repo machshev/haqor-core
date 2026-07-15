@@ -73,13 +73,13 @@ sed -i -E "0,/^version = \"$cur\"/ s//version = \"$new\"/" "$manifest"
 
 # Member manifests: keep publishable path dependency versions in lockstep.
 sed -i -E \
-    "/^haqor-(admin|core|db-gen|morphology) = / s/version = \"$cur\"/version = \"$new\"/" \
+    "/^haqor-(admin|core|db-gen|morphology|sync-server) = / s/version = \"$cur\"/version = \"$new\"/" \
     "$root"/crates/*/Cargo.toml
 
 # Cargo.lock: replace the version inside every local workspace package block.
 if [ -f "$lock" ]; then
     awk -v new="$new" '
-        /^name = "haqor-(admin|cli|core|db-gen|morphology)"$/ { in_pkg = 1 }
+        /^name = "haqor-(admin|cli|core|db-gen|morphology|sync-server)"$/ { in_pkg = 1 }
         in_pkg && /^version = / { sub(/"[^"]+"/, "\"" new "\""); in_pkg = 0 }
         { print }
     ' "$lock" >"$lock.tmp" && mv "$lock.tmp" "$lock"
