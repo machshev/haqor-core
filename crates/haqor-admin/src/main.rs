@@ -84,6 +84,10 @@ enum Command {
         /// Sync token used with --server. Defaults to the Haqor app's saved token.
         #[arg(long)]
         token: Option<String>,
+
+        /// JSON file to replace when pulling the current issue log from the TUI.
+        #[arg(long, default_value = "data/issue_reports.json")]
+        output: PathBuf,
     },
 }
 
@@ -151,12 +155,13 @@ fn main() -> Result<()> {
             progress,
             server,
             token,
+            output,
         } => {
             let count = if let Some(progress) = progress {
-                haqor_admin::review_issue_reports(&progress)?
+                haqor_admin::review_issue_reports(&progress, &output)?
             } else {
                 let (server, token) = remote_settings(server, token)?;
-                haqor_admin::review_issue_reports_from_server(&server, &token)?
+                haqor_admin::review_issue_reports_from_server(&server, &token, &output)?
             };
             println!("Resolved {count} app issue report(s).");
             Ok(())

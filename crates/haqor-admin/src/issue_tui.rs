@@ -26,23 +26,34 @@ impl Drop for TerminalGuard {
     }
 }
 
-/// Show reports and return the IDs marked resolved when the user presses `s`.
-/// Quitting discards any in-memory selections.
-pub(super) fn review(reports: &[IssueReport]) -> Result<Vec<String>> {
-    if reports.is_empty() {
-        println!("No active app issue reports to review.");
-        return Ok(Vec::new());
-    }
+pub(super) enum Action {
+    Pull,
+    Sync(Vec<String>),
+}
 
+pub(super) struct ActionResult {
+    pub reports: Vec<IssueReport>,
+    pub resolved: usize,
+    pub message: String,
+}
+
+/// Show reports and run pull/sync actions without leaving the TUI.
+pub(super) fn review(
+    mut reports: Vec<IssueReport>,
+    mut action: impl FnMut(Action, &[IssueReport]) -> Result<ActionResult>,
+) -> Result<usize> {
     enable_raw_mode()?;
     execute!(io::stdout(), EnterAlternateScreen)?;
     let _guard = TerminalGuard;
     let mut terminal = Terminal::new(CrosstermBackend::new(io::stdout()))?;
     let mut selected = 0_usize;
     let mut resolving = vec![false; reports.len()];
+    let mut resolved_count = 0;
+    let mut status =
+        "↑/↓ or j/k move · d/space mark resolved · p pull · s sync · q quit".to_string();
 
     loop {
-        terminal.draw(|frame| draw(frame, reports, selected, &resolving))?;
+        terminal.draw(|frame| draw(frame, &reports, selected, &resolving, &status))?;
         let Event::Key(key) = event::read()? else {
             continue;
         };
@@ -50,24 +61,57 @@ pub(super) fn review(reports: &[IssueReport]) -> Result<Vec<String>> {
             continue;
         }
         match key.code {
-            KeyCode::Char('q') | KeyCode::Esc => return Ok(Vec::new()),
+            KeyCode::Char('q') | KeyCode::Esc => return Ok(resolved_count),
             KeyCode::Up | KeyCode::Char('k') => selected = selected.saturating_sub(1),
-            KeyCode::Down | KeyCode::Char('j') => selected = (selected + 1).min(reports.len() - 1),
-            KeyCode::Char('d') | KeyCode::Char(' ') => resolving[selected] = !resolving[selected],
+            KeyCode::Down | KeyCode::Char('j') if !reports.is_empty() => {
+                selected = (selected + 1).min(reports.len() - 1)
+            }
+            KeyCode::Char('d') | KeyCode::Char(' ') if !reports.is_empty() => {
+                resolving[selected] = !resolving[selected]
+            }
+            KeyCode::Char('p') => match action(Action::Pull, &reports) {
+                Ok(result) => {
+                    reports = result.reports;
+                    selected = 0;
+                    resolving = vec![false; reports.len()];
+                    status = result.message;
+                }
+                Err(error) => status = format!("Pull failed: {error:#}"),
+            },
             KeyCode::Char('s') => {
-                return Ok(reports
+                let ids = reports
                     .iter()
-                    .zip(resolving)
-                    .filter(|(_, resolved)| *resolved)
+                    .zip(resolving.iter())
+                    .filter(|(_, resolved)| **resolved)
                     .map(|(report, _)| report.id.clone())
-                    .collect());
+                    .collect::<Vec<_>>();
+                if ids.is_empty() {
+                    status = "Nothing marked resolved".to_string();
+                    continue;
+                }
+                match action(Action::Sync(ids), &reports) {
+                    Ok(result) => {
+                        resolved_count += result.resolved;
+                        reports = result.reports;
+                        selected = selected.min(reports.len().saturating_sub(1));
+                        resolving = vec![false; reports.len()];
+                        status = result.message;
+                    }
+                    Err(error) => status = format!("Sync failed: {error:#}"),
+                }
             }
             _ => {}
         }
     }
 }
 
-fn draw(frame: &mut ratatui::Frame, reports: &[IssueReport], selected: usize, resolving: &[bool]) {
+fn draw(
+    frame: &mut ratatui::Frame,
+    reports: &[IssueReport],
+    selected: usize,
+    resolving: &[bool],
+    status: &str,
+) {
     let areas = Layout::default()
         .direction(Direction::Vertical)
         .constraints([
@@ -126,6 +170,18 @@ fn draw(frame: &mut ratatui::Frame, reports: &[IssueReport], selected: usize, re
         .highlight_style(Style::default().bg(Color::DarkGray));
     frame.render_stateful_widget(list, areas[0], &mut state);
 
+    if reports.is_empty() {
+        frame.render_widget(
+            Paragraph::new("No active app issue reports.").block(
+                Block::default()
+                    .borders(Borders::ALL)
+                    .title(" Selected report "),
+            ),
+            areas[1],
+        );
+        frame.render_widget(Paragraph::new(status), areas[2]);
+        return;
+    }
     let report = &reports[selected];
     let type_style = match report.report_type.as_str() {
         "bug" => Style::default()
@@ -172,10 +228,7 @@ fn draw(frame: &mut ratatui::Frame, reports: &[IssueReport], selected: usize, re
             .wrap(Wrap { trim: false }),
         areas[1],
     );
-    frame.render_widget(
-        Paragraph::new("↑/↓ or j/k move · d/space mark resolved · s save and sync · q cancel"),
-        areas[2],
-    );
+    frame.render_widget(Paragraph::new(status), areas[2]);
 }
 
 fn append_context_lines(lines: &mut Vec<Line<'static>>, value: &serde_json::Value, prefix: &str) {
