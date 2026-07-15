@@ -20,6 +20,7 @@ jobs:
           - haqor-core
           - haqor-db-gen
           - haqor-morphology
+          - haqor-sync-server
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
