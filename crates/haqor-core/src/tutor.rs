@@ -2346,6 +2346,7 @@ impl Bible {
                 )",
             params![surface, root, gloss, updated_epoch],
         )?;
+        self.cache_runtime_lexicon_entry(surface, root, gloss);
         Ok(())
     }
 
@@ -2354,14 +2355,7 @@ impl Bible {
         &self,
         surface: &str,
     ) -> rusqlite::Result<Option<(String, String)>> {
-        self.conn()
-            .query_row(
-                "SELECT root, gloss FROM progress.lexicon_entry_overrides
-                 WHERE surface = ?1",
-                params![surface],
-                |row| Ok((row.get(0)?, row.get(1)?)),
-            )
-            .optional()
+        Ok(self.runtime_lexicon_entry(surface))
     }
 
     fn tutor_gloss_override(&self, surface: &str) -> rusqlite::Result<Option<(String, String)>> {
@@ -5588,6 +5582,33 @@ mod tests {
             bible.word_card("כִּי")?.expect("כִּי is a surface").gloss,
             "because"
         );
+        Ok(())
+    }
+
+    #[test]
+    fn mobile_lexicon_entry_override_updates_tutor_card_before_word_gloss_override()
+    -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("hebrew.db").exists() {
+            return Ok(());
+        }
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible
+            .conn()
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        init_progress_schema(bible.conn())?;
+
+        bible.set_lexicon_entry_override("בָּרָא", "יצר", "fashion", 1)?;
+        let card = bible.word_card("בָּרָא")?.expect("בָּרָא is a surface");
+        assert_eq!(card.root, "יצר");
+        assert_eq!(card.gloss, "he fashioned");
+        assert_eq!(card.root_gloss, "fashion");
+
+        // The learner-facing word-gloss layer remains the final override.
+        bible.set_tutor_gloss_override("בָּרָא", "create afresh", "", 2)?;
+        let card = bible.word_card("בָּרָא")?.expect("בָּרָא is a surface");
+        assert_eq!(card.gloss, "create afresh");
+        assert!(card.root_gloss.is_empty());
         Ok(())
     }
 

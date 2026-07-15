@@ -3,6 +3,7 @@
 use rusqlite::{Connection, OpenFlags, OptionalExtension};
 #[cfg(feature = "embedded")]
 use rust_embed::Embed;
+use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
 use std::path::Path;
 
@@ -1448,6 +1449,7 @@ const ATTACHED_DBS: [(&str, &str); 4] = [
 #[derive(Debug)]
 pub struct Bible {
     db: Connection,
+    runtime_lexicon_entries: RefCell<HashMap<String, (String, String)>>,
 }
 
 #[cfg(feature = "embedded")]
@@ -1464,7 +1466,10 @@ impl Default for Bible {
         }
 
         register_sql_functions(&db).unwrap();
-        Bible { db }
+        Bible {
+            db,
+            runtime_lexicon_entries: RefCell::new(HashMap::new()),
+        }
     }
 }
 
@@ -1529,7 +1534,10 @@ impl Bible {
             )?;
         }
         register_sql_functions(&db)?;
-        Ok(Bible { db })
+        Ok(Bible {
+            db,
+            runtime_lexicon_entries: RefCell::new(HashMap::new()),
+        })
     }
 
     /// Attach a writable `progress.db` (created if absent) under the `progress`
@@ -1542,7 +1550,8 @@ impl Bible {
             "ATTACH DATABASE ?1 AS progress",
             [progress_db.as_ref().to_string_lossy().as_ref()],
         )?;
-        crate::tutor::init_progress_schema(&self.db)
+        crate::tutor::init_progress_schema(&self.db)?;
+        self.reload_runtime_lexicon_entries()
     }
 
     /// Export the learner's writable progress schema as a consistent SQLite
@@ -1556,7 +1565,34 @@ impl Bible {
     /// caches are refreshed lazily by the next tutor request, while individual
     /// review state and one-time teaching concepts converge immediately.
     pub fn merge_progress_snapshot<P: AsRef<Path>>(&self, snapshot: P) -> rusqlite::Result<()> {
-        crate::progress_sync::merge_progress_snapshot(&self.db, snapshot.as_ref())
+        crate::progress_sync::merge_progress_snapshot(&self.db, snapshot.as_ref())?;
+        self.reload_runtime_lexicon_entries()
+    }
+
+    fn reload_runtime_lexicon_entries(&self) -> rusqlite::Result<()> {
+        let mut statement = self
+            .db
+            .prepare("SELECT surface, root, gloss FROM progress.lexicon_entry_overrides")?;
+        let entries = statement
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, String>(0)?,
+                    (row.get::<_, String>(1)?, row.get::<_, String>(2)?),
+                ))
+            })?
+            .collect::<rusqlite::Result<HashMap<_, _>>>()?;
+        *self.runtime_lexicon_entries.borrow_mut() = entries;
+        Ok(())
+    }
+
+    pub(crate) fn cache_runtime_lexicon_entry(&self, surface: &str, root: &str, gloss: &str) {
+        self.runtime_lexicon_entries
+            .borrow_mut()
+            .insert(surface.to_string(), (root.to_string(), gloss.to_string()));
+    }
+
+    pub(crate) fn runtime_lexicon_entry(&self, surface: &str) -> Option<(String, String)> {
+        self.runtime_lexicon_entries.borrow().get(surface).cloned()
     }
 
     /// Crate-internal access to the underlying connection (all corpus schemas
@@ -1629,7 +1665,10 @@ impl Bible {
     /// root. The input is normalised with the same [`crate::normalize_surface`]
     /// the parse engine used, so callers may pass raw
     /// pointed/cantillated text. Returns `None` when no surface matches or the
-    /// surface carries no verb or noun analysis.
+    /// surface carries no verb or noun analysis. When writable app progress is
+    /// attached, a device-local `lexicon_entries` correction is applied last so
+    /// every runtime consumer sees it immediately, not only the word-info
+    /// bridge.
     ///
     /// Disambiguation: pick the top-ranked candidate verb analysis. Rows are
     /// stored in `analysis_id` order, which the build sets to OSHB corpus
@@ -1656,7 +1695,12 @@ impl Bible {
             )
             .optional()
             .ok()??;
-        self.hebrew_word_by_surface_id(surface_id, norm)
+        let mut info = self.hebrew_word_by_surface_id(surface_id, norm)?;
+        if let Some((root, gloss)) = self.lexicon_entry_override(&info.word).ok().flatten() {
+            info.root = root;
+            info.gloss = gloss;
+        }
+        Some(info)
     }
 
     /// [`Bible::hebrew_word_info`] keyed by a known `surface_id` and its already
@@ -3326,6 +3370,80 @@ mod tests {
         let glosses = bible.verse_glosses(1, 1, 1).unwrap();
         assert_eq!(glosses[3], "←");
         assert_eq!(glosses[5], "and ←");
+    }
+
+    #[test]
+    fn mobile_lexicon_entry_override_updates_word_info_and_reader_glosses() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        bible.attach_progress(":memory:").unwrap();
+        bible
+            .set_lexicon_entry_override("בָּרָא", "יצר", "fashion", 1)
+            .unwrap();
+
+        let info = bible
+            .hebrew_word_info("בָּרָא")
+            .expect("Genesis 1:1 verb resolves");
+        assert_eq!(info.root, "יצר");
+        assert_eq!(info.gloss, "fashion");
+
+        let glosses = bible.verse_glosses(1, 1, 1).unwrap();
+        assert_eq!(glosses[1], "he fashioned");
+
+        // A correction arriving from another device through progress sync is
+        // loaded into the same runtime overlay without restarting the app.
+        let snapshot_path = std::env::temp_dir().join(format!(
+            "haqor-runtime-lexicon-merge-{}.db",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_file(&snapshot_path);
+        bible.export_progress_snapshot(&snapshot_path).unwrap();
+        let merged = Bible::open("data").unwrap();
+        merged.attach_progress(":memory:").unwrap();
+        merged.merge_progress_snapshot(&snapshot_path).unwrap();
+        let info = merged
+            .hebrew_word_info("בָּרָא")
+            .expect("synced Genesis 1:1 verb resolves");
+        assert_eq!(
+            (info.root.as_str(), info.gloss.as_str()),
+            ("יצר", "fashion")
+        );
+        drop(merged);
+        std::fs::remove_file(snapshot_path).unwrap();
+    }
+
+    #[test]
+    fn mobile_lexicon_entry_overrides_load_with_existing_progress() {
+        require_data!();
+        let progress_path = std::env::temp_dir().join(format!(
+            "haqor-existing-lexicon-overrides-{}.db",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_file(&progress_path);
+        let progress = Connection::open(&progress_path).unwrap();
+        progress
+            .execute_batch(
+                "CREATE TABLE lexicon_entry_overrides(
+                    surface TEXT PRIMARY KEY, root TEXT NOT NULL DEFAULT '',
+                    gloss TEXT NOT NULL, updated_epoch INTEGER NOT NULL);
+                 INSERT INTO lexicon_entry_overrides
+                    VALUES ('בָּרָא', 'יצר', 'fashion', 1);",
+            )
+            .unwrap();
+        drop(progress);
+
+        let bible = Bible::open("data").unwrap();
+        bible.attach_progress(&progress_path).unwrap();
+        let info = bible
+            .hebrew_word_info("בָּרָא")
+            .expect("Genesis 1:1 verb resolves");
+        assert_eq!(
+            (info.root.as_str(), info.gloss.as_str()),
+            ("יצר", "fashion")
+        );
+
+        drop(bible);
+        std::fs::remove_file(progress_path).unwrap();
     }
 
     #[test]
