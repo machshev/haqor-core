@@ -70,6 +70,13 @@ overlay with:
 haqor-admin pull --progress data/sync-progress.db --overlay data/lexicon_overrides.json
 ```
 
+When the sync-server database is not mounted locally, pull the authenticated
+snapshot over the LAN instead:
+
+```sh
+haqor-admin pull --server http://192.168.1.10:8788 --token 'your sync token'
+```
+
 The command updates `word_glosses` atomically, preserving an existing proper-name
 marker. Regenerate the lexical databases afterwards as usual.
 

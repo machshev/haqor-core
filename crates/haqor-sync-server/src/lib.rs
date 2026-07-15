@@ -69,6 +69,12 @@ fn handle(stream: TcpStream, progress: &Path, token: &str) -> Result<()> {
         respond(stream, "200 OK", b"ok")?;
         return Ok(());
     }
+    if request == "GET /v1/progress HTTP/1.1" || request == "GET /v1/progress HTTP/1.0" {
+        let snapshot =
+            fs::read(progress).with_context(|| format!("reading {}", progress.display()))?;
+        respond_with_snapshot(stream, &snapshot)?;
+        return Ok(());
+    }
     if request != "POST /v1/progress HTTP/1.1" && request != "POST /v1/progress HTTP/1.0" {
         respond(stream, "404 Not Found", b"not found")?;
         return Ok(());
