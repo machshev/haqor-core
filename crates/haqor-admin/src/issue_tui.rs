@@ -11,10 +11,10 @@ use haqor_core::tutor::IssueReport;
 use ratatui::{
     Terminal,
     backend::CrosstermBackend,
-    layout::{Constraint, Direction, Layout},
+    layout::{Constraint, Direction, Layout, Rect},
     style::{Color, Style},
     text::{Line, Span, Text},
-    widgets::{Block, Borders, List, ListItem, ListState, Paragraph, Wrap},
+    widgets::{Block, Borders, Clear, List, ListItem, ListState, Paragraph, Wrap},
 };
 
 struct TerminalGuard;
@@ -28,6 +28,7 @@ impl Drop for TerminalGuard {
 
 pub(super) enum Action {
     Pull,
+    Edit { id: String, note: String },
     Sync(Vec<String>),
 }
 
@@ -50,24 +51,103 @@ pub(super) fn review(
     let mut resolving = vec![false; reports.len()];
     let mut resolved_count = 0;
     let mut status =
-        "↑/↓ or j/k move · d/space mark resolved · p pull · s sync · q quit".to_string();
+        "↑/↓ or j/k move · e edit note · ? help · d/space resolve · p pull · s sync · q quit"
+            .to_string();
+    let mut editing: Option<(String, usize)> = None;
+    let mut showing_help = false;
 
     loop {
-        terminal.draw(|frame| draw(frame, &reports, selected, &resolving, &status))?;
+        terminal.draw(|frame| {
+            draw(
+                frame,
+                &reports,
+                selected,
+                &resolving,
+                &status,
+                &editing,
+                showing_help,
+            )
+        })?;
         let Event::Key(key) = event::read()? else {
             continue;
         };
         if key.kind != KeyEventKind::Press {
             continue;
         }
+        if let Some((note, cursor)) = editing.as_mut() {
+            match key.code {
+                KeyCode::Esc => editing = None,
+                KeyCode::Enter => {
+                    if !note.is_empty() {
+                        let id = reports[selected].id.clone();
+                        match action(
+                            Action::Edit {
+                                id,
+                                note: note.clone(),
+                            },
+                            &reports,
+                        ) {
+                            Ok(result) => {
+                                reports = result.reports;
+                                selected = selected.min(reports.len().saturating_sub(1));
+                                resolving = vec![false; reports.len()];
+                                status = result.message;
+                                editing = None;
+                            }
+                            Err(error) => status = format!("Edit failed: {error:#}"),
+                        }
+                    }
+                }
+                KeyCode::Char(character) => {
+                    note.insert(
+                        note.char_indices()
+                            .nth(*cursor)
+                            .map(|(index, _)| index)
+                            .unwrap_or(note.len()),
+                        character,
+                    );
+                    *cursor += 1;
+                }
+                KeyCode::Backspace if *cursor > 0 => {
+                    let start = note
+                        .char_indices()
+                        .nth(*cursor - 1)
+                        .map(|(index, _)| index)
+                        .unwrap_or(0);
+                    let end = note
+                        .char_indices()
+                        .nth(*cursor)
+                        .map(|(index, _)| index)
+                        .unwrap_or(note.len());
+                    note.drain(start..end);
+                    *cursor -= 1;
+                }
+                KeyCode::Left => *cursor = cursor.saturating_sub(1),
+                KeyCode::Right => *cursor = (*cursor + 1).min(note.chars().count()),
+                _ => {}
+            }
+            continue;
+        }
+        if showing_help {
+            match key.code {
+                KeyCode::Esc | KeyCode::Char('?') => showing_help = false,
+                _ => {}
+            }
+            continue;
+        }
         match key.code {
             KeyCode::Char('q') | KeyCode::Esc => return Ok(resolved_count),
+            KeyCode::Char('?') => showing_help = true,
             KeyCode::Up | KeyCode::Char('k') => selected = selected.saturating_sub(1),
             KeyCode::Down | KeyCode::Char('j') if !reports.is_empty() => {
                 selected = (selected + 1).min(reports.len() - 1)
             }
             KeyCode::Char('d') | KeyCode::Char(' ') if !reports.is_empty() => {
                 resolving[selected] = !resolving[selected]
+            }
+            KeyCode::Char('e') if !reports.is_empty() => {
+                let note = reports[selected].note.clone();
+                editing = Some((note.clone(), note.chars().count()));
             }
             KeyCode::Char('p') => match action(Action::Pull, &reports) {
                 Ok(result) => {
@@ -111,6 +191,8 @@ fn draw(
     selected: usize,
     resolving: &[bool],
     status: &str,
+    editing: &Option<(String, usize)>,
+    showing_help: bool,
 ) {
     let areas = Layout::default()
         .direction(Direction::Vertical)
@@ -180,6 +262,9 @@ fn draw(
             areas[1],
         );
         frame.render_widget(Paragraph::new(status), areas[2]);
+        if showing_help {
+            draw_help_dialog(frame);
+        }
         return;
     }
     let report = &reports[selected];
@@ -229,6 +314,62 @@ fn draw(
         areas[1],
     );
     frame.render_widget(Paragraph::new(status), areas[2]);
+    if let Some((note, cursor)) = editing {
+        draw_edit_dialog(frame, note, *cursor);
+    }
+    if showing_help {
+        draw_help_dialog(frame);
+    }
+}
+
+fn draw_edit_dialog(frame: &mut ratatui::Frame, note: &str, cursor: usize) {
+    let area = centered_rect(80, 5, frame.area());
+    frame.render_widget(Clear, area);
+    frame.render_widget(
+        Paragraph::new(note.to_string())
+            .block(
+                Block::default()
+                    .borders(Borders::ALL)
+                    .title(" Edit note (Enter save · Esc cancel) "),
+            )
+            .wrap(Wrap { trim: false }),
+        area,
+    );
+    let cursor_x = area.x + 1 + note.chars().take(cursor).count() as u16;
+    frame.set_cursor_position((cursor_x.min(area.right().saturating_sub(2)), area.y + 1));
+}
+
+fn draw_help_dialog(frame: &mut ratatui::Frame) {
+    let area = centered_rect(72, 12, frame.area());
+    frame.render_widget(Clear, area);
+    let help = Text::from(vec![
+        Line::from("↑/↓ or j/k   Select a report"),
+        Line::from("e             Edit the selected note"),
+        Line::from("d or Space    Mark/unmark for resolution"),
+        Line::from("p             Pull the latest reports"),
+        Line::from("s             Sync marked resolutions"),
+        Line::from("q or Esc      Quit review"),
+        Line::from(""),
+        Line::from("Press ? or Esc to close"),
+    ]);
+    frame.render_widget(
+        Paragraph::new(help).block(
+            Block::default()
+                .borders(Borders::ALL)
+                .title(" Review help "),
+        ),
+        area,
+    );
+}
+
+fn centered_rect(width_percent: u16, height: u16, area: Rect) -> Rect {
+    let width = area.width * width_percent / 100;
+    Rect {
+        x: area.x + (area.width.saturating_sub(width)) / 2,
+        y: area.y + (area.height.saturating_sub(height)) / 2,
+        width,
+        height: height.min(area.height),
+    }
 }
 
 fn append_context_lines(lines: &mut Vec<Line<'static>>, value: &serde_json::Value, prefix: &str) {

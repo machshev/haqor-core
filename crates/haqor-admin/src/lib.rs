@@ -241,6 +241,23 @@ pub fn review_issue_reports(progress: &Path, output: &Path) -> Result<usize> {
                 message: format!("Pulled {count} issue report(s) to {}", output.display()),
             })
         }
+        issue_tui::Action::Edit { id, note } => {
+            let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
+            let changed = haqor_core::progress_sync::update_issue_report_note_file(
+                progress,
+                &id,
+                &note,
+                updated_epoch,
+            )?;
+            if changed == 0 {
+                bail!("issue report {id} is no longer active");
+            }
+            Ok(issue_tui::ActionResult {
+                reports: haqor_core::progress_sync::read_issue_reports_file(progress)?,
+                resolved: 0,
+                message: "Updated issue report note locally".to_string(),
+            })
+        }
         issue_tui::Action::Sync(selected) => {
             let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
             let count = haqor_core::progress_sync::resolve_issue_reports_file(
@@ -295,6 +312,28 @@ pub fn review_issue_reports_from_server(
                     reports: haqor_core::progress_sync::read_issue_reports_file(&temporary)?,
                     resolved: 0,
                     message: format!("Pulled {count} issue report(s) to {}", output.display()),
+                })
+            }
+            issue_tui::Action::Edit { id, note } => {
+                let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
+                let changed = haqor_core::progress_sync::update_issue_report_note_file(
+                    &temporary,
+                    &id,
+                    &note,
+                    updated_epoch,
+                )?;
+                if changed == 0 {
+                    bail!("issue report {id} is no longer active");
+                }
+                let merged = post_sync_snapshot(&endpoint, token, &std::fs::read(&temporary)?)?;
+                if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
+                    bail!("sync server returned an invalid progress snapshot");
+                }
+                std::fs::write(&temporary, merged)?;
+                Ok(issue_tui::ActionResult {
+                    reports: haqor_core::progress_sync::read_issue_reports_file(&temporary)?,
+                    resolved: 0,
+                    message: "Updated and synced issue report note".to_string(),
                 })
             }
             issue_tui::Action::Sync(selected) => {
