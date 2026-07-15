@@ -7,10 +7,46 @@ use std::path::{Path, PathBuf};
 
 use anyhow::{Context, Result, bail};
 use rusqlite::Connection;
-use serde_json::json;
+use serde_json::{Value, json};
 
 const EDITOR: &str = include_str!("editor.html");
 const MAX_REQUEST_BYTES: usize = 4 * 1024 * 1024;
+
+/// Pull the mobile tutor gloss corrections from the canonical sync database
+/// into the hand-maintained `word_glosses` overlay. Existing rows retain their
+/// `is_name` classification; only the learner gloss and teaching note come
+/// from the mobile correction.
+pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
+    let corrections = haqor_core::progress_sync::read_gloss_overrides_file(progress)
+        .with_context(|| format!("reading tutor corrections from {}", progress.display()))?;
+    let mut value = haqor_core::lexicon_overlay::load(overlay)?;
+    let rows = value["word_glosses"]
+        .as_array_mut()
+        .context("overlay `word_glosses` must be an array")?;
+    for correction in &corrections {
+        let row = rows
+            .iter_mut()
+            .find(|row| row["surface"].as_str() == Some(&correction.surface));
+        let row = match row {
+            Some(row) => row,
+            None => {
+                rows.push(json!({"surface": correction.surface, "gloss": correction.gloss}));
+                rows.last_mut().expect("just pushed a row")
+            }
+        };
+        let object = row
+            .as_object_mut()
+            .context("overlay word gloss row must be an object")?;
+        object.insert("gloss".to_string(), Value::String(correction.gloss.clone()));
+        if correction.note.is_empty() {
+            object.remove("note");
+        } else {
+            object.insert("note".to_string(), Value::String(correction.note.clone()));
+        }
+    }
+    haqor_core::lexicon_overlay::save(overlay, &value)?;
+    Ok(corrections.len())
+}
 
 pub fn serve(bind: SocketAddr, overlay: PathBuf, lexicon: PathBuf, hebrew: PathBuf) -> Result<()> {
     if !bind.ip().is_loopback() {
@@ -391,5 +427,38 @@ mod tests {
         assert!(analyses.iter().any(|a| a["analysis_type"] == "noun"));
         assert_eq!(analyses.len(), 2, "equivalent noun rows are deduplicated");
         std::fs::remove_file(path).unwrap();
+    }
+
+    #[test]
+    fn pull_merges_mobile_glosses_without_losing_name_metadata() -> Result<()> {
+        let base = std::env::temp_dir().join(format!("haqor-admin-pull-{}", std::process::id()));
+        let overlay = base.with_extension("json");
+        let progress = base.with_extension("db");
+        let _ = std::fs::remove_file(&overlay);
+        let _ = std::fs::remove_file(&progress);
+        std::fs::write(
+            &overlay,
+            r#"{"lexicon_entries":[],"word_glosses":[{"surface":"דָּבָר","gloss":"word","is_name":true}],"primary_analyses":[]}"#,
+        )?;
+        let db = Connection::open(&progress)?;
+        db.execute_batch(
+            "CREATE TABLE gloss_overrides(surface TEXT PRIMARY KEY, gloss TEXT NOT NULL,
+                note TEXT NOT NULL DEFAULT '', updated_epoch INTEGER NOT NULL);
+             INSERT INTO gloss_overrides VALUES ('דָּבָר', 'matter', 'In this context.', 1);
+             INSERT INTO gloss_overrides VALUES ('טוֹב', 'good', '', 2);",
+        )?;
+        drop(db);
+
+        assert_eq!(pull_gloss_overrides(&progress, &overlay)?, 2);
+        let value: Value = serde_json::from_str(&std::fs::read_to_string(&overlay)?)?;
+        let rows = value["word_glosses"].as_array().unwrap();
+        assert_eq!(rows[0]["gloss"], "matter");
+        assert_eq!(rows[0]["note"], "In this context.");
+        assert_eq!(rows[0]["is_name"], true);
+        assert_eq!(rows[1]["surface"], "טוֹב");
+        assert!(rows[1].get("note").is_none());
+        std::fs::remove_file(overlay)?;
+        std::fs::remove_file(progress)?;
+        Ok(())
     }
 }
