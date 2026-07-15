@@ -47,7 +47,7 @@ LAN (or place it behind a VPN or HTTPS reverse proxy).
 The admin server can also be run independently:
 
 ```sh
-cargo run -p haqor-admin -- --bind 127.0.0.1:8787
+cargo run -p haqor-admin -- server --bind 127.0.0.1:8787
 ```
 
 Build or test every package with:
