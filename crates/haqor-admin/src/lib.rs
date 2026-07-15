@@ -45,11 +45,11 @@ pub fn read_default_app_sync_settings() -> Result<AppSyncSettings> {
 }
 
 fn read_app_sync_settings_from_data_home(data_home: &Path) -> Result<AppSyncSettings> {
-    let current = shared_preferences_path(&data_home, APP_ID);
+    let current = shared_preferences_path(data_home, APP_ID);
     if current.exists() {
         return read_app_sync_settings(current);
     }
-    let legacy = shared_preferences_path(&data_home, LEGACY_APP_ID);
+    let legacy = shared_preferences_path(data_home, LEGACY_APP_ID);
     if legacy.exists() {
         return read_app_sync_settings(legacy);
     }
@@ -149,7 +149,17 @@ pub fn pull_gloss_overrides_from_server(
         "Pulling tutor gloss corrections from {}:{}",
         endpoint.host, endpoint.port
     );
-    let snapshot = fetch_sync_snapshot(&endpoint, token)?;
+    let snapshot = match fetch_sync_snapshot(&endpoint, token) {
+        Ok(snapshot) => snapshot,
+        Err(error) if error.to_string().contains("404 Not Found") => {
+            eprintln!(
+                "Sync server does not support snapshot downloads; using its compatible sync route"
+            );
+            let empty_snapshot = empty_progress_snapshot()?;
+            post_sync_snapshot(&endpoint, token, &empty_snapshot)?
+        }
+        Err(error) => return Err(error),
+    };
     if !haqor_core::progress_sync::is_sqlite_snapshot(&snapshot) {
         bail!("sync server returned an invalid progress snapshot");
     }
@@ -171,6 +181,7 @@ fn parse_sync_endpoint(input: &str) -> Result<SyncEndpoint> {
         .strip_prefix("http://")
         .context("sync server must start with http://")?;
     let (authority, path) = match rest.find('/') {
+        Some(index) if &rest[index..] == "/" => (&rest[..index], "/v1/progress"),
         Some(index) => (&rest[..index], &rest[index..]),
         None => (rest, "/v1/progress"),
     };
@@ -236,6 +247,80 @@ fn fetch_sync_snapshot(endpoint: &SyncEndpoint, token: &str) -> Result<Vec<u8>> 
     let mut snapshot = vec![0; length];
     reader.read_exact(&mut snapshot)?;
     Ok(snapshot)
+}
+
+/// An empty, fully initialized snapshot safely exercises a pre-download sync
+/// server's POST route: merging it cannot change any learner data, and the
+/// server returns its canonical snapshot in response.
+fn empty_progress_snapshot() -> Result<Vec<u8>> {
+    let nonce = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
+    let temporary = std::env::temp_dir().join(format!(
+        "haqor-admin-empty-progress-{}-{nonce}.db",
+        std::process::id()
+    ));
+    let result = (|| {
+        let db = Connection::open_in_memory()?;
+        db.execute(
+            "ATTACH DATABASE ?1 AS progress",
+            [temporary.to_string_lossy().as_ref()],
+        )?;
+        haqor_core::tutor::init_progress_schema(&db)?;
+        drop(db);
+        std::fs::read(&temporary).context("reading empty progress snapshot")
+    })();
+    let _ = std::fs::remove_file(&temporary);
+    result
+}
+
+fn post_sync_snapshot(endpoint: &SyncEndpoint, token: &str, snapshot: &[u8]) -> Result<Vec<u8>> {
+    let address = format!("{}:{}", endpoint.host, endpoint.port);
+    let socket = address
+        .to_socket_addrs()
+        .with_context(|| format!("resolving sync server {}", endpoint.host))?
+        .next()
+        .context("sync server address did not resolve")?;
+    let mut stream = TcpStream::connect_timeout(&socket, Duration::from_secs(10))
+        .context("connecting to sync server")?;
+    let _ = stream.set_read_timeout(Some(Duration::from_secs(30)));
+    let _ = stream.set_write_timeout(Some(Duration::from_secs(30)));
+    write!(
+        stream,
+        "POST {} HTTP/1.1\r\nHost: {}\r\nAuthorization: Bearer {}\r\nContent-Type: application/vnd.sqlite3\r\nContent-Length: {}\r\nConnection: close\r\n\r\n",
+        endpoint.path,
+        endpoint.host,
+        token,
+        snapshot.len(),
+    )?;
+    stream.write_all(snapshot)?;
+
+    let mut reader = BufReader::new(stream);
+    let mut status = String::new();
+    reader.read_line(&mut status)?;
+    if !status.starts_with("HTTP/1.1 200") && !status.starts_with("HTTP/1.0 200") {
+        bail!("sync server returned {}", status.trim());
+    }
+    let mut content_length = None;
+    loop {
+        let mut line = String::new();
+        if reader.read_line(&mut line)? == 0 {
+            bail!("sync server closed the response headers early");
+        }
+        if line == "\r\n" {
+            break;
+        }
+        if let Some((name, value)) = line.split_once(':')
+            && name.eq_ignore_ascii_case("content-length")
+        {
+            content_length = value.trim().parse::<usize>().ok();
+        }
+    }
+    let length = content_length.context("sync server omitted Content-Length")?;
+    if length > MAX_SNAPSHOT_BYTES {
+        bail!("sync server returned an unexpectedly large snapshot");
+    }
+    let mut merged = vec![0; length];
+    reader.read_exact(&mut merged)?;
+    Ok(merged)
 }
 
 pub fn serve(bind: SocketAddr, overlay: PathBuf, lexicon: PathBuf, hebrew: PathBuf) -> Result<()> {
@@ -671,6 +756,53 @@ mod tests {
             }
         );
         std::fs::remove_file(preferences)?;
+        Ok(())
+    }
+
+    #[test]
+    fn root_server_url_uses_the_progress_endpoint() -> Result<()> {
+        let endpoint = parse_sync_endpoint("http://sync.example:8788/")?;
+
+        assert_eq!(endpoint.host, "sync.example");
+        assert_eq!(endpoint.port, 8788);
+        assert_eq!(endpoint.path, "/v1/progress");
+        Ok(())
+    }
+
+    #[test]
+    fn empty_snapshot_fallback_preserves_server_progress() -> Result<()> {
+        let base =
+            std::env::temp_dir().join(format!("haqor-admin-empty-snapshot-{}", std::process::id()));
+        let canonical = base.with_extension("canonical.db");
+        let incoming = base.with_extension("incoming.db");
+        let _ = std::fs::remove_file(&canonical);
+        let _ = std::fs::remove_file(&incoming);
+        let db = Connection::open_in_memory()?;
+        db.execute(
+            "ATTACH DATABASE ?1 AS progress",
+            [canonical.to_string_lossy().as_ref()],
+        )?;
+        haqor_core::tutor::init_progress_schema(&db)?;
+        db.execute(
+            "INSERT INTO progress.gloss_overrides(surface, gloss, note, updated_epoch)
+             VALUES ('דָּבָר', 'word', '', 1)",
+            [],
+        )?;
+        drop(db);
+
+        std::fs::write(&incoming, empty_progress_snapshot()?)?;
+        haqor_core::progress_sync::merge_progress_files(&canonical, &incoming)?;
+        let canonical_db = Connection::open(&canonical)?;
+        assert_eq!(
+            canonical_db.query_row(
+                "SELECT gloss FROM gloss_overrides WHERE surface = 'דָּבָר'",
+                [],
+                |row| row.get::<_, String>(0),
+            )?,
+            "word"
+        );
+        std::fs::remove_file(canonical)?;
+        std::fs::remove_file(incoming)?;
         Ok(())
     }
 
