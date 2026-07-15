@@ -77,6 +77,11 @@ snapshot over the LAN instead:
 haqor-admin pull --server http://192.168.1.10:8788 --token 'your sync token'
 ```
 
+With no source options, `haqor-admin pull` reads the saved server URL and token
+from `/home/jamesm/.local/share/com.example.haqor/shared_preferences.json`.
+Use `--progress` to force a local database or pass `--server` / `--token` to
+override either saved value.
+
 The command updates `word_glosses` atomically, preserving an existing proper-name
 marker. Regenerate the lexical databases afterwards as usual.
 
