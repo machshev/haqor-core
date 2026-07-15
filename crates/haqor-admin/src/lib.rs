@@ -141,13 +141,70 @@ pub fn pull_gloss_overrides_from_server(
     token: &str,
     overlay: &Path,
 ) -> Result<usize> {
+    with_remote_progress(server_url, token, "glosses", |progress| {
+        pull_gloss_overrides(progress, overlay)
+    })
+}
+
+/// Export the synchronised mobile bug/idea log as deterministic, pretty JSON.
+pub fn pull_issue_reports(progress: &Path, output: &Path) -> Result<usize> {
+    let reports = haqor_core::progress_sync::read_issue_reports_file(progress)
+        .with_context(|| format!("reading issue reports from {}", progress.display()))?;
+    let rows = reports
+        .iter()
+        .map(|report| {
+            let context: Value = serde_json::from_str(&report.context_json)
+                .with_context(|| format!("parsing context for issue report {}", report.id))?;
+            Ok(json!({
+                "id": report.id,
+                "type": report.report_type,
+                "note": report.note,
+                "createdEpoch": report.created_epoch,
+                "updatedEpoch": report.updated_epoch,
+                "context": context,
+            }))
+        })
+        .collect::<Result<Vec<_>>>()?;
+    let rendered = serde_json::to_string_pretty(&json!({"issueReports": rows}))? + "\n";
+    let file_name = output
+        .file_name()
+        .and_then(|value| value.to_str())
+        .unwrap_or("issue_reports.json");
+    let temporary = output.with_file_name(format!(".{file_name}.{}.tmp", std::process::id()));
+    std::fs::write(&temporary, rendered.as_bytes())
+        .with_context(|| format!("writing temporary issue log {}", temporary.display()))?;
+    if let Err(error) = std::fs::rename(&temporary, output) {
+        let _ = std::fs::remove_file(&temporary);
+        return Err(error).with_context(|| format!("replacing issue log {}", output.display()));
+    }
+    Ok(reports.len())
+}
+
+/// Fetch the canonical progress snapshot from the LAN server and export its
+/// issue/idea log to a local JSON file.
+pub fn pull_issue_reports_from_server(
+    server_url: &str,
+    token: &str,
+    output: &Path,
+) -> Result<usize> {
+    with_remote_progress(server_url, token, "issues", |progress| {
+        pull_issue_reports(progress, output)
+    })
+}
+
+fn with_remote_progress<T>(
+    server_url: &str,
+    token: &str,
+    purpose: &str,
+    operation: impl FnOnce(&Path) -> Result<T>,
+) -> Result<T> {
     if token.trim().is_empty() {
         bail!("--token must not be empty");
     }
     let endpoint = parse_sync_endpoint(server_url)?;
     eprintln!(
-        "Pulling tutor gloss corrections from {}:{}",
-        endpoint.host, endpoint.port
+        "Pulling synced {purpose} from {}:{}",
+        endpoint.host, endpoint.port,
     );
     let snapshot = match fetch_sync_snapshot(&endpoint, token) {
         Ok(snapshot) => snapshot,
@@ -165,12 +222,12 @@ pub fn pull_gloss_overrides_from_server(
     }
     let nonce = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
     let temporary = std::env::temp_dir().join(format!(
-        "haqor-admin-pull-{}-{nonce}.db",
-        std::process::id()
+        "haqor-admin-pull-{purpose}-{}-{nonce}.db",
+        std::process::id(),
     ));
     std::fs::write(&temporary, snapshot)
         .with_context(|| format!("writing temporary sync snapshot {}", temporary.display()))?;
-    let result = pull_gloss_overrides(&temporary, overlay);
+    let result = operation(&temporary);
     let _ = std::fs::remove_file(&temporary);
     result
 }
@@ -734,6 +791,40 @@ mod tests {
         assert!(rows[1].get("note").is_none());
         std::fs::remove_file(overlay)?;
         std::fs::remove_file(progress)?;
+        Ok(())
+    }
+
+    #[test]
+    fn pull_exports_issue_reports_with_structured_context() -> Result<()> {
+        let base =
+            std::env::temp_dir().join(format!("haqor-admin-pull-issues-{}", std::process::id()));
+        let progress = base.with_extension("db");
+        let output = base.with_extension("json");
+        let _ = std::fs::remove_file(&progress);
+        let _ = std::fs::remove_file(&output);
+        let db = Connection::open(&progress)?;
+        db.execute_batch(
+            "CREATE TABLE issue_reports(
+                id TEXT PRIMARY KEY, report_type TEXT NOT NULL, note TEXT NOT NULL,
+                context_json TEXT NOT NULL, created_epoch INTEGER NOT NULL,
+                updated_epoch INTEGER NOT NULL);
+             INSERT INTO issue_reports VALUES (
+                'phone-1', 'bug', 'Wrong answer shown',
+                '{\"source\":\"tutor_card\",\"card\":{\"kind\":\"review_word\"}}',
+                100, 100);",
+        )?;
+        drop(db);
+
+        assert_eq!(pull_issue_reports(&progress, &output)?, 1);
+        let value: Value = serde_json::from_str(&std::fs::read_to_string(&output)?)?;
+        let report = &value["issueReports"][0];
+        assert_eq!(report["id"], "phone-1");
+        assert_eq!(report["type"], "bug");
+        assert_eq!(report["context"]["source"], "tutor_card");
+        assert_eq!(report["context"]["card"]["kind"], "review_word");
+
+        std::fs::remove_file(progress)?;
+        std::fs::remove_file(output)?;
         Ok(())
     }
 
