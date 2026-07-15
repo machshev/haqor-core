@@ -144,7 +144,12 @@ pub fn pull_gloss_overrides_from_server(
     if token.trim().is_empty() {
         bail!("--token must not be empty");
     }
-    let snapshot = fetch_sync_snapshot(&parse_sync_endpoint(server_url)?, token)?;
+    let endpoint = parse_sync_endpoint(server_url)?;
+    eprintln!(
+        "Pulling tutor gloss corrections from {}:{}",
+        endpoint.host, endpoint.port
+    );
+    let snapshot = fetch_sync_snapshot(&endpoint, token)?;
     if !haqor_core::progress_sync::is_sqlite_snapshot(&snapshot) {
         bail!("sync server returned an invalid progress snapshot");
     }
