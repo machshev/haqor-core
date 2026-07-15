@@ -53,20 +53,73 @@ jobs:
         run: |
           cargo clippy
 
+  changed_crates:
+    name: Find changed crates
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+      has_changes: ${{ steps.matrix.outputs.has_changes }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - id: matrix
+        name: Build test matrix
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            base="${{ github.event.pull_request.base.sha }}"
+          else
+            base="${{ github.event.before }}"
+          fi
+          head="${{ github.sha }}"
+
+          if [[ "$base" == "0000000000000000000000000000000000000000" ]]; then
+            # A branch's first push has no parent revision to compare, so test
+            # every crate rather than accidentally skipping its test suite.
+            changed_files="$(git ls-tree -r --name-only "$head")"
+          else
+            changed_files="$(git diff --name-only "$base" "$head")"
+          fi
+
+          crates=(
+            haqor-admin
+            haqor-cli
+            haqor-core
+            haqor-db-gen
+            haqor-morphology
+            haqor-sync-server
+          )
+          selected=()
+
+          # Root manifests and toolchain/CI configuration can affect every
+          # package. Run the complete matrix whenever any of them changes.
+          if grep -Eq '^(Cargo\.(toml|lock)|\.cargo/|rust-toolchain|\.github/workflows/ci\.yml$)' <<<"$changed_files"; then
+            selected=("${crates[@]}")
+          else
+            for crate in "${crates[@]}"; do
+              if grep -Fq "crates/$crate/" <<<"$changed_files"; then
+                selected+=("$crate")
+              fi
+            done
+          fi
+
+          matrix="$(printf '%s\n' "${selected[@]}" | jq -Rsc 'split("\n") | map(select(length > 0)) | map({crate: .}) | {include: .}')"
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+          echo "has_changes=$([[ ${#selected[@]} -gt 0 ]] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+
   build_and_test:
     name: Build and test (${{ matrix.crate }})
+    needs: changed_crates
+    if: needs.changed_crates.outputs.has_changes == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
       fail-fast: false
-      matrix:
-        crate:
-          - haqor-admin
-          - haqor-cli
-          - haqor-core
-          - haqor-db-gen
-          - haqor-morphology
-          - haqor-sync-server
+      matrix: ${{ fromJSON(needs.changed_crates.outputs.matrix) }}
 
     steps:
       - uses: actions/checkout@v4
