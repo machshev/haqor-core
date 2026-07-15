@@ -362,6 +362,25 @@ pub fn resolve_issue_reports_file(
     Ok(resolved)
 }
 
+/// Update the note on an active issue report in a writable progress snapshot.
+/// The newer timestamp makes the edit win when the snapshot is merged.
+pub fn update_issue_report_note_file(
+    path: &Path,
+    id: &str,
+    note: &str,
+    updated_epoch: i64,
+) -> rusqlite::Result<usize> {
+    let db = Connection::open(path)?;
+    ensure_issue_reports(&db, "main")?;
+    let changed = db.execute(
+        "UPDATE issue_reports
+         SET note = ?2, updated_epoch = MAX(updated_epoch + 1, ?3)
+         WHERE id = ?1 AND deleted = 0",
+        rusqlite::params![id, note, updated_epoch],
+    )?;
+    Ok(changed)
+}
+
 fn has_issue_reports(db: &Connection) -> rusqlite::Result<bool> {
     db.query_row(
         "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type='table' AND name='issue_reports')",
@@ -676,6 +695,34 @@ mod tests {
 
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn issue_report_note_update_is_newer_and_visible() -> anyhow::Result<()> {
+        let path = temp_path("issue-note-edit.db");
+        let _ = fs::remove_file(&path);
+        let db = Connection::open_in_memory()?;
+        db.execute(
+            "ATTACH DATABASE ?1 AS progress",
+            [path.to_string_lossy().as_ref()],
+        )?;
+        init_progress_schema(&db)?;
+        db.execute(
+            "INSERT INTO progress.issue_reports(
+                 id, report_type, note, context_json, created_epoch, updated_epoch)
+             VALUES ('report-1', 'bug', 'old note', '{}', 100, 100)",
+            [],
+        )?;
+
+        assert_eq!(
+            update_issue_report_note_file(&path, "report-1", "new note", 200)?,
+            1
+        );
+        let reports = read_issue_reports_file(&path)?;
+        assert_eq!(reports[0].note, "new note");
+        assert_eq!(reports[0].updated_epoch, 200);
+        let _ = fs::remove_file(&path);
         Ok(())
     }
 
