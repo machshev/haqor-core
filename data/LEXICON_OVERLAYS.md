@@ -64,6 +64,9 @@ edited directly. Use `--lexicon PATH` when browsing a database elsewhere.
 Admin mode stores quick, mobile-made corrections in the app's `progress.db`.
 The tutor editor targets learner-facing `word_glosses`; the word-info editor
 keeps that layer separate and targets the `lexicon_entries` root/header gloss.
+These are runtime overlays on the device: a word-info correction immediately
+feeds word information, reader gloss resolution, and tutor card construction,
+while a tutor correction remains the final learner-facing tutor gloss.
 Both are included in ordinary LAN progress sync, so review them on the machine
 that runs the sync server and merge them into the checked-in overlay with:
 
