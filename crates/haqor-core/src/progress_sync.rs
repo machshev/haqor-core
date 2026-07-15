@@ -10,7 +10,7 @@ use std::path::Path;
 
 use rusqlite::Connection;
 
-use crate::tutor::init_progress_schema;
+use crate::tutor::{GlossOverride, init_progress_schema};
 
 /// SQLite's file header. Checking it before attaching keeps a bad HTTP body
 /// from becoming an opaque "file is not a database" error later on.
@@ -71,9 +71,22 @@ fn ensure_updated_epochs(db: &Connection, schema: &str) -> rusqlite::Result<()> 
     Ok(())
 }
 
+fn ensure_gloss_overrides(db: &Connection, schema: &str) -> rusqlite::Result<()> {
+    db.execute_batch(&format!(
+        "CREATE TABLE IF NOT EXISTS {schema}.gloss_overrides(
+            surface TEXT PRIMARY KEY,
+            gloss TEXT NOT NULL,
+            note TEXT NOT NULL DEFAULT '',
+            updated_epoch INTEGER NOT NULL
+        )"
+    ))
+}
+
 fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     ensure_updated_epochs(db, "progress")?;
     ensure_updated_epochs(db, "sync")?;
+    ensure_gloss_overrides(db, "progress")?;
+    ensure_gloss_overrides(db, "sync")?;
     db.execute_batch("BEGIN IMMEDIATE")?;
     let result = (|| {
         // `updated_epoch` is the normal conflict resolution key. The `reps`
@@ -164,6 +177,14 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
              ON CONFLICT(key) DO UPDATE SET value=MAX(
                 CAST(progress.meta.value AS INTEGER), CAST(excluded.value AS INTEGER));",
         )?;
+        db.execute_batch(
+            "INSERT INTO progress.gloss_overrides(surface, gloss, note, updated_epoch)
+             SELECT surface, gloss, note, updated_epoch FROM sync.gloss_overrides WHERE true
+             ON CONFLICT(surface) DO UPDATE SET
+                gloss=excluded.gloss, note=excluded.note,
+                updated_epoch=excluded.updated_epoch
+             WHERE excluded.updated_epoch > progress.gloss_overrides.updated_epoch;",
+        )?;
         Ok(())
     })();
     match result {
@@ -178,6 +199,34 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
 /// Check a received HTTP body before writing it as a SQLite snapshot.
 pub fn is_sqlite_snapshot(bytes: &[u8]) -> bool {
     bytes.starts_with(SQLITE_HEADER)
+}
+
+/// Read the pending mobile tutor corrections from a canonical sync database.
+/// A pre-admin database simply has no corrections yet.
+pub fn read_gloss_overrides_file(path: &Path) -> rusqlite::Result<Vec<GlossOverride>> {
+    let db = Connection::open_with_flags(path, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+    let exists: bool = db.query_row(
+        "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type='table' AND name='gloss_overrides')",
+        [],
+        |r| r.get(0),
+    )?;
+    if !exists {
+        return Ok(Vec::new());
+    }
+    let mut statement = db.prepare(
+        "SELECT surface, gloss, note, updated_epoch FROM gloss_overrides
+         ORDER BY updated_epoch, surface",
+    )?;
+    statement
+        .query_map([], |r| {
+            Ok(GlossOverride {
+                surface: r.get(0)?,
+                gloss: r.get(1)?,
+                note: r.get(2)?,
+                updated_epoch: r.get(3)?,
+            })
+        })?
+        .collect()
 }
 
 #[cfg(test)]
@@ -263,6 +312,43 @@ mod tests {
         );
         let _ = fs::remove_file(&source);
         let _ = fs::remove_file(&snapshot);
+        Ok(())
+    }
+
+    #[test]
+    fn newer_gloss_override_wins_and_is_readable_from_the_canonical_db() -> anyhow::Result<()> {
+        let canonical = temp_path("canonical-gloss.db");
+        let incoming = temp_path("incoming-gloss.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        for (path, gloss, updated) in [
+            (&canonical, "older", 100_i64),
+            (&incoming, "newer", 200_i64),
+        ] {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            db.execute(
+                "INSERT INTO progress.gloss_overrides(surface, gloss, note, updated_epoch)
+                 VALUES ('דָּבָר', ?1, '', ?2)",
+                params![gloss, updated],
+            )?;
+        }
+        merge_progress_files(&canonical, &incoming)?;
+        assert_eq!(
+            read_gloss_overrides_file(&canonical)?,
+            vec![GlossOverride {
+                surface: "דָּבָר".to_string(),
+                gloss: "newer".to_string(),
+                note: String::new(),
+                updated_epoch: 200,
+            }]
+        );
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
         Ok(())
     }
 }

@@ -292,6 +292,18 @@ pub struct WordCard {
     pub distractors: Vec<String>,
 }
 
+/// A learner-facing gloss correction made from the app's tutor admin mode.
+/// These live in the writable progress database so they work offline and are
+/// carried by the ordinary progress snapshot sync. `haqor-admin pull` promotes
+/// reviewed corrections into the checked-in lexical overlay.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct GlossOverride {
+    pub surface: String,
+    pub gloss: String,
+    pub note: String,
+    pub updated_epoch: i64,
+}
+
 /// A pronominal-ending drill: the ending shown on a host word the learner
 /// already knows, with the ending's span highlighted (the app renders `stem`
 /// plain and `suffix` in red, the way a new vowel is taught on its host
@@ -920,6 +932,12 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
          CREATE TABLE IF NOT EXISTS progress.concepts_unlocked(
             concept        TEXT    PRIMARY KEY,
             unlocked_epoch INTEGER NOT NULL
+         );
+         CREATE TABLE IF NOT EXISTS progress.gloss_overrides(
+            surface       TEXT    PRIMARY KEY,
+            gloss         TEXT    NOT NULL,
+            note          TEXT    NOT NULL DEFAULT '',
+            updated_epoch INTEGER NOT NULL
          );",
     )?;
 
@@ -2135,6 +2153,44 @@ impl Bible {
 
     // --- card builders -------------------------------------------------------
 
+    /// Store a tutor-only learner gloss correction. It deliberately does not
+    /// alter the bundled lexical data: review it later with `haqor-admin pull`
+    /// before committing it to `lexicon_overrides.json`.
+    pub fn set_tutor_gloss_override(
+        &self,
+        surface: &str,
+        gloss: &str,
+        note: &str,
+        updated_epoch: i64,
+    ) -> rusqlite::Result<()> {
+        let surface = surface.trim();
+        let gloss = gloss.trim();
+        if surface.is_empty() || gloss.is_empty() {
+            return Err(rusqlite::Error::InvalidParameterName(
+                "surface and gloss must not be empty".to_string(),
+            ));
+        }
+        self.conn().execute(
+            "INSERT INTO progress.gloss_overrides(surface, gloss, note, updated_epoch)
+             VALUES (?1, ?2, ?3, ?4)
+             ON CONFLICT(surface) DO UPDATE SET
+                gloss=excluded.gloss, note=excluded.note,
+                updated_epoch=excluded.updated_epoch",
+            params![surface, gloss, note.trim(), updated_epoch],
+        )?;
+        Ok(())
+    }
+
+    fn tutor_gloss_override(&self, surface: &str) -> rusqlite::Result<Option<(String, String)>> {
+        self.conn()
+            .query_row(
+                "SELECT gloss, note FROM progress.gloss_overrides WHERE surface = ?1",
+                params![surface],
+                |r| Ok((r.get(0)?, r.get(1)?)),
+            )
+            .optional()
+    }
+
     /// Build a meaning word card for `surface`, resolving gloss/root/morph.
     fn word_card(&self, surface: &str) -> rusqlite::Result<Option<WordCard>> {
         let row: Option<(i64, i64)> = self
@@ -2245,6 +2301,14 @@ impl Bible {
             gloss
         } else {
             crate::bible::leading_sense(&gloss)
+        };
+
+        // A mobile admin correction is the last learner-facing layer. Keep it
+        // separate from the generated lexicon until it has been reviewed and
+        // pulled back into the JSON overlay.
+        let (gloss, root_gloss, note) = match self.tutor_gloss_override(surface)? {
+            Some((gloss, note)) => (gloss, String::new(), note),
+            None => (gloss, root_gloss, note),
         };
 
         // A name card is reveal-and-self-grade — quizzing "(a name)" against
