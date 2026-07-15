@@ -78,9 +78,11 @@ haqor-admin pull --server http://192.168.1.10:8788 --token 'your sync token'
 ```
 
 With no source options, `haqor-admin pull` reads the saved server URL and token
-from `/home/jamesm/.local/share/com.example.haqor/shared_preferences.json`.
-Use `--progress` to force a local database or pass `--server` / `--token` to
-override either saved value.
+from `$XDG_DATA_HOME/org.haqor/shared_preferences.json` (or
+`$HOME/.local/share/org.haqor/shared_preferences.json` when `XDG_DATA_HOME` is
+unset). It temporarily falls back to the old Flutter-template application ID
+so an upgrade does not lose existing sync settings. Use `--progress` to force a
+local database or pass `--server` / `--token` to override either saved value.
 
 The command updates `word_glosses` atomically, preserving an existing proper-name
 marker. Regenerate the lexical databases afterwards as usual.
