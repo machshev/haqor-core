@@ -1,6 +1,7 @@
 use std::io;
 
 use anyhow::Result;
+use chrono::{Local, TimeZone};
 use crossterm::{
     event::{self, Event, KeyCode, KeyEventKind},
     execute,
@@ -85,7 +86,11 @@ fn draw(frame: &mut ratatui::Frame, reports: &[IssueReport], selected: usize, re
                 "[       ]"
             };
             let note = report.note.lines().next().unwrap_or_default();
-            ListItem::new(format!("{marker} {:<4} {note}", report.report_type))
+            ListItem::new(format!(
+                "{marker} {} {:<4} {note}",
+                format_timestamp(report.created_epoch),
+                report.report_type,
+            ))
         })
         .collect::<Vec<_>>();
     let mut state = ListState::default();
@@ -106,7 +111,12 @@ fn draw(frame: &mut ratatui::Frame, reports: &[IssueReport], selected: usize, re
         })
         .unwrap_or_else(|_| report.context_json.clone());
     let detail = Text::from(vec![
-        Line::from(format!("{}  id: {}", report.report_type, report.id)),
+        Line::from(format!(
+            "{}  {}  id: {}",
+            report.report_type,
+            format_timestamp(report.created_epoch),
+            report.id
+        )),
         Line::from(report.note.clone()),
         Line::from(""),
         Line::from(context),
@@ -125,4 +135,22 @@ fn draw(frame: &mut ratatui::Frame, reports: &[IssueReport], selected: usize, re
         Paragraph::new("↑/↓ or j/k move · d/space mark resolved · s save and sync · q cancel"),
         areas[2],
     );
+}
+
+fn format_timestamp(epoch: i64) -> String {
+    Local
+        .timestamp_opt(epoch, 0)
+        .single()
+        .map(|timestamp| timestamp.format("%Y-%m-%d %H:%M").to_string())
+        .unwrap_or_else(|| format!("epoch {epoch}"))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::format_timestamp;
+
+    #[test]
+    fn formats_created_epoch_for_the_review_table() {
+        assert_ne!(format_timestamp(0), "epoch 0");
+    }
 }
