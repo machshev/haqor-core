@@ -668,6 +668,12 @@ const LEXICAL_BASE_READY: &str =
 /// gate behind possessive-suffix grammar and rank as complex noun forms.
 const SURFACE_META_VERSION: i64 = 29;
 
+/// Bumped when the meaning of the materialised readability columns changes.
+/// Version 2 makes `verse_progress.unknown_words` count distinct vocabulary
+/// keys rather than word tokens, matching the completion term used by target
+/// selection and allowing that hot query to reuse the cached value.
+const READABILITY_PROGRESS_VERSION: i64 = 2;
+
 /// `concept_mask` sentinel for a surface the tutor cannot teach: no parse
 /// gloss, no curated gloss, and not a name — its card would be blank. The bit
 /// sits above every real concept bit and is never unlocked, so such a word is
@@ -2599,6 +2605,15 @@ impl Bible {
     /// concrete property of graduated vocabulary rather than a read-history
     /// or a heuristic baked into the generated database.
     fn ensure_readability_progress(&self) -> rusqlite::Result<()> {
+        let stamp: Option<i64> = self
+            .conn()
+            .query_row(
+                "SELECT CAST(value AS INTEGER) FROM progress.meta
+                 WHERE key = 'readability_progress_v'",
+                [],
+                |r| r.get(0),
+            )
+            .optional()?;
         let expected: i64 =
             self.conn()
                 .query_row("SELECT COUNT(*) FROM hebrewdb.surface", [], |r| r.get(0))?;
@@ -2619,7 +2634,10 @@ impl Bible {
             [],
             |r| r.get(0),
         )?;
-        if actual == expected && materialized_done == actual_done {
+        if stamp == Some(READABILITY_PROGRESS_VERSION)
+            && actual == expected
+            && materialized_done == actual_done
+        {
             return Ok(());
         }
         self.rebuild_readability_progress()
@@ -2641,7 +2659,8 @@ impl Bible {
                 book, chapter, verse, unknown_words, min_root_frequency,
                 mean_root_frequency, max_root_frequency)
              SELECT vw.book, vw.chapter, vw.verse,
-                    SUM(CASE WHEN sp.graduated = 0 THEN 1 ELSE 0 END),
+                    COUNT(DISTINCT CASE WHEN sp.graduated = 0 THEN
+                       COALESCE(sm.vkey, '#' || vw.surface_id) END),
                     COALESCE(MIN(CASE WHEN sp.graduated = 0 THEN
                        CASE WHEN sm.is_name = 1 THEN s.occurrences
                             ELSE COALESCE(r.n_occurrences, s.occurrences) END END), 0),
@@ -2656,7 +2675,10 @@ impl Bible {
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
              JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
              LEFT JOIN hebrewdb.roots r ON r.root = sm.root
-             GROUP BY vw.book, vw.chapter, vw.verse;"
+             GROUP BY vw.book, vw.chapter, vw.verse;
+             INSERT INTO progress.meta(key, value)
+             VALUES ('readability_progress_v', '{READABILITY_PROGRESS_VERSION}')
+             ON CONFLICT(key) DO UPDATE SET value = excluded.value;"
         ));
         match result {
             Ok(()) => self.conn().execute_batch("COMMIT"),
@@ -2685,7 +2707,8 @@ impl Bible {
                     book, chapter, verse, unknown_words, min_root_frequency,
                     mean_root_frequency, max_root_frequency, last_read_epoch)
                  SELECT vw.book, vw.chapter, vw.verse,
-                        SUM(CASE WHEN sp.graduated = 0 THEN 1 ELSE 0 END),
+                        COUNT(DISTINCT CASE WHEN sp.graduated = 0 THEN
+                           COALESCE(sm.vkey, '#' || vw.surface_id) END),
                         COALESCE(MIN(CASE WHEN sp.graduated = 0 THEN
                            CASE WHEN sm.is_name = 1 THEN s.occurrences
                                 ELSE COALESCE(r.n_occurrences, s.occurrences) END END), 0),
@@ -2773,23 +2796,17 @@ impl Bible {
         // introduce and targeting would spin.
         let intro = if letter_learning {
             format!(
-                "done.vkey IS NULL AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0 \
+                "sp.graduated = 0 AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0 \
                  AND (COALESCE(sm.concept_mask, 0) & {UNTEACHABLE_MASK}) = 0 \
                  AND {FAMILY_READY} AND {LEXICAL_BASE_READY} AND {NOT_NAME}"
             )
         } else {
             format!(
-                "done.vkey IS NULL AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0 \
+                "sp.graduated = 0 AND (COALESCE(sm.concept_mask, 0) & ~?1) = 0 \
                  AND (COALESCE(sm.concept_mask, 0) & {UNTEACHABLE_MASK}) = 0 \
                  AND {FAMILY_READY} AND {LEXICAL_BASE_READY}"
             )
         };
-        // A verse with an unknown word whose card would be blank
-        // ([`UNTEACHABLE_MASK`]) can never be completed — no rule unlock
-        // helps — so it must never be pinned in normal mode (a letter-phase
-        // pin is dropped unread anyway, and its rating only counts
-        // introducible words).
-        let unteachable_gate = String::new();
         let settings = self.tutor_settings()?;
         let order = if letter_learning {
             // Rate the verse by its single *best* introducible word — the one
@@ -2799,7 +2816,7 @@ impl Bible {
             // verse carrying the best next word.
             let score = letter_learning_score("?2");
             format!(
-                "MAX(CASE WHEN {intro} THEN {score} END) DESC, \
+                "MAX({score}) DESC, \
                  vw.book, vw.chapter, vw.verse"
             )
         } else {
@@ -2808,11 +2825,10 @@ impl Bible {
             // uses a 0..1,000 completion bonus so balanced settings still avoid
             // short name lists while a high verse priority can win deliberately.
             format!(
-                "(MIN(MAX(CASE WHEN {intro} THEN {WORD_FREQ} END), 10000) * {} \
-                  + (1000 / MAX(COUNT(DISTINCT CASE WHEN done.vkey IS NULL \
-                        THEN sm.vkey END), 1)) * {}) DESC, \
-             MAX(CASE WHEN {intro} THEN {WORD_FREQ} END) DESC, \
-             MIN(CASE WHEN {intro} THEN COALESCE(sm.form_tier, 0) END) ASC, \
+                "(MIN(MAX({WORD_FREQ}), 10000) * {} \
+                  + (1000 / MAX(MAX(vp.unknown_words), 1)) * {}) DESC, \
+             MAX({WORD_FREQ}) DESC, \
+             MIN(COALESCE(sm.form_tier, 0)) ASC, \
              vw.book, vw.chapter, vw.verse",
                 settings.vocab_priority, settings.verse_priority
             )
@@ -2823,7 +2839,7 @@ impl Bible {
         let exclude_base = if letter_learning { 3 } else { 2 };
         let exclude_where = if exclude.is_some() {
             format!(
-                "WHERE NOT (vw.book = ?{b} AND vw.chapter = ?{c} AND vw.verse = ?{v})",
+                "AND NOT (vw.book = ?{b} AND vw.chapter = ?{c} AND vw.verse = ?{v})",
                 b = exclude_base,
                 c = exclude_base + 1,
                 v = exclude_base + 2
@@ -2835,22 +2851,30 @@ impl Bible {
             "SELECT vw.book, vw.chapter, vw.verse
              FROM hebrewdb.verse_word vw
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
-             LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
-             LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
+             JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
+             JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
+             JOIN progress.verse_meta vm ON vm.book = vw.book
+                AND vm.chapter = vw.chapter AND vm.verse = vw.verse
+             JOIN progress.verse_progress vp ON vp.book = vw.book
+                AND vp.chapter = vw.chapter AND vp.verse = vw.verse
              LEFT JOIN progress.word_srs base_ws ON base_ws.surface_id = sm.base_surface_id
              LEFT JOIN hebrewdb.roots r ON r.root = sm.root
-             LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
              LEFT JOIN ({KNOWN_QAL_ROOTS}) kqr ON kqr.root = sm.root
+             WHERE {intro}
              {exclude_where}
              GROUP BY vw.book, vw.chapter, vw.verse
-             HAVING SUM(CASE WHEN s.language = 'aramaic' THEN 1 ELSE 0 END) = 0
-                AND COUNT(DISTINCT CASE WHEN {intro} THEN vw.surface_id END) >= 1
-                AND (COUNT(DISTINCT CASE WHEN {intro} AND {NOT_NAME}
-                       THEN vw.surface_id END) >= 1
-                     OR SUM(CASE WHEN done.vkey IS NULL
-                          AND (COALESCE(sm.concept_mask, 0) & ~?1) != 0
-                          THEN 1 ELSE 0 END) = 0)
-                {unteachable_gate}
+             HAVING MAX(CASE WHEN {NOT_NAME} THEN 1 ELSE 0 END) = 1
+                OR NOT EXISTS (
+                    SELECT 1 FROM hebrewdb.verse_word locked_vw
+                    JOIN progress.surface_meta locked_sm
+                      ON locked_sm.surface_id = locked_vw.surface_id
+                    JOIN progress.surface_progress locked_sp
+                      ON locked_sp.surface_id = locked_vw.surface_id
+                    WHERE locked_vw.book = vw.book
+                      AND locked_vw.chapter = vw.chapter
+                      AND locked_vw.verse = vw.verse
+                      AND locked_sp.graduated = 0
+                      AND (COALESCE(locked_sm.concept_mask, 0) & ~?1) != 0)
              ORDER BY {order}
              LIMIT 1"
         );
@@ -2887,11 +2911,11 @@ impl Bible {
                      FROM hebrewdb.verse_word vw
                      JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
                      LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
-                     LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
+                     JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
                      LEFT JOIN hebrewdb.roots r ON r.root = sm.root
                      LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
                      WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
-                       AND done.vkey IS NULL
+                       AND sp.graduated = 0
                      {word_order}
                      LIMIT 1"
                 ),
@@ -2941,13 +2965,13 @@ impl Bible {
              FROM hebrewdb.verse_word vw
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
-             LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
+             JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
              LEFT JOIN progress.word_srs base_ws ON base_ws.surface_id = sm.base_surface_id
              LEFT JOIN hebrewdb.roots r ON r.root = sm.root
              LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
              LEFT JOIN ({KNOWN_QAL_ROOTS}) kqr ON kqr.root = sm.root
              WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
-               AND done.vkey IS NULL
+               AND sp.graduated = 0
                AND (COALESCE(sm.concept_mask, 0) & ~?4) = 0
                AND {FAMILY_READY}
                AND {LEXICAL_BASE_READY}
@@ -2971,15 +2995,13 @@ impl Bible {
     /// *read* (its names must be dealt), a teaching pin mustn't deal names.
     fn verse_completable(&self, b: u8, c: u8, v: u8, unlocked: i64) -> rusqlite::Result<bool> {
         let locked: i64 = self.conn().query_row(
-            &format!(
-                "SELECT COUNT(*)
+            "SELECT COUNT(*)
                  FROM hebrewdb.verse_word vw
                  LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
-                 LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
+                 JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
                  WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
-                   AND done.vkey IS NULL
-                   AND (COALESCE(sm.concept_mask, 0) & ~?4) != 0"
-            ),
+                   AND sp.graduated = 0
+                   AND (COALESCE(sm.concept_mask, 0) & ~?4) != 0",
             params![b, c, v, unlocked],
             |r| r.get(0),
         )?;
@@ -3940,6 +3962,18 @@ impl Bible {
                     params![key],
                     |r| r.get(0),
                 )?;
+                let graduating = !previous.graduated() && next.graduated();
+                if graduating {
+                    // Bring an old or freshly-created progress database up to
+                    // date before the SRS row starts reporting this surface as
+                    // graduated. Doing this after the write makes the cache
+                    // consistency check see a mismatch and rebuild readability
+                    // for the entire corpus; once the baseline is current,
+                    // `record_surface_graduation` only touches this vocabulary
+                    // key and the verses that contain it.
+                    self.ensure_surface_meta()?;
+                    self.ensure_readability_progress()?;
+                }
                 self.conn().execute(
                     "INSERT INTO progress.word_srs(surface, surface_id, ease, \
                         interval_days, due_epoch, reps, lapses, introduced_epoch, last_grade, updated_epoch) \
@@ -3961,9 +3995,7 @@ impl Bible {
                         now
                     ],
                 )?;
-                if !previous.graduated() && next.graduated() {
-                    self.ensure_surface_meta()?;
-                    self.ensure_readability_progress()?;
+                if graduating {
                     self.record_surface_graduation(surface_id, now)?;
                     // A curriculum pin belonged to the old verse-first model.
                     // Release it whenever its word graduates so the next word
@@ -4091,7 +4123,7 @@ impl Bible {
         v: u8,
         limit: i64,
     ) -> rusqlite::Result<Vec<(u8, u8, u8)>> {
-        let mut stmt = self.conn().prepare(&format!(
+        let mut stmt = self.conn().prepare(
             "SELECT DISTINCT vw2.book, vw2.chapter, vw2.verse
              FROM hebrewdb.verse_word vw1
              JOIN hebrewdb.verse_word vw2 ON vw2.surface_id = vw1.surface_id
@@ -4099,12 +4131,11 @@ impl Bible {
                AND NOT (vw2.book = ?1 AND vw2.chapter = ?2 AND vw2.verse = ?3)
                AND NOT EXISTS (
                    SELECT 1 FROM hebrewdb.verse_word w3
-                   LEFT JOIN progress.surface_meta sm3 ON sm3.surface_id = w3.surface_id
-                   LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm3.vkey
+                   JOIN progress.surface_progress sp3 ON sp3.surface_id = w3.surface_id
                    WHERE w3.book = vw2.book AND w3.chapter = vw2.chapter
-                     AND w3.verse = vw2.verse AND done.vkey IS NULL)
-             LIMIT ?4"
-        ))?;
+                      AND w3.verse = vw2.verse AND sp3.graduated = 0)
+             LIMIT ?4",
+        )?;
         let rows = stmt.query_map(params![b, c, v, limit], |r| {
             Ok((r.get(0)?, r.get(1)?, r.get(2)?))
         })?;
@@ -5569,6 +5600,72 @@ mod tests {
         let second = bible.unlocked_concepts(&s, now)?;
         assert_eq!(second.count_ones(), 2);
         assert_eq!(second & first, first, "unlocked set only grows");
+        Ok(())
+    }
+
+    #[test]
+    fn word_graduation_updates_readability_incrementally() -> rusqlite::Result<()> {
+        let Some(bible) = open_with_progress() else {
+            return Ok(());
+        };
+        bible.ensure_surface_meta()?;
+
+        let (known_surface, known_id, known_vkey): (String, i64, String) = bible.conn().query_row(
+            "SELECT s.text, s.surface_id, sm.vkey
+                 FROM hebrewdb.surface s
+                 JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id
+                 WHERE s.language IS NULL AND sm.is_name = 0
+                 ORDER BY s.occurrences DESC
+                 LIMIT 1",
+            [],
+            |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+        )?;
+        let (new_surface, new_id): (String, i64) = bible.conn().query_row(
+            "SELECT s.text, s.surface_id
+             FROM hebrewdb.surface s
+             JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id
+             WHERE s.language IS NULL AND sm.is_name = 0 AND sm.vkey <> ?1
+             ORDER BY s.occurrences DESC
+             LIMIT 1",
+            params![known_vkey],
+            |r| Ok((r.get(0)?, r.get(1)?)),
+        )?;
+
+        bible.conn().execute(
+            "INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days,
+                due_epoch, reps, lapses, introduced_epoch, last_grade)
+             VALUES (?1, ?2, 2.5, 1, 0, 3, 0, 0, 2)",
+            params![known_surface, known_id],
+        )?;
+        bible.ensure_readability_progress()?;
+
+        const SENTINEL_EPOCH: i64 = 123_456;
+        bible.conn().execute(
+            "UPDATE progress.surface_progress SET graduated_epoch = ?2
+             WHERE surface_id IN (
+                SELECT twin.surface_id FROM progress.surface_meta source
+                JOIN progress.surface_meta twin ON twin.vkey = source.vkey
+                WHERE source.surface_id = ?1)",
+            params![known_id, SENTINEL_EPOCH],
+        )?;
+
+        let now = 1_700_000_000;
+        for offset in 0..3 {
+            let _ = bible.submit_review(Track::Word, &new_surface, Grade::Good, now + offset)?;
+        }
+
+        let preserved: i64 = bible.conn().query_row(
+            "SELECT graduated_epoch FROM progress.surface_progress WHERE surface_id = ?1",
+            params![known_id],
+            |r| r.get(0),
+        )?;
+        assert_eq!(preserved, SENTINEL_EPOCH);
+        let graduated_at: i64 = bible.conn().query_row(
+            "SELECT graduated_epoch FROM progress.surface_progress WHERE surface_id = ?1",
+            params![new_id],
+            |r| r.get(0),
+        )?;
+        assert_eq!(graduated_at, now + 2);
         Ok(())
     }
 
