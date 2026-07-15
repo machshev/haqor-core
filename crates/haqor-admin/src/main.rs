@@ -67,9 +67,7 @@ fn main() -> Result<()> {
                 let saved = if server.is_some() && token.is_some() {
                     None
                 } else {
-                    Some(haqor_admin::read_app_sync_settings(
-                        haqor_admin::DEFAULT_APP_SHARED_PREFERENCES,
-                    )?)
+                    Some(haqor_admin::read_default_app_sync_settings()?)
                 };
                 let server = server
                     .or_else(|| saved.as_ref().map(|settings| settings.server_url.clone()))

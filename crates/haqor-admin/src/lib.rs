@@ -13,8 +13,8 @@ use serde_json::{Value, json};
 const EDITOR: &str = include_str!("editor.html");
 const MAX_REQUEST_BYTES: usize = 4 * 1024 * 1024;
 const MAX_SNAPSHOT_BYTES: usize = 64 * 1024 * 1024;
-pub const DEFAULT_APP_SHARED_PREFERENCES: &str =
-    "/home/jamesm/.local/share/com.example.haqor/shared_preferences.json";
+const APP_ID: &str = "org.haqor";
+const LEGACY_APP_ID: &str = "com.example.haqor";
 
 /// The server credentials the Flutter app keeps in its platform preferences.
 /// They are read only for a `pull` invocation and are never printed.
@@ -22,6 +22,38 @@ pub const DEFAULT_APP_SHARED_PREFERENCES: &str =
 pub struct AppSyncSettings {
     pub server_url: String,
     pub token: String,
+}
+
+fn xdg_data_home() -> Result<PathBuf> {
+    if let Some(path) = std::env::var_os("XDG_DATA_HOME").filter(|path| !path.is_empty()) {
+        return Ok(PathBuf::from(path));
+    }
+    let home = std::env::var_os("HOME").context("HOME is not set")?;
+    Ok(PathBuf::from(home).join(".local/share"))
+}
+
+fn shared_preferences_path(data_home: &Path, app_id: &str) -> PathBuf {
+    data_home.join(app_id).join("shared_preferences.json")
+}
+
+/// Read the settings from Haqor's XDG data directory. During the application
+/// ID migration, fall back to Flutter's former template ID only when the new
+/// settings file does not yet exist, so existing LAN sync credentials survive
+/// the upgrade.
+pub fn read_default_app_sync_settings() -> Result<AppSyncSettings> {
+    read_app_sync_settings_from_data_home(&xdg_data_home()?)
+}
+
+fn read_app_sync_settings_from_data_home(data_home: &Path) -> Result<AppSyncSettings> {
+    let current = shared_preferences_path(&data_home, APP_ID);
+    if current.exists() {
+        return read_app_sync_settings(current);
+    }
+    let legacy = shared_preferences_path(&data_home, LEGACY_APP_ID);
+    if legacy.exists() {
+        return read_app_sync_settings(legacy);
+    }
+    read_app_sync_settings(current)
 }
 
 struct SyncEndpoint {
@@ -634,6 +666,34 @@ mod tests {
             }
         );
         std::fs::remove_file(preferences)?;
+        Ok(())
+    }
+
+    #[test]
+    fn default_settings_follow_xdg_data_home_and_migrate_the_template_id() -> Result<()> {
+        let data_home = std::env::temp_dir().join(format!(
+            "haqor-admin-xdg-{}-{}",
+            std::process::id(),
+            std::thread::current().name().unwrap_or("test")
+        ));
+        let legacy = shared_preferences_path(&data_home, LEGACY_APP_ID);
+        std::fs::create_dir_all(legacy.parent().unwrap())?;
+        std::fs::write(
+            &legacy,
+            r#"{"flutter.progress_sync_server_url":"http://sync:8788","flutter.progress_sync_token":"token"}"#,
+        )?;
+        assert_eq!(
+            read_app_sync_settings_from_data_home(&data_home)?,
+            AppSyncSettings {
+                server_url: "http://sync:8788".to_string(),
+                token: "token".to_string(),
+            }
+        );
+        assert_eq!(
+            shared_preferences_path(&data_home, APP_ID),
+            data_home.join("org.haqor/shared_preferences.json")
+        );
+        std::fs::remove_dir_all(data_home)?;
         Ok(())
     }
 }
