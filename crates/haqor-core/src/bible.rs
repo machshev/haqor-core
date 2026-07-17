@@ -3428,6 +3428,22 @@ mod tests {
     }
 
     #[test]
+    fn night_alternate_spelling_has_word_info_and_interlinear_gloss() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+
+        // The generated noun stem is לַיִל, but BDB indexes the citation form
+        // under the alternate consonantal spelling לילה. Keep both reader
+        // surfaces on the curated learner gloss instead of exposing a blank.
+        let info = bible
+            .hebrew_word_info("לָיְלָה")
+            .expect("Genesis 1:5 noun resolves");
+        assert_eq!(info.gloss, "night");
+        let glosses = bible.verse_glosses(1, 1, 5).unwrap();
+        assert_eq!(glosses[6], "night");
+    }
+
+    #[test]
     fn mobile_lexicon_entry_override_updates_word_info_and_reader_glosses() {
         require_data!();
         let bible = Bible::open("data").unwrap();
