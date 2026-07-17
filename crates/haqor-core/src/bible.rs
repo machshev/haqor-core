@@ -3827,10 +3827,14 @@ mod tests {
         require_data!();
         let bible = Bible::open("data").unwrap();
         // עַל: BDB files the preposition under the עלה article, leaving a
-        // "see עלה" stub first in the consonant group; the bridge must serve
-        // a real gloss (the prepositional article), never the stub.
+        // "see עלה" stub first in the consonant group. The curated learner
+        // gloss must win so word info agrees with the reader interlinear.
         let (_, gloss, _) = lexicon_fallback(bible.conn(), "עַל").expect("עַל bridges");
-        assert!(gloss.starts_with("upon"), "got {gloss:?}");
+        assert_eq!(gloss, "on, over, against");
+        let info = bible.hebrew_word_info("עַל").expect("עַל word info");
+        assert_eq!(info.gloss, gloss);
+        let verse_glosses = bible.verse_glosses(1, 1, 2).expect("Genesis 1:2 glosses");
+        assert_eq!(verse_glosses[5], gloss);
         // גַּם: the stub "see גמם" precedes the real article "also; moreover".
         let (_, gloss, _) = lexicon_fallback(bible.conn(), "גַּם").expect("גַּם bridges");
         assert!(gloss.starts_with("also"), "got {gloss:?}");
