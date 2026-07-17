@@ -304,6 +304,16 @@ mod tests {
     }
 
     #[test]
+    fn parses_irregular_qaneh_construct_with_suffix() {
+        let mut inventory = NounInventory::build(&[]);
+        inventory.add_gold_nouns();
+        let matches = inventory.parse("וּקְנֹתָם");
+        assert!(matches.iter().any(|m| {
+            m.stem == "קָנֶה" && m.prefix == "וּ" && m.label == "Plural Construct + 3mp"
+        }));
+    }
+
+    #[test]
     fn parses_segolate_plural() {
         // מְלָכִים — plural absolute of מֶלֶךְ.
         let stems = vec![NounStem::segolate("מֶלֶךְ")];
