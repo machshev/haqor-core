@@ -1625,6 +1625,12 @@ impl Bible {
         let mut stmt = self.db.prepare("SELECT s.text FROM hebrewdb.verse_word vw JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 ORDER BY vw.position")?;
         stmt.query_map([book, chapter, verse], |r| {
             let word: String = r.get(0)?;
+            // A correction made from the word-info sheet must also win in the
+            // interlinear.  Static curated glosses remain ahead of the baked
+            // lexicon, but they must not shadow a newer device-local edit.
+            if let Some((_, gloss)) = self.runtime_lexicon_entry(&word) {
+                return Ok(gloss);
+            }
             if let Some(curated) = crate::vocab_gloss::curated_gloss(&word) {
                 return Ok(curated.gloss.to_string());
             }
@@ -3410,6 +3416,25 @@ mod tests {
         );
         drop(merged);
         std::fs::remove_file(snapshot_path).unwrap();
+    }
+
+    #[test]
+    fn mobile_lexicon_entry_override_beats_curated_reader_gloss() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        bible.attach_progress(":memory:").unwrap();
+
+        // Genesis 1:7 contains מֵעַל, for which the bundled curated reader
+        // gloss is "from upon, from over". A correction made in word info must
+        // replace that text in the interlinear as well.
+        bible
+            .set_lexicon_entry_override("מֵעַל", "על", "upon", 1)
+            .unwrap();
+
+        let info = bible.hebrew_word_info("מֵעַ֣ל").expect("word info resolves");
+        assert_eq!(info.gloss, "upon");
+        let glosses = bible.verse_glosses(1, 1, 7).unwrap();
+        assert_eq!(glosses[13], "upon");
     }
 
     #[test]
