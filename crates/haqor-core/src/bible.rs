@@ -3899,6 +3899,23 @@ mod tests {
     }
 
     #[test]
+    fn curated_noun_without_bdb_entry_keeps_its_gloss() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // Exodus 37:22 כַּפְתֹּרֵיהֶם — the reverse noun parser recognises the
+        // stem and suffix, but the imported BDB source has no entry for
+        // כַּפְתֹּר. The curated stem gloss must still reach the reader.
+        let info = bible
+            .hebrew_word_info("כַּפְתֹּרֵיהֶם")
+            .expect("bud with possessive suffix should parse");
+        assert_eq!(info.root, "");
+        assert_eq!(info.gloss, "bud; knob");
+        assert_eq!(info.gender.as_deref(), Some("Masculine"));
+        assert_eq!(info.number.as_deref(), Some("Plural"));
+        assert_eq!(info.state.as_deref(), Some("Pl + 3mp"));
+    }
+
+    #[test]
     fn test_hebrew_word_info_function_word() {
         require_data!();
         let bible = Bible::open("data").unwrap();
