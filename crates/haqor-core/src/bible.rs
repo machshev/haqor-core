@@ -3923,6 +3923,15 @@ mod tests {
         assert_eq!(prefixed.number.as_deref(), Some("Singular"));
         assert_eq!(prefixed.state.as_deref(), Some("Absolute"));
         assert_eq!(prefixed.prefix.as_deref(), Some("וְ"));
+
+        let feminine_possessive = bible
+            .hebrew_word_info("כַּפְתֹּרֶיהָ")
+            .expect("her buds should parse");
+        assert_eq!(feminine_possessive.root, "");
+        assert_eq!(feminine_possessive.gloss, "bud; knob");
+        assert_eq!(feminine_possessive.gender.as_deref(), Some("Masculine"));
+        assert_eq!(feminine_possessive.number.as_deref(), Some("Plural"));
+        assert_eq!(feminine_possessive.state.as_deref(), Some("Pl + 3fs"));
     }
 
     #[test]
