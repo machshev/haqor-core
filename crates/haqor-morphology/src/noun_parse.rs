@@ -172,7 +172,11 @@ impl NounInventory {
                 NounStemKind::Masculine,
                 false,
             ));
-            let label = format!("Noun ({gloss})");
+            let label = super::gold_noun::GOLD_NOUN_LABELS
+                .iter()
+                .find_map(|&(labelled_form, label)| (labelled_form == form).then_some(label))
+                .map(str::to_owned)
+                .unwrap_or_else(|| format!("Noun ({gloss})"));
             let key = norm_key(&hebrew::render(&hebrew::parse_pointed(form)));
             self.forms.entry(key).or_default().push((id, label));
         }
@@ -288,6 +292,16 @@ pub fn parse_noun_word(word: &str, stems: &[NounStem]) -> Vec<NounMatch> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn gold_reduced_tree_plural_keeps_construct_label() {
+        let mut inventory = NounInventory::build(&[]);
+        inventory.add_gold_nouns();
+        let matches = inventory.parse("עֲצֵי");
+        assert!(matches.iter().any(|m| {
+            m.stem == "עֵץ" && m.label == "Plural Construct" && m.prefix.is_empty()
+        }));
+    }
 
     #[test]
     fn parses_segolate_plural() {
