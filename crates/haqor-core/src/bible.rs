@@ -3394,6 +3394,21 @@ mod tests {
     }
 
     #[test]
+    fn verse_glosses_keep_wayyiqtol_flowing() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+
+        // Keep the interlinear compact enough to read with the verse. The
+        // Lexicon still presents the base lemma sense, "be".
+        let info = bible
+            .hebrew_word_info("וַיְהִי")
+            .expect("wayyiqtol form resolves");
+        assert_eq!(info.gloss, "be");
+        let glosses = bible.verse_glosses(1, 1, 3).unwrap();
+        assert_eq!(glosses[4], "and it was");
+    }
+
+    #[test]
     fn mobile_lexicon_entry_override_updates_word_info_and_reader_glosses() {
         require_data!();
         let bible = Bible::open("data").unwrap();
