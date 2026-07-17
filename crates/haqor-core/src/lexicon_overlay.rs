@@ -169,6 +169,10 @@ mod tests {
     fn checked_in_overlay_is_valid_and_contains_both_kinds() {
         validate(source()).unwrap();
         assert!(lexicon_entries().any(|e| e.surface == "כִּי" && !e.gloss.is_empty()));
+        assert!(
+            lexicon_entries()
+                .any(|e| { e.surface == "חָלַם" && e.root == "חלם" && e.gloss == "dream" })
+        );
         assert!(word_glosses().any(|e| e.surface == "אֶת" && !e.gloss.is_empty()));
     }
 
