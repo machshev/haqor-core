@@ -1273,8 +1273,16 @@ fn inflect_verb(w: &HebrewWord, base: &str) -> String {
         Some("Imperative") => with_obj(format!("{base}!")),
         Some("Inf. Construct") | Some("Inf. Absolute") if and => format!("and to {base}"),
         Some("Inf. Construct") | Some("Inf. Absolute") => format!("to {base}"),
-        Some("Participle (act.)") | Some("Participle") => with_obj(ing_form(base)),
-        Some("Participle (pas.)") | Some("Participle (pass.)") => past_tense(base),
+        Some("Participle (act.)") | Some("Participle") => with_obj(if and {
+            format!("and {}", ing_form(base))
+        } else {
+            ing_form(base)
+        }),
+        Some("Participle (pas.)") | Some("Participle (pass.)") => with_obj(if and {
+            format!("and {}", past_tense(base))
+        } else {
+            past_tense(base)
+        }),
         _ => with_obj(clause(base.to_string())),
     }
 }
@@ -3214,6 +3222,10 @@ mod tests {
             )),
             "making"
         );
+        let mut conjunctive_participle =
+            verb("Participle (act.)", ("", "Masculine", "Plural"), "think");
+        conjunctive_participle.prefix = Some("וְ".to_string());
+        assert_eq!(inflected_gloss(&conjunctive_participle), "and thinking");
 
         // Object suffix appends an object pronoun.
         let mut struck = verb("Wayyiqtol", ("Third", "Masculine", "Singular"), "smite");
@@ -3492,6 +3504,22 @@ mod tests {
         assert_eq!(info.gloss, "be");
         let glosses = bible.verse_glosses(1, 1, 3).unwrap();
         assert_eq!(glosses[4], "and it was");
+    }
+
+    #[test]
+    fn verse_glosses_keep_conjunctive_participles_flowing() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+
+        // Ex 35:35: וְחֹשְׁבֵי is an ordinary conjunctive vav on an active
+        // participle, not a wayyiqtol. Its reader gloss must retain "and".
+        let info = bible
+            .hebrew_word_info("וְחֹשְׁבֵי")
+            .expect("conjunctive participle resolves");
+        assert_eq!(info.prefix.as_deref(), Some("וְ"));
+        assert_eq!(info.tense.as_deref(), Some("Participle (act.)"));
+        let glosses = bible.verse_glosses(2, 35, 35).unwrap();
+        assert_eq!(glosses[19], "and thinking");
     }
 
     #[test]
