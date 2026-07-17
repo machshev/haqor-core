@@ -2372,15 +2372,19 @@ impl Bible {
                 }))
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
-        // Drop content-less section root-headers (empty gloss + no senses); they
-        // would render as blank rows in the tree. Root headers imported from
-        // both the Hebrew and Aramaic sections can also differ only by a stress
-        // accent; after display normalisation, keep one copy of each headline.
-        // See [`BdbEntry::has_content`].
+        // Drop section root-headers that offer no usable lexeme meaning: either
+        // empty headers or root-only parenthetical stubs such as "(√ of
+        // following; meaning unknown)." The latter introduce the derived words
+        // that follow, which are already present in this tree, and otherwise
+        // render as unhelpful proposed entries. Root headers imported from both
+        // the Hebrew and Aramaic sections can also differ only by a stress
+        // accent; after display normalisation, keep one copy of each remaining
+        // headline. See [`BdbEntry::has_content`] and [`root_stub_gloss`].
         let mut seen_root_rows = HashSet::new();
         Ok(entries
             .into_iter()
             .filter(BdbEntry::has_content)
+            .filter(|entry| !(entry.is_root && root_stub_gloss(&entry.gloss)))
             .filter(|entry| {
                 entry.pos_category() != "root"
                     || seen_root_rows.insert((entry.headword.clone(), entry.gloss.clone()))
@@ -3730,6 +3734,25 @@ mod tests {
             .unwrap()
             .expect("section header still resolvable by id");
         assert!(!stub.has_content());
+    }
+
+    #[test]
+    fn test_hebrew_bdb_root_tree_hides_unknown_root_stubs() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        // חרש has two BDB root-section headers whose only prose says that the
+        // root's meaning is unknown. Their derived lexemes follow in the same
+        // tree, so they must not be proposed as separate word meanings.
+        let tree = bible.hebrew_bdb_by_root("חרש").unwrap();
+        assert!(
+            tree.iter()
+                .any(|entry| entry.gloss == "carving; skilful working")
+        );
+        assert!(tree.iter().all(|entry| {
+            !(entry.is_root
+                && root_stub_gloss(&entry.gloss)
+                && entry.gloss.contains("meaning unknown"))
+        }));
     }
 
     #[test]
