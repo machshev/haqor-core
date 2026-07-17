@@ -118,9 +118,17 @@ fn ensure_lexicon_entry_overrides(db: &Connection, schema: &str) -> rusqlite::Re
             surface       TEXT PRIMARY KEY,
             root          TEXT NOT NULL DEFAULT '',
             gloss         TEXT NOT NULL,
+            reader_gloss  TEXT NOT NULL DEFAULT '',
             updated_epoch INTEGER NOT NULL
         )"
-    ))
+    ))?;
+    if !has_column(db, schema, "lexicon_entry_overrides", "reader_gloss")? {
+        db.execute_batch(&format!(
+            "ALTER TABLE {schema}.lexicon_entry_overrides \
+             ADD COLUMN reader_gloss TEXT NOT NULL DEFAULT ''"
+        ))?;
+    }
+    Ok(())
 }
 
 fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
@@ -250,11 +258,12 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
         )?;
         db.execute_batch(
             "INSERT INTO progress.lexicon_entry_overrides(
-                 surface, root, gloss, updated_epoch)
-             SELECT surface, root, gloss, updated_epoch
+                 surface, root, gloss, reader_gloss, updated_epoch)
+             SELECT surface, root, gloss, reader_gloss, updated_epoch
              FROM sync.lexicon_entry_overrides WHERE true
              ON CONFLICT(surface) DO UPDATE SET
                 root=excluded.root, gloss=excluded.gloss,
+                reader_gloss=excluded.reader_gloss,
                 updated_epoch=excluded.updated_epoch
              WHERE excluded.updated_epoch >
                    progress.lexicon_entry_overrides.updated_epoch;",
@@ -431,17 +440,23 @@ pub fn read_lexicon_entry_overrides_file(
     if !exists {
         return Ok(Vec::new());
     }
-    let mut statement = db.prepare(
-        "SELECT surface, root, gloss, updated_epoch
-         FROM lexicon_entry_overrides ORDER BY updated_epoch, surface",
-    )?;
+    let reader_gloss = has_column(&db, "main", "lexicon_entry_overrides", "reader_gloss")?;
+    let query = if reader_gloss {
+        "SELECT surface, root, gloss, reader_gloss, updated_epoch
+         FROM lexicon_entry_overrides ORDER BY updated_epoch, surface"
+    } else {
+        "SELECT surface, root, gloss, '', updated_epoch
+         FROM lexicon_entry_overrides ORDER BY updated_epoch, surface"
+    };
+    let mut statement = db.prepare(query)?;
     statement
         .query_map([], |row| {
             Ok(LexiconEntryOverride {
                 surface: row.get(0)?,
                 root: row.get(1)?,
                 gloss: row.get(2)?,
-                updated_epoch: row.get(3)?,
+                reader_gloss: row.get(3)?,
+                updated_epoch: row.get(4)?,
             })
         })?
         .collect()
@@ -792,6 +807,7 @@ mod tests {
                 surface: "דָּבָר".to_string(),
                 root: "דבר".to_string(),
                 gloss: "matter".to_string(),
+                reader_gloss: "".to_string(),
                 updated_epoch: 200,
             }]
         );

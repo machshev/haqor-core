@@ -1449,7 +1449,7 @@ const ATTACHED_DBS: [(&str, &str); 4] = [
 #[derive(Debug)]
 pub struct Bible {
     db: Connection,
-    runtime_lexicon_entries: RefCell<HashMap<String, (String, String)>>,
+    runtime_lexicon_entries: RefCell<HashMap<String, (String, String, String)>>,
 }
 
 #[cfg(feature = "embedded")]
@@ -1570,14 +1570,18 @@ impl Bible {
     }
 
     fn reload_runtime_lexicon_entries(&self) -> rusqlite::Result<()> {
-        let mut statement = self
-            .db
-            .prepare("SELECT surface, root, gloss FROM progress.lexicon_entry_overrides")?;
+        let mut statement = self.db.prepare(
+            "SELECT surface, root, gloss, reader_gloss FROM progress.lexicon_entry_overrides",
+        )?;
         let entries = statement
             .query_map([], |row| {
                 Ok((
                     row.get::<_, String>(0)?,
-                    (row.get::<_, String>(1)?, row.get::<_, String>(2)?),
+                    (
+                        row.get::<_, String>(1)?,
+                        row.get::<_, String>(2)?,
+                        row.get::<_, String>(3)?,
+                    ),
                 ))
             })?
             .collect::<rusqlite::Result<HashMap<_, _>>>()?;
@@ -1585,13 +1589,24 @@ impl Bible {
         Ok(())
     }
 
-    pub(crate) fn cache_runtime_lexicon_entry(&self, surface: &str, root: &str, gloss: &str) {
-        self.runtime_lexicon_entries
-            .borrow_mut()
-            .insert(surface.to_string(), (root.to_string(), gloss.to_string()));
+    pub(crate) fn cache_runtime_lexicon_entry(
+        &self,
+        surface: &str,
+        root: &str,
+        gloss: &str,
+        reader_gloss: &str,
+    ) {
+        self.runtime_lexicon_entries.borrow_mut().insert(
+            surface.to_string(),
+            (
+                root.to_string(),
+                gloss.to_string(),
+                reader_gloss.to_string(),
+            ),
+        );
     }
 
-    pub(crate) fn runtime_lexicon_entry(&self, surface: &str) -> Option<(String, String)> {
+    pub(crate) fn runtime_lexicon_entry(&self, surface: &str) -> Option<(String, String, String)> {
         self.runtime_lexicon_entries.borrow().get(surface).cloned()
     }
 
@@ -1628,8 +1643,12 @@ impl Bible {
             // A correction made from the word-info sheet must also win in the
             // interlinear.  Static curated glosses remain ahead of the baked
             // lexicon, but they must not shadow a newer device-local edit.
-            if let Some((_, gloss)) = self.runtime_lexicon_entry(&word) {
-                return Ok(gloss);
+            if let Some((_, gloss, reader_gloss)) = self.runtime_lexicon_entry(&word) {
+                return Ok(if reader_gloss.is_empty() {
+                    gloss
+                } else {
+                    reader_gloss
+                });
             }
             if let Some(curated) = crate::vocab_gloss::curated_gloss(&word) {
                 return Ok(curated.gloss.to_string());
@@ -1702,7 +1721,7 @@ impl Bible {
             .optional()
             .ok()??;
         let mut info = self.hebrew_word_by_surface_id(surface_id, norm)?;
-        if let Some((root, gloss)) = self.lexicon_entry_override(&info.word).ok().flatten() {
+        if let Some((root, gloss, _)) = self.lexicon_entry_override(&info.word).ok().flatten() {
             info.root = root;
             info.gloss = gloss;
         }
@@ -3414,7 +3433,7 @@ mod tests {
         let bible = Bible::open("data").unwrap();
         bible.attach_progress(":memory:").unwrap();
         bible
-            .set_lexicon_entry_override("בָּרָא", "יצר", "fashion", 1)
+            .set_lexicon_entry_override("בָּרָא", "יצר", "fashion", "created", 1)
             .unwrap();
 
         let info = bible
@@ -3424,7 +3443,7 @@ mod tests {
         assert_eq!(info.gloss, "fashion");
 
         let glosses = bible.verse_glosses(1, 1, 1).unwrap();
-        assert_eq!(glosses[1], "he fashioned");
+        assert_eq!(glosses[1], "created");
 
         // A correction arriving from another device through progress sync is
         // loaded into the same runtime overlay without restarting the app.
@@ -3458,13 +3477,13 @@ mod tests {
         // gloss is "from upon, from over". A correction made in word info must
         // replace that text in the interlinear as well.
         bible
-            .set_lexicon_entry_override("מֵעַל", "על", "upon", 1)
+            .set_lexicon_entry_override("מֵעַל", "על", "upon", "from above", 1)
             .unwrap();
 
         let info = bible.hebrew_word_info("מֵעַ֣ל").expect("word info resolves");
         assert_eq!(info.gloss, "upon");
         let glosses = bible.verse_glosses(1, 1, 7).unwrap();
-        assert_eq!(glosses[13], "upon");
+        assert_eq!(glosses[13], "from above");
     }
 
     #[test]
@@ -3480,9 +3499,10 @@ mod tests {
             .execute_batch(
                 "CREATE TABLE lexicon_entry_overrides(
                     surface TEXT PRIMARY KEY, root TEXT NOT NULL DEFAULT '',
-                    gloss TEXT NOT NULL, updated_epoch INTEGER NOT NULL);
+                    gloss TEXT NOT NULL, reader_gloss TEXT NOT NULL DEFAULT '',
+                    updated_epoch INTEGER NOT NULL);
                  INSERT INTO lexicon_entry_overrides
-                    VALUES ('בָּרָא', 'יצר', 'fashion', 1);",
+                    VALUES ('בָּרָא', 'יצר', 'fashion', '', 1);",
             )
             .unwrap();
         drop(progress);

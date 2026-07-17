@@ -304,14 +304,15 @@ pub struct GlossOverride {
     pub updated_epoch: i64,
 }
 
-/// A mobile correction for the root/header gloss shown by word information.
+/// A mobile correction for the word-information header and reader interlinear.
 /// Like tutor gloss corrections, these remain in the writable progress DB
-/// until `haqor-admin pull` promotes them into `lexicon_entries`.
+/// until `haqor-admin pull` promotes them into the appropriate overlay rows.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct LexiconEntryOverride {
     pub surface: String,
     pub root: String,
     pub gloss: String,
+    pub reader_gloss: String,
     pub updated_epoch: i64,
 }
 
@@ -990,6 +991,7 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             surface       TEXT    PRIMARY KEY,
             root          TEXT    NOT NULL DEFAULT '',
             gloss         TEXT    NOT NULL,
+            reader_gloss  TEXT    NOT NULL DEFAULT '',
             updated_epoch INTEGER NOT NULL
          );
          CREATE TABLE IF NOT EXISTS progress.issue_reports(
@@ -1014,6 +1016,20 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
         db.execute_batch(
             "ALTER TABLE progress.issue_reports \
              ADD COLUMN deleted INTEGER NOT NULL DEFAULT 0",
+        )?;
+    }
+
+    let lexicon_entry_overrides_has_reader_gloss = {
+        let mut stmt = db.prepare("PRAGMA progress.table_info(lexicon_entry_overrides)")?;
+        stmt.query_map([], |r| r.get::<_, String>(1))?
+            .collect::<rusqlite::Result<Vec<_>>>()?
+            .iter()
+            .any(|name| name == "reader_gloss")
+    };
+    if !lexicon_entry_overrides_has_reader_gloss {
+        db.execute_batch(
+            "ALTER TABLE progress.lexicon_entry_overrides \
+             ADD COLUMN reader_gloss TEXT NOT NULL DEFAULT ''",
         )?;
     }
 
@@ -2340,11 +2356,13 @@ impl Bible {
         surface: &str,
         root: &str,
         gloss: &str,
+        reader_gloss: &str,
         updated_epoch: i64,
     ) -> rusqlite::Result<()> {
         let surface = surface.trim();
         let root = root.trim();
         let gloss = gloss.trim();
+        let reader_gloss = reader_gloss.trim();
         if surface.is_empty() || gloss.is_empty() {
             return Err(rusqlite::Error::InvalidParameterName(
                 "surface and gloss must not be empty".to_string(),
@@ -2352,17 +2370,18 @@ impl Bible {
         }
         self.conn().execute(
             "INSERT INTO progress.lexicon_entry_overrides(
-                 surface, root, gloss, updated_epoch)
-             VALUES (?1, ?2, ?3, ?4)
+                 surface, root, gloss, reader_gloss, updated_epoch)
+             VALUES (?1, ?2, ?3, ?4, ?5)
              ON CONFLICT(surface) DO UPDATE SET
                 root=excluded.root, gloss=excluded.gloss,
+                reader_gloss=excluded.reader_gloss,
                 updated_epoch=MAX(
                     excluded.updated_epoch,
                     progress.lexicon_entry_overrides.updated_epoch + 1
                 )",
-            params![surface, root, gloss, updated_epoch],
+            params![surface, root, gloss, reader_gloss, updated_epoch],
         )?;
-        self.cache_runtime_lexicon_entry(surface, root, gloss);
+        self.cache_runtime_lexicon_entry(surface, root, gloss, reader_gloss);
         Ok(())
     }
 
@@ -2370,7 +2389,7 @@ impl Bible {
     pub fn lexicon_entry_override(
         &self,
         surface: &str,
-    ) -> rusqlite::Result<Option<(String, String)>> {
+    ) -> rusqlite::Result<Option<(String, String, String)>> {
         Ok(self.runtime_lexicon_entry(surface))
     }
 
@@ -5614,7 +5633,7 @@ mod tests {
             .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
         init_progress_schema(bible.conn())?;
 
-        bible.set_lexicon_entry_override("בָּרָא", "יצר", "fashion", 1)?;
+        bible.set_lexicon_entry_override("בָּרָא", "יצר", "fashion", "created", 1)?;
         let card = bible.word_card("בָּרָא")?.expect("בָּרָא is a surface");
         assert_eq!(card.root, "יצר");
         assert_eq!(card.gloss, "he fashioned");

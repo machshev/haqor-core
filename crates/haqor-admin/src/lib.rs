@@ -102,7 +102,8 @@ pub fn read_app_sync_settings(path: impl AsRef<Path>) -> Result<AppSyncSettings>
 
 /// Pull mobile lexicon corrections from the canonical sync database into the
 /// hand-maintained overlay. Tutor corrections update `word_glosses`, while
-/// word-info corrections update `lexicon_entries` root/header gloss rows.
+/// word-info corrections update `lexicon_entries` root/header gloss rows and,
+/// when supplied, their matching `word_glosses` interlinear rows.
 pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
     let corrections = haqor_core::progress_sync::read_gloss_overrides_file(progress)
         .with_context(|| format!("reading tutor corrections from {}", progress.display()))?;
@@ -111,18 +112,19 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
     )
     .with_context(|| format!("reading word-info corrections from {}", progress.display()))?;
     let mut value = haqor_core::lexicon_overlay::load(overlay)?;
-    let rows = value["word_glosses"]
+    let word_gloss_rows = value["word_glosses"]
         .as_array_mut()
         .context("overlay `word_glosses` must be an array")?;
     for correction in &corrections {
-        let row = rows
+        let row = word_gloss_rows
             .iter_mut()
             .find(|row| row["surface"].as_str() == Some(&correction.surface));
         let row = match row {
             Some(row) => row,
             None => {
-                rows.push(json!({"surface": correction.surface, "gloss": correction.gloss}));
-                rows.last_mut().expect("just pushed a row")
+                word_gloss_rows
+                    .push(json!({"surface": correction.surface, "gloss": correction.gloss}));
+                word_gloss_rows.last_mut().expect("just pushed a row")
             }
         };
         let object = row
@@ -133,6 +135,27 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
             object.remove("note");
         } else {
             object.insert("note".to_string(), Value::String(correction.note.clone()));
+        }
+    }
+    for correction in &lexicon_corrections {
+        if !correction.reader_gloss.is_empty() {
+            let row = word_gloss_rows
+                .iter_mut()
+                .find(|row| row["surface"].as_str() == Some(&correction.surface));
+            let row = match row {
+                Some(row) => row,
+                None => {
+                    word_gloss_rows.push(json!({"surface": correction.surface}));
+                    word_gloss_rows.last_mut().expect("just pushed a row")
+                }
+            };
+            let object = row
+                .as_object_mut()
+                .context("overlay word gloss row must be an object")?;
+            object.insert(
+                "gloss".to_string(),
+                Value::String(correction.reader_gloss.clone()),
+            );
         }
     }
     let rows = value["lexicon_entries"]
@@ -988,16 +1011,17 @@ mod tests {
              INSERT INTO gloss_overrides VALUES ('טוֹב', 'good', '', 2);
              CREATE TABLE lexicon_entry_overrides(
                 surface TEXT PRIMARY KEY, root TEXT NOT NULL DEFAULT '',
-                gloss TEXT NOT NULL, updated_epoch INTEGER NOT NULL);
+                gloss TEXT NOT NULL, reader_gloss TEXT NOT NULL DEFAULT '',
+                updated_epoch INTEGER NOT NULL);
              INSERT INTO lexicon_entry_overrides
-                VALUES ('דָּבָר', 'דבר', 'speech, word', 3);",
+                VALUES ('דָּבָר', 'דבר', 'speech, word', 'thing', 3);",
         )?;
         drop(db);
 
         assert_eq!(pull_gloss_overrides(&progress, &overlay)?, 3);
         let value: Value = serde_json::from_str(&std::fs::read_to_string(&overlay)?)?;
         let rows = value["word_glosses"].as_array().unwrap();
-        assert_eq!(rows[0]["gloss"], "matter");
+        assert_eq!(rows[0]["gloss"], "thing");
         assert_eq!(rows[0]["note"], "In this context.");
         assert_eq!(rows[0]["is_name"], true);
         assert_eq!(rows[1]["surface"], "טוֹב");
