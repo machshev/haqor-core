@@ -995,16 +995,21 @@ fn primary_sense(gloss: &str) -> String {
         // "√ …" / "cf …" reference — not a usable English sense.
         let has_hebrew = c.chars().any(|ch| ('\u{0590}'..='\u{05FF}').contains(&ch));
         let lower = c.to_lowercase();
+        let optional_plural = c.strip_suffix("(s)");
         let is_ref = lower.starts_with("see ")
             || lower.starts_with("cf")
             || lower.starts_with("id.")
             || lower.contains("n.pr")
             || c.starts_with('√')
-            || c.contains('(');
+            || (c.contains('(') && optional_plural.is_none());
         if has_hebrew || is_ref {
             continue;
         }
-        return c.trim_start_matches("to ").trim().to_string();
+        return optional_plural
+            .unwrap_or(c)
+            .trim_start_matches("to ")
+            .trim()
+            .to_string();
     }
     String::new()
 }
@@ -1148,7 +1153,7 @@ fn proclitic_words(prefix: &str, infer_article: bool) -> Vec<&'static str> {
 /// gloss plus parsed morphology — "and he said", "his word", "the kings". Falls
 /// back to the bare gloss for function words, proper nouns, and anything with no
 /// usable sense.
-pub(crate) fn inflected_gloss(w: &HebrewWord) -> String {
+pub fn inflected_gloss(w: &HebrewWord) -> String {
     let base = primary_sense(&w.gloss);
     if base.is_empty() {
         return w.gloss.clone();
@@ -3230,6 +3235,11 @@ mod tests {
         let mut to_a_king = noun(Some("Singular"), Some("Absolute"), "king");
         to_a_king.prefix = Some("לְ".to_string());
         assert_eq!(inflected_gloss(&to_a_king), "to king");
+        // The qamats on לָ marks the article assimilated into the
+        // preposition, so a reader lookup must retain both senses.
+        let mut to_the_water = noun(Some("Singular"), Some("Absolute"), "water(s)");
+        to_the_water.prefix = Some("לָ".to_string());
+        assert_eq!(inflected_gloss(&to_the_water), "to the water");
         // Explicit article letter after a preposition (מֵהָ) still reads once.
         let mut from_the_land = noun(Some("Singular"), Some("Absolute"), "land");
         from_the_land.prefix = Some("מֵהָ".to_string());
