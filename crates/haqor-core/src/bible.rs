@@ -3931,6 +3931,13 @@ mod tests {
             .expect("כִּי should resolve via the lexicon bridge");
         assert!(info.gloss.contains("because"));
         assert!(!info.gloss.to_lowercase().contains("burn"));
+
+        // The source also has the dagesh-less orthographic variant. It remains
+        // a suffixed preposition rather than falling through as "no OT parse".
+        let info = bible
+            .hebrew_word_info("בוֹ")
+            .expect("בוֹ should resolve via the curated function-word gloss");
+        assert_eq!(info.gloss, "in him, in it");
     }
 
     #[test]
