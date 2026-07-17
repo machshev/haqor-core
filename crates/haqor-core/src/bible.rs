@@ -3913,6 +3913,16 @@ mod tests {
         assert_eq!(info.gender.as_deref(), Some("Masculine"));
         assert_eq!(info.number.as_deref(), Some("Plural"));
         assert_eq!(info.state.as_deref(), Some("Pl + 3mp"));
+
+        let prefixed = bible
+            .hebrew_word_info("וְכַפְתֹּר")
+            .expect("conjunctive bud should parse");
+        assert_eq!(prefixed.root, "");
+        assert_eq!(prefixed.gloss, "bud; knob");
+        assert_eq!(prefixed.gender.as_deref(), Some("Masculine"));
+        assert_eq!(prefixed.number.as_deref(), Some("Singular"));
+        assert_eq!(prefixed.state.as_deref(), Some("Absolute"));
+        assert_eq!(prefixed.prefix.as_deref(), Some("וְ"));
     }
 
     #[test]
