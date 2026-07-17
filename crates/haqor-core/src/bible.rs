@@ -3819,6 +3819,25 @@ mod tests {
     }
 
     #[test]
+    fn gold_reduced_noun_keeps_construct_morphology() {
+        let data = Path::new(env!("CARGO_MANIFEST_DIR"))
+            .join("../..")
+            .join("data");
+        if !data.join("bible.db").exists() {
+            eprintln!("skipping: workspace data/*.db not generated in this checkout");
+            return;
+        }
+        let bible = Bible::open(&data).unwrap();
+        let tree = bible
+            .hebrew_word_info("עֲצֵי")
+            .expect("trees-of construct should resolve");
+        assert_eq!(tree.root, "עצה");
+        assert_eq!(tree.gloss, "tree; trees; wood");
+        assert_eq!(tree.number.as_deref(), Some("Plural"));
+        assert_eq!(tree.state.as_deref(), Some("Construct"));
+    }
+
+    #[test]
     fn ordinal_second_does_not_resolve_as_my_tooth() {
         require_data!();
         let bible = Bible::open("data").unwrap();

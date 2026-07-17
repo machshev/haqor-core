@@ -4877,3 +4877,9 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     // "and the sons of Jeriah"); engine builds the standard בְּנֵי.
     ("בְנָי", "בֵּן", "son; child; descendant"),
 ];
+
+/// Gold-harvested forms whose reduced spelling identifies a specific noun cell
+/// that [`GOLD_NOUNS`] cannot express on its own.  Most gold entries are opaque
+/// fallbacks, but these forms should retain their real morphology in the reader
+/// and grammar gate.
+pub const GOLD_NOUN_LABELS: &[(&str, &str)] = &[("עֲצֵי", "Plural Construct")];
