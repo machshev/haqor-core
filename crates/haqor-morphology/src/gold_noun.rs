@@ -19,6 +19,9 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     // and the defective כְּלָיֹת behind הַכְּלָיֹת), the valley noun גֵּיא, and the
     // feminine segolate דַּעַת (pausal דָּעַת/דָעַת). Proclitics are peeled before
     // matching, so וּ/בְּ/הַ-prefixed spellings are covered by the bare form.
+    // קָנֶה has the exceptional plural construct with a possessive suffix in
+    // Exodus' menorah description ("its branches").
+    ("קְנֹתָם", "קָנֶה", "stalk; reed"),
     ("יַמִּים", "יָם", "sea; large body of water"),
     ("מַמְלְכוֹת", "מַמְלָכָה", "dominion; rule; realm"),
     ("מְתֵי", "מַת", "adult; man"),
@@ -4882,4 +4885,7 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
 /// that [`GOLD_NOUNS`] cannot express on its own.  Most gold entries are opaque
 /// fallbacks, but these forms should retain their real morphology in the reader
 /// and grammar gate.
-pub const GOLD_NOUN_LABELS: &[(&str, &str)] = &[("עֲצֵי", "Plural Construct")];
+pub const GOLD_NOUN_LABELS: &[(&str, &str)] = &[
+    ("קְנֹתָם", "Plural Construct + 3mp"),
+    ("עֲצֵי", "Plural Construct"),
+];
