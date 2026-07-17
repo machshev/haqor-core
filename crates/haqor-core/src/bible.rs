@@ -3681,6 +3681,16 @@ mod tests {
     fn test_hebrew_word_info_noun_verb_headword_tie() {
         require_data!();
         let bible = Bible::open("data").unwrap();
+        // Genesis 1:3 אוֹר "light" — its unprefixed spelling is also the Qal
+        // perfect of the verb "be; become light" in BDB.  The generated noun
+        // analysis and curated surface gloss must keep the reader on the noun.
+        let bare = bible.hebrew_word_info("אוֹר").expect("noun should parse");
+        assert_eq!(bare.gloss, "light");
+        assert_eq!(bare.form, None);
+        assert_eq!(bare.gender.as_deref(), Some("Masculine"));
+        assert_eq!(bare.number.as_deref(), Some("Singular"));
+        assert_eq!(bare.state.as_deref(), Some("Absolute"));
+
         // הָאוֹר "the light" — the hollow verb אוֹר "be; become light" heads
         // BDB with the exact pointing of the derived noun, so the noun bridge
         // used to serve the verb's gloss and the card read "the be".
