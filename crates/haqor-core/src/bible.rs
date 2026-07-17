@@ -3610,6 +3610,19 @@ mod tests {
     }
 
     #[test]
+    fn ordinal_second_does_not_resolve_as_my_tooth() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        let info = bible
+            .hebrew_word_info("שֵׁנִי")
+            .expect("Genesis 1:8 ordinal should parse");
+
+        assert_eq!(info.gender.as_deref(), Some("Masculine"));
+        assert_eq!(info.number.as_deref(), Some("Singular"));
+        assert_eq!(info.state.as_deref(), Some("Absolute"));
+    }
+
+    #[test]
     fn test_hebrew_word_info_noun_verb_headword_tie() {
         require_data!();
         let bible = Bible::open("data").unwrap();
