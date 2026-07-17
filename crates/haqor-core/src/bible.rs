@@ -3362,6 +3362,21 @@ mod tests {
     }
 
     #[test]
+    fn dream_uses_the_correct_verb_root() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+
+        let info = bible.hebrew_word_info("חָלַם").expect("dream should resolve");
+        assert_eq!(info.root, "חלם");
+        assert_eq!(info.gloss, "dream");
+        assert_eq!(info.form.as_deref(), Some("Qal"));
+        assert_eq!(info.tense.as_deref(), Some("Perfect"));
+        assert_eq!(info.person.as_deref(), Some("Third"));
+        assert_eq!(info.gender.as_deref(), Some("Masculine"));
+        assert_eq!(info.number.as_deref(), Some("Singular"));
+    }
+
+    #[test]
     fn verse_glosses_prefer_intext_override_to_lexicon_gloss() {
         require_data!();
         let bible = Bible::open("data").unwrap();
@@ -3715,6 +3730,10 @@ mod tests {
         );
         let (_, asher) = curated_gloss("אֲשֶׁר").expect("relative particle is curated");
         assert_eq!(asher, "that");
+        assert_eq!(
+            curated_gloss("חָלַם"),
+            Some(("חלם".to_string(), "dream".to_string()))
+        );
         // Matching ignores cantillation, so an accented surface still resolves.
         assert!(curated_gloss("אֲשֶׁ\u{0596}ר").is_some());
         // An ordinary word is left for the BDB lookups.
