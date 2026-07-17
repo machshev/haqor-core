@@ -1666,6 +1666,33 @@ impl Bible {
         .collect()
     }
 
+    /// Proper-name flags aligned with the lexical words in a verse.
+    ///
+    /// The chapter reader uses these to distinguish personal and place names
+    /// without making its own per-token word-info requests.  Resolve each
+    /// stored surface through the same path as the word-info sheet so attached
+    /// proclitics such as the `וְ` in `וְאָהֳלִיאָב` keep their name status.
+    pub fn verse_name_flags(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+    ) -> rusqlite::Result<Vec<bool>> {
+        let mut stmt = self.db.prepare(
+            "SELECT s.text FROM hebrewdb.verse_word vw \
+             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+             WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 \
+             ORDER BY vw.position",
+        )?;
+        stmt.query_map([book, chapter, verse], |r| r.get::<_, String>(0))?
+            .map(|word| {
+                Ok(self
+                    .hebrew_word_info(&word?)
+                    .is_some_and(|info| info.is_name))
+            })
+            .collect()
+    }
+
     pub fn get_chapter(
         &self,
         book: u8,
@@ -3420,6 +3447,36 @@ mod tests {
         let glosses = bible.verse_glosses(1, 1, 1).unwrap();
         assert_eq!(glosses[3], "←");
         assert_eq!(glosses[5], "and ←");
+    }
+
+    #[test]
+    fn verse_name_flags_keep_proclitic_proper_names() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+
+        // Ex 36:1 includes וְאָהֳלִיאָב. Its conjunction must not hide the
+        // underlying personal name from the chapter reader.
+        let words: Vec<String> = bible
+            .db
+            .prepare(
+                "SELECT s.text FROM hebrewdb.verse_word vw \
+                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+                 WHERE vw.book = 2 AND vw.chapter = 36 AND vw.verse = 1 \
+                 ORDER BY vw.position",
+            )
+            .unwrap()
+            .query_map([], |r| r.get(0))
+            .unwrap()
+            .collect::<rusqlite::Result<_>>()
+            .unwrap();
+        let flags = bible.verse_name_flags(2, 36, 1).unwrap();
+
+        assert_eq!(flags.len(), words.len());
+        let oholiab = words
+            .iter()
+            .position(|word| word == "וְאָהֳלִיאָב")
+            .expect("Ex 36:1 contains Oholiab");
+        assert!(flags[oholiab]);
     }
 
     #[test]
