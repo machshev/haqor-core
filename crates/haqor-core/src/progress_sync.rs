@@ -254,7 +254,9 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
                 ),
                 updated_epoch=excluded.updated_epoch,
                 deleted=excluded.deleted
-             WHERE excluded.updated_epoch > progress.issue_reports.updated_epoch;",
+             WHERE excluded.updated_epoch > progress.issue_reports.updated_epoch
+                OR (excluded.updated_epoch = progress.issue_reports.updated_epoch
+                    AND excluded.deleted > progress.issue_reports.deleted);",
         )?;
         db.execute_batch(
             "INSERT INTO progress.lexicon_entry_overrides(
@@ -406,14 +408,26 @@ pub fn has_issue_reports_file(path: &Path) -> rusqlite::Result<bool> {
     has_issue_reports(&db)
 }
 
+fn issue_report_revisions_file(path: &Path) -> rusqlite::Result<HashMap<String, i64>> {
+    let db = Connection::open_with_flags(path, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+    if !has_issue_reports(&db)? {
+        return Ok(HashMap::new());
+    }
+    let mut statement = db.prepare("SELECT id, updated_epoch FROM issue_reports")?;
+    statement
+        .query_map([], |row| Ok((row.get(0)?, row.get(1)?)))?
+        .collect()
+}
+
 /// Count uploaded issue reports that the server's merged response did not
 /// acknowledge at the same or a newer revision. Ordinary learning progress can
 /// still be merged locally before callers surface this compatibility failure.
 pub fn unmerged_issue_report_count(uploaded: &Path, merged: &Path) -> rusqlite::Result<usize> {
-    let merged_updates = read_issue_reports_file(merged)?
-        .into_iter()
-        .map(|report| (report.id, report.updated_epoch))
-        .collect::<HashMap<_, _>>();
+    // A newer server-side tombstone is an acknowledgement too. It means the
+    // report was resolved elsewhere, so the following merge should remove the
+    // stale active copy from this device rather than report a false data-loss
+    // error forever.
+    let merged_updates = issue_report_revisions_file(merged)?;
     Ok(read_issue_reports_file(uploaded)?
         .into_iter()
         .filter(|report| {
@@ -699,6 +713,46 @@ mod tests {
         merge_progress_files(&canonical, &incoming)?;
         assert!(read_issue_reports_file(&canonical)?.is_empty());
         let db = Connection::open(&canonical)?;
+        assert_eq!(
+            db.query_row(
+                "SELECT deleted FROM issue_reports WHERE id = 'phone-1'",
+                [],
+                |row| row.get::<_, i64>(0),
+            )?,
+            1
+        );
+
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn equal_revision_tombstone_wins_and_acknowledges_a_stale_active_report() -> anyhow::Result<()>
+    {
+        let canonical = temp_path("canonical-equal-issue-delete.db");
+        let incoming = temp_path("incoming-equal-issue-delete.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        for (path, deleted) in [(&canonical, 1), (&incoming, 0)] {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            db.execute(
+                "INSERT INTO progress.issue_reports(
+                     id, report_type, note, context_json, created_epoch, updated_epoch, deleted)
+                 VALUES ('phone-1', 'bug', 'already fixed', '{}', 100, 100, ?1)",
+                [deleted],
+            )?;
+        }
+
+        assert_eq!(unmerged_issue_report_count(&incoming, &canonical)?, 0);
+        merge_progress_files(&incoming, &canonical)?;
+        assert!(read_issue_reports_file(&incoming)?.is_empty());
+        let db = Connection::open(&incoming)?;
         assert_eq!(
             db.query_row(
                 "SELECT deleted FROM issue_reports WHERE id = 'phone-1'",
