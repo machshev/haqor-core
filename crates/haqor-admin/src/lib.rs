@@ -26,6 +26,15 @@ pub struct AppSyncSettings {
     pub token: String,
 }
 
+/// Summary of mobile lexicon corrections merged into the local overlay.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct PullGlossOverridesResult {
+    /// All valid corrections currently stored in synced progress data.
+    pub total: usize,
+    /// Corrections whose target overlay row was added by this merge.
+    pub new: usize,
+}
+
 fn xdg_data_home() -> Result<PathBuf> {
     if let Some(path) = std::env::var_os("XDG_DATA_HOME").filter(|path| !path.is_empty()) {
         return Ok(PathBuf::from(path));
@@ -104,7 +113,7 @@ pub fn read_app_sync_settings(path: impl AsRef<Path>) -> Result<AppSyncSettings>
 /// hand-maintained overlay. Tutor corrections update `word_glosses`, while
 /// word-info corrections update `lexicon_entries` root/header gloss rows and,
 /// when supplied, their matching `word_glosses` interlinear rows.
-pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
+pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<PullGlossOverridesResult> {
     let corrections = haqor_core::progress_sync::read_gloss_overrides_file(progress)
         .with_context(|| format!("reading tutor corrections from {}", progress.display()))?;
     let lexicon_corrections = haqor_core::progress_sync::read_lexicon_entry_overrides_file(
@@ -128,6 +137,14 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
     let word_gloss_rows = value["word_glosses"]
         .as_array_mut()
         .context("overlay `word_glosses` must be an array")?;
+    let existing_word_glosses: HashSet<_> = word_gloss_rows
+        .iter()
+        .filter_map(|row| row["surface"].as_str())
+        .collect();
+    let mut new = valid_corrections
+        .iter()
+        .filter(|correction| !existing_word_glosses.contains(correction.surface.as_str()))
+        .count();
     for correction in &valid_corrections {
         let row = word_gloss_rows
             .iter_mut()
@@ -174,6 +191,14 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
     let rows = value["lexicon_entries"]
         .as_array_mut()
         .context("overlay `lexicon_entries` must be an array")?;
+    let existing_lexicon_entries: HashSet<_> = rows
+        .iter()
+        .filter_map(|row| row["surface"].as_str())
+        .collect();
+    new += lexicon_corrections
+        .iter()
+        .filter(|correction| !existing_lexicon_entries.contains(correction.surface.as_str()))
+        .count();
     for correction in &lexicon_corrections {
         let row = rows
             .iter_mut()
@@ -192,7 +217,10 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
         object.insert("gloss".to_string(), Value::String(correction.gloss.clone()));
     }
     haqor_core::lexicon_overlay::save(overlay, &value)?;
-    Ok(valid_corrections.len() + lexicon_corrections.len())
+    Ok(PullGlossOverridesResult {
+        total: valid_corrections.len() + lexicon_corrections.len(),
+        new,
+    })
 }
 
 /// Fetch the canonical progress snapshot from an authenticated LAN sync server
@@ -201,7 +229,7 @@ pub fn pull_gloss_overrides_from_server(
     server_url: &str,
     token: &str,
     overlay: &Path,
-) -> Result<usize> {
+) -> Result<PullGlossOverridesResult> {
     with_remote_progress(server_url, token, "glosses", |progress| {
         pull_gloss_overrides(progress, overlay)
     })
@@ -1134,7 +1162,10 @@ mod tests {
         )?;
         drop(db);
 
-        assert_eq!(pull_gloss_overrides(&progress, &overlay)?, 3);
+        assert_eq!(
+            pull_gloss_overrides(&progress, &overlay)?,
+            PullGlossOverridesResult { total: 3, new: 2 }
+        );
         let value: Value = serde_json::from_str(&std::fs::read_to_string(&overlay)?)?;
         let rows = value["word_glosses"].as_array().unwrap();
         assert_eq!(rows[0]["gloss"], "thing");
@@ -1147,6 +1178,10 @@ mod tests {
         assert_eq!(entry["surface"], "דָּבָר");
         assert_eq!(entry["root"], "דבר");
         assert_eq!(entry["gloss"], "speech, word");
+        assert_eq!(
+            pull_gloss_overrides(&progress, &overlay)?,
+            PullGlossOverridesResult { total: 3, new: 0 }
+        );
         std::fs::remove_file(overlay)?;
         std::fs::remove_file(progress)?;
         Ok(())

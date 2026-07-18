@@ -131,15 +131,17 @@ fn main() -> Result<()> {
             token,
             overlay,
         } => {
-            let count = if let Some(progress) = progress {
+            let result = if let Some(progress) = progress {
                 haqor_admin::pull_gloss_overrides(&progress, &overlay)?
             } else {
                 let (server, token) = remote_settings(server, token)?;
                 haqor_admin::pull_gloss_overrides_from_server(&server, &token, &overlay)?
             };
             println!(
-                "Merged {count} mobile lexicon correction(s) into {}",
-                overlay.display()
+                "Merged {} mobile lexicon correction(s) into {} ({} new)",
+                result.total,
+                overlay.display(),
+                result.new
             );
             Ok(())
         }
