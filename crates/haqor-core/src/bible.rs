@@ -2164,6 +2164,27 @@ impl Bible {
         // stale row (אוּלַי stayed bridged to the river Ulai), and surfaces
         // with no row at all (עֲלֵי) would return no word info despite being
         // curated.
+        // Learner-facing surface glosses also make analysis-less function words
+        // resolvable. They intentionally do not carry a lexicon root (unlike
+        // `curated_gloss` below), but a word such as מִכֹּל still needs to open
+        // in word info rather than falling through as an unknown OT parse.
+        if let Some(curated) = crate::vocab_gloss::curated_gloss(&norm) {
+            return Some(HebrewWord {
+                word: norm,
+                root: String::new(),
+                gloss: curated.gloss.to_string(),
+                form: None,
+                tense: None,
+                person: None,
+                gender: None,
+                number: None,
+                state: None,
+                prefix: None,
+                vav_con: false,
+                obj_suffix: None,
+                is_name: false,
+            });
+        }
         if let Some((root, gloss)) = curated_gloss(&norm) {
             return Some(HebrewWord {
                 word: norm,
@@ -4232,6 +4253,22 @@ mod tests {
             .hebrew_word_info("בוֹ")
             .expect("בוֹ should resolve via the curated function-word gloss");
         assert_eq!(info.gloss, "in him, in it");
+
+        // A learner-curated gloss without a BDB-root override must itself make
+        // an analysis-less function word resolvable. The raw order here is the
+        // one emitted by Flutter (dagesh before holam); normalization must
+        // still reach the מִכֹּל overlay entry.
+        let info = bible
+            .hebrew_word_info("מִכֹּל")
+            .expect("מִכֹּל should resolve via the learner gloss");
+        assert_eq!(info.gloss, "from all, more than all");
+        assert!(info.root.is_empty());
+
+        let info = bible
+            .hebrew_word_info("מִמֶּנּוּ")
+            .expect("מִמֶּנּוּ should resolve via the learner gloss");
+        assert_eq!(info.gloss, "from him, from it");
+        assert!(info.root.is_empty());
     }
 
     #[test]
