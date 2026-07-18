@@ -129,6 +129,17 @@ pub struct HebrewWord {
     pub is_name: bool,
 }
 
+/// Reader-only metadata aligned with the lexical words in one verse.
+///
+/// The chapter reader normally needs both compact glosses and proper-name
+/// flags.  Returning them together lets the caller resolve each surface once
+/// instead of repeating the same database work for each display feature.
+#[derive(Debug, Default)]
+pub struct ReaderVerseMetadata {
+    pub glosses: Vec<String>,
+    pub names: Vec<bool>,
+}
+
 /// One entry of the frequency-ordered learner vocabulary: a distinct OT
 /// surface form with its exact occurrence count and a best-effort bridge to
 /// root, gloss and morphology.
@@ -1701,6 +1712,87 @@ impl Bible {
             .collect()
     }
 
+    /// Reader metadata for every verse in a chapter, keyed by verse number.
+    ///
+    /// `verse_word` already contains the exact `surface_id` for every token,
+    /// so resolve each distinct surface once through the indexed analysis
+    /// tables.  This avoids the repeated unindexed `surface.text` lookup in
+    /// [`Self::hebrew_word_info`] and shares the result between gloss and name
+    /// rendering.
+    pub fn chapter_reader_metadata(
+        &self,
+        book: u8,
+        chapter: u8,
+        include_glosses: bool,
+        include_names: bool,
+    ) -> rusqlite::Result<HashMap<u8, ReaderVerseMetadata>> {
+        if !include_glosses && !include_names {
+            return Ok(HashMap::new());
+        }
+
+        let mut stmt = self.db.prepare(
+            "SELECT vw.verse, vw.surface_id, s.text \
+             FROM hebrewdb.verse_word vw \
+             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+             WHERE vw.book = ?1 AND vw.chapter = ?2 \
+             ORDER BY vw.verse, vw.position",
+        )?;
+        let mut rows = stmt.query([book, chapter])?;
+        let mut metadata = HashMap::<u8, ReaderVerseMetadata>::new();
+        let mut info_cache = HashMap::<i64, Option<HebrewWord>>::new();
+
+        while let Some(row) = rows.next()? {
+            let verse: u8 = row.get(0)?;
+            let surface_id: i64 = row.get(1)?;
+            let word: String = row.get(2)?;
+            let verse_metadata = metadata.entry(verse).or_default();
+
+            let runtime_gloss = include_glosses
+                .then(|| self.runtime_lexicon_entry(&word))
+                .flatten();
+            let curated_gloss = include_glosses
+                .then(|| crate::vocab_gloss::curated_gloss(&word))
+                .flatten();
+            let needs_info = include_names
+                || (include_glosses && runtime_gloss.is_none() && curated_gloss.is_none());
+            if needs_info {
+                info_cache.entry(surface_id).or_insert_with(|| {
+                    self.hebrew_word_info_by_surface_id(surface_id, word.clone())
+                });
+            }
+            let info = info_cache.get(&surface_id).and_then(|info| info.as_ref());
+
+            if include_glosses {
+                let gloss = if let Some((_, gloss, reader_gloss)) = runtime_gloss {
+                    if reader_gloss.is_empty() {
+                        gloss
+                    } else {
+                        reader_gloss
+                    }
+                } else if let Some(curated) = curated_gloss {
+                    curated.gloss.to_string()
+                } else if let Some(info) = info {
+                    let gloss = inflected_gloss(info);
+                    if gloss.is_empty() {
+                        info.gloss.clone()
+                    } else {
+                        gloss
+                    }
+                } else {
+                    String::new()
+                };
+                verse_metadata.glosses.push(gloss);
+            }
+
+            if include_names {
+                verse_metadata
+                    .names
+                    .push(info.is_some_and(|info| info.is_name));
+            }
+        }
+        Ok(metadata)
+    }
+
     pub fn get_chapter(
         &self,
         book: u8,
@@ -1760,6 +1852,10 @@ impl Bible {
             )
             .optional()
             .ok()??;
+        self.hebrew_word_info_by_surface_id(surface_id, norm)
+    }
+
+    fn hebrew_word_info_by_surface_id(&self, surface_id: i64, norm: String) -> Option<HebrewWord> {
         let mut info = self.hebrew_word_by_surface_id(surface_id, norm)?;
         if let Some((root, gloss, _)) = self.lexicon_entry_override(&info.word).ok().flatten() {
             info.root = root;
@@ -3493,6 +3589,31 @@ mod tests {
             .position(|word| word == "וְאָהֳלִיאָב")
             .expect("Ex 36:1 contains Oholiab");
         assert!(flags[oholiab]);
+    }
+
+    #[test]
+    fn chapter_reader_metadata_matches_legacy_per_verse_lookups() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+
+        let metadata = bible.chapter_reader_metadata(1, 1, true, true).unwrap();
+        for verse in 1..=31 {
+            let metadata = metadata.get(&verse).expect("Genesis 1 verse metadata");
+            assert_eq!(
+                metadata.glosses,
+                bible.verse_glosses(1, 1, verse).unwrap(),
+                "glosses diverged at Genesis 1:{verse}",
+            );
+            assert_eq!(
+                metadata.names,
+                bible.verse_name_flags(1, 1, verse).unwrap(),
+                "name flags diverged at Genesis 1:{verse}",
+            );
+        }
+        assert!(bible
+            .chapter_reader_metadata(1, 1, false, false)
+            .unwrap()
+            .is_empty());
     }
 
     #[test]

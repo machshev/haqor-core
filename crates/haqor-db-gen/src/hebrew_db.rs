@@ -333,6 +333,7 @@ fn create_schema(db: &Connection) -> Result<()> {
 fn create_indexes_and_views(db: &Connection) -> Result<()> {
     db.execute_batch(
         "CREATE INDEX idx_occurrences_surface ON occurrences(surface_id);
+         CREATE UNIQUE INDEX idx_surface_text ON surface(text);
          CREATE INDEX idx_analyses_surface ON analyses(surface_id);
          CREATE INDEX idx_analyses_root ON analyses(root);
          CREATE INDEX idx_noun_analyses_surface ON noun_analyses(surface_id);
