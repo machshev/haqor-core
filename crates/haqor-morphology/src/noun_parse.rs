@@ -233,11 +233,32 @@ impl NounInventory {
             // forte removed. The definite article — written (הַ) or assimilated
             // into the preposition (בַּ = בְּ+הַ) — doubles the following consonant,
             // so the bare lexical form carries no such dagesh (הַיּוֹם→יוֹם).
-            let mut rest = seq[strip..].to_vec();
+            let rest = seq[strip..].to_vec();
             let mut targets = vec![norm_key(&hebrew::render(&rest))];
             if strip > 0 && rest.first().is_some_and(|c| c.dagesh) {
-                rest[0].dagesh = false;
-                targets.push(norm_key(&hebrew::render(&rest)));
+                let mut without_forte = rest.clone();
+                without_forte[0].dagesh = false;
+                targets.push(norm_key(&hebrew::render(&without_forte)));
+            }
+            // In short closed monosyllables, the definite article can lengthen
+            // the stem's patah to qamats while its dagesh forte is written on a
+            // begadkefat letter: הַגָּן from גַּן, for example.  Try that
+            // conservative sandhi reversal only when neither literal target
+            // exists in the noun inventory, preserving exact lexical matches
+            // for ordinary article-prefixed nouns.
+            let has_direct_match = targets.iter().any(|target| self.forms.contains_key(target));
+            if !has_direct_match
+                && strip == 1
+                && seq[0].letter == letter::HE
+                && seq[0].vowel == Some(Vowel::Patah)
+                && rest.len() == 2
+                && rest[0].dagesh
+                && rest[0].vowel == Some(Vowel::Qamats)
+                && rest[1].vowel.is_none()
+            {
+                let mut shortened = rest;
+                shortened[0].vowel = Some(Vowel::Patah);
+                targets.push(norm_key(&hebrew::render(&shortened)));
             }
             for target in targets {
                 let Some(entries) = self.forms.get(&target) else {
@@ -300,6 +321,15 @@ mod tests {
         let matches = inventory.parse("עֲצֵי");
         assert!(matches.iter().any(|m| {
             m.stem == "עֵץ" && m.label == "Plural Construct" && m.prefix.is_empty()
+        }));
+    }
+
+    #[test]
+    fn article_lengthened_short_noun_recovers_its_lemma() {
+        let stems = vec![NounStem::masculine("גַּן")];
+        let matches = parse_noun_word("הַגָּן", &stems);
+        assert!(matches.iter().any(|m| {
+            m.stem == "גַּן" && m.label == "Singular Absolute" && m.prefix == "הַ"
         }));
     }
 

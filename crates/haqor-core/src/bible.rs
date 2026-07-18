@@ -3958,6 +3958,19 @@ mod tests {
             )
             .unwrap();
         assert_eq!(verb_rows, 0);
+
+        // הַגָּן "the garden" — the article lengthens the lemma's patah to
+        // qamats, so the gold noun inventory records that altered base.  It
+        // must not fall through to the unrelated verb גונ "tinge".
+        let garden = bible
+            .hebrew_word_info("הַגָּן")
+            .expect("article-prefixed garden should resolve");
+        assert_eq!(garden.root, "גננ");
+        assert_eq!(garden.gloss, "enclosure; garden");
+        assert!(garden.form.is_none());
+        assert!(garden.tense.is_none());
+        assert_eq!(garden.prefix.as_deref(), Some("הַ"));
+        assert_eq!(inflected_gloss(&garden), "the enclosure; garden");
     }
 
     #[test]
