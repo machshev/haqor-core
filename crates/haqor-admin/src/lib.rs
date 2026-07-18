@@ -111,11 +111,24 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
         progress,
     )
     .with_context(|| format!("reading word-info corrections from {}", progress.display()))?;
+    let valid_corrections: Vec<_> = corrections
+        .iter()
+        .filter(|correction| {
+            let valid = !correction.surface.trim().is_empty() && !correction.gloss.trim().is_empty();
+            if !valid {
+                eprintln!(
+                    "Skipping invalid synced tutor gloss for surface {}: surface and gloss must not be empty",
+                    correction.surface
+                );
+            }
+            valid
+        })
+        .collect();
     let mut value = haqor_core::lexicon_overlay::load(overlay)?;
     let word_gloss_rows = value["word_glosses"]
         .as_array_mut()
         .context("overlay `word_glosses` must be an array")?;
-    for correction in &corrections {
+    for correction in &valid_corrections {
         let row = word_gloss_rows
             .iter_mut()
             .find(|row| row["surface"].as_str() == Some(&correction.surface));
@@ -179,7 +192,7 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<usize> {
         object.insert("gloss".to_string(), Value::String(correction.gloss.clone()));
     }
     haqor_core::lexicon_overlay::save(overlay, &value)?;
-    Ok(corrections.len() + lexicon_corrections.len())
+    Ok(valid_corrections.len() + lexicon_corrections.len())
 }
 
 /// Fetch the canonical progress snapshot from an authenticated LAN sync server
@@ -1009,12 +1022,13 @@ mod tests {
                 note TEXT NOT NULL DEFAULT '', updated_epoch INTEGER NOT NULL);
              INSERT INTO gloss_overrides VALUES ('דָּבָר', 'matter', 'In this context.', 1);
              INSERT INTO gloss_overrides VALUES ('טוֹב', 'good', '', 2);
+             INSERT INTO gloss_overrides VALUES ('שָׁבוּר', '', '', 3);
              CREATE TABLE lexicon_entry_overrides(
                 surface TEXT PRIMARY KEY, root TEXT NOT NULL DEFAULT '',
                 gloss TEXT NOT NULL, reader_gloss TEXT NOT NULL DEFAULT '',
                 updated_epoch INTEGER NOT NULL);
              INSERT INTO lexicon_entry_overrides
-                VALUES ('דָּבָר', 'דבר', 'speech, word', 'thing', 3);",
+                VALUES ('דָּבָר', 'דבר', 'speech, word', 'thing', 4);",
         )?;
         drop(db);
 
@@ -1026,6 +1040,7 @@ mod tests {
         assert_eq!(rows[0]["is_name"], true);
         assert_eq!(rows[1]["surface"], "טוֹב");
         assert!(rows[1].get("note").is_none());
+        assert!(rows.iter().all(|row| row["surface"] != "שָׁבוּר"));
         let entry = &value["lexicon_entries"][0];
         assert_eq!(entry["surface"], "דָּבָר");
         assert_eq!(entry["root"], "דבר");
