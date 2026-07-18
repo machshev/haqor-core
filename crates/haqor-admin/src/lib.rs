@@ -207,6 +207,108 @@ pub fn pull_gloss_overrides_from_server(
     })
 }
 
+/// Mark malformed blank tutor-gloss rows deleted in the canonical sync database.
+///
+/// The returned server snapshot is checked before reporting success, so an older
+/// server that fails to retain tombstones cannot silently leave the bad rows live.
+pub fn clear_invalid_gloss_overrides_from_server(server_url: &str, token: &str) -> Result<usize> {
+    if token.trim().is_empty() {
+        bail!("--token must not be empty");
+    }
+    let endpoint = parse_sync_endpoint(server_url)?;
+    let snapshot = download_remote_snapshot(&endpoint, token, "synced tutor glosses")?;
+    if !haqor_core::progress_sync::is_sqlite_snapshot(&snapshot) {
+        bail!("sync server returned an invalid progress snapshot");
+    }
+    let nonce = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
+    let temporary = std::env::temp_dir().join(format!(
+        "haqor-admin-clear-invalid-glosses-{}-{nonce}.db",
+        std::process::id()
+    ));
+    std::fs::write(&temporary, snapshot)
+        .with_context(|| format!("writing temporary sync snapshot {}", temporary.display()))?;
+    let result = (|| {
+        let count = clear_invalid_gloss_overrides_file(&temporary)?;
+        if count == 0 {
+            return Ok(0);
+        }
+        eprintln!("Clearing {count} invalid synced tutor gloss override(s) on the server");
+        let merged = post_sync_snapshot(&endpoint, token, &std::fs::read(&temporary)?)?;
+        if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
+            bail!("sync server returned an invalid progress snapshot");
+        }
+        std::fs::write(&temporary, merged)?;
+        if invalid_gloss_override_count(&temporary)? != 0 {
+            bail!(
+                "the sync server did not retain invalid-gloss tombstones; update and restart haqor-sync-server before retrying"
+            );
+        }
+        Ok(count)
+    })();
+    let _ = std::fs::remove_file(&temporary);
+    result
+}
+
+fn clear_invalid_gloss_overrides_file(progress: &Path) -> Result<usize> {
+    let db = Connection::open(progress)
+        .with_context(|| format!("opening synced progress database {}", progress.display()))?;
+    let exists: bool = db.query_row(
+        "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type='table' AND name='gloss_overrides')",
+        [],
+        |row| row.get(0),
+    )?;
+    if !exists {
+        return Ok(0);
+    }
+    let has_deleted: bool = db
+        .prepare("PRAGMA table_info(gloss_overrides)")?
+        .query_map([], |row| row.get::<_, String>(1))?
+        .collect::<rusqlite::Result<Vec<_>>>()?
+        .iter()
+        .any(|column| column == "deleted");
+    if !has_deleted {
+        db.execute_batch(
+            "ALTER TABLE gloss_overrides ADD COLUMN deleted INTEGER NOT NULL DEFAULT 0",
+        )?;
+    }
+    let next_epoch: i64 = db.query_row(
+        "SELECT MAX(COALESCE(MAX(updated_epoch) + 1, 0), ?1) FROM gloss_overrides",
+        [SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64],
+        |row| row.get(0),
+    )?;
+    Ok(db.execute(
+        "UPDATE gloss_overrides SET deleted = 1, updated_epoch = ?1
+         WHERE deleted = 0 AND (TRIM(surface) = '' OR TRIM(gloss) = '')",
+        [next_epoch],
+    )?)
+}
+
+fn invalid_gloss_override_count(progress: &Path) -> Result<usize> {
+    let db = Connection::open_with_flags(progress, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+    let exists: bool = db.query_row(
+        "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type='table' AND name='gloss_overrides')",
+        [],
+        |row| row.get(0),
+    )?;
+    if !exists {
+        return Ok(0);
+    }
+    let has_deleted: bool = db
+        .prepare("PRAGMA table_info(gloss_overrides)")?
+        .query_map([], |row| row.get::<_, String>(1))?
+        .collect::<rusqlite::Result<Vec<_>>>()?
+        .iter()
+        .any(|column| column == "deleted");
+    let active_filter = if has_deleted { "deleted = 0 AND " } else { "" };
+    Ok(db.query_row(
+        &format!(
+            "SELECT COUNT(*) FROM gloss_overrides WHERE {active_filter}(TRIM(surface) = '' OR TRIM(gloss) = '')"
+        ),
+        [],
+        |row| row.get(0),
+    )?)
+}
+
 /// Export the synchronised mobile bug/idea log as deterministic, pretty JSON.
 pub fn pull_issue_reports(progress: &Path, output: &Path) -> Result<usize> {
     if !haqor_core::progress_sync::has_issue_reports_file(progress)
@@ -1046,6 +1148,49 @@ mod tests {
         assert_eq!(entry["root"], "דבר");
         assert_eq!(entry["gloss"], "speech, word");
         std::fs::remove_file(overlay)?;
+        std::fs::remove_file(progress)?;
+        Ok(())
+    }
+
+    #[test]
+    fn clear_invalid_glosses_marks_only_blank_rows_deleted() -> Result<()> {
+        let progress = std::env::temp_dir().join(format!(
+            "haqor-admin-clear-invalid-glosses-{}.db",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_file(&progress);
+        let db = Connection::open(&progress)?;
+        db.execute_batch(
+            "CREATE TABLE gloss_overrides(
+                surface TEXT PRIMARY KEY, gloss TEXT NOT NULL, note TEXT NOT NULL DEFAULT '',
+                updated_epoch INTEGER NOT NULL
+             );
+             INSERT INTO gloss_overrides VALUES ('טוֹב', 'good', '', 1);
+             INSERT INTO gloss_overrides VALUES ('אֵל', '', '', 2);
+             INSERT INTO gloss_overrides VALUES ('', 'blank surface', '', 3);",
+        )?;
+        drop(db);
+
+        assert_eq!(invalid_gloss_override_count(&progress)?, 2);
+        assert_eq!(clear_invalid_gloss_overrides_file(&progress)?, 2);
+        assert_eq!(invalid_gloss_override_count(&progress)?, 0);
+        let db = Connection::open(&progress)?;
+        assert_eq!(
+            db.query_row(
+                "SELECT deleted FROM gloss_overrides WHERE surface = 'טוֹב'",
+                [],
+                |row| row.get::<_, i64>(0),
+            )?,
+            0
+        );
+        assert_eq!(
+            db.query_row(
+                "SELECT COUNT(*) FROM gloss_overrides WHERE deleted = 1",
+                [],
+                |row| { row.get::<_, i64>(0) }
+            )?,
+            2
+        );
         std::fs::remove_file(progress)?;
         Ok(())
     }

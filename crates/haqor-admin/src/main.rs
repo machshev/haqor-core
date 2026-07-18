@@ -52,6 +52,16 @@ enum Command {
         #[arg(long, default_value = "data/lexicon_overrides.json")]
         overlay: PathBuf,
     },
+    /// Remove malformed blank tutor-gloss rows from the canonical sync server.
+    ClearInvalidGlosses {
+        /// Remote sync-server URL. Defaults to the Haqor app's saved setting.
+        #[arg(long)]
+        server: Option<String>,
+
+        /// Sync token used with --server. Defaults to the Haqor app's saved token.
+        #[arg(long)]
+        token: Option<String>,
+    },
     /// Download mobile bug reports and ideas from the synchronised progress data.
     PullIssues {
         /// Canonical learner-progress database held by haqor-sync-server. This is
@@ -131,6 +141,12 @@ fn main() -> Result<()> {
                 "Merged {count} mobile lexicon correction(s) into {}",
                 overlay.display()
             );
+            Ok(())
+        }
+        Command::ClearInvalidGlosses { server, token } => {
+            let (server, token) = remote_settings(server, token)?;
+            let count = haqor_admin::clear_invalid_gloss_overrides_from_server(&server, &token)?;
+            println!("Cleared {count} invalid synced tutor gloss override(s).");
             Ok(())
         }
         Command::PullIssues {
