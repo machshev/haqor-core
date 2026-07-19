@@ -2191,15 +2191,15 @@ impl Bible {
         // stale row (אוּלַי stayed bridged to the river Ulai), and surfaces
         // with no row at all (עֲלֵי) would return no word info despite being
         // curated.
-        // Learner-facing surface glosses also make analysis-less function words
-        // resolvable. They intentionally do not carry a lexicon root (unlike
-        // `curated_gloss` below), but a word such as מִכֹּל still needs to open
-        // in word info rather than falling through as an unknown OT parse.
-        if let Some(curated) = crate::vocab_gloss::curated_gloss(&norm) {
+        // A curated lexicon entry carries a root (so the word links into its
+        // BDB root tree); it must be consulted before the rootless learner
+        // gloss below, or a word curated in both (לִקְרַאת) loses its root —
+        // which the tutor's family gating relies on.
+        if let Some((root, gloss)) = curated_gloss(&norm) {
             return Some(HebrewWord {
                 word: norm,
-                root: String::new(),
-                gloss: curated.gloss.to_string(),
+                root,
+                gloss,
                 form: None,
                 tense: None,
                 person: None,
@@ -2212,11 +2212,15 @@ impl Bible {
                 is_name: false,
             });
         }
-        if let Some((root, gloss)) = curated_gloss(&norm) {
+        // Learner-facing surface glosses also make analysis-less function words
+        // resolvable. They intentionally do not carry a lexicon root (unlike
+        // `curated_gloss` above), but a word such as מִכֹּל still needs to open
+        // in word info rather than falling through as an unknown OT parse.
+        if let Some(curated) = crate::vocab_gloss::curated_gloss(&norm) {
             return Some(HebrewWord {
                 word: norm,
-                root,
-                gloss,
+                root: String::new(),
+                gloss: curated.gloss.to_string(),
                 form: None,
                 tense: None,
                 person: None,
