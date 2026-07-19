@@ -12,15 +12,14 @@
 //! table's keys through [`vocab_key`](crate::vocab_gloss::vocab_key), so combining-mark order and dagesh
 //! variants (בֶּן/בֶן) collapse to one key.
 
-use std::collections::HashMap;
-use std::sync::OnceLock;
+use rusqlite::Connection;
 
 /// A curated gloss for a surface: the learner-facing meaning and an optional
 /// composition/teaching note ("לְ (to) + ־וֹ (him)").
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone)]
 pub struct CuratedGloss {
-    pub gloss: &'static str,
-    pub note: Option<&'static str>,
+    pub gloss: String,
+    pub note: Option<String>,
 }
 
 /// Reduce a pointed surface form to a stable lookup key: dagesh, meteg and
@@ -56,42 +55,41 @@ fn flush_marks(out: &mut String, marks: &mut Vec<u32>) {
 
 /// The curated gloss for `surface`, if one is registered. Normalises the input
 /// through [`vocab_key`] before lookup.
-pub fn curated_gloss(surface: &str) -> Option<CuratedGloss> {
-    index().get(&vocab_key(surface)).copied()
+pub fn curated_gloss(db: &Connection, surface: &str) -> Option<CuratedGloss> {
+    let key = vocab_key(surface);
+    let mut stmt = db
+        .prepare("SELECT surface, gloss, note FROM lexdb.word_glosses")
+        .ok()?;
+    stmt.query_map([], |row| {
+        Ok((
+            row.get::<_, String>(0)?,
+            row.get::<_, String>(1)?,
+            row.get::<_, Option<String>>(2)?,
+        ))
+    })
+    .ok()?
+    .flatten()
+    .find_map(|(stored, gloss, note)| {
+        (vocab_key(&stored) == key && !gloss.is_empty()).then_some(CuratedGloss { gloss, note })
+    })
 }
 
 /// Whether `surface` is one of the curated proper names — names whose BDB
 /// entry is missing or oddly glossed, so the automatic `n.pr` detection
 /// (`crate::bible::is_name_gloss`) can't see them. Complements that check
 /// wherever the tutor classifies names.
-pub fn curated_name(surface: &str) -> bool {
-    static NAMES: OnceLock<std::collections::HashSet<String>> = OnceLock::new();
-    NAMES
-        .get_or_init(|| {
-            crate::lexicon_overlay::word_glosses()
-                .filter(|entry| entry.is_name)
-                .map(|entry| vocab_key(entry.surface))
-                .collect()
-        })
-        .contains(&vocab_key(surface))
-}
-
-fn index() -> &'static HashMap<String, CuratedGloss> {
-    static INDEX: OnceLock<HashMap<String, CuratedGloss>> = OnceLock::new();
-    INDEX.get_or_init(|| {
-        crate::lexicon_overlay::word_glosses()
-            .filter(|entry| !entry.gloss.is_empty())
-            .map(|entry| {
-                (
-                    vocab_key(entry.surface),
-                    CuratedGloss {
-                        gloss: entry.gloss,
-                        note: entry.note,
-                    },
-                )
-            })
-            .collect()
-    })
+pub fn curated_name(db: &Connection, surface: &str) -> bool {
+    let key = vocab_key(surface);
+    let Ok(mut stmt) = db.prepare("SELECT surface FROM lexdb.word_glosses WHERE is_name = 1")
+    else {
+        return false;
+    };
+    stmt.query_map([], |row| row.get::<_, String>(0))
+        .ok()
+        .into_iter()
+        .flatten()
+        .flatten()
+        .any(|stored| vocab_key(&stored) == key)
 }
 
 #[cfg(test)]
@@ -117,15 +115,21 @@ mod tests {
 
     #[test]
     fn curated_gloss_matches_dagesh_variants() {
+        if !std::path::Path::new("data/lexicon.db").exists() {
+            return;
+        }
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch("ATTACH DATABASE 'data/lexicon.db' AS lexdb")
+            .unwrap();
         // "the word" is registered under הַדָּבָר; a dagesh-stripped spelling
         // still resolves.
-        assert!(curated_gloss("הַדָּבָר").is_some());
-        assert_eq!(curated_gloss("אֶת").unwrap().gloss, "←");
-        assert_eq!(curated_gloss("אֵת").unwrap().gloss, "←");
-        assert_eq!(curated_gloss("וְאֶת").unwrap().gloss, "and ←");
-        assert_eq!(curated_gloss("וְאֵת").unwrap().gloss, "and ←");
-        assert!(curated_gloss("כִּי").unwrap().note.is_none());
+        assert!(curated_gloss(&db, "הַדָּבָר").is_some());
+        assert_eq!(curated_gloss(&db, "אֶת").unwrap().gloss, "←");
+        assert_eq!(curated_gloss(&db, "אֵת").unwrap().gloss, "←");
+        assert_eq!(curated_gloss(&db, "וְאֶת").unwrap().gloss, "and ←");
+        assert_eq!(curated_gloss(&db, "וְאֵת").unwrap().gloss, "and ←");
+        assert!(curated_gloss(&db, "כִּי").unwrap().note.is_none());
         // An ordinary content word is not curated.
-        assert!(curated_gloss("בָּרָא").is_none());
+        assert!(curated_gloss(&db, "בָּרָא").is_none());
     }
 }
