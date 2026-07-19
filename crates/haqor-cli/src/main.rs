@@ -247,6 +247,26 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/lexicon.db")]
         output: PathBuf,
     },
+    /// Exhaustive lexicon-coverage audit: run every distinct surface form in
+    /// the corpus through the exact lookup the app's word-info sheet performs
+    /// (word info + BDB bridge) and list the surfaces that end up with no
+    /// lexicon entry — either no word info at all ("Not found in database")
+    /// or word info whose Lexicon tab would be empty.
+    LexiconScan {
+        /// Data directory holding bible.db, sedra.db, hebrew.db, lexicon.db.
+        #[arg(short, long, default_value = "data")]
+        data_dir: PathBuf,
+        /// Which subset to report: hebrew (default), aramaic, or all.
+        #[arg(short = 'L', long, default_value = "hebrew")]
+        language: String,
+        /// Print only the N most frequent gap surfaces (0 = all).
+        #[arg(short = 'n', long, default_value_t = 0)]
+        limit: usize,
+        /// Write the full gap list as tab-separated values to this file (the
+        /// stdout listing stays capped by -n).
+        #[arg(long)]
+        tsv: Option<PathBuf>,
+    },
     /// Accuracy harness: score the reverse-parser against OSHB (morphhb) gold
     /// tags. Runs our own parser on OSHB's surface text and compares the derived
     /// analysis to the gold morphology — the lexicon is the scorer, not the
@@ -420,6 +440,14 @@ fn main() -> Result<()> {
                 let total = haqor_db_gen::generate_lexicon(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
             }
+            DbCommands::LexiconScan {
+                data_dir,
+                language,
+                limit,
+                tsv,
+            } => {
+                lexicon_scan(&data_dir, &language, limit, tsv.as_deref())?;
+            }
             DbCommands::ParseEval {
                 morphhb,
                 bible_db,
@@ -443,6 +471,92 @@ fn main() -> Result<()> {
                 }
             }
         },
+    }
+    Ok(())
+}
+
+/// Run the word-info lexicon audit over the whole corpus and print a report:
+/// summary counts, then the gap surfaces in descending occurrence order with
+/// their first-occurrence reference so each can be inspected in context.
+fn lexicon_scan(
+    data_dir: &std::path::Path,
+    language: &str,
+    limit: usize,
+    tsv: Option<&std::path::Path>,
+) -> Result<()> {
+    let bible = Bible::open(data_dir)
+        .with_context(|| format!("opening databases in {}", data_dir.display()))?;
+    let all = bible.lexicon_coverage_gaps()?;
+    let gaps: Vec<_> = all
+        .into_iter()
+        .filter(|g| match language {
+            "aramaic" => g.aramaic,
+            "all" => true,
+            _ => !g.aramaic,
+        })
+        .collect();
+
+    let unresolved = gaps.iter().filter(|g| g.unresolved).count();
+    let no_entries = gaps.len() - unresolved;
+    let tokens: u64 = gaps.iter().map(|g| u64::from(g.occurrences)).sum();
+    println!(
+        "{} gap surfaces ({language}) covering {tokens} tokens: \
+         {unresolved} with no word info at all, {no_entries} with word info but an empty Lexicon tab",
+        gaps.len(),
+    );
+    println!();
+
+    if let Some(path) = tsv {
+        let mut out = String::from("surface\toccurrences\tkind\troot\tgloss\treference\n");
+        for g in &gaps {
+            out.push_str(&format!(
+                "{}\t{}\t{}\t{}\t{}\t{} {}:{}\n",
+                g.surface,
+                g.occurrences,
+                if g.unresolved {
+                    "unresolved"
+                } else {
+                    "no-bdb-entry"
+                },
+                g.root,
+                g.gloss,
+                haqor_db_gen::book_name(g.book),
+                g.chapter,
+                g.verse,
+            ));
+        }
+        std::fs::write(path, out).with_context(|| format!("writing {}", path.display()))?;
+        println!("Full list written to {}", path.display());
+        println!();
+    }
+
+    let shown = if limit == 0 {
+        gaps.len()
+    } else {
+        limit.min(gaps.len())
+    };
+    for g in gaps.iter().take(shown) {
+        println!(
+            "{:>6}x  {}  [{}]  root={}  gloss={}  ({} {}:{})",
+            g.occurrences,
+            g.surface,
+            if g.unresolved {
+                "unresolved"
+            } else {
+                "no-bdb-entry"
+            },
+            if g.root.is_empty() { "-" } else { &g.root },
+            if g.gloss.is_empty() { "-" } else { &g.gloss },
+            haqor_db_gen::book_name(g.book),
+            g.chapter,
+            g.verse,
+        );
+    }
+    if shown < gaps.len() {
+        println!(
+            "... and {} more (raise -n or use --tsv)",
+            gaps.len() - shown
+        );
     }
     Ok(())
 }

@@ -161,6 +161,33 @@ pub struct VocabEntry {
     pub morph: String,
 }
 
+/// One distinct OT surface form the word-info panel cannot bridge to a BDB
+/// lexicon entry, found by [`Bible::lexicon_coverage_gaps`]. Either the word
+/// resolves to no analysis at all (`unresolved`, the app's "Not found in
+/// database" screen) or it resolves — often to a curated gloss — but the BDB
+/// bridge that fills the panel's Lexicon tab returns nothing.
+#[derive(Debug)]
+pub struct LexiconGap {
+    /// Pointed surface form as stored in `hebrewdb.surface.text`.
+    pub surface: String,
+    /// Exact number of OT occurrences of this surface form.
+    pub occurrences: u32,
+    /// True for surfaces inside the Biblical Aramaic sections.
+    pub aramaic: bool,
+    /// True when [`Bible::hebrew_word_info`] itself returns `None`; false when
+    /// word info exists but yields zero BDB entries.
+    pub unresolved: bool,
+    /// Resolved gloss when word info exists (curated function words keep their
+    /// gloss even without a lexicon entry). Empty when `unresolved`.
+    pub gloss: String,
+    /// Resolved consonantal root (empty for function words / unresolved).
+    pub root: String,
+    /// First occurrence, for jumping straight to the word in context.
+    pub book: u8,
+    pub chapter: u8,
+    pub verse: u8,
+}
+
 #[derive(Debug)]
 pub struct SedraEntry {
     pub lexeme: String,
@@ -2509,6 +2536,72 @@ impl Bible {
             .collect())
     }
 
+    /// Exhaustive lexicon-coverage audit: walk every distinct surface form in
+    /// the corpus through exactly the lookup the app's word-info sheet performs
+    /// — [`Bible::hebrew_word_info`] followed by the BDB bridge
+    /// ([`Bible::hebrew_bdb_by_root`] for rooted words,
+    /// [`Bible::hebrew_bdb_for_surface`] for rootless function words) — and
+    /// return the surfaces where that path produces no lexicon entry.
+    /// Descending occurrence order, so the most-read gaps come first.
+    pub fn lexicon_coverage_gaps(&self) -> rusqlite::Result<Vec<LexiconGap>> {
+        let mut stmt = self.db.prepare(
+            "SELECT s.surface_id, s.text, s.occurrences, \
+                    COALESCE(s.language, '') = 'aramaic', \
+                    o.book, o.chapter, o.verse \
+             FROM hebrewdb.surface s \
+             JOIN hebrewdb.occurrences o ON o.rowid = \
+                (SELECT o2.rowid FROM hebrewdb.occurrences o2 \
+                 WHERE o2.surface_id = s.surface_id \
+                 ORDER BY o2.book, o2.chapter, o2.verse LIMIT 1) \
+             ORDER BY s.occurrences DESC, s.surface_id ASC",
+        )?;
+        let surfaces = stmt
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, i64>(0)?,
+                    row.get::<_, String>(1)?,
+                    row.get::<_, u32>(2)?,
+                    row.get::<_, i64>(3)? != 0,
+                    row.get::<_, u8>(4)?,
+                    row.get::<_, u8>(5)?,
+                    row.get::<_, u8>(6)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+
+        let mut gaps = Vec::new();
+        for (surface_id, text, occurrences, aramaic, book, chapter, verse) in surfaces {
+            let gap = |unresolved, gloss, root| LexiconGap {
+                surface: text.clone(),
+                occurrences,
+                aramaic,
+                unresolved,
+                gloss,
+                root,
+                book,
+                chapter,
+                verse,
+            };
+            match self.hebrew_word_info_by_surface_id(surface_id, text.clone()) {
+                None => gaps.push(gap(true, String::new(), String::new())),
+                Some(info) => {
+                    let entries = if info.root.is_empty() {
+                        self.hebrew_bdb_for_surface(
+                            &info.word,
+                            info.prefix.as_deref().unwrap_or(""),
+                        )?
+                    } else {
+                        self.hebrew_bdb_by_root(&info.root)?
+                    };
+                    if entries.is_empty() {
+                        gaps.push(gap(false, info.gloss, info.root));
+                    }
+                }
+            }
+        }
+        Ok(gaps)
+    }
+
     /// The single BDB lexeme with this entry id (`bdb.bdb_id`), or `None` if no
     /// row matches. Follows a Lexicon cross-reference: a `<w src>` span carries
     /// the target entry id, and the resolved entry's `root` drives the
@@ -3631,10 +3724,12 @@ mod tests {
                 "name flags diverged at Genesis 1:{verse}",
             );
         }
-        assert!(bible
-            .chapter_reader_metadata(1, 1, false, false)
-            .unwrap()
-            .is_empty());
+        assert!(
+            bible
+                .chapter_reader_metadata(1, 1, false, false)
+                .unwrap()
+                .is_empty()
+        );
     }
 
     #[test]

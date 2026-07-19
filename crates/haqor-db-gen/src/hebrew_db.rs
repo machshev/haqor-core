@@ -117,6 +117,56 @@ pub fn book_number(token: &str) -> Option<u8> {
         .map(|(n, _)| *n)
 }
 
+/// Human-readable name of a Haqor (Tanakh-order) book number, for report
+/// output. The inverse of [`book_number`] (which accepts these names).
+pub fn book_name(n: u8) -> &'static str {
+    const NAMES: [&str; 39] = [
+        "Genesis",
+        "Exodus",
+        "Leviticus",
+        "Numbers",
+        "Deuteronomy",
+        "Joshua",
+        "Judges",
+        "1Samuel",
+        "2Samuel",
+        "1Kings",
+        "2Kings",
+        "Isaiah",
+        "Jeremiah",
+        "Ezekiel",
+        "Hosea",
+        "Joel",
+        "Amos",
+        "Obadiah",
+        "Jonah",
+        "Micah",
+        "Nahum",
+        "Habakkuk",
+        "Zephaniah",
+        "Haggai",
+        "Zechariah",
+        "Malachi",
+        "Psalms",
+        "Proverbs",
+        "Job",
+        "Song",
+        "Ruth",
+        "Lamentations",
+        "Ecclesiastes",
+        "Esther",
+        "Daniel",
+        "Ezra",
+        "Nehemiah",
+        "1Chronicles",
+        "2Chronicles",
+    ];
+    NAMES
+        .get(usize::from(n).wrapping_sub(1))
+        .copied()
+        .unwrap_or("?")
+}
+
 /// Parse a passage filter like `Gen` or `Gen-Deut` into an inclusive Haqor
 /// book-number range. A single book yields `(n, n)`.
 pub fn parse_passage(s: &str) -> Result<(u8, u8)> {
