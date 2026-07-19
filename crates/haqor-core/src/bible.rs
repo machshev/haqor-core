@@ -589,22 +589,29 @@ fn strip_accents(word: &str) -> String {
 /// Curated `(root, gloss)` for a surface, ignoring cantillation and combining
 /// order — the override consulted ahead of the BDB lookups (see
 /// the checked-in lexical overlay).
-fn curated_gloss(surface: &str) -> Option<(String, String)> {
+fn curated_gloss(db: &Connection, surface: &str) -> Option<(String, String)> {
     let canonical = normalize_hebrew_combining(&strip_accents(surface));
-    crate::lexicon_overlay::lexicon_entries().find_map(|entry| {
-        (normalize_hebrew_combining(&strip_accents(entry.surface)) == canonical)
-            .then(|| (entry.root.to_string(), entry.gloss.to_string()))
+    let mut stmt = db
+        .prepare("SELECT surface, root, gloss FROM lexdb.lexicon_overrides")
+        .ok()?;
+    stmt.query_map([], |row| {
+        Ok((row.get::<_, String>(0)?, row.get(1)?, row.get(2)?))
+    })
+    .ok()?
+    .flatten()
+    .find_map(|(stored, root, gloss)| {
+        (normalize_hebrew_combining(&strip_accents(&stored)) == canonical).then_some((root, gloss))
     })
 }
 
 /// Apply learner-facing cleanup to one imported BDB row. Curated lexicon
 /// entries override terse or misleading BDB headlines, while root-section
 /// headwords keep their vowel points but drop cantillation and meteg.
-fn display_bdb_entry(mut entry: BdbEntry) -> BdbEntry {
+fn display_bdb_entry(db: &Connection, mut entry: BdbEntry) -> BdbEntry {
     if entry.pos_category() == "root" {
         entry.headword = normalize_hebrew_combining(&strip_accents(&entry.headword));
     }
-    if let Some((root, gloss)) = curated_gloss(&entry.headword)
+    if let Some((root, gloss)) = curated_gloss(db, &entry.headword)
         && (root.is_empty() || root == entry.root)
     {
         entry.gloss = gloss;
@@ -621,12 +628,12 @@ fn display_bdb_entry(mut entry: BdbEntry) -> BdbEntry {
 /// `lexical_analyses` table). `prefix` is the proclitic spelling when one was
 /// stripped, otherwise empty.
 pub(crate) fn lexicon_fallback(db: &Connection, surface: &str) -> Option<(String, String, String)> {
-    if let Some((root, gloss)) = curated_gloss(surface).or_else(|| bdb_exact(db, surface)) {
+    if let Some((root, gloss)) = curated_gloss(db, surface).or_else(|| bdb_exact(db, surface)) {
         return Some((root, gloss, String::new()));
     }
     for (proclitic, _) in PROCLITICS {
         if let Some(rest) = strip_proclitic(surface, proclitic) {
-            let matched = curated_gloss(&rest)
+            let matched = curated_gloss(db, &rest)
                 .or_else(|| bdb_exact(db, &rest))
                 .or_else(|| {
                     (fold_consonants(&rest).chars().count() >= 3)
@@ -953,22 +960,22 @@ pub(crate) fn name_description(gloss: &str) -> String {
 /// note)`, `("and to Jacob", note)`. Without this the bridge serves the name's
 /// homograph root instead ("to heel"). `None` when no proclitic chain ends at
 /// a curated name.
-pub(crate) fn prefixed_name_gloss(surface: &str) -> Option<(String, String)> {
+pub(crate) fn prefixed_name_gloss(db: &Connection, surface: &str) -> Option<(String, String)> {
     type Chain = Vec<(&'static str, &'static str)>;
-    fn strip_names(surface: &str, depth: u8) -> Option<(Chain, String, &'static str)> {
+    fn strip_names(db: &Connection, surface: &str, depth: u8) -> Option<(Chain, String, String)> {
         for (proclitic, sense) in PROCLITICS {
             let Some(rest) = strip_proclitic(surface, proclitic) else {
                 continue;
             };
             // Names take no article, so "to the"-style senses drop it.
             let sense = sense.trim_end_matches(" the");
-            if crate::vocab_gloss::curated_name(&rest)
-                && let Some(c) = crate::vocab_gloss::curated_gloss(&rest)
+            if crate::vocab_gloss::curated_name(db, &rest)
+                && let Some(c) = crate::vocab_gloss::curated_gloss(db, &rest)
             {
                 return Some((vec![(proclitic, sense)], rest, c.gloss));
             }
             if depth > 0
-                && let Some((mut chain, stem, gloss)) = strip_names(&rest, depth - 1)
+                && let Some((mut chain, stem, gloss)) = strip_names(db, &rest, depth - 1)
             {
                 chain.insert(0, (proclitic, sense));
                 return Some((chain, stem, gloss));
@@ -976,7 +983,7 @@ pub(crate) fn prefixed_name_gloss(surface: &str) -> Option<(String, String)> {
         }
         None
     }
-    let (chain, stem, gloss) = strip_names(surface, 1)?;
+    let (chain, stem, gloss) = strip_names(db, surface, 1)?;
     let senses: Vec<&str> = chain.iter().map(|&(_, s)| s).collect();
     let note = chain
         .iter()
@@ -1701,7 +1708,7 @@ impl Bible {
                     reader_gloss
                 });
             }
-            if let Some(curated) = crate::vocab_gloss::curated_gloss(&word) {
+            if let Some(curated) = crate::vocab_gloss::curated_gloss(&self.db, &word) {
                 return Ok(curated.gloss.to_string());
             }
             Ok(self.hebrew_word_info(&word).map_or_else(String::new, |w| {
@@ -1778,7 +1785,7 @@ impl Bible {
                 .then(|| self.runtime_lexicon_entry(&word))
                 .flatten();
             let curated_gloss = include_glosses
-                .then(|| crate::vocab_gloss::curated_gloss(&word))
+                .then(|| crate::vocab_gloss::curated_gloss(&self.db, &word))
                 .flatten();
             let needs_info = include_names
                 || (include_glosses && runtime_gloss.is_none() && curated_gloss.is_none());
@@ -1995,7 +2002,7 @@ impl Bible {
         let noun: Option<NounReading> = {
             let mut chosen: Option<NounReading> = None;
             for (kind, label, prefix, stem, forced) in noun_rows {
-                let curated = curated_gloss(&stem);
+                let curated = curated_gloss(&self.db, &stem);
                 let is_curated = curated.is_some();
                 let resolved = curated
                     .map(|(root, gloss)| (root, gloss, false))
@@ -2195,7 +2202,7 @@ impl Bible {
         // BDB root tree); it must be consulted before the rootless learner
         // gloss below, or a word curated in both (לִקְרַאת) loses its root —
         // which the tutor's family gating relies on.
-        if let Some((root, gloss)) = curated_gloss(&norm) {
+        if let Some((root, gloss)) = curated_gloss(&self.db, &norm) {
             return Some(HebrewWord {
                 word: norm,
                 root,
@@ -2216,7 +2223,7 @@ impl Bible {
         // resolvable. They intentionally do not carry a lexicon root (unlike
         // `curated_gloss` above), but a word such as מִכֹּל still needs to open
         // in word info rather than falling through as an unknown OT parse.
-        if let Some(curated) = crate::vocab_gloss::curated_gloss(&norm) {
+        if let Some(curated) = crate::vocab_gloss::curated_gloss(&self.db, &norm) {
             return Some(HebrewWord {
                 word: norm,
                 root: String::new(),
@@ -2412,7 +2419,7 @@ impl Bible {
         let mut glosses: Vec<String> = rows
             .into_iter()
             .map(|(word, imported)| {
-                curated_gloss(&word)
+                curated_gloss(&self.db, &word)
                     .filter(|(curated_root, _)| curated_root == root)
                     .map(|(_, gloss)| gloss)
                     .unwrap_or(imported)
@@ -2480,14 +2487,17 @@ impl Bible {
                 !has_exact || normalize_hebrew_combining(&strip_accents(w)) == canonical
             })
             .map(|(word, root, gloss, content_json, pos, is_root)| {
-                display_bdb_entry(BdbEntry {
-                    headword: normalize_hebrew_combining(&word),
-                    root,
-                    gloss,
-                    content_json,
-                    pos,
-                    is_root,
-                })
+                display_bdb_entry(
+                    &self.db,
+                    BdbEntry {
+                        headword: normalize_hebrew_combining(&word),
+                        root,
+                        gloss,
+                        content_json,
+                        pos,
+                        is_root,
+                    },
+                )
             })
             .filter(BdbEntry::has_content)
             .collect())
@@ -2506,18 +2516,21 @@ impl Bible {
         )?;
         let entries = stmt
             .query_map([root], |row| {
-                Ok(display_bdb_entry(BdbEntry {
-                    headword: normalize_hebrew_combining(
-                        row.get::<_, Option<String>>(0)?
-                            .unwrap_or_default()
-                            .as_str(),
-                    ),
-                    root: row.get(1)?,
-                    gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
-                    content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
-                    pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
-                    is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
-                }))
+                Ok(display_bdb_entry(
+                    &self.db,
+                    BdbEntry {
+                        headword: normalize_hebrew_combining(
+                            row.get::<_, Option<String>>(0)?
+                                .unwrap_or_default()
+                                .as_str(),
+                        ),
+                        root: row.get(1)?,
+                        gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
+                        content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
+                        pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
+                        is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
+                    },
+                ))
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         // Drop section root-headers that offer no usable lexeme meaning: either
@@ -2620,18 +2633,21 @@ impl Bible {
                  WHERE bdb_id = ?1",
                 [bdb_id],
                 |row| {
-                    Ok(display_bdb_entry(BdbEntry {
-                        headword: normalize_hebrew_combining(
-                            row.get::<_, Option<String>>(0)?
-                                .unwrap_or_default()
-                                .as_str(),
-                        ),
-                        root: row.get(1)?,
-                        gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
-                        content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
-                        pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
-                        is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
-                    }))
+                    Ok(display_bdb_entry(
+                        &self.db,
+                        BdbEntry {
+                            headword: normalize_hebrew_combining(
+                                row.get::<_, Option<String>>(0)?
+                                    .unwrap_or_default()
+                                    .as_str(),
+                            ),
+                            root: row.get(1)?,
+                            gloss: row.get::<_, Option<String>>(2)?.unwrap_or_default(),
+                            content_json: row.get::<_, Option<String>>(3)?.unwrap_or_default(),
+                            pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
+                            is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
+                        },
+                    ))
                 },
             )
             .optional()
@@ -2684,7 +2700,8 @@ impl Bible {
     /// then covers genuinely inflected forms, and a pointing-blind consonant
     /// match is the last resort.
     fn vocab_resolve(&self, surface: &str) -> (String, String, String) {
-        if let Some((root, gloss)) = curated_gloss(surface).or_else(|| bdb_exact(&self.db, surface))
+        if let Some((root, gloss)) =
+            curated_gloss(&self.db, surface).or_else(|| bdb_exact(&self.db, surface))
         {
             return (root, gloss, String::new());
         }
@@ -2694,7 +2711,7 @@ impl Bible {
         // match unrelated lexemes.
         for (proclitic, meaning) in PROCLITICS {
             if let Some(rest) = strip_proclitic(surface, proclitic) {
-                let matched = curated_gloss(&rest)
+                let matched = curated_gloss(&self.db, &rest)
                     .or_else(|| bdb_exact(&self.db, &rest))
                     .or_else(|| {
                         (fold_consonants(&rest).chars().count() >= 3)
@@ -4206,6 +4223,8 @@ mod tests {
 
     #[test]
     fn test_curated_gloss_overrides_homograph() {
+        require_data!();
+        let bible = Bible::open("data").unwrap();
         // The curated override pins the function-word sense for closed-class
         // words whose consonant skeleton collides with an unrelated lexeme,
         // ahead of any BDB lookup. כִּי "that/because" must not bridge to the
@@ -4213,19 +4232,19 @@ mod tests {
         // This is the concise lexicon gloss; the fuller learner-card gloss
         // belongs to the separate `word_glosses` overlay.
         assert_eq!(
-            curated_gloss("כִּי"),
+            curated_gloss(&bible.db, "כִּי"),
             Some((String::new(), "for".to_string()))
         );
-        let (_, asher) = curated_gloss("אֲשֶׁר").expect("relative particle is curated");
+        let (_, asher) = curated_gloss(&bible.db, "אֲשֶׁר").expect("relative particle is curated");
         assert_eq!(asher, "that");
         assert_eq!(
-            curated_gloss("חָלַם"),
+            curated_gloss(&bible.db, "חָלַם"),
             Some(("חלם".to_string(), "dream".to_string()))
         );
         // Matching ignores cantillation, so an accented surface still resolves.
-        assert!(curated_gloss("אֲשֶׁ\u{0596}ר").is_some());
+        assert!(curated_gloss(&bible.db, "אֲשֶׁ\u{0596}ר").is_some());
         // An ordinary word is left for the BDB lookups.
-        assert_eq!(curated_gloss("מֶלֶךְ"), None);
+        assert_eq!(curated_gloss(&bible.db, "מֶלֶךְ"), None);
     }
 
     #[test]

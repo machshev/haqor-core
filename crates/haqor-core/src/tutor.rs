@@ -2231,7 +2231,7 @@ impl Bible {
             // candidate's own form-level rendering — the correct answer is
             // form-specific ("and to the house"), so lexeme-sense options
             // ("son") would give it away by register alone.
-            let (g, curated) = match crate::vocab_gloss::curated_gloss(&cand) {
+            let (g, curated) = match crate::vocab_gloss::curated_gloss(self.conn(), &cand) {
                 Some(c) => (c.gloss.trim().to_string(), true),
                 None => match self.hebrew_word_info(&cand) {
                     // A name's bridged gloss is an etymology ("my father is
@@ -2544,40 +2544,41 @@ impl Bible {
         // meaning to learn: it cards as [`NAME_GLOSS`] with the citation kept
         // as the note, and drops the spurious bridged root/morph — the
         // scheduler seeds such cards known after one showing.
-        let (gloss, root_gloss, note, curated) = match crate::vocab_gloss::curated_gloss(surface) {
-            Some(c) => (
-                c.gloss.to_string(),
-                String::new(),
-                c.note.unwrap_or_default().to_string(),
-                true,
-            ),
-            None => match crate::bible::prefixed_name_gloss(surface) {
-                Some((g, note)) => (g, String::new(), note, false),
-                // A curated famous name is exempt from the pos/meta signals:
-                // it is in `CURATED_NAMES` precisely because its BDB gloss is
-                // already usable ("Aaron", "Esau") — serve that, not
-                // "(a name)". A gloss that embeds the raw BDB citation still
-                // falls through (it is not a meaning for anyone).
-                None if (!crate::vocab_gloss::curated_name(surface)
-                    && (meta_name || resolved_name))
-                    || crate::bible::is_name_gloss(&gloss) =>
-                {
-                    let note = crate::bible::name_description(&gloss);
-                    root.clear();
-                    morph.clear();
-                    (NAME_GLOSS.to_string(), String::new(), note, false)
-                }
-                // The surface's own meaning is what the learner is reading, so
-                // the inflected rendering headlines (and is quizzed); the
-                // lexeme sense demotes to a "root meaning" line.
-                None if !inflected.is_empty()
-                    && inflected.to_lowercase() != gloss.to_lowercase() =>
-                {
-                    (inflected, gloss, String::new(), false)
-                }
-                None => (gloss, String::new(), String::new(), false),
-            },
-        };
+        let (gloss, root_gloss, note, curated) =
+            match crate::vocab_gloss::curated_gloss(self.conn(), surface) {
+                Some(c) => (
+                    c.gloss.to_string(),
+                    String::new(),
+                    c.note.unwrap_or_default().to_string(),
+                    true,
+                ),
+                None => match crate::bible::prefixed_name_gloss(self.conn(), surface) {
+                    Some((g, note)) => (g, String::new(), note, false),
+                    // A curated famous name is exempt from the pos/meta signals:
+                    // it is in `CURATED_NAMES` precisely because its BDB gloss is
+                    // already usable ("Aaron", "Esau") — serve that, not
+                    // "(a name)". A gloss that embeds the raw BDB citation still
+                    // falls through (it is not a meaning for anyone).
+                    None if (!crate::vocab_gloss::curated_name(self.conn(), surface)
+                        && (meta_name || resolved_name))
+                        || crate::bible::is_name_gloss(&gloss) =>
+                    {
+                        let note = crate::bible::name_description(&gloss);
+                        root.clear();
+                        morph.clear();
+                        (NAME_GLOSS.to_string(), String::new(), note, false)
+                    }
+                    // The surface's own meaning is what the learner is reading, so
+                    // the inflected rendering headlines (and is quizzed); the
+                    // lexeme sense demotes to a "root meaning" line.
+                    None if !inflected.is_empty()
+                        && inflected.to_lowercase() != gloss.to_lowercase() =>
+                    {
+                        (inflected, gloss, String::new(), false)
+                    }
+                    None => (gloss, String::new(), String::new(), false),
+                },
+            };
 
         // A bridged card headlines a single sense — the full multi-sense
         // entry belongs to the lexicon view, not a quiz answer ("who", not
@@ -2760,15 +2761,15 @@ impl Bible {
                 // "gold"). A curated gloss overrides everything, exactly as it
                 // does on the card: curated names are names (מֹשֶׁה), curated
                 // vocabulary is not (בְּנֵי "sons of" bridges to BDB's *Bani*).
-                let is_name = if crate::vocab_gloss::curated_name(&text) {
+                let is_name = if crate::vocab_gloss::curated_name(self.conn(), &text) {
                     true
-                } else if crate::vocab_gloss::curated_gloss(&text).is_some() {
+                } else if crate::vocab_gloss::curated_gloss(self.conn(), &text).is_some() {
                     false
                 } else {
                     parsed
                         .as_ref()
                         .is_some_and(|w| w.is_name || crate::bible::is_name_gloss(&w.gloss))
-                        || crate::bible::prefixed_name_gloss(&text).is_some()
+                        || crate::bible::prefixed_name_gloss(self.conn(), &text).is_some()
                         || (lexical_class.as_deref() == Some("proper")
                             && !self.bdb_exact_vocab_match(
                                 &text,
@@ -2779,8 +2780,8 @@ impl Bible {
                 // no curated gloss, not a name) is marked unteachable rather
                 // than fed to the learner ranked by raw frequency.
                 let blank = parsed.as_ref().is_none_or(|w| w.gloss.trim().is_empty())
-                    && crate::vocab_gloss::curated_gloss(&text).is_none()
-                    && crate::bible::prefixed_name_gloss(&text).is_none()
+                    && crate::vocab_gloss::curated_gloss(self.conn(), &text).is_none()
+                    && crate::bible::prefixed_name_gloss(self.conn(), &text).is_none()
                     && !is_name;
                 let cmask = if blank { UNTEACHABLE_MASK } else { cmask };
                 concept_masks.insert(surface_id, cmask);
@@ -3719,7 +3720,7 @@ impl Bible {
             return Ok(None);
         }
         // The host's learner gloss, as its word card would show it.
-        let gloss = match crate::vocab_gloss::curated_gloss(host) {
+        let gloss = match crate::vocab_gloss::curated_gloss(self.conn(), host) {
             Some(c) => c.gloss.to_string(),
             None => self
                 .hebrew_word_info(host)
