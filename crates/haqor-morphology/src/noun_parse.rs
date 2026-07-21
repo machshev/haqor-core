@@ -325,6 +325,18 @@ mod tests {
     }
 
     #[test]
+    fn gold_defective_ark_with_article_is_a_noun() {
+        // Exodus 37:1 spells "the ark" defectively as הָאָרֹן. Its surface
+        // must not fall through to the unrelated Qal verb of רננ.
+        let mut inventory = NounInventory::build(&[]);
+        inventory.add_gold_nouns();
+        let matches = inventory.parse("הָאָרֹן");
+        assert!(matches.iter().any(|m| {
+            m.stem == "אָרוֹן" && m.label == "Noun (chest; ark)" && m.prefix == "הָ"
+        }));
+    }
+
+    #[test]
     fn article_lengthened_short_noun_recovers_its_lemma() {
         let stems = vec![NounStem::masculine("גַּן")];
         let matches = parse_noun_word("הַגָּן", &stems);
