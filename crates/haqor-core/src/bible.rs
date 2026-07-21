@@ -1582,7 +1582,12 @@ impl Bible {
                 rusqlite::Error::InvalidParameterName(format!("missing bundled database {file}"))
             })?;
             db.execute_batch(&format!("ATTACH DATABASE ':memory:' AS {schema}"))?;
-            db.deserialize_read_exact(schema, std::io::Cursor::new(bytes.clone()), bytes.len(), true)?;
+            db.deserialize_read_exact(
+                schema,
+                std::io::Cursor::new(bytes.clone()),
+                bytes.len(),
+                true,
+            )?;
         }
         register_sql_functions(&db)?;
         Ok(Bible {
@@ -1642,7 +1647,8 @@ impl Bible {
     /// it back to [`Self::restore_progress_snapshot_bytes`] on their next
     /// launch.
     pub fn attach_progress_in_memory(&self) -> rusqlite::Result<()> {
-        self.db.execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        self.db
+            .execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
         crate::tutor::init_progress_schema(&self.db)?;
         self.reload_runtime_lexicon_entries()
     }
