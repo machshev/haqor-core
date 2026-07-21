@@ -12,7 +12,7 @@ embedded = ["dep:rust-embed"]
 
 [dependencies]
 anyhow = "1.0.81"
-haqor-morphology = { path = "../haqor-morphology", version = "0.7.1" }
+haqor-morphology = { path = "../haqor-morphology", version = "0.7.2" }
 log = "0.4.22"
 rusqlite = { version = "0.37.0", features = ["bundled", "functions", "serialize"] }
 rust-embed = { version = "8.7.2", features = ["debug-embed"], optional = true }
