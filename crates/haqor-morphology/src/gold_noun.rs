@@ -37,6 +37,9 @@ pub const GOLD_NOUNS: &[(&str, &str, &str)] = &[
     ("מַלְכֵי", "מֶלֶךְ", "king"),
     ("יְמֵי", "יוֹם", "day"),
     ("אֲרוֹן", "אָרוֹן", "box"),
+    // The definite article preserves the defective spelling in הָאָרֹן
+    // (Exod 37:1), so this cannot be recovered from the plene lemma alone.
+    ("אָרֹן", "אָרוֹן", "chest; ark"),
     ("הָרִים", "הַר", "mountain; range"),
     ("עֵינָי", "עַיִן", "eye; fountain; eye"),
     ("אֱמֶת", "אֶמֶת", "stability; certainty; truth; trustworthiness"),
