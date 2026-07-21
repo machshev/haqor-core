@@ -6,6 +6,7 @@
 #   bump-version <major|minor|patch>   bump the matching component
 #   bump-version <X.Y.Z>               set an explicit version
 #   bump-version ... --tag             also create a git commit + vX.Y.Z tag
+#   bump-version ... --tag --force     replace an existing local vX.Y.Z tag
 #
 # Updates the workspace package version, local dependency requirements, and
 # every local package entry in Cargo.lock. Does not push or publish — use
@@ -14,7 +15,7 @@
 set -euo pipefail
 
 usage() {
-    echo "usage: bump-version <major|minor|patch|X.Y.Z> [--tag]" >&2
+    echo "usage: bump-version <major|minor|patch|X.Y.Z> [--tag] [--force]" >&2
     exit 2
 }
 
@@ -22,9 +23,11 @@ usage() {
 
 bump=""
 do_tag=0
+force_tag=0
 for arg in "$@"; do
     case "$arg" in
         --tag) do_tag=1 ;;
+        --force) force_tag=1 ;;
         -h | --help) usage ;;
         -*)
             echo "unknown flag: $arg" >&2
@@ -37,6 +40,10 @@ for arg in "$@"; do
     esac
 done
 [ -n "$bump" ] || usage
+if [ "$force_tag" -eq 1 ] && [ "$do_tag" -ne 1 ]; then
+    echo "--force requires --tag" >&2
+    usage
+fi
 
 root="$(git rev-parse --show-toplevel)"
 manifest="$root/Cargo.toml"
@@ -48,6 +55,14 @@ if ! [[ "$cur" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     exit 1
 fi
 IFS='.' read -r major minor patch <<<"$cur"
+
+create_tag() {
+    if [ "$force_tag" -eq 1 ]; then
+        git -C "$root" tag -f -a "v$new" -m "v$new"
+    else
+        git -C "$root" tag -a "v$new" -m "v$new"
+    fi
+}
 
 case "$bump" in
     major) new="$((major + 1)).0.0" ;;
@@ -65,7 +80,7 @@ esac
 
 if [ "$new" = "$cur" ]; then
     if [ "$do_tag" -eq 1 ]; then
-        git -C "$root" tag -a "v$new" -m "v$new"
+        create_tag
         echo "version already $cur; tagged v$new (not pushed)"
         exit 0
     fi
@@ -96,6 +111,6 @@ echo "bumped $cur -> $new"
 if [ "$do_tag" -eq 1 ]; then
     git -C "$root" add Cargo.toml Cargo.lock crates/*/Cargo.toml
     git -C "$root" commit -m "chore: release v$new"
-    git -C "$root" tag -a "v$new" -m "v$new"
+    create_tag
     echo "committed and tagged v$new (not pushed)"
 fi
