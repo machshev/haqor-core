@@ -328,13 +328,14 @@ fn invalid_gloss_override_count(progress: &Path) -> Result<usize> {
         .iter()
         .any(|column| column == "deleted");
     let active_filter = if has_deleted { "deleted = 0 AND " } else { "" };
-    Ok(db.query_row(
+    let count: i64 = db.query_row(
         &format!(
             "SELECT COUNT(*) FROM gloss_overrides WHERE {active_filter}(TRIM(surface) = '' OR TRIM(gloss) = '')"
         ),
         [],
         |row| row.get(0),
-    )?)
+    )?;
+    usize::try_from(count).context("invalid gloss override count exceeds usize")
 }
 
 /// Export the synchronised mobile bug/idea log as deterministic, pretty JSON.
