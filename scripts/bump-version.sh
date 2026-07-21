@@ -64,6 +64,12 @@ case "$bump" in
 esac
 
 if [ "$new" = "$cur" ]; then
+    if [ "$do_tag" -eq 1 ]; then
+        git -C "$root" tag -a "v$new" -m "v$new"
+        echo "version already $cur; tagged v$new (not pushed)"
+        exit 0
+    fi
+
     echo "version already $cur, nothing to do" >&2
     exit 1
 fi
