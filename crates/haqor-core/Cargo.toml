@@ -14,7 +14,10 @@ embedded = ["dep:rust-embed"]
 anyhow = "1.0.81"
 haqor-morphology = { path = "../haqor-morphology", version = "0.7.2" }
 log = "0.4.22"
-rusqlite = { version = "0.37.0", features = ["bundled", "functions", "serialize"] }
+# `ffi-sqlite-wasm-rs` is enabled by rusqlite's default features and swaps the
+# native bundled SQLite C build for the browser SQLite WASM bridge on
+# wasm32-unknown-unknown. Native targets continue using the bundled build.
+rusqlite = { version = "0.39.0", features = ["bundled", "functions", "serialize"] }
 rust-embed = { version = "8.7.2", features = ["debug-embed"], optional = true }
 serde_json = "1.0"
 
