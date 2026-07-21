@@ -1574,13 +1574,16 @@ fn update_missing(
     let bridged = populate_lexical_bridge(&mut db, lexicon_db)?;
     info!("Bridged {bridged} unparsed surfaces to the BDB lexicon");
 
-    let (surfaces, parsed, occurrences): (usize, usize, usize) = db.query_row(
+    let (surfaces, parsed, occurrences): (i64, i64, i64) = db.query_row(
         "SELECT (SELECT COUNT(*) FROM surface), \
                 (SELECT COUNT(*) FROM surface WHERE parsed = 1), \
                 (SELECT COUNT(*) FROM occurrences)",
         [],
         |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
     )?;
+    let surfaces = usize::try_from(surfaces).context("surface count exceeds usize")?;
+    let parsed = usize::try_from(parsed).context("parsed surface count exceeds usize")?;
+    let occurrences = usize::try_from(occurrences).context("occurrence count exceeds usize")?;
     info!(
         "Incremental: resolved {resolved} of {} missing surfaces",
         missing.len()
