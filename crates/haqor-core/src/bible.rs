@@ -1567,6 +1567,30 @@ fn register_sql_functions(db: &Connection) -> rusqlite::Result<()> {
 }
 
 impl Bible {
+    /// Open the bundled corpus databases from memory.
+    ///
+    /// This is the browser counterpart of [`Self::open`]: WebAssembly cannot
+    /// open the Flutter assets as files, so the host supplies each SQLite file
+    /// as bytes and SQLite deserializes it into its in-memory VFS.  The schema
+    /// names deliberately match the file-backed path so all reader and tutor
+    /// queries remain identical on every platform.
+    pub fn open_from_bytes(databases: Vec<(&str, Vec<u8>)>) -> rusqlite::Result<Self> {
+        let mut supplied = databases.into_iter().collect::<HashMap<_, _>>();
+        let mut db = Connection::open_in_memory()?;
+        for (file, schema) in ATTACHED_DBS {
+            let bytes = supplied.remove(file).ok_or_else(|| {
+                rusqlite::Error::InvalidParameterName(format!("missing bundled database {file}"))
+            })?;
+            db.execute_batch(&format!("ATTACH DATABASE ':memory:' AS {schema}"))?;
+            db.deserialize_read_exact(schema, std::io::Cursor::new(bytes.clone()), bytes.len(), true)?;
+        }
+        register_sql_functions(&db)?;
+        Ok(Bible {
+            db,
+            runtime_lexicon_entries: RefCell::new(HashMap::new()),
+        })
+    }
+
     /// Open the databases file-backed and read-only from `data_dir`, which
     /// must contain the four attached databases (`bible.db`, `sedra.db`,
     /// `hebrew.db`, `lexicon.db`).
@@ -1610,6 +1634,36 @@ impl Bible {
         )?;
         crate::tutor::init_progress_schema(&self.db)?;
         self.reload_runtime_lexicon_entries()
+    }
+
+    /// Create the writable progress schema in SQLite's in-memory VFS.
+    ///
+    /// Web callers persist the resulting snapshot in browser storage and pass
+    /// it back to [`Self::restore_progress_snapshot_bytes`] on their next
+    /// launch.
+    pub fn attach_progress_in_memory(&self) -> rusqlite::Result<()> {
+        self.db.execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        crate::tutor::init_progress_schema(&self.db)?;
+        self.reload_runtime_lexicon_entries()
+    }
+
+    /// Replace the in-memory progress schema with a previously saved SQLite
+    /// snapshot.  The snapshot is local learner state only; corpus data stays
+    /// in the read-only attached databases.
+    pub fn restore_progress_snapshot_bytes(&mut self, snapshot: Vec<u8>) -> rusqlite::Result<()> {
+        self.db.deserialize_read_exact(
+            "progress",
+            std::io::Cursor::new(snapshot.clone()),
+            snapshot.len(),
+            false,
+        )?;
+        crate::tutor::init_progress_schema(&self.db)?;
+        self.reload_runtime_lexicon_entries()
+    }
+
+    /// Return the browser-persistable progress schema as a SQLite snapshot.
+    pub fn progress_snapshot_bytes(&self) -> rusqlite::Result<Vec<u8>> {
+        Ok(self.db.serialize("progress")?.to_vec())
     }
 
     /// Export the learner's writable progress schema as a consistent SQLite
