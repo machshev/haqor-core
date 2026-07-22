@@ -139,6 +139,14 @@ struct OshbAnalysis {
     morph: String,
 }
 
+fn normalize_oshb_word(source_word: &str) -> String {
+    source_word
+        .split('/')
+        .map(crate::normalize_surface)
+        .collect::<Vec<_>>()
+        .join("/")
+}
+
 fn oshb_label(code: char, labels: &[(char, &str)]) -> Option<String> {
     labels
         .iter()
@@ -2118,7 +2126,7 @@ impl Bible {
             let analysis = row
                 .get::<_, Option<String>>(4)?
                 .map(|source_word| OshbAnalysis {
-                    source_word,
+                    source_word: normalize_oshb_word(&source_word),
                     lemma: row.get::<_, String>(5).unwrap_or_default(),
                     morph: row.get::<_, String>(6).unwrap_or_default(),
                 });
@@ -2330,7 +2338,7 @@ impl Bible {
                 rusqlite::params![book, chapter, verse, position as i64, surface_id],
                 |row| {
                     Ok(OshbAnalysis {
-                        source_word: row.get(0)?,
+                        source_word: normalize_oshb_word(&row.get::<_, String>(0)?),
                         lemma: row.get(1)?,
                         morph: row.get(2)?,
                     })
