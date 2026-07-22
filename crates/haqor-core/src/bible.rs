@@ -2006,10 +2006,11 @@ impl Bible {
                 .map_or_else(Vec::new, |metadata| metadata.glosses));
         }
 
-        let mut stmt = self.db.prepare("SELECT s.text, vw.position FROM hebrewdb.verse_word vw JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 ORDER BY vw.position")?;
+        let mut stmt = self.db.prepare("SELECT s.text, vw.position, vw.reader_gloss FROM hebrewdb.verse_word vw JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 ORDER BY vw.position")?;
         stmt.query_map([book, chapter, verse], |r| {
             let word: String = r.get(0)?;
             let position: i64 = r.get(1)?;
+            let source_gloss: String = r.get(2)?;
             // A correction made from the word-info sheet must also win in the
             // interlinear.  Static curated glosses remain ahead of the baked
             // lexicon, but they must not shadow a newer device-local edit.
@@ -2019,6 +2020,9 @@ impl Bible {
                 } else {
                     reader_gloss
                 });
+            }
+            if !source_gloss.is_empty() {
+                return Ok(source_gloss);
             }
             if let Some(curated) = crate::vocab_gloss::curated_gloss(&self.db, &word) {
                 return Ok(curated.gloss.to_string());
@@ -2096,7 +2100,7 @@ impl Bible {
             != 0;
         let sql = if has_oshb {
             "SELECT vw.verse, vw.position, vw.surface_id, s.text, \
-                    p.source_word, p.lemma, p.morph \
+                    p.source_word, p.lemma, p.morph, vw.reader_gloss \
              FROM hebrewdb.verse_word vw \
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
              LEFT JOIN hebrewdb.oshb_primary p \
@@ -2107,7 +2111,7 @@ impl Bible {
              ORDER BY vw.verse, vw.position"
         } else {
             "SELECT vw.verse, vw.position, vw.surface_id, s.text, \
-                    NULL, NULL, NULL \
+                    NULL, NULL, NULL, vw.reader_gloss \
              FROM hebrewdb.verse_word vw \
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
              WHERE vw.book = ?1 AND vw.chapter = ?2 \
@@ -2130,6 +2134,9 @@ impl Bible {
                     lemma: row.get::<_, String>(5).unwrap_or_default(),
                     morph: row.get::<_, String>(6).unwrap_or_default(),
                 });
+            let source_gloss = include_glosses
+                .then(|| row.get::<_, String>(7).unwrap_or_default())
+                .unwrap_or_default();
             let verse_metadata = metadata.entry(verse).or_default();
 
             let runtime_gloss = include_glosses
@@ -2139,7 +2146,10 @@ impl Bible {
                 .then(|| crate::vocab_gloss::curated_gloss(&self.db, &word))
                 .flatten();
             let needs_info = include_names
-                || (include_glosses && runtime_gloss.is_none() && curated_gloss.is_none());
+                || (include_glosses
+                    && runtime_gloss.is_none()
+                    && curated_gloss.is_none()
+                    && source_gloss.is_empty());
             if needs_info {
                 info_cache
                     .entry((surface_id, analysis.clone()))
@@ -2158,6 +2168,8 @@ impl Bible {
                     } else {
                         reader_gloss
                     }
+                } else if !source_gloss.is_empty() {
+                    source_gloss
                 } else if let Some(curated) = curated_gloss {
                     curated.gloss.to_string()
                 } else if let Some(info) = info {
@@ -4297,13 +4309,17 @@ mod tests {
     }
 
     #[test]
-    fn verse_glosses_prefer_intext_override_to_lexicon_gloss() {
-        require_data!();
-        let bible = Bible::open("data").unwrap();
+    fn verse_glosses_keep_lexicon_headers_separate() {
+        let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("hebrew.db").exists() {
+            eprintln!("skipping: data/hebrew.db not generated in this checkout");
+            return;
+        }
+        let bible = Bible::open(data).unwrap();
 
         // Gen 1:1 contains אֵת at position 3. Its Lexicon header remains the
-        // descriptive entry, while the compact interlinear gloss points left
-        // toward the marked object.
+        // descriptive entry, while TAHOT's compact reader representation
+        // points left toward the marked object.
         let info = bible
             .hebrew_word_info("אֵת")
             .expect("object marker resolves");
@@ -4345,8 +4361,12 @@ mod tests {
 
     #[test]
     fn chapter_reader_metadata_matches_legacy_per_verse_lookups() {
-        require_data!();
-        let bible = Bible::open("data").unwrap();
+        let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("hebrew.db").exists() {
+            eprintln!("skipping: data/hebrew.db not generated in this checkout");
+            return;
+        }
+        let bible = Bible::open(data).unwrap();
 
         let metadata = bible.chapter_reader_metadata(1, 1, true, true).unwrap();
         for verse in 1..=31 {
@@ -4396,33 +4416,59 @@ mod tests {
 
     #[test]
     fn verse_glosses_keep_wayyiqtol_flowing() {
-        require_data!();
-        let bible = Bible::open("data").unwrap();
+        let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("hebrew.db").exists() {
+            eprintln!("skipping: data/hebrew.db not generated in this checkout");
+            return;
+        }
+        let bible = Bible::open(data).unwrap();
 
-        // Keep the interlinear compact enough to read with the verse. The
+        // The occurrence source supplies the natural clause wording while the
         // Lexicon still presents the base lemma sense, "be".
         let info = bible
             .hebrew_word_info("וַיְהִי")
             .expect("wayyiqtol form resolves");
         assert_eq!(info.gloss, "be");
         let glosses = bible.verse_glosses(1, 1, 3).unwrap();
-        assert_eq!(glosses[4], "and it was");
+        assert_eq!(glosses[4], "and there was");
     }
 
     #[test]
-    fn verse_glosses_keep_conjunctive_participles_flowing() {
-        require_data!();
-        let bible = Bible::open("data").unwrap();
+    fn verse_glosses_use_contextual_tahot_translation() {
+        let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("hebrew.db").exists() {
+            eprintln!("skipping: data/hebrew.db not generated in this checkout");
+            return;
+        }
+        let bible = Bible::open(data).unwrap();
 
-        // Ex 35:35: וְחֹשְׁבֵי is an ordinary conjunctive vav on an active
-        // participle, not a wayyiqtol. Its reader gloss must retain "and".
+        let glosses = bible.verse_glosses(1, 1, 2).unwrap();
+        assert_eq!(glosses[1], "was");
+        assert_eq!(glosses[2], "formlessness");
+        assert_eq!(glosses[5], "was over");
+        assert_eq!(glosses[6], "the surface of");
+        assert_eq!(glosses[8], "and the spirit of");
+        assert_eq!(glosses[10], "was hovering");
+    }
+
+    #[test]
+    fn verse_glosses_use_contextual_conjunctive_participle() {
+        let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("hebrew.db").exists() {
+            eprintln!("skipping: data/hebrew.db not generated in this checkout");
+            return;
+        }
+        let bible = Bible::open(data).unwrap();
+
+        // The lexical analysis can explain the form mechanically, while the
+        // occurrence source supplies the natural craft-context translation.
         let info = bible
             .hebrew_word_info("וְחֹשְׁבֵי")
             .expect("conjunctive participle resolves");
         assert_eq!(info.prefix.as_deref(), Some("וְ"));
         assert_eq!(info.tense.as_deref(), Some("Participle (act.)"));
         let glosses = bible.verse_glosses(2, 35, 35).unwrap();
-        assert_eq!(glosses[19], "and thinking");
+        assert_eq!(glosses[19], "and designers of");
     }
 
     #[test]
@@ -4482,14 +4528,17 @@ mod tests {
     }
 
     #[test]
-    fn mobile_lexicon_entry_override_beats_curated_reader_gloss() {
-        require_data!();
-        let bible = Bible::open("data").unwrap();
+    fn mobile_lexicon_entry_override_beats_bundled_reader_gloss() {
+        let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("hebrew.db").exists() {
+            eprintln!("skipping: data/hebrew.db not generated in this checkout");
+            return;
+        }
+        let bible = Bible::open(data).unwrap();
         bible.attach_progress(":memory:").unwrap();
 
-        // Genesis 1:7 contains מֵעַל, for which the bundled curated reader
-        // gloss is "from upon, from over". A correction made in word info must
-        // replace that text in the interlinear as well.
+        // Genesis 1:7 contains מֵעַל. A correction made in word info must
+        // replace the bundled occurrence gloss in the interlinear as well.
         bible
             .set_lexicon_entry_override("מֵעַל", "על", "upon", "from above", 1)
             .unwrap();

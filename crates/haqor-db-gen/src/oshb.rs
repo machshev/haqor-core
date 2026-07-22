@@ -137,9 +137,9 @@ fn consonants(value: &str) -> String {
 /// Weighted LCS alignment. Exact pointed matches outrank consonantal matches;
 /// both outrank gaps. Source/current substitutions are never accepted as an
 /// authoritative mapping.
-fn align_verse(current: &[String], source: &[SourceToken]) -> Vec<(usize, usize, bool)> {
+pub(crate) fn align_verse(current: &[String], source: &[String]) -> Vec<(usize, usize, bool)> {
     let current_norm: Vec<String> = current.iter().map(|s| normalize_surface(s)).collect();
-    let source_norm: Vec<String> = source.iter().map(|s| normalize_surface(&s.word)).collect();
+    let source_norm: Vec<String> = source.iter().map(|s| normalize_surface(s)).collect();
     let current_cons: Vec<String> = current_norm.iter().map(|s| consonants(s)).collect();
     let source_cons: Vec<String> = source_norm.iter().map(|s| consonants(s)).collect();
     let mut score = vec![vec![0u32; source.len() + 1]; current.len() + 1];
@@ -212,7 +212,11 @@ pub(crate) fn align_primary(
             .iter()
             .map(|(_, surface_id)| surfaces[*surface_id].clone())
             .collect();
-        for (current_index, source_index, exact_surface) in align_verse(&texts, source_words) {
+        let source_texts: Vec<String> = source_words
+            .iter()
+            .map(|token| token.word.clone())
+            .collect();
+        for (current_index, source_index, exact_surface) in align_verse(&texts, &source_texts) {
             let (position, surface_id) = words[current_index];
             out.push(PrimaryAnalysis {
                 book: reference.0,
@@ -233,19 +237,13 @@ pub(crate) fn align_primary(
 mod tests {
     use super::*;
 
-    fn token(word: &str) -> SourceToken {
-        SourceToken {
-            word: word.to_string(),
-            lemma: String::new(),
-            morph: String::new(),
-            id: String::new(),
-        }
-    }
-
     #[test]
     fn verse_alignment_skips_source_only_words_without_shifting() {
         let current = vec!["אָב".to_string(), "בֵּן".to_string(), "אֵם".to_string()];
-        let source = vec![token("אָב"), token("קֶרֶן"), token("בֵּן"), token("אֵם")];
+        let source = vec!["אָב", "קֶרֶן", "בֵּן", "אֵם"]
+            .into_iter()
+            .map(str::to_string)
+            .collect::<Vec<_>>();
         assert_eq!(
             align_verse(&current, &source),
             vec![(0, 0, true), (1, 2, true), (2, 3, true)]
@@ -255,7 +253,7 @@ mod tests {
     #[test]
     fn verse_alignment_accepts_pointing_drift_on_same_consonants() {
         let current = vec!["יַהְוֶה".to_string()];
-        let source = vec![token("יְהוָה")];
+        let source = vec!["יְהוָה".to_string()];
         assert_eq!(align_verse(&current, &source), vec![(0, 0, false)]);
     }
 }

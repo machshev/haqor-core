@@ -72,44 +72,44 @@ pub fn book_number(token: &str) -> Option<u8> {
     }
     const BOOKS: &[(u8, &[&str])] = &[
         (1, &["gen", "genesis"]),
-        (2, &["exod", "ex", "exodus"]),
+        (2, &["exod", "exo", "ex", "exodus"]),
         (3, &["lev", "leviticus"]),
         (4, &["num", "numbers"]),
-        (5, &["deut", "deuteronomy"]),
+        (5, &["deut", "deu", "deuteronomy"]),
         (6, &["josh", "jos", "joshua"]),
-        (7, &["judg", "judges"]),
-        (8, &["1sam", "1samuel"]),
-        (9, &["2sam", "2samuel"]),
-        (10, &["1kgs", "1kings"]),
-        (11, &["2kgs", "2kings"]),
+        (7, &["judg", "jdg", "judges"]),
+        (8, &["1sam", "1sa", "1samuel"]),
+        (9, &["2sam", "2sa", "2samuel"]),
+        (10, &["1kgs", "1ki", "1kings"]),
+        (11, &["2kgs", "2ki", "2kings"]),
         (12, &["isa", "is", "isaiah"]),
         (13, &["jer", "jeremiah"]),
-        (14, &["ezek", "ez", "ezekiel"]),
+        (14, &["ezek", "ezk", "ez", "ezekiel"]),
         (15, &["hos", "hosea"]),
-        (16, &["joel"]),
-        (17, &["amos"]),
-        (18, &["obad", "obadiah"]),
+        (16, &["joel", "jol"]),
+        (17, &["amos", "amo"]),
+        (18, &["obad", "oba", "obadiah"]),
         (19, &["jonah", "jon"]),
         (20, &["mic", "micah"]),
-        (21, &["nah", "nahum"]),
+        (21, &["nah", "nam", "nahum"]),
         (22, &["hab", "habakkuk"]),
         (23, &["zeph", "zep", "zephaniah"]),
         (24, &["hag", "haggai"]),
         (25, &["zech", "zec", "zechariah"]),
         (26, &["mal", "malachi"]),
         (27, &["ps", "psa", "psalm", "psalms"]),
-        (28, &["prov", "proverbs"]),
+        (28, &["prov", "pro", "proverbs"]),
         (29, &["job"]),
-        (30, &["song", "sos", "canticles"]),
-        (31, &["ruth"]),
+        (30, &["song", "sng", "sos", "canticles"]),
+        (31, &["ruth", "rut"]),
         (32, &["lam", "lamentations"]),
-        (33, &["eccl", "qoh", "ecclesiastes"]),
+        (33, &["eccl", "ecc", "qoh", "ecclesiastes"]),
         (34, &["esth", "esther"]),
         (35, &["dan", "daniel"]),
         (36, &["ezra"]),
         (37, &["neh", "nehemiah"]),
-        (38, &["1chr", "1chron", "1chronicles"]),
-        (39, &["2chr", "2chron", "2chronicles"]),
+        (38, &["1chr", "1ch", "1chron", "1chronicles"]),
+        (39, &["2chr", "2ch", "2chron", "2chronicles"]),
     ];
     BOOKS
         .iter()
@@ -366,6 +366,12 @@ fn create_schema(db: &Connection) -> Result<()> {
             url       TEXT NOT NULL,
             license   TEXT NOT NULL
          );
+         CREATE TABLE reader_gloss_sources(
+            source_id TEXT PRIMARY KEY,
+            name      TEXT NOT NULL,
+            url       TEXT NOT NULL,
+            license   TEXT NOT NULL
+         );
          CREATE TABLE lexical_analyses(
             surface_id INTEGER PRIMARY KEY,
             root       TEXT NOT NULL,
@@ -379,11 +385,13 @@ fn create_schema(db: &Connection) -> Result<()> {
             n_occurrences INTEGER NOT NULL
          );
          CREATE TABLE verse_word(
-            book       INTEGER NOT NULL,
-            chapter    INTEGER NOT NULL,
-            verse      INTEGER NOT NULL,
-            position   INTEGER NOT NULL,
-            surface_id INTEGER NOT NULL
+            book                INTEGER NOT NULL,
+            chapter             INTEGER NOT NULL,
+            verse               INTEGER NOT NULL,
+            position            INTEGER NOT NULL,
+            surface_id          INTEGER NOT NULL,
+            reader_gloss        TEXT NOT NULL DEFAULT '',
+            reader_gloss_source TEXT
          );
          CREATE TABLE verse_stats(
             book          INTEGER NOT NULL,
@@ -566,6 +574,82 @@ fn populate_verse_tables(
         flush(acc, &mut vs_stmt)?;
     }
     Ok(())
+}
+
+fn ensure_reader_gloss_schema(db: &Connection) -> Result<()> {
+    let has_reader_gloss = db
+        .prepare("PRAGMA table_info(verse_word)")?
+        .query_map([], |row| row.get::<_, String>(1))?
+        .collect::<rusqlite::Result<Vec<_>>>()?
+        .iter()
+        .any(|column| column == "reader_gloss");
+    if !has_reader_gloss {
+        db.execute_batch(
+            "ALTER TABLE verse_word ADD COLUMN reader_gloss TEXT NOT NULL DEFAULT '';
+             ALTER TABLE verse_word ADD COLUMN reader_gloss_source TEXT;",
+        )?;
+    }
+    db.execute_batch(
+        "CREATE TABLE IF NOT EXISTS reader_gloss_sources(
+            source_id TEXT PRIMARY KEY,
+            name      TEXT NOT NULL,
+            url       TEXT NOT NULL,
+            license   TEXT NOT NULL);",
+    )?;
+    Ok(())
+}
+
+fn populate_reader_glosses(
+    db: &Connection,
+    tahot_dir: &Path,
+    surfaces: &[String],
+    occurrences: &[Occurrence],
+) -> Result<usize> {
+    ensure_reader_gloss_schema(db)?;
+    let aligned = crate::stepbible::align_glosses(tahot_dir, surfaces, occurrences)?;
+    let exact = aligned.iter().filter(|gloss| gloss.exact_surface).count();
+    let nonempty = aligned
+        .iter()
+        .filter(|gloss| !gloss.gloss.is_empty())
+        .count();
+    info!(
+        "  aligned {} STEP Bible reader glosses ({} exact-pointed, {} consonantal, {} nonempty)",
+        aligned.len(),
+        exact,
+        aligned.len() - exact,
+        nonempty,
+    );
+
+    db.execute(
+        "INSERT OR REPLACE INTO reader_gloss_sources(source_id, name, url, license) \
+         VALUES (?1, ?2, ?3, ?4)",
+        (
+            crate::stepbible::SOURCE_ID,
+            crate::stepbible::SOURCE_NAME,
+            crate::stepbible::SOURCE_URL,
+            crate::stepbible::SOURCE_LICENSE,
+        ),
+    )?;
+    db.execute(
+        "UPDATE verse_word SET reader_gloss = '', reader_gloss_source = NULL \
+         WHERE reader_gloss_source = ?1",
+        [crate::stepbible::SOURCE_ID],
+    )?;
+    let mut stmt = db.prepare(
+        "UPDATE verse_word SET reader_gloss = ?5, reader_gloss_source = ?6 \
+         WHERE book = ?1 AND chapter = ?2 AND verse = ?3 AND position = ?4",
+    )?;
+    for gloss in aligned {
+        stmt.execute((
+            gloss.book,
+            gloss.chapter,
+            gloss.verse,
+            gloss.position as i64,
+            gloss.gloss,
+            crate::stepbible::SOURCE_ID,
+        ))?;
+    }
+    Ok(nonempty)
 }
 
 /// Build the grammar mask baked into `verse_stats` for each surface. This uses
@@ -1055,10 +1139,63 @@ pub fn generate_hebrew(
     force: bool,
     limit: usize,
 ) -> Result<(usize, usize, usize)> {
+    generate_hebrew_with_sources(
+        bible_db,
+        output,
+        lexicon_db,
+        morphhb_dir,
+        None,
+        force,
+        limit,
+    )
+}
+
+/// Build `hebrew.db` with both OSHB occurrence morphology and an optional
+/// STEP Bible TAHOT directory for context-sensitive reader glosses.
+pub fn generate_hebrew_with_sources(
+    bible_db: &Path,
+    output: &Path,
+    lexicon_db: Option<&Path>,
+    morphhb_dir: Option<&Path>,
+    tahot_dir: Option<&Path>,
+    force: bool,
+    limit: usize,
+) -> Result<(usize, usize, usize)> {
     if !force && output.exists() {
-        return update_missing(output, lexicon_db, morphhb_dir, limit);
+        let result = update_missing(output, lexicon_db, morphhb_dir, limit)?;
+        if let Some(dir) = tahot_dir.filter(|dir| dir.exists()) {
+            refresh_reader_glosses(output, dir)?;
+        }
+        return Ok(result);
     }
-    build_hebrew(bible_db, output, lexicon_db, morphhb_dir)
+    build_hebrew(bible_db, output, lexicon_db, morphhb_dir, tahot_dir)
+}
+
+pub fn refresh_reader_glosses(output: &Path, tahot_dir: &Path) -> Result<usize> {
+    let mut db =
+        Connection::open(output).with_context(|| format!("opening {}", output.display()))?;
+    let surfaces = db
+        .prepare("SELECT text FROM surface ORDER BY surface_id")?
+        .query_map([], |row| row.get::<_, String>(0))?
+        .collect::<rusqlite::Result<Vec<_>>>()?;
+    let occurrences = db
+        .prepare(
+            "SELECT surface_id, book, chapter, verse FROM verse_word \
+             ORDER BY book, chapter, verse, position",
+        )?
+        .query_map([], |row| {
+            Ok(Occurrence {
+                surface_id: row.get::<_, i64>(0)? as usize,
+                book: row.get(1)?,
+                chapter: row.get(2)?,
+                verse: row.get(3)?,
+            })
+        })?
+        .collect::<rusqlite::Result<Vec<_>>>()?;
+    let tx = db.transaction()?;
+    let written = populate_reader_glosses(&tx, tahot_dir, &surfaces, &occurrences)?;
+    tx.commit()?;
+    Ok(written)
 }
 
 /// Remove generated verb readings from noun-parsed surfaces that OSHB never
@@ -1130,6 +1267,7 @@ fn build_hebrew(
     output: &Path,
     lexicon_db: Option<&Path>,
     morphhb_dir: Option<&Path>,
+    tahot_dir: Option<&Path>,
 ) -> Result<(usize, usize, usize)> {
     info!("Reading OT tokens from {}", bible_db.display());
     let (surfaces, occurrences) = collect_tokens(bible_db)?;
@@ -1331,6 +1469,12 @@ fn build_hebrew(
                     analysis.exact_surface as i64,
                 ))?;
             }
+        }
+
+        if let Some(dir) = tahot_dir.filter(|dir| dir.exists()) {
+            populate_reader_glosses(&tx, dir, &surfaces, &occurrences)?;
+        } else {
+            info!("STEP Bible TAHOT unavailable; reader glosses will use lexical fallbacks");
         }
     }
     tx.commit()?;

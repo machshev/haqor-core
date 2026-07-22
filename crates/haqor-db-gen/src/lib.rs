@@ -13,15 +13,20 @@ mod prefilter;
 mod proper_names;
 mod sedra;
 mod sedra_db;
+mod stepbible;
 mod uxlc;
 
 pub use haqor_core::normalize_surface;
 pub use harness::{eval_from_db, parse_eval};
-pub use hebrew_db::{book_name, book_number, generate_hebrew, parse_passage, preview_missing};
+pub use hebrew_db::{
+    book_name, book_number, generate_hebrew, generate_hebrew_with_sources, parse_passage,
+    preview_missing, refresh_reader_glosses,
+};
 pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
 };
 pub use occurrences::parse_ot_coverage;
+pub use stepbible::source_dir as stepbible_source_dir;
 
 use std::path::Path;
 

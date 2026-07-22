@@ -201,6 +201,16 @@ enum DbCommands {
         #[arg(short = 'n', long, default_value_t = 0)]
         limit: usize,
     },
+    /// Refresh only occurrence-level reader glosses in an existing hebrew.db,
+    /// without rerunning morphology generation.
+    RefreshReaderGlosses {
+        /// Existing Hebrew database to update transactionally.
+        #[arg(short, long, default_value = "data/hebrew.db")]
+        output: PathBuf,
+        /// Source texts directory containing the fetched STEP Bible data.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     /// Fast iteration loop: re-run the *current* parser over the N highest-
     /// frequency surfaces still in `review_missing` and print what each would
     /// now resolve to, without modifying the database. Make a parser fix, run
@@ -394,11 +404,13 @@ fn main() -> Result<()> {
                     lexicon_db.as_deref()
                 };
                 let morphhb = src_texts.join("morphhb");
-                let (surfaces, occurrences, parsed) = haqor_db_gen::generate_hebrew(
+                let tahot = haqor_db_gen::stepbible_source_dir(&src_texts);
+                let (surfaces, occurrences, parsed) = haqor_db_gen::generate_hebrew_with_sources(
                     &bible_db,
                     &output,
                     lexicon,
                     Some(&morphhb),
+                    Some(&tahot),
                     force,
                     limit,
                 )?;
@@ -407,6 +419,14 @@ fn main() -> Result<()> {
                     surfaces,
                     parsed,
                     occurrences,
+                    output.display()
+                );
+            }
+            DbCommands::RefreshReaderGlosses { output, src_texts } => {
+                let tahot = haqor_db_gen::stepbible_source_dir(&src_texts);
+                let total = haqor_db_gen::refresh_reader_glosses(&output, &tahot)?;
+                println!(
+                    "Wrote {total} STEP Bible reader glosses to {}",
                     output.display()
                 );
             }

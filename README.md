@@ -25,6 +25,21 @@ licensed under CC BY 4.0. Haqor's mechanically generated verb and noun analyses
 remain in `hebrew.db` as reviewable alternatives and as a fallback where the
 OSHB and UXLC token streams cannot be aligned safely.
 
+The reader's context-sensitive Old Testament interlinear translations come
+from [STEP Bible's TAHOT dataset](https://github.com/STEPBible/STEPBible-Data),
+also licensed under CC BY 4.0. BDB remains the source for full lexicon entries.
+Fetch the pinned TAHOT inputs before regenerating `hebrew.db`:
+
+```sh
+./scripts/fetch-stepbible-data.sh
+cargo run --release -- db refresh-reader-glosses
+```
+
+The source files remain in the ignored `src_texts/STEPBible-Data/` directory;
+the fetch script verifies their checksums before the generator consumes them.
+Full `gen-hebrew --force` builds also include TAHOT, but the refresh command is
+the intended low-resource path when only the interlinear source has changed.
+
 ## Commands
 
 The CLI is the workspace's default member, so it remains available from the
