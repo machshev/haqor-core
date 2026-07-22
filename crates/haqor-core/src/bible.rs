@@ -1755,6 +1755,13 @@ impl Bible {
 
     /// Learner glosses aligned with the words in a verse.
     pub fn verse_glosses(&self, book: u8, chapter: u8, verse: u8) -> rusqlite::Result<Vec<String>> {
+        if book >= 40 {
+            return Ok(self
+                .nt_chapter_reader_metadata(book, chapter, true, false)?
+                .remove(&verse)
+                .map_or_else(Vec::new, |metadata| metadata.glosses));
+        }
+
         let mut stmt = self.db.prepare("SELECT s.text FROM hebrewdb.verse_word vw JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 ORDER BY vw.position")?;
         stmt.query_map([book, chapter, verse], |r| {
             let word: String = r.get(0)?;
@@ -1823,6 +1830,9 @@ impl Bible {
         if !include_glosses && !include_names {
             return Ok(HashMap::new());
         }
+        if book >= 40 {
+            return self.nt_chapter_reader_metadata(book, chapter, include_glosses, include_names);
+        }
 
         let mut stmt = self.db.prepare(
             "SELECT vw.verse, vw.surface_id, s.text \
@@ -1884,6 +1894,55 @@ impl Bible {
                     .push(info.is_some_and(|info| info.is_name));
             }
         }
+        Ok(metadata)
+    }
+
+    /// Reader metadata for a SEDRA New Testament chapter.
+    ///
+    /// `BFBS.cache` supplies the exact `keyWord` sequence used to construct
+    /// `bible.db`, and the SEDRA `english` table supplies its lexeme meanings.
+    /// Occurrence rows were inserted in source-token order, so their SQLite
+    /// rowids preserve the alignment needed by the interlinear reader even
+    /// when the displayed word form is ambiguous outside its verse.
+    fn nt_chapter_reader_metadata(
+        &self,
+        book: u8,
+        chapter: u8,
+        include_glosses: bool,
+        include_names: bool,
+    ) -> rusqlite::Result<HashMap<u8, ReaderVerseMetadata>> {
+        let mut stmt = self.db.prepare(
+            "SELECT o.verse, \
+                    (SELECT trim(coalesce(e.strBefore, '') || ' ' || \
+                                 coalesce(e.strMeaning, '') || ' ' || \
+                                 coalesce(e.strAfter, '')) \
+                     FROM sedradb.english e \
+                     WHERE e.keyLexeme = w.keyLexeme \
+                     ORDER BY e.keyEnglish LIMIT 1) \
+             FROM sedradb.occurrences o \
+             JOIN sedradb.words w ON w.keyWord = o.keyWord \
+             WHERE o.book = ?1 AND o.chapter = ?2 \
+             ORDER BY o.rowid",
+        )?;
+        let mut rows = stmt.query([book, chapter])?;
+        let mut metadata = HashMap::<u8, ReaderVerseMetadata>::new();
+
+        while let Some(row) = rows.next()? {
+            let verse: u8 = row.get(0)?;
+            let verse_metadata = metadata.entry(verse).or_default();
+            if include_glosses {
+                verse_metadata
+                    .glosses
+                    .push(row.get::<_, Option<String>>(1)?.unwrap_or_default());
+            }
+            if include_names {
+                // SEDRA has no dependable proper-name flag. Keep the vector
+                // aligned so the independent reader setting cannot shift
+                // styling onto a later word.
+                verse_metadata.names.push(false);
+            }
+        }
+
         Ok(metadata)
     }
 
@@ -3811,6 +3870,30 @@ mod tests {
                 .unwrap()
                 .is_empty()
         );
+    }
+
+    #[test]
+    fn nt_reader_metadata_uses_sedra_glosses_in_token_order() {
+        let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("bible.db").exists() {
+            eprintln!("skipping: data/*.db not generated in this checkout");
+            return;
+        }
+        let bible = Bible::open(data).unwrap();
+
+        let text = bible.get(40, 1, 1).unwrap();
+        let mut metadata = bible.chapter_reader_metadata(40, 1, true, true).unwrap();
+        let verse = metadata.remove(&1).expect("Matthew 1:1 metadata");
+
+        assert_eq!(verse.glosses.len(), text.split_whitespace().count());
+        assert_eq!(
+            verse.glosses,
+            [
+                "book", "origin", "Jesus", "Messiah", "son", "David", "son", "Abraham",
+            ]
+        );
+        assert_eq!(verse.names, vec![false; verse.glosses.len()]);
+        assert_eq!(bible.verse_glosses(40, 1, 1).unwrap(), verse.glosses);
     }
 
     #[test]
