@@ -17,6 +17,14 @@ responsibility:
 Applications depend directly on `haqor-core`. Its public paths include
 `haqor_core::bible`, `haqor_core::tutor`, and `haqor_core::morphology`.
 
+## Data sources
+
+The reader's primary Old Testament lemma and morphology data comes from the
+[Open Scriptures Hebrew Bible](https://github.com/openscriptures/morphhb),
+licensed under CC BY 4.0. Haqor's mechanically generated verb and noun analyses
+remain in `hebrew.db` as reviewable alternatives and as a fallback where the
+OSHB and UXLC token streams cannot be aligned safely.
+
 ## Commands
 
 The CLI is the workspace's default member, so it remains available from the

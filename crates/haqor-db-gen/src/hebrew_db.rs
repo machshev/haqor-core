@@ -228,11 +228,11 @@ fn has_hebrew_letter(token: &str) -> bool {
 }
 
 /// A single OT token position.
-struct Occurrence {
-    surface_id: usize,
-    book: u8,
-    chapter: u8,
-    verse: u8,
+pub(crate) struct Occurrence {
+    pub(crate) surface_id: usize,
+    pub(crate) book: u8,
+    pub(crate) chapter: u8,
+    pub(crate) verse: u8,
 }
 
 /// Read every OT token from `bible.db`, returning the distinct surface forms
@@ -347,6 +347,25 @@ fn create_schema(db: &Connection) -> Result<()> {
             label       TEXT    NOT NULL,
             prefix      TEXT    NOT NULL
          );
+         CREATE TABLE oshb_primary(
+            book          INTEGER NOT NULL,
+            chapter       INTEGER NOT NULL,
+            verse         INTEGER NOT NULL,
+            position      INTEGER NOT NULL,
+            surface_id    INTEGER NOT NULL,
+            source_word   TEXT    NOT NULL,
+            oshb_id       TEXT    NOT NULL,
+            lemma         TEXT    NOT NULL,
+            morph         TEXT    NOT NULL,
+            exact_surface INTEGER NOT NULL,
+            PRIMARY KEY (book, chapter, verse, position)
+         );
+         CREATE TABLE morphology_sources(
+            source_id TEXT PRIMARY KEY,
+            name      TEXT NOT NULL,
+            url       TEXT NOT NULL,
+            license   TEXT NOT NULL
+         );
          CREATE TABLE lexical_analyses(
             surface_id INTEGER PRIMARY KEY,
             root       TEXT NOT NULL,
@@ -387,6 +406,7 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
          CREATE INDEX idx_analyses_surface ON analyses(surface_id);
          CREATE INDEX idx_analyses_root ON analyses(root);
          CREATE INDEX idx_noun_analyses_surface ON noun_analyses(surface_id);
+         CREATE INDEX idx_oshb_primary_surface ON oshb_primary(surface_id);
          CREATE INDEX idx_verse_word_ref ON verse_word(book, chapter, verse);
          CREATE INDEX idx_verse_word_surface ON verse_word(surface_id);
 
@@ -419,7 +439,32 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
             SELECT surface_id, text, occurrences, parsed
             FROM surface
             WHERE language = 'aramaic'
-            ORDER BY occurrences DESC;",
+            ORDER BY occurrences DESC;
+
+         CREATE VIEW review_morphology_alternatives AS
+            SELECT DISTINCT s.surface_id, s.text, s.occurrences,
+                   p.lemma AS primary_lemma, p.morph AS primary_morph,
+                   'verb' AS generated_type,
+                   a.root AS generated_lexeme,
+                   a.binyan || ' ' || a.form ||
+                     CASE WHEN a.pgn = '' THEN '' ELSE ' ' || a.pgn END
+                     AS generated_morph,
+                   a.prefix AS generated_prefix,
+                   a.obj_suffix AS generated_suffix
+            FROM oshb_primary p
+            JOIN surface s ON s.surface_id = p.surface_id
+            JOIN analyses a ON a.surface_id = p.surface_id
+            UNION ALL
+            SELECT DISTINCT s.surface_id, s.text, s.occurrences,
+                   p.lemma AS primary_lemma, p.morph AS primary_morph,
+                   'noun' AS generated_type,
+                   n.stem AS generated_lexeme,
+                   n.kind || ' ' || n.label AS generated_morph,
+                   n.prefix AS generated_prefix,
+                   '' AS generated_suffix
+            FROM oshb_primary p
+            JOIN surface s ON s.surface_id = p.surface_id
+            JOIN noun_analyses n ON n.surface_id = p.surface_id;",
     )?;
     Ok(())
 }
@@ -1248,6 +1293,45 @@ fn build_hebrew(
         // tutor's verse selection ranks on. min_occ is the rarest constituent
         // surface (the verse's bottleneck word); sum_occ its total commonness.
         populate_verse_tables(&tx, &occurrences, &counts, &concept_masks)?;
+
+        if let Some(dir) = morphhb_dir.filter(|dir| dir.join("wlc").exists()) {
+            let primary = crate::oshb::align_primary(dir, &surfaces, &occurrences)?;
+            let exact = primary
+                .iter()
+                .filter(|analysis| analysis.exact_surface)
+                .count();
+            info!(
+                "  aligned {} OSHB primary analyses ({} exact-pointed, {} consonantal)",
+                primary.len(),
+                exact,
+                primary.len() - exact
+            );
+            tx.execute(
+                "INSERT INTO morphology_sources(source_id, name, url, license) \
+                 VALUES ('oshb', 'Open Scriptures Hebrew Bible', \
+                         'https://github.com/openscriptures/morphhb', 'CC BY 4.0')",
+                [],
+            )?;
+            let mut primary_stmt = tx.prepare(
+                "INSERT INTO oshb_primary(book, chapter, verse, position, surface_id, \
+                 source_word, oshb_id, lemma, morph, exact_surface) \
+                 VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)",
+            )?;
+            for analysis in primary {
+                primary_stmt.execute((
+                    analysis.book,
+                    analysis.chapter,
+                    analysis.verse,
+                    analysis.position as i64,
+                    analysis.surface_id as i64,
+                    &analysis.source.word,
+                    &analysis.source.id,
+                    &analysis.source.lemma,
+                    &analysis.source.morph,
+                    analysis.exact_surface as i64,
+                ))?;
+            }
+        }
     }
     tx.commit()?;
 

@@ -8,6 +8,7 @@ mod harness;
 mod hebrew_db;
 mod lexicon_db;
 mod occurrences;
+mod oshb;
 mod prefilter;
 mod proper_names;
 mod sedra;

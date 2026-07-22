@@ -104,6 +104,9 @@ pub struct HebrewWord {
     pub root: String,
     /// First BDB gloss for the looked-up lexeme/root.
     pub gloss: String,
+    /// Contextual part of speech. OSHB supplies this at occurrence level;
+    /// mechanically resolved words may leave it unset.
+    pub part_of_speech: Option<String>,
     /// Binyan (Qal, Niphal, …) for verbs; `None` for nouns.
     pub form: Option<String>,
     /// Tense/aspect (Perfect, Imperfect, Imperative, …) for verbs.
@@ -127,6 +130,231 @@ pub struct HebrewWord {
     /// words as "(a name)" and never lets them inherit their (usually
     /// spurious) root's corpus frequency.
     pub is_name: bool,
+}
+
+#[derive(Clone, Debug, Eq, Hash, PartialEq)]
+struct OshbAnalysis {
+    source_word: String,
+    lemma: String,
+    morph: String,
+}
+
+fn oshb_label(code: char, labels: &[(char, &str)]) -> Option<String> {
+    labels
+        .iter()
+        .find(|(key, _)| *key == code)
+        .map(|(_, label)| (*label).to_string())
+}
+
+fn oshb_person(code: char) -> Option<String> {
+    oshb_label(code, &[('1', "First"), ('2', "Second"), ('3', "Third")])
+}
+
+fn oshb_gender(code: char) -> Option<String> {
+    oshb_label(
+        code,
+        &[
+            ('b', "Both"),
+            ('c', "Common"),
+            ('f', "Feminine"),
+            ('m', "Masculine"),
+        ],
+    )
+}
+
+fn oshb_number(code: char) -> Option<String> {
+    oshb_label(code, &[('d', "Dual"), ('p', "Plural"), ('s', "Singular")])
+}
+
+fn oshb_state(code: char) -> Option<String> {
+    oshb_label(
+        code,
+        &[('a', "Absolute"), ('c', "Construct"), ('d', "Determined")],
+    )
+}
+
+fn oshb_binyan(code: char, aramaic: bool) -> Option<String> {
+    let hebrew = [
+        ('q', "Qal"),
+        ('N', "Niphal"),
+        ('p', "Piel"),
+        ('P', "Pual"),
+        ('h', "Hiphil"),
+        ('H', "Hophal"),
+        ('t', "Hithpael"),
+        ('o', "Polel"),
+        ('O', "Polal"),
+        ('r', "Hithpolel"),
+        ('m', "Poel"),
+        ('M', "Poal"),
+        ('k', "Palel"),
+        ('K', "Pulal"),
+        ('Q', "Qal passive"),
+        ('l', "Pilpel"),
+        ('L', "Polpal"),
+        ('f', "Hithpalpel"),
+        ('D', "Nithpael"),
+        ('j', "Pealal"),
+        ('i', "Pilel"),
+        ('u', "Hothpaal"),
+        ('c', "Tiphil"),
+        ('v', "Hishtaphel"),
+        ('w', "Nithpalel"),
+        ('y', "Nithpoel"),
+        ('z', "Hithpoel"),
+    ];
+    let aramaic_labels = [
+        ('q', "Peal"),
+        ('Q', "Peil"),
+        ('u', "Hithpeel"),
+        ('p', "Pael"),
+        ('P', "Ithpaal"),
+        ('M', "Hithpaal"),
+        ('a', "Aphel"),
+        ('h', "Haphel"),
+        ('s', "Saphel"),
+        ('e', "Shaphel"),
+        ('H', "Hophal"),
+        ('i', "Ithpeel"),
+        ('t', "Hishtaphel"),
+        ('v', "Ishtaphel"),
+        ('w', "Hithaphel"),
+        ('o', "Polel"),
+        ('z', "Ithpoel"),
+        ('r', "Hithpolel"),
+        ('f', "Hithpalpel"),
+        ('b', "Hephal"),
+        ('c', "Tiphel"),
+        ('m', "Poel"),
+        ('l', "Palpel"),
+        ('L', "Ithpalpel"),
+        ('O', "Ithpolel"),
+        ('G', "Ittaphal"),
+    ];
+    oshb_label(code, if aramaic { &aramaic_labels } else { &hebrew })
+}
+
+fn oshb_verb_form(code: char) -> Option<String> {
+    oshb_label(
+        code,
+        &[
+            ('p', "Perfect"),
+            ('q', "Perfect"),
+            ('i', "Imperfect"),
+            ('w', "Wayyiqtol"),
+            ('h', "Cohortative"),
+            ('j', "Jussive"),
+            ('v', "Imperative"),
+            ('r', "Participle (act.)"),
+            ('s', "Participle (pass.)"),
+            ('a', "Inf. Absolute"),
+            ('c', "Inf. Construct"),
+        ],
+    )
+}
+
+fn oshb_strong(lemma: &str, main_index: usize) -> Option<i64> {
+    let segment = lemma.split('/').nth(main_index).or_else(|| {
+        lemma
+            .split('/')
+            .rev()
+            .find(|s| s.chars().any(|c| c.is_ascii_digit()))
+    })?;
+    let digits: String = segment
+        .chars()
+        .skip_while(|c| !c.is_ascii_digit())
+        .take_while(char::is_ascii_digit)
+        .collect();
+    digits.parse().ok()
+}
+
+/// Replace generated morphology with the contextual OSHB reading. The
+/// generated row still supplies its learner gloss and remains stored as a
+/// reviewable alternative; all grammatical fields are cleared before the
+/// source reading is decoded so a generated verb cannot leak into an OSHB noun.
+fn apply_oshb_analysis(mut word: HebrewWord, analysis: &OshbAnalysis) -> (HebrewWord, Option<i64>) {
+    let aramaic = analysis.morph.starts_with('A');
+    let body = analysis
+        .morph
+        .strip_prefix(['H', 'A'])
+        .unwrap_or(&analysis.morph);
+    let segments: Vec<&str> = body.split('/').collect();
+    let Some(main_index) = segments
+        .iter()
+        .rposition(|segment| !segment.starts_with('S'))
+    else {
+        return (word, None);
+    };
+    let main: Vec<char> = segments[main_index].chars().collect();
+    let Some(pos) = main.first().copied() else {
+        return (word, None);
+    };
+
+    word.part_of_speech = Some(
+        match pos {
+            'A' => "Adjective",
+            'C' => "Conjunction",
+            'D' => "Adverb",
+            'N' if main.get(1) == Some(&'p') => "Proper noun",
+            'N' => "Noun",
+            'P' => "Pronoun",
+            'R' => "Preposition",
+            'T' => "Particle",
+            'V' => "Verb",
+            _ => "Other",
+        }
+        .to_string(),
+    );
+    word.form = None;
+    word.tense = None;
+    word.person = None;
+    word.gender = None;
+    word.number = None;
+    word.state = None;
+    word.vav_con = false;
+    word.obj_suffix = None;
+    word.is_name = pos == 'N' && matches!(main.get(1), Some('p' | 'g'));
+
+    let source_parts: Vec<&str> = analysis.source_word.split('/').collect();
+    word.prefix = (main_index > 0 && source_parts.len() > main_index)
+        .then(|| crate::normalize_surface(&source_parts[..main_index].concat()));
+
+    match pos {
+        'V' if main.len() >= 3 => {
+            word.form = oshb_binyan(main[1], aramaic);
+            word.tense = oshb_verb_form(main[2]);
+            word.vav_con = main[2] == 'q';
+            if matches!(main[2], 'r' | 's') {
+                word.gender = main.get(3).and_then(|code| oshb_gender(*code));
+                word.number = main.get(4).and_then(|code| oshb_number(*code));
+                word.state = main.get(5).and_then(|code| oshb_state(*code));
+            } else if !matches!(main[2], 'a' | 'c') {
+                word.person = main.get(3).and_then(|code| oshb_person(*code));
+                word.gender = main.get(4).and_then(|code| oshb_gender(*code));
+                word.number = main.get(5).and_then(|code| oshb_number(*code));
+            }
+        }
+        'N' | 'A' if main.len() >= 5 => {
+            word.gender = oshb_gender(main[2]);
+            word.number = oshb_number(main[3]);
+            word.state = oshb_state(main[4]);
+        }
+        'P' if main.len() >= 5 => {
+            word.person = oshb_person(main[2]);
+            word.gender = oshb_gender(main[3]);
+            word.number = oshb_number(main[4]);
+        }
+        _ => {}
+    }
+    if let Some(suffix) = segments
+        .iter()
+        .skip(main_index + 1)
+        .find_map(|segment| segment.strip_prefix("Sp"))
+    {
+        word.obj_suffix = (!suffix.is_empty()).then(|| suffix.to_string());
+    }
+
+    (word, oshb_strong(&analysis.lemma, main_index))
 }
 
 /// Reader-only metadata aligned with the lexical words in one verse.
@@ -811,7 +1039,12 @@ fn morph_summary(info: &HebrewWord) -> String {
         }
         s
     } else {
-        let mut parts = vec!["noun".to_string()];
+        let mut parts = vec![
+            info.part_of_speech
+                .as_deref()
+                .unwrap_or("noun")
+                .to_lowercase(),
+        ];
         if let Some(number) = &info.number {
             parts.push(number.to_lowercase());
         }
@@ -1205,7 +1438,10 @@ pub fn inflected_gloss(w: &HebrewWord) -> String {
     }
     if w.form.is_some() {
         inflect_verb(w, &base)
-    } else if w.tense.is_none() && (w.number.is_some() || w.state.is_some()) {
+    } else if w.tense.is_none()
+        && w.part_of_speech.as_deref() != Some("Adjective")
+        && (w.number.is_some() || w.state.is_some())
+    {
         inflect_noun(w, &base)
     } else {
         // Function word / proper noun: nothing to inflect, but an attached
@@ -1762,9 +1998,10 @@ impl Bible {
                 .map_or_else(Vec::new, |metadata| metadata.glosses));
         }
 
-        let mut stmt = self.db.prepare("SELECT s.text FROM hebrewdb.verse_word vw JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 ORDER BY vw.position")?;
+        let mut stmt = self.db.prepare("SELECT s.text, vw.position FROM hebrewdb.verse_word vw JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 ORDER BY vw.position")?;
         stmt.query_map([book, chapter, verse], |r| {
             let word: String = r.get(0)?;
+            let position: i64 = r.get(1)?;
             // A correction made from the word-info sheet must also win in the
             // interlinear.  Static curated glosses remain ahead of the baked
             // lexicon, but they must not shadow a newer device-local edit.
@@ -1778,10 +2015,12 @@ impl Bible {
             if let Some(curated) = crate::vocab_gloss::curated_gloss(&self.db, &word) {
                 return Ok(curated.gloss.to_string());
             }
-            Ok(self.hebrew_word_info(&word).map_or_else(String::new, |w| {
-                let gloss = inflected_gloss(&w);
-                if gloss.is_empty() { w.gloss } else { gloss }
-            }))
+            Ok(self
+                .hebrew_word_info_at(&word, book, chapter, verse, position as usize)
+                .map_or_else(String::new, |w| {
+                    let gloss = inflected_gloss(&w);
+                    if gloss.is_empty() { w.gloss } else { gloss }
+                }))
         })?
         .collect()
     }
@@ -1799,18 +2038,21 @@ impl Bible {
         verse: u8,
     ) -> rusqlite::Result<Vec<bool>> {
         let mut stmt = self.db.prepare(
-            "SELECT s.text FROM hebrewdb.verse_word vw \
+            "SELECT s.text, vw.position FROM hebrewdb.verse_word vw \
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
              WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 \
              ORDER BY vw.position",
         )?;
-        stmt.query_map([book, chapter, verse], |r| r.get::<_, String>(0))?
-            .map(|word| {
-                Ok(self
-                    .hebrew_word_info(&word?)
-                    .is_some_and(|info| info.is_name))
-            })
-            .collect()
+        stmt.query_map([book, chapter, verse], |r| {
+            Ok((r.get::<_, String>(0)?, r.get::<_, i64>(1)?))
+        })?
+        .map(|row| {
+            let (word, position) = row?;
+            Ok(self
+                .hebrew_word_info_at(&word, book, chapter, verse, position as usize)
+                .is_some_and(|info| info.is_name))
+        })
+        .collect()
     }
 
     /// Reader metadata for every verse in a chapter, keyed by verse number.
@@ -1834,21 +2076,52 @@ impl Bible {
             return self.nt_chapter_reader_metadata(book, chapter, include_glosses, include_names);
         }
 
-        let mut stmt = self.db.prepare(
-            "SELECT vw.verse, vw.surface_id, s.text \
+        let has_oshb = self
+            .db
+            .query_row(
+                "SELECT EXISTS(SELECT 1 FROM hebrewdb.sqlite_master \
+                 WHERE type = 'table' AND name = 'oshb_primary')",
+                [],
+                |row| row.get::<_, i64>(0),
+            )
+            .unwrap_or(0)
+            != 0;
+        let sql = if has_oshb {
+            "SELECT vw.verse, vw.position, vw.surface_id, s.text, \
+                    p.source_word, p.lemma, p.morph \
+             FROM hebrewdb.verse_word vw \
+             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+             LEFT JOIN hebrewdb.oshb_primary p \
+               ON p.book = vw.book AND p.chapter = vw.chapter \
+              AND p.verse = vw.verse AND p.position = vw.position \
+              AND p.surface_id = vw.surface_id \
+             WHERE vw.book = ?1 AND vw.chapter = ?2 \
+             ORDER BY vw.verse, vw.position"
+        } else {
+            "SELECT vw.verse, vw.position, vw.surface_id, s.text, \
+                    NULL, NULL, NULL \
              FROM hebrewdb.verse_word vw \
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
              WHERE vw.book = ?1 AND vw.chapter = ?2 \
-             ORDER BY vw.verse, vw.position",
-        )?;
+             ORDER BY vw.verse, vw.position"
+        };
+        let mut stmt = self.db.prepare(sql)?;
         let mut rows = stmt.query([book, chapter])?;
         let mut metadata = HashMap::<u8, ReaderVerseMetadata>::new();
-        let mut info_cache = HashMap::<i64, Option<HebrewWord>>::new();
+        let mut info_cache = HashMap::<(i64, Option<OshbAnalysis>), Option<HebrewWord>>::new();
 
         while let Some(row) = rows.next()? {
             let verse: u8 = row.get(0)?;
-            let surface_id: i64 = row.get(1)?;
-            let word: String = row.get(2)?;
+            let _position: i64 = row.get(1)?;
+            let surface_id: i64 = row.get(2)?;
+            let word: String = row.get(3)?;
+            let analysis = row
+                .get::<_, Option<String>>(4)?
+                .map(|source_word| OshbAnalysis {
+                    source_word,
+                    lemma: row.get::<_, String>(5).unwrap_or_default(),
+                    morph: row.get::<_, String>(6).unwrap_or_default(),
+                });
             let verse_metadata = metadata.entry(verse).or_default();
 
             let runtime_gloss = include_glosses
@@ -1860,11 +2133,15 @@ impl Bible {
             let needs_info = include_names
                 || (include_glosses && runtime_gloss.is_none() && curated_gloss.is_none());
             if needs_info {
-                info_cache.entry(surface_id).or_insert_with(|| {
-                    self.hebrew_word_info_by_surface_id(surface_id, word.clone())
-                });
+                info_cache
+                    .entry((surface_id, analysis.clone()))
+                    .or_insert_with(|| {
+                        self.hebrew_word_info_with_oshb(surface_id, word.clone(), analysis.as_ref())
+                    });
             }
-            let info = info_cache.get(&surface_id).and_then(|info| info.as_ref());
+            let info = info_cache
+                .get(&(surface_id, analysis))
+                .and_then(|info| info.as_ref());
 
             if include_glosses {
                 let gloss = if let Some((_, gloss, reader_gloss)) = runtime_gloss {
@@ -2006,6 +2283,129 @@ impl Bible {
             .optional()
             .ok()??;
         self.hebrew_word_info_by_surface_id(surface_id, norm)
+    }
+
+    /// Resolve one concrete OT token. Where the generated database contains an
+    /// aligned OSHB row, its contextual lemma and morphology are authoritative;
+    /// generated analyses remain the fallback for unaligned source tokens and
+    /// for callers that have no verse position (such as vocabulary lists).
+    pub fn hebrew_word_info_at(
+        &self,
+        word: &str,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        position: usize,
+    ) -> Option<HebrewWord> {
+        let norm = crate::normalize_surface(word);
+        let surface_id: i64 = self
+            .db
+            .query_row(
+                "SELECT vw.surface_id FROM hebrewdb.verse_word vw \
+                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+                 WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3 \
+                   AND vw.position = ?4 AND s.text = ?5",
+                rusqlite::params![book, chapter, verse, position as i64, norm],
+                |row| row.get(0),
+            )
+            .optional()
+            .ok()??;
+        let analysis = self.oshb_analysis_at(book, chapter, verse, position, surface_id);
+        self.hebrew_word_info_with_oshb(surface_id, norm, analysis.as_ref())
+    }
+
+    fn oshb_analysis_at(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        position: usize,
+        surface_id: i64,
+    ) -> Option<OshbAnalysis> {
+        self.db
+            .query_row(
+                "SELECT source_word, lemma, morph FROM hebrewdb.oshb_primary \
+                 WHERE book = ?1 AND chapter = ?2 AND verse = ?3 \
+                   AND position = ?4 AND surface_id = ?5",
+                rusqlite::params![book, chapter, verse, position as i64, surface_id],
+                |row| {
+                    Ok(OshbAnalysis {
+                        source_word: row.get(0)?,
+                        lemma: row.get(1)?,
+                        morph: row.get(2)?,
+                    })
+                },
+            )
+            .optional()
+            .ok()
+            .flatten()
+    }
+
+    fn oshb_lexeme(&self, strong: i64) -> Option<(String, String, bool)> {
+        let mut stmt = self
+            .db
+            .prepare(
+                "SELECT b.root, b.gloss, b.pos FROM lexdb.lexical_index i \
+                 JOIN lexdb.bdb b ON b.bdb_id = i.bdb_id \
+                 WHERE i.strong = ?1 ORDER BY b.bdb_id",
+            )
+            .ok()?;
+        let rows: Vec<(String, String, String)> = stmt
+            .query_map([strong], |row| {
+                Ok((
+                    row.get::<_, String>(0)?,
+                    row.get::<_, Option<String>>(1)?.unwrap_or_default(),
+                    row.get::<_, Option<String>>(2)?.unwrap_or_default(),
+                ))
+            })
+            .ok()?
+            .collect::<rusqlite::Result<_>>()
+            .ok()?;
+        let root = rows
+            .iter()
+            .map(|row| row.0.as_str())
+            .find(|root| !root.is_empty())?;
+        let gloss = rows
+            .iter()
+            .map(|row| row.1.as_str())
+            .find(|gloss| {
+                !gloss.is_empty() && !cross_reference_gloss(gloss) && !root_stub_gloss(gloss)
+            })
+            .unwrap_or_default();
+        let is_name = rows.iter().any(|row| name_pos(&row.2));
+        Some((root.to_string(), gloss.to_string(), is_name))
+    }
+
+    fn hebrew_word_info_with_oshb(
+        &self,
+        surface_id: i64,
+        norm: String,
+        analysis: Option<&OshbAnalysis>,
+    ) -> Option<HebrewWord> {
+        let generated = self.hebrew_word_by_surface_id(surface_id, norm.clone());
+        let mut info = match analysis {
+            Some(analysis) => {
+                let seed = generated.unwrap_or_else(|| HebrewWord {
+                    word: norm.clone(),
+                    ..Default::default()
+                });
+                let (mut sourced, strong) = apply_oshb_analysis(seed, analysis);
+                if let Some((root, gloss, is_name)) = strong.and_then(|s| self.oshb_lexeme(s)) {
+                    sourced.root = root;
+                    if sourced.gloss.is_empty() {
+                        sourced.gloss = gloss;
+                    }
+                    sourced.is_name |= is_name;
+                }
+                sourced
+            }
+            None => generated?,
+        };
+        if let Some((root, gloss, _)) = self.lexicon_entry_override(&info.word).ok().flatten() {
+            info.root = root;
+            info.gloss = gloss;
+        }
+        Some(info)
     }
 
     fn hebrew_word_info_by_surface_id(&self, surface_id: i64, norm: String) -> Option<HebrewWord> {
@@ -2198,6 +2598,7 @@ impl Bible {
                 word: norm,
                 root: root.clone(),
                 gloss,
+                part_of_speech: Some("Verb".to_string()),
                 form: (!binyan.is_empty()).then(|| binyan.clone()),
                 tense: (!tense.is_empty()).then(|| tense.clone()),
                 person,
@@ -2291,6 +2692,7 @@ impl Bible {
                 word: norm,
                 root: n.root,
                 gloss: n.gloss,
+                part_of_speech: Some(if n.is_name { "Proper noun" } else { "Noun" }.to_string()),
                 form: None,
                 tense: None,
                 person: None,
@@ -2326,6 +2728,7 @@ impl Bible {
                 word: norm,
                 root,
                 gloss,
+                part_of_speech: None,
                 form: None,
                 tense: None,
                 person: None,
@@ -2347,6 +2750,7 @@ impl Bible {
                 word: norm,
                 root: String::new(),
                 gloss: curated.gloss.to_string(),
+                part_of_speech: None,
                 form: None,
                 tense: None,
                 person: None,
@@ -2385,6 +2789,7 @@ impl Bible {
                 word: norm,
                 root,
                 gloss,
+                part_of_speech: None,
                 form: None,
                 tense: None,
                 person: None,
@@ -3236,6 +3641,91 @@ mod tests {
                 return;
             }
         };
+    }
+
+    #[test]
+    fn oshb_occurrence_decodes_contextual_verb_morphology() {
+        let seed = HebrewWord {
+            word: "וַיֹּאמֶר".to_string(),
+            root: "אמר".to_string(),
+            gloss: "say".to_string(),
+            ..Default::default()
+        };
+        let analysis = OshbAnalysis {
+            source_word: "וַ/יֹּאמֶר".to_string(),
+            lemma: "c/559".to_string(),
+            morph: "HC/Vqw3ms".to_string(),
+        };
+        let (word, strong) = apply_oshb_analysis(seed, &analysis);
+        assert_eq!(strong, Some(559));
+        assert_eq!(word.part_of_speech.as_deref(), Some("Verb"));
+        assert_eq!(word.form.as_deref(), Some("Qal"));
+        assert_eq!(word.tense.as_deref(), Some("Wayyiqtol"));
+        assert_eq!(word.person.as_deref(), Some("Third"));
+        assert_eq!(word.gender.as_deref(), Some("Masculine"));
+        assert_eq!(word.number.as_deref(), Some("Singular"));
+        assert_eq!(word.prefix.as_deref(), Some("וַ"));
+    }
+
+    #[test]
+    fn oshb_adjective_does_not_receive_english_noun_inflection() {
+        let seed = HebrewWord {
+            word: "הַטּוֹב".to_string(),
+            gloss: "good".to_string(),
+            ..Default::default()
+        };
+        let analysis = OshbAnalysis {
+            source_word: "הַ/טּוֹב".to_string(),
+            lemma: "d/2896".to_string(),
+            morph: "HTd/Aamsa".to_string(),
+        };
+        let (word, _) = apply_oshb_analysis(seed, &analysis);
+        assert_eq!(word.part_of_speech.as_deref(), Some("Adjective"));
+        assert_eq!(word.gender.as_deref(), Some("Masculine"));
+        assert_eq!(word.number.as_deref(), Some("Singular"));
+        assert_eq!(word.state.as_deref(), Some("Absolute"));
+        assert_eq!(inflected_gloss(&word), "the good");
+    }
+
+    #[test]
+    fn oshb_occurrence_disambiguates_same_surface_in_context() {
+        let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("hebrew.db").exists() {
+            eprintln!("skipping: data/*.db not generated in this checkout");
+            return;
+        }
+        let bible = Bible::open(&data).unwrap();
+        let has_oshb = bible
+            .db
+            .query_row(
+                "SELECT EXISTS(SELECT 1 FROM hebrewdb.sqlite_master \
+                 WHERE type = 'table' AND name = 'oshb_primary')",
+                [],
+                |row| row.get::<_, i64>(0),
+            )
+            .unwrap_or(0)
+            != 0;
+        if !has_oshb {
+            eprintln!("skipping: hebrew.db predates OSHB occurrence morphology");
+            return;
+        }
+
+        let preposition = bible
+            .hebrew_word_info_at("לְךָ", 1, 3, 11, 3)
+            .expect("Genesis 3:11 occurrence");
+        assert_eq!(preposition.part_of_speech.as_deref(), Some("Preposition"));
+        assert!(preposition.form.is_none());
+        assert_eq!(preposition.obj_suffix.as_deref(), Some("2ms"));
+
+        let imperative = bible
+            .hebrew_word_info_at("לְךָ", 7, 19, 13, 2)
+            .expect("Judges 19:13 occurrence");
+        assert_eq!(imperative.part_of_speech.as_deref(), Some("Verb"));
+        assert_eq!(imperative.form.as_deref(), Some("Qal"));
+        assert_eq!(imperative.tense.as_deref(), Some("Imperative"));
+        assert_eq!(imperative.person.as_deref(), Some("Second"));
+        assert_eq!(imperative.gender.as_deref(), Some("Masculine"));
+        assert_eq!(imperative.number.as_deref(), Some("Singular"));
     }
 
     #[test]
