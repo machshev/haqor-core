@@ -2012,8 +2012,9 @@ impl Bible {
             let position: i64 = r.get(1)?;
             let source_gloss: String = r.get(2)?;
             // A correction made from the word-info sheet must also win in the
-            // interlinear.  Static curated glosses remain ahead of the baked
-            // lexicon, but they must not shadow a newer device-local edit.
+            // interlinear. Static curated reader overrides win over imported
+            // occurrence glosses, but must not shadow a newer device-local
+            // edit.
             if let Some((_, gloss, reader_gloss)) = self.runtime_lexicon_entry(&word) {
                 return Ok(if reader_gloss.is_empty() {
                     gloss
@@ -2021,11 +2022,11 @@ impl Bible {
                     reader_gloss
                 });
             }
-            if !source_gloss.is_empty() {
-                return Ok(source_gloss);
-            }
             if let Some(curated) = crate::vocab_gloss::curated_gloss(&self.db, &word) {
                 return Ok(curated.gloss.to_string());
+            }
+            if !source_gloss.is_empty() {
+                return Ok(source_gloss);
             }
             Ok(self
                 .hebrew_word_info_at(&word, book, chapter, verse, position as usize)
@@ -2168,10 +2169,10 @@ impl Bible {
                     } else {
                         reader_gloss
                     }
-                } else if !source_gloss.is_empty() {
-                    source_gloss
                 } else if let Some(curated) = curated_gloss {
                     curated.gloss.to_string()
+                } else if !source_gloss.is_empty() {
+                    source_gloss
                 } else if let Some(info) = info {
                     let gloss = inflected_gloss(info);
                     if gloss.is_empty() {
@@ -4325,6 +4326,7 @@ mod tests {
             .expect("object marker resolves");
         assert_eq!(info.gloss, "mark of the accusative");
         let glosses = bible.verse_glosses(1, 1, 1).unwrap();
+        assert_eq!(glosses[2], "Mighty-ones");
         assert_eq!(glosses[3], "←");
         assert_eq!(glosses[5], "and ←");
     }
