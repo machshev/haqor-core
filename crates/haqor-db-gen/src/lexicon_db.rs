@@ -43,7 +43,8 @@ fn load_overlays(db: &mut Connection, path: &Path) -> Result<usize> {
         "CREATE TABLE lexicon_overrides(
             surface TEXT PRIMARY KEY, root TEXT NOT NULL, gloss TEXT NOT NULL);
          CREATE TABLE word_glosses(
-            surface TEXT PRIMARY KEY, gloss TEXT NOT NULL, note TEXT, is_name INTEGER NOT NULL);
+            surface TEXT PRIMARY KEY, gloss TEXT NOT NULL, note TEXT,
+            is_name INTEGER NOT NULL, reader_override INTEGER NOT NULL);
          CREATE TABLE primary_analysis_overrides(
             surface TEXT PRIMARY KEY, analysis_type TEXT NOT NULL,
             root TEXT NOT NULL, binyan TEXT NOT NULL, form TEXT NOT NULL,
@@ -65,7 +66,8 @@ fn load_overlays(db: &mut Connection, path: &Path) -> Result<usize> {
             total += 1;
         }
         let mut words = tx.prepare(
-            "INSERT INTO word_glosses(surface, gloss, note, is_name) VALUES (?1, ?2, ?3, ?4)",
+            "INSERT INTO word_glosses(surface, gloss, note, is_name, reader_override)
+             VALUES (?1, ?2, ?3, ?4, ?5)",
         )?;
         for row in overlay["word_glosses"].as_array().unwrap() {
             words.execute((
@@ -73,6 +75,11 @@ fn load_overlays(db: &mut Connection, path: &Path) -> Result<usize> {
                 row["gloss"].as_str().unwrap_or(""),
                 row.get("note").and_then(Value::as_str),
                 i64::from(row.get("is_name").and_then(Value::as_bool).unwrap_or(false)),
+                i64::from(
+                    row.get("reader_override")
+                        .and_then(Value::as_bool)
+                        .unwrap_or(false),
+                ),
             ))?;
             total += 1;
         }

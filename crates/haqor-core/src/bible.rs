@@ -2012,9 +2012,9 @@ impl Bible {
             let position: i64 = r.get(1)?;
             let source_gloss: String = r.get(2)?;
             // A correction made from the word-info sheet must also win in the
-            // interlinear. Static curated reader overrides win over imported
-            // occurrence glosses, but must not shadow a newer device-local
-            // edit.
+            // interlinear. Explicit static reader overrides come next, while
+            // ordinary curated glosses remain fallbacks behind contextual
+            // occurrence glosses.
             if let Some((_, gloss, reader_gloss)) = self.runtime_lexicon_entry(&word) {
                 return Ok(if reader_gloss.is_empty() {
                     gloss
@@ -2022,11 +2022,14 @@ impl Bible {
                     reader_gloss
                 });
             }
-            if let Some(curated) = crate::vocab_gloss::curated_gloss(&self.db, &word) {
+            if let Some(curated) = crate::vocab_gloss::curated_reader_gloss(&self.db, &word) {
                 return Ok(curated.gloss.to_string());
             }
             if !source_gloss.is_empty() {
                 return Ok(source_gloss);
+            }
+            if let Some(curated) = crate::vocab_gloss::curated_gloss(&self.db, &word) {
+                return Ok(curated.gloss.to_string());
             }
             Ok(self
                 .hebrew_word_info_at(&word, book, chapter, verse, position as usize)
@@ -2135,13 +2138,18 @@ impl Bible {
                     lemma: row.get::<_, String>(5).unwrap_or_default(),
                     morph: row.get::<_, String>(6).unwrap_or_default(),
                 });
-            let source_gloss = include_glosses
-                .then(|| row.get::<_, String>(7).unwrap_or_default())
-                .unwrap_or_default();
+            let source_gloss = if include_glosses {
+                row.get::<_, String>(7).unwrap_or_default()
+            } else {
+                String::new()
+            };
             let verse_metadata = metadata.entry(verse).or_default();
 
             let runtime_gloss = include_glosses
                 .then(|| self.runtime_lexicon_entry(&word))
+                .flatten();
+            let reader_override = include_glosses
+                .then(|| crate::vocab_gloss::curated_reader_gloss(&self.db, &word))
                 .flatten();
             let curated_gloss = include_glosses
                 .then(|| crate::vocab_gloss::curated_gloss(&self.db, &word))
@@ -2149,6 +2157,7 @@ impl Bible {
             let needs_info = include_names
                 || (include_glosses
                     && runtime_gloss.is_none()
+                    && reader_override.is_none()
                     && curated_gloss.is_none()
                     && source_gloss.is_empty());
             if needs_info {
@@ -2169,10 +2178,12 @@ impl Bible {
                     } else {
                         reader_gloss
                     }
-                } else if let Some(curated) = curated_gloss {
+                } else if let Some(curated) = reader_override {
                     curated.gloss.to_string()
                 } else if !source_gloss.is_empty() {
                     source_gloss
+                } else if let Some(curated) = curated_gloss {
+                    curated.gloss.to_string()
                 } else if let Some(info) = info {
                     let gloss = inflected_gloss(info);
                     if gloss.is_empty() {

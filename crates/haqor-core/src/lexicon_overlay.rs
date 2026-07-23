@@ -60,6 +60,12 @@ pub fn validate(value: &Value) -> Result<()> {
             if gloss.is_empty() && !row.get("is_name").and_then(Value::as_bool).unwrap_or(false) {
                 bail!("{section}[{i}].gloss must not be empty");
             }
+            if row
+                .get("reader_override")
+                .is_some_and(|value| !value.is_boolean())
+            {
+                bail!("{section}[{i}].reader_override must be a boolean");
+            }
             if !seen.insert(surface) {
                 bail!("duplicate surface `{surface}` in {section}");
             }

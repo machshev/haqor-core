@@ -56,10 +56,29 @@ fn flush_marks(out: &mut String, marks: &mut Vec<u32>) {
 /// The curated gloss for `surface`, if one is registered. Normalises the input
 /// through [`vocab_key`] before lookup.
 pub fn curated_gloss(db: &Connection, surface: &str) -> Option<CuratedGloss> {
+    query_curated_gloss(db, surface, false)
+}
+
+/// An explicit reader override for `surface`, if one is registered.
+///
+/// Unlike an ordinary curated gloss, this is intended to replace an imported
+/// occurrence-level gloss rather than merely provide a lexical fallback.
+pub fn curated_reader_gloss(db: &Connection, surface: &str) -> Option<CuratedGloss> {
+    query_curated_gloss(db, surface, true)
+}
+
+fn query_curated_gloss(
+    db: &Connection,
+    surface: &str,
+    reader_override_only: bool,
+) -> Option<CuratedGloss> {
     let key = vocab_key(surface);
-    let mut stmt = db
-        .prepare("SELECT surface, gloss, note FROM lexdb.word_glosses")
-        .ok()?;
+    let query = if reader_override_only {
+        "SELECT surface, gloss, note FROM lexdb.word_glosses WHERE reader_override = 1"
+    } else {
+        "SELECT surface, gloss, note FROM lexdb.word_glosses"
+    };
+    let mut stmt = db.prepare(query).ok()?;
     stmt.query_map([], |row| {
         Ok((
             row.get::<_, String>(0)?,
@@ -129,6 +148,11 @@ mod tests {
         assert_eq!(curated_gloss(&db, "וְאֶת").unwrap().gloss, "and ←");
         assert_eq!(curated_gloss(&db, "וְאֵת").unwrap().gloss, "and ←");
         assert!(curated_gloss(&db, "כִּי").unwrap().note.is_none());
+        assert_eq!(
+            curated_reader_gloss(&db, "אֱלֹהִים").unwrap().gloss,
+            "Mighty-ones"
+        );
+        assert!(curated_reader_gloss(&db, "עַל").is_none());
         // An ordinary content word is not curated.
         assert!(curated_gloss(&db, "בָּרָא").is_none());
     }

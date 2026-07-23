@@ -6,7 +6,9 @@ Rust source. The file has three arrays:
 - `lexicon_entries` changes the root and base gloss selected for a pointed
   surface when the imported BDB data is absent or chooses the wrong homograph.
 - `word_glosses` changes the learner-facing gloss. `note` is optional teaching
-  text and `is_name` optionally marks a proper name.
+  text, `is_name` optionally marks a proper name, and `reader_override: true`
+  makes that gloss replace an imported occurrence-level reader gloss. Without
+  that flag, the entry remains a fallback when no occurrence gloss is present.
 - `primary_analyses` pins one of `hebrew.db`'s verb or noun analyses as the
   primary reading for a surface. Use the browser editor to avoid transcribing
   its morphology fields by hand.
