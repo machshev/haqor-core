@@ -373,6 +373,7 @@ fn apply_oshb_analysis(mut word: HebrewWord, analysis: &OshbAnalysis) -> (Hebrew
 #[derive(Debug, Default)]
 pub struct ReaderVerseMetadata {
     pub glosses: Vec<String>,
+    pub morphologies: Vec<String>,
     pub names: Vec<bool>,
 }
 
@@ -2001,7 +2002,7 @@ impl Bible {
     pub fn verse_glosses(&self, book: u8, chapter: u8, verse: u8) -> rusqlite::Result<Vec<String>> {
         if book >= 40 {
             return Ok(self
-                .nt_chapter_reader_metadata(book, chapter, true, false)?
+                .nt_chapter_reader_metadata(book, chapter, true, false, false)?
                 .remove(&verse)
                 .map_or_else(Vec::new, |metadata| metadata.glosses));
         }
@@ -2083,13 +2084,20 @@ impl Bible {
         book: u8,
         chapter: u8,
         include_glosses: bool,
+        include_morphology: bool,
         include_names: bool,
     ) -> rusqlite::Result<HashMap<u8, ReaderVerseMetadata>> {
-        if !include_glosses && !include_names {
+        if !include_glosses && !include_morphology && !include_names {
             return Ok(HashMap::new());
         }
         if book >= 40 {
-            return self.nt_chapter_reader_metadata(book, chapter, include_glosses, include_names);
+            return self.nt_chapter_reader_metadata(
+                book,
+                chapter,
+                include_glosses,
+                include_morphology,
+                include_names,
+            );
         }
 
         let has_oshb = self
@@ -2154,7 +2162,7 @@ impl Bible {
             let curated_gloss = include_glosses
                 .then(|| crate::vocab_gloss::curated_gloss(&self.db, &word))
                 .flatten();
-            let needs_info = include_names
+            let needs_info = include_names || include_morphology
                 || (include_glosses
                     && runtime_gloss.is_none()
                     && reader_override.is_none()
@@ -2197,6 +2205,12 @@ impl Bible {
                 verse_metadata.glosses.push(gloss);
             }
 
+            if include_glosses || include_morphology {
+                verse_metadata.morphologies.push(
+                    info.map(morph_summary).unwrap_or_default(),
+                );
+            }
+
             if include_names {
                 verse_metadata
                     .names
@@ -2218,6 +2232,7 @@ impl Bible {
         book: u8,
         chapter: u8,
         include_glosses: bool,
+        include_morphology: bool,
         include_names: bool,
     ) -> rusqlite::Result<HashMap<u8, ReaderVerseMetadata>> {
         let mut stmt = self.db.prepare(
@@ -2239,10 +2254,11 @@ impl Bible {
         while let Some(row) = rows.next()? {
             let verse: u8 = row.get(0)?;
             let verse_metadata = metadata.entry(verse).or_default();
-            if include_glosses {
+            if include_glosses || include_morphology {
                 verse_metadata
                     .glosses
                     .push(row.get::<_, Option<String>>(1)?.unwrap_or_default());
+                verse_metadata.morphologies.push(String::new());
             }
             if include_names {
                 // SEDRA has no dependable proper-name flag. Keep the vector
@@ -4381,7 +4397,7 @@ mod tests {
         }
         let bible = Bible::open(data).unwrap();
 
-        let metadata = bible.chapter_reader_metadata(1, 1, true, true).unwrap();
+        let metadata = bible.chapter_reader_metadata(1, 1, true, false, true).unwrap();
         for verse in 1..=31 {
             let metadata = metadata.get(&verse).expect("Genesis 1 verse metadata");
             assert_eq!(
@@ -4397,7 +4413,7 @@ mod tests {
         }
         assert!(
             bible
-                .chapter_reader_metadata(1, 1, false, false)
+                .chapter_reader_metadata(1, 1, false, false, false)
                 .unwrap()
                 .is_empty()
         );
@@ -4413,7 +4429,7 @@ mod tests {
         let bible = Bible::open(data).unwrap();
 
         let text = bible.get(40, 1, 1).unwrap();
-        let mut metadata = bible.chapter_reader_metadata(40, 1, true, true).unwrap();
+        let mut metadata = bible.chapter_reader_metadata(40, 1, true, false, true).unwrap();
         let verse = metadata.remove(&1).expect("Matthew 1:1 metadata");
 
         assert_eq!(verse.glosses.len(), text.split_whitespace().count());
