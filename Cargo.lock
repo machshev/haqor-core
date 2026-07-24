@@ -462,7 +462,7 @@ dependencies = [
 
 [[package]]
 name = "haqor-admin"
-version = "0.7.4"
+version = "0.7.5"
 dependencies = [
  "anyhow",
  "chrono",
@@ -476,7 +476,7 @@ dependencies = [
 
 [[package]]
 name = "haqor-cli"
-version = "0.7.4"
+version = "0.7.5"
 dependencies = [
  "anyhow",
  "clap",
@@ -490,7 +490,7 @@ dependencies = [
 
 [[package]]
 name = "haqor-core"
-version = "0.7.4"
+version = "0.7.5"
 dependencies = [
  "anyhow",
  "env_logger",
@@ -503,7 +503,7 @@ dependencies = [
 
 [[package]]
 name = "haqor-db-gen"
-version = "0.7.4"
+version = "0.7.5"
 dependencies = [
  "anyhow",
  "csv",
@@ -518,14 +518,14 @@ dependencies = [
 
 [[package]]
 name = "haqor-morphology"
-version = "0.7.4"
+version = "0.7.5"
 dependencies = [
  "rayon",
 ]
 
 [[package]]
 name = "haqor-sync-server"
-version = "0.7.4"
+version = "0.7.5"
 dependencies = [
  "anyhow",
  "clap",
