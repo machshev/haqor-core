@@ -79,3 +79,49 @@ Build or test every package with:
 cargo check --workspace --all-targets --all-features
 cargo test --workspace --all-features
 ```
+
+## Attribution
+
+Haqor's databases are curated from the sources below. Several carry attribution
+requirements; this section, together with the app's **About** view, is where
+that credit is given. Source names appear here rather than in table and column
+names — the runtime schema is named for what data *is*, not where it came from
+(see [ADR 6](doc/adr/0006-single-runtime-database.md)).
+
+**Hebrew Bible text** — the Unicode/XML Leningrad Codex (UXLC) from
+[tanach.us](https://tanach.us), transcribed from the *Westminster Leningrad
+Codex*, which is in the public domain.
+
+**Hebrew lemmas and morphology** — the
+[Open Scriptures Hebrew Bible](https://github.com/openscriptures/morphhb)
+(morphhb), licensed CC BY 4.0.
+
+**Hebrew lexicon** — the
+[OSHB Hebrew Lexicon](https://github.com/openscriptures/HebrewLexicon):
+*Brown-Driver-Briggs*, *Strong's Hebrew Dictionary* and the lexical index
+bridging them. The digitised files are released CC BY 4.0 — credit the Open
+Scriptures Hebrew Bible Project — while the underlying text of Brown, Driver,
+Briggs and of Strong's remains in the public domain. Haqor's own lexicon is an
+edited and expanded derivative of these entries.
+
+**Interlinear translations** — STEP Bible's
+[TAHOT dataset](https://github.com/STEPBible/STEPBible-Data), licensed CC BY
+4.0. The files are fetched from their canonical repository at pinned checksums
+by `scripts/fetch-stepbible-data.sh` rather than redistributed here.
+
+**Syriac New Testament** — the text of the British and Foreign Bible Society's
+edition, with lexical and morphological data from SEDRA:
+
+> This work makes use of the Syriac Electronic Data Retrieval Archive (SEDRA)
+> by George A. Kiraz, distributed by the Syriac Computing Institute.
+
+SEDRA III's terms also ask that work using it cite:
+
+> G. Kiraz, 'Automatic Concordance Generation of Syriac Texts', in *VI Symposium
+> Syriacum 1992*, ed. R. Lavenant, Orientalia Christiana Analecta 247, Rome,
+> 1994.
+
+Haqor reads the ASCII SEDRA III files and renders them in Unicode, in Syriac
+script and transliterated into Hebrew letters for the reader. That script
+conversion is the only change: the entries, morphology and text content are
+unmodified.

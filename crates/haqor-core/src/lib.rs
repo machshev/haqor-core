@@ -1,5 +1,10 @@
 //! App-facing Bible access and Hebrew learning core.
 
+/// Version of this crate, so an app can report which core it is running
+/// without hard-coding a number that drifts from `Cargo.toml`. Shown in the
+/// app's About view alongside the data build from [`bible::Bible::data_version`].
+pub const VERSION: &str = env!("CARGO_PKG_VERSION");
+
 /// Biblical Hebrew verb/noun paradigm generator (algorithmic, not DB-backed).
 pub use haqor_morphology as morphology;
 

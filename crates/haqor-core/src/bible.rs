@@ -1932,6 +1932,20 @@ impl Bible {
         self.reload_runtime_lexicon_entries()
     }
 
+    /// Build stamp of the opened data, as the UTC ISO-8601 timestamp the
+    /// generator wrote into `meta`. `None` while the app still ships the four
+    /// generation databases, which carry no `meta` table — the app falls back
+    /// to the version sidecar written beside the assets. See ADR 6.
+    pub fn data_version(&self) -> Option<String> {
+        self.db
+            .query_row("SELECT value FROM meta WHERE key = 'built'", [], |row| {
+                row.get::<_, String>(0)
+            })
+            .optional()
+            .ok()
+            .flatten()
+    }
+
     fn reload_runtime_lexicon_entries(&self) -> rusqlite::Result<()> {
         let mut statement = self.db.prepare(
             "SELECT surface, root, gloss, reader_gloss FROM progress.lexicon_entry_overrides",
@@ -2162,7 +2176,8 @@ impl Bible {
             let curated_gloss = include_glosses
                 .then(|| crate::vocab_gloss::curated_gloss(&self.db, &word))
                 .flatten();
-            let needs_info = include_names || include_morphology
+            let needs_info = include_names
+                || include_morphology
                 || (include_glosses
                     && runtime_gloss.is_none()
                     && reader_override.is_none()
@@ -2206,9 +2221,9 @@ impl Bible {
             }
 
             if include_glosses || include_morphology {
-                verse_metadata.morphologies.push(
-                    info.map(morph_summary).unwrap_or_default(),
-                );
+                verse_metadata
+                    .morphologies
+                    .push(info.map(morph_summary).unwrap_or_default());
             }
 
             if include_names {
@@ -3860,6 +3875,23 @@ mod tests {
     }
 
     #[test]
+    fn data_version_is_absent_without_a_meta_table() {
+        // The generation databases carry no `meta`, so the app falls back to
+        // the version sidecar beside its assets. Once `gen-runtime` emits
+        // haqor.db this returns its build stamp instead (ADR 6).
+        require_data!();
+        let bible = Bible::open("data").unwrap();
+        assert_eq!(bible.data_version(), None);
+    }
+
+    #[test]
+    fn crate_version_is_reported() {
+        // The app shows this in About rather than hard-coding a core version.
+        assert_eq!(crate::VERSION, env!("CARGO_PKG_VERSION"));
+        assert!(!crate::VERSION.is_empty());
+    }
+
+    #[test]
     fn test_sedra_word_info() {
         require_data!();
         let bible = Bible::open("data").unwrap();
@@ -4397,7 +4429,9 @@ mod tests {
         }
         let bible = Bible::open(data).unwrap();
 
-        let metadata = bible.chapter_reader_metadata(1, 1, true, false, true).unwrap();
+        let metadata = bible
+            .chapter_reader_metadata(1, 1, true, false, true)
+            .unwrap();
         for verse in 1..=31 {
             let metadata = metadata.get(&verse).expect("Genesis 1 verse metadata");
             assert_eq!(
@@ -4429,7 +4463,9 @@ mod tests {
         let bible = Bible::open(data).unwrap();
 
         let text = bible.get(40, 1, 1).unwrap();
-        let mut metadata = bible.chapter_reader_metadata(40, 1, true, false, true).unwrap();
+        let mut metadata = bible
+            .chapter_reader_metadata(40, 1, true, false, true)
+            .unwrap();
         let verse = metadata.remove(&1).expect("Matthew 1:1 metadata");
 
         assert_eq!(verse.glosses.len(), text.split_whitespace().count());
