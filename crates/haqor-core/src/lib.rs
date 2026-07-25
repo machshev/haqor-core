@@ -54,4 +54,38 @@ pub mod data_support {
     pub fn lexicon_fallback(db: &Connection, surface: &str) -> Option<(String, String, String)> {
         crate::bible::lexicon_fallback(db, surface)
     }
+
+    /// The connection the generation databases are attached to, so the
+    /// curation stage can copy between schemas in SQL instead of ferrying
+    /// every row through Rust.
+    pub fn connection(bible: &crate::bible::Bible) -> &Connection {
+        bible.conn()
+    }
+
+    /// One OSHB token tagging, as stored in `hebrew.db.oshb_primary`.
+    pub struct TokenTagging<'a> {
+        pub source_word: &'a str,
+        pub lemma: &'a str,
+        pub morph: &'a str,
+    }
+
+    /// Resolve the word-info sheet the reader would see for one surface, with
+    /// the OSHB tagging of a concrete token applied when there is one.
+    ///
+    /// This is the resolution `gen-runtime` precomputes into `word_info` so the
+    /// runtime never searches the candidate space (ADR 6). It is deliberately
+    /// the *same* code the live path runs, so the generator cannot drift from
+    /// it; the differential test compares the stored rows against this.
+    ///
+    /// The device-local `lexicon_entries` correction that the live path applies
+    /// last is a no-op here — no writable progress database is attached at
+    /// build time — which is exactly why that layer stays at runtime.
+    pub fn resolve_word_info(
+        bible: &crate::bible::Bible,
+        surface_id: i64,
+        norm: &str,
+        tagging: Option<TokenTagging<'_>>,
+    ) -> Option<crate::bible::HebrewWord> {
+        crate::bible::resolve_word_info(bible, surface_id, norm, tagging)
+    }
 }

@@ -11,6 +11,7 @@ mod occurrences;
 mod oshb;
 mod prefilter;
 mod proper_names;
+mod runtime_db;
 mod sedra;
 mod sedra_db;
 mod stepbible;
@@ -26,6 +27,7 @@ pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
 };
 pub use occurrences::parse_ot_coverage;
+pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, pack_ref};
 pub use stepbible::source_dir as stepbible_source_dir;
 
 use std::path::Path;

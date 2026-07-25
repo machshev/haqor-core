@@ -257,6 +257,23 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/lexicon.db")]
         output: PathBuf,
     },
+    /// Curate the four generation databases into the single runtime haqor.db
+    /// the app ships: references packed, strings interned, candidate analyses
+    /// resolved once into word_info, and generation-only tables dropped.
+    /// See doc/adr/0006-single-runtime-database.md.
+    GenRuntime {
+        /// Directory holding the generation databases.
+        #[arg(short, long, default_value = "data")]
+        data_dir: PathBuf,
+        /// Output database path
+        #[arg(short, long, default_value = "data/haqor.db")]
+        output: PathBuf,
+        /// How to store verse text and lexicon entry bodies. `zstd` is ~7 MiB
+        /// smaller; `none` keeps the database readable with sqlite3, which is
+        /// why it is the default for local builds.
+        #[arg(long, default_value = "none")]
+        blob_codec: String,
+    },
     /// Exhaustive lexicon-coverage audit: run every distinct surface form in
     /// the corpus through the exact lookup the app's word-info sheet performs
     /// (word info + BDB bridge) and list the surfaces that end up with no
@@ -459,6 +476,15 @@ fn main() -> Result<()> {
             DbCommands::GenLexicon { src_texts, output } => {
                 let total = haqor_db_gen::generate_lexicon(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
+            }
+            DbCommands::GenRuntime {
+                data_dir,
+                output,
+                blob_codec,
+            } => {
+                let codec: haqor_db_gen::BlobCodec = blob_codec.parse()?;
+                let words = haqor_db_gen::generate_runtime(&data_dir, &output, codec)?;
+                println!("Wrote {} words to {}", words, output.display());
             }
             DbCommands::LexiconScan {
                 data_dir,

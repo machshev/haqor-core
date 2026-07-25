@@ -96,7 +96,7 @@ impl BdbEntry {
 /// via the consonantal root. Verb readings carry binyan/tense/person-gender-
 /// number; noun readings carry gender/number/state. `root` is the consonantal
 /// root used to pull the glossed root tree from `lexdb.bdb`.
-#[derive(Debug, Default, Clone)]
+#[derive(Debug, Default, Clone, PartialEq, Eq)]
 pub struct HebrewWord {
     /// Normalised pointed surface form (matches `hebrewdb.surface.text`).
     pub word: String,
@@ -133,7 +133,7 @@ pub struct HebrewWord {
 }
 
 #[derive(Clone, Debug, Eq, Hash, PartialEq)]
-struct OshbAnalysis {
+pub(crate) struct OshbAnalysis {
     source_word: String,
     lemma: String,
     morph: String,
@@ -600,6 +600,23 @@ fn decode_suffix(person: i64, gender: i64, number: i64) -> Option<String> {
 /// Decode a verb PGN tag (e.g. `3ms`, `2fp`, empty for infinitives) into the
 /// person, gender and number chip labels. Each component is independent so
 /// participles (`ms`, no person) and infinitives (empty) decode cleanly.
+/// Build-time entry point for [`crate::data_support::resolve_word_info`]; see
+/// there for why the generator shares the runtime's resolution rather than
+/// reimplementing it.
+pub(crate) fn resolve_word_info(
+    bible: &Bible,
+    surface_id: i64,
+    norm: &str,
+    tagging: Option<crate::data_support::TokenTagging<'_>>,
+) -> Option<HebrewWord> {
+    let analysis = tagging.map(|t| OshbAnalysis {
+        source_word: normalize_oshb_word(t.source_word),
+        lemma: t.lemma.to_string(),
+        morph: t.morph.to_string(),
+    });
+    bible.hebrew_word_info_with_oshb(surface_id, norm.to_string(), analysis.as_ref())
+}
+
 pub(crate) fn decode_pgn(pgn: &str) -> (Option<String>, Option<String>, Option<String>) {
     let mut person = None;
     let mut gender = None;
@@ -2439,7 +2456,7 @@ impl Bible {
         Some((root.to_string(), gloss.to_string(), is_name))
     }
 
-    fn hebrew_word_info_with_oshb(
+    pub(crate) fn hebrew_word_info_with_oshb(
         &self,
         surface_id: i64,
         norm: String,

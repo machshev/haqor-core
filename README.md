@@ -50,6 +50,24 @@ cargo run -- db gen-hebrew --force
 cargo run -- admin
 ```
 
+### The runtime database
+
+The four databases in `data/` are the generation pipeline's cache: each is one
+stage's output, so the fast iteration loops rebuild only what changed. What the
+app ships is a single curated `haqor.db`, built from all four:
+
+```sh
+cargo run --release -- db gen-runtime                      # data/haqor.db
+cargo run --release -- db gen-runtime --blob-codec zstd    # ~8 MiB smaller
+```
+
+It resolves every word's analysis once at build time, packs verse references,
+interns repeated strings and drops what only the generator needed — 87 MiB of
+generation databases become 37 MiB, or 30 MiB compressed. `--blob-codec none`
+is the default because it keeps verse text and lexicon entries readable with
+`sqlite3`; shipped builds use `zstd`, whose trained dictionary travels inside
+the database. See [ADR 6](doc/adr/0006-single-runtime-database.md).
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:

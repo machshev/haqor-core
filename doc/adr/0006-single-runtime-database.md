@@ -4,7 +4,10 @@ Date: 2026-07-25
 
 ## Status
 
-Proposed.
+Accepted; being implemented. `haqor db gen-runtime` emits the database and the
+differential tests guard it. The runtime still opens the four generation
+databases — repointing `haqor-core` at `haqor.db`, moving the resolution logic
+out of it, and the two-tier sync are the remaining steps.
 
 ## Context
 
@@ -59,32 +62,38 @@ Word info is not searched for at runtime; it is looked up. `gen-runtime`
 enumerates every distinct (surface, token-analysis) pair that actually occurs in
 the corpus and stores the finished answer:
 
-- 52,575 surfaces, but only **65,014** distinct (surface, lemma, morph, prefix)
-  pairs across all 304,229 tokens, and only **18** tokens corpus-wide have no
+- 52,575 surfaces, 304,229 tokens, and only **18** tokens corpus-wide with no
   aligned OSHB row.
-- So `word_info` is ~65k rows — one per distinct rendering, not one per token —
-  and `word` points straight at it. Reading a chapter becomes a covered index
-  scan plus a row fetch per word.
+- Deduplicating by *tagging* alone leaves 165k rows, because a tagging varies by
+  pointing the resolution then discards. Deduplicating by the resolved content
+  is what collapses it: **92,929** rows, each one a rendering some token
+  actually displays, and `word` points straight at one.
+- Reading a chapter becomes a covered index scan plus a row fetch per word.
 
 This means the resolution logic **moves** out of `haqor-core` rather than being
 called from the generator. `hebrew_word_by_surface_id`, `apply_oshb_analysis`,
 `oshb_lexeme` and the verb-vs-noun/article-shadow rules become `haqor-db-gen`
 code; `haqor-core` keeps only the lookup and the one thing that genuinely cannot
 be precomputed — the device-local `lexicon_entries` correction applied on top,
-which lives in the writable `progress` attachment. `analyses` and
-`noun_analyses` stop shipping altogether; `root_surface` preserves the
-root-concordance breadth that legitimately spans all candidates.
+which lives in the writable `progress` attachment. Until that move, the
+generator calls the runtime's own resolution through a narrow `data_support`
+bridge, so the two cannot drift while both exist.
 
-Correctness is pinned by a differential test: for every (surface,
-token-analysis) pair, the precomputed row must equal what the current live
-resolution returns. That test is also the safe deletion order — it runs against
-both implementations before the runtime copy is removed.
+`analyses` and `noun_analyses` stop shipping altogether. `root_surface`
+preserves the root-concordance breadth that legitimately spans all candidates —
+keyed by lexeme *text*, because 6,879 noun stems are not generated verb roots
+and keying by root id silently dropped them (71,230 pairs, not 39,359).
+
+Correctness is pinned by differential tests: for every (surface, token-analysis)
+pair and every surface, the stored row must equal what the live resolution
+returns, and `root_surface` must equal the concordance union exactly. Those
+tests are also the safe deletion order — they run against both implementations
+before the runtime copy is removed.
 
 ### Function-based naming
 
 The runtime schema names things by what they *are*, not by where they came
-from. `bdb` becomes `lexicon_entry`, `oshb_primary` becomes `token_analysis`,
-`sedra.words` becomes `syriac_word` (see the mapping table below). This also
+from. `bdb` becomes `lexicon_entry`, `sedra.words` becomes `syriac_word` (see the mapping table below). This also
 states the intent for the lexicon itself: BDB is an *import source* for the
 Haqor lexicon, edited and expanded at build time from study, exactly as BDB was
 itself an edited Gesenius. The curated overlay tables are not annotations on a
@@ -100,11 +109,14 @@ also shows the app, core and data build versions.
 ### Blob compression as a build switch
 
 Verse text and lexicon entry bodies are only ever fetched whole, never queried,
-so they can ship as compressed per-chapter / per-entry blobs. That trades
-`sqlite3`-greppable data for roughly 7 MiB, so it is a `gen-runtime` flag, and
-the choice is recorded in `meta` (`blob_codec` = `none` | `zstd`) so the runtime
-reads whichever form it is handed. Debug builds default to `none`, production to
-`zstd`.
+so they can ship compressed. That trades `sqlite3`-greppable data for 7.8 MiB,
+so it is a `gen-runtime` flag, and the choice is recorded in `meta`
+(`blob_codec` = `none` | `zstd`) so the runtime reads whichever form it is
+handed. Local builds default to `none`, shipped builds to `zstd`.
+
+Because the blobs are individually short, the compressed form depends on a zstd
+dictionary trained over the corpus, stored in `blob_dict`. A reader therefore
+needs nothing but the database itself to decode it.
 
 ### Two-tier updates: a replaced base and an additive overlay
 
@@ -163,17 +175,28 @@ signature verification before they are opened. That is acceptable for now
 because the server runs on the user's own LAN, and it must be revisited before
 any hosted deployment.
 
-## Expected outcome
+## Outcome
 
-Measured on prototypes built from the current data:
+Measured on the database `gen-runtime` emits from the current data, not on a
+prototype:
 
 | Stage | Size |
 | --- | --- |
 | Today, four files | 87.1 MiB |
-| Consolidated, pruned, interned | 43.4 MiB |
-| + interned morphology cells | 39.9 MiB |
-| + precomputed word info, candidates dropped | ~35 MiB |
-| + blob compression (`blob_codec=zstd`) | ~28 MiB |
+| `haqor.db`, `--blob-codec none` | 37.5 MiB |
+| `haqor.db`, `--blob-codec zstd` | 29.7 MiB |
+
+A full build takes about 45 seconds, most of it resolving renderings. The corpus
+yields 92,929 distinct renderings behind 304,229 tokens, 13,913 morphology
+cells, and 6,458 distinct word-info glosses.
+
+The compressed build needs a trained dictionary, which the first cut missed:
+verses average a few hundred bytes, far too short for zstd to find anything
+within one, so per-blob compression without a shared dictionary is nearly
+pointless. `gen-runtime` trains a 110 KiB dictionary from a sample of the
+corpus and ships it in `blob_dict`; that is what turns the compressed build from
+a rounding error into 7.8 MiB. Compression level is 12 — level 19 spends
+minutes on inputs this small for almost nothing.
 
 The reader also loses a four-table join per chapter, all per-word analysis
 resolution, and the unindexed NT occurrence scan.
@@ -183,18 +206,18 @@ resolution, and the unindexed NT occurrence scan.
 `ref` is a packed reference, `book << 16 | chapter << 8 | verse`.
 
 ```
-meta(key, value)                     -- schema_version, built, blob_codec, source hashes
-verse(ref PK, words)
+meta(key, value)                     -- schema_version, built, blob_codec
+verse(ref PK, words)                 -- blob; see blob_dict when meta.blob_codec is zstd
+blob_dict(dict_id PK, data)
 word(ref, position, surface_id, info_id, gloss_id)  PK(ref, position) WITHOUT ROWID
-word_info(info_id PK, word, root, entry_id, gloss_id, cell_id, flags)
+word_info(info_id PK, surface_id, root, gloss_id, cell_id, flags)
 morph_cell(cell_id PK, pos, form, tense, person, gender, number, state, prefix, obj_suffix)
 gloss(gloss_id PK, text)             -- interned reader glosses and entry glosses
 surface(surface_id PK, text, occurrences, n_candidates, lexical_class, language, info_id)
 root(root_id PK, root, gizra, n_forms, n_occurrences)
-root_surface(root_id, surface_id)
+root_surface(lexeme, surface_id)   -- lexeme text: noun stems are keys too
 verse_stat(ref PK, word_count, distinct_count, min_occ, sum_occ, mask)  + verse_stats view
 lexicon_entry(entry_id PK, root, word, cons, pos, gloss, body, kind)
-entry_index(token_key, strong, entry_id)
 word_gloss(surface PK, gloss, note, is_name, reader_override)
 surface_override(surface PK, root, gloss)
 syriac_root(root_id PK, root)
@@ -215,7 +238,7 @@ no runtime reader left.
 | Generation DB | Runtime |
 | --- | --- |
 | `bible.bible` | `verse` |
-| `hebrew.verse_word` + `hebrew.oshb_primary` | `word` + `word_info` |
+| `hebrew.verse_word` + `hebrew.oshb_primary` | `word` + `word_info` (the tagging itself is not carried) |
 | `hebrew.surface` | `surface` |
 | `hebrew.analyses`, `hebrew.noun_analyses`, `hebrew.lexical_analyses` | resolved into `word_info` (+ `root_surface`) |
 | `hebrew.occurrences` | dropped (redundant with `word`) |
@@ -223,7 +246,7 @@ no runtime reader left.
 | `hebrew.verse_stats` | `verse_stat` (bitmask) + view |
 | `hebrew.morphology_sources`, `hebrew.reader_gloss_sources` | dropped (READMEs + About view) |
 | `lexicon.bdb` | `lexicon_entry` (`bdb_id` → `entry_id`, `content_json` → `body`, `type` → `kind`) |
-| `lexicon.lexical_index` | `entry_index` (`oshb_id` → `token_key`) |
+| `lexicon.lexical_index` | dropped (bridges Strong's to an entry at build time) |
 | `lexicon.word_glosses` | `word_gloss` |
 | `lexicon.lexicon_overrides` | `surface_override` |
 | `lexicon.primary_analysis_overrides` | consumed at build time |
