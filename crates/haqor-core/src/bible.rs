@@ -2190,11 +2190,35 @@ impl Bible {
 
     /// Learner glosses aligned with the words in a verse.
     pub fn verse_glosses(&self, book: u8, chapter: u8, verse: u8) -> rusqlite::Result<Vec<String>> {
+        Ok(self
+            .verse_gloss_words(book, chapter, verse)?
+            .into_iter()
+            .map(|(_, gloss)| gloss)
+            .collect())
+    }
+
+    /// The same glosses as [`Bible::verse_glosses`], each paired with the
+    /// source-language word it renders.
+    ///
+    /// A gloss-only verse is still a verse of Hebrew underneath, so a caller
+    /// showing the English can say which word each piece of it came from —
+    /// which is what lets an occurrence list highlight the looked-up word in
+    /// a translation that does not contain it.
+    pub fn verse_gloss_words(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+    ) -> rusqlite::Result<Vec<(String, String)>> {
         if book >= 40 {
-            return Ok(self
+            let glosses = self
                 .nt_chapter_reader_metadata(book, chapter, true, false, false)?
                 .remove(&verse)
-                .map_or_else(Vec::new, |metadata| metadata.glosses));
+                .map_or_else(Vec::new, |metadata| metadata.glosses);
+            // SEDRA's gloss vector is in source-token order, so the verse text
+            // is what supplies the words.
+            let pairs = glosses.into_iter().map(|g| (String::new(), g)).collect();
+            return Ok(self.with_running_text_words(book, chapter, verse, pairs));
         }
 
         let mut stmt = self.db.prepare(
@@ -2212,30 +2236,65 @@ impl Bible {
             // interlinear. Explicit static reader overrides come next, while
             // ordinary curated glosses remain fallbacks behind contextual
             // occurrence glosses.
-            if let Some((_, gloss, reader_gloss)) = self.runtime_lexicon_entry(&word) {
-                return Ok(if reader_gloss.is_empty() {
+            let gloss = if let Some((_, gloss, reader_gloss)) = self.runtime_lexicon_entry(&word) {
+                if reader_gloss.is_empty() {
                     gloss
                 } else {
                     reader_gloss
-                });
-            }
-            if let Some(curated) = crate::vocab_gloss::curated_reader_gloss(&self.db, &word) {
-                return Ok(curated.gloss.to_string());
-            }
-            if !source_gloss.is_empty() {
-                return Ok(source_gloss);
-            }
-            if let Some(curated) = crate::vocab_gloss::curated_gloss(&self.db, &word) {
-                return Ok(curated.gloss.to_string());
-            }
-            Ok(self
-                .hebrew_word_info_at(&word, book, chapter, verse, position as usize)
-                .map_or_else(String::new, |w| {
-                    let gloss = inflected_gloss(&w);
-                    if gloss.is_empty() { w.gloss } else { gloss }
-                }))
+                }
+            } else if let Some(curated) = crate::vocab_gloss::curated_reader_gloss(&self.db, &word)
+            {
+                curated.gloss.to_string()
+            } else if !source_gloss.is_empty() {
+                source_gloss
+            } else if let Some(curated) = crate::vocab_gloss::curated_gloss(&self.db, &word) {
+                curated.gloss.to_string()
+            } else {
+                self.hebrew_word_info_at(&word, book, chapter, verse, position as usize)
+                    .map_or_else(String::new, |w| {
+                        let inflected = inflected_gloss(&w);
+                        if inflected.is_empty() {
+                            w.gloss
+                        } else {
+                            inflected
+                        }
+                    })
+            };
+            Ok((word, gloss))
         })?
-        .collect()
+        .collect::<rusqlite::Result<Vec<(String, String)>>>()
+        .map(|pairs| self.with_running_text_words(book, chapter, verse, pairs))
+    }
+
+    /// Replace each stored surface with the word as the running text writes it,
+    /// where the two agree on how many words the verse has.
+    ///
+    /// The surface table drops cantillation, so a caller that *shows* these
+    /// words would otherwise print something subtly unlike the reader's text.
+    fn with_running_text_words(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        pairs: Vec<(String, String)>,
+    ) -> Vec<(String, String)> {
+        let Ok(text) = self.get(book, chapter, verse) else {
+            return pairs;
+        };
+        // A bare paseq stands between two words as a token of its own and has
+        // no gloss behind it, so only lexical tokens take part in the pairing.
+        let words: Vec<&str> = text
+            .split(' ')
+            .filter(|word| word.chars().any(char::is_alphabetic))
+            .collect();
+        if words.len() != pairs.len() {
+            return pairs;
+        }
+        words
+            .into_iter()
+            .zip(pairs)
+            .map(|(word, (_, gloss))| (word.to_string(), gloss))
+            .collect()
     }
 
     /// Proper-name flags aligned with the lexical words in a verse.
@@ -4060,6 +4119,45 @@ mod tests {
         assert_eq!(glosses[2], "Mighty-ones");
         assert_eq!(glosses[3], "←");
         assert_eq!(glosses[5], "and ←");
+    }
+
+    #[test]
+    fn verse_gloss_words_pair_each_gloss_with_its_word() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+
+        // An English-only occurrence list highlights on the Hebrew, so every
+        // gloss has to name the word it was made from — in the verse's order,
+        // and for the whole verse.
+        let pairs = bible.verse_gloss_words(1, 1, 1).unwrap();
+        let glosses = bible.verse_glosses(1, 1, 1).unwrap();
+        assert_eq!(
+            pairs.iter().map(|(_, g)| g.clone()).collect::<Vec<_>>(),
+            glosses,
+            "the paired glosses are the glosses"
+        );
+        let words: Vec<String> = bible
+            .get(1, 1, 1)
+            .unwrap()
+            .split(' ')
+            .map(str::to_string)
+            .collect();
+        assert_eq!(
+            pairs.iter().map(|(w, _)| w.clone()).collect::<Vec<_>>(),
+            words,
+            "and the paired words are the verse's own words"
+        );
+
+        // Gen 1:5 writes a bare paseq between אֱלֹהִים and לָאוֹר. It is a token
+        // of the running text with no word behind it, and counting it as one
+        // would shift every gloss after it onto the wrong word.
+        let pairs = bible.verse_gloss_words(1, 1, 5).unwrap();
+        let text = bible.get(1, 1, 5).unwrap();
+        assert!(text.contains(" ׀ "), "the verse still carries its paseq");
+        assert_eq!(pairs.len(), text.split(' ').count() - 1);
+        assert!(!pairs.iter().any(|(word, _)| word == "׀"));
+        assert_eq!(pairs[1].0.chars().next(), Some('א'), "אֱלֹהִים is second");
+        assert_eq!(pairs[2].0.chars().next(), Some('ל'), "לָאוֹר is third");
     }
 
     #[test]
