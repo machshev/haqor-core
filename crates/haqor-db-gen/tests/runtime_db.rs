@@ -23,9 +23,18 @@ fn data_dir() -> PathBuf {
     Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data")
 }
 
+/// Skip when the generation databases have not been built, so a fresh
+/// checkout's `cargo test` still passes — but fail when `HAQOR_REQUIRE_DATA`
+/// is set, which CI does after generating them. Without that, a job that
+/// silently skipped its whole reason for existing would report success.
 macro_rules! require_data {
     () => {
         if !data_dir().join("bible.db").exists() {
+            assert!(
+                std::env::var_os("HAQOR_REQUIRE_DATA").is_none(),
+                "HAQOR_REQUIRE_DATA is set but {} has no generation databases",
+                data_dir().display()
+            );
             eprintln!("skipping: data/*.db not generated in this checkout");
             return;
         }

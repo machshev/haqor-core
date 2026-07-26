@@ -10,7 +10,9 @@ jobs:
   build_and_test:
     name: Build and test (${{ matrix.crate }})
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # haqor-core's suite takes ~31 minutes on its own: the reverse-index test
+    # generates the paradigm of every 22³ root.
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:

@@ -116,7 +116,9 @@ jobs:
     needs: changed_crates
     if: needs.changed_crates.outputs.has_changes == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # haqor-core's suite takes ~31 minutes: the reverse-index test generates
+    # the paradigm of every 22³ root, which is why [profile.test] optimises.
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(needs.changed_crates.outputs.matrix) }}
@@ -127,4 +129,90 @@ jobs:
       - name: Build
         run: cargo build --package "${{ matrix.crate }}" --all-features
       - name: Test
+        # Tests needing data/*.db skip here — the databases are gitignored and
+        # too expensive to build per matrix entry. The runtime_db job below
+        # generates them once and runs those tests for real.
         run: cargo test --package "${{ matrix.crate }}" --all-features
+
+  runtime_db:
+    name: Runtime database
+    needs: changed_crates
+    # The differential tests are the only thing standing behind gen-runtime's
+    # precomputed word info, and they need the generation databases — an hour
+    # of work, so this runs only when the data pipeline or the resolution it
+    # copies could have changed.
+    if: >
+      contains(needs.changed_crates.outputs.matrix, 'haqor-db-gen') ||
+      contains(needs.changed_crates.outputs.matrix, 'haqor-core') ||
+      contains(needs.changed_crates.outputs.matrix, 'haqor-morphology')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          github_access_token: ${{ github.token }}
+
+      - name: Cache Nix store
+        uses: nix-community/cache-nix-action@v6
+        with:
+          primary-key: nix-dbgen-${{ runner.os }}-${{ hashFiles('flake.lock', 'Cargo.lock') }}
+          restore-prefixes-first-match: nix-dbgen-${{ runner.os }}-
+
+      - name: Cache cargo build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: cargo-dbgen-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+
+      - name: Add swap space
+        # gen-hebrew's reverse-parse index peaks at ~19 GB RSS (measured), just
+        # over the 16 GB on standard runners — without extra swap the VM's OOM
+        # killer takes down the runner agent. /mnt is the large ephemeral disk.
+        run: |
+          sudo fallocate -l 16G /mnt/swapfile-dbgen
+          sudo chmod 600 /mnt/swapfile-dbgen
+          sudo mkswap /mnt/swapfile-dbgen
+          sudo swapon /mnt/swapfile-dbgen
+          free -h
+
+      - name: Generate the databases
+        env:
+          RUST_LOG: info
+        # `cargo run` from the checkout, not the nix-built binary: gen-lexicon
+        # locates data/lexicon_overrides.json through a compile-time
+        # CARGO_MANIFEST_DIR path, which in a `nix build` binary points at the
+        # vanished build sandbox.
+        run: |
+          ./scripts/fetch-stepbible-data.sh
+          nix develop --command bash -c '
+            set -euo pipefail
+            cargo run --release -p haqor-cli -- db gen-bible
+            cargo run --release -p haqor-cli -- db gen-lexicon
+            cargo run --release -p haqor-cli -- db gen-hebrew --force
+            cargo run --release -p haqor-cli -- db gen-sedra
+          '
+
+      - name: Check the precomputed data against live resolution
+        # HAQOR_REQUIRE_DATA turns the "no databases, skipping" path into a
+        # failure: a green run that quietly tested nothing is the failure mode
+        # worth guarding against here.
+        env:
+          HAQOR_REQUIRE_DATA: "1"
+        run: nix develop --command cargo test -p haqor-db-gen --test runtime_db
+
+      - name: Report the shipped size
+        run: |
+          set -euo pipefail
+          nix develop --command bash -c \
+            'cargo run --release -p haqor-cli -- db gen-runtime --blob-codec zstd'
+          size="$(du -h data/haqor.db | cut -f1)"
+          echo "haqor.db (zstd): $size" >> "$GITHUB_STEP_SUMMARY"
+          sqlite3 data/haqor.db "SELECT key || ' = ' || value FROM meta;" \
+            >> "$GITHUB_STEP_SUMMARY"
