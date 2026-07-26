@@ -13,7 +13,8 @@
 use std::path::{Path, PathBuf};
 
 use haqor_core::bible::{Bible, HebrewWord};
-use haqor_core::data_support::{TokenTagging, connection, resolve_word_info};
+use haqor_core::data_support::connection;
+use haqor_core::resolve::{TokenTagging, resolve};
 use haqor_db_gen::{BlobCodec, generate_runtime, pack_ref};
 use rusqlite::OptionalExtension;
 
@@ -135,7 +136,7 @@ fn stored_renderings_match_live_resolution() {
             }),
             _ => None,
         };
-        let live = resolve_word_info(&bible, *surface_id, text, tagging);
+        let live = resolve(db, *surface_id, text, tagging);
         let stored = info_id.and_then(|id| stored_word(db, id, text));
         if live != stored && mismatches.len() < 10 {
             mismatches.push(format!(
@@ -168,7 +169,7 @@ fn stored_renderings_match_live_resolution() {
         .collect::<rusqlite::Result<Vec<_>>>()
         .expect("collecting surfaces");
     for (surface_id, text, info_id) in &surfaces {
-        let live = resolve_word_info(&bible, *surface_id, text, None);
+        let live = resolve(db, *surface_id, text, None);
         let stored = info_id.and_then(|id| stored_word(db, id, text));
         assert_eq!(live, stored, "surface {text} ({surface_id}) differs");
     }

@@ -27,7 +27,7 @@ use std::time::{SystemTime, UNIX_EPOCH};
 
 use anyhow::{Context, Result, bail};
 use haqor_core::bible::{Bible, HebrewWord};
-use haqor_core::data_support::{TokenTagging, resolve_word_info};
+use haqor_core::resolve::{TokenTagging, resolve};
 use log::info;
 use rusqlite::{Connection, params};
 
@@ -174,7 +174,7 @@ impl Builder {
     /// Id of the `word_info` row for this (surface, tagging), resolving it on
     /// first sight. `None` when the surface carries no readable analysis at
     /// all — the reader shows the bare word.
-    fn info_id(&mut self, bible: &Bible, key: InfoKey, surface_text: &str) -> Option<i64> {
+    fn info_id(&mut self, db: &Connection, key: InfoKey, surface_text: &str) -> Option<i64> {
         if let Some(id) = self.infos.get(&key) {
             return Some(*id);
         }
@@ -186,7 +186,7 @@ impl Builder {
                 lemma,
                 morph,
             });
-        let word = resolve_word_info(bible, key.surface_id, surface_text, tagging)?;
+        let word = resolve(db, key.surface_id, surface_text, tagging)?;
         let cell_id = self.cell_id(MorphCell::of(&word));
         let gloss_id = self.glosses.intern(&word.gloss);
         let flags = if word.vav_con { FLAG_VAV_CON } else { 0 }
@@ -240,8 +240,8 @@ pub fn generate_runtime(data_dir: &Path, output: &Path, codec: BlobCodec) -> Res
         copy_lexicon(db, &mut encoder)?;
         copy_syriac(db)?;
 
-        let words = build_words(db, &bible, &mut builder, &mut reader_glosses)?;
-        resolve_surfaces(db, &bible, &mut builder)?;
+        let words = build_words(db, &mut builder, &mut reader_glosses)?;
+        resolve_surfaces(db, &mut builder)?;
         write_word_info(db, &builder)?;
         write_glosses(db, &builder.glosses, &reader_glosses)?;
         write_meta(db, codec, &encoder)?;
@@ -662,12 +662,7 @@ fn copy_syriac(db: &Connection) -> Result<()> {
 /// One row per corpus token, pointing at the rendering it resolves to. This is
 /// where the (surface, tagging) pairs are discovered: the reader's per-word
 /// work happens once, here.
-fn build_words(
-    db: &Connection,
-    bible: &Bible,
-    builder: &mut Builder,
-    reader_glosses: &mut Pool,
-) -> Result<usize> {
+fn build_words(db: &Connection, builder: &mut Builder, reader_glosses: &mut Pool) -> Result<usize> {
     let mut stmt = db.prepare(
         "SELECT vw.book, vw.chapter, vw.verse, vw.position, vw.surface_id, s.text,
                 vw.reader_gloss, p.source_word, p.lemma, p.morph
@@ -699,7 +694,7 @@ fn build_words(
             _ => None,
         };
         let info_id = builder.info_id(
-            bible,
+            db,
             InfoKey {
                 surface_id,
                 tagging,
@@ -723,7 +718,7 @@ fn build_words(
 
 /// The position-free rendering of every surface, for callers with no verse
 /// context (vocabulary lists, the tutor's surface pass, word lookup by text).
-fn resolve_surfaces(db: &Connection, bible: &Bible, builder: &mut Builder) -> Result<()> {
+fn resolve_surfaces(db: &Connection, builder: &mut Builder) -> Result<()> {
     let mut stmt = db.prepare("SELECT surface_id, text FROM hebrewdb.surface")?;
     let mut update = db.prepare("UPDATE out.surface SET info_id = ?2 WHERE surface_id = ?1")?;
     let mut rows = stmt.query([])?;
@@ -731,7 +726,7 @@ fn resolve_surfaces(db: &Connection, bible: &Bible, builder: &mut Builder) -> Re
         let surface_id: i64 = row.get(0)?;
         let text: String = row.get(1)?;
         let info_id = builder.info_id(
-            bible,
+            db,
             InfoKey {
                 surface_id,
                 tagging: None,
