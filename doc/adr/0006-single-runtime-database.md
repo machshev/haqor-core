@@ -301,7 +301,10 @@ no runtime reader left.
   into `crates/`. Once they ran, eight failed — identically against the four
   generation databases at the previous commit, so they are drift that
   accumulated while nobody was watching rather than migration fallout. They are
-  `#[ignore]`d with their causes recorded; four of them are one cause, the
-  curated `word_gloss` overlay not reaching `hebrew_word_info`'s lexical gloss.
-  The lesson is the same one the differential tests encode: a test that can
-  skip itself needs its skip condition asserted somewhere.
+  `#[ignore]`d with their causes recorded. Four are stale expectations — they
+  assert a rootless `word_gloss` for a surface that `lexicon_overrides` also
+  curates, and rooted overrides outrank rootless ones deliberately. The other
+  four are live faults, most sharply חָלַם "dream" resolving to חלה "be weak;
+  sick". The lesson is the one the differential tests already encode: a test
+  that can skip itself needs its skip condition asserted somewhere, which
+  `the_data_directory_gate_resolves` now does.

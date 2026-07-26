@@ -3294,13 +3294,20 @@ mod tests {
     /// resolve to a path that never existed, so they had been skipping
     /// silently and their expectations drifted away from the data.
     ///
-    /// Four of them (`plural_tantum_nouns_resolve_as_nouns`,
+    /// They split two ways. Four (`plural_tantum_nouns_resolve_as_nouns`,
     /// `test_hebrew_word_info_curated_function_word`,
     /// `test_hebrew_word_info_noun`,
-    /// `test_lexicon_fallback_skips_cross_reference_stubs`) share one cause:
-    /// the curated `word_gloss` overlay does not reach the lexical gloss that
-    /// `hebrew_word_info` reports. The other four look like independent
-    /// resolution faults. Each carries its own note below.
+    /// `test_lexicon_fallback_skips_cross_reference_stubs`) assert the rootless
+    /// `word_gloss` value for a surface that `surface_override` also curates.
+    /// Rooted overrides outrank rootless ones deliberately — that ordering is
+    /// what keeps לִקְרַאת's root, and so the tutor's verb-family gating — so
+    /// these are stale expectations, and any argument with them belongs in
+    /// `data/lexicon_overrides.json`, not in this code.
+    ///
+    /// The other four are live faults the tests were right to guard, and which
+    /// went unseen for exactly as long as the tests did — most sharply
+    /// `dream_uses_the_correct_verb_root`, where חָלַם "dream" resolves to
+    /// חלה "be weak; sick". Each carries its own note below.
     ///
     /// `data/haqor.db` is generated locally (`db gen-runtime`) and not
     /// committed, so CI checkouts have an empty data/ folder; skip the
@@ -3403,9 +3410,9 @@ mod tests {
     /// יממ) or come back unglossed. The pausal spellings share the analyses,
     /// so they resolve identically.
     #[test]
-    #[ignore = "pre-existing: the curated word_gloss overlay does not reach \
-                hebrew_word_info's lexical gloss — מַיִם resolves to the BDB \
-                gloss \"water(s)\", not the curated \"water; waters\""]
+    #[ignore = "stale expectation: מַיִם resolves to \"water(s)\", the value \
+                surface_override curates for it, which correctly outranks the \
+                rootless word_gloss this test was written against"]
     fn plural_tantum_nouns_resolve_as_nouns() {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
@@ -3974,9 +3981,11 @@ mod tests {
     }
 
     #[test]
-    #[ignore = "pre-existing: the dream form resolves to root חלה (be sick) \
-                instead of חלם (dream) — a candidate-ranking fault, not a \
-                gloss one"]
+    #[ignore = "live fault: חָלַם has two candidates and the attested חלה \
+                (be weak; sick) outranks חלם (dream) on analysis_id. The \
+                curated override cannot rescue it because the candidate spells \
+                the root with medial mem (חלמ), which never matches the \
+                override key חלם"]
     fn dream_uses_the_correct_verb_root() {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
@@ -4394,10 +4403,10 @@ mod tests {
     }
 
     #[test]
-    #[ignore = "pre-existing: אֱלֹהִים reports \"Mightily-ones\" — the curated \
-                reader override \"Mighty-ones\" is being used as the lexical \
-                gloss (expected \"God; gods\") and then run through gloss \
-                inflection, which adverbialises \"Mighty\""]
+    #[ignore = "stale expectation: אֱלֹהִים reports \"Mightily-ones\" because \
+                that string is what data/lexicon_overrides.json curates for it \
+                — most likely a typo for the \"Mighty-ones\" in word_glosses, \
+                but a data fix either way, not a code one"]
     fn test_hebrew_word_info_noun() {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
@@ -4743,8 +4752,8 @@ mod tests {
     }
 
     #[test]
-    #[ignore = "pre-existing: עַל reports the BDB gloss \"upon\" instead of the \
-                curated word_gloss \"on, over, against\" — same overlay gap as \
+    #[ignore = "stale expectation: עַל reports \"upon\", which surface_override \
+                curates for it — same deliberate precedence as \
                 plural_tantum_nouns_resolve_as_nouns"]
     fn test_lexicon_fallback_skips_cross_reference_stubs() {
         require_data!();
@@ -4764,9 +4773,8 @@ mod tests {
     }
 
     #[test]
-    #[ignore = "pre-existing: כִּי reports \"for\" alone; the curated \
-                word_gloss \"for, because, that, when\" does not reach the \
-                lexical gloss — same overlay gap"]
+    #[ignore = "stale expectation: כִּי reports \"for\", which surface_override \
+                curates for it — same deliberate precedence"]
     fn test_hebrew_word_info_curated_function_word() {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
