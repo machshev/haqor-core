@@ -18,6 +18,11 @@
 //!   mapping an OSHB lemma to a `strong` number (nullable), a `bdb_id`, and a
 //!   `twot` number. Indexed on `strong` and `bdb_id`.
 //!
+//! - `entry_root` — every root a BDB entry belongs to (`bdb_id`, `root`, `ord`),
+//!   derived here from the two above: `ord 0` is the section BDB prints the
+//!   entry in, and a compound name's other elements follow from the Strong's
+//!   derivation (see [`load_entry_roots`]).
+//!
 //! So a token's Strong's lemma reaches its full BDB entry via
 //! `english.strong → lexical_index.strong → lexical_index.bdb_id → bdb.bdb_id`
 //! (a many-to-many join: BDB groups by root, Strong's by lexeme).
@@ -32,7 +37,7 @@ use anyhow::{Context, Result};
 use log::info;
 use quick_xml::Reader;
 use quick_xml::events::Event;
-use rusqlite::Connection;
+use rusqlite::{Connection, OptionalExtension};
 use serde_json::{Map, Value, json};
 
 use haqor_morphology::{Gizra, NounStem, Root, hebrew};
@@ -1290,6 +1295,150 @@ fn load_roots(db: &mut Connection, lexical_index: &Path) -> Result<usize> {
     Ok(rows)
 }
 
+/// The Strong's numbers a derivation names, in the order the lexicographer
+/// wrote them.
+///
+/// Only the derivation clause is read: the *first* `;`-separated clause that
+/// cites any entry at all. The clauses before it hold alternative spellings ("or
+/// shorter אֲבִיגַל; from 1 and 1524; …"), and the meaning after it cites
+/// scripture ("red (see Genesis 25:25)") or compares unrelated entries — neither
+/// of which is an element of the word.
+///
+/// `from 3068 and 5414; Jehovah-given;` → `[3068, 5414]`.
+fn derivation_elements(source: &str) -> Vec<i64> {
+    let clause = source
+        .split(';')
+        .find(|clause| clause.contains(|c: char| c.is_ascii_digit()))
+        .unwrap_or_default();
+    let mut out = Vec::new();
+    for token in clause.split(|c: char| !c.is_ascii_digit()) {
+        if let Ok(strong) = token.parse::<i64>()
+            && !out.contains(&strong)
+        {
+            out.push(strong);
+        }
+    }
+    out
+}
+
+/// Build `entry_root`: every root an entry can be filed under, `ord 0` first.
+///
+/// BDB files each lexeme in one root section, which for a compound name can
+/// only be one of its elements — whichever the alphabet put first. אֱלִיעֶ֫זֶר
+/// "God is help" sits under אלה and so is invisible from עזר; יְהוֹנָתָן lands
+/// under הוה and loses נתן altogether. Strong's records the composition
+/// explicitly (`from 410 and 5828`), so the remaining elements are recoverable:
+/// each element's Strong's number reaches its own BDB entry through
+/// `lexical_index`, and that entry names the root.
+///
+/// `ord 0` is always the entry's own BDB root — the section it is printed in,
+/// which stays the primary reading — and the elements follow in the order the
+/// derivation names them. Single-element derivations count too (יוֹסֵף from
+/// יספ): the etymology is the same kind of claim, and BDB's own section is
+/// frequently the other one.
+fn load_entry_roots(db: &mut Connection) -> Result<usize> {
+    db.execute_batch(
+        "CREATE TABLE entry_root(
+            bdb_id TEXT NOT NULL, root TEXT NOT NULL, ord INTEGER NOT NULL,
+            PRIMARY KEY(bdb_id, root)) WITHOUT ROWID",
+    )?;
+    let mut rows = db.execute(
+        "INSERT INTO entry_root(bdb_id, root, ord)
+         SELECT bdb_id, root, 0 FROM bdb WHERE root <> ''",
+        [],
+    )?;
+
+    // A Strong's number reaches BDB many-to-many. For an element we want the
+    // one root it contributes, so the lowest-id entry's root stands for it;
+    // for the name itself every entry it maps to gets the elements, since a
+    // homograph pair (two Elhanans) are both that compound.
+    let derived = {
+        let mut element_root = db.prepare(
+            "SELECT b.root FROM lexical_index li JOIN bdb b ON b.bdb_id = li.bdb_id \
+             WHERE li.strong = ?1 AND b.root <> '' ORDER BY b.bdb_id LIMIT 1",
+        )?;
+        // `lexical_index` is many-to-many in both directions, so an entry can be
+        // named by a Strong's number that is not the lexeme it prints: H1011
+        // (בֵּית בִּרְאִי, from 1004 and 1254) points at the entry for בֵּית לְבָאוֹת,
+        // which would have filed Beth-lebaoth under ברא "create". Requiring the
+        // consonants to agree keeps a derivation on its own word.
+        let mut name_entries = db.prepare(
+            "SELECT DISTINCT li.bdb_id FROM lexical_index li \
+             JOIN bdb b ON b.bdb_id = li.bdb_id \
+             WHERE li.strong = ?1 AND b.cons = ?2",
+        )?;
+        // Second rung, for when the two lexicons spell the same name with
+        // different matres: Strong's writes Joshua plene (יְהוֹשׁוּעַ), BDB
+        // defective (יְהוֹשֻׁעַ), and an exact consonant match drops it. Vav and
+        // yod are dropped from both sides — enough to see through a spelling
+        // variant, still specific enough not to reach a neighbouring article.
+        let mut name_entries_skeletal = db.prepare(
+            "SELECT DISTINCT li.bdb_id FROM lexical_index li \
+             JOIN bdb b ON b.bdb_id = li.bdb_id \
+             WHERE li.strong = ?1 \
+               AND replace(replace(b.cons, 'ו', ''), 'י', '') = ?2",
+        )?;
+        let mut names = db.prepare(
+            "SELECT strong, word, source FROM english \
+             WHERE pos LIKE 'n-pr%' AND source IS NOT NULL AND source LIKE '%from %'",
+        )?;
+
+        let mut derived: Vec<(String, String, i64)> = Vec::new();
+        let mut names_rows = names.query([])?;
+        while let Some(row) = names_rows.next()? {
+            let strong: i64 = row.get(0)?;
+            let headword: String = row.get(1)?;
+            let source: String = row.get(2)?;
+            let elements = derivation_elements(&source);
+            if elements.is_empty() {
+                continue;
+            }
+            let mut roots: Vec<String> = Vec::new();
+            for element in elements {
+                let root = element_root
+                    .query_row([element], |r| r.get::<_, String>(0))
+                    .optional()?;
+                if let Some(root) = root.filter(|root| !roots.contains(root)) {
+                    roots.push(root);
+                }
+            }
+            let cons = consonants(&headword);
+            let mut entries: Vec<String> = name_entries
+                .query_map(rusqlite::params![strong, &cons], |r| r.get::<_, String>(0))?
+                .collect::<rusqlite::Result<_>>()?;
+            if entries.is_empty() {
+                let skeleton = cons.replace(['ו', 'י'], "");
+                entries = name_entries_skeletal
+                    .query_map(rusqlite::params![strong, skeleton], |r| {
+                        r.get::<_, String>(0)
+                    })?
+                    .collect::<rusqlite::Result<_>>()?;
+            }
+            for bdb_id in entries {
+                for (ord, root) in roots.iter().enumerate() {
+                    derived.push((bdb_id.clone(), root.clone(), ord as i64 + 1));
+                }
+            }
+        }
+        derived
+    };
+
+    {
+        let tx = db.transaction()?;
+        {
+            let mut insert = tx.prepare(
+                "INSERT OR IGNORE INTO entry_root(bdb_id, root, ord) VALUES (?1, ?2, ?3)",
+            )?;
+            for (bdb_id, root, ord) in derived {
+                rows += insert.execute(rusqlite::params![bdb_id, root, ord])?;
+            }
+        }
+        tx.commit()?;
+    }
+    db.execute_batch("CREATE INDEX idx_entry_root_root ON entry_root(root)")?;
+    Ok(rows)
+}
+
 /// Load a triliteral-root set from `lexicon.db`, selecting rows with the given
 /// SQL predicate over the `roots` table. Each stored root is three folded
 /// consonants; hollow roots additionally contribute their medial vav/yod twin
@@ -1473,13 +1622,15 @@ pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
     info!("  {index} rows -> lexical_index");
     let roots = load_roots(&mut db, &dir.join("LexicalIndex.xml"))?;
     info!("  {roots} rows -> roots");
+    let entry_roots = load_entry_roots(&mut db)?;
+    info!("  {entry_roots} rows -> entry_root");
 
     let overlay_path =
         Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/lexicon_overrides.json");
     let overlays = load_overlays(&mut db, &overlay_path)?;
     info!("  {overlays} rows -> manual lexical overlays");
 
-    let total = strongs + bdb + index + roots + overlays;
+    let total = strongs + bdb + index + roots + entry_roots + overlays;
     info!("Wrote {total} rows to {}", output.display());
     Ok(total)
 }
@@ -1493,6 +1644,40 @@ mod tests {
     // fallback runs against the same JSON the entry handler passes in.
     fn senses(v: Value) -> Vec<Value> {
         v.as_array().unwrap().clone()
+    }
+
+    #[test]
+    fn derivation_reads_the_elements_of_a_compound_name() {
+        assert_eq!(
+            derivation_elements("from 3068 and 5414; Jehovah-given;"),
+            vec![3068, 5414]
+        );
+        assert_eq!(
+            derivation_elements("from 410 and 5828; God of help;"),
+            vec![410, 5828]
+        );
+    }
+
+    #[test]
+    fn derivation_reads_the_clause_that_cites_entries() {
+        // The prose after the derivation cites unrelated entries — a "compare"
+        // is not an element of the word.
+        assert_eq!(
+            derivation_elements("a form of 3083; Jonathan, ten Israelites; compare 3129"),
+            vec![3083]
+        );
+        // And an alternative spelling comes before it: Joshua's derivation is
+        // the second clause, not the first.
+        assert_eq!(
+            derivation_elements("or יְהוֹשֻׁעַ; from 3068 and 3467; Jehovah-saved;"),
+            vec![3068, 3467]
+        );
+        // A scripture reference in the meaning is not a citation of an entry.
+        assert_eq!(
+            derivation_elements("or (fully) אֱדוֹם ; from 122; red (see Genesis 25:25);"),
+            vec![122]
+        );
+        assert!(derivation_elements("of foreign origin").is_empty());
     }
 
     #[test]

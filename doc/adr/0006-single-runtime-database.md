@@ -239,7 +239,11 @@ surface(surface_id PK, text, occurrences, n_candidates, lexical_class, language,
 root(root_id PK, root, gizra, n_forms, n_occurrences)
 root_surface(lexeme, surface_id)   -- lexeme text: noun stems are keys too
 verse_stat(ref PK, word_count, distinct_count, min_occ, sum_occ, mask)  + verse_stats view
-lexicon_entry(entry_id PK, key, root, word, cons, pos, gloss, body, kind)
+lexicon_entry(entry_id PK, key, root, word, norm, cons, pos, gloss, body, kind)
+                                   -- norm: headword normalised like a surface
+entry_root(key, root, ord)         -- every root an entry belongs to; ord 0 is
+                                   -- its BDB section, later ones a compound
+                                   -- name's other elements (אֱלִיעֶזֶר = אל + עזר)
 word_gloss(surface PK, gloss, note, is_name, reader_override)
 surface_override(surface PK, root, gloss)
 syriac_root(root_id PK, root)

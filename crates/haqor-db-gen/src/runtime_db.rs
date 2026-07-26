@@ -246,6 +246,10 @@ pub fn open_generation_dbs(data_dir: &Path) -> Result<Connection> {
 /// the app — where the names are real tables in `haqor.db` — and the build,
 /// where they are these views.
 ///
+/// `lexicon_entry.norm` is the one runtime column with no shim: it is computed
+/// in Rust at copy time, and no build-time caller needs it (the concordance
+/// queries that join on it run only in the app).
+///
 /// **Every build-time connection that calls into those helpers needs this.** The
 /// shim is load-bearing, and its absence is silent: the helpers swallow a
 /// "no such table" into `None`, so a connection without the views resolves
@@ -261,6 +265,8 @@ pub(crate) fn attach_lexicon_views(db: &Connection) -> Result<()> {
            SELECT bdb_id AS key, root, word, cons, pos, gloss,
                   content_json AS body, type AS kind
            FROM lexdb.bdb;
+         CREATE TEMP VIEW IF NOT EXISTS entry_root AS
+           SELECT bdb_id AS key, root, ord FROM lexdb.entry_root;
          CREATE TEMP VIEW IF NOT EXISTS surface_override AS
            SELECT surface, root, gloss FROM lexdb.lexicon_overrides;
          CREATE TEMP VIEW IF NOT EXISTS word_gloss AS
@@ -434,17 +440,37 @@ CREATE TABLE verse_stat(
     mask           INTEGER NOT NULL
 );
 
+-- `norm` is the headword put through the same normalisation as a corpus
+-- surface (cantillation dropped, combining marks ordered), which is the form
+-- the generated analyses name a noun stem by. BDB points its citation forms
+-- with accents (אֱלִיעֶ֫זֶר), so a raw `word = stem` join silently loses one
+-- noun stem in eight — every one of those lexemes then missing from its root's
+-- concordance.
 CREATE TABLE lexicon_entry(
     entry_id INTEGER PRIMARY KEY,
     key      TEXT NOT NULL,
     root     TEXT NOT NULL,
     word     TEXT,
+    norm     TEXT,
     cons     TEXT,
     pos      TEXT,
     gloss    TEXT,
     body     BLOB,
     kind     TEXT
 );
+
+-- Every root an entry belongs to, `ord 0` being the BDB section it is printed
+-- in. A compound name has more than one: אֱלִיעֶ֫זֶר (God is help) is both אלה
+-- and עזר, and BDB can only print it under one of them. The word-info sheet
+-- offers the alternatives, and a root's lexeme tree and concordance both read
+-- membership from here rather than from `lexicon_entry.root`, so a name stands
+-- in the lists of every root it is made of.
+CREATE TABLE entry_root(
+    key  TEXT    NOT NULL,
+    root TEXT    NOT NULL,
+    ord  INTEGER NOT NULL,
+    PRIMARY KEY(key, root)
+) WITHOUT ROWID;
 
 CREATE TABLE word_gloss(
     surface         TEXT PRIMARY KEY,
@@ -507,7 +533,9 @@ CREATE INDEX out.idx_word_info_surface ON word_info(surface_id);
 CREATE INDEX out.idx_root_surface_surface ON root_surface(surface_id);
 CREATE UNIQUE INDEX out.idx_lexicon_entry_key ON lexicon_entry(key);
 CREATE INDEX out.idx_lexicon_entry_root ON lexicon_entry(root);
+CREATE INDEX out.idx_lexicon_entry_norm ON lexicon_entry(norm);
 CREATE INDEX out.idx_lexicon_entry_cons ON lexicon_entry(cons);
+CREATE INDEX out.idx_entry_root_root ON entry_root(root);
 CREATE INDEX out.idx_syriac_lexeme_root ON syriac_lexeme(root_id);
 CREATE INDEX out.idx_syriac_word_lexeme ON syriac_word(lexeme_id);
 CREATE INDEX out.idx_syriac_word_vocalised ON syriac_word(vocalised);
@@ -721,17 +749,25 @@ fn copy_lexicon(db: &Connection, encoder: &mut Encoder) -> Result<()> {
         "SELECT bdb_id, root, word, cons, pos, gloss, content_json, type FROM lexdb.bdb",
     )?;
     let mut insert = db.prepare(
-        "INSERT INTO out.lexicon_entry(key, root, word, cons, pos, gloss, body, kind)
-         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
+        "INSERT INTO out.lexicon_entry(key, root, word, norm, cons, pos, gloss, body, kind)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
     )?;
     let mut rows = stmt.query([])?;
     while let Some(row) = rows.next()? {
         let body: Option<String> = row.get(6)?;
         let body = body.map(|b| encoder.encode(&b)).transpose()?;
+        let word: Option<String> = row.get(2)?;
+        // The stem side of `root_surface` is normalised, so the headword is
+        // stored in that form too and the join needs no runtime function.
+        let norm = word
+            .as_deref()
+            .map(haqor_core::normalize_surface)
+            .filter(|norm| !norm.is_empty());
         insert.execute(params![
             row.get::<_, String>(0)?,
             row.get::<_, String>(1)?,
-            row.get::<_, Option<String>>(2)?,
+            word,
+            norm,
             row.get::<_, Option<String>>(3)?,
             row.get::<_, Option<String>>(4)?,
             row.get::<_, Option<String>>(5)?,
@@ -741,7 +777,9 @@ fn copy_lexicon(db: &Connection, encoder: &mut Encoder) -> Result<()> {
     }
 
     db.execute_batch(
-        "INSERT INTO out.word_gloss(surface, gloss, note, is_name, reader_override)
+        "INSERT INTO out.entry_root(key, root, ord)
+           SELECT bdb_id, root, ord FROM lexdb.entry_root;
+         INSERT INTO out.word_gloss(surface, gloss, note, is_name, reader_override)
            SELECT surface, gloss, note, is_name, reader_override FROM lexdb.word_glosses;
          INSERT INTO out.surface_override(surface, root, gloss)
            SELECT surface, root, gloss FROM lexdb.lexicon_overrides",

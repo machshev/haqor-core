@@ -457,6 +457,25 @@ pub struct LexiconGap {
     pub verse: u8,
 }
 
+/// One root a looked-up word can be read under, for the word-info sheet's root
+/// selector.
+///
+/// Most words offer one. A compound name offers as many as it has elements:
+/// אֱלִיעֶ֫זֶר is אל "god" and עזר "help", and which of the two a reader wants —
+/// the lexeme tree, the concordance — is a choice only they can make. The
+/// primary is the section BDB prints the entry in, and leads the list.
+#[derive(Debug, Default, Clone, PartialEq, Eq)]
+pub struct RootOption {
+    /// Consonantal root, as `lexicon_entry.root` spells it.
+    pub root: String,
+    /// The root's own headline gloss ("help"), to label the choice with.
+    /// Empty when the root has no glossed lexeme of its own.
+    pub gloss: String,
+    /// True for the root the word resolves to by default — the one
+    /// [`Bible::hebrew_word_info`] reports.
+    pub is_primary: bool,
+}
+
 #[derive(Debug)]
 pub struct SedraEntry {
     pub lexeme: String,
@@ -1940,6 +1959,28 @@ fn blob_error(message: String) -> rusqlite::Error {
     rusqlite::Error::InvalidParameterName(message)
 }
 
+/// The surfaces a root reaches *through the lexicon*, as a subquery taking the
+/// root as `?1`. Verb forms carry their root on the analysis and are matched
+/// directly by the callers; everything else reaches its root through an entry.
+///
+/// Two rungs, unioned. The noun side of `root_surface` is keyed by stem, joined
+/// on `lexicon_entry.norm` — the headword normalised the way a stem is, since
+/// BDB's citation accents (אֱלִיעֶ֫זֶר) otherwise lose one stem in eight. And a
+/// surface that *is* a headword is matched straight off: the frequent names are
+/// classified by the prefilter and never reach the noun parser, so without this
+/// rung יִשְׂרָאֵל stands in no root's concordance at all.
+///
+/// Membership comes from `entry_root` either way, so a compound name is reached
+/// by every root it is made of, not only the section BDB prints it in.
+const LEXICON_ROOT_SURFACES: &str = "SELECT rs.surface_id FROM data.root_surface rs \
+     JOIN lexicon_entry b ON b.norm = rs.lexeme \
+     JOIN entry_root er ON er.key = b.key AND er.root = ?1 \
+     WHERE rs.sources & 2 \
+     UNION \
+     SELECT s.surface_id FROM data.surface s \
+     JOIN lexicon_entry b ON b.norm = s.text \
+     JOIN entry_root er ON er.key = b.key AND er.root = ?1";
+
 /// The `word_info` columns every read of a stored rendering selects, in the
 /// order [`word_from_row`] expects. Callers append it to their own columns and
 /// pass the offset it starts at.
@@ -2814,16 +2855,21 @@ impl Bible {
             .collect())
     }
 
-    /// The glossed root tree for an OT word: every BDB lexeme sharing the
+    /// The glossed root tree for an OT word: every BDB lexeme belonging to the
     /// consonantal root, each with its structured definition JSON. This is the
     /// OT analogue of [`Bible::sedra_root_tree`].
+    ///
+    /// Membership comes from `entry_root`, not from the one section BDB prints a
+    /// lexeme in, so a compound name appears in the tree of each root it is made
+    /// of — אֱלִיעֶ֫זֶר under עזר as well as under אלה.
     pub fn hebrew_bdb_by_root(&self, root: &str) -> rusqlite::Result<Vec<BdbEntry>> {
         if root.is_empty() {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare(
-            "SELECT word, root, gloss, body, pos, kind FROM lexicon_entry \
-             WHERE root = ?1 ORDER BY key",
+            "SELECT b.word, b.root, b.gloss, b.body, b.pos, b.kind FROM lexicon_entry b \
+             JOIN entry_root er ON er.key = b.key \
+             WHERE er.root = ?1 ORDER BY er.ord, b.key",
         )?;
         let entries = stmt
             .query_map([root], |row| {
@@ -2862,6 +2908,98 @@ impl Bible {
                     || seen_root_rows.insert((entry.headword.clone(), entry.gloss.clone()))
             })
             .collect())
+    }
+
+    /// The roots a surface can be read under, primary first.
+    ///
+    /// `root` is the one [`Bible::hebrew_word_info`] resolved, which always
+    /// leads the list. Further entries appear when the lexeme the surface
+    /// belongs to is a compound — a name built from two roots (אֱלִיעֶ֫זֶר from
+    /// אל and עזר), where BDB could only print it under one. Returns a single
+    /// option for an ordinary word, so a caller can offer a choice exactly when
+    /// there is more than one.
+    pub fn hebrew_root_options(&self, word: &str, root: &str) -> rusqlite::Result<Vec<RootOption>> {
+        if root.is_empty() {
+            return Ok(Vec::new());
+        }
+        let norm = crate::normalize_surface(word);
+        // Anchor on the resolved root: of the lexemes this surface could be a
+        // form of, only those already filed under it are the word in hand, and
+        // their other roots are its other elements. Reached by the same two
+        // rungs as the concordance ([`LEXICON_ROOT_SURFACES`]) — through a noun
+        // stem, or as a headword in its own right.
+        let mut stmt = self.db.prepare(
+            "WITH entry(key) AS ( \
+               SELECT b.key FROM data.surface s \
+                 JOIN data.root_surface rs \
+                   ON rs.surface_id = s.surface_id AND rs.sources & 2 \
+                 JOIN lexicon_entry b ON b.norm = rs.lexeme \
+                WHERE s.text = ?1 \
+               UNION \
+               SELECT b.key FROM lexicon_entry b WHERE b.norm = ?1) \
+             SELECT er2.root, MIN(er2.ord) FROM entry e \
+             JOIN entry_root er ON er.key = e.key AND er.root = ?2 \
+             JOIN entry_root er2 ON er2.key = e.key \
+             WHERE er2.root <> ?2 \
+             GROUP BY er2.root ORDER BY MIN(er2.ord), er2.root",
+        )?;
+        let mut others = stmt
+            .query_map(rusqlite::params![norm, root], |row| row.get::<_, String>(0))?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        if others.is_empty() {
+            others = self.name_entry_roots(&norm, root)?;
+        }
+        let mut options = Vec::with_capacity(others.len() + 1);
+        for (index, root) in std::iter::once(root.to_string()).chain(others).enumerate() {
+            options.push(RootOption {
+                gloss: self.root_headline(&root)?,
+                root,
+                is_primary: index == 0,
+            });
+        }
+        Ok(options)
+    }
+
+    /// The roots of the lexicon entry a *name* surface is, when the resolved root
+    /// is not one of them.
+    ///
+    /// The anchored lookup asks which of the surface's candidate lexemes is
+    /// already filed under the root the parse chose. That fails for a name whose
+    /// root the parse invented — מִיכָאֵל resolves to the skeleton מיכ, which is
+    /// no lexeme's root — and the entry's own roots (אלה, from "who is like
+    /// God") are then the only ones there are. Gated on the name flag, since for
+    /// an ordinary word a resolved root that matches no entry is a bridge fault
+    /// to fix rather than a second reading to offer.
+    fn name_entry_roots(&self, norm: &str, root: &str) -> rusqlite::Result<Vec<String>> {
+        let mut stmt = self.db.prepare(
+            "SELECT er.root, MIN(er.ord) FROM lexicon_entry b \
+             JOIN entry_root er ON er.key = b.key \
+             WHERE b.norm = ?1 AND er.root <> ?2 \
+               AND EXISTS(SELECT 1 FROM data.surface s \
+                          JOIN data.word_info wi ON wi.info_id = s.info_id \
+                          WHERE s.text = ?1 AND wi.flags & 2) \
+             GROUP BY er.root ORDER BY MIN(er.ord), er.root",
+        )?;
+        stmt.query_map(rusqlite::params![norm, root], |row| row.get::<_, String>(0))?
+            .collect()
+    }
+
+    /// The headline gloss to label a root with: the first glossed lexeme printed
+    /// in its own section, skipping the cross-references and root-header stubs
+    /// that would name the root rather than say what it means.
+    fn root_headline(&self, root: &str) -> rusqlite::Result<String> {
+        let mut stmt = self.db.prepare(
+            "SELECT b.gloss FROM lexicon_entry b \
+             JOIN entry_root er ON er.key = b.key AND er.root = ?1 AND er.ord = 0 \
+             WHERE b.gloss IS NOT NULL AND b.gloss <> '' ORDER BY b.key",
+        )?;
+        let glosses = stmt
+            .query_map([root], |row| row.get::<_, String>(0))?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        Ok(glosses
+            .into_iter()
+            .find(|gloss| !cross_reference_gloss(gloss) && !root_stub_gloss(gloss))
+            .unwrap_or_default())
     }
 
     /// Exhaustive lexicon-coverage audit: walk every distinct surface form in
@@ -3075,17 +3213,14 @@ impl Bible {
         if root.is_empty() {
             return Ok(Vec::new());
         }
-        let mut stmt = self.db.prepare(
+        let mut stmt = self.db.prepare(&format!(
             "SELECT DISTINCT w.ref >> 16, (w.ref >> 8) & 255, w.ref & 255 \
              FROM data.word w \
              WHERE w.surface_id IN (SELECT surface_id FROM data.root_surface \
                                     WHERE lexeme = ?1 AND sources & 1) \
-                OR w.surface_id IN (SELECT rs.surface_id FROM data.root_surface rs \
-                                    JOIN lexicon_entry b \
-                                      ON b.word = rs.lexeme AND b.root = ?1 \
-                                    WHERE rs.sources & 2) \
+                OR w.surface_id IN ({LEXICON_ROOT_SURFACES}) \
              ORDER BY w.ref",
-        )?;
+        ))?;
         stmt.query_map([root], |row| {
             Ok(WordOccurrence {
                 book: row.get(0)?,
@@ -3117,10 +3252,7 @@ impl Bible {
              {joins} \
              WHERE w.surface_id IN (SELECT surface_id FROM data.root_surface \
                                     WHERE lexeme = ?1 AND sources & 1) \
-                OR w.surface_id IN (SELECT rs.surface_id FROM data.root_surface rs \
-                                    JOIN lexicon_entry b \
-                                      ON b.word = rs.lexeme AND b.root = ?1 \
-                                    WHERE rs.sources & 2) \
+                OR w.surface_id IN ({LEXICON_ROOT_SURFACES}) \
              ORDER BY w.ref, w.position",
             joins = WORD_INFO_JOINS.replace('%', "w"),
         );
