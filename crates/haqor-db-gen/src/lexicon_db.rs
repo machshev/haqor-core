@@ -649,6 +649,10 @@ fn consonants(word: &str) -> String {
 struct BdbRef {
     headword: String,
     pos: String,
+    /// The root of the section the target sits in, so a redirect can be filed
+    /// under the root of the article it points at instead of the one it happens
+    /// to sort next to.
+    root: String,
 }
 
 /// Pre-scan BDB to map every entry id to its [`BdbRef`] (headword + pos).
@@ -667,6 +671,10 @@ fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, BdbRef
     let mut in_headword = false;
     let mut headword_done = false;
     let mut in_pos = false;
+    // Section root, tracked exactly as `load_bdb` tracks it, so the two agree
+    // on which root an entry belongs to.
+    let mut current_root = String::new();
+    let mut is_root_entry = false;
     loop {
         match reader.read_event_into(&mut buf)? {
             Event::Start(e) => match e.name().as_ref() {
@@ -677,6 +685,11 @@ fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, BdbRef
                         .transpose()?
                         .map(|v| v.into_owned())
                         .unwrap_or_default();
+                    is_root_entry = e
+                        .try_get_attribute("type")?
+                        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                        .transpose()?
+                        .is_some_and(|v| v == "root");
                     word.clear();
                     pos.clear();
                     headword_done = false;
@@ -693,12 +706,18 @@ fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, BdbRef
             Event::End(e) => match e.name().as_ref() {
                 b"w" => in_headword = false,
                 b"pos" => in_pos = false,
+                b"section" => current_root.clear(),
                 b"entry" if !id.is_empty() => {
+                    let headword = tidy(&word);
+                    if is_root_entry && let Ok(r) = Root::parse(&headword) {
+                        current_root = r.letters.iter().collect();
+                    }
                     map.insert(
                         id.clone(),
                         BdbRef {
-                            headword: tidy(&word),
+                            headword,
                             pos: tidy(&pos),
+                            root: current_root.clone(),
                         },
                     );
                 }
@@ -992,14 +1011,10 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         // — adopts its target's pos so a variant spelling groups
                         // with the lexeme it redirects to rather than as "other".
                         let pos = tidy(&pos);
-                        let pos = if pos.is_empty()
-                            && gloss_parts.is_empty()
-                            && let Some(src) = &first_xref
-                        {
-                            headwords
-                                .get(src)
-                                .map(|r| r.pos.clone())
-                                .unwrap_or_default()
+                        let redirect = pos.is_empty() && gloss_parts.is_empty();
+                        let target = first_xref.as_ref().and_then(|src| headwords.get(src));
+                        let pos = if redirect {
+                            target.map(|r| r.pos.clone()).unwrap_or_default()
                         } else {
                             pos
                         };
@@ -1026,15 +1041,41 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         // skeleton begins with the root; otherwise key the entry
                         // on its own root, falling back to its skeleton so
                         // unparsable particles don't collapse into one bucket.
-                        let root: String = if is_aramaic {
+                        //
+                        // A redirect is the exception in both scripts. BDB files
+                        // "רוּת v. רעה" in the רוש section because רוּת *sorts*
+                        // there, not because it derives from it — so inheriting
+                        // made Ruth a member of the רוש family, and the reader's
+                        // occurrence list for וְלָרָשׁ "and the poor man" offered
+                        // twelve verses from the book of Ruth. 1,542 entries were
+                        // filed this way (אֶבְיוֹן "needy" and אֲבַטִּיחִים
+                        // "watermelons" both under אבח). A redirect belongs to the
+                        // article it points at, whose root the pre-pass recorded.
+                        //
+                        // Only when that target root is actually known: "no pos
+                        // and no bold definition" also describes entries that are
+                        // not redirects at all, whose gloss came from the sense
+                        // fallback, and re-keying those on their own skeleton lost
+                        // real roots (אֲשֻׁרִים off אשר, שִׁבְעָנָה off שבע). So a
+                        // known target redirects the entry and everything else
+                        // inherits as before.
+                        let redirect_root = redirect
+                            .then(|| target.map(|r| r.root.clone()).unwrap_or_default())
+                            .filter(|root| !root.is_empty());
+                        let own_root = || {
+                            Root::parse(&word)
+                                .ok()
+                                .map(|r| r.letters.iter().collect::<String>())
+                                .filter(|r| !r.is_empty())
+                                .unwrap_or_else(|| cons.clone())
+                        };
+                        let root: String = if let Some(root) = redirect_root {
+                            root
+                        } else if is_aramaic {
                             if !current_root.is_empty() && cons.starts_with(&current_root) {
                                 current_root.clone()
                             } else {
-                                Root::parse(&word)
-                                    .ok()
-                                    .map(|r| r.letters.iter().collect::<String>())
-                                    .filter(|r| !r.is_empty())
-                                    .unwrap_or_else(|| cons.clone())
+                                own_root()
                             }
                         } else if !current_root.is_empty() {
                             current_root.clone()

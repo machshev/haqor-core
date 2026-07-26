@@ -4092,6 +4092,41 @@ mod tests {
         assert!(flags[oholiab]);
     }
 
+    /// A root's occurrence list must hold occurrences of *that* root.
+    ///
+    /// Reported from the app against וְלָרָשׁ "and the poor man" (2 Sam 12:3),
+    /// whose root רוש "be in want" offered twelve verses from the book of Ruth.
+    /// BDB parks the cross-reference "רוּת v. רעה" in the רוש section because
+    /// רוּת sorts there, and the importer let it inherit that root, so the name
+    /// Ruth joined the family. A redirect now takes the root of the article it
+    /// points at; this states the consequence a reader can see.
+    #[test]
+    fn root_occurrences_exclude_unrelated_redirects() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+
+        let info = bible
+            .hebrew_word_info("וְלָרָשׁ")
+            .expect("the poor man resolves");
+        assert_eq!(info.root, "רוש");
+
+        let occurrences = bible.hebrew_root_occurrences(&info.root).unwrap();
+        assert!(
+            !occurrences.is_empty(),
+            "רוש should still have occurrences of its own"
+        );
+        // Book 31 is Ruth. The root occurs nowhere in it, so any hit there came
+        // from the mis-filed name rather than from the root.
+        assert!(
+            occurrences.iter().all(|occurrence| occurrence.book != 31),
+            "רוש offers verses from the book of Ruth: {:?}",
+            occurrences
+                .iter()
+                .filter(|o| o.book == 31)
+                .collect::<Vec<_>>()
+        );
+    }
+
     /// The reader is handed both readings where the text has two: the pointed
     /// qere in the verse itself, and the written ketiv beside it.
     #[test]
