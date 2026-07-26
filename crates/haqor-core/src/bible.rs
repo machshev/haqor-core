@@ -1295,6 +1295,16 @@ fn sense_clauses(gloss: &str) -> Vec<&str> {
     out
 }
 
+/// A gloss as an English-order line reads it: "←" becomes "→".
+///
+/// An object marker glosses to an arrow pointing at the word it marks, drawn
+/// for a Hebrew line where that word lies to the left. A verse of glosses runs
+/// the other way, so the word being pointed at is now on the right and the
+/// arrow has to turn with it.
+fn english_order_gloss(gloss: &str) -> String {
+    gloss.replace('←', "→")
+}
+
 /// The first sense of a multi-sense gloss, for a tutor card — "who; which;
 /// that" → "who", "there is not, without" → "there is not". The lexicon view
 /// keeps the full gloss; only the cards trim.
@@ -2217,7 +2227,10 @@ impl Bible {
                 .map_or_else(Vec::new, |metadata| metadata.glosses);
             // SEDRA's gloss vector is in source-token order, so the verse text
             // is what supplies the words.
-            let pairs = glosses.into_iter().map(|g| (String::new(), g)).collect();
+            let pairs = glosses
+                .into_iter()
+                .map(|g| (String::new(), english_order_gloss(&g)))
+                .collect();
             return Ok(self.with_running_text_words(book, chapter, verse, pairs));
         }
 
@@ -2260,7 +2273,7 @@ impl Bible {
                         }
                     })
             };
-            Ok((word, gloss))
+            Ok((word, english_order_gloss(&gloss)))
         })?
         .collect::<rusqlite::Result<Vec<(String, String)>>>()
         .map(|pairs| self.with_running_text_words(book, chapter, verse, pairs))
@@ -4110,15 +4123,31 @@ mod tests {
 
         // Gen 1:1 contains אֵת at position 3. Its Lexicon header remains the
         // descriptive entry, while TAHOT's compact reader representation
-        // points left toward the marked object.
+        // points at the marked object.
         let info = bible
             .hebrew_word_info("אֵת")
             .expect("object marker resolves");
         assert_eq!(info.gloss, "mark of the accusative");
         let glosses = bible.verse_glosses(1, 1, 1).unwrap();
         assert_eq!(glosses[2], "Mighty-ones");
-        assert_eq!(glosses[3], "←");
-        assert_eq!(glosses[5], "and ←");
+        // A verse of glosses reads left to right, so the object it points at is
+        // the gloss on its right — not the one a Hebrew line would put there.
+        assert_eq!(glosses[3], "→");
+        assert_eq!(glosses[5], "and →");
+        assert!(
+            !glosses.iter().any(|gloss| gloss.contains('←')),
+            "no gloss keeps the right-to-left arrow: {glosses:?}"
+        );
+    }
+
+    #[test]
+    fn english_order_gloss_turns_the_object_arrow_around() {
+        // The arrow points at the word the marker governs. Reading the glosses
+        // as English puts that word on the right, and nothing else changes.
+        assert_eq!(english_order_gloss("←"), "→");
+        assert_eq!(english_order_gloss("and ←"), "and →");
+        assert_eq!(english_order_gloss("← the God of"), "→ the God of");
+        assert_eq!(english_order_gloss("in beginning"), "in beginning");
     }
 
     #[test]
