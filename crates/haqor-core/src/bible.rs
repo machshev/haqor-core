@@ -674,15 +674,27 @@ pub struct WordOccurrence {
     pub verse: u8,
 }
 
-/// An OT verse where some inflected form of a root occurs, tagged with the
-/// surface form found there so the UI can filter a root's occurrences by form
-/// (the OT analogue of the NT lexeme filter). One row per (verse, surface form).
+/// One OT token belonging to a root — where it stands, the surface form read
+/// there, and the parse the build resolved for it. One row per *token*, not per
+/// verse, so a caller can count true frequency, highlight the exact word, and
+/// filter a root's occurrences by form or by parse (the OT analogue of the NT
+/// lexeme filter).
 #[derive(Debug)]
 pub struct HebrewOccurrence {
     pub book: u8,
     pub chapter: u8,
     pub verse: u8,
-    pub form: String,
+    /// The token's index within its verse, so the reader can highlight this
+    /// word and not a homograph elsewhere in the same verse.
+    pub position: u32,
+    pub surface: String,
+    /// Coarse parse bucket: the verb stem (Qal, Piel, …) for verbs, the part of
+    /// speech for everything else. Empty when the token has no readable
+    /// analysis.
+    pub stem: String,
+    /// Full parse label, as the reader's inline morphology shows it
+    /// ("Qal perfect 3ms"). Empty when the token has no readable analysis.
+    pub parse: String,
 }
 
 /// An NT verse where some lexeme of a root occurs, tagged with which lexeme of
@@ -3067,10 +3079,12 @@ impl Bible {
         .collect()
     }
 
-    /// OT root occurrences tagged with the surface form found in each verse, so
-    /// the UI can filter the root's occurrences by inflected form. Same root
-    /// matching as [`Bible::hebrew_root_occurrences`], but emits one row per
-    /// (verse, surface form) instead of collapsing to distinct verses.
+    /// Every token of a root in the OT, in reading order, each carrying its
+    /// position in the verse and the parse read there. Same root matching as
+    /// [`Bible::hebrew_root_occurrences`], which this supersedes for callers
+    /// that want more than a verse list: the distinct verses are the distinct
+    /// `(book, chapter, verse)` triples of the result, so a caller never needs
+    /// both scans.
     pub fn hebrew_root_occurrences_detailed(
         &self,
         root: &str,
@@ -3078,24 +3092,46 @@ impl Bible {
         if root.is_empty() {
             return Ok(Vec::new());
         }
-        let mut stmt = self.db.prepare(
-            "SELECT DISTINCT w.ref >> 16, (w.ref >> 8) & 255, w.ref & 255, s.text \
+        let sql = format!(
+            "SELECT w.ref >> 16, (w.ref >> 8) & 255, w.ref & 255, w.position, s.text, \
+                    {WORD_INFO_COLUMNS} \
              FROM data.word w \
              JOIN data.surface s ON s.surface_id = w.surface_id \
+             {joins} \
              WHERE w.surface_id IN (SELECT surface_id FROM data.root_surface \
                                     WHERE lexeme = ?1 AND sources & 1) \
                 OR w.surface_id IN (SELECT rs.surface_id FROM data.root_surface rs \
                                     JOIN lexicon_entry b \
                                       ON b.word = rs.lexeme AND b.root = ?1 \
                                     WHERE rs.sources & 2) \
-             ORDER BY w.ref, s.text",
-        )?;
+             ORDER BY w.ref, w.position",
+            joins = WORD_INFO_JOINS.replace('%', "w"),
+        );
+        let mut stmt = self.db.prepare(&sql)?;
         stmt.query_map([root], |row| {
+            let surface: String = row.get(4)?;
+            // The parse label is the same one the reader shows inline, so a
+            // filter chip and the word under the reader's finger agree.
+            let info = word_from_row(row, 5, &surface)?;
+            let (stem, parse) = info.as_ref().map_or_else(
+                || (String::new(), String::new()),
+                |info| {
+                    let stem = info
+                        .form
+                        .clone()
+                        .or_else(|| info.part_of_speech.clone())
+                        .unwrap_or_default();
+                    (stem, morph_summary(info))
+                },
+            );
             Ok(HebrewOccurrence {
                 book: row.get(0)?,
                 chapter: row.get(1)?,
                 verse: row.get(2)?,
-                form: row.get(3)?,
+                position: row.get(3)?,
+                surface,
+                stem,
+                parse,
             })
         })?
         .collect()
@@ -4217,6 +4253,78 @@ mod tests {
             .position(|word| word == "וְאָהֳלִיאָב")
             .expect("Ex 36:1 contains Oholiab");
         assert!(flags[oholiab]);
+    }
+
+    /// The detailed occurrence scan is the one the Occurrences tab reads, and
+    /// the tab needs more from it than a verse list: an exact word position to
+    /// highlight, a parse to filter on, and one row per *token* so a repeated
+    /// word in one verse is counted twice.
+    #[test]
+    fn detailed_root_occurrences_carry_position_and_parse() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+
+        let detailed = bible.hebrew_root_occurrences_detailed("ברא").unwrap();
+        assert!(!detailed.is_empty());
+
+        // Reading order, and every row placed at a real word of its verse.
+        let keys: Vec<_> = detailed
+            .iter()
+            .map(|o| (o.book, o.chapter, o.verse, o.position))
+            .collect();
+        let mut sorted = keys.clone();
+        sorted.sort_unstable();
+        assert_eq!(keys, sorted, "occurrences must come in reading order");
+        for occurrence in &detailed {
+            let verse = bible
+                .get(occurrence.book, occurrence.chapter, occurrence.verse)
+                .unwrap();
+            // `position` counts lexical words, so the standalone punctuation the
+            // text carries (paseq, sof pasuq) is skipped — the same mapping the
+            // reader's `verseGlossPositions` applies.
+            let words: Vec<&str> = verse
+                .split_whitespace()
+                .filter(|word| word.chars().any(|c| ('\u{05D0}'..='\u{05EA}').contains(&c)))
+                .collect();
+            let word = words
+                .get(occurrence.position as usize)
+                .unwrap_or_else(|| panic!("{occurrence:?} points past the end of its verse"));
+            assert_eq!(
+                crate::normalize_surface(word),
+                crate::normalize_surface(&occurrence.surface),
+                "{occurrence:?} does not point at its own surface form"
+            );
+        }
+
+        // Gen 1:1 בָּרָא is a Qal perfect; the tab groups its filter chips on
+        // exactly these labels.
+        let creation = detailed
+            .iter()
+            .find(|o| (o.book, o.chapter, o.verse) == (1, 1, 1))
+            .expect("ברא occurs in Gen 1:1");
+        assert_eq!(creation.stem, "Qal");
+        assert!(
+            creation.parse.starts_with("Qal perfect"),
+            "unexpected parse label {:?}",
+            creation.parse
+        );
+
+        // Token-level, so it never collapses below the distinct-verse count the
+        // old scan returned — and covers every verse that scan found.
+        let verses = bible.hebrew_root_occurrences("ברא").unwrap();
+        let distinct: std::collections::BTreeSet<_> = detailed
+            .iter()
+            .map(|o| (o.book, o.chapter, o.verse))
+            .collect();
+        assert_eq!(
+            distinct,
+            verses
+                .iter()
+                .map(|o| (o.book, o.chapter, o.verse))
+                .collect::<std::collections::BTreeSet<_>>(),
+            "the detailed scan must cover the same verses as the verse scan"
+        );
+        assert!(detailed.len() >= distinct.len());
     }
 
     /// A root's occurrence list must hold occurrences of *that* root.
