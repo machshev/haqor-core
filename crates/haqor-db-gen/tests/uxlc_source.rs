@@ -114,12 +114,16 @@ fn source_verses() -> BTreeMap<(u8, u8, u8), String> {
         let mut spoken = 0usize;
         let mut written = 0usize;
         loop {
-            match reader.read_event_into(&mut buf).expect("reading the UXLC book") {
+            match reader
+                .read_event_into(&mut buf)
+                .expect("reading the UXLC book")
+            {
                 Event::Start(e) => match e.name().as_ref() {
                     b"c" => chapter = numbered(&e),
                     b"v" => {
                         verse = numbered(&e);
-                        out.entry((book, chapter, verse)).or_insert_with(String::new);
+                        out.entry((book, chapter, verse))
+                            .or_insert_with(String::new);
                     }
                     b"w" | b"q" => spoken += 1,
                     b"k" => written += 1,
@@ -167,17 +171,19 @@ fn generated_verses(db: &Path) -> BTreeMap<(u8, u8, u8), String> {
     let mut stmt = conn
         .prepare("SELECT book, chapter, verse, words FROM bible WHERE book < 40")
         .expect("preparing");
-    let rows = stmt
-        .query_map([], |row| {
-            Ok((
-                (row.get::<_, u8>(0)?, row.get::<_, u8>(1)?, row.get::<_, u8>(2)?),
-                letters(&row.get::<_, String>(3)?),
-            ))
-        })
-        .expect("querying")
-        .collect::<rusqlite::Result<BTreeMap<_, _>>>()
-        .expect("collecting");
-    rows
+    stmt.query_map([], |row| {
+        Ok((
+            (
+                row.get::<_, u8>(0)?,
+                row.get::<_, u8>(1)?,
+                row.get::<_, u8>(2)?,
+            ),
+            letters(&row.get::<_, String>(3)?),
+        ))
+    })
+    .expect("querying")
+    .collect::<rusqlite::Result<BTreeMap<_, _>>>()
+    .expect("collecting")
 }
 
 /// Compare two verse maps and panic with the first differences spelled out.
@@ -189,7 +195,10 @@ fn assert_same(expected: &BTreeMap<(u8, u8, u8), String>, actual: &BTreeMap<(u8,
             got => differing.push((*reference, want.clone(), got.cloned())),
         }
     }
-    let missing: Vec<_> = actual.keys().filter(|r| !expected.contains_key(r)).collect();
+    let missing: Vec<_> = actual
+        .keys()
+        .filter(|r| !expected.contains_key(r))
+        .collect();
 
     assert!(
         missing.is_empty(),
@@ -280,7 +289,10 @@ fn source_groups() -> BTreeMap<(u8, u8, u8), Vec<Group>> {
         // The last ordinary running word seen in this verse.
         let mut previous: Option<String> = None;
         loop {
-            match reader.read_event_into(&mut buf).expect("reading the UXLC book") {
+            match reader
+                .read_event_into(&mut buf)
+                .expect("reading the UXLC book")
+            {
                 // Only w/k/q open a word. An `<x>` note or an `<s>` scribal
                 // letter nested inside one must not reset the buffer — doing so
                 // silently truncated any word containing a note (1 Sam 9:1).

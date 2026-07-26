@@ -2395,15 +2395,11 @@ impl Bible {
         let mut rows = stmt.query([first, last])?;
         while let Some(row) = rows.next()? {
             let verse: u8 = row.get(0)?;
-            metadata
-                .entry(verse)
-                .or_default()
-                .ketivs
-                .push(VerseKetiv {
-                    position: row.get(1)?,
-                    span: row.get(2)?,
-                    text: row.get(3)?,
-                });
+            metadata.entry(verse).or_default().ketivs.push(VerseKetiv {
+                position: row.get(1)?,
+                span: row.get(2)?,
+                text: row.get(3)?,
+            });
         }
         Ok(metadata)
     }
@@ -4094,6 +4090,42 @@ mod tests {
             .position(|word| word == "וְאָהֳלִיאָב")
             .expect("Ex 36:1 contains Oholiab");
         assert!(flags[oholiab]);
+    }
+
+    /// The reader is handed both readings where the text has two: the pointed
+    /// qere in the verse itself, and the written ketiv beside it.
+    #[test]
+    fn chapter_reader_metadata_carries_ketiv_readings() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+
+        // 2 Sam 12:31 writes במלכן and reads בַּמַּלְבֵּן "in the brickkiln",
+        // the thirteenth word of the verse.
+        let metadata = bible
+            .chapter_reader_metadata(9, 12, true, false, false)
+            .unwrap();
+        let verse = metadata.get(&31).expect("2 Sam 12:31 metadata");
+        let ketiv = verse
+            .ketivs
+            .iter()
+            .find(|k| k.position == 13)
+            .expect("the qere at word 13 has a ketiv");
+        assert_eq!(ketiv.span, 1);
+        // Stored as the Masoretes wrote it: bare consonants, unpointed.
+        assert_eq!(ketiv.text, "במלכן");
+        assert!(
+            bible.get(9, 12, 31).unwrap().split(' ').nth(13).is_some(),
+            "the anchored word exists in the verse text"
+        );
+
+        // Nothing is invented for a verse with no variant reading.
+        let genesis = bible
+            .chapter_reader_metadata(1, 1, true, false, false)
+            .unwrap();
+        assert!(
+            genesis.values().all(|verse| verse.ketivs.is_empty()),
+            "Genesis 1 has no ketiv readings"
+        );
     }
 
     #[test]

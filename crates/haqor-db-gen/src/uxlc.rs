@@ -257,10 +257,7 @@ pub fn parse_all(books_dir: &Path) -> Result<Vec<Verse>> {
 fn corpus_tokens(assembled: &str) -> u16 {
     let tokens = assembled
         .split(|c: char| c.is_whitespace() || c == MAQAF)
-        .filter(|t| {
-            t.chars()
-                .any(|c| (0x05D0..=0x05EA).contains(&(c as u32)))
-        })
+        .filter(|t| t.chars().any(|c| (0x05D0..=0x05EA).contains(&(c as u32))))
         .count();
     u16::try_from(tokens).unwrap_or(u16::MAX)
 }
