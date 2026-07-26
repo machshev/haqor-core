@@ -79,6 +79,9 @@ pub fn parse_all(sedra_dir: &Path) -> Result<Vec<Verse>> {
             chapter,
             verse,
             words: hebrew_words.join(" "),
+            // Ketiv/qere is a Masoretic apparatus over the Hebrew consonantal
+            // text; the Syriac NT has no counterpart.
+            ketivs: Vec::new(),
         });
     }
 

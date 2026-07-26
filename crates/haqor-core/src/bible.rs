@@ -383,6 +383,30 @@ pub struct ReaderVerseMetadata {
     pub glosses: Vec<String>,
     pub morphologies: Vec<String>,
     pub names: Vec<bool>,
+    /// The verse's *ketiv* readings, where it has any. Not one per word: a
+    /// reading can stand behind two words or behind none, so these carry their
+    /// own positions rather than lining up with the vectors above.
+    pub ketivs: Vec<VerseKetiv>,
+}
+
+/// What the consonantal text writes at a point where the reader is shown the
+/// *qere* the Masoretes read instead.
+///
+/// The written form is usually bare consonants — the Masoretes did not point
+/// what they did not read — so it is offered alongside the pointed running text,
+/// not as a substitute for it.
+#[derive(Debug, Clone)]
+pub struct VerseKetiv {
+    /// Index of the first word of the running text this stands behind.
+    pub position: u16,
+    /// How many words of the running text it answers to.
+    ///
+    /// Zero for the eight readings that are written but explicitly not read, in
+    /// which case nothing in the verse corresponds to it and `position` is where
+    /// the word would have stood — between two words, not under one.
+    pub span: u16,
+    /// The written form, space-separated when it is more than one word.
+    pub text: String,
 }
 
 /// One entry of the frequency-ordered learner vocabulary: a distinct OT
@@ -2360,6 +2384,26 @@ impl Bible {
                     .names
                     .push(info.is_some_and(|info| info.is_name));
             }
+        }
+
+        // One scan for the whole chapter's ketiv readings. Only about 1,250
+        // exist in the OT, so most chapters add nothing here.
+        let mut stmt = self.db.prepare(
+            "SELECT ref & 255, position, span, text FROM data.ketiv \
+             WHERE ref BETWEEN ?1 AND ?2 ORDER BY ref, position",
+        )?;
+        let mut rows = stmt.query([first, last])?;
+        while let Some(row) = rows.next()? {
+            let verse: u8 = row.get(0)?;
+            metadata
+                .entry(verse)
+                .or_default()
+                .ketivs
+                .push(VerseKetiv {
+                    position: row.get(1)?,
+                    span: row.get(2)?,
+                    text: row.get(3)?,
+                });
         }
         Ok(metadata)
     }

@@ -63,15 +63,40 @@ pub fn generate_bible(src_texts: &Path, output: &Path) -> Result<usize> {
         "CREATE TABLE bible(book INT, chapter INT, verse INT, words TEXT)",
         [],
     )?;
+    // The written forms the running text shows a qere for. `span` counts the
+    // running-text tokens the ketiv answers to, and is 0 for a ketiv that is
+    // never read; see `uxlc::Ketiv`.
+    db.execute(
+        "CREATE TABLE ketiv(
+             book     INT NOT NULL,
+             chapter  INT NOT NULL,
+             verse    INT NOT NULL,
+             position INT NOT NULL,
+             span     INT NOT NULL,
+             text     TEXT NOT NULL,
+             PRIMARY KEY (book, chapter, verse, position)
+         )",
+        [],
+    )?;
 
+    let mut ketivs = 0usize;
     let tx = db.transaction()?;
     {
         let mut stmt = tx.prepare("INSERT INTO bible VALUES (?1, ?2, ?3, ?4)")?;
+        let mut ketiv_stmt = tx.prepare(
+            "INSERT INTO ketiv(book, chapter, verse, position, span, text) \
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
+        )?;
         for v in ot.iter().chain(nt.iter()) {
             stmt.execute((v.book, v.chapter, v.verse, &v.words))?;
+            for k in &v.ketivs {
+                ketiv_stmt.execute((v.book, v.chapter, v.verse, k.position, k.span, &k.text))?;
+                ketivs += 1;
+            }
         }
     }
     tx.commit()?;
+    info!("  {ketivs} ketiv readings");
 
     let total = ot.len() + nt.len();
     info!("Wrote {total} rows to {}", output.display());

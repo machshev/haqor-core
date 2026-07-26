@@ -245,6 +245,236 @@ fn generated_ot_text_matches_the_uxlc_source() {
     let _ = std::fs::remove_file(&output);
 }
 
+/// One ketiv/qere group as the source states it: the written words, and the
+/// read words that stand in for them.
+struct Group {
+    ketiv: Vec<String>,
+    qere: Vec<String>,
+    /// The running-text word immediately before the group, when there is one.
+    ///
+    /// Needed to locate the group unambiguously: a qere is often a very common
+    /// word, so searching the verse for its spelling alone can land on an
+    /// unrelated earlier occurrence — Lev 25:30 reads לו at token 5 and again,
+    /// as the qere, at token 13.
+    preceded_by: Option<String>,
+}
+
+/// Every ketiv/qere group in the source, per verse, in document order.
+///
+/// A group is a run of `<k>` followed by its `<q>`s. A `<k>` arriving after a
+/// `<q>` opens a new group, which is what separates Ezek 42:9's two-for-two
+/// from the one-for-one that follows it.
+fn source_groups() -> BTreeMap<(u8, u8, u8), Vec<Group>> {
+    let mut out: BTreeMap<(u8, u8, u8), Vec<Group>> = BTreeMap::new();
+    for (index, stem) in OT_BOOKS.iter().enumerate() {
+        let book = u8::try_from(index + 1).expect("39 books fit in a u8");
+        let path = src_texts()
+            .join("UXLC")
+            .join("Books")
+            .join(format!("{stem}.xml"));
+        let mut reader = Reader::from_file(&path).expect("opening the UXLC book");
+        let mut buf = Vec::new();
+        let (mut chapter, mut verse) = (0u8, 0u8);
+        let mut tag = Vec::new();
+        let mut text = String::new();
+        // The last ordinary running word seen in this verse.
+        let mut previous: Option<String> = None;
+        loop {
+            match reader.read_event_into(&mut buf).expect("reading the UXLC book") {
+                // Only w/k/q open a word. An `<x>` note or an `<s>` scribal
+                // letter nested inside one must not reset the buffer — doing so
+                // silently truncated any word containing a note (1 Sam 9:1).
+                Event::Start(e) => match e.name().as_ref() {
+                    b"c" => chapter = numbered(&e),
+                    b"v" => {
+                        verse = numbered(&e);
+                        previous = None;
+                    }
+                    name @ (b"w" | b"k" | b"q") => {
+                        tag = name.to_vec();
+                        text.clear();
+                    }
+                    _ => {}
+                },
+                Event::Text(t) if !tag.is_empty() => {
+                    text.push_str(&letters(&t.unescape().expect("unescaping")));
+                }
+                Event::End(e) => {
+                    let groups = out.entry((book, chapter, verse)).or_default();
+                    match e.name().as_ref() {
+                        b"k" => {
+                            if groups.last().is_none_or(|g| !g.qere.is_empty()) {
+                                groups.push(Group {
+                                    ketiv: Vec::new(),
+                                    qere: Vec::new(),
+                                    preceded_by: previous.clone(),
+                                });
+                            }
+                            groups
+                                .last_mut()
+                                .expect("just pushed")
+                                .ketiv
+                                .push(std::mem::take(&mut text));
+                        }
+                        b"q" => {
+                            let read = std::mem::take(&mut text);
+                            if let Some(group) = groups.last_mut() {
+                                group.qere.push(read.clone());
+                            }
+                            if !read.is_empty() {
+                                previous = Some(read);
+                            }
+                        }
+                        b"w" => {
+                            let read = std::mem::take(&mut text);
+                            if !read.is_empty() {
+                                previous = Some(read);
+                            }
+                        }
+                        _ => {}
+                    }
+                    // Closing a nested `<x>` or `<s>` must not stop collection;
+                    // only the word element itself ends the word.
+                    if matches!(e.name().as_ref(), b"w" | b"k" | b"q") {
+                        tag.clear();
+                    }
+                }
+                Event::Eof => break,
+                _ => {}
+            }
+            buf.clear();
+        }
+    }
+    out.retain(|_, groups| !groups.is_empty());
+    out
+}
+
+/// The `ketiv` table has to say what the source writes, and anchor it to the
+/// right word of the running text.
+///
+/// The position is checked by *finding* the qere in the generated verse rather
+/// than by recomputing the importer's token arithmetic, so a mistake in that
+/// arithmetic shows up here instead of being reproduced identically on both
+/// sides and cancelling out.
+#[test]
+fn ketiv_readings_are_recorded_against_the_right_word() {
+    let expected = source_groups();
+    let output = std::env::temp_dir().join("haqor-uxlc-ketiv-check.db");
+    generate_bible(&src_texts(), &output).expect("generating the bible table");
+    let conn = rusqlite::Connection::open(&output).expect("opening the generated database");
+
+    // Every group that has a ketiv must have a row; a qere with no ketiv at all
+    // (read but never written) has nothing to record.
+    let with_ketiv: usize = expected
+        .values()
+        .flatten()
+        .filter(|g| !g.ketiv.is_empty())
+        .count();
+    let rows = conn
+        .query_row("SELECT COUNT(*) FROM ketiv", [], |r| r.get::<_, i64>(0))
+        .expect("counting") as usize;
+    assert_eq!(
+        rows, with_ketiv,
+        "the source states {with_ketiv} ketiv groups, the table holds {rows}"
+    );
+
+    let mut checked = 0usize;
+    for ((book, chapter, verse), groups) in &expected {
+        let words: String = conn
+            .query_row(
+                "SELECT words FROM bible WHERE book = ?1 AND chapter = ?2 AND verse = ?3",
+                rusqlite::params![book, chapter, verse],
+                |row| row.get(0),
+            )
+            .expect("verse is present");
+        // The corpus token space: whitespace and maqaf separate, and a token
+        // with no Hebrew letter takes no position.
+        let tokens: Vec<String> = words
+            .split(|c: char| c.is_whitespace() || c == '\u{05BE}')
+            .map(letters)
+            .filter(|t| !t.is_empty())
+            .collect();
+
+        let mut stmt = conn
+            .prepare(
+                "SELECT position, span, text FROM ketiv \
+                 WHERE book = ?1 AND chapter = ?2 AND verse = ?3 ORDER BY position",
+            )
+            .expect("preparing");
+        let stored: Vec<(usize, usize, String)> = stmt
+            .query_map(rusqlite::params![book, chapter, verse], |row| {
+                Ok((
+                    row.get::<_, u16>(0)? as usize,
+                    row.get::<_, u16>(1)? as usize,
+                    row.get::<_, String>(2)?,
+                ))
+            })
+            .expect("querying")
+            .collect::<rusqlite::Result<_>>()
+            .expect("collecting");
+
+        let wanted: Vec<&Group> = groups.iter().filter(|g| !g.ketiv.is_empty()).collect();
+        assert_eq!(
+            stored.len(),
+            wanted.len(),
+            "{book} {chapter}:{verse} has {} ketiv groups in the source, {} stored",
+            wanted.len(),
+            stored.len()
+        );
+
+        let mut search_from = 0usize;
+        for (group, (position, span, text)) in wanted.iter().zip(&stored) {
+            assert_eq!(
+                letters(text),
+                group.ketiv.join(""),
+                "{book} {chapter}:{verse} stored the wrong written form"
+            );
+            assert_eq!(
+                *span,
+                group.qere.len(),
+                "{book} {chapter}:{verse} ketiv {text} answers to {} read words, stored span {span}",
+                group.qere.len()
+            );
+            if let Some(first) = group.qere.first() {
+                // Locate the qere by the pair (word before it, the qere itself),
+                // which the source states independently of any token counting.
+                let found = (search_from..tokens.len())
+                    .find(|&i| {
+                        tokens[i] == *first
+                            && match &group.preceded_by {
+                                Some(before) => i > 0 && tokens[i - 1] == *before,
+                                None => i == 0,
+                            }
+                    })
+                    .unwrap_or_else(|| {
+                        panic!(
+                            "{book} {chapter}:{verse} qere {first} (after {:?}) \
+                             is not in the running text: {tokens:?}",
+                            group.preceded_by
+                        )
+                    });
+                assert_eq!(
+                    *position, found,
+                    "{book} {chapter}:{verse} anchors ketiv {text} at token {position}, \
+                     but its qere {first} is at token {found}"
+                );
+                search_from = found + span;
+            } else {
+                // Written but never read: nothing stands in the running text, so
+                // the anchor is where the word would have been.
+                assert!(
+                    *position <= tokens.len(),
+                    "{book} {chapter}:{verse} anchors an unread ketiv past the verse"
+                );
+            }
+            checked += 1;
+        }
+    }
+    assert_eq!(checked, rows, "every stored ketiv row was checked");
+
+    let _ = std::fs::remove_file(&output);
+}
+
 /// The qere readings specifically, which were absent from the corpus entirely
 /// until the importer learned to read `<q>`. Spot-checks are cheap insurance
 /// that a future change cannot quietly reintroduce the same loss while still

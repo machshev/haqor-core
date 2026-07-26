@@ -227,6 +227,7 @@ resolution, and the unindexed NT occurrence scan.
 ```
 meta(key, value)                     -- schema_version, built, blob_codec
 verse(ref PK, words)                 -- blob; see blob_dict when meta.blob_codec is zstd
+ketiv(ref, position, span, text)  PK(ref, position) WITHOUT ROWID
 blob_dict(dict_id PK, data)
 word(ref, position, surface_id, info_id, gloss_id)  PK(ref, position) WITHOUT ROWID
   + verse_word view    -- unpacks ref to (book, chapter, verse) for the tutor
@@ -254,11 +255,21 @@ integers plus a root. `analysis_override` does not appear: primary-analysis
 overrides are consumed by `gen-runtime` when it resolves `word_info`, and have
 no runtime reader left.
 
+`ketiv` is the one place the runtime carries something the running text
+deliberately does not say. `verse` holds the *qere* — what the Masoretes direct
+the reader to read — because that is the reading edition's text and the only one
+that is pointed. The written form is a second witness to the same place, so it
+travels beside the text rather than in it, anchored by `(position, span)` because
+the two do not correspond word-for-word: Ezek 42:9 answers two written words
+with two read ones, Lev 25:30 one with one, and eight readings across the corpus
+are written but never read at all, which is `span = 0`.
+
 ### Name mapping
 
 | Generation DB | Runtime |
 | --- | --- |
 | `bible.bible` | `verse` |
+| `bible.ketiv` | `ketiv` (ref-packed) |
 | `hebrew.verse_word` + `hebrew.oshb_primary` | `word` + `word_info` (the tagging itself is not carried) |
 | `hebrew.surface` | `surface` |
 | `hebrew.analyses`, `hebrew.noun_analyses`, `hebrew.lexical_analyses` | resolved into `word_info` (+ `root_surface`) |

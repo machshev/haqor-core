@@ -234,28 +234,41 @@ pub fn open_generation_dbs(data_dir: &Path) -> Result<Connection> {
         .with_context(|| format!("attaching {}", path.display()))?;
     }
 
-    // The resolution shares its lexicon helpers with the runtime, and those
-    // name the runtime's tables without a schema so both sides can satisfy
-    // them. Here they resolve to temp views over the generation tables;
-    // in the app they resolve to `haqor.db`.
-    //
-    // This shim is load-bearing rather than cosmetic: without it those lookups
-    // fail, and because the differential test resolves through the same
-    // helpers, both sides would agree on data with every curated override
-    // silently missing.
+    attach_lexicon_views(&db)?;
+    Ok(db)
+}
+
+/// Give `haqor-core`'s shared lexicon helpers the table names they expect, over
+/// a connection with the *generation* `lexdb` attached.
+///
+/// Those helpers (`curated_gloss`, `bdb_rows`, the learner-gloss lookups) name
+/// the runtime's tables without a schema, so that one implementation serves both
+/// the app — where the names are real tables in `haqor.db` — and the build,
+/// where they are these views.
+///
+/// **Every build-time connection that calls into those helpers needs this.** The
+/// shim is load-bearing, and its absence is silent: the helpers swallow a
+/// "no such table" into `None`, so a connection without the views resolves
+/// nothing and reports success. That is not hypothetical — `gen-hebrew`'s
+/// lexical bridge ran without it and wrote an empty `lexical_analyses`, which
+/// cost 930 function words (`לֹא`, `מִי`, `אֲנִי` …) their word info, and showed
+/// up only when someone rebuilt with `--force`. The differential tests cannot
+/// see this class of fault, because both sides of the comparison go through the
+/// same helpers.
+pub(crate) fn attach_lexicon_views(db: &Connection) -> Result<()> {
     db.execute_batch(
-        "CREATE TEMP VIEW lexicon_entry AS
+        "CREATE TEMP VIEW IF NOT EXISTS lexicon_entry AS
            SELECT bdb_id AS key, root, word, cons, pos, gloss,
                   content_json AS body, type AS kind
            FROM lexdb.bdb;
-         CREATE TEMP VIEW surface_override AS
+         CREATE TEMP VIEW IF NOT EXISTS surface_override AS
            SELECT surface, root, gloss FROM lexdb.lexicon_overrides;
-         CREATE TEMP VIEW word_gloss AS
+         CREATE TEMP VIEW IF NOT EXISTS word_gloss AS
            SELECT surface, gloss, note, is_name, reader_override
            FROM lexdb.word_glosses;",
     )
     .context("creating the generation-side lexicon views")?;
-    Ok(db)
+    Ok(())
 }
 
 /// Build `haqor.db` from the four generation databases in `data_dir`.
@@ -285,6 +298,7 @@ pub fn generate_runtime(data_dir: &Path, output: &Path, codec: BlobCodec) -> Res
     let words = {
         let tx = db.unchecked_transaction()?;
         let verses = copy_verses(db, &mut encoder)?;
+        let ketivs = copy_ketiv(db)?;
         copy_surfaces(db)?;
         copy_roots(db)?;
         copy_verse_stats(db)?;
@@ -297,7 +311,7 @@ pub fn generate_runtime(data_dir: &Path, output: &Path, codec: BlobCodec) -> Res
         write_glosses(db, &builder.glosses, &reader_glosses)?;
         write_meta(db, codec, &encoder)?;
         tx.commit()?;
-        info!("Copied {verses} verses");
+        info!("Copied {verses} verses and {ketivs} ketiv readings");
         words
     };
     db.execute_batch(INDEXES)?;
@@ -320,6 +334,18 @@ const SCHEMA: &str = "
 CREATE TABLE meta(key TEXT PRIMARY KEY, value TEXT NOT NULL);
 
 CREATE TABLE verse(ref INTEGER PRIMARY KEY, words BLOB NOT NULL);
+
+-- What the consonantal text writes where `verse` shows the qere the Masoretes
+-- read instead. `position` is the token in the verse the reading begins at and
+-- `span` how many tokens it covers; `span` is 0 for the eight readings that are
+-- written but never read, where `position` is where the word would have stood.
+CREATE TABLE ketiv(
+    ref      INTEGER NOT NULL,
+    position INTEGER NOT NULL,
+    span     INTEGER NOT NULL,
+    text     TEXT    NOT NULL,
+    PRIMARY KEY(ref, position)
+) WITHOUT ROWID;
 
 -- Present only when meta.blob_codec names a codec that needs it.
 CREATE TABLE blob_dict(dict_id INTEGER PRIMARY KEY, data BLOB NOT NULL);
@@ -569,6 +595,21 @@ fn copy_verses(db: &Connection, encoder: &mut Encoder) -> Result<usize> {
         count += 1;
     }
     Ok(count)
+}
+
+/// Carry the ketiv readings across, packing their references.
+///
+/// Small enough (about 1,250 rows) to copy in one statement; the text is left
+/// uncompressed because it is queried per verse alongside the reader's other
+/// per-word data rather than fetched whole like a verse or a lexicon article.
+fn copy_ketiv(db: &Connection) -> Result<usize> {
+    let copied = db.execute(
+        "INSERT INTO out.ketiv(ref, position, span, text)
+         SELECT (book << 16) | (chapter << 8) | verse, position, span, text
+         FROM bibledb.ketiv",
+        [],
+    )?;
+    Ok(copied)
 }
 
 fn copy_surfaces(db: &Connection) -> Result<()> {

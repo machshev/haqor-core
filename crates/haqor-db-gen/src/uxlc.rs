@@ -204,6 +204,34 @@ pub struct Verse {
     pub chapter: u8,
     pub verse: u8,
     pub words: String,
+    /// The *ketiv* readings this verse carries, if any — the written forms that
+    /// `words` shows the qere for instead.
+    pub ketivs: Vec<Ketiv>,
+}
+
+/// One *ketiv* — what the consonantal text writes where the running text shows
+/// what the Masoretes say to read.
+///
+/// The two are not paired word-for-word: Ezek 42:9 answers two written words
+/// with two read ones and then one with one, Deut 5:10 answers one with two,
+/// 2 Chr 34:6 answers two with one. So a ketiv is anchored to a *range* of the
+/// running text rather than to a single word.
+pub struct Ketiv {
+    /// Token index in the verse of the first qere word this stands behind, in
+    /// the same token space the corpus uses everywhere else: split on
+    /// whitespace and maqaf, tokens without a Hebrew letter skipped.
+    pub position: u16,
+    /// How many running-text tokens the ketiv answers to.
+    ///
+    /// Zero for the eight *ketiv wela qere* — written, but explicitly not read,
+    /// so there is nothing in the running text at all. `position` is then where
+    /// the word would have stood, and a reader that shows it is showing
+    /// something between two words rather than under one.
+    pub span: u16,
+    /// The written form, space-joined when the ketiv is more than one word.
+    /// Usually bare consonants: the Masoretes did not point what they did not
+    /// read.
+    pub text: String,
 }
 
 /// Parse every OT book and return verses in book/chapter/verse order.
@@ -218,17 +246,101 @@ pub fn parse_all(books_dir: &Path) -> Result<Vec<Verse>> {
     Ok(verses)
 }
 
+/// How many corpus tokens one assembled `<w>`/`<q>` contributes.
+///
+/// This has to agree exactly with the tokenising the rest of the pipeline does
+/// (`hebrew_db`, `occurrences`), because [`Ketiv::position`] indexes into the
+/// positions that tokenising produces: whitespace and maqaf separate, and a
+/// token with no Hebrew letter — a lone paseq — takes no position. Most words
+/// count 1; a maqaf-joined `<w>` still counts 1 because the maqaf trails it,
+/// and the handful of glued words this module splits count 2.
+fn corpus_tokens(assembled: &str) -> u16 {
+    let tokens = assembled
+        .split(|c: char| c.is_whitespace() || c == MAQAF)
+        .filter(|t| {
+            t.chars()
+                .any(|c| (0x05D0..=0x05EA).contains(&(c as u32)))
+        })
+        .count();
+    u16::try_from(tokens).unwrap_or(u16::MAX)
+}
+
+/// One verse under construction, with the ketiv group currently open.
+#[derive(Default)]
+struct VerseAcc {
+    words: Vec<String>,
+    /// Corpus tokens contributed so far; the position the next token will take.
+    tokens: u16,
+    ketivs: Vec<Ketiv>,
+    /// Written words of the group being read, empty when no group is open.
+    pending: Vec<String>,
+    /// Token position where the open group's qere begins.
+    pending_at: u16,
+    /// Tokens the open group's qere has contributed.
+    pending_span: u16,
+    /// Whether the open group has seen a qere yet. A `k` arriving after one
+    /// starts a fresh group rather than extending this one — Ezek 42:9 writes
+    /// `k k q q k q`, which is a two-for-two followed by a one-for-one.
+    pending_read: bool,
+}
+
+impl VerseAcc {
+    /// Close the open ketiv group, if there is one.
+    fn flush_ketiv(&mut self) {
+        if self.pending.is_empty() {
+            return;
+        }
+        self.ketivs.push(Ketiv {
+            position: self.pending_at,
+            span: self.pending_span,
+            text: std::mem::take(&mut self.pending).join(" "),
+        });
+        self.pending_span = 0;
+        self.pending_read = false;
+    }
+
+    /// Record a written (ketiv) word.
+    fn push_ketiv(&mut self, text: String) {
+        if self.pending_read {
+            self.flush_ketiv();
+        }
+        if self.pending.is_empty() {
+            // Where the qere will land, and — for a ketiv that is never read —
+            // where the word would have stood.
+            self.pending_at = self.tokens;
+        }
+        self.pending.push(text);
+    }
+
+    /// Record a running-text word: an ordinary `w`, or a `q` standing in for the
+    /// open group's ketiv.
+    fn push_word(&mut self, text: String, is_qere: bool) {
+        let tokens = corpus_tokens(&text);
+        if is_qere && !self.pending.is_empty() {
+            self.pending_read = true;
+            self.pending_span += tokens;
+        } else {
+            // An ordinary word ends any open group, including a ketiv that
+            // never got a qere.
+            self.flush_ketiv();
+        }
+        self.tokens += tokens;
+        self.words.push(text);
+    }
+}
+
 /// Parse one UXLC book file, appending its verses to `out`.
 fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
     let mut reader = Reader::from_file(path)?;
 
-    // chapter -> verse -> words. BTreeMap keeps numeric order regardless of the
-    // order elements appear in the source (mirrors the Python sort()).
-    let mut chapters: BTreeMap<u8, BTreeMap<u8, Vec<String>>> = BTreeMap::new();
+    // chapter -> verse -> accumulator. BTreeMap keeps numeric order regardless
+    // of the order elements appear in the source (mirrors the Python sort()).
+    let mut chapters: BTreeMap<u8, BTreeMap<u8, VerseAcc>> = BTreeMap::new();
 
     let mut chapter: u8 = 0;
     let mut verse: u8 = 0;
     let mut in_word = false;
+    let mut in_ketiv = false;
     let mut in_verse = false;
     let mut word = String::new();
     let mut buf = Vec::new();
@@ -258,12 +370,15 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                     in_word = true;
                     word.clear();
                 }
-                // `k` is a ketiv, superseded by its qere and so not read.
-                // Where a verse has a ketiv with no qere at all — the eight
-                // *ketiv wela qere*, written but explicitly not read (Jer
-                // 38:16, 2 Kgs 5:18, Ruth 3:12 …) — there is likewise nothing
-                // to say, so dropping every `k` is right in both cases.
-                b"k" => {}
+                // `k` is a ketiv: superseded by its qere and so not read, and
+                // for the eight *ketiv wela qere* (Jer 38:16, 2 Kgs 5:18, Ruth
+                // 3:12 …) not read at all. It stays out of the running text
+                // either way, and is recorded alongside it so a reader can show
+                // what the consonantal text actually writes.
+                b"k" => {
+                    in_ketiv = true;
+                    word.clear();
+                }
                 // Section markers, a scribal note, and the large/small/
                 // suspended letters, which wrap a letter *inside* a `w` and so
                 // are already carried by the text events below.
@@ -287,6 +402,23 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                 let name = e.name();
                 if name.as_ref() == b"v" {
                     in_verse = false;
+                    // A verse cannot end mid-group, but a ketiv that is never
+                    // read has nothing following it to close the group either.
+                    chapters
+                        .entry(chapter)
+                        .or_default()
+                        .entry(verse)
+                        .or_default()
+                        .flush_ketiv();
+                } else if name.as_ref() == b"k" {
+                    in_ketiv = false;
+                    let written = std::mem::take(&mut word);
+                    chapters
+                        .entry(chapter)
+                        .or_default()
+                        .entry(verse)
+                        .or_default()
+                        .push_ketiv(written);
                 } else if name.as_ref() == b"w" || name.as_ref() == b"q" {
                     in_word = false;
                     let assembled = strip_internal_maqaf(&std::mem::take(&mut word));
@@ -297,10 +429,10 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                         .or_default()
                         .entry(verse)
                         .or_default()
-                        .push(assembled);
+                        .push_word(assembled, name.as_ref() == b"q");
                 }
             }
-            Event::Text(t) if in_word => {
+            Event::Text(t) if in_word || in_ketiv => {
                 let text = t.unescape()?;
                 // Keep only Hebrew fragments, dropping nested <x> note text.
                 // Mirrors the Python `e > "z"` filter: UTF-8 byte ordering
@@ -316,12 +448,13 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
     }
 
     for (chapter, vmap) in chapters {
-        for (verse, words) in vmap {
+        for (verse, acc) in vmap {
             out.push(Verse {
                 book,
                 chapter,
                 verse,
-                words: words.join(" "),
+                words: acc.words.join(" "),
+                ketivs: acc.ketivs,
             });
         }
     }

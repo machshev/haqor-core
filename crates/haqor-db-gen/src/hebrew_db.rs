@@ -1082,6 +1082,9 @@ fn populate_lexical_bridge(db: &mut Connection, lexicon_db: Option<&Path>) -> Re
         "ATTACH DATABASE ?1 AS lexdb",
         [lexicon.to_string_lossy().as_ref()],
     )?;
+    // `lexicon_fallback` below reaches the lexicon through the helpers that name
+    // the runtime's tables, so this connection has to offer those names too.
+    crate::runtime_db::attach_lexicon_views(db)?;
 
     // Surfaces that produced no analysis of either kind.
     let unanalysed: Vec<(i64, String)> = {
