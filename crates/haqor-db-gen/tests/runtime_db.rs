@@ -12,10 +12,9 @@
 
 use std::path::{Path, PathBuf};
 
-use haqor_core::bible::{Bible, HebrewWord};
-use haqor_core::data_support::connection;
+use haqor_core::bible::HebrewWord;
 use haqor_core::resolve::{TokenTagging, resolve};
-use haqor_db_gen::{BlobCodec, generate_runtime, pack_ref};
+use haqor_db_gen::{BlobCodec, generate_runtime, open_generation_dbs, pack_ref};
 use rusqlite::OptionalExtension;
 
 /// Workspace `data/`, which is two levels above this crate. Tests run with the
@@ -84,8 +83,8 @@ fn stored_renderings_match_live_resolution() {
     let output = std::env::temp_dir().join("haqor-runtime-differential.db");
     generate_runtime(&data_dir(), &output, BlobCodec::None).expect("generating haqor.db");
 
-    let bible = Bible::open(data_dir()).expect("opening generation databases");
-    let db = connection(&bible);
+    let connection = open_generation_dbs(&data_dir()).expect("opening generation databases");
+    let db = &connection;
     db.execute("ATTACH DATABASE ?1 AS rt", [output.to_string_lossy()])
         .expect("attaching the generated database");
 
@@ -177,6 +176,80 @@ fn stored_renderings_match_live_resolution() {
     let _ = std::fs::remove_file(&output);
 }
 
+/// The differential test cannot see a fault that hits both sides of the
+/// comparison: the stored rendering and the live one share every helper, so a
+/// lexicon lookup that silently fails during generation agrees with itself.
+/// That is not hypothetical — it happened, and every curated override
+/// disappeared from the build while the differential test stayed green.
+///
+/// So this checks the built database against the curated *source* instead:
+/// every override in `lexicon_overrides` has to be visible in what the reader
+/// would show for that surface.
+#[test]
+fn curated_overrides_survive_into_the_build() {
+    require_data!();
+    let output = std::env::temp_dir().join("haqor-runtime-curated.db");
+    generate_runtime(&data_dir(), &output, BlobCodec::None).expect("generating haqor.db");
+
+    let db = open_generation_dbs(&data_dir()).expect("opening generation databases");
+    db.execute("ATTACH DATABASE ?1 AS rt", [output.to_string_lossy()])
+        .expect("attaching the generated database");
+
+    let mut stmt = db
+        .prepare(
+            "SELECT o.surface, o.root, o.gloss,
+                    COALESCE(wi.root, ''), COALESCE(g.text, '')
+             FROM lexdb.lexicon_overrides o
+             JOIN rt.surface s ON s.text = o.surface
+             LEFT JOIN rt.word_info wi ON wi.info_id = s.info_id
+             LEFT JOIN rt.gloss g ON g.gloss_id = wi.gloss_id",
+        )
+        .expect("preparing");
+    let rows = stmt
+        .query_map([], |row| {
+            Ok((
+                row.get::<_, String>(0)?,
+                row.get::<_, String>(1)?,
+                row.get::<_, String>(2)?,
+                row.get::<_, String>(3)?,
+                row.get::<_, String>(4)?,
+            ))
+        })
+        .expect("querying")
+        .collect::<rusqlite::Result<Vec<_>>>()
+        .expect("collecting");
+    assert!(
+        rows.len() > 50,
+        "expected the curated overrides to reach the build, matched {}",
+        rows.len()
+    );
+
+    // Not every override wins: the table is consulted as one input to the
+    // resolution, and a surface with a strong verb or noun reading can keep it.
+    // So this is a floor, not an equality — the fault it guards against took
+    // *all* of them to zero. Currently 84 of 99 glosses and 46 roots survive.
+    let glosses_kept = rows
+        .iter()
+        .filter(|(_, _, gloss, _, stored)| !gloss.is_empty() && stored == gloss)
+        .count();
+    let roots_kept = rows
+        .iter()
+        .filter(|(_, root, _, stored, _)| !root.is_empty() && stored == root)
+        .count();
+    assert!(
+        glosses_kept > 60,
+        "only {glosses_kept} of {} curated glosses reached the build",
+        rows.len()
+    );
+    assert!(
+        roots_kept > 30,
+        "only {roots_kept} of {} curated roots reached the build",
+        rows.len()
+    );
+
+    let _ = std::fs::remove_file(&output);
+}
+
 /// The compressed build has to be readable, and readable *only* with what the
 /// database itself carries: the blobs are too short to compress alone, so they
 /// are written against a trained dictionary that ships in `blob_dict`. This is
@@ -202,8 +275,8 @@ fn compressed_verse_text_round_trips_through_the_shipped_dictionary() {
     let mut decompressor =
         zstd::bulk::Decompressor::with_dictionary(&dictionary).expect("preparing the decompressor");
 
-    let source = Bible::open(data_dir()).expect("opening generation databases");
-    let mut stmt = connection(&source)
+    let source = open_generation_dbs(&data_dir()).expect("opening generation databases");
+    let mut stmt = source
         .prepare("SELECT book, chapter, verse, words FROM bibledb.bible")
         .expect("preparing");
     let mut rows = stmt.query([]).expect("querying");
@@ -247,8 +320,8 @@ fn root_surface_reproduces_the_concordance_union() {
     let output = std::env::temp_dir().join("haqor-runtime-roots.db");
     generate_runtime(&data_dir(), &output, BlobCodec::None).expect("generating haqor.db");
 
-    let bible = Bible::open(data_dir()).expect("opening generation databases");
-    let db = connection(&bible);
+    let connection = open_generation_dbs(&data_dir()).expect("opening generation databases");
+    let db = &connection;
     db.execute("ATTACH DATABASE ?1 AS rt", [output.to_string_lossy()])
         .expect("attaching the generated database");
 
@@ -278,6 +351,35 @@ fn root_surface_reproduces_the_concordance_union() {
         .expect("counting extra concordance pairs");
     assert_eq!((missing, extra), (0, 0), "concordance pairs differ");
 
+    // Which side of the union a pair came from has to survive: root
+    // concordance reaches a noun's root through the lexicon, so a pair known
+    // only as a noun stem must not answer as if a verb analysis carried it.
+    let verb_wrong: i64 = db
+        .query_row(
+            "SELECT COUNT(*) FROM (
+               SELECT DISTINCT root AS lexeme, surface_id FROM hebrewdb.analyses
+               EXCEPT
+               SELECT lexeme, surface_id FROM rt.root_surface WHERE sources & 1)",
+            [],
+            |row| row.get(0),
+        )
+        .expect("counting verb-sourced pairs");
+    let noun_wrong: i64 = db
+        .query_row(
+            "SELECT COUNT(*) FROM (
+               SELECT DISTINCT stem AS lexeme, surface_id FROM hebrewdb.noun_analyses
+               EXCEPT
+               SELECT lexeme, surface_id FROM rt.root_surface WHERE sources & 2)",
+            [],
+            |row| row.get(0),
+        )
+        .expect("counting noun-sourced pairs");
+    assert_eq!(
+        (verb_wrong, noun_wrong),
+        (0, 0),
+        "concordance sources differ"
+    );
+
     let stems_kept: i64 = db
         .query_row(
             "SELECT COUNT(DISTINCT n.stem) FROM hebrewdb.noun_analyses n
@@ -298,8 +400,8 @@ fn root_surface_reproduces_the_concordance_union() {
 #[test]
 fn packed_references_round_trip_the_corpus() {
     require_data!();
-    let bible = Bible::open(data_dir()).expect("opening generation databases");
-    let db = connection(&bible);
+    let connection = open_generation_dbs(&data_dir()).expect("opening generation databases");
+    let db = &connection;
     // Chapters and verses both exceed a byte's range in no book, which is what
     // the 8-bit packing assumes; a Psalm 119 or a 176-verse chapter would show
     // up here first.

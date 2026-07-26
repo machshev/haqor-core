@@ -54,7 +54,8 @@ cargo run -- admin
 
 The four databases in `data/` are the generation pipeline's cache: each is one
 stage's output, so the fast iteration loops rebuild only what changed. What the
-app ships is a single curated `haqor.db`, built from all four:
+app ships — and what `Bible::open` reads — is a single curated `haqor.db`,
+built from all four:
 
 ```sh
 cargo run --release -- db gen-runtime                      # data/haqor.db
@@ -67,6 +68,10 @@ generation databases become 37 MiB, or 30 MiB compressed. `--blob-codec none`
 is the default because it keeps verse text and lexicon entries readable with
 `sqlite3`; shipped builds use `zstd`, whose trained dictionary travels inside
 the database. See [ADR 6](doc/adr/0006-single-runtime-database.md).
+
+`gen-runtime` is a prerequisite for everything that reads data: the CLI, the
+tests that need a corpus, and the app all open `haqor.db`. Regenerate it
+whenever an earlier stage changes, or they keep reading the previous build.
 
 ### LAN progress sync
 

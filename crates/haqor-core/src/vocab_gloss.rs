@@ -74,9 +74,9 @@ fn query_curated_gloss(
 ) -> Option<CuratedGloss> {
     let key = vocab_key(surface);
     let query = if reader_override_only {
-        "SELECT surface, gloss, note FROM lexdb.word_glosses WHERE reader_override = 1"
+        "SELECT surface, gloss, note FROM word_gloss WHERE reader_override = 1"
     } else {
-        "SELECT surface, gloss, note FROM lexdb.word_glosses"
+        "SELECT surface, gloss, note FROM word_gloss"
     };
     let mut stmt = db.prepare(query).ok()?;
     stmt.query_map([], |row| {
@@ -99,8 +99,7 @@ fn query_curated_gloss(
 /// wherever the tutor classifies names.
 pub fn curated_name(db: &Connection, surface: &str) -> bool {
     let key = vocab_key(surface);
-    let Ok(mut stmt) = db.prepare("SELECT surface FROM lexdb.word_glosses WHERE is_name = 1")
-    else {
+    let Ok(mut stmt) = db.prepare("SELECT surface FROM word_gloss WHERE is_name = 1") else {
         return false;
     };
     stmt.query_map([], |row| row.get::<_, String>(0))
@@ -134,12 +133,18 @@ mod tests {
 
     #[test]
     fn curated_gloss_matches_dagesh_variants() {
-        if !std::path::Path::new("data/lexicon.db").exists() {
+        // Cargo runs this from the package root, so the data dir has to be
+        // named relative to the manifest, not to the cwd.
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/haqor.db");
+        if !data.exists() {
             return;
         }
         let db = Connection::open_in_memory().unwrap();
-        db.execute_batch("ATTACH DATABASE 'data/lexicon.db' AS lexdb")
-            .unwrap();
+        db.execute_batch(&format!(
+            "ATTACH DATABASE '{}' AS data",
+            data.to_str().unwrap()
+        ))
+        .unwrap();
         // "the word" is registered under הַדָּבָר; a dagesh-stripped spelling
         // still resolves.
         assert!(curated_gloss(&db, "הַדָּבָר").is_some());

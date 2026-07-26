@@ -507,9 +507,9 @@ pub fn cons_root(db: &Connection, stem: &str) -> Option<(String, String, bool)> 
         return None;
     }
     db.query_row(
-        "SELECT root, pos FROM lexdb.bdb \
+        "SELECT root, pos FROM lexicon_entry \
              WHERE cons = ?1 AND (gloss IS NULL OR gloss = '' OR gloss LIKE '(%') \
-             ORDER BY bdb_id LIMIT 1",
+             ORDER BY key LIMIT 1",
         [cons],
         |row| {
             Ok((
@@ -524,11 +524,15 @@ pub fn cons_root(db: &Connection, stem: &str) -> Option<(String, String, bool)> 
     .flatten()
 }
 
+/// Headline gloss for a consonantal root: a curated headword override when
+/// present, otherwise the first non-stub lexicon gloss in entry order, with
+/// English-led glosses ranked before Hebrew-citation sub-entries (mirroring
+/// [`bdb_rows`], but keyed by the `root` column).
 pub fn root_gloss(db: &Connection, root: &str) -> String {
     let Ok(mut stmt) = db.prepare(
-        "SELECT word, gloss FROM lexdb.bdb \
+        "SELECT word, gloss FROM lexicon_entry \
          WHERE root = ?1 AND gloss IS NOT NULL AND gloss <> '' \
-         ORDER BY bdb_id",
+         ORDER BY key",
     ) else {
         return String::new();
     };

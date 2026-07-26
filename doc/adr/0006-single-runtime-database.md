@@ -4,10 +4,10 @@ Date: 2026-07-25
 
 ## Status
 
-Accepted; being implemented. `haqor db gen-runtime` emits the database and the
-differential tests guard it. The runtime still opens the four generation
-databases — repointing `haqor-core` at `haqor.db`, moving the resolution logic
-out of it, and the two-tier sync are the remaining steps.
+Accepted and implemented, except the two-tier sync. `haqor db gen-runtime`
+emits the database, `Bible::open` reads it, the resolution runs only at build
+time, and the app ships `haqor.db` alone. Remaining: the base/overlay sync
+described below.
 
 ## Context
 
@@ -70,14 +70,27 @@ the corpus and stores the finished answer:
   actually displays, and `word` points straight at one.
 - Reading a chapter becomes a covered index scan plus a row fetch per word.
 
-This means the resolution logic **moves** out of `haqor-core` rather than being
-called from the generator. `hebrew_word_by_surface_id`, `apply_oshb_analysis`,
-`oshb_lexeme` and the verb-vs-noun/article-shadow rules become `haqor-db-gen`
-code; `haqor-core` keeps only the lookup and the one thing that genuinely cannot
-be precomputed — the device-local `lexicon_entries` correction applied on top,
-which lives in the writable `progress` attachment. Until that move, the
-generator calls the runtime's own resolution through a narrow `data_support`
-bridge, so the two cannot drift while both exist.
+The resolution therefore **moves** into `haqor_core::resolve`, a module the
+runtime no longer calls: it queries `analyses`, `noun_analyses` and
+`oshb_primary`, which `haqor.db` does not carry. `haqor-core` keeps the lookup
+and the one thing that genuinely cannot be precomputed — the device-local
+`lexicon_entries` correction, which lives in the writable `progress`
+attachment.
+
+It stays in this crate rather than moving to `haqor-db-gen` because the helpers
+it leans on — gloss inflection, name sniffing, consonant folding, the OSHB
+decoders — are the runtime's too, and a second copy is how the stored answer
+would start drifting from the live one.
+
+That sharing has a sharp edge worth recording. The lexicon helpers those two
+sides share (`curated_gloss`, `bdb_rows`, the learner-gloss lookups) name
+runtime tables *without a schema*, so the generator can satisfy them with temp
+views over the generation tables. When they were qualified `data.…` instead,
+they failed silently during the build and every curated override vanished from
+`haqor.db` — while the differential test stayed green, because both sides of
+the comparison call the same helpers. `curated_overrides_survive_into_the_build`
+checks the build against the curated source directly, which is the only kind of
+test that can see that class of fault.
 
 `analyses` and `noun_analyses` stop shipping altogether. `root_surface`
 preserves the root-concordance breadth that legitimately spans all candidates —
@@ -117,6 +130,12 @@ handed. Local builds default to `none`, shipped builds to `zstd`.
 Because the blobs are individually short, the compressed form depends on a zstd
 dictionary trained over the corpus, stored in `blob_dict`. A reader therefore
 needs nothing but the database itself to decode it.
+
+The two sides use different zstd implementations on purpose. The generator
+compresses with the C library, which is native-only and fine there; the runtime
+decodes with the pure-Rust `ruzstd`, because `haqor-core` is also built for
+wasm32-unknown-unknown and the read path should not stake the web build on a C
+dependency.
 
 ### Two-tier updates: a replaced base and an additive overlay
 
@@ -210,14 +229,16 @@ meta(key, value)                     -- schema_version, built, blob_codec
 verse(ref PK, words)                 -- blob; see blob_dict when meta.blob_codec is zstd
 blob_dict(dict_id PK, data)
 word(ref, position, surface_id, info_id, gloss_id)  PK(ref, position) WITHOUT ROWID
+  + verse_word view    -- unpacks ref to (book, chapter, verse) for the tutor
 word_info(info_id PK, surface_id, root, gloss_id, cell_id, flags)
 morph_cell(cell_id PK, pos, form, tense, person, gender, number, state, prefix, obj_suffix)
-gloss(gloss_id PK, text)             -- interned reader glosses and entry glosses
+gloss(gloss_id PK, text)             -- interned word-info glosses (word_info.gloss_id)
+reader_gloss(gloss_id PK, text)      -- interned occurrence glosses (word.gloss_id)
 surface(surface_id PK, text, occurrences, n_candidates, lexical_class, language, info_id)
 root(root_id PK, root, gizra, n_forms, n_occurrences)
 root_surface(lexeme, surface_id)   -- lexeme text: noun stems are keys too
 verse_stat(ref PK, word_count, distinct_count, min_occ, sum_occ, mask)  + verse_stats view
-lexicon_entry(entry_id PK, root, word, cons, pos, gloss, body, kind)
+lexicon_entry(entry_id PK, key, root, word, cons, pos, gloss, body, kind)
 word_gloss(surface PK, gloss, note, is_name, reader_override)
 surface_override(surface PK, root, gloss)
 syriac_root(root_id PK, root)
@@ -245,7 +266,7 @@ no runtime reader left.
 | `hebrew.roots` | `root` |
 | `hebrew.verse_stats` | `verse_stat` (bitmask) + view |
 | `hebrew.morphology_sources`, `hebrew.reader_gloss_sources` | dropped (READMEs + About view) |
-| `lexicon.bdb` | `lexicon_entry` (`bdb_id` → `entry_id`, `content_json` → `body`, `type` → `kind`) |
+| `lexicon.bdb` | `lexicon_entry` (`bdb_id` → `key`, `content_json` → `body`, `type` → `kind`; `entry_id` is a new integer PK) |
 | `lexicon.lexical_index` | dropped (bridges Strong's to an entry at build time) |
 | `lexicon.word_glosses` | `word_gloss` |
 | `lexicon.lexicon_overrides` | `surface_override` |
@@ -273,3 +294,14 @@ no runtime reader left.
 - `haqor.db` was the name of the legacy database removed earlier in the
   project's history. Reusing it is deliberate, but git archaeology on that
   filename will surface an unrelated schema.
+- Repointing the tests at the new file exposed that the DB-backed tests in
+  `bible.rs` had not been running at all: their gate and their `Bible::open`
+  argument were both the bare relative path `data`, which cargo resolves
+  against the *package* root, so they had been skipping since the crate moved
+  into `crates/`. Once they ran, eight failed — identically against the four
+  generation databases at the previous commit, so they are drift that
+  accumulated while nobody was watching rather than migration fallout. They are
+  `#[ignore]`d with their causes recorded; four of them are one cause, the
+  curated `word_gloss` overlay not reaching `hebrew_word_info`'s lexical gloss.
+  The lesson is the same one the differential tests encode: a test that can
+  skip itself needs its skip condition asserted somewhere.

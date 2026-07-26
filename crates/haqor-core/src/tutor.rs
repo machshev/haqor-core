@@ -2017,7 +2017,7 @@ impl Bible {
         let seen = self.seen_glyph_mask()?;
         let mut out: Vec<String> = Vec::new();
         let mut stmt = self.conn().prepare(
-            "SELECT s.text FROM hebrewdb.surface s \
+            "SELECT s.text FROM data.surface s \
              JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id \
              WHERE popcount(sm.glyph_mask & ~?1) > 0 \
                AND COALESCE(s.language, '') <> 'aramaic' \
@@ -2202,7 +2202,7 @@ impl Bible {
         {
             let mut stmt = self.conn().prepare(
                 "SELECT s.text FROM progress.word_srs ws \
-                 JOIN hebrewdb.surface s ON s.surface_id = ws.surface_id \
+                 JOIN data.surface s ON s.surface_id = ws.surface_id \
                  WHERE s.text != ?1 \
                  ORDER BY ws.introduced_epoch DESC LIMIT 60",
             )?;
@@ -2213,7 +2213,7 @@ impl Bible {
         }
         {
             let mut stmt = self.conn().prepare(
-                "SELECT text FROM hebrewdb.surface \
+                "SELECT text FROM data.surface \
                  WHERE text != ?1 AND n_candidates > 0 \
                  ORDER BY occurrences DESC LIMIT 80",
             )?;
@@ -2484,7 +2484,7 @@ impl Bible {
         let row: Option<(i64, i64)> = self
             .conn()
             .query_row(
-                "SELECT surface_id, occurrences FROM hebrewdb.surface WHERE text = ?1",
+                "SELECT surface_id, occurrences FROM data.surface WHERE text = ?1",
                 params![surface],
                 |r| Ok((r.get(0)?, r.get(1)?)),
             )
@@ -2636,7 +2636,7 @@ impl Bible {
         let row: Option<(i64, i64)> = self
             .conn()
             .query_row(
-                "SELECT surface_id, occurrences FROM hebrewdb.surface WHERE text = ?1",
+                "SELECT surface_id, occurrences FROM data.surface WHERE text = ?1",
                 params![surface],
                 |r| Ok((r.get(0)?, r.get(1)?)),
             )
@@ -2709,7 +2709,7 @@ impl Bible {
 
         let surfaces: Vec<(i64, String, Option<String>)> = {
             let mut stmt = self.conn().prepare(
-                "SELECT surface_id, text, lexical_class FROM hebrewdb.surface \
+                "SELECT surface_id, text, lexical_class FROM data.surface \
                  WHERE language IS NULL",
             )?;
             stmt.query_map([], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)))?
@@ -2847,7 +2847,7 @@ impl Bible {
             let verse_masks = {
                 let mut stmt = self.conn().prepare(
                     "SELECT vw.book, vw.chapter, vw.verse, vw.surface_id \
-                     FROM hebrewdb.verse_word vw ORDER BY vw.book, vw.chapter, vw.verse",
+                     FROM data.verse_word vw ORDER BY vw.book, vw.chapter, vw.verse",
                 )?;
                 let mut acc: std::collections::HashMap<(u8, u8, u8), Option<i64>> =
                     std::collections::HashMap::new();
@@ -2904,7 +2904,7 @@ impl Bible {
             .optional()?;
         let expected: i64 =
             self.conn()
-                .query_row("SELECT COUNT(*) FROM hebrewdb.surface", [], |r| r.get(0))?;
+                .query_row("SELECT COUNT(*) FROM data.surface", [], |r| r.get(0))?;
         let actual: i64 =
             self.conn()
                 .query_row("SELECT COUNT(*) FROM progress.surface_progress", [], |r| {
@@ -2938,7 +2938,7 @@ impl Bible {
              INSERT INTO progress.surface_progress(surface_id, graduated, graduated_epoch)
              SELECT s.surface_id, CASE WHEN done.vkey IS NULL THEN 0 ELSE 1 END,
                     CASE WHEN done.vkey IS NULL THEN NULL ELSE 0 END
-             FROM hebrewdb.surface s
+             FROM data.surface s
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id
              LEFT JOIN ({DONE_SURFACES}) done ON done.vkey = sm.vkey
              ;
@@ -2958,11 +2958,11 @@ impl Bible {
                     COALESCE(MAX(CASE WHEN sp.graduated = 0 THEN
                        CASE WHEN sm.is_name = 1 THEN s.occurrences
                             ELSE COALESCE(r.n_occurrences, s.occurrences) END END), 0)
-             FROM hebrewdb.verse_word vw
-             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+             FROM data.verse_word vw
+             JOIN data.surface s ON s.surface_id = vw.surface_id
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
              JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
-             LEFT JOIN hebrewdb.roots r ON r.root = sm.root
+             LEFT JOIN data.root r ON r.root = sm.root
              GROUP BY vw.book, vw.chapter, vw.verse;
              INSERT INTO progress.meta(key, value)
              VALUES ('readability_progress_v', '{READABILITY_PROGRESS_VERSION}')
@@ -3007,16 +3007,16 @@ impl Bible {
                            CASE WHEN sm.is_name = 1 THEN s.occurrences
                                 ELSE COALESCE(r.n_occurrences, s.occurrences) END END), 0),
                         COALESCE(old.last_read_epoch, 0)
-                 FROM hebrewdb.verse_word vw
-                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+                 FROM data.verse_word vw
+                 JOIN data.surface s ON s.surface_id = vw.surface_id
                  JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
                  JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
-                 LEFT JOIN hebrewdb.roots r ON r.root = sm.root
+                 LEFT JOIN data.root r ON r.root = sm.root
                  LEFT JOIN progress.verse_progress old ON old.book = vw.book
                     AND old.chapter = vw.chapter AND old.verse = vw.verse
                  WHERE (vw.book, vw.chapter, vw.verse) IN (
                     SELECT DISTINCT hit.book, hit.chapter, hit.verse
-                    FROM hebrewdb.verse_word hit
+                    FROM data.verse_word hit
                     JOIN progress.surface_meta hit_sm ON hit_sm.surface_id = hit.surface_id
                     WHERE hit_sm.vkey = (
                        SELECT vkey FROM progress.surface_meta WHERE surface_id = {surface_id}))
@@ -3028,7 +3028,7 @@ impl Bible {
 
     fn surface_count(&self) -> rusqlite::Result<i64> {
         self.conn().query_row(
-            "SELECT COUNT(*) FROM hebrewdb.surface WHERE language IS NULL",
+            "SELECT COUNT(*) FROM data.surface WHERE language IS NULL",
             [],
             |r| r.get(0),
         )
@@ -3127,7 +3127,7 @@ impl Bible {
         let exclude_base = if letter_learning { 3 } else { 2 };
         let exclude_where = if exclude.is_some() {
             format!(
-                "AND NOT (vw.book = ?{b} AND vw.chapter = ?{c} AND vw.verse = ?{v})",
+                "AND NOT (vw.ref = ((?{b} << 16) | (?{c} << 8) | ?{v}))",
                 b = exclude_base,
                 c = exclude_base + 1,
                 v = exclude_base + 2
@@ -3149,8 +3149,8 @@ impl Bible {
         };
         let sql = format!(
             "SELECT vw.book, vw.chapter, vw.verse
-             FROM hebrewdb.verse_word vw
-             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+             FROM data.verse_word vw
+             JOIN data.surface s ON s.surface_id = vw.surface_id
              JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
              JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
              JOIN progress.verse_meta vm ON vm.book = vw.book
@@ -3159,7 +3159,7 @@ impl Bible {
                 AND vp.chapter = vw.chapter AND vp.verse = vw.verse
              LEFT JOIN progress.word_srs base_ws ON base_ws.surface_id = sm.base_surface_id
              {fresh_join}
-             LEFT JOIN hebrewdb.roots r ON r.root = sm.root
+             LEFT JOIN data.root r ON r.root = sm.root
              LEFT JOIN ({KNOWN_QAL_ROOTS}) kqr ON kqr.root = sm.root
              WHERE {intro}
              {fresh_where}
@@ -3167,14 +3167,12 @@ impl Bible {
              GROUP BY vw.book, vw.chapter, vw.verse
              HAVING MAX(CASE WHEN {NOT_NAME} THEN 1 ELSE 0 END) = 1
                 OR NOT EXISTS (
-                    SELECT 1 FROM hebrewdb.verse_word locked_vw
+                    SELECT 1 FROM data.verse_word locked_vw
                     JOIN progress.surface_meta locked_sm
                       ON locked_sm.surface_id = locked_vw.surface_id
                     JOIN progress.surface_progress locked_sp
                       ON locked_sp.surface_id = locked_vw.surface_id
-                    WHERE locked_vw.book = vw.book
-                      AND locked_vw.chapter = vw.chapter
-                      AND locked_vw.verse = vw.verse
+                    WHERE locked_vw.ref = vw.ref
                       AND locked_sp.graduated = 0
                       AND (COALESCE(locked_sm.concept_mask, 0) & ~?1) != 0)
              ORDER BY {order}
@@ -3210,13 +3208,13 @@ impl Bible {
             .query_row(
                 &format!(
                     "SELECT s.text
-                     FROM hebrewdb.verse_word vw
-                     JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+                     FROM data.verse_word vw
+                     JOIN data.surface s ON s.surface_id = vw.surface_id
                      LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
                      JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
-                     LEFT JOIN hebrewdb.roots r ON r.root = sm.root
+                     LEFT JOIN data.root r ON r.root = sm.root
                      LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
-                     WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
+                     WHERE vw.ref = ((?1 << 16) | (?2 << 8) | ?3)
                        AND sp.graduated = 0
                      {word_order}
                      LIMIT 1"
@@ -3264,15 +3262,15 @@ impl Bible {
         };
         let sql = format!(
             "SELECT s.text
-             FROM hebrewdb.verse_word vw
-             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+             FROM data.verse_word vw
+             JOIN data.surface s ON s.surface_id = vw.surface_id
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
              JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
              LEFT JOIN progress.word_srs base_ws ON base_ws.surface_id = sm.base_surface_id
-             LEFT JOIN hebrewdb.roots r ON r.root = sm.root
+             LEFT JOIN data.root r ON r.root = sm.root
              LEFT JOIN ({KNOWN_ROOTS}) kr ON kr.root = sm.root
              LEFT JOIN ({KNOWN_QAL_ROOTS}) kqr ON kqr.root = sm.root
-             WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
+             WHERE vw.ref = ((?1 << 16) | (?2 << 8) | ?3)
                AND sp.graduated = 0
                AND (COALESCE(sm.concept_mask, 0) & ~?4) = 0
                AND {FAMILY_READY}
@@ -3297,10 +3295,10 @@ impl Bible {
     fn verse_completable(&self, b: u8, c: u8, v: u8, unlocked: i64) -> rusqlite::Result<bool> {
         let locked: i64 = self.conn().query_row(
             "SELECT COUNT(*)
-                 FROM hebrewdb.verse_word vw
+                 FROM data.verse_word vw
                  LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
                  JOIN progress.surface_progress sp ON sp.surface_id = vw.surface_id
-                 WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
+                 WHERE vw.ref = ((?1 << 16) | (?2 << 8) | ?3)
                    AND sp.graduated = 0
                    AND (COALESCE(sm.concept_mask, 0) & ~?4) != 0",
             params![b, c, v, unlocked],
@@ -3495,7 +3493,7 @@ impl Bible {
         let surface: Option<String> = self
             .conn()
             .query_row(
-                "SELECT s.text FROM hebrewdb.surface s
+                "SELECT s.text FROM data.surface s
                  JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id
                  WHERE (COALESCE(sm.concept_mask, 0) & ~?1) = 0
                    AND popcount(sm.glyph_mask & ~?2) > 0
@@ -3569,7 +3567,7 @@ impl Bible {
                 .query_row(
                     &format!(
                         "SELECT s.text FROM progress.surface_meta sm \
-                         JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+                         JOIN data.surface s ON s.surface_id = sm.surface_id \
                          {studied} \
                          WHERE (sm.concept_mask & ?1) != 0 AND (sm.concept_mask >> (?2 + 1)) = 0 \
                            AND sm.is_name = 0 \
@@ -3646,13 +3644,13 @@ impl Bible {
             .conn()
             .query_row(
                 "SELECT s.text
-                 FROM hebrewdb.verse_word vw
-                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+                 FROM data.verse_word vw
+                 JOIN data.surface s ON s.surface_id = vw.surface_id
                  JOIN progress.word_srs ws
                    ON ws.surface_id = vw.surface_id AND ws.interval_days >= 1
                  JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
                  LEFT JOIN progress.form_srs fs ON fs.surface_id = vw.surface_id
-                 WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
+                 WHERE vw.ref = ((?1 << 16) | (?2 << 8) | ?3)
                    AND sm.form_tier >= 2 AND fs.surface_id IS NULL
                    AND sm.is_name = 0
                  ORDER BY sm.form_tier ASC, s.occurrences DESC
@@ -3692,7 +3690,7 @@ impl Bible {
         };
         let mut stmt = self.conn().prepare(&format!(
             "SELECT ws.surface FROM progress.word_srs ws \
-             JOIN hebrewdb.surface s ON s.surface_id = ws.surface_id \
+             JOIN data.surface s ON s.surface_id = ws.surface_id \
              WHERE {cond} ORDER BY {order}"
         ))?;
         let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
@@ -3885,9 +3883,9 @@ impl Bible {
                         .query_row(
                             "SELECT vp.book, vp.chapter, vp.verse
                          FROM progress.verse_progress vp
-                         JOIN hebrewdb.verse_word vw ON vw.book = vp.book
-                            AND vw.chapter = vp.chapter AND vw.verse = vp.verse
-                         JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+                         JOIN data.verse_word vw
+                           ON vw.ref = ((vp.book << 16) | (vp.chapter << 8) | vp.verse)
+                         JOIN data.surface s ON s.surface_id = vw.surface_id
                          WHERE vp.unknown_words = 0 AND s.text = ?1
                          ORDER BY vp.last_read_epoch, vp.book, vp.chapter, vp.verse LIMIT 1",
                             params![surface],
@@ -4259,7 +4257,7 @@ impl Bible {
                 let next = previous.graded(grade);
                 let due = next.due_at(now);
                 let surface_id: i64 = self.conn().query_row(
-                    "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
+                    "SELECT surface_id FROM data.surface WHERE text = ?1",
                     params![key],
                     |r| r.get(0),
                 )?;
@@ -4308,7 +4306,7 @@ impl Bible {
                 let next = self.form_srs(key)?.unwrap_or_default().graded(grade);
                 let due = next.due_at(now);
                 let surface_id: i64 = self.conn().query_row(
-                    "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
+                    "SELECT surface_id FROM data.surface WHERE text = ?1",
                     params![key],
                     |r| r.get(0),
                 )?;
@@ -4403,10 +4401,10 @@ impl Bible {
     ) -> rusqlite::Result<Vec<(String, bool)>> {
         let mut stmt = self.conn().prepare(
             "SELECT s.text, COALESCE(sm.is_name, 0)
-             FROM hebrewdb.verse_word vw
-             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+             FROM data.verse_word vw
+             JOIN data.surface s ON s.surface_id = vw.surface_id
              LEFT JOIN progress.surface_meta sm ON sm.surface_id = vw.surface_id
-             WHERE vw.book = ?1 AND vw.chapter = ?2 AND vw.verse = ?3
+             WHERE vw.ref = ((?1 << 16) | (?2 << 8) | ?3)
              ORDER BY vw.position",
         )?;
         stmt.query_map(params![b, c, v], |r| {
@@ -4426,12 +4424,12 @@ impl Bible {
     ) -> rusqlite::Result<Vec<(u8, u8, u8)>> {
         let mut stmt = self.conn().prepare(
             "SELECT DISTINCT vw2.book, vw2.chapter, vw2.verse
-             FROM hebrewdb.verse_word vw1
-             JOIN hebrewdb.verse_word vw2 ON vw2.surface_id = vw1.surface_id
+             FROM data.verse_word vw1
+             JOIN data.verse_word vw2 ON vw2.surface_id = vw1.surface_id
              WHERE vw1.book = ?1 AND vw1.chapter = ?2 AND vw1.verse = ?3
                AND NOT (vw2.book = ?1 AND vw2.chapter = ?2 AND vw2.verse = ?3)
                AND NOT EXISTS (
-                   SELECT 1 FROM hebrewdb.verse_word w3
+                   SELECT 1 FROM data.verse_word w3
                    JOIN progress.surface_progress sp3 ON sp3.surface_id = w3.surface_id
                    WHERE w3.book = vw2.book AND w3.chapter = vw2.chapter
                       AND w3.verse = vw2.verse AND sp3.graduated = 0)
@@ -4505,9 +4503,7 @@ impl Bible {
         if !settings.grammar_gating {
             return self
                 .conn()
-                .query_row("SELECT COUNT(*) FROM hebrewdb.verse_stats", [], |r| {
-                    r.get(0)
-                });
+                .query_row("SELECT COUNT(*) FROM data.verse_stats", [], |r| r.get(0));
         }
 
         let mut unlocked = 0i64;
@@ -4533,7 +4529,7 @@ impl Bible {
             format!(" WHERE {}", locked_requirements.join(" AND "))
         };
         self.conn().query_row(
-            &format!("SELECT COUNT(*) FROM hebrewdb.verse_stats{where_clause}"),
+            &format!("SELECT COUNT(*) FROM data.verse_stats{where_clause}"),
             [],
             |r| r.get(0),
         )
@@ -4738,8 +4734,8 @@ impl Bible {
         self.conn().query_row(
             &format!(
                 "SELECT COUNT(*) FROM (SELECT DISTINCT {DIFFICULTY} AS diff \
-                 FROM hebrewdb.verse_word vw \
-                 JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+                 FROM data.verse_word vw \
+                 JOIN data.surface s ON s.surface_id = vw.surface_id \
                  GROUP BY vw.book, vw.chapter, vw.verse \
                  HAVING {NOT_ARAMAIC})"
             ),
@@ -4768,7 +4764,7 @@ impl Bible {
         {
             let mut stmt = self
                 .conn()
-                .prepare("SELECT DISTINCT text FROM hebrewdb.surface WHERE language IS NULL")?;
+                .prepare("SELECT DISTINCT text FROM data.surface WHERE language IS NULL")?;
             let mut rows = stmt.query([])?;
             while let Some(row) = rows.next()? {
                 let text: String = row.get(0)?;
@@ -4809,8 +4805,8 @@ impl Bible {
             .query_row(
                 &format!(
                     "SELECT diff FROM (SELECT DISTINCT {DIFFICULTY} AS diff \
-                     FROM hebrewdb.verse_word vw \
-                     JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+                     FROM data.verse_word vw \
+                     JOIN data.surface s ON s.surface_id = vw.surface_id \
                      GROUP BY vw.book, vw.chapter, vw.verse \
                      HAVING {NOT_ARAMAIC}) \
                      ORDER BY diff DESC LIMIT 1 OFFSET ?1"
@@ -4830,8 +4826,8 @@ impl Bible {
             .query_row(
                 &format!(
                     "SELECT vw.book, vw.chapter, vw.verse
-                     FROM hebrewdb.verse_word vw
-                     JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
+                     FROM data.verse_word vw
+                     JOIN data.surface s ON s.surface_id = vw.surface_id
                      GROUP BY vw.book, vw.chapter, vw.verse
                      HAVING {NOT_ARAMAIC} AND {DIFFICULTY} = ?1
                      ORDER BY vw.book, vw.chapter, vw.verse
@@ -4867,7 +4863,7 @@ impl Bible {
         let seeded = seeded_known_srs();
         let due = seeded.due_at(now);
         let mut stmt = self.conn().prepare(
-            "SELECT text, surface_id FROM hebrewdb.surface \
+            "SELECT text, surface_id FROM data.surface \
              WHERE language IS NULL AND occurrences >= ?1",
         )?;
         let rows: Vec<(String, i64)> = stmt
@@ -4946,7 +4942,7 @@ mod tests {
     #[test]
     fn cold_start_opens_on_content_words_not_genealogy() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5017,7 +5013,7 @@ mod tests {
     #[test]
     fn root_frequency_only_boosts_verbal_family_openers() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5031,9 +5027,9 @@ mod tests {
             bible.conn().query_row(
                 &format!(
                     "SELECT s.occurrences, {WORD_FREQ} \
-                     FROM hebrewdb.surface s \
+                     FROM data.surface s \
                      JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id \
-                     LEFT JOIN hebrewdb.roots r ON r.root = sm.root \
+                     LEFT JOIN data.root r ON r.root = sm.root \
                      WHERE s.text = ?1"
                 ),
                 params![surface],
@@ -5048,9 +5044,9 @@ mod tests {
         let (surface, surface_frequency, root_frequency): (String, i64, i64) =
             bible.conn().query_row(
                 "SELECT s.text, s.occurrences, r.n_occurrences \
-                 FROM hebrewdb.surface s \
+                 FROM data.surface s \
                  JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id \
-                 JOIN hebrewdb.roots r ON r.root = sm.root \
+                 JOIN data.root r ON r.root = sm.root \
                  WHERE sm.family_base = 1 AND sm.form_tier >= 5 \
                    AND r.n_occurrences > s.occurrences \
                  ORDER BY r.n_occurrences DESC LIMIT 1",
@@ -5063,9 +5059,9 @@ mod tests {
 
         let (later_qal, later_frequency): (String, i64) = bible.conn().query_row(
             "SELECT s.text, s.occurrences \
-             FROM hebrewdb.surface s \
+             FROM data.surface s \
              JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id \
-             JOIN hebrewdb.roots r ON r.root = sm.root \
+             JOIN data.root r ON r.root = sm.root \
              WHERE sm.is_qal = 1 AND sm.family_base = 0 \
                AND r.n_occurrences > s.occurrences \
              ORDER BY r.n_occurrences DESC LIMIT 1",
@@ -5082,7 +5078,7 @@ mod tests {
     #[test]
     fn lexicalized_liqrat_waits_for_qal_base() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5096,7 +5092,7 @@ mod tests {
             bible.conn().query_row(
                 "SELECT sm.root, sm.form_tier, sm.is_qal, sm.family_base \
                  FROM progress.surface_meta sm \
-                 JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+                 JOIN data.surface s ON s.surface_id = sm.surface_id \
                  WHERE s.text = 'לִקְרַאת'",
                 [],
                 |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?)),
@@ -5113,7 +5109,7 @@ mod tests {
             bible.conn().query_row(
                 &format!(
                     "SELECT {FAMILY_READY} FROM progress.surface_meta sm \
-                     JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+                     JOIN data.surface s ON s.surface_id = sm.surface_id \
                      LEFT JOIN ({KNOWN_QAL_ROOTS}) kqr ON kqr.root = sm.root \
                      WHERE s.text = 'לִקְרַאת'"
                 ),
@@ -5124,7 +5120,7 @@ mod tests {
         assert!(!ready()?, "לִקְרַאת must initially be held back");
 
         let qara_id: i64 = bible.conn().query_row(
-            "SELECT surface_id FROM hebrewdb.surface WHERE text = 'קָרָא'",
+            "SELECT surface_id FROM data.surface WHERE text = 'קָרָא'",
             [],
             |r| r.get(0),
         )?;
@@ -5145,7 +5141,7 @@ mod tests {
     #[test]
     fn name_cards_show_names_not_bdb_citations() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5214,7 +5210,7 @@ mod tests {
     #[test]
     fn surface_meta_flags_proper_names() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5229,7 +5225,7 @@ mod tests {
                 .conn()
                 .query_row(
                     "SELECT sm.is_name FROM progress.surface_meta sm \
-                     JOIN hebrewdb.surface su ON su.surface_id = sm.surface_id \
+                     JOIN data.surface su ON su.surface_id = sm.surface_id \
                      WHERE su.text = ?1",
                     params![s],
                     |r| r.get::<_, i64>(0),
@@ -5279,8 +5275,8 @@ mod tests {
 
         // The verse card carries the flags, aligned with its words.
         let (b, c, v): (u8, u8, u8) = bible.conn().query_row(
-            "SELECT vw.book, vw.chapter, vw.verse FROM hebrewdb.verse_word vw \
-             JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id \
+            "SELECT vw.book, vw.chapter, vw.verse FROM data.verse_word vw \
+             JOIN data.surface s ON s.surface_id = vw.surface_id \
              WHERE s.text = 'אֶזְבָּי' LIMIT 1",
             [],
             |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
@@ -5307,7 +5303,7 @@ mod tests {
     #[test]
     fn prefixed_word_waits_for_bare_lexical_form() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5319,14 +5315,14 @@ mod tests {
 
         let (bare_id, bare_key): (i64, String) = bible.conn().query_row(
             "SELECT sm.surface_id, sm.vkey FROM progress.surface_meta sm \
-             JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+             JOIN data.surface s ON s.surface_id = sm.surface_id \
              WHERE s.text = 'עִם'",
             [],
             |r| Ok((r.get(0)?, r.get(1)?)),
         )?;
         let (prefixed_key, base_key): (String, String) = bible.conn().query_row(
             "SELECT sm.vkey, sm.base_vkey FROM progress.surface_meta sm \
-             JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+             JOIN data.surface s ON s.surface_id = sm.surface_id \
              WHERE s.text = 'וְעִם'",
             [],
             |r| Ok((r.get(0)?, r.get(1)?)),
@@ -5338,7 +5334,7 @@ mod tests {
             bible.conn().query_row(
                 &format!(
                     "SELECT {LEXICAL_BASE_READY} FROM progress.surface_meta sm \
-                     JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+                     JOIN data.surface s ON s.surface_id = sm.surface_id \
                      LEFT JOIN progress.word_srs base_ws ON base_ws.surface_id = sm.base_surface_id \
                      WHERE s.text = 'וְעִם'"
                 ),
@@ -5366,7 +5362,7 @@ mod tests {
     #[test]
     fn grammar_concepts_explained_once_before_words() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5458,7 +5454,7 @@ mod tests {
     #[test]
     fn intro_deck_served_first_and_once() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5496,7 +5492,7 @@ mod tests {
     #[test]
     fn word_card_never_shows_cross_reference_stub() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5524,7 +5520,7 @@ mod tests {
     #[test]
     fn word_card_headlines_the_surface_meaning() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5564,7 +5560,7 @@ mod tests {
     #[test]
     fn tutor_gloss_override_stats_and_optimization_use_upstream_card() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5625,7 +5621,7 @@ mod tests {
     fn mobile_lexicon_entry_override_updates_tutor_card_before_word_gloss_override()
     -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5651,7 +5647,7 @@ mod tests {
     #[test]
     fn conjunctive_imperfect_cards_and_teaches_its_form() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5681,7 +5677,7 @@ mod tests {
     #[test]
     fn word_card_segolate_noun_beats_verb_group_order() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5705,7 +5701,7 @@ mod tests {
     #[test]
     fn form_is_drilled_after_meaning() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5862,7 +5858,7 @@ mod tests {
 
     fn open_with_progress() -> Option<Bible> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return None;
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -5929,7 +5925,7 @@ mod tests {
         }
 
         let without_article: i64 = bible.conn().query_row(
-            "SELECT COUNT(*) FROM hebrewdb.verse_stats WHERE article = 0",
+            "SELECT COUNT(*) FROM data.verse_stats WHERE article = 0",
             [],
             |r| r.get(0),
         )?;
@@ -6002,7 +5998,7 @@ mod tests {
 
         let (known_surface, known_id, known_vkey): (String, i64, String) = bible.conn().query_row(
             "SELECT s.text, s.surface_id, sm.vkey
-                 FROM hebrewdb.surface s
+                 FROM data.surface s
                  JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id
                  WHERE s.language IS NULL AND sm.is_name = 0
                  ORDER BY s.occurrences DESC
@@ -6012,7 +6008,7 @@ mod tests {
         )?;
         let (new_surface, new_id): (String, i64) = bible.conn().query_row(
             "SELECT s.text, s.surface_id
-             FROM hebrewdb.surface s
+             FROM data.surface s
              JOIN progress.surface_meta sm ON sm.surface_id = s.surface_id
              WHERE s.language IS NULL AND sm.is_name = 0 AND sm.vkey <> ?1
              ORDER BY s.occurrences DESC
@@ -6073,7 +6069,7 @@ mod tests {
              INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days,
                     due_epoch, reps, lapses, introduced_epoch, last_grade)
                  SELECT text, surface_id, 2.5, 1, 0, 3, 0, 0, 3
-                 FROM hebrewdb.surface WHERE text IN ('כִּי', 'לֹא', 'וְלֹא');",
+                 FROM data.surface WHERE text IN ('כִּי', 'לֹא', 'וְלֹא');",
         )?;
         bible.ensure_readability_progress()?;
         bible.set_tutor_settings(&TutorSettings {
@@ -6372,7 +6368,7 @@ mod tests {
     #[test]
     fn early_reviews_fall_back_on_upcoming_glyph_distractors() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -6416,7 +6412,7 @@ mod tests {
     #[test]
     fn vowel_review_builds_random_syllable_distractors() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -6464,7 +6460,7 @@ mod tests {
     #[test]
     fn tutor_stats_track_activity_streak_and_accuracy() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -6500,7 +6496,7 @@ mod tests {
     #[test]
     fn grading_a_syllable_credits_every_glyph() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -6711,7 +6707,7 @@ mod tests {
     #[test]
     fn cold_start_reaches_a_read() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -6785,7 +6781,7 @@ mod tests {
     #[test]
     fn misread_word_does_not_re_serve_the_same_verse_forever() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -6885,7 +6881,7 @@ mod tests {
     #[test]
     fn stuck_word_does_not_block_introducing_other_words() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -6991,7 +6987,7 @@ mod tests {
         // Graduate every other word in the verse outright.
         for surface in rest {
             let surface_id: i64 = bible.conn().query_row(
-                "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
+                "SELECT surface_id FROM data.surface WHERE text = ?1",
                 params![surface],
                 |r| r.get(0),
             )?;
@@ -7041,7 +7037,7 @@ mod tests {
     #[test]
     fn reading_mark_is_explained_once_and_never_drilled() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7115,7 +7111,7 @@ mod tests {
     #[test]
     fn function_word_prepositions_issue_grammar_cards() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7163,7 +7159,7 @@ mod tests {
     #[test]
     fn final_forms_explained_once_before_first_final_glyph() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7260,7 +7256,7 @@ mod tests {
     #[test]
     fn submit_review_ignores_reading_mark_glyph_keys() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7277,7 +7273,7 @@ mod tests {
     #[test]
     fn needs_onboarding_only_before_any_progress() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7299,7 +7295,7 @@ mod tests {
     #[test]
     fn seed_known_alphabet_skips_glyph_teaching() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7351,7 +7347,7 @@ mod tests {
     #[test]
     fn calibration_probe_difficulty_tracks_tier_with_no_plateau() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7384,7 +7380,7 @@ mod tests {
     #[test]
     fn seed_known_vocab_marks_words_at_or_above_the_threshold_known() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7412,7 +7408,7 @@ mod tests {
         )?;
         let expected: i64 = bible.conn().query_row(
             "SELECT COUNT(DISTINCT sm.vkey) FROM progress.surface_meta sm \
-             JOIN hebrewdb.surface s ON s.surface_id = sm.surface_id \
+             JOIN data.surface s ON s.surface_id = sm.surface_id \
              WHERE s.occurrences >= ?1",
             params![threshold],
             |r| r.get(0),
@@ -7424,7 +7420,7 @@ mod tests {
         let rarest = bible
             .conn()
             .query_row(
-                "SELECT text FROM hebrewdb.surface WHERE language IS NULL \
+                "SELECT text FROM data.surface WHERE language IS NULL \
                  ORDER BY occurrences ASC LIMIT 1",
                 [],
                 |r| r.get::<_, String>(0),
@@ -7440,7 +7436,7 @@ mod tests {
     #[test]
     fn seed_known_vocab_with_zero_threshold_seeds_nothing() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7468,7 +7464,7 @@ mod tests {
     #[test]
     fn article_words_gate_behind_the_article_card() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7545,7 +7541,7 @@ mod tests {
     #[test]
     fn object_marker_gates_behind_its_grammar_card() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7610,7 +7606,7 @@ mod tests {
     #[test]
     fn pronoun_endings_drill_on_known_hosts() -> rusqlite::Result<()> {
         let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
-        if !data.join("hebrew.db").exists() {
+        if !data.join("haqor.db").exists() {
             return Ok(());
         }
         let bible = Bible::open(&data).expect("open data dbs");
@@ -7623,7 +7619,7 @@ mod tests {
         // Graduate two suffixed hosts: לוֹ (3ms) and אֵלַי (1cs).
         for surface in ["לוֹ", "אֵלַי"] {
             let id: i64 = bible.conn().query_row(
-                "SELECT surface_id FROM hebrewdb.surface WHERE text = ?1",
+                "SELECT surface_id FROM data.surface WHERE text = ?1",
                 params![surface],
                 |r| r.get(0),
             )?;

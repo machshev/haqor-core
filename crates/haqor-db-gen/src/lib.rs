@@ -27,7 +27,7 @@ pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
 };
 pub use occurrences::parse_ot_coverage;
-pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, pack_ref};
+pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, open_generation_dbs, pack_ref};
 pub use stepbible::source_dir as stepbible_source_dir;
 
 use std::path::Path;

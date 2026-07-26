@@ -26,7 +26,7 @@ use std::path::Path;
 use std::time::{SystemTime, UNIX_EPOCH};
 
 use anyhow::{Context, Result, bail};
-use haqor_core::bible::{Bible, HebrewWord};
+use haqor_core::bible::HebrewWord;
 use haqor_core::resolve::{TokenTagging, resolve};
 use log::info;
 use rusqlite::{Connection, params};
@@ -206,6 +206,58 @@ impl Builder {
     }
 }
 
+/// The four generation databases, attached under the schema names
+/// [`haqor_core::resolve`] and this module's copy queries expect.
+///
+/// The generator opens them itself rather than through `Bible`, which now
+/// opens the curated `haqor.db` — the very file this stage produces.
+pub fn open_generation_dbs(data_dir: &Path) -> Result<Connection> {
+    const SCHEMAS: [(&str, &str); 4] = [
+        ("bible.db", "bibledb"),
+        ("sedra.db", "sedradb"),
+        ("hebrew.db", "hebrewdb"),
+        ("lexicon.db", "lexdb"),
+    ];
+    let db = Connection::open_in_memory().context("opening the generation connection")?;
+    for (file, schema) in SCHEMAS {
+        let path = data_dir.join(file);
+        if !path.exists() {
+            bail!(
+                "{} is missing; run the earlier db gen- stages first",
+                path.display()
+            );
+        }
+        db.execute(
+            &format!("ATTACH DATABASE ?1 AS {schema}"),
+            [path.to_string_lossy()],
+        )
+        .with_context(|| format!("attaching {}", path.display()))?;
+    }
+
+    // The resolution shares its lexicon helpers with the runtime, and those
+    // name the runtime's tables without a schema so both sides can satisfy
+    // them. Here they resolve to temp views over the generation tables;
+    // in the app they resolve to `haqor.db`.
+    //
+    // This shim is load-bearing rather than cosmetic: without it those lookups
+    // fail, and because the differential test resolves through the same
+    // helpers, both sides would agree on data with every curated override
+    // silently missing.
+    db.execute_batch(
+        "CREATE TEMP VIEW lexicon_entry AS
+           SELECT bdb_id AS key, root, word, cons, pos, gloss,
+                  content_json AS body, type AS kind
+           FROM lexdb.bdb;
+         CREATE TEMP VIEW surface_override AS
+           SELECT surface, root, gloss FROM lexdb.lexicon_overrides;
+         CREATE TEMP VIEW word_gloss AS
+           SELECT surface, gloss, note, is_name, reader_override
+           FROM lexdb.word_glosses;",
+    )
+    .context("creating the generation-side lexicon views")?;
+    Ok(db)
+}
+
 /// Build `haqor.db` from the four generation databases in `data_dir`.
 ///
 /// The output is created empty, then attached to the connection the generation
@@ -222,9 +274,8 @@ pub fn generate_runtime(data_dir: &Path, output: &Path, codec: BlobCodec) -> Res
         .execute_batch(SCHEMA)
         .with_context(|| format!("writing the schema of {}", output.display()))?;
 
-    let bible = Bible::open(data_dir)
-        .with_context(|| format!("opening generation databases in {}", data_dir.display()))?;
-    let db = haqor_core::data_support::connection(&bible);
+    let connection = open_generation_dbs(data_dir)?;
+    let db = &connection;
     db.execute("ATTACH DATABASE ?1 AS out", [output.to_string_lossy()])
         .with_context(|| format!("attaching {}", output.display()))?;
 
@@ -292,6 +343,14 @@ CREATE TABLE word(
     PRIMARY KEY(ref, position)
 ) WITHOUT ROWID;
 
+-- `word` with its reference unpacked. The tutor scores whole-corpus
+-- aggregates by book/chapter/verse; `ref` passes through so a query that
+-- filters on a reference still uses the primary key.
+CREATE VIEW verse_word AS
+  SELECT ref >> 16 AS book, (ref >> 8) & 255 AS chapter, ref & 255 AS verse,
+         position, surface_id, info_id, gloss_id, ref
+  FROM word;
+
 CREATE TABLE word_info(
     info_id    INTEGER PRIMARY KEY,
     surface_id INTEGER NOT NULL,
@@ -327,9 +386,16 @@ CREATE TABLE root(
 
 -- Keyed by lexeme text, not by root_id: a noun stem is a legitimate
 -- concordance key and most stems are not generated verb roots.
+--
+-- `sources` records which side of the union the pair came from (1 = a verb
+-- analysis carrying the root, 2 = a noun analysis whose stem it is). Root
+-- concordance treats them differently — the noun side reaches its root through
+-- the lexicon rather than carrying it — so collapsing them would change which
+-- verses a root lists.
 CREATE TABLE root_surface(
     lexeme     TEXT    NOT NULL,
     surface_id INTEGER NOT NULL,
+    sources    INTEGER NOT NULL,
     PRIMARY KEY(lexeme, surface_id)
 ) WITHOUT ROWID;
 
@@ -374,11 +440,22 @@ CREATE TABLE syriac_lexeme(
     root_id   INTEGER,
     lexeme    TEXT
 );
+-- The morphology keys are what the NT word-info sheet reads; SEDRA's other
+-- ~15 columns per word are generation-only.
 CREATE TABLE syriac_word(
-    word_id   INTEGER PRIMARY KEY,
-    lexeme_id INTEGER,
-    word      TEXT,
-    vocalised TEXT
+    word_id        INTEGER PRIMARY KEY,
+    lexeme_id      INTEGER,
+    word           TEXT,
+    vocalised      TEXT,
+    gender         INTEGER,
+    person         INTEGER,
+    number         INTEGER,
+    state          INTEGER,
+    tense          INTEGER,
+    form           INTEGER,
+    suffix_person  INTEGER,
+    suffix_gender  INTEGER,
+    suffix_number  INTEGER
 );
 CREATE TABLE syriac_gloss(
     gloss_id  INTEGER PRIMARY KEY,
@@ -511,10 +588,12 @@ fn copy_roots(db: &Connection) -> Result<()> {
         "INSERT INTO out.root(root, gizra, n_forms, n_occurrences)
            SELECT root, gizra, n_forms, n_occurrences FROM hebrewdb.roots;
          CREATE UNIQUE INDEX out.idx_root ON root(root);
-         INSERT INTO out.root_surface(lexeme, surface_id)
-           SELECT root, surface_id FROM hebrewdb.analyses
-           UNION
-           SELECT stem, surface_id FROM hebrewdb.noun_analyses",
+         INSERT INTO out.root_surface(lexeme, surface_id, sources)
+           SELECT lexeme, surface_id, sum(source) FROM (
+             SELECT DISTINCT root AS lexeme, surface_id, 1 AS source FROM hebrewdb.analyses
+             UNION ALL
+             SELECT DISTINCT stem, surface_id, 2 FROM hebrewdb.noun_analyses)
+           GROUP BY lexeme, surface_id",
     )?;
     Ok(())
 }
@@ -635,8 +714,13 @@ fn copy_syriac(db: &Connection) -> Result<()> {
            SELECT keyRoot, strRoot FROM sedradb.roots;
          INSERT INTO out.syriac_lexeme(lexeme_id, root_id, lexeme)
            SELECT keyLexeme, keyRoot, strLexeme FROM sedradb.lexemes;
-         INSERT INTO out.syriac_word(word_id, lexeme_id, word, vocalised)
-           SELECT keyWord, keyLexeme, strWord, strVocalised FROM sedradb.words;
+         INSERT INTO out.syriac_word(word_id, lexeme_id, word, vocalised, gender, person,
+                                     number, state, tense, form, suffix_person,
+                                     suffix_gender, suffix_number)
+           SELECT keyWord, keyLexeme, strWord, strVocalised, keyGender, keyPerson,
+                  keyNumber, keyState, keyTense, keyForm, keySuffixPerson,
+                  keySuffixGender, keySuffixNumber
+           FROM sedradb.words;
          INSERT INTO out.syriac_gloss(gloss_id, lexeme_id, before, meaning, after)
            SELECT keyEnglish, keyLexeme, strBefore, strMeaning, strAfter FROM sedradb.english",
     )?;
