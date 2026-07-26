@@ -14,8 +14,8 @@ path = "src/main.rs"
 anyhow = "1.0.81"
 clap = { version = "4.5.42", features = ["derive"] }
 env_logger = "0.11.5"
-haqor-admin = { path = "../haqor-admin", version = "0.7.6" }
-haqor-core = { path = "../haqor-core", version = "0.7.6" }
-haqor-db-gen = { path = "../haqor-db-gen", version = "0.7.6" }
-haqor-sync-server = { path = "../haqor-sync-server", version = "0.7.6" }
+haqor-admin = { path = "../haqor-admin", version = "0.7.7" }
+haqor-core = { path = "../haqor-core", version = "0.7.7" }
+haqor-db-gen = { path = "../haqor-db-gen", version = "0.7.7" }
+haqor-sync-server = { path = "../haqor-sync-server", version = "0.7.7" }
 log = "0.4.22"
