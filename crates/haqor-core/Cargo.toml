@@ -12,7 +12,7 @@ embedded = ["dep:rust-embed"]
 
 [dependencies]
 anyhow = "1.0.81"
-haqor-morphology = { path = "../haqor-morphology", version = "0.7.5" }
+haqor-morphology = { path = "../haqor-morphology", version = "0.7.6" }
 log = "0.4.22"
 # `ffi-sqlite-wasm-rs` is enabled by rusqlite's default features and swaps the
 # native bundled SQLite C build for the browser SQLite WASM bridge on
