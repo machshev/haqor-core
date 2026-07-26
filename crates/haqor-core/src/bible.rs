@@ -4644,10 +4644,25 @@ mod tests {
         let metadata = bible
             .chapter_reader_metadata(1, 1, true, false, true)
             .unwrap();
+        // The one thing the two paths are *meant* to differ on is the object
+        // marker's arrow. The interlinear sets its gloss under a right-to-left
+        // line, where the marked word lies to the left; a verse of English reads
+        // the other way, so [`verse_glosses`] turns the arrow with it. Nothing
+        // else may differ.
+        let mut arrows = 0;
         for verse in 1..=31 {
             let metadata = metadata.get(&verse).expect("Genesis 1 verse metadata");
+            arrows += metadata
+                .glosses
+                .iter()
+                .filter(|gloss| gloss.contains('←'))
+                .count();
             assert_eq!(
-                metadata.glosses,
+                metadata
+                    .glosses
+                    .iter()
+                    .map(|gloss| english_order_gloss(gloss))
+                    .collect::<Vec<_>>(),
                 bible.verse_glosses(1, 1, verse).unwrap(),
                 "glosses diverged at Genesis 1:{verse}",
             );
@@ -4657,6 +4672,12 @@ mod tests {
                 "name flags diverged at Genesis 1:{verse}",
             );
         }
+        // Genesis 1 marks its objects with אֵת, so the arrow rule was exercised
+        // rather than vacuously satisfied by a chapter that has no arrows.
+        assert!(
+            arrows > 0,
+            "the interlinear should keep its right-to-left arrows"
+        );
         assert!(
             bible
                 .chapter_reader_metadata(1, 1, false, false, false)

@@ -211,7 +211,12 @@ jobs:
         # worth guarding against here.
         env:
           HAQOR_REQUIRE_DATA: "1"
-        run: nix develop --command cargo test -p haqor-db-gen --test runtime_db
+        # `name_roots` runs here too: it reads the built `haqor.db`, so in the
+        # matrix job above it can only skip, and a guard that never runs guards
+        # nothing.
+        run: >
+          nix develop --command
+          cargo test -p haqor-db-gen --test runtime_db --test name_roots
 
       - name: Report the shipped size
         run: |
