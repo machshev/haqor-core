@@ -688,13 +688,30 @@ pub struct HebrewOccurrence {
     /// word and not a homograph elsewhere in the same verse.
     pub position: u32,
     pub surface: String,
-    /// Coarse parse bucket: the verb stem (Qal, Piel, …) for verbs, the part of
-    /// speech for everything else. Empty when the token has no readable
-    /// analysis.
+    /// The parse, component by component, so a caller can filter on one
+    /// dimension at a time — every stem of a root, or every plural, rather than
+    /// the full cross-product of labels. Each field is empty where the analysis
+    /// does not carry it (an infinitive has no person; a verb has no state), and
+    /// all of them are empty when the token has no readable analysis at all.
+    pub parse: OccurrenceParse,
+    /// The whole parse as one label, exactly as the reader shows it inline
+    /// ("Qal perfect 3ms"). For display; filter on [`OccurrenceParse`].
+    pub parse_label: String,
+}
+
+/// One token's parse, split into the dimensions a reader filters by.
+#[derive(Debug, Default, Clone, PartialEq, Eq)]
+pub struct OccurrenceParse {
+    pub part_of_speech: String,
+    /// Verb stem — Qal, Niphal, Piel, … (Peal and friends for the Aramaic).
     pub stem: String,
-    /// Full parse label, as the reader's inline morphology shows it
-    /// ("Qal perfect 3ms"). Empty when the token has no readable analysis.
-    pub parse: String,
+    /// Perfect, Imperfect, Wayyiqtol, Participle, Inf. Construct, …
+    pub tense: String,
+    pub person: String,
+    pub gender: String,
+    pub number: String,
+    /// Absolute or Construct, on the nominal forms that carry it.
+    pub state: String,
 }
 
 /// An NT verse where some lexeme of a root occurs, tagged with which lexeme of
@@ -3110,18 +3127,26 @@ impl Bible {
         let mut stmt = self.db.prepare(&sql)?;
         stmt.query_map([root], |row| {
             let surface: String = row.get(4)?;
-            // The parse label is the same one the reader shows inline, so a
-            // filter chip and the word under the reader's finger agree.
             let info = word_from_row(row, 5, &surface)?;
-            let (stem, parse) = info.as_ref().map_or_else(
-                || (String::new(), String::new()),
+            // The label is the one the reader shows inline, so a filter and the
+            // word under the reader's finger agree; the components beside it are
+            // what the filter actually cuts on.
+            let (parse, parse_label) = info.as_ref().map_or_else(
+                || (OccurrenceParse::default(), String::new()),
                 |info| {
-                    let stem = info
-                        .form
-                        .clone()
-                        .or_else(|| info.part_of_speech.clone())
-                        .unwrap_or_default();
-                    (stem, morph_summary(info))
+                    let field = |value: &Option<String>| value.clone().unwrap_or_default();
+                    (
+                        OccurrenceParse {
+                            part_of_speech: field(&info.part_of_speech),
+                            stem: field(&info.form),
+                            tense: field(&info.tense),
+                            person: field(&info.person),
+                            gender: field(&info.gender),
+                            number: field(&info.number),
+                            state: field(&info.state),
+                        },
+                        morph_summary(info),
+                    )
                 },
             );
             Ok(HebrewOccurrence {
@@ -3130,8 +3155,8 @@ impl Bible {
                 verse: row.get(2)?,
                 position: row.get(3)?,
                 surface,
-                stem,
                 parse,
+                parse_label,
             })
         })?
         .collect()
@@ -4296,17 +4321,36 @@ mod tests {
             );
         }
 
-        // Gen 1:1 בָּרָא is a Qal perfect; the tab groups its filter chips on
-        // exactly these labels.
+        // Gen 1:1 בָּרָא is a Qal perfect 3ms. The tab filters on the components
+        // one at a time, so each has to arrive separately and not only inside
+        // the joined label.
         let creation = detailed
             .iter()
             .find(|o| (o.book, o.chapter, o.verse) == (1, 1, 1))
             .expect("ברא occurs in Gen 1:1");
-        assert_eq!(creation.stem, "Qal");
+        assert_eq!(creation.parse.part_of_speech, "Verb");
+        assert_eq!(creation.parse.stem, "Qal");
+        assert_eq!(creation.parse.tense, "Perfect");
+        assert_eq!(creation.parse.person, "Third");
+        assert_eq!(creation.parse.gender, "Masculine");
+        assert_eq!(creation.parse.number, "Singular");
         assert!(
-            creation.parse.starts_with("Qal perfect"),
+            creation.parse_label.starts_with("Qal perfect"),
             "unexpected parse label {:?}",
-            creation.parse
+            creation.parse_label
+        );
+
+        // A dimension an analysis does not carry stays empty rather than
+        // guessing, so filtering by person excludes the infinitives instead of
+        // silently lumping them under one.
+        let infinitive = detailed
+            .iter()
+            .find(|o| o.parse.tense.starts_with("Inf."))
+            .expect("ברא has infinitive occurrences");
+        assert!(!infinitive.parse.stem.is_empty());
+        assert!(
+            infinitive.parse.person.is_empty(),
+            "an infinitive should carry no person: {infinitive:?}"
         );
 
         // Token-level, so it never collapses below the distinct-verse count the
