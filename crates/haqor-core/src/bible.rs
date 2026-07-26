@@ -1963,23 +1963,42 @@ fn blob_error(message: String) -> rusqlite::Error {
 /// root as `?1`. Verb forms carry their root on the analysis and are matched
 /// directly by the callers; everything else reaches its root through an entry.
 ///
-/// Two rungs, unioned. The noun side of `root_surface` is keyed by stem, joined
-/// on `lexicon_entry.norm` — the headword normalised the way a stem is, since
-/// BDB's citation accents (אֱלִיעֶ֫זֶר) otherwise lose one stem in eight. And a
-/// surface that *is* a headword is matched straight off: the frequent names are
-/// classified by the prefilter and never reach the noun parser, so without this
-/// rung יִשְׂרָאֵל stands in no root's concordance at all.
+/// Four rungs, unioned, in descending order of how much they know.
 ///
-/// Membership comes from `entry_root` either way, so a compound name is reached
+/// A surface's own tagging names its entry outright (`surface_entry`), which is
+/// the editors' answer and holds for a proclitic form as much as a bare one. The
+/// noun side of `root_surface` is keyed by stem, joined on `lexicon_entry.norm` —
+/// the headword normalised the way a stem is, since BDB's citation accents
+/// (אֱלִיעֶ֫זֶר) otherwise lose one stem in eight. A surface that *is* a headword
+/// is matched straight off, for the frequent names the prefilter classifies
+/// before the noun parser ever sees them. And an untagged name is matched on
+/// consonants alone, because the two lexicons rarely point a name alike — the
+/// corpus writes יְדִידְיָהּ with a mappiq where BDB's headword has a plain he.
+/// Pointing-blind matching is the bridge's own last rung ([`lexicon_fallback`])
+/// and is kept here to names with no tagging, for the same reason it is last
+/// there: on its own it is too coarse to trust.
+///
+/// Membership comes from `entry_root` throughout, so a compound name is reached
 /// by every root it is made of, not only the section BDB prints it in.
-const LEXICON_ROOT_SURFACES: &str = "SELECT rs.surface_id FROM data.root_surface rs \
+const LEXICON_ROOT_SURFACES: &str = "SELECT se.surface_id FROM data.surface_entry se \
+     JOIN entry_root er ON er.key = se.key AND er.root = ?1 \
+     UNION \
+     SELECT rs.surface_id FROM data.root_surface rs \
      JOIN lexicon_entry b ON b.norm = rs.lexeme \
      JOIN entry_root er ON er.key = b.key AND er.root = ?1 \
      WHERE rs.sources & 2 \
      UNION \
      SELECT s.surface_id FROM data.surface s \
      JOIN lexicon_entry b ON b.norm = s.text \
-     JOIN entry_root er ON er.key = b.key AND er.root = ?1";
+     JOIN entry_root er ON er.key = b.key AND er.root = ?1 \
+     UNION \
+     SELECT s.surface_id FROM data.surface s \
+     LEFT JOIN data.word_info wi ON wi.info_id = s.info_id \
+     JOIN lexicon_entry b ON b.cons = s.cons \
+     JOIN entry_root er ON er.key = b.key AND er.root = ?1 \
+     WHERE (COALESCE(s.lexical_class, '') = 'proper' OR COALESCE(wi.flags, 0) & 2) \
+       AND NOT EXISTS(SELECT 1 FROM data.surface_entry se \
+                      WHERE se.surface_id = s.surface_id)";
 
 /// The `word_info` columns every read of a stored rendering selects, in the
 /// order [`word_from_row`] expects. Callers append it to their own columns and
@@ -2930,6 +2949,10 @@ impl Bible {
         // stem, or as a headword in its own right.
         let mut stmt = self.db.prepare(
             "WITH entry(key) AS ( \
+               SELECT se.key FROM data.surface s \
+                 JOIN data.surface_entry se ON se.surface_id = s.surface_id \
+                WHERE s.text = ?1 \
+               UNION \
                SELECT b.key FROM data.surface s \
                  JOIN data.root_surface rs \
                    ON rs.surface_id = s.surface_id AND rs.sources & 2 \
@@ -2937,22 +2960,38 @@ impl Bible {
                 WHERE s.text = ?1 \
                UNION \
                SELECT b.key FROM lexicon_entry b WHERE b.norm = ?1) \
-             SELECT er2.root, MIN(er2.ord) FROM entry e \
+             SELECT er2.root, MIN(er2.ord), MAX(COALESCE(er2.label, '')) FROM entry e \
              JOIN entry_root er ON er.key = e.key AND er.root = ?2 \
              JOIN entry_root er2 ON er2.key = e.key \
-             WHERE er2.root <> ?2 \
              GROUP BY er2.root ORDER BY MIN(er2.ord), er2.root",
         )?;
-        let mut others = stmt
-            .query_map(rusqlite::params![norm, root], |row| row.get::<_, String>(0))?
+        let read =
+            |row: &rusqlite::Row<'_>| Ok((row.get::<_, String>(0)?, row.get::<_, String>(2)?));
+        let mut found = stmt
+            .query_map(rusqlite::params![norm, root], read)?
             .collect::<rusqlite::Result<Vec<_>>>()?;
-        if others.is_empty() {
-            others = self.name_entry_roots(&norm, root)?;
+        if found.is_empty() {
+            found = self.name_entry_roots(&norm, &fold_consonants(&norm), root)?;
         }
-        let mut options = Vec::with_capacity(others.len() + 1);
-        for (index, root) in std::iter::once(root.to_string()).chain(others).enumerate() {
+        // The resolved root leads whether or not the lookup found it — it is what
+        // the rest of the sheet describes — and takes its own label when it has
+        // one, since it is usually an element of the compound itself.
+        let primary = found
+            .iter()
+            .position(|(found, _)| found == root)
+            .map_or_else(|| (root.to_string(), String::new()), |at| found.remove(at));
+        let mut options = Vec::with_capacity(found.len() + 1);
+        for (index, (root, label)) in std::iter::once(primary).chain(found).enumerate() {
+            // The element's own gloss says which sense of a shared section is
+            // meant — אלה is "god" for a name built on אֵל, not the "these" that
+            // heads the section. Only the primary has no element to speak for it.
+            let gloss = if label.is_empty() {
+                self.root_headline(&root)?
+            } else {
+                label
+            };
             options.push(RootOption {
-                gloss: self.root_headline(&root)?,
+                gloss,
                 root,
                 is_primary: index == 0,
             });
@@ -2967,21 +3006,40 @@ impl Bible {
     /// already filed under the root the parse chose. That fails for a name whose
     /// root the parse invented — מִיכָאֵל resolves to the skeleton מיכ, which is
     /// no lexeme's root — and the entry's own roots (אלה, from "who is like
-    /// God") are then the only ones there are. Gated on the name flag, since for
-    /// an ordinary word a resolved root that matches no entry is a bridge fault
-    /// to fix rather than a second reading to offer.
-    fn name_entry_roots(&self, norm: &str, root: &str) -> rusqlite::Result<Vec<String>> {
+    /// God") are then the only ones there are. It fails too when the two
+    /// lexicons point the name differently, which is the ordinary case:
+    /// יְדִידְיָהּ is written with a mappiq in the corpus and without one in BDB,
+    /// so the entry is only reachable on consonants.
+    ///
+    /// A name is either flagged as one or classified `proper` by the prefilter.
+    /// Both have to count: the flag is set from a matched entry's part of speech,
+    /// which the pointing-blind rung of the bridge does not carry, so exactly the
+    /// names that need this lookup are the ones whose flag is unset.
+    ///
+    /// Both rungs are gated on being a name, since for an ordinary word a
+    /// resolved root that matches no entry is a bridge fault to fix rather than
+    /// a second reading to offer, and consonants alone are too coarse to trust.
+    fn name_entry_roots(
+        &self,
+        norm: &str,
+        cons: &str,
+        root: &str,
+    ) -> rusqlite::Result<Vec<(String, String)>> {
         let mut stmt = self.db.prepare(
-            "SELECT er.root, MIN(er.ord) FROM lexicon_entry b \
+            "SELECT er.root, MIN(er.ord), MIN(COALESCE(er.label, '')) FROM lexicon_entry b \
              JOIN entry_root er ON er.key = b.key \
-             WHERE b.norm = ?1 AND er.root <> ?2 \
+             WHERE (b.norm = ?1 OR b.cons = ?2) AND er.root <> ?3 \
                AND EXISTS(SELECT 1 FROM data.surface s \
-                          JOIN data.word_info wi ON wi.info_id = s.info_id \
-                          WHERE s.text = ?1 AND wi.flags & 2) \
+                          LEFT JOIN data.word_info wi ON wi.info_id = s.info_id \
+                          WHERE s.text = ?1 \
+                            AND (COALESCE(s.lexical_class, '') = 'proper' \
+                                 OR COALESCE(wi.flags, 0) & 2)) \
              GROUP BY er.root ORDER BY MIN(er.ord), er.root",
         )?;
-        stmt.query_map(rusqlite::params![norm, root], |row| row.get::<_, String>(0))?
-            .collect()
+        stmt.query_map(rusqlite::params![norm, cons, root], |row| {
+            Ok((row.get::<_, String>(0)?, row.get::<_, String>(2)?))
+        })?
+        .collect()
     }
 
     /// The headline gloss to label a root with: the first glossed lexeme printed

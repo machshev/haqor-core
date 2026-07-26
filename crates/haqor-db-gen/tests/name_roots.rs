@@ -56,10 +56,11 @@ fn a_compound_name_offers_both_of_its_roots() {
     // The section root leads, and the labels say what each root means so the
     // choice reads as "god" against "help" rather than as two spellings.
     assert!(options[0].is_primary && !options[1].is_primary);
-    assert!(
-        !options[0].gloss.is_empty() && !options[1].gloss.is_empty(),
-        "each root should be labelled with its own headline gloss, got {options:?}"
-    );
+    // The label is the element's own gloss, which is what says which sense of a
+    // shared section is meant: אלה heads the demonstrative אֵלֶּה "these", but
+    // the element Eliezer is built from is אֵל "god".
+    assert_eq!(options[0].gloss, "god");
+    assert_eq!(options[1].gloss, "help");
 
     // The frequent names never reach the noun parser — the prefilter classifies
     // them — so they are reached as headwords in their own right instead. Israel
@@ -69,6 +70,21 @@ fn a_compound_name_offers_both_of_its_roots() {
         .expect("root options for Israel");
     let roots: Vec<&str> = options.iter().map(|o| o.root.as_str()).collect();
     assert_eq!(roots, vec!["שרה", "אלה"]);
+
+    // The two lexicons rarely point a name alike: the corpus writes Jedidiah
+    // with a mappiq (יְדִידְיָהּ) where BDB's headword has a plain he, and Joshua
+    // defective (יְהוֹשֻׁעַ) where Strong's writes it plene. Neither is reachable
+    // by pointing, so both come through the token's own tagging.
+    for (word, root, expected) in [
+        ("יְדִידְיָהּ", "ידד", ["ידד", "הוה"]),
+        ("יְהוֹשֻׁעַ", "הוה", ["הוה", "ישע"]),
+    ] {
+        let options = bible
+            .hebrew_root_options(word, root)
+            .expect("root options for a compound name");
+        let roots: Vec<&str> = options.iter().map(|o| o.root.as_str()).collect();
+        assert_eq!(roots, expected.to_vec(), "{word} is built from two roots");
+    }
 
     // A name whose root the parser invented — מִיכָאֵל resolves to the skeleton
     // מיכ, which is no lexeme's root — still offers the element BDB knows.
@@ -121,4 +137,16 @@ fn a_name_stands_in_the_lists_of_every_root_it_is_made_of() {
             "{root}'s lexeme tree should include Eliezer"
         );
     }
+
+    // Joshua's tokens reach the root he is named for, spelling differences and
+    // proclitics included — the tagging says which article the word is, so
+    // וִיהוֹשֻׁעַ counts as much as the bare form.
+    let saved = bible
+        .hebrew_root_occurrences_detailed("ישע")
+        .expect("occurrences of ישע");
+    assert!(
+        saved.iter().filter(|t| t.surface.contains("הוֹשֻׁעַ")).count() > 100,
+        "ישע should list Joshua's tokens ({} found)",
+        saved.iter().filter(|t| t.surface.contains("הוֹשֻׁעַ")).count()
+    );
 }

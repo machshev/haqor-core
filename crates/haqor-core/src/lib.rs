@@ -59,6 +59,13 @@ pub mod data_support {
         crate::bible::lexicon_fallback(db, surface)
     }
 
+    /// A word's bare consonants, finals folded — the key the pointing-blind rung
+    /// of the lexicon bridge matches on, and what `surface.cons` stores so the
+    /// runtime can match a name against its entry without a SQL function.
+    pub fn fold_consonants(word: &str) -> String {
+        crate::bible::fold_consonants(word)
+    }
+
     /// The connection the generation databases are attached to, so the
     /// curation stage can copy between schemas in SQL instead of ferrying
     /// every row through Rust.

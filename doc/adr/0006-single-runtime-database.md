@@ -235,7 +235,9 @@ word_info(info_id PK, surface_id, root, gloss_id, cell_id, flags)
 morph_cell(cell_id PK, pos, form, tense, person, gender, number, state, prefix, obj_suffix)
 gloss(gloss_id PK, text)             -- interned word-info glosses (word_info.gloss_id)
 reader_gloss(gloss_id PK, text)      -- interned occurrence glosses (word.gloss_id)
-surface(surface_id PK, text, occurrences, n_candidates, lexical_class, language, info_id)
+surface(surface_id PK, text, cons, occurrences, n_candidates, lexical_class, language, info_id)
+                                   -- cons: folded consonants, the pointing-blind key
+surface_entry(surface_id, key)     -- which lexicon entries the OSHB lemma names
 root(root_id PK, root, gizra, n_forms, n_occurrences)
 root_surface(lexeme, surface_id)   -- lexeme text: noun stems are keys too
 verse_stat(ref PK, word_count, distinct_count, min_occ, sum_occ, mask)  + verse_stats view

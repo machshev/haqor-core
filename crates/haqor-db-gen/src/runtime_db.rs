@@ -266,7 +266,7 @@ pub(crate) fn attach_lexicon_views(db: &Connection) -> Result<()> {
                   content_json AS body, type AS kind
            FROM lexdb.bdb;
          CREATE TEMP VIEW IF NOT EXISTS entry_root AS
-           SELECT bdb_id AS key, root, ord FROM lexdb.entry_root;
+           SELECT bdb_id AS key, root, ord, label FROM lexdb.entry_root;
          CREATE TEMP VIEW IF NOT EXISTS surface_override AS
            SELECT surface, root, gloss FROM lexdb.lexicon_overrides;
          CREATE TEMP VIEW IF NOT EXISTS word_gloss AS
@@ -309,6 +309,8 @@ pub fn generate_runtime(data_dir: &Path, output: &Path, codec: BlobCodec) -> Res
         copy_roots(db)?;
         copy_verse_stats(db)?;
         copy_lexicon(db, &mut encoder)?;
+        let entries = build_surface_entries(db)?;
+        info!("  {entries} (surface, lexicon entry) links from the OSHB lemmas");
         copy_syriac(db)?;
 
         let words = build_words(db, &mut builder, &mut reader_glosses)?;
@@ -356,9 +358,15 @@ CREATE TABLE ketiv(
 -- Present only when meta.blob_codec names a codec that needs it.
 CREATE TABLE blob_dict(dict_id INTEGER PRIMARY KEY, data BLOB NOT NULL);
 
+-- `cons` is the bare consonants, finals folded: the pointing-blind key a name
+-- reaches its lexicon entry by. The two spellings of a name rarely agree on
+-- pointing — the corpus writes Jedidiah with a mappiq (יְדִידְיָהּ) where BDB's
+-- headword has a plain he — so a name's entry, and with it the roots the name is
+-- built from, is only reachable this way.
 CREATE TABLE surface(
     surface_id    INTEGER PRIMARY KEY,
     text          TEXT    NOT NULL,
+    cons          TEXT    NOT NULL,
     occurrences   INTEGER NOT NULL,
     n_candidates  INTEGER NOT NULL,
     lexical_class TEXT,
@@ -466,10 +474,22 @@ CREATE TABLE lexicon_entry(
 -- membership from here rather than from `lexicon_entry.root`, so a name stands
 -- in the lists of every root it is made of.
 CREATE TABLE entry_root(
-    key  TEXT    NOT NULL,
-    root TEXT    NOT NULL,
-    ord  INTEGER NOT NULL,
+    key   TEXT    NOT NULL,
+    root  TEXT    NOT NULL,
+    ord   INTEGER NOT NULL,
+    label TEXT,
     PRIMARY KEY(key, root)
+) WITHOUT ROWID;
+
+-- Which lexicon entries a surface's own tagging names, via the OSHB Strong's
+-- lemma and the lexical index. This is the editors' answer to which article a
+-- word belongs to, where matching on spelling can only guess: it holds for a
+-- proclitic form as much as a bare one, and needs the two lexicons to agree on
+-- nothing.
+CREATE TABLE surface_entry(
+    surface_id INTEGER NOT NULL,
+    key        TEXT    NOT NULL,
+    PRIMARY KEY(surface_id, key)
 ) WITHOUT ROWID;
 
 CREATE TABLE word_gloss(
@@ -536,6 +556,8 @@ CREATE INDEX out.idx_lexicon_entry_root ON lexicon_entry(root);
 CREATE INDEX out.idx_lexicon_entry_norm ON lexicon_entry(norm);
 CREATE INDEX out.idx_lexicon_entry_cons ON lexicon_entry(cons);
 CREATE INDEX out.idx_entry_root_root ON entry_root(root);
+CREATE INDEX out.idx_surface_entry_key ON surface_entry(key);
+CREATE INDEX out.idx_surface_cons ON surface(cons);
 CREATE INDEX out.idx_syriac_lexeme_root ON syriac_lexeme(root_id);
 CREATE INDEX out.idx_syriac_word_lexeme ON syriac_word(lexeme_id);
 CREATE INDEX out.idx_syriac_word_vocalised ON syriac_word(vocalised);
@@ -641,11 +663,28 @@ fn copy_ketiv(db: &Connection) -> Result<usize> {
 }
 
 fn copy_surfaces(db: &Connection) -> Result<()> {
-    db.execute_batch(
-        "INSERT INTO out.surface(surface_id, text, occurrences, n_candidates, lexical_class, language)
-         SELECT surface_id, text, occurrences, n_candidates, lexical_class, language
+    let mut stmt = db.prepare(
+        "SELECT surface_id, text, occurrences, n_candidates, lexical_class, language
          FROM hebrewdb.surface",
     )?;
+    let mut insert = db.prepare(
+        "INSERT INTO out.surface(surface_id, text, cons, occurrences, n_candidates,
+                                 lexical_class, language)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
+    )?;
+    let mut rows = stmt.query([])?;
+    while let Some(row) = rows.next()? {
+        let text: String = row.get(1)?;
+        insert.execute(params![
+            row.get::<_, i64>(0)?,
+            &text,
+            haqor_core::data_support::fold_consonants(&text),
+            row.get::<_, i64>(2)?,
+            row.get::<_, i64>(3)?,
+            row.get::<_, Option<String>>(4)?,
+            row.get::<_, Option<String>>(5)?,
+        ])?;
+    }
     Ok(())
 }
 
@@ -777,14 +816,59 @@ fn copy_lexicon(db: &Connection, encoder: &mut Encoder) -> Result<()> {
     }
 
     db.execute_batch(
-        "INSERT INTO out.entry_root(key, root, ord)
-           SELECT bdb_id, root, ord FROM lexdb.entry_root;
+        "INSERT INTO out.entry_root(key, root, ord, label)
+           SELECT bdb_id, root, ord, label FROM lexdb.entry_root;
          INSERT INTO out.word_gloss(surface, gloss, note, is_name, reader_override)
            SELECT surface, gloss, note, is_name, reader_override FROM lexdb.word_glosses;
          INSERT INTO out.surface_override(surface, root, gloss)
            SELECT surface, root, gloss FROM lexdb.lexicon_overrides",
     )?;
     Ok(())
+}
+
+/// Link each surface to the lexicon entries its *tagging* names.
+///
+/// Every OT token carries an OSHB Strong's lemma, and the lexical index maps a
+/// Strong's number to the BDB entries that print that lexeme — so this is the
+/// bridge from a word in the text to its article, stated by the editors rather
+/// than guessed from spelling. It reaches what pointing-based matching cannot: a
+/// proclitic form (`c/3091`, וִיהוֹשֻׁעַ) is the same lemma as the bare one, and
+/// the two lexicons need not spell the name alike.
+///
+/// A lemma is `[proclitic/]number[ homograph letter]` — `b/7225`, `1254 a` — and
+/// several entries can answer to one number, so the table is many-to-many.
+fn build_surface_entries(db: &Connection) -> Result<usize> {
+    let mut stmt = db.prepare(
+        "SELECT DISTINCT o.surface_id, o.lemma FROM hebrewdb.oshb_primary o ORDER BY o.surface_id",
+    )?;
+    let mut entries = db.prepare(
+        "SELECT DISTINCT bdb_id FROM lexdb.lexical_index WHERE strong = ?1 AND bdb_id IS NOT NULL",
+    )?;
+    let mut insert =
+        db.prepare("INSERT OR IGNORE INTO out.surface_entry(surface_id, key) VALUES (?1, ?2)")?;
+    let mut rows = stmt.query([])?;
+    let mut linked = 0;
+    while let Some(row) = rows.next()? {
+        let surface_id: i64 = row.get(0)?;
+        let lemma: String = row.get(1)?;
+        // The last segment is the lemma itself; anything before a slash is a
+        // proclitic the tagging spells out separately.
+        let Some(strong) = lemma
+            .rsplit('/')
+            .next()
+            .and_then(|segment| segment.split_whitespace().next())
+            .and_then(|digits| digits.parse::<i64>().ok())
+        else {
+            continue;
+        };
+        for key in entries
+            .query_map([strong], |r| r.get::<_, String>(0))?
+            .collect::<rusqlite::Result<Vec<_>>>()?
+        {
+            linked += insert.execute(params![surface_id, key])?;
+        }
+    }
+    Ok(linked)
 }
 
 fn copy_syriac(db: &Connection) -> Result<()> {

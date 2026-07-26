@@ -1321,6 +1321,36 @@ fn derivation_elements(source: &str) -> Vec<i64> {
     out
 }
 
+/// The first sense of a BDB gloss, to label a root's element with: "help;
+/// succour" → "help". One word or two is what fits beside a root; the whole
+/// gloss belongs to the lexeme's own entry.
+///
+/// The lexicographer's abbreviations are dropped along with any sense that is
+/// nothing but abbreviation: יָה glosses as "n.pr.dei contr. fr. יהוה", which
+/// tells a reader choosing between two roots nothing, and an empty label leaves
+/// the caller free to fall back to the root's own headline.
+fn leading_sense(gloss: &str) -> String {
+    // "n.pr.dei", "contr.", "fr.", "adj." — a lowercase token with a dot in it.
+    let abbreviation = |word: &str| {
+        word.contains('.')
+            && word
+                .chars()
+                .all(|c| c.is_ascii_lowercase() || c == '.' || c == '[' || c == ']')
+    };
+    let sense = gloss.split([';', ',']).next().unwrap_or_default();
+    let rest: Vec<&str> = sense
+        .split_whitespace()
+        .skip_while(|word| abbreviation(word))
+        .collect();
+    if !rest
+        .iter()
+        .any(|word| word.contains(|c: char| c.is_ascii_alphabetic()))
+    {
+        return String::new();
+    }
+    rest.join(" ")
+}
+
 /// Build `entry_root`: every root an entry can be filed under, `ord 0` first.
 ///
 /// BDB files each lexeme in one root section, which for a compound name can
@@ -1336,15 +1366,21 @@ fn derivation_elements(source: &str) -> Vec<i64> {
 /// derivation names them. Single-element derivations count too (יוֹסֵף from
 /// יספ): the etymology is the same kind of claim, and BDB's own section is
 /// frequently the other one.
+///
+/// An element also carries a `label`: the gloss of the entry the derivation
+/// named. A root section can hold homonyms, so naming it by its first lexeme
+/// labels אלה "these" (the demonstrative אֵלֶּה sorts first) where the element
+/// the name is built from is אֵל "god". The derivation says which one is meant.
 fn load_entry_roots(db: &mut Connection) -> Result<usize> {
     db.execute_batch(
         "CREATE TABLE entry_root(
             bdb_id TEXT NOT NULL, root TEXT NOT NULL, ord INTEGER NOT NULL,
+            label TEXT,
             PRIMARY KEY(bdb_id, root)) WITHOUT ROWID",
     )?;
     let mut rows = db.execute(
-        "INSERT INTO entry_root(bdb_id, root, ord)
-         SELECT bdb_id, root, 0 FROM bdb WHERE root <> ''",
+        "INSERT INTO entry_root(bdb_id, root, ord, label)
+         SELECT bdb_id, root, 0, NULL FROM bdb WHERE root <> ''",
         [],
     )?;
 
@@ -1354,7 +1390,8 @@ fn load_entry_roots(db: &mut Connection) -> Result<usize> {
     // homograph pair (two Elhanans) are both that compound.
     let derived = {
         let mut element_root = db.prepare(
-            "SELECT b.root FROM lexical_index li JOIN bdb b ON b.bdb_id = li.bdb_id \
+            "SELECT b.root, b.gloss FROM lexical_index li \
+             JOIN bdb b ON b.bdb_id = li.bdb_id \
              WHERE li.strong = ?1 AND b.root <> '' ORDER BY b.bdb_id LIMIT 1",
         )?;
         // `lexical_index` is many-to-many in both directions, so an entry can be
@@ -1383,7 +1420,7 @@ fn load_entry_roots(db: &mut Connection) -> Result<usize> {
              WHERE pos LIKE 'n-pr%' AND source IS NOT NULL AND source LIKE '%from %'",
         )?;
 
-        let mut derived: Vec<(String, String, i64)> = Vec::new();
+        let mut derived: Vec<(String, String, i64, String)> = Vec::new();
         let mut names_rows = names.query([])?;
         while let Some(row) = names_rows.next()? {
             let strong: i64 = row.get(0)?;
@@ -1393,30 +1430,44 @@ fn load_entry_roots(db: &mut Connection) -> Result<usize> {
             if elements.is_empty() {
                 continue;
             }
-            let mut roots: Vec<String> = Vec::new();
+            // `(root, label)` per element, the label being that element's own
+            // gloss — the sense of the root the name was built from.
+            let mut roots: Vec<(String, String)> = Vec::new();
             for element in elements {
-                let root = element_root
-                    .query_row([element], |r| r.get::<_, String>(0))
+                let found = element_root
+                    .query_row([element], |r| {
+                        Ok((r.get::<_, String>(0)?, r.get::<_, Option<String>>(1)?))
+                    })
                     .optional()?;
-                if let Some(root) = root.filter(|root| !roots.contains(root)) {
-                    roots.push(root);
+                if let Some((root, gloss)) = found
+                    && !roots.iter().any(|(seen, _)| *seen == root)
+                {
+                    roots.push((root, leading_sense(gloss.as_deref().unwrap_or_default())));
                 }
             }
             let cons = consonants(&headword);
             let mut entries: Vec<String> = name_entries
                 .query_map(rusqlite::params![strong, &cons], |r| r.get::<_, String>(0))?
                 .collect::<rusqlite::Result<_>>()?;
-            if entries.is_empty() {
-                let skeleton = cons.replace(['ו', 'י'], "");
-                entries = name_entries_skeletal
-                    .query_map(rusqlite::params![strong, skeleton], |r| {
-                        r.get::<_, String>(0)
-                    })?
-                    .collect::<rusqlite::Result<_>>()?;
+            // Both spellings are wanted, not just whichever the lexicographer
+            // chose: BDB prints Joshua's article defective and its cross-
+            // reference plene, and the corpus writes both. Filing the derivation
+            // on each of them is what lets a token reach it by exact consonants,
+            // which is a narrower rung than matres-blind matching at read time.
+            let skeleton = cons.replace(['ו', 'י'], "");
+            for bdb_id in name_entries_skeletal
+                .query_map(rusqlite::params![strong, skeleton], |r| {
+                    r.get::<_, String>(0)
+                })?
+                .collect::<rusqlite::Result<Vec<String>>>()?
+            {
+                if !entries.contains(&bdb_id) {
+                    entries.push(bdb_id);
+                }
             }
             for bdb_id in entries {
-                for (ord, root) in roots.iter().enumerate() {
-                    derived.push((bdb_id.clone(), root.clone(), ord as i64 + 1));
+                for (ord, (root, label)) in roots.iter().enumerate() {
+                    derived.push((bdb_id.clone(), root.clone(), ord as i64 + 1, label.clone()));
                 }
             }
         }
@@ -1426,11 +1477,18 @@ fn load_entry_roots(db: &mut Connection) -> Result<usize> {
     {
         let tx = db.transaction()?;
         {
+            // An element that is *also* the section the entry is printed in
+            // keeps its `ord 0` — that is still the primary reading — but takes
+            // the label, since the derivation is what says which sense of the
+            // section is meant. Eliezer sits under אלה and is built on אֵל "god",
+            // where the section itself is headed by אֵלֶּה "these".
             let mut insert = tx.prepare(
-                "INSERT OR IGNORE INTO entry_root(bdb_id, root, ord) VALUES (?1, ?2, ?3)",
+                "INSERT INTO entry_root(bdb_id, root, ord, label) VALUES (?1, ?2, ?3, ?4) \
+                 ON CONFLICT(bdb_id, root) DO UPDATE SET label = excluded.label \
+                 WHERE entry_root.label IS NULL AND excluded.label <> ''",
             )?;
-            for (bdb_id, root, ord) in derived {
-                rows += insert.execute(rusqlite::params![bdb_id, root, ord])?;
+            for (bdb_id, root, ord, label) in derived {
+                rows += insert.execute(rusqlite::params![bdb_id, root, ord, label])?;
             }
         }
         tx.commit()?;
@@ -1644,6 +1702,17 @@ mod tests {
     // fallback runs against the same JSON the entry handler passes in.
     fn senses(v: Value) -> Vec<Value> {
         v.as_array().unwrap().clone()
+    }
+
+    #[test]
+    fn element_label_is_the_sense_a_reader_can_choose_by() {
+        assert_eq!(leading_sense("help; succour"), "help");
+        assert_eq!(leading_sense("god"), "god");
+        assert_eq!(leading_sense("adj. beloved"), "beloved");
+        // Nothing but abbreviation and a Hebrew cross-reference: no label, so
+        // the caller falls back to the root's own headline.
+        assert_eq!(leading_sense("n.pr.dei contr. fr. יהוה"), "");
+        assert_eq!(leading_sense(""), "");
     }
 
     #[test]
