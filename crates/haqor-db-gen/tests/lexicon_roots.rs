@@ -11,15 +11,26 @@
 //! was offered twelve verses from the book of Ruth. 1,542 entries were filed
 //! that way. A redirect now takes the root of the article it points at.
 //!
-//! Builds the lexicon from the checked-in `src_texts/`, so it needs no generated
-//! database and runs on any checkout.
+//! Builds the lexicon from `src_texts/`, so it needs no generated database —
+//! but BDB lives in the `src_texts/HebrewLexicon` submodule, so a checkout
+//! without that submodule cannot run it.
 
 use std::path::{Path, PathBuf};
 
 use haqor_db_gen::generate_lexicon;
 
+/// The source tree, once the BDB submodule is known to be there.
+///
+/// Without the check the failure is a bare "No such file or directory" from
+/// deep inside generation, which reads as a bug in the lexicon builder.
 fn src_texts() -> PathBuf {
-    Path::new(env!("CARGO_MANIFEST_DIR")).join("../../src_texts")
+    let dir = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../src_texts");
+    assert!(
+        dir.join("HebrewLexicon/BrownDriverBriggs.xml").exists(),
+        "src_texts/HebrewLexicon is empty — run \
+         `git submodule update --init src_texts/HebrewLexicon`"
+    );
+    dir
 }
 
 /// `(entry id, expected root, why)`.

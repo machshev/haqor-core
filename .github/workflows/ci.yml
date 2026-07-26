@@ -125,6 +125,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch the lexicon source
+        # haqor-db-gen's lexicon_roots test builds BDB from
+        # src_texts/HebrewLexicon, which is a submodule — without it the test
+        # fails on a bare "No such file or directory". Only that submodule:
+        # morphhb is 94 MB and nothing in this job reads it.
+        run: git submodule update --init --depth 1 src_texts/HebrewLexicon
       - uses: dtolnay/rust-toolchain@stable
       - name: Build
         run: cargo build --package "${{ matrix.crate }}" --all-features
