@@ -229,6 +229,7 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
     let mut chapter: u8 = 0;
     let mut verse: u8 = 0;
     let mut in_word = false;
+    let mut in_verse = false;
     let mut word = String::new();
     let mut buf = Vec::new();
 
@@ -238,20 +239,55 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                 b"c" => chapter = attr_n(&e, &reader)?,
                 b"v" => {
                     verse = attr_n(&e, &reader)?;
+                    in_verse = true;
                     chapters
                         .entry(chapter)
                         .or_default()
                         .entry(verse)
                         .or_default();
                 }
-                b"w" => {
+                // `w` is an ordinary word; `q` is a qere — the form the
+                // Masoretes direct the reader to say in place of what the
+                // consonantal text has written. Both belong to the running
+                // text of a reading edition, so both are collected the same
+                // way. A qere may span a different number of words than the
+                // ketiv it replaces (one for two, two for one), which is why
+                // this keys off the elements themselves rather than pairing
+                // them up.
+                b"w" | b"q" => {
                     in_word = true;
                     word.clear();
+                }
+                // `k` is a ketiv, superseded by its qere and so not read.
+                // Where a verse has a ketiv with no qere at all — the eight
+                // *ketiv wela qere*, written but explicitly not read (Jer
+                // 38:16, 2 Kgs 5:18, Ruth 3:12 …) — there is likewise nothing
+                // to say, so dropping every `k` is right in both cases.
+                b"k" => {}
+                // Section markers, a scribal note, and the large/small/
+                // suspended letters, which wrap a letter *inside* a `w` and so
+                // are already carried by the text events below.
+                b"samekh" | b"pe" | b"reversednun" | b"x" | b"s" => {}
+                // Anything else inside a verse is text this parser does not
+                // know how to place. Silently ignoring it is what lost every
+                // qere in the corpus, so an unrecognised element is an error
+                // rather than a shrug: a UXLC revision that introduces one
+                // fails the build instead of quietly shrinking the text.
+                other if in_verse => {
+                    anyhow::bail!(
+                        "unhandled UXLC element <{}> inside {} {chapter}:{verse} — \
+                         decide whether it belongs in the running text",
+                        String::from_utf8_lossy(other),
+                        path.display(),
+                    );
                 }
                 _ => {}
             },
             Event::End(e) => {
-                if e.name().as_ref() == b"w" {
+                let name = e.name();
+                if name.as_ref() == b"v" {
+                    in_verse = false;
+                } else if name.as_ref() == b"w" || name.as_ref() == b"q" {
                     in_word = false;
                     let assembled = strip_internal_maqaf(&std::mem::take(&mut word));
                     let assembled = split_glued_word(&assembled).map_or(assembled, str::to_string);
