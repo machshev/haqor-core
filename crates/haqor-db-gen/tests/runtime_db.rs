@@ -12,7 +12,7 @@
 
 use std::path::{Path, PathBuf};
 
-use haqor_core::bible::HebrewWord;
+use haqor_core::bible::{Bible, HebrewWord};
 use haqor_core::resolve::{TokenTagging, resolve};
 use haqor_db_gen::{BlobCodec, generate_runtime, open_generation_dbs, pack_ref};
 use rusqlite::OptionalExtension;
@@ -252,12 +252,21 @@ fn curated_overrides_survive_into_the_build() {
 
 /// The compressed build has to be readable, and readable *only* with what the
 /// database itself carries: the blobs are too short to compress alone, so they
-/// are written against a trained dictionary that ships in `blob_dict`. This is
-/// the read path the runtime will use.
+/// are written against a trained dictionary that ships in `blob_dict`.
+///
+/// Two readers, and both matter. The C library below says the bytes are a
+/// faithful round trip; [`Bible::get_chapter`] at the end says the *reader*
+/// can decode them, which is the part that shipped broken — this test used to
+/// claim it covered the runtime read path while only ever using the library
+/// that wrote the file.
 #[test]
 fn compressed_verse_text_round_trips_through_the_shipped_dictionary() {
     require_data!();
-    let output = std::env::temp_dir().join("haqor-runtime-zstd.db");
+    // Named haqor.db in a directory of its own: `Bible::open` takes the
+    // directory and expects the runtime database under its shipping name.
+    let dir = std::env::temp_dir().join("haqor-runtime-zstd");
+    std::fs::create_dir_all(&dir).expect("creating the output directory");
+    let output = dir.join("haqor.db");
     generate_runtime(&data_dir(), &output, BlobCodec::Zstd).expect("generating a compressed build");
 
     let db = rusqlite::Connection::open(&output).expect("opening the compressed build");
@@ -305,6 +314,26 @@ fn compressed_verse_text_round_trips_through_the_shipped_dictionary() {
         checked += 1;
     }
     assert_eq!(checked, 31_171, "the whole corpus should be stored");
+
+    // Now the reader's own path: pure-Rust decoding, through the dictionary the
+    // database carries, with nothing but the shipped file to go on.
+    drop(db);
+    let bible = Bible::open(&dir).expect("opening the compressed build as the app does");
+    let genesis = bible.get_chapter(1, 1, false).expect("reading Genesis 1");
+    assert_eq!(genesis.len(), 31, "Genesis 1 has 31 verses");
+    // Consonants only: pointing and cantillation are compared byte for byte
+    // against the source above, and their order in the decoded string is no
+    // business of this assertion.
+    let consonants: String = genesis[0]
+        .1
+        .chars()
+        .filter(|c| !('\u{0591}'..='\u{05C7}').contains(c))
+        .collect();
+    assert!(
+        consonants.starts_with("בראשית ברא אלהים"),
+        "Genesis 1:1 decoded as {:?}",
+        genesis[0].1
+    );
 
     let _ = std::fs::remove_file(&output);
 }

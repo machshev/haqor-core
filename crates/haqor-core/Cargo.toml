@@ -24,3 +24,6 @@ serde_json = "1.0"
 
 [dev-dependencies]
 env_logger = "0.11.5"
+# The C library the generator compresses blobs with. Tests only: the read path
+# stays on pure-Rust `ruzstd` so this crate keeps building for wasm.
+zstd = "0.13"

@@ -1943,10 +1943,18 @@ impl BlobReader {
         let bytes = match self {
             BlobReader::Plain => blob,
             BlobReader::Zstd(decoder) => {
+                // Decode as a stream rather than through `decode_all_to_vec`:
+                // that writes into the vector's *existing capacity* and fails
+                // the whole frame when the decoded size does not fit, so an
+                // empty vector never decodes anything at all.
                 let mut decoder = decoder.borrow_mut();
+                let mut stream =
+                    ruzstd::decoding::StreamingDecoder::new_with_decoder(&blob[..], &mut **decoder)
+                        .map_err(|e| {
+                            blob_error(format!("could not read a stored blob's header: {e}"))
+                        })?;
                 let mut out = Vec::new();
-                decoder
-                    .decode_all_to_vec(&blob, &mut out)
+                std::io::Read::read_to_end(&mut stream, &mut out)
                     .map_err(|e| blob_error(format!("could not decompress a stored blob: {e}")))?;
                 out
             }
@@ -3682,6 +3690,45 @@ mod tests {
                 return;
             }
         };
+    }
+
+    /// The compressed shipping form has to be readable by the reader itself,
+    /// not merely by the C library that wrote it. Release builds ship
+    /// `--blob-codec zstd` while local builds default to `none`, so nothing
+    /// exercised this path until an app release did — and every verse in it
+    /// failed to decompress. Built here rather than from `data/`, so it runs in
+    /// a checkout with no generated databases.
+    #[test]
+    fn compressed_blobs_decode_through_the_dictionary_they_ship_with() {
+        // Verse-like samples, enough of them for zstd to train on, exactly as
+        // `gen-runtime` trains over the corpus it is about to compress.
+        let verses: Vec<String> = (0..400)
+            .map(|n| format!("בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַשָּׁמַ֖יִם וְאֵ֥ת הָאָֽרֶץ׃ {n}"))
+            .collect();
+        let samples: Vec<Vec<u8>> = verses.iter().map(|v| v.clone().into_bytes()).collect();
+        let dictionary = zstd::dict::from_samples(&samples, 4096).expect("training a dictionary");
+        let mut compressor = zstd::bulk::Compressor::with_dictionary(12, &dictionary)
+            .expect("preparing the compressor");
+
+        let db = Connection::open_in_memory().expect("opening a database");
+        db.execute_batch(
+            "ATTACH DATABASE ':memory:' AS data;
+             CREATE TABLE data.meta(key TEXT PRIMARY KEY, value TEXT);
+             CREATE TABLE data.blob_dict(dict_id INTEGER PRIMARY KEY, data BLOB);
+             INSERT INTO data.meta(key, value) VALUES ('blob_codec', 'zstd');",
+        )
+        .expect("creating the schema");
+        db.execute(
+            "INSERT INTO data.blob_dict(dict_id, data) VALUES (1, ?1)",
+            [&dictionary],
+        )
+        .expect("storing the dictionary");
+
+        let reader = BlobReader::open(&db).expect("opening the blob reader");
+        for verse in &verses {
+            let stored = compressor.compress(verse.as_bytes()).expect("compressing");
+            assert_eq!(&reader.decode(stored).expect("decoding"), verse);
+        }
     }
 
     #[test]
