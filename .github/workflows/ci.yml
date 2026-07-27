@@ -220,12 +220,23 @@ jobs:
           nix develop --command
           cargo test -p haqor-db-gen --test runtime_db --test name_roots
 
-      - name: Report the shipped size
+      - name: Build and read back the shipping form
+        # Releases ship `--blob-codec zstd` while every local build and test
+        # defaults to `none`, so the compressed read path used to reach an app
+        # release without anything having read a compressed blob — and one
+        # shipped that could not decode a single verse. Read the compressed
+        # database back through the CLI, which is the same `Bible` the app
+        # opens, before reporting on it.
         run: |
           set -euo pipefail
           nix develop --command bash -c \
             'cargo run --release -p haqor-cli -- db gen-runtime --blob-codec zstd'
+          verse="$(nix develop --command bash -c \
+            'cargo run --release --quiet -p haqor-cli -- get 1 1 1')"
+          test -n "$verse" || { echo "::error::Genesis 1:1 read back empty"; exit 1; }
+          echo "Genesis 1:1 from the compressed build: $verse"
           size="$(du -h data/haqor.db | cut -f1)"
           echo "haqor.db (zstd): $size" >> "$GITHUB_STEP_SUMMARY"
+          echo "Genesis 1:1: $verse" >> "$GITHUB_STEP_SUMMARY"
           sqlite3 data/haqor.db "SELECT key || ' = ' || value FROM meta;" \
             >> "$GITHUB_STEP_SUMMARY"
