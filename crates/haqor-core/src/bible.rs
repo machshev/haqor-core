@@ -383,6 +383,9 @@ pub struct ReaderVerseMetadata {
     pub glosses: Vec<String>,
     pub morphologies: Vec<String>,
     pub names: Vec<bool>,
+    /// Consonantal roots aligned with the lexical words. Empty strings mark
+    /// tokens whose root cannot be resolved.
+    pub roots: Vec<String>,
     /// The verse's *ketiv* readings, where it has any. Not one per word: a
     /// reading can stand behind two words or behind none, so these carry their
     /// own positions rather than lining up with the vectors above.
@@ -2319,7 +2322,7 @@ impl Bible {
     ) -> rusqlite::Result<Vec<(String, String)>> {
         if book >= 40 {
             let glosses = self
-                .nt_chapter_reader_metadata(book, chapter, true, false, false)?
+                .nt_chapter_reader_metadata(book, chapter, true, false, false, false)?
                 .remove(&verse)
                 .map_or_else(Vec::new, |metadata| metadata.glosses);
             // SEDRA's gloss vector is in source-token order, so the verse text
@@ -2450,8 +2453,9 @@ impl Bible {
         include_glosses: bool,
         include_morphology: bool,
         include_names: bool,
+        include_roots: bool,
     ) -> rusqlite::Result<HashMap<u8, ReaderVerseMetadata>> {
-        if !include_glosses && !include_morphology && !include_names {
+        if !include_glosses && !include_morphology && !include_names && !include_roots {
             return Ok(HashMap::new());
         }
         if book >= 40 {
@@ -2461,6 +2465,7 @@ impl Bible {
                 include_glosses,
                 include_morphology,
                 include_names,
+                include_roots,
             );
         }
 
@@ -2553,6 +2558,11 @@ impl Bible {
                     .names
                     .push(info.is_some_and(|info| info.is_name));
             }
+            if include_roots {
+                verse_metadata
+                    .roots
+                    .push(info.map(|info| info.root.clone()).unwrap_or_default());
+            }
         }
 
         // One scan for the whole chapter's ketiv readings. Only about 1,250
@@ -2587,6 +2597,7 @@ impl Bible {
         include_glosses: bool,
         include_morphology: bool,
         include_names: bool,
+        include_roots: bool,
     ) -> rusqlite::Result<HashMap<u8, ReaderVerseMetadata>> {
         // `nt_word` is keyed `(ref, ord)`, so a chapter is one range scan over
         // the primary key with the source token order already in it — where
@@ -2599,9 +2610,11 @@ impl Bible {
                                  coalesce(e.after, '')) \
                      FROM data.syriac_gloss e \
                      WHERE e.lexeme_id = w.lexeme_id \
-                     ORDER BY e.gloss_id LIMIT 1) \
+                     ORDER BY e.gloss_id LIMIT 1), r.root \
              FROM data.nt_word o \
              JOIN data.syriac_word w ON w.word_id = o.word_id \
+             LEFT JOIN data.syriac_lexeme l ON l.lexeme_id = w.lexeme_id \
+             LEFT JOIN data.syriac_root r ON r.root_id = l.root_id \
              WHERE o.ref BETWEEN ?1 AND ?2 \
              ORDER BY o.ref, o.ord",
         )?;
@@ -2623,6 +2636,13 @@ impl Bible {
                 // aligned so the independent reader setting cannot shift
                 // styling onto a later word.
                 verse_metadata.names.push(false);
+            }
+            if include_roots {
+                verse_metadata.roots.push(
+                    row.get::<_, Option<String>>(2)?
+                        .map(display)
+                        .unwrap_or_default(),
+                );
             }
         }
 
@@ -4653,7 +4673,7 @@ mod tests {
         // 2 Sam 12:31 writes במלכן and reads בַּמַּלְבֵּן "in the brickkiln",
         // the thirteenth word of the verse.
         let metadata = bible
-            .chapter_reader_metadata(9, 12, true, false, false)
+            .chapter_reader_metadata(9, 12, true, false, false, false)
             .unwrap();
         let verse = metadata.get(&31).expect("2 Sam 12:31 metadata");
         let ketiv = verse
@@ -4671,7 +4691,7 @@ mod tests {
 
         // Nothing is invented for a verse with no variant reading.
         let genesis = bible
-            .chapter_reader_metadata(1, 1, true, false, false)
+            .chapter_reader_metadata(1, 1, true, false, false, false)
             .unwrap();
         assert!(
             genesis.values().all(|verse| verse.ketivs.is_empty()),
@@ -4689,7 +4709,7 @@ mod tests {
         let bible = Bible::open(data).unwrap();
 
         let metadata = bible
-            .chapter_reader_metadata(1, 1, true, false, true)
+            .chapter_reader_metadata(1, 1, true, false, true, true)
             .unwrap();
         // The one thing the two paths are *meant* to differ on is the object
         // marker's arrow. The interlinear sets its gloss under a right-to-left
@@ -4718,6 +4738,11 @@ mod tests {
                 bible.verse_name_flags(1, 1, verse).unwrap(),
                 "name flags diverged at Genesis 1:{verse}",
             );
+            assert_eq!(
+                metadata.roots.len(),
+                metadata.glosses.len(),
+                "root alignment diverged at Genesis 1:{verse}",
+            );
         }
         // Genesis 1 marks its objects with אֵת, so the arrow rule was exercised
         // rather than vacuously satisfied by a chapter that has no arrows.
@@ -4727,7 +4752,7 @@ mod tests {
         );
         assert!(
             bible
-                .chapter_reader_metadata(1, 1, false, false, false)
+                .chapter_reader_metadata(1, 1, false, false, false, false)
                 .unwrap()
                 .is_empty()
         );
@@ -4744,7 +4769,7 @@ mod tests {
 
         let text = bible.get(40, 1, 1).unwrap();
         let mut metadata = bible
-            .chapter_reader_metadata(40, 1, true, false, true)
+            .chapter_reader_metadata(40, 1, true, false, true, true)
             .unwrap();
         let verse = metadata.remove(&1).expect("Matthew 1:1 metadata");
 
@@ -4756,6 +4781,11 @@ mod tests {
             ]
         );
         assert_eq!(verse.names, vec![false; verse.glosses.len()]);
+        assert_eq!(verse.roots.len(), verse.glosses.len());
+        assert_eq!(
+            verse.roots,
+            ["כתב", "ילד", "ישוע", "משח", "בר", "דויד", "בר", "אברהם"]
+        );
         assert_eq!(bible.verse_glosses(40, 1, 1).unwrap(), verse.glosses);
     }
 
