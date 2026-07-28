@@ -19,7 +19,7 @@ log = "0.4.22"
 # wasm32-unknown-unknown. Native targets continue using the bundled build.
 rusqlite = { version = "0.39.0", features = ["bundled", "functions", "serialize"] }
 rust-embed = { version = "8.7.2", features = ["debug-embed"], optional = true }
-ruzstd = "0.8"
+ruzstd = "0.9"
 serde_json = "1.0"
 
 [dev-dependencies]
