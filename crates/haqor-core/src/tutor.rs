@@ -1002,6 +1002,12 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             created_epoch INTEGER NOT NULL,
             updated_epoch INTEGER NOT NULL,
             deleted       INTEGER NOT NULL DEFAULT 0
+         );
+         CREATE TABLE IF NOT EXISTS progress.study_state(
+            id                  INTEGER PRIMARY KEY CHECK (id = 1),
+            workspaces_json     TEXT    NOT NULL,
+            active_workspace_id TEXT,
+            updated_epoch       INTEGER NOT NULL
          );",
     )?;
 
@@ -1611,6 +1617,56 @@ impl Bible {
     }
 
     // --- pacing settings & unlock frontier ----------------------------------
+
+    /// The reader's saved Study workspaces as their versioned JSON document.
+    ///
+    /// Study remains a Flutter-owned model, so core stores the document
+    /// opaquely while `progress_sync` supplies cross-device conflict handling.
+    pub fn study_state(&self) -> rusqlite::Result<Option<(String, Option<String>, i64)>> {
+        self.conn()
+            .query_row(
+                "SELECT workspaces_json, active_workspace_id, updated_epoch
+                 FROM progress.study_state WHERE id = 1",
+                [],
+                |row| Ok((row.get(0)?, row.get(1)?, row.get(2)?)),
+            )
+            .optional()
+    }
+
+    /// Replace the saved Study document, advancing its revision even when two
+    /// writes happen during the same wall-clock second.
+    pub fn set_study_state(
+        &self,
+        workspaces_json: &str,
+        active_workspace_id: Option<&str>,
+        updated_epoch: i64,
+    ) -> rusqlite::Result<()> {
+        let parsed: serde_json::Value = serde_json::from_str(workspaces_json)
+            .map_err(|error| rusqlite::Error::ToSqlConversionFailure(Box::new(error)))?;
+        if !parsed.is_array() {
+            return Err(rusqlite::Error::InvalidParameterName(
+                "study workspaces must be a JSON array".to_string(),
+            ));
+        }
+        self.conn().execute(
+            "INSERT INTO progress.study_state(
+                 id, workspaces_json, active_workspace_id, updated_epoch)
+             VALUES (1, ?1, ?2, ?3)
+             ON CONFLICT(id) DO UPDATE SET
+                workspaces_json=excluded.workspaces_json,
+                active_workspace_id=excluded.active_workspace_id,
+                updated_epoch=MAX(
+                    excluded.updated_epoch,
+                    progress.study_state.updated_epoch + 1
+                )",
+            params![
+                workspaces_json,
+                active_workspace_id.filter(|id| !id.is_empty()),
+                updated_epoch
+            ],
+        )?;
+        Ok(())
+    }
 
     /// The persisted curriculum-pacing settings, each field falling back to its
     /// [`TutorSettings::default`] when unset.

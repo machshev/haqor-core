@@ -131,6 +131,17 @@ fn ensure_lexicon_entry_overrides(db: &Connection, schema: &str) -> rusqlite::Re
     Ok(())
 }
 
+fn ensure_study_state(db: &Connection, schema: &str) -> rusqlite::Result<()> {
+    db.execute_batch(&format!(
+        "CREATE TABLE IF NOT EXISTS {schema}.study_state(
+            id                  INTEGER PRIMARY KEY CHECK (id = 1),
+            workspaces_json     TEXT    NOT NULL,
+            active_workspace_id TEXT,
+            updated_epoch       INTEGER NOT NULL
+        )"
+    ))
+}
+
 fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     ensure_updated_epochs(db, "progress")?;
     ensure_updated_epochs(db, "sync")?;
@@ -140,6 +151,8 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     ensure_lexicon_entry_overrides(db, "sync")?;
     ensure_issue_reports(db, "progress")?;
     ensure_issue_reports(db, "sync")?;
+    ensure_study_state(db, "progress")?;
+    ensure_study_state(db, "sync")?;
     db.execute_batch("BEGIN IMMEDIATE")?;
     let result = (|| {
         // `updated_epoch` is the normal conflict resolution key. The `reps`
@@ -269,6 +282,17 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
                 updated_epoch=excluded.updated_epoch
              WHERE excluded.updated_epoch >
                    progress.lexicon_entry_overrides.updated_epoch;",
+        )?;
+        db.execute_batch(
+            "INSERT INTO progress.study_state(
+                 id, workspaces_json, active_workspace_id, updated_epoch)
+             SELECT id, workspaces_json, active_workspace_id, updated_epoch
+             FROM sync.study_state WHERE true
+             ON CONFLICT(id) DO UPDATE SET
+                workspaces_json=excluded.workspaces_json,
+                active_workspace_id=excluded.active_workspace_id,
+                updated_epoch=excluded.updated_epoch
+             WHERE excluded.updated_epoch > progress.study_state.updated_epoch;",
         )?;
         Ok(())
     })();
@@ -864,6 +888,51 @@ mod tests {
                 reader_gloss: "".to_string(),
                 updated_epoch: 200,
             }]
+        );
+
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn newer_study_document_wins() -> anyhow::Result<()> {
+        let canonical = temp_path("canonical-study.db");
+        let incoming = temp_path("incoming-study.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        for (path, json, active, updated) in [
+            (&canonical, r#"[{"id":"old"}]"#, "old", 100_i64),
+            (&incoming, r#"[{"id":"new"}]"#, "new", 200_i64),
+        ] {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            db.execute(
+                "INSERT INTO progress.study_state(
+                     id, workspaces_json, active_workspace_id, updated_epoch)
+                 VALUES (1, ?1, ?2, ?3)",
+                params![json, active, updated],
+            )?;
+        }
+
+        merge_progress_files(&canonical, &incoming)?;
+        let db = Connection::open(&canonical)?;
+        assert_eq!(
+            db.query_row(
+                "SELECT workspaces_json, active_workspace_id, updated_epoch
+                 FROM study_state WHERE id = 1",
+                [],
+                |row| Ok((
+                    row.get::<_, String>(0)?,
+                    row.get::<_, String>(1)?,
+                    row.get::<_, i64>(2)?
+                ))
+            )?,
+            (r#"[{"id":"new"}]"#.to_string(), "new".to_string(), 200)
         );
 
         let _ = fs::remove_file(&canonical);

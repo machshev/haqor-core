@@ -21,8 +21,8 @@ pub fn serve_progress(bind: SocketAddr, progress: &Path, token: &str) -> Result<
     }
     let listener =
         TcpListener::bind(bind).with_context(|| format!("binding sync server at {bind}"))?;
-    println!("Haqor progress sync listening on http://{bind}/v1/progress");
-    println!("Keep the token private: anyone with it can read and change your learning progress.");
+    println!("Haqor study and progress sync listening on http://{bind}/v1/progress");
+    println!("Keep the token private: anyone with it can read and change your learning data.");
     for stream in listener.incoming() {
         match stream {
             Ok(stream) => {
