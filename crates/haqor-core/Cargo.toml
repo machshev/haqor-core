@@ -17,7 +17,7 @@ log = "0.4.22"
 # `ffi-sqlite-wasm-rs` is enabled by rusqlite's default features and swaps the
 # native bundled SQLite C build for the browser SQLite WASM bridge on
 # wasm32-unknown-unknown. Native targets continue using the bundled build.
-rusqlite = { version = "0.39.0", features = ["bundled", "functions", "serialize"] }
+rusqlite = { version = "0.40.2", features = ["bundled", "functions", "serialize"] }
 rust-embed = { version = "8.7.2", features = ["debug-embed"], optional = true }
 ruzstd = "0.8"
 serde_json = "1.0"
