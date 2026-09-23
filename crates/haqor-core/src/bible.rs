@@ -9,6 +9,8 @@ use std::path::Path;
 
 #[derive(Debug)]
 pub struct BdbEntry {
+    /// Stable dictionary entry identifier, preserved across display normalization.
+    pub id: String,
     pub headword: String,
     pub root: String,
     pub gloss: String,
@@ -2858,7 +2860,7 @@ impl Bible {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare(
-            "SELECT word, root, gloss, body, pos, kind FROM lexicon_entry \
+            "SELECT word, root, gloss, body, pos, kind, key FROM lexicon_entry \
              WHERE cons = ?1 ORDER BY key",
         )?;
         let rows = stmt
@@ -2870,6 +2872,7 @@ impl Bible {
                     self.entry_body(row.get::<_, Option<Vec<u8>>>(3)?)?,
                     row.get::<_, Option<String>>(4)?.unwrap_or_default(),
                     row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
+                    row.get::<_, String>(6)?,
                 ))
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
@@ -2885,10 +2888,11 @@ impl Bible {
             .filter(|(w, ..)| {
                 !has_exact || normalize_hebrew_combining(&strip_accents(w)) == canonical
             })
-            .map(|(word, root, gloss, body, pos, is_root)| {
+            .map(|(word, root, gloss, body, pos, is_root, id)| {
                 display_bdb_entry(
                     &self.db,
                     BdbEntry {
+                        id,
                         headword: normalize_hebrew_combining(&word),
                         root,
                         gloss,
@@ -2914,7 +2918,7 @@ impl Bible {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare(
-            "SELECT b.word, b.root, b.gloss, b.body, b.pos, b.kind FROM lexicon_entry b \
+            "SELECT b.word, b.root, b.gloss, b.body, b.pos, b.kind, b.key FROM lexicon_entry b \
              JOIN entry_root er ON er.key = b.key \
              WHERE er.root = ?1 ORDER BY er.ord, b.key",
         )?;
@@ -2923,6 +2927,7 @@ impl Bible {
                 Ok(display_bdb_entry(
                     &self.db,
                     BdbEntry {
+                        id: row.get(6)?,
                         headword: normalize_hebrew_combining(
                             row.get::<_, Option<String>>(0)?
                                 .unwrap_or_default()
@@ -3153,22 +3158,23 @@ impl Bible {
     }
 
     /// The single BDB lexeme with this entry id (`bdb.key`), or `None` if no
-    /// row matches. Follows a Lexicon cross-reference: a `<w src>` span carries
-    /// the target entry id, and the resolved entry's `root` drives the
-    /// destination root tree the app navigates to.
+    /// row matches. Opens a lexical form or a Lexicon cross-reference: a
+    /// `<w src>` span carries the target entry id. The resolved entry's `root`
+    /// also identifies its occurrence concordance.
     pub fn hebrew_bdb_by_id(&self, key: &str) -> rusqlite::Result<Option<BdbEntry>> {
         if key.is_empty() {
             return Ok(None);
         }
         self.db
             .query_row(
-                "SELECT word, root, gloss, body, pos, kind FROM lexicon_entry \
+                "SELECT word, root, gloss, body, pos, kind, key FROM lexicon_entry \
                  WHERE key = ?1",
                 [key],
                 |row| {
                     Ok(display_bdb_entry(
                         &self.db,
                         BdbEntry {
+                            id: row.get(6)?,
                             headword: normalize_hebrew_combining(
                                 row.get::<_, Option<String>>(0)?
                                     .unwrap_or_default()
@@ -5011,6 +5017,26 @@ mod tests {
         let verb = bible.hebrew_bdb_by_id("a.ad.aa").unwrap().unwrap();
         assert!(verb.is_root);
         assert_eq!(verb.pos_category(), "verb");
+    }
+
+    #[test]
+    fn test_hebrew_bdb_list_entries_retain_navigation_ids() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        for entries in [
+            bible.hebrew_bdb_by_root("אבה").unwrap(),
+            bible.hebrew_bdb_for_surface("מִי", "").unwrap(),
+        ] {
+            assert!(!entries.is_empty());
+            for entry in entries {
+                assert!(!entry.id.is_empty());
+                let target = bible.hebrew_bdb_by_id(&entry.id).unwrap().unwrap();
+                assert_eq!(target.id, entry.id);
+                assert_eq!(target.headword, entry.headword);
+                assert_eq!(target.gloss, entry.gloss);
+                assert_eq!(target.content_json, entry.content_json);
+            }
+        }
     }
 
     #[test]
