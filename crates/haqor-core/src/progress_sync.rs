@@ -899,11 +899,13 @@ mod tests {
     fn newer_study_document_wins() -> anyhow::Result<()> {
         let canonical = temp_path("canonical-study.db");
         let incoming = temp_path("incoming-study.db");
+        // Root and form bookmarks sharing a root must survive sync intact.
+        let document = r#"[{"id":"new","name":"Study","words":[{"root":"ברא","surface":"בָּרָא"},{"root":"ברא","surface":"בָּרָא","kind":"form","note":"Perfect","color":4287679225}]}]"#;
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
         for (path, json, active, updated) in [
             (&canonical, r#"[{"id":"old"}]"#, "old", 100_i64),
-            (&incoming, r#"[{"id":"new"}]"#, "new", 200_i64),
+            (&incoming, document, "new", 200_i64),
         ] {
             let db = Connection::open_in_memory()?;
             db.execute(
@@ -932,7 +934,7 @@ mod tests {
                     row.get::<_, i64>(2)?
                 ))
             )?,
-            (r#"[{"id":"new"}]"#.to_string(), "new".to_string(), 200)
+            (document.to_string(), "new".to_string(), 200)
         );
 
         let _ = fs::remove_file(&canonical);
