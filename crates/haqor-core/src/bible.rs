@@ -98,10 +98,11 @@ impl BdbEntry {
 /// from the reverse-parse engine output and bridged to lexicon glosses
 /// via the consonantal root. Verb readings carry binyan/tense/person-gender-
 /// number; noun readings carry gender/number/state. `root` is the consonantal
-/// root used to pull the glossed root tree from `lexicon_entry`.
+/// root used to pull the glossed root tree from `lexicon_entry`. Dictionary-only
+/// headwords supply lexical details without an inflectional analysis.
 #[derive(Debug, Default, Clone, PartialEq, Eq)]
 pub struct HebrewWord {
-    /// Normalised pointed surface form (matches `data.surface.text`).
+    /// Normalised pointed corpus surface or dictionary headword.
     pub word: String,
     /// Consonantal root bridging to `lexicon_entry.root`. Empty if unresolved.
     pub root: String,
@@ -2677,9 +2678,11 @@ impl Bible {
     /// Reverse-parse a single OT surface form via the generated analyses, choosing the most
     /// plausible analysis and bridging it to a BDB gloss through the consonantal
     /// root. The input is normalised with the same [`crate::normalize_surface`]
-    /// the parse engine used, so callers may pass raw
-    /// pointed/cantillated text. Returns `None` when no surface matches or the
-    /// surface carries no verb or noun analysis. When writable app progress is
+    /// the parse engine used, so callers may pass raw pointed/cantillated text.
+    /// When no stored analysis exists, an exact dictionary headword can still
+    /// supply its root, gloss, and lexical part of speech. Inflectional fields
+    /// remain unset for that fallback. Returns `None` if neither resolves.
+    /// When writable app progress is
     /// attached, a device-local `lexicon_entries` correction is applied last so
     /// every runtime consumer sees it immediately, not only the word-info
     /// bridge.
@@ -2700,7 +2703,7 @@ impl Bible {
         let norm = crate::normalize_surface(word);
         // `surface.text` is not indexed, so resolve the surface_id once here and
         // key the (indexed) child-table lookups off it — one scan, not three.
-        let surface_id: i64 = self
+        let surface_id: Option<i64> = self
             .db
             .query_row(
                 "SELECT surface_id FROM data.surface WHERE text = ?1",
@@ -2708,8 +2711,48 @@ impl Bible {
                 |r| r.get(0),
             )
             .optional()
-            .ok()??;
-        self.hebrew_word_by_surface_id(surface_id, norm)
+            .ok()?;
+        if let Some(info) =
+            surface_id.and_then(|id| self.hebrew_word_by_surface_id(id, norm.clone()))
+        {
+            return Some(info);
+        }
+
+        // Citation forms such as יָעַד occur in BDB but not as corpus surfaces.
+        // Match the pointing exactly: a consonant-only guess could open an
+        // unrelated lexeme. Dictionary POS is known; tense/person/etc. are not.
+        let canonical = normalize_hebrew_combining(&norm);
+        let (_, root, gloss, pos) = bdb_rows(&self.db, &norm)?
+            .into_iter()
+            .find(|(word, ..)| normalize_hebrew_combining(&strip_accents(word)) == canonical)?;
+        let pos = pos
+            .split_whitespace()
+            .collect::<String>()
+            .to_ascii_lowercase();
+        let part_of_speech = if pos.starts_with("vb") {
+            Some("Verb")
+        } else if pos.starts_with('n') {
+            Some("Noun")
+        } else if pos.starts_with("adj") {
+            Some("Adjective")
+        } else if pos.starts_with("adv") {
+            Some("Adverb")
+        } else {
+            None
+        };
+        let mut info = HebrewWord {
+            word: norm,
+            root,
+            gloss,
+            part_of_speech: part_of_speech.map(str::to_string),
+            is_name: name_pos(&pos),
+            ..HebrewWord::default()
+        };
+        if let Some((root, gloss, _)) = self.lexicon_entry_override(&info.word).ok().flatten() {
+            info.root = root;
+            info.gloss = gloss;
+        }
+        Some(info)
     }
 
     /// Resolve one concrete OT token. Where the generated database contains an
@@ -4371,6 +4414,56 @@ mod tests {
             !d.contains(&"to say".to_string()),
             "must not include its own gloss"
         );
+    }
+
+    #[test]
+    fn test_hebrew_word_info_unattested_dictionary_headword() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let word = "יָעַד";
+        let surfaces: i64 = bible
+            .db
+            .query_row(
+                "SELECT COUNT(*) FROM data.surface WHERE text = ?1",
+                [word],
+                |r| r.get(0),
+            )
+            .unwrap();
+        assert_eq!(
+            surfaces, 0,
+            "regression requires an unattested citation form"
+        );
+        let info = bible
+            .hebrew_word_info(word)
+            .expect("dictionary headword resolves");
+        assert_eq!(info.word, word);
+        assert_eq!(info.root, "יעד");
+        assert_eq!(info.gloss, "appoint");
+        assert_eq!(info.part_of_speech.as_deref(), Some("Verb"));
+        assert_eq!(inflected_gloss(&info), "appoint");
+        assert!(info.form.is_none() && info.tense.is_none() && info.person.is_none());
+        assert!(info.gender.is_none() && info.number.is_none() && info.state.is_none());
+        assert!(info.prefix.is_none() && info.obj_suffix.is_none() && !info.vav_con);
+        assert!(!bible.hebrew_bdb_by_root(&info.root).unwrap().is_empty());
+        assert!(bible.hebrew_surface_occurrences(word).unwrap().is_empty());
+        assert!(
+            !bible
+                .hebrew_root_occurrences_detailed(&info.root)
+                .unwrap()
+                .is_empty()
+        );
+        assert_eq!(bible.hebrew_word_info("יָעַ֣ד"), Some(info));
+    }
+
+    #[test]
+    fn test_hebrew_word_info_dictionary_fallback_requires_exact_pointing() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        // Same consonants as יָעַד but not a stored surface or dictionary form.
+        assert!(bible.hebrew_word_info("יֻעֻד").is_none());
+        assert!(bible.hebrew_word_info("").is_none());
+        // Citation fallback must not make a mismatched verse token resolve.
+        assert!(bible.hebrew_word_info_at("יָעַד", 1, 1, 1, 1).is_none());
     }
 
     #[test]
