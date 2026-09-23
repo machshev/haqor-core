@@ -899,8 +899,8 @@ mod tests {
     fn newer_study_document_wins() -> anyhow::Result<()> {
         let canonical = temp_path("canonical-study.db");
         let incoming = temp_path("incoming-study.db");
-        // Root and form bookmarks sharing a root must survive sync intact.
-        let document = r#"[{"id":"new","name":"Study","words":[{"root":"ברא","surface":"בָּרָא"},{"root":"ברא","surface":"בָּרָא","kind":"form","note":"Perfect","color":4287679225}]}]"#;
+        // Word bookmarks and chapter/verse/phrase references survive sync intact.
+        let document = r#"[{"id":"new","name":"Study","words":[{"root":"ברא","surface":"בָּרָא"},{"root":"ברא","surface":"בָּרָא","kind":"form","note":"Perfect","color":4287679225}],"passages":[{"book":0,"chapter":1,"verse":1,"wholeChapter":true},{"book":0,"chapter":1,"verse":2,"endVerse":5},{"book":0,"chapter":1,"verse":3,"startWord":1,"endWord":3},{"book":0,"chapter":1,"verse":4,"endChapter":2,"endVerse":2,"startWord":2,"endWord":0,"note":"Phrase","group":"g","order":3,"color":4287679225}]}]"#;
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
         for (path, json, active, updated) in [
