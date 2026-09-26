@@ -735,6 +735,26 @@ pub struct QuotationFilter {
     pub book: Option<u8>,
     pub first_chapter: Option<u8>,
     pub last_chapter: Option<u8>,
+    /// List in the order of the filtered book's verses (strongest first within
+    /// a verse) instead of by global rank. Needs `book`.
+    pub by_reference: bool,
+}
+
+/// The column of the side of a quotation `book` belongs to.
+fn quotation_side(book: u8) -> &'static str {
+    if book >= 40 { "nt_ref" } else { "ot_ref" }
+}
+
+/// SQL condition (binding `?1`, `?2`) and its bounds for a [`QuotationFilter`].
+fn quotation_condition(filter: QuotationFilter) -> (String, i64, i64) {
+    match filter.book {
+        Some(book) => (
+            format!("{} BETWEEN ?1 AND ?2", quotation_side(book)),
+            pack_ref(book, filter.first_chapter.unwrap_or(0), 0),
+            pack_ref(book, filter.last_chapter.unwrap_or(255), 255),
+        ),
+        None => ("?1 <= ?2".to_string(), 0, 0),
+    }
 }
 
 #[derive(Debug)]
@@ -3737,7 +3757,7 @@ impl Bible {
         chapter: u8,
         verse: u8,
     ) -> rusqlite::Result<Vec<Quotation>> {
-        let side = if book >= 40 { "nt_ref" } else { "ot_ref" };
+        let side = quotation_side(book);
         self.query_quotations(
             &format!("WHERE {side} = ?1 ORDER BY quote_id"),
             &[&pack_ref(book, chapter, verse)],
@@ -3752,7 +3772,7 @@ impl Bible {
         book: u8,
         chapter: u8,
     ) -> rusqlite::Result<Vec<(u8, u32)>> {
-        let side = if book >= 40 { "nt_ref" } else { "ot_ref" };
+        let side = quotation_side(book);
         let mut stmt = self.db.prepare(&format!(
             "SELECT {side} & 255, COUNT(*) FROM data.quotation \
              WHERE {side} BETWEEN ?1 AND ?2 GROUP BY {side} ORDER BY {side}"
@@ -3773,16 +3793,29 @@ impl Bible {
         limit: u32,
         offset: u32,
     ) -> rusqlite::Result<Vec<Quotation>> {
-        let Some(book) = filter.book else {
-            return self
-                .query_quotations("ORDER BY quote_id LIMIT ?1 OFFSET ?2", &[&limit, &offset]);
+        let (condition, low, high) = quotation_condition(filter);
+        // Reference order walks the filtered side's verses, strongest link
+        // first within a verse; without a book there is no side to walk.
+        let order = match filter.book {
+            Some(book) if filter.by_reference => {
+                format!("{} , quote_id", quotation_side(book))
+            }
+            _ => "quote_id".to_string(),
         };
-        let side = if book >= 40 { "nt_ref" } else { "ot_ref" };
-        let low = pack_ref(book, filter.first_chapter.unwrap_or(0), 0);
-        let high = pack_ref(book, filter.last_chapter.unwrap_or(255), 255);
         self.query_quotations(
-            &format!("WHERE {side} BETWEEN ?1 AND ?2 ORDER BY quote_id LIMIT ?3 OFFSET ?4"),
+            &format!("WHERE {condition} ORDER BY {order} LIMIT ?3 OFFSET ?4"),
             &[&low, &high, &limit, &offset],
+        )
+    }
+
+    /// How many quotations [`Bible::quotations`] would list for `filter`
+    /// without a limit, for a caller paging through them.
+    pub fn quotation_count(&self, filter: QuotationFilter) -> rusqlite::Result<u32> {
+        let (condition, low, high) = quotation_condition(filter);
+        self.db.query_row(
+            &format!("SELECT COUNT(*) FROM data.quotation WHERE {condition}"),
+            [low, high],
+            |row| row.get(0),
         )
     }
 
@@ -4038,6 +4071,7 @@ mod tests {
             book: Some(40),
             first_chapter: Some(2),
             last_chapter: Some(4),
+            ..Default::default()
         };
         let matthew = bible.quotations(filter, 1000, 0).unwrap();
         assert!(!matthew.is_empty());
@@ -4047,6 +4081,26 @@ mod tests {
                 .all(|q| q.nt.book == 40 && (2..=4).contains(&q.nt.chapter))
         );
         assert!(matthew.windows(2).all(|w| w[0].rank < w[1].rank));
+        assert_eq!(
+            bible.quotation_count(filter).unwrap() as usize,
+            matthew.len()
+        );
+
+        // Reference order walks the verses, strongest first within each.
+        let in_order = QuotationFilter {
+            by_reference: true,
+            ..filter
+        };
+        let walked = bible.quotations(in_order, 1000, 0).unwrap();
+        assert_eq!(walked.len(), matthew.len());
+        assert!(walked.windows(2).all(|w| {
+            let (a, b) = (&w[0].nt, &w[1].nt);
+            (a.chapter, a.verse) < (b.chapter, b.verse)
+                || ((a.chapter, a.verse) == (b.chapter, b.verse) && w[0].rank < w[1].rank)
+        }));
+        let paged = bible.quotations(in_order, 3, 2).unwrap();
+        assert_eq!(paged, walked[2..5]);
+        assert!(bible.quotation_count(QuotationFilter::default()).unwrap() > 1000);
         let psalms = QuotationFilter {
             book: Some(27),
             ..Default::default()
