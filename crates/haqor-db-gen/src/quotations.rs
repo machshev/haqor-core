@@ -19,7 +19,7 @@
 
 use std::collections::{HashMap, HashSet};
 
-use anyhow::Result;
+use anyhow::{Context, Result, bail};
 use haqor_core::transliterate::lookup_key;
 use log::info;
 use rusqlite::{Connection, params};
@@ -41,23 +41,105 @@ CREATE INDEX idx_quotation_ot ON quotation(ot_ref);
 CREATE INDEX idx_quotation_nt ON quotation(nt_ref);
 ";
 
-/// Keys rarer than this (in weight) are ignored when proposing candidates;
-/// they still count once the pair is aligned.
-const CANDIDATE_MIN_WEIGHT: f32 = 1.5;
-/// A pair needs this many distinct shared candidate keys to be aligned at all.
-const CANDIDATE_MIN_SHARED: usize = 2;
-/// Keys below this weight never contribute a match (particles, pronouns).
-const MATCH_MIN_WEIGHT: f32 = 0.5;
-/// Cost of each word the alignment skips on either side.
-const GAP_PENALTY: f32 = 0.6;
-/// Added to a match that directly continues the previous one on both sides.
-const CONTIGUITY_BONUS: f32 = 1.0;
-/// Minimum local-alignment score for a pair to be stored.
-const MIN_SCORE: f32 = 7.0;
-/// Minimum number of aligned word pairs for a pair to be stored.
-const MIN_MATCHED: usize = 3;
-/// At most this many OT verses are kept per NT verse.
-const MAX_PER_NT_VERSE: usize = 8;
+/// The matcher's tuning knobs. [`Default`] is what `gen-runtime` ships;
+/// `db gen-quotes --set NAME=VALUE` / `--sweep NAME=V1,V2,…` try others
+/// against the known quotations without a rebuild (see [`MatcherParams::set`]
+/// for the names).
+#[derive(Debug, Clone, Copy, PartialEq)]
+pub struct MatcherParams {
+    /// Keys rarer than this (in weight) are ignored when proposing candidates;
+    /// they still count once the pair is aligned.
+    pub candidate_min_weight: f32,
+    /// A pair needs this many distinct shared candidate keys to be aligned.
+    pub candidate_min_shared: usize,
+    /// Keys below this weight never contribute a match (particles, pronouns).
+    pub match_min_weight: f32,
+    /// Cost of each word the alignment skips on either side.
+    pub gap_penalty: f32,
+    /// Added to a match that directly continues the previous one on both sides.
+    pub contiguity_bonus: f32,
+    /// Both matches of a contiguous run must weigh at least this for the run to
+    /// earn [`Self::contiguity_bonus`]: a particle between two coincidental
+    /// matches does not make them a phrase.
+    pub contiguity_min_weight: f32,
+    /// Minimum local-alignment score for a pair to be stored.
+    pub min_score: f32,
+    /// Minimum number of aligned word pairs for a pair to be stored.
+    pub min_matched: usize,
+    /// Minimum number of distinct keys of at least [`Self::strong_weight`]
+    /// among the aligned words.
+    pub min_strong: usize,
+    /// What counts as a strong key for [`Self::min_strong`].
+    pub strong_weight: f32,
+    /// At most this many OT verses are kept per NT verse.
+    pub max_per_nt_verse: usize,
+}
+
+impl Default for MatcherParams {
+    fn default() -> Self {
+        MatcherParams {
+            candidate_min_weight: 1.5,
+            candidate_min_shared: 2,
+            match_min_weight: 0.5,
+            gap_penalty: 0.6,
+            contiguity_bonus: 1.0,
+            contiguity_min_weight: 0.0,
+            min_score: 7.0,
+            min_matched: 3,
+            min_strong: 0,
+            strong_weight: 3.0,
+            max_per_nt_verse: 8,
+        }
+    }
+}
+
+impl MatcherParams {
+    pub const NAMES: &[&str] = &[
+        "candidate_min_weight",
+        "candidate_min_shared",
+        "match_min_weight",
+        "gap_penalty",
+        "contiguity_bonus",
+        "contiguity_min_weight",
+        "min_score",
+        "min_matched",
+        "min_strong",
+        "strong_weight",
+        "max_per_nt_verse",
+    ];
+
+    /// Set one knob by its field name.
+    pub fn set(&mut self, name: &str, value: &str) -> Result<()> {
+        let float = || -> Result<f32> {
+            value
+                .parse()
+                .with_context(|| format!("{name}: bad number {value:?}"))
+        };
+        let count = || -> Result<usize> {
+            value
+                .parse()
+                .with_context(|| format!("{name}: bad count {value:?}"))
+        };
+        match name {
+            "candidate_min_weight" => self.candidate_min_weight = float()?,
+            "candidate_min_shared" => self.candidate_min_shared = count()?,
+            "match_min_weight" => self.match_min_weight = float()?,
+            "gap_penalty" => self.gap_penalty = float()?,
+            "contiguity_bonus" => self.contiguity_bonus = float()?,
+            "contiguity_min_weight" => self.contiguity_min_weight = float()?,
+            "min_score" => self.min_score = float()?,
+            "min_matched" => self.min_matched = count()?,
+            "min_strong" => self.min_strong = count()?,
+            "strong_weight" => self.strong_weight = float()?,
+            "max_per_nt_verse" => self.max_per_nt_verse = count()?,
+            _ => bail!(
+                "unknown matcher parameter {name:?}; known: {}",
+                Self::NAMES.join(", ")
+            ),
+        }
+        Ok(())
+    }
+}
 
 /// Common Aramaic words whose Hebrew equivalent is a different root or an
 /// irregular spelling. The Peshitta's quotations use these where the Hebrew
@@ -171,6 +253,42 @@ pub const KNOWN_QUOTATIONS: &[KnownQuotation] = &[
     ((48, 3, 13), (5, 21, 23)),    // Gal 3:13 / Deut 21:23
     ((58, 1, 5), (27, 2, 7)),      // Heb 1:5 / Ps 2:7
     ((60, 1, 24), (12, 40, 6)),    // 1Pet 1:24 / Isa 40:6
+    ((40, 4, 15), (12, 8, 23)),    // Mt 4:15 / Isa 8:23
+    ((40, 12, 18), (12, 42, 1)),   // Mt 12:18 / Isa 42:1
+    ((40, 12, 20), (12, 42, 3)),   // Mt 12:20 / Isa 42:3
+    ((40, 13, 35), (27, 78, 2)),   // Mt 13:35 / Ps 78:2
+    ((40, 15, 8), (12, 29, 13)),   // Mt 15:8 / Isa 29:13
+    ((40, 19, 5), (1, 2, 24)),     // Mt 19:5 / Gen 2:24
+    ((40, 21, 13), (12, 56, 7)),   // Mt 21:13 / Isa 56:7
+    ((40, 26, 31), (25, 13, 7)),   // Mt 26:31 / Zech 13:7
+    ((40, 27, 46), (27, 22, 2)),   // Mt 27:46 / Ps 22:2
+    ((42, 23, 46), (27, 31, 6)),   // Lk 23:46 / Ps 31:6
+    ((43, 1, 23), (12, 40, 3)),    // Jn 1:23 / Isa 40:3
+    ((43, 2, 17), (27, 69, 10)),   // Jn 2:17 / Ps 69:10
+    ((43, 12, 38), (12, 53, 1)),   // Jn 12:38 / Isa 53:1
+    ((43, 13, 18), (27, 41, 10)),  // Jn 13:18 / Ps 41:10
+    ((44, 2, 25), (27, 16, 8)),    // Acts 2:25 / Ps 16:8
+    ((44, 2, 34), (27, 110, 1)),   // Acts 2:34 / Ps 110:1
+    ((44, 8, 32), (12, 53, 7)),    // Acts 8:32 / Isa 53:7
+    ((45, 9, 29), (12, 1, 9)),     // Rom 9:29 / Isa 1:9
+    ((45, 11, 8), (5, 29, 3)),     // Rom 11:8 / Deut 29:3
+    ((46, 15, 54), (12, 25, 8)),   // 1Cor 15:54 / Isa 25:8
+    ((48, 4, 27), (12, 54, 1)),    // Gal 4:27 / Isa 54:1
+    ((58, 3, 10), (27, 95, 10)),   // Heb 3:10 / Ps 95:10
+    ((58, 8, 10), (13, 31, 33)),   // Heb 8:10 / Jer 31:33
+    ((58, 11, 12), (1, 22, 17)),   // Heb 11:12 / Gen 22:17
+    ((59, 2, 23), (1, 15, 6)),     // Jas 2:23 / Gen 15:6
+    ((60, 2, 6), (12, 28, 16)),    // 1Pet 2:6 / Isa 28:16
+    ((60, 2, 22), (12, 53, 9)),    // 1Pet 2:22 / Isa 53:9
+];
+
+/// Pairs the matcher has stored that share only coincidences of spelling —
+/// no quotation or allusion. Each was checked with `gen-quotes --explain`;
+/// a tuning change should not bring them back.
+pub const KNOWN_FALSE: &[KnownQuotation] = &[
+    // אֲכַלְכֵּל "sustain" / כוילא "ark" (both כול), טַף "little ones" / טופנא
+    // "flood" (both טפ), bridged by אֶת.
+    ((42, 17, 27), (1, 50, 21)), // Lk 17:27 / Gen 50:21
 ];
 
 /// A tokenised verse: its packed ref and one key set per word position.
@@ -408,155 +526,214 @@ fn idf(verses: &[Verse], n_keys: usize) -> Vec<f32> {
 pub struct Alignment {
     pub score: f32,
     pub pairs: Vec<(i64, i64)>,
+    /// Distinct keys of at least [`MatcherParams::strong_weight`] among the
+    /// aligned words.
+    pub strong: usize,
 }
 
-/// Smith–Waterman local alignment over word key sets.
-fn align(ot: &Verse, nt: &Verse, weight: &[f32]) -> Alignment {
-    let (m, n) = (ot.words.len(), nt.words.len());
-    let match_weight = |i: usize, j: usize| -> f32 {
-        let (a, b) = (&ot.words[i].1, &nt.words[j].1);
-        let mut best = 0.0f32;
+/// Both testaments tokenised and weighted: everything the matcher reads,
+/// loaded once so a sweep can try many [`MatcherParams`] against it.
+pub struct Corpus {
+    ot: Vec<Verse>,
+    nt: Vec<Verse>,
+    weight: Vec<f32>,
+    names: Vec<String>,
+}
+
+impl Corpus {
+    pub fn load(db: &Connection) -> Result<Self> {
+        let mut keys = Keys::default();
+        let ot = load_ot(db, &mut keys)?;
+        let nt = load_nt(db, &keys)?;
+        let n_keys = keys.ids.len();
+        let (idf_ot, idf_nt) = (idf(&ot, n_keys), idf(&nt, n_keys));
+        let weight = idf_ot.iter().zip(&idf_nt).map(|(a, b)| a.min(*b)).collect();
+        let mut names = vec![String::new(); n_keys];
+        for (key, id) in keys.ids {
+            names[id as usize] = key;
+        }
+        info!(
+            "Quotations: {} OT verses, {} NT verses, {n_keys} root keys",
+            ot.len(),
+            nt.len()
+        );
+        Ok(Corpus {
+            ot,
+            nt,
+            weight,
+            names,
+        })
+    }
+
+    /// The best shared key of an OT and an NT word, if it may match at all.
+    fn shared_key(&self, a: &[u32], b: &[u32], params: &MatcherParams) -> Option<u32> {
+        let mut best: Option<u32> = None;
         let (mut x, mut y) = (0, 0);
         while x < a.len() && y < b.len() {
             match a[x].cmp(&b[y]) {
                 std::cmp::Ordering::Less => x += 1,
                 std::cmp::Ordering::Greater => y += 1,
                 std::cmp::Ordering::Equal => {
-                    best = best.max(weight[a[x] as usize]);
+                    let k = a[x];
+                    if best.is_none_or(|b| self.weight[k as usize] > self.weight[b as usize]) {
+                        best = Some(k);
+                    }
                     x += 1;
                     y += 1;
                 }
             }
         }
-        if best >= MATCH_MIN_WEIGHT { best } else { 0.0 }
-    };
-    let w = n + 1;
-    let mut h = vec![0.0f32; (m + 1) * w];
-    let mut matched = vec![false; (m + 1) * w];
-    let (mut best, mut best_at) = (0.0f32, (0, 0));
-    for i in 1..=m {
-        for j in 1..=n {
-            let s = match_weight(i - 1, j - 1);
-            // A match directly continuing the previous one is a phrase, not a
-            // coincidence of scattered words.
-            let run = if matched[(i - 1) * w + j - 1] {
-                CONTIGUITY_BONUS
-            } else {
-                0.0
-            };
-            let diag = if s > 0.0 {
-                h[(i - 1) * w + j - 1] + s + run
-            } else {
-                0.0
-            };
-            let up = h[(i - 1) * w + j] - GAP_PENALTY;
-            let left = h[i * w + j - 1] - GAP_PENALTY;
-            let cell = diag.max(up).max(left).max(0.0);
-            h[i * w + j] = cell;
-            matched[i * w + j] = s > 0.0 && cell == diag;
-            if cell > best {
-                best = cell;
-                best_at = (i, j);
+        best.filter(|&k| self.weight[k as usize] >= params.match_min_weight)
+    }
+
+    /// Smith–Waterman local alignment over word key sets.
+    fn align(&self, ot: &Verse, nt: &Verse, params: &MatcherParams) -> Alignment {
+        let (m, n) = (ot.words.len(), nt.words.len());
+        let w = n + 1;
+        let mut h = vec![0.0f32; (m + 1) * w];
+        // The key a cell's match was made on, where the cell is a match.
+        let mut matched: Vec<Option<u32>> = vec![None; (m + 1) * w];
+        let (mut best, mut best_at) = (0.0f32, (0, 0));
+        for i in 1..=m {
+            for j in 1..=n {
+                let key = self.shared_key(&ot.words[i - 1].1, &nt.words[j - 1].1, params);
+                let s = key.map_or(0.0, |k| self.weight[k as usize]);
+                // A match directly continuing the previous one is a phrase, not a
+                // coincidence of scattered words — unless either is a particle.
+                let run = match (matched[(i - 1) * w + j - 1], key) {
+                    (Some(prev), Some(_))
+                        if self.weight[prev as usize] >= params.contiguity_min_weight
+                            && s >= params.contiguity_min_weight =>
+                    {
+                        params.contiguity_bonus
+                    }
+                    _ => 0.0,
+                };
+                let diag = if key.is_some() {
+                    h[(i - 1) * w + j - 1] + s + run
+                } else {
+                    0.0
+                };
+                let up = h[(i - 1) * w + j] - params.gap_penalty;
+                let left = h[i * w + j - 1] - params.gap_penalty;
+                let cell = diag.max(up).max(left).max(0.0);
+                h[i * w + j] = cell;
+                matched[i * w + j] = key.filter(|_| cell == diag);
+                if cell > best {
+                    best = cell;
+                    best_at = (i, j);
+                }
             }
         }
+        let mut pairs = Vec::new();
+        let mut strong = HashSet::new();
+        let (mut i, mut j) = best_at;
+        while i > 0 && j > 0 && h[i * w + j] > 0.0 {
+            if let Some(k) = matched[i * w + j] {
+                pairs.push((ot.words[i - 1].0, nt.words[j - 1].0));
+                if self.weight[k as usize] >= params.strong_weight {
+                    strong.insert(k);
+                }
+                i -= 1;
+                j -= 1;
+            } else if h[(i - 1) * w + j] - params.gap_penalty == h[i * w + j] {
+                i -= 1;
+            } else {
+                j -= 1;
+            }
+        }
+        pairs.reverse();
+        Alignment {
+            score: best,
+            pairs,
+            strong: strong.len(),
+        }
     }
-    let mut pairs = Vec::new();
-    let (mut i, mut j) = best_at;
-    while i > 0 && j > 0 && h[i * w + j] > 0.0 {
-        if matched[i * w + j] {
-            pairs.push((ot.words[i - 1].0, nt.words[j - 1].0));
-            i -= 1;
-            j -= 1;
-        } else if h[(i - 1) * w + j] - GAP_PENALTY == h[i * w + j] {
-            i -= 1;
+
+    /// Every stored-quality pair under `params`, strongest first.
+    pub fn find(&self, params: &MatcherParams) -> Vec<Found> {
+        let weight = &self.weight;
+        let mut postings: Vec<Vec<u32>> = vec![Vec::new(); weight.len()];
+        for (v, verse) in self.ot.iter().enumerate() {
+            for k in distinct_keys(verse) {
+                if weight[k as usize] >= params.candidate_min_weight {
+                    postings[k as usize].push(v as u32);
+                }
+            }
+        }
+
+        let mut found: Vec<Found> = Vec::new();
+        let mut shared = vec![0u16; self.ot.len()];
+        let mut touched: Vec<u32> = Vec::new();
+        for verse in &self.nt {
+            for k in distinct_keys(verse) {
+                for &v in &postings[k as usize] {
+                    if shared[v as usize] == 0 {
+                        touched.push(v);
+                    }
+                    shared[v as usize] += 1;
+                }
+            }
+            let mut here: Vec<Found> = Vec::new();
+            for &v in &touched {
+                if shared[v as usize] as usize >= params.candidate_min_shared {
+                    let ot = &self.ot[v as usize];
+                    let alignment = self.align(ot, verse, params);
+                    if alignment.score >= params.min_score
+                        && alignment.pairs.len() >= params.min_matched
+                        && alignment.strong >= params.min_strong
+                    {
+                        here.push(Found {
+                            ot_ref: ot.reference,
+                            nt_ref: verse.reference,
+                            alignment,
+                        });
+                    }
+                }
+                shared[v as usize] = 0;
+            }
+            touched.clear();
+            here.sort_by(|a, b| b.alignment.score.total_cmp(&a.alignment.score));
+            here.truncate(params.max_per_nt_verse);
+            found.extend(here);
+        }
+        found.sort_by(|a, b| {
+            b.alignment
+                .score
+                .total_cmp(&a.alignment.score)
+                .then(a.nt_ref.cmp(&b.nt_ref))
+                .then(a.ot_ref.cmp(&b.ot_ref))
+        });
+        found
+    }
+
+    fn verse(&self, reference: i64) -> Option<&Verse> {
+        let verses = if reference >> 16 >= 40 {
+            &self.nt
         } else {
-            j -= 1;
-        }
+            &self.ot
+        };
+        verses.iter().find(|v| v.reference == reference)
     }
-    pairs.reverse();
-    Alignment { score: best, pairs }
 }
 
-/// A stored quotation before it is ranked.
-struct Found {
-    ot_ref: i64,
-    nt_ref: i64,
-    alignment: Alignment,
+fn distinct_keys(verse: &Verse) -> HashSet<u32> {
+    verse
+        .words
+        .iter()
+        .flat_map(|(_, k)| k.iter().copied())
+        .collect()
 }
 
-/// Rebuild the `quotation` table of a runtime database in place. Returns the
-/// number of verse pairs written.
-pub fn build_quotations(db: &Connection) -> Result<usize> {
-    let mut keys = Keys::default();
-    let ot = load_ot(db, &mut keys)?;
-    let nt = load_nt(db, &keys)?;
-    let n_keys = keys.ids.len();
-    let (idf_ot, idf_nt) = (idf(&ot, n_keys), idf(&nt, n_keys));
-    let weight: Vec<f32> = idf_ot.iter().zip(&idf_nt).map(|(a, b)| a.min(*b)).collect();
-    info!(
-        "Quotations: {} OT verses, {} NT verses, {n_keys} root keys",
-        ot.len(),
-        nt.len()
-    );
+/// A quotation the matcher found, before it is stored.
+pub struct Found {
+    pub ot_ref: i64,
+    pub nt_ref: i64,
+    pub alignment: Alignment,
+}
 
-    let mut postings: Vec<Vec<u32>> = vec![Vec::new(); n_keys];
-    for (v, verse) in ot.iter().enumerate() {
-        let distinct: HashSet<u32> = verse
-            .words
-            .iter()
-            .flat_map(|(_, k)| k.iter().copied())
-            .collect();
-        for k in distinct {
-            if weight[k as usize] >= CANDIDATE_MIN_WEIGHT {
-                postings[k as usize].push(v as u32);
-            }
-        }
-    }
-
-    let mut found: Vec<Found> = Vec::new();
-    let mut shared = vec![0u16; ot.len()];
-    let mut touched: Vec<u32> = Vec::new();
-    for verse in &nt {
-        let distinct: HashSet<u32> = verse
-            .words
-            .iter()
-            .flat_map(|(_, k)| k.iter().copied())
-            .collect();
-        for k in distinct {
-            for &v in &postings[k as usize] {
-                if shared[v as usize] == 0 {
-                    touched.push(v);
-                }
-                shared[v as usize] += 1;
-            }
-        }
-        let mut here: Vec<Found> = Vec::new();
-        for &v in &touched {
-            if shared[v as usize] as usize >= CANDIDATE_MIN_SHARED {
-                let alignment = align(&ot[v as usize], verse, &weight);
-                if alignment.score >= MIN_SCORE && alignment.pairs.len() >= MIN_MATCHED {
-                    here.push(Found {
-                        ot_ref: ot[v as usize].reference,
-                        nt_ref: verse.reference,
-                        alignment,
-                    });
-                }
-            }
-            shared[v as usize] = 0;
-        }
-        touched.clear();
-        here.sort_by(|a, b| b.alignment.score.total_cmp(&a.alignment.score));
-        here.truncate(MAX_PER_NT_VERSE);
-        found.extend(here);
-    }
-    found.sort_by(|a, b| {
-        b.alignment
-            .score
-            .total_cmp(&a.alignment.score)
-            .then(a.nt_ref.cmp(&b.nt_ref))
-            .then(a.ot_ref.cmp(&b.ot_ref))
-    });
-
+/// Replace the `quotation` table with `found`, ranked in the order given.
+fn write_quotations(db: &Connection, found: &[Found]) -> Result<()> {
     let tx = db.unchecked_transaction()?;
     tx.execute_batch(SCHEMA)?;
     {
@@ -581,28 +758,16 @@ pub fn build_quotations(db: &Connection) -> Result<usize> {
         }
     }
     tx.commit()?;
-    info!("Quotations: wrote {} verse pairs", found.len());
-    Ok(found.len())
+    Ok(())
 }
 
-/// Rank of each [`KNOWN_QUOTATIONS`] pair in a built `quotation` table (`None`
-/// when it was not found), for measuring recall.
-pub fn known_quotation_ranks(db: &Connection) -> Result<Vec<(KnownQuotation, Option<i64>)>> {
-    let mut stmt =
-        db.prepare("SELECT MIN(quote_id) FROM quotation WHERE nt_ref = ?1 AND ot_ref = ?2")?;
-    KNOWN_QUOTATIONS
-        .iter()
-        .map(|&(nt, ot)| {
-            let rank: Option<i64> = stmt.query_row(
-                params![
-                    pack_ref(nt.0.into(), nt.1.into(), nt.2.into()),
-                    pack_ref(ot.0.into(), ot.1.into(), ot.2.into())
-                ],
-                |row| row.get(0),
-            )?;
-            Ok(((nt, ot), rank))
-        })
-        .collect()
+/// Rebuild the `quotation` table of a runtime database in place with the
+/// shipped parameters. Returns the number of verse pairs written.
+pub fn build_quotations(db: &Connection) -> Result<usize> {
+    let found = Corpus::load(db)?.find(&MatcherParams::default());
+    write_quotations(db, &found)?;
+    info!("Quotations: wrote {} verse pairs", found.len());
+    Ok(found.len())
 }
 
 const NT_BOOKS: [&str; 27] = [
@@ -646,67 +811,211 @@ pub fn ref_label(reference: i64) -> String {
     format!("{name} {chapter}:{verse}")
 }
 
-/// `db gen-quotes`: rebuild the `quotation` table of `path` in place, print
-/// the strongest `top` pairs and the recall on [`KNOWN_QUOTATIONS`].
-pub fn gen_quotes(path: &std::path::Path, top: usize) -> Result<()> {
+fn pack(r: Reference) -> i64 {
+    pack_ref(r.0.into(), r.1.into(), r.2.into())
+}
+
+/// How a parameter set scores against the curated lists.
+pub struct Evaluation {
+    /// Verse pairs stored.
+    pub pairs: usize,
+    /// Rank of each [`KNOWN_QUOTATIONS`] pair, `None` when missed.
+    pub known: Vec<(KnownQuotation, Option<usize>)>,
+    /// [`KNOWN_FALSE`] pairs that were stored anyway.
+    pub false_found: Vec<KnownQuotation>,
+}
+
+impl Evaluation {
+    pub fn of(found: &[Found]) -> Self {
+        let rank: HashMap<(i64, i64), usize> = found
+            .iter()
+            .enumerate()
+            .map(|(i, f)| ((f.nt_ref, f.ot_ref), i + 1))
+            .collect();
+        Evaluation {
+            pairs: found.len(),
+            known: KNOWN_QUOTATIONS
+                .iter()
+                .map(|&(nt, ot)| ((nt, ot), rank.get(&(pack(nt), pack(ot))).copied()))
+                .collect(),
+            false_found: KNOWN_FALSE
+                .iter()
+                .copied()
+                .filter(|&(nt, ot)| rank.contains_key(&(pack(nt), pack(ot))))
+                .collect(),
+        }
+    }
+
+    pub fn known_found(&self) -> usize {
+        self.known.iter().filter(|(_, r)| r.is_some()).count()
+    }
+
+    /// Known quotations ranked within the top `n`.
+    pub fn known_within(&self, n: usize) -> usize {
+        self.known
+            .iter()
+            .filter(|(_, r)| r.is_some_and(|r| r <= n))
+            .count()
+    }
+
+    /// Median rank of the known quotations that were found.
+    pub fn median_rank(&self) -> Option<usize> {
+        let mut ranks: Vec<usize> = self.known.iter().filter_map(|(_, r)| *r).collect();
+        ranks.sort_unstable();
+        ranks.get(ranks.len() / 2).copied()
+    }
+
+    fn summary_header() -> String {
+        format!(
+            "{:>7}  {:>7}  {:>8}  {:>8}  {:>7}  {:>6}",
+            "pairs", "known", "top-500", "top-2000", "median", "false"
+        )
+    }
+
+    fn summary(&self) -> String {
+        format!(
+            "{:>7}  {:>3}/{:<3}  {:>8}  {:>8}  {:>7}  {:>3}/{:<2}",
+            self.pairs,
+            self.known_found(),
+            self.known.len(),
+            self.known_within(500),
+            self.known_within(2000),
+            self.median_rank().map_or("-".into(), |r| r.to_string()),
+            self.false_found.len(),
+            KNOWN_FALSE.len(),
+        )
+    }
+}
+
+/// Options of `db gen-quotes`.
+#[derive(Debug, Default)]
+pub struct GenQuotesOptions {
+    /// `NAME=VALUE` overrides of the shipped [`MatcherParams`].
+    pub set: Vec<String>,
+    /// `NAME=V1,V2,…`: evaluate each value in turn instead of building.
+    pub sweep: Option<String>,
+    /// Evaluate without writing the table.
+    pub dry_run: bool,
+    /// How many of the top-ranked pairs to print.
+    pub top: usize,
+}
+
+fn params_from(set: &[String]) -> Result<MatcherParams> {
+    let mut params = MatcherParams::default();
+    for assignment in set {
+        let (name, value) = assignment
+            .split_once('=')
+            .with_context(|| format!("expected NAME=VALUE, got {assignment:?}"))?;
+        params.set(name.trim(), value.trim())?;
+    }
+    Ok(params)
+}
+
+/// `db gen-quotes`: find the quotations with the shipped (or overridden)
+/// parameters, report them against the curated lists, and rebuild the
+/// `quotation` table of `path` in place unless it is a dry run or a sweep.
+pub fn gen_quotes(path: &std::path::Path, options: &GenQuotesOptions) -> Result<()> {
     let db = Connection::open(path)?;
-    let total = build_quotations(&db)?;
-    println!("Wrote {total} quotation pairs to {}", path.display());
-    let mut stmt = db.prepare(
-        "SELECT quote_id, score, matched, ot_ref, nt_ref FROM quotation
-         ORDER BY quote_id LIMIT ?1",
-    )?;
-    let mut rows = stmt.query([top as i64])?;
-    while let Some(row) = rows.next()? {
+    let corpus = Corpus::load(&db)?;
+    let params = params_from(&options.set)?;
+
+    if let Some(sweep) = &options.sweep {
+        let (name, values) = sweep
+            .split_once('=')
+            .with_context(|| format!("expected NAME=V1,V2,…, got {sweep:?}"))?;
+        println!("{:>22}  {}", name, Evaluation::summary_header());
+        for value in values.split(',') {
+            let mut variant = params;
+            variant.set(name.trim(), value.trim())?;
+            let evaluation = Evaluation::of(&corpus.find(&variant));
+            println!("{:>22}  {}", value.trim(), evaluation.summary());
+        }
+        return Ok(());
+    }
+
+    let found = corpus.find(&params);
+    for (rank, f) in found.iter().take(options.top).enumerate() {
         println!(
             "{:>6}  {:>6.2}  {:>2}  {:<22} {}",
-            row.get::<_, i64>(0)?,
-            row.get::<_, f64>(1)?,
-            row.get::<_, i64>(2)?,
-            ref_label(row.get(4)?),
-            ref_label(row.get(3)?),
+            rank + 1,
+            f.alignment.score,
+            f.alignment.pairs.len(),
+            ref_label(f.nt_ref),
+            ref_label(f.ot_ref),
         );
     }
-    let ranks = known_quotation_ranks(&db)?;
-    let hits = ranks.iter().filter(|(_, r)| r.is_some()).count();
-    println!("\nKnown quotations found: {hits}/{}", ranks.len());
-    for ((nt, ot), rank) in ranks {
-        let label = |(b, c, v): Reference| ref_label(pack_ref(b.into(), c.into(), v.into()));
-        match rank {
-            Some(r) => println!("  {:>6}  {:<22} {}", r, label(nt), label(ot)),
-            None => println!("       -  {:<22} {}", label(nt), label(ot)),
-        }
+    let evaluation = Evaluation::of(&found);
+    let label = |r: Reference| ref_label(pack(r));
+    println!("\nKnown quotations:");
+    for ((nt, ot), rank) in &evaluation.known {
+        let rank = rank.map_or("-".into(), |r| r.to_string());
+        println!("  {rank:>6}  {:<22} {}", label(*nt), label(*ot));
+    }
+    for (nt, ot) in &evaluation.false_found {
+        println!(
+            "  known false positive kept: {} / {}",
+            label(*nt),
+            label(*ot)
+        );
+    }
+    println!(
+        "\n{}\n{}",
+        Evaluation::summary_header(),
+        evaluation.summary()
+    );
+    if options.dry_run {
+        println!("(dry run: {} left unchanged)", path.display());
+    } else {
+        write_quotations(&db, &found)?;
+        println!(
+            "Wrote {} quotation pairs to {}",
+            found.len(),
+            path.display()
+        );
     }
     Ok(())
 }
 
-/// Print how one NT/OT verse pair tokenises and aligns — the tuning aid for
-/// a known quotation the table misses.
-pub fn explain_pair(path: &std::path::Path, nt_ref: i64, ot_ref: i64) -> Result<()> {
+/// Print how one NT/OT verse pair tokenises and aligns under the shipped (or
+/// overridden) parameters — the tuning aid for a pair the table gets wrong.
+pub fn explain_pair(
+    path: &std::path::Path,
+    nt_ref: i64,
+    ot_ref: i64,
+    set: &[String],
+) -> Result<()> {
     let db = Connection::open(path)?;
-    let mut keys = Keys::default();
-    let ot = load_ot(&db, &mut keys)?;
-    let nt = load_nt(&db, &keys)?;
-    let n_keys = keys.ids.len();
-    let (idf_ot, idf_nt) = (idf(&ot, n_keys), idf(&nt, n_keys));
-    let weight: Vec<f32> = idf_ot.iter().zip(&idf_nt).map(|(a, b)| a.min(*b)).collect();
-    let names: HashMap<u32, &str> = keys.ids.iter().map(|(k, &v)| (v, k.as_str())).collect();
-    let find = |verses: &[Verse], r: i64| verses.iter().position(|v| v.reference == r);
-    let (Some(o), Some(n)) = (find(&ot, ot_ref), find(&nt, nt_ref)) else {
-        anyhow::bail!("verse not found");
+    let corpus = Corpus::load(&db)?;
+    let params = params_from(set)?;
+    let (Some(ot), Some(nt)) = (corpus.verse(ot_ref), corpus.verse(nt_ref)) else {
+        bail!("verse not found");
     };
-    for (label, verse) in [("NT", &nt[n]), ("OT", &ot[o])] {
+    for (label, verse) in [("NT", nt), ("OT", ot)] {
         println!("{label} {}", ref_label(verse.reference));
         for (pos, ks) in &verse.words {
             let shown: Vec<String> = ks
                 .iter()
-                .map(|k| format!("{}({:.1})", names[k], weight[*k as usize]))
+                .map(|&k| {
+                    format!(
+                        "{}({:.1})",
+                        corpus.names[k as usize], corpus.weight[k as usize]
+                    )
+                })
                 .collect();
             println!("  {pos:>3} {}", shown.join(" "));
         }
     }
-    let a = align(&ot[o], &nt[n], &weight);
-    println!("score {:.2}, pairs {:?}", a.score, a.pairs);
+    let a = corpus.align(ot, nt, &params);
+    let stored = a.score >= params.min_score
+        && a.pairs.len() >= params.min_matched
+        && a.strong >= params.min_strong;
+    println!(
+        "score {:.2}, {} strong keys, pairs {:?} — {}",
+        a.score,
+        a.strong,
+        a.pairs,
+        if stored { "stored" } else { "not stored" }
+    );
     Ok(())
 }
 

@@ -30,7 +30,8 @@ pub use lexicon_db::{
 };
 pub use occurrences::parse_ot_coverage;
 pub use quotations::{
-    KNOWN_QUOTATIONS, build_quotations, explain_pair, gen_quotes, known_quotation_ranks, ref_label,
+    GenQuotesOptions, KNOWN_FALSE, KNOWN_QUOTATIONS, MatcherParams, build_quotations, explain_pair,
+    gen_quotes, ref_label,
 };
 pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, open_generation_dbs, pack_ref};
 pub use stepbible::source_dir as stepbible_source_dir;

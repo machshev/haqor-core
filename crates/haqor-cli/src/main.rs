@@ -289,6 +289,17 @@ enum DbCommands {
         /// (book numbers), e.g. `40:2:15=15:11:1`.
         #[arg(long)]
         explain: Option<String>,
+        /// Override a matcher parameter, `NAME=VALUE` (repeatable), e.g.
+        /// `--set min_score=8`. Names: see `MatcherParams`.
+        #[arg(long = "set", value_name = "NAME=VALUE")]
+        set: Vec<String>,
+        /// Evaluate each value of one parameter against the known quotation
+        /// lists instead of building, e.g. `--sweep gap_penalty=0.4,0.6,0.8`.
+        #[arg(long, value_name = "NAME=V1,V2,...")]
+        sweep: Option<String>,
+        /// Report without writing the table.
+        #[arg(long)]
+        dry_run: bool,
     },
     /// Exhaustive lexicon-coverage audit: run every distinct surface form in
     /// the corpus through the exact lookup the app's word-info sheet performs
@@ -502,7 +513,14 @@ fn main() -> Result<()> {
                 let words = haqor_db_gen::generate_runtime(&data_dir, &output, codec)?;
                 println!("Wrote {} words to {}", words, output.display());
             }
-            DbCommands::GenQuotes { db, top, explain } => match explain {
+            DbCommands::GenQuotes {
+                db,
+                top,
+                explain,
+                set,
+                sweep,
+                dry_run,
+            } => match explain {
                 Some(pair) => {
                     let parse = |s: &str| -> Result<i64> {
                         let n: Vec<i64> = s.split(':').map(str::parse).collect::<Result<_, _>>()?;
@@ -510,9 +528,17 @@ fn main() -> Result<()> {
                         Ok(haqor_db_gen::pack_ref(n[0], n[1], n[2]))
                     };
                     let (nt, ot) = pair.split_once('=').context("expected NT=OT")?;
-                    haqor_db_gen::explain_pair(&db, parse(nt)?, parse(ot)?)?;
+                    haqor_db_gen::explain_pair(&db, parse(nt)?, parse(ot)?, &set)?;
                 }
-                None => haqor_db_gen::gen_quotes(&db, top)?,
+                None => haqor_db_gen::gen_quotes(
+                    &db,
+                    &haqor_db_gen::GenQuotesOptions {
+                        set,
+                        sweep,
+                        dry_run,
+                        top,
+                    },
+                )?,
             },
             DbCommands::LexiconScan {
                 data_dir,
