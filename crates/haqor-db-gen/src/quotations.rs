@@ -41,7 +41,12 @@ CREATE INDEX idx_quotation_ot ON quotation(ot_ref);
 CREATE INDEX idx_quotation_nt ON quotation(nt_ref);
 ";
 
-/// The matcher's tuning knobs. [`Default`] is what `gen-runtime` ships;
+/// The matcher's tuning knobs. [`Default`] is what `gen-runtime` ships: a
+/// deliberately loose set, echoes and allusions included, since a reader filters
+/// by score at run time and a missed quotation cannot be recovered there.
+/// Tuned 2026-09-26 by sweep: gap 0.3 ranks the known quotations best, and
+/// min score 6 with 12 per NT verse keeps 37 of 55 at ~60k pairs.
+///
 /// `db gen-quotes --set NAME=VALUE` / `--sweep NAME=V1,V2,…` try others
 /// against the known quotations without a rebuild (see [`MatcherParams::set`]
 /// for the names).
@@ -81,14 +86,14 @@ impl Default for MatcherParams {
             candidate_min_weight: 1.5,
             candidate_min_shared: 2,
             match_min_weight: 0.5,
-            gap_penalty: 0.6,
+            gap_penalty: 0.3,
             contiguity_bonus: 1.0,
             contiguity_min_weight: 0.0,
-            min_score: 7.0,
+            min_score: 6.0,
             min_matched: 3,
             min_strong: 0,
             strong_weight: 3.0,
-            max_per_nt_verse: 8,
+            max_per_nt_verse: 12,
         }
     }
 }
@@ -750,7 +755,9 @@ fn write_quotations(db: &Connection, found: &[Found]) -> Result<()> {
                 rank as i64 + 1,
                 f.ot_ref,
                 f.nt_ref,
-                (f.alignment.score * 100.0).round() / 100.0,
+                // Rounded as f64: an f32 widened afterwards stores 14.6899995 for
+                // 14.69, which a reader's `score >= 14.69` filter then misses.
+                (f64::from(f.alignment.score) * 100.0).round() / 100.0,
                 pairs.len() as i64,
                 join(&mut pairs.iter().map(|p| p.0)),
                 join(&mut pairs.iter().map(|p| p.1)),

@@ -730,7 +730,7 @@ pub struct Quotation {
 /// Which quotations [`Bible::quotations`] lists. `book` may be an OT or an NT
 /// book and filters the matching side; the chapter bounds are inclusive and
 /// only apply together with `book`.
-#[derive(Debug, Clone, Copy, Default, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, Default, PartialEq)]
 pub struct QuotationFilter {
     pub book: Option<u8>,
     pub first_chapter: Option<u8>,
@@ -738,6 +738,9 @@ pub struct QuotationFilter {
     /// List in the order of the filtered book's verses (strongest first within
     /// a verse) instead of by global rank. Needs `book`.
     pub by_reference: bool,
+    /// Only quotations scoring at least this: the database keeps a loose set
+    /// and a reader chooses how strong a link has to be.
+    pub min_score: Option<f32>,
 }
 
 /// The column of the side of a quotation `book` belongs to.
@@ -747,13 +750,27 @@ fn quotation_side(book: u8) -> &'static str {
 
 /// SQL condition (binding `?1`, `?2`) and its bounds for a [`QuotationFilter`].
 fn quotation_condition(filter: QuotationFilter) -> (String, i64, i64) {
-    match filter.book {
+    let (condition, low, high) = match filter.book {
         Some(book) => (
             format!("{} BETWEEN ?1 AND ?2", quotation_side(book)),
             pack_ref(book, filter.first_chapter.unwrap_or(0), 0),
             pack_ref(book, filter.last_chapter.unwrap_or(255), 255),
         ),
         None => ("?1 <= ?2".to_string(), 0, 0),
+    };
+    (
+        format!("{condition}{}", score_condition(filter.min_score)),
+        low,
+        high,
+    )
+}
+
+/// ` AND score >= …` for a minimum score, or nothing. A number, never user
+/// text, so it is written into the SQL directly.
+fn score_condition(min_score: Option<f32>) -> String {
+    match min_score {
+        Some(min) if min.is_finite() => format!(" AND score >= {min}"),
+        _ => String::new(),
     }
 }
 
@@ -3750,38 +3767,51 @@ impl Bible {
 
     /// Quotations linking one verse to the other testament, strongest first:
     /// for an OT verse the NT verses quoting it, for an NT verse the OT verses
-    /// it quotes.
+    /// it quotes. `min_score` leaves out weaker links.
     pub fn cross_references(
         &self,
         book: u8,
         chapter: u8,
         verse: u8,
+        min_score: Option<f32>,
     ) -> rusqlite::Result<Vec<Quotation>> {
         let side = quotation_side(book);
         self.query_quotations(
-            &format!("WHERE {side} = ?1 ORDER BY quote_id"),
+            &format!(
+                "WHERE {side} = ?1{} ORDER BY quote_id",
+                score_condition(min_score)
+            ),
             &[&pack_ref(book, chapter, verse)],
         )
     }
 
-    /// How many [`Bible::cross_references`] each verse of a chapter has, as
-    /// `(verse, count)` for the verses that have any — what a reader needs to
-    /// mark them without fetching every list.
-    pub fn chapter_cross_reference_counts(
+    /// The score of every [`Bible::cross_references`] link of each verse of a
+    /// chapter, as `(verse, scores)` for the verses that have any, strongest
+    /// first. A reader marks linked verses from it, and can count only the
+    /// links as strong as it wants without asking again.
+    pub fn chapter_cross_reference_scores(
         &self,
         book: u8,
         chapter: u8,
-    ) -> rusqlite::Result<Vec<(u8, u32)>> {
+    ) -> rusqlite::Result<Vec<(u8, Vec<f32>)>> {
         let side = quotation_side(book);
         let mut stmt = self.db.prepare(&format!(
-            "SELECT {side} & 255, COUNT(*) FROM data.quotation \
-             WHERE {side} BETWEEN ?1 AND ?2 GROUP BY {side} ORDER BY {side}"
+            "SELECT {side} & 255, score FROM data.quotation \
+             WHERE {side} BETWEEN ?1 AND ?2 ORDER BY {side}, quote_id"
         ))?;
-        stmt.query_map(
+        let mut verses: Vec<(u8, Vec<f32>)> = Vec::new();
+        let rows = stmt.query_map(
             [pack_ref(book, chapter, 0), pack_ref(book, chapter, 255)],
-            |row| Ok((row.get(0)?, row.get(1)?)),
-        )?
-        .collect()
+            |row| Ok((row.get::<_, u8>(0)?, row.get::<_, f64>(1)? as f32)),
+        )?;
+        for row in rows {
+            let (verse, score) = row?;
+            match verses.last_mut() {
+                Some((v, scores)) if *v == verse => scores.push(score),
+                _ => verses.push((verse, vec![score])),
+            }
+        }
+        Ok(verses)
     }
 
     /// Quotations in rank order, optionally limited to one book (either
@@ -4046,7 +4076,7 @@ mod tests {
             verse: 23,
         };
 
-        let from_nt = bible.cross_references(40, 1, 23).unwrap();
+        let from_nt = bible.cross_references(40, 1, 23, None).unwrap();
         let quote = from_nt
             .iter()
             .find(|q| q.ot == isaiah_7_14)
@@ -4054,8 +4084,32 @@ mod tests {
         assert_eq!(quote.nt, matthew_1_23);
         assert_eq!(quote.ot_positions.len(), quote.nt_positions.len());
         assert!(from_nt.windows(2).all(|w| w[0].rank < w[1].rank));
-        let from_ot = bible.cross_references(12, 7, 14).unwrap();
+        let from_ot = bible.cross_references(12, 7, 14, None).unwrap();
         assert!(from_ot.iter().any(|q| q.nt == matthew_1_23));
+
+        // A minimum score keeps exactly the links at or above it.
+        let floor = quote.score;
+        let strong = bible.cross_references(40, 1, 23, Some(floor)).unwrap();
+        assert!(strong.iter().any(|q| q.ot == isaiah_7_14));
+        assert_eq!(
+            strong.len(),
+            from_nt.iter().filter(|q| q.score >= floor).count()
+        );
+        assert!(
+            bible
+                .cross_references(40, 1, 23, Some(1000.0))
+                .unwrap()
+                .is_empty()
+        );
+
+        // The chapter's scores list every verse's links, strongest first.
+        let scores = bible.chapter_cross_reference_scores(40, 1).unwrap();
+        let (_, own) = scores
+            .iter()
+            .find(|(verse, _)| *verse == 23)
+            .expect("Mt 1:23 is marked");
+        assert_eq!(own, &from_nt.iter().map(|q| q.score).collect::<Vec<_>>());
+        assert!(scores.windows(2).all(|w| w[0].0 < w[1].0));
 
         let top = bible.quotations(QuotationFilter::default(), 20, 0).unwrap();
         assert_eq!(
@@ -4101,6 +4155,23 @@ mod tests {
         let paged = bible.quotations(in_order, 3, 2).unwrap();
         assert_eq!(paged, walked[2..5]);
         assert!(bible.quotation_count(QuotationFilter::default()).unwrap() > 1000);
+
+        // A minimum score narrows the listing and its count alike.
+        let strong_only = QuotationFilter {
+            min_score: Some(15.0),
+            ..filter
+        };
+        let strong = bible.quotations(strong_only, 1000, 0).unwrap();
+        assert!(strong.iter().all(|q| q.score >= 15.0));
+        assert_eq!(
+            strong.len(),
+            matthew.iter().filter(|q| q.score >= 15.0).count()
+        );
+        assert_eq!(
+            bible.quotation_count(strong_only).unwrap() as usize,
+            strong.len()
+        );
+
         let psalms = QuotationFilter {
             book: Some(27),
             ..Default::default()
