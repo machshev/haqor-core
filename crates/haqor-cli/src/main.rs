@@ -289,23 +289,26 @@ enum DbCommands {
         #[arg(long, default_value = "none")]
         blob_codec: String,
     },
-    /// Find NT (Peshitta) quotations of the Hebrew OT by root alignment and
-    /// rebuild the `quotation` table of a runtime haqor.db in place (gen-runtime
-    /// also builds it). Prints the strongest pairs and the recall on a list of
-    /// well-known quotations.
+    /// Find NT (Peshitta) quotations of the Hebrew OT, and parallels within
+    /// each testament, by root alignment and rebuild the `quotation` table of a
+    /// runtime haqor.db in place (gen-runtime also builds it). Prints the
+    /// strongest pairs of each kind and the recall on lists of well-known
+    /// quotations and parallels.
     GenQuotes {
         /// Runtime database to update.
         #[arg(short, long, default_value = "data/haqor.db")]
         db: PathBuf,
-        /// How many of the top-ranked pairs to print.
+        /// How many of the top-ranked pairs of each kind to print.
         #[arg(short = 'n', long, default_value_t = 40)]
         top: usize,
-        /// Instead of rebuilding, explain one pair: `NT_BOOK:CH:V=OT_BOOK:CH:V`
-        /// (book numbers), e.g. `40:2:15=15:11:1`.
+        /// Instead of rebuilding, explain one pair of verses, either order and
+        /// any testaments: `BOOK:CH:V=BOOK:CH:V` (book numbers), e.g.
+        /// `40:2:15=15:11:1`.
         #[arg(long)]
         explain: Option<String>,
         /// Override a matcher parameter, `NAME=VALUE` (repeatable), e.g.
-        /// `--set min_score=8`. Names: see `MatcherParams`.
+        /// `--set min_score=8`; `cross.NAME` / `within.NAME` set only the
+        /// OT/NT or the same-testament parameters. Names: see `MatcherParams`.
         #[arg(long = "set", value_name = "NAME=VALUE")]
         set: Vec<String>,
         /// Evaluate each value of one parameter against the known quotation
@@ -554,8 +557,8 @@ fn main() -> Result<()> {
                         anyhow::ensure!(n.len() == 3, "expected BOOK:CH:V, got {s}");
                         Ok(haqor_db_gen::pack_ref(n[0], n[1], n[2]))
                     };
-                    let (nt, ot) = pair.split_once('=').context("expected NT=OT")?;
-                    haqor_db_gen::explain_pair(&db, parse(nt)?, parse(ot)?, &set)?;
+                    let (x, y) = pair.split_once('=').context("expected A=B")?;
+                    haqor_db_gen::explain_pair(&db, parse(x)?, parse(y)?, &set)?;
                 }
                 None => haqor_db_gen::gen_quotes(
                     &db,

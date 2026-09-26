@@ -825,27 +825,54 @@ impl VerseRef {
     }
 }
 
-/// An NT verse quoting, or closely echoing, an OT verse. Found at build time
-/// by aligning the Peshitta's roots against the Hebrew text's directly, so no
-/// translation is involved; see `haqor-db-gen`'s `quotations` module.
+/// Two verses linked by a quotation, an echo or a parallel passage: an NT
+/// verse quoting the OT, or two verses of one testament sharing wording
+/// (parallel accounts, repeated oracles, synoptic parallels). Found at build
+/// time by aligning roots — the Peshitta's against the Hebrew text's directly
+/// across the testaments, so no translation is involved; see `haqor-db-gen`'s
+/// `quotations` module.
+///
+/// A link is seen from one of its verses: `verse` is the one asked about (for
+/// an unfiltered listing, the earlier of the two in corpus order) and `other`
+/// the verse it is linked to.
 #[derive(Debug, Clone, PartialEq)]
 pub struct Quotation {
     /// Position in the global ranking, 1 being the strongest match.
     pub rank: u32,
-    /// Local-alignment score the ranking is ordered by.
+    /// Local-alignment score the ranking is ordered by, on one scale for
+    /// every kind of link.
     pub score: f32,
-    pub ot: VerseRef,
-    pub nt: VerseRef,
-    /// The aligned words, pairwise: `ot_positions[i]` (a `verse_word`
-    /// position, as [`Bible::hebrew_word_info_at`] takes) matched
-    /// `nt_positions[i]` (the word's index in the NT verse).
-    pub ot_positions: Vec<u16>,
-    pub nt_positions: Vec<u16>,
+    pub verse: VerseRef,
+    pub other: VerseRef,
+    /// The aligned words, pairwise: `positions[i]` in `verse` matched
+    /// `other_positions[i]` in `other`. An OT position is a `verse_word`
+    /// position, as [`Bible::hebrew_word_info_at`] takes; an NT position is
+    /// the word's index in the verse.
+    pub positions: Vec<u16>,
+    pub other_positions: Vec<u16>,
+}
+
+impl Quotation {
+    /// Whether the two verses are in different testaments.
+    pub fn crosses_testaments(&self) -> bool {
+        (self.verse.book >= 40) != (self.other.book >= 40)
+    }
+}
+
+/// Which links a listing includes by the testaments of their two verses.
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq)]
+pub enum QuotationScope {
+    #[default]
+    All,
+    /// OT verses quoted in the NT.
+    OtherTestament,
+    /// Links between two verses of one testament.
+    SameTestament,
 }
 
 /// Which quotations [`Bible::quotations`] lists. `book` may be an OT or an NT
-/// book and filters the matching side; the chapter bounds are inclusive and
-/// only apply together with `book`.
+/// book and keeps the links with a verse in it, seen from that verse; the
+/// chapter bounds are inclusive and only apply together with `book`.
 #[derive(Debug, Clone, Copy, Default, PartialEq)]
 pub struct QuotationFilter {
     pub book: Option<u8>,
@@ -857,28 +884,50 @@ pub struct QuotationFilter {
     /// Only quotations scoring at least this: the database keeps a loose set
     /// and a reader chooses how strong a link has to be.
     pub min_score: Option<f32>,
+    pub scope: QuotationScope,
 }
 
-/// The column of the side of a quotation `book` belongs to.
-fn quotation_side(book: u8) -> &'static str {
-    if book >= 40 { "nt_ref" } else { "ot_ref" }
+/// The links touching the verses `?1..=?2` as rows of `(quote_id, score,
+/// own, other, own_positions, other_positions)`, each seen from its verse in
+/// that range — twice, from both ends, when both are in it. The table stores a
+/// link once, earlier verse (`a_ref`) first. `condition` is ANDed onto both
+/// halves.
+fn links_touching(condition: &str) -> String {
+    format!(
+        "SELECT quote_id, score, a_ref AS own, b_ref AS other, a_positions AS own_positions, \
+                b_positions AS other_positions \
+         FROM data.quotation WHERE a_ref BETWEEN ?1 AND ?2{condition} \
+         UNION ALL \
+         SELECT quote_id, score, b_ref, a_ref, b_positions, a_positions \
+         FROM data.quotation WHERE b_ref BETWEEN ?1 AND ?2{condition}"
+    )
 }
 
-/// SQL condition (binding `?1`, `?2`) and its bounds for a [`QuotationFilter`].
-fn quotation_condition(filter: QuotationFilter) -> (String, i64, i64) {
-    let (condition, low, high) = match filter.book {
+/// The rows [`links_touching`] yields, for a [`QuotationFilter`], with the
+/// bounds to bind as `?1` and `?2`. Without a book every link is listed once,
+/// from its earlier verse.
+fn filtered_links(filter: QuotationFilter) -> (String, i64, i64) {
+    let condition = format!(
+        "{}{}",
+        score_condition(filter.min_score),
+        scope_condition(filter.scope)
+    );
+    match filter.book {
         Some(book) => (
-            format!("{} BETWEEN ?1 AND ?2", quotation_side(book)),
+            links_touching(&condition),
             pack_ref(book, filter.first_chapter.unwrap_or(0), 0),
             pack_ref(book, filter.last_chapter.unwrap_or(255), 255),
         ),
-        None => ("?1 <= ?2".to_string(), 0, 0),
-    };
-    (
-        format!("{condition}{}", score_condition(filter.min_score)),
-        low,
-        high,
-    )
+        None => (
+            format!(
+                "SELECT quote_id, score, a_ref AS own, b_ref AS other, \
+                        a_positions AS own_positions, b_positions AS other_positions \
+                 FROM data.quotation WHERE ?1 <= ?2{condition}"
+            ),
+            0,
+            0,
+        ),
+    }
 }
 
 /// ` AND score >= …` for a minimum score, or nothing. A number, never user
@@ -887,6 +936,16 @@ fn score_condition(min_score: Option<f32>) -> String {
     match min_score {
         Some(min) if min.is_finite() => format!(" AND score >= {min}"),
         _ => String::new(),
+    }
+}
+
+/// ` AND …` keeping the links of a [`QuotationScope`], or nothing.
+fn scope_condition(scope: QuotationScope) -> String {
+    let nt = pack_ref(40, 0, 0);
+    match scope {
+        QuotationScope::All => String::new(),
+        QuotationScope::OtherTestament => format!(" AND a_ref < {nt} AND b_ref >= {nt}"),
+        QuotationScope::SameTestament => format!(" AND (a_ref >= {nt} OR b_ref < {nt})"),
     }
 }
 
@@ -4048,9 +4107,10 @@ impl Bible {
         Ok(entries)
     }
 
-    /// Quotations linking one verse to the other testament, strongest first:
-    /// for an OT verse the NT verses quoting it, for an NT verse the OT verses
-    /// it quotes. `min_score` leaves out weaker links.
+    /// Links of one verse, strongest first, each seen from that verse: the NT
+    /// verses quoting an OT verse or the OT verses an NT verse quotes, and the
+    /// verses of its own testament it parallels. `min_score` leaves out weaker
+    /// links.
     pub fn cross_references(
         &self,
         book: u8,
@@ -4058,13 +4118,11 @@ impl Bible {
         verse: u8,
         min_score: Option<f32>,
     ) -> rusqlite::Result<Vec<Quotation>> {
-        let side = quotation_side(book);
+        let reference = pack_ref(book, chapter, verse);
         self.query_quotations(
-            &format!(
-                "WHERE {side} = ?1{} ORDER BY quote_id",
-                score_condition(min_score)
-            ),
-            &[&pack_ref(book, chapter, verse)],
+            &links_touching(&score_condition(min_score)),
+            "ORDER BY quote_id",
+            &[&reference, &reference],
         )
     }
 
@@ -4077,10 +4135,9 @@ impl Bible {
         book: u8,
         chapter: u8,
     ) -> rusqlite::Result<Vec<(u8, Vec<f32>)>> {
-        let side = quotation_side(book);
         let mut stmt = self.db.prepare(&format!(
-            "SELECT {side} & 255, score FROM data.quotation \
-             WHERE {side} BETWEEN ?1 AND ?2 ORDER BY {side}, quote_id"
+            "SELECT own & 255, score FROM ({}) ORDER BY own, quote_id",
+            links_touching("")
         ))?;
         let mut verses: Vec<(u8, Vec<f32>)> = Vec::new();
         let rows = stmt.query_map(
@@ -4097,26 +4154,28 @@ impl Bible {
         Ok(verses)
     }
 
-    /// Quotations in rank order, optionally limited to one book (either
-    /// testament) and a chapter range within it. `limit` and `offset` page
-    /// through the ranking.
+    /// Quotations in rank order, optionally limited to the links of one book
+    /// (either testament) and a chapter range within it, seen from that book.
+    /// `limit` and `offset` page through the ranking.
     pub fn quotations(
         &self,
         filter: QuotationFilter,
         limit: u32,
         offset: u32,
     ) -> rusqlite::Result<Vec<Quotation>> {
-        let (condition, low, high) = quotation_condition(filter);
-        // Reference order walks the filtered side's verses, strongest link
-        // first within a verse; without a book there is no side to walk.
-        let order = match filter.book {
-            Some(book) if filter.by_reference => {
-                format!("{} , quote_id", quotation_side(book))
-            }
-            _ => "quote_id".to_string(),
+        let (links, low, high) = filtered_links(filter);
+        // Reference order walks the filtered book's verses, strongest link
+        // first within a verse; without a book there is no side to walk. A
+        // link within the book is listed from both its verses, so rank ties
+        // fall back to the verse.
+        let order = if filter.book.is_some() && filter.by_reference {
+            "ORDER BY own, quote_id"
+        } else {
+            "ORDER BY quote_id, own"
         };
         self.query_quotations(
-            &format!("WHERE {condition} ORDER BY {order} LIMIT ?3 OFFSET ?4"),
+            &links,
+            &format!("{order} LIMIT ?3 OFFSET ?4"),
             &[&low, &high, &limit, &offset],
         )
     }
@@ -4124,17 +4183,20 @@ impl Bible {
     /// How many quotations [`Bible::quotations`] would list for `filter`
     /// without a limit, for a caller paging through them.
     pub fn quotation_count(&self, filter: QuotationFilter) -> rusqlite::Result<u32> {
-        let (condition, low, high) = quotation_condition(filter);
+        let (links, low, high) = filtered_links(filter);
         self.db.query_row(
-            &format!("SELECT COUNT(*) FROM data.quotation WHERE {condition}"),
+            &format!("SELECT COUNT(*) FROM ({links})"),
             [low, high],
             |row| row.get(0),
         )
     }
 
+    /// Run `links` (rows as [`links_touching`] yields them) with `tail`
+    /// (ordering, paging) appended.
     fn query_quotations(
         &self,
-        clause: &str,
+        links: &str,
+        tail: &str,
         params: &[&dyn rusqlite::ToSql],
     ) -> rusqlite::Result<Vec<Quotation>> {
         let positions = |text: String| -> Vec<u16> {
@@ -4143,17 +4205,17 @@ impl Bible {
                 .collect()
         };
         let mut stmt = self.db.prepare(&format!(
-            "SELECT quote_id, score, ot_ref, nt_ref, ot_positions, nt_positions \
-             FROM data.quotation {clause}"
+            "SELECT quote_id, score, own, other, own_positions, other_positions \
+             FROM ({links}) {tail}"
         ))?;
         stmt.query_map(params, |row| {
             Ok(Quotation {
                 rank: row.get(0)?,
                 score: row.get::<_, f64>(1)? as f32,
-                ot: VerseRef::unpack(row.get(2)?),
-                nt: VerseRef::unpack(row.get(3)?),
-                ot_positions: positions(row.get(4)?),
-                nt_positions: positions(row.get(5)?),
+                verse: VerseRef::unpack(row.get(2)?),
+                other: VerseRef::unpack(row.get(3)?),
+                positions: positions(row.get(4)?),
+                other_positions: positions(row.get(5)?),
             })
         })?
         .collect()
@@ -4362,18 +4424,20 @@ mod tests {
         let from_nt = bible.cross_references(40, 1, 23, None).unwrap();
         let quote = from_nt
             .iter()
-            .find(|q| q.ot == isaiah_7_14)
+            .find(|q| q.other == isaiah_7_14)
             .expect("Mt 1:23 quotes Isa 7:14");
-        assert_eq!(quote.nt, matthew_1_23);
-        assert_eq!(quote.ot_positions.len(), quote.nt_positions.len());
+        assert_eq!(quote.verse, matthew_1_23);
+        assert!(quote.crosses_testaments());
+        assert_eq!(quote.positions.len(), quote.other_positions.len());
         assert!(from_nt.windows(2).all(|w| w[0].rank < w[1].rank));
         let from_ot = bible.cross_references(12, 7, 14, None).unwrap();
-        assert!(from_ot.iter().any(|q| q.nt == matthew_1_23));
+        assert!(from_ot.iter().any(|q| q.other == matthew_1_23));
+        assert!(from_ot.iter().all(|q| q.verse == isaiah_7_14));
 
         // A minimum score keeps exactly the links at or above it.
         let floor = quote.score;
         let strong = bible.cross_references(40, 1, 23, Some(floor)).unwrap();
-        assert!(strong.iter().any(|q| q.ot == isaiah_7_14));
+        assert!(strong.iter().any(|q| q.other == isaiah_7_14));
         assert_eq!(
             strong.len(),
             from_nt.iter().filter(|q| q.score >= floor).count()
@@ -4415,9 +4479,10 @@ mod tests {
         assert!(
             matthew
                 .iter()
-                .all(|q| q.nt.book == 40 && (2..=4).contains(&q.nt.chapter))
+                .all(|q| q.verse.book == 40 && (2..=4).contains(&q.verse.chapter))
         );
-        assert!(matthew.windows(2).all(|w| w[0].rank < w[1].rank));
+        // A link between two verses of the range is listed from both.
+        assert!(matthew.windows(2).all(|w| w[0].rank <= w[1].rank));
         assert_eq!(
             bible.quotation_count(filter).unwrap() as usize,
             matthew.len()
@@ -4431,7 +4496,7 @@ mod tests {
         let walked = bible.quotations(in_order, 1000, 0).unwrap();
         assert_eq!(walked.len(), matthew.len());
         assert!(walked.windows(2).all(|w| {
-            let (a, b) = (&w[0].nt, &w[1].nt);
+            let (a, b) = (&w[0].verse, &w[1].verse);
             (a.chapter, a.verse) < (b.chapter, b.verse)
                 || ((a.chapter, a.verse) == (b.chapter, b.verse) && w[0].rank < w[1].rank)
         }));
@@ -4464,7 +4529,82 @@ mod tests {
                 .quotations(psalms, 1000, 0)
                 .unwrap()
                 .iter()
-                .all(|q| q.ot.book == 27)
+                .all(|q| q.verse.book == 27)
+        );
+    }
+
+    /// Links within one testament are found and read from either verse, and the
+    /// scope filter separates them from the OT/NT quotations.
+    #[test]
+    fn quotations_link_verses_within_a_testament() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let verse = |book, chapter, verse| VerseRef {
+            book,
+            chapter,
+            verse,
+        };
+        // Micah 4:1 repeats Isaiah 2:2; Mark 1:3 quotes Isaiah 40:3 as Matthew 3:3 does.
+        for (x, y) in [
+            (verse(20, 4, 1), verse(12, 2, 2)),
+            (verse(41, 1, 3), verse(40, 3, 3)),
+        ] {
+            for (from, to) in [(x, y), (y, x)] {
+                let links = bible
+                    .cross_references(from.book, from.chapter, from.verse, None)
+                    .unwrap();
+                let link = links
+                    .iter()
+                    .find(|q| q.other == to)
+                    .unwrap_or_else(|| panic!("{from:?} links {to:?}"));
+                assert_eq!(link.verse, from);
+                assert!(!link.crosses_testaments());
+                assert_eq!(link.positions.len(), link.other_positions.len());
+            }
+        }
+
+        // Jeremiah 51:15 repeats 10:12: a link inside the book is listed from
+        // both its verses when walking the book.
+        let jeremiah = QuotationFilter {
+            book: Some(13),
+            by_reference: true,
+            scope: QuotationScope::SameTestament,
+            ..Default::default()
+        };
+        let walked = bible.quotations(jeremiah, 100_000, 0).unwrap();
+        assert!(
+            walked
+                .iter()
+                .all(|q| q.verse.book == 13 && q.other.book < 40)
+        );
+        let (first, second) = (verse(13, 10, 12), verse(13, 51, 15));
+        for (from, to) in [(first, second), (second, first)] {
+            assert!(walked.iter().any(|q| q.verse == from && q.other == to));
+        }
+        assert_eq!(
+            bible.quotation_count(jeremiah).unwrap() as usize,
+            walked.len()
+        );
+
+        // The scopes split the links between them.
+        let isaiah = |scope| QuotationFilter {
+            book: Some(12),
+            scope,
+            ..Default::default()
+        };
+        let count = |scope| bible.quotation_count(isaiah(scope)).unwrap();
+        let (other, same) = (
+            count(QuotationScope::OtherTestament),
+            count(QuotationScope::SameTestament),
+        );
+        assert!(other > 0 && same > 0);
+        assert_eq!(count(QuotationScope::All), other + same);
+        assert!(
+            bible
+                .quotations(isaiah(QuotationScope::OtherTestament), 1000, 0)
+                .unwrap()
+                .iter()
+                .all(|q| q.crosses_testaments())
         );
     }
 

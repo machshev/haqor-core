@@ -31,8 +31,8 @@ pub use lexicon_db::{
 };
 pub use occurrences::parse_ot_coverage;
 pub use quotations::{
-    GenQuotesOptions, KNOWN_FALSE, KNOWN_QUOTATIONS, MatcherParams, build_quotations, explain_pair,
-    gen_quotes, ref_label,
+    GenQuotesOptions, KNOWN_FALSE, KNOWN_PARALLELS, KNOWN_QUOTATIONS, LinkKind, Matcher,
+    MatcherParams, build_quotations, explain_pair, gen_quotes, ref_label,
 };
 pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, open_generation_dbs, pack_ref};
 pub use sefaria::{ImportSummary, import_sefaria};

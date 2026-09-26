@@ -328,7 +328,7 @@ pub fn generate_runtime(data_dir: &Path, output: &Path, codec: BlobCodec) -> Res
     db.execute_batch("DETACH DATABASE out")?;
 
     let quotations = crate::quotations::build_quotations(&Connection::open(output)?)?;
-    info!("Found {quotations} OT quotations in the NT");
+    info!("Found {quotations} cross references (OT/NT quotations and parallels)");
 
     // VACUUM cannot run on an attached database, so the reclaim happens on the
     // finished file. It matters: the bulk load leaves the free pages that make
@@ -1108,17 +1108,32 @@ fn write_glosses(db: &Connection, word_info: &Pool, reader: &Pool) -> Result<()>
     Ok(())
 }
 
+/// The current time as a build stamp.
+fn now_stamp() -> Result<String> {
+    let seconds = SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .context("reading the system clock")?
+        .as_secs();
+    Ok(format_timestamp(seconds))
+}
+
+/// Re-stamp a runtime database changed in place (`db gen-quotes`), so syncing
+/// it to the app reinstalls it like a fresh build.
+pub(crate) fn restamp_built(db: &Connection) -> Result<()> {
+    db.execute(
+        "UPDATE meta SET value = ?1 WHERE key = 'built'",
+        [now_stamp()?],
+    )?;
+    Ok(())
+}
+
 fn write_meta(db: &Connection, codec: BlobCodec, encoder: &Encoder) -> Result<()> {
     // The build stamp is the database's version: nothing is maintained by hand,
     // the app compares it to decide whether to reinstall, and it orders so a
     // sync server can tell whether it holds a newer build (ADR 6).
-    let built = SystemTime::now()
-        .duration_since(UNIX_EPOCH)
-        .context("reading the system clock")?
-        .as_secs();
     let mut insert = db.prepare("INSERT INTO out.meta(key, value) VALUES (?1, ?2)")?;
     insert.execute(params!["schema_version", SCHEMA_VERSION.to_string()])?;
-    insert.execute(params!["built", format_timestamp(built)])?;
+    insert.execute(params!["built", now_stamp()?])?;
     insert.execute(params!["blob_codec", codec.as_str()])?;
     if let Some(dictionary) = encoder.dictionary() {
         // The blobs are too short to compress on their own, so a reader cannot
