@@ -114,6 +114,16 @@ impl LexiconSource {
             LexiconSource::Jastrow => "jastrow",
         }
     }
+
+    /// The source [`Self::as_str`] names, if any.
+    pub fn parse(key: &str) -> Option<Self> {
+        match key {
+            "bdb" => Some(LexiconSource::Bdb),
+            "klein" => Some(LexiconSource::Klein),
+            "jastrow" => Some(LexiconSource::Jastrow),
+            _ => None,
+        }
+    }
 }
 
 /// One entry of a root family, from any lexicon; see [`Bible::root_lexicon`].
@@ -141,6 +151,25 @@ struct DictionaryRow {
     pos: String,
     gloss: String,
     body: Vec<u8>,
+}
+
+impl DictionaryRow {
+    /// Read `entry_id, source, key, word, cons, lang, pos, gloss, body`, in
+    /// that order, as `(entry_id, source, row)`.
+    fn read(row: &rusqlite::Row) -> rusqlite::Result<(i64, String, DictionaryRow)> {
+        Ok((
+            row.get(0)?,
+            row.get(1)?,
+            DictionaryRow {
+                word: row.get(3)?,
+                cons: row.get(4)?,
+                lang: row.get::<_, Option<String>>(5)?.unwrap_or_default(),
+                pos: row.get::<_, Option<String>>(6)?.unwrap_or_default(),
+                gloss: row.get::<_, Option<String>>(7)?.unwrap_or_default(),
+                body: row.get(8)?,
+            },
+        ))
+    }
 }
 
 /// The keys of the entries Klein lists as an entry's derivatives.
@@ -3545,13 +3574,7 @@ impl Bible {
         skeletons: &[String],
         root: &str,
     ) -> rusqlite::Result<Vec<(String, LexiconEntry)>> {
-        let present: bool = self.db.query_row(
-            "SELECT EXISTS(SELECT 1 FROM data.sqlite_master \
-             WHERE type = 'table' AND name = 'dictionary_entry')",
-            [],
-            |row| row.get(0),
-        )?;
-        if !present || skeletons.is_empty() {
+        if !self.has_dictionaries()? || skeletons.is_empty() {
             return Ok(Vec::new());
         }
         let mut by_form = self.db.prepare(
@@ -3564,20 +3587,7 @@ impl Bible {
             "SELECT entry_id, source, key, word, cons, lang, pos, gloss, body \
              FROM data.dictionary_entry WHERE source = 'klein' AND key = ?1",
         )?;
-        let read = |row: &rusqlite::Row| -> rusqlite::Result<(i64, String, DictionaryRow)> {
-            Ok((
-                row.get(0)?,
-                row.get::<_, String>(1)?,
-                DictionaryRow {
-                    word: row.get(3)?,
-                    cons: row.get(4)?,
-                    lang: row.get::<_, Option<String>>(5)?.unwrap_or_default(),
-                    pos: row.get::<_, Option<String>>(6)?.unwrap_or_default(),
-                    gloss: row.get::<_, Option<String>>(7)?.unwrap_or_default(),
-                    body: row.get(8)?,
-                },
-            ))
-        };
+        let read = DictionaryRow::read;
 
         let mut seen = HashSet::new();
         let mut found: Vec<(String, String, DictionaryRow)> = Vec::new();
@@ -3608,25 +3618,62 @@ impl Bible {
         found
             .into_iter()
             .map(|(skeleton, source, row)| {
-                let content_json = self.blobs.decode(row.body)?;
-                let source = if source == "klein" {
-                    LexiconSource::Klein
-                } else {
-                    LexiconSource::Jastrow
-                };
-                Ok((
-                    skeleton,
-                    LexiconEntry {
-                        source,
-                        pos_category: dictionary_pos_category(&row.pos, &content_json),
-                        headword: normalize_hebrew_combining(&row.word),
-                        gloss: row.gloss,
-                        content_json,
-                        lang: row.lang,
-                    },
-                ))
+                Ok((skeleton, self.dictionary_lexicon_entry(&source, row)?))
             })
             .collect()
+    }
+
+    /// One Klein or Jastrow entry by its key, which is what a `dref` span in
+    /// another entry of the same source names. `None` when the key is unknown
+    /// (an entry the import filtered out is never linked, so this means stale
+    /// data), when the source is BDB, or when the database predates the
+    /// dictionaries.
+    pub fn dictionary_entry(
+        &self,
+        source: LexiconSource,
+        key: &str,
+    ) -> rusqlite::Result<Option<LexiconEntry>> {
+        if source == LexiconSource::Bdb || !self.has_dictionaries()? {
+            return Ok(None);
+        }
+        let row = self
+            .db
+            .query_row(
+                "SELECT entry_id, source, key, word, cons, lang, pos, gloss, body \
+                 FROM data.dictionary_entry WHERE source = ?1 AND key = ?2",
+                [source.as_str(), key],
+                DictionaryRow::read,
+            )
+            .optional()?;
+        row.map(|(_, source, row)| self.dictionary_lexicon_entry(&source, row))
+            .transpose()
+    }
+
+    /// Whether this `haqor.db` carries Klein and Jastrow at all.
+    fn has_dictionaries(&self) -> rusqlite::Result<bool> {
+        self.db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM data.sqlite_master \
+             WHERE type = 'table' AND name = 'dictionary_entry')",
+            [],
+            |row| row.get(0),
+        )
+    }
+
+    /// A stored dictionary row as the app shows it.
+    fn dictionary_lexicon_entry(
+        &self,
+        source: &str,
+        row: DictionaryRow,
+    ) -> rusqlite::Result<LexiconEntry> {
+        let content_json = self.blobs.decode(row.body)?;
+        Ok(LexiconEntry {
+            source: LexiconSource::parse(source).unwrap_or(LexiconSource::Jastrow),
+            pos_category: dictionary_pos_category(&row.pos, &content_json),
+            headword: normalize_hebrew_combining(&row.word),
+            gloss: row.gloss,
+            content_json,
+            lang: row.lang,
+        })
     }
 
     /// The learner vocabulary: distinct Hebrew (non-Aramaic) surface forms in
@@ -4664,6 +4711,40 @@ mod tests {
             r#"{"derivatives":[{"t":" "},{"dref":"U01168","t":"שָׁלֵם"},{"t":", "},{"t":"x"}]}"#;
         assert_eq!(derivative_keys(body), vec!["U01168".to_string()]);
         assert!(derivative_keys(r#"{"senses":[]}"#).is_empty());
+    }
+
+    #[test]
+    fn a_klein_link_opens_the_entry_it_names() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let base = bible
+            .root_lexicon("שלם", Vec::new(), &[])
+            .unwrap()
+            .into_iter()
+            .find(|e| e.source == LexiconSource::Klein && e.headword == "שׁלם")
+            .expect("Klein's base שׁלם");
+        let links = derivative_keys(&base.content_json);
+        assert!(!links.is_empty(), "שׁלם lists its derivatives");
+        for key in &links {
+            let entry = bible
+                .dictionary_entry(LexiconSource::Klein, key)
+                .unwrap()
+                .unwrap_or_else(|| panic!("Klein {key} is linked but missing"));
+            assert_eq!(entry.source, LexiconSource::Klein);
+            assert!(!entry.content_json.is_empty());
+        }
+        assert!(
+            bible
+                .dictionary_entry(LexiconSource::Klein, "no-such-key")
+                .unwrap()
+                .is_none()
+        );
+        assert!(
+            bible
+                .dictionary_entry(LexiconSource::Bdb, &links[0])
+                .unwrap()
+                .is_none()
+        );
     }
 
     #[test]
