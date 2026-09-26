@@ -3744,6 +3744,26 @@ impl Bible {
         )
     }
 
+    /// How many [`Bible::cross_references`] each verse of a chapter has, as
+    /// `(verse, count)` for the verses that have any — what a reader needs to
+    /// mark them without fetching every list.
+    pub fn chapter_cross_reference_counts(
+        &self,
+        book: u8,
+        chapter: u8,
+    ) -> rusqlite::Result<Vec<(u8, u32)>> {
+        let side = if book >= 40 { "nt_ref" } else { "ot_ref" };
+        let mut stmt = self.db.prepare(&format!(
+            "SELECT {side} & 255, COUNT(*) FROM data.quotation \
+             WHERE {side} BETWEEN ?1 AND ?2 GROUP BY {side} ORDER BY {side}"
+        ))?;
+        stmt.query_map(
+            [pack_ref(book, chapter, 0), pack_ref(book, chapter, 255)],
+            |row| Ok((row.get(0)?, row.get(1)?)),
+        )?
+        .collect()
+    }
+
     /// Quotations in rank order, optionally limited to one book (either
     /// testament) and a chapter range within it. `limit` and `offset` page
     /// through the ranking.
