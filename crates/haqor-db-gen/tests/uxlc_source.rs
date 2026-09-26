@@ -119,26 +119,26 @@ fn source_verses() -> BTreeMap<(u8, u8, u8), String> {
                 .expect("reading the UXLC book")
             {
                 Event::Start(e) => match e.name().as_ref() {
-                    b"c" => chapter = numbered(&e),
-                    b"v" => {
+                    "c" => chapter = numbered(&e),
+                    "v" => {
                         verse = numbered(&e);
                         out.entry((book, chapter, verse))
                             .or_insert_with(String::new);
                     }
-                    b"w" | b"q" => spoken += 1,
-                    b"k" => written += 1,
+                    "w" | "q" => spoken += 1,
+                    "k" => written += 1,
                     _ => {}
                 },
                 Event::End(e) => match e.name().as_ref() {
-                    b"w" | b"q" => spoken -= 1,
-                    b"k" => written -= 1,
+                    "w" | "q" => spoken -= 1,
+                    "k" => written -= 1,
                     _ => {}
                 },
                 // Text inside a ketiv is not read, so it is not collected; text
                 // inside a word is, once the note text has been filtered out by
                 // keeping letters alone.
                 Event::Text(t) if spoken > 0 && written == 0 => {
-                    let text = t.unescape().expect("unescaping verse text");
+                    let text = t.xml10_content();
                     out.entry((book, chapter, verse))
                         .or_default()
                         .push_str(&letters(&text));
@@ -157,12 +157,9 @@ fn numbered(e: &quick_xml::events::BytesStart<'_>) -> u8 {
     let raw = e
         .attributes()
         .flatten()
-        .find(|a| a.key.as_ref() == b"n")
+        .find(|a| a.key.as_ref() == "n")
         .expect("chapter and verse elements carry n");
-    std::str::from_utf8(&raw.value)
-        .expect("n is ASCII")
-        .parse()
-        .expect("n is a number")
+    raw.value.parse().expect("n is a number")
 }
 
 /// The generated table, keyed the same way.
@@ -284,7 +281,7 @@ fn source_groups() -> BTreeMap<(u8, u8, u8), Vec<Group>> {
         let mut reader = Reader::from_file(&path).expect("opening the UXLC book");
         let mut buf = Vec::new();
         let (mut chapter, mut verse) = (0u8, 0u8);
-        let mut tag = Vec::new();
+        let mut tag = String::new();
         let mut text = String::new();
         // The last ordinary running word seen in this verse.
         let mut previous: Option<String> = None;
@@ -297,24 +294,24 @@ fn source_groups() -> BTreeMap<(u8, u8, u8), Vec<Group>> {
                 // letter nested inside one must not reset the buffer — doing so
                 // silently truncated any word containing a note (1 Sam 9:1).
                 Event::Start(e) => match e.name().as_ref() {
-                    b"c" => chapter = numbered(&e),
-                    b"v" => {
+                    "c" => chapter = numbered(&e),
+                    "v" => {
                         verse = numbered(&e);
                         previous = None;
                     }
-                    name @ (b"w" | b"k" | b"q") => {
-                        tag = name.to_vec();
+                    name @ ("w" | "k" | "q") => {
+                        tag = name.to_string();
                         text.clear();
                     }
                     _ => {}
                 },
                 Event::Text(t) if !tag.is_empty() => {
-                    text.push_str(&letters(&t.unescape().expect("unescaping")));
+                    text.push_str(&letters(&t.xml10_content()));
                 }
                 Event::End(e) => {
                     let groups = out.entry((book, chapter, verse)).or_default();
                     match e.name().as_ref() {
-                        b"k" => {
+                        "k" => {
                             if groups.last().is_none_or(|g| !g.qere.is_empty()) {
                                 groups.push(Group {
                                     ketiv: Vec::new(),
@@ -328,7 +325,7 @@ fn source_groups() -> BTreeMap<(u8, u8, u8), Vec<Group>> {
                                 .ketiv
                                 .push(std::mem::take(&mut text));
                         }
-                        b"q" => {
+                        "q" => {
                             let read = std::mem::take(&mut text);
                             if let Some(group) = groups.last_mut() {
                                 group.qere.push(read.clone());
@@ -337,7 +334,7 @@ fn source_groups() -> BTreeMap<(u8, u8, u8), Vec<Group>> {
                                 previous = Some(read);
                             }
                         }
-                        b"w" => {
+                        "w" => {
                             let read = std::mem::take(&mut text);
                             if !read.is_empty() {
                                 previous = Some(read);
@@ -347,7 +344,7 @@ fn source_groups() -> BTreeMap<(u8, u8, u8), Vec<Group>> {
                     }
                     // Closing a nested `<x>` or `<s>` must not stop collection;
                     // only the word element itself ends the word.
-                    if matches!(e.name().as_ref(), b"w" | b"k" | b"q") {
+                    if matches!(e.name().as_ref(), "w" | "k" | "q") {
                         tag.clear();
                     }
                 }

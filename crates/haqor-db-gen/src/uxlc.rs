@@ -8,7 +8,6 @@ use std::collections::BTreeMap;
 use std::path::Path;
 
 use anyhow::{Context, Result};
-use quick_xml::Reader;
 use quick_xml::events::Event;
 
 /// Canonical OT book order → UXLC filename stem. Book number is the 1-based
@@ -328,7 +327,7 @@ impl VerseAcc {
 
 /// Parse one UXLC book file, appending its verses to `out`.
 fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
-    let mut reader = Reader::from_file(path)?;
+    let mut reader = crate::xml::Reader::open(path)?;
 
     // chapter -> verse -> accumulator. BTreeMap keeps numeric order regardless
     // of the order elements appear in the source (mirrors the Python sort()).
@@ -340,14 +339,13 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
     let mut in_ketiv = false;
     let mut in_verse = false;
     let mut word = String::new();
-    let mut buf = Vec::new();
 
     loop {
-        match reader.read_event_into(&mut buf)? {
+        match reader.next()? {
             Event::Start(e) => match e.name().as_ref() {
-                b"c" => chapter = attr_n(&e, &reader)?,
-                b"v" => {
-                    verse = attr_n(&e, &reader)?;
+                "c" => chapter = attr_n(&e)?,
+                "v" => {
+                    verse = attr_n(&e)?;
                     in_verse = true;
                     chapters
                         .entry(chapter)
@@ -363,7 +361,7 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                 // ketiv it replaces (one for two, two for one), which is why
                 // this keys off the elements themselves rather than pairing
                 // them up.
-                b"w" | b"q" => {
+                "w" | "q" => {
                     in_word = true;
                     word.clear();
                 }
@@ -372,14 +370,14 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                 // 3:12 …) not read at all. It stays out of the running text
                 // either way, and is recorded alongside it so a reader can show
                 // what the consonantal text actually writes.
-                b"k" => {
+                "k" => {
                     in_ketiv = true;
                     word.clear();
                 }
                 // Section markers, a scribal note, and the large/small/
                 // suspended letters, which wrap a letter *inside* a `w` and so
                 // are already carried by the text events below.
-                b"samekh" | b"pe" | b"reversednun" | b"x" | b"s" => {}
+                "samekh" | "pe" | "reversednun" | "x" | "s" => {}
                 // Anything else inside a verse is text this parser does not
                 // know how to place. Silently ignoring it is what lost every
                 // qere in the corpus, so an unrecognised element is an error
@@ -389,7 +387,7 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                     anyhow::bail!(
                         "unhandled UXLC element <{}> inside {} {chapter}:{verse} — \
                          decide whether it belongs in the running text",
-                        String::from_utf8_lossy(other),
+                        other,
                         path.display(),
                     );
                 }
@@ -397,7 +395,7 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
             },
             Event::End(e) => {
                 let name = e.name();
-                if name.as_ref() == b"v" {
+                if name.as_ref() == "v" {
                     in_verse = false;
                     // A verse cannot end mid-group, but a ketiv that is never
                     // read has nothing following it to close the group either.
@@ -407,7 +405,7 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                         .entry(verse)
                         .or_default()
                         .flush_ketiv();
-                } else if name.as_ref() == b"k" {
+                } else if name.as_ref() == "k" {
                     in_ketiv = false;
                     let written = std::mem::take(&mut word);
                     chapters
@@ -416,7 +414,7 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                         .entry(verse)
                         .or_default()
                         .push_ketiv(written);
-                } else if name.as_ref() == b"w" || name.as_ref() == b"q" {
+                } else if name.as_ref() == "w" || name.as_ref() == "q" {
                     in_word = false;
                     let assembled = strip_internal_maqaf(&std::mem::take(&mut word));
                     let assembled = split_glued_word(&assembled).map_or(assembled, str::to_string);
@@ -426,11 +424,11 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
                         .or_default()
                         .entry(verse)
                         .or_default()
-                        .push_word(assembled, name.as_ref() == b"q");
+                        .push_word(assembled, name.as_ref() == "q");
                 }
             }
             Event::Text(t) if in_word || in_ketiv => {
-                let text = t.unescape()?;
+                let text = t.xml10_content();
                 // Keep only Hebrew fragments, dropping nested <x> note text.
                 // Mirrors the Python `e > "z"` filter: UTF-8 byte ordering
                 // matches code-point ordering for this comparison.
@@ -441,7 +439,6 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
             Event::Eof => break,
             _ => {}
         }
-        buf.clear();
     }
 
     for (chapter, vmap) in chapters {
@@ -460,14 +457,11 @@ fn parse_book(path: &Path, book: u8, out: &mut Vec<Verse>) -> Result<()> {
 }
 
 /// Read the `n` attribute of an element as a number.
-fn attr_n(
-    e: &quick_xml::events::BytesStart,
-    reader: &Reader<std::io::BufReader<std::fs::File>>,
-) -> Result<u8> {
+fn attr_n(e: &quick_xml::events::BytesStart) -> Result<u8> {
     let attr = e
         .try_get_attribute("n")?
         .context("element missing `n` attribute")?;
-    let value = attr.decode_and_unescape_value(reader.decoder())?;
+    let value = attr.normalized_value(crate::xml::VERSION)?;
     Ok(value.parse()?)
 }
 

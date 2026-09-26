@@ -111,25 +111,29 @@ fn main() -> anyhow::Result<()> {
             (false, String::new(), String::new(), String::new());
         loop {
             match reader.read_event_into(&mut buf)? {
-                Event::Start(e) if e.name().as_ref() == b"w" => {
+                Event::Start(e) if e.name().as_ref() == "w" => {
                     in_word = true;
                     text.clear();
                     morph.clear();
                     lem.clear();
                     if let Some(a) = e.try_get_attribute("morph")? {
-                        morph = a.decode_and_unescape_value(reader.decoder())?.into_owned();
+                        morph = a
+                            .normalized_value(quick_xml::XmlVersion::Implicit1_0)?
+                            .into_owned();
                     }
                     if let Some(a) = e.try_get_attribute("lemma")? {
-                        lem = a.decode_and_unescape_value(reader.decoder())?.into_owned();
+                        lem = a
+                            .normalized_value(quick_xml::XmlVersion::Implicit1_0)?
+                            .into_owned();
                     }
                 }
                 Event::Text(t) if in_word => {
-                    let f = t.unescape()?;
+                    let f = t.xml10_content();
                     if f.as_ref() > "z" {
                         text.push_str(f.as_ref());
                     }
                 }
-                Event::End(e) if e.name().as_ref() == b"w" => {
+                Event::End(e) if e.name().as_ref() == "w" => {
                     in_word = false;
                     let ns = normalize_surface(&text);
                     // strong = leading integer of the last '/'-segment of the lemma attr

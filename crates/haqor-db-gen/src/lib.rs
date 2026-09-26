@@ -16,6 +16,7 @@ mod sedra;
 mod sedra_db;
 mod stepbible;
 mod uxlc;
+mod xml;
 
 pub use haqor_core::normalize_surface;
 pub use harness::{eval_from_db, parse_eval};

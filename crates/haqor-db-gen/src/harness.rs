@@ -28,7 +28,6 @@ use std::collections::HashSet;
 use std::path::Path;
 
 use anyhow::{Context, Result};
-use quick_xml::Reader;
 use quick_xml::events::Event;
 use rayon::prelude::*;
 use rusqlite::Connection;
@@ -184,31 +183,30 @@ fn collect_book(path: &Path, out: &mut Vec<Gold>) -> Result<()> {
 /// Walk every `<w morph="…">token</w>` of a morphhb WLC OSIS book, calling `f`
 /// with the cantillation-normalised surface and its raw morph code.
 fn for_each_token(path: &Path, mut f: impl FnMut(&str, &str)) -> Result<()> {
-    let mut reader = Reader::from_file(path)?;
-    let mut buf = Vec::new();
+    let mut reader = crate::xml::Reader::open(path)?;
     let mut in_word = false;
     let mut morph = String::new();
     let mut text = String::new();
 
     loop {
-        match reader.read_event_into(&mut buf)? {
-            Event::Start(e) if e.name().as_ref() == b"w" => {
+        match reader.next()? {
+            Event::Start(e) if e.name().as_ref() == "w" => {
                 in_word = true;
                 text.clear();
                 morph.clear();
                 if let Some(a) = e.try_get_attribute("morph")? {
-                    morph = a.decode_and_unescape_value(reader.decoder())?.into_owned();
+                    morph = a.normalized_value(crate::xml::VERSION)?.into_owned();
                 }
             }
             Event::Text(t) if in_word => {
-                let frag = t.unescape()?;
+                let frag = t.xml10_content();
                 // Keep Hebrew fragments, drop any nested note text (mirrors the
                 // UXLC parser's `> "z"` filter).
                 if frag.as_ref() > "z" {
                     text.push_str(frag.as_ref());
                 }
             }
-            Event::End(e) if e.name().as_ref() == b"w" => {
+            Event::End(e) if e.name().as_ref() == "w" => {
                 in_word = false;
                 if !morph.is_empty() {
                     let surface = normalize_surface(&text);
@@ -220,7 +218,6 @@ fn for_each_token(path: &Path, mut f: impl FnMut(&str, &str)) -> Result<()> {
             Event::Eof => break,
             _ => {}
         }
-        buf.clear();
     }
     Ok(())
 }

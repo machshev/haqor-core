@@ -39,25 +39,29 @@ fn main() -> anyhow::Result<()> {
             (false, String::new(), String::new(), String::new());
         loop {
             match r.read_event_into(&mut buf)? {
-                Event::Start(e) if e.name().as_ref() == b"w" => {
+                Event::Start(e) if e.name().as_ref() == "w" => {
                     iw = true;
                     tx.clear();
                     mo.clear();
                     lem.clear();
                     if let Some(a) = e.try_get_attribute("morph")? {
-                        mo = a.decode_and_unescape_value(r.decoder())?.into_owned();
+                        mo = a
+                            .normalized_value(quick_xml::XmlVersion::Implicit1_0)?
+                            .into_owned();
                     }
                     if let Some(a) = e.try_get_attribute("lemma")? {
-                        lem = a.decode_and_unescape_value(r.decoder())?.into_owned();
+                        lem = a
+                            .normalized_value(quick_xml::XmlVersion::Implicit1_0)?
+                            .into_owned();
                     }
                 }
                 Event::Text(t) if iw => {
-                    let f = t.unescape()?;
+                    let f = t.xml10_content();
                     if f.as_ref() > "z" {
                         tx.push_str(f.as_ref());
                     }
                 }
-                Event::End(e) if e.name().as_ref() == b"w" => {
+                Event::End(e) if e.name().as_ref() == "w" => {
                     iw = false;
                     let ns = normalize_surface(&tx);
                     if !ns.is_empty() && !mo.is_empty() {

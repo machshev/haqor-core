@@ -35,7 +35,6 @@ use std::path::Path;
 
 use anyhow::{Context, Result};
 use log::info;
-use quick_xml::Reader;
 use quick_xml::events::Event;
 use rusqlite::{Connection, OptionalExtension};
 use serde_json::{Map, Value, json};
@@ -475,9 +474,7 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
         [],
     )?;
 
-    let mut reader =
-        Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
-    let mut buf = Vec::new();
+    let mut reader = crate::xml::Reader::open(path)?;
 
     let mut entry: Option<Entry> = None;
     let mut section = Section::None;
@@ -494,19 +491,19 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
              VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)",
         )?;
         loop {
-            match reader.read_event_into(&mut buf)? {
+            match reader.next()? {
                 Event::Start(e) => match e.name().as_ref() {
-                    b"entry" => {
+                    "entry" => {
                         let mut ent = Entry::default();
                         if let Some(a) = e.try_get_attribute("id")? {
-                            let id = a.decode_and_unescape_value(reader.decoder())?;
+                            let id = a.normalized_value(crate::xml::VERSION)?;
                             ent.strong = id.trim_start_matches('H').parse().unwrap_or(0);
                         }
                         entry = Some(ent);
                         section = Section::None;
                         headword_done = false;
                     }
-                    b"w" => {
+                    "w" => {
                         // The headword is the FIRST <w> in the entry. Alternate
                         // spellings quoted inside <source> (e.g. הִיא, לוֹא) also
                         // carry an `xlit` attr, so guard on `headword_done` or
@@ -518,32 +515,29 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
                         {
                             in_headword = true;
                             headword_done = true;
-                            ent.xlit = a.decode_and_unescape_value(reader.decoder())?.into_owned();
+                            ent.xlit = a.normalized_value(crate::xml::VERSION)?.into_owned();
                             if let Some(p) = e.try_get_attribute("pron")? {
-                                ent.pron =
-                                    p.decode_and_unescape_value(reader.decoder())?.into_owned();
+                                ent.pron = p.normalized_value(crate::xml::VERSION)?.into_owned();
                             }
                             if let Some(p) = e.try_get_attribute("pos")? {
-                                ent.pos =
-                                    p.decode_and_unescape_value(reader.decoder())?.into_owned();
+                                ent.pos = p.normalized_value(crate::xml::VERSION)?.into_owned();
                             }
                             if let Some(p) = e.try_get_attribute("xml:lang")? {
-                                ent.lang =
-                                    p.decode_and_unescape_value(reader.decoder())?.into_owned();
+                                ent.lang = p.normalized_value(crate::xml::VERSION)?.into_owned();
                             }
                         }
                     }
-                    b"source" => section = Section::Source,
-                    b"meaning" => section = Section::Meaning,
-                    b"usage" => section = Section::Usage,
-                    b"def" if section == Section::Meaning => {
+                    "source" => section = Section::Source,
+                    "meaning" => section = Section::Meaning,
+                    "usage" => section = Section::Usage,
+                    "def" if section == Section::Meaning => {
                         in_def = true;
                         def_buf.clear();
                     }
                     _ => {}
                 },
                 Event::Text(t) => {
-                    let txt = t.unescape()?;
+                    let txt = t.xml10_content();
                     if let Some(ent) = entry.as_mut() {
                         if in_headword {
                             ent.word.push_str(&txt);
@@ -561,8 +555,8 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
                     }
                 }
                 Event::End(e) => match e.name().as_ref() {
-                    b"w" => in_headword = false,
-                    b"def" => {
+                    "w" => in_headword = false,
+                    "def" => {
                         if in_def {
                             if let Some(ent) = entry.as_mut() {
                                 let g = tidy(&def_buf);
@@ -573,8 +567,8 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
                             in_def = false;
                         }
                     }
-                    b"source" | b"meaning" | b"usage" => section = Section::None,
-                    b"entry" => {
+                    "source" | "meaning" | "usage" => section = Section::None,
+                    "entry" => {
                         if let Some(ent) = entry.take() {
                             stmt.execute((
                                 ent.strong,
@@ -596,7 +590,6 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
                 Event::Eof => break,
                 _ => {}
             }
-            buf.clear();
         }
     }
     tx.commit()?;
@@ -666,9 +659,7 @@ struct BdbRef {
 /// fill in what the target reads as, and to adopt its grammatical class. One
 /// cheap pass; the file is ~20MB.
 fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, BdbRef>> {
-    let mut reader =
-        Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
-    let mut buf = Vec::new();
+    let mut reader = crate::xml::Reader::open(path)?;
     let mut map = std::collections::HashMap::new();
     let mut id = String::new();
     let mut word = String::new();
@@ -681,38 +672,38 @@ fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, BdbRef
     let mut current_root = String::new();
     let mut is_root_entry = false;
     loop {
-        match reader.read_event_into(&mut buf)? {
+        match reader.next()? {
             Event::Start(e) => match e.name().as_ref() {
-                b"entry" => {
+                "entry" => {
                     id = e
                         .try_get_attribute("id")?
-                        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                        .map(|a| a.normalized_value(crate::xml::VERSION))
                         .transpose()?
                         .map(|v| v.into_owned())
                         .unwrap_or_default();
                     is_root_entry = e
                         .try_get_attribute("type")?
-                        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                        .map(|a| a.normalized_value(crate::xml::VERSION))
                         .transpose()?
                         .is_some_and(|v| v == "root");
                     word.clear();
                     pos.clear();
                     headword_done = false;
                 }
-                b"w" if !headword_done => {
+                "w" if !headword_done => {
                     in_headword = true;
                     headword_done = true;
                 }
-                b"pos" => in_pos = true,
+                "pos" => in_pos = true,
                 _ => {}
             },
-            Event::Text(t) if in_headword => word.push_str(&t.unescape()?),
-            Event::Text(t) if in_pos => pos.push_str(t.unescape()?.trim()),
+            Event::Text(t) if in_headword => word.push_str(&t.xml10_content()),
+            Event::Text(t) if in_pos => pos.push_str(t.xml10_content().trim()),
             Event::End(e) => match e.name().as_ref() {
-                b"w" => in_headword = false,
-                b"pos" => in_pos = false,
-                b"section" => current_root.clear(),
-                b"entry" if !id.is_empty() => {
+                "w" => in_headword = false,
+                "pos" => in_pos = false,
+                "section" => current_root.clear(),
+                "entry" if !id.is_empty() => {
                     let headword = tidy(&word);
                     if is_root_entry && let Ok(r) = Root::parse(&headword) {
                         current_root = r.letters.iter().collect();
@@ -731,7 +722,6 @@ fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, BdbRef
             Event::Eof => break,
             _ => {}
         }
-        buf.clear();
     }
     Ok(map)
 }
@@ -748,9 +738,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
     // (built in a cheap first pass, since a target may be defined later).
     let headwords = bdb_headwords(path)?;
 
-    let mut reader =
-        Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
-    let mut buf = Vec::new();
+    let mut reader = crate::xml::Reader::open(path)?;
 
     // Per-entry parse state.
     let mut bdb_id = String::new();
@@ -791,27 +779,27 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
         let mut stmt =
             tx.prepare("INSERT OR REPLACE INTO bdb VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)")?;
         loop {
-            match reader.read_event_into(&mut buf)? {
+            match reader.next()? {
                 Event::Start(e) => match e.name().as_ref() {
-                    b"part" => {
+                    "part" => {
                         is_aramaic = e
                             .try_get_attribute("xml:lang")?
-                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .map(|a| a.normalized_value(crate::xml::VERSION))
                             .transpose()?
                             .map(|v| v == "arc")
                             .unwrap_or(false);
                     }
-                    b"section" => current_root.clear(),
-                    b"entry" => {
+                    "section" => current_root.clear(),
+                    "entry" => {
                         bdb_id = e
                             .try_get_attribute("id")?
-                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .map(|a| a.normalized_value(crate::xml::VERSION))
                             .transpose()?
                             .map(|v| v.into_owned())
                             .unwrap_or_default();
                         is_root_entry = e
                             .try_get_attribute("type")?
-                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .map(|a| a.normalized_value(crate::xml::VERSION))
                             .transpose()?
                             .map(|v| v == "root")
                             .unwrap_or(false);
@@ -833,25 +821,25 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                     // First <w> is the headword; later <w src="…"> are inline
                     // cross-references rendered as RTL Hebrew spans, tappable to
                     // navigate to the entry named by `src`.
-                    b"w" if !stack.is_empty() && !headword_done => {
+                    "w" if !stack.is_empty() && !headword_done => {
                         in_headword = true;
                         headword_done = true;
                     }
-                    b"w" => {
+                    "w" => {
                         style.rtl = true;
                         xref = e
                             .try_get_attribute("src")?
-                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .map(|a| a.normalized_value(crate::xml::VERSION))
                             .transpose()?
                             .map(|v| v.into_owned());
                         if first_xref.is_none() && xref.is_some() {
                             first_xref = xref.clone();
                         }
                     }
-                    b"sense" => {
+                    "sense" => {
                         let num = e
                             .try_get_attribute("n")?
-                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .map(|a| a.normalized_value(crate::xml::VERSION))
                             .transpose()?
                             .map(|v| v.into_owned());
                         stack.push(Sense {
@@ -859,25 +847,25 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             ..Sense::default()
                         });
                     }
-                    b"stem" => in_stem = true,
-                    b"def" => style.b = true,
-                    b"pos" => {
+                    "stem" => in_stem = true,
+                    "def" => style.b = true,
+                    "pos" => {
                         style.i = true;
                         in_pos = true;
                     }
-                    b"foreign" => style.i = true,
-                    b"ref" => {
+                    "foreign" => style.i = true,
+                    "ref" => {
                         href = e
                             .try_get_attribute("r")?
-                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .map(|a| a.normalized_value(crate::xml::VERSION))
                             .transpose()?
                             .and_then(|r| ref_href(&r));
                     }
-                    b"status" => in_status = true,
+                    "status" => in_status = true,
                     _ => {}
                 },
                 Event::Text(t) => {
-                    let txt = t.unescape()?;
+                    let txt = t.xml10_content();
                     if in_headword {
                         word.push_str(&txt);
                     } else if in_stem {
@@ -926,10 +914,10 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                 // pre-built map. Emit it as a tappable RTL span (the same shape a
                 // text-bearing `<w src>` produces) so the entry no longer reads
                 // as a bare "v.".
-                Event::Empty(e) if e.name().as_ref() == b"w" => {
+                Event::Empty(e) if e.name().as_ref() == "w" => {
                     if let Some(src) = e
                         .try_get_attribute("src")?
-                        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                        .map(|a| a.normalized_value(crate::xml::VERSION))
                         .transpose()?
                         .map(|v| v.into_owned())
                     {
@@ -950,7 +938,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                     }
                 }
                 Event::End(e) => match e.name().as_ref() {
-                    b"w" => {
+                    "w" => {
                         if in_headword {
                             in_headword = false;
                         } else {
@@ -958,22 +946,22 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             xref = None;
                         }
                     }
-                    b"stem" => in_stem = false,
-                    b"def" => style.b = false,
-                    b"pos" => {
+                    "stem" => in_stem = false,
+                    "def" => style.b = false,
+                    "pos" => {
                         style.i = false;
                         in_pos = false;
                     }
-                    b"foreign" => style.i = false,
-                    b"ref" => href = None,
-                    b"status" => in_status = false,
-                    b"sense" => {
+                    "foreign" => style.i = false,
+                    "ref" => href = None,
+                    "status" => in_status = false,
+                    "sense" => {
                         if stack.len() > 1 {
                             let done = stack.pop().unwrap();
                             stack.last_mut().unwrap().senses.push(done);
                         }
                     }
-                    b"entry" => {
+                    "entry" => {
                         let intro = stack.pop().unwrap_or_default();
                         stack.clear();
 
@@ -1108,7 +1096,6 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                 Event::Eof => break,
                 _ => {}
             }
-            buf.clear();
         }
     }
     tx.commit()?;
@@ -1127,9 +1114,7 @@ fn load_lexical_index(db: &mut Connection, path: &Path) -> Result<usize> {
         [],
     )?;
 
-    let mut reader =
-        Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
-    let mut buf = Vec::new();
+    let mut reader = crate::xml::Reader::open(path)?;
 
     let mut oshb_id = String::new();
     let mut word = String::new();
@@ -1141,45 +1126,44 @@ fn load_lexical_index(db: &mut Connection, path: &Path) -> Result<usize> {
         let mut stmt = tx.prepare("INSERT INTO lexical_index VALUES (?1, ?2, ?3, ?4, ?5)")?;
         loop {
             // <xref> is empty so it arrives as an Empty event; <w> wraps text.
-            match reader.read_event_into(&mut buf)? {
+            match reader.next()? {
                 Event::Start(e) => match e.name().as_ref() {
-                    b"entry" => {
+                    "entry" => {
                         oshb_id = e
                             .try_get_attribute("id")?
-                            .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                            .map(|a| a.normalized_value(crate::xml::VERSION))
                             .transpose()?
                             .map(|v| v.into_owned())
                             .unwrap_or_default();
                         word.clear();
                     }
-                    b"w" => in_word = true,
+                    "w" => in_word = true,
                     _ => {}
                 },
-                Event::Text(t) if in_word => word.push_str(&t.unescape()?),
-                Event::Empty(e) if e.name().as_ref() == b"xref" => {
+                Event::Text(t) if in_word => word.push_str(&t.xml10_content()),
+                Event::Empty(e) if e.name().as_ref() == "xref" => {
                     let strong: Option<i64> = e
                         .try_get_attribute("strong")?
-                        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                        .map(|a| a.normalized_value(crate::xml::VERSION))
                         .transpose()?
                         .and_then(|v| v.parse().ok());
                     let bdb_id = e
                         .try_get_attribute("bdb")?
-                        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                        .map(|a| a.normalized_value(crate::xml::VERSION))
                         .transpose()?
                         .map(|v| v.into_owned());
                     let twot = e
                         .try_get_attribute("twot")?
-                        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+                        .map(|a| a.normalized_value(crate::xml::VERSION))
                         .transpose()?
                         .map(|v| v.into_owned());
                     stmt.execute((&oshb_id, tidy(&word), strong, bdb_id, twot))?;
                     rows += 1;
                 }
-                Event::End(e) if e.name().as_ref() == b"w" => in_word = false,
+                Event::End(e) if e.name().as_ref() == "w" => in_word = false,
                 Event::Eof => break,
                 _ => {}
             }
-            buf.clear();
         }
     }
     tx.commit()?;
@@ -1196,23 +1180,20 @@ fn load_lexical_index(db: &mut Connection, path: &Path) -> Result<usize> {
 /// consonants. Returns the raw root strings; normalisation to a triliteral is
 /// done by the caller via [`Root::parse`].
 fn collect_etym_roots(path: &Path) -> Result<Vec<String>> {
-    let mut reader =
-        Reader::from_file(path).with_context(|| format!("opening {}", path.display()))?;
-    let mut buf = Vec::new();
+    let mut reader = crate::xml::Reader::open(path)?;
     let mut out = Vec::new();
     loop {
         // <etym> may carry text children, so it is a Start event; the root is
         // on the attribute, not the body.
-        match reader.read_event_into(&mut buf)? {
-            Event::Start(e) | Event::Empty(e) if e.name().as_ref() == b"etym" => {
+        match reader.next()? {
+            Event::Start(e) | Event::Empty(e) if e.name().as_ref() == "etym" => {
                 if let Some(a) = e.try_get_attribute("root")? {
-                    out.push(a.decode_and_unescape_value(reader.decoder())?.into_owned());
+                    out.push(a.normalized_value(crate::xml::VERSION)?.into_owned());
                 }
             }
             Event::Eof => break,
             _ => {}
         }
-        buf.clear();
     }
     Ok(out)
 }

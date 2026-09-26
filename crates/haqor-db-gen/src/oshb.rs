@@ -10,7 +10,6 @@ use std::path::Path;
 
 use anyhow::{Context, Result};
 use haqor_core::normalize_surface;
-use quick_xml::Reader;
 use quick_xml::events::{BytesStart, Event};
 
 use super::hebrew_db::{Occurrence, book_number};
@@ -36,13 +35,9 @@ pub(crate) struct PrimaryAnalysis {
 
 type VerseRef = (u8, u8, u8);
 
-fn attr(
-    e: &BytesStart<'_>,
-    reader: &Reader<std::io::BufReader<std::fs::File>>,
-    key: &[u8],
-) -> Result<String> {
+fn attr(e: &BytesStart<'_>, key: &str) -> Result<String> {
     Ok(e.try_get_attribute(key)?
-        .map(|a| a.decode_and_unescape_value(reader.decoder()))
+        .map(|a| a.normalized_value(crate::xml::VERSION))
         .transpose()?
         .map(|s| s.into_owned())
         .unwrap_or_default())
@@ -57,35 +52,34 @@ fn parse_verse_ref(value: &str) -> Option<VerseRef> {
 }
 
 fn parse_book(path: &Path, verses: &mut HashMap<VerseRef, Vec<SourceToken>>) -> Result<()> {
-    let mut reader = Reader::from_file(path)?;
-    let mut buf = Vec::new();
+    let mut reader = crate::xml::Reader::open(path)?;
     let mut verse_ref = None;
     let mut note_depth = 0usize;
     let mut current: Option<SourceToken> = None;
 
     loop {
-        match reader.read_event_into(&mut buf)? {
-            Event::Start(e) if e.name().as_ref() == b"verse" => {
-                verse_ref = parse_verse_ref(&attr(&e, &reader, b"osisID")?);
+        match reader.next()? {
+            Event::Start(e) if e.name().as_ref() == "verse" => {
+                verse_ref = parse_verse_ref(&attr(&e, "osisID")?);
             }
-            Event::Start(e) if e.name().as_ref() == b"note" => note_depth += 1,
-            Event::End(e) if e.name().as_ref() == b"note" => {
+            Event::Start(e) if e.name().as_ref() == "note" => note_depth += 1,
+            Event::End(e) if e.name().as_ref() == "note" => {
                 note_depth = note_depth.saturating_sub(1);
             }
-            Event::Start(e) if e.name().as_ref() == b"w" => {
+            Event::Start(e) if e.name().as_ref() == "w" => {
                 // UXLC omits its <k>/<q> apparatus from the displayed verse.
                 // Ignore both OSHB's top-level ketiv and the qere nested in a
                 // variant note; ordinary explanatory notes contain no words.
-                let skip_word = note_depth > 0 || attr(&e, &reader, b"type")? == "x-ketiv";
+                let skip_word = note_depth > 0 || attr(&e, "type")? == "x-ketiv";
                 current = (!skip_word).then(|| SourceToken {
                     word: String::new(),
-                    lemma: attr(&e, &reader, b"lemma").unwrap_or_default(),
-                    morph: attr(&e, &reader, b"morph").unwrap_or_default(),
-                    id: attr(&e, &reader, b"id").unwrap_or_default(),
+                    lemma: attr(&e, "lemma").unwrap_or_default(),
+                    morph: attr(&e, "morph").unwrap_or_default(),
+                    id: attr(&e, "id").unwrap_or_default(),
                 });
             }
             Event::Text(t) if current.is_some() => {
-                let fragment = t.unescape()?;
+                let fragment = t.xml10_content();
                 if fragment.as_ref() > "z" {
                     current
                         .as_mut()
@@ -94,7 +88,7 @@ fn parse_book(path: &Path, verses: &mut HashMap<VerseRef, Vec<SourceToken>>) -> 
                         .push_str(&fragment);
                 }
             }
-            Event::End(e) if e.name().as_ref() == b"w" => {
+            Event::End(e) if e.name().as_ref() == "w" => {
                 if let (Some(reference), Some(token)) = (verse_ref, current.take())
                     && !token.morph.is_empty()
                     && !normalize_surface(&token.word).is_empty()
@@ -105,7 +99,6 @@ fn parse_book(path: &Path, verses: &mut HashMap<VerseRef, Vec<SourceToken>>) -> 
             Event::Eof => break,
             _ => {}
         }
-        buf.clear();
     }
     Ok(())
 }
