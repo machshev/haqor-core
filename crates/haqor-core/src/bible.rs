@@ -94,6 +94,122 @@ impl BdbEntry {
     }
 }
 
+/// Which lexicon an entry of a root family comes from.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum LexiconSource {
+    /// Brown-Driver-Briggs, via the OSHB Hebrew Lexicon.
+    Bdb,
+    /// Klein's etymological dictionary.
+    Klein,
+    /// Jastrow's dictionary of the Targumim, Talmud and Midrash.
+    Jastrow,
+}
+
+impl LexiconSource {
+    /// The stable key the app picks its source badge by.
+    pub fn as_str(self) -> &'static str {
+        match self {
+            LexiconSource::Bdb => "bdb",
+            LexiconSource::Klein => "klein",
+            LexiconSource::Jastrow => "jastrow",
+        }
+    }
+}
+
+/// One entry of a root family, from any lexicon; see [`Bible::root_lexicon`].
+#[derive(Debug)]
+pub struct LexiconEntry {
+    pub source: LexiconSource,
+    pub headword: String,
+    pub gloss: String,
+    /// The article as span JSON. Klein and Jastrow share BDB's `senses` shape
+    /// and add `etymology`, `derivatives`, `plural` and `alternatives`.
+    pub content_json: String,
+    /// The same buckets as [`BdbEntry::pos_category`].
+    pub pos_category: &'static str,
+    /// The period or language the source marks the entry with: Klein's `NH`,
+    /// `PBH`, `MH` or `FW`, Jastrow's `b. h.` (also biblical) or `ch.`
+    /// (Aramaic). Empty for BDB and for Klein's unmarked, biblical, entries.
+    pub lang: String,
+}
+
+/// A `dictionary_entry` row as [`Bible::root_lexicon`] reads it.
+struct DictionaryRow {
+    word: String,
+    cons: String,
+    lang: String,
+    pos: String,
+    gloss: String,
+    body: Vec<u8>,
+}
+
+/// The keys of the entries Klein lists as an entry's derivatives.
+fn derivative_keys(content_json: &str) -> Vec<String> {
+    serde_json::from_str::<serde_json::Value>(content_json)
+        .ok()
+        .and_then(|v| v.get("derivatives").and_then(|d| d.as_array()).cloned())
+        .into_iter()
+        .flatten()
+        .filter_map(|span| {
+            span.get("dref")
+                .and_then(|d| d.as_str())
+                .map(str::to_string)
+        })
+        .collect()
+}
+
+/// Klein's and Jastrow's part-of-speech markers in [`BdbEntry::pos_category`]'s
+/// buckets. Klein writes `m.n.`, `adj.`, `adv.`; Jastrow `m.`, `f. pl.`,
+/// `pr. n. m.`. Neither marks a verb: a verb is the entry whose senses are
+/// headed by a stem (`Qal`, `Pa.`), which is what `form` records.
+fn dictionary_pos_category(pos: &str, content_json: &str) -> &'static str {
+    let p: String = pos
+        .chars()
+        .filter(|c| !c.is_whitespace())
+        .collect::<String>()
+        .to_ascii_lowercase();
+    if p.starts_with("pr.n") || p.starts_with("pn") || p.contains("n.pr") {
+        "proper"
+    } else if p.starts_with("adj") {
+        "adjective"
+    } else if p.starts_with("adv") {
+        "adverb"
+    } else if p.ends_with("n.")
+        || p.starts_with("m.")
+        || p.starts_with("f.")
+        || p == "m"
+        || p == "f"
+    {
+        "noun"
+    } else if p.is_empty() && content_json.contains("\"form\":") {
+        "verb"
+    } else {
+        "other"
+    }
+}
+
+/// Seat each Klein and Jastrow entry directly after the BDB entry spelled the
+/// same way, so one lexeme's articles read side by side, and list the entries
+/// no BDB headword is spelled like after all of BDB's, Klein before Jastrow.
+fn interleave_lexicons(
+    bdb: Vec<(LexiconEntry, String)>,
+    mut dictionary: Vec<(String, LexiconEntry)>,
+) -> Vec<LexiconEntry> {
+    let rank = |s: LexiconSource| s as u8;
+    dictionary.sort_by_key(|(_, e)| rank(e.source));
+    let mut out = Vec::with_capacity(bdb.len() + dictionary.len());
+    for (entry, skeleton) in bdb {
+        out.push(entry);
+        let (same, rest): (Vec<_>, Vec<_>) = dictionary
+            .into_iter()
+            .partition(|(matched, _)| *matched == skeleton);
+        out.extend(same.into_iter().map(|(_, e)| e));
+        dictionary = rest;
+    }
+    out.extend(dictionary.into_iter().map(|(_, e)| e));
+    out
+}
+
 /// The analysis chosen to describe one OT (Hebrew Bible) surface form, drawn
 /// from the reverse-parse engine output and bridged to lexicon glosses
 /// via the consonantal root. Verb readings carry binyan/tense/person-gender-
@@ -3037,6 +3153,9 @@ impl Bible {
     /// lexeme in, so a compound name appears in the tree of each root it is made
     /// of — אֱלִיעֶ֫זֶר under עזר as well as under אלה.
     pub fn hebrew_bdb_by_root(&self, root: &str) -> rusqlite::Result<Vec<BdbEntry>> {
+        // Roots are stored as bare folded consonants; a root spelled for
+        // display (a SEDRA root, with its final letters) names the same one.
+        let root = fold_consonants(root);
         if root.is_empty() {
             return Ok(Vec::new());
         }
@@ -3313,6 +3432,144 @@ impl Bible {
             .optional()
     }
 
+    /// Every lexicon's entries for a root family: the BDB entries given, each
+    /// followed by the Klein and Jastrow articles spelled the same way, then
+    /// the rest of the family Klein and Jastrow know that BDB does not.
+    ///
+    /// The family is found by spelling. Its skeletons are the root's own, each
+    /// BDB headword's, and `related` — for a Peshitta word, the lexemes of its
+    /// SEDRA root tree. A Klein entry spelled like the root itself is the base
+    /// Klein prints the family under, so the derivatives it lists are added
+    /// too. Matching by spelling over-includes homographs; the reader sorts
+    /// those out from the glosses and the source of each entry.
+    pub fn root_lexicon(
+        &self,
+        root: &str,
+        bdb: Vec<BdbEntry>,
+        related: &[String],
+    ) -> rusqlite::Result<Vec<LexiconEntry>> {
+        let bdb_skeletons: Vec<String> = bdb.iter().map(|e| fold_consonants(&e.headword)).collect();
+        let root_skeleton = fold_consonants(root);
+        let related: Vec<String> = related.iter().map(|r| fold_consonants(r)).collect();
+        let mut skeletons: Vec<String> = Vec::new();
+        for s in std::iter::once(&root_skeleton)
+            .chain(&bdb_skeletons)
+            .chain(&related)
+        {
+            if !s.is_empty() && !skeletons.contains(s) {
+                skeletons.push(s.clone());
+            }
+        }
+        let dictionary = self.dictionary_family(&skeletons, &root_skeleton)?;
+        let bdb = bdb
+            .into_iter()
+            .map(|e| LexiconEntry {
+                source: LexiconSource::Bdb,
+                pos_category: e.pos_category(),
+                headword: e.headword,
+                gloss: e.gloss,
+                content_json: e.content_json,
+                lang: String::new(),
+            })
+            .zip(bdb_skeletons)
+            .collect();
+        Ok(interleave_lexicons(bdb, dictionary))
+    }
+
+    /// Klein and Jastrow entries spelled like any of `skeletons`, plus the
+    /// derivatives Klein lists under the entry spelled like `root`. Each comes
+    /// with the skeleton it matched, which is how [`interleave_lexicons`]
+    /// seats it beside the BDB entry of the same spelling. Empty when the
+    /// database predates the dictionaries.
+    fn dictionary_family(
+        &self,
+        skeletons: &[String],
+        root: &str,
+    ) -> rusqlite::Result<Vec<(String, LexiconEntry)>> {
+        let present: bool = self.db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM data.sqlite_master \
+             WHERE type = 'table' AND name = 'dictionary_entry')",
+            [],
+            |row| row.get(0),
+        )?;
+        if !present || skeletons.is_empty() {
+            return Ok(Vec::new());
+        }
+        let mut by_form = self.db.prepare(
+            "SELECT e.entry_id, e.source, e.key, e.word, e.cons, e.lang, e.pos, e.gloss, e.body \
+             FROM data.dictionary_form f \
+             JOIN data.dictionary_entry e ON e.entry_id = f.entry_id \
+             WHERE f.cons = ?1 ORDER BY e.source DESC, e.entry_id",
+        )?;
+        let mut by_key = self.db.prepare(
+            "SELECT entry_id, source, key, word, cons, lang, pos, gloss, body \
+             FROM data.dictionary_entry WHERE source = 'klein' AND key = ?1",
+        )?;
+        let read = |row: &rusqlite::Row| -> rusqlite::Result<(i64, String, DictionaryRow)> {
+            Ok((
+                row.get(0)?,
+                row.get::<_, String>(1)?,
+                DictionaryRow {
+                    word: row.get(3)?,
+                    cons: row.get(4)?,
+                    lang: row.get::<_, Option<String>>(5)?.unwrap_or_default(),
+                    pos: row.get::<_, Option<String>>(6)?.unwrap_or_default(),
+                    gloss: row.get::<_, Option<String>>(7)?.unwrap_or_default(),
+                    body: row.get(8)?,
+                },
+            ))
+        };
+
+        let mut seen = HashSet::new();
+        let mut found: Vec<(String, String, DictionaryRow)> = Vec::new();
+        for skeleton in skeletons {
+            for row in by_form.query_map([skeleton], read)? {
+                let (id, source, row) = row?;
+                if seen.insert(id) {
+                    found.push((skeleton.clone(), source, row));
+                }
+            }
+        }
+        // Klein's base entry names its family outright.
+        let mut derivatives = Vec::new();
+        for (_, source, row) in &found {
+            if source == "klein" && row.cons == root {
+                derivatives.extend(derivative_keys(&self.blobs.decode(row.body.clone())?));
+            }
+        }
+        for key in derivatives {
+            for row in by_key.query_map([&key], read)? {
+                let (id, source, row) = row?;
+                if seen.insert(id) {
+                    found.push((row.cons.clone(), source, row));
+                }
+            }
+        }
+
+        found
+            .into_iter()
+            .map(|(skeleton, source, row)| {
+                let content_json = self.blobs.decode(row.body)?;
+                let source = if source == "klein" {
+                    LexiconSource::Klein
+                } else {
+                    LexiconSource::Jastrow
+                };
+                Ok((
+                    skeleton,
+                    LexiconEntry {
+                        source,
+                        pos_category: dictionary_pos_category(&row.pos, &content_json),
+                        headword: normalize_hebrew_combining(&row.word),
+                        gloss: row.gloss,
+                        content_json,
+                        lang: row.lang,
+                    },
+                ))
+            })
+            .collect()
+    }
+
     /// The learner vocabulary: distinct Hebrew (non-Aramaic) surface forms in
     /// descending occurrence order, each bridged to a BDB gloss where
     /// possible. Resolution order per surface: the parse engine's best
@@ -3568,6 +3825,32 @@ impl Bible {
                 .join(" "))
         })?
         .collect()
+    }
+
+    /// The SEDRA root trees spelled with the same letters as `root`, for an OT
+    /// word's Aramaic cognates. SEDRA stores roots as bare folded consonants,
+    /// as BDB does, so a Hebrew root names its Syriac counterparts directly —
+    /// more than one where SEDRA distinguishes homograph roots. Empty when the
+    /// Peshitta has no such root; no lexeme is flagged current.
+    pub fn sedra_root_tree_by_letters(
+        &self,
+        root: &str,
+    ) -> rusqlite::Result<Vec<SedraLexemeSummary>> {
+        let root = fold_consonants(root);
+        if root.is_empty() {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self
+            .db
+            .prepare("SELECT root_id FROM data.syriac_root WHERE root = ?1 ORDER BY root_id")?;
+        let key_roots = stmt
+            .query_map([&root], |row| row.get::<_, i64>(0))?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let mut tree = Vec::new();
+        for key_root in key_roots {
+            tree.extend(self.sedra_root_tree(key_root, -1)?);
+        }
+        Ok(tree)
     }
 
     /// All lexemes sharing a root, giving an overview of the root family.
@@ -4182,6 +4465,97 @@ mod tests {
                 .unwrap()
                 .iter()
                 .all(|q| q.ot.book == 27)
+        );
+    }
+
+    #[test]
+    fn dictionary_markers_fall_into_bdbs_buckets() {
+        let verb = r#"{"senses":[{"form":"Qal","senses":[]}]}"#;
+        let plain = r#"{"senses":[{"definition":[{"t":"father."}]}]}"#;
+        assert_eq!(dictionary_pos_category("m.n.", plain), "noun");
+        assert_eq!(dictionary_pos_category("f. pl.", plain), "noun");
+        assert_eq!(dictionary_pos_category("m.", plain), "noun");
+        assert_eq!(dictionary_pos_category("pr. n. m.", plain), "proper");
+        assert_eq!(dictionary_pos_category("adj.", plain), "adjective");
+        assert_eq!(dictionary_pos_category("adv.", plain), "adverb");
+        assert_eq!(dictionary_pos_category("", verb), "verb");
+        assert_eq!(dictionary_pos_category("", plain), "other");
+        assert_eq!(dictionary_pos_category("conj.", plain), "other");
+    }
+
+    #[test]
+    fn dictionary_entries_sit_beside_the_bdb_entry_spelled_alike() {
+        let entry = |source, headword: &str| LexiconEntry {
+            source,
+            headword: headword.to_string(),
+            gloss: String::new(),
+            content_json: String::new(),
+            pos_category: "noun",
+            lang: String::new(),
+        };
+        let bdb = vec![
+            (entry(LexiconSource::Bdb, "שָׁלֵם"), "שלמ".to_string()),
+            (entry(LexiconSource::Bdb, "שָׁלוֹם"), "שלומ".to_string()),
+        ];
+        let dictionary = vec![
+            ("שלומ".to_string(), entry(LexiconSource::Jastrow, "שָׁלוֹם")),
+            ("שלמנ".to_string(), entry(LexiconSource::Klein, "שַׁלְמָן")),
+            ("שלומ".to_string(), entry(LexiconSource::Klein, "שָׁלוֹם")),
+        ];
+        let order: Vec<(LexiconSource, String)> = interleave_lexicons(bdb, dictionary)
+            .into_iter()
+            .map(|e| (e.source, e.headword))
+            .collect();
+        assert_eq!(
+            order,
+            vec![
+                (LexiconSource::Bdb, "שָׁלֵם".to_string()),
+                (LexiconSource::Bdb, "שָׁלוֹם".to_string()),
+                (LexiconSource::Klein, "שָׁלוֹם".to_string()),
+                (LexiconSource::Jastrow, "שָׁלוֹם".to_string()),
+                (LexiconSource::Klein, "שַׁלְמָן".to_string()),
+            ]
+        );
+    }
+
+    #[test]
+    fn klein_lists_the_derivatives_of_a_base() {
+        let body =
+            r#"{"derivatives":[{"t":" "},{"dref":"U01168","t":"שָׁלֵם"},{"t":", "},{"t":"x"}]}"#;
+        assert_eq!(derivative_keys(body), vec!["U01168".to_string()]);
+        assert!(derivative_keys(r#"{"senses":[]}"#).is_empty());
+    }
+
+    #[test]
+    fn a_root_family_gathers_every_lexicon() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        // Spelled with its final letter, as a SEDRA root arrives.
+        let bdb = bible.hebrew_bdb_by_root("שלם").unwrap();
+        assert!(!bdb.is_empty(), "no BDB entries under שלם");
+        let bdb_count = bdb.len();
+        let family = bible.root_lexicon("שלם", bdb, &[]).unwrap();
+        let count = |source| family.iter().filter(|e| e.source == source).count();
+        assert_eq!(count(LexiconSource::Bdb), bdb_count);
+        assert!(count(LexiconSource::Klein) > 0, "no Klein entries for שלם");
+        assert!(
+            count(LexiconSource::Jastrow) > 0,
+            "no Jastrow entries for שלם"
+        );
+        // Klein's base שׁלם carries the etymology the reader came for.
+        assert!(
+            family
+                .iter()
+                .any(|e| e.source == LexiconSource::Klein && e.content_json.contains("etymology")),
+        );
+
+        // A Peshitta word reaches its Aramaic lexemes through `related`.
+        let family = bible
+            .root_lexicon("שלם", Vec::new(), &["שלמא".to_string()])
+            .unwrap();
+        assert!(
+            family.iter().any(|e| e.source == LexiconSource::Jastrow),
+            "no Jastrow entry reached from שלמא"
         );
     }
 
