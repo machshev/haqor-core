@@ -309,6 +309,8 @@ pub fn generate_runtime(data_dir: &Path, output: &Path, codec: BlobCodec) -> Res
         copy_roots(db)?;
         copy_verse_stats(db)?;
         copy_lexicon(db, &mut encoder)?;
+        let dictionary = copy_dictionary(db, &mut encoder)?;
+        info!("  {dictionary} Klein and Jastrow entries");
         let entries = build_surface_entries(db)?;
         info!("  {entries} (surface, lexicon entry) links from the OSHB lemmas");
         copy_syriac(db)?;
@@ -495,6 +497,32 @@ CREATE TABLE surface_entry(
     PRIMARY KEY(surface_id, key)
 ) WITHOUT ROWID;
 
+-- Klein and Jastrow (`source`), keyed by their Sefaria entry id. `body` is the
+-- same span JSON as `lexicon_entry.body`, with `etymology`, `derivatives`,
+-- `plural` and `alternatives` beside the senses, and a `dref` span naming
+-- another entry of the same source where BDB spans carry `xref`.
+CREATE TABLE dictionary_entry(
+    entry_id INTEGER PRIMARY KEY,
+    source   TEXT NOT NULL,
+    key      TEXT NOT NULL,
+    word     TEXT NOT NULL,
+    cons     TEXT NOT NULL,
+    lang     TEXT,
+    pos      TEXT,
+    gloss    TEXT,
+    body     BLOB NOT NULL
+);
+
+-- Every consonant skeleton a dictionary entry is spelled with, headword and
+-- alternatives. `lexicon_entry.cons` and `syriac_lexeme.lexeme` are skeletons
+-- in the same form, so a BDB entry or a Peshitta lexeme finds its Klein and
+-- Jastrow articles with one indexed lookup.
+CREATE TABLE dictionary_form(
+    cons     TEXT    NOT NULL,
+    entry_id INTEGER NOT NULL,
+    PRIMARY KEY(cons, entry_id)
+) WITHOUT ROWID;
+
 CREATE TABLE word_gloss(
     surface         TEXT PRIMARY KEY,
     gloss           TEXT NOT NULL,
@@ -561,6 +589,7 @@ CREATE INDEX out.idx_lexicon_entry_cons ON lexicon_entry(cons);
 CREATE INDEX out.idx_entry_root_root ON entry_root(root);
 CREATE INDEX out.idx_surface_entry_key ON surface_entry(key);
 CREATE INDEX out.idx_surface_cons ON surface(cons);
+CREATE UNIQUE INDEX out.idx_dictionary_entry_key ON dictionary_entry(source, key);
 CREATE INDEX out.idx_syriac_lexeme_root ON syriac_lexeme(root_id);
 CREATE INDEX out.idx_syriac_word_lexeme ON syriac_word(lexeme_id);
 CREATE INDEX out.idx_syriac_word_vocalised ON syriac_word(vocalised);
@@ -596,12 +625,14 @@ impl Encoder {
             return Ok(Encoder::Plain);
         }
         let mut samples: Vec<Vec<u8>> = Vec::new();
-        // Every 4th verse and every 4th entry body: enough to characterise both
-        // kinds of blob without making training the slowest part of the build.
+        // Every 4th verse and every 4th entry body: enough to characterise each
+        // kind of blob without making training the slowest part of the build.
         let mut stmt = db.prepare(
             "SELECT words FROM bibledb.bible WHERE rowid % 4 = 0
              UNION ALL
-             SELECT content_json FROM lexdb.bdb WHERE rowid % 4 = 0 AND content_json IS NOT NULL",
+             SELECT content_json FROM lexdb.bdb WHERE rowid % 4 = 0 AND content_json IS NOT NULL
+             UNION ALL
+             SELECT content_json FROM lexdb.dictionary WHERE rowid % 4 = 0",
         )?;
         let mut rows = stmt.query([])?;
         while let Some(row) = rows.next()? {
@@ -827,6 +858,41 @@ fn copy_lexicon(db: &Connection, encoder: &mut Encoder) -> Result<()> {
            SELECT surface, root, gloss FROM lexdb.lexicon_overrides",
     )?;
     Ok(())
+}
+
+/// Klein and Jastrow, with their bodies encoded like `lexicon_entry.body`.
+fn copy_dictionary(db: &Connection, encoder: &mut Encoder) -> Result<usize> {
+    let mut stmt = db.prepare(
+        "SELECT source, key, word, cons, lang, pos, gloss, content_json
+         FROM lexdb.dictionary ORDER BY source, key",
+    )?;
+    let mut insert = db.prepare(
+        "INSERT INTO out.dictionary_entry(source, key, word, cons, lang, pos, gloss, body)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
+    )?;
+    let mut rows = stmt.query([])?;
+    let mut copied = 0;
+    while let Some(row) = rows.next()? {
+        let body = encoder.encode(&row.get::<_, String>(7)?)?;
+        insert.execute(params![
+            row.get::<_, String>(0)?,
+            row.get::<_, String>(1)?,
+            row.get::<_, String>(2)?,
+            row.get::<_, String>(3)?,
+            row.get::<_, Option<String>>(4)?,
+            row.get::<_, Option<String>>(5)?,
+            row.get::<_, Option<String>>(6)?,
+            body,
+        ])?;
+        copied += 1;
+    }
+    db.execute_batch(
+        "INSERT INTO out.dictionary_form(cons, entry_id)
+           SELECT f.cons, e.entry_id
+           FROM lexdb.dictionary_form f
+           JOIN out.dictionary_entry e ON e.source = f.source AND e.key = f.key",
+    )?;
+    Ok(copied)
 }
 
 /// Link each surface to the lexicon entries its *tagging* names.

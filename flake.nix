@@ -88,6 +88,9 @@
 
                   sqlitebrowser
 
+                  # bsondump, for scripts/fetch-sefaria-lexicons.sh
+                  mongodb-tools
+
                   # If the dependencies need system libs, you usually need pkg-config + the lib
                   pkg-config
                   openssl

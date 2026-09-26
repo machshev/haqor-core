@@ -40,6 +40,23 @@ the fetch script verifies their checksums before the generator consumes them.
 Full `gen-hebrew --force` builds also include TAHOT, but the refresh command is
 the intended low-resource path when only the interlinear source has changed.
 
+Klein's etymological dictionary and Jastrow's dictionary of the Targumim,
+Talmud and Midrash come from Sefaria's digitisations and sit beside BDB in
+`lexicon.db` (`dictionary`) and `haqor.db` (`dictionary_entry`). Sefaria
+publishes them only inside its nightly database dump, so the entries Haqor
+uses — Klein's biblical layer, Jastrow's biblical and Aramaic words, and any
+entry spelled like a BDB headword or a SEDRA lexeme — are checked in under
+`src_texts/Sefaria/`, and `gen-lexicon` reads them from there. Refreshing them
+is a deliberate step, reviewed by its diff:
+
+```sh
+nix develop -c ./scripts/fetch-sefaria-lexicons.sh
+cargo run --release -- db gen-lexicon
+```
+
+The script streams the ~2.5 GB dump, keeps only its `lexicon_entry`
+collection, and records the dump date and checksum in `src_texts/Sefaria/SOURCE`.
+
 ## Commands
 
 The CLI is the workspace's default member, so it remains available from the
@@ -140,6 +157,20 @@ bridging them. The digitised files are released CC BY 4.0 — credit the Open
 Scriptures Hebrew Bible Project — while the underlying text of Brown, Driver,
 Briggs and of Strong's remains in the public domain. Haqor's own lexicon is an
 edited and expanded derivative of these entries.
+
+**Etymological dictionary** — Ernest Klein, *A Comprehensive Etymological
+Dictionary of the Hebrew Language for Readers of English* (Carta Jerusalem,
+1987), in the [digitisation by Sefaria](https://www.sefaria.org/Klein_Dictionary),
+licensed CC BY-NC. Haqor carries the entries a reader of the Hebrew Bible or the
+Peshitta can reach, converted from Sefaria's HTML into its own entry format;
+the wording is unchanged. The non-commercial terms apply to this data wherever
+Haqor is redistributed.
+
+**Rabbinic and Aramaic dictionary** — Marcus Jastrow, *A Dictionary of the
+Targumim, the Talmud Babli and Yerushalmi, and the Midrashic Literature*
+(Luzac, London, 1903), in the public domain, from the
+[digitisation by Sefaria](https://www.sefaria.org/Jastrow). Filtered and
+converted in the same way as Klein.
 
 **Interlinear translations** — STEP Bible's
 [TAHOT dataset](https://github.com/STEPBible/STEPBible-Data), licensed CC BY

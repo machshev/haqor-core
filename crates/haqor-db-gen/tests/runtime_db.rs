@@ -315,6 +315,61 @@ fn compressed_verse_text_round_trips_through_the_shipped_dictionary() {
     }
     assert_eq!(checked, 31_171, "the whole corpus should be stored");
 
+    // Klein and Jastrow bodies share the dictionary, and are what a BDB entry
+    // and a Peshitta lexeme reach through `dictionary_form`.
+    let mut stmt = source
+        .prepare("SELECT source, key, content_json FROM lexdb.dictionary")
+        .expect("preparing");
+    let mut rows = stmt.query([]).expect("querying");
+    let mut entries = 0;
+    while let Some(row) = rows.next().expect("reading an entry") {
+        let (kind, key, expected): (String, String, String) = (
+            row.get(0).unwrap(),
+            row.get(1).unwrap(),
+            row.get(2).unwrap(),
+        );
+        let stored: Vec<u8> = db
+            .query_row(
+                "SELECT body FROM dictionary_entry WHERE source = ?1 AND key = ?2",
+                [&kind, &key],
+                |r| r.get(0),
+            )
+            .unwrap_or_else(|e| panic!("{kind} {key} missing from the build: {e}"));
+        let plain = decompressor
+            .decompress(&stored, 1024 * 1024)
+            .unwrap_or_else(|e| panic!("{kind} {key} does not decompress: {e}"));
+        assert_eq!(String::from_utf8(plain).unwrap(), expected, "{kind} {key}");
+        entries += 1;
+    }
+    assert!(entries > 20_000, "only {entries} dictionary entries");
+    let reaches = |sql: &str| -> Vec<String> {
+        let mut stmt = db.prepare(sql).expect("preparing");
+        stmt.query_map([], |r| r.get(0))
+            .expect("querying")
+            .map(Result::unwrap)
+            .collect()
+    };
+    let from_bdb = reaches(
+        "SELECT d.source FROM lexicon_entry l
+         JOIN dictionary_form f ON f.cons = l.cons
+         JOIN dictionary_entry d ON d.entry_id = f.entry_id
+         WHERE l.cons = 'שלומ'",
+    );
+    assert!(
+        from_bdb.iter().any(|s| s == "klein"),
+        "BDB שלום reaches {from_bdb:?}"
+    );
+    let from_peshitta = reaches(
+        "SELECT d.source FROM syriac_lexeme l
+         JOIN dictionary_form f ON f.cons = l.lexeme
+         JOIN dictionary_entry d ON d.entry_id = f.entry_id
+         WHERE l.lexeme = 'מלכותא'",
+    );
+    assert!(
+        from_peshitta.iter().any(|s| s == "jastrow"),
+        "Syriac מלכותא reaches {from_peshitta:?}"
+    );
+
     // Now the reader's own path: pure-Rust decoding, through the dictionary the
     // database carries, with nothing but the shipped file to go on.
     drop(db);

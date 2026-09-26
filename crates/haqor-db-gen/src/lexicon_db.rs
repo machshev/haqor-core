@@ -23,6 +23,12 @@
 //!   entry in, and a compound name's other elements follow from the Strong's
 //!   derivation (see [`load_entry_roots`]).
 //!
+//! - `dictionary` / `dictionary_form` — Klein and Jastrow, from the checked-in
+//!   `src_texts/Sefaria` files (see [`crate::sefaria`]). Their articles use the
+//!   same span JSON as `bdb.content_json`, and `dictionary_form` lists every
+//!   consonant skeleton an entry is spelled with, which is how a BDB entry or a
+//!   SEDRA lexeme finds them.
+//!
 //! So a token's Strong's lemma reaches its full BDB entry via
 //! `english.strong → lexical_index.strong → lexical_index.bdb_id → bdb.bdb_id`
 //! (a many-to-many join: BDB groups by root, Strong's by lexeme).
@@ -619,7 +625,7 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
 /// bridge — `hebrew.db` noun stems carry final forms and vowels, so matching a
 /// stem to its BDB lexeme (and thence its root) needs both sides reduced to bare
 /// medial consonants.
-fn consonants(word: &str) -> String {
+pub(crate) fn consonants(word: &str) -> String {
     word.chars()
         .filter_map(|c| {
             let n = c as u32;
@@ -644,8 +650,8 @@ fn consonants(word: &str) -> String {
 /// alone: the headword fills in the visible link text, and the pos is inherited
 /// so the redirect groups with the entry it points at rather than as "other".
 #[derive(Default, Clone)]
-struct BdbRef {
-    headword: String,
+pub(crate) struct BdbRef {
+    pub(crate) headword: String,
     pos: String,
     /// The root of the section the target sits in, so a redirect can be filed
     /// under the root of the article it points at instead of the one it happens
@@ -658,7 +664,7 @@ struct BdbRef {
 /// `<w src="a.eg.aa"/>` form carries no text — so [`load_bdb`] needs this map to
 /// fill in what the target reads as, and to adopt its grammatical class. One
 /// cheap pass; the file is ~20MB.
-fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, BdbRef>> {
+pub(crate) fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<String, BdbRef>> {
     let mut reader = crate::xml::Reader::open(path)?;
     let mut map = std::collections::HashMap::new();
     let mut id = String::new();
@@ -1663,13 +1669,15 @@ pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
     info!("  {roots} rows -> roots");
     let entry_roots = load_entry_roots(&mut db)?;
     info!("  {entry_roots} rows -> entry_root");
+    let dictionary = crate::sefaria::load_sefaria(&mut db, &src_texts.join("Sefaria"))?;
+    info!("  {dictionary} rows -> dictionary (Klein, Jastrow)");
 
     let overlay_path =
         Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/lexicon_overrides.json");
     let overlays = load_overlays(&mut db, &overlay_path)?;
     info!("  {overlays} rows -> manual lexical overlays");
 
-    let total = strongs + bdb + index + roots + entry_roots + overlays;
+    let total = strongs + bdb + index + roots + entry_roots + dictionary + overlays;
     info!("Wrote {total} rows to {}", output.display());
     Ok(total)
 }

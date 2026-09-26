@@ -257,6 +257,21 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/lexicon.db")]
         output: PathBuf,
     },
+    /// Filter the Klein and Jastrow entries out of Sefaria's `lexicon_entry`
+    /// collection (as JSON lines, from bsondump) into the checked-in
+    /// src_texts/Sefaria files. Run by scripts/fetch-sefaria-lexicons.sh.
+    ImportSefaria {
+        /// The `lexicon_entry` collection as JSON lines
+        #[arg(short, long)]
+        input: PathBuf,
+        /// Source texts directory, for the BDB and SEDRA headwords the filter
+        /// keeps entries reachable from
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+        /// Directory the filtered files are written to
+        #[arg(short, long, default_value = "src_texts/Sefaria")]
+        output: PathBuf,
+    },
     /// Curate the four generation databases into the single runtime haqor.db
     /// the app ships: references packed, strings interned, candidate analyses
     /// resolved once into word_info, and generation-only tables dropped.
@@ -503,6 +518,18 @@ fn main() -> Result<()> {
             DbCommands::GenLexicon { src_texts, output } => {
                 let total = haqor_db_gen::generate_lexicon(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
+            }
+            DbCommands::ImportSefaria {
+                input,
+                src_texts,
+                output,
+            } => {
+                for summary in haqor_db_gen::import_sefaria(&input, &src_texts, &output)? {
+                    println!(
+                        "{}: kept {} of {} entries",
+                        summary.source, summary.kept, summary.read
+                    );
+                }
             }
             DbCommands::GenRuntime {
                 data_dir,

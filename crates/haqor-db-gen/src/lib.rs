@@ -15,6 +15,7 @@ mod quotations;
 mod runtime_db;
 mod sedra;
 mod sedra_db;
+mod sefaria;
 mod stepbible;
 mod uxlc;
 mod xml;
@@ -34,6 +35,7 @@ pub use quotations::{
     gen_quotes, ref_label,
 };
 pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, open_generation_dbs, pack_ref};
+pub use sefaria::{ImportSummary, import_sefaria};
 pub use stepbible::source_dir as stepbible_source_dir;
 
 use std::path::Path;
