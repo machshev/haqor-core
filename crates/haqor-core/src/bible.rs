@@ -690,6 +690,53 @@ pub(crate) fn decode_noun_label(label: &str) -> (Option<String>, Option<String>)
     (None, state)
 }
 
+/// A single verse, in the corpus numbering (OT books 1–39 in Tanakh order,
+/// NT books 40–66).
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub struct VerseRef {
+    pub book: u8,
+    pub chapter: u8,
+    pub verse: u8,
+}
+
+impl VerseRef {
+    fn unpack(reference: i64) -> Self {
+        VerseRef {
+            book: (reference >> 16) as u8,
+            chapter: ((reference >> 8) & 255) as u8,
+            verse: (reference & 255) as u8,
+        }
+    }
+}
+
+/// An NT verse quoting, or closely echoing, an OT verse. Found at build time
+/// by aligning the Peshitta's roots against the Hebrew text's directly, so no
+/// translation is involved; see `haqor-db-gen`'s `quotations` module.
+#[derive(Debug, Clone, PartialEq)]
+pub struct Quotation {
+    /// Position in the global ranking, 1 being the strongest match.
+    pub rank: u32,
+    /// Local-alignment score the ranking is ordered by.
+    pub score: f32,
+    pub ot: VerseRef,
+    pub nt: VerseRef,
+    /// The aligned words, pairwise: `ot_positions[i]` (a `verse_word`
+    /// position, as [`Bible::hebrew_word_info_at`] takes) matched
+    /// `nt_positions[i]` (the word's index in the NT verse).
+    pub ot_positions: Vec<u16>,
+    pub nt_positions: Vec<u16>,
+}
+
+/// Which quotations [`Bible::quotations`] lists. `book` may be an OT or an NT
+/// book and filters the matching side; the chapter bounds are inclusive and
+/// only apply together with `book`.
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq)]
+pub struct QuotationFilter {
+    pub book: Option<u8>,
+    pub first_chapter: Option<u8>,
+    pub last_chapter: Option<u8>,
+}
+
 #[derive(Debug)]
 pub struct WordOccurrence {
     pub book: u8,
@@ -3681,6 +3728,71 @@ impl Bible {
         Ok(entries)
     }
 
+    /// Quotations linking one verse to the other testament, strongest first:
+    /// for an OT verse the NT verses quoting it, for an NT verse the OT verses
+    /// it quotes.
+    pub fn cross_references(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+    ) -> rusqlite::Result<Vec<Quotation>> {
+        let side = if book >= 40 { "nt_ref" } else { "ot_ref" };
+        self.query_quotations(
+            &format!("WHERE {side} = ?1 ORDER BY quote_id"),
+            &[&pack_ref(book, chapter, verse)],
+        )
+    }
+
+    /// Quotations in rank order, optionally limited to one book (either
+    /// testament) and a chapter range within it. `limit` and `offset` page
+    /// through the ranking.
+    pub fn quotations(
+        &self,
+        filter: QuotationFilter,
+        limit: u32,
+        offset: u32,
+    ) -> rusqlite::Result<Vec<Quotation>> {
+        let Some(book) = filter.book else {
+            return self
+                .query_quotations("ORDER BY quote_id LIMIT ?1 OFFSET ?2", &[&limit, &offset]);
+        };
+        let side = if book >= 40 { "nt_ref" } else { "ot_ref" };
+        let low = pack_ref(book, filter.first_chapter.unwrap_or(0), 0);
+        let high = pack_ref(book, filter.last_chapter.unwrap_or(255), 255);
+        self.query_quotations(
+            &format!("WHERE {side} BETWEEN ?1 AND ?2 ORDER BY quote_id LIMIT ?3 OFFSET ?4"),
+            &[&low, &high, &limit, &offset],
+        )
+    }
+
+    fn query_quotations(
+        &self,
+        clause: &str,
+        params: &[&dyn rusqlite::ToSql],
+    ) -> rusqlite::Result<Vec<Quotation>> {
+        let positions = |text: String| -> Vec<u16> {
+            text.split_whitespace()
+                .filter_map(|p| p.parse().ok())
+                .collect()
+        };
+        let mut stmt = self.db.prepare(&format!(
+            "SELECT quote_id, score, ot_ref, nt_ref, ot_positions, nt_positions \
+             FROM data.quotation {clause}"
+        ))?;
+        stmt.query_map(params, |row| {
+            Ok(Quotation {
+                rank: row.get(0)?,
+                score: row.get::<_, f64>(1)? as f32,
+                ot: VerseRef::unpack(row.get(2)?),
+                nt: VerseRef::unpack(row.get(3)?),
+                ot_positions: positions(row.get(4)?),
+                nt_positions: positions(row.get(5)?),
+            })
+        })?
+        .collect()
+    }
+
     pub fn chapter_count(&self, book: u8) -> rusqlite::Result<u8> {
         self.db.query_row(
             "SELECT MAX((ref >> 8) & 255) FROM data.verse WHERE ref BETWEEN ?1 AND ?2",
@@ -3862,6 +3974,70 @@ mod tests {
         assert_eq!(imperative.person.as_deref(), Some("Second"));
         assert_eq!(imperative.gender.as_deref(), Some("Masculine"));
         assert_eq!(imperative.number.as_deref(), Some("Singular"));
+    }
+
+    /// The quotation table links well-known quotations in both directions and
+    /// the ranked listing honours its book and chapter-range filter.
+    #[test]
+    fn quotations_cross_reference_both_testaments() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let isaiah_7_14 = VerseRef {
+            book: 12,
+            chapter: 7,
+            verse: 14,
+        };
+        let matthew_1_23 = VerseRef {
+            book: 40,
+            chapter: 1,
+            verse: 23,
+        };
+
+        let from_nt = bible.cross_references(40, 1, 23).unwrap();
+        let quote = from_nt
+            .iter()
+            .find(|q| q.ot == isaiah_7_14)
+            .expect("Mt 1:23 quotes Isa 7:14");
+        assert_eq!(quote.nt, matthew_1_23);
+        assert_eq!(quote.ot_positions.len(), quote.nt_positions.len());
+        assert!(from_nt.windows(2).all(|w| w[0].rank < w[1].rank));
+        let from_ot = bible.cross_references(12, 7, 14).unwrap();
+        assert!(from_ot.iter().any(|q| q.nt == matthew_1_23));
+
+        let top = bible.quotations(QuotationFilter::default(), 20, 0).unwrap();
+        assert_eq!(
+            top.iter().map(|q| q.rank).collect::<Vec<_>>(),
+            (1..=20).collect::<Vec<_>>()
+        );
+        assert_eq!(
+            bible.quotations(QuotationFilter::default(), 5, 10).unwrap()[0].rank,
+            11
+        );
+
+        let filter = QuotationFilter {
+            book: Some(40),
+            first_chapter: Some(2),
+            last_chapter: Some(4),
+        };
+        let matthew = bible.quotations(filter, 1000, 0).unwrap();
+        assert!(!matthew.is_empty());
+        assert!(
+            matthew
+                .iter()
+                .all(|q| q.nt.book == 40 && (2..=4).contains(&q.nt.chapter))
+        );
+        assert!(matthew.windows(2).all(|w| w[0].rank < w[1].rank));
+        let psalms = QuotationFilter {
+            book: Some(27),
+            ..Default::default()
+        };
+        assert!(
+            bible
+                .quotations(psalms, 1000, 0)
+                .unwrap()
+                .iter()
+                .all(|q| q.ot.book == 27)
+        );
     }
 
     #[test]

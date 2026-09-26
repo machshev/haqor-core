@@ -11,6 +11,7 @@ mod occurrences;
 mod oshb;
 mod prefilter;
 mod proper_names;
+mod quotations;
 mod runtime_db;
 mod sedra;
 mod sedra_db;
@@ -28,6 +29,9 @@ pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
 };
 pub use occurrences::parse_ot_coverage;
+pub use quotations::{
+    KNOWN_QUOTATIONS, build_quotations, explain_pair, gen_quotes, known_quotation_ranks, ref_label,
+};
 pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, open_generation_dbs, pack_ref};
 pub use stepbible::source_dir as stepbible_source_dir;
 

@@ -274,6 +274,22 @@ enum DbCommands {
         #[arg(long, default_value = "none")]
         blob_codec: String,
     },
+    /// Find NT (Peshitta) quotations of the Hebrew OT by root alignment and
+    /// rebuild the `quotation` table of a runtime haqor.db in place (gen-runtime
+    /// also builds it). Prints the strongest pairs and the recall on a list of
+    /// well-known quotations.
+    GenQuotes {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// How many of the top-ranked pairs to print.
+        #[arg(short = 'n', long, default_value_t = 40)]
+        top: usize,
+        /// Instead of rebuilding, explain one pair: `NT_BOOK:CH:V=OT_BOOK:CH:V`
+        /// (book numbers), e.g. `40:2:15=15:11:1`.
+        #[arg(long)]
+        explain: Option<String>,
+    },
     /// Exhaustive lexicon-coverage audit: run every distinct surface form in
     /// the corpus through the exact lookup the app's word-info sheet performs
     /// (word info + BDB bridge) and list the surfaces that end up with no
@@ -486,6 +502,18 @@ fn main() -> Result<()> {
                 let words = haqor_db_gen::generate_runtime(&data_dir, &output, codec)?;
                 println!("Wrote {} words to {}", words, output.display());
             }
+            DbCommands::GenQuotes { db, top, explain } => match explain {
+                Some(pair) => {
+                    let parse = |s: &str| -> Result<i64> {
+                        let n: Vec<i64> = s.split(':').map(str::parse).collect::<Result<_, _>>()?;
+                        anyhow::ensure!(n.len() == 3, "expected BOOK:CH:V, got {s}");
+                        Ok(haqor_db_gen::pack_ref(n[0], n[1], n[2]))
+                    };
+                    let (nt, ot) = pair.split_once('=').context("expected NT=OT")?;
+                    haqor_db_gen::explain_pair(&db, parse(nt)?, parse(ot)?)?;
+                }
+                None => haqor_db_gen::gen_quotes(&db, top)?,
+            },
             DbCommands::LexiconScan {
                 data_dir,
                 language,

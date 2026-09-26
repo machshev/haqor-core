@@ -325,6 +325,9 @@ pub fn generate_runtime(data_dir: &Path, output: &Path, codec: BlobCodec) -> Res
     db.execute_batch(INDEXES)?;
     db.execute_batch("DETACH DATABASE out")?;
 
+    let quotations = crate::quotations::build_quotations(&Connection::open(output)?)?;
+    info!("Found {quotations} OT quotations in the NT");
+
     // VACUUM cannot run on an attached database, so the reclaim happens on the
     // finished file. It matters: the bulk load leaves the free pages that make
     // up the difference between the working size and the shipped size.

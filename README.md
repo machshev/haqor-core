@@ -73,6 +73,20 @@ the database. See [ADR 6](doc/adr/0006-single-runtime-database.md).
 tests that need a corpus, and the app all open `haqor.db`. Regenerate it
 whenever an earlier stage changes, or they keep reading the previous build.
 
+### OT quotations in the NT
+
+`gen-runtime` also fills a `quotation` table: NT verses that quote or echo an
+OT verse, found by aligning the Peshitta's roots against the Hebrew text's
+directly (Aramaic and Hebrew share most roots), so no translation is involved.
+`Bible::cross_references` returns a verse's links to the other testament and
+`Bible::quotations` lists them by rank, optionally within one book and
+chapter range. To tune the matcher without a full rebuild:
+
+```sh
+cargo run --release -- db gen-quotes                         # rebuild the table in place, report recall
+cargo run --release -- db gen-quotes --explain 40:2:15=15:11:1   # why a pair does or doesn't match
+```
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:
