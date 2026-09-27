@@ -21,7 +21,7 @@
 //! `lexicon_entry`, `sedra.words` becomes `syriac_word`. Attribution lives in
 //! the READMEs and the app's About view.
 
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::path::Path;
 use std::time::{SystemTime, UNIX_EPOCH};
 
@@ -153,6 +153,9 @@ struct Builder {
     info_rows: Vec<InfoRow>,
     /// Row content back to its id, so an identical rendering is stored once.
     row_ids: HashMap<InfoRow, i64>,
+    /// How many of each surface's tokens resolved to each rendering, for the
+    /// position-free default (see [`Builder::surface_default`]).
+    token_infos: HashMap<i64, HashMap<i64, u32>>,
 }
 
 impl Builder {
@@ -163,6 +166,54 @@ impl Builder {
             infos: HashMap::new(),
             info_rows: Vec::new(),
             row_ids: HashMap::new(),
+            token_infos: HashMap::new(),
+        }
+    }
+
+    /// Record that one token of `surface_id` resolved to `info_id`.
+    fn count_token(&mut self, surface_id: i64, info_id: i64) {
+        *self
+            .token_infos
+            .entry(surface_id)
+            .or_default()
+            .entry(info_id)
+            .or_default() += 1;
+    }
+
+    /// The position-free rendering of a surface, given the one resolved with
+    /// no tagging (`untagged`). That one falls back on the parser's top
+    /// analysis, whose root is sometimes a skeleton no lexeme is filed under
+    /// (עָשׂוּ "they did" read under עושׂ, וַיָּמָת "and he died" under מתת),
+    /// while the surface's own tokens, resolved through their tagging, name the
+    /// real root. So a default whose root neither the lexicon nor a curated
+    /// override knows gives way to the rendering most of its tokens get, when
+    /// that one's root is known. A rootless default — a function word, looked
+    /// up by its form — stays as it is, and a surface the untagged pass cannot
+    /// read at all takes its tokens' rendering outright.
+    fn surface_default(
+        &self,
+        filed_roots: &HashSet<String>,
+        surface_id: i64,
+        untagged: Option<i64>,
+    ) -> Option<i64> {
+        let filed = |root: &str| filed_roots.contains(root);
+        let root_of = |id: i64| self.info_rows[id as usize - 1].1.as_str();
+        let majority = self.token_infos.get(&surface_id).and_then(|counts| {
+            counts
+                .iter()
+                .max_by_key(|&(id, n)| (*n, std::cmp::Reverse(*id)))
+                .map(|(id, _)| *id)
+        });
+        let Some(untagged) = untagged else {
+            return majority;
+        };
+        let root = root_of(untagged);
+        if root.is_empty() || filed(root) {
+            return Some(untagged);
+        }
+        match majority {
+            Some(id) if !root_of(id).is_empty() && filed(root_of(id)) => Some(id),
+            _ => Some(untagged),
         }
     }
 
@@ -1017,6 +1068,9 @@ fn build_words(db: &Connection, builder: &mut Builder, reader_glosses: &mut Pool
             },
             &text,
         );
+        if let Some(id) = info_id {
+            builder.count_token(surface_id, id);
+        }
         insert.execute(params![
             reference,
             position,
@@ -1035,6 +1089,12 @@ fn build_words(db: &Connection, builder: &mut Builder, reader_glosses: &mut Pool
 /// The position-free rendering of every surface, for callers with no verse
 /// context (vocabulary lists, the tutor's surface pass, word lookup by text).
 fn resolve_surfaces(db: &Connection, builder: &mut Builder) -> Result<()> {
+    // The roots the lexicon files an entry under, or a curated override names,
+    // for the default's check: a curator's root is never a parser's invention.
+    let filed_roots: HashSet<String> = db
+        .prepare("SELECT root FROM out.entry_root UNION SELECT root FROM out.surface_override")?
+        .query_map([], |row| row.get(0))?
+        .collect::<rusqlite::Result<_>>()?;
     let mut stmt = db.prepare("SELECT surface_id, text FROM hebrewdb.surface")?;
     let mut update = db.prepare("UPDATE out.surface SET info_id = ?2 WHERE surface_id = ?1")?;
     let mut rows = stmt.query([])?;
@@ -1049,6 +1109,7 @@ fn resolve_surfaces(db: &Connection, builder: &mut Builder) -> Result<()> {
             },
             &text,
         );
+        let info_id = builder.surface_default(&filed_roots, surface_id, info_id);
         update.execute(params![surface_id, info_id])?;
     }
     Ok(())

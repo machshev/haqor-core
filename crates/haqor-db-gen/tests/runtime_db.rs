@@ -167,11 +167,47 @@ fn stored_renderings_match_live_resolution() {
         .expect("querying surfaces")
         .collect::<rusqlite::Result<Vec<_>>>()
         .expect("collecting surfaces");
+    // Where the untagged resolution has no root the lexicon (or a curated
+    // override) knows, the generator stores the rendering most of the surface's
+    // own tokens got instead — so a differing default must be one of those,
+    // with a known root, standing in for an unknown or missing one.
+    let known = |root: &str| -> bool {
+        db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM rt.entry_root WHERE root = ?1) \
+                 OR EXISTS(SELECT 1 FROM rt.surface_override WHERE root = ?1)",
+            [root],
+            |row| row.get(0),
+        )
+        .expect("checking a root")
+    };
+    let mut from_tokens = 0;
     for (surface_id, text, info_id) in &surfaces {
         let live = resolve(db, *surface_id, text, None);
         let stored = info_id.and_then(|id| stored_word(db, id, text));
-        assert_eq!(live, stored, "surface {text} ({surface_id}) differs");
+        if live == stored {
+            continue;
+        }
+        let token_info: bool = db
+            .query_row(
+                "SELECT EXISTS(SELECT 1 FROM rt.word WHERE surface_id = ?1 AND info_id = ?2)",
+                rusqlite::params![surface_id, info_id],
+                |row| row.get(0),
+            )
+            .expect("checking the default's tokens");
+        let stored_root = stored.as_ref().map(|w| w.root.as_str()).unwrap_or("");
+        let live_unknown = live
+            .as_ref()
+            .is_none_or(|w| !w.root.is_empty() && !known(&w.root));
+        assert!(
+            token_info && live_unknown && (live.is_none() || known(stored_root)),
+            "surface {text} ({surface_id}) differs: {live:?} != {stored:?}"
+        );
+        from_tokens += 1;
     }
+    assert!(
+        from_tokens < surfaces.len() / 10,
+        "{from_tokens} defaults taken from tokens"
+    );
 
     let _ = std::fs::remove_file(&output);
 }
