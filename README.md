@@ -115,6 +115,7 @@ cargo run --release -- db gen-quotes --dry-run --sweep within.min_score=6,7,8   
 `gen-runtime` also fills a `thematic_reference` table from the *Treasury of
 Scripture Knowledge* in `src_texts/TSK`: the hand-curated references a
 wide-margin Bible prints, attached to the key words and phrases of each verse
+(in the KJV's wording, with "the LORD" written as "Yahweh")
 (63,678 phrases, ~379k targets). They are a separate set from the quotation
 table's, which are found by root alignment. The TSK numbers verses as the KJV
 does, so each OT reference is re-numbered onto the Hebrew text through the
@@ -205,7 +206,8 @@ by `scripts/fetch-stepbible-data.sh` rather than redistributed here.
 data file published by [Just Verses](http://www.justverses.com/jv/app/downloadTSK.vm),
 which describes its downloads as public domain biblical information. The file
 is kept unchanged in `src_texts/TSK/`, with its source and checksums; Haqor
-re-numbers its KJV verse references onto the Hebrew text.
+re-numbers its KJV verse references onto the Hebrew text and writes "Yahweh"
+where its KJV phrases read "the LORD".
 
 **Syriac New Testament** — the text of the British and Foreign Bible Society's
 edition, with lexical and morphological data from SEDRA:

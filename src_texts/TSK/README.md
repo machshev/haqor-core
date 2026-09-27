@@ -26,3 +26,9 @@ References are in the King James Version's versification. `db gen-runtime`
 (and `db gen-tsk` on its own) re-number them onto the Hebrew Bible's through
 STEP Bible's TAHOT data, which gives both numberings for every Hebrew word, and
 store them in the runtime database's `thematic_reference` table.
+
+The key phrases are the KJV's wording, except that the import writes the
+divine name where the KJV substitutes a title for it: "the LORD" becomes
+"Yahweh", "the LORD'S" "Yahweh's", "the Lord GOD" "the Lord Yahweh", "JAH"
+"Yah" and "Jehovahjireh" "Yahweh-jireh" (`name_the_lord` in
+`crates/haqor-db-gen/src/tsk.rs`). The file here is unchanged.

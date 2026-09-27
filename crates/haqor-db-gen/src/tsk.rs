@@ -135,6 +135,58 @@ fn parse_group(group: &str) -> Option<Vec<Target>> {
     Some(targets)
 }
 
+/// Write the divine name where the King James wording of a TSK phrase
+/// substitutes a title for it: "the LORD" (and the small-capital "GOD" of
+/// "the Lord GOD") become "Yahweh", "the LORD'S" "Yahweh's", "JAH" "Yah", and
+/// the Jehovah names ("Jehovahjireh") "Yahweh-jireh". An all-capital "THE
+/// LORD" becomes "YAHWEH". Other words, "Lord" and "God" among them, are
+/// left as they are.
+pub(crate) fn name_the_lord(phrase: &str) -> String {
+    let mut out = String::with_capacity(phrase.len());
+    let mut rest = phrase;
+    while let Some(start) = rest.find(|c: char| c.is_ascii_alphabetic()) {
+        out.push_str(&rest[..start]);
+        rest = &rest[start..];
+        let end = rest
+            .find(|c: char| !c.is_ascii_alphabetic())
+            .unwrap_or(rest.len());
+        let (word, after) = rest.split_at(end);
+        rest = after;
+        match word {
+            "LORD" => {
+                // Its article goes with it: "the LORD" is the name alone.
+                let mut capitals = false;
+                for article in ["the ", "The ", "THE "] {
+                    if let Some(kept) = out.strip_suffix(article)
+                        && !kept.ends_with(|c: char| c.is_ascii_alphabetic())
+                    {
+                        capitals = article == "THE ";
+                        out.truncate(kept.len());
+                        break;
+                    }
+                }
+                out.push_str(if capitals { "YAHWEH" } else { "Yahweh" });
+                if let Some(after) = rest.strip_prefix("'S") {
+                    out.push_str(if capitals { "'S" } else { "'s" });
+                    rest = after;
+                }
+            }
+            "GOD" | "JEHOVAH" => out.push_str("Yahweh"),
+            "JAH" => out.push_str("Yah"),
+            _ => match word.strip_prefix("Jehovah") {
+                Some("") => out.push_str("Yahweh"),
+                Some(title) => {
+                    out.push_str("Yahweh-");
+                    out.push_str(title);
+                }
+                None => out.push_str(word),
+            },
+        }
+    }
+    out.push_str(rest);
+    out
+}
+
 /// One line of `tskxref.txt`: a key phrase of a verse and its reference groups.
 #[derive(Debug, PartialEq, Eq)]
 struct Entry {
@@ -282,7 +334,7 @@ fn read_notes(
         notes.push(Note {
             verse,
             order: entry.order,
-            phrase: entry.phrase,
+            phrase: name_the_lord(&entry.phrase),
             targets,
         });
     }
@@ -399,6 +451,40 @@ mod tests {
     }
 
     #[test]
+    fn writes_the_divine_name() {
+        for (kjv, named) in [
+            ("the LORD", "Yahweh"),
+            ("The LORD", "Yahweh"),
+            ("O LORD", "O Yahweh"),
+            ("the LORD'S anger", "Yahweh's anger"),
+            (
+                "is the LORD'S: it is holy unto the LORD.",
+                "is Yahweh's: it is holy unto Yahweh.",
+            ),
+            ("saith the Lord GOD.", "saith the Lord Yahweh."),
+            ("the LORD God of Israel", "Yahweh God of Israel"),
+            (
+                "The LORD our God is one LORD:",
+                "Yahweh our God is one Yahweh:",
+            ),
+            ("THE LORD OUR RIGHTEOUSNESS", "YAHWEH OUR RIGHTEOUSNESS"),
+            ("JEHOVAH", "Yahweh"),
+            ("JAH", "Yah"),
+            ("Jehovahjireh", "Yahweh-jireh"),
+            ("Jehovah-shalom", "Yahweh-shalom"),
+            // Titles that are not the name stay.
+            ("the Lord said unto my Lord", "the Lord said unto my Lord"),
+            (
+                "O Lord GOD, thou hast begun",
+                "O Lord Yahweh, thou hast begun",
+            ),
+            ("breathe LORDS", "breathe LORDS"),
+        ] {
+            assert_eq!(name_the_lord(kjv), named, "{kjv}");
+        }
+    }
+
+    #[test]
     fn parses_a_line() {
         let line = "1\t1\t1\t2\tbeginning\tpr 8:22-24;pr 16:4;mr 13:19\r";
         assert_eq!(
@@ -458,6 +544,9 @@ mod tests {
         assert!(summary.unparsed < 30);
         assert!(summary.missing < 100);
         assert_eq!(summary.orphaned, 0);
+        // The phrases name Yahweh where the KJV writes "the LORD".
+        assert!(!notes.iter().any(|n| n.phrase.contains("LORD")));
+        assert!(notes.iter().any(|n| n.phrase == "Yahweh"));
 
         // Genesis 1:1's first phrase is "beginning", pointing at John 1:1-3.
         let genesis = notes.iter().find(|n| n.verse == pack_ref(1, 1, 1)).unwrap();
