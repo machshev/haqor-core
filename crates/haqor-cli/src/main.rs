@@ -283,11 +283,26 @@ enum DbCommands {
         /// Output database path
         #[arg(short, long, default_value = "data/haqor.db")]
         output: PathBuf,
+        /// Source texts directory: the thematic cross references are read from
+        /// its TSK and STEPBible-Data folders.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
         /// How to store verse text and lexicon entry bodies. `zstd` is ~7 MiB
         /// smaller; `none` keeps the database readable with sqlite3, which is
         /// why it is the default for local builds.
         #[arg(long, default_value = "none")]
         blob_codec: String,
+    },
+    /// Rebuild the `thematic_reference` table of a runtime haqor.db in place
+    /// from the Treasury of Scripture Knowledge (gen-runtime also builds it),
+    /// re-numbering its KJV verse references onto the Hebrew text.
+    GenTsk {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Source texts directory holding TSK and STEPBible-Data.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
     },
     /// Find NT (Peshitta) quotations of the Hebrew OT, and parallels within
     /// each testament, by root alignment and rebuild the `quotation` table of a
@@ -536,12 +551,25 @@ fn main() -> Result<()> {
             }
             DbCommands::GenRuntime {
                 data_dir,
+                src_texts,
                 output,
                 blob_codec,
             } => {
                 let codec: haqor_db_gen::BlobCodec = blob_codec.parse()?;
-                let words = haqor_db_gen::generate_runtime(&data_dir, &output, codec)?;
+                let words = haqor_db_gen::generate_runtime(&data_dir, &src_texts, &output, codec)?;
                 println!("Wrote {} words to {}", words, output.display());
+            }
+            DbCommands::GenTsk { db, src_texts } => {
+                let summary = haqor_db_gen::gen_tsk(&db, &src_texts)?;
+                println!(
+                    "Wrote {} key phrases with {} targets to {} ({} reference groups \
+                     unparsed, {} targets outside the corpus)",
+                    summary.notes,
+                    summary.targets,
+                    db.display(),
+                    summary.unparsed,
+                    summary.missing
+                );
             }
             DbCommands::GenQuotes {
                 db,

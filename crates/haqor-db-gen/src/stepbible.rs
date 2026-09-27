@@ -50,18 +50,32 @@ pub fn source_dir(src_texts: &Path) -> PathBuf {
 /// Parse TAHOT's English reference, preferring the parenthesised Hebrew
 /// versification when it is present (`Mal.4.6(3.24)` -> Malachi 3:24).
 fn parse_reference(field: &str) -> Option<VerseRef> {
+    parse_numberings(field).map(|(_, hebrew)| hebrew)
+}
+
+/// Both numberings of a TAHOT reference, English then Hebrew: the same verse
+/// unless a parenthesised Hebrew one is given. English verse 0 is a Psalm
+/// title, which the English numbering leaves unnumbered.
+fn parse_numberings(field: &str) -> Option<(VerseRef, VerseRef)> {
     let reference = field.split_once('#')?.0;
     let (english, hebrew) = match reference.split_once('(') {
         Some((english, hebrew)) => (english, Some(hebrew.strip_suffix(')')?)),
         None => (reference, None),
     };
-    let book_name = english.split_once('.')?.0;
+    let (book_name, english) = english.split_once('.')?;
     let book = book_number(book_name)?;
-    let selected = hebrew.unwrap_or_else(|| english.split_once('.').unwrap().1);
-    let mut parts = selected.split('.');
-    let chapter = parts.next()?.parse().ok()?;
-    let verse = parts.next()?.parse().ok()?;
-    (parts.next().is_none()).then_some((book, chapter, verse))
+    let chapter_verse = |text: &str| -> Option<(u8, u8)> {
+        let mut parts = text.split('.');
+        let chapter = parts.next()?.parse().ok()?;
+        let verse = parts.next()?.parse().ok()?;
+        parts.next().is_none().then_some((chapter, verse))
+    };
+    let (chapter, verse) = chapter_verse(english)?;
+    let (hebrew_chapter, hebrew_verse) = match hebrew {
+        Some(hebrew) => chapter_verse(hebrew)?,
+        None => (chapter, verse),
+    };
+    Some(((book, chapter, verse), (book, hebrew_chapter, hebrew_verse)))
 }
 
 /// Convert TAHOT's translation markup into compact reader text. Slash-separated
@@ -102,7 +116,40 @@ fn parse_row(line: &str) -> Option<(VerseRef, SourceGloss)> {
     (!word.is_empty()).then_some((reference, SourceGloss { word, gloss }))
 }
 
+/// The (English, Hebrew) verse numbers of every TAHOT word, Psalm titles
+/// (English verse 0) left out: the data for re-numbering an English-numbered
+/// reference onto the Hebrew text.
+pub(crate) fn verse_numberings(dir: &Path) -> Result<Vec<(VerseRef, VerseRef)>> {
+    let mut out = Vec::new();
+    for path in source_files(dir)? {
+        let file = File::open(&path).with_context(|| format!("opening {}", path.display()))?;
+        for line in BufReader::new(file).lines() {
+            let line = line?;
+            if let Some((english, hebrew)) = line.split('\t').next().and_then(parse_numberings)
+                && english.2 != 0
+            {
+                out.push((english, hebrew));
+            }
+        }
+    }
+    Ok(out)
+}
+
 fn read_glosses(dir: &Path) -> Result<HashMap<VerseRef, Vec<SourceGloss>>> {
+    let mut verses = HashMap::<VerseRef, Vec<SourceGloss>>::new();
+    for path in source_files(dir)? {
+        let file = File::open(&path).with_context(|| format!("opening {}", path.display()))?;
+        for line in BufReader::new(file).lines() {
+            if let Some((reference, gloss)) = parse_row(&line?) {
+                verses.entry(reference).or_default().push(gloss);
+            }
+        }
+    }
+    Ok(verses)
+}
+
+/// The TAHOT files in `dir`, in name order.
+fn source_files(dir: &Path) -> Result<Vec<PathBuf>> {
     let mut paths: Vec<_> = std::fs::read_dir(dir)
         .with_context(|| format!("reading STEP Bible TAHOT directory {}", dir.display()))?
         .filter_map(|entry| entry.ok().map(|entry| entry.path()))
@@ -113,17 +160,7 @@ fn read_glosses(dir: &Path) -> Result<HashMap<VerseRef, Vec<SourceGloss>>> {
         })
         .collect();
     paths.sort();
-
-    let mut verses = HashMap::<VerseRef, Vec<SourceGloss>>::new();
-    for path in paths {
-        let file = File::open(&path).with_context(|| format!("opening {}", path.display()))?;
-        for line in BufReader::new(file).lines() {
-            if let Some((reference, gloss)) = parse_row(&line?) {
-                verses.entry(reference).or_default().push(gloss);
-            }
-        }
-    }
-    Ok(verses)
+    Ok(paths)
 }
 
 pub(crate) fn align_glosses(
@@ -181,6 +218,14 @@ mod tests {
     fn hebrew_versification_wins_over_english_reference() {
         assert_eq!(parse_reference("Gen.1.2#03=L"), Some((1, 1, 2)));
         assert_eq!(parse_reference("Mal.4.6(3.24)#15=L"), Some((26, 3, 24)));
+        assert_eq!(
+            parse_numberings("Psa.51.1(51.3)#01=L"),
+            Some(((27, 51, 1), (27, 51, 3)))
+        );
+        assert_eq!(
+            parse_numberings("Psa.51.0(51.1)#01=L").unwrap().0,
+            (27, 51, 0)
+        );
     }
 
     #[test]

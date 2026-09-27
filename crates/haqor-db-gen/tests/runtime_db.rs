@@ -23,6 +23,11 @@ fn data_dir() -> PathBuf {
     Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data")
 }
 
+/// Workspace `src_texts/`, for the thematic cross references.
+fn src_texts() -> PathBuf {
+    Path::new(env!("CARGO_MANIFEST_DIR")).join("../../src_texts")
+}
+
 /// Skip when the generation databases have not been built, so a fresh
 /// checkout's `cargo test` still passes — but fail when `HAQOR_REQUIRE_DATA`
 /// is set, which CI does after generating them. Without that, a job that
@@ -81,7 +86,8 @@ fn stored_word(db: &rusqlite::Connection, info_id: i64, text: &str) -> Option<He
 fn stored_renderings_match_live_resolution() {
     require_data!();
     let output = std::env::temp_dir().join("haqor-runtime-differential.db");
-    generate_runtime(&data_dir(), &output, BlobCodec::None).expect("generating haqor.db");
+    generate_runtime(&data_dir(), &src_texts(), &output, BlobCodec::None)
+        .expect("generating haqor.db");
 
     let connection = open_generation_dbs(&data_dir()).expect("opening generation databases");
     let db = &connection;
@@ -225,7 +231,8 @@ fn stored_renderings_match_live_resolution() {
 fn curated_overrides_survive_into_the_build() {
     require_data!();
     let output = std::env::temp_dir().join("haqor-runtime-curated.db");
-    generate_runtime(&data_dir(), &output, BlobCodec::None).expect("generating haqor.db");
+    generate_runtime(&data_dir(), &src_texts(), &output, BlobCodec::None)
+        .expect("generating haqor.db");
 
     let db = open_generation_dbs(&data_dir()).expect("opening generation databases");
     db.execute("ATTACH DATABASE ?1 AS rt", [output.to_string_lossy()])
@@ -303,7 +310,8 @@ fn compressed_verse_text_round_trips_through_the_shipped_dictionary() {
     let dir = std::env::temp_dir().join("haqor-runtime-zstd");
     std::fs::create_dir_all(&dir).expect("creating the output directory");
     let output = dir.join("haqor.db");
-    generate_runtime(&data_dir(), &output, BlobCodec::Zstd).expect("generating a compressed build");
+    generate_runtime(&data_dir(), &src_texts(), &output, BlobCodec::Zstd)
+        .expect("generating a compressed build");
 
     let db = rusqlite::Connection::open(&output).expect("opening the compressed build");
     let codec: String = db
@@ -438,7 +446,8 @@ fn compressed_verse_text_round_trips_through_the_shipped_dictionary() {
 fn root_surface_reproduces_the_concordance_union() {
     require_data!();
     let output = std::env::temp_dir().join("haqor-runtime-roots.db");
-    generate_runtime(&data_dir(), &output, BlobCodec::None).expect("generating haqor.db");
+    generate_runtime(&data_dir(), &src_texts(), &output, BlobCodec::None)
+        .expect("generating haqor.db");
 
     let connection = open_generation_dbs(&data_dir()).expect("opening generation databases");
     let db = &connection;

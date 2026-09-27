@@ -110,6 +110,23 @@ cargo run --release -- db gen-quotes --explain 40:2:15=15:11:1   # why a pair do
 cargo run --release -- db gen-quotes --dry-run --sweep within.min_score=6,7,8   # try same-testament floors
 ```
 
+### Thematic cross references
+
+`gen-runtime` also fills a `thematic_reference` table from the *Treasury of
+Scripture Knowledge* in `src_texts/TSK`: the hand-curated references a
+wide-margin Bible prints, attached to the key words and phrases of each verse
+(63,678 phrases, ~379k targets). They are a separate set from the quotation
+table's, which are found by root alignment. The TSK numbers verses as the KJV
+does, so each OT reference is re-numbered onto the Hebrew text through the
+TAHOT files' paired numbering (Malachi 4:5 becomes 3:23, Psalm verses shift
+past their titles); `gen-runtime` therefore needs
+`scripts/fetch-stepbible-data.sh` to have run. `Bible::thematic_references`
+returns a verse's phrases and their targets. To rebuild the table alone:
+
+```sh
+cargo run --release -- db gen-tsk      # RUST_LOG=haqor_db_gen::tsk=debug lists the references it drops
+```
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:
@@ -182,6 +199,13 @@ converted in the same way as Klein.
 [TAHOT dataset](https://github.com/STEPBible/STEPBible-Data), licensed CC BY
 4.0. The files are fetched from their canonical repository at pinned checksums
 by `scripts/fetch-stepbible-data.sh` rather than redistributed here.
+
+**Thematic cross references** — *The Treasury of Scripture Knowledge*
+(Samuel Bagster & Sons, 1830s; commonly credited to R. A. Torrey), from the
+data file published by [Just Verses](http://www.justverses.com/jv/app/downloadTSK.vm),
+which describes its downloads as public domain biblical information. The file
+is kept unchanged in `src_texts/TSK/`, with its source and checksums; Haqor
+re-numbers its KJV verse references onto the Hebrew text.
 
 **Syriac New Testament** — the text of the British and Foreign Bible Society's
 edition, with lexical and morphological data from SEDRA:
