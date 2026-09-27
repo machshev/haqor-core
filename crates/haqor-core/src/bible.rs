@@ -103,6 +103,8 @@ pub enum LexiconSource {
     Klein,
     /// Jastrow's dictionary of the Targumim, Talmud and Midrash.
     Jastrow,
+    /// SEDRA's lexicon of the Peshitta's Aramaic.
+    Sedra,
 }
 
 impl LexiconSource {
@@ -112,6 +114,7 @@ impl LexiconSource {
             LexiconSource::Bdb => "bdb",
             LexiconSource::Klein => "klein",
             LexiconSource::Jastrow => "jastrow",
+            LexiconSource::Sedra => "sedra",
         }
     }
 
@@ -121,6 +124,7 @@ impl LexiconSource {
             "bdb" => Some(LexiconSource::Bdb),
             "klein" => Some(LexiconSource::Klein),
             "jastrow" => Some(LexiconSource::Jastrow),
+            "sedra" => Some(LexiconSource::Sedra),
             _ => None,
         }
     }
@@ -146,6 +150,10 @@ pub struct LexiconEntry {
     /// only, so beside the others it labels the entry within its [`Lexeme`].
     /// Empty when the source prints none, as BDB never does.
     pub homograph: String,
+    /// True for the lexeme of the word that was looked up, where the source
+    /// files words under lexemes (SEDRA does); false for its siblings in the
+    /// family, and for every entry of the other lexicons.
+    pub is_current: bool,
 }
 
 /// A `dictionary_entry` row as [`Bible::root_lexicon`] reads it.
@@ -252,30 +260,32 @@ fn gloss_pos_category(gloss: &str) -> Option<&'static str> {
     }
 }
 
-/// Seat each Klein and Jastrow entry directly after the BDB entry spelled the
+/// Seat each entry of `others` directly after the `primary` entry spelled the
 /// same way, so one lexeme's articles read side by side, and list the entries
-/// no BDB headword is spelled like after all of BDB's, Klein before Jastrow.
+/// no primary headword is spelled like after all of the primary's, in source
+/// order. The primary lexicon is the one the looked-up word's own text is
+/// tagged with: BDB for the Hebrew Bible, SEDRA for the Peshitta.
 fn interleave_lexicons(
-    bdb: Vec<(LexiconEntry, String)>,
-    mut dictionary: Vec<(String, LexiconEntry)>,
+    primary: Vec<(LexiconEntry, String)>,
+    mut others: Vec<(String, LexiconEntry)>,
 ) -> Vec<LexiconEntry> {
     let rank = |s: LexiconSource| s as u8;
-    dictionary.sort_by_key(|(_, e)| rank(e.source));
-    let mut out = Vec::with_capacity(bdb.len() + dictionary.len());
-    for (entry, skeleton) in bdb {
+    others.sort_by_key(|(_, e)| rank(e.source));
+    let mut out = Vec::with_capacity(primary.len() + others.len());
+    for (entry, skeleton) in primary {
         out.push(entry);
-        let (same, rest): (Vec<_>, Vec<_>) = dictionary
+        let (same, rest): (Vec<_>, Vec<_>) = others
             .into_iter()
             .partition(|(matched, _)| *matched == skeleton);
         out.extend(same.into_iter().map(|(_, e)| e));
-        dictionary = rest;
+        others = rest;
     }
-    out.extend(dictionary.into_iter().map(|(_, e)| e));
+    out.extend(others.into_iter().map(|(_, e)| e));
     out
 }
 
-/// One word of a root family as every lexicon has it: BDB's, Klein's and
-/// Jastrow's entries for the same pointed headword, together. See
+/// One word of a root family as every lexicon has it: BDB's, Klein's,
+/// Jastrow's and SEDRA's entries for the same pointed headword, together. See
 /// [`Bible::root_lexemes`].
 #[derive(Debug)]
 pub struct Lexeme {
@@ -284,9 +294,12 @@ pub struct Lexeme {
     /// The class the entries mostly agree on, since the lexicons do not always
     /// file a word alike (Jastrow leaves many unmarked); BDB's breaks a tie.
     pub pos_category: &'static str,
-    /// BDB's entries, then Klein's, then Jastrow's, each source's in its own
-    /// order. A source's homographs stay separate entries, told apart by
-    /// [`LexiconEntry::homograph`].
+    /// True when one of the entries is the looked-up word's own lexeme; see
+    /// [`LexiconEntry::is_current`].
+    pub is_current: bool,
+    /// BDB's entries, then Klein's, Jastrow's and SEDRA's, each source's in
+    /// its own order. A source's homographs stay separate entries, told apart
+    /// by [`LexiconEntry::homograph`].
     pub entries: Vec<LexiconEntry>,
 }
 
@@ -383,6 +396,7 @@ fn group_lexemes(entries: Vec<LexiconEntry>) -> Vec<Lexeme> {
             Lexeme {
                 headword: entries[0].headword.clone(),
                 pos_category: majority_pos(&entries),
+                is_current: entries.iter().any(|e| e.is_current),
                 entries,
             }
         })
@@ -888,6 +902,9 @@ pub struct SedraWord {
     pub key_root: i64,
     /// English glosses for the lexeme, in listing order.
     pub meanings: Vec<String>,
+    /// The lexeme's part of speech, as the Hebrew tagging names it; see
+    /// [`decode_category`].
+    pub part_of_speech: Option<String>,
     pub gender: Option<String>,
     pub person: Option<String>,
     pub number: Option<String>,
@@ -905,8 +922,39 @@ pub struct SedraLexemeSummary {
     pub lexeme: String,
     /// English glosses for the lexeme, in listing order.
     pub meanings: Vec<String>,
+    /// The lexeme's grammatical category, as the part of speech the Hebrew
+    /// tagging names (see [`decode_category`]). `None` on a database that
+    /// predates the category.
+    pub part_of_speech: Option<&'static str>,
     /// True for the lexeme of the word that was looked up.
     pub is_current: bool,
+}
+
+/// A SEDRA lexeme as an entry of the root family beside BDB's, Klein's and
+/// Jastrow's: its glosses as the numbered senses of an article.
+fn sedra_lexicon_entry(lexeme: SedraLexemeSummary) -> LexiconEntry {
+    let senses: Vec<serde_json::Value> = lexeme
+        .meanings
+        .iter()
+        .enumerate()
+        .map(|(i, meaning)| {
+            let mut sense = serde_json::json!({ "definition": [{ "t": meaning }] });
+            if lexeme.meanings.len() > 1 {
+                sense["num"] = serde_json::json!(format!("{}.", i + 1));
+            }
+            sense
+        })
+        .collect();
+    LexiconEntry {
+        source: LexiconSource::Sedra,
+        pos_category: part_of_speech_category(lexeme.part_of_speech),
+        gloss: lexeme.meanings.first().cloned().unwrap_or_default(),
+        content_json: serde_json::json!({ "senses": senses }).to_string(),
+        headword: lexeme.lexeme,
+        lang: String::new(),
+        homograph: String::new(),
+        is_current: lexeme.is_current,
+    }
 }
 
 // SEDRA3 attribute decoders (see src_texts/SEDRA/SEDRA3.README.TXT, WORDS.TXT).
@@ -960,6 +1008,39 @@ fn decode_state(k: i64) -> Option<String> {
     )
 }
 
+/// A SEDRA lexeme's grammatical category (bits 2–5 of its attributes) as the
+/// part of speech the Hebrew tagging would give it. SEDRA's finer nominal
+/// classes (substantive, denominative, the participial adjective, the
+/// adjective of place) are the Hebrew noun and adjective; the numeral and the
+/// idiom, which the Hebrew tagging has no class for, keep their own.
+fn decode_category(k: i64) -> Option<&'static str> {
+    Some(match k {
+        0 => "Verb",
+        2..=4 => "Noun",
+        1 | 8 | 12 => "Adjective",
+        5 => "Pronoun",
+        6 => "Proper noun",
+        7 => "Numeral",
+        9 => "Particle",
+        10 => "Idiom",
+        11 | 13 => "Adverb",
+        _ => return None,
+    })
+}
+
+/// The Lexicon tab's bucket for a part of speech; see
+/// [`BdbEntry::pos_category`].
+fn part_of_speech_category(part_of_speech: Option<&str>) -> &'static str {
+    match part_of_speech {
+        Some("Verb") => "verb",
+        Some("Noun" | "Numeral") => "noun",
+        Some("Adjective") => "adjective",
+        Some("Adverb") => "adverb",
+        Some("Proper noun") => "proper",
+        _ => "other",
+    }
+}
+
 fn decode_tense(k: i64) -> Option<String> {
     Some(
         match k {
@@ -967,8 +1048,8 @@ fn decode_tense(k: i64) -> Option<String> {
             2 => "Imperfect",
             3 => "Imperative",
             4 => "Infinitive",
-            5 => "Active participle",
-            6 => "Passive participle",
+            5 => "Participle (act.)",
+            6 => "Participle (pass.)",
             7 => "Participle",
             _ => return None,
         }
@@ -1242,20 +1323,26 @@ pub struct WordOccurrence {
     pub verse: u8,
 }
 
-/// One OT token belonging to a root — where it stands, the surface form read
-/// there, and the parse the build resolved for it. One row per *token*, not per
+/// One token of a root anywhere in the canon — where it stands, the surface
+/// form read there, and the parse read for it. One row per *token*, not per
 /// verse, so a caller can count true frequency, highlight the exact word, and
-/// filter a root's occurrences by form or by parse (the OT analogue of the NT
-/// lexeme filter).
+/// filter a root's occurrences by form, by lexeme or by parse. OT tokens come
+/// from the Hebrew (and Biblical Aramaic) tagging, NT tokens from SEDRA; both
+/// describe themselves in the one vocabulary of [`OccurrenceParse`], so one
+/// filter cuts across the two testaments.
 #[derive(Debug)]
-pub struct HebrewOccurrence {
+pub struct Occurrence {
     pub book: u8,
     pub chapter: u8,
     pub verse: u8,
-    /// The token's index within its verse, so the reader can highlight this
-    /// word and not a homograph elsewhere in the same verse.
+    /// The token's lexical index within its verse, from 0, so the reader can
+    /// highlight this word and not a homograph elsewhere in the same verse.
     pub position: u32,
     pub surface: String,
+    /// The lexicon headword the token belongs to, where the source names one:
+    /// SEDRA's lexeme for an NT token. Empty for OT tokens, whose root family
+    /// is split by part of speech instead.
+    pub lexeme: String,
     /// The parse, component by component, so a caller can filter on one
     /// dimension at a time — every stem of a root, or every plural, rather than
     /// the full cross-product of labels. Each field is empty where the analysis
@@ -1267,31 +1354,92 @@ pub struct HebrewOccurrence {
     pub parse_label: String,
 }
 
+/// A root as the text a word was read in names it: the Hebrew tagging's root
+/// letters, or SEDRA's root id. See [`Bible::root_occurrences`].
+#[derive(Debug, Clone, Copy)]
+pub enum RootRef<'a> {
+    Hebrew(&'a str),
+    Sedra(i64),
+}
+
 /// One token's parse, split into the dimensions a reader filters by.
+///
+/// Hebrew and Aramaic share one vocabulary wherever the categories agree: the
+/// same `Noun`, `Masculine`, `Plural`, `Construct`, `Participle (act.)` on
+/// either side. A category only one language has is a value of its own beside
+/// the shared ones (the Aramaic `Emphatic` state, the `Infinitive`), and the
+/// stems, which each language names for itself, are gathered into
+/// [`Self::stem_family`] as well.
 #[derive(Debug, Default, Clone, PartialEq, Eq)]
 pub struct OccurrenceParse {
     pub part_of_speech: String,
-    /// Verb stem — Qal, Niphal, Piel, … (Peal and friends for the Aramaic).
+    /// Verb stem as the language names it — Qal, Niphal, Piel, … for Hebrew;
+    /// Peal, Ethpeal, Pael, … for Aramaic.
     pub stem: String,
-    /// Perfect, Imperfect, Wayyiqtol, Participle, Inf. Construct, …
+    /// The stem's place in the system both languages share: simple, intensive
+    /// or causative, active or passive/reflexive. Qal and Peal are both
+    /// `Simple`, Hiphil and Aphel both `Causative`. Empty where the stem is.
+    pub stem_family: String,
+    /// Perfect, Imperfect, Wayyiqtol, Participle (act.), Inf. Construct, …
     pub tense: String,
     pub person: String,
     pub gender: String,
     pub number: String,
-    /// Absolute or Construct, on the nominal forms that carry it.
+    /// Absolute or Construct, on the nominal forms that carry it; Emphatic too
+    /// in Aramaic.
     pub state: String,
 }
 
-/// An NT verse where some lexeme of a root occurs, tagged with which lexeme of
-/// the root tree it belongs to (`lexeme_index` aligns with the order returned
-/// by [`Bible::sedra_root_tree`]) and the distinct word forms found there.
-#[derive(Debug)]
-pub struct SedraOccurrence {
-    pub book: u8,
-    pub chapter: u8,
-    pub verse: u8,
-    pub lexeme_index: u32,
-    pub words: Vec<String>,
+/// The stem family both Hebrew and Aramaic stems belong to; see
+/// [`OccurrenceParse::stem_family`]. The families are the classic grid —
+/// the simple (G), doubled (D) and causative (C) stems, each with its
+/// passive or reflexive counterparts — with each language's by-forms (the
+/// Polel of a hollow root, the Shaphel) under the stem they stand in for.
+/// `None` for a stem outside the grid.
+pub fn stem_family(stem: &str) -> Option<&'static str> {
+    Some(match stem {
+        "Qal" | "Peal" => "Simple",
+        "Niphal" | "Qal passive" | "Peil" | "Hithpeel" | "Ithpeel" | "Ethpeal" => {
+            "Simple passive/reflexive"
+        }
+        "Piel" | "Pael" | "Polel" | "Poel" | "Pilpel" | "Palel" | "Pilel" | "Pealal" | "Pauel"
+        | "Paiel" | "Palpal" | "Palpel" | "Pamel" | "Parel" | "Pali" | "Pahli" => "Intensive",
+        "Pual" | "Hithpael" | "Polal" | "Poal" | "Pulal" | "Polpal" | "Hithpolel"
+        | "Hithpalpel" | "Hithpoel" | "Ithpoel" | "Nithpael" | "Hithpaal" | "Ithpaal"
+        | "Hothpaal" | "Ethpaal" | "Ethpaual" | "Ethpaial" | "Ethpalpal" | "Ethpamal"
+        | "Ethparal" | "Ethpali" | "Ethpahli" => "Intensive passive/reflexive",
+        "Hiphil" | "Haphel" | "Aphel" | "Shaphel" | "Saphel" | "Tiphil" | "Taphel" => "Causative",
+        "Hophal" | "Hishtaphel" | "Ettaphal" | "Eshtaphal" | "Estaphal" | "Ethaphal" => {
+            "Causative passive/reflexive"
+        }
+        _ => return None,
+    })
+}
+
+/// The shared spelling of a tense label the Hebrew tagging writes two ways.
+fn canonical_tense(tense: &str) -> &str {
+    match tense {
+        "Participle (pas.)" => "Participle (pass.)",
+        other => other,
+    }
+}
+
+impl OccurrenceParse {
+    /// The parse of a token analysed as `info`, in the shared vocabulary.
+    fn of(info: &HebrewWord) -> Self {
+        let field = |value: &Option<String>| value.clone().unwrap_or_default();
+        let stem = field(&info.form);
+        OccurrenceParse {
+            part_of_speech: field(&info.part_of_speech),
+            stem_family: stem_family(&stem).unwrap_or_default().to_string(),
+            stem,
+            tense: canonical_tense(info.tense.as_deref().unwrap_or_default()).to_string(),
+            person: field(&info.person),
+            gender: field(&info.gender),
+            number: field(&info.number),
+            state: field(&info.state),
+        }
+    }
 }
 
 /// BDB headwords use Unicode NFC combining order (vowels CCC=17 before dagesh/dots CCC=21-24),
@@ -3987,29 +4135,36 @@ impl Bible {
             .optional()
     }
 
-    /// Every lexicon's entries for a root family: the BDB entries given, each
-    /// followed by the Klein and Jastrow articles spelled the same way, then
-    /// the rest of the family Klein and Jastrow know that BDB does not.
+    /// Every lexicon's entries for a root family: the BDB entries given, the
+    /// SEDRA lexemes given, and the Klein and Jastrow articles spelled like
+    /// any of them, each seated after the entry of its lexicon's spelling.
     ///
     /// The family is found by spelling. Its skeletons are the root's own, each
-    /// BDB headword's, and `related` — for a Peshitta word, the lexemes of its
-    /// SEDRA root tree, whose one ש is tried as a Hebrew shin and as a sin. A
-    /// Klein entry spelled like the root itself is the base Klein prints the
-    /// family under, so the derivatives it lists are added too. Matching by
-    /// spelling over-includes homographs; the reader sorts those out from the
-    /// glosses and the source of each entry.
+    /// BDB headword's, and each SEDRA lexeme's, whose one ש is tried as a
+    /// Hebrew shin and as a sin. A Klein entry spelled like the root itself is
+    /// the base Klein prints the family under, so the derivatives it lists are
+    /// added too. Matching by spelling over-includes homographs; the reader
+    /// sorts those out from the glosses and the source of each entry.
+    ///
+    /// SEDRA leads when one of its lexemes is the looked-up word's own (a
+    /// Peshitta word, from [`Self::sedra_root_tree`]); BDB leads otherwise,
+    /// with SEDRA's Aramaic cognates seated among the other lexicons.
     pub fn root_lexicon(
         &self,
         root: &str,
         bdb: Vec<BdbEntry>,
-        related: &[String],
+        sedra: Vec<SedraLexemeSummary>,
     ) -> rusqlite::Result<Vec<LexiconEntry>> {
         let bdb_skeletons: Vec<String> = bdb.iter().map(|e| fold_consonants(&e.headword)).collect();
         let root_skeleton = fold_consonants(root);
-        // SEDRA spellings, whose one ש may be a Hebrew shin or sin.
-        let related: Vec<String> = related
-            .iter()
-            .flat_map(|r| hebrew_keys_for_syriac(r))
+        let sedra_leads = sedra.iter().any(|l| l.is_current);
+        // SEDRA spellings, whose one ש may be a Hebrew shin or sin — the
+        // root's own too, when it is a Peshitta root.
+        let related: Vec<String> = sedra_leads
+            .then(|| hebrew_keys_for_syriac(root))
+            .into_iter()
+            .flatten()
+            .chain(sedra.iter().flat_map(|l| hebrew_keys_for_syriac(&l.lexeme)))
             .collect();
         let mut skeletons: Vec<String> = Vec::new();
         for s in std::iter::once(&root_skeleton)
@@ -4020,8 +4175,8 @@ impl Bible {
                 skeletons.push(s.clone());
             }
         }
-        let dictionary = self.dictionary_family(&skeletons, &root_skeleton)?;
-        let bdb = bdb
+        let mut dictionary = self.dictionary_family(&skeletons, &root_skeleton)?;
+        let bdb: Vec<(LexiconEntry, String)> = bdb
             .into_iter()
             .map(|e| LexiconEntry {
                 source: LexiconSource::Bdb,
@@ -4031,10 +4186,29 @@ impl Bible {
                 content_json: e.content_json,
                 lang: String::new(),
                 homograph: String::new(),
+                is_current: false,
             })
             .zip(bdb_skeletons)
             .collect();
-        Ok(interleave_lexicons(bdb, dictionary))
+        let sedra: Vec<(LexiconEntry, String)> = sedra
+            .into_iter()
+            .map(|l| {
+                // Spelled as a shin, the way BDB's skeletons spell every ש
+                // nobody dotted.
+                let skeleton = hebrew_keys_for_syriac(&l.lexeme)
+                    .into_iter()
+                    .next()
+                    .unwrap_or_default();
+                (sedra_lexicon_entry(l), skeleton)
+            })
+            .collect();
+        Ok(if sedra_leads {
+            dictionary.extend(bdb.into_iter().map(|(e, skeleton)| (skeleton, e)));
+            interleave_lexicons(sedra, dictionary)
+        } else {
+            dictionary.extend(sedra.into_iter().map(|(e, skeleton)| (skeleton, e)));
+            interleave_lexicons(bdb, dictionary)
+        })
     }
 
     /// [`Self::root_lexicon`] gathered into [`Lexeme`]s, so one word's entries
@@ -4043,9 +4217,9 @@ impl Bible {
         &self,
         root: &str,
         bdb: Vec<BdbEntry>,
-        related: &[String],
+        sedra: Vec<SedraLexemeSummary>,
     ) -> rusqlite::Result<Vec<Lexeme>> {
-        Ok(group_lexemes(self.root_lexicon(root, bdb, related)?))
+        Ok(group_lexemes(self.root_lexicon(root, bdb, sedra)?))
     }
 
     /// Klein and Jastrow entries spelled like any of `skeletons`, plus the
@@ -4166,6 +4340,7 @@ impl Bible {
             content_json,
             lang: row.lang,
             homograph,
+            is_current: false,
         })
     }
 
@@ -4305,28 +4480,43 @@ impl Bible {
     /// [`Bible::hebrew_root_occurrences`], which this supersedes for callers
     /// that want more than a verse list: the distinct verses are the distinct
     /// `(book, chapter, verse)` triples of the result, so a caller never needs
-    /// both scans.
+    /// both scans. See [`Bible::root_occurrences`] for the whole canon.
     pub fn hebrew_root_occurrences_detailed(
         &self,
         root: &str,
-    ) -> rusqlite::Result<Vec<HebrewOccurrence>> {
+    ) -> rusqlite::Result<Vec<Occurrence>> {
         if root.is_empty() {
             return Ok(Vec::new());
         }
+        self.ot_tokens(
+            &format!(
+                "w.surface_id IN (SELECT surface_id FROM data.root_surface \
+                                  WHERE lexeme = ?1 AND sources & 1) \
+                 OR w.surface_id IN ({LEXICON_ROOT_SURFACES})"
+            ),
+            [root],
+        )
+    }
+
+    /// The OT tokens `filter` (a condition on `data.word w`) admits, in
+    /// reading order, with their parses.
+    fn ot_tokens(
+        &self,
+        filter: &str,
+        params: impl rusqlite::Params,
+    ) -> rusqlite::Result<Vec<Occurrence>> {
         let sql = format!(
             "SELECT w.ref >> 16, (w.ref >> 8) & 255, w.ref & 255, w.position, s.text, \
                     {WORD_INFO_COLUMNS} \
              FROM data.word w \
              JOIN data.surface s ON s.surface_id = w.surface_id \
              {joins} \
-             WHERE w.surface_id IN (SELECT surface_id FROM data.root_surface \
-                                    WHERE lexeme = ?1 AND sources & 1) \
-                OR w.surface_id IN ({LEXICON_ROOT_SURFACES}) \
+             WHERE {filter} \
              ORDER BY w.ref, w.position",
             joins = WORD_INFO_JOINS.replace('%', "w"),
         );
         let mut stmt = self.db.prepare(&sql)?;
-        stmt.query_map([root], |row| {
+        stmt.query_map(params, |row| {
             let surface: String = row.get(4)?;
             let info = word_from_row(row, 5, &surface)?;
             // The label is the one the reader shows inline, so a filter and the
@@ -4334,28 +4524,15 @@ impl Bible {
             // what the filter actually cuts on.
             let (parse, parse_label) = info.as_ref().map_or_else(
                 || (OccurrenceParse::default(), String::new()),
-                |info| {
-                    let field = |value: &Option<String>| value.clone().unwrap_or_default();
-                    (
-                        OccurrenceParse {
-                            part_of_speech: field(&info.part_of_speech),
-                            stem: field(&info.form),
-                            tense: field(&info.tense),
-                            person: field(&info.person),
-                            gender: field(&info.gender),
-                            number: field(&info.number),
-                            state: field(&info.state),
-                        },
-                        morph_summary(info),
-                    )
-                },
+                |info| (OccurrenceParse::of(info), morph_summary(info)),
             );
-            Ok(HebrewOccurrence {
+            Ok(Occurrence {
                 book: row.get(0)?,
                 chapter: row.get(1)?,
                 verse: row.get(2)?,
                 position: row.get(3)?,
                 surface,
+                lexeme: String::new(),
                 parse,
                 parse_label,
             })
@@ -4363,21 +4540,44 @@ impl Bible {
         .collect()
     }
 
+    /// Every token of a root across the canon, in canonical order: for a
+    /// Hebrew root, its OT tokens and then the NT tokens of the Peshitta roots
+    /// spelled with the same letters; for a SEDRA root, the OT tokens of the
+    /// Hebrew roots it is spelled like and then its own NT tokens. Cognates
+    /// are matched by spelling, as [`Bible::sedra_root_tree_by_letters`] and
+    /// [`Bible::hebrew_bdb_by_syriac_root`] match them for the lexicon, so a
+    /// word's list reaches across both testaments whichever it was read in.
+    pub fn root_occurrences(&self, root: RootRef) -> rusqlite::Result<Vec<Occurrence>> {
+        let (ot, nt_roots) = match root {
+            RootRef::Hebrew(root) => (
+                self.hebrew_root_occurrences_detailed(root)?,
+                self.sedra_roots_by_letters(root)?,
+            ),
+            RootRef::Sedra(key_root) => (self.hebrew_cognate_tokens(key_root)?, vec![key_root]),
+        };
+        let mut all = ot;
+        for key_root in nt_roots {
+            all.extend(self.sedra_root_tokens(key_root)?);
+        }
+        Ok(all)
+    }
+
     /// Full SEDRA lexicon entry for an NT word. `vocalised` is the displayed
     /// Hebrew word (matched directly against `data.syriac_word.vocalised`,
     /// since the NT bible text is the same bijective transliteration). Returns
     /// one [`SedraWord`] per matching word form (homographs yield several).
     pub fn sedra_word_info(&self, vocalised: &str) -> rusqlite::Result<Vec<SedraWord>> {
-        let mut stmt = self.db.prepare(
+        let mut stmt = self.db.prepare(&format!(
             "SELECT w.lexeme_id, l.root_id, w.word, w.vocalised, l.lexeme, r.root, \
                     w.gender, w.person, w.number, w.state, w.tense, w.form, \
-                    w.suffix_person, w.suffix_gender, w.suffix_number \
+                    w.suffix_person, w.suffix_gender, w.suffix_number, {category} \
              FROM data.syriac_word w \
              JOIN data.syriac_lexeme l ON w.lexeme_id = l.lexeme_id \
              JOIN data.syriac_root r ON l.root_id = r.root_id \
              WHERE replace(replace(w.vocalised, char(1471), ''), char(95), '') = ?1 \
              ORDER BY w.word_id",
-        )?;
+            category = self.sedra_category_column("l")?,
+        ))?;
         let key = crate::transliterate::lookup_key(vocalised);
         let mut words = stmt
             .query_map([key], |row| {
@@ -4395,6 +4595,10 @@ impl Bible {
                     tense: decode_tense(row.get(10)?),
                     form: decode_form(row.get(11)?),
                     suffix: decode_suffix(row.get(12)?, row.get(13)?, row.get(14)?),
+                    part_of_speech: row
+                        .get::<_, Option<i64>>(15)?
+                        .and_then(decode_category)
+                        .map(str::to_string),
                     meanings: Vec::new(),
                 })
             })?
@@ -4460,81 +4664,71 @@ impl Bible {
         key_root: i64,
         current_key_lexeme: i64,
     ) -> rusqlite::Result<Vec<SedraLexemeSummary>> {
-        let mut stmt = self.db.prepare(
-            "SELECT lexeme_id, lexeme FROM data.syriac_lexeme \
+        let mut stmt = self.db.prepare(&format!(
+            "SELECT lexeme_id, lexeme, {category} FROM data.syriac_lexeme l \
              WHERE root_id = ?1 ORDER BY lexeme_id",
-        )?;
+            category = self.sedra_category_column("l")?,
+        ))?;
         let lexemes = stmt
             .query_map([key_root], |row| {
-                Ok((row.get::<_, i64>(0)?, row.get::<_, String>(1)?))
+                Ok((
+                    row.get::<_, i64>(0)?,
+                    row.get::<_, String>(1)?,
+                    row.get::<_, Option<i64>>(2)?,
+                ))
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
 
         let mut tree = Vec::with_capacity(lexemes.len());
-        for (key_lexeme, lexeme) in lexemes {
+        for (key_lexeme, lexeme, category) in lexemes {
             tree.push(SedraLexemeSummary {
                 lexeme: display(lexeme),
                 meanings: self.sedra_meanings(key_lexeme)?,
+                part_of_speech: category.and_then(decode_category),
                 is_current: key_lexeme == current_key_lexeme,
             });
         }
         Ok(tree)
     }
 
-    /// NT verses where any word form of the given lexeme occurs.
-    pub fn sedra_lexeme_occurrences(
-        &self,
-        key_lexeme: i64,
-    ) -> rusqlite::Result<Vec<WordOccurrence>> {
-        let mut stmt = self.db.prepare(
-            "SELECT DISTINCT o.ref >> 16, (o.ref >> 8) & 255, o.ref & 255 \
-             FROM data.nt_word o \
-             JOIN data.syriac_word w ON o.word_id = w.word_id \
-             WHERE w.lexeme_id = ?1 ORDER BY o.ref",
+    /// The SQL for a SEDRA lexeme's grammatical category, on the lexeme table
+    /// aliased `alias`: its `category` column, or NULL on a database that
+    /// predates it.
+    fn sedra_category_column(&self, alias: &str) -> rusqlite::Result<String> {
+        let has: bool = self.db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM pragma_table_info('syriac_lexeme', 'data') \
+             WHERE name = 'category')",
+            [],
+            |row| row.get(0),
         )?;
-        stmt.query_map([key_lexeme], |row| {
-            Ok(WordOccurrence {
-                book: row.get(0)?,
-                chapter: row.get(1)?,
-                verse: row.get(2)?,
-            })
-        })?
-        .collect()
+        Ok(if has {
+            format!("{alias}.category")
+        } else {
+            "NULL".to_string()
+        })
     }
 
-    /// NT verses where any lexeme of the given root occurs.
-    pub fn sedra_root_occurrences(&self, key_root: i64) -> rusqlite::Result<Vec<WordOccurrence>> {
-        let mut stmt = self.db.prepare(
-            "SELECT DISTINCT o.ref >> 16, (o.ref >> 8) & 255, o.ref & 255 \
-             FROM data.nt_word o \
-             JOIN data.syriac_word w ON o.word_id = w.word_id \
-             JOIN data.syriac_lexeme l ON w.lexeme_id = l.lexeme_id \
-             WHERE l.root_id = ?1 ORDER BY o.ref",
-        )?;
-        stmt.query_map([key_root], |row| {
-            Ok(WordOccurrence {
-                book: row.get(0)?,
-                chapter: row.get(1)?,
-                verse: row.get(2)?,
-            })
-        })?
-        .collect()
+    /// The SEDRA roots spelled with the same letters as a Hebrew `root`; see
+    /// [`Bible::sedra_root_tree_by_letters`].
+    fn sedra_roots_by_letters(&self, root: &str) -> rusqlite::Result<Vec<i64>> {
+        let root = bare_letters(root);
+        if root.is_empty() {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self
+            .db
+            .prepare("SELECT root_id FROM data.syriac_root WHERE root = ?1 ORDER BY root_id")?;
+        stmt.query_map([&root], |row| row.get(0))?.collect()
     }
 
-    /// OT (Hebrew Bible) occurrences of the same consonantal root as a SEDRA
-    /// NT root, answered from the Hebrew tables like
-    /// [`Bible::hebrew_root_occurrences`]. The SEDRA root is rendered with
-    /// medial letter forms, so its [`crate::transliterate::lookup_key`]
-    /// matches the medial-form roots in those databases directly. Unlike the
-    /// Hebrew lookup, the noun arm also accepts a consonantal-headword match
-    /// (`bdb.cons`): SEDRA roots are often biliteral (יד, לב, הר) where BDB
-    /// keys the noun under an empty or geminate root. OT books only, so these
-    /// never duplicate the SEDRA-derived NT occurrences. Roots without a
-    /// Hebrew cognate simply yield nothing.
-    pub fn ot_root_occurrences(
-        &self,
-        sedra_key_root: i64,
-    ) -> rusqlite::Result<Vec<WordOccurrence>> {
+    /// OT tokens of the same consonantal root as a SEDRA NT root. The SEDRA
+    /// root is rendered with medial letter forms, so its
+    /// [`crate::transliterate::lookup_key`] matches the medial-form roots of
+    /// the Hebrew tables directly. Unlike the Hebrew lookup, the noun arm also
+    /// accepts a consonantal-headword match (`bdb.cons`): SEDRA roots are often
+    /// biliteral (יד, לב, הר) where BDB keys the noun under an empty or
+    /// geminate root. Roots without a Hebrew cognate simply yield nothing.
+    fn hebrew_cognate_tokens(&self, sedra_key_root: i64) -> rusqlite::Result<Vec<Occurrence>> {
         let root: String = self.db.query_row(
             "SELECT root FROM data.syriac_root WHERE root_id = ?1",
             [sedra_key_root],
@@ -4546,92 +4740,61 @@ impl Bible {
         if shin.is_empty() {
             return Ok(Vec::new());
         }
-        let mut stmt = self.db.prepare(
-            "SELECT DISTINCT w.ref >> 16, (w.ref >> 8) & 255, w.ref & 255 \
-             FROM data.word w \
-             WHERE w.surface_id IN (SELECT surface_id FROM data.root_surface \
-                                    WHERE lexeme IN (?1, ?2) AND sources & 1) \
-                OR w.surface_id IN (SELECT rs.surface_id FROM data.root_surface rs \
-                                    JOIN lexicon_entry b ON b.word = rs.lexeme \
-                                    WHERE rs.sources & 2 \
-                                      AND (b.root IN (?1, ?2) OR b.cons IN (?1, ?2))) \
-             ORDER BY w.ref",
-        )?;
-        stmt.query_map([shin, sin], |row| {
-            Ok(WordOccurrence {
-                book: row.get(0)?,
-                chapter: row.get(1)?,
-                verse: row.get(2)?,
-            })
-        })?
-        .collect()
+        self.ot_tokens(
+            "w.surface_id IN (SELECT surface_id FROM data.root_surface \
+                              WHERE lexeme IN (?1, ?2) AND sources & 1) \
+             OR w.surface_id IN (SELECT rs.surface_id FROM data.root_surface rs \
+                                 JOIN lexicon_entry b ON b.word = rs.lexeme \
+                                 WHERE rs.sources & 2 \
+                                   AND (b.root IN (?1, ?2) OR b.cons IN (?1, ?2)))",
+            [shin, sin],
+        )
     }
 
-    /// NT occurrences of every lexeme of a root, each tagged with the lexeme's
-    /// position in the root tree so the UI can filter by lexeme. `lexeme_index`
-    /// matches the ordering of [`Bible::sedra_root_tree`] (lexemes ordered by
-    /// `lexeme_id`). Adjacent rows for the same verse+lexeme are merged, with
-    /// distinct word forms collected.
-    pub fn sedra_root_occurrences_detailed(
-        &self,
-        key_root: i64,
-    ) -> rusqlite::Result<Vec<SedraOccurrence>> {
-        // Map lexeme_id -> index in lexeme_id order (same as sedra_root_tree).
-        let mut idx_stmt = self.db.prepare(
-            "SELECT lexeme_id FROM data.syriac_lexeme WHERE root_id = ?1 ORDER BY lexeme_id",
-        )?;
-        let mut lexeme_index = HashMap::new();
-        let keys = idx_stmt
-            .query_map([key_root], |row| row.get::<_, i64>(0))?
-            .collect::<rusqlite::Result<Vec<_>>>()?;
-        for (i, key) in keys.into_iter().enumerate() {
-            lexeme_index.insert(key, i as u32);
-        }
-
-        let mut stmt = self.db.prepare(
-            "SELECT o.ref >> 16, (o.ref >> 8) & 255, o.ref & 255, w.lexeme_id, w.vocalised \
+    /// Every NT token of a SEDRA root, in reading order, each with its
+    /// lexeme and its parse in the vocabulary the OT tokens use.
+    fn sedra_root_tokens(&self, key_root: i64) -> rusqlite::Result<Vec<Occurrence>> {
+        let mut stmt = self.db.prepare(&format!(
+            "SELECT o.ref >> 16, (o.ref >> 8) & 255, o.ref & 255, o.ord, w.vocalised, \
+                    l.lexeme, w.gender, w.person, w.number, w.state, w.tense, w.form, \
+                    {category} \
              FROM data.nt_word o \
              JOIN data.syriac_word w ON o.word_id = w.word_id \
              JOIN data.syriac_lexeme l ON w.lexeme_id = l.lexeme_id \
              WHERE l.root_id = ?1 \
-             ORDER BY o.ref, w.lexeme_id",
-        )?;
-        let rows = stmt
-            .query_map([key_root], |row| {
-                Ok((
-                    row.get::<_, u8>(0)?,
-                    row.get::<_, u8>(1)?,
-                    row.get::<_, u8>(2)?,
-                    row.get::<_, i64>(3)?,
-                    row.get::<_, String>(4)?,
-                ))
-            })?
-            .collect::<rusqlite::Result<Vec<_>>>()?;
-
-        let mut out: Vec<SedraOccurrence> = Vec::new();
-        for (book, chapter, verse, key_lexeme, word) in rows {
-            let index = *lexeme_index.get(&key_lexeme).unwrap_or(&0);
-            match out.last_mut() {
-                Some(last)
-                    if last.book == book
-                        && last.chapter == chapter
-                        && last.verse == verse
-                        && last.lexeme_index == index =>
-                {
-                    if !last.words.contains(&word) {
-                        last.words.push(word);
-                    }
-                }
-                _ => out.push(SedraOccurrence {
-                    book,
-                    chapter,
-                    verse,
-                    lexeme_index: index,
-                    words: vec![word],
-                }),
-            }
-        }
-        Ok(out)
+             ORDER BY o.ref, o.ord",
+            category = self.sedra_category_column("l")?,
+        ))?;
+        stmt.query_map([key_root], |row| {
+            let surface = display(row.get(4)?);
+            // As a HebrewWord, so the one label and parse the OT is described
+            // with describes this token too.
+            let info = HebrewWord {
+                word: surface.clone(),
+                part_of_speech: row
+                    .get::<_, Option<i64>>(12)?
+                    .and_then(decode_category)
+                    .map(str::to_string),
+                gender: decode_gender(row.get(6)?),
+                person: decode_person(row.get(7)?),
+                number: decode_number(row.get(8)?),
+                state: decode_state(row.get(9)?),
+                tense: decode_tense(row.get(10)?),
+                form: decode_form(row.get(11)?),
+                ..HebrewWord::default()
+            };
+            Ok(Occurrence {
+                book: row.get(0)?,
+                chapter: row.get(1)?,
+                verse: row.get(2)?,
+                position: row.get(3)?,
+                lexeme: display(row.get(5)?),
+                parse: OccurrenceParse::of(&info),
+                parse_label: morph_summary(&info),
+                surface,
+            })
+        })?
+        .collect()
     }
 
     /// Lexicon lookup for an NT word, backed by the Syriac lexicon. Returns
@@ -5300,6 +5463,7 @@ mod tests {
             pos_category: "noun",
             lang: String::new(),
             homograph: String::new(),
+            is_current: false,
         };
         let bdb = vec![
             (entry(LexiconSource::Bdb, "שָׁלֵם"), "שלמ".to_string()),
@@ -5349,6 +5513,7 @@ mod tests {
                 pos_category,
                 lang: String::new(),
                 homograph,
+                is_current: false,
             }
         };
         use LexiconSource::{Bdb, Jastrow, Klein};
@@ -5444,6 +5609,7 @@ mod tests {
             pos_category: "other",
             lang: String::new(),
             homograph: String::new(),
+            is_current: false,
         };
         use LexiconSource::{Bdb, Jastrow, Klein};
         let lexemes = group_lexemes(vec![
@@ -5564,7 +5730,7 @@ mod tests {
         let bible = Bible::open(data_dir()).unwrap();
         let family = |root: &str| {
             let bdb = bible.hebrew_bdb_by_root(root).unwrap();
-            bible.root_lexemes(root, bdb, &[]).unwrap()
+            bible.root_lexemes(root, bdb, Vec::new()).unwrap()
         };
         let has = |lexemes: &[Lexeme], word: &str| {
             let word = crate::normalize_surface(word);
@@ -5591,9 +5757,19 @@ mod tests {
         assert!(has(&both, "יִשְׂרָאֵל") && has(&both, "שִׁרְיוֹן"));
     }
 
+    /// A SEDRA lexeme spelled `lexeme`, as the root tree would hand it over.
+    fn sedra_lexeme(lexeme: &str) -> SedraLexemeSummary {
+        SedraLexemeSummary {
+            lexeme: lexeme.to_string(),
+            ..SedraLexemeSummary::default()
+        }
+    }
+
     fn family_of_syriac(bible: &Bible, root: &str) -> Vec<Lexeme> {
         let bdb = bible.hebrew_bdb_by_syriac_root(root).unwrap();
-        bible.root_lexemes(root, bdb, &[root.to_string()]).unwrap()
+        bible
+            .root_lexemes(root, bdb, vec![sedra_lexeme(root)])
+            .unwrap()
     }
 
     #[test]
@@ -5602,7 +5778,7 @@ mod tests {
         let bible = Bible::open(data_dir()).unwrap();
         let family = |root: &str| {
             let bdb = bible.hebrew_bdb_by_root(root).unwrap();
-            bible.root_lexemes(root, bdb, &[]).unwrap()
+            bible.root_lexemes(root, bdb, Vec::new()).unwrap()
         };
         let same = |a: &str, b: &str| crate::normalize_surface(a) == crate::normalize_surface(b);
         // BDB files Sarai under שׂרר "rule", beside שַׂר "prince", and
@@ -5635,7 +5811,7 @@ mod tests {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
         let bdb = bible.hebrew_bdb_by_root("שבת").unwrap();
-        let lexemes = bible.root_lexemes("שבת", bdb, &[]).unwrap();
+        let lexemes = bible.root_lexemes("שבת", bdb, Vec::new()).unwrap();
         let shevet = lexemes
             .iter()
             .find(|l| crate::normalize_surface(&l.headword) == "שֶׁבֶת")
@@ -5676,7 +5852,7 @@ mod tests {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
         let base = bible
-            .root_lexicon("שלם", Vec::new(), &[])
+            .root_lexicon("שלם", Vec::new(), Vec::new())
             .unwrap()
             .into_iter()
             .find(|e| e.source == LexiconSource::Klein && e.headword == "שׁלם")
@@ -5713,7 +5889,7 @@ mod tests {
         let bdb = bible.hebrew_bdb_by_root("שלם").unwrap();
         assert!(!bdb.is_empty(), "no BDB entries under שלם");
         let bdb_count = bdb.len();
-        let family = bible.root_lexicon("שלם", bdb, &[]).unwrap();
+        let family = bible.root_lexicon("שלם", bdb, Vec::new()).unwrap();
         let count = |source| family.iter().filter(|e| e.source == source).count();
         assert_eq!(count(LexiconSource::Bdb), bdb_count);
         assert!(count(LexiconSource::Klein) > 0, "no Klein entries for שלם");
@@ -5730,7 +5906,7 @@ mod tests {
 
         // A Peshitta word reaches its Aramaic lexemes through `related`.
         let family = bible
-            .root_lexicon("שלם", Vec::new(), &["שלמא".to_string()])
+            .root_lexicon("שלם", Vec::new(), vec![sedra_lexeme("שלמא")])
             .unwrap();
         assert!(
             family.iter().any(|e| e.source == LexiconSource::Jastrow),
@@ -5891,36 +6067,104 @@ mod tests {
         assert!(tree.len() > 1, "root should have several lexemes");
         assert_eq!(tree.iter().filter(|l| l.is_current).count(), 1);
 
-        // OT occurrences of the same root (כתב "write") come from the
-        // Hebrew root lookup, are all OT (<40), and never overlap the NT
-        // SEDRA set.
-        let ot_occ = bible.ot_root_occurrences(w.key_root).unwrap();
-        assert!(!ot_occ.is_empty(), "expected OT occurrences for root כתב");
-        assert!(ot_occ.iter().all(|o| o.book < 40));
-
-        // Occurrences: lexeme is a subset of the root family, both non-empty.
-        let lex_occ = bible.sedra_lexeme_occurrences(w.key_lexeme).unwrap();
-        let root_occ = bible.sedra_root_occurrences(w.key_root).unwrap();
-        assert!(!lex_occ.is_empty());
-        assert!(root_occ.len() >= lex_occ.len());
-        assert!(root_occ.iter().all(|o| o.book >= 40));
-
-        // Detailed root occurrences: every row tags a valid lexeme index, all
-        // are NT, and distinct verses match the flat root-occurrence count.
-        let detailed = bible.sedra_root_occurrences_detailed(w.key_root).unwrap();
-        assert!(!detailed.is_empty());
-        assert!(detailed.iter().all(|o| o.book >= 40));
+        // Occurrences span the canon: the OT tokens of the Hebrew cognate
+        // (כתב "write") first, then the root's own NT tokens, in canonical
+        // order, each carrying its lexeme and a parse.
+        let tokens = bible.root_occurrences(RootRef::Sedra(w.key_root)).unwrap();
+        let (ot, nt): (Vec<_>, Vec<_>) = tokens.iter().partition(|o| o.book < 40);
+        assert!(!ot.is_empty(), "expected OT occurrences for root כתב");
+        assert!(!nt.is_empty());
+        assert!(tokens.windows(2).all(|p| {
+            (p[0].book, p[0].chapter, p[0].verse, p[0].position)
+                < (p[1].book, p[1].chapter, p[1].verse, p[1].position)
+        }));
+        let lexemes: std::collections::HashSet<_> =
+            tree.iter().map(|l| l.lexeme.as_str()).collect();
+        assert!(nt.iter().all(|o| lexemes.contains(o.lexeme.as_str())));
+        assert!(nt.iter().any(|o| o.lexeme == w.lexeme));
+        assert!(nt.iter().all(|o| !o.surface.is_empty()));
+        // The first word of Matthew is among them, at its own position.
         assert!(
-            detailed
-                .iter()
-                .all(|o| (o.lexeme_index as usize) < tree.len())
+            nt.iter()
+                .any(|o| (o.book, o.chapter, o.verse, o.position) == (40, 1, 1, 0))
         );
-        assert!(detailed.iter().all(|o| !o.words.is_empty()));
-        let distinct_verses: std::collections::HashSet<_> = detailed
-            .iter()
-            .map(|o| (o.book, o.chapter, o.verse))
-            .collect();
-        assert_eq!(distinct_verses.len(), root_occ.len());
+        // The Hebrew root reaches the same NT tokens from the other side.
+        let from_hebrew = bible.root_occurrences(RootRef::Hebrew("כתב")).unwrap();
+        assert!(from_hebrew.iter().any(|o| o.book >= 40));
+    }
+
+    #[test]
+    fn both_testaments_parse_in_one_vocabulary() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let ot = bible.root_occurrences(RootRef::Hebrew("כתב")).unwrap();
+        let (ot, nt): (Vec<_>, Vec<_>) = ot.into_iter().partition(|o| o.book < 40);
+        let values = |tokens: &[Occurrence], of: fn(&OccurrenceParse) -> &str| {
+            tokens
+                .iter()
+                .map(|o| of(&o.parse).to_string())
+                .filter(|v| !v.is_empty())
+                .collect::<std::collections::HashSet<_>>()
+        };
+        // Shared categories share their spelling.
+        for of in [
+            (|p: &OccurrenceParse| p.part_of_speech.as_str()) as fn(&OccurrenceParse) -> &str,
+            |p| p.number.as_str(),
+            |p| p.gender.as_str(),
+            |p| p.stem_family.as_str(),
+        ] {
+            let shared = values(&ot, of);
+            assert!(
+                values(&nt, of).iter().any(|v| shared.contains(v)),
+                "no shared value between {:?} and {:?}",
+                values(&ot, of),
+                values(&nt, of),
+            );
+        }
+        // The stems keep their own names, and meet in their family.
+        assert!(values(&ot, |p| p.stem.as_str()).contains("Qal"));
+        assert!(values(&nt, |p| p.stem.as_str()).contains("Peal"));
+        assert!(
+            ot.iter()
+                .chain(&nt)
+                .filter(|o| o.parse.stem == "Qal" || o.parse.stem == "Peal")
+                .all(|o| o.parse.stem_family == "Simple")
+        );
+        assert!(values(&nt, |p| p.part_of_speech.as_str()).contains("Verb"));
+        assert!(!values(&nt, |p| p.tense.as_str()).contains("Active participle"));
+    }
+
+    #[test]
+    fn stems_fall_into_the_shared_families() {
+        for (hebrew, aramaic, family) in [
+            ("Qal", "Peal", "Simple"),
+            ("Niphal", "Ethpeal", "Simple passive/reflexive"),
+            ("Piel", "Pael", "Intensive"),
+            ("Hithpael", "Ethpaal", "Intensive passive/reflexive"),
+            ("Hiphil", "Aphel", "Causative"),
+            ("Hophal", "Ettaphal", "Causative passive/reflexive"),
+        ] {
+            assert_eq!(stem_family(hebrew), Some(family));
+            assert_eq!(stem_family(aramaic), Some(family));
+        }
+        assert_eq!(stem_family(""), None);
+    }
+
+    #[test]
+    fn a_sedra_lexeme_is_an_entry_of_its_own_lexicon() {
+        let entry = sedra_lexicon_entry(SedraLexemeSummary {
+            lexeme: "שׁלָמָא".to_string(),
+            meanings: vec!["peace".to_string(), "greeting".to_string()],
+            part_of_speech: Some("Noun"),
+            is_current: true,
+        });
+        assert_eq!(entry.source, LexiconSource::Sedra);
+        assert_eq!(entry.pos_category, "noun");
+        assert_eq!(entry.gloss, "peace");
+        assert!(entry.is_current);
+        let content: serde_json::Value = serde_json::from_str(&entry.content_json).unwrap();
+        assert_eq!(content["senses"][1]["num"], "2.");
+        assert_eq!(content["senses"][1]["definition"][0]["t"], "greeting");
     }
 
     #[test]

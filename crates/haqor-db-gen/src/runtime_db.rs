@@ -599,7 +599,9 @@ CREATE TABLE syriac_root(root_id INTEGER PRIMARY KEY, root TEXT);
 CREATE TABLE syriac_lexeme(
     lexeme_id INTEGER PRIMARY KEY,
     root_id   INTEGER,
-    lexeme    TEXT
+    lexeme    TEXT,
+    -- SEDRA's grammatical category (`keyAttrCategory`: verb, noun, particle, …).
+    category  INTEGER
 );
 -- The morphology keys are what the NT word-info sheet reads; SEDRA's other
 -- ~15 columns per word are generation-only.
@@ -1002,8 +1004,8 @@ fn copy_syriac(db: &Connection) -> Result<()> {
     db.execute_batch(
         "INSERT INTO out.syriac_root(root_id, root)
            SELECT keyRoot, strRoot FROM sedradb.roots;
-         INSERT INTO out.syriac_lexeme(lexeme_id, root_id, lexeme)
-           SELECT keyLexeme, keyRoot, strLexeme FROM sedradb.lexemes;
+         INSERT INTO out.syriac_lexeme(lexeme_id, root_id, lexeme, category)
+           SELECT keyLexeme, keyRoot, strLexeme, keyAttrCategory FROM sedradb.lexemes;
          INSERT INTO out.syriac_word(word_id, lexeme_id, word, vocalised, gender, person,
                                      number, state, tense, form, suffix_person,
                                      suffix_gender, suffix_number)
