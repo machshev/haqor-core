@@ -389,6 +389,32 @@ fn group_lexemes(entries: Vec<LexiconEntry>) -> Vec<Lexeme> {
         .collect()
 }
 
+/// The dot every ש of `word` carries — U+05C1 for shin, U+05C2 for sin — or
+/// `None` when it has no dotted ש, or both kinds.
+fn shin_dot(word: &str) -> Option<char> {
+    let mut found = None;
+    let mut chars = word.chars().peekable();
+    while let Some(c) = chars.next() {
+        if c != 'ש' {
+            continue;
+        }
+        // The dot is among the marks up to the next letter.
+        while let Some(&mark) = chars.peek() {
+            if ('\u{05D0}'..='\u{05EA}').contains(&mark) {
+                break;
+            }
+            chars.next();
+            if matches!(mark, '\u{05C1}' | '\u{05C2}') {
+                if found.is_some_and(|dot| dot != mark) {
+                    return None;
+                }
+                found = Some(mark);
+            }
+        }
+    }
+    found
+}
+
 /// Whether a normalised headword carries vowels, which Klein's roots do not.
 fn is_pointed(key: &str) -> bool {
     key.chars().any(|c| ('\u{05B0}'..='\u{05BB}').contains(&c))
@@ -3779,13 +3805,26 @@ impl Bible {
 
     /// [`Self::root_lexicon`] gathered into [`Lexeme`]s, so one word's entries
     /// from every lexicon read together under one headword and one class.
+    ///
+    /// Roots are keyed by bare letters, so שׂרה "persist" and שׁרה "let loose"
+    /// share one family. `word` is the word the family is wanted for: when it
+    /// is spelled with a sin, or a shin, the entries spelled with the other are
+    /// left out. An empty `word`, or one whose shins and sins disagree, keeps
+    /// the whole family.
     pub fn root_lexemes(
         &self,
         root: &str,
         bdb: Vec<BdbEntry>,
         related: &[String],
+        word: &str,
     ) -> rusqlite::Result<Vec<Lexeme>> {
-        Ok(group_lexemes(self.root_lexicon(root, bdb, related)?))
+        let mut entries = self.root_lexicon(root, bdb, related)?;
+        if fold_consonants(root).contains('ש')
+            && let Some(dot) = shin_dot(word)
+        {
+            entries.retain(|e| shin_dot(&e.headword).is_none_or(|d| d == dot));
+        }
+        Ok(group_lexemes(entries))
     }
 
     /// Klein and Jastrow entries spelled like any of `skeletons`, plus the
@@ -5082,11 +5121,50 @@ mod tests {
     }
 
     #[test]
+    fn a_ש_is_a_shin_or_a_sin_throughout_or_neither() {
+        assert_eq!(shin_dot("יִשְׂרָאֵל"), Some('\u{05C2}'));
+        assert_eq!(shin_dot("שָׁרָ֑י"), Some('\u{05C1}'));
+        assert_eq!(shin_dot("שַׁוְשָׁא"), Some('\u{05C1}'));
+        // The relative שֶׁ on a sin root says nothing either way.
+        assert_eq!(shin_dot("שֶׁיִּשְׂרָאֵל"), None);
+        assert_eq!(shin_dot("שרה"), None);
+        assert_eq!(shin_dot("בָּרָא"), None);
+    }
+
+    #[test]
+    fn a_sin_word_leaves_out_the_shin_root_spelled_alike() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let family = |word: &str| {
+            let bdb = bible.hebrew_bdb_by_root("שרה").unwrap();
+            bible.root_lexemes("שרה", bdb, &[], word).unwrap()
+        };
+        let dots = |lexemes: &[Lexeme]| -> HashSet<Option<char>> {
+            lexemes
+                .iter()
+                .flat_map(|l| &l.entries)
+                .map(|e| shin_dot(&e.headword))
+                .collect()
+        };
+        let (sin, shin) = (Some('\u{05C2}'), Some('\u{05C1}'));
+        // Israel "persists": Sarah and Israel, not Sharai or the armour.
+        let israel = family("יִשְׂרָאֵל");
+        assert!(dots(&israel).contains(&sin));
+        assert!(!dots(&israel).contains(&shin), "{israel:#?}");
+        let loose = family("שָׁרָה");
+        assert!(dots(&loose).contains(&shin));
+        assert!(!dots(&loose).contains(&sin));
+        // Without a dotted word to go by, both roots stay.
+        let both = dots(&family(""));
+        assert!(both.contains(&sin) && both.contains(&shin));
+    }
+
+    #[test]
     fn sarai_is_a_name_and_every_headword_is_unaccented() {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
         let bdb = bible.hebrew_bdb_by_root("שרה").unwrap();
-        let lexemes = bible.root_lexemes("שרה", bdb, &[]).unwrap();
+        let lexemes = bible.root_lexemes("שרה", bdb, &[], "").unwrap();
         let sarai = lexemes
             .iter()
             .find(|l| crate::normalize_surface(&l.headword) == crate::normalize_surface("שָׂרַי"))
@@ -5110,7 +5188,7 @@ mod tests {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
         let bdb = bible.hebrew_bdb_by_root("שבת").unwrap();
-        let lexemes = bible.root_lexemes("שבת", bdb, &[]).unwrap();
+        let lexemes = bible.root_lexemes("שבת", bdb, &[], "").unwrap();
         let shevet = lexemes
             .iter()
             .find(|l| crate::normalize_surface(&l.headword) == "שֶׁבֶת")
