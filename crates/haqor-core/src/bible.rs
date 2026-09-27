@@ -141,6 +141,11 @@ pub struct LexiconEntry {
     /// `PBH`, `MH` or `FW`, Jastrow's `b. h.` (also biblical) or `ch.`
     /// (Aramaic). Empty for BDB and for Klein's unmarked, biblical, entries.
     pub lang: String,
+    /// The numeral Klein or Jastrow tells same-spelled entries apart by (`I`,
+    /// `II`, `²`), cut off [`Self::headword`]. It numbers one source's entries
+    /// only, so beside the others it labels the entry within its [`Lexeme`].
+    /// Empty when the source prints none, as BDB never does.
+    pub homograph: String,
 }
 
 /// A `dictionary_entry` row as [`Bible::root_lexicon`] reads it.
@@ -237,6 +242,105 @@ fn interleave_lexicons(
     }
     out.extend(dictionary.into_iter().map(|(_, e)| e));
     out
+}
+
+/// One word of a root family as every lexicon has it: BDB's, Klein's and
+/// Jastrow's entries for the same pointed headword, together. See
+/// [`Bible::root_lexemes`].
+#[derive(Debug)]
+pub struct Lexeme {
+    /// The headword without any homograph numeral, as its first entry spells it.
+    pub headword: String,
+    /// The class the entries mostly agree on, since the lexicons do not always
+    /// file a word alike (Jastrow leaves many unmarked); BDB's breaks a tie.
+    pub pos_category: &'static str,
+    /// BDB's entries, then Klein's, then Jastrow's, each source's in its own
+    /// order. A source's homographs stay separate entries, told apart by
+    /// [`LexiconEntry::homograph`].
+    pub entries: Vec<LexiconEntry>,
+}
+
+/// Split a headword into the word and the numeral its source tells homographs
+/// apart by: Klein's small capitals (`ᴵᴵ`, `ᴵⱽ`), Jastrow's Roman numerals and
+/// superscript digits (`II`, `²`, `I, II`).
+fn split_homograph(headword: &str) -> (String, String) {
+    let is_mark = |c: char| {
+        matches!(c, 'I' | 'V' | 'X' | 'ᴵ' | 'ⱽ' | '¹' | '²' | '³' | ',')
+            || ('⁰'..='⁹').contains(&c)
+            || c.is_whitespace()
+    };
+    let word = headword.trim_end_matches(is_mark);
+    let mark = headword[word.len()..].trim().trim_end_matches(',');
+    if word.is_empty() {
+        return (headword.to_string(), String::new());
+    }
+    (word.to_string(), mark.to_string())
+}
+
+/// Gather a root family's entries into [`Lexeme`]s by pointed headword,
+/// ignoring accents and homograph numerals, in the order each first appears.
+/// An unpointed entry (Klein prints roots bare) joins the pointed lexeme of
+/// the same letters and class, or a root header spelled so.
+fn group_lexemes(entries: Vec<LexiconEntry>) -> Vec<Lexeme> {
+    let is_pointed = |key: &str| key.chars().any(|c| ('\u{05B0}'..='\u{05BB}').contains(&c));
+    let mut groups: Vec<(String, Vec<LexiconEntry>)> = Vec::new();
+    let mut bare = Vec::new();
+    for entry in entries {
+        let key = crate::normalize_surface(&entry.headword);
+        if key.is_empty() {
+            groups.push((entry.headword.clone(), vec![entry]));
+        } else if !is_pointed(&key) {
+            bare.push((key, entry));
+        } else if let Some((_, group)) = groups.iter_mut().find(|(k, _)| *k == key) {
+            group.push(entry);
+        } else {
+            groups.push((key, vec![entry]));
+        }
+    }
+    for (key, entry) in bare {
+        let letters = fold_consonants(&key);
+        let home = groups.iter_mut().find(|(k, group)| {
+            fold_consonants(k) == letters
+                && group
+                    .iter()
+                    .any(|e| e.pos_category == entry.pos_category || e.pos_category == "root")
+        });
+        match home {
+            Some((_, group)) => group.push(entry),
+            None => groups.push((key, vec![entry])),
+        }
+    }
+    groups
+        .into_iter()
+        .map(|(_, mut entries)| {
+            entries.sort_by_key(|e| e.source as u8);
+            Lexeme {
+                headword: entries[0].headword.clone(),
+                pos_category: majority_pos(&entries),
+                entries,
+            }
+        })
+        .collect()
+}
+
+/// The class most of a lexeme's entries give it, "other" counting only when
+/// nothing else is given. Ties go to the earliest entry, BDB's.
+fn majority_pos(entries: &[LexiconEntry]) -> &'static str {
+    let mut best = entries[0].pos_category;
+    let mut best_count = 0;
+    for e in entries {
+        if e.pos_category == "other" {
+            continue;
+        }
+        let count = entries
+            .iter()
+            .filter(|o| o.pos_category == e.pos_category)
+            .count();
+        if count > best_count {
+            (best, best_count) = (e.pos_category, count);
+        }
+    }
+    best
 }
 
 /// The analysis chosen to describe one OT (Hebrew Bible) surface form, drawn
@@ -3558,10 +3662,22 @@ impl Bible {
                 gloss: e.gloss,
                 content_json: e.content_json,
                 lang: String::new(),
+                homograph: String::new(),
             })
             .zip(bdb_skeletons)
             .collect();
         Ok(interleave_lexicons(bdb, dictionary))
+    }
+
+    /// [`Self::root_lexicon`] gathered into [`Lexeme`]s, so one word's entries
+    /// from every lexicon read together under one headword and one class.
+    pub fn root_lexemes(
+        &self,
+        root: &str,
+        bdb: Vec<BdbEntry>,
+        related: &[String],
+    ) -> rusqlite::Result<Vec<Lexeme>> {
+        Ok(group_lexemes(self.root_lexicon(root, bdb, related)?))
     }
 
     /// Klein and Jastrow entries spelled like any of `skeletons`, plus the
@@ -3666,13 +3782,15 @@ impl Bible {
         row: DictionaryRow,
     ) -> rusqlite::Result<LexiconEntry> {
         let content_json = self.blobs.decode(row.body)?;
+        let (headword, homograph) = split_homograph(&normalize_hebrew_combining(&row.word));
         Ok(LexiconEntry {
             source: LexiconSource::parse(source).unwrap_or(LexiconSource::Jastrow),
             pos_category: dictionary_pos_category(&row.pos, &content_json),
-            headword: normalize_hebrew_combining(&row.word),
+            headword,
             gloss: row.gloss,
             content_json,
             lang: row.lang,
+            homograph,
         })
     }
 
@@ -4679,6 +4797,7 @@ mod tests {
             content_json: String::new(),
             pos_category: "noun",
             lang: String::new(),
+            homograph: String::new(),
         };
         let bdb = vec![
             (entry(LexiconSource::Bdb, "שָׁלֵם"), "שלמ".to_string()),
@@ -4703,6 +4822,117 @@ mod tests {
                 (LexiconSource::Klein, "שַׁלְמָן".to_string()),
             ]
         );
+    }
+
+    #[test]
+    fn homograph_numerals_come_off_the_headword() {
+        let split = split_homograph;
+        assert_eq!(split("שֶֽׁבֶת ᴵᴵ"), ("שֶֽׁבֶת".into(), "ᴵᴵ".into()));
+        assert_eq!(split("שֶׁבֶת I"), ("שֶׁבֶת".into(), "I".into()));
+        assert_eq!(split("אַבָּא ²"), ("אַבָּא".into(), "²".into()));
+        assert_eq!(split("אָב  I, II,"), ("אָב".into(), "I, II".into()));
+        assert_eq!(split("שׁבת"), ("שׁבת".into(), String::new()));
+        assert_eq!(split("◌ ᴵ"), ("◌".into(), "ᴵ".into()));
+    }
+
+    #[test]
+    fn one_words_entries_from_every_lexicon_form_one_lexeme() {
+        let entry = |source, headword: &str, pos_category| {
+            let (headword, homograph) = split_homograph(headword);
+            LexiconEntry {
+                source,
+                gloss: format!("{headword}{homograph}"),
+                headword,
+                content_json: String::new(),
+                pos_category,
+                lang: String::new(),
+                homograph,
+            }
+        };
+        use LexiconSource::{Bdb, Jastrow, Klein};
+        let lexemes = group_lexemes(vec![
+            entry(Bdb, "שָׁבַת", "verb"),
+            entry(Klein, "שׁבת", "verb"),
+            entry(Jastrow, "שָׁבַת", "verb"),
+            entry(Bdb, "שֶׁ֫בֶת", "noun"),
+            entry(Klein, "שֶֽׁבֶת ᴵ", "noun"),
+            entry(Jastrow, "שֶׁבֶת I", "other"),
+            entry(Klein, "שֶֽׁבֶת ᴵᴵ", "noun"),
+            entry(Jastrow, "שֶׁבֶת II", "noun"),
+            entry(Bdb, "שַׁבָּת", "noun"),
+            entry(Bdb, "שָׁבַת", "verb"),
+            entry(Bdb, "מִשְׁבָּת", "verb"),
+            entry(Klein, "מִשְׁבָּת", "noun"),
+            entry(Bdb, "מִשְׁבָּת", "noun"),
+        ]);
+        type Shape<'a> = (&'a str, &'a str, Vec<(LexiconSource, &'a str)>);
+        let shape: Vec<Shape> = lexemes
+            .iter()
+            .map(|l| {
+                let entries = l
+                    .entries
+                    .iter()
+                    .map(|e| (e.source, e.homograph.as_str()))
+                    .collect();
+                (l.headword.as_str(), l.pos_category, entries)
+            })
+            .collect();
+        assert_eq!(
+            shape,
+            vec![
+                (
+                    "שָׁבַת",
+                    "verb",
+                    vec![(Bdb, ""), (Bdb, ""), (Klein, ""), (Jastrow, "")]
+                ),
+                (
+                    "שֶׁ֫בֶת",
+                    "noun",
+                    vec![
+                        (Bdb, ""),
+                        (Klein, "ᴵ"),
+                        (Klein, "ᴵᴵ"),
+                        (Jastrow, "I"),
+                        (Jastrow, "II")
+                    ]
+                ),
+                ("שַׁבָּת", "noun", vec![(Bdb, "")]),
+                ("מִשְׁבָּת", "noun", vec![(Bdb, ""), (Bdb, ""), (Klein, "")]),
+            ]
+        );
+    }
+
+    #[test]
+    fn a_root_familys_homographs_share_one_lexeme() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let bdb = bible.hebrew_bdb_by_root("שבת").unwrap();
+        let lexemes = bible.root_lexemes("שבת", bdb, &[]).unwrap();
+        let shevet = lexemes
+            .iter()
+            .find(|l| crate::normalize_surface(&l.headword) == "שֶׁבֶת")
+            .expect("a שֶׁבֶת lexeme");
+        let marks: Vec<(LexiconSource, &str)> = shevet
+            .entries
+            .iter()
+            .filter(|e| e.source != LexiconSource::Bdb)
+            .map(|e| (e.source, e.homograph.as_str()))
+            .collect();
+        for mark in [
+            (LexiconSource::Klein, "ᴵ"),
+            (LexiconSource::Klein, "ᴵᴵ"),
+            (LexiconSource::Jastrow, "I"),
+            (LexiconSource::Jastrow, "II"),
+        ] {
+            assert!(marks.contains(&mark), "{mark:?} missing from {marks:?}");
+        }
+        assert_eq!(shevet.entries[0].source, LexiconSource::Bdb);
+        assert_eq!(shevet.pos_category, "noun");
+        let headwords: HashSet<String> = lexemes
+            .iter()
+            .map(|l| crate::normalize_surface(&l.headword))
+            .collect();
+        assert_eq!(headwords.len(), lexemes.len(), "a lexeme is split");
     }
 
     #[test]
