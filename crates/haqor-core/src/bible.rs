@@ -1092,6 +1092,25 @@ impl VerseRef {
     }
 }
 
+/// A verse or an inclusive run of verses, as a cross reference names it.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub struct VerseSpan {
+    pub first: VerseRef,
+    /// Equal to `first` for a single verse.
+    pub last: VerseRef,
+}
+
+/// A key word or phrase of a verse and the passages the *Treasury of
+/// Scripture Knowledge* links it to: the hand-curated, thematic kind of cross
+/// reference a wide-margin Bible prints, unlike the found [`Quotation`]s.
+/// `phrase` is the King James Version's wording, as the TSK gives it; the
+/// targets are in the corpus numbering, in the TSK's order.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ThematicReference {
+    pub phrase: String,
+    pub targets: Vec<VerseSpan>,
+}
+
 /// Two verses linked by a quotation, an echo or a parallel passage: an NT
 /// verse quoting the OT, or two verses of one testament sharing wording
 /// (parallel accounts, repeated oracles, synoptic parallels). Found at build
@@ -4746,6 +4765,90 @@ impl Bible {
         .collect()
     }
 
+    /// The thematic cross references of one verse: its key phrases in reading
+    /// order, each with the passages it links to. Empty for a verse without
+    /// any, and for a database built before the table existed.
+    pub fn thematic_references(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+    ) -> rusqlite::Result<Vec<ThematicReference>> {
+        let reference = pack_ref(book, chapter, verse);
+        Ok(self
+            .query_thematic_references(reference, reference)?
+            .into_iter()
+            .map(|(_, reference)| reference)
+            .collect())
+    }
+
+    /// How many passages each verse of a chapter links to by
+    /// [`Bible::thematic_references`], as `(verse, count)` for the verses that
+    /// have any.
+    pub fn chapter_thematic_reference_counts(
+        &self,
+        book: u8,
+        chapter: u8,
+    ) -> rusqlite::Result<Vec<(u8, u32)>> {
+        let mut counts: Vec<(u8, u32)> = Vec::new();
+        for (verse, reference) in self
+            .query_thematic_references(pack_ref(book, chapter, 0), pack_ref(book, chapter, 255))?
+        {
+            let n = reference.targets.len() as u32;
+            match counts.last_mut() {
+                Some((v, count)) if *v == verse.verse => *count += n,
+                _ => counts.push((verse.verse, n)),
+            }
+        }
+        Ok(counts)
+    }
+
+    /// The `thematic_reference` rows of the verses `low..=high`, in order.
+    fn query_thematic_references(
+        &self,
+        low: i64,
+        high: i64,
+    ) -> rusqlite::Result<Vec<(VerseRef, ThematicReference)>> {
+        if !self.has_table("thematic_reference")? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT ref, phrase, targets FROM data.thematic_reference \
+             WHERE ref BETWEEN ?1 AND ?2 ORDER BY note_id",
+        )?;
+        stmt.query_map([low, high], |row| {
+            let targets: String = row.get(2)?;
+            let targets = targets
+                .split_whitespace()
+                .filter_map(|target| {
+                    let (first, last) = target.split_once('-').unwrap_or((target, target));
+                    Some(VerseSpan {
+                        first: VerseRef::unpack(first.parse().ok()?),
+                        last: VerseRef::unpack(last.parse().ok()?),
+                    })
+                })
+                .collect();
+            Ok((
+                VerseRef::unpack(row.get(0)?),
+                ThematicReference {
+                    phrase: row.get(1)?,
+                    targets,
+                },
+            ))
+        })?
+        .collect()
+    }
+
+    /// Whether this `haqor.db` has the table `name`: an older build lacks the
+    /// ones added since.
+    fn has_table(&self, name: &str) -> rusqlite::Result<bool> {
+        self.db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM data.sqlite_master WHERE type = 'table' AND name = ?1)",
+            [name],
+            |row| row.get(0),
+        )
+    }
+
     pub fn chapter_count(&self, book: u8) -> rusqlite::Result<u8> {
         self.db.query_row(
             "SELECT MAX((ref >> 8) & 255) FROM data.verse WHERE ref BETWEEN ?1 AND ?2",
@@ -4927,6 +5030,45 @@ mod tests {
         assert_eq!(imperative.person.as_deref(), Some("Second"));
         assert_eq!(imperative.gender.as_deref(), Some("Masculine"));
         assert_eq!(imperative.number.as_deref(), Some("Singular"));
+    }
+
+    /// The TSK's references arrive on the Hebrew numbering: Malachi 4:5 in
+    /// the KJV is 3:23 here, and links to Matthew 11:14, which links back.
+    #[test]
+    fn thematic_references_follow_the_hebrew_numbering() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let verse = |book, chapter, verse| VerseRef {
+            book,
+            chapter,
+            verse,
+        };
+        let single = |v: VerseRef| VerseSpan { first: v, last: v };
+
+        let genesis = bible.thematic_references(1, 1, 1).unwrap();
+        assert_eq!(genesis[0].phrase, "beginning");
+        assert!(genesis[0].targets.contains(&VerseSpan {
+            first: verse(43, 1, 1),
+            last: verse(43, 1, 3),
+        }));
+
+        let malachi = bible.thematic_references(26, 3, 23).unwrap();
+        let sending = malachi.iter().find(|r| r.phrase == "I will").unwrap();
+        assert!(sending.targets.contains(&single(verse(40, 11, 14))));
+        let matthew = bible.thematic_references(40, 11, 14).unwrap();
+        assert!(
+            matthew
+                .iter()
+                .any(|r| r.targets.contains(&single(verse(26, 3, 23))))
+        );
+
+        let counts = bible.chapter_thematic_reference_counts(26, 3).unwrap();
+        let (_, count) = counts.iter().find(|(v, _)| *v == 23).unwrap();
+        assert_eq!(
+            *count as usize,
+            malachi.iter().map(|r| r.targets.len()).sum::<usize>()
+        );
+        assert!(bible.thematic_references(26, 4, 1).unwrap().is_empty());
     }
 
     /// The quotation table links well-known quotations in both directions and
