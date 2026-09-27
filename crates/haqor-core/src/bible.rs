@@ -1192,6 +1192,33 @@ pub struct ThematicReference {
     pub targets: Vec<VerseSpan>,
 }
 
+/// Which verses [`Bible::thematic_reference_verses`] lists: those of one book
+/// (either testament), optionally within a chapter range.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct ThematicFilter {
+    pub book: u8,
+    /// Inclusive chapter bounds; `None` leaves that end open.
+    pub first_chapter: Option<u8>,
+    pub last_chapter: Option<u8>,
+}
+
+impl ThematicFilter {
+    /// The packed refs the filter spans, inclusive.
+    fn bounds(self) -> (i64, i64) {
+        (
+            pack_ref(self.book, self.first_chapter.unwrap_or(0), 0),
+            pack_ref(self.book, self.last_chapter.unwrap_or(255), 255),
+        )
+    }
+}
+
+/// A verse and its [`ThematicReference`]s, in reading order.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ThematicVerse {
+    pub verse: VerseRef,
+    pub references: Vec<ThematicReference>,
+}
+
 /// Two verses linked by a quotation, an echo or a parallel passage: an NT
 /// verse quoting the OT, or two verses of one testament sharing wording
 /// (parallel accounts, repeated oracles, synoptic parallels). Found at build
@@ -4945,6 +4972,60 @@ impl Bible {
             .collect())
     }
 
+    /// The verses of `filter` that have thematic references, in order, each
+    /// with its references: a chapter's (or a book's) margin. `limit` and
+    /// `offset` page through the verses.
+    pub fn thematic_reference_verses(
+        &self,
+        filter: ThematicFilter,
+        limit: u32,
+        offset: u32,
+    ) -> rusqlite::Result<Vec<ThematicVerse>> {
+        if !self.has_table("thematic_reference")? {
+            return Ok(Vec::new());
+        }
+        let (low, high) = filter.bounds();
+        // The page's verses first, so a page never ends part-way through one.
+        let refs = self
+            .db
+            .prepare_cached(
+                "SELECT DISTINCT ref FROM data.thematic_reference \
+                 WHERE ref BETWEEN ?1 AND ?2 ORDER BY ref LIMIT ?3 OFFSET ?4",
+            )?
+            .query_map(rusqlite::params![low, high, limit, offset], |row| {
+                row.get::<_, i64>(0)
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let (Some(&first), Some(&last)) = (refs.first(), refs.last()) else {
+            return Ok(Vec::new());
+        };
+        let mut verses: Vec<ThematicVerse> = Vec::new();
+        for (verse, reference) in self.query_thematic_references(first, last)? {
+            match verses.last_mut() {
+                Some(v) if v.verse == verse => v.references.push(reference),
+                _ => verses.push(ThematicVerse {
+                    verse,
+                    references: vec![reference],
+                }),
+            }
+        }
+        Ok(verses)
+    }
+
+    /// How many verses [`Bible::thematic_reference_verses`] would list for
+    /// `filter` without a limit, for a caller paging through them.
+    pub fn thematic_reference_verse_count(&self, filter: ThematicFilter) -> rusqlite::Result<u32> {
+        if !self.has_table("thematic_reference")? {
+            return Ok(0);
+        }
+        let (low, high) = filter.bounds();
+        self.db.query_row(
+            "SELECT COUNT(DISTINCT ref) FROM data.thematic_reference WHERE ref BETWEEN ?1 AND ?2",
+            [low, high],
+            |row| row.get(0),
+        )
+    }
+
     /// How many passages each verse of a chapter links to by
     /// [`Bible::thematic_references`], as `(verse, count)` for the verses that
     /// have any.
@@ -5193,6 +5274,37 @@ mod tests {
         assert_eq!(imperative.person.as_deref(), Some("Second"));
         assert_eq!(imperative.gender.as_deref(), Some("Masculine"));
         assert_eq!(imperative.number.as_deref(), Some("Singular"));
+    }
+
+    /// A chapter's thematic references come verse by verse, paged by verse.
+    #[test]
+    fn thematic_reference_verses_walk_a_chapter() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let genesis_1 = ThematicFilter {
+            book: 1,
+            first_chapter: Some(1),
+            last_chapter: Some(1),
+        };
+        let total = bible.thematic_reference_verse_count(genesis_1).unwrap();
+        assert!((25..=31).contains(&total), "{total}");
+        let all = bible.thematic_reference_verses(genesis_1, 100, 0).unwrap();
+        assert_eq!(all.len() as u32, total);
+        assert_eq!(all[0].verse.verse, 1);
+        assert_eq!(
+            all[0].references,
+            bible.thematic_references(1, 1, 1).unwrap()
+        );
+        assert!(all.windows(2).all(|w| w[0].verse.verse < w[1].verse.verse));
+
+        let page = bible.thematic_reference_verses(genesis_1, 5, 3).unwrap();
+        assert_eq!(page, all[3..8]);
+        let book = ThematicFilter {
+            book: 1,
+            first_chapter: None,
+            last_chapter: None,
+        };
+        assert!(bible.thematic_reference_verse_count(book).unwrap() > 1000);
     }
 
     /// The TSK's references arrive on the Hebrew numbering: Malachi 4:5 in
