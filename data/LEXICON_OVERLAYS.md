@@ -13,6 +13,11 @@ Rust source. The file has three arrays:
   primary reading for a surface. Use the browser editor to avoid transcribing
   its morphology fields by hand.
 
+A `root` is the root's consonants, final letters written medially, with a sin
+written with its dot (`עשׂה`, `שׂדה`) and a shin as a bare `ש` (`שמר`). Shin
+and sin are different consonants, so `שרה` and `שׂרה` are two roots, and a
+root must be spelled the way the corpus keys it to match.
+
 For example:
 
 ```json

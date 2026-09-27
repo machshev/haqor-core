@@ -59,11 +59,33 @@ pub mod data_support {
         crate::bible::lexicon_fallback(db, surface)
     }
 
-    /// A word's bare consonants, finals folded — the key the pointing-blind rung
-    /// of the lexicon bridge matches on, and what `surface.cons` stores so the
-    /// runtime can match a name against its entry without a SQL function.
+    /// A word's consonants, finals folded and a sin kept apart from a shin —
+    /// the key roots and lexemes are filed under, the key the pointing-blind
+    /// rung of the lexicon bridge matches on, and what `surface.cons` stores
+    /// so the runtime can match a name against its entry without a SQL
+    /// function.
     pub fn fold_consonants(word: &str) -> String {
         crate::bible::fold_consonants(word)
+    }
+
+    /// [`fold_consonants`] with sin and shin both a bare ש, as Syriac spells
+    /// them: the key shared with SEDRA.
+    pub fn bare_letters(word: &str) -> String {
+        crate::bible::bare_letters(word)
+    }
+
+    /// How many consonants a [`fold_consonants`] key spells, a sin counting
+    /// once.
+    pub fn key_len(key: &str) -> usize {
+        crate::bible::key_letters(key).count()
+    }
+
+    /// The root key for a root spelled with the bare letters `bare` (as the
+    /// morphology generator knows it), read off a pointed `surface` of it: a
+    /// sin wherever the surface's ש are all sins. `None` when the surface
+    /// does not decide — no ש, or both kinds.
+    pub fn root_key_from_surface(bare: &str, surface: &str) -> Option<String> {
+        crate::bible::root_key_from_surface(bare, surface)
     }
 
     /// The connection the generation databases are attached to, so the

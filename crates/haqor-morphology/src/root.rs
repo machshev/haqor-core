@@ -39,13 +39,20 @@ pub enum Gizra {
 pub struct Root {
     pub letters: [char; 3],
     pub classes: Vec<Gizra>,
+    /// Whether the root's ש is a sin (שׂרה "persist") rather than a shin
+    /// (שׁרה "let loose"). [`Self::letters`] spell both with the bare ש, which
+    /// is all the rules need, since the two inflect alike; this only decides
+    /// which dot a generated form's ש is written with.
+    pub sin: bool,
 }
 
 impl Root {
     /// Parse a root from a Hebrew string. Strips niqqud and whitespace,
     /// expects exactly three consonants. Final-form letters (ך/ם/ן/ף/ץ) are
-    /// normalised back to their base forms.
+    /// normalised back to their base forms. A ש written with the sin dot, as
+    /// the lexicon keys a sin root (`שׂרה`), makes a [`Self::sin`] root.
     pub fn parse(s: &str) -> Result<Self, RootError> {
+        let sin = s.contains('\u{05C2}') && !s.contains('\u{05C1}');
         let letters: Vec<char> = s
             .chars()
             .filter_map(|c| {
@@ -67,12 +74,19 @@ impl Root {
             return Err(RootError::WrongLength(letters.len()));
         }
         let letters = [letters[0], letters[1], letters[2]];
-        Ok(Root::from_letters(letters))
+        Ok(Root {
+            sin,
+            ..Root::from_letters(letters)
+        })
     }
 
     pub fn from_letters(letters: [char; 3]) -> Self {
         let classes = detect_gizra(letters);
-        Root { letters, classes }
+        Root {
+            letters,
+            classes,
+            sin: false,
+        }
     }
 
     pub fn pe(&self) -> char {

@@ -609,9 +609,9 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
 /// BDB groups its entries into `<section>`s, each headed by a `type="root"`
 /// entry whose headword fixes the root for that section; the derivative entries
 /// that follow (nouns, adjectives, …) inherit it. We reduce the root entry's
-/// headword to a triliteral via [`Root::parse`] — the same normalisation the
-/// reverse parser and `roots` table use — so a stored root joins directly onto
-/// `hebrew.db`'s `analyses.root`.
+/// headword to its triliteral key via [`root_key`] — the key the `roots` table
+/// uses and the one `hebrew.db` settles `analyses.root` on — so a stored root
+/// joins directly onto it, a sin root apart from the shin root spelled alike.
 ///
 /// Each entry's prose becomes a `content_json` of the form
 /// `{"senses":[{num?,form?,definition:[{t,b?,i?,s?,rtl?,href?,xref?}],senses?}]}`,
@@ -621,27 +621,20 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
 /// carries `xref`, the target entry id the app navigates to), and `<stem>` the
 /// sense's `form`. The leading headword gloss is also kept flat in `gloss`.
 /// Consonant skeleton of a pointed Hebrew word: niqqud and any non-letter marks
-/// stripped, final-form letters folded to their medial base. Used as the noun
-/// bridge — `hebrew.db` noun stems carry final forms and vowels, so matching a
-/// stem to its BDB lexeme (and thence its root) needs both sides reduced to bare
-/// medial consonants.
+/// stripped, final-form letters folded to their medial base, and a sin kept as
+/// `שׂ` apart from a shin's bare `ש` — the runtime's key, so it is core's own
+/// fold. Used as the noun bridge — `hebrew.db` noun stems carry final forms and
+/// vowels, so matching a stem to its BDB lexeme (and thence its root) needs
+/// both sides reduced to their consonants.
 pub(crate) fn consonants(word: &str) -> String {
-    word.chars()
-        .filter_map(|c| {
-            let n = c as u32;
-            if !(0x05D0..=0x05EA).contains(&n) {
-                return None;
-            }
-            Some(match c {
-                '\u{05DA}' => '\u{05DB}',
-                '\u{05DD}' => '\u{05DE}',
-                '\u{05DF}' => '\u{05E0}',
-                '\u{05E3}' => '\u{05E4}',
-                '\u{05E5}' => '\u{05E6}',
-                other => other,
-            })
-        })
-        .collect()
+    haqor_core::data_support::fold_consonants(word)
+}
+
+/// The root key of a word that spells a triliteral root: its [`consonants`],
+/// a sin kept apart from a shin, when [`Root::parse`] accepts it as three
+/// letters. The key `bdb.root`, `roots.root` and `entry_root.root` share.
+pub(crate) fn root_key(word: &str) -> Option<String> {
+    Root::parse(word).ok().map(|_| consonants(word))
 }
 
 /// What a BDB entry id resolves to, gathered in the pre-scan: its headword
@@ -711,8 +704,8 @@ pub(crate) fn bdb_headwords(path: &Path) -> Result<std::collections::HashMap<Str
                 "section" => current_root.clear(),
                 "entry" if !id.is_empty() => {
                     let headword = tidy(&word);
-                    if is_root_entry && let Ok(r) = Root::parse(&headword) {
-                        current_root = r.letters.iter().collect();
+                    if is_root_entry && let Some(key) = root_key(&headword) {
+                        current_root = key;
                     }
                     map.insert(
                         id.clone(),
@@ -1023,8 +1016,8 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         let entry_type = if is_root_entry { "root" } else { "" };
 
                         let word = tidy(&word);
-                        if is_root_entry && let Ok(r) = Root::parse(&word) {
-                            current_root = r.letters.iter().collect();
+                        if is_root_entry && let Some(key) = root_key(&word) {
+                            current_root = key;
                         }
                         let cons = consonants(&word);
                         // The Hebrew lexicon is curated by root, so derivatives
@@ -1062,9 +1055,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                             .then(|| target.map(|r| r.root.clone()).unwrap_or_default())
                             .filter(|root| !root.is_empty());
                         let own_root = || {
-                            Root::parse(&word)
-                                .ok()
-                                .map(|r| r.letters.iter().collect::<String>())
+                            root_key(&word)
                                 .filter(|r| !r.is_empty())
                                 .unwrap_or_else(|| cons.clone())
                         };
@@ -1079,9 +1070,7 @@ fn load_bdb(db: &mut Connection, path: &Path) -> Result<usize> {
                         } else if !current_root.is_empty() {
                             current_root.clone()
                         } else {
-                            Root::parse(&word)
-                                .map(|r| r.letters.iter().collect())
-                                .unwrap_or_default()
+                            root_key(&word).unwrap_or_default()
                         };
 
                         stmt.execute((
@@ -1184,7 +1173,7 @@ fn load_lexical_index(db: &mut Connection, path: &Path) -> Result<usize> {
 /// Harvest the explicit `etym root="…"` attributes from LexicalIndex.xml. These
 /// are the lexicographers' canonical roots (e.g. `אבד`), already unpointed
 /// consonants. Returns the raw root strings; normalisation to a triliteral is
-/// done by the caller via [`Root::parse`].
+/// done by the caller via [`root_key`].
 fn collect_etym_roots(path: &Path) -> Result<Vec<String>> {
     let mut reader = crate::xml::Reader::open(path)?;
     let mut out = Vec::new();
@@ -1207,8 +1196,8 @@ fn collect_etym_roots(path: &Path) -> Result<Vec<String>> {
 /// Build the authoritative `roots` inventory: every distinct triliteral root
 /// the lexicon knows about, used to prune the reverse-parser's over-generated
 /// candidate roots. Two independent sources are unioned, each normalised
-/// through [`Root::parse`] (folds final forms, strips niqqud, keeps only
-/// exactly-triliteral entries):
+/// through [`root_key`] (folds final forms, strips niqqud but keeps a sin apart
+/// from a shin, keeps only exactly-triliteral entries):
 ///
 /// - **Strong's lemmas** — `english.word`, excluding proper nouns (`n-pr*`,
 ///   `np`), whose names fold to spurious triliterals. A verb root frequently
@@ -1237,8 +1226,8 @@ fn load_roots(db: &mut Connection, lexical_index: &Path) -> Result<usize> {
             db.prepare("SELECT word FROM english WHERE pos NOT LIKE 'n-pr%' AND pos <> 'np'")?;
         let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
         for word in rows {
-            if let Ok(root) = Root::parse(&word?) {
-                strong_roots.insert(root.letters.iter().collect());
+            if let Some(root) = root_key(&word?) {
+                strong_roots.insert(root);
             }
         }
     }
@@ -1246,8 +1235,8 @@ fn load_roots(db: &mut Connection, lexical_index: &Path) -> Result<usize> {
     // Source 2: explicit etym roots.
     let mut etym_roots: BTreeSet<String> = BTreeSet::new();
     for raw in collect_etym_roots(lexical_index)? {
-        if let Ok(root) = Root::parse(&raw) {
-            etym_roots.insert(root.letters.iter().collect());
+        if let Some(root) = root_key(&raw) {
+            etym_roots.insert(root);
         }
     }
 
@@ -1486,9 +1475,10 @@ fn load_entry_roots(db: &mut Connection) -> Result<usize> {
 
 /// Load a triliteral-root set from `lexicon.db`, selecting rows with the given
 /// SQL predicate over the `roots` table. Each stored root is three folded
-/// consonants; hollow roots additionally contribute their medial vav/yod twin
-/// (see below). Shared by [`load_root_inventory`] and
-/// [`load_canonical_root_inventory`].
+/// consonants, a sin among them spelled `שׂ`; the parser knows the bare letters
+/// only, so the set holds those, a sin and a shin root alike. Hollow roots
+/// additionally contribute their medial vav/yod twin (see below). Shared by
+/// [`load_root_inventory`] and [`load_canonical_root_inventory`].
 fn load_roots_where(lexicon_db: &Path, predicate: &str) -> Result<HashSet<[char; 3]>> {
     let db = Connection::open(lexicon_db)
         .with_context(|| format!("opening {}", lexicon_db.display()))?;
@@ -1496,7 +1486,7 @@ fn load_roots_where(lexicon_db: &Path, predicate: &str) -> Result<HashSet<[char;
     let mut set = HashSet::new();
     let rows = stmt.query_map([], |r| r.get::<_, String>(0))?;
     for root in rows {
-        let chars: Vec<char> = root?.chars().collect();
+        let chars: Vec<char> = root?.chars().filter(|&c| c != '\u{05C2}').collect();
         if let [a, b, c] = chars[..] {
             set.insert([a, b, c]);
             // A hollow root's medial vav/yod spelling is lexically arbitrary,
@@ -1516,6 +1506,49 @@ fn load_roots_where(lexicon_db: &Path, predicate: &str) -> Result<HashSet<[char;
         }
     }
     Ok(set)
+}
+
+/// The root keys the lexicon files roots under, by their bare letters: which
+/// of a shin root and a sin root spelled alike (שׁרה, שׂרה) it knows. The
+/// morphology generator knows a root by its bare letters only, so a parsed
+/// verb's root is keyed through [`RootKeys::key`].
+#[derive(Debug, Default)]
+pub struct RootKeys {
+    by_letters: std::collections::HashMap<String, Vec<String>>,
+}
+
+impl RootKeys {
+    /// The key for a verb parsed under the bare root `bare` from the pointed
+    /// `surface`. The surface settles it when its ש are all dotted alike;
+    /// otherwise the lexicon does, when it knows only one of the two roots.
+    /// Where it knows both, or neither, the root is taken for a shin.
+    pub fn key(&self, bare: &str, surface: &str) -> String {
+        if let Some(key) = haqor_core::data_support::root_key_from_surface(bare, surface) {
+            return key;
+        }
+        match self.by_letters.get(bare).map(Vec::as_slice) {
+            Some([only]) => only.clone(),
+            _ => bare.to_string(),
+        }
+    }
+}
+
+/// Load [`RootKeys`] from a built `lexicon.db`: every key of its `roots`
+/// inventory and of BDB's own section roots.
+pub fn load_root_keys(lexicon_db: &Path) -> Result<RootKeys> {
+    let db = Connection::open(lexicon_db)
+        .with_context(|| format!("opening {}", lexicon_db.display()))?;
+    let mut stmt = db.prepare("SELECT root FROM roots UNION SELECT root FROM bdb")?;
+    let mut keys = RootKeys::default();
+    for key in stmt.query_map([], |r| r.get::<_, String>(0))? {
+        let key = key?;
+        let bare = haqor_core::data_support::bare_letters(&key);
+        let known = keys.by_letters.entry(bare).or_default();
+        if !known.contains(&key) {
+            known.push(key);
+        }
+    }
+    Ok(keys)
 }
 
 /// Load the `roots` inventory from a built `lexicon.db` into a set of
@@ -1686,6 +1719,29 @@ pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
 mod tests {
     use super::*;
     use serde_json::json;
+
+    #[test]
+    fn a_parsed_root_is_keyed_as_a_sin_or_a_shin() {
+        let mut keys = RootKeys::default();
+        for key in ["שׂרה", "שרה", "עשׂה", "שמר"] {
+            let bare = haqor_core::data_support::bare_letters(key);
+            keys.by_letters
+                .entry(bare)
+                .or_default()
+                .push(key.to_string());
+        }
+        // The surface's own dots decide first.
+        assert_eq!(keys.key("שרה", "יִשְׂרָאֵל"), "שׂרה");
+        assert_eq!(keys.key("שרה", "שָׁרָה"), "שרה");
+        // Undecided, the lexicon's only root of those letters wins …
+        assert_eq!(keys.key("עשה", "עשה"), "עשׂה");
+        // … and where it has both, the root stays a shin.
+        assert_eq!(keys.key("שרה", "שרה"), "שרה");
+        assert_eq!(keys.key("ברא", "בָּרָא"), "ברא");
+        assert_eq!(root_key("שׂרה").as_deref(), Some("שׂרה"));
+        assert_eq!(root_key("שָׂרָה").as_deref(), Some("שׂרה"));
+        assert_eq!(root_key("שׂר"), None);
+    }
 
     // Build a `senses` array shaped like the one `load_bdb` assembles, so the
     // fallback runs against the same JSON the entry handler passes in.

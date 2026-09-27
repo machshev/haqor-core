@@ -1317,26 +1317,84 @@ fn display(s: String) -> String {
     crate::transliterate::hebrew_display(&s)
 }
 
-/// Consonant skeleton of a pointed Hebrew word: niqqud stripped, final forms
-/// folded to medial. Mirrors `lexicon_db::consonants` so a `hebrew.db` noun stem
-/// can be matched to its BDB lexeme via the indexed `bdb.cons` column.
+/// Consonant skeleton of a pointed Hebrew word, and the key every root and
+/// lexeme is filed under: niqqud stripped, final forms folded to medial, and
+/// a sin kept apart from a shin. Shin and sin are different consonants, so a
+/// sin is written `שׂ` (ש and its dot, U+05C2) while a shin, or a ש nobody
+/// dotted, is a bare `ש` — שׂרה "persist" and שׁרה "let loose" are two roots.
+/// `lexicon_db` files BDB under the same key, so a `hebrew.db` noun stem can
+/// be matched to its BDB lexeme via the indexed `bdb.cons` column.
+///
+/// A ש that stands for a sin is two chars here; count a key's letters with
+/// [`key_letters`], not `chars()`.
 pub(crate) fn fold_consonants(word: &str) -> String {
-    word.chars()
-        .filter_map(|c| {
-            let n = c as u32;
-            if !(0x05D0..=0x05EA).contains(&n) {
-                return None;
-            }
-            Some(match c {
+    let mut out = String::with_capacity(word.len());
+    // Whether the last letter was a ש still waiting to learn its dot.
+    let mut open_shin = false;
+    for c in word.chars() {
+        let n = c as u32;
+        if (0x05D0..=0x05EA).contains(&n) {
+            out.push(match c {
                 '\u{05DA}' => '\u{05DB}',
                 '\u{05DD}' => '\u{05DE}',
                 '\u{05DF}' => '\u{05E0}',
                 '\u{05E3}' => '\u{05E4}',
                 '\u{05E5}' => '\u{05E6}',
                 other => other,
-            })
-        })
-        .collect()
+            });
+            open_shin = c == 'ש';
+        } else if c == SIN_DOT && open_shin {
+            out.push(SIN_DOT);
+            open_shin = false;
+        }
+    }
+    out
+}
+
+/// The root key for a root the morphology generator spells with the bare
+/// letters `bare`, read off a pointed `surface` of it. A verb's affixes carry
+/// no ש, so every ש of the surface is a radical: when they are all sins, so
+/// are the root's. `bare` comes back as it is when it has no ש; `None` when
+/// the surface does not decide (no dotted ש, or both kinds), for the caller
+/// to settle from the root inventory.
+pub(crate) fn root_key_from_surface(bare: &str, surface: &str) -> Option<String> {
+    let bare = bare_letters(bare);
+    if !bare.contains('ש') {
+        return Some(bare);
+    }
+    match shin_dot(surface)? {
+        SIN_DOT => Some(bare.replace('ש', "שׂ")),
+        _ => Some(bare),
+    }
+}
+
+/// The Hebrew keys a Syriac (SEDRA) spelling can stand for: Syriac has the one
+/// ש, so a root with a ש names both the shin root and the sin root spelled so.
+/// A root mixing the two is not tried.
+pub(crate) fn hebrew_keys_for_syriac(word: &str) -> Vec<String> {
+    let key = bare_letters(word);
+    if key.contains('ש') {
+        let sin = key.replace('ש', "שׂ");
+        vec![key, sin]
+    } else {
+        vec![key]
+    }
+}
+
+/// The dot that makes a ש a sin, as [`fold_consonants`] keeps it.
+pub(crate) const SIN_DOT: char = '\u{05C2}';
+
+/// A key's consonants, one `char` each: a sin comes back as its bare ש. For
+/// counting a key's letters, and for comparing it with a language that has
+/// only the one ש — Syriac, so SEDRA's roots — where שׂרה and שׁרה meet again.
+pub(crate) fn key_letters(key: &str) -> impl Iterator<Item = char> + '_ {
+    key.chars().filter(|&c| c != SIN_DOT)
+}
+
+/// [`fold_consonants`] without the shin/sin distinction: the key a Hebrew
+/// word shares with a Syriac (SEDRA) one.
+pub(crate) fn bare_letters(word: &str) -> String {
+    key_letters(&fold_consonants(word)).collect()
 }
 
 /// One-letter proclitic spellings tried (in order) when a vocabulary surface
@@ -1422,6 +1480,33 @@ pub(crate) fn strip_proclitic(surface: &str, proclitic: &str) -> Option<String> 
     Some(chars.into_iter().collect())
 }
 
+/// [`strip_proclitic`] by letters alone, for a prefix pointed otherwise than
+/// the word (בְּ against בְשֵׁם, which lost its dagesh after a vowel): drops as
+/// many letters, with their points, as the prefix spells, when the word
+/// begins with those letters and keeps at least two of its own.
+pub(crate) fn strip_proclitic_letters(surface: &str, proclitic: &str) -> Option<String> {
+    let is_letter = |c: &char| ('\u{05D0}'..='\u{05EA}').contains(c);
+    let letters: Vec<char> = proclitic.chars().filter(is_letter).collect();
+    if letters.is_empty() {
+        return None;
+    }
+    let mut seen = Vec::new();
+    let mut cut = surface.len();
+    for (at, c) in surface.char_indices() {
+        if is_letter(&c) {
+            if seen.len() == letters.len() {
+                cut = at;
+                break;
+            }
+            seen.push(c);
+        }
+    }
+    if seen != letters {
+        return None;
+    }
+    strip_proclitic(surface, &surface[..cut])
+}
+
 /// Remove cantillation accents and meteg, leaving consonants and vowel
 /// points — BDB headwords carry stress accents that surface forms don't.
 pub(crate) fn strip_accents(word: &str) -> String {
@@ -1483,7 +1568,7 @@ pub(crate) fn lexicon_fallback(db: &Connection, surface: &str) -> Option<(String
             let matched = curated_gloss(db, &rest)
                 .or_else(|| bdb_exact(db, &rest))
                 .or_else(|| {
-                    (fold_consonants(&rest).chars().count() >= 3)
+                    (key_letters(&fold_consonants(&rest)).count() >= 3)
                         .then(|| bdb_cons(db, &rest))
                         .flatten()
                 });
@@ -2760,6 +2845,7 @@ impl Bible {
     }
 
     fn reload_runtime_lexicon_entries(&self) -> rusqlite::Result<()> {
+        self.migrate_saved_root_keys()?;
         let mut statement = self.db.prepare(
             "SELECT surface, root, gloss, reader_gloss FROM progress.lexicon_entry_overrides",
         )?;
@@ -2776,6 +2862,111 @@ impl Bible {
             })?
             .collect::<rusqlite::Result<HashMap<_, _>>>()?;
         *self.runtime_lexicon_entries.borrow_mut() = entries;
+        Ok(())
+    }
+
+    /// The key a root saved before sin was told from shin now goes by. Roots
+    /// used to be keyed by bare letters, so a sin root was saved as `שרה`; it
+    /// is `שׂרה` now. `surface`, the word the root was saved for, settles it
+    /// when its ש are all dotted alike; otherwise the corpus does, when it
+    /// files only one of the two roots under those letters. Where it has both,
+    /// or neither, the root stays a shin, as it was read before. A root that
+    /// already carries a sin, or has no ש, comes back as it is.
+    pub fn current_root_key(&self, root: &str, surface: &str) -> String {
+        if !root.contains('ש') || root.contains(SIN_DOT) {
+            return root.to_string();
+        }
+        if let Some(key) = root_key_from_surface(root, surface) {
+            return key;
+        }
+        let bare = bare_letters(root);
+        let sin = bare.replace('ש', "שׂ");
+        let filed = |key: &str| -> bool {
+            self.db
+                .query_row(
+                    "SELECT 1 FROM entry_root WHERE root = ?1 LIMIT 1",
+                    [key],
+                    |_| Ok(()),
+                )
+                .optional()
+                .ok()
+                .flatten()
+                .is_some()
+        };
+        if filed(&sin) && !filed(&bare) {
+            sin
+        } else {
+            root.to_string()
+        }
+    }
+
+    /// Re-key what the reader saved under a sin root's bare letters (see
+    /// [`Self::current_root_key`]): their root corrections, then their Study
+    /// workspaces' words. Each keeps its `updated_epoch`: every device re-keys
+    /// what it syncs the same way, so a re-keyed row need not travel.
+    /// Idempotent, and cheap once done.
+    fn migrate_saved_root_keys(&self) -> rusqlite::Result<()> {
+        let stale: Vec<(String, String)> = {
+            let mut stmt = self.db.prepare(
+                "SELECT surface, root FROM progress.lexicon_entry_overrides \
+                 WHERE instr(root, 'ש') > 0 AND instr(root, char(1474)) = 0",
+            )?;
+            stmt.query_map([], |row| Ok((row.get(0)?, row.get(1)?)))?
+                .collect::<rusqlite::Result<_>>()?
+        };
+        for (surface, root) in stale {
+            let key = self.current_root_key(&root, &surface);
+            if key != root {
+                self.db.execute(
+                    "UPDATE progress.lexicon_entry_overrides SET root = ?2 WHERE surface = ?1",
+                    [&surface, &key],
+                )?;
+            }
+        }
+        self.migrate_study_state_root_keys()
+    }
+
+    /// Re-key the Study workspaces' saved words the same way: each workspace's
+    /// `words` carry the `root` a word was saved under beside its `surface`.
+    /// Like the corrections, the document keeps its `updated_epoch`.
+    fn migrate_study_state_root_keys(&self) -> rusqlite::Result<()> {
+        let Some((json, _, _)) = self.study_state()? else {
+            return Ok(());
+        };
+        if !json.contains('ש') {
+            return Ok(());
+        }
+        let Ok(mut workspaces) = serde_json::from_str::<serde_json::Value>(&json) else {
+            return Ok(());
+        };
+        let mut changed = false;
+        let words = workspaces
+            .as_array_mut()
+            .into_iter()
+            .flatten()
+            .filter_map(|workspace| workspace.get_mut("words")?.as_array_mut())
+            .flatten();
+        for word in words {
+            let (Some(root), Some(surface)) = (
+                word.get("root").and_then(|r| r.as_str()),
+                word.get("surface").and_then(|s| s.as_str()),
+            ) else {
+                continue;
+            };
+            let key = self.current_root_key(root, surface);
+            if key != root {
+                word["root"] = serde_json::Value::String(key);
+                changed = true;
+            }
+        }
+        if changed {
+            let json = serde_json::to_string(&workspaces)
+                .map_err(|error| rusqlite::Error::ToSqlConversionFailure(Box::new(error)))?;
+            self.db.execute(
+                "UPDATE progress.study_state SET workspaces_json = ?1 WHERE id = 1",
+                [json],
+            )?;
+        }
         Ok(())
     }
 
@@ -3417,10 +3608,18 @@ impl Bible {
         word: &str,
         prefix: &str,
     ) -> rusqlite::Result<Vec<BdbEntry>> {
+        // The prefix may store its points in another order than the word does
+        // (dagesh before sheva), so compare them in one order.
+        let (word, prefix) = (
+            normalize_hebrew_combining(word),
+            normalize_hebrew_combining(prefix),
+        );
         let target = if prefix.is_empty() {
-            word.to_string()
+            word.clone()
         } else {
-            strip_proclitic(word, prefix).unwrap_or_else(|| word.to_string())
+            strip_proclitic(&word, &prefix)
+                .or_else(|| strip_proclitic_letters(&word, &prefix))
+                .unwrap_or_else(|| word.clone())
         };
         let cons = fold_consonants(&target);
         if cons.is_empty() {
@@ -3469,6 +3668,17 @@ impl Bible {
             })
             .filter(BdbEntry::has_content)
             .collect())
+    }
+
+    /// [`Self::hebrew_bdb_by_root`] for a SEDRA root, the Hebrew cognates of a
+    /// Peshitta word: Syriac has the one ש, so a root with one names the shin
+    /// root and the sin root spelled alike, shin's entries first.
+    pub fn hebrew_bdb_by_syriac_root(&self, root: &str) -> rusqlite::Result<Vec<BdbEntry>> {
+        let mut entries = Vec::new();
+        for key in hebrew_keys_for_syriac(root) {
+            entries.extend(self.hebrew_bdb_by_root(&key)?);
+        }
+        Ok(entries)
     }
 
     /// The glossed root tree for an OT word: every BDB lexeme belonging to the
@@ -3764,10 +3974,11 @@ impl Bible {
     ///
     /// The family is found by spelling. Its skeletons are the root's own, each
     /// BDB headword's, and `related` — for a Peshitta word, the lexemes of its
-    /// SEDRA root tree. A Klein entry spelled like the root itself is the base
-    /// Klein prints the family under, so the derivatives it lists are added
-    /// too. Matching by spelling over-includes homographs; the reader sorts
-    /// those out from the glosses and the source of each entry.
+    /// SEDRA root tree, whose one ש is tried as a Hebrew shin and as a sin. A
+    /// Klein entry spelled like the root itself is the base Klein prints the
+    /// family under, so the derivatives it lists are added too. Matching by
+    /// spelling over-includes homographs; the reader sorts those out from the
+    /// glosses and the source of each entry.
     pub fn root_lexicon(
         &self,
         root: &str,
@@ -3776,7 +3987,11 @@ impl Bible {
     ) -> rusqlite::Result<Vec<LexiconEntry>> {
         let bdb_skeletons: Vec<String> = bdb.iter().map(|e| fold_consonants(&e.headword)).collect();
         let root_skeleton = fold_consonants(root);
-        let related: Vec<String> = related.iter().map(|r| fold_consonants(r)).collect();
+        // SEDRA spellings, whose one ש may be a Hebrew shin or sin.
+        let related: Vec<String> = related
+            .iter()
+            .flat_map(|r| hebrew_keys_for_syriac(r))
+            .collect();
         let mut skeletons: Vec<String> = Vec::new();
         for s in std::iter::once(&root_skeleton)
             .chain(&bdb_skeletons)
@@ -3805,26 +4020,13 @@ impl Bible {
 
     /// [`Self::root_lexicon`] gathered into [`Lexeme`]s, so one word's entries
     /// from every lexicon read together under one headword and one class.
-    ///
-    /// Roots are keyed by bare letters, so שׂרה "persist" and שׁרה "let loose"
-    /// share one family. `word` is the word the family is wanted for: when it
-    /// is spelled with a sin, or a shin, the entries spelled with the other are
-    /// left out. An empty `word`, or one whose shins and sins disagree, keeps
-    /// the whole family.
     pub fn root_lexemes(
         &self,
         root: &str,
         bdb: Vec<BdbEntry>,
         related: &[String],
-        word: &str,
     ) -> rusqlite::Result<Vec<Lexeme>> {
-        let mut entries = self.root_lexicon(root, bdb, related)?;
-        if fold_consonants(root).contains('ש')
-            && let Some(dot) = shin_dot(word)
-        {
-            entries.retain(|e| shin_dot(&e.headword).is_none_or(|d| d == dot));
-        }
-        Ok(group_lexemes(entries))
+        Ok(group_lexemes(self.root_lexicon(root, bdb, related)?))
     }
 
     /// Klein and Jastrow entries spelled like any of `skeletons`, plus the
@@ -4009,7 +4211,7 @@ impl Bible {
                 let matched = curated_gloss(&self.db, &rest)
                     .or_else(|| bdb_exact(&self.db, &rest))
                     .or_else(|| {
-                        (fold_consonants(&rest).chars().count() >= 3)
+                        (key_letters(&fold_consonants(&rest)).count() >= 3)
                             .then(|| bdb_cons(&self.db, &rest))
                             .flatten()
                     });
@@ -4208,13 +4410,14 @@ impl Bible {
     /// The SEDRA root trees spelled with the same letters as `root`, for an OT
     /// word's Aramaic cognates. SEDRA stores roots as bare folded consonants,
     /// as BDB does, so a Hebrew root names its Syriac counterparts directly —
-    /// more than one where SEDRA distinguishes homograph roots. Empty when the
-    /// Peshitta has no such root; no lexeme is flagged current.
+    /// more than one where SEDRA distinguishes homograph roots. Syriac has the
+    /// one ש, so a sin root and a shin root spelled alike share them. Empty
+    /// when the Peshitta has no such root; no lexeme is flagged current.
     pub fn sedra_root_tree_by_letters(
         &self,
         root: &str,
     ) -> rusqlite::Result<Vec<SedraLexemeSummary>> {
-        let root = fold_consonants(root);
+        let root = bare_letters(root);
         if root.is_empty() {
             return Ok(Vec::new());
         }
@@ -4318,21 +4521,24 @@ impl Bible {
             [sedra_key_root],
             |row| row.get(0),
         )?;
-        let key = crate::transliterate::lookup_key(&root);
-        if key.is_empty() {
+        // Syriac's one ש stands for a Hebrew shin or sin: try both roots.
+        let keys = hebrew_keys_for_syriac(&crate::transliterate::lookup_key(&root));
+        let (shin, sin) = (&keys[0], keys.last().unwrap_or(&keys[0]));
+        if shin.is_empty() {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare(
             "SELECT DISTINCT w.ref >> 16, (w.ref >> 8) & 255, w.ref & 255 \
              FROM data.word w \
              WHERE w.surface_id IN (SELECT surface_id FROM data.root_surface \
-                                    WHERE lexeme = ?1 AND sources & 1) \
+                                    WHERE lexeme IN (?1, ?2) AND sources & 1) \
                 OR w.surface_id IN (SELECT rs.surface_id FROM data.root_surface rs \
                                     JOIN lexicon_entry b ON b.word = rs.lexeme \
-                                    WHERE rs.sources & 2 AND (b.root = ?1 OR b.cons = ?1)) \
+                                    WHERE rs.sources & 2 \
+                                      AND (b.root IN (?1, ?2) OR b.cons IN (?1, ?2))) \
              ORDER BY w.ref",
         )?;
-        stmt.query_map([key], |row| {
+        stmt.query_map([shin, sin], |row| {
             Ok(WordOccurrence {
                 book: row.get(0)?,
                 chapter: row.get(1)?,
@@ -5132,55 +5338,154 @@ mod tests {
     }
 
     #[test]
-    fn a_sin_word_leaves_out_the_shin_root_spelled_alike() {
+    fn a_sin_is_its_own_consonant_in_a_key() {
+        assert_eq!(fold_consonants("יִשְׂרָאֵל"), "ישׂראל");
+        assert_eq!(fold_consonants("שָׁרָ֑י"), "שרי");
+        assert_eq!(fold_consonants("שׂרה"), "שׂרה");
+        // Finals fold as ever, and the sin counts as one letter.
+        assert_eq!(fold_consonants("עָשָׂם"), "עשׂמ");
+        assert_eq!(key_letters("עשׂה").count(), 3);
+        assert_eq!(bare_letters("יִשְׂרָאֵל"), "ישראל");
+        assert_eq!(hebrew_keys_for_syriac("שרה"), ["שרה", "שׂרה"]);
+        assert_eq!(hebrew_keys_for_syriac("ברא"), ["ברא"]);
+    }
+
+    #[test]
+    fn a_surface_says_whether_its_root_is_a_sin() {
+        let key = root_key_from_surface;
+        assert_eq!(key("עשה", "עָשָׂה").as_deref(), Some("עשׂה"));
+        assert_eq!(key("שמר", "שָׁמַר").as_deref(), Some("שמר"));
+        assert_eq!(key("ברא", "בָּרָא").as_deref(), Some("ברא"));
+        // An undotted ש, or the relative שֶׁ on a sin root, does not decide.
+        assert_eq!(key("שרה", "שרה"), None);
+        assert_eq!(key("שרה", "שֶׁיִּשְׂרָאֵל"), None);
+    }
+
+    #[test]
+    fn roots_saved_by_bare_letters_are_rekeyed_as_sins() {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
-        let family = |word: &str| {
-            let bdb = bible.hebrew_bdb_by_root("שרה").unwrap();
-            bible.root_lexemes("שרה", bdb, &[], word).unwrap()
+        // The word's own dots decide; failing that, the corpus files עשה only
+        // as a sin, and שרה as both, so it stays a shin.
+        assert_eq!(bible.current_root_key("שרה", "יִשְׂרָאֵל"), "שׂרה");
+        assert_eq!(bible.current_root_key("שרה", "שָׁרָה"), "שרה");
+        assert_eq!(bible.current_root_key("עשה", ""), "עשׂה");
+        assert_eq!(bible.current_root_key("שרה", ""), "שרה");
+        assert_eq!(bible.current_root_key("שׂרה", "שָׁרָה"), "שׂרה");
+        assert_eq!(bible.current_root_key("ברא", ""), "ברא");
+
+        bible.attach_progress_in_memory().unwrap();
+        let exec = |sql: &str| bible.conn().execute_batch(sql).unwrap();
+        exec(
+            "INSERT INTO progress.lexicon_entry_overrides(surface, root, gloss, updated_epoch) \
+             VALUES ('יִשְׂרָאֵל', 'שרה', 'Israel', 7), ('שָׁמַר', 'שמר', 'keep', 7)",
+        );
+        let workspaces = r#"[{"id":"w","name":"W","words":[
+            {"root":"שרה","surface":"יִשְׂרָאֵל","order":0},
+            {"root":"שמר","surface":"שָׁמַר","order":1}]}]"#;
+        bible.set_study_state(workspaces, Some("w"), 7).unwrap();
+        bible.reload_runtime_lexicon_entries().unwrap();
+
+        let root = |surface: &str| -> String {
+            bible
+                .conn()
+                .query_row(
+                    "SELECT root || ':' || updated_epoch FROM progress.lexicon_entry_overrides \
+                     WHERE surface = ?1",
+                    [surface],
+                    |row| row.get(0),
+                )
+                .unwrap()
         };
-        let dots = |lexemes: &[Lexeme]| -> HashSet<Option<char>> {
+        // Re-keyed in place, without a new revision to sync.
+        assert_eq!(root("יִשְׂרָאֵל"), "שׂרה:7");
+        assert_eq!(root("שָׁמַר"), "שמר:7");
+        let (json, _, _) = bible.study_state().unwrap().unwrap();
+        let saved: serde_json::Value = serde_json::from_str(&json).unwrap();
+        let roots: Vec<&str> = saved[0]["words"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|w| w["root"].as_str().unwrap())
+            .collect();
+        assert_eq!(roots, ["שׂרה", "שמר"]);
+        // A correction typed with a bare ש is keyed as it is saved.
+        bible
+            .set_lexicon_entry_override("עָשׂוּ", "עשה", "they did", "", 9)
+            .unwrap();
+        assert_eq!(root("עָשׂוּ"), "עשׂה:9");
+    }
+
+    #[test]
+    fn a_sin_root_and_a_shin_root_are_two_families() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let family = |root: &str| {
+            let bdb = bible.hebrew_bdb_by_root(root).unwrap();
+            bible.root_lexemes(root, bdb, &[]).unwrap()
+        };
+        let has = |lexemes: &[Lexeme], word: &str| {
+            let word = crate::normalize_surface(word);
             lexemes
                 .iter()
-                .flat_map(|l| &l.entries)
-                .map(|e| shin_dot(&e.headword))
-                .collect()
+                .any(|l| crate::normalize_surface(&l.headword) == word)
         };
-        let (sin, shin) = (Some('\u{05C2}'), Some('\u{05C1}'));
-        // Israel "persists": Sarah and Israel, not Sharai or the armour.
-        let israel = family("יִשְׂרָאֵל");
-        assert!(dots(&israel).contains(&sin));
-        assert!(!dots(&israel).contains(&shin), "{israel:#?}");
-        let loose = family("שָׁרָה");
-        assert!(dots(&loose).contains(&shin));
-        assert!(!dots(&loose).contains(&sin));
-        // Without a dotted word to go by, both roots stay.
-        let both = dots(&family(""));
-        assert!(both.contains(&sin) && both.contains(&shin));
+        // שׂרה "persist": Israel and Seraiah, not Sharai or the armour.
+        let persist = family("שׂרה");
+        let loose = family("שרה");
+        for word in ["יִשְׂרָאֵל", "מִשְׂרָה", "שְׂרָיָה(וּ)"] {
+            assert!(has(&persist, word), "{word} missing from שׂרה");
+            assert!(!has(&loose, word), "{word} under שרה");
+        }
+        for word in ["שִׁרְיוֹן", "מִשְׁרָה", "שָׁרָי"] {
+            assert!(has(&loose, word), "{word} missing from שרה");
+            assert!(!has(&persist, word), "{word} under שׂרה");
+        }
+        // The parse files יִשְׂרָאֵל under the sin root.
+        let israel = bible.hebrew_word_info("יִשְׂרָאֵל").expect("Israel");
+        assert_eq!(israel.root, "שׂרה");
+        // A Peshitta root with its one ש reaches both.
+        let both = family_of_syriac(&bible, "שרה");
+        assert!(has(&both, "יִשְׂרָאֵל") && has(&both, "שִׁרְיוֹן"));
+    }
+
+    fn family_of_syriac(bible: &Bible, root: &str) -> Vec<Lexeme> {
+        let bdb = bible.hebrew_bdb_by_syriac_root(root).unwrap();
+        bible.root_lexemes(root, bdb, &[root.to_string()]).unwrap()
     }
 
     #[test]
     fn sarai_is_a_name_and_every_headword_is_unaccented() {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
-        let bdb = bible.hebrew_bdb_by_root("שרה").unwrap();
-        let lexemes = bible.root_lexemes("שרה", bdb, &[], "").unwrap();
-        let sarai = lexemes
+        let family = |root: &str| {
+            let bdb = bible.hebrew_bdb_by_root(root).unwrap();
+            bible.root_lexemes(root, bdb, &[]).unwrap()
+        };
+        let same = |a: &str, b: &str| crate::normalize_surface(a) == crate::normalize_surface(b);
+        // BDB files Sarai under שׂרר "rule", beside שַׂר "prince", and
+        // Jastrow's entry for her joins it there.
+        let rule = family("שׂרר");
+        let sarai = rule
             .iter()
-            .find(|l| crate::normalize_surface(&l.headword) == crate::normalize_surface("שָׂרַי"))
-            .expect("Jastrow's שָׂרַי");
+            .find(|l| same(&l.headword, "שָׂרַי"))
+            .expect("שָׂרַי under שׂרר");
         assert_eq!(sarai.pos_category, "proper");
+        assert!(
+            sarai
+                .entries
+                .iter()
+                .any(|e| e.source == LexiconSource::Jastrow)
+        );
+        let loose = family("שרה");
         let accented = |h: &str| h.chars().any(|c| ('\u{0591}'..='\u{05AF}').contains(&c));
-        for l in &lexemes {
+        for l in rule.iter().chain(&loose) {
             assert!(!accented(&l.headword), "{} keeps its accents", l.headword);
             assert!(l.entries.iter().all(|e| !accented(&e.headword)));
         }
         // שִׁרְיָן only refers to שִׁרְיוֹן, so it reads there.
-        assert!(
-            !lexemes
-                .iter()
-                .any(|l| crate::normalize_surface(&l.headword) == crate::normalize_surface("שִׁרְיָן"))
-        );
+        assert!(!loose.iter().any(|l| same(&l.headword, "שִׁרְיָן")));
+        assert!(loose.iter().any(|l| same(&l.headword, "שִׁרְיוֹן")));
     }
 
     #[test]
@@ -5188,7 +5493,7 @@ mod tests {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
         let bdb = bible.hebrew_bdb_by_root("שבת").unwrap();
-        let lexemes = bible.root_lexemes("שבת", bdb, &[], "").unwrap();
+        let lexemes = bible.root_lexemes("שבת", bdb, &[]).unwrap();
         let shevet = lexemes
             .iter()
             .find(|l| crate::normalize_surface(&l.headword) == "שֶׁבֶת")

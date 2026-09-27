@@ -50,7 +50,8 @@ use haqor_morphology::{
 };
 
 use super::lexicon_db::{
-    load_canonical_root_inventory, load_noun_inventory, load_proper_inventory, load_root_inventory,
+    RootKeys, load_canonical_root_inventory, load_noun_inventory, load_proper_inventory,
+    load_root_inventory, load_root_keys,
 };
 use super::prefilter::Prefilter;
 
@@ -999,9 +1000,14 @@ fn analyze_surfaces(
 }
 
 /// Insert the verb/noun analysis rows for one surface into the prepared
-/// statements. Shared by the full build and the incremental update.
+/// statements. Shared by the full build and the incremental update. A verb's
+/// root is stored under the lexicon's key, a sin root apart from the shin root
+/// spelled alike, read off `surface` through `keys`.
+#[allow(clippy::too_many_arguments)]
 fn insert_analyses(
     id: i64,
+    surface: &str,
+    keys: &RootKeys,
     verb: &[VerbMatch],
     noun: &[NounMatch],
     gold: &[&IrregularVerb],
@@ -1009,7 +1015,8 @@ fn insert_analyses(
     noun_stmt: &mut rusqlite::Statement<'_>,
 ) -> Result<()> {
     for m in verb {
-        let root: String = m.root.letters.iter().collect();
+        let bare: String = m.root.letters.iter().collect();
+        let root = keys.key(&bare, surface);
         ana_stmt.execute((
             id,
             root,
@@ -1029,7 +1036,7 @@ fn insert_analyses(
     for g in gold {
         ana_stmt.execute((
             id,
-            g.root,
+            keys.key(g.root, g.surface),
             "Irregular",
             g.binyan,
             g.form,
@@ -1372,6 +1379,12 @@ fn build_hebrew(
         .filter(|((verb, noun), gold)| !verb.is_empty() || !noun.is_empty() || !gold.is_empty())
         .count();
 
+    // A parsed root knows only its bare letters; the lexicon's keys tell a sin
+    // root from the shin root spelled alike.
+    let root_keys = match lexicon_db {
+        Some(p) => load_root_keys(p)?,
+        None => RootKeys::default(),
+    };
     let tx = db.transaction()?;
     {
         let mut surf_stmt = tx.prepare(
@@ -1407,6 +1420,8 @@ fn build_hebrew(
             ))?;
             insert_analyses(
                 id as i64,
+                &surfaces[id],
+                &root_keys,
                 matches,
                 nouns,
                 gold,
@@ -1756,6 +1771,10 @@ fn update_missing(
     rank_by_attestation(&texts, &mut verb, &noun, morphhb_dir)?;
 
     let mut resolved = 0usize;
+    let root_keys = match lexicon_db {
+        Some(p) => load_root_keys(p)?,
+        None => RootKeys::default(),
+    };
     let tx = db.transaction()?;
     {
         let mut surf_stmt = tx.prepare(
@@ -1791,7 +1810,16 @@ fn update_missing(
                 any_attested as i64,
                 class,
             ))?;
-            insert_analyses(*id, matches, nouns, golds, &mut ana_stmt, &mut noun_stmt)?;
+            insert_analyses(
+                *id,
+                &texts[i],
+                &root_keys,
+                matches,
+                nouns,
+                golds,
+                &mut ana_stmt,
+                &mut noun_stmt,
+            )?;
         }
     }
     tx.commit()?;

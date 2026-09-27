@@ -707,7 +707,9 @@ const LEXICAL_BASE_READY: &str =
 /// curriculum ordering while retaining its lexicalized gloss.
 /// 29 recovers feminine-plural possessive cells such as עֲלִילוֹתָיו, so they
 /// gate behind possessive-suffix grammar and rank as complex noun forms.
-const SURFACE_META_VERSION: i64 = 29;
+/// 30 re-keys roots with a sin apart from the shin root spelled alike
+/// (שׂרה, not שרה), as the corpus now files them.
+const SURFACE_META_VERSION: i64 = 30;
 
 /// Bumped when the meaning of the materialised readability columns changes.
 /// Version 2 makes `verse_progress.unknown_words` count distinct vocabulary
@@ -2416,7 +2418,10 @@ impl Bible {
         updated_epoch: i64,
     ) -> rusqlite::Result<()> {
         let surface = surface.trim();
-        let root = root.trim();
+        // A root typed with a bare ש is keyed as the corpus files it: a sin
+        // where the word's own dots, or the corpus, say it is one.
+        let root = self.current_root_key(root.trim(), surface);
+        let root = root.as_str();
         let gloss = gloss.trim();
         let reader_gloss = reader_gloss.trim();
         if surface.is_empty() || gloss.is_empty() {

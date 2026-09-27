@@ -28,6 +28,7 @@ use rusqlite::Connection;
 use serde_json::{Map, Value, json};
 
 use crate::lexicon_db::{bdb_headwords, consonants};
+use haqor_core::data_support::bare_letters;
 use haqor_core::transliterate;
 
 /// One Sefaria lexicon: how the dump names it, how its own cross-references
@@ -142,12 +143,13 @@ pub fn import_sefaria(dump: &Path, src_texts: &Path, output: &Path) -> Result<Ve
 /// Consonant skeletons of every headword a reader can arrive from: BDB's
 /// entries, and SEDRA's lexemes and roots (already Hebrew letters once
 /// transliterated, so an Aramaic lexeme meets Jastrow's headword directly).
+/// Bare letters, shin and sin alike, since SEDRA's one ש may be either.
 fn reachable_skeletons(src_texts: &Path) -> Result<HashSet<String>> {
     let bdb = src_texts.join("HebrewLexicon/BrownDriverBriggs.xml");
     let mut skeletons: HashSet<String> = bdb_headwords(&bdb)
         .with_context(|| format!("reading {}", bdb.display()))?
         .into_values()
-        .map(|r| consonants(&r.headword))
+        .map(|r| bare_letters(&r.headword))
         .collect();
     let sedra = src_texts.join("SEDRA");
     for (file, column) in [("tblLexemes.txt", "strLexeme"), ("tblRoots.txt", "strRoot")] {
@@ -160,7 +162,9 @@ fn reachable_skeletons(src_texts: &Path) -> Result<HashSet<String>> {
             .position(|h| h == column)
             .with_context(|| format!("{file} has no `{column}` column"))?;
         for record in reader.records() {
-            skeletons.insert(consonants(&transliterate::sedra_to_hebrew(&record?[index])));
+            skeletons.insert(bare_letters(&transliterate::sedra_to_hebrew(
+                &record?[index],
+            )));
         }
     }
     skeletons.remove("");
@@ -183,7 +187,7 @@ fn keep(source: &Source, entry: &Map<String, Value>, reachable: &HashSet<String>
         "klein" => marker.is_empty() || marker.split([' ', ',']).any(|code| code == "BH"),
         _ => marker.contains("b. h") || marker.contains("ch."),
     };
-    marked || headwords(entry).any(|word| reachable.contains(&consonants(word)))
+    marked || headwords(entry).any(|word| reachable.contains(&bare_letters(word)))
 }
 
 /// The headword and its listed alternative spellings.

@@ -64,12 +64,13 @@ fn a_compound_name_offers_both_of_its_roots() {
 
     // The frequent names never reach the noun parser — the prefilter classifies
     // them — so they are reached as headwords in their own right instead. Israel
-    // is the archetype of the compound: "God (אל) persists (שרה)".
+    // is the archetype of the compound: "God (אל) persists (שׂרה)" — a sin root,
+    // keyed apart from שרה "let loose".
     let options = bible
-        .hebrew_root_options("יִשְׂרָאֵל", "שרה")
+        .hebrew_root_options("יִשְׂרָאֵל", "שׂרה")
         .expect("root options for Israel");
     let roots: Vec<&str> = options.iter().map(|o| o.root.as_str()).collect();
-    assert_eq!(roots, vec!["שרה", "אלה"]);
+    assert_eq!(roots, vec!["שׂרה", "אלה"]);
 
     // The two lexicons rarely point a name alike: the corpus writes Jedidiah
     // with a mappiq (יְדִידְיָהּ) where BDB's headword has a plain he, and Joshua

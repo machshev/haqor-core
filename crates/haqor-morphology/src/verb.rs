@@ -4412,6 +4412,17 @@ pub fn generate_paradigm(root: &Root) -> Paradigm {
         .collect();
     forms.extend(kah_twins);
 
+    // The rules build every ש as a shin; a sin root's are sins. A verb's
+    // affixes carry no ש, so each one in a form is a radical.
+    if root.sin {
+        for f in &mut forms {
+            f.text = f.text.replace(
+                hebrew::niqqud::SHIN_DOT,
+                &hebrew::niqqud::SIN_DOT.to_string(),
+            );
+        }
+    }
+
     Paradigm {
         root: root.clone(),
         forms,
@@ -15611,5 +15622,22 @@ mod tests {
             THREE_MP,
             "יִשְׁאָלוּן"
         ));
+    }
+
+    #[test]
+    fn a_sin_roots_forms_are_written_with_the_sin_dot() {
+        use crate::hebrew::niqqud::{SHIN_DOT, SIN_DOT};
+        let sin = Root::parse("עשׂה").unwrap();
+        assert!(sin.sin);
+        assert_eq!(sin.letters, Root::parse("עשה").unwrap().letters);
+        let forms = generate_paradigm(&sin).forms;
+        let asah = hebrew::render(&hebrew::parse_pointed("עָשָׂה"));
+        assert!(forms.iter().any(|f| f.text == asah));
+        assert!(forms.iter().all(|f| !f.text.contains(SHIN_DOT)));
+        // A shin root, or one no dot decides, stays a shin.
+        let shin = Root::parse("שמר").unwrap();
+        assert!(!shin.sin);
+        let forms = generate_paradigm(&shin).forms;
+        assert!(forms.iter().all(|f| !f.text.contains(SIN_DOT)));
     }
 }
