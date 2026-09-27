@@ -193,9 +193,10 @@ fn derivative_keys(content_json: &str) -> Vec<String> {
 }
 
 /// Klein's and Jastrow's part-of-speech markers in [`BdbEntry::pos_category`]'s
-/// buckets. Klein writes `m.n.`, `adj.`, `adv.`; Jastrow `m.`, `f. pl.`,
-/// `pr. n. m.`. Neither marks a verb: a verb is the entry whose senses are
-/// headed by a stem (`Qal`, `Pa.`), which is what `form` records.
+/// buckets. Klein writes `m.n.`, `adj.`, `adv.`; Jastrow `m.`, `f. pl.`, `c.`
+/// (common gender), `pr. n. m.`. Only a few of Klein's verbs are marked
+/// (`intr. v.`); otherwise a verb is the entry whose senses are headed by a
+/// stem (`Qal`, `Pa.`), which is what `form` records.
 fn dictionary_pos_category(pos: &str, content_json: &str) -> &'static str {
     let p: String = pos
         .chars()
@@ -211,14 +212,43 @@ fn dictionary_pos_category(pos: &str, content_json: &str) -> &'static str {
     } else if p.ends_with("n.")
         || p.starts_with("m.")
         || p.starts_with("f.")
+        || p.starts_with("c.")
         || p == "m"
         || p == "f"
     {
         "noun"
-    } else if p.is_empty() && content_json.contains("\"form\":") {
+    } else if p.ends_with("tr.v.") || p.is_empty() && content_json.contains("\"form\":") {
         "verb"
     } else {
         "other"
+    }
+}
+
+/// The class a Klein or Jastrow entry with no `pos` marker gives itself at the
+/// head of its definition: Jastrow prints `(b. h.) pr. n. f. Sarai` there, and
+/// both define a verb by its infinitive (`to rest`). `None` when the gloss
+/// opens with neither.
+fn gloss_pos_category(gloss: &str) -> Option<&'static str> {
+    // Past the period markers Jastrow brackets first: `(b. h.)`, `(ch.)`.
+    let mut rest = gloss.trim_start();
+    while let Some(inner) = rest.strip_prefix('(') {
+        rest = inner.split_once(')')?.1.trim_start();
+    }
+    if rest.starts_with("to ") || rest.starts_with("[to ") {
+        return Some("verb");
+    }
+    let marker: Vec<&str> = rest
+        .split_whitespace()
+        .map(|t| t.trim_end_matches([',', ';']))
+        .take_while(|t| {
+            t.strip_suffix('.').is_some_and(|w| {
+                (1..=3).contains(&w.len()) && w.chars().all(|c| c.is_ascii_lowercase())
+            }) && !matches!(*t, "v." | "ch." | "b." | "h.")
+        })
+        .collect();
+    match dictionary_pos_category(&marker.join(" "), "") {
+        "other" => None,
+        category => Some(category),
     }
 }
 
@@ -280,9 +310,10 @@ fn split_homograph(headword: &str) -> (String, String) {
 /// Gather a root family's entries into [`Lexeme`]s by pointed headword,
 /// ignoring accents and homograph numerals, in the order each first appears.
 /// An unpointed entry (Klein prints roots bare) joins the pointed lexeme of
-/// the same letters and class, or a root header spelled so.
+/// the same letters and class, or a root header spelled so. A lexeme that is
+/// nothing but cross-references (`v. שָׁרִיתָא`, `see שִׁרְיוֹן`) joins the
+/// lexeme they point to, when the family has it.
 fn group_lexemes(entries: Vec<LexiconEntry>) -> Vec<Lexeme> {
-    let is_pointed = |key: &str| key.chars().any(|c| ('\u{05B0}'..='\u{05BB}').contains(&c));
     let mut groups: Vec<(String, Vec<LexiconEntry>)> = Vec::new();
     let mut bare = Vec::new();
     for entry in entries {
@@ -298,9 +329,8 @@ fn group_lexemes(entries: Vec<LexiconEntry>) -> Vec<Lexeme> {
         }
     }
     for (key, entry) in bare {
-        let letters = fold_consonants(&key);
         let home = groups.iter_mut().find(|(k, group)| {
-            fold_consonants(k) == letters
+            same_letters(k, &key)
                 && group
                     .iter()
                     .any(|e| e.pos_category == entry.pos_category || e.pos_category == "root")
@@ -310,9 +340,45 @@ fn group_lexemes(entries: Vec<LexiconEntry>) -> Vec<Lexeme> {
             None => groups.push((key, vec![entry])),
         }
     }
-    groups
-        .into_iter()
-        .map(|(_, mut entries)| {
+
+    // Where each cross-reference-only lexeme goes: the first of its targets
+    // the family spells, pointed exactly or, for a bare root, by its letters.
+    let is_xref = |group: &[LexiconEntry]| group.iter().all(|e| xref_target(&e.gloss).is_some());
+    let find = |target: &str, from: usize| {
+        let key = crate::normalize_surface(target);
+        let pointed = is_pointed(&key);
+        groups.iter().enumerate().position(|(j, (k, group))| {
+            j != from
+                && !is_xref(group)
+                && if pointed {
+                    *k == key
+                } else {
+                    same_letters(k, &key)
+                }
+        })
+    };
+    let moves: Vec<Option<usize>> = (0..groups.len())
+        .map(|i| {
+            let group = &groups[i].1;
+            if !is_xref(group) {
+                return None;
+            }
+            group.iter().find_map(|e| find(xref_target(&e.gloss)?, i))
+        })
+        .collect();
+    let mut kept: Vec<Option<Vec<LexiconEntry>>> =
+        groups.into_iter().map(|(_, group)| Some(group)).collect();
+    for (from, to) in moves.into_iter().enumerate() {
+        if let Some(to) = to {
+            let moved = kept[from].take().unwrap_or_default();
+            kept[to].get_or_insert_with(Vec::new).extend(moved);
+        }
+    }
+
+    kept.into_iter()
+        .flatten()
+        .filter(|entries| !entries.is_empty())
+        .map(|mut entries| {
             entries.sort_by_key(|e| e.source as u8);
             Lexeme {
                 headword: entries[0].headword.clone(),
@@ -321,6 +387,48 @@ fn group_lexemes(entries: Vec<LexiconEntry>) -> Vec<Lexeme> {
             }
         })
         .collect()
+}
+
+/// Whether a normalised headword carries vowels, which Klein's roots do not.
+fn is_pointed(key: &str) -> bool {
+    key.chars().any(|c| ('\u{05B0}'..='\u{05BB}').contains(&c))
+}
+
+/// Whether two headwords are spelled with the same letters, their shin and
+/// sin told apart unless one of them leaves the dot off.
+fn same_letters(a: &str, b: &str) -> bool {
+    let letters = |s: &str, dots: bool| -> String {
+        s.chars()
+            .filter(|&c| {
+                ('\u{05D0}'..='\u{05EA}').contains(&c)
+                    || dots && matches!(c, '\u{05C1}' | '\u{05C2}')
+            })
+            .collect()
+    };
+    let has_dot = |s: &str| s.contains(['\u{05C1}', '\u{05C2}']);
+    let dots = has_dot(a) && has_dot(b);
+    letters(a, dots) == letters(b, dots)
+}
+
+/// The headword an entry that only refers elsewhere points to: `see שׁבת`,
+/// `v. שָׁרִיתָא`, `= שִׁרְיוֹן`, `see שִׁרְיוֹן under שׁרה`, and BDB's form
+/// entries `שָׁרָה see שׁרה`, which name the lexeme they are a form of first.
+/// `None` for an entry with a definition of its own.
+fn xref_target(gloss: &str) -> Option<&str> {
+    let words: Vec<&str> = gloss.split_whitespace().collect();
+    fn hebrew(w: &str) -> Option<&str> {
+        let w = w.trim_end_matches(['.', ',', ';']);
+        (w.chars().any(|c| ('\u{05D0}'..='\u{05EA}').contains(&c))
+            && w.chars()
+                .all(|c| ('\u{0591}'..='\u{05F4}').contains(&c) || matches!(c, '(' | ')')))
+        .then_some(w)
+    }
+    match words.as_slice() {
+        ["see" | "v." | "=", target] => hebrew(target),
+        ["see" | "v." | "=", target, "under", ..] => hebrew(target),
+        [form, "see", target] => hebrew(target).and(hebrew(form)),
+        _ => None,
+    }
 }
 
 /// The class most of a lexeme's entries give it, "other" counting only when
@@ -3658,7 +3766,7 @@ impl Bible {
             .map(|e| LexiconEntry {
                 source: LexiconSource::Bdb,
                 pos_category: e.pos_category(),
-                headword: e.headword,
+                headword: strip_accents(&e.headword),
                 gloss: e.gloss,
                 content_json: e.content_json,
                 lang: String::new(),
@@ -3782,10 +3890,17 @@ impl Bible {
         row: DictionaryRow,
     ) -> rusqlite::Result<LexiconEntry> {
         let content_json = self.blobs.decode(row.body)?;
-        let (headword, homograph) = split_homograph(&normalize_hebrew_combining(&row.word));
+        let (headword, homograph) =
+            split_homograph(&normalize_hebrew_combining(&strip_accents(&row.word)));
+        let pos_category = match dictionary_pos_category(&row.pos, &content_json) {
+            "other" if row.pos.trim().is_empty() => {
+                gloss_pos_category(&row.gloss).unwrap_or("other")
+            }
+            category => category,
+        };
         Ok(LexiconEntry {
             source: LexiconSource::parse(source).unwrap_or(LexiconSource::Jastrow),
-            pos_category: dictionary_pos_category(&row.pos, &content_json),
+            pos_category,
             headword,
             gloss: row.gloss,
             content_json,
@@ -4899,6 +5014,94 @@ mod tests {
                 ("שַׁבָּת", "noun", vec![(Bdb, "")]),
                 ("מִשְׁבָּת", "noun", vec![(Bdb, ""), (Bdb, ""), (Klein, "")]),
             ]
+        );
+    }
+
+    #[test]
+    fn an_unmarked_entry_is_classed_by_the_head_of_its_gloss() {
+        let class = gloss_pos_category;
+        assert_eq!(
+            class("(b. h.) pr. n. f. Sarai, the original"),
+            Some("proper")
+        );
+        assert_eq!(class("pr. n. m., v. שַׁבְּתַאי"), Some("proper"));
+        assert_eq!(class("(b. h.) to be tired"), Some("verb"));
+        assert_eq!(class("(b. h.) [to cut off"), Some("verb"));
+        assert_eq!(class("c. (v. Löw Pfl., p. 373) dill."), Some("noun"));
+        assert_eq!(class("m. ch., v. שָׂרָא"), Some("noun"));
+        assert_eq!(class("v. שָׁרִיתָא"), None);
+        assert_eq!(class("(b. h.)"), None);
+        assert_eq!(class("Targ. O. Gen. XX, 3"), None);
+        assert_eq!(dictionary_pos_category("intr. v.", ""), "verb");
+    }
+
+    #[test]
+    fn a_cross_reference_names_its_target() {
+        assert_eq!(xref_target("v. שָׁרִיתָא"), Some("שָׁרִיתָא"));
+        assert_eq!(xref_target("see שִׁרֽיוֹן"), Some("שִׁרֽיוֹן"));
+        assert_eq!(xref_target("see שִׁרְיוֹן under שׁרה"), Some("שִׁרְיוֹן"));
+        assert_eq!(xref_target("שָׁרָה see שׁרה"), Some("שָׁרָה"));
+        assert_eq!(xref_target("= שרר."), Some("שרר"));
+        assert_eq!(xref_target("v. preced."), None);
+        assert_eq!(xref_target("v. sub שֵׁיר׳.—[Targ. O. Gen."), None);
+        assert_eq!(xref_target("juice; the juice of grapes"), None);
+    }
+
+    #[test]
+    fn a_lexeme_of_cross_references_joins_the_one_they_name() {
+        let entry = |source, headword: &str, gloss: &str| LexiconEntry {
+            source,
+            headword: headword.to_string(),
+            gloss: gloss.to_string(),
+            content_json: String::new(),
+            pos_category: "other",
+            lang: String::new(),
+            homograph: String::new(),
+        };
+        use LexiconSource::{Bdb, Jastrow, Klein};
+        let lexemes = group_lexemes(vec![
+            entry(Bdb, "שִׁרְיוֹן", "body-armour"),
+            entry(Bdb, "שִׁרְיָן", "see שִׁרְיוֹן under שׁרה"),
+            entry(Klein, "שִׁרְיָן", "see שִׁרֽיוֹן"),
+            entry(Jastrow, "שִׁרְיָן", "v. שִׁרְיָינָא"),
+            // Pointing nowhere in the family, it stays as it is.
+            entry(Jastrow, "שֶׂרַח", "v. סֶרַח"),
+            // A shin root does not take a sin root's forms.
+            entry(Bdb, "שָׂרָה", "persist"),
+            entry(Bdb, "שָׁרָה", "let loose"),
+            entry(Bdb, "שֵׁרִיתִךָ", "שָׁרָה see שׁרה"),
+        ]);
+        let shape: Vec<(&str, usize)> = lexemes
+            .iter()
+            .map(|l| (l.headword.as_str(), l.entries.len()))
+            .collect();
+        assert_eq!(
+            shape,
+            vec![("שִׁרְיוֹן", 4), ("שֶׂרַח", 1), ("שָׂרָה", 1), ("שָׁרָה", 2)]
+        );
+    }
+
+    #[test]
+    fn sarai_is_a_name_and_every_headword_is_unaccented() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let bdb = bible.hebrew_bdb_by_root("שרה").unwrap();
+        let lexemes = bible.root_lexemes("שרה", bdb, &[]).unwrap();
+        let sarai = lexemes
+            .iter()
+            .find(|l| crate::normalize_surface(&l.headword) == crate::normalize_surface("שָׂרַי"))
+            .expect("Jastrow's שָׂרַי");
+        assert_eq!(sarai.pos_category, "proper");
+        let accented = |h: &str| h.chars().any(|c| ('\u{0591}'..='\u{05AF}').contains(&c));
+        for l in &lexemes {
+            assert!(!accented(&l.headword), "{} keeps its accents", l.headword);
+            assert!(l.entries.iter().all(|e| !accented(&e.headword)));
+        }
+        // שִׁרְיָן only refers to שִׁרְיוֹן, so it reads there.
+        assert!(
+            !lexemes
+                .iter()
+                .any(|l| crate::normalize_surface(&l.headword) == crate::normalize_surface("שִׁרְיָן"))
         );
     }
 
