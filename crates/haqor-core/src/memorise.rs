@@ -7,13 +7,16 @@
 //! atnach, sections of about four verses), and the shaping is itself part of
 //! learning it (see [`Bible::set_memory_verse_layout`]).
 //!
-//! Learning never jumps about. Within a section, verse by verse:
+//! Learning never jumps about, and builds from the bottom up. Within a
+//! section, verse by verse, starting from the first line of the first verse:
 //!
-//! 1. the first verse opens with a **preview**: the whole section read aloud;
-//! 2. each line is **read**, then **recalled** with every word hidden, then
+//! 1. each line is **read**, then **recalled** with every word hidden, then
 //!    recalled together with the lines before it (cumulative chaining);
-//! 3. from the second verse on, the verse is recalled **together with the
+//! 2. from the second verse on, the verse is recalled **together with the
 //!    section so far**.
+//!
+//! There is no read-through of a whole section first: shaping the passage
+//! into lines and sections has already given the learner its overview.
 //!
 //! A card shows its text either whole or entirely hidden — never a scatter of
 //! gaps — and always with the line before it as the cue to carry on from.
@@ -72,9 +75,6 @@ const SPLIT_ABOVE_WORDS: usize = 6;
 const LONG_LINE_WORDS: usize = 12;
 /// Verses per section by default.
 const SECTION_VERSES: usize = 4;
-
-const PREVIEW_PROMPT: &str = "Read the whole section aloud, slowly. Notice how \
-     it moves from verse to verse, and where each line breaks.";
 
 /// Ways to bring more senses to a line, one shown per read card.
 const SENSE_PROMPTS: [&str; 8] = [
@@ -156,8 +156,6 @@ pub struct MemorySegment {
 /// What a card asks of the learner.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum MemoryPurpose {
-    /// Read a whole section through before learning it (text shown).
-    Preview,
     /// Read one line (text shown).
     Read,
     /// Recall one line, or a verse's lines so far (text hidden).
@@ -173,7 +171,6 @@ pub enum MemoryPurpose {
 impl MemoryPurpose {
     pub fn as_str(self) -> &'static str {
         match self {
-            MemoryPurpose::Preview => "preview",
             MemoryPurpose::Read => "read",
             MemoryPurpose::Recall => "recall",
             MemoryPurpose::Chain => "chain",
@@ -184,7 +181,6 @@ impl MemoryPurpose {
 
     pub fn parse(s: &str) -> Option<Self> {
         Some(match s {
-            "preview" => MemoryPurpose::Preview,
             "read" => MemoryPurpose::Read,
             "recall" => MemoryPurpose::Recall,
             "chain" => MemoryPurpose::Chain,
@@ -196,24 +192,20 @@ impl MemoryPurpose {
 
     /// Whether the card's text is hidden, to be recited.
     pub fn hidden(self) -> bool {
-        !matches!(self, MemoryPurpose::Preview | MemoryPurpose::Read)
+        self != MemoryPurpose::Read
     }
 
     /// Whether the card is a step of one verse's learning script.
     fn is_learning(self) -> bool {
         matches!(
             self,
-            MemoryPurpose::Preview
-                | MemoryPurpose::Read
-                | MemoryPurpose::Recall
-                | MemoryPurpose::Chain
+            MemoryPurpose::Read | MemoryPurpose::Recall | MemoryPurpose::Chain
         )
     }
 
     /// Code stored in `memory_review.stage`.
     fn code(self) -> i64 {
         match self {
-            MemoryPurpose::Preview => 10,
             MemoryPurpose::Read => 11,
             MemoryPurpose::Recall => 12,
             MemoryPurpose::Chain => 13,
@@ -471,8 +463,6 @@ impl VerseSrs {
 /// One step of a verse's learning script.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 enum Step {
-    /// Read the verse's whole section (first verse of a section only).
-    Preview,
     /// Read one line.
     Read(usize),
     /// Recall lines `from..=to` of the verse.
@@ -484,9 +474,6 @@ enum Step {
 /// The learning script of a verse with `lines` lines: see the module docs.
 fn verse_steps(lines: usize, first_in_section: bool) -> Vec<Step> {
     let mut steps = Vec::new();
-    if first_in_section {
-        steps.push(Step::Preview);
-    }
     for k in 0..lines.max(1) {
         steps.push(Step::Read(k));
         steps.push(Step::Recall(k, k));
@@ -766,9 +753,10 @@ fn resolve_step(stage: u8, steps: &[Step], lines: usize) -> usize {
 /// server's canonical database has them too.
 pub fn init_memory_schema(db: &Connection) -> rusqlite::Result<()> {
     ensure_memory_tables(db, "progress")?;
-    // The first release drilled verses on a cloze ladder whose rungs mean
-    // nothing to the step script; a verse caught half-way restarts its steps.
-    // What was already learnt is kept.
+    // A verse caught half-way through its steps when their numbering changed
+    // restarts them: the first release's cloze ladder, and then the dropped
+    // section preview (version 1), which shifted every later step. What was
+    // already learnt, and a verse waiting to be relearnt, are kept.
     let version: Option<String> = db
         .query_row(
             "SELECT value FROM progress.meta WHERE key = 'memory.steps'",
@@ -776,11 +764,13 @@ pub fn init_memory_schema(db: &Connection) -> rusqlite::Result<()> {
             |r| r.get(0),
         )
         .optional()?;
-    if version.is_none() {
-        db.execute_batch(
-            "UPDATE progress.memory_verse SET stage = 0 WHERE interval_days = 0;
-             INSERT INTO progress.meta(key, value) VALUES ('memory.steps', '1');",
-        )?;
+    if version.as_deref() != Some("2") {
+        db.execute_batch(&format!(
+            "UPDATE progress.memory_verse SET stage = 0
+             WHERE interval_days = 0 AND stage != {RELEARN_STAGE};
+             INSERT INTO progress.meta(key, value) VALUES ('memory.steps', '2')
+             ON CONFLICT(key) DO UPDATE SET value = excluded.value;"
+        ))?;
     }
     Ok(())
 }
@@ -1503,7 +1493,7 @@ impl Bible {
         let steps = plan.steps(i);
         let v = &plan.verses[i];
         let n = v.lines.len();
-        let (section, first, end) = plan.section_of(i);
+        let (_, first, _) = plan.section_of(i);
         let at = |i: usize| {
             let v = &plan.verses[i];
             format!("{}:{}", v.chapter, v.verse)
@@ -1513,25 +1503,6 @@ impl Bible {
         let sense = SENSE_PROMPTS
             [(usize::from(v.chapter) * 7 + usize::from(v.verse) * 3 + step) % SENSE_PROMPTS.len()];
         let (purpose, title, prompt, segments, cue) = match steps[step] {
-            Step::Preview => (
-                MemoryPurpose::Preview,
-                format!(
-                    "Section {} of {} · {}–{}",
-                    section + 1,
-                    plan.sections.len(),
-                    at(first),
-                    at(end - 1)
-                ),
-                format!("{PREVIEW_PROMPT} {sense}"),
-                self.memory_segments(
-                    p.book,
-                    plan,
-                    &(first..end)
-                        .map(|j| (j, 0..=plan.verses[j].lines.len() - 1))
-                        .collect::<Vec<_>>(),
-                )?,
-                Self::memory_cue(plan, first, 0),
-            ),
             Step::Read(k) => (
                 MemoryPurpose::Read,
                 if n > 1 {
@@ -1966,9 +1937,9 @@ impl Bible {
                 return Ok(out);
             }
             let next = match purpose {
-                MemoryPurpose::Preview | MemoryPurpose::Read => step + 1,
+                MemoryPurpose::Read => step + 1,
                 _ => match grade {
-                    Grade::Again if step > 0 && steps[step - 1] != Step::Preview => step - 1,
+                    Grade::Again if step > 0 => step - 1,
                     Grade::Again | Grade::Hard => step,
                     Grade::Good | Grade::Easy => step + 1,
                 },
@@ -2531,14 +2502,7 @@ mod tests {
         use Step::*;
         assert_eq!(
             verse_steps(2, true),
-            vec![
-                Preview,
-                Read(0),
-                Recall(0, 0),
-                Read(1),
-                Recall(1, 1),
-                Recall(0, 1)
-            ]
+            vec![Read(0), Recall(0, 0), Read(1), Recall(1, 1), Recall(0, 1)]
         );
         assert_eq!(verse_steps(1, false), vec![Read(0), Recall(0, 0), Chain]);
         let three = verse_steps(3, false);
@@ -2604,6 +2568,31 @@ mod tests {
         let plain: Vec<Unit> = (0..16).map(|_| unit("מ")).collect();
         assert_eq!(default_line_starts(&plain), vec![8]);
         assert_eq!(parse_line_starts("9, 3,0,3,40", 10), vec![3, 9]);
+    }
+
+    #[test]
+    fn a_verse_caught_mid_steps_restarts_when_the_steps_change() -> rusqlite::Result<()> {
+        let db = Connection::open_in_memory()?;
+        db.execute_batch("ATTACH DATABASE ':memory:' AS progress")?;
+        crate::tutor::init_progress_schema(&db)?;
+        // As left by version 1 of the steps: one verse mid-way, one waiting
+        // to be relearnt, one learnt.
+        db.execute_batch(
+            "INSERT INTO progress.memory_verse(book, chapter, verse, stage, ease,
+                 interval_days, due_epoch, reps, lapses, introduced_epoch,
+                 last_review_epoch, last_grade, updated_epoch)
+             VALUES (1, 1, 1, 3, 2.5, 0, 0, 0, 0, 0, 0, 2, 0),
+                    (1, 1, 2, 255, 2.5, 0, 0, 1, 1, 0, 0, 0, 0),
+                    (1, 1, 3, 5, 2.5, 4, 0, 2, 0, 0, 0, 2, 0);
+             UPDATE progress.meta SET value = '1' WHERE key = 'memory.steps';",
+        )?;
+        init_memory_schema(&db)?;
+        let stages: Vec<i64> = db
+            .prepare("SELECT stage FROM progress.memory_verse ORDER BY verse")?
+            .query_map([], |r| r.get(0))?
+            .collect::<rusqlite::Result<_>>()?;
+        assert_eq!(stages, vec![0, 255, 5]);
+        Ok(())
     }
 
     #[test]
@@ -2735,7 +2724,8 @@ mod tests {
         }
         // Verse 1 is finished before verse 2 begins, and verse 2 ends by
         // reciting verses 1–2 together.
-        assert_eq!(seen[0], (MemoryPurpose::Preview, 1, vec![1, 2, 3, 4]));
+        // Bottom up: the very first card is the first line of verse 1.
+        assert_eq!(seen[0], (MemoryPurpose::Read, 1, vec![1]));
         let first_v2 = seen
             .iter()
             .position(|s| s.1 == 2)
@@ -2867,10 +2857,8 @@ mod tests {
         assert!(shaped[0].custom_lines && shaped[2].section_start);
         // The new shape drives the steps: three lines to read and recall.
         let c = card(bible.next_memory_item(&p.id, false, now, 0)?);
-        assert_eq!(c.purpose, MemoryPurpose::Preview);
-        assert_eq!(verses_of(&c), vec![1, 2], "the section is now verses 1–2");
-        answer(&bible, &c, Grade::Good, &[], now)?;
-        let c = card(bible.next_memory_item(&p.id, false, now + 1, 0)?);
+        assert_eq!(c.purpose, MemoryPurpose::Read);
+        assert_eq!(c.section_count, 2, "the section is now verses 1–2");
         assert_eq!(c.title, "1:1 · line 1 of 3");
         assert_eq!(c.segments[0].words.len(), 2);
 
