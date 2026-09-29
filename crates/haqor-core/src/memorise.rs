@@ -69,13 +69,6 @@ const GRADUATION_BONUS_XP: i64 = 20;
 /// XP for a card that is only read.
 const READ_XP: i64 = 5;
 
-/// A verse longer than this (in words) splits at its atnach by default.
-const SPLIT_ABOVE_WORDS: usize = 6;
-/// A line longer than this splits again, at the pause nearest its middle.
-const LONG_LINE_WORDS: usize = 12;
-/// Verses per section by default.
-const SECTION_VERSES: usize = 4;
-
 /// Ways to bring more senses to a line, one shown per read card.
 const SENSE_PROMPTS: [&str; 8] = [
     "Picture the scene: where are you standing, what do you see, who is speaking?",
@@ -128,6 +121,9 @@ pub struct MemoryPassageSummary {
     /// verse counts fully once it reaches maturity.
     pub mastery_pct: i64,
     pub last_studied_epoch: i64,
+    /// The next verse to start sits in a section not yet shaped: learning
+    /// goes on once the learner shapes it.
+    pub needs_shaping: bool,
 }
 
 /// One word of a card.
@@ -254,10 +250,12 @@ pub enum MemoryItem {
     /// Nothing due and no new verse allowed today. `next_due_epoch` is when
     /// the next review falls (0 if nothing is scheduled); `can_learn_more`
     /// says whether an unstarted verse remains that the learner could choose
-    /// to start anyway.
+    /// to start anyway; `shape_passage_id` names a passage whose next verse
+    /// waits for its section to be shaped (else empty).
     Done {
         next_due_epoch: i64,
         can_learn_more: bool,
+        shape_passage_id: String,
     },
     /// The scope holds no passages (or no verses) at all.
     Empty,
@@ -316,12 +314,19 @@ pub struct MemoryLayoutVerse {
     pub chapter: u8,
     pub verse: u8,
     pub words: Vec<String>,
+    /// Each word's gloss, in parallel with `words` (empty where unknown):
+    /// the learner splits a verse by its sense, so must see what it says.
+    pub glosses: Vec<String>,
     /// Word indexes at which a new line starts (never 0), ascending.
     pub line_starts: Vec<usize>,
     pub section_start: bool,
-    /// The learner set the lines / the section break (else defaults).
-    pub custom_lines: bool,
-    pub custom_section: bool,
+    /// The learner has decided this verse's lines (a verse kept whole is
+    /// shaped too). There is no default: an unshaped verse cannot be learnt.
+    pub shaped: bool,
+    /// This verse's section is ready to learn: every verse in it is shaped
+    /// and the section is closed, by the start of the next one or by the end
+    /// of the passage.
+    pub ready: bool,
 }
 
 /// A day of memorisation activity, for the dashboard's graphs.
@@ -569,13 +574,10 @@ fn is_cantillation(c: char) -> bool {
     matches!(c, '\u{0591}'..='\u{05AF}' | '\u{05BD}')
 }
 
-const ATNACH: char = '\u{0591}';
-/// Zaqef qatan and gadol: the pauses that divide a half-verse.
-const ZAQEF: [char; 2] = ['\u{0594}', '\u{0595}'];
 const MAQAF: char = '\u{05BE}';
 
-/// A word of a verse, before display: its text with accents (to find the
-/// pauses) and its gloss.
+/// A word of a verse, before display: its text as written (accents and all)
+/// and its gloss.
 #[derive(Debug, Clone, PartialEq, Eq)]
 struct Unit {
     raw: String,
@@ -585,10 +587,6 @@ struct Unit {
 impl Unit {
     fn text(&self) -> String {
         self.raw.chars().filter(|&c| !is_cantillation(c)).collect()
-    }
-
-    fn has(&self, marks: &[char]) -> bool {
-        self.raw.chars().any(|c| marks.contains(&c))
     }
 }
 
@@ -632,51 +630,6 @@ pub fn memory_words(text: &str) -> Vec<String> {
     verse_units(text, &[]).iter().map(Unit::text).collect()
 }
 
-/// Where a verse's lines start by default: a verse longer than a few words
-/// splits at its atnach, and a line still long splits at the zaqef nearest its
-/// middle (or, with no accents to go by, at its middle).
-fn default_line_starts(units: &[Unit]) -> Vec<usize> {
-    let n = units.len();
-    if n <= SPLIT_ABOVE_WORDS {
-        return Vec::new();
-    }
-    let mut starts = Vec::new();
-    if let Some(a) = units[..n - 1].iter().position(|u| u.has(&[ATNACH])) {
-        starts.push(a + 1);
-    }
-    let mut bounds = vec![0];
-    bounds.extend(&starts);
-    bounds.push(n);
-    let mut extra = Vec::new();
-    for w in bounds.windows(2) {
-        let (from, to) = (w[0], w[1]);
-        if to - from <= LONG_LINE_WORDS {
-            continue;
-        }
-        let middle = (from + to) as f64 / 2.0;
-        let pause = (from..to - 1)
-            .filter(|&i| units[i].has(&ZAQEF))
-            .min_by(|&a, &b| {
-                (a as f64 + 1.0 - middle)
-                    .abs()
-                    .total_cmp(&(b as f64 + 1.0 - middle).abs())
-            })
-            .map(|i| i + 1);
-        let no_accents = !units[from..to]
-            .iter()
-            .any(|u| u.raw.chars().any(is_cantillation));
-        match pause {
-            Some(p) => extra.push(p),
-            None if no_accents => extra.push((from + to) / 2),
-            None => {}
-        }
-    }
-    starts.extend(extra);
-    starts.sort_unstable();
-    starts.dedup();
-    starts
-}
-
 /// Parse a stored `line_starts` list, keeping only breaks inside the verse.
 fn parse_line_starts(stored: &str, words: usize) -> Vec<usize> {
     let mut starts: Vec<usize> = stored
@@ -698,8 +651,9 @@ struct PlanVerse {
     /// Word ranges of its lines, in order.
     lines: Vec<std::ops::Range<usize>>,
     section_start: bool,
-    custom_lines: bool,
-    custom_section: bool,
+    /// The learner has set its lines. An unshaped verse is held as one line
+    /// (so a verse already begun can carry on), but is never started.
+    shaped: bool,
 }
 
 impl PlanVerse {
@@ -730,6 +684,15 @@ impl Plan {
             .copied()
             .unwrap_or(self.verses.len());
         (s, self.sections[s], end)
+    }
+
+    /// Whether verse `i`'s section can be learnt: every verse in it is
+    /// shaped. A section runs to the next section start, or to the end of the
+    /// passage, so learning can begin as soon as the learner has shaped one
+    /// section and marked where the next begins.
+    fn ready(&self, i: usize) -> bool {
+        let (_, first, end) = self.section_of(i);
+        self.verses[first..end].iter().all(|v| v.shaped)
     }
 
     fn steps(&self, i: usize) -> Vec<Step> {
@@ -1113,7 +1076,9 @@ impl Bible {
     // --- shape ---------------------------------------------------------------
 
     /// Shape a passage into sections of lined verses, from the learner's
-    /// layout where they set one and the defaults elsewhere.
+    /// layout. Nothing is shaped for them: a verse they have not split is
+    /// one unshaped line, and the passage is one section until they mark
+    /// where the next begins.
     fn memory_plan(&self, p: &MemoryPassage) -> rusqlite::Result<Plan> {
         let refs = self.memory_passage_verses(p)?;
         let mut stored = std::collections::HashMap::new();
@@ -1148,26 +1113,21 @@ impl Bible {
                 .get(&(chapter, verse))
                 .cloned()
                 .unwrap_or((None, None));
-            let starts = match &lines_stored {
-                Some(s) => parse_line_starts(s, units.len()),
-                None => default_line_starts(&units),
-            };
+            let starts = lines_stored
+                .as_deref()
+                .map_or_else(Vec::new, |s| parse_line_starts(s, units.len()));
             let mut bounds = vec![0];
             bounds.extend(&starts);
             bounds.push(units.len());
             let lines = bounds.windows(2).map(|w| w[0]..w[1]).collect();
-            // By default sections of four verses, never leaving a last
-            // section of a single verse.
-            let default_section = i % SECTION_VERSES == 0 && !(i + 1 == n && n > 1);
-            let section_start = i == 0 || section_stored.map_or(default_section, |s| s != 0);
+            let section_start = i == 0 || section_stored.is_some_and(|s| s != 0);
             verses.push(PlanVerse {
                 chapter,
                 verse,
                 units,
                 lines,
                 section_start,
-                custom_lines: lines_stored.is_some(),
-                custom_section: section_stored.is_some(),
+                shaped: lines_stored.is_some(),
             });
         }
         let sections = verses
@@ -1179,31 +1139,35 @@ impl Bible {
         Ok(Plan { verses, sections })
     }
 
-    /// Every verse of a passage with its words, lines and section breaks, for
-    /// the shaping page.
+    /// Every verse of a passage with its words, glosses, lines and section
+    /// breaks, for the shaping page.
     pub fn memory_layout(&self, passage_id: &str) -> rusqlite::Result<Vec<MemoryLayoutVerse>> {
         let Some(p) = self.memory_passage(passage_id)? else {
             return Ok(Vec::new());
         };
-        Ok(self
-            .memory_plan(&p)?
-            .verses
-            .into_iter()
-            .map(|v| MemoryLayoutVerse {
+        let plan = self.memory_plan(&p)?;
+        let mut out = Vec::with_capacity(plan.verses.len());
+        for (i, v) in plan.verses.iter().enumerate() {
+            let words = self.memory_card_words(p.book, v)?;
+            out.push(MemoryLayoutVerse {
                 chapter: v.chapter,
                 verse: v.verse,
-                words: v.units.iter().map(Unit::text).collect(),
+                glosses: words.iter().map(|w| w.gloss.clone()).collect(),
+                words: words.into_iter().map(|w| w.text).collect(),
                 line_starts: v.lines.iter().skip(1).map(|r| r.start).collect(),
                 section_start: v.section_start,
-                custom_lines: v.custom_lines,
-                custom_section: v.custom_section,
-            })
-            .collect())
+                shaped: v.shaped,
+                ready: plan.ready(i),
+            });
+        }
+        Ok(out)
     }
 
-    /// Set where a verse's lines start (word indexes, never 0); `None`
-    /// restores the default split. Shaping a verse is itself a way into it:
-    /// the learner decides where the pauses and the emphasis fall.
+    /// Set where a verse's lines start (word indexes, never 0); an empty
+    /// list keeps it whole, and `None` leaves it unshaped again. Shaping a
+    /// verse is itself a way into it: the learner decides, from what it says,
+    /// where the pauses and the emphasis fall. It is also the gate to
+    /// learning it — there is no default split to fall back on.
     pub fn set_memory_line_starts(
         &self,
         book: u8,
@@ -1235,14 +1199,15 @@ impl Bible {
         Ok(())
     }
 
-    /// Set whether a new section starts at a verse; `None` restores the
-    /// default grouping. The first verse of a passage always starts one.
+    /// Set whether a new section starts at a verse. The first verse of a
+    /// passage always starts one; without any break the passage is a single
+    /// section.
     pub fn set_memory_section_start(
         &self,
         book: u8,
         chapter: u8,
         verse: u8,
-        section_start: Option<bool>,
+        section_start: bool,
         now: i64,
     ) -> rusqlite::Result<()> {
         self.conn().execute(
@@ -1253,27 +1218,7 @@ impl Bible {
                 section_start = excluded.section_start,
                 updated_epoch = MAX(progress.memory_layout.updated_epoch + 1,
                                     excluded.updated_epoch)",
-            params![book, chapter, verse, section_start.map(i64::from), now],
-        )?;
-        Ok(())
-    }
-
-    /// Return every verse of a passage to the default lines and sections.
-    pub fn reset_memory_layout(&self, passage_id: &str, now: i64) -> rusqlite::Result<()> {
-        let Some(p) = self.memory_passage(passage_id)? else {
-            return Ok(());
-        };
-        self.conn().execute(
-            "UPDATE progress.memory_layout
-             SET line_starts = NULL, section_start = NULL,
-                 updated_epoch = MAX(updated_epoch + 1, ?4)
-             WHERE book = ?1 AND ((chapter << 8) | verse) BETWEEN ?2 AND ?3",
-            params![
-                p.book,
-                (i64::from(p.start_chapter) << 8) | i64::from(p.start_verse),
-                (i64::from(p.end_chapter) << 8) | i64::from(p.end_verse),
-                now
-            ],
+            params![book, chapter, verse, i64::from(section_start), now],
         )?;
         Ok(())
     }
@@ -1286,10 +1231,16 @@ impl Bible {
         let plan = self.memory_plan(&passage)?;
         let mut verses = Vec::new();
         let (mut learnt, mut mature, mut due, mut total) = (0, 0, 0, 0.0);
+        let mut needs_shaping = None;
         for (i, v) in plan.verses.iter().enumerate() {
             let state = self.memory_verse_srs(passage.book, v.chapter, v.verse)?;
             let steps = plan.steps(i).len();
             let is_due = state.is_some_and(|(s, d)| s.learnt() && d <= now);
+            if needs_shaping.is_none() && !state.is_some_and(|(s, _)| s.learnt()) {
+                // Learning goes in order: the first verse not learnt is the
+                // next one, and a verse not yet begun waits on its shape.
+                needs_shaping = Some(state.is_none() && !plan.ready(i));
+            }
             if let Some((s, _)) = state {
                 learnt += i64::from(s.learnt());
                 mature += i64::from(s.interval_days >= MATURE_DAYS);
@@ -1326,6 +1277,7 @@ impl Bible {
             due,
             mastery_pct,
             last_studied_epoch,
+            needs_shaping: needs_shaping.unwrap_or(false),
         })
     }
 
@@ -1662,8 +1614,9 @@ impl Bible {
     /// Order: a section with a verse due for review (recited whole, in
     /// passage order); the passage-so-far run, when due; then the next step
     /// of the first verse not yet learnt — a verse is never started while an
-    /// earlier one is unfinished, and a new verse only within today's ration
-    /// (or when `extra_new` asks for one anyway).
+    /// earlier one is unfinished, a new verse only within today's ration (or
+    /// when `extra_new` asks for one anyway), and never one whose section the
+    /// learner has not shaped yet.
     pub fn next_memory_item(
         &self,
         passage_id: &str,
@@ -1745,6 +1698,7 @@ impl Bible {
             |r| r.get(0),
         )?;
         let mut can_learn_more = false;
+        let mut shape_passage_id = String::new();
         for (p, plan) in &shaped {
             for (i, v) in plan.verses.iter().enumerate() {
                 let state = self.memory_verse_srs(p.book, v.chapter, v.verse)?;
@@ -1756,6 +1710,14 @@ impl Bible {
                         return Ok(MemoryItem::Card(
                             self.memory_step_card(passage_id, p, plan, i, step, false)?,
                         ));
+                    }
+                    // Its section is not shaped yet: nothing more of this
+                    // passage until the learner decides how it goes.
+                    None if !plan.ready(i) => {
+                        if shape_passage_id.is_empty() {
+                            shape_passage_id = p.id.clone();
+                        }
+                        break;
                     }
                     None if extra_new || started_today < settings.new_per_day => {
                         return Ok(MemoryItem::Card(
@@ -1775,6 +1737,7 @@ impl Bible {
         Ok(MemoryItem::Done {
             next_due_epoch: if next_due == i64::MAX { 0 } else { next_due },
             can_learn_more,
+            shape_passage_id,
         })
     }
 
@@ -2546,28 +2509,9 @@ mod tests {
     }
 
     #[test]
-    fn long_verses_split_at_their_pauses() {
-        let unit = |raw: &str| Unit {
-            raw: raw.to_string(),
-            gloss: String::new(),
-        };
-        // Short verses stay whole.
-        let short: Vec<Unit> = ["א", "ב\u{0591}", "ג"].map(unit).to_vec();
-        assert!(default_line_starts(&short).is_empty());
-        // Split after the word carrying the atnach.
-        let mut words: Vec<Unit> = (0..8).map(|_| unit("מ")).collect();
-        words[3] = unit("מ\u{0591}");
-        assert_eq!(default_line_starts(&words), vec![4]);
-        // A long half splits again at the zaqef nearest its middle.
-        let mut long: Vec<Unit> = (0..20).map(|_| unit("מ")).collect();
-        long[13] = unit("מ\u{0591}");
-        long[2] = unit("מ\u{0594}");
-        long[6] = unit("מ\u{0594}");
-        assert_eq!(default_line_starts(&long), vec![7, 14]);
-        // Unaccented text (the NT) halves a long verse at its middle.
-        let plain: Vec<Unit> = (0..16).map(|_| unit("מ")).collect();
-        assert_eq!(default_line_starts(&plain), vec![8]);
+    fn stored_line_starts_are_clipped_to_the_verse() {
         assert_eq!(parse_line_starts("9, 3,0,3,40", 10), vec![3, 9]);
+        assert!(parse_line_starts("", 10).is_empty());
     }
 
     #[test]
@@ -2667,6 +2611,30 @@ mod tests {
         v
     }
 
+    /// Shape every verse of a passage as a learner might — a longer verse
+    /// split in two, a short one kept whole — with sections starting at
+    /// `section_starts` (verse numbers).
+    fn shape_all(
+        bible: &Bible,
+        p: &MemoryPassage,
+        section_starts: &[u8],
+        now: i64,
+    ) -> rusqlite::Result<()> {
+        for v in bible.memory_layout(&p.id)? {
+            let n = v.words.len();
+            let starts: Vec<usize> = if n > 6 { vec![n / 2] } else { Vec::new() };
+            bible.set_memory_line_starts(p.book, v.chapter, v.verse, Some(&starts), now)?;
+            bible.set_memory_section_start(
+                p.book,
+                v.chapter,
+                v.verse,
+                section_starts.contains(&v.verse),
+                now,
+            )?;
+        }
+        Ok(())
+    }
+
     #[test]
     fn a_psalm_is_learnt_in_order_and_chained_within_its_section() -> rusqlite::Result<()> {
         let Some(bible) = test_bible() else {
@@ -2685,7 +2653,37 @@ mod tests {
             },
             now,
         )?;
+        // Nothing is shaped for the learner, so nothing can be learnt yet —
+        // not even a verse asked for past the ration.
         let summary = &bible.memory_passages(now)?[0];
+        assert!(summary.needs_shaping);
+        assert!(bible.memory_layout(&p.id)?.iter().all(|v| !v.shaped));
+        for extra_new in [false, true] {
+            assert_eq!(
+                bible.next_memory_item(&p.id, extra_new, now, 0)?,
+                MemoryItem::Done {
+                    next_due_epoch: 0,
+                    can_learn_more: false,
+                    shape_passage_id: p.id.clone(),
+                }
+            );
+        }
+        // Shaping the first section, 1–4, and marking where the next begins
+        // is enough to start; verses 5–6 stay unshaped.
+        let unshaped = bible.memory_layout(&p.id)?;
+        for v in &unshaped[..4] {
+            let n = v.words.len();
+            let starts: Vec<usize> = if n > 6 { vec![n / 2] } else { Vec::new() };
+            bible.set_memory_line_starts(27, 23, v.verse, Some(&starts), now)?;
+        }
+        bible.set_memory_section_start(27, 23, 5, true, now)?;
+        let layout = bible.memory_layout(&p.id)?;
+        let ready: Vec<bool> = layout.iter().map(|v| v.ready).collect();
+        assert_eq!(ready, vec![true, true, true, true, false, false]);
+        assert!(layout[0].glosses.iter().any(|g| !g.is_empty()));
+        assert_eq!(layout[0].glosses.len(), layout[0].words.len());
+        let summary = &bible.memory_passages(now)?[0];
+        assert!(!summary.needs_shaping);
         let starts: Vec<u8> = summary
             .verses
             .iter()
@@ -2792,8 +2790,7 @@ mod tests {
             .add_memory_passage(27, 23, 1, 23, 6, "", now)?
             .expect("Psalm 23 exists");
         // Two sections of three verses.
-        bible.set_memory_section_start(27, 23, 4, Some(true), now)?;
-        bible.set_memory_section_start(27, 23, 5, Some(false), now)?;
+        shape_all(&bible, &p, &[4], now)?;
         let layout = bible.memory_layout(&p.id)?;
         assert_eq!(
             layout
@@ -2836,34 +2833,73 @@ mod tests {
     }
 
     #[test]
-    fn the_learner_shapes_lines_and_can_restore_the_defaults() -> rusqlite::Result<()> {
+    fn a_section_is_learnt_only_once_the_learner_has_shaped_it() -> rusqlite::Result<()> {
         let Some(bible) = test_bible() else {
             return Ok(());
         };
-        let now = 1_700_000_000;
+        let mut now = 1_700_000_000;
         let p = bible
             .add_memory_passage(1, 1, 1, 1, 5, "", now)?
             .expect("Genesis 1");
+        let blocked = |bible: &Bible, now| -> rusqlite::Result<bool> {
+            Ok(matches!(
+                bible.next_memory_item(&p.id, true, now, 0)?,
+                MemoryItem::Done { shape_passage_id, .. } if shape_passage_id == p.id
+            ))
+        };
+        // No default split: every verse starts as one unshaped line, and the
+        // passage as one section.
         let before = bible.memory_layout(&p.id)?;
-        // Genesis 1:1 splits at its atnach, after "God".
         assert_eq!(before[0].words.len(), 7);
-        assert_eq!(before[0].line_starts, vec![3]);
-        assert!(!before[0].custom_lines);
+        assert!(before[0].line_starts.is_empty());
+        assert!(before.iter().all(|v| !v.shaped && !v.ready));
+        assert_eq!(before.iter().filter(|v| v.section_start).count(), 1);
+        assert!(blocked(&bible, now)?);
 
+        // Shaping one verse is not enough while the section runs on to the
+        // end of the passage; closing it at 1:3 still leaves 1:2 unshaped.
         bible.set_memory_line_starts(1, 1, 1, Some(&[2, 5]), now)?;
-        bible.set_memory_section_start(1, 1, 3, Some(true), now)?;
+        bible.set_memory_section_start(1, 1, 3, true, now)?;
+        assert!(blocked(&bible, now)?);
+        // Keeping 1:2 whole is a decision too, and completes the section.
+        bible.set_memory_line_starts(1, 1, 2, Some(&[]), now)?;
         let shaped = bible.memory_layout(&p.id)?;
         assert_eq!(shaped[0].line_starts, vec![2, 5]);
-        assert!(shaped[0].custom_lines && shaped[2].section_start);
-        // The new shape drives the steps: three lines to read and recall.
+        assert!(shaped[0].shaped && shaped[1].shaped && !shaped[2].shaped);
+        let ready: Vec<bool> = shaped.iter().map(|v| v.ready).collect();
+        assert_eq!(ready, vec![true, true, false, false, false]);
+        // The shape drives the steps: three lines to read and recall.
         let c = card(bible.next_memory_item(&p.id, false, now, 0)?);
         assert_eq!(c.purpose, MemoryPurpose::Read);
-        assert_eq!(c.section_count, 2, "the section is now verses 1–2");
+        assert_eq!(c.section_count, 2, "the section is verses 1–2");
         assert_eq!(c.title, "1:1 · line 1 of 3");
         assert_eq!(c.segments[0].words.len(), 2);
 
-        bible.reset_memory_layout(&p.id, now + 2)?;
-        assert_eq!(bible.memory_layout(&p.id)?, before);
+        // A verse already begun carries on (as one line) if its shape is
+        // cleared; it is only starting a verse that waits on its shape.
+        answer(&bible, &c, Grade::Good, &[], now)?;
+        bible.set_memory_line_starts(1, 1, 1, None, now + 1)?;
+        now += 30;
+        let c = card(bible.next_memory_item(&p.id, false, now, 0)?);
+        assert_eq!((c.target_verse, c.segments[0].line_count), (1, 1));
+        // Its section is unshaped again, though: put the shape back, or 1:2
+        // could not begin.
+        bible.set_memory_line_starts(1, 1, 1, Some(&[3]), now)?;
+
+        // Learning both verses of the section stops at 1:3, unshaped.
+        for _ in 0..40 {
+            now += 30;
+            match bible.next_memory_item(&p.id, true, now, 0)? {
+                MemoryItem::Card(c) => {
+                    assert!(c.target_verse <= 2, "{c:?}");
+                    answer(&bible, &c, Grade::Good, &[], now)?;
+                }
+                _ => break,
+            }
+        }
+        assert!(blocked(&bible, now)?);
+        assert!(bible.memory_passages(now)?[0].needs_shaping);
+        assert_eq!(bible.memory_passages(now)?[0].learnt, 2);
         Ok(())
     }
 
@@ -2876,6 +2912,7 @@ mod tests {
         let p = bible
             .add_memory_passage(1, 1, 1, 1, 1, "", now)?
             .expect("Genesis 1:1");
+        shape_all(&bible, &p, &[], now)?;
         let mut completions = 0;
         for _ in 0..20 {
             now += 30;
