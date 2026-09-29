@@ -12,9 +12,10 @@
 //! section, verse by verse, starting from the first line of the first verse:
 //!
 //! 1. each line of the verse is **read**, then **recalled** with every word
-//!    hidden, one line after another;
-//! 2. then the verse is recalled **whole**;
-//! 3. from the second verse on, the section is recalled **from its first
+//!    hidden, then recalled **together with every line before it** in the
+//!    verse — so the verse builds up line by line, ending with it whole.
+//!    While a line is learnt, the lines before it are shown as its context;
+//! 2. from the second verse on, the section is recalled **from its first
 //!    verse through this one**.
 //!
 //! When a section is complete and joins sections learnt before it, the
@@ -485,13 +486,12 @@ enum Step {
 /// The learning script of a verse with `lines` lines: see the module docs.
 fn verse_steps(lines: usize, first_in_section: bool) -> Vec<Step> {
     let mut steps = Vec::new();
-    let lines = lines.max(1);
-    for k in 0..lines {
+    for k in 0..lines.max(1) {
         steps.push(Step::Read(k));
         steps.push(Step::Recall(k, k));
-    }
-    if lines > 1 {
-        steps.push(Step::Recall(0, lines - 1));
+        if k > 0 {
+            steps.push(Step::Recall(0, k));
+        }
     }
     if !first_in_section {
         steps.push(Step::Chain);
@@ -725,8 +725,8 @@ pub fn init_memory_schema(db: &Connection) -> rusqlite::Result<()> {
     ensure_memory_tables(db, "progress")?;
     // A verse caught half-way through its steps when their numbering changed
     // restarts them: the first release's cloze ladder, then the dropped
-    // section preview (version 1), then the dropped part-verse chains of a
-    // verse of three or more lines (version 2). What was
+    // section preview (version 1), then the part-verse recitals of a verse of
+    // three or more lines, dropped (version 2) and brought back (version 3). What was
     // already learnt, and a verse waiting to be relearnt, are kept.
     let version: Option<String> = db
         .query_row(
@@ -735,11 +735,11 @@ pub fn init_memory_schema(db: &Connection) -> rusqlite::Result<()> {
             |r| r.get(0),
         )
         .optional()?;
-    if version.as_deref() != Some("3") {
+    if version.as_deref() != Some("4") {
         db.execute_batch(&format!(
             "UPDATE progress.memory_verse SET stage = 0
              WHERE interval_days = 0 AND stage != {RELEARN_STAGE};
-             INSERT INTO progress.meta(key, value) VALUES ('memory.steps', '3')
+             INSERT INTO progress.meta(key, value) VALUES ('memory.steps', '4')
              ON CONFLICT(key) DO UPDATE SET value = excluded.value;"
         ))?;
     }
@@ -1394,11 +1394,19 @@ impl Bible {
         Ok(out)
     }
 
-    /// The line before line `line` of plan verse `i`, as the cue to carry on
-    /// from.
+    /// The cue to carry on from into line `line` of plan verse `i`: every
+    /// earlier line of the verse, one per row, so a line is never learnt out
+    /// of its place in the verse; for a verse's first line, the end of the
+    /// verse before.
     fn memory_cue(plan: &Plan, i: usize, line: usize) -> String {
         if line > 0 {
-            format!("…{}", plan.verses[i].line_text(line - 1))
+            (0..line)
+                .map(|l| plan.verses[i].line_text(l))
+                .collect::<Vec<_>>()
+                .join(
+                    "
+",
+                )
         } else if i > 0 {
             let prev = &plan.verses[i - 1];
             format!("…{}", prev.line_text(prev.lines.len() - 1))
@@ -2476,8 +2484,9 @@ mod tests {
             vec![Read(0), Recall(0, 0), Read(1), Recall(1, 1), Recall(0, 1)]
         );
         assert_eq!(verse_steps(1, false), vec![Read(0), Recall(0, 0), Chain]);
-        // Every line on its own first, then the verse whole, then the
-        // section from its start through this verse.
+        // Each line on its own and then with the lines before it (the last
+        // of these is the whole verse), then the section from its start
+        // through this verse.
         let three = verse_steps(3, false);
         assert_eq!(
             three,
@@ -2486,6 +2495,7 @@ mod tests {
                 Recall(0, 0),
                 Read(1),
                 Recall(1, 1),
+                Recall(0, 1),
                 Read(2),
                 Recall(2, 2),
                 Recall(0, 2),
@@ -2494,7 +2504,7 @@ mod tests {
         );
         assert_eq!(
             relearn_step(&three, 3),
-            6,
+            7,
             "relearning starts at the whole verse"
         );
     }
@@ -2810,7 +2820,8 @@ mod tests {
         let p = bible
             .add_memory_passage(27, 23, 1, 23, 6, "", now)?
             .expect("Psalm 23 exists");
-        // Sections 1–2, 3–4, 5–6; verse 1 in three lines, verse 2 in two.
+        // Sections 1–2, 3–4, 5–6; verse 1 in three lines (of two, two and
+        // the rest of its words), verse 2 in two.
         shape_all(&bible, &p, &[3, 5], now)?;
         bible.set_memory_line_starts(27, 23, 1, Some(&[2, 4]), now)?;
         bible.set_memory_line_starts(27, 23, 2, Some(&[3]), now)?;
@@ -2830,6 +2841,11 @@ mod tests {
             if c.target_verse == 5 {
                 break;
             }
+            // A later line of a verse is cued by every line before it.
+            if c.target_verse == 1 && c.segments[0].line == 2 {
+                let cue: Vec<usize> = c.cue.split('\n').map(|l| l.split(' ').count()).collect();
+                assert_eq!(cue, vec![2, 2], "lines 1 and 2 of 23:1: {:?}", c.cue);
+            }
             assert!(seen.len() < 80, "runaway");
             seen.push((
                 c.purpose,
@@ -2846,9 +2862,9 @@ mod tests {
             for l in 0..lines[usize::from(v) - 1] {
                 out.push((MemoryPurpose::Read, vec![(v, l)]));
                 out.push((MemoryPurpose::Recall, vec![(v, l)]));
-            }
-            if lines[usize::from(v) - 1] > 1 {
-                out.push((MemoryPurpose::Recall, whole(v)));
+                if l > 0 {
+                    out.push((MemoryPurpose::Recall, (0..=l).map(|k| (v, k)).collect()));
+                }
             }
             if !first_in_section {
                 let start = if v > 2 { 3 } else { 1 };
