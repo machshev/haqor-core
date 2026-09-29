@@ -1364,6 +1364,7 @@ fn load_entry_roots(db: &mut Connection) -> Result<usize> {
     // one root it contributes, so the lowest-id entry's root stands for it;
     // for the name itself every entry it maps to gets the elements, since a
     // homograph pair (two Elhanans) are both that compound.
+    let mut rehomed: Vec<(i64, String)> = Vec::new();
     let derived = {
         let mut element_root = db.prepare(
             "SELECT b.root, b.gloss FROM lexical_index li \
@@ -1396,7 +1397,9 @@ fn load_entry_roots(db: &mut Connection) -> Result<usize> {
              WHERE pos LIKE 'n-pr%' AND source IS NOT NULL AND source LIKE '%from %'",
         )?;
 
-        let mut derived: Vec<(String, String, i64, String)> = Vec::new();
+        // `(strong, consonants, element roots, entries)` per derived name.
+        type Named = (i64, String, Vec<(String, String)>, Vec<String>);
+        let mut named: Vec<Named> = Vec::new();
         let mut names_rows = names.query([])?;
         while let Some(row) = names_rows.next()? {
             let strong: i64 = row.get(0)?;
@@ -1441,6 +1444,81 @@ fn load_entry_roots(db: &mut Connection) -> Result<usize> {
                     entries.push(bdb_id);
                 }
             }
+            named.push((strong, cons, roots, entries));
+        }
+
+        // A name the index files under a *different* name's article. BDB takes
+        // מְפִיבֹשֶׁת Mephibosheth for an alteration of מְרִיב בַּ֫עַל
+        // Merib-baal, and the index sends H4648 to Merib-baal's article — so
+        // every token read "Baal is; advocate", listed בעל among its roots, and
+        // never met its own derivation (פאה + בֹּשֶׁת). BDB does print
+        // Mephibosheth, as a cross-reference in that article's section; that
+        // entry is the lexeme the token is, and the index is re-pointed at it.
+        //
+        // A spelling variant is the same name and stays on its article: יוֹנָתָן
+        // is built from the very roots יְהוֹנָתָן is. Only a derivation sharing
+        // no root with the article, onto the one proper-name entry spelled like
+        // the name in the article's section, is moved.
+        let mut entry_roots: std::collections::HashMap<String, HashSet<String>> =
+            std::collections::HashMap::new();
+        for (_, _, roots, entries) in &named {
+            for bdb_id in entries {
+                entry_roots
+                    .entry(bdb_id.clone())
+                    .or_default()
+                    .extend(roots.iter().map(|(root, _)| root.clone()));
+            }
+        }
+        let mut targets = db.prepare(
+            "SELECT DISTINCT t.bdb_id, t.root FROM lexical_index li \
+             JOIN bdb t ON t.bdb_id = li.bdb_id \
+             WHERE li.strong = ?1 AND t.pos LIKE 'n.pr%' AND t.root <> ''",
+        )?;
+        let mut own = db
+            .prepare("SELECT bdb_id FROM bdb WHERE root = ?1 AND cons = ?2 AND pos LIKE 'n.pr%'")?;
+        let mut index_rows =
+            db.prepare("SELECT rowid, word FROM lexical_index WHERE strong = ?1 AND bdb_id = ?2")?;
+        for (strong, cons, roots, entries) in &mut named {
+            if !entries.is_empty() || roots.is_empty() {
+                continue;
+            }
+            let found: Vec<(String, String)> = targets
+                .query_map([*strong], |r| Ok((r.get(0)?, r.get(1)?)))?
+                .collect::<rusqlite::Result<_>>()?;
+            let [(target, section)] = found.as_slice() else {
+                continue;
+            };
+            let article: HashSet<&String> = std::iter::once(section)
+                .chain(entry_roots.get(target).into_iter().flatten())
+                .collect();
+            if roots.iter().any(|(root, _)| article.contains(root)) {
+                continue;
+            }
+            let own_entries: Vec<String> = own
+                .query_map([section.as_str(), cons.as_str()], |r| r.get(0))?
+                .collect::<rusqlite::Result<_>>()?;
+            let [entry] = own_entries.as_slice() else {
+                continue;
+            };
+            // Only the index rows spelled like the name move; a row of the same
+            // number spelled like the article (Ephrath's אֶפְרָתָה) is its own.
+            let rows: Vec<i64> = index_rows
+                .query_map(rusqlite::params![*strong, target], |r| {
+                    Ok((r.get::<_, i64>(0)?, r.get::<_, String>(1)?))
+                })?
+                .collect::<rusqlite::Result<Vec<_>>>()?
+                .into_iter()
+                .filter(|(_, word)| consonants(word) == *cons)
+                .map(|(rowid, _)| rowid)
+                .collect();
+            if !rows.is_empty() {
+                rehomed.extend(rows.into_iter().map(|rowid| (rowid, entry.clone())));
+                entries.push(entry.clone());
+            }
+        }
+
+        let mut derived: Vec<(String, String, i64, String)> = Vec::new();
+        for (_, _, roots, entries) in named {
             for bdb_id in entries {
                 for (ord, (root, label)) in roots.iter().enumerate() {
                     derived.push((bdb_id.clone(), root.clone(), ord as i64 + 1, label.clone()));
@@ -1449,6 +1527,17 @@ fn load_entry_roots(db: &mut Connection) -> Result<usize> {
         }
         derived
     };
+
+    for (rowid, entry) in &rehomed {
+        db.execute(
+            "UPDATE lexical_index SET bdb_id = ?2 WHERE rowid = ?1",
+            rusqlite::params![rowid, entry],
+        )?;
+    }
+    info!(
+        "  {} lexical_index rows moved to the name's own BDB entry",
+        rehomed.len()
+    );
 
     {
         let tx = db.transaction()?;
