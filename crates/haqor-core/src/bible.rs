@@ -4193,9 +4193,22 @@ impl Bible {
             .flatten()
             .chain(sedra.iter().flat_map(|l| hebrew_keys_for_syriac(&l.lexeme)))
             .collect();
+        // A BDB entry that only points back at this root — רִב and רוּב, "see
+        // ריב", spellings of the verb BDB treats in its own article — is no
+        // lexeme of its own to find in Klein or Jastrow, and its shorter
+        // spelling finds the wrong ones: רַב "much", רוֹב "multitude".
+        let refers_to_root = |e: &BdbEntry| {
+            xref_target(&e.gloss).is_some_and(|target| fold_consonants(target) == root_skeleton)
+        };
+        let searched: Vec<&String> = bdb
+            .iter()
+            .zip(&bdb_skeletons)
+            .filter(|(e, _)| !refers_to_root(e))
+            .map(|(_, skeleton)| skeleton)
+            .collect();
         let mut skeletons: Vec<String> = Vec::new();
         for s in std::iter::once(&root_skeleton)
-            .chain(&bdb_skeletons)
+            .chain(searched)
             .chain(&related)
         {
             if !s.is_empty() && !skeletons.contains(s) {

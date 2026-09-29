@@ -151,3 +151,41 @@ fn a_name_stands_in_the_lists_of_every_root_it_is_made_of() {
         saved.iter().filter(|t| t.surface.contains("הוֹשֻׁעַ")).count()
     );
 }
+
+#[test]
+fn a_name_filed_under_another_names_article_keeps_its_own_roots() {
+    require_runtime!();
+    let bible = Bible::open(data_dir()).expect("opening haqor.db");
+
+    // BDB takes מְפִיבֹשֶׁת Mephibosheth for an alteration of Merib-baal and
+    // prints it as a cross-reference in ריב, and the lexical index sent H4648
+    // to Merib-baal's article. The name then read "Baal is; advocate" and
+    // offered בעל; its own elements are פאה and בֹּשֶׁת "shame". 2 Sam 4:4.
+    let info = bible
+        .hebrew_word_info_at("מְפִיבֹֽשֶׁת", 9, 4, 4, 24)
+        .expect("Mephibosheth in 2 Sam 4:4");
+    assert!(
+        !info.gloss.contains("Baal"),
+        "Mephibosheth is not glossed as Merib-baal: {:?}",
+        info.gloss
+    );
+    let options = bible
+        .hebrew_root_options(&info.word, &info.root)
+        .expect("root options for Mephibosheth");
+    let roots: Vec<&str> = options.iter().map(|o| o.root.as_str()).collect();
+    assert_eq!(roots, vec!["ריב", "פאה", "בוש"]);
+
+    // The family BDB files it in holds ריב's lexemes, not the Klein and Jastrow
+    // articles that only share a short spelling with a stub of it (רִב "see
+    // ריב" meeting רַב "much") or with a truncated alternative (Jastrow's רִיבּ׳
+    // for רִיבּוֹא "myriad").
+    let tree = bible.hebrew_bdb_by_root("ריב").expect("root tree");
+    let lexemes = bible
+        .root_lexemes("ריב", tree, Vec::new())
+        .expect("root lexemes");
+    let headwords: Vec<&str> = lexemes.iter().map(|l| l.headword.as_str()).collect();
+    for stray in ["רַב", "רֹב", "רוֹב", "רִבּוֹא", "רִבּוּנָא"] {
+        assert!(!headwords.contains(&stray), "{stray} in ריב: {headwords:?}");
+    }
+    assert!(headwords.contains(&"רִיב"));
+}
