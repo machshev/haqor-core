@@ -3,17 +3,24 @@
 //! The learner picks a *passage* — a range of verses, usually a chapter —
 //! and shapes it: where each verse breaks into *lines* (the pauses they would
 //! make reading it aloud) and where the passage breaks into *sections* of a
-//! few verses. Sensible defaults come first (a longer verse splits at its
-//! atnach, sections of about four verses), and the shaping is itself part of
-//! learning it (see [`Bible::set_memory_verse_layout`]).
+//! few verses. Nothing is shaped for them — working out what a verse says,
+//! and so where it pauses, is the first step in remembering it — and a
+//! section is learnt only once every verse in it is shaped. Learning can
+//! start as soon as the first section is (see [`Bible::memory_layout`]).
 //!
 //! Learning never jumps about, and builds from the bottom up. Within a
 //! section, verse by verse, starting from the first line of the first verse:
 //!
-//! 1. each line is **read**, then **recalled** with every word hidden, then
-//!    recalled together with the lines before it (cumulative chaining);
-//! 2. from the second verse on, the verse is recalled **together with the
-//!    section so far**.
+//! 1. each line of the verse is **read**, then **recalled** with every word
+//!    hidden, one line after another;
+//! 2. then the verse is recalled **whole**;
+//! 3. from the second verse on, the section is recalled **from its first
+//!    verse through this one**.
+//!
+//! When a section is complete and joins sections learnt before it, the
+//! **passage so far** — every section learnt, from the beginning — is
+//! recited end to end before the next section is begun, and again on a
+//! growing interval after that.
 //!
 //! There is no read-through of a whole section first: shaping the passage
 //! into lines and sections has already given the learner its overview.
@@ -24,9 +31,8 @@
 //! A verse that has been through its steps is *learnt* and joins day-scale
 //! spaced repetition (a verse-sized SM-2: 1 day, 3 days, then ease-scaled).
 //! Reviews are recited a **section at a time**, in order, whenever any verse
-//! in it falls due. When a section is completed, and on a growing interval
-//! after that, the **passage so far** is recited end to end. A verse
-//! forgotten at review goes back into learning, from recalling it whole.
+//! in it falls due. A verse forgotten at review goes back into learning,
+//! from recalling it whole.
 //!
 //! Every answer earns XP (a log in `progress.memory_review`), from which the
 //! level, daily goal, streak, achievements and the dashboard's graphs are all
@@ -479,12 +485,13 @@ enum Step {
 /// The learning script of a verse with `lines` lines: see the module docs.
 fn verse_steps(lines: usize, first_in_section: bool) -> Vec<Step> {
     let mut steps = Vec::new();
-    for k in 0..lines.max(1) {
+    let lines = lines.max(1);
+    for k in 0..lines {
         steps.push(Step::Read(k));
         steps.push(Step::Recall(k, k));
-        if k > 0 {
-            steps.push(Step::Recall(0, k));
-        }
+    }
+    if lines > 1 {
+        steps.push(Step::Recall(0, lines - 1));
     }
     if !first_in_section {
         steps.push(Step::Chain);
@@ -717,8 +724,9 @@ fn resolve_step(stage: u8, steps: &[Step], lines: usize) -> usize {
 pub fn init_memory_schema(db: &Connection) -> rusqlite::Result<()> {
     ensure_memory_tables(db, "progress")?;
     // A verse caught half-way through its steps when their numbering changed
-    // restarts them: the first release's cloze ladder, and then the dropped
-    // section preview (version 1), which shifted every later step. What was
+    // restarts them: the first release's cloze ladder, then the dropped
+    // section preview (version 1), then the dropped part-verse chains of a
+    // verse of three or more lines (version 2). What was
     // already learnt, and a verse waiting to be relearnt, are kept.
     let version: Option<String> = db
         .query_row(
@@ -727,11 +735,11 @@ pub fn init_memory_schema(db: &Connection) -> rusqlite::Result<()> {
             |r| r.get(0),
         )
         .optional()?;
-    if version.as_deref() != Some("2") {
+    if version.as_deref() != Some("3") {
         db.execute_batch(&format!(
             "UPDATE progress.memory_verse SET stage = 0
              WHERE interval_days = 0 AND stage != {RELEARN_STAGE};
-             INSERT INTO progress.meta(key, value) VALUES ('memory.steps', '2')
+             INSERT INTO progress.meta(key, value) VALUES ('memory.steps', '3')
              ON CONFLICT(key) DO UPDATE SET value = excluded.value;"
         ))?;
     }
@@ -2468,14 +2476,27 @@ mod tests {
             vec![Read(0), Recall(0, 0), Read(1), Recall(1, 1), Recall(0, 1)]
         );
         assert_eq!(verse_steps(1, false), vec![Read(0), Recall(0, 0), Chain]);
+        // Every line on its own first, then the verse whole, then the
+        // section from its start through this verse.
         let three = verse_steps(3, false);
         assert_eq!(
+            three,
+            vec![
+                Read(0),
+                Recall(0, 0),
+                Read(1),
+                Recall(1, 1),
+                Read(2),
+                Recall(2, 2),
+                Recall(0, 2),
+                Chain
+            ]
+        );
+        assert_eq!(
             relearn_step(&three, 3),
-            7,
+            6,
             "relearning starts at the whole verse"
         );
-        assert_eq!(three[7], Recall(0, 2));
-        assert_eq!(three.last(), Some(&Chain));
     }
 
     #[test]
@@ -2777,6 +2798,73 @@ mod tests {
             (chain.purpose, verses_of(&chain)),
             (MemoryPurpose::Chain, vec![1, 2])
         );
+        Ok(())
+    }
+
+    #[test]
+    fn lines_then_the_verse_then_the_section_then_the_passage_so_far() -> rusqlite::Result<()> {
+        let Some(bible) = test_bible() else {
+            return Ok(());
+        };
+        let mut now = 1_700_000_000;
+        let p = bible
+            .add_memory_passage(27, 23, 1, 23, 6, "", now)?
+            .expect("Psalm 23 exists");
+        // Sections 1–2, 3–4, 5–6; verse 1 in three lines, verse 2 in two.
+        shape_all(&bible, &p, &[3, 5], now)?;
+        bible.set_memory_line_starts(27, 23, 1, Some(&[2, 4]), now)?;
+        bible.set_memory_line_starts(27, 23, 2, Some(&[3]), now)?;
+        let lines: Vec<usize> = bible
+            .memory_layout(&p.id)?
+            .iter()
+            .map(|v| v.line_starts.len() + 1)
+            .collect();
+        assert_eq!(&lines[..2], &[3, 2]);
+
+        // What each card recites: (purpose, [(verse, line)]).
+        type Seen = (MemoryPurpose, Vec<(u8, usize)>);
+        let mut seen: Vec<Seen> = Vec::new();
+        loop {
+            now += 30;
+            let c = card(bible.next_memory_item(&p.id, true, now, 0)?);
+            if c.target_verse == 5 {
+                break;
+            }
+            assert!(seen.len() < 80, "runaway");
+            seen.push((
+                c.purpose,
+                c.segments.iter().map(|s| (s.verse, s.line)).collect(),
+            ));
+            answer(&bible, &c, Grade::Good, &[], now)?;
+        }
+
+        let whole = |v: u8| -> Vec<(u8, usize)> {
+            (0..lines[usize::from(v) - 1]).map(|l| (v, l)).collect()
+        };
+        let verse = |v: u8, first_in_section: bool| {
+            let mut out: Vec<Seen> = Vec::new();
+            for l in 0..lines[usize::from(v) - 1] {
+                out.push((MemoryPurpose::Read, vec![(v, l)]));
+                out.push((MemoryPurpose::Recall, vec![(v, l)]));
+            }
+            if lines[usize::from(v) - 1] > 1 {
+                out.push((MemoryPurpose::Recall, whole(v)));
+            }
+            if !first_in_section {
+                let start = if v > 2 { 3 } else { 1 };
+                out.push((MemoryPurpose::Chain, (start..=v).flat_map(&whole).collect()));
+            }
+            out
+        };
+        let mut expected = Vec::new();
+        expected.extend(verse(1, true));
+        expected.extend(verse(2, false));
+        // The first section needs no run of its own: its chain was one.
+        expected.extend(verse(3, true));
+        expected.extend(verse(4, false));
+        // The second section joins the first: all of it, before verse 5.
+        expected.push((MemoryPurpose::Run, (1..=4).flat_map(&whole).collect()));
+        assert_eq!(seen, expected);
         Ok(())
     }
 
