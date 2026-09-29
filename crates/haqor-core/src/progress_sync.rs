@@ -982,6 +982,18 @@ mod tests {
                  VALUES (?1, 0, 27, 23, 1, ?2, 2, 10, 0, 'p1')",
                 params![updated, stage],
             )?;
+            db.execute(
+                "INSERT INTO progress.memory_layout(book, chapter, verse, line_starts,
+                     section_start, updated_epoch)
+                 VALUES (27, 23, 1, ?1, NULL, ?2)",
+                params![if updated == 200 { "2,5" } else { "3" }, updated],
+            )?;
+            db.execute(
+                "INSERT INTO progress.memory_passage_run(passage_id, due_epoch,
+                     interval_days, last_run_epoch, updated_epoch)
+                 VALUES ('p1', ?1, ?2, 0, ?1)",
+                params![updated, updated / 100],
+            )?;
         }
         merge_progress_files(&canonical, &incoming)?;
         // Merging the same snapshot twice must not duplicate answers.
@@ -995,6 +1007,12 @@ mod tests {
         assert_eq!(one("SELECT stage FROM memory_verse")?, 4);
         assert_eq!(one("SELECT COUNT(*) FROM memory_review")?, 2);
         assert_eq!(one("SELECT SUM(xp) FROM memory_review")?, 20);
+        assert_eq!(one("SELECT interval_days FROM memory_passage_run")?, 2);
+        assert_eq!(
+            db.query_row("SELECT line_starts FROM memory_layout", [], |r| r
+                .get::<_, String>(0))?,
+            "2,5"
+        );
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
         Ok(())

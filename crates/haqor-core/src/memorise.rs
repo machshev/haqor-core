@@ -1,29 +1,36 @@
-//! Learning passages of Scripture by heart, a verse at a time.
+//! Learning passages of Scripture by heart, in order, a line at a time.
 //!
-//! The learner picks a *passage* — a range of verses, usually a chapter — and
-//! the scheduler walks its verses in order. Each verse climbs a ladder of
-//! fading cues before it is ever asked for from memory alone:
+//! The learner picks a *passage* — a range of verses, usually a chapter —
+//! and shapes it: where each verse breaks into *lines* (the pauses they would
+//! make reading it aloud) and where the passage breaks into *sections* of a
+//! few verses. Sensible defaults come first (a longer verse splits at its
+//! atnach, sections of about four verses), and the shaping is itself part of
+//! learning it (see [`Bible::set_memory_verse_layout`]).
 //!
-//! 0. **Read** — the whole verse with transliteration and glosses, read aloud;
-//! 1. **Light cloze** — about a third of the words blanked;
-//! 2. **Heavy cloze** — about two thirds blanked;
-//! 3. **First letters** — every word reduced to its first letter;
-//! 4. **Recall** — nothing but the reference and the end of the verse before.
+//! Learning never jumps about. Within a section, verse by verse:
 //!
-//! Passing recall graduates the verse onto day-scale spaced repetition
-//! (a verse-sized SM-2: 1 day, 3 days, then ease-scaled). A forgotten verse
-//! drops back to the heavy cloze and climbs again. New verses are rationed —
-//! a few a day, and never more than [`MAX_VERSES_IN_LEARNING`] half-learnt at
-//! once — so reviews of what is already known are never crowded out.
+//! 1. the first verse opens with a **preview**: the whole section read aloud;
+//! 2. each line is **read**, then **recalled** with every word hidden, then
+//!    recalled together with the lines before it (cumulative chaining);
+//! 3. from the second verse on, the verse is recalled **together with the
+//!    section so far**.
+//!
+//! A card shows its text either whole or entirely hidden — never a scatter of
+//! gaps — and always with the line before it as the cue to carry on from.
+//!
+//! A verse that has been through its steps is *learnt* and joins day-scale
+//! spaced repetition (a verse-sized SM-2: 1 day, 3 days, then ease-scaled).
+//! Reviews are recited a **section at a time**, in order, whenever any verse
+//! in it falls due. When a section is completed, and on a growing interval
+//! after that, the **passage so far** is recited end to end. A verse
+//! forgotten at review goes back into learning, from recalling it whole.
 //!
 //! Every answer earns XP (a log in `progress.memory_review`), from which the
 //! level, daily goal, streak, achievements and the dashboard's graphs are all
-//! derived. Nothing is stored that cannot be recomputed from the log and the
-//! verse states, so two devices merging their progress (see
-//! [`crate::progress_sync`]) agree on every number afterwards.
-//!
-//! Verse state is keyed by the verse, not the passage: a verse shared by two
-//! passages is learnt once, and deleting a passage keeps what was learnt.
+//! derived. Verse state and shape are keyed by the verse, not the passage: a
+//! verse shared by two passages is learnt once, and deleting a passage keeps
+//! what was learnt. Everything merges across devices (see
+//! [`crate::progress_sync`]).
 
 use rusqlite::{Connection, OptionalExtension, params};
 
@@ -31,13 +38,6 @@ use crate::bible::{Bible, pack_ref};
 use crate::tutor::Grade;
 
 const SECONDS_PER_DAY: i64 = 86_400;
-
-/// Cue-fading stages; see the module documentation.
-pub const STAGE_READ: u8 = 0;
-pub const STAGE_CLOZE_LIGHT: u8 = 1;
-pub const STAGE_CLOZE_HEAVY: u8 = 2;
-pub const STAGE_INITIALS: u8 = 3;
-pub const STAGE_RECALL: u8 = 4;
 
 /// Verse-sized SM-2 ease bounds.
 const DEFAULT_EASE: f64 = 2.5;
@@ -48,26 +48,45 @@ const MAX_INTERVAL_DAYS: i64 = 180;
 /// An interval at or beyond which a verse counts as *mature*.
 pub const MATURE_DAYS: i64 = 21;
 
-/// Seconds before a verse still climbing the cue ladder comes back. Short
-/// enough that the ladder is climbed within a sitting, long enough that
-/// another verse can be interleaved between rungs.
-const LEARNING_DELAY_SECS: i64 = 45;
-/// A verse forgotten at review comes back after a minute.
-const RELEARN_DELAY_SECS: i64 = 60;
+/// `memory_verse.stage` of a verse forgotten at review: it re-enters its
+/// steps at recalling the whole verse.
+const RELEARN_STAGE: u8 = 255;
 
-/// Half-learnt verses allowed at once before a new verse is started.
-pub const MAX_VERSES_IN_LEARNING: i64 = 2;
+/// The passage-so-far run's spacing bounds, in days.
+const RUN_MIN_DAYS: i64 = 3;
+const RUN_MAX_DAYS: i64 = 30;
 
 pub const DEFAULT_NEW_PER_DAY: i64 = 3;
 pub const DEFAULT_DAILY_GOAL_XP: i64 = 100;
 
 /// XP for completing a passage — every verse learnt — for the first time.
 const PASSAGE_BONUS_XP: i64 = 100;
-/// XP for a verse's first graduation from the cue ladder.
+/// XP for a verse's first graduation from its learning steps.
 const GRADUATION_BONUS_XP: i64 = 20;
+/// XP for a card that is only read.
+const READ_XP: i64 = 5;
 
-/// Words of the previous verse shown as the cue for the next.
-const CUE_WORDS: usize = 3;
+/// A verse longer than this (in words) splits at its atnach by default.
+const SPLIT_ABOVE_WORDS: usize = 6;
+/// A line longer than this splits again, at the pause nearest its middle.
+const LONG_LINE_WORDS: usize = 12;
+/// Verses per section by default.
+const SECTION_VERSES: usize = 4;
+
+const PREVIEW_PROMPT: &str = "Read the whole section aloud, slowly. Notice how \
+     it moves from verse to verse, and where each line breaks.";
+
+/// Ways to bring more senses to a line, one shown per read card.
+const SENSE_PROMPTS: [&str; 8] = [
+    "Picture the scene: where are you standing, what do you see, who is speaking?",
+    "Say it aloud with feeling. Which words carry the weight?",
+    "Give each line a gesture, and use the same one every time you recite it.",
+    "Walk as you recite, a line every few steps.",
+    "Imagine telling this to someone who has never heard it.",
+    "Listen to the sounds: which letters or words repeat?",
+    "Read it, close your eyes, and see the words on the page.",
+    "Act it out: what would you do with your hands, your face, your voice?",
+];
 
 /// A target passage: an inclusive range of verses within one book.
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -89,11 +108,12 @@ pub struct MemoryPassage {
 pub struct MemoryVerseState {
     pub chapter: u8,
     pub verse: u8,
-    /// 0 not started, 1 early cue ladder (read/cloze), 2 late cue ladder
-    /// (first letters/recall), 3 learnt (< 7 days), 4 established (< 21 days),
-    /// 5 mature.
+    /// 0 not started, 1 early in its steps, 2 late in its steps (or being
+    /// relearnt), 3 learnt (< 7 days), 4 established (< 21 days), 5 mature.
     pub strength: u8,
     pub due: bool,
+    /// This verse begins a section.
+    pub section_start: bool,
 }
 
 /// A passage with its progress, for the passage list and heatmap.
@@ -104,53 +124,135 @@ pub struct MemoryPassageSummary {
     pub learnt: i64,
     pub mature: i64,
     pub due: i64,
-    /// Overall mastery 0..=100: learning stages count a little, and a learnt
+    /// Overall mastery 0..=100: learning steps count a little, and a learnt
     /// verse counts fully once it reaches maturity.
     pub mastery_pct: i64,
     pub last_studied_epoch: i64,
 }
 
-/// One word of a drill card.
+/// One word of a card.
 #[derive(Debug, Clone, PartialEq, Eq, Default)]
 pub struct MemoryWord {
-    /// The word as it reads (cantillation removed, punctuation kept).
+    /// The word as it reads: cantillation removed, a maqaf-bound group kept
+    /// together as one word.
     pub text: String,
-    /// Whether the learner has to supply it.
-    pub hidden: bool,
-    /// What is still shown of a hidden word: its first letter at the
-    /// first-letters stage, else empty.
-    pub hint: String,
     /// The word's learner gloss, when the verse's glosses align with its
     /// words; empty otherwise.
     pub gloss: String,
     pub translit: String,
 }
 
-/// One verse to practise.
+/// One line of a verse on a card.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct MemorySegment {
+    pub chapter: u8,
+    pub verse: u8,
+    /// 0-based line within the verse, and how many lines the verse has.
+    pub line: usize,
+    pub line_count: usize,
+    pub words: Vec<MemoryWord>,
+}
+
+/// What a card asks of the learner.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MemoryPurpose {
+    /// Read a whole section through before learning it (text shown).
+    Preview,
+    /// Read one line (text shown).
+    Read,
+    /// Recall one line, or a verse's lines so far (text hidden).
+    Recall,
+    /// Recall the section so far, through this verse (text hidden).
+    Chain,
+    /// Recite a section's learnt verses for review (text hidden).
+    Review,
+    /// Recite every learnt verse of the passage (text hidden).
+    Run,
+}
+
+impl MemoryPurpose {
+    pub fn as_str(self) -> &'static str {
+        match self {
+            MemoryPurpose::Preview => "preview",
+            MemoryPurpose::Read => "read",
+            MemoryPurpose::Recall => "recall",
+            MemoryPurpose::Chain => "chain",
+            MemoryPurpose::Review => "review",
+            MemoryPurpose::Run => "run",
+        }
+    }
+
+    pub fn parse(s: &str) -> Option<Self> {
+        Some(match s {
+            "preview" => MemoryPurpose::Preview,
+            "read" => MemoryPurpose::Read,
+            "recall" => MemoryPurpose::Recall,
+            "chain" => MemoryPurpose::Chain,
+            "review" => MemoryPurpose::Review,
+            "run" => MemoryPurpose::Run,
+            _ => return None,
+        })
+    }
+
+    /// Whether the card's text is hidden, to be recited.
+    pub fn hidden(self) -> bool {
+        !matches!(self, MemoryPurpose::Preview | MemoryPurpose::Read)
+    }
+
+    /// Whether the card is a step of one verse's learning script.
+    fn is_learning(self) -> bool {
+        matches!(
+            self,
+            MemoryPurpose::Preview
+                | MemoryPurpose::Read
+                | MemoryPurpose::Recall
+                | MemoryPurpose::Chain
+        )
+    }
+
+    /// Code stored in `memory_review.stage`.
+    fn code(self) -> i64 {
+        match self {
+            MemoryPurpose::Preview => 10,
+            MemoryPurpose::Read => 11,
+            MemoryPurpose::Recall => 12,
+            MemoryPurpose::Chain => 13,
+            MemoryPurpose::Review => 14,
+            MemoryPurpose::Run => 15,
+        }
+    }
+}
+
+/// One card to work through.
 #[derive(Debug, Clone, PartialEq)]
 pub struct MemoryCard {
     /// The passage it is being practised as part of (empty for "all").
     pub passage_id: String,
     pub book: u8,
-    pub chapter: u8,
-    pub verse: u8,
-    /// Its rung on the cue ladder (see the `STAGE_*` constants).
-    pub stage: u8,
-    pub words: Vec<MemoryWord>,
-    /// The last few words of the previous verse, to chain from; empty for the
-    /// first verse of a chapter.
+    pub purpose: MemoryPurpose,
+    /// A short heading ("Verse 23:4 · line 2 of 3").
+    pub title: String,
+    /// What to do, including a prompt to engage the senses on read cards.
+    pub prompt: String,
+    /// The lines to read or recite, in order.
+    pub segments: Vec<MemorySegment>,
+    /// The line before the first segment, to carry on from; empty at the
+    /// start of the passage.
     pub cue: String,
-    /// The verse's glosses in reading order.
-    pub translation: String,
-    /// First time this verse is shown.
+    /// For a learning step, the verse it advances and its step (0-based) out
+    /// of `step_count`; zero otherwise.
+    pub target_chapter: u8,
+    pub target_verse: u8,
+    pub step: usize,
+    pub step_count: usize,
+    /// First time the target verse is met.
     pub is_new: bool,
-    /// Already learnt and being reviewed (rather than climbing the ladder).
-    pub is_review: bool,
-    /// Position within the passage, 1-based, and the passage's length.
-    pub position: i64,
-    pub total: i64,
-    /// Cards still due in this session's scope after this one.
-    pub due_remaining: i64,
+    /// The target (or first) verse's position in the passage (1-based) and
+    /// the passage's length; its section (1-based) and the section count.
+    pub position: usize,
+    pub total: usize,
+    pub section: usize,
+    pub section_count: usize,
 }
 
 /// What the scheduler offers next.
@@ -169,17 +271,28 @@ pub enum MemoryItem {
     Empty,
 }
 
+/// How one verse of a recited card went.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct MemoryVerseGrade {
+    pub chapter: u8,
+    pub verse: u8,
+    pub grade: Grade,
+}
+
 /// What an answer earned, for the celebration after it.
 #[derive(Debug, Clone, PartialEq, Eq, Default)]
 pub struct MemoryReviewOutcome {
     pub xp: i64,
-    pub stage_before: u8,
-    pub stage_after: u8,
-    pub interval_days: i64,
-    /// The answer graduated this verse off the cue ladder for the first time.
+    /// The answer graduated the target verse for the first time.
     pub first_graduation: bool,
+    /// The answer completed the target verse's section.
+    pub section_completed: bool,
     /// Passages this answer completed (every verse learnt) for the first time.
     pub completed_passages: Vec<String>,
+    /// Verses of a recited card that were forgotten and go back to learning.
+    pub relearn: i64,
+    /// Days until the target verse (or the run) comes back; 0 while learning.
+    pub interval_days: i64,
     pub total_xp: i64,
     pub level_before: i64,
     pub level_after: i64,
@@ -203,6 +316,20 @@ impl Default for MemorySettings {
             daily_goal_xp: DEFAULT_DAILY_GOAL_XP,
         }
     }
+}
+
+/// One verse of a passage as the shaping page shows it.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct MemoryLayoutVerse {
+    pub chapter: u8,
+    pub verse: u8,
+    pub words: Vec<String>,
+    /// Word indexes at which a new line starts (never 0), ascending.
+    pub line_starts: Vec<usize>,
+    pub section_start: bool,
+    /// The learner set the lines / the section break (else defaults).
+    pub custom_lines: bool,
+    pub custom_section: bool,
 }
 
 /// A day of memorisation activity, for the dashboard's graphs.
@@ -259,7 +386,8 @@ pub struct MemoryStats {
     pub achievements: Vec<MemoryAchievement>,
 }
 
-/// Mutable per-verse scheduling state.
+/// Mutable per-verse scheduling state. While learning, `stage` is the index
+/// of the verse's next step (or [`RELEARN_STAGE`]).
 #[derive(Debug, Clone, Copy, PartialEq)]
 struct VerseSrs {
     stage: u8,
@@ -272,7 +400,7 @@ struct VerseSrs {
 impl Default for VerseSrs {
     fn default() -> Self {
         VerseSrs {
-            stage: STAGE_READ,
+            stage: 0,
             ease: DEFAULT_EASE,
             interval_days: 0,
             reps: 0,
@@ -286,43 +414,31 @@ impl VerseSrs {
         self.interval_days >= 1
     }
 
-    /// Apply a grade at `now`, returning the new state and its due time.
-    ///
-    /// On the ladder, Good climbs one rung and Easy two (never skipping
-    /// recall itself), Hard repeats the rung, Again steps down one. Passing
-    /// recall graduates. Once learnt, the verse is spaced SM-2 style; a lapse
-    /// sends it back to the heavy cloze.
-    ///
-    /// `early` marks a run-through answer for a verse that was not due yet: a
-    /// success then leaves its schedule alone (reviewing ahead must not
-    /// inflate the spacing), while trouble still brings it forward.
-    fn graded(self, grade: Grade, now: i64, due_epoch: i64, early: bool) -> (VerseSrs, i64) {
+    /// First graduation from the learning steps.
+    fn graduate(self, grade: Grade, now: i64) -> (VerseSrs, i64) {
         let mut s = self;
-        if !self.learnt() {
-            match grade {
-                Grade::Again => s.stage = self.stage.saturating_sub(1).max(STAGE_CLOZE_LIGHT),
-                Grade::Hard => s.stage = self.stage.max(STAGE_CLOZE_LIGHT),
-                Grade::Good | Grade::Easy if self.stage >= STAGE_RECALL => {
-                    s.stage = STAGE_RECALL;
-                    s.reps = self.reps + 1;
-                    s.interval_days = if grade == Grade::Easy { 3 } else { 1 };
-                    if grade == Grade::Easy {
-                        s.ease = self.ease + 0.15;
-                    }
-                    return (s, now + s.interval_days * SECONDS_PER_DAY);
-                }
-                Grade::Good => s.stage = self.stage + 1,
-                Grade::Easy => s.stage = (self.stage + 2).min(STAGE_RECALL),
-            }
-            return (s, now + LEARNING_DELAY_SECS);
+        s.reps = self.reps + 1;
+        s.interval_days = if grade == Grade::Easy { 3 } else { 1 };
+        if grade == Grade::Easy {
+            s.ease = self.ease + 0.15;
         }
+        (s, now + s.interval_days * SECONDS_PER_DAY)
+    }
+
+    /// Grade a learnt verse recited at `now`, SM-2 style. A lapse sends it
+    /// back into learning. `early` marks a verse recited before it was due
+    /// (it came along with its section): success then leaves its schedule
+    /// alone — reviewing ahead must not inflate the spacing — while trouble
+    /// still brings it forward.
+    fn reviewed(self, grade: Grade, now: i64, due_epoch: i64, early: bool) -> (VerseSrs, i64) {
+        let mut s = self;
         match grade {
             Grade::Again => {
                 s.ease = (self.ease - 0.20).max(MIN_EASE);
                 s.lapses = self.lapses + 1;
                 s.interval_days = 0;
-                s.stage = STAGE_CLOZE_HEAVY;
-                return (s, now + RELEARN_DELAY_SECS);
+                s.stage = RELEARN_STAGE;
+                return (s, now);
             }
             _ if early && grade != Grade::Hard => return (s, due_epoch),
             Grade::Hard => {
@@ -352,12 +468,51 @@ impl VerseSrs {
     }
 }
 
+/// One step of a verse's learning script.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+enum Step {
+    /// Read the verse's whole section (first verse of a section only).
+    Preview,
+    /// Read one line.
+    Read(usize),
+    /// Recall lines `from..=to` of the verse.
+    Recall(usize, usize),
+    /// Recall the section from its first verse through this one.
+    Chain,
+}
+
+/// The learning script of a verse with `lines` lines: see the module docs.
+fn verse_steps(lines: usize, first_in_section: bool) -> Vec<Step> {
+    let mut steps = Vec::new();
+    if first_in_section {
+        steps.push(Step::Preview);
+    }
+    for k in 0..lines.max(1) {
+        steps.push(Step::Read(k));
+        steps.push(Step::Recall(k, k));
+        if k > 0 {
+            steps.push(Step::Recall(0, k));
+        }
+    }
+    if !first_in_section {
+        steps.push(Step::Chain);
+    }
+    steps
+}
+
+/// Where a verse forgotten at review re-enters its script: recalling the
+/// whole verse.
+fn relearn_step(steps: &[Step], lines: usize) -> usize {
+    let whole = Step::Recall(0, lines.max(1) - 1);
+    steps.iter().position(|&s| s == whole).unwrap_or(0)
+}
+
 /// Heatmap strength of a verse; see [`MemoryVerseState::strength`].
-fn strength(state: Option<(VerseSrs, i64)>) -> u8 {
+fn strength(state: Option<(VerseSrs, i64)>, step_count: usize) -> u8 {
     match state {
         None => 0,
         Some((s, _)) if !s.learnt() => {
-            if s.stage >= STAGE_INITIALS {
+            if s.stage == RELEARN_STAGE || usize::from(s.stage) * 2 >= step_count {
                 2
             } else {
                 1
@@ -370,31 +525,35 @@ fn strength(state: Option<(VerseSrs, i64)>) -> u8 {
 }
 
 /// A verse's contribution to passage mastery, 0.0..=1.0.
-fn mastery(state: Option<(VerseSrs, i64)>) -> f64 {
+fn mastery(state: Option<(VerseSrs, i64)>, step_count: usize) -> f64 {
     match state {
         None => 0.0,
-        Some((s, _)) if !s.learnt() => f64::from(s.stage) * 0.1,
+        Some((s, _)) if !s.learnt() => {
+            let done = if s.stage == RELEARN_STAGE {
+                step_count
+            } else {
+                usize::from(s.stage)
+            };
+            0.4 * done as f64 / step_count.max(1) as f64
+        }
         Some((s, _)) => 0.5 + 0.5 * (s.interval_days as f64 / MATURE_DAYS as f64).min(1.0),
     }
 }
 
-/// XP for one answer at `stage`.
-fn answer_xp(stage: u8, grade: Grade) -> i64 {
-    if stage == STAGE_READ {
-        return 5;
-    }
+/// XP for reciting one verse (or line) with `grade`; a recital from memory
+/// that went well earns a bonus.
+fn recital_xp(grade: Grade, review: bool) -> i64 {
     let base = match grade {
         Grade::Again => 2,
         Grade::Hard => 6,
         Grade::Good => 10,
         Grade::Easy => 12,
     };
-    let recall_bonus = if stage >= STAGE_RECALL && matches!(grade, Grade::Good | Grade::Easy) {
+    base + if review && matches!(grade, Grade::Good | Grade::Easy) {
         5
     } else {
         0
-    };
-    base + recall_bonus
+    }
 }
 
 /// Cumulative XP needed to reach 1-based `level`: 0, 100, 300, 600, 1000, …
@@ -423,80 +582,207 @@ fn is_cantillation(c: char) -> bool {
     matches!(c, '\u{0591}'..='\u{05AF}' | '\u{05BD}')
 }
 
-fn is_letter(c: char) -> bool {
-    c.is_alphabetic()
+const ATNACH: char = '\u{0591}';
+/// Zaqef qatan and gadol: the pauses that divide a half-verse.
+const ZAQEF: [char; 2] = ['\u{0594}', '\u{0595}'];
+const MAQAF: char = '\u{05BE}';
+
+/// A word of a verse, before display: its text with accents (to find the
+/// pauses) and its gloss.
+#[derive(Debug, Clone, PartialEq, Eq)]
+struct Unit {
+    raw: String,
+    gloss: String,
 }
 
-/// Split a verse's display text into words, dropping cantillation. Tokens
-/// that carry no letter (a paseq, a lone sof pasuq) are joined to the word
-/// before them rather than being drilled as words.
-pub fn memory_words(text: &str) -> Vec<String> {
-    let plain: String = text.chars().filter(|&c| !is_cantillation(c)).collect();
-    let mut words: Vec<String> = Vec::new();
-    for token in plain.split_whitespace() {
-        if !token.chars().any(is_letter)
-            && let Some(last) = words.last_mut()
-        {
-            last.push(' ');
-            last.push_str(token);
-            continue;
-        }
-        words.push(token.to_string());
+impl Unit {
+    fn text(&self) -> String {
+        self.raw.chars().filter(|&c| !is_cantillation(c)).collect()
     }
-    words
+
+    fn has(&self, marks: &[char]) -> bool {
+        self.raw.chars().any(|c| marks.contains(&c))
+    }
 }
 
-/// The first letter of a word, bare of its points — the first-letters cue.
-fn first_letter(word: &str) -> String {
-    word.chars()
-        .find(|&c| is_letter(c))
-        .map(String::from)
-        .unwrap_or_default()
+/// Split a verse's text into words, pairing each with its gloss when the
+/// glosses align with the text's tokens. Tokens with no letter (a paseq, a
+/// lone sof pasuq) join the word before; a maqaf joins a word to the next,
+/// as they are said as one.
+fn verse_units(text: &str, glosses: &[String]) -> Vec<Unit> {
+    let tokens: Vec<&str> = text.split_whitespace().collect();
+    let aligned = glosses.len() == tokens.len();
+    let mut units: Vec<Unit> = Vec::new();
+    let mut joining = false;
+    for (i, token) in tokens.iter().enumerate() {
+        let gloss = if aligned { glosses[i].trim() } else { "" };
+        let letterless = !token.chars().any(char::is_alphabetic);
+        match units.last_mut() {
+            Some(last) if joining || letterless => {
+                if !joining {
+                    last.raw.push(' ');
+                }
+                last.raw.push_str(token);
+                if !gloss.is_empty() {
+                    if !last.gloss.is_empty() {
+                        last.gloss.push(' ');
+                    }
+                    last.gloss.push_str(gloss);
+                }
+            }
+            _ => units.push(Unit {
+                raw: token.to_string(),
+                gloss: gloss.to_string(),
+            }),
+        }
+        joining = token.ends_with(MAQAF);
+    }
+    units
 }
 
-/// A small deterministic mixer, so which words a cloze blanks changes from
-/// one showing to the next without storing anything.
-fn mix(mut x: u64) -> u64 {
-    x ^= x >> 33;
-    x = x.wrapping_mul(0xff51_afd7_ed55_8ccd);
-    x ^= x >> 33;
-    x = x.wrapping_mul(0xc4ce_b9fe_1a85_ec53);
-    x ^ (x >> 33)
+/// The words of a verse as they are memorised: see `verse_units`.
+pub fn memory_words(text: &str) -> Vec<String> {
+    verse_units(text, &[]).iter().map(Unit::text).collect()
 }
 
-/// Which of `n` words to hide at `stage`, varied by `seed`.
-fn hidden_mask(n: usize, stage: u8, seed: u64) -> Vec<bool> {
-    if n == 0 {
+/// Where a verse's lines start by default: a verse longer than a few words
+/// splits at its atnach, and a line still long splits at the zaqef nearest its
+/// middle (or, with no accents to go by, at its middle).
+fn default_line_starts(units: &[Unit]) -> Vec<usize> {
+    let n = units.len();
+    if n <= SPLIT_ABOVE_WORDS {
         return Vec::new();
     }
-    let share = match stage {
-        STAGE_READ => return vec![false; n],
-        STAGE_CLOZE_LIGHT => 1.0 / 3.0,
-        STAGE_CLOZE_HEAVY => 2.0 / 3.0,
-        _ => return vec![true; n],
-    };
-    let hide = ((n as f64 * share).round() as usize).clamp(1, n);
-    let mut order: Vec<(u64, usize)> = (0..n)
-        .map(|i| {
-            (
-                mix(seed ^ (i as u64).wrapping_mul(0x9e37_79b9_7f4a_7c15)),
-                i,
-            )
-        })
-        .collect();
-    order.sort_unstable();
-    let mut mask = vec![false; n];
-    for &(_, i) in order.iter().take(hide) {
-        mask[i] = true;
+    let mut starts = Vec::new();
+    if let Some(a) = units[..n - 1].iter().position(|u| u.has(&[ATNACH])) {
+        starts.push(a + 1);
     }
-    mask
+    let mut bounds = vec![0];
+    bounds.extend(&starts);
+    bounds.push(n);
+    let mut extra = Vec::new();
+    for w in bounds.windows(2) {
+        let (from, to) = (w[0], w[1]);
+        if to - from <= LONG_LINE_WORDS {
+            continue;
+        }
+        let middle = (from + to) as f64 / 2.0;
+        let pause = (from..to - 1)
+            .filter(|&i| units[i].has(&ZAQEF))
+            .min_by(|&a, &b| {
+                (a as f64 + 1.0 - middle)
+                    .abs()
+                    .total_cmp(&(b as f64 + 1.0 - middle).abs())
+            })
+            .map(|i| i + 1);
+        let no_accents = !units[from..to]
+            .iter()
+            .any(|u| u.raw.chars().any(is_cantillation));
+        match pause {
+            Some(p) => extra.push(p),
+            None if no_accents => extra.push((from + to) / 2),
+            None => {}
+        }
+    }
+    starts.extend(extra);
+    starts.sort_unstable();
+    starts.dedup();
+    starts
+}
+
+/// Parse a stored `line_starts` list, keeping only breaks inside the verse.
+fn parse_line_starts(stored: &str, words: usize) -> Vec<usize> {
+    let mut starts: Vec<usize> = stored
+        .split(',')
+        .filter_map(|s| s.trim().parse().ok())
+        .filter(|&i| i > 0 && i < words)
+        .collect();
+    starts.sort_unstable();
+    starts.dedup();
+    starts
+}
+
+/// A verse of a passage, shaped into lines.
+#[derive(Debug, Clone)]
+struct PlanVerse {
+    chapter: u8,
+    verse: u8,
+    units: Vec<Unit>,
+    /// Word ranges of its lines, in order.
+    lines: Vec<std::ops::Range<usize>>,
+    section_start: bool,
+    custom_lines: bool,
+    custom_section: bool,
+}
+
+impl PlanVerse {
+    fn line_text(&self, line: usize) -> String {
+        self.units[self.lines[line].clone()]
+            .iter()
+            .map(Unit::text)
+            .collect::<Vec<_>>()
+            .join(" ")
+    }
+}
+
+/// A passage shaped into sections of lined verses.
+#[derive(Debug, Clone)]
+struct Plan {
+    verses: Vec<PlanVerse>,
+    /// Index of the first verse of each section, ascending, starting at 0.
+    sections: Vec<usize>,
+}
+
+impl Plan {
+    /// The section holding verse `i`, as (section index, first verse, end).
+    fn section_of(&self, i: usize) -> (usize, usize, usize) {
+        let s = self.sections.partition_point(|&start| start <= i) - 1;
+        let end = self
+            .sections
+            .get(s + 1)
+            .copied()
+            .unwrap_or(self.verses.len());
+        (s, self.sections[s], end)
+    }
+
+    fn steps(&self, i: usize) -> Vec<Step> {
+        let (_, first, _) = self.section_of(i);
+        verse_steps(self.verses[i].lines.len(), i == first)
+    }
+}
+
+/// The index a stored stage points at in `steps` (clamped: the verse's shape
+/// may have changed since).
+fn resolve_step(stage: u8, steps: &[Step], lines: usize) -> usize {
+    if stage == RELEARN_STAGE {
+        relearn_step(steps, lines)
+    } else {
+        usize::from(stage).min(steps.len().saturating_sub(1))
+    }
 }
 
 /// Create the memorisation tables in the attached `progress` schema.
 /// Idempotent; called from [`crate::tutor::init_progress_schema`] so the sync
 /// server's canonical database has them too.
 pub fn init_memory_schema(db: &Connection) -> rusqlite::Result<()> {
-    ensure_memory_tables(db, "progress")
+    ensure_memory_tables(db, "progress")?;
+    // The first release drilled verses on a cloze ladder whose rungs mean
+    // nothing to the step script; a verse caught half-way restarts its steps.
+    // What was already learnt is kept.
+    let version: Option<String> = db
+        .query_row(
+            "SELECT value FROM progress.meta WHERE key = 'memory.steps'",
+            [],
+            |r| r.get(0),
+        )
+        .optional()?;
+    if version.is_none() {
+        db.execute_batch(
+            "UPDATE progress.memory_verse SET stage = 0 WHERE interval_days = 0;
+             INSERT INTO progress.meta(key, value) VALUES ('memory.steps', '1');",
+        )?;
+    }
+    Ok(())
 }
 
 /// [`init_memory_schema`] for any attached schema — the merge also runs it
@@ -549,6 +835,22 @@ pub(crate) fn ensure_memory_tables(db: &Connection, schema: &str) -> rusqlite::R
             new_per_day   INTEGER NOT NULL,
             daily_goal_xp INTEGER NOT NULL,
             updated_epoch INTEGER NOT NULL
+         );
+         CREATE TABLE IF NOT EXISTS {schema}.memory_layout(
+            book          INTEGER NOT NULL,
+            chapter       INTEGER NOT NULL,
+            verse         INTEGER NOT NULL,
+            line_starts   TEXT,
+            section_start INTEGER,
+            updated_epoch INTEGER NOT NULL,
+            PRIMARY KEY (book, chapter, verse)
+         );
+         CREATE TABLE IF NOT EXISTS {schema}.memory_passage_run(
+            passage_id     TEXT    PRIMARY KEY,
+            due_epoch      INTEGER NOT NULL,
+            interval_days  INTEGER NOT NULL,
+            last_run_epoch INTEGER NOT NULL,
+            updated_epoch  INTEGER NOT NULL
          );"
     ))
 }
@@ -609,7 +911,25 @@ pub(crate) fn merge_memory(db: &Connection) -> rusqlite::Result<()> {
          ON CONFLICT(id) DO UPDATE SET
             new_per_day=excluded.new_per_day, daily_goal_xp=excluded.daily_goal_xp,
             updated_epoch=excluded.updated_epoch
-         WHERE excluded.updated_epoch > progress.memory_settings.updated_epoch;",
+         WHERE excluded.updated_epoch > progress.memory_settings.updated_epoch;
+
+         INSERT INTO progress.memory_layout(
+             book, chapter, verse, line_starts, section_start, updated_epoch)
+         SELECT book, chapter, verse, line_starts, section_start, updated_epoch
+         FROM sync.memory_layout WHERE true
+         ON CONFLICT(book, chapter, verse) DO UPDATE SET
+            line_starts=excluded.line_starts, section_start=excluded.section_start,
+            updated_epoch=excluded.updated_epoch
+         WHERE excluded.updated_epoch > progress.memory_layout.updated_epoch;
+
+         INSERT INTO progress.memory_passage_run(
+             passage_id, due_epoch, interval_days, last_run_epoch, updated_epoch)
+         SELECT passage_id, due_epoch, interval_days, last_run_epoch, updated_epoch
+         FROM sync.memory_passage_run WHERE true
+         ON CONFLICT(passage_id) DO UPDATE SET
+            due_epoch=excluded.due_epoch, interval_days=excluded.interval_days,
+            last_run_epoch=excluded.last_run_epoch, updated_epoch=excluded.updated_epoch
+         WHERE excluded.updated_epoch > progress.memory_passage_run.updated_epoch;",
     )
 }
 
@@ -800,28 +1120,198 @@ impl Bible {
         Ok(out)
     }
 
+    // --- shape ---------------------------------------------------------------
+
+    /// Shape a passage into sections of lined verses, from the learner's
+    /// layout where they set one and the defaults elsewhere.
+    fn memory_plan(&self, p: &MemoryPassage) -> rusqlite::Result<Plan> {
+        let refs = self.memory_passage_verses(p)?;
+        let mut stored = std::collections::HashMap::new();
+        {
+            let mut stmt = self.conn().prepare(
+                "SELECT chapter, verse, line_starts, section_start FROM progress.memory_layout
+                 WHERE book = ?1 AND ((chapter << 8) | verse) BETWEEN ?2 AND ?3",
+            )?;
+            let rows = stmt.query_map(
+                params![
+                    p.book,
+                    (i64::from(p.start_chapter) << 8) | i64::from(p.start_verse),
+                    (i64::from(p.end_chapter) << 8) | i64::from(p.end_verse)
+                ],
+                |r| {
+                    Ok((
+                        (r.get::<_, u8>(0)?, r.get::<_, u8>(1)?),
+                        (r.get::<_, Option<String>>(2)?, r.get::<_, Option<i64>>(3)?),
+                    ))
+                },
+            )?;
+            for row in rows {
+                let (key, value) = row?;
+                stored.insert(key, value);
+            }
+        }
+        let n = refs.len();
+        let mut verses = Vec::with_capacity(n);
+        for (i, &(chapter, verse)) in refs.iter().enumerate() {
+            let units = verse_units(&self.get(p.book, chapter, verse)?, &[]);
+            let (lines_stored, section_stored) = stored
+                .get(&(chapter, verse))
+                .cloned()
+                .unwrap_or((None, None));
+            let starts = match &lines_stored {
+                Some(s) => parse_line_starts(s, units.len()),
+                None => default_line_starts(&units),
+            };
+            let mut bounds = vec![0];
+            bounds.extend(&starts);
+            bounds.push(units.len());
+            let lines = bounds.windows(2).map(|w| w[0]..w[1]).collect();
+            // By default sections of four verses, never leaving a last
+            // section of a single verse.
+            let default_section = i % SECTION_VERSES == 0 && !(i + 1 == n && n > 1);
+            let section_start = i == 0 || section_stored.map_or(default_section, |s| s != 0);
+            verses.push(PlanVerse {
+                chapter,
+                verse,
+                units,
+                lines,
+                section_start,
+                custom_lines: lines_stored.is_some(),
+                custom_section: section_stored.is_some(),
+            });
+        }
+        let sections = verses
+            .iter()
+            .enumerate()
+            .filter(|(_, v)| v.section_start)
+            .map(|(i, _)| i)
+            .collect();
+        Ok(Plan { verses, sections })
+    }
+
+    /// Every verse of a passage with its words, lines and section breaks, for
+    /// the shaping page.
+    pub fn memory_layout(&self, passage_id: &str) -> rusqlite::Result<Vec<MemoryLayoutVerse>> {
+        let Some(p) = self.memory_passage(passage_id)? else {
+            return Ok(Vec::new());
+        };
+        Ok(self
+            .memory_plan(&p)?
+            .verses
+            .into_iter()
+            .map(|v| MemoryLayoutVerse {
+                chapter: v.chapter,
+                verse: v.verse,
+                words: v.units.iter().map(Unit::text).collect(),
+                line_starts: v.lines.iter().skip(1).map(|r| r.start).collect(),
+                section_start: v.section_start,
+                custom_lines: v.custom_lines,
+                custom_section: v.custom_section,
+            })
+            .collect())
+    }
+
+    /// Set where a verse's lines start (word indexes, never 0); `None`
+    /// restores the default split. Shaping a verse is itself a way into it:
+    /// the learner decides where the pauses and the emphasis fall.
+    pub fn set_memory_line_starts(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        line_starts: Option<&[usize]>,
+        now: i64,
+    ) -> rusqlite::Result<()> {
+        let stored = line_starts.map(|s| {
+            let mut s = s.to_vec();
+            s.sort_unstable();
+            s.dedup();
+            s.iter()
+                .filter(|&&i| i > 0)
+                .map(usize::to_string)
+                .collect::<Vec<_>>()
+                .join(",")
+        });
+        self.conn().execute(
+            "INSERT INTO progress.memory_layout(
+                 book, chapter, verse, line_starts, section_start, updated_epoch)
+             VALUES (?1, ?2, ?3, ?4, NULL, ?5)
+             ON CONFLICT(book, chapter, verse) DO UPDATE SET
+                line_starts = excluded.line_starts,
+                updated_epoch = MAX(progress.memory_layout.updated_epoch + 1,
+                                    excluded.updated_epoch)",
+            params![book, chapter, verse, stored, now],
+        )?;
+        Ok(())
+    }
+
+    /// Set whether a new section starts at a verse; `None` restores the
+    /// default grouping. The first verse of a passage always starts one.
+    pub fn set_memory_section_start(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        section_start: Option<bool>,
+        now: i64,
+    ) -> rusqlite::Result<()> {
+        self.conn().execute(
+            "INSERT INTO progress.memory_layout(
+                 book, chapter, verse, line_starts, section_start, updated_epoch)
+             VALUES (?1, ?2, ?3, NULL, ?4, ?5)
+             ON CONFLICT(book, chapter, verse) DO UPDATE SET
+                section_start = excluded.section_start,
+                updated_epoch = MAX(progress.memory_layout.updated_epoch + 1,
+                                    excluded.updated_epoch)",
+            params![book, chapter, verse, section_start.map(i64::from), now],
+        )?;
+        Ok(())
+    }
+
+    /// Return every verse of a passage to the default lines and sections.
+    pub fn reset_memory_layout(&self, passage_id: &str, now: i64) -> rusqlite::Result<()> {
+        let Some(p) = self.memory_passage(passage_id)? else {
+            return Ok(());
+        };
+        self.conn().execute(
+            "UPDATE progress.memory_layout
+             SET line_starts = NULL, section_start = NULL,
+                 updated_epoch = MAX(updated_epoch + 1, ?4)
+             WHERE book = ?1 AND ((chapter << 8) | verse) BETWEEN ?2 AND ?3",
+            params![
+                p.book,
+                (i64::from(p.start_chapter) << 8) | i64::from(p.start_verse),
+                (i64::from(p.end_chapter) << 8) | i64::from(p.end_verse),
+                now
+            ],
+        )?;
+        Ok(())
+    }
+
     pub fn memory_passage_summary(
         &self,
         passage: MemoryPassage,
         now: i64,
     ) -> rusqlite::Result<MemoryPassageSummary> {
+        let plan = self.memory_plan(&passage)?;
         let mut verses = Vec::new();
         let (mut learnt, mut mature, mut due, mut total) = (0, 0, 0, 0.0);
-        let refs = self.memory_passage_verses(&passage)?;
-        for &(chapter, verse) in &refs {
-            let state = self.memory_verse_srs(passage.book, chapter, verse)?;
-            let is_due = state.is_some_and(|(_, d)| d <= now);
+        for (i, v) in plan.verses.iter().enumerate() {
+            let state = self.memory_verse_srs(passage.book, v.chapter, v.verse)?;
+            let steps = plan.steps(i).len();
+            let is_due = state.is_some_and(|(s, d)| s.learnt() && d <= now);
             if let Some((s, _)) = state {
                 learnt += i64::from(s.learnt());
                 mature += i64::from(s.interval_days >= MATURE_DAYS);
             }
             due += i64::from(is_due);
-            total += mastery(state);
+            total += mastery(state, steps);
             verses.push(MemoryVerseState {
-                chapter,
-                verse,
-                strength: strength(state),
+                chapter: v.chapter,
+                verse: v.verse,
+                strength: strength(state, steps),
                 due: is_due,
+                section_start: v.section_start,
             });
         }
         let last_studied_epoch: i64 = self.conn().query_row(
@@ -833,10 +1323,10 @@ impl Bible {
             [&passage.id],
             |r| r.get(0),
         )?;
-        let mastery_pct = if refs.is_empty() {
+        let mastery_pct = if plan.verses.is_empty() {
             0
         } else {
-            (total * 100.0 / refs.len() as f64).round() as i64
+            (total * 100.0 / plan.verses.len() as f64).round() as i64
         };
         Ok(MemoryPassageSummary {
             passage,
@@ -903,13 +1393,306 @@ impl Bible {
         }
     }
 
-    /// The next verse to practise within `passage_id` (empty = all passages).
+    /// A card's words for one verse, with glosses and transliteration.
+    fn memory_card_words(&self, book: u8, v: &PlanVerse) -> rusqlite::Result<Vec<MemoryWord>> {
+        let glosses: Vec<String> = self
+            .verse_gloss_words(book, v.chapter, v.verse)
+            .map(|pairs| pairs.into_iter().map(|(_, g)| g).collect())
+            .unwrap_or_default();
+        let mut units = verse_units(&self.get(book, v.chapter, v.verse)?, &glosses);
+        if units.len() != v.units.len() {
+            units = v.units.clone();
+        }
+        Ok(units
+            .iter()
+            .map(|u| {
+                let text = u.text();
+                MemoryWord {
+                    translit: if book < 40 {
+                        crate::romanize::romanize(&text)
+                    } else {
+                        String::new()
+                    },
+                    gloss: u.gloss.clone(),
+                    text,
+                }
+            })
+            .collect())
+    }
+
+    /// Segments for `lines` of plan verse `i` (a line range within it).
+    fn memory_segments(
+        &self,
+        book: u8,
+        plan: &Plan,
+        parts: &[(usize, std::ops::RangeInclusive<usize>)],
+    ) -> rusqlite::Result<Vec<MemorySegment>> {
+        let mut out = Vec::new();
+        for (i, lines) in parts {
+            let v = &plan.verses[*i];
+            let words = self.memory_card_words(book, v)?;
+            for line in lines.clone() {
+                out.push(MemorySegment {
+                    chapter: v.chapter,
+                    verse: v.verse,
+                    line,
+                    line_count: v.lines.len(),
+                    words: words[v.lines[line].clone()].to_vec(),
+                });
+            }
+        }
+        Ok(out)
+    }
+
+    /// The line before line `line` of plan verse `i`, as the cue to carry on
+    /// from.
+    fn memory_cue(plan: &Plan, i: usize, line: usize) -> String {
+        if line > 0 {
+            format!("…{}", plan.verses[i].line_text(line - 1))
+        } else if i > 0 {
+            let prev = &plan.verses[i - 1];
+            format!("…{}", prev.line_text(prev.lines.len() - 1))
+        } else {
+            String::new()
+        }
+    }
+
+    #[allow(clippy::too_many_arguments)]
+    fn memory_card_shell(
+        passage_id: &str,
+        p: &MemoryPassage,
+        plan: &Plan,
+        i: usize,
+        purpose: MemoryPurpose,
+        title: String,
+        prompt: String,
+        segments: Vec<MemorySegment>,
+        cue: String,
+    ) -> MemoryCard {
+        let (section, _, _) = plan.section_of(i);
+        MemoryCard {
+            passage_id: passage_id.to_string(),
+            book: p.book,
+            purpose,
+            title,
+            prompt,
+            segments,
+            cue,
+            target_chapter: 0,
+            target_verse: 0,
+            step: 0,
+            step_count: 0,
+            is_new: false,
+            position: i + 1,
+            total: plan.verses.len(),
+            section: section + 1,
+            section_count: plan.sections.len(),
+        }
+    }
+
+    /// The card for step `step` of plan verse `i`.
+    fn memory_step_card(
+        &self,
+        passage_id: &str,
+        p: &MemoryPassage,
+        plan: &Plan,
+        i: usize,
+        step: usize,
+        is_new: bool,
+    ) -> rusqlite::Result<MemoryCard> {
+        let steps = plan.steps(i);
+        let v = &plan.verses[i];
+        let n = v.lines.len();
+        let (section, first, end) = plan.section_of(i);
+        let at = |i: usize| {
+            let v = &plan.verses[i];
+            format!("{}:{}", v.chapter, v.verse)
+        };
+        let recite = "Recite it aloud, revealing each word as you say it — or reveal it \
+                      all at the end.";
+        let sense = SENSE_PROMPTS
+            [(usize::from(v.chapter) * 7 + usize::from(v.verse) * 3 + step) % SENSE_PROMPTS.len()];
+        let (purpose, title, prompt, segments, cue) = match steps[step] {
+            Step::Preview => (
+                MemoryPurpose::Preview,
+                format!(
+                    "Section {} of {} · {}–{}",
+                    section + 1,
+                    plan.sections.len(),
+                    at(first),
+                    at(end - 1)
+                ),
+                format!("{PREVIEW_PROMPT} {sense}"),
+                self.memory_segments(
+                    p.book,
+                    plan,
+                    &(first..end)
+                        .map(|j| (j, 0..=plan.verses[j].lines.len() - 1))
+                        .collect::<Vec<_>>(),
+                )?,
+                Self::memory_cue(plan, first, 0),
+            ),
+            Step::Read(k) => (
+                MemoryPurpose::Read,
+                if n > 1 {
+                    format!("{} · line {} of {n}", at(i), k + 1)
+                } else {
+                    at(i)
+                },
+                format!("Read it aloud two or three times. {sense}"),
+                self.memory_segments(p.book, plan, &[(i, k..=k)])?,
+                Self::memory_cue(plan, i, k),
+            ),
+            Step::Recall(a, b) => (
+                MemoryPurpose::Recall,
+                match (a, b) {
+                    _ if n == 1 => format!("{} from memory", at(i)),
+                    (a, b) if a == b => format!("{} · line {} from memory", at(i), a + 1),
+                    (0, b) if b + 1 == n => format!("{} · the whole verse", at(i)),
+                    (_, b) => format!("{} · lines 1–{} together", at(i), b + 1),
+                },
+                recite.to_string(),
+                self.memory_segments(p.book, plan, &[(i, a..=b)])?,
+                Self::memory_cue(plan, i, a),
+            ),
+            Step::Chain => (
+                MemoryPurpose::Chain,
+                format!("{}–{} together", at(first), at(i)),
+                "Now the section so far, from the top. Keep the flow going from one \
+                 verse into the next."
+                    .to_string(),
+                self.memory_segments(
+                    p.book,
+                    plan,
+                    &(first..=i)
+                        .map(|j| (j, 0..=plan.verses[j].lines.len() - 1))
+                        .collect::<Vec<_>>(),
+                )?,
+                Self::memory_cue(plan, first, 0),
+            ),
+        };
+        let mut card = Self::memory_card_shell(
+            passage_id, p, plan, i, purpose, title, prompt, segments, cue,
+        );
+        card.target_chapter = v.chapter;
+        card.target_verse = v.verse;
+        card.step = step;
+        card.step_count = steps.len();
+        card.is_new = is_new;
+        Ok(card)
+    }
+
+    /// A recital of the learnt verses among plan verses `range`, for review
+    /// (`purpose` Review) or the passage-so-far run (`purpose` Run).
+    fn memory_recital_card(
+        &self,
+        passage_id: &str,
+        p: &MemoryPassage,
+        plan: &Plan,
+        indexes: &[usize],
+        purpose: MemoryPurpose,
+    ) -> rusqlite::Result<MemoryCard> {
+        let (first, last) = (indexes[0], indexes[indexes.len() - 1]);
+        let at = |i: usize| {
+            let v = &plan.verses[i];
+            format!("{}:{}", v.chapter, v.verse)
+        };
+        let span = if first == last {
+            at(first)
+        } else {
+            format!("{}–{}", at(first), at(last))
+        };
+        let (title, prompt) = match purpose {
+            MemoryPurpose::Run => (
+                format!("The passage so far · {span}"),
+                "Recite everything you have learnt, from the beginning, in one flow. \
+                 See each scene as you go."
+                    .to_string(),
+            ),
+            _ => (
+                format!("Review · {span}"),
+                "Recite the section from memory, revealing each word as you say it.".to_string(),
+            ),
+        };
+        let segments = self.memory_segments(
+            p.book,
+            plan,
+            &indexes
+                .iter()
+                .map(|&j| (j, 0..=plan.verses[j].lines.len() - 1))
+                .collect::<Vec<_>>(),
+        )?;
+        Ok(Self::memory_card_shell(
+            passage_id,
+            p,
+            plan,
+            first,
+            purpose,
+            title,
+            prompt,
+            segments,
+            Self::memory_cue(plan, first, 0),
+        ))
+    }
+
+    fn memory_run_state(&self, passage_id: &str) -> rusqlite::Result<Option<(i64, i64)>> {
+        self.conn()
+            .query_row(
+                "SELECT due_epoch, interval_days FROM progress.memory_passage_run
+                 WHERE passage_id = ?1",
+                [passage_id],
+                |r| Ok((r.get(0)?, r.get(1)?)),
+            )
+            .optional()
+    }
+
+    fn set_memory_run_state(
+        &self,
+        passage_id: &str,
+        due_epoch: i64,
+        interval_days: i64,
+        last_run_epoch: i64,
+        now: i64,
+    ) -> rusqlite::Result<()> {
+        self.conn().execute(
+            "INSERT INTO progress.memory_passage_run(
+                 passage_id, due_epoch, interval_days, last_run_epoch, updated_epoch)
+             VALUES (?1, ?2, ?3, ?4, ?5)
+             ON CONFLICT(passage_id) DO UPDATE SET
+                due_epoch = excluded.due_epoch, interval_days = excluded.interval_days,
+                last_run_epoch = MAX(progress.memory_passage_run.last_run_epoch,
+                                     excluded.last_run_epoch),
+                updated_epoch = MAX(progress.memory_passage_run.updated_epoch + 1,
+                                    excluded.updated_epoch)",
+            params![passage_id, due_epoch, interval_days, last_run_epoch, now],
+        )?;
+        Ok(())
+    }
+
+    /// Learnt plan verses of a passage, and the sections they fall in.
+    fn memory_learnt(
+        &self,
+        p: &MemoryPassage,
+        plan: &Plan,
+    ) -> rusqlite::Result<Vec<(usize, VerseSrs, i64)>> {
+        let mut out = Vec::new();
+        for (i, v) in plan.verses.iter().enumerate() {
+            if let Some((s, due)) = self.memory_verse_srs(p.book, v.chapter, v.verse)?
+                && s.learnt()
+            {
+                out.push((i, s, due));
+            }
+        }
+        Ok(out)
+    }
+
+    /// The next card within `passage_id` (empty = all passages).
     ///
-    /// Order: a verse on the cue ladder that is due; a learnt verse due for
-    /// review (in passage order, so reviews chain); a new verse, if today's
-    /// ration and the half-learnt cap allow (or `extra_new` asks for one
-    /// anyway); then a verse still on the ladder even if not quite due, so a
-    /// sitting never stalls mid-climb.
+    /// Order: a section with a verse due for review (recited whole, in
+    /// passage order); the passage-so-far run, when due; then the next step
+    /// of the first verse not yet learnt — a verse is never started while an
+    /// earlier one is unfinished, and a new verse only within today's ration
+    /// (or when `extra_new` asks for one anyway).
     pub fn next_memory_item(
         &self,
         passage_id: &str,
@@ -918,206 +1701,158 @@ impl Bible {
         utc_offset: i64,
     ) -> rusqlite::Result<MemoryItem> {
         let scope = self.memory_scope(passage_id)?;
-        let mut verses: Vec<(MemoryPassage, u8, u8, i64, i64)> = Vec::new();
-        let mut seen = std::collections::HashSet::new();
-        for passage in &scope {
-            let refs = self.memory_passage_verses(passage)?;
-            let total = refs.len() as i64;
-            for (i, (chapter, verse)) in refs.into_iter().enumerate() {
-                if seen.insert((passage.book, chapter, verse)) {
-                    verses.push((passage.clone(), chapter, verse, i as i64 + 1, total));
-                }
+        let mut shaped = Vec::new();
+        for p in scope {
+            let plan = self.memory_plan(&p)?;
+            if !plan.verses.is_empty() {
+                shaped.push((p, plan));
             }
         }
-        if verses.is_empty() {
+        if shaped.is_empty() {
             return Ok(MemoryItem::Empty);
         }
 
-        let mut learning_due = None;
-        let mut learning_soon = None;
-        let mut review_due = None;
-        let mut first_new = None;
-        let mut in_learning = 0;
-        let mut due_count = 0;
         let mut next_due = i64::MAX;
-        for (idx, (p, chapter, verse, _, _)) in verses.iter().enumerate() {
-            match self.memory_verse_srs(p.book, *chapter, *verse)? {
-                None => {
-                    first_new.get_or_insert(idx);
-                }
-                Some((s, due)) => {
-                    let due_now = due <= now;
-                    due_count += i64::from(due_now);
-                    next_due = next_due.min(due);
-                    if !s.learnt() {
-                        in_learning += 1;
-                        if due_now {
-                            if learning_due.is_none_or(|(_, d)| due < d) {
-                                learning_due = Some((idx, due));
-                            }
-                        } else if learning_soon.is_none_or(|(_, d)| due < d) {
-                            learning_soon = Some((idx, due));
-                        }
-                    } else if due_now && review_due.is_none() {
-                        review_due = Some(idx);
-                    }
+        for (p, plan) in &shaped {
+            let learnt = self.memory_learnt(p, plan)?;
+            for &(_, _, due) in &learnt {
+                next_due = next_due.min(due);
+            }
+            for (s, &start) in plan.sections.iter().enumerate() {
+                let end = plan
+                    .sections
+                    .get(s + 1)
+                    .copied()
+                    .unwrap_or(plan.verses.len());
+                let in_section: Vec<_> = learnt
+                    .iter()
+                    .filter(|(i, _, _)| (start..end).contains(i))
+                    .collect();
+                if in_section.iter().any(|(_, _, due)| *due <= now) {
+                    let indexes: Vec<usize> = in_section.iter().map(|(i, _, _)| *i).collect();
+                    return Ok(MemoryItem::Card(self.memory_recital_card(
+                        passage_id,
+                        p,
+                        plan,
+                        &indexes,
+                        MemoryPurpose::Review,
+                    )?));
                 }
             }
         }
 
+        for (p, plan) in &shaped {
+            let Some((due, _)) = self.memory_run_state(&p.id)? else {
+                continue;
+            };
+            next_due = next_due.min(due);
+            if due > now {
+                continue;
+            }
+            let learnt = self.memory_learnt(p, plan)?;
+            let sections: std::collections::HashSet<usize> = learnt
+                .iter()
+                .map(|(i, _, _)| plan.section_of(*i).0)
+                .collect();
+            if sections.len() >= 2 {
+                let indexes: Vec<usize> = learnt.iter().map(|(i, _, _)| *i).collect();
+                return Ok(MemoryItem::Card(self.memory_recital_card(
+                    passage_id,
+                    p,
+                    plan,
+                    &indexes,
+                    MemoryPurpose::Run,
+                )?));
+            }
+        }
+
         let settings = self.memory_settings()?;
-        let today = local_day(now, utc_offset);
         let started_today: i64 = self.conn().query_row(
             "SELECT COUNT(*) FROM progress.memory_verse
              WHERE (introduced_epoch + ?2) / 86400 = ?1",
-            params![today, utc_offset],
+            params![local_day(now, utc_offset), utc_offset],
             |r| r.get(0),
         )?;
-        let may_start = first_new.is_some()
-            && (extra_new
-                || (started_today < settings.new_per_day && in_learning < MAX_VERSES_IN_LEARNING));
-
-        let chosen = learning_due
-            .map(|(i, _)| i)
-            .or(review_due)
-            .or(if may_start { first_new } else { None })
-            .or(learning_soon.map(|(i, _)| i));
-        let Some(idx) = chosen else {
-            return Ok(MemoryItem::Done {
-                next_due_epoch: if next_due == i64::MAX { 0 } else { next_due },
-                can_learn_more: first_new.is_some(),
-            });
-        };
-        let (p, chapter, verse, position, total) = &verses[idx];
-        let chosen_due = self
-            .memory_verse_srs(p.book, *chapter, *verse)?
-            .is_some_and(|(_, due)| due <= now);
-        let mut card = self.memory_card(passage_id, p.book, *chapter, *verse, None, now)?;
-        card.position = *position;
-        card.total = *total;
-        card.due_remaining = due_count - i64::from(chosen_due);
-        Ok(MemoryItem::Card(card))
-    }
-
-    /// Build the drill card for one verse at its current stage, or at
-    /// `force_stage` (a run-through asks for recall).
-    pub fn memory_card(
-        &self,
-        passage_id: &str,
-        book: u8,
-        chapter: u8,
-        verse: u8,
-        force_stage: Option<u8>,
-        now: i64,
-    ) -> rusqlite::Result<MemoryCard> {
-        let state = self.memory_verse_srs(book, chapter, verse)?;
-        let stage = force_stage
-            .unwrap_or_else(|| state.map_or(STAGE_READ, |(s, _)| s.stage))
-            .min(STAGE_RECALL);
-        let words = memory_words(&self.get(book, chapter, verse)?);
-        let glosses: Vec<String> = self
-            .verse_gloss_words(book, chapter, verse)
-            .map(|pairs| pairs.into_iter().map(|(_, g)| g).collect())
-            .unwrap_or_default();
-        let aligned = glosses.len() == words.len();
-        let (reps, lapses) = state.map_or((0, 0), |(s, _)| (s.reps, s.lapses));
-        let seed = (pack_ref(book, chapter, verse) as u64)
-            ^ ((reps as u64) << 40)
-            ^ ((lapses as u64) << 52)
-            ^ (u64::from(stage) << 60)
-            ^ (now as u64 / 30);
-        let mask = hidden_mask(words.len(), stage, seed);
-        let words = words
-            .into_iter()
-            .enumerate()
-            .map(|(i, text)| MemoryWord {
-                hint: if mask[i] && stage == STAGE_INITIALS {
-                    first_letter(&text)
-                } else {
-                    String::new()
-                },
-                hidden: mask[i],
-                gloss: if aligned {
-                    glosses[i].clone()
-                } else {
-                    String::new()
-                },
-                translit: if book < 40 {
-                    crate::romanize::romanize(&text)
-                } else {
-                    String::new()
-                },
-                text,
-            })
-            .collect();
-        let cue = if verse > 1 {
-            self.get(book, chapter, verse - 1)
-                .map(|text| {
-                    let previous = memory_words(&text);
-                    let from = previous.len().saturating_sub(CUE_WORDS);
-                    previous[from..].join(" ")
-                })
-                .unwrap_or_default()
-        } else {
-            String::new()
-        };
-        let translation = glosses
-            .iter()
-            .map(|g| g.trim())
-            .filter(|g| !g.is_empty())
-            .collect::<Vec<_>>()
-            .join(" ");
-        Ok(MemoryCard {
-            passage_id: passage_id.to_string(),
-            book,
-            chapter,
-            verse,
-            stage,
-            words,
-            cue,
-            translation,
-            is_new: state.is_none(),
-            is_review: state.is_some_and(|(s, _)| s.learnt()),
-            position: 0,
-            total: 0,
-            due_remaining: 0,
+        let mut can_learn_more = false;
+        for (p, plan) in &shaped {
+            for (i, v) in plan.verses.iter().enumerate() {
+                let state = self.memory_verse_srs(p.book, v.chapter, v.verse)?;
+                match state {
+                    Some((s, _)) if s.learnt() => continue,
+                    Some((s, _)) => {
+                        let steps = plan.steps(i);
+                        let step = resolve_step(s.stage, &steps, v.lines.len());
+                        return Ok(MemoryItem::Card(
+                            self.memory_step_card(passage_id, p, plan, i, step, false)?,
+                        ));
+                    }
+                    None if extra_new || started_today < settings.new_per_day => {
+                        return Ok(MemoryItem::Card(
+                            self.memory_step_card(passage_id, p, plan, i, 0, true)?,
+                        ));
+                    }
+                    None => {
+                        can_learn_more = true;
+                        break;
+                    }
+                }
+            }
+            if can_learn_more {
+                break;
+            }
+        }
+        Ok(MemoryItem::Done {
+            next_due_epoch: if next_due == i64::MAX { 0 } else { next_due },
+            can_learn_more,
         })
     }
 
-    /// Record an answer for a verse and reschedule it. `run_through` marks
-    /// answers from reciting a whole passage in order, where a verse may not
-    /// be due yet (see `VerseSrs::graded`).
-    #[allow(clippy::too_many_arguments)]
-    pub fn submit_memory_review(
+    /// Recite every learnt verse of a passage now, whether due or not.
+    pub fn memory_run_card(&self, passage_id: &str) -> rusqlite::Result<Option<MemoryCard>> {
+        let Some(p) = self.memory_passage(passage_id)? else {
+            return Ok(None);
+        };
+        let plan = self.memory_plan(&p)?;
+        let indexes: Vec<usize> = self
+            .memory_learnt(&p, &plan)?
+            .iter()
+            .map(|(i, _, _)| *i)
+            .collect();
+        if indexes.is_empty() {
+            return Ok(None);
+        }
+        self.memory_recital_card(passage_id, &p, &plan, &indexes, MemoryPurpose::Run)
+            .map(Some)
+    }
+
+    /// The passage holding a verse: `passage_id`'s, or the first live one.
+    fn memory_passage_for(
         &self,
         passage_id: &str,
         book: u8,
         chapter: u8,
         verse: u8,
+    ) -> rusqlite::Result<Option<MemoryPassage>> {
+        let r = pack_ref(book, chapter, verse);
+        Ok(self.memory_scope(passage_id)?.into_iter().find(|p| {
+            p.book == book
+                && (pack_ref(book, p.start_chapter, p.start_verse)
+                    ..=pack_ref(book, p.end_chapter, p.end_verse))
+                    .contains(&r)
+        }))
+    }
+
+    #[allow(clippy::too_many_arguments)]
+    fn write_memory_verse(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        s: VerseSrs,
+        due: i64,
         grade: Grade,
-        run_through: bool,
         now: i64,
-        utc_offset: i64,
-    ) -> rusqlite::Result<MemoryReviewOutcome> {
-        let today = local_day(now, utc_offset);
-        let settings = self.memory_settings()?;
-        let total_before = self.memory_total_xp()?;
-        let today_before = self.memory_day_xp(today)?;
-        let completed_before = self.completed_passage_ids(now)?;
-
-        let previous = self.memory_verse_srs(book, chapter, verse)?;
-        let (before, due_before) = previous.unwrap_or((VerseSrs::default(), now));
-        let early = run_through && due_before > now;
-        let (after, due) = before.graded(grade, now, due_before, early);
-        let ever_graduated: bool = self.conn().query_row(
-            "SELECT EXISTS(SELECT 1 FROM progress.memory_review
-             WHERE book = ?1 AND chapter = ?2 AND verse = ?3 AND graduated = 1)",
-            params![book, chapter, verse],
-            |r| r.get(0),
-        )?;
-        let graduated_now = !before.learnt() && after.learnt();
-        let first_graduation = graduated_now && !ever_graduated;
-
+    ) -> rusqlite::Result<()> {
         self.conn().execute(
             "INSERT INTO progress.memory_verse(
                  book, chapter, verse, stage, ease, interval_days, due_epoch, reps, lapses,
@@ -1135,18 +1870,209 @@ impl Bible {
                 book,
                 chapter,
                 verse,
-                after.stage,
-                after.ease,
-                after.interval_days,
+                s.stage,
+                s.ease,
+                s.interval_days,
                 due,
-                after.reps,
-                after.lapses,
+                s.reps,
+                s.lapses,
                 now,
                 grade as i64,
             ],
         )?;
+        Ok(())
+    }
 
-        let completed_passages: Vec<String> = if graduated_now {
+    /// Record how a card went and move the schedule on.
+    ///
+    /// For a learning card, `target` is the verse whose script it was step
+    /// `step` of, and `grade` the learner's grade for it: reading moves on;
+    /// a recital that went well moves on, Hard repeats it, and a forgotten one
+    /// steps back to the step before. A stale step (a card answered twice) is
+    /// ignored. `verses` grades each verse of a recited card: for a chain or a
+    /// review they reschedule every learnt verse recited (reviewing ahead
+    /// leaves a verse's spacing alone), and a forgotten one goes back to
+    /// learning. A run also respaces the next passage-so-far run.
+    #[allow(clippy::too_many_arguments)]
+    pub fn submit_memory_recital(
+        &self,
+        passage_id: &str,
+        book: u8,
+        purpose: MemoryPurpose,
+        target: Option<(u8, u8)>,
+        step: usize,
+        grade: Grade,
+        verses: &[MemoryVerseGrade],
+        now: i64,
+        utc_offset: i64,
+    ) -> rusqlite::Result<MemoryReviewOutcome> {
+        let today = local_day(now, utc_offset);
+        let settings = self.memory_settings()?;
+        let total_before = self.memory_total_xp()?;
+        let today_before = self.memory_day_xp(today)?;
+        let completed_before = self.completed_passage_ids(now)?;
+        let mut out = MemoryReviewOutcome::default();
+        let mut graduated = false;
+        let mut xp = 0;
+        // (chapter, verse, grade code, graduated) rows for the answer log.
+        let mut log: Vec<(u8, u8, i64, bool)> = Vec::new();
+        let mut run_passage: Option<MemoryPassage> = None;
+
+        // Reschedule the learnt verses a recital covered.
+        let review = |this: &Self, v: &MemoryVerseGrade, log: &mut Vec<_>| {
+            let Some((s, due)) = this.memory_verse_srs(book, v.chapter, v.verse)? else {
+                return Ok::<_, rusqlite::Error>(None);
+            };
+            if !s.learnt() {
+                return Ok(None);
+            }
+            let (after, next) = s.reviewed(v.grade, now, due, due > now);
+            this.write_memory_verse(book, v.chapter, v.verse, after, next, v.grade, now)?;
+            log.push((v.chapter, v.verse, v.grade as i64, false));
+            Ok(Some(after))
+        };
+
+        if purpose.is_learning() {
+            let Some((chapter, verse)) = target else {
+                return Ok(out);
+            };
+            let Some(p) = self.memory_passage_for(passage_id, book, chapter, verse)? else {
+                return Ok(out);
+            };
+            let plan = self.memory_plan(&p)?;
+            let Some(i) = plan
+                .verses
+                .iter()
+                .position(|v| (v.chapter, v.verse) == (chapter, verse))
+            else {
+                return Ok(out);
+            };
+            // The target verse moves on by how it went itself; in a chain the
+            // verses before it are graded on their own below.
+            let grade = verses
+                .iter()
+                .find(|v| (v.chapter, v.verse) == (chapter, verse))
+                .map_or(grade, |v| v.grade);
+            let steps = plan.steps(i);
+            let lines = plan.verses[i].lines.len();
+            let previous = self.memory_verse_srs(book, chapter, verse)?;
+            let (before, _) = previous.unwrap_or((VerseSrs::default(), now));
+            let current = if previous.is_some() {
+                resolve_step(before.stage, &steps, lines)
+            } else {
+                0
+            };
+            if before.learnt() || current != step {
+                return Ok(out);
+            }
+            let next = match purpose {
+                MemoryPurpose::Preview | MemoryPurpose::Read => step + 1,
+                _ => match grade {
+                    Grade::Again if step > 0 && steps[step - 1] != Step::Preview => step - 1,
+                    Grade::Again | Grade::Hard => step,
+                    Grade::Good | Grade::Easy => step + 1,
+                },
+            };
+            let (after, due) = if next >= steps.len() {
+                graduated = true;
+                before.graduate(grade, now)
+            } else {
+                (
+                    VerseSrs {
+                        stage: next as u8,
+                        ..before
+                    },
+                    now,
+                )
+            };
+            self.write_memory_verse(book, chapter, verse, after, due, grade, now)?;
+            out.interval_days = after.interval_days;
+            if graduated {
+                let ever: bool = self.conn().query_row(
+                    "SELECT EXISTS(SELECT 1 FROM progress.memory_review
+                     WHERE book = ?1 AND chapter = ?2 AND verse = ?3 AND graduated = 1)",
+                    params![book, chapter, verse],
+                    |r| r.get(0),
+                )?;
+                out.first_graduation = !ever;
+            }
+            let reading = !purpose.hidden();
+            xp += if reading {
+                READ_XP
+            } else {
+                recital_xp(grade, false)
+            };
+            log.push((
+                chapter,
+                verse,
+                if reading { -2 } else { grade as i64 },
+                graduated,
+            ));
+            if purpose == MemoryPurpose::Chain {
+                for v in verses
+                    .iter()
+                    .filter(|v| (v.chapter, v.verse) != (chapter, verse))
+                {
+                    if let Some(after) = review(self, v, &mut log)? {
+                        out.relearn += i64::from(!after.learnt());
+                        xp += recital_xp(v.grade, false);
+                    }
+                }
+            }
+            if graduated {
+                let (_, first, end) = plan.section_of(i);
+                let learnt: Vec<usize> = self
+                    .memory_learnt(&p, &plan)?
+                    .iter()
+                    .map(|(j, _, _)| *j)
+                    .collect();
+                out.section_completed = (first..end).all(|j| learnt.contains(&j));
+                if out.section_completed && learnt.iter().any(|&j| j < first) {
+                    // A section just joined the ones before it: recite the
+                    // whole passage so far, now.
+                    let interval = self
+                        .memory_run_state(&p.id)?
+                        .map_or(RUN_MIN_DAYS, |(_, d)| d);
+                    self.set_memory_run_state(&p.id, now, interval, 0, now)?;
+                }
+            }
+        } else {
+            for v in verses {
+                if let Some(after) = review(self, v, &mut log)? {
+                    out.relearn += i64::from(!after.learnt());
+                    xp += recital_xp(v.grade, true);
+                    if after.learnt()
+                        && (out.interval_days == 0 || after.interval_days < out.interval_days)
+                    {
+                        out.interval_days = after.interval_days;
+                    }
+                }
+            }
+            if purpose == MemoryPurpose::Run {
+                run_passage = self.memory_passage(passage_id)?;
+                if run_passage.is_none()
+                    && let Some(v) = verses.first()
+                {
+                    run_passage = self.memory_passage_for("", book, v.chapter, v.verse)?;
+                }
+            }
+        }
+
+        if let Some(p) = run_passage {
+            let previous = self
+                .memory_run_state(&p.id)?
+                .map_or(RUN_MIN_DAYS, |(_, d)| d);
+            let interval = match grade {
+                Grade::Again => 1,
+                Grade::Hard => previous.max(RUN_MIN_DAYS),
+                Grade::Good => (previous * 2).clamp(RUN_MIN_DAYS, RUN_MAX_DAYS),
+                Grade::Easy => (previous * 3).clamp(RUN_MIN_DAYS, RUN_MAX_DAYS),
+            };
+            self.set_memory_run_state(&p.id, now + interval * SECONDS_PER_DAY, interval, now, now)?;
+            out.interval_days = interval;
+        }
+
+        let completed_passages: Vec<String> = if graduated {
             let ever_completed = self.ever_completed_passage_ids()?;
             self.completed_passage_ids(now)?
                 .into_iter()
@@ -1155,65 +2081,69 @@ impl Bible {
         } else {
             Vec::new()
         };
-        let xp = answer_xp(before.stage, grade)
-            + if first_graduation {
-                GRADUATION_BONUS_XP
+        xp += if out.first_graduation {
+            GRADUATION_BONUS_XP
+        } else {
+            0
+        } + PASSAGE_BONUS_XP * completed_passages.len() as i64;
+
+        // One log row per verse; the card's XP rides on the first. A
+        // completed passage is remembered in its row, so completing it again
+        // after a lapse does not pay the bonus twice.
+        for (n, (chapter, verse, grade_code, graduated)) in log.iter().enumerate() {
+            let tag = if n == 0 {
+                completed_passages
+                    .first()
+                    .map(|id| format!("complete:{id}"))
+                    .unwrap_or_else(|| passage_id.to_string())
             } else {
-                0
-            }
-            + PASSAGE_BONUS_XP * completed_passages.len() as i64;
-        // A completed passage is remembered in its review row, so completing
-        // it again after a lapse does not pay the bonus twice.
-        let passage_tag = completed_passages
-            .first()
-            .map(|id| format!("complete:{id}"))
-            .unwrap_or_else(|| passage_id.to_string());
-        self.conn().execute(
-            "INSERT INTO progress.memory_review(
-                 epoch, day, book, chapter, verse, stage, grade, xp, graduated, passage_id)
-             VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)",
-            params![
-                now,
-                today,
-                book,
-                chapter,
-                verse,
-                before.stage,
-                grade as i64,
-                xp,
-                graduated_now,
-                passage_tag
-            ],
-        )?;
-        for id in completed_passages.iter().skip(1) {
-            // Several passages completed at once (overlapping ranges): one
-            // zero-XP marker row each, a second apart to stay distinct.
+                passage_id.to_string()
+            };
             self.conn().execute(
                 "INSERT INTO progress.memory_review(
                      epoch, day, book, chapter, verse, stage, grade, xp, graduated, passage_id)
-                 VALUES (?1, ?2, ?3, ?4, ?5, -1, -1, 0, 0, ?6)",
-                params![now, today, book, chapter, verse, format!("complete:{id}")],
+                 VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)",
+                params![
+                    now,
+                    today,
+                    book,
+                    chapter,
+                    verse,
+                    purpose.code(),
+                    grade_code,
+                    if n == 0 { xp } else { 0 },
+                    graduated,
+                    tag
+                ],
             )?;
+        }
+        if let Some((chapter, verse, _, _)) = log.first() {
+            for id in completed_passages.iter().skip(1) {
+                // Several passages completed at once (overlapping ranges): a
+                // zero-XP marker row each.
+                self.conn().execute(
+                    "INSERT INTO progress.memory_review(
+                         epoch, day, book, chapter, verse, stage, grade, xp, graduated,
+                         passage_id)
+                     VALUES (?1, ?2, ?3, ?4, ?5, -1, -1, 0, 0, ?6)",
+                    params![now, today, book, chapter, verse, format!("complete:{id}")],
+                )?;
+            }
         }
 
         let total_xp = total_before + xp;
         let today_xp = today_before + xp;
-        Ok(MemoryReviewOutcome {
-            xp,
-            stage_before: before.stage,
-            stage_after: after.stage,
-            interval_days: after.interval_days,
-            first_graduation,
-            completed_passages,
-            total_xp,
-            level_before: level_for_xp(total_before),
-            level_after: level_for_xp(total_xp),
-            today_xp,
-            daily_goal_xp: settings.daily_goal_xp,
-            goal_reached_now: today_before < settings.daily_goal_xp
-                && today_xp >= settings.daily_goal_xp,
-            streak_days: self.memory_streak(today)?,
-        })
+        out.xp = xp;
+        out.completed_passages = completed_passages;
+        out.total_xp = total_xp;
+        out.level_before = level_for_xp(total_before);
+        out.level_after = level_for_xp(total_xp);
+        out.today_xp = today_xp;
+        out.daily_goal_xp = settings.daily_goal_xp;
+        out.goal_reached_now =
+            today_before < settings.daily_goal_xp && today_xp >= settings.daily_goal_xp;
+        out.streak_days = self.memory_streak(today)?;
+        Ok(out)
     }
 
     fn memory_total_xp(&self) -> rusqlite::Result<i64> {
@@ -1389,7 +2319,8 @@ impl Bible {
             let mut stmt = conn.prepare(&format!(
                 "SELECT DISTINCT v.book, v.chapter, v.verse, v.due_epoch
                  FROM progress.memory_verse v JOIN progress.memory_passage p
-                   ON p.deleted = 0 AND v.book = p.book AND {IN_PASSAGE}"
+                   ON p.deleted = 0 AND v.book = p.book AND {IN_PASSAGE}
+                 WHERE v.interval_days >= 1"
             ))?;
             let dues = stmt.query_map([], |r| r.get::<_, i64>(3))?;
             for due in dues {
@@ -1596,70 +2527,83 @@ mod tests {
     use super::*;
 
     #[test]
-    fn cue_ladder_climbs_then_graduates_and_lapses_to_heavy_cloze() {
-        let now = 1_000_000;
-        let s = VerseSrs::default();
-        let (s, due) = s.graded(Grade::Good, now, now, false);
-        assert_eq!((s.stage, s.interval_days), (STAGE_CLOZE_LIGHT, 0));
-        assert_eq!(due, now + LEARNING_DELAY_SECS);
-        let (s, _) = s.graded(Grade::Again, now, now, false);
-        assert_eq!(s.stage, STAGE_CLOZE_LIGHT, "never drops back to reading");
-        let (s, _) = s.graded(Grade::Easy, now, now, false);
-        assert_eq!(s.stage, STAGE_INITIALS);
-        let (s, _) = s.graded(Grade::Easy, now, now, false);
-        assert_eq!(s.stage, STAGE_RECALL, "Easy never skips recall");
-        assert!(!s.learnt());
-        let (s, due) = s.graded(Grade::Good, now, now, false);
-        assert_eq!(s.interval_days, 1);
-        assert_eq!(due, now + SECONDS_PER_DAY);
-        let (s, _) = s.graded(Grade::Good, now, now, false);
-        assert_eq!(s.interval_days, 3);
-        let (s, _) = s.graded(Grade::Good, now, now, false);
-        assert_eq!(s.interval_days, 8);
-        let (s, due) = s.graded(Grade::Again, now, now, false);
+    fn a_verse_is_read_recalled_and_chained_line_by_line() {
+        use Step::*;
         assert_eq!(
-            (s.stage, s.interval_days, s.lapses),
-            (STAGE_CLOZE_HEAVY, 0, 1)
+            verse_steps(2, true),
+            vec![
+                Preview,
+                Read(0),
+                Recall(0, 0),
+                Read(1),
+                Recall(1, 1),
+                Recall(0, 1)
+            ]
         );
-        assert_eq!(due, now + RELEARN_DELAY_SECS);
+        assert_eq!(verse_steps(1, false), vec![Read(0), Recall(0, 0), Chain]);
+        let three = verse_steps(3, false);
+        assert_eq!(
+            relearn_step(&three, 3),
+            7,
+            "relearning starts at the whole verse"
+        );
+        assert_eq!(three[7], Recall(0, 2));
+        assert_eq!(three.last(), Some(&Chain));
     }
 
     #[test]
-    fn early_run_through_success_keeps_the_schedule() {
+    fn early_recital_success_keeps_the_schedule() {
         let now = 1_000_000;
         let learnt = VerseSrs {
-            stage: STAGE_RECALL,
             interval_days: 10,
             ..Default::default()
         };
         let due = now + 5 * SECONDS_PER_DAY;
-        assert_eq!(learnt.graded(Grade::Good, now, due, true), (learnt, due));
-        let (hard, hard_due) = learnt.graded(Grade::Hard, now, due, true);
+        assert_eq!(learnt.reviewed(Grade::Good, now, due, true), (learnt, due));
+        let (hard, hard_due) = learnt.reviewed(Grade::Hard, now, due, true);
         assert_eq!(hard.interval_days, 10);
         assert_eq!(hard_due, now + SECONDS_PER_DAY);
-        let (again, _) = learnt.graded(Grade::Again, now, due, true);
-        assert_eq!(again.stage, STAGE_CLOZE_HEAVY);
+        let (again, _) = learnt.reviewed(Grade::Again, now, due, true);
+        assert_eq!((again.stage, again.interval_days), (RELEARN_STAGE, 0));
+        let (good, _) = learnt.reviewed(Grade::Good, now, now, false);
+        assert_eq!(good.interval_days, 25);
     }
 
     #[test]
-    fn words_drop_cantillation_and_join_punctuation() {
-        let words = memory_words("בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים ׀ הָאָֽרֶץ׃");
-        assert_eq!(words, vec!["בְּרֵאשִׁית", "בָּרָא", "אֱלֹהִים ׀", "הָאָרֶץ׃"]);
-        assert_eq!(first_letter("בְּרֵאשִׁית"), "ב");
+    fn words_keep_maqaf_groups_and_drop_cantillation() {
+        let words = memory_words("וַֽיְהִי־ עֶ֥רֶב וַֽיְהִי־ בֹ֖קֶר אֱלֹהִ֤ים ׀ לָאוֹר֙ הָאָֽרֶץ׃");
+        assert_eq!(
+            words,
+            vec!["וַיְהִי־עֶרֶב", "וַיְהִי־בֹקֶר", "אֱלֹהִים ׀", "לָאוֹר", "הָאָרֶץ׃"]
+        );
+        let glossed = verse_units("וַֽיְהִי־ עֶ֥רֶב", &["and was".into(), "evening".into()]);
+        assert_eq!(glossed.len(), 1);
+        assert_eq!(glossed[0].gloss, "and was evening");
     }
 
     #[test]
-    fn cloze_hides_a_growing_share_and_varies_with_the_seed() {
-        let count = |stage, seed| hidden_mask(9, stage, seed).iter().filter(|&&h| h).count();
-        assert_eq!(count(STAGE_READ, 1), 0);
-        assert_eq!(count(STAGE_CLOZE_LIGHT, 1), 3);
-        assert_eq!(count(STAGE_CLOZE_HEAVY, 1), 6);
-        assert_eq!(count(STAGE_INITIALS, 1), 9);
-        assert_eq!(hidden_mask(1, STAGE_CLOZE_LIGHT, 7), vec![true]);
-        let masks: std::collections::HashSet<_> = (0..20)
-            .map(|seed| hidden_mask(9, STAGE_CLOZE_LIGHT, seed))
-            .collect();
-        assert!(masks.len() > 3, "different showings blank different words");
+    fn long_verses_split_at_their_pauses() {
+        let unit = |raw: &str| Unit {
+            raw: raw.to_string(),
+            gloss: String::new(),
+        };
+        // Short verses stay whole.
+        let short: Vec<Unit> = ["א", "ב\u{0591}", "ג"].map(unit).to_vec();
+        assert!(default_line_starts(&short).is_empty());
+        // Split after the word carrying the atnach.
+        let mut words: Vec<Unit> = (0..8).map(|_| unit("מ")).collect();
+        words[3] = unit("מ\u{0591}");
+        assert_eq!(default_line_starts(&words), vec![4]);
+        // A long half splits again at the zaqef nearest its middle.
+        let mut long: Vec<Unit> = (0..20).map(|_| unit("מ")).collect();
+        long[13] = unit("מ\u{0591}");
+        long[2] = unit("מ\u{0594}");
+        long[6] = unit("מ\u{0594}");
+        assert_eq!(default_line_starts(&long), vec![7, 14]);
+        // Unaccented text (the NT) halves a long verse at its middle.
+        let plain: Vec<Unit> = (0..16).map(|_| unit("מ")).collect();
+        assert_eq!(default_line_starts(&plain), vec![8]);
+        assert_eq!(parse_line_starts("9, 3,0,3,40", 10), vec![3, 9]);
     }
 
     #[test]
@@ -1667,7 +2611,6 @@ mod tests {
         assert_eq!(level_for_xp(0), 1);
         assert_eq!(level_for_xp(99), 1);
         assert_eq!(level_for_xp(100), 2);
-        assert_eq!(level_for_xp(299), 2);
         assert_eq!(level_for_xp(300), 3);
         assert_eq!(level_threshold(5), 1000);
     }
@@ -1682,33 +2625,70 @@ mod tests {
         Some(bible)
     }
 
-    fn card_ref(item: &MemoryItem) -> (u8, u8) {
-        let MemoryItem::Card(card) = item else {
-            panic!("expected a card, got {item:?}");
-        };
-        (card.chapter, card.verse)
+    /// Answer a card with `grade` for every verse on it (`again` verses
+    /// forgotten), returning the outcome.
+    fn answer(
+        bible: &Bible,
+        card: &MemoryCard,
+        grade: Grade,
+        again: &[u8],
+        now: i64,
+    ) -> rusqlite::Result<MemoryReviewOutcome> {
+        let mut verses: Vec<MemoryVerseGrade> = Vec::new();
+        for s in &card.segments {
+            if verses
+                .last()
+                .is_some_and(|v| (v.chapter, v.verse) == (s.chapter, s.verse))
+            {
+                continue;
+            }
+            verses.push(MemoryVerseGrade {
+                chapter: s.chapter,
+                verse: s.verse,
+                grade: if again.contains(&s.verse) {
+                    Grade::Again
+                } else {
+                    grade
+                },
+            });
+        }
+        bible.submit_memory_recital(
+            &card.passage_id,
+            card.book,
+            card.purpose,
+            (card.target_verse > 0).then_some((card.target_chapter, card.target_verse)),
+            card.step,
+            grade,
+            &verses,
+            now,
+            0,
+        )
+    }
+
+    fn card(item: MemoryItem) -> MemoryCard {
+        match item {
+            MemoryItem::Card(c) => c,
+            other => panic!("expected a card, got {other:?}"),
+        }
+    }
+
+    fn verses_of(card: &MemoryCard) -> Vec<u8> {
+        let mut v: Vec<u8> = card.segments.iter().map(|s| s.verse).collect();
+        v.dedup();
+        v
     }
 
     #[test]
-    fn a_psalm_is_learnt_verse_by_verse_with_rationed_new_verses() -> rusqlite::Result<()> {
+    fn a_psalm_is_learnt_in_order_and_chained_within_its_section() -> rusqlite::Result<()> {
         let Some(bible) = test_bible() else {
             return Ok(());
         };
         let mut now = 1_700_000_000;
-        // Psalm 23 (book 27 in Tanakh order), six verses.
-        let passage = bible
+        // Psalm 23 (book 27 in Tanakh order): six verses, sections 1–4, 5–6.
+        let p = bible
             .add_memory_passage(27, 23, 0, 23, 255, "", now)?
             .expect("Psalm 23 exists");
-        assert_eq!((passage.start_verse, passage.end_verse), (1, 6));
-        let again = bible.add_memory_passage(27, 23, 1, 23, 6, "The shepherd psalm", now)?;
-        assert_eq!(
-            again.as_ref().map(|p| p.id.as_str()),
-            Some(passage.id.as_str())
-        );
-        assert_eq!(
-            again.map(|p| p.title),
-            Some("The shepherd psalm".to_string())
-        );
+        assert_eq!((p.start_verse, p.end_verse), (1, 6));
         bible.set_memory_settings(
             MemorySettings {
                 new_per_day: 2,
@@ -1716,72 +2696,66 @@ mod tests {
             },
             now,
         )?;
+        let summary = &bible.memory_passages(now)?[0];
+        let starts: Vec<u8> = summary
+            .verses
+            .iter()
+            .filter(|v| v.section_start)
+            .map(|v| v.verse)
+            .collect();
+        assert_eq!(starts, vec![1, 5]);
 
-        let first = bible.next_memory_item(&passage.id, false, now, 0)?;
-        assert_eq!(card_ref(&first), (23, 1));
-        let MemoryItem::Card(card) = &first else {
-            unreachable!()
-        };
-        assert!(card.is_new);
-        assert_eq!(card.stage, STAGE_READ);
-        assert!(card.words.iter().all(|w| !w.hidden));
-        assert!(card.words.iter().all(|w| !w.translit.is_empty()));
-        assert_eq!((card.position, card.total), (1, 6));
-
-        // Answer Good to everything offered for a while; only two verses may
-        // start today, and both must graduate.
-        let mut graduated = std::collections::HashSet::new();
-        let mut outcomes = Vec::new();
-        for _ in 0..40 {
-            now += 60;
-            match bible.next_memory_item(&passage.id, false, now, 0)? {
-                MemoryItem::Card(card) => {
-                    if card.stage == STAGE_INITIALS {
-                        assert!(card.words.iter().all(|w| w.hidden && !w.hint.is_empty()));
-                    }
-                    if card.verse == 2 && card.stage >= STAGE_CLOZE_LIGHT {
-                        assert!(!card.cue.is_empty(), "verse 2 chains from verse 1");
-                    }
-                    let outcome = bible.submit_memory_review(
-                        &passage.id,
-                        card.book,
-                        card.chapter,
-                        card.verse,
-                        Grade::Good,
-                        false,
-                        now,
-                        0,
-                    )?;
-                    if outcome.first_graduation {
-                        graduated.insert(card.verse);
-                    }
-                    outcomes.push(outcome);
-                }
+        // Walk with Good until today's two verses are learnt.
+        let mut seen = Vec::new();
+        let mut last_outcome = None;
+        loop {
+            now += 30;
+            let c = match bible.next_memory_item(&p.id, false, now, 0)? {
+                MemoryItem::Card(c) => c,
                 MemoryItem::Done { can_learn_more, .. } => {
                     assert!(can_learn_more);
                     break;
                 }
                 MemoryItem::Empty => panic!("passage has verses"),
+            };
+            assert!(seen.len() < 60, "runaway: {seen:?}");
+            if c.purpose.hidden() {
+                assert!(c.segments.iter().all(|s| !s.words.is_empty()));
             }
+            if c.purpose == MemoryPurpose::Read {
+                assert!(
+                    c.segments
+                        .iter()
+                        .flat_map(|s| &s.words)
+                        .all(|w| !w.translit.is_empty())
+                );
+            }
+            seen.push((c.purpose, c.target_verse, verses_of(&c)));
+            last_outcome = Some(answer(&bible, &c, Grade::Good, &[], now)?);
         }
-        assert_eq!(graduated, [1, 2].into_iter().collect());
-        let last = outcomes.last().expect("answers were given");
-        assert!(outcomes.iter().any(|o| o.goal_reached_now));
-        assert_eq!(last.streak_days, 1);
-        assert!(last.total_xp > 0);
+        // Verse 1 is finished before verse 2 begins, and verse 2 ends by
+        // reciting verses 1–2 together.
+        assert_eq!(seen[0], (MemoryPurpose::Preview, 1, vec![1, 2, 3, 4]));
+        let first_v2 = seen
+            .iter()
+            .position(|s| s.1 == 2)
+            .expect("verse 2 was learnt");
+        assert!(seen[first_v2..].iter().all(|s| s.1 == 2));
+        assert_eq!(seen.last(), Some(&(MemoryPurpose::Chain, 2, vec![1, 2])));
+        assert!(seen.iter().all(|s| s.0 != MemoryPurpose::Review));
+        let outcome = last_outcome.expect("answers given");
+        assert!(outcome.first_graduation);
+        assert_eq!(outcome.streak_days, 1);
 
-        // Asking for more starts verse 3 today regardless of the ration.
-        let MemoryItem::Card(extra) = bible.next_memory_item(&passage.id, true, now, 0)? else {
-            panic!("an extra verse was asked for");
-        };
-        assert_eq!(extra.verse, 3);
+        // A verse more today, on request: it chains 1–3.
+        let c = card(bible.next_memory_item(&p.id, true, now, 0)?);
+        assert_eq!(
+            (c.purpose, c.target_verse, c.is_new),
+            (MemoryPurpose::Read, 3, true)
+        );
 
         let stats = bible.memory_stats(now, 0, 7, 7)?;
         assert_eq!(stats.verses_learnt, 2);
-        assert_eq!(stats.verses_total, 6);
-        assert_eq!(stats.history.len(), 7);
-        assert_eq!(stats.history.last().map(|d| d.learnt_total), Some(2));
-        assert_eq!(stats.forecast.iter().sum::<i64>(), 2);
         assert_eq!(stats.forecast[1], 2, "both come back tomorrow");
         assert!(
             stats
@@ -1789,19 +2763,119 @@ mod tests {
                 .iter()
                 .any(|a| a.key == "verse_1" && a.earned)
         );
-        assert_eq!(stats.streak_days, 1);
 
-        let summary = &bible.memory_passages(now)?[0];
-        assert_eq!(summary.learnt, 2);
+        // Tomorrow the section is reviewed whole. Forgetting verse 2 sends
+        // it back to learning — from recalling it whole, then the chain.
+        now += SECONDS_PER_DAY + 60;
+        let review = card(bible.next_memory_item(&p.id, false, now, 0)?);
+        assert_eq!(review.purpose, MemoryPurpose::Review);
+        assert_eq!(verses_of(&review), vec![1, 2]);
+        assert_eq!(review.cue, "");
+        let outcome = answer(&bible, &review, Grade::Good, &[2], now)?;
+        assert_eq!(outcome.relearn, 1);
+        now += 30;
+        let relearn = card(bible.next_memory_item(&p.id, false, now, 0)?);
         assert_eq!(
-            summary
-                .verses
-                .iter()
-                .map(|v| v.strength)
-                .collect::<Vec<_>>(),
-            vec![3, 3, 0, 0, 0, 0]
+            (relearn.purpose, relearn.target_verse),
+            (MemoryPurpose::Recall, 2)
         );
-        assert!(summary.mastery_pct > 0);
+        let lines = relearn.segments[0].line_count;
+        assert_eq!(relearn.segments.len(), lines, "the whole verse");
+        assert!(relearn.cue.starts_with('…'), "cued by the end of verse 1");
+        answer(&bible, &relearn, Grade::Good, &[], now)?;
+        now += 30;
+        let chain = card(bible.next_memory_item(&p.id, false, now, 0)?);
+        assert_eq!(
+            (chain.purpose, verses_of(&chain)),
+            (MemoryPurpose::Chain, vec![1, 2])
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn a_completed_section_brings_the_passage_so_far() -> rusqlite::Result<()> {
+        let Some(bible) = test_bible() else {
+            return Ok(());
+        };
+        let mut now = 1_700_000_000;
+        let p = bible
+            .add_memory_passage(27, 23, 1, 23, 6, "", now)?
+            .expect("Psalm 23 exists");
+        // Two sections of three verses.
+        bible.set_memory_section_start(27, 23, 4, Some(true), now)?;
+        bible.set_memory_section_start(27, 23, 5, Some(false), now)?;
+        let layout = bible.memory_layout(&p.id)?;
+        assert_eq!(
+            layout
+                .iter()
+                .filter(|v| v.section_start)
+                .map(|v| v.verse)
+                .collect::<Vec<_>>(),
+            vec![1, 4]
+        );
+        let mut runs = Vec::new();
+        for _ in 0..400 {
+            now += 30;
+            match bible.next_memory_item(&p.id, true, now, 0)? {
+                MemoryItem::Card(c) => {
+                    if c.purpose == MemoryPurpose::Run {
+                        runs.push(verses_of(&c));
+                    }
+                    answer(&bible, &c, Grade::Good, &[], now)?;
+                }
+                MemoryItem::Done { .. } => break,
+                MemoryItem::Empty => panic!("passage has verses"),
+            }
+            if !runs.is_empty() {
+                break;
+            }
+        }
+        assert_eq!(runs, vec![vec![1, 2, 3, 4, 5, 6]]);
+        let stats = bible.memory_stats(now, 0, 7, 7)?;
+        assert_eq!(stats.passages_completed, 1);
+        assert!(
+            stats
+                .achievements
+                .iter()
+                .any(|a| a.key == "passage_1" && a.earned)
+        );
+        // The run is spaced out once recited.
+        let next = bible.next_memory_item(&p.id, false, now + 60, 0)?;
+        assert!(matches!(next, MemoryItem::Done { .. }), "{next:?}");
+        Ok(())
+    }
+
+    #[test]
+    fn the_learner_shapes_lines_and_can_restore_the_defaults() -> rusqlite::Result<()> {
+        let Some(bible) = test_bible() else {
+            return Ok(());
+        };
+        let now = 1_700_000_000;
+        let p = bible
+            .add_memory_passage(1, 1, 1, 1, 5, "", now)?
+            .expect("Genesis 1");
+        let before = bible.memory_layout(&p.id)?;
+        // Genesis 1:1 splits at its atnach, after "God".
+        assert_eq!(before[0].words.len(), 7);
+        assert_eq!(before[0].line_starts, vec![3]);
+        assert!(!before[0].custom_lines);
+
+        bible.set_memory_line_starts(1, 1, 1, Some(&[2, 5]), now)?;
+        bible.set_memory_section_start(1, 1, 3, Some(true), now)?;
+        let shaped = bible.memory_layout(&p.id)?;
+        assert_eq!(shaped[0].line_starts, vec![2, 5]);
+        assert!(shaped[0].custom_lines && shaped[2].section_start);
+        // The new shape drives the steps: three lines to read and recall.
+        let c = card(bible.next_memory_item(&p.id, false, now, 0)?);
+        assert_eq!(c.purpose, MemoryPurpose::Preview);
+        assert_eq!(verses_of(&c), vec![1, 2], "the section is now verses 1–2");
+        answer(&bible, &c, Grade::Good, &[], now)?;
+        let c = card(bible.next_memory_item(&p.id, false, now + 1, 0)?);
+        assert_eq!(c.title, "1:1 · line 1 of 3");
+        assert_eq!(c.segments[0].words.len(), 2);
+
+        bible.reset_memory_layout(&p.id, now + 2)?;
+        assert_eq!(bible.memory_layout(&p.id)?, before);
         Ok(())
     }
 
@@ -1811,47 +2885,44 @@ mod tests {
             return Ok(());
         };
         let mut now = 1_700_000_000;
-        // A one-verse passage: Genesis 1:1.
-        let passage = bible
+        let p = bible
             .add_memory_passage(1, 1, 1, 1, 1, "", now)?
-            .expect("Genesis 1:1 exists");
+            .expect("Genesis 1:1");
         let mut completions = 0;
-        for _ in 0..6 {
-            now += 60;
-            let outcome =
-                bible.submit_memory_review(&passage.id, 1, 1, 1, Grade::Good, false, now, 0)?;
+        for _ in 0..20 {
+            now += 30;
+            let MemoryItem::Card(c) = bible.next_memory_item(&p.id, false, now, 0)? else {
+                break;
+            };
+            let outcome = answer(&bible, &c, Grade::Good, &[], now)?;
             completions += outcome.completed_passages.len();
             if outcome.first_graduation {
                 assert!(outcome.xp >= PASSAGE_BONUS_XP + GRADUATION_BONUS_XP);
             }
         }
         assert_eq!(completions, 1);
-        // Forget it and learn it again: no second bonus.
-        now += SECONDS_PER_DAY * 30;
-        bible.submit_memory_review(&passage.id, 1, 1, 1, Grade::Again, false, now, 0)?;
-        for _ in 0..4 {
-            now += 60;
-            let outcome =
-                bible.submit_memory_review(&passage.id, 1, 1, 1, Grade::Good, false, now, 0)?;
+        // A stale answer (the same step twice) changes nothing.
+        now += 30 * SECONDS_PER_DAY;
+        let review = card(bible.next_memory_item(&p.id, false, now, 0)?);
+        answer(&bible, &review, Grade::Good, &[1], now)?;
+        for _ in 0..6 {
+            now += 30;
+            let MemoryItem::Card(c) = bible.next_memory_item(&p.id, false, now, 0)? else {
+                break;
+            };
+            let outcome = answer(&bible, &c, Grade::Good, &[], now)?;
             assert!(outcome.completed_passages.is_empty());
             assert!(!outcome.first_graduation);
+            let again = answer(&bible, &c, Grade::Good, &[], now)?;
+            assert_eq!(again.xp, 0, "a stale step is ignored");
         }
-        let stats = bible.memory_stats(now, 0, 40, 7)?;
-        assert_eq!(stats.passages_completed, 1);
-        assert!(
-            stats
-                .achievements
-                .iter()
-                .any(|a| a.key == "passage_1" && a.earned)
-        );
-
         // Deleting keeps the verse's progress for when it is added back.
-        assert!(bible.delete_memory_passage(&passage.id, now)?);
+        assert!(bible.delete_memory_passage(&p.id, now)?);
         assert!(bible.memory_passages(now)?.is_empty());
         let back = bible
             .add_memory_passage(1, 1, 1, 1, 1, "", now)?
             .expect("exists");
-        assert_ne!(back.id, passage.id);
+        assert_ne!(back.id, p.id);
         assert_eq!(bible.memory_passages(now)?[0].learnt, 1);
         Ok(())
     }
