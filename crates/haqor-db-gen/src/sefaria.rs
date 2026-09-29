@@ -202,6 +202,62 @@ fn headwords(entry: &Map<String, Value>) -> impl Iterator<Item = &str> {
     )
 }
 
+/// The consonants of each spelling an entry can be found by: the headword's
+/// and each alternative's. Jastrow abbreviates an alternative that differs
+/// only at the start, the rest to be read from the headword — רִבּוֹא lists
+/// `רִיבּ׳` for רִיבּוֹא. Taken literally that files "myriad" under ריב, so
+/// such an alternative is completed from the headword, and dropped when its
+/// letters do not line up with the headword's start.
+fn form_spellings(entry: &Map<String, Value>) -> Vec<String> {
+    let head = consonants(str_field(entry, "headword"));
+    let mut forms = vec![head.clone()];
+    for alternative in headwords(entry).skip(1) {
+        let form = if alternative.trim_end().ends_with(['\u{05F3}', '\'']) {
+            complete_abbreviation(&consonants(alternative), &head)
+        } else {
+            Some(consonants(alternative))
+        };
+        forms.extend(form);
+    }
+    forms.retain(|form| !form.is_empty());
+    forms
+}
+
+/// An abbreviated spelling completed from the headword it abbreviates, by
+/// the start of the headword it repeats. That is the longest start it spells
+/// with matres added (ריב repeats רב of רבוא → ריבוא; ענוו repeats ענו of
+/// ענותנ → ענוותנ), else the shortest whose letters differ from it in matres
+/// alone (קוט for קיט of קיטרא). `None` when no start lines up.
+fn complete_abbreviation(abbreviation: &str, head: &str) -> Option<String> {
+    let mater = |c: char| matches!(c, 'ו' | 'י');
+    let skeleton = |s: &str| s.replace(['ו', 'י'], "");
+    if skeleton(abbreviation).is_empty() {
+        return None;
+    }
+    // Whether `start` is `abbreviation` with some matres left out.
+    let repeats = |start: &str| {
+        let mut letters = abbreviation.chars();
+        start
+            .chars()
+            .all(|c| letters.by_ref().find(|&a| a == c || !mater(a)) == Some(c))
+            && letters.all(mater)
+    };
+    let starts: Vec<usize> = head
+        .char_indices()
+        .map(|(at, c)| at + c.len_utf8())
+        .collect();
+    starts
+        .iter()
+        .rev()
+        .find(|&&end| repeats(&head[..end]))
+        .or_else(|| {
+            starts
+                .iter()
+                .find(|&&end| skeleton(&head[..end]) == skeleton(abbreviation))
+        })
+        .map(|&end| format!("{abbreviation}{}", &head[end..]))
+}
+
 fn str_field<'a>(entry: &'a Map<String, Value>, key: &str) -> &'a str {
     entry.get(key).and_then(Value::as_str).unwrap_or("")
 }
@@ -268,7 +324,7 @@ pub(crate) fn load_sefaria(db: &mut Connection, dir: &Path) -> Result<usize> {
                     Some(article.gloss.as_str()).filter(|g| !g.is_empty()),
                     article.content.to_string(),
                 ))?;
-                for form in headwords(entry).map(consonants).filter(|c| !c.is_empty()) {
+                for form in form_spellings(entry) {
                     form_stmt.execute((source.id, key, form))?;
                 }
             }
@@ -767,6 +823,34 @@ mod tests {
 
     fn klein_links(list: &[Map<String, Value>]) -> Links<'_> {
         Links::new(&SOURCES[0], list)
+    }
+
+    #[test]
+    fn an_abbreviated_alternative_is_completed_from_its_headword() {
+        // רִבּוֹא "myriad" lists רִיבּ׳ and רִי׳: both are רִיבּוֹא, never ריב.
+        assert_eq!(
+            complete_abbreviation("ריב", "רבוא").as_deref(),
+            Some("ריבוא")
+        );
+        assert_eq!(
+            complete_abbreviation("רי", "רבוא").as_deref(),
+            Some("ריבוא")
+        );
+        // The abbreviation's own matres are not read twice.
+        assert_eq!(
+            complete_abbreviation("ענוו", "ענותנ").as_deref(),
+            Some("ענוותנ")
+        );
+        // A mater the headword has and the abbreviation swaps.
+        assert_eq!(
+            complete_abbreviation("קוט", "קיטרא").as_deref(),
+            Some("קוטרא")
+        );
+        assert_eq!(complete_abbreviation("שמ", "רבוא"), None);
+
+        let entry = json!({"headword": "רִבּוֹא", "alt_headwords": ["רִיבּ׳", "רבו"]});
+        let forms = form_spellings(entry.as_object().unwrap());
+        assert_eq!(forms, ["רבוא", "ריבוא", "רבו"]);
     }
 
     #[test]
