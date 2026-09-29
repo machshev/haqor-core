@@ -153,6 +153,8 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     ensure_issue_reports(db, "sync")?;
     ensure_study_state(db, "progress")?;
     ensure_study_state(db, "sync")?;
+    crate::memorise::ensure_memory_tables(db, "progress")?;
+    crate::memorise::ensure_memory_tables(db, "sync")?;
     db.execute_batch("BEGIN IMMEDIATE")?;
     let result = (|| {
         // `updated_epoch` is the normal conflict resolution key. The `reps`
@@ -294,6 +296,7 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
                 updated_epoch=excluded.updated_epoch
              WHERE excluded.updated_epoch > progress.study_state.updated_epoch;",
         )?;
+        crate::memorise::merge_memory(db)?;
         Ok(())
     })();
     match result {
@@ -937,6 +940,61 @@ mod tests {
             (document.to_string(), "new".to_string(), 200)
         );
 
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn memorisation_progress_merges_by_recency_and_unions_answers() -> anyhow::Result<()> {
+        let canonical = temp_path("canonical-memory.db");
+        let incoming = temp_path("incoming-memory.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        // The same passage on both devices, deleted on the newer one; the
+        // same verse, further along on the newer one; one answer each.
+        for (path, deleted, stage, updated) in [
+            (&canonical, 0_i64, 1_i64, 100_i64),
+            (&incoming, 1_i64, 4_i64, 200_i64),
+        ] {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            db.execute(
+                "INSERT INTO progress.memory_passage(id, book, start_chapter, start_verse,
+                     end_chapter, end_verse, title, created_epoch, updated_epoch, deleted)
+                 VALUES ('p1', 27, 23, 1, 23, 6, '', 50, ?1, ?2)",
+                params![updated, deleted],
+            )?;
+            db.execute(
+                "INSERT INTO progress.memory_verse(book, chapter, verse, stage, ease,
+                     interval_days, due_epoch, reps, lapses, introduced_epoch,
+                     last_review_epoch, last_grade, updated_epoch)
+                 VALUES (27, 23, 1, ?1, 2.5, 0, ?2, 0, 0, 50, ?2, 2, ?2)",
+                params![stage, updated],
+            )?;
+            db.execute(
+                "INSERT INTO progress.memory_review(epoch, day, book, chapter, verse,
+                     stage, grade, xp, graduated, passage_id)
+                 VALUES (?1, 0, 27, 23, 1, ?2, 2, 10, 0, 'p1')",
+                params![updated, stage],
+            )?;
+        }
+        merge_progress_files(&canonical, &incoming)?;
+        // Merging the same snapshot twice must not duplicate answers.
+        merge_progress_files(&canonical, &incoming)?;
+        let db = Connection::open(&canonical)?;
+        let one = |sql: &str| db.query_row(sql, [], |r| r.get::<_, i64>(0));
+        assert_eq!(
+            one("SELECT deleted FROM memory_passage WHERE id = 'p1'")?,
+            1
+        );
+        assert_eq!(one("SELECT stage FROM memory_verse")?, 4);
+        assert_eq!(one("SELECT COUNT(*) FROM memory_review")?, 2);
+        assert_eq!(one("SELECT SUM(xp) FROM memory_review")?, 20);
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
         Ok(())

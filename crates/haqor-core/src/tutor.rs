@@ -1012,6 +1012,7 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             updated_epoch       INTEGER NOT NULL
          );",
     )?;
+    crate::memorise::init_memory_schema(db)?;
 
     let issue_reports_has_deleted = {
         let mut stmt = db.prepare("PRAGMA progress.table_info(issue_reports)")?;

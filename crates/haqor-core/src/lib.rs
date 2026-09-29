@@ -17,6 +17,9 @@ pub mod grammar;
 /// Hand-maintained lexicon and learner-gloss overlays.
 pub mod lexicon_overlay;
 
+/// Learning passages by heart, a verse at a time, with spaced repetition.
+pub mod memorise;
+
 /// Pronominal-ending inventory and stem/suffix splitting.
 pub mod pronoun_suffix;
 
