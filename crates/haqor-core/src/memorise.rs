@@ -334,6 +334,10 @@ pub struct MemoryLayoutVerse {
     /// and the section is closed, by the start of the next one or by the end
     /// of the passage.
     pub ready: bool,
+    /// This is the next verse to learn and it waits on its section being
+    /// shaped, so practice cannot go on until it is (as
+    /// [`MemoryPassageSummary::needs_shaping`]).
+    pub needs_shaping: bool,
 }
 
 /// A day of memorisation activity, for the dashboard's graphs.
@@ -1165,8 +1169,13 @@ impl Bible {
         };
         let plan = self.memory_plan(&p)?;
         let mut out = Vec::with_capacity(plan.verses.len());
+        let mut next_found = false;
         for (i, v) in plan.verses.iter().enumerate() {
             let words = self.memory_card_words(p.book, v)?;
+            // As in the summary: the first verse not learnt is the next one.
+            let state = self.memory_verse_srs(p.book, v.chapter, v.verse)?;
+            let is_next = !next_found && !state.is_some_and(|(s, _)| s.learnt());
+            next_found |= is_next;
             out.push(MemoryLayoutVerse {
                 chapter: v.chapter,
                 verse: v.verse,
@@ -1176,6 +1185,7 @@ impl Bible {
                 section_start: v.section_start,
                 shaped: v.shaped,
                 ready: plan.ready(i),
+                needs_shaping: is_next && state.is_none() && !plan.ready(i),
             });
         }
         Ok(out)
@@ -2741,7 +2751,10 @@ mod tests {
         let p = bible
             .add_memory_passage(27, 23, 0, 23, 255, "", now)?
             .expect("Psalm 23 exists");
+        // Only the first verse waits on its shape.
         let layout = bible.memory_layout(&p.id)?;
+        let waiting: Vec<bool> = layout.iter().map(|v| v.needs_shaping).collect();
+        assert_eq!(waiting, vec![true, false, false, false, false, false]);
 
         let put = |verse: u8, stage: u8, interval_days: i64| {
             bible.conn().execute(
@@ -2767,6 +2780,9 @@ mod tests {
         put(1, 3, 0)?;
         put(2, 3, 0)?;
         put(3, 5, 4)?;
+        // A begun verse is not waiting on its shape, and the next is.
+        let layout = bible.memory_layout(&p.id)?;
+        assert!(layout.iter().all(|v| !v.needs_shaping || v.verse == 4));
 
         // Saving the same shape leaves the stage alone; a new line count
         // restarts it.
