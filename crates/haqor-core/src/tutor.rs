@@ -4956,13 +4956,17 @@ impl Bible {
     /// stamp in `meta`) alone: that cache is derived purely from `hebrew.db`,
     /// not learner progress, and clearing it would force the ~50k-surface
     /// `ensure_surface_meta` rebuild to redo its one-time scan on every reset.
+    ///
+    /// Memorisation's `memory.*` meta (its step-numbering stamp) is not tutor
+    /// state and is kept.
     pub fn reset_tutor(&self) -> rusqlite::Result<()> {
         self.conn().execute_batch(
             "DELETE FROM progress.glyph_srs;
              DELETE FROM progress.word_srs;
              DELETE FROM progress.surface_progress;
              DELETE FROM progress.verse_progress;
-             DELETE FROM progress.meta WHERE key != 'surface_meta_v';
+             DELETE FROM progress.meta
+                WHERE key != 'surface_meta_v' AND key NOT LIKE 'memory.%';
              DELETE FROM progress.form_srs;
              DELETE FROM progress.suffix_srs;
              DELETE FROM progress.reviews;
@@ -5930,6 +5934,42 @@ mod tests {
             .unwrap();
         init_progress_schema(bible.conn()).unwrap();
         Some(bible)
+    }
+
+    /// Resetting the tutor must not touch memorisation: its `memory.steps`
+    /// stamp lives in the same `meta` table, and losing it made the next
+    /// launch restart every part-way verse.
+    #[test]
+    fn reset_keeps_memory_verses_across_a_reopen() -> rusqlite::Result<()> {
+        let data = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("haqor.db").exists() {
+            return Ok(());
+        }
+        let path =
+            std::env::temp_dir().join(format!("haqor-reset-memory-{}.db", std::process::id()));
+        let _ = std::fs::remove_file(&path);
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible.attach_progress(&path)?;
+        bible.conn().execute_batch(
+            "INSERT INTO progress.memory_verse(book, chapter, verse, stage, ease,
+                 interval_days, due_epoch, reps, lapses, introduced_epoch,
+                 last_review_epoch, last_grade, updated_epoch)
+             VALUES (1, 1, 1, 3, 2.5, 0, 0, 0, 0, 0, 0, 2, 0);",
+        )?;
+        bible.reset_tutor()?;
+        drop(bible);
+
+        let bible = Bible::open(&data).expect("open data dbs");
+        bible.attach_progress(&path)?;
+        let stage: i64 = bible.conn().query_row(
+            "SELECT stage FROM progress.memory_verse WHERE verse = 1",
+            [],
+            |r| r.get(0),
+        )?;
+        assert_eq!(stage, 3);
+        drop(bible);
+        let _ = std::fs::remove_file(&path);
+        Ok(())
     }
 
     #[test]
