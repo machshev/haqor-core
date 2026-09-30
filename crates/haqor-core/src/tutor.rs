@@ -4957,9 +4957,14 @@ impl Bible {
     /// not learner progress, and clearing it would force the ~50k-surface
     /// `ensure_surface_meta` rebuild to redo its one-time scan on every reset.
     ///
-    /// Memorisation's `memory.*` meta (its step-numbering stamp) is not tutor
-    /// state and is kept.
-    pub fn reset_tutor(&self) -> rusqlite::Result<()> {
+    /// The wipe is stamped as `tutor.reset_epoch` so a sync merge can tell it
+    /// from a device that never had the progress: tutor rows last updated
+    /// before it are dropped from incoming snapshots rather than re-inserted
+    /// (see [`crate::progress_sync`]). Memorisation's `memory.*` meta (its
+    /// step-numbering stamp) is not tutor state and is kept.
+    pub fn reset_tutor(&self, now: i64) -> rusqlite::Result<()> {
+        // Never step the stamp back, even if the clock has.
+        let epoch = now.max(crate::progress_sync::reset_epoch(self.conn(), "progress")?);
         self.conn().execute_batch(
             "DELETE FROM progress.glyph_srs;
              DELETE FROM progress.word_srs;
@@ -4973,7 +4978,12 @@ impl Bible {
              DELETE FROM progress.marks_seen;
              DELETE FROM progress.concepts_seen;
              DELETE FROM progress.concepts_unlocked;",
-        )
+        )?;
+        self.conn().execute(
+            "INSERT INTO progress.meta(key, value) VALUES (?1, ?2)",
+            params![crate::progress_sync::TUTOR_RESET_KEY, epoch.to_string()],
+        )?;
+        Ok(())
     }
 }
 
@@ -5956,7 +5966,7 @@ mod tests {
                  last_review_epoch, last_grade, updated_epoch)
              VALUES (1, 1, 1, 3, 2.5, 0, 0, 0, 0, 0, 0, 2, 0);",
         )?;
-        bible.reset_tutor()?;
+        bible.reset_tutor(1000)?;
         drop(bible);
 
         let bible = Bible::open(&data).expect("open data dbs");
@@ -6006,7 +6016,7 @@ mod tests {
         bible.set_tutor_settings(&s)?;
         assert_eq!(bible.tutor_settings()?, s);
         // A reset clears meta, restoring defaults.
-        bible.reset_tutor()?;
+        bible.reset_tutor(0)?;
         assert_eq!(bible.tutor_settings()?, TutorSettings::default());
         Ok(())
     }
@@ -6352,7 +6362,7 @@ mod tests {
         // How many brand-new letters are introduced before the first word's
         // meaning is reached, under a given letters↔words ratio.
         let glyphs_before_first_word = |ratio: u8| -> rusqlite::Result<i64> {
-            bible.reset_tutor()?;
+            bible.reset_tutor(0)?;
             bible.set_tutor_settings(&TutorSettings {
                 letters_ratio: ratio,
                 ..Default::default()
@@ -6411,7 +6421,7 @@ mod tests {
         // known. Words-forward must hold back letters; letters-forward must
         // press on with them.
         let letters_at_five_words = |ratio: u8| -> rusqlite::Result<i64> {
-            bible.reset_tutor()?;
+            bible.reset_tutor(0)?;
             bible.set_tutor_settings(&TutorSettings {
                 letters_ratio: ratio,
                 ..Default::default()

@@ -17,6 +17,66 @@ use crate::tutor::{GlossOverride, IssueReport, LexiconEntryOverride, init_progre
 /// from becoming an opaque "file is not a database" error later on.
 pub const SQLITE_HEADER: &[u8] = b"SQLite format 3\0";
 
+/// `meta` key holding the epoch of the last tutor reset (see
+/// [`crate::tutor::Bible::reset_tutor`]). A merge drops tutor rows last
+/// touched before it, so a reset is not undone by a device (or the server)
+/// that still holds the old progress.
+pub(crate) const TUTOR_RESET_KEY: &str = "tutor.reset_epoch";
+
+/// The reset epoch recorded in `schema`'s `meta`; 0 if it was never reset.
+pub(crate) fn reset_epoch(db: &Connection, schema: &str) -> rusqlite::Result<i64> {
+    use rusqlite::OptionalExtension;
+    Ok(db
+        .query_row(
+            &format!("SELECT CAST(value AS INTEGER) FROM {schema}.meta WHERE key = ?1"),
+            [TUTOR_RESET_KEY],
+            |row| row.get(0),
+        )
+        .optional()?
+        .unwrap_or(0))
+}
+
+/// Apply the newest tutor reset to both sides of a merge: rows last updated
+/// before it are removed, and the running `intro.*` counters of a side that
+/// predates it are dropped along with them (they cannot be dated).
+fn apply_tutor_reset(db: &Connection) -> rusqlite::Result<()> {
+    let local = reset_epoch(db, "progress")?;
+    let remote = reset_epoch(db, "sync")?;
+    let reset = local.max(remote);
+    if reset == 0 {
+        return Ok(());
+    }
+    for schema in ["progress", "sync"] {
+        db.execute_batch(&format!(
+            "DELETE FROM {schema}.glyph_srs WHERE updated_epoch < {reset};
+             DELETE FROM {schema}.word_srs WHERE updated_epoch < {reset};
+             DELETE FROM {schema}.form_srs WHERE updated_epoch < {reset};
+             DELETE FROM {schema}.suffix_srs WHERE updated_epoch < {reset};
+             DELETE FROM {schema}.concepts_seen WHERE introduced_epoch < {reset};
+             DELETE FROM {schema}.concepts_unlocked WHERE unlocked_epoch < {reset};
+             DELETE FROM {schema}.marks_seen WHERE introduced_epoch < {reset};
+             DELETE FROM {schema}.reviews WHERE epoch < {reset};"
+        ))?;
+    }
+    for (schema, side) in [("progress", local), ("sync", remote)] {
+        if side < reset {
+            db.execute_batch(&format!(
+                "DELETE FROM {schema}.meta WHERE key IN ('intro.letters', 'intro.words')"
+            ))?;
+        }
+    }
+    if local < reset {
+        // The verse readability cache was built from the rows just dropped.
+        db.execute_batch("DELETE FROM progress.meta WHERE key = 'readability_progress_v'")?;
+    }
+    db.execute(
+        "INSERT INTO progress.meta(key, value) VALUES (?1, ?2)
+         ON CONFLICT(key) DO UPDATE SET value = excluded.value",
+        rusqlite::params![TUTOR_RESET_KEY, reset.to_string()],
+    )?;
+    Ok(())
+}
+
 /// Write a transactionally consistent copy of the attached `progress` schema
 /// to `destination`. `destination` must not already exist.
 pub fn export_progress_snapshot(db: &Connection, destination: &Path) -> rusqlite::Result<()> {
@@ -157,6 +217,7 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     crate::memorise::ensure_memory_tables(db, "sync")?;
     db.execute_batch("BEGIN IMMEDIATE")?;
     let result = (|| {
+        apply_tutor_reset(db)?;
         // `updated_epoch` is the normal conflict resolution key. The `reps`
         // fallback keeps older snapshots useful, even though they predate the
         // timestamp column.
@@ -1015,6 +1076,137 @@ mod tests {
         );
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    /// A `Bible` over a file-backed `progress.db` at `path`, or `None` when the
+    /// corpus data is not checked out.
+    fn open_bible_with_progress(path: &Path) -> Option<crate::bible::Bible> {
+        let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
+        if !data.join("haqor.db").exists() {
+            return None;
+        }
+        let bible = crate::bible::Bible::open(&data).expect("open data dbs");
+        bible.attach_progress(path).expect("attach progress");
+        Some(bible)
+    }
+
+    /// One word card, one concept and one review, all last touched at `epoch`.
+    fn add_tutor_rows(db: &Connection, epoch: i64, surface: &str) -> rusqlite::Result<()> {
+        db.execute(
+            "INSERT INTO progress.word_srs(surface, surface_id, ease, interval_days,
+                due_epoch, reps, lapses, introduced_epoch, last_grade, updated_epoch)
+             VALUES (?1, 7, 2.5, 1, 1, 3, 0, 1, 2, ?2)",
+            params![surface, epoch],
+        )?;
+        db.execute(
+            "INSERT INTO progress.concepts_seen(concept, introduced_epoch) VALUES (?1, ?2)",
+            params![surface, epoch],
+        )?;
+        db.execute(
+            "INSERT INTO progress.reviews(epoch, day, track, grade) VALUES (?1, 0, 'word', 2)",
+            [epoch],
+        )?;
+        db.execute(
+            "INSERT INTO progress.meta(key, value) VALUES ('intro.words', '5')
+             ON CONFLICT(key) DO UPDATE SET value = '5'",
+            [],
+        )?;
+        Ok(())
+    }
+
+    fn tutor_row_counts(db: &Connection) -> rusqlite::Result<(i64, i64, i64, i64)> {
+        let count = |sql: &str| db.query_row(sql, [], |r| r.get::<_, i64>(0));
+        Ok((
+            count("SELECT COUNT(*) FROM progress.word_srs")?,
+            count("SELECT COUNT(*) FROM progress.concepts_seen")?,
+            count("SELECT COUNT(*) FROM progress.reviews")?,
+            count("SELECT COUNT(*) FROM progress.meta WHERE key = 'intro.words'")?,
+        ))
+    }
+
+    #[test]
+    fn tutor_reset_is_not_undone_by_a_stale_snapshot() -> anyhow::Result<()> {
+        let progress = temp_path("reset-local.db");
+        let stale = temp_path("reset-stale.db");
+        let _ = fs::remove_file(&progress);
+        let _ = fs::remove_file(&stale);
+        let Some(bible) = open_bible_with_progress(&progress) else {
+            return Ok(());
+        };
+        add_tutor_rows(bible.conn(), 100, "old")?;
+        // Another device (or the server) still holds this progress.
+        export_progress_snapshot(bible.conn(), &stale)?;
+        bible.reset_tutor(1000)?;
+        assert_eq!(tutor_row_counts(bible.conn())?, (0, 0, 0, 0));
+
+        merge_progress_snapshot(bible.conn(), &stale)?;
+        assert_eq!(tutor_row_counts(bible.conn())?, (0, 0, 0, 0));
+        assert_eq!(reset_epoch(bible.conn(), "progress")?, 1000);
+
+        // Work done after the reset survives the same merge, before or after.
+        add_tutor_rows(bible.conn(), 1001, "new")?;
+        let _ = fs::remove_file(&stale);
+        export_progress_snapshot(bible.conn(), &stale)?;
+        merge_progress_snapshot(bible.conn(), &stale)?;
+        assert_eq!(tutor_row_counts(bible.conn())?, (1, 1, 1, 1));
+
+        drop(bible);
+        let _ = fs::remove_file(&progress);
+        let _ = fs::remove_file(&stale);
+        Ok(())
+    }
+
+    #[test]
+    fn tutor_reset_reaches_the_server_and_other_devices() -> anyhow::Result<()> {
+        let phone = temp_path("reset-phone.db");
+        let laptop = temp_path("reset-laptop.db");
+        let server = temp_path("reset-server.db");
+        let upload = temp_path("reset-upload.db");
+        let reply = temp_path("reset-reply.db");
+        for path in [&phone, &laptop, &server, &upload, &reply] {
+            let _ = fs::remove_file(path);
+        }
+        let Some(phone_bible) = open_bible_with_progress(&phone) else {
+            return Ok(());
+        };
+        let laptop_bible = open_bible_with_progress(&laptop).expect("data present");
+        for bible in [&phone_bible, &laptop_bible] {
+            add_tutor_rows(bible.conn(), 100, "old")?;
+        }
+        // Both devices synced the old progress to the server.
+        export_progress_snapshot(phone_bible.conn(), &upload)?;
+        merge_progress_files(&server, &upload)?;
+        let server_rows = |db: &Connection| {
+            db.query_row("SELECT COUNT(*) FROM word_srs", [], |r| r.get::<_, i64>(0))
+        };
+        assert_eq!(server_rows(&Connection::open(&server)?)?, 1);
+
+        // The phone resets and syncs: the server adopts the reset.
+        phone_bible.reset_tutor(1000)?;
+        let _ = fs::remove_file(&upload);
+        export_progress_snapshot(phone_bible.conn(), &upload)?;
+        merge_progress_files(&server, &upload)?;
+        let canonical = Connection::open(&server)?;
+        assert_eq!(server_rows(&canonical)?, 0);
+        drop(canonical);
+
+        // The laptop never reset. Its stale upload cannot resurrect anything...
+        let _ = fs::remove_file(&upload);
+        export_progress_snapshot(laptop_bible.conn(), &upload)?;
+        merge_progress_files(&server, &upload)?;
+        assert_eq!(server_rows(&Connection::open(&server)?)?, 0);
+
+        // ...and the server's reply makes it drop the old progress too.
+        fs::copy(&server, &reply)?;
+        merge_progress_snapshot(laptop_bible.conn(), &reply)?;
+        assert_eq!(tutor_row_counts(laptop_bible.conn())?, (0, 0, 0, 0));
+        assert_eq!(reset_epoch(laptop_bible.conn(), "progress")?, 1000);
+
+        drop((phone_bible, laptop_bible));
+        for path in [&phone, &laptop, &server, &upload, &reply] {
+            let _ = fs::remove_file(path);
+        }
         Ok(())
     }
 }
