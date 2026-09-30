@@ -1204,6 +1204,7 @@ impl Bible {
                 .collect::<Vec<_>>()
                 .join(",")
         });
+        let before = self.stored_line_count(book, chapter, verse)?;
         self.conn().execute(
             "INSERT INTO progress.memory_layout(
                  book, chapter, verse, line_starts, section_start, updated_epoch)
@@ -1213,6 +1214,47 @@ impl Bible {
                 updated_epoch = MAX(progress.memory_layout.updated_epoch + 1,
                                     excluded.updated_epoch)",
             params![book, chapter, verse, stored, now],
+        )?;
+        if self.stored_line_count(book, chapter, verse)? != before {
+            self.restart_memory_steps(book, chapter, verse, now)?;
+        }
+        Ok(())
+    }
+
+    /// How many lines a verse's stored layout gives it.
+    fn stored_line_count(&self, book: u8, chapter: u8, verse: u8) -> rusqlite::Result<usize> {
+        let stored: Option<String> = self
+            .conn()
+            .query_row(
+                "SELECT line_starts FROM progress.memory_layout
+                 WHERE book = ?1 AND chapter = ?2 AND verse = ?3",
+                params![book, chapter, verse],
+                |r| r.get(0),
+            )
+            .optional()?
+            .flatten();
+        let words = verse_units(&self.get(book, chapter, verse)?, &[]).len();
+        Ok(stored.map_or(0, |s| parse_line_starts(&s, words).len()) + 1)
+    }
+
+    /// A verse's stored stage is a position in its learning steps, and a new
+    /// shape gives it different steps. A verse still in them starts over
+    /// rather than landing on a step that means something else; one that has
+    /// graduated (or waits to be relearnt, which is placed by its shape) is
+    /// left alone.
+    fn restart_memory_steps(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        now: i64,
+    ) -> rusqlite::Result<()> {
+        self.conn().execute(
+            "UPDATE progress.memory_verse SET stage = 0,
+                updated_epoch = MAX(updated_epoch + 1, ?4)
+             WHERE book = ?1 AND chapter = ?2 AND verse = ?3
+               AND interval_days = 0 AND stage NOT IN (0, ?5)",
+            params![book, chapter, verse, now, RELEARN_STAGE],
         )?;
         Ok(())
     }
@@ -1228,6 +1270,16 @@ impl Bible {
         section_start: bool,
         now: i64,
     ) -> rusqlite::Result<()> {
+        let before: Option<i64> = self
+            .conn()
+            .query_row(
+                "SELECT section_start FROM progress.memory_layout
+                 WHERE book = ?1 AND chapter = ?2 AND verse = ?3",
+                params![book, chapter, verse],
+                |r| r.get(0),
+            )
+            .optional()?
+            .flatten();
         self.conn().execute(
             "INSERT INTO progress.memory_layout(
                  book, chapter, verse, line_starts, section_start, updated_epoch)
@@ -1238,6 +1290,10 @@ impl Bible {
                                     excluded.updated_epoch)",
             params![book, chapter, verse, i64::from(section_start), now],
         )?;
+        // Opening a section drops the verse's closing chain step.
+        if before.is_some_and(|s| s != 0) != section_start {
+            self.restart_memory_steps(book, chapter, verse, now)?;
+        }
         Ok(())
     }
 
@@ -2673,6 +2729,66 @@ mod tests {
                 now,
             )?;
         }
+        Ok(())
+    }
+
+    #[test]
+    fn reshaping_a_verse_part_way_through_restarts_its_steps() -> rusqlite::Result<()> {
+        let Some(bible) = test_bible() else {
+            return Ok(());
+        };
+        let now = 1_700_000_000;
+        let p = bible
+            .add_memory_passage(27, 23, 0, 23, 255, "", now)?
+            .expect("Psalm 23 exists");
+        let layout = bible.memory_layout(&p.id)?;
+
+        let put = |verse: u8, stage: u8, interval_days: i64| {
+            bible.conn().execute(
+                "INSERT INTO progress.memory_verse(book, chapter, verse, stage, ease,
+                     interval_days, due_epoch, reps, lapses, introduced_epoch,
+                     last_review_epoch, last_grade, updated_epoch)
+                 VALUES (27, 23, ?1, ?2, 2.5, ?3, 0, 1, 0, 0, 0, 2, 0)
+                 ON CONFLICT(book, chapter, verse) DO UPDATE SET
+                    stage = excluded.stage, interval_days = excluded.interval_days",
+                params![verse, stage, interval_days],
+            )
+        };
+        let stage = |verse: u8| -> rusqlite::Result<u8> {
+            bible.conn().query_row(
+                "SELECT stage FROM progress.memory_verse
+                 WHERE book = 27 AND chapter = 23 AND verse = ?1",
+                [verse],
+                |r| r.get(0),
+            )
+        };
+        bible.set_memory_line_starts(27, 23, 1, Some(&[]), now)?;
+        bible.set_memory_line_starts(27, 23, 2, Some(&[]), now)?;
+        put(1, 3, 0)?;
+        put(2, 3, 0)?;
+        put(3, 5, 4)?;
+
+        // Saving the same shape leaves the stage alone; a new line count
+        // restarts it.
+        bible.set_memory_line_starts(27, 23, 1, Some(&[]), now)?;
+        assert_eq!(stage(1)?, 3);
+        bible.set_memory_line_starts(27, 23, 1, Some(&[2]), now)?;
+        assert_eq!(stage(1)?, 0);
+        // Moving the one break keeps the script, so it keeps the stage.
+        put(1, 2, 0)?;
+        bible.set_memory_line_starts(27, 23, 1, Some(&[3]), now)?;
+        assert_eq!(stage(1)?, 2);
+
+        // Opening or joining a section changes the verse's script too.
+        bible.set_memory_section_start(27, 23, 2, false, now)?;
+        assert_eq!(stage(2)?, 3);
+        bible.set_memory_section_start(27, 23, 2, true, now)?;
+        assert_eq!(stage(2)?, 0);
+
+        // A verse that has graduated keeps its place in its reviews.
+        bible.set_memory_line_starts(27, 23, 3, Some(&[2]), now)?;
+        bible.set_memory_section_start(27, 23, 3, true, now)?;
+        assert_eq!(stage(3)?, 5);
         Ok(())
     }
 
