@@ -858,13 +858,23 @@ pub(crate) fn merge_memory(db: &Connection) -> rusqlite::Result<()> {
 
          INSERT INTO progress.memory_review(
              epoch, day, book, chapter, verse, stage, grade, xp, graduated, passage_id)
-         SELECT r.epoch, r.day, r.book, r.chapter, r.verse, r.stage, r.grade, r.xp,
-                r.graduated, r.passage_id
-         FROM sync.memory_review r
-         WHERE NOT EXISTS (
-            SELECT 1 FROM progress.memory_review p
-            WHERE p.epoch = r.epoch AND p.book = r.book AND p.chapter = r.chapter
-              AND p.verse = r.verse AND p.stage = r.stage AND p.grade = r.grade);
+         -- Log rows carry no id and several can share a second (quick recall
+         -- cards, `complete:` markers), so a row is matched on every column
+         -- plus its ordinal among identical rows: a snapshot adds only the
+         -- copies the canonical log does not already hold.
+         SELECT epoch, day, book, chapter, verse, stage, grade, xp, graduated, passage_id
+         FROM (
+            SELECT *, ROW_NUMBER() OVER (
+                PARTITION BY epoch, day, book, chapter, verse, stage, grade, xp,
+                             graduated, passage_id ORDER BY rowid) AS n
+            FROM sync.memory_review)
+         WHERE (epoch, day, book, chapter, verse, stage, grade, xp, graduated,
+                passage_id, n) NOT IN (
+            SELECT epoch, day, book, chapter, verse, stage, grade, xp, graduated,
+                   passage_id, ROW_NUMBER() OVER (
+                PARTITION BY epoch, day, book, chapter, verse, stage, grade, xp,
+                             graduated, passage_id ORDER BY rowid)
+            FROM progress.memory_review);
 
          INSERT INTO progress.memory_settings(id, new_per_day, daily_goal_xp, updated_epoch)
          SELECT id, new_per_day, daily_goal_xp, updated_epoch

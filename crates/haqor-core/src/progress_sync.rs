@@ -1079,6 +1079,59 @@ mod tests {
         Ok(())
     }
 
+    #[test]
+    fn memory_answers_that_share_a_second_are_all_kept() -> anyhow::Result<()> {
+        let canonical = temp_path("canonical-collide.db");
+        let incoming = temp_path("incoming-collide.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        // Rows that collide on (epoch, book, chapter, verse, stage, grade):
+        // `copies` identical answers, then `marks` completion markers for
+        // different passages. The canonical log holds two answers and one
+        // marker; the incoming snapshot three answers and two markers.
+        for (path, copies, marks) in [(&canonical, 2, &["a"][..]), (&incoming, 3, &["a", "b"][..])]
+        {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            for _ in 0..copies {
+                db.execute(
+                    "INSERT INTO progress.memory_review(epoch, day, book, chapter, verse,
+                         stage, grade, xp, graduated, passage_id)
+                     VALUES (500, 0, 27, 23, 1, 2, 2, 10, 0, 'p1')",
+                    [],
+                )?;
+            }
+            for id in marks {
+                db.execute(
+                    "INSERT INTO progress.memory_review(epoch, day, book, chapter, verse,
+                         stage, grade, xp, graduated, passage_id)
+                     VALUES (500, 0, 27, 23, 1, -1, -1, 0, 0, ?1)",
+                    [format!("complete:{id}")],
+                )?;
+            }
+        }
+        merge_progress_files(&canonical, &incoming)?;
+        // Merging again must not duplicate anything.
+        merge_progress_files(&canonical, &incoming)?;
+        let db = Connection::open(&canonical)?;
+        let count = |sql: &str| db.query_row(sql, [], |r| r.get::<_, i64>(0));
+        assert_eq!(
+            count("SELECT COUNT(*) FROM memory_review WHERE passage_id = 'p1'")?,
+            3
+        );
+        assert_eq!(
+            count("SELECT COUNT(*) FROM memory_review WHERE passage_id LIKE 'complete:%'")?,
+            2
+        );
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
     /// A `Bible` over a file-backed `progress.db` at `path`, or `None` when the
     /// corpus data is not checked out.
     fn open_bible_with_progress(path: &Path) -> Option<crate::bible::Bible> {
