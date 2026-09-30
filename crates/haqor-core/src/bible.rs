@@ -3210,6 +3210,20 @@ impl Bible {
         Ok(display_hebrew(book, &self.blobs.decode(words)?))
     }
 
+    /// One verse in Syriac script, as [`Bible::get_chapter`] renders a chapter
+    /// with `syriac` set. Lets a list of single verses follow the reader's
+    /// script setting.
+    pub fn get_syriac(&self, book: u8, chapter: u8, verse: u8) -> rusqlite::Result<String> {
+        let words: Vec<u8> = self.db.query_row(
+            "SELECT words FROM data.verse WHERE ref = ?1",
+            [pack_ref(book, chapter, verse)],
+            |row| row.get(0),
+        )?;
+        Ok(crate::transliterate::hebrew_to_syriac(
+            &self.blobs.decode(words)?,
+        ))
+    }
+
     /// Learner glosses aligned with the words in a verse.
     pub fn verse_glosses(&self, book: u8, chapter: u8, verse: u8) -> rusqlite::Result<Vec<String>> {
         Ok(self
@@ -6095,6 +6109,20 @@ mod tests {
         let matt = bible.get(40, 1, 1).unwrap();
         assert_eq!(matt.split(' ').count(), 8);
         assert!(matt.starts_with('כ'));
+    }
+
+    #[test]
+    fn test_get_syriac_matches_the_syriac_chapter() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+
+        // The same text the reader shows for a chapter in Syriac script, one
+        // verse at a time.
+        let chapter = bible.get_chapter(40, 1, true).unwrap();
+        let matt = bible.get_syriac(40, 1, 1).unwrap();
+        assert_eq!(matt, chapter[0].1);
+        assert!(matt.starts_with(|c| ('\u{0710}'..='\u{074F}').contains(&c)));
+        assert_ne!(matt, bible.get(40, 1, 1).unwrap());
     }
 
     #[test]
