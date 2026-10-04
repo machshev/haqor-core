@@ -2994,7 +2994,10 @@ impl Bible {
     }
 
     fn rebuild_readability_progress(&self) -> rusqlite::Result<()> {
-        self.conn().execute_batch("BEGIN IMMEDIATE")?;
+        // BEGIN IMMEDIATE attempts to write-lock every attached database,
+        // including the read-only deserialized browser corpus. Acquire the
+        // progress write lock with the first DELETE instead.
+        self.conn().execute_batch("BEGIN")?;
         let result = self.conn().execute_batch(&format!(
             "DELETE FROM progress.surface_progress;
              INSERT INTO progress.surface_progress(surface_id, graduated, graduated_epoch)
@@ -6566,6 +6569,34 @@ mod tests {
                 assert!(AUDIBLE_GUTTURALS.contains(&cps[0].to_string().as_str()));
             }
         }
+        Ok(())
+    }
+
+    #[test]
+    fn browser_corpus_allows_progress_rebuild_and_snapshot_restore() -> rusqlite::Result<()> {
+        let path = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/haqor.db");
+        if !path.exists() {
+            return Ok(());
+        }
+        let corpus = std::fs::read(path).expect("read bundled corpus");
+        let mut bible = Bible::open_from_bytes(vec![("haqor.db", corpus)])?;
+        bible.attach_progress_in_memory()?;
+        let stats = bible.tutor_stats(1_700_000_000)?;
+        assert_eq!(stats.reviews_total, 0);
+        assert!(stats.total_verses > 0);
+        let snapshot = bible.progress_snapshot_bytes()?;
+        bible.restore_progress_snapshot_bytes(snapshot)?;
+        assert_eq!(
+            bible.tutor_stats(1_700_000_000)?.total_verses,
+            stats.total_verses
+        );
+        // Progress writes must not make the deserialized corpus writable.
+        assert!(
+            bible
+                .conn()
+                .execute("DELETE FROM data.surface", [])
+                .is_err()
+        );
         Ok(())
     }
 
