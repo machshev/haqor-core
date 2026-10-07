@@ -284,7 +284,8 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/haqor.db")]
         output: PathBuf,
         /// Source texts directory: the thematic cross references are read from
-        /// its TSK and STEPBible-Data folders.
+        /// its TSK and STEPBible-Data folders, the syntax trees from
+        /// MACULA-Hebrew.
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
         /// How to store verse text and lexicon entry bodies. `zstd` is ~7 MiB
@@ -301,6 +302,17 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/haqor.db")]
         db: PathBuf,
         /// Source texts directory holding TSK and STEPBible-Data.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
+    /// Rebuild the `syntax_tree` table of a runtime haqor.db in place from
+    /// MACULA Hebrew's syntax trees (gen-runtime also builds it). Fetch them
+    /// first with scripts/fetch-macula-hebrew.sh.
+    GenSyntax {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Source texts directory holding MACULA-Hebrew.
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
@@ -569,6 +581,16 @@ fn main() -> Result<()> {
                     db.display(),
                     summary.unparsed,
                     summary.missing
+                );
+            }
+            DbCommands::GenSyntax { db, src_texts } => {
+                let summary = haqor_db_gen::gen_syntax(&db, &src_texts)?;
+                println!(
+                    "Wrote the syntax trees of {} verses to {} ({} spelled differently \
+                     from the corpus)",
+                    summary.verses,
+                    db.display(),
+                    summary.misaligned
                 );
             }
             DbCommands::GenQuotes {

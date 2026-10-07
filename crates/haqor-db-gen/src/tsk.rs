@@ -56,7 +56,7 @@ const TANAKH_ORDER: [u8; 39] = [
 ];
 
 /// Haqor's book number for the TSK's 1-based `book_key`.
-fn book_of_key(key: usize) -> Option<u8> {
+pub(crate) fn book_of_key(key: usize) -> Option<u8> {
     match key {
         1..=39 => Some(TANAKH_ORDER[key - 1]),
         40..=66 => Some(key as u8),

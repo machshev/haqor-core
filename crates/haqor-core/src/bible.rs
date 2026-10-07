@@ -5110,6 +5110,54 @@ impl Bible {
         .collect()
     }
 
+    /// The syntax tree of one Old Testament verse (MACULA Hebrew's): its
+    /// clauses and phrases, each leaf on a word of the verse. `None` for a
+    /// verse without one — the New Testament, and every verse of a database
+    /// built before the table existed.
+    pub fn syntax_tree(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+    ) -> rusqlite::Result<Option<crate::syntax::SyntaxNode>> {
+        if !self.has_table("syntax_tree")? {
+            return Ok(None);
+        }
+        let tree: Option<String> = self
+            .db
+            .query_row(
+                "SELECT tree FROM data.syntax_tree WHERE ref = ?1",
+                [pack_ref(book, chapter, verse)],
+                |row| row.get(0),
+            )
+            .optional()?;
+        Ok(tree.as_deref().and_then(crate::syntax::parse))
+    }
+
+    /// The syntax trees of every verse of a chapter that has one, in order, as
+    /// `(verse, tree)`: what the reader needs to mark a chapter's clauses.
+    pub fn chapter_syntax_trees(
+        &self,
+        book: u8,
+        chapter: u8,
+    ) -> rusqlite::Result<Vec<(u8, crate::syntax::SyntaxNode)>> {
+        if !self.has_table("syntax_tree")? {
+            return Ok(Vec::new());
+        }
+        let (first, last) = chapter_range(book, chapter);
+        let mut stmt = self.db.prepare_cached(
+            "SELECT ref, tree FROM data.syntax_tree WHERE ref BETWEEN ?1 AND ?2 ORDER BY ref",
+        )?;
+        stmt.query_map([first, last], |row| {
+            Ok((ref_verse(row.get(0)?), row.get::<_, String>(1)?))
+        })?
+        .filter_map(|row| match row {
+            Ok((verse, tree)) => crate::syntax::parse(&tree).map(|tree| Ok((verse, tree))),
+            Err(e) => Some(Err(e)),
+        })
+        .collect()
+    }
+
     /// Whether this `haqor.db` has the table `name`: an older build lacks the
     /// ones added since.
     fn has_table(&self, name: &str) -> rusqlite::Result<bool> {
@@ -5332,6 +5380,38 @@ mod tests {
             last_chapter: None,
         };
         assert!(bible.thematic_reference_verse_count(book).unwrap() > 1000);
+    }
+
+    /// A verse's syntax tree puts every word of the verse on a leaf, and a
+    /// chapter's trees come verse by verse. Skips a database built before the
+    /// table existed.
+    #[test]
+    fn syntax_trees_cover_their_verses() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let Some(genesis) = bible.syntax_tree(1, 1, 1).unwrap() else {
+            eprintln!("skipping: haqor.db has no syntax_tree table");
+            return;
+        };
+        assert_eq!(genesis.class, "cl");
+        // בָּרָא is the verb and אֱלֹהִים the subject.
+        let roles: Vec<(&str, u16)> = genesis
+            .children
+            .iter()
+            .filter_map(|c| c.word.as_ref().map(|w| (c.role.as_str(), w.position)))
+            .collect();
+        assert_eq!(roles, [("v", 1), ("s", 2)]);
+
+        let words = bible.verse_glosses(1, 1, 1).unwrap().len() as u16;
+        let mut positions: Vec<u16> = genesis.leaves().iter().map(|w| w.position).collect();
+        positions.sort();
+        positions.dedup();
+        assert_eq!(positions, (0..words).collect::<Vec<_>>());
+
+        let chapter = bible.chapter_syntax_trees(1, 1).unwrap();
+        assert_eq!(chapter.len(), 31);
+        assert_eq!(chapter[0], (1, genesis));
+        assert!(bible.syntax_tree(40, 1, 1).unwrap().is_none());
     }
 
     /// The TSK's references arrive on the Hebrew numbering: Malachi 4:5 in

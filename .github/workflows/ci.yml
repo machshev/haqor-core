@@ -197,6 +197,7 @@ jobs:
         # vanished build sandbox.
         run: |
           ./scripts/fetch-stepbible-data.sh
+          ./scripts/fetch-macula-hebrew.sh
           nix develop --command bash -c '
             set -euo pipefail
             cargo run --release -p haqor-cli -- db gen-bible

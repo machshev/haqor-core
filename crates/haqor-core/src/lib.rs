@@ -33,6 +33,9 @@ pub mod romanize;
 /// databases. `gen-runtime` precomputes its output into `haqor.db`.
 pub mod resolve;
 
+/// Verse syntax trees (MACULA Hebrew), as `haqor.db` stores them.
+pub mod syntax;
+
 mod surface;
 pub use surface::normalize_surface;
 

@@ -38,6 +38,13 @@ impl Reader<BufReader<File>> {
     }
 }
 
+#[cfg(test)]
+impl<'a> Reader<&'a [u8]> {
+    pub(crate) fn from_str(xml: &'a str) -> Self {
+        Self::new(quick_xml::Reader::from_str(xml))
+    }
+}
+
 impl<R: BufRead> Reader<R> {
     fn new(inner: quick_xml::Reader<R>) -> Self {
         Self {

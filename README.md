@@ -128,6 +128,26 @@ returns a verse's phrases and their targets. To rebuild the table alone:
 cargo run --release -- db gen-tsk      # RUST_LOG=haqor_db_gen::tsk=debug lists the references it drops
 ```
 
+### Syntax trees
+
+`gen-runtime` also fills a `syntax_tree` table from
+[MACULA Hebrew](https://github.com/Clear-Bible/macula-hebrew)'s parse of every
+Old Testament verse: its clauses, the phrases inside them, and the function
+each plays in its clause (subject, verb, object, predicate, adverbial). Fetch
+the pinned source first; `gen-runtime` reads it from
+`src_texts/MACULA-Hebrew/`:
+
+```sh
+./scripts/fetch-macula-hebrew.sh
+cargo run --release -- db gen-syntax   # rebuild the table alone
+```
+
+MACULA numbers words as the Westminster Leningrad Codex does, counting the
+written form of a ketiv/qere pair and dividing a few words differently, so
+the import places each word on the corpus by its letters (all but a handful of
+verses spell their letters identically). `Bible::syntax_tree` and
+`Bible::chapter_syntax_trees` return the parsed trees.
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:
@@ -208,6 +228,15 @@ which describes its downloads as public domain biblical information. The file
 is kept unchanged in `src_texts/TSK/`, with its source and checksums; Haqor
 re-numbers its KJV verse references onto the Hebrew text and writes "Yahweh"
 where its KJV phrases read "the LORD".
+
+**Syntax trees** — MACULA Hebrew Linguistic Datasets, available at
+https://github.com/Clear-Bible/macula-hebrew/, (C) 2022-2024 Biblica, Inc,
+licensed CC BY 4.0. Haqor carries their clauses, phrases and clause-level
+functions (the Westminster Hebrew Syntax of the J. Alan Groves Center, CC BY
+4.0), with English glosses for parts of words from Cherith Analytics'
+glosses (CC BY 4.0). The files are fetched from their canonical repository at
+a pinned commit by `scripts/fetch-macula-hebrew.sh` rather than redistributed
+here.
 
 **Syriac New Testament** — the text of the British and Foreign Bible Society's
 edition, with lexical and morphological data from SEDRA:

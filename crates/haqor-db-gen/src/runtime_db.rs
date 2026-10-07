@@ -329,7 +329,7 @@ pub(crate) fn attach_lexicon_views(db: &Connection) -> Result<()> {
 }
 
 /// Build `haqor.db` from the four generation databases in `data_dir`, plus the
-/// thematic cross references read from `src_texts`.
+/// thematic cross references and syntax trees read from `src_texts`.
 ///
 /// The output is created empty, then attached to the connection the generation
 /// databases already live on: the bulk tables copy schema-to-schema in SQL, and
@@ -387,6 +387,7 @@ pub fn generate_runtime(
     let quotations = crate::quotations::build_quotations(&Connection::open(output)?)?;
     info!("Found {quotations} cross references (OT/NT quotations and parallels)");
     crate::tsk::build_thematic_references(&Connection::open(output)?, src_texts)?;
+    crate::syntax::build_syntax_trees(&Connection::open(output)?, src_texts)?;
 
     // VACUUM cannot run on an attached database, so the reclaim happens on the
     // finished file. It matters: the bulk load leaves the free pages that make

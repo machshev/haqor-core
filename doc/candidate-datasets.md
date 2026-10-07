@@ -33,6 +33,9 @@ Every addition needs an entry in `dataSourceCredits`
 
 ### MACULA Hebrew (Clear Bible / Biblica)
 
+- **Status:** syntax trees imported (October 2026: `syntax_tree`, see the
+  README's "Syntax trees"). Its participant referents, semantic roles and
+  SDBH word senses are not yet used.
 - **Source:** <https://github.com/Clear-Bible/macula-hebrew>
 - **Licence:** CC BY 4.0 for the dataset as a whole (*checked*, `LICENSE.md`),
   with the required credit "MACULA Hebrew Linguistic Datasets, available at
