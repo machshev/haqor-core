@@ -125,18 +125,6 @@ Every addition needs an entry in `dataSourceCredits`
 - **Fit:** with TIPNR to say which place a name is, a place name could open
   a map.
 
-### A Septuagint text
-
-- **What it gives:** the Greek Old Testament, which the New Testament often
-  quotes rather than the Hebrew. Haqor could show where an NT quotation
-  follows the Septuagint against the Masoretic text.
-- **Open question:** no openly licensed digital text was found yet. Swete's
-  edition is in the public domain in print, but the digital editions found
-  (Logos, Accordance) are commercial. MACULA's Greek equivalents (above) give
-  Septuagint words aligned to the Hebrew, which may be enough for a first
-  step.
-- **Effort:** large: Haqor's pipeline has no Greek yet.
-
 ### Targums Onkelos and Jonathan
 
 - **Source:** Sefaria. Licence *not checked*; Sefaria licenses each text
@@ -173,3 +161,4 @@ Every addition needs an entry in `dataSourceCredits`
   from the KJV margin.
 - **sync.bible.** Its `crossReferences.json` is the TSK keyed by verse,
   without phrases; its KJV texts carry no notes.
+- **The Septuagint.** Not wanted: out of scope for Haqor.
