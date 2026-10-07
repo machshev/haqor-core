@@ -13,7 +13,7 @@ resolver = "3"
 [workspace.package]
 version = "0.9.4"
 edition = "2024"
-license = "GPL-3.0-or-later"
+license = "AGPL-3.0-or-later"
 repository = "https://github.com/machshev/haqor-core"
 
 # Tests exercise the morphology generator heavily (the reverse-index test

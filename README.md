@@ -225,3 +225,13 @@ Haqor reads the ASCII SEDRA III files and renders them in Unicode, in Syriac
 script and transliterated into Hebrew letters for the reader. That script
 conversion is the only change: the entries, morphology and text content are
 unmodified.
+
+## Licence
+
+Haqor's core is free software, licensed under the GNU Affero General Public
+License, version 3 or (at your option) any later version; see
+[LICENSE](LICENSE). Anyone may use, share and change it, and anyone who
+distributes it, or runs a modified version (the sync server included) for
+others to use over a network, must offer them its source under the same terms.
+The source texts and the databases built from them keep their own licences,
+listed under [Attribution](#attribution).
