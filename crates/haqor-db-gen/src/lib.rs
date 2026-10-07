@@ -18,6 +18,7 @@ mod sedra_db;
 mod sefaria;
 mod stepbible;
 mod syntax;
+mod translation;
 mod tsk;
 mod uxlc;
 mod xml;
@@ -40,6 +41,7 @@ pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, open_generatio
 pub use sefaria::{ImportSummary, import_sefaria};
 pub use stepbible::source_dir as stepbible_source_dir;
 pub use syntax::{SyntaxSummary, build_syntax_trees, gen_syntax};
+pub use translation::{TranslationSummary, build_translation, gen_translation};
 pub use tsk::{TskSummary, build_thematic_references, gen_tsk};
 
 use std::path::Path;

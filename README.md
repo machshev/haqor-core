@@ -148,6 +148,37 @@ the import places each word on the corpus by its letters (all but a handful of
 verses spell their letters identically). `Bible::syntax_tree` and
 `Bible::chapter_syntax_trees` return the parsed trees.
 
+### English translation
+
+`gen-runtime` also fills a `translation_verse` table with an English
+translation of the Old Testament adapted from the
+[unfoldingWord Literal Text](https://www.unfoldingword.org/ult) (ULT), whose
+every English word is aligned to the Hebrew word or words it renders. Fetch
+the pinned sources first (the ULT, and the unfoldingWord Hebrew Bible its
+alignments name); `gen-runtime` reads them from `src_texts/unfoldingWord/`:
+
+```sh
+./scripts/fetch-unfoldingword.sh
+cargo run --release -- db gen-translation   # rebuild the table alone
+```
+
+Both unfoldingWord texts follow the English verse numbering, so the import
+goes by words rather than references. The UHB's words are lined up against
+the corpus by their letters, book by book: the two are the same Leningrad
+text, differing where the UHB writes a ketiv, divides a word differently, or
+has a verse Leningrad lacks (Nehemiah 7:68). Each alignment then names a word
+of the corpus, and each English verse is filed under the Hebrew verse most of
+its words render, so Malachi 4:1 sits beside 3:19 and a psalm's title beside
+its first verse. 616,411 of 616,562 English words link to a word of the
+corpus. `Bible::chapter_translation` returns a chapter's English as spans,
+each naming the Hebrew words it renders and whether it is supplied (the
+ULT's braced, italic words).
+
+The fetch script pins the ULT at a `master` commit rather than its latest
+release (v91), which leaves out the books still being checked (Numbers,
+1–2 Chronicles, Ecclesiastes, Isaiah, Jeremiah and Ezekiel); their drafts are
+complete and fully aligned.
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:
@@ -237,6 +268,17 @@ functions (the Westminster Hebrew Syntax of the J. Alan Groves Center, CC BY
 glosses (CC BY 4.0). The files are fetched from their canonical repository at
 a pinned commit by `scripts/fetch-macula-hebrew.sh` rather than redistributed
 here.
+
+**English translation** — adapted from the unfoldingWord Literal Text (ULT),
+(C) unfoldingWord, licensed CC BY-SA 4.0, using its alignment to the
+unfoldingWord Hebrew Bible (UHB, CC BY-SA 4.0). Haqor files each English
+verse under the Hebrew verse it renders, places the aligned words on its own
+Hebrew text, and leaves out the ULT's footnotes and paragraphing. The original
+work by unfoldingWord is available from
+[unfoldingword.org/ult](https://www.unfoldingword.org/ult). The adapted text,
+the `translation_verse` table of `haqor.db`, is shared under the same licence,
+CC BY-SA 4.0. The sources are fetched at pinned commits by
+`scripts/fetch-unfoldingword.sh` rather than redistributed here.
 
 **Syriac New Testament** — the text of the British and Foreign Bible Society's
 edition, with lexical and morphological data from SEDRA:

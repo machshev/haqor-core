@@ -5158,6 +5158,36 @@ impl Bible {
         .collect()
     }
 
+    /// The English of every verse of an Old Testament chapter that has some,
+    /// in order, as `(verse, spans)`: an English translation adapted from
+    /// the unfoldingWord Literal Text, each span naming the Hebrew words it
+    /// renders. Empty for the New Testament,
+    /// and for a database built before the table existed.
+    pub fn chapter_translation(
+        &self,
+        book: u8,
+        chapter: u8,
+    ) -> rusqlite::Result<Vec<(u8, Vec<crate::translation::TranslationSpan>)>> {
+        if !self.has_table("translation_verse")? {
+            return Ok(Vec::new());
+        }
+        let (first, last) = chapter_range(book, chapter);
+        let mut stmt = self.db.prepare_cached(
+            "SELECT ref, text FROM data.translation_verse WHERE ref BETWEEN ?1 AND ?2 \
+             ORDER BY ref",
+        )?;
+        stmt.query_map([first, last], |row| {
+            Ok((ref_verse(row.get(0)?), row.get::<_, String>(1)?))
+        })?
+        .filter_map(|row| match row {
+            Ok((verse, text)) => {
+                crate::translation::parse(&text, chapter, verse).map(|spans| Ok((verse, spans)))
+            }
+            Err(e) => Some(Err(e)),
+        })
+        .collect()
+    }
+
     /// Whether this `haqor.db` has the table `name`: an older build lacks the
     /// ones added since.
     fn has_table(&self, name: &str) -> rusqlite::Result<bool> {
@@ -5380,6 +5410,42 @@ mod tests {
             last_chapter: None,
         };
         assert!(bible.thematic_reference_verse_count(book).unwrap() > 1000);
+    }
+
+    /// A chapter's English comes verse by verse on the Hebrew numbering, its
+    /// spans naming the Hebrew words they render. Skips a database built
+    /// before the table existed.
+    #[test]
+    fn translation_follows_the_hebrew_numbering() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let genesis = bible.chapter_translation(1, 1).unwrap();
+        if genesis.is_empty() {
+            eprintln!("skipping: haqor.db has no translation_verse table");
+            return;
+        }
+        assert_eq!(genesis.len(), 31);
+        let (verse, spans) = &genesis[0];
+        assert_eq!(*verse, 1);
+        assert_eq!(spans[0].text, "In the beginning");
+        assert_eq!(spans[0].words[0].position, 0);
+        let text: String = spans.iter().map(|s| s.text.as_str()).collect();
+        assert_eq!(
+            text,
+            "In the beginning God created the heavens and the earth."
+        );
+
+        // English Malachi 4:1 is Hebrew 3:19, and a psalm's title is its
+        // first verse.
+        let malachi = bible.chapter_translation(26, 3).unwrap();
+        let (_, spans) = malachi.iter().find(|(v, _)| *v == 19).unwrap();
+        assert!(spans[0].text.starts_with("For"), "{spans:?}");
+        let psalm = bible.chapter_translation(27, 3).unwrap();
+        let (verse, spans) = &psalm[0];
+        assert_eq!(*verse, 1);
+        assert!(spans[0].text.starts_with("A psalm"), "{spans:?}");
+
+        assert!(bible.chapter_translation(40, 1).unwrap().is_empty());
     }
 
     /// A verse's syntax tree puts every word of the verse on a leaf, and a

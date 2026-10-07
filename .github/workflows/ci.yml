@@ -198,6 +198,7 @@ jobs:
         run: |
           ./scripts/fetch-stepbible-data.sh
           ./scripts/fetch-macula-hebrew.sh
+          ./scripts/fetch-unfoldingword.sh
           nix develop --command bash -c '
             set -euo pipefail
             cargo run --release -p haqor-cli -- db gen-bible

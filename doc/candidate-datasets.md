@@ -9,7 +9,9 @@ has. Nothing here is imported yet. Compiled 2026-10-07; licences marked
 
 The Leningrad Codex (UXLC), the OSHB morphology and lexicon (BDB, Strong's),
 Klein and Jastrow (Sefaria), STEP Bible's TAHOT, SEDRA's Peshitta NT, the
-Treasury of Scripture Knowledge, and the quotations and parallels the build
+Treasury of Scripture Knowledge, MACULA Hebrew's syntax trees, an English
+translation adapted from the unfoldingWord Literal Text (CC BY-SA 4.0,
+aligned word by word to the Hebrew), and the quotations and parallels the build
 finds by aligning roots. See [Data sources](../README.md#data-sources) and
 [Attribution](../README.md#attribution).
 

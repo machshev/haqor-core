@@ -36,6 +36,10 @@ pub mod resolve;
 /// Verse syntax trees (MACULA Hebrew), as `haqor.db` stores them.
 pub mod syntax;
 
+/// The English translation (adapted from the unfoldingWord Literal Text),
+/// aligned word by word to the Hebrew, as `haqor.db` stores it.
+pub mod translation;
+
 mod surface;
 pub use surface::normalize_surface;
 

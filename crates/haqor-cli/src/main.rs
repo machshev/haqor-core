@@ -285,7 +285,7 @@ enum DbCommands {
         output: PathBuf,
         /// Source texts directory: the thematic cross references are read from
         /// its TSK and STEPBible-Data folders, the syntax trees from
-        /// MACULA-Hebrew.
+        /// MACULA-Hebrew, the translation from unfoldingWord.
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
         /// How to store verse text and lexicon entry bodies. `zstd` is ~7 MiB
@@ -313,6 +313,17 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/haqor.db")]
         db: PathBuf,
         /// Source texts directory holding MACULA-Hebrew.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
+    /// Rebuild the `translation_verse` table of a runtime haqor.db in place
+    /// from the unfoldingWord Literal Text, aligned to the Hebrew (gen-runtime
+    /// also builds it). Fetch it first with scripts/fetch-unfoldingword.sh.
+    GenTranslation {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Source texts directory holding unfoldingWord.
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
@@ -591,6 +602,16 @@ fn main() -> Result<()> {
                     summary.verses,
                     db.display(),
                     summary.misaligned
+                );
+            }
+            DbCommands::GenTranslation { db, src_texts } => {
+                let summary = haqor_db_gen::gen_translation(&db, &src_texts)?;
+                println!(
+                    "Wrote the English of {} verses to {} ({} of {} words linked to the Hebrew)",
+                    summary.verses,
+                    db.display(),
+                    summary.linked,
+                    summary.words
                 );
             }
             DbCommands::GenQuotes {

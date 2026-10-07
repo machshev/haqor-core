@@ -1,0 +1,1022 @@
+//! Import the unfoldingWord® Literal Text, aligned word by word to the Hebrew.
+//!
+//! The ULT (unfoldingWord, CC BY-SA 4.0) is a literal English translation in
+//! the line of the ASV. Its USFM wraps every English word in `\zaln-s`
+//! milestones naming the Hebrew word or words it renders: their text
+//! (`x-content`) and which occurrence of that text in the verse they are
+//! (`x-occurrence`). Those Hebrew words are the unfoldingWord Hebrew Bible's
+//! (UHB, CC BY-SA 4.0), which is also fetched, because neither text numbers
+//! verses as Haqor's does: both follow the English numbering, so that
+//! Malachi 4:1 is Haqor's 3:19 and a psalm's title is not its first verse.
+//! `scripts/fetch-unfoldingword.sh` fetches the two into
+//! `src_texts/unfoldingWord`.
+//!
+//! So the import goes by words, not references. The UHB's words, book by
+//! book, are lined up against the corpus by their letters: the UHB is derived
+//! from the same Leningrad text, and differs where it writes the ketiv
+//! (Haqor's text is the qere), divides a word differently, or adds a verse
+//! Leningrad lacks (Nehemiah 7:68). Each alignment then names a UHB word, and
+//! through it a word of the corpus; and each English verse is filed under the
+//! Haqor verse most of its words render.
+//!
+//! The result is the `translation_verse` table, one row per verse, written in
+//! the compact form [`haqor_core::translation`] reads.
+
+use std::collections::HashMap;
+use std::path::{Path, PathBuf};
+
+use anyhow::{Context, Result, bail};
+use haqor_core::data_support::bare_letters;
+use log::{debug, info};
+use rusqlite::{Connection, params};
+
+use crate::runtime_db::pack_ref;
+
+pub const SCHEMA: &str = "
+DROP TABLE IF EXISTS translation_verse;
+CREATE TABLE translation_verse(ref INTEGER PRIMARY KEY, text TEXT NOT NULL);
+";
+
+/// `src_texts/unfoldingWord`.
+pub fn source_dir(src_texts: &Path) -> PathBuf {
+    src_texts.join("unfoldingWord")
+}
+
+/// A chapter and verse, in whichever numbering the text at hand uses.
+type ChapterVerse = (u8, u8);
+
+/// What a USFM file says, as far as the import cares.
+#[derive(Debug, Clone, PartialEq)]
+enum Event {
+    Chapter(u8),
+    Verse(u8),
+    /// `\d`, a psalm's title, which may come before its chapter's first
+    /// verse.
+    Title,
+    /// The start of an alignment: the Hebrew text it names, and which
+    /// occurrence of that text in the verse.
+    AlignStart {
+        content: String,
+        occurrence: u16,
+    },
+    AlignEnd,
+    /// A word, `\w text|attributes\w*`.
+    Word(String),
+    /// Text between words: spaces, punctuation, the braces round supplied
+    /// words.
+    Text(String),
+}
+
+/// Markers whose content runs to the end of the line and is not verse text:
+/// the book's headers, a chapter's label, Psalms' book divisions, and the
+/// letters heading an acrostic's stanzas.
+const LINE_MARKERS: [&str; 11] = [
+    "id", "ide", "usfm", "h", "toc1", "toc2", "toc3", "mt", "mt1", "ms1", "cl",
+];
+
+/// The value of `key="…"` in a USFM attribute list.
+fn attribute<'a>(attributes: &'a str, key: &str) -> Option<&'a str> {
+    let start = attributes.find(&format!("{key}=\""))? + key.len() + 2;
+    let len = attributes[start..].find('"')?;
+    Some(&attributes[start..start + len])
+}
+
+/// Read the events of a USFM file. Footnotes are skipped (the UHB's give the
+/// qere of a ketiv, the ULT's alternative renderings), as are alternative
+/// verse and chapter numbers and the headings [`LINE_MARKERS`] names.
+fn read_usfm(usfm: &str) -> Result<Vec<Event>> {
+    let mut events = Vec::new();
+    let mut rest = usfm;
+    // Text before the next marker.
+    let text_end = |rest: &str| rest.find('\\').unwrap_or(rest.len());
+    while !rest.is_empty() {
+        if !rest.starts_with('\\') {
+            let end = text_end(rest);
+            events.push(Event::Text(rest[..end].to_string()));
+            rest = &rest[end..];
+            continue;
+        }
+        let name_len = rest[1..]
+            .find(|c: char| !(c.is_ascii_alphanumeric() || c == '-'))
+            .unwrap_or(rest.len() - 1);
+        let name = &rest[1..1 + name_len];
+        rest = &rest[1 + name_len..];
+        // A closing marker (`\qs*`), or a milestone's end (`\zaln-e\*`).
+        if let Some(r) = rest.strip_prefix('*') {
+            rest = r;
+            continue;
+        }
+        if let Some(r) = rest.strip_prefix("\\*") {
+            rest = r;
+            if name == "zaln-e" {
+                events.push(Event::AlignEnd);
+            }
+            continue;
+        }
+        // Up to (not including) `end`, after which reading resumes.
+        let mut until = |end: &str| -> Result<&str> {
+            let at = rest
+                .find(end)
+                .with_context(|| format!("\\{name} without {end}"))?;
+            let content = &rest[..at];
+            rest = &rest[at + end.len()..];
+            Ok(content)
+        };
+        match name {
+            "c" | "v" => {
+                let content = rest.trim_start();
+                let len = content
+                    .find(|c: char| !c.is_ascii_digit())
+                    .unwrap_or(content.len());
+                let number = content[..len]
+                    .parse()
+                    .with_context(|| format!("\\{name} without a number"))?;
+                rest = &content[len..];
+                events.push(if name == "c" {
+                    Event::Chapter(number)
+                } else {
+                    Event::Verse(number)
+                });
+            }
+            "d" => events.push(Event::Title),
+            "zaln-s" => {
+                let attributes = until("\\*")?;
+                let content =
+                    attribute(attributes, "x-content").context("an alignment without x-content")?;
+                let occurrence = attribute(attributes, "x-occurrence")
+                    .and_then(|o| o.parse().ok())
+                    .context("an alignment without x-occurrence")?;
+                events.push(Event::AlignStart {
+                    content: content.to_string(),
+                    occurrence,
+                });
+            }
+            "w" => {
+                let word = until("\\w*")?;
+                let text = word.split_once('|').map_or(word, |(text, _)| text);
+                events.push(Event::Word(text.trim().to_string()));
+            }
+            "f" => {
+                until("\\f*")?;
+            }
+            "va" => {
+                until("\\va*")?;
+            }
+            "ca" => {
+                until("\\ca*")?;
+            }
+            "qa" => {
+                // The ULT closes an acrostic heading (`\qa Aleph\qa*`), but
+                // USFM allows it to run to the end of its line.
+                let end = rest.find('\n').unwrap_or(rest.len());
+                match rest[..end].find("\\qa*") {
+                    Some(at) => rest = &rest[at + 4..],
+                    None => rest = &rest[end..],
+                }
+            }
+            name if LINE_MARKERS.contains(&name) => {
+                rest = &rest[rest.find('\n').unwrap_or(rest.len())..];
+            }
+            // Paragraph and poetry markers, and the ULT's chunk breaks: their
+            // text is the verse's, and their layout is not kept.
+            _ => events.push(Event::Text(" ".into())),
+        }
+    }
+    Ok(events)
+}
+
+/// A Hebrew word's identity as the alignments name it: its text, without
+/// the word joiners the UHB puts between morphemes, and with the marks on
+/// each letter in a fixed order (the ULT and UHB order a dagesh and a vowel
+/// differently here and there). With `accents` false, also without
+/// cantillation, which a few alignments count occurrences without.
+fn identity(word: &str, accents: bool) -> String {
+    let mut out = String::new();
+    let mut marks: Vec<char> = Vec::new();
+    for c in word.chars().filter(|&c| c != '\u{2060}') {
+        let is_mark = ('\u{591}'..='\u{5c7}').contains(&c)
+            && !matches!(c, '\u{5be}' | '\u{5c0}' | '\u{5c3}' | '\u{5c6}');
+        if is_mark {
+            // Without accents, also without meteg, which the accents govern.
+            if accents || !(('\u{591}'..='\u{5af}').contains(&c) || c == '\u{5bd}') {
+                marks.push(c);
+            }
+            continue;
+        }
+        marks.sort_unstable();
+        out.extend(marks.drain(..));
+        out.push(c);
+    }
+    marks.sort_unstable();
+    out.extend(marks);
+    out
+}
+
+/// A word of the UHB.
+#[derive(Debug)]
+struct HebrewWord {
+    /// Its verse, in the UHB's (English) numbering; verse 0 for a psalm title
+    /// set before its chapter's first verse.
+    verse: ChapterVerse,
+    /// Its [`identity`] and the occurrence of that in its verse, with and
+    /// without accents.
+    identity: (String, u16),
+    bare_identity: (String, u16),
+    /// Its letters, what lines it up against the corpus.
+    letters: String,
+}
+
+fn hebrew_words(events: &[Event]) -> Vec<HebrewWord> {
+    let mut words = Vec::new();
+    let mut verse = (0, 0);
+    let mut seen: HashMap<String, u16> = HashMap::new();
+    let occurrence = |seen: &mut HashMap<String, u16>, identity: String| {
+        let n = seen.entry(identity.clone()).or_default();
+        *n += 1;
+        (identity, *n)
+    };
+    for event in events {
+        match event {
+            Event::Chapter(c) => {
+                verse = (*c, 0);
+                seen.clear();
+            }
+            Event::Verse(v) => {
+                verse.1 = *v;
+                seen.clear();
+            }
+            Event::Word(text) => words.push(HebrewWord {
+                verse,
+                identity: occurrence(&mut seen, identity(text, true)),
+                bare_identity: occurrence(&mut seen, format!("~{}", identity(text, false))),
+                letters: bare_letters(text),
+            }),
+            _ => {}
+        }
+    }
+    words
+}
+
+/// Line up two word sequences by their letters: for each word of `from`, the
+/// index of the word of `to` it falls in, if any.
+///
+/// Mostly the two agree word for word. Where they divide words differently,
+/// a run of up to three words on each side spelling the same letters is
+/// matched by where each word of `from` starts. Anything else is a stretch
+/// one text has and the other lacks or spells differently; reading resumes
+/// at the nearest place both agree for three words running, words of the
+/// stretch pairing off in order. A long stretch (a whole verse one text
+/// lacks) widens the search until it is found.
+fn line_up(from: &[&str], to: &[&str]) -> Vec<Option<usize>> {
+    const AGREE: usize = 3;
+    let mut placed = vec![None; from.len()];
+    let (mut i, mut j) = (0, 0);
+    while i < from.len() && j < to.len() {
+        if from[i] == to[j] {
+            placed[i] = Some(j);
+            i += 1;
+            j += 1;
+            continue;
+        }
+        if let Some((k, l)) = regrouped(&from[i..], &to[j..]) {
+            let mut owner = Vec::new();
+            for (n, word) in to[j..j + l].iter().enumerate() {
+                owner.extend(std::iter::repeat_n(j + n, word.chars().count()));
+            }
+            let mut offset = 0;
+            for (n, word) in from[i..i + k].iter().enumerate() {
+                placed[i + n] = owner.get(offset).or(owner.last()).copied();
+                offset += word.chars().count();
+            }
+            i += k;
+            j += l;
+            continue;
+        }
+        let agree = |di: usize, dj: usize| {
+            let (a, b) = (&from[i + di..], &to[j + dj..]);
+            let n = AGREE.min(a.len()).min(b.len());
+            n > 0 && a[..n] == b[..n]
+        };
+        let mut window = 8;
+        let resume = loop {
+            let found = (1..=2 * window).find_map(|distance| {
+                (0..=distance)
+                    .map(|di| (di, distance - di))
+                    .filter(|&(di, dj)| di <= window && dj <= window)
+                    .filter(|&(di, dj)| i + di < from.len() && j + dj < to.len())
+                    .find(|&(di, dj)| agree(di, dj))
+            });
+            if found.is_some() || window >= 1024 {
+                break found;
+            }
+            window *= 4;
+        };
+        let Some((di, dj)) = resume else { break };
+        for n in 0..di.min(dj) {
+            placed[i + n] = Some(j + n);
+        }
+        i += di;
+        j += dj;
+    }
+    placed
+}
+
+/// The shortest runs at the start of `from` and `to`, of up to three words
+/// each and not both a single word, that spell the same letters.
+fn regrouped(from: &[&str], to: &[&str]) -> Option<(usize, usize)> {
+    for k in 1..=3.min(from.len()) {
+        let spelled: String = from[..k].concat();
+        for l in 1..=3.min(to.len()) {
+            if (k, l) != (1, 1) && to[..l].concat() == spelled {
+                return Some((k, l));
+            }
+        }
+    }
+    None
+}
+
+/// A word of the corpus: its verse's ref and its position in the verse.
+type CorpusWord = (i64, u16);
+
+/// A piece of an English verse as read: a word with the Hebrew it renders,
+/// or text between words.
+#[derive(Debug)]
+enum Piece {
+    Word {
+        text: String,
+        supplied: bool,
+        renders: Vec<CorpusWord>,
+    },
+    Text(String),
+}
+
+/// A verse of the ULT, its alignments resolved to the corpus.
+#[derive(Debug)]
+struct EnglishVerse {
+    verse: ChapterVerse,
+    pieces: Vec<Piece>,
+}
+
+/// How a book's alignments resolved, for the log and the tests.
+#[derive(Debug, Default, Clone, Copy, PartialEq, Eq)]
+pub struct TranslationSummary {
+    /// Verses written.
+    pub verses: usize,
+    /// English words, and how many of them render a word of the corpus.
+    pub words: usize,
+    pub linked: usize,
+    /// Alignments naming a Hebrew word the UHB does not have where they say.
+    pub unresolved: usize,
+    /// Alignments naming a UHB word the corpus does not have: mostly a ketiv
+    /// read differently, or never read at all.
+    pub unplaced: usize,
+    /// English verses rendering no word of the corpus, which have nowhere to
+    /// go (Nehemiah 7:68, which Leningrad lacks).
+    pub dropped: usize,
+}
+
+impl std::ops::AddAssign for TranslationSummary {
+    fn add_assign(&mut self, other: Self) {
+        self.verses += other.verses;
+        self.words += other.words;
+        self.linked += other.linked;
+        self.unresolved += other.unresolved;
+        self.unplaced += other.unplaced;
+        self.dropped += other.dropped;
+    }
+}
+
+/// Read a book of the ULT, resolving each word's alignments through the
+/// UHB (`hebrew`, and `placed`, where each of its words fell in the corpus,
+/// `corpus`).
+fn english_verses(
+    events: &[Event],
+    hebrew: &[HebrewWord],
+    placed: &[Option<usize>],
+    corpus: &[CorpusWord],
+    summary: &mut TranslationSummary,
+) -> Vec<EnglishVerse> {
+    let mut by_identity: HashMap<(ChapterVerse, &(String, u16)), usize> = HashMap::new();
+    for (index, word) in hebrew.iter().enumerate() {
+        by_identity.insert((word.verse, &word.identity), index);
+        by_identity
+            .entry((word.verse, &word.bare_identity))
+            .or_insert(index);
+    }
+    // A UHB word by its verse and identity. A psalm title is verse 0 in one
+    // text and part of verse 1 in the other as often as not, so each also
+    // tries the other.
+    let find = |verse: ChapterVerse, content: &str, occurrence: u16| -> Option<usize> {
+        let alternative = match verse.1 {
+            0 => Some((verse.0, 1)),
+            1 => Some((verse.0, 0)),
+            _ => None,
+        };
+        let full = (identity(content, true), occurrence);
+        let bare = (format!("~{}", identity(content, false)), occurrence);
+        [Some(verse), alternative]
+            .into_iter()
+            .flatten()
+            .find_map(|v| {
+                by_identity
+                    .get(&(v, &full))
+                    .or_else(|| by_identity.get(&(v, &bare)))
+                    .copied()
+            })
+    };
+
+    let mut verses: Vec<EnglishVerse> = Vec::new();
+    let mut chapter = 0;
+    // The open alignments, outermost first.
+    let mut open: Vec<(String, u16)> = Vec::new();
+    let mut supplied = false;
+    for event in events {
+        match event {
+            Event::Chapter(c) => {
+                chapter = *c;
+                // A title opens the chapter's first verse when it comes before it.
+                verses.push(EnglishVerse {
+                    verse: (chapter, 0),
+                    pieces: Vec::new(),
+                });
+            }
+            Event::Verse(v) => {
+                supplied = false;
+                match verses.last_mut() {
+                    // No words before the first verse: no title.
+                    Some(last) if last.verse == (chapter, 0) && !has_words(last) => {
+                        last.verse.1 = *v;
+                        last.pieces.clear();
+                    }
+                    _ => verses.push(EnglishVerse {
+                        verse: (chapter, *v),
+                        pieces: Vec::new(),
+                    }),
+                }
+            }
+            Event::Title => {}
+            Event::AlignStart {
+                content,
+                occurrence,
+            } => open.push((content.clone(), *occurrence)),
+            Event::AlignEnd => {
+                if open.pop().is_none() {
+                    debug!("ULT {chapter}: an alignment closed that was never opened");
+                }
+            }
+            Event::Word(text) => {
+                let Some(verse) = verses.last_mut() else {
+                    continue;
+                };
+                summary.words += 1;
+                let mut renders = Vec::new();
+                // Innermost first: the word the English most nearly renders.
+                for (content, occurrence) in open.iter().rev() {
+                    let Some(index) = find(verse.verse, content, *occurrence) else {
+                        debug!(
+                            "ULT {:?}: no {content} #{occurrence} in the UHB",
+                            verse.verse
+                        );
+                        summary.unresolved += 1;
+                        continue;
+                    };
+                    let Some(at) = placed[index] else {
+                        summary.unplaced += 1;
+                        continue;
+                    };
+                    if !renders.contains(&corpus[at]) {
+                        renders.push(corpus[at]);
+                    }
+                }
+                if !renders.is_empty() {
+                    summary.linked += 1;
+                }
+                verse.pieces.push(Piece::Word {
+                    text: text.clone(),
+                    supplied,
+                    renders,
+                });
+            }
+            Event::Text(text) => {
+                let Some(verse) = verses.last_mut() else {
+                    continue;
+                };
+                let mut plain = String::new();
+                for c in text.chars() {
+                    match c {
+                        '{' => supplied = true,
+                        '}' => supplied = false,
+                        c => plain.push(c),
+                    }
+                }
+                verse.pieces.push(Piece::Text(plain));
+            }
+        }
+    }
+    verses.retain(has_words);
+    verses
+}
+
+fn has_words(verse: &EnglishVerse) -> bool {
+    verse.pieces.iter().any(|p| matches!(p, Piece::Word { .. }))
+}
+
+/// The Haqor verse an English verse is filed under: the one most of its
+/// words render, the earliest of those tied.
+fn home_verse(verse: &EnglishVerse) -> Option<i64> {
+    let mut counts: HashMap<i64, usize> = HashMap::new();
+    for piece in &verse.pieces {
+        if let Piece::Word { renders, .. } = piece {
+            for (reference, _) in renders {
+                *counts.entry(*reference).or_default() += 1;
+            }
+        }
+    }
+    counts
+        .into_iter()
+        .max_by_key(|&(reference, count)| (count, std::cmp::Reverse(reference)))
+        .map(|(reference, _)| reference)
+}
+
+/// A link from a verse filed under `home` to `word`, as short as it can be
+/// written.
+fn link(home: i64, (reference, position): CorpusWord) -> String {
+    let (chapter, verse) = ((reference >> 8) & 0xff, reference & 0xff);
+    if reference == home {
+        position.to_string()
+    } else if reference >> 8 == home >> 8 {
+        format!("{verse}:{position}")
+    } else {
+        format!("{chapter}:{verse}:{position}")
+    }
+}
+
+fn push_escaped(out: &mut String, text: &str, special: &[char]) {
+    for c in text.chars() {
+        if c == '\\' || special.contains(&c) {
+            out.push('\\');
+        }
+        out.push(c);
+    }
+}
+
+/// A run of an English verse as it is written: words rendering the same
+/// Hebrew (none, for plain text), all supplied or none.
+#[derive(Debug)]
+struct Run {
+    text: String,
+    supplied: bool,
+    renders: Vec<CorpusWord>,
+    /// Text between words, which a following word may not join.
+    between: bool,
+}
+
+/// Write an English verse, filed under `home`, in the compact form: words
+/// rendering the same Hebrew next to each other gather into one span, spaces
+/// are collapsed, and supplied words are braced.
+fn write_verse(pieces: &[Piece], home: i64) -> String {
+    let mut runs: Vec<Run> = Vec::new();
+    for piece in pieces {
+        match piece {
+            Piece::Text(text) => match runs.last_mut() {
+                Some(last) if last.between => last.text.push_str(text),
+                _ => runs.push(Run {
+                    text: text.clone(),
+                    supplied: false,
+                    renders: Vec::new(),
+                    between: true,
+                }),
+            },
+            Piece::Word {
+                text,
+                supplied,
+                renders,
+            } => {
+                let joins = |run: &Run| {
+                    !run.between && run.supplied == *supplied && run.renders == *renders
+                };
+                let len = runs.len();
+                // Only a space between this and a run it joins.
+                if len >= 2
+                    && runs[len - 1].between
+                    && runs[len - 1].text.trim().is_empty()
+                    && joins(&runs[len - 2])
+                {
+                    runs.pop();
+                    let run = runs.last_mut().unwrap();
+                    run.text.push(' ');
+                    run.text.push_str(text);
+                } else if let Some(run) = runs.last_mut().filter(|r| joins(r)) {
+                    run.text.push_str(text);
+                } else {
+                    runs.push(Run {
+                        text: text.clone(),
+                        supplied: *supplied,
+                        renders: renders.clone(),
+                        between: false,
+                    });
+                }
+            }
+        }
+    }
+
+    let mut out = String::new();
+    for run in &runs {
+        if run.between {
+            let mut last_space = false;
+            for c in run.text.chars() {
+                if c.is_whitespace() {
+                    if !last_space {
+                        out.push(' ');
+                    }
+                    last_space = true;
+                } else {
+                    push_escaped(&mut out, c.encode_utf8(&mut [0; 4]), &['[', '{', '}']);
+                    last_space = false;
+                }
+            }
+            continue;
+        }
+        if run.supplied {
+            out.push('{');
+        }
+        if run.renders.is_empty() {
+            push_escaped(&mut out, &run.text, &['[', '{', '}']);
+        } else {
+            out.push('[');
+            push_escaped(&mut out, &run.text, &['|']);
+            out.push('|');
+            let links: Vec<String> = run.renders.iter().map(|&w| link(home, w)).collect();
+            out.push_str(&links.join(","));
+            out.push(']');
+        }
+        if run.supplied {
+            out.push('}');
+        }
+    }
+    out.trim().to_string()
+}
+
+/// One book: the ULT's and UHB's USFM, and the corpus's words for the book in
+/// order, each with its letters. Returns each verse's compact English by ref.
+fn import_book(
+    ult: &str,
+    uhb: &str,
+    corpus: &[(CorpusWord, String)],
+    summary: &mut TranslationSummary,
+) -> Result<Vec<(i64, String)>> {
+    let hebrew = hebrew_words(&read_usfm(uhb)?);
+    let from: Vec<&str> = hebrew.iter().map(|w| w.letters.as_str()).collect();
+    let to: Vec<&str> = corpus.iter().map(|(_, l)| l.as_str()).collect();
+    let placed = line_up(&from, &to);
+    let words: Vec<CorpusWord> = corpus.iter().map(|(w, _)| *w).collect();
+    let english = english_verses(&read_usfm(ult)?, &hebrew, &placed, &words, summary);
+
+    let mut verses: Vec<(i64, String)> = Vec::new();
+    for verse in english {
+        let Some(home) = home_verse(&verse) else {
+            debug!("ULT {:?}: renders no word of the corpus", verse.verse);
+            summary.dropped += 1;
+            continue;
+        };
+        let text = write_verse(&verse.pieces, home);
+        match verses.iter_mut().find(|(r, _)| *r == home) {
+            // Two English verses rendering the same Hebrew one.
+            Some((_, existing)) => {
+                existing.push(' ');
+                existing.push_str(&text);
+            }
+            None => verses.push((home, text)),
+        }
+    }
+    verses.sort_by_key(|(r, _)| *r);
+    summary.verses += verses.len();
+    Ok(verses)
+}
+
+/// A book's USFM file in `dir`, by the number its name starts with.
+fn book_file(dir: &Path, number: usize) -> Result<PathBuf> {
+    let prefix = format!("{number:02}-");
+    std::fs::read_dir(dir)
+        .with_context(|| {
+            format!(
+                "reading {} (run scripts/fetch-unfoldingword.sh)",
+                dir.display()
+            )
+        })?
+        .filter_map(|entry| entry.ok().map(|e| e.path()))
+        .find(|p| {
+            p.file_name()
+                .and_then(|n| n.to_str())
+                .is_some_and(|n| n.starts_with(&prefix) && n.ends_with(".usfm"))
+        })
+        .with_context(|| {
+            format!(
+                "no book {number} in {} (run scripts/fetch-unfoldingword.sh)",
+                dir.display()
+            )
+        })
+}
+
+/// Rebuild the `translation_verse` table of a runtime database in place from
+/// `src_texts/unfoldingWord`.
+pub fn build_translation(db: &Connection, src_texts: &Path) -> Result<TranslationSummary> {
+    let dir = source_dir(src_texts);
+    let tx = db.unchecked_transaction()?;
+    tx.execute_batch(SCHEMA)?;
+    let mut summary = TranslationSummary::default();
+    {
+        let mut words = tx.prepare(
+            "SELECT w.ref, w.position, s.text FROM word w JOIN surface s USING(surface_id) \
+             WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position",
+        )?;
+        let mut insert = tx.prepare("INSERT INTO translation_verse(ref, text) VALUES (?1, ?2)")?;
+        // Both texts number their files in the English order, as the TSK's
+        // book keys do.
+        for number in 1..=39 {
+            let book = crate::tsk::book_of_key(number).context("an Old Testament book")?;
+            let read = |name: &str| -> Result<String> {
+                let path = book_file(&dir.join(name), number)?;
+                std::fs::read_to_string(&path)
+                    .with_context(|| format!("reading {}", path.display()))
+            };
+            let (ult, uhb) = (read("en_ult")?, read("hbo_uhb")?);
+            let first = pack_ref(book.into(), 0, 0);
+            let corpus = words
+                .query_map([first, first | 0xffff], |row| {
+                    Ok((
+                        (row.get(0)?, row.get(1)?),
+                        bare_letters(&row.get::<_, String>(2)?),
+                    ))
+                })?
+                .collect::<rusqlite::Result<Vec<_>>>()?;
+            if corpus.is_empty() {
+                bail!("book {book} has no words in the corpus");
+            }
+            let mut book_summary = TranslationSummary::default();
+            for (reference, text) in import_book(&ult, &uhb, &corpus, &mut book_summary)? {
+                insert.execute(params![reference, text])?;
+            }
+            debug!("ULT book {number}: {book_summary:?}");
+            summary += book_summary;
+        }
+    }
+    tx.commit()?;
+    info!(
+        "Translation: {} verses; {} of {} English words linked ({} alignments unresolved, \
+         {} on words the corpus lacks; {} verses dropped)",
+        summary.verses,
+        summary.linked,
+        summary.words,
+        summary.unresolved,
+        summary.unplaced,
+        summary.dropped
+    );
+    Ok(summary)
+}
+
+/// `db gen-translation`: rebuild the `translation_verse` table of the runtime
+/// database at `path` in place and re-stamp it, so syncing it to the app
+/// reinstalls it.
+pub fn gen_translation(path: &Path, src_texts: &Path) -> Result<TranslationSummary> {
+    let db = Connection::open(path).with_context(|| format!("opening {}", path.display()))?;
+    let summary = build_translation(&db, src_texts)?;
+    crate::runtime_db::restamp_built(&db)?;
+    Ok(summary)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    /// Genesis 1:1-2 as the UHB has them, abridged.
+    const UHB: &str = "\\id GEN unfoldingWord® Hebrew Bible
+\\c 1
+\\p
+\\v 1
+\\w בְּ\u{2060}רֵאשִׁ֖ית|lemma=\"רֵאשִׁית\"\\w*
+\\w בָּרָ֣א|lemma=\"בָּרָא\"\\w*
+\\w אֱלֹהִ֑ים|lemma=\"אֱלֹהִים\"\\w*
+\\w אֵ֥ת|lemma=\"אֵת\"\\w*
+\\w הַ\u{2060}שָּׁמַ֖יִם|lemma=\"שָׁמַיִם\"\\w*׃
+\\v 2
+\\w וְ\u{2060}חֹ֖שֶׁךְ|lemma=\"חֹשֶׁךְ\"\\w*
+\\w עַל|lemma=\"עַל\"\\w*־\\w פְּנֵ֣י|lemma=\"פָּנִים\"\\w*
+\\w תְה֑וֹם|lemma=\"תְּהוֹם\"\\w*
+\\f + \\ft Q \\+w תְּה֑וֹם|lemma=\"תְּהוֹם\"\\+w*\\f*
+";
+
+    /// Their ULT, abridged: \"the heavens\" renders two words, nested, and
+    /// \"was\" is supplied.
+    const ULT: &str = "\\id GEN EN_ULT
+\\h Genesis
+\\c 1
+\\p
+\\v 1 \\zaln-s |x-content=\"בְּ\u{2060}רֵאשִׁ֖ית\" x-occurrence=\"1\"\\*\\w In|x-occurrence=\"1\"\\w*
+\\w the|x-occurrence=\"1\"\\w*
+\\w beginning|x-occurrence=\"1\"\\w*\\zaln-e\\*
+\\zaln-s |x-content=\"אֱלֹהִ֑ים\" x-occurrence=\"1\"\\*\\w God|x-occurrence=\"1\"\\w*\\zaln-e\\*
+\\zaln-s |x-content=\"בָּרָ֣א\" x-occurrence=\"1\"\\*\\w created|x-occurrence=\"1\"\\w*\\zaln-e\\*
+\\zaln-s |x-content=\"אֵ֥ת\" x-occurrence=\"1\"\\*\\zaln-s |x-content=\"הַ\u{2060}שָּׁמַ֖יִם\" x-occurrence=\"1\"\\*\\w the|x-occurrence=\"2\"\\w*
+\\w heavens|x-occurrence=\"1\"\\w*\\zaln-e\\*\\zaln-e\\*.
+
+\\ts\\*
+\\v 2 \\zaln-s |x-content=\"וְ\u{2060}חֹ֖שֶׁךְ\" x-occurrence=\"1\"\\*\\w and|x-occurrence=\"1\"\\w*
+\\w darkness|x-occurrence=\"1\"\\w*\\zaln-e\\* {\\zaln-s |x-content=\"עַל\" x-occurrence=\"1\"\\*\\w was|x-occurrence=\"1\"\\w*}
+\\w over|x-occurrence=\"1\"\\w*\\zaln-e\\*
+\\zaln-s |x-content=\"פְּנֵ֣י\" x-occurrence=\"1\"\\*\\w the|x-occurrence=\"1\"\\w*
+\\w surface|x-occurrence=\"1\"\\w*
+\\w of|x-occurrence=\"1\"\\w*\\zaln-e\\*
+\\zaln-s |x-content=\"תְה֑וֹם\" x-occurrence=\"1\"\\*\\w the|x-occurrence=\"2\"\\w*
+\\w deep|x-occurrence=\"1\"\\w*\\zaln-e\\*\\f + \\ft Or \\fqa the abyss\\fqa*\\f*.
+";
+
+    fn corpus(verses: &[&[&str]]) -> Vec<(CorpusWord, String)> {
+        verses
+            .iter()
+            .enumerate()
+            .flat_map(|(v, words)| {
+                words
+                    .iter()
+                    .enumerate()
+                    .map(move |(p, w)| ((pack_ref(1, 1, v as i64 + 1), p as u16), bare_letters(w)))
+            })
+            .collect()
+    }
+
+    fn import(ult: &str, uhb: &str, corpus: &[(CorpusWord, String)]) -> Vec<(i64, String)> {
+        let mut summary = TranslationSummary::default();
+        import_book(ult, uhb, corpus, &mut summary).unwrap()
+    }
+
+    #[test]
+    fn writes_aligned_english() {
+        let corpus = corpus(&[
+            &["בְּרֵאשִׁית", "בָּרָא", "אֱלֹהִים", "אֵת", "הַשָּׁמַיִם"],
+            &["וְחֹשֶׁךְ", "עַל", "פְּנֵי", "תְהוֹם"],
+        ]);
+        let verses = import(ULT, UHB, &corpus);
+        assert_eq!(
+            verses,
+            [
+                (
+                    pack_ref(1, 1, 1),
+                    "[In the beginning|0] [God|2] [created|1] [the heavens|4,3].".to_string()
+                ),
+                (
+                    pack_ref(1, 1, 2),
+                    "[and darkness|0] {[was|1]} [over|1] [the surface of|2] [the deep|3]."
+                        .to_string()
+                ),
+            ]
+        );
+        // And the core reads back what was written.
+        let spans = haqor_core::translation::parse(&verses[1].1, 1, 2).unwrap();
+        let text: String = spans.iter().map(|s| s.text.as_str()).collect();
+        assert_eq!(text, "and darkness was over the surface of the deep.");
+        assert!(spans[2].supplied, "{spans:?}");
+    }
+
+    /// The English numbering does not decide where a verse goes: the Hebrew
+    /// its words render does. Here the UHB's verse 1 is the corpus's verse 2.
+    #[test]
+    fn files_verses_by_the_hebrew_they_render() {
+        let corpus = corpus(&[
+            &["שִׁיר", "הַמַּעֲלוֹת"],
+            &["בְּרֵאשִׁית", "בָּרָא", "אֱלֹהִים", "אֵת", "הַשָּׁמַיִם"],
+            &["וְחֹשֶׁךְ", "עַל", "פְּנֵי", "תְהוֹם"],
+        ]);
+        let verses = import(ULT, UHB, &corpus);
+        assert_eq!(verses[0].0, pack_ref(1, 1, 2));
+        assert_eq!(verses[1].0, pack_ref(1, 1, 3));
+    }
+
+    /// The corpus writes the qere where the UHB writes the ketiv: the word
+    /// still pairs off with its neighbours agreeing.
+    #[test]
+    fn lines_up_across_differences() {
+        let placed = line_up(
+            &["א", "כתיב", "ב", "ג", "ד", "הללו", "יה", "ה"],
+            &["א", "קרי", "ב", "ג", "ד", "הללויה", "ה"],
+        );
+        assert_eq!(
+            placed,
+            [
+                Some(0),
+                Some(1),
+                Some(2),
+                Some(3),
+                Some(4),
+                Some(5),
+                Some(5),
+                Some(6)
+            ]
+        );
+        // A verse one text lacks is stepped over.
+        let extra: Vec<String> = (0..40).map(|n| format!("x{n}")).collect();
+        let mut from = vec!["א", "ב", "ג"];
+        from.extend(extra.iter().map(String::as_str));
+        from.extend(["ד", "ה", "ו", "ז"]);
+        let placed = line_up(&from, &["א", "ב", "ג", "ד", "ה", "ו", "ז"]);
+        assert_eq!(placed[43..], [Some(3), Some(4), Some(5), Some(6)]);
+        assert!(placed[3..43].iter().all(Option::is_none));
+    }
+
+    #[test]
+    fn identity_ignores_mark_order_and_joiners() {
+        // Patah then dagesh, and dagesh then patah.
+        assert_eq!(
+            identity("מִ\u{2060}מַּתָּנָה", true),
+            identity("מִמּ\u{5b7}תָּנָה", true)
+        );
+        assert_ne!(identity("תֹ֨הוּ֙", true), identity("תֹהוּ", true));
+        assert_eq!(identity("תֹ֨הוּ֙", false), identity("תֹהוּ", false));
+    }
+
+    #[test]
+    fn reads_usfm_events() {
+        let events = read_usfm(
+            "\\c 3\n\\d \\w A|x\\w* \\v 1 \\qa Aleph\\qa*\\q1 \\w b|x\\w*\\f + \\ft note\\f*.",
+        )
+        .unwrap();
+        assert_eq!(
+            events,
+            [
+                Event::Chapter(3),
+                Event::Text("\n".into()),
+                Event::Title,
+                Event::Text(" ".into()),
+                Event::Word("A".into()),
+                Event::Text(" ".into()),
+                Event::Verse(1),
+                Event::Text(" ".into()),
+                Event::Text(" ".into()),
+                Event::Text(" ".into()),
+                Event::Word("b".into()),
+                Event::Text(".".into()),
+            ]
+        );
+    }
+
+    /// The whole source against the built corpus.
+    #[test]
+    fn complete_source_imports() {
+        let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("../..");
+        let src_texts = root.join("src_texts");
+        let database = root.join("data/haqor.db");
+        if !source_dir(&src_texts).exists() || !database.exists() {
+            eprintln!("skipping: fetched unfoldingWord source or data/haqor.db unavailable");
+            return;
+        }
+        // Into a copy: the test must not rewrite the shared database.
+        let db = Connection::open_in_memory().unwrap();
+        db.execute("ATTACH DATABASE ?1 AS src", [database.to_string_lossy()])
+            .unwrap();
+        db.execute_batch(
+            "CREATE TABLE word(ref INTEGER, position INTEGER, surface_id INTEGER,
+                               PRIMARY KEY(ref, position)) WITHOUT ROWID;
+             INSERT INTO word SELECT ref, position, surface_id FROM src.word
+               WHERE ref < (40 << 16);
+             CREATE TABLE surface(surface_id INTEGER PRIMARY KEY, text TEXT);
+             INSERT INTO surface SELECT surface_id, text FROM src.surface;
+             DETACH DATABASE src;",
+        )
+        .unwrap();
+        let summary = build_translation(&db, &src_texts).unwrap();
+        eprintln!("{summary:?}");
+        // Nearly every Hebrew verse has its English, and nearly every English
+        // word renders a word of the corpus.
+        assert!(summary.verses > 23_150, "{}", summary.verses);
+        assert!(summary.linked * 1000 > summary.words * 999, "{summary:?}");
+        assert!(summary.dropped < 5, "{}", summary.dropped);
+
+        let text: String = db
+            .query_row(
+                "SELECT text FROM translation_verse WHERE ref = ?1",
+                [pack_ref(1, 1, 1)],
+                |row| row.get(0),
+            )
+            .unwrap();
+        assert!(
+            text.starts_with("[In the beginning|0] [God|2] [created|1]"),
+            "{text}"
+        );
+        // Every verse parses.
+        let mut stmt = db
+            .prepare("SELECT ref, text FROM translation_verse")
+            .unwrap();
+        let rows = stmt
+            .query_map([], |row| {
+                Ok((row.get::<_, i64>(0)?, row.get::<_, String>(1)?))
+            })
+            .unwrap();
+        for row in rows {
+            let (reference, text) = row.unwrap();
+            let (chapter, verse) = (((reference >> 8) & 0xff) as u8, (reference & 0xff) as u8);
+            assert!(
+                haqor_core::translation::parse(&text, chapter, verse).is_some(),
+                "{reference}: {text}"
+            );
+        }
+    }
+}
