@@ -2727,17 +2727,24 @@ impl BlobReader {
         match codec.as_deref() {
             None | Some("none") => Ok(BlobReader::Plain),
             Some("zstd") => {
-                let raw: Vec<u8> = db.query_row(
-                    "SELECT data FROM data.blob_dict WHERE dict_id = 1",
-                    [],
-                    |row| row.get(0),
-                )?;
-                let dictionary = ruzstd::decoding::Dictionary::decode_dict(&raw)
-                    .map_err(|e| blob_error(format!("blob dictionary is unreadable: {e}")))?;
+                // Every dictionary: the build's (1), and any a later stage
+                // trained for blobs of another kind, such as the English
+                // translation (2). Each frame names the one it needs.
+                let mut stmt = db.prepare("SELECT data FROM data.blob_dict ORDER BY dict_id")?;
+                let dictionaries = stmt
+                    .query_map([], |row| row.get::<_, Vec<u8>>(0))?
+                    .collect::<rusqlite::Result<Vec<_>>>()?;
+                if dictionaries.is_empty() {
+                    return Err(blob_error("haqor.db has no blob dictionary".into()));
+                }
                 let mut decoder = ruzstd::decoding::FrameDecoder::new();
-                decoder
-                    .add_dict(dictionary)
-                    .map_err(|e| blob_error(format!("blob dictionary is unusable: {e}")))?;
+                for raw in dictionaries {
+                    let dictionary = ruzstd::decoding::Dictionary::decode_dict(&raw)
+                        .map_err(|e| blob_error(format!("blob dictionary is unreadable: {e}")))?;
+                    decoder
+                        .add_dict(dictionary)
+                        .map_err(|e| blob_error(format!("blob dictionary is unusable: {e}")))?;
+                }
                 Ok(BlobReader::Zstd(RefCell::new(Box::new(decoder))))
             }
             Some(other) => Err(blob_error(format!(
@@ -5177,7 +5184,13 @@ impl Bible {
              ORDER BY ref",
         )?;
         stmt.query_map([first, last], |row| {
-            Ok((ref_verse(row.get(0)?), row.get::<_, String>(1)?))
+            // A blob in whichever form `meta.blob_codec` says; text in a
+            // database built before the translation was stored as one.
+            let text = match row.get_ref(1)? {
+                rusqlite::types::ValueRef::Text(text) => String::from_utf8_lossy(text).into_owned(),
+                _ => self.blobs.decode(row.get(1)?)?,
+            };
+            Ok((ref_verse(row.get(0)?), text))
         })?
         .filter_map(|row| match row {
             Ok((verse, text)) => {
@@ -5304,9 +5317,33 @@ mod tests {
         )
         .expect("storing the dictionary");
 
+        // A second dictionary, for blobs of another kind (the English
+        // translation's): each frame decodes against the one it names.
+        let english: Vec<String> = (0..400)
+            .map(|n| format!("[In the beginning|0] [God|2] [created|1] {n}"))
+            .collect();
+        let english_samples: Vec<Vec<u8>> =
+            english.iter().map(|v| v.clone().into_bytes()).collect();
+        let english_dictionary =
+            zstd::dict::from_samples(&english_samples, 4096).expect("training a dictionary");
+        let mut english_compressor =
+            zstd::bulk::Compressor::with_dictionary(12, &english_dictionary)
+                .expect("preparing the compressor");
+        db.execute(
+            "INSERT INTO data.blob_dict(dict_id, data) VALUES (2, ?1)",
+            [&english_dictionary],
+        )
+        .expect("storing the dictionary");
+
         let reader = BlobReader::open(&db).expect("opening the blob reader");
         for verse in &verses {
             let stored = compressor.compress(verse.as_bytes()).expect("compressing");
+            assert_eq!(&reader.decode(stored).expect("decoding"), verse);
+        }
+        for verse in &english {
+            let stored = english_compressor
+                .compress(verse.as_bytes())
+                .expect("compressing");
             assert_eq!(&reader.decode(stored).expect("decoding"), verse);
         }
     }

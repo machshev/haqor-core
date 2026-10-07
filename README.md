@@ -172,7 +172,10 @@ its words render, so Malachi 4:1 sits beside 3:19 and a psalm's title beside
 its first verse. 616,411 of 616,562 English words link to a word of the
 corpus. `Bible::chapter_translation` returns a chapter's English as spans,
 each naming the Hebrew words it renders and whether it is supplied (the
-ULT's braced, italic words).
+ULT's braced, italic words). With `--blob-codec zstd` the verses are compressed against a
+dictionary trained on them, stored beside the build's own in `blob_dict` (the
+Hebrew one knows nothing useful about English), taking the table from about
+4.4 MiB to 2.0 MiB.
 
 The fetch script pins the ULT at a `master` commit rather than its latest
 release (v91), which leaves out the books still being checked (Numbers,

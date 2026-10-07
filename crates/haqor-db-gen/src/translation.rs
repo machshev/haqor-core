@@ -28,14 +28,25 @@ use std::path::{Path, PathBuf};
 use anyhow::{Context, Result, bail};
 use haqor_core::data_support::bare_letters;
 use log::{debug, info};
-use rusqlite::{Connection, params};
+use rusqlite::{Connection, OptionalExtension, params};
 
 use crate::runtime_db::pack_ref;
 
 pub const SCHEMA: &str = "
 DROP TABLE IF EXISTS translation_verse;
-CREATE TABLE translation_verse(ref INTEGER PRIMARY KEY, text TEXT NOT NULL);
+CREATE TABLE translation_verse(ref INTEGER PRIMARY KEY, text BLOB NOT NULL);
 ";
+
+/// The translation's own zstd dictionary in `blob_dict`, beside the one the
+/// rest of the build trains (1). A dictionary trained on Hebrew verses knows
+/// nothing useful about English, and each compressed frame names the
+/// dictionary it needs, so a reader holding both decodes either.
+const DICT_ID: i64 = 2;
+
+/// As for the other blobs: a trained dictionary is what makes compressing
+/// verse-sized text worthwhile, and past level 12 zstd spends much for little.
+const ZSTD_DICT_BYTES: usize = 65_536;
+const ZSTD_LEVEL: i32 = 12;
 
 /// `src_texts/unfoldingWord`.
 pub fn source_dir(src_texts: &Path) -> PathBuf {
@@ -373,6 +384,8 @@ pub struct TranslationSummary {
     /// English verses rendering no word of the corpus, which have nowhere to
     /// go (Nehemiah 7:68, which Leningrad lacks).
     pub dropped: usize,
+    /// Bytes stored, compressed or not, all verses together.
+    pub bytes: usize,
 }
 
 impl std::ops::AddAssign for TranslationSummary {
@@ -383,6 +396,7 @@ impl std::ops::AddAssign for TranslationSummary {
         self.unresolved += other.unresolved;
         self.unplaced += other.unplaced;
         self.dropped += other.dropped;
+        self.bytes += other.bytes;
     }
 }
 
@@ -725,12 +739,12 @@ pub fn build_translation(db: &Connection, src_texts: &Path) -> Result<Translatio
     let tx = db.unchecked_transaction()?;
     tx.execute_batch(SCHEMA)?;
     let mut summary = TranslationSummary::default();
+    let mut verses: Vec<(i64, String)> = Vec::new();
     {
         let mut words = tx.prepare(
             "SELECT w.ref, w.position, s.text FROM word w JOIN surface s USING(surface_id) \
              WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position",
         )?;
-        let mut insert = tx.prepare("INSERT INTO translation_verse(ref, text) VALUES (?1, ?2)")?;
         // Both texts number their files in the English order, as the TSK's
         // book keys do.
         for number in 1..=39 {
@@ -754,18 +768,18 @@ pub fn build_translation(db: &Connection, src_texts: &Path) -> Result<Translatio
                 bail!("book {book} has no words in the corpus");
             }
             let mut book_summary = TranslationSummary::default();
-            for (reference, text) in import_book(&ult, &uhb, &corpus, &mut book_summary)? {
-                insert.execute(params![reference, text])?;
-            }
+            verses.extend(import_book(&ult, &uhb, &corpus, &mut book_summary)?);
             debug!("ULT book {number}: {book_summary:?}");
             summary += book_summary;
         }
     }
+    summary.bytes = write_verses(&tx, &verses)?;
     tx.commit()?;
     info!(
-        "Translation: {} verses; {} of {} English words linked ({} alignments unresolved, \
-         {} on words the corpus lacks; {} verses dropped)",
+        "Translation: {} verses ({} KiB); {} of {} English words linked ({} alignments \
+         unresolved, {} on words the corpus lacks; {} verses dropped)",
         summary.verses,
+        summary.bytes / 1024,
         summary.linked,
         summary.words,
         summary.unresolved,
@@ -773,6 +787,82 @@ pub fn build_translation(db: &Connection, src_texts: &Path) -> Result<Translatio
         summary.dropped
     );
     Ok(summary)
+}
+
+/// Whether the database stores its blobs compressed (`meta.blob_codec`).
+/// A database without a `meta` table, as the tests build, does not.
+fn compresses_blobs(db: &Connection) -> Result<bool> {
+    let has_meta: bool = db.query_row(
+        "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'meta')",
+        [],
+        |row| row.get(0),
+    )?;
+    if !has_meta {
+        return Ok(false);
+    }
+    let codec: Option<String> = db
+        .query_row(
+            "SELECT value FROM meta WHERE key = 'blob_codec'",
+            [],
+            |row| row.get(0),
+        )
+        .optional()?;
+    match codec.as_deref() {
+        None | Some("none") => Ok(false),
+        Some("zstd") => Ok(true),
+        Some(other) => bail!("unknown blob codec {other:?}"),
+    }
+}
+
+/// The id a zstd dictionary declares in its header, which the frames
+/// compressed with it repeat.
+fn dictionary_id(dictionary: &[u8]) -> Option<u32> {
+    Some(u32::from_le_bytes(dictionary.get(4..8)?.try_into().ok()?))
+}
+
+/// Write the verses in the form `meta.blob_codec` asks for: as they are, or
+/// compressed against a dictionary trained on them, stored as [`DICT_ID`].
+/// Returns the bytes written.
+fn write_verses(db: &Connection, verses: &[(i64, String)]) -> Result<usize> {
+    let mut insert = db.prepare("INSERT INTO translation_verse(ref, text) VALUES (?1, ?2)")?;
+    let mut bytes = 0;
+    if !compresses_blobs(db)? {
+        for (reference, text) in verses {
+            insert.execute(params![reference, text.as_bytes()])?;
+            bytes += text.len();
+        }
+        return Ok(bytes);
+    }
+    let samples: Vec<&[u8]> = verses.iter().map(|(_, t)| t.as_bytes()).collect();
+    let dictionary = zstd::dict::from_samples(&samples, ZSTD_DICT_BYTES)
+        .context("training the translation's zstd dictionary")?;
+    // The two dictionaries must differ in id for a frame to name its own.
+    let others: Vec<Vec<u8>> = db
+        .prepare("SELECT data FROM blob_dict WHERE dict_id != ?1")?
+        .query_map([DICT_ID], |row| row.get(0))?
+        .collect::<rusqlite::Result<_>>()?;
+    let id = dictionary_id(&dictionary).context("an unreadable trained dictionary")?;
+    if others.iter().any(|other| dictionary_id(other) == Some(id)) {
+        bail!("the translation's zstd dictionary has the same id ({id}) as another");
+    }
+    db.execute(
+        "INSERT OR REPLACE INTO blob_dict(dict_id, data) VALUES (?1, ?2)",
+        params![DICT_ID, dictionary],
+    )?;
+    let mut compressor = zstd::bulk::Compressor::with_dictionary(ZSTD_LEVEL, &dictionary)
+        .context("preparing the translation's zstd compressor")?;
+    for (reference, text) in verses {
+        let blob = compressor
+            .compress(text.as_bytes())
+            .context("compressing a verse")?;
+        bytes += blob.len();
+        insert.execute(params![reference, blob])?;
+    }
+    info!(
+        "Trained a {} byte dictionary for the translation",
+        dictionary.len()
+    );
+    Ok(bytes)
 }
 
 /// `db gen-translation`: rebuild the `translation_verse` table of the runtime
@@ -958,6 +1048,55 @@ mod tests {
         );
     }
 
+    /// A database storing its blobs compressed gets the translation
+    /// compressed too, against a dictionary of its own beside the build's.
+    #[test]
+    fn compresses_when_the_database_does() {
+        let verses: Vec<(i64, String)> = (0..2000)
+            .map(|n| {
+                (
+                    n,
+                    format!("[And God|{n}] [said|1], “[Let there be|2] [light|3].” {n}"),
+                )
+            })
+            .collect();
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch(SCHEMA).unwrap();
+        db.execute_batch(
+            "CREATE TABLE meta(key TEXT PRIMARY KEY, value TEXT);
+             CREATE TABLE blob_dict(dict_id INTEGER PRIMARY KEY, data BLOB NOT NULL);
+             INSERT INTO meta VALUES ('blob_codec', 'zstd');",
+        )
+        .unwrap();
+        let hebrew: Vec<Vec<u8>> = (0..400)
+            .map(|n| format!("בְּרֵאשִׁית בָּרָא אֱלֹהִים {n}").into_bytes())
+            .collect();
+        let other = zstd::dict::from_samples(&hebrew, 4096).unwrap();
+        db.execute("INSERT INTO blob_dict VALUES (1, ?1)", [&other])
+            .unwrap();
+
+        let bytes = write_verses(&db, &verses).unwrap();
+        let plain: usize = verses.iter().map(|(_, t)| t.len()).sum();
+        assert!(bytes * 2 < plain, "{bytes} of {plain}");
+
+        let dictionary: Vec<u8> = db
+            .query_row("SELECT data FROM blob_dict WHERE dict_id = 2", [], |row| {
+                row.get(0)
+            })
+            .unwrap();
+        assert_ne!(dictionary_id(&dictionary), dictionary_id(&other));
+        let mut decompressor = zstd::bulk::Decompressor::with_dictionary(&dictionary).unwrap();
+        let stored: Vec<u8> = db
+            .query_row(
+                "SELECT text FROM translation_verse WHERE ref = 7",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+        let text = decompressor.decompress(&stored, 1024).unwrap();
+        assert_eq!(String::from_utf8(text).unwrap(), verses[7].1);
+    }
+
     /// The whole source against the built corpus.
     #[test]
     fn complete_source_imports() {
@@ -990,13 +1129,14 @@ mod tests {
         assert!(summary.linked * 1000 > summary.words * 999, "{summary:?}");
         assert!(summary.dropped < 5, "{}", summary.dropped);
 
-        let text: String = db
+        let text: Vec<u8> = db
             .query_row(
                 "SELECT text FROM translation_verse WHERE ref = ?1",
                 [pack_ref(1, 1, 1)],
                 |row| row.get(0),
             )
             .unwrap();
+        let text = String::from_utf8(text).unwrap();
         assert!(
             text.starts_with("[In the beginning|0] [God|2] [created|1]"),
             "{text}"
@@ -1007,11 +1147,12 @@ mod tests {
             .unwrap();
         let rows = stmt
             .query_map([], |row| {
-                Ok((row.get::<_, i64>(0)?, row.get::<_, String>(1)?))
+                Ok((row.get::<_, i64>(0)?, row.get::<_, Vec<u8>>(1)?))
             })
             .unwrap();
         for row in rows {
             let (reference, text) = row.unwrap();
+            let text = String::from_utf8(text).unwrap();
             let (chapter, verse) = (((reference >> 8) & 0xff) as u8, (reference & 0xff) as u8);
             assert!(
                 haqor_core::translation::parse(&text, chapter, verse).is_some(),
