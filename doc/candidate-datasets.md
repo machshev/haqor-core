@@ -2,17 +2,21 @@
 
 A handoff note: datasets Haqor might add, what each would give the reader, and
 what is known about its licence and how it would join to what Haqor already
-has. Nothing here is imported yet. Compiled 2026-10-07; licences marked
-*checked* were read from the source that day, the rest still need checking.
+has, and the status of those imported since. Compiled 2026-10-07, updated
+2026-10-08; licences marked *checked* were read from the source on one of
+those days, the rest still need checking.
 
 ## What Haqor already has
 
 The Leningrad Codex (UXLC), the OSHB morphology and lexicon (BDB, Strong's),
-Klein and Jastrow (Sefaria), STEP Bible's TAHOT, SEDRA's Peshitta NT, the
-Treasury of Scripture Knowledge, MACULA Hebrew's syntax trees, an English
-translation adapted from the unfoldingWord Literal Text (CC BY-SA 4.0,
-aligned word by word to the Hebrew), and the quotations and parallels the build
-finds by aligning roots. See [Data sources](../README.md#data-sources) and
+Klein and Jastrow (Sefaria), STEP Bible's TAHOT, TIPNR and TBESH, SEDRA's
+Peshitta NT, the Treasury of Scripture Knowledge, MACULA Hebrew's syntax
+trees, an English translation adapted from the unfoldingWord Literal Text
+(CC BY-SA 4.0, aligned word by word to the Hebrew), OpenBible.info's
+geocoding, and the quotations and parallels the build finds by aligning roots.
+The external datasets are vendored, prepared, in `src_texts`; Haqor keeps no
+Strong's numbers, so a dataset keyed by them joins through TAHOT while it is
+prepared. See [Data sources](../README.md#data-sources) and
 [Attribution](../README.md#attribution).
 
 ## Licensing stance
@@ -60,10 +64,20 @@ Every addition needs an entry in `dataSourceCredits`
 
 ### STEP Bible TIPNR and TBESH
 
-- **Source:** <https://github.com/STEPBible/STEPBible-Data>, the repository
-  `scripts/fetch-stepbible-data.sh` already fetches TAHOT from: `Proper
+- **Status:** imported (October 2026: `name_entity`, `word_name` and
+  `sense` with their companions; see the README's "People, places and word
+  senses"). Each word of the Hebrew text is linked to the person or place
+  it names and given its sense, through TAHOT's tags. TIPNR's ,
+   and  descriptions, which it says are adapted from Claude 3
+  Opus's output, are not used: Haqor shows TIPNR's own description and
+  summary.
+- **Source:** <https://github.com/STEPBible/STEPBible-Data>: `Proper
   Nouns/TIPNR …`, `Lexicons/TBESH …`.
-- **Licence:** CC BY 4.0 (*checked*, repository description and file names).
+- **Licence:** CC BY 4.0 (*checked*, repository description and file
+  headers). TBESH's Meaning column is the exception: it is the Online
+  Bible's abridged BDB, and the file asks that Online Bible's permission be
+  gained before using it, so Haqor takes only TBESH's glosses and sense
+  divisions (Tyndale House's own).
 - **What it gives:**
   - **TIPNR** tells apart the people and places that share a name (the many
     Zechariahs, two Bethlehems), each with a short description, family
@@ -124,11 +138,43 @@ Every addition needs an entry in `dataSourceCredits`
 
 ### OpenBible.info geocoding
 
+- **Status:** imported (October 2026: `name_location`). Each TIPNR place
+  finds its OpenBible place by the OpenBible name TIPNR gives it, and keeps
+  every identification with its confidence.
 - **Source:** <https://github.com/openbibleinfo/Bible-Geocoding-Data>.
   Licence CC BY 4.0 (*checked*).
 - **What it gives:** coordinates for every place named in the Bible.
 - **Fit:** with TIPNR to say which place a name is, a place name could open
   a map.
+
+### Tyndale Open Study Notes and Bible Dictionary
+
+- **Source:** Tyndale House Publishers' open resources, distributed by
+  unfoldingWord and others: the *Tyndale Open Study Notes*, theme notes,
+  book introductions and profiles of people, and the *Tyndale Bible
+  Dictionary*. Licence believed to be CC BY-SA 4.0 (*not checked*; find the
+  canonical download and read its licence).
+- **What it gives:** verse notes and dictionary articles in plain English,
+  and profiles of the main people.
+- **Fit:** the profiles would sit beside TIPNR's records of the same people,
+  and the dictionary beside its places; the notes would give a verse menu
+  something to say. Like the ULT, anything derived stays CC BY-SA.
+- **Joining:** notes are keyed by English verse references (re-number as
+  the TSK import does); profiles and articles by English name, which TIPNR's
+  English forms can match.
+
+### Gesenius' Hebrew Grammar
+
+- **Source:** *Gesenius' Hebrew Grammar*, edited by E. Kautzsch, translated
+  by A. E. Cowley (2nd English edition, Oxford, 1910): in the public domain.
+  Wikisource has a transcription (its own text is CC BY-SA; *not checked*),
+  and there are others to compare.
+- **What it gives:** the standard reference grammar, numbered by section
+  (§ 22 *Peculiarities of the Gutturals*).
+- **Fit:** the tutor's grammar points could link to the section that treats
+  each, for a learner who wants the full account; sections are cited by
+  number everywhere, so a link is stable.
+- **Joining:** by hand: a table from each grammar concept to its sections.
 
 ### Targums Onkelos and Jonathan
 

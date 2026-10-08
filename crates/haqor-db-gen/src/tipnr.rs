@@ -79,6 +79,9 @@ pub(crate) struct Record {
     /// A place's position as TIPNR gives it (from OpenBible.info's 2007
     /// data), latitude then longitude.
     pub coordinates: Option<(f64, f64)>,
+    /// The place's name in OpenBible.info's geocoding (`Bethlehem 1`), which
+    /// tells apart places TIPNR gives one name; empty if it has none.
+    pub openbible: String,
 }
 
 /// `text` without the Strong's numbers TIPNR now and then leaves in its prose
@@ -273,6 +276,7 @@ pub(crate) fn parse(text: &str) -> Result<Vec<Record>> {
                 links: Vec::new(),
                 forms: Vec::new(),
                 coordinates: None,
+                openbible: String::new(),
             };
             match kind {
                 Kind::Person => {
@@ -297,6 +301,10 @@ pub(crate) fn parse(text: &str) -> Result<Vec<Record>> {
                         .links
                         .extend(links(field(3)).into_iter().map(|l| ("inhabitant", l)));
                     record.coordinates = coordinates(field(4));
+                    // `Abronah= near Ezion-geber (…)`: the name, then what TIPNR says it
+                    // is near.
+                    let openbible = field(1).split('=').next().unwrap_or_default();
+                    record.openbible = strip_strongs(openbible).trim().replace('_', " ");
                 }
                 Kind::Other => record.description = strip_strongs(field(1)),
             }
@@ -404,6 +412,7 @@ Aramaic@2Ki.18.26-Rev=H0762\tA language\t\t\t\t\t>\t#A language\tLanguage
         assert_eq!(bethlehem.name, "Bethlehem");
         assert_eq!(bethlehem.kind, Kind::Place);
         assert_eq!(bethlehem.coordinates, Some((31.70536, 35.21026)));
+        assert_eq!(bethlehem.openbible, "Bethlehem 1");
         assert_eq!(bethlehem.links[0].0, "founder");
         // The Greek form is the New Testament's, and left out.
         assert_eq!(bethlehem.forms.len(), 2);

@@ -2656,6 +2656,16 @@ pub(crate) fn ref_verse(reference: i64) -> u8 {
     (reference & 0xFF) as u8
 }
 
+/// The word at `position` of a packed verse reference.
+pub(crate) fn word_at(reference: i64, position: u32) -> crate::names::WordAt {
+    crate::names::WordAt {
+        book: (reference >> 16) as u8,
+        chapter: ((reference >> 8) & 0xff) as u8,
+        verse: (reference & 0xff) as u8,
+        position,
+    }
+}
+
 #[derive(Debug)]
 pub struct Bible {
     db: Connection,
@@ -5201,6 +5211,330 @@ impl Bible {
         .collect()
     }
 
+    /// The person, place or other named thing the word at `position` of a
+    /// verse names (STEP Bible's TIPNR, which tells apart those sharing a
+    /// name), with everything known of it. `None` for a word naming none, the
+    /// New Testament, and a database built before names were.
+    pub fn word_name(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        position: u32,
+    ) -> rusqlite::Result<Option<crate::names::NameEntity>> {
+        if !self.has_table("word_name")? {
+            return Ok(None);
+        }
+        let id: Option<u32> = self
+            .db
+            .query_row(
+                "SELECT entity_id FROM data.word_name WHERE ref = ?1 AND position = ?2",
+                rusqlite::params![pack_ref(book, chapter, verse), position],
+                |row| row.get(0),
+            )
+            .optional()?;
+        match id {
+            Some(id) => self.name_entity(id),
+            None => Ok(None),
+        }
+    }
+
+    /// Which words of a chapter name a person, place or other named thing:
+    /// `(verse, position, id)` in order, for the reader to mark them.
+    pub fn chapter_names(&self, book: u8, chapter: u8) -> rusqlite::Result<Vec<(u8, u32, u32)>> {
+        if !self.has_table("word_name")? {
+            return Ok(Vec::new());
+        }
+        let (first, last) = chapter_range(book, chapter);
+        let mut stmt = self.db.prepare_cached(
+            "SELECT ref, position, entity_id FROM data.word_name \
+             WHERE ref BETWEEN ?1 AND ?2 ORDER BY ref, position",
+        )?;
+        stmt.query_map([first, last], |row| {
+            Ok((ref_verse(row.get(0)?), row.get(1)?, row.get(2)?))
+        })?
+        .collect()
+    }
+
+    fn name_summary(&self, id: u32) -> rusqlite::Result<Option<crate::names::NameSummary>> {
+        self.db
+            .prepare_cached(
+                "SELECT name, kind, description, origin, occurrences FROM data.name_entity \
+                 WHERE entity_id = ?1",
+            )?
+            .query_row([id], |row| {
+                Ok(crate::names::NameSummary {
+                    id,
+                    name: row.get(0)?,
+                    kind: crate::names::NameKind::parse(&row.get::<_, String>(1)?),
+                    description: row.get(2)?,
+                    origin: row.get(3)?,
+                    occurrences: row.get(4)?,
+                })
+            })
+            .optional()
+    }
+
+    fn name_locations(&self, id: u32) -> rusqlite::Result<Vec<crate::names::PlaceLocation>> {
+        let mut stmt = self.db.prepare_cached(
+            "SELECT latitude, longitude, confidence, kind, label FROM data.name_location \
+             WHERE entity_id = ?1 ORDER BY ord",
+        )?;
+        stmt.query_map([id], |row| {
+            Ok(crate::names::PlaceLocation {
+                latitude: row.get(0)?,
+                longitude: row.get(1)?,
+                confidence: row.get(2)?,
+                kind: row.get(3)?,
+                label: row.get(4)?,
+            })
+        })?
+        .collect()
+    }
+
+    /// A person, place or other named thing by its id (from
+    /// [`Bible::word_name`] or a [`crate::names::NameLink`]): its forms, its
+    /// links to others, and where a place may have been.
+    pub fn name_entity(&self, id: u32) -> rusqlite::Result<Option<crate::names::NameEntity>> {
+        if !self.has_table("name_entity")? {
+            return Ok(None);
+        }
+        let Some(summary) = self.name_summary(id)? else {
+            return Ok(None);
+        };
+        let (category, text): (String, String) = self.db.query_row(
+            "SELECT category, summary FROM data.name_entity WHERE entity_id = ?1",
+            [id],
+            |row| Ok((row.get(0)?, row.get(1)?)),
+        )?;
+        let forms = self
+            .db
+            .prepare_cached(
+                "SELECT hebrew, english, significance FROM data.name_form \
+                 WHERE entity_id = ?1 ORDER BY ord",
+            )?
+            .query_map([id], |row| {
+                let english: String = row.get(1)?;
+                Ok(crate::names::NameForm {
+                    hebrew: row.get(0)?,
+                    english: english
+                        .split("; ")
+                        .filter(|e| !e.is_empty())
+                        .map(str::to_string)
+                        .collect(),
+                    significance: row.get(2)?,
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let raw_links = self
+            .db
+            .prepare_cached(
+                "SELECT relation, flag, other_id FROM data.name_link \
+                 WHERE entity_id = ?1 ORDER BY ord",
+            )?
+            .query_map([id], |row| {
+                Ok((
+                    row.get::<_, String>(0)?,
+                    row.get::<_, String>(1)?,
+                    row.get::<_, u32>(2)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let mut links = Vec::new();
+        for (relation, flag, other) in raw_links {
+            if let Some(other) = self.name_summary(other)? {
+                links.push(crate::names::NameLink {
+                    relation,
+                    flag,
+                    other,
+                });
+            }
+        }
+        Ok(Some(crate::names::NameEntity {
+            summary,
+            category,
+            text,
+            forms,
+            links,
+            locations: self.name_locations(id)?,
+        }))
+    }
+
+    /// Every word of the text naming a person, place or other named thing,
+    /// in canonical order.
+    pub fn name_occurrences(&self, id: u32) -> rusqlite::Result<Vec<crate::names::WordAt>> {
+        if !self.has_table("word_name")? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT ref, position FROM data.word_name WHERE entity_id = ?1 ORDER BY ref, position",
+        )?;
+        stmt.query_map([id], |row| Ok(word_at(row.get(0)?, row.get(1)?)))?
+            .collect()
+    }
+
+    /// The places a chapter names that have a position, each with its
+    /// likeliest location and the verses naming it, in the order the chapter
+    /// first names them: what a map of the chapter shows.
+    pub fn chapter_places(
+        &self,
+        book: u8,
+        chapter: u8,
+    ) -> rusqlite::Result<Vec<crate::names::ChapterPlace>> {
+        let mut places: Vec<crate::names::ChapterPlace> = Vec::new();
+        for (verse, _, id) in self.chapter_names(book, chapter)? {
+            if let Some(place) = places.iter_mut().find(|p| p.place.id == id) {
+                if place.verses.last() != Some(&verse) {
+                    place.verses.push(verse);
+                }
+                continue;
+            }
+            let Some(summary) = self.name_summary(id)? else {
+                continue;
+            };
+            if summary.kind != crate::names::NameKind::Place {
+                continue;
+            }
+            let Some(location) = self.name_locations(id)?.into_iter().next() else {
+                continue;
+            };
+            places.push(crate::names::ChapterPlace {
+                place: summary,
+                location,
+                verses: vec![verse],
+            });
+        }
+        Ok(places)
+    }
+
+    /// The sense the word at `position` of a verse has there (STEP Bible's
+    /// TBESH), among its word's senses. `None` for a word with none known —
+    /// names, the New Testament — and a database built before senses were.
+    pub fn word_sense(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        position: u32,
+    ) -> rusqlite::Result<Option<crate::names::WordSense>> {
+        if !self.has_table("sense")? {
+            return Ok(None);
+        }
+        // The occurrence's own sense where it differs from its surface's
+        // (0: none), else the surface's.
+        let sense: Option<u32> = self
+            .db
+            .query_row(
+                "SELECT coalesce(\
+                   (SELECT sense_id FROM data.word_sense ws \
+                    WHERE ws.ref = w.ref AND ws.position = w.position), \
+                   (SELECT sense_id FROM data.surface_sense ss \
+                    WHERE ss.surface_id = w.surface_id)) \
+                 FROM data.word w WHERE w.ref = ?1 AND w.position = ?2",
+                rusqlite::params![pack_ref(book, chapter, verse), position],
+                |row| row.get(0),
+            )
+            .optional()?
+            .flatten();
+        let Some(sense) = sense.filter(|&s| s != 0) else {
+            return Ok(None);
+        };
+        let Some((lexeme, word, language, gloss)) = self
+            .db
+            .query_row(
+                "SELECT lexeme_id, word, language, gloss FROM data.sense WHERE sense_id = ?1",
+                [sense],
+                |row| {
+                    Ok((
+                        row.get::<_, u32>(0)?,
+                        row.get::<_, String>(1)?,
+                        row.get::<_, String>(2)?,
+                        row.get::<_, String>(3)?,
+                    ))
+                },
+            )
+            .optional()?
+        else {
+            return Ok(None);
+        };
+        let senses = self
+            .db
+            .prepare_cached(
+                "SELECT sense_id, gloss, occurrences FROM data.sense WHERE lexeme_id = ?1 \
+                 ORDER BY occurrences DESC, sense_id",
+            )?
+            .query_map([lexeme], |row| {
+                let gloss: String = row.get(1)?;
+                Ok(crate::names::SenseSummary {
+                    id: row.get(0)?,
+                    meaning: crate::names::split_gloss(&gloss).1.to_string(),
+                    occurrences: row.get(2)?,
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let Some(this) = senses.iter().find(|s| s.id == sense).cloned() else {
+            return Ok(None);
+        };
+        Ok(Some(crate::names::WordSense {
+            word,
+            language,
+            gloss: crate::names::split_gloss(&gloss).0.to_string(),
+            sense: this,
+            senses,
+        }))
+    }
+
+    /// The gloss of the sense the word at `position` of a verse has
+    /// ("to lie down: be dead"), alone: what an occurrence list filters on.
+    /// Empty for a word with none.
+    pub fn word_sense_gloss(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        position: u32,
+    ) -> rusqlite::Result<String> {
+        if !self.has_table("sense")? {
+            return Ok(String::new());
+        }
+        let gloss: Option<String> = self
+            .db
+            .prepare_cached(
+                "SELECT s.gloss FROM data.word w \
+                 JOIN data.sense s ON s.sense_id = coalesce(\
+                   (SELECT sense_id FROM data.word_sense ws \
+                    WHERE ws.ref = w.ref AND ws.position = w.position), \
+                   (SELECT sense_id FROM data.surface_sense ss \
+                    WHERE ss.surface_id = w.surface_id)) \
+                 WHERE w.ref = ?1 AND w.position = ?2",
+            )?
+            .query_row(
+                rusqlite::params![pack_ref(book, chapter, verse), position],
+                |row| row.get(0),
+            )
+            .optional()?;
+        Ok(gloss.unwrap_or_default())
+    }
+
+    /// Every word of the text with a sense, in canonical order: what an
+    /// occurrence list narrowed to one sense shows.
+    pub fn sense_occurrences(&self, sense: u32) -> rusqlite::Result<Vec<crate::names::WordAt>> {
+        if !self.has_table("sense")? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT w.ref, w.position FROM data.surface_sense ss \
+             JOIN data.word w ON w.surface_id = ss.surface_id \
+             WHERE ss.sense_id = ?1 AND NOT EXISTS (\
+               SELECT 1 FROM data.word_sense ws WHERE ws.ref = w.ref AND ws.position = w.position) \
+             UNION \
+             SELECT ref, position FROM data.word_sense WHERE sense_id = ?1 \
+             ORDER BY 1, 2",
+        )?;
+        stmt.query_map([sense], |row| Ok(word_at(row.get(0)?, row.get(1)?)))?
+            .collect()
+    }
+
     /// Whether this `haqor.db` has the table `name`: an older build lacks the
     /// ones added since.
     fn has_table(&self, name: &str) -> rusqlite::Result<bool> {
@@ -5515,6 +5849,59 @@ mod tests {
         assert_eq!(chapter.len(), 31);
         assert_eq!(chapter[0], (1, genesis));
         assert!(bible.syntax_tree(40, 1, 1).unwrap().is_none());
+    }
+
+    /// A word names the one person it means, with the family the text gives
+    /// them; a place has a position; and a word's sense follows where it
+    /// stands. Skips a database built before names and senses were.
+    #[test]
+    fn names_and_senses_follow_the_word() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        // 2 Kings 14:29: "Zechariah his son reigned in his place".
+        let Some(zechariah) = bible.word_name(11, 14, 29, 8).unwrap() else {
+            eprintln!("skipping: haqor.db has no word_name table");
+            return;
+        };
+        assert_eq!(zechariah.summary.name, "Zechariah");
+        assert_eq!(zechariah.summary.kind, crate::names::NameKind::Person);
+        let father = zechariah
+            .links
+            .iter()
+            .find(|l| l.relation == "father")
+            .unwrap();
+        assert_eq!(father.other.name, "Jeroboam");
+        assert!(zechariah.forms.iter().any(|f| f.hebrew == "זְכַרְיָהוּ"));
+        let occurrences = bible.name_occurrences(zechariah.summary.id).unwrap();
+        assert_eq!(occurrences.len() as u32, zechariah.summary.occurrences);
+        assert!(occurrences.contains(&crate::names::WordAt {
+            book: 11,
+            chapter: 14,
+            verse: 29,
+            position: 8
+        }));
+
+        // Ruth 1 names Bethlehem of Judah, south of Jerusalem.
+        let places = bible.chapter_places(31, 1).unwrap();
+        let bethlehem = places.iter().find(|p| p.place.name == "Bethlehem").unwrap();
+        assert!((31.6..31.8).contains(&bethlehem.location.latitude));
+        assert_eq!(bethlehem.verses.first(), Some(&1));
+
+        // שָׁכַב in 2 Kings 14:29 is "lie down" as "be dead", one of its
+        // senses.
+        let sense = bible.word_sense(11, 14, 29, 0).unwrap().unwrap();
+        assert_eq!(sense.gloss, "to lie down");
+        assert_eq!(sense.sense.meaning, "be dead");
+        assert!(sense.senses.len() >= 4, "{sense:?}");
+        let dead = bible.sense_occurrences(sense.sense.id).unwrap();
+        assert_eq!(dead.len() as u32, sense.sense.occurrences);
+        assert_eq!(
+            bible.word_sense_gloss(11, 14, 29, 0).unwrap(),
+            "to lie down: be dead"
+        );
+        // A name has no sense.
+        assert!(bible.word_sense(11, 14, 29, 8).unwrap().is_none());
+        assert_eq!(bible.word_sense_gloss(11, 14, 29, 8).unwrap(), "");
     }
 
     /// The TSK's references arrive on the Hebrew numbering: Malachi 4:5 in

@@ -305,6 +305,17 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// Rebuild the people, places and word senses of a runtime haqor.db in
+    /// place (gen-runtime also builds them), from STEP Bible's TIPNR and
+    /// TBESH and OpenBible.info's geocoding.
+    GenNames {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Source texts directory holding STEPBible-Data and OpenBible-Geocoding.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     /// Reduce a downloaded dataset to the prepared files vendored in
     /// src_texts, which the build reads. The scripts/fetch-*.sh scripts run
     /// this after downloading; it is not needed for an ordinary build.
@@ -609,6 +620,19 @@ fn main() -> Result<()> {
                     db.display(),
                     summary.unparsed,
                     summary.missing
+                );
+            }
+            DbCommands::GenNames { db, src_texts } => {
+                let s = haqor_db_gen::gen_names(&db, &src_texts)?;
+                println!(
+                    "Wrote {} people, places and other names ({} words naming one; {} places \
+                     located) and {} senses ({} words) to {}",
+                    s.entities,
+                    s.name_words,
+                    s.located,
+                    s.senses,
+                    s.sense_words,
+                    db.display()
                 );
             }
             DbCommands::Prepare {

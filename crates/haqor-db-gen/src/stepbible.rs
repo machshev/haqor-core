@@ -129,7 +129,6 @@ struct Row<'a> {
     reference: &'a str,
     hebrew: &'a str,
     translation: &'a str,
-    #[allow(dead_code)] // Read by the names import, which follows.
     tag: WordTag,
 }
 
@@ -203,7 +202,6 @@ pub(crate) struct WordTag {
     pub name: Option<u32>,
 }
 
-#[allow(dead_code)] // Read by the names import, which follows.
 /// Every prepared TAHOT word's tag, placed on the runtime database's words:
 /// a packed verse reference and a word position, as in `word`. Words TAHOT
 /// and the corpus cannot align safely, and words with no tag, are left out.
@@ -425,7 +423,18 @@ pub fn prepare(from: &Path, out_dir: &Path) -> Result<PrepareSummary> {
                 .name
                 .as_deref()
                 .and_then(|key| by_key.get(key))
-                .or_else(|| tag.strong.as_deref().and_then(|s| by_strong.get(s)))
+                // Failing TAHOT's own link, by Strong's number, but only one
+                // TBESH gives as a name: TIPNR files the common words of a
+                // combined name under the name too (תָּמָר "palm" under
+                // Jericho, "the city of palms").
+                .or_else(|| {
+                    let strong = tag.strong.as_deref()?;
+                    if tbesh.get(strong).is_some_and(|s| s.language == "N") {
+                        by_strong.get(strong)
+                    } else {
+                        None
+                    }
+                })
                 .map(|&index| index as u32 + 1);
             if tag.name.is_some() && name.is_none() {
                 summary.unknown_names += 1;
@@ -504,6 +513,7 @@ pub fn prepare(from: &Path, out_dir: &Path) -> Result<PrepareSummary> {
             "forms": forms,
             "links": links,
             "coordinates": record.coordinates.map(|(lat, lon)| [lat, lon]),
+            "openbible": record.openbible,
         });
         names_out.push_str(&line.to_string());
         names_out.push('\n');

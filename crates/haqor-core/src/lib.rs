@@ -33,6 +33,10 @@ pub mod romanize;
 /// databases. `gen-runtime` precomputes its output into `haqor.db`.
 pub mod resolve;
 
+/// People, places and word senses (STEP Bible's TIPNR and TBESH, with
+/// OpenBible.info's geocoding), as `haqor.db` stores them.
+pub mod names;
+
 /// Verse syntax trees (MACULA Hebrew), as `haqor.db` stores them.
 pub mod syntax;
 

@@ -1,0 +1,174 @@
+//! People, places and word senses, as `haqor.db` stores them.
+//!
+//! STEP Bible's TIPNR tells apart the people and places that share a name —
+//! the many Zechariahs, the two Bethlehems — and the build links every word
+//! of the Hebrew text naming one to its record, with OpenBible.info's
+//! positions for places. STEP Bible's TBESH splits a word into its senses
+//! (שָׁכַב "lie down" as "sleep" or "be dead"), and the build gives each
+//! occurrence its sense. See [`crate::bible::Bible::word_name`] and
+//! [`crate::bible::Bible::word_sense`].
+
+/// A word of the text: its verse and its position in the verse, from 0.
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, PartialOrd, Ord)]
+pub struct WordAt {
+    pub book: u8,
+    pub chapter: u8,
+    pub verse: u8,
+    pub position: u32,
+}
+
+/// What kind of thing a [`NameEntity`] is.
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum NameKind {
+    Person,
+    Place,
+    /// A god, month, title, musical term and the like.
+    Other,
+}
+
+impl NameKind {
+    pub(crate) fn parse(kind: &str) -> Self {
+        match kind {
+            "person" => NameKind::Person,
+            "place" => NameKind::Place,
+            _ => NameKind::Other,
+        }
+    }
+
+    pub fn as_str(self) -> &'static str {
+        match self {
+            NameKind::Person => "person",
+            NameKind::Place => "place",
+            NameKind::Other => "other",
+        }
+    }
+}
+
+/// Enough of a record to name it in a list: a relative, a place on a map.
+#[derive(Clone, Debug, PartialEq)]
+pub struct NameSummary {
+    pub id: u32,
+    pub name: String,
+    pub kind: NameKind,
+    /// A few words saying who or what it is ("King living at the time of
+    /// Divided Monarchy"); empty for most places.
+    pub description: String,
+    /// A person's tribe or nation, a place's region; may be empty.
+    pub origin: String,
+    /// Words of the Hebrew text naming it.
+    pub occurrences: u32,
+}
+
+/// One Hebrew form of a name.
+#[derive(Clone, Debug, PartialEq)]
+pub struct NameForm {
+    pub hebrew: String,
+    /// The English names translations give the form, most usual first.
+    pub english: Vec<String>,
+    /// How the form relates to the name: `Named`, `Spelled`, `Aramaic`,
+    /// `Group` (a gentilic: Bethlehemite), `Name combined`, …
+    pub significance: String,
+}
+
+/// A link from one record to another.
+#[derive(Clone, Debug, PartialEq)]
+pub struct NameLink {
+    /// `father`, `mother`, `sibling`, `partner`, `child`, `founder` or
+    /// `inhabitant`.
+    pub relation: String,
+    /// `a` (an ancestor rather than a parent), `d` (a people descended from
+    /// them), `f` (a founder), `?` (uncertain), or empty.
+    pub flag: String,
+    pub other: NameSummary,
+}
+
+/// Where a place may have been.
+#[derive(Clone, Debug, PartialEq)]
+pub struct PlaceLocation {
+    pub latitude: f64,
+    pub longitude: f64,
+    /// OpenBible.info's confidence in the identification, 0 to 1000 (500 and
+    /// above is confident); `None` for a position with no score, from TIPNR.
+    pub confidence: Option<u16>,
+    /// The kind of place: `settlement`, `river`, `region`, `mountain`, …
+    pub kind: String,
+    /// The modern location it is identified with.
+    pub label: String,
+}
+
+/// A person, place or other named thing, with all the build knows of it.
+#[derive(Clone, Debug, PartialEq)]
+pub struct NameEntity {
+    pub summary: NameSummary,
+    /// TIPNR's type: Male, Female, Group, Place, Supernatural, Title, …
+    pub category: String,
+    /// What the text says of it, a sentence a line.
+    pub text: String,
+    pub forms: Vec<NameForm>,
+    pub links: Vec<NameLink>,
+    /// The likeliest first; empty for all but places.
+    pub locations: Vec<PlaceLocation>,
+}
+
+/// A place named in a chapter, for a map of the chapter.
+#[derive(Clone, Debug, PartialEq)]
+pub struct ChapterPlace {
+    pub place: NameSummary,
+    /// The likeliest location; a place without one is not listed.
+    pub location: PlaceLocation,
+    /// The verses naming it, in order.
+    pub verses: Vec<u8>,
+}
+
+/// One sense of a word.
+#[derive(Clone, Debug, PartialEq)]
+pub struct SenseSummary {
+    pub id: u32,
+    /// The sense's own gloss ("be dead"): the part after the word's gloss.
+    /// Empty for a word with only one sense.
+    pub meaning: String,
+    /// Words of the text with this sense.
+    pub occurrences: u32,
+}
+
+/// The sense a word has where it stands, among the senses of its word.
+#[derive(Clone, Debug, PartialEq)]
+pub struct WordSense {
+    /// The word's Hebrew headword.
+    pub word: String,
+    /// `hebrew` or `aramaic`.
+    pub language: String,
+    /// The word's gloss ("to lie down"), whatever its sense.
+    pub gloss: String,
+    pub sense: SenseSummary,
+    /// Every sense of the word, this one among them, most used first. Only
+    /// this one for a word with one sense.
+    pub senses: Vec<SenseSummary>,
+}
+
+/// Split a stored gloss into the word's gloss and the sense's: TBESH writes
+/// the two as `to lie down: be dead`.
+pub(crate) fn split_gloss(gloss: &str) -> (&str, &str) {
+    match gloss.split_once(": ") {
+        Some((word, sense)) => (word.trim(), sense.trim()),
+        None => (gloss.trim(), ""),
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn splits_word_and_sense_glosses() {
+        assert_eq!(
+            split_gloss("to lie down: be dead"),
+            ("to lie down", "be dead")
+        );
+        assert_eq!(split_gloss("to create"), ("to create", ""));
+        assert_eq!(
+            split_gloss("land: country/planet"),
+            ("land", "country/planet")
+        );
+    }
+}

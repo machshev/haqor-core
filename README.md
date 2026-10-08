@@ -196,6 +196,31 @@ release (v91), which leaves out the books still being checked (Numbers,
 1–2 Chronicles, Ecclesiastes, Isaiah, Jeremiah and Ezekiel); their drafts are
 complete and fully aligned.
 
+### People, places and word senses
+
+`gen-runtime` also links every word of the Hebrew text that names a person,
+place or other named thing to its record in STEP Bible's TIPNR, which tells
+apart those sharing a name (the many Zechariahs, the two Bethlehems), and
+gives each word its sense from STEP Bible's TBESH (שָׁכַב "lie down" read
+as "sleep" in one verse and "be dead" in another). Both come through
+TAHOT's tags, aligned to the corpus as its glosses are; places take their
+positions from OpenBible.info's geocoding, every identification with its
+confidence (TIPNR's own position where OpenBible has none). The sources are
+prepared in `src_texts/STEPBible-Data/` and `src_texts/OpenBible-Geocoding/`:
+
+```sh
+cargo run --release -- db gen-names   # rebuild the tables alone
+```
+
+38,720 words name one of 4,247 records, and 1,004 places have a position.
+259,392 words have one of 6,714 senses: `surface_sense` gives each surface
+the sense most of its occurrences have, and `word_sense` only the
+occurrences that differ. TAHOT, TIPNR and TBESH join on Strong's numbers,
+which are used up while the sources are prepared: the tables use ids of
+their own, and `db prepare` refuses to write a file holding a Strong's
+number. `Bible::word_name`, `Bible::name_entity`, `Bible::chapter_places`
+and `Bible::word_sense` read them.
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:
@@ -270,6 +295,25 @@ converted in the same way as Klein.
 (`scripts/fetch-stepbible-data.sh`): each word's reference, Hebrew and
 translation as published, with its Strong's numbers replaced by ids of
 Haqor's own.
+
+**People and places** — STEP Bible's
+[TIPNR](https://github.com/STEPBible/STEPBible-Data) (Translators
+Individualised Proper Names with all References), data created by
+www.STEPBible.org based on work at Tyndale House Cambridge, licensed CC BY
+4.0. Haqor keeps each record's description, summary, name forms and links,
+with the Strong's numbers in its prose removed, and links each to the words
+naming it through TAHOT.
+
+**Word senses** — the glosses and sense divisions of STEP Bible's
+[TBESH](https://github.com/STEPBible/STEPBible-Data) (Translators Brief
+lexicon of Extended Strongs for Hebrew), created by Tyndale House scholars,
+licensed CC BY 4.0. Its Meaning column (the Online Bible's abridged BDB) is
+not used.
+
+**Places on the map** — OpenBible.info's
+[Bible Geocoding Data](https://github.com/openbibleinfo/Bible-Geocoding-Data),
+licensed CC BY 4.0. Haqor keeps each identification's position, kind,
+modern location and confidence.
 
 **Thematic cross references** — *The Treasury of Scripture Knowledge*
 (Samuel Bagster & Sons, 1830s; commonly credited to R. A. Torrey), from the

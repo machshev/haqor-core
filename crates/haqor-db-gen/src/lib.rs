@@ -8,6 +8,7 @@ mod geocoding;
 mod harness;
 mod hebrew_db;
 mod lexicon_db;
+mod names;
 mod occurrences;
 mod oshb;
 mod prefilter;
@@ -34,6 +35,7 @@ pub use hebrew_db::{
 pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
 };
+pub use names::{NamesSummary, build_names, gen_names};
 pub use occurrences::parse_ot_coverage;
 pub use quotations::{
     GenQuotesOptions, KNOWN_FALSE, KNOWN_PARALLELS, KNOWN_QUOTATIONS, LinkKind, Matcher,
