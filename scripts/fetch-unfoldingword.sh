@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# The unfoldingWord Literal Text (ULT) and the unfoldingWord Hebrew Bible
-# (UHB) it is aligned to are fetched from their canonical repositories rather
-# than redistributed here. Checking out pinned commits makes git
-# verify every file against that commit's hashes, which keeps database
-# generation reproducible. Only the Old Testament books are kept.
+# Update the vendored unfoldingWord Literal Text (ULT), and the unfoldingWord
+# Hebrew Bible (UHB) it is aligned to, in src_texts/unfoldingWord.
+#
+# The build does not read the USFM: `haqor db prepare unfoldingword` reduces
+# the Old Testament books to the UHB's words and the ULT's verses with their
+# alignments (uhb.tsv and ult.tsv), and that is what is committed, beside each
+# text's licence, readme and manifest. This script checks out pinned commits
+# (git verifies every file against the commit's hashes) and prepares them;
+# review the diff before committing.
 readonly ult_repository="https://git.door43.org/unfoldingWord/en_ult"
 # Master rather than the v91 release, which leaves out the books still being
 # checked (NUM, 1CH, 2CH, ECC, ISA, JER, EZK); their drafts are complete and
@@ -26,23 +30,26 @@ fetch() {
   git -C "${work}/${name}" sparse-checkout set --no-cone \
     '/[0-3][0-9]-*.usfm' '/LICENSE.md' '/README.md' '/manifest.yaml'
   git -C "${work}/${name}" -c advice.detachedHead=false checkout --quiet "${commit}"
-  mkdir -p "${destination}/${name}"
   # Books 01-39: the Old Testament (40 onwards, and A0 front matter, are not).
+  mkdir -p "${work}/books/${name}"
   find "${work}/${name}" -maxdepth 1 -name '[0-3][0-9]-*.usfm' \
-    -exec cp {} "${destination}/${name}/" \;
-  cp "${work}/${name}/LICENSE.md" "${work}/${name}/README.md" \
-    "${work}/${name}/manifest.yaml" "${destination}/${name}/"
-  printf '%s\n%s\n' "repository: ${repository}" "commit: ${commit}" \
-    > "${destination}/${name}/SOURCE"
+    -exec cp {} "${work}/books/${name}/" \;
   local count
-  count="$(find "${destination}/${name}" -name '*.usfm' | wc -l)"
+  count="$(find "${work}/books/${name}" -name '*.usfm' | wc -l)"
   if [[ "${count}" -ne 39 ]]; then
     echo "expected 39 ${name} books, found ${count}" >&2
     exit 1
   fi
+  mkdir -p "${destination}/${name}"
+  cp "${work}/${name}/LICENSE.md" "${work}/${name}/README.md" \
+    "${work}/${name}/manifest.yaml" "${destination}/${name}/"
+  printf '%s\n%s\n' "repository: ${repository}" "commit: ${commit}" \
+    > "${destination}/${name}/SOURCE"
 }
 
 rm -rf "${destination}"
 fetch en_ult "${ult_repository}" "${ult_commit}"
 fetch hbo_uhb "${uhb_repository}" "${uhb_commit}"
-echo "Fetched the ULT ${ult_commit} and UHB ${uhb_commit} into ${destination}"
+cargo run --release --quiet -p haqor-cli -- db prepare unfoldingword \
+  --from "${work}/books" --to "${destination}"
+echo "Prepared the ULT ${ult_commit} and UHB ${uhb_commit} into ${destination}"

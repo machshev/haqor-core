@@ -3,8 +3,9 @@
 //! MACULA Hebrew (Clear Bible / Biblica, CC BY 4.0) parses every verse of the
 //! Hebrew Bible into a tree: clauses, the phrases within them (nominal,
 //! prepositional, …) and the function each plays in its clause (subject,
-//! verb, object, …). `src_texts/MACULA-Hebrew` holds its "lowfat" XML, one
-//! file per chapter, fetched by `scripts/fetch-macula-hebrew.sh`.
+//! verb, object, …). `scripts/fetch-macula-hebrew.sh` downloads its "lowfat"
+//! XML, one file per chapter, and [`prepare`] reduces it to the trees alone,
+//! which are vendored in `src_texts/MACULA-Hebrew`.
 //!
 //! The trees' leaves are morphemes: a prefixed conjunction, preposition or
 //! article, or a pronominal suffix, is a leaf of its own and may sit in a
@@ -96,7 +97,7 @@ fn attribute(e: &BytesStart<'_>, key: &str) -> Result<String> {
 
 /// The morpheme a `<w>` element stands for. Its word number is the `!n` of
 /// its `ref` (`GEN 1:1!3`). Its text is the element's content, which
-/// [`read_trees`] fills in; `unicode` stands in for an empty element, but is
+/// [`read_source_trees`] fills in; `unicode` stands in for an empty element, but is
 /// not preferred: it gives each part of a two-word name the whole name
 /// (`תּ֣וּבַל קַ֔יִן` on both תּ֣וּבַל and קַ֔יִן).
 fn morpheme(e: &BytesStart<'_>) -> Result<Node> {
@@ -124,14 +125,12 @@ fn morpheme(e: &BytesStart<'_>) -> Result<Node> {
     })
 }
 
-/// Every verse's tree in one chapter file, in order. A verse's tree is its
-/// one top-level group, or an unlabelled group gathering several.
-fn read_chapter(path: &Path) -> Result<Vec<(Verse, Node)>> {
-    let mut reader = crate::xml::Reader::open(path)?;
-    read_trees(&mut reader).with_context(|| format!("reading {}", path.display()))
-}
-
-fn read_trees<R: BufRead>(reader: &mut crate::xml::Reader<R>) -> Result<Vec<(Verse, Node)>> {
+/// Every verse's tree in a chapter's XML, in order, by MACULA's verse id. A
+/// verse's tree is its one top-level group, or an unlabelled group gathering
+/// several.
+fn read_source_trees<R: BufRead>(
+    reader: &mut crate::xml::Reader<R>,
+) -> Result<Vec<(String, Node)>> {
     let mut trees = Vec::new();
     let mut verse = None;
     // The open groups, innermost last; the bottom one gathers the verse.
@@ -142,8 +141,7 @@ fn read_trees<R: BufRead>(reader: &mut crate::xml::Reader<R>) -> Result<Vec<(Ver
         match reader.next()? {
             Event::Eof => break,
             Event::Start(e) | Event::Empty(e) if e.name().as_ref() == "sentence" => {
-                let id = attribute(&e, "id")?;
-                verse = Some(parse_verse(&id).with_context(|| format!("unknown verse {id:?}"))?);
+                verse = Some(attribute(&e, "id")?);
                 stack = vec![Node::Group {
                     class: String::new(),
                     role: String::new(),
@@ -204,6 +202,199 @@ fn push_child(stack: &mut [Node], child: Node) -> Result<()> {
         }
         _ => bail!("a tree node outside any <sentence>"),
     }
+}
+
+/// The prepared trees in `src_texts/MACULA-Hebrew`: one line per verse,
+/// MACULA's verse id and its tree as read, before any placing on Haqor's
+/// words. See [`write_source`] for the form.
+const PREPARED: &str = "trees.tsv";
+
+/// Whether `token` can stand as a group's class or role in the prepared form.
+fn plain_token(token: &str) -> bool {
+    !token.contains([' ', '[', ']', ':', '{', '}', '\t', '\n'])
+}
+
+/// Write a tree as read in the prepared form. A group is
+/// `[class:role children…]`, as in the compact form; a morpheme is
+/// `word.part:role{text|gloss}` (`:role` only when it has one), with MACULA's
+/// own word number, its text and its gloss escaped as [`push_escaped`] does.
+fn write_source(tree: &Node, out: &mut String) -> Result<()> {
+    let token = |out: &mut String, value: &str, prefix: Option<char>| -> Result<()> {
+        if !plain_token(value) {
+            bail!("a class or role the prepared form cannot hold: {value:?}");
+        }
+        if !value.is_empty() {
+            out.extend(prefix);
+            out.push_str(value);
+        }
+        Ok(())
+    };
+    match tree {
+        Node::Group {
+            class,
+            role,
+            children,
+        } => {
+            out.push('[');
+            token(out, class, None)?;
+            token(out, role, Some(':'))?;
+            for child in children {
+                out.push(' ');
+                write_source(child, out)?;
+            }
+            out.push(']');
+        }
+        Node::Morpheme {
+            word,
+            part,
+            role,
+            text,
+            gloss,
+        } => {
+            out.push_str(&format!("{word}.{part}"));
+            token(out, role, Some(':'))?;
+            out.push('{');
+            push_escaped(out, text);
+            out.push('|');
+            push_escaped(out, gloss);
+            out.push('}');
+        }
+    }
+    Ok(())
+}
+
+/// Read a tree written by [`write_source`].
+fn parse_source(text: &str) -> Result<Node> {
+    fn token(chars: &mut std::iter::Peekable<std::str::Chars<'_>>) -> String {
+        let mut out = String::new();
+        while let Some(&c) = chars.peek() {
+            if matches!(c, ' ' | '[' | ']' | ':' | '{') {
+                break;
+            }
+            out.push(c);
+            chars.next();
+        }
+        out
+    }
+    /// Up to the unescaped `end`, which is consumed.
+    fn escaped(chars: &mut std::iter::Peekable<std::str::Chars<'_>>, end: char) -> Result<String> {
+        let mut out = String::new();
+        loop {
+            match chars.next() {
+                Some('\\') => out.push(chars.next().context("a trailing backslash")?),
+                Some(c) if c == end => return Ok(out),
+                Some(c) => out.push(c),
+                None => bail!("unterminated text, looking for {end:?}"),
+            }
+        }
+    }
+    fn node(chars: &mut std::iter::Peekable<std::str::Chars<'_>>) -> Result<Node> {
+        if chars.next_if_eq(&'[').is_some() {
+            let class = token(chars);
+            let role = if chars.next_if_eq(&':').is_some() {
+                token(chars)
+            } else {
+                String::new()
+            };
+            let mut children = Vec::new();
+            loop {
+                match chars.next() {
+                    Some(' ') => children.push(node(chars)?),
+                    Some(']') => break,
+                    other => bail!("expected a child or ']', found {other:?}"),
+                }
+            }
+            return Ok(Node::Group {
+                class,
+                role,
+                children,
+            });
+        }
+        let id = token(chars);
+        let (word, part) = id
+            .split_once('.')
+            .and_then(|(w, p)| Some((w.parse().ok()?, p.parse().ok()?)))
+            .with_context(|| format!("unreadable morpheme {id:?}"))?;
+        let role = if chars.next_if_eq(&':').is_some() {
+            token(chars)
+        } else {
+            String::new()
+        };
+        if chars.next() != Some('{') {
+            bail!("morpheme {id:?} without its text");
+        }
+        let text = escaped(chars, '|')?;
+        let gloss = escaped(chars, '}')?;
+        Ok(Node::Morpheme {
+            word,
+            part,
+            role,
+            text,
+            gloss,
+        })
+    }
+    let mut chars = text.chars().peekable();
+    let tree = node(&mut chars)?;
+    if chars.next().is_some() {
+        bail!("text after the tree");
+    }
+    Ok(tree)
+}
+
+/// `db prepare macula-hebrew`: read MACULA's lowfat XML chapter files in
+/// `lowfat` and write the prepared trees into `out_dir`. Returns the number of
+/// verses written.
+pub fn prepare(lowfat: &Path, out_dir: &Path) -> Result<usize> {
+    let mut files = std::fs::read_dir(lowfat)
+        .with_context(|| format!("reading {}", lowfat.display()))?
+        .map(|entry| Ok(entry?.path()))
+        .collect::<Result<Vec<_>>>()?;
+    files.retain(|p| {
+        p.file_name()
+            .and_then(|n| n.to_str())
+            .is_some_and(|n| n.ends_with("-lowfat.xml") && n.as_bytes()[0].is_ascii_digit())
+    });
+    files.sort();
+    if files.is_empty() {
+        bail!("no MACULA chapter files in {}", lowfat.display());
+    }
+    let mut out = String::new();
+    let mut verses = 0;
+    for file in &files {
+        let mut reader = crate::xml::Reader::open(file)?;
+        for (id, tree) in
+            read_source_trees(&mut reader).with_context(|| format!("reading {}", file.display()))?
+        {
+            out.push_str(&id);
+            out.push('\t');
+            write_source(&tree, &mut out)?;
+            out.push('\n');
+            verses += 1;
+        }
+    }
+    std::fs::create_dir_all(out_dir)?;
+    let path = out_dir.join(PREPARED);
+    std::fs::write(&path, out).with_context(|| format!("writing {}", path.display()))?;
+    Ok(verses)
+}
+
+/// The prepared trees, by verse.
+fn read_prepared(dir: &Path) -> Result<Vec<(Verse, Node)>> {
+    let path = dir.join(PREPARED);
+    let text = std::fs::read_to_string(&path).with_context(|| {
+        format!(
+            "reading {} (run scripts/fetch-macula-hebrew.sh)",
+            path.display()
+        )
+    })?;
+    text.lines()
+        .map(|line| {
+            let (id, tree) = line.split_once('\t').context("a line without a tree")?;
+            let verse = parse_verse(id).with_context(|| format!("unknown verse {id:?}"))?;
+            let tree = parse_source(tree).with_context(|| format!("reading the tree of {id}"))?;
+            Ok((verse, tree))
+        })
+        .collect()
 }
 
 /// A word's letters, the key words are placed by: its consonants, finals
@@ -402,25 +593,7 @@ pub struct SyntaxSummary {
 /// Rebuild the `syntax_tree` table of a runtime database in place from
 /// `src_texts/MACULA-Hebrew`.
 pub fn build_syntax_trees(db: &Connection, src_texts: &Path) -> Result<SyntaxSummary> {
-    let dir = source_dir(src_texts).join("lowfat");
-    let mut files = std::fs::read_dir(&dir)
-        .with_context(|| {
-            format!(
-                "reading {} (run scripts/fetch-macula-hebrew.sh)",
-                dir.display()
-            )
-        })?
-        .map(|entry| Ok(entry?.path()))
-        .collect::<Result<Vec<_>>>()?;
-    files.retain(|p| p.extension().is_some_and(|e| e == "xml"));
-    files.sort();
-    if files.is_empty() {
-        bail!(
-            "no MACULA chapter files in {} (run scripts/fetch-macula-hebrew.sh)",
-            dir.display()
-        );
-    }
-
+    let trees = read_prepared(&source_dir(src_texts))?;
     let tx = db.unchecked_transaction()?;
     tx.execute_batch(SCHEMA)?;
     let mut summary = SyntaxSummary::default();
@@ -430,35 +603,33 @@ pub fn build_syntax_trees(db: &Connection, src_texts: &Path) -> Result<SyntaxSum
              WHERE w.ref = ?1 ORDER BY w.position",
         )?;
         let mut insert = tx.prepare("INSERT INTO syntax_tree(ref, tree) VALUES (?1, ?2)")?;
-        for file in &files {
-            for ((book, chapter, verse), tree) in read_chapter(file)? {
-                let reference = pack_ref(book.into(), chapter.into(), verse.into());
-                let haqor = words
-                    .query_map([reference], |row| row.get::<_, String>(0))?
-                    .map(|text| text.map(|t| letters(&t)))
-                    .collect::<rusqlite::Result<Vec<_>>>()?;
-                if haqor.is_empty() {
-                    debug!("MACULA {book} {chapter}:{verse}: no such verse in the corpus");
-                    summary.orphaned += 1;
-                    continue;
-                }
-                let macula = macula_words(&tree);
-                let placement = place(&macula, &haqor);
-                if !placement.aligned {
-                    debug!(
-                        "MACULA {book} {chapter}:{verse}: letters differ from the corpus: \
-                         {macula:?} / {haqor:?}"
-                    );
-                    summary.misaligned += 1;
-                }
-                let mut morphemes = HashMap::new();
-                count_morphemes(&tree, &placement.positions, &mut morphemes);
-                let mut out = String::new();
-                write_tree(&tree, &placement.positions, &morphemes, &mut out)?;
-                summary.bytes += out.len();
-                summary.verses += 1;
-                insert.execute(params![reference, out])?;
+        for ((book, chapter, verse), tree) in trees {
+            let reference = pack_ref(book.into(), chapter.into(), verse.into());
+            let haqor = words
+                .query_map([reference], |row| row.get::<_, String>(0))?
+                .map(|text| text.map(|t| letters(&t)))
+                .collect::<rusqlite::Result<Vec<_>>>()?;
+            if haqor.is_empty() {
+                debug!("MACULA {book} {chapter}:{verse}: no such verse in the corpus");
+                summary.orphaned += 1;
+                continue;
             }
+            let macula = macula_words(&tree);
+            let placement = place(&macula, &haqor);
+            if !placement.aligned {
+                debug!(
+                    "MACULA {book} {chapter}:{verse}: letters differ from the corpus: \
+                         {macula:?} / {haqor:?}"
+                );
+                summary.misaligned += 1;
+            }
+            let mut morphemes = HashMap::new();
+            count_morphemes(&tree, &placement.positions, &mut morphemes);
+            let mut out = String::new();
+            write_tree(&tree, &placement.positions, &morphemes, &mut out)?;
+            summary.bytes += out.len();
+            summary.verses += 1;
+            insert.execute(params![reference, out])?;
         }
     }
     tx.commit()?;
@@ -488,7 +659,11 @@ mod tests {
 
     fn trees(xml: &str) -> Vec<(Verse, Node)> {
         let mut reader = crate::xml::Reader::from_str(xml);
-        read_trees(&mut reader).unwrap()
+        read_source_trees(&mut reader)
+            .unwrap()
+            .into_iter()
+            .map(|(id, tree)| (parse_verse(&id).unwrap(), tree))
+            .collect()
     }
 
     /// Genesis 1:1, abridged from MACULA: a prepositional phrase whose
@@ -536,6 +711,34 @@ mod tests {
                 gloss: "he created".into(),
             }
         );
+    }
+
+    /// The prepared form reads back the tree it was written from, escapes and
+    /// all.
+    #[test]
+    fn prepared_form_round_trips() {
+        let (_, tree) = trees(GENESIS_1_1).pop().unwrap();
+        let mut out = String::new();
+        write_source(&tree, &mut out).unwrap();
+        assert!(
+            out.starts_with("[cl [pp:pp 1.0{בְּ|in} 1.0{רֵאשִׁ֖ית|beginning}] 2.0:v{"),
+            "{out}"
+        );
+        assert_eq!(parse_source(&out).unwrap(), tree);
+        let odd = Node::Group {
+            class: String::new(),
+            role: "s".into(),
+            children: vec![Node::Morpheme {
+                word: 12,
+                part: 3,
+                role: String::new(),
+                text: "a|b".into(),
+                gloss: "[be] \\ }".into(),
+            }],
+        };
+        let mut out = String::new();
+        write_source(&odd, &mut out).unwrap();
+        assert_eq!(parse_source(&out).unwrap(), odd);
     }
 
     #[test]
@@ -622,7 +825,7 @@ mod tests {
         let src_texts = root.join("src_texts");
         let database = root.join("data/haqor.db");
         if !source_dir(&src_texts).exists() || !database.exists() {
-            eprintln!("skipping: fetched MACULA source or data/haqor.db unavailable");
+            eprintln!("skipping: prepared MACULA trees or data/haqor.db unavailable");
             return;
         }
         // Into a copy: the test must not rewrite the shared database.

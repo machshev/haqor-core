@@ -305,9 +305,26 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// Reduce a downloaded dataset to the prepared files vendored in
+    /// src_texts, which the build reads. The scripts/fetch-*.sh scripts run
+    /// this after downloading; it is not needed for an ordinary build.
+    Prepare {
+        /// The dataset: stepbible, macula-hebrew, unfoldingword or
+        /// openbible-geocoding.
+        source: haqor_db_gen::PreparedSource,
+        /// The downloaded dataset, as its fetch script lays it out.
+        #[arg(long)]
+        from: PathBuf,
+        /// Where to write the prepared files: the dataset's directory in
+        /// src_texts by default.
+        #[arg(long)]
+        to: Option<PathBuf>,
+        /// Source texts directory, for the default `--to`.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     /// Rebuild the `syntax_tree` table of a runtime haqor.db in place from
-    /// MACULA Hebrew's syntax trees (gen-runtime also builds it). Fetch them
-    /// first with scripts/fetch-macula-hebrew.sh.
+    /// MACULA Hebrew's syntax trees (gen-runtime also builds it).
     GenSyntax {
         /// Runtime database to update.
         #[arg(short, long, default_value = "data/haqor.db")]
@@ -593,6 +610,16 @@ fn main() -> Result<()> {
                     summary.unparsed,
                     summary.missing
                 );
+            }
+            DbCommands::Prepare {
+                source,
+                from,
+                to,
+                src_texts,
+            } => {
+                let to = to.unwrap_or_else(|| source.default_dir(&src_texts));
+                let report = haqor_db_gen::prepare(source, &from, &to)?;
+                println!("Prepared {report} into {}", to.display());
             }
             DbCommands::GenSyntax { db, src_texts } => {
                 let summary = haqor_db_gen::gen_syntax(&db, &src_texts)?;

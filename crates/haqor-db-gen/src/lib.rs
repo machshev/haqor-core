@@ -4,6 +4,7 @@
 //! table at a time. Currently it generates the `bible` table (OT text from
 //! UXLC plus NT Syriac transliterated into Hebrew letters from SEDRA).
 
+mod geocoding;
 mod harness;
 mod hebrew_db;
 mod lexicon_db;
@@ -18,6 +19,7 @@ mod sedra_db;
 mod sefaria;
 mod stepbible;
 mod syntax;
+mod tipnr;
 mod translation;
 mod tsk;
 mod uxlc;
@@ -121,4 +123,70 @@ pub fn generate_bible(src_texts: &Path, output: &Path) -> Result<usize> {
 /// losslessly, with transliteration columns rendered into Hebrew Unicode.
 pub fn generate_sedra(src_texts: &Path, output: &Path) -> Result<usize> {
     sedra_db::generate_sedra(src_texts, output)
+}
+
+/// A downloaded dataset that `prepare` reduces to the files vendored in
+/// `src_texts`: what the build reads, in place of the dataset as published.
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum PreparedSource {
+    Stepbible,
+    MaculaHebrew,
+    Unfoldingword,
+    OpenbibleGeocoding,
+}
+
+impl PreparedSource {
+    /// The dataset's directory in `src_texts`.
+    pub fn default_dir(self, src_texts: &Path) -> std::path::PathBuf {
+        match self {
+            PreparedSource::Stepbible => stepbible::source_dir(src_texts),
+            PreparedSource::MaculaHebrew => syntax::source_dir(src_texts),
+            PreparedSource::OpenbibleGeocoding => geocoding::source_dir(src_texts),
+            PreparedSource::Unfoldingword => translation::source_dir(src_texts),
+        }
+    }
+}
+
+impl std::str::FromStr for PreparedSource {
+    type Err = String;
+
+    fn from_str(name: &str) -> std::result::Result<Self, String> {
+        match name {
+            "stepbible" => Ok(PreparedSource::Stepbible),
+            "macula-hebrew" => Ok(PreparedSource::MaculaHebrew),
+            "openbible-geocoding" => Ok(PreparedSource::OpenbibleGeocoding),
+            "unfoldingword" => Ok(PreparedSource::Unfoldingword),
+            _ => Err(format!("unknown dataset {name:?}")),
+        }
+    }
+}
+
+/// `db prepare`: reduce the dataset downloaded at `from` to its prepared files
+/// in `to`. Returns what was written, for the log.
+pub fn prepare(source: PreparedSource, from: &Path, to: &Path) -> Result<String> {
+    match source {
+        PreparedSource::Stepbible => {
+            let s = stepbible::prepare(from, to)?;
+            Ok(format!(
+                "{} TAHOT words ({} with a sense, {} naming a person or place; {} naming one \
+                 TIPNR lacks), {} senses and {} TIPNR records",
+                s.words, s.sense_words, s.name_words, s.unknown_names, s.senses, s.names
+            ))
+        }
+        PreparedSource::OpenbibleGeocoding => {
+            let places = geocoding::prepare(from, to)?;
+            Ok(format!("the positions of {places} places"))
+        }
+        PreparedSource::MaculaHebrew => {
+            let verses = syntax::prepare(from, to)?;
+            Ok(format!("the syntax trees of {verses} verses"))
+        }
+        PreparedSource::Unfoldingword => {
+            let summary = translation::prepare(from, to)?;
+            Ok(format!(
+                "{} UHB words and {} ULT verses ({} alignments naming no UHB word left out)",
+                summary.hebrew_words, summary.verses, summary.unresolved
+            ))
+        }
+    }
 }

@@ -194,11 +194,9 @@ jobs:
         # `cargo run` from the checkout, not the nix-built binary: gen-lexicon
         # locates data/lexicon_overrides.json through a compile-time
         # CARGO_MANIFEST_DIR path, which in a `nix build` binary points at the
-        # vanished build sandbox.
+        # vanished build sandbox. The external datasets are vendored, prepared,
+        # in src_texts, so nothing is downloaded.
         run: |
-          ./scripts/fetch-stepbible-data.sh
-          ./scripts/fetch-macula-hebrew.sh
-          ./scripts/fetch-unfoldingword.sh
           nix develop --command bash -c '
             set -euo pipefail
             cargo run --release -p haqor-cli -- db gen-bible

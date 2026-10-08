@@ -28,15 +28,32 @@ OSHB and UXLC token streams cannot be aligned safely.
 The reader's context-sensitive Old Testament interlinear translations come
 from [STEP Bible's TAHOT dataset](https://github.com/STEPBible/STEPBible-Data),
 also licensed under CC BY 4.0. BDB remains the source for full lexicon entries.
-Fetch the pinned TAHOT inputs before regenerating `hebrew.db`:
+TAHOT is vendored, prepared (see below), in `src_texts/STEPBible-Data/`.
+After updating it, regenerate the reader glosses:
 
 ```sh
-./scripts/fetch-stepbible-data.sh
+./scripts/fetch-stepbible-data.sh    # only to update the vendored copy
 cargo run --release -- db refresh-reader-glosses
 ```
 
-The source files remain in the ignored `src_texts/STEPBible-Data/` directory;
-the fetch script verifies their checksums before the generator consumes them.
+### Vendored sources
+
+Every dataset the build reads lives in `src_texts/`, so a build needs no
+network and does not depend on an upstream copy staying online. The external
+datasets (`STEPBible-Data`, `MACULA-Hebrew`, `unfoldingWord`,
+`OpenBible-Geocoding`) are committed in a prepared form: `haqor db prepare`
+reduces each, as published, to what the build reads, in plain text
+(TSV/JSON lines) whose diffs can be reviewed. That is about 47 MB in place of
+about 600 MB, and the build skips parsing their XML and USFM. Preparing does
+not depend on Haqor's own text: aligning to the corpus happens in the build.
+STEP Bible's files are joined by Strong's numbers, which are used up while
+preparing, so none is vendored or built into a database.
+
+To update a dataset, move the pin in its `scripts/fetch-*.sh`, run it (it
+downloads the dataset at that commit, verifies checksums or git's hashes, and
+prepares it), and review the diff. Each dataset's `SOURCE` file records where
+it came from.
+
 Full `gen-hebrew --force` builds also include TAHOT, but the refresh command is
 the intended low-resource path when only the interlinear source has changed.
 
@@ -120,9 +137,8 @@ wide-margin Bible prints, attached to the key words and phrases of each verse
 table's, which are found by root alignment. The TSK numbers verses as the KJV
 does, so each OT reference is re-numbered onto the Hebrew text through the
 TAHOT files' paired numbering (Malachi 4:5 becomes 3:23, Psalm verses shift
-past their titles); `gen-runtime` therefore needs
-`scripts/fetch-stepbible-data.sh` to have run. `Bible::thematic_references`
-returns a verse's phrases and their targets. To rebuild the table alone:
+past their titles), which `gen-runtime` reads from
+`src_texts/STEPBible-Data/`. `Bible::thematic_references` returns a verse's phrases and their targets. To rebuild the table alone:
 
 ```sh
 cargo run --release -- db gen-tsk      # RUST_LOG=haqor_db_gen::tsk=debug lists the references it drops
@@ -133,12 +149,10 @@ cargo run --release -- db gen-tsk      # RUST_LOG=haqor_db_gen::tsk=debug lists 
 `gen-runtime` also fills a `syntax_tree` table from
 [MACULA Hebrew](https://github.com/Clear-Bible/macula-hebrew)'s parse of every
 Old Testament verse: its clauses, the phrases inside them, and the function
-each plays in its clause (subject, verb, object, predicate, adverbial). Fetch
-the pinned source first; `gen-runtime` reads it from
-`src_texts/MACULA-Hebrew/`:
+each plays in its clause (subject, verb, object, predicate, adverbial).
+`gen-runtime` reads the trees, prepared, from `src_texts/MACULA-Hebrew/`:
 
 ```sh
-./scripts/fetch-macula-hebrew.sh
 cargo run --release -- db gen-syntax   # rebuild the table alone
 ```
 
@@ -153,12 +167,12 @@ verses spell their letters identically). `Bible::syntax_tree` and
 `gen-runtime` also fills a `translation_verse` table with an English
 translation of the Old Testament adapted from the
 [unfoldingWord Literal Text](https://www.unfoldingword.org/ult) (ULT), whose
-every English word is aligned to the Hebrew word or words it renders. Fetch
-the pinned sources first (the ULT, and the unfoldingWord Hebrew Bible its
-alignments name); `gen-runtime` reads them from `src_texts/unfoldingWord/`:
+every English word is aligned to the Hebrew word or words it renders. Its
+sources are the ULT and the unfoldingWord Hebrew Bible its alignments
+name; `gen-runtime` reads their words and alignments, prepared, from
+`src_texts/unfoldingWord/`:
 
 ```sh
-./scripts/fetch-unfoldingword.sh
 cargo run --release -- db gen-translation   # rebuild the table alone
 ```
 
@@ -252,8 +266,10 @@ converted in the same way as Klein.
 
 **Interlinear translations** — STEP Bible's
 [TAHOT dataset](https://github.com/STEPBible/STEPBible-Data), licensed CC BY
-4.0. The files are fetched from their canonical repository at pinned checksums
-by `scripts/fetch-stepbible-data.sh` rather than redistributed here.
+4.0. Haqor vendors it in `src_texts/STEPBible-Data/` in a prepared form
+(`scripts/fetch-stepbible-data.sh`): each word's reference, Hebrew and
+translation as published, with its Strong's numbers replaced by ids of
+Haqor's own.
 
 **Thematic cross references** — *The Treasury of Scripture Knowledge*
 (Samuel Bagster & Sons, 1830s; commonly credited to R. A. Torrey), from the
@@ -268,9 +284,9 @@ https://github.com/Clear-Bible/macula-hebrew/, (C) 2022-2024 Biblica, Inc,
 licensed CC BY 4.0. Haqor carries their clauses, phrases and clause-level
 functions (the Westminster Hebrew Syntax of the J. Alan Groves Center, CC BY
 4.0), with English glosses for parts of words from Cherith Analytics'
-glosses (CC BY 4.0). The files are fetched from their canonical repository at
-a pinned commit by `scripts/fetch-macula-hebrew.sh` rather than redistributed
-here.
+glosses (CC BY 4.0). Haqor vendors the trees alone in `src_texts/MACULA-Hebrew/`
+(`scripts/fetch-macula-hebrew.sh`), each verse's clauses, phrases and words
+written in a compact text form.
 
 **English translation** — adapted from the unfoldingWord Literal Text (ULT),
 (C) unfoldingWord, licensed CC BY-SA 4.0, using its alignment to the
@@ -280,8 +296,9 @@ Hebrew text, and leaves out the ULT's footnotes and paragraphing. The original
 work by unfoldingWord is available from
 [unfoldingword.org/ult](https://www.unfoldingword.org/ult). The adapted text,
 the `translation_verse` table of `haqor.db`, is shared under the same licence,
-CC BY-SA 4.0. The sources are fetched at pinned commits by
-`scripts/fetch-unfoldingword.sh` rather than redistributed here.
+CC BY-SA 4.0. Haqor vendors the Old Testament's words and alignments in
+`src_texts/unfoldingWord/` (`scripts/fetch-unfoldingword.sh`), with each
+text's licence.
 
 **Syriac New Testament** — the text of the British and Foreign Bible Society's
 edition, with lexical and morphological data from SEDRA:
