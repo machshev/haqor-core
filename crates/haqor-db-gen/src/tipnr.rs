@@ -114,6 +114,42 @@ pub(crate) fn strip_strongs(text: &str) -> String {
         .join("\n")
 }
 
+/// A record's description as prose: [`strip_strongs`], and the records it
+/// names by their names, not their keys ("People from Ram@Job.32.2" is
+/// "People from Ram"). A description that repeats a linked record's name and
+/// Hebrew before saying what it is ("Eber@Gen.10.21-Luk עֵבֶר (Eber, ) People
+/// from Eber@…") keeps only the saying.
+pub(crate) fn plain_description(text: &str) -> String {
+    let text = strip_strongs(text);
+    let text = if text.chars().any(|c| ('\u{05D0}'..='\u{05EA}').contains(&c)) {
+        text.rsplit_once(") ")
+            .map_or(text.as_str(), |(_, saying)| saying)
+            .to_string()
+    } else {
+        text
+    };
+    let mut out = String::new();
+    let mut chars = text.chars().peekable();
+    while let Some(c) = chars.next() {
+        if c == '@' {
+            // A key's reference: `Gen.10.21-Luk`, `Jdg.4.11-`.
+            while chars
+                .peek()
+                .is_some_and(|c| c.is_ascii_alphanumeric() || matches!(c, '.' | '-'))
+            {
+                chars.next();
+            }
+            // `Shelah@Gen.38.5-1Ch(?)`: the doubt, apart from the name.
+            if chars.peek() == Some(&'(') {
+                out.push(' ');
+            }
+            continue;
+        }
+        out.push(if c == '_' { ' ' } else { c });
+    }
+    out
+}
+
 /// Turn TIPNR's summary markup into plain text: `<ref="…">Gen.35.16</ref>`
 /// and `<strong="H1035G">Bethlehem</strong>` keep only their text, `<br>`
 /// starts a new line, and a closing parenthesis TIPNR leaves unopened
@@ -280,7 +316,7 @@ pub(crate) fn parse(text: &str) -> Result<Vec<Record>> {
             };
             match kind {
                 Kind::Person => {
-                    record.description = strip_strongs(field(1));
+                    record.description = plain_description(field(1));
                     let mut parents = field(2).splitn(2, '+');
                     for (relation, part) in ["father", "mother"].into_iter().zip(parents.by_ref()) {
                         record
@@ -306,7 +342,7 @@ pub(crate) fn parse(text: &str) -> Result<Vec<Record>> {
                     let openbible = field(1).split('=').next().unwrap_or_default();
                     record.openbible = strip_strongs(openbible).trim().replace('_', " ");
                 }
-                Kind::Other => record.description = strip_strongs(field(1)),
+                Kind::Other => record.description = plain_description(field(1)),
             }
             if record.description == ">" {
                 record.description.clear();
@@ -369,6 +405,31 @@ Bethlehem@Gen.35.16-Jhn=H1035G\tBethlehem_1\tSalma@1Ch.2.51-=H8007H\t\thttps://w
 $========== EXCLUDED OTHER
 Aramaic@2Ki.18.26-Rev=H0762\tA language\t\t\t\t\t>\t#A language\tLanguage
 ";
+
+    #[test]
+    fn names_records_in_descriptions_by_name() {
+        for (raw, plain) in [
+            ("People from Ram@Job.32.2", "People from Ram"),
+            (
+                "Ancestors of Heber@Jdg.4.11- or Hobab@Num.10.29-Jdg",
+                "Ancestors of Heber or Hobab",
+            ),
+            (
+                "People from Shelah@Gen.38.5-1Ch(?)",
+                "People from Shelah (?)",
+            ),
+            (
+                "Eber@Gen.10.21-Luk עֵבֶר (Eber, ) People from Eber@Gen.10.21-Luk",
+                "People from Eber",
+            ),
+            (
+                "King living at the time of Divided Monarchy",
+                "King living at the time of Divided Monarchy",
+            ),
+        ] {
+            assert_eq!(plain_description(raw), plain, "{raw}");
+        }
+    }
 
     #[test]
     fn strips_strongs_numbers_from_prose() {
