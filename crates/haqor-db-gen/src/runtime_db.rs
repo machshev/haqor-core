@@ -330,7 +330,8 @@ pub(crate) fn attach_lexicon_views(db: &Connection) -> Result<()> {
 
 /// Build `haqor.db` from the four generation databases in `data_dir`, plus the
 /// thematic cross references, syntax trees, English translation, and people,
-/// places and word senses read from `src_texts`.
+/// places and word senses read from `src_texts`, the places Haqor identifies
+/// itself from `data_dir`'s `place_overrides.json`.
 ///
 /// The output is created empty, then attached to the connection the generation
 /// databases already live on: the bulk tables copy schema-to-schema in SQL, and
@@ -390,7 +391,11 @@ pub fn generate_runtime(
     crate::tsk::build_thematic_references(&Connection::open(output)?, src_texts)?;
     crate::syntax::build_syntax_trees(&Connection::open(output)?, src_texts)?;
     crate::translation::build_translation(&Connection::open(output)?, src_texts)?;
-    crate::names::build_names(&Connection::open(output)?, src_texts)?;
+    crate::names::build_names(
+        &Connection::open(output)?,
+        src_texts,
+        &data_dir.join(crate::names::PLACE_OVERRIDES),
+    )?;
 
     // VACUUM cannot run on an attached database, so the reclaim happens on the
     // finished file. It matters: the bulk load leaves the free pages that make

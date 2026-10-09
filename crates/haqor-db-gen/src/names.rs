@@ -9,8 +9,8 @@
 //! - `word_name` links a word to the person or place (`name_entity`) it
 //!   names, so a reader can tell which Zechariah a verse means. The record's
 //!   name forms, family and other links, and positions on a map
-//!   (`name_location`, OpenBible.info's, or TIPNR's where it has none) come
-//!   with it.
+//!   (`name_location`, OpenBible.info's, or TIPNR's where it has none, or
+//!   Haqor's own where `data/place_overrides.json` gives them) come with it.
 //! - `surface_sense` gives each surface the sense (`sense`) most of its
 //!   occurrences have, and `word_sense` the occurrences that differ — the
 //!   same spelling read as "lie down" in one verse and "be dead" in another.
@@ -144,9 +144,11 @@ pub struct NamesSummary {
     pub entities: usize,
     /// Words of the corpus naming a person, place or other named thing.
     pub name_words: usize,
-    /// Places with a position, and of those, how many from OpenBible.info.
+    /// Places with a position, and of those, how many from OpenBible.info and
+    /// how many from Haqor's own identifications.
     pub located: usize,
     pub geocoded: usize,
+    pub overridden: usize,
     pub senses: usize,
     /// Words of the corpus with a sense, and the rows it took to say so:
     /// one per surface, and one per occurrence differing from its surface.
@@ -157,6 +159,57 @@ pub struct NamesSummary {
 
 fn text(value: &Value, key: &str) -> String {
     value[key].as_str().unwrap_or_default().to_string()
+}
+
+/// The file of Haqor's own place identifications, in the data directory
+/// (see `data/PLACE_OVERRIDES.md`).
+pub const PLACE_OVERRIDES: &str = "place_overrides.json";
+
+/// A position Haqor gives a place: latitude, longitude, kind and label.
+type OverrideLocation = (f64, f64, String, String);
+
+/// Haqor's own identifications of places, which replace OpenBible.info's:
+/// each TIPNR key's locations, likeliest first, with the record name the
+/// entry was written for.
+struct PlaceOverrides(HashMap<String, (String, Vec<OverrideLocation>)>);
+
+impl PlaceOverrides {
+    fn read(path: &Path) -> Result<Self> {
+        let json: Value = serde_json::from_str(
+            &std::fs::read_to_string(path)
+                .with_context(|| format!("reading {}", path.display()))?,
+        )
+        .with_context(|| format!("parsing {}", path.display()))?;
+        let mut out = HashMap::new();
+        for entry in json["places"].as_array().into_iter().flatten() {
+            let key = text(entry, "key");
+            let mut locations = Vec::new();
+            for l in entry["locations"].as_array().into_iter().flatten() {
+                let (Some(latitude), Some(longitude)) =
+                    (l["latitude"].as_f64(), l["longitude"].as_f64())
+                else {
+                    bail!(
+                        "a location of {key} in {} without a position",
+                        path.display()
+                    );
+                };
+                locations.push((latitude, longitude, text(l, "kind"), text(l, "label")));
+            }
+            if key.is_empty() || locations.is_empty() {
+                bail!(
+                    "an entry of {} without a key or locations: {entry}",
+                    path.display()
+                );
+            }
+            if out
+                .insert(key.clone(), (text(entry, "name"), locations))
+                .is_some()
+            {
+                bail!("{key} twice in {}", path.display());
+            }
+        }
+        Ok(Self(out))
+    }
 }
 
 /// The OpenBible place a TIPNR place record is: the one of the OpenBible name
@@ -199,8 +252,13 @@ fn distinct(locations: &[Location]) -> Vec<&Location> {
 }
 
 /// Rebuild the name and sense tables of a runtime database in place from the
-/// prepared files in `src_texts`.
-pub fn build_names(db: &Connection, src_texts: &Path) -> Result<NamesSummary> {
+/// prepared files in `src_texts`, placing the places `place_overrides` names
+/// where it says.
+pub fn build_names(
+    db: &Connection,
+    src_texts: &Path,
+    place_overrides: &Path,
+) -> Result<NamesSummary> {
     let dir = crate::stepbible::source_dir(src_texts);
     let read = |name: &str| {
         let path = dir.join(name);
@@ -217,6 +275,7 @@ pub fn build_names(db: &Connection, src_texts: &Path) -> Result<NamesSummary> {
         .collect::<serde_json::Result<_>>()
         .context("reading the prepared TIPNR records")?;
     let places = crate::geocoding::read_prepared(src_texts)?;
+    let mut overrides = PlaceOverrides::read(place_overrides)?.0;
     let tags = crate::stepbible::align_tags(&dir, db)?;
 
     let tx = db.unchecked_transaction()?;
@@ -294,6 +353,30 @@ pub fn build_names(db: &Connection, src_texts: &Path) -> Result<NamesSummary> {
             if text(record, "kind") != "place" {
                 continue;
             }
+            if let Some((name, locations)) = overrides.remove(&text(record, "key")) {
+                if name != text(record, "name") {
+                    bail!(
+                        "{} names {name}, but TIPNR's record {} is {}",
+                        place_overrides.display(),
+                        text(record, "key"),
+                        text(record, "name")
+                    );
+                }
+                for (ord, (latitude, longitude, kind, label)) in locations.iter().enumerate() {
+                    location.execute(params![
+                        id,
+                        ord as i64,
+                        latitude,
+                        longitude,
+                        None::<i64>,
+                        kind,
+                        label
+                    ])?;
+                }
+                summary.located += 1;
+                summary.overridden += 1;
+                continue;
+            }
             match place_of(record, &places) {
                 Some(place) => {
                     for (ord, l) in distinct(&place.locations).into_iter().enumerate() {
@@ -322,6 +405,12 @@ pub fn build_names(db: &Connection, src_texts: &Path) -> Result<NamesSummary> {
             }
         }
         summary.entities = records.len();
+    }
+    if let Some(key) = overrides.keys().next() {
+        bail!(
+            "{} places {key}, which no TIPNR place record has",
+            place_overrides.display()
+        );
     }
 
     // Senses, keyed by surface where they can be: each surface takes the
@@ -424,9 +513,9 @@ pub fn build_names(db: &Connection, src_texts: &Path) -> Result<NamesSummary> {
 
 /// `db gen-names`: rebuild the name and sense tables of the runtime database
 /// at `path` in place and re-stamp it, so syncing it to the app reinstalls it.
-pub fn gen_names(path: &Path, src_texts: &Path) -> Result<NamesSummary> {
+pub fn gen_names(path: &Path, src_texts: &Path, place_overrides: &Path) -> Result<NamesSummary> {
     let db = Connection::open(path).with_context(|| format!("opening {}", path.display()))?;
-    let summary = build_names(&db, src_texts)?;
+    let summary = build_names(&db, src_texts, place_overrides)?;
     crate::runtime_db::restamp_built(&db)?;
     Ok(summary)
 }
@@ -459,7 +548,8 @@ mod tests {
              DETACH DATABASE src;",
         )
         .unwrap();
-        let summary = build_names(&db, &src_texts).unwrap();
+        let summary =
+            build_names(&db, &src_texts, &root.join("data").join(PLACE_OVERRIDES)).unwrap();
         eprintln!("{summary:?}");
         assert!(summary.name_words > 35_000, "{summary:?}");
         assert!(summary.sense_words > 240_000, "{summary:?}");
@@ -504,6 +594,24 @@ mod tests {
             )
             .unwrap();
         assert_eq!(north, 0);
+
+        // Haqor's own identifications replace OpenBible.info's: Mount Sinai
+        // is Jabal al-Lawz, in Midian, and only there.
+        assert!(summary.overridden >= 8, "{summary:?}");
+        let sinai: Vec<(f64, f64, String)> = db
+            .prepare(
+                "SELECT latitude, longitude, label FROM name_location l \
+                 JOIN name_entity e USING(entity_id) WHERE e.name = 'Sinai' ORDER BY ord",
+            )
+            .unwrap()
+            .query_map([], |row| Ok((row.get(0)?, row.get(1)?, row.get(2)?)))
+            .unwrap()
+            .collect::<rusqlite::Result<_>>()
+            .unwrap();
+        assert_eq!(sinai.len(), 1, "{sinai:?}");
+        let (latitude, longitude, label) = &sinai[0];
+        assert!((latitude - 28.654).abs() < 0.01 && (longitude - 35.306).abs() < 0.01);
+        assert!(label.contains("Jabal al-Lawz"), "{label}");
 
         // No Strong's number anywhere in the tables.
         for (table, column) in [

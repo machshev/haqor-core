@@ -315,6 +315,9 @@ enum DbCommands {
         /// Source texts directory holding STEPBible-Data and OpenBible-Geocoding.
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
+        /// Haqor's own place identifications, which replace OpenBible.info's.
+        #[arg(long, default_value = "data/place_overrides.json")]
+        place_overrides: PathBuf,
     },
     /// Reduce a downloaded dataset to the prepared files vendored in
     /// src_texts, which the build reads. The scripts/fetch-*.sh scripts run
@@ -622,14 +625,19 @@ fn main() -> Result<()> {
                     summary.missing
                 );
             }
-            DbCommands::GenNames { db, src_texts } => {
-                let s = haqor_db_gen::gen_names(&db, &src_texts)?;
+            DbCommands::GenNames {
+                db,
+                src_texts,
+                place_overrides,
+            } => {
+                let s = haqor_db_gen::gen_names(&db, &src_texts, &place_overrides)?;
                 println!(
                     "Wrote {} people, places and other names ({} words naming one; {} places \
-                     located) and {} senses ({} words) to {}",
+                     located, {} by Haqor's own identification) and {} senses ({} words) to {}",
                     s.entities,
                     s.name_words,
                     s.located,
+                    s.overridden,
                     s.senses,
                     s.sense_words,
                     db.display()

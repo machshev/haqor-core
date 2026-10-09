@@ -1,0 +1,179 @@
+{
+  "places": [
+    {
+      "key": "Raamses@Exo.1.11",
+      "name": "Raamses",
+      "note": "OpenBible.info has no place of this spelling, so TIPNR's own position, 30 km from Rameses, was drawn; it is the same city.",
+      "locations": [
+        {
+          "latitude": 30.79937,
+          "longitude": 31.834217,
+          "kind": "settlement",
+          "label": "Qantir (Pi-Ramesses)"
+        }
+      ]
+    },
+    {
+      "key": "Pi-hahiroth@Exo.14.2",
+      "name": "Pi-hahiroth",
+      "note": "The camp before the crossing, at the foot of Wadi Watir, after Ron Wyatt and Lennart Möller (The Exodus Case). OpenStreetMap's Nuweiba al-Muzayna.",
+      "locations": [
+        {
+          "latitude": 28.9675,
+          "longitude": 34.6497,
+          "kind": "campsite",
+          "label": "Nuweiba beach, at the mouth of Wadi Watir"
+        }
+      ]
+    },
+    {
+      "key": "Baal-zephon@Exo.14.2",
+      "name": "Baal-zephon",
+      "note": "Saraf al-Bal, across the gulf from Nuweiba, after Möller. No gazetteer gives it; the position is the Saudi shore opposite Nuweiba, a little inland.",
+      "locations": [
+        {
+          "latitude": 28.9675,
+          "longitude": 34.88,
+          "kind": "region",
+          "label": "Saraf al-Bal, opposite Nuweiba (approximate)"
+        }
+      ]
+    },
+    {
+      "key": "Red_Sea@Exo.10.19",
+      "name": "Red Sea",
+      "note": "The sea crossed, the Gulf of Aqaba between Nuweiba and Saraf al-Bal, after Wyatt and Möller. OpenBible.info's matching picked the Way of the Red Sea, a road.",
+      "locations": [
+        {
+          "latitude": 28.9675,
+          "longitude": 34.76,
+          "kind": "body of water",
+          "label": "Gulf of Aqaba, crossed from Nuweiba to Saraf al-Bal"
+        }
+      ]
+    },
+    {
+      "key": "Elim@Exo.15.27",
+      "name": "Elim",
+      "note": "The twelve springs of al-Bad', after Möller. OpenStreetMap's Maghair Shuaib.",
+      "locations": [
+        {
+          "latitude": 28.48,
+          "longitude": 35.011389,
+          "kind": "spring",
+          "label": "the springs of al-Bad'"
+        }
+      ]
+    },
+    {
+      "key": "Rephidim@Exo.17.1",
+      "name": "Rephidim",
+      "note": "By the split rock west of Jabal al-Lawz, the position its proponents give (28°43'31.35\"N 35°14'15.36\"E, as cited by bible.ca).",
+      "locations": [
+        {
+          "latitude": 28.725375,
+          "longitude": 35.2376,
+          "kind": "campsite",
+          "label": "the split rock, west of Jabal al-Lawz"
+        }
+      ]
+    },
+    {
+      "key": "Sinai@Exo.3.1",
+      "name": "Sinai",
+      "note": "Mount Sinai, and Horeb, which TIPNR makes the same record, as Jabal al-Lawz in Midian, after Ron Wyatt, Bob Cornuke and Lennart Möller. OpenBible.info's position for it.",
+      "locations": [
+        {
+          "latitude": 28.654167,
+          "longitude": 35.305833,
+          "kind": "mountain",
+          "label": "Jabal al-Lawz, in Midian"
+        }
+      ]
+    },
+    {
+      "key": "Sinai_Wilderness@Exo.19.1",
+      "name": "Sinai Wilderness",
+      "note": "The wilderness about the mountain, so about Jabal al-Lawz.",
+      "locations": [
+        {
+          "latitude": 28.654167,
+          "longitude": 35.305833,
+          "kind": "region",
+          "label": "around Jabal al-Lawz"
+        }
+      ]
+    },
+    {
+      "key": "Sodom@Gen.10.19",
+      "name": "Sodom",
+      "note": "Bab edh-Dhra, after Joel Kramer (Expedition Bible, 'Sodom burned, Zoar did NOT'), with Walter Rast and Thomas Schaub's survey of the five Early Bronze sites south-east of the Dead Sea. Wikipedia's position; OpenBible.info's is a kilometre off the site.",
+      "locations": [
+        {
+          "latitude": 31.253928,
+          "longitude": 35.534184,
+          "kind": "settlement",
+          "label": "Bab edh-Dhra"
+        }
+      ]
+    },
+    {
+      "key": "Gomorrah@Gen.10.19",
+      "name": "Gomorrah",
+      "note": "Numeira, after Kramer. Wikipedia's position.",
+      "locations": [
+        {
+          "latitude": 31.131588,
+          "longitude": 35.529399,
+          "kind": "settlement",
+          "label": "Numeira"
+        }
+      ]
+    },
+    {
+      "key": "Admah@Gen.10.19",
+      "name": "Admah",
+      "note": "Feifa, after Kramer. OpenBible.info's position for it.",
+      "locations": [
+        {
+          "latitude": 30.939606,
+          "longitude": 35.458842,
+          "kind": "settlement",
+          "label": "Feifa"
+        }
+      ]
+    },
+    {
+      "key": "Zeboiim@Gen.10.19",
+      "name": "Zeboiim",
+      "note": "Khanazir, after Kramer. OpenBible.info's position for it.",
+      "locations": [
+        {
+          "latitude": 30.87767,
+          "longitude": 35.437069,
+          "kind": "settlement",
+          "label": "Khanazir"
+        }
+      ]
+    },
+    {
+      "key": "Zoar@Gen.13.10",
+      "name": "Zoar",
+      "note": "The town spared, at es-Safi, where the Madaba map puts it, after Kramer: Tell esh-Sheikh 'Isa, OpenBible.info's position. With it, Lot's cave (Gen 19:30), which has no record of its own: the cave and Byzantine church of Saint Lot at Deir 'Ain 'Abata above es-Safi, excavated by Konstantinos Politis; OpenStreetMap's position.",
+      "locations": [
+        {
+          "latitude": 31.022968,
+          "longitude": 35.47216,
+          "kind": "settlement",
+          "label": "Tell esh-Sheikh 'Isa, at es-Safi"
+        },
+        {
+          "latitude": 31.0468038,
+          "longitude": 35.5028046,
+          "kind": "cave",
+          "label": "Lot's cave (Deir 'Ain 'Abata), where Lot fled from Zoar"
+        }
+      ]
+    }
+  ]
+}
