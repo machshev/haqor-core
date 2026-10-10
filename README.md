@@ -205,7 +205,8 @@ gives each word its sense from STEP Bible's TBESH (שָׁכַב "lie down" read
 as "sleep" in one verse and "be dead" in another). Both come through
 TAHOT's tags, aligned to the corpus as its glosses are; places take their
 positions from OpenBible.info's geocoding, every identification with its
-confidence (TIPNR's own position where OpenBible has none). The sources are
+confidence (TIPNR's own position where OpenBible has none), and a region its
+bounds and a river its course. The sources are
 prepared in `src_texts/STEPBible-Data/` and `src_texts/OpenBible-Geocoding/`:
 
 ```sh
@@ -313,7 +314,9 @@ not used.
 **Places on the map** — OpenBible.info's
 [Bible Geocoding Data](https://github.com/openbibleinfo/Bible-Geocoding-Data),
 licensed CC BY 4.0. Haqor keeps each identification's position, kind,
-modern location and confidence.
+modern location and confidence, and the ground a region covers or the
+course a river runs: OpenBible.info's own rough bounds, or OpenStreetMap's
+geometry as it gathers it (© OpenStreetMap contributors, ODbL 1.0).
 
 **Thematic cross references** — *The Treasury of Scripture Knowledge*
 (Samuel Bagster & Sons, 1830s; commonly credited to R. A. Torrey), from the

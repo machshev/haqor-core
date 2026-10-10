@@ -326,7 +326,8 @@ enum DbCommands {
         /// The dataset: stepbible, macula-hebrew, unfoldingword or
         /// openbible-geocoding.
         source: haqor_db_gen::PreparedSource,
-        /// The downloaded dataset, as its fetch script lays it out.
+        /// The downloaded dataset, as its fetch script lays it out (for
+        /// openbible-geocoding, a checkout of its repository).
         #[arg(long)]
         from: PathBuf,
         /// Where to write the prepared files: the dataset's directory in

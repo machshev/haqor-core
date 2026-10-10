@@ -5276,10 +5276,18 @@ impl Bible {
     }
 
     fn name_locations(&self, id: u32) -> rusqlite::Result<Vec<crate::names::PlaceLocation>> {
-        let mut stmt = self.db.prepare_cached(
-            "SELECT latitude, longitude, confidence, kind, label FROM data.name_location \
-             WHERE entity_id = ?1 ORDER BY ord",
+        // A database built before places had shapes has no `shape` column.
+        let has_shape: bool = self.db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM pragma_table_info('name_location', 'data') \
+             WHERE name = 'shape')",
+            [],
+            |row| row.get(0),
         )?;
+        let mut stmt = self.db.prepare_cached(&format!(
+            "SELECT latitude, longitude, confidence, kind, label, {} FROM data.name_location \
+             WHERE entity_id = ?1 ORDER BY ord",
+            if has_shape { "shape" } else { "''" }
+        ))?;
         stmt.query_map([id], |row| {
             Ok(crate::names::PlaceLocation {
                 latitude: row.get(0)?,
@@ -5287,6 +5295,7 @@ impl Bible {
                 confidence: row.get(2)?,
                 kind: row.get(3)?,
                 label: row.get(4)?,
+                shape: crate::names::PlaceShape::decode(&row.get::<_, String>(5)?),
             })
         })?
         .collect()

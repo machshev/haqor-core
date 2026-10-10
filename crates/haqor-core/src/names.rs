@@ -94,6 +94,77 @@ pub struct PlaceLocation {
     pub kind: String,
     /// The modern location it is identified with.
     pub label: String,
+    /// The ground it covers or the course it runs, where OpenBible.info
+    /// draws more than a point; `None` for a point.
+    pub shape: Option<PlaceShape>,
+}
+
+/// A place drawn as more than a point: each part a list of longitude,
+/// latitude pairs.
+#[derive(Clone, Debug, PartialEq)]
+pub enum PlaceShape {
+    /// A region's rough bounds, or a lake's or a site's outline; each part a
+    /// ring, its last point joined back to its first.
+    Area(Vec<Vec<[f64; 2]>>),
+    /// A river's, wadi's or road's course.
+    Line(Vec<Vec<[f64; 2]>>),
+}
+
+impl PlaceShape {
+    /// Its parts, whichever it is.
+    pub fn parts(&self) -> &[Vec<[f64; 2]>] {
+        match self {
+            PlaceShape::Area(parts) | PlaceShape::Line(parts) => parts,
+        }
+    }
+
+    /// As the database keeps it: `area:` or `line:`, then the parts split by
+    /// `|`, each its points split by `;` and written `longitude,latitude`.
+    pub fn encode(&self) -> String {
+        let kind = match self {
+            PlaceShape::Area(_) => "area",
+            PlaceShape::Line(_) => "line",
+        };
+        let parts: Vec<String> = self
+            .parts()
+            .iter()
+            .map(|part| {
+                let points: Vec<String> = part
+                    .iter()
+                    .map(|[lon, lat]| format!("{},{}", round(*lon), round(*lat)))
+                    .collect();
+                points.join(";")
+            })
+            .collect();
+        format!("{kind}:{}", parts.join("|"))
+    }
+
+    /// What [`PlaceShape::encode`] wrote; `None` for an empty or unreadable
+    /// text.
+    pub fn decode(text: &str) -> Option<PlaceShape> {
+        let (kind, rest) = text.split_once(':')?;
+        let parts = rest
+            .split('|')
+            .map(|part| {
+                part.split(';')
+                    .map(|point| {
+                        let (lon, lat) = point.split_once(',')?;
+                        Some([lon.parse().ok()?, lat.parse().ok()?])
+                    })
+                    .collect::<Option<Vec<_>>>()
+            })
+            .collect::<Option<Vec<_>>>()?;
+        match kind {
+            "area" => Some(PlaceShape::Area(parts)),
+            "line" => Some(PlaceShape::Line(parts)),
+            _ => None,
+        }
+    }
+}
+
+/// Degrees to five places, about a metre: finer than any shape is drawn.
+fn round(degrees: f64) -> f64 {
+    (degrees * 1e5).round() / 1e5
 }
 
 /// A person, place or other named thing, with all the build knows of it.
@@ -170,5 +241,23 @@ mod tests {
             split_gloss("land: country/planet"),
             ("land", "country/planet")
         );
+    }
+
+    #[test]
+    fn place_shapes_round_trip() {
+        let area = PlaceShape::Area(vec![
+            vec![[35.1, 31.2], [35.3, 31.2], [35.2, 31.4]],
+            vec![[34.0, 30.0], [34.1, 30.0], [34.0, 30.1]],
+        ]);
+        assert_eq!(
+            area.encode(),
+            "area:35.1,31.2;35.3,31.2;35.2,31.4|34,30;34.1,30;34,30.1"
+        );
+        assert_eq!(PlaceShape::decode(&area.encode()), Some(area));
+        let line = PlaceShape::Line(vec![vec![[35.612345678, 32.7], [35.5, 31.8]]]);
+        assert_eq!(line.encode(), "line:35.61235,32.7;35.5,31.8");
+        assert_eq!(PlaceShape::decode(""), None);
+        assert_eq!(PlaceShape::decode("circle:1,2"), None);
+        assert_eq!(PlaceShape::decode("line:1,x"), None);
     }
 }

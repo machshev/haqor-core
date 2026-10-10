@@ -22,6 +22,7 @@ use std::collections::HashMap;
 use std::path::Path;
 
 use anyhow::{Context, Result, bail};
+use haqor_core::names::PlaceShape;
 use log::info;
 use rusqlite::{Connection, params};
 use serde_json::Value;
@@ -83,8 +84,9 @@ CREATE TABLE name_link(
 -- Where a place may have been, the likeliest first. `confidence` is
 -- OpenBible.info's current score for the identification, 0 to 1000; NULL for
 -- TIPNR's own position, used where OpenBible has none. `kind` is the kind of
--- place (settlement, river, region, …) and `label` the modern location it is
--- identified with.
+-- place (settlement, river, region, …), `label` the modern location it is
+-- identified with and `shape` the ground it covers or the course it runs
+-- (haqor_core::names::PlaceShape::encode), empty for a point.
 CREATE TABLE name_location(
     entity_id  INTEGER NOT NULL,
     ord        INTEGER NOT NULL,
@@ -93,6 +95,7 @@ CREATE TABLE name_location(
     confidence INTEGER,
     kind       TEXT    NOT NULL,
     label      TEXT    NOT NULL,
+    shape      TEXT    NOT NULL DEFAULT '',
     PRIMARY KEY(entity_id, ord)
 ) WITHOUT ROWID;
 
@@ -311,7 +314,7 @@ pub fn build_names(
         )?;
         let mut location = tx.prepare(
             "INSERT INTO name_location(entity_id, ord, latitude, longitude, confidence, kind, \
-             label) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
+             label, shape) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
         )?;
         for record in &records {
             let id = record["id"]
@@ -370,7 +373,8 @@ pub fn build_names(
                         longitude,
                         None::<i64>,
                         kind,
-                        label
+                        label,
+                        ""
                     ])?;
                 }
                 summary.located += 1;
@@ -387,7 +391,8 @@ pub fn build_names(
                             l.longitude,
                             l.confidence,
                             l.kind,
-                            l.label
+                            l.label,
+                            l.shape.as_ref().map(PlaceShape::encode).unwrap_or_default()
                         ])?;
                     }
                     summary.located += 1;
@@ -398,7 +403,7 @@ pub fn build_names(
                         .as_array()
                         .and_then(|c| Some([c.first()?.as_f64()?, c.get(1)?.as_f64()?]))
                     {
-                        location.execute(params![id, 0, lat, lon, None::<i64>, "", ""])?;
+                        location.execute(params![id, 0, lat, lon, None::<i64>, "", "", ""])?;
                         summary.located += 1;
                     }
                 }
@@ -612,6 +617,39 @@ mod tests {
         let (latitude, longitude, label) = &sinai[0];
         assert!((latitude - 28.654).abs() < 0.01 && (longitude - 35.306).abs() < 0.01);
         assert!(label.contains("Jabal al-Lawz"), "{label}");
+
+        // Regions are drawn as their ground and rivers as their course;
+        // settlements stay points.
+        let shape = |name: &str| -> Option<PlaceShape> {
+            let text: String = db
+                .query_row(
+                    "SELECT shape FROM name_location l JOIN name_entity e USING(entity_id) \
+                     WHERE e.name = ?1 AND l.ord = 0 ORDER BY e.occurrences DESC LIMIT 1",
+                    [name],
+                    |row| row.get(0),
+                )
+                .unwrap();
+            PlaceShape::decode(&text)
+        };
+        let Some(PlaceShape::Area(egypt)) = shape("Egypt") else {
+            panic!("Egypt has no area");
+        };
+        // The Nile delta, Memphis and Ain Shams are in it.
+        let ring = &egypt[0];
+        let (west, east) = ring.iter().fold((f64::MAX, f64::MIN), |(w, e), [lon, _]| {
+            (w.min(*lon), e.max(*lon))
+        });
+        assert!(west < 31.2 && east > 31.3, "{ring:?}");
+        let Some(PlaceShape::Line(jordan)) = shape("Jordan") else {
+            panic!("the Jordan has no course");
+        };
+        // From the Sea of Galilee's south down to the Dead Sea, with its
+        // meanders.
+        let points: Vec<&[f64; 2]> = jordan.iter().flatten().collect();
+        assert!(points.len() > 100, "{}", points.len());
+        assert!(points.iter().any(|[_, lat]| *lat < 31.8));
+        assert!(points.iter().any(|[_, lat]| *lat > 32.7));
+        assert_eq!(shape("Bethel"), None);
 
         // No Strong's number anywhere in the tables.
         for (table, column) in [
