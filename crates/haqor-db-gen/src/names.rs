@@ -923,9 +923,10 @@ mod tests {
         };
         assert!((petra - 35.44).abs() < 0.01, "{kadesh:?}");
         assert!((qudeirat - 34.42).abs() < 0.01, "{kadesh:?}");
-        assert!(!forms.contains("barnea") && barnea_forms.starts_with("Kadesh-barnea"));
-        // Ten verses, each with Kadesh and Barnea.
-        assert_eq!(*barnea, 20);
+        assert!(!forms.contains("barnea") && !forms.contains("Kedesh"));
+        assert!(barnea_forms.starts_with("Kadesh-barnea") && barnea_forms.contains("Kedesh"));
+        // Ten verses, each with Kadesh and Barnea, and three of the Negev.
+        assert_eq!(*barnea, 23);
 
         // Regions are drawn as their ground and rivers as their course;
         // settlements stay points.

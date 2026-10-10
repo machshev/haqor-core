@@ -68,8 +68,9 @@ Eusebius places it by Petra; Wadi Musa's spring is held to be where Moses
 struck the rock. Mount Hor, where Aaron died, is Jebel Harun above it, where
 his tomb is shown. TIPNR makes Kadesh-barnea the same record, but it stands on
 the southern border of the land (Numbers 34:4; Joshua 15:3), so it is split
-from Kadesh and keeps OpenBible.info's Ain el-Qudeirat: the verses naming
-Kadesh-barnea are its, the others Kadesh's.
+from Kadesh and keeps OpenBible.info's Ain el-Qudeirat. It takes the verses
+naming Kadesh-barnea, and the Negev's Kadesh of Abraham and Hagar (Genesis
+16:14; 20:1) and Judah's Kedesh (Joshua 15:23); the others are Kadesh's.
 
 ## The cities of the plain
 
