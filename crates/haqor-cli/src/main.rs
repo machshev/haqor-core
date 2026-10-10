@@ -307,12 +307,14 @@ enum DbCommands {
     },
     /// Rebuild the people, places and word senses of a runtime haqor.db in
     /// place (gen-runtime also builds them), from STEP Bible's TIPNR and
-    /// TBESH and OpenBible.info's geocoding.
+    /// TBESH and OpenBible.info's geocoding, with the events of the Bible
+    /// from Theographic Bible Metadata.
     GenNames {
         /// Runtime database to update.
         #[arg(short, long, default_value = "data/haqor.db")]
         db: PathBuf,
-        /// Source texts directory holding STEPBible-Data and OpenBible-Geocoding.
+        /// Source texts directory holding STEPBible-Data, OpenBible-Geocoding and
+        /// Theographic.
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
         /// Haqor's own place identifications, which replace OpenBible.info's.
@@ -321,13 +323,16 @@ enum DbCommands {
         /// Haqor's journeys, drawn through the places.
         #[arg(long, default_value = "data/journeys.json")]
         journeys: PathBuf,
+        /// Haqor's corrections to the events of the Bible.
+        #[arg(long, default_value = "data/event_overrides.json")]
+        event_overrides: PathBuf,
     },
     /// Reduce a downloaded dataset to the prepared files vendored in
     /// src_texts, which the build reads. The scripts/fetch-*.sh scripts run
     /// this after downloading; it is not needed for an ordinary build.
     Prepare {
-        /// The dataset: stepbible, macula-hebrew, unfoldingword or
-        /// openbible-geocoding.
+        /// The dataset: stepbible, macula-hebrew, unfoldingword,
+        /// openbible-geocoding or theographic.
         source: haqor_db_gen::PreparedSource,
         /// The downloaded dataset, as its fetch script lays it out (for
         /// openbible-geocoding, a checkout of its repository).
@@ -634,18 +639,27 @@ fn main() -> Result<()> {
                 src_texts,
                 place_overrides,
                 journeys,
+                event_overrides,
             } => {
-                let s = haqor_db_gen::gen_names(&db, &src_texts, &place_overrides, &journeys)?;
+                let s = haqor_db_gen::gen_names(
+                    &db,
+                    &src_texts,
+                    &place_overrides,
+                    &journeys,
+                    &event_overrides,
+                )?;
                 println!(
                     "Wrote {} people, places and other names ({} words naming one; {} places \
-                     located, {} by Haqor's own identification), {} journeys ({} stops) and {} senses \
-                     ({} words) to {}",
+                     located, {} by Haqor's own identification), {} journeys ({} stops), {} events ({} people \
+                     and places) and {} senses ({} words) to {}",
                     s.entities,
                     s.name_words,
                     s.located,
                     s.overridden,
                     s.journeys,
                     s.journey_stops,
+                    s.events.events,
+                    s.events.names,
                     s.senses,
                     s.sense_words,
                     db.display()

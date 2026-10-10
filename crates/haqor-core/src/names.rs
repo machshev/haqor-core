@@ -274,6 +274,27 @@ pub struct JourneyStop {
     pub note: String,
 }
 
+/// An event of the Bible, as Theographic Bible Metadata dates it (corrected
+/// by Haqor's `data/event_overrides.json`): from the creation in 4004 BC.
+#[derive(Clone, Debug, PartialEq)]
+pub struct BibleEvent {
+    pub id: u32,
+    pub title: String,
+    /// The year it began: BC negative, with no year 0.
+    pub year: i32,
+    /// How long it lasted, in [`BibleEvent::unit`]s: `years`, `months`,
+    /// `weeks` or `days`; 0 and empty where it is not given.
+    pub duration: u32,
+    pub unit: String,
+    /// The verses telling it.
+    pub passages: Vec<crate::bible::VerseSpan>,
+    /// The people and places taking part, as TIPNR knows them.
+    pub people: Vec<NameSummary>,
+    pub places: Vec<NameSummary>,
+    /// A line about its date; may be empty.
+    pub note: String,
+}
+
 /// Every place, and the regions they lie in.
 #[derive(Clone, Debug, Default, PartialEq)]
 pub struct Gazetteer {

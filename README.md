@@ -41,7 +41,7 @@ cargo run --release -- db refresh-reader-glosses
 Every dataset the build reads lives in `src_texts/`, so a build needs no
 network and does not depend on an upstream copy staying online. The external
 datasets (`STEPBible-Data`, `MACULA-Hebrew`, `unfoldingWord`,
-`OpenBible-Geocoding`) are committed in a prepared form: `haqor db prepare`
+`OpenBible-Geocoding`, `Theographic`) are committed in a prepared form: `haqor db prepare`
 reduces each, as published, to what the build reads, in plain text
 (TSV/JSON lines) whose diffs can be reviewed. That is about 47 MB in place of
 about 600 MB, and the build skips parsing their XML and USFM. Preparing does
@@ -222,6 +222,18 @@ their own, and `db prepare` refuses to write a file holding a Strong's
 number. `Bible::word_name`, `Bible::name_entity`, `Bible::chapter_places`
 and `Bible::word_sense` read them.
 
+### Events of the Bible
+
+`gen-names` also builds the events of the Bible for the app's timeline
+(`bible_event`, with the verses telling each in `bible_event_passage` and the
+people and places taking part in `bible_event_name`), from Theographic Bible
+Metadata, prepared in `src_texts/Theographic/`
+(`scripts/fetch-theographic.sh`). Its chronology is a young-earth one: the
+creation in 4004 BC, the flood in 2348 BC, the exodus in 1491 BC. Its people
+and places are found among TIPNR's records by name and the verses naming them,
+and its verses re-numbered onto the Hebrew text. `data/event_overrides.json`
+corrects it (see `data/EVENTS.md`). `Bible::bible_events` reads them.
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:
@@ -325,6 +337,18 @@ which describes its downloads as public domain biblical information. The file
 is kept unchanged in `src_texts/TSK/`, with its source and checksums; Haqor
 re-numbers its KJV verse references onto the Hebrew text and writes "Yahweh"
 where its KJV phrases read "the LORD".
+
+**Bible timeline** — the events of
+[Theographic Bible Metadata](https://github.com/robertrouse/theographic-bible-metadata),
+licensed CC BY-SA 4.0: each event's year, how long it lasted, the verses
+telling it and the people and places taking part. Its Old Testament dates are
+Floyd Nolen Jones's (*The Chronology of the Old Testament*), from the creation
+in 4004 BC, and those of Acts Todd Atwood's. Haqor corrects a few dates and
+titles, re-numbers the verses onto the Hebrew text, finds the people and
+places among STEP Bible's TIPNR records, and leaves Jesus out of the events
+before his birth; haqor-core's `data/event_overrides.json` lists the changes.
+The adapted events in `haqor.db` are shared under the same licence, CC BY-SA
+4.0.
 
 **Syntax trees** — MACULA Hebrew Linguistic Datasets, available at
 https://github.com/Clear-Bible/macula-hebrew/, (C) 2022-2024 Biblica, Inc,

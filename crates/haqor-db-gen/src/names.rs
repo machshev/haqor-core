@@ -164,6 +164,8 @@ pub struct NamesSummary {
     /// Haqor's journeys, and the stops on them.
     pub journeys: usize,
     pub journey_stops: usize,
+    /// The events of the Bible, and the people and places taking part.
+    pub events: crate::events::EventsSummary,
 }
 
 fn text(value: &Value, key: &str) -> String {
@@ -409,12 +411,15 @@ fn distinct(locations: &[Location]) -> Vec<&Location> {
 
 /// Rebuild the name and sense tables of a runtime database in place from the
 /// prepared files in `src_texts`, placing the places `place_overrides` names
-/// where it says, and the journeys of `journeys` through them.
+/// where it says, the journeys of `journeys` through them, and the events of
+/// the Bible, corrected by `event_overrides`, with the people and places
+/// taking part.
 pub fn build_names(
     db: &Connection,
     src_texts: &Path,
     place_overrides: &Path,
     journeys: &Path,
+    event_overrides: &Path,
 ) -> Result<NamesSummary> {
     let dir = crate::stepbible::source_dir(src_texts);
     let read = |name: &str| {
@@ -626,6 +631,10 @@ pub fn build_names(
         })
         .collect();
     (summary.journeys, summary.journey_stops) = crate::journeys::build(&tx, journeys, &place_keys)?;
+    let versification = crate::tsk::Versification::from_tahot(&dir)
+        .context("reading the KJV/Hebrew verse numbering for the events")?;
+    summary.events =
+        crate::events::build(&tx, src_texts, event_overrides, &records, &versification)?;
 
     // Senses, keyed by surface where they can be: each surface takes the
     // sense most of its occurrences have, and only the others are listed.
@@ -732,9 +741,10 @@ pub fn gen_names(
     src_texts: &Path,
     place_overrides: &Path,
     journeys: &Path,
+    event_overrides: &Path,
 ) -> Result<NamesSummary> {
     let db = Connection::open(path).with_context(|| format!("opening {}", path.display()))?;
-    let summary = build_names(&db, src_texts, place_overrides, journeys)?;
+    let summary = build_names(&db, src_texts, place_overrides, journeys, event_overrides)?;
     crate::runtime_db::restamp_built(&db)?;
     Ok(summary)
 }
@@ -805,6 +815,7 @@ mod tests {
             &src_texts,
             &root.join("data").join(PLACE_OVERRIDES),
             &root.join("data").join(crate::journeys::JOURNEYS),
+            &root.join("data").join(crate::events::EVENT_OVERRIDES),
         )
         .unwrap();
         eprintln!("{summary:?}");

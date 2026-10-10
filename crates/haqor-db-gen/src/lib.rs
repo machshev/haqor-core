@@ -4,6 +4,7 @@
 //! table at a time. Currently it generates the `bible` table (OT text from
 //! UXLC plus NT Syriac transliterated into Hebrew letters from SEDRA).
 
+mod events;
 mod geocoding;
 mod harness;
 mod hebrew_db;
@@ -27,6 +28,7 @@ mod tsk;
 mod uxlc;
 mod xml;
 
+pub use events::{EVENT_OVERRIDES, EventsSummary};
 pub use haqor_core::normalize_surface;
 pub use harness::{eval_from_db, parse_eval};
 pub use hebrew_db::{
@@ -137,6 +139,7 @@ pub enum PreparedSource {
     MaculaHebrew,
     Unfoldingword,
     OpenbibleGeocoding,
+    Theographic,
 }
 
 impl PreparedSource {
@@ -147,6 +150,7 @@ impl PreparedSource {
             PreparedSource::MaculaHebrew => syntax::source_dir(src_texts),
             PreparedSource::OpenbibleGeocoding => geocoding::source_dir(src_texts),
             PreparedSource::Unfoldingword => translation::source_dir(src_texts),
+            PreparedSource::Theographic => events::source_dir(src_texts),
         }
     }
 }
@@ -160,6 +164,7 @@ impl std::str::FromStr for PreparedSource {
             "macula-hebrew" => Ok(PreparedSource::MaculaHebrew),
             "openbible-geocoding" => Ok(PreparedSource::OpenbibleGeocoding),
             "unfoldingword" => Ok(PreparedSource::Unfoldingword),
+            "theographic" => Ok(PreparedSource::Theographic),
             _ => Err(format!("unknown dataset {name:?}")),
         }
     }
@@ -190,6 +195,12 @@ pub fn prepare(source: PreparedSource, from: &Path, to: &Path) -> Result<String>
             Ok(format!(
                 "{} UHB words and {} ULT verses ({} alignments naming no UHB word left out)",
                 summary.hebrew_words, summary.verses, summary.unresolved
+            ))
+        }
+        PreparedSource::Theographic => {
+            let (events, names) = events::prepare(from, to)?;
+            Ok(format!(
+                "{events} events and the {names} people and places they name"
             ))
         }
     }

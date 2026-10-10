@@ -5620,6 +5620,77 @@ impl Bible {
         Ok(journeys)
     }
 
+    /// The events of the Bible in time order, with the verses telling them
+    /// and the people and places taking part. Empty for a database built
+    /// before events were.
+    pub fn bible_events(&self) -> rusqlite::Result<Vec<crate::names::BibleEvent>> {
+        use crate::names::{BibleEvent, NameKind};
+        if !self.has_table("bible_event")? {
+            return Ok(Vec::new());
+        }
+        let mut events: Vec<BibleEvent> = self
+            .db
+            .prepare(
+                "SELECT event_id, title, year, duration, unit, note FROM data.bible_event \
+                 ORDER BY ord",
+            )?
+            .query_map([], |row| {
+                Ok(BibleEvent {
+                    id: row.get(0)?,
+                    title: row.get(1)?,
+                    year: row.get(2)?,
+                    duration: row.get(3)?,
+                    unit: row.get(4)?,
+                    passages: Vec::new(),
+                    people: Vec::new(),
+                    places: Vec::new(),
+                    note: row.get(5)?,
+                })
+            })?
+            .collect::<rusqlite::Result<_>>()?;
+        let index: HashMap<u32, usize> =
+            events.iter().enumerate().map(|(i, e)| (e.id, i)).collect();
+        let passages = self
+            .db
+            .prepare(
+                "SELECT event_id, first_ref, last_ref FROM data.bible_event_passage \
+                 ORDER BY event_id, ord",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, u32>(0)?,
+                    row.get::<_, i64>(1)?,
+                    row.get::<_, i64>(2)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        for (event, first, last) in passages {
+            if let Some(&i) = index.get(&event) {
+                events[i].passages.push(VerseSpan {
+                    first: VerseRef::unpack(first),
+                    last: VerseRef::unpack(last),
+                });
+            }
+        }
+        let names = self
+            .db
+            .prepare(
+                "SELECT event_id, entity_id FROM data.bible_event_name ORDER BY event_id, ord",
+            )?
+            .query_map([], |row| Ok((row.get::<_, u32>(0)?, row.get::<_, u32>(1)?)))?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        for (event, entity) in names {
+            let (Some(&i), Some(name)) = (index.get(&event), self.name_summary(entity)?) else {
+                continue;
+            };
+            match name.kind {
+                NameKind::Place => events[i].places.push(name),
+                _ => events[i].people.push(name),
+            }
+        }
+        Ok(events)
+    }
+
     /// The sense the word at `position` of a verse has there (STEP Bible's
     /// TBESH), among its word's senses. `None` for a word with none known —
     /// names, the New Testament — and a database built before senses were.
@@ -6106,6 +6177,67 @@ mod tests {
             jerusalem.regions.iter().map(region).collect::<Vec<_>>(),
             ["Judea"]
         );
+    }
+
+    /// The events run from the creation in 4004 BC, in time order, with their
+    /// verses in Haqor's numbering and the people and places taking part;
+    /// Jesus is in none before his birth. Skips a database built before
+    /// events were.
+    #[test]
+    fn events_run_from_the_creation() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let events = bible.bible_events().unwrap();
+        if events.is_empty() {
+            eprintln!("skipping: haqor.db has no bible_event table");
+            return;
+        }
+        let creation = &events[0];
+        assert_eq!(creation.title, "Creation of all things");
+        assert_eq!((creation.year, creation.duration), (-4004, 7));
+        assert_eq!(creation.unit, "days");
+        let genesis = |chapter, verse| VerseRef {
+            book: 1,
+            chapter,
+            verse,
+        };
+        assert_eq!(
+            creation.passages,
+            [VerseSpan {
+                first: genesis(1, 1),
+                last: genesis(2, 3),
+            }]
+        );
+        assert!(events.iter().all(|e| e.year >= -4004));
+        assert!(events.windows(2).all(|w| w[0].year <= w[1].year));
+
+        let flood = events
+            .iter()
+            .find(|e| e.title == "The Great Flood")
+            .unwrap();
+        assert_eq!((flood.year, flood.duration), (-2348, 1));
+        let exodus = events
+            .iter()
+            .find(|e| e.title == "Exodus from Egypt")
+            .unwrap();
+        assert_eq!(exodus.year, -1491);
+        assert!(exodus.people.iter().any(|p| p.name == "Moses"));
+
+        let birth = events
+            .iter()
+            .position(|e| e.title == "Birth of Jesus")
+            .unwrap();
+        assert!(events[birth].people.iter().any(|p| p.name == "Jesus"));
+        assert!(
+            events[..birth]
+                .iter()
+                .all(|e| e.people.iter().all(|p| p.name != "Jesus"))
+        );
+        let lazarus = events
+            .iter()
+            .find(|e| e.title == "Lazarus raised from the dead")
+            .unwrap();
+        assert!(lazarus.places.iter().any(|p| p.name == "Bethany"));
     }
 
     /// Journeys come in the file's order, their stops at their places, with

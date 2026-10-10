@@ -147,6 +147,20 @@ Every addition needs an entry in `dataSourceCredits`
 - **Fit:** with TIPNR to say which place a name is, a place name could open
   a map.
 
+### Theographic Bible Metadata
+
+- **Status:** imported (October 2026: `bible_event`). Its events, with their
+  verses and the people and places taking part, found among TIPNR's records.
+- **Source:** <https://github.com/robertrouse/theographic-bible-metadata>.
+  Licence CC BY-SA 4.0 (*checked*).
+- **What it gives:** 450 events from the creation to Paul at Rome, each with
+  its year and how long it lasted. Its chronology is a young-earth one, after
+  Floyd Nolen Jones's *Chronology of the Old Testament* (the creation in 4004
+  BC), with nothing dated before the creation.
+- **Fit:** a timeline of the Bible beside the places. Its people tag Jesus and
+  the Holy Spirit at the creation; Haqor leaves Jesus out of every event before
+  his birth, and TIPNR has no record of the Holy Spirit as a person.
+
 ### Tyndale Open Study Notes and Bible Dictionary
 
 - **Source:** Tyndale House Publishers' open resources, distributed by

@@ -331,8 +331,9 @@ pub(crate) fn attach_lexicon_views(db: &Connection) -> Result<()> {
 /// Build `haqor.db` from the four generation databases in `data_dir`, plus the
 /// thematic cross references, syntax trees, English translation, and people,
 /// places and word senses read from `src_texts`, the places Haqor identifies
-/// itself from `data_dir`'s `place_overrides.json` and its journeys from
-/// `journeys.json`.
+/// itself from `data_dir`'s `place_overrides.json`, its journeys from
+/// `journeys.json` and its corrections to the events from
+/// `event_overrides.json`.
 ///
 /// The output is created empty, then attached to the connection the generation
 /// databases already live on: the bulk tables copy schema-to-schema in SQL, and
@@ -397,6 +398,7 @@ pub fn generate_runtime(
         src_texts,
         &data_dir.join(crate::names::PLACE_OVERRIDES),
         &data_dir.join(crate::journeys::JOURNEYS),
+        &data_dir.join(crate::events::EVENT_OVERRIDES),
     )?;
 
     // VACUUM cannot run on an attached database, so the reclaim happens on the

@@ -244,12 +244,17 @@ impl Versification {
         Ok(Versification { hebrew: spans })
     }
 
-    fn first(&self, verse: Verse) -> Verse {
+    pub(crate) fn first(&self, verse: Verse) -> Verse {
         self.hebrew.get(&verse).map_or(verse, |span| span.0)
     }
 
-    fn last(&self, verse: Verse) -> Verse {
+    pub(crate) fn last(&self, verse: Verse) -> Verse {
         self.hebrew.get(&verse).map_or(verse, |span| span.1)
+    }
+
+    #[cfg(test)]
+    pub(crate) fn insert(&mut self, english: Verse, hebrew: Verse) {
+        self.hebrew.insert(english, (hebrew, hebrew));
     }
 }
 
