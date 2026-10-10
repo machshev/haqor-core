@@ -7,6 +7,7 @@
 mod geocoding;
 mod harness;
 mod hebrew_db;
+mod journeys;
 mod lexicon_db;
 mod names;
 mod occurrences;
@@ -32,6 +33,7 @@ pub use hebrew_db::{
     book_name, book_number, generate_hebrew, generate_hebrew_with_sources, parse_passage,
     preview_missing, refresh_reader_glosses,
 };
+pub use journeys::JOURNEYS;
 pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
 };

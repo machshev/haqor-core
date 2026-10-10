@@ -5416,6 +5416,194 @@ impl Bible {
         Ok(places)
     }
 
+    /// Every place with a position, by name, each with its likeliest location,
+    /// its other names and the regions of [`crate::names::PLACE_REGIONS`] it
+    /// lies in: a gazetteer to search. A place lies in a region when its
+    /// likeliest position is within the region's ground, or TIPNR names the
+    /// region as the place's. Empty for a database built before names were.
+    pub fn places(&self) -> rusqlite::Result<crate::names::Gazetteer> {
+        use crate::names::{
+            Gazetteer, NameKind, NameSummary, PLACE_REGIONS, PlaceEntry, PlaceLocation,
+            PlaceRegion, PlaceShape,
+        };
+        if !self.has_table("name_location")? {
+            return Ok(Gazetteer::default());
+        }
+        let has_shape: bool = self.db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM pragma_table_info('name_location', 'data') \
+             WHERE name = 'shape')",
+            [],
+            |row| row.get(0),
+        )?;
+        let mut stmt = self.db.prepare(&format!(
+            "SELECT e.entity_id, e.name, e.description, e.origin, e.occurrences, \
+               l.latitude, l.longitude, l.confidence, l.kind, l.label, {} \
+             FROM data.name_entity e JOIN data.name_location l \
+               ON l.entity_id = e.entity_id AND l.ord = 0 \
+             WHERE e.kind = 'place' ORDER BY e.name, e.entity_id",
+            if has_shape { "l.shape" } else { "''" }
+        ))?;
+        let mut places = stmt
+            .query_map([], |row| {
+                Ok(PlaceEntry {
+                    place: NameSummary {
+                        id: row.get(0)?,
+                        name: row.get(1)?,
+                        kind: NameKind::Place,
+                        description: row.get(2)?,
+                        origin: row.get(3)?,
+                        occurrences: row.get(4)?,
+                    },
+                    location: PlaceLocation {
+                        latitude: row.get(5)?,
+                        longitude: row.get(6)?,
+                        confidence: row.get(7)?,
+                        kind: row.get(8)?,
+                        label: row.get(9)?,
+                        shape: PlaceShape::decode(&row.get::<_, String>(10)?),
+                    },
+                    other_names: Vec::new(),
+                    regions: Vec::new(),
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let index: HashMap<u32, usize> = places
+            .iter()
+            .enumerate()
+            .map(|(i, p)| (p.place.id, i))
+            .collect();
+        let mut forms = self.db.prepare(
+            "SELECT entity_id, hebrew, english FROM data.name_form ORDER BY entity_id, ord",
+        )?;
+        let mut rows = forms.query([])?;
+        while let Some(row) = rows.next()? {
+            let Some(&i) = index.get(&row.get::<_, u32>(0)?) else {
+                continue;
+            };
+            let english: String = row.get(2)?;
+            let hebrew: String = row.get(1)?;
+            let place = &mut places[i];
+            for name in english.split("; ").chain([hebrew.as_str()]) {
+                if !name.is_empty()
+                    && name != place.place.name
+                    && !place.other_names.iter().any(|n| n == name)
+                {
+                    place.other_names.push(name.to_string());
+                }
+            }
+        }
+        // Each region of the list is the place of its name drawn as ground.
+        let mut regions: Vec<(PlaceRegion, PlaceShape)> = Vec::new();
+        for (group, names) in PLACE_REGIONS {
+            for name in *names {
+                let region = places.iter().find_map(|p| match &p.location.shape {
+                    Some(shape @ PlaceShape::Area(_)) if p.place.name == *name => Some((
+                        PlaceRegion {
+                            id: p.place.id,
+                            name: p.place.name.clone(),
+                            group: group.to_string(),
+                        },
+                        shape.clone(),
+                    )),
+                    _ => None,
+                });
+                regions.extend(region);
+            }
+        }
+        for place in &mut places {
+            let origin = place.place.origin.trim_end_matches("(?)");
+            let (longitude, latitude) = (place.location.longitude, place.location.latitude);
+            place.regions = regions
+                .iter()
+                .filter(|(region, shape)| {
+                    region.id != place.place.id
+                        && (region.name == origin || shape.contains(longitude, latitude))
+                })
+                .map(|(region, _)| region.id)
+                .collect();
+        }
+        Ok(Gazetteer {
+            places,
+            regions: regions.into_iter().map(|(region, _)| region).collect(),
+        })
+    }
+
+    /// The journeys of Haqor's `data/journeys.json`, in its order, each stop
+    /// with its place's likeliest location. Empty for a database built before
+    /// journeys were.
+    pub fn journeys(&self) -> rusqlite::Result<Vec<crate::names::Journey>> {
+        use crate::names::{Journey, JourneyStop};
+        if !self.has_table("journey")? {
+            return Ok(Vec::new());
+        }
+        let mut journeys: Vec<Journey> = self
+            .db
+            .prepare("SELECT journey_id, name, summary FROM data.journey ORDER BY journey_id")?
+            .query_map([], |row| {
+                Ok(Journey {
+                    id: row.get(0)?,
+                    name: row.get(1)?,
+                    summary: row.get(2)?,
+                    stops: Vec::new(),
+                })
+            })?
+            .collect::<rusqlite::Result<_>>()?;
+        let rows = self
+            .db
+            .prepare(
+                "SELECT journey_id, entity_id, ref, label, by_sea, drawn, via, note \
+                 FROM data.journey_stop ORDER BY journey_id, ord",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, u32>(0)?,
+                    row.get::<_, u32>(1)?,
+                    row.get::<_, i64>(2)?,
+                    row.get::<_, String>(3)?,
+                    row.get::<_, bool>(4)?,
+                    row.get::<_, bool>(5)?,
+                    row.get::<_, String>(6)?,
+                    row.get::<_, String>(7)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        for (journey, entity, reference, label, by_sea, drawn, via, note) in rows {
+            let (Some(place), Some(location)) = (
+                self.name_summary(entity)?,
+                self.name_locations(entity)?.into_iter().next(),
+            ) else {
+                continue;
+            };
+            let Some(journey) = journeys.iter_mut().find(|j| j.id == journey) else {
+                continue;
+            };
+            let at = word_at(reference, 0);
+            journey.stops.push(JourneyStop {
+                label: if label.is_empty() {
+                    place.name.clone()
+                } else {
+                    label
+                },
+                place,
+                location,
+                book: at.book,
+                chapter: at.chapter,
+                verse: at.verse,
+                by_sea,
+                drawn,
+                via: via
+                    .split(';')
+                    .filter_map(|point| {
+                        let (lon, lat) = point.split_once(',')?;
+                        Some([lon.parse().ok()?, lat.parse().ok()?])
+                    })
+                    .collect(),
+                note,
+            });
+        }
+        Ok(journeys)
+    }
+
     /// The sense the word at `position` of a verse has there (STEP Bible's
     /// TBESH), among its word's senses. `None` for a word with none known —
     /// names, the New Testament — and a database built before senses were.
@@ -5858,6 +6046,97 @@ mod tests {
         assert_eq!(chapter.len(), 31);
         assert_eq!(chapter[0], (1, genesis));
         assert!(bible.syntax_tree(40, 1, 1).unwrap().is_none());
+    }
+
+    /// Every place is listed once, by name, with its other names and the
+    /// regions holding it. Skips a database built before names were.
+    #[test]
+    fn places_are_listed_with_their_regions() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let gazetteer = bible.places().unwrap();
+        let places = &gazetteer.places;
+        if places.is_empty() {
+            eprintln!("skipping: haqor.db has no name_location table");
+            return;
+        }
+        assert!(places.len() > 900, "{}", places.len());
+        assert!(
+            places
+                .windows(2)
+                .all(|w| w[0].place.name <= w[1].place.name)
+        );
+        let named = |name: &'static str| places.iter().filter(move |p| p.place.name == name);
+        let id = |name: &'static str| named(name).next().unwrap().place.id;
+        // Capernaum lies in Galilee, Ephesus in Asia, Paphos on Cyprus; Hebron
+        // is not in Galilee.
+        let galilee = id("Galilee");
+        assert!(named("Capernaum").any(|p| p.regions.contains(&galilee)));
+        assert!(named("Ephesus").any(|p| p.regions.contains(&id("Asia"))));
+        assert!(named("Paphos").any(|p| p.regions.contains(&id("Cyprus"))));
+        assert!(named("Hebron").all(|p| !p.regions.contains(&galilee)));
+        // Found by its Hebrew too.
+        assert!(named("Bethlehem").any(|p| p.other_names.iter().any(|n| n.starts_with('ב'))));
+        // Every region of the list is drawn, Moab among them; Jerusalem lies in
+        // Judea and no farther land.
+        let listed: usize = crate::names::PLACE_REGIONS
+            .iter()
+            .map(|(_, r)| r.len())
+            .sum();
+        assert_eq!(gazetteer.regions.len(), listed, "{:?}", gazetteer.regions);
+        let region = |id: &u32| &gazetteer.regions.iter().find(|r| r.id == *id).unwrap().name;
+        let jerusalem = named("Jerusalem").next().unwrap();
+        assert_eq!(
+            jerusalem.regions.iter().map(region).collect::<Vec<_>>(),
+            ["Judea"]
+        );
+    }
+
+    /// Journeys come in the file's order, their stops at their places, with
+    /// the verses taking them there. Skips a database built before journeys
+    /// were.
+    #[test]
+    fn journeys_pass_their_places_in_order() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let journeys = bible.journeys().unwrap();
+        if journeys.is_empty() {
+            eprintln!("skipping: haqor.db has no journey table");
+            return;
+        }
+        let abram = &journeys[0];
+        assert_eq!(abram.name, "Abram goes to Canaan");
+        assert_eq!(abram.stops[0].label, "Ur");
+        assert_eq!(
+            (abram.stops[2].place.name.as_str(), abram.stops[2].chapter),
+            ("Shechem", 12)
+        );
+        let voyage = journeys
+            .iter()
+            .find(|j| j.name == "Paul's voyage to Rome")
+            .unwrap();
+        let rome = voyage.stops.last().unwrap();
+        assert_eq!((rome.book, rome.chapter, rome.verse), (44, 28, 16));
+        assert!((41.8..42.0).contains(&rome.location.latitude));
+        assert!(voyage.stops[1].by_sea);
+        assert_eq!(voyage.stops[2].via.len(), 3);
+        // A station Haqor gives no site is listed, not drawn; a stop may be
+        // called by another name than its record's.
+        let exodus = journeys
+            .iter()
+            .find(|j| j.name == "The exodus to Mount Sinai")
+            .unwrap();
+        assert!(exodus.stops.iter().any(|s| s.label == "Marah" && !s.drawn));
+        let third = journeys
+            .iter()
+            .find(|j| j.name == "Paul's third journey")
+            .unwrap();
+        assert!(
+            third
+                .stops
+                .iter()
+                .any(|s| s.label == "Ptolemais" && s.place.name == "Acco")
+        );
     }
 
     /// A word names the one person it means, with the family the text gives

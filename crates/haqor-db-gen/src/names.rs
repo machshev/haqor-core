@@ -18,7 +18,7 @@
 //!
 //! Nothing is keyed by Strong's numbers: ids are the prepared files' own.
 
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::path::Path;
 
 use anyhow::{Context, Result, bail};
@@ -158,6 +158,9 @@ pub struct NamesSummary {
     pub sense_words: usize,
     pub surface_senses: usize,
     pub word_senses: usize,
+    /// Haqor's journeys, and the stops on them.
+    pub journeys: usize,
+    pub journey_stops: usize,
 }
 
 fn text(value: &Value, key: &str) -> String {
@@ -221,7 +224,7 @@ impl PlaceOverrides {
 /// of OpenBible's places can link to one record (Ephrath and Bethlehem 3 both
 /// to Bethlehem of Judah), so their positions are not pooled: one may be
 /// another place of the same name.
-fn place_of<'a>(record: &Value, places: &'a [Place]) -> Option<&'a Place> {
+fn place_of<'a>(record: &Value, places: &'a [Place], keys: &HashSet<String>) -> Option<&'a Place> {
     let openbible = text(record, "openbible");
     if !openbible.is_empty()
         && let Some(place) = places.iter().find(|p| p.name == openbible)
@@ -236,6 +239,36 @@ fn place_of<'a>(record: &Value, places: &'a [Place]) -> Option<&'a Place> {
         .find(|p| p.name == name)
         .or_else(|| linked.iter().max_by_key(|p| p.locations[0].confidence))
         .copied()
+        .or_else(|| renumbered(&openbible, &key, places, keys))
+}
+
+/// The place OpenBible has numbered since TIPNR named it (`Moab` is now
+/// `Moab 1`, the land, and `Moab 2`, its plains) and links to an older key of
+/// the record (`Moab@Gen.36.35` for `Moab@Gen.19.37b`): the one numbered
+/// place linked to a key of the record's own name that is no TIPNR record's
+/// now (of `keys`). `Meribah 2` is linked to `Meribah@Exo.17.7`, a record of
+/// its own, so it is not taken for `Meribah@Num.20.13`.
+fn renumbered<'a>(
+    openbible: &str,
+    key: &str,
+    places: &'a [Place],
+    keys: &HashSet<String>,
+) -> Option<&'a Place> {
+    let (stem, _) = key.split_once('@')?;
+    if openbible.is_empty() {
+        return None;
+    }
+    let mut candidates = places.iter().filter(|p| {
+        p.name
+            .strip_prefix(openbible)
+            .and_then(|rest| rest.strip_prefix(' '))
+            .is_some_and(|n| n.parse::<u32>().is_ok())
+            && p.keys
+                .iter()
+                .any(|k| !keys.contains(k) && k.split_once('@').is_some_and(|(s, _)| s == stem))
+    });
+    let place = candidates.next()?;
+    candidates.next().is_none().then_some(place)
 }
 
 /// A place's locations without repeats: identifications differing only in
@@ -256,11 +289,12 @@ fn distinct(locations: &[Location]) -> Vec<&Location> {
 
 /// Rebuild the name and sense tables of a runtime database in place from the
 /// prepared files in `src_texts`, placing the places `place_overrides` names
-/// where it says.
+/// where it says, and the journeys of `journeys` through them.
 pub fn build_names(
     db: &Connection,
     src_texts: &Path,
     place_overrides: &Path,
+    journeys: &Path,
 ) -> Result<NamesSummary> {
     let dir = crate::stepbible::source_dir(src_texts);
     let read = |name: &str| {
@@ -278,6 +312,7 @@ pub fn build_names(
         .collect::<serde_json::Result<_>>()
         .context("reading the prepared TIPNR records")?;
     let places = crate::geocoding::read_prepared(src_texts)?;
+    let keys: HashSet<String> = records.iter().map(|r| text(r, "key")).collect();
     let mut overrides = PlaceOverrides::read(place_overrides)?.0;
     let tags = crate::stepbible::align_tags(&dir, db)?;
 
@@ -381,7 +416,7 @@ pub fn build_names(
                 summary.overridden += 1;
                 continue;
             }
-            match place_of(record, &places) {
+            match place_of(record, &places, &keys) {
                 Some(place) => {
                     for (ord, l) in distinct(&place.locations).into_iter().enumerate() {
                         location.execute(params![
@@ -417,6 +452,15 @@ pub fn build_names(
             place_overrides.display()
         );
     }
+    let place_keys: HashMap<String, (u32, String)> = records
+        .iter()
+        .filter(|r| text(r, "kind") == "place")
+        .filter_map(|r| {
+            let id = r["id"].as_u64()? as u32;
+            Some((text(r, "key"), (id, text(r, "name"))))
+        })
+        .collect();
+    (summary.journeys, summary.journey_stops) = crate::journeys::build(&tx, journeys, &place_keys)?;
 
     // Senses, keyed by surface where they can be: each surface takes the
     // sense most of its occurrences have, and only the others are listed.
@@ -518,9 +562,14 @@ pub fn build_names(
 
 /// `db gen-names`: rebuild the name and sense tables of the runtime database
 /// at `path` in place and re-stamp it, so syncing it to the app reinstalls it.
-pub fn gen_names(path: &Path, src_texts: &Path, place_overrides: &Path) -> Result<NamesSummary> {
+pub fn gen_names(
+    path: &Path,
+    src_texts: &Path,
+    place_overrides: &Path,
+    journeys: &Path,
+) -> Result<NamesSummary> {
     let db = Connection::open(path).with_context(|| format!("opening {}", path.display()))?;
-    let summary = build_names(&db, src_texts, place_overrides)?;
+    let summary = build_names(&db, src_texts, place_overrides, journeys)?;
     crate::runtime_db::restamp_built(&db)?;
     Ok(summary)
 }
@@ -528,6 +577,39 @@ pub fn gen_names(path: &Path, src_texts: &Path, place_overrides: &Path) -> Resul
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn a_renumbered_place_is_found_by_its_older_key() {
+        let place = |name: &str, key: &str| Place {
+            name: name.to_string(),
+            keys: vec![key.to_string()],
+            locations: vec![Location {
+                latitude: 31.2,
+                longitude: 35.7,
+                confidence: 1000,
+                kind: "region".to_string(),
+                label: String::new(),
+                shape: None,
+            }],
+        };
+        let places = [
+            place("Moab 1", "Moab@Gen.36.35"),
+            place("Moab 2", "Moab_Plains@Num.22.1"),
+            place("Gath 1", "Gath@Jos.11.22"),
+            place("Gath 2", "Gath@Amo.6.2"),
+            place("Meribah 2", "Meribah@Exo.17.7"),
+        ];
+        let keys: HashSet<String> = ["Moab@Gen.19.37b", "Meribah@Exo.17.7", "Meribah@Num.20.13"]
+            .map(str::to_string)
+            .into();
+        let record = |key: &str, openbible: &str| serde_json::json!({"key": key, "name": "", "openbible": openbible});
+        let moab = place_of(&record("Moab@Gen.19.37b", "Moab"), &places, &keys).unwrap();
+        assert_eq!(moab.name, "Moab 1");
+        // Two numbered places of the name: neither is chosen.
+        assert!(place_of(&record("Gath@1Sa.5.8", "Gath"), &places, &keys).is_none());
+        // Meribah 2 is the other Meribah's.
+        assert!(place_of(&record("Meribah@Num.20.13", "Meribah"), &places, &keys).is_none());
+    }
 
     /// The whole of the prepared files against the built corpus.
     #[test]
@@ -553,8 +635,13 @@ mod tests {
              DETACH DATABASE src;",
         )
         .unwrap();
-        let summary =
-            build_names(&db, &src_texts, &root.join("data").join(PLACE_OVERRIDES)).unwrap();
+        let summary = build_names(
+            &db,
+            &src_texts,
+            &root.join("data").join(PLACE_OVERRIDES),
+            &root.join("data").join(crate::journeys::JOURNEYS),
+        )
+        .unwrap();
         eprintln!("{summary:?}");
         assert!(summary.name_words > 35_000, "{summary:?}");
         assert!(summary.sense_words > 240_000, "{summary:?}");

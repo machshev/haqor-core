@@ -1,0 +1,276 @@
+{
+  "journeys": [
+    {
+      "name": "Abram goes to Canaan",
+      "summary": "From Ur of the Chaldeans by Haran into Canaan, down to Egypt in the famine, and back to settle by the oaks of Mamre at Hebron.",
+      "stops": [
+        { "key": "Ur@Gen.11.28", "name": "Ur", "ref": "Gen.11.31" },
+        { "key": "Haran@Gen.11.31", "name": "Haran", "ref": "Gen.11.31" },
+        { "key": "Shechem@Gen.12.6", "name": "Shechem", "ref": "Gen.12.6" },
+        { "key": "Bethel@Gen.12.8", "name": "Bethel", "ref": "Gen.12.8", "note": "Camped between Bethel and Ai." },
+        { "key": "Negeb@Gen.12.9", "name": "Negeb", "ref": "Gen.12.9" },
+        { "key": "Egypt@Gen.12.10", "name": "Egypt", "ref": "Gen.12.10" },
+        { "key": "Negeb@Gen.12.9", "name": "Negeb", "ref": "Gen.13.1" },
+        { "key": "Bethel@Gen.12.8", "name": "Bethel", "ref": "Gen.13.3" },
+        { "key": "Hebron@Gen.13.18", "name": "Hebron", "ref": "Gen.13.18", "note": "By the oaks of Mamre." }
+      ]
+    },
+    {
+      "name": "Jacob flees to Haran and returns",
+      "summary": "Jacob goes from Beersheba to his uncle Laban at Haran, dreaming at Bethel on the way, and comes back twenty years later by Mahanaim, Peniel and Shechem to his father at Hebron.",
+      "stops": [
+        { "key": "Beersheba@Gen.21.14", "name": "Beersheba", "ref": "Gen.28.10" },
+        { "key": "Bethel@Gen.12.8", "name": "Bethel", "ref": "Gen.28.19", "note": "Luz, which he named Bethel." },
+        { "key": "Haran@Gen.11.31", "name": "Haran", "ref": "Gen.29.4" },
+        { "key": "Mahanaim@Gen.32.2", "name": "Mahanaim", "ref": "Gen.32.3" },
+        { "key": "Peniel@Gen.32.30", "name": "Peniel", "ref": "Gen.32.31", "note": "Where he wrestled until daybreak." },
+        { "key": "Succoth@Gen.33.17", "name": "Succoth", "ref": "Gen.33.17" },
+        { "key": "Shechem@Gen.12.6", "name": "Shechem", "ref": "Gen.33.18" },
+        { "key": "Bethel@Gen.12.8", "name": "Bethel", "ref": "Gen.35.6" },
+        { "key": "Bethlehem@Gen.35.16", "name": "Bethlehem", "ref": "Gen.35.19", "note": "Rachel died on the way to Ephrath and was buried there." },
+        { "key": "Hebron@Gen.13.18", "name": "Hebron", "ref": "Gen.35.27" }
+      ]
+    },
+    {
+      "name": "Joseph is sold into Egypt",
+      "summary": "Sent from the vale of Hebron to his brothers, Joseph follows them from Shechem to Dothan, where they sell him to traders going down to Egypt.",
+      "stops": [
+        { "key": "Hebron_Valley@Gen.37.14", "name": "Hebron Valley", "ref": "Gen.37.14", "label": "Vale of Hebron" },
+        { "key": "Shechem@Gen.12.6", "name": "Shechem", "ref": "Gen.37.14" },
+        { "key": "Dothan@Gen.37.17", "name": "Dothan", "ref": "Gen.37.17" },
+        { "key": "Egypt@Gen.12.10", "name": "Egypt", "ref": "Gen.37.28" }
+      ]
+    },
+    {
+      "name": "Jacob goes down to Egypt",
+      "summary": "Israel offers sacrifices at Beersheba and goes down with all his household to Joseph, who settles them in the land of Goshen.",
+      "stops": [
+        { "key": "Beersheba@Gen.21.14", "name": "Beersheba", "ref": "Gen.46.1" },
+        { "key": "Goshen@Gen.45.10", "name": "Goshen", "ref": "Gen.46.28" }
+      ]
+    },
+    {
+      "name": "The exodus to Mount Sinai",
+      "summary": "From Rameses by Succoth and Etham to the camp at Pi-hahiroth, through the sea and on to Mount Sinai. Drawn by Haqor's own reading, which crosses the Gulf of Aqaba from Nuweiba into Midian; the stations that reading gives no site for are listed but not drawn.",
+      "stops": [
+        { "key": "Rameses@Gen.47.11", "name": "Rameses", "ref": "Exo.12.37" },
+        { "key": "Succoth@Exo.12.37", "name": "Succoth", "ref": "Exo.12.37" },
+        { "key": "Etham@Exo.13.20", "name": "Etham", "ref": "Exo.13.20", "note": "On the edge of the wilderness." },
+        { "key": "Pi-hahiroth@Exo.14.2", "name": "Pi-hahiroth", "ref": "Exo.14.2", "note": "Camped by the sea, between Migdol and the sea, before Baal-zephon." },
+        { "key": "Red_Sea@Exo.10.19", "name": "Red Sea", "ref": "Exo.15.22", "by": "sea", "note": "Crossed on dry ground (Exodus 14:22)." },
+        { "key": "Shur@Gen.16.7", "name": "Shur", "ref": "Exo.15.22", "label": "Wilderness of Shur", "drawn": false, "note": "Three days without water. This reading gives it no site." },
+        { "key": "Marah@Exo.15.23", "name": "Marah", "ref": "Exo.15.23", "drawn": false, "note": "The bitter water made sweet. This reading gives it no site." },
+        { "key": "Elim@Exo.15.27", "name": "Elim", "ref": "Exo.15.27", "note": "Twelve springs and seventy palms." },
+        { "key": "Sin@Exo.16.1", "name": "Sin", "ref": "Exo.16.1", "label": "Wilderness of Sin", "drawn": false, "note": "Manna and quail. This reading gives it no site." },
+        { "key": "Dophkah@Num.33.12", "name": "Dophkah", "ref": "Num.33.12", "drawn": false, "note": "This reading gives it no site." },
+        { "key": "Alush@Num.33.13", "name": "Alush", "ref": "Num.33.13", "drawn": false, "note": "This reading gives it no site." },
+        { "key": "Rephidim@Exo.17.1", "name": "Rephidim", "ref": "Exo.17.1", "note": "Water from the rock; Amalek fought." },
+        { "key": "Sinai@Exo.3.1", "name": "Sinai", "ref": "Exo.19.11", "note": "Camped before the mountain (19:2)." }
+      ]
+    },
+    {
+      "name": "From Sinai to the plains of Moab",
+      "summary": "From the wilderness of Sinai to Kadesh, where the spies return, and after the years in the wilderness by Mount Hor, around Edom and through Moab to the plains by the Jordan, opposite Jericho. Kibroth-hattaavah and Hazeroth are listed but not drawn: OpenBible.info's sites for them lie across the gulf from Haqor's Sinai.",
+      "stops": [
+        { "key": "Sinai_Wilderness@Exo.19.1", "name": "Sinai Wilderness", "ref": "Num.10.12", "label": "Wilderness of Sinai" },
+        { "key": "Kibroth-hattaavah@Num.11.34", "name": "Kibroth-hattaavah", "ref": "Num.11.34", "drawn": false, "note": "The graves of craving. OpenBible.info's site is on the traditional route through the Sinai peninsula." },
+        { "key": "Hazeroth@Num.11.35", "name": "Hazeroth", "ref": "Num.11.35", "drawn": false, "note": "OpenBible.info's site is on the traditional route through the Sinai peninsula." },
+        { "key": "Kadesh@Gen.14.7", "name": "Kadesh", "ref": "Num.13.26", "note": "The spies return; Israel comes again to Kadesh in the wilderness of Zin (20:1)." },
+        { "key": "Hor_Mount@Num.20.22", "name": "Hor Mount", "ref": "Num.20.22", "label": "Mount Hor", "note": "Aaron dies (20:28)." },
+        { "key": "Zalmonah@Num.33.41", "name": "Zalmonah", "ref": "Num.33.41" },
+        { "key": "Punon@Num.33.42", "name": "Punon", "ref": "Num.33.42" },
+        { "key": "Oboth@Num.21.10", "name": "Oboth", "ref": "Num.33.43" },
+        { "key": "Iye-abarim@Num.21.11", "name": "Iye-abarim", "ref": "Num.33.44", "note": "On the border of Moab." },
+        { "key": "Dibon@Num.21.30", "name": "Dibon", "ref": "Num.33.45", "label": "Dibon-gad" },
+        { "key": "Diblathaim@Num.33.46", "name": "Diblathaim", "ref": "Num.33.46", "label": "Almon-diblathaim" },
+        { "key": "Nebo_Mount@Num.27.12", "name": "Nebo Mount", "ref": "Num.33.47", "label": "Mountains of Abarim, before Nebo" },
+        { "key": "Moab_Plains@Num.22.1", "name": "Moab Plains", "ref": "Num.33.48", "label": "Plains of Moab", "note": "By the Jordan at Jericho." }
+      ]
+    },
+    {
+      "name": "Naomi and Ruth",
+      "summary": "Elimelech takes his family from Bethlehem to Moab in a famine; widowed, Naomi comes back with Ruth her daughter-in-law at the beginning of the barley harvest.",
+      "stops": [
+        { "key": "Bethlehem@Gen.35.16", "name": "Bethlehem", "ref": "Rut.1.1" },
+        { "key": "Moab@Gen.19.37b", "name": "Moab", "ref": "Rut.1.1" },
+        { "key": "Bethlehem@Gen.35.16", "name": "Bethlehem", "ref": "Rut.1.19" }
+      ]
+    },
+    {
+      "name": "David flees from Saul",
+      "summary": "From the priests at Nob to Achish of Gath and the cave of Adullam, his parents left with the king of Moab, and on through Keilah and the wildernesses of Ziph and Maon to the strongholds of En-gedi.",
+      "stops": [
+        { "key": "Nob@1Sa.21.1", "name": "Nob", "ref": "1Sa.21.2" },
+        { "key": "Gath@Jos.11.22", "name": "Gath", "ref": "1Sa.21.11" },
+        { "key": "Adullam@Gen.38.1", "name": "Adullam", "ref": "1Sa.22.1", "label": "Cave of Adullam" },
+        { "key": "Kir@1Sa.22.3", "name": "Kir", "ref": "1Sa.22.3", "label": "Mizpeh of Moab" },
+        { "key": "Hereth@1Sa.22.5", "name": "Hereth", "ref": "1Sa.22.5", "label": "Forest of Hereth" },
+        { "key": "Keilah@Jos.15.44", "name": "Keilah", "ref": "1Sa.23.5", "note": "David saves the city from the Philistines." },
+        { "key": "Ziph@Jos.15.55", "name": "Ziph", "ref": "1Sa.23.14", "label": "Wilderness of Ziph" },
+        { "key": "Maon@Jos.15.55", "name": "Maon", "ref": "1Sa.23.24", "label": "Wilderness of Maon" },
+        { "key": "Engedi@Gen.14.7", "name": "Engedi", "ref": "1Sa.24.1", "label": "En-gedi", "note": "David spares Saul in the cave." }
+      ]
+    },
+    {
+      "name": "Elijah",
+      "summary": "Elijah hides by the brook Cherith and at Zarephath through the drought, defeats the prophets of Baal on Carmel, runs before Ahab to Jezreel, and flees from Jezebel by Beersheba to Horeb, the mount of God.",
+      "stops": [
+        { "key": "Cherith@1Ki.17.3", "name": "Cherith", "ref": "1Ki.17.3", "label": "Brook Cherith" },
+        { "key": "Zarephath@1Ki.17.9", "name": "Zarephath", "ref": "1Ki.17.10" },
+        { "key": "Carmel_Mount@1Ki.18.19", "name": "Carmel Mount", "ref": "1Ki.18.20", "label": "Mount Carmel" },
+        { "key": "Jezreel@Jos.19.18", "name": "Jezreel", "ref": "1Ki.18.46" },
+        { "key": "Beersheba@Gen.21.14", "name": "Beersheba", "ref": "1Ki.19.3" },
+        { "key": "Sinai@Exo.3.1", "name": "Sinai", "ref": "1Ki.19.8", "label": "Horeb", "note": "Forty days and forty nights." }
+      ]
+    },
+    {
+      "name": "Judah is taken into exile",
+      "summary": "Jerusalem falls to Nebuchadnezzar; Zedekiah is brought before him at Riblah and carried in chains to Babylon.",
+      "stops": [
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "2Ki.25.1" },
+        { "key": "Riblah@2Ki.23.33", "name": "Riblah", "ref": "2Ki.25.6" },
+        { "key": "Babylon@Gen.10.10", "name": "Babylon", "ref": "2Ki.25.7" }
+      ]
+    },
+    {
+      "name": "To Bethlehem for the census",
+      "summary": "Joseph goes up from Nazareth with Mary to be registered in Bethlehem, where Jesus is born; they present him in the temple at Jerusalem and return to Nazareth (Luke's account).",
+      "stops": [
+        { "key": "Nazareth@Mat.2.23", "name": "Nazareth", "ref": "Luk.2.4" },
+        { "key": "Bethlehem@Gen.35.16", "name": "Bethlehem", "ref": "Luk.2.4" },
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "Luk.2.22" },
+        { "key": "Nazareth@Mat.2.23", "name": "Nazareth", "ref": "Luk.2.39" }
+      ]
+    },
+    {
+      "name": "The flight into Egypt",
+      "summary": "Warned in a dream, Joseph takes the child and his mother from Bethlehem to Egypt until Herod is dead, then settles in Nazareth of Galilee (Matthew's account).",
+      "stops": [
+        { "key": "Bethlehem@Gen.35.16", "name": "Bethlehem", "ref": "Mat.2.1" },
+        { "key": "Egypt@Gen.12.10", "name": "Egypt", "ref": "Mat.2.14" },
+        { "key": "Nazareth@Mat.2.23", "name": "Nazareth", "ref": "Mat.2.23" }
+      ]
+    },
+    {
+      "name": "Philip preaches",
+      "summary": "Scattered from Jerusalem, Philip preaches in Samaria, meets the Ethiopian on the road down to Gaza, and is found at Azotus, preaching in every city until Caesarea.",
+      "stops": [
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "Act.8.1" },
+        { "key": "Samaria@1Ki.13.32", "name": "Samaria", "ref": "Act.8.5" },
+        { "key": "Ashdod@Jos.11.22", "name": "Ashdod", "ref": "Act.8.40", "label": "Azotus", "note": "After baptising the Ethiopian on the road from Jerusalem to Gaza (8:26–39)." },
+        { "key": "Caesarea@Act.8.40", "name": "Caesarea", "ref": "Act.8.40" }
+      ]
+    },
+    {
+      "name": "Saul's conversion",
+      "summary": "Saul sets out from Jerusalem to Damascus and is met by the Lord on the road; after Arabia and Damascus he goes up to Jerusalem, and the brothers send him by Caesarea to Tarsus.",
+      "stops": [
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "Act.9.2" },
+        { "key": "Damascus@Gen.14.15", "name": "Damascus", "ref": "Act.9.3" },
+        { "key": "Arabia@2Sa.23.35", "name": "Arabia", "ref": "Gal.1.17" },
+        { "key": "Damascus@Gen.14.15", "name": "Damascus", "ref": "Gal.1.17" },
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "Act.9.26", "note": "Three years later (Galatians 1:18)." },
+        { "key": "Caesarea@Act.8.40", "name": "Caesarea", "ref": "Act.9.30" },
+        { "key": "Tarsus@Act.9.11", "name": "Tarsus", "ref": "Act.9.30" }
+      ]
+    },
+    {
+      "name": "Peter at Lydda, Joppa and Caesarea",
+      "summary": "Peter heals Aeneas at Lydda and raises Tabitha at Joppa, then goes to Cornelius at Caesarea, and explains to the church at Jerusalem why he ate with Gentiles.",
+      "stops": [
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "Act.8.25" },
+        { "key": "Lod@1Ch.8.12", "name": "Lod", "ref": "Act.9.32", "label": "Lydda" },
+        { "key": "Joppa@Jos.19.46", "name": "Joppa", "ref": "Act.9.38" },
+        { "key": "Caesarea@Act.8.40", "name": "Caesarea", "ref": "Act.10.24" },
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "Act.11.2" }
+      ]
+    },
+    {
+      "name": "Paul's first journey",
+      "summary": "Sent out from Antioch with Barnabas, Paul sails to Cyprus and on to Pamphylia, preaches at Antioch in Pisidia, Iconium, Lystra and Derbe, and returns the way he came to sail home from Attalia.",
+      "stops": [
+        { "key": "Antioch@Act.6.5", "name": "Antioch", "ref": "Act.13.1", "label": "Antioch in Syria" },
+        { "key": "Seleucia@Act.13.4", "name": "Seleucia", "ref": "Act.13.4" },
+        { "key": "Salamis@Act.13.5", "name": "Salamis", "ref": "Act.13.5", "by": "sea" },
+        { "key": "Paphos@Act.13.6", "name": "Paphos", "ref": "Act.13.6", "note": "Through the island; the proconsul believes." },
+        { "key": "Perga@Act.13.13", "name": "Perga", "ref": "Act.13.13", "by": "sea", "note": "John Mark leaves them." },
+        { "key": "Antioch@Act.13.14", "name": "Antioch", "ref": "Act.13.14", "label": "Antioch in Pisidia" },
+        { "key": "Iconium@Act.13.51", "name": "Iconium", "ref": "Act.13.51" },
+        { "key": "Lystra@Act.14.6", "name": "Lystra", "ref": "Act.14.6", "note": "Paul is stoned and left for dead (14:19)." },
+        { "key": "Derbe@Act.14.6", "name": "Derbe", "ref": "Act.14.20" },
+        { "key": "Lystra@Act.14.6", "name": "Lystra", "ref": "Act.14.21" },
+        { "key": "Iconium@Act.13.51", "name": "Iconium", "ref": "Act.14.21" },
+        { "key": "Antioch@Act.13.14", "name": "Antioch", "ref": "Act.14.21", "label": "Antioch in Pisidia" },
+        { "key": "Perga@Act.13.13", "name": "Perga", "ref": "Act.14.25" },
+        { "key": "Attalia@Act.14.25", "name": "Attalia", "ref": "Act.14.25" },
+        { "key": "Antioch@Act.6.5", "name": "Antioch", "ref": "Act.14.26", "label": "Antioch in Syria", "by": "sea", "via": [[31.6, 36.45], [32.8, 35.85], [35.0, 35.95]] }
+      ]
+    },
+    {
+      "name": "Paul's second journey",
+      "summary": "With Silas, Paul revisits Derbe and Lystra, is called over from Troas to Macedonia, and preaches at Philippi, Thessalonica, Berea, Athens and Corinth before sailing home by Ephesus and Caesarea.",
+      "stops": [
+        { "key": "Antioch@Act.6.5", "name": "Antioch", "ref": "Act.15.35", "label": "Antioch in Syria" },
+        { "key": "Derbe@Act.14.6", "name": "Derbe", "ref": "Act.16.1", "note": "Through Syria and Cilicia (15:41)." },
+        { "key": "Lystra@Act.14.6", "name": "Lystra", "ref": "Act.16.1", "note": "Timothy joins them." },
+        { "key": "Troas@Act.16.8", "name": "Troas", "ref": "Act.16.8", "note": "Through Phrygia and Galatia, by Mysia (16:6–8); the vision of the man of Macedonia." },
+        { "key": "Samothrace@Act.16.11", "name": "Samothrace", "ref": "Act.16.11", "by": "sea" },
+        { "key": "Neapolis@Act.16.11", "name": "Neapolis", "ref": "Act.16.11", "by": "sea" },
+        { "key": "Philippi@Act.16.12", "name": "Philippi", "ref": "Act.16.12", "note": "Lydia; the jailer." },
+        { "key": "Amphipolis@Act.17.1", "name": "Amphipolis", "ref": "Act.17.1" },
+        { "key": "Apollonia@Act.17.1", "name": "Apollonia", "ref": "Act.17.1" },
+        { "key": "Thessalonica@Act.17.1", "name": "Thessalonica", "ref": "Act.17.1" },
+        { "key": "Berea@Act.17.10", "name": "Berea", "ref": "Act.17.10" },
+        { "key": "Athens@Act.17.15", "name": "Athens", "ref": "Act.17.15", "note": "Paul speaks at the Areopagus." },
+        { "key": "Corinth@Act.18.1", "name": "Corinth", "ref": "Act.18.1", "note": "A year and six months (18:11)." },
+        { "key": "Cenchreae@Act.18.18", "name": "Cenchreae", "ref": "Act.18.18" },
+        { "key": "Ephesus@Act.18.19", "name": "Ephesus", "ref": "Act.18.19", "by": "sea", "via": [[24.5, 37.75], [24.95, 37.71], [26.4, 37.85]] },
+        { "key": "Caesarea@Act.8.40", "name": "Caesarea", "ref": "Act.18.22", "by": "sea", "via": [[27.15, 37.8], [27.07, 37.66], [27.25, 36.96], [27.35, 36.6], [28.35, 36.2], [30.0, 35.9]] },
+        { "key": "Antioch@Act.6.5", "name": "Antioch", "ref": "Act.18.22", "label": "Antioch in Syria" }
+      ]
+    },
+    {
+      "name": "Paul's third journey",
+      "summary": "Paul spends over two years at Ephesus, goes through Macedonia into Greece, and sails from Philippi along the coast of Asia, taking leave of the Ephesian elders at Miletus, to Caesarea and up to Jerusalem.",
+      "stops": [
+        { "key": "Antioch@Act.6.5", "name": "Antioch", "ref": "Act.18.22", "label": "Antioch in Syria" },
+        { "key": "Ephesus@Act.18.19", "name": "Ephesus", "ref": "Act.19.1", "note": "Through Galatia and Phrygia (18:23) and the upper country." },
+        { "key": "Macedonia@Act.16.9", "name": "Macedonia", "ref": "Act.20.1", "note": "And on into Greece for three months (20:2–3)." },
+        { "key": "Philippi@Act.16.12", "name": "Philippi", "ref": "Act.20.6" },
+        { "key": "Troas@Act.16.8", "name": "Troas", "ref": "Act.20.6", "by": "sea", "via": [[24.42, 40.9], [25.0, 40.6]], "note": "Eutychus falls from the window." },
+        { "key": "Assos@Act.20.13", "name": "Assos", "ref": "Act.20.13", "note": "Paul goes on foot; the others sail." },
+        { "key": "Mitylene@Act.20.14", "name": "Mitylene", "ref": "Act.20.14", "by": "sea" },
+        { "key": "Chios@Act.20.15", "name": "Chios", "ref": "Act.20.15", "by": "sea" },
+        { "key": "Samos@Act.20.15", "name": "Samos", "ref": "Act.20.15", "by": "sea" },
+        { "key": "Miletus@Act.20.15", "name": "Miletus", "ref": "Act.20.15", "by": "sea", "note": "Paul's farewell to the elders of Ephesus." },
+        { "key": "Cos@Act.21.1", "name": "Cos", "ref": "Act.21.1", "by": "sea" },
+        { "key": "Rhodes@Act.21.1", "name": "Rhodes", "ref": "Act.21.1", "by": "sea" },
+        { "key": "Patara@Act.21.1", "name": "Patara", "ref": "Act.21.1", "by": "sea" },
+        { "key": "Tyre@Jos.19.29", "name": "Tyre", "ref": "Act.21.3", "by": "sea", "note": "Leaving Cyprus on the left." },
+        { "key": "Acco@Jdg.1.31", "name": "Acco", "ref": "Act.21.7", "label": "Ptolemais", "by": "sea" },
+        { "key": "Caesarea@Act.8.40", "name": "Caesarea", "ref": "Act.21.8", "note": "Agabus foretells Paul's binding." },
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "Act.21.15" }
+      ]
+    },
+    {
+      "name": "Paul's voyage to Rome",
+      "summary": "A prisoner appealing to Caesar, Paul sails from Caesarea along the coast of Asia to Crete, is driven by the storm past Cauda and wrecked on Malta, and comes at last by Puteoli and the Appian Way to Rome.",
+      "stops": [
+        { "key": "Caesarea@Act.8.40", "name": "Caesarea", "ref": "Act.25.4" },
+        { "key": "Sidon@Gen.10.19", "name": "Sidon", "ref": "Act.27.3", "by": "sea" },
+        { "key": "Myra@Act.27.5", "name": "Myra", "ref": "Act.27.5", "by": "sea", "via": [[34.9, 35.85], [33.0, 35.75], [31.0, 36.1]], "note": "Sailing under Cyprus, for the winds were against them (27:4)." },
+        { "key": "Cnidus@Act.27.7", "name": "Cnidus", "ref": "Act.27.7", "by": "sea" },
+        { "key": "Salmone@Act.27.7", "name": "Salmone", "ref": "Act.27.7", "by": "sea" },
+        { "key": "Fair_Havens@Act.27.8", "name": "Fair Havens", "ref": "Act.27.8", "by": "sea", "via": [[26.35, 35.15], [26.15, 34.85], [25.7, 34.9], [25.2, 34.88]] },
+        { "key": "Cauda@Act.27.16", "name": "Cauda", "ref": "Act.27.16", "by": "sea", "note": "Driven by the storm." },
+        { "key": "Malta@Act.28.1", "name": "Malta", "ref": "Act.28.1", "by": "sea", "note": "Wrecked after fourteen nights adrift (27:27–44)." },
+        { "key": "Syracuse@Act.28.12", "name": "Syracuse", "ref": "Act.28.12", "by": "sea" },
+        { "key": "Rhegium@Act.28.13", "name": "Rhegium", "ref": "Act.28.13", "by": "sea" },
+        { "key": "Puteoli@Act.28.13", "name": "Puteoli", "ref": "Act.28.13", "by": "sea" },
+        { "key": "Forum_of_Appius@Act.28.15", "name": "Forum of Appius", "ref": "Act.28.15" },
+        { "key": "Three_Taverns@Act.28.15", "name": "Three Taverns", "ref": "Act.28.15" },
+        { "key": "Rome@Jhn.11.48", "name": "Rome", "ref": "Act.28.16" }
+      ]
+    }
+  ]
+}

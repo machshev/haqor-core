@@ -139,6 +139,26 @@ impl PlaceShape {
         format!("{kind}:{}", parts.join("|"))
     }
 
+    /// Whether a point lies within an area, by the even-odd rule over all
+    /// its rings; never within a line.
+    pub fn contains(&self, longitude: f64, latitude: f64) -> bool {
+        let PlaceShape::Area(rings) = self else {
+            return false;
+        };
+        let mut inside = false;
+        for ring in rings {
+            for (i, &[x0, y0]) in ring.iter().enumerate() {
+                let [x1, y1] = ring[(i + 1) % ring.len()];
+                if (y0 > latitude) != (y1 > latitude)
+                    && longitude < x0 + (latitude - y0) / (y1 - y0) * (x1 - x0)
+                {
+                    inside = !inside;
+                }
+            }
+        }
+        inside
+    }
+
     /// What [`PlaceShape::encode`] wrote; `None` for an empty or unreadable
     /// text.
     pub fn decode(text: &str) -> Option<PlaceShape> {
@@ -190,6 +210,145 @@ pub struct ChapterPlace {
     /// The verses naming it, in order.
     pub verses: Vec<u8>,
 }
+
+/// A place in the list of every place, for finding one by name or region.
+#[derive(Clone, Debug, PartialEq)]
+pub struct PlaceEntry {
+    pub place: NameSummary,
+    /// The likeliest location; a place without one is not listed.
+    pub location: PlaceLocation,
+    /// The English names translations give it and its Hebrew spellings,
+    /// besides [`NameSummary::name`], for a search to find it by.
+    pub other_names: Vec<String>,
+    /// The regions of [`PLACE_REGIONS`] it lies in, by id: those whose ground
+    /// holds its likeliest position, and the one TIPNR names as its region.
+    pub regions: Vec<u32>,
+}
+
+/// A region a list of places can be narrowed to.
+#[derive(Clone, Debug, PartialEq)]
+pub struct PlaceRegion {
+    /// The region's own place id.
+    pub id: u32,
+    pub name: String,
+    /// The part of the world it is in, as [`PLACE_REGIONS`] groups them.
+    pub group: String,
+}
+
+/// A journey the Bible narrates, as Haqor's `data/journeys.json` gives it:
+/// the places it passes, in order.
+#[derive(Clone, Debug, PartialEq)]
+pub struct Journey {
+    pub id: u32,
+    pub name: String,
+    /// A sentence or two saying what happens on it.
+    pub summary: String,
+    pub stops: Vec<JourneyStop>,
+}
+
+/// A place a journey passes.
+#[derive(Clone, Debug, PartialEq)]
+pub struct JourneyStop {
+    pub place: NameSummary,
+    /// What the stop is called: the place's name, or another the journey
+    /// knows it by (Ptolemais for Acco).
+    pub label: String,
+    /// The place's likeliest location.
+    pub location: PlaceLocation,
+    /// The verse taking the journey there.
+    pub book: u8,
+    pub chapter: u8,
+    pub verse: u8,
+    /// Reached by sea rather than by land.
+    pub by_sea: bool,
+    /// False for a station Haqor gives no site, listed but not drawn: the
+    /// journey's line runs past it, from the stop before to the one after.
+    pub drawn: bool,
+    /// Longitude, latitude pairs a sea leg passes on its way here, so that it
+    /// is not drawn across the land.
+    pub via: Vec<[f64; 2]>,
+    /// A line about what happens there; may be empty.
+    pub note: String,
+}
+
+/// Every place, and the regions they lie in.
+#[derive(Clone, Debug, Default, PartialEq)]
+pub struct Gazetteer {
+    /// By name.
+    pub places: Vec<PlaceEntry>,
+    /// In the order of [`PLACE_REGIONS`].
+    pub regions: Vec<PlaceRegion>,
+}
+
+/// The regions a gazetteer narrows to, by group, roughly from the land of
+/// Israel outwards: those OpenBible.info draws with fair bounds. Left out are
+/// the lands too vague to bound (Havilah, Gog, the East), and those whose
+/// ground is an empire's (Persia's reaches Judea) or a desert's (Arabia).
+pub const PLACE_REGIONS: &[(&str, &[&str])] = &[
+    (
+        "Land of Israel",
+        &[
+            "Galilee",
+            "Samaria",
+            "Judea",
+            "Idumea",
+            "Shephelah",
+            "Philistia",
+            "Negeb",
+            "Gilead",
+            "Bashan",
+            "Decapolis",
+        ],
+    ),
+    (
+        "Neighbouring lands",
+        &[
+            "Phoenicia",
+            "Lebanon",
+            "Syria",
+            "Ammon",
+            "Moab",
+            "Edom",
+            "Arabah",
+            "Zin",
+            "Paran",
+            "Midian",
+        ],
+    ),
+    ("Egypt and Africa", &["Egypt", "Goshen", "Cush", "Libya"]),
+    (
+        "Mesopotamia and Persia",
+        &[
+            "Mesopotamia",
+            "Assyria",
+            "Shinar",
+            "Chaldea",
+            "Media",
+            "Elam",
+        ],
+    ),
+    (
+        "Asia Minor",
+        &[
+            "Cilicia",
+            "Cappadocia",
+            "Pontus",
+            "Galatia",
+            "Lycaonia",
+            "Pisidia",
+            "Pamphylia",
+            "Lycia",
+            "Phrygia",
+            "Asia",
+            "Mysia",
+            "Bithynia",
+        ],
+    ),
+    (
+        "Greece and Rome",
+        &["Cyprus", "Macedonia", "Achaia", "Dalmatia", "Italy"],
+    ),
+];
 
 /// One sense of a word.
 #[derive(Clone, Debug, PartialEq)]
@@ -259,5 +418,20 @@ mod tests {
         assert_eq!(PlaceShape::decode(""), None);
         assert_eq!(PlaceShape::decode("circle:1,2"), None);
         assert_eq!(PlaceShape::decode("line:1,x"), None);
+    }
+
+    #[test]
+    fn an_area_holds_the_points_within_it() {
+        // A square with a second, separate square.
+        let area = PlaceShape::Area(vec![
+            vec![[35.0, 31.0], [36.0, 31.0], [36.0, 32.0], [35.0, 32.0]],
+            vec![[40.0, 30.0], [41.0, 30.0], [41.0, 31.0], [40.0, 31.0]],
+        ]);
+        assert!(area.contains(35.5, 31.5));
+        assert!(area.contains(40.5, 30.5));
+        assert!(!area.contains(37.0, 31.5));
+        assert!(!area.contains(35.5, 32.5));
+        let line = PlaceShape::Line(vec![vec![[35.0, 31.0], [36.0, 32.0]]]);
+        assert!(!line.contains(35.5, 31.5));
     }
 }

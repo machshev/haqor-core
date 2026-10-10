@@ -318,6 +318,9 @@ enum DbCommands {
         /// Haqor's own place identifications, which replace OpenBible.info's.
         #[arg(long, default_value = "data/place_overrides.json")]
         place_overrides: PathBuf,
+        /// Haqor's journeys, drawn through the places.
+        #[arg(long, default_value = "data/journeys.json")]
+        journeys: PathBuf,
     },
     /// Reduce a downloaded dataset to the prepared files vendored in
     /// src_texts, which the build reads. The scripts/fetch-*.sh scripts run
@@ -630,15 +633,19 @@ fn main() -> Result<()> {
                 db,
                 src_texts,
                 place_overrides,
+                journeys,
             } => {
-                let s = haqor_db_gen::gen_names(&db, &src_texts, &place_overrides)?;
+                let s = haqor_db_gen::gen_names(&db, &src_texts, &place_overrides, &journeys)?;
                 println!(
                     "Wrote {} people, places and other names ({} words naming one; {} places \
-                     located, {} by Haqor's own identification) and {} senses ({} words) to {}",
+                     located, {} by Haqor's own identification), {} journeys ({} stops) and {} senses \
+                     ({} words) to {}",
                     s.entities,
                     s.name_words,
                     s.located,
                     s.overridden,
+                    s.journeys,
+                    s.journey_stops,
                     s.senses,
                     s.sense_words,
                     db.display()
