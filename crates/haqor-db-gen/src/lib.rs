@@ -10,6 +10,7 @@ mod harness;
 mod hebrew_db;
 mod journeys;
 mod lexicon_db;
+mod murdock;
 mod names;
 mod occurrences;
 mod oshb;
@@ -51,7 +52,10 @@ pub use sefaria::{ImportSummary, import_sefaria};
 pub use stepbible::source_dir as stepbible_source_dir;
 pub use syntax::{SyntaxSummary, build_syntax_trees, gen_syntax};
 pub use tagnt::{GreekSummary, build_greek, gen_greek};
-pub use translation::{TranslationSummary, build_translation, gen_translation};
+pub use translation::{
+    SUPPLEMENT as TRANSLATION_SUPPLEMENT, TranslationBuild, TranslationSummary, build_translation,
+    gen_translation,
+};
 pub use tsk::{TskSummary, build_thematic_references, gen_tsk};
 
 use std::path::Path;
@@ -140,6 +144,7 @@ pub enum PreparedSource {
     Stepbible,
     MaculaHebrew,
     Unfoldingword,
+    Murdock,
     OpenbibleGeocoding,
     Theographic,
 }
@@ -152,6 +157,7 @@ impl PreparedSource {
             PreparedSource::MaculaHebrew => syntax::source_dir(src_texts),
             PreparedSource::OpenbibleGeocoding => geocoding::source_dir(src_texts),
             PreparedSource::Unfoldingword => translation::source_dir(src_texts),
+            PreparedSource::Murdock => murdock::source_dir(src_texts),
             PreparedSource::Theographic => events::source_dir(src_texts),
         }
     }
@@ -166,6 +172,7 @@ impl std::str::FromStr for PreparedSource {
             "macula-hebrew" => Ok(PreparedSource::MaculaHebrew),
             "openbible-geocoding" => Ok(PreparedSource::OpenbibleGeocoding),
             "unfoldingword" => Ok(PreparedSource::Unfoldingword),
+            "murdock" => Ok(PreparedSource::Murdock),
             "theographic" => Ok(PreparedSource::Theographic),
             _ => Err(format!("unknown dataset {name:?}")),
         }
@@ -208,8 +215,16 @@ pub fn prepare(source: PreparedSource, from: &Path, to: &Path) -> Result<String>
         PreparedSource::Unfoldingword => {
             let summary = translation::prepare(from, to)?;
             Ok(format!(
-                "{} UHB words and {} ULT verses ({} alignments naming no UHB word left out)",
-                summary.hebrew_words, summary.verses, summary.unresolved
+                "{} UHB words, {} UGNT words and {} ULT verses ({} alignments naming no \
+                 word of either left out)",
+                summary.hebrew_words, summary.greek_words, summary.verses, summary.unresolved
+            ))
+        }
+        PreparedSource::Murdock => {
+            let summary = murdock::prepare(from, to)?;
+            Ok(format!(
+                "{} verses of Murdock's Peshitta ({} corrections)",
+                summary.verses, summary.fixes
             ))
         }
         PreparedSource::Theographic => {

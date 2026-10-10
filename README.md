@@ -40,7 +40,7 @@ cargo run --release -- db refresh-reader-glosses
 
 Every dataset the build reads lives in `src_texts/`, so a build needs no
 network and does not depend on an upstream copy staying online. The external
-datasets (`STEPBible-Data`, `MACULA-Hebrew`, `unfoldingWord`,
+datasets (`STEPBible-Data`, `MACULA-Hebrew`, `unfoldingWord`, `Murdock`,
 `OpenBible-Geocoding`, `Theographic`) are committed in a prepared form: `haqor db prepare`
 reduces each, as published, to what the build reads, in plain text
 (TSV/JSON lines) whose diffs can be reviewed. That is about 47 MB in place of
@@ -195,6 +195,32 @@ The fetch script pins the ULT at a `master` commit rather than its latest
 release (v91), which leaves out the books still being checked (Numbers,
 1–2 Chronicles, Ecclesiastes, Isaiah, Jeremiah and Ezekiel); their drafts are
 complete and fully aligned.
+
+The New Testament has two English texts. Beside the Greek, in
+`greek_translation_verse`, is the ULT's New Testament: its alignments name
+words of the unfoldingWord Greek New Testament (UGNT), a critical text, whose
+words are lined up against the TR (`greek_word`) by their unaccented
+letters, words the two order differently placed afterwards where they are
+spelled the same or alike nearby. Where the two divide verses differently,
+an English verse is divided by the TR verses its words render (Philippians
+1:16–17 come in the other order). Where the TR reads otherwise, its words go
+without English, and English rendering a word the TR lacks renders nothing;
+the 94 verses where the TR has six or more words without English (the
+doxology of Matthew 6:13 and the Comma Johanneum among them) are given Haqor's own English in `data/tr_translation_supplement.tsv`,
+written in the ULT's style and linked to the TR's words. 177,406 of
+181,182 English words link to a word of the TR.
+`Bible::greek_chapter_translation` reads a chapter.
+
+Beside the Peshitta, `translation_verse` holds James Murdock's translation
+(1852, public domain), from CrossWire's SWORD module, which
+`scripts/fetch-murdock.sh` exports with `mod2imp` (in the dev shell) and
+`db prepare murdock` reduces to `src_texts/Murdock/murdock.tsv`. The module
+runs a few verses together and misplaces others, and Murdock numbers a few
+as the KJV does where the Peshitta does not; the import puts each right
+(`murdock::FIXES`), so that every verse of the Peshitta has its English. His
+footnotes and the Gospels' colophons are left out, and "lampstand" and
+"love" stand for his "candlestick" and "charity". His English renders no
+particular words.
 
 ### People, places and word senses
 
@@ -396,15 +422,24 @@ written in a compact text form.
 
 **English translation** — adapted from the unfoldingWord Literal Text (ULT),
 (C) unfoldingWord, licensed CC BY-SA 4.0, using its alignment to the
-unfoldingWord Hebrew Bible (UHB, CC BY-SA 4.0). Haqor files each English
-verse under the Hebrew verse it renders, places the aligned words on its own
-Hebrew text, and leaves out the ULT's footnotes and paragraphing. The original
+unfoldingWord Hebrew Bible (UHB) and Greek New Testament (UGNT), both CC BY-SA
+4.0. Haqor files each English verse under the verse it renders, places the
+aligned words on its own Hebrew text and on the Textus Receptus, gives its
+own English for verses where the Textus Receptus reads otherwise
+(`data/tr_translation_supplement.tsv`), and leaves out the ULT's footnotes
+and paragraphing. The original
 work by unfoldingWord is available from
 [unfoldingword.org/ult](https://www.unfoldingword.org/ult). The adapted text,
-the `translation_verse` table of `haqor.db`, is shared under the same licence,
-CC BY-SA 4.0. Haqor vendors the Old Testament's words and alignments in
-`src_texts/unfoldingWord/` (`scripts/fetch-unfoldingword.sh`), with each
-text's licence.
+the Old Testament's rows of `haqor.db`'s `translation_verse` table and its
+`greek_translation_verse` table, is shared under the same licence, CC BY-SA
+4.0. Haqor vendors the words and alignments in `src_texts/unfoldingWord/`
+(`scripts/fetch-unfoldingword.sh`), with each text's licence.
+
+**English of the Peshitta** — James Murdock, *The New Testament; or, the Book
+of the Holy Gospel of our Lord and our God, Jesus the Messiah: a literal
+translation from the Syriac Peshito version* (1852), public domain, from
+CrossWire's SWORD module (`scripts/fetch-murdock.sh`), in
+`src_texts/Murdock/`.
 
 **Syriac New Testament** — the text of the British and Foreign Bible Society's
 edition, with lexical and morphological data from SEDRA:

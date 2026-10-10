@@ -331,11 +331,12 @@ enum DbCommands {
     /// src_texts, which the build reads. The scripts/fetch-*.sh scripts run
     /// this after downloading; it is not needed for an ordinary build.
     Prepare {
-        /// The dataset: stepbible, macula-hebrew, unfoldingword,
+        /// The dataset: stepbible, macula-hebrew, unfoldingword, murdock,
         /// openbible-geocoding or theographic.
         source: haqor_db_gen::PreparedSource,
         /// The downloaded dataset, as its fetch script lays it out (for
-        /// openbible-geocoding, a checkout of its repository).
+        /// openbible-geocoding, a checkout of its repository; for murdock,
+        /// the module's mod2imp export).
         #[arg(long)]
         from: PathBuf,
         /// Where to write the prepared files: the dataset's directory in
@@ -356,16 +357,21 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
-    /// Rebuild the `translation_verse` table of a runtime haqor.db in place
-    /// from the unfoldingWord Literal Text, aligned to the Hebrew (gen-runtime
-    /// also builds it). Fetch it first with scripts/fetch-unfoldingword.sh.
+    /// Rebuild the translation tables of a runtime haqor.db in place: the
+    /// unfoldingWord Literal Text aligned to the Hebrew and to the TR, with
+    /// Haqor's supplement, and Murdock's Peshitta (gen-runtime also builds
+    /// them). Fetch them first with scripts/fetch-unfoldingword.sh and
+    /// scripts/fetch-murdock.sh, and build the TR first (gen-greek).
     GenTranslation {
         /// Runtime database to update.
         #[arg(short, long, default_value = "data/haqor.db")]
         db: PathBuf,
-        /// Source texts directory holding unfoldingWord.
+        /// Source texts directory holding unfoldingWord and Murdock.
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
+        /// Directory holding the supplement to the TR's English.
+        #[arg(long, default_value = "data")]
+        data_dir: PathBuf,
     },
     /// Rebuild the Greek New Testament (the Textus Receptus) of a runtime
     /// haqor.db in place from the prepared TAGNT words (gen-runtime also builds
@@ -697,14 +703,24 @@ fn main() -> Result<()> {
                     summary.misaligned
                 );
             }
-            DbCommands::GenTranslation { db, src_texts } => {
-                let summary = haqor_db_gen::gen_translation(&db, &src_texts)?;
+            DbCommands::GenTranslation {
+                db,
+                src_texts,
+                data_dir,
+            } => {
+                let b = haqor_db_gen::gen_translation(&db, &src_texts, &data_dir)?;
                 println!(
-                    "Wrote the English of {} verses to {} ({} of {} words linked to the Hebrew)",
-                    summary.verses,
-                    db.display(),
-                    summary.linked,
-                    summary.words
+                    "Wrote the English of {} Hebrew verses ({} of {} words linked), {} TR verses \
+                     ({} of {} words linked, {} supplemented) and {} Peshitta verses to {}",
+                    b.hebrew.verses,
+                    b.hebrew.linked,
+                    b.hebrew.words,
+                    b.greek.verses + b.supplied_missing,
+                    b.greek.linked,
+                    b.greek.words,
+                    b.supplemented,
+                    b.peshitta,
+                    db.display()
                 );
             }
             DbCommands::GenGreek { db, src_texts } => {

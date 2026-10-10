@@ -91,6 +91,9 @@
                   # bsondump, for scripts/fetch-sefaria-lexicons.sh
                   mongodb-tools
 
+                  # mod2imp, for scripts/fetch-murdock.sh
+                  sword
+
                   # If the dependencies need system libs, you usually need pkg-config + the lib
                   pkg-config
                   openssl

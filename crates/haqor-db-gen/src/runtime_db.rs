@@ -392,7 +392,6 @@ pub fn generate_runtime(
     info!("Found {quotations} cross references (OT/NT quotations and parallels)");
     crate::tsk::build_thematic_references(&Connection::open(output)?, src_texts)?;
     crate::syntax::build_syntax_trees(&Connection::open(output)?, src_texts)?;
-    crate::translation::build_translation(&Connection::open(output)?, src_texts)?;
     crate::names::build_names(
         &Connection::open(output)?,
         src_texts,
@@ -401,6 +400,8 @@ pub fn generate_runtime(
         &data_dir.join(crate::events::EVENT_OVERRIDES),
     )?;
     crate::tagnt::build_greek(&Connection::open(output)?, src_texts)?;
+    // After the TR, which the New Testament's English is aligned to.
+    crate::translation::build_translation(&Connection::open(output)?, src_texts, data_dir)?;
 
     // VACUUM cannot run on an attached database, so the reclaim happens on the
     // finished file. It matters: the bulk load leaves the free pages that make

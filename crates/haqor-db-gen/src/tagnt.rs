@@ -527,7 +527,7 @@ fn distance(a: &str, b: &str) -> usize {
 
 /// Whether two transliterations are the same word spelled a little
 /// differently: Ναζαρέτ and Ναζαρέθ, ἀλλά and ἀλλ᾽, εἶδε and εἶδεν.
-fn alike(a: &str, b: &str) -> bool {
+pub(crate) fn alike(a: &str, b: &str) -> bool {
     let longer = a.len().max(b.len());
     longer >= 3 && distance(a, b) <= (longer / 4).max(1)
 }

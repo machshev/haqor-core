@@ -5175,24 +5175,47 @@ impl Bible {
         .collect()
     }
 
-    /// The English of every verse of an Old Testament chapter that has some,
-    /// in order, as `(verse, spans)`: an English translation adapted from
-    /// the unfoldingWord Literal Text, each span naming the Hebrew words it
-    /// renders. Empty for the New Testament,
-    /// and for a database built before the table existed.
+    /// The English of every verse of a chapter that has some, in order, as
+    /// `(verse, spans)`: the English of the text the reader shows. For the
+    /// Old Testament it is adapted from the unfoldingWord Literal Text, each
+    /// span naming the Hebrew words it renders; for the New, James Murdock's
+    /// translation of the Peshitta, whose spans name no words. Empty for a
+    /// database built before the table existed.
     pub fn chapter_translation(
         &self,
         book: u8,
         chapter: u8,
     ) -> rusqlite::Result<Vec<(u8, Vec<crate::translation::TranslationSpan>)>> {
-        if !self.has_table("translation_verse")? {
+        self.translation_from("translation_verse", book, chapter)
+    }
+
+    /// The English of every verse of a New Testament chapter in the Greek
+    /// (the TR, as [`Self::greek_chapter`] reads it), in order, as `(verse,
+    /// spans)`: adapted from the unfoldingWord Literal Text, with Haqor's own
+    /// where the TR reads otherwise, each span naming the TR words it
+    /// renders. Empty for the Old Testament, and for a database built before
+    /// the table existed.
+    pub fn greek_chapter_translation(
+        &self,
+        book: u8,
+        chapter: u8,
+    ) -> rusqlite::Result<Vec<(u8, Vec<crate::translation::TranslationSpan>)>> {
+        self.translation_from("greek_translation_verse", book, chapter)
+    }
+
+    fn translation_from(
+        &self,
+        table: &str,
+        book: u8,
+        chapter: u8,
+    ) -> rusqlite::Result<Vec<(u8, Vec<crate::translation::TranslationSpan>)>> {
+        if !self.has_table(table)? {
             return Ok(Vec::new());
         }
         let (first, last) = chapter_range(book, chapter);
-        let mut stmt = self.db.prepare_cached(
-            "SELECT ref, text FROM data.translation_verse WHERE ref BETWEEN ?1 AND ?2 \
-             ORDER BY ref",
-        )?;
+        let mut stmt = self.db.prepare_cached(&format!(
+            "SELECT ref, text FROM data.{table} WHERE ref BETWEEN ?1 AND ?2 ORDER BY ref"
+        ))?;
         stmt.query_map([first, last], |row| {
             // A blob in whichever form `meta.blob_codec` says; text in a
             // database built before the translation was stored as one.
@@ -6209,7 +6232,39 @@ mod tests {
         assert_eq!(*verse, 1);
         assert!(spans[0].text.starts_with("A psalm"), "{spans:?}");
 
-        assert!(bible.chapter_translation(40, 1).unwrap().is_empty());
+        // Beside the Peshitta, Murdock's English, which names no words.
+        let matthew = bible.chapter_translation(40, 1).unwrap();
+        let (verse, spans) = &matthew[0];
+        assert_eq!(*verse, 1);
+        assert!(spans.iter().all(|s| s.words.is_empty()), "{spans:?}");
+        assert!(
+            spans[0].text.starts_with("THE book of the nativity"),
+            "{spans:?}"
+        );
+        assert!(bible.greek_chapter_translation(1, 1).unwrap().is_empty());
+    }
+
+    /// The Greek's English names the TR's words, and has a verse for each of
+    /// the TR's. Skips a database built before the table existed.
+    #[test]
+    fn greek_translation_names_the_tr_words() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let matthew = bible.greek_chapter_translation(40, 1).unwrap();
+        if matthew.is_empty() {
+            eprintln!("skipping: haqor.db has no greek_translation_verse table");
+            return;
+        }
+        assert_eq!(matthew.len(), bible.greek_chapter(40, 1).unwrap().len());
+        let (verse, spans) = &matthew[0];
+        assert_eq!(*verse, 1);
+        assert_eq!(spans[0].text, "The book");
+        assert_eq!(spans[0].words[0].position, 0);
+        // Philippians 1:16-17 come in the TR in the other order.
+        let philippians = bible.greek_chapter_translation(50, 1).unwrap();
+        let (_, spans) = philippians.iter().find(|(v, _)| *v == 16).unwrap();
+        let text: String = spans.iter().map(|s| s.text.as_str()).collect();
+        assert!(text.contains("selfish ambition"), "{text}");
     }
 
     /// A verse's syntax tree puts every word of the verse on a leaf, and a

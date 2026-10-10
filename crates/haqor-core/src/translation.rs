@@ -1,7 +1,8 @@
-//! The English translation of the Old Testament, as `haqor.db`'s
-//! `translation_verse` table stores it.
+//! The English translations, as `haqor.db`'s `translation_verse` table (the
+//! English of the text the reader shows) and `greek_translation_verse` (the
+//! English of the Greek New Testament) store them.
 //!
-//! The translation is adapted from the unfoldingWord® Literal Text (ULT,
+//! The Old Testament's is adapted from the unfoldingWord® Literal Text (ULT,
 //! CC BY-SA 4.0), whose every English word is aligned to the Hebrew word or
 //! words it renders. `haqor-db-gen`'s `translation` module imports it, places those
 //! Hebrew words on the corpus, and files each English verse under the Hebrew
@@ -9,12 +10,17 @@
 //! whatever the two numberings say (Malachi 4:1 in English is 3:19 here, and
 //! a psalm's title is its first verse).
 //!
+//! The New Testament's English beside the Greek is the ULT's too, aligned to
+//! the Textus Receptus, with Haqor's own where the TR reads otherwise; beside
+//! the Peshitta it is James Murdock's (1852), which renders no particular
+//! words, so its spans link none.
+//!
 //! In the stored form a verse is running text in which `[text|links]` marks
-//! English that renders particular Hebrew words. `links` is a comma-separated
+//! English that renders particular source words. `links` is a comma-separated
 //! list, the main word first, each a word `position` in the same verse,
 //! `verse:position` in another verse of the chapter, or
 //! `chapter:verse:position`. Text between `{` and `}` is supplied: English
-//! the sense needs that no Hebrew word says. A backslash escapes the next
+//! the sense needs that no source word says. A backslash escapes the next
 //! character.
 
 /// A run of a verse's English: one or more words rendering the same Hebrew,
@@ -25,14 +31,14 @@ pub struct TranslationSpan {
     /// Whether the English is supplied for sense rather than rendering any
     /// word, which printed literal translations set in italics.
     pub supplied: bool,
-    /// The Hebrew words the text renders, the main one first; empty for text
+    /// The source words the text renders, the main one first; empty for text
     /// rendering none.
     pub words: Vec<TranslationWord>,
 }
 
-/// A Hebrew word an English span renders. Usually in the span's own verse,
-/// but where the English and Hebrew divide verses differently it may be in
-/// the next or previous one.
+/// A word of the source text (Hebrew or Greek) an English span renders.
+/// Usually in the span's own verse, but where the English and the source
+/// divide verses differently it may be in the next or previous one.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct TranslationWord {
     pub chapter: u8,
