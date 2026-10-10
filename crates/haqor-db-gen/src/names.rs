@@ -365,23 +365,32 @@ pub fn build_names(
             let id = record["id"]
                 .as_u64()
                 .context("a TIPNR record without an id")? as u32;
+            // TIPNR calls Yahweh "LORD", as the English Bibles it follows do.
+            let english = |key: &str| crate::tsk::name_the_lord(&text(record, key));
             entity.execute(params![
                 id,
-                text(record, "name"),
+                english("name"),
                 text(record, "kind"),
                 text(record, "category"),
-                text(record, "description"),
-                text(record, "summary"),
+                english("description"),
+                english("summary"),
                 text(record, "origin"),
                 occurrences.get(&id).copied().unwrap_or_default(),
             ])?;
             for (ord, f) in record["forms"].as_array().into_iter().flatten().enumerate() {
-                let english: Vec<&str> = f["english"]
+                let mut english: Vec<String> = Vec::new();
+                for name in f["english"]
                     .as_array()
                     .into_iter()
                     .flatten()
                     .filter_map(Value::as_str)
-                    .collect();
+                {
+                    // "LORD; Jehovah" names Yahweh twice: once is enough.
+                    let name = crate::tsk::name_the_lord(name);
+                    if !english.contains(&name) {
+                        english.push(name);
+                    }
+                }
                 form.execute(params![
                     id,
                     ord as i64,
@@ -561,7 +570,7 @@ pub fn build_names(
                 lexeme.parse::<u32>()?,
                 word,
                 language,
-                gloss,
+                crate::tsk::name_the_lord(gloss),
                 count
             ])?;
             summary.senses += 1;
@@ -781,23 +790,33 @@ mod tests {
         assert!(points.iter().any(|[_, lat]| *lat > 32.7));
         assert_eq!(shape("Bethel"), None);
 
-        // No Strong's number anywhere in the tables.
+        // No Strong's number anywhere in the tables, and Yahweh named, never
+        // called "the LORD".
+        let yahweh: String = db
+            .query_row(
+                "SELECT english FROM name_form f JOIN name_entity e USING(entity_id) \
+                 WHERE f.hebrew = 'יהוה'",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+        assert_eq!(yahweh, "Yahweh");
         for (table, column) in [
             ("name_entity", "name || description || summary || origin"),
             ("name_form", "hebrew || english || significance"),
             ("name_location", "kind || label"),
             ("sense", "word || gloss"),
         ] {
-            let found: i64 = db
-                .query_row(
-                    &format!(
-                        "SELECT count(*) FROM {table} WHERE {column} GLOB '*[HG][0-9][0-9][0-9][0-9]*'"
-                    ),
-                    [],
-                    |row| row.get(0),
-                )
-                .unwrap();
-            assert_eq!(found, 0, "{table}");
+            for pattern in ["*[HG][0-9][0-9][0-9][0-9]*", "*LORD*"] {
+                let found: i64 = db
+                    .query_row(
+                        &format!("SELECT count(*) FROM {table} WHERE {column} GLOB ?1"),
+                        [pattern],
+                        |row| row.get(0),
+                    )
+                    .unwrap();
+                assert_eq!(found, 0, "{table} {pattern}");
+            }
         }
     }
 }

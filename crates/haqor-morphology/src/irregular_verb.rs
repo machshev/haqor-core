@@ -1014,7 +1014,7 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
     },
     IrregularVerb {
         // קרב Qal infinitive construct + 3mp suffix "when they drew near (before
-        // the LORD)" (Lev 16:1) — bᵉqorḇāṯām, with the proclitic בְּ.
+        // Yahweh)" (Lev 16:1) — bᵉqorḇāṯām, with the proclitic בְּ.
         surface: "בְּקָרְבָתָם",
         root: "קרב",
         binyan: "Qal",
@@ -1336,7 +1336,7 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "3cp",
     },
     IrregularVerb {
-        // I-yod ירא Qal infinitive construct "to fear (the LORD)" (Josh 22:25) —
+        // I-yod ירא Qal infinitive construct "to fear (Yahweh)" (Josh 22:25) —
         // yᵉrōʾ, holam-host variant of the usual יִרְאָה / יְרֹא.
         surface: "יְרֹא",
         root: "ירא",
@@ -1451,7 +1451,7 @@ pub const IRREGULAR_VOCALIZATIONS: &[IrregularVerb] = &[
         pgn: "2fs",
     },
     IrregularVerb {
-        // שאל Qal perfect 1cs + 3ms suffix "I asked him of the LORD" (1Sam 1:20).
+        // שאל Qal perfect 1cs + 3ms suffix "I asked him of Yahweh" (1Sam 1:20).
         surface: "שְׁאִלְתִּיו",
         root: "שאל",
         binyan: "Qal",

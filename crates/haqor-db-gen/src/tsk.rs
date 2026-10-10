@@ -135,8 +135,10 @@ fn parse_group(group: &str) -> Option<Vec<Target>> {
     Some(targets)
 }
 
-/// Write the divine name where the King James wording of a TSK phrase
-/// substitutes a title for it: "the LORD" (and the small-capital "GOD" of
+/// Write the divine name where English substitutes a title for it, as the
+/// King James wording of a TSK phrase does, and MACULA's glosses and TIPNR's
+/// and STEP Bible's names and senses after it: "the LORD" (and the
+/// small-capital "GOD" of
 /// "the Lord GOD") become "Yahweh", "the LORD'S" "Yahweh's", "JAH" "Yah", and
 /// the Jehovah names ("Jehovahjireh") "Yahweh-jireh". An all-capital "THE
 /// LORD" becomes "YAHWEH". Other words, "Lord" and "God" among them, are

@@ -177,7 +177,7 @@ impl Default for Matcher {
     /// scaled to the cross-testament scale, where the known quotations have a
     /// median of about 16 and the known parallels about 30 before scaling.
     /// Sampled 2026-09-26: below 7 scaled nearly every pair shares only a
-    /// formula ("and the LORD spoke to Moses, saying") or a few common roots;
+    /// formula ("and Yahweh spoke to Moses, saying") or a few common roots;
     /// from 7 to 10 formulas and genuine phrase echoes (Jeremiah's "rising
     /// early and sending", John's "I go to him who sent me") mix, which the
     /// reader's strength filter can leave out. The floor of 7 keeps 30 of the

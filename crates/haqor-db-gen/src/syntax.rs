@@ -391,10 +391,21 @@ fn read_prepared(dir: &Path) -> Result<Vec<(Verse, Node)>> {
         .map(|line| {
             let (id, tree) = line.split_once('\t').context("a line without a tree")?;
             let verse = parse_verse(id).with_context(|| format!("unknown verse {id:?}"))?;
-            let tree = parse_source(tree).with_context(|| format!("reading the tree of {id}"))?;
+            let mut tree =
+                parse_source(tree).with_context(|| format!("reading the tree of {id}"))?;
+            name_the_lord(&mut tree);
             Ok((verse, tree))
         })
         .collect()
+}
+
+/// Write the divine name in a tree's glosses where MACULA writes "LORD"
+/// (see [`crate::tsk::name_the_lord`]).
+fn name_the_lord(tree: &mut Node) {
+    match tree {
+        Node::Group { children, .. } => children.iter_mut().for_each(name_the_lord),
+        Node::Morpheme { gloss, .. } => *gloss = crate::tsk::name_the_lord(gloss),
+    }
 }
 
 /// A word's letters, the key words are placed by: its consonants, finals
@@ -856,5 +867,14 @@ mod tests {
             )
             .unwrap();
         assert!(tree.starts_with("[cl [pp:pp 0] 1:v 2:s [np:o"), "{tree}");
+        // MACULA's "LORD" is written as the name.
+        let lord: i64 = db
+            .query_row(
+                "SELECT count(*) FROM syntax_tree WHERE tree GLOB '*LORD*'",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+        assert_eq!(lord, 0);
     }
 }

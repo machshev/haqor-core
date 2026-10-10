@@ -523,7 +523,7 @@ const CONCEPTS: &[GrammarConcept] = &[
         explanation: "A לְ joined to the front of a word means \"to\" or \"for\". It also \
             marks the infinitive (\"to do\").",
         formula: Some("לְ + noun → \"to / for …\""),
-        examples: &["לְךָ — to you", "לַיהוָה — to the LORD"],
+        examples: &["לְךָ — to you", "לַיהוָה — to Yahweh"],
     },
     GrammarConcept {
         key: "prep-ke",
@@ -683,7 +683,7 @@ const CONCEPTS: &[GrammarConcept] = &[
         explanation: "To say \"the X of Y\", the first noun takes a shortened \"construct\" \
             form and is read together with the next: \"word of the king\".",
         formula: Some("construct + noun → \"X of Y\""),
-        examples: &["דְּבַר יְהוָה — the word of the LORD", "בֵּית הַמֶּלֶךְ — the house of the king"],
+        examples: &["דְּבַר יְהוָה — the word of Yahweh", "בֵּית הַמֶּלֶךְ — the house of the king"],
     },
     GrammarConcept {
         key: "suffix-possessive",
