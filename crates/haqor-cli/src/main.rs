@@ -649,11 +649,12 @@ fn main() -> Result<()> {
                     &event_overrides,
                 )?;
                 println!(
-                    "Wrote {} people, places and other names ({} words naming one; {} places \
+                    "Wrote {} people, places and other names ({} words naming one, {} New Testament verses; {} places \
                      located, {} by Haqor's own identification), {} journeys ({} stops), {} events ({} people \
                      and places) and {} senses ({} words) to {}",
                     s.entities,
                     s.name_words,
+                    s.name_verses,
                     s.located,
                     s.overridden,
                     s.journeys,

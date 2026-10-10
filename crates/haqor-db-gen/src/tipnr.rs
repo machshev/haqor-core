@@ -82,6 +82,11 @@ pub(crate) struct Record {
     /// The place's name in OpenBible.info's geocoding (`Bethlehem 1`), which
     /// tells apart places TIPNR gives one name; empty if it has none.
     pub openbible: String,
+    /// The New Testament words naming it, by reference (`Mat.2.1`), a
+    /// reference a word: what TIPNR lists under its Greek forms. Haqor's New
+    /// Testament is the Peshitta, which STEP Bible does not tag word by word,
+    /// so these are all it knows of where the New Testament names it.
+    pub new_testament: Vec<String>,
 }
 
 /// `text` without the Strong's numbers TIPNR now and then leaves in its prose
@@ -264,6 +269,30 @@ fn form(significance: &str, field: &str, english: &str) -> Option<Form> {
     })
 }
 
+/// A form line's references, a word each: `Mat.2.1; Mat.23.37a; Mat.23.37b`
+/// gives `Mat.2.1`, `Mat.23.37` and `Mat.23.37` again, for the verse's second
+/// word naming it. A list TIPNR cuts short (`Mat.1.20; etc`, for LORD) gives
+/// none, rather than a first verse standing for them all, and the Greek Old
+/// Testament's (`LXX.Neh.7.24`) are left out.
+fn greek_references(field: &str) -> Vec<String> {
+    let references: Vec<&str> = field
+        .split(';')
+        .map(|r| r.trim().trim_matches(['[', ']']))
+        .filter(|r| !r.is_empty())
+        .collect();
+    if references.contains(&"etc") {
+        return Vec::new();
+    }
+    references
+        .into_iter()
+        .filter(|r| !r.starts_with("LXX."))
+        .map(|r| {
+            r.trim_end_matches(|c: char| c.is_ascii_lowercase())
+                .to_string()
+        })
+        .collect()
+}
+
 /// Read every record of a TIPNR file.
 pub(crate) fn parse(text: &str) -> Result<Vec<Record>> {
     let mut records: Vec<Record> = Vec::new();
@@ -313,6 +342,7 @@ pub(crate) fn parse(text: &str) -> Result<Vec<Record>> {
                 forms: Vec::new(),
                 coordinates: None,
                 openbible: String::new(),
+                new_testament: Vec::new(),
             };
             match kind {
                 Kind::Person => {
@@ -361,6 +391,13 @@ pub(crate) fn parse(text: &str) -> Result<Vec<Record>> {
         let record = records
             .last_mut()
             .context("a name form before any record")?;
+        // A Greek form: its references are the New Testament's words naming
+        // the record. A line repeating the previous one's references under
+        // other tags names no further words.
+        if field(2).starts_with('G') && !significance.starts_with("(same ref") {
+            record.new_testament.extend(greek_references(field(5)));
+            continue;
+        }
         if let Some(form) = form(significance, field(2), field(3)) {
             record.forms.push(form);
         }
@@ -400,7 +437,8 @@ Zechariah@2Ki.14.29-=H2148P\tKing living at the time of Divided Monarchy\tJerobo
 $========== PLACE\t\t
 Bethlehem@Gen.35.16-Jhn=H1035G\tBethlehem_1\tSalma@1Ch.2.51-=H8007H\t\thttps://www.google.com/maps/@31.70536,35.21026,14z\thttps://palopenmaps.org/\tTribe of Judah\t#A location in Judah Tribe\tPlace
 – Named\tBethlehem@Gen.35.16-Jhn\tH1035G«H1035=בֵּית לֶ֫חֶם\tBethlehem\turl\tGen.35.19
-– Greek\tBethlehem@Gen.35.16-Jhn\tG0965«G0965=Βηθλεέμ\tBethlehem\turl\tMat.2.1
+– Greek\tBethlehem@Gen.35.16-Jhn\tG0965«G0965=Βηθλεέμ\tBethlehem\turl\tMat.2.1; Mat.2.5a; Mat.2.5b
+– (same ref[s] with Alt Tags)\tBethlehem@Gen.35.16-Jhn\tG0965«G0965=Βηθλεέμ\tBethlehem\turl\tMat.2.1
 – Named\tEphrath|Bethlehem@Gen.35.16-Jhn\tH0672H«H0672=אֶפְרָ֫תָה\tEphrath\turl\tGen.35.16
 $========== EXCLUDED OTHER
 Aramaic@2Ki.18.26-Rev=H0762\tA language\t\t\t\t\t>\t#A language\tLanguage
@@ -475,8 +513,16 @@ Aramaic@2Ki.18.26-Rev=H0762\tA language\t\t\t\t\t>\t#A language\tLanguage
         assert_eq!(bethlehem.coordinates, Some((31.70536, 35.21026)));
         assert_eq!(bethlehem.openbible, "Bethlehem 1");
         assert_eq!(bethlehem.links[0].0, "founder");
-        // The Greek form is the New Testament's, and left out.
+        // The Greek form is the New Testament's: its references are kept, a
+        // word each, but not the form.
         assert_eq!(bethlehem.forms.len(), 2);
+        assert_eq!(bethlehem.new_testament, ["Mat.2.1", "Mat.2.5", "Mat.2.5"]);
+        assert!(zechariah.new_testament.is_empty());
+        assert!(greek_references("Mat.1.20; etc").is_empty());
+        assert_eq!(
+            greek_references("LXX.Neh.7.24; [Act.26.7]; Act.25.13"),
+            ["Act.26.7", "Act.25.13"]
+        );
         assert_eq!(by_strong(&records).get("H0672H"), Some(&1));
     }
 }

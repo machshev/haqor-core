@@ -5403,6 +5403,38 @@ impl Bible {
             .collect()
     }
 
+    /// The New Testament verses naming a person, place or other named thing,
+    /// in canonical order. The New Testament is not tagged word by word, so
+    /// unlike [`Bible::name_occurrences`] these say which verse but not which
+    /// word. Empty for a database built before they were.
+    pub fn name_verses(&self, id: u32) -> rusqlite::Result<Vec<VerseRef>> {
+        if !self.has_table("name_verse")? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self
+            .db
+            .prepare_cached("SELECT ref FROM data.name_verse WHERE entity_id = ?1 ORDER BY ref")?;
+        stmt.query_map([id], |row| Ok(VerseRef::unpack(row.get(0)?)))?
+            .collect()
+    }
+
+    /// Which of a chapter's verses name a person, place or other named thing,
+    /// as [`Bible::name_verses`] gives them: `(verse, id)` in order.
+    fn chapter_name_verses(&self, book: u8, chapter: u8) -> rusqlite::Result<Vec<(u8, u32)>> {
+        if !self.has_table("name_verse")? {
+            return Ok(Vec::new());
+        }
+        let (first, last) = chapter_range(book, chapter);
+        let mut stmt = self.db.prepare_cached(
+            "SELECT ref, entity_id FROM data.name_verse \
+             WHERE ref BETWEEN ?1 AND ?2 ORDER BY ref, entity_id",
+        )?;
+        stmt.query_map([first, last], |row| {
+            Ok((ref_verse(row.get(0)?), row.get(1)?))
+        })?
+        .collect()
+    }
+
     /// The places a chapter names that have a position, each with its
     /// likeliest location and the verses naming it, in the order the chapter
     /// first names them: what a map of the chapter shows.
@@ -5412,7 +5444,13 @@ impl Bible {
         chapter: u8,
     ) -> rusqlite::Result<Vec<crate::names::ChapterPlace>> {
         let mut places: Vec<crate::names::ChapterPlace> = Vec::new();
-        for (verse, _, id) in self.chapter_names(book, chapter)? {
+        // The Old Testament's naming words, or the New Testament's verses.
+        let named = self
+            .chapter_names(book, chapter)?
+            .into_iter()
+            .map(|(verse, _, id)| (verse, id))
+            .chain(self.chapter_name_verses(book, chapter)?);
+        for (verse, id) in named {
             if let Some(place) = places.iter_mut().find(|p| p.place.id == id) {
                 if place.verses.last() != Some(&verse) {
                     place.verses.push(verse);
@@ -6357,6 +6395,22 @@ mod tests {
         let bethlehem = places.iter().find(|p| p.place.name == "Bethlehem").unwrap();
         assert!((31.6..31.8).contains(&bethlehem.location.latitude));
         assert_eq!(bethlehem.verses.first(), Some(&1));
+
+        // The New Testament names Bethlehem too, though not word by word:
+        // Matthew 2 at its first verse, and on the chapter's map.
+        let verses = bible.name_verses(bethlehem.place.id).unwrap();
+        let matthew_2_1 = VerseRef {
+            book: 40,
+            chapter: 2,
+            verse: 1,
+        };
+        assert!(verses.contains(&matthew_2_1), "{verses:?}");
+        let key = |v: &VerseRef| (v.book, v.chapter, v.verse);
+        assert!(verses.windows(2).all(|w| key(&w[0]) < key(&w[1])));
+        let places = bible.chapter_places(40, 2).unwrap();
+        let bethlehem = places.iter().find(|p| p.place.name == "Bethlehem").unwrap();
+        assert_eq!(bethlehem.verses.first(), Some(&1));
+        assert!(places.iter().any(|p| p.place.name == "Jerusalem"));
 
         // שָׁכַב in 2 Kings 14:29 is "lie down" as "be dead", one of its
         // senses.

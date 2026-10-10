@@ -36,6 +36,7 @@ DROP TABLE IF EXISTS name_form;
 DROP TABLE IF EXISTS name_link;
 DROP TABLE IF EXISTS name_location;
 DROP TABLE IF EXISTS word_name;
+DROP TABLE IF EXISTS name_verse;
 DROP TABLE IF EXISTS sense;
 DROP TABLE IF EXISTS surface_sense;
 DROP TABLE IF EXISTS word_sense;
@@ -44,8 +45,8 @@ DROP TABLE IF EXISTS word_sense;
 -- other; `category` TIPNR's finer type (Male, Female, Group, Place,
 -- Supernatural, …); `description` a few words saying who or what it is;
 -- `summary` what the text says of it, a line a sentence; `origin` a
--- person's tribe or nation, a place's region. `occurrences` counts the words
--- of the corpus naming it.
+-- person's tribe or nation, a place's region. `occurrences` counts the Old
+-- Testament words naming it (the New Testament's are in `name_verse`).
 CREATE TABLE name_entity(
     entity_id   INTEGER PRIMARY KEY,
     name        TEXT    NOT NULL,
@@ -109,6 +110,18 @@ CREATE TABLE word_name(
     PRIMARY KEY(ref, position)
 ) WITHOUT ROWID;
 
+-- The New Testament verses naming a person, place or other named thing, as
+-- TIPNR lists them. Haqor's New Testament is the Peshitta, which STEP Bible
+-- does not tag word by word, so the verse is known but not the word; `words`
+-- counts those TIPNR lists in it.
+CREATE TABLE name_verse(
+    entity_id INTEGER NOT NULL,
+    ref       INTEGER NOT NULL,
+    words     INTEGER NOT NULL,
+    PRIMARY KEY(entity_id, ref)
+) WITHOUT ROWID;
+CREATE INDEX idx_name_verse_ref ON name_verse(ref);
+
 -- A sense of a word (TBESH): `lexeme_id` gathers the senses of one word,
 -- `word` is its Hebrew headword, `language` hebrew or aramaic, and `gloss`
 -- the word's gloss then the sense's, after a colon where the word has
@@ -150,6 +163,10 @@ pub struct NamesSummary {
     pub entities: usize,
     /// Words of the corpus naming a person, place or other named thing.
     pub name_words: usize,
+    /// New Testament verses naming one, a row per verse and thing named, and
+    /// the references TIPNR gives that the Peshitta has no verse for.
+    pub name_verses: usize,
+    pub unplaced_verses: usize,
     /// Places with a position, and of those, how many from OpenBible.info and
     /// how many from Haqor's own identifications.
     pub located: usize,
@@ -466,6 +483,49 @@ pub fn build_names(
                 summary.name_words += 1;
             }
         }
+        // The New Testament's verses, which a split divides as it does the
+        // Old Testament's words. A verse the Peshitta numbers otherwise, or
+        // lacks, is left out.
+        let mut verse_exists = tx.prepare("SELECT 1 FROM verse WHERE ref = ?1")?;
+        let mut new_testament: HashMap<(u32, i64), i64> = HashMap::new();
+        for record in &records {
+            let Some(from) = record["id"].as_u64() else {
+                continue;
+            };
+            for reference in record["new_testament"]
+                .as_array()
+                .into_iter()
+                .flatten()
+                .filter_map(Value::as_str)
+            {
+                let Some((book, chapter, verse)) =
+                    crate::journeys::parse_ref(reference).filter(|&(book, _, _)| book >= 40)
+                else {
+                    continue;
+                };
+                let reference =
+                    crate::runtime_db::pack_ref(book.into(), chapter.into(), verse.into());
+                if !verse_exists.exists([reference])? {
+                    summary.unplaced_verses += 1;
+                    continue;
+                }
+                let mut entity = from as u32;
+                if let Some(split) = splits
+                    .iter()
+                    .find(|s| s.from == entity && s.refs.contains(&reference))
+                {
+                    entity = split.to;
+                    split_verses.entry(entity).or_default().insert(reference);
+                }
+                *new_testament.entry((entity, reference)).or_default() += 1;
+            }
+        }
+        let mut insert =
+            tx.prepare("INSERT INTO name_verse(entity_id, ref, words) VALUES (?1, ?2, ?3)")?;
+        for ((entity, reference), words) in &new_testament {
+            insert.execute(params![entity, reference, words])?;
+        }
+        summary.name_verses = new_testament.len();
         // Each verse a split names must have a word it takes: a misnumbered
         // verse would otherwise split nothing, silently.
         for split in &splits {
@@ -720,10 +780,13 @@ pub fn build_names(
     tx.execute_batch(INDEXES)?;
     tx.commit()?;
     info!(
-        "Names: {} records, {} words naming one; {} places located ({} by OpenBible.info). \
+        "Names: {} records, {} words naming one, and {} New Testament verses ({} references \
+         the Peshitta lacks); {} places located ({} by OpenBible.info). \
          Senses: {} on {} words ({} surfaces, {} occurrences differing from theirs)",
         summary.entities,
         summary.name_words,
+        summary.name_verses,
+        summary.unplaced_verses,
         summary.located,
         summary.geocoded,
         summary.senses,
@@ -752,6 +815,7 @@ pub fn gen_names(
 #[cfg(test)]
 mod tests {
     use super::*;
+    use rusqlite::OptionalExtension;
 
     #[test]
     fn a_renumbered_place_is_found_by_its_older_key() {
@@ -807,6 +871,8 @@ mod tests {
                WHERE ref < (40 << 16);
              CREATE TABLE surface(surface_id INTEGER PRIMARY KEY, text TEXT);
              INSERT INTO surface SELECT surface_id, text FROM src.surface;
+             CREATE TABLE verse(ref INTEGER PRIMARY KEY);
+             INSERT INTO verse SELECT ref FROM src.verse;
              DETACH DATABASE src;",
         )
         .unwrap();
@@ -822,6 +888,24 @@ mod tests {
         assert!(summary.name_words > 35_000, "{summary:?}");
         assert!(summary.sense_words > 240_000, "{summary:?}");
         assert!(summary.geocoded > 900, "{summary:?}");
+        assert!(summary.name_verses > 4_500, "{summary:?}");
+        assert!(summary.unplaced_verses < 50, "{summary:?}");
+
+        // The New Testament names Jerusalem, Matthew 23:37 twice.
+        let verse = |book: i64, chapter: i64, verse: i64| -> Option<i64> {
+            db.query_row(
+                "SELECT v.words FROM name_verse v JOIN name_entity e USING(entity_id) \
+                 WHERE e.name = 'Jerusalem' AND e.kind = 'place' AND v.ref = ?1",
+                [crate::runtime_db::pack_ref(book, chapter, verse)],
+                |row| row.get(0),
+            )
+            .optional()
+            .unwrap()
+        };
+        assert_eq!(verse(40, 2, 1), Some(1));
+        assert_eq!(verse(40, 23, 37), Some(2));
+        assert_eq!(verse(66, 21, 2), Some(1));
+        assert_eq!(verse(40, 1, 1), None);
 
         // The Zechariah of 2 Kings 14:29 is Jeroboam's son, the king.
         let (name, description, father): (String, String, String) = db

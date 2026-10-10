@@ -56,7 +56,8 @@ pub fn source_dir(src_texts: &Path) -> PathBuf {
 ///   empty when it has none.
 /// - `senses.tsv`: the TBESH senses those words have: id, the id of the
 ///   lexeme it is a sense of, its Hebrew headword, language and gloss.
-/// - `names.jsonl`: the TIPNR records, one JSON object a line.
+/// - `names.jsonl`: the TIPNR records, one JSON object a line, with the New
+///   Testament references TIPNR lists for each, a word each.
 const PREPARED_TAHOT: &str = "tahot.tsv";
 pub(crate) const PREPARED_SENSES: &str = "senses.tsv";
 pub(crate) const PREPARED_NAMES: &str = "names.jsonl";
@@ -514,6 +515,7 @@ pub fn prepare(from: &Path, out_dir: &Path) -> Result<PrepareSummary> {
             "links": links,
             "coordinates": record.coordinates.map(|(lat, lon)| [lat, lon]),
             "openbible": record.openbible,
+            "new_testament": record.new_testament,
         });
         names_out.push_str(&line.to_string());
         names_out.push('\n');
