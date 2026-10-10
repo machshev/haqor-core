@@ -5275,18 +5275,38 @@ impl Bible {
             .optional()
     }
 
+    /// The `shape` and `estimated` columns of `name_location`, prefixed by
+    /// `table`, or constants standing in for them in a database built before
+    /// places had shapes or estimates.
+    fn location_extras(&self, table: &str) -> rusqlite::Result<String> {
+        let has = |column: &str| -> rusqlite::Result<bool> {
+            self.db.query_row(
+                "SELECT EXISTS(SELECT 1 FROM pragma_table_info('name_location', 'data') \
+                 WHERE name = ?1)",
+                [column],
+                |row| row.get(0),
+            )
+        };
+        Ok(format!(
+            "{}, {}",
+            if has("shape")? {
+                format!("{table}shape")
+            } else {
+                "''".into()
+            },
+            if has("estimated")? {
+                format!("{table}estimated")
+            } else {
+                "0".into()
+            },
+        ))
+    }
+
     fn name_locations(&self, id: u32) -> rusqlite::Result<Vec<crate::names::PlaceLocation>> {
-        // A database built before places had shapes has no `shape` column.
-        let has_shape: bool = self.db.query_row(
-            "SELECT EXISTS(SELECT 1 FROM pragma_table_info('name_location', 'data') \
-             WHERE name = 'shape')",
-            [],
-            |row| row.get(0),
-        )?;
         let mut stmt = self.db.prepare_cached(&format!(
             "SELECT latitude, longitude, confidence, kind, label, {} FROM data.name_location \
              WHERE entity_id = ?1 ORDER BY ord",
-            if has_shape { "shape" } else { "''" }
+            self.location_extras("")?
         ))?;
         stmt.query_map([id], |row| {
             Ok(crate::names::PlaceLocation {
@@ -5296,6 +5316,7 @@ impl Bible {
                 kind: row.get(3)?,
                 label: row.get(4)?,
                 shape: crate::names::PlaceShape::decode(&row.get::<_, String>(5)?),
+                estimated: row.get(6)?,
             })
         })?
         .collect()
@@ -5429,19 +5450,13 @@ impl Bible {
         if !self.has_table("name_location")? {
             return Ok(Gazetteer::default());
         }
-        let has_shape: bool = self.db.query_row(
-            "SELECT EXISTS(SELECT 1 FROM pragma_table_info('name_location', 'data') \
-             WHERE name = 'shape')",
-            [],
-            |row| row.get(0),
-        )?;
         let mut stmt = self.db.prepare(&format!(
             "SELECT e.entity_id, e.name, e.description, e.origin, e.occurrences, \
                l.latitude, l.longitude, l.confidence, l.kind, l.label, {} \
              FROM data.name_entity e JOIN data.name_location l \
                ON l.entity_id = e.entity_id AND l.ord = 0 \
              WHERE e.kind = 'place' ORDER BY e.name, e.entity_id",
-            if has_shape { "l.shape" } else { "''" }
+            self.location_extras("l.")?
         ))?;
         let mut places = stmt
             .query_map([], |row| {
@@ -5461,6 +5476,7 @@ impl Bible {
                         kind: row.get(8)?,
                         label: row.get(9)?,
                         shape: PlaceShape::decode(&row.get::<_, String>(10)?),
+                        estimated: row.get(11)?,
                     },
                     other_names: Vec::new(),
                     regions: Vec::new(),
@@ -6120,13 +6136,17 @@ mod tests {
         assert!((41.8..42.0).contains(&rome.location.latitude));
         assert!(voyage.stops[1].by_sea);
         assert_eq!(voyage.stops[2].via.len(), 3);
-        // A station Haqor gives no site is listed, not drawn; a stop may be
+        // A station Haqor gives no site is listed, not drawn, and one whose
+        // site it only estimates is drawn as an estimate; a stop may be
         // called by another name than its record's.
         let exodus = journeys
             .iter()
             .find(|j| j.name == "The exodus to Mount Sinai")
             .unwrap();
-        assert!(exodus.stops.iter().any(|s| s.label == "Marah" && !s.drawn));
+        let stop = |label: &str| exodus.stops.iter().find(|s| s.label == label).unwrap();
+        assert!(!stop("Wilderness of Shur").drawn);
+        assert!(stop("Marah").drawn && stop("Marah").location.estimated);
+        assert!(!stop("Rephidim").location.estimated);
         let third = journeys
             .iter()
             .find(|j| j.name == "Paul's third journey")

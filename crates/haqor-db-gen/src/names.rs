@@ -86,7 +86,9 @@ CREATE TABLE name_link(
 -- TIPNR's own position, used where OpenBible has none. `kind` is the kind of
 -- place (settlement, river, region, …), `label` the modern location it is
 -- identified with and `shape` the ground it covers or the course it runs
--- (haqor_core::names::PlaceShape::encode), empty for a point.
+-- (haqor_core::names::PlaceShape::encode), empty for a point. `estimated` is 1
+-- for Haqor's own estimate of a site no one has found, placed between the
+-- places either side of it on its journey.
 CREATE TABLE name_location(
     entity_id  INTEGER NOT NULL,
     ord        INTEGER NOT NULL,
@@ -96,6 +98,7 @@ CREATE TABLE name_location(
     kind       TEXT    NOT NULL,
     label      TEXT    NOT NULL,
     shape      TEXT    NOT NULL DEFAULT '',
+    estimated  INTEGER NOT NULL DEFAULT 0,
     PRIMARY KEY(entity_id, ord)
 ) WITHOUT ROWID;
 
@@ -171,8 +174,9 @@ fn text(value: &Value, key: &str) -> String {
 /// (see `data/PLACE_OVERRIDES.md`).
 pub const PLACE_OVERRIDES: &str = "place_overrides.json";
 
-/// A position Haqor gives a place: latitude, longitude, kind and label.
-type OverrideLocation = (f64, f64, String, String);
+/// A position Haqor gives a place: latitude, longitude, kind, label, and
+/// whether it is only an estimate.
+type OverrideLocation = (f64, f64, String, String, bool);
 
 /// Haqor's own identifications of places, which replace OpenBible.info's:
 /// each TIPNR key's locations, likeliest first, with the record name the
@@ -199,7 +203,13 @@ impl PlaceOverrides {
                         path.display()
                     );
                 };
-                locations.push((latitude, longitude, text(l, "kind"), text(l, "label")));
+                locations.push((
+                    latitude,
+                    longitude,
+                    text(l, "kind"),
+                    text(l, "label"),
+                    l["estimated"].as_bool().unwrap_or_default(),
+                ));
             }
             if key.is_empty() || locations.is_empty() {
                 bail!(
@@ -349,7 +359,7 @@ pub fn build_names(
         )?;
         let mut location = tx.prepare(
             "INSERT INTO name_location(entity_id, ord, latitude, longitude, confidence, kind, \
-             label, shape) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
+             label, shape, estimated) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
         )?;
         for record in &records {
             let id = record["id"]
@@ -400,7 +410,9 @@ pub fn build_names(
                         text(record, "name")
                     );
                 }
-                for (ord, (latitude, longitude, kind, label)) in locations.iter().enumerate() {
+                for (ord, (latitude, longitude, kind, label, estimated)) in
+                    locations.iter().enumerate()
+                {
                     location.execute(params![
                         id,
                         ord as i64,
@@ -409,7 +421,8 @@ pub fn build_names(
                         None::<i64>,
                         kind,
                         label,
-                        ""
+                        "",
+                        estimated
                     ])?;
                 }
                 summary.located += 1;
@@ -427,7 +440,8 @@ pub fn build_names(
                             l.confidence,
                             l.kind,
                             l.label,
-                            l.shape.as_ref().map(PlaceShape::encode).unwrap_or_default()
+                            l.shape.as_ref().map(PlaceShape::encode).unwrap_or_default(),
+                            false
                         ])?;
                     }
                     summary.located += 1;
@@ -438,7 +452,17 @@ pub fn build_names(
                         .as_array()
                         .and_then(|c| Some([c.first()?.as_f64()?, c.get(1)?.as_f64()?]))
                     {
-                        location.execute(params![id, 0, lat, lon, None::<i64>, "", "", ""])?;
+                        location.execute(params![
+                            id,
+                            0,
+                            lat,
+                            lon,
+                            None::<i64>,
+                            "",
+                            "",
+                            "",
+                            false
+                        ])?;
                         summary.located += 1;
                     }
                 }
@@ -704,6 +728,25 @@ mod tests {
         let (latitude, longitude, label) = &sinai[0];
         assert!((latitude - 28.654).abs() < 0.01 && (longitude - 35.306).abs() < 0.01);
         assert!(label.contains("Jabal al-Lawz"), "{label}");
+
+        // Its stations with no known site are estimated, and only they: none
+        // is left on the traditional route west of the gulf.
+        let estimated: Vec<(String, f64, bool)> = db
+            .prepare(
+                "SELECT e.name, l.longitude, l.estimated FROM name_location l \
+                 JOIN name_entity e USING(entity_id) \
+                 WHERE e.name IN ('Marah', 'Alush', 'Hazeroth', 'Rephidim')",
+            )
+            .unwrap()
+            .query_map([], |row| Ok((row.get(0)?, row.get(1)?, row.get(2)?)))
+            .unwrap()
+            .collect::<rusqlite::Result<_>>()
+            .unwrap();
+        assert_eq!(estimated.len(), 4, "{estimated:?}");
+        for (name, longitude, estimated) in &estimated {
+            assert_eq!(*estimated, name != "Rephidim", "{name}");
+            assert!(*longitude > 34.7, "{name} at {longitude}");
+        }
 
         // Regions are drawn as their ground and rivers as their course;
         // settlements stay points.

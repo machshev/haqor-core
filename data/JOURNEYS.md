@@ -37,11 +37,11 @@ not tagged, so those stops are checked by hand.
 The exodus and the wilderness journeys follow Haqor's own reading of the
 crossing (see `PLACE_OVERRIDES.md`): through the Gulf of Aqaba from Nuweiba,
 to Mount Sinai at Jabal al-Lawz in Midian. The stations that reading gives no
-site for keep OpenBible.info's, which lie on the traditional route through the
-Sinai peninsula, across the gulf; drawn, they would send the line back and forth
-across it. They are listed but not drawn: Shur, Marah, the wilderness of Sin,
-Dophkah and Alush on the way to Sinai, and Kibroth-hattaavah and Hazeroth
-after it.
+site for (Marah, the wilderness of Sin, Dophkah and Alush on the way to Sinai,
+and Taberah, Kibroth-hattaavah and Hazeroth after it) are drawn where Haqor
+estimates them, between the places either side, and the app marks them as of
+low certainty. Shur alone is listed but not drawn: its record is also the
+region east of Egypt of Genesis and 1 Samuel.
 
 ## Left out
 

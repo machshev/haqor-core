@@ -97,6 +97,9 @@ pub struct PlaceLocation {
     /// The ground it covers or the course it runs, where OpenBible.info
     /// draws more than a point; `None` for a point.
     pub shape: Option<PlaceShape>,
+    /// Haqor's own estimate of a site no one has found, placed between the
+    /// places either side of it on its journey: low certainty.
+    pub estimated: bool,
 }
 
 /// A place drawn as more than a point: each part a list of longitude,

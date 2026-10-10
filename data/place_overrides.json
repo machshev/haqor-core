@@ -53,6 +53,20 @@
       ]
     },
     {
+      "key": "Marah@Exo.15.23",
+      "name": "Marah",
+      "note": "Three days into the wilderness from the crossing (Exodus 15:22-23). The reading gives no site; estimated halfway between Baal-zephon, where the crossing came ashore, and Elim.",
+      "locations": [
+        {
+          "latitude": 28.72375,
+          "longitude": 34.945695,
+          "kind": "spring",
+          "label": "between the crossing and Elim (estimated)",
+          "estimated": true
+        }
+      ]
+    },
+    {
       "key": "Elim@Exo.15.27",
       "name": "Elim",
       "note": "The twelve springs of al-Bad', after Möller. OpenStreetMap's Maghair Shuaib.",
@@ -66,6 +80,48 @@
       ]
     },
     {
+      "key": "Sin@Exo.16.1",
+      "name": "Sin",
+      "note": "The wilderness of Sin, between Elim and Sinai (Exodus 16:1). The reading gives no site; estimated a quarter of the way from Elim to Rephidim.",
+      "locations": [
+        {
+          "latitude": 28.541344,
+          "longitude": 35.067942,
+          "kind": "region",
+          "label": "between Elim and Rephidim (estimated)",
+          "estimated": true
+        }
+      ]
+    },
+    {
+      "key": "Dophkah@Num.33.12",
+      "name": "Dophkah",
+      "note": "After the wilderness of Sin (Numbers 33:12). The reading gives no site; estimated halfway from Elim to Rephidim.",
+      "locations": [
+        {
+          "latitude": 28.602688,
+          "longitude": 35.124495,
+          "kind": "campsite",
+          "label": "between the wilderness of Sin and Alush (estimated)",
+          "estimated": true
+        }
+      ]
+    },
+    {
+      "key": "Alush@Num.33.13",
+      "name": "Alush",
+      "note": "The last camp before Rephidim (Numbers 33:13-14). The reading gives no site; estimated three quarters of the way from Elim to Rephidim.",
+      "locations": [
+        {
+          "latitude": 28.664031,
+          "longitude": 35.181047,
+          "kind": "campsite",
+          "label": "between Dophkah and Rephidim (estimated)",
+          "estimated": true
+        }
+      ]
+    },
+    {
       "key": "Rephidim@Exo.17.1",
       "name": "Rephidim",
       "note": "By the split rock west of Jabal al-Lawz, the position its proponents give (28°43'31.35\"N 35°14'15.36\"E, as cited by bible.ca).",
@@ -75,6 +131,32 @@
           "longitude": 35.2376,
           "kind": "campsite",
           "label": "the split rock, west of Jabal al-Lawz"
+        }
+      ]
+    },
+    {
+      "key": "Massah@Exo.17.7",
+      "name": "Massah",
+      "note": "Where the people tested Yahweh at Rephidim (Exodus 17:7), so by the split rock with it. OpenBible.info's follows the traditional Rephidim in the Sinai peninsula.",
+      "locations": [
+        {
+          "latitude": 28.725375,
+          "longitude": 35.2376,
+          "kind": "campsite",
+          "label": "another name for Rephidim: the split rock, west of Jabal al-Lawz"
+        }
+      ]
+    },
+    {
+      "key": "Meribah@Exo.17.7",
+      "name": "Meribah",
+      "note": "The Meribah of Rephidim (Exodus 17:7), not that of Kadesh (Numbers 20:13), which TIPNR keeps apart. By the split rock with Rephidim.",
+      "locations": [
+        {
+          "latitude": 28.725375,
+          "longitude": 35.2376,
+          "kind": "campsite",
+          "label": "another name for Rephidim: the split rock, west of Jabal al-Lawz"
         }
       ]
     },
@@ -101,6 +183,61 @@
           "longitude": 35.305833,
           "kind": "region",
           "label": "around Jabal al-Lawz"
+        }
+      ]
+    },
+    {
+      "key": "Paran_Mount@Deu.33.2",
+      "name": "Paran Mount",
+      "note": "Mount Paran, from which Yahweh shone forth with Sinai and Seir (Deuteronomy 33:2; Habakkuk 3:3), taken as another name for Mount Sinai, as OpenBible.info's likeliest identification also takes it: so Jabal al-Lawz.",
+      "locations": [
+        {
+          "latitude": 28.654167,
+          "longitude": 35.305833,
+          "kind": "mountain",
+          "label": "another name for Mount Sinai: Jabal al-Lawz, in Midian"
+        }
+      ]
+    },
+    {
+      "key": "Taberah@Num.11.3",
+      "name": "Taberah",
+      "note": "Where the fire burned on the way from Sinai, by Kibroth-hattaavah (Numbers 11:1-3, 34). The reading gives no site; estimated with Kibroth-hattaavah.",
+      "locations": [
+        {
+          "latitude": 29.318778,
+          "longitude": 35.011222,
+          "kind": "campsite",
+          "label": "between Mount Sinai and Kadesh (estimated)",
+          "estimated": true
+        }
+      ]
+    },
+    {
+      "key": "Kibroth-hattaavah@Num.11.34",
+      "name": "Kibroth-hattaavah",
+      "note": "The first camp after Sinai (Numbers 33:16). The reading gives no site; estimated a third of the way from Jabal al-Lawz to Kadesh. OpenBible.info's is on the traditional route through the Sinai peninsula.",
+      "locations": [
+        {
+          "latitude": 29.318778,
+          "longitude": 35.011222,
+          "kind": "campsite",
+          "label": "between Mount Sinai and Kadesh (estimated)",
+          "estimated": true
+        }
+      ]
+    },
+    {
+      "key": "Hazeroth@Num.11.35",
+      "name": "Hazeroth",
+      "note": "After Kibroth-hattaavah (Numbers 11:35; 33:17). The reading gives no site; estimated two thirds of the way from Jabal al-Lawz to Kadesh. OpenBible.info's is on the traditional route through the Sinai peninsula.",
+      "locations": [
+        {
+          "latitude": 29.983389,
+          "longitude": 34.716611,
+          "kind": "campsite",
+          "label": "between Kibroth-hattaavah and Kadesh (estimated)",
+          "estimated": true
         }
       ]
     },
