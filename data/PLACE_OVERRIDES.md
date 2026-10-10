@@ -16,8 +16,28 @@ in place of OpenBible.info's identifications, then run `db gen-names` (or
   has found, placed between the places either side of it on its journey. The
   app draws it faintly and marks it as of low certainty. Say in `note` how
   it was placed.
+- `summary`, if given, replaces TIPNR's summary of the record, where it
+  is wrong for the place as Haqor places it.
 
 A build fails if an entry's key matches no place record, or its name differs.
+
+## Splits
+
+TIPNR sometimes gives two places one record. `splits` gives a new record for
+one of them, taking from the record it splits:
+
+- `from` and `from_name`, the record split, checked as an entry's `key` and
+  `name` are;
+- `id`, `key` and `name`, the new record's, which no TIPNR record may have:
+  ids from 10001 up, keys in TIPNR's form;
+- `forms`, the English names (each form's first) of the forms it takes;
+- `refs`, the verses whose words of the old record name the new one instead,
+  in STEP Bible's references and Haqor's numbering (as `journeys.json`);
+- `summary` and `from_summary`, the two records' summaries, in TIPNR's words;
+- `openbible`, the OpenBible.info place it is located by, unless an entry in
+  `places` places it.
+
+A build fails if a verse of `refs` has no word of the old record.
 
 ## The exodus
 
@@ -35,12 +55,21 @@ sites for them are on the traditional route through the Sinai peninsula, so
 Haqor places them as estimates between the places either side: Marah between
 the shore at Baal-zephon and Elim; Sin, Dophkah and Alush evenly from Elim to
 Rephidim; Taberah and Kibroth-hattaavah a third, and Hazeroth two thirds, of
-the way from Jabal al-Lawz to Kadesh.
+the way from Jabal al-Lawz to Kadesh at Petra.
 
 Succoth and Etham keep OpenBible.info's, by the delta, on the way into the
 Sinai peninsula. So do Migdol, whose record is also Jeremiah's and Ezekiel's
-Egyptian city; Shur, also the region east of Egypt of Genesis and 1 Samuel;
-and Kadesh, whose record carries the southern border of the land as well.
+Egyptian city; and Shur, also the region east of Egypt of Genesis and
+1 Samuel.
+
+Kadesh, where Israel came to the border of Edom (Numbers 20:16), is Petra:
+the Targums call Kadesh Reqem, which Josephus gives as Petra's old name, and
+Eusebius places it by Petra; Wadi Musa's spring is held to be where Moses
+struck the rock. Mount Hor, where Aaron died, is Jebel Harun above it, where
+his tomb is shown. TIPNR makes Kadesh-barnea the same record, but it stands on
+the southern border of the land (Numbers 34:4; Joshua 15:3), so it is split
+from Kadesh and keeps OpenBible.info's Ain el-Qudeirat: the verses naming
+Kadesh-barnea are its, the others Kadesh's.
 
 ## The cities of the plain
 

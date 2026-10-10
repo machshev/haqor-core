@@ -228,6 +228,116 @@ impl PlaceOverrides {
     }
 }
 
+/// A place Haqor splits off a TIPNR record: the words of the record `from` in
+/// the verses `refs` (packed) name the new record `to` instead.
+struct Split {
+    from: u32,
+    to: u32,
+    key: String,
+    refs: HashSet<i64>,
+}
+
+/// Amend TIPNR's records as `place_overrides.json` says: a place entry's
+/// `summary` replaces its record's, and each of `splits` adds a new record to
+/// `records`, taking the forms it names from the record it is split from, both
+/// with the summaries the entry gives.
+fn amend_records(path: &Path, records: &mut Vec<Value>) -> Result<Vec<Split>> {
+    let json: Value = serde_json::from_str(
+        &std::fs::read_to_string(path).with_context(|| format!("reading {}", path.display()))?,
+    )
+    .with_context(|| format!("parsing {}", path.display()))?;
+    for entry in json["places"].as_array().into_iter().flatten() {
+        if let Some(summary) = entry["summary"].as_str() {
+            // The entry's key and name are checked when it is placed.
+            if let Some(record) = records.iter_mut().find(|r| r["key"] == entry["key"]) {
+                record["summary"] = summary.into();
+            }
+        }
+    }
+    let mut splits = Vec::new();
+    for entry in json["splits"].as_array().into_iter().flatten() {
+        let (from, key, name) = (text(entry, "from"), text(entry, "key"), text(entry, "name"));
+        let id = entry["id"]
+            .as_u64()
+            .with_context(|| format!("the split {key} in {} without an id", path.display()))?
+            as u32;
+        if records
+            .iter()
+            .any(|r| r["id"].as_u64() == Some(id.into()) || text(r, "key") == key)
+        {
+            bail!(
+                "the split {key} in {} takes an id or key in use",
+                path.display()
+            );
+        }
+        let Some(source) = records.iter_mut().find(|r| text(r, "key") == from) else {
+            bail!(
+                "{} splits {from}, which no TIPNR record has",
+                path.display()
+            );
+        };
+        if text(source, "name") != text(entry, "from_name") || text(source, "kind") != "place" {
+            bail!(
+                "{} splits {from} as the place {}, but TIPNR's record is {}",
+                path.display(),
+                text(entry, "from_name"),
+                text(source, "name")
+            );
+        }
+        let mut moved = Vec::new();
+        for form in entry["forms"].as_array().into_iter().flatten() {
+            let form = form.as_str().unwrap_or_default();
+            let forms = source["forms"]
+                .as_array_mut()
+                .context("a record without forms")?;
+            let Some(at) = forms.iter().position(|f| f["english"][0] == form) else {
+                bail!(
+                    "{} moves the form {form} of {from}, which it lacks",
+                    path.display()
+                );
+            };
+            moved.push(forms.remove(at));
+        }
+        source["summary"] = entry["from_summary"].clone();
+        let mut refs = HashSet::new();
+        for reference in entry["refs"].as_array().into_iter().flatten() {
+            let reference = reference.as_str().unwrap_or_default();
+            let Some((book, chapter, verse)) = crate::journeys::parse_ref(reference) else {
+                bail!(
+                    "{key} in {} has an unreadable verse {reference:?}",
+                    path.display()
+                );
+            };
+            refs.insert(crate::runtime_db::pack_ref(
+                book.into(),
+                chapter.into(),
+                verse.into(),
+            ));
+        }
+        splits.push(Split {
+            from: source["id"].as_u64().context("a record without an id")? as u32,
+            to: id,
+            key: key.clone(),
+            refs,
+        });
+        records.push(serde_json::json!({
+            "category": "Place",
+            "coordinates": null,
+            "description": "",
+            "forms": moved,
+            "id": id,
+            "key": key,
+            "kind": "place",
+            "links": [],
+            "name": name,
+            "openbible": text(entry, "openbible"),
+            "origin": "",
+            "summary": text(entry, "summary"),
+        }));
+    }
+    Ok(splits)
+}
+
 /// The OpenBible place a TIPNR place record is: the one of the OpenBible name
 /// the record gives, or else of those OpenBible links to the record, the one
 /// of the record's own name, or the one identified most confidently. Several
@@ -316,11 +426,12 @@ pub fn build_names(
             )
         })
     };
-    let records: Vec<Value> = read(PREPARED_NAMES)?
+    let mut records: Vec<Value> = read(PREPARED_NAMES)?
         .lines()
         .map(serde_json::from_str)
         .collect::<serde_json::Result<_>>()
         .context("reading the prepared TIPNR records")?;
+    let splits = amend_records(place_overrides, &mut records)?;
     let places = crate::geocoding::read_prepared(src_texts)?;
     let keys: HashSet<String> = records.iter().map(|r| text(r, "key")).collect();
     let mut overrides = PlaceOverrides::read(place_overrides)?.0;
@@ -335,11 +446,32 @@ pub fn build_names(
     {
         let mut insert =
             tx.prepare("INSERT INTO word_name(ref, position, entity_id) VALUES (?1, ?2, ?3)")?;
+        let mut split_verses: HashMap<u32, HashSet<i64>> = HashMap::new();
         for (reference, position, tag) in &tags {
-            if let Some(entity) = tag.name {
+            if let Some(mut entity) = tag.name {
+                if let Some(split) = splits
+                    .iter()
+                    .find(|s| s.from == entity && s.refs.contains(reference))
+                {
+                    entity = split.to;
+                    split_verses.entry(entity).or_default().insert(*reference);
+                }
                 insert.execute(params![reference, position, entity])?;
                 *occurrences.entry(entity).or_default() += 1;
                 summary.name_words += 1;
+            }
+        }
+        // Each verse a split names must have a word it takes: a misnumbered
+        // verse would otherwise split nothing, silently.
+        for split in &splits {
+            let verses = split_verses.get(&split.to).map_or(0, HashSet::len);
+            if verses < split.refs.len() {
+                bail!(
+                    "{} takes words in {verses} of its {} verses: the others name no word \
+                     of the record it splits",
+                    split.key,
+                    split.refs.len()
+                );
             }
         }
     }
@@ -756,6 +888,33 @@ mod tests {
             assert_eq!(*estimated, name != "Rephidim", "{name}");
             assert!(*longitude > 34.7, "{name} at {longitude}");
         }
+
+        // Kadesh is Petra, and Kadesh-barnea is split from it, with its own
+        // form, its own words and OpenBible.info's Ain el-Qudeirat.
+        let kadesh: Vec<(String, f64, i64, String)> = db
+            .prepare(
+                "SELECT e.name, l.longitude, e.occurrences, \
+                   (SELECT group_concat(english) FROM name_form f \
+                    WHERE f.entity_id = e.entity_id) \
+                 FROM name_entity e JOIN name_location l \
+                   ON l.entity_id = e.entity_id AND l.ord = 0 \
+                 WHERE e.name IN ('Kadesh', 'Kadesh-barnea') ORDER BY e.name",
+            )
+            .unwrap()
+            .query_map([], |row| {
+                Ok((row.get(0)?, row.get(1)?, row.get(2)?, row.get(3)?))
+            })
+            .unwrap()
+            .collect::<rusqlite::Result<_>>()
+            .unwrap();
+        let [(_, petra, _, forms), (_, qudeirat, barnea, barnea_forms)] = &kadesh[..] else {
+            panic!("{kadesh:?}");
+        };
+        assert!((petra - 35.44).abs() < 0.01, "{kadesh:?}");
+        assert!((qudeirat - 34.42).abs() < 0.01, "{kadesh:?}");
+        assert!(!forms.contains("barnea") && barnea_forms.starts_with("Kadesh-barnea"));
+        // Ten verses, each with Kadesh and Barnea.
+        assert_eq!(*barnea, 20);
 
         // Regions are drawn as their ground and rivers as their course;
         // settlements stay points.

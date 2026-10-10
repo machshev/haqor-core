@@ -205,8 +205,8 @@
       "note": "Where the fire burned on the way from Sinai, by Kibroth-hattaavah (Numbers 11:1-3, 34). The reading gives no site; estimated with Kibroth-hattaavah.",
       "locations": [
         {
-          "latitude": 29.318778,
-          "longitude": 35.011222,
+          "latitude": 29.212311,
+          "longitude": 35.351189,
           "kind": "campsite",
           "label": "between Mount Sinai and Kadesh (estimated)",
           "estimated": true
@@ -216,11 +216,11 @@
     {
       "key": "Kibroth-hattaavah@Num.11.34",
       "name": "Kibroth-hattaavah",
-      "note": "The first camp after Sinai (Numbers 33:16). The reading gives no site; estimated a third of the way from Jabal al-Lawz to Kadesh. OpenBible.info's is on the traditional route through the Sinai peninsula.",
+      "note": "The first camp after Sinai (Numbers 33:16). The reading gives no site; estimated a third of the way from Jabal al-Lawz to Kadesh at Petra. OpenBible.info's is on the traditional route through the Sinai peninsula.",
       "locations": [
         {
-          "latitude": 29.318778,
-          "longitude": 35.011222,
+          "latitude": 29.212311,
+          "longitude": 35.351189,
           "kind": "campsite",
           "label": "between Mount Sinai and Kadesh (estimated)",
           "estimated": true
@@ -230,14 +230,41 @@
     {
       "key": "Hazeroth@Num.11.35",
       "name": "Hazeroth",
-      "note": "After Kibroth-hattaavah (Numbers 11:35; 33:17). The reading gives no site; estimated two thirds of the way from Jabal al-Lawz to Kadesh. OpenBible.info's is on the traditional route through the Sinai peninsula.",
+      "note": "After Kibroth-hattaavah (Numbers 11:35; 33:17). The reading gives no site; estimated two thirds of the way from Jabal al-Lawz to Kadesh at Petra. OpenBible.info's is on the traditional route through the Sinai peninsula.",
       "locations": [
         {
-          "latitude": 29.983389,
-          "longitude": 34.716611,
+          "latitude": 29.770456,
+          "longitude": 35.396544,
           "kind": "campsite",
           "label": "between Kibroth-hattaavah and Kadesh (estimated)",
           "estimated": true
+        }
+      ]
+    },
+    {
+      "key": "Kadesh@Gen.14.7",
+      "name": "Kadesh",
+      "note": "Kadesh, where Israel came to the border of Edom (Numbers 20:16) and Miriam died, as Petra: the Targums call Kadesh Reqem, Josephus Petra's old name, and Eusebius places Kadesh by Petra; Wadi Musa's spring is held to be where Moses struck the rock, and Aaron's tomb on Jebel Harun overlooks it. Kadesh-barnea, which TIPNR gives the same record, is split from it (see splits).",
+      "locations": [
+        {
+          "latitude": 30.3286,
+          "longitude": 35.4419,
+          "kind": "settlement",
+          "label": "Petra (Reqem), in Edom"
+        }
+      ]
+    },
+    {
+      "key": "Hor_Mount@Num.20.22",
+      "name": "Hor Mount",
+      "note": "Mount Hor, where Aaron died on the border of Edom (Numbers 20:22-28), as Jebel Harun above Petra, where his tomb is shown, after Josephus. TIPNR's own position; OpenBible.info puts Har Zin first.",
+      "summary": "A location first mentioned at Num.20.22\nonly referred to as Hor Mount (הֹר).",
+      "locations": [
+        {
+          "latitude": 30.317396,
+          "longitude": 35.407152,
+          "kind": "mountain",
+          "label": "Jebel Harun (Jebel Nebi Harun), above Petra"
         }
       ]
     },
@@ -310,6 +337,34 @@
           "kind": "cave",
           "label": "Lot's cave (Deir 'Ain 'Abata), where Lot fled from Zoar"
         }
+      ]
+    }
+  ],
+  "splits": [
+    {
+      "from": "Kadesh@Gen.14.7",
+      "from_name": "Kadesh",
+      "from_summary": "A location first mentioned at Gen.14.7\nreferred to as Kadesh (קָדֵשׁ), or Kedesh (קֶ֫דֶשׁ), or En-mishpat (עֵין מִשְׁפָּט).",
+      "id": 10001,
+      "key": "Kadesh-barnea@Num.32.8",
+      "name": "Kadesh-barnea",
+      "openbible": "Kadesh-barnea",
+      "forms": [
+        "Kadesh-barnea"
+      ],
+      "summary": "A location first mentioned at Num.32.8\nonly referred to as Kadesh-barnea (קָדֵשׁ בַּרְנֵעַ).",
+      "note": "Kadesh-barnea, on the southern border of the land (Numbers 34:4; Joshua 15:3), kept apart from the Kadesh of Edom's border, which Haqor places at Petra. The verses that call it Kadesh-barnea; OpenBible.info places it, at Ain el-Qudeirat.",
+      "refs": [
+        "Num.32.8",
+        "Num.34.4",
+        "Deu.1.2",
+        "Deu.1.19",
+        "Deu.2.14",
+        "Deu.9.23",
+        "Jos.10.41",
+        "Jos.14.6",
+        "Jos.14.7",
+        "Jos.15.3"
       ]
     }
   ]

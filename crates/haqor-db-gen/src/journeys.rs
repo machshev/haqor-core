@@ -59,7 +59,7 @@ const BOOKS: [&str; 66] = [
 
 /// A reference as the file writes it (`1Sa.24.1`): Haqor's book, chapter and
 /// verse.
-fn parse_ref(reference: &str) -> Option<(u8, u8, u8)> {
+pub(crate) fn parse_ref(reference: &str) -> Option<(u8, u8, u8)> {
     let mut parts = reference.split('.');
     let abbreviation = parts.next()?;
     let book = BOOKS.iter().position(|b| *b == abbreviation)?;
