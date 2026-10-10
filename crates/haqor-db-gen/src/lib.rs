@@ -22,6 +22,7 @@ mod sedra_db;
 mod sefaria;
 mod stepbible;
 mod syntax;
+mod tagnt;
 mod tipnr;
 mod translation;
 mod tsk;
@@ -49,6 +50,7 @@ pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, open_generatio
 pub use sefaria::{ImportSummary, import_sefaria};
 pub use stepbible::source_dir as stepbible_source_dir;
 pub use syntax::{SyntaxSummary, build_syntax_trees, gen_syntax};
+pub use tagnt::{GreekSummary, build_greek, gen_greek};
 pub use translation::{TranslationSummary, build_translation, gen_translation};
 pub use tsk::{TskSummary, build_thematic_references, gen_tsk};
 
@@ -178,8 +180,21 @@ pub fn prepare(source: PreparedSource, from: &Path, to: &Path) -> Result<String>
             let s = stepbible::prepare(from, to)?;
             Ok(format!(
                 "{} TAHOT words ({} with a sense, {} naming a person or place; {} naming one \
-                 TIPNR lacks), {} senses and {} TIPNR records",
-                s.words, s.sense_words, s.name_words, s.unknown_names, s.senses, s.names
+                 TIPNR lacks), {} senses and {} TIPNR records; {} TR words as Scrivener has \
+                 them ({} tagged as TAGNT has them, {} spelled alike, {} by their spelling \
+                 elsewhere, {} untagged; {} of TAGNT's left out)",
+                s.words,
+                s.sense_words,
+                s.name_words,
+                s.unknown_names,
+                s.senses,
+                s.names,
+                s.tr.words,
+                s.tr.same,
+                s.tr.alike,
+                s.tr.elsewhere,
+                s.tr.untagged,
+                s.tr.dropped
             ))
         }
         PreparedSource::OpenbibleGeocoding => {

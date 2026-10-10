@@ -367,6 +367,17 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// Rebuild the Greek New Testament (the Textus Receptus) of a runtime
+    /// haqor.db in place from the prepared TAGNT words (gen-runtime also builds
+    /// it).
+    GenGreek {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Source texts directory holding STEPBible-Data.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     /// Find NT (Peshitta) quotations of the Hebrew OT, and parallels within
     /// each testament, by root alignment and rebuild the `quotation` table of a
     /// runtime haqor.db in place (gen-runtime also builds it). Prints the
@@ -694,6 +705,19 @@ fn main() -> Result<()> {
                     db.display(),
                     summary.linked,
                     summary.words
+                );
+            }
+            DbCommands::GenGreek { db, src_texts } => {
+                let s = haqor_db_gen::gen_greek(&db, &src_texts)?;
+                println!(
+                    "Wrote {} TR words in {} verses ({} untagged, {} naming a person or place) \
+                     and {} dictionary forms to {}",
+                    s.words,
+                    s.verses,
+                    s.untagged,
+                    s.names,
+                    s.lemmas,
+                    db.display()
                 );
             }
             DbCommands::GenQuotes {

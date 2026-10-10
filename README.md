@@ -236,6 +236,39 @@ and places are found among TIPNR's records by name and the verses naming them,
 and its verses re-numbered onto the Hebrew text. `data/event_overrides.json`
 corrects it (see `data/EVENTS.md`). `Bible::bible_events` reads them.
 
+### Greek New Testament
+
+`gen-runtime` also builds the Textus Receptus — Scrivener's 1894 edition,
+the Greek behind the KJV — beside the Peshitta, a word a row in
+`greek_word`, each tagged with its dictionary form and gloss, its grammar
+(Robinson's codes as STEP Bible extends them), its English in context and
+the person or place it names. Its verses are numbered as the KJV numbers
+them.
+
+The words and tags come from STEP Bible's TAGNT, which amalgamates the
+major editions word by word: the TR is the words it gives the TR, spelled
+as the TR spells them, with the readings TAGNT gives only as variants of
+another edition's word looked up in TBESG. TAGNT's word order follows
+Nestle-Aland, its displacements for the TR are not always dependable, and
+it now and then leaves out a TR word, so each chapter is lined up against
+Dr Maurice Robinson's public-domain transcription of Scrivener, which is
+untagged and unaccented but in the edition's own words, order and verses.
+Of Scrivener's 140,655 words, 140,151 take a TAGNT word spelled the same,
+269 one spelled a little otherwise (respelled as Scrivener has it where
+the TR spells it so elsewhere or the two differ only in their endings),
+168 the tags of the same spelling elsewhere, and 12 stay unaccented and
+untagged; 296 words TAGNT gives the TR that Scrivener lacks are left out.
+TAGNT's punctuation, which follows Nestle-Aland, stays only where the TR
+has the same words either side of it. The sources are prepared with
+STEP Bible's, into `src_texts/STEPBible-Data/` (`tr.tsv`,
+`greek_lemmas.tsv`):
+
+```sh
+cargo run --release -- db gen-greek   # rebuild the tables alone
+```
+
+`Bible::greek_chapter` reads a chapter.
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:
@@ -389,6 +422,21 @@ Haqor reads the ASCII SEDRA III files and renders them in Unicode, in Syriac
 script and transliterated into Hebrew letters for the reader. That script
 conversion is the only change: the entries, morphology and text content are
 unmodified.
+
+**Greek New Testament** — the Textus Receptus (Scrivener 1894) from STEP
+Bible's [TAGNT](https://github.com/STEPBible/STEPBible-Data) (Translators
+Amalgamated Greek NT), data created by www.STEPBible.org based on work at
+Tyndale House Cambridge, licensed CC BY 4.0, its English renderings based on
+the Berean Study Bible; with dictionary forms and glosses for readings TAGNT
+gives as variants from STEP Bible's TBESG (Translators Brief lexicon of
+Extended Strongs for Greek), also CC BY 4.0. The TR's words are ordered and
+divided into verses as in Dr Maurice A. Robinson's transcription of
+Scrivener's 1894 edition
+([greektext-scrivener](https://github.com/byztxt/greektext-scrivener)), in
+the public domain. Haqor's changes: the TR's words chosen from TAGNT's
+editions and put in that order, its punctuation kept only where the TR
+shares it, accents written in their canonical Unicode form, and the
+Strong's numbers replaced by ids of Haqor's own.
 
 ## Licence
 

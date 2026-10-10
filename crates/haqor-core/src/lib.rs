@@ -11,6 +11,10 @@ pub use haqor_morphology as morphology;
 /// Utilities for interacting with Bible resources.
 pub mod bible;
 
+/// The Greek New Testament (the Textus Receptus, from STEP Bible's TAGNT),
+/// as `haqor.db` stores it.
+pub mod greek;
+
 /// Grammar concepts and learner-facing teaching content.
 pub mod grammar;
 

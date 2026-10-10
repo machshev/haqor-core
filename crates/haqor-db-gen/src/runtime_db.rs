@@ -400,6 +400,7 @@ pub fn generate_runtime(
         &data_dir.join(crate::journeys::JOURNEYS),
         &data_dir.join(crate::events::EVENT_OVERRIDES),
     )?;
+    crate::tagnt::build_greek(&Connection::open(output)?, src_texts)?;
 
     // VACUUM cannot run on an attached database, so the reclaim happens on the
     // finished file. It matters: the bulk load leaves the free pages that make

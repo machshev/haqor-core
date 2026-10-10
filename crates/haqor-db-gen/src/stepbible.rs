@@ -7,8 +7,8 @@
 //! still differs slightly from Haqor's UXLC stream, so the same weighted verse
 //! alignment used for OSHB morphology is applied here too.
 //!
-//! TAHOT, TIPNR and TBESH are not read as STEP Bible publishes them:
-//! [`prepare`] joins them and writes what the build needs into
+//! TAHOT, TIPNR, TBESH, TAGNT and TBESG are not read as STEP Bible publishes
+//! them: [`prepare`] joins them and writes what the build needs into
 //! `src_texts/STEPBible-Data`, which is vendored.
 
 use std::collections::HashMap;
@@ -58,6 +58,8 @@ pub fn source_dir(src_texts: &Path) -> PathBuf {
 ///   lexeme it is a sense of, its Hebrew headword, language and gloss.
 /// - `names.jsonl`: the TIPNR records, one JSON object a line, with the New
 ///   Testament references TIPNR lists for each, a word each.
+/// - `tr.tsv` and `greek_lemmas.tsv`: the Textus Receptus, from TAGNT (see
+///   [`crate::tagnt::PREPARED_TR`]).
 const PREPARED_TAHOT: &str = "tahot.tsv";
 pub(crate) const PREPARED_SENSES: &str = "senses.tsv";
 pub(crate) const PREPARED_NAMES: &str = "names.jsonl";
@@ -311,6 +313,7 @@ pub(crate) fn name_key(unique: &str) -> String {
 const TAHOT_DIR: &str = "Translators Amalgamated OT+NT";
 const TIPNR_FILE: &str = "Proper Nouns/TIPNR - Translators Individualised Proper Names with all References - STEPBible.org CC BY.txt";
 const TBESH_FILE: &str = "Lexicons/TBESH - Translators Brief lexicon of Extended Strongs for Hebrew - STEPBible.org CC BY.txt";
+const TBESG_FILE: &str = "Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt";
 
 /// The published TAHOT files in `dir`, in name order.
 fn source_files(dir: &Path) -> Result<Vec<PathBuf>> {
@@ -385,15 +388,18 @@ pub struct PrepareSummary {
     pub name_words: usize,
     /// Words TAHOT tags as naming a person or place TIPNR has no record of.
     pub unknown_names: usize,
+    /// How the TR was put together from TAGNT and Scrivener.
+    pub tr: crate::tagnt::Assembly,
 }
 
 /// `db prepare stepbible`: read TAHOT, TIPNR and TBESH as published, laid out
 /// in `from` as in the STEPBible-Data repository, and write the prepared files
-/// into `out_dir`.
+/// into `out_dir`; and the TR from TAGNT and TBESG, with Robinson's Scrivener
+/// beside them (see [`crate::tagnt`]).
 ///
-/// The three join on Strong's numbers, so this is where those are used up:
-/// each word's number becomes the id of its sense or of the person or place
-/// it names, and none is written out.
+/// They join on Strong's numbers, so this is where those are used up: each
+/// word's number becomes the id of its sense, its dictionary form or the
+/// person or place it names, and none is written out.
 pub fn prepare(from: &Path, out_dir: &Path) -> Result<PrepareSummary> {
     let read = |path: &Path| {
         std::fs::read_to_string(path).with_context(|| format!("reading {}", path.display()))
@@ -522,11 +528,47 @@ pub fn prepare(from: &Path, out_dir: &Path) -> Result<PrepareSummary> {
     }
     summary.names = records.len();
 
+    // The TR, from TAGNT, its readings given as variants looked up in TBESG,
+    // and ordered as Robinson's Scrivener.
+    let lexicon = crate::tagnt::read_tbesg(&read(&from.join(TBESG_FILE))?);
+    let mut tagnt = Vec::new();
+    for file in crate::tagnt::TAGNT_FILES {
+        tagnt.extend(crate::tagnt::parse(&read(&from.join(file))?, &lexicon)?);
+    }
+    let scrivener = crate::tagnt::read_scrivener(&from.join(crate::tagnt::SCRIVENER_DIR))?;
+    let (tr, assembly) = crate::tagnt::tr_text(tagnt, &scrivener);
+    // TAGNT's keys drift from TIPNR's more than TAHOT's do (`Jesus@Mat.1.1`
+    // for TIPNR's `Jesus@Isa.7.14`): failing the key, the record of the name
+    // that TIPNR lists the verse under.
+    let mut by_name: HashMap<&str, Vec<usize>> = HashMap::new();
+    for (index, record) in records.iter().enumerate() {
+        let name = record.key.split('@').next().unwrap_or_default();
+        by_name.entry(name).or_default().push(index);
+    }
+    let lists = |index: usize, verse: crate::tagnt::Verse| {
+        records[index]
+            .new_testament
+            .iter()
+            .any(|r| crate::journeys::parse_ref(r) == Some(verse))
+    };
+    let (tr_out, lemmas_out) = crate::tagnt::prepared(&tr, |key, verse| {
+        let index = by_key.get(key).copied().or_else(|| {
+            let name = key.split('@').next()?;
+            let mut listing = by_name.get(name)?.iter().filter(|&&i| lists(i, verse));
+            let index = *listing.next()?;
+            listing.next().is_none().then_some(index)
+        })?;
+        Some(index as u32 + 1)
+    });
+    summary.tr = assembly;
+
     std::fs::create_dir_all(out_dir)?;
     for (name, text) in [
         (PREPARED_TAHOT, &tahot_out),
         (PREPARED_SENSES, &senses_out),
         (PREPARED_NAMES, &names_out),
+        (crate::tagnt::PREPARED_TR, &tr_out),
+        (crate::tagnt::PREPARED_LEMMAS, &lemmas_out),
     ] {
         if let Some(line) = text.lines().find(|line| has_strong(line)) {
             bail!("a Strong's number would be written to {name}: {line}");

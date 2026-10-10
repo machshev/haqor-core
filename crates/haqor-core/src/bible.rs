@@ -5211,6 +5211,61 @@ impl Bible {
         .collect()
     }
 
+    /// Whether the database holds the Greek New Testament: one built before
+    /// it was does not.
+    pub fn has_greek(&self) -> rusqlite::Result<bool> {
+        self.has_table("greek_word")
+    }
+
+    /// A New Testament chapter in Greek, the Textus Receptus (Scrivener
+    /// 1894), verse by verse with each word's tags. Its verses are numbered
+    /// as the KJV numbers them, which the Peshitta's now and then are not.
+    /// Empty for the Old Testament, and for a database built before the
+    /// Greek was.
+    pub fn greek_chapter(
+        &self,
+        book: u8,
+        chapter: u8,
+    ) -> rusqlite::Result<Vec<crate::greek::GreekVerse>> {
+        use crate::greek::{GreekVerse, GreekWord};
+        if !self.has_greek()? {
+            return Ok(Vec::new());
+        }
+        let (first, last) = chapter_range(book, chapter);
+        let mut stmt = self.db.prepare_cached(
+            "SELECT w.ref & 255, w.position, w.word, coalesce(e.text, ''), \
+                    coalesce(l.lemma, ''), coalesce(l.gloss, ''), coalesce(g.code, ''), \
+                    w.entity_id \
+             FROM data.greek_word w \
+             LEFT JOIN data.greek_english e ON e.english_id = w.english_id \
+             LEFT JOIN data.greek_lemma l ON l.lemma_id = w.lemma_id \
+             LEFT JOIN data.greek_grammar g ON g.grammar_id = w.grammar_id \
+             WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position",
+        )?;
+        let mut verses: Vec<GreekVerse> = Vec::new();
+        let mut rows = stmt.query([first, last])?;
+        while let Some(row) = rows.next()? {
+            let verse: u8 = row.get(0)?;
+            let word = GreekWord {
+                position: row.get(1)?,
+                text: row.get(2)?,
+                english: row.get(3)?,
+                lemma: row.get(4)?,
+                gloss: row.get(5)?,
+                grammar: row.get(6)?,
+                name: row.get(7)?,
+            };
+            match verses.last_mut() {
+                Some(last) if last.verse == verse => last.words.push(word),
+                _ => verses.push(GreekVerse {
+                    verse,
+                    words: vec![word],
+                }),
+            }
+        }
+        Ok(verses)
+    }
+
     /// The person, place or other named thing the word at `position` of a
     /// verse names (STEP Bible's TIPNR, which tells apart those sharing a
     /// name), with everything known of it. `None` for a word naming none, the
@@ -6358,6 +6413,47 @@ mod tests {
                 .iter()
                 .any(|s| s.label == "Ptolemais" && s.place.name == "Acco")
         );
+    }
+
+    /// The Greek New Testament is the TR: its readings, its order and the
+    /// KJV's verses, each word tagged. Skips a database built before it was.
+    #[test]
+    fn the_greek_new_testament_is_the_textus_receptus() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        if !bible.has_greek().unwrap() {
+            eprintln!("skipping: haqor.db has no Greek New Testament");
+            return;
+        }
+        let verse = |book: u8, chapter: u8, verse: u8| {
+            bible
+                .greek_chapter(book, chapter)
+                .unwrap()
+                .into_iter()
+                .find(|v| v.verse == verse)
+        };
+        let john = verse(43, 3, 16).unwrap();
+        assert!(
+            john.text()
+                .starts_with("οὕτως γὰρ ἠγάπησεν ὁ θεὸς τὸν κόσμον,"),
+            "{}",
+            john.text()
+        );
+        let god = &john.words[4];
+        assert_eq!(
+            (god.lemma.as_str(), god.grammar.as_str()),
+            ("θεός", "N-NSM-T")
+        );
+        assert_eq!(god.english, "God");
+        // Herod comes before "the king" in the TR, and names Herod.
+        let herod = &verse(40, 2, 3).unwrap().words[2];
+        assert!(herod.text.starts_with("Ἡρ"), "{herod:?}");
+        let name = bible.name_entity(herod.name.unwrap()).unwrap().unwrap();
+        assert_eq!(name.summary.name, "Herod");
+        // Verses only the TR has, and the Old Testament has none.
+        assert!(verse(44, 8, 37).unwrap().text().contains("πιστεύω"));
+        assert!(verse(62, 5, 7).unwrap().text().contains("πατήρ"));
+        assert!(bible.greek_chapter(1, 1).unwrap().is_empty());
     }
 
     /// A word names the one person it means, with the family the text gives
