@@ -5289,6 +5289,48 @@ impl Bible {
         Ok(verses)
     }
 
+    /// The word of the Greek text at `position` of a verse, with its tags;
+    /// `None` where there is none.
+    pub fn greek_word_at(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        position: u32,
+    ) -> rusqlite::Result<Option<crate::greek::GreekWord>> {
+        Ok(self
+            .greek_chapter(book, chapter)?
+            .into_iter()
+            .find(|v| v.verse == verse)
+            .and_then(|v| v.words.into_iter().find(|w| w.position == position)))
+    }
+
+    /// Every word of the Greek text whose dictionary form is `lemma`, in
+    /// order. Empty for a database without the Greek.
+    pub fn greek_lemma_occurrences(
+        &self,
+        lemma: &str,
+    ) -> rusqlite::Result<Vec<crate::greek::GreekOccurrence>> {
+        if lemma.is_empty() || !self.has_greek()? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT w.ref, w.position FROM data.greek_word w \
+             JOIN data.greek_lemma l ON l.lemma_id = w.lemma_id \
+             WHERE l.lemma = ?1 ORDER BY w.ref, w.position",
+        )?;
+        stmt.query_map([lemma], |row| {
+            let reference: i64 = row.get(0)?;
+            Ok(crate::greek::GreekOccurrence {
+                book: (reference >> 16) as u8,
+                chapter: ((reference >> 8) & 0xff) as u8,
+                verse: (reference & 0xff) as u8,
+                position: row.get(1)?,
+            })
+        })?
+        .collect()
+    }
+
     /// The person, place or other named thing the word at `position` of a
     /// verse names (STEP Bible's TIPNR, which tells apart those sharing a
     /// name), with everything known of it. `None` for a word naming none, the
@@ -6468,6 +6510,48 @@ mod tests {
                 .iter()
                 .any(|s| s.label == "Ptolemais" && s.place.name == "Acco")
         );
+    }
+
+    /// Every grammar code the TR uses is put in words, a word is found by its
+    /// place, and its dictionary form's other words with it.
+    #[test]
+    fn greek_words_are_described_and_found() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        if !bible.has_greek().unwrap() {
+            eprintln!("skipping: haqor.db has no Greek New Testament");
+            return;
+        }
+        let codes: Vec<String> = bible
+            .db
+            .prepare("SELECT code FROM data.greek_grammar")
+            .unwrap()
+            .query_map([], |row| row.get(0))
+            .unwrap()
+            .collect::<rusqlite::Result<_>>()
+            .unwrap();
+        for code in &codes {
+            let described = crate::greek::describe_grammar(code);
+            assert!(!described.contains(code.as_str()), "{code}: {described}");
+            assert!(
+                described.chars().all(|c| !c.is_ascii_uppercase()
+                    || described.contains("Attic")
+                    || described.contains("Aramaic")
+                    || described.contains("Hebrew")),
+                "{code}: {described}"
+            );
+        }
+        let god = bible.greek_word_at(43, 3, 16, 4).unwrap().unwrap();
+        assert_eq!(god.lemma, "θεός");
+        let occurrences = bible.greek_lemma_occurrences("θεός").unwrap();
+        assert!(occurrences.len() > 1000, "{}", occurrences.len());
+        assert!(occurrences.contains(&crate::greek::GreekOccurrence {
+            book: 43,
+            chapter: 3,
+            verse: 16,
+            position: 4,
+        }));
+        assert!(bible.greek_word_at(43, 3, 16, 999).unwrap().is_none());
     }
 
     /// The Greek New Testament is the TR: its readings, its order and the
