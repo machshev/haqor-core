@@ -5624,6 +5624,17 @@ impl Bible {
     /// and the people and places taking part. Empty for a database built
     /// before events were.
     pub fn bible_events(&self) -> rusqlite::Result<Vec<crate::names::BibleEvent>> {
+        self.events_of(None)
+    }
+
+    /// The events of the Bible a person or place (by `name_entity` id) takes
+    /// part in, in time order, as [`Bible::bible_events`] gives them.
+    pub fn name_events(&self, id: u32) -> rusqlite::Result<Vec<crate::names::BibleEvent>> {
+        self.events_of(Some(id))
+    }
+
+    /// Every event, or those `entity` takes part in.
+    fn events_of(&self, entity: Option<u32>) -> rusqlite::Result<Vec<crate::names::BibleEvent>> {
         use crate::names::{BibleEvent, NameKind};
         if !self.has_table("bible_event")? {
             return Ok(Vec::new());
@@ -5632,9 +5643,11 @@ impl Bible {
             .db
             .prepare(
                 "SELECT event_id, title, year, duration, unit, note FROM data.bible_event \
+                 WHERE ?1 IS NULL OR event_id IN \
+                   (SELECT event_id FROM data.bible_event_name WHERE entity_id = ?1) \
                  ORDER BY ord",
             )?
-            .query_map([], |row| {
+            .query_map([entity], |row| {
                 Ok(BibleEvent {
                     id: row.get(0)?,
                     title: row.get(1)?,
@@ -5680,7 +5693,10 @@ impl Bible {
             .query_map([], |row| Ok((row.get::<_, u32>(0)?, row.get::<_, u32>(1)?)))?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         for (event, entity) in names {
-            let (Some(&i), Some(name)) = (index.get(&event), self.name_summary(entity)?) else {
+            let Some(&i) = index.get(&event) else {
+                continue;
+            };
+            let Some(name) = self.name_summary(entity)? else {
                 continue;
             };
             match name.kind {
@@ -6238,6 +6254,21 @@ mod tests {
             .find(|e| e.title == "Lazarus raised from the dead")
             .unwrap();
         assert!(lazarus.places.iter().any(|p| p.name == "Bethany"));
+
+        // A person's events and a place's, in time order.
+        let moses = exodus.people.iter().find(|p| p.name == "Moses").unwrap();
+        let his = bible.name_events(moses.id).unwrap();
+        assert!(his.iter().any(|e| e.title == "Birth of Moses"));
+        assert!(his.iter().any(|e| e.title == "Exodus from Egypt"));
+        assert!(his.windows(2).all(|w| w[0].year <= w[1].year));
+        assert!(
+            his.iter()
+                .all(|e| e.people.iter().any(|p| p.id == moses.id))
+        );
+        let egypt = exodus.places.iter().find(|p| p.name == "Egypt").unwrap();
+        let there = bible.name_events(egypt.id).unwrap();
+        assert!(there.iter().any(|e| e.title == "Joseph sold to Egypt"));
+        assert!(there.len() < events.len());
     }
 
     /// Journeys come in the file's order, their stops at their places, with
