@@ -114,7 +114,12 @@ pub fn merge_progress_files(canonical: &Path, incoming: &Path) -> rusqlite::Resu
     merge_progress_snapshot(&db, incoming)
 }
 
-fn has_column(db: &Connection, schema: &str, table: &str, column: &str) -> rusqlite::Result<bool> {
+pub(crate) fn has_column(
+    db: &Connection,
+    schema: &str,
+    table: &str,
+    column: &str,
+) -> rusqlite::Result<bool> {
     let mut stmt = db.prepare(&format!("PRAGMA {schema}.table_info({table})"))?;
     stmt.query_map([], |row| row.get::<_, String>(1))?
         .collect::<rusqlite::Result<Vec<_>>>()

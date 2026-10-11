@@ -5250,11 +5250,35 @@ impl Bible {
         book: u8,
         chapter: u8,
     ) -> rusqlite::Result<Vec<crate::greek::GreekVerse>> {
+        let (first, last) = chapter_range(book, chapter);
+        self.greek_verses(first, last)
+    }
+
+    /// One verse of the Greek text, word by word as [`Self::greek_chapter`]
+    /// gives them; empty where there is none.
+    pub fn greek_verse_words(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+    ) -> rusqlite::Result<Vec<crate::greek::GreekWord>> {
+        let r = pack_ref(book, chapter, verse);
+        Ok(self
+            .greek_verses(r, r)?
+            .pop()
+            .map_or_else(Vec::new, |v| v.words))
+    }
+
+    /// The verses of the Greek text with packed refs from `first` to `last`.
+    fn greek_verses(
+        &self,
+        first: i64,
+        last: i64,
+    ) -> rusqlite::Result<Vec<crate::greek::GreekVerse>> {
         use crate::greek::{GreekVerse, GreekWord};
         if !self.has_greek()? {
             return Ok(Vec::new());
         }
-        let (first, last) = chapter_range(book, chapter);
         let mut stmt = self.db.prepare_cached(
             "SELECT w.ref & 255, w.position, w.word, coalesce(e.text, ''), \
                     coalesce(l.lemma, ''), coalesce(l.gloss, ''), coalesce(g.code, ''), \

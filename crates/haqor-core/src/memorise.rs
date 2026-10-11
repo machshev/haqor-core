@@ -41,6 +41,12 @@
 //! verse shared by two passages is learnt once, and deleting a passage keeps
 //! what was learnt. Everything merges across devices (see
 //! [`crate::progress_sync`]).
+//!
+//! A New Testament passage is learnt in the Peshitta or, when it is marked
+//! [`MemoryPassage::greek`], in the Greek of the Textus Receptus. The two
+//! are different words, so a verse learnt in one is not learnt in the other:
+//! the Greek's verse state, shape and answers are kept under its book number
+//! plus [`GREEK_BOOK_KEY`], apart from the Peshitta's.
 
 use rusqlite::{Connection, OptionalExtension, params};
 
@@ -76,6 +82,20 @@ const GRADUATION_BONUS_XP: i64 = 20;
 /// XP for a card that is only read.
 const READ_XP: i64 = 5;
 
+/// Added to a book's number to key the Greek New Testament's verses in
+/// `memory_verse`, `memory_layout` and `memory_review`, so they never meet
+/// the Peshitta's — and an app that predates the Greek passes them by.
+pub const GREEK_BOOK_KEY: u8 = 100;
+
+/// The book number a verse's state and shape are stored under.
+fn verse_key(book: u8, greek: bool) -> u8 {
+    if greek && book >= 40 {
+        book + GREEK_BOOK_KEY
+    } else {
+        book
+    }
+}
+
 /// Ways to bring more senses to a line, one shown per read card.
 const SENSE_PROMPTS: [&str; 8] = [
     "Picture the scene: where are you standing, what do you see, who is speaking?",
@@ -99,8 +119,18 @@ pub struct MemoryPassage {
     pub end_verse: u8,
     /// The learner's own name for it; empty means "use the reference".
     pub title: String,
+    /// A New Testament passage learnt in the Greek (the Textus Receptus)
+    /// rather than the Peshitta.
+    pub greek: bool,
     pub created_epoch: i64,
     pub updated_epoch: i64,
+}
+
+impl MemoryPassage {
+    /// The book number its verses' state and shape are stored under.
+    fn key(&self) -> u8 {
+        verse_key(self.book, self.greek)
+    }
 }
 
 /// How well one verse of a passage is known, for the passage heatmap.
@@ -224,6 +254,8 @@ pub struct MemoryCard {
     /// The passage it is being practised as part of (empty for "all").
     pub passage_id: String,
     pub book: u8,
+    /// Its text is the Greek New Testament rather than the Peshitta.
+    pub greek: bool,
     pub purpose: MemoryPurpose,
     /// A short heading ("Verse 23:4 · line 2 of 3").
     pub title: String,
@@ -764,7 +796,8 @@ pub(crate) fn ensure_memory_tables(db: &Connection, schema: &str) -> rusqlite::R
             title         TEXT    NOT NULL DEFAULT '',
             created_epoch INTEGER NOT NULL,
             updated_epoch INTEGER NOT NULL,
-            deleted       INTEGER NOT NULL DEFAULT 0
+            deleted       INTEGER NOT NULL DEFAULT 0,
+            greek         INTEGER NOT NULL DEFAULT 0
          );
          CREATE TABLE IF NOT EXISTS {schema}.memory_verse(
             book              INTEGER NOT NULL,
@@ -817,7 +850,14 @@ pub(crate) fn ensure_memory_tables(db: &Connection, schema: &str) -> rusqlite::R
             last_run_epoch INTEGER NOT NULL,
             updated_epoch  INTEGER NOT NULL
          );"
-    ))
+    ))?;
+    // Passages from before the Greek New Testament are the Peshitta's.
+    if !crate::progress_sync::has_column(db, schema, "memory_passage", "greek")? {
+        db.execute_batch(&format!(
+            "ALTER TABLE {schema}.memory_passage ADD COLUMN greek INTEGER NOT NULL DEFAULT 0"
+        ))?;
+    }
+    Ok(())
 }
 
 /// Merge the memorisation tables of the attached `sync` schema into
@@ -828,14 +868,14 @@ pub(crate) fn merge_memory(db: &Connection) -> rusqlite::Result<()> {
     db.execute_batch(
         "INSERT INTO progress.memory_passage(
              id, book, start_chapter, start_verse, end_chapter, end_verse,
-             title, created_epoch, updated_epoch, deleted)
+             title, created_epoch, updated_epoch, deleted, greek)
          SELECT id, book, start_chapter, start_verse, end_chapter, end_verse,
-                title, created_epoch, updated_epoch, deleted
+                title, created_epoch, updated_epoch, deleted, greek
          FROM sync.memory_passage WHERE true
          ON CONFLICT(id) DO UPDATE SET
             book=excluded.book, start_chapter=excluded.start_chapter,
             start_verse=excluded.start_verse, end_chapter=excluded.end_chapter,
-            end_verse=excluded.end_verse, title=excluded.title,
+            end_verse=excluded.end_verse, title=excluded.title, greek=excluded.greek,
             created_epoch=MIN(progress.memory_passage.created_epoch, excluded.created_epoch),
             updated_epoch=excluded.updated_epoch, deleted=excluded.deleted
          WHERE excluded.updated_epoch > progress.memory_passage.updated_epoch
@@ -908,11 +948,15 @@ pub(crate) fn merge_memory(db: &Connection) -> rusqlite::Result<()> {
     )
 }
 
-/// SQL predicate: the verse `v` (an alias with book/chapter/verse columns)
-/// lies inside passage `p`.
-const IN_PASSAGE: &str = "((v.book << 16) | (v.chapter << 8) | v.verse) BETWEEN \
-     ((p.book << 16) | (p.start_chapter << 8) | p.start_verse) AND \
-     ((p.book << 16) | (p.end_chapter << 8) | p.end_verse)";
+/// SQL predicate: the verse `v` (an alias with book/chapter/verse columns,
+/// the book keyed as [`verse_key`] keys it) lies inside passage `p`.
+const IN_PASSAGE: &str = "v.book = p.book + 100 * p.greek AND \
+     ((v.chapter << 8) | v.verse) BETWEEN \
+     ((p.start_chapter << 8) | p.start_verse) AND ((p.end_chapter << 8) | p.end_verse)";
+const _: () = assert!(
+    GREEK_BOOK_KEY == 100,
+    "IN_PASSAGE spells out GREEK_BOOK_KEY"
+);
 
 fn passage_from_row(r: &rusqlite::Row<'_>) -> rusqlite::Result<MemoryPassage> {
     Ok(MemoryPassage {
@@ -925,11 +969,12 @@ fn passage_from_row(r: &rusqlite::Row<'_>) -> rusqlite::Result<MemoryPassage> {
         title: r.get(6)?,
         created_epoch: r.get(7)?,
         updated_epoch: r.get(8)?,
+        greek: r.get(9)?,
     })
 }
 
 const PASSAGE_COLUMNS: &str = "id, book, start_chapter, start_verse, end_chapter, end_verse, \
-     title, created_epoch, updated_epoch";
+     title, created_epoch, updated_epoch, greek";
 
 impl Bible {
     // --- passages ------------------------------------------------------------
@@ -959,11 +1004,15 @@ impl Bible {
     /// Add a passage to learn, returning it. The range is normalised (start
     /// before end) and clipped to verses that exist; the same range added
     /// twice returns the existing passage (retitled if a title is given).
-    /// `None` when the range holds no verse at all.
+    /// `None` when the range holds no verse at all. `greek` learns a New
+    /// Testament passage in the Greek rather than the Peshitta (and is
+    /// ignored in the Old Testament); the two of the same range are two
+    /// passages.
     #[allow(clippy::too_many_arguments)]
     pub fn add_memory_passage(
         &self,
         book: u8,
+        greek: bool,
         start_chapter: u8,
         start_verse: u8,
         end_chapter: u8,
@@ -971,6 +1020,7 @@ impl Bible {
         title: &str,
         now: i64,
     ) -> rusqlite::Result<Option<MemoryPassage>> {
+        let greek = greek && book >= 40;
         let (mut a, mut b) = (
             pack_ref(book, start_chapter, start_verse),
             pack_ref(book, end_chapter, end_verse),
@@ -978,12 +1028,8 @@ impl Bible {
         if a > b {
             std::mem::swap(&mut a, &mut b);
         }
-        let bounds: Option<(i64, i64)> = self.conn().query_row(
-            "SELECT MIN(ref), MAX(ref) FROM data.verse WHERE ref BETWEEN ?1 AND ?2",
-            params![a, b],
-            |r| Ok(r.get::<_, Option<i64>>(0)?.zip(r.get::<_, Option<i64>>(1)?)),
-        )?;
-        let Some((first, last)) = bounds else {
+        let refs = self.memory_verse_refs(greek, a, b)?;
+        let (Some(&first), Some(&last)) = (refs.first(), refs.last()) else {
             return Ok(None);
         };
         let unpack = |r: i64| (((r >> 8) & 255) as u8, (r & 255) as u8);
@@ -994,8 +1040,8 @@ impl Bible {
             .query_row(
                 "SELECT id FROM progress.memory_passage
                  WHERE deleted = 0 AND book = ?1 AND start_chapter = ?2 AND start_verse = ?3
-                   AND end_chapter = ?4 AND end_verse = ?5",
-                params![book, sc, sv, ec, ev],
+                   AND end_chapter = ?4 AND end_verse = ?5 AND greek = ?6",
+                params![book, sc, sv, ec, ev, greek],
                 |r| r.get(0),
             )
             .optional()?;
@@ -1022,9 +1068,9 @@ impl Bible {
                 self.conn().execute(
                     "INSERT INTO progress.memory_passage(
                          id, book, start_chapter, start_verse, end_chapter, end_verse,
-                         title, created_epoch, updated_epoch, deleted)
-                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?8, 0)",
-                    params![id, book, sc, sv, ec, ev, title, now],
+                         title, created_epoch, updated_epoch, deleted, greek)
+                     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?8, 0, ?9)",
+                    params![id, book, sc, sv, ec, ev, title, now, greek],
                 )?;
                 id
             }
@@ -1045,23 +1091,74 @@ impl Bible {
 
     /// The verses of a passage, in order.
     pub fn memory_passage_verses(&self, p: &MemoryPassage) -> rusqlite::Result<Vec<(u8, u8)>> {
-        let mut stmt = self.conn().prepare(
-            "SELECT (ref >> 8) & 255, ref & 255 FROM data.verse
-             WHERE ref BETWEEN ?1 AND ?2 ORDER BY ref",
-        )?;
-        stmt.query_map(
-            params![
+        Ok(self
+            .memory_verse_refs(
+                p.greek,
                 pack_ref(p.book, p.start_chapter, p.start_verse),
-                pack_ref(p.book, p.end_chapter, p.end_verse)
-            ],
-            |r| Ok((r.get(0)?, r.get(1)?)),
-        )?
-        .collect()
+                pack_ref(p.book, p.end_chapter, p.end_verse),
+            )?
+            .into_iter()
+            .map(|r| (((r >> 8) & 255) as u8, (r & 255) as u8))
+            .collect())
     }
 
-    fn memory_verse_srs(
+    /// The packed refs of the verses from `a` to `b` in the Peshitta, or in
+    /// the Greek — whose verses are numbered as the KJV's, which the
+    /// Peshitta's now and then are not. None in the Greek of a database built
+    /// before it.
+    fn memory_verse_refs(&self, greek: bool, a: i64, b: i64) -> rusqlite::Result<Vec<i64>> {
+        let sql = if !greek {
+            "SELECT ref FROM data.verse WHERE ref BETWEEN ?1 AND ?2 ORDER BY ref"
+        } else if self.has_greek()? {
+            "SELECT DISTINCT ref FROM data.greek_word WHERE ref BETWEEN ?1 AND ?2 ORDER BY ref"
+        } else {
+            return Ok(Vec::new());
+        };
+        let mut stmt = self.conn().prepare_cached(sql)?;
+        stmt.query_map(params![a, b], |r| r.get(0))?.collect()
+    }
+
+    /// A verse's words as they are memorised (see `verse_units`), each with
+    /// its gloss when `glosses` asks for them: in the Greek, its English in
+    /// this verse, or its dictionary form's gloss where it has none.
+    fn memory_verse_units(
         &self,
         book: u8,
+        greek: bool,
+        chapter: u8,
+        verse: u8,
+        glosses: bool,
+    ) -> rusqlite::Result<Vec<Unit>> {
+        if greek {
+            return Ok(self
+                .greek_verse_words(book, chapter, verse)?
+                .into_iter()
+                .map(|w| Unit {
+                    gloss: if !glosses {
+                        String::new()
+                    } else if w.english.trim().is_empty() {
+                        w.gloss
+                    } else {
+                        w.english.trim().to_string()
+                    },
+                    raw: w.text,
+                })
+                .collect());
+        }
+        let glosses: Vec<String> = if glosses {
+            self.verse_gloss_words(book, chapter, verse)
+                .map(|pairs| pairs.into_iter().map(|(_, g)| g).collect())
+                .unwrap_or_default()
+        } else {
+            Vec::new()
+        };
+        Ok(verse_units(&self.get(book, chapter, verse)?, &glosses))
+    }
+
+    /// A verse's state, its book keyed as [`verse_key`] keys it.
+    fn memory_verse_srs(
+        &self,
+        key: u8,
         chapter: u8,
         verse: u8,
     ) -> rusqlite::Result<Option<(VerseSrs, i64)>> {
@@ -1069,7 +1166,7 @@ impl Bible {
             .query_row(
                 "SELECT stage, ease, interval_days, reps, lapses, due_epoch
                  FROM progress.memory_verse WHERE book = ?1 AND chapter = ?2 AND verse = ?3",
-                params![book, chapter, verse],
+                params![key, chapter, verse],
                 |r| {
                     Ok((
                         VerseSrs {
@@ -1111,7 +1208,7 @@ impl Bible {
             )?;
             let rows = stmt.query_map(
                 params![
-                    p.book,
+                    p.key(),
                     (i64::from(p.start_chapter) << 8) | i64::from(p.start_verse),
                     (i64::from(p.end_chapter) << 8) | i64::from(p.end_verse)
                 ],
@@ -1130,7 +1227,7 @@ impl Bible {
         let n = refs.len();
         let mut verses = Vec::with_capacity(n);
         for (i, &(chapter, verse)) in refs.iter().enumerate() {
-            let units = verse_units(&self.get(p.book, chapter, verse)?, &[]);
+            let units = self.memory_verse_units(p.book, p.greek, chapter, verse, false)?;
             let (lines_stored, section_stored) = stored
                 .get(&(chapter, verse))
                 .cloned()
@@ -1171,9 +1268,9 @@ impl Bible {
         let mut out = Vec::with_capacity(plan.verses.len());
         let mut next_found = false;
         for (i, v) in plan.verses.iter().enumerate() {
-            let words = self.memory_card_words(p.book, v)?;
+            let words = self.memory_card_words(&p, v)?;
             // As in the summary: the first verse not learnt is the next one.
-            let state = self.memory_verse_srs(p.book, v.chapter, v.verse)?;
+            let state = self.memory_verse_srs(p.key(), v.chapter, v.verse)?;
             let is_next = !next_found && !state.is_some_and(|(s, _)| s.learnt());
             next_found |= is_next;
             out.push(MemoryLayoutVerse {
@@ -1199,6 +1296,7 @@ impl Bible {
     pub fn set_memory_line_starts(
         &self,
         book: u8,
+        greek: bool,
         chapter: u8,
         verse: u8,
         line_starts: Option<&[usize]>,
@@ -1214,7 +1312,8 @@ impl Bible {
                 .collect::<Vec<_>>()
                 .join(",")
         });
-        let before = self.stored_line_count(book, chapter, verse)?;
+        let key = verse_key(book, greek);
+        let before = self.stored_line_count(book, greek, chapter, verse)?;
         self.conn().execute(
             "INSERT INTO progress.memory_layout(
                  book, chapter, verse, line_starts, section_start, updated_epoch)
@@ -1223,27 +1322,35 @@ impl Bible {
                 line_starts = excluded.line_starts,
                 updated_epoch = MAX(progress.memory_layout.updated_epoch + 1,
                                     excluded.updated_epoch)",
-            params![book, chapter, verse, stored, now],
+            params![key, chapter, verse, stored, now],
         )?;
-        if self.stored_line_count(book, chapter, verse)? != before {
-            self.restart_memory_steps(book, chapter, verse, now)?;
+        if self.stored_line_count(book, greek, chapter, verse)? != before {
+            self.restart_memory_steps(key, chapter, verse, now)?;
         }
         Ok(())
     }
 
     /// How many lines a verse's stored layout gives it.
-    fn stored_line_count(&self, book: u8, chapter: u8, verse: u8) -> rusqlite::Result<usize> {
+    fn stored_line_count(
+        &self,
+        book: u8,
+        greek: bool,
+        chapter: u8,
+        verse: u8,
+    ) -> rusqlite::Result<usize> {
         let stored: Option<String> = self
             .conn()
             .query_row(
                 "SELECT line_starts FROM progress.memory_layout
                  WHERE book = ?1 AND chapter = ?2 AND verse = ?3",
-                params![book, chapter, verse],
+                params![verse_key(book, greek), chapter, verse],
                 |r| r.get(0),
             )
             .optional()?
             .flatten();
-        let words = verse_units(&self.get(book, chapter, verse)?, &[]).len();
+        let words = self
+            .memory_verse_units(book, greek, chapter, verse, false)?
+            .len();
         Ok(stored.map_or(0, |s| parse_line_starts(&s, words).len()) + 1)
     }
 
@@ -1251,10 +1358,10 @@ impl Bible {
     /// shape gives it different steps. A verse still in them starts over
     /// rather than landing on a step that means something else; one that has
     /// graduated (or waits to be relearnt, which is placed by its shape) is
-    /// left alone.
+    /// left alone. `key` is the verse's book as [`verse_key`] keys it.
     fn restart_memory_steps(
         &self,
-        book: u8,
+        key: u8,
         chapter: u8,
         verse: u8,
         now: i64,
@@ -1264,7 +1371,7 @@ impl Bible {
                 updated_epoch = MAX(updated_epoch + 1, ?4)
              WHERE book = ?1 AND chapter = ?2 AND verse = ?3
                AND interval_days = 0 AND stage NOT IN (0, ?5)",
-            params![book, chapter, verse, now, RELEARN_STAGE],
+            params![key, chapter, verse, now, RELEARN_STAGE],
         )?;
         Ok(())
     }
@@ -1275,17 +1382,19 @@ impl Bible {
     pub fn set_memory_section_start(
         &self,
         book: u8,
+        greek: bool,
         chapter: u8,
         verse: u8,
         section_start: bool,
         now: i64,
     ) -> rusqlite::Result<()> {
+        let key = verse_key(book, greek);
         let before: Option<i64> = self
             .conn()
             .query_row(
                 "SELECT section_start FROM progress.memory_layout
                  WHERE book = ?1 AND chapter = ?2 AND verse = ?3",
-                params![book, chapter, verse],
+                params![key, chapter, verse],
                 |r| r.get(0),
             )
             .optional()?
@@ -1298,11 +1407,11 @@ impl Bible {
                 section_start = excluded.section_start,
                 updated_epoch = MAX(progress.memory_layout.updated_epoch + 1,
                                     excluded.updated_epoch)",
-            params![book, chapter, verse, i64::from(section_start), now],
+            params![key, chapter, verse, i64::from(section_start), now],
         )?;
         // Opening a section drops the verse's closing chain step.
         if before.is_some_and(|s| s != 0) != section_start {
-            self.restart_memory_steps(book, chapter, verse, now)?;
+            self.restart_memory_steps(key, chapter, verse, now)?;
         }
         Ok(())
     }
@@ -1317,7 +1426,7 @@ impl Bible {
         let (mut learnt, mut mature, mut due, mut total) = (0, 0, 0, 0.0);
         let mut needs_shaping = None;
         for (i, v) in plan.verses.iter().enumerate() {
-            let state = self.memory_verse_srs(passage.book, v.chapter, v.verse)?;
+            let state = self.memory_verse_srs(passage.key(), v.chapter, v.verse)?;
             let steps = plan.steps(i).len();
             let is_due = state.is_some_and(|(s, d)| s.learnt() && d <= now);
             if needs_shaping.is_none() && !state.is_some_and(|(s, _)| s.learnt()) {
@@ -1343,7 +1452,7 @@ impl Bible {
             &format!(
                 "SELECT COALESCE(MAX(v.last_review_epoch), 0)
                  FROM progress.memory_verse v, progress.memory_passage p
-                 WHERE p.id = ?1 AND v.book = p.book AND {IN_PASSAGE}"
+                 WHERE p.id = ?1 AND {IN_PASSAGE}"
             ),
             [&passage.id],
             |r| r.get(0),
@@ -1420,12 +1529,12 @@ impl Bible {
     }
 
     /// A card's words for one verse, with glosses and transliteration.
-    fn memory_card_words(&self, book: u8, v: &PlanVerse) -> rusqlite::Result<Vec<MemoryWord>> {
-        let glosses: Vec<String> = self
-            .verse_gloss_words(book, v.chapter, v.verse)
-            .map(|pairs| pairs.into_iter().map(|(_, g)| g).collect())
-            .unwrap_or_default();
-        let mut units = verse_units(&self.get(book, v.chapter, v.verse)?, &glosses);
+    fn memory_card_words(
+        &self,
+        p: &MemoryPassage,
+        v: &PlanVerse,
+    ) -> rusqlite::Result<Vec<MemoryWord>> {
+        let mut units = self.memory_verse_units(p.book, p.greek, v.chapter, v.verse, true)?;
         if units.len() != v.units.len() {
             units = v.units.clone();
         }
@@ -1434,7 +1543,7 @@ impl Bible {
             .map(|u| {
                 let text = u.text();
                 MemoryWord {
-                    translit: if book < 40 {
+                    translit: if p.book < 40 {
                         crate::romanize::romanize(&text)
                     } else {
                         String::new()
@@ -1449,14 +1558,14 @@ impl Bible {
     /// Segments for `lines` of plan verse `i` (a line range within it).
     fn memory_segments(
         &self,
-        book: u8,
+        p: &MemoryPassage,
         plan: &Plan,
         parts: &[(usize, std::ops::RangeInclusive<usize>)],
     ) -> rusqlite::Result<Vec<MemorySegment>> {
         let mut out = Vec::new();
         for (i, lines) in parts {
             let v = &plan.verses[*i];
-            let words = self.memory_card_words(book, v)?;
+            let words = self.memory_card_words(p, v)?;
             for line in lines.clone() {
                 out.push(MemorySegment {
                     chapter: v.chapter,
@@ -1507,6 +1616,7 @@ impl Bible {
         MemoryCard {
             passage_id: passage_id.to_string(),
             book: p.book,
+            greek: p.greek,
             purpose,
             title,
             prompt,
@@ -1555,7 +1665,7 @@ impl Bible {
                     at(i)
                 },
                 format!("Read it aloud two or three times. {sense}"),
-                self.memory_segments(p.book, plan, &[(i, k..=k)])?,
+                self.memory_segments(p, plan, &[(i, k..=k)])?,
                 Self::memory_cue(plan, i, k),
             ),
             Step::Recall(a, b) => (
@@ -1567,7 +1677,7 @@ impl Bible {
                     (_, b) => format!("{} · lines 1–{} together", at(i), b + 1),
                 },
                 recite.to_string(),
-                self.memory_segments(p.book, plan, &[(i, a..=b)])?,
+                self.memory_segments(p, plan, &[(i, a..=b)])?,
                 Self::memory_cue(plan, i, a),
             ),
             Step::Chain => (
@@ -1577,7 +1687,7 @@ impl Bible {
                  verse into the next."
                     .to_string(),
                 self.memory_segments(
-                    p.book,
+                    p,
                     plan,
                     &(first..=i)
                         .map(|j| (j, 0..=plan.verses[j].lines.len() - 1))
@@ -1630,7 +1740,7 @@ impl Bible {
             ),
         };
         let segments = self.memory_segments(
-            p.book,
+            p,
             plan,
             &indexes
                 .iter()
@@ -1692,7 +1802,7 @@ impl Bible {
     ) -> rusqlite::Result<Vec<(usize, VerseSrs, i64)>> {
         let mut out = Vec::new();
         for (i, v) in plan.verses.iter().enumerate() {
-            if let Some((s, due)) = self.memory_verse_srs(p.book, v.chapter, v.verse)?
+            if let Some((s, due)) = self.memory_verse_srs(p.key(), v.chapter, v.verse)?
                 && s.learnt()
             {
                 out.push((i, s, due));
@@ -1793,7 +1903,7 @@ impl Bible {
         let mut shape_passage_id = String::new();
         for (p, plan) in &shaped {
             for (i, v) in plan.verses.iter().enumerate() {
-                let state = self.memory_verse_srs(p.book, v.chapter, v.verse)?;
+                let state = self.memory_verse_srs(p.key(), v.chapter, v.verse)?;
                 match state {
                     Some((s, _)) if s.learnt() => continue,
                     Some((s, _)) => {
@@ -1851,19 +1961,20 @@ impl Bible {
             .map(Some)
     }
 
-    /// The passage holding a verse: `passage_id`'s, or the first live one.
+    /// The passage holding a verse, its book keyed as [`verse_key`] keys it:
+    /// `passage_id`'s, or the first live one.
     fn memory_passage_for(
         &self,
         passage_id: &str,
-        book: u8,
+        key: u8,
         chapter: u8,
         verse: u8,
     ) -> rusqlite::Result<Option<MemoryPassage>> {
-        let r = pack_ref(book, chapter, verse);
+        let r = pack_ref(key, chapter, verse);
         Ok(self.memory_scope(passage_id)?.into_iter().find(|p| {
-            p.book == book
-                && (pack_ref(book, p.start_chapter, p.start_verse)
-                    ..=pack_ref(book, p.end_chapter, p.end_verse))
+            p.key() == key
+                && (pack_ref(key, p.start_chapter, p.start_verse)
+                    ..=pack_ref(key, p.end_chapter, p.end_verse))
                     .contains(&r)
         }))
     }
@@ -1924,6 +2035,7 @@ impl Bible {
         &self,
         passage_id: &str,
         book: u8,
+        greek: bool,
         purpose: MemoryPurpose,
         target: Option<(u8, u8)>,
         step: usize,
@@ -1932,6 +2044,9 @@ impl Bible {
         now: i64,
         utc_offset: i64,
     ) -> rusqlite::Result<MemoryReviewOutcome> {
+        // The verses' rows, and the passage they are found in, are keyed as
+        // `verse_key` keys them.
+        let book = verse_key(book, greek);
         let today = local_day(now, utc_offset);
         let settings = self.memory_settings()?;
         let total_before = self.memory_total_xp()?;
@@ -2260,7 +2375,7 @@ impl Bible {
         let mut distinct = std::collections::HashMap::new();
         for s in &summaries {
             for v in &s.verses {
-                distinct.insert((s.passage.book, v.chapter, v.verse), *v);
+                distinct.insert((s.passage.key(), v.chapter, v.verse), *v);
             }
         }
         let count = |pred: &dyn Fn(&MemoryVerseState) -> bool| -> i64 {
@@ -2345,7 +2460,7 @@ impl Bible {
             let mut stmt = conn.prepare(&format!(
                 "SELECT DISTINCT v.book, v.chapter, v.verse, v.due_epoch
                  FROM progress.memory_verse v JOIN progress.memory_passage p
-                   ON p.deleted = 0 AND v.book = p.book AND {IN_PASSAGE}
+                   ON p.deleted = 0 AND {IN_PASSAGE}
                  WHERE v.interval_days >= 1"
             ))?;
             let dues = stmt.query_map([], |r| r.get::<_, i64>(3))?;
@@ -2695,6 +2810,7 @@ mod tests {
         bible.submit_memory_recital(
             &card.passage_id,
             card.book,
+            card.greek,
             card.purpose,
             (card.target_verse > 0).then_some((card.target_chapter, card.target_verse)),
             card.step,
@@ -2730,9 +2846,17 @@ mod tests {
         for v in bible.memory_layout(&p.id)? {
             let n = v.words.len();
             let starts: Vec<usize> = if n > 6 { vec![n / 2] } else { Vec::new() };
-            bible.set_memory_line_starts(p.book, v.chapter, v.verse, Some(&starts), now)?;
+            bible.set_memory_line_starts(
+                p.book,
+                p.greek,
+                v.chapter,
+                v.verse,
+                Some(&starts),
+                now,
+            )?;
             bible.set_memory_section_start(
                 p.book,
+                p.greek,
                 v.chapter,
                 v.verse,
                 section_starts.contains(&v.verse),
@@ -2749,7 +2873,7 @@ mod tests {
         };
         let now = 1_700_000_000;
         let p = bible
-            .add_memory_passage(27, 23, 0, 23, 255, "", now)?
+            .add_memory_passage(27, false, 23, 0, 23, 255, "", now)?
             .expect("Psalm 23 exists");
         // Only the first verse waits on its shape.
         let layout = bible.memory_layout(&p.id)?;
@@ -2775,8 +2899,8 @@ mod tests {
                 |r| r.get(0),
             )
         };
-        bible.set_memory_line_starts(27, 23, 1, Some(&[]), now)?;
-        bible.set_memory_line_starts(27, 23, 2, Some(&[]), now)?;
+        bible.set_memory_line_starts(27, false, 23, 1, Some(&[]), now)?;
+        bible.set_memory_line_starts(27, false, 23, 2, Some(&[]), now)?;
         put(1, 3, 0)?;
         put(2, 3, 0)?;
         put(3, 5, 4)?;
@@ -2786,24 +2910,24 @@ mod tests {
 
         // Saving the same shape leaves the stage alone; a new line count
         // restarts it.
-        bible.set_memory_line_starts(27, 23, 1, Some(&[]), now)?;
+        bible.set_memory_line_starts(27, false, 23, 1, Some(&[]), now)?;
         assert_eq!(stage(1)?, 3);
-        bible.set_memory_line_starts(27, 23, 1, Some(&[2]), now)?;
+        bible.set_memory_line_starts(27, false, 23, 1, Some(&[2]), now)?;
         assert_eq!(stage(1)?, 0);
         // Moving the one break keeps the script, so it keeps the stage.
         put(1, 2, 0)?;
-        bible.set_memory_line_starts(27, 23, 1, Some(&[3]), now)?;
+        bible.set_memory_line_starts(27, false, 23, 1, Some(&[3]), now)?;
         assert_eq!(stage(1)?, 2);
 
         // Opening or joining a section changes the verse's script too.
-        bible.set_memory_section_start(27, 23, 2, false, now)?;
+        bible.set_memory_section_start(27, false, 23, 2, false, now)?;
         assert_eq!(stage(2)?, 3);
-        bible.set_memory_section_start(27, 23, 2, true, now)?;
+        bible.set_memory_section_start(27, false, 23, 2, true, now)?;
         assert_eq!(stage(2)?, 0);
 
         // A verse that has graduated keeps its place in its reviews.
-        bible.set_memory_line_starts(27, 23, 3, Some(&[2]), now)?;
-        bible.set_memory_section_start(27, 23, 3, true, now)?;
+        bible.set_memory_line_starts(27, false, 23, 3, Some(&[2]), now)?;
+        bible.set_memory_section_start(27, false, 23, 3, true, now)?;
         assert_eq!(stage(3)?, 5);
         Ok(())
     }
@@ -2816,7 +2940,7 @@ mod tests {
         let mut now = 1_700_000_000;
         // Psalm 23 (book 27 in Tanakh order): six verses, sections 1–4, 5–6.
         let p = bible
-            .add_memory_passage(27, 23, 0, 23, 255, "", now)?
+            .add_memory_passage(27, false, 23, 0, 23, 255, "", now)?
             .expect("Psalm 23 exists");
         assert_eq!((p.start_verse, p.end_verse), (1, 6));
         bible.set_memory_settings(
@@ -2847,9 +2971,9 @@ mod tests {
         for v in &unshaped[..4] {
             let n = v.words.len();
             let starts: Vec<usize> = if n > 6 { vec![n / 2] } else { Vec::new() };
-            bible.set_memory_line_starts(27, 23, v.verse, Some(&starts), now)?;
+            bible.set_memory_line_starts(27, false, 23, v.verse, Some(&starts), now)?;
         }
-        bible.set_memory_section_start(27, 23, 5, true, now)?;
+        bible.set_memory_section_start(27, false, 23, 5, true, now)?;
         let layout = bible.memory_layout(&p.id)?;
         let ready: Vec<bool> = layout.iter().map(|v| v.ready).collect();
         assert_eq!(ready, vec![true, true, true, true, false, false]);
@@ -2960,13 +3084,13 @@ mod tests {
         };
         let mut now = 1_700_000_000;
         let p = bible
-            .add_memory_passage(27, 23, 1, 23, 6, "", now)?
+            .add_memory_passage(27, false, 23, 1, 23, 6, "", now)?
             .expect("Psalm 23 exists");
         // Sections 1–2, 3–4, 5–6; verse 1 in three lines (of two, two and
         // the rest of its words), verse 2 in two.
         shape_all(&bible, &p, &[3, 5], now)?;
-        bible.set_memory_line_starts(27, 23, 1, Some(&[2, 4]), now)?;
-        bible.set_memory_line_starts(27, 23, 2, Some(&[3]), now)?;
+        bible.set_memory_line_starts(27, false, 23, 1, Some(&[2, 4]), now)?;
+        bible.set_memory_line_starts(27, false, 23, 2, Some(&[3]), now)?;
         let lines: Vec<usize> = bible
             .memory_layout(&p.id)?
             .iter()
@@ -3033,7 +3157,7 @@ mod tests {
         };
         let mut now = 1_700_000_000;
         let p = bible
-            .add_memory_passage(27, 23, 1, 23, 6, "", now)?
+            .add_memory_passage(27, false, 23, 1, 23, 6, "", now)?
             .expect("Psalm 23 exists");
         // Two sections of three verses.
         shape_all(&bible, &p, &[4], now)?;
@@ -3085,7 +3209,7 @@ mod tests {
         };
         let mut now = 1_700_000_000;
         let p = bible
-            .add_memory_passage(1, 1, 1, 1, 5, "", now)?
+            .add_memory_passage(1, false, 1, 1, 1, 5, "", now)?
             .expect("Genesis 1");
         let blocked = |bible: &Bible, now| -> rusqlite::Result<bool> {
             Ok(matches!(
@@ -3104,11 +3228,11 @@ mod tests {
 
         // Shaping one verse is not enough while the section runs on to the
         // end of the passage; closing it at 1:3 still leaves 1:2 unshaped.
-        bible.set_memory_line_starts(1, 1, 1, Some(&[2, 5]), now)?;
-        bible.set_memory_section_start(1, 1, 3, true, now)?;
+        bible.set_memory_line_starts(1, false, 1, 1, Some(&[2, 5]), now)?;
+        bible.set_memory_section_start(1, false, 1, 3, true, now)?;
         assert!(blocked(&bible, now)?);
         // Keeping 1:2 whole is a decision too, and completes the section.
-        bible.set_memory_line_starts(1, 1, 2, Some(&[]), now)?;
+        bible.set_memory_line_starts(1, false, 1, 2, Some(&[]), now)?;
         let shaped = bible.memory_layout(&p.id)?;
         assert_eq!(shaped[0].line_starts, vec![2, 5]);
         assert!(shaped[0].shaped && shaped[1].shaped && !shaped[2].shaped);
@@ -3124,13 +3248,13 @@ mod tests {
         // A verse already begun carries on (as one line) if its shape is
         // cleared; it is only starting a verse that waits on its shape.
         answer(&bible, &c, Grade::Good, &[], now)?;
-        bible.set_memory_line_starts(1, 1, 1, None, now + 1)?;
+        bible.set_memory_line_starts(1, false, 1, 1, None, now + 1)?;
         now += 30;
         let c = card(bible.next_memory_item(&p.id, false, now, 0)?);
         assert_eq!((c.target_verse, c.segments[0].line_count), (1, 1));
         // Its section is unshaped again, though: put the shape back, or 1:2
         // could not begin.
-        bible.set_memory_line_starts(1, 1, 1, Some(&[3]), now)?;
+        bible.set_memory_line_starts(1, false, 1, 1, Some(&[3]), now)?;
 
         // Learning both verses of the section stops at 1:3, unshaped.
         for _ in 0..40 {
@@ -3156,7 +3280,7 @@ mod tests {
         };
         let mut now = 1_700_000_000;
         let p = bible
-            .add_memory_passage(1, 1, 1, 1, 1, "", now)?
+            .add_memory_passage(1, false, 1, 1, 1, 1, "", now)?
             .expect("Genesis 1:1");
         shape_all(&bible, &p, &[], now)?;
         let mut completions = 0;
@@ -3191,10 +3315,99 @@ mod tests {
         assert!(bible.delete_memory_passage(&p.id, now)?);
         assert!(bible.memory_passages(now)?.is_empty());
         let back = bible
-            .add_memory_passage(1, 1, 1, 1, 1, "", now)?
+            .add_memory_passage(1, false, 1, 1, 1, 1, "", now)?
             .expect("exists");
         assert_ne!(back.id, p.id);
         assert_eq!(bible.memory_passages(now)?[0].learnt, 1);
+        Ok(())
+    }
+
+    #[test]
+    fn a_verse_is_learnt_in_the_greek_apart_from_the_peshitta() -> rusqlite::Result<()> {
+        let Some(bible) = test_bible() else {
+            return Ok(());
+        };
+        if !bible.has_greek()? {
+            eprintln!("skipping: haqor.db has no Greek New Testament");
+            return Ok(());
+        }
+        let mut now = 1_700_000_000;
+        let aramaic = bible
+            .add_memory_passage(43, false, 3, 16, 3, 16, "", now)?
+            .expect("John 3:16");
+        let greek = bible
+            .add_memory_passage(43, true, 3, 16, 3, 16, "", now)?
+            .expect("John 3:16 in Greek");
+        assert_ne!(
+            aramaic.id, greek.id,
+            "the same range in each text is two passages"
+        );
+        assert!(greek.greek && !aramaic.greek);
+        let again = bible.add_memory_passage(43, true, 3, 16, 3, 16, "Love", now)?;
+        assert_eq!(again.map(|p| p.id), Some(greek.id.clone()));
+        // The Old Testament has no Greek.
+        let genesis = bible.add_memory_passage(1, true, 1, 1, 1, 1, "", now)?;
+        assert!(!genesis.expect("Genesis 1:1").greek);
+
+        let layout = bible.memory_layout(&greek.id)?;
+        assert_eq!(layout.len(), 1);
+        let words = &layout[0].words;
+        assert_eq!(words[0], "οὕτως", "{words:?}");
+        assert!(layout[0].glosses.iter().any(|g| !g.is_empty()));
+        let hebrew = &bible.memory_layout(&aramaic.id)?[0].words[0];
+        assert!(
+            hebrew
+                .chars()
+                .any(|c| ('\u{05D0}'..='\u{05EA}').contains(&c))
+        );
+
+        // Shaping and learning the Greek leave the Peshitta's verse alone.
+        shape_all(&bible, &greek, &[], now)?;
+        assert!(!bible.memory_layout(&aramaic.id)?[0].shaped);
+        let mut graduated = false;
+        for _ in 0..20 {
+            now += 30;
+            let MemoryItem::Card(c) = bible.next_memory_item(&greek.id, false, now, 0)? else {
+                break;
+            };
+            assert!(c.greek);
+            assert_eq!(c.segments[0].words[0].translit, "");
+            graduated |= answer(&bible, &c, Grade::Good, &[], now)?.first_graduation;
+        }
+        assert!(graduated);
+        let summaries = bible.memory_passages(now)?;
+        let learnt = |id: &str| {
+            summaries
+                .iter()
+                .find(|s| s.passage.id == id)
+                .map(|s| s.learnt)
+        };
+        assert_eq!(learnt(&greek.id), Some(1));
+        assert_eq!(learnt(&aramaic.id), Some(0));
+        assert_eq!(bible.memory_stats(now, 0, 7, 7)?.verses_learnt, 1);
+        Ok(())
+    }
+
+    #[test]
+    fn passages_from_before_the_greek_are_the_peshittas() -> rusqlite::Result<()> {
+        let db = Connection::open_in_memory()?;
+        db.execute_batch(
+            "ATTACH DATABASE ':memory:' AS progress;
+             CREATE TABLE progress.memory_passage(
+                id TEXT PRIMARY KEY, book INTEGER NOT NULL,
+                start_chapter INTEGER NOT NULL, start_verse INTEGER NOT NULL,
+                end_chapter INTEGER NOT NULL, end_verse INTEGER NOT NULL,
+                title TEXT NOT NULL DEFAULT '', created_epoch INTEGER NOT NULL,
+                updated_epoch INTEGER NOT NULL, deleted INTEGER NOT NULL DEFAULT 0);
+             INSERT INTO progress.memory_passage VALUES ('a', 43, 3, 16, 3, 16, '', 1, 1, 0);",
+        )?;
+        ensure_memory_tables(&db, "progress")?;
+        let greek: bool = db.query_row(
+            "SELECT greek FROM progress.memory_passage WHERE id = 'a'",
+            [],
+            |r| r.get(0),
+        )?;
+        assert!(!greek);
         Ok(())
     }
 }
