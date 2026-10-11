@@ -5603,7 +5603,7 @@ impl Bible {
 
     /// Which of a chapter's verses name a person, place or other named thing,
     /// as [`Bible::name_verses`] gives them: `(verse, id)` in order.
-    fn chapter_name_verses(&self, book: u8, chapter: u8) -> rusqlite::Result<Vec<(u8, u32)>> {
+    pub fn chapter_name_verses(&self, book: u8, chapter: u8) -> rusqlite::Result<Vec<(u8, u32)>> {
         if !self.has_table("name_verse")? {
             return Ok(Vec::new());
         }
