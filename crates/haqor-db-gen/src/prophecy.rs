@@ -50,9 +50,42 @@ pub const THEMES: &[&str] = &[
     "empires",
 ];
 
-/// When a prophecy is fulfilled: in Christ's first coming, at his return, in
-/// both, or in the history of Israel and the nations.
-pub const HORIZONS: &[&str] = &["first-advent", "second-advent", "both", "history"];
+/// When a prophecy is fulfilled, in order: in its own day or the history
+/// that followed before Christ, in his first coming, in the judgment of AD 70,
+/// at his return, and at the end of the thousand years. A prophecy may be
+/// fulfilled at several: first for those it was spoken to, then echoed
+/// forward.
+pub const STAGES: &[&str] = &[
+    "history",
+    "first-advent",
+    "ad70",
+    "return",
+    "millennium-end",
+];
+
+/// The stage of a fulfilling passage the curation does not name: an OT
+/// passage's is history, Revelation's the return, the rest of the NT's
+/// Christ's first coming.
+fn default_stage(passage: Span) -> &'static str {
+    match passage.0 >> 16 {
+        book if book < 40 => "history",
+        66 => "return",
+        _ => "first-advent",
+    }
+}
+
+/// The stages of a prophecy: those the curation names for it and those of
+/// its fulfilments, in [`STAGES`]' order, space separated.
+fn stages_of(p: &Prophecy) -> String {
+    STAGES
+        .iter()
+        .copied()
+        .filter(|stage| {
+            p.stages.iter().any(|s| s == stage) || p.fulfilments.iter().any(|f| f.stage == *stage)
+        })
+        .collect::<Vec<_>>()
+        .join(" ")
+}
 
 /// How a passage fulfils a prophecy.
 pub const KINDS: &[&str] = &["quotation", "allusion", "type", "event"];
@@ -60,6 +93,8 @@ pub const KINDS: &[&str] = &["quotation", "allusion", "type", "event"];
 pub const SCHEMA: &str = "
 DROP TABLE IF EXISTS prophecy;
 DROP TABLE IF EXISTS prophecy_fulfilment;
+DROP TABLE IF EXISTS prophecy_pattern;
+DROP TABLE IF EXISTS prophecy_pattern_member;
 CREATE TABLE prophecy(
     prophecy_id INTEGER PRIMARY KEY,
     ot_ref      INTEGER NOT NULL,
@@ -67,7 +102,7 @@ CREATE TABLE prophecy(
     title       TEXT    NOT NULL,
     theme       TEXT,
     messianic   INTEGER NOT NULL,
-    horizon     TEXT,
+    stages      TEXT    NOT NULL,
     curated     INTEGER NOT NULL,
     note        TEXT    NOT NULL
 );
@@ -80,6 +115,7 @@ CREATE TABLE prophecy_fulfilment(
     ot_ref      INTEGER NOT NULL,
     ot_end      INTEGER NOT NULL,
     kind        TEXT    NOT NULL,
+    stage       TEXT    NOT NULL,
     formula     TEXT,
     reviewed    INTEGER NOT NULL,
     confidence  TEXT,
@@ -87,6 +123,20 @@ CREATE TABLE prophecy_fulfilment(
     PRIMARY KEY(prophecy_id, ord)
 ) WITHOUT ROWID;
 CREATE INDEX idx_prophecy_fulfilment_ref ON prophecy_fulfilment(ref);
+CREATE TABLE prophecy_pattern(
+    pattern_id INTEGER PRIMARY KEY,
+    title      TEXT NOT NULL,
+    note       TEXT NOT NULL
+);
+CREATE TABLE prophecy_pattern_member(
+    pattern_id  INTEGER NOT NULL,
+    ord         INTEGER NOT NULL,
+    prophecy_id INTEGER NOT NULL,
+    stage       TEXT    NOT NULL,
+    label       TEXT    NOT NULL,
+    PRIMARY KEY(pattern_id, ord)
+) WITHOUT ROWID;
+CREATE INDEX idx_prophecy_pattern_member ON prophecy_pattern_member(prophecy_id);
 ";
 
 /// An inclusive run of packed verse refs.
@@ -130,6 +180,8 @@ struct Fulfilment {
     /// The verses of the prophecy it takes up.
     ot: Span,
     kind: String,
+    /// One of [`STAGES`].
+    stage: String,
     formula: Option<String>,
     reviewed: bool,
     confidence: Option<&'static str>,
@@ -142,7 +194,9 @@ struct Prophecy {
     title: String,
     theme: Option<String>,
     messianic: bool,
-    horizon: Option<String>,
+    /// The stages the curation names beyond its fulfilments': where the
+    /// Bible records no fulfilment, or not all of them.
+    stages: Vec<String>,
     curated: bool,
     note: String,
     fulfilments: Vec<Fulfilment>,
@@ -161,10 +215,20 @@ pub struct ProphecySummary {
     pub added: usize,
 }
 
+/// A series of prophecies repeating one pattern, like the invasions of the
+/// land from the north: each member a prophecy (by its passage) at a stage.
+#[derive(Debug)]
+struct Pattern {
+    title: String,
+    note: String,
+    members: Vec<(Span, String, String)>,
+}
+
 /// The parsed curation file.
 struct Curation {
     themes: Vec<(Span, String)>,
     prophecies: Vec<Prophecy>,
+    patterns: Vec<Pattern>,
     /// (NT verse, OT verse) pairs a found link is dropped for.
     rejected: HashSet<(i64, i64)>,
 }
@@ -243,7 +307,10 @@ fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i6
             check.faults.push(format!("{what}: no title"));
         }
         let theme = check.one_of(entry["theme"].as_str(), THEMES, &what);
-        let horizon = check.one_of(entry["horizon"].as_str(), HORIZONS, &what);
+        let mut stages = Vec::new();
+        for stage in entry["stages"].as_array().into_iter().flatten() {
+            stages.extend(check.one_of(Some(stage.as_str().unwrap_or("")), STAGES, &what));
+        }
         let Some(messianic) = entry["messianic"].as_bool() else {
             check.faults.push(format!("{what}: no messianic flag"));
             continue;
@@ -265,10 +332,18 @@ fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i6
             let Some(kind) = check.one_of(Some(f["kind"].as_str().unwrap_or("")), KINDS, &at) else {
                 continue;
             };
+            let stage = match f["stage"].as_str() {
+                None => default_stage(passage).to_string(),
+                Some(stage) => match check.one_of(Some(stage), STAGES, &at) {
+                    Some(stage) => stage,
+                    None => continue,
+                },
+            };
             fulfilments.push(Fulfilment {
                 span: passage,
                 ot: taken,
                 kind,
+                stage,
                 formula: None,
                 reviewed: true,
                 confidence: None,
@@ -280,10 +355,44 @@ fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i6
             title,
             theme,
             messianic,
-            horizon,
+            stages,
             curated: true,
             note: entry["note"].as_str().unwrap_or("").to_string(),
             fulfilments,
+        });
+    }
+
+    let mut patterns = Vec::new();
+    for entry in json["patterns"].as_array().into_iter().flatten() {
+        let title = entry["title"].as_str().unwrap_or("").to_string();
+        let what = format!("pattern {title:?}");
+        if title.is_empty() {
+            check.faults.push(format!("{what}: no title"));
+        }
+        let mut members = Vec::new();
+        for m in entry["members"].as_array().into_iter().flatten() {
+            let at = format!("{what}, member {}", m["ot"].as_str().unwrap_or("?"));
+            let Some(ot) = check.span(m["ot"].as_str(), &at) else {
+                continue;
+            };
+            if !prophecies.iter().any(|p| p.span == ot) {
+                check.faults.push(format!("{at}: no prophecy has that passage"));
+                continue;
+            }
+            let Some(stage) = check.one_of(Some(m["stage"].as_str().unwrap_or("")), STAGES, &at)
+            else {
+                continue;
+            };
+            let label = m["label"].as_str().unwrap_or("").to_string();
+            if label.is_empty() {
+                check.faults.push(format!("{at}: no label"));
+            }
+            members.push((ot, stage, label));
+        }
+        patterns.push(Pattern {
+            title,
+            note: entry["note"].as_str().unwrap_or("").to_string(),
+            members,
         });
     }
 
@@ -306,6 +415,7 @@ fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i6
     Ok(Curation {
         themes,
         prophecies,
+        patterns,
         rejected,
     })
 }
@@ -558,6 +668,7 @@ fn merge(curation: Curation, found: Vec<Found>, summary: &mut ProphecySummary) -
         themes,
         mut prophecies,
         rejected,
+        ..
     } = curation;
     summary.curated = prophecies.len();
     let theme_of = |ot: i64| {
@@ -585,6 +696,7 @@ fn merge(curation: Curation, found: Vec<Found>, summary: &mut ProphecySummary) -
             span: link.nt,
             ot: (link.ot, link.ot),
             kind: if link.aligned { "quotation" } else { "allusion" }.to_string(),
+            stage: default_stage(link.nt).to_string(),
             formula: Some(link.formulas.clone()),
             reviewed: false,
             confidence: Some(link.confidence),
@@ -621,7 +733,7 @@ fn merge(curation: Curation, found: Vec<Found>, summary: &mut ProphecySummary) -
                     // Found from the Gospels' and Acts' fulfilment formulas,
                     // which speak of Christ.
                     messianic: true,
-                    horizon: Some("first-advent".to_string()),
+                    stages: Vec::new(),
                     curated: false,
                     note: String::new(),
                     fulfilments: Vec::new(),
@@ -643,22 +755,34 @@ fn merge(curation: Curation, found: Vec<Found>, summary: &mut ProphecySummary) -
     prophecies
 }
 
-fn write(db: &Connection, prophecies: &[Prophecy]) -> Result<()> {
+fn write(db: &Connection, prophecies: &[Prophecy], patterns: &[Pattern]) -> Result<()> {
     let tx = db.unchecked_transaction()?;
     tx.execute_batch(SCHEMA)?;
     let mut insert = tx.prepare(
-        "INSERT INTO prophecy(prophecy_id, ot_ref, ot_end, title, theme, messianic, horizon, \
+        "INSERT INTO prophecy(prophecy_id, ot_ref, ot_end, title, theme, messianic, stages, \
          curated, note) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
     )?;
     let mut fulfil = tx.prepare(
         "INSERT INTO prophecy_fulfilment(prophecy_id, ord, ref, end_ref, ot_ref, ot_end, kind, \
-         formula, reviewed, confidence, note) \
-         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11)",
+         stage, formula, reviewed, confidence, note) \
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12)",
     )?;
+    let mut ids = HashMap::new();
     for (i, p) in prophecies.iter().enumerate() {
         let id = i as i64 + 1;
+        if p.curated {
+            ids.insert(p.span, id);
+        }
         insert.execute(params![
-            id, p.span.0, p.span.1, p.title, p.theme, p.messianic, p.horizon, p.curated, p.note
+            id,
+            p.span.0,
+            p.span.1,
+            p.title,
+            p.theme,
+            p.messianic,
+            stages_of(p),
+            p.curated,
+            p.note
         ])?;
         for (ord, f) in p.fulfilments.iter().enumerate() {
             fulfil.execute(params![
@@ -669,6 +793,7 @@ fn write(db: &Connection, prophecies: &[Prophecy]) -> Result<()> {
                 f.ot.0,
                 f.ot.1,
                 f.kind,
+                f.stage,
                 f.formula,
                 f.reviewed,
                 f.confidence,
@@ -676,7 +801,22 @@ fn write(db: &Connection, prophecies: &[Prophecy]) -> Result<()> {
             ])?;
         }
     }
-    drop((insert, fulfil));
+    let mut pattern = tx.prepare(
+        "INSERT INTO prophecy_pattern(pattern_id, title, note) VALUES (?1, ?2, ?3)",
+    )?;
+    let mut member = tx.prepare(
+        "INSERT INTO prophecy_pattern_member(pattern_id, ord, prophecy_id, stage, label) \
+         VALUES (?1, ?2, ?3, ?4, ?5)",
+    )?;
+    for (i, p) in patterns.iter().enumerate() {
+        let id = i as i64 + 1;
+        pattern.execute(params![id, p.title, p.note])?;
+        for (ord, (span, stage, label)) in p.members.iter().enumerate() {
+            // Checked when the curation was read.
+            member.execute(params![id, ord as i64, ids[span], stage, label])?;
+        }
+    }
+    drop((insert, fulfil, pattern, member));
     tx.commit()?;
     Ok(())
 }
@@ -700,11 +840,12 @@ pub fn build_prophecies(db: &Connection, curation: &Path, src_texts: &Path) -> R
             .query_map([], |row| row.get::<_, i64>(0))?
             .collect::<rusqlite::Result<Vec<_>>>()?,
     );
-    let curation = read_curation(curation, &versification, &verses)?;
+    let mut curation = read_curation(curation, &versification, &verses)?;
+    let patterns = std::mem::take(&mut curation.patterns);
     let found = find_links(db)?;
     let mut summary = ProphecySummary::default();
     let prophecies = merge(curation, found, &mut summary);
-    write(db, &prophecies)?;
+    write(db, &prophecies, &patterns)?;
     info!(
         "Prophecies: {} curated and {} found, with {} fulfilments ({} found links confirmed \
          curated ones, {} added)",
@@ -812,8 +953,31 @@ mod tests {
                 .0
                 .contains("whose right")
         );
-        // Daniel 2:44: no NT fulfilment needed.
+        // Daniel 2:44: listed though the kingdom has not yet come.
         assert!(prophecy_of(pack_ref(35, 2, 44)).is_some());
+        // A prophecy's stages are its own and its fulfilments', in order:
+        // Isaiah 7:14 in Ahaz's day and in Jesus.
+        let stages: String = db
+            .query_row(
+                "SELECT stages FROM prophecy WHERE ot_ref <= ?1 AND ot_end >= ?1",
+                [pack_ref(12, 7, 14)],
+                |r| r.get(0),
+            )
+            .unwrap();
+        assert_eq!(stages, "history first-advent");
+        // Revelation's fulfilments default to the return.
+        let stage: String = db
+            .query_row(
+                "SELECT stage FROM prophecy_fulfilment WHERE ref = ?1",
+                [pack_ref(66, 19, 15)],
+                |r| r.get(0),
+            )
+            .unwrap();
+        assert_eq!(stage, "return");
+        let members: i64 = db
+            .query_row("SELECT COUNT(*) FROM prophecy_pattern_member", [], |r| r.get(0))
+            .unwrap();
+        assert!(members >= 4);
         // Isaiah 7:14 is found from Matthew 1:22's formula and confirms the
         // curated link.
         let formula: Option<String> = db

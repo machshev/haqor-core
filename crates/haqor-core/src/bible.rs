@@ -1232,13 +1232,46 @@ pub struct Prophecy {
     pub theme: Option<String>,
     /// Whether it concerns Christ.
     pub messianic: bool,
-    /// `first-advent`, `second-advent`, `both` or `history`, if known.
-    pub horizon: Option<String>,
+    /// When it is fulfilled, in order: some of [`PROPHECY_STAGES`].
+    pub stages: Vec<String>,
     /// Curated, rather than found from a citation formula alone.
     pub curated: bool,
     pub note: String,
     pub fulfilments: Vec<ProphecyFulfilment>,
+    /// The patterns it is part of, each with all its members.
+    pub patterns: Vec<ProphecyPattern>,
 }
+
+/// A series of prophecies repeating one pattern, like the invasions of the
+/// land from the north: Babylon, Rome, Gog.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ProphecyPattern {
+    pub id: u32,
+    pub title: String,
+    pub note: String,
+    pub members: Vec<ProphecyPatternMember>,
+}
+
+/// One step of a [`ProphecyPattern`]: a prophecy at one of its stages.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ProphecyPatternMember {
+    pub prophecy_id: u32,
+    pub passage: VerseSpan,
+    /// One of [`PROPHECY_STAGES`].
+    pub stage: String,
+    pub label: String,
+}
+
+/// When a prophecy is fulfilled, in order: before Christ (in its own day and
+/// the history after), in his first coming, in the judgment of AD 70, at his
+/// return, and at the end of the thousand years.
+pub const PROPHECY_STAGES: &[&str] = &[
+    "history",
+    "first-advent",
+    "ad70",
+    "return",
+    "millennium-end",
+];
 
 /// A passage fulfilling a [`Prophecy`]: an NT quotation, allusion or type, or
 /// a narrative of the event, in either testament.
@@ -1249,6 +1282,8 @@ pub struct ProphecyFulfilment {
     pub prophecy_verses: VerseSpan,
     /// `quotation`, `allusion`, `type` or `event`.
     pub kind: String,
+    /// When it happens: one of [`PROPHECY_STAGES`].
+    pub stage: String,
     /// The citation formula found introducing it (`fulfilled`, `spoken`,
     /// `written`, `scripture`, joined by `+`), if one was.
     pub formula: Option<String>,
@@ -5237,7 +5272,7 @@ impl Bible {
             .db
             .prepare_cached(&format!(
                 "SELECT p.prophecy_id, p.ot_ref, p.ot_end, p.title, p.theme, p.messianic, \
-                        p.horizon, p.curated, p.note \
+                        p.stages, p.curated, p.note \
                  {PROPHECIES_TOUCHING} ORDER BY p.ot_ref, p.ot_end LIMIT ?5 OFFSET ?6"
             ))?
             .query_map(
@@ -5249,17 +5284,35 @@ impl Bible {
                         title: row.get(3)?,
                         theme: row.get(4)?,
                         messianic: row.get(5)?,
-                        horizon: row.get(6)?,
+                        stages: row
+                            .get::<_, String>(6)?
+                            .split_whitespace()
+                            .map(str::to_string)
+                            .collect(),
                         curated: row.get(7)?,
                         note: row.get(8)?,
                         fulfilments: Vec::new(),
+                        patterns: Vec::new(),
                     })
                 },
             )?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         let mut stmt = self.db.prepare_cached(
-            "SELECT ref, end_ref, ot_ref, ot_end, kind, formula, reviewed, confidence, note \
+            "SELECT ref, end_ref, ot_ref, ot_end, kind, stage, formula, reviewed, confidence, \
+                    note \
              FROM data.prophecy_fulfilment WHERE prophecy_id = ?1 ORDER BY ord",
+        )?;
+        let mut patterns_of = self.db.prepare_cached(
+            "SELECT DISTINCT pattern_id FROM data.prophecy_pattern_member \
+             WHERE prophecy_id = ?1 ORDER BY pattern_id",
+        )?;
+        let mut pattern_stmt = self
+            .db
+            .prepare_cached("SELECT title, note FROM data.prophecy_pattern WHERE pattern_id = ?1")?;
+        let mut members_stmt = self.db.prepare_cached(
+            "SELECT m.prophecy_id, p.ot_ref, p.ot_end, m.stage, m.label \
+             FROM data.prophecy_pattern_member m JOIN data.prophecy p USING (prophecy_id) \
+             WHERE m.pattern_id = ?1 ORDER BY m.ord",
         )?;
         for prophecy in &mut prophecies {
             prophecy.fulfilments = stmt
@@ -5268,13 +5321,37 @@ impl Bible {
                         passage: span(row.get(0)?, row.get(1)?),
                         prophecy_verses: span(row.get(2)?, row.get(3)?),
                         kind: row.get(4)?,
-                        formula: row.get(5)?,
-                        reviewed: row.get(6)?,
-                        confidence: row.get(7)?,
-                        note: row.get(8)?,
+                        stage: row.get(5)?,
+                        formula: row.get(6)?,
+                        reviewed: row.get(7)?,
+                        confidence: row.get(8)?,
+                        note: row.get(9)?,
                     })
                 })?
                 .collect::<rusqlite::Result<_>>()?;
+            let ids = patterns_of
+                .query_map([prophecy.id], |row| row.get::<_, u32>(0))?
+                .collect::<rusqlite::Result<Vec<_>>>()?;
+            for id in ids {
+                let (title, note) =
+                    pattern_stmt.query_row([id], |row| Ok((row.get(0)?, row.get(1)?)))?;
+                let members = members_stmt
+                    .query_map([id], |row| {
+                        Ok(ProphecyPatternMember {
+                            prophecy_id: row.get(0)?,
+                            passage: span(row.get(1)?, row.get(2)?),
+                            stage: row.get(3)?,
+                            label: row.get(4)?,
+                        })
+                    })?
+                    .collect::<rusqlite::Result<_>>()?;
+                prophecy.patterns.push(ProphecyPattern {
+                    id,
+                    title,
+                    note,
+                    members,
+                });
+            }
         }
         Ok(prophecies)
     }
@@ -7211,10 +7288,27 @@ mod tests {
         let matthew = bible.verse_prophecies(40, 2, 6).unwrap();
         assert!(matthew.iter().any(|p| p.id == micah[0].id));
 
-        // Daniel 2:44 has no fulfilment yet, and is still listed.
+        // Daniel 2:44: the stone falls in AD 70, the kingdom comes at the
+        // return.
         let daniel = bible.verse_prophecies(35, 2, 44).unwrap();
         assert_eq!(daniel[0].theme.as_deref(), Some("kingdom"));
-        assert_eq!(daniel[0].horizon.as_deref(), Some("second-advent"));
+        assert_eq!(daniel[0].stages, ["ad70", "return"]);
+
+        // The invasions from the north run from Babylon to the last Gog.
+        let gog = bible.verse_prophecies(14, 38, 2).unwrap();
+        let pattern = &gog[0].patterns[0];
+        assert_eq!(pattern.title, "Invasions from the north");
+        let stages: Vec<_> = pattern.members.iter().map(|m| m.stage.as_str()).collect();
+        assert_eq!(stages.first(), Some(&"history"));
+        assert_eq!(stages.last(), Some(&"millennium-end"));
+        // Matthew 24:30, the son of man coming in the clouds: AD 70.
+        let son_of_man = bible.verse_prophecies(35, 7, 13).unwrap();
+        let coming = son_of_man[0]
+            .fulfilments
+            .iter()
+            .find(|f| f.passage.first.book == 40 && f.passage.first.chapter == 24)
+            .unwrap();
+        assert_eq!(coming.stage, "ad70");
 
         let servant = ProphecyFilter {
             theme: Some("servant".into()),
