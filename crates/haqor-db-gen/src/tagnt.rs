@@ -1164,7 +1164,10 @@ pub fn build_greek(db: &Connection, src_texts: &Path) -> Result<GreekSummary> {
                 word,
                 lemma,
                 intern(&mut grammars, grammar),
-                intern(&mut englishes, english),
+                intern(
+                    &mut englishes,
+                    &crate::translation::replace_words(english, &crate::translation::ECCLESIA)
+                ),
                 name
             ])?;
         }

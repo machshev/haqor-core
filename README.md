@@ -222,6 +222,10 @@ footnotes and the Gospels' colophons are left out, and "lampstand" and
 "love" stand for his "candlestick" and "charity". His English renders no
 particular words.
 
+In all the English, the ULT's, the TR's word by word and Murdock's, ἐκκλησία is
+the "ecclesia" (plural "ecclesias") and never the "church"
+(`translation::ECCLESIA`), replaced as the tables are built.
+
 ### People, places and word senses
 
 `gen-runtime` also links every word of the Hebrew text that names a person,

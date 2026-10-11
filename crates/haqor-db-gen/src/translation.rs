@@ -52,6 +52,41 @@ CREATE TABLE translation_verse(ref INTEGER PRIMARY KEY, text BLOB NOT NULL);
 CREATE TABLE greek_translation_verse(ref INTEGER PRIMARY KEY, text BLOB NOT NULL);
 ";
 
+/// The English Haqor gives ἐκκλησία whatever a translation says: the
+/// ecclesia, the assembly of those called out, not a "church". Applied to
+/// every verse the build stores, and to the TR's English word by word.
+pub(crate) const ECCLESIA: [(&str, &str); 2] = [("church", "ecclesia"), ("churches", "ecclesias")];
+
+/// `text` with each of `words` replaced where it stands as a whole word, a
+/// capital kept.
+pub(crate) fn replace_words(text: &str, words: &[(&str, &str)]) -> String {
+    let mut out = String::new();
+    let mut word = String::new();
+    let flush = |word: &mut String, out: &mut String| {
+        let lower = word.to_lowercase();
+        match words.iter().find(|(old, _)| *old == lower) {
+            Some((_, new)) if word.starts_with(char::is_uppercase) => {
+                let mut chars = new.chars();
+                out.extend(chars.next().into_iter().flat_map(char::to_uppercase));
+                out.extend(chars);
+            }
+            Some((_, new)) => out.push_str(new),
+            None => out.push_str(word),
+        }
+        word.clear();
+    };
+    for c in text.chars() {
+        if c.is_ascii_alphabetic() {
+            word.push(c);
+        } else {
+            flush(&mut word, &mut out);
+            out.push(c);
+        }
+    }
+    flush(&mut word, &mut out);
+    out
+}
+
 /// Haqor's English for verses of the TR the ULT has none for, in
 /// `data_dir`: see [`read_supplement`].
 pub const SUPPLEMENT: &str = "tr_translation_supplement.tsv";
@@ -1419,6 +1454,9 @@ pub fn build_translation(
     }
     build.peshitta = verses.len() - before;
     build.peshitta_missing = peshitta.len() - build.peshitta;
+    for (_, english) in verses.iter_mut().chain(greek.iter_mut()) {
+        *english = replace_words(english, &ECCLESIA);
+    }
     build.bytes = write_verses(
         &tx,
         &[
@@ -1707,6 +1745,17 @@ mod tests {
         );
         assert_ne!(identity("תֹ֨הוּ֙", true), identity("תֹהוּ", true));
         assert_eq!(identity("תֹ֨הוּ֙", false), identity("תֹהוּ", false));
+    }
+
+    #[test]
+    fn calls_the_church_the_ecclesia() {
+        assert_eq!(
+            replace_words(
+                "Church [the church|6,5] [of the churches|3]; churchyard",
+                &ECCLESIA
+            ),
+            "Ecclesia [the ecclesia|6,5] [of the ecclesias|3]; churchyard"
+        );
     }
 
     #[test]

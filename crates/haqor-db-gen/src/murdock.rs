@@ -324,31 +324,7 @@ const MODERN_WORDS: [(&str, &str); 3] = [
 /// A verse with each of [`MODERN_WORDS`] replaced where it stands as a whole
 /// word, a capital kept.
 fn modernised(text: &str) -> String {
-    let mut out = String::new();
-    let mut word = String::new();
-    let flush = |word: &mut String, out: &mut String| {
-        let lower = word.to_lowercase();
-        match MODERN_WORDS.iter().find(|(old, _)| *old == lower) {
-            Some((_, new)) if word.starts_with(char::is_uppercase) => {
-                let mut chars = new.chars();
-                out.extend(chars.next().into_iter().flat_map(char::to_uppercase));
-                out.extend(chars);
-            }
-            Some((_, new)) => out.push_str(new),
-            None => out.push_str(word),
-        }
-        word.clear();
-    };
-    for c in text.chars() {
-        if c.is_ascii_alphabetic() {
-            word.push(c);
-        } else {
-            flush(&mut word, &mut out);
-            out.push(c);
-        }
-    }
-    flush(&mut word, &mut out);
-    out
+    crate::translation::replace_words(text, &MODERN_WORDS)
 }
 
 /// A verse's text in the stored form: Murdock's italics braced as supplied,
