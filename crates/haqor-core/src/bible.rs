@@ -5543,6 +5543,147 @@ impl Bible {
         .collect()
     }
 
+    /// Whether the database holds the Greek lexicons and roots: one built
+    /// before them does not.
+    fn has_greek_lexicon(&self) -> rusqlite::Result<bool> {
+        self.has_table("greek_root")
+    }
+
+    /// The roots the dictionary form `lemma` is built on, its first root
+    /// first: itself where it is derived from nothing given. Empty for a
+    /// database without them.
+    pub fn greek_roots(&self, lemma: &str) -> rusqlite::Result<Vec<String>> {
+        if lemma.is_empty() || !self.has_greek_lexicon()? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self
+            .db
+            .prepare_cached("SELECT root FROM data.greek_root WHERE lemma = ?1 ORDER BY ord")?;
+        stmt.query_map([lemma], |row| row.get(0))?.collect()
+    }
+
+    /// Abbott-Smith's and Thayer's entries for the dictionary form `lemma`,
+    /// Abbott-Smith's first.
+    pub fn greek_lexicon_entries(
+        &self,
+        lemma: &str,
+    ) -> rusqlite::Result<Vec<crate::greek::GreekLexiconEntry>> {
+        if lemma.is_empty() || !self.has_greek_lexicon()? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT d.source, d.headword, d.gloss, d.body FROM data.greek_dictionary_form f \
+             JOIN data.greek_dictionary d ON d.entry_id = f.entry_id \
+             WHERE f.lemma = ?1 ORDER BY d.source = 'thayer', d.entry_id",
+        )?;
+        self.greek_lexicon_rows(&mut stmt, [lemma])
+    }
+
+    /// The entry of `source` (`abbott-smith`, `thayer`) headed `headword`,
+    /// which another of its entries links to; `None` where it has none.
+    pub fn greek_lexicon_entry(
+        &self,
+        source: &str,
+        headword: &str,
+    ) -> rusqlite::Result<Option<crate::greek::GreekLexiconEntry>> {
+        if !self.has_greek_lexicon()? {
+            return Ok(None);
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT source, headword, gloss, body FROM data.greek_dictionary \
+             WHERE source = ?1 AND headword = ?2 ORDER BY entry_id LIMIT 1",
+        )?;
+        Ok(self
+            .greek_lexicon_rows(&mut stmt, [source, headword])?
+            .pop())
+    }
+
+    fn greek_lexicon_rows<P: rusqlite::Params>(
+        &self,
+        stmt: &mut rusqlite::CachedStatement<'_>,
+        params: P,
+    ) -> rusqlite::Result<Vec<crate::greek::GreekLexiconEntry>> {
+        let rows = stmt
+            .query_map(params, |row| {
+                Ok((
+                    row.get::<_, String>(0)?,
+                    row.get::<_, String>(1)?,
+                    row.get::<_, String>(2)?,
+                    row.get::<_, Vec<u8>>(3)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        rows.into_iter()
+            .map(|(source, headword, gloss, body)| {
+                Ok(crate::greek::GreekLexiconEntry {
+                    source,
+                    headword,
+                    gloss,
+                    body: self.blobs.decode(body)?,
+                })
+            })
+            .collect()
+    }
+
+    /// The dictionary forms of the TR built on `root`, the most used first,
+    /// each with its gloss and how many words of the text it is.
+    pub fn greek_root_lemmas(
+        &self,
+        root: &str,
+    ) -> rusqlite::Result<Vec<crate::greek::GreekRootLemma>> {
+        if root.is_empty() || !self.has_greek_lexicon()? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT r.lemma, \
+                    (SELECT l.gloss FROM data.greek_lemma l WHERE l.lemma = r.lemma \
+                     ORDER BY l.lemma_id LIMIT 1), \
+                    (SELECT count(*) FROM data.greek_word w \
+                     JOIN data.greek_lemma l ON l.lemma_id = w.lemma_id \
+                     WHERE l.lemma = r.lemma) AS uses \
+             FROM data.greek_root r WHERE r.root = ?1 \
+             ORDER BY uses DESC, r.lemma",
+        )?;
+        stmt.query_map([root], |row| {
+            Ok(crate::greek::GreekRootLemma {
+                lemma: row.get(0)?,
+                gloss: row.get::<_, Option<String>>(1)?.unwrap_or_default(),
+                occurrences: row.get(2)?,
+            })
+        })?
+        .collect()
+    }
+
+    /// Every word of the Greek text whose dictionary form is built on
+    /// `root`, in order, each with its dictionary form.
+    pub fn greek_root_occurrences(
+        &self,
+        root: &str,
+    ) -> rusqlite::Result<Vec<(crate::greek::GreekOccurrence, String)>> {
+        if root.is_empty() || !self.has_greek_lexicon()? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT w.ref, w.position, l.lemma FROM data.greek_root r \
+             JOIN data.greek_lemma l ON l.lemma = r.lemma \
+             JOIN data.greek_word w ON w.lemma_id = l.lemma_id \
+             WHERE r.root = ?1 ORDER BY w.ref, w.position",
+        )?;
+        stmt.query_map([root], |row| {
+            let reference: i64 = row.get(0)?;
+            Ok((
+                crate::greek::GreekOccurrence {
+                    book: (reference >> 16) as u8,
+                    chapter: ((reference >> 8) & 0xff) as u8,
+                    verse: (reference & 0xff) as u8,
+                    position: row.get(1)?,
+                },
+                row.get(2)?,
+            ))
+        })?
+        .collect()
+    }
+
     /// The person, place or other named thing the word at `position` of a
     /// verse names (STEP Bible's TIPNR, which tells apart those sharing a
     /// name), with everything known of it. `None` for a word naming none, the
@@ -6864,6 +7005,39 @@ mod tests {
             position: 4,
         }));
         assert!(bible.greek_word_at(43, 3, 16, 999).unwrap().is_none());
+    }
+
+    /// A Greek word has Abbott-Smith's and Thayer's entries, and the other
+    /// words built on its root with it. Skips a database built before them.
+    #[test]
+    fn greek_words_have_lexicon_entries_and_roots() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        if !bible.has_greek_lexicon().unwrap() {
+            eprintln!("skipping: haqor.db has no Greek lexicons");
+            return;
+        }
+        let entries = bible.greek_lexicon_entries("βίβλος").unwrap();
+        let sources: Vec<&str> = entries.iter().map(|e| e.source.as_str()).collect();
+        assert_eq!(sources, ["abbott-smith", "thayer"]);
+        let body: serde_json::Value = serde_json::from_str(&entries[0].body).unwrap();
+        assert!(body["senses"].as_array().is_some_and(|s| !s.is_empty()));
+        assert!(entries[0].body.contains("\"href\":\"Matthew 1:1\""));
+        assert_eq!(bible.greek_roots("λόγος").unwrap(), ["λέγω"]);
+        assert_eq!(bible.greek_roots("βίβλος").unwrap(), ["βίβλος"]);
+        let family = bible.greek_root_lemmas("βίβλος").unwrap();
+        let lemmas: Vec<&str> = family.iter().map(|l| l.lemma.as_str()).collect();
+        assert_eq!(lemmas, ["βιβλίον", "βίβλος", "βιβλαρίδιον"]);
+        assert!(family[0].occurrences > family[1].occurrences);
+        let occurrences = bible.greek_root_occurrences("βίβλος").unwrap();
+        let total: u32 = family.iter().map(|l| l.occurrences).sum();
+        assert_eq!(occurrences.len() as u32, total);
+        assert!(occurrences.iter().any(|(o, lemma)| lemma == "βίβλος"
+            && (o.book, o.chapter, o.verse, o.position) == (40, 1, 1, 0)));
+        let linked = bible
+            .greek_lexicon_entry("abbott-smith", "βιβλίον")
+            .unwrap();
+        assert_eq!(linked.unwrap().headword, "βιβλίον");
     }
 
     /// The Greek New Testament is the TR: its readings, its order and the

@@ -765,6 +765,11 @@ fn spans(html: &str, links: &Links) -> Vec<Value> {
         }
         stack.push(frame);
     }
+    for span in &mut out {
+        if let Some(text) = span["t"].as_str() {
+            span["t"] = json!(crate::tsk::yahweh_for_jehovah(text));
+        }
+    }
     out.retain(|s| s["t"].as_str().is_some_and(|t| !t.is_empty()));
     out
 }

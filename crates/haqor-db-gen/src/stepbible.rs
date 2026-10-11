@@ -368,7 +368,7 @@ fn read_tbesh(text: &str) -> HashMap<String, Sense> {
 
 /// Whether `text` holds what looks like a Strong's number (`H1234`, `G0965`),
 /// which no prepared file may.
-fn has_strong(text: &str) -> bool {
+pub(crate) fn has_strong(text: &str) -> bool {
     let bytes = text.as_bytes();
     bytes.windows(5).enumerate().any(|(at, w)| {
         matches!(w[0], b'H' | b'G')
@@ -390,6 +390,8 @@ pub struct PrepareSummary {
     pub unknown_names: usize,
     /// How the TR was put together from TAGNT and Scrivener.
     pub tr: crate::tagnt::Assembly,
+    /// The Greek lexicons joined to its dictionary forms.
+    pub lexicon: crate::greek_lexicon::LexiconSummary,
 }
 
 /// `db prepare stepbible`: read TAHOT, TIPNR and TBESH as published, laid out
@@ -561,6 +563,18 @@ pub fn prepare(from: &Path, out_dir: &Path) -> Result<PrepareSummary> {
         Some(index as u32 + 1)
     });
     summary.tr = assembly;
+    // Abbott-Smith and Thayer, joined to the dictionary forms by the Strong's
+    // numbers the three share, which go no further.
+    let forms: Vec<(String, u32)> = tr
+        .iter()
+        .filter_map(|word| {
+            let number = word.strong.strip_prefix('G')?;
+            let digits: String = number.chars().take_while(char::is_ascii_digit).collect();
+            Some((crate::tagnt::canonical(&word.lemma), digits.parse().ok()?))
+        })
+        .collect();
+    let (lexicon_out, roots_out, lexicon) = crate::greek_lexicon::prepare(from, &forms)?;
+    summary.lexicon = lexicon;
 
     std::fs::create_dir_all(out_dir)?;
     for (name, text) in [
@@ -569,6 +583,8 @@ pub fn prepare(from: &Path, out_dir: &Path) -> Result<PrepareSummary> {
         (PREPARED_NAMES, &names_out),
         (crate::tagnt::PREPARED_TR, &tr_out),
         (crate::tagnt::PREPARED_LEMMAS, &lemmas_out),
+        (crate::greek_lexicon::PREPARED_LEXICON, &lexicon_out),
+        (crate::greek_lexicon::PREPARED_ROOTS, &roots_out),
     ] {
         if let Some(line) = text.lines().find(|line| has_strong(line)) {
             bail!("a Strong's number would be written to {name}: {line}");

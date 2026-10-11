@@ -14,17 +14,29 @@ set -euo pipefail
 # Dr Maurice Robinson's public-domain transcription of Scrivener's TR
 # (greektext-scrivener) gives the TR's words their order and verses.
 #
+# Two Greek lexicons are joined to the TR's dictionary forms with them:
+# Abbott-Smith's Manual Greek Lexicon of the NT (1922) as the Translatable
+# Exegetical Tools project marks it up (public domain), and Thayer's
+# Greek-English Lexicon of the NT (1889) as a machine-read dataset gives it
+# (CC0). Their entries' Strong's numbers go no further than the join either.
+#
 # STEP Bible's files are joined by Strong's numbers, which Haqor does not
 # keep: `haqor db prepare stepbible` joins them and writes what the build
-# reads (tahot.tsv, senses.tsv, names.jsonl, tr.tsv, greek_lemmas.tsv), and
-# that is what is committed. This script downloads the published files at
-# pinned commits, verifies their checksums and prepares them; review the diff
-# before committing.
+# reads (tahot.tsv, senses.tsv, names.jsonl, tr.tsv, greek_lemmas.tsv,
+# greek_lexicon.jsonl, greek_roots.tsv), and that is what is committed. This
+# script downloads the published files at pinned commits, verifies their
+# checksums and prepares them; review the diff before committing.
 readonly commit="b86d26cdb1f51729e73b5b4eb7f7ccadc5dfba39"
 readonly destination="${1:-src_texts/STEPBible-Data}"
 readonly base_url="https://raw.githubusercontent.com/STEPBible/STEPBible-Data/${commit}"
 readonly scrivener_commit="6049a43b135ed870f843b83eb6a04764fc796678"
 readonly scrivener_url="https://raw.githubusercontent.com/byztxt/greektext-scrivener/${scrivener_commit}/textonly"
+readonly abbott_smith_commit="8c00cb244761aa23659421a8cbbbf7a3b27b7d59"
+readonly abbott_smith_url="https://raw.githubusercontent.com/translatable-exegetical-tools/Abbott-Smith/${abbott_smith_commit}/abbott-smith.tei_lemma.xml"
+readonly abbott_smith_sha256="265ddf84fe83368136e33c244cebfd7350c6b1107c1cf1747706228ebbb4f2c3"
+readonly thayer_commit="e4a42b1cea86c3cb592b3e87c350fac6e9c46b13"
+readonly thayer_url="https://raw.githubusercontent.com/nigelmsipa/thayers-greek-lexicon-dataset/${thayer_commit}/data/thayer_lexicon.jsonl"
+readonly thayer_sha256="837eceefc48f1a05b0f6aa031214c4c675536f3e4bfa0ea2b00dae1c22675526"
 
 readonly files=(
   "Translators Amalgamated OT+NT/TAHOT Gen-Deu - Translators Amalgamated Hebrew OT - STEPBible.org CC BY.txt"
@@ -99,12 +111,20 @@ for entry in "${scrivener_files[@]}"; do
   printf '%s  %s\n' "${checksum}" "${target}" | sha256sum --check --quiet -
 done
 
+mkdir -p "${work}/Abbott-Smith" "${work}/thayers-greek-lexicon-dataset"
+curl -sS -L --fail --retry 3 --output "${work}/Abbott-Smith/abbott-smith.tei_lemma.xml" "${abbott_smith_url}"
+printf '%s  %s\n' "${abbott_smith_sha256}" "${work}/Abbott-Smith/abbott-smith.tei_lemma.xml" | sha256sum --check --quiet -
+curl -sS -L --fail --retry 3 --output "${work}/thayers-greek-lexicon-dataset/thayer_lexicon.jsonl" "${thayer_url}"
+printf '%s  %s\n' "${thayer_sha256}" "${work}/thayers-greek-lexicon-dataset/thayer_lexicon.jsonl" | sha256sum --check --quiet -
+
 mkdir -p "${destination}"
 cargo run --release --quiet -p haqor-cli -- db prepare stepbible \
   --from "${work}" --to "${destination}"
 {
   printf '%s\n%s\n' "repository: https://github.com/STEPBible/STEPBible-Data" "commit: ${commit}"
   printf '%s\n%s\n' "repository: https://github.com/byztxt/greektext-scrivener" "commit: ${scrivener_commit}"
+  printf '%s\n%s\n' "repository: https://github.com/translatable-exegetical-tools/Abbott-Smith" "commit: ${abbott_smith_commit}"
+  printf '%s\n%s\n' "repository: https://github.com/nigelmsipa/thayers-greek-lexicon-dataset" "commit: ${thayer_commit}"
   printf 'prepared by haqor db prepare stepbible from:\n'
   for index in "${!files[@]}"; do
     printf '  %s  %s\n' "${checksums[index]}" "${files[index]}"
@@ -112,5 +132,7 @@ cargo run --release --quiet -p haqor-cli -- db prepare stepbible \
   for entry in "${scrivener_files[@]}"; do
     printf '  %s  greektext-scrivener/textonly/%s\n' "${entry%%  *}" "${entry##*  }"
   done
+  printf '  %s  Abbott-Smith/abbott-smith.tei_lemma.xml\n' "${abbott_smith_sha256}"
+  printf '  %s  thayers-greek-lexicon-dataset/data/thayer_lexicon.jsonl\n' "${thayer_sha256}"
 } > "${destination}/SOURCE"
-echo "Prepared STEP Bible TAHOT, TIPNR, TBESH, TAGNT and TBESG ${commit} and Scrivener ${scrivener_commit} into ${destination}"
+echo "Prepared STEP Bible TAHOT, TIPNR, TBESH, TAGNT and TBESG ${commit}, Scrivener ${scrivener_commit}, Abbott-Smith ${abbott_smith_commit} and Thayer ${thayer_commit} into ${destination}"

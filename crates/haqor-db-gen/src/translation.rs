@@ -1462,7 +1462,7 @@ fn has_table(db: &Connection, name: &str) -> Result<bool> {
 
 /// Whether the database stores its blobs compressed (`meta.blob_codec`).
 /// A database without a `meta` table, as the tests build, does not.
-fn compresses_blobs(db: &Connection) -> Result<bool> {
+pub(crate) fn compresses_blobs(db: &Connection) -> Result<bool> {
     if !has_table(db, "meta")? {
         return Ok(false);
     }
@@ -1482,7 +1482,7 @@ fn compresses_blobs(db: &Connection) -> Result<bool> {
 
 /// The id a zstd dictionary declares in its header, which the frames
 /// compressed with it repeat.
-fn dictionary_id(dictionary: &[u8]) -> Option<u32> {
+pub(crate) fn dictionary_id(dictionary: &[u8]) -> Option<u32> {
     Some(u32::from_le_bytes(dictionary.get(4..8)?.try_into().ok()?))
 }
 

@@ -6,6 +6,7 @@
 
 mod events;
 mod geocoding;
+mod greek_lexicon;
 mod harness;
 mod hebrew_db;
 mod journeys;
@@ -191,7 +192,9 @@ pub fn prepare(source: PreparedSource, from: &Path, to: &Path) -> Result<String>
                 "{} TAHOT words ({} with a sense, {} naming a person or place; {} naming one \
                  TIPNR lacks), {} senses and {} TIPNR records; {} TR words as Scrivener has \
                  them ({} tagged as TAGNT has them, {} spelled alike, {} by their spelling \
-                 elsewhere, {} untagged; {} of TAGNT's left out)",
+                 elsewhere, {} untagged; {} of TAGNT's left out); {} of Abbott-Smith's {} entries \
+                 and {} of Thayer's {} describing {} of the TR's {} dictionary forms, built \
+                 on {} roots",
                 s.words,
                 s.sense_words,
                 s.name_words,
@@ -203,7 +206,14 @@ pub fn prepare(source: PreparedSource, from: &Path, to: &Path) -> Result<String>
                 s.tr.alike,
                 s.tr.elsewhere,
                 s.tr.untagged,
-                s.tr.dropped
+                s.tr.dropped,
+                s.lexicon.abbott_smith.1,
+                s.lexicon.abbott_smith.0,
+                s.lexicon.thayer.1,
+                s.lexicon.thayer.0,
+                s.lexicon.described,
+                s.lexicon.forms,
+                s.lexicon.roots
             ))
         }
         PreparedSource::OpenbibleGeocoding => {

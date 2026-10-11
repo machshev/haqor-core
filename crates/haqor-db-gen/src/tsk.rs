@@ -189,6 +189,22 @@ pub(crate) fn name_the_lord(phrase: &str) -> String {
     out
 }
 
+/// Write "Yahweh" for "Jehovah" in a lexicon's prose, as [`name_the_lord`]
+/// does for a TSK phrase: "strength of Jehovah" is "strength of Yahweh",
+/// "Jehovah’s help" "Yahweh’s help". Where a lexicon speaks of the
+/// transliteration itself (Klein's "The usual transliteration ‘Jehovah’ is
+/// based on …") the word is the subject, and is kept.
+pub(crate) fn yahweh_for_jehovah(text: &str) -> String {
+    const SPOKEN_OF: &str = "transliteration ‘Jehovah’";
+    text.split(SPOKEN_OF)
+        .map(|part| {
+            part.replace("Jehovah", "Yahweh")
+                .replace("JEHOVAH", "YAHWEH")
+        })
+        .collect::<Vec<_>>()
+        .join(SPOKEN_OF)
+}
+
 /// One line of `tskxref.txt`: a key phrase of a verse and its reference groups.
 #[derive(Debug, PartialEq, Eq)]
 struct Entry {
@@ -415,6 +431,19 @@ pub fn gen_tsk(path: &Path, src_texts: &Path) -> Result<TskSummary> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn a_lexicon_names_yahweh_where_it_wrote_jehovah() {
+        assert_eq!(
+            yahweh_for_jehovah("strength of Jehovah, i. e. Jehovah’s help"),
+            "strength of Yahweh, i. e. Yahweh’s help"
+        );
+        let klein = "The usual transliteration ‘Jehovah’ is based on a guess; read Jehovah.";
+        assert_eq!(
+            yahweh_for_jehovah(klein),
+            "The usual transliteration ‘Jehovah’ is based on a guess; read Yahweh."
+        );
+    }
 
     #[test]
     fn books_map_to_tanakh_order() {

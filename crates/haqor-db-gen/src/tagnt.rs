@@ -1179,6 +1179,7 @@ pub fn build_greek(db: &Connection, src_texts: &Path) -> Result<GreekSummary> {
         }
     }
     tx.commit()?;
+    crate::greek_lexicon::build(db, &dir)?;
     info!(
         "Greek: {} TR words in {} verses ({} untagged, {} naming a person or place), {} \
          dictionary forms",

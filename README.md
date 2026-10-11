@@ -295,6 +295,23 @@ cargo run --release -- db gen-greek   # rebuild the tables alone
 
 `Bible::greek_chapter` reads a chapter.
 
+Each dictionary form has Abbott-Smith's and Thayer's entries
+(`greek_dictionary`, the forms each describes in `greek_dictionary_form`)
+and the roots it is built on (`greek_root`). An entry finds its forms by the
+Strong's numbers TAGNT and the lexicon share, or failing those its spelling;
+like STEP Bible's, the numbers are used up while the sources are prepared.
+A form's root is where its derivation ends — Abbott-Smith's `(< λέγω)`,
+Thayer's `(fr. ἀγαθοποιός)`, a compound's hyphenated last element
+(`ἐκ-βάλλω`) — followed back to a word derived from nothing given; a
+compound of two words has both roots, its last element's first, and a
+preposition, privative or adverb prefixed to a word is none. Of the TR's
+5,419 dictionary forms, 5,409 have an entry, built on 2,698 roots. Both
+lexicons write "Yahweh" for the divine name where they had "Jehovah". They
+are prepared with STEP Bible's, into `src_texts/STEPBible-Data/`
+(`greek_lexicon.jsonl`, `greek_roots.tsv`). `Bible::greek_lexicon_entries`,
+`Bible::greek_roots`, `Bible::greek_root_lemmas` and
+`Bible::greek_root_occurrences` read them.
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:
@@ -361,7 +378,19 @@ Haqor is redistributed.
 Targumim, the Talmud Babli and Yerushalmi, and the Midrashic Literature*
 (Luzac, London, 1903), in the public domain, from the
 [digitisation by Sefaria](https://www.sefaria.org/Jastrow). Filtered and
-converted in the same way as Klein.
+converted in the same way as Klein, with "Yahweh" written for "Jehovah".
+
+**Greek lexicons** — G. Abbott-Smith, *A Manual Greek Lexicon of the New
+Testament* (Scribner's, New York, 1922), in the public domain, as the
+[Translatable Exegetical Tools project](https://github.com/translatable-exegetical-tools/Abbott-Smith)
+marks it up in TEI; and J. H. Thayer, *A Greek-English Lexicon of the New
+Testament* (1889), in the public domain, as a
+[machine-read dataset](https://github.com/nigelmsipa/thayers-greek-lexicon-dataset)
+released under CC0 gives it. The dataset has had a single reading pass and
+is not proofread; an entry split over a page is joined. Haqor vendors both
+in a prepared form with STEP Bible's (`scripts/fetch-stepbible-data.sh`),
+keyed by the TR's dictionary forms, their derivations followed to each
+word's root and "Yahweh" written for "Jehovah".
 
 **Interlinear translations** — STEP Bible's
 [TAHOT dataset](https://github.com/STEPBible/STEPBible-Data), licensed CC BY

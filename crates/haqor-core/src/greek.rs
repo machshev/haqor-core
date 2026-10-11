@@ -32,6 +32,29 @@ pub struct GreekOccurrence {
     pub position: u32,
 }
 
+/// An entry of a Greek lexicon: Abbott-Smith's (`abbott-smith`) or Thayer's
+/// (`thayer`).
+#[derive(Clone, Debug, PartialEq, Eq)]
+pub struct GreekLexiconEntry {
+    pub source: String,
+    pub headword: String,
+    /// Its gloss, empty where the lexicon gives none apart from the entry.
+    pub gloss: String,
+    /// The entry as span JSON: `senses`, each with its `definition` spans
+    /// and the senses within it, and `forms`, `etymology`, `lxx` and
+    /// `related` spans beside them.
+    pub body: String,
+}
+
+/// A dictionary form of the TR built on a root, with its gloss and how many
+/// words of the text it is.
+#[derive(Clone, Debug, PartialEq, Eq)]
+pub struct GreekRootLemma {
+    pub lemma: String,
+    pub gloss: String,
+    pub occurrences: u32,
+}
+
 /// A verse of the Greek text.
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct GreekVerse {
