@@ -467,6 +467,10 @@ mod tests {
             .find(|f| f.artifact.key == "isaiah-scroll")
             .unwrap();
         assert_eq!(scroll.verses, (1..=12).collect::<Vec<u8>>());
+        // 1 Samuel 11 has the Samuel scroll's lost paragraph, at verse 1.
+        let samuel = bible.chapter_artifacts(9, 11).unwrap();
+        let scroll = samuel.iter().find(|f| f.artifact.key == "4qsam-a").unwrap();
+        assert!(scroll.verses.contains(&1), "{:?}", scroll.verses);
     }
 
     #[test]

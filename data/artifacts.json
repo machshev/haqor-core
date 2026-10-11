@@ -3347,6 +3347,565 @@
           "source": "wikipedia"
         }
       ]
+    },
+    {
+      "id": "ipuwer-papyrus",
+      "name": "Ipuwer Papyrus",
+      "other_names": ["Admonitions of Ipuwer", "Papyrus Leiden I 344"],
+      "kind": "papyrus",
+      "date": "copied c. 1250 BC; composed in the Middle Kingdom",
+      "year": -1250,
+      "script": "Egyptian hieratic, in ink on papyrus",
+      "found": { "site": "Egypt; sold by Giovanni Anastasi to the Dutch government in 1828" },
+      "museum": "Rijksmuseum van Oudheden, Leiden",
+      "wikipedia": "Ipuwer Papyrus",
+      "wikidata": "Q1474863",
+      "summary": "A poem in which the sage Ipuwer laments Egypt overturned: the river is blood, the land dark, cattle moaning, the poor made rich and slaves wearing their masters' gold, and the dead buried everywhere. Some have read it as an Egyptian account of the plagues of the Exodus.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Exo.7.20",
+          "to": "Exo.7.21",
+          "strength": "possible",
+          "how": "\"The river is blood\". Most Egyptologists read the poem as a lament for civil chaos in a stock Middle Kingdom form, composed centuries before any date for the Exodus; it has Asiatics coming into Egypt, not leaving it, and the red river may be flood silt or a figure of speech.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Exo.9.3",
+          "to": "Exo.9.6",
+          "strength": "possible",
+          "how": "\"All animals, their hearts weep; cattle moan because of the state of the land.\"",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Exo.9.25",
+          "strength": "possible",
+          "how": "Trees cut down and grain perished on every side, like the hail and the locusts; but the poem lays it to neglect and disorder, not to a stroke from heaven.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Exo.10.22",
+          "strength": "possible",
+          "how": "The land without light, as the darkness over Egypt.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Exo.12.29",
+          "to": "Exo.12.30",
+          "strength": "possible",
+          "how": "Burials everywhere and wailing throughout the land, as on the night of the firstborn; the poem names no firstborn.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Exo.12.35",
+          "to": "Exo.12.36",
+          "strength": "possible",
+          "how": "Gold, lapis lazuli, silver and turquoise hung on the necks of slave women, as Israel asked Egypt for silver and gold; in the poem it is the poor grown rich, not slaves departing.",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "Included because it is often cited as confirming the plagues; every link is 'possible' and says why. Line numbers beyond 2.10 not given: check against Lichtheim or Enmarch before adding any."
+    },
+    {
+      "id": "pesher-habakkuk",
+      "name": "Habakkuk Commentary",
+      "other_names": ["Pesher Habakkuk", "1QpHab"],
+      "kind": "manuscript",
+      "date": "late 1st century BC",
+      "year": -25,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 1", "year": 1947 },
+      "museum": "Israel Museum, Jerusalem (Shrine of the Book)",
+      "wikipedia": "Habakkuk Commentary",
+      "wikidata": "Q3490992",
+      "summary": "Habakkuk's first two chapters, a few lines at a time, each followed by the community's reading of it as fulfilled in their own day: the Kittim (Romans), the Teacher of Righteousness and the Wicked Priest.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Hab.1.1",
+          "to": "Hab.2.20",
+          "strength": "strong",
+          "how": "A copy of the text, quoted in full piece by piece; it stops at the end of chapter 2.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Hab.2.4",
+          "strength": "strong",
+          "how": "\"The righteous shall live by his faith\", read of those who keep the law and are faithful to the Teacher of Righteousness; Paul reads the same verse in Romans 1:17 and Galatians 3:11.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "4qsam-a",
+      "name": "Samuel scroll from Cave 4",
+      "other_names": ["4QSamᵃ", "4Q51"],
+      "kind": "manuscript",
+      "date": "c. 50–25 BC",
+      "year": -40,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4", "year": 1952 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "wikipedia": "The Samuel Scroll",
+      "wikidata": "Q24515372",
+      "summary": "The largest biblical scroll from Cave 4, with parts of most chapters of 1 and 2 Samuel, often agreeing with the Septuagint and Chronicles against the Masoretic text.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "1Sa.1.1",
+          "to": "2Sa.24.25",
+          "strength": "reasonable",
+          "how": "A copy of the text, in fragments: not every verse survives.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "1Sa.10.27",
+          "to": "1Sa.11.1",
+          "strength": "strong",
+          "how": "A paragraph missing from the Masoretic text: Nahash had been gouging out the right eyes of the Gadites and Reubenites, and seven thousand had fled to Jabesh-gilead. Josephus knew it too.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "1Sa.17.4",
+          "strength": "strong",
+          "how": "Goliath is \"four cubits and a span\" tall, about two metres, as in the Septuagint, where the Masoretic text has six cubits.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "great-psalms-scroll",
+      "name": "Great Psalms Scroll",
+      "other_names": ["11QPsᵃ", "11Q5"],
+      "kind": "manuscript",
+      "date": "1st century AD",
+      "year": 40,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 11", "year": 1956 },
+      "wikipedia": "Great Psalms Scroll",
+      "wikidata": "Q964740",
+      "summary": "About fifty songs, some forty of them psalms of the Psalter, mostly from its later books and in an order of their own, mixed with others, among them Psalm 151 and a prose note crediting David with 4,050 compositions.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Psa.101.1",
+          "to": "Psa.150.6",
+          "strength": "reasonable",
+          "how": "Copies of many of these psalms, in another order and with gaps.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Psa.145.13",
+          "strength": "strong",
+          "how": "Psalm 145 is an acrostic, but the Masoretic text has no verse for the letter nun; the scroll has it: \"God is faithful in his words, and gracious in all his deeds\", as the Septuagint.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "4qdeut-j",
+      "name": "Deuteronomy scroll 4QDeutʲ",
+      "other_names": ["4Q37"],
+      "kind": "manuscript",
+      "date": "1st century BC or AD",
+      "year": -25,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4", "year": 1952 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "summary": "Fragments of Deuteronomy and Exodus, notable for its reading of the Song of Moses.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Deu.32.8",
+          "strength": "strong",
+          "how": "The Most High fixed the bounds of the peoples \"according to the number of the sons of God\", where the Masoretic text has \"sons of Israel\" and the Septuagint \"angels of God\".",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "No Wikipedia article; its date is unverified. The 32:8 reading is standard (DJD XIV)."
+    },
+    {
+      "id": "4qdeut-q",
+      "name": "Deuteronomy scroll 4QDeutᑫ",
+      "other_names": ["4Q44"],
+      "kind": "manuscript",
+      "date": "c. 50 BC–AD 25",
+      "year": -10,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4", "year": 1952 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "summary": "A small scroll that seems to have held only the Song of Moses (32:9–10 and 37–43 survive), with a longer ending than the Masoretic text.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Deu.32.43",
+          "strength": "strong",
+          "how": "\"Bow down to him, all you gods\", a line missing from the Masoretic text; the Septuagint has it as \"let all the angels of God worship him\", which Hebrews 1:6 quotes.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Heb.1.6",
+          "strength": "reasonable",
+          "how": "Hebrews quotes the longer Song of Moses that the scroll shows existed in Hebrew.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "4qjer-b",
+      "name": "Jeremiah scroll 4QJerᵇ",
+      "other_names": ["4Q71"],
+      "kind": "manuscript",
+      "date": "2nd–1st century BC",
+      "year": -100,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4", "year": 1952 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "wikipedia": "Book of Jeremiah",
+      "summary": "A fragment of Jeremiah in the shorter form the Septuagint translates, showing that the Greek's shorter Jeremiah goes back to a Hebrew text.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Jer.9.21",
+          "to": "Jer.10.21",
+          "strength": "strong",
+          "how": "Lacks verses 10:6–8 and 10, and puts verse 9 in another place, as the Septuagint does.",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "Date disputed: Tov dates it c. 200 BC, Wikipedia's Cave 4 list says Herodian. Check against DJD XV."
+    },
+    {
+      "id": "4qdan-c",
+      "name": "Daniel scroll 4QDanᶜ",
+      "other_names": ["4Q114"],
+      "kind": "manuscript",
+      "date": "late 2nd century BC",
+      "year": -115,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4", "year": 1952 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "wikipedia": "Book of Daniel",
+      "summary": "One of the oldest copies of Daniel, among eight from Qumran, written within a lifetime of the date critics give the book.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Dan.10.5",
+          "to": "Dan.11.29",
+          "strength": "reasonable",
+          "how": "A copy of the text, in fragments.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "1qdan-a",
+      "name": "Daniel scroll 1QDanᵃ",
+      "other_names": ["1Q71"],
+      "kind": "manuscript",
+      "date": "c. 125 BC–AD 50",
+      "year": -40,
+      "script": "Hebrew and Aramaic, in ink on parchment",
+      "found": { "site": "Qumran Cave 1", "year": 1947 },
+      "museum": "Israel Museum, Jerusalem",
+      "wikipedia": "Book of Daniel",
+      "summary": "Fragments of Daniel 1 and 2.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Dan.2.4",
+          "strength": "strong",
+          "how": "The text turns from Hebrew to Aramaic at the same point as the Masoretic text, where the Chaldeans answer the king \"in Aramaic\"; 4QDanᵃ, ᵇ and ᵈ keep the switch too.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "4qpaleoexod-m",
+      "name": "Paleo-Hebrew Exodus scroll",
+      "other_names": ["4QpaleoExodᵐ", "4Q22"],
+      "kind": "manuscript",
+      "date": "c. 100–25 BC",
+      "year": -60,
+      "script": "Paleo-Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4", "year": 1952 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "wikipedia": "Paleo-Hebrew alphabet",
+      "summary": "Large parts of Exodus in the old Hebrew script, with the longer, harmonised text later kept by the Samaritan Pentateuch.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Exo.6.25",
+          "to": "Exo.37.16",
+          "strength": "reasonable",
+          "how": "A copy of the text, in fragments, with additions repeating earlier speeches as the Samaritan text does.",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "Extent beyond 6:25–7:19 and the Samaritan-type expansions are from DJD IX, not checked against Wikipedia."
+    },
+    {
+      "id": "job-targum",
+      "name": "Job targum from Cave 11",
+      "other_names": ["11QtgJob", "11Q10"],
+      "kind": "manuscript",
+      "date": "c. 50 BC–AD 50",
+      "year": 0,
+      "script": "Aramaic, in ink on parchment",
+      "found": { "site": "Qumran Cave 11", "year": 1956 },
+      "museum": "Israel Museum, Jerusalem",
+      "wikipedia": "Targum",
+      "summary": "An Aramaic translation of Job, the oldest written targum known, which ends at Job 42:11.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Job.17.14",
+          "to": "Job.42.11",
+          "strength": "reasonable",
+          "how": "A translation of the text, in fragments, ending at 42:11.",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "Extent 17:14–42:11 unverified against Wikipedia; whether to call it a targum is now debated."
+    },
+    {
+      "id": "4q-testimonia",
+      "name": "Testimonia",
+      "other_names": ["4QTestimonia", "4Q175"],
+      "kind": "manuscript",
+      "date": "early 1st century BC",
+      "year": -90,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4", "year": 1952 },
+      "museum": "Israel Museum, Jerusalem",
+      "wikipedia": "4Q175",
+      "wikidata": "Q2816935",
+      "summary": "A single sheet stringing together passages about the figures the community awaited: a prophet like Moses, a star out of Jacob, and a faithful priest. Its scribe also copied the Community Rule.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Deu.18.18",
+          "to": "Deu.18.19",
+          "strength": "strong",
+          "how": "\"I will raise up for them a prophet like you\", quoted of an awaited prophet.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Num.24.15",
+          "to": "Num.24.17",
+          "strength": "strong",
+          "how": "Balaam's \"star out of Jacob\", quoted of an awaited ruler.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Act.3.22",
+          "to": "Act.3.23",
+          "strength": "reasonable",
+          "how": "Peter reads the prophet like Moses of Jesus: the same passage, awaited as a figure still to come.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Jhn.6.14",
+          "strength": "reasonable",
+          "how": "\"This is indeed the Prophet who is to come into the world\": the same expectation.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "4q-florilegium",
+      "name": "Florilegium",
+      "other_names": ["4QFlorilegium", "4Q174"],
+      "kind": "manuscript",
+      "date": "1st century BC",
+      "year": -20,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4", "year": 1952 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "summary": "A reading of Nathan's promise to David and of Psalms 1 and 2 as foretelling the last days, when the \"branch of David\" would arise.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "2Sa.7.10",
+          "to": "2Sa.7.14",
+          "strength": "strong",
+          "how": "\"I will be his father and he shall be my son\" read of the branch of David to come.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Psa.2.1",
+          "to": "Psa.2.2",
+          "strength": "strong",
+          "how": "The nations raging against the Lord and his anointed, read of the last days.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Heb.1.5",
+          "strength": "reasonable",
+          "how": "Hebrews joins the same two passages, Psalm 2:7 and 2 Samuel 7:14, of God's son: a pairing already made at Qumran.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "4q246",
+      "name": "Son of God text",
+      "other_names": ["Aramaic Apocalypse", "4Q246"],
+      "kind": "manuscript",
+      "date": "late 1st century BC",
+      "year": -25,
+      "script": "Aramaic, in ink on parchment",
+      "found": { "site": "Qumran Cave 4" },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "wikipedia": "4Q246",
+      "wikidata": "Q4207111",
+      "summary": "A fragment of a vision of the last days: \"He will be called son of God, and they will call him son of the Most High... his kingdom will be an everlasting kingdom.\"",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Luk.1.32",
+          "to": "Luk.1.35",
+          "strength": "reasonable",
+          "how": "\"He will be great and will be called the Son of the Most High... of his kingdom there will be no end... he will be called the Son of God\": the same titles, in nearly the same words. Whether the scroll's figure is a messiah or a usurping king such as Antiochus IV is debated.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "4q521",
+      "name": "Messianic Apocalypse",
+      "other_names": ["4Q521"],
+      "kind": "manuscript",
+      "date": "early 1st century BC",
+      "year": -90,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4", "year": 1952 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "wikipedia": "4Q521",
+      "wikidata": "Q4638959",
+      "summary": "\"Heaven and earth will listen to his messiah\" (or messiahs)... he will \"heal the badly wounded, make the dead live, and proclaim good news to the poor\".",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Mat.11.4",
+          "to": "Mat.11.5",
+          "strength": "reasonable",
+          "how": "Jesus answers John with the same signs, the dead raised and good news preached to the poor, a pairing not in Isaiah 61 itself.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Luk.7.22",
+          "strength": "reasonable",
+          "how": "The same answer in Luke.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Isa.61.1",
+          "strength": "reasonable",
+          "how": "Draws on Isaiah's anointed one who brings good news to the poor.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "11q-melchizedek",
+      "name": "Melchizedek scroll",
+      "other_names": ["11QMelchizedek", "11Q13"],
+      "kind": "manuscript",
+      "date": "composed c. 100 BC; copied c. 75–25 BC",
+      "year": -50,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 11", "year": 1956 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "wikipedia": "11Q13",
+      "wikidata": "Q4547749",
+      "summary": "Melchizedek as a heavenly deliverer who proclaims liberty at the last jubilee, atones, and judges Belial, read from Leviticus 25, Isaiah 61 and Isaiah 52:7.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Heb.7.1",
+          "to": "Heb.7.3",
+          "strength": "possible",
+          "how": "Melchizedek as more than a man, without beginning of days; Hebrews and the scroll each make him exalted, in different ways.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Isa.52.7",
+          "strength": "strong",
+          "how": "\"How beautiful upon the mountains are the feet of him who brings good news\", quoted and expounded.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "4qmmt",
+      "name": "Halakhic Letter",
+      "other_names": ["4QMMT", "Some of the Works of the Law"],
+      "kind": "manuscript",
+      "date": "composed c. 150 BC; copies c. 75 BC–AD 50",
+      "year": -25,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 4" },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "wikipedia": "4QMMT",
+      "wikidata": "Q238185",
+      "summary": "A letter setting out where its writers differ from the Temple authorities on purity and sacrifice, urging the reader to study \"the book of Moses and the books of the prophets and David\".",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Luk.24.44",
+          "strength": "reasonable",
+          "how": "\"The law of Moses and the prophets and the psalms\": the same threefold naming of the scriptures, though the scroll's reading is partly restored.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "7q5",
+      "name": "7Q5",
+      "kind": "papyrus",
+      "date": "c. 50 BC–AD 50",
+      "year": 0,
+      "script": "Greek, in ink on papyrus",
+      "found": { "site": "Qumran Cave 7", "year": 1955 },
+      "museum": "Israel Antiquities Authority, Jerusalem",
+      "wikipedia": "7Q5",
+      "wikidata": "Q1720865",
+      "summary": "A scrap of Greek papyrus with about eighteen letters, some of them uncertain, published in 1962 as unidentified.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Mrk.6.52",
+          "to": "Mrk.6.53",
+          "strength": "possible",
+          "how": "José O'Callaghan proposed in 1972 that it is Mark 6:52–53, which would make it the oldest New Testament text; to fit, it needs a variant and an omission, and most scholars reject it.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "nahal-hever-psalms",
+      "name": "Nahal Hever Psalms scroll",
+      "other_names": ["5/6HevPs"],
+      "kind": "manuscript",
+      "date": "1st century AD",
+      "year": 50,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Nahal Hever, Judean Desert" },
+      "museum": "Rockefeller Museum, Jerusalem",
+      "wikipedia": "Nahal Hever",
+      "wikidata": "Q2915124",
+      "summary": "Fragments of Psalms from a cave of the Bar Kokhba refugees, close to the Masoretic text.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Psa.22.17",
+          "strength": "possible",
+          "how": "Where the Masoretic text has \"like a lion, my hands and my feet\", it reads a verb, \"they dug\" or \"pierced\", as the Septuagint's \"they pierced\"; the reading of the letters is disputed.",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "Date and the k'rw reading unverified against Wikipedia; the reading is disputed in the literature, hence 'possible'."
     }
   ]
 }
