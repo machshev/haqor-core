@@ -78,13 +78,17 @@ fn default_stage(passage: Span) -> &'static str {
 }
 
 /// The stages of a prophecy: those the curation names for it and those of
-/// its fulfilments, in [`STAGES`]' order, space separated.
+/// its fulfilments (not the other Gospels' parallel accounts, which fulfil
+/// nothing), in [`STAGES`]' order, space separated.
 fn stages_of(p: &Prophecy) -> String {
     STAGES
         .iter()
         .copied()
         .filter(|stage| {
-            p.stages.iter().any(|s| s == stage) || p.fulfilments.iter().any(|f| f.stage == *stage)
+            p.stages.iter().any(|s| s == stage)
+                || p.fulfilments
+                    .iter()
+                    .any(|f| f.stage == *stage && f.kind != "parallel")
         })
         .collect::<Vec<_>>()
         .join(" ")
