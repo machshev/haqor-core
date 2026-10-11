@@ -1219,6 +1219,94 @@ pub struct ThematicVerse {
     pub references: Vec<ThematicReference>,
 }
 
+/// A prophecy of the Old Testament and the passages that fulfil it, where the
+/// Bible records any: Haqor's curation, with the NT citation formulas found
+/// linked to it at build time (see `haqor-db-gen`'s `prophecy` module).
+#[derive(Debug, Clone, PartialEq)]
+pub struct Prophecy {
+    pub id: u32,
+    pub passage: VerseSpan,
+    /// Empty for a prophecy found from a citation formula alone.
+    pub title: String,
+    /// One of [`PROPHECY_THEMES`], if it has one.
+    pub theme: Option<String>,
+    /// Whether it concerns Christ.
+    pub messianic: bool,
+    /// `first-advent`, `second-advent`, `both` or `history`, if known.
+    pub horizon: Option<String>,
+    /// Curated, rather than found from a citation formula alone.
+    pub curated: bool,
+    pub note: String,
+    pub fulfilments: Vec<ProphecyFulfilment>,
+}
+
+/// A passage fulfilling a [`Prophecy`]: an NT quotation, allusion or type, or
+/// a narrative of the event, in either testament.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ProphecyFulfilment {
+    pub passage: VerseSpan,
+    /// The verses of the prophecy it takes up.
+    pub prophecy_verses: VerseSpan,
+    /// `quotation`, `allusion`, `type` or `event`.
+    pub kind: String,
+    /// The citation formula found introducing it (`fulfilled`, `spoken`,
+    /// `written`, `scripture`, joined by `+`), if one was.
+    pub formula: Option<String>,
+    /// Curated, rather than found and not yet reviewed.
+    pub reviewed: bool,
+    /// `high` or `medium` for a found link not yet reviewed.
+    pub confidence: Option<String>,
+    pub note: String,
+}
+
+/// The themes a [`Prophecy`] may have, in the order a reader lists them: the
+/// promises concerning Christ, then prophecy in general.
+pub const PROPHECY_THEMES: &[&str] = &[
+    "seed-of-woman",
+    "abrahamic",
+    "davidic",
+    "servant",
+    "kingdom",
+    "priest",
+    "israel",
+    "nations",
+    "empires",
+];
+
+/// Which prophecies [`Bible::prophecies`] lists. `book` (either testament)
+/// keeps those whose passage or a fulfilment lies in it, within the inclusive
+/// chapter bounds; without it every book is searched.
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct ProphecyFilter {
+    pub book: Option<u8>,
+    pub first_chapter: Option<u8>,
+    pub last_chapter: Option<u8>,
+    pub theme: Option<String>,
+    /// Only messianic prophecies (`Some(true)`) or only general ones.
+    pub messianic: Option<bool>,
+}
+
+impl ProphecyFilter {
+    /// The packed refs the filter spans, inclusive.
+    fn bounds(&self) -> (i64, i64) {
+        match self.book {
+            Some(book) => (
+                pack_ref(book, self.first_chapter.unwrap_or(0), 0),
+                pack_ref(book, self.last_chapter.unwrap_or(255), 255),
+            ),
+            None => (0, i64::MAX),
+        }
+    }
+}
+
+/// The prophecies whose passage or a fulfilment touches the verses `?1..=?2`,
+/// of theme `?3` (any if NULL) and messianic flag `?4` (either if NULL).
+const PROPHECIES_TOUCHING: &str = "FROM data.prophecy p \
+     WHERE ((p.ot_ref <= ?2 AND p.ot_end >= ?1) \
+        OR EXISTS(SELECT 1 FROM data.prophecy_fulfilment f \
+                  WHERE f.prophecy_id = p.prophecy_id AND f.ref <= ?2 AND f.end_ref >= ?1)) \
+       AND (?3 IS NULL OR p.theme = ?3) AND (?4 IS NULL OR p.messianic = ?4)";
+
 /// Two verses linked by a quotation, an echo or a parallel passage: an NT
 /// verse quoting the OT, or two verses of one testament sharing wording
 /// (parallel accounts, repeated oracles, synoptic parallels). Found at build
@@ -5091,6 +5179,106 @@ impl Bible {
         Ok(counts)
     }
 
+    /// The prophecies of `filter`, in the order of their passages, each with
+    /// its fulfilments. `limit` and `offset` page through them. Empty for a
+    /// database built before the tables existed.
+    pub fn prophecies(
+        &self,
+        filter: &ProphecyFilter,
+        limit: u32,
+        offset: u32,
+    ) -> rusqlite::Result<Vec<Prophecy>> {
+        let (low, high) = filter.bounds();
+        self.query_prophecies(low, high, filter, limit, offset)
+    }
+
+    /// How many prophecies [`Bible::prophecies`] would list for `filter`
+    /// without a limit, for a caller paging through them.
+    pub fn prophecy_count(&self, filter: &ProphecyFilter) -> rusqlite::Result<u32> {
+        if !self.has_table("prophecy")? {
+            return Ok(0);
+        }
+        let (low, high) = filter.bounds();
+        self.db.query_row(
+            &format!("SELECT COUNT(*) {PROPHECIES_TOUCHING}"),
+            rusqlite::params![low, high, filter.theme, filter.messianic],
+            |row| row.get(0),
+        )
+    }
+
+    /// The prophecies one verse belongs to: as part of a prophecy's passage,
+    /// or of a passage fulfilling one.
+    pub fn verse_prophecies(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+    ) -> rusqlite::Result<Vec<Prophecy>> {
+        let reference = pack_ref(book, chapter, verse);
+        self.query_prophecies(reference, reference, &ProphecyFilter::default(), u32::MAX, 0)
+    }
+
+    fn query_prophecies(
+        &self,
+        low: i64,
+        high: i64,
+        filter: &ProphecyFilter,
+        limit: u32,
+        offset: u32,
+    ) -> rusqlite::Result<Vec<Prophecy>> {
+        if !self.has_table("prophecy")? {
+            return Ok(Vec::new());
+        }
+        let span = |first: i64, last: i64| VerseSpan {
+            first: VerseRef::unpack(first),
+            last: VerseRef::unpack(last),
+        };
+        let mut prophecies = self
+            .db
+            .prepare_cached(&format!(
+                "SELECT p.prophecy_id, p.ot_ref, p.ot_end, p.title, p.theme, p.messianic, \
+                        p.horizon, p.curated, p.note \
+                 {PROPHECIES_TOUCHING} ORDER BY p.ot_ref, p.ot_end LIMIT ?5 OFFSET ?6"
+            ))?
+            .query_map(
+                rusqlite::params![low, high, filter.theme, filter.messianic, limit, offset],
+                |row| {
+                    Ok(Prophecy {
+                        id: row.get(0)?,
+                        passage: span(row.get(1)?, row.get(2)?),
+                        title: row.get(3)?,
+                        theme: row.get(4)?,
+                        messianic: row.get(5)?,
+                        horizon: row.get(6)?,
+                        curated: row.get(7)?,
+                        note: row.get(8)?,
+                        fulfilments: Vec::new(),
+                    })
+                },
+            )?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let mut stmt = self.db.prepare_cached(
+            "SELECT ref, end_ref, ot_ref, ot_end, kind, formula, reviewed, confidence, note \
+             FROM data.prophecy_fulfilment WHERE prophecy_id = ?1 ORDER BY ord",
+        )?;
+        for prophecy in &mut prophecies {
+            prophecy.fulfilments = stmt
+                .query_map([prophecy.id], |row| {
+                    Ok(ProphecyFulfilment {
+                        passage: span(row.get(0)?, row.get(1)?),
+                        prophecy_verses: span(row.get(2)?, row.get(3)?),
+                        kind: row.get(4)?,
+                        formula: row.get(5)?,
+                        reviewed: row.get(6)?,
+                        confidence: row.get(7)?,
+                        note: row.get(8)?,
+                    })
+                })?
+                .collect::<rusqlite::Result<_>>()?;
+        }
+        Ok(prophecies)
+    }
+
     /// The `thematic_reference` rows of the verses `low..=high`, in order.
     fn query_thematic_references(
         &self,
@@ -6825,6 +7013,61 @@ mod tests {
             malachi.iter().map(|r| r.targets.len()).sum::<usize>()
         );
         assert!(bible.thematic_references(26, 4, 1).unwrap().is_empty());
+    }
+
+    /// A prophecy is found from its own passage and from a fulfilment; the
+    /// listing filters by book, theme and whether it is messianic.
+    #[test]
+    fn prophecies_link_both_ways() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        if bible.prophecy_count(&ProphecyFilter::default()).unwrap() == 0 {
+            eprintln!("skipping: data/haqor.db has no prophecy tables");
+            return;
+        }
+        // Micah 5:2 in the KJV is 5:1 in the Hebrew text.
+        let micah = bible.verse_prophecies(20, 5, 1).unwrap();
+        assert!(micah[0].title.contains("Bethlehem"));
+        assert_eq!(micah[0].theme.as_deref(), Some("davidic"));
+        assert!(micah[0].messianic);
+        let matthew = bible.verse_prophecies(40, 2, 6).unwrap();
+        assert!(matthew.iter().any(|p| p.id == micah[0].id));
+
+        // Daniel 2:44 has no fulfilment yet, and is still listed.
+        let daniel = bible.verse_prophecies(35, 2, 44).unwrap();
+        assert_eq!(daniel[0].theme.as_deref(), Some("kingdom"));
+        assert_eq!(daniel[0].horizon.as_deref(), Some("second-advent"));
+
+        let servant = ProphecyFilter {
+            theme: Some("servant".into()),
+            ..ProphecyFilter::default()
+        };
+        let count = bible.prophecy_count(&servant).unwrap();
+        let listed = bible.prophecies(&servant, 100, 0).unwrap();
+        assert_eq!(listed.len() as u32, count);
+        assert!(listed.iter().all(|p| p.theme.as_deref() == Some("servant")));
+        let order = |v: VerseRef| (v.book, v.chapter, v.verse);
+        assert!(
+            listed
+                .windows(2)
+                .all(|w| order(w[0].passage.first) <= order(w[1].passage.first))
+        );
+
+        // Acts, in which Isaiah 53 is read to the eunuch (8:32-35).
+        let acts = ProphecyFilter {
+            book: Some(44),
+            first_chapter: Some(8),
+            last_chapter: Some(8),
+            messianic: Some(true),
+            ..ProphecyFilter::default()
+        };
+        let in_acts = bible.prophecies(&acts, 100, 0).unwrap();
+        assert!(in_acts.iter().any(|p| p.passage.first.chapter == 52));
+        let general = ProphecyFilter {
+            messianic: Some(false),
+            ..ProphecyFilter::default()
+        };
+        assert!(bible.prophecies(&general, 500, 0).unwrap().iter().all(|p| !p.messianic));
     }
 
     /// The quotation table links well-known quotations in both directions and

@@ -305,6 +305,21 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// Rebuild the `prophecy` tables of a runtime haqor.db in place
+    /// (gen-runtime also builds them): Haqor's curated prophecies with the
+    /// NT citation formulas found linked to them.
+    GenProphecy {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Haqor's prophecies and their fulfilments.
+        #[arg(long, default_value = "data/prophecies.json")]
+        prophecies: PathBuf,
+        /// Source texts directory holding STEPBible-Data, for the KJV/Hebrew
+        /// verse numbering.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     /// Rebuild the people, places and word senses of a runtime haqor.db in
     /// place (gen-runtime also builds them), from STEP Bible's TIPNR and
     /// TBESH and OpenBible.info's geocoding, with the events of the Bible
@@ -649,6 +664,23 @@ fn main() -> Result<()> {
                     db.display(),
                     summary.unparsed,
                     summary.missing
+                );
+            }
+            DbCommands::GenProphecy {
+                db,
+                prophecies,
+                src_texts,
+            } => {
+                let summary = haqor_db_gen::gen_prophecy(&db, &prophecies, &src_texts)?;
+                println!(
+                    "Wrote {} curated and {} found prophecies with {} fulfilments to {} \
+                     ({} found links confirmed curated ones, {} added)",
+                    summary.curated,
+                    summary.found,
+                    summary.fulfilments,
+                    db.display(),
+                    summary.confirmed,
+                    summary.added
                 );
             }
             DbCommands::GenNames {

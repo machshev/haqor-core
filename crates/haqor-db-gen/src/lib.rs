@@ -15,6 +15,7 @@ mod names;
 mod occurrences;
 mod oshb;
 mod prefilter;
+mod prophecy;
 mod proper_names;
 mod quotations;
 mod runtime_db;
@@ -43,6 +44,7 @@ pub use lexicon_db::{
 };
 pub use names::{NamesSummary, build_names, gen_names};
 pub use occurrences::parse_ot_coverage;
+pub use prophecy::{PROPHECIES, ProphecySummary, build_prophecies, gen_prophecy};
 pub use quotations::{
     GenQuotesOptions, KNOWN_FALSE, KNOWN_PARALLELS, KNOWN_QUOTATIONS, LinkKind, Matcher,
     MatcherParams, build_quotations, explain_pair, gen_quotes, ref_label,

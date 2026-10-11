@@ -1,0 +1,1676 @@
+{
+  "sources": [
+    {
+      "id": "mykytiuk-2014",
+      "citation": "Lawrence Mykytiuk, \"Archaeology Confirms 50 Real People in the Bible\", Biblical Archaeology Review 40:2 (March/April 2014), with its web endnotes",
+      "url": "https://www.biblicalarchaeology.org/daily/people-cultures-in-the-bible/people-in-the-bible/50-people-in-the-bible-confirmed-archaeologically/"
+    },
+    {
+      "id": "mykytiuk-2017",
+      "citation": "Lawrence Mykytiuk, \"Archaeology Confirms 3 More Bible People\", Biblical Archaeology Review 43:3 (May/June 2017)",
+      "url": "https://www.biblicalarchaeology.org/daily/people-cultures-in-the-bible/people-in-the-bible/50-people-in-the-bible-confirmed-archaeologically/"
+    },
+    {
+      "id": "wikipedia",
+      "citation": "Wikipedia, the article on the find (CC BY-SA 4.0)",
+      "url": "https://en.wikipedia.org/wiki/List_of_inscriptions_in_biblical_archaeology"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "merneptah-stele",
+      "name": "Merneptah Stele",
+      "other_names": ["Israel Stele"],
+      "kind": "stele",
+      "date": "c. 1208 BC",
+      "year": -1208,
+      "script": "Egyptian hieroglyphs",
+      "found": { "site": "Thebes (Luxor), Egypt", "year": 1896 },
+      "museum": "Egyptian Museum, Cairo",
+      "wikipedia": "Merneptah Stele",
+      "wikidata": "Q754378",
+      "summary": "Pharaoh Merneptah's victory hymn, which lists among the peoples of Canaan he defeated \"Israel\", written with the sign for a people rather than a land: the earliest mention of Israel outside the Bible.",
+      "attests": [],
+      "passages": [],
+      "note": "Names Israel as a people in Canaan by about 1208 BC. TIPNR has no record for Israel the people (only Jacob, Israel@Gen.25.26), so it is linked to nothing and shows in no chapter; it would show in a list of all finds. Should it be tied to a passage, such as Judges 1, or left unlinked?"
+    },
+    {
+      "id": "deir-alla-inscription",
+      "name": "Deir Alla inscription",
+      "other_names": ["Balaam inscription"],
+      "kind": "inscription",
+      "date": "c. 800 BC",
+      "year": -800,
+      "script": "Aramaic or a Canaanite dialect, in ink on plaster",
+      "found": { "site": "Tell Deir Alla, Jordan valley", "year": 1967 },
+      "museum": "Jordan Museum, Amman",
+      "wikipedia": "Deir Alla inscription",
+      "wikidata": "Q2893219",
+      "summary": "A text painted on a plastered wall telling of a night vision of \"Balaam son of Beor, a seer of the gods\".",
+      "attests": [
+        {
+          "key": "Balaam@Num.22.5",
+          "name": "Balaam",
+          "strength": "reasonable",
+          "how": "Named with his father and his calling, as in Numbers 22:5, but written centuries after the Bible sets him: it shows a Balaam tradition in Transjordan, not that the inscription is of his time.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "bubastite-portal",
+      "name": "Bubastite Portal",
+      "other_names": ["Shoshenq I's campaign relief at Karnak"],
+      "kind": "relief",
+      "date": "c. 925 BC",
+      "year": -925,
+      "script": "Egyptian hieroglyphs",
+      "found": { "site": "Temple of Amun, Karnak, Egypt" },
+      "museum": "In place at Karnak",
+      "wikipedia": "Bubastite Portal",
+      "wikidata": "Q4982146",
+      "summary": "Shoshenq I's record of his campaign into Canaan, with the names of the towns he took, among them Megiddo, Taanach, Beth-shean, Gibeon and Mahanaim. A fragment of his victory stele was also found at Megiddo.",
+      "attests": [
+        {
+          "key": "Shishak@1Ki.11.40",
+          "name": "Shishak",
+          "strength": "strong",
+          "how": "Shoshenq I is the Bible's Shishak, who invaded Judah in Rehoboam's fifth year.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "1Ki.14.25",
+          "to": "1Ki.14.26",
+          "strength": "reasonable",
+          "how": "Shishak's campaign. The surviving list names towns in Israel and the Negev rather than Jerusalem, which the Bible says paid him off.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "2Ch.12.2",
+          "to": "2Ch.12.9",
+          "strength": "reasonable",
+          "how": "The same campaign, with the fortified cities of Judah taken.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "mesha-stele",
+      "name": "Mesha Stele",
+      "other_names": ["Moabite Stone"],
+      "kind": "stele",
+      "date": "c. 840 BC",
+      "year": -840,
+      "script": "Moabite",
+      "found": { "site": "Dhiban (Dibon), Jordan", "year": 1868, "key": "Dibon@Num.21.30" },
+      "museum": "Louvre, Paris",
+      "wikipedia": "Mesha Stele",
+      "wikidata": "Q724954",
+      "summary": "King Mesha of Moab's account of throwing off Israel's rule after \"Omri king of Israel\" and his son had oppressed Moab, of taking Israelite towns such as Ataroth and Nebo, and of carrying off the vessels of Yahweh.",
+      "attests": [
+        {
+          "key": "Mesha@2Ki.3.4",
+          "name": "Mesha",
+          "strength": "strong",
+          "how": "\"I am Mesha son of Chemosh-[yat], king of Moab, the Dibonite\" (lines 1–2).",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Omri@1Ki.16.16",
+          "name": "Omri",
+          "strength": "strong",
+          "how": "\"Omri was king of Israel and oppressed Moab many days\" (lines 4–5, 7).",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "David@Rut.4.17",
+          "name": "David",
+          "strength": "reasonable",
+          "how": "Line 31 is read by many as \"house of [D]avid\", but one letter is damaged and the reading is disputed.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.3.4",
+          "to": "2Ki.3.27",
+          "strength": "strong",
+          "how": "Moab's revolt against Israel, from Moab's side.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "kurkh-monolith",
+      "name": "Kurkh Monolith of Shalmaneser III",
+      "kind": "stele",
+      "date": "c. 852 BC",
+      "year": -852,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Kurkh (Üçtepe), Turkey", "year": 1861 },
+      "museum": "British Museum, London",
+      "wikipedia": "Kurkh Monoliths",
+      "wikidata": "Q1793123",
+      "summary": "Shalmaneser III's account of the battle of Qarqar in 853 BC, where a coalition including Hadadezer of Damascus and \"Ahab the Israelite\", with 2,000 chariots, stood against him.",
+      "attests": [
+        {
+          "key": "Ahab@1Ki.16.28",
+          "name": "Ahab",
+          "strength": "strong",
+          "how": "\"Ahab the Israelite\" among the kings at Qarqar.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [],
+      "note": "Also names Hadadezer (Adad-idri) of Damascus, whom Mykytiuk counts; TIPNR's only Hadadezer is David's foe (2Sa.8.3), and the Bible calls Ahab's Damascene rival Ben-hadad, so he is not linked."
+    },
+    {
+      "id": "black-obelisk",
+      "name": "Black Obelisk of Shalmaneser III",
+      "kind": "relief",
+      "date": "c. 827 BC",
+      "year": -827,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Nimrud (Calah), Iraq", "year": 1846 },
+      "museum": "British Museum, London",
+      "wikipedia": "Black Obelisk of Shalmaneser III",
+      "wikidata": "Q1471650",
+      "summary": "A carved obelisk of the tribute brought to Shalmaneser III, with a panel of \"Jehu of the house of Omri\" (or his envoy) bowing before the king: the only picture of a king of Israel or Judah from his time.",
+      "attests": [
+        {
+          "key": "Jehu@1Ki.19.16",
+          "name": "Jehu",
+          "strength": "strong",
+          "how": "\"The tribute of Jehu of the house of Omri\" (Assyrian Bit-Humri, the name for Israel).",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Hazael@1Ki.19.15",
+          "name": "Hazael",
+          "strength": "strong",
+          "how": "Shalmaneser's wars with Hazael of Damascus.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "tel-dan-stele",
+      "name": "Tel Dan Stele",
+      "other_names": ["House of David inscription"],
+      "kind": "stele",
+      "date": "c. 840–800 BC",
+      "year": -820,
+      "script": "Old Aramaic",
+      "found": { "site": "Tel Dan, Israel", "year": 1993, "key": "Dan@Gen.14.14" },
+      "museum": "Israel Museum, Jerusalem",
+      "wikipedia": "Tel Dan stele",
+      "wikidata": "Q516354",
+      "summary": "Fragments of an Aramean king's victory stele, most likely Hazael's, boasting of killing a king of Israel and a king of the \"house of David\": the first mention of David found outside the Bible.",
+      "attests": [
+        {
+          "key": "David@Rut.4.17",
+          "name": "David",
+          "strength": "strong",
+          "how": "\"The house of David\" (bytdwd), Judah's royal line, about 150 years after him.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.9.14",
+          "to": "2Ki.9.28",
+          "strength": "possible",
+          "how": "The king of Israel and king of the house of David it boasts of killing are usually restored as Joram son of Ahab and Ahaziah son of Joram, whom the Bible says Jehu killed. The names are restored and the claim differs from the Bible's.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "melqart-stele",
+      "name": "Melqart stele",
+      "other_names": ["Bar-Hadad inscription"],
+      "kind": "stele",
+      "date": "c. 800 BC",
+      "year": -800,
+      "script": "Old Aramaic",
+      "found": { "site": "Near Aleppo, Syria", "year": 1939 },
+      "museum": "National Museum of Aleppo",
+      "wikipedia": "Melqart stele",
+      "wikidata": "Q96392571",
+      "summary": "A stele set up to the god Melqart by Bar-Hadad, king of Aram.",
+      "attests": [
+        {
+          "key": "Ben-hadad@2Ki.6.24",
+          "name": "Ben-hadad",
+          "strength": "reasonable",
+          "how": "Mykytiuk reads the dedicator as Ben-hadad son of Hadadezer, king of Aram; the line naming his father is worn and read in several ways.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "zakkur-stele",
+      "name": "Stele of Zakkur",
+      "kind": "stele",
+      "date": "c. 785 BC",
+      "year": -785,
+      "script": "Old Aramaic",
+      "found": { "site": "Tell Afis, Syria", "year": 1903 },
+      "museum": "Louvre, Paris",
+      "wikipedia": "Stele of Zakkur",
+      "wikidata": "Q144745",
+      "summary": "King Zakkur of Hamath's thanks to his god for saving him from a siege by a coalition led by \"Bar-Hadad son of Hazael, king of Aram\".",
+      "attests": [
+        {
+          "key": "Ben-hadad@2Ki.13.3",
+          "name": "Ben-hadad",
+          "strength": "strong",
+          "how": "\"Bar-Hadad son of Hazael, king of Aram\" (lines 4–5): name, father and title as in 2 Kings 13:3.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Hazael@1Ki.19.15",
+          "name": "Hazael",
+          "strength": "strong",
+          "how": "Named as Bar-Hadad's father.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "tell-al-rimah-stela",
+      "name": "Tell al-Rimah stela of Adad-nirari III",
+      "kind": "stele",
+      "date": "c. 797 BC",
+      "year": -797,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Tell al-Rimah, Iraq", "year": 1967 },
+      "wikipedia": "Tell al-Rimah stela",
+      "summary": "Adad-nirari III's record of tribute received in the west, from \"Joash the Samarian\" among others.",
+      "attests": [
+        {
+          "key": "Joash@2Ki.13.9",
+          "name": "Joash",
+          "strength": "strong",
+          "how": "\"Joash (Iu'asu) the Samarian\", king of Israel.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "shema-seal",
+      "name": "Seal of Shema, servant of Jeroboam",
+      "kind": "seal",
+      "date": "8th century BC",
+      "year": -770,
+      "script": "Hebrew",
+      "found": { "site": "Megiddo, Israel", "year": 1904, "key": "Megiddo@Jos.12.21" },
+      "museum": "Lost; a bronze cast survives",
+      "wikipedia": "Shema seal",
+      "summary": "A jasper seal with a roaring lion, inscribed \"Belonging to Shema, servant of Jeroboam\".",
+      "attests": [
+        {
+          "key": "Jeroboam@2Ki.13.13",
+          "name": "Jeroboam",
+          "strength": "reasonable",
+          "how": "\"Servant\" was a royal official's title. Most date the seal to Jeroboam II; a few to Jeroboam I.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "uzziah-servant-seals",
+      "name": "Seals of Abiyaw and Shubnayaw, servants of Uzziah",
+      "kind": "seal",
+      "date": "8th century BC",
+      "year": -760,
+      "script": "Hebrew",
+      "summary": "Two seals of royal officials, each \"servant of Uzziah\".",
+      "attests": [
+        {
+          "key": "Uzziah@2Ki.14.21",
+          "name": "Uzziah",
+          "strength": "strong",
+          "how": "Officials' seals naming the king they served.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [],
+      "note": "Neither seal has a find site or a museum I could confirm; check before shipping."
+    },
+    {
+      "id": "tiglath-pileser-iii-inscriptions",
+      "name": "Annals and summary inscriptions of Tiglath-pileser III",
+      "other_names": ["Nimrud Tablet K.3751"],
+      "kind": "inscription",
+      "date": "c. 740–728 BC",
+      "year": -735,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Nimrud (Calah), Iraq" },
+      "museum": "British Museum, London (among others)",
+      "wikipedia": "Tiglath-Pileser III",
+      "summary": "Tiglath-pileser III's records of his western campaigns: the tribute of Menahem of Samaria and Rezin of Damascus; the Israelites' overthrow of Pekah and his setting up Hoshea in his place; and the tribute of \"Jehoahaz (Ahaz) of Judah\", the first mention of Judah outside the Bible.",
+      "attests": [
+        {
+          "key": "Tiglath-pileser@2Ki.15.19",
+          "name": "Tiglath-pileser",
+          "strength": "strong",
+          "how": "His own inscriptions. The Bible also calls him Pul, his name as king of Babylon.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Menahem@2Ki.15.14",
+          "name": "Menahem",
+          "strength": "strong",
+          "how": "\"Menahem of Samaria\" among the tributaries (Calah annals).",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Pekah@2Ki.15.25",
+          "name": "Pekah",
+          "strength": "strong",
+          "how": "\"They overthrew Pekah their king\" (Summary Inscription 4, lines 15–17).",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Hoshea@2Ki.15.30",
+          "name": "Hoshea",
+          "strength": "strong",
+          "how": "\"I placed Hoshea as king over them\" (Summary Inscription 4).",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Rezin@2Ki.15.37",
+          "name": "Rezin",
+          "strength": "strong",
+          "how": "Rezin (Rahianu) of Damascus, a tributary and then besieged.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Ahaz@2Ki.15.38",
+          "name": "Ahaz",
+          "strength": "strong",
+          "how": "\"Jehoahaz of Judah\" among the tributaries (Summary Inscription 7, K.3751): Ahaz's full name.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.15.19",
+          "to": "2Ki.15.20",
+          "strength": "strong",
+          "how": "Menahem pays the king of Assyria tribute.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "from": "2Ki.15.29",
+          "to": "2Ki.15.30",
+          "strength": "strong",
+          "how": "Pekah overthrown and Hoshea made king; Galilee taken.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "from": "2Ki.16.7",
+          "to": "2Ki.16.9",
+          "strength": "strong",
+          "how": "Ahaz's tribute, and Damascus taken and Rezin killed.",
+          "source": "mykytiuk-2014"
+        }
+      ]
+    },
+    {
+      "id": "iran-stele",
+      "name": "Iran Stele of Tiglath-pileser III",
+      "kind": "stele",
+      "date": "c. 737 BC",
+      "year": -737,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Western Iran (not from an excavation)" },
+      "wikipedia": "Iran Stele",
+      "summary": "A stele of Tiglath-pileser III listing kings of the west who paid him tribute.",
+      "attests": [
+        {
+          "key": "Menahem@2Ki.15.14",
+          "name": "Menahem",
+          "strength": "strong",
+          "how": "\"Menahem of Samaria\" among the tributaries.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Rezin@2Ki.15.37",
+          "name": "Rezin",
+          "strength": "strong",
+          "how": "Rezin of Damascus among the tributaries.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Tiglath-pileser@2Ki.15.19",
+          "name": "Tiglath-pileser",
+          "strength": "strong",
+          "how": "His own stele.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.15.19",
+          "to": "2Ki.15.20",
+          "strength": "strong",
+          "how": "Menahem's tribute.",
+          "source": "mykytiuk-2014"
+        }
+      ]
+    },
+    {
+      "id": "babylonian-chronicle-1",
+      "name": "Babylonian Chronicle of the Assyrian kings",
+      "other_names": ["ABC 1", "BM 92502"],
+      "kind": "tablet",
+      "date": "Copied 500 BC; covers 745–668 BC",
+      "year": -700,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Babylon, Iraq" },
+      "museum": "British Museum, London",
+      "wikipedia": "Babylonian Chronicles",
+      "wikidata": "Q1061346",
+      "summary": "A year-by-year chronicle that records Shalmaneser V \"ravaged Samaria\", Merodach-baladan's reign in Babylon, and Sennacherib's murder \"by his son in a rebellion\".",
+      "attests": [
+        {
+          "key": "Shalmaneser@2Ki.17.3",
+          "name": "Shalmaneser",
+          "strength": "strong",
+          "how": "Shalmaneser V's accession and his ravaging of Samaria (Shamara'in).",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Merodach-baladan@2Ki.20.12",
+          "name": "Merodach-baladan",
+          "strength": "strong",
+          "how": "Marduk-apla-iddina II's kingship in Babylon.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Sennacherib@2Ki.18.13",
+          "name": "Sennacherib",
+          "strength": "strong",
+          "how": "His reign and his death.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.17.5",
+          "to": "2Ki.17.6",
+          "strength": "reasonable",
+          "how": "Shalmaneser's siege of Samaria. The chronicle says he ravaged it; the Bible's \"king of Assyria\" who took it may be Shalmaneser or Sargon II.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "2Ki.19.37",
+          "strength": "strong",
+          "how": "Sennacherib killed by his son, and Esarhaddon king after him. The Bible names two sons.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "sargon-ii-annals",
+      "name": "Annals of Sargon II",
+      "other_names": ["Khorsabad inscriptions"],
+      "kind": "inscription",
+      "date": "c. 710 BC",
+      "year": -710,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Khorsabad (Dur-Sharrukin), Iraq", "year": 1843 },
+      "museum": "Louvre, Paris (among others)",
+      "summary": "Sargon II's records from his palace, including his campaign against Ashdod in 711 BC and his claim to have taken Samaria and carried off 27,290 of its people. Fragments of a stele he set up at Ashdod were found there.",
+      "attests": [
+        {
+          "key": "So@2Ki.17.4",
+          "name": "So",
+          "strength": "possible",
+          "how": "Mykytiuk takes So as Osorkon IV, named in Sargon's records as Shilkanni king of Egypt; the identification of So is disputed.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Isa.20.1",
+          "strength": "strong",
+          "how": "Sargon's commander takes Ashdod: the one place the Bible names Sargon.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "from": "2Ki.17.6",
+          "strength": "reasonable",
+          "how": "Samaria taken and its people deported. Sargon claims it; the Babylonian Chronicle credits Shalmaneser V.",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "TIPNR files Sargon (Isa 20:1) under Sennacherib's record (Sennacherib@2Ki.18.13), so Sargon himself is not linked: linking would put Sargon's annals on every Sennacherib chapter. A Sargon record could be split out, as place_overrides.json splits places."
+    },
+    {
+      "id": "sennacherib-annals",
+      "name": "Annals of Sennacherib",
+      "other_names": ["Taylor Prism", "Oriental Institute Prism", "Rassam Cylinder"],
+      "kind": "prism",
+      "date": "700–689 BC",
+      "year": -691,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Nineveh, Iraq", "key": "Nineveh@Gen.10.11" },
+      "museum": "British Museum, London; Oriental Institute, Chicago; Israel Museum, Jerusalem",
+      "wikipedia": "Sennacherib's Annals",
+      "wikidata": "Q578076",
+      "summary": "Sennacherib's account of his campaign of 701 BC: 46 walled cities of Judah taken, and Hezekiah shut up in Jerusalem \"like a bird in a cage\", paying 30 talents of gold and 800 of silver. He does not claim to have taken Jerusalem.",
+      "attests": [
+        {
+          "key": "Hezekiah@2Ki.16.20",
+          "name": "Hezekiah",
+          "strength": "strong",
+          "how": "\"Hezekiah the Judahite\", shut up in Jerusalem.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Sennacherib@2Ki.18.13",
+          "name": "Sennacherib",
+          "strength": "strong",
+          "how": "His own annals.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.18.13",
+          "to": "2Ki.18.16",
+          "strength": "strong",
+          "how": "The fortified cities of Judah taken and Hezekiah's tribute; both give it as thirty talents of gold.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "2Ki.18.17",
+          "to": "2Ki.19.36",
+          "strength": "reasonable",
+          "how": "The siege of Jerusalem, which both say was not taken; the annals are silent on why Sennacherib withdrew.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Isa.36.1",
+          "strength": "strong",
+          "how": "The fortified cities of Judah taken.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "2Ch.32.1",
+          "strength": "strong",
+          "how": "Sennacherib's invasion of Judah.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "lachish-reliefs",
+      "name": "Lachish reliefs",
+      "kind": "relief",
+      "date": "c. 700–681 BC",
+      "year": -695,
+      "script": "Assyrian reliefs, with an Akkadian caption",
+      "found": { "site": "Sennacherib's palace, Nineveh, Iraq", "year": 1847, "key": "Nineveh@Gen.10.11" },
+      "museum": "British Museum, London",
+      "wikipedia": "Lachish reliefs",
+      "wikidata": "Q17007389",
+      "summary": "Carved panels from Sennacherib's palace showing his siege and capture of Lachish in 701 BC: siege ramps, the city's defenders, and its people led away, with the king receiving the spoil.",
+      "attests": [
+        {
+          "key": "Sennacherib@2Ki.18.13",
+          "name": "Sennacherib",
+          "strength": "strong",
+          "how": "Shown enthroned before Lachish, with a caption naming him.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.18.14",
+          "strength": "strong",
+          "how": "Sennacherib at Lachish, where Hezekiah sends to him.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "2Ki.19.8",
+          "strength": "strong",
+          "how": "Sennacherib has left Lachish.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "2Ch.32.9",
+          "strength": "strong",
+          "how": "Sennacherib besieging Lachish with all his forces.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "hezekiah-bulla",
+      "name": "Royal bulla of Hezekiah",
+      "kind": "bulla",
+      "date": "c. 727–698 BC",
+      "year": -710,
+      "script": "Hebrew",
+      "found": { "site": "Ophel, Jerusalem", "year": 2009, "key": "Jerusalem@Gen.14.18" },
+      "summary": "A clay seal impression from a royal building, with a winged sun and the words \"Belonging to Hezekiah [son of] Ahaz, king of Judah\". Found in Eilat Mazar's excavations and published in 2015.",
+      "attests": [
+        {
+          "key": "Hezekiah@2Ki.16.20",
+          "name": "Hezekiah",
+          "strength": "strong",
+          "how": "His own seal: name, father and title.",
+          "source": "mykytiuk-2017"
+        },
+        {
+          "key": "Ahaz@2Ki.15.38",
+          "name": "Ahaz",
+          "strength": "strong",
+          "how": "Named as Hezekiah's father.",
+          "source": "mykytiuk-2017"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "siloam-inscription",
+      "name": "Siloam inscription",
+      "kind": "inscription",
+      "date": "c. 700 BC",
+      "year": -700,
+      "script": "Paleo-Hebrew",
+      "found": { "site": "Hezekiah's Tunnel, Jerusalem", "year": 1880, "key": "Jerusalem@Gen.14.18" },
+      "museum": "Istanbul Archaeology Museums",
+      "wikipedia": "Siloam inscription",
+      "wikidata": "Q744869",
+      "summary": "Carved in the rock tunnel that brings the Gihon spring's water into the city, telling how two teams cut toward each other until \"the stonecutters struck, each to meet his fellow, axe against axe\".",
+      "attests": [],
+      "passages": [
+        {
+          "from": "2Ki.20.20",
+          "strength": "reasonable",
+          "how": "Hezekiah's pool and conduit bringing water into the city. The inscription names no king; the tunnel is dated to his time.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "2Ch.32.30",
+          "strength": "reasonable",
+          "how": "Hezekiah stops the upper outlet of the Gihon and brings the water down to the west side of the City of David.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "broad-wall",
+      "name": "Broad Wall",
+      "kind": "site",
+      "date": "Late 8th century BC",
+      "year": -701,
+      "found": { "site": "Jewish Quarter, Jerusalem", "year": 1970, "key": "Jerusalem@Gen.14.18" },
+      "museum": "In place",
+      "wikipedia": "Broad Wall (Jerusalem)",
+      "wikidata": "Q262874",
+      "summary": "A city wall about 7 m thick, found by Nahman Avigad, built over houses on the western hill as Jerusalem grew in Hezekiah's time.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Isa.22.10",
+          "strength": "reasonable",
+          "how": "Houses torn down to fortify the wall.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Neh.3.8",
+          "strength": "possible",
+          "how": "\"The Broad Wall\" repaired in Nehemiah's day, usually taken to be this wall.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "merodach-baladan-kudurru",
+      "name": "Boundary stone of Merodach-baladan II",
+      "kind": "stele",
+      "date": "c. 715 BC",
+      "year": -715,
+      "script": "Akkadian cuneiform",
+      "museum": "Vorderasiatisches Museum, Berlin",
+      "summary": "A boundary stone (kudurru) recording Marduk-apla-iddina II's grant of land to an official, with the king shown standing before him.",
+      "attests": [
+        {
+          "key": "Merodach-baladan@2Ki.20.12",
+          "name": "Merodach-baladan",
+          "strength": "strong",
+          "how": "Marduk-apla-iddina II, king of Babylon, shown and named.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.20.12",
+          "strength": "reasonable",
+          "how": "His envoys to Hezekiah, of whom the stone says nothing; it attests the king.",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "I could not confirm its Wikipedia page; the museum number is usually given as VA 2663."
+    },
+    {
+      "id": "adrammelech-letter",
+      "name": "Letter to Esarhaddon naming Arda-Mullissi",
+      "other_names": ["ABL 1091"],
+      "kind": "tablet",
+      "date": "c. 681 BC",
+      "year": -681,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Nineveh, Iraq", "key": "Nineveh@Gen.10.11" },
+      "summary": "A letter warning of a plot, naming Sennacherib's son Arda-Mullissi as the one behind it: the evidence Simo Parpola used to identify Sennacherib's murderer.",
+      "attests": [
+        {
+          "key": "Adrammelech@2Ki.19.37",
+          "name": "Adrammelech",
+          "strength": "strong",
+          "how": "Arda-Mullissi, Sennacherib's son, as the Bible's Adrammelech.",
+          "source": "mykytiuk-2017"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.19.37",
+          "strength": "strong",
+          "how": "Sennacherib murdered by his son Adrammelech.",
+          "source": "mykytiuk-2017"
+        }
+      ],
+      "note": "Mykytiuk's 2017 article is the source for Adrammelech; check the letter's museum number and find site against it."
+    },
+    {
+      "id": "esarhaddon-prism",
+      "name": "Prism of Esarhaddon (Nineveh B)",
+      "kind": "prism",
+      "date": "c. 673 BC",
+      "year": -673,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Nineveh, Iraq", "key": "Nineveh@Gen.10.11" },
+      "summary": "Esarhaddon's list of the 22 kings of the west who sent materials for his palace, among them \"Manasseh king of Judah\". Ashurbanipal's Cylinder C names him again.",
+      "attests": [
+        {
+          "key": "Manasseh@2Ki.20.21",
+          "name": "Manasseh",
+          "strength": "strong",
+          "how": "\"Manasseh king of Judah\" among Esarhaddon's vassals.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Esarhaddon@2Ki.19.37",
+          "name": "Esarhaddon",
+          "strength": "strong",
+          "how": "His own prism.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ch.33.11",
+          "strength": "possible",
+          "how": "Manasseh as a vassal of Assyria. The prism does not tell of his being taken to Babylon.",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "Museum not confirmed."
+    },
+    {
+      "id": "shrine-of-taharqa",
+      "name": "Shrine of Taharqa",
+      "kind": "temple",
+      "date": "c. 680 BC",
+      "year": -680,
+      "script": "Egyptian hieroglyphs",
+      "found": { "site": "Kawa, Sudan", "year": 1930 },
+      "museum": "Ashmolean Museum, Oxford",
+      "wikipedia": "Shrine of Taharqa",
+      "wikidata": "Q130213812",
+      "summary": "A sandstone shrine from the temple of Amun at Kawa, carved with Taharqa, the Kushite pharaoh of Egypt, making offerings to the god.",
+      "attests": [
+        {
+          "key": "Tirhakah@2Ki.19.9",
+          "name": "Tirhakah",
+          "strength": "strong",
+          "how": "Taharqa is the Bible's Tirhakah, \"king of Cush\".",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [],
+      "note": "Mykytiuk cites Taharqa's inscriptions generally; this shrine is one of them, chosen because it can be seen."
+    },
+    {
+      "id": "city-of-david-bullae-hilkiah-shaphan",
+      "name": "Bullae of Azariah son of Hilkiah and Gemariah son of Shaphan",
+      "kind": "bulla",
+      "date": "Late 7th–early 6th century BC",
+      "year": -600,
+      "script": "Hebrew",
+      "found": { "site": "City of David, Jerusalem", "year": 1982, "key": "Jerusalem@Gen.14.18" },
+      "summary": "Two of the many clay seal impressions found in Yigal Shiloh's excavations in the City of David, in a building burnt in the Babylonian destruction: \"Belonging to Azariah son of Hilkiah\" and \"Belonging to Gemariah son of Shaphan\".",
+      "attests": [
+        {
+          "key": "Hilkiah@2Ki.22.4",
+          "name": "Hilkiah",
+          "strength": "strong",
+          "how": "Father of Azariah: the high priest Hilkiah, whose son Azariah succeeded him (1 Chronicles 5:39).",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Azariah@1Ch.6.13",
+          "name": "Azariah",
+          "strength": "strong",
+          "how": "Azariah son of Hilkiah, high priest.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Shaphan@2Ki.22.3",
+          "name": "Shaphan",
+          "strength": "strong",
+          "how": "Father of Gemariah: Josiah's scribe Shaphan.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Gemariah@Jer.36.10",
+          "name": "Gemariah",
+          "strength": "strong",
+          "how": "Gemariah son of Shaphan, the official in whose chamber Baruch read Jeremiah's scroll.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [],
+      "note": "Two separate bullae; kept as one find because they come from one deposit. Split them if you'd rather."
+    },
+    {
+      "id": "jehucal-bulla",
+      "name": "Bulla of Jehucal son of Shelemiah",
+      "kind": "bulla",
+      "date": "c. 597–586 BC",
+      "year": -590,
+      "script": "Hebrew",
+      "found": { "site": "City of David, Jerusalem", "year": 2005, "key": "Jerusalem@Gen.14.18" },
+      "summary": "A clay seal impression found by Eilat Mazar: \"Belonging to Jehucal son of Shelemiah son of Shobi\".",
+      "attests": [
+        {
+          "key": "Jehucal@Jer.37.3",
+          "name": "Jehucal",
+          "strength": "strong",
+          "how": "Jehucal son of Shelemiah, the official Zedekiah sent to Jeremiah.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Shelemiah@Jer.37.3",
+          "name": "Shelemiah",
+          "strength": "strong",
+          "how": "Named as Jehucal's father.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Jer.38.1",
+          "strength": "strong",
+          "how": "Jucal son of Shelemiah and Gedaliah son of Pashhur, who heard Jeremiah's words: the two bullae found nearby name both.",
+          "source": "mykytiuk-2014"
+        }
+      ]
+    },
+    {
+      "id": "gedaliah-bulla",
+      "name": "Bulla of Gedaliah son of Pashhur",
+      "kind": "bulla",
+      "date": "c. 597–586 BC",
+      "year": -590,
+      "script": "Hebrew",
+      "found": { "site": "City of David, Jerusalem", "year": 2008, "key": "Jerusalem@Gen.14.18" },
+      "summary": "A clay seal impression found by Eilat Mazar a few metres from Jehucal's: \"Belonging to Gedaliah son of Pashhur\".",
+      "attests": [
+        {
+          "key": "Gedaliah@Jer.38.1",
+          "name": "Gedaliah",
+          "strength": "strong",
+          "how": "Gedaliah son of Pashhur, one of the officials who had Jeremiah thrown into the cistern.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Pashhur@Jer.38.1",
+          "name": "Pashhur",
+          "strength": "strong",
+          "how": "Named as Gedaliah's father.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Jer.38.1",
+          "strength": "strong",
+          "how": "Gedaliah son of Pashhur among the officials.",
+          "source": "mykytiuk-2014"
+        }
+      ]
+    },
+    {
+      "id": "babylonian-chronicle-5",
+      "name": "Babylonian Chronicle of Nebuchadnezzar's early years",
+      "other_names": ["Jerusalem Chronicle", "ABC 5", "BM 21946"],
+      "kind": "tablet",
+      "date": "Covers 605–594 BC",
+      "year": -597,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Babylon, Iraq" },
+      "museum": "British Museum, London",
+      "wikipedia": "Babylonian Chronicles",
+      "wikidata": "Q1061346",
+      "summary": "A chronicle of Nebuchadnezzar's first years: his defeat of the Egyptian army at Carchemish in 605 BC, and his taking \"the city of Judah\" on the second of Adar (16 March) 597 BC, seizing its king and appointing \"a king of his own choice\".",
+      "attests": [
+        {
+          "key": "Nebuchadnezzar@2Ki.24.1",
+          "name": "Nebuchadnezzar",
+          "strength": "strong",
+          "how": "Nebuchadnezzar II's campaigns, year by year.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.24.10",
+          "to": "2Ki.24.17",
+          "strength": "strong",
+          "how": "Jerusalem besieged and taken in 597 BC, its king taken, and Zedekiah made king in his place.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "2Ch.36.10",
+          "strength": "strong",
+          "how": "Jehoiachin brought to Babylon and Zedekiah made king.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Jer.46.2",
+          "strength": "strong",
+          "how": "The Egyptian army defeated at Carchemish in Nebuchadnezzar's first year.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "nebo-sarsekim-tablet",
+      "name": "Nebo-Sarsekim Tablet",
+      "other_names": ["BM 114789"],
+      "kind": "tablet",
+      "date": "595 BC",
+      "year": -595,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Sippar, Iraq" },
+      "museum": "British Museum, London",
+      "wikipedia": "Nebo-Sarsekim Tablet",
+      "wikidata": "Q2916229",
+      "summary": "A receipt for gold given to a temple by \"Nabu-sharrussu-ukin, the chief eunuch\", dated in Nebuchadnezzar's tenth year. Read by Michael Jursa in 2007.",
+      "attests": [
+        {
+          "key": "Nebu-sar-sekim@Jer.39.3",
+          "name": "Nebu-sar-sekim",
+          "strength": "strong",
+          "how": "The same name and the same title, the Rab-saris (chief eunuch), eight years before the Bible has him at Jerusalem's fall.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Jer.39.3",
+          "strength": "strong",
+          "how": "Nebo-Sarsekim among the Babylonian officials in the middle gate.",
+          "source": "mykytiuk-2014"
+        }
+      ]
+    },
+    {
+      "id": "nebuchadnezzar-prism",
+      "name": "Prism of Nebuchadnezzar II",
+      "other_names": ["Hofkalender", "EŞ 7834"],
+      "kind": "prism",
+      "date": "c. 570 BC",
+      "year": -570,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Babylon, Iraq", "key": "Babylon@Gen.10.10" },
+      "museum": "Istanbul Archaeology Museums",
+      "wikipedia": "Nebuchadnezzar II's Prism",
+      "wikidata": "Q104843525",
+      "summary": "A list of Nebuchadnezzar's court officials, among them Nabuzeriddinam the chief cook and Nergal-sharezer the Simmagir.",
+      "attests": [
+        {
+          "key": "Nebuzaradan@2Ki.25.8",
+          "name": "Nebuzaradan",
+          "strength": "strong",
+          "how": "Nabuzeriddinam, chief cook: the Bible's Nebuzaradan, \"captain of the guard\" (literally chief cook).",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Nergal-sar-ezer@Jer.39.3b",
+          "name": "Nergal-sar-ezer",
+          "strength": "strong",
+          "how": "Nergal-sharezer the Simmagir: the official of Samgar in Jeremiah 39:3.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Nebuchadnezzar@2Ki.24.1",
+          "name": "Nebuchadnezzar",
+          "strength": "strong",
+          "how": "His own prism.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Jer.39.3",
+          "strength": "strong",
+          "how": "Nergal-sharezer among the officials in the middle gate.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "from": "2Ki.25.8",
+          "to": "2Ki.25.11",
+          "strength": "strong",
+          "how": "Nebuzaradan burns Jerusalem and the temple and carries its people away.",
+          "source": "mykytiuk-2014"
+        }
+      ]
+    },
+    {
+      "id": "jehoiachin-ration-tablets",
+      "name": "Jehoiachin's ration tablets",
+      "kind": "tablet",
+      "date": "c. 592 BC",
+      "year": -592,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Babylon, Iraq (near the Ishtar Gate)", "year": 1899, "key": "Babylon@Gen.10.10" },
+      "museum": "Vorderasiatisches Museum, Berlin",
+      "wikipedia": "Jehoiachin's Rations Tablets",
+      "wikidata": "Q16851192",
+      "summary": "Palace records of oil rations issued to captives in Babylon, among them \"Ya'ukin, king of the land of Judah\" and his five sons.",
+      "attests": [
+        {
+          "key": "Jehoiachin@2Ki.24.6",
+          "name": "Jehoiachin",
+          "strength": "strong",
+          "how": "\"Ya'ukin king of Judah\", a captive in Babylon, with his sons.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "2Ki.25.27",
+          "to": "2Ki.25.30",
+          "strength": "strong",
+          "how": "Jehoiachin a captive in Babylon, given his allowance by the king.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Jer.52.31",
+          "to": "Jer.52.34",
+          "strength": "strong",
+          "how": "The same.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "ishtar-gate",
+      "name": "Ishtar Gate",
+      "kind": "site",
+      "date": "c. 575 BC",
+      "year": -575,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Babylon, Iraq", "year": 1902, "key": "Babylon@Gen.10.10" },
+      "museum": "Pergamon Museum, Berlin (rebuilt)",
+      "wikipedia": "Ishtar Gate",
+      "wikidata": "Q26082",
+      "summary": "The blue-glazed brick gate of Babylon, with its dedication by Nebuchadnezzar II, excavated by Robert Koldewey.",
+      "attests": [
+        {
+          "key": "Nebuchadnezzar@2Ki.24.1",
+          "name": "Nebuchadnezzar",
+          "strength": "strong",
+          "how": "His dedication inscription, naming himself as its builder.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Dan.4.27",
+          "strength": "reasonable",
+          "how": "\"Is this not great Babylon, which I have built?\" (4:30 in English Bibles): his building works, which his inscriptions boast of.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "lachish-letters",
+      "name": "Lachish letters",
+      "kind": "ostracon",
+      "date": "c. 588 BC",
+      "year": -588,
+      "script": "Hebrew, in ink on potsherds",
+      "found": { "site": "Tel Lachish, Israel", "year": 1935, "key": "Lachish@Jos.10.3" },
+      "museum": "British Museum, London; Israel Museum, Jerusalem",
+      "wikipedia": "Lachish letters",
+      "wikidata": "Q4290428",
+      "summary": "Letters from an officer at an outpost to his commander at Lachish as the Babylonians advanced; one says they are watching for Lachish's fire signals \"for we cannot see Azekah\".",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Jer.34.7",
+          "strength": "strong",
+          "how": "Lachish and Azekah, the last fortified cities of Judah left standing.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "ketef-hinnom-scrolls",
+      "name": "Ketef Hinnom scrolls",
+      "kind": "amulet",
+      "date": "c. 600 BC",
+      "year": -600,
+      "script": "Paleo-Hebrew, on rolled silver",
+      "found": { "site": "Ketef Hinnom, Jerusalem", "year": 1979, "key": "Jerusalem@Gen.14.18" },
+      "museum": "Israel Museum, Jerusalem",
+      "wikipedia": "Ketef Hinnom scrolls",
+      "wikidata": "Q107479468",
+      "summary": "Two tiny silver amulets from a burial cave, found by Gabriel Barkay, inscribed with the priestly blessing: the oldest known text of any passage of the Bible.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Num.6.24",
+          "to": "Num.6.26",
+          "strength": "strong",
+          "how": "\"Yahweh bless you and keep you; Yahweh make his face shine upon you …\", in a shorter form.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "nabonidus-cylinder-ur",
+      "name": "Nabonidus Cylinder from Ur",
+      "kind": "cylinder",
+      "date": "c. 540 BC",
+      "year": -540,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Ziggurat of Ur, Iraq", "year": 1854 },
+      "museum": "British Museum, London",
+      "wikipedia": "Cylinders of Nabonidus",
+      "summary": "Nabonidus's account of restoring the temple tower at Ur, ending with a prayer for \"Belshazzar, my firstborn son\".",
+      "attests": [
+        {
+          "key": "Belshazzar@Dan.5.1",
+          "name": "Belshazzar",
+          "strength": "strong",
+          "how": "Bel-sharra-usur, Nabonidus's eldest son. Other Babylonian texts show him ruling Babylon while his father was away at Tema.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Dan.5.29",
+          "strength": "reasonable",
+          "how": "Daniel made \"third ruler in the kingdom\": third after Nabonidus and Belshazzar, if Belshazzar ruled for his father.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "nabonidus-chronicle",
+      "name": "Nabonidus Chronicle",
+      "other_names": ["ABC 7", "BM 35382"],
+      "kind": "tablet",
+      "date": "Covers 556–539 BC",
+      "year": -539,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Babylon, Iraq", "key": "Babylon@Gen.10.10" },
+      "museum": "British Museum, London",
+      "wikipedia": "Nabonidus Chronicle",
+      "wikidata": "Q623986",
+      "summary": "A chronicle of Nabonidus's reign: his years at Tema with \"the crown prince\" left in Babylon, and the fall of Babylon to Cyrus's army in October 539 BC \"without battle\".",
+      "attests": [
+        {
+          "key": "Cyrus@2Ch.36.22",
+          "name": "Cyrus",
+          "strength": "strong",
+          "how": "Cyrus's taking of Babylon.",
+          "source": "wikipedia"
+        },
+        {
+          "key": "Belshazzar@Dan.5.1",
+          "name": "Belshazzar",
+          "strength": "reasonable",
+          "how": "\"The crown prince\" in Babylon, not named here; the Ur cylinder names Nabonidus's eldest son.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Dan.5.30",
+          "strength": "reasonable",
+          "how": "Babylon falls that night. The chronicle tells of its fall to Cyrus, not of Belshazzar's death.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "cyrus-cylinder",
+      "name": "Cyrus Cylinder",
+      "kind": "cylinder",
+      "date": "c. 539 BC",
+      "year": -539,
+      "script": "Akkadian cuneiform",
+      "found": { "site": "Babylon, Iraq", "year": 1879, "key": "Babylon@Gen.10.10" },
+      "museum": "British Museum, London",
+      "wikipedia": "Cyrus Cylinder",
+      "wikidata": "Q405008",
+      "summary": "Cyrus's proclamation on taking Babylon, telling how he returned the gods of conquered cities to their sanctuaries and \"gathered all their people and returned them to their homes\".",
+      "attests": [
+        {
+          "key": "Cyrus@2Ch.36.22",
+          "name": "Cyrus",
+          "strength": "strong",
+          "how": "\"I am Cyrus, king of the world, great king …\".",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Ezr.1.1",
+          "to": "Ezr.1.4",
+          "strength": "reasonable",
+          "how": "Cyrus's decree letting the exiles return to rebuild the temple. The cylinder shows the same policy toward Babylonia's cities; it does not name Judah.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "2Ch.36.22",
+          "to": "2Ch.36.23",
+          "strength": "reasonable",
+          "how": "The same decree.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "behistun-inscription",
+      "name": "Behistun inscription",
+      "kind": "inscription",
+      "date": "c. 520 BC",
+      "year": -520,
+      "script": "Old Persian, Elamite and Akkadian",
+      "found": { "site": "Mount Behistun, Kermanshah, Iran" },
+      "museum": "In place, on the cliff",
+      "wikipedia": "Behistun inscription",
+      "wikidata": "Q180012",
+      "summary": "Darius I's account, carved high on a cliff in three languages, of how he took the throne and put down the revolts against him; the key to reading cuneiform.",
+      "attests": [
+        {
+          "key": "Darius@Ezr.4.5",
+          "name": "Darius",
+          "strength": "strong",
+          "how": "Darius I, in whose reign the second temple was finished.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "tattenai-tablet",
+      "name": "Tablet naming Tattenai, governor of Beyond the River",
+      "kind": "tablet",
+      "date": "502 BC",
+      "year": -502,
+      "script": "Akkadian cuneiform",
+      "summary": "A promissory note dated in Darius I's twentieth year, witnessed by a servant of \"Tattannu, governor of Across-the-River\".",
+      "attests": [
+        {
+          "key": "Tattenai@Ezr.5.3",
+          "name": "Tattenai",
+          "strength": "strong",
+          "how": "The same name and office as the governor who questioned the rebuilding of the temple.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Ezr.5.3",
+          "to": "Ezr.5.6",
+          "strength": "strong",
+          "how": "Tattenai, governor Beyond the River, writes to Darius about the rebuilding.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "note": "Museum and number not confirmed. Like everything in Ezra and Esther, it will show in no chapter until the vendored TAHOT has those books (see ARTIFACTS.md)."
+    },
+    {
+      "id": "gate-of-all-nations",
+      "name": "Gate of All Nations, Persepolis",
+      "other_names": ["Xerxes' inscription XPa"],
+      "kind": "site",
+      "date": "c. 475 BC",
+      "year": -475,
+      "script": "Old Persian, Elamite and Akkadian",
+      "found": { "site": "Persepolis, Iran" },
+      "museum": "In place",
+      "wikipedia": "Gate of All Nations",
+      "wikidata": "Q5527015",
+      "summary": "The great gateway of Persepolis, with Xerxes' inscription: \"I am Xerxes, the great king, king of kings … this Gate of All Nations I built\".",
+      "attests": [
+        {
+          "key": "Ahasuerus@Ezr.4.6",
+          "name": "Ahasuerus",
+          "strength": "strong",
+          "how": "Xerxes I (Old Persian Xšayāršā, Hebrew Ahasuerus).",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [],
+      "note": "TIPNR's Ahasuerus@Ezr.4.6 is the only Ahasuerus with words in the built text, and those are in Daniel; Esther's words name no one until TAHOT has Esther. Check that Esther's Ahasuerus will be this record."
+    },
+    {
+      "id": "elephantine-petition",
+      "name": "Elephantine petition to Bagohi",
+      "other_names": ["Elephantine papyri"],
+      "kind": "papyrus",
+      "date": "407 BC",
+      "year": -407,
+      "script": "Aramaic, in ink on papyrus",
+      "found": { "site": "Elephantine, Egypt" },
+      "museum": "Egyptian Museum, Berlin",
+      "wikipedia": "Elephantine papyri and ostraca",
+      "wikidata": "Q520170",
+      "summary": "A letter from the Jewish garrison at Elephantine asking the governor of Judah to help rebuild their temple. It says they had also written to \"Johanan the high priest\" in Jerusalem and to \"Delaiah and Shelemiah, the sons of Sanballat, governor of Samaria\", and is dated in Darius II's seventeenth year.",
+      "attests": [
+        {
+          "key": "Sanballat@Neh.2.10",
+          "name": "Sanballat",
+          "strength": "strong",
+          "how": "\"Sanballat, governor of Samaria\", whose sons now act for him.",
+          "source": "mykytiuk-2014"
+        },
+        {
+          "key": "Johanan@Neh.12.11",
+          "name": "Johanan",
+          "strength": "reasonable",
+          "how": "\"Johanan the high priest\", as in Nehemiah 12:22–23. TIPNR's record also holds the Jonathan of 12:11.",
+          "source": "wikipedia"
+        },
+        {
+          "key": "Darius@Neh.12.22",
+          "name": "Darius",
+          "strength": "reasonable",
+          "how": "Dated by Darius II's reign. Nehemiah 12:22's \"Darius the Persian\" is usually taken as Darius II, though some take him as Darius III.",
+          "source": "mykytiuk-2014"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Neh.12.22",
+          "to": "Neh.12.23",
+          "strength": "reasonable",
+          "how": "The high priests down to Johanan in the reign of Darius the Persian.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "isaiah-scroll",
+      "name": "Great Isaiah Scroll",
+      "other_names": ["1QIsaᵃ"],
+      "kind": "manuscript",
+      "date": "c. 125 BC",
+      "year": -125,
+      "script": "Hebrew, in ink on parchment",
+      "found": { "site": "Qumran Cave 1", "year": 1947 },
+      "museum": "Israel Museum, Jerusalem (Shrine of the Book)",
+      "wikipedia": "Isaiah Scroll",
+      "wikidata": "Q1824743",
+      "summary": "The whole book of Isaiah on 17 sheets of parchment, about a thousand years older than the oldest complete Masoretic manuscripts, and very close to them in wording.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Isa.1.1",
+          "to": "Isa.66.24",
+          "strength": "strong",
+          "how": "A copy of the text itself, every chapter.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "herod-amphora",
+      "name": "Wine jar of Herod the Great",
+      "kind": "inscription",
+      "date": "19 BC",
+      "year": -19,
+      "script": "Latin, in ink on a jar",
+      "found": { "site": "Masada, Israel", "year": 1963 },
+      "summary": "An amphora of Italian wine from Masada addressed \"to Herod, king of Judea\".",
+      "attests": [
+        {
+          "key": "Herod@Mat.2.1",
+          "name": "Herod",
+          "strength": "strong",
+          "how": "Herod the Great, \"king of Judea\", as in Matthew 2:1 and Luke 1:5.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": [],
+      "note": "No Wikipedia page of its own and no museum confirmed. Herod is also well attested in Josephus and on his coins; you may prefer a better-known find."
+    },
+    {
+      "id": "temple-warning-inscription",
+      "name": "Temple Warning inscription",
+      "kind": "inscription",
+      "date": "c. 23 BC – AD 70",
+      "year": -20,
+      "script": "Greek",
+      "found": { "site": "Jerusalem", "year": 1871, "key": "Jerusalem@Gen.14.18" },
+      "museum": "Istanbul Archaeology Museums",
+      "wikipedia": "Temple Warning inscription",
+      "wikidata": "Q16934222",
+      "summary": "A stone from the barrier around Herod's temple courts: \"No foreigner is to enter within the balustrade … whoever is caught will have himself to blame for the death that follows\".",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Act.21.28",
+          "to": "Act.21.29",
+          "strength": "strong",
+          "how": "Paul accused of bringing Greeks into the temple and defiling it.",
+          "source": "wikipedia"
+        },
+        {
+          "from": "Eph.2.14",
+          "strength": "possible",
+          "how": "\"The dividing wall of hostility\", perhaps an allusion to the barrier.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "pool-of-bethesda",
+      "name": "Pool of Bethesda",
+      "kind": "site",
+      "date": "2nd century BC – 1st century AD",
+      "year": -100,
+      "found": { "site": "Near the Church of St Anne, Jerusalem", "year": 1888, "key": "Bethesda@Jhn.5.2" },
+      "museum": "In place",
+      "wikipedia": "Pool of Bethesda",
+      "wikidata": "Q831297",
+      "summary": "Twin pools by the Sheep Gate, divided by a central wall, so that colonnades on four sides and across the middle give five porches.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Jhn.5.2",
+          "strength": "strong",
+          "how": "A pool by the Sheep Gate called Bethesda, with five porches.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "pool-of-siloam",
+      "name": "Pool of Siloam",
+      "kind": "site",
+      "date": "1st century BC – AD 70",
+      "year": -50,
+      "found": { "site": "City of David, Jerusalem", "year": 2004, "key": "Jerusalem@Gen.14.18" },
+      "museum": "In place",
+      "wikipedia": "Pool of Siloam",
+      "wikidata": "Q1483483",
+      "summary": "The stepped pool of the Second Temple period at the end of Hezekiah's Tunnel, uncovered during sewer works in 2004.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Jhn.9.7",
+          "strength": "strong",
+          "how": "\"Go, wash in the pool of Siloam\".",
+          "source": "wikipedia"
+        }
+      ],
+      "note": "TIPNR's Siloam is a form of the Shelah record (Shelah@Neh.2.14); John 9:7 is linked as a passage so the record's choice doesn't matter."
+    },
+    {
+      "id": "caiaphas-ossuary",
+      "name": "Caiaphas ossuary",
+      "kind": "ossuary",
+      "date": "1st century AD",
+      "year": 40,
+      "script": "Aramaic",
+      "found": { "site": "Peace Forest, Jerusalem", "year": 1990, "key": "Jerusalem@Gen.14.18" },
+      "museum": "Israel Museum, Jerusalem",
+      "wikipedia": "Caiaphas ossuary",
+      "wikidata": "Q5017513",
+      "summary": "An ornate bone box from a family tomb inscribed \"Joseph son of Caiaphas\", Caiaphas being the family name Josephus gives the high priest Joseph.",
+      "attests": [
+        {
+          "key": "Caiaphas@Mat.26.3",
+          "name": "Caiaphas",
+          "strength": "reasonable",
+          "how": "Josephus names the high priest Joseph called Caiaphas. Most accept the identification; some doubt the reading of the name or that it is his.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "pilate-stone",
+      "name": "Pilate Stone",
+      "kind": "inscription",
+      "date": "AD 26–36",
+      "year": 31,
+      "script": "Latin",
+      "found": { "site": "Caesarea Maritima, Israel", "year": 1961, "key": "Caesarea@Act.8.40" },
+      "museum": "Israel Museum, Jerusalem",
+      "wikipedia": "Pilate stone",
+      "wikidata": "Q1073819",
+      "summary": "A dedication stone from a building Pilate put up for Tiberius at Caesarea, naming \"[Pon]tius Pilatus, [Praef]ectus of Judea\".",
+      "attests": [
+        {
+          "key": "Pilate@Mat.27.2",
+          "name": "Pilate",
+          "strength": "strong",
+          "how": "Pontius Pilate, Rome's prefect of Judea, in his own dedication.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "politarch-inscription",
+      "name": "Politarch inscription of Thessalonica",
+      "kind": "inscription",
+      "date": "1st century AD",
+      "year": 50,
+      "script": "Greek",
+      "found": { "site": "Vardar Gate, Thessalonica", "year": 1876, "key": "Thessalonica@Act.17.1" },
+      "museum": "British Museum, London",
+      "wikipedia": "Politarch",
+      "wikidata": "Q7210123",
+      "summary": "An inscription from a city gate listing Thessalonica's \"politarchs\", a title for city rulers once known only from Acts.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Act.17.6",
+          "to": "Act.17.8",
+          "strength": "strong",
+          "how": "Jason dragged before \"the city authorities\" (politarchs) of Thessalonica.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "gallio-inscription",
+      "name": "Gallio inscription",
+      "other_names": ["Delphi Inscription"],
+      "kind": "inscription",
+      "date": "AD 52",
+      "year": 52,
+      "script": "Greek",
+      "found": { "site": "Delphi, Greece", "year": 1905 },
+      "museum": "Delphi Archaeological Museum",
+      "wikipedia": "Delphi Inscription",
+      "wikidata": "Q5254406",
+      "summary": "A letter of the emperor Claudius to Delphi naming \"Junius Gallio, my friend and proconsul\" of Achaia. It dates his year in office to about AD 51–52, and with it Paul's stay in Corinth.",
+      "attests": [
+        {
+          "key": "Gallio@Act.18.12",
+          "name": "Gallio",
+          "strength": "strong",
+          "how": "Gallio, proconsul of Achaia.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Act.18.12",
+          "to": "Act.18.17",
+          "strength": "strong",
+          "how": "Paul brought before Gallio's tribunal at Corinth.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "erastus-inscription",
+      "name": "Erastus inscription",
+      "kind": "inscription",
+      "date": "1st century AD",
+      "year": 50,
+      "script": "Latin",
+      "found": { "site": "Corinth, Greece", "year": 1929, "key": "Corinth@Act.18.1" },
+      "museum": "In place at Corinth",
+      "summary": "A paving stone recording that \"Erastus, in return for his aedileship, laid this pavement at his own expense\".",
+      "attests": [
+        {
+          "key": "Erastus@Act.19.22",
+          "name": "Erastus",
+          "strength": "possible",
+          "how": "Romans 16:23 sends greetings from Erastus, \"the city treasurer\" of Corinth. An aedile is a city official, but whether the titles match, and the inscription's date, are disputed.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": [],
+      "note": "TIPNR's Erastus@Act.19.22 gathers Acts 19:22, Romans 16:23 and 2 Timothy 4:20, which may be one man or more."
+    }
+  ]
+}
