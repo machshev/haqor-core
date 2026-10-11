@@ -5252,7 +5252,13 @@ impl Bible {
         verse: u8,
     ) -> rusqlite::Result<Vec<Prophecy>> {
         let reference = pack_ref(book, chapter, verse);
-        self.query_prophecies(reference, reference, &ProphecyFilter::default(), u32::MAX, 0)
+        self.query_prophecies(
+            reference,
+            reference,
+            &ProphecyFilter::default(),
+            u32::MAX,
+            0,
+        )
     }
 
     fn query_prophecies(
@@ -5308,9 +5314,9 @@ impl Bible {
             "SELECT DISTINCT pattern_id FROM data.prophecy_pattern_member \
              WHERE prophecy_id = ?1 ORDER BY pattern_id",
         )?;
-        let mut pattern_stmt = self
-            .db
-            .prepare_cached("SELECT title, note FROM data.prophecy_pattern WHERE pattern_id = ?1")?;
+        let mut pattern_stmt = self.db.prepare_cached(
+            "SELECT title, note FROM data.prophecy_pattern WHERE pattern_id = ?1",
+        )?;
         let mut members_stmt = self.db.prepare_cached(
             "SELECT m.prophecy_id, p.ref, p.end_ref, m.stage, m.label \
              FROM data.prophecy_pattern_member m JOIN data.prophecy p USING (prophecy_id) \
@@ -7174,8 +7180,12 @@ mod tests {
         assert_eq!(occurrences.len() as u32, total);
         assert!(occurrences.iter().any(|o| o.lemma == "βίβλος"
             && o.grammar == "N-NSF"
-            && (o.occurrence.book, o.occurrence.chapter, o.occurrence.verse, o.occurrence.position)
-                == (40, 1, 1, 0)));
+            && (
+                o.occurrence.book,
+                o.occurrence.chapter,
+                o.occurrence.verse,
+                o.occurrence.position
+            ) == (40, 1, 1, 0)));
         let linked = bible
             .greek_lexicon_entry("abbott-smith", "βιβλίον")
             .unwrap();
@@ -7421,7 +7431,13 @@ mod tests {
             messianic: Some(false),
             ..ProphecyFilter::default()
         };
-        assert!(bible.prophecies(&general, 500, 0).unwrap().iter().all(|p| !p.messianic));
+        assert!(
+            bible
+                .prophecies(&general, 500, 0)
+                .unwrap()
+                .iter()
+                .all(|p| !p.messianic)
+        );
     }
 
     /// The quotation table links well-known quotations in both directions and

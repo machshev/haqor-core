@@ -258,7 +258,8 @@ impl Checker<'_> {
         match parse_span(text, self.versification) {
             Some(s) if self.verses.contains(&s.0) && self.verses.contains(&s.1) => Some(s),
             Some(_) => {
-                self.faults.push(format!("{what}: {text} is outside the corpus"));
+                self.faults
+                    .push(format!("{what}: {text} is outside the corpus"));
                 None
             }
             None => {
@@ -280,7 +281,11 @@ impl Checker<'_> {
     }
 }
 
-fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i64>) -> Result<Curation> {
+fn read_curation(
+    path: &Path,
+    versification: &Versification,
+    verses: &HashSet<i64>,
+) -> Result<Curation> {
     let json: Value = serde_json::from_str(
         &std::fs::read_to_string(path).with_context(|| format!("reading {}", path.display()))?,
     )
@@ -334,9 +339,12 @@ fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i6
             };
             let Some(taken) = taken else { continue };
             if !contains(ot, taken) {
-                check.faults.push(format!("{at}: its verses are outside the prophecy"));
+                check
+                    .faults
+                    .push(format!("{at}: its verses are outside the prophecy"));
             }
-            let Some(kind) = check.one_of(Some(f["kind"].as_str().unwrap_or("")), KINDS, &at) else {
+            let Some(kind) = check.one_of(Some(f["kind"].as_str().unwrap_or("")), KINDS, &at)
+            else {
                 continue;
             };
             let stage = match f["stage"].as_str() {
@@ -383,7 +391,9 @@ fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i6
                 continue;
             };
             if !prophecies.iter().any(|p| p.span == ot) {
-                check.faults.push(format!("{at}: no prophecy has that passage"));
+                check
+                    .faults
+                    .push(format!("{at}: no prophecy has that passage"));
                 continue;
             }
             let Some(stage) = check.one_of(Some(m["stage"].as_str().unwrap_or("")), STAGES, &at)
@@ -503,7 +513,9 @@ fn formula_verses(db: &Connection) -> Result<Vec<FormulaVerse>> {
         let parse = verb_parse(&code);
         let passive = parse.is_some_and(|(_, voice, _)| voice == 'P');
         let formula = match lemma.as_str() {
-            "πληρόω" | "ἀναπληρόω" | "τελέω" | "τελειόω" if passive => Some(Formula::Fulfilled),
+            "πληρόω" | "ἀναπληρόω" | "τελέω" | "τελειόω" if passive => {
+                Some(Formula::Fulfilled)
+            }
             "γράφω" if parse.is_some_and(|(tense, voice, _)| (tense, voice) == ('R', 'P')) => {
                 Some(Formula::Written)
             }
@@ -515,7 +527,10 @@ fn formula_verses(db: &Connection) -> Result<Vec<FormulaVerse>> {
             }
             _ => None,
         };
-        let speaker = SPEAKERS.iter().find(|(name, _)| gloss == *name).map(|(_, b)| *b);
+        let speaker = SPEAKERS
+            .iter()
+            .find(|(name, _)| gloss == *name)
+            .map(|(_, b)| *b);
         let prophet = lemma == "προφήτης";
         if formula.is_none() && speaker.is_none() && !prophet {
             continue;
@@ -606,14 +621,18 @@ fn find_links(db: &Connection) -> Result<Vec<Found>> {
         }
     }
     let order: Vec<i64> = db
-        .prepare(&format!("SELECT DISTINCT ref FROM greek_word WHERE ref >= {nt} ORDER BY ref"))?
+        .prepare(&format!(
+            "SELECT DISTINCT ref FROM greek_word WHERE ref >= {nt} ORDER BY ref"
+        ))?
         .query_map([], |r| r.get(0))?
         .collect::<rusqlite::Result<_>>()?;
     let index: HashMap<i64, usize> = order.iter().enumerate().map(|(i, r)| (*r, i)).collect();
 
     let mut found = Vec::new();
     for fv in formula_verses(db)? {
-        let Some(&at) = index.get(&fv.verse) else { continue };
+        let Some(&at) = index.get(&fv.verse) else {
+            continue;
+        };
         // The quoted words usually follow the formula: it and the next two
         // verses, within the book.
         let window = order[at..(at + 3).min(order.len())]
@@ -647,10 +666,15 @@ fn find_links(db: &Connection) -> Result<Vec<Found>> {
                     // Ties go to the earlier verse, so a build is repeatable.
                     .then(b_ot.cmp(a_ot))
             });
-        let Some((ot, (score, w, tsk))) = best else { continue };
+        let Some((ot, (score, w, tsk))) = best else {
+            continue;
+        };
         let confidence = if tsk > 0 && score >= 12.0 {
             "high"
-        } else if (tsk > 0 && score > 0.0) || score >= 20.0 || (tsk > 0 && fv.books.is_some() && in_book(ot)) {
+        } else if (tsk > 0 && score > 0.0)
+            || score >= 20.0
+            || (tsk > 0 && fv.books.is_some() && in_book(ot))
+        {
             "medium"
         } else {
             // A guess among the TSK's many references: left for review.
@@ -660,7 +684,12 @@ fn find_links(db: &Connection) -> Result<Vec<Found>> {
             nt: (fv.verse, w.max(fv.verse)),
             ot,
             formula: fv.formulas[0],
-            formulas: fv.formulas.iter().map(|f| f.as_str()).collect::<Vec<_>>().join("+"),
+            formulas: fv
+                .formulas
+                .iter()
+                .map(|f| f.as_str())
+                .collect::<Vec<_>>()
+                .join("+"),
             confidence,
             aligned: score >= MIN_ALIGNMENT,
         });
@@ -702,7 +731,12 @@ fn merge(curation: Curation, found: Vec<Found>, summary: &mut ProphecySummary) -
         let fulfilment = Fulfilment {
             span: link.nt,
             ot: (link.ot, link.ot),
-            kind: if link.aligned { "quotation" } else { "allusion" }.to_string(),
+            kind: if link.aligned {
+                "quotation"
+            } else {
+                "allusion"
+            }
+            .to_string(),
             stage: default_stage(link.nt).to_string(),
             formula: Some(link.formulas.clone()),
             reviewed: false,
@@ -719,7 +753,10 @@ fn merge(curation: Curation, found: Vec<Found>, summary: &mut ProphecySummary) -
                     curated.formula.get_or_insert(link.formulas);
                     summary.confirmed += 1;
                 } else if !curated.iter().any(|s| overlaps(*s, link.nt))
-                    && !prophecy.fulfilments.iter().any(|f| overlaps(f.span, link.nt))
+                    && !prophecy
+                        .fulfilments
+                        .iter()
+                        .any(|f| overlaps(f.span, link.nt))
                 {
                     // Curated as fulfilling another prophecy, the passage
                     // quotes that one: the found link is the TSK's guess.
@@ -745,7 +782,11 @@ fn merge(curation: Curation, found: Vec<Found>, summary: &mut ProphecySummary) -
                     note: String::new(),
                     fulfilments: Vec::new(),
                 });
-                if !prophecy.fulfilments.iter().any(|f| overlaps(f.span, link.nt)) {
+                if !prophecy
+                    .fulfilments
+                    .iter()
+                    .any(|f| overlaps(f.span, link.nt))
+                {
                     prophecy.fulfilments.push(fulfilment);
                 }
             }
@@ -808,9 +849,8 @@ fn write(db: &Connection, prophecies: &[Prophecy], patterns: &[Pattern]) -> Resu
             ])?;
         }
     }
-    let mut pattern = tx.prepare(
-        "INSERT INTO prophecy_pattern(pattern_id, title, note) VALUES (?1, ?2, ?3)",
-    )?;
+    let mut pattern =
+        tx.prepare("INSERT INTO prophecy_pattern(pattern_id, title, note) VALUES (?1, ?2, ?3)")?;
     let mut member = tx.prepare(
         "INSERT INTO prophecy_pattern_member(pattern_id, ord, prophecy_id, stage, label) \
          VALUES (?1, ?2, ?3, ?4, ?5)",
@@ -833,10 +873,18 @@ fn write(db: &Connection, prophecies: &[Prophecy], patterns: &[Pattern]) -> Resu
 /// found from its `greek_word`, `quotation` and `thematic_reference` tables,
 /// so after those. Fails, naming every fault, on a curation entry that cannot
 /// be read or names a passage outside the corpus.
-pub fn build_prophecies(db: &Connection, curation: &Path, src_texts: &Path) -> Result<ProphecySummary> {
+pub fn build_prophecies(
+    db: &Connection,
+    curation: &Path,
+    src_texts: &Path,
+) -> Result<ProphecySummary> {
     let tahot = crate::stepbible::source_dir(src_texts);
-    let versification = Versification::from_tahot(&tahot)
-        .with_context(|| format!("reading the KJV/Hebrew verse numbering from {}", tahot.display()))?;
+    let versification = Versification::from_tahot(&tahot).with_context(|| {
+        format!(
+            "reading the KJV/Hebrew verse numbering from {}",
+            tahot.display()
+        )
+    })?;
     let mut verses: HashSet<i64> = db
         .prepare("SELECT ref FROM verse")?
         .query_map([], |row| row.get(0))?
@@ -879,14 +927,26 @@ mod tests {
         let mut v = Versification::default();
         // Psalm 22:18 (KJV) is 22:19 in the Hebrew text.
         v.insert((27, 22, 18), (27, 22, 19));
-        assert_eq!(parse_span("Gen.3.15", &v), Some((pack_ref(1, 3, 15), pack_ref(1, 3, 15))));
+        assert_eq!(
+            parse_span("Gen.3.15", &v),
+            Some((pack_ref(1, 3, 15), pack_ref(1, 3, 15)))
+        );
         assert_eq!(
             parse_span("Isa.52.13-53.12", &v),
             Some((pack_ref(12, 52, 13), pack_ref(12, 53, 12)))
         );
-        assert_eq!(parse_span("Isa.42.1-4", &v), Some((pack_ref(12, 42, 1), pack_ref(12, 42, 4))));
-        assert_eq!(parse_span("Psa.22.18", &v), Some((pack_ref(27, 22, 19), pack_ref(27, 22, 19))));
-        assert_eq!(parse_span("Mat.1.22-23", &v), Some((pack_ref(40, 1, 22), pack_ref(40, 1, 23))));
+        assert_eq!(
+            parse_span("Isa.42.1-4", &v),
+            Some((pack_ref(12, 42, 1), pack_ref(12, 42, 4)))
+        );
+        assert_eq!(
+            parse_span("Psa.22.18", &v),
+            Some((pack_ref(27, 22, 19), pack_ref(27, 22, 19)))
+        );
+        assert_eq!(
+            parse_span("Mat.1.22-23", &v),
+            Some((pack_ref(40, 1, 22), pack_ref(40, 1, 23)))
+        );
         assert_eq!(parse_span("Isa.42.4-1", &v), None);
         assert_eq!(parse_span("Isa.42", &v), None);
         assert_eq!(parse_span("Xyz.1.1", &v), None);
@@ -923,10 +983,13 @@ mod tests {
             "quotation",
             "thematic_reference",
         ] {
-            db.execute_batch(&format!("CREATE TABLE {table} AS SELECT * FROM src.{table}"))
-                .unwrap();
+            db.execute_batch(&format!(
+                "CREATE TABLE {table} AS SELECT * FROM src.{table}"
+            ))
+            .unwrap();
         }
-        let summary = build_prophecies(&db, &root.join("data").join(PROPHECIES), &src_texts).unwrap();
+        let summary =
+            build_prophecies(&db, &root.join("data").join(PROPHECIES), &src_texts).unwrap();
         eprintln!("{summary:?}");
         assert!(summary.curated >= 100);
         assert!(summary.confirmed >= 20);
@@ -983,7 +1046,9 @@ mod tests {
             .unwrap();
         assert_eq!(stage, "return");
         let members: i64 = db
-            .query_row("SELECT COUNT(*) FROM prophecy_pattern_member", [], |r| r.get(0))
+            .query_row("SELECT COUNT(*) FROM prophecy_pattern_member", [], |r| {
+                r.get(0)
+            })
             .unwrap();
         assert!(members >= 4);
         // Isaiah 7:14 is found from Matthew 1:22's formula and confirms the

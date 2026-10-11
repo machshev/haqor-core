@@ -18,8 +18,8 @@ mod occurrences;
 mod oshb;
 mod peshitta_greek;
 mod prefilter;
-mod prophecy;
 mod proper_names;
+mod prophecy;
 mod quotations;
 mod runtime_db;
 mod sedra;
@@ -34,6 +34,7 @@ mod tsk;
 mod uxlc;
 mod xml;
 
+pub use artifacts::{ARTIFACTS, ArtifactsSummary, build_artifacts, gen_artifacts};
 pub use events::{EVENT_OVERRIDES, EventsSummary};
 pub use haqor_core::normalize_surface;
 pub use harness::{eval_from_db, parse_eval};
@@ -47,7 +48,6 @@ pub use lexicon_db::{
 };
 pub use names::{NamesSummary, build_names, gen_names};
 pub use occurrences::parse_ot_coverage;
-pub use artifacts::{ARTIFACTS, ArtifactsSummary, build_artifacts, gen_artifacts};
 pub use prophecy::{PROPHECIES, ProphecySummary, build_prophecies, gen_prophecy};
 pub use quotations::{
     GenQuotesOptions, KNOWN_FALSE, KNOWN_PARALLELS, KNOWN_QUOTATIONS, LinkKind, Matcher,
