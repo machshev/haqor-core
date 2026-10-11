@@ -70,9 +70,6 @@ the app should keep them apart. A famous name reaches far: David is named in
 
 ## Known gaps
 
-- The vendored TAHOT (`src_texts/STEPBible-Data/tahot.tsv`) has no Ezra or
-  Esther, so no word of either names anyone, and finds of Persian kings and
-  officials show only where other books name them.
 - TIPNR files Sargon under Sennacherib's record, so Sargon II's annals link by
   passage only.
 - TIPNR has no record for Israel as a people, so the Merneptah Stele links to
