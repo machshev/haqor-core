@@ -686,7 +686,7 @@ fn main() -> Result<()> {
             } => {
                 let summary = haqor_db_gen::gen_artifacts(&db, &artifacts, &src_texts)?;
                 println!(
-                    "Wrote {} finds naming people {} times and bearing on {} passages to {}",
+                    "Wrote {} finds naming people and places {} times and bearing on {} passages to {}",
                     summary.artifacts,
                     summary.attestations,
                     summary.passages,

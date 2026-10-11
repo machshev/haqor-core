@@ -1,7 +1,7 @@
 //! Build the archaeological finds that bear on the Bible from Haqor's own
 //! curation, `data/artifacts.json` (see `data/ARTIFACTS.md`): inscriptions
-//! naming its people, sites it describes and early copies of its text, each
-//! linked to the TIPNR people it names and the passages it bears on, every
+//! naming its people, sites it describes, early copies of its text and other
+//! ancient writings, each linked to the TIPNR people and places it names and the passages it bears on, every
 //! link with its strength and its source.
 //!
 //! The result is the `artifact`, `artifact_attestation`, `artifact_passage`
@@ -51,7 +51,7 @@ CREATE TABLE artifact(
     summary      TEXT    NOT NULL
 );
 
--- A person a find names: `entity_id` a name_entity, `strength` one of
+-- A person or place a find names: `entity_id` a name_entity, `strength` one of
 -- strong, reasonable or possible, `how` a sentence on how it matches, and
 -- `source` an artifact_source.
 CREATE TABLE artifact_attestation(
@@ -309,7 +309,7 @@ pub fn build_artifacts(
     drop((artifact, attestation, passage));
     tx.commit()?;
     info!(
-        "Artifacts: {} finds naming people {} times and bearing on {} passages",
+        "Artifacts: {} finds naming people and places {} times and bearing on {} passages",
         summary.artifacts, summary.attestations, summary.passages
     );
     Ok(summary)

@@ -1,9 +1,10 @@
 # Archaeological finds
 
 `artifacts.json` lists finds that bear on the Bible: inscriptions naming its
-people, sites it describes, and early copies of its text. Each find says what
-it attests and how strongly, and cites where the identification comes from.
-It is a draft for review; nothing reads it yet.
+people and places, sites it describes, early copies of its text, and ancient
+writings outside it that name them (Josephus, Tacitus, Herodotus). Each find
+says what it attests and how strongly, and cites where the identification
+comes from. It builds into the runtime database (`db gen-artifacts`).
 
 A find corroborates a person, a place or an event. It does not prove the Bible
 as a whole, and finds are not all equally certain, so every link carries its
@@ -27,7 +28,9 @@ own strength rather than the find carrying one.
 - `id`: Haqor's own, kebab case, never reused.
 - `name`, and `other_names` it is known by.
 - `kind`: stele, inscription, relief, prism, cylinder, tablet, seal, bulla,
-  ostracon, papyrus, amulet, ossuary, manuscript, temple or site.
+  coin, ostracon, papyrus, amulet, ossuary, manuscript, temple, site, or
+  text: an ancient writing known from its copies rather than found, which
+  has no `found`.
 - `date` as a reader would write it, and `year` (negative for BC) to sort by.
 - `script`: the language or script, and what it is written on where that is
   notable.
@@ -36,7 +39,7 @@ own strength rather than the find carrying one.
 - `museum`: where it is now, or "In place". Left out where not confirmed.
 - `wikipedia` (the article title) and `wikidata`, where the find has them.
 - `summary`: what it is and what it says, a sentence or two, for the app.
-- `attests`: the people it names (below).
+- `attests`: the people and places it names (below).
 - `passages`: the passages it bears on (below).
 - `note`: for whoever edits the file, not shown in the app. Notes flag
   what a reviewer should check.
@@ -55,7 +58,7 @@ Each of `attests` and `passages` has:
 - `how`: in a sentence, what the find says and how it matches.
 - `source`: the `sources` id it comes from.
 
-An attestation has `key` and `name`, the TIPNR person record as in
+An attestation has `key` and `name`, the TIPNR person or place record as in
 `src_texts/STEPBible-Data/names.jsonl`, checked against each other so a changed
 key cannot move a link. A passage has `from` and, for more than one verse,
 `to`, in STEP Bible's references and Haqor's (Hebrew) numbering, as
@@ -72,5 +75,11 @@ the app should keep them apart. A famous name reaches far: David is named in
 
 - TIPNR files Sargon under Sennacherib's record, so Sargon II's annals link by
   passage only.
-- TIPNR has no record for Israel as a people, so the Merneptah Stele links to
-  nothing.
+- TIPNR has no record for Israel as a people, so the Merneptah Stele links
+  only to Ashkelon and Gezer, which it also names.
+
+## Places
+
+A find naming a place shows on the place's page with those found there, but
+not in each chapter naming the place: Jerusalem is named in some 700
+chapters. A find bears on a chapter through a place only by a passage.

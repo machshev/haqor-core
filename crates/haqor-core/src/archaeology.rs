@@ -1,6 +1,6 @@
 //! Archaeological finds that bear on the Bible: inscriptions naming its
-//! people, sites it describes and early copies of its text, each with the
-//! people it names and the passages it bears on, every link with its
+//! people, sites it describes, early copies of its text and other ancient
+//! writings that name them, each with the people and places it names and the passages it bears on, every link with its
 //! strength and source. Haqor's own curation (`haqor-db-gen`'s `artifacts`
 //! module, from `data/artifacts.json`).
 //!
@@ -54,9 +54,10 @@ pub struct ArtifactSource {
     pub url: String,
 }
 
-/// A person a find names.
+/// A person or place a find names.
 #[derive(Clone, Debug, PartialEq)]
 pub struct ArtifactAttestation {
+    /// The person, or the place, it names.
     pub person: NameSummary,
     pub strength: EvidenceStrength,
     /// What the find says and how it matches, a sentence.
@@ -82,8 +83,9 @@ pub struct Artifact {
     pub key: String,
     pub name: String,
     pub other_names: Vec<String>,
-    /// stele, inscription, relief, prism, cylinder, tablet, seal, bulla,
-    /// ostracon, papyrus, amulet, ossuary, manuscript, temple or site.
+    /// stele, inscription, relief, prism, cylinder, tablet, seal, bulla, coin,
+    /// ostracon, papyrus, amulet, ossuary, manuscript, temple, site, or text
+    /// (an ancient writing known from its copies).
     pub kind: String,
     /// As a reader would write it: "c. 840 BC".
     pub date: String,
@@ -327,15 +329,18 @@ impl Bible {
             covered.dedup();
         }
         // The people each find names whom the chapter names, Old Testament
-        // word by word and New Testament by verse.
+        // word by word and New Testament by verse. Not the places: Jerusalem
+        // is named in some 700 chapters, and a find naming it belongs on its
+        // page rather than in each.
         let mut people: BTreeMap<u32, Vec<NameSummary>> = BTreeMap::new();
         let mut stmt = conn.prepare_cached(&format!(
             "SELECT t.artifact_id, {SUMMARY_COLUMNS} FROM data.artifact_attestation t \
              JOIN data.name_entity e USING(entity_id) \
-             WHERE EXISTS(SELECT 1 FROM data.word_name w WHERE w.entity_id = t.entity_id \
+             WHERE e.kind = 'person' \
+               AND (EXISTS(SELECT 1 FROM data.word_name w WHERE w.entity_id = t.entity_id \
                           AND w.ref BETWEEN ?1 AND ?2) \
                 OR EXISTS(SELECT 1 FROM data.name_verse v WHERE v.entity_id = t.entity_id \
-                          AND v.ref BETWEEN ?1 AND ?2) \
+                          AND v.ref BETWEEN ?1 AND ?2)) \
              ORDER BY t.artifact_id, t.ord"
         ))?;
         for row in stmt.query_map([low, high], |row| {
@@ -377,14 +382,18 @@ impl Bible {
         self.query_artifacts(Some(&ids))
     }
 
-    /// The finds found at a place, oldest first: for a place's page.
+    /// The finds found at a place or naming it, oldest first: for a
+    /// place's page.
     pub fn place_artifacts(&self, entity_id: u32) -> rusqlite::Result<Vec<Artifact>> {
         if !self.has_artifacts()? {
             return Ok(Vec::new());
         }
         let ids: Vec<u32> = self
             .conn()
-            .prepare_cached("SELECT artifact_id FROM data.artifact WHERE found_entity = ?1")?
+            .prepare_cached(
+                "SELECT artifact_id FROM data.artifact WHERE found_entity = ?1 \
+                 UNION SELECT artifact_id FROM data.artifact_attestation WHERE entity_id = ?1",
+            )?
             .query_map([entity_id], |row| row.get(0))?
             .collect::<rusqlite::Result<_>>()?;
         if ids.is_empty() {
@@ -500,5 +509,29 @@ mod tests {
             "{found:?}"
         );
         assert!(!found.contains(&"pilate-stone".to_string()), "{found:?}");
+        // And those naming it, found elsewhere: the Amarna letters, from Egypt.
+        assert!(found.contains(&"amarna-letters".to_string()), "{found:?}");
+    }
+
+    #[test]
+    fn a_chapter_reaches_finds_by_people_not_places() {
+        let Some(bible) = bible() else { return };
+        // Joshua 10 names Jerusalem and Lachish, which the Amarna letters
+        // name, but no one they name, and no passage of theirs is in it.
+        let found = bible.chapter_artifacts(6, 10).unwrap();
+        assert!(
+            !found
+                .iter()
+                .any(|f| f.artifact.key == "amarna-letters" && f.verses.is_empty()),
+            "{:?}",
+            found.iter().map(|f| &f.artifact.key).collect::<Vec<_>>()
+        );
+        // Mark 6 names Herod Antipas, so Josephus on John the Baptist is there.
+        let mark_6 = bible.chapter_artifacts(41, 6).unwrap();
+        let john = mark_6
+            .iter()
+            .find(|f| f.artifact.key == "josephus-john-the-baptist")
+            .unwrap();
+        assert!(john.people.iter().all(|p| p.kind == NameKind::Person));
     }
 }
