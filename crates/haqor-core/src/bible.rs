@@ -5655,31 +5655,33 @@ impl Bible {
     }
 
     /// Every word of the Greek text whose dictionary form is built on
-    /// `root`, in order, each with its dictionary form.
+    /// `root`, in order, each with its dictionary form and grammar.
     pub fn greek_root_occurrences(
         &self,
         root: &str,
-    ) -> rusqlite::Result<Vec<(crate::greek::GreekOccurrence, String)>> {
+    ) -> rusqlite::Result<Vec<crate::greek::GreekRootOccurrence>> {
         if root.is_empty() || !self.has_greek_lexicon()? {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare_cached(
-            "SELECT w.ref, w.position, l.lemma FROM data.greek_root r \
+            "SELECT w.ref, w.position, l.lemma, coalesce(g.code, '') FROM data.greek_root r \
              JOIN data.greek_lemma l ON l.lemma = r.lemma \
              JOIN data.greek_word w ON w.lemma_id = l.lemma_id \
+             LEFT JOIN data.greek_grammar g ON g.grammar_id = w.grammar_id \
              WHERE r.root = ?1 ORDER BY w.ref, w.position",
         )?;
         stmt.query_map([root], |row| {
             let reference: i64 = row.get(0)?;
-            Ok((
-                crate::greek::GreekOccurrence {
+            Ok(crate::greek::GreekRootOccurrence {
+                occurrence: crate::greek::GreekOccurrence {
                     book: (reference >> 16) as u8,
                     chapter: ((reference >> 8) & 0xff) as u8,
                     verse: (reference & 0xff) as u8,
                     position: row.get(1)?,
                 },
-                row.get(2)?,
-            ))
+                lemma: row.get(2)?,
+                grammar: row.get(3)?,
+            })
         })?
         .collect()
     }
@@ -7032,8 +7034,10 @@ mod tests {
         let occurrences = bible.greek_root_occurrences("βίβλος").unwrap();
         let total: u32 = family.iter().map(|l| l.occurrences).sum();
         assert_eq!(occurrences.len() as u32, total);
-        assert!(occurrences.iter().any(|(o, lemma)| lemma == "βίβλος"
-            && (o.book, o.chapter, o.verse, o.position) == (40, 1, 1, 0)));
+        assert!(occurrences.iter().any(|o| o.lemma == "βίβλος"
+            && o.grammar == "N-NSF"
+            && (o.occurrence.book, o.occurrence.chapter, o.occurrence.verse, o.occurrence.position)
+                == (40, 1, 1, 0)));
         let linked = bible
             .greek_lexicon_entry("abbott-smith", "βιβλίον")
             .unwrap();
