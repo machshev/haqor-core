@@ -55,6 +55,16 @@
       ]
     },
     {
+      "ot": "Gen.6.13-17",
+      "title": "The end of all flesh: the world destroyed by water",
+      "messianic": false,
+      "note": "The first heavens and earth, founded with the lamb implied in the garden (Genesis 3:21), ended by the flood.",
+      "fulfilments": [
+        { "ref": "Gen.7.17-23", "kind": "event" },
+        { "ref": "2Pe.3.5-6", "kind": "allusion", "stage": "history", "note": "The world that then was, being overflowed with water, perished." }
+      ]
+    },
+    {
       "ot": "Gen.12.1-3",
       "title": "In Abram all families of the earth will be blessed",
       "theme": "abrahamic",
@@ -532,9 +542,11 @@
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "2Pe.3.13", "ot": "Isa.65.17", "kind": "allusion", "stage": "return" },
-        { "ref": "Rev.21.1", "ot": "Isa.65.17", "kind": "allusion", "stage": "millennium-end" }
-      ]
+        { "ref": "2Pe.3.10-12", "ot": "Isa.65.17", "kind": "allusion", "stage": "ad70", "note": "The heavens and earth of the Mosaic world dissolved by fire in AD 70: the former not remembered." },
+        { "ref": "2Pe.3.13", "ot": "Isa.65.17", "kind": "allusion", "stage": "return", "note": "The third heavens and earth, the kingdom, wherein dwelleth righteousness, never to be destroyed." },
+        { "ref": "Rev.21.1", "ot": "Isa.65.17", "kind": "allusion", "stage": "millennium-end", "note": "No more sea: no more flesh, all changed to immortality." }
+      ],
+      "note": "New heavens and a new earth: the kingdom established at Christ's return, in place of the Mosaic heavens and earth ended in AD 70. Death still comes in the thousand years (65:20); at their end there is no more sea (Revelation 21:1)."
     },
     {
       "ot": "Jer.1.13-15",
@@ -856,8 +868,9 @@
       "messianic": true,
       "fulfilments": [
         { "ref": "Jhn.19.36", "kind": "quotation" },
-        { "ref": "1Co.5.7", "kind": "type", "note": "Christ our passover." }
-      ]
+        { "ref": "1Co.5.7", "kind": "type", "note": "Christ our passover: the kingdom founded, as the Mosaic world was at the exodus." }
+      ],
+      "note": "The lamb that founded the Mosaic world in Egypt, which was established under David. Christ our passover founds the kingdom, to be established at his return."
     },
     {
       "ot": "Num.21.8-9",
@@ -1153,6 +1166,20 @@
         { "ot": "Zec.12.1-9", "stage": "return", "label": "Jerusalem a burdensome stone" },
         { "ot": "Zec.14.1-21", "stage": "return", "label": "All nations against Jerusalem" },
         { "ot": "Ezk.38.1-39.29", "stage": "millennium-end", "label": "Gog and Magog after the thousand years" }
+      ]
+    },
+    {
+      "title": "Three heavens and earths",
+      "note": "Three worlds, each founded with a lamb (2 Peter 3:5-13): the first, from the garden, destroyed by water; the Mosaic, founded at the passover in Egypt and established under David, destroyed by fire in AD 70; and the kingdom, founded at Christ our passover and established at his return, which shall never be destroyed.",
+      "members": [
+        { "ot": "Gen.6.13-17", "stage": "history", "label": "The first world: destroyed by water" },
+        { "ot": "Exo.12.46", "stage": "history", "label": "The Mosaic world founded: the passover lamb" },
+        { "ot": "2Sa.7.12-16", "stage": "history", "label": "The Mosaic world established under David" },
+        { "ot": "Hag.2.6-9", "stage": "ad70", "label": "The Mosaic world shaken and removed" },
+        { "ot": "Exo.12.46", "stage": "first-advent", "label": "The kingdom founded: Christ our passover" },
+        { "ot": "Dan.2.44-45", "stage": "return", "label": "The kingdom established, never to be destroyed" },
+        { "ot": "Isa.65.17-25", "stage": "return", "label": "New heavens and a new earth" },
+        { "ot": "Isa.65.17-25", "stage": "millennium-end", "label": "No more sea" }
       ]
     }
   ],
