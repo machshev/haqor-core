@@ -14,6 +14,11 @@
       "id": "wikipedia",
       "citation": "Wikipedia, the article on the find (CC BY-SA 4.0)",
       "url": "https://en.wikipedia.org/wiki/List_of_inscriptions_in_biblical_archaeology"
+    },
+    {
+      "id": "gordon-1940",
+      "citation": "Cyrus H. Gordon, \"Biblical Customs and the Nuzu Tablets\", The Biblical Archaeologist 3:1 (1940), 1–12",
+      "url": ""
     }
   ],
   "artifacts": [
@@ -3906,6 +3911,120 @@
         }
       ],
       "note": "Date and the k'rw reading unverified against Wikipedia; the reading is disputed in the literature, hence 'possible'."
+    },
+    {
+      "id": "ebla-tablets",
+      "name": "Ebla tablets",
+      "other_names": ["Ebla archives"],
+      "kind": "tablet",
+      "date": "c. 2500–2250 BC",
+      "year": -2350,
+      "script": "Eblaite and Sumerian, in cuneiform on clay",
+      "found": { "site": "Tell Mardikh (Ebla), Syria", "year": 1975 },
+      "museum": "National Museums of Aleppo, Damascus and Idlib",
+      "wikipedia": "Ebla tablets",
+      "wikidata": "Q2918565",
+      "summary": "The royal archive of Ebla, some 1,800 whole tablets and thousands of fragments found by Paolo Matthiae's Italian expedition, recording the trade, tribute and towns of a great Syrian kingdom centuries before Abraham.",
+      "attests": [
+        {
+          "key": "Lebanon@Deu.1.7",
+          "name": "Lebanon",
+          "strength": "strong",
+          "how": "The earliest known mention of Lebanon, the mountain the cedars came from.",
+          "source": "wikipedia"
+        },
+        {
+          "key": "Canaan@Gen.10.18",
+          "name": "Canaan",
+          "strength": "reasonable",
+          "how": "The earliest known mention of the Canaanites.",
+          "source": "wikipedia"
+        },
+        {
+          "key": "Sodom@Gen.10.19",
+          "name": "Sodom",
+          "strength": "possible",
+          "how": "Giovanni Pettinato, the archive's first epigrapher, read Sodom among the towns the tablets name.",
+          "source": "wikipedia"
+        },
+        {
+          "key": "Gomorrah@Gen.10.19",
+          "name": "Gomorrah",
+          "strength": "possible",
+          "how": "Read by Pettinato beside Sodom.",
+          "source": "wikipedia"
+        },
+        {
+          "key": "Eber@Gen.10.21",
+          "name": "Eber",
+          "strength": "possible",
+          "how": "Ebrium, a ruler of Ebla, whose name Pettinato connected with Eber, forefather of the Hebrews; a man of the same name, not the same man.",
+          "source": "wikipedia"
+        }
+      ],
+      "passages": [
+        {
+          "from": "Gen.14.2",
+          "strength": "possible",
+          "how": "The cities of the plain, which Pettinato read in the tablets.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "nuzi-tablets",
+      "name": "Nuzi tablets",
+      "kind": "tablet",
+      "date": "15th–14th century BC",
+      "year": -1400,
+      "script": "Akkadian cuneiform, written by Hurrian scribes, on clay",
+      "found": { "site": "Yorghan Tepe (Nuzi), near Kirkuk, Iraq", "year": 1925 },
+      "museum": "Oriental Institute, Chicago; Harvard Semitic Museum; Iraq Museum, Baghdad",
+      "wikipedia": "Nuzi",
+      "wikidata": "Q584605",
+      "summary": "Some 5,000 family and legal records of a Hurrian town (marriage contracts, adoptions, wills and lawsuits), excavated 1925–31, whose customs match the family life of the patriarchs in Genesis.",
+      "attests": [],
+      "passages": [
+        {
+          "from": "Gen.16.1",
+          "to": "Gen.16.3",
+          "strength": "reasonable",
+          "how": "A Nuzi marriage contract binds a childless wife to give her husband a slave woman to bear children for her, as Sarah gave Hagar to Abraham.",
+          "source": "gordon-1940"
+        },
+        {
+          "from": "Gen.30.3",
+          "strength": "reasonable",
+          "how": "Rachel gives Bilhah to Jacob \"that she may bear upon my knees\", the same custom.",
+          "source": "gordon-1940"
+        },
+        {
+          "from": "Gen.15.2",
+          "to": "Gen.15.4",
+          "strength": "reasonable",
+          "how": "A childless man adopts an heir, often a servant, who gives way if a son is born, as Abraham's heir was to be Eliezer of Damascus until God promised a son.",
+          "source": "gordon-1940"
+        },
+        {
+          "from": "Gen.25.31",
+          "to": "Gen.25.33",
+          "strength": "reasonable",
+          "how": "A man sells his share of the inheritance to his brother for three sheep, as Esau sold his birthright for a meal.",
+          "source": "gordon-1940"
+        },
+        {
+          "from": "Gen.27.33",
+          "strength": "reasonable",
+          "how": "A father's deathbed blessing upheld in court as binding, as Isaac's blessing of Jacob could not be taken back.",
+          "source": "gordon-1940"
+        },
+        {
+          "from": "Gen.31.19",
+          "strength": "reasonable",
+          "how": "The household gods pass with the headship of the family, so an adopted son-in-law who holds them has a claim on the estate: why Rachel took Laban's teraphim, and why he pursued them.",
+          "source": "gordon-1940"
+        }
+      ]
     }
   ]
 }
