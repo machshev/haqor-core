@@ -15,6 +15,7 @@ mod murdock;
 mod names;
 mod occurrences;
 mod oshb;
+mod peshitta_greek;
 mod prefilter;
 mod prophecy;
 mod proper_names;

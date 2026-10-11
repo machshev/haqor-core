@@ -5763,6 +5763,65 @@ impl Bible {
         .collect()
     }
 
+    /// The Greek words the Peshitta lexeme `lexeme_id` renders, the most
+    /// linked first. Empty for a database built before they were.
+    pub fn greek_equivalents(
+        &self,
+        lexeme_id: i64,
+    ) -> rusqlite::Result<Vec<crate::greek::GreekEquivalent>> {
+        if !self.has_table("syriac_greek")? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT e.lemma, \
+                    coalesce((SELECT l.gloss FROM data.greek_lemma l WHERE l.lemma = e.lemma \
+                              ORDER BY l.lemma_id LIMIT 1), ''), \
+                    e.links \
+             FROM data.syriac_greek e WHERE e.lexeme_id = ?1 ORDER BY e.links DESC",
+        )?;
+        stmt.query_map([lexeme_id], |row| {
+            Ok(crate::greek::GreekEquivalent {
+                lemma: row.get(0)?,
+                gloss: row.get(1)?,
+                links: row.get(2)?,
+            })
+        })?
+        .collect()
+    }
+
+    /// The Peshitta lexemes the Greek dictionary form `lemma` is rendered
+    /// by, the most linked first.
+    pub fn syriac_equivalents(
+        &self,
+        lemma: &str,
+    ) -> rusqlite::Result<Vec<crate::greek::SyriacEquivalent>> {
+        if lemma.is_empty() || !self.has_table("syriac_greek")? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT e.lexeme_id, x.lexeme, \
+                    coalesce((SELECT g.meaning FROM data.syriac_gloss g \
+                              WHERE g.lexeme_id = e.lexeme_id ORDER BY g.gloss_id LIMIT 1), ''), \
+                    coalesce((SELECT w.vocalised FROM data.nt_word n \
+                              JOIN data.syriac_word w ON w.word_id = n.word_id \
+                              WHERE w.lexeme_id = e.lexeme_id \
+                              GROUP BY w.vocalised ORDER BY count(*) DESC LIMIT 1), ''), \
+                    e.links \
+             FROM data.syriac_greek e JOIN data.syriac_lexeme x ON x.lexeme_id = e.lexeme_id \
+             WHERE e.lemma = ?1 ORDER BY e.links DESC",
+        )?;
+        stmt.query_map([lemma], |row| {
+            Ok(crate::greek::SyriacEquivalent {
+                lexeme_id: row.get(0)?,
+                lexeme: row.get(1)?,
+                meaning: row.get(2)?,
+                word: row.get(3)?,
+                links: row.get(4)?,
+            })
+        })?
+        .collect()
+    }
+
     /// The person, place or other named thing the word at `position` of a
     /// verse names (STEP Bible's TIPNR, which tells apart those sharing a
     /// name), with everything known of it. `None` for a word naming none, the
@@ -7119,6 +7178,27 @@ mod tests {
             .greek_lexicon_entry("abbott-smith", "βιβλίον")
             .unwrap();
         assert_eq!(linked.unwrap().headword, "βιβλίον");
+    }
+
+    /// The Peshitta's words and the Greek's are each other's equivalents,
+    /// both ways. Skips a database built before they were aligned.
+    #[test]
+    fn the_peshitta_and_the_greek_are_aligned() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        if !bible.has_table("syriac_greek").unwrap() {
+            eprintln!("skipping: haqor.db has no syriac_greek table");
+            return;
+        }
+        let faith = bible.syriac_equivalents("πίστις").unwrap();
+        assert_eq!(faith[0].lexeme, "הימנותא");
+        assert!(!faith[0].word.is_empty());
+        let god = bible.syriac_equivalents("θεός").unwrap();
+        let greek = bible.greek_equivalents(god[0].lexeme_id).unwrap();
+        assert_eq!(greek[0].lemma, "θεός");
+        assert!(greek[0].links > 1000);
+        // The article and the Syriac proclitics are no one's equivalent.
+        assert!(bible.syriac_equivalents("ὁ").unwrap().is_empty());
     }
 
     /// The Greek New Testament is the TR: its readings, its order and the

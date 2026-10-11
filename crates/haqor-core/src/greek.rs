@@ -46,6 +46,28 @@ pub struct GreekLexiconEntry {
     pub body: String,
 }
 
+/// A Greek word a Peshitta lexeme renders, found by aligning the two texts:
+/// its dictionary form and gloss, and how many of their words are linked.
+#[derive(Clone, Debug, PartialEq, Eq)]
+pub struct GreekEquivalent {
+    pub lemma: String,
+    pub gloss: String,
+    pub links: u32,
+}
+
+/// A Peshitta lexeme a Greek dictionary form is rendered by: the lexeme in
+/// SEDRA's Hebrew letters and its first meaning, the commonest word of it in
+/// the text (vocalised, as the reader shows it), and how many words are
+/// linked.
+#[derive(Clone, Debug, PartialEq, Eq)]
+pub struct SyriacEquivalent {
+    pub lexeme_id: i64,
+    pub lexeme: String,
+    pub meaning: String,
+    pub word: String,
+    pub links: u32,
+}
+
 /// A word of the Greek text built on a root: where it stands, its dictionary
 /// form and its grammar code.
 #[derive(Clone, Debug, PartialEq, Eq)]

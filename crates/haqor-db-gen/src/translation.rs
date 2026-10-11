@@ -1452,7 +1452,7 @@ pub fn build_translation(
     Ok(build)
 }
 
-fn has_table(db: &Connection, name: &str) -> Result<bool> {
+pub(crate) fn has_table(db: &Connection, name: &str) -> Result<bool> {
     Ok(db.query_row(
         "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = ?1)",
         [name],

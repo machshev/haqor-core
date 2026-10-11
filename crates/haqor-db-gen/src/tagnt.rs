@@ -1180,6 +1180,10 @@ pub fn build_greek(db: &Connection, src_texts: &Path) -> Result<GreekSummary> {
     }
     tx.commit()?;
     crate::greek_lexicon::build(db, &dir)?;
+    // The Peshitta's words' Greek equivalents, where the database has both.
+    if crate::translation::has_table(db, "nt_word")? {
+        crate::peshitta_greek::build(db)?;
+    }
     info!(
         "Greek: {} TR words in {} verses ({} untagged, {} naming a person or place), {} \
          dictionary forms",

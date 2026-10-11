@@ -312,6 +312,19 @@ are prepared with STEP Bible's, into `src_texts/STEPBible-Data/`
 `Bible::greek_roots`, `Bible::greek_root_lemmas` and
 `Bible::greek_root_occurrences` read them.
 
+`gen-runtime` and `gen-greek` also link the Peshitta's words to the Greek's
+(`syriac_greek`): no open edition aligns the two word by word, so they are
+aligned here, over the 7,957 verses both have, by IBM Model 1 trained in
+each direction. The Syriac proclitics (ܘ, ܕ, ܠ, ܒ) and pronoun suffixes
+SEDRA writes within a word stand as words of their own, and the Greek
+article is left out, so that καί, the article and the pronouns are not
+mistaken for the words they stand beside. A pair is kept where both
+directions link it at least twice, and it is either word's commonest
+equivalent or a large part of one's renderings; 2,132 pairs give 1,546 of
+the Peshitta's 3,301 lexemes, 97% of its words, an equivalent (ܗܝܡܢܘܬܐ
+πίστις, ܚܝܐ σῴζω). `Bible::greek_equivalents` and
+`Bible::syriac_equivalents` read them.
+
 ### LAN progress sync
 
 Run a personal server on the LAN that the app can reach:
