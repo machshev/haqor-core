@@ -9,6 +9,7 @@ pub const VERSION: &str = env!("CARGO_PKG_VERSION");
 pub use haqor_morphology as morphology;
 
 /// Utilities for interacting with Bible resources.
+pub mod archaeology;
 pub mod bible;
 
 /// The Greek New Testament (the Textus Receptus, from STEP Bible's TAGNT),

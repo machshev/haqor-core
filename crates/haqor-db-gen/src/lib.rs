@@ -4,6 +4,7 @@
 //! table at a time. Currently it generates the `bible` table (OT text from
 //! UXLC plus NT Syriac transliterated into Hebrew letters from SEDRA).
 
+mod artifacts;
 mod events;
 mod geocoding;
 mod greek_lexicon;
@@ -46,6 +47,7 @@ pub use lexicon_db::{
 };
 pub use names::{NamesSummary, build_names, gen_names};
 pub use occurrences::parse_ot_coverage;
+pub use artifacts::{ARTIFACTS, ArtifactsSummary, build_artifacts, gen_artifacts};
 pub use prophecy::{PROPHECIES, ProphecySummary, build_prophecies, gen_prophecy};
 pub use quotations::{
     GenQuotesOptions, KNOWN_FALSE, KNOWN_PARALLELS, KNOWN_QUOTATIONS, LinkKind, Matcher,

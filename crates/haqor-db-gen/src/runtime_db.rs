@@ -399,6 +399,12 @@ pub fn generate_runtime(
         &data_dir.join(crate::journeys::JOURNEYS),
         &data_dir.join(crate::events::EVENT_OVERRIDES),
     )?;
+    // After the names, whose people and places the finds name.
+    crate::artifacts::build_artifacts(
+        &Connection::open(output)?,
+        &data_dir.join(crate::artifacts::ARTIFACTS),
+        src_texts,
+    )?;
     crate::tagnt::build_greek(&Connection::open(output)?, src_texts)?;
     // After the TR, which the New Testament's English is aligned to.
     crate::translation::build_translation(&Connection::open(output)?, src_texts, data_dir)?;

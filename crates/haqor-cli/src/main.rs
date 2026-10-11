@@ -308,6 +308,19 @@ enum DbCommands {
     /// Rebuild the `prophecy` tables of a runtime haqor.db in place
     /// (gen-runtime also builds them): Haqor's curated prophecies with the
     /// NT citation formulas found linked to them.
+    /// Rebuild the archaeological finds of a runtime haqor.db in place
+    /// (gen-runtime also builds them), from Haqor's data/artifacts.json.
+    GenArtifacts {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Haqor's archaeological finds and what they attest.
+        #[arg(long, default_value = "data/artifacts.json")]
+        artifacts: PathBuf,
+        /// Source texts directory holding STEPBible-Data, for TIPNR's keys.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     GenProphecy {
         /// Runtime database to update.
         #[arg(short, long, default_value = "data/haqor.db")]
@@ -664,6 +677,20 @@ fn main() -> Result<()> {
                     db.display(),
                     summary.unparsed,
                     summary.missing
+                );
+            }
+            DbCommands::GenArtifacts {
+                db,
+                artifacts,
+                src_texts,
+            } => {
+                let summary = haqor_db_gen::gen_artifacts(&db, &artifacts, &src_texts)?;
+                println!(
+                    "Wrote {} finds naming people {} times and bearing on {} passages to {}",
+                    summary.artifacts,
+                    summary.attestations,
+                    summary.passages,
+                    db.display()
                 );
             }
             DbCommands::GenProphecy {
