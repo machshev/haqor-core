@@ -376,6 +376,22 @@ impl Bible {
         }
         self.query_artifacts(Some(&ids))
     }
+
+    /// The finds found at a place, oldest first: for a place's page.
+    pub fn place_artifacts(&self, entity_id: u32) -> rusqlite::Result<Vec<Artifact>> {
+        if !self.has_artifacts()? {
+            return Ok(Vec::new());
+        }
+        let ids: Vec<u32> = self
+            .conn()
+            .prepare_cached("SELECT artifact_id FROM data.artifact WHERE found_entity = ?1")?
+            .query_map([entity_id], |row| row.get(0))?
+            .collect::<rusqlite::Result<_>>()?;
+        if ids.is_empty() {
+            return Ok(Vec::new());
+        }
+        self.query_artifacts(Some(&ids))
+    }
 }
 
 #[cfg(test)]
@@ -464,5 +480,25 @@ mod tests {
             .collect();
         assert!(keys.contains(&"hezekiah-bulla".to_string()), "{keys:?}");
         assert!(keys.contains(&"sennacherib-annals".to_string()), "{keys:?}");
+        // Jerusalem, where many were found.
+        let jerusalem: u32 = bible
+            .conn()
+            .query_row(
+                "SELECT found_entity FROM data.artifact WHERE key = 'siloam-inscription'",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+        let found: Vec<String> = bible
+            .place_artifacts(jerusalem)
+            .unwrap()
+            .into_iter()
+            .map(|a| a.key)
+            .collect();
+        assert!(
+            found.contains(&"siloam-inscription".to_string()),
+            "{found:?}"
+        );
+        assert!(!found.contains(&"pilate-stone".to_string()), "{found:?}");
     }
 }
