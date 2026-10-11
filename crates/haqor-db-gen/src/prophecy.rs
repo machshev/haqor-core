@@ -1,8 +1,10 @@
-//! Build the prophecies of the Old Testament and where they are fulfilled.
+//! Build the prophecies of the Bible and where they are fulfilled.
 //!
-//! A prophecy is an OT passage; its fulfilments, if the Bible records any, are
-//! the passages that take it up — NT quotations and allusions, types, and
-//! events narrated in either testament. Many prophecies have none: a kingdom
+//! A prophecy is a passage of the Old Testament, or of Christ's own (the
+//! judgment on Jerusalem in AD 70); its fulfilments, if the Bible records
+//! any, are the passages that take it up — NT quotations and allusions,
+//! types, and events narrated in either testament — and, for Christ's, the
+//! other Gospels' parallel accounts. Many prophecies have none: a kingdom
 //! prophecy still awaiting the return of Christ, or the fall of Tyre, which
 //! history records but the Bible does not.
 //!
@@ -46,6 +48,7 @@ pub const THEMES: &[&str] = &[
     "kingdom",
     "priest",
     "israel",
+    "jerusalem",
     "nations",
     "empires",
 ];
@@ -88,7 +91,7 @@ fn stages_of(p: &Prophecy) -> String {
 }
 
 /// How a passage fulfils a prophecy.
-pub const KINDS: &[&str] = &["quotation", "allusion", "type", "event"];
+pub const KINDS: &[&str] = &["quotation", "allusion", "type", "event", "parallel"];
 
 pub const SCHEMA: &str = "
 DROP TABLE IF EXISTS prophecy;
@@ -97,8 +100,8 @@ DROP TABLE IF EXISTS prophecy_pattern;
 DROP TABLE IF EXISTS prophecy_pattern_member;
 CREATE TABLE prophecy(
     prophecy_id INTEGER PRIMARY KEY,
-    ot_ref      INTEGER NOT NULL,
-    ot_end      INTEGER NOT NULL,
+    ref         INTEGER NOT NULL,
+    end_ref     INTEGER NOT NULL,
     title       TEXT    NOT NULL,
     theme       TEXT,
     messianic   INTEGER NOT NULL,
@@ -106,14 +109,14 @@ CREATE TABLE prophecy(
     curated     INTEGER NOT NULL,
     note        TEXT    NOT NULL
 );
-CREATE INDEX idx_prophecy_ot ON prophecy(ot_ref);
+CREATE INDEX idx_prophecy_ref ON prophecy(ref);
 CREATE TABLE prophecy_fulfilment(
     prophecy_id INTEGER NOT NULL,
     ord         INTEGER NOT NULL,
     ref         INTEGER NOT NULL,
     end_ref     INTEGER NOT NULL,
-    ot_ref      INTEGER NOT NULL,
-    ot_end      INTEGER NOT NULL,
+    prophecy_ref INTEGER NOT NULL,
+    prophecy_end INTEGER NOT NULL,
     kind        TEXT    NOT NULL,
     stage       TEXT    NOT NULL,
     formula     TEXT,
@@ -298,8 +301,8 @@ fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i6
 
     let mut prophecies = Vec::new();
     for entry in json["prophecies"].as_array().into_iter().flatten() {
-        let what = format!("prophecy {}", entry["ot"].as_str().unwrap_or("?"));
-        let Some(ot) = check.span(entry["ot"].as_str(), &what) else {
+        let what = format!("prophecy {}", entry["passage"].as_str().unwrap_or("?"));
+        let Some(ot) = check.span(entry["passage"].as_str(), &what) else {
             continue;
         };
         let title = entry["title"].as_str().unwrap_or("").to_string();
@@ -321,13 +324,13 @@ fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i6
             let Some(passage) = check.span(f["ref"].as_str(), &at) else {
                 continue;
             };
-            let taken = match f["ot"].as_str() {
+            let taken = match f["verses"].as_str() {
                 None => Some(ot),
                 Some(text) => check.span(Some(text), &at),
             };
             let Some(taken) = taken else { continue };
             if !contains(ot, taken) {
-                check.faults.push(format!("{at}: its OT verses are outside the prophecy"));
+                check.faults.push(format!("{at}: its verses are outside the prophecy"));
             }
             let Some(kind) = check.one_of(Some(f["kind"].as_str().unwrap_or("")), KINDS, &at) else {
                 continue;
@@ -371,8 +374,8 @@ fn read_curation(path: &Path, versification: &Versification, verses: &HashSet<i6
         }
         let mut members = Vec::new();
         for m in entry["members"].as_array().into_iter().flatten() {
-            let at = format!("{what}, member {}", m["ot"].as_str().unwrap_or("?"));
-            let Some(ot) = check.span(m["ot"].as_str(), &at) else {
+            let at = format!("{what}, member {}", m["passage"].as_str().unwrap_or("?"));
+            let Some(ot) = check.span(m["passage"].as_str(), &at) else {
                 continue;
             };
             if !prophecies.iter().any(|p| p.span == ot) {
@@ -759,11 +762,11 @@ fn write(db: &Connection, prophecies: &[Prophecy], patterns: &[Pattern]) -> Resu
     let tx = db.unchecked_transaction()?;
     tx.execute_batch(SCHEMA)?;
     let mut insert = tx.prepare(
-        "INSERT INTO prophecy(prophecy_id, ot_ref, ot_end, title, theme, messianic, stages, \
+        "INSERT INTO prophecy(prophecy_id, ref, end_ref, title, theme, messianic, stages, \
          curated, note) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
     )?;
     let mut fulfil = tx.prepare(
-        "INSERT INTO prophecy_fulfilment(prophecy_id, ord, ref, end_ref, ot_ref, ot_end, kind, \
+        "INSERT INTO prophecy_fulfilment(prophecy_id, ord, ref, end_ref, prophecy_ref, prophecy_end, kind, \
          stage, formula, reviewed, confidence, note) \
          VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12)",
     )?;
@@ -926,8 +929,8 @@ mod tests {
 
         let prophecy_of = |ot: i64| -> Option<(String, bool)> {
             db.query_row(
-                "SELECT title, curated FROM prophecy WHERE ot_ref <= ?1 AND ot_end >= ?1 \
-                 ORDER BY ot_end - ot_ref LIMIT 1",
+                "SELECT title, curated FROM prophecy WHERE ref <= ?1 AND end_ref >= ?1 \
+                 ORDER BY end_ref - ref LIMIT 1",
                 [ot],
                 |r| Ok((r.get(0)?, r.get(1)?)),
             )
@@ -935,7 +938,8 @@ mod tests {
         };
         let fulfilled_at = |ot: i64, nt: i64| -> bool {
             db.query_row(
-                "SELECT EXISTS(SELECT 1 FROM prophecy_fulfilment WHERE ot_ref <= ?1 AND ot_end >= ?1 \
+                "SELECT EXISTS(SELECT 1 FROM prophecy_fulfilment WHERE prophecy_ref <= ?1 \
+                 AND prophecy_end >= ?1 \
                  AND ref <= ?2 AND end_ref >= ?2)",
                 [ot, nt],
                 |r| r.get(0),
@@ -959,7 +963,7 @@ mod tests {
         // Isaiah 7:14 in Ahaz's day and in Jesus.
         let stages: String = db
             .query_row(
-                "SELECT stages FROM prophecy WHERE ot_ref <= ?1 AND ot_end >= ?1",
+                "SELECT stages FROM prophecy WHERE ref <= ?1 AND end_ref >= ?1",
                 [pack_ref(12, 7, 14)],
                 |r| r.get(0),
             )

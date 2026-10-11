@@ -1219,8 +1219,8 @@ pub struct ThematicVerse {
     pub references: Vec<ThematicReference>,
 }
 
-/// A prophecy of the Old Testament and the passages that fulfil it, where the
-/// Bible records any: Haqor's curation, with the NT citation formulas found
+/// A prophecy, of the Old Testament or of Christ's own, and the passages that
+/// fulfil it, where the Bible records any: Haqor's curation, with the NT citation formulas found
 /// linked to it at build time (see `haqor-db-gen`'s `prophecy` module).
 #[derive(Debug, Clone, PartialEq)]
 pub struct Prophecy {
@@ -1280,7 +1280,8 @@ pub struct ProphecyFulfilment {
     pub passage: VerseSpan,
     /// The verses of the prophecy it takes up.
     pub prophecy_verses: VerseSpan,
-    /// `quotation`, `allusion`, `type` or `event`.
+    /// `quotation`, `allusion`, `type`, `event`, or `parallel` (another
+    /// Gospel's account of the same prophecy).
     pub kind: String,
     /// When it happens: one of [`PROPHECY_STAGES`].
     pub stage: String,
@@ -1304,6 +1305,7 @@ pub const PROPHECY_THEMES: &[&str] = &[
     "kingdom",
     "priest",
     "israel",
+    "jerusalem",
     "nations",
     "empires",
 ];
@@ -1337,7 +1339,7 @@ impl ProphecyFilter {
 /// The prophecies whose passage or a fulfilment touches the verses `?1..=?2`,
 /// of theme `?3` (any if NULL) and messianic flag `?4` (either if NULL).
 const PROPHECIES_TOUCHING: &str = "FROM data.prophecy p \
-     WHERE ((p.ot_ref <= ?2 AND p.ot_end >= ?1) \
+     WHERE ((p.ref <= ?2 AND p.end_ref >= ?1) \
         OR EXISTS(SELECT 1 FROM data.prophecy_fulfilment f \
                   WHERE f.prophecy_id = p.prophecy_id AND f.ref <= ?2 AND f.end_ref >= ?1)) \
        AND (?3 IS NULL OR p.theme = ?3) AND (?4 IS NULL OR p.messianic = ?4)";
@@ -5271,9 +5273,9 @@ impl Bible {
         let mut prophecies = self
             .db
             .prepare_cached(&format!(
-                "SELECT p.prophecy_id, p.ot_ref, p.ot_end, p.title, p.theme, p.messianic, \
+                "SELECT p.prophecy_id, p.ref, p.end_ref, p.title, p.theme, p.messianic, \
                         p.stages, p.curated, p.note \
-                 {PROPHECIES_TOUCHING} ORDER BY p.ot_ref, p.ot_end LIMIT ?5 OFFSET ?6"
+                 {PROPHECIES_TOUCHING} ORDER BY p.ref, p.end_ref LIMIT ?5 OFFSET ?6"
             ))?
             .query_map(
                 rusqlite::params![low, high, filter.theme, filter.messianic, limit, offset],
@@ -5298,8 +5300,8 @@ impl Bible {
             )?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         let mut stmt = self.db.prepare_cached(
-            "SELECT ref, end_ref, ot_ref, ot_end, kind, stage, formula, reviewed, confidence, \
-                    note \
+            "SELECT ref, end_ref, prophecy_ref, prophecy_end, kind, stage, formula, reviewed, \
+                    confidence, note \
              FROM data.prophecy_fulfilment WHERE prophecy_id = ?1 ORDER BY ord",
         )?;
         let mut patterns_of = self.db.prepare_cached(
@@ -5310,7 +5312,7 @@ impl Bible {
             .db
             .prepare_cached("SELECT title, note FROM data.prophecy_pattern WHERE pattern_id = ?1")?;
         let mut members_stmt = self.db.prepare_cached(
-            "SELECT m.prophecy_id, p.ot_ref, p.ot_end, m.stage, m.label \
+            "SELECT m.prophecy_id, p.ref, p.end_ref, m.stage, m.label \
              FROM data.prophecy_pattern_member m JOIN data.prophecy p USING (prophecy_id) \
              WHERE m.pattern_id = ?1 ORDER BY m.ord",
         )?;

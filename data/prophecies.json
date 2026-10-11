@@ -39,7 +39,6 @@
   },
   "prophecies": [
     {
-      "ot": "Gen.3.15",
       "title": "The seed of the woman will bruise the serpent's head",
       "theme": "seed-of-woman",
       "messianic": true,
@@ -52,92 +51,92 @@
         { "ref": "1Co.15.51-54", "kind": "allusion", "stage": "return", "note": "For his followers: changed in a moment, mortality put on immortality, death swallowed up in victory." },
         { "ref": "1Co.15.26", "kind": "allusion", "stage": "millennium-end", "note": "For the whole world: the last enemy that shall be destroyed is death." },
         { "ref": "Rev.21.1-4", "kind": "allusion", "stage": "millennium-end", "note": "No more sea, no more flesh: all changed from terrestrial to celestial bodies, and no more death." }
-      ]
+      ],
+      "passage": "Gen.3.15"
     },
     {
-      "ot": "Gen.6.13-17",
       "title": "The end of all flesh: the world destroyed by water",
       "messianic": false,
       "note": "The first heavens and earth, founded with the lamb implied in the garden (Genesis 3:21), ended by the flood.",
       "fulfilments": [
         { "ref": "Gen.7.17-23", "kind": "event" },
         { "ref": "2Pe.3.5-6", "kind": "allusion", "stage": "history", "note": "The world that then was, being overflowed with water, perished." }
-      ]
+      ],
+      "passage": "Gen.6.13-17"
     },
     {
-      "ot": "Gen.12.1-3",
       "title": "In Abram all families of the earth will be blessed",
       "theme": "abrahamic",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Gal.3.8", "ot": "Gen.12.3", "kind": "quotation", "note": "Paul calls it the gospel preached beforehand to Abraham." },
-        { "ref": "Act.7.2-4", "ot": "Gen.12.1", "kind": "quotation" }
-      ]
+        { "ref": "Gal.3.8", "kind": "quotation", "note": "Paul calls it the gospel preached beforehand to Abraham.", "verses": "Gen.12.3" },
+        { "ref": "Act.7.2-4", "kind": "quotation", "verses": "Gen.12.1" }
+      ],
+      "passage": "Gen.12.1-3"
     },
     {
-      "ot": "Gen.13.14-17",
       "title": "The land given to Abram and to his seed for ever",
       "theme": "abrahamic",
       "messianic": true,
       "stages": ["return"],
       "note": "Abraham never received the land himself (Acts 7:5; Hebrews 11:13): the promise waits for the resurrection and the kingdom.",
       "fulfilments": [
-        { "ref": "Gal.3.16", "ot": "Gen.13.15", "kind": "quotation", "note": "\"And to thy seed, which is Christ.\"" },
+        { "ref": "Gal.3.16", "kind": "quotation", "note": "\"And to thy seed, which is Christ.\"", "verses": "Gen.13.15" },
         { "ref": "Rom.4.13", "kind": "allusion", "stage": "return", "note": "Heir of the world." },
         { "ref": "Act.7.5", "kind": "allusion", "stage": "return" },
         { "ref": "Heb.11.8-10", "kind": "allusion", "stage": "return" }
-      ]
+      ],
+      "passage": "Gen.13.14-17"
     },
     {
-      "ot": "Gen.15.1-21",
       "title": "Abram's seed as the stars; the covenant of the land",
       "theme": "abrahamic",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Rom.4.18", "ot": "Gen.15.5", "kind": "quotation" },
-        { "ref": "Rom.4.3", "ot": "Gen.15.6", "kind": "quotation" },
-        { "ref": "Gal.3.6", "ot": "Gen.15.6", "kind": "quotation" },
-        { "ref": "Jas.2.23", "ot": "Gen.15.6", "kind": "quotation" },
-        { "ref": "Act.7.6-7", "ot": "Gen.15.13-14", "kind": "quotation", "stage": "history" }
-      ]
+        { "ref": "Rom.4.18", "kind": "quotation", "verses": "Gen.15.5" },
+        { "ref": "Rom.4.3", "kind": "quotation", "verses": "Gen.15.6" },
+        { "ref": "Gal.3.6", "kind": "quotation", "verses": "Gen.15.6" },
+        { "ref": "Jas.2.23", "kind": "quotation", "verses": "Gen.15.6" },
+        { "ref": "Act.7.6-7", "kind": "quotation", "stage": "history", "verses": "Gen.15.13-14" }
+      ],
+      "passage": "Gen.15.1-21"
     },
     {
-      "ot": "Gen.17.1-8",
       "title": "Abraham the father of many nations; an everlasting covenant",
       "theme": "abrahamic",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Rom.4.16-17", "ot": "Gen.17.5", "kind": "quotation" },
-        { "ref": "Gal.3.16", "ot": "Gen.17.8", "kind": "allusion", "stage": "return" }
-      ]
+        { "ref": "Rom.4.16-17", "kind": "quotation", "verses": "Gen.17.5" },
+        { "ref": "Gal.3.16", "kind": "allusion", "stage": "return", "verses": "Gen.17.8" }
+      ],
+      "passage": "Gen.17.1-8"
     },
     {
-      "ot": "Gen.22.15-18",
       "title": "The oath: in Abraham's seed all nations will be blessed",
       "theme": "abrahamic",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Act.3.25-26", "ot": "Gen.22.18", "kind": "quotation" },
-        { "ref": "Gal.3.16", "ot": "Gen.22.18", "kind": "allusion" },
-        { "ref": "Heb.6.13-14", "ot": "Gen.22.16-17", "kind": "quotation" },
-        { "ref": "Heb.11.12", "ot": "Gen.22.17", "kind": "allusion" },
+        { "ref": "Act.3.25-26", "kind": "quotation", "verses": "Gen.22.18" },
+        { "ref": "Gal.3.16", "kind": "allusion", "verses": "Gen.22.18" },
+        { "ref": "Heb.6.13-14", "kind": "quotation", "verses": "Gen.22.16-17" },
+        { "ref": "Heb.11.12", "kind": "allusion", "verses": "Gen.22.17" },
         { "ref": "Luk.1.72-73", "kind": "allusion", "note": "\"The oath which he sware to our father Abraham.\"" }
-      ]
+      ],
+      "passage": "Gen.22.15-18"
     },
     {
-      "ot": "Gen.49.8-12",
       "title": "The sceptre shall not depart from Judah",
       "theme": "davidic",
       "messianic": true,
       "fulfilments": [
         { "ref": "Heb.7.14", "kind": "allusion", "note": "Our Lord sprang out of Judah." },
-        { "ref": "Rev.5.5", "ot": "Gen.49.9", "kind": "allusion", "stage": "return", "note": "The Lion of the tribe of Judah." }
-      ]
+        { "ref": "Rev.5.5", "kind": "allusion", "stage": "return", "note": "The Lion of the tribe of Judah.", "verses": "Gen.49.9" }
+      ],
+      "passage": "Gen.49.8-12"
     },
     {
-      "ot": "Num.24.17-19",
       "title": "A star out of Jacob, a sceptre out of Israel",
       "theme": "davidic",
       "messianic": true,
@@ -145,173 +144,173 @@
       "fulfilments": [
         { "ref": "Mat.2.2", "kind": "allusion" },
         { "ref": "Rev.22.16", "kind": "allusion", "stage": "return" }
-      ]
+      ],
+      "passage": "Num.24.17-19"
     },
     {
-      "ot": "Deu.18.15-19",
       "title": "A prophet like Moses",
       "messianic": true,
       "fulfilments": [
         { "ref": "Act.3.22-23", "kind": "quotation" },
         { "ref": "Act.7.37", "kind": "quotation" },
         { "ref": "Jhn.6.14", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Deu.18.15-19"
     },
     {
-      "ot": "2Sa.7.12-16",
       "title": "David's son will reign on his throne for ever",
       "theme": "davidic",
       "messianic": true,
       "note": "The son is raised up from David's own descendants; God will be his father and he God's son, and his throne established for ever.",
       "fulfilments": [
-        { "ref": "1Ki.8.20", "ot": "2Sa.7.12-13", "kind": "event", "note": "Solomon on David's throne, building the house: the promise's first, partial fulfilment." },
+        { "ref": "1Ki.8.20", "kind": "event", "note": "Solomon on David's throne, building the house: the promise's first, partial fulfilment.", "verses": "2Sa.7.12-13" },
         { "ref": "Luk.1.31-33", "kind": "allusion", "stage": "return", "note": "\"The Lord God shall give unto him the throne of his father David.\"" },
-        { "ref": "Heb.1.5", "ot": "2Sa.7.14", "kind": "quotation" },
+        { "ref": "Heb.1.5", "kind": "quotation", "verses": "2Sa.7.14" },
         { "ref": "Act.2.30", "kind": "allusion" },
         { "ref": "Act.13.22-23", "kind": "allusion" },
         { "ref": "Rom.1.3-4", "kind": "allusion" }
-      ]
+      ],
+      "passage": "2Sa.7.12-16"
     },
     {
-      "ot": "Psa.2.1-12",
       "title": "The LORD's anointed king and son",
       "theme": "davidic",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Act.4.25-27", "ot": "Psa.2.1-2", "kind": "quotation" },
-        { "ref": "Act.13.33", "ot": "Psa.2.7", "kind": "quotation", "note": "Applied to the resurrection." },
-        { "ref": "Heb.1.5", "ot": "Psa.2.7", "kind": "quotation" },
-        { "ref": "Heb.5.5", "ot": "Psa.2.7", "kind": "quotation" },
-        { "ref": "Rev.2.26-27", "ot": "Psa.2.8-9", "kind": "allusion" },
-        { "ref": "Rev.19.15", "ot": "Psa.2.9", "kind": "allusion" }
-      ]
+        { "ref": "Act.4.25-27", "kind": "quotation", "verses": "Psa.2.1-2" },
+        { "ref": "Act.13.33", "kind": "quotation", "note": "Applied to the resurrection.", "verses": "Psa.2.7" },
+        { "ref": "Heb.1.5", "kind": "quotation", "verses": "Psa.2.7" },
+        { "ref": "Heb.5.5", "kind": "quotation", "verses": "Psa.2.7" },
+        { "ref": "Rev.2.26-27", "kind": "allusion", "verses": "Psa.2.8-9" },
+        { "ref": "Rev.19.15", "kind": "allusion", "verses": "Psa.2.9" }
+      ],
+      "passage": "Psa.2.1-12"
     },
     {
-      "ot": "Psa.8.4-6",
       "title": "The son of man, a little lower than the angels, with all things under his feet",
       "messianic": true,
       "fulfilments": [
         { "ref": "Heb.2.6-9", "kind": "quotation" },
-        { "ref": "1Co.15.27", "ot": "Psa.8.6", "kind": "quotation", "stage": "millennium-end", "note": "Then the Son himself is subject to the Father, that God may be all in all (1 Corinthians 15:28)." }
-      ]
+        { "ref": "1Co.15.27", "kind": "quotation", "stage": "millennium-end", "note": "Then the Son himself is subject to the Father, that God may be all in all (1 Corinthians 15:28).", "verses": "Psa.8.6" }
+      ],
+      "passage": "Psa.8.4-6"
     },
     {
-      "ot": "Psa.16.8-11",
       "title": "Thou wilt not leave my soul in the grave",
       "theme": "davidic",
       "messianic": true,
       "fulfilments": [
         { "ref": "Act.2.25-31", "kind": "quotation", "note": "Peter: David died and was buried; he spoke of the resurrection of Christ." },
-        { "ref": "Act.13.35-37", "ot": "Psa.16.10", "kind": "quotation" }
-      ]
+        { "ref": "Act.13.35-37", "kind": "quotation", "verses": "Psa.16.10" }
+      ],
+      "passage": "Psa.16.8-11"
     },
     {
-      "ot": "Psa.22.1-31",
       "title": "My God, why hast thou forsaken me?",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Mat.27.46", "ot": "Psa.22.1", "kind": "quotation" },
-        { "ref": "Mrk.15.34", "ot": "Psa.22.1", "kind": "quotation" },
-        { "ref": "Mat.27.39", "ot": "Psa.22.7", "kind": "allusion" },
-        { "ref": "Mat.27.43", "ot": "Psa.22.8", "kind": "allusion" },
-        { "ref": "Jhn.19.23-24", "ot": "Psa.22.18", "kind": "quotation" },
-        { "ref": "Heb.2.12", "ot": "Psa.22.22", "kind": "quotation" }
-      ]
+        { "ref": "Mat.27.46", "kind": "quotation", "verses": "Psa.22.1" },
+        { "ref": "Mrk.15.34", "kind": "quotation", "verses": "Psa.22.1" },
+        { "ref": "Mat.27.39", "kind": "allusion", "verses": "Psa.22.7" },
+        { "ref": "Mat.27.43", "kind": "allusion", "verses": "Psa.22.8" },
+        { "ref": "Jhn.19.23-24", "kind": "quotation", "verses": "Psa.22.18" },
+        { "ref": "Heb.2.12", "kind": "quotation", "verses": "Psa.22.22" }
+      ],
+      "passage": "Psa.22.1-31"
     },
     {
-      "ot": "Psa.34.20",
       "title": "He keepeth all his bones: not one of them is broken",
       "messianic": true,
       "fulfilments": [
         { "ref": "Jhn.19.36", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Psa.34.20"
     },
     {
-      "ot": "Psa.40.6-8",
       "title": "Lo, I come to do thy will",
       "messianic": true,
       "fulfilments": [
         { "ref": "Heb.10.5-10", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Psa.40.6-8"
     },
     {
-      "ot": "Psa.41.9",
       "title": "Mine own familiar friend hath lifted up his heel against me",
       "messianic": true,
       "fulfilments": [
         { "ref": "Jhn.13.18", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Psa.41.9"
     },
     {
-      "ot": "Psa.45.6-7",
       "title": "Thy throne is for ever: the king anointed above his fellows",
       "theme": "davidic",
       "messianic": true,
       "note": "Addressed to the king of David's line at his wedding. Elohim is used of human rulers and judges elsewhere (Psalm 82:6; John 10:34-35).",
       "fulfilments": [
         { "ref": "Heb.1.8-9", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Psa.45.6-7"
     },
     {
-      "ot": "Psa.68.18",
       "title": "Thou hast ascended on high, thou hast received gifts for men",
       "messianic": true,
       "fulfilments": [
         { "ref": "Eph.4.8", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Psa.68.18"
     },
     {
-      "ot": "Psa.69.1-36",
       "title": "The zeal of thine house; in my thirst they gave me vinegar",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Jhn.15.25", "ot": "Psa.69.4", "kind": "quotation" },
-        { "ref": "Jhn.2.17", "ot": "Psa.69.9", "kind": "quotation" },
-        { "ref": "Rom.15.3", "ot": "Psa.69.9", "kind": "quotation" },
-        { "ref": "Mat.27.34", "ot": "Psa.69.21", "kind": "allusion" },
-        { "ref": "Jhn.19.28-29", "ot": "Psa.69.21", "kind": "allusion" },
-        { "ref": "Rom.11.9-10", "ot": "Psa.69.22-23", "kind": "quotation" },
-        { "ref": "Act.1.20", "ot": "Psa.69.25", "kind": "quotation" }
-      ]
+        { "ref": "Jhn.15.25", "kind": "quotation", "verses": "Psa.69.4" },
+        { "ref": "Jhn.2.17", "kind": "quotation", "verses": "Psa.69.9" },
+        { "ref": "Rom.15.3", "kind": "quotation", "verses": "Psa.69.9" },
+        { "ref": "Mat.27.34", "kind": "allusion", "verses": "Psa.69.21" },
+        { "ref": "Jhn.19.28-29", "kind": "allusion", "verses": "Psa.69.21" },
+        { "ref": "Rom.11.9-10", "kind": "quotation", "verses": "Psa.69.22-23" },
+        { "ref": "Act.1.20", "kind": "quotation", "verses": "Psa.69.25" }
+      ],
+      "passage": "Psa.69.1-36"
     },
     {
-      "ot": "Psa.72.1-20",
       "title": "The king's righteous dominion from sea to sea",
       "theme": "kingdom",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Mat.2.11", "ot": "Psa.72.10-11", "kind": "allusion" }
-      ]
+        { "ref": "Mat.2.11", "kind": "allusion", "verses": "Psa.72.10-11" }
+      ],
+      "passage": "Psa.72.1-20"
     },
     {
-      "ot": "Psa.89.19-37",
       "title": "David's seed will endure for ever, his throne as the sun",
       "theme": "davidic",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Act.13.22", "ot": "Psa.89.20", "kind": "allusion" },
-        { "ref": "Rev.1.5", "ot": "Psa.89.27", "kind": "allusion", "stage": "first-advent", "note": "The first begotten, the prince of the kings of the earth; the faithful witness (89:37)." }
-      ]
+        { "ref": "Act.13.22", "kind": "allusion", "verses": "Psa.89.20" },
+        { "ref": "Rev.1.5", "kind": "allusion", "stage": "first-advent", "note": "The first begotten, the prince of the kings of the earth; the faithful witness (89:37).", "verses": "Psa.89.27" }
+      ],
+      "passage": "Psa.89.19-37"
     },
     {
-      "ot": "Psa.110.1-3",
       "title": "Sit thou at my right hand, until I make thine enemies thy footstool",
       "theme": "davidic",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Mat.22.41-45", "ot": "Psa.110.1", "kind": "quotation" },
-        { "ref": "Mrk.12.35-37", "ot": "Psa.110.1", "kind": "quotation" },
-        { "ref": "Luk.20.41-44", "ot": "Psa.110.1", "kind": "quotation" },
-        { "ref": "Act.2.34-36", "ot": "Psa.110.1", "kind": "quotation" },
-        { "ref": "Heb.1.13", "ot": "Psa.110.1", "kind": "quotation" },
-        { "ref": "1Co.15.25", "ot": "Psa.110.1", "kind": "allusion", "stage": "millennium-end", "note": "He reigns until every enemy is subdued, then delivers up the kingdom to God (1 Corinthians 15:24-25)." }
-      ]
+        { "ref": "Mat.22.41-45", "kind": "quotation", "verses": "Psa.110.1" },
+        { "ref": "Mrk.12.35-37", "kind": "quotation", "verses": "Psa.110.1" },
+        { "ref": "Luk.20.41-44", "kind": "quotation", "verses": "Psa.110.1" },
+        { "ref": "Act.2.34-36", "kind": "quotation", "verses": "Psa.110.1" },
+        { "ref": "Heb.1.13", "kind": "quotation", "verses": "Psa.110.1" },
+        { "ref": "1Co.15.25", "kind": "allusion", "stage": "millennium-end", "note": "He reigns until every enemy is subdued, then delivers up the kingdom to God (1 Corinthians 15:24-25).", "verses": "Psa.110.1" }
+      ],
+      "passage": "Psa.110.1-3"
     },
     {
-      "ot": "Psa.110.4",
       "title": "A priest for ever after the order of Melchizedek",
       "theme": "priest",
       "messianic": true,
@@ -320,134 +319,134 @@
         { "ref": "Heb.5.5-6", "kind": "quotation" },
         { "ref": "Heb.7.17", "kind": "quotation" },
         { "ref": "Heb.7.21", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Psa.110.4"
     },
     {
-      "ot": "Psa.118.22-26",
       "title": "The stone which the builders refused",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Mat.21.42", "ot": "Psa.118.22-23", "kind": "quotation" },
-        { "ref": "Mrk.12.10-11", "ot": "Psa.118.22-23", "kind": "quotation" },
-        { "ref": "Act.4.11", "ot": "Psa.118.22", "kind": "quotation" },
-        { "ref": "1Pe.2.7", "ot": "Psa.118.22", "kind": "quotation" },
-        { "ref": "Mat.21.9", "ot": "Psa.118.26", "kind": "quotation" },
-        { "ref": "Mat.23.39", "ot": "Psa.118.26", "kind": "quotation", "stage": "return", "note": "Their house was left desolate in AD 70 (23:38); Jerusalem will welcome him when he returns." }
-      ]
+        { "ref": "Mat.21.42", "kind": "quotation", "verses": "Psa.118.22-23" },
+        { "ref": "Mrk.12.10-11", "kind": "quotation", "verses": "Psa.118.22-23" },
+        { "ref": "Act.4.11", "kind": "quotation", "verses": "Psa.118.22" },
+        { "ref": "1Pe.2.7", "kind": "quotation", "verses": "Psa.118.22" },
+        { "ref": "Mat.21.9", "kind": "quotation", "verses": "Psa.118.26" },
+        { "ref": "Mat.23.39", "kind": "quotation", "stage": "return", "note": "Their house was left desolate in AD 70 (23:38); Jerusalem will welcome him when he returns.", "verses": "Psa.118.26" }
+      ],
+      "passage": "Psa.118.22-26"
     },
     {
-      "ot": "Psa.132.11-18",
       "title": "Of the fruit of thy body will I set upon thy throne",
       "theme": "davidic",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Act.2.30", "ot": "Psa.132.11", "kind": "allusion" },
-        { "ref": "Luk.1.69", "ot": "Psa.132.17", "kind": "allusion", "note": "A horn of salvation in the house of David." }
-      ]
+        { "ref": "Act.2.30", "kind": "allusion", "verses": "Psa.132.11" },
+        { "ref": "Luk.1.69", "kind": "allusion", "note": "A horn of salvation in the house of David.", "verses": "Psa.132.17" }
+      ],
+      "passage": "Psa.132.11-18"
     },
     {
-      "ot": "Isa.2.2-4",
       "title": "The mountain of the LORD's house; swords into plowshares",
       "theme": "kingdom",
       "messianic": true,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Isa.2.2-4"
     },
     {
-      "ot": "Isa.7.13-14",
       "title": "A virgin shall conceive and bear a son, Immanuel",
       "theme": "davidic",
       "messianic": true,
       "note": "A sign to Ahaz and the house of David in their own day (7:16; 8:3-4), fulfilled fully in Jesus. Immanuel is a name, \"God with us\", as Matthew explains it.",
       "fulfilments": [
-        { "ref": "Isa.8.3-4", "ot": "Isa.7.14", "kind": "event", "note": "A son born in Ahaz's day; before he could speak, Damascus and Samaria were spoiled (7:16)." },
-        { "ref": "2Ki.16.9", "ot": "Isa.7.14", "kind": "event" },
-        { "ref": "Mat.1.22-23", "ot": "Isa.7.14", "kind": "quotation" }
-      ]
+        { "ref": "Isa.8.3-4", "kind": "event", "note": "A son born in Ahaz's day; before he could speak, Damascus and Samaria were spoiled (7:16).", "verses": "Isa.7.14" },
+        { "ref": "2Ki.16.9", "kind": "event", "verses": "Isa.7.14" },
+        { "ref": "Mat.1.22-23", "kind": "quotation", "verses": "Isa.7.14" }
+      ],
+      "passage": "Isa.7.13-14"
     },
     {
-      "ot": "Isa.8.14-15",
       "title": "A stone of stumbling and a rock of offence",
       "messianic": true,
       "stages": ["history"],
       "fulfilments": [
         { "ref": "Rom.9.32-33", "kind": "quotation" },
         { "ref": "1Pe.2.8", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Isa.8.14-15"
     },
     {
-      "ot": "Isa.9.1-2",
       "title": "Galilee of the nations sees a great light",
       "messianic": true,
       "fulfilments": [
         { "ref": "Mat.4.13-16", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Isa.9.1-2"
     },
     {
-      "ot": "Isa.9.6-7",
       "title": "Unto us a son is given: the throne of David without end",
       "theme": "davidic",
       "messianic": true,
       "note": "A child born and a son given, whose government is on the throne of David for ever; the names describe what God would do through him.",
       "fulfilments": [
-        { "ref": "Luk.1.31-33", "ot": "Isa.9.7", "kind": "allusion", "stage": "return" },
-        { "ref": "Luk.2.11", "ot": "Isa.9.6", "kind": "allusion" }
-      ]
+        { "ref": "Luk.1.31-33", "kind": "allusion", "stage": "return", "verses": "Isa.9.7" },
+        { "ref": "Luk.2.11", "kind": "allusion", "verses": "Isa.9.6" }
+      ],
+      "passage": "Isa.9.6-7"
     },
     {
-      "ot": "Isa.11.1-10",
       "title": "A rod out of the stem of Jesse",
       "theme": "davidic",
       "messianic": true,
       "note": "The Spirit rests on him (11:2); he judges the earth, and the wolf dwells with the lamb (11:4-9).",
       "fulfilments": [
-        { "ref": "Rom.15.12", "ot": "Isa.11.10", "kind": "quotation" },
-        { "ref": "Act.13.23", "ot": "Isa.11.1", "kind": "allusion" },
-        { "ref": "Rev.5.5", "ot": "Isa.11.10", "kind": "allusion", "note": "The root of David." },
-        { "ref": "Rev.22.16", "ot": "Isa.11.1", "kind": "allusion" },
-        { "ref": "2Th.2.8", "ot": "Isa.11.4", "kind": "allusion", "stage": "return" }
-      ]
+        { "ref": "Rom.15.12", "kind": "quotation", "verses": "Isa.11.10" },
+        { "ref": "Act.13.23", "kind": "allusion", "verses": "Isa.11.1" },
+        { "ref": "Rev.5.5", "kind": "allusion", "note": "The root of David.", "verses": "Isa.11.10" },
+        { "ref": "Rev.22.16", "kind": "allusion", "verses": "Isa.11.1" },
+        { "ref": "2Th.2.8", "kind": "allusion", "stage": "return", "verses": "Isa.11.4" }
+      ],
+      "passage": "Isa.11.1-10"
     },
     {
-      "ot": "Isa.25.6-9",
       "title": "He will swallow up death in victory",
       "theme": "kingdom",
       "messianic": true,
       "fulfilments": [
-        { "ref": "1Co.15.54", "ot": "Isa.25.8", "kind": "quotation", "stage": "return" },
-        { "ref": "Rev.21.4", "ot": "Isa.25.8", "kind": "allusion", "stage": "millennium-end" }
-      ]
+        { "ref": "1Co.15.54", "kind": "quotation", "stage": "return", "verses": "Isa.25.8" },
+        { "ref": "Rev.21.4", "kind": "allusion", "stage": "millennium-end", "verses": "Isa.25.8" }
+      ],
+      "passage": "Isa.25.6-9"
     },
     {
-      "ot": "Isa.28.16",
       "title": "A tried stone, a precious corner stone, laid in Zion",
       "messianic": true,
       "fulfilments": [
         { "ref": "Rom.9.33", "kind": "quotation" },
         { "ref": "Rom.10.11", "kind": "quotation" },
         { "ref": "1Pe.2.6", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Isa.28.16"
     },
     {
-      "ot": "Isa.32.1-2",
       "title": "A king shall reign in righteousness",
       "theme": "kingdom",
       "messianic": true,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Isa.32.1-2"
     },
     {
-      "ot": "Isa.35.1-10",
       "title": "The desert shall blossom; the eyes of the blind opened",
       "theme": "kingdom",
       "messianic": true,
       "stages": ["return"],
       "note": "Jesus' healings were a foretaste (Matthew 11:5) of the land's restoration in the kingdom.",
       "fulfilments": [
-        { "ref": "Mat.11.4-5", "ot": "Isa.35.5-6", "kind": "allusion" }
-      ]
+        { "ref": "Mat.11.4-5", "kind": "allusion", "verses": "Isa.35.5-6" }
+      ],
+      "passage": "Isa.35.1-10"
     },
     {
-      "ot": "Isa.40.3-5",
       "title": "The voice of him that crieth in the wilderness",
       "messianic": true,
       "fulfilments": [
@@ -455,111 +454,111 @@
         { "ref": "Mrk.1.2-3", "kind": "quotation" },
         { "ref": "Luk.3.4-6", "kind": "quotation" },
         { "ref": "Jhn.1.23", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Isa.40.3-5"
     },
     {
-      "ot": "Isa.42.1-9",
       "title": "Behold my servant, whom I uphold",
       "theme": "servant",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Mat.12.17-21", "ot": "Isa.42.1-4", "kind": "quotation" },
-        { "ref": "Mat.3.17", "ot": "Isa.42.1", "kind": "allusion" },
-        { "ref": "Luk.2.32", "ot": "Isa.42.6", "kind": "allusion" }
-      ]
+        { "ref": "Mat.12.17-21", "kind": "quotation", "verses": "Isa.42.1-4" },
+        { "ref": "Mat.3.17", "kind": "allusion", "verses": "Isa.42.1" },
+        { "ref": "Luk.2.32", "kind": "allusion", "verses": "Isa.42.6" }
+      ],
+      "passage": "Isa.42.1-9"
     },
     {
-      "ot": "Isa.49.1-13",
       "title": "A light to the Gentiles, salvation to the end of the earth",
       "theme": "servant",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Act.13.47", "ot": "Isa.49.6", "kind": "quotation" },
-        { "ref": "Luk.2.30-32", "ot": "Isa.49.6", "kind": "allusion" },
-        { "ref": "2Co.6.2", "ot": "Isa.49.8", "kind": "quotation" }
-      ]
+        { "ref": "Act.13.47", "kind": "quotation", "verses": "Isa.49.6" },
+        { "ref": "Luk.2.30-32", "kind": "allusion", "verses": "Isa.49.6" },
+        { "ref": "2Co.6.2", "kind": "quotation", "verses": "Isa.49.8" }
+      ],
+      "passage": "Isa.49.1-13"
     },
     {
-      "ot": "Isa.50.4-11",
       "title": "I gave my back to the smiters",
       "theme": "servant",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Mat.26.67", "ot": "Isa.50.6", "kind": "allusion" },
-        { "ref": "Mat.27.26-30", "ot": "Isa.50.6", "kind": "allusion" }
-      ]
+        { "ref": "Mat.26.67", "kind": "allusion", "verses": "Isa.50.6" },
+        { "ref": "Mat.27.26-30", "kind": "allusion", "verses": "Isa.50.6" }
+      ],
+      "passage": "Isa.50.4-11"
     },
     {
-      "ot": "Isa.52.13-53.12",
       "title": "The suffering servant, wounded for our transgressions",
       "theme": "servant",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Rom.15.21", "ot": "Isa.52.15", "kind": "quotation" },
-        { "ref": "Jhn.12.37-38", "ot": "Isa.53.1", "kind": "quotation" },
-        { "ref": "Rom.10.16", "ot": "Isa.53.1", "kind": "quotation" },
-        { "ref": "Mat.8.16-17", "ot": "Isa.53.4", "kind": "quotation" },
-        { "ref": "1Pe.2.24-25", "ot": "Isa.53.5-6", "kind": "allusion" },
-        { "ref": "Act.8.32-35", "ot": "Isa.53.7-8", "kind": "quotation" },
-        { "ref": "1Pe.2.22", "ot": "Isa.53.9", "kind": "quotation" },
-        { "ref": "Mat.27.57-60", "ot": "Isa.53.9", "kind": "event", "note": "With the rich in his death." },
-        { "ref": "Luk.22.37", "ot": "Isa.53.12", "kind": "quotation" }
-      ]
+        { "ref": "Rom.15.21", "kind": "quotation", "verses": "Isa.52.15" },
+        { "ref": "Jhn.12.37-38", "kind": "quotation", "verses": "Isa.53.1" },
+        { "ref": "Rom.10.16", "kind": "quotation", "verses": "Isa.53.1" },
+        { "ref": "Mat.8.16-17", "kind": "quotation", "verses": "Isa.53.4" },
+        { "ref": "1Pe.2.24-25", "kind": "allusion", "verses": "Isa.53.5-6" },
+        { "ref": "Act.8.32-35", "kind": "quotation", "verses": "Isa.53.7-8" },
+        { "ref": "1Pe.2.22", "kind": "quotation", "verses": "Isa.53.9" },
+        { "ref": "Mat.27.57-60", "kind": "event", "note": "With the rich in his death.", "verses": "Isa.53.9" },
+        { "ref": "Luk.22.37", "kind": "quotation", "verses": "Isa.53.12" }
+      ],
+      "passage": "Isa.52.13-53.12"
     },
     {
-      "ot": "Isa.55.3-4",
       "title": "The sure mercies of David",
       "theme": "davidic",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Act.13.34", "ot": "Isa.55.3", "kind": "quotation", "note": "Paul ties the promise to David to the resurrection." }
-      ]
+        { "ref": "Act.13.34", "kind": "quotation", "note": "Paul ties the promise to David to the resurrection.", "verses": "Isa.55.3" }
+      ],
+      "passage": "Isa.55.3-4"
     },
     {
-      "ot": "Isa.59.20-21",
       "title": "The Redeemer shall come to Zion",
       "theme": "israel",
       "messianic": true,
       "fulfilments": [
         { "ref": "Rom.11.26-27", "kind": "quotation", "stage": "return" }
-      ]
+      ],
+      "passage": "Isa.59.20-21"
     },
     {
-      "ot": "Isa.61.1-3",
       "title": "The Spirit of the Lord is upon me: good tidings to the meek",
       "theme": "servant",
       "messianic": true,
       "note": "Jesus stopped reading before \"the day of vengeance of our God\" (61:2): that day came in AD 70 (Luke 21:22).",
       "fulfilments": [
-        { "ref": "Luk.4.17-21", "ot": "Isa.61.1-2", "kind": "quotation" },
-        { "ref": "Luk.21.20-22", "ot": "Isa.61.2", "kind": "allusion", "stage": "ad70", "note": "\"These be the days of vengeance, that all things which are written may be fulfilled.\"" }
-      ]
+        { "ref": "Luk.4.17-21", "kind": "quotation", "verses": "Isa.61.1-2" },
+        { "ref": "Luk.21.20-22", "kind": "allusion", "stage": "ad70", "note": "\"These be the days of vengeance, that all things which are written may be fulfilled.\"", "verses": "Isa.61.2" }
+      ],
+      "passage": "Isa.61.1-3"
     },
     {
-      "ot": "Isa.65.17-25",
       "title": "New heavens and a new earth; the wolf and the lamb feed together",
       "theme": "kingdom",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "2Pe.3.10-12", "ot": "Isa.65.17", "kind": "allusion", "stage": "ad70", "note": "The heavens and earth of the Mosaic world dissolved by fire in AD 70: the former not remembered." },
-        { "ref": "2Pe.3.13", "ot": "Isa.65.17", "kind": "allusion", "stage": "return", "note": "The third heavens and earth, the kingdom, wherein dwelleth righteousness, never to be destroyed." },
-        { "ref": "Rev.21.1", "ot": "Isa.65.17", "kind": "allusion", "stage": "millennium-end", "note": "No more sea: no more flesh, all changed to immortality." }
+        { "ref": "2Pe.3.10-12", "kind": "allusion", "stage": "ad70", "note": "The heavens and earth of the Mosaic world dissolved by fire in AD 70: the former not remembered.", "verses": "Isa.65.17" },
+        { "ref": "2Pe.3.13", "kind": "allusion", "stage": "return", "note": "The third heavens and earth, the kingdom, wherein dwelleth righteousness, never to be destroyed.", "verses": "Isa.65.17" },
+        { "ref": "Rev.21.1", "kind": "allusion", "stage": "millennium-end", "note": "No more sea: no more flesh, all changed to immortality.", "verses": "Isa.65.17" }
       ],
-      "note": "New heavens and a new earth: the kingdom established at Christ's return, in place of the Mosaic heavens and earth ended in AD 70. Death still comes in the thousand years (65:20); at their end there is no more sea (Revelation 21:1)."
+      "note": "New heavens and a new earth: the kingdom established at Christ's return, in place of the Mosaic heavens and earth ended in AD 70. Death still comes in the thousand years (65:20); at their end there is no more sea (Revelation 21:1).",
+      "passage": "Isa.65.17-25"
     },
     {
-      "ot": "Jer.1.13-15",
       "title": "A seething pot out of the north: evil breaks forth on Jerusalem",
       "theme": "nations",
       "messianic": false,
       "note": "The families of the kingdoms of the north set their thrones at Jerusalem's gates: Babylon.",
       "fulfilments": [
         { "ref": "2Ki.25.1-10", "kind": "event" }
-      ]
+      ],
+      "passage": "Jer.1.13-15"
     },
     {
-      "ot": "Ezk.1.4-28",
       "title": "The whirlwind out of the north: the glory of the LORD comes in judgment",
       "theme": "nations",
       "messianic": false,
@@ -567,17 +566,17 @@
       "fulfilments": [
         { "ref": "Ezk.11.22-23", "kind": "event" },
         { "ref": "2Ki.25.8-10", "kind": "event" }
-      ]
+      ],
+      "passage": "Ezk.1.4-28"
     },
     {
-      "ot": "Jer.23.5-6",
       "title": "A righteous Branch raised unto David",
       "theme": "davidic",
       "messianic": true,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Jer.23.5-6"
     },
     {
-      "ot": "Jer.31.31-34",
       "title": "A new covenant with the house of Israel",
       "messianic": true,
       "stages": ["return"],
@@ -586,45 +585,45 @@
         { "ref": "1Co.11.25", "kind": "allusion" },
         { "ref": "Heb.8.8-12", "kind": "quotation" },
         { "ref": "Heb.10.16-17", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Jer.31.31-34"
     },
     {
-      "ot": "Jer.33.14-17",
       "title": "David shall never want a man to sit upon the throne",
       "theme": "davidic",
       "messianic": true,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Jer.33.14-17"
     },
     {
-      "ot": "Ezk.21.25-27",
       "title": "Remove the diadem, until he come whose right it is",
       "theme": "davidic",
       "messianic": true,
       "note": "Spoken against Zedekiah, the last king of David's line to reign in Jerusalem: the throne is overturned until its rightful king comes.",
       "fulfilments": [
-        { "ref": "2Ki.25.6-7", "ot": "Ezk.21.25-26", "kind": "event", "note": "Zedekiah blinded and taken to Babylon: the last of David's line to reign in Jerusalem." },
-        { "ref": "Luk.1.32", "ot": "Ezk.21.27", "kind": "allusion", "stage": "return" }
-      ]
+        { "ref": "2Ki.25.6-7", "kind": "event", "note": "Zedekiah blinded and taken to Babylon: the last of David's line to reign in Jerusalem.", "verses": "Ezk.21.25-26" },
+        { "ref": "Luk.1.32", "kind": "allusion", "stage": "return", "verses": "Ezk.21.27" }
+      ],
+      "passage": "Ezk.21.25-27"
     },
     {
-      "ot": "Ezk.34.23-24",
       "title": "One shepherd over them, my servant David",
       "theme": "davidic",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
         { "ref": "Jhn.10.11-16", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Ezk.34.23-24"
     },
     {
-      "ot": "Ezk.37.15-28",
       "title": "One nation in the land, and one king over them all",
       "theme": "davidic",
       "messianic": true,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Ezk.37.15-28"
     },
     {
-      "ot": "Dan.2.44-45",
       "title": "The stone cut out without hands: a kingdom that shall never be destroyed",
       "theme": "kingdom",
       "messianic": true,
@@ -632,10 +631,10 @@
       "fulfilments": [
         { "ref": "Luk.20.17-18", "kind": "allusion", "stage": "ad70", "note": "The stone falls on the husbandmen who rejected it: the judgment of AD 70 (Luke 20:16)." },
         { "ref": "Rev.11.15", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Dan.2.44-45"
     },
     {
-      "ot": "Dan.7.13-14",
       "title": "One like the son of man comes with the clouds of heaven",
       "theme": "kingdom",
       "messianic": true,
@@ -646,87 +645,87 @@
         { "ref": "Mat.26.64", "kind": "allusion", "stage": "ad70" },
         { "ref": "Mrk.14.62", "kind": "allusion", "stage": "ad70" },
         { "ref": "Rev.1.7", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Dan.7.13-14"
     },
     {
-      "ot": "Dan.7.18-27",
       "title": "The saints of the most High shall take the kingdom",
       "theme": "kingdom",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Luk.12.32", "ot": "Dan.7.27", "kind": "allusion", "stage": "return" },
-        { "ref": "Rev.5.10", "ot": "Dan.7.27", "kind": "allusion", "note": "\"We shall reign on the earth.\"" },
-        { "ref": "1Co.6.2", "ot": "Dan.7.22", "kind": "allusion", "stage": "return" }
-      ]
+        { "ref": "Luk.12.32", "kind": "allusion", "stage": "return", "verses": "Dan.7.27" },
+        { "ref": "Rev.5.10", "kind": "allusion", "note": "\"We shall reign on the earth.\"", "verses": "Dan.7.27" },
+        { "ref": "1Co.6.2", "kind": "allusion", "stage": "return", "verses": "Dan.7.22" }
+      ],
+      "passage": "Dan.7.18-27"
     },
     {
-      "ot": "Dan.9.24-27",
       "title": "Seventy weeks: Messiah the Prince cut off",
       "messianic": true,
       "note": "Messiah is cut off (9:26) at the cross; the people of the prince that shall come destroy the city and the sanctuary: the Romans in AD 70, the abomination Jesus warned of (Matthew 24:15; Luke 21:20).",
       "fulfilments": [
-        { "ref": "Mat.24.15", "ot": "Dan.9.27", "kind": "quotation", "stage": "ad70" },
-        { "ref": "Mrk.13.14", "ot": "Dan.9.27", "kind": "allusion", "stage": "ad70" },
-        { "ref": "Luk.21.20", "ot": "Dan.9.26-27", "kind": "allusion", "stage": "ad70", "note": "Jerusalem compassed with armies." }
-      ]
+        { "ref": "Mat.24.15", "kind": "quotation", "stage": "ad70", "verses": "Dan.9.27" },
+        { "ref": "Mrk.13.14", "kind": "allusion", "stage": "ad70", "verses": "Dan.9.27" },
+        { "ref": "Luk.21.20", "kind": "allusion", "stage": "ad70", "note": "Jerusalem compassed with armies.", "verses": "Dan.9.26-27" }
+      ],
+      "passage": "Dan.9.24-27"
     },
     {
-      "ot": "Dan.12.1-3",
       "title": "Many that sleep in the dust shall awake",
       "theme": "kingdom",
       "messianic": true,
       "fulfilments": [
-        { "ref": "Mat.24.21", "ot": "Dan.12.1", "kind": "allusion", "stage": "ad70", "note": "\"Great tribulation, such as was not since the beginning of the world.\"" },
-        { "ref": "Jhn.5.28-29", "ot": "Dan.12.2", "kind": "allusion", "stage": "return" },
-        { "ref": "Mat.13.43", "ot": "Dan.12.3", "kind": "allusion", "stage": "return" }
-      ]
+        { "ref": "Mat.24.21", "kind": "allusion", "stage": "ad70", "note": "\"Great tribulation, such as was not since the beginning of the world.\"", "verses": "Dan.12.1" },
+        { "ref": "Jhn.5.28-29", "kind": "allusion", "stage": "return", "verses": "Dan.12.2" },
+        { "ref": "Mat.13.43", "kind": "allusion", "stage": "return", "verses": "Dan.12.3" }
+      ],
+      "passage": "Dan.12.1-3"
     },
     {
-      "ot": "Hos.3.4-5",
       "title": "Many days without a king, then they shall seek David their king",
       "theme": "davidic",
       "messianic": true,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Hos.3.4-5"
     },
     {
-      "ot": "Hos.11.1",
       "title": "Out of Egypt have I called my son",
       "messianic": true,
       "note": "Israel's exodus as the pattern for God's son.",
       "fulfilments": [
         { "ref": "Mat.2.14-15", "kind": "type" }
-      ]
+      ],
+      "passage": "Hos.11.1"
     },
     {
-      "ot": "Jol.2.28-32",
       "title": "I will pour out my spirit upon all flesh",
       "messianic": true,
       "stages": ["ad70"],
       "note": "Poured out at Pentecost; the great and terrible day that followed was the judgment of AD 70, from which those who called on the name were saved (Acts 2:40).",
       "fulfilments": [
         { "ref": "Act.2.16-21", "kind": "quotation" },
-        { "ref": "Rom.10.13", "ot": "Jol.2.32", "kind": "quotation" }
-      ]
+        { "ref": "Rom.10.13", "kind": "quotation", "verses": "Jol.2.32" }
+      ],
+      "passage": "Jol.2.28-32"
     },
     {
-      "ot": "Amo.9.11-15",
       "title": "I will raise up the tabernacle of David that is fallen",
       "theme": "davidic",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Act.15.14-17", "ot": "Amo.9.11-12", "kind": "quotation" }
-      ]
+        { "ref": "Act.15.14-17", "kind": "quotation", "verses": "Amo.9.11-12" }
+      ],
+      "passage": "Amo.9.11-15"
     },
     {
-      "ot": "Mic.4.1-8",
       "title": "The law shall go forth of Zion; the LORD shall reign over them in mount Zion",
       "theme": "kingdom",
       "messianic": true,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Mic.4.1-8"
     },
     {
-      "ot": "Mic.5.2",
       "title": "Out of Bethlehem shall come a ruler in Israel",
       "theme": "davidic",
       "messianic": true,
@@ -734,115 +733,115 @@
       "fulfilments": [
         { "ref": "Mat.2.4-6", "kind": "quotation" },
         { "ref": "Jhn.7.42", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Mic.5.2"
     },
     {
-      "ot": "Hab.1.5-11",
       "title": "I raise up the Chaldeans: a work in your days",
       "theme": "nations",
       "messianic": false,
       "note": "Spoken of Babylon; Paul warned his hearers that the same work would come in their own days, as it did in AD 70.",
       "fulfilments": [
         { "ref": "2Ki.24.1-2", "kind": "event" },
-        { "ref": "Act.13.40-41", "ot": "Hab.1.5", "kind": "quotation", "stage": "ad70" }
-      ]
+        { "ref": "Act.13.40-41", "kind": "quotation", "stage": "ad70", "verses": "Hab.1.5" }
+      ],
+      "passage": "Hab.1.5-11"
     },
     {
-      "ot": "Hag.2.6-9",
       "title": "I will shake all nations, and the desire of all nations shall come",
       "theme": "kingdom",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Heb.12.26-28", "ot": "Hag.2.6", "kind": "quotation", "stage": "ad70", "note": "\"Yet once more\": the shaking that removed the old order in AD 70, while the kingdom that cannot be moved is received." }
-      ]
+        { "ref": "Heb.12.26-28", "kind": "quotation", "stage": "ad70", "note": "\"Yet once more\": the shaking that removed the old order in AD 70, while the kingdom that cannot be moved is received.", "verses": "Hag.2.6" }
+      ],
+      "passage": "Hag.2.6-9"
     },
     {
-      "ot": "Zec.6.12-13",
       "title": "The Branch shall be a priest upon his throne",
       "theme": "priest",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
         { "ref": "Heb.8.1", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Zec.6.12-13"
     },
     {
-      "ot": "Zec.9.9-10",
       "title": "Thy King cometh, lowly, riding upon an ass",
       "theme": "kingdom",
       "messianic": true,
       "stages": ["return"],
       "note": "The entry into Jerusalem fulfilled 9:9; his dominion from sea to sea (9:10) is still to come.",
       "fulfilments": [
-        { "ref": "Mat.21.4-5", "ot": "Zec.9.9", "kind": "quotation" },
-        { "ref": "Jhn.12.14-15", "ot": "Zec.9.9", "kind": "quotation" }
-      ]
+        { "ref": "Mat.21.4-5", "kind": "quotation", "verses": "Zec.9.9" },
+        { "ref": "Jhn.12.14-15", "kind": "quotation", "verses": "Zec.9.9" }
+      ],
+      "passage": "Zec.9.9-10"
     },
     {
-      "ot": "Zec.11.12-13",
       "title": "Thirty pieces of silver cast to the potter",
       "messianic": true,
       "note": "Matthew names Jeremiah, who also bought a field (Jeremiah 32:6-9) and went to the potter (Jeremiah 18-19).",
       "fulfilments": [
         { "ref": "Mat.27.9-10", "kind": "quotation" },
         { "ref": "Mat.26.15", "kind": "event" }
-      ]
+      ],
+      "passage": "Zec.11.12-13"
     },
     {
-      "ot": "Zec.12.10",
       "title": "They shall look upon me whom they have pierced",
       "theme": "israel",
       "messianic": true,
       "fulfilments": [
         { "ref": "Jhn.19.37", "kind": "quotation" },
         { "ref": "Rev.1.7", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Zec.12.10"
     },
     {
-      "ot": "Zec.13.7",
       "title": "Smite the shepherd, and the sheep shall be scattered",
       "messianic": true,
       "fulfilments": [
         { "ref": "Mat.26.31", "kind": "quotation" },
         { "ref": "Mrk.14.27", "kind": "quotation" },
         { "ref": "Mat.26.56", "kind": "event" }
-      ]
+      ],
+      "passage": "Zec.13.7"
     },
     {
-      "ot": "Zec.14.1-21",
       "title": "His feet shall stand upon the mount of Olives; the LORD king over all the earth",
       "theme": "kingdom",
       "messianic": true,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Act.1.11-12", "ot": "Zec.14.4", "kind": "allusion", "stage": "return", "note": "He left from the mount of Olives and will come again in like manner." },
-        { "ref": "Rev.11.15", "ot": "Zec.14.9", "kind": "allusion" }
-      ]
+        { "ref": "Act.1.11-12", "kind": "allusion", "stage": "return", "note": "He left from the mount of Olives and will come again in like manner.", "verses": "Zec.14.4" },
+        { "ref": "Rev.11.15", "kind": "allusion", "verses": "Zec.14.9" }
+      ],
+      "passage": "Zec.14.1-21"
     },
     {
-      "ot": "Mal.3.1",
       "title": "I will send my messenger before me",
       "messianic": true,
       "fulfilments": [
         { "ref": "Mat.11.10", "kind": "quotation" },
         { "ref": "Mrk.1.2", "kind": "quotation" },
         { "ref": "Luk.7.27", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Mal.3.1"
     },
     {
-      "ot": "Mal.4.1-3",
       "title": "The Sun of righteousness shall arise with healing in his wings",
       "messianic": true,
       "stages": ["ad70"],
       "note": "The day that burns as an oven, which John the Baptist announced (Matthew 3:10-12), came on Jerusalem in AD 70.",
       "fulfilments": [
-        { "ref": "Mat.3.10-12", "ot": "Mal.4.1", "kind": "allusion", "stage": "ad70" },
-        { "ref": "Luk.1.78-79", "ot": "Mal.4.2", "kind": "allusion" }
-      ]
+        { "ref": "Mat.3.10-12", "kind": "allusion", "stage": "ad70", "verses": "Mal.4.1" },
+        { "ref": "Luk.1.78-79", "kind": "allusion", "verses": "Mal.4.2" }
+      ],
+      "passage": "Mal.4.1-3"
     },
     {
-      "ot": "Mal.4.5-6",
       "title": "Elijah the prophet before the great and dreadful day",
       "messianic": true,
       "stages": ["ad70"],
@@ -851,131 +850,131 @@
         { "ref": "Luk.1.17", "kind": "allusion" },
         { "ref": "Mat.11.14", "kind": "allusion" },
         { "ref": "Mat.17.10-13", "kind": "allusion", "stage": "first-advent", "note": "\"Elias is come already\": John the Baptist (17:12-13)." }
-      ]
+      ],
+      "passage": "Mal.4.5-6"
     },
     {
-      "ot": "Gen.14.18-20",
       "title": "Melchizedek, king of Salem and priest of the most high God",
       "theme": "priest",
       "messianic": true,
       "fulfilments": [
         { "ref": "Heb.7.1-3", "kind": "type" }
-      ]
+      ],
+      "passage": "Gen.14.18-20"
     },
     {
-      "ot": "Exo.12.46",
       "title": "The passover lamb: neither shall ye break a bone thereof",
       "messianic": true,
       "fulfilments": [
         { "ref": "Jhn.19.36", "kind": "quotation" },
         { "ref": "1Co.5.7", "kind": "type", "note": "Christ our passover: the kingdom founded, as the Mosaic world was at the exodus." }
       ],
-      "note": "The lamb that founded the Mosaic world in Egypt, which was established under David. Christ our passover founds the kingdom, to be established at his return."
+      "note": "The lamb that founded the Mosaic world in Egypt, which was established under David. Christ our passover founds the kingdom, to be established at his return.",
+      "passage": "Exo.12.46"
     },
     {
-      "ot": "Num.21.8-9",
       "title": "The serpent of brass lifted up on a pole",
       "messianic": true,
       "fulfilments": [
         { "ref": "Jhn.3.14-15", "kind": "type" }
-      ]
+      ],
+      "passage": "Num.21.8-9"
     },
     {
-      "ot": "Jon.1.17",
       "title": "Three days and three nights in the belly of the fish",
       "messianic": true,
       "fulfilments": [
         { "ref": "Mat.12.39-40", "kind": "type" }
-      ]
+      ],
+      "passage": "Jon.1.17"
     },
     {
-      "ot": "Gen.15.13-16",
       "title": "Abram's seed afflicted four hundred years, then brought out with great substance",
       "theme": "israel",
       "messianic": false,
       "fulfilments": [
         { "ref": "Exo.12.40-41", "kind": "event" },
-        { "ref": "Exo.12.35-36", "ot": "Gen.15.14", "kind": "event" }
-      ]
+        { "ref": "Exo.12.35-36", "kind": "event", "verses": "Gen.15.14" }
+      ],
+      "passage": "Gen.15.13-16"
     },
     {
-      "ot": "Lev.26.27-45",
       "title": "Scattered among the heathen, yet not cast away",
       "theme": "israel",
       "messianic": false,
       "stages": ["return"],
       "note": "God will remember his covenant with Jacob, Isaac and Abraham, and remember the land (26:42).",
       "fulfilments": [
-        { "ref": "2Ch.36.20-21", "ot": "Lev.26.34-35", "kind": "quotation", "note": "The land enjoyed her sabbaths." },
-        { "ref": "Luk.21.24", "ot": "Lev.26.33", "kind": "allusion", "stage": "ad70" }
-      ]
+        { "ref": "2Ch.36.20-21", "kind": "quotation", "note": "The land enjoyed her sabbaths.", "verses": "Lev.26.34-35" },
+        { "ref": "Luk.21.24", "kind": "allusion", "stage": "ad70", "verses": "Lev.26.33" }
+      ],
+      "passage": "Lev.26.27-45"
     },
     {
-      "ot": "Deu.28.49-68",
       "title": "A nation from far, swift as the eagle; then scattered among all people",
       "theme": "israel",
       "messianic": false,
       "note": "The siege and its famine came on Jerusalem twice: under Babylon (Lamentations 4:10) and under Rome; the scattering that followed AD 70 reached every nation.",
       "fulfilments": [
-        { "ref": "Lam.4.10", "ot": "Deu.28.53-57", "kind": "event" },
-        { "ref": "Luk.19.43-44", "ot": "Deu.28.52", "kind": "allusion", "stage": "ad70" },
-        { "ref": "Luk.21.24", "ot": "Deu.28.64", "kind": "allusion", "stage": "ad70" }
-      ]
+        { "ref": "Lam.4.10", "kind": "event", "verses": "Deu.28.53-57" },
+        { "ref": "Luk.19.43-44", "kind": "allusion", "stage": "ad70", "verses": "Deu.28.52" },
+        { "ref": "Luk.21.24", "kind": "allusion", "stage": "ad70", "verses": "Deu.28.64" }
+      ],
+      "passage": "Deu.28.49-68"
     },
     {
-      "ot": "Deu.30.1-6",
       "title": "Gathered again from all the nations into the land",
       "theme": "israel",
       "messianic": false,
       "stages": ["return"],
       "note": "Fulfilled first in the return from Babylon, and again in the regathering of Israel before Christ's return.",
       "fulfilments": [
-        { "ref": "Neh.1.8-9", "ot": "Deu.30.4", "kind": "quotation", "note": "Nehemiah pleads it at the return from Babylon." }
-      ]
+        { "ref": "Neh.1.8-9", "kind": "quotation", "note": "Nehemiah pleads it at the return from Babylon.", "verses": "Deu.30.4" }
+      ],
+      "passage": "Deu.30.1-6"
     },
     {
-      "ot": "2Sa.12.10-12",
       "title": "The sword shall never depart from David's house",
       "messianic": false,
       "fulfilments": [
-        { "ref": "2Sa.16.21-22", "ot": "2Sa.12.11", "kind": "event" }
-      ]
+        { "ref": "2Sa.16.21-22", "kind": "event", "verses": "2Sa.12.11" }
+      ],
+      "passage": "2Sa.12.10-12"
     },
     {
-      "ot": "1Ki.11.29-39",
       "title": "Ahijah tears the garment: ten tribes given to Jeroboam",
       "theme": "israel",
       "messianic": false,
       "fulfilments": [
         { "ref": "1Ki.12.15-20", "kind": "event" }
-      ]
+      ],
+      "passage": "1Ki.11.29-39"
     },
     {
-      "ot": "1Ki.13.1-3",
       "title": "A child named Josiah will burn the priests' bones on Bethel's altar",
       "messianic": false,
       "fulfilments": [
         { "ref": "2Ki.23.15-18", "kind": "event" }
-      ]
+      ],
+      "passage": "1Ki.13.1-3"
     },
     {
-      "ot": "Isa.13.17-22",
       "title": "Babylon overthrown by the Medes, never to be inhabited",
       "theme": "nations",
       "messianic": false,
       "fulfilments": [
         { "ref": "Dan.5.28-31", "kind": "event" }
-      ]
+      ],
+      "passage": "Isa.13.17-22"
     },
     {
-      "ot": "Isa.19.18-25",
       "title": "Egypt and Assyria blessed with Israel",
       "theme": "nations",
       "messianic": false,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Isa.19.18-25"
     },
     {
-      "ot": "Isa.44.28-45.4",
       "title": "Cyrus named as the shepherd who will rebuild Jerusalem",
       "theme": "nations",
       "messianic": false,
@@ -983,64 +982,64 @@
       "fulfilments": [
         { "ref": "Ezr.1.1-4", "kind": "event" },
         { "ref": "2Ch.36.22-23", "kind": "event" }
-      ]
+      ],
+      "passage": "Isa.44.28-45.4"
     },
     {
-      "ot": "Jer.25.11-12",
       "title": "Seventy years of serving the king of Babylon",
       "theme": "israel",
       "messianic": false,
       "fulfilments": [
         { "ref": "2Ch.36.20-21", "kind": "event" },
         { "ref": "Dan.9.2", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Jer.25.11-12"
     },
     {
-      "ot": "Jer.31.35-37",
       "title": "Israel shall not cease from being a nation before me for ever",
       "theme": "israel",
       "messianic": false,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Jer.31.35-37"
     },
     {
-      "ot": "Ezk.26.1-14",
       "title": "Tyre made like the top of a rock, a place to spread nets",
       "theme": "nations",
       "messianic": false,
       "note": "Fulfilled in stages: Nebuchadnezzar's siege, then Alexander's causeway of the old city's rubble (332 BC).",
       "fulfilments": [
-        { "ref": "Ezk.29.18", "ot": "Ezk.26.7-11", "kind": "event" }
-      ]
+        { "ref": "Ezk.29.18", "kind": "event", "verses": "Ezk.26.7-11" }
+      ],
+      "passage": "Ezk.26.1-14"
     },
     {
-      "ot": "Ezk.29.13-16",
       "title": "Egypt the basest of the kingdoms",
       "theme": "nations",
       "messianic": false,
-      "stages": ["history"]
+      "stages": ["history"],
+      "passage": "Ezk.29.13-16"
     },
     {
-      "ot": "Ezk.36.22-38",
       "title": "I will take you from among the heathen and bring you into your own land",
       "theme": "israel",
       "messianic": false,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Ezr.2.1", "ot": "Ezk.36.24", "kind": "event", "note": "The first return, from Babylon." }
-      ]
+        { "ref": "Ezr.2.1", "kind": "event", "note": "The first return, from Babylon.", "verses": "Ezk.36.24" }
+      ],
+      "passage": "Ezk.36.22-38"
     },
     {
-      "ot": "Ezk.37.1-14",
       "title": "The valley of dry bones: the whole house of Israel brought back to life",
       "theme": "israel",
       "messianic": false,
       "stages": ["return"],
       "fulfilments": [
-        { "ref": "Ezr.1.5", "ot": "Ezk.37.12", "kind": "event", "note": "The first return, from Babylon." }
-      ]
+        { "ref": "Ezr.1.5", "kind": "event", "note": "The first return, from Babylon.", "verses": "Ezk.37.12" }
+      ],
+      "passage": "Ezk.37.1-14"
     },
     {
-      "ot": "Ezk.38.1-39.29",
       "title": "Gog of the land of Magog invades the restored land",
       "theme": "nations",
       "messianic": false,
@@ -1048,51 +1047,51 @@
       "note": "Gog is the northern power, Russia, invading the restored land at Christ's return, and destroyed on the mountains of Israel. The name returns for the uprising after the thousand years (Revelation 20:8).",
       "fulfilments": [
         { "ref": "Rev.20.8", "kind": "allusion", "stage": "millennium-end", "note": "After the thousand years the name returns for the last uprising against the camp of the saints." }
-      ]
+      ],
+      "passage": "Ezk.38.1-39.29"
     },
     {
-      "ot": "Dan.2.31-43",
       "title": "The image of four metals: four kingdoms",
       "theme": "empires",
       "messianic": false,
       "stages": ["history"],
-      "note": "Commonly read as Babylon, Medo-Persia, Greece and Rome; the feet of iron and clay as the divided kingdoms that follow."
+      "note": "Commonly read as Babylon, Medo-Persia, Greece and Rome; the feet of iron and clay as the divided kingdoms that follow.",
+      "passage": "Dan.2.31-43"
     },
     {
-      "ot": "Dan.7.1-12",
       "title": "Four great beasts out of the sea",
       "theme": "empires",
       "messianic": false,
       "note": "The same four kingdoms as Daniel 2. Readings of the little horn (7:8) differ.",
       "fulfilments": [
         { "ref": "Rev.13.1-2", "kind": "allusion" }
-      ]
+      ],
+      "passage": "Dan.7.1-12"
     },
     {
-      "ot": "Dan.8.1-27",
       "title": "The ram and the he-goat: Media and Persia, and Greece",
       "theme": "empires",
       "messianic": false,
       "stages": ["history"],
-      "note": "Named in the chapter itself (8:20-21); the great horn broken is Alexander, and the four horns his successors' kingdoms."
+      "note": "Named in the chapter itself (8:20-21); the great horn broken is Alexander, and the four horns his successors' kingdoms.",
+      "passage": "Dan.8.1-27"
     },
     {
-      "ot": "Dan.11.2-35",
       "title": "The kings of the north and of the south",
       "theme": "empires",
       "messianic": false,
       "stages": ["history"],
-      "note": "Traced in detail through the Persian kings, Alexander and the Ptolemies and Seleucids to Antiochus Epiphanes."
+      "note": "Traced in detail through the Persian kings, Alexander and the Ptolemies and Seleucids to Antiochus Epiphanes.",
+      "passage": "Dan.11.2-35"
     },
     {
-      "ot": "Oba.1.15-21",
       "title": "The house of Esau for stubble; the kingdom shall be the LORD's",
       "theme": "nations",
       "messianic": false,
-      "stages": ["history", "return"]
+      "stages": ["history", "return"],
+      "passage": "Oba.1.15-21"
     },
     {
-      "ot": "Mic.3.12",
       "title": "Zion shall be plowed as a field",
       "theme": "israel",
       "messianic": false,
@@ -1100,25 +1099,25 @@
         { "ref": "2Ki.25.9-10", "kind": "event" },
         { "ref": "Jer.26.18", "kind": "quotation", "note": "Remembered a century later, when Jeremiah was on trial." },
         { "ref": "Luk.19.43-44", "kind": "allusion", "stage": "ad70", "note": "\"They shall not leave in thee one stone upon another.\"" }
-      ]
+      ],
+      "passage": "Mic.3.12"
     },
     {
-      "ot": "Nam.2.1-13",
       "title": "The fall of Nineveh",
       "theme": "nations",
       "messianic": false,
       "stages": ["history"],
-      "note": "Nineveh fell to the Babylonians and Medes in 612 BC."
+      "note": "Nineveh fell to the Babylonians and Medes in 612 BC.",
+      "passage": "Nam.2.1-13"
     },
     {
-      "ot": "Zec.12.1-9",
       "title": "Jerusalem a burdensome stone for all people",
       "theme": "israel",
       "messianic": false,
-      "stages": ["return"]
+      "stages": ["return"],
+      "passage": "Zec.12.1-9"
     },
     {
-      "ot": "Isa.6.9-10",
       "title": "Hear ye indeed, but understand not",
       "messianic": true,
       "stages": ["history"],
@@ -1129,10 +1128,10 @@
         { "ref": "Luk.8.10", "kind": "allusion" },
         { "ref": "Jhn.12.39-41", "kind": "quotation", "note": "\"These things said Esaias, when he saw his glory.\"" },
         { "ref": "Act.28.25-27", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Isa.6.9-10"
     },
     {
-      "ot": "Jer.31.15",
       "title": "Rachel weeping for her children",
       "theme": "israel",
       "messianic": true,
@@ -1140,15 +1139,135 @@
       "fulfilments": [
         { "ref": "Jer.40.1", "kind": "event", "note": "The exiles gathered in chains at Ramah." },
         { "ref": "Mat.2.16-18", "kind": "quotation" }
-      ]
+      ],
+      "passage": "Jer.31.15"
     },
     {
-      "ot": "Psa.78.2",
       "title": "I will open my mouth in a parable",
       "messianic": true,
       "fulfilments": [
         { "ref": "Mat.13.34-35", "kind": "quotation" }
+      ],
+      "passage": "Psa.78.2"
+    },
+    {
+      "passage": "Mat.3.7-12",
+      "title": "The axe is laid unto the root of the trees: the wrath to come",
+      "theme": "jerusalem",
+      "messianic": false,
+      "stages": ["ad70"],
+      "note": "John warned that generation of the wrath to come: the unfruitful trees hewn down and the chaff burned, as Malachi had said of the day that burns as an oven.",
+      "fulfilments": [
+        { "ref": "Luk.3.7-9", "kind": "parallel", "stage": "ad70" }
       ]
+    },
+    {
+      "passage": "Mat.10.23",
+      "title": "Ye shall not have gone over the cities of Israel, till the Son of man be come",
+      "theme": "jerusalem",
+      "messianic": false,
+      "stages": ["ad70"],
+      "note": "The apostles' preaching to Israel would not be finished before he came in judgment on the nation."
+    },
+    {
+      "passage": "Mat.16.27-28",
+      "title": "Some standing here shall not taste of death, till they see the Son of man coming in his kingdom",
+      "theme": "jerusalem",
+      "messianic": false,
+      "stages": ["ad70"],
+      "note": "Within the lifetime of some who heard him: the coming in judgment on Jerusalem.",
+      "fulfilments": [
+        { "ref": "Mrk.8.38-9.1", "kind": "parallel", "stage": "ad70" },
+        { "ref": "Luk.9.26-27", "kind": "parallel", "stage": "ad70" }
+      ]
+    },
+    {
+      "passage": "Mat.21.18-22",
+      "title": "The fig tree withered: let no fruit grow on thee henceforward for ever",
+      "theme": "jerusalem",
+      "messianic": false,
+      "stages": ["ad70"],
+      "note": "An acted parable of the nation, full of leaves and without fruit, cursed the week he cleansed the temple.",
+      "fulfilments": [
+        { "ref": "Mrk.11.12-14", "kind": "parallel", "stage": "ad70" },
+        { "ref": "Mrk.11.20-21", "kind": "parallel", "stage": "ad70" }
+      ]
+    },
+    {
+      "passage": "Mat.21.33-46",
+      "title": "The wicked husbandmen: he will miserably destroy those wicked men, and let out his vineyard",
+      "theme": "jerusalem",
+      "messianic": true,
+      "stages": ["ad70"],
+      "note": "The husbandmen kill the heir; the lord of the vineyard destroys them and the kingdom is given to a nation bringing forth its fruits (21:41-43). The chief priests perceived he spoke of them (21:45).",
+      "fulfilments": [
+        { "ref": "Mrk.12.1-12", "kind": "parallel", "stage": "ad70" },
+        { "ref": "Luk.20.9-19", "kind": "parallel", "stage": "ad70" },
+        { "ref": "Act.13.46", "verses": "Mat.21.43", "kind": "event", "stage": "first-advent", "note": "Lo, we turn to the Gentiles." }
+      ]
+    },
+    {
+      "passage": "Mat.22.1-14",
+      "title": "The marriage feast: he sent forth his armies, and burned up their city",
+      "theme": "jerusalem",
+      "messianic": true,
+      "stages": ["ad70"],
+      "note": "Those bidden refused and killed his servants; the king destroyed them and burned their city (22:7), and the wedding was furnished from the highways.",
+      "fulfilments": [
+        { "ref": "Luk.14.15-24", "kind": "parallel", "stage": "first-advent" },
+        { "ref": "Act.28.28", "verses": "Mat.22.9-10", "kind": "event", "stage": "first-advent", "note": "The salvation of God is sent unto the Gentiles." }
+      ]
+    },
+    {
+      "passage": "Mat.23.29-39",
+      "title": "All these things shall come upon this generation: your house is left unto you desolate",
+      "theme": "jerusalem",
+      "messianic": false,
+      "stages": ["ad70"],
+      "note": "The blood of the prophets required of that generation; the temple left desolate.",
+      "fulfilments": [
+        { "ref": "Luk.11.47-51", "kind": "parallel", "stage": "ad70" },
+        { "ref": "Luk.13.34-35", "kind": "parallel", "stage": "ad70" }
+      ]
+    },
+    {
+      "passage": "Mat.24.1-35",
+      "title": "The Olivet prophecy: not one stone left upon another",
+      "theme": "jerusalem",
+      "messianic": false,
+      "stages": ["ad70"],
+      "note": "The temple thrown down, Jerusalem compassed with armies, the abomination of desolation, great tribulation, and the Son of man coming in the clouds: all within \"this generation\" (24:34).",
+      "fulfilments": [
+        { "ref": "Mrk.13.1-31", "kind": "parallel", "stage": "ad70" },
+        { "ref": "Luk.21.5-33", "kind": "parallel", "stage": "ad70" },
+        { "ref": "Luk.17.22-37", "kind": "parallel", "stage": "ad70" },
+        { "ref": "Act.11.28", "verses": "Mat.24.7", "kind": "event", "stage": "first-advent", "note": "A great dearth throughout all the world under Claudius." },
+        { "ref": "Col.1.5-6", "verses": "Mat.24.14", "kind": "event", "stage": "first-advent", "note": "The gospel come into all the world: preached in all the world before the end." }
+      ]
+    },
+    {
+      "passage": "Luk.13.1-9",
+      "title": "Except ye repent, ye shall all likewise perish: cut down the barren fig tree",
+      "theme": "jerusalem",
+      "messianic": false,
+      "stages": ["ad70"],
+      "note": "Three years he sought fruit on the nation; one more was given before it was cut down."
+    },
+    {
+      "passage": "Luk.19.41-44",
+      "title": "He wept over the city: thine enemies shall cast a trench about thee",
+      "theme": "jerusalem",
+      "messianic": false,
+      "stages": ["ad70"],
+      "note": "Because Jerusalem knew not the time of its visitation: the Roman siege works and the city laid even with the ground."
+    },
+    {
+      "passage": "Luk.23.27-31",
+      "title": "Daughters of Jerusalem, weep for yourselves and for your children",
+      "theme": "jerusalem",
+      "messianic": false,
+      "stages": ["ad70"],
+      "note": "Said on the way to the cross: if they do these things in a green tree, what shall be done in the dry?"
     }
   ],
   "patterns": [
@@ -1156,30 +1275,32 @@
       "title": "Invasions from the north",
       "note": "Jerusalem is overrun from the north three times: by Babylon, by Rome, and by Gog at Christ's return. Each prophecy was spoken first for its hearers' own day and echoes forward to the last invasion; after the thousand years a final Gog rises and is destroyed, and Christ delivers up the kingdom to the Father.",
       "members": [
-        { "ot": "Jer.1.13-15", "stage": "history", "label": "Babylon: the seething pot" },
-        { "ot": "Ezk.1.4-28", "stage": "history", "label": "Babylon: the whirlwind from the north" },
-        { "ot": "Hab.1.5-11", "stage": "history", "label": "Babylon: the Chaldeans" },
-        { "ot": "Deu.28.49-68", "stage": "ad70", "label": "Rome: the eagle from far" },
-        { "ot": "Dan.9.24-27", "stage": "ad70", "label": "Rome: the people of the prince" },
-        { "ot": "Mic.3.12", "stage": "ad70", "label": "Rome: Zion plowed again" },
-        { "ot": "Ezk.38.1-39.29", "stage": "return", "label": "Gog at Christ's return" },
-        { "ot": "Zec.12.1-9", "stage": "return", "label": "Jerusalem a burdensome stone" },
-        { "ot": "Zec.14.1-21", "stage": "return", "label": "All nations against Jerusalem" },
-        { "ot": "Ezk.38.1-39.29", "stage": "millennium-end", "label": "Gog and Magog after the thousand years" }
+        { "stage": "history", "label": "Babylon: the seething pot", "passage": "Jer.1.13-15" },
+        { "stage": "history", "label": "Babylon: the whirlwind from the north", "passage": "Ezk.1.4-28" },
+        { "stage": "history", "label": "Babylon: the Chaldeans", "passage": "Hab.1.5-11" },
+        { "stage": "ad70", "label": "Rome: the eagle from far", "passage": "Deu.28.49-68" },
+        { "stage": "ad70", "label": "Rome: the people of the prince", "passage": "Dan.9.24-27" },
+        { "stage": "ad70", "label": "Rome: Zion plowed again", "passage": "Mic.3.12" },
+        { "passage": "Luk.19.41-44", "stage": "ad70", "label": "Rome: a trench cast about the city" },
+        { "passage": "Mat.24.1-35", "stage": "ad70", "label": "Rome: Jerusalem compassed with armies" },
+        { "stage": "return", "label": "Gog at Christ's return", "passage": "Ezk.38.1-39.29" },
+        { "stage": "return", "label": "Jerusalem a burdensome stone", "passage": "Zec.12.1-9" },
+        { "stage": "return", "label": "All nations against Jerusalem", "passage": "Zec.14.1-21" },
+        { "stage": "millennium-end", "label": "Gog and Magog after the thousand years", "passage": "Ezk.38.1-39.29" }
       ]
     },
     {
       "title": "Three heavens and earths",
       "note": "Three worlds, each founded with a lamb (2 Peter 3:5-13): the first, from the garden, destroyed by water; the Mosaic, founded at the passover in Egypt and established under David, destroyed by fire in AD 70; and the kingdom, founded at Christ our passover and established at his return, which shall never be destroyed.",
       "members": [
-        { "ot": "Gen.6.13-17", "stage": "history", "label": "The first world: destroyed by water" },
-        { "ot": "Exo.12.46", "stage": "history", "label": "The Mosaic world founded: the passover lamb" },
-        { "ot": "2Sa.7.12-16", "stage": "history", "label": "The Mosaic world established under David" },
-        { "ot": "Hag.2.6-9", "stage": "ad70", "label": "The Mosaic world shaken and removed" },
-        { "ot": "Exo.12.46", "stage": "first-advent", "label": "The kingdom founded: Christ our passover" },
-        { "ot": "Dan.2.44-45", "stage": "return", "label": "The kingdom established, never to be destroyed" },
-        { "ot": "Isa.65.17-25", "stage": "return", "label": "New heavens and a new earth" },
-        { "ot": "Isa.65.17-25", "stage": "millennium-end", "label": "No more sea" }
+        { "stage": "history", "label": "The first world: destroyed by water", "passage": "Gen.6.13-17" },
+        { "stage": "history", "label": "The Mosaic world founded: the passover lamb", "passage": "Exo.12.46" },
+        { "stage": "history", "label": "The Mosaic world established under David", "passage": "2Sa.7.12-16" },
+        { "stage": "ad70", "label": "The Mosaic world shaken and removed", "passage": "Hag.2.6-9" },
+        { "stage": "first-advent", "label": "The kingdom founded: Christ our passover", "passage": "Exo.12.46" },
+        { "stage": "return", "label": "The kingdom established, never to be destroyed", "passage": "Dan.2.44-45" },
+        { "stage": "return", "label": "New heavens and a new earth", "passage": "Isa.65.17-25" },
+        { "stage": "millennium-end", "label": "No more sea", "passage": "Isa.65.17-25" }
       ]
     }
   ],
