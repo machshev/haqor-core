@@ -105,9 +105,9 @@ pub fn book_number(token: &str) -> Option<u8> {
         (31, &["ruth", "rut"]),
         (32, &["lam", "lamentations"]),
         (33, &["eccl", "ecc", "qoh", "ecclesiastes"]),
-        (34, &["esth", "esther"]),
+        (34, &["esth", "est", "esther"]),
         (35, &["dan", "daniel"]),
-        (36, &["ezra"]),
+        (36, &["ezra", "ezr"]),
         (37, &["neh", "nehemiah"]),
         (38, &["1chr", "1ch", "1chron", "1chronicles"]),
         (39, &["2chr", "2ch", "2chron", "2chronicles"]),
@@ -1930,5 +1930,24 @@ mod verse_stats_tests {
             "grammar columns must remain boolean"
         );
         Ok(())
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    /// Every Old Testament abbreviation STEP Bible writes (TAHOT, TIPNR) names
+    /// its book: an unknown one drops the book's words without a word said,
+    /// as `Ezr` and `Est` once did.
+    #[test]
+    fn knows_step_bible_book_abbreviations() {
+        for (key, abbreviation) in crate::journeys::BOOKS[..39].iter().enumerate() {
+            assert_eq!(
+                book_number(abbreviation),
+                crate::tsk::book_of_key(key + 1),
+                "{abbreviation}"
+            );
+        }
     }
 }
