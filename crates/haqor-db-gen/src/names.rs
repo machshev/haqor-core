@@ -35,6 +35,7 @@ DROP TABLE IF EXISTS name_entity;
 DROP TABLE IF EXISTS name_form;
 DROP TABLE IF EXISTS name_link;
 DROP TABLE IF EXISTS name_location;
+DROP TABLE IF EXISTS name_image;
 DROP TABLE IF EXISTS word_name;
 DROP TABLE IF EXISTS name_verse;
 DROP TABLE IF EXISTS sense;
@@ -100,6 +101,30 @@ CREATE TABLE name_location(
     label      TEXT    NOT NULL,
     shape      TEXT    NOT NULL DEFAULT '',
     estimated  INTEGER NOT NULL DEFAULT 0,
+    PRIMARY KEY(entity_id, ord)
+) WITHOUT ROWID;
+
+-- Photographs of the modern locations a place is identified with, and links
+-- to views of them on Google Maps (OpenBible.info's; the photographs on
+-- Wikimedia Commons, each under its own licence). `location` is the
+-- name_location `ord` it shows; `role` photo or view; `thumbnail_url` the
+-- Commons thumbnail URL with `####` for its width, empty for a view;
+-- `width` and `height` the original's; `license` OpenBible's code for its
+-- licence (CC-BY-SA-4.0, PD, GFDL, …); `placeholder` up to three colours to
+-- stand in for it while it loads.
+CREATE TABLE name_image(
+    entity_id     INTEGER NOT NULL,
+    ord           INTEGER NOT NULL,
+    location      INTEGER NOT NULL,
+    role          TEXT    NOT NULL,
+    description   TEXT    NOT NULL,
+    page_url      TEXT    NOT NULL,
+    thumbnail_url TEXT    NOT NULL,
+    width         INTEGER NOT NULL,
+    height        INTEGER NOT NULL,
+    credit        TEXT    NOT NULL,
+    license       TEXT    NOT NULL,
+    placeholder   TEXT    NOT NULL,
     PRIMARY KEY(entity_id, ord)
 ) WITHOUT ROWID;
 
@@ -172,6 +197,8 @@ pub struct NamesSummary {
     pub located: usize,
     pub geocoded: usize,
     pub overridden: usize,
+    /// Places with a photograph or a view of where they may have been.
+    pub pictured: usize,
     pub senses: usize,
     /// Words of the corpus with a sense, and the rows it took to say so:
     /// one per surface, and one per occurrence differing from its surface.
@@ -455,6 +482,7 @@ pub fn build_names(
         .context("reading the prepared TIPNR records")?;
     let splits = amend_records(place_overrides, &mut records)?;
     let places = crate::geocoding::read_prepared(src_texts)?;
+    let images = crate::geocoding::read_images(src_texts)?;
     let keys: HashSet<String> = records.iter().map(|r| text(r, "key")).collect();
     let mut overrides = PlaceOverrides::read(place_overrides)?.0;
     let tags = crate::stepbible::align_tags(&dir, db)?;
@@ -558,6 +586,11 @@ pub fn build_names(
             "INSERT INTO name_location(entity_id, ord, latitude, longitude, confidence, kind, \
              label, shape, estimated) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
         )?;
+        let mut image = tx.prepare(
+            "INSERT INTO name_image(entity_id, ord, location, role, description, page_url, \
+             thumbnail_url, width, height, credit, license, placeholder) \
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12)",
+        )?;
         for record in &records {
             let id = record["id"]
                 .as_u64()
@@ -637,7 +670,25 @@ pub fn build_names(
             }
             match place_of(record, &places, &keys) {
                 Some(place) => {
+                    let mut images_of = 0;
                     for (ord, l) in distinct(&place.locations).into_iter().enumerate() {
+                        for i in images.get(&l.modern).into_iter().flatten() {
+                            image.execute(params![
+                                id,
+                                images_of,
+                                ord as i64,
+                                i.role,
+                                i.description,
+                                i.page_url,
+                                i.thumbnail_url,
+                                i.width,
+                                i.height,
+                                i.credit,
+                                i.license,
+                                i.placeholder
+                            ])?;
+                            images_of += 1;
+                        }
                         location.execute(params![
                             id,
                             ord as i64,
@@ -652,6 +703,7 @@ pub fn build_names(
                     }
                     summary.located += 1;
                     summary.geocoded += 1;
+                    summary.pictured += usize::from(images_of > 0);
                 }
                 None => {
                     if let Some([lat, lon]) = record["coordinates"]
@@ -781,7 +833,7 @@ pub fn build_names(
     tx.commit()?;
     info!(
         "Names: {} records, {} words naming one, and {} New Testament verses ({} references \
-         the Peshitta lacks); {} places located ({} by OpenBible.info). \
+         the Peshitta lacks); {} places located ({} by OpenBible.info, {} pictured). \
          Senses: {} on {} words ({} surfaces, {} occurrences differing from theirs)",
         summary.entities,
         summary.name_words,
@@ -789,6 +841,7 @@ pub fn build_names(
         summary.unplaced_verses,
         summary.located,
         summary.geocoded,
+        summary.pictured,
         summary.senses,
         summary.sense_words,
         summary.surface_senses,
@@ -829,6 +882,7 @@ mod tests {
                 kind: "region".to_string(),
                 label: String::new(),
                 shape: None,
+                modern: String::new(),
             }],
         };
         let places = [
@@ -888,8 +942,20 @@ mod tests {
         assert!(summary.name_words > 35_000, "{summary:?}");
         assert!(summary.sense_words > 240_000, "{summary:?}");
         assert!(summary.geocoded > 900, "{summary:?}");
+        assert!(summary.pictured > 600, "{summary:?}");
         assert!(summary.name_verses > 4_500, "{summary:?}");
         assert!(summary.unplaced_verses < 50, "{summary:?}");
+
+        // Lachish is pictured at Tel Lachish, its likeliest site.
+        let lachish: (i64, i64) = db
+            .query_row(
+                "SELECT count(*), min(i.location) FROM name_image i JOIN name_entity e \
+                 USING(entity_id) WHERE e.name = 'Lachish' AND i.role = 'photo'",
+                [],
+                |row| Ok((row.get(0)?, row.get(1)?)),
+            )
+            .unwrap();
+        assert!(lachish.0 > 0 && lachish.1 == 0, "{lachish:?}");
 
         // The New Testament names Jerusalem, Matthew 23:37 twice.
         let verse = |book: i64, chapter: i64, verse: i64| -> Option<i64> {

@@ -7,10 +7,12 @@
 //! `scripts/fetch-openbible-geocoding.sh` checks out the dataset (its
 //! `data/ancient.jsonl`, 11 MB, mostly image credits, Wikidata links and the
 //! like, and a GeoJSON file for each shape) and [`prepare`] keeps only the
-//! positions and shapes, in `src_texts/OpenBible-Geocoding/places.tsv`. A
-//! TIPNR record finds its place by the OpenBible name it gives
-//! (`Bethlehem 1`), or failing that by the TIPNR keys OpenBible links its
-//! places to (see [`crate::tipnr`]).
+//! positions and shapes, in `src_texts/OpenBible-Geocoding/places.tsv`, and
+//! from `data/modern.jsonl` and `data/image.jsonl` the openly licensed
+//! photographs of each modern location and its Google views, in `images.tsv`
+//! (see [`location_images`]). A TIPNR record finds its place by the OpenBible
+//! name it gives (`Bethlehem 1`), or failing that by the TIPNR keys OpenBible
+//! links its places to (see [`crate::tipnr`]).
 
 use std::collections::HashMap;
 use std::path::{Path, PathBuf};
@@ -43,6 +45,9 @@ pub(crate) struct Location {
     pub kind: String,
     pub label: String,
     pub shape: Option<PlaceShape>,
+    /// OpenBible's id of the modern location it is identified with (`m9b8daa`),
+    /// which [`Image`]s are keyed by; empty where it gives none.
+    pub modern: String,
 }
 
 /// One place of OpenBible's and its identifications, best first.
@@ -51,6 +56,208 @@ pub(crate) struct Place {
     pub name: String,
     pub keys: Vec<String>,
     pub locations: Vec<Location>,
+}
+
+/// The prepared images: one line per image of a modern location, its best
+/// first: the location's OpenBible id, the role (`photo` for a photograph on
+/// Wikimedia Commons, `view` for a link to a view of the site on Google Maps:
+/// Street View, a photosphere or an aerial view), what it shows, the page to
+/// credit and open, the Commons thumbnail URL with `####` for its width (empty
+/// for a view), the original's width and height, the credit, the licence
+/// (OpenBible's code: `CC-BY-SA-4.0`, `PD`, `GFDL`, …), and up to three
+/// colours to stand in for it while it loads (`#94abd4,#7e8592,#575451`).
+const PREPARED_IMAGES: &str = "images.tsv";
+
+/// An image of a modern location, as the prepared images file has it.
+#[derive(Clone, Debug, PartialEq)]
+pub(crate) struct Image {
+    pub role: String,
+    pub description: String,
+    pub page_url: String,
+    pub thumbnail_url: String,
+    pub width: u32,
+    pub height: u32,
+    pub credit: String,
+    pub license: String,
+    pub placeholder: String,
+}
+
+/// The images OpenBible gives a modern location (`media` in
+/// `data/modern.jsonl`, each described in `data/image.jsonl`) that the app
+/// may show: its thumbnail, alternates and those taken nearby, where the
+/// image is on Wikimedia Commons under an open licence, and its Google views
+/// as links. Satellite tiles (in `thumbnails.zip` only, and the app has a
+/// map) and copyrighted photographs are left out.
+fn location_images(
+    location: &Value,
+    images: &HashMap<String, Value>,
+    placeholders: &HashMap<String, String>,
+) -> Vec<Image> {
+    let media = &location["media"];
+    let id = location["id"].as_str().unwrap_or_default();
+    let mut out = Vec::new();
+    let photos = media["thumbnail"]
+        .as_object()
+        .map(|_| &media["thumbnail"])
+        .into_iter()
+        .chain(media["alternate"].as_array().into_iter().flatten())
+        .chain(media["near"].as_array().into_iter().flatten());
+    for entry in photos {
+        let Some(image) = entry["image_id"].as_str().and_then(|i| images.get(i)) else {
+            continue;
+        };
+        let license = image["license"].as_str().unwrap_or_default();
+        let pattern = image["thumbnail_url_pattern"].as_str().unwrap_or_default();
+        if matches!(license, "" | "copyright" | "sentinel") || !pattern.contains("####") {
+            continue;
+        }
+        out.push(Image {
+            role: "photo".into(),
+            description: plain(entry["description"].as_str().unwrap_or_default()),
+            page_url: image["credit_url"]
+                .as_str()
+                .or(image["url"].as_str())
+                .unwrap_or_default()
+                .to_string(),
+            thumbnail_url: pattern.to_string(),
+            width: image["width"].as_u64().unwrap_or_default() as u32,
+            height: image["height"].as_u64().unwrap_or_default() as u32,
+            credit: image["credit"].as_str().unwrap_or_default().to_string(),
+            license: license.to_string(),
+            placeholder: entry["placeholder"]
+                .as_str()
+                .map(str::to_string)
+                .or_else(|| {
+                    placeholders
+                        .get(&format!("{id}.{}", image["id"].as_str()?))
+                        .cloned()
+                })
+                .unwrap_or_default(),
+        });
+    }
+    for entry in media["google"].as_array().into_iter().flatten() {
+        let Some(url) = entry["image_id"]
+            .as_str()
+            .and_then(|i| images.get(i))
+            .and_then(|image| image["url"].as_str())
+        else {
+            continue;
+        };
+        out.push(Image {
+            role: "view".into(),
+            description: plain(entry["description"].as_str().unwrap_or_default()),
+            page_url: url.to_string(),
+            thumbnail_url: String::new(),
+            width: 0,
+            height: 0,
+            credit: String::new(),
+            license: String::new(),
+            placeholder: String::new(),
+        });
+    }
+    out
+}
+
+/// `prepare`'s images, from `data/modern.jsonl` and `data/image.jsonl`, as
+/// the lines of the prepared file. Returns them and how many locations have
+/// any.
+fn prepare_images(from: &Path) -> Result<(String, usize)> {
+    let read = |name: &str| {
+        let path = from.join(name);
+        std::fs::read_to_string(&path).with_context(|| format!("reading {}", path.display()))
+    };
+    let mut images = HashMap::new();
+    // An image's placeholder colours, by location and image: only its
+    // thumbnails have them.
+    let mut placeholders = HashMap::new();
+    for line in read("data/image.jsonl")?.lines() {
+        let image: Value = serde_json::from_str(line)?;
+        let Some(id) = image["id"].as_str().map(str::to_string) else {
+            continue;
+        };
+        for (location, thumbnail) in image["thumbnails"].as_object().into_iter().flatten() {
+            if let Some(colours) = thumbnail["placeholder"].as_str() {
+                placeholders.insert(format!("{location}.{id}"), colours.to_string());
+            }
+        }
+        images.insert(id, image);
+    }
+    let mut out = String::new();
+    let mut located = 0;
+    for line in read("data/modern.jsonl")?.lines() {
+        let location: Value = serde_json::from_str(line)?;
+        let id = location["id"].as_str().unwrap_or_default();
+        let found = location_images(&location, &images, &placeholders);
+        located += usize::from(!found.is_empty());
+        for i in found {
+            let fields = [
+                &i.description,
+                &i.page_url,
+                &i.thumbnail_url,
+                &i.credit,
+                &i.license,
+                &i.placeholder,
+            ];
+            if fields.iter().any(|f| f.contains(['\t', '\n'])) {
+                bail!("a tab or newline in an image of {id}: {i:?}");
+            }
+            out.push_str(&format!(
+                "{id}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n",
+                i.role,
+                i.description,
+                i.page_url,
+                i.thumbnail_url,
+                i.width,
+                i.height,
+                i.credit,
+                i.license,
+                i.placeholder
+            ));
+        }
+    }
+    Ok((out, located))
+}
+
+/// The prepared images, by modern location id, best first. Empty where the
+/// file is missing, as in a checkout prepared before there were images.
+pub(crate) fn read_images(src_texts: &Path) -> Result<HashMap<String, Vec<Image>>> {
+    let path = source_dir(src_texts).join(PREPARED_IMAGES);
+    let mut out: HashMap<String, Vec<Image>> = HashMap::new();
+    let text = match std::fs::read_to_string(&path) {
+        Ok(text) => text,
+        Err(e) if e.kind() == std::io::ErrorKind::NotFound => return Ok(out),
+        Err(e) => return Err(e).with_context(|| format!("reading {}", path.display())),
+    };
+    for line in text.lines() {
+        let fields: Vec<&str> = line.split('\t').collect();
+        let [
+            location,
+            role,
+            description,
+            page_url,
+            thumbnail_url,
+            width,
+            height,
+            credit,
+            license,
+            placeholder,
+        ] = fields[..]
+        else {
+            bail!("an unreadable line in {}: {line:?}", path.display());
+        };
+        out.entry(location.to_string()).or_default().push(Image {
+            role: role.to_string(),
+            description: description.to_string(),
+            page_url: page_url.to_string(),
+            thumbnail_url: thumbnail_url.to_string(),
+            width: width.parse()?,
+            height: height.parse()?,
+            credit: credit.to_string(),
+            license: license.to_string(),
+            placeholder: placeholder.to_string(),
+        });
+    }
+    Ok(out)
 }
 
 /// Plain text from OpenBible's description markup, which wraps the names of
@@ -338,6 +545,10 @@ fn place(line: &str, geometries: &Geometries) -> Result<Place> {
             kind: resolution["type"].as_str().unwrap_or_default().to_string(),
             label: plain(identification["description"].as_str().unwrap_or_default()),
             shape: resolution_shape(resolution, geometries)?,
+            modern: resolution["modern_basis_id"]
+                .as_str()
+                .unwrap_or_default()
+                .to_string(),
         });
     }
     // OpenBible lists them best first already; a stable sort keeps its order
@@ -351,7 +562,7 @@ fn place(line: &str, geometries: &Geometries) -> Result<Place> {
 }
 
 /// `db prepare openbible-geocoding`: read a checkout of the dataset from
-/// `from` and write the prepared positions into `out_dir`. Returns the number
+/// `from` and write the prepared positions and images into `out_dir`. Returns the number
 /// of places written.
 pub fn prepare(from: &Path, out_dir: &Path) -> Result<usize> {
     let path = from.join("data/ancient.jsonl");
@@ -370,20 +581,25 @@ pub fn prepare(from: &Path, out_dir: &Path) -> Result<usize> {
         let keys = place.keys.join(",");
         for l in &place.locations {
             out.push_str(&format!(
-                "{}\t{keys}\t{}\t{}\t{}\t{}\t{}\t{}\n",
+                "{}\t{keys}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n",
                 place.name,
                 l.latitude,
                 l.longitude,
                 l.confidence,
                 l.kind,
                 l.label,
-                l.shape.as_ref().map(PlaceShape::encode).unwrap_or_default()
+                l.shape.as_ref().map(PlaceShape::encode).unwrap_or_default(),
+                l.modern
             ));
         }
     }
     std::fs::create_dir_all(out_dir)?;
     let path = out_dir.join(PREPARED);
     std::fs::write(&path, out).with_context(|| format!("writing {}", path.display()))?;
+    let (images, located) = prepare_images(from)?;
+    let path = out_dir.join(PREPARED_IMAGES);
+    std::fs::write(&path, images).with_context(|| format!("writing {}", path.display()))?;
+    log::info!("Prepared the images of {located} modern locations");
     Ok(places)
 }
 
@@ -408,6 +624,7 @@ pub(crate) fn read_prepared(src_texts: &Path) -> Result<Vec<Place>> {
             kind,
             label,
             shape,
+            modern,
         ] = fields[..]
         else {
             bail!("an unreadable line in {}: {line:?}", path.display());
@@ -434,6 +651,7 @@ pub(crate) fn read_prepared(src_texts: &Path) -> Result<Vec<Place>> {
             kind: kind.to_string(),
             label: label.to_string(),
             shape: decoded,
+            modern: modern.to_string(),
         });
     }
     Ok(places)
@@ -459,6 +677,63 @@ mod tests {
         assert_eq!(locations[0].latitude, 33.047692);
         assert_eq!(locations[0].kind, "settlement");
         assert_eq!(locations[0].shape, None);
+    }
+
+    #[test]
+    fn keeps_open_photos_and_google_views() {
+        let images: HashMap<String, Value> = [
+            r#"{"id":"i1","license":"CC-BY-SA-4.0","credit":"Avi1111","credit_url":"https://commons.wikimedia.org/wiki/File:Tel_Malut.jpg","thumbnail_url_pattern":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tel_Malut.jpg/####px-Tel_Malut.jpg","width":4160,"height":3120}"#,
+            r##"{"id":"i2","license":"PD","credit":"Someone","credit_url":"https://commons.wikimedia.org/wiki/File:Wall.jpg","thumbnail_url_pattern":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Wall.jpg/####px-Wall.jpg","width":800,"height":600,"thumbnails":{"m1":{"placeholder":"#111111,#222222"}}}"##,
+            r#"{"id":"i3","license":"copyright","url":"https://holylandphotos.org/browse.asp?img=X"}"#,
+            r#"{"id":"i4","license":"sentinel","credit":"Contains modified Copernicus Sentinel data 2019"}"#,
+            r#"{"id":"i5","license":"copyright","url":"https://www.google.com/maps/@31.8,35.5,3a"}"#,
+        ]
+        .into_iter()
+        .map(|line| {
+            let image: Value = serde_json::from_str(line).unwrap();
+            (image["id"].as_str().unwrap().to_string(), image)
+        })
+        .collect();
+        let placeholders = HashMap::from([("m1.i2".to_string(), "#111111,#222222".to_string())]);
+        let location: Value = serde_json::from_str(
+            r##"{"id":"m1","media":{
+                "thumbnail":{"image_id":"i1","description":"summit of <modern id=\"m1\">Tell Melat</modern>","placeholder":"#80a0bc,#4c5959"},
+                "alternate":[{"image_id":"i2","description":"wall at <modern id=\"m1\">Tell Melat</modern>"},{"image_id":"i4","description":"satellite view"}],
+                "copyrighted":[{"image_id":"i3","description":"panorama"}],
+                "near":[{"image_id":"i3","description":"near"}],
+                "google":[{"image_id":"i5","description":"Google Streetview of <modern id=\"m1\">Tell Melat</modern>","role":"google_streetview"}]
+            }}"##,
+        )
+        .unwrap();
+        let found = location_images(&location, &images, &placeholders);
+        let summary: Vec<_> = found
+            .iter()
+            .map(|i| {
+                (
+                    i.role.as_str(),
+                    i.description.as_str(),
+                    i.placeholder.as_str(),
+                )
+            })
+            .collect();
+        assert_eq!(
+            summary,
+            [
+                ("photo", "summit of Tell Melat", "#80a0bc,#4c5959"),
+                ("photo", "wall at Tell Melat", "#111111,#222222"),
+                ("view", "Google Streetview of Tell Melat", ""),
+            ]
+        );
+        assert_eq!(found[0].license, "CC-BY-SA-4.0");
+        assert_eq!(found[0].width, 4160);
+        assert_eq!(
+            found[0].page_url,
+            "https://commons.wikimedia.org/wiki/File:Tel_Malut.jpg"
+        );
+        assert_eq!(
+            found[2].page_url,
+            "https://www.google.com/maps/@31.8,35.5,3a"
+        );
     }
 
     #[test]

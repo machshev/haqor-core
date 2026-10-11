@@ -202,6 +202,66 @@ pub struct NameEntity {
     pub links: Vec<NameLink>,
     /// The likeliest first; empty for all but places.
     pub locations: Vec<PlaceLocation>,
+    /// Photographs of the sites in [`Self::locations`] and links to views of
+    /// them, the likeliest site's first.
+    pub images: Vec<PlaceImage>,
+}
+
+/// What a [`PlaceImage`] is.
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum PlaceImageRole {
+    /// A photograph on Wikimedia Commons, to show.
+    Photo,
+    /// A view of the site on Google Maps (Street View, a photosphere, an
+    /// aerial view), to open there: it is not Haqor's to show.
+    View,
+}
+
+/// A photograph of a site a place is identified with, or a link to a view of
+/// it (OpenBible.info's choice of them).
+#[derive(Clone, Debug, PartialEq)]
+pub struct PlaceImage {
+    /// The index in [`NameEntity::locations`] of the site it shows.
+    pub location: usize,
+    pub role: PlaceImageRole,
+    /// What it shows: "ruins at Tel Lachish", "Google Streetview of Bethel".
+    pub description: String,
+    /// Its page, to credit and to open: on Wikimedia Commons for a photo,
+    /// on Google Maps for a view.
+    pub page_url: String,
+    /// The Commons thumbnail URL with `####` for the width in pixels (see
+    /// [`Self::thumbnail_url`]); empty for a view.
+    pub thumbnail_pattern: String,
+    /// The original's size in pixels; 0 for a view.
+    pub width: u32,
+    pub height: u32,
+    /// Who to credit, and the licence it is under, as OpenBible.info codes
+    /// it: `CC-BY-SA-4.0`, `CC-BY-3.0`, `CC-Zero`, `PD`, `GFDL`, …
+    pub credit: String,
+    pub license: String,
+    /// Up to three colours (`#94abd4`) to stand in for it while it loads,
+    /// top to bottom; empty where OpenBible.info gives none.
+    pub placeholder: Vec<String>,
+}
+
+/// The thumbnail widths Wikimedia Commons serves: it refuses others.
+const COMMONS_WIDTHS: [u32; 6] = [250, 330, 500, 960, 1280, 1920];
+
+impl PlaceImage {
+    /// A URL of the photo at least `width` pixels wide where Commons has one
+    /// (it serves only some widths), or the original where it is narrower;
+    /// `None` for a view.
+    pub fn thumbnail_url(&self, width: u32) -> Option<String> {
+        let (thumb, _) = self.thumbnail_pattern.rsplit_once("/####px-")?;
+        match COMMONS_WIDTHS.iter().find(|&&w| w >= width) {
+            Some(&w) if w < self.width => {
+                Some(self.thumbnail_pattern.replace("####", &w.to_string()))
+            }
+            // No thumbnail is wider than the original: the original itself,
+            // its thumbnail directory without `/thumb`.
+            _ => Some(thumb.replacen("/commons/thumb/", "/commons/", 1)),
+        }
+    }
 }
 
 /// A place named in a chapter, for a map of the chapter.
@@ -412,6 +472,45 @@ pub(crate) fn split_gloss(gloss: &str) -> (&str, &str) {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn a_photo_is_fetched_at_a_width_commons_serves() {
+        let image = |pattern: &str, width| PlaceImage {
+            location: 0,
+            role: PlaceImageRole::Photo,
+            description: String::new(),
+            page_url: String::new(),
+            thumbnail_pattern: pattern.to_string(),
+            width,
+            height: 0,
+            credit: String::new(),
+            license: String::new(),
+            placeholder: Vec::new(),
+        };
+        let wide = image(
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tel_Malut.jpg/####px-Tel_Malut.jpg",
+            4160,
+        );
+        assert_eq!(
+            wide.thumbnail_url(400).as_deref(),
+            Some(
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tel_Malut.jpg/500px-Tel_Malut.jpg"
+            )
+        );
+        // Wider than Commons' widest thumbnail, or than the original: the
+        // original.
+        let original = "https://upload.wikimedia.org/wikipedia/commons/4/4d/Tel_Malut.jpg";
+        assert_eq!(wide.thumbnail_url(4000).as_deref(), Some(original));
+        let narrow = image(&wide.thumbnail_pattern, 400);
+        assert_eq!(
+            narrow.thumbnail_url(330).as_deref(),
+            Some(
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tel_Malut.jpg/330px-Tel_Malut.jpg"
+            )
+        );
+        assert_eq!(narrow.thumbnail_url(500).as_deref(), Some(original));
+        assert_eq!(image("", 0).thumbnail_url(500), None);
+    }
 
     #[test]
     fn splits_word_and_sense_glosses() {

@@ -4,13 +4,16 @@ set -euo pipefail
 # Update the vendored OpenBible.info Bible geocoding data (CC BY 4.0; its
 # OpenStreetMap geometry ODbL 1.0) in src_texts/OpenBible-Geocoding: where
 # each place named in the Bible is thought to have been, with how confident
-# scholarship is in each identification, and the shapes of its regions,
-# rivers and lakes.
+# scholarship is in each identification, the shapes of its regions, rivers
+# and lakes, and photographs of the sites (on Wikimedia Commons, each under
+# its own licence) and links to views of them on Google Maps.
 #
 # `haqor db prepare openbible-geocoding` keeps only the positions and shapes
-# from its ancient places file and geometry (places.tsv), and that is what is
-# committed. This script fetches the dataset at a pinned commit (git checks
-# every file against the commit's hash), verifies the ancient places file's
+# from its ancient places file and geometry (places.tsv), and the openly
+# licensed photographs and Google views of its modern locations from its
+# modern locations and images files (images.tsv); that is what is committed.
+# This script fetches the dataset at a pinned commit (git checks every file
+# against the commit's hash), verifies the ancient places file's
 # checksum and prepares it; review the diff before committing.
 readonly commit="7eb18a5ee62f27b9b93bd6689ea272d76dd23b8f"
 readonly destination="${1:-src_texts/OpenBible-Geocoding}"
@@ -29,6 +32,6 @@ mkdir -p "${destination}"
 cargo run --release --quiet -p haqor-cli -- db prepare openbible-geocoding \
   --from "${work}/checkout" --to "${destination}"
 printf '%s\n%s\n%s\n' "repository: ${repository}" "commit: ${commit}" \
-  "prepared by haqor db prepare openbible-geocoding from data/ancient.jsonl (sha256 ${checksum}), data/geometry.jsonl and geometry/" \
+  "prepared by haqor db prepare openbible-geocoding from data/ancient.jsonl (sha256 ${checksum}), data/geometry.jsonl, geometry/, data/modern.jsonl and data/image.jsonl" \
   > "${destination}/SOURCE"
 echo "Prepared OpenBible.info geocoding ${commit} into ${destination}"

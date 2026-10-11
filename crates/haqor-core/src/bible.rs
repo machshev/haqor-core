@@ -5442,6 +5442,44 @@ impl Bible {
         .collect()
     }
 
+    /// The photographs and views of the sites a place may have been, the
+    /// likeliest site's first; empty in a database built before there were
+    /// any.
+    fn name_images(&self, id: u32) -> rusqlite::Result<Vec<crate::names::PlaceImage>> {
+        use crate::names::{PlaceImage, PlaceImageRole};
+        if !self.has_table("name_image")? {
+            return Ok(Vec::new());
+        }
+        let mut stmt = self.db.prepare_cached(
+            "SELECT location, role, description, page_url, thumbnail_url, width, height, \
+                    credit, license, placeholder \
+             FROM data.name_image WHERE entity_id = ?1 ORDER BY ord",
+        )?;
+        stmt.query_map([id], |row| {
+            let placeholder: String = row.get(9)?;
+            Ok(PlaceImage {
+                location: row.get::<_, i64>(0)? as usize,
+                role: match row.get::<_, String>(1)?.as_str() {
+                    "view" => PlaceImageRole::View,
+                    _ => PlaceImageRole::Photo,
+                },
+                description: row.get(2)?,
+                page_url: row.get(3)?,
+                thumbnail_pattern: row.get(4)?,
+                width: row.get(5)?,
+                height: row.get(6)?,
+                credit: row.get(7)?,
+                license: row.get(8)?,
+                placeholder: placeholder
+                    .split(',')
+                    .filter(|c| !c.is_empty())
+                    .map(str::to_string)
+                    .collect(),
+            })
+        })?
+        .collect()
+    }
+
     /// A person, place or other named thing by its id (from
     /// [`Bible::word_name`] or a [`crate::names::NameLink`]): its forms, its
     /// links to others, and where a place may have been.
@@ -5507,6 +5545,7 @@ impl Bible {
             forms,
             links,
             locations: self.name_locations(id)?,
+            images: self.name_images(id)?,
         }))
     }
 
@@ -6339,6 +6378,67 @@ mod tests {
         assert_eq!(chapter.len(), 31);
         assert_eq!(chapter[0], (1, genesis));
         assert!(bible.syntax_tree(40, 1, 1).unwrap().is_none());
+    }
+
+    /// A place comes with photographs of its sites, fetched at a width
+    /// Commons serves, and links to views of them. Skips a database built
+    /// before there were any.
+    #[test]
+    fn places_are_pictured() {
+        use crate::names::PlaceImageRole;
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let Some(lachish) = bible
+            .places()
+            .unwrap()
+            .places
+            .into_iter()
+            .find(|p| p.place.name == "Lachish")
+        else {
+            eprintln!("skipping: haqor.db has no places");
+            return;
+        };
+        let entity = bible.name_entity(lachish.place.id).unwrap().unwrap();
+        if entity.images.is_empty() {
+            eprintln!("skipping: haqor.db has no name_image table");
+            return;
+        }
+        let photo = &entity.images[0];
+        assert_eq!(photo.role, PlaceImageRole::Photo, "{photo:?}");
+        assert_eq!(photo.location, 0, "{photo:?}");
+        assert!(
+            !photo.credit.is_empty() && !photo.license.is_empty(),
+            "{photo:?}"
+        );
+        assert!(
+            photo.page_url.starts_with("https://commons.wikimedia.org/"),
+            "{photo:?}"
+        );
+        let url = photo.thumbnail_url(500).unwrap();
+        assert!(url.starts_with("https://upload.wikimedia.org/"), "{url}");
+        assert!(
+            entity
+                .images
+                .iter()
+                .all(|i| i.location < entity.locations.len()),
+            "{:?}",
+            entity.images
+        );
+        // Somewhere is viewed on Google Maps.
+        let viewed = bible
+            .places()
+            .unwrap()
+            .places
+            .iter()
+            .filter_map(|p| bible.name_entity(p.place.id).unwrap())
+            .flat_map(|e| e.images)
+            .find(|i| i.role == PlaceImageRole::View)
+            .unwrap();
+        assert!(
+            viewed.page_url.starts_with("https://www.google.com/maps/"),
+            "{viewed:?}"
+        );
+        assert_eq!(viewed.thumbnail_url(500), None);
     }
 
     /// Every place is listed once, by name, with its other names and the
