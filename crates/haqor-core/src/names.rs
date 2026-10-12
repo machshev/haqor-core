@@ -270,8 +270,8 @@ pub struct ChapterPlace {
     pub place: NameSummary,
     /// The likeliest location; a place without one is not listed.
     pub location: PlaceLocation,
-    /// The verses naming it, in order.
-    pub verses: Vec<u8>,
+    /// The `(chapter, verse)`s naming it, in order.
+    pub verses: Vec<(u8, u8)>,
 }
 
 /// A place in the list of every place, for finding one by name or region.

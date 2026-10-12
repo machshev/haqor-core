@@ -9,10 +9,11 @@
 //! carries its own [`EvidenceStrength`].
 
 use std::collections::{BTreeMap, HashMap};
+use std::ops::RangeInclusive;
 
 use rusqlite::{OptionalExtension, Row};
 
-use crate::bible::{Bible, VerseRef, VerseSpan, chapter_range};
+use crate::bible::{Bible, VerseRef, VerseSpan, chapters_range, ref_chapter_verse};
 use crate::names::{NameKind, NameSummary};
 
 /// How strongly a find's link holds.
@@ -115,15 +116,15 @@ pub struct Archaeology {
     pub sources: Vec<ArtifactSource>,
 }
 
-/// A find that bears on a chapter: through a passage in it (`verses`), or
+/// A find that bears on a chapter, or a run of them: through a passage in it (`verses`), or
 /// by naming someone the chapter names (`people`), or both.
 #[derive(Clone, Debug, PartialEq)]
 pub struct ChapterArtifact {
     pub artifact: Artifact,
-    /// The chapter's verses its passages cover, in order; empty if it is
+    /// The `(chapter, verse)`s its passages cover, in order; empty if it is
     /// here only for the people it names.
-    pub verses: Vec<u8>,
-    /// The people it names who are named in the chapter.
+    pub verses: Vec<(u8, u8)>,
+    /// The people it names who are named in the chapters.
     pub people: Vec<NameSummary>,
 }
 
@@ -283,48 +284,39 @@ impl Bible {
         Ok(out)
     }
 
-    /// The finds that bear on a chapter: first those with a passage in it,
-    /// by the first verse they cover, then those naming someone the chapter
-    /// names, oldest first. A famous name reaches far (David is named in
+    /// The finds that bear on a run of chapters of one book: first those with
+    /// a passage in them, by the first verse they cover, then those naming
+    /// someone the chapters name, oldest first. A famous name reaches far (David is named in
     /// some 250 chapters), so a caller should keep the two apart.
     pub fn chapter_artifacts(
         &self,
         book: u8,
-        chapter: u8,
+        chapters: RangeInclusive<u8>,
     ) -> rusqlite::Result<Vec<ChapterArtifact>> {
         if !self.has_artifacts()? {
             return Ok(Vec::new());
         }
         let conn = self.conn();
-        let (low, high) = chapter_range(book, chapter);
-        // The chapter's verses each find's passages cover.
-        let mut verses: BTreeMap<u32, Vec<u8>> = BTreeMap::new();
+        let (low, high) = chapters_range(book, &chapters);
+        // The chapters' verses each find's passages cover, as the corpus
+        // numbers them, so a passage running past a chapter's end covers its
+        // last verse and goes on into the next.
+        let mut verses: BTreeMap<u32, Vec<(u8, u8)>> = BTreeMap::new();
         let mut stmt = conn.prepare_cached(
-            "SELECT artifact_id, ref, end_ref FROM data.artifact_passage \
-             WHERE ref <= ?2 AND end_ref >= ?1",
+            "SELECT p.artifact_id, v.ref FROM data.artifact_passage p \
+             JOIN data.verse v ON v.ref BETWEEN MAX(p.ref, ?1) AND MIN(p.end_ref, ?2) \
+             WHERE p.ref <= ?2 AND p.end_ref >= ?1",
         )?;
         for row in stmt.query_map([low, high], |row| {
-            Ok((
-                row.get::<_, u32>(0)?,
-                row.get::<_, i64>(1)?,
-                row.get::<_, i64>(2)?,
-            ))
+            Ok((row.get::<_, u32>(0)?, row.get::<_, i64>(1)?))
         })? {
-            let (id, first, last) = row?;
-            let covered = verses.entry(id).or_default();
-            let from = if first < low { 1 } else { (first & 255) as u8 };
-            let to = if last > high { 255 } else { (last & 255) as u8 };
-            covered.extend(from..=to);
+            let (id, reference) = row?;
+            verses
+                .entry(id)
+                .or_default()
+                .push(ref_chapter_verse(reference));
         }
-        // A passage running past the chapter's end covers its last verse,
-        // not 255 of them.
-        let last_verse: Option<u8> = conn.query_row(
-            "SELECT MAX(ref & 255) FROM data.verse WHERE ref BETWEEN ?1 AND ?2",
-            [low, high],
-            |row| row.get(0),
-        )?;
         for covered in verses.values_mut() {
-            covered.retain(|v| last_verse.is_none_or(|last| *v <= last));
             covered.sort_unstable();
             covered.dedup();
         }
@@ -360,7 +352,12 @@ impl Bible {
             })
             .collect();
         // Passages first, by verse; then the rest in time order, as fetched.
-        found.sort_by_key(|f| (f.verses.is_empty(), f.verses.first().copied().unwrap_or(0)));
+        found.sort_by_key(|f| {
+            (
+                f.verses.is_empty(),
+                f.verses.first().copied().unwrap_or_default(),
+            )
+        });
         Ok(found)
     }
 
@@ -448,29 +445,43 @@ mod tests {
         let Some(bible) = bible() else { return };
         // 2 Kings 18: Sennacherib's annals and the Lachish reliefs by passage;
         // Hezekiah's bulla by Hezekiah.
-        let found = bible.chapter_artifacts(11, 18).unwrap();
+        let found = bible.chapter_artifacts(11, 18..=18).unwrap();
         let keys: Vec<&str> = found.iter().map(|f| f.artifact.key.as_str()).collect();
         let at = |key: &str| keys.iter().position(|k| *k == key).unwrap();
         assert!(at("sennacherib-annals") < at("hezekiah-bulla"), "{keys:?}");
         let annals = &found[at("sennacherib-annals")];
-        assert_eq!(annals.verses.first(), Some(&13));
-        assert_eq!(annals.verses.last(), Some(&37), "{:?}", annals.verses);
+        assert_eq!(annals.verses.first(), Some(&(18, 13)));
+        assert_eq!(annals.verses.last(), Some(&(18, 37)), "{:?}", annals.verses);
         let bulla = &found[at("hezekiah-bulla")];
         assert!(bulla.verses.is_empty());
         assert!(bulla.people.iter().any(|p| p.name == "Hezekiah"));
         // A chapter no find bears on.
-        assert!(bible.chapter_artifacts(3, 1).unwrap().is_empty());
+        assert!(bible.chapter_artifacts(3, 1..=1).unwrap().is_empty());
         // The Isaiah scroll covers every verse of each chapter.
-        let isaiah_53 = bible.chapter_artifacts(12, 53).unwrap();
+        let isaiah_53 = bible.chapter_artifacts(12, 53..=53).unwrap();
         let scroll = isaiah_53
             .iter()
             .find(|f| f.artifact.key == "isaiah-scroll")
             .unwrap();
-        assert_eq!(scroll.verses, (1..=12).collect::<Vec<u8>>());
+        assert_eq!(scroll.verses, (1..=12).map(|v| (53, v)).collect::<Vec<_>>());
         // 1 Samuel 11 has the Samuel scroll's lost paragraph, at verse 1.
-        let samuel = bible.chapter_artifacts(9, 11).unwrap();
+        let samuel = bible.chapter_artifacts(9, 11..=11).unwrap();
         let scroll = samuel.iter().find(|f| f.artifact.key == "4qsam-a").unwrap();
-        assert!(scroll.verses.contains(&1), "{:?}", scroll.verses);
+        assert!(scroll.verses.contains(&(11, 1)), "{:?}", scroll.verses);
+        // Over 2 Kings 18–19 the annals run on past the end of 18.
+        let both = bible.chapter_artifacts(11, 18..=19).unwrap();
+        let annals = both
+            .iter()
+            .find(|f| f.artifact.key == "sennacherib-annals")
+            .unwrap();
+        assert_eq!(annals.verses.first(), Some(&(18, 13)));
+        assert!(annals.verses.contains(&(18, 37)), "{:?}", annals.verses);
+        assert!(
+            annals.verses.iter().any(|v| v.0 == 19),
+            "{:?}",
+            annals.verses
+        );
+        assert!(annals.verses.windows(2).all(|w| w[0] < w[1]));
     }
 
     #[test]
@@ -522,7 +533,7 @@ mod tests {
         let Some(bible) = bible() else { return };
         // Joshua 10 names Jerusalem and Lachish, which the Amarna letters
         // name, but no one they name, and no passage of theirs is in it.
-        let found = bible.chapter_artifacts(6, 10).unwrap();
+        let found = bible.chapter_artifacts(6, 10..=10).unwrap();
         assert!(
             !found
                 .iter()
@@ -531,7 +542,7 @@ mod tests {
             found.iter().map(|f| &f.artifact.key).collect::<Vec<_>>()
         );
         // Mark 6 names Herod Antipas, so Josephus on John the Baptist is there.
-        let mark_6 = bible.chapter_artifacts(41, 6).unwrap();
+        let mark_6 = bible.chapter_artifacts(41, 6..=6).unwrap();
         let john = mark_6
             .iter()
             .find(|f| f.artifact.key == "josephus-john-the-baptist")

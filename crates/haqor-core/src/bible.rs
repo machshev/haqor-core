@@ -5,6 +5,7 @@ use rusqlite::{Connection, OpenFlags, OptionalExtension};
 use rust_embed::Embed;
 use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
+use std::ops::RangeInclusive;
 use std::path::Path;
 
 #[derive(Debug)]
@@ -2775,6 +2776,19 @@ pub(crate) fn pack_ref(book: u8, chapter: u8, verse: u8) -> i64 {
 /// `(ref, position)` primary key.
 pub(crate) fn chapter_range(book: u8, chapter: u8) -> (i64, i64) {
     (pack_ref(book, chapter, 0), pack_ref(book, chapter, 255))
+}
+
+/// The first and last packed reference of a run of chapters of one book.
+pub(crate) fn chapters_range(book: u8, chapters: &RangeInclusive<u8>) -> (i64, i64) {
+    (
+        pack_ref(book, *chapters.start(), 0),
+        pack_ref(book, *chapters.end(), 255),
+    )
+}
+
+/// The `(chapter, verse)` of a packed verse reference.
+pub(crate) fn ref_chapter_verse(reference: i64) -> (u8, u8) {
+    (((reference >> 8) & 0xff) as u8, (reference & 0xff) as u8)
 }
 
 pub(crate) fn ref_verse(reference: i64) -> u8 {
@@ -6093,35 +6107,67 @@ impl Bible {
         .collect()
     }
 
-    /// The places a chapter names that have a position, each with its
-    /// likeliest location and the verses naming it, in the order the chapter
-    /// first names them: what a map of the chapter shows.
+    /// Who and what a run of chapters of one book names, in order, as
+    /// `((chapter, verse), id)`: the Old Testament word by word, the New
+    /// Testament verse by verse (as [`Bible::name_verses`] gives them).
+    pub fn chapters_named(
+        &self,
+        book: u8,
+        chapters: RangeInclusive<u8>,
+    ) -> rusqlite::Result<Vec<((u8, u8), u32)>> {
+        let (first, last) = chapters_range(book, &chapters);
+        let mut named = Vec::new();
+        for (table, order) in [
+            ("word_name", "ref, position"),
+            ("name_verse", "ref, entity_id"),
+        ] {
+            if !self.has_table(table)? {
+                continue;
+            }
+            let mut stmt = self.db.prepare_cached(&format!(
+                "SELECT ref, entity_id FROM data.{table} \
+                 WHERE ref BETWEEN ?1 AND ?2 ORDER BY {order}"
+            ))?;
+            for row in stmt.query_map([first, last], |row| {
+                Ok((ref_chapter_verse(row.get(0)?), row.get(1)?))
+            })? {
+                named.push(row?);
+            }
+        }
+        Ok(named)
+    }
+
+    /// The places a run of chapters of one book names that have a position,
+    /// each with its likeliest location and the verses naming it, in the
+    /// order they are first named: what a map of the chapters shows.
     pub fn chapter_places(
         &self,
         book: u8,
-        chapter: u8,
+        chapters: RangeInclusive<u8>,
     ) -> rusqlite::Result<Vec<crate::names::ChapterPlace>> {
         let mut places: Vec<crate::names::ChapterPlace> = Vec::new();
-        // The Old Testament's naming words, or the New Testament's verses.
-        let named = self
-            .chapter_names(book, chapter)?
-            .into_iter()
-            .map(|(verse, _, id)| (verse, id))
-            .chain(self.chapter_name_verses(book, chapter)?);
-        for (verse, id) in named {
+        // Names already found to be no place with a position.
+        let mut others = HashSet::new();
+        for (verse, id) in self.chapters_named(book, chapters)? {
             if let Some(place) = places.iter_mut().find(|p| p.place.id == id) {
                 if place.verses.last() != Some(&verse) {
                     place.verses.push(verse);
                 }
                 continue;
             }
-            let Some(summary) = self.name_summary(id)? else {
-                continue;
-            };
-            if summary.kind != crate::names::NameKind::Place {
+            if others.contains(&id) {
                 continue;
             }
-            let Some(location) = self.name_locations(id)?.into_iter().next() else {
+            let found = match self.name_summary(id)? {
+                Some(summary) if summary.kind == crate::names::NameKind::Place => self
+                    .name_locations(id)?
+                    .into_iter()
+                    .next()
+                    .map(|location| (summary, location)),
+                _ => None,
+            };
+            let Some((summary, location)) = found else {
+                others.insert(id);
                 continue;
             };
             places.push(crate::names::ChapterPlace {
@@ -7285,10 +7331,10 @@ mod tests {
         }));
 
         // Ruth 1 names Bethlehem of Judah, south of Jerusalem.
-        let places = bible.chapter_places(31, 1).unwrap();
+        let places = bible.chapter_places(31, 1..=1).unwrap();
         let bethlehem = places.iter().find(|p| p.place.name == "Bethlehem").unwrap();
         assert!((31.6..31.8).contains(&bethlehem.location.latitude));
-        assert_eq!(bethlehem.verses.first(), Some(&1));
+        assert_eq!(bethlehem.verses.first(), Some(&(1, 1)));
 
         // The New Testament names Bethlehem too, though not word by word:
         // Matthew 2 at its first verse, and on the chapter's map.
@@ -7301,10 +7347,23 @@ mod tests {
         assert!(verses.contains(&matthew_2_1), "{verses:?}");
         let key = |v: &VerseRef| (v.book, v.chapter, v.verse);
         assert!(verses.windows(2).all(|w| key(&w[0]) < key(&w[1])));
-        let places = bible.chapter_places(40, 2).unwrap();
+        let places = bible.chapter_places(40, 2..=2).unwrap();
         let bethlehem = places.iter().find(|p| p.place.name == "Bethlehem").unwrap();
-        assert_eq!(bethlehem.verses.first(), Some(&1));
+        assert_eq!(bethlehem.verses.first(), Some(&(2, 1)));
         assert!(places.iter().any(|p| p.place.name == "Jerusalem"));
+
+        // The whole of Ruth: Bethlehem from its first chapter to its last.
+        let ruth = bible.chapter_places(31, 1..=4).unwrap();
+        let bethlehem = ruth.iter().find(|p| p.place.name == "Bethlehem").unwrap();
+        assert_eq!(bethlehem.verses.first(), Some(&(1, 1)));
+        assert!(
+            bethlehem.verses.iter().any(|v| v.0 == 4),
+            "{:?}",
+            bethlehem.verses
+        );
+        assert!(bethlehem.verses.windows(2).all(|w| w[0] < w[1]));
+        let named = bible.chapters_named(31, 1..=4).unwrap();
+        assert!(named.windows(2).all(|w| w[0].0 <= w[1].0));
 
         // שָׁכַב in 2 Kings 14:29 is "lie down" as "be dead", one of its
         // senses.
