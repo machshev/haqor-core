@@ -58,6 +58,10 @@ pub mod transliterate;
 /// Spaced-repetition reading tutor.
 pub mod tutor;
 
+/// Finding the Bible's words by what a reader types, in any of its languages
+/// or in English.
+pub mod word_search;
+
 /// Curated learner glosses for high-frequency surfaces.
 pub mod vocab_gloss;
 

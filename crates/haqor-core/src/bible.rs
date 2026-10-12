@@ -1014,7 +1014,7 @@ fn decode_state(k: i64) -> Option<String> {
 /// classes (substantive, denominative, the participial adjective, the
 /// adjective of place) are the Hebrew noun and adjective; the numeral and the
 /// idiom, which the Hebrew tagging has no class for, keep their own.
-fn decode_category(k: i64) -> Option<&'static str> {
+pub(crate) fn decode_category(k: i64) -> Option<&'static str> {
     Some(match k {
         0 => "Verb",
         2..=4 => "Noun",
@@ -2953,7 +2953,7 @@ fn blob_error(message: String) -> rusqlite::Error {
 ///
 /// Membership comes from `entry_root` throughout, so a compound name is reached
 /// by every root it is made of, not only the section BDB prints it in.
-const LEXICON_ROOT_SURFACES: &str = "SELECT se.surface_id FROM data.surface_entry se \
+pub(crate) const LEXICON_ROOT_SURFACES: &str = "SELECT se.surface_id FROM data.surface_entry se \
      JOIN entry_root er ON er.key = se.key AND er.root = ?1 \
      UNION \
      SELECT rs.surface_id FROM data.root_surface rs \
@@ -4904,7 +4904,7 @@ impl Bible {
     /// The SQL for a SEDRA lexeme's grammatical category, on the lexeme table
     /// aliased `alias`: its `category` column, or NULL on a database that
     /// predates it.
-    fn sedra_category_column(&self, alias: &str) -> rusqlite::Result<String> {
+    pub(crate) fn sedra_category_column(&self, alias: &str) -> rusqlite::Result<String> {
         let has: bool = self.db.query_row(
             "SELECT EXISTS(SELECT 1 FROM pragma_table_info('syriac_lexeme', 'data') \
              WHERE name = 'category')",
@@ -6579,7 +6579,7 @@ impl Bible {
 
     /// Whether this `haqor.db` has the table `name`: an older build lacks the
     /// ones added since.
-    fn has_table(&self, name: &str) -> rusqlite::Result<bool> {
+    pub(crate) fn has_table(&self, name: &str) -> rusqlite::Result<bool> {
         self.db.query_row(
             "SELECT EXISTS(SELECT 1 FROM data.sqlite_master WHERE type = 'table' AND name = ?1)",
             [name],
