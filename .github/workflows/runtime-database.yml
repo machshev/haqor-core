@@ -1,0 +1,152 @@
+name: Runtime database
+
+on:
+  workflow_call:
+    inputs:
+      core-sha:
+        required: true
+        type: string
+      blob-codec:
+        required: false
+        default: zstd
+        type: string
+      upload-release:
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: runtime-db-${{ inputs.core-sha }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    name: Runtime database
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.core-sha }}
+          submodules: recursive
+
+      - name: Verify checkout identity
+        run: test "$(git rev-parse HEAD)" = "${{ inputs.core-sha }}"
+
+      # cache-nix-action v6 expects the single-user store created by this
+      # installer; the daemon installer leaves restores unreadable.
+      - uses: nixbuild/nix-quick-install-action@v30
+        with:
+          github_access_token: ${{ github.token }}
+          nix_conf: |
+            keep-env-derivations = true
+            keep-outputs = true
+
+      - name: Cache Nix store
+        uses: nix-community/cache-nix-action@v6
+        with:
+          primary-key: nix-dbgen-v2-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock') }}
+          restore-prefixes-first-match: nix-dbgen-v2-${{ runner.os }}-
+
+      - name: Cache generated databases
+        id: database-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/bible.db
+            data/lexicon.db
+            data/hebrew.db
+            data/sedra.db
+            data/haqor.db
+          key: runtime-db-v1-${{ inputs.blob-codec }}-${{ inputs.core-sha }}
+
+      - name: Cache cargo build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: cargo-dbgen-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+
+      - name: Add swap space
+        if: steps.database-cache.outputs.cache-hit != 'true'
+        run: |
+          sudo fallocate -l 16G /mnt/swapfile-dbgen
+          sudo chmod 600 /mnt/swapfile-dbgen
+          sudo mkswap /mnt/swapfile-dbgen
+          sudo swapon /mnt/swapfile-dbgen
+
+      - name: Generate the databases
+        if: steps.database-cache.outputs.cache-hit != 'true'
+        env:
+          RUST_LOG: info
+          BLOB_CODEC: ${{ inputs.blob-codec }}
+        run: |
+          nix develop --command bash -c '
+            set -euo pipefail
+            cargo run --release -p haqor-cli -- db gen-bible
+            cargo run --release -p haqor-cli -- db gen-lexicon
+            cargo run --release -p haqor-cli -- db gen-hebrew --force
+            cargo run --release -p haqor-cli -- db gen-sedra
+            cargo run --release -p haqor-cli -- db gen-runtime --blob-codec "$BLOB_CODEC"
+          '
+
+      - name: Check differential and name-root data
+        env:
+          HAQOR_REQUIRE_DATA: "1"
+        run: nix develop --command cargo test -p haqor-db-gen --test runtime_db --test name_roots
+
+      - name: Verify shipping database invariants
+        env:
+          EXPECTED_CODEC: ${{ inputs.blob-codec }}
+        run: |
+          set -euo pipefail
+          query() { sqlite3 data/haqor.db "$1"; }
+          test "$(query "SELECT value FROM meta WHERE key = 'blob_codec';")" = "$EXPECTED_CODEC"
+          if [[ "$EXPECTED_CODEC" == zstd ]]; then test "$(query "SELECT count(*) FROM blob_dict;")" -eq 3; fi
+          test "$(query "SELECT count(*) FROM verse;")" -eq 31171
+          test "$(query "SELECT count(*) FROM word;")" -gt 300000
+          test "$(query "SELECT count(*) FROM word_info;")" -gt 50000
+          test "$(query "SELECT count(*) FROM syntax_tree;")" -eq 23213
+          test "$(query "SELECT count(*) FROM translation_verse;")" -gt 23150
+          test "$(query "SELECT count(*) FROM word WHERE gloss_id IS NOT NULL;")" -gt 250000
+          unresolved="$(query "SELECT count(*) FROM word WHERE info_id IS NULL;")"
+          test "$unresolved" -lt 300
+          plain="$(query "SELECT count(*) FROM word w WHERE w.info_id IS NULL AND NOT EXISTS(SELECT 1 FROM ketiv k WHERE k.ref = w.ref AND k.position = w.position);")"
+          test "$plain" -lt 20
+
+      - name: Read compressed database through the CLI
+        run: |
+          verse="$(nix develop --command bash -c 'cargo run --release --quiet -p haqor-cli -- get 1 1 1')"
+          test -n "$verse"
+          size="$(du -h data/haqor.db | cut -f1)"
+          echo "haqor.db (${{ inputs.blob-codec }}): $size" >> "$GITHUB_STEP_SUMMARY"
+          echo "Genesis 1:1: $verse" >> "$GITHUB_STEP_SUMMARY"
+          sqlite3 data/haqor.db "SELECT key || ' = ' || value FROM meta;" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Test release asset packaging
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 scripts/test_package_runtime_db.py -v
+
+      - name: Package release database
+        if: inputs.upload-release
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python3 scripts/package_runtime_db.py data/haqor.db dist \
+            --core-ref "v$(sed -nE 's/^version = "([0-9.]+)"/\1/p' Cargo.toml | head -1)" \
+            --core-sha "${{ inputs.core-sha }}" \
+            --blob-codec "${{ inputs.blob-codec }}"
+
+      - name: Upload release database assets
+        if: inputs.upload-release
+        uses: actions/upload-artifact@v4
+        with:
+          name: core-runtime-database
+          path: dist/*
+          if-no-files-found: error

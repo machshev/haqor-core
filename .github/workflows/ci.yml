@@ -97,7 +97,7 @@ jobs:
 
           # Root manifests and toolchain/CI configuration can affect every
           # package. Run the complete matrix whenever any of them changes.
-          if grep -Eq '^(Cargo\.(toml|lock)|\.cargo/|rust-toolchain|\.github/workflows/ci\.yml$)' <<<"$changed_files"; then
+          if grep -Eq '^(Cargo\.(toml|lock)|\.cargo/|rust-toolchain|\.github/workflows/|scripts/(package_runtime_db|test_package_runtime_db)\.py$)' <<<"$changed_files"; then
             selected=("${crates[@]}")
           else
             for crate in "${crates[@]}"; do
@@ -149,107 +149,12 @@ jobs:
   runtime_db:
     name: Runtime database
     needs: changed_crates
-    # The differential tests are the only thing standing behind gen-runtime's
-    # precomputed word info, and they need the generation databases — an hour
-    # of work, so this runs only when the data pipeline or the resolution it
-    # copies could have changed.
     if: >
       contains(needs.changed_crates.outputs.matrix, 'haqor-db-gen') ||
       contains(needs.changed_crates.outputs.matrix, 'haqor-core') ||
       contains(needs.changed_crates.outputs.matrix, 'haqor-morphology')
-    runs-on: ubuntu-latest
-    timeout-minutes: 120
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: recursive
-
-      # cache-nix-action v6 expects the single-user store created by this
-      # installer; the previous daemon installer left restores unreadable.
-      - uses: nixbuild/nix-quick-install-action@v30
-        with:
-          github_access_token: ${{ github.token }}
-          nix_conf: |
-            keep-env-derivations = true
-            keep-outputs = true
-
-      - name: Cache Nix store
-        uses: nix-community/cache-nix-action@v6
-        with:
-          # v2 starts a fresh namespace so broken daemon-store archives are
-          # never selected for restore; the key follows the flake inputs only.
-          primary-key: nix-dbgen-v2-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock') }}
-          restore-prefixes-first-match: nix-dbgen-v2-${{ runner.os }}-
-
-      - name: Cache cargo build
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-          key: cargo-dbgen-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
-
-      - name: Add swap space
-        # gen-hebrew's reverse-parse index peaks at ~19 GB RSS (measured), just
-        # over the 16 GB on standard runners — without extra swap the VM's OOM
-        # killer takes down the runner agent. /mnt is the large ephemeral disk.
-        run: |
-          sudo fallocate -l 16G /mnt/swapfile-dbgen
-          sudo chmod 600 /mnt/swapfile-dbgen
-          sudo mkswap /mnt/swapfile-dbgen
-          sudo swapon /mnt/swapfile-dbgen
-          free -h
-
-      - name: Generate the databases
-        env:
-          RUST_LOG: info
-        # `cargo run` from the checkout, not the nix-built binary: gen-lexicon
-        # locates data/lexicon_overrides.json through a compile-time
-        # CARGO_MANIFEST_DIR path, which in a `nix build` binary points at the
-        # vanished build sandbox. The external datasets are vendored, prepared,
-        # in src_texts, so nothing is downloaded.
-        run: |
-          nix develop --command bash -c '
-            set -euo pipefail
-            cargo run --release -p haqor-cli -- db gen-bible
-            cargo run --release -p haqor-cli -- db gen-lexicon
-            cargo run --release -p haqor-cli -- db gen-hebrew --force
-            cargo run --release -p haqor-cli -- db gen-sedra
-            cargo run --release -p haqor-cli -- db gen-runtime
-          '
-
-      - name: Check the precomputed data against live resolution
-        # HAQOR_REQUIRE_DATA turns the "no databases, skipping" path into a
-        # failure: a green run that quietly tested nothing is the failure mode
-        # worth guarding against here.
-        env:
-          HAQOR_REQUIRE_DATA: "1"
-        # `name_roots` runs here too: it reads the built `haqor.db` — which is
-        # why the step above generates it, rather than leaving it to the size
-        # report below — since in the matrix job it can only skip, and a guard
-        # that never runs guards nothing.
-        run: >
-          nix develop --command
-          cargo test -p haqor-db-gen --test runtime_db --test name_roots
-
-      - name: Build and read back the shipping form
-        # Releases ship `--blob-codec zstd` while every local build and test
-        # defaults to `none`, so the compressed read path used to reach an app
-        # release without anything having read a compressed blob — and one
-        # shipped that could not decode a single verse. Read the compressed
-        # database back through the CLI, which is the same `Bible` the app
-        # opens, before reporting on it.
-        run: |
-          set -euo pipefail
-          nix develop --command bash -c \
-            'cargo run --release -p haqor-cli -- db gen-runtime --blob-codec zstd'
-          verse="$(nix develop --command bash -c \
-            'cargo run --release --quiet -p haqor-cli -- get 1 1 1')"
-          test -n "$verse" || { echo "::error::Genesis 1:1 read back empty"; exit 1; }
-          echo "Genesis 1:1 from the compressed build: $verse"
-          size="$(du -h data/haqor.db | cut -f1)"
-          echo "haqor.db (zstd): $size" >> "$GITHUB_STEP_SUMMARY"
-          echo "Genesis 1:1: $verse" >> "$GITHUB_STEP_SUMMARY"
-          sqlite3 data/haqor.db "SELECT key || ' = ' || value FROM meta;" \
-            >> "$GITHUB_STEP_SUMMARY"
+    uses: ./.github/workflows/runtime-database.yml
+    with:
+      core-sha: ${{ github.sha }}
+      blob-codec: zstd
+      upload-release: false

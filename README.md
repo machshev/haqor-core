@@ -103,6 +103,10 @@ is the default because it keeps verse text and lexicon entries readable with
 `sqlite3`; shipped builds use `zstd`, whose trained dictionary travels inside
 the database. See [ADR 6](doc/adr/0006-single-runtime-database.md).
 
+Tagged releases publish the validated zstd runtime database with a SHA-256
+checksum and a manifest binding it to the exact core commit. The app consumes
+that asset when available and retains generation fallback for older tags.
+
 `gen-runtime` is a prerequisite for everything that reads data: the CLI, the
 tests that need a corpus, and the app all open `haqor.db`. Regenerate it
 whenever an earlier stage changes, or they keep reading the previous build.
