@@ -416,7 +416,7 @@ fn create_indexes_and_views(db: &Connection) -> Result<()> {
          CREATE INDEX idx_analyses_root ON analyses(root);
          CREATE INDEX idx_noun_analyses_surface ON noun_analyses(surface_id);
          CREATE INDEX idx_oshb_primary_surface ON oshb_primary(surface_id);
-         CREATE INDEX idx_verse_word_ref ON verse_word(book, chapter, verse);
+         CREATE INDEX IF NOT EXISTS idx_verse_word_ref ON verse_word(book, chapter, verse);
          CREATE INDEX idx_verse_word_surface ON verse_word(surface_id);
 
          CREATE VIEW review_missing AS
@@ -600,6 +600,20 @@ fn ensure_reader_gloss_schema(db: &Connection) -> Result<()> {
     Ok(())
 }
 
+/// Ensure reader-gloss updates can locate a verse's words without scanning
+/// the complete `verse_word` table. This is called before both initial gloss
+/// population and refreshes of an existing database. The final index pass
+/// also uses `IF NOT EXISTS`, so the early creation is harmless on a fresh
+/// build and covers databases produced before this index was added.
+fn ensure_verse_word_ref_index(db: &Connection) -> Result<()> {
+    db.execute(
+        "CREATE INDEX IF NOT EXISTS idx_verse_word_ref
+         ON verse_word(book, chapter, verse)",
+        [],
+    )?;
+    Ok(())
+}
+
 fn populate_reader_glosses(
     db: &Connection,
     tahot_dir: &Path,
@@ -607,6 +621,7 @@ fn populate_reader_glosses(
     occurrences: &[Occurrence],
 ) -> Result<usize> {
     ensure_reader_gloss_schema(db)?;
+    ensure_verse_word_ref_index(db)?;
     let aligned = crate::stepbible::align_glosses(tahot_dir, surfaces, occurrences)?;
     let exact = aligned.iter().filter(|gloss| gloss.exact_surface).count();
     let nonempty = aligned
@@ -1936,6 +1951,105 @@ mod verse_stats_tests {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn reader_gloss_lookup_index_is_created_before_updates() -> Result<()> {
+        let db = Connection::open_in_memory()?;
+        create_schema(&db)?;
+        db.execute_batch(
+            "INSERT INTO verse_word(book, chapter, verse, position, surface_id,
+                                    reader_gloss, reader_gloss_source)
+             VALUES (1, 1, 1, 0, 0, 'old', 'stepbible-tahot');
+             INSERT INTO verse_word(book, chapter, verse, position, surface_id)
+             VALUES (1, 1, 1, 1, 1), (1, 1, 2, 0, 0);
+             INSERT INTO verse_word(book, chapter, verse, position, surface_id,
+                                    reader_gloss, reader_gloss_source)
+             VALUES (2, 1, 1, 0, 0, 'existing', 'other'),
+                    (2, 1, 2, 0, 0, 'other', 'other');",
+        )?;
+
+        let dir =
+            std::env::temp_dir().join(format!("haqor-db-gen-reader-gloss-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir(&dir)?;
+        std::fs::write(
+            dir.join("tahot.tsv"),
+            "Gen.1.1#01=L\tאָב\tfirst\t\t\nGen.1.1#02=L\tבֵּן\tsecond\t\t\n",
+        )?;
+        let surfaces = vec!["אָב".to_string(), "בֵּן".to_string()];
+        let occurrences = vec![
+            Occurrence {
+                surface_id: 0,
+                book: 1,
+                chapter: 1,
+                verse: 1,
+            },
+            Occurrence {
+                surface_id: 1,
+                book: 1,
+                chapter: 1,
+                verse: 1,
+            },
+        ];
+
+        let written = populate_reader_glosses(&db, &dir, &surfaces, &occurrences)?;
+        assert_eq!(written, 2);
+        // Check the plan before the normal final index pass. This proves the
+        // update path itself created the lookup index early.
+        let plan: String = db.query_row(
+            "EXPLAIN QUERY PLAN
+             SELECT 1 FROM verse_word
+             WHERE book = 1 AND chapter = 1 AND verse = 1 AND position = 1",
+            [],
+            |row| row.get(3),
+        )?;
+        assert!(
+            plan.contains("idx_verse_word_ref"),
+            "reader-gloss lookup should use the early index: {plan}"
+        );
+
+        // The normal build calls this after gloss population. It must tolerate
+        // the index that was created early for the update loop.
+        create_indexes_and_views(&db)?;
+        std::fs::remove_dir_all(&dir)?;
+
+        let updated: Vec<(i64, String, String)> = db
+            .prepare(
+                "SELECT position, reader_gloss, reader_gloss_source FROM verse_word
+                 WHERE book = 1 AND chapter = 1 AND verse = 1 ORDER BY position",
+            )?
+            .query_map([], |row| Ok((row.get(0)?, row.get(1)?, row.get(2)?)))?
+            .collect::<rusqlite::Result<_>>()?;
+        assert_eq!(
+            updated,
+            vec![
+                (0, "first".to_string(), "stepbible-tahot".to_string()),
+                (1, "second".to_string(), "stepbible-tahot".to_string()),
+            ]
+        );
+        let untouched: String = db.query_row(
+            "SELECT reader_gloss FROM verse_word
+             WHERE book = 2 AND chapter = 1 AND verse = 1 AND position = 0",
+            [],
+            |row| row.get(0),
+        )?;
+        assert_eq!(untouched, "existing");
+        Ok(())
+    }
+
+    #[test]
+    fn reader_gloss_index_migration_is_idempotent() -> Result<()> {
+        let db = Connection::open_in_memory()?;
+        create_schema(&db)?;
+        db.execute(
+            "INSERT INTO verse_word(book, chapter, verse, position, surface_id)
+             VALUES (1, 1, 1, 0, 0)",
+            [],
+        )?;
+        ensure_verse_word_ref_index(&db)?;
+        create_indexes_and_views(&db)?;
+        Ok(())
+    }
 
     /// Every Old Testament abbreviation STEP Bible writes (TAHOT, TIPNR) names
     /// its book: an unknown one drops the book's words without a word said,
