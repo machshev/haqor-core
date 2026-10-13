@@ -33,6 +33,12 @@ jobs:
         # this job reads it. Kept in step with the same fetch in `ci.yml`.
         run: git submodule update --init --depth 1 src_texts/HebrewLexicon
       - uses: dtolnay/rust-toolchain@stable
+      - name: Cache Cargo build outputs
+        uses: Swatinem/rust-cache@v2
+        with:
+          shared-key: haqor-core-${{ matrix.crate }}
+          workspaces: . -> target
+          cache-bin: false
       - name: Build
         run: cargo build --package "${{ matrix.crate }}" --all-features
       - name: Test
