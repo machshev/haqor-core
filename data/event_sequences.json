@@ -1262,6 +1262,336 @@
           ]
         }
       }
+    },
+    {
+      "id": "birth-childhood",
+      "title": "Birth and childhood of Jesus",
+      "note": "The birth and childhood of Jesus, the Son of God, with the birth of John the Baptist. Matthew 1-2 and Luke 1-2 supply separate chains. No order is asserted between the visit of the wise men and the presentation in the temple. Luke summarises the return to Nazareth without relating the flight into Egypt; both accounts lead into the childhood in Nazareth. Dates on the overview are inherited from the source chronology, not supplied by these chains.",
+      "chains": [
+        {
+          "basis": "Luke 1:5-80",
+          "events": [
+            "John's birth predicted",
+            "The Annunciation",
+            "Mary Visits Elizabeth",
+            "Birth of John the Baptist"
+          ]
+        },
+        {
+          "basis": "Luke 1:26, 57; 2:1-52",
+          "events": [
+            "Birth of John the Baptist",
+            "Birth of Jesus",
+            "Jesus circumcised",
+            "Temple Presentation of Jesus",
+            "Joseph and Mary return to Nazareth",
+            "Childhood of Jesus",
+            "Jesus as a child in the Temple",
+            "Jesus Growing Up"
+          ]
+        },
+        {
+          "basis": "Matthew 1:18-25; 2:1-23",
+          "events": [
+            "Espousal of Mary",
+            "An Angel Speaks to Joseph in a Dream",
+            "Birth of Jesus",
+            "Wise Men Visit Herod",
+            "Wise Men Visit Jesus",
+            "Joseph and Mary Flee to Egypt",
+            "Herod slays male children",
+            "Joseph and Mary return from Egypt",
+            "Joseph and Mary return to Nazareth"
+          ]
+        },
+        {
+          "basis": "Luke 1:27: Mary already betrothed",
+          "events": [
+            "Espousal of Mary",
+            "The Annunciation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acts",
+      "title": "Acts of the apostles",
+      "note": "The gospel of the Kingdom of God and the name of Jesus Christ spreads from Jerusalem towards Rome (Acts 1:8; 8:12; 28:30-31). Ecclesia means the assembly of believers; the Holy Spirit is God's power, poured out to equip the apostles as witnesses (Acts 1:8; 2:17-18). The journeys open their own sequences. Chains follow connected narratives; Peter's work and the scattered brethren are not forced into the order of Paul's movements. The date of Galatians relative to the journeys and council is disputed, so its writing is left unordered here. Overview years are inherited from the source chronology.",
+      "chains": [
+        {
+          "basis": "Acts 1:1-8:3",
+          "events": [
+            "The Holy Spirit is promised",
+            "Jesus ascends to Heaven",
+            "Matthias replaces Judas",
+            "The Holy Spirit poured out at Pentecost",
+            "Peter preaches at Pentecost",
+            "The ecclesia grows",
+            "Lame man healed",
+            "Peter preaches in Solomon's Portico",
+            "Peter and John's Trial",
+            "Believers pray for boldness",
+            "Believers share all things",
+            "Ananias and Sapphira lie to God",
+            "Apostles work signs and wonders in Solomon's Portico",
+            "Apostles arrested, put on trial",
+            "Gamaliel advises the counsel and Apostles freed",
+            "Seven chosen to serve",
+            "Stephen is seized",
+            "Stephen addresses the council",
+            "Stephen is stoned",
+            "Saul persecutes the ecclesia"
+          ]
+        },
+        {
+          "basis": "Acts 8:4-40",
+          "events": [
+            "Saul persecutes the ecclesia",
+            "Philip preaches in Samaria",
+            "Conversion of Ethiopian Eunuch"
+          ]
+        },
+        {
+          "basis": "Acts 9:1-31",
+          "events": [
+            "Saul persecutes the ecclesia",
+            "Saul is converted",
+            "Saul proclaims Jesus"
+          ]
+        },
+        {
+          "basis": "Acts 9:32-11:18",
+          "events": [
+            "Peter heals Aeneas and Dorcas",
+            "Peter meets Cornelius",
+            "Peter preaches to gentiles in Caesarea",
+            "Peter defends Gentile salvation"
+          ]
+        },
+        {
+          "basis": "Acts 11:19-26: the scattered brethren",
+          "events": [
+            "Saul persecutes the ecclesia",
+            "Disciples first called Christians"
+          ]
+        },
+        {
+          "basis": "Acts 11:27-12:25; 13:1-3",
+          "events": [
+            "Disciples first called Christians",
+            "Herod kills James",
+            "Herod imprisons Peter",
+            "An angel rescues Peter from prison",
+            "Herod dies",
+            "First Missionary Journey"
+          ]
+        },
+        {
+          "basis": "Acts 13-15",
+          "events": [
+            "First Missionary Journey",
+            "Jerusalem Council",
+            "Second Missionary Journey"
+          ]
+        },
+        {
+          "basis": "Acts 18:22-23; 21:17-28:31",
+          "events": [
+            "Second Missionary Journey",
+            "Third Missionary Journey",
+            "Paul visits elders in Jerusalem",
+            "Paul arrested in the Temple",
+            "Paul gives his testimony",
+            "Paul goes before the Council",
+            "The conspiracy to kill Paul",
+            "Paul sent to Felix",
+            "Paul appeals to Caesar",
+            "Agrippa and Bernice meet Festus",
+            "Paul goes before Agrippa",
+            "Paul's Journey to Rome",
+            "Paul's First Roman imprisonment"
+          ]
+        },
+        {
+          "basis": "Galatians: date disputed",
+          "events": [
+            "Paul Writes Galatians"
+          ]
+        }
+      ],
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Grouped by the passages telling each episode.",
+          "groups": [
+            {
+              "title": "Witnesses in Jerusalem",
+              "events": [
+                "The Holy Spirit is promised",
+                "Jesus ascends to Heaven",
+                "Matthias replaces Judas",
+                "The Holy Spirit poured out at Pentecost",
+                "Peter preaches at Pentecost",
+                "The ecclesia grows",
+                "Lame man healed",
+                "Peter preaches in Solomon's Portico",
+                "Peter and John's Trial",
+                "Believers pray for boldness",
+                "Believers share all things",
+                "Ananias and Sapphira lie to God",
+                "Apostles work signs and wonders in Solomon's Portico",
+                "Apostles arrested, put on trial",
+                "Gamaliel advises the counsel and Apostles freed",
+                "Seven chosen to serve",
+                "Stephen is seized",
+                "Stephen addresses the council",
+                "Stephen is stoned",
+                "Saul persecutes the ecclesia"
+              ]
+            },
+            {
+              "title": "Samaria and the Gentiles",
+              "events": [
+                "Philip preaches in Samaria",
+                "Conversion of Ethiopian Eunuch",
+                "Saul is converted",
+                "Saul proclaims Jesus",
+                "Peter heals Aeneas and Dorcas",
+                "Peter meets Cornelius",
+                "Peter preaches to gentiles in Caesarea",
+                "Peter defends Gentile salvation",
+                "Disciples first called Christians"
+              ]
+            },
+            {
+              "title": "Herod and the first journey",
+              "events": [
+                "Herod kills James",
+                "Herod imprisons Peter",
+                "An angel rescues Peter from prison",
+                "Herod dies",
+                "First Missionary Journey"
+              ]
+            },
+            {
+              "title": "Council and further journeys",
+              "events": [
+                "Jerusalem Council",
+                "Second Missionary Journey",
+                "Third Missionary Journey"
+              ]
+            },
+            {
+              "title": "Paul a prisoner",
+              "events": [
+                "Paul visits elders in Jerusalem",
+                "Paul arrested in the Temple",
+                "Paul gives his testimony",
+                "Paul goes before the Council",
+                "The conspiracy to kill Paul",
+                "Paul sent to Felix",
+                "Paul appeals to Caesar",
+                "Agrippa and Bernice meet Festus",
+                "Paul goes before Agrippa",
+                "Paul's Journey to Rome",
+                "Paul's First Roman imprisonment"
+              ]
+            },
+            {
+              "title": "Letter to the Galatians",
+              "events": [
+                "Paul Writes Galatians"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paul-first-journey",
+      "title": "Paul’s first preaching journey",
+      "note": "Barnabas and Saul are sent out from Antioch; they preach and establish ecclesias, then return to report what God has done (Acts 13-14).",
+      "chains": [
+        {
+          "basis": "Acts 13:1-14:28",
+          "events": [
+            "First missionary journey begins",
+            "Barnabas and Saul go to Cyprus",
+            "Mission to Antioch in Pisidia",
+            "Mission to Iconium",
+            "Mission to Lystra and Derbe",
+            "Return to Antioch in Syria"
+          ]
+        }
+      ],
+      "expands": "First Missionary Journey"
+    },
+    {
+      "id": "paul-second-journey",
+      "title": "Paul’s second preaching journey",
+      "note": "Paul and Silas strengthen the ecclesias and carry the gospel into Macedonia and Achaia (Acts 15:36-18:22).",
+      "chains": [
+        {
+          "basis": "Acts 15:36-18:22",
+          "events": [
+            "Paul and Barnabas part ways",
+            "Second Missionary Journey begins",
+            "Timothy Joins Paul and Silas",
+            "Mission to Phrygia, Galatia and Asia",
+            "Call to Macedonia",
+            "Lydia's Conversion",
+            "Paul casts demon out of soothsayer",
+            "Paul and Silas imprisoned",
+            "Philippian jailer converted",
+            "Paul and Silas released",
+            "Uproar in Thessalonica",
+            "Mission to Berea",
+            "Paul preaches in Athens",
+            "Mission to Corinth, 1&2 Thess Written",
+            "Return from Second Missionary Journey"
+          ]
+        }
+      ],
+      "expands": "Second Missionary Journey"
+    },
+    {
+      "id": "paul-third-journey",
+      "title": "Paul’s third preaching journey",
+      "note": "Paul strengthens the disciples, teaches in Ephesus and returns through Macedonia and Greece towards Jerusalem (Acts 18:23-21:17). The narrative supplies the order rather than the inherited calendar dates.",
+      "chains": [
+        {
+          "basis": "Acts 18:23-21:17",
+          "events": [
+            "Third Missionary Journey Begins",
+            "Mission to Ephesus/1 Cor Written",
+            "Riot in Ephesus",
+            "Mission to Macedonia and Greece",
+            "Eutychus revived",
+            "Voyage to Miletus",
+            "Paul speaks to Ephesian Elders",
+            "Voyage from Miletus to Jerusalem"
+          ]
+        }
+      ],
+      "expands": "Third Missionary Journey"
+    },
+    {
+      "id": "paul-rome",
+      "title": "Paul’s journey to Rome",
+      "note": "Paul travels as a prisoner, survives the shipwreck and reaches Rome, where he bears witness to the hope of Israel (Acts 27:1-28:20).",
+      "chains": [
+        {
+          "basis": "Acts 27:1-28:16",
+          "events": [
+            "Journey to Rome begins",
+            "Paul is shipwrecked by a storm",
+            "Paul stays at Malta",
+            "Paul arrives at Rome"
+          ]
+        }
+      ],
+      "expands": "Paul's Journey to Rome"
     }
   ]
 }

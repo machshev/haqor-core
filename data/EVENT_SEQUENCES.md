@@ -77,3 +77,24 @@ Gospels' own order, an ordering rests on both; where it orders what they
 leave open, the ordering rests on it alone. An event the harmony places in a
 way the Gospels' chains contradict, or tells only in passing, is left out of
 its chain, and the sequence's `note` says so.
+
+## Birth and childhood; Acts
+
+`birth-childhood` keeps Matthew 1-2 and Luke 1-2 as separate chains, joining
+at shared events. It does not choose whether the wise men's visit preceded
+the presentation in the temple. Both accounts lead to the return to Nazareth.
+
+`acts` groups the witnesses in Jerusalem, the spread to Samaria and the
+Gentiles, Herod and the first journey, the council and further journeys,
+and Paul's imprisonment. Four sequences expand the existing journey events:
+Paul's first, second and third preaching journeys and his journey to Rome.
+Peter's narrative and the scattered brethren are separate branches; chapter
+order alone does not order these against all Paul's movements. The writing
+of Galatians remains an unordered member because its date is disputed.
+
+The notes use Christadelphian terminology: ecclesia for an assembly of
+believers, the Holy Spirit as God's power poured out on the witnesses, and
+the gospel of the Kingdom of God and the name of Jesus Christ. Event title
+changes belong in `event_overrides.json`, not in display-only aliases.
+The inherited chronology still supplies overview spans; the chains assert
+only the order supported by their named passages.

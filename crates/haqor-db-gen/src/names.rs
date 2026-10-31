@@ -960,6 +960,42 @@ mod tests {
         assert!(summary.name_verses > 4_500, "{summary:?}");
         assert!(summary.unplaced_verses < 50, "{summary:?}");
 
+        // The new sequences cover every childhood and Acts event exactly once.
+        let members = |first: i64, last: i64| -> i64 {
+            db.query_row(
+                "SELECT count(*) FROM event_sequence_member WHERE event_id BETWEEN ?1 AND ?2",
+                [first, last],
+                |row| row.get(0),
+            )
+            .unwrap()
+        };
+        assert_eq!(members(248, 265), 18);
+        assert_eq!(members(304, 385), 82);
+        let nested: i64 = db
+            .query_row(
+                "SELECT count(*) FROM event_sequence child
+             JOIN event_sequence_member member ON member.event_id = child.expands
+             JOIN event_sequence parent ON parent.seq_id = member.seq_id
+             WHERE parent.key = 'acts'",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+        assert_eq!(nested, 4);
+        let precedes = |before: i64, after: i64| -> bool {
+            db.query_row(
+                "WITH RECURSIVE later(id) AS (
+                   SELECT after_id FROM event_sequence_edge WHERE before_id = ?1
+                   UNION SELECT e.after_id FROM event_sequence_edge e JOIN later l ON e.before_id = l.id
+                 ) SELECT EXISTS(SELECT 1 FROM later WHERE id = ?2)",
+                [before, after], |row| row.get(0),
+            ).unwrap()
+        };
+        assert!(!precedes(256, 261) && !precedes(261, 256));
+        assert!(precedes(260, 262) && precedes(262, 264));
+        assert!(!precedes(327, 328) && !precedes(328, 327));
+        assert!(!precedes(347, 344) && !precedes(344, 347));
+
         // Lachish is pictured at Tel Lachish, its likeliest site.
         let lachish: (i64, i64) = db
             .query_row(
