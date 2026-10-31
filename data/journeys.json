@@ -167,6 +167,29 @@
       ]
     },
     {
+      "name": "The ark's wanderings",
+      "summary": "Taken by the Philistines at Ebenezer, the ark plagues Ashdod, Gath and Ekron; the kine bring it to Beth-shemesh, it rests twenty years at Kirjath-jearim, and David brings it up to the city of David.",
+      "stops": [
+        { "key": "Ebenezer@1Sa.4.1", "name": "Ebenezer", "ref": "1Sa.5.1" },
+        { "key": "Ashdod@Jos.11.22", "name": "Ashdod", "ref": "1Sa.5.1", "note": "Set in the house of Dagon, who falls before it." },
+        { "key": "Gath@Jos.11.22", "name": "Gath", "ref": "1Sa.5.8" },
+        { "key": "Ekron@Jos.13.3", "name": "Ekron", "ref": "1Sa.5.10" },
+        { "key": "Beth-shemesh@Jos.15.10", "name": "Beth-shemesh", "ref": "1Sa.6.12", "note": "The kine take the straight way, lowing as they go." },
+        { "key": "Kiriath-jearim@Jos.9.17", "name": "Kiriath-jearim", "ref": "1Sa.7.1", "label": "Kirjath-jearim", "note": "In the house of Abinadab, twenty years." },
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "1Ch.15.3", "label": "The city of David", "note": "David gathers all Israel to Jerusalem to bring up the ark (2 Samuel 6:12; 1 Chronicles 15:3)." }
+      ]
+    },
+    {
+      "name": "David flees from Absalom",
+      "summary": "Hearing that Absalom is made king in Hebron, David leaves Jerusalem over the brook Kidron, goes up by the ascent of mount Olivet weeping, is cursed by Shimei at Bahurim, and crosses Jordan to Mahanaim.",
+      "stops": [
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "2Sa.15.14" },
+        { "key": "Olives_Mount@2Sa.15.30", "name": "Olives Mount", "ref": "2Sa.15.30", "label": "The ascent of mount Olivet" },
+        { "key": "Bahurim@2Sa.3.16", "name": "Bahurim", "ref": "2Sa.16.5" },
+        { "key": "Mahanaim@Gen.32.2", "name": "Mahanaim", "ref": "2Sa.17.24" }
+      ]
+    },
+    {
       "name": "Elijah",
       "summary": "Elijah hides by the brook Cherith and at Zarephath through the drought, defeats the prophets of Baal on Carmel, runs before Ahab to Jezreel, and flees from Jezebel by Beersheba to Horeb, the mount of God.",
       "stops": [

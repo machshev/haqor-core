@@ -6335,6 +6335,16 @@
             "Judgeship of Eli",
             "Death of Eli, Ark Captured"
           ]
+        },
+        {
+          "basis": "1 Samuel 1-7: Samuel and the ark",
+          "events": [
+            "Judgeship of Eli",
+            "Samuel born and called at Shiloh",
+            "Death of Eli, Ark Captured",
+            "The ark among the Philistines",
+            "Samuel judges Israel at Mizpeh"
+          ]
         }
       ],
       "groupings": [
@@ -6371,7 +6381,10 @@
                 "Judgeship of Samson",
                 "Samson destroys the temple of Dagon",
                 "Judgeship of Eli",
-                "Death of Eli, Ark Captured"
+                "Death of Eli, Ark Captured",
+                "Samuel born and called at Shiloh",
+                "The ark among the Philistines",
+                "Samuel judges Israel at Mizpeh"
               ]
             }
           ]
@@ -6586,14 +6599,62 @@
           "places": [
             "Gaza@Gen.10.19"
           ]
+        },
+        "Samuel born and called at Shiloh": {
+          "kinds": [
+            "birth",
+            "calling"
+          ],
+          "places": [
+            {
+              "key": "Ramah@Jos.18.25",
+              "label": "Ramathaim-zophim (Ramah)"
+            },
+            "Shiloh@Jos.18.1"
+          ]
+        },
+        "The ark among the Philistines": {
+          "kinds": [
+            "judgement",
+            "sign"
+          ],
+          "places": [
+            "Ashdod@Jos.11.22",
+            "Gath@Jos.11.22",
+            "Ekron@Jos.13.3",
+            "Beth-shemesh@Jos.15.10",
+            {
+              "key": "Kiriath-jearim@Jos.9.17",
+              "label": "Kirjath-jearim"
+            }
+          ]
+        },
+        "Samuel judges Israel at Mizpeh": {
+          "kinds": [
+            "judgeship",
+            "covenant"
+          ],
+          "places": [
+            {
+              "key": "Mizpah@Jos.18.26",
+              "label": "Mizpeh"
+            },
+            "Bethel@Gen.12.8",
+            {
+              "key": "Gilgal@Deu.11.30",
+              "label": "Gilgal"
+            },
+            "Ramah@Jos.18.25"
+          ]
         }
       }
     }
+
 ,
     {
       "id": "united-kingdom",
       "title": "Saul, David and Solomon",
-      "note": "1 Samuel 9 through 1 Kings 11. Reign nodes mark the start of a reign, not its completion. Solomon begins to reign before David dies (1 Kings 1), so David’s death does not precede Solomon’s accession.",
+      "note": "1 Samuel 9 through 1 Kings 11. Reign nodes mark the start of a reign, not its completion. Solomon begins to reign before David dies (1 Kings 1), so David’s death does not precede Solomon’s accession. Each event is placed where the text puts it; David's flight, the ark's return and his flight from Absalom are journeys of the places map.",
       "chains": [
         {
           "basis": "1 Samuel 9-31; 2 Samuel 2; 1 Kings 1-2",
@@ -6614,6 +6675,42 @@
             "Construction of Solomon's Temple",
             "Death of Solomon"
           ]
+        },
+        {
+          "basis": "1 Samuel 9-31",
+          "events": [
+            "Saul anointed by Samuel",
+            "Saul made king at Mizpeh; Jabesh-gilead saved",
+            "Jonathan at Michmash",
+            "Saul rejected after Amalek",
+            "David anointed at Bethlehem",
+            "David Kills Goliath",
+            "David flees from Saul",
+            "David at Ziklag",
+            "Saul and the woman of Endor",
+            "Death of Saul"
+          ]
+        },
+        {
+          "basis": "2 Samuel; 1 Kings 1-2",
+          "events": [
+            "Death of Saul",
+            "David king in Hebron",
+            "David takes Jerusalem; the ark brought up",
+            "David and Bathsheba; Nathan's parable",
+            "Absalom's revolt",
+            "The threshing floor of Araunah",
+            "Solomon anointed at Gihon",
+            "Death of David"
+          ]
+        },
+        {
+          "basis": "1 Kings 3-6",
+          "events": [
+            "Reign of Solomon",
+            "Solomon's dream at Gibeon",
+            "Construction of Solomon's Temple"
+          ]
         }
       ],
       "expands": "United Kingdom",
@@ -6628,16 +6725,31 @@
               "events": [
                 "Birth of Saul",
                 "Reign of Saul",
+                "Saul anointed by Samuel",
+                "Saul made king at Mizpeh; Jabesh-gilead saved",
+                "Jonathan at Michmash",
+                "Saul rejected after Amalek",
+                "David anointed at Bethlehem",
                 "David Kills Goliath",
+                "David flees from Saul",
+                "David at Ziklag",
+                "Saul and the woman of Endor",
                 "Death of Saul",
-                "Reign of David"
+                "Reign of David",
+                "David king in Hebron",
+                "David takes Jerusalem; the ark brought up",
+                "David and Bathsheba; Nathan's parable",
+                "Absalom's revolt",
+                "The threshing floor of Araunah"
               ]
             },
             {
               "title": "Solomon and the temple",
               "events": [
+                "Solomon anointed at Gihon",
                 "Reign of Solomon",
                 "Death of David",
+                "Solomon's dream at Gibeon",
                 "Construction of Solomon's Temple",
                 "Death of Solomon"
               ]
@@ -6657,13 +6769,37 @@
           ]
         },
         "David Kills Goliath": {
+          "tracks": [
+            "David",
+            "Saul"
+          ],
           "kinds": [
             "conflict"
+          ],
+          "places": [
+            {
+              "key": "Elah_Valley@1Sa.17.2",
+              "label": "The valley of Elah"
+            }
           ]
         },
         "Death of Saul": {
+          "tracks": [
+            "Saul"
+          ],
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Gilboa_Mount@Jdg.7.3",
+              "label": "Mount Gilboa"
+            },
+            "Beth-shean@Jos.17.11",
+            {
+              "key": "Jabesh@Jdg.21.8",
+              "label": "Jabesh-gilead"
+            }
           ]
         },
         "Reign of David": {
@@ -6672,27 +6808,306 @@
           ]
         },
         "Death of David": {
+          "tracks": [
+            "David"
+          ],
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Zion, the city of David"
+            }
           ]
         },
         "Reign of Solomon": {
+          "tracks": [
+            "Solomon"
+          ],
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Jerusalem@Gen.14.18"
           ]
         },
         "Construction of Solomon's Temple": {
+          "tracks": [
+            "Solomon"
+          ],
           "kinds": [
             "covenant"
+          ],
+          "places": [
+            {
+              "key": "Moriah_Mount@Gen.22.2",
+              "label": "Mount Moriah: the temple"
+            }
           ]
         },
         "Death of Solomon": {
+          "tracks": [
+            "Solomon"
+          ],
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Saul anointed by Samuel": {
+          "tracks": [
+            "Saul"
+          ],
+          "kinds": [
+            "calling"
+          ],
+          "places": [
+            {
+              "key": "Ramah@Jos.18.25",
+              "label": "Samuel's city, in the land of Zuph"
+            },
+            {
+              "key": "Zelzah@1Sa.10.2",
+              "label": "Rachel's sepulchre, at Zelzah"
+            },
+            {
+              "key": "Gibeah@Jos.18.28",
+              "label": "The hill of God, Gibeah"
+            }
+          ]
+        },
+        "Saul made king at Mizpeh; Jabesh-gilead saved": {
+          "tracks": [
+            "Saul"
+          ],
+          "kinds": [
+            "calling",
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Mizpah@Jos.18.26",
+              "label": "Mizpeh"
+            },
+            {
+              "key": "Jabesh@Jdg.21.8",
+              "label": "Jabesh-gilead"
+            },
+            {
+              "key": "Gilgal@Deu.11.30",
+              "label": "Gilgal"
+            }
+          ]
+        },
+        "Jonathan at Michmash": {
+          "tracks": [
+            "Saul"
+          ],
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Gilgal@Deu.11.30",
+              "label": "Gilgal"
+            },
+            "Michmash@1Sa.13.2",
+            "Gibeah@Jos.18.28"
+          ]
+        },
+        "Saul rejected after Amalek": {
+          "tracks": [
+            "Saul"
+          ],
+          "kinds": [
+            "judgement"
+          ],
+          "places": [
+            "Carmel@Jos.12.22",
+            {
+              "key": "Gilgal@Deu.11.30",
+              "label": "Gilgal"
+            }
+          ]
+        },
+        "David anointed at Bethlehem": {
+          "tracks": [
+            "David"
+          ],
+          "kinds": [
+            "calling"
+          ],
+          "places": [
+            "Bethlehem@Gen.35.16"
+          ]
+        },
+        "David flees from Saul": {
+          "tracks": [
+            "David"
+          ],
+          "kinds": [
+            "journey",
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Naioth@1Sa.19.18",
+              "label": "Naioth in Ramah"
+            },
+            "Nob@1Sa.21.1",
+            "Gath@Jos.11.22",
+            {
+              "key": "Adullam@Gen.38.1",
+              "label": "The cave Adullam"
+            },
+            "Keilah@Jos.15.44",
+            {
+              "key": "Ziph@Jos.15.55",
+              "label": "The wilderness of Ziph"
+            },
+            {
+              "key": "Engedi@Gen.14.7",
+              "label": "En-gedi"
+            }
+          ]
+        },
+        "David at Ziklag": {
+          "tracks": [
+            "David"
+          ],
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            "Gath@Jos.11.22",
+            "Ziklag@Jos.15.31"
+          ]
+        },
+        "Saul and the woman of Endor": {
+          "tracks": [
+            "Saul"
+          ],
+          "kinds": [
+            "judgement"
+          ],
+          "places": [
+            {
+              "key": "En-dor@Jos.17.11",
+              "label": "Endor"
+            }
+          ]
+        },
+        "David king in Hebron": {
+          "tracks": [
+            "David"
+          ],
+          "kinds": [
+            "reign",
+            "covenant"
+          ],
+          "places": [
+            "Hebron@Gen.13.18"
+          ]
+        },
+        "David takes Jerusalem; the ark brought up": {
+          "tracks": [
+            "David"
+          ],
+          "kinds": [
+            "conflict",
+            "covenant"
+          ],
+          "places": [
+            {
+              "key": "Kiriath-jearim@Jos.9.17",
+              "label": "Baale of Judah (Kirjath-jearim)"
+            },
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Zion, the city of David"
+            }
+          ]
+        },
+        "David and Bathsheba; Nathan's parable": {
+          "tracks": [
+            "David"
+          ],
+          "kinds": [
+            "judgement",
+            "parable"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Zion, the city of David"
+            }
+          ]
+        },
+        "Absalom's revolt": {
+          "tracks": [
+            "David"
+          ],
+          "kinds": [
+            "conflict",
+            "journey"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Zion, the city of David"
+            },
+            {
+              "key": "Olives_Mount@2Sa.15.30",
+              "label": "The ascent of mount Olivet"
+            },
+            "Bahurim@2Sa.3.16",
+            "Mahanaim@Gen.32.2"
+          ]
+        },
+        "The threshing floor of Araunah": {
+          "tracks": [
+            "David"
+          ],
+          "kinds": [
+            "covenant",
+            "judgement"
+          ],
+          "places": [
+            {
+              "key": "Moriah_Mount@Gen.22.2",
+              "label": "The threshingfloor of Araunah, mount Moriah"
+            }
+          ]
+        },
+        "Solomon anointed at Gihon": {
+          "tracks": [
+            "Solomon"
+          ],
+          "kinds": [
+            "calling",
+            "reign"
+          ],
+          "places": [
+            "Gihon@Gen.2.13"
+          ]
+        },
+        "Solomon's dream at Gibeon": {
+          "tracks": [
+            "Solomon"
+          ],
+          "kinds": [
+            "revelation"
+          ],
+          "places": [
+            "Gibeon@Jos.9.3"
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "israel-kings",
       "title": "The kings of Israel",
