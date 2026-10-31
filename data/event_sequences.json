@@ -6291,7 +6291,7 @@
     {
       "id": "judges",
       "title": "The judges of Israel",
-      "note": "Judges 3-16 gives the succession of oppressions and deliverances. Jephthah’s successors and Samson are separate branches after the oppression by Ammon and Philistia: their years are not added into one chain. Eli’s judgeship and the capture of the ark are a separate account in 1 Samuel.",
+      "note": "Judges 3-16 gives the succession of oppressions and deliverances. Jephthah’s successors and Samson are separate branches after the oppression by Ammon and Philistia: their years are not added into one chain. Eli’s judgeship and the capture of the ark are a separate account in 1 Samuel. Each judge's events are placed where the text puts them.",
       "chains": [
         {
           "basis": "Judges 3-10: successive deliverances",
@@ -6381,6 +6381,12 @@
         "Judgeship of Jair": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            {
+              "key": "Kamon@Jdg.10.5",
+              "label": "Camon, in Gilead"
+            }
           ]
         },
         "Subjugation by Cushan-rishathaim": {
@@ -6396,21 +6402,56 @@
         "Subjugation by Eglon": {
           "kinds": [
             "conflict"
+          ],
+          "places": [
+            {
+              "key": "Jericho@Num.22.1",
+              "label": "The city of palm trees"
+            }
           ]
         },
         "Deliverance by Ehud": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            {
+              "key": "Jericho@Num.22.1",
+              "label": "The city of palm trees"
+            },
+            {
+              "key": "Seirah@Jdg.3.26",
+              "label": "Seirath"
+            }
           ]
         },
         "Subjugation by Jabin": {
           "kinds": [
             "conflict"
+          ],
+          "places": [
+            "Hazor@Jos.11.1",
+            "Harosheth-hagoyim@Jdg.4.2"
           ]
         },
         "Deliverance by Barak And Deborah": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            {
+              "key": "Ramah@Jos.18.25",
+              "label": "The palm tree of Deborah, between Ramah and Bethel"
+            },
+            "Kedesh@Jos.12.22",
+            {
+              "key": "Tabor_Mount@Jos.19.22",
+              "label": "Mount Tabor"
+            },
+            {
+              "key": "Kishon@Jdg.4.7",
+              "label": "The river Kishon"
+            }
           ]
         },
         "Subjugation by Midian": {
@@ -6421,36 +6462,73 @@
         "Deliverance by Gideon": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            "Ophrah@Jos.19.19",
+            {
+              "key": "Harod@Jdg.7.1",
+              "label": "The well of Harod"
+            },
+            {
+              "key": "Moreh@Jdg.7.1",
+              "label": "The hill of Moreh"
+            }
           ]
         },
         "Usurpation by Abimelech": {
           "kinds": [
             "conflict"
+          ],
+          "places": [
+            "Shechem@Gen.12.6",
+            "Thebez@Jdg.9.50"
           ]
         },
         "Judgeship of Tola": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            {
+              "key": "Shamir@Jdg.10.1",
+              "label": "Shamir, in mount Ephraim"
+            }
           ]
         },
         "Oppression by Ammon and Philistia": {
           "kinds": [
             "conflict"
+          ],
+          "places": [
+            "Gilead@Gen.31.21"
           ]
         },
         "Judgeship of Eli": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            "Shiloh@Jos.18.1"
           ]
         },
         "Deliverance by Jephthah": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            {
+              "key": "Gilead@Gen.31.21",
+              "label": "Mizpeh of Gilead"
+            },
+            "Minnith@Jdg.11.33"
           ]
         },
         "Judgeship of Ibzan": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            "Bethlehem@Gen.35.16"
           ]
         },
         "Philistine Dominion": {
@@ -6461,30 +6539,57 @@
         "Judgeship of Elon": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            "Aijalon@Jos.10.12"
           ]
         },
         "Judgeship of Abdon": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            "Pirathon@Jdg.12.13"
           ]
         },
         "Death of Eli, Ark Captured": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Ebenezer@1Sa.4.1",
+            {
+              "key": "Aphek@Jos.12.18",
+              "label": "Aphek"
+            },
+            "Shiloh@Jos.18.1"
           ]
         },
         "Judgeship of Samson": {
           "kinds": [
             "judgeship"
+          ],
+          "places": [
+            "Zorah@Jos.15.33",
+            {
+              "key": "Timnah@Gen.38.12",
+              "label": "Timnath"
+            },
+            "Lehi@Jdg.15.9",
+            "Gaza@Gen.10.19"
           ]
         },
         "Samson destroys the temple of Dagon": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Gaza@Gen.10.19"
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "united-kingdom",
       "title": "Saul, David and Solomon",
