@@ -295,6 +295,14 @@ fn tidy(s: &str) -> String {
     s.split_whitespace().collect::<Vec<_>>().join(" ")
 }
 
+/// Tidy a field of Strong's prose and write the divine name as
+/// [`crate::tsk::name_the_lord`] does: its KJV renderings ("Jehovah, the
+/// Lord", "GOD") and its etymologies ("Jehovah-given", "Jeho-vah") read
+/// "Yahweh".
+fn tidy_named(s: &str) -> String {
+    crate::tsk::name_the_lord(&tidy(s).replace("Jeho-vah", "Jehovah"))
+}
+
 /// Normalise the text of one definition span. The BDB XML is mixed content
 /// laid out across lines, so raw text nodes carry the source file's newlines
 /// and tab indentation between inline elements — which the app renders
@@ -583,10 +591,10 @@ fn load_strongs(db: &mut Connection, path: &Path) -> Result<usize> {
                                 ent.xlit,
                                 ent.pron,
                                 ent.pos,
-                                ent.gloss_parts.join("; "),
-                                tidy(&ent.meaning),
-                                tidy(&ent.usage),
-                                tidy(&ent.source),
+                                tidy_named(&ent.gloss_parts.join("; ")),
+                                tidy_named(&ent.meaning),
+                                tidy_named(&ent.usage),
+                                tidy_named(&ent.source),
                             ))?;
                             rows += 1;
                         }
@@ -1808,6 +1816,24 @@ pub fn generate_lexicon(src_texts: &Path, output: &Path) -> Result<usize> {
 mod tests {
     use super::*;
     use serde_json::json;
+
+    #[test]
+    fn strongs_prose_names_yahweh() {
+        assert_eq!(
+            tidy_named("Jehovah, the Lord.  Compare 3050"),
+            "Yahweh, the Lord. Compare 3050"
+        );
+        assert_eq!(
+            tidy_named("(the) self-Existent; Jeho-vah, Jewish national name"),
+            "(the) self-Existent; Yahweh, Jewish national name"
+        );
+        assert_eq!(
+            tidy_named("from 3068 and 5414; Jehovah-given;"),
+            "from 3068 and 5414; Yahweh-given;"
+        );
+        assert_eq!(tidy_named("Jehovahshammah."), "Yahweh-shammah.");
+        assert_eq!(tidy_named("GOD."), "Yahweh.");
+    }
 
     #[test]
     fn a_parsed_root_is_keyed_as_a_sin_or_a_shin() {
