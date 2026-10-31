@@ -138,10 +138,33 @@ pub const KINDS: &[&str] = &[
     "revelation",
     "feast",
     "john-baptist",
+    "preaching",
+    "testimony",
+    "baptism",
+    "ecclesia",
+    "birth",
+    "childhood",
+    "covenant",
+    "letter",
 ];
 
 /// The regions an event of a sequence may happen in.
-pub const REGIONS: &[&str] = &["north", "galilee", "east", "samaria", "perea", "judea"];
+pub const REGIONS: &[&str] = &[
+    "north",
+    "galilee",
+    "east",
+    "samaria",
+    "perea",
+    "judea",
+    "egypt",
+    "syria",
+    "cyprus",
+    "asia-minor",
+    "macedonia",
+    "achaia",
+    "malta",
+    "italy",
+];
 
 /// A sequence as the file gives it.
 struct Sequence {

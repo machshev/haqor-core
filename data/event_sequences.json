@@ -1266,7 +1266,7 @@
     {
       "id": "birth-childhood",
       "title": "Birth and childhood of Jesus",
-      "note": "The birth and childhood of Jesus, the Son of God, with the birth of John the Baptist. Matthew 1-2 and Luke 1-2 supply separate chains. No order is asserted between the visit of the wise men and the presentation in the temple. Luke summarises the return to Nazareth without relating the flight into Egypt; both accounts lead into the childhood in Nazareth. Dates on the overview are inherited from the source chronology, not supplied by these chains.",
+      "note": "The birth and childhood of Jesus, the Son of God, with the birth of John the Baptist. Matthew 1-2 and Luke 1-2 supply separate chains. No order is asserted between the visit of the wise men and the presentation in the temple. Luke summarises the return to Nazareth without relating the flight into Egypt; both accounts lead into the childhood in Nazareth. Dates on the overview are inherited from the source chronology, not supplied by these chains. Map pins mark places named in the account, not an exact travel route. Events spanning several regions have no single region lane; unnamed locations are left unpinned.",
       "chains": [
         {
           "basis": "Luke 1:5-80",
@@ -1311,12 +1311,219 @@
             "The Annunciation"
           ]
         }
+      ],
+      "events": {
+        "John's birth predicted": {
+          "kinds": [
+            "revelation",
+            "john-baptist"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Espousal of Mary": {
+          "kinds": [
+            "encounter"
+          ],
+          "region": "",
+          "places": []
+        },
+        "The Annunciation": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "galilee",
+          "places": [
+            "Nazareth@Mat.2.23"
+          ]
+        },
+        "Mary Visits Elizabeth": {
+          "kinds": [
+            "encounter",
+            "john-baptist"
+          ],
+          "region": "judea",
+          "places": []
+        },
+        "Birth of John the Baptist": {
+          "kinds": [
+            "birth",
+            "john-baptist"
+          ],
+          "region": "judea",
+          "places": []
+        },
+        "An Angel Speaks to Joseph in a Dream": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "",
+          "places": []
+        },
+        "Birth of Jesus": {
+          "kinds": [
+            "birth"
+          ],
+          "region": "judea",
+          "places": [
+            "Bethlehem@Gen.35.16"
+          ]
+        },
+        "Wise Men Visit Herod": {
+          "kinds": [
+            "encounter"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Wise Men Visit Jesus": {
+          "kinds": [
+            "encounter"
+          ],
+          "region": "judea",
+          "places": [
+            "Bethlehem@Gen.35.16"
+          ]
+        },
+        "Joseph and Mary Flee to Egypt": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "egypt",
+          "places": []
+        },
+        "Herod slays male children": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Bethlehem@Gen.35.16"
+          ]
+        },
+        "Jesus circumcised": {
+          "kinds": [
+            "covenant"
+          ],
+          "region": "judea",
+          "places": [
+            "Bethlehem@Gen.35.16"
+          ]
+        },
+        "Joseph and Mary return from Egypt": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "egypt",
+          "places": []
+        },
+        "Temple Presentation of Jesus": {
+          "kinds": [
+            "revelation",
+            "covenant"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Joseph and Mary return to Nazareth": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "galilee",
+          "places": [
+            "Nazareth@Mat.2.23"
+          ]
+        },
+        "Childhood of Jesus": {
+          "kinds": [
+            "childhood"
+          ],
+          "region": "galilee",
+          "places": [
+            "Nazareth@Mat.2.23"
+          ]
+        },
+        "Jesus as a child in the Temple": {
+          "kinds": [
+            "teaching",
+            "feast"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Jesus Growing Up": {
+          "kinds": [
+            "childhood"
+          ],
+          "region": "galilee",
+          "places": [
+            "Nazareth@Mat.2.23"
+          ]
+        }
+      },
+      "milestones": [
+        {
+          "event": "Jesus as a child in the Temple",
+          "feast": "pesach",
+          "label": "Passover",
+          "ref": "Luk.2.41"
+        }
+      ],
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Narrative episodes; groups do not assert an order between events that no chain joins.",
+          "groups": [
+            {
+              "title": "Announcements and John’s birth",
+              "events": [
+                "Espousal of Mary",
+                "John's birth predicted",
+                "The Annunciation",
+                "Mary Visits Elizabeth",
+                "Birth of John the Baptist",
+                "An Angel Speaks to Joseph in a Dream"
+              ]
+            },
+            {
+              "title": "Birth and infancy of Jesus",
+              "events": [
+                "Birth of Jesus",
+                "Jesus circumcised",
+                "Temple Presentation of Jesus",
+                "Wise Men Visit Herod",
+                "Wise Men Visit Jesus"
+              ]
+            },
+            {
+              "title": "Egypt and childhood in Nazareth",
+              "events": [
+                "Joseph and Mary Flee to Egypt",
+                "Herod slays male children",
+                "Joseph and Mary return from Egypt",
+                "Joseph and Mary return to Nazareth",
+                "Childhood of Jesus",
+                "Jesus as a child in the Temple",
+                "Jesus Growing Up"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
       "id": "acts",
       "title": "Acts of the apostles",
-      "note": "The gospel of the Kingdom of God and the name of Jesus Christ spreads from Jerusalem towards Rome (Acts 1:8; 8:12; 28:30-31). Ecclesia means the assembly of believers; the Holy Spirit is God's power, poured out to equip the apostles as witnesses (Acts 1:8; 2:17-18). The journeys open their own sequences. Chains follow connected narratives; Peter's work and the scattered brethren are not forced into the order of Paul's movements. The date of Galatians relative to the journeys and council is disputed, so its writing is left unordered here. Overview years are inherited from the source chronology.",
+      "note": "The gospel of the Kingdom of God and the name of Jesus Christ spreads from Jerusalem towards Rome (Acts 1:8; 8:12; 28:30-31). Ecclesia means the assembly of believers; the Holy Spirit is God's power, poured out to equip the apostles as witnesses (Acts 1:8; 2:17-18). The journeys open their own sequences. Chains follow connected narratives; Peter's work and the scattered brethren are not forced into the order of Paul's movements. The date of Galatians relative to the journeys and council is disputed, so its writing is left unordered here. Overview years are inherited from the source chronology. Map pins mark places named in the account, not an exact travel route. Events spanning several regions have no single region lane; unnamed locations are left unpinned.",
       "chains": [
         {
           "basis": "Acts 1:1-8:3",
@@ -1506,12 +1713,520 @@
             }
           ]
         }
+      ],
+      "events": {
+        "The Holy Spirit is promised": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "judea",
+          "places": []
+        },
+        "Jesus ascends to Heaven": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "judea",
+          "places": [
+            {
+              "key": "Olives_Mount@2Sa.15.30",
+              "label": "Mount of Olives"
+            }
+          ]
+        },
+        "Matthias replaces Judas": {
+          "kinds": [
+            "calling",
+            "ecclesia"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "The Holy Spirit poured out at Pentecost": {
+          "kinds": [
+            "revelation",
+            "feast"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Peter preaches at Pentecost": {
+          "kinds": [
+            "preaching",
+            "baptism"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "The ecclesia grows": {
+          "kinds": [
+            "ecclesia"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Lame man healed": {
+          "kinds": [
+            "healing"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Peter preaches in Solomon's Portico": {
+          "kinds": [
+            "preaching"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Peter and John's Trial": {
+          "kinds": [
+            "conflict",
+            "testimony"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Believers pray for boldness": {
+          "kinds": [
+            "ecclesia"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Believers share all things": {
+          "kinds": [
+            "ecclesia"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Ananias and Sapphira lie to God": {
+          "kinds": [
+            "conflict",
+            "ecclesia"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Apostles work signs and wonders in Solomon's Portico": {
+          "kinds": [
+            "healing",
+            "sign"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Apostles arrested, put on trial": {
+          "kinds": [
+            "conflict",
+            "testimony"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Gamaliel advises the counsel and Apostles freed": {
+          "kinds": [
+            "conflict",
+            "preaching"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Seven chosen to serve": {
+          "kinds": [
+            "calling",
+            "ecclesia"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Stephen is seized": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Stephen addresses the council": {
+          "kinds": [
+            "testimony"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Stephen is stoned": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Saul persecutes the ecclesia": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Philip preaches in Samaria": {
+          "kinds": [
+            "preaching",
+            "baptism",
+            "healing"
+          ],
+          "region": "samaria",
+          "places": []
+        },
+        "Conversion of Ethiopian Eunuch": {
+          "kinds": [
+            "preaching",
+            "baptism"
+          ],
+          "region": "judea",
+          "places": []
+        },
+        "Saul is converted": {
+          "kinds": [
+            "revelation",
+            "baptism"
+          ],
+          "region": "syria",
+          "places": [
+            "Damascus@Gen.14.15"
+          ]
+        },
+        "Saul proclaims Jesus": {
+          "kinds": [
+            "preaching"
+          ],
+          "region": "",
+          "places": [
+            "Damascus@Gen.14.15",
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Peter heals Aeneas and Dorcas": {
+          "kinds": [
+            "healing",
+            "raising"
+          ],
+          "region": "judea",
+          "places": [
+            {
+              "key": "Lod@1Ch.8.12",
+              "label": "Lydda"
+            },
+            "Joppa@Jos.19.46"
+          ]
+        },
+        "Peter meets Cornelius": {
+          "kinds": [
+            "encounter",
+            "revelation"
+          ],
+          "region": "judea",
+          "places": [
+            "Caesarea@Act.8.40",
+            "Joppa@Jos.19.46"
+          ]
+        },
+        "Peter preaches to gentiles in Caesarea": {
+          "kinds": [
+            "preaching",
+            "baptism"
+          ],
+          "region": "judea",
+          "places": [
+            "Caesarea@Act.8.40"
+          ]
+        },
+        "Peter defends Gentile salvation": {
+          "kinds": [
+            "testimony",
+            "ecclesia"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Disciples first called Christians": {
+          "kinds": [
+            "preaching",
+            "ecclesia"
+          ],
+          "region": "syria",
+          "places": [
+            {
+              "key": "Antioch@Act.6.5",
+              "label": "Antioch in Syria"
+            }
+          ]
+        },
+        "Herod kills James": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Herod imprisons Peter": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "An angel rescues Peter from prison": {
+          "kinds": [
+            "sign"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Herod dies": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Caesarea@Act.8.40"
+          ]
+        },
+        "First Missionary Journey": {
+          "kinds": [
+            "journey",
+            "preaching"
+          ],
+          "region": "",
+          "places": [
+            {
+              "key": "Antioch@Act.6.5",
+              "label": "Antioch in Syria"
+            },
+            "Salamis@Act.13.5",
+            "Paphos@Act.13.6",
+            {
+              "key": "Antioch@Act.13.14",
+              "label": "Antioch in Pisidia"
+            },
+            "Iconium@Act.13.51",
+            "Lystra@Act.14.6",
+            "Derbe@Act.14.6"
+          ]
+        },
+        "Jerusalem Council": {
+          "kinds": [
+            "ecclesia",
+            "teaching"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Second Missionary Journey": {
+          "kinds": [
+            "journey",
+            "preaching"
+          ],
+          "region": "",
+          "places": [
+            {
+              "key": "Antioch@Act.6.5",
+              "label": "Antioch in Syria"
+            },
+            "Philippi@Act.16.12",
+            "Thessalonica@Act.17.1",
+            "Berea@Act.17.10",
+            "Athens@Act.17.15",
+            "Corinth@Act.18.1"
+          ]
+        },
+        "Paul Writes Galatians": {
+          "kinds": [
+            "letter"
+          ],
+          "region": "",
+          "places": []
+        },
+        "Third Missionary Journey": {
+          "kinds": [
+            "journey",
+            "preaching"
+          ],
+          "region": "",
+          "places": [
+            "Ephesus@Act.18.19",
+            "Philippi@Act.16.12",
+            "Troas@Act.16.8",
+            "Miletus@Act.20.15",
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Paul visits elders in Jerusalem": {
+          "kinds": [
+            "ecclesia"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Paul arrested in the Temple": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Paul gives his testimony": {
+          "kinds": [
+            "testimony",
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Paul goes before the Council": {
+          "kinds": [
+            "testimony",
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "The conspiracy to kill Paul": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Paul sent to Felix": {
+          "kinds": [
+            "conflict",
+            "testimony"
+          ],
+          "region": "judea",
+          "places": [
+            "Caesarea@Act.8.40"
+          ]
+        },
+        "Paul appeals to Caesar": {
+          "kinds": [
+            "conflict",
+            "testimony"
+          ],
+          "region": "judea",
+          "places": [
+            "Caesarea@Act.8.40"
+          ]
+        },
+        "Agrippa and Bernice meet Festus": {
+          "kinds": [
+            "encounter"
+          ],
+          "region": "judea",
+          "places": [
+            "Caesarea@Act.8.40"
+          ]
+        },
+        "Paul goes before Agrippa": {
+          "kinds": [
+            "testimony"
+          ],
+          "region": "judea",
+          "places": [
+            "Caesarea@Act.8.40"
+          ]
+        },
+        "Paul's Journey to Rome": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "",
+          "places": [
+            "Caesarea@Act.8.40",
+            "Malta@Act.28.1",
+            "Rome@Jhn.11.48"
+          ]
+        },
+        "Paul's First Roman imprisonment": {
+          "kinds": [
+            "preaching",
+            "conflict"
+          ],
+          "region": "italy",
+          "places": [
+            "Rome@Jhn.11.48"
+          ]
+        }
+      },
+      "milestones": [
+        {
+          "event": "The Holy Spirit poured out at Pentecost",
+          "feast": "shavuot",
+          "label": "Pentecost (Shavuot)",
+          "ref": "Act.2.1"
+        }
       ]
     },
     {
       "id": "paul-first-journey",
       "title": "Paul’s first preaching journey",
-      "note": "Barnabas and Saul are sent out from Antioch; they preach and establish ecclesias, then return to report what God has done (Acts 13-14).",
+      "note": "Barnabas and Saul are sent out from Antioch; they preach and establish ecclesias, then return to report what God has done (Acts 13-14). Map pins mark places named in the account, not an exact travel route. Events spanning several regions have no single region lane; unnamed locations are left unpinned.",
       "chains": [
         {
           "basis": "Acts 13:1-14:28",
@@ -1525,12 +2240,121 @@
           ]
         }
       ],
-      "expands": "First Missionary Journey"
+      "expands": "First Missionary Journey",
+      "events": {
+        "First missionary journey begins": {
+          "kinds": [
+            "calling",
+            "journey"
+          ],
+          "region": "syria",
+          "places": [
+            {
+              "key": "Antioch@Act.6.5",
+              "label": "Antioch in Syria"
+            }
+          ]
+        },
+        "Barnabas and Saul go to Cyprus": {
+          "kinds": [
+            "journey",
+            "preaching"
+          ],
+          "region": "cyprus",
+          "places": [
+            "Salamis@Act.13.5",
+            "Paphos@Act.13.6"
+          ]
+        },
+        "Mission to Antioch in Pisidia": {
+          "kinds": [
+            "preaching",
+            "conflict"
+          ],
+          "region": "asia-minor",
+          "places": [
+            {
+              "key": "Antioch@Act.13.14",
+              "label": "Antioch in Pisidia"
+            }
+          ]
+        },
+        "Mission to Iconium": {
+          "kinds": [
+            "preaching",
+            "conflict"
+          ],
+          "region": "asia-minor",
+          "places": [
+            "Iconium@Act.13.51"
+          ]
+        },
+        "Mission to Lystra and Derbe": {
+          "kinds": [
+            "preaching",
+            "healing",
+            "conflict"
+          ],
+          "region": "asia-minor",
+          "places": [
+            "Lystra@Act.14.6",
+            "Derbe@Act.14.6"
+          ]
+        },
+        "Return to Antioch in Syria": {
+          "kinds": [
+            "journey",
+            "ecclesia"
+          ],
+          "region": "syria",
+          "places": [
+            {
+              "key": "Antioch@Act.6.5",
+              "label": "Antioch in Syria"
+            }
+          ]
+        }
+      },
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Narrative episodes; groups do not assert an order between events that no chain joins.",
+          "groups": [
+            {
+              "title": "Sent from Antioch",
+              "events": [
+                "First missionary journey begins"
+              ]
+            },
+            {
+              "title": "Cyprus",
+              "events": [
+                "Barnabas and Saul go to Cyprus"
+              ]
+            },
+            {
+              "title": "Asia Minor",
+              "events": [
+                "Mission to Antioch in Pisidia",
+                "Mission to Iconium",
+                "Mission to Lystra and Derbe"
+              ]
+            },
+            {
+              "title": "Return to Antioch",
+              "events": [
+                "Return to Antioch in Syria"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "paul-second-journey",
       "title": "Paul’s second preaching journey",
-      "note": "Paul and Silas strengthen the ecclesias and carry the gospel into Macedonia and Achaia (Acts 15:36-18:22).",
+      "note": "Paul and Silas strengthen the ecclesias and carry the gospel into Macedonia and Achaia (Acts 15:36-18:22). Map pins mark places named in the account, not an exact travel route. Events spanning several regions have no single region lane; unnamed locations are left unpinned.",
       "chains": [
         {
           "basis": "Acts 15:36-18:22",
@@ -1553,12 +2377,213 @@
           ]
         }
       ],
-      "expands": "Second Missionary Journey"
+      "expands": "Second Missionary Journey",
+      "events": {
+        "Paul and Barnabas part ways": {
+          "kinds": [
+            "conflict",
+            "journey"
+          ],
+          "region": "syria",
+          "places": [
+            {
+              "key": "Antioch@Act.6.5",
+              "label": "Antioch in Syria"
+            }
+          ]
+        },
+        "Second Missionary Journey begins": {
+          "kinds": [
+            "journey",
+            "ecclesia"
+          ],
+          "region": "syria",
+          "places": [
+            {
+              "key": "Antioch@Act.6.5",
+              "label": "Antioch in Syria"
+            }
+          ]
+        },
+        "Timothy Joins Paul and Silas": {
+          "kinds": [
+            "calling",
+            "ecclesia"
+          ],
+          "region": "asia-minor",
+          "places": [
+            "Lystra@Act.14.6",
+            "Derbe@Act.14.6"
+          ]
+        },
+        "Mission to Phrygia, Galatia and Asia": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "asia-minor",
+          "places": [
+            "Troas@Act.16.8"
+          ]
+        },
+        "Call to Macedonia": {
+          "kinds": [
+            "revelation",
+            "journey"
+          ],
+          "region": "",
+          "places": [
+            "Troas@Act.16.8",
+            "Philippi@Act.16.12"
+          ]
+        },
+        "Lydia's Conversion": {
+          "kinds": [
+            "baptism"
+          ],
+          "region": "macedonia",
+          "places": [
+            "Philippi@Act.16.12"
+          ]
+        },
+        "Paul casts demon out of soothsayer": {
+          "kinds": [
+            "exorcism"
+          ],
+          "region": "macedonia",
+          "places": [
+            "Philippi@Act.16.12"
+          ]
+        },
+        "Paul and Silas imprisoned": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "macedonia",
+          "places": [
+            "Philippi@Act.16.12"
+          ]
+        },
+        "Philippian jailer converted": {
+          "kinds": [
+            "baptism"
+          ],
+          "region": "macedonia",
+          "places": [
+            "Philippi@Act.16.12"
+          ]
+        },
+        "Paul and Silas released": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "macedonia",
+          "places": [
+            "Philippi@Act.16.12"
+          ]
+        },
+        "Uproar in Thessalonica": {
+          "kinds": [
+            "conflict",
+            "preaching"
+          ],
+          "region": "macedonia",
+          "places": [
+            "Thessalonica@Act.17.1"
+          ]
+        },
+        "Mission to Berea": {
+          "kinds": [
+            "preaching"
+          ],
+          "region": "macedonia",
+          "places": [
+            "Berea@Act.17.10"
+          ]
+        },
+        "Paul preaches in Athens": {
+          "kinds": [
+            "preaching"
+          ],
+          "region": "achaia",
+          "places": [
+            "Athens@Act.17.15"
+          ]
+        },
+        "Mission to Corinth, 1&2 Thess Written": {
+          "kinds": [
+            "preaching",
+            "letter"
+          ],
+          "region": "achaia",
+          "places": [
+            "Corinth@Act.18.1"
+          ]
+        },
+        "Return from Second Missionary Journey": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "",
+          "places": [
+            "Corinth@Act.18.1",
+            "Ephesus@Act.18.19",
+            "Caesarea@Act.8.40",
+            {
+              "key": "Antioch@Act.6.5",
+              "label": "Antioch in Syria"
+            }
+          ]
+        }
+      },
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Narrative episodes; groups do not assert an order between events that no chain joins.",
+          "groups": [
+            {
+              "title": "Strengthening the ecclesias",
+              "events": [
+                "Paul and Barnabas part ways",
+                "Second Missionary Journey begins",
+                "Timothy Joins Paul and Silas",
+                "Mission to Phrygia, Galatia and Asia"
+              ]
+            },
+            {
+              "title": "Called to Macedonia",
+              "events": [
+                "Call to Macedonia",
+                "Lydia's Conversion",
+                "Paul casts demon out of soothsayer",
+                "Paul and Silas imprisoned",
+                "Philippian jailer converted",
+                "Paul and Silas released",
+                "Uproar in Thessalonica",
+                "Mission to Berea"
+              ]
+            },
+            {
+              "title": "Achaia",
+              "events": [
+                "Paul preaches in Athens",
+                "Mission to Corinth, 1&2 Thess Written"
+              ]
+            },
+            {
+              "title": "Return to Antioch",
+              "events": [
+                "Return from Second Missionary Journey"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "paul-third-journey",
       "title": "Paul’s third preaching journey",
-      "note": "Paul strengthens the disciples, teaches in Ephesus and returns through Macedonia and Greece towards Jerusalem (Acts 18:23-21:17). The narrative supplies the order rather than the inherited calendar dates.",
+      "note": "Paul strengthens the disciples, teaches in Ephesus and returns through Macedonia and Greece towards Jerusalem (Acts 18:23-21:17). The narrative supplies the order rather than the inherited calendar dates. Map pins mark places named in the account, not an exact travel route. Events spanning several regions have no single region lane; unnamed locations are left unpinned.",
       "chains": [
         {
           "basis": "Acts 18:23-21:17",
@@ -1574,12 +2599,123 @@
           ]
         }
       ],
-      "expands": "Third Missionary Journey"
+      "expands": "Third Missionary Journey",
+      "events": {
+        "Third Missionary Journey Begins": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "",
+          "places": []
+        },
+        "Mission to Ephesus/1 Cor Written": {
+          "kinds": [
+            "preaching",
+            "baptism",
+            "healing",
+            "letter"
+          ],
+          "region": "asia-minor",
+          "places": [
+            "Ephesus@Act.18.19"
+          ]
+        },
+        "Riot in Ephesus": {
+          "kinds": [
+            "conflict"
+          ],
+          "region": "asia-minor",
+          "places": [
+            "Ephesus@Act.18.19"
+          ]
+        },
+        "Mission to Macedonia and Greece": {
+          "kinds": [
+            "journey",
+            "ecclesia"
+          ],
+          "region": "",
+          "places": [
+            "Philippi@Act.16.12",
+            "Corinth@Act.18.1"
+          ]
+        },
+        "Eutychus revived": {
+          "kinds": [
+            "raising",
+            "teaching"
+          ],
+          "region": "asia-minor",
+          "places": [
+            "Troas@Act.16.8"
+          ]
+        },
+        "Voyage to Miletus": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "asia-minor",
+          "places": [
+            "Miletus@Act.20.15"
+          ]
+        },
+        "Paul speaks to Ephesian Elders": {
+          "kinds": [
+            "teaching",
+            "ecclesia"
+          ],
+          "region": "asia-minor",
+          "places": [
+            "Miletus@Act.20.15"
+          ]
+        },
+        "Voyage from Miletus to Jerusalem": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        }
+      },
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Narrative episodes; groups do not assert an order between events that no chain joins.",
+          "groups": [
+            {
+              "title": "Ephesus",
+              "events": [
+                "Third Missionary Journey Begins",
+                "Mission to Ephesus/1 Cor Written",
+                "Riot in Ephesus"
+              ]
+            },
+            {
+              "title": "Macedonia, Greece and Troas",
+              "events": [
+                "Mission to Macedonia and Greece",
+                "Eutychus revived"
+              ]
+            },
+            {
+              "title": "Towards Jerusalem",
+              "events": [
+                "Voyage to Miletus",
+                "Paul speaks to Ephesian Elders",
+                "Voyage from Miletus to Jerusalem"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "paul-rome",
       "title": "Paul’s journey to Rome",
-      "note": "Paul travels as a prisoner, survives the shipwreck and reaches Rome, where he bears witness to the hope of Israel (Acts 27:1-28:20).",
+      "note": "Paul travels as a prisoner, survives the shipwreck and reaches Rome, where he bears witness to the hope of Israel (Acts 27:1-28:20). Map pins mark places named in the account, not an exact travel route. Events spanning several regions have no single region lane; unnamed locations are left unpinned.",
       "chains": [
         {
           "basis": "Acts 27:1-28:16",
@@ -1591,7 +2727,74 @@
           ]
         }
       ],
-      "expands": "Paul's Journey to Rome"
+      "expands": "Paul's Journey to Rome",
+      "events": {
+        "Journey to Rome begins": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "",
+          "places": [
+            "Caesarea@Act.8.40"
+          ]
+        },
+        "Paul is shipwrecked by a storm": {
+          "kinds": [
+            "journey",
+            "sign"
+          ],
+          "region": "malta",
+          "places": [
+            "Malta@Act.28.1"
+          ]
+        },
+        "Paul stays at Malta": {
+          "kinds": [
+            "healing"
+          ],
+          "region": "malta",
+          "places": [
+            "Malta@Act.28.1"
+          ]
+        },
+        "Paul arrives at Rome": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "italy",
+          "places": [
+            "Rome@Jhn.11.48"
+          ]
+        }
+      },
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Narrative episodes; groups do not assert an order between events that no chain joins.",
+          "groups": [
+            {
+              "title": "Voyage and shipwreck",
+              "events": [
+                "Journey to Rome begins",
+                "Paul is shipwrecked by a storm"
+              ]
+            },
+            {
+              "title": "Malta",
+              "events": [
+                "Paul stays at Malta"
+              ]
+            },
+            {
+              "title": "Arrival in Rome",
+              "events": [
+                "Paul arrives at Rome"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

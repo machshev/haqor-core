@@ -38,9 +38,12 @@ Each sequence has:
   `teaching`, `parable`, `journey`, `calling`, `encounter`, `conflict`,
   `revelation` (of who Jesus is: the baptism, the confession, the
   transfiguration, his foretelling of his death), `feast` and
-  `john-baptist`. `region` is one of `north` (Phoenicia, Caesarea Philippi
+  `john-baptist`. Further kinds are `preaching`, `testimony`, `baptism`,
+  `ecclesia`, `birth`, `childhood`, `covenant` (circumcision and presentation)
+  and `letter`. `region` is one of `north` (Phoenicia, Caesarea Philippi
   and Hermon), `galilee`, `east` (of the lake: the Decapolis and Bethsaida
-  Julias), `samaria`, `perea` and `judea`. `places` lists the places it
+  Julias), `samaria`, `perea` and `judea`, or `egypt`, `syria`, `cyprus`,
+  `asia-minor`, `macedonia`, `achaia`, `malta` or `italy`. `places` lists the places it
   happens at, the chief first, for the map: TIPNR keys as in
   `journeys.json`, or `{"key", "label"}` where the place is called otherwise
   than its record (Cana for TIPNR's `Kanah@Jos.19.28`). A place must have a
@@ -98,3 +101,16 @@ the gospel of the Kingdom of God and the name of Jesus Christ. Event title
 changes belong in `event_overrides.json`, not in display-only aliases.
 The inherited chronology still supplies overview spans; the chains assert
 only the order supported by their named passages.
+
+All six newer sequences have episode groups and curated event kinds. Their
+map keys reuse the place identifications in `journeys.json` where possible.
+A journey summary may name several places; map lines join events, not every
+stage of a reconstructed travel route. Multi-region events have no single
+region lane. The unnamed hill-country town, the place of Joseph's dream,
+the family's residence in Egypt, Samaria's unnamed city, the Gaza road and
+the place of writing Galatians are deliberately unpinned. Bethlehem for
+Jesus' circumcision follows Luke 2:1-22's setting before the journey to
+Jerusalem; Nazareth is not assumed to be the location of Mary's betrothal.
+Only explicit feast settings become milestones: Passover in Luke 2:41 and
+Pentecost in Acts 2:1. The shipwreck is not dated to the fast already past in
+Acts 27:9.

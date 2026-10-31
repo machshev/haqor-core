@@ -995,6 +995,23 @@ mod tests {
         assert!(precedes(260, 262) && precedes(262, 264));
         assert!(!precedes(327, 328) && !precedes(328, 327));
         assert!(!precedes(347, 344) && !precedes(344, 347));
+        // Every member has filter metadata; each sequence offers map places.
+        assert_eq!(summary.sequences.details, summary.sequences.members);
+        let unmapped: i64 = db
+            .query_row(
+                "SELECT count(*) FROM event_sequence s WHERE NOT EXISTS (
+               SELECT 1 FROM event_sequence_member m JOIN event_sequence_place p USING(event_id)
+               WHERE m.seq_id = s.seq_id)",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+        assert_eq!(unmapped, 0);
+        let invented: i64 = db.query_row(
+            "SELECT count(*) FROM event_sequence_place WHERE event_id IN (249,251,252,253,257,260,324,325,347)",
+            [], |row| row.get(0),
+        ).unwrap();
+        assert_eq!(invented, 0, "unnamed locations must not acquire map pins");
 
         // Lachish is pictured at Tel Lachish, its likeliest site.
         let lachish: (i64, i64) = db
