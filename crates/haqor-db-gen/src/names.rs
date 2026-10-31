@@ -1114,8 +1114,12 @@ mod tests {
             )
             .unwrap();
         assert_eq!(unmapped, 0);
+        // The flight into Egypt and the return (257, 260) are placed at an estimated
+
+        // refuge in the delta, marked as such (see GOSPEL_JOURNEYS.md).
+
         let invented: i64 = db.query_row(
-            "SELECT count(*) FROM event_sequence_place WHERE event_id IN (249,251,252,253,257,260,324,325,347)",
+            "SELECT count(*) FROM event_sequence_place WHERE event_id IN (249,251,252,253,324,325,347)",
             [], |row| row.get(0),
         ).unwrap();
         assert_eq!(invented, 0, "unnamed locations must not acquire map pins");
