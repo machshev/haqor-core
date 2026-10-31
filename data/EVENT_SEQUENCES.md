@@ -114,3 +114,31 @@ Jerusalem; Nazareth is not assumed to be the location of Mary's betrothal.
 Only explicit feast settings become milestones: Passover in Luke 2:41 and
 Pentecost in Acts 2:1. The shipwreck is not dated to the fast already past in
 Acts 27:9.
+
+## Genesis through the restoration
+
+Fourteen further sequences cover the remaining narrative, royal and prophetic
+entries already in the source catalogue. `beginnings` opens the `flood`;
+Abraham, Jacob, Joseph, Job, Moses and Joshua open from their existing lifetime
+spans; Moses opens `sinai` through the wilderness span. `judges` stands alone.
+The united, northern and southern kingdoms open their respective sequences.
+`prophets` gathers the existing prophetic ministries through Malachi.
+
+Overlapping lifetime spans and the long sojourn remain on the overview.
+The source's identification of Job with Issachar's son is not endorsed by an
+ordering edge: that birth remains outside the Job sequence. No missing episodes
+are invented to fill gaps in the source catalogue. These are sequences of the
+available events, not a claim that every biblical episode has been catalogued.
+
+Reign and ministry nodes mark beginnings, not completed spans. Judah's accession
+chain does not place each predecessor's death before his successor's accession.
+Omri and Tibni branch as rival rulers. The later judges branch between Ammon
+and Philistia. Genealogical deaths are not ordered by their position in a chapter.
+Prophetic ministries are unordered except for Elijah's departure and Elisha's
+succession. Group headings help navigation; only edges assert relative order.
+No locations are inferred from the older events' loose place associations.
+
+The additional event kinds are `creation`, `judgement`, `death`, `reign`,
+`judgeship` and `prophecy`; the frontend provides corresponding icons and filters.
+The Jehoash death override corrects the event attached to 2 Kings 13:13, distinct
+from Jehoahaz's death in 13:9, so titles resolve unambiguously.

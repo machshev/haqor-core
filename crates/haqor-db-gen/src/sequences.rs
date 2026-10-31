@@ -146,6 +146,12 @@ pub const KINDS: &[&str] = &[
     "childhood",
     "covenant",
     "letter",
+    "creation",
+    "judgement",
+    "death",
+    "reign",
+    "judgeship",
+    "prophecy",
 ];
 
 /// The regions an event of a sequence may happen in.
@@ -835,6 +841,98 @@ mod tests {
             ("Kanah@Jos.19.28".into(), (100, "Kanah".into())),
             ("Ephraim@2Sa.13.23".into(), (101, "Ephraim".into())),
         ])
+    }
+
+    #[test]
+    fn curated_sequences_resolve_against_the_source_events() {
+        let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("../..");
+        let source = root.join("src_texts/Theographic/events.jsonl");
+        // Source corpora are optional in a source-only checkout.
+        if !source.exists() {
+            return;
+        }
+        let overrides: Value = serde_json::from_str(
+            &std::fs::read_to_string(root.join("data/event_overrides.json")).unwrap(),
+        )
+        .unwrap();
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch(
+            "CREATE TABLE bible_event(event_id INTEGER PRIMARY KEY, title TEXT NOT NULL);
+            CREATE TABLE name_location(entity_id INTEGER NOT NULL);",
+        )
+        .unwrap();
+        for line in std::fs::read_to_string(source).unwrap().lines() {
+            let event: Value = serde_json::from_str(line).unwrap();
+            let correction = overrides["events"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .find(|o| o["id"] == event["id"]);
+            if correction.is_some_and(|o| o["drop"] == true) {
+                continue;
+            }
+            let title = correction
+                .and_then(|o| o["title"].as_str())
+                .unwrap_or(event["title"].as_str().unwrap());
+            db.execute(
+                "INSERT INTO bible_event VALUES (?1, ?2)",
+                params![event["id"].as_i64().unwrap(), title],
+            )
+            .unwrap();
+        }
+        // Geography is checked against real TIPNR records by gen-names.
+        // Here give each referenced place a position to exercise all other
+        // production validation, including group order and nested membership.
+        let path = root.join("data/event_sequences.json");
+        let data: Value = serde_json::from_str(&std::fs::read_to_string(&path).unwrap()).unwrap();
+        let mut places = HashMap::new();
+        for seq in data["sequences"].as_array().unwrap() {
+            if let Some(details) = seq["events"].as_object() {
+                for detail in details.values() {
+                    if let Some(list) = detail["places"].as_array() {
+                        for place in list {
+                            let key = place.as_str().or_else(|| place["key"].as_str()).unwrap();
+                            let id = places.len() as u32 + 1;
+                            places.insert(key.to_owned(), (id, key.to_owned()));
+                            db.execute("INSERT INTO name_location VALUES (?1)", [id])
+                                .unwrap();
+                        }
+                    }
+                }
+            }
+        }
+        build(&db, &path, &places).unwrap();
+        let count: i64 = db
+            .query_row("SELECT count(*) FROM event_sequence", [], |r| r.get(0))
+            .unwrap();
+        assert!(count >= 22);
+        // Every non-member is a purposeful overview span or the disputed
+        // identification of Job with the son of Issachar.
+        let missing: Vec<String> = db
+            .prepare(
+                "SELECT title FROM bible_event e
+            WHERE NOT EXISTS (SELECT 1 FROM event_sequence_member m WHERE m.event_id=e.event_id)
+            AND NOT EXISTS (SELECT 1 FROM event_sequence s WHERE s.expands=e.event_id)",
+            )
+            .unwrap()
+            .query_map([], |r| r.get(0))
+            .unwrap()
+            .collect::<rusqlite::Result<_>>()
+            .unwrap();
+        assert!(
+            missing.iter().all(|t| t.starts_with("Lifetime of ")
+                || t == "Sojourn in Canaan and Egypt"
+                || t == "Birth of Job"),
+            "{missing:?}"
+        );
+        let title: String = db
+            .query_row(
+                "SELECT title FROM bible_event WHERE event_id=201",
+                [],
+                |r| r.get(0),
+            )
+            .unwrap();
+        assert_eq!(title, "Death of Jehoash");
     }
 
     #[test]
