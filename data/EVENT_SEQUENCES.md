@@ -142,3 +142,17 @@ The additional event kinds are `creation`, `judgement`, `death`, `reign`,
 `judgeship` and `prophecy`; the frontend provides corresponding icons and filters.
 The Jehoash death override corrects the event attached to 2 Kings 13:13, distinct
 from Jehoahaz's death in 13:9, so titles resolve unambiguously.
+
+## Journey tracks
+
+An event's optional `tracks` array names the people whose journey includes its
+chief place (for example `["Jesus", "John the Baptist"]` at the baptism). These
+are explicit location assignments, not everyone mentioned in a passage. Empty
+or omitted tracks mean unassigned. Track names must be nonempty and unique per
+event. Shared events can belong to several tracks. Ordering edges still express
+chronology and synchronisation across tracks; they do not imply that one person
+travels to another person's location. Unknown places remain unpinned.
+
+The ministry separates John's activities from Jesus's. Paul's first journey
+includes Barnabas; the second includes him at their separation only. No later
+location for Barnabas is inferred from Paul's travels.

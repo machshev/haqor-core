@@ -60,6 +60,14 @@ DROP TABLE IF EXISTS event_sequence_group_member;
 DROP TABLE IF EXISTS event_sequence_milestone;
 DROP TABLE IF EXISTS event_sequence_event;
 DROP TABLE IF EXISTS event_sequence_place;
+DROP TABLE IF EXISTS event_sequence_track;
+CREATE TABLE event_sequence_track(
+    event_id INTEGER NOT NULL,
+    ord INTEGER NOT NULL,
+    track TEXT NOT NULL,
+    PRIMARY KEY(event_id, ord),
+    UNIQUE(event_id, track)
+) WITHOUT ROWID;
 
 -- A way of dividing a sequence's events into groups, in the file's order.
 CREATE TABLE event_sequence_grouping(
@@ -216,6 +224,7 @@ struct Milestone {
 
 #[derive(Default)]
 struct Details {
+    tracks: Vec<String>,
     kinds: Vec<String>,
     region: String,
     /// TIPNR place keys, each with what it is called here (or empty).
@@ -313,7 +322,7 @@ fn read(json: &Value) -> Result<Vec<Sequence>> {
         }
         let mut details = Vec::new();
         for (title, about) in sequence["events"].as_object().into_iter().flatten() {
-            known(about, &["kinds", "region", "places"])?;
+            known(about, &["kinds", "region", "places", "tracks"])?;
             let mut places = Vec::new();
             for place in about["places"].as_array().into_iter().flatten() {
                 match place {
@@ -328,6 +337,16 @@ fn read(json: &Value) -> Result<Vec<Sequence>> {
             details.push((
                 title.clone(),
                 Details {
+                    tracks: match about.get("tracks") {
+                        None => Vec::new(),
+                        Some(value) => value
+                            .as_array()
+                            .with_context(|| format!("tracks must be an array for {title:?}"))?
+                            .iter()
+                            .map(|v| v.as_str().map(str::to_string))
+                            .collect::<Option<Vec<_>>>()
+                            .with_context(|| format!("an unreadable track of {title:?}"))?,
+                    },
                     kinds: about["kinds"]
                         .as_array()
                         .into_iter()
@@ -440,8 +459,8 @@ pub(crate) fn build(
         milestones: Vec<(u32, String, String, i64)>,
         details: Vec<BuiltDetails>,
     }
-    /// Event, kinds, region, places (entity and label).
-    type BuiltDetails = (u32, Vec<String>, String, Vec<(u32, String)>);
+    /// Event, kinds, region, places (entity and label), journey tracks.
+    type BuiltDetails = (u32, Vec<String>, String, Vec<(u32, String)>, Vec<String>);
     struct BuiltGroup {
         parent: Option<usize>,
         title: String,
@@ -624,7 +643,21 @@ pub(crate) fn build(
                 }
                 at_places.push((*entity, label.trim().to_string()));
             }
-            details.push((event, about.kinds.clone(), about.region.clone(), at_places));
+            let mut seen_tracks = HashSet::new();
+            for track in &about.tracks {
+                if track.trim().is_empty() || track != track.trim() || !seen_tracks.insert(track) {
+                    faults.push(format!(
+                        "{at}: empty, untrimmed or duplicate track {track:?}"
+                    ));
+                }
+            }
+            details.push((
+                event,
+                about.kinds.clone(),
+                about.region.clone(),
+                at_places,
+                about.tracks.clone(),
+            ));
         }
 
         built.push(Built {
@@ -746,7 +779,13 @@ pub(crate) fn build(
             )?;
             summary.milestones += 1;
         }
-        for (event, kinds, region, at) in &sequence.details {
+        for (event, kinds, region, at, tracks) in &sequence.details {
+            for (ord, track) in tracks.iter().enumerate() {
+                tx.execute(
+                    "INSERT INTO event_sequence_track(event_id, ord, track) VALUES (?1, ?2, ?3)",
+                    params![event, ord as i64, track],
+                )?;
+            }
             tx.execute(
                 "INSERT INTO event_sequence_event(event_id, kinds, region) VALUES (?1, ?2, ?3)",
                 params![event, kinds.join(","), region],
@@ -958,7 +997,7 @@ mod tests {
                     {"event": "B", "feast": "pesach", "label": "Passover", "ref": "Jhn.2.13"}
                 ],
                 "events": {
-                    "A": {"kinds": ["sign", "feast"], "region": "galilee",
+                    "A": {"tracks": ["Jesus", "John the Baptist"], "kinds": ["sign", "feast"], "region": "galilee",
                           "places": [{"key": "Kanah@Jos.19.28", "label": "Cana"}]},
                     "C": {"kinds": ["teaching"]}
                 }}
@@ -1010,6 +1049,14 @@ mod tests {
             (kinds.as_str(), region.as_str(), label.as_str()),
             ("sign,feast", "galilee", "Cana")
         );
+        let tracks: Vec<String> = db
+            .prepare("SELECT track FROM event_sequence_track WHERE event_id = 1 ORDER BY ord")
+            .unwrap()
+            .query_map([], |r| r.get(0))
+            .unwrap()
+            .collect::<rusqlite::Result<_>>()
+            .unwrap();
+        assert_eq!(tracks, ["Jesus", "John the Baptist"]);
         let reference: i64 = db
             .query_row("SELECT ref FROM event_sequence_milestone", [], |row| {
                 row.get(0)
@@ -1066,6 +1113,71 @@ mod tests {
         ));
         std::fs::write(&path, json).unwrap();
         path
+    }
+
+    #[test]
+    fn tracks_reject_invalid_membership() {
+        for (i, tracks) in [r#"["", "Jesus", "Jesus"]"#, r#"[" John"]"#, "42", "[null]"]
+            .iter()
+            .enumerate()
+        {
+            let db = Connection::open_in_memory().unwrap();
+            events(&db, &["A"]);
+            let json = format!(
+                r#"{{"sequences":[{{"id":"s","chains":[{{"basis":"Text","events":["A"]}}],"events":{{"A":{{"tracks":{tracks}}}}}}}]}}"#
+            );
+            let path = write(&format!("bad-tracks-{i}"), &json);
+            assert!(
+                build(&db, &path, &places())
+                    .unwrap_err()
+                    .to_string()
+                    .contains("track")
+            );
+        }
+    }
+
+    #[test]
+    fn curated_tracks_distinguish_location_from_mentions() {
+        let path = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/event_sequences.json");
+        let json: Value = serde_json::from_str(&std::fs::read_to_string(path).unwrap()).unwrap();
+        let sequences = read(&json).unwrap();
+        let tracks = |key: &str, title: &str| {
+            sequences
+                .iter()
+                .find(|s| s.id == key)
+                .unwrap()
+                .details
+                .iter()
+                .find(|(t, _)| t == title)
+                .unwrap()
+                .1
+                .tracks
+                .clone()
+        };
+        assert_eq!(
+            tracks("ministry", "John the Baptist Witnesses"),
+            ["John the Baptist"]
+        );
+        assert_eq!(
+            tracks("ministry", "John Baptizes Jesus"),
+            ["Jesus", "John the Baptist"]
+        );
+        assert_eq!(
+            tracks("ministry", "Jesus' Message on John the Baptist"),
+            ["Jesus"]
+        );
+        assert_eq!(
+            tracks("paul-first-journey", "Mission to Iconium"),
+            ["Paul", "Barnabas"]
+        );
+        assert_eq!(
+            tracks("paul-second-journey", "Paul and Barnabas part ways"),
+            ["Paul", "Barnabas"]
+        );
+        assert_eq!(
+            tracks("paul-second-journey", "Paul preaches in Athens"),
+            ["Paul"]
+        );
     }
 
     #[test]

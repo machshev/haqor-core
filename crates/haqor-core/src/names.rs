@@ -423,6 +423,9 @@ pub struct SequenceMilestone {
 /// What kind of event an event of a sequence is, and where it happens.
 #[derive(Clone, Debug, PartialEq)]
 pub struct SequenceEventDetails {
+    /// Named journey tracks physically present at the chief place.
+    /// Empty means unassigned, not everyone mentioned in the passage.
+    pub tracks: Vec<String>,
     pub event: u32,
     /// The chief first: `healing`, `exorcism`, `raising`, `sign`,
     /// `teaching`, `parable`, `journey`, `calling`, `encounter`, `conflict`,

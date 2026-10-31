@@ -6594,6 +6594,17 @@ impl Bible {
                 ))
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
+        let mut tracks_of: HashMap<u32, Vec<String>> = HashMap::new();
+        // Older runtime databases remain readable.
+        if self.has_table("event_sequence_track")? {
+            let mut stmt = self.db.prepare(
+                "SELECT event_id, track FROM data.event_sequence_track ORDER BY event_id, ord",
+            )?;
+            for row in stmt.query_map([], |r| Ok((r.get::<_, u32>(0)?, r.get::<_, String>(1)?)))? {
+                let (event, track) = row?;
+                tracks_of.entry(event).or_default().push(track);
+            }
+        }
         let mut places_of: HashMap<u32, Vec<SequencePlace>> = HashMap::new();
         let rows = self
             .db
@@ -6637,6 +6648,7 @@ impl Bible {
                 i,
                 at.unwrap_or(usize::MAX),
                 SequenceEventDetails {
+                    tracks: tracks_of.remove(&event).unwrap_or_default(),
                     event,
                     kinds: kinds
                         .split(',')
@@ -7398,6 +7410,24 @@ mod tests {
         let events = bible.bible_events().unwrap();
         let id = |title: &str| events.iter().find(|e| e.title == title).unwrap().id;
         let ministry = sequences.iter().find(|s| s.key == "ministry").unwrap();
+        if bible.has_table("event_sequence_track").unwrap() {
+            let tracks = |title| {
+                &ministry
+                    .details
+                    .iter()
+                    .find(|d| d.event == id(title))
+                    .unwrap()
+                    .tracks
+            };
+            assert_eq!(
+                tracks("John Baptizes Jesus"),
+                &["Jesus", "John the Baptist"]
+            );
+            assert_eq!(tracks("John the Baptist Witnesses"), &["John the Baptist"]);
+            assert_eq!(tracks("Jesus' Message on John the Baptist"), &["Jesus"]);
+        } else {
+            assert!(ministry.details.iter().all(|d| d.tracks.is_empty()));
+        }
         assert_eq!(ministry.expands, None);
         assert!(ministry.events.contains(&id("Water to Wine")));
         // Mark puts the leper's healing after the first tour, and Robertson's

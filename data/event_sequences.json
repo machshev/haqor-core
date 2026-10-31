@@ -606,16 +606,19 @@
       ],
       "events": {
         "John the Baptist Begins Ministry": {
+          "tracks": ["John the Baptist"],
           "kinds": ["john-baptist", "teaching"],
           "region": "judea",
           "places": ["Jordan@Gen.13.10"]
         },
         "John Baptizes Jesus": {
+          "tracks": ["Jesus", "John the Baptist"],
           "kinds": ["revelation", "john-baptist"],
           "region": "judea",
           "places": ["Jordan@Gen.13.10"]
         },
         "Temptations of Jesus": {
+          "tracks": ["Jesus"],
           "kinds": ["conflict"],
           "region": "judea",
           "places": [
@@ -625,355 +628,438 @@
           ]
         },
         "John's Witness": {
+          "tracks": ["John the Baptist"],
           "kinds": ["john-baptist", "revelation"],
           "region": "perea",
           "places": [{ "key": "Beth-barah@Jdg.7.24", "label": "Bethany beyond Jordan" }]
         },
         "First Disciples Gathered": {
+          "tracks": ["Jesus"],
           "kinds": ["calling"],
           "region": "perea",
           "places": [{ "key": "Beth-barah@Jdg.7.24", "label": "Bethany beyond Jordan" }]
         },
         "Water to Wine": {
+          "tracks": ["Jesus"],
           "kinds": ["sign"],
           "region": "galilee",
           "places": [{ "key": "Kanah@Jos.19.28", "label": "Cana" }]
         },
         "Visiting Capernaum": {
+          "tracks": ["Jesus"],
           "kinds": ["journey"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "First Passover and Temple Cleansing": {
+          "tracks": ["Jesus"],
           "kinds": ["feast", "conflict"],
           "region": "judea",
           "places": ["Jerusalem@Gen.14.18"]
         },
         "Jesus and Nicodemus": {
+          "tracks": ["Jesus"],
           "kinds": ["encounter", "teaching"],
           "region": "judea",
           "places": ["Jerusalem@Gen.14.18"]
         },
         "John the Baptist Witnesses": {
+          "tracks": ["John the Baptist"],
           "kinds": ["john-baptist"],
           "region": "judea",
           "places": ["Aenon@Jhn.3.23"]
         },
         "John the Baptist Imprisoned": {
+          "tracks": ["John the Baptist"],
           "kinds": ["john-baptist", "conflict"],
           "region": "perea"
         },
         "Jesus Leaves Judea toward Galilee": {
+          "tracks": ["Jesus"],
           "kinds": ["journey"],
           "region": "judea"
         },
         "The Samaritan Woman": {
+          "tracks": ["Jesus"],
           "kinds": ["encounter", "teaching"],
           "region": "samaria",
           "places": ["Sychar@Jhn.4.5"]
         },
         "Jesus visits Galilee": {
+          "tracks": ["Jesus"],
           "kinds": ["journey", "healing"],
           "region": "galilee",
           "places": [{ "key": "Kanah@Jos.19.28", "label": "Cana" }]
         },
         "Jesus Rejected at Nazareth": {
+          "tracks": ["Jesus"],
           "kinds": ["conflict", "teaching"],
           "region": "galilee",
           "places": ["Nazareth@Mat.2.23"]
         },
         "Jesus in Capernaum": {
+          "tracks": ["Jesus"],
           "kinds": ["journey", "teaching"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Fishers of Men": {
+          "tracks": ["Jesus"],
           "kinds": ["calling", "sign"],
           "region": "galilee",
           "places": [{ "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" }]
         },
         "The Demoniac": {
+          "tracks": ["Jesus"],
           "kinds": ["exorcism"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Peter's Mother-in-law and Others Healed": {
+          "tracks": ["Jesus"],
           "kinds": ["healing"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Jesus' 1st Tour of Galilee": {
+          "tracks": ["Jesus"],
           "kinds": ["journey", "teaching"],
           "region": "galilee"
         },
-        "Healing the Leper": { "kinds": ["healing"], "region": "galilee" },
+        "Healing the Leper": {
+          "tracks": ["Jesus"], "kinds": ["healing"], "region": "galilee" },
         "Healing the Man with Palsy": {
+          "tracks": ["Jesus"],
           "kinds": ["healing", "conflict"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Jesus Calls Matthew": {
+          "tracks": ["Jesus"],
           "kinds": ["calling"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Fasting Question": {
+          "tracks": ["Jesus"],
           "kinds": ["teaching", "conflict"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Parable of the Wineskins": {
+          "tracks": ["Jesus"],
           "kinds": ["parable"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Bethesda pool healing": {
+          "tracks": ["Jesus"],
           "kinds": ["healing", "conflict", "feast"],
           "region": "judea",
           "places": ["Bethesda@Jhn.5.2"]
         },
-        "Corn on the Sabbath": { "kinds": ["conflict"], "region": "galilee" },
+        "Corn on the Sabbath": {
+          "tracks": ["Jesus"], "kinds": ["conflict"], "region": "galilee" },
         "Healing a Withered Hand": {
+          "tracks": ["Jesus"],
           "kinds": ["healing", "conflict"],
           "region": "galilee"
         },
         "Healing Multitudes": {
+          "tracks": ["Jesus"],
           "kinds": ["healing"],
           "region": "galilee",
           "places": [{ "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" }]
         },
-        "Apostles Chosen": { "kinds": ["calling"], "region": "galilee" },
-        "Sermon on the Mount": { "kinds": ["teaching"], "region": "galilee" },
+        "Apostles Chosen": {
+          "tracks": ["Jesus"], "kinds": ["calling"], "region": "galilee" },
+        "Sermon on the Mount": {
+          "tracks": ["Jesus"], "kinds": ["teaching"], "region": "galilee" },
         "Healing Centurion's Servant": {
+          "tracks": ["Jesus"],
           "kinds": ["healing"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Widow's Son Resurrected": {
+          "tracks": ["Jesus"],
           "kinds": ["raising"],
           "region": "galilee",
           "places": ["Nain@Luk.7.11"]
         },
         "Jesus' Message on John the Baptist": {
+          "tracks": ["Jesus"],
           "kinds": ["john-baptist", "teaching"],
           "region": "galilee"
         },
         "Woe to Chorazin and Bethsaida": {
+          "tracks": ["Jesus"],
           "kinds": ["teaching", "conflict"],
           "region": "galilee"
         },
         "Anointed by a Sinner Woman": {
+          "tracks": ["Jesus"],
           "kinds": ["encounter", "parable"],
           "region": "galilee"
         },
-        "Jesus' 2nd Tour of Galilee": { "kinds": ["journey"], "region": "galilee" },
+        "Jesus' 2nd Tour of Galilee": {
+          "tracks": ["Jesus"], "kinds": ["journey"], "region": "galilee" },
         "Blind and Dumb Demoniac and Following Discourse": {
+          "tracks": ["Jesus"],
           "kinds": ["exorcism", "conflict"],
           "region": "galilee"
         },
         "Seaside Parables and Miracle": {
+          "tracks": ["Jesus"],
           "kinds": ["parable", "sign"],
           "region": "galilee",
           "places": [{ "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" }]
         },
         "Gadarene Demoniacs": {
+          "tracks": ["Jesus"],
           "kinds": ["exorcism"],
           "region": "east",
           "places": ["Decapolis@Mat.4.25"]
         },
         "Capernaum Miracles": {
+          "tracks": ["Jesus"],
           "kinds": ["raising", "healing"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "2nd Rejection at Nazareth": {
+          "tracks": ["Jesus"],
           "kinds": ["conflict"],
           "region": "galilee",
           "places": ["Nazareth@Mat.2.23"]
         },
         "3rd Tour of Galilee": {
+          "tracks": ["Jesus"],
           "kinds": ["calling", "journey"],
           "region": "galilee"
         },
         "John Beheaded": {
+          "tracks": ["John the Baptist"],
           "kinds": ["john-baptist", "conflict"],
           "region": "perea"
         },
         "Feeding of Five Thousand": {
+          "tracks": ["Jesus"],
           "kinds": ["sign", "feast"],
           "region": "east",
           "places": ["Bethsaida@Mat.11.21"]
         },
         "Jesus Walks on Water": {
+          "tracks": ["Jesus"],
           "kinds": ["sign"],
           "region": "galilee",
           "places": [{ "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" }]
         },
         "Healing in Gennesaret": {
+          "tracks": ["Jesus"],
           "kinds": ["healing"],
           "region": "galilee",
           "places": ["Gennesaret@Mat.14.34"]
         },
         "Bread of Life Sermon": {
+          "tracks": ["Jesus"],
           "kinds": ["teaching", "conflict"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Commandments and Tradition Discourse": {
+          "tracks": ["Jesus"],
           "kinds": ["conflict", "teaching"],
           "region": "galilee"
         },
         "Healing Canaanite Daughter": {
+          "tracks": ["Jesus"],
           "kinds": ["exorcism", "encounter"],
           "region": "north",
           "places": ["Tyre@Jos.19.29", "Sidon@Gen.10.19"]
         },
         "Healing a Crowd near Sea of Galilee": {
+          "tracks": ["Jesus"],
           "kinds": ["healing"],
           "region": "east",
           "places": ["Decapolis@Mat.4.25"]
         },
         "Feeding of Four Thousand": {
+          "tracks": ["Jesus"],
           "kinds": ["sign"],
           "region": "east",
           "places": ["Decapolis@Mat.4.25"]
         },
         "Discourse with Pharisees and Saducees": {
+          "tracks": ["Jesus"],
           "kinds": ["conflict"],
           "region": "galilee",
           "places": ["Magadan@Mat.15.39"]
         },
         "Healing a Blind Man at Bethsaida": {
+          "tracks": ["Jesus"],
           "kinds": ["healing"],
           "region": "east",
           "places": ["Bethsaida@Mat.11.21"]
         },
         "Peter's Confession \"Upon this Rock\"": {
+          "tracks": ["Jesus"],
           "kinds": ["revelation"],
           "region": "north",
           "places": ["Caesarea_Philippi@Mat.16.13"]
         },
         "Foretelling the Death and Resurrection": {
+          "tracks": ["Jesus"],
           "kinds": ["revelation", "teaching"],
           "region": "north",
           "places": ["Caesarea_Philippi@Mat.16.13"]
         },
         "The Transfiguration": {
+          "tracks": ["Jesus"],
           "kinds": ["revelation"],
           "region": "north",
           "places": [{ "key": "Hermon_Mount@Deu.3.8", "label": "Mount Hermon" }]
         },
         "Healing a Boy with a Demon": {
+          "tracks": ["Jesus"],
           "kinds": ["exorcism"],
           "region": "north",
           "places": [{ "key": "Hermon_Mount@Deu.3.8", "label": "Mount Hermon" }]
         },
         "Second Foretelling of Death and Resurrection": {
+          "tracks": ["Jesus"],
           "kinds": ["revelation"],
           "region": "galilee"
         },
         "Tax Coin in a Fish's Mouth": {
+          "tracks": ["Jesus"],
           "kinds": ["sign"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Teachings on Humility/Temptation/Reconciliation": {
+          "tracks": ["Jesus"],
           "kinds": ["teaching", "parable"],
           "region": "galilee",
           "places": ["Capernaum@Mat.4.13"]
         },
         "Samaritans Reject Jesus": {
+          "tracks": ["Jesus"],
           "kinds": ["journey", "conflict"],
           "region": "samaria"
         },
         "Feast of Tabernacles": {
+          "tracks": ["Jesus"],
           "kinds": ["feast", "teaching", "conflict"],
           "region": "judea",
           "places": ["Jerusalem@Gen.14.18"]
         },
         "Woman Caught in Adultery": {
+          "tracks": ["Jesus"],
           "kinds": ["encounter", "conflict"],
           "region": "judea",
           "places": ["Jerusalem@Gen.14.18"]
         },
         "Light of the World/I am discourse": {
+          "tracks": ["Jesus"],
           "kinds": ["teaching", "revelation", "conflict"],
           "region": "judea",
           "places": ["Jerusalem@Gen.14.18"]
         },
         "Blind Man Healed": {
+          "tracks": ["Jesus"],
           "kinds": ["healing", "conflict"],
           "region": "judea",
           "places": [{ "key": "Shelah@Neh.2.14", "label": "Pool of Siloam" }]
         },
         "The Good Shepherd Teaching": {
+          "tracks": ["Jesus"],
           "kinds": ["teaching", "parable"],
           "region": "judea",
           "places": ["Jerusalem@Gen.14.18"]
         },
-        "70 Sent Out": { "kinds": ["calling"], "region": "judea" },
-        "Good Samaritan Parable Taught": { "kinds": ["parable"], "region": "judea" },
+        "70 Sent Out": {
+          "tracks": ["Jesus"], "kinds": ["calling"], "region": "judea" },
+        "Good Samaritan Parable Taught": {
+          "tracks": ["Jesus"], "kinds": ["parable"], "region": "judea" },
         "Jesus meets Martha and Mary": {
+          "tracks": ["Jesus"],
           "kinds": ["encounter"],
           "region": "judea",
           "places": ["Bethany@Mat.21.17"]
         },
-        "Lord's Prayer Taught": { "kinds": ["teaching"], "region": "judea" },
+        "Lord's Prayer Taught": {
+          "tracks": ["Jesus"], "kinds": ["teaching"], "region": "judea" },
         "Woes and Parables with Pharisees": {
+          "tracks": ["Jesus"],
           "kinds": ["conflict", "parable"],
           "region": "judea"
         },
         "Healing Woman With 18-year Infirmity": {
+          "tracks": ["Jesus"],
           "kinds": ["healing", "conflict"],
           "region": "judea"
         },
-        "Mustard Seed and Leaven Teaching": { "kinds": ["parable"], "region": "judea" },
+        "Mustard Seed and Leaven Teaching": {
+          "tracks": ["Jesus"], "kinds": ["parable"], "region": "judea" },
         "Feast of Dedication": {
+          "tracks": ["Jesus"],
           "kinds": ["feast", "conflict"],
           "region": "judea",
           "places": ["Jerusalem@Gen.14.18"]
         },
         "Teaching and Healing in Perea to Jerusalem": {
+          "tracks": ["Jesus"],
           "kinds": ["journey", "teaching", "parable"],
           "region": "perea",
           "places": [{ "key": "Beth-barah@Jdg.7.24", "label": "Bethany beyond Jordan" }]
         },
         "Lazarus raised from the dead": {
+          "tracks": ["Jesus"],
           "kinds": ["raising"],
           "region": "judea",
           "places": ["Bethany@Mat.21.17"]
         },
         "Chief Priests Conspire Against Jesus": {
+          "tracks": ["Jesus"],
           "kinds": ["conflict"],
           "region": "judea",
           "places": ["Jerusalem@Gen.14.18"]
         },
-        "Jesus Withdraws to Ephraim": { "kinds": ["journey"], "region": "judea" },
-        "Lepers Healed": { "kinds": ["healing", "journey"], "region": "samaria" },
+        "Jesus Withdraws to Ephraim": {
+          "tracks": ["Jesus"], "kinds": ["journey"], "region": "judea" },
+        "Lepers Healed": {
+          "tracks": ["Jesus"], "kinds": ["healing", "journey"], "region": "samaria" },
         "Discourse on the Kingdom and Other Parables": {
+          "tracks": ["Jesus"],
           "kinds": ["teaching", "parable"],
           "region": "samaria"
         },
         "Jesus Teaches in Perea": {
+          "tracks": ["Jesus"],
           "kinds": ["teaching", "journey", "revelation"],
           "region": "perea"
         },
         "Healing Blind Bartimaeus": {
+          "tracks": ["Jesus"],
           "kinds": ["healing"],
           "region": "judea",
           "places": ["Jericho@Num.22.1"]
         },
         "Zaccheus Converted and Parable of the Pounds": {
+          "tracks": ["Jesus"],
           "kinds": ["encounter", "parable"],
           "region": "judea",
           "places": ["Jericho@Num.22.1"]
         },
         "Mary Anoints Jesus": {
+          "tracks": ["Jesus"],
           "kinds": ["encounter"],
           "region": "judea",
           "places": ["Bethany@Mat.21.17"]
         },
         "Holy Week": {
+          "tracks": ["Jesus"],
           "kinds": ["feast", "journey"],
           "region": "judea",
           "places": ["Jerusalem@Gen.14.18"]
@@ -2251,6 +2337,7 @@
       "expands": "First Missionary Journey",
       "events": {
         "First missionary journey begins": {
+          "tracks": ["Paul", "Barnabas"],
           "kinds": [
             "calling",
             "journey"
@@ -2264,6 +2351,7 @@
           ]
         },
         "Barnabas and Saul go to Cyprus": {
+          "tracks": ["Paul", "Barnabas"],
           "kinds": [
             "journey",
             "preaching"
@@ -2275,6 +2363,7 @@
           ]
         },
         "Mission to Antioch in Pisidia": {
+          "tracks": ["Paul", "Barnabas"],
           "kinds": [
             "preaching",
             "conflict"
@@ -2288,6 +2377,7 @@
           ]
         },
         "Mission to Iconium": {
+          "tracks": ["Paul", "Barnabas"],
           "kinds": [
             "preaching",
             "conflict"
@@ -2298,6 +2388,7 @@
           ]
         },
         "Mission to Lystra and Derbe": {
+          "tracks": ["Paul", "Barnabas"],
           "kinds": [
             "preaching",
             "healing",
@@ -2310,6 +2401,7 @@
           ]
         },
         "Return to Antioch in Syria": {
+          "tracks": ["Paul", "Barnabas"],
           "kinds": [
             "journey",
             "ecclesia"
@@ -2388,6 +2480,7 @@
       "expands": "Second Missionary Journey",
       "events": {
         "Paul and Barnabas part ways": {
+          "tracks": ["Paul", "Barnabas"],
           "kinds": [
             "conflict",
             "journey"
@@ -2401,6 +2494,7 @@
           ]
         },
         "Second Missionary Journey begins": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey",
             "ecclesia"
@@ -2414,6 +2508,7 @@
           ]
         },
         "Timothy Joins Paul and Silas": {
+          "tracks": ["Paul"],
           "kinds": [
             "calling",
             "ecclesia"
@@ -2425,6 +2520,7 @@
           ]
         },
         "Mission to Phrygia, Galatia and Asia": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey"
           ],
@@ -2434,6 +2530,7 @@
           ]
         },
         "Call to Macedonia": {
+          "tracks": ["Paul"],
           "kinds": [
             "revelation",
             "journey"
@@ -2445,6 +2542,7 @@
           ]
         },
         "Lydia's Conversion": {
+          "tracks": ["Paul"],
           "kinds": [
             "baptism"
           ],
@@ -2454,6 +2552,7 @@
           ]
         },
         "Paul casts demon out of soothsayer": {
+          "tracks": ["Paul"],
           "kinds": [
             "exorcism"
           ],
@@ -2463,6 +2562,7 @@
           ]
         },
         "Paul and Silas imprisoned": {
+          "tracks": ["Paul"],
           "kinds": [
             "conflict"
           ],
@@ -2472,6 +2572,7 @@
           ]
         },
         "Philippian jailer converted": {
+          "tracks": ["Paul"],
           "kinds": [
             "baptism"
           ],
@@ -2481,6 +2582,7 @@
           ]
         },
         "Paul and Silas released": {
+          "tracks": ["Paul"],
           "kinds": [
             "conflict"
           ],
@@ -2490,6 +2592,7 @@
           ]
         },
         "Uproar in Thessalonica": {
+          "tracks": ["Paul"],
           "kinds": [
             "conflict",
             "preaching"
@@ -2500,6 +2603,7 @@
           ]
         },
         "Mission to Berea": {
+          "tracks": ["Paul"],
           "kinds": [
             "preaching"
           ],
@@ -2509,6 +2613,7 @@
           ]
         },
         "Paul preaches in Athens": {
+          "tracks": ["Paul"],
           "kinds": [
             "preaching"
           ],
@@ -2518,6 +2623,7 @@
           ]
         },
         "Mission to Corinth, 1&2 Thess Written": {
+          "tracks": ["Paul"],
           "kinds": [
             "preaching",
             "letter"
@@ -2528,6 +2634,7 @@
           ]
         },
         "Return from Second Missionary Journey": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey"
           ],
@@ -2610,6 +2717,7 @@
       "expands": "Third Missionary Journey",
       "events": {
         "Third Missionary Journey Begins": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey"
           ],
@@ -2617,6 +2725,7 @@
           "places": []
         },
         "Mission to Ephesus/1 Cor Written": {
+          "tracks": ["Paul"],
           "kinds": [
             "preaching",
             "baptism",
@@ -2629,6 +2738,7 @@
           ]
         },
         "Riot in Ephesus": {
+          "tracks": ["Paul"],
           "kinds": [
             "conflict"
           ],
@@ -2638,6 +2748,7 @@
           ]
         },
         "Mission to Macedonia and Greece": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey",
             "ecclesia"
@@ -2649,6 +2760,7 @@
           ]
         },
         "Eutychus revived": {
+          "tracks": ["Paul"],
           "kinds": [
             "raising",
             "teaching"
@@ -2659,6 +2771,7 @@
           ]
         },
         "Voyage to Miletus": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey"
           ],
@@ -2668,6 +2781,7 @@
           ]
         },
         "Paul speaks to Ephesian Elders": {
+          "tracks": ["Paul"],
           "kinds": [
             "teaching",
             "ecclesia"
@@ -2678,6 +2792,7 @@
           ]
         },
         "Voyage from Miletus to Jerusalem": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey"
           ],
@@ -2738,6 +2853,7 @@
       "expands": "Paul's Journey to Rome",
       "events": {
         "Journey to Rome begins": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey"
           ],
@@ -2747,6 +2863,7 @@
           ]
         },
         "Paul is shipwrecked by a storm": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey",
             "sign"
@@ -2757,6 +2874,7 @@
           ]
         },
         "Paul stays at Malta": {
+          "tracks": ["Paul"],
           "kinds": [
             "healing"
           ],
@@ -2766,6 +2884,7 @@
           ]
         },
         "Paul arrives at Rome": {
+          "tracks": ["Paul"],
           "kinds": [
             "journey"
           ],
