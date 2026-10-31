@@ -615,7 +615,15 @@
           "region": "judea",
           "places": ["Jordan@Gen.13.10"]
         },
-        "Temptations of Jesus": { "kinds": ["conflict"], "region": "judea" },
+        "Temptations of Jesus": {
+          "kinds": ["conflict"],
+          "region": "judea",
+          "places": [
+            { "key": "Arabah@Deu.1.1", "label": "The wilderness (the Arabah)" },
+            { "key": "Jerusalem@Gen.14.18", "label": "Pinnacle of the temple" },
+            "Pisgah@Num.21.20"
+          ]
+        },
         "John's Witness": {
           "kinds": ["john-baptist", "revelation"],
           "region": "perea",
