@@ -91,3 +91,12 @@ entry in `places` must give valid coordinates and mark **every** location
 These records have origin `Haqor estimate`, no forms and no invented occurrences.
 The Gospel settings and the reasoning for their points are documented in
 `GOSPEL_JOURNEYS.md` and each record's summary.
+
+## Rachel's tomb
+
+Rachel died on the way from Bethel "but a little way to come to Ephrath"
+(Genesis 35:16-19), and her sepulchre was "in the border of Benjamin at
+Zelzah" (1 Samuel 10:2), near Ramah where she weeps for her children
+(Jeremiah 31:15). Haqor places it, and Zelzah with it, at Qubur Bani Isra'il
+between Hizma and Geva Binyamin, after Clermont-Ganneau and Macalister, not at
+the traditional tomb by Bethlehem where OpenBible.info places Zelzah.

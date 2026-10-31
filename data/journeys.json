@@ -16,6 +16,36 @@
       ]
     },
     {
+      "name": "Abram rescues Lot",
+      "summary": "Hearing that Lot is taken captive, Abram arms his trained servants and pursues the kings from Mamre to Dan, smites them as far as Hobah, and returning is met by Melchizedek, king of Salem.",
+      "stops": [
+        { "key": "Mamre@Gen.13.18", "name": "Mamre", "ref": "Gen.13.18", "label": "The oaks of Mamre" },
+        { "key": "Dan@Gen.14.14", "name": "Dan", "ref": "Gen.14.14" },
+        { "key": "Hobah@Gen.14.15", "name": "Hobah", "ref": "Gen.14.15", "note": "On the left hand (north) of Damascus." },
+        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "Gen.14.18", "label": "Salem", "note": "Melchizedek, king of Salem and priest of the most high God, blesses Abram." }
+      ]
+    },
+    {
+      "name": "Abraham in the south",
+      "summary": "From Mamre Abraham journeys south to Gerar, where Isaac is born, and on to Beersheba; from there he goes to offer Isaac in the land of Moriah, returns to Beersheba, and buries Sarah in the cave of Machpelah at Hebron.",
+      "stops": [
+        { "key": "Mamre@Gen.13.18", "name": "Mamre", "ref": "Gen.18.1", "label": "The oaks of Mamre" },
+        { "key": "Gerar@Gen.10.19", "name": "Gerar", "ref": "Gen.20.1" },
+        { "key": "Beersheba@Gen.21.14", "name": "Beersheba", "ref": "Gen.21.31", "note": "The well of the oath with Abimelech." },
+        { "key": "Moriah_Mount@Gen.22.2", "name": "Moriah Mount", "ref": "Gen.22.2", "label": "Mount Moriah", "note": "The third day's journey; where the temple was later built (2 Chronicles 3:1)." },
+        { "key": "Beersheba@Gen.21.14", "name": "Beersheba", "ref": "Gen.22.19" },
+        { "key": "Machpelah@Gen.23.9", "name": "Machpelah", "ref": "Gen.23.19", "label": "The cave of Machpelah", "note": "Sarah dies at Hebron and is buried here." }
+      ]
+    },
+    {
+      "name": "A wife for Isaac",
+      "summary": "Abraham's servant goes to Mesopotamia, to the city of Nahor, and brings Rebekah back to Isaac, who is dwelling by the well Lahai-roi in the south country.",
+      "stops": [
+        { "key": "Haran@Gen.11.31", "name": "Haran", "ref": "Gen.27.43", "label": "Haran, the city of Nahor", "note": "Where Laban, Rebekah's brother, lived (Genesis 24:10, 29; 27:43)." },
+        { "key": "Beer-lahai-roi@Gen.16.14", "name": "Beer-lahai-roi", "ref": "Gen.24.62", "label": "The well Lahai-roi" }
+      ]
+    },
+    {
       "name": "Jacob flees to Haran and returns",
       "summary": "Jacob goes from Beersheba to his uncle Laban at Haran, dreaming at Bethel on the way, and comes back twenty years later by Mahanaim, Peniel and Shechem to his father at Hebron.",
       "stops": [
@@ -27,7 +57,7 @@
         { "key": "Succoth@Gen.33.17", "name": "Succoth", "ref": "Gen.33.17" },
         { "key": "Shechem@Gen.12.6", "name": "Shechem", "ref": "Gen.33.18" },
         { "key": "Bethel@Gen.12.8", "name": "Bethel", "ref": "Gen.35.6" },
-        { "key": "Bethlehem@Gen.35.16", "name": "Bethlehem", "ref": "Gen.35.19", "note": "Rachel died on the way to Ephrath and was buried there." },
+        { "key": "Zelzah@1Sa.10.2", "name": "Zelzah", "ref": "1Sa.10.2", "label": "Rachel's tomb", "note": "Rachel dies with but a little way to come to Ephrath, and is buried in the way (Genesis 35:16-19): her sepulchre in the border of Benjamin at Zelzah (1 Samuel 10:2)." },
         { "key": "Hebron@Gen.13.18", "name": "Hebron", "ref": "Gen.35.27" }
       ]
     },
@@ -47,6 +77,14 @@
       "stops": [
         { "key": "Beersheba@Gen.21.14", "name": "Beersheba", "ref": "Gen.46.1" },
         { "key": "Goshen@Gen.45.10", "name": "Goshen", "ref": "Gen.46.28" }
+      ]
+    },
+    {
+      "name": "Jacob is buried in Canaan",
+      "summary": "Jacob dies in Egypt, charging his sons to bury him with his fathers; Joseph and his brothers carry him up with a great company to the cave of Machpelah before Mamre.",
+      "stops": [
+        { "key": "Goshen@Gen.45.10", "name": "Goshen", "ref": "Gen.47.27", "note": "Jacob dies in Egypt, seventeen years after coming down (47:28)." },
+        { "key": "Machpelah@Gen.23.9", "name": "Machpelah", "ref": "Gen.50.13", "label": "The cave of Machpelah" }
       ]
     },
     {
@@ -86,6 +124,22 @@
         { "key": "Diblathaim@Num.33.46", "name": "Diblathaim", "ref": "Num.33.46", "label": "Almon-diblathaim" },
         { "key": "Nebo_Mount@Num.27.12", "name": "Nebo Mount", "ref": "Num.33.47", "label": "Mountains of Abarim, before Nebo" },
         { "key": "Moab_Plains@Num.22.1", "name": "Moab Plains", "ref": "Num.33.48", "label": "Plains of Moab", "note": "By the Jordan at Jericho." }
+      ]
+    },
+    {
+      "name": "Joshua's campaigns",
+      "summary": "From Shittim over Jordan to Gilgal; Jericho and Ai; the covenant at mount Ebal; back to the camp at Gilgal, up by night to relieve Gibeon and the chase down the way of Beth-horon; then north to the waters of Merom and Hazor.",
+      "stops": [
+        { "key": "Shittim@Num.25.1", "name": "Shittim", "ref": "Jos.3.1" },
+        { "key": "Gilgal@Deu.11.30", "name": "Gilgal", "ref": "Jos.4.19", "note": "On the east border of Jericho, where the twelve stones are pitched." },
+        { "key": "Jericho@Num.22.1", "name": "Jericho", "ref": "Jos.6.2" },
+        { "key": "Ai@Gen.12.8", "name": "Ai", "ref": "Jos.8.1" },
+        { "key": "Ebal_Mount@Deu.11.29", "name": "Ebal Mount", "ref": "Jos.8.30", "label": "Mount Ebal" },
+        { "key": "Gilgal@Deu.11.30", "name": "Gilgal", "ref": "Jos.9.6" },
+        { "key": "Gibeon@Jos.9.3", "name": "Gibeon", "ref": "Jos.10.10" },
+        { "key": "Beth-horon_Lower@Jos.10.10", "name": "Beth-horon Lower", "ref": "Jos.10.10", "label": "Beth-horon" },
+        { "key": "Merom@Jos.11.5", "name": "Merom", "ref": "Jos.11.7", "label": "The waters of Merom" },
+        { "key": "Hazor@Jos.11.1", "name": "Hazor", "ref": "Jos.11.10" }
       ]
     },
     {

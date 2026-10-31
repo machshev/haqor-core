@@ -116,7 +116,37 @@
         "John.21.1-25"
       ],
       "note": "Expanded into individual appearances, including John 21. This spans the forty days before the ascension (Acts 1:3), rather than all occurring on resurrection day."
+    },
+    {
+      "id": 83,
+      "was": "Isaac Marries Rebekah",
+      "verses": [
+        "Gen.24.1-67",
+        "Gen.25.20"
+      ],
+      "why": "Theographic gives only Genesis 25:20; the account of the marriage is chapter 24."
+    },
+    {
+      "id": 125,
+      "was": "Exodus from Egypt",
+      "title": "The Passover and the exodus from Egypt",
+      "verses": [
+        "Exod.12.1-51",
+        "Exod.13.1-16"
+      ],
+      "why": "Theographic's verses run from Exodus 6:7, through the plagues, which are now their own event."
+    },
+    {
+      "id": 131,
+      "was": "War with Canaanites",
+      "title": "Israel encamped at Gilgal",
+      "verses": [
+        "Josh.4.1-24",
+        "Josh.5.1-15"
+      ],
+      "why": "Theographic's one event for Joshua 4-12 is divided: the camp at Gilgal here, then Jericho, Ai, Gibeon and Merom, Haqor's own events."
     }
+
   ],
   "added": [
     {
@@ -384,7 +414,491 @@
         "jesus_905"
       ],
       "note": "Herod's western palace is the working identification of the governor's headquarters (John 18:28-19:16; Mark 15:16). The Antonia fortress is an alternative tradition. The exact trial courtyard is uncertain."
+    },
+    {
+      "id": 10003,
+      "after": 75,
+      "title": "Abram rescues Lot; Melchizedek blesses him",
+      "verses": [
+        "Gen.14.1-24"
+      ],
+      "people": [
+        "abraham_58",
+        "lot_1830"
+      ],
+      "note": "Lot is taken captive from Sodom. Abram pursues the kings from Mamre to Dan, and smites them as far as Hobah, north of Damascus; returning, he is met by Melchizedek, king of Salem and priest of the most high God, and gives him tithes."
+    },
+    {
+      "id": 10004,
+      "after": 79,
+      "title": "Abraham sojourns in Gerar",
+      "verses": [
+        "Gen.20.1-18"
+      ],
+      "people": [
+        "abraham_58",
+        "sarah_2473",
+        "abimelech_41"
+      ],
+      "note": "Abraham journeys from Mamre toward the south and sojourns in Gerar, where Abimelech takes Sarah and is warned in a dream."
+    },
+    {
+      "id": 10005,
+      "after": 80,
+      "title": "Hagar and Ishmael sent away",
+      "verses": [
+        "Gen.21.8-21"
+      ],
+      "people": [
+        "hagar_1348",
+        "ishmael_630",
+        "abraham_58"
+      ],
+      "note": "At Isaac's weaning Hagar and Ishmael are sent away, and wander in the wilderness of Beersheba until God shows Hagar a well."
+    },
+    {
+      "id": 10006,
+      "after": 10005,
+      "title": "Abraham's covenant with Abimelech at Beersheba",
+      "verses": [
+        "Gen.21.22-34"
+      ],
+      "people": [
+        "abraham_58",
+        "abimelech_41"
+      ],
+      "note": "Abraham and Abimelech swear an oath over a well, and the place is called Beer-sheba, the well of the oath."
+    },
+    {
+      "id": 10007,
+      "after": 10006,
+      "title": "Abraham offers Isaac on Mount Moriah",
+      "verses": [
+        "Gen.22.1-19"
+      ],
+      "people": [
+        "abraham_58",
+        "isaac_616"
+      ],
+      "note": "From Beersheba to the land of Moriah, the third day, where the temple was later built (2 Chronicles 3:1). Yahweh provides the ram, and swears to bless Abraham's seed, in whom all nations shall be blessed (Galatians 3:16)."
+    },
+    {
+      "id": 10008,
+      "after": 10007,
+      "title": "Death of Sarah; the cave of Machpelah",
+      "year": -1859,
+      "duration": "1D",
+      "verses": [
+        "Gen.23.1-20"
+      ],
+      "people": [
+        "sarah_2473",
+        "abraham_58"
+      ],
+      "note": "Sarah dies at Hebron, aged 127, and Abraham buys the cave of Machpelah before Mamre from the sons of Heth: his only possession in the land of promise."
+    },
+    {
+      "id": 10009,
+      "after": 88,
+      "title": "Isaac sojourns in Gerar",
+      "verses": [
+        "Gen.26.1-33"
+      ],
+      "people": [
+        "isaac_616",
+        "rebekah_2401",
+        "abimelech_41"
+      ],
+      "note": "In the famine Yahweh tells Isaac not to go down into Egypt, and renews the oath sworn to Abraham. Isaac sojourns in Gerar, digs again his father's wells, and goes up to Beersheba, where he too makes a covenant with Abimelech."
+    },
+    {
+      "id": 10010,
+      "after": 10009,
+      "year": -1766,
+      "title": "Jacob takes Esau's blessing",
+      "verses": [
+        "Gen.27.1-46",
+        "Gen.28.1-9"
+      ],
+      "people": [
+        "isaac_616",
+        "israel_682",
+        "esau_1216",
+        "rebekah_2401"
+      ],
+      "note": "At Beersheba Jacob, by his mother's counsel, receives the blessing of the firstborn, and is sent away to Padan-aram to take a wife of Laban's daughters, out of Esau's reach."
+    },
+    {
+      "id": 10011,
+      "after": 10010,
+      "title": "Jacob's dream at Bethel",
+      "verses": [
+        "Gen.28.10-22"
+      ],
+      "people": [
+        "israel_682"
+      ],
+      "note": "Going out from Beersheba toward Haran, Jacob sleeps at Luz and sees the ladder set up on the earth; Yahweh gives him the land and the promise made to Abraham and Isaac, and he calls the place Bethel."
+    },
+    {
+      "id": 10012,
+      "after": 10011,
+      "title": "Jacob serves Laban for Leah and Rachel",
+      "verses": [
+        "Gen.29.1-30"
+      ],
+      "people": [
+        "israel_682",
+        "rachel_2386",
+        "leah_1813"
+      ],
+      "note": "At the well of Haran Jacob meets Rachel, serves Laban seven years for her, is given Leah, and serves seven more for Rachel."
+    },
+    {
+      "id": 10013,
+      "after": 102,
+      "year": -1740,
+      "title": "Jacob leaves Laban; the covenant of Galeed",
+      "verses": [
+        "Gen.30.25-43",
+        "Gen.31.1-55"
+      ],
+      "people": [
+        "israel_682",
+        "rachel_2386",
+        "leah_1813"
+      ],
+      "note": "After twenty years Jacob flees with his household; Laban overtakes him in mount Gilead, and they raise the heap Galeed and the pillar Mizpah between them."
+    },
+    {
+      "id": 10014,
+      "after": 10013,
+      "year": -1740,
+      "title": "Jacob wrestles at Peniel",
+      "verses": [
+        "Gen.32.1-32"
+      ],
+      "people": [
+        "israel_682"
+      ],
+      "note": "The angels of God meet him at Mahanaim. At the ford Jabbok he wrestles until daybreak and is named Israel, and calls the place Peniel: I have seen God face to face."
+    },
+    {
+      "id": 10015,
+      "after": 10014,
+      "year": -1740,
+      "title": "Jacob meets Esau and settles at Shechem",
+      "verses": [
+        "Gen.33.1-20"
+      ],
+      "people": [
+        "israel_682",
+        "esau_1216"
+      ],
+      "note": "Esau runs to meet him and they are reconciled. Jacob builds a house at Succoth, then comes to Shechem, buys a field, and raises an altar, El-elohe-Israel."
+    },
+    {
+      "id": 10016,
+      "after": 10015,
+      "year": -1740,
+      "title": "Dinah and the men of Shechem",
+      "verses": [
+        "Gen.34.1-31"
+      ],
+      "people": [
+        "dinah_1012",
+        "israel_682"
+      ],
+      "note": "Shechem the son of Hamor defiles Dinah; Simeon and Levi slay the men of the city."
+    },
+    {
+      "id": 10017,
+      "after": 10016,
+      "year": -1740,
+      "title": "Jacob returns to Bethel",
+      "verses": [
+        "Gen.35.1-15"
+      ],
+      "people": [
+        "israel_682"
+      ],
+      "note": "Jacob's household put away their strange gods; at Bethel God appears to him again, confirms the name Israel, and renews the promise of the land."
+    },
+    {
+      "id": 10018,
+      "after": 115,
+      "year": -1706,
+      "title": "Jacob goes down to Egypt",
+      "verses": [
+        "Gen.46.1-34",
+        "Gen.47.1-12"
+      ],
+      "people": [
+        "israel_682",
+        "joseph_1710"
+      ],
+      "note": "At Beersheba God tells Jacob, Fear not to go down into Egypt; I will go down with thee. Joseph meets him in Goshen, and he stands before Pharaoh, a hundred and thirty years old."
+    },
+    {
+      "id": 10019,
+      "after": 122,
+      "year": -1491,
+      "title": "The burning bush at Horeb",
+      "verses": [
+        "Exod.3.1-22",
+        "Exod.4.1-17"
+      ],
+      "people": [
+        "moses_2108"
+      ],
+      "note": "Keeping Jethro's flock, Moses comes to Horeb, the mountain of God, in Midian; Yahweh declares his name, I AM THAT I AM, and sends him to bring Israel out of Egypt."
+    },
+    {
+      "id": 10020,
+      "after": 10019,
+      "title": "Moses before Pharaoh; the plagues",
+      "verses": [
+        "Exod.4.18-31",
+        "Exod.5.1-23",
+        "Exod.6.1-30",
+        "Exod.7.1-25",
+        "Exod.8.1-32",
+        "Exod.9.1-35",
+        "Exod.10.1-29",
+        "Exod.11.1-10"
+      ],
+      "people": [
+        "moses_2108",
+        "aaron_1"
+      ],
+      "note": "Moses returns from Midian, meets Aaron at the mount of God, and asks Pharaoh to let the people go; the plagues fall on Egypt, and Goshen is spared."
+    },
+    {
+      "id": 10021,
+      "after": 125,
+      "title": "Crossing the Red Sea",
+      "verses": [
+        "Exod.13.17-22",
+        "Exod.14.1-31",
+        "Exod.15.1-21"
+      ],
+      "people": [
+        "moses_2108"
+      ],
+      "note": "Led by the pillar of cloud by the way of the wilderness of the Red sea, Israel camps before Pi-hahiroth and passes through the sea on dry ground; Pharaoh's host is drowned. The song of Moses."
+    },
+    {
+      "id": 10022,
+      "after": 10021,
+      "title": "The bitter waters of Marah; Elim",
+      "verses": [
+        "Exod.15.22-27"
+      ],
+      "people": [
+        "moses_2108"
+      ],
+      "note": "Three days without water, then the bitter waters of Marah made sweet by the tree; then Elim, with twelve wells and seventy palm trees."
+    },
+    {
+      "id": 10023,
+      "after": 10022,
+      "title": "Manna in the wilderness of Sin",
+      "verses": [
+        "Exod.16.1-36"
+      ],
+      "people": [
+        "moses_2108",
+        "aaron_1"
+      ],
+      "note": "The people murmur for bread; Yahweh gives quails at evening and manna in the morning, and the sabbath rest."
+    },
+    {
+      "id": 10024,
+      "after": 10023,
+      "title": "Water from the rock; Amalek at Rephidim",
+      "verses": [
+        "Exod.17.1-16"
+      ],
+      "people": [
+        "moses_2108",
+        "joshua_1727",
+        "aaron_1"
+      ],
+      "note": "Moses smites the rock in Horeb and the place is called Massah and Meribah; Joshua defeats Amalek while Aaron and Hur hold up Moses' hands."
+    },
+    {
+      "id": 10025,
+      "after": 10024,
+      "title": "Jethro visits Moses at the mount of God",
+      "verses": [
+        "Exod.18.1-27"
+      ],
+      "people": [
+        "moses_2108"
+      ],
+      "note": "Jethro brings Zipporah and her sons to Moses where he camped at the mount of God, and counsels him to appoint judges."
+    },
+    {
+      "id": 10026,
+      "after": 128,
+      "year": -1490,
+      "title": "The spies sent from Kadesh",
+      "verses": [
+        "Num.13.1-33",
+        "Num.14.1-45"
+      ],
+      "people": [
+        "moses_2108",
+        "joshua_1727",
+        "caleb_537"
+      ],
+      "note": "Twelve spies search the land as far as Hebron and the brook Eshcol; ten bring an evil report, and the generation is turned back into the wilderness for forty years. Joshua and Caleb alone are spared to enter."
+    },
+    {
+      "id": 10027,
+      "after": 10026,
+      "year": -1452,
+      "title": "Water from the rock at Meribah; Miriam dies",
+      "verses": [
+        "Num.20.1-13"
+      ],
+      "people": [
+        "moses_2108",
+        "aaron_1"
+      ],
+      "note": "In the first month of the fortieth year, at Kadesh, Miriam dies; Moses smites the rock twice and is barred from bringing the congregation into the land."
+    },
+    {
+      "id": 10028,
+      "after": 10027,
+      "title": "Aaron dies on Mount Hor",
+      "verses": [
+        "Num.20.22-29",
+        "Num.33.37-39"
+      ],
+      "people": [
+        "aaron_1",
+        "moses_2108"
+      ],
+      "note": "Aaron's garments are put on Eleazar his son, and Aaron dies in the top of the mount, by the border of Edom, aged 123."
+    },
+    {
+      "id": 10029,
+      "after": 10028,
+      "title": "Sihon and Og overthrown",
+      "verses": [
+        "Num.21.21-35"
+      ],
+      "people": [
+        "moses_2108"
+      ],
+      "note": "Israel takes Heshbon, the city of Sihon king of the Amorites, and smites Og king of Bashan at Edrei."
+    },
+    {
+      "id": 10030,
+      "after": 10029,
+      "title": "Balaam blesses Israel",
+      "verses": [
+        "Num.22.1-41",
+        "Num.23.1-30",
+        "Num.24.1-25"
+      ],
+      "people": [
+        "moses_2108"
+      ],
+      "note": "Balak brings Balaam to the high places of Baal, to the top of Pisgah and to the top of Peor to curse Israel camped in the plains of Moab; he blesses them three times, and foretells the Star out of Jacob."
+    },
+    {
+      "id": 10031,
+      "after": 10030,
+      "title": "Moses' words in the plains of Moab",
+      "verses": [
+        "Deut.1.1-5",
+        "Deut.31.1-30"
+      ],
+      "people": [
+        "moses_2108",
+        "joshua_1727"
+      ],
+      "note": "On this side Jordan, in the land of Moab, Moses declares the law again, and gives Joshua the charge to lead Israel over."
+    },
+    {
+      "id": 10032,
+      "after": 131,
+      "title": "Jericho falls",
+      "verses": [
+        "Josh.6.1-27"
+      ],
+      "people": [
+        "joshua_1727"
+      ],
+      "note": "Seven days round the city, the seventh day seven times; the wall falls flat, and Rahab and her household are saved."
+    },
+    {
+      "id": 10033,
+      "after": 10032,
+      "title": "Ai taken; the covenant at Ebal",
+      "verses": [
+        "Josh.7.1-26",
+        "Josh.8.1-35"
+      ],
+      "people": [
+        "joshua_1727"
+      ],
+      "note": "Achan's sin brings defeat at Ai; after judgment in the valley of Achor, Ai is taken by ambush. Joshua builds an altar on mount Ebal and reads the law, half the people over against mount Gerizim."
+    },
+    {
+      "id": 10034,
+      "after": 10033,
+      "title": "Gibeon; the sun stands still",
+      "verses": [
+        "Josh.9.1-27",
+        "Josh.10.1-43"
+      ],
+      "people": [
+        "joshua_1727"
+      ],
+      "note": "The Gibeonites gain a league by deceit; the five kings of the Amorites besiege Gibeon, and are chased by the way of Beth-horon while the sun stands still upon Gibeon."
+    },
+    {
+      "id": 10035,
+      "after": 10034,
+      "title": "The northern kings at the waters of Merom",
+      "verses": [
+        "Josh.11.1-23"
+      ],
+      "people": [
+        "joshua_1727"
+      ],
+      "note": "Jabin king of Hazor gathers the kings of the north at the waters of Merom; Joshua smites them suddenly and burns Hazor."
+    },
+    {
+      "id": 10036,
+      "after": 132,
+      "title": "The tabernacle at Shiloh; the land divided by lot",
+      "verses": [
+        "Josh.18.1-28",
+        "Josh.19.1-51"
+      ],
+      "people": [
+        "joshua_1727"
+      ],
+      "note": "The congregation sets up the tabernacle at Shiloh, and Joshua casts lots before Yahweh for the seven tribes that remain; he is given Timnath-serah in mount Ephraim."
+    },
+    {
+      "id": 10037,
+      "after": 133,
+      "year": -1425,
+      "title": "Joshua's covenant at Shechem",
+      "verses": [
+        "Josh.24.1-28"
+      ],
+      "people": [
+        "joshua_1727"
+      ],
+      "note": "Joshua gathers the tribes to Shechem: choose you this day whom ye will serve; as for me and my house, we will serve Yahweh."
     }
+
   ],
   "names": [
     { "id": "daughter_of_lot_younger_984", "key": null, "why": "A word of the name, Lot, finds Lot himself; TIPNR has no record of his daughters." },

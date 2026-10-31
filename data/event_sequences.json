@@ -4636,7 +4636,7 @@
     {
       "id": "abraham",
       "title": "Abraham and Isaac",
-      "note": "The promises and the household of Abraham in Genesis 11-25. The promise precedes the entry into Canaan (Genesis 12:1-5). Terah’s death precedes Abraham’s removal in Acts 7:4. The long sojourn and overlapping lifetimes remain on the overview.",
+      "note": "The promises and the household of Abraham in Genesis 11–25. The promise precedes the entry into Canaan (Genesis 12:1–5), and was given in Ur of the Chaldees, before he dwelt in Haran (Acts 7:2–4). Terah’s death precedes Abraham’s removal (Acts 7:4). Each event is placed where the text puts it; the ways between them are the journeys of the places map.",
       "chains": [
         {
           "basis": "Genesis 11:26; Acts 7:4",
@@ -4653,9 +4653,15 @@
             "Abraham enters Canaan",
             "Abraham goes to Egypt",
             "Abraham and Lot Separate",
+            "Abram rescues Lot; Melchizedek blesses him",
             "Birth of Ishmael",
             "Sodom Destroyed",
+            "Abraham sojourns in Gerar",
             "Birth of Isaac",
+            "Hagar and Ishmael sent away",
+            "Abraham's covenant with Abimelech at Beersheba",
+            "Abraham offers Isaac on Mount Moriah",
+            "Death of Sarah; the cave of Machpelah",
             "Isaac Marries Rebekah",
             "Birth of Jacob and Esau",
             "Death of Abraham"
@@ -4684,7 +4690,8 @@
                 "Abrahamic Covenant",
                 "Abraham enters Canaan",
                 "Abraham goes to Egypt",
-                "Abraham and Lot Separate"
+                "Abraham and Lot Separate",
+                "Abram rescues Lot; Melchizedek blesses him"
               ]
             },
             {
@@ -4692,7 +4699,12 @@
               "events": [
                 "Birth of Ishmael",
                 "Sodom Destroyed",
+                "Abraham sojourns in Gerar",
                 "Birth of Isaac",
+                "Hagar and Ishmael sent away",
+                "Abraham's covenant with Abimelech at Beersheba",
+                "Abraham offers Isaac on Mount Moriah",
+                "Death of Sarah; the cave of Machpelah",
                 "Isaac Marries Rebekah",
                 "Birth of Jacob and Esau",
                 "Death of Abraham",
@@ -4704,76 +4716,276 @@
       ],
       "events": {
         "Birth of Abraham": {
+          "tracks": [
+            "Abraham"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Ur@Gen.11.28",
+              "label": "Ur of the Chaldees"
+            }
           ]
         },
         "Death of Terah": {
+          "tracks": [
+            "Abraham"
+          ],
           "kinds": [
             "death"
-          ]
-        },
-        "Abraham enters Canaan": {
-          "kinds": [
-            "journey"
+          ],
+          "places": [
+            "Haran@Gen.11.31"
           ]
         },
         "Abrahamic Covenant": {
+          "tracks": [
+            "Abraham"
+          ],
           "kinds": [
             "covenant"
+          ],
+          "places": [
+            {
+              "key": "Ur@Gen.11.28",
+              "label": "Ur of the Chaldees"
+            }
+          ]
+        },
+        "Abraham enters Canaan": {
+          "tracks": [
+            "Abraham"
+          ],
+          "kinds": [
+            "journey"
+          ],
+          "places": [
+            "Shechem@Gen.12.6",
+            {
+              "key": "Bethel@Gen.12.8",
+              "label": "Between Bethel and Ai"
+            },
+            "Negeb@Gen.12.9"
           ]
         },
         "Abraham goes to Egypt": {
+          "tracks": [
+            "Abraham"
+          ],
           "kinds": [
             "journey"
+          ],
+          "places": [
+            "Egypt@Gen.12.10"
           ]
         },
         "Abraham and Lot Separate": {
+          "tracks": [
+            "Abraham"
+          ],
           "kinds": [
             "encounter"
+          ],
+          "places": [
+            {
+              "key": "Bethel@Gen.12.8",
+              "label": "Between Bethel and Ai"
+            },
+            {
+              "key": "Mamre@Gen.13.18",
+              "label": "The oaks of Mamre, in Hebron"
+            }
+          ]
+        },
+        "Abram rescues Lot; Melchizedek blesses him": {
+          "tracks": [
+            "Abraham",
+            "Lot"
+          ],
+          "kinds": [
+            "conflict",
+            "covenant"
+          ],
+          "places": [
+            "Dan@Gen.14.14",
+            "Hobah@Gen.14.15",
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Salem"
+            }
           ]
         },
         "Birth of Ishmael": {
+          "tracks": [
+            "Hagar and Ishmael"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Beer-lahai-roi@Gen.16.14",
+              "label": "The well Beer-lahai-roi"
+            }
           ]
         },
         "Sodom Destroyed": {
+          "tracks": [
+            "Lot"
+          ],
           "kinds": [
             "judgement"
+          ],
+          "places": [
+            "Sodom@Gen.10.19",
+            "Zoar@Gen.13.10"
+          ]
+        },
+        "Abraham sojourns in Gerar": {
+          "tracks": [
+            "Abraham"
+          ],
+          "kinds": [
+            "encounter"
+          ],
+          "places": [
+            "Gerar@Gen.10.19"
           ]
         },
         "Birth of Isaac": {
+          "tracks": [
+            "Abraham",
+            "Isaac"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            "Gerar@Gen.10.19"
+          ]
+        },
+        "Hagar and Ishmael sent away": {
+          "tracks": [
+            "Hagar and Ishmael"
+          ],
+          "kinds": [
+            "journey"
+          ],
+          "places": [
+            {
+              "key": "Beersheba@Gen.21.14",
+              "label": "The wilderness of Beersheba"
+            }
+          ]
+        },
+        "Abraham's covenant with Abimelech at Beersheba": {
+          "tracks": [
+            "Abraham"
+          ],
+          "kinds": [
+            "covenant"
+          ],
+          "places": [
+            "Beersheba@Gen.21.14"
+          ]
+        },
+        "Abraham offers Isaac on Mount Moriah": {
+          "tracks": [
+            "Abraham",
+            "Isaac"
+          ],
+          "kinds": [
+            "covenant",
+            "revelation"
+          ],
+          "places": [
+            {
+              "key": "Moriah_Mount@Gen.22.2",
+              "label": "Mount Moriah"
+            }
+          ]
+        },
+        "Death of Sarah; the cave of Machpelah": {
+          "tracks": [
+            "Abraham"
+          ],
+          "kinds": [
+            "death"
+          ],
+          "places": [
+            {
+              "key": "Machpelah@Gen.23.9",
+              "label": "The cave of Machpelah"
+            }
           ]
         },
         "Isaac Marries Rebekah": {
+          "tracks": [
+            "Rebekah"
+          ],
           "kinds": [
-            "encounter"
+            "encounter",
+            "journey"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, the city of Nahor"
+            },
+            {
+              "key": "Beer-lahai-roi@Gen.16.14",
+              "label": "The well Beer-lahai-roi"
+            }
           ]
         },
         "Birth of Jacob and Esau": {
+          "tracks": [
+            "Isaac",
+            "Rebekah"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Beer-lahai-roi@Gen.16.14",
+              "label": "The well Beer-lahai-roi"
+            }
           ]
         },
         "Death of Abraham": {
+          "tracks": [
+            "Abraham",
+            "Isaac",
+            "Hagar and Ishmael"
+          ],
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Machpelah@Gen.23.9",
+              "label": "The cave of Machpelah"
+            }
           ]
         },
         "Death of Ishmael": {
+          "tracks": [
+            "Hagar and Ishmael"
+          ],
           "kinds": [
             "death"
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "jacob-household",
       "title": "The household of Jacob",
-      "note": "Genesis 29-35 orders the births as narrated. Joseph’s life opens its own sequence. The account gives the births of the sons of different mothers in this order; this does not supply dates for them.",
+      "note": "Genesis 26-35 and 49-50: Isaac in Gerar, Jacob's flight to Haran, the sons born there, and his return to Bethel and Hebron, each placed where the text puts it. The account gives the births of the sons of different mothers in this order; this does not supply dates for them. Joseph’s life opens its own sequence.",
       "chains": [
         {
           "basis": "Genesis 29:32-30:24: the children born in Padan-aram",
@@ -4806,6 +5018,28 @@
           "events": [
             "Birth of Perez"
           ]
+        },
+        {
+          "basis": "Genesis 26-29: Isaac in Gerar, Jacob sent to Haran",
+          "events": [
+            "Isaac sojourns in Gerar",
+            "Jacob takes Esau's blessing",
+            "Jacob's dream at Bethel",
+            "Jacob serves Laban for Leah and Rachel",
+            "Birth of Reuben"
+          ]
+        },
+        {
+          "basis": "Genesis 30:25-35:20: Jacob's return to Canaan",
+          "events": [
+            "Birth of Joseph",
+            "Jacob leaves Laban; the covenant of Galeed",
+            "Jacob wrestles at Peniel",
+            "Jacob meets Esau and settles at Shechem",
+            "Dinah and the men of Shechem",
+            "Jacob returns to Bethel",
+            "Rachel dies giving birth to Benjamin"
+          ]
         }
       ],
       "expands": "Lifetime of Jacob",
@@ -4815,6 +5049,15 @@
           "title": "Episodes",
           "note": "Sections of the account; only the connecting lines assert an order between events.",
           "groups": [
+            {
+              "title": "Isaac and the flight to Haran",
+              "events": [
+                "Isaac sojourns in Gerar",
+                "Jacob takes Esau's blessing",
+                "Jacob's dream at Bethel",
+                "Jacob serves Laban for Leah and Rachel"
+              ]
+            },
             {
               "title": "Children in Padan-aram",
               "events": [
@@ -4833,6 +5076,16 @@
               ]
             },
             {
+              "title": "The return to Canaan",
+              "events": [
+                "Jacob leaves Laban; the covenant of Galeed",
+                "Jacob wrestles at Peniel",
+                "Jacob meets Esau and settles at Shechem",
+                "Dinah and the men of Shechem",
+                "Jacob returns to Bethel"
+              ]
+            },
+            {
               "title": "The household in Canaan and Egypt",
               "events": [
                 "Rachel dies giving birth to Benjamin",
@@ -4845,69 +5098,312 @@
         }
       ],
       "events": {
+        "Isaac sojourns in Gerar": {
+          "tracks": [
+            "Isaac"
+          ],
+          "kinds": [
+            "covenant",
+            "encounter"
+          ],
+          "places": [
+            "Gerar@Gen.10.19",
+            "Beersheba@Gen.21.14"
+          ]
+        },
+        "Jacob takes Esau's blessing": {
+          "tracks": [
+            "Isaac",
+            "Jacob",
+            "Esau"
+          ],
+          "kinds": [
+            "covenant",
+            "conflict"
+          ],
+          "places": [
+            "Beersheba@Gen.21.14"
+          ]
+        },
+        "Jacob's dream at Bethel": {
+          "tracks": [
+            "Jacob"
+          ],
+          "kinds": [
+            "revelation",
+            "covenant"
+          ],
+          "places": [
+            "Bethel@Gen.12.8"
+          ]
+        },
+        "Jacob serves Laban for Leah and Rachel": {
+          "tracks": [
+            "Jacob"
+          ],
+          "kinds": [
+            "encounter"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
+          ]
+        },
         "Birth of Reuben": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Simeon": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Levi": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Judah": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Dan": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Naphtali": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Gad": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Asher": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Issachar": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Zebulon": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Dinah": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
           ]
         },
         "Birth of Joseph": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            }
+          ]
+        },
+        "Jacob leaves Laban; the covenant of Galeed": {
+          "tracks": [
+            "Jacob"
+          ],
+          "kinds": [
+            "journey",
+            "covenant"
+          ],
+          "places": [
+            {
+              "key": "Haran@Gen.11.31",
+              "label": "Haran, in Padan-aram"
+            },
+            {
+              "key": "Gilead@Gen.31.21",
+              "label": "Mount Gilead: Galeed and Mizpah"
+            }
+          ]
+        },
+        "Jacob wrestles at Peniel": {
+          "tracks": [
+            "Jacob"
+          ],
+          "kinds": [
+            "revelation"
+          ],
+          "places": [
+            "Mahanaim@Gen.32.2",
+            "Peniel@Gen.32.30"
+          ]
+        },
+        "Jacob meets Esau and settles at Shechem": {
+          "tracks": [
+            "Jacob",
+            "Esau"
+          ],
+          "kinds": [
+            "encounter",
+            "journey"
+          ],
+          "places": [
+            "Succoth@Gen.33.17",
+            "Shechem@Gen.12.6"
+          ]
+        },
+        "Dinah and the men of Shechem": {
+          "tracks": [
+            "Jacob"
+          ],
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            "Shechem@Gen.12.6"
+          ]
+        },
+        "Jacob returns to Bethel": {
+          "tracks": [
+            "Jacob"
+          ],
+          "kinds": [
+            "revelation",
+            "covenant"
+          ],
+          "places": [
+            "Bethel@Gen.12.8"
           ]
         },
         "Rachel dies giving birth to Benjamin": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
+            "birth",
             "death"
+          ],
+          "places": [
+            {
+              "key": "Zelzah@1Sa.10.2",
+              "label": "Rachel's tomb, on the way to Ephrath"
+            },
+            {
+              "key": "Mamre@Gen.13.18",
+              "label": "Mamre, by Hebron"
+            }
           ]
         },
         "Birth of Perez": {
@@ -4916,21 +5412,43 @@
           ]
         },
         "Death of Isaac": {
+          "tracks": [
+            "Isaac",
+            "Jacob",
+            "Esau"
+          ],
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Mamre@Gen.13.18",
+              "label": "Mamre, by Hebron"
+            }
           ]
         },
         "Death of Jacob": {
+          "tracks": [
+            "Jacob"
+          ],
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Goshen@Gen.45.10",
+            {
+              "key": "Machpelah@Gen.23.9",
+              "label": "The cave of Machpelah"
+            }
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "joseph",
       "title": "Joseph in Egypt",
-      "note": "Genesis 37 and 39-50. The seven years of famine begin before the brothers’ visits; a span’s place in the graph marks its beginning, not its completion. Jacob’s death is shown in his own household sequence.",
+      "note": "Genesis 37 and 39-50. The seven years of famine begin before the brothers’ visits; a span’s place in the graph marks its beginning, not its completion. Jacob’s death is shown in his own household sequence. Each event is placed where the text puts it.",
       "chains": [
         {
           "basis": "Genesis 37; 39-42; 45; 50: Joseph and his brothers",
@@ -4942,6 +5460,7 @@
             "7 years of famine",
             "Joseph's brothers go to Egypt",
             "Joseph's brothers return to Egypt",
+            "Jacob goes down to Egypt",
             "Death of Joseph"
           ]
         }
@@ -4968,6 +5487,7 @@
                 "7 years of famine",
                 "Joseph's brothers go to Egypt",
                 "Joseph's brothers return to Egypt",
+                "Jacob goes down to Egypt",
                 "Death of Joseph"
               ]
             }
@@ -4976,47 +5496,128 @@
       ],
       "events": {
         "Joseph sold to Egypt": {
+          "tracks": [
+            "Joseph"
+          ],
           "kinds": [
+            "journey",
             "conflict"
+          ],
+          "places": [
+            {
+              "key": "Hebron_Valley@Gen.37.14",
+              "label": "The vale of Hebron"
+            },
+            "Shechem@Gen.12.6",
+            "Dothan@Gen.37.17",
+            "Egypt@Gen.12.10"
           ]
         },
         "Joseph imprisoned": {
+          "tracks": [
+            "Joseph"
+          ],
           "kinds": [
             "conflict"
+          ],
+          "places": [
+            "Egypt@Gen.12.10"
           ]
         },
         "Joseph Promoted in Egypt": {
+          "tracks": [
+            "Joseph"
+          ],
           "kinds": [
-            "calling"
+            "revelation"
+          ],
+          "places": [
+            "Egypt@Gen.12.10"
           ]
         },
         "7 years of plenty": {
+          "tracks": [
+            "Joseph"
+          ],
           "kinds": [
             "sign"
+          ],
+          "places": [
+            "Egypt@Gen.12.10"
           ]
         },
         "7 years of famine": {
+          "tracks": [
+            "Joseph"
+          ],
           "kinds": [
             "judgement"
+          ],
+          "places": [
+            "Egypt@Gen.12.10"
           ]
         },
         "Joseph's brothers go to Egypt": {
+          "tracks": [
+            "Joseph's brothers"
+          ],
           "kinds": [
-            "journey"
+            "journey",
+            "encounter"
+          ],
+          "places": [
+            {
+              "key": "Hebron_Valley@Gen.37.14",
+              "label": "Jacob's house, in the vale of Hebron"
+            },
+            "Egypt@Gen.12.10"
           ]
         },
         "Joseph's brothers return to Egypt": {
+          "tracks": [
+            "Joseph's brothers",
+            "Joseph"
+          ],
           "kinds": [
-            "journey"
+            "journey",
+            "encounter"
+          ],
+          "places": [
+            {
+              "key": "Hebron_Valley@Gen.37.14",
+              "label": "Jacob's house, in the vale of Hebron"
+            },
+            "Egypt@Gen.12.10"
+          ]
+        },
+        "Jacob goes down to Egypt": {
+          "tracks": [
+            "Joseph's brothers",
+            "Joseph"
+          ],
+          "kinds": [
+            "journey",
+            "revelation"
+          ],
+          "places": [
+            "Beersheba@Gen.21.14",
+            "Goshen@Gen.45.10"
           ]
         },
         "Death of Joseph": {
+          "tracks": [
+            "Joseph"
+          ],
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Egypt@Gen.12.10"
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "job",
       "title": "Job’s trial",
@@ -5063,14 +5664,16 @@
     {
       "id": "moses-exodus",
       "title": "Moses and the Exodus",
-      "note": "Exodus 2 through Deuteronomy 34. The wilderness span opens Sinai and the tabernacle; it begins before those events and ends with the generation’s journey. Caleb’s birth is not ordered against Moses’ flight by their overview years.",
+      "note": "Exodus 2 through Deuteronomy 34: Moses' birth, flight to Midian, call at Horeb and the deliverance from Egypt. The wilderness span opens the journeys from the sea to the plains of Moab. Caleb’s birth is not ordered against Moses’ flight by their overview years. Each event is placed where the text puts it, Sinai and the crossing as Haqor identifies them.",
       "chains": [
         {
-          "basis": "Exodus 2; 12-13; Deuteronomy 34",
+          "basis": "Exodus 2-13; Deuteronomy 34",
           "events": [
             "Birth of Moses",
             "Moses Flees Pharaoh",
-            "Exodus from Egypt",
+            "The burning bush at Horeb",
+            "Moses before Pharaoh; the plagues",
+            "The Passover and the exodus from Egypt",
             "Wilderness Wanderings",
             "Death of Moses"
           ]
@@ -5095,7 +5698,9 @@
                 "Birth of Moses",
                 "Moses Flees Pharaoh",
                 "Birth of Caleb",
-                "Exodus from Egypt"
+                "The burning bush at Horeb",
+                "Moses before Pharaoh; the plagues",
+                "The Passover and the exodus from Egypt"
               ]
             },
             {
@@ -5110,13 +5715,33 @@
       ],
       "events": {
         "Birth of Moses": {
+          "tracks": [
+            "Moses"
+          ],
           "kinds": [
             "birth"
+          ],
+          "places": [
+            {
+              "key": "Goshen@Gen.45.10",
+              "label": "Goshen, in Egypt"
+            }
           ]
         },
         "Moses Flees Pharaoh": {
+          "tracks": [
+            "Moses"
+          ],
           "kinds": [
-            "journey"
+            "journey",
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Goshen@Gen.45.10",
+              "label": "Goshen, in Egypt"
+            },
+            "Midian@Gen.36.35"
           ]
         },
         "Birth of Caleb": {
@@ -5124,33 +5749,107 @@
             "birth"
           ]
         },
-        "Exodus from Egypt": {
+        "The burning bush at Horeb": {
+          "tracks": [
+            "Moses"
+          ],
           "kinds": [
+            "revelation",
+            "calling"
+          ],
+          "places": [
+            {
+              "key": "Sinai@Exo.3.1",
+              "label": "Horeb, the mountain of God"
+            }
+          ]
+        },
+        "Moses before Pharaoh; the plagues": {
+          "tracks": [
+            "Moses",
+            "Israel"
+          ],
+          "kinds": [
+            "sign",
+            "judgement"
+          ],
+          "places": [
+            "Egypt@Gen.12.10"
+          ]
+        },
+        "The Passover and the exodus from Egypt": {
+          "tracks": [
+            "Moses",
+            "Israel"
+          ],
+          "kinds": [
+            "feast",
             "journey"
+          ],
+          "places": [
+            "Rameses@Gen.47.11",
+            "Succoth@Exo.12.37"
           ]
         },
         "Wilderness Wanderings": {
+          "tracks": [
+            "Moses",
+            "Israel"
+          ],
           "kinds": [
             "journey"
           ]
         },
         "Death of Moses": {
+          "tracks": [
+            "Moses"
+          ],
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Nebo_Mount@Num.27.12",
+              "label": "Mount Nebo, the top of Pisgah"
+            }
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "sinai",
-      "title": "Sinai and the tabernacle",
-      "note": "Exodus 19-20 and 25-40: the commandments precede the making and raising of the tabernacle.",
+      "title": "Through the wilderness",
+      "note": "Exodus 13 to Deuteronomy 31: from the Red sea to Sinai, the covenant and the tabernacle, the turning back at Kadesh, and the fortieth year from Kadesh to the plains of Moab. The commandments precede the making and raising of the tabernacle. Each event is placed where the text puts it; the ways between are the exodus journeys of the places map.",
       "chains": [
         {
           "basis": "Exodus 19-20; 25-40",
           "events": [
             "Ten Commandments Given",
             "Tabernacle Built"
+          ]
+        },
+        {
+          "basis": "Exodus 13-18: from the sea to the mount of God",
+          "events": [
+            "Crossing the Red Sea",
+            "The bitter waters of Marah; Elim",
+            "Manna in the wilderness of Sin",
+            "Water from the rock; Amalek at Rephidim",
+            "Jethro visits Moses at the mount of God",
+            "Ten Commandments Given"
+          ]
+        },
+        {
+          "basis": "Numbers 13-36; Deuteronomy 1-31: from Sinai to the plains of Moab",
+          "events": [
+            "Tabernacle Built",
+            "The spies sent from Kadesh",
+            "Water from the rock at Meribah; Miriam dies",
+            "Aaron dies on Mount Hor",
+            "Sihon and Og overthrown",
+            "Balaam blesses Israel",
+            "Moses' words in the plains of Moab"
           ]
         }
       ],
@@ -5162,39 +5861,254 @@
           "note": "Sections of the account; only the connecting lines assert an order between events.",
           "groups": [
             {
+              "title": "From the sea to Sinai",
+              "events": [
+                "Crossing the Red Sea",
+                "The bitter waters of Marah; Elim",
+                "Manna in the wilderness of Sin",
+                "Water from the rock; Amalek at Rephidim",
+                "Jethro visits Moses at the mount of God"
+              ]
+            },
+            {
               "title": "Covenant and dwelling",
               "events": [
                 "Ten Commandments Given",
                 "Tabernacle Built"
+              ]
+            },
+            {
+              "title": "From Kadesh to the plains of Moab",
+              "events": [
+                "The spies sent from Kadesh",
+                "Water from the rock at Meribah; Miriam dies",
+                "Aaron dies on Mount Hor",
+                "Sihon and Og overthrown",
+                "Balaam blesses Israel",
+                "Moses' words in the plains of Moab"
               ]
             }
           ]
         }
       ],
       "events": {
-        "Ten Commandments Given": {
+        "Crossing the Red Sea": {
+          "tracks": [
+            "Israel"
+          ],
           "kinds": [
-            "covenant"
+            "sign",
+            "journey"
+          ],
+          "places": [
+            "Etham@Exo.13.20",
+            "Pi-hahiroth@Exo.14.2",
+            {
+              "key": "Red_Sea@Exo.10.19",
+              "label": "The Red sea"
+            }
+          ]
+        },
+        "The bitter waters of Marah; Elim": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "sign",
+            "journey"
+          ],
+          "places": [
+            "Marah@Exo.15.23",
+            "Elim@Exo.15.27"
+          ]
+        },
+        "Manna in the wilderness of Sin": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "sign"
+          ],
+          "places": [
+            {
+              "key": "Sin@Exo.16.1",
+              "label": "Wilderness of Sin"
+            }
+          ]
+        },
+        "Water from the rock; Amalek at Rephidim": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "sign",
+            "conflict"
+          ],
+          "places": [
+            "Rephidim@Exo.17.1"
+          ]
+        },
+        "Jethro visits Moses at the mount of God": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "encounter"
+          ],
+          "places": [
+            {
+              "key": "Sinai@Exo.3.1",
+              "label": "The mount of God"
+            }
+          ]
+        },
+        "Ten Commandments Given": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "covenant",
+            "revelation"
+          ],
+          "places": [
+            {
+              "key": "Sinai@Exo.3.1",
+              "label": "Mount Sinai"
+            }
           ]
         },
         "Tabernacle Built": {
+          "tracks": [
+            "Israel"
+          ],
           "kinds": [
             "covenant"
+          ],
+          "places": [
+            {
+              "key": "Sinai@Exo.3.1",
+              "label": "Mount Sinai"
+            }
+          ]
+        },
+        "The spies sent from Kadesh": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "journey",
+            "judgement"
+          ],
+          "places": [
+            {
+              "key": "Kadesh@Gen.14.7",
+              "label": "Kadesh-barnea"
+            },
+            "Hebron@Gen.13.18",
+            {
+              "key": "Kadesh@Gen.14.7",
+              "label": "Kadesh-barnea"
+            }
+          ]
+        },
+        "Water from the rock at Meribah; Miriam dies": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "sign",
+            "death"
+          ],
+          "places": [
+            {
+              "key": "Kadesh@Gen.14.7",
+              "label": "Kadesh-barnea"
+            }
+          ]
+        },
+        "Aaron dies on Mount Hor": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "death"
+          ],
+          "places": [
+            {
+              "key": "Hor_Mount@Num.20.22",
+              "label": "Mount Hor"
+            }
+          ]
+        },
+        "Sihon and Og overthrown": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            "Heshbon@Num.21.25",
+            "Edrei@Num.21.33"
+          ]
+        },
+        "Balaam blesses Israel": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "revelation"
+          ],
+          "places": [
+            {
+              "key": "Bamoth-baal@Num.21.28",
+              "label": "The high places of Baal"
+            },
+            {
+              "key": "Pisgah@Num.21.20",
+              "label": "The field of Zophim, top of Pisgah"
+            },
+            {
+              "key": "Peor@Num.23.28",
+              "label": "The top of Peor"
+            }
+          ]
+        },
+        "Moses' words in the plains of Moab": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "teaching",
+            "covenant"
+          ],
+          "places": [
+            {
+              "key": "Moab_Plains@Num.22.1",
+              "label": "The plains of Moab"
+            }
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "conquest",
       "title": "Joshua and the inheritance",
-      "note": "Joshua 3-24. The campaign summary precedes the division of the land, although Joshua 13:1 says that land remained to be possessed.",
+      "note": "Joshua 1-24: over Jordan to Gilgal, the campaigns of Jericho and Ai, the south from Gibeon and the north at Merom, the division of the land at Gilgal and Shiloh, and the covenant at Shechem. Joshua 13:1 says that land remained to be possessed. Each event is placed where the text puts it.",
       "chains": [
         {
-          "basis": "Joshua 3; 12-14; 24:29",
+          "basis": "Joshua 1-24",
           "events": [
             "Crossing the Jordan into Canaan",
-            "War with Canaanites",
+            "Israel encamped at Gilgal",
+            "Jericho falls",
+            "Ai taken; the covenant at Ebal",
+            "Gibeon; the sun stands still",
+            "The northern kings at the waters of Merom",
             "Dividing the land",
+            "The tabernacle at Shiloh; the land divided by lot",
+            "Joshua's covenant at Shechem",
             "Death of Joshua"
           ]
         }
@@ -5210,13 +6124,19 @@
               "title": "Entering the land",
               "events": [
                 "Crossing the Jordan into Canaan",
-                "War with Canaanites"
+                "Israel encamped at Gilgal",
+                "Jericho falls",
+                "Ai taken; the covenant at Ebal",
+                "Gibeon; the sun stands still",
+                "The northern kings at the waters of Merom"
               ]
             },
             {
               "title": "Inheritance and farewell",
               "events": [
                 "Dividing the land",
+                "The tabernacle at Shiloh; the land divided by lot",
+                "Joshua's covenant at Shechem",
                 "Death of Joshua"
               ]
             }
@@ -5225,27 +6145,149 @@
       ],
       "events": {
         "Crossing the Jordan into Canaan": {
+          "tracks": [
+            "Israel"
+          ],
           "kinds": [
+            "sign",
             "journey"
+          ],
+          "places": [
+            "Shittim@Num.25.1",
+            {
+              "key": "Gilgal@Deu.11.30",
+              "label": "Gilgal"
+            }
           ]
         },
-        "War with Canaanites": {
+        "Israel encamped at Gilgal": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "covenant",
+            "feast"
+          ],
+          "places": [
+            {
+              "key": "Gilgal@Deu.11.30",
+              "label": "Gilgal"
+            }
+          ]
+        },
+        "Jericho falls": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "sign",
+            "conflict"
+          ],
+          "places": [
+            "Jericho@Num.22.1"
+          ]
+        },
+        "Ai taken; the covenant at Ebal": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "conflict",
+            "covenant"
+          ],
+          "places": [
+            "Ai@Gen.12.8",
+            {
+              "key": "Ebal_Mount@Deu.11.29",
+              "label": "Mount Ebal"
+            }
+          ]
+        },
+        "Gibeon; the sun stands still": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "conflict",
+            "sign"
+          ],
+          "places": [
+            "Gibeon@Jos.9.3",
+            {
+              "key": "Beth-horon_Lower@Jos.10.10",
+              "label": "Beth-horon"
+            }
+          ]
+        },
+        "The northern kings at the waters of Merom": {
+          "tracks": [
+            "Israel"
+          ],
           "kinds": [
             "conflict"
+          ],
+          "places": [
+            {
+              "key": "Merom@Jos.11.5",
+              "label": "The waters of Merom"
+            },
+            "Hazor@Jos.11.1"
           ]
         },
         "Dividing the land": {
+          "tracks": [
+            "Israel"
+          ],
           "kinds": [
             "covenant"
+          ],
+          "places": [
+            {
+              "key": "Gilgal@Deu.11.30",
+              "label": "Gilgal"
+            }
+          ]
+        },
+        "The tabernacle at Shiloh; the land divided by lot": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "covenant"
+          ],
+          "places": [
+            "Shiloh@Jos.18.1"
+          ]
+        },
+        "Joshua's covenant at Shechem": {
+          "tracks": [
+            "Israel"
+          ],
+          "kinds": [
+            "covenant",
+            "teaching"
+          ],
+          "places": [
+            "Shechem@Gen.12.6"
           ]
         },
         "Death of Joshua": {
+          "tracks": [
+            "Israel"
+          ],
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Timnath-heres@Jos.19.50",
+              "label": "Timnath-serah"
+            }
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "judges",
       "title": "The judges of Israel",
