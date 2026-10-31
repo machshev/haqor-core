@@ -1046,7 +1046,222 @@
           "basis": "Matthew 27:3: when Judas saw that he was condemned",
           "events": ["Jewish Trials", "Judas' Suicide"]
         }
-      ]
+      ],
+      "groupings": [
+        {
+          "id": "robertson",
+          "title": "Robertson's parts",
+          "note": "The parts of A. T. Robertson's Harmony of the Gospels (1922) the week falls in, with his dates. The prayer in Gethsemane and the betrayal there, one event here, end his Part XII and begin his Part XIII.",
+          "groups": [
+            {
+              "title": "The last public ministry in Jerusalem",
+              "note": "Part XI, §§128–138; the Friday before the Passover to the Tuesday, AD 30 or 29",
+              "events": [
+                "Triumphal Entry",
+                "Fig Tree Cursed",
+                "Temple Cleansed",
+                "Teaching by the Fig Tree",
+                "Debates in the Temple"
+              ]
+            },
+            {
+              "title": "In the shadow with Jesus",
+              "note": "Part XII, §§139–152; the Tuesday afternoon to the Thursday night",
+              "events": [
+                "Olivet Discourse",
+                "Sanhedrin Conspiracy",
+                "Judas Plans Betrayal",
+                "The Last Supper",
+                "Upper Room Discourse",
+                "Prayer and Betrayal in Gethsemane"
+              ]
+            },
+            {
+              "title": "The arrest, trial, crucifixion and burial",
+              "note": "Part XIII, §§153–168; early Friday morning to the Saturday",
+              "events": [
+                "Jewish Trials",
+                "Judas' Suicide",
+                "Roman Trials",
+                "Bearing Cross to Golgotha",
+                "Crucifixion and Burial"
+              ]
+            },
+            {
+              "title": "The resurrection, appearances and ascension",
+              "note": "Part XIV, §§169–184; forty days from the Sunday",
+              "events": ["Resurrection and Ascension"]
+            }
+          ]
+        },
+        {
+          "id": "days",
+          "title": "Mark's days",
+          "note": "The days as Mark marks them, each from the verse that opens it. Whether a day is counted from evening or from morning, and on which days of the week they fall, the grouping leaves open.",
+          "groups": [
+            {
+              "title": "The entry",
+              "note": "Mark 11:1–11",
+              "events": ["Triumphal Entry"]
+            },
+            {
+              "title": "On the morrow",
+              "note": "Mark 11:12",
+              "events": ["Fig Tree Cursed", "Temple Cleansed"]
+            },
+            {
+              "title": "In the morning",
+              "note": "Mark 11:20",
+              "events": [
+                "Teaching by the Fig Tree",
+                "Debates in the Temple",
+                "Olivet Discourse"
+              ]
+            },
+            {
+              "title": "Two days before the Passover",
+              "note": "Mark 14:1",
+              "events": ["Sanhedrin Conspiracy", "Judas Plans Betrayal"]
+            },
+            {
+              "title": "The supper and the night",
+              "note": "Mark 14:12, 17: when it was evening",
+              "events": [
+                "The Last Supper",
+                "Upper Room Discourse",
+                "Prayer and Betrayal in Gethsemane",
+                "Jewish Trials"
+              ]
+            },
+            {
+              "title": "The day of the crucifixion",
+              "note": "Mark 15:1: straightway in the morning",
+              "events": [
+                "Judas' Suicide",
+                "Roman Trials",
+                "Bearing Cross to Golgotha",
+                "Crucifixion and Burial"
+              ]
+            },
+            {
+              "title": "The first day of the week",
+              "note": "Mark 16:2",
+              "events": ["Resurrection and Ascension"]
+            }
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "event": "Sanhedrin Conspiracy",
+          "feast": "pesach",
+          "label": "Two days before the Passover",
+          "ref": "Mrk.14.1"
+        },
+        {
+          "event": "The Last Supper",
+          "feast": "matzot",
+          "label": "The first day of unleavened bread",
+          "ref": "Mrk.14.12"
+        },
+        {
+          "event": "Resurrection and Ascension",
+          "feast": "",
+          "label": "The first day of the week",
+          "ref": "Mrk.16.2"
+        }
+      ],
+      "events": {
+        "Triumphal Entry": {
+          "kinds": ["journey", "revelation"],
+          "region": "judea",
+          "places": ["Bethphage@Mat.21.1", "Jerusalem@Gen.14.18"]
+        },
+        "Fig Tree Cursed": {
+          "kinds": ["sign"],
+          "region": "judea",
+          "places": ["Bethany@Mat.21.17"]
+        },
+        "Temple Cleansed": {
+          "kinds": ["conflict"],
+          "region": "judea",
+          "places": ["Jerusalem@Gen.14.18"]
+        },
+        "Teaching by the Fig Tree": {
+          "kinds": ["teaching"],
+          "region": "judea",
+          "places": [{ "key": "Olives_Mount@2Sa.15.30", "label": "Mount of Olives" }]
+        },
+        "Debates in the Temple": {
+          "kinds": ["conflict", "teaching", "parable"],
+          "region": "judea",
+          "places": ["Jerusalem@Gen.14.18"]
+        },
+        "Olivet Discourse": {
+          "kinds": ["teaching"],
+          "region": "judea",
+          "places": [{ "key": "Olives_Mount@2Sa.15.30", "label": "Mount of Olives" }]
+        },
+        "Sanhedrin Conspiracy": {
+          "kinds": ["conflict"],
+          "region": "judea",
+          "places": ["Jerusalem@Gen.14.18"]
+        },
+        "Judas Plans Betrayal": {
+          "kinds": ["conflict"],
+          "region": "judea",
+          "places": ["Jerusalem@Gen.14.18"]
+        },
+        "The Last Supper": {
+          "kinds": ["feast", "teaching"],
+          "region": "judea",
+          "places": ["Jerusalem@Gen.14.18"]
+        },
+        "Upper Room Discourse": {
+          "kinds": ["teaching"],
+          "region": "judea",
+          "places": ["Jerusalem@Gen.14.18"]
+        },
+        "Prayer and Betrayal in Gethsemane": {
+          "kinds": ["conflict"],
+          "region": "judea",
+          "places": ["Gethsemane@Mat.26.36"]
+        },
+        "Jewish Trials": {
+          "kinds": ["conflict"],
+          "region": "judea",
+          "places": ["Jerusalem@Gen.14.18"]
+        },
+        "Judas' Suicide": {
+          "kinds": ["conflict"],
+          "region": "judea",
+          "places": ["Jerusalem@Gen.14.18"]
+        },
+        "Roman Trials": {
+          "kinds": ["conflict"],
+          "region": "judea",
+          "places": ["Jerusalem@Gen.14.18"]
+        },
+        "Bearing Cross to Golgotha": {
+          "kinds": ["journey"],
+          "region": "judea",
+          "places": ["Golgotha@Mat.27.33"]
+        },
+        "Crucifixion and Burial": {
+          "kinds": ["conflict", "revelation"],
+          "region": "judea",
+          "places": ["Golgotha@Mat.27.33"]
+        },
+        "Resurrection and Ascension": {
+          "kinds": ["raising", "revelation"],
+          "region": "judea",
+          "places": [
+            "Jerusalem@Gen.14.18",
+            { "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" },
+            { "key": "Olives_Mount@2Sa.15.30", "label": "Mount of Olives" }
+          ]
+        }
+      }
     }
   ]
 }

@@ -7460,6 +7460,15 @@ mod tests {
             .unwrap();
         assert_eq!(edge.bases, ["Robertson's harmony (1922)"]);
         assert_eq!(week.expands, Some(id("Holy Week")));
+        // Grouped by Robertson's parts and by the days Mark marks.
+        let keys: Vec<_> = week.groupings.iter().map(|g| g.key.as_str()).collect();
+        assert_eq!(keys, ["robertson", "days"]);
+        let supper = week
+            .milestones
+            .iter()
+            .find(|m| m.feast == "matzot")
+            .unwrap();
+        assert_eq!(supper.event, id("The Last Supper"));
         assert!(ministry.events.contains(&id("Holy Week")));
         assert!(week.events.contains(&id("The Last Supper")));
         assert!(!ministry.events.contains(&id("The Last Supper")));
