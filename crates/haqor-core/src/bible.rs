@@ -7361,7 +7361,7 @@ mod tests {
         assert_eq!((flood.year, flood.duration), (-2348, 1));
         let exodus = events
             .iter()
-            .find(|e| e.title == "Exodus from Egypt")
+            .find(|e| e.title == "The Passover and the exodus from Egypt")
             .unwrap();
         assert_eq!(exodus.year, -1491);
         assert!(exodus.people.iter().any(|p| p.name == "Moses"));
@@ -7386,7 +7386,10 @@ mod tests {
         let moses = exodus.people.iter().find(|p| p.name == "Moses").unwrap();
         let his = bible.name_events(moses.id).unwrap();
         assert!(his.iter().any(|e| e.title == "Birth of Moses"));
-        assert!(his.iter().any(|e| e.title == "Exodus from Egypt"));
+        assert!(
+            his.iter()
+                .any(|e| e.title == "The Passover and the exodus from Egypt")
+        );
         assert!(his.windows(2).all(|w| w[0].year <= w[1].year));
         assert!(
             his.iter()
