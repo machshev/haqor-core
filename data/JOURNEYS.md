@@ -25,12 +25,17 @@ Each journey has a `name`, a `summary` of a sentence or two, and its `stops`:
   site: its line runs from the stop before to the stop after.
 - `note` is a short line shown with the stop.
 
-The legs between stops are straight lines, not roads: the map shows the order
-of a journey, not its way. A build fails if a stop's key matches no place
-record, its name differs, the place has no position, or its `ref` cannot be
-read. An Old Testament stop's verse must name the place itself, by TIPNR's tag
-on its words, which catches a slip in the numbering; New Testament words are
-not tagged, so those stops are checked by hand.
+A journey gives its stops, not its way. The app draws a land leg along the
+highways of its own map data where the leg keeps to them (Itiner-e's Roman
+roads, and its own down the Euphrates and up the Balikh: see
+`tool/build_roads.dart` in the app), and straight where no road runs near or
+the road goes far round; a sea leg follows its `via`.
+
+A build fails if a stop's key matches no place record, its name differs, the
+place has no position, or its `ref` cannot be read. An Old Testament stop's
+verse must name the place itself, by TIPNR's tag on its words, which catches a
+slip in the numbering; New Testament words are not tagged, so those stops are
+checked by hand.
 
 ## The exodus
 
