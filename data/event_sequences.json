@@ -7111,7 +7111,7 @@
     {
       "id": "israel-kings",
       "title": "The kings of Israel",
-      "note": "The northern kingdom in 1 Kings 12 through 2 Kings 17. Chains follow accessions and explicit deaths, not a sum of reign lengths. Omri and Tibni are rival rulers: neither accession is placed after the other; Omri’s sole rule follows Tibni’s death, but his reign began earlier.",
+      "note": "The northern kingdom in 1 Kings 12 through 2 Kings 17. Chains follow accessions and explicit deaths, not a sum of reign lengths. Omri and Tibni are rival rulers: neither accession is placed after the other; Omri’s sole rule follows Tibni’s death, but his reign began earlier. Each reign is placed at its royal city, Shechem and Tirzah, then Samaria from Omri, and each death where the text puts it.",
       "chains": [
         {
           "basis": "1 Kings 12-16: from Jeroboam to Zimri",
@@ -7241,26 +7241,48 @@
         "Reign of Jeroboam I": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Shechem@Gen.12.6",
+            {
+              "key": "Peniel@Gen.32.30",
+              "label": "Penuel"
+            },
+            "Bethel@Gen.12.8",
+            "Dan@Gen.14.14"
           ]
         },
         "Reign of Nadab": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Tirzah@Jos.12.24",
+            "Gibbethon@Jos.19.44"
           ]
         },
         "Reign of Baasha": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Tirzah@Jos.12.24"
           ]
         },
         "Reign of Elah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Tirzah@Jos.12.24"
           ]
         },
         "Reign of Zimri": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Tirzah@Jos.12.24"
           ]
         },
         "Reign of Tibni": {
@@ -7271,6 +7293,10 @@
         "Reign of Omri": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Tirzah@Jos.12.24",
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Tibni": {
@@ -7281,124 +7307,207 @@
         "Reign of Ahab": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32",
+            "Jezreel@Jos.19.18"
           ]
         },
         "Death of Omri": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Ahaziah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Joram": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32",
+            "Jezreel@Jos.19.18"
           ]
         },
         "Reign of Jehu": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Ramoth@Gen.31.47",
+              "label": "Ramoth-gilead"
+            },
+            "Jezreel@Jos.19.18",
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Jehu": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Jehoahaz": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Jehoahaz": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Jehoash": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Jeroboam II": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Jehoash": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Jeroboam II": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Zachariah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Shallum": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Zachariah": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Shallum": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Menahem": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Tirzah@Jos.12.24",
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Menahem": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Pekahiah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Pekahiah": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Pekah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Death of Pekah": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32"
           ]
         },
         "Reign of Hoshea": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            "Samaria@1Ki.13.32",
+            "Halah@2Ki.17.6",
+            {
+              "key": "Habor@2Ki.17.6",
+              "label": "Habor, by the river of Gozan"
+            }
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "judah-kings",
       "title": "The kings of Judah",
-      "note": "The southern kingdom in 1 Kings 12 through 2 Kings 25. Reign nodes mark accessions. The chain of accessions is separate from deaths: co-regencies and the northern kingdom are not flattened into a single succession of non-overlapping lifetimes.",
+      "note": "The southern kingdom in 1 Kings 12 through 2 Kings 25. Reign nodes mark accessions. The chain of accessions is separate from deaths: co-regencies and the northern kingdom are not flattened into a single succession of non-overlapping lifetimes. Each reign is placed at Jerusalem, and each death or captivity the text places elsewhere there.",
       "chains": [
         {
           "basis": "1 Kings 12:17; 15:1-9; 22:41; 2 Kings 8:16-25; 11-12; 14:1; 15-16; 18; 21-24: Judah’s accessions",
@@ -7571,169 +7680,367 @@
         "Reign of Rehoboam": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Abijam": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Abijam": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Asa": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Asa": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Jehoshaphat": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Jehoshaphat": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Jehoram": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Ahaziah (Jehoahaz)": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Athaliah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Jehoram": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Joash": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Amaziah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Amaziah": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Lachish@Jos.10.3"
           ]
         },
         "Reign of Uzziah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Uzziah": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Jotham": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Ahaz": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Jotham": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Ahaz": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Hezekiah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Hezekiah": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Manasseh": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Manasseh": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Amon": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Amon": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Josiah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Death of Josiah": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            "Megiddo@Jos.12.21"
           ]
         },
         "Reign of Jehoahaz (Shallum)": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            },
+            {
+              "key": "Riblah@2Ki.23.33",
+              "label": "Riblah, in the land of Hamath"
+            },
+            "Egypt@Gen.12.10"
           ]
         },
         "Reign of Jehoiakim": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Reign of Jeconiah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            },
+            "Babylon@Gen.10.10"
           ]
         },
         "Reign of Zedekiah": {
           "kinds": [
             "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            },
+            {
+              "key": "Riblah@2Ki.23.33",
+              "label": "Riblah, in the land of Hamath"
+            },
+            "Babylon@Gen.10.10"
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "prophets",
       "title": "The prophets of Israel and Judah",
-      "note": "These are the prophetic ministries already present on the Bible timeline, not a complete list of individual prophecies. Only Elijah’s departure and Elisha’s succession are joined. The other ministries overlap or have disputed dates; the overview’s inherited years do not establish an order between them. Haggai, Zechariah and Malachi carry this collection into the restoration period.",
+      "note": "These are the prophetic ministries already present on the Bible timeline, not a complete list of individual prophecies. Only Elijah’s departure and Elisha’s succession are joined. The other ministries overlap or have disputed dates; the overview’s inherited years do not establish an order between them. Haggai, Zechariah and Malachi carry this collection into the restoration period. Each prophet is placed where the text puts his ministry; a book that names no place has none.",
       "chains": [
         {
           "basis": "1 Kings 17; 2 Kings 2: Elijah and Elisha",
@@ -7877,21 +8184,66 @@
         "Prophecies of Elijah": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Cherith@1Ki.17.3",
+              "label": "Brook Cherith"
+            },
+            "Zarephath@1Ki.17.9",
+            {
+              "key": "Carmel_Mount@1Ki.18.19",
+              "label": "Mount Carmel"
+            },
+            "Jezreel@Jos.19.18",
+            "Beersheba@Gen.21.14",
+            {
+              "key": "Sinai@Exo.3.1",
+              "label": "Horeb"
+            }
           ]
         },
         "Elijah Translated": {
           "kinds": [
             "revelation"
+          ],
+          "places": [
+            "Gilgal@2Ki.2.1",
+            "Bethel@Gen.12.8",
+            "Jericho@Num.22.1",
+            {
+              "key": "Beth-barah@Jdg.7.24",
+              "label": "Over Jordan, against Jericho"
+            }
           ]
         },
         "Prophecies of Elisha": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            "Abel-meholah@Jdg.7.22",
+            "Jericho@Num.22.1",
+            "Bethel@Gen.12.8",
+            {
+              "key": "Carmel_Mount@1Ki.18.19",
+              "label": "Mount Carmel"
+            },
+            "Shunem@Jos.19.18",
+            "Gilgal@2Ki.2.1",
+            "Dothan@Gen.37.17",
+            "Samaria@1Ki.13.32",
+            "Damascus@Gen.14.15"
           ]
         },
         "Prophecies of Jonah": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            "Gath-hepher@Jos.19.13",
+            "Joppa@Jos.19.46",
+            "Nineveh@Gen.10.11"
           ]
         },
         "Prophecies of Joel": {
@@ -7902,6 +8254,10 @@
         "Prophecies of Amos": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            "Tekoa@2Sa.14.2",
+            "Bethel@Gen.12.8"
           ]
         },
         "Prophecies of Hosea": {
@@ -7912,26 +8268,55 @@
         "Prophecies of Isaiah": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Prophecies of Micah": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Moresheth@Jer.26.18",
+              "label": "Moresheth-gath"
+            }
           ]
         },
         "Prophecies of Nahum": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            "Nineveh@Gen.10.11"
           ]
         },
         "Prophecies of Jeremiah": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            "Anathoth@Jos.21.18",
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            },
+            "Tahpanhes@Jer.2.16"
           ]
         },
         "Prophecies of Zephaniah": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Prophecies of Habakkuk": {
@@ -7942,26 +8327,55 @@
         "Prophecies of Daniel": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            "Babylon@Gen.10.10",
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan, by the river Ulai"
+            }
           ]
         },
         "Prophecies of Ezekiel": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Chebar@Ezk.1.1",
+              "label": "The river Chebar"
+            },
+            "Tel-abib@Ezk.3.15"
           ]
         },
         "Prophecies of Obadiah": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            "Edom@Gen.32.3"
           ]
         },
         "Prophecies of Haggai": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Prophecies of Zechariah": {
           "kinds": [
             "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
           ]
         },
         "Prophecies of Malachi": {
@@ -7970,7 +8384,8 @@
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "priestly-hearings",
       "title": "Jesus before Annas, Caiaphas and the council",
