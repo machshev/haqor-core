@@ -30,3 +30,12 @@ An event is in one sequence at most; one that `expands` another event holds
 the events inside it, which its parent leaves out. The build (`db gen-names`,
 or `db gen-runtime`) fails on a title naming no event or several, an event in
 two sequences, an empty chain or basis, a sequence inside itself, or a circle.
+
+A harmony of the Gospels is a witness like any other, its chain giving its
+order of the events and its `basis` naming it: `Robertson's harmony (1922)`
+(A. T. Robertson, *A Harmony of the Gospels for Students of the Life of
+Christ*, public domain; Project Gutenberg #36264). Where it agrees with the
+Gospels' own order, an ordering rests on both; where it orders what they
+leave open, the ordering rests on it alone. An event the harmony places in a
+way the Gospels' chains contradict, or tells only in passing, is left out of
+its chain, and the sequence's `note` says so.

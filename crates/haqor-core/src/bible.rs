@@ -7200,17 +7200,26 @@ mod tests {
         let ministry = sequences.iter().find(|s| s.key == "ministry").unwrap();
         assert_eq!(ministry.expands, None);
         assert!(ministry.events.contains(&id("Water to Wine")));
-        // Mark puts the leper's healing after the first tour.
+        // Mark puts the leper's healing after the first tour, and Robertson's
+        // harmony agrees.
         let (tour, leper) = (id("Jesus' 1st Tour of Galilee"), id("Healing the Leper"));
         let edge = ministry
             .edges
             .iter()
             .find(|e| e.before == tour && e.after == leper)
             .unwrap();
-        assert_eq!(edge.bases, ["Mark's order"]);
+        assert_eq!(edge.bases, ["Mark's order", "Robertson's harmony (1922)"]);
         // Holy Week opens its own sequence, whose events the ministry leaves
         // out.
         let week = sequences.iter().find(|s| s.key == "holy-week").unwrap();
+        // Judas died before Jesus came to Pilate on Robertson's word alone.
+        let (suicide, pilate) = (id("Judas' Suicide"), id("Roman Trials"));
+        let edge = week
+            .edges
+            .iter()
+            .find(|e| e.before == suicide && e.after == pilate)
+            .unwrap();
+        assert_eq!(edge.bases, ["Robertson's harmony (1922)"]);
         assert_eq!(week.expands, Some(id("Holy Week")));
         assert!(ministry.events.contains(&id("Holy Week")));
         assert!(week.events.contains(&id("The Last Supper")));
