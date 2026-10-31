@@ -370,6 +370,80 @@ pub struct EventSequence {
     /// Its events, by id, in the timeline's order.
     pub events: Vec<u32>,
     pub edges: Vec<SequenceEdge>,
+    /// Ways of dividing its events into groups: Robertson's parts, the
+    /// stretches between John's feasts.
+    pub groupings: Vec<SequenceGrouping>,
+    /// The feasts and other marks of time its events fall at, in order.
+    pub milestones: Vec<SequenceMilestone>,
+    /// What kind each event is, where it happens and at what places; only
+    /// for the events given any.
+    pub details: Vec<SequenceEventDetails>,
+}
+
+/// A division of a sequence's events into groups, each holding events or
+/// further groups, every event in one group with no group of events.
+#[derive(Clone, Debug, PartialEq)]
+pub struct SequenceGrouping {
+    pub key: String,
+    pub title: String,
+    /// What it divides by; may be empty.
+    pub note: String,
+    /// In order, each before those inside it. Groups holding events are in
+    /// the order of the sequence: none follows an event of a later one.
+    pub groups: Vec<SequenceGroup>,
+}
+
+#[derive(Clone, Debug, PartialEq)]
+pub struct SequenceGroup {
+    pub title: String,
+    /// A line about it, its dates or sections; may be empty.
+    pub note: String,
+    /// The index in [`SequenceGrouping::groups`] of the group it is inside.
+    pub parent: Option<u32>,
+    /// Its events, by id in the timeline's order; empty for a group of
+    /// groups.
+    pub events: Vec<u32>,
+}
+
+/// A feast or other mark of time an event of a sequence falls at.
+#[derive(Clone, Debug, PartialEq)]
+pub struct SequenceMilestone {
+    pub event: u32,
+    /// The feast as the app's moʿadim know it, `pesach` or `sukkot`, or
+    /// empty for one they do not (Dedication, an unnamed feast).
+    pub feast: String,
+    /// "Passover", "A feast of the Jews".
+    pub label: String,
+    /// The verse saying so.
+    pub book: u8,
+    pub chapter: u8,
+    pub verse: u8,
+}
+
+/// What kind of event an event of a sequence is, and where it happens.
+#[derive(Clone, Debug, PartialEq)]
+pub struct SequenceEventDetails {
+    pub event: u32,
+    /// The chief first: `healing`, `exorcism`, `raising`, `sign`,
+    /// `teaching`, `parable`, `journey`, `calling`, `encounter`, `conflict`,
+    /// `revelation`, `feast` or `john-baptist`.
+    pub kinds: Vec<String>,
+    /// `north`, `galilee`, `east` (of the lake), `samaria`, `perea` or
+    /// `judea`; empty where not given.
+    pub region: String,
+    /// The places it happens at, the chief first.
+    pub places: Vec<SequencePlace>,
+}
+
+/// A place an event of a sequence happens at.
+#[derive(Clone, Debug, PartialEq)]
+pub struct SequencePlace {
+    pub place: NameSummary,
+    /// What it is called there: its name, or another (Cana for TIPNR's
+    /// Kanah).
+    pub label: String,
+    /// Its likeliest location.
+    pub location: PlaceLocation,
 }
 
 /// That one event of a sequence came before another, and what says so.

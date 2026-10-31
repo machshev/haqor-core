@@ -751,7 +751,7 @@ pub fn build_names(
     summary.events =
         crate::events::build(&tx, src_texts, event_overrides, &records, &versification)?;
     // After the events, which the sequences order.
-    summary.sequences = crate::sequences::build(&tx, event_sequences)?;
+    summary.sequences = crate::sequences::build(&tx, event_sequences, &place_keys)?;
 
     // Senses, keyed by surface where they can be: each surface takes the
     // sense most of its occurrences have, and only the others are listed.

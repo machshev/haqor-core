@@ -6399,6 +6399,9 @@ impl Bible {
                         expands: row.get(4)?,
                         events: Vec::new(),
                         edges: Vec::new(),
+                        groupings: Vec::new(),
+                        milestones: Vec::new(),
+                        details: Vec::new(),
                     },
                 ))
             })?
@@ -6452,7 +6455,204 @@ impl Bible {
                 }),
             }
         }
+        if self.has_table("event_sequence_grouping")? {
+            self.sequence_details(&mut sequences, &index)?;
+        }
         Ok(sequences.into_iter().map(|(_, s)| s).collect())
+    }
+
+    /// The groupings, milestones and details of `sequences` (by their
+    /// `seq_id`, at `index`), for a database that has them.
+    fn sequence_details(
+        &self,
+        sequences: &mut [(u32, crate::names::EventSequence)],
+        index: &HashMap<u32, usize>,
+    ) -> rusqlite::Result<()> {
+        use crate::names::{
+            SequenceEventDetails, SequenceGroup, SequenceGrouping, SequenceMilestone, SequencePlace,
+        };
+        for row in self
+            .db
+            .prepare(
+                "SELECT seq_id, key, title, note FROM data.event_sequence_grouping \
+                 ORDER BY seq_id, ord",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, u32>(0)?,
+                    SequenceGrouping {
+                        key: row.get(1)?,
+                        title: row.get(2)?,
+                        note: row.get(3)?,
+                        groups: Vec::new(),
+                    },
+                ))
+            })?
+        {
+            let (seq, grouping) = row?;
+            if let Some(&i) = index.get(&seq) {
+                sequences[i].1.groupings.push(grouping);
+            }
+        }
+        for row in self
+            .db
+            .prepare(
+                "SELECT seq_id, grouping, parent, title, note FROM data.event_sequence_group \
+                 ORDER BY seq_id, grouping, ord",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, u32>(0)?,
+                    row.get::<_, u32>(1)?,
+                    SequenceGroup {
+                        parent: row.get(2)?,
+                        title: row.get(3)?,
+                        note: row.get(4)?,
+                        events: Vec::new(),
+                    },
+                ))
+            })?
+        {
+            let (seq, grouping, group) = row?;
+            if let Some(g) = index
+                .get(&seq)
+                .and_then(|&i| sequences[i].1.groupings.get_mut(grouping as usize))
+            {
+                g.groups.push(group);
+            }
+        }
+        for row in self
+            .db
+            .prepare(
+                "SELECT m.seq_id, m.grouping, m.ord, m.event_id \
+                 FROM data.event_sequence_group_member m \
+                 JOIN data.bible_event e USING(event_id) ORDER BY m.seq_id, m.grouping, e.ord",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, u32>(0)?,
+                    row.get::<_, u32>(1)?,
+                    row.get::<_, u32>(2)?,
+                    row.get::<_, u32>(3)?,
+                ))
+            })?
+        {
+            let (seq, grouping, group, event) = row?;
+            if let Some(g) = index
+                .get(&seq)
+                .and_then(|&i| sequences[i].1.groupings.get_mut(grouping as usize))
+                .and_then(|g| g.groups.get_mut(group as usize))
+            {
+                g.events.push(event);
+            }
+        }
+        for row in self
+            .db
+            .prepare(
+                "SELECT seq_id, event_id, feast, label, ref FROM data.event_sequence_milestone \
+                 ORDER BY seq_id, ord",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, u32>(0)?,
+                    row.get::<_, u32>(1)?,
+                    row.get::<_, String>(2)?,
+                    row.get::<_, String>(3)?,
+                    row.get::<_, i64>(4)?,
+                ))
+            })?
+        {
+            let (seq, event, feast, label, reference) = row?;
+            let Some(&i) = index.get(&seq) else {
+                continue;
+            };
+            let at = word_at(reference, 0);
+            sequences[i].1.milestones.push(SequenceMilestone {
+                event,
+                feast,
+                label,
+                book: at.book,
+                chapter: at.chapter,
+                verse: at.verse,
+            });
+        }
+        let home: HashMap<u32, usize> = sequences
+            .iter()
+            .enumerate()
+            .flat_map(|(i, (_, s))| s.events.iter().map(move |&e| (e, i)))
+            .collect();
+        let details = self
+            .db
+            .prepare(
+                "SELECT event_id, kinds, region FROM data.event_sequence_event ORDER BY event_id",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, u32>(0)?,
+                    row.get::<_, String>(1)?,
+                    row.get::<_, String>(2)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let mut places_of: HashMap<u32, Vec<SequencePlace>> = HashMap::new();
+        let rows = self
+            .db
+            .prepare(
+                "SELECT event_id, entity_id, label FROM data.event_sequence_place \
+                 ORDER BY event_id, ord",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, u32>(0)?,
+                    row.get::<_, u32>(1)?,
+                    row.get::<_, String>(2)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        for (event, entity, label) in rows {
+            let (Some(place), Some(location)) = (
+                self.name_summary(entity)?,
+                self.name_locations(entity)?.into_iter().next(),
+            ) else {
+                continue;
+            };
+            places_of.entry(event).or_default().push(SequencePlace {
+                label: if label.is_empty() {
+                    place.name.clone()
+                } else {
+                    label
+                },
+                place,
+                location,
+            });
+        }
+        // The events in the order of their sequence.
+        let mut ordered: Vec<(usize, usize, SequenceEventDetails)> = Vec::new();
+        for (event, kinds, region) in details {
+            let Some(&i) = home.get(&event) else {
+                continue;
+            };
+            let at = sequences[i].1.events.iter().position(|&e| e == event);
+            ordered.push((
+                i,
+                at.unwrap_or(usize::MAX),
+                SequenceEventDetails {
+                    event,
+                    kinds: kinds
+                        .split(',')
+                        .filter(|k| !k.is_empty())
+                        .map(str::to_string)
+                        .collect(),
+                    region,
+                    places: places_of.remove(&event).unwrap_or_default(),
+                },
+            ));
+        }
+        ordered.sort_by_key(|(i, at, _)| (*i, *at));
+        for (i, _, details) in ordered {
+            sequences[i].1.details.push(details);
+        }
+        Ok(())
     }
 
     /// Every event, or those `entity` takes part in.
@@ -7209,6 +7409,45 @@ mod tests {
             .find(|e| e.before == tour && e.after == leper)
             .unwrap();
         assert_eq!(edge.bases, ["Mark's order", "Robertson's harmony (1922)"]);
+        // Robertson's parts group every event, the great Galilean ministry
+        // in his eight groups.
+        let parts = &ministry.groupings[0];
+        assert_eq!(parts.key, "robertson");
+        let galilean = parts
+            .groups
+            .iter()
+            .position(|g| g.title == "The great Galilean ministry")
+            .unwrap();
+        assert_eq!(
+            parts
+                .groups
+                .iter()
+                .filter(|g| g.parent == Some(galilean as u32))
+                .count(),
+            8
+        );
+        let grouped: usize = parts.groups.iter().map(|g| g.events.len()).sum();
+        assert_eq!(grouped, ministry.events.len());
+        // John's feasts mark the years, Tabernacles at John 7:2.
+        let tabernacles = ministry
+            .milestones
+            .iter()
+            .find(|m| m.feast == "sukkot")
+            .unwrap();
+        assert_eq!(tabernacles.event, id("Feast of Tabernacles"));
+        assert_eq!(
+            (tabernacles.book, tabernacles.chapter, tabernacles.verse),
+            (43, 7, 2)
+        );
+        // Water to wine is a sign, at Cana (TIPNR's Kanah).
+        let wine = ministry
+            .details
+            .iter()
+            .find(|d| d.event == id("Water to Wine"))
+            .unwrap();
+        assert_eq!(wine.kinds, ["sign"]);
+        assert_eq!(wine.region, "galilee");
+        assert_eq!(wine.places[0].label, "Cana");
         // Holy Week opens its own sequence, whose events the ministry leaves
         // out.
         let week = sequences.iter().find(|s| s.key == "holy-week").unwrap();
