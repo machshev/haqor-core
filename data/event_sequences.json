@@ -4472,6 +4472,12 @@
         "God makes a covenant with Noah": {
           "kinds": [
             "covenant"
+          ],
+          "places": [
+            {
+              "key": "Ararat@Gen.8.4",
+              "label": "The mountains of Ararat"
+            }
           ]
         },
         "Noah gets drunk and Canaan is cursed": {
@@ -4502,6 +4508,12 @@
         "Tower of Babel": {
           "kinds": [
             "judgement"
+          ],
+          "places": [
+            {
+              "key": "Shinar@Gen.10.10",
+              "label": "A plain in the land of Shinar"
+            }
           ]
         },
         "Birth of Reu": {
@@ -4570,7 +4582,8 @@
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "flood",
       "title": "The Flood",
@@ -4624,15 +4637,28 @@
         "The flood subsides": {
           "kinds": [
             "sign"
+          ],
+          "places": [
+            {
+              "key": "Ararat@Gen.8.4",
+              "label": "The mountains of Ararat"
+            }
           ]
         },
         "Leaving the Ark": {
           "kinds": [
             "journey"
+          ],
+          "places": [
+            {
+              "key": "Ararat@Gen.8.4",
+              "label": "The mountains of Ararat"
+            }
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "abraham",
       "title": "Abraham and Isaac",
@@ -5652,15 +5678,28 @@
         "Job's Trial": {
           "kinds": [
             "conflict"
+          ],
+          "places": [
+            {
+              "key": "Uz@Job.1.1",
+              "label": "The land of Uz"
+            }
           ]
         },
         "Death of Job": {
           "kinds": [
             "death"
+          ],
+          "places": [
+            {
+              "key": "Uz@Job.1.1",
+              "label": "The land of Uz"
+            }
           ]
         }
       }
-    },
+    }
+,
     {
       "id": "moses-exodus",
       "title": "Moses and the Exodus",
