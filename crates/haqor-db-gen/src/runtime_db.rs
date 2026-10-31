@@ -398,6 +398,7 @@ pub fn generate_runtime(
         &data_dir.join(crate::names::PLACE_OVERRIDES),
         &data_dir.join(crate::journeys::JOURNEYS),
         &data_dir.join(crate::events::EVENT_OVERRIDES),
+        &data_dir.join(crate::sequences::EVENT_SEQUENCES),
     )?;
     // After the names, whose people and places the finds name.
     crate::artifacts::build_artifacts(

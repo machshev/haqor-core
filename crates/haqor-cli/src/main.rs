@@ -354,6 +354,9 @@ enum DbCommands {
         /// Haqor's corrections to the events of the Bible.
         #[arg(long, default_value = "data/event_overrides.json")]
         event_overrides: PathBuf,
+        /// Haqor's sequences, ordering the events where their dates are unsure.
+        #[arg(long, default_value = "data/event_sequences.json")]
+        event_sequences: PathBuf,
     },
     /// Reduce a downloaded dataset to the prepared files vendored in
     /// src_texts, which the build reads. The scripts/fetch-*.sh scripts run
@@ -716,6 +719,7 @@ fn main() -> Result<()> {
                 place_overrides,
                 journeys,
                 event_overrides,
+                event_sequences,
             } => {
                 let s = haqor_db_gen::gen_names(
                     &db,
@@ -723,11 +727,12 @@ fn main() -> Result<()> {
                     &place_overrides,
                     &journeys,
                     &event_overrides,
+                    &event_sequences,
                 )?;
                 println!(
                     "Wrote {} people, places and other names ({} words naming one, {} New Testament verses; {} places \
                      located, {} by Haqor's own identification), {} journeys ({} stops), {} events ({} people \
-                     and places) and {} senses ({} words) to {}",
+                     and places, {} sequences ordering {}) and {} senses ({} words) to {}",
                     s.entities,
                     s.name_words,
                     s.name_verses,
@@ -737,6 +742,8 @@ fn main() -> Result<()> {
                     s.journey_stops,
                     s.events.events,
                     s.events.names,
+                    s.sequences.sequences,
+                    s.sequences.members,
                     s.senses,
                     s.sense_words,
                     db.display()

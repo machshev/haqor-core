@@ -6375,6 +6375,86 @@ impl Bible {
         self.events_of(Some(id))
     }
 
+    /// The sequences ordering the Bible's events where their order is known
+    /// better than their dates, in the order Haqor's data gives them. Empty
+    /// for a database built before they were.
+    pub fn event_sequences(&self) -> rusqlite::Result<Vec<crate::names::EventSequence>> {
+        use crate::names::{EventSequence, SequenceEdge};
+        if !self.has_table("event_sequence")? {
+            return Ok(Vec::new());
+        }
+        let mut sequences: Vec<(u32, EventSequence)> = self
+            .db
+            .prepare(
+                "SELECT seq_id, key, title, note, expands FROM data.event_sequence \
+                 ORDER BY seq_id",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get(0)?,
+                    EventSequence {
+                        key: row.get(1)?,
+                        title: row.get(2)?,
+                        note: row.get(3)?,
+                        expands: row.get(4)?,
+                        events: Vec::new(),
+                        edges: Vec::new(),
+                    },
+                ))
+            })?
+            .collect::<rusqlite::Result<_>>()?;
+        let index: HashMap<u32, usize> = sequences
+            .iter()
+            .enumerate()
+            .map(|(i, (id, _))| (*id, i))
+            .collect();
+        for row in self
+            .db
+            .prepare(
+                "SELECT m.seq_id, m.event_id FROM data.event_sequence_member m \
+                 JOIN data.bible_event e USING(event_id) ORDER BY m.seq_id, e.ord",
+            )?
+            .query_map([], |row| Ok((row.get::<_, u32>(0)?, row.get::<_, u32>(1)?)))?
+        {
+            let (seq, event) = row?;
+            if let Some(&i) = index.get(&seq) {
+                sequences[i].1.events.push(event);
+            }
+        }
+        for row in self
+            .db
+            .prepare(
+                "SELECT seq_id, before_id, after_id, basis FROM data.event_sequence_edge \
+                 ORDER BY seq_id, before_id, after_id, basis",
+            )?
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, u32>(0)?,
+                    row.get::<_, u32>(1)?,
+                    row.get::<_, u32>(2)?,
+                    row.get::<_, String>(3)?,
+                ))
+            })?
+        {
+            let (seq, before, after, basis) = row?;
+            let Some(&i) = index.get(&seq) else {
+                continue;
+            };
+            let edges = &mut sequences[i].1.edges;
+            match edges.last_mut() {
+                Some(edge) if edge.before == before && edge.after == after => {
+                    edge.bases.push(basis);
+                }
+                _ => edges.push(SequenceEdge {
+                    before,
+                    after,
+                    bases: vec![basis],
+                }),
+            }
+        }
+        Ok(sequences.into_iter().map(|(_, s)| s).collect())
+    }
+
     /// Every event, or those `entity` takes part in.
     fn events_of(&self, entity: Option<u32>) -> rusqlite::Result<Vec<crate::names::BibleEvent>> {
         use crate::names::{BibleEvent, NameKind};
@@ -7104,6 +7184,42 @@ mod tests {
         let there = bible.name_events(egypt.id).unwrap();
         assert!(there.iter().any(|e| e.title == "Joseph sold to Egypt"));
         assert!(there.len() < events.len());
+    }
+
+    #[test]
+    fn sequences_order_the_ministry() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let sequences = bible.event_sequences().unwrap();
+        if sequences.is_empty() {
+            eprintln!("skipping: haqor.db has no event_sequence table");
+            return;
+        }
+        let events = bible.bible_events().unwrap();
+        let id = |title: &str| events.iter().find(|e| e.title == title).unwrap().id;
+        let ministry = sequences.iter().find(|s| s.key == "ministry").unwrap();
+        assert_eq!(ministry.expands, None);
+        assert!(ministry.events.contains(&id("Water to Wine")));
+        // Mark puts the leper's healing after the first tour.
+        let (tour, leper) = (id("Jesus' 1st Tour of Galilee"), id("Healing the Leper"));
+        let edge = ministry
+            .edges
+            .iter()
+            .find(|e| e.before == tour && e.after == leper)
+            .unwrap();
+        assert_eq!(edge.bases, ["Mark's order"]);
+        // Holy Week opens its own sequence, whose events the ministry leaves
+        // out.
+        let week = sequences.iter().find(|s| s.key == "holy-week").unwrap();
+        assert_eq!(week.expands, Some(id("Holy Week")));
+        assert!(ministry.events.contains(&id("Holy Week")));
+        assert!(week.events.contains(&id("The Last Supper")));
+        assert!(!ministry.events.contains(&id("The Last Supper")));
+        assert!(
+            week.edges
+                .iter()
+                .all(|e| week.events.contains(&e.before) && week.events.contains(&e.after))
+        );
     }
 
     /// Journeys come in the file's order, their stops at their places, with

@@ -25,6 +25,7 @@ mod runtime_db;
 mod sedra;
 mod sedra_db;
 mod sefaria;
+mod sequences;
 mod stepbible;
 mod syntax;
 mod tagnt;
@@ -55,6 +56,7 @@ pub use quotations::{
 };
 pub use runtime_db::{BlobCodec, SCHEMA_VERSION, generate_runtime, open_generation_dbs, pack_ref};
 pub use sefaria::{ImportSummary, import_sefaria};
+pub use sequences::{EVENT_SEQUENCES, SequencesSummary};
 pub use stepbible::source_dir as stepbible_source_dir;
 pub use syntax::{SyntaxSummary, build_syntax_trees, gen_syntax};
 pub use tagnt::{GreekSummary, build_greek, gen_greek};

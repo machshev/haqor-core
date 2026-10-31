@@ -210,6 +210,8 @@ pub struct NamesSummary {
     pub journey_stops: usize,
     /// The events of the Bible, and the people and places taking part.
     pub events: crate::events::EventsSummary,
+    /// The sequences ordering the events.
+    pub sequences: crate::sequences::SequencesSummary,
 }
 
 fn text(value: &Value, key: &str) -> String {
@@ -457,13 +459,14 @@ fn distinct(locations: &[Location]) -> Vec<&Location> {
 /// prepared files in `src_texts`, placing the places `place_overrides` names
 /// where it says, the journeys of `journeys` through them, and the events of
 /// the Bible, corrected by `event_overrides`, with the people and places
-/// taking part.
+/// taking part, and the sequences of `event_sequences` ordering them.
 pub fn build_names(
     db: &Connection,
     src_texts: &Path,
     place_overrides: &Path,
     journeys: &Path,
     event_overrides: &Path,
+    event_sequences: &Path,
 ) -> Result<NamesSummary> {
     let dir = crate::stepbible::source_dir(src_texts);
     let read = |name: &str| {
@@ -747,6 +750,8 @@ pub fn build_names(
         .context("reading the KJV/Hebrew verse numbering for the events")?;
     summary.events =
         crate::events::build(&tx, src_texts, event_overrides, &records, &versification)?;
+    // After the events, which the sequences order.
+    summary.sequences = crate::sequences::build(&tx, event_sequences)?;
 
     // Senses, keyed by surface where they can be: each surface takes the
     // sense most of its occurrences have, and only the others are listed.
@@ -858,9 +863,17 @@ pub fn gen_names(
     place_overrides: &Path,
     journeys: &Path,
     event_overrides: &Path,
+    event_sequences: &Path,
 ) -> Result<NamesSummary> {
     let db = Connection::open(path).with_context(|| format!("opening {}", path.display()))?;
-    let summary = build_names(&db, src_texts, place_overrides, journeys, event_overrides)?;
+    let summary = build_names(
+        &db,
+        src_texts,
+        place_overrides,
+        journeys,
+        event_overrides,
+        event_sequences,
+    )?;
     crate::runtime_db::restamp_built(&db)?;
     Ok(summary)
 }
@@ -936,6 +949,7 @@ mod tests {
             &root.join("data").join(PLACE_OVERRIDES),
             &root.join("data").join(crate::journeys::JOURNEYS),
             &root.join("data").join(crate::events::EVENT_OVERRIDES),
+            &root.join("data").join(crate::sequences::EVENT_SEQUENCES),
         )
         .unwrap();
         eprintln!("{summary:?}");

@@ -36,3 +36,7 @@ A build fails if an override names no event, its `was` differs, a key matches
 no record, or a date, duration or verse cannot be read. Run it with
 `RUST_LOG=haqor_db_gen::events=debug` to list the people and places it found
 no record for.
+
+Where events are better known by their order than their dates — the Gospels'
+dozens a year — `event_sequences.json` orders them by what the text says came
+before what (see `EVENT_SEQUENCES.md`), and the app draws them as a graph.

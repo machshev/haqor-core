@@ -355,6 +355,33 @@ pub struct BibleEvent {
     pub note: String,
 }
 
+/// A run of the Bible's events ordered by what the text says came before
+/// what, not by date (Haqor's `data/event_sequences.json`). Two of its
+/// events no run of [`EventSequence::edges`] joins are of unknown order.
+#[derive(Clone, Debug, PartialEq)]
+pub struct EventSequence {
+    pub key: String,
+    pub title: String,
+    /// What it orders and how; may be empty.
+    pub note: String,
+    /// The event ([`BibleEvent::id`]) whose inside it tells, standing for it
+    /// wherever that event is drawn; none for one standing for itself.
+    pub expands: Option<u32>,
+    /// Its events, by id, in the timeline's order.
+    pub events: Vec<u32>,
+    pub edges: Vec<SequenceEdge>,
+}
+
+/// That one event of a sequence came before another, and what says so.
+#[derive(Clone, Debug, PartialEq)]
+pub struct SequenceEdge {
+    pub before: u32,
+    pub after: u32,
+    /// A witness, "Mark's order", or a verse, "Matthew 14:13: …"; one or
+    /// more.
+    pub bases: Vec<String>,
+}
+
 /// Every place, and the regions they lie in.
 #[derive(Clone, Debug, Default, PartialEq)]
 pub struct Gazetteer {
