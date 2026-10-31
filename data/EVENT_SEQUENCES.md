@@ -47,7 +47,7 @@ Each sequence has:
   happens at, the chief first, for the map: TIPNR keys as in
   `journeys.json`, or `{"key", "label"}` where the place is called otherwise
   than its record (Cana for TIPNR's `Kanah@Jos.19.28`). A place must have a
-  position; a place no one has found (Gerasa, Ephraim) is left out.
+  position; uncertain Gospel sites can use explicitly estimated locations.
 
 The chains join into one order. Two events no run of chains joins are of
 unknown order to one another, and are drawn so. Where the witnesses disagree —
@@ -156,3 +156,15 @@ travels to another person's location. Unknown places remain unpinned.
 The ministry separates John's activities from Jesus's. Paul's first journey
 includes Barnabas; the second includes him at their separation only. No later
 location for Barnabas is inferred from Paul's travels.
+
+## Gospel coverage and estimated sites
+
+The Gospel audit in `GOSPEL_JOURNEYS.md` adds missing travel nodes, expands the
+priestly and Roman hearings, and expands the resurrection appearances (including
+John 21). The lake and mountain appearances remain unordered relative to each
+other. Chorazin has a retrospective activity node without invented chronological
+edges. Estimated narrative sites now locate otherwise unnamed settings; their
+summaries state the assumptions and the app marks their positions as estimates.
+Siloam is no longer Jesus' destination, and the priests' council in John 11 is
+not assigned to his travel track. Jerusalem events use separate estimated city
+sites rather than one shared city-centre point where the narrative permits it.

@@ -147,19 +147,692 @@
       "name": "The flight into Egypt",
       "summary": "Warned in a dream, Joseph takes the child and his mother from Bethlehem to Egypt until Herod is dead, then settles in Nazareth of Galilee (Matthew's account).",
       "stops": [
-        { "key": "Bethlehem@Gen.35.16", "name": "Bethlehem", "ref": "Mat.2.1" },
-        { "key": "Egypt@Gen.12.10", "name": "Egypt", "ref": "Mat.2.14" },
-        { "key": "Nazareth@Mat.2.23", "name": "Nazareth", "ref": "Mat.2.23" }
+        {
+          "key": "Bethlehem@Gen.35.16",
+          "name": "Bethlehem",
+          "ref": "Mat.2.1"
+        },
+        {
+          "key": "Egypt_Refuge@Mat.2.14",
+          "name": "Refuge in Egypt",
+          "ref": "Mat.2.14",
+          "label": "Egyptian refuge (regional estimate)",
+          "note": "Eastern Nile delta chosen as a logical regional anchor; Matthew names only Egypt, not the town or route."
+        },
+        {
+          "key": "Nazareth@Mat.2.23",
+          "name": "Nazareth",
+          "ref": "Mat.2.23"
+        }
       ]
     },
     {
       "name": "The temptations in the wilderness",
       "summary": "Baptized in Jordan, Jesus is led up into the wilderness of the Jordan valley. There the adversary, a delegation of the Jewish leaders, sets him on the pinnacle of the temple in Jerusalem, then takes him up a high mountain to see all the kingdoms of the land, as Moses saw it from Pisgah (Matthew's order).",
       "stops": [
-        { "key": "Beth-barah@Jdg.7.24", "name": "Beth-barah", "ref": "Jhn.1.28", "label": "Bethany beyond Jordan", "note": "Where John was baptizing (John 1:28), and Jesus was baptized in Jordan (Matthew 3:13)." },
-        { "key": "Arabah@Deu.1.1", "name": "Arabah", "ref": "Mat.4.1", "label": "The wilderness (the Arabah)", "note": "Led up of the Spirit into the wilderness of the Jordan valley, forty days." },
-        { "key": "Jerusalem@Gen.14.18", "name": "Jerusalem", "ref": "Mat.4.5", "label": "Pinnacle of the temple", "note": "The temple's south-west corner, where the priest stood to blow the trumpet for the sabbath: the stone inscribed \"to the place of trumpeting\" fell from it." },
-        { "key": "Pisgah@Num.21.20", "name": "Pisgah", "ref": "Mat.4.8", "note": "A high mountain: the top of Pisgah, where Yahweh shewed Moses all the land (Deuteronomy 3:27; 34:1–4); Luke's \"shewed unto him all the kingdoms\" (4:5) has the verb of the Greek of Deuteronomy 34:1. Here too Balak took Balaam to view Israel, offering him honour (Numbers 22:17; 23:14). The kingdoms offered are the tetrarchies of Israel, the land promised to the seed (Genesis 13:14–15)." }
+        {
+          "key": "Beth-barah@Jdg.7.24",
+          "name": "Beth-barah",
+          "ref": "Jhn.1.28",
+          "label": "Bethany beyond Jordan",
+          "note": "Where John was baptizing (John 1:28), and Jesus was baptized in Jordan (Matthew 3:13)."
+        },
+        {
+          "key": "Temptation_Wilderness@Mat.4.1",
+          "name": "Wilderness of the temptations",
+          "ref": "Mat.4.1",
+          "label": "Wilderness of the temptations (estimated)",
+          "note": "Led up of the Spirit into the wilderness of the Jordan valley above the Dead Sea, forty days: by Beth-arabah, \"house of the Arabah\", a city in the wilderness (Joshua 15:61). The exact site is not named in the Gospel; this is Haqor's working estimate."
+        },
+        {
+          "key": "Temple_Pinnacle@Mat.4.5",
+          "name": "Pinnacle of the temple",
+          "ref": "Mat.4.5",
+          "label": "Pinnacle of the temple (estimated)",
+          "note": "The temple's south-west corner, where the priest stood to blow the trumpet for the sabbath: the stone inscribed \"to the place of trumpeting\" fell from it. The exact site is not named in the Gospel; this is Haqor's working estimate."
+        },
+        {
+          "key": "Temptation_Mountain@Mat.4.8",
+          "name": "High mountain of the temptations",
+          "ref": "Mat.4.8",
+          "note": "A high mountain: the top of Pisgah, where Yahweh shewed Moses all the land (Deuteronomy 3:27; 34:1–4); Luke's \"shewed unto him all the kingdoms\" (4:5) has the verb of the Greek of Deuteronomy 34:1. Here too Balak took Balaam to view Israel, offering him honour (Numbers 22:17; 23:14). The kingdoms offered are the tetrarchies of Israel, the land promised to the seed (Genesis 13:14–15). The exact site is not named in the Gospel; this is Haqor's working estimate.",
+          "label": "High mountain of the temptations (estimated)"
+        }
+      ]
+    },
+    {
+      "name": "Jesus at twelve: Jerusalem and Nazareth",
+      "summary": "Luke 2:41-52. The annual Passover visit is explicit; only the visit at twelve is narrated in detail.",
+      "stops": [
+        {
+          "key": "Nazareth@Mat.2.23",
+          "name": "Nazareth",
+          "ref": "Luk.2.39"
+        },
+        {
+          "key": "Jerusalem@Gen.14.18",
+          "name": "Jerusalem",
+          "ref": "Luk.2.42"
+        },
+        {
+          "key": "Temple_Precinct@Jhn.2.14",
+          "name": "Temple precinct",
+          "ref": "Luk.2.46",
+          "note": "Found among the teachers; the location within the precinct is estimated."
+        },
+        {
+          "key": "Nazareth@Mat.2.23",
+          "name": "Nazareth",
+          "ref": "Luk.2.51"
+        }
+      ]
+    },
+    {
+      "name": "Jesus comes from Nazareth to be baptized",
+      "summary": "Mark 1:9; Matthew 3:13-17. The exact baptism point is uncertain; Bethany beyond Jordan is the working vicinity from John 1:28.",
+      "stops": [
+        {
+          "key": "Nazareth@Mat.2.23",
+          "name": "Nazareth",
+          "ref": "Mrk.1.9"
+        },
+        {
+          "key": "Beth-barah@Jdg.7.24",
+          "name": "Beth-barah",
+          "ref": "Mat.3.13",
+          "label": "Bethany beyond Jordan (estimated)"
+        }
+      ]
+    },
+    {
+      "name": "Jesus gathers disciples and goes to Cana",
+      "summary": "John 1:28-2:12. Bethany beyond Jordan, the wedding at Cana and the short stay at Capernaum.",
+      "stops": [
+        {
+          "key": "Beth-barah@Jdg.7.24",
+          "name": "Beth-barah",
+          "ref": "Jhn.1.35",
+          "label": "Bethany beyond Jordan (estimated)"
+        },
+        {
+          "key": "Kanah@Jos.19.28",
+          "name": "Kanah",
+          "ref": "Jhn.2.1",
+          "label": "Cana"
+        },
+        {
+          "key": "Capernaum@Mat.4.13",
+          "name": "Capernaum",
+          "ref": "Jhn.2.12"
+        }
+      ]
+    },
+    {
+      "name": "Jesus in Judea and Samaria, returning to Galilee",
+      "summary": "John 2:13-4:54. The Judean baptizing site is estimated. The official's son is healed at a distance: Jesus stays at Cana.",
+      "stops": [
+        {
+          "key": "Capernaum@Mat.4.13",
+          "name": "Capernaum",
+          "ref": "Jhn.2.12"
+        },
+        {
+          "key": "Temple_Precinct@Jhn.2.14",
+          "name": "Temple precinct",
+          "ref": "Jhn.2.14",
+          "note": "Passover, cleansing of the temple; Nicodemus meets Jesus during this Jerusalem stay (3:1-21)."
+        },
+        {
+          "key": "Judean_Baptizing_Country@Jhn.3.22",
+          "name": "Judean baptizing countryside",
+          "ref": "Jhn.3.22"
+        },
+        {
+          "key": "Sychar@Jhn.4.5",
+          "name": "Sychar",
+          "ref": "Jhn.4.5",
+          "note": "Jacob's well and two days with the Samaritans (4:6,40)."
+        },
+        {
+          "key": "Kanah@Jos.19.28",
+          "name": "Kanah",
+          "ref": "Jhn.4.46",
+          "label": "Cana",
+          "note": "Jesus does not go to the sick son in Capernaum (4:50-54)."
+        }
+      ]
+    },
+    {
+      "name": "Jesus settles in Capernaum and tours Galilee",
+      "summary": "Luke 4:16-44 and Mark 1:14-2:1. The first rejection at Nazareth follows Luke; the unnamed towns of the tour are not an invented list.",
+      "stops": [
+        {
+          "key": "Nazareth@Mat.2.23",
+          "name": "Nazareth",
+          "ref": "Luk.4.16"
+        },
+        {
+          "key": "Capernaum@Mat.4.13",
+          "name": "Capernaum",
+          "ref": "Luk.4.31",
+          "note": "Synagogue and Simon's house (4:33-39)."
+        },
+        {
+          "key": "Capernaum_Retreat@Mrk.1.35",
+          "name": "Solitary place near Capernaum",
+          "ref": "Mrk.1.35"
+        },
+        {
+          "key": "Galilee@Jos.12.23",
+          "name": "Galilee",
+          "ref": "Mrk.1.39",
+          "note": "A regional anchor for the circuit through the synagogues; no single town is implied."
+        },
+        {
+          "key": "Capernaum@Mat.4.13",
+          "name": "Capernaum",
+          "ref": "Mrk.2.1",
+          "note": "Return home; paralytic healed, Levi called by the lake (2:1-17)."
+        }
+      ]
+    },
+    {
+      "name": "Jesus at the unnamed Jerusalem feast",
+      "summary": "John 5:1-15, followed by the return to Galilee in 6:1. Its position among the Synoptic episodes is a harmony choice; John does not name this feast.",
+      "stops": [
+        {
+          "key": "Jerusalem@Gen.14.18",
+          "name": "Jerusalem",
+          "ref": "Jhn.5.1"
+        },
+        {
+          "key": "Bethesda@Jhn.5.2",
+          "name": "Bethesda",
+          "ref": "Jhn.5.2"
+        },
+        {
+          "key": "Temple_Precinct@Jhn.2.14",
+          "name": "Temple precinct",
+          "ref": "Jhn.5.14"
+        },
+        {
+          "key": "Chinnereth@Num.34.11",
+          "name": "Chinnereth",
+          "ref": "Jhn.6.1",
+          "label": "Sea of Galilee",
+          "note": "John resumes in Galilee without describing the intervening route."
+        }
+      ]
+    },
+    {
+      "name": "Jesus teaches on the hillside and goes to Nain",
+      "summary": "Matthew 5-8 and Luke 6-7. The teaching hillside is a logical estimate near the lake; Capernaum and Nain are explicit.",
+      "stops": [
+        {
+          "key": "Galilean_Teaching_Hill@Mat.5.1",
+          "name": "Galilean teaching hillside",
+          "ref": "Luk.6.12",
+          "note": "The Twelve are chosen, then Jesus teaches on a level place (6:17); Matthew 5:1 describes a mountain."
+        },
+        {
+          "key": "Capernaum@Mat.4.13",
+          "name": "Capernaum",
+          "ref": "Luk.7.1",
+          "note": "The centurion's servant is healed."
+        },
+        {
+          "key": "Nain@Luk.7.11",
+          "name": "Nain",
+          "ref": "Luk.7.11",
+          "note": "The widow's son is raised at the town gate."
+        }
+      ]
+    },
+    {
+      "name": "Jesus crosses the lake and returns to Nazareth",
+      "summary": "Mark 4:35-6:6; Matthew 9:1 identifies the return as his own city. Kursi is an estimated eastern landing, not inland Jerash.",
+      "stops": [
+        {
+          "key": "Capernaum@Mat.4.13",
+          "name": "Capernaum",
+          "ref": "Mrk.4.35",
+          "label": "Western shore near Capernaum (estimated)",
+          "note": "Working departure vicinity from the Capernaum-based lakeside ministry (Mark 3:19-4:1,35). The precise embarkation point is not named."
+        },
+        {
+          "key": "Gerasa@Mat.8.28",
+          "name": "Gerasa",
+          "ref": "Mrk.5.1",
+          "label": "Eastern shore near Kursi (estimated)",
+          "note": "The storm is stilled en route; the demoniac is healed among the tombs.",
+          "by": "sea"
+        },
+        {
+          "key": "Capernaum@Mat.4.13",
+          "name": "Capernaum",
+          "ref": "Mat.9.1",
+          "note": "Return across the lake; Jairus' daughter and the woman are healed (Mark 5:21-43).",
+          "by": "sea"
+        },
+        {
+          "key": "Nazareth@Mat.2.23",
+          "name": "Nazareth",
+          "ref": "Mrk.6.1"
+        },
+        {
+          "key": "Galilee@Jos.12.23",
+          "name": "Galilee",
+          "ref": "Mrk.6.6",
+          "note": "A further circuit of villages; Jesus sends out the Twelve."
+        }
+      ]
+    },
+    {
+      "name": "Jesus feeds the five thousand and crosses to Gennesaret",
+      "summary": "Luke 9:10-17; Mark 6:30-56; John 6. Bethsaida is named as the intended direction in Mark 6:45, not an additional recorded landing.",
+      "stops": [
+        {
+          "key": "Bethsaida_Retreat@Luk.9.10",
+          "name": "Solitary place near Bethsaida",
+          "ref": "Luk.9.10",
+          "note": "A solitary place near Bethsaida, reached by boat (Mark 6:32); Jesus withdraws to the mountain (John 6:15)."
+        },
+        {
+          "key": "Chinnereth@Num.34.11",
+          "name": "Chinnereth",
+          "ref": "Jhn.6.19",
+          "label": "Sea of Galilee",
+          "note": "Jesus walks on the water to the disciples; the crossing point is only a lake anchor.",
+          "by": "sea"
+        },
+        {
+          "key": "Gennesaret@Mat.14.34",
+          "name": "Gennesaret",
+          "ref": "Mrk.6.53",
+          "by": "sea"
+        },
+        {
+          "key": "Capernaum@Mat.4.13",
+          "name": "Capernaum",
+          "ref": "Jhn.6.59",
+          "note": "Bread of life teaching in the synagogue."
+        }
+      ]
+    },
+    {
+      "name": "Jesus through Tyre, Sidon and the Decapolis",
+      "summary": "Mark 7:24-8:10; Matthew 15:21-39. The regions are explicit, but entry into the city centres and the road used are not.",
+      "stops": [
+        {
+          "key": "Tyre@Jos.19.29",
+          "name": "Tyre",
+          "ref": "Mrk.7.24",
+          "note": "The Syrophoenician woman's daughter is healed from a distance; the house is unnamed."
+        },
+        {
+          "key": "Sidon@Gen.10.19",
+          "name": "Sidon",
+          "ref": "Mrk.7.31",
+          "note": "The route through Sidon follows the reading used by modern critical texts; the KJV reads departure from the coasts of Tyre and Sidon."
+        },
+        {
+          "key": "Decapolis_Feeding_Hill@Mat.15.29",
+          "name": "Hillside above the eastern lakeshore",
+          "ref": "Mrk.7.31",
+          "note": "Return through Decapolis to the lake; deaf man healed, crowds healed, four thousand fed."
+        },
+        {
+          "key": "Magadan@Mat.15.39",
+          "name": "Magadan",
+          "ref": "Mat.15.39",
+          "label": "Magadan / Dalmanutha district",
+          "note": "Matthew names Magadan (Magdala in the KJV); Mark 8:10 names Dalmanutha. One approximate western-shore district is used, not two successive stops.",
+          "by": "sea"
+        }
+      ]
+    },
+    {
+      "name": "Jesus to Bethsaida, Caesarea Philippi and the mountain",
+      "summary": "Mark 8:10-9:33. The transfiguration mountain is estimated on southern Hermon; its name is not given.",
+      "stops": [
+        {
+          "key": "Magadan@Mat.15.39",
+          "name": "Magadan",
+          "ref": "Mrk.8.10",
+          "label": "Magadan / Dalmanutha district"
+        },
+        {
+          "key": "Bethsaida@Mat.11.21",
+          "name": "Bethsaida",
+          "ref": "Mrk.8.22",
+          "note": "After crossing again (8:13), Jesus leads the blind man outside the village.",
+          "by": "sea"
+        },
+        {
+          "key": "Caesarea_Philippi@Mat.16.13",
+          "name": "Caesarea Philippi",
+          "ref": "Mrk.8.27",
+          "label": "District of Caesarea Philippi",
+          "note": "Peter's confession is on the road among the villages."
+        },
+        {
+          "key": "Transfiguration_Mountain@Mrk.9.2",
+          "name": "Mountain of the transfiguration",
+          "ref": "Mrk.9.2",
+          "note": "Six days later; descent and healing of the boy (9:9-29)."
+        },
+        {
+          "key": "Galilee@Jos.12.23",
+          "name": "Galilee",
+          "ref": "Mrk.9.30"
+        },
+        {
+          "key": "Capernaum@Mat.4.13",
+          "name": "Capernaum",
+          "ref": "Mrk.9.33"
+        }
+      ]
+    },
+    {
+      "name": "Jesus toward Jerusalem through Samaria",
+      "summary": "Luke 9:51-56 and John 7:1-14. Linking Luke's departure to Tabernacles follows a harmony; the rejected village is estimated on the southbound route.",
+      "stops": [
+        {
+          "key": "Galilee@Jos.12.23",
+          "name": "Galilee",
+          "ref": "Jhn.7.1"
+        },
+        {
+          "key": "Samaritan_Village@Luk.9.52",
+          "name": "Samaritan village on the Jerusalem road",
+          "ref": "Luk.9.52",
+          "note": "They move on to another unnamed village (9:56)."
+        },
+        {
+          "key": "Temple_Precinct@Jhn.2.14",
+          "name": "Temple precinct",
+          "ref": "Jhn.7.14",
+          "note": "Jesus travels privately (7:10), then teaches at the feast."
+        }
+      ]
+    },
+    {
+      "name": "Jesus in Jerusalem and Bethany before Dedication",
+      "summary": "John 7-10 and Luke 10:38-42. The placement of Luke's Martha-and-Mary visit between the feasts is a harmony choice; Luke does not name the village.",
+      "stops": [
+        {
+          "key": "Temple_Precinct@Jhn.2.14",
+          "name": "Temple precinct",
+          "ref": "Jhn.7.14"
+        },
+        {
+          "key": "Olives_Mount@2Sa.15.30",
+          "name": "Olives Mount",
+          "ref": "Jhn.8.1",
+          "label": "Mount of Olives",
+          "note": "This overnight movement belongs to John 7:53-8:11, absent from many early manuscripts."
+        },
+        {
+          "key": "Temple_Precinct@Jhn.2.14",
+          "name": "Temple precinct",
+          "ref": "Jhn.8.2"
+        },
+        {
+          "key": "Temple_Treasury@Mrk.12.41",
+          "name": "Temple treasury",
+          "ref": "Jhn.8.20"
+        },
+        {
+          "key": "Bethany@Mat.21.17",
+          "name": "Bethany",
+          "ref": "Luk.10.38",
+          "note": "Bethany is inferred from John 11:1 for the home of Martha and Mary."
+        },
+        {
+          "key": "Solomons_Portico@Jhn.10.23",
+          "name": "Solomon's portico",
+          "ref": "Jhn.10.23",
+          "note": "At Dedication, in winter. John does not describe every intervening journey."
+        }
+      ]
+    },
+    {
+      "name": "Jesus beyond Jordan, to Lazarus and to Ephraim",
+      "summary": "John 10:40-11:54. After Dedication he returns to John's earlier baptizing place, goes to Bethany, then withdraws to Ephraim.",
+      "stops": [
+        {
+          "key": "Solomons_Portico@Jhn.10.23",
+          "name": "Solomon's portico",
+          "ref": "Jhn.10.23"
+        },
+        {
+          "key": "Beth-barah@Jdg.7.24",
+          "name": "Beth-barah",
+          "ref": "Jhn.10.40",
+          "label": "Bethany beyond Jordan (estimated)"
+        },
+        {
+          "key": "Bethany@Mat.21.17",
+          "name": "Bethany",
+          "ref": "Jhn.11.17",
+          "note": "Martha meets him outside the village (11:30); Lazarus is raised."
+        },
+        {
+          "key": "Ephraim@2Sa.13.23",
+          "name": "Ephraim",
+          "ref": "Jhn.11.54",
+          "note": "The working site near et-Taiyibeh is marked as an estimate."
+        }
+      ]
+    },
+    {
+      "name": "Jesus' final approach through the borderlands and Jericho",
+      "summary": "A working harmony of John 11:54, Luke 17:11-19:28 and Mark 10. The connection from Ephraim to Luke's borderlands is conjectural; the intervening roads are not recorded.",
+      "stops": [
+        {
+          "key": "Ephraim@2Sa.13.23",
+          "name": "Ephraim",
+          "ref": "Jhn.11.54"
+        },
+        {
+          "key": "Samaria_Galilee_Border@Luk.17.11",
+          "name": "Border country of Samaria and Galilee",
+          "ref": "Luk.17.11",
+          "note": "Ten lepers healed in an unnamed village."
+        },
+        {
+          "key": "Beyond_Jordan_Ministry@Mrk.10.1",
+          "name": "Beyond-Jordan teaching district",
+          "ref": "Mrk.10.1",
+          "note": "Teaching beyond Jordan; children blessed, rich man, prediction on the ascent."
+        },
+        {
+          "key": "Jericho@Num.22.1",
+          "name": "Jericho",
+          "ref": "Luk.19.1",
+          "note": "Bartimaeus and Zacchaeus; Luke places a blind healing on approach (18:35), Mark on departure (10:46)."
+        },
+        {
+          "key": "Bethany@Mat.21.17",
+          "name": "Bethany",
+          "ref": "Jhn.12.1",
+          "note": "Six days before Passover."
+        }
+      ]
+    },
+    {
+      "name": "Jesus enters Jerusalem and returns each evening",
+      "summary": "Mark 11:1-13:3; Luke 21:37. Repeated visits are retained. The fig-tree location on the Bethany road is uncertain.",
+      "stops": [
+        {
+          "key": "Bethany@Mat.21.17",
+          "name": "Bethany",
+          "ref": "Jhn.12.1"
+        },
+        {
+          "key": "Bethphage@Mat.21.1",
+          "name": "Bethphage",
+          "ref": "Mrk.11.1"
+        },
+        {
+          "key": "Olives_Mount@2Sa.15.30",
+          "name": "Olives Mount",
+          "ref": "Luk.19.37",
+          "label": "Mount of Olives"
+        },
+        {
+          "key": "Temple_Precinct@Jhn.2.14",
+          "name": "Temple precinct",
+          "ref": "Mrk.11.11"
+        },
+        {
+          "key": "Bethany@Mat.21.17",
+          "name": "Bethany",
+          "ref": "Mrk.11.11"
+        },
+        {
+          "key": "Temple_Precinct@Jhn.2.14",
+          "name": "Temple precinct",
+          "ref": "Mrk.11.15",
+          "note": "The fig tree is cursed on the way (11:12-14)."
+        },
+        {
+          "key": "Bethany@Mat.21.17",
+          "name": "Bethany",
+          "ref": "Mrk.11.19",
+          "note": "Mark says only outside the city; Bethany is a working overnight inference from 11:11-12."
+        },
+        {
+          "key": "Temple_Precinct@Jhn.2.14",
+          "name": "Temple precinct",
+          "ref": "Mrk.11.27",
+          "note": "The withered tree is seen en route (11:20)."
+        },
+        {
+          "key": "Temple_Treasury@Mrk.12.41",
+          "name": "Temple treasury",
+          "ref": "Mrk.12.41",
+          "note": "The widow's offering."
+        },
+        {
+          "key": "Olives_Mount@2Sa.15.30",
+          "name": "Olives Mount",
+          "ref": "Mrk.13.3",
+          "label": "Mount of Olives",
+          "note": "Olivet discourse; Luke 21:37 also records nights on the mount."
+        }
+      ]
+    },
+    {
+      "name": "Jesus from the supper to the trials and the tomb",
+      "summary": "Matthew 26-27; Mark 14-15; Luke 22-23; John 18-19. Jerusalem buildings are working estimates; the sequence of transfers is explicit. Lines connect sites, not a recovered street itinerary.",
+      "stops": [
+        {
+          "key": "Upper_Room@Mrk.14.15",
+          "name": "Upper room",
+          "ref": "Mrk.14.17"
+        },
+        {
+          "key": "Gethsemane@Mat.26.36",
+          "name": "Gethsemane",
+          "ref": "Mat.26.36",
+          "note": "Out to the Mount of Olives (Mark 14:26), across the Kidron into the garden (John 18:1); prayer and arrest. Gethsemane is on the mount: no separate journey to its summit is implied."
+        },
+        {
+          "key": "Annas_House@Jhn.18.13",
+          "name": "House of Annas",
+          "ref": "Jhn.18.13"
+        },
+        {
+          "key": "Caiaphas_House@Mat.26.57",
+          "name": "House of Caiaphas",
+          "ref": "Jhn.18.24"
+        },
+        {
+          "key": "Council_Place@Luk.22.66",
+          "name": "Council meeting place",
+          "ref": "Luk.22.66"
+        },
+        {
+          "key": "Praetorium@Jhn.18.28",
+          "name": "Pilate's praetorium",
+          "ref": "Jhn.18.28"
+        },
+        {
+          "key": "Herod_Trial@Luk.23.7",
+          "name": "Herod Antipas' Jerusalem lodging",
+          "ref": "Luk.23.7"
+        },
+        {
+          "key": "Praetorium@Jhn.18.28",
+          "name": "Pilate's praetorium",
+          "ref": "Luk.23.11"
+        },
+        {
+          "key": "Golgotha@Mat.27.33",
+          "name": "Golgotha",
+          "ref": "Jhn.19.17"
+        },
+        {
+          "key": "Garden_Tomb_of_Jesus@Jhn.19.41",
+          "name": "Garden tomb near Golgotha",
+          "ref": "Jhn.19.41",
+          "note": "Joseph and Nicodemus carry the body to the nearby tomb."
+        }
+      ]
+    },
+    {
+      "name": "Jesus appears at Emmaus and Jerusalem",
+      "summary": "Luke 24:13-43 and John 20:19-29. These are successive appearances, not a claim that Jesus walked the disciples' return route.",
+      "stops": [
+        {
+          "key": "Emmaus@Luk.24.13",
+          "name": "Emmaus",
+          "ref": "Luk.24.15",
+          "note": "Jesus joins the two on the road and enters the village (24:28-31); Emmaus' identification is disputed."
+        },
+        {
+          "key": "Jerusalem@Gen.14.18",
+          "name": "Jerusalem",
+          "ref": "Luk.24.36",
+          "note": "He appears to the gathered disciples that evening, and again with Thomas eight days later (John 20:26)."
+        }
+      ]
+    },
+    {
+      "name": "Jesus appears in Galilee",
+      "summary": "John 21:1-23 and Matthew 28:16-20. Both appearances are recorded, but their order relative to each other is not stated; this display follows John then Matthew as a working arrangement.",
+      "stops": [
+        {
+          "key": "Tiberias_Shore_Appearance@Jhn.21.1",
+          "name": "Shore of the Sea of Tiberias",
+          "ref": "Jhn.21.1",
+          "label": "Sea of Galilee",
+          "note": "Sea of Tiberias; Jesus is on the shore, not in the fishing boat. The precise beach is unknown."
+        },
+        {
+          "key": "Galilee_Commission_Mountain@Mat.28.16",
+          "name": "Mountain in Galilee",
+          "ref": "Mat.28.16",
+          "note": "The appointed mountain is estimated in the northwestern Galilean hills."
+        }
+      ]
+    },
+    {
+      "name": "Jesus leads the disciples toward Bethany",
+      "summary": "Luke 24:50-53; Acts 1:9-12. The route from the Jerusalem gathering to the Mount of Olives is explicit; the exact ascension site is estimated.",
+      "stops": [
+        {
+          "key": "Jerusalem@Gen.14.18",
+          "name": "Jerusalem",
+          "ref": "Luk.24.33",
+          "note": "Context of the gathered disciples (24:36-49); Acts 1:3 supplies the forty-day interval."
+        },
+        {
+          "key": "Ascension_Vicinity@Luk.24.50",
+          "name": "Mount of Olives toward Bethany",
+          "ref": "Luk.24.50"
+        }
       ]
     },
     {

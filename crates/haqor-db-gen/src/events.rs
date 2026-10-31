@@ -398,6 +398,8 @@ struct EventOverride {
     year: Option<i32>,
     duration: Option<String>,
     note: Option<String>,
+    /// The verses it tells of, in place of Theographic's, as [`verses`] reads them.
+    verses: Option<Vec<String>>,
     drop: bool,
 }
 
@@ -405,6 +407,32 @@ struct Overrides {
     events: HashMap<u32, EventOverride>,
     /// A person or place's TIPNR key, or none to leave it out.
     names: HashMap<String, Option<String>>,
+    /// Haqor's own events, written as Theographic's are (`id`, `title`,
+    /// `duration`, `note`, `verses`, `people`, `places`), each with the id of
+    /// the event it comes `after`, whose year it takes unless it gives a `year`.
+    added: Vec<(u32, Value)>,
+}
+
+/// The first id of Haqor's own events, clear of Theographic's.
+const FIRST_ADDED: u64 = 10001;
+
+/// The verses of an override, a range (`Matt.4.1-4`) written out verse by verse.
+fn verses(entry: &Value) -> Option<Vec<String>> {
+    let list = entry["verses"].as_array()?;
+    let mut out = Vec::new();
+    for reference in list.iter().filter_map(Value::as_str) {
+        let range = reference.rsplit_once('.').and_then(|(head, tail)| {
+            let (first, last) = tail.split_once('-')?;
+            Some((head, first.parse::<u32>().ok()?, last.parse::<u32>().ok()?))
+        });
+        match range {
+            Some((head, first, last)) if first <= last => {
+                out.extend((first..=last).map(|v| format!("{head}.{v}")))
+            }
+            _ => out.push(reference.to_string()),
+        }
+    }
+    Some(out)
 }
 
 impl Overrides {
@@ -435,12 +463,31 @@ impl Overrides {
                     year,
                     duration: text("duration"),
                     note: text("note"),
+                    verses: verses(entry),
                     drop: entry["drop"].as_bool().unwrap_or(false),
                 },
             );
             if duplicate.is_some() {
                 bail!("event {id} twice in {}", path.display());
             }
+        }
+        let mut added = Vec::new();
+        for entry in json["added"].as_array().into_iter().flatten() {
+            let (Some(id), Some(after)) = (entry["id"].as_u64(), entry["after"].as_u64()) else {
+                bail!(
+                    "an added event in {} without an id or after: {entry}",
+                    path.display()
+                );
+            };
+            if id < FIRST_ADDED || events.contains_key(&(id as u32)) {
+                bail!(
+                    "added event {id} in {}: ids start at {FIRST_ADDED}",
+                    path.display()
+                );
+            }
+            let mut event = entry.clone();
+            event["verses"] = json!(verses(entry).unwrap_or_default());
+            added.push((after as u32, event));
         }
         let mut names = HashMap::new();
         for entry in json["names"].as_array().into_iter().flatten() {
@@ -449,7 +496,11 @@ impl Overrides {
             };
             names.insert(id.to_string(), entry["key"].as_str().map(str::to_string));
         }
-        Ok(Overrides { events, names })
+        Ok(Overrides {
+            events,
+            names,
+            added,
+        })
     }
 }
 
@@ -495,6 +546,7 @@ pub(crate) fn build(
     let events = read(PREPARED_EVENTS)?;
     let names = read(PREPARED_NAMES)?;
     let mut overrides = Overrides::read(overrides)?;
+    let added = std::mem::take(&mut overrides.added);
     let tipnr: Vec<Record> = records.iter().filter_map(Record::read).collect();
     let by_key: HashMap<&str, u32> = tipnr.iter().map(|r| (r.key.as_str(), r.id)).collect();
     let mut faults = Vec::new();
@@ -576,12 +628,15 @@ pub(crate) fn build(
             ));
             continue;
         };
-        let references: Vec<&str> = event["verses"]
-            .as_array()
-            .into_iter()
-            .flatten()
-            .filter_map(Value::as_str)
-            .collect();
+        let references: Vec<&str> = match &fix.verses {
+            Some(verses) => verses.iter().map(String::as_str).collect(),
+            None => event["verses"]
+                .as_array()
+                .into_iter()
+                .flatten()
+                .filter_map(Value::as_str)
+                .collect(),
+        };
         let spans = match passages(&references, versification) {
             Ok(spans) => spans,
             Err(reference) => {
@@ -602,6 +657,57 @@ pub(crate) fn build(
     }
     // By year, Theographic's order kept within one, so that a year Haqor
     // corrects takes its event to its place.
+    rows.sort_by_key(|row| row.year);
+
+    // Haqor's own events, each just after the event it follows, in its year.
+    for (after, event) in &added {
+        let id = event["id"].as_u64().unwrap_or_default() as u32;
+        let text = |key: &str| event[key].as_str().unwrap_or_default();
+        let at = format!("added event {id} ({})", text("title"));
+        let Some(before) = rows.iter().position(|row| row.id == *after) else {
+            faults.push(format!("{at}: after event {after}, which there is not"));
+            continue;
+        };
+        if text("title").is_empty() {
+            faults.push(format!("{at}: no title"));
+            continue;
+        }
+        let Some((duration, unit)) = parse_duration(text("duration")) else {
+            faults.push(format!(
+                "{at}: an unreadable duration {:?}",
+                text("duration")
+            ));
+            continue;
+        };
+        let references: Vec<&str> = event["verses"]
+            .as_array()
+            .into_iter()
+            .flatten()
+            .filter_map(Value::as_str)
+            .collect();
+        let spans = match passages(&references, versification) {
+            Ok(spans) => spans,
+            Err(reference) => {
+                faults.push(format!("{at}: an unreadable verse {reference:?}"));
+                continue;
+            }
+        };
+        let row = Row {
+            id,
+            year: match event["year"].as_i64() {
+                Some(year) if year != 0 => year as i32,
+                _ => rows[before].year,
+            },
+            title: text("title").to_string(),
+            duration,
+            unit,
+            note: text("note").to_string(),
+            spans,
+            event,
+        };
+        rows.insert(before + 1, row);
+    }
+    // An added event that gives its own year goes to its place in that year.
     rows.sort_by_key(|row| row.year);
 
     let jesus = by_key.get(JESUS).copied();
@@ -683,6 +789,16 @@ mod tests {
         assert_eq!(parse_year("0030-05-01"), Some(30));
         assert_eq!(parse_year("-0004-12-25"), Some(-5));
         assert_eq!(parse_year("c. 30"), None);
+    }
+
+    #[test]
+    fn override_verses_write_out_a_range() {
+        let entry = json!({"verses": ["Matt.4.5-7", "Luke.4.13"]});
+        assert_eq!(
+            verses(&entry).unwrap(),
+            ["Matt.4.5", "Matt.4.6", "Matt.4.7", "Luke.4.13"]
+        );
+        assert_eq!(verses(&json!({})), None);
     }
 
     #[test]

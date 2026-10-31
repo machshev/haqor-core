@@ -80,3 +80,14 @@ south-east of the Dead Sea for the five cities: Bab edh-Dhra, Numeira, Feifa
 and Khanazir burned and were abandoned, and es-Safi, Zoar, lived on. Zoar's
 entry carries Lot's cave (Genesis 19:30), which has no record of its own, as a
 second location labelled as the cave.
+
+## Estimated narrative sites
+
+`added` creates a standalone place for an unnamed narrative setting, without
+splitting or assigning a word tag in TIPNR. Each has a unique `id` from 10001,
+a unique reference-shaped `key`, a nonempty `name` and `summary`. A matching
+entry in `places` must give valid coordinates and mark **every** location
+`estimated: true`. The generator rejects collisions and unmarked estimates.
+These records have origin `Haqor estimate`, no forms and no invented occurrences.
+The Gospel settings and the reasoning for their points are documented in
+`GOSPEL_JOURNEYS.md` and each record's summary.

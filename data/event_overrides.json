@@ -81,8 +81,309 @@
     {
       "id": 268,
       "was": "Temptations of Jesus",
-      "note": "The adversary (satan) is a delegation of the Jewish leaders, the generation of vipers (Matthew 3:7; 12:34). Having seen his baptism, they offer him the kingdoms of the land, the tetrarchies of Israel, if he will lead them as their king. Matthew gives the order: the wilderness of the Jordan valley, the pinnacle of the temple, a high mountain: Pisgah, where Yahweh shewed Moses all the land (Deuteronomy 34:1–4), and where Balak took Balaam to view Israel, offering him honour (Numbers 22:17; 23:14).",
-      "why": "Christadelphian reading of the temptations; see the journey of the same name."
+      "title": "Jesus tempted in the wilderness",
+      "verses": [
+        "Matt.4.1-4",
+        "Mark.1.12-13",
+        "Luke.4.1-4"
+      ],
+      "note": "The adversary (satan) is a delegation of the Jewish leaders, the generation of vipers (Matthew 3:7; 12:34). Having seen his baptism, they come to him in the wilderness of the Jordan valley above the Dead Sea, by Beth-arabah, after his forty days of fasting, and offer him the kingdoms of the land, the tetrarchies of Israel, if he will lead them as their king. Matthew gives the order: the wilderness, the pinnacle of the temple, then a high mountain.",
+      "why": "Christadelphian reading of the temptations, split into its three places; see the journey of the same name."
+    },
+    {
+      "id": 424,
+      "was": "Jesus meets Martha and Mary",
+      "note": "Luke 10:38 leaves the village unnamed. Bethany is the working identification from John 11:1, and its placement among the later Judean episodes follows the harmony."
+    },
+    {
+      "id": 434,
+      "was": "Chief Priests Conspire Against Jesus",
+      "note": "This is a meeting of the chief priests and Pharisees (John 11:47-53), not a recorded visit by Jesus to their council."
+    },
+    {
+      "id": 426,
+      "was": "Blind Man Healed",
+      "note": "Jesus meets the man in Jerusalem and sends him to wash in Siloam (John 9:6-7). The man, not Jesus, is explicitly said to go to the pool. The encounter location within Jerusalem is unknown."
+    },
+    {
+      "id": 460,
+      "was": "Resurrection and Ascension",
+      "verses": [
+        "Matt.28.1-20",
+        "Mark.16.1-20",
+        "Luke.24.1-53",
+        "John.20.1-31",
+        "John.21.1-25"
+      ],
+      "note": "Expanded into individual appearances, including John 21. This spans the forty days before the ascension (Acts 1:3), rather than all occurring on resurrection day."
+    }
+  ],
+  "added": [
+    {
+      "id": 10001,
+      "after": 268,
+      "title": "Set on the pinnacle of the temple",
+      "verses": [
+        "Matt.4.5-7",
+        "Luke.4.9-12"
+      ],
+      "people": [
+        "jesus_905",
+        "satan_2476"
+      ],
+      "note": "Taken up to Jerusalem and set on the pinnacle of the temple: its south-west corner, where the priest stood to blow the trumpet for the sabbath; the stone inscribed \"to the place of trumpeting\" fell from it. \"Cast thyself down\": a sign to the people, answered from Deuteronomy 6:16."
+    },
+    {
+      "id": 10002,
+      "after": 10001,
+      "title": "Shown the kingdoms from a high mountain",
+      "verses": [
+        "Matt.4.8-11",
+        "Luke.4.5-8",
+        "Luke.4.13"
+      ],
+      "people": [
+        "jesus_905",
+        "satan_2476"
+      ],
+      "note": "A high mountain: Pisgah, where Yahweh shewed Moses all the land (Deuteronomy 34:1–4), and where Balak took Balaam to view Israel, offering him honour (Numbers 22:17; 23:14). The kingdoms offered are the tetrarchies of Israel; \"Get thee hence\" sends the adversary away (Deuteronomy 6:13)."
+    },
+    {
+      "id": 10101,
+      "after": 274,
+      "title": "Jesus ministers in the Judean countryside",
+      "verses": [
+        "John.3.22",
+        "John.4.1-3"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Jesus and his disciples leave Jerusalem for Judean country. His disciples perform the baptisms (John 4:2); Aenon in John 3:23 is John the Baptist's location. The lower-Jordan point is a geographical estimate."
+    },
+    {
+      "id": 10102,
+      "after": 399,
+      "title": "Jesus returns through Sidon",
+      "verses": [
+        "Mark.7.31"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "The critical-text reading takes the return from Tyre through Sidon to the Sea of Galilee through Decapolis. The KJV reads departure from the coasts of Tyre and Sidon. The point represents the district, not a proved visit to the city centre."
+    },
+    {
+      "id": 10103,
+      "after": 431,
+      "title": "Jesus returns beyond Jordan",
+      "verses": [
+        "John.10.40-42"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "After Dedication Jesus returns to where John first baptized and remains there. Bethany beyond Jordan is a working identification from John 1:28, distinct from Bethany near Jerusalem."
+    },
+    {
+      "id": 10104,
+      "after": 295,
+      "title": "Mighty works in Chorazin",
+      "verses": [
+        "Matt.11.20-21",
+        "Luke.10.13"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Jesus' rebuke presupposes earlier mighty works in Chorazin, but neither an individual episode nor its date or itinerary is narrated. This node records that retrospective evidence without an invented chronological edge."
+    },
+    {
+      "id": 10110,
+      "after": 460,
+      "title": "Jesus appears to Mary Magdalene",
+      "verses": [
+        "John.20.11-18"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Near the empty tomb; the Holy Sepulchre vicinity is the working estimate."
+    },
+    {
+      "id": 10111,
+      "after": 460,
+      "title": "Jesus meets the women leaving the tomb",
+      "verses": [
+        "Matt.28.8-10"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "On their way from the tomb. A nearby point represents the encounter; its precise position and relation to John's Mary appearance are uncertain."
+    },
+    {
+      "id": 10112,
+      "after": 460,
+      "title": "Jesus walks to Emmaus",
+      "verses": [
+        "Luke.24.13-32"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Jesus joins two disciples on the road and enters Emmaus. The village identification is uncertain; the return to Jerusalem in verse 33 is the disciples' journey."
+    },
+    {
+      "id": 10113,
+      "after": 10112,
+      "title": "Jesus appears to the gathered disciples",
+      "verses": [
+        "Luke.24.33-49",
+        "John.20.19-23"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Jerusalem that evening. Reusing the supper-room vicinity is an estimate: the texts do not identify this meeting room as the Last Supper room."
+    },
+    {
+      "id": 10114,
+      "after": 10113,
+      "title": "Jesus appears with Thomas present",
+      "verses": [
+        "John.20.24-29"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Eight days later. The location is inferred as the disciples' Jerusalem lodging; John does not name the house."
+    },
+    {
+      "id": 10115,
+      "after": 10114,
+      "title": "Jesus meets the disciples by the Sea of Tiberias",
+      "verses": [
+        "John.21.1-23"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Jesus stands on the shore, provides breakfast and speaks to Peter. The exact beach is unnamed; a northwestern-shore estimate is used in the journey notes."
+    },
+    {
+      "id": 10116,
+      "after": 460,
+      "title": "Jesus commissions the disciples on a Galilean mountain",
+      "verses": [
+        "Matt.28.16-20"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "The mountain is unnamed. Its relation to the John 21 appearance is left unordered."
+    },
+    {
+      "id": 10117,
+      "after": 10114,
+      "title": "Jesus leads the disciples out and ascends",
+      "verses": [
+        "Luke.24.50-53",
+        "Acts.1.9-12"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Toward Bethany on the Mount of Olives. Acts 1:3 supplies forty days; Luke's compressed narrative is not used to date the ascension to resurrection evening."
+    },
+    {
+      "id": 10118,
+      "after": 460,
+      "title": "Jesus appears to Simon Peter",
+      "verses": [
+        "Luke.24.34"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "The disciples report an appearance to Simon before the gathering of Luke 24:36. No setting is described; Jerusalem is a working regional estimate, not an identified meeting site."
+    },
+    {
+      "id": 10120,
+      "after": 455,
+      "title": "Jesus taken first to Annas",
+      "verses": [
+        "John.18.13-23"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Estimated in the affluent Upper City, near the high-priestly quarter, for John 18:13-24. No house of Annas has been securely identified."
+    },
+    {
+      "id": 10121,
+      "after": 10120,
+      "title": "Jesus sent to Caiaphas",
+      "verses": [
+        "John.18.24",
+        "Matt.26.57-68",
+        "Mark.14.53-65"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Working estimate on the southeastern edge of the Upper City, near the traditional high-priestly site. Matthew 26:57 names the host, not the street or building; this identification is uncertain."
+    },
+    {
+      "id": 10122,
+      "after": 10121,
+      "title": "Jesus brought before the morning council",
+      "verses": [
+        "Luke.22.66-71",
+        "Matt.27.1"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Estimated in the Upper City near the high-priestly residences for the morning council (Luke 22:66). The Gospel does not identify its chamber; no route into the Temple precinct is asserted."
+    },
+    {
+      "id": 10123,
+      "after": 456,
+      "title": "Jesus brought to Pilate",
+      "verses": [
+        "John.18.28-38",
+        "Luke.23.1-5"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Herod's western palace is the working identification of the governor's headquarters (John 18:28-19:16; Mark 15:16). The Antonia fortress is an alternative tradition. The exact trial courtyard is uncertain."
+    },
+    {
+      "id": 10124,
+      "after": 10123,
+      "title": "Pilate sends Jesus to Herod",
+      "verses": [
+        "Luke.23.6-11"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Estimated at the traditional Hasmonean-palace area in the Upper City for Luke 23:7-12. His presence in Jerusalem is explicit; his lodging is not named."
+    },
+    {
+      "id": 10125,
+      "after": 10124,
+      "title": "Herod returns Jesus to Pilate",
+      "verses": [
+        "Luke.23.11-25",
+        "John.19.1-16"
+      ],
+      "people": [
+        "jesus_905"
+      ],
+      "note": "Herod's western palace is the working identification of the governor's headquarters (John 18:28-19:16; Mark 15:16). The Antonia fortress is an alternative tradition. The exact trial courtyard is uncertain."
     }
   ],
   "names": [

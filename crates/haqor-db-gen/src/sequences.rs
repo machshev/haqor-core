@@ -919,6 +919,18 @@ mod tests {
             )
             .unwrap();
         }
+        // The curated sequences can expand editorial events as well as the
+        // upstream catalogue. Match the event builder's combined catalogue.
+        for event in overrides["added"].as_array().into_iter().flatten() {
+            db.execute(
+                "INSERT INTO bible_event VALUES (?1, ?2)",
+                params![
+                    event["id"].as_i64().unwrap(),
+                    event["title"].as_str().unwrap()
+                ],
+            )
+            .unwrap();
+        }
         // Geography is checked against real TIPNR records by gen-names.
         // Here give each referenced place a position to exercise all other
         // production validation, including group order and nested membership.

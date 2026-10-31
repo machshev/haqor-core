@@ -3,14 +3,16 @@
     {
       "id": "ministry",
       "title": "Ministry of Jesus",
-      "note": "From John's preaching to the week of the Passion, ordered by what the Gospels say came before what rather than dated. Mark's order is the backbone of the Galilean ministry, John's feasts and notes of time frame the whole, and Luke's order places what he alone tells. Where the Gospels part ways — Mark and Luke on when the fishermen were called, Matthew's gathering of the miracles in chapters 8 and 9 — one order is kept and the other left out. A. T. Robertson's *Harmony of the Gospels* (1922) is a further witness: where its order agrees with the Gospels' an ordering rests on both, and where it orders what they leave open it rests on Robertson alone. Two of its placements are not taken: John's beheading, which Robertson tells where Herod hears of Jesus (Mark tells it looking back), and the anointing at Bethany, which Robertson sets two days before the Passover with Mark and Matthew where John has it six days before. Events no line joins are of unknown order to one another.",
+      "note": "From John's preaching to the week of the Passion, ordered by what the Gospels say came before what rather than dated. Mark's order is the backbone of the Galilean ministry, John's feasts and notes of time frame the whole, and Luke's order places what he alone tells. Where the Gospels part ways — Mark and Luke on when the fishermen were called, Matthew's gathering of the miracles in chapters 8 and 9 — one order is kept and the other left out. A. T. Robertson's *Harmony of the Gospels* (1922) is a further witness: where its order agrees with the Gospels' an ordering rests on both, and where it orders what they leave open it rests on Robertson alone. Two of its placements are not taken: John's beheading, which Robertson tells where Herod hears of Jesus (Mark tells it looking back), and the anointing at Bethany, which Robertson sets two days before the Passover with Mark and Matthew where John has it six days before. Events no line joins are of unknown order to one another. Estimated sites are working reconstructions from surrounding passages. Chorazin records retrospectively attested activity with no dated position. The priests' council is not part of Jesus' travel track; Siloam is the healed man's destination.",
       "chains": [
         {
           "basis": "Robertson's harmony (1922)",
           "events": [
             "John the Baptist Begins Ministry",
             "John Baptizes Jesus",
-            "Temptations of Jesus",
+            "Jesus tempted in the wilderness",
+            "Set on the pinnacle of the temple",
+            "Shown the kingdoms from a high mountain",
             "John's Witness",
             "First Disciples Gathered",
             "Water to Wine",
@@ -99,7 +101,7 @@
           "events": [
             "John the Baptist Begins Ministry",
             "John Baptizes Jesus",
-            "Temptations of Jesus",
+            "Jesus tempted in the wilderness",
             "Jesus Leaves Judea toward Galilee",
             "Jesus visits Galilee",
             "Fishers of Men",
@@ -218,19 +220,39 @@
         },
         {
           "basis": "John 1:32–33 looks back on the baptism",
-          "events": ["John Baptizes Jesus", "John's Witness"]
+          "events": [
+            "John Baptizes Jesus",
+            "John's Witness"
+          ]
+        },
+        {
+          "basis": "Matthew 4:5, 8: then … again",
+          "events": [
+            "Jesus tempted in the wilderness",
+            "Set on the pinnacle of the temple",
+            "Shown the kingdoms from a high mountain"
+          ]
         },
         {
           "basis": "John 3:24: John was not yet cast into prison",
-          "events": ["John the Baptist Witnesses", "John the Baptist Imprisoned"]
+          "events": [
+            "John the Baptist Witnesses",
+            "John the Baptist Imprisoned"
+          ]
         },
         {
           "basis": "Matthew 4:12; Mark 1:14: after John was put in prison",
-          "events": ["John the Baptist Imprisoned", "Jesus Leaves Judea toward Galilee"]
+          "events": [
+            "John the Baptist Imprisoned",
+            "Jesus Leaves Judea toward Galilee"
+          ]
         },
         {
           "basis": "Matthew 4:13–18: leaving Nazareth, he dwelt in Capernaum",
-          "events": ["Jesus in Capernaum", "Fishers of Men"]
+          "events": [
+            "Jesus in Capernaum",
+            "Fishers of Men"
+          ]
         },
         {
           "basis": "Matthew 11:2: John heard in the prison",
@@ -242,11 +264,17 @@
         },
         {
           "basis": "Matthew 11:20: then began he to upbraid the cities",
-          "events": ["Jesus' Message on John the Baptist", "Woe to Chorazin and Bethsaida"]
+          "events": [
+            "Jesus' Message on John the Baptist",
+            "Woe to Chorazin and Bethsaida"
+          ]
         },
         {
           "basis": "Matthew 14:13: when Jesus heard of it, he departed",
-          "events": ["John Beheaded", "Feeding of Five Thousand"]
+          "events": [
+            "John Beheaded",
+            "Feeding of Five Thousand"
+          ]
         },
         {
           "basis": "Matthew 17:24: when they were come to Capernaum",
@@ -254,6 +282,36 @@
             "Second Foretelling of Death and Resurrection",
             "Tax Coin in a Fish's Mouth",
             "Teachings on Humility/Temptation/Reconciliation"
+          ]
+        },
+        {
+          "basis": "John 3:22 and 4:1-3",
+          "events": [
+            "Jesus and Nicodemus",
+            "Jesus ministers in the Judean countryside",
+            "Jesus Leaves Judea toward Galilee"
+          ]
+        },
+        {
+          "basis": "Mark 7:24-31 (route via Sidon in the critical text)",
+          "events": [
+            "Healing Canaanite Daughter",
+            "Jesus returns through Sidon",
+            "Healing a Crowd near Sea of Galilee"
+          ]
+        },
+        {
+          "basis": "John 10:40-42 before the Lazarus journey; relation to Luke's Perean material follows the existing harmony",
+          "events": [
+            "Feast of Dedication",
+            "Jesus returns beyond Jordan",
+            "Teaching and Healing in Perea to Jerusalem"
+          ]
+        },
+        {
+          "basis": "Matthew 11:20-21 retrospectively attests mighty works in Chorazin; date unknown",
+          "events": [
+            "Mighty works in Chorazin"
           ]
         }
       ],
@@ -266,20 +324,25 @@
             {
               "title": "The beginning of the Baptist's ministry",
               "note": "Part V, §§20–23; probably AD 25",
-              "events": ["John the Baptist Begins Ministry"]
+              "events": [
+                "John the Baptist Begins Ministry"
+              ]
             },
             {
               "title": "The beginning of Christ's public ministry",
               "note": "Part VI, §§24–36; in all parts of Palestine, probably AD 26 and 27",
               "events": [
                 "John Baptizes Jesus",
-                "Temptations of Jesus",
+                "Jesus tempted in the wilderness",
+                "Set on the pinnacle of the temple",
+                "Shown the kingdoms from a high mountain",
                 "John's Witness",
                 "First Disciples Gathered",
                 "Water to Wine",
                 "Visiting Capernaum",
                 "First Passover and Temple Cleansing",
                 "Jesus and Nicodemus",
+                "Jesus ministers in the Judean countryside",
                 "John the Baptist Witnesses",
                 "John the Baptist Imprisoned",
                 "Jesus Leaves Judea toward Galilee",
@@ -340,6 +403,7 @@
                     "Widow's Son Resurrected",
                     "Jesus' Message on John the Baptist",
                     "Woe to Chorazin and Bethsaida",
+                    "Mighty works in Chorazin",
                     "Anointed by a Sinner Woman"
                   ]
                 },
@@ -364,7 +428,10 @@
                 {
                   "title": "The third tour of Galilee and the fears of Herod Antipas",
                   "note": "§§70–71",
-                  "events": ["3rd Tour of Galilee", "John Beheaded"]
+                  "events": [
+                    "3rd Tour of Galilee",
+                    "John Beheaded"
+                  ]
                 }
               ]
             },
@@ -378,6 +445,7 @@
                 "Bread of Life Sermon",
                 "Commandments and Tradition Discourse",
                 "Healing Canaanite Daughter",
+                "Jesus returns through Sidon",
                 "Healing a Crowd near Sea of Galilee",
                 "Feeding of Four Thousand",
                 "Discourse with Pharisees and Saducees",
@@ -408,7 +476,8 @@
                 "Woes and Parables with Pharisees",
                 "Healing Woman With 18-year Infirmity",
                 "Mustard Seed and Leaven Teaching",
-                "Feast of Dedication"
+                "Feast of Dedication",
+                "Jesus returns beyond Jordan"
               ]
             },
             {
@@ -429,7 +498,10 @@
             {
               "title": "The last week",
               "note": "Parts XI–XIV, §§128–184; AD 30 or 29",
-              "events": ["Mary Anoints Jesus", "Holy Week"]
+              "events": [
+                "Mary Anoints Jesus",
+                "Holy Week"
+              ]
             }
           ]
         },
@@ -444,7 +516,9 @@
               "events": [
                 "John the Baptist Begins Ministry",
                 "John Baptizes Jesus",
-                "Temptations of Jesus",
+                "Jesus tempted in the wilderness",
+                "Set on the pinnacle of the temple",
+                "Shown the kingdoms from a high mountain",
                 "John's Witness",
                 "First Disciples Gathered",
                 "Water to Wine",
@@ -457,6 +531,7 @@
               "events": [
                 "First Passover and Temple Cleansing",
                 "Jesus and Nicodemus",
+                "Jesus ministers in the Judean countryside",
                 "John the Baptist Witnesses",
                 "John the Baptist Imprisoned",
                 "Jesus Leaves Judea toward Galilee",
@@ -489,6 +564,7 @@
                 "Widow's Son Resurrected",
                 "Jesus' Message on John the Baptist",
                 "Woe to Chorazin and Bethsaida",
+                "Mighty works in Chorazin",
                 "Anointed by a Sinner Woman",
                 "Jesus' 2nd Tour of Galilee",
                 "Blind and Dumb Demoniac and Following Discourse",
@@ -510,6 +586,7 @@
                 "Bread of Life Sermon",
                 "Commandments and Tradition Discourse",
                 "Healing Canaanite Daughter",
+                "Jesus returns through Sidon",
                 "Healing a Crowd near Sea of Galilee",
                 "Feeding of Four Thousand",
                 "Discourse with Pharisees and Saducees",
@@ -547,6 +624,7 @@
               "note": "John 10:22, in winter",
               "events": [
                 "Feast of Dedication",
+                "Jesus returns beyond Jordan",
                 "Teaching and Healing in Perea to Jerusalem",
                 "Lazarus raised from the dead",
                 "Chief Priests Conspire Against Jesus",
@@ -561,7 +639,10 @@
             {
               "title": "The last Passover",
               "note": "John 11:55",
-              "events": ["Mary Anoints Jesus", "Holy Week"]
+              "events": [
+                "Mary Anoints Jesus",
+                "Holy Week"
+              ]
             }
           ]
         }
@@ -606,463 +687,1181 @@
       ],
       "events": {
         "John the Baptist Begins Ministry": {
-          "tracks": ["John the Baptist"],
-          "kinds": ["john-baptist", "teaching"],
-          "region": "judea",
-          "places": ["Jordan@Gen.13.10"]
-        },
-        "John Baptizes Jesus": {
-          "tracks": ["Jesus", "John the Baptist"],
-          "kinds": ["revelation", "john-baptist"],
-          "region": "judea",
-          "places": ["Jordan@Gen.13.10"]
-        },
-        "Temptations of Jesus": {
-          "tracks": ["Jesus"],
-          "kinds": ["conflict"],
+          "tracks": [
+            "John the Baptist"
+          ],
+          "kinds": [
+            "john-baptist",
+            "teaching"
+          ],
           "region": "judea",
           "places": [
-            { "key": "Arabah@Deu.1.1", "label": "The wilderness (the Arabah)" },
-            { "key": "Jerusalem@Gen.14.18", "label": "Pinnacle of the temple" },
-            "Pisgah@Num.21.20"
+            "Jordan@Gen.13.10"
+          ]
+        },
+        "John Baptizes Jesus": {
+          "tracks": [
+            "Jesus",
+            "John the Baptist"
+          ],
+          "kinds": [
+            "revelation",
+            "john-baptist"
+          ],
+          "region": "judea",
+          "places": [
+            "Jordan@Gen.13.10"
+          ]
+        },
+        "Jesus tempted in the wilderness": {
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Temptation_Wilderness@Mat.4.1"
+          ]
+        },
+        "Set on the pinnacle of the temple": {
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Temple_Pinnacle@Mat.4.5"
+          ]
+        },
+        "Shown the kingdoms from a high mountain": {
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "conflict"
+          ],
+          "region": "perea",
+          "places": [
+            "Temptation_Mountain@Mat.4.8"
           ]
         },
         "John's Witness": {
-          "tracks": ["John the Baptist"],
-          "kinds": ["john-baptist", "revelation"],
+          "tracks": [
+            "John the Baptist"
+          ],
+          "kinds": [
+            "john-baptist",
+            "revelation"
+          ],
           "region": "perea",
-          "places": [{ "key": "Beth-barah@Jdg.7.24", "label": "Bethany beyond Jordan" }]
+          "places": [
+            {
+              "key": "Beth-barah@Jdg.7.24",
+              "label": "Bethany beyond Jordan"
+            }
+          ]
         },
         "First Disciples Gathered": {
-          "tracks": ["Jesus"],
-          "kinds": ["calling"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "calling"
+          ],
           "region": "perea",
-          "places": [{ "key": "Beth-barah@Jdg.7.24", "label": "Bethany beyond Jordan" }]
+          "places": [
+            {
+              "key": "Beth-barah@Jdg.7.24",
+              "label": "Bethany beyond Jordan"
+            }
+          ]
         },
         "Water to Wine": {
-          "tracks": ["Jesus"],
-          "kinds": ["sign"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "sign"
+          ],
           "region": "galilee",
-          "places": [{ "key": "Kanah@Jos.19.28", "label": "Cana" }]
+          "places": [
+            {
+              "key": "Kanah@Jos.19.28",
+              "label": "Cana"
+            }
+          ]
         },
         "Visiting Capernaum": {
-          "tracks": ["Jesus"],
-          "kinds": ["journey"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "journey"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "First Passover and Temple Cleansing": {
-          "tracks": ["Jesus"],
-          "kinds": ["feast", "conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "feast",
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Temple_Precinct@Jhn.2.14"
+          ]
         },
         "Jesus and Nicodemus": {
-          "tracks": ["Jesus"],
-          "kinds": ["encounter", "teaching"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "encounter",
+            "teaching"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
         },
         "John the Baptist Witnesses": {
-          "tracks": ["John the Baptist"],
-          "kinds": ["john-baptist"],
+          "tracks": [
+            "John the Baptist"
+          ],
+          "kinds": [
+            "john-baptist"
+          ],
           "region": "judea",
-          "places": ["Aenon@Jhn.3.23"]
+          "places": [
+            "Aenon@Jhn.3.23"
+          ]
         },
         "John the Baptist Imprisoned": {
-          "tracks": ["John the Baptist"],
-          "kinds": ["john-baptist", "conflict"],
+          "tracks": [
+            "John the Baptist"
+          ],
+          "kinds": [
+            "john-baptist",
+            "conflict"
+          ],
           "region": "perea"
         },
         "Jesus Leaves Judea toward Galilee": {
-          "tracks": ["Jesus"],
-          "kinds": ["journey"],
-          "region": "judea"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "journey"
+          ],
+          "region": "judea",
+          "places": [
+            "Judean_Baptizing_Country@Jhn.3.22"
+          ]
         },
         "The Samaritan Woman": {
-          "tracks": ["Jesus"],
-          "kinds": ["encounter", "teaching"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "encounter",
+            "teaching"
+          ],
           "region": "samaria",
-          "places": ["Sychar@Jhn.4.5"]
+          "places": [
+            "Sychar@Jhn.4.5"
+          ]
         },
         "Jesus visits Galilee": {
-          "tracks": ["Jesus"],
-          "kinds": ["journey", "healing"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "journey",
+            "healing"
+          ],
           "region": "galilee",
-          "places": [{ "key": "Kanah@Jos.19.28", "label": "Cana" }]
+          "places": [
+            {
+              "key": "Kanah@Jos.19.28",
+              "label": "Cana"
+            }
+          ]
         },
         "Jesus Rejected at Nazareth": {
-          "tracks": ["Jesus"],
-          "kinds": ["conflict", "teaching"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "conflict",
+            "teaching"
+          ],
           "region": "galilee",
-          "places": ["Nazareth@Mat.2.23"]
+          "places": [
+            "Nazareth@Mat.2.23"
+          ]
         },
         "Jesus in Capernaum": {
-          "tracks": ["Jesus"],
-          "kinds": ["journey", "teaching"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "journey",
+            "teaching"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Fishers of Men": {
-          "tracks": ["Jesus"],
-          "kinds": ["calling", "sign"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "calling",
+            "sign"
+          ],
           "region": "galilee",
-          "places": [{ "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" }]
+          "places": [
+            {
+              "key": "Chinnereth@Num.34.11",
+              "label": "Sea of Galilee"
+            }
+          ]
         },
         "The Demoniac": {
-          "tracks": ["Jesus"],
-          "kinds": ["exorcism"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "exorcism"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Peter's Mother-in-law and Others Healed": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Jesus' 1st Tour of Galilee": {
-          "tracks": ["Jesus"],
-          "kinds": ["journey", "teaching"],
-          "region": "galilee"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "journey",
+            "teaching"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
         },
         "Healing the Leper": {
-          "tracks": ["Jesus"], "kinds": ["healing"], "region": "galilee" },
-        "Healing the Man with Palsy": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing", "conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
+        },
+        "Healing the Man with Palsy": {
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing",
+            "conflict"
+          ],
+          "region": "galilee",
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Jesus Calls Matthew": {
-          "tracks": ["Jesus"],
-          "kinds": ["calling"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "calling"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Fasting Question": {
-          "tracks": ["Jesus"],
-          "kinds": ["teaching", "conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching",
+            "conflict"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Parable of the Wineskins": {
-          "tracks": ["Jesus"],
-          "kinds": ["parable"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "parable"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Bethesda pool healing": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing", "conflict", "feast"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing",
+            "conflict",
+            "feast"
+          ],
           "region": "judea",
-          "places": ["Bethesda@Jhn.5.2"]
+          "places": [
+            "Bethesda@Jhn.5.2"
+          ]
         },
         "Corn on the Sabbath": {
-          "tracks": ["Jesus"], "kinds": ["conflict"], "region": "galilee" },
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "conflict"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
+        },
         "Healing a Withered Hand": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing", "conflict"],
-          "region": "galilee"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing",
+            "conflict"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
         },
         "Healing Multitudes": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing"
+          ],
           "region": "galilee",
-          "places": [{ "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" }]
+          "places": [
+            {
+              "key": "Chinnereth@Num.34.11",
+              "label": "Sea of Galilee"
+            }
+          ]
         },
         "Apostles Chosen": {
-          "tracks": ["Jesus"], "kinds": ["calling"], "region": "galilee" },
-        "Sermon on the Mount": {
-          "tracks": ["Jesus"], "kinds": ["teaching"], "region": "galilee" },
-        "Healing Centurion's Servant": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "calling"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Galilean_Teaching_Hill@Mat.5.1"
+          ]
+        },
+        "Sermon on the Mount": {
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Teaching_Hill@Mat.5.1"
+          ]
+        },
+        "Healing Centurion's Servant": {
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing"
+          ],
+          "region": "galilee",
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Widow's Son Resurrected": {
-          "tracks": ["Jesus"],
-          "kinds": ["raising"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "raising"
+          ],
           "region": "galilee",
-          "places": ["Nain@Luk.7.11"]
+          "places": [
+            "Nain@Luk.7.11"
+          ]
         },
         "Jesus' Message on John the Baptist": {
-          "tracks": ["Jesus"],
-          "kinds": ["john-baptist", "teaching"],
-          "region": "galilee"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "john-baptist",
+            "teaching"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
         },
         "Woe to Chorazin and Bethsaida": {
-          "tracks": ["Jesus"],
-          "kinds": ["teaching", "conflict"],
-          "region": "galilee"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching",
+            "conflict"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
         },
         "Anointed by a Sinner Woman": {
-          "tracks": ["Jesus"],
-          "kinds": ["encounter", "parable"],
-          "region": "galilee"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "encounter",
+            "parable"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
         },
         "Jesus' 2nd Tour of Galilee": {
-          "tracks": ["Jesus"], "kinds": ["journey"], "region": "galilee" },
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "journey"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
+        },
         "Blind and Dumb Demoniac and Following Discourse": {
-          "tracks": ["Jesus"],
-          "kinds": ["exorcism", "conflict"],
-          "region": "galilee"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "exorcism",
+            "conflict"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
         },
         "Seaside Parables and Miracle": {
-          "tracks": ["Jesus"],
-          "kinds": ["parable", "sign"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "parable",
+            "sign"
+          ],
           "region": "galilee",
-          "places": [{ "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" }]
+          "places": [
+            {
+              "key": "Chinnereth@Num.34.11",
+              "label": "Sea of Galilee"
+            }
+          ]
         },
         "Gadarene Demoniacs": {
-          "tracks": ["Jesus"],
-          "kinds": ["exorcism"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "exorcism"
+          ],
           "region": "east",
-          "places": ["Decapolis@Mat.4.25"]
+          "places": [
+            {
+              "key": "Gerasa@Mat.8.28",
+              "label": "Eastern shore near Kursi (estimated)"
+            }
+          ]
         },
         "Capernaum Miracles": {
-          "tracks": ["Jesus"],
-          "kinds": ["raising", "healing"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "raising",
+            "healing"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "2nd Rejection at Nazareth": {
-          "tracks": ["Jesus"],
-          "kinds": ["conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "conflict"
+          ],
           "region": "galilee",
-          "places": ["Nazareth@Mat.2.23"]
+          "places": [
+            "Nazareth@Mat.2.23"
+          ]
         },
         "3rd Tour of Galilee": {
-          "tracks": ["Jesus"],
-          "kinds": ["calling", "journey"],
-          "region": "galilee"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "calling",
+            "journey"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
         },
         "John Beheaded": {
-          "tracks": ["John the Baptist"],
-          "kinds": ["john-baptist", "conflict"],
+          "tracks": [
+            "John the Baptist"
+          ],
+          "kinds": [
+            "john-baptist",
+            "conflict"
+          ],
           "region": "perea"
         },
         "Feeding of Five Thousand": {
-          "tracks": ["Jesus"],
-          "kinds": ["sign", "feast"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "sign",
+            "feast"
+          ],
           "region": "east",
-          "places": ["Bethsaida@Mat.11.21"]
+          "places": [
+            "Bethsaida_Retreat@Luk.9.10"
+          ]
         },
         "Jesus Walks on Water": {
-          "tracks": ["Jesus"],
-          "kinds": ["sign"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "sign"
+          ],
           "region": "galilee",
-          "places": [{ "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" }]
+          "places": [
+            {
+              "key": "Chinnereth@Num.34.11",
+              "label": "Sea of Galilee"
+            }
+          ]
         },
         "Healing in Gennesaret": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing"
+          ],
           "region": "galilee",
-          "places": ["Gennesaret@Mat.14.34"]
+          "places": [
+            "Gennesaret@Mat.14.34"
+          ]
         },
         "Bread of Life Sermon": {
-          "tracks": ["Jesus"],
-          "kinds": ["teaching", "conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching",
+            "conflict"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Commandments and Tradition Discourse": {
-          "tracks": ["Jesus"],
-          "kinds": ["conflict", "teaching"],
-          "region": "galilee"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "conflict",
+            "teaching"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
         },
         "Healing Canaanite Daughter": {
-          "tracks": ["Jesus"],
-          "kinds": ["exorcism", "encounter"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "exorcism",
+            "encounter"
+          ],
           "region": "north",
-          "places": ["Tyre@Jos.19.29", "Sidon@Gen.10.19"]
+          "places": [
+            "Tyre@Jos.19.29"
+          ]
         },
         "Healing a Crowd near Sea of Galilee": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing"
+          ],
           "region": "east",
-          "places": ["Decapolis@Mat.4.25"]
+          "places": [
+            "Decapolis_Feeding_Hill@Mat.15.29"
+          ]
         },
         "Feeding of Four Thousand": {
-          "tracks": ["Jesus"],
-          "kinds": ["sign"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "sign"
+          ],
           "region": "east",
-          "places": ["Decapolis@Mat.4.25"]
+          "places": [
+            "Decapolis_Feeding_Hill@Mat.15.29"
+          ]
         },
         "Discourse with Pharisees and Saducees": {
-          "tracks": ["Jesus"],
-          "kinds": ["conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "conflict"
+          ],
           "region": "galilee",
-          "places": ["Magadan@Mat.15.39"]
+          "places": [
+            "Magadan@Mat.15.39"
+          ]
         },
         "Healing a Blind Man at Bethsaida": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing"
+          ],
           "region": "east",
-          "places": ["Bethsaida@Mat.11.21"]
+          "places": [
+            "Bethsaida@Mat.11.21"
+          ]
         },
         "Peter's Confession \"Upon this Rock\"": {
-          "tracks": ["Jesus"],
-          "kinds": ["revelation"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "revelation"
+          ],
           "region": "north",
-          "places": ["Caesarea_Philippi@Mat.16.13"]
+          "places": [
+            "Caesarea_Philippi@Mat.16.13"
+          ]
         },
         "Foretelling the Death and Resurrection": {
-          "tracks": ["Jesus"],
-          "kinds": ["revelation", "teaching"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "revelation",
+            "teaching"
+          ],
           "region": "north",
-          "places": ["Caesarea_Philippi@Mat.16.13"]
+          "places": [
+            "Caesarea_Philippi@Mat.16.13"
+          ]
         },
         "The Transfiguration": {
-          "tracks": ["Jesus"],
-          "kinds": ["revelation"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "revelation"
+          ],
           "region": "north",
-          "places": [{ "key": "Hermon_Mount@Deu.3.8", "label": "Mount Hermon" }]
+          "places": [
+            "Transfiguration_Mountain@Mrk.9.2"
+          ]
         },
         "Healing a Boy with a Demon": {
-          "tracks": ["Jesus"],
-          "kinds": ["exorcism"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "exorcism"
+          ],
           "region": "north",
-          "places": [{ "key": "Hermon_Mount@Deu.3.8", "label": "Mount Hermon" }]
+          "places": [
+            "Transfiguration_Mountain@Mrk.9.2"
+          ]
         },
         "Second Foretelling of Death and Resurrection": {
-          "tracks": ["Jesus"],
-          "kinds": ["revelation"],
-          "region": "galilee"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "revelation"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilean_Circuit@Luk.8.1"
+          ]
         },
         "Tax Coin in a Fish's Mouth": {
-          "tracks": ["Jesus"],
-          "kinds": ["sign"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "sign"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Teachings on Humility/Temptation/Reconciliation": {
-          "tracks": ["Jesus"],
-          "kinds": ["teaching", "parable"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching",
+            "parable"
+          ],
           "region": "galilee",
-          "places": ["Capernaum@Mat.4.13"]
+          "places": [
+            "Capernaum@Mat.4.13"
+          ]
         },
         "Samaritans Reject Jesus": {
-          "tracks": ["Jesus"],
-          "kinds": ["journey", "conflict"],
-          "region": "samaria"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "journey",
+            "conflict"
+          ],
+          "region": "samaria",
+          "places": [
+            "Samaritan_Village@Luk.9.52"
+          ]
         },
         "Feast of Tabernacles": {
-          "tracks": ["Jesus"],
-          "kinds": ["feast", "teaching", "conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "feast",
+            "teaching",
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Temple_Precinct@Jhn.2.14"
+          ]
         },
         "Woman Caught in Adultery": {
-          "tracks": ["Jesus"],
-          "kinds": ["encounter", "conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "encounter",
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Temple_Precinct@Jhn.2.14"
+          ]
         },
         "Light of the World/I am discourse": {
-          "tracks": ["Jesus"],
-          "kinds": ["teaching", "revelation", "conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching",
+            "revelation",
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Temple_Treasury@Mrk.12.41"
+          ]
         },
         "Blind Man Healed": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing", "conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing",
+            "conflict"
+          ],
           "region": "judea",
-          "places": [{ "key": "Shelah@Neh.2.14", "label": "Pool of Siloam" }]
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
         },
         "The Good Shepherd Teaching": {
-          "tracks": ["Jesus"],
-          "kinds": ["teaching", "parable"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching",
+            "parable"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
         },
         "70 Sent Out": {
-          "tracks": ["Jesus"], "kinds": ["calling"], "region": "judea" },
-        "Good Samaritan Parable Taught": {
-          "tracks": ["Jesus"], "kinds": ["parable"], "region": "judea" },
-        "Jesus meets Martha and Mary": {
-          "tracks": ["Jesus"],
-          "kinds": ["encounter"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "calling"
+          ],
           "region": "judea",
-          "places": ["Bethany@Mat.21.17"]
+          "places": [
+            "Judean_Teaching_Journey@Luk.13.22"
+          ]
+        },
+        "Good Samaritan Parable Taught": {
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "parable"
+          ],
+          "region": "judea",
+          "places": [
+            "Judean_Teaching_Journey@Luk.13.22"
+          ]
+        },
+        "Jesus meets Martha and Mary": {
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "encounter"
+          ],
+          "region": "judea",
+          "places": [
+            "Bethany@Mat.21.17"
+          ]
         },
         "Lord's Prayer Taught": {
-          "tracks": ["Jesus"], "kinds": ["teaching"], "region": "judea" },
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching"
+          ],
+          "region": "judea",
+          "places": [
+            "Judean_Teaching_Journey@Luk.13.22"
+          ]
+        },
         "Woes and Parables with Pharisees": {
-          "tracks": ["Jesus"],
-          "kinds": ["conflict", "parable"],
-          "region": "judea"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "conflict",
+            "parable"
+          ],
+          "region": "judea",
+          "places": [
+            "Judean_Teaching_Journey@Luk.13.22"
+          ]
         },
         "Healing Woman With 18-year Infirmity": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing", "conflict"],
-          "region": "judea"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing",
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Judean_Teaching_Journey@Luk.13.22"
+          ]
         },
         "Mustard Seed and Leaven Teaching": {
-          "tracks": ["Jesus"], "kinds": ["parable"], "region": "judea" },
-        "Feast of Dedication": {
-          "tracks": ["Jesus"],
-          "kinds": ["feast", "conflict"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "parable"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Judean_Teaching_Journey@Luk.13.22"
+          ]
+        },
+        "Feast of Dedication": {
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "feast",
+            "conflict"
+          ],
+          "region": "judea",
+          "places": [
+            "Solomons_Portico@Jhn.10.23"
+          ]
         },
         "Teaching and Healing in Perea to Jerusalem": {
-          "tracks": ["Jesus"],
-          "kinds": ["journey", "teaching", "parable"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "journey",
+            "teaching",
+            "parable"
+          ],
           "region": "perea",
-          "places": [{ "key": "Beth-barah@Jdg.7.24", "label": "Bethany beyond Jordan" }]
+          "places": [
+            {
+              "key": "Beth-barah@Jdg.7.24",
+              "label": "Bethany beyond Jordan"
+            }
+          ]
         },
         "Lazarus raised from the dead": {
-          "tracks": ["Jesus"],
-          "kinds": ["raising"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "raising"
+          ],
           "region": "judea",
-          "places": ["Bethany@Mat.21.17"]
+          "places": [
+            "Bethany@Mat.21.17"
+          ]
         },
         "Chief Priests Conspire Against Jesus": {
-          "tracks": ["Jesus"],
-          "kinds": ["conflict"],
+          "kinds": [
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
         },
         "Jesus Withdraws to Ephraim": {
-          "tracks": ["Jesus"], "kinds": ["journey"], "region": "judea" },
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "journey"
+          ],
+          "region": "judea",
+          "places": [
+            "Ephraim@2Sa.13.23"
+          ]
+        },
         "Lepers Healed": {
-          "tracks": ["Jesus"], "kinds": ["healing", "journey"], "region": "samaria" },
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing",
+            "journey"
+          ],
+          "region": "samaria",
+          "places": [
+            "Samaria_Galilee_Border@Luk.17.11"
+          ]
+        },
         "Discourse on the Kingdom and Other Parables": {
-          "tracks": ["Jesus"],
-          "kinds": ["teaching", "parable"],
-          "region": "samaria"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching",
+            "parable"
+          ],
+          "region": "samaria",
+          "places": [
+            "Samaria_Galilee_Border@Luk.17.11"
+          ]
         },
         "Jesus Teaches in Perea": {
-          "tracks": ["Jesus"],
-          "kinds": ["teaching", "journey", "revelation"],
-          "region": "perea"
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "teaching",
+            "journey",
+            "revelation"
+          ],
+          "region": "perea",
+          "places": [
+            "Beyond_Jordan_Ministry@Mrk.10.1"
+          ]
         },
         "Healing Blind Bartimaeus": {
-          "tracks": ["Jesus"],
-          "kinds": ["healing"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "healing"
+          ],
           "region": "judea",
-          "places": ["Jericho@Num.22.1"]
+          "places": [
+            "Jericho@Num.22.1"
+          ]
         },
         "Zaccheus Converted and Parable of the Pounds": {
-          "tracks": ["Jesus"],
-          "kinds": ["encounter", "parable"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "encounter",
+            "parable"
+          ],
           "region": "judea",
-          "places": ["Jericho@Num.22.1"]
+          "places": [
+            "Jericho@Num.22.1"
+          ]
         },
         "Mary Anoints Jesus": {
-          "tracks": ["Jesus"],
-          "kinds": ["encounter"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "encounter"
+          ],
           "region": "judea",
-          "places": ["Bethany@Mat.21.17"]
+          "places": [
+            "Bethany@Mat.21.17"
+          ]
         },
         "Holy Week": {
-          "tracks": ["Jesus"],
-          "kinds": ["feast", "journey"],
+          "tracks": [
+            "Jesus"
+          ],
+          "kinds": [
+            "feast",
+            "journey"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
+        },
+        "Jesus ministers in the Judean countryside": {
+          "kinds": [
+            "journey",
+            "baptism"
+          ],
+          "region": "judea",
+          "places": [
+            "Judean_Baptizing_Country@Jhn.3.22"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus returns through Sidon": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "north",
+          "places": [
+            "Sidon@Gen.10.19"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus returns beyond Jordan": {
+          "kinds": [
+            "journey"
+          ],
+          "region": "perea",
+          "places": [
+            "Beth-barah@Jdg.7.24"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Mighty works in Chorazin": {
+          "kinds": [
+            "sign"
+          ],
+          "region": "galilee",
+          "places": [
+            "Chorazin@Mat.11.21"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         }
       }
     },
@@ -1130,15 +1929,24 @@
         },
         {
           "basis": "Mark 11:12: on the morrow",
-          "events": ["Triumphal Entry", "Fig Tree Cursed"]
+          "events": [
+            "Triumphal Entry",
+            "Fig Tree Cursed"
+          ]
         },
         {
           "basis": "Mark 11:20: in the morning",
-          "events": ["Temple Cleansed", "Teaching by the Fig Tree"]
+          "events": [
+            "Temple Cleansed",
+            "Teaching by the Fig Tree"
+          ]
         },
         {
           "basis": "Matthew 27:3: when Judas saw that he was condemned",
-          "events": ["Jewish Trials", "Judas' Suicide"]
+          "events": [
+            "Jewish Trials",
+            "Judas' Suicide"
+          ]
         }
       ],
       "groupings": [
@@ -1184,7 +1992,9 @@
             {
               "title": "The resurrection, appearances and ascension",
               "note": "Part XIV, §§169–184; forty days from the Sunday",
-              "events": ["Resurrection and Ascension"]
+              "events": [
+                "Resurrection and Ascension"
+              ]
             }
           ]
         },
@@ -1196,12 +2006,17 @@
             {
               "title": "The entry",
               "note": "Mark 11:1–11",
-              "events": ["Triumphal Entry"]
+              "events": [
+                "Triumphal Entry"
+              ]
             },
             {
               "title": "On the morrow",
               "note": "Mark 11:12",
-              "events": ["Fig Tree Cursed", "Temple Cleansed"]
+              "events": [
+                "Fig Tree Cursed",
+                "Temple Cleansed"
+              ]
             },
             {
               "title": "In the morning",
@@ -1215,7 +2030,10 @@
             {
               "title": "Two days before the Passover",
               "note": "Mark 14:1",
-              "events": ["Sanhedrin Conspiracy", "Judas Plans Betrayal"]
+              "events": [
+                "Sanhedrin Conspiracy",
+                "Judas Plans Betrayal"
+              ]
             },
             {
               "title": "The supper and the night",
@@ -1238,9 +2056,11 @@
               ]
             },
             {
-              "title": "The first day of the week",
-              "note": "Mark 16:2",
-              "events": ["Resurrection and Ascension"]
+              "title": "From the first day to the ascension",
+              "note": "The resurrection begins on the first day (Mark 16:2); the appearances extend to the ascension (Acts 1:3).",
+              "events": [
+                "Resurrection and Ascension"
+              ]
             }
           ]
         }
@@ -1267,92 +2087,380 @@
       ],
       "events": {
         "Triumphal Entry": {
-          "kinds": ["journey", "revelation"],
+          "kinds": [
+            "journey",
+            "revelation"
+          ],
           "region": "judea",
-          "places": ["Bethphage@Mat.21.1", "Jerusalem@Gen.14.18"]
+          "places": [
+            "Temple_Precinct@Jhn.2.14"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Fig Tree Cursed": {
-          "kinds": ["sign"],
+          "kinds": [
+            "sign"
+          ],
           "region": "judea",
-          "places": ["Bethany@Mat.21.17"]
+          "places": [
+            "Bethany_Road_Fig_Tree@Mrk.11.13"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Temple Cleansed": {
-          "kinds": ["conflict"],
+          "kinds": [
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Temple_Precinct@Jhn.2.14"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Teaching by the Fig Tree": {
-          "kinds": ["teaching"],
+          "kinds": [
+            "teaching"
+          ],
           "region": "judea",
-          "places": [{ "key": "Olives_Mount@2Sa.15.30", "label": "Mount of Olives" }]
+          "places": [
+            "Bethany_Road_Fig_Tree@Mrk.11.13"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Debates in the Temple": {
-          "kinds": ["conflict", "teaching", "parable"],
+          "kinds": [
+            "conflict",
+            "teaching",
+            "parable"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Temple_Precinct@Jhn.2.14"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Olivet Discourse": {
-          "kinds": ["teaching"],
+          "kinds": [
+            "teaching"
+          ],
           "region": "judea",
-          "places": [{ "key": "Olives_Mount@2Sa.15.30", "label": "Mount of Olives" }]
+          "places": [
+            {
+              "key": "Olives_Mount@2Sa.15.30",
+              "label": "Mount of Olives"
+            }
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Sanhedrin Conspiracy": {
-          "kinds": ["conflict"],
+          "kinds": [
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
         },
         "Judas Plans Betrayal": {
-          "kinds": ["conflict"],
+          "kinds": [
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
         },
         "The Last Supper": {
-          "kinds": ["feast", "teaching"],
+          "kinds": [
+            "feast",
+            "teaching"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Upper_Room@Mrk.14.15"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Upper Room Discourse": {
-          "kinds": ["teaching"],
+          "kinds": [
+            "teaching"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Upper_Room@Mrk.14.15"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Prayer and Betrayal in Gethsemane": {
-          "kinds": ["conflict"],
+          "kinds": [
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Gethsemane@Mat.26.36"]
+          "places": [
+            "Gethsemane@Mat.26.36"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Jewish Trials": {
-          "kinds": ["conflict"],
+          "kinds": [
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Caiaphas_House@Mat.26.57"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Judas' Suicide": {
-          "kinds": ["conflict"],
+          "kinds": [
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Jerusalem@Gen.14.18"
+          ]
         },
         "Roman Trials": {
-          "kinds": ["conflict"],
+          "kinds": [
+            "conflict"
+          ],
           "region": "judea",
-          "places": ["Jerusalem@Gen.14.18"]
+          "places": [
+            "Praetorium@Jhn.18.28"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Bearing Cross to Golgotha": {
-          "kinds": ["journey"],
+          "kinds": [
+            "journey"
+          ],
           "region": "judea",
-          "places": ["Golgotha@Mat.27.33"]
+          "places": [
+            "Golgotha@Mat.27.33"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Crucifixion and Burial": {
-          "kinds": ["conflict", "revelation"],
+          "kinds": [
+            "conflict",
+            "revelation"
+          ],
           "region": "judea",
-          "places": ["Golgotha@Mat.27.33"]
+          "places": [
+            "Golgotha@Mat.27.33"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Resurrection and Ascension": {
-          "kinds": ["raising", "revelation"],
+          "kinds": [
+            "raising",
+            "revelation"
+          ],
           "region": "judea",
           "places": [
             "Jerusalem@Gen.14.18",
-            { "key": "Chinnereth@Num.34.11", "label": "Sea of Galilee" },
-            { "key": "Olives_Mount@2Sa.15.30", "label": "Mount of Olives" }
+            {
+              "key": "Chinnereth@Num.34.11",
+              "label": "Sea of Galilee"
+            },
+            {
+              "key": "Olives_Mount@2Sa.15.30",
+              "label": "Mount of Olives"
+            }
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        }
+      }
+    },
+    {
+      "id": "resurrection-appearances",
+      "title": "Resurrection appearances and ascension",
+      "expands": "Resurrection and Ascension",
+      "note": "Individual Gospel appearances. Lines express only stated order; the Galilean mountain and lakeshore appearances are not ordered relative to one another. Locations and unrecorded connections are estimates. The final ascent is the same event told again in Acts 1, not a second ascension.",
+      "chains": [
+        {
+          "basis": "John 20:11-21:1",
+          "events": [
+            "Jesus appears to Mary Magdalene",
+            "Jesus appears to the gathered disciples",
+            "Jesus appears with Thomas present",
+            "Jesus meets the disciples by the Sea of Tiberias"
+          ]
+        },
+        {
+          "basis": "Matthew 28:8-20",
+          "events": [
+            "Jesus meets the women leaving the tomb",
+            "Jesus commissions the disciples on a Galilean mountain"
+          ]
+        },
+        {
+          "basis": "Luke 24:13-51; Acts 1:3 supplies the interval",
+          "events": [
+            "Jesus walks to Emmaus",
+            "Jesus appears to the gathered disciples",
+            "Jesus leads the disciples out and ascends"
+          ]
+        },
+        {
+          "basis": "John 21 and Matthew 28 precede the final departure in Acts 1:3-12",
+          "events": [
+            "Jesus meets the disciples by the Sea of Tiberias",
+            "Jesus leads the disciples out and ascends"
+          ]
+        },
+        {
+          "basis": "Matthew 28 before the final departure in Acts 1:3-12",
+          "events": [
+            "Jesus commissions the disciples on a Galilean mountain",
+            "Jesus leads the disciples out and ascends"
+          ]
+        },
+        {
+          "basis": "Luke 24:34-36: appearance to Simon reported before the gathered disciples see Jesus",
+          "events": [
+            "Jesus appears to Simon Peter",
+            "Jesus appears to the gathered disciples"
+          ]
+        }
+      ],
+      "events": {
+        "Jesus appears to Mary Magdalene": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "judea",
+          "places": [
+            "Garden_Tomb_of_Jesus@Jhn.19.41"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus meets the women leaving the tomb": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "judea",
+          "places": [
+            "Garden_Tomb_of_Jesus@Jhn.19.41"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus walks to Emmaus": {
+          "kinds": [
+            "revelation",
+            "journey"
+          ],
+          "region": "judea",
+          "places": [
+            "Emmaus@Luk.24.13"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus appears to the gathered disciples": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "judea",
+          "places": [
+            "Upper_Room@Mrk.14.15"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus appears with Thomas present": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "judea",
+          "places": [
+            "Upper_Room@Mrk.14.15"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus meets the disciples by the Sea of Tiberias": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "galilee",
+          "places": [
+            "Tiberias_Shore_Appearance@Jhn.21.1"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus commissions the disciples on a Galilean mountain": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "galilee",
+          "places": [
+            "Galilee_Commission_Mountain@Mat.28.16"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus leads the disciples out and ascends": {
+          "kinds": [
+            "revelation",
+            "journey"
+          ],
+          "region": "judea",
+          "places": [
+            "Ascension_Vicinity@Luk.24.50"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
+        },
+        "Jesus appears to Simon Peter": {
+          "kinds": [
+            "revelation"
+          ],
+          "region": "judea",
+          "tracks": [
+            "Jesus"
+          ],
+          "places": [
+            "Jerusalem@Gen.14.18"
           ]
         }
       }
@@ -1360,7 +2468,7 @@
     {
       "id": "birth-childhood",
       "title": "Birth and childhood of Jesus",
-      "note": "The birth and childhood of Jesus, the Son of God, with the birth of John the Baptist. Matthew 1-2 and Luke 1-2 supply separate chains. No order is asserted between the visit of the wise men and the presentation in the temple. Luke summarises the return to Nazareth without relating the flight into Egypt; both accounts lead into the childhood in Nazareth. Dates on the overview are inherited from the source chronology, not supplied by these chains. Map pins mark places named in the account, not an exact travel route. Events spanning several regions have no single region lane; unnamed locations are left unpinned.",
+      "note": "The birth and childhood of Jesus, the Son of God, with the birth of John the Baptist. Matthew 1-2 and Luke 1-2 supply separate chains. No order is asserted between the visit of the wise men and the presentation in the temple. Luke summarises the return to Nazareth without relating the flight into Egypt; both accounts lead into the childhood in Nazareth. Dates on the overview are inherited from the source chronology, not supplied by these chains. Map pins mark places named in the account, not an exact travel route. Events spanning several regions have no single region lane; unnamed locations are left unpinned. The Egyptian refuge is a regional estimate in the eastern Nile delta. The return-from-Egypt node marks the departure region; the next Nazareth node gives the recorded destination. Temple events use an estimated point within the precinct.",
       "chains": [
         {
           "basis": "Luke 1:5-80",
@@ -1463,6 +2571,9 @@
           "region": "judea",
           "places": [
             "Bethlehem@Gen.35.16"
+          ],
+          "tracks": [
+            "Jesus"
           ]
         },
         "Wise Men Visit Herod": {
@@ -1481,6 +2592,9 @@
           "region": "judea",
           "places": [
             "Bethlehem@Gen.35.16"
+          ],
+          "tracks": [
+            "Jesus"
           ]
         },
         "Joseph and Mary Flee to Egypt": {
@@ -1488,7 +2602,12 @@
             "journey"
           ],
           "region": "egypt",
-          "places": []
+          "places": [
+            "Egypt_Refuge@Mat.2.14"
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Herod slays male children": {
           "kinds": [
@@ -1506,6 +2625,9 @@
           "region": "judea",
           "places": [
             "Bethlehem@Gen.35.16"
+          ],
+          "tracks": [
+            "Jesus"
           ]
         },
         "Joseph and Mary return from Egypt": {
@@ -1513,7 +2635,15 @@
             "journey"
           ],
           "region": "egypt",
-          "places": []
+          "places": [
+            {
+              "key": "Egypt_Refuge@Mat.2.14",
+              "label": "Departure from Egypt (estimated)"
+            }
+          ],
+          "tracks": [
+            "Jesus"
+          ]
         },
         "Temple Presentation of Jesus": {
           "kinds": [
@@ -1522,7 +2652,10 @@
           ],
           "region": "judea",
           "places": [
-            "Jerusalem@Gen.14.18"
+            "Temple_Precinct@Jhn.2.14"
+          ],
+          "tracks": [
+            "Jesus"
           ]
         },
         "Joseph and Mary return to Nazareth": {
@@ -1532,6 +2665,9 @@
           "region": "galilee",
           "places": [
             "Nazareth@Mat.2.23"
+          ],
+          "tracks": [
+            "Jesus"
           ]
         },
         "Childhood of Jesus": {
@@ -1541,6 +2677,9 @@
           "region": "galilee",
           "places": [
             "Nazareth@Mat.2.23"
+          ],
+          "tracks": [
+            "Jesus"
           ]
         },
         "Jesus as a child in the Temple": {
@@ -1550,7 +2689,10 @@
           ],
           "region": "judea",
           "places": [
-            "Jerusalem@Gen.14.18"
+            "Temple_Precinct@Jhn.2.14"
+          ],
+          "tracks": [
+            "Jesus"
           ]
         },
         "Jesus Growing Up": {
@@ -1560,6 +2702,9 @@
           "region": "galilee",
           "places": [
             "Nazareth@Mat.2.23"
+          ],
+          "tracks": [
+            "Jesus"
           ]
         }
       },
@@ -5260,6 +6405,120 @@
         "Prophecies of Malachi": {
           "kinds": [
             "prophecy"
+          ]
+        }
+      }
+    },
+    {
+      "id": "priestly-hearings",
+      "title": "Jesus before Annas, Caiaphas and the council",
+      "expands": "Jewish Trials",
+      "note": "The transfers follow the cited text. Building positions are explicitly estimated within Jerusalem; routes are illustrative connections, not identified streets.",
+      "chains": [
+        {
+          "basis": "John 18:13,24; Luke 22:66: the council at daybreak",
+          "events": [
+            "Jesus taken first to Annas",
+            "Jesus sent to Caiaphas",
+            "Jesus brought before the morning council"
+          ]
+        }
+      ],
+      "events": {
+        "Jesus taken first to Annas": {
+          "kinds": [
+            "conflict",
+            "journey"
+          ],
+          "region": "judea",
+          "tracks": [
+            "Jesus"
+          ],
+          "places": [
+            "Annas_House@Jhn.18.13"
+          ]
+        },
+        "Jesus sent to Caiaphas": {
+          "kinds": [
+            "conflict",
+            "journey"
+          ],
+          "region": "judea",
+          "tracks": [
+            "Jesus"
+          ],
+          "places": [
+            "Caiaphas_House@Mat.26.57"
+          ]
+        },
+        "Jesus brought before the morning council": {
+          "kinds": [
+            "conflict",
+            "journey"
+          ],
+          "region": "judea",
+          "tracks": [
+            "Jesus"
+          ],
+          "places": [
+            "Council_Place@Luk.22.66"
+          ]
+        }
+      }
+    },
+    {
+      "id": "roman-hearings",
+      "title": "Jesus before Pilate and Herod",
+      "expands": "Roman Trials",
+      "note": "The transfers follow the cited text. Building positions are explicitly estimated within Jerusalem; routes are illustrative connections, not identified streets.",
+      "chains": [
+        {
+          "basis": "Luke 23:1-25: Pilate, Herod, then Pilate again",
+          "events": [
+            "Jesus brought to Pilate",
+            "Pilate sends Jesus to Herod",
+            "Herod returns Jesus to Pilate"
+          ]
+        }
+      ],
+      "events": {
+        "Jesus brought to Pilate": {
+          "kinds": [
+            "conflict",
+            "journey"
+          ],
+          "region": "judea",
+          "tracks": [
+            "Jesus"
+          ],
+          "places": [
+            "Praetorium@Jhn.18.28"
+          ]
+        },
+        "Pilate sends Jesus to Herod": {
+          "kinds": [
+            "conflict",
+            "journey"
+          ],
+          "region": "judea",
+          "tracks": [
+            "Jesus"
+          ],
+          "places": [
+            "Herod_Trial@Luk.23.7"
+          ]
+        },
+        "Herod returns Jesus to Pilate": {
+          "kinds": [
+            "conflict",
+            "journey"
+          ],
+          "region": "judea",
+          "tracks": [
+            "Jesus"
+          ],
+          "places": [
+            "Praetorium@Jhn.18.28"
           ]
         }
       }

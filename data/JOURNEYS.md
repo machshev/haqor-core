@@ -52,5 +52,11 @@ region east of Egypt of Genesis and 1 Samuel.
 
 - Ezra's return from Babylon: TIPNR's tags are missing from the words of Ezra,
   so its stops could not be checked against the text.
-- Numbers 33's stations that no one has placed, and Jesus' ministry, which the
-  Gospels do not give in a single order.
+- Numbers 33's stations that no one has placed.
+
+## Gospel journeys
+
+The ministry is now covered in separate, referenced sections through the
+resurrection appearances and ascension. See `GOSPEL_JOURNEYS.md` for the coverage
+ledger, harmony choices and uncertain sites. Unknown settings use explicit
+estimated narrative sites; arrows do not assert recovered roads or dates.

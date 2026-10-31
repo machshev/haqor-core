@@ -383,6 +383,62 @@ fn amend_records(path: &Path, records: &mut Vec<Value>) -> Result<Vec<Split>> {
             "summary": text(entry, "summary"),
         }));
     }
+    // Unnamed narrative sites have no TIPNR record to split. Keep these
+    // editorial map anchors separate from names actually tagged in the text.
+    for entry in json["added"].as_array().into_iter().flatten() {
+        let (key, name, summary) = (
+            text(entry, "key"),
+            text(entry, "name"),
+            text(entry, "summary"),
+        );
+        let id = entry["id"]
+            .as_u64()
+            .filter(|id| (10001..=u32::MAX as u64).contains(id))
+            .with_context(|| format!("added place {key} needs an id from 10001"))?;
+        let reference = key.split_once('@').map(|(_, reference)| reference);
+        if name.trim().is_empty()
+            || summary.trim().is_empty()
+            || reference.and_then(crate::journeys::parse_ref).is_none()
+        {
+            bail!("added place {key} needs a name, summary and reference key");
+        }
+        if records
+            .iter()
+            .any(|r| r["id"].as_u64() == Some(id) || text(r, "key") == key)
+        {
+            bail!("added place {key} takes an id or key in use");
+        }
+        let location = json["places"]
+            .as_array()
+            .into_iter()
+            .flatten()
+            .find(|p| text(p, "key") == key && text(p, "name") == name)
+            .context(format!(
+                "added place {key} needs a matching estimated location"
+            ))?;
+        let locations = location["locations"]
+            .as_array()
+            .filter(|locations| !locations.is_empty())
+            .context(format!("added place {key} needs an estimated location"))?;
+        if locations.iter().any(|l| {
+            l["estimated"].as_bool() != Some(true)
+                || !l["latitude"]
+                    .as_f64()
+                    .is_some_and(|v| (-90.0..=90.0).contains(&v))
+                || !l["longitude"]
+                    .as_f64()
+                    .is_some_and(|v| (-180.0..=180.0).contains(&v))
+        }) {
+            bail!("added place {key} needs valid coordinates marked estimated");
+        }
+        records.push(serde_json::json!({
+            "category": "Place", "coordinates": null,
+            "description": "Estimated narrative site", "forms": [],
+            "id": id, "key": key, "kind": "place", "links": [],
+            "name": name, "openbible": "", "origin": "Haqor estimate",
+            "summary": summary,
+        }));
+    }
     Ok(splits)
 }
 
@@ -880,6 +936,57 @@ pub fn gen_names(
 
 #[cfg(test)]
 mod tests {
+
+    #[test]
+    fn narrative_sites_require_estimates_and_unique_identity() {
+        let dir = std::env::temp_dir().join(format!("haqor-sites-{}", std::process::id()));
+        std::fs::create_dir_all(&dir).unwrap();
+        let path = dir.join("places.json");
+        let mut data = serde_json::json!({
+            "added": [{"id":11001,"key":"Upper_Room@Mrk.14.15",
+                "name":"Upper room","summary":"Traditional vicinity, exact house unknown."}],
+            "places": [{"key":"Upper_Room@Mrk.14.15","name":"Upper room",
+                "locations":[{"latitude":31.77,"longitude":35.23,"estimated":true}]}]
+        });
+        let write = |data: &Value| std::fs::write(&path, data.to_string()).unwrap();
+        write(&data);
+        let mut records = Vec::new();
+        assert!(amend_records(&path, &mut records).unwrap().is_empty());
+        assert_eq!(records[0]["origin"], "Haqor estimate");
+        assert_eq!(records[0]["forms"], serde_json::json!([]));
+        assert!(
+            amend_records(&path, &mut records)
+                .err()
+                .unwrap()
+                .to_string()
+                .contains("in use")
+        );
+        data["places"][0]["locations"][0]["estimated"] = false.into();
+        write(&data);
+        assert!(
+            amend_records(&path, &mut Vec::new())
+                .err()
+                .unwrap()
+                .to_string()
+                .contains("marked estimated")
+        );
+        data["places"][0]["locations"][0]["estimated"] = true.into();
+        data["places"][0]["locations"][0]["latitude"] = 91.into();
+        write(&data);
+        assert!(amend_records(&path, &mut Vec::new()).is_err());
+        data["places"][0]["locations"][0]["latitude"] = 31.77.into();
+        data["added"][0]["key"] = "Upper_Room@Bad.1.1".into();
+        write(&data);
+        assert!(
+            amend_records(&path, &mut Vec::new())
+                .err()
+                .unwrap()
+                .to_string()
+                .contains("reference key")
+        );
+        std::fs::remove_dir_all(dir).unwrap();
+    }
+
     use super::*;
     use rusqlite::OptionalExtension;
 
