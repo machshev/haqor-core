@@ -375,6 +375,9 @@ pub struct EventSequence {
     pub groupings: Vec<SequenceGrouping>,
     /// The feasts and other marks of time its events fall at, in order.
     pub milestones: Vec<SequenceMilestone>,
+    /// Orders a witness gives that it does not take, which may go against
+    /// [`EventSequence::edges`]: Luke's of the fishermen's calling.
+    pub set_aside: Vec<SequenceSetAside>,
     /// What kind each event is, where it happens and at what places; only
     /// for the events given any.
     pub details: Vec<SequenceEventDetails>,
@@ -402,6 +405,16 @@ pub struct SequenceGroup {
     pub parent: Option<u32>,
     /// Its events, by id in the timeline's order; empty for a group of
     /// groups.
+    pub events: Vec<u32>,
+}
+
+/// An order a witness gives that a sequence does not take, and why.
+#[derive(Clone, Debug, PartialEq)]
+pub struct SequenceSetAside {
+    /// "Luke's order", "Robertson's harmony (1922)".
+    pub basis: String,
+    pub why: String,
+    /// Its events, by id, each before the next.
     pub events: Vec<u32>,
 }
 

@@ -6401,6 +6401,7 @@ impl Bible {
                         edges: Vec::new(),
                         groupings: Vec::new(),
                         milestones: Vec::new(),
+                        set_aside: Vec::new(),
                         details: Vec::new(),
                     },
                 ))
@@ -6575,6 +6576,37 @@ impl Bible {
                 chapter: at.chapter,
                 verse: at.verse,
             });
+        }
+        // A database built before set-aside orders were kept has none.
+        if self.has_table("event_sequence_set_aside")? {
+            for row in self
+                .db
+                .prepare(
+                    "SELECT seq_id, basis, why, events FROM data.event_sequence_set_aside \
+                     ORDER BY seq_id, ord",
+                )?
+                .query_map([], |row| {
+                    Ok((
+                        row.get::<_, u32>(0)?,
+                        row.get::<_, String>(1)?,
+                        row.get::<_, String>(2)?,
+                        row.get::<_, String>(3)?,
+                    ))
+                })?
+            {
+                let (seq, basis, why, events) = row?;
+                let Some(&i) = index.get(&seq) else {
+                    continue;
+                };
+                sequences[i]
+                    .1
+                    .set_aside
+                    .push(crate::names::SequenceSetAside {
+                        basis,
+                        why,
+                        events: events.split(',').filter_map(|e| e.parse().ok()).collect(),
+                    });
+            }
         }
         let home: HashMap<u32, usize> = sequences
             .iter()
@@ -7442,6 +7474,19 @@ mod tests {
             .find(|e| e.before == tour && e.after == leper)
             .unwrap();
         assert_eq!(edge.bases, ["Mark's order", "Robertson's harmony (1922)"]);
+        // Luke's calling of the fishermen, after the healings in Capernaum,
+        // is set aside: it goes against Mark's, which is kept.
+        if bible.has_table("event_sequence_set_aside").unwrap() {
+            let luke = ministry
+                .set_aside
+                .iter()
+                .find(|s| s.basis == "Luke's order")
+                .unwrap();
+            assert_eq!(luke.events.last(), Some(&id("Fishers of Men")));
+            assert!(!luke.why.is_empty());
+        } else {
+            assert!(ministry.set_aside.is_empty());
+        }
         // Robertson's parts group every event, the great Galilean ministry
         // in his eight groups.
         let parts = &ministry.groupings[0];

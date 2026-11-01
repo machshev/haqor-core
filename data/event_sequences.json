@@ -3,7 +3,7 @@
     {
       "id": "ministry",
       "title": "Ministry of Jesus",
-      "note": "From John's preaching to the week of the Passion, ordered by what the Gospels say came before what rather than dated. Mark's order is the backbone of the Galilean ministry, John's feasts and notes of time frame the whole, and Luke's order places what he alone tells. Where the Gospels part ways — Mark and Luke on when the fishermen were called, Matthew's gathering of the miracles in chapters 8 and 9 — one order is kept and the other left out. A. T. Robertson's *Harmony of the Gospels* (1922) is a further witness: where its order agrees with the Gospels' an ordering rests on both, and where it orders what they leave open it rests on Robertson alone. Two of its placements are not taken: John's beheading, which Robertson tells where Herod hears of Jesus (Mark tells it looking back), and the anointing at Bethany, which Robertson sets two days before the Passover with Mark and Matthew where John has it six days before. Events no line joins are of unknown order to one another. Estimated sites are working reconstructions from surrounding passages. Chorazin records retrospectively attested activity with no dated position. The priests' council is not part of Jesus' travel track; Siloam is the healed man's destination.",
+      "note": "From John's preaching to the week of the Passion, ordered by what the Gospels say came before what rather than dated. Mark's order is the backbone of the Galilean ministry, John's feasts and notes of time frame the whole, and Luke's order places what he alone tells. Where the Gospels part ways — Mark and Luke on when the fishermen were called, Matthew's gathering of the miracles in chapters 8 and 9 — one order is kept and the other set aside: it can be shown beside the order, but does not join it. A. T. Robertson's *Harmony of the Gospels* (1922) is a further witness: where its order agrees with the Gospels' an ordering rests on both, and where it orders what they leave open it rests on Robertson alone. Two of its placements are not taken: John's beheading, which Robertson tells where Herod hears of Jesus (Mark tells it looking back), and the anointing at Bethany, which Robertson sets two days before the Passover with Mark and Matthew where John has it six days before. Events no line joins are of unknown order to one another. Estimated sites are working reconstructions from surrounding passages. Chorazin records retrospectively attested activity with no dated position. The priests' council is not part of Jesus' travel track; Siloam is the healed man's destination.",
       "chains": [
         {
           "basis": "Robertson's harmony (1922)",
@@ -644,6 +644,41 @@
                 "Holy Week"
               ]
             }
+          ]
+        }
+      ],
+      "set_aside": [
+        {
+          "basis": "Luke's order",
+          "why": "Luke 4:31–5:11 tells the healings in Capernaum before the fishermen are called; Mark 1:16–31 and Matthew 4:18–22 call them first, and Mark's order is kept.",
+          "events": [
+            "The Demoniac",
+            "Peter's Mother-in-law and Others Healed",
+            "Fishers of Men"
+          ]
+        },
+        {
+          "basis": "Matthew's order",
+          "why": "Matthew 8–9 gathers ten miracles after the Sermon on the Mount, by their kind rather than their time; Mark's order of them is kept.",
+          "events": [
+            "Sermon on the Mount",
+            "Healing the Leper",
+            "Healing Centurion's Servant",
+            "Peter's Mother-in-law and Others Healed",
+            "Seaside Parables and Miracle",
+            "Gadarene Demoniacs",
+            "Healing the Man with Palsy",
+            "Jesus Calls Matthew",
+            "Fasting Question",
+            "Capernaum Miracles"
+          ]
+        },
+        {
+          "basis": "Robertson's harmony (1922)",
+          "why": "Robertson tells John's beheading where Herod hears of Jesus, after the Twelve are sent out; Mark 6:17 tells it looking back, so it is not set after their tour.",
+          "events": [
+            "Jesus' Third Tour of Galilee",
+            "John Beheaded"
           ]
         }
       ],

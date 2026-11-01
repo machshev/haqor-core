@@ -58,6 +58,7 @@ DROP TABLE IF EXISTS event_sequence_grouping;
 DROP TABLE IF EXISTS event_sequence_group;
 DROP TABLE IF EXISTS event_sequence_group_member;
 DROP TABLE IF EXISTS event_sequence_milestone;
+DROP TABLE IF EXISTS event_sequence_set_aside;
 DROP TABLE IF EXISTS event_sequence_event;
 DROP TABLE IF EXISTS event_sequence_place;
 DROP TABLE IF EXISTS event_sequence_track;
@@ -98,6 +99,18 @@ CREATE TABLE event_sequence_group_member(
     ord      INTEGER NOT NULL,
     event_id INTEGER NOT NULL,
     PRIMARY KEY(seq_id, grouping, event_id)
+) WITHOUT ROWID;
+
+-- Orders a witness gives that the sequence does not take, each a chain of
+-- its events (their ids joined by `,`) in the order the basis puts them,
+-- and why it is set aside. Not part of the order: one may go against it.
+CREATE TABLE event_sequence_set_aside(
+    seq_id INTEGER NOT NULL,
+    ord    INTEGER NOT NULL,
+    basis  TEXT    NOT NULL,
+    why    TEXT    NOT NULL,
+    events TEXT    NOT NULL,
+    PRIMARY KEY(seq_id, ord)
 ) WITHOUT ROWID;
 
 -- Feasts and other marks of time an event of a sequence falls at, with the
@@ -190,6 +203,8 @@ struct Sequence {
     chains: Vec<Chain>,
     groupings: Vec<Grouping>,
     milestones: Vec<Milestone>,
+    /// Orders a witness gives that it does not take.
+    set_aside: Vec<SetAside>,
     /// What each event is and where, by title.
     details: Vec<(String, Details)>,
 }
@@ -231,6 +246,15 @@ struct Details {
     places: Vec<(String, String)>,
 }
 
+/// An order a witness gives that the sequence does not take: Luke's of the
+/// fishermen's calling, where Mark's is kept. Drawn apart from the order,
+/// which it may go against.
+struct SetAside {
+    basis: String,
+    why: String,
+    events: Vec<String>,
+}
+
 /// Events in the order `basis` puts them, each before the next; a chain of
 /// one makes its event a member without ordering it.
 struct Chain {
@@ -262,6 +286,7 @@ fn read(json: &Value) -> Result<Vec<Sequence>> {
                 "chains",
                 "groupings",
                 "milestones",
+                "set_aside",
                 "events",
             ],
         )?;
@@ -318,6 +343,15 @@ fn read(json: &Value) -> Result<Vec<Sequence>> {
                 feast: text(milestone, "feast"),
                 label: text(milestone, "label"),
                 reference: text(milestone, "ref"),
+            });
+        }
+        let mut set_aside = Vec::new();
+        for chain in sequence["set_aside"].as_array().into_iter().flatten() {
+            known(chain, &["basis", "why", "events"])?;
+            set_aside.push(SetAside {
+                basis: text(chain, "basis"),
+                why: text(chain, "why"),
+                events: titles(&chain["events"])?,
             });
         }
         let mut details = Vec::new();
@@ -381,6 +415,7 @@ fn read(json: &Value) -> Result<Vec<Sequence>> {
             chains,
             groupings,
             milestones,
+            set_aside,
             details,
         });
     }
@@ -396,6 +431,7 @@ pub struct SequencesSummary {
     pub groupings: usize,
     pub groups: usize,
     pub milestones: usize,
+    pub set_aside: usize,
     /// Events given kinds, a region or places.
     pub details: usize,
 }
@@ -457,6 +493,8 @@ pub(crate) fn build(
         groupings: Vec<(String, String, String, Vec<BuiltGroup>)>,
         /// Event, feast, label, packed reference.
         milestones: Vec<(u32, String, String, i64)>,
+        /// Basis, why, events.
+        set_aside: Vec<(String, String, Vec<u32>)>,
         details: Vec<BuiltDetails>,
     }
     /// Event, kinds, region, places (entity and label), journey tracks.
@@ -618,6 +656,29 @@ pub(crate) fn build(
             }
         }
 
+        let mut set_aside = Vec::new();
+        for chain in &sequence.set_aside {
+            let at = format!("{at}, set aside {:?}", chain.basis);
+            if chain.basis.trim().is_empty()
+                || chain.why.trim().is_empty()
+                || chain.events.len() < 2
+            {
+                faults.push(format!("{at}: no basis, no why, or fewer than two events"));
+            }
+            let events: Vec<u32> = chain
+                .events
+                .iter()
+                .filter_map(|t| member(t, &at, &mut faults))
+                .collect();
+            if events.len() == chain.events.len() {
+                set_aside.push((
+                    chain.basis.trim().to_string(),
+                    chain.why.trim().to_string(),
+                    events,
+                ));
+            }
+        }
+
         let mut details = Vec::new();
         for (title, about) in &sequence.details {
             let at = format!("{at}, event {title:?}");
@@ -669,6 +730,7 @@ pub(crate) fn build(
             edges,
             groupings,
             milestones,
+            set_aside,
             details,
         });
     }
@@ -778,6 +840,15 @@ pub(crate) fn build(
                 params![i as i64, ord as i64, event, feast, label, reference],
             )?;
             summary.milestones += 1;
+        }
+        for (ord, (basis, why, events)) in sequence.set_aside.iter().enumerate() {
+            let ids: Vec<String> = events.iter().map(u32::to_string).collect();
+            tx.execute(
+                "INSERT INTO event_sequence_set_aside(seq_id, ord, basis, why, events) \
+                 VALUES (?1, ?2, ?3, ?4, ?5)",
+                params![i as i64, ord as i64, basis, why, ids.join(",")],
+            )?;
+            summary.set_aside += 1;
         }
         for (event, kinds, region, at, tracks) in &sequence.details {
             for (ord, track) in tracks.iter().enumerate() {
@@ -1075,6 +1146,55 @@ mod tests {
             })
             .unwrap();
         assert_eq!(reference, pack_ref(43, 2, 13));
+    }
+
+    #[test]
+    fn set_aside_orders_are_kept_apart_and_may_go_against_the_order() {
+        let db = Connection::open_in_memory().unwrap();
+        events(&db, &["A", "B", "C"]);
+        let path = write(
+            "set-aside",
+            r#"{"sequences": [
+                {"id": "s", "title": "S", "chains": [
+                    {"basis": "Mark", "events": ["A", "B", "C"]}
+                ],
+                "set_aside": [
+                    {"basis": "Luke", "why": "Luke tells C first.", "events": ["C", "A"]}
+                ]}
+            ]}"#,
+        );
+        let summary = build(&db, &path, &places()).unwrap();
+        assert_eq!((summary.edges, summary.set_aside), (2, 1));
+        let row: (String, String, String) = db
+            .query_row(
+                "SELECT basis, why, events FROM event_sequence_set_aside",
+                [],
+                |row| Ok((row.get(0)?, row.get(1)?, row.get(2)?)),
+            )
+            .unwrap();
+        assert_eq!(
+            row,
+            ("Luke".into(), "Luke tells C first.".into(), "3,1".into())
+        );
+
+        let path = write(
+            "set-aside-faults",
+            r#"{"sequences": [
+                {"id": "s", "title": "S", "chains": [
+                    {"basis": "Mark", "events": ["A", "B"]}
+                ],
+                "set_aside": [
+                    {"basis": "Luke", "why": "", "events": ["A"]},
+                    {"basis": "John", "why": "Why.", "events": ["A", "C"]}
+                ]}
+            ]}"#,
+        );
+        let error = format!("{:#}", build(&db, &path, &places()).unwrap_err());
+        assert!(
+            error.contains("no basis, no why, or fewer than two events"),
+            "{error}"
+        );
+        assert!(error.contains("\"C\" is not in the sequence"), "{error}");
     }
 
     #[test]

@@ -32,6 +32,11 @@ Each sequence has:
   abbreviations as `journeys.json` writes them), and the `feast` as the app's
   moʿadim know it (`pesach`, `sukkot`), or another key or none for one they
   do not.
+- `set_aside` (optional), orders a witness gives that the sequence does not
+  take: each a `basis`, a `why` and its `events`, two or more of the
+  sequence's, by title, in the order the basis puts them. They are not part
+  of the order, and may go against it (Luke's calling of the fishermen
+  against Mark's); the app can draw them beside it.
 - `events` (optional), by title, what kind each event is and where it
   happens. `kinds` lists the chief first: `healing`, `exorcism`, `raising`
   (of the dead), `sign` (over nature: the water made wine, the loaves),
@@ -51,9 +56,9 @@ Each sequence has:
 
 The chains join into one order. Two events no run of chains joins are of
 unknown order to one another, and are drawn so. Where the witnesses disagree —
-Mark and Luke on when the fishermen were called — keep the order of one and
-leave out the other's, saying so in the `note`: an order that goes round in a
-circle fails the build.
+Mark and Luke on when the fishermen were called — keep the order of one in
+`chains` and put the other's in `set_aside`, saying so in the `note`: an order
+that goes round in a circle fails the build.
 
 An event is in one sequence at most; one that `expands` another event holds
 the events inside it, which its parent leaves out. The build (`db gen-names`,
