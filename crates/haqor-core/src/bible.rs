@@ -7435,7 +7435,7 @@ mod tests {
         assert!(ministry.events.contains(&id("Water to Wine")));
         // Mark puts the leper's healing after the first tour, and Robertson's
         // harmony agrees.
-        let (tour, leper) = (id("Jesus' 1st Tour of Galilee"), id("Healing the Leper"));
+        let (tour, leper) = (id("Jesus' First Tour of Galilee"), id("Healing the Leper"));
         let edge = ministry
             .edges
             .iter()
