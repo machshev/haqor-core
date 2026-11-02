@@ -351,20 +351,44 @@ the Peshitta's 3,301 lexemes, 97% of its words, an equivalent (ܗܝܡܢܘܬܐ
 
 ### LAN progress sync
 
-Run a personal server on the LAN that the app can reach:
+Run a personal server that the app can reach. Each learner gets their own
+token and progress database under `--users-dir`, and `--tls-dir` holds the
+server's self-signed HTTPS certificate (both are created on first use):
 
 ```sh
 cargo run -p haqor-sync-server --release -- \
   --bind 0.0.0.0:8788 \
-  --progress "$HOME/.local/share/haqor/progress.db" \
-  --token "choose-a-long-random-secret"
+  --users-dir /var/lib/haqor-sync/users \
+  --tls-dir /var/lib/haqor-sync/tls
 ```
 
-Then in the app open **Learn to read → Study pace → Progress sync**, enter the
-machine's LAN address (for example `http://192.168.1.10:8788`) and the same
-token. The app syncs when it launches and shortly after each answer. The
-built-in service uses HTTP with a bearer token, so run it only on a trusted
-LAN (or place it behind a VPN or HTTPS reverse proxy).
+Add a learner, or show an existing learner's join link, with `join`. List
+every address a device might use, in the order the app should try them:
+
+```sh
+cargo run -p haqor-sync-server --release -- join alice \
+  --users-dir /var/lib/haqor-sync/users \
+  --tls-dir /var/lib/haqor-sync/tls \
+  --server https://10.0.0.2:8788 \
+  --server https://sync-host.lan:8788
+```
+
+It prints a QR code and a `haqor://join?…` link. Scanning the code with a
+phone's camera opens Haqor, which asks before joining; on a computer, paste
+the link into **Settings → Study & progress sync**. Devices already joined can
+show the same QR code to add further devices. The app syncs when it launches
+and shortly after each answer, using the first address that answers.
+
+The link carries the learner's token and the certificate's SHA-256
+fingerprint. The app trusts that one certificate, and nothing else, for
+`https://` addresses, so no certificate authority is involved and a different
+server answering on the same address is refused before the token is sent.
+Each learner's token only reaches their own progress.
+
+`--allow-plain-http` also answers plain HTTP on the same port, so apps joined
+before HTTPS keep syncing until they rejoin. The older single-learner form
+(`--progress … --token …`, without `--users-dir`) still works and serves plain
+HTTP only.
 
 The admin server can also be run independently:
 

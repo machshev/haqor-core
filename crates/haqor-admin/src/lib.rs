@@ -1,30 +1,27 @@
 //! Minimal local HTTP server for editing `data/lexicon_overrides.json`.
 
 use std::collections::HashSet;
-use std::io::{BufRead, BufReader, Read, Write};
-use std::net::{SocketAddr, TcpListener, TcpStream, ToSocketAddrs};
+use std::io::{Read, Write};
+use std::net::{SocketAddr, TcpListener, TcpStream};
 use std::path::{Path, PathBuf};
-use std::time::{Duration, SystemTime, UNIX_EPOCH};
+use std::time::{SystemTime, UNIX_EPOCH};
 
 use anyhow::{Context, Result, bail};
 use rusqlite::Connection;
 use serde_json::{Value, json};
 
+pub use haqor_sync_server::client::Remote;
+
 const EDITOR: &str = include_str!("editor.html");
 const MAX_REQUEST_BYTES: usize = 4 * 1024 * 1024;
-const MAX_SNAPSHOT_BYTES: usize = 64 * 1024 * 1024;
 const APP_ID: &str = "org.haqor";
 const LEGACY_APP_ID: &str = "com.example.haqor";
 
 mod issue_tui;
 
 /// The server credentials the Flutter app keeps in its platform preferences.
-/// They are read only for a `pull` invocation and are never printed.
-#[derive(Debug, Clone, PartialEq, Eq)]
-pub struct AppSyncSettings {
-    pub server_url: String,
-    pub token: String,
-}
+/// They are read only for a remote invocation and are never printed.
+pub type AppSyncSettings = Remote;
 
 /// Summary of mobile lexicon corrections merged into the local overlay.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -67,12 +64,6 @@ fn read_app_sync_settings_from_data_home(data_home: &Path) -> Result<AppSyncSett
     read_app_sync_settings(current)
 }
 
-struct SyncEndpoint {
-    host: String,
-    port: u16,
-    path: String,
-}
-
 /// Read the sync endpoint the Haqor app has already been configured to use.
 /// Flutter's Linux shared-preference backend prefixes its keys with `flutter.`.
 pub fn read_app_sync_settings(path: impl AsRef<Path>) -> Result<AppSyncSettings> {
@@ -94,14 +85,26 @@ pub fn read_app_sync_settings(path: impl AsRef<Path>) -> Result<AppSyncSettings>
                 )
             })
     };
+    let optional = |keys: &[&str]| text(keys, "").ok();
+    // Apps that joined with a link keep every address, one per line, under
+    // `progress_sync_server_urls`; older ones keep a single address.
+    let servers = text(
+        &[
+            "flutter.progress_sync_server_urls",
+            "progress_sync_server_urls",
+            "flutter.progress_sync_server_url",
+            "progress_sync_server_url",
+        ],
+        "sync server URL",
+    )?
+    .lines()
+    .map(str::trim)
+    .filter(|line| !line.is_empty())
+    .map(ToOwned::to_owned)
+    .collect();
     Ok(AppSyncSettings {
-        server_url: text(
-            &[
-                "flutter.progress_sync_server_url",
-                "progress_sync_server_url",
-            ],
-            "sync server URL",
-        )?,
+        servers,
+        pin: optional(&["flutter.progress_sync_cert_pin", "progress_sync_cert_pin"]),
         token: text(
             &["flutter.progress_sync_token", "progress_sync_token"],
             "sync token",
@@ -226,11 +229,10 @@ pub fn pull_gloss_overrides(progress: &Path, overlay: &Path) -> Result<PullGloss
 /// Fetch the canonical progress snapshot from an authenticated LAN sync server
 /// and merge its mobile lexicon corrections into the local overlay JSON.
 pub fn pull_gloss_overrides_from_server(
-    server_url: &str,
-    token: &str,
+    remote: &Remote,
     overlay: &Path,
 ) -> Result<PullGlossOverridesResult> {
-    with_remote_progress(server_url, token, "glosses", |progress| {
+    with_remote_progress(remote, "glosses", |progress| {
         pull_gloss_overrides(progress, overlay)
     })
 }
@@ -239,12 +241,8 @@ pub fn pull_gloss_overrides_from_server(
 ///
 /// The returned server snapshot is checked before reporting success, so an older
 /// server that fails to retain tombstones cannot silently leave the bad rows live.
-pub fn clear_invalid_gloss_overrides_from_server(server_url: &str, token: &str) -> Result<usize> {
-    if token.trim().is_empty() {
-        bail!("--token must not be empty");
-    }
-    let endpoint = parse_sync_endpoint(server_url)?;
-    let snapshot = download_remote_snapshot(&endpoint, token, "synced tutor glosses")?;
+pub fn clear_invalid_gloss_overrides_from_server(remote: &Remote) -> Result<usize> {
+    let snapshot = download_remote_snapshot(remote, "synced tutor glosses")?;
     if !haqor_core::progress_sync::is_sqlite_snapshot(&snapshot) {
         bail!("sync server returned an invalid progress snapshot");
     }
@@ -261,7 +259,7 @@ pub fn clear_invalid_gloss_overrides_from_server(server_url: &str, token: &str) 
             return Ok(0);
         }
         eprintln!("Clearing {count} invalid synced tutor gloss override(s) on the server");
-        let merged = post_sync_snapshot(&endpoint, token, &std::fs::read(&temporary)?)?;
+        let merged = post_sync_snapshot(remote, &std::fs::read(&temporary)?)?;
         if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
             bail!("sync server returned an invalid progress snapshot");
         }
@@ -383,12 +381,8 @@ pub fn pull_issue_reports(progress: &Path, output: &Path) -> Result<usize> {
 
 /// Fetch the canonical progress snapshot from the LAN server and export its
 /// issue/idea log to a local JSON file.
-pub fn pull_issue_reports_from_server(
-    server_url: &str,
-    token: &str,
-    output: &Path,
-) -> Result<usize> {
-    with_remote_progress(server_url, token, "issues", |progress| {
+pub fn pull_issue_reports_from_server(remote: &Remote, output: &Path) -> Result<usize> {
+    with_remote_progress(remote, "issues", |progress| {
         pull_issue_reports(progress, output)
     })
 }
@@ -444,20 +438,12 @@ pub fn review_issue_reports(progress: &Path, output: &Path) -> Result<usize> {
 
 /// Review the server's live issue log, then upload the selected resolution
 /// tombstones through the normal authenticated progress-sync route.
-pub fn review_issue_reports_from_server(
-    server_url: &str,
-    token: &str,
-    output: &Path,
-) -> Result<usize> {
-    if token.trim().is_empty() {
-        bail!("--token must not be empty");
-    }
-    let endpoint = parse_sync_endpoint(server_url)?;
+pub fn review_issue_reports_from_server(remote: &Remote, output: &Path) -> Result<usize> {
     eprintln!(
-        "Downloading app issue reports from {}:{}",
-        endpoint.host, endpoint.port
+        "Downloading app issue reports from {}",
+        remote.servers.join(" or ")
     );
-    let snapshot = download_remote_snapshot(&endpoint, token, "app issue reports")?;
+    let snapshot = download_remote_snapshot(remote, "app issue reports")?;
     if !haqor_core::progress_sync::is_sqlite_snapshot(&snapshot) {
         bail!("sync server returned an invalid progress snapshot");
     }
@@ -472,7 +458,7 @@ pub fn review_issue_reports_from_server(
         let reports = haqor_core::progress_sync::read_issue_reports_file(&temporary)?;
         issue_tui::review(reports, |action, current| match action {
             issue_tui::Action::Pull => {
-                let snapshot = download_remote_snapshot(&endpoint, token, "app issue reports")?;
+                let snapshot = download_remote_snapshot(remote, "app issue reports")?;
                 std::fs::write(&temporary, snapshot)?;
                 let count = pull_issue_reports(&temporary, output)?;
                 Ok(issue_tui::ActionResult {
@@ -492,7 +478,7 @@ pub fn review_issue_reports_from_server(
                 if changed == 0 {
                     bail!("issue report {id} is no longer active");
                 }
-                let merged = post_sync_snapshot(&endpoint, token, &std::fs::read(&temporary)?)?;
+                let merged = post_sync_snapshot(remote, &std::fs::read(&temporary)?)?;
                 if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
                     bail!("sync server returned an invalid progress snapshot");
                 }
@@ -514,7 +500,7 @@ pub fn review_issue_reports_from_server(
                     "Syncing {} resolved app issue report(s) back to the server",
                     selected.len()
                 );
-                let merged = post_sync_snapshot(&endpoint, token, &std::fs::read(&temporary)?)?;
+                let merged = post_sync_snapshot(remote, &std::fs::read(&temporary)?)?;
                 if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
                     bail!("sync server returned an invalid progress snapshot");
                 }
@@ -542,22 +528,15 @@ pub fn review_issue_reports_from_server(
     result
 }
 
-fn download_remote_snapshot(
-    endpoint: &SyncEndpoint,
-    token: &str,
-    purpose: &str,
-) -> Result<Vec<u8>> {
-    eprintln!(
-        "Downloading {purpose} from {}:{}",
-        endpoint.host, endpoint.port
-    );
-    let snapshot = match fetch_sync_snapshot(endpoint, token) {
+fn download_remote_snapshot(remote: &Remote, purpose: &str) -> Result<Vec<u8>> {
+    eprintln!("Downloading {purpose} from {}", remote.servers.join(" or "));
+    let snapshot = match fetch_sync_snapshot(remote) {
         Ok(snapshot) => snapshot,
         Err(error) if error.to_string().contains("404 Not Found") => {
             eprintln!(
                 "Sync server does not support snapshot downloads; using its compatible sync route"
             );
-            post_sync_snapshot(endpoint, token, &empty_progress_snapshot()?)?
+            post_sync_snapshot(remote, &empty_progress_snapshot()?)?
         }
         Err(error) => return Err(error),
     };
@@ -568,27 +547,22 @@ fn download_remote_snapshot(
 }
 
 fn with_remote_progress<T>(
-    server_url: &str,
-    token: &str,
+    remote: &Remote,
     purpose: &str,
     operation: impl FnOnce(&Path) -> Result<T>,
 ) -> Result<T> {
-    if token.trim().is_empty() {
-        bail!("--token must not be empty");
-    }
-    let endpoint = parse_sync_endpoint(server_url)?;
     eprintln!(
-        "Pulling synced {purpose} from {}:{}",
-        endpoint.host, endpoint.port,
+        "Pulling synced {purpose} from {}",
+        remote.servers.join(" or ")
     );
-    let snapshot = match fetch_sync_snapshot(&endpoint, token) {
+    let snapshot = match fetch_sync_snapshot(remote) {
         Ok(snapshot) => snapshot,
         Err(error) if error.to_string().contains("404 Not Found") => {
             eprintln!(
                 "Sync server does not support snapshot downloads; using its compatible sync route"
             );
             let empty_snapshot = empty_progress_snapshot()?;
-            post_sync_snapshot(&endpoint, token, &empty_snapshot)?
+            post_sync_snapshot(remote, &empty_snapshot)?
         }
         Err(error) => return Err(error),
     };
@@ -607,78 +581,8 @@ fn with_remote_progress<T>(
     result
 }
 
-fn parse_sync_endpoint(input: &str) -> Result<SyncEndpoint> {
-    let rest = input
-        .trim()
-        .strip_prefix("http://")
-        .context("sync server must start with http://")?;
-    let (authority, path) = match rest.find('/') {
-        Some(index) if &rest[index..] == "/" => (&rest[..index], "/v1/progress"),
-        Some(index) => (&rest[..index], &rest[index..]),
-        None => (rest, "/v1/progress"),
-    };
-    if authority.is_empty() || authority.contains('@') {
-        bail!("sync server address is invalid");
-    }
-    let (host, port) = match authority.rsplit_once(':') {
-        Some((host, port)) if !host.is_empty() => (
-            host.to_string(),
-            port.parse().context("sync server port is invalid")?,
-        ),
-        _ => (authority.to_string(), 80),
-    };
-    Ok(SyncEndpoint {
-        host,
-        port,
-        path: path.to_string(),
-    })
-}
-
-fn fetch_sync_snapshot(endpoint: &SyncEndpoint, token: &str) -> Result<Vec<u8>> {
-    let address = format!("{}:{}", endpoint.host, endpoint.port);
-    let socket = address
-        .to_socket_addrs()
-        .with_context(|| format!("resolving sync server {}", endpoint.host))?
-        .next()
-        .context("sync server address did not resolve")?;
-    let mut stream = TcpStream::connect_timeout(&socket, Duration::from_secs(10))
-        .context("connecting to sync server")?;
-    let _ = stream.set_read_timeout(Some(Duration::from_secs(30)));
-    let _ = stream.set_write_timeout(Some(Duration::from_secs(30)));
-    write!(
-        stream,
-        "GET {} HTTP/1.1\r\nHost: {}\r\nAuthorization: Bearer {}\r\nConnection: close\r\n\r\n",
-        endpoint.path, endpoint.host, token
-    )?;
-
-    let mut reader = BufReader::new(stream);
-    let mut status = String::new();
-    reader.read_line(&mut status)?;
-    if !status.starts_with("HTTP/1.1 200") && !status.starts_with("HTTP/1.0 200") {
-        bail!("sync server returned {}", status.trim());
-    }
-    let mut content_length = None;
-    loop {
-        let mut line = String::new();
-        if reader.read_line(&mut line)? == 0 {
-            bail!("sync server closed the response headers early");
-        }
-        if line == "\r\n" {
-            break;
-        }
-        if let Some((name, value)) = line.split_once(':')
-            && name.eq_ignore_ascii_case("content-length")
-        {
-            content_length = value.trim().parse::<usize>().ok();
-        }
-    }
-    let length = content_length.context("sync server omitted Content-Length")?;
-    if length > MAX_SNAPSHOT_BYTES {
-        bail!("sync server returned an unexpectedly large snapshot");
-    }
-    let mut snapshot = vec![0; length];
-    reader.read_exact(&mut snapshot)?;
-    Ok(snapshot)
+fn fetch_sync_snapshot(remote: &Remote) -> Result<Vec<u8>> {
+    Ok(remote.request("GET", None)?.0)
 }
 
 /// An empty, fully initialized snapshot safely exercises a pre-download sync
@@ -704,55 +608,8 @@ fn empty_progress_snapshot() -> Result<Vec<u8>> {
     result
 }
 
-fn post_sync_snapshot(endpoint: &SyncEndpoint, token: &str, snapshot: &[u8]) -> Result<Vec<u8>> {
-    let address = format!("{}:{}", endpoint.host, endpoint.port);
-    let socket = address
-        .to_socket_addrs()
-        .with_context(|| format!("resolving sync server {}", endpoint.host))?
-        .next()
-        .context("sync server address did not resolve")?;
-    let mut stream = TcpStream::connect_timeout(&socket, Duration::from_secs(10))
-        .context("connecting to sync server")?;
-    let _ = stream.set_read_timeout(Some(Duration::from_secs(30)));
-    let _ = stream.set_write_timeout(Some(Duration::from_secs(30)));
-    write!(
-        stream,
-        "POST {} HTTP/1.1\r\nHost: {}\r\nAuthorization: Bearer {}\r\nContent-Type: application/vnd.sqlite3\r\nContent-Length: {}\r\nConnection: close\r\n\r\n",
-        endpoint.path,
-        endpoint.host,
-        token,
-        snapshot.len(),
-    )?;
-    stream.write_all(snapshot)?;
-
-    let mut reader = BufReader::new(stream);
-    let mut status = String::new();
-    reader.read_line(&mut status)?;
-    if !status.starts_with("HTTP/1.1 200") && !status.starts_with("HTTP/1.0 200") {
-        bail!("sync server returned {}", status.trim());
-    }
-    let mut content_length = None;
-    loop {
-        let mut line = String::new();
-        if reader.read_line(&mut line)? == 0 {
-            bail!("sync server closed the response headers early");
-        }
-        if line == "\r\n" {
-            break;
-        }
-        if let Some((name, value)) = line.split_once(':')
-            && name.eq_ignore_ascii_case("content-length")
-        {
-            content_length = value.trim().parse::<usize>().ok();
-        }
-    }
-    let length = content_length.context("sync server omitted Content-Length")?;
-    if length > MAX_SNAPSHOT_BYTES {
-        bail!("sync server returned an unexpectedly large snapshot");
-    }
-    let mut merged = vec![0; length];
-    reader.read_exact(&mut merged)?;
-    Ok(merged)
+fn post_sync_snapshot(remote: &Remote, snapshot: &[u8]) -> Result<Vec<u8>> {
+    Ok(remote.request("POST", Some(snapshot))?.0)
 }
 
 pub fn serve(bind: SocketAddr, overlay: PathBuf, lexicon: PathBuf, hebrew: PathBuf) -> Result<()> {
@@ -1300,7 +1157,8 @@ mod tests {
         assert_eq!(
             read_app_sync_settings(&preferences)?,
             AppSyncSettings {
-                server_url: "http://192.168.1.10:8788".to_string(),
+                servers: vec!["http://192.168.1.10:8788".to_string()],
+                pin: None,
                 token: "secret".to_string(),
             }
         );
@@ -1309,12 +1167,30 @@ mod tests {
     }
 
     #[test]
-    fn root_server_url_uses_the_progress_endpoint() -> Result<()> {
-        let endpoint = parse_sync_endpoint("http://sync.example:8788/")?;
-
-        assert_eq!(endpoint.host, "sync.example");
-        assert_eq!(endpoint.port, 8788);
-        assert_eq!(endpoint.path, "/v1/progress");
+    fn reads_every_joined_address_and_the_certificate_pin() -> Result<()> {
+        let preferences = std::env::temp_dir().join(format!(
+            "haqor-admin-preferences-multi-{}.json",
+            std::process::id()
+        ));
+        std::fs::write(
+            &preferences,
+            r#"{"flutter.progress_sync_server_url":"https://10.0.0.2:8788",
+                "flutter.progress_sync_server_urls":"https://10.0.0.2:8788\nhttps://sync-host.lan:8788\n",
+                "flutter.progress_sync_cert_pin":"ab12",
+                "flutter.progress_sync_token":"secret"}"#,
+        )?;
+        assert_eq!(
+            read_app_sync_settings(&preferences)?,
+            AppSyncSettings {
+                servers: vec![
+                    "https://10.0.0.2:8788".to_string(),
+                    "https://sync-host.lan:8788".to_string()
+                ],
+                pin: Some("ab12".to_string()),
+                token: "secret".to_string(),
+            }
+        );
+        std::fs::remove_file(preferences)?;
         Ok(())
     }
 
@@ -1371,7 +1247,8 @@ mod tests {
         assert_eq!(
             read_app_sync_settings_from_data_home(&data_home)?,
             AppSyncSettings {
-                server_url: "http://sync:8788".to_string(),
+                servers: vec!["http://sync:8788".to_string()],
+                pin: None,
                 token: "token".to_string(),
             }
         );

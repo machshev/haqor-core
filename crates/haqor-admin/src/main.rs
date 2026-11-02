@@ -39,10 +39,16 @@ enum Command {
         #[arg(long, conflicts_with = "server")]
         progress: Option<PathBuf>,
 
-        /// Remote sync-server URL, for example http://192.168.1.10:8788. Defaults
+        /// Remote sync-server URL, for example https://10.0.0.2:8788; repeat it to
+        /// try several addresses in order. Defaults
         /// to the Haqor app's saved sync-server setting.
         #[arg(long, conflicts_with = "progress")]
-        server: Option<String>,
+        server: Vec<String>,
+
+        /// Certificate SHA-256 fingerprint for https:// servers. Defaults to the
+        /// Haqor app's saved fingerprint.
+        #[arg(long)]
+        pin: Option<String>,
 
         /// Sync token used with --server. Defaults to the Haqor app's saved token.
         #[arg(long)]
@@ -54,9 +60,15 @@ enum Command {
     },
     /// Remove malformed blank tutor-gloss rows from the canonical sync server.
     ClearInvalidGlosses {
-        /// Remote sync-server URL. Defaults to the Haqor app's saved setting.
+        /// Remote sync-server URL; repeat it to try several addresses in order.
+        /// Defaults to the Haqor app's saved setting.
         #[arg(long)]
-        server: Option<String>,
+        server: Vec<String>,
+
+        /// Certificate SHA-256 fingerprint for https:// servers. Defaults to the
+        /// Haqor app's saved fingerprint.
+        #[arg(long)]
+        pin: Option<String>,
 
         /// Sync token used with --server. Defaults to the Haqor app's saved token.
         #[arg(long)]
@@ -69,9 +81,15 @@ enum Command {
         #[arg(long, conflicts_with = "server")]
         progress: Option<PathBuf>,
 
-        /// Remote sync-server URL. Defaults to the Haqor app's saved setting.
+        /// Remote sync-server URL; repeat it to try several addresses in order.
+        /// Defaults to the Haqor app's saved setting.
         #[arg(long, conflicts_with = "progress")]
-        server: Option<String>,
+        server: Vec<String>,
+
+        /// Certificate SHA-256 fingerprint for https:// servers. Defaults to the
+        /// Haqor app's saved fingerprint.
+        #[arg(long)]
+        pin: Option<String>,
 
         /// Sync token used with --server. Defaults to the Haqor app's saved token.
         #[arg(long)]
@@ -87,9 +105,15 @@ enum Command {
         #[arg(long, conflicts_with = "server")]
         progress: Option<PathBuf>,
 
-        /// Remote sync-server URL. Defaults to the Haqor app's saved setting.
+        /// Remote sync-server URL; repeat it to try several addresses in order.
+        /// Defaults to the Haqor app's saved setting.
         #[arg(long, conflicts_with = "progress")]
-        server: Option<String>,
+        server: Vec<String>,
+
+        /// Certificate SHA-256 fingerprint for https:// servers. Defaults to the
+        /// Haqor app's saved fingerprint.
+        #[arg(long)]
+        pin: Option<String>,
 
         /// Sync token used with --server. Defaults to the Haqor app's saved token.
         #[arg(long)]
@@ -101,19 +125,28 @@ enum Command {
     },
 }
 
-fn remote_settings(server: Option<String>, token: Option<String>) -> Result<(String, String)> {
-    let saved = if server.is_some() && token.is_some() {
-        None
-    } else {
-        Some(haqor_admin::read_default_app_sync_settings()?)
-    };
-    let server = server
-        .or_else(|| saved.as_ref().map(|settings| settings.server_url.clone()))
-        .expect("saved settings provide a server URL");
-    let token = token
-        .or_else(|| saved.map(|settings| settings.token))
-        .expect("saved settings provide a token");
-    Ok((server, token))
+fn remote_settings(
+    server: Vec<String>,
+    pin: Option<String>,
+    token: Option<String>,
+) -> Result<haqor_admin::Remote> {
+    if let (false, Some(token)) = (server.is_empty(), &token) {
+        return Ok(haqor_admin::Remote {
+            servers: server,
+            pin,
+            token: token.clone(),
+        });
+    }
+    let saved = haqor_admin::read_default_app_sync_settings()?;
+    Ok(haqor_admin::Remote {
+        servers: if server.is_empty() {
+            saved.servers
+        } else {
+            server
+        },
+        pin: pin.or(saved.pin),
+        token: token.unwrap_or(saved.token),
+    })
 }
 
 fn main() -> Result<()> {
@@ -128,14 +161,15 @@ fn main() -> Result<()> {
         Command::Pull {
             progress,
             server,
+            pin,
             token,
             overlay,
         } => {
             let result = if let Some(progress) = progress {
                 haqor_admin::pull_gloss_overrides(&progress, &overlay)?
             } else {
-                let (server, token) = remote_settings(server, token)?;
-                haqor_admin::pull_gloss_overrides_from_server(&server, &token, &overlay)?
+                let remote = remote_settings(server, pin, token)?;
+                haqor_admin::pull_gloss_overrides_from_server(&remote, &overlay)?
             };
             println!(
                 "Merged {} mobile lexicon correction(s) into {} ({} new)",
@@ -145,23 +179,24 @@ fn main() -> Result<()> {
             );
             Ok(())
         }
-        Command::ClearInvalidGlosses { server, token } => {
-            let (server, token) = remote_settings(server, token)?;
-            let count = haqor_admin::clear_invalid_gloss_overrides_from_server(&server, &token)?;
+        Command::ClearInvalidGlosses { server, pin, token } => {
+            let remote = remote_settings(server, pin, token)?;
+            let count = haqor_admin::clear_invalid_gloss_overrides_from_server(&remote)?;
             println!("Cleared {count} invalid synced tutor gloss override(s).");
             Ok(())
         }
         Command::PullIssues {
             progress,
             server,
+            pin,
             token,
             output,
         } => {
             let count = if let Some(progress) = progress {
                 haqor_admin::pull_issue_reports(&progress, &output)?
             } else {
-                let (server, token) = remote_settings(server, token)?;
-                haqor_admin::pull_issue_reports_from_server(&server, &token, &output)?
+                let remote = remote_settings(server, pin, token)?;
+                haqor_admin::pull_issue_reports_from_server(&remote, &output)?
             };
             println!(
                 "Downloaded {count} app issue report(s) to {}",
@@ -172,14 +207,15 @@ fn main() -> Result<()> {
         Command::ReviewIssues {
             progress,
             server,
+            pin,
             token,
             output,
         } => {
             let count = if let Some(progress) = progress {
                 haqor_admin::review_issue_reports(&progress, &output)?
             } else {
-                let (server, token) = remote_settings(server, token)?;
-                haqor_admin::review_issue_reports_from_server(&server, &token, &output)?
+                let remote = remote_settings(server, pin, token)?;
+                haqor_admin::review_issue_reports_from_server(&remote, &output)?
             };
             println!("Resolved {count} app issue report(s).");
             Ok(())
