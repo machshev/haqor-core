@@ -57,33 +57,72 @@ CREATE TABLE greek_translation_verse(ref INTEGER PRIMARY KEY, text BLOB NOT NULL
 /// every verse the build stores, and to the TR's English word by word.
 pub(crate) const ECCLESIA: [(&str, &str); 2] = [("church", "ecclesia"), ("churches", "ecclesias")];
 
-/// `text` with each of `words` replaced where it stands as a whole word, a
-/// capital kept.
+/// The English Haqor gives כִּפֶּר and the words made from it in the Old
+/// Testament: what they say, a covering, not "atonement", a word made in
+/// English for the at-one-ment the covering brings. The כַּפֹּרֶת is the
+/// covering lid, not an "atonement lid", and יוֹם הַכִּפֻּרִים the Day of
+/// Covering. Longer phrases first: see [`replace_words`].
+pub(crate) const COVERING: [(&str, &str); 14] = [
+    ("an atonement lid", "a covering lid"),
+    ("atonement lid", "covering lid"),
+    ("make atonement", "make a covering"),
+    ("makes atonement", "makes a covering"),
+    ("made atonement", "made a covering"),
+    ("making atonement", "making a covering"),
+    ("atonement", "covering"),
+    ("atonements", "coverings"),
+    ("atone for", "make a covering for"),
+    ("atone", "make a covering"),
+    ("is atoned for", "is covered over"),
+    ("atoned for", "covered over"),
+    ("atoned", "covered"),
+    ("atoning", "covering"),
+];
+
+/// The same for the New Testament's English: ἱλάσκομαι is to propitiate
+/// (Hebrews 2:17), and the ἱλαστήριον is the covering lid of the ark
+/// (Hebrews 9:5), as in the Old.
+pub(crate) const PROPITIATION: [(&str, &str); 4] = [
+    ("atonement lid", "covering lid"),
+    ("make atonement", "make propitiation"),
+    ("atonement", "propitiation"),
+    ("atone", "propitiate"),
+];
+
+/// `text` with each of `words` replaced where it stands as a whole word, or
+/// a run of whole words a single space apart, a capital kept. The first of
+/// `words` to match at a place wins, so a phrase goes before its own words.
 pub(crate) fn replace_words(text: &str, words: &[(&str, &str)]) -> String {
     let mut out = String::new();
-    let mut word = String::new();
-    let flush = |word: &mut String, out: &mut String| {
-        let lower = word.to_lowercase();
-        match words.iter().find(|(old, _)| *old == lower) {
-            Some((_, new)) if word.starts_with(char::is_uppercase) => {
-                let mut chars = new.chars();
-                out.extend(chars.next().into_iter().flat_map(char::to_uppercase));
-                out.extend(chars);
-            }
-            Some((_, new)) => out.push_str(new),
-            None => out.push_str(word),
-        }
-        word.clear();
-    };
-    for c in text.chars() {
-        if c.is_ascii_alphabetic() {
-            word.push(c);
+    let mut rest = text;
+    let mut after_letter = false;
+    while let Some(c) = rest.chars().next() {
+        let found = if after_letter || !c.is_ascii_alphabetic() {
+            None
         } else {
-            flush(&mut word, &mut out);
-            out.push(c);
+            words.iter().find(|(old, _)| {
+                rest.get(..old.len())
+                    .is_some_and(|head| head.eq_ignore_ascii_case(old))
+                    && !rest[old.len()..].starts_with(|c: char| c.is_ascii_alphabetic())
+            })
+        };
+        match found {
+            Some((old, new)) => {
+                let mut chars = new.chars();
+                if c.is_uppercase() {
+                    out.extend(chars.next().into_iter().flat_map(char::to_uppercase));
+                }
+                out.extend(chars);
+                rest = &rest[old.len()..];
+                after_letter = true;
+            }
+            None => {
+                out.push(c);
+                rest = &rest[c.len_utf8()..];
+                after_letter = c.is_ascii_alphabetic();
+            }
         }
     }
-    flush(&mut word, &mut out);
     out
 }
 
@@ -1454,8 +1493,14 @@ pub fn build_translation(
     }
     build.peshitta = verses.len() - before;
     build.peshitta_missing = peshitta.len() - build.peshitta;
-    for (_, english) in verses.iter_mut().chain(greek.iter_mut()) {
-        *english = replace_words(english, &ECCLESIA);
+    let new_testament = pack_ref(40, 0, 0);
+    for (reference, english) in verses.iter_mut().chain(greek.iter_mut()) {
+        let covering: &[_] = if *reference < new_testament {
+            &COVERING
+        } else {
+            &PROPITIATION
+        };
+        *english = replace_words(&replace_words(english, &ECCLESIA), covering);
     }
     build.bytes = write_verses(
         &tx,
@@ -1755,6 +1800,26 @@ mod tests {
                 &ECCLESIA
             ),
             "Ecclesia [the ecclesia|6,5] [of the ecclesias|3]; churchyard"
+        );
+    }
+
+    #[test]
+    fn calls_atonement_a_covering() {
+        assert_eq!(
+            replace_words(
+                "[make atonement|3] {[for|4]} [the atonement lid|5]; [an atonement lid|6] \
+                 on [the Day of] [Atonement|7]. Atonement [is atoned for|8]; atonementx",
+                &COVERING
+            ),
+            "[make a covering|3] {[for|4]} [the covering lid|5]; [a covering lid|6] \
+             on [the Day of] [Covering|7]. Covering [is covered over|8]; atonementx"
+        );
+        assert_eq!(
+            replace_words(
+                "[to make atonement|5] {for} [the atonement lid|6]",
+                &PROPITIATION
+            ),
+            "[to make propitiation|5] {for} [the covering lid|6]"
         );
     }
 
