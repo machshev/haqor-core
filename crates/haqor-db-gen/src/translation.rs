@@ -89,6 +89,78 @@ pub(crate) const PROPITIATION: [(&str, &str); 4] = [
     ("atone", "propitiate"),
 ];
 
+/// A word's place in a verse and its new English: see [`IMPERSONAL`].
+type Occurrence = (&'static str, usize, &'static str);
+
+/// The New Testament's English for the Spirit and the Word, by verse (book,
+/// chapter, verse), as each word's place in the verse: (word, which time it
+/// stands there as a whole word, counting from 1, its English). The ULT
+/// makes them persons; the Greek does not. πνεῦμα is neuter, and so are the
+/// pronouns that stand for it (ὅ, αὐτό, αὐτὸ τὸ πνεῦμα: "which", "it",
+/// "itself"). Where John calls it the παράκλητος, a masculine noun, the
+/// pronouns agree with that noun, and ἐκεῖνος is "that one", not "he". The
+/// λόγος of John 1:2-4 is "this one" (οὗτος) and "it", as Tyndale has it,
+/// until it becomes flesh (John 1:14). A verse the ULT words differently
+/// fails the build rather than going unchanged.
+#[rustfmt::skip]
+const IMPERSONAL: [(i64, i64, i64, &[Occurrence]); 22] = [
+    (43, 1, 2, &[("He", 1, "This one")]),
+    (43, 1, 3, &[("him", 1, "it"), ("him", 2, "it")]),
+    (43, 1, 4, &[("him", 1, "it")]),
+    (43, 7, 39, &[("whom", 1, "which")]),
+    (43, 14, 16, &[("he", 2, "it")]),
+    (43, 14, 17, &[("whom", 1, "which"), ("him", 1, "it"), ("him", 2, "it"), ("him", 3, "it"),
+                   ("he", 1, "it")]),
+    (43, 14, 26, &[("whom", 1, "which"), ("he", 1, "that one"), ("he", 2, "it")]),
+    (43, 15, 26, &[("whom", 1, "which"), ("who", 1, "which"), ("he", 1, "that one")]),
+    (43, 16, 7, &[("him", 1, "it")]),
+    (43, 16, 13, &[("he", 1, "it"), ("he", 2, "it"), ("himself", 1, "itself"), ("he", 3, "it"),
+                   ("he", 4, "it"), ("he", 5, "it")]),
+    (43, 16, 14, &[("he", 1, "it"), ("he", 2, "it")]),
+    (43, 16, 15, &[("he", 1, "it"), ("he", 2, "it")]),
+    (44, 5, 32, &[("whom", 1, "which")]),
+    (44, 6, 10, &[("whom", 1, "which")]),
+    (45, 8, 16, &[("himself", 1, "itself")]),
+    (45, 8, 26, &[("himself", 1, "itself")]),
+    (45, 8, 27, &[("he", 1, "it")]),
+    (46, 6, 19, &[("whom", 1, "which")]),
+    (46, 12, 11, &[("he", 1, "it")]),
+    (49, 4, 30, &[("whom", 1, "which")]),
+    (59, 4, 5, &[("whom", 1, "which")]),
+    (62, 3, 24, &[("whom", 1, "which")]),
+];
+
+/// `text` with the nth whole-word occurrence of each of `words` (word, n
+/// from 1, replacement) replaced, all counted in `text` as given. An error
+/// if one is not there.
+fn replace_occurrences(text: &str, words: &[Occurrence]) -> Result<String> {
+    let mut found: Vec<(usize, usize, &str)> = Vec::new();
+    for &(word, nth, new) in words {
+        let start = text
+            .match_indices(word)
+            .map(|(i, _)| i)
+            .filter(|&i| {
+                let before = text[..i].chars().next_back();
+                let after = text[i + word.len()..].chars().next();
+                !before.is_some_and(|c| c.is_ascii_alphabetic())
+                    && !after.is_some_and(|c| c.is_ascii_alphabetic())
+            })
+            .nth(nth - 1)
+            .with_context(|| format!("no \"{word}\" {nth} times"))?;
+        found.push((start, start + word.len(), new));
+    }
+    found.sort();
+    let mut out = String::new();
+    let mut from = 0;
+    for (start, end, new) in found {
+        out.push_str(&text[from..start]);
+        out.push_str(new);
+        from = end;
+    }
+    out.push_str(&text[from..]);
+    Ok(out)
+}
+
 /// `text` with each of `words` replaced where it stands as a whole word, or
 /// a run of whole words a single space apart, a capital kept. The first of
 /// `words` to match at a place wins, so a phrase goes before its own words.
@@ -1502,6 +1574,14 @@ pub fn build_translation(
         };
         *english = replace_words(&replace_words(english, &ECCLESIA), covering);
     }
+    for &(book, chapter, verse, words) in &IMPERSONAL {
+        let reference = pack_ref(book, chapter, verse);
+        let Some((_, english)) = greek.iter_mut().find(|(r, _)| *r == reference) else {
+            bail!("{book} {chapter}:{verse}: no English for the TR to give the Spirit's pronouns");
+        };
+        *english = replace_occurrences(english, words)
+            .with_context(|| format!("the Spirit's pronouns in {book} {chapter}:{verse}"))?;
+    }
     build.bytes = write_verses(
         &tx,
         &[
@@ -1801,6 +1881,23 @@ mod tests {
             ),
             "Ecclesia [the ecclesia|6,5] [of the ecclesias|3]; churchyard"
         );
+    }
+
+    #[test]
+    fn replaces_the_nth_word() {
+        assert_eq!(
+            replace_occurrences(
+                "[he will give|3] [the] [he] [himself|4], [whom] he",
+                &[
+                    ("he", 3, "it"),
+                    ("he", 2, "that one"),
+                    ("himself", 1, "itself")
+                ]
+            )
+            .unwrap(),
+            "[he will give|3] [the] [that one] [itself|4], [whom] it"
+        );
+        assert!(replace_occurrences("[the] [Spirit]", &[("him", 1, "it")]).is_err());
     }
 
     #[test]
