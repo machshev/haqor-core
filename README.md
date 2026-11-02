@@ -210,7 +210,11 @@ an English verse is divided by the TR verses its words render (Philippians
 1:16–17 come in the other order). Where the TR reads otherwise, its words go
 without English, and English rendering a word the TR lacks renders nothing;
 the 94 verses where the TR has six or more words without English (the
-doxology of Matthew 6:13 and the Comma Johanneum among them) are given Haqor's own English in `data/tr_translation_supplement.tsv`,
+doxology of Matthew 6:13 and the Comma Johanneum among them), and nine
+shorter ones where the ULT's English would say what the TR does not (John
+1:18's "Son", 1 Timothy 3:16's "God", the "Get behind me" of Luke 4:8,
+the grave of 1 Corinthians 15:55), are
+given Haqor's own English in `data/tr_translation_supplement.tsv`,
 written in the ULT's style and linked to the TR's words. 177,406 of
 181,182 English words link to a word of the TR.
 `Bible::greek_chapter_translation` reads a chapter.
@@ -229,6 +233,18 @@ particular words.
 In all the English, the ULT's, the TR's word by word and Murdock's, ἐκκλησία is
 the "ecclesia" (plural "ecclesias") and never the "church"
 (`translation::ECCLESIA`), replaced as the tables are built.
+
+The English is also made literal where translations commonly read doctrine
+into a word, as the tables are built, each by verse so that a change in the
+source fails the build rather than going unnoticed. σατανᾶς and Murdock's
+Syriac ܣܛܢܐ are "the adversary", with an article only where the Greek has
+one ("an adversary" in Mark 3:23, none in address), and διάβολος and the
+Syriac ܐܟܠܩܪܨܐ (Murdock's "Calumniator") are "the false accuser"
+(`translation::ADVERSARY`, `translation::MURDOCK`); γέεννα and Murdock's
+"hell" for ܓܗܢܐ are "the valley of Hinnom" (`translation::HINNOM`); שְׁאוֹל
+and ᾅδης are "the grave" (`translation::SHEOL`, `translation::HADES`), as
+Murdock has ܫܝܘܠ; and נֶפֶשׁ
+חַיָּה is "a living soul", man and animal alike (`translation::HEBREW`).
 
 ### People, places and word senses
 

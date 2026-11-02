@@ -89,8 +89,243 @@ pub(crate) const PROPITIATION: [(&str, &str); 4] = [
     ("atone", "propitiate"),
 ];
 
+/// The English Haqor gives שְׁאוֹל in the Old Testament: the grave, the one
+/// place all the dead go down to, which Hebrew names without an article as it
+/// names a place. Where the Hebrew sets a word before it ("the lowest Sheol")
+/// or calls to it, [`HEBREW`] has "grave" alone first. A name no longer, it
+/// takes a capital only to begin a sentence: see [`replace_name`].
+pub(crate) const SHEOL: (&str, &str) = ("Sheol", "the grave");
+
+/// The same for ᾅδης in the New Testament, the Greek's word for שְׁאוֹל
+/// since the Septuagint: "you will not abandon my soul to Hades" (Acts 2:27)
+/// is Psalm 16:10's "to Sheol", and Murdock has the Peshitta's ܫܝܘܠ as the
+/// grave throughout.
+pub(crate) const HADES: (&str, &str) = ("Hades", "the grave");
+
 /// A word's place in a verse and its new English: see [`IMPERSONAL`].
 type Occurrence = (&'static str, usize, &'static str);
+
+/// A verse (book, chapter, verse) and the words to change in it: see
+/// [`by_verse`].
+type ByVerse = (i64, i64, i64, &'static [Occurrence]);
+
+/// The Old Testament's English made literal, by verse. נֶפֶשׁ חַיָּה, a
+/// living soul, is what the man became (Genesis 2:7) and what every animal
+/// is (Genesis 1:20-30, 9:10-16): the ULT makes the one a "living being" and
+/// the others "living creatures", hiding that the Hebrew says the same of
+/// both. שָׂטָן has no article in 1 Chronicles 21:1, "an adversary", not
+/// "the adversary"; and the שְׂעִירִם of Leviticus 17:7 are goats, as the
+/// ULT has them in 2 Chronicles 11:15, not "goat demons". The rest set
+/// [`SHEOL`]'s grave where "the grave" will not do.
+#[rustfmt::skip]
+const HEBREW: &[ByVerse] = &[
+    (1, 1, 20, &[("creature", 1, "soul")]),
+    (1, 1, 21, &[("creature", 1, "soul")]),
+    (1, 1, 24, &[("creature", 1, "soul")]),
+    (1, 1, 30, &[("has", 1, "has a"), ("breath", 1, "soul")]),
+    (1, 2, 7, &[("being", 1, "soul")]),
+    (1, 2, 19, &[("creature", 1, "soul")]),
+    (1, 9, 10, &[("creature", 1, "soul")]),
+    (1, 9, 12, &[("creature", 1, "soul")]),
+    (1, 9, 15, &[("creature", 1, "soul")]),
+    (1, 9, 16, &[("creature", 1, "soul")]),
+    (3, 11, 10, &[("life", 1, "soul")]),
+    (3, 11, 46, &[("life", 1, "soul")]),
+    (14, 47, 9, &[("creature", 1, "soul")]),
+    (38, 21, 1, &[("the adversary", 1, "an adversary")]),
+    (3, 17, 7, &[("goat demons", 1, "goats")]),
+    (5, 32, 22, &[("Sheol", 1, "grave")]),
+    (15, 13, 14, &[("Sheol", 2, "grave")]),
+    (27, 86, 13, &[("lowest", 1, "the lowest"), ("Sheol", 1, "grave")]),
+];
+
+/// The New Testament's English for σατανᾶς and διάβολος, by verse: what the
+/// words say, an adversary and a false accuser, not the name of a being. The
+/// article goes where the TR has one (ὁ σατανᾶς, "the adversary") and nowhere
+/// else: "How is an adversary able to cast out an adversary?" (Mark 3:23),
+/// "a messenger of an adversary" (2 Corinthians 12:7), and none in address,
+/// "Get behind me, adversary!" The women and men who are διάβολοι (1 Timothy
+/// 3:11, 2 Timothy 3:3, Titus 2:3) are false accusers too. Luke 4:5 and 4:8,
+/// which the ULT's critical text lacks the words for, are in [`SUPPLEMENT`].
+#[rustfmt::skip]
+const ADVERSARY: &[ByVerse] = &[
+    (40, 4, 1, &[("devil", 1, "false accuser")]),
+    (40, 4, 5, &[("devil", 1, "false accuser")]),
+    (40, 4, 8, &[("devil", 1, "false accuser")]),
+    (40, 4, 10, &[("Satan", 1, "adversary")]),
+    (40, 4, 11, &[("devil", 1, "false accuser")]),
+    (40, 12, 26, &[("Satan", 1, "the adversary"), ("Satan", 2, "the adversary")]),
+    (40, 13, 39, &[("devil", 1, "false accuser")]),
+    (40, 16, 23, &[("Satan", 1, "adversary")]),
+    (40, 25, 41, &[("devil", 1, "false accuser")]),
+    (41, 1, 13, &[("Satan", 1, "the adversary")]),
+    (41, 3, 23, &[("Satan", 1, "an adversary"), ("Satan", 2, "an adversary")]),
+    (41, 3, 26, &[("Satan", 1, "the adversary")]),
+    (41, 4, 15, &[("Satan", 1, "the adversary")]),
+    (41, 8, 33, &[("Satan", 1, "adversary")]),
+    (42, 4, 2, &[("devil", 1, "false accuser")]),
+    (42, 4, 3, &[("devil", 1, "false accuser")]),
+    (42, 4, 6, &[("devil", 1, "false accuser")]),
+    (42, 4, 13, &[("devil", 1, "false accuser")]),
+    (42, 8, 12, &[("devil", 1, "false accuser")]),
+    (42, 10, 18, &[("Satan", 1, "the adversary")]),
+    (42, 11, 18, &[("Satan", 1, "the adversary")]),
+    (42, 13, 16, &[("Satan", 1, "the adversary")]),
+    (42, 22, 3, &[("Satan", 1, "the adversary")]),
+    (42, 22, 31, &[("Satan", 1, "the adversary")]),
+    (43, 6, 70, &[("devil", 1, "false accuser")]),
+    (43, 8, 44, &[("devil", 1, "false accuser")]),
+    (43, 13, 2, &[("devil", 1, "false accuser")]),
+    (43, 13, 27, &[("Satan", 1, "the adversary")]),
+    (44, 5, 3, &[("Satan", 1, "the adversary")]),
+    (44, 10, 38, &[("devil", 1, "false accuser")]),
+    (44, 13, 10, &[("the devil", 1, "a false accuser")]),
+    (44, 26, 18, &[("Satan", 1, "the adversary")]),
+    (45, 16, 20, &[("Satan", 1, "the adversary")]),
+    (46, 5, 5, &[("Satan", 1, "the adversary")]),
+    (46, 7, 5, &[("Satan", 1, "the adversary")]),
+    (47, 2, 11, &[("Satan", 1, "the adversary")]),
+    (47, 11, 14, &[("Satan", 1, "the adversary")]),
+    (47, 12, 7, &[("Satan", 1, "an adversary")]),
+    (49, 4, 27, &[("devil", 1, "false accuser")]),
+    (49, 6, 11, &[("devil", 1, "false accuser")]),
+    (52, 2, 18, &[("Satan", 1, "the adversary")]),
+    (53, 2, 9, &[("Satan", 1, "the adversary")]),
+    (54, 1, 20, &[("Satan", 1, "the adversary")]),
+    (54, 3, 6, &[("devil", 1, "false accuser")]),
+    (54, 3, 7, &[("devil", 1, "false accuser")]),
+    (54, 3, 11, &[("slanderers", 1, "false accusers")]),
+    (54, 5, 15, &[("Satan", 1, "the adversary")]),
+    (55, 2, 26, &[("devil", 1, "false accuser")]),
+    (55, 3, 3, &[("slanderous", 1, "false accusers")]),
+    (56, 2, 3, &[("slanderers", 1, "false accusers")]),
+    (58, 2, 14, &[("devil", 1, "false accuser")]),
+    (59, 4, 7, &[("devil", 1, "false accuser")]),
+    (60, 5, 8, &[("the devil", 1, "a false accuser")]),
+    (62, 3, 8, &[("devil", 1, "false accuser"), ("devil", 2, "false accuser"),
+                 ("devil", 3, "false accuser")]),
+    (62, 3, 10, &[("devil", 1, "false accuser")]),
+    (65, 1, 9, &[("devil", 1, "false accuser")]),
+    (66, 2, 9, &[("Satan", 1, "the adversary")]),
+    (66, 2, 10, &[("devil", 1, "false accuser")]),
+    (66, 2, 13, &[("Satan", 1, "the adversary"), ("Satan", 2, "the adversary")]),
+    (66, 2, 24, &[("Satan", 1, "the adversary")]),
+    (66, 3, 9, &[("Satan", 1, "the adversary")]),
+    (66, 12, 9, &[("Diabolos", 1, "a false accuser"), ("Satan", 1, "the adversary")]),
+    (66, 12, 12, &[("devil", 1, "false accuser")]),
+    (66, 20, 2, &[("the devil", 1, "a false accuser"), ("Satan", 1, "an adversary")]),
+    (66, 20, 7, &[("Satan", 1, "the adversary")]),
+    (66, 20, 10, &[("devil", 1, "false accuser")]),
+];
+
+/// The New Testament's English for γέεννα, by verse: the valley of Hinnom
+/// outside Jerusalem, whose Hebrew name (גֵּי הִנֹּם) the Greek spells, and
+/// where the Old Testament's English names it, not the "Gehenna" of a
+/// place apart. "The" goes before it as before any valley's name, unless the
+/// ULT has one there already (Matthew 5:22, 18:9).
+#[rustfmt::skip]
+const HINNOM: &[ByVerse] = &[
+    (40, 5, 22, &[("Gehenna", 1, "valley of Hinnom")]),
+    (40, 5, 29, &[("Gehenna", 1, "the valley of Hinnom")]),
+    (40, 5, 30, &[("Gehenna", 1, "the valley of Hinnom")]),
+    (40, 10, 28, &[("Gehenna", 1, "the valley of Hinnom")]),
+    (40, 18, 9, &[("Gehenna", 1, "valley of Hinnom")]),
+    (40, 23, 15, &[("Gehenna", 1, "the valley of Hinnom")]),
+    (40, 23, 33, &[("Gehenna", 1, "the valley of Hinnom")]),
+    (41, 9, 43, &[("Gehenna", 1, "the valley of Hinnom")]),
+    (41, 9, 45, &[("Gehenna", 1, "the valley of Hinnom")]),
+    (41, 9, 47, &[("Gehenna", 1, "the valley of Hinnom")]),
+    (42, 12, 5, &[("Gehenna", 1, "the valley of Hinnom")]),
+    (59, 3, 6, &[("Gehenna", 1, "the valley of Hinnom")]),
+];
+
+/// Murdock's English made literal, by verse, as [`ADVERSARY`] and [`HINNOM`]
+/// make the ULT's. The Syriac's ܣܛܢܐ is the adversary, as σατανᾶς is (and
+/// stands for διάβολος too, John 6:70, where Murdock has "a devil"); its
+/// ܐܟܠܩܪܨܐ, Murdock's "Calumniator", "Deceiver" and "Accuser", is the false
+/// accuser. Syriac has no article, so each takes the Greek's. His "hell" is
+/// ܓܗܢܐ, the valley of Hinnom, but for ܫܝܘܠ in Luke 10:15 and 16:23, which
+/// is the grave, as he has it elsewhere.
+#[rustfmt::skip]
+const MURDOCK: &[ByVerse] = &[
+    (40, 4, 1, &[("Calumniator", 1, "false accuser")]),
+    (40, 4, 5, &[("Calumniator", 1, "false accuser")]),
+    (40, 4, 8, &[("Calumniator", 1, "false accuser")]),
+    (40, 4, 10, &[("Satan", 1, "adversary")]),
+    (40, 4, 11, &[("Calumniator", 1, "false accuser")]),
+    (40, 5, 22, &[("hell-fire", 1, "the valley of Hinnom of fire")]),
+    (40, 5, 29, &[("hell", 1, "the valley of Hinnom")]),
+    (40, 5, 30, &[("hell", 1, "the valley of Hinnom")]),
+    (40, 10, 28, &[("hell", 1, "the valley of Hinnom")]),
+    (40, 12, 26, &[("Satan", 1, "the adversary"), ("Satan", 2, "the adversary")]),
+    (40, 13, 39, &[("Satan", 1, "the adversary")]),
+    (40, 16, 23, &[("Satan", 1, "adversary")]),
+    (40, 18, 9, &[("hell", 1, "valley of Hinnom")]),
+    (40, 23, 15, &[("hell", 1, "the valley of Hinnom")]),
+    (40, 23, 33, &[("hell", 1, "the valley of Hinnom")]),
+    (40, 25, 41, &[("Calumniator", 1, "false accuser")]),
+    (41, 1, 13, &[("Satan", 1, "the adversary")]),
+    (41, 3, 23, &[("Satan", 1, "an adversary"), ("Satan", 2, "an adversary")]),
+    (41, 3, 26, &[("Satan", 1, "the adversary")]),
+    (41, 4, 15, &[("Satan", 1, "the adversary")]),
+    (41, 8, 33, &[("Satan", 1, "adversary")]),
+    (41, 9, 43, &[("hell", 1, "the valley of Hinnom")]),
+    (41, 9, 45, &[("hell", 1, "the valley of Hinnom")]),
+    (41, 9, 47, &[("hell", 1, "valley of Hinnom")]),
+    (42, 4, 2, &[("Calumniator", 1, "false accuser")]),
+    (42, 4, 3, &[("Calumniator", 1, "false accuser")]),
+    (42, 4, 5, &[("Satan", 1, "the adversary")]),
+    (42, 4, 6, &[("Calumniator", 1, "false accuser")]),
+    (42, 4, 13, &[("Calumniator", 1, "false accuser")]),
+    (42, 10, 15, &[("hell", 1, "the grave")]),
+    (42, 10, 18, &[("Satan", 1, "the adversary")]),
+    (42, 11, 18, &[("Satan", 1, "the adversary")]),
+    (42, 12, 5, &[("hell", 1, "the valley of Hinnom")]),
+    (42, 13, 16, &[("Calumniator", 1, "false accuser")]),
+    (42, 16, 23, &[("hell", 1, "the grave")]),
+    (42, 22, 3, &[("Satan", 1, "the adversary")]),
+    (42, 22, 31, &[("Satan", 1, "the adversary")]),
+    (43, 6, 70, &[("a devil", 1, "an adversary")]),
+    (43, 8, 44, &[("calumniator", 1, "false accuser")]),
+    (43, 13, 2, &[("Satan", 1, "the adversary")]),
+    (43, 13, 27, &[("Satan", 1, "the adversary")]),
+    (44, 5, 3, &[("Satan", 1, "the adversary")]),
+    (44, 13, 10, &[("the calumniator", 1, "a false accuser")]),
+    (44, 26, 18, &[("Satan", 1, "the adversary")]),
+    (45, 16, 20, &[("Satan", 1, "the adversary")]),
+    (46, 5, 5, &[("Satan", 1, "the adversary")]),
+    (46, 7, 5, &[("Satan", 1, "the adversary")]),
+    (47, 2, 11, &[("Satan", 1, "the adversary")]),
+    (47, 6, 15, &[("Satan", 1, "an adversary")]),
+    (47, 11, 14, &[("Satan", 1, "the adversary")]),
+    (47, 12, 7, &[("Satan", 1, "an adversary")]),
+    (49, 4, 27, &[("Accuser", 1, "false accuser")]),
+    (49, 6, 11, &[("Accuser", 1, "false accuser")]),
+    (52, 2, 18, &[("Satan", 1, "the adversary")]),
+    (53, 2, 9, &[("Satan", 1, "the adversary")]),
+    (54, 1, 20, &[("Satan", 1, "the adversary")]),
+    (54, 3, 6, &[("Satan", 1, "the adversary")]),
+    (54, 3, 7, &[("Satan", 1, "the adversary")]),
+    (54, 5, 15, &[("Satan", 1, "the adversary")]),
+    (55, 2, 26, &[("Satan", 1, "the adversary")]),
+    (58, 2, 14, &[("Satan", 1, "the adversary")]),
+    (59, 4, 7, &[("Satan", 1, "the adversary")]),
+    (60, 5, 8, &[("Satan your adversary", 1, "an adversary, your opponent")]),
+    (62, 3, 8, &[("Satan", 1, "the adversary"), ("Satan", 2, "the adversary"),
+                 ("Satan", 3, "the adversary")]),
+    (62, 3, 10, &[("Satan", 1, "the adversary")]),
+    (65, 1, 9, &[("Accuser", 1, "false accuser")]),
+    (66, 2, 9, &[("Satan", 1, "the adversary")]),
+    (66, 2, 10, &[("Accuser", 1, "false accuser")]),
+    (66, 2, 13, &[("Satan", 1, "the adversary"), ("Satan", 2, "the adversary")]),
+    (66, 2, 24, &[("Satan", 1, "the adversary")]),
+    (66, 3, 9, &[("Satan", 1, "the adversary")]),
+    (66, 12, 9, &[("the Deceiver", 1, "a false accuser"), ("Satan", 1, "the adversary")]),
+    (66, 12, 12, &[("Deceiver", 1, "false accuser")]),
+    (66, 20, 2, &[("the Deceiver", 1, "a false accuser"), ("Satan", 1, "an adversary")]),
+    (66, 20, 7, &[("Satan", 1, "the adversary")]),
+    (66, 20, 10, &[("Accuser", 1, "false accuser")]),
+];
 
 /// The New Testament's English for the Spirit and the Word, by verse (book,
 /// chapter, verse), as each word's place in the verse: (word, which time it
@@ -159,6 +394,84 @@ fn replace_occurrences(text: &str, words: &[Occurrence]) -> Result<String> {
     }
     out.push_str(&text[from..]);
     Ok(out)
+}
+
+/// Each of `table`'s verses among `verses` with its words replaced (see
+/// [`replace_occurrences`]). A verse missing, or worded otherwise than the
+/// table expects, fails the build rather than going unchanged.
+fn by_verse(verses: &mut [(i64, String)], table: &[ByVerse], what: &str) -> Result<()> {
+    for &(book, chapter, verse, words) in table {
+        let reference = pack_ref(book, chapter, verse);
+        let Some((_, english)) = verses.iter_mut().find(|(r, _)| *r == reference) else {
+            bail!("{book} {chapter}:{verse}: no verse for {what}");
+        };
+        *english = replace_occurrences(english, words)
+            .with_context(|| format!("{what} in {book} {chapter}:{verse}"))?;
+    }
+    Ok(())
+}
+
+/// `text` with `name` replaced by a common noun where it stands as a whole
+/// word: `new` as given, capitalised only where a sentence begins, which is
+/// to say at the start of the verse or after a full stop, question mark,
+/// exclamation mark or opening quotation mark, the stored form's brackets and
+/// links passed over.
+pub(crate) fn replace_name(text: &str, (name, new): (&str, &str)) -> String {
+    let mut out = String::new();
+    let mut from = 0;
+    for (start, _) in text.match_indices(name) {
+        let end = start + name.len();
+        let whole = !text[..start]
+            .chars()
+            .next_back()
+            .is_some_and(|c| c.is_ascii_alphabetic())
+            && !text[end..]
+                .chars()
+                .next()
+                .is_some_and(|c| c.is_ascii_alphabetic());
+        if !whole {
+            continue;
+        }
+        out.push_str(&text[from..start]);
+        if begins_sentence(&text[..start]) {
+            let mut chars = new.chars();
+            out.extend(chars.next().into_iter().flat_map(char::to_uppercase));
+            out.push_str(chars.as_str());
+        } else {
+            out.push_str(new);
+        }
+        from = end;
+    }
+    out.push_str(&text[from..]);
+    out
+}
+
+/// Whether the stored English `before` ends where a sentence begins: see
+/// [`replace_name`].
+fn begins_sentence(before: &str) -> bool {
+    let mut chars = before.chars().rev().peekable();
+    while let Some(c) = chars.next() {
+        match c {
+            // A span's links, `|3,4]`, back to the bar, if it has any.
+            ']' => {
+                let mut links = chars.clone();
+                while let Some(c) = links.next() {
+                    match c {
+                        '|' => {
+                            chars = links;
+                            break;
+                        }
+                        '[' => break,
+                        _ => {}
+                    }
+                }
+            }
+            '[' | '{' | '}' => {}
+            c if c.is_whitespace() => {}
+            c => return matches!(c, '.' | '?' | '!' | '“' | '‘'),
+        }
+    }
+    true
 }
 
 /// `text` with each of `words` replaced where it stands as a whole word, or
@@ -1565,23 +1878,20 @@ pub fn build_translation(
     }
     build.peshitta = verses.len() - before;
     build.peshitta_missing = peshitta.len() - build.peshitta;
+    by_verse(&mut verses, HEBREW, "the Hebrew's English")?;
+    by_verse(&mut verses, MURDOCK, "Murdock's English")?;
+    by_verse(&mut greek, ADVERSARY, "the TR's English")?;
+    by_verse(&mut greek, HINNOM, "the TR's English")?;
     let new_testament = pack_ref(40, 0, 0);
     for (reference, english) in verses.iter_mut().chain(greek.iter_mut()) {
-        let covering: &[_] = if *reference < new_testament {
-            &COVERING
+        let ecclesia = replace_words(english, &ECCLESIA);
+        *english = if *reference < new_testament {
+            replace_name(&replace_words(&ecclesia, &COVERING), SHEOL)
         } else {
-            &PROPITIATION
+            replace_name(&replace_words(&ecclesia, &PROPITIATION), HADES)
         };
-        *english = replace_words(&replace_words(english, &ECCLESIA), covering);
     }
-    for &(book, chapter, verse, words) in &IMPERSONAL {
-        let reference = pack_ref(book, chapter, verse);
-        let Some((_, english)) = greek.iter_mut().find(|(r, _)| *r == reference) else {
-            bail!("{book} {chapter}:{verse}: no English for the TR to give the Spirit's pronouns");
-        };
-        *english = replace_occurrences(english, words)
-            .with_context(|| format!("the Spirit's pronouns in {book} {chapter}:{verse}"))?;
-    }
+    by_verse(&mut greek, &IMPERSONAL, "the Spirit's pronouns")?;
     build.bytes = write_verses(
         &tx,
         &[
@@ -1898,6 +2208,37 @@ mod tests {
             "[he will give|3] [the] [that one] [itself|4], [whom] it"
         );
         assert!(replace_occurrences("[the] [Spirit]", &[("him", 1, "it")]).is_err());
+    }
+
+    #[test]
+    fn calls_sheol_the_grave() {
+        assert_eq!(
+            replace_name(
+                "[my soul|5] [to Sheol|6]. [Sheol|7] [trembles|8]; “{[Sheol|9]}, [the] \
+                 Sheol, [Sheolx|10]",
+                SHEOL
+            ),
+            "[my soul|5] [to the grave|6]. [The grave|7] [trembles|8]; “{[The grave|9]}, \
+             [the] the grave, [Sheolx|10]"
+        );
+        assert_eq!(
+            replace_name("Sheol [is|1] [deep]", SHEOL),
+            "The grave [is|1] [deep]"
+        );
+        assert_eq!(
+            replace_name("[In the] Sheol [Sheol|2]", SHEOL),
+            "[In the] the grave [the grave|2]"
+        );
+    }
+
+    #[test]
+    fn makes_verses_literal_by_verse() {
+        let table: &[ByVerse] = &[(40, 4, 10, &[("Satan", 1, "adversary")])];
+        let mut verses = vec![(pack_ref(40, 4, 10), "[Go away|5], [Satan|6]!".to_string())];
+        by_verse(&mut verses, table, "test").unwrap();
+        assert_eq!(verses[0].1, "[Go away|5], [adversary|6]!");
+        assert!(by_verse(&mut verses, table, "test").is_err());
+        assert!(by_verse(&mut [], table, "test").is_err());
     }
 
     #[test]
