@@ -11,9 +11,9 @@ Each sequence has:
 - `id`, unique, and a `title`.
 - `note`, saying what it orders and how; shown above the graph.
 - `expands` (optional), the title of the event whose inside it tells, such as
-  `Holy Week`. Where that event is drawn, it opens the sequence. A sequence
-  that expands none stands on the Bible's timeline for itself, spanning the
-  years of its events, which are taken off the timeline.
+  `The Last Week of the Ministry`. Where that event is drawn, it opens the
+  sequence. A sequence that expands none stands on the Bible's timeline for
+  itself, spanning the years of its events, which are taken off the timeline.
 - `chains`, each a `basis` and a list of event titles (as `bible_event` has
   them, after `event_overrides.json`) in the order the basis puts them: each
   event before the next. A basis is a witness — `Mark's order` — or a verse

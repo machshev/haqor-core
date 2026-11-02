@@ -7526,7 +7526,7 @@ mod tests {
         assert_eq!(wine.kinds, ["sign"]);
         assert_eq!(wine.region, "galilee");
         assert_eq!(wine.places[0].label, "Cana");
-        // Holy Week opens its own sequence, whose events the ministry leaves
+        // The last week of the ministry opens its own sequence, whose events the ministry leaves
         // out.
         let week = sequences.iter().find(|s| s.key == "holy-week").unwrap();
         // Judas died before Jesus came to Pilate on Robertson's word alone.
@@ -7537,7 +7537,7 @@ mod tests {
             .find(|e| e.before == suicide && e.after == pilate)
             .unwrap();
         assert_eq!(edge.bases, ["Robertson's harmony (1922)"]);
-        assert_eq!(week.expands, Some(id("Holy Week")));
+        assert_eq!(week.expands, Some(id("The Last Week of the Ministry")));
         // Grouped by Robertson's parts and by the days Mark marks.
         let keys: Vec<_> = week.groupings.iter().map(|g| g.key.as_str()).collect();
         assert_eq!(keys, ["robertson", "days"]);
@@ -7547,7 +7547,11 @@ mod tests {
             .find(|m| m.feast == "matzot")
             .unwrap();
         assert_eq!(supper.event, id("The Last Supper"));
-        assert!(ministry.events.contains(&id("Holy Week")));
+        assert!(
+            ministry
+                .events
+                .contains(&id("The Last Week of the Ministry"))
+        );
         assert!(week.events.contains(&id("The Last Supper")));
         assert!(!ministry.events.contains(&id("The Last Supper")));
         assert!(
