@@ -70,6 +70,21 @@ Each entry of `entries` has:
   `passages`.
 - `related`, other entries' ids.
 
-A build is to fail, naming every fault, on a passage that cannot be read
-or is outside the corpus, an unknown subject, kind, work or related
-entry, a repeated id, or a `quote` from a work under copyright.
+## Building
+
+`db gen-apologetics` (or `db gen-runtime`) builds the file into
+`haqor.db`: `apologetic_subject`, `apologetic` (each entry, its points,
+objections and related entries as JSON in `detail`) and
+`apologetic_passage`, the passages the reader marks, renumbered onto the
+Hebrew text as `prophecies.json`'s are. After an edit, rebuild with
+`cargo run --release -- db gen-apologetics` and sync the database to the
+app with its `tool/sync-dbs.sh`.
+
+The reader marks a verse where one of an entry's `passages` starts (or
+the first verse of a chapter one runs into), and lists the entries with
+a passage in a chapter in its chapter context.
+
+A build fails, naming every fault, on a passage that cannot be read or
+is outside the corpus, an entry with no passages, an unknown subject,
+kind, work, licence or related entry, a repeated id, or a `quote` from a
+work under copyright.
