@@ -1,0 +1,490 @@
+{
+  "subjects": [
+    { "id": "resurrection", "title": "The resurrection of Jesus", "note": "The evidence that Jesus rose from the dead." },
+    { "id": "records", "title": "The records", "note": "The evidence that the New Testament records what the witnesses saw." },
+    { "id": "god", "title": "God and his Son", "note": "One God, the Father, and Jesus his Son, born of Mary." },
+    { "id": "death", "title": "Death and the resurrection", "note": "Man is mortal; the dead sleep until the resurrection." },
+    { "id": "adversary", "title": "The adversary", "note": "Sin, not a fallen angel, is the adversary Christ destroyed." },
+    { "id": "kingdom", "title": "The kingdom of God", "note": "The kingdom will be on the earth, at Christ's return." }
+  ],
+  "works": {
+    "strobel-case-for-christ": { "title": "The Case for Christ", "author": "Lee Strobel", "year": 1998, "licence": "copyright" },
+    "morison-who-moved-the-stone": { "title": "Who Moved the Stone?", "author": "Frank Morison", "year": 1930, "licence": "public-domain" },
+    "greenleaf-testimony": { "title": "An Examination of the Testimony of the Four Evangelists by the Rules of Evidence Administered in Courts of Justice", "author": "Simon Greenleaf", "year": 1846, "licence": "public-domain" },
+    "paley-evidences": { "title": "A View of the Evidences of Christianity", "author": "William Paley", "year": 1794, "licence": "public-domain" },
+    "roberts-christendom-astray": { "title": "Christendom Astray from the Bible", "author": "Robert Roberts", "licence": "public-domain" },
+    "abel-wrested-scriptures": { "title": "Wrested Scriptures", "author": "Ron Abel", "licence": "copyright" },
+    "tacitus-annals": { "title": "Annals", "author": "Tacitus", "licence": "public-domain" },
+    "josephus-antiquities": { "title": "Antiquities of the Jews", "author": "Josephus", "licence": "public-domain" },
+    "pliny-letters": { "title": "Letters", "author": "Pliny the Younger", "licence": "public-domain" },
+    "tyndale-nt": { "title": "The New Testament", "author": "William Tyndale", "year": 1526, "licence": "public-domain" }
+  },
+  "entries": [
+    {
+      "id": "empty-tomb",
+      "subject": "resurrection",
+      "kind": "evidence",
+      "title": "The tomb was empty",
+      "summary": "Jesus was buried in a known tomb belonging to a member of the council, and within weeks the apostles were preaching his resurrection in the same city. His enemies never produced the body; they said instead that the disciples had stolen it, which grants that the tomb was empty. The first witnesses were women, whose testimony counted for little then: no one inventing the story would have chosen them.",
+      "passages": ["Mat.28.1-15", "Mrk.16.1-8", "Luk.24.1-12", "Jhn.20.1-10"],
+      "points": [
+        {
+          "claim": "The tomb was known: Joseph of Arimathea, a counsellor, laid Jesus in his own tomb, and the women saw where he was laid.",
+          "passages": ["Mrk.15.42-47", "Mat.27.57-61"],
+          "sources": [{ "work": "strobel-case-for-christ", "loc": "ch. 12, \"The Evidence of the Missing Body\"" }]
+        },
+        {
+          "claim": "The resurrection was preached in Jerusalem, where the body could have been produced to end it.",
+          "passages": ["Act.2.22-32", "Act.4.1-4"],
+          "sources": [{ "work": "morison-who-moved-the-stone" }]
+        },
+        {
+          "claim": "The rulers paid the guard to say the disciples stole the body: they did not deny it was gone.",
+          "passages": ["Mat.28.11-15"],
+          "sources": [{ "work": "strobel-case-for-christ", "loc": "ch. 12, \"The Evidence of the Missing Body\"" }]
+        },
+        {
+          "claim": "Women were the first witnesses, an embarrassing detail no inventor would choose; even the apostles thought their words idle tales.",
+          "passages": ["Luk.24.1-11"],
+          "sources": [{ "work": "strobel-case-for-christ", "loc": "ch. 12, \"The Evidence of the Missing Body\"" }]
+        },
+        {
+          "claim": "The grave clothes lay in order, the napkin folded apart: not the work of thieves.",
+          "passages": ["Jhn.20.5-8"]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The disciples stole the body.",
+          "answer": "The tomb was sealed and guarded at the rulers' request, and the disciples had fled. Men who knew the story false would not have suffered and died for it.",
+          "passages": ["Mat.27.62-66", "Mrk.14.50", "Act.12.2"]
+        },
+        {
+          "objection": "The women went to the wrong tomb.",
+          "answer": "They had watched him laid there two days before, and Joseph, its owner, knew it. The rulers had only to go to the right one.",
+          "passages": ["Mrk.15.47", "Luk.23.55"]
+        },
+        {
+          "objection": "Jesus only fainted on the cross and revived.",
+          "answer": "The soldiers, whose trade was execution, found him dead and did not break his legs; the spear brought blood and water; Pilate had the centurion confirm the death. A half-dead man could not have persuaded anyone he had conquered death.",
+          "passages": ["Jhn.19.31-35", "Mrk.15.44-45"]
+        }
+      ],
+      "related": ["appearances", "transformed-witnesses"]
+    },
+    {
+      "id": "appearances",
+      "subject": "resurrection",
+      "kind": "evidence",
+      "title": "He was seen alive by many witnesses",
+      "summary": "Paul lists those who saw Jesus alive: Peter, the twelve, over five hundred at once, most still living when he wrote and able to be asked, James, and Paul himself. He was seen by groups and by individuals, indoors and out, over forty days; he was touched and he ate. Hallucinations are private and do not happen to five hundred at once.",
+      "passages": ["1Co.15.3-8", "Act.1.3"],
+      "points": [
+        {
+          "claim": "Paul names witnesses, and says most of the five hundred were still alive: an invitation to check.",
+          "passages": ["1Co.15.3-8"],
+          "sources": [{ "work": "strobel-case-for-christ", "loc": "ch. 13, \"The Evidence of Appearances\"" }]
+        },
+        {
+          "claim": "He showed them his hands and feet, was handled, and ate before them.",
+          "passages": ["Luk.24.36-43", "Jhn.20.24-29", "Jhn.21.9-14"]
+        },
+        {
+          "claim": "He was seen over forty days, by groups and individuals, in Jerusalem and Galilee.",
+          "passages": ["Act.1.3", "Mat.28.16-17", "Jhn.21.1-14", "Luk.24.13-35"]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "They saw visions or hallucinations.",
+          "answer": "Hallucinations are private, come to those expecting them, and do not eat. The disciples did not expect him and did not at first believe; groups saw him together; and the appearances stopped after forty days.",
+          "passages": ["Luk.24.11", "Luk.24.37-43", "Mrk.16.11-14"]
+        }
+      ],
+      "related": ["empty-tomb", "transformed-witnesses", "early-testimony"]
+    },
+    {
+      "id": "transformed-witnesses",
+      "subject": "resurrection",
+      "kind": "evidence",
+      "title": "The witnesses were changed and suffered for it",
+      "summary": "At his arrest the disciples fled and Peter denied him; weeks later they stood before the council that had killed him and would not stop speaking. James his brother had not believed him; he became a leader of the ecclesia in Jerusalem and was stoned for it. Paul persecuted the ecclesia until he saw Jesus. Men may die for a lie they believe, but not for one they made up.",
+      "passages": ["Act.4.13-20", "Act.5.27-42"],
+      "points": [
+        {
+          "claim": "The disciples fled and Peter denied him; afterwards they defied the council.",
+          "passages": ["Mrk.14.50", "Mrk.14.66-72", "Act.4.13-20", "Act.5.29-32"],
+          "sources": [{ "work": "paley-evidences", "loc": "Part I, Proposition I" }]
+        },
+        {
+          "claim": "James, who did not believe in him, saw him risen and led the ecclesia in Jerusalem. Josephus records his stoning.",
+          "passages": ["Jhn.7.5", "1Co.15.7", "Gal.1.19", "Act.15.13-21"],
+          "sources": [
+            { "work": "josephus-antiquities", "loc": "20.200" },
+            { "work": "strobel-case-for-christ", "loc": "ch. 14, \"The Circumstantial Evidence\"" }
+          ]
+        },
+        {
+          "claim": "Paul, the persecutor, was turned by seeing him, and gave up everything for it.",
+          "passages": ["Gal.1.13-16", "Act.9.1-22", "Php.3.4-8", "2Co.11.23-28"]
+        }
+      ],
+      "related": ["empty-tomb", "appearances"]
+    },
+    {
+      "id": "early-testimony",
+      "subject": "records",
+      "kind": "evidence",
+      "title": "The records are early and from eyewitnesses",
+      "summary": "Paul passes on a summary of the gospel he had received, naming witnesses of the resurrection; he wrote about AD 55 and had met Peter and James within a few years of the crucifixion. Acts ends with Paul alive in Rome, before his death and the fall of Jerusalem, and Luke's Gospel came before it. Roman and Jewish writers confirm that Jesus was put to death under Pilate and that his followers spread from Judaea.",
+      "passages": ["1Co.15.3-8", "Luk.1.1-4"],
+      "points": [
+        {
+          "claim": "Paul delivered what he had received, and met Peter and James three years after his conversion.",
+          "passages": ["1Co.15.3-8", "Gal.1.18-19"],
+          "sources": [{ "work": "strobel-case-for-christ", "loc": "ch. 13, \"The Evidence of Appearances\"" }]
+        },
+        {
+          "claim": "Luke wrote from eyewitnesses with care, and Acts, his second volume, ends before Paul's death.",
+          "passages": ["Luk.1.1-4", "Act.1.1", "Act.28.30-31"],
+          "sources": [{ "work": "strobel-case-for-christ", "loc": "ch. 1, \"The Eyewitness Evidence\"" }]
+        },
+        {
+          "claim": "The apostles claimed to be eyewitnesses, and appealed to things done openly.",
+          "passages": ["2Pe.1.16", "1Jn.1.1-3", "Act.26.26"],
+          "sources": [{ "work": "greenleaf-testimony" }]
+        },
+        {
+          "claim": "Tacitus records that Christus was executed by Pontius Pilate under Tiberius; Josephus mentions James \"the brother of Jesus, who was called Christ\"; Pliny describes Christians singing to Christ as to a god. Josephus' longer passage on Jesus (18.63-64) has been added to by Christian copyists and is not relied on here.",
+          "passages": [],
+          "sources": [
+            { "work": "tacitus-annals", "loc": "15.44" },
+            { "work": "josephus-antiquities", "loc": "20.200" },
+            { "work": "pliny-letters", "loc": "10.96" },
+            { "work": "strobel-case-for-christ", "loc": "ch. 4, \"The Corroborating Evidence\"" }
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The Gospels were written generations later, after legends grew.",
+          "answer": "Acts says nothing of Paul's death, Nero's persecution or Jerusalem's fall, though all bear on its story; it was written before them, and Luke before Acts. Paul's summary of the witnesses is earlier still.",
+          "passages": ["Act.28.30-31", "Act.1.1"]
+        }
+      ],
+      "related": ["appearances"]
+    },
+    {
+      "id": "one-god",
+      "subject": "god",
+      "kind": "doctrine",
+      "title": "There is one God, the Father, and Jesus is his Son",
+      "summary": "\"Hear, O Israel: Yahweh our God is one Yahweh,\" said Moses, and Jesus said it again. Paul: \"to us there is but one God, the Father,\" and \"one mediator between God and men, the man Christ Jesus.\" Jesus was born of Mary by God's power, was tempted, did not know the day of his return, died, and was raised by God; none of this can be said of God. He is the Son of God, not God the Son.",
+      "passages": ["Deu.6.4", "Mrk.12.29", "1Co.8.6", "1Ti.2.5", "Jhn.17.3"],
+      "points": [
+        {
+          "claim": "God is one, the Father.",
+          "passages": ["Deu.6.4", "Mrk.12.29-32", "1Co.8.6", "Eph.4.6", "Jhn.17.3"],
+          "sources": [{ "work": "roberts-christendom-astray" }]
+        },
+        {
+          "claim": "Jesus is a man, the mediator between God and men, and calls the Father his God.",
+          "passages": ["1Ti.2.5", "Act.2.22", "Jhn.20.17", "Rev.3.12"]
+        },
+        {
+          "claim": "He began at his birth: the holy spirit, the power of the Highest, overshadowed Mary, and therefore he is called the Son of God.",
+          "passages": ["Luk.1.35", "Mat.1.18-20", "Gal.4.4"]
+        },
+        {
+          "claim": "He was tempted, but God cannot be tempted; he died, but God only has immortality; he did not know the day, but God knows all.",
+          "passages": ["Heb.4.15", "Jas.1.13", "1Ti.6.16", "Mrk.13.32"]
+        },
+        {
+          "claim": "He is subject to the Father, who raised him and exalted him, and will be subject to him when all is done.",
+          "passages": ["Jhn.14.28", "1Co.11.3", "Act.2.32-36", "1Co.15.27-28"]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "\"I and my Father are one\" (John 10:30).",
+          "answer": "One as he prayed his disciples would be one with each other. When the Jews accused him of making himself God, he answered that he had said \"I am the Son of God,\" and cited Psalm 82, where judges are called gods.",
+          "passages": ["Jhn.10.30-36", "Jhn.17.21-22", "Psa.82.6"]
+        },
+        {
+          "objection": "Thomas called him \"my Lord and my God\" (John 20:28).",
+          "answer": "Jesus had just spoken of \"my God and your God\"; God was manifest in him, as the Old Testament calls God's representatives by his name. John says he wrote that we might believe Jesus is the Christ, the Son of God.",
+          "passages": ["Jhn.20.17", "Jhn.20.28-31", "Exo.23.20-21"]
+        }
+      ],
+      "related": ["john-1-1", "john-8-58"]
+    },
+    {
+      "id": "john-1-1",
+      "subject": "god",
+      "kind": "passage",
+      "title": "John 1:1, \"the word was God\", read as Jesus existing before his birth",
+      "summary": "The word is God's word, his spoken purpose, by which he made the heavens. It was with God as a man's word is with him, and was God's own, as a man's word is himself speaking. It became flesh in Jesus at his birth. Tyndale and the English Bibles before the King James wrote \"all things were made by it.\" John's first letter uses the same phrase of a thing: \"that eternal life, which was with the Father.\"",
+      "passages": ["Jhn.1.1-3", "Jhn.1.14"],
+      "points": [
+        {
+          "claim": "God made all things by his word.",
+          "passages": ["Gen.1.3", "Psa.33.6-9", "Heb.11.3", "Isa.55.11"]
+        },
+        {
+          "claim": "\"With God\" is said of a thing: the eternal life was with the Father, and was manifested.",
+          "passages": ["1Jn.1.1-2"]
+        },
+        {
+          "claim": "The English Bibles before 1611 call the word \"it\".",
+          "passages": ["Jhn.1.3"],
+          "sources": [{ "work": "tyndale-nt", "loc": "John 1:3", "quote": "All things were made by it, and without it was made nothing that was made." }]
+        },
+        {
+          "claim": "The word became flesh when Jesus was born.",
+          "passages": ["Jhn.1.14", "Luk.1.35", "Gal.4.4"]
+        }
+      ],
+      "related": ["one-god", "john-8-58"]
+    },
+    {
+      "id": "john-8-58",
+      "subject": "god",
+      "kind": "passage",
+      "title": "John 8:58, \"before Abraham was, I am\", read as the divine name",
+      "summary": "\"I am\" (ego eimi) is ordinary Greek: the man born blind says the same words in the next chapter. The Greek Old Testament's name in Exodus 3:14 is \"he who is\" (ho on), not \"I am\". Jesus had said Abraham saw his day and was glad: Abraham saw it in the promise. Christ was before Abraham in God's purpose, foreordained before the foundation of the world and manifest in these last times.",
+      "passages": ["Jhn.8.56-58"],
+      "points": [
+        {
+          "claim": "The same words are used by the man born blind, \"I am he.\"",
+          "passages": ["Jhn.9.9"]
+        },
+        {
+          "claim": "Abraham saw Christ's day by faith, in the promise, as the faithful saw the promises afar off.",
+          "passages": ["Jhn.8.56", "Gen.22.8-18", "Heb.11.13"]
+        },
+        {
+          "claim": "Christ was foreordained before the foundation of the world, and the glory he prayed for was given in God's purpose before it began.",
+          "passages": ["1Pe.1.20", "Rev.13.8", "2Ti.1.9", "Jhn.17.5"]
+        }
+      ],
+      "related": ["one-god", "john-1-1"]
+    },
+    {
+      "id": "soul-mortal",
+      "subject": "death",
+      "kind": "doctrine",
+      "title": "Man is mortal; the soul is not immortal",
+      "summary": "Man was formed of dust and became a living soul, the same words used of the animals. \"The soul that sinneth, it shall die.\" In death a man's thoughts perish; the dead know not anything. God only has immortality; man must seek it, and receives it at the resurrection, when this mortal puts on immortality.",
+      "passages": ["Gen.2.7", "Ezk.18.4", "Ecc.9.5", "1Ti.6.16", "1Co.15.53-54"],
+      "points": [
+        {
+          "claim": "Man became a living soul, as the animals are living souls; he returns to dust.",
+          "passages": ["Gen.2.7", "Gen.1.24", "Gen.3.19", "Ecc.3.19-20"],
+          "sources": [{ "work": "roberts-christendom-astray" }]
+        },
+        {
+          "claim": "The soul dies.",
+          "passages": ["Ezk.18.4", "Ezk.18.20", "Jos.10.28"]
+        },
+        {
+          "claim": "The dead have no thought or knowledge.",
+          "passages": ["Psa.146.4", "Ecc.9.5", "Ecc.9.10", "Psa.6.5", "Isa.38.18-19"]
+        },
+        {
+          "claim": "Only God has immortality; it is sought, and given at the resurrection.",
+          "passages": ["1Ti.6.16", "Rom.2.7", "1Co.15.53-54", "2Ti.1.10"]
+        }
+      ],
+      "related": ["resurrection-hope", "grave-and-hinnom", "luke-23-43", "luke-16-19"]
+    },
+    {
+      "id": "resurrection-hope",
+      "subject": "death",
+      "kind": "doctrine",
+      "title": "The dead sleep until the resurrection",
+      "summary": "Jesus called death sleep, and woke Lazarus from it; Martha knew her brother would rise \"at the last day.\" Paul comforted the Thessalonians not with the dead in heaven but with their rising when Christ returns, and said that without the resurrection those fallen asleep have perished. David has not ascended into the heavens; the faithful of old have not yet received the promise.",
+      "passages": ["Dan.12.2", "Jhn.11.11-14", "1Th.4.13-17", "1Co.15.16-18"],
+      "points": [
+        {
+          "claim": "Death is a sleep, and the resurrection an awaking.",
+          "passages": ["Dan.12.2", "Jhn.11.11-14", "Jhn.11.24", "Jhn.5.28-29"]
+        },
+        {
+          "claim": "The comfort is the resurrection at Christ's return; without it the dead have perished.",
+          "passages": ["1Th.4.13-17", "1Co.15.16-18", "1Co.15.51-52"]
+        },
+        {
+          "claim": "The faithful have not gone to heaven: they receive their reward together at that day.",
+          "passages": ["Act.2.29-34", "Jhn.3.13", "Heb.11.13", "Heb.11.39-40", "2Ti.4.8"]
+        }
+      ],
+      "related": ["soul-mortal", "kingdom-on-earth"]
+    },
+    {
+      "id": "grave-and-hinnom",
+      "subject": "death",
+      "kind": "doctrine",
+      "title": "The grave and the valley of Hinnom are not a place of torment",
+      "summary": "Sheol and Hades are the grave: Jacob expected to go there, Job prayed to be hidden there, and Christ was there for three days. Gehenna is the valley of Hinnom outside Jerusalem, where carcases were burned; Jesus' words about it quote Isaiah on dead bodies. The wages of sin is death, not life in torment: the wicked become ashes, and death and the grave are themselves destroyed.",
+      "passages": ["Rom.6.23", "Mrk.9.43-48", "Act.2.27-31", "Mal.4.1-3"],
+      "points": [
+        {
+          "claim": "The righteous go to the grave: Jacob, Job, and Christ himself.",
+          "passages": ["Gen.37.35", "Job.14.13", "Psa.16.10", "Act.2.27-31"]
+        },
+        {
+          "claim": "The valley of Hinnom is a place by Jerusalem; Jesus' words of it quote Isaiah's carcases of the slain.",
+          "passages": ["Jer.7.31-32", "Mrk.9.43-48", "Isa.66.24"]
+        },
+        {
+          "claim": "The end of the wicked is death and destruction.",
+          "passages": ["Rom.6.23", "Psa.37.10", "Psa.37.20", "Mal.4.1-3", "Mat.10.28"]
+        },
+        {
+          "claim": "Death and the grave are destroyed in the end.",
+          "passages": ["Rev.20.14", "1Co.15.26", "Hos.13.14"]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Sodom suffers the vengeance of eternal fire (Jude 7).",
+          "answer": "Sodom is not burning now: it was turned to ashes. The fire is eternal in its effect.",
+          "passages": ["Jud.1.7", "2Pe.2.6"]
+        }
+      ],
+      "related": ["soul-mortal", "luke-16-19"]
+    },
+    {
+      "id": "luke-23-43",
+      "subject": "death",
+      "kind": "passage",
+      "title": "Luke 23:43, \"today shalt thou be with me in paradise\", read as going to heaven at death",
+      "summary": "The thief asked to be remembered when Jesus came in his kingdom: he looked for the future kingdom, not heaven that day. Jesus did not go to paradise that day: he lay three days in the grave, and after rising said he had not yet ascended to his Father. Paradise is the garden, restored when the tree of life is given in the kingdom. Greek manuscripts have no punctuation, so \"I say unto thee today\" is possible; but Jesus' other sayings with \"Verily I say unto thee\" do not add \"today\", so grammar cannot settle it, and the case rests on the thief's request and on where Jesus was that day.",
+      "passages": ["Luk.23.42-43"],
+      "points": [
+        {
+          "claim": "The thief asked about Christ's coming kingdom.",
+          "passages": ["Luk.23.42"]
+        },
+        {
+          "claim": "Jesus was in the grave that day, and had not ascended after he rose.",
+          "passages": ["Mat.12.40", "Act.2.31", "Jhn.20.17"]
+        },
+        {
+          "claim": "Paradise is the garden of God, restored in the kingdom.",
+          "passages": ["Rev.2.7", "Rev.22.1-2", "Isa.51.3"]
+        }
+      ],
+      "related": ["soul-mortal", "kingdom-on-earth"]
+    },
+    {
+      "id": "luke-16-19",
+      "subject": "death",
+      "kind": "passage",
+      "title": "Luke 16:19-31, the rich man and Lazarus, read as the state of the dead",
+      "summary": "It is a parable, the last of a series told to the Pharisees, who derided Jesus for his teaching on riches. It opens with the same words as the parable of the unjust steward. Taken literally it has bodies in the grave, a tongue cooled by a drop of water, and talk across a gulf between Abraham's bosom and torment. Its point is its last line: those who will not hear Moses and the prophets will not be persuaded though one rose from the dead, as the rulers were not when Lazarus and then Jesus rose.",
+      "passages": ["Luk.16.19-31"],
+      "points": [
+        {
+          "claim": "It is told to the Pharisees in a series of parables.",
+          "passages": ["Luk.15.1-3", "Luk.16.14-15"]
+        },
+        {
+          "claim": "It opens as the parable of the unjust steward does, \"There was a certain rich man.\"",
+          "passages": ["Luk.16.1", "Luk.16.19"]
+        },
+        {
+          "claim": "Its point is unbelief despite a resurrection, fulfilled when the rulers plotted to kill Lazarus after he was raised.",
+          "passages": ["Luk.16.31", "Jhn.11.43-53", "Jhn.12.9-11"]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Jesus does not call it a parable.",
+          "answer": "Nor does he the prodigal son or the unjust steward, told in the same discourse.",
+          "passages": ["Luk.15.11", "Luk.16.1"]
+        }
+      ],
+      "related": ["soul-mortal", "grave-and-hinnom"]
+    },
+    {
+      "id": "adversary-not-angel",
+      "subject": "adversary",
+      "kind": "doctrine",
+      "title": "The adversary is sin, not a fallen angel",
+      "summary": "Christ through death destroyed the false accuser, which had the power of death: he did it in his own flesh, where God condemned sin. Every man is tempted when drawn away by his own lust; evil comes from within. In the Bible \"adversary\" is an ordinary word: Yahweh raised up Hadad as an adversary to Solomon, his angel stood as an adversary to Balaam, and Jesus called Peter one. Judas was a false accuser, and the same word is used of slanderous women.",
+      "passages": ["Heb.2.14", "Jas.1.13-15", "Mrk.7.21-23"],
+      "points": [
+        {
+          "claim": "Christ destroyed the false accuser by his death, condemning sin in the flesh.",
+          "passages": ["Heb.2.14", "Rom.8.3", "Rom.6.23"],
+          "sources": [{ "work": "roberts-christendom-astray" }]
+        },
+        {
+          "claim": "Temptation and evil come from within a man.",
+          "passages": ["Jas.1.13-15", "Mrk.7.21-23", "Jer.17.9"]
+        },
+        {
+          "claim": "\"Adversary\" is used of men and of an angel of Yahweh; \"false accuser\" of Judas and of slanderers.",
+          "passages": ["1Ki.11.14", "Num.22.22", "Mat.16.23", "Jhn.6.70", "1Ti.3.11"]
+        },
+        {
+          "claim": "Yahweh is the source of both good and calamity: there is no rival power.",
+          "passages": ["Isa.45.5-7", "Amo.3.6"]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Lucifer fell from heaven (Isaiah 14:12).",
+          "answer": "The chapter is a proverb against the king of Babylon, \"the man that made the earth to tremble.\" Lucifer is the morning star, his boast of himself.",
+          "passages": ["Isa.14.4", "Isa.14.12-16"]
+        },
+        {
+          "objection": "The serpent in Eden was the devil.",
+          "answer": "It is called a beast of the field, and cursed above all cattle.",
+          "passages": ["Gen.3.1", "Gen.3.14"]
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "kingdom-on-earth",
+      "subject": "kingdom",
+      "kind": "doctrine",
+      "title": "The kingdom of God will be on the earth",
+      "summary": "God will set up a kingdom that breaks the kingdoms of men and fills the earth. Jesus will sit on David's throne and reign over Israel; the meek will inherit the earth, and the saints reign on it. The apostles asked when the kingdom would be restored to Israel, and were told the same Jesus would come again. Jesus taught us to pray that God's will be done on earth as in heaven.",
+      "passages": ["Dan.2.44", "Mat.5.5", "Act.1.6-11", "Rev.5.10"],
+      "points": [
+        {
+          "claim": "God's kingdom replaces the kingdoms of men on the earth.",
+          "passages": ["Dan.2.44", "Dan.7.27", "Psa.72.8", "Zec.14.9", "Isa.2.2-4"]
+        },
+        {
+          "claim": "Jesus will sit on David's throne.",
+          "passages": ["Luk.1.32-33", "2Sa.7.12-16", "Mat.25.31"]
+        },
+        {
+          "claim": "The meek inherit the earth; the saints reign on it.",
+          "passages": ["Mat.5.5", "Psa.37.11", "Rev.5.10", "Mat.6.10"]
+        },
+        {
+          "claim": "It comes at Christ's return.",
+          "passages": ["Act.1.6-11", "Act.3.20-21", "2Ti.4.1"]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "\"My kingdom is not of this world\" (John 18:36).",
+          "answer": "Not from this world: its origin and power are not of this world's order, and \"now\" it was not from hence. It is not said to be elsewhere than the earth.",
+          "passages": ["Jhn.18.36"]
+        },
+        {
+          "objection": "\"The kingdom of God is within you\" (Luke 17:21).",
+          "answer": "He was speaking to the Pharisees, in whom it was not. Among you: the king was standing in their midst.",
+          "passages": ["Luk.17.20-21"]
+        }
+      ],
+      "related": ["resurrection-hope", "luke-23-43"]
+    }
+  ]
+}
