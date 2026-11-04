@@ -1220,6 +1220,66 @@ pub struct ThematicVerse {
     pub references: Vec<ThematicReference>,
 }
 
+/// A subject of Haqor's apologetics, like the resurrection or the kingdom of
+/// God, in the order a reader is shown them.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ApologeticSubject {
+    pub key: String,
+    pub title: String,
+    pub note: String,
+}
+
+/// An entry of Haqor's apologetics (see `haqor-db-gen`'s `apologetics`
+/// module): evidence for the Bible's truth, the Bible's teaching on a subject,
+/// or an answer on a passage brought against it.
+#[derive(Debug, Clone, PartialEq)]
+pub struct Apologetic {
+    pub id: u32,
+    pub key: String,
+    /// An [`ApologeticSubject`]'s key.
+    pub subject: String,
+    /// `evidence`, `doctrine` or `passage`.
+    pub kind: String,
+    pub title: String,
+    /// The answer in a few sentences, for a conversation.
+    pub summary: String,
+    /// The verses the reader marks with it: for a `passage` entry the passage
+    /// it answers on, for the others the key texts.
+    pub passages: Vec<VerseSpan>,
+    pub points: Vec<ApologeticPoint>,
+    pub objections: Vec<ApologeticObjection>,
+    /// Other entries' keys.
+    pub related: Vec<String>,
+}
+
+/// One step of an [`Apologetic`]'s argument.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ApologeticPoint {
+    pub claim: String,
+    pub passages: Vec<VerseSpan>,
+    pub sources: Vec<ApologeticSource>,
+}
+
+/// A work an [`ApologeticPoint`] cites: a historical record, for what
+/// Scripture cannot show.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ApologeticSource {
+    pub title: String,
+    pub author: String,
+    /// Where in the work, if given.
+    pub loc: String,
+    /// Its words, for a work in the public domain, if quoted.
+    pub quote: String,
+}
+
+/// An objection to an [`Apologetic`] and its answer.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ApologeticObjection {
+    pub objection: String,
+    pub answer: String,
+    pub passages: Vec<VerseSpan>,
+}
+
 /// A prophecy, of the Old Testament or of Christ's own, and the passages that
 /// fulfil it, where the Bible records any: Haqor's curation, with the NT citation formulas found
 /// linked to it at build time (see `haqor-db-gen`'s `prophecy` module).
@@ -5257,6 +5317,125 @@ impl Bible {
         )
     }
 
+    /// The subjects of Haqor's apologetics, in order; empty for a database
+    /// built without them.
+    pub fn apologetic_subjects(&self) -> rusqlite::Result<Vec<ApologeticSubject>> {
+        if !self.has_table("apologetic_subject")? {
+            return Ok(Vec::new());
+        }
+        self.db
+            .prepare_cached("SELECT key, title, note FROM data.apologetic_subject ORDER BY ord")?
+            .query_map([], |row| {
+                Ok(ApologeticSubject {
+                    key: row.get(0)?,
+                    title: row.get(1)?,
+                    note: row.get(2)?,
+                })
+            })?
+            .collect()
+    }
+
+    /// Every entry of Haqor's apologetics, in the file's order; empty for a
+    /// database built without them. There are few enough to send whole.
+    pub fn apologetics(&self) -> rusqlite::Result<Vec<Apologetic>> {
+        if !self.has_table("apologetic")? {
+            return Ok(Vec::new());
+        }
+        let span = |pair: &serde_json::Value| -> Option<VerseSpan> {
+            Some(VerseSpan {
+                first: VerseRef::unpack(pair.get(0)?.as_i64()?),
+                last: VerseRef::unpack(pair.get(1)?.as_i64()?),
+            })
+        };
+        let spans = |value: &serde_json::Value| -> Vec<VerseSpan> {
+            value
+                .as_array()
+                .into_iter()
+                .flatten()
+                .filter_map(span)
+                .collect()
+        };
+        let text = |value: &serde_json::Value| value.as_str().unwrap_or_default().to_string();
+        let mut entries = self
+            .db
+            .prepare_cached(
+                "SELECT entry_id, key, subject, kind, title, summary, detail \
+                 FROM data.apologetic ORDER BY entry_id",
+            )?
+            .query_map([], |row| {
+                let detail: String = row.get(6)?;
+                let detail: serde_json::Value = serde_json::from_str(&detail).unwrap_or_default();
+                Ok(Apologetic {
+                    id: row.get(0)?,
+                    key: row.get(1)?,
+                    subject: row.get(2)?,
+                    kind: row.get(3)?,
+                    title: row.get(4)?,
+                    summary: row.get(5)?,
+                    passages: Vec::new(),
+                    points: detail["points"]
+                        .as_array()
+                        .into_iter()
+                        .flatten()
+                        .map(|p| ApologeticPoint {
+                            claim: text(&p["claim"]),
+                            passages: spans(&p["passages"]),
+                            sources: p["sources"]
+                                .as_array()
+                                .into_iter()
+                                .flatten()
+                                .map(|s| ApologeticSource {
+                                    title: text(&s["title"]),
+                                    author: text(&s["author"]),
+                                    loc: text(&s["loc"]),
+                                    quote: text(&s["quote"]),
+                                })
+                                .collect(),
+                        })
+                        .collect(),
+                    objections: detail["objections"]
+                        .as_array()
+                        .into_iter()
+                        .flatten()
+                        .map(|o| ApologeticObjection {
+                            objection: text(&o["objection"]),
+                            answer: text(&o["answer"]),
+                            passages: spans(&o["passages"]),
+                        })
+                        .collect(),
+                    related: detail["related"]
+                        .as_array()
+                        .into_iter()
+                        .flatten()
+                        .map(text)
+                        .collect(),
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let mut passages = self.db.prepare_cached(
+            "SELECT entry_id, ref, end_ref FROM data.apologetic_passage ORDER BY entry_id, ord",
+        )?;
+        let rows = passages.query_map([], |row| {
+            Ok((
+                row.get::<_, u32>(0)?,
+                row.get::<_, i64>(1)?,
+                row.get::<_, i64>(2)?,
+            ))
+        })?;
+        let index: HashMap<u32, usize> =
+            entries.iter().enumerate().map(|(i, e)| (e.id, i)).collect();
+        for row in rows {
+            let (id, first, last) = row?;
+            if let Some(&i) = index.get(&id) {
+                entries[i].passages.push(VerseSpan {
+                    first: VerseRef::unpack(first),
+                    last: VerseRef::unpack(last),
+                });
+            }
+        }
+        Ok(entries)
+    }
+
     /// The prophecies one verse belongs to: as part of a prophecy's passage,
     /// or of a passage fulfilling one.
     pub fn verse_prophecies(
@@ -7874,6 +8053,45 @@ mod tests {
             malachi.iter().map(|r| r.targets.len()).sum::<usize>()
         );
         assert!(bible.thematic_references(26, 4, 1).unwrap().is_empty());
+    }
+
+    /// The apologetics come back whole: subjects in order, each entry with
+    /// its passages on the Hebrew numbering, points, objections and sources.
+    #[test]
+    fn apologetics_read_whole() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let subjects = bible.apologetic_subjects().unwrap();
+        if subjects.is_empty() {
+            eprintln!("skipping: data/haqor.db has no apologetics tables");
+            return;
+        }
+        assert_eq!(subjects[0].key, "resurrection");
+        let entries = bible.apologetics().unwrap();
+        let tomb = entries.iter().find(|e| e.key == "empty-tomb").unwrap();
+        assert_eq!(tomb.kind, "evidence");
+        assert!(!tomb.passages.is_empty());
+        assert!(!tomb.objections.is_empty());
+        assert!(tomb.related.contains(&"appearances".to_string()));
+        // Malachi 4:1-3 in the KJV is 3:19-21 in the Hebrew text.
+        let hinnom = entries
+            .iter()
+            .find(|e| e.key == "grave-and-hinnom")
+            .unwrap();
+        let malachi = VerseRef {
+            book: 26,
+            chapter: 3,
+            verse: 19,
+        };
+        assert!(hinnom.passages.iter().any(|p| p.first == malachi));
+        let records = entries.iter().find(|e| e.key == "early-testimony").unwrap();
+        let tacitus = records
+            .points
+            .iter()
+            .flat_map(|p| &p.sources)
+            .find(|s| s.author == "Tacitus")
+            .unwrap();
+        assert_eq!(tacitus.loc, "15.44");
     }
 
     /// A prophecy is found from its own passage and from a fulfilment; the

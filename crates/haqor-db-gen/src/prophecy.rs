@@ -147,7 +147,7 @@ CREATE INDEX idx_prophecy_pattern_member ON prophecy_pattern_member(prophecy_id)
 ";
 
 /// An inclusive run of packed verse refs.
-type Span = (i64, i64);
+pub(crate) type Span = (i64, i64);
 
 fn overlaps(a: Span, b: Span) -> bool {
     a.0 <= b.1 && b.0 <= a.1
@@ -161,7 +161,7 @@ fn contains(outer: Span, inner: Span) -> bool {
 /// abbreviations and the English Bible's numbering: `Gen.3.15`,
 /// `Isa.52.13-15`, `Isa.52.13-53.12`. OT verses are renumbered onto the
 /// Hebrew text.
-fn parse_span(text: &str, versification: &Versification) -> Option<Span> {
+pub(crate) fn parse_span(text: &str, versification: &Versification) -> Option<Span> {
     let (start, end) = match text.split_once('-') {
         Some((start, end)) => (start, Some(end)),
         None => (text, None),

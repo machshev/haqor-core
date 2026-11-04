@@ -305,9 +305,6 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
-    /// Rebuild the `prophecy` tables of a runtime haqor.db in place
-    /// (gen-runtime also builds them): Haqor's curated prophecies with the
-    /// NT citation formulas found linked to them.
     /// Rebuild the archaeological finds of a runtime haqor.db in place
     /// (gen-runtime also builds them), from Haqor's data/artifacts.json.
     GenArtifacts {
@@ -321,6 +318,23 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// Rebuild the apologetics of a runtime haqor.db in place from
+    /// `data/apologetics.json`.
+    GenApologetics {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Haqor's apologetics.
+        #[arg(long, default_value = "data/apologetics.json")]
+        apologetics: PathBuf,
+        /// Source texts directory holding STEPBible-Data, for the KJV/Hebrew
+        /// verse numbering.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
+    /// Rebuild the `prophecy` tables of a runtime haqor.db in place
+    /// (gen-runtime also builds them): Haqor's curated prophecies with the
+    /// NT citation formulas found linked to them.
     GenProphecy {
         /// Runtime database to update.
         #[arg(short, long, default_value = "data/haqor.db")]
@@ -692,6 +706,20 @@ fn main() -> Result<()> {
                     "Wrote {} finds naming people and places {} times and bearing on {} passages to {}",
                     summary.artifacts,
                     summary.attestations,
+                    summary.passages,
+                    db.display()
+                );
+            }
+            DbCommands::GenApologetics {
+                db,
+                apologetics,
+                src_texts,
+            } => {
+                let summary = haqor_db_gen::gen_apologetics(&db, &apologetics, &src_texts)?;
+                println!(
+                    "Wrote {} apologetics in {} subjects, marking {} passages, to {}",
+                    summary.entries,
+                    summary.subjects,
                     summary.passages,
                     db.display()
                 );

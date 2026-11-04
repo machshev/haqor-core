@@ -4,6 +4,7 @@
 //! table at a time. Currently it generates the `bible` table (OT text from
 //! UXLC plus NT Syriac transliterated into Hebrew letters from SEDRA).
 
+mod apologetics;
 mod artifacts;
 mod events;
 mod geocoding;
@@ -35,6 +36,7 @@ mod tsk;
 mod uxlc;
 mod xml;
 
+pub use apologetics::{APOLOGETICS, ApologeticsSummary, build_apologetics, gen_apologetics};
 pub use artifacts::{ARTIFACTS, ArtifactsSummary, build_artifacts, gen_artifacts};
 pub use events::{EVENT_OVERRIDES, EventsSummary};
 pub use haqor_core::normalize_surface;
