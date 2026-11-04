@@ -1010,6 +1010,12 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             workspaces_json     TEXT    NOT NULL,
             active_workspace_id TEXT,
             updated_epoch       INTEGER NOT NULL
+         );
+         CREATE TABLE IF NOT EXISTS progress.commentary_notes(
+            id            TEXT    PRIMARY KEY,
+            note_json     TEXT    NOT NULL,
+            updated_epoch INTEGER NOT NULL,
+            deleted       INTEGER NOT NULL DEFAULT 0
          );",
     )?;
     crate::memorise::init_memory_schema(db)?;
@@ -1667,6 +1673,70 @@ impl Bible {
                 active_workspace_id.filter(|id| !id.is_empty()),
                 updated_epoch
             ],
+        )?;
+        Ok(())
+    }
+
+    /// The reader's commentary notes that are not deleted, as `(id, json)` in
+    /// id order.
+    ///
+    /// Like Study, commentary is a Flutter-owned model stored opaquely; each
+    /// note is its own row so that `progress_sync` merges them one by one.
+    pub fn commentary_notes(&self) -> rusqlite::Result<Vec<(String, String)>> {
+        let mut stmt = self.conn().prepare(
+            "SELECT id, note_json FROM progress.commentary_notes
+             WHERE deleted = 0 ORDER BY id",
+        )?;
+        stmt.query_map([], |row| Ok((row.get(0)?, row.get(1)?)))?
+            .collect()
+    }
+
+    /// Save one commentary note, advancing its revision even when two writes
+    /// happen during the same wall-clock second.
+    pub fn set_commentary_note(
+        &self,
+        id: &str,
+        note_json: &str,
+        updated_epoch: i64,
+    ) -> rusqlite::Result<()> {
+        if id.is_empty() {
+            return Err(rusqlite::Error::InvalidParameterName(
+                "a commentary note needs an id".to_string(),
+            ));
+        }
+        let parsed: serde_json::Value = serde_json::from_str(note_json)
+            .map_err(|error| rusqlite::Error::ToSqlConversionFailure(Box::new(error)))?;
+        if !parsed.is_object() {
+            return Err(rusqlite::Error::InvalidParameterName(
+                "a commentary note must be a JSON object".to_string(),
+            ));
+        }
+        self.write_commentary_note(id, note_json, false, updated_epoch)
+    }
+
+    /// Delete a commentary note, keeping a tombstone so the deletion syncs.
+    pub fn delete_commentary_note(&self, id: &str, updated_epoch: i64) -> rusqlite::Result<()> {
+        self.write_commentary_note(id, "{}", true, updated_epoch)
+    }
+
+    fn write_commentary_note(
+        &self,
+        id: &str,
+        note_json: &str,
+        deleted: bool,
+        updated_epoch: i64,
+    ) -> rusqlite::Result<()> {
+        self.conn().execute(
+            "INSERT INTO progress.commentary_notes(id, note_json, updated_epoch, deleted)
+             VALUES (?1, ?2, ?3, ?4)
+             ON CONFLICT(id) DO UPDATE SET
+                note_json=excluded.note_json,
+                deleted=excluded.deleted,
+                updated_epoch=MAX(
+                    excluded.updated_epoch,
+                    progress.commentary_notes.updated_epoch + 1
+                )",
+            params![id, note_json, updated_epoch, deleted],
         )?;
         Ok(())
     }

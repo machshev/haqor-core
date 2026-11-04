@@ -8390,6 +8390,50 @@ mod tests {
     }
 
     #[test]
+    fn commentary_notes_save_and_delete_by_id() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        bible.attach_progress_in_memory().unwrap();
+        bible
+            .set_commentary_note("b", r#"{"text":"second"}"#, 5)
+            .unwrap();
+        bible
+            .set_commentary_note("a", r#"{"text":"first"}"#, 5)
+            .unwrap();
+        bible
+            .set_commentary_note("a", r#"{"text":"edited"}"#, 5)
+            .unwrap();
+        // Only objects are notes, and every note has an id.
+        assert!(bible.set_commentary_note("c", "[]", 5).is_err());
+        assert!(bible.set_commentary_note("", "{}", 5).is_err());
+        assert_eq!(
+            bible.commentary_notes().unwrap(),
+            [
+                ("a".to_string(), r#"{"text":"edited"}"#.to_string()),
+                ("b".to_string(), r#"{"text":"second"}"#.to_string()),
+            ]
+        );
+        let revision = |id: &str| -> (i64, i64) {
+            bible
+                .conn()
+                .query_row(
+                    "SELECT updated_epoch, deleted FROM progress.commentary_notes WHERE id = ?1",
+                    [id],
+                    |row| Ok((row.get(0)?, row.get(1)?)),
+                )
+                .unwrap()
+        };
+        // A second save in the same second still makes a newer revision.
+        assert_eq!(revision("a"), (6, 0));
+        bible.delete_commentary_note("b", 5).unwrap();
+        assert_eq!(revision("b"), (6, 1));
+        assert_eq!(
+            bible.commentary_notes().unwrap(),
+            [("a".to_string(), r#"{"text":"edited"}"#.to_string())]
+        );
+    }
+
+    #[test]
     fn roots_saved_by_bare_letters_are_rekeyed_as_sins() {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();

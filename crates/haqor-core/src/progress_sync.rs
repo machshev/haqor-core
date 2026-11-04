@@ -207,6 +207,17 @@ fn ensure_study_state(db: &Connection, schema: &str) -> rusqlite::Result<()> {
     ))
 }
 
+fn ensure_commentary_notes(db: &Connection, schema: &str) -> rusqlite::Result<()> {
+    db.execute_batch(&format!(
+        "CREATE TABLE IF NOT EXISTS {schema}.commentary_notes(
+            id            TEXT    PRIMARY KEY,
+            note_json     TEXT    NOT NULL,
+            updated_epoch INTEGER NOT NULL,
+            deleted       INTEGER NOT NULL DEFAULT 0
+        )"
+    ))
+}
+
 fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     ensure_updated_epochs(db, "progress")?;
     ensure_updated_epochs(db, "sync")?;
@@ -218,6 +229,8 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     ensure_issue_reports(db, "sync")?;
     ensure_study_state(db, "progress")?;
     ensure_study_state(db, "sync")?;
+    ensure_commentary_notes(db, "progress")?;
+    ensure_commentary_notes(db, "sync")?;
     crate::memorise::ensure_memory_tables(db, "progress")?;
     crate::memorise::ensure_memory_tables(db, "sync")?;
     db.execute_batch("BEGIN IMMEDIATE")?;
@@ -361,6 +374,20 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
                 active_workspace_id=excluded.active_workspace_id,
                 updated_epoch=excluded.updated_epoch
              WHERE excluded.updated_epoch > progress.study_state.updated_epoch;",
+        )?;
+        // Each note merges on its own, the newer revision winning and a
+        // deletion winning a tie.
+        db.execute_batch(
+            "INSERT INTO progress.commentary_notes(id, note_json, updated_epoch, deleted)
+             SELECT id, note_json, updated_epoch, deleted
+             FROM sync.commentary_notes WHERE true
+             ON CONFLICT(id) DO UPDATE SET
+                note_json=excluded.note_json,
+                updated_epoch=excluded.updated_epoch,
+                deleted=excluded.deleted
+             WHERE excluded.updated_epoch > progress.commentary_notes.updated_epoch
+                OR (excluded.updated_epoch = progress.commentary_notes.updated_epoch
+                    AND excluded.deleted > progress.commentary_notes.deleted);",
         )?;
         crate::memorise::merge_memory(db)?;
         Ok(())
@@ -1005,6 +1032,77 @@ mod tests {
             )?,
             (document.to_string(), "new".to_string(), 200)
         );
+
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        Ok(())
+    }
+
+    #[test]
+    fn commentary_notes_merge_one_by_one() -> anyhow::Result<()> {
+        let canonical = temp_path("canonical-commentary.db");
+        let incoming = temp_path("incoming-commentary.db");
+        let _ = fs::remove_file(&canonical);
+        let _ = fs::remove_file(&incoming);
+        // Each device edited a different note; the incoming one also deleted
+        // a third at the revision the canonical one last saved it at.
+        for (path, rows) in [
+            (
+                &canonical,
+                vec![
+                    ("a", r#"{"text":"a new"}"#, 200_i64, 0_i64),
+                    ("b", r#"{"text":"b old"}"#, 100, 0),
+                    ("c", r#"{"text":"c"}"#, 150, 0),
+                ],
+            ),
+            (
+                &incoming,
+                vec![
+                    ("a", r#"{"text":"a old"}"#, 100, 0),
+                    ("b", r#"{"text":"b new"}"#, 200, 0),
+                    ("c", "{}", 150, 1),
+                    ("d", r#"{"text":"d"}"#, 50, 0),
+                ],
+            ),
+        ] {
+            let db = Connection::open_in_memory()?;
+            db.execute(
+                "ATTACH DATABASE ?1 AS progress",
+                [path.to_string_lossy().as_ref()],
+            )?;
+            init_progress_schema(&db)?;
+            for (id, json, updated, deleted) in rows {
+                db.execute(
+                    "INSERT INTO progress.commentary_notes(
+                         id, note_json, updated_epoch, deleted)
+                     VALUES (?1, ?2, ?3, ?4)",
+                    params![id, json, updated, deleted],
+                )?;
+            }
+        }
+
+        merge_progress_files(&canonical, &incoming)?;
+        let db = Connection::open(&canonical)?;
+        let mut stmt =
+            db.prepare("SELECT id, note_json, deleted FROM commentary_notes ORDER BY id")?;
+        let rows = stmt
+            .query_map([], |row| {
+                Ok((
+                    row.get::<_, String>(0)?,
+                    row.get::<_, String>(1)?,
+                    row.get::<_, i64>(2)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let expected: Vec<(String, String, i64)> = vec![
+            ("a".into(), r#"{"text":"a new"}"#.into(), 0),
+            ("b".into(), r#"{"text":"b new"}"#.into(), 0),
+            ("c".into(), "{}".into(), 1),
+            ("d".into(), r#"{"text":"d"}"#.into(), 0),
+        ];
+        assert_eq!(rows, expected);
+        drop(stmt);
+        drop(db);
 
         let _ = fs::remove_file(&canonical);
         let _ = fs::remove_file(&incoming);
