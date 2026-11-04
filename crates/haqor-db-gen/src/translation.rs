@@ -1839,17 +1839,12 @@ fn read_peshitta_overrides(
         }
         let spans = haqor_core::translation::parse(english, chapter, verse)
             .with_context(|| format!("{path:?}:{line_no}: translation does not parse"))?;
-        let words: Vec<u8> = db.query_row(
-            "SELECT words FROM verse WHERE ref = ?1",
-            [reference],
-            |row| row.get(0),
-        )?;
-        let expected: Vec<u16> = String::from_utf8(words)
-            .with_context(|| format!("{path:?}:{line_no}: Peshitta words are not UTF-8"))?
-            .split_whitespace()
-            .enumerate()
-            .map(|(position, _)| position as u16)
-            .collect();
+        // These are the exact source-token ordinals copied by gen-runtime.
+        // Reading verse.words as UTF-8 would fail for --blob-codec zstd.
+        let expected = db
+            .prepare("SELECT ord FROM nt_word WHERE ref = ?1 ORDER BY ord")?
+            .query_map([reference], |row| row.get::<_, u16>(0))?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
         if expected.is_empty() {
             bail!("{path:?}:{line_no}: Peshitta verse has no words");
         }
@@ -2492,6 +2487,9 @@ mod tests {
              INSERT INTO surface SELECT surface_id, text FROM src.surface;
              CREATE TABLE verse(ref INTEGER PRIMARY KEY, words BLOB NOT NULL);
              INSERT INTO verse SELECT ref, words FROM src.verse;
+             CREATE TABLE nt_word(ref INTEGER, ord INTEGER, word_id INTEGER,
+                                  PRIMARY KEY(ref, ord)) WITHOUT ROWID;
+             INSERT INTO nt_word SELECT ref, ord, word_id FROM src.nt_word;
              CREATE TABLE greek_word(ref INTEGER, position INTEGER, word TEXT,
                                      PRIMARY KEY(ref, position)) WITHOUT ROWID;
              INSERT INTO greek_word SELECT ref, position, word FROM src.greek_word;
@@ -2575,6 +2573,15 @@ mod tests {
             params![reference, "ܐ ܒ ܓ".as_bytes()],
         )
         .unwrap();
+        db.execute_batch("CREATE TABLE nt_word(ref INTEGER, ord INTEGER, PRIMARY KEY(ref, ord))")
+            .unwrap();
+        for ord in 0..3 {
+            db.execute(
+                "INSERT INTO nt_word VALUES (?1, ?2)",
+                params![reference, ord],
+            )
+            .unwrap();
+        }
         let root = std::env::temp_dir().join(format!(
             "haqor-peshitta-override-{}-{}",
             std::process::id(),
@@ -2607,6 +2614,15 @@ mod tests {
             params![reference, "ܐ".as_bytes()],
         )
         .unwrap();
+        db.execute_batch("CREATE TABLE nt_word(ref INTEGER, ord INTEGER, PRIMARY KEY(ref, ord))")
+            .unwrap();
+        for ord in 0..1 {
+            db.execute(
+                "INSERT INTO nt_word VALUES (?1, ?2)",
+                params![reference, ord],
+            )
+            .unwrap();
+        }
         let root = std::env::temp_dir().join(format!(
             "haqor-peshitta-override-bad-{}-{}",
             std::process::id(),
@@ -2630,6 +2646,15 @@ mod tests {
             params![reference, "ܐ ܒ".as_bytes()],
         )
         .unwrap();
+        db.execute_batch("CREATE TABLE nt_word(ref INTEGER, ord INTEGER, PRIMARY KEY(ref, ord))")
+            .unwrap();
+        for ord in 0..2 {
+            db.execute(
+                "INSERT INTO nt_word VALUES (?1, ?2)",
+                params![reference, ord],
+            )
+            .unwrap();
+        }
         let root =
             std::env::temp_dir().join(format!("haqor-peshitta-invalid-{}", std::process::id()));
         fs::create_dir_all(root.join("Haqor-Peshitta")).unwrap();
@@ -2678,6 +2703,15 @@ mod tests {
             params![reference, "ܐ".as_bytes()],
         )
         .unwrap();
+        db.execute_batch("CREATE TABLE nt_word(ref INTEGER, ord INTEGER, PRIMARY KEY(ref, ord))")
+            .unwrap();
+        for ord in 0..1 {
+            db.execute(
+                "INSERT INTO nt_word VALUES (?1, ?2)",
+                params![reference, ord],
+            )
+            .unwrap();
+        }
         let root =
             std::env::temp_dir().join(format!("haqor-peshitta-source-{}", std::process::id()));
         let _ = fs::remove_dir_all(&root);
@@ -2696,6 +2730,43 @@ mod tests {
                 encoded
             );
         }
+        fs::remove_dir_all(root).unwrap();
+    }
+    #[test]
+    fn peshitta_links_use_source_ordinals_with_compressed_verse_blobs() {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch(
+            "CREATE TABLE verse(ref INTEGER PRIMARY KEY, words BLOB NOT NULL);
+                          CREATE TABLE nt_word(ref INTEGER, ord INTEGER, PRIMARY KEY(ref, ord));",
+        )
+        .unwrap();
+        let reference = pack_ref(40, 1, 1);
+        let compressed = zstd::bulk::compress("ܐ ܒ".as_bytes(), 3).unwrap();
+        db.execute(
+            "INSERT INTO verse VALUES (?1, ?2)",
+            params![reference, compressed],
+        )
+        .unwrap();
+        for ord in 0..2 {
+            db.execute(
+                "INSERT INTO nt_word VALUES (?1, ?2)",
+                params![reference, ord],
+            )
+            .unwrap();
+        }
+        let root =
+            std::env::temp_dir().join(format!("haqor-peshitta-compressed-{}", std::process::id()));
+        fs::create_dir_all(root.join("Haqor-Peshitta")).unwrap();
+        fs::write(
+            root.join(PESHITTA_TRANSLATION),
+            "40\t1:1\t[one|0] [two|1]\n",
+        )
+        .unwrap();
+        let peshitta = HashSet::from([reference]);
+        assert_eq!(
+            read_peshitta_overrides(&root, &db, &peshitta).unwrap()[&reference],
+            "[one|0] [two|1]"
+        );
         fs::remove_dir_all(root).unwrap();
     }
 }
