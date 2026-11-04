@@ -7374,14 +7374,23 @@ mod tests {
             "{spans:?}"
         );
         assert!(spans[0].text == "The book", "{spans:?}");
-        // The next chapter still uses the unreviewed Murdock fallback.
-        let unreviewed = bible.chapter_translation(40, 2).unwrap();
-        assert!(!unreviewed.is_empty());
-        assert!(
-            unreviewed
-                .iter()
-                .all(|(_, spans)| spans.iter().all(|s| s.words.is_empty()))
-        );
+        // Every verse of the opening reviewed chapters names source words.
+        for chapter in 1..=5 {
+            let translated = bible.chapter_translation(40, chapter).unwrap();
+            assert!(!translated.is_empty());
+            for (verse, spans) in translated {
+                assert!(
+                    spans.iter().any(|s| !s.words.is_empty()),
+                    "Matthew {chapter}:{verse}"
+                );
+                assert!(
+                    spans
+                        .iter()
+                        .flat_map(|s| &s.words)
+                        .all(|w| w.chapter == chapter && w.verse == verse)
+                );
+            }
+        }
         assert!(bible.greek_chapter_translation(1, 1).unwrap().is_empty());
     }
 

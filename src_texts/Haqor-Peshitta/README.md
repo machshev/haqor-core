@@ -7,8 +7,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1:1-25 (25 of 7,958 Peshitta verses).
-Matthew 2 is the next review batch.
+Current coverage: Matthew 1-5, 2 John, 3 John, and Jude
+(191 of 7,958 Peshitta verses). Matthew 6 is the next review batch.
 
 Each non-comment row is `book<TAB>chapter:verse<TAB>translation`, using
 Haqor's one-based book numbers (Matthew = 40), Peshitta verse numbering, and

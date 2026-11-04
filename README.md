@@ -230,7 +230,7 @@ footnotes and the Gospels' colophons are left out, and "lampstand" and
 "love" stand for his "candlestick" and "charity". His English renders no
 particular words. Haqor's reviewed overrides in
 `src_texts/Haqor-Peshitta/translation.tsv` add word-linked, source-order English,
-currently for Matthew 1. Unreviewed verses retain Murdock. See
+currently for Matthew 1-5, 2 John, 3 John, and Jude. Unreviewed verses retain Murdock. See
 [src_texts/Haqor-Peshitta/README.md](src_texts/Haqor-Peshitta/README.md) for the review
 format, coverage, and generation workflow.
 
