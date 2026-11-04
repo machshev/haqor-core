@@ -228,7 +228,11 @@ as the KJV does where the Peshitta does not; the import puts each right
 (`murdock::FIXES`), so that every verse of the Peshitta has its English. His
 footnotes and the Gospels' colophons are left out, and "lampstand" and
 "love" stand for his "candlestick" and "charity". His English renders no
-particular words.
+particular words. Haqor's reviewed overrides in
+`data/peshitta_translation.tsv` add word-linked, source-order English,
+currently for Matthew 1. Unreviewed verses retain Murdock. See
+[data/PESHITTA_TRANSLATION.md](data/PESHITTA_TRANSLATION.md) for the review
+format, coverage, and generation workflow.
 
 In all the English, the ULT's, the TR's word by word and Murdock's, ἐκκλησία is
 the "ecclesia" (plural "ecclesias") and never the "church"

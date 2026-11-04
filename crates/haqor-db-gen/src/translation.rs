@@ -31,11 +31,15 @@
 //! The results are two tables, one row per verse, written in the compact form
 //! [`haqor_core::translation`] reads. `translation_verse` is the English of
 //! the text the reader shows: the ULT for the Hebrew, and for the Peshitta
-//! Murdock's translation ([`crate::murdock`]), which renders no particular
-//! words. `greek_translation_verse` is the ULT's New Testament, its links
-//! naming words of the TR.
+//! Murdock's translation ([`crate::murdock`]). Murdock remains the readable
+//! fallback for every Peshitta verse; the optional
+//! `data/peshitta_translation.tsv` contains only reviewed, word-linked
+//! overrides. Its absence (or a verse's absence from it) deliberately leaves
+//! that verse unaligned. `greek_translation_verse` is the ULT's New Testament,
+//! its links naming words of the TR.
 
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
+use std::fs;
 use std::path::{Path, PathBuf};
 
 use anyhow::{Context, Result, bail};
@@ -44,6 +48,8 @@ use log::{debug, info};
 use rusqlite::{Connection, OptionalExtension, params};
 
 use crate::runtime_db::pack_ref;
+
+const PESHITTA_TRANSLATION: &str = "peshitta_translation.tsv";
 
 pub const SCHEMA: &str = "
 DROP TABLE IF EXISTS translation_verse;
@@ -1766,6 +1772,115 @@ pub struct TranslationBuild {
     pub bytes: usize,
 }
 
+/// Read the reviewed, word-linked Peshitta translation overrides. The file is
+/// deliberately optional: verses absent from it retain Murdock's translation
+/// and remain unaligned. Each override must account for every Peshitta word
+/// exactly once, in source order; punctuation and spaces may stand alone.
+fn read_peshitta_overrides(
+    data_dir: &Path,
+    db: &Connection,
+    peshitta: &HashSet<i64>,
+) -> Result<HashMap<i64, String>> {
+    let path = data_dir.join(PESHITTA_TRANSLATION);
+    if !path.exists() {
+        return Ok(HashMap::new());
+    }
+    let text = fs::read_to_string(&path).with_context(|| format!("reading {}", path.display()))?;
+    let mut overrides = HashMap::new();
+    for (line_no, line) in text.lines().enumerate() {
+        let line_no = line_no + 1;
+        let line = line.trim_end_matches('\r');
+        if line.trim().is_empty() || line.trim_start().starts_with('#') {
+            continue;
+        }
+        let mut fields = line.splitn(3, '\t');
+        let book: u8 = fields
+            .next()
+            .with_context(|| format!("{path:?}:{line_no}: missing book"))?
+            .parse()
+            .with_context(|| format!("{path:?}:{line_no}: invalid book"))?;
+        let cv = fields
+            .next()
+            .with_context(|| format!("{path:?}:{line_no}: missing chapter:verse"))?;
+        let (chapter, verse) = cv
+            .split_once(':')
+            .with_context(|| format!("{path:?}:{line_no}: invalid chapter:verse"))?;
+        let chapter: u8 = chapter.parse().context("invalid chapter")?;
+        let verse: u8 = verse.parse().context("invalid verse")?;
+        let english = fields
+            .next()
+            .with_context(|| format!("{path:?}:{line_no}: missing translation"))?;
+        let mut supplied = false;
+        let mut escaped = false;
+        for c in english.chars() {
+            if escaped {
+                escaped = false;
+            } else if c == '\\' {
+                escaped = true;
+            } else if c == '{' {
+                if supplied {
+                    bail!("{path:?}:{line_no}: nested supplied markup");
+                }
+                supplied = true;
+            } else if c == '}' {
+                if !supplied {
+                    bail!("{path:?}:{line_no}: unmatched supplied markup close");
+                }
+                supplied = false;
+            }
+        }
+        if escaped || supplied {
+            bail!("{path:?}:{line_no}: unclosed markup escape or supplied span");
+        }
+        let reference = pack_ref(book.into(), chapter.into(), verse.into());
+        if !peshitta.contains(&reference) {
+            bail!("{path:?}:{line_no}: {book}:{chapter}:{verse} is not a Peshitta verse");
+        }
+        if overrides.insert(reference, english.to_owned()).is_some() {
+            bail!("{path:?}:{line_no}: duplicate {book}:{chapter}:{verse}");
+        }
+        let spans = haqor_core::translation::parse(english, chapter, verse)
+            .with_context(|| format!("{path:?}:{line_no}: translation does not parse"))?;
+        let words: Vec<u8> = db.query_row(
+            "SELECT words FROM verse WHERE ref = ?1",
+            [reference],
+            |row| row.get(0),
+        )?;
+        let expected: Vec<u16> = String::from_utf8(words)
+            .with_context(|| format!("{path:?}:{line_no}: Peshitta words are not UTF-8"))?
+            .split_whitespace()
+            .enumerate()
+            .map(|(position, _)| position as u16)
+            .collect();
+        if expected.is_empty() {
+            bail!("{path:?}:{line_no}: Peshitta verse has no words");
+        }
+        let mut linked = Vec::new();
+        for span in &spans {
+            if !span.words.is_empty() && !span.text.chars().any(char::is_alphanumeric) {
+                bail!("{path:?}:{line_no}: linked text is empty");
+            }
+            if span.words.is_empty() && span.text.chars().any(|c| c.is_alphanumeric()) {
+                bail!("{path:?}:{line_no}: unlinked lexical text {:?}", span.text);
+            }
+            for word in &span.words {
+                if (word.chapter, word.verse) != (chapter, verse) {
+                    bail!("{path:?}:{line_no}: link leaves {book}:{chapter}:{verse}");
+                }
+                linked.push(word.position);
+            }
+        }
+        if linked != expected {
+            bail!(
+                "{path:?}:{line_no}: linked positions {:?}, expected {:?}",
+                linked,
+                expected
+            );
+        }
+    }
+    Ok(overrides)
+}
+
 /// One testament of a prepared ULT, built against its corpus: `query` reads
 /// a book's words in order (ref, position, text) between two refs.
 fn build_testament(
@@ -1880,6 +1995,14 @@ pub fn build_translation(
     build.peshitta_missing = peshitta.len() - build.peshitta;
     by_verse(&mut verses, HEBREW, "the Hebrew's English")?;
     by_verse(&mut verses, MURDOCK, "Murdock's English")?;
+    // Reviewed links are an opt-in overlay. Unreviewed Peshitta verses keep
+    // Murdock's readable text but deliberately remain unaligned.
+    let peshitta_overrides = read_peshitta_overrides(data_dir, &tx, &peshitta)?;
+    for (reference, english) in peshitta_overrides {
+        if let Some(existing) = verses.iter_mut().find(|(r, _)| *r == reference) {
+            existing.1 = english;
+        }
+    }
     by_verse(&mut greek, ADVERSARY, "the TR's English")?;
     by_verse(&mut greek, HINNOM, "the TR's English")?;
     let new_testament = pack_ref(40, 0, 0);
@@ -2367,8 +2490,8 @@ mod tests {
                WHERE ref < (40 << 16);
              CREATE TABLE surface(surface_id INTEGER PRIMARY KEY, text TEXT);
              INSERT INTO surface SELECT surface_id, text FROM src.surface;
-             CREATE TABLE verse(ref INTEGER PRIMARY KEY);
-             INSERT INTO verse SELECT ref FROM src.verse;
+             CREATE TABLE verse(ref INTEGER PRIMARY KEY, words BLOB NOT NULL);
+             INSERT INTO verse SELECT ref, words FROM src.verse;
              CREATE TABLE greek_word(ref INTEGER, position INTEGER, word TEXT,
                                      PRIMARY KEY(ref, position)) WITHOUT ROWID;
              INSERT INTO greek_word SELECT ref, position, word FROM src.greek_word;
@@ -2436,5 +2559,112 @@ mod tests {
                 "{reference}: {text}"
             );
         }
+    }
+
+    #[test]
+    fn peshitta_override_requires_every_word_in_order() {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute(
+            "CREATE TABLE verse(ref INTEGER PRIMARY KEY, words BLOB NOT NULL)",
+            [],
+        )
+        .unwrap();
+        let reference = pack_ref(40, 1, 1);
+        db.execute(
+            "INSERT INTO verse(ref, words) VALUES (?1, ?2)",
+            params![reference, "ܐ ܒ ܓ".as_bytes()],
+        )
+        .unwrap();
+        let root = std::env::temp_dir().join(format!(
+            "haqor-peshitta-override-{}-{}",
+            std::process::id(),
+            reference
+        ));
+        fs::create_dir_all(&root).unwrap();
+        fs::write(
+            root.join(PESHITTA_TRANSLATION),
+            "# reviewed\n40\t1:1\t[one|0] [two|1] [three|2].\n",
+        )
+        .unwrap();
+        let mut peshitta = HashSet::new();
+        peshitta.insert(reference);
+        let overrides = read_peshitta_overrides(&root, &db, &peshitta).unwrap();
+        assert_eq!(overrides[&reference], "[one|0] [two|1] [three|2].");
+        fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
+    fn peshitta_override_rejects_unlinked_words() {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute(
+            "CREATE TABLE verse(ref INTEGER PRIMARY KEY, words BLOB NOT NULL)",
+            [],
+        )
+        .unwrap();
+        let reference = pack_ref(40, 1, 1);
+        db.execute(
+            "INSERT INTO verse(ref, words) VALUES (?1, ?2)",
+            params![reference, "ܐ".as_bytes()],
+        )
+        .unwrap();
+        let root = std::env::temp_dir().join(format!(
+            "haqor-peshitta-override-bad-{}-{}",
+            std::process::id(),
+            reference
+        ));
+        fs::create_dir_all(&root).unwrap();
+        fs::write(root.join(PESHITTA_TRANSLATION), "40\t1:1\tword [one|0]\n").unwrap();
+        let mut peshitta = HashSet::new();
+        peshitta.insert(reference);
+        assert!(read_peshitta_overrides(&root, &db, &peshitta).is_err());
+        fs::remove_dir_all(root).unwrap();
+    }
+    #[test]
+    fn peshitta_override_rejects_invalid_links_and_markup() {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch("CREATE TABLE verse(ref INTEGER PRIMARY KEY, words BLOB NOT NULL)")
+            .unwrap();
+        let reference = pack_ref(40, 1, 1);
+        db.execute(
+            "INSERT INTO verse VALUES (?1, ?2)",
+            params![reference, "ܐ ܒ".as_bytes()],
+        )
+        .unwrap();
+        let root =
+            std::env::temp_dir().join(format!("haqor-peshitta-invalid-{}", std::process::id()));
+        fs::create_dir_all(&root).unwrap();
+        let peshitta = HashSet::from([reference]);
+        for text in [
+            "[one|0]",
+            "[one|0] [two|0]",
+            "[two|1] [one|0]",
+            "[one|0] [two|2]",
+            "[one|0] [two|2:1]",
+            "[|0] [two|1]",
+            "[.|0] [two|1]",
+            "{[one|0] [two|1]",
+            "[one|0] [two|1]}",
+            "word [one|0] [two|1]",
+            "[one|0] [two|1",
+            "[one|0] [two]",
+        ] {
+            fs::write(
+                root.join(PESHITTA_TRANSLATION),
+                format!("40\t1:1\t{text}\n"),
+            )
+            .unwrap();
+            assert!(
+                read_peshitta_overrides(&root, &db, &peshitta).is_err(),
+                "accepted {text}"
+            );
+        }
+        for rows in [
+            "40\t1:1\t[one|0] [two|1]\n40\t1:1\t[one|0] [two|1]\n",
+            "40\t1:2\t[one|0] [two|1]\n",
+        ] {
+            fs::write(root.join(PESHITTA_TRANSLATION), rows).unwrap();
+            assert!(read_peshitta_overrides(&root, &db, &peshitta).is_err());
+        }
+        fs::remove_dir_all(root).unwrap();
     }
 }

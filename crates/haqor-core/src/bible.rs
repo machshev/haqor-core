@@ -5644,8 +5644,9 @@ impl Bible {
     /// The English of every verse of a chapter that has some, in order, as
     /// `(verse, spans)`: the English of the text the reader shows. For the
     /// Old Testament it is adapted from the unfoldingWord Literal Text, each
-    /// span naming the Hebrew words it renders; for the New, James Murdock's
-    /// translation of the Peshitta, whose spans name no words. Empty for a
+    /// span naming the Hebrew words it renders; for the New it is Murdock's
+    /// translation of the Peshitta, with reviewed verses optionally naming
+    /// their source words. Unreviewed spans name no words. Empty for a
     /// database built before the table existed.
     pub fn chapter_translation(
         &self,
@@ -7361,14 +7362,25 @@ mod tests {
         assert_eq!(*verse, 1);
         assert!(spans[0].text.starts_with("A psalm"), "{spans:?}");
 
-        // Beside the Peshitta, Murdock's English, which names no words.
+        // Reviewed Peshitta English names every source word in Matthew 1:1.
         let matthew = bible.chapter_translation(40, 1).unwrap();
         let (verse, spans) = &matthew[0];
         assert_eq!(*verse, 1);
-        assert!(spans.iter().all(|s| s.words.is_empty()), "{spans:?}");
-        assert!(
-            spans[0].text.starts_with("THE book of the nativity"),
+        let words: Vec<_> = spans.iter().flat_map(|s| s.words.iter()).collect();
+        assert_eq!(words.len(), 8, "{spans:?}");
+        assert_eq!(
+            words.iter().map(|w| w.position).collect::<Vec<_>>(),
+            (0..8).collect::<Vec<_>>(),
             "{spans:?}"
+        );
+        assert!(spans[0].text == "The book", "{spans:?}");
+        // The next chapter still uses the unreviewed Murdock fallback.
+        let unreviewed = bible.chapter_translation(40, 2).unwrap();
+        assert!(!unreviewed.is_empty());
+        assert!(
+            unreviewed
+                .iter()
+                .all(|(_, spans)| spans.iter().all(|s| s.words.is_empty()))
         );
         assert!(bible.greek_chapter_translation(1, 1).unwrap().is_empty());
     }

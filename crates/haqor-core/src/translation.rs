@@ -12,8 +12,8 @@
 //!
 //! The New Testament's English beside the Greek is the ULT's too, aligned to
 //! the Textus Receptus, with Haqor's own where the TR reads otherwise; beside
-//! the Peshitta it is James Murdock's (1852), which renders no particular
-//! words, so its spans link none.
+//! the Peshitta it is James Murdock's (1852), with reviewed verses optionally
+//! overlaid by word-linked renderings. Unreviewed Murdock spans link none.
 //!
 //! In the stored form a verse is running text in which `[text|links]` marks
 //! English that renders particular source words. `links` is a comma-separated
