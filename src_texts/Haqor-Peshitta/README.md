@@ -1,6 +1,6 @@
 # Word-linked English of the Peshitta
 
-`peshitta_translation.tsv` contains Haqor's English renderings in Peshitta
+`translation.tsv` contains Haqor's English renderings in Peshitta
 word order, using James Murdock's public-domain translation as a reference.
 The unmodified reference remains in `src_texts/Murdock/murdock.tsv`.
 This is an incremental translation project: only the verses in the TSV have
@@ -16,6 +16,11 @@ zero-based source positions. `[English phrase|0]` links a phrase to one
 Aramaic word. `[English phrase|0,1]` renders a contiguous idiom together.
 Keep the links in source order. Prefixes and suffixes belong to their
 source word; a phrase may therefore translate more than one English word.
+
+Both `db gen-runtime` and `db gen-translation` load this tracked source
+from the supplied `--src-texts` directory on every build. The source file
+is required: a missing file fails the build instead of dropping the links.
+The runtime `haqor.db` is generated output.
 
 The generator rejects missing or duplicated source positions, reversed or
 cross-verse links, duplicate verse entries, empty renderings, unlinked

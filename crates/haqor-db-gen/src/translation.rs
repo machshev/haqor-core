@@ -32,10 +32,11 @@
 //! [`haqor_core::translation`] reads. `translation_verse` is the English of
 //! the text the reader shows: the ULT for the Hebrew, and for the Peshitta
 //! Murdock's translation ([`crate::murdock`]). Murdock remains the readable
-//! fallback for every Peshitta verse; the optional
-//! `data/peshitta_translation.tsv` contains only reviewed, word-linked
-//! overrides. Its absence (or a verse's absence from it) deliberately leaves
-//! that verse unaligned. `greek_translation_verse` is the ULT's New Testament,
+//! fallback for every unreviewed Peshitta verse;
+//! `src_texts/Haqor-Peshitta/translation.tsv` contains only reviewed, word-linked
+//! overrides. A verse absent from this file remains unaligned. Missing
+//! source files fail the build rather than silently discarding reviewed links.
+//! `greek_translation_verse` is the ULT's New Testament,
 //! its links naming words of the TR.
 
 use std::collections::{HashMap, HashSet};
@@ -49,7 +50,7 @@ use rusqlite::{Connection, OptionalExtension, params};
 
 use crate::runtime_db::pack_ref;
 
-const PESHITTA_TRANSLATION: &str = "peshitta_translation.tsv";
+const PESHITTA_TRANSLATION: &str = "Haqor-Peshitta/translation.tsv";
 
 pub const SCHEMA: &str = "
 DROP TABLE IF EXISTS translation_verse;
@@ -1773,18 +1774,15 @@ pub struct TranslationBuild {
 }
 
 /// Read the reviewed, word-linked Peshitta translation overrides. The file is
-/// deliberately optional: verses absent from it retain Murdock's translation
+/// a required source file: verses absent from it retain Murdock's translation
 /// and remain unaligned. Each override must account for every Peshitta word
 /// exactly once, in source order; punctuation and spaces may stand alone.
 fn read_peshitta_overrides(
-    data_dir: &Path,
+    src_texts: &Path,
     db: &Connection,
     peshitta: &HashSet<i64>,
 ) -> Result<HashMap<i64, String>> {
-    let path = data_dir.join(PESHITTA_TRANSLATION);
-    if !path.exists() {
-        return Ok(HashMap::new());
-    }
+    let path = src_texts.join(PESHITTA_TRANSLATION);
     let text = fs::read_to_string(&path).with_context(|| format!("reading {}", path.display()))?;
     let mut overrides = HashMap::new();
     for (line_no, line) in text.lines().enumerate() {
@@ -1921,7 +1919,8 @@ fn build_testament(
 
 /// Rebuild the translation tables of a runtime database in place: the ULT
 /// from the prepared files in `src_texts/unfoldingWord`, Haqor's supplement
-/// to it from `data_dir`, and Murdock's from `src_texts/Murdock`. The New
+/// to it from `data_dir`, and Murdock's from `src_texts/Murdock` with reviewed
+/// links from `src_texts/Haqor-Peshitta/translation.tsv`. The New
 /// Testament's are left out of a database without the TR (`greek_word`).
 pub fn build_translation(
     db: &Connection,
@@ -1995,9 +1994,10 @@ pub fn build_translation(
     build.peshitta_missing = peshitta.len() - build.peshitta;
     by_verse(&mut verses, HEBREW, "the Hebrew's English")?;
     by_verse(&mut verses, MURDOCK, "Murdock's English")?;
-    // Reviewed links are an opt-in overlay. Unreviewed Peshitta verses keep
+    // Reviewed links are loaded from versioned sources on every rebuild.
+    // Unreviewed Peshitta verses keep
     // Murdock's readable text but deliberately remain unaligned.
-    let peshitta_overrides = read_peshitta_overrides(data_dir, &tx, &peshitta)?;
+    let peshitta_overrides = read_peshitta_overrides(src_texts, &tx, &peshitta)?;
     for (reference, english) in peshitta_overrides {
         if let Some(existing) = verses.iter_mut().find(|(r, _)| *r == reference) {
             existing.1 = english;
@@ -2580,7 +2580,7 @@ mod tests {
             std::process::id(),
             reference
         ));
-        fs::create_dir_all(&root).unwrap();
+        fs::create_dir_all(root.join("Haqor-Peshitta")).unwrap();
         fs::write(
             root.join(PESHITTA_TRANSLATION),
             "# reviewed\n40\t1:1\t[one|0] [two|1] [three|2].\n",
@@ -2612,7 +2612,7 @@ mod tests {
             std::process::id(),
             reference
         ));
-        fs::create_dir_all(&root).unwrap();
+        fs::create_dir_all(root.join("Haqor-Peshitta")).unwrap();
         fs::write(root.join(PESHITTA_TRANSLATION), "40\t1:1\tword [one|0]\n").unwrap();
         let mut peshitta = HashSet::new();
         peshitta.insert(reference);
@@ -2632,7 +2632,7 @@ mod tests {
         .unwrap();
         let root =
             std::env::temp_dir().join(format!("haqor-peshitta-invalid-{}", std::process::id()));
-        fs::create_dir_all(&root).unwrap();
+        fs::create_dir_all(root.join("Haqor-Peshitta")).unwrap();
         let peshitta = HashSet::from([reference]);
         for text in [
             "[one|0]",
@@ -2664,6 +2664,37 @@ mod tests {
         ] {
             fs::write(root.join(PESHITTA_TRANSLATION), rows).unwrap();
             assert!(read_peshitta_overrides(&root, &db, &peshitta).is_err());
+        }
+        fs::remove_dir_all(root).unwrap();
+    }
+    #[test]
+    fn peshitta_source_is_required_and_reloaded_from_source_directory() {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch("CREATE TABLE verse(ref INTEGER PRIMARY KEY, words BLOB NOT NULL)")
+            .unwrap();
+        let reference = pack_ref(40, 1, 1);
+        db.execute(
+            "INSERT INTO verse VALUES (?1, ?2)",
+            params![reference, "ܐ".as_bytes()],
+        )
+        .unwrap();
+        let root =
+            std::env::temp_dir().join(format!("haqor-peshitta-source-{}", std::process::id()));
+        let _ = fs::remove_dir_all(&root);
+        fs::create_dir_all(root.join("Haqor-Peshitta")).unwrap();
+        let peshitta = HashSet::from([reference]);
+        assert!(read_peshitta_overrides(&root, &db, &peshitta).is_err());
+        for rendering in ["first", "changed"] {
+            let encoded = format!("[{rendering}|0]");
+            fs::write(
+                root.join(PESHITTA_TRANSLATION),
+                format!("40\t1:1\t{encoded}\n"),
+            )
+            .unwrap();
+            assert_eq!(
+                read_peshitta_overrides(&root, &db, &peshitta).unwrap()[&reference],
+                encoded
+            );
         }
         fs::remove_dir_all(root).unwrap();
     }
