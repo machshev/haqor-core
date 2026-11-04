@@ -21,13 +21,17 @@ ecclesia.
 
 ## Sources
 
-Arguments are written in Haqor's own words. A source is cited for where
-an argument is made at length, not quoted, unless the work is in the
-public domain. The `works` map names each work once, with its `licence`:
+Arguments are written in Haqor's own words and rest on Scripture: its
+passages are their references. Other sources are cited only for what
+Scripture cannot show, such as historical records and archaeology
+(Tacitus on Christus, Josephus on James). The `works` map names each
+such work once, with its `licence`:
 
 - `public-domain`: may be quoted in a source's `quote`.
-- `copyright`: cited by `loc` only. The argument, not the wording, is
-  used.
+- `copyright`: cited by `loc` only.
+
+Public-domain apologetics kept for reference, cited or not, are in
+`src_texts/Apologetics` (see its `README.md`).
 
 ## References
 
@@ -42,7 +46,8 @@ chapters (`Isa.52.13-53.12`).
 with an `id`, a `title`, and a `note` of a sentence.
 
 `works` maps each work's id to its `title`, `author`, `year` where known,
-its `licence`, and a `url` where it can be read.
+its `licence`, a `url` where it can be read, and the `file` in
+`src_texts` that holds it.
 
 Each entry of `entries` has:
 

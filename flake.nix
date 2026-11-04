@@ -88,6 +88,9 @@
 
                   sqlitebrowser
 
+                  # for the PDF scans in src_texts/Apologetics
+                  git-lfs
+
                   # bsondump, for scripts/fetch-sefaria-lexicons.sh
                   mongodb-tools
 
