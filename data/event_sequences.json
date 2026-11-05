@@ -8608,6 +8608,1114 @@
           ]
         }
       }
+    },
+    {
+      "id": "exile",
+      "title": "The exile in Babylon",
+      "note": "The seventy years Judah served Babylon, from the first captivity in the third year of Jehoiakim to the first year of Cyrus: the three deportations, the siege and burning of Jerusalem, the flight to Egypt and Jehoiachin's release. Judah's own kings are in the kings of Judah, Daniel's life in his own section, and the kings of Babylon, Media and Persia beside them in theirs. Dated after Jones, as the Bible timeline is; the foreign kings as historians date them.",
+      "expands": "The seventy years of servitude to Babylon",
+      "chains": [
+        {
+          "basis": "2 Kings 24-25; Jeremiah 52: the captivities in turn",
+          "events": [
+            "Jehoiakim bound; the first captivity",
+            "Jehoiachin carried to Babylon; the second captivity",
+            "The siege of Jerusalem",
+            "Jerusalem and the house of Yahweh burned",
+            "Gedaliah slain; the remnant flee to Egypt",
+            "The third captivity",
+            "Jehoiachin lifted up out of prison"
+          ]
+        },
+        {
+          "basis": "Jeremiah 29:1-2: written after Jeconiah was departed from Jerusalem",
+          "events": [
+            "Jehoiachin carried to Babylon; the second captivity",
+            "Jeremiah's letter to the captives"
+          ]
+        },
+        {
+          "basis": "Ezekiel 33:21: in the twelfth year of our captivity, one that had escaped",
+          "events": [
+            "Jerusalem and the house of Yahweh burned",
+            "Ezekiel hears that the city is smitten"
+          ]
+        }
+      ],
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Sections of the account; only the connecting lines assert an order between events.",
+          "groups": [
+            {
+              "title": "The first captivities",
+              "note": "606-588 BC",
+              "events": [
+                "Jehoiakim bound; the first captivity",
+                "Jehoiachin carried to Babylon; the second captivity",
+                "Jeremiah's letter to the captives",
+                "The siege of Jerusalem"
+              ]
+            },
+            {
+              "title": "The fall of Jerusalem",
+              "note": "586-585 BC",
+              "events": [
+                "Jerusalem and the house of Yahweh burned",
+                "Gedaliah slain; the remnant flee to Egypt",
+                "Ezekiel hears that the city is smitten"
+              ]
+            },
+            {
+              "title": "In Babylon",
+              "note": "582-561 BC",
+              "events": [
+                "The third captivity",
+                "Jehoiachin lifted up out of prison"
+              ]
+            }
+          ]
+        }
+      ],
+      "events": {
+        "Jehoiakim bound; the first captivity": {
+          "kinds": [
+            "judgement",
+            "journey"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            },
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Jehoiachin carried to Babylon; the second captivity": {
+          "kinds": [
+            "judgement",
+            "journey"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            },
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Jeremiah's letter to the captives": {
+          "kinds": [
+            "letter",
+            "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            },
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "The siege of Jerusalem": {
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Jerusalem and the house of Yahweh burned": {
+          "kinds": [
+            "judgement"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            },
+            {
+              "key": "Riblah@2Ki.23.33",
+              "label": "Riblah, in the land of Hamath"
+            },
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Gedaliah slain; the remnant flee to Egypt": {
+          "kinds": [
+            "death",
+            "journey"
+          ],
+          "places": [
+            {
+              "key": "Mizpah@Jos.18.26",
+              "label": "Mizpah"
+            },
+            {
+              "key": "Tahpanhes@Jer.2.16",
+              "label": "Tahpanhes, in Egypt"
+            }
+          ]
+        },
+        "Ezekiel hears that the city is smitten": {
+          "kinds": [
+            "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Chebar@Ezk.1.1",
+              "label": "The river Chebar"
+            }
+          ]
+        },
+        "The third captivity": {
+          "kinds": [
+            "journey"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Jehoiachin lifted up out of prison": {
+          "kinds": [
+            "encounter"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        }
+      }
+    },
+    {
+      "id": "daniel",
+      "title": "The life of Daniel",
+      "note": "Daniel in Babylon, from his captivity as a youth in the third year of Jehoiakim to his last vision in the third year of Cyrus, some seventy years: dated by the years of the kings his chapters name. Chapters 3 and 4 name no year; chapter 3 is placed in the eighteenth year of Nebuchadnezzar, as the Greek reads, and chapter 4 late in his reign. Chapters 5 and 6, and 7 to 9, are told out of order, so the order here is by their kings' years. The kings themselves are in the kings of Babylon, Media and Persia.",
+      "expands": "Prophecies of Daniel",
+      "chains": [
+        {
+          "basis": "Daniel 1-12: by the years of the kings",
+          "events": [
+            "Daniel and his companions in the king's service",
+            "Nebuchadnezzar's dream of the image",
+            "Daniel's vision of the four beasts",
+            "Daniel's vision of the ram and the he-goat",
+            "Belshazzar's feast: the writing on the wall",
+            "Daniel's prayer: the seventy weeks",
+            "Daniel's last vision by the Hiddekel"
+          ]
+        },
+        {
+          "basis": "Daniel 3:12: the Jews whom thou hast set over the province (2:49)",
+          "events": [
+            "Nebuchadnezzar's dream of the image",
+            "The image of gold and the burning fiery furnace"
+          ]
+        },
+        {
+          "basis": "Daniel 4:9: Belteshazzar, master of the magicians (2:48)",
+          "events": [
+            "Nebuchadnezzar's dream of the image",
+            "Nebuchadnezzar driven out seven times"
+          ]
+        },
+        {
+          "basis": "Daniel 5:18-21: Nebuchadnezzar's humbling told to Belshazzar",
+          "events": [
+            "Nebuchadnezzar driven out seven times",
+            "Belshazzar's feast: the writing on the wall"
+          ]
+        },
+        {
+          "basis": "Daniel 5:30-6:1: Darius the Mede took the kingdom",
+          "events": [
+            "Belshazzar's feast: the writing on the wall",
+            "Daniel in the den of lions"
+          ]
+        },
+        {
+          "basis": "Daniel 6:28: Daniel prospered in the reign of Darius, and of Cyrus",
+          "events": [
+            "Daniel in the den of lions",
+            "Daniel's last vision by the Hiddekel"
+          ]
+        }
+      ],
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Sections of the account; only the connecting lines assert an order between events.",
+          "groups": [
+            {
+              "title": "Under Nebuchadnezzar",
+              "note": "Daniel 1-4",
+              "events": [
+                "Daniel and his companions in the king's service",
+                "Nebuchadnezzar's dream of the image",
+                "The image of gold and the burning fiery furnace",
+                "Nebuchadnezzar driven out seven times"
+              ]
+            },
+            {
+              "title": "Under Belshazzar",
+              "note": "Daniel 5, 7-8",
+              "events": [
+                "Daniel's vision of the four beasts",
+                "Daniel's vision of the ram and the he-goat",
+                "Belshazzar's feast: the writing on the wall"
+              ]
+            },
+            {
+              "title": "Under Darius and Cyrus",
+              "note": "Daniel 6, 9-12",
+              "events": [
+                "Daniel in the den of lions",
+                "Daniel's prayer: the seventy weeks",
+                "Daniel's last vision by the Hiddekel"
+              ]
+            }
+          ]
+        }
+      ],
+      "events": {
+        "Daniel and his companions in the king's service": {
+          "kinds": [
+            "calling"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Nebuchadnezzar's dream of the image": {
+          "kinds": [
+            "prophecy"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "The image of gold and the burning fiery furnace": {
+          "kinds": [
+            "sign"
+          ],
+          "places": [
+            {
+              "key": "Dura@Dan.3.1",
+              "label": "The plain of Dura"
+            }
+          ]
+        },
+        "Nebuchadnezzar driven out seven times": {
+          "kinds": [
+            "judgement",
+            "prophecy"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Daniel's vision of the four beasts": {
+          "kinds": [
+            "prophecy"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Daniel's vision of the ram and the he-goat": {
+          "kinds": [
+            "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan, by the river Ulai"
+            }
+          ]
+        },
+        "Belshazzar's feast: the writing on the wall": {
+          "kinds": [
+            "judgement",
+            "prophecy"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Daniel in the den of lions": {
+          "kinds": [
+            "sign"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Daniel's prayer: the seventy weeks": {
+          "kinds": [
+            "prophecy"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Daniel's last vision by the Hiddekel": {
+          "kinds": [
+            "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Tigris@Gen.2.14",
+              "label": "Hiddekel, the great river"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "restoration",
+      "title": "The return: Ezra, Esther and Nehemiah",
+      "note": "From Cyrus's decree to Nehemiah's last reforms: the first return and the house of God built under Zerubbabel and Jeshua (Ezra 1-6), Esther in Shushan under Ahasuerus, Ezra's going up in the seventh year of Artaxerxes (Ezra 7-10), and Nehemiah's walls in his twentieth (Nehemiah). The Persian kings are in the kings of Babylon, Media and Persia. Ezra 4:6-23 tells, out of order, of opposition under Ahasuerus and Artaxerxes; each part is placed in its own reign. Ahasuerus is taken as Xerxes, and the Artaxerxes of Ezra 7 and Nehemiah as Artaxerxes I, his years counted from the autumn as the Jews counted them.",
+      "chains": [
+        {
+          "basis": "Ezra 1-6: the house of God rebuilt",
+          "events": [
+            "Cyrus's decree: the house of God to be built",
+            "The first return under Zerubbabel and Jeshua",
+            "The altar built; the feast of tabernacles kept",
+            "The foundation of the house of Yahweh laid",
+            "The work on the house of God ceases",
+            "Haggai and Zechariah stir up the building",
+            "Tattenai's letter; Darius finds Cyrus's decree",
+            "The house of God finished and dedicated",
+            "The passover kept in the new house"
+          ]
+        },
+        {
+          "basis": "Ezra 4:5-6: Ahasuerus reigned after Darius",
+          "events": [
+            "The house of God finished and dedicated",
+            "Accusation against Judah in the reign of Ahasuerus"
+          ]
+        },
+        {
+          "basis": "Esther 1-10",
+          "events": [
+            "Vashti deposed at the feast of Ahasuerus",
+            "Esther made queen",
+            "Haman's decree to destroy the Jews",
+            "Esther goes in to the king; Haman hanged",
+            "The Jews delivered; the feast of Purim"
+          ]
+        },
+        {
+          "basis": "Ezra 4:6-7: Ahasuerus before Artaxerxes",
+          "events": [
+            "The Jews delivered; the feast of Purim",
+            "Ezra goes up from Babylon"
+          ]
+        },
+        {
+          "basis": "Ezra 7:1: after these things, in the reign of Artaxerxes",
+          "events": [
+            "The passover kept in the new house",
+            "Ezra goes up from Babylon",
+            "Ezra's reform: the strange wives put away"
+          ]
+        },
+        {
+          "basis": "Ezra 4:7-23: undated in the reign of Artaxerxes",
+          "events": [
+            "Letter to Artaxerxes: the building of the city stopped"
+          ]
+        },
+        {
+          "basis": "Nehemiah 1-13",
+          "events": [
+            "Nehemiah hears of Jerusalem's affliction",
+            "Nehemiah sent to build the wall",
+            "The wall built in fifty and two days",
+            "Ezra reads the law; the feast of tabernacles",
+            "The covenant sealed",
+            "The wall dedicated",
+            "Nehemiah returns and cleanses the house and the sabbath"
+          ]
+        },
+        {
+          "basis": "Nehemiah 5:14: governor from the twentieth year unto the two and thirtieth",
+          "events": [
+            "Nehemiah sent to build the wall",
+            "Nehemiah governor of Judah",
+            "Nehemiah returns and cleanses the house and the sabbath"
+          ]
+        },
+        {
+          "basis": "Nehemiah 8:1: Ezra the scribe, come up before",
+          "events": [
+            "Ezra goes up from Babylon",
+            "Ezra reads the law; the feast of tabernacles"
+          ]
+        }
+      ],
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Sections of the account; only the connecting lines assert an order between events.",
+          "groups": [
+            {
+              "title": "The first return and the house of God",
+              "note": "Ezra 1-6; Haggai; Zechariah. 536-515 BC",
+              "events": [
+                "Cyrus's decree: the house of God to be built",
+                "The first return under Zerubbabel and Jeshua",
+                "The altar built; the feast of tabernacles kept",
+                "The foundation of the house of Yahweh laid",
+                "The work on the house of God ceases",
+                "Haggai and Zechariah stir up the building",
+                "Tattenai's letter; Darius finds Cyrus's decree",
+                "The house of God finished and dedicated",
+                "The passover kept in the new house"
+              ]
+            },
+            {
+              "title": "Esther in Shushan",
+              "note": "Ezra 4:6; Esther. 486-473 BC",
+              "events": [
+                "Accusation against Judah in the reign of Ahasuerus",
+                "Vashti deposed at the feast of Ahasuerus",
+                "Esther made queen",
+                "Haman's decree to destroy the Jews",
+                "Esther goes in to the king; Haman hanged",
+                "The Jews delivered; the feast of Purim"
+              ]
+            },
+            {
+              "title": "Ezra",
+              "note": "Ezra 4:7-23; 7-10. 457-446 BC",
+              "events": [
+                "Ezra goes up from Babylon",
+                "Ezra's reform: the strange wives put away",
+                "Letter to Artaxerxes: the building of the city stopped"
+              ]
+            },
+            {
+              "title": "Nehemiah",
+              "note": "Nehemiah. 445-432 BC",
+              "events": [
+                "Nehemiah hears of Jerusalem's affliction",
+                "Nehemiah sent to build the wall",
+                "Nehemiah governor of Judah",
+                "The wall built in fifty and two days",
+                "Ezra reads the law; the feast of tabernacles",
+                "The covenant sealed",
+                "The wall dedicated",
+                "Nehemiah returns and cleanses the house and the sabbath"
+              ]
+            }
+          ]
+        }
+      ],
+      "events": {
+        "Cyrus's decree: the house of God to be built": {
+          "kinds": [
+            "letter"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "The first return under Zerubbabel and Jeshua": {
+          "kinds": [
+            "journey"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            },
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "The altar built; the feast of tabernacles kept": {
+          "kinds": [
+            "feast"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "The foundation of the house of Yahweh laid": {
+          "kinds": [
+            "covenant"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "The work on the house of God ceases": {
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Haggai and Zechariah stir up the building": {
+          "kinds": [
+            "prophecy"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Tattenai's letter; Darius finds Cyrus's decree": {
+          "kinds": [
+            "letter",
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Ecbatana@Ezr.6.2",
+              "label": "Achmetha, in the province of the Medes"
+            },
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "The house of God finished and dedicated": {
+          "kinds": [
+            "feast"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "The passover kept in the new house": {
+          "kinds": [
+            "feast"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Accusation against Judah in the reign of Ahasuerus": {
+          "kinds": [
+            "conflict",
+            "letter"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Vashti deposed at the feast of Ahasuerus": {
+          "kinds": [
+            "feast"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan the palace"
+            }
+          ]
+        },
+        "Esther made queen": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan the palace"
+            }
+          ]
+        },
+        "Haman's decree to destroy the Jews": {
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan the palace"
+            }
+          ]
+        },
+        "Esther goes in to the king; Haman hanged": {
+          "kinds": [
+            "judgement"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan the palace"
+            }
+          ]
+        },
+        "The Jews delivered; the feast of Purim": {
+          "kinds": [
+            "feast"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan the palace"
+            }
+          ]
+        },
+        "Ezra goes up from Babylon": {
+          "kinds": [
+            "journey"
+          ],
+          "places": [
+            "Babylon@Gen.10.10",
+            {
+              "key": "Ahava@Ezr.8.15",
+              "label": "The river Ahava"
+            },
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Ezra's reform: the strange wives put away": {
+          "kinds": [
+            "covenant"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Letter to Artaxerxes: the building of the city stopped": {
+          "kinds": [
+            "conflict",
+            "letter"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Nehemiah hears of Jerusalem's affliction": {
+          "kinds": [
+            "calling"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan the palace"
+            }
+          ]
+        },
+        "Nehemiah sent to build the wall": {
+          "kinds": [
+            "journey"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan the palace"
+            },
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Nehemiah governor of Judah": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "The wall built in fifty and two days": {
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Ezra reads the law; the feast of tabernacles": {
+          "kinds": [
+            "teaching",
+            "feast"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "The covenant sealed": {
+          "kinds": [
+            "covenant"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "The wall dedicated": {
+          "kinds": [
+            "feast"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        },
+        "Nehemiah returns and cleanses the house and the sabbath": {
+          "kinds": [
+            "judgement",
+            "journey"
+          ],
+          "places": [
+            {
+              "key": "Jerusalem@Gen.14.18",
+              "label": "Jerusalem"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "empires",
+      "title": "The kings of Babylon, Media and Persia",
+      "note": "The kingdoms Judah served from the fall of Nineveh to the last Persian king the Old Testament names: the head of gold and the breast and arms of silver (Daniel 2). Dated as historians date them, from the Babylonian Chronicles, Herodotus and the Persian inscriptions; kings the Bible does not name are here so their reigns can be read against Judah's. Darius the Mede, whom the Babylonian records do not name, reigns two years between the fall of Babylon and the first year of Cyrus, after Daniel and Jones.",
+      "chains": [
+        {
+          "basis": "The Babylonian Chronicles: Nineveh, then Carchemish, then Nebuchadnezzar's accession",
+          "events": [
+            "Reign of Nabopolassar",
+            "Fall of Nineveh",
+            "Battle of Carchemish",
+            "Reign of Nebuchadnezzar"
+          ]
+        },
+        {
+          "basis": "The Babylonian king lists: the kings of Babylon in turn",
+          "events": [
+            "Reign of Nebuchadnezzar",
+            "Reign of Evil-merodach",
+            "Reign of Neriglissar",
+            "Reign of Nabonidus",
+            "Reign of Belshazzar"
+          ]
+        },
+        {
+          "basis": "Herodotus 1: the kings of the Medes",
+          "events": [
+            "Reign of Cyaxares",
+            "Fall of Nineveh"
+          ]
+        },
+        {
+          "basis": "Herodotus 1: Astyages, then Cyrus over the Medes",
+          "events": [
+            "Reign of Cyaxares",
+            "Reign of Astyages",
+            "Cyrus takes the kingdom of the Medes"
+          ]
+        },
+        {
+          "basis": "Daniel 8:3: the higher horn came up last",
+          "events": [
+            "Reign of Cyrus",
+            "Cyrus takes the kingdom of the Medes",
+            "Babylon taken by the Medes and Persians"
+          ]
+        },
+        {
+          "basis": "Daniel 5:30-31: that night Belshazzar slain, and Darius the Median took the kingdom",
+          "events": [
+            "Reign of Belshazzar",
+            "Babylon taken by the Medes and Persians",
+            "Reign of Darius the Mede"
+          ]
+        },
+        {
+          "basis": "Ezra 4:5-7; Nehemiah 12:22: the kings of Persia in turn",
+          "events": [
+            "Reign of Cyrus",
+            "Reign of Cambyses",
+            "Reign of Darius I",
+            "Reign of Ahasuerus (Xerxes)",
+            "Reign of Artaxerxes",
+            "Reign of Darius II"
+          ]
+        }
+      ],
+      "groupings": [
+        {
+          "id": "episodes",
+          "title": "Episodes",
+          "note": "Sections of the account; only the connecting lines assert an order between events.",
+          "groups": [
+            {
+              "title": "Nineveh to Carchemish",
+              "note": "626-605 BC",
+              "events": [
+                "Reign of Nabopolassar",
+                "Reign of Cyaxares",
+                "Fall of Nineveh",
+                "Battle of Carchemish",
+                "Reign of Nebuchadnezzar"
+              ]
+            },
+            {
+              "title": "Babylon's last kings; Persia rises",
+              "note": "585-539 BC",
+              "events": [
+                "Reign of Astyages",
+                "Reign of Evil-merodach",
+                "Reign of Neriglissar",
+                "Reign of Cyrus",
+                "Reign of Nabonidus",
+                "Reign of Belshazzar",
+                "Cyrus takes the kingdom of the Medes"
+              ]
+            },
+            {
+              "title": "Babylon taken",
+              "note": "539 BC",
+              "events": [
+                "Babylon taken by the Medes and Persians",
+                "Reign of Darius the Mede"
+              ]
+            },
+            {
+              "title": "The kings of Persia",
+              "note": "530-405 BC",
+              "events": [
+                "Reign of Cambyses",
+                "Reign of Darius I",
+                "Reign of Ahasuerus (Xerxes)",
+                "Reign of Artaxerxes",
+                "Reign of Darius II"
+              ]
+            }
+          ]
+        }
+      ],
+      "events": {
+        "Reign of Nabopolassar": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Reign of Cyaxares": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            {
+              "key": "Ecbatana@Ezr.6.2",
+              "label": "Ecbatana, in Media"
+            }
+          ]
+        },
+        "Fall of Nineveh": {
+          "kinds": [
+            "judgement"
+          ],
+          "places": [
+            "Nineveh@Gen.10.11"
+          ]
+        },
+        "Battle of Carchemish": {
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            "Carchemish@2Ch.35.20"
+          ]
+        },
+        "Reign of Nebuchadnezzar": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Reign of Astyages": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            {
+              "key": "Ecbatana@Ezr.6.2",
+              "label": "Ecbatana, in Media"
+            }
+          ]
+        },
+        "Reign of Evil-merodach": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Reign of Neriglissar": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Reign of Cyrus": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Persia@2Ch.36.20",
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Reign of Nabonidus": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Reign of Belshazzar": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Cyrus takes the kingdom of the Medes": {
+          "kinds": [
+            "conflict"
+          ],
+          "places": [
+            {
+              "key": "Ecbatana@Ezr.6.2",
+              "label": "Ecbatana, in Media"
+            }
+          ]
+        },
+        "Babylon taken by the Medes and Persians": {
+          "kinds": [
+            "judgement"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Reign of Darius the Mede": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Babylon@Gen.10.10"
+          ]
+        },
+        "Reign of Cambyses": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Persia@2Ch.36.20"
+          ]
+        },
+        "Reign of Darius I": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan"
+            }
+          ]
+        },
+        "Reign of Ahasuerus (Xerxes)": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan the palace"
+            }
+          ]
+        },
+        "Reign of Artaxerxes": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            {
+              "key": "Susa@Ezr.4.9",
+              "label": "Shushan the palace"
+            }
+          ]
+        },
+        "Reign of Darius II": {
+          "kinds": [
+            "reign"
+          ],
+          "places": [
+            "Persia@2Ch.36.20"
+          ]
+        }
+      }
     }
   ]
 }

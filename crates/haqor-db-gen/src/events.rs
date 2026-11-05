@@ -692,6 +692,17 @@ pub(crate) fn build(
                 continue;
             }
         };
+        // A name with an `@` is a TIPNR record's key, for a person or place
+        // Theographic tags no event with.
+        for name in ["people", "places"]
+            .iter()
+            .flat_map(|field| event[*field].as_array().into_iter().flatten())
+            .filter_map(Value::as_str)
+        {
+            if name.contains('@') && !by_key.contains_key(name) {
+                faults.push(format!("{at}: {name}, no TIPNR record"));
+            }
+        }
         let row = Row {
             id,
             year: match event["year"].as_i64() {
@@ -750,7 +761,7 @@ pub(crate) fn build(
             .flat_map(|field| row.event[*field].as_array().into_iter().flatten())
             .filter_map(Value::as_str)
         {
-            let Some(&entity) = entity_of.get(name) else {
+            let Some(&entity) = entity_of.get(name).or_else(|| by_key.get(name)) else {
                 continue;
             };
             if (ord < birth && entity == jesus) || !seen.insert(entity) {
@@ -943,6 +954,20 @@ mod tests {
         };
         assert_eq!(year("Creation of all things"), -4004);
         assert_eq!(year("The Great Flood begins"), -2348);
+        // The exile and return, Haqor's own events, dated BC without a year 0.
+        assert_eq!(year("Jerusalem and the house of Yahweh burned"), -586);
+        assert_eq!(year("Cyrus's decree: the house of God to be built"), -536);
+        assert_eq!(year("Nehemiah sent to build the wall"), -444);
+        // An added event names a TIPNR record by its key.
+        let named: i64 = db
+            .query_row(
+                "SELECT count(*) FROM bible_event_name n JOIN bible_event e USING (event_id) \
+                 WHERE e.title = 'Reign of Nebuchadnezzar'",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+        assert_eq!(named, 2);
         // No event before the creation.
         let earliest: i32 = db
             .query_row("SELECT min(year) FROM bible_event", [], |row| row.get(0))

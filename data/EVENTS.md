@@ -32,9 +32,10 @@ Edit `event_overrides.json` to correct Theographic, then run `db gen-names`:
 - `added` gives Haqor's own events, where Theographic has one event for
   several: each an `id` from 10001, a `title`, the `id` of the event it comes
   `after` (it follows it, in its year unless it gives a `year`), and `verses`,
-  `duration`, `note`, and `people` and `places` by Theographic's ids. The
-  temptations are three: Theographic's, retitled to the wilderness, then the
-  pinnacle of the temple and the high mountain.
+  `duration`, `note`, and `people` and `places` by Theographic's ids, or by
+  a TIPNR record's key (`Nebuchadnezzar@2Ki.24.1`) for one Theographic tags
+  no event with. The temptations are three: Theographic's, retitled to the
+  wilderness, then the pinnacle of the temple and the high mountain.
 - `names` gives a person or place, by Theographic's id (`mary_1943`), the
   TIPNR record it is (`key`, as in `src_texts/STEPBible-Data/names.jsonl`), or
   `null` to leave it off every event.

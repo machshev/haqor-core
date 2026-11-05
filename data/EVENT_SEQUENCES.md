@@ -173,3 +173,32 @@ summaries state the assumptions and the app marks their positions as estimates.
 Siloam is no longer Jesus' destination, and the priests' council in John 11 is
 not assigned to his travel track. Jerusalem events use separate estimated city
 sites rather than one shared city-centre point where the narrative permits it.
+
+## The exile and the return
+
+Theographic has only the prophets' ministries between Josiah and Malachi, so
+Haqor adds its own events for them (`event_overrides.json`, ids 10126 on), in
+four sections:
+
+- `exile` expands `The seventy years of servitude to Babylon` (606-536 BC,
+  Jeremiah 25:11): the three deportations, the siege and burning of Jerusalem,
+  Gedaliah and the flight to Egypt, and Jehoiachin's release.
+- `daniel` expands `Prophecies of Daniel`: his life, from the first captivity
+  to the third year of Cyrus, dated by the kings' years his chapters give.
+  Chapters 3 and 4 give none: 3 takes the Greek's eighteenth year of
+  Nebuchadnezzar, and 4 is placed late in his reign.
+- `restoration` stands alone: Ezra 1-6 with Haggai and Zechariah, Esther,
+  Ezra 7-10 and Nehemiah. Ahasuerus is Xerxes, and Ezra's and Nehemiah's
+  Artaxerxes is Artaxerxes I, his years counted from Tishri, so that Ezra goes
+  up in 457 (the start of Daniel's seventy weeks on the app's timeline) and
+  Nehemiah in 444. The undated parts of Ezra 4 are placed in their kings'
+  reigns.
+- `empires` stands alone: the kings of Babylon, Media and Persia from
+  Nabopolassar to Darius II, dated as historians date them, including those
+  the Bible does not name, with Nineveh, Carchemish, Cyrus's taking of Media
+  and the fall of Babylon.
+
+Judah's own dates stay Jones's, as the rest of the timeline's: the first
+captivity in 606, Jerusalem burned in 586, and Cyrus's first year (Ezra 1:1)
+in 536, after the two years of Darius the Mede. Historians date Cyrus's first
+year in Babylon to 538; the decree's note says so.
