@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-6, 2 John, 3 John, and Jude
-(3,237 of 7,958 Peshitta verses; 4,721 remain). John 7 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-7, 2 John, 3 John, and Jude
+(3,290 of 7,958 Peshitta verses; 4,668 remain). John 8 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1291,3 +1291,16 @@ Source checks for John 6:
 - John 6:50-58 preserves the recorded descent tense, the adjective חיא as “living” in “living bread,” the final active “I give for the life of the world,” and the body/give/us roles in the Jews' question. The body/blood, abiding, life, and last-day clauses remain explicit; John 6:58 retains manna and the fathers' death rather than inserting a second bread noun.
 - John 6:59-66 distinguishes synagogue narration, disciples' reaction, Jesus' reply and the narrator's knowledge explanation. John 6:60 takes מנ תלמידוהי as the partitive with “many,” yielding “many of his disciples, on hearing this,” rather than inventing outsiders hearing from them. John 6:62 retains the conditional question without supplying an apodosis; the Spirit/body/words and nonbelief clauses remain explicit.
 - John 6:67 retains the contextual yes/no question “Do you also want to leave?” CAL records למא as a general interrogative in Syriac direct speech (https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c). John 6:68-71 consistently uses Simon Cephas, retains “the Messiah, the Son of the living God,” the adversary predicate, Judas son of Simon Iscariot, and “one of the twelve.”
+
+Source checks for John 7:
+
+- John 7:1-10 preserves Galilee/Judea, the festival of Booths, the brothers' request and nonbelief, and the time/readiness contrasts. John 7:8 retains “this festival” in the first command and “to this festival now” in Jesus' response; the later secret ascent remains distinct.
+- John 7:11-15 keeps the Jews' search, crowd murmuring because of Jesus, the contrasting good/deceiver reports, fear, the festival's halfway point, temple teaching, and the book/learning question. The explanatory גיר in John 7:12 remains “For.”
+- John 7:16-18 preserves teaching from the sender and the question of the speaker's own initiative. John 7:18's second relative clause has its own subject: “whoever seeks the glory of the one who sent him” is true, contrasting with the person seeking his own glory.
+- John 7:19-24 retains the negative in “Did not Moses give you the law?”, the crowd's demon accusation, the one deed and amazement, circumcision's origin parenthesis, the whole man's Sabbath healing, and righteous judgment. John 7:22's מטל הנא is “For this reason,” distinct from the circumcision noun.
+- John 7:23 retains the purpose clause “so that Moses' law is not set aside.” CAL explicitly lists meṭṭol with a preformative as “in order to, so that” (https://cal.huc.edu/oneentry.php?cits=all&lemma=m%2Bwl+c). The following עלי, “at me,” belongs to the grumbling clause, not to Moses' law.
+- John 7:25-31 keeps the Jerusalem speakers, “our elders” from the first-person plural suffix, the known/unknown origin contrast, the sender and hearers' knowledge, the still-unarrived hour, and the more-signs question. John 7:28's fronted ולי begins “You know me”; it is distinct from the preceding speech verb and is not a new recipient “to me.”
+- John 7:32-36 preserves the chief-priest/Pharisee officers, the speaker's departure and search promises, and the crowd's repeated question. The future/go predicate in John 7:35 stays in its own linked clause about going to the regions of the Gentiles, followed by teaching the Gentiles.
+- John 7:37-43 distinguishes Jesus' invitation and living-water saying from the narrator's explicit Spirit explanation: the Spirit had not yet been given, because Jesus had not yet been glorified. The prophet/Messiah reports, David/Bethlehem origin question, and division because of Jesus remain explicit.
+- John 7:44-49 preserves attempted seizure, untouched hands, the officers' return and reply, and the Pharisees' questions. The source's plural accursed predicate is rendered with natural English agreement: “these people ... do not know ... they are accursed.”
+- John 7:50-53 retains Nicodemus' membership and previous nighttime visit, “our law,” hearing before judgment, the Galilee challenge, “Search and see for yourself,” the no-prophet claim, and each person's departure to his own house. Speaker changes and nested quotations are punctuated across the actual verse boundaries.
