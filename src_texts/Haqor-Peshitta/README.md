@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-5, 2 John, 3 John, and Jude
-(1,316 of 7,958 Peshitta verses; 6,642 remain). Mark 6 is next.
+Current coverage: Matthew 1-28, Mark 1-6, 2 John, 3 John, and Jude
+(1,372 of 7,958 Peshitta verses; 6,586 remain). Mark 7 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -205,3 +205,17 @@ Source checks for Mark 5:
   another textual tradition is supplied.
 - In 5:42 the first past auxiliary belongs to the walking predicate. The
   following existential clause explains that she was twelve years old.
+
+Source checks for Mark 6:
+
+- In 6:20 the adverb "gladly" belongs to hearing John, following the
+  separate statement that Herod listened and acted in many matters.
+- In 6:21 the linked compound means "birthday", rather than a literal
+  house of birth; compare the
+  [CAL entry for beth yalda](https://cal.huc.edu/oneentry.php?cits=all&lemma=byt%40yld%29+N).
+- In 6:41 the plural verb says that they divided the two fish. In 6:43
+  the twelve full baskets contain fragments and fish; fragments are not
+  omitted or assigned to the fish noun.
+- In 6:45 Bethsaida is explicitly named as the destination. In 6:52
+  the demonstrative specifies "that bread"; in 6:56 the streets are
+  explicitly retained as the place where the sick were being laid.
