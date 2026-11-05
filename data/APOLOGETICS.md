@@ -49,8 +49,14 @@ with an `id`, a `title`, and a `note` of a sentence.
 is shown them, each with an `id` and a `title`: the Trinity, going to
 heaven at death, the devil. An entry names its topics in `topics`.
 
-`audiences` lists whom a conversation may be with: a denomination, or
-another faith or none. Each has an `id`, a `title`, a `note` on what they
+`religions` lists the faiths, and none, that audiences belong to, in the
+order a reader is shown them: Christianity, Judaism, Islam, Hinduism,
+Sikhism, Buddhism, no religion. Each has an `id`, a `title` and a `note`
+on who they are and where to begin, and at least one audience.
+
+`audiences` lists whom a conversation may be with: a denomination or
+school of a religion, or none, grouped under its religion in the order
+shown. Each has an `id`, its `religion`, a `title`, a `note` on what they
 hold and where to begin, `agree`, the entries they agree with, and
 `differ`, those where they differ, each in the order to raise them. An
 entry is listed once per audience.
@@ -84,11 +90,12 @@ Each entry of `entries` has:
 ## Building
 
 `db gen-apologetics` (or `db gen-runtime`) builds the file into
-`haqor.db`: `apologetic_subject`, `apologetic_topic`, `apologetic_audience`
-(its entries' ids as JSON in `agree` and `differ`), `apologetic` (each entry, its points,
-objections, related entries and topics as JSON in `detail`) and
-`apologetic_passage`, the passages the reader marks, renumbered onto the
-Hebrew text as `prophecies.json`'s are. After an edit, rebuild with
+`haqor.db`: `apologetic_subject`, `apologetic_topic`,
+`apologetic_religion`, `apologetic_audience` (its religion, and its
+entries' ids as JSON in `agree` and `differ`), `apologetic` (each entry,
+its points, objections, related entries and topics as JSON in `detail`)
+and `apologetic_passage`, the passages the reader marks, renumbered onto
+the Hebrew text as `prophecies.json`'s are. After an edit, rebuild with
 `cargo run --release -- db gen-apologetics` and sync the database to the
 app with its `tool/sync-dbs.sh`.
 
@@ -98,6 +105,6 @@ a passage in a chapter in its chapter context.
 
 A build fails, naming every fault, on a passage that cannot be read or
 is outside the corpus, an entry with no passages, an unknown subject,
-kind, topic, work, licence or related entry, an audience's unknown or
-repeated entry or empty `differ`, a repeated id, or a `quote` from a
-work under copyright.
+kind, topic, work, licence or related entry, an audience's unknown
+religion, unknown or repeated entry or empty `differ`, a religion with no
+audiences, a repeated id, or a `quote` from a work under copyright.

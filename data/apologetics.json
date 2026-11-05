@@ -1,6 +1,11 @@
 {
   "subjects": [
     {
+      "id": "creation",
+      "title": "The Creator",
+      "note": "The evidence that the world was made, and why it suffers."
+    },
+    {
       "id": "resurrection",
       "title": "The resurrection of Jesus",
       "note": "The evidence that Jesus rose from the dead."
@@ -16,9 +21,19 @@
       "note": "The evidence that the Bible foretold what came to pass."
     },
     {
+      "id": "scripture",
+      "title": "Scripture",
+      "note": "The Bible is God's word, kept and complete; tradition and later books are tested by it."
+    },
+    {
       "id": "god",
       "title": "God and his Son",
       "note": "One God, the Father, and Jesus his Son, born of Mary."
+    },
+    {
+      "id": "worship",
+      "title": "Worship",
+      "note": "Yahweh alone is worshipped, through one mediator, without images."
     },
     {
       "id": "death",
@@ -36,6 +51,11 @@
       "note": "The kingdom will be on the earth, at Christ's return."
     },
     {
+      "id": "law",
+      "title": "The law of Moses",
+      "note": "The law led to Christ, who fulfilled it."
+    },
+    {
       "id": "salvation",
       "title": "The way of salvation",
       "note": "Belief of the gospel of the kingdom, and baptism into Christ."
@@ -43,12 +63,32 @@
   ],
   "topics": [
     {
+      "id": "creator",
+      "title": "Is there a Creator?"
+    },
+    {
+      "id": "suffering",
+      "title": "Why God allows suffering"
+    },
+    {
       "id": "resurrection-evidence",
       "title": "Evidence for the resurrection"
     },
     {
+      "id": "the-cross",
+      "title": "The crucifixion and the atonement"
+    },
+    {
       "id": "bible-reliable",
       "title": "Is the Bible reliable?"
+    },
+    {
+      "id": "scripture-tradition",
+      "title": "Scripture, tradition and later books"
+    },
+    {
+      "id": "messiah",
+      "title": "The Messiah"
     },
     {
       "id": "trinity",
@@ -67,8 +107,24 @@
       "title": "The holy spirit"
     },
     {
+      "id": "one-way",
+      "title": "Many paths to God?"
+    },
+    {
+      "id": "idols",
+      "title": "Images and idols"
+    },
+    {
+      "id": "mary-saints",
+      "title": "Mary and the saints"
+    },
+    {
       "id": "immortal-soul",
       "title": "The immortal soul"
+    },
+    {
+      "id": "reincarnation",
+      "title": "Reincarnation and karma"
     },
     {
       "id": "heaven-at-death",
@@ -99,6 +155,14 @@
       "title": "Israel"
     },
     {
+      "id": "law-sabbath",
+      "title": "The law and the sabbath"
+    },
+    {
+      "id": "grace-works",
+      "title": "Grace and works"
+    },
+    {
       "id": "baptism",
       "title": "Baptism and salvation"
     },
@@ -107,15 +171,56 @@
       "title": "The resurrection of the dead"
     }
   ],
+  "religions": [
+    {
+      "id": "christianity",
+      "title": "Christianity",
+      "note": "Those who confess Jesus as Lord and hold the Bible as Scripture: the common ground is wide, and the conversation is over what the Bible says."
+    },
+    {
+      "id": "judaism",
+      "title": "Judaism",
+      "note": "Those who hold the Law and the Prophets: begin from the Hebrew Scriptures and the promises."
+    },
+    {
+      "id": "islam",
+      "title": "Islam",
+      "note": "Those who honour Jesus as a prophet and the Messiah, but not as the Son of God who died and rose: begin from the one God and the history of the cross."
+    },
+    {
+      "id": "hinduism",
+      "title": "Hinduism",
+      "note": "Many traditions, most holding rebirth and karma and many forms of the divine: begin from the Creator and the one life."
+    },
+    {
+      "id": "sikhism",
+      "title": "Sikhism",
+      "note": "One God, the Creator, known by the Name and the Gurus' teaching: begin from the one Creator and the grace of God."
+    },
+    {
+      "id": "buddhism",
+      "title": "Buddhism",
+      "note": "A path to end suffering, without a Creator: begin from suffering, its cause, and the resurrection that ends it."
+    },
+    {
+      "id": "none",
+      "title": "No religion",
+      "note": "Those who hold no faith: begin from history and the world itself, not from the Bible's authority."
+    }
+  ],
   "audiences": [
     {
       "id": "catholic",
+      "religion": "christianity",
       "title": "Catholics",
-      "note": "Catholic teaching holds the Trinity, an immortal soul judged at death to heaven, purgatory or hell, and the baptism of infants. Begin from the creeds' own words, \"the resurrection of the body\": if the dead are conscious already, why is it needed?",
+      "note": "Catholic teaching holds the Trinity, an immortal soul judged at death to heaven, purgatory or hell, the baptism of infants, tradition and the Pope's teaching office beside Scripture, and the intercession of Mary and the saints. Begin from the creeds' own words, \"the resurrection of the body\": if the dead are conscious already, why is it needed?",
       "agree": [
         "empty-tomb",
         "appearances",
-        "early-testimony"
+        "early-testimony",
+        "crucifixion",
+        "creator",
+        "bible-preserved"
       ],
       "differ": [
         "resurrection-hope",
@@ -123,15 +228,51 @@
         "luke-23-43",
         "grave-and-hinnom",
         "matthew-25-46",
+        "one-mediator",
+        "mary",
+        "traditions-of-men",
+        "matthew-16-18",
+        "no-idols",
         "one-god",
         "john-1-1",
         "matthew-28-19",
+        "grace-and-works",
+        "gospel-and-baptism",
+        "kingdom-on-earth"
+      ]
+    },
+    {
+      "id": "orthodox",
+      "religion": "christianity",
+      "title": "Eastern Orthodox",
+      "note": "Orthodox Christians hold the Trinity as the councils defined it, holy tradition beside Scripture, the veneration of icons, the intercession of the Mother of God and the saints, and the baptism of infants by threefold immersion. Begin from the resurrection, which the Orthodox hold at the centre of their faith, and from what the apostles themselves wrote.",
+      "agree": [
+        "empty-tomb",
+        "appearances",
+        "crucifixion",
+        "early-testimony",
+        "return-of-christ",
+        "creator"
+      ],
+      "differ": [
+        "traditions-of-men",
+        "scripture-sufficient",
+        "no-idols",
+        "one-mediator",
+        "mary",
+        "resurrection-hope",
+        "soul-mortal",
+        "luke-23-43",
+        "one-god",
+        "john-1-1",
+        "holy-spirit-power",
         "gospel-and-baptism",
         "kingdom-on-earth"
       ]
     },
     {
       "id": "evangelical",
+      "religion": "christianity",
       "title": "Evangelicals",
       "note": "Evangelicals hold the Bible's authority, the Trinity, salvation by faith, going to heaven at death and eternal punishment in hell. The shared regard for Scripture is the way in: ask what a passage says before what it is taken to mean.",
       "agree": [
@@ -139,7 +280,16 @@
         "appearances",
         "early-testimony",
         "fulfilled-prophecy",
-        "return-of-christ"
+        "return-of-christ",
+        "scripture-sufficient",
+        "bible-preserved",
+        "crucifixion",
+        "atonement",
+        "grace-and-works",
+        "one-way",
+        "one-mediator",
+        "no-idols",
+        "creator"
       ],
       "differ": [
         "resurrection-hope",
@@ -159,11 +309,17 @@
     },
     {
       "id": "pentecostal",
+      "religion": "christianity",
       "title": "Pentecostals and charismatics",
       "note": "Pentecostals hold the Trinity, the holy spirit as a person giving gifts today, and spiritual warfare against the devil and demons. Begin from what the spirit is in Scripture, God's power, and from Jesus' own healings.",
       "agree": [
         "empty-tomb",
-        "return-of-christ"
+        "return-of-christ",
+        "crucifixion",
+        "atonement",
+        "grace-and-works",
+        "one-way",
+        "scripture-sufficient"
       ],
       "differ": [
         "holy-spirit-power",
@@ -177,7 +333,40 @@
       ]
     },
     {
+      "id": "adventist",
+      "religion": "christianity",
+      "title": "Seventh-day Adventists",
+      "note": "Adventists hold that the dead sleep until the resurrection, that the wicked are destroyed rather than tormented, and that Christ will return in person, and they baptise by immersion. They hold the Trinity, a personal devil, a thousand years in heaven before the earth is made new, and the seventh-day sabbath, and count Ellen White's writings a continuing source of truth. Begin from the common ground on death.",
+      "agree": [
+        "soul-mortal",
+        "resurrection-hope",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "return-of-christ",
+        "gospel-and-baptism",
+        "crucifixion",
+        "atonement",
+        "creator",
+        "one-mediator",
+        "no-idols"
+      ],
+      "differ": [
+        "one-god",
+        "john-1-1",
+        "holy-spirit-power",
+        "adversary-not-angel",
+        "revelation-12-7",
+        "ezekiel-28",
+        "kingdom-on-earth",
+        "john-14-2",
+        "sabbath",
+        "law-fulfilled",
+        "scripture-sufficient"
+      ]
+    },
+    {
       "id": "jehovahs-witness",
+      "religion": "christianity",
       "title": "Jehovah's Witnesses",
       "note": "Witnesses hold that God is one and not a Trinity, that the soul dies, that hell is the grave, and that the kingdom will be on the earth. They hold that Jesus existed before his birth as Michael the archangel, that the devil is a fallen angel, that Christ's presence began invisibly in 1914, and that 144,000 reign in heaven. Begin from the large common ground.",
       "agree": [
@@ -185,7 +374,12 @@
         "soul-mortal",
         "grave-and-hinnom",
         "resurrection-hope",
-        "kingdom-on-earth"
+        "kingdom-on-earth",
+        "no-idols",
+        "one-mediator",
+        "traditions-of-men",
+        "law-fulfilled",
+        "creator"
       ],
       "differ": [
         "john-1-1",
@@ -203,13 +397,16 @@
     },
     {
       "id": "latter-day-saints",
+      "religion": "christianity",
       "title": "Latter-day Saints",
-      "note": "Latter-day Saints hold that the Father and the Son are separate beings, that all people lived as spirits before birth, and that the Book of Mormon is Scripture; they look for Christ's return to reign on the earth and baptise by immersion. Begin from the Bible's account of man made from the dust.",
+      "note": "Latter-day Saints hold that the Father and the Son are separate beings, that all people lived as spirits before birth, and that the Book of Mormon and later revelations are Scripture beside the Bible, which they hold to be true as far as it is translated correctly; they look for Christ's return to reign on the earth and baptise by immersion. Begin from the Bible's account of man made from the dust.",
       "agree": [
         "return-of-christ",
         "kingdom-on-earth",
         "gospel-and-baptism",
-        "empty-tomb"
+        "empty-tomb",
+        "crucifixion",
+        "creator"
       ],
       "differ": [
         "one-god",
@@ -218,76 +415,220 @@
         "john-1-1",
         "john-8-58",
         "jesus-a-man",
-        "early-testimony"
-      ]
-    },
-    {
-      "id": "adventist",
-      "title": "Seventh-day Adventists",
-      "note": "Adventists hold that the dead sleep until the resurrection, that the wicked are destroyed rather than tormented, and that Christ will return in person, and they baptise by immersion. They hold the Trinity, a personal devil, and a thousand years in heaven before the earth is made new. Begin from the common ground on death.",
-      "agree": [
-        "soul-mortal",
-        "resurrection-hope",
-        "grave-and-hinnom",
-        "matthew-25-46",
-        "return-of-christ",
-        "gospel-and-baptism"
-      ],
-      "differ": [
-        "one-god",
-        "john-1-1",
-        "holy-spirit-power",
-        "adversary-not-angel",
-        "revelation-12-7",
-        "ezekiel-28",
-        "kingdom-on-earth",
-        "john-14-2"
-      ]
-    },
-    {
-      "id": "muslim",
-      "title": "Muslims",
-      "note": "Islam holds that God is one, and that Jesus was a prophet and the Messiah, born of a virgin, but not the Son of God, and that he was not crucified. Begin from the one God, and from the evidence that Jesus died and rose.",
-      "agree": [
-        "one-god",
-        "jesus-a-man"
-      ],
-      "differ": [
-        "empty-tomb",
-        "appearances",
-        "transformed-witnesses",
+        "scripture-sufficient",
+        "bible-preserved",
         "early-testimony",
-        "fulfilled-prophecy"
+        "grace-and-works"
       ]
     },
     {
       "id": "jewish",
-      "title": "Jews",
-      "note": "Judaism holds that God is one, the promises to Abraham and David, and a kingdom of the Messiah on the earth; it rejects Jesus, often because Christians call him God. Begin from the Shema and the promises: Jesus fulfils them without being a second God.",
+      "religion": "judaism",
+      "title": "Orthodox and traditional Jews",
+      "note": "Orthodox Judaism holds that God is one, the Torah written and oral, the resurrection of the dead, and a Messiah of David's line who will gather Israel and reign on the earth; it rejects Jesus, often because Christians call him God. Begin from the Shema and the promises: Jesus fulfils them without being a second God.",
       "agree": [
         "one-god",
+        "creator",
+        "no-idols",
         "abraham-promise",
-        "kingdom-on-earth"
+        "kingdom-on-earth",
+        "resurrection-hope"
+      ],
+      "differ": [
+        "messiah-timing",
+        "isaiah-53",
+        "fulfilled-prophecy",
+        "isaiah-9-6",
+        "atonement",
+        "empty-tomb",
+        "appearances",
+        "transformed-witnesses",
+        "traditions-of-men",
+        "law-fulfilled",
+        "grace-and-works"
+      ]
+    },
+    {
+      "id": "jewish-reform",
+      "religion": "judaism",
+      "title": "Reform and secular Jews",
+      "note": "Reform and secular Jews hold Jewish identity and ethics, often without a personal Messiah, a resurrection of the dead, or the Torah as given by God word for word. Begin from history: Israel's scattering and return, and the evidence that Jesus rose.",
+      "agree": [
+        "one-god",
+        "no-idols"
       ],
       "differ": [
         "fulfilled-prophecy",
-        "isaiah-9-6",
+        "bible-preserved",
+        "creator",
+        "messiah-timing",
+        "isaiah-53",
         "empty-tomb",
         "appearances",
-        "transformed-witnesses"
+        "resurrection-hope",
+        "kingdom-on-earth"
+      ]
+    },
+    {
+      "id": "muslim",
+      "religion": "islam",
+      "title": "Sunni and Shia Muslims",
+      "note": "Islam holds that God is one, and that Jesus was a prophet and the Messiah, born of a virgin, but not the Son of God, and that he was not crucified but taken up, and will return before the end. It holds the Qur'an God's final word, the earlier Scriptures changed, and a man judged by his deeds. Begin from the one God, and from the evidence that Jesus died and rose.",
+      "agree": [
+        "one-god",
+        "creator",
+        "jesus-a-man",
+        "no-idols",
+        "return-of-christ"
+      ],
+      "differ": [
+        "crucifixion",
+        "empty-tomb",
+        "appearances",
+        "transformed-witnesses",
+        "early-testimony",
+        "bible-preserved",
+        "scripture-sufficient",
+        "atonement",
+        "isaiah-53",
+        "grace-and-works",
+        "fulfilled-prophecy"
+      ]
+    },
+    {
+      "id": "ahmadi",
+      "religion": "islam",
+      "title": "Ahmadi Muslims",
+      "note": "Ahmadis hold that Jesus was put on the cross but taken down alive, recovered, and died in old age in Kashmir, and that his promised return was fulfilled in Mirza Ghulam Ahmad. Begin from the common ground that he was crucified, then from the evidence that he died there and rose.",
+      "agree": [
+        "one-god",
+        "creator",
+        "jesus-a-man",
+        "no-idols"
+      ],
+      "differ": [
+        "crucifixion",
+        "empty-tomb",
+        "appearances",
+        "transformed-witnesses",
+        "return-of-christ",
+        "scripture-sufficient",
+        "bible-preserved",
+        "atonement"
+      ]
+    },
+    {
+      "id": "hindu-devotional",
+      "religion": "hinduism",
+      "title": "Devotional Hindus",
+      "note": "Vaishnavas, Shaivas and Hare Krishnas worship a personal Lord, Vishnu, Krishna or Shiva, who comes down in avatars; they hold rebirth and karma, worship before images, and may count Jesus a holy man or an avatar among many. Begin from the one Creator, and from the one life Scripture gives.",
+      "agree": [
+        "creator"
+      ],
+      "differ": [
+        "one-god",
+        "no-idols",
+        "one-life",
+        "matthew-11-14",
+        "jesus-a-man",
+        "one-way",
+        "sin-and-death",
+        "grace-and-works",
+        "empty-tomb",
+        "resurrection-hope"
+      ]
+    },
+    {
+      "id": "hindu-advaita",
+      "religion": "hinduism",
+      "title": "Advaita Hindus and yoga",
+      "note": "Advaita holds that only Brahman is real, that the self is one with it, that the world and its suffering are illusion, and that liberation is knowing this and escaping rebirth; much Western yoga and meditation teaching comes from it. Begin from the world as made and real, and from sin and death as real.",
+      "agree": [],
+      "differ": [
+        "creator",
+        "suffering",
+        "sin-and-death",
+        "one-life",
+        "matthew-11-14",
+        "soul-mortal",
+        "one-way",
+        "empty-tomb",
+        "resurrection-hope"
+      ]
+    },
+    {
+      "id": "sikh",
+      "religion": "sikhism",
+      "title": "Sikhs",
+      "note": "Sikhs hold one God, the Creator, formless and worshipped without images, known by meditating on the Name; the ten Gurus and the Guru Granth Sahib as the Word; rebirth and karma, ended by God's grace; and that God may be reached by many paths. Begin from the one Creator and from grace.",
+      "agree": [
+        "creator",
+        "one-god",
+        "no-idols"
+      ],
+      "differ": [
+        "one-life",
+        "matthew-11-14",
+        "grace-and-works",
+        "scripture-sufficient",
+        "one-way",
+        "atonement",
+        "empty-tomb",
+        "resurrection-hope"
+      ]
+    },
+    {
+      "id": "buddhist",
+      "religion": "buddhism",
+      "title": "Buddhists",
+      "note": "Buddhists, Theravada and Mahayana, follow the Buddha's path to end suffering, which they trace to craving; they hold rebirth and karma without a Creator or an enduring self, and seek nirvana. Begin from suffering, which both take seriously, and from the denial of an immortal soul, which both share.",
+      "agree": [
+        "soul-mortal"
+      ],
+      "differ": [
+        "suffering",
+        "sin-and-death",
+        "creator",
+        "one-life",
+        "grace-and-works",
+        "one-way",
+        "empty-tomb",
+        "resurrection-hope"
       ]
     },
     {
       "id": "sceptic",
+      "religion": "none",
       "title": "Sceptics and atheists",
-      "note": "Begin from history, not from the Bible's authority: the empty tomb, the witnesses and how early the records are, then prophecy fulfilled.",
-      "agree": [],
+      "note": "Begin from history, not from the Bible's authority: the crucifixion, which historians grant, then the empty tomb, the witnesses and how early the records are, then prophecy fulfilled and the world as made.",
+      "agree": [
+        "crucifixion"
+      ],
       "differ": [
         "empty-tomb",
         "appearances",
         "transformed-witnesses",
         "early-testimony",
-        "fulfilled-prophecy"
+        "bible-preserved",
+        "fulfilled-prophecy",
+        "creator",
+        "suffering"
+      ]
+    },
+    {
+      "id": "agnostic",
+      "religion": "none",
+      "title": "Agnostics and the spiritual but not religious",
+      "note": "Agnostics are unsure whether God can be known; the spiritual but not religious often hold that every path leads to the same place and that the self has a spark of the divine. Begin from what can be known: the world as made, and the evidence that Jesus rose.",
+      "agree": [],
+      "differ": [
+        "creator",
+        "empty-tomb",
+        "appearances",
+        "early-testimony",
+        "suffering",
+        "one-way",
+        "sin-and-death"
       ]
     }
   ],
@@ -315,9 +656,186 @@
       "author": "William Tyndale",
       "year": 1526,
       "licence": "public-domain"
+    },
+    "quran": {
+      "title": "The Qur'an",
+      "licence": "public-domain"
+    },
+    "dead-sea-scrolls": {
+      "title": "The Dead Sea Scrolls",
+      "licence": "public-domain"
+    },
+    "targum-jonathan": {
+      "title": "Targum Jonathan on the Prophets",
+      "licence": "public-domain"
     }
   },
   "entries": [
+    {
+      "id": "creator",
+      "subject": "creation",
+      "kind": "evidence",
+      "title": "The world was made, and declares its Maker",
+      "summary": "The world had a beginning, and what begins has a cause. \"Every house is builded by some man; but he that built all things is God.\" The heavens declare his glory, and his eternal power and Godhead are clearly seen, being understood by the things that are made, so that those who deny him are without excuse. The earth was formed to be inhabited, and life is ordered for it. The Bible's God is not a force within the world but its Maker, distinct from what he made.",
+      "passages": [
+        "Gen.1.1",
+        "Heb.3.4",
+        "Psa.19.1",
+        "Rom.1.20",
+        "Isa.45.18"
+      ],
+      "points": [
+        {
+          "claim": "The world had a beginning; God was before it.",
+          "passages": [
+            "Gen.1.1",
+            "Psa.90.2",
+            "Heb.11.3"
+          ]
+        },
+        {
+          "claim": "What is made shows a maker, as a house shows a builder.",
+          "passages": [
+            "Heb.3.4",
+            "Rom.1.19-20",
+            "Psa.19.1-4"
+          ]
+        },
+        {
+          "claim": "The earth was formed to be inhabited, and its life is kept by him.",
+          "passages": [
+            "Isa.45.18",
+            "Act.14.17",
+            "Act.17.24-28"
+          ]
+        },
+        {
+          "claim": "The Creator is distinct from what he made; worshipping the creature instead of him is the root of idolatry.",
+          "passages": [
+            "Rom.1.21-25",
+            "Isa.40.18-26"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Science has explained the world without God.",
+          "answer": "Science describes how the world works; it cannot say why there is a world at all, or why it is ordered so that it can be understood. That it began, and is fitted for life, is what a Creator would lead us to expect.",
+          "passages": [
+            "Heb.11.3",
+            "Jer.33.25"
+          ]
+        },
+        {
+          "objection": "Who made God?",
+          "answer": "What begins needs a cause; God did not begin. He is from everlasting to everlasting.",
+          "passages": [
+            "Psa.90.2",
+            "1Ti.1.17"
+          ]
+        },
+        {
+          "objection": "All is God, and the self is God, though it has forgotten.",
+          "answer": "Scripture keeps the Creator and his creature apart: \"I am God, and not man.\" Man is dust, made and mortal, and those who changed the glory of the Creator into the likeness of the creature are the ones Paul calls fools.",
+          "passages": [
+            "Hos.11.9",
+            "Gen.2.7",
+            "Isa.45.12",
+            "Rom.1.22-25"
+          ]
+        }
+      ],
+      "related": [
+        "suffering",
+        "one-god",
+        "no-idols",
+        "sin-and-death"
+      ],
+      "topics": [
+        "creator"
+      ]
+    },
+    {
+      "id": "suffering",
+      "subject": "creation",
+      "kind": "doctrine",
+      "title": "Suffering came by sin, and God will end it",
+      "summary": "God made the world very good; death and the curse came by sin, and the creation was made subject to vanity, in hope. Time and chance happen to all, and Jesus denied that those killed in a disaster were worse sinners than others. God tempts no one to evil, and trial borne in faith works patience and hope. He has appointed a day when there shall be no more death, neither sorrow nor crying, and he raises the dead: no suffering is final.",
+      "passages": [
+        "Gen.3.17-19",
+        "Rom.8.20-23",
+        "Luk.13.1-5",
+        "Rev.21.4"
+      ],
+      "points": [
+        {
+          "claim": "The world was very good; death and the curse came by sin.",
+          "passages": [
+            "Gen.1.31",
+            "Gen.3.17-19",
+            "Rom.5.12"
+          ]
+        },
+        {
+          "claim": "The creation was made subject to vanity, in hope of deliverance.",
+          "passages": [
+            "Rom.8.20-23",
+            "Ecc.1.2"
+          ]
+        },
+        {
+          "claim": "Time and chance happen to all; disaster is not a measure of guilt.",
+          "passages": [
+            "Ecc.9.11",
+            "Luk.13.1-5",
+            "Jhn.9.1-3"
+          ]
+        },
+        {
+          "claim": "God tempts no one to evil; trial borne in faith brings patience and hope.",
+          "passages": [
+            "Jas.1.13-17",
+            "Rom.5.3-5",
+            "Heb.12.10-11"
+          ]
+        },
+        {
+          "claim": "He will end death and sorrow, and raise the dead.",
+          "passages": [
+            "Rev.21.4",
+            "Isa.25.8",
+            "1Co.15.26"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "A good and almighty God would end all suffering now.",
+          "answer": "He will, and has fixed the day; he waits because he is longsuffering, not willing that any should perish, but that all should come to repentance.",
+          "passages": [
+            "2Pe.3.9",
+            "Act.17.31"
+          ]
+        },
+        {
+          "objection": "Suffering shows there is no God.",
+          "answer": "To call the world unjust is to measure it by a justice above it. The Bible names the cause, sin and death, and the remedy, which Jesus showed in his healings and in his own resurrection.",
+          "passages": [
+            "Act.10.38",
+            "1Co.15.20-22"
+          ]
+        }
+      ],
+      "related": [
+        "creator",
+        "sin-and-death",
+        "resurrection-hope",
+        "kingdom-on-earth"
+      ],
+      "topics": [
+        "suffering"
+      ]
+    },
     {
       "id": "empty-tomb",
       "subject": "resurrection",
@@ -393,6 +911,7 @@
       ],
       "related": [
         "appearances",
+        "crucifixion",
         "transformed-witnesses"
       ],
       "topics": [
@@ -447,9 +966,9 @@
         }
       ],
       "related": [
+        "early-testimony",
         "empty-tomb",
-        "transformed-witnesses",
-        "early-testimony"
+        "transformed-witnesses"
       ],
       "topics": [
         "resurrection-evidence"
@@ -501,8 +1020,8 @@
         }
       ],
       "related": [
-        "empty-tomb",
-        "appearances"
+        "appearances",
+        "empty-tomb"
       ],
       "objections": [
         {
@@ -516,6 +1035,95 @@
         }
       ],
       "topics": [
+        "resurrection-evidence"
+      ]
+    },
+    {
+      "id": "crucifixion",
+      "subject": "resurrection",
+      "kind": "evidence",
+      "title": "Jesus died on the cross",
+      "summary": "That Jesus was crucified under Pontius Pilate is among the best attested facts of ancient history. All four Gospels and Paul's earliest letters record it; Tacitus writes that Christus suffered the extreme penalty under Pilate; and the first preaching, in Jerusalem itself, was of a crucified Messiah, a scandal no one would invent. Soldiers whose trade was execution confirmed his death. The prophets foretold that the Messiah would be cut off and pierced, and Jesus foretold it himself.",
+      "passages": [
+        "1Co.15.3-4",
+        "Mrk.15.37-45",
+        "Jhn.19.33-35",
+        "Act.2.23"
+      ],
+      "points": [
+        {
+          "claim": "The Gospels, Acts and Paul all record his crucifixion and death.",
+          "passages": [
+            "Mrk.15.24-37",
+            "Jhn.19.17-30",
+            "Act.2.23",
+            "1Co.15.3",
+            "Gal.3.1"
+          ]
+        },
+        {
+          "claim": "A crucified Messiah was a stumbling block to Jews and folly to Greeks: no one would invent it.",
+          "passages": [
+            "1Co.1.23",
+            "Deu.21.23",
+            "Gal.3.13"
+          ]
+        },
+        {
+          "claim": "Roman soldiers confirmed his death, and Pilate asked the centurion before giving up the body.",
+          "passages": [
+            "Jhn.19.32-35",
+            "Mrk.15.44-45"
+          ]
+        },
+        {
+          "claim": "Tacitus records that Christus suffered the extreme penalty under Pontius Pilate, in the reign of Tiberius.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "tacitus-annals",
+              "loc": "15.44"
+            }
+          ]
+        },
+        {
+          "claim": "The prophets and Jesus foretold that the Messiah would be cut off and killed.",
+          "passages": [
+            "Dan.9.26",
+            "Isa.53.8-9",
+            "Zec.12.10",
+            "Mrk.8.31",
+            "Mrk.10.33-34"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "He was not killed or crucified, but it was made to appear so (Qur'an 4:157).",
+          "answer": "That was written six centuries later and far from Judaea, against witnesses who were there, enemies as well as friends. Jesus said he must be killed and rise the third day, and his disciples suffered for saying he did. The Qur'an itself has Jesus speak of the day he dies and the day he is raised alive (19:33).",
+          "passages": [
+            "Mrk.8.31",
+            "Luk.24.25-27",
+            "Act.2.22-24"
+          ]
+        },
+        {
+          "objection": "He fainted on the cross and revived in the tomb.",
+          "answer": "Soldiers whose trade was execution found him dead, and a spear brought out blood and water. A man half dead from scourging and the cross, freeing himself from the tomb, would not have persuaded his disciples that he had conquered death.",
+          "passages": [
+            "Jhn.19.33-34",
+            "Mrk.15.44-45"
+          ]
+        }
+      ],
+      "related": [
+        "empty-tomb",
+        "atonement",
+        "early-testimony",
+        "isaiah-53"
+      ],
+      "topics": [
+        "the-cross",
         "resurrection-evidence"
       ]
     },
@@ -584,6 +1192,7 @@
       ],
       "related": [
         "appearances",
+        "crucifixion",
         "fulfilled-prophecy"
       ],
       "topics": [
@@ -663,12 +1272,422 @@
         }
       ],
       "related": [
+        "abraham-promise",
         "early-testimony",
-        "abraham-promise"
+        "isaiah-53",
+        "messiah-timing"
       ],
       "topics": [
         "bible-reliable",
+        "israel",
+        "messiah"
+      ]
+    },
+    {
+      "id": "messiah-timing",
+      "subject": "prophecy",
+      "kind": "evidence",
+      "title": "The Messiah was to come before the second temple fell",
+      "summary": "Jacob foretold that the sceptre would not depart from Judah until Shiloh came. Daniel foretold that Messiah the Prince would be cut off, and after that the city and the sanctuary destroyed. Haggai and Malachi said the Lord would come to the second temple, and its glory would be greater than the first's. That temple fell in AD 70: if the Messiah was to come while it stood, he has come, and Jesus is the one who taught in it and foretold its fall.",
+      "passages": [
+        "Gen.49.10",
+        "Dan.9.24-27",
+        "Hag.2.6-9",
+        "Mal.3.1"
+      ],
+      "points": [
+        {
+          "claim": "The sceptre would not depart from Judah until Shiloh came.",
+          "passages": [
+            "Gen.49.10"
+          ]
+        },
+        {
+          "claim": "Messiah the Prince would be cut off, and then the city and the sanctuary destroyed.",
+          "passages": [
+            "Dan.9.25-26"
+          ]
+        },
+        {
+          "claim": "The Lord would suddenly come to his temple, the second, and fill it with greater glory than the first.",
+          "passages": [
+            "Hag.2.7-9",
+            "Mal.3.1"
+          ]
+        },
+        {
+          "claim": "Jesus came to that temple, taught in it, and foretold its overthrow, which came in AD 70.",
+          "passages": [
+            "Luk.2.27-32",
+            "Mat.21.12-14",
+            "Mat.24.1-2",
+            "Luk.19.43-44"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Daniel's weeks cannot be counted exactly.",
+          "answer": "Their starting point is disputed, and this entry does not rest on a count of days. However they are counted, the Messiah is cut off before the city and sanctuary are destroyed, and they were destroyed in AD 70.",
+          "passages": [
+            "Dan.9.26"
+          ]
+        }
+      ],
+      "related": [
+        "fulfilled-prophecy",
+        "isaiah-53",
+        "isaiah-9-6"
+      ],
+      "topics": [
+        "messiah",
         "israel"
+      ]
+    },
+    {
+      "id": "isaiah-53",
+      "subject": "prophecy",
+      "kind": "passage",
+      "title": "Isaiah 52:13-53:12, the suffering servant, read as the nation of Israel",
+      "summary": "Israel is called the servant elsewhere, but this servant is stricken \"for the transgression of my people\", so he is not the people. He had done no violence, neither was any deceit in his mouth, which the prophets never say of the nation. He is cut off out of the land of the living, makes his grave with the wicked and with the rich, and after his death prolongs his days and sees his seed. The Targum on the Prophets names him the Messiah. Jesus fulfils each line.",
+      "passages": [
+        "Isa.52.13-53.12"
+      ],
+      "points": [
+        {
+          "claim": "He is stricken for the transgression of \"my people\", and so is distinct from them.",
+          "passages": [
+            "Isa.53.4-6",
+            "Isa.53.8"
+          ]
+        },
+        {
+          "claim": "He is without violence or deceit, as the prophets do not say Israel was.",
+          "passages": [
+            "Isa.53.9",
+            "Isa.1.4",
+            "Isa.64.6"
+          ]
+        },
+        {
+          "claim": "He dies, is buried, and lives again to see his seed.",
+          "passages": [
+            "Isa.53.8-12",
+            "Act.8.32-35"
+          ]
+        },
+        {
+          "claim": "Jesus was rejected, silent before his accusers, numbered with transgressors and buried by a rich man.",
+          "passages": [
+            "Jhn.1.11",
+            "Mat.26.62-63",
+            "Mrk.15.27-28",
+            "Mat.27.57-60",
+            "1Pe.2.22-25"
+          ]
+        },
+        {
+          "claim": "The Targum on the Prophets names the servant the Messiah, though it turns his sufferings onto Israel's enemies.",
+          "passages": [
+            "Isa.52.13"
+          ],
+          "sources": [
+            {
+              "work": "targum-jonathan",
+              "loc": "Isaiah 52:13"
+            }
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Isaiah calls Israel the servant (41:8; 49:3).",
+          "answer": "And the servant of chapter 49 is sent to bring Jacob again to God and raise up the tribes of Israel, so he is not Israel itself; he bears Israel's name as its true representative, as Jesus was called out of Egypt as Israel was.",
+          "passages": [
+            "Isa.49.3-6",
+            "Hos.11.1",
+            "Mat.2.15"
+          ]
+        }
+      ],
+      "related": [
+        "fulfilled-prophecy",
+        "messiah-timing",
+        "atonement",
+        "crucifixion"
+      ],
+      "topics": [
+        "messiah",
+        "the-cross"
+      ]
+    },
+    {
+      "id": "bible-preserved",
+      "subject": "scripture",
+      "kind": "evidence",
+      "title": "The Bible has been kept, not corrupted",
+      "summary": "The Dead Sea Scrolls, copied before Christ, give the Old Testament in the words read today, with differences of spelling and small slips. The New Testament survives in more and earlier manuscripts than any other ancient book, so a change in one would be shown up by the rest. Jesus said his words would not pass away, and the Qur'an itself bids the people of the Gospel judge by it, and Muhammad, if in doubt, ask those who read the Book before him: if the Bible was corrupted, it was not corrupted after that.",
+      "passages": [
+        "Isa.40.8",
+        "Mat.24.35",
+        "1Pe.1.24-25"
+      ],
+      "points": [
+        {
+          "claim": "God's word endures, and Jesus said his words would not pass away.",
+          "passages": [
+            "Isa.40.8",
+            "Mat.24.35",
+            "1Pe.1.23-25",
+            "Psa.12.6-7"
+          ]
+        },
+        {
+          "claim": "The Great Isaiah Scroll from Qumran, copied a century or more before Christ, agrees with the Isaiah read today in all but small details.",
+          "passages": [
+            "Isa.40.8"
+          ],
+          "sources": [
+            {
+              "work": "dead-sea-scrolls",
+              "loc": "1QIsa-a"
+            }
+          ]
+        },
+        {
+          "claim": "The New Testament is known from thousands of Greek manuscripts, some within a few generations of the writers, and from early translations and quotations; their differences are mostly of spelling and order, and none changes the gospel.",
+          "passages": [
+            "Luk.1.1-4"
+          ]
+        },
+        {
+          "claim": "The Qur'an bids the people of the Gospel judge by what God revealed in it, and Muhammad, if in doubt, ask those who read the Book before him.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "quran",
+              "loc": "5.47"
+            },
+            {
+              "work": "quran",
+              "loc": "10.94"
+            }
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The Gospels were changed after Jesus' time.",
+          "answer": "Then they were changed before the manuscripts we have, everywhere at once, among churches scattered and divided, without a trace. Peter already counted Paul's letters with the other Scriptures.",
+          "passages": [
+            "2Pe.3.15-16"
+          ]
+        }
+      ],
+      "related": [
+        "scripture-sufficient",
+        "early-testimony"
+      ],
+      "topics": [
+        "bible-reliable",
+        "scripture-tradition"
+      ]
+    },
+    {
+      "id": "scripture-sufficient",
+      "subject": "scripture",
+      "kind": "doctrine",
+      "title": "Scripture is complete, and tests every later word",
+      "summary": "All Scripture is given by inspiration of God, that the man of God may be perfect, throughly furnished unto all good works. The faith was once delivered unto the saints. Paul said that even an angel from heaven preaching another gospel is accursed, and Isaiah: \"To the law and to the testimony: if they speak not according to this word, it is because there is no light in them.\" Later books, prophets and teachers are tested by the Scriptures already given, as the Bereans tested Paul.",
+      "passages": [
+        "2Ti.3.15-17",
+        "Jud.1.3",
+        "Gal.1.8-9",
+        "Isa.8.20",
+        "Act.17.11"
+      ],
+      "points": [
+        {
+          "claim": "Scripture is inspired, and makes the believer complete.",
+          "passages": [
+            "2Ti.3.15-17",
+            "2Pe.1.20-21",
+            "Psa.19.7"
+          ]
+        },
+        {
+          "claim": "The faith was delivered once; another gospel, even from an angel, is accursed.",
+          "passages": [
+            "Jud.1.3",
+            "Gal.1.6-9",
+            "Rev.22.18-19"
+          ]
+        },
+        {
+          "claim": "Every teacher is tested by the word already given.",
+          "passages": [
+            "Isa.8.20",
+            "Deu.13.1-5",
+            "Deu.18.21-22",
+            "Act.17.11",
+            "1Jn.4.1"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "God has spoken again since, by a later prophet or book.",
+          "answer": "A later prophet must agree with the earlier: Moses said one who leads after other gods is false even if his sign comes to pass. A book that denies that Jesus died and rose, or that adds gods, fails that test.",
+          "passages": [
+            "Deu.13.1-3",
+            "1Co.15.14-17"
+          ]
+        },
+        {
+          "objection": "Jesus promised that the spirit would guide into all truth, still to come.",
+          "answer": "He promised it to the apostles, who were to be his witnesses, and they wrote what it taught them.",
+          "passages": [
+            "Jhn.16.13",
+            "Jhn.15.26-27",
+            "1Jn.1.1-4"
+          ]
+        }
+      ],
+      "related": [
+        "bible-preserved",
+        "traditions-of-men"
+      ],
+      "topics": [
+        "scripture-tradition",
+        "bible-reliable"
+      ]
+    },
+    {
+      "id": "traditions-of-men",
+      "subject": "scripture",
+      "kind": "doctrine",
+      "title": "Tradition does not stand beside Scripture",
+      "summary": "Jesus rebuked those who made the word of God of none effect by their tradition, teaching for doctrines the commandments of men. The apostles delivered traditions, by word and by letter, but what they delivered is written; later councils and customs are tested by it, not added to it. Many traditions arose long after them: prayers to the dead, images in worship, a priesthood forbidden to marry, the baptism of infants. A teaching that cannot be shown from the apostles' writings did not come from the apostles.",
+      "passages": [
+        "Mrk.7.6-13",
+        "Col.2.8",
+        "2Th.2.15"
+      ],
+      "points": [
+        {
+          "claim": "Jesus set the commandment of God against the tradition of men.",
+          "passages": [
+            "Mrk.7.6-13",
+            "Mat.15.3-9"
+          ]
+        },
+        {
+          "claim": "Paul warned against the tradition of men, and against those forbidding to marry.",
+          "passages": [
+            "Col.2.8",
+            "1Ti.4.1-3"
+          ]
+        },
+        {
+          "claim": "What the apostles delivered they wrote, that we may know it, and not think above what is written.",
+          "passages": [
+            "Jhn.20.30-31",
+            "2Pe.1.15",
+            "2Pe.3.1-2",
+            "1Co.4.6"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Paul says to hold the traditions taught \"whether by word, or our epistle\".",
+          "answer": "He means what he himself taught the Thessalonians, in person or by letter. It does not reach to teachings first known centuries later: the test of whether a teaching came from Paul is whether Paul wrote it.",
+          "passages": [
+            "2Th.2.15",
+            "2Th.3.6"
+          ]
+        },
+        {
+          "objection": "The church gave us the Bible, so its authority is above it.",
+          "answer": "The ecclesia recognised the Scriptures; it did not make them. Israel was entrusted with the oracles of God, and Jesus still judged its tradition by them.",
+          "passages": [
+            "Rom.3.1-2",
+            "Mrk.7.9"
+          ]
+        }
+      ],
+      "related": [
+        "scripture-sufficient",
+        "matthew-16-18",
+        "no-idols",
+        "one-mediator"
+      ],
+      "topics": [
+        "scripture-tradition"
+      ]
+    },
+    {
+      "id": "matthew-16-18",
+      "subject": "scripture",
+      "kind": "passage",
+      "title": "Matthew 16:18, \"upon this rock I will build my church\", read as Peter and the popes",
+      "summary": "The rock is the truth Peter had just confessed, \"Thou art the Christ, the Son of the living God\": Scripture calls God and Christ the rock, and the foundation no man can lay other than Jesus Christ. Peter is a stone built on it, as he wrote that every believer is a living stone. He used the keys he was given, opening the gospel to Jews at Pentecost and to Gentiles at Caesarea, and the same binding and loosing was given to all the disciples. Paul withstood him, James gave judgement at Jerusalem, and nothing passes his place to a successor.",
+      "passages": [
+        "Mat.16.16-19"
+      ],
+      "points": [
+        {
+          "claim": "The rock is Christ, whom Peter confessed.",
+          "passages": [
+            "Mat.16.16",
+            "1Co.3.11",
+            "1Co.10.4",
+            "1Pe.2.4-8",
+            "Psa.18.31"
+          ]
+        },
+        {
+          "claim": "The apostles together are the foundation, and binding and loosing was given to all.",
+          "passages": [
+            "Eph.2.20",
+            "Rev.21.14",
+            "Mat.18.18",
+            "Jhn.20.22-23"
+          ]
+        },
+        {
+          "claim": "Peter used the keys, opening the door to Jews and to Gentiles.",
+          "passages": [
+            "Act.2.14-41",
+            "Act.10.34-48",
+            "Act.15.7"
+          ]
+        },
+        {
+          "claim": "Peter was not over the others: Paul withstood him, James gave the judgement, and Peter called himself a fellow elder.",
+          "passages": [
+            "Gal.2.11",
+            "Act.15.13-19",
+            "1Pe.5.1"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Peter's name means rock.",
+          "answer": "It does, and he was a stone built on the rock, as he wrote: \"Ye also, as lively stones, are built up a spiritual house.\"",
+          "passages": [
+            "1Pe.2.5",
+            "Jhn.1.42"
+          ]
+        }
+      ],
+      "related": [
+        "traditions-of-men",
+        "one-mediator"
+      ],
+      "topics": [
+        "scripture-tradition"
       ]
     },
     {
@@ -817,11 +1836,12 @@
         }
       ],
       "related": [
-        "one-god",
-        "adversary-not-angel"
+        "adversary-not-angel",
+        "one-god"
       ],
       "topics": [
-        "nature-of-christ"
+        "nature-of-christ",
+        "the-cross"
       ]
     },
     {
@@ -896,8 +1916,8 @@
         }
       ],
       "related": [
-        "one-god",
-        "matthew-28-19"
+        "matthew-28-19",
+        "one-god"
       ],
       "topics": [
         "trinity",
@@ -996,8 +2016,8 @@
         }
       ],
       "related": [
-        "one-god",
-        "john-1-1"
+        "john-1-1",
+        "one-god"
       ],
       "topics": [
         "pre-existence"
@@ -1036,8 +2056,8 @@
         }
       ],
       "related": [
-        "one-god",
-        "john-20-28"
+        "john-20-28",
+        "one-god"
       ],
       "topics": [
         "trinity"
@@ -1085,8 +2105,8 @@
         }
       ],
       "related": [
-        "one-god",
-        "john-10-30"
+        "john-10-30",
+        "one-god"
       ],
       "topics": [
         "trinity",
@@ -1135,8 +2155,8 @@
         }
       ],
       "related": [
-        "one-god",
-        "jesus-a-man"
+        "jesus-a-man",
+        "one-god"
       ],
       "topics": [
         "trinity",
@@ -1191,8 +2211,8 @@
         }
       ],
       "related": [
-        "one-god",
-        "john-1-1"
+        "john-1-1",
+        "one-god"
       ],
       "topics": [
         "pre-existence"
@@ -1238,13 +2258,14 @@
         }
       ],
       "related": [
-        "one-god",
-        "kingdom-on-earth"
+        "kingdom-on-earth",
+        "one-god"
       ],
       "topics": [
         "trinity",
         "pre-existence",
-        "kingdom"
+        "kingdom",
+        "messiah"
       ]
     },
     {
@@ -1283,14 +2304,259 @@
         }
       ],
       "related": [
-        "one-god",
+        "gospel-and-baptism",
         "holy-spirit-power",
-        "gospel-and-baptism"
+        "one-god"
       ],
       "topics": [
         "trinity",
         "holy-spirit",
         "baptism"
+      ]
+    },
+    {
+      "id": "no-idols",
+      "subject": "worship",
+      "kind": "doctrine",
+      "title": "Yahweh is worshipped without images",
+      "summary": "\"Thou shalt not make unto thee any graven image, or any likeness ... Thou shalt not bow down thyself to them.\" Israel saw no form when Yahweh spoke from the fire, so that they would make none. The prophets mocked the craftsman who burns half a tree and bows down to the rest; the idols have mouths but speak not. Paul told the Athenians that the Godhead is not like gold or stone graven by art, and John wrote, \"Little children, keep yourselves from idols.\" Bowing to an image, whether called a god, a saint or an icon, is what the commandment forbids.",
+      "passages": [
+        "Exo.20.4-5",
+        "Deu.4.15-19",
+        "Isa.44.9-20",
+        "Act.17.29",
+        "1Jn.5.21"
+      ],
+      "points": [
+        {
+          "claim": "The commandment forbids both making images and bowing to them.",
+          "passages": [
+            "Exo.20.4-5",
+            "Lev.26.1"
+          ]
+        },
+        {
+          "claim": "Israel saw no form, so that they would make none.",
+          "passages": [
+            "Deu.4.12",
+            "Deu.4.15-19"
+          ]
+        },
+        {
+          "claim": "Idols are the work of men's hands, and those who make them are like them.",
+          "passages": [
+            "Isa.44.9-20",
+            "Psa.115.4-8",
+            "Jer.10.3-5"
+          ]
+        },
+        {
+          "claim": "God is not like gold or stone; he is worshipped in spirit and in truth.",
+          "passages": [
+            "Act.17.24-29",
+            "Jhn.4.23-24",
+            "Rom.1.22-23"
+          ]
+        },
+        {
+          "claim": "Yahweh gives his glory to no other, nor his praise to graven images; there is no God beside him.",
+          "passages": [
+            "Isa.42.8",
+            "Isa.45.5",
+            "Isa.45.21-22",
+            "1Co.8.4-6"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The image is only a help; the honour passes to the one it shows.",
+          "answer": "Israel said the same of the golden calf: \"To morrow is a feast to Yahweh.\" The commandment forbids bowing to a likeness even when it is meant for God.",
+          "passages": [
+            "Exo.32.4-5",
+            "Deu.4.15-16"
+          ]
+        },
+        {
+          "objection": "God commanded the cherubim and the serpent of brass.",
+          "answer": "He commanded them made, not bowed to; when Israel burned incense to the serpent, Hezekiah broke it in pieces, and did right in doing so.",
+          "passages": [
+            "2Ki.18.3-4",
+            "Exo.25.18-22"
+          ]
+        },
+        {
+          "objection": "The one God has many forms, and the images are of those forms.",
+          "answer": "Yahweh says he has no equal and no likeness: \"To whom then will ye liken God?\" The gods of the nations are idols, and the Creator is not one of the things he made.",
+          "passages": [
+            "Isa.40.18",
+            "Isa.46.5-9",
+            "Psa.96.5"
+          ]
+        }
+      ],
+      "related": [
+        "creator",
+        "one-god",
+        "one-mediator",
+        "traditions-of-men"
+      ],
+      "topics": [
+        "idols"
+      ]
+    },
+    {
+      "id": "one-mediator",
+      "subject": "worship",
+      "kind": "doctrine",
+      "title": "Prayer goes to God through Christ alone, not through Mary or the saints",
+      "summary": "There is one mediator between God and men, the man Christ Jesus, and he ever liveth to make intercession for those who come to God by him. Believers are bidden to come boldly to the throne of grace themselves. The faithful dead, Mary among them, sleep until the resurrection and know not anything; they cannot hear prayers. Jesus taught his disciples to pray \"Our Father\" and to ask in his name; the apostles prayed for one another while alive, but never to the dead.",
+      "passages": [
+        "1Ti.2.5",
+        "Heb.7.25",
+        "Heb.4.14-16",
+        "Jhn.14.13-14"
+      ],
+      "points": [
+        {
+          "claim": "Christ is the one mediator and intercessor.",
+          "passages": [
+            "1Ti.2.5",
+            "Heb.7.25",
+            "Rom.8.34",
+            "1Jn.2.1"
+          ]
+        },
+        {
+          "claim": "Believers come to God boldly themselves, in Jesus' name.",
+          "passages": [
+            "Heb.4.14-16",
+            "Heb.10.19-22",
+            "Jhn.16.23-24",
+            "Mat.6.9"
+          ]
+        },
+        {
+          "claim": "The faithful dead sleep, and know nothing until the resurrection.",
+          "passages": [
+            "Ecc.9.5",
+            "Psa.6.5",
+            "Act.2.29-34",
+            "1Th.4.13-16"
+          ]
+        },
+        {
+          "claim": "Calling on the dead was forbidden in Israel.",
+          "passages": [
+            "Deu.18.10-12",
+            "Isa.8.19"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "We ask the saints to pray for us, as we ask a friend.",
+          "answer": "A friend is alive and hears; the dead do not. Scripture has believers pray for one another, never ask the dead to: \"Abraham be ignorant of us.\"",
+          "passages": [
+            "Jas.5.16",
+            "Ecc.9.5-6",
+            "Isa.63.16"
+          ]
+        },
+        {
+          "objection": "The prayers of the saints are offered in heaven (Revelation 5:8; 8:3-4).",
+          "answer": "The saints in Scripture are living believers, and these are their prayers, rising as incense, as in the temple. The vision shows no one praying to them.",
+          "passages": [
+            "Rev.5.8",
+            "Rev.8.3-4",
+            "Psa.141.2",
+            "Php.1.1"
+          ]
+        }
+      ],
+      "related": [
+        "mary",
+        "soul-mortal",
+        "resurrection-hope",
+        "no-idols"
+      ],
+      "topics": [
+        "mary-saints"
+      ]
+    },
+    {
+      "id": "mary",
+      "subject": "worship",
+      "kind": "doctrine",
+      "title": "Mary was blessed, but needed a Saviour like all",
+      "summary": "Mary was highly favoured: the holy spirit came upon her, and the Son of the Highest was born of her. She called God her Saviour, offered the sacrifice for her purification, and was among the disciples praying after the ascension. Joseph knew her not till she had brought forth her firstborn son, and Jesus' brothers and sisters are named. When a woman blessed his mother, Jesus answered, \"Yea rather, blessed are they that hear the word of God, and keep it.\" Scripture says nothing of her being sinless, ever virgin, taken bodily to heaven or a queen of heaven; with the other faithful, she awaits the resurrection.",
+      "passages": [
+        "Luk.1.28-35",
+        "Luk.1.46-47",
+        "Mat.1.25",
+        "Mat.13.55-56",
+        "Luk.11.27-28"
+      ],
+      "points": [
+        {
+          "claim": "She was favoured and blessed, chosen to bear the Son of God.",
+          "passages": [
+            "Luk.1.28-35",
+            "Luk.1.42"
+          ]
+        },
+        {
+          "claim": "She called God her Saviour, and offered for her purification as the law required.",
+          "passages": [
+            "Luk.1.46-47",
+            "Luk.2.22-24",
+            "Lev.12.6-8",
+            "Rom.3.23"
+          ]
+        },
+        {
+          "claim": "She had other children after Jesus.",
+          "passages": [
+            "Mat.1.25",
+            "Mat.12.46-47",
+            "Mat.13.55-56",
+            "Gal.1.19",
+            "Psa.69.8"
+          ]
+        },
+        {
+          "claim": "Jesus put hearing the word above being his mother.",
+          "passages": [
+            "Luk.11.27-28",
+            "Mrk.3.31-35"
+          ]
+        },
+        {
+          "claim": "The queen of heaven was an idol Israel was condemned for worshipping.",
+          "passages": [
+            "Jer.7.18",
+            "Jer.44.17-19"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "His brothers were cousins, or Joseph's sons by an earlier wife.",
+          "answer": "Luke has another word for kin, used of Elisabeth, Mary's cousin. Matthew names the brothers beside his mother, says Joseph knew her not till her son was born, and the Psalm foretells that Messiah would be \"an alien unto my mother's children\".",
+          "passages": [
+            "Luk.1.36",
+            "Mat.13.55-56",
+            "Mat.1.25",
+            "Psa.69.8"
+          ]
+        }
+      ],
+      "related": [
+        "one-mediator",
+        "soul-mortal"
+      ],
+      "topics": [
+        "mary-saints"
       ]
     },
     {
@@ -1352,6 +2618,8 @@
         "luke-23-43",
         "matthew-10-28",
         "matthew-25-46",
+        "one-life",
+        "one-mediator",
         "resurrection-hope"
       ],
       "objections": [
@@ -1513,6 +2781,89 @@
       ]
     },
     {
+      "id": "one-life",
+      "subject": "death",
+      "kind": "doctrine",
+      "title": "Man lives once, then the resurrection and judgement; there is no rebirth",
+      "summary": "It is appointed unto men once to die, but after this the judgement. Man comes from the dust and returns to it, and he that goeth down to the grave shall come up no more, until God raises him. The Bible has no round of births: a man is judged for the things done in his body, in this one life, and the hope is not escape from the body but its resurrection, made immortal. Jesus denied that the man born blind suffered for sin before his birth.",
+      "passages": [
+        "Heb.9.27",
+        "Job.7.9-10",
+        "2Co.5.10",
+        "Jhn.9.1-3"
+      ],
+      "points": [
+        {
+          "claim": "Men die once, and after that comes judgement.",
+          "passages": [
+            "Heb.9.27",
+            "2Co.5.10",
+            "Ecc.12.14"
+          ]
+        },
+        {
+          "claim": "The dead do not return to this life, but wait for the resurrection.",
+          "passages": [
+            "Job.7.9-10",
+            "Job.14.10-14",
+            "2Sa.12.23",
+            "Dan.12.2"
+          ]
+        },
+        {
+          "claim": "Jesus denied that blindness from birth was punishment for earlier sin.",
+          "passages": [
+            "Jhn.9.1-3"
+          ]
+        },
+        {
+          "claim": "The hope is the body raised and made immortal, not freedom from bodies.",
+          "passages": [
+            "1Co.15.42-44",
+            "1Co.15.52-54",
+            "Php.3.20-21"
+          ]
+        },
+        {
+          "claim": "Sin's wages are death, and its remedy is forgiveness, not a debt worked off over many lives.",
+          "passages": [
+            "Rom.6.23",
+            "Eph.1.7",
+            "Psa.103.10-12"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Jesus said John the Baptist was Elijah.",
+          "answer": "He came in the spirit and power of Elijah, as the angel said, and John himself denied that he was Elijah.",
+          "passages": [
+            "Luk.1.17",
+            "Jhn.1.21"
+          ]
+        },
+        {
+          "objection": "Rebirth explains why some suffer from birth.",
+          "answer": "Jesus refused that explanation. Suffering comes from a world under sin and from time and chance, not as punishment for a life no one remembers.",
+          "passages": [
+            "Jhn.9.3",
+            "Ecc.9.11",
+            "Luk.13.4-5"
+          ]
+        }
+      ],
+      "related": [
+        "soul-mortal",
+        "resurrection-hope",
+        "matthew-11-14",
+        "suffering"
+      ],
+      "topics": [
+        "reincarnation",
+        "immortal-soul"
+      ]
+    },
+    {
       "id": "luke-23-43",
       "subject": "death",
       "kind": "passage",
@@ -1600,8 +2951,8 @@
         }
       ],
       "related": [
-        "soul-mortal",
-        "grave-and-hinnom"
+        "grave-and-hinnom",
+        "soul-mortal"
       ],
       "topics": [
         "immortal-soul",
@@ -1683,8 +3034,8 @@
         }
       ],
       "related": [
-        "soul-mortal",
-        "grave-and-hinnom"
+        "grave-and-hinnom",
+        "soul-mortal"
       ],
       "topics": [
         "immortal-soul",
@@ -1776,8 +3127,8 @@
         }
       ],
       "related": [
-        "resurrection-hope",
-        "philippians-1-23"
+        "philippians-1-23",
+        "resurrection-hope"
       ],
       "topics": [
         "heaven-at-death",
@@ -1823,8 +3174,8 @@
         }
       ],
       "related": [
-        "resurrection-hope",
-        "2-corinthians-5-8"
+        "2-corinthians-5-8",
+        "resurrection-hope"
       ],
       "topics": [
         "heaven-at-death",
@@ -1863,11 +3214,55 @@
         }
       ],
       "related": [
-        "soul-mortal",
-        "resurrection-hope"
+        "resurrection-hope",
+        "soul-mortal"
       ],
       "topics": [
         "heaven-at-death"
+      ]
+    },
+    {
+      "id": "matthew-11-14",
+      "subject": "death",
+      "kind": "passage",
+      "title": "Matthew 11:14, \"this is Elias, which was for to come\", read as reincarnation",
+      "summary": "The angel said John would go before the Lord \"in the spirit and power of Elias\", not as Elijah born again, and when he was asked, \"Art thou Elias?\", John said, \"I am not.\" Elijah was taken up in a whirlwind; he did not die to be reborn. Jesus' \"if ye will receive it\" marks a figure: John fulfilled Malachi's promise by doing Elijah's work, turning the hearts of the fathers to the children.",
+      "passages": [
+        "Mat.11.13-14"
+      ],
+      "points": [
+        {
+          "claim": "John came in the spirit and power of Elijah.",
+          "passages": [
+            "Luk.1.17",
+            "Mal.4.5-6"
+          ]
+        },
+        {
+          "claim": "John denied that he was Elijah.",
+          "passages": [
+            "Jhn.1.21"
+          ]
+        },
+        {
+          "claim": "Elijah was taken up in a whirlwind, not born again.",
+          "passages": [
+            "2Ki.2.11"
+          ]
+        },
+        {
+          "claim": "Jesus said it as a figure, for those who would receive it.",
+          "passages": [
+            "Mat.11.14-15",
+            "Mat.17.12-13"
+          ]
+        }
+      ],
+      "related": [
+        "one-life"
+      ],
+      "topics": [
+        "reincarnation"
       ]
     },
     {
@@ -2348,12 +3743,13 @@
         }
       ],
       "related": [
-        "kingdom-on-earth",
-        "gospel-and-baptism"
+        "gospel-and-baptism",
+        "kingdom-on-earth"
       ],
       "topics": [
         "kingdom",
-        "israel"
+        "israel",
+        "messiah"
       ]
     },
     {
@@ -2473,6 +3869,155 @@
       ]
     },
     {
+      "id": "law-fulfilled",
+      "subject": "law",
+      "kind": "doctrine",
+      "title": "Christ fulfilled the law of Moses, and believers are not under it",
+      "summary": "Jesus came not to destroy the law but to fulfil it, and Christ is the end of the law for righteousness to every one that believeth. The law was a schoolmaster to bring us unto Christ; after faith is come, we are no longer under a schoolmaster. God promised a new covenant, written on the heart, and the first became old, ready to vanish away. Its sabbaths, feasts and foods were a shadow of things to come, but the body is of Christ; its moral teaching remains in the law of Christ, to love God and one's neighbour.",
+      "passages": [
+        "Mat.5.17",
+        "Rom.10.4",
+        "Gal.3.24-25",
+        "Jer.31.31-33",
+        "Col.2.16-17"
+      ],
+      "points": [
+        {
+          "claim": "Jesus fulfilled the law; he is its end, for righteousness.",
+          "passages": [
+            "Mat.5.17-18",
+            "Rom.10.4",
+            "Luk.24.44"
+          ]
+        },
+        {
+          "claim": "The law was a schoolmaster until Christ; believers are not under it.",
+          "passages": [
+            "Gal.3.19-25",
+            "Rom.6.14",
+            "Rom.7.4-6"
+          ]
+        },
+        {
+          "claim": "God promised a new covenant, and the first became old, ready to vanish away.",
+          "passages": [
+            "Jer.31.31-33",
+            "Heb.8.6-13"
+          ]
+        },
+        {
+          "claim": "Its holy days were a shadow; Christ is the substance.",
+          "passages": [
+            "Col.2.16-17",
+            "Heb.10.1"
+          ]
+        },
+        {
+          "claim": "The apostles laid no burden of the law on Gentile believers, beyond a few necessary things.",
+          "passages": [
+            "Act.15.5-11",
+            "Act.15.28-29"
+          ]
+        },
+        {
+          "claim": "Love fulfils the law; believers keep the law of Christ.",
+          "passages": [
+            "Rom.13.8-10",
+            "Gal.6.2",
+            "Mat.22.37-40"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Not one jot or tittle shall pass from the law.",
+          "answer": "\"Till all be fulfilled\": and Jesus fulfilled it, saying on the cross, \"It is finished.\" The law does not fail but is accomplished, as a shadow gives way to what cast it.",
+          "passages": [
+            "Mat.5.18",
+            "Jhn.19.30",
+            "Luk.24.44"
+          ]
+        }
+      ],
+      "related": [
+        "sabbath",
+        "grace-and-works",
+        "abraham-promise"
+      ],
+      "topics": [
+        "law-sabbath",
+        "grace-works"
+      ]
+    },
+    {
+      "id": "sabbath",
+      "subject": "law",
+      "kind": "passage",
+      "title": "Exodus 20:8-11, \"remember the sabbath day\", read as binding on believers now",
+      "summary": "The sabbath was a sign between Yahweh and the children of Israel, made known at Sinai, and Paul names it among the shadows of things to come: \"Let no man therefore judge you ... in respect of ... the sabbath days.\" It points to the rest God has promised, which remains for his people. The disciples met on the first day of the week to break bread, and the apostles did not lay the sabbath on the Gentiles. Keeping it is no sin, but making it a test of faith adds to the gospel.",
+      "passages": [
+        "Exo.20.8-11"
+      ],
+      "points": [
+        {
+          "claim": "The sabbath was a sign of the covenant with Israel.",
+          "passages": [
+            "Exo.31.13-17",
+            "Neh.9.13-14",
+            "Ezk.20.12"
+          ]
+        },
+        {
+          "claim": "Paul counts it a shadow, and no one is to be judged by it.",
+          "passages": [
+            "Col.2.16-17",
+            "Rom.14.5-6",
+            "Gal.4.9-11"
+          ]
+        },
+        {
+          "claim": "It points to God's rest, still to come.",
+          "passages": [
+            "Heb.4.1-11"
+          ]
+        },
+        {
+          "claim": "The disciples met on the first day; the sabbath was not laid on the Gentiles.",
+          "passages": [
+            "Act.20.7",
+            "1Co.16.2",
+            "Act.15.28-29"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The sabbath was made at creation, before Israel.",
+          "answer": "God rested on the seventh day, but no one is commanded to keep it until the manna in the wilderness, and Nehemiah says it was made known at Sinai.",
+          "passages": [
+            "Gen.2.2-3",
+            "Exo.16.23-29",
+            "Neh.9.14"
+          ]
+        },
+        {
+          "objection": "It is one of the ten commandments, which stand for ever.",
+          "answer": "The others are taught again in the apostles' letters; the sabbath alone is not, and is called a shadow. The tables of stone are the covenant Paul says was done away, beside the ministry of the spirit.",
+          "passages": [
+            "Deu.4.13",
+            "2Co.3.3-11",
+            "Col.2.16-17"
+          ]
+        }
+      ],
+      "related": [
+        "law-fulfilled"
+      ],
+      "topics": [
+        "law-sabbath"
+      ]
+    },
+    {
       "id": "gospel-and-baptism",
       "subject": "salvation",
       "kind": "doctrine",
@@ -2542,11 +4087,330 @@
       ],
       "related": [
         "abraham-promise",
-        "matthew-28-19",
-        "luke-23-43"
+        "grace-and-works",
+        "luke-23-43",
+        "matthew-28-19"
       ],
       "topics": [
-        "baptism"
+        "baptism",
+        "grace-works"
+      ]
+    },
+    {
+      "id": "sin-and-death",
+      "subject": "salvation",
+      "kind": "doctrine",
+      "title": "All have sinned, and the wages of sin is death",
+      "summary": "By one man sin entered into the world, and death by sin; and so death passed upon all men, for that all have sinned. Sin is not illusion or ignorance but the transgression of God's law, and it springs from within, from the heart and its desires. Its end is death, not another life; the remedy is not enlightenment or detachment but forgiveness, and life from God, which he gives through the one man who overcame sin.",
+      "passages": [
+        "Rom.5.12",
+        "Rom.6.23",
+        "1Jn.3.4",
+        "Jas.1.14-15",
+        "Mrk.7.21-23"
+      ],
+      "points": [
+        {
+          "claim": "Sin and death came by one man, and passed upon all.",
+          "passages": [
+            "Gen.2.17",
+            "Gen.3.19",
+            "Rom.5.12",
+            "1Co.15.21-22"
+          ]
+        },
+        {
+          "claim": "Sin is the transgression of God's law, and all have sinned.",
+          "passages": [
+            "1Jn.3.4",
+            "Rom.3.23",
+            "Ecc.7.20"
+          ]
+        },
+        {
+          "claim": "Sin comes from within, from the heart's desires.",
+          "passages": [
+            "Jas.1.14-15",
+            "Mrk.7.21-23",
+            "Jer.17.9"
+          ]
+        },
+        {
+          "claim": "Its end is death; God gives life through Christ.",
+          "passages": [
+            "Rom.6.23",
+            "Rom.5.17-21",
+            "Jhn.3.16"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Evil is only ignorance; we need knowledge, not forgiveness.",
+          "answer": "Knowledge does not cure it: Paul knew the good, and did the evil he would not. The deliverance is from God, through Jesus Christ.",
+          "passages": [
+            "Rom.7.18-25"
+          ]
+        },
+        {
+          "objection": "Suffering comes from craving; end craving, and suffering ends.",
+          "answer": "Desire is not evil in itself: man was made to desire God and his kingdom. Lust, when it has conceived, brings forth sin, and sin, death. The cure is a new heart, and the hope is life, not extinction.",
+          "passages": [
+            "Jas.1.14-15",
+            "Psa.42.1-2",
+            "Ezk.36.26"
+          ]
+        }
+      ],
+      "related": [
+        "adversary-not-angel",
+        "suffering",
+        "atonement",
+        "grace-and-works",
+        "soul-mortal"
+      ],
+      "topics": [
+        "suffering",
+        "grace-works"
+      ]
+    },
+    {
+      "id": "atonement",
+      "subject": "salvation",
+      "kind": "doctrine",
+      "title": "Christ died for our sins, as one of us",
+      "summary": "God set forth Jesus to be a propitiation through faith in his blood, to declare his righteousness. Jesus gave his life a ransom for many; he bare our sins in his own body on the tree, and by his stripes we are healed. He died for us as one of us, sharing our nature: sin was condemned in his flesh, and he rose because death could not hold one who never yielded to it. Without shedding of blood is no remission, and the law's sacrifices pointed to his. Those baptised into his death are raised with him.",
+      "passages": [
+        "Rom.3.24-26",
+        "Mrk.10.45",
+        "Isa.53.5-6",
+        "1Pe.2.24",
+        "Heb.9.22-26"
+      ],
+      "points": [
+        {
+          "claim": "Jesus gave his life a ransom and bore the sins of many, as the prophets foretold.",
+          "passages": [
+            "Mrk.10.45",
+            "Isa.53.5-12",
+            "1Pe.2.24"
+          ]
+        },
+        {
+          "claim": "God set him forth to declare his righteousness, that he might be just and the justifier of him which believeth.",
+          "passages": [
+            "Rom.3.24-26",
+            "Rom.5.8-10"
+          ]
+        },
+        {
+          "claim": "Sin was condemned in the flesh he shared; he died to it once, and lives to God.",
+          "passages": [
+            "Rom.8.3",
+            "Rom.6.9-10",
+            "Heb.2.14",
+            "Act.2.24"
+          ]
+        },
+        {
+          "claim": "The law's sacrifices were shadows of his; without shedding of blood is no remission.",
+          "passages": [
+            "Heb.9.22-26",
+            "Heb.10.1-14",
+            "Lev.17.11"
+          ]
+        },
+        {
+          "claim": "Believers share his death in baptism, and his life.",
+          "passages": [
+            "Rom.6.3-8",
+            "Gal.2.20"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "No soul bears another's burden; each answers for his own sin.",
+          "answer": "So Ezekiel says, and it holds: Christ did not take on another's guilt as if it were his. He died as one of us, the sinless representative of a sinful race, and those who are joined to his death are forgiven for his sake. The son bearing his father's iniquity against his will is what Ezekiel denies; the Son giving his own life willingly is what Isaiah foretells.",
+          "passages": [
+            "Ezk.18.20",
+            "Isa.53.10-12",
+            "Jhn.10.17-18"
+          ]
+        },
+        {
+          "objection": "God can forgive without a sacrifice.",
+          "answer": "He forgives freely, but in a way that declares his righteousness: sin is not overlooked but condemned, in the one man who never yielded to it.",
+          "passages": [
+            "Rom.3.25-26",
+            "Rom.8.3"
+          ]
+        }
+      ],
+      "related": [
+        "crucifixion",
+        "jesus-a-man",
+        "adversary-not-angel",
+        "gospel-and-baptism",
+        "isaiah-53"
+      ],
+      "topics": [
+        "the-cross",
+        "grace-works"
+      ]
+    },
+    {
+      "id": "grace-and-works",
+      "subject": "salvation",
+      "kind": "doctrine",
+      "title": "Salvation is God's gift by grace, not earned by works",
+      "summary": "\"By grace are ye saved through faith; and that not of yourselves: it is the gift of God: not of works, lest any man should boast.\" All have sinned, and no store of good deeds outweighs the wages of sin, which is death; eternal life is the gift of God. Abraham believed God, and it was counted unto him for righteousness. Faith is not idle: it obeys, is baptised and bears fruit, and faith without works is dead; but works are the fruit of being saved, not its price.",
+      "passages": [
+        "Eph.2.8-10",
+        "Rom.6.23",
+        "Rom.4.3-5",
+        "Tit.3.5",
+        "Jas.2.17"
+      ],
+      "points": [
+        {
+          "claim": "All have sinned; none is righteous by his own deeds.",
+          "passages": [
+            "Rom.3.10-12",
+            "Rom.3.23",
+            "Isa.64.6",
+            "Gal.2.16"
+          ]
+        },
+        {
+          "claim": "Eternal life is God's gift, by grace through faith.",
+          "passages": [
+            "Rom.6.23",
+            "Eph.2.8-9",
+            "Rom.3.24",
+            "Tit.3.5-7"
+          ]
+        },
+        {
+          "claim": "Abraham's faith was counted for righteousness, before the law.",
+          "passages": [
+            "Gen.15.6",
+            "Rom.4.1-5",
+            "Gal.3.6-9"
+          ]
+        },
+        {
+          "claim": "Faith obeys and works; faith without works is dead.",
+          "passages": [
+            "Jas.2.17-24",
+            "Eph.2.10",
+            "Gal.5.6",
+            "Heb.5.9"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "God weighs good deeds against bad on the day of judgement.",
+          "answer": "A judge does not acquit a thief for his kindnesses. The law curses every one that continueth not in all things written in it, and whoever offends in one point is guilty of all. Forgiveness is the only remedy, and God gives it freely in Christ.",
+          "passages": [
+            "Gal.3.10",
+            "Jas.2.10",
+            "Psa.130.3-4"
+          ]
+        },
+        {
+          "objection": "Then it does not matter how we live.",
+          "answer": "\"Shall we continue in sin, that grace may abound? God forbid.\" Those baptised into Christ's death walk in newness of life, and grace teaches them to live soberly, righteously and godly.",
+          "passages": [
+            "Rom.6.1-4",
+            "Tit.2.11-12"
+          ]
+        }
+      ],
+      "related": [
+        "gospel-and-baptism",
+        "atonement",
+        "sin-and-death",
+        "law-fulfilled",
+        "abraham-promise"
+      ],
+      "topics": [
+        "grace-works"
+      ]
+    },
+    {
+      "id": "one-way",
+      "subject": "salvation",
+      "kind": "doctrine",
+      "title": "Salvation is through Jesus alone, not by many paths",
+      "summary": "Jesus said, \"I am the way, the truth, and the life: no man cometh unto the Father, but by me,\" and Peter, \"there is none other name under heaven given among men, whereby we must be saved.\" The paths cannot all be true, for they contradict one another: one God or many, one life or many, a risen Christ or no cross. God winked at the times of ignorance, but now commands all men every where to repent, because he has appointed a day to judge the world by the man he raised from the dead.",
+      "passages": [
+        "Jhn.14.6",
+        "Act.4.12",
+        "Act.17.30-31",
+        "1Ti.2.5-6"
+      ],
+      "points": [
+        {
+          "claim": "Jesus is the only way to the Father; there is no other name.",
+          "passages": [
+            "Jhn.14.6",
+            "Act.4.12",
+            "1Jn.5.11-12"
+          ]
+        },
+        {
+          "claim": "The ways men hold contradict one another, and a way that seems right can end in death.",
+          "passages": [
+            "Pro.14.12",
+            "Mat.7.13-14",
+            "1Ki.18.21"
+          ]
+        },
+        {
+          "claim": "God now commands all to repent, having raised Jesus to judge the world.",
+          "passages": [
+            "Act.17.30-31",
+            "Act.14.15-17"
+          ]
+        },
+        {
+          "claim": "God would have all men come to the knowledge of the truth, and sends the gospel to them.",
+          "passages": [
+            "1Ti.2.3-6",
+            "Rom.10.13-15",
+            "Act.10.34-35"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "It is arrogant to say one way is right.",
+          "answer": "It would be, if the claim were ours. It is Jesus' claim, and it stands or falls with his resurrection: if he rose, he is to be heard; if not, the faith is vain, as Paul himself said.",
+          "passages": [
+            "1Co.15.14-17",
+            "Act.17.31"
+          ]
+        },
+        {
+          "objection": "What of those who never heard?",
+          "answer": "Knowledge brings responsibility: those who have not known God's will are not judged as those who have, and \"man that is in honour, and understandeth not, is like the beasts that perish.\" The call is to preach to all.",
+          "passages": [
+            "Jhn.15.22",
+            "Rom.2.12",
+            "Psa.49.20",
+            "Rom.10.14-15"
+          ]
+        }
+      ],
+      "related": [
+        "one-mediator",
+        "empty-tomb",
+        "gospel-and-baptism"
+      ],
+      "topics": [
+        "one-way"
       ]
     }
   ]

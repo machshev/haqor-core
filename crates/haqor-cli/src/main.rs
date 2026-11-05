@@ -717,10 +717,11 @@ fn main() -> Result<()> {
             } => {
                 let summary = haqor_db_gen::gen_apologetics(&db, &apologetics, &src_texts)?;
                 println!(
-                    "Wrote {} apologetics in {} subjects, {} topics and {} audiences, marking {} passages, to {}",
+                    "Wrote {} apologetics in {} subjects, {} topics, {} religions and {} audiences, marking {} passages, to {}",
                     summary.entries,
                     summary.subjects,
                     summary.topics,
+                    summary.religions,
                     summary.audiences,
                     summary.passages,
                     db.display()

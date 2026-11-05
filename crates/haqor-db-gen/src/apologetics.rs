@@ -3,9 +3,10 @@
 //! the Bible's teaching on the subjects it is most often misread on, and
 //! answers on the passages brought against that teaching.
 //!
-//! The result is five tables: `apologetic_subject`, `apologetic_topic`,
-//! `apologetic_audience` (whom a conversation is with, and the entries they
-//! agree with and differ on, as JSON), `apologetic` (an entry, with its
+//! The result is six tables: `apologetic_subject`, `apologetic_topic`,
+//! `apologetic_religion` (the faiths, or none, that audiences belong to),
+//! `apologetic_audience` (whom a conversation is with, their religion, and the
+//! entries they agree with and differ on, as JSON), `apologetic` (an entry, with its
 //! points, objections, related entries and topics as JSON in `detail`, its
 //! passages packed onto the Hebrew numbering) and `apologetic_passage`, the
 //! verses the reader marks with each entry.
@@ -35,6 +36,13 @@ DROP TABLE IF EXISTS apologetic;
 DROP TABLE IF EXISTS apologetic_passage;
 DROP TABLE IF EXISTS apologetic_topic;
 DROP TABLE IF EXISTS apologetic_audience;
+DROP TABLE IF EXISTS apologetic_religion;
+CREATE TABLE apologetic_religion(
+    ord   INTEGER PRIMARY KEY,
+    key   TEXT NOT NULL UNIQUE,
+    title TEXT NOT NULL,
+    note  TEXT NOT NULL
+);
 CREATE TABLE apologetic_topic(
     ord   INTEGER PRIMARY KEY,
     key   TEXT NOT NULL UNIQUE,
@@ -42,11 +50,12 @@ CREATE TABLE apologetic_topic(
 );
 CREATE TABLE apologetic_audience(
     ord    INTEGER PRIMARY KEY,
-    key    TEXT NOT NULL UNIQUE,
-    title  TEXT NOT NULL,
-    note   TEXT NOT NULL,
-    agree  TEXT NOT NULL,
-    differ TEXT NOT NULL
+    key      TEXT NOT NULL UNIQUE,
+    religion TEXT NOT NULL,
+    title    TEXT NOT NULL,
+    note     TEXT NOT NULL,
+    agree    TEXT NOT NULL,
+    differ   TEXT NOT NULL
 );
 CREATE TABLE apologetic_subject(
     ord   INTEGER PRIMARY KEY,
@@ -78,6 +87,7 @@ CREATE INDEX idx_apologetic_passage_ref ON apologetic_passage(ref);
 pub struct ApologeticsSummary {
     pub subjects: usize,
     pub topics: usize,
+    pub religions: usize,
     pub audiences: usize,
     pub entries: usize,
     pub passages: usize,
@@ -89,11 +99,16 @@ type Subject = (String, String, String);
 /// A topic's key and title.
 type Topic = (String, String);
 
+/// A religion's key, title and note: Christianity, Islam, or none.
+type Religion = (String, String, String);
+
 /// Whom a conversation is with: a denomination, or another faith or none,
 /// with a note on what they hold, the entries they agree with and those where
 /// they differ, each in the order to raise them.
 struct Audience {
     key: String,
+    /// A [`Religion`]'s key.
+    religion: String,
     title: String,
     note: String,
     agree: Vec<String>,
@@ -104,6 +119,7 @@ struct Audience {
 struct Read {
     subjects: Vec<Subject>,
     topics: Vec<Topic>,
+    religions: Vec<Religion>,
     audiences: Vec<Audience>,
     entries: Vec<Entry>,
 }
@@ -301,10 +317,32 @@ fn read(path: &Path, versification: &Versification, verses: &HashSet<i64>) -> Re
         });
     }
 
+    let mut religions: Vec<Religion> = Vec::new();
+    for r in file["religions"].as_array().into_iter().flatten() {
+        let key = check.text(&r["id"], "religion id");
+        let what = format!("religion {key}");
+        if religions.iter().any(|(k, _, _)| *k == key) {
+            check.faults.push(format!("{what}: repeated id"));
+        }
+        religions.push((
+            key.clone(),
+            check.text(&r["title"], &format!("{what} title")),
+            check.text(&r["note"], &format!("{what} note")),
+        ));
+    }
+    let religion_keys: HashSet<&str> = religions.iter().map(|r| r.0.as_str()).collect();
+
     let mut audiences = Vec::new();
     for a in file["audiences"].as_array().into_iter().flatten() {
         let key = check.text(&a["id"], "audience id");
         let what = format!("audience {key}");
+        // A file without religions leaves its audiences ungrouped.
+        let religion = a["religion"].as_str().unwrap_or("").to_string();
+        if !religions.is_empty() && !religion_keys.contains(religion.as_str()) {
+            check
+                .faults
+                .push(format!("{what}: unknown religion {religion:?}"));
+        }
         let mut listed = HashSet::new();
         let mut list = |field: &str, check: &mut Checker| -> Vec<String> {
             let mut ids = Vec::new();
@@ -333,9 +371,15 @@ fn read(path: &Path, versification: &Versification, verses: &HashSet<i64>) -> Re
             title: check.text(&a["title"], &format!("{what} title")),
             note: check.text(&a["note"], &format!("{what} note")),
             key,
+            religion,
             agree,
             differ,
         });
+    }
+    for (key, _, _) in &religions {
+        if !audiences.iter().any(|a| a.religion == *key) {
+            check.faults.push(format!("religion {key}: no audiences"));
+        }
     }
 
     if !check.faults.is_empty() {
@@ -349,6 +393,7 @@ fn read(path: &Path, versification: &Versification, verses: &HashSet<i64>) -> Re
     Ok(Read {
         subjects,
         topics,
+        religions,
         audiences,
         entries,
     })
@@ -358,6 +403,7 @@ fn write(db: &Connection, read: &Read) -> Result<usize> {
     let Read {
         subjects,
         topics,
+        religions,
         audiences,
         entries,
     } = read;
@@ -368,21 +414,28 @@ fn write(db: &Connection, read: &Read) -> Result<usize> {
     for (i, (key, title)) in topics.iter().enumerate() {
         topic.execute(params![i as i64, key, title])?;
     }
+    let mut religion = tx.prepare(
+        "INSERT INTO apologetic_religion(ord, key, title, note) VALUES (?1, ?2, ?3, ?4)",
+    )?;
+    for (i, (key, title, note)) in religions.iter().enumerate() {
+        religion.execute(params![i as i64, key, title, note])?;
+    }
     let mut audience = tx.prepare(
-        "INSERT INTO apologetic_audience(ord, key, title, note, agree, differ) \
-         VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
+        "INSERT INTO apologetic_audience(ord, key, religion, title, note, agree, differ) \
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
     )?;
     for (i, a) in audiences.iter().enumerate() {
         audience.execute(params![
             i as i64,
             a.key,
+            a.religion,
             a.title,
             a.note,
             json!(a.agree).to_string(),
             json!(a.differ).to_string()
         ])?;
     }
-    drop((topic, audience));
+    drop((topic, religion, audience));
     let mut subject = tx
         .prepare("INSERT INTO apologetic_subject(ord, key, title, note) VALUES (?1, ?2, ?3, ?4)")?;
     for (i, (key, title, note)) in subjects.iter().enumerate() {
@@ -449,13 +502,20 @@ pub fn build_apologetics(
     let summary = ApologeticsSummary {
         subjects: read.subjects.len(),
         topics: read.topics.len(),
+        religions: read.religions.len(),
         audiences: read.audiences.len(),
         entries: read.entries.len(),
         passages,
     };
     info!(
-        "Apologetics: {} entries in {} subjects, {} topics and {} audiences, marking {} passages",
-        summary.entries, summary.subjects, summary.topics, summary.audiences, summary.passages
+        "Apologetics: {} entries in {} subjects, {} topics, {} religions and {} audiences, \
+         marking {} passages",
+        summary.entries,
+        summary.subjects,
+        summary.topics,
+        summary.religions,
+        summary.audiences,
+        summary.passages
     );
     Ok(summary)
 }
@@ -539,9 +599,14 @@ mod tests {
                                "sources": [{ "work": "w", "quote": "q" }] }],
                   "related": ["b"], "topics": ["nope"] }
               ],
+              "religions": [
+                { "id": "r", "title": "R", "note": "N" },
+                { "id": "empty", "title": "E", "note": "N" }
+              ],
               "audiences": [
-                { "id": "x", "title": "X", "note": "N", "agree": ["a", "zz"], "differ": ["a"] },
-                { "id": "y", "title": "Y", "note": "N", "agree": ["a"] }
+                { "id": "x", "religion": "r", "title": "X", "note": "N",
+                  "agree": ["a", "zz"], "differ": ["a"] },
+                { "id": "y", "religion": "nope", "title": "Y", "note": "N", "agree": ["a"] }
               ]
             }"#,
         )
@@ -561,6 +626,8 @@ mod tests {
             "audience x agree: unknown entry \"zz\"",
             "audience x: a listed twice",
             "audience y: no entries where they differ",
+            "audience y: unknown religion \"nope\"",
+            "religion empty: no audiences",
         ] {
             assert!(err.contains(fault), "{fault} not in {err}");
         }

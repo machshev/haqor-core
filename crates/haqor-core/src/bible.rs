@@ -1262,6 +1262,17 @@ pub struct ApologeticTopic {
     pub title: String,
 }
 
+/// A religion whose followers a conversation may be with: Christianity,
+/// Islam, Hinduism, or none. Its denominations and schools are
+/// [`ApologeticAudience`]s.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ApologeticReligion {
+    pub key: String,
+    pub title: String,
+    /// Who they are, and where to begin.
+    pub note: String,
+}
+
 /// Whom a conversation is with: a denomination, or another faith or none.
 /// The entries are [`Apologetic`]s' keys, each list in the order to raise
 /// them.
@@ -1271,6 +1282,9 @@ pub struct ApologeticAudience {
     pub title: String,
     /// What they hold, and where to begin.
     pub note: String,
+    /// An [`ApologeticReligion`]'s key; empty for a database built without
+    /// them.
+    pub religion: String,
     /// Entries they agree with: common ground.
     pub agree: Vec<String>,
     /// Entries where they differ.
@@ -5377,18 +5391,43 @@ impl Bible {
             .collect()
     }
 
-    /// Whom a conversation may be with, in order, each with the entries for
-    /// it; empty for a database built without them.
+    /// The religions audiences belong to, in order; empty for a database
+    /// built without them.
+    pub fn apologetic_religions(&self) -> rusqlite::Result<Vec<ApologeticReligion>> {
+        if !self.has_table("apologetic_religion")? {
+            return Ok(Vec::new());
+        }
+        self.db
+            .prepare_cached("SELECT key, title, note FROM data.apologetic_religion ORDER BY ord")?
+            .query_map([], |row| {
+                Ok(ApologeticReligion {
+                    key: row.get(0)?,
+                    title: row.get(1)?,
+                    note: row.get(2)?,
+                })
+            })?
+            .collect()
+    }
+
+    /// Whom a conversation may be with, in order, each with its religion and
+    /// the entries for it; empty for a database built without them.
     pub fn apologetic_audiences(&self) -> rusqlite::Result<Vec<ApologeticAudience>> {
         if !self.has_table("apologetic_audience")? {
             return Ok(Vec::new());
         }
         let keys =
             |text: String| -> Vec<String> { serde_json::from_str(&text).unwrap_or_default() };
+        // A database built before religions has no column for them.
+        let religion = if self.has_table("apologetic_religion")? {
+            "religion"
+        } else {
+            "''"
+        };
         self.db
-            .prepare_cached(
-                "SELECT key, title, note, agree, differ FROM data.apologetic_audience ORDER BY ord",
-            )?
+            .prepare_cached(&format!(
+                "SELECT key, title, note, agree, differ, {religion} \
+                 FROM data.apologetic_audience ORDER BY ord"
+            ))?
             .query_map([], |row| {
                 Ok(ApologeticAudience {
                     key: row.get(0)?,
@@ -5396,6 +5435,7 @@ impl Bible {
                     note: row.get(2)?,
                     agree: keys(row.get(3)?),
                     differ: keys(row.get(4)?),
+                    religion: row.get(5)?,
                 })
             })?
             .collect()
@@ -8159,7 +8199,7 @@ mod tests {
             eprintln!("skipping: data/haqor.db has no apologetics tables");
             return;
         }
-        assert_eq!(subjects[0].key, "resurrection");
+        assert_eq!(subjects[0].key, "creation");
         let entries = bible.apologetics().unwrap();
         let tomb = entries.iter().find(|e| e.key == "empty-tomb").unwrap();
         assert_eq!(tomb.kind, "evidence");
@@ -8195,8 +8235,15 @@ mod tests {
             }
             let audiences = bible.apologetic_audiences().unwrap();
             assert!(!audiences.is_empty());
+            let religions = bible.apologetic_religions().unwrap();
+            for r in &religions {
+                assert!(audiences.iter().any(|a| a.religion == r.key), "{}", r.key);
+            }
             for a in &audiences {
                 assert!(!a.differ.is_empty());
+                if !religions.is_empty() {
+                    assert!(religions.iter().any(|r| r.key == a.religion), "{}", a.key);
+                }
                 for key in a.agree.iter().chain(&a.differ) {
                     assert!(entries.iter().any(|e| &e.key == key), "{key}");
                 }
