@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-11, 2 John, 3 John, and Jude
-(1,582 of 7,958 Peshitta verses; 6,376 remain). Mark 12 is next.
+Current coverage: Matthew 1-28, Mark 1-12, 2 John, 3 John, and Jude
+(1,626 of 7,958 Peshitta verses; 6,332 remain). Mark 13 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -294,3 +294,19 @@ Source checks for Mark 11:
   happen, and having whatever is said. The mountain command ends at the sea.
 - In 11:25 the grievance is something the hearers have against someone.
   The negative conditional and its consequence in 11:26 remain in full.
+
+Source checks for Mark 12:
+
+- In 12:13 the source names scribes and the household of Herod; no
+  different group is substituted from another textual tradition.
+- In 12:19 the surviving brother is the subject of taking the wife.
+  In 12:24 Jesus addresses them; in 12:29 he addresses the individual scribe.
+- Both 12:30 and 12:33 retain heart, soul, mind, and strength, in their
+  respective source orders.
+- In 12:42 the two coins are explicitly explained as small coins. The
+  rendering keeps that explanation without assigning a specific value;
+  compare the broader weight/value gloss in
+  [Brock and Kiraz's entry for manya](https://sedra.bethmardutho.org/lexeme/get/1803).
+- In 12:41 the past auxiliary belongs with casting. In 12:44 it belongs
+  with what the widow had; the feminine demonstrative begins the contrast
+  with the other contributors, and her entire property is retained.
