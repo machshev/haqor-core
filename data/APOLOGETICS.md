@@ -45,6 +45,16 @@ chapters (`Isa.52.13-53.12`).
 `subjects` lists the subjects in the order a reader is shown them, each
 with an `id`, a `title`, and a `note` of a sentence.
 
+`topics` lists the topics that cut across subjects, in the order a reader
+is shown them, each with an `id` and a `title`: the Trinity, going to
+heaven at death, the devil. An entry names its topics in `topics`.
+
+`audiences` lists whom a conversation may be with: a denomination, or
+another faith or none. Each has an `id`, a `title`, a `note` on what they
+hold and where to begin, `agree`, the entries they agree with, and
+`differ`, those where they differ, each in the order to raise them. An
+entry is listed once per audience.
+
 `works` maps each work's id to its `title`, `author`, `year` where known,
 its `licence`, a `url` where it can be read, and the `file` in
 `src_texts` that holds it.
@@ -69,12 +79,14 @@ Each entry of `entries` has:
 - `objections`, if any: each an `objection` and its `answer`, with
   `passages`.
 - `related`, other entries' ids.
+- `topics`, the ids of its topics.
 
 ## Building
 
 `db gen-apologetics` (or `db gen-runtime`) builds the file into
-`haqor.db`: `apologetic_subject`, `apologetic` (each entry, its points,
-objections and related entries as JSON in `detail`) and
+`haqor.db`: `apologetic_subject`, `apologetic_topic`, `apologetic_audience`
+(its entries' ids as JSON in `agree` and `differ`), `apologetic` (each entry, its points,
+objections, related entries and topics as JSON in `detail`) and
 `apologetic_passage`, the passages the reader marks, renumbered onto the
 Hebrew text as `prophecies.json`'s are. After an edit, rebuild with
 `cargo run --release -- db gen-apologetics` and sync the database to the
@@ -86,5 +98,6 @@ a passage in a chapter in its chapter context.
 
 A build fails, naming every fault, on a passage that cannot be read or
 is outside the corpus, an entry with no passages, an unknown subject,
-kind, work, licence or related entry, a repeated id, or a `quote` from a
+kind, topic, work, licence or related entry, an audience's unknown or
+repeated entry or empty `differ`, a repeated id, or a `quote` from a
 work under copyright.

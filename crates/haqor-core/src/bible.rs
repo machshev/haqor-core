@@ -1250,6 +1250,31 @@ pub struct Apologetic {
     pub objections: Vec<ApologeticObjection>,
     /// Other entries' keys.
     pub related: Vec<String>,
+    /// [`ApologeticTopic`]s' keys.
+    pub topics: Vec<String>,
+}
+
+/// A topic of Haqor's apologetics, cutting across subjects: the Trinity,
+/// going to heaven at death, the devil. An entry may have several.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ApologeticTopic {
+    pub key: String,
+    pub title: String,
+}
+
+/// Whom a conversation is with: a denomination, or another faith or none.
+/// The entries are [`Apologetic`]s' keys, each list in the order to raise
+/// them.
+#[derive(Debug, Clone, PartialEq)]
+pub struct ApologeticAudience {
+    pub key: String,
+    pub title: String,
+    /// What they hold, and where to begin.
+    pub note: String,
+    /// Entries they agree with: common ground.
+    pub agree: Vec<String>,
+    /// Entries where they differ.
+    pub differ: Vec<String>,
 }
 
 /// One step of an [`Apologetic`]'s argument.
@@ -5335,6 +5360,47 @@ impl Bible {
             .collect()
     }
 
+    /// The topics of Haqor's apologetics, in order; empty for a database
+    /// built without them.
+    pub fn apologetic_topics(&self) -> rusqlite::Result<Vec<ApologeticTopic>> {
+        if !self.has_table("apologetic_topic")? {
+            return Ok(Vec::new());
+        }
+        self.db
+            .prepare_cached("SELECT key, title FROM data.apologetic_topic ORDER BY ord")?
+            .query_map([], |row| {
+                Ok(ApologeticTopic {
+                    key: row.get(0)?,
+                    title: row.get(1)?,
+                })
+            })?
+            .collect()
+    }
+
+    /// Whom a conversation may be with, in order, each with the entries for
+    /// it; empty for a database built without them.
+    pub fn apologetic_audiences(&self) -> rusqlite::Result<Vec<ApologeticAudience>> {
+        if !self.has_table("apologetic_audience")? {
+            return Ok(Vec::new());
+        }
+        let keys =
+            |text: String| -> Vec<String> { serde_json::from_str(&text).unwrap_or_default() };
+        self.db
+            .prepare_cached(
+                "SELECT key, title, note, agree, differ FROM data.apologetic_audience ORDER BY ord",
+            )?
+            .query_map([], |row| {
+                Ok(ApologeticAudience {
+                    key: row.get(0)?,
+                    title: row.get(1)?,
+                    note: row.get(2)?,
+                    agree: keys(row.get(3)?),
+                    differ: keys(row.get(4)?),
+                })
+            })?
+            .collect()
+    }
+
     /// Every entry of Haqor's apologetics, in the file's order; empty for a
     /// database built without them. There are few enough to send whole.
     pub fn apologetics(&self) -> rusqlite::Result<Vec<Apologetic>> {
@@ -5404,6 +5470,12 @@ impl Bible {
                         })
                         .collect(),
                     related: detail["related"]
+                        .as_array()
+                        .into_iter()
+                        .flatten()
+                        .map(text)
+                        .collect(),
+                    topics: detail["topics"]
                         .as_array()
                         .into_iter()
                         .flatten()
@@ -8113,6 +8185,23 @@ mod tests {
             .find(|s| s.author == "Tacitus")
             .unwrap();
         assert_eq!(tacitus.loc, "15.44");
+        // Topics and audiences index the same entries.
+        let topics = bible.apologetic_topics().unwrap();
+        if !topics.is_empty() {
+            let keys: Vec<_> = topics.iter().map(|t| t.key.as_str()).collect();
+            assert!(entries.iter().any(|e| !e.topics.is_empty()));
+            for e in &entries {
+                assert!(e.topics.iter().all(|t| keys.contains(&t.as_str())));
+            }
+            let audiences = bible.apologetic_audiences().unwrap();
+            assert!(!audiences.is_empty());
+            for a in &audiences {
+                assert!(!a.differ.is_empty());
+                for key in a.agree.iter().chain(&a.differ) {
+                    assert!(entries.iter().any(|e| &e.key == key), "{key}");
+                }
+            }
+        }
     }
 
     /// A prophecy is found from its own passage and from a fulfilment; the

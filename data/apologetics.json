@@ -41,6 +41,256 @@
       "note": "Belief of the gospel of the kingdom, and baptism into Christ."
     }
   ],
+  "topics": [
+    {
+      "id": "resurrection-evidence",
+      "title": "Evidence for the resurrection"
+    },
+    {
+      "id": "bible-reliable",
+      "title": "Is the Bible reliable?"
+    },
+    {
+      "id": "trinity",
+      "title": "The Trinity"
+    },
+    {
+      "id": "pre-existence",
+      "title": "Did Jesus exist before his birth?"
+    },
+    {
+      "id": "nature-of-christ",
+      "title": "Who Jesus is"
+    },
+    {
+      "id": "holy-spirit",
+      "title": "The holy spirit"
+    },
+    {
+      "id": "immortal-soul",
+      "title": "The immortal soul"
+    },
+    {
+      "id": "heaven-at-death",
+      "title": "Going to heaven at death"
+    },
+    {
+      "id": "hell",
+      "title": "Hell and eternal torment"
+    },
+    {
+      "id": "devil",
+      "title": "The devil and Satan"
+    },
+    {
+      "id": "demons",
+      "title": "Demons and spiritual warfare"
+    },
+    {
+      "id": "second-coming",
+      "title": "The return of Christ"
+    },
+    {
+      "id": "kingdom",
+      "title": "The kingdom and the promises"
+    },
+    {
+      "id": "israel",
+      "title": "Israel"
+    },
+    {
+      "id": "baptism",
+      "title": "Baptism and salvation"
+    },
+    {
+      "id": "resurrection-of-dead",
+      "title": "The resurrection of the dead"
+    }
+  ],
+  "audiences": [
+    {
+      "id": "catholic",
+      "title": "Catholics",
+      "note": "Catholic teaching holds the Trinity, an immortal soul judged at death to heaven, purgatory or hell, and the baptism of infants. Begin from the creeds' own words, \"the resurrection of the body\": if the dead are conscious already, why is it needed?",
+      "agree": [
+        "empty-tomb",
+        "appearances",
+        "early-testimony"
+      ],
+      "differ": [
+        "resurrection-hope",
+        "soul-mortal",
+        "luke-23-43",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "one-god",
+        "john-1-1",
+        "matthew-28-19",
+        "gospel-and-baptism",
+        "kingdom-on-earth"
+      ]
+    },
+    {
+      "id": "evangelical",
+      "title": "Evangelicals",
+      "note": "Evangelicals hold the Bible's authority, the Trinity, salvation by faith, going to heaven at death and eternal punishment in hell. The shared regard for Scripture is the way in: ask what a passage says before what it is taken to mean.",
+      "agree": [
+        "empty-tomb",
+        "appearances",
+        "early-testimony",
+        "fulfilled-prophecy",
+        "return-of-christ"
+      ],
+      "differ": [
+        "resurrection-hope",
+        "2-corinthians-5-8",
+        "philippians-1-23",
+        "john-14-2",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "one-god",
+        "john-1-1",
+        "philippians-2-6",
+        "john-20-28",
+        "adversary-not-angel",
+        "kingdom-on-earth",
+        "gospel-and-baptism"
+      ]
+    },
+    {
+      "id": "pentecostal",
+      "title": "Pentecostals and charismatics",
+      "note": "Pentecostals hold the Trinity, the holy spirit as a person giving gifts today, and spiritual warfare against the devil and demons. Begin from what the spirit is in Scripture, God's power, and from Jesus' own healings.",
+      "agree": [
+        "empty-tomb",
+        "return-of-christ"
+      ],
+      "differ": [
+        "holy-spirit-power",
+        "demons",
+        "adversary-not-angel",
+        "temptation-wilderness",
+        "one-god",
+        "matthew-28-19",
+        "resurrection-hope",
+        "grave-and-hinnom"
+      ]
+    },
+    {
+      "id": "jehovahs-witness",
+      "title": "Jehovah's Witnesses",
+      "note": "Witnesses hold that God is one and not a Trinity, that the soul dies, that hell is the grave, and that the kingdom will be on the earth. They hold that Jesus existed before his birth as Michael the archangel, that the devil is a fallen angel, that Christ's presence began invisibly in 1914, and that 144,000 reign in heaven. Begin from the large common ground.",
+      "agree": [
+        "one-god",
+        "soul-mortal",
+        "grave-and-hinnom",
+        "resurrection-hope",
+        "kingdom-on-earth"
+      ],
+      "differ": [
+        "john-1-1",
+        "john-8-58",
+        "colossians-1-16",
+        "philippians-2-6",
+        "jesus-a-man",
+        "adversary-not-angel",
+        "revelation-12-7",
+        "job-1-6",
+        "return-of-christ",
+        "abraham-promise",
+        "gospel-and-baptism"
+      ]
+    },
+    {
+      "id": "latter-day-saints",
+      "title": "Latter-day Saints",
+      "note": "Latter-day Saints hold that the Father and the Son are separate beings, that all people lived as spirits before birth, and that the Book of Mormon is Scripture; they look for Christ's return to reign on the earth and baptise by immersion. Begin from the Bible's account of man made from the dust.",
+      "agree": [
+        "return-of-christ",
+        "kingdom-on-earth",
+        "gospel-and-baptism",
+        "empty-tomb"
+      ],
+      "differ": [
+        "one-god",
+        "soul-mortal",
+        "ecclesiastes-12-7",
+        "john-1-1",
+        "john-8-58",
+        "jesus-a-man",
+        "early-testimony"
+      ]
+    },
+    {
+      "id": "adventist",
+      "title": "Seventh-day Adventists",
+      "note": "Adventists hold that the dead sleep until the resurrection, that the wicked are destroyed rather than tormented, and that Christ will return in person, and they baptise by immersion. They hold the Trinity, a personal devil, and a thousand years in heaven before the earth is made new. Begin from the common ground on death.",
+      "agree": [
+        "soul-mortal",
+        "resurrection-hope",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "return-of-christ",
+        "gospel-and-baptism"
+      ],
+      "differ": [
+        "one-god",
+        "john-1-1",
+        "holy-spirit-power",
+        "adversary-not-angel",
+        "revelation-12-7",
+        "ezekiel-28",
+        "kingdom-on-earth",
+        "john-14-2"
+      ]
+    },
+    {
+      "id": "muslim",
+      "title": "Muslims",
+      "note": "Islam holds that God is one, and that Jesus was a prophet and the Messiah, born of a virgin, but not the Son of God, and that he was not crucified. Begin from the one God, and from the evidence that Jesus died and rose.",
+      "agree": [
+        "one-god",
+        "jesus-a-man"
+      ],
+      "differ": [
+        "empty-tomb",
+        "appearances",
+        "transformed-witnesses",
+        "early-testimony",
+        "fulfilled-prophecy"
+      ]
+    },
+    {
+      "id": "jewish",
+      "title": "Jews",
+      "note": "Judaism holds that God is one, the promises to Abraham and David, and a kingdom of the Messiah on the earth; it rejects Jesus, often because Christians call him God. Begin from the Shema and the promises: Jesus fulfils them without being a second God.",
+      "agree": [
+        "one-god",
+        "abraham-promise",
+        "kingdom-on-earth"
+      ],
+      "differ": [
+        "fulfilled-prophecy",
+        "isaiah-9-6",
+        "empty-tomb",
+        "appearances",
+        "transformed-witnesses"
+      ]
+    },
+    {
+      "id": "sceptic",
+      "title": "Sceptics and atheists",
+      "note": "Begin from history, not from the Bible's authority: the empty tomb, the witnesses and how early the records are, then prophecy fulfilled.",
+      "agree": [],
+      "differ": [
+        "empty-tomb",
+        "appearances",
+        "transformed-witnesses",
+        "early-testimony",
+        "fulfilled-prophecy"
+      ]
+    }
+  ],
   "works": {
     "tacitus-annals": {
       "title": "Annals",
@@ -144,6 +394,10 @@
       "related": [
         "appearances",
         "transformed-witnesses"
+      ],
+      "topics": [
+        "resurrection-evidence",
+        "resurrection-of-dead"
       ]
     },
     {
@@ -196,6 +450,9 @@
         "empty-tomb",
         "transformed-witnesses",
         "early-testimony"
+      ],
+      "topics": [
+        "resurrection-evidence"
       ]
     },
     {
@@ -257,6 +514,9 @@
             "Act.10.39-41"
           ]
         }
+      ],
+      "topics": [
+        "resurrection-evidence"
       ]
     },
     {
@@ -325,6 +585,10 @@
       "related": [
         "appearances",
         "fulfilled-prophecy"
+      ],
+      "topics": [
+        "resurrection-evidence",
+        "bible-reliable"
       ]
     },
     {
@@ -401,6 +665,10 @@
       "related": [
         "early-testimony",
         "abraham-promise"
+      ],
+      "topics": [
+        "bible-reliable",
+        "israel"
       ]
     },
     {
@@ -495,6 +763,10 @@
         "john-8-58",
         "matthew-28-19",
         "philippians-2-6"
+      ],
+      "topics": [
+        "trinity",
+        "nature-of-christ"
       ]
     },
     {
@@ -547,6 +819,9 @@
       "related": [
         "one-god",
         "adversary-not-angel"
+      ],
+      "topics": [
+        "nature-of-christ"
       ]
     },
     {
@@ -623,6 +898,10 @@
       "related": [
         "one-god",
         "matthew-28-19"
+      ],
+      "topics": [
+        "trinity",
+        "holy-spirit"
       ]
     },
     {
@@ -677,6 +956,9 @@
         "colossians-1-16",
         "john-8-58",
         "one-god"
+      ],
+      "topics": [
+        "pre-existence"
       ]
     },
     {
@@ -716,6 +998,9 @@
       "related": [
         "one-god",
         "john-1-1"
+      ],
+      "topics": [
+        "pre-existence"
       ]
     },
     {
@@ -753,6 +1038,9 @@
       "related": [
         "one-god",
         "john-20-28"
+      ],
+      "topics": [
+        "trinity"
       ]
     },
     {
@@ -799,6 +1087,10 @@
       "related": [
         "one-god",
         "john-10-30"
+      ],
+      "topics": [
+        "trinity",
+        "nature-of-christ"
       ]
     },
     {
@@ -845,6 +1137,11 @@
       "related": [
         "one-god",
         "jesus-a-man"
+      ],
+      "topics": [
+        "trinity",
+        "pre-existence",
+        "nature-of-christ"
       ]
     },
     {
@@ -896,6 +1193,9 @@
       "related": [
         "one-god",
         "john-1-1"
+      ],
+      "topics": [
+        "pre-existence"
       ]
     },
     {
@@ -940,6 +1240,11 @@
       "related": [
         "one-god",
         "kingdom-on-earth"
+      ],
+      "topics": [
+        "trinity",
+        "pre-existence",
+        "kingdom"
       ]
     },
     {
@@ -981,6 +1286,11 @@
         "one-god",
         "holy-spirit-power",
         "gospel-and-baptism"
+      ],
+      "topics": [
+        "trinity",
+        "holy-spirit",
+        "baptism"
       ]
     },
     {
@@ -1055,6 +1365,9 @@
             "Jdg.16.30"
           ]
         }
+      ],
+      "topics": [
+        "immortal-soul"
       ]
     },
     {
@@ -1124,6 +1437,10 @@
             "2Ch.21.12"
           ]
         }
+      ],
+      "topics": [
+        "heaven-at-death",
+        "resurrection-of-dead"
       ]
     },
     {
@@ -1190,6 +1507,9 @@
         "matthew-10-28",
         "matthew-25-46",
         "soul-mortal"
+      ],
+      "topics": [
+        "hell"
       ]
     },
     {
@@ -1229,6 +1549,11 @@
         "gospel-and-baptism",
         "kingdom-on-earth",
         "soul-mortal"
+      ],
+      "topics": [
+        "heaven-at-death",
+        "kingdom",
+        "baptism"
       ]
     },
     {
@@ -1277,6 +1602,11 @@
       "related": [
         "soul-mortal",
         "grave-and-hinnom"
+      ],
+      "topics": [
+        "immortal-soul",
+        "heaven-at-death",
+        "hell"
       ]
     },
     {
@@ -1314,6 +1644,9 @@
       ],
       "related": [
         "soul-mortal"
+      ],
+      "topics": [
+        "immortal-soul"
       ]
     },
     {
@@ -1352,6 +1685,10 @@
       "related": [
         "soul-mortal",
         "grave-and-hinnom"
+      ],
+      "topics": [
+        "immortal-soul",
+        "hell"
       ]
     },
     {
@@ -1402,6 +1739,9 @@
       "related": [
         "grave-and-hinnom",
         "soul-mortal"
+      ],
+      "topics": [
+        "hell"
       ]
     },
     {
@@ -1438,6 +1778,10 @@
       "related": [
         "resurrection-hope",
         "philippians-1-23"
+      ],
+      "topics": [
+        "heaven-at-death",
+        "resurrection-of-dead"
       ]
     },
     {
@@ -1481,6 +1825,11 @@
       "related": [
         "resurrection-hope",
         "2-corinthians-5-8"
+      ],
+      "topics": [
+        "heaven-at-death",
+        "second-coming",
+        "resurrection-of-dead"
       ]
     },
     {
@@ -1516,6 +1865,9 @@
       "related": [
         "soul-mortal",
         "resurrection-hope"
+      ],
+      "topics": [
+        "heaven-at-death"
       ]
     },
     {
@@ -1589,6 +1941,10 @@
         "job-1-6",
         "revelation-12-7",
         "temptation-wilderness"
+      ],
+      "topics": [
+        "devil",
+        "demons"
       ]
     },
     {
@@ -1657,6 +2013,9 @@
       ],
       "related": [
         "adversary-not-angel"
+      ],
+      "topics": [
+        "demons"
       ]
     },
     {
@@ -1714,6 +2073,10 @@
       "related": [
         "adversary-not-angel",
         "jesus-a-man"
+      ],
+      "topics": [
+        "nature-of-christ",
+        "devil"
       ]
     },
     {
@@ -1758,6 +2121,9 @@
       ],
       "related": [
         "adversary-not-angel"
+      ],
+      "topics": [
+        "devil"
       ]
     },
     {
@@ -1795,6 +2161,9 @@
       ],
       "related": [
         "adversary-not-angel"
+      ],
+      "topics": [
+        "devil"
       ]
     },
     {
@@ -1837,6 +2206,9 @@
       ],
       "related": [
         "adversary-not-angel"
+      ],
+      "topics": [
+        "devil"
       ]
     },
     {
@@ -1911,6 +2283,11 @@
         "luke-23-43",
         "resurrection-hope",
         "return-of-christ"
+      ],
+      "topics": [
+        "second-coming",
+        "kingdom",
+        "israel"
       ]
     },
     {
@@ -1973,6 +2350,10 @@
       "related": [
         "kingdom-on-earth",
         "gospel-and-baptism"
+      ],
+      "topics": [
+        "kingdom",
+        "israel"
       ]
     },
     {
@@ -2035,6 +2416,10 @@
       "related": [
         "kingdom-on-earth",
         "resurrection-hope"
+      ],
+      "topics": [
+        "second-coming",
+        "resurrection-of-dead"
       ]
     },
     {
@@ -2081,6 +2466,10 @@
       "related": [
         "kingdom-on-earth",
         "return-of-christ"
+      ],
+      "topics": [
+        "heaven-at-death",
+        "second-coming"
       ]
     },
     {
@@ -2155,6 +2544,9 @@
         "abraham-promise",
         "matthew-28-19",
         "luke-23-43"
+      ],
+      "topics": [
+        "baptism"
       ]
     }
   ]

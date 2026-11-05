@@ -3,8 +3,10 @@
 //! the Bible's teaching on the subjects it is most often misread on, and
 //! answers on the passages brought against that teaching.
 //!
-//! The result is three tables: `apologetic_subject`, `apologetic` (an entry,
-//! with its points, objections and related entries as JSON in `detail`, its
+//! The result is five tables: `apologetic_subject`, `apologetic_topic`,
+//! `apologetic_audience` (whom a conversation is with, and the entries they
+//! agree with and differ on, as JSON), `apologetic` (an entry, with its
+//! points, objections, related entries and topics as JSON in `detail`, its
 //! passages packed onto the Hebrew numbering) and `apologetic_passage`, the
 //! verses the reader marks with each entry.
 
@@ -31,6 +33,21 @@ pub const SCHEMA: &str = "
 DROP TABLE IF EXISTS apologetic_subject;
 DROP TABLE IF EXISTS apologetic;
 DROP TABLE IF EXISTS apologetic_passage;
+DROP TABLE IF EXISTS apologetic_topic;
+DROP TABLE IF EXISTS apologetic_audience;
+CREATE TABLE apologetic_topic(
+    ord   INTEGER PRIMARY KEY,
+    key   TEXT NOT NULL UNIQUE,
+    title TEXT NOT NULL
+);
+CREATE TABLE apologetic_audience(
+    ord    INTEGER PRIMARY KEY,
+    key    TEXT NOT NULL UNIQUE,
+    title  TEXT NOT NULL,
+    note   TEXT NOT NULL,
+    agree  TEXT NOT NULL,
+    differ TEXT NOT NULL
+);
 CREATE TABLE apologetic_subject(
     ord   INTEGER PRIMARY KEY,
     key   TEXT NOT NULL UNIQUE,
@@ -60,12 +77,36 @@ CREATE INDEX idx_apologetic_passage_ref ON apologetic_passage(ref);
 #[derive(Debug, Default)]
 pub struct ApologeticsSummary {
     pub subjects: usize,
+    pub topics: usize,
+    pub audiences: usize,
     pub entries: usize,
     pub passages: usize,
 }
 
 /// A subject's key, title and note.
 type Subject = (String, String, String);
+
+/// A topic's key and title.
+type Topic = (String, String);
+
+/// Whom a conversation is with: a denomination, or another faith or none,
+/// with a note on what they hold, the entries they agree with and those where
+/// they differ, each in the order to raise them.
+struct Audience {
+    key: String,
+    title: String,
+    note: String,
+    agree: Vec<String>,
+    differ: Vec<String>,
+}
+
+/// What the file holds, read and checked.
+struct Read {
+    subjects: Vec<Subject>,
+    topics: Vec<Topic>,
+    audiences: Vec<Audience>,
+    entries: Vec<Entry>,
+}
 
 struct Entry {
     key: String,
@@ -118,11 +159,7 @@ fn packed(spans: &[Span]) -> Value {
     spans.iter().map(|s| json!([s.0, s.1])).collect()
 }
 
-fn read(
-    path: &Path,
-    versification: &Versification,
-    verses: &HashSet<i64>,
-) -> Result<(Vec<Subject>, Vec<Entry>)> {
+fn read(path: &Path, versification: &Versification, verses: &HashSet<i64>) -> Result<Read> {
     let file: Value = serde_json::from_str(
         &std::fs::read_to_string(path).with_context(|| format!("reading {}", path.display()))?,
     )
@@ -144,6 +181,14 @@ fn read(
         ));
     }
     let subject_keys: HashSet<&str> = subjects.iter().map(|s| s.0.as_str()).collect();
+
+    let mut topics = Vec::new();
+    for t in file["topics"].as_array().into_iter().flatten() {
+        let key = check.text(&t["id"], "topic id");
+        let title = check.text(&t["title"], &format!("topic {key} title"));
+        topics.push((key, title));
+    }
+    let topic_keys: HashSet<&str> = topics.iter().map(|t| t.0.as_str()).collect();
 
     let works = file["works"].as_object().cloned().unwrap_or_default();
     for (id, work) in &works {
@@ -221,6 +266,15 @@ fn read(
                 "passages": packed(&check.spans(&o["passages"], &at)),
             }));
         }
+        let mut entry_topics = Vec::new();
+        for t in e["topics"].as_array().into_iter().flatten() {
+            let t = t.as_str().unwrap_or("");
+            if topic_keys.contains(t) {
+                entry_topics.push(t.to_string());
+            } else {
+                check.faults.push(format!("{what}: unknown topic {t:?}"));
+            }
+        }
         let mut related = Vec::new();
         for r in e["related"].as_array().into_iter().flatten() {
             let r = r.as_str().unwrap_or("");
@@ -242,7 +296,45 @@ fn read(
                 "points": points,
                 "objections": objections,
                 "related": related,
+                "topics": entry_topics,
             }),
+        });
+    }
+
+    let mut audiences = Vec::new();
+    for a in file["audiences"].as_array().into_iter().flatten() {
+        let key = check.text(&a["id"], "audience id");
+        let what = format!("audience {key}");
+        let mut listed = HashSet::new();
+        let mut list = |field: &str, check: &mut Checker| -> Vec<String> {
+            let mut ids = Vec::new();
+            for r in a[field].as_array().into_iter().flatten() {
+                let r = r.as_str().unwrap_or("");
+                if !keys.contains(&r) {
+                    check
+                        .faults
+                        .push(format!("{what} {field}: unknown entry {r:?}"));
+                } else if !listed.insert(r.to_string()) {
+                    check.faults.push(format!("{what}: {r} listed twice"));
+                } else {
+                    ids.push(r.to_string());
+                }
+            }
+            ids
+        };
+        let agree = list("agree", &mut check);
+        let differ = list("differ", &mut check);
+        if differ.is_empty() {
+            check
+                .faults
+                .push(format!("{what}: no entries where they differ"));
+        }
+        audiences.push(Audience {
+            title: check.text(&a["title"], &format!("{what} title")),
+            note: check.text(&a["note"], &format!("{what} note")),
+            key,
+            agree,
+            differ,
         });
     }
 
@@ -254,12 +346,43 @@ fn read(
             check.faults.join("\n  ")
         );
     }
-    Ok((subjects, entries))
+    Ok(Read {
+        subjects,
+        topics,
+        audiences,
+        entries,
+    })
 }
 
-fn write(db: &Connection, subjects: &[Subject], entries: &[Entry]) -> Result<usize> {
+fn write(db: &Connection, read: &Read) -> Result<usize> {
+    let Read {
+        subjects,
+        topics,
+        audiences,
+        entries,
+    } = read;
     let tx = db.unchecked_transaction()?;
     tx.execute_batch(SCHEMA)?;
+    let mut topic =
+        tx.prepare("INSERT INTO apologetic_topic(ord, key, title) VALUES (?1, ?2, ?3)")?;
+    for (i, (key, title)) in topics.iter().enumerate() {
+        topic.execute(params![i as i64, key, title])?;
+    }
+    let mut audience = tx.prepare(
+        "INSERT INTO apologetic_audience(ord, key, title, note, agree, differ) \
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
+    )?;
+    for (i, a) in audiences.iter().enumerate() {
+        audience.execute(params![
+            i as i64,
+            a.key,
+            a.title,
+            a.note,
+            json!(a.agree).to_string(),
+            json!(a.differ).to_string()
+        ])?;
+    }
+    drop((topic, audience));
     let mut subject = tx
         .prepare("INSERT INTO apologetic_subject(ord, key, title, note) VALUES (?1, ?2, ?3, ?4)")?;
     for (i, (key, title, note)) in subjects.iter().enumerate() {
@@ -321,16 +444,18 @@ pub fn build_apologetics(
             .query_map([], |row| row.get::<_, i64>(0))?
             .collect::<rusqlite::Result<Vec<_>>>()?,
     );
-    let (subjects, entries) = read(path, &versification, &verses)?;
-    let passages = write(db, &subjects, &entries)?;
+    let read = read(path, &versification, &verses)?;
+    let passages = write(db, &read)?;
     let summary = ApologeticsSummary {
-        subjects: subjects.len(),
-        entries: entries.len(),
+        subjects: read.subjects.len(),
+        topics: read.topics.len(),
+        audiences: read.audiences.len(),
+        entries: read.entries.len(),
         passages,
     };
     info!(
-        "Apologetics: {} entries in {} subjects, marking {} passages",
-        summary.entries, summary.subjects, summary.passages
+        "Apologetics: {} entries in {} subjects, {} topics and {} audiences, marking {} passages",
+        summary.entries, summary.subjects, summary.topics, summary.audiences, summary.passages
     );
     Ok(summary)
 }
@@ -370,6 +495,9 @@ mod tests {
             ))
             .unwrap();
         }
+        // Detached, so the build's DROP TABLEs cannot reach the real file:
+        // an unqualified name falls through to an attached database.
+        db.execute_batch("DETACH DATABASE src").unwrap();
         let summary =
             build_apologetics(&db, &root.join("data").join(APOLOGETICS), &src_texts).unwrap();
         assert!(summary.entries >= 10);
@@ -409,7 +537,11 @@ mod tests {
                   "summary": "S", "passages": ["Mat.1.1"],
                   "points": [{ "claim": "C", "passages": ["Xyz.1.1"],
                                "sources": [{ "work": "w", "quote": "q" }] }],
-                  "related": ["b"] }
+                  "related": ["b"], "topics": ["nope"] }
+              ],
+              "audiences": [
+                { "id": "x", "title": "X", "note": "N", "agree": ["a", "zz"], "differ": ["a"] },
+                { "id": "y", "title": "Y", "note": "N", "agree": ["a"] }
               ]
             }"#,
         )
@@ -425,6 +557,10 @@ mod tests {
             "cannot read \"Xyz.1.1\"",
             "under copyright",
             "unknown related \"b\"",
+            "unknown topic \"nope\"",
+            "audience x agree: unknown entry \"zz\"",
+            "audience x: a listed twice",
+            "audience y: no entries where they differ",
         ] {
             assert!(err.contains(fault), "{fault} not in {err}");
         }
