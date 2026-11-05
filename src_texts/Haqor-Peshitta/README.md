@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-18, 2 John, 3 John, and Jude
-(2,640 of 7,958 Peshitta verses; 5,318 remain). Luke 19 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-19, 2 John, 3 John, and Jude
+(2,688 of 7,958 Peshitta verses; 5,270 remain). Luke 20 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -859,3 +859,51 @@ Source checks for Luke 18:
   is "My Lord"; in 18:42 his faith has given him life. In 18:43 immediate
   sight is followed by ongoing following, praise, and the people's giving
   glory to God.
+
+Source checks for Luke 19:
+
+- In 19:2 Zacchaeus is rich and chief of the tax collectors. In 19:3
+  the stature clause repeats his name. In 19:4 he runs ahead of Jesus
+  and climbs the sycamore fig tree to see him. In 19:5 the suitability
+  predicate means he must be in Zacchaeus's house today, not a negative.
+- In 19:7 they were murmuring; the final expression concerns entering
+  to lodge with a sinful man. In 19:8 half of his possessions go to
+  the poor, and the repayment is fourfold. The source's "one" and "four"
+  belong to that multiplier, not an additional defrauded person.
+  In 19:9 life comes to this house, and this one also is Abraham's son.
+- In 19:10 seeking and giving life remain distinct. In 19:11 they were
+  hearing and supposing; "at that hour" belongs to the expectation that
+  the kingdom was about to be revealed, not to an hour being ready.
+  In 19:12 the nobleman receives kingship for himself and returns.
+- In 19:13 ten of his servants receive ten minas. In 19:15 the servants
+  are called to him, and the inquiry concerns what each had gained by
+  trading. In 19:16–19 the gains are ten and five minas, with authority
+  over ten and five towns. The first servant was found faithful.
+- In 19:20 the mina was with the servant, laid up in linen cloth;
+  the form rendered "laid up" is a passive participle. In 19:22
+  "You knew me" keeps its object. In 19:23 the table has the financial
+  sense documented in [CAL's money changer's table entry](https://cal.huc.edu/getlex.php?coord=8100124004&word=2),
+  and the demand includes its interest. In 19:25 the address is "our lord".
+- In 19:24–26 possession is rendered naturally from the with-him and
+  to-him constructions. In 19:26 the recipient after giving resumes
+  "everyone who has"; no different receiver is introduced. In 19:27
+  the enemies belong to the parable's ruler, who orders their execution
+  before him. No additional "here" is supplied.
+- In 19:29 the mountain is called the place of Olives, with two of his
+  disciples sent. In 19:30 the village is opposite us, not you; the colt
+  has never been ridden. In 19:31 and 19:34 the title is "our Lord".
+  In 19:33 the colt's owners are plural; in 19:34 the reply is to them.
+- In 19:35 the garments are theirs, and Jesus is set on the colt. In
+  19:36 they were spreading the garments. In 19:37 the descent is of
+  the Mount of Olives, the entire crowd of disciples begins to praise,
+  and all the mighty deeds are retained. In 19:38 they were saying,
+  with peace in heaven and glory in the heights. In 19:39 crowds are plural.
+- In 19:42 both "this" and "your" belong to the day; the things pertaining
+  to peace are hidden from the city's eyes. In 19:43 the enemies surround
+  and press from every side, without an added rampart clause. In 19:44
+  the children are within the city, and no stone upon stone is left in it;
+  the time is that of its visitation.
+- In 19:45 both buying and selling occur in the temple. In 19:46 the
+  house is a house of prayer, without a verb meaning call. In 19:47
+  the chief priests, scribes, and elders seek to destroy him. In 19:48
+  both doing something to him and hearing him retain their object suffixes.
