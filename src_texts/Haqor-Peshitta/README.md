@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-19, 2 John, 3 John, and Jude
-(2,688 of 7,958 Peshitta verses; 5,270 remain). Luke 20 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-20, 2 John, 3 John, and Jude
+(2,735 of 7,958 Peshitta verses; 5,223 remain). Luke 21 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -907,3 +907,50 @@ Source checks for Luke 19:
   house is a house of prayer, without a verb meaning call. In 19:47
   the chief priests, scribes, and elders seek to destroy him. In 19:48
   both doing something to him and hearing him retain their object suffixes.
+
+Source checks for Luke 20:
+
+- In 20:1 the chief priests, scribes, and elders confront Jesus while
+  he is teaching and preaching. The English passive preserves those roles
+  while keeping the source links in order. In 20:4 John's baptism is
+  contrasted as from heaven or from people.
+- In 20:5 the leaders were reasoning among themselves. In 20:6 the
+  whole people would stone them, because the people are persuaded that
+  John was a prophet. In 20:8 Jesus retains the first-person refusal
+  and the first-person doing of these things.
+- In 20:9 the vineyard is leased to cultivators, and the owner goes
+  away for a long time. In 20:10 and 20:11 the servants belong to him;
+  the second is another servant of his. In 20:12 the cultivators, not
+  the sender, wound the third servant and cast him out.
+- In 20:13 the beloved son is the owner's own, and the hoped-for
+  response is respect. In 20:14 the cultivators were reasoning, call
+  the son the heir, and propose killing him so the inheritance will
+  be theirs. In 20:16 the owner gives the vineyard to others.
+- In 20:17 the rejected stone becomes the chief cornerstone. In 20:18
+  falling on the stone and the stone falling on someone remain distinct;
+  the final verb is rendered with its scatter/winnow sense. In 20:19
+  the attempt is at that hour, and the parable is against the leaders.
+- In 20:20 the spies feign righteousness and seek to catch him in a word,
+  with delivery to the judge and the governor's authority as their aim.
+  In 20:21 taking faces is the idiom for partiality. In 20:22 the question
+  concerns the head tax. In 20:25 Caesar's and God's respective claims
+  and recipients remain distinct; in 20:26 the answer is singular.
+- In 20:28 the man who dies has the wife without children, and his brother
+  is to take her and raise offspring for his brother. In 20:30 the second
+  takes her for his wife, then this one dies. In 20:31 the third and all
+  seven share the same outcome. In 20:33 all seven taking her belongs to
+  the explanatory clause, not to the singular wife predicate.
+- In 20:34-35 taking wives and wives being given to husbands render the
+  source's marriage idioms. The resurrection is from among the dead.
+  In 20:36 inability to die again, likeness to angels, children of God,
+  and children of the resurrection remain distinct; the last copula is
+  rendered in the surrounding present characterization.
+- In 20:37 the dead rising is explicit, Moses shows it, and the Lord
+  is named as the God of Abraham, Isaac, and Jacob. In 20:38 all live
+  to him. In 20:41 the scribes' claim is that the Messiah is David's son.
+  In 20:42 both speech verbs remain, with my Lord and my right hand;
+  in 20:43 the speaker says I will place your enemies under your feet.
+- In 20:44 David calls him my Lord. In 20:45 the disciples are his.
+  In 20:46 robes have no added long adjective, while marketplaces,
+  synagogues, and suppers are plural. In 20:47 widows' houses, the
+  pretext of prolonging their prayers, and greater condemnation remain.
