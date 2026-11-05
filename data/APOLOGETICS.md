@@ -50,9 +50,10 @@ is shown them, each with an `id` and a `title`: the Trinity, going to
 heaven at death, the devil. An entry names its topics in `topics`.
 
 `religions` lists the faiths, and none, that audiences belong to, in the
-order a reader is shown them: Christianity, Judaism, Islam, Hinduism,
-Sikhism, Buddhism, no religion. Each has an `id`, a `title` and a `note`
-on who they are and where to begin, and at least one audience.
+order a reader is shown them: Christianity, Judaism, Islam, the Bahá'í Faith,
+Hinduism, Sikhism, Buddhism, no religion. Each has an `id`, a `title`
+and a `note` on who they are and where to begin, and at least one
+audience.
 
 `audiences` lists whom a conversation may be with: a denomination or
 school of a religion, or none, grouped under its religion in the order

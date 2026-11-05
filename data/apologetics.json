@@ -146,6 +146,14 @@
       "title": "Scripture, tradition and later books"
     },
     {
+      "id": "later-prophets",
+      "title": "Later prophets and revelation"
+    },
+    {
+      "id": "bible-criticism",
+      "title": "Who wrote the Bible?"
+    },
+    {
       "id": "messiah",
       "title": "The Messiah"
     },
@@ -166,6 +174,14 @@
       "title": "The holy spirit"
     },
     {
+      "id": "spiritual-gifts",
+      "title": "Tongues, healing and the gifts"
+    },
+    {
+      "id": "exaltation",
+      "title": "Can men become gods?"
+    },
+    {
       "id": "one-way",
       "title": "Many paths to God?"
     },
@@ -176,6 +192,14 @@
     {
       "id": "mary-saints",
       "title": "Mary and the saints"
+    },
+    {
+      "id": "priesthood",
+      "title": "Priests and clergy"
+    },
+    {
+      "id": "lords-supper",
+      "title": "The bread and the wine"
     },
     {
       "id": "immortal-soul",
@@ -194,6 +218,14 @@
       "title": "Hell and eternal torment"
     },
     {
+      "id": "purgatory",
+      "title": "Purgatory and prayer for the dead"
+    },
+    {
+      "id": "universalism",
+      "title": "Will all be saved?"
+    },
+    {
       "id": "devil",
       "title": "The devil and Satan"
     },
@@ -204,6 +236,14 @@
     {
       "id": "second-coming",
       "title": "The return of Christ"
+    },
+    {
+      "id": "rapture",
+      "title": "The rapture"
+    },
+    {
+      "id": "dates",
+      "title": "Dates set for his coming"
     },
     {
       "id": "kingdom",
@@ -220,6 +260,10 @@
     {
       "id": "grace-works",
       "title": "Grace and works"
+    },
+    {
+      "id": "predestination",
+      "title": "Predestination and assurance"
     },
     {
       "id": "baptism",
@@ -245,6 +289,11 @@
       "id": "islam",
       "title": "Islam",
       "note": "Those who honour Jesus as a prophet and the Messiah, but not as the Son of God who died and rose: begin from the one God and the history of the cross."
+    },
+    {
+      "id": "bahai",
+      "title": "Bahá'í Faith",
+      "note": "Those who hold Bahá'u'llah the latest of God's messengers, after Moses, Jesus and Muhammad: begin from the Scripture they honour, and its warning against later prophets."
     },
     {
       "id": "hinduism",
@@ -299,7 +348,15 @@
         "gospel-and-baptism",
         "kingdom-on-earth",
         "six-days",
-        "evolution"
+        "evolution",
+        "apocrypha",
+        "1-corinthians-3-15",
+        "john-6-53",
+        "breaking-of-bread",
+        "priesthood-of-believers",
+        "acts-16-33",
+        "1-peter-3-19",
+        "matthew-10-28"
       ]
     },
     {
@@ -330,7 +387,276 @@
         "gospel-and-baptism",
         "kingdom-on-earth",
         "six-days",
+        "evolution",
+        "apocrypha",
+        "john-6-53",
+        "breaking-of-bread",
+        "priesthood-of-believers",
+        "acts-16-33",
+        "psalm-82-6",
+        "1-peter-3-19"
+      ]
+    },
+    {
+      "id": "oriental-orthodox",
+      "religion": "christianity",
+      "title": "Coptic, Ethiopian, Armenian and Syriac Orthodox",
+      "note": "The Oriental Orthodox churches hold the Trinity and that Christ has one nature, at once divine and human; holy tradition and the liturgy beside Scripture, the Ethiopian canon wider still, with Enoch and Jubilees; the intercession of Mary and the saints, icons, fasting, and the baptism of infants. Begin from the apostles' writings, which they read in the oldest tongues, and from the resurrection they keep at the heart of their year.",
+      "agree": [
+        "empty-tomb",
+        "appearances",
+        "crucifixion",
+        "early-testimony",
+        "return-of-christ",
+        "creator"
+      ],
+      "differ": [
+        "traditions-of-men",
+        "apocrypha",
+        "scripture-sufficient",
+        "no-idols",
+        "one-mediator",
+        "mary",
+        "resurrection-hope",
+        "soul-mortal",
+        "luke-23-43",
+        "1-corinthians-3-15",
+        "one-god",
+        "john-1-1",
+        "jesus-a-man",
+        "holy-spirit-power",
+        "acts-16-33",
+        "gospel-and-baptism",
+        "john-6-53",
+        "breaking-of-bread",
+        "priesthood-of-believers",
+        "psalm-82-6",
+        "kingdom-on-earth"
+      ]
+    },
+    {
+      "id": "anglican",
+      "religion": "christianity",
+      "title": "Anglicans and Episcopalians",
+      "note": "Anglicans hold the creeds and the Trinity, two sacraments, the baptism of infants, bishops, priests and deacons, and a soul that goes to God at death; they range from evangelical to Anglo-Catholic and liberal. Their own Articles say Scripture \"containeth all things necessary to salvation\", and read the Apocrypha \"for example of life\" but not for doctrine: begin there, and test each teaching by the Scripture they confess suffices.",
+      "agree": [
+        "scripture-sufficient",
+        "empty-tomb",
+        "appearances",
+        "early-testimony",
+        "crucifixion",
+        "atonement",
+        "grace-and-works",
+        "one-mediator",
+        "creator"
+      ],
+      "differ": [
+        "apocrypha",
+        "resurrection-hope",
+        "soul-mortal",
+        "2-corinthians-5-8",
+        "grave-and-hinnom",
+        "one-god",
+        "john-1-1",
+        "matthew-28-19",
+        "holy-spirit-power",
+        "acts-16-33",
+        "gospel-and-baptism",
+        "priesthood-of-believers",
+        "breaking-of-bread",
+        "adversary-not-angel",
+        "kingdom-on-earth",
+        "six-days",
+        "evolution",
+        "1-peter-3-19"
+      ]
+    },
+    {
+      "id": "lutheran",
+      "religion": "christianity",
+      "title": "Lutherans",
+      "note": "Lutherans hold Scripture alone and salvation by grace through faith alone, the Trinity, baptism as a means of grace given to infants, and the body and blood of Christ truly present in, with and under the bread and wine. Begin from Luther's own ground, Scripture over councils and popes, and carry it through to the soul, the supper and baptism.",
+      "agree": [
+        "scripture-sufficient",
+        "traditions-of-men",
+        "grace-and-works",
+        "one-mediator",
+        "atonement",
+        "crucifixion",
+        "empty-tomb",
+        "appearances",
+        "early-testimony",
+        "apocrypha",
+        "matthew-16-18",
+        "creator"
+      ],
+      "differ": [
+        "resurrection-hope",
+        "soul-mortal",
+        "luke-23-43",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "one-god",
+        "john-1-1",
+        "matthew-28-19",
+        "acts-16-33",
+        "gospel-and-baptism",
+        "john-6-53",
+        "breaking-of-bread",
+        "adversary-not-angel",
+        "kingdom-on-earth",
+        "1-peter-3-19"
+      ]
+    },
+    {
+      "id": "reformed",
+      "religion": "christianity",
+      "title": "Reformed and Presbyterians",
+      "note": "Reformed churches hold Scripture alone, God's sovereign choice of those he will save and their perseverance to the end, the Trinity, the baptism of believers' infants as a sign of the covenant, and worship without images. Begin from the covenant with Abraham, which they rightly set at the centre, and ask what it promised: the land, for ever, at the resurrection.",
+      "agree": [
+        "scripture-sufficient",
+        "traditions-of-men",
+        "inspiration",
+        "apocrypha",
+        "one-mediator",
+        "no-idols",
+        "priesthood-of-believers",
+        "atonement",
+        "grace-and-works",
+        "crucifixion",
+        "empty-tomb",
+        "appearances",
+        "creator",
+        "six-days"
+      ],
+      "differ": [
+        "abraham-promise",
+        "romans-9",
+        "hold-fast",
+        "resurrection-hope",
+        "soul-mortal",
+        "philippians-1-23",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "the-lost-perish",
+        "one-god",
+        "john-1-1",
+        "philippians-2-6",
+        "acts-16-33",
+        "gospel-and-baptism",
+        "adversary-not-angel",
+        "kingdom-on-earth",
+        "luke-16-19",
+        "matthew-10-28"
+      ]
+    },
+    {
+      "id": "methodist",
+      "religion": "christianity",
+      "title": "Methodists and Wesleyans",
+      "note": "Methodists hold that grace is offered to all and may be refused, that a believer can fall away, and that God calls his people to holiness; they hold the Trinity, the baptism of infants, and going to God at death. Begin from the common ground on free grace and holy living, then from the hope Wesley's hymns still sing, the resurrection at Christ's coming.",
+      "agree": [
+        "romans-9",
+        "hold-fast",
+        "grace-and-works",
+        "one-mediator",
+        "scripture-sufficient",
+        "apocrypha",
+        "atonement",
+        "crucifixion",
+        "empty-tomb",
+        "appearances",
+        "creator"
+      ],
+      "differ": [
+        "resurrection-hope",
+        "soul-mortal",
+        "2-corinthians-5-8",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "one-god",
+        "john-1-1",
+        "matthew-28-19",
+        "acts-16-33",
+        "gospel-and-baptism",
+        "adversary-not-angel",
+        "kingdom-on-earth",
         "evolution"
+      ]
+    },
+    {
+      "id": "baptist",
+      "religion": "christianity",
+      "title": "Baptists",
+      "note": "Baptists hold Scripture alone, the baptism of believers by immersion, the bread and wine as a memorial, the priesthood of all believers and the self-government of each congregation; most hold the Trinity, going to heaven at death and eternal punishment, many that the saved cannot be lost, and many a rapture before the tribulation. Begin from the large common ground on baptism and the supper, then ask why baptism was preached as for the remission of sins.",
+      "agree": [
+        "scripture-sufficient",
+        "traditions-of-men",
+        "inspiration",
+        "apocrypha",
+        "acts-16-33",
+        "breaking-of-bread",
+        "priesthood-of-believers",
+        "one-mediator",
+        "no-idols",
+        "atonement",
+        "grace-and-works",
+        "crucifixion",
+        "empty-tomb",
+        "appearances",
+        "creator",
+        "six-days"
+      ],
+      "differ": [
+        "gospel-and-baptism",
+        "hold-fast",
+        "resurrection-hope",
+        "soul-mortal",
+        "2-corinthians-5-8",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "one-god",
+        "john-1-1",
+        "matthew-28-19",
+        "1-thessalonians-4-17",
+        "adversary-not-angel",
+        "kingdom-on-earth",
+        "luke-16-19",
+        "matthew-10-28"
+      ]
+    },
+    {
+      "id": "anabaptist",
+      "religion": "christianity",
+      "title": "Mennonites, Amish and Anabaptists",
+      "note": "Anabaptists hold the baptism of believers only, the bread and wine as a memorial, a church separate from the world and its powers, and refusal to bear arms or swear oaths; they hold the Trinity and going to God at death. They share more than most with the brethren's own way of life: begin from that common ground, and from the kingdom Christ will set up, for which his people wait as strangers here.",
+      "agree": [
+        "acts-16-33",
+        "breaking-of-bread",
+        "priesthood-of-believers",
+        "hold-fast",
+        "romans-9",
+        "scripture-sufficient",
+        "traditions-of-men",
+        "grace-and-works",
+        "atonement",
+        "crucifixion",
+        "empty-tomb",
+        "appearances",
+        "creator",
+        "six-days"
+      ],
+      "differ": [
+        "kingdom-on-earth",
+        "abraham-promise",
+        "resurrection-hope",
+        "soul-mortal",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "one-god",
+        "john-1-1",
+        "matthew-28-19",
+        "adversary-not-angel"
       ]
     },
     {
@@ -352,7 +678,11 @@
         "one-way",
         "one-mediator",
         "no-idols",
-        "creator"
+        "creator",
+        "inspiration",
+        "later-prophets",
+        "apocrypha",
+        "priesthood-of-believers"
       ],
       "differ": [
         "resurrection-hope",
@@ -367,7 +697,12 @@
         "john-20-28",
         "adversary-not-angel",
         "kingdom-on-earth",
-        "gospel-and-baptism"
+        "gospel-and-baptism",
+        "the-lost-perish",
+        "1-thessalonians-4-17",
+        "hold-fast",
+        "luke-16-19",
+        "matthew-10-28"
       ]
     },
     {
@@ -382,7 +717,10 @@
         "atonement",
         "grace-and-works",
         "one-way",
-        "scripture-sufficient"
+        "scripture-sufficient",
+        "inspiration",
+        "apocrypha",
+        "priesthood-of-believers"
       ],
       "differ": [
         "holy-spirit-power",
@@ -392,7 +730,82 @@
         "one-god",
         "matthew-28-19",
         "resurrection-hope",
-        "grave-and-hinnom"
+        "grave-and-hinnom",
+        "spirit-gifts",
+        "mark-16-17",
+        "health-and-wealth",
+        "1-thessalonians-4-17"
+      ]
+    },
+    {
+      "id": "oneness-pentecostal",
+      "religion": "christianity",
+      "title": "Oneness Pentecostals",
+      "note": "Oneness Pentecostals hold that God is one and not three persons, but that Jesus is himself the Father, the Son and the spirit; they baptise by immersion in the name of Jesus for the remission of sins, and hold speaking in tongues the sign of receiving the spirit. Begin from the large common ground, one God and baptism into the name of Jesus, then from the Son praying to his Father.",
+      "agree": [
+        "matthew-28-19",
+        "gospel-and-baptism",
+        "acts-16-33",
+        "holy-spirit-power",
+        "crucifixion",
+        "empty-tomb",
+        "return-of-christ",
+        "creator"
+      ],
+      "differ": [
+        "one-god",
+        "john-14-9",
+        "john-10-30",
+        "isaiah-9-6",
+        "jesus-a-man",
+        "spirit-gifts",
+        "mark-16-17",
+        "health-and-wealth",
+        "resurrection-hope",
+        "soul-mortal",
+        "grave-and-hinnom",
+        "adversary-not-angel",
+        "demons",
+        "1-thessalonians-4-17",
+        "kingdom-on-earth"
+      ]
+    },
+    {
+      "id": "church-of-christ",
+      "religion": "christianity",
+      "title": "Churches of Christ and Restorationists",
+      "note": "Churches of Christ seek to restore the first-century church without creeds: believers baptised by immersion for the remission of sins, the bread and wine every first day of the week, elders over each congregation, and the spirit gifts ended with the apostles. Most hold the Trinity, the soul going to God at death and eternal punishment. Begin from the plea they share, the Bible alone, and carry it through to the hope of Israel and the nature of man.",
+      "agree": [
+        "gospel-and-baptism",
+        "acts-16-33",
+        "breaking-of-bread",
+        "priesthood-of-believers",
+        "spirit-gifts",
+        "mark-16-17",
+        "hold-fast",
+        "romans-9",
+        "scripture-sufficient",
+        "traditions-of-men",
+        "one-mediator",
+        "atonement",
+        "crucifixion",
+        "empty-tomb",
+        "appearances",
+        "creator"
+      ],
+      "differ": [
+        "abraham-promise",
+        "kingdom-on-earth",
+        "resurrection-hope",
+        "soul-mortal",
+        "2-corinthians-5-8",
+        "john-14-2",
+        "grave-and-hinnom",
+        "matthew-25-46",
+        "one-god",
+        "john-1-1",
+        "matthew-28-19",
+        "adversary-not-angel"
       ]
     },
     {
@@ -418,7 +831,14 @@
         "soft-tissue",
         "polystrate-fossils",
         "rapid-layers",
-        "noahs-ark"
+        "noahs-ark",
+        "the-lost-perish",
+        "1-thessalonians-4-17",
+        "apocrypha",
+        "inspiration",
+        "breaking-of-bread",
+        "acts-16-33",
+        "hold-fast"
       ],
       "differ": [
         "one-god",
@@ -431,7 +851,9 @@
         "john-14-2",
         "sabbath",
         "law-fulfilled",
-        "scripture-sufficient"
+        "scripture-sufficient",
+        "later-prophets",
+        "no-date-setting"
       ]
     },
     {
@@ -451,7 +873,15 @@
         "law-fulfilled",
         "creator",
         "evolution",
-        "flood"
+        "flood",
+        "the-lost-perish",
+        "1-thessalonians-4-17",
+        "apocrypha",
+        "acts-16-33",
+        "john-6-53",
+        "john-14-9",
+        "psalm-82-6",
+        "1-corinthians-3-15"
       ],
       "differ": [
         "john-1-1",
@@ -465,7 +895,11 @@
         "return-of-christ",
         "abraham-promise",
         "gospel-and-baptism",
-        "six-days"
+        "six-days",
+        "son-not-angel",
+        "revelation-7-4",
+        "no-date-setting",
+        "later-prophets"
       ]
     },
     {
@@ -479,7 +913,8 @@
         "gospel-and-baptism",
         "empty-tomb",
         "crucifixion",
-        "creator"
+        "creator",
+        "acts-16-33"
       ],
       "differ": [
         "one-god",
@@ -491,7 +926,170 @@
         "scripture-sufficient",
         "bible-preserved",
         "early-testimony",
-        "grace-and-works"
+        "grace-and-works",
+        "later-prophets",
+        "psalm-82-6",
+        "jeremiah-1-5",
+        "1-corinthians-15-29",
+        "priesthood-of-believers"
+      ]
+    },
+    {
+      "id": "christian-science",
+      "religion": "christianity",
+      "title": "Christian Scientists",
+      "note": "Christian Science, from Mary Baker Eddy's Science and Health, holds that God is Mind and all that is real is spiritual, so that matter, sickness, sin and death are illusions to be healed by right understanding; Jesus is the man who showed the Christ, not God, and his blood did not atone. Begin from the Bible's own account of sin, pain and death as real, and of a Saviour who truly died and rose.",
+      "agree": [
+        "grave-and-hinnom"
+      ],
+      "differ": [
+        "later-prophets",
+        "sin-and-death",
+        "suffering",
+        "creator",
+        "atonement",
+        "crucifixion",
+        "empty-tomb",
+        "resurrection-hope",
+        "soul-mortal",
+        "mark-16-17",
+        "one-way"
+      ]
+    },
+    {
+      "id": "quaker",
+      "religion": "christianity",
+      "title": "Quakers (Friends)",
+      "note": "Friends hold that the inner light of Christ is in every person and guides them directly; they keep no outward baptism or supper, no clergy, and plain, silent worship, and are known for peace and integrity. Many today are liberal or universalist. Begin from the common ground of worship without priests or images, then ask where the light is to be tested: \"To the law and to the testimony.\"",
+      "agree": [
+        "priesthood-of-believers",
+        "no-idols",
+        "one-mediator",
+        "traditions-of-men"
+      ],
+      "differ": [
+        "later-prophets",
+        "scripture-sufficient",
+        "gospel-and-baptism",
+        "breaking-of-bread",
+        "the-lost-perish",
+        "one-way",
+        "empty-tomb",
+        "resurrection-hope",
+        "soul-mortal",
+        "kingdom-on-earth"
+      ]
+    },
+    {
+      "id": "liberal-christian",
+      "religion": "christianity",
+      "title": "Liberal and progressive Christians",
+      "note": "Liberal Christians hold the Bible a human record of faith, its miracles and authorship open to doubt, evolution settled, and Jesus' teaching on love its heart; many hold that all will be saved, and many have already set aside hell and a personal devil. Begin from that common ground, then from the evidence: the records, fulfilled prophecy, and the empty tomb.",
+      "agree": [
+        "grave-and-hinnom",
+        "adversary-not-angel",
+        "demons",
+        "suffering"
+      ],
+      "differ": [
+        "inspiration",
+        "miracles",
+        "empty-tomb",
+        "appearances",
+        "early-testimony",
+        "fulfilled-prophecy",
+        "isaiah-53",
+        "atonement",
+        "the-lost-perish",
+        "one-way",
+        "six-days",
+        "evolution",
+        "flood",
+        "return-of-christ",
+        "kingdom-on-earth",
+        "resurrection-hope",
+        "radiometric-dating",
+        "genetic-clock"
+      ]
+    },
+    {
+      "id": "biblical-unitarian",
+      "religion": "christianity",
+      "title": "Biblical Unitarians",
+      "note": "Biblical Unitarians, among them the Church of God of the Abrahamic Faith, hold that God is one, the Father, that Jesus is his Son who began at his birth, and that the holy spirit is God's power; many hold the soul mortal, the dead asleep and the kingdom on the earth. The common ground is very wide: begin from it, and raise the adversary and the spirit gifts, where some differ.",
+      "agree": [
+        "one-god",
+        "jesus-a-man",
+        "holy-spirit-power",
+        "john-1-1",
+        "john-8-58",
+        "philippians-2-6",
+        "matthew-28-19",
+        "soul-mortal",
+        "resurrection-hope",
+        "grave-and-hinnom",
+        "kingdom-on-earth",
+        "abraham-promise",
+        "return-of-christ",
+        "gospel-and-baptism",
+        "empty-tomb"
+      ],
+      "differ": [
+        "adversary-not-angel",
+        "demons",
+        "spirit-gifts"
+      ]
+    },
+    {
+      "id": "unitarian-universalist",
+      "religion": "christianity",
+      "title": "Unitarian Universalists",
+      "note": "Unitarian Universalists grew from churches that held God one and all to be saved, and now hold no creed: members may be Christian, theist, humanist or Buddhist, and seek truth by reason and conscience. Begin from the history they honour, the one God their founders found in Scripture, then from the evidence that Jesus rose.",
+      "agree": [
+        "one-god",
+        "grave-and-hinnom",
+        "jesus-a-man"
+      ],
+      "differ": [
+        "one-way",
+        "the-lost-perish",
+        "inspiration",
+        "scripture-sufficient",
+        "miracles",
+        "empty-tomb",
+        "faith-and-evidence",
+        "moral-law",
+        "resurrection-hope",
+        "kingdom-on-earth"
+      ]
+    },
+    {
+      "id": "messianic",
+      "religion": "christianity",
+      "title": "Messianic Jews and Hebrew Roots",
+      "note": "Messianic Jews confess Jesus, Yeshua, the Messiah of Israel while keeping the sabbath, the feasts and much of the law; Hebrew Roots believers, many of them Gentiles, seek the same. Most hold the Trinity and going to heaven at death. Begin from the large common ground in the promises to Israel, then from the new covenant that Jeremiah foretold.",
+      "agree": [
+        "abraham-promise",
+        "kingdom-on-earth",
+        "return-of-christ",
+        "fulfilled-prophecy",
+        "messiah-timing",
+        "isaiah-53",
+        "empty-tomb",
+        "appearances",
+        "inspiration",
+        "creator",
+        "six-days"
+      ],
+      "differ": [
+        "law-fulfilled",
+        "sabbath",
+        "one-god",
+        "john-1-1",
+        "resurrection-hope",
+        "soul-mortal",
+        "1-thessalonians-4-17",
+        "adversary-not-angel"
       ]
     },
     {
@@ -505,7 +1103,10 @@
         "no-idols",
         "abraham-promise",
         "kingdom-on-earth",
-        "resurrection-hope"
+        "resurrection-hope",
+        "apocrypha",
+        "inspiration",
+        "psalm-82-6"
       ],
       "differ": [
         "messiah-timing",
@@ -518,7 +1119,8 @@
         "transformed-witnesses",
         "traditions-of-men",
         "law-fulfilled",
-        "grace-and-works"
+        "grace-and-works",
+        "deuteronomy-18-18"
       ]
     },
     {
@@ -541,7 +1143,8 @@
         "resurrection-hope",
         "kingdom-on-earth",
         "six-days",
-        "evolution"
+        "evolution",
+        "inspiration"
       ]
     },
     {
@@ -567,7 +1170,10 @@
         "atonement",
         "isaiah-53",
         "grace-and-works",
-        "fulfilled-prophecy"
+        "fulfilled-prophecy",
+        "later-prophets",
+        "deuteronomy-18-18",
+        "john-14-16"
       ]
     },
     {
@@ -589,7 +1195,32 @@
         "return-of-christ",
         "scripture-sufficient",
         "bible-preserved",
-        "atonement"
+        "atonement",
+        "later-prophets",
+        "deuteronomy-18-18",
+        "john-14-16"
+      ]
+    },
+    {
+      "id": "bahai",
+      "religion": "bahai",
+      "title": "Bahá'ís",
+      "note": "Bahá'ís hold one God revealed in turn by messengers, Abraham, Moses, Jesus, Muhammad, the Báb and Bahá'u'llah, whose coming in 1844 and after they count Christ's promised return and the Comforter he spoke of; they hold the unity of all religions, an immortal soul that grows after death, and the resurrection as spiritual. Begin from the one God and from what Jesus said of his own return.",
+      "agree": [
+        "creator",
+        "no-idols"
+      ],
+      "differ": [
+        "later-prophets",
+        "john-14-16",
+        "no-date-setting",
+        "return-of-christ",
+        "one-way",
+        "empty-tomb",
+        "resurrection-hope",
+        "soul-mortal",
+        "kingdom-on-earth",
+        "one-god"
       ]
     },
     {
@@ -610,7 +1241,8 @@
         "sin-and-death",
         "grace-and-works",
         "empty-tomb",
-        "resurrection-hope"
+        "resurrection-hope",
+        "jeremiah-1-5"
       ]
     },
     {
@@ -628,7 +1260,9 @@
         "soul-mortal",
         "one-way",
         "empty-tomb",
-        "resurrection-hope"
+        "resurrection-hope",
+        "psalm-82-6",
+        "jeremiah-1-5"
       ]
     },
     {
@@ -704,7 +1338,13 @@
         "moral-law",
         "suffering",
         "canaanites",
-        "slavery"
+        "slavery",
+        "inspiration",
+        "radiometric-dating",
+        "young-earth-clocks",
+        "genetic-clock",
+        "chirality",
+        "irreducible-complexity"
       ]
     },
     {
@@ -725,7 +1365,8 @@
         "early-testimony",
         "suffering",
         "one-way",
-        "sin-and-death"
+        "sin-and-death",
+        "the-lost-perish"
       ]
     },
     {
@@ -750,7 +1391,8 @@
         "appearances",
         "early-testimony",
         "evolution",
-        "six-days"
+        "six-days",
+        "inspiration"
       ]
     }
   ],
@@ -3571,6 +4213,389 @@
       ]
     },
     {
+      "id": "apocrypha",
+      "subject": "scripture",
+      "kind": "doctrine",
+      "title": "The Apocrypha is not Scripture",
+      "summary": "The books Catholics and Orthodox add to the Old Testament, Tobit, Judith, the Maccabees and the rest, were never received by the Jews, to whom \"were committed the oracles of God\". Jesus named the Scriptures as the law of Moses, the prophets and the psalms, and neither he nor the apostles ever cite these books as Scripture. They do not claim to be prophecy: the first book of Maccabees says the prophets had ceased in its day, and the second closes by asking pardon if it was written poorly. Purgatory and prayer for the dead rest on them, not on the Scriptures Jesus received.",
+      "passages": [
+        "Rom.3.2",
+        "Luk.24.44"
+      ],
+      "points": [
+        {
+          "claim": "The oracles of God were committed to the Jews, and they never received these books.",
+          "passages": [
+            "Rom.3.1-2",
+            "Rom.9.4",
+            "Psa.147.19-20"
+          ]
+        },
+        {
+          "claim": "Jesus named the Scriptures in their three parts: the law of Moses, the prophets and the psalms.",
+          "passages": [
+            "Luk.24.27",
+            "Luk.24.44-45",
+            "Mat.23.35"
+          ]
+        },
+        {
+          "claim": "Christ and the apostles quote the law, the prophets and the psalms as Scripture again and again, and these books never.",
+          "passages": [
+            "Mat.4.4-10",
+            "Act.17.2-3",
+            "Rom.15.4",
+            "2Ti.3.15-16"
+          ]
+        },
+        {
+          "claim": "The books disclaim prophecy: 1 Maccabees says the prophets had ceased in its day, and 2 Maccabees ends by asking pardon if it was written poorly. Scripture is given by the spirit, not by the writer's skill.",
+          "passages": [
+            "2Pe.1.20-21",
+            "Heb.1.1-2"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The early church read them, and they were in the Greek Old Testament.",
+          "answer": "They were read, as many books were, but being read beside Scripture does not make a book Scripture; Jerome, who translated the Latin Bible, set them apart from the canon. The test is the oracles committed to the Jews, which Jesus received.",
+          "passages": [
+            "Rom.3.2",
+            "Luk.24.44"
+          ]
+        },
+        {
+          "objection": "Jude quotes the book of Enoch, so the apostles used books outside the canon.",
+          "answer": "Jude cites a saying, as Paul cites Greek poets, without calling the book Scripture. None of the apostles introduces these books with \"it is written\" or \"the Scripture saith\".",
+          "passages": [
+            "Jud.1.14",
+            "Act.17.28",
+            "Tit.1.12"
+          ]
+        }
+      ],
+      "related": [
+        "traditions-of-men",
+        "scripture-sufficient",
+        "bible-preserved",
+        "1-corinthians-3-15"
+      ],
+      "topics": [
+        "scripture-tradition",
+        "purgatory"
+      ]
+    },
+    {
+      "id": "later-prophets",
+      "subject": "scripture",
+      "kind": "doctrine",
+      "title": "No later prophet or book adds to Scripture",
+      "summary": "The faith was \"once delivered unto the saints\", and Paul wrote: \"though we, or an angel from heaven, preach any other gospel unto you than that which we have preached unto you, let him be accursed.\" Every later voice claiming to add to it, the Book of Mormon, Ellen White's visions, the Watchtower's \"faithful and discreet slave\", the Qur'an, Bahá'u'lláh, the inner light, Mary Baker Eddy's Science and Health, is tested by the word already given: \"if they speak not according to this word, it is because there is no light in them.\" Each teaches what the apostles did not, and several foretold what did not come to pass.",
+      "passages": [
+        "Jud.1.3",
+        "Gal.1.6-9",
+        "Isa.8.20"
+      ],
+      "points": [
+        {
+          "claim": "The faith was delivered once, complete, and another gospel is accursed, even from an angel.",
+          "passages": [
+            "Jud.1.3",
+            "Gal.1.6-9",
+            "2Ti.3.16-17"
+          ]
+        },
+        {
+          "claim": "Every prophet is tried by the word already given, and the spirits are to be tested.",
+          "passages": [
+            "Isa.8.20",
+            "Deu.13.1-5",
+            "1Jn.4.1",
+            "Act.17.11"
+          ]
+        },
+        {
+          "claim": "A prophet whose word does not come to pass has not spoken from Yahweh.",
+          "passages": [
+            "Deu.18.20-22",
+            "Jer.28.9"
+          ]
+        },
+        {
+          "claim": "Christ warned of false prophets, and of those who would say he had come again in secret.",
+          "passages": [
+            "Mat.24.11",
+            "Mat.24.23-27",
+            "2Pe.2.1"
+          ]
+        },
+        {
+          "claim": "Nothing is to be added to the prophecy of the book.",
+          "passages": [
+            "Rev.22.18-19",
+            "Pro.30.5-6",
+            "Deu.4.2"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "God has always sent prophets; why would he stop?",
+          "answer": "He has spoken in these last days by his Son, and the spirit was given to the apostles to guide them into all truth. The next voice Scripture promises is Christ's own at his coming, not another book before it.",
+          "passages": [
+            "Heb.1.1-2",
+            "Jhn.16.13",
+            "1Th.4.16"
+          ]
+        },
+        {
+          "objection": "The light within, or the spirit, guides me beyond the letter.",
+          "answer": "The spirit that gave the Scriptures does not contradict them, and the heart unchecked by the word deceives: \"The heart is deceitful above all things.\" The Bereans were commended for searching the Scriptures, even of what an apostle preached.",
+          "passages": [
+            "Jer.17.9",
+            "Act.17.11",
+            "2Ti.3.16-17"
+          ]
+        }
+      ],
+      "related": [
+        "scripture-sufficient",
+        "traditions-of-men",
+        "deuteronomy-18-18",
+        "john-14-16",
+        "no-date-setting"
+      ],
+      "topics": [
+        "later-prophets",
+        "scripture-tradition"
+      ]
+    },
+    {
+      "id": "deuteronomy-18-18",
+      "subject": "scripture",
+      "kind": "passage",
+      "title": "Deuteronomy 18:18, \"a Prophet from among their brethren, like unto thee\", read as Muhammad",
+      "summary": "Moses spoke to Israel: \"Yahweh thy God will raise up unto thee a Prophet from the midst of thee, of thy brethren.\" In the same book \"thy brethren\" are the tribes of Israel, from whom the king must also come and not a stranger. Peter and Stephen preached that the prophet was Jesus, an Israelite of Judah, and the crowds that saw his signs said, \"This is of a truth that prophet.\" Like Moses he spoke with God face to face, did signs and wonders, was rejected by his own, and mediated a covenant.",
+      "passages": [
+        "Deu.18.15-19"
+      ],
+      "points": [
+        {
+          "claim": "The prophet is raised \"from the midst of thee, of thy brethren\": from Israel, as the king must be.",
+          "passages": [
+            "Deu.18.15",
+            "Deu.17.15",
+            "Deu.18.1-2"
+          ]
+        },
+        {
+          "claim": "Peter and Stephen preached that Moses' prophet is Jesus.",
+          "passages": [
+            "Act.3.22-26",
+            "Act.7.37"
+          ]
+        },
+        {
+          "claim": "Those who saw his signs knew him as the prophet who should come.",
+          "passages": [
+            "Jhn.6.14",
+            "Jhn.7.40",
+            "Jhn.1.45"
+          ]
+        },
+        {
+          "claim": "No prophet arose like Moses, whom Yahweh knew face to face, in signs and wonders, until Christ, who spoke the Father's words and worked his works.",
+          "passages": [
+            "Deu.34.10-12",
+            "Jhn.12.49-50",
+            "Jhn.5.36",
+            "Heb.3.1-6"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The brethren of Israel are the Ishmaelites, the sons of Abraham's other son.",
+          "answer": "In Deuteronomy \"brethren\" are the tribes, and the Levites have no inheritance \"among their brethren\", the other tribes. Edom is once called a brother, but the prophet is raised \"from the midst of thee\".",
+          "passages": [
+            "Deu.18.2",
+            "Deu.18.15",
+            "Deu.17.15"
+          ]
+        },
+        {
+          "objection": "Jesus was not like Moses: he brought no law and led no nation.",
+          "answer": "He mediated a new covenant, as Moses the old, and will reign over Israel gathered. The likeness Moses names is the prophet speaking God's words, and Jesus said, \"he wrote of me.\"",
+          "passages": [
+            "Heb.8.6",
+            "Jer.31.31-33",
+            "Jhn.5.46",
+            "Deu.18.18"
+          ]
+        }
+      ],
+      "related": [
+        "later-prophets",
+        "fulfilled-prophecy",
+        "messiah-timing"
+      ],
+      "topics": [
+        "later-prophets",
+        "messiah"
+      ]
+    },
+    {
+      "id": "john-14-16",
+      "subject": "scripture",
+      "kind": "passage",
+      "title": "John 14:16, \"he shall give you another Comforter\", read as a prophet to come or as a third person",
+      "summary": "Jesus names the Comforter in the next verse: \"Even the Spirit of truth; whom the world cannot receive, because it seeth him not, neither knoweth him: but ye know him; for he dwelleth with you, and shall be in you.\" It was given to the disciples themselves, within days, at Pentecost, and dwelt in them; a man born six centuries later was seen by the world and abode with none of them. Nor is it a third person: it is the power of the Father, by which Christ himself would come to them, \"I will come to you.\"",
+      "passages": [
+        "Jhn.14.16-18"
+      ],
+      "points": [
+        {
+          "claim": "The Comforter is the spirit of truth, unseen by the world, dwelling in the disciples.",
+          "passages": [
+            "Jhn.14.17",
+            "Jhn.14.26",
+            "Jhn.15.26"
+          ]
+        },
+        {
+          "claim": "It was given to those disciples within days, at Pentecost.",
+          "passages": [
+            "Act.1.4-8",
+            "Act.2.1-4",
+            "Act.2.33",
+            "Jhn.20.22"
+          ]
+        },
+        {
+          "claim": "It would bring to their remembrance what Jesus had said, and guide them into all truth: it inspired the apostles' witness.",
+          "passages": [
+            "Jhn.14.26",
+            "Jhn.16.13-14",
+            "1Co.2.12-13"
+          ]
+        },
+        {
+          "claim": "By the spirit Christ himself came to them: \"I will not leave you comfortless: I will come to you.\"",
+          "passages": [
+            "Jhn.14.18",
+            "Jhn.14.23",
+            "Luk.24.49"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The Greek once read periklytos, \"praised one\", which is Ahmad, Muhammad's name.",
+          "answer": "No manuscript reads so: every copy, thousands of them, reads parakletos, comforter or advocate, and John uses it of Christ himself.",
+          "passages": [
+            "1Jn.2.1",
+            "Jhn.14.16"
+          ]
+        },
+        {
+          "objection": "The Comforter is called \"he\", so it is a person.",
+          "answer": "The pronoun follows the Greek noun, as wisdom is called \"she\"; the spirit is the Father's power, poured out and shared, as no person is.",
+          "passages": [
+            "Pro.8.1",
+            "Luk.1.35",
+            "Act.2.17"
+          ]
+        }
+      ],
+      "related": [
+        "holy-spirit-power",
+        "later-prophets",
+        "deuteronomy-18-18"
+      ],
+      "topics": [
+        "later-prophets",
+        "holy-spirit"
+      ]
+    },
+    {
+      "id": "inspiration",
+      "subject": "scripture",
+      "kind": "evidence",
+      "title": "Moses, the prophets and the apostles wrote what they claim",
+      "summary": "Critics divide the law of Moses among later writers and date Daniel to the Maccabees, after the events it foretells. Jesus spoke of \"the book of Moses\" and said \"he wrote of me\", and of \"Daniel the prophet\": to set their writings late is to set his word aside. Daniel foretold not only the Greeks but Rome after them, and the Messiah cut off before the city and sanctuary were destroyed, which no writer of the Maccabees' day could see. The theory of the law's sources rests on style and names, which one writer can vary; it has never produced the documents it supposes.",
+      "passages": [
+        "Jhn.5.46-47",
+        "Mat.24.15",
+        "2Pe.1.21"
+      ],
+      "points": [
+        {
+          "claim": "Jesus held Moses the author of the law, and Daniel a prophet.",
+          "passages": [
+            "Jhn.5.46-47",
+            "Mrk.12.26",
+            "Luk.24.44",
+            "Mat.24.15"
+          ]
+        },
+        {
+          "claim": "The law says Moses wrote it, and the later books receive it as his.",
+          "passages": [
+            "Exo.24.4",
+            "Deu.31.9",
+            "Deu.31.24",
+            "Jos.8.31",
+            "Neh.8.1"
+          ]
+        },
+        {
+          "claim": "Daniel foretold Rome after Greece, and the Messiah cut off before the city fell: events after any Maccabean date.",
+          "passages": [
+            "Dan.2.40-45",
+            "Dan.9.25-26",
+            "Mat.24.1-2"
+          ]
+        },
+        {
+          "claim": "Scripture claims to be given by God through holy men, moved by the spirit.",
+          "passages": [
+            "2Ti.3.16",
+            "2Pe.1.20-21",
+            "1Pe.1.10-12"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Deuteronomy records Moses' death, so he did not write it all.",
+          "answer": "The closing words were added, likely by Joshua, as the book itself says Joshua wrote in the book of the law; a note at the end does not make the rest late.",
+          "passages": [
+            "Deu.34.5-12",
+            "Jos.24.26"
+          ]
+        },
+        {
+          "objection": "Daniel's prophecy of the Greek kings is too exact to be prophecy.",
+          "answer": "That assumes prophecy cannot happen, which is the question. And the fourth kingdom, iron, and the Messiah's coming before the temple's fall, lie past any date the critics allow.",
+          "passages": [
+            "Dan.2.40",
+            "Dan.9.26",
+            "Isa.46.9-10"
+          ]
+        }
+      ],
+      "related": [
+        "bible-preserved",
+        "fulfilled-prophecy",
+        "messiah-timing"
+      ],
+      "topics": [
+        "bible-criticism",
+        "bible-reliable"
+      ]
+    },
+    {
       "id": "one-god",
       "subject": "god",
       "kind": "doctrine",
@@ -4204,6 +5229,229 @@
       "objections": null
     },
     {
+      "id": "john-14-9",
+      "subject": "god",
+      "kind": "passage",
+      "title": "John 14:9, \"he that hath seen me hath seen the Father\", read as Jesus being the Father or God",
+      "summary": "Jesus is the image of the invisible God, \"the brightness of his glory, and the express image of his person\": in his words and works the disciples saw the Father, who dwelt in him. He says so in the next verse: \"the Father that dwelleth in me, he doeth the works.\" In the same discourse he says \"my Father is greater than I\", and soon after prays to him as \"the only true God\". He who prays to the Father, goes to him, and calls him \"my God\" is not the Father.",
+      "passages": [
+        "Jhn.14.7-11"
+      ],
+      "points": [
+        {
+          "claim": "The Father was seen in the Son because he dwelt in him and did the works.",
+          "passages": [
+            "Jhn.14.10-11",
+            "Jhn.5.19",
+            "2Co.5.19"
+          ]
+        },
+        {
+          "claim": "The Son is the image of God, in whose face God's glory is seen.",
+          "passages": [
+            "Col.1.15",
+            "Heb.1.3",
+            "2Co.4.4-6"
+          ]
+        },
+        {
+          "claim": "In the same discourse the Father is greater, sends the Son, and hears his prayer.",
+          "passages": [
+            "Jhn.14.28",
+            "Jhn.14.16",
+            "Jhn.17.1-5"
+          ]
+        },
+        {
+          "claim": "The Father is the only true God, and the risen Jesus calls him \"my God\".",
+          "passages": [
+            "Jhn.17.3",
+            "Jhn.20.17",
+            "Rev.3.12"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Father, Son and spirit are three titles of one person, Jesus.",
+          "answer": "The Father spoke from heaven to the Son on earth, the Son prays to him and was forsaken by him, and two witnesses are two: \"I am one that bear witness of myself, and the Father that sent me beareth witness of me.\"",
+          "passages": [
+            "Mat.3.17",
+            "Mat.27.46",
+            "Jhn.8.17-18"
+          ]
+        }
+      ],
+      "related": [
+        "one-god",
+        "john-10-30",
+        "john-20-28"
+      ],
+      "topics": [
+        "trinity",
+        "nature-of-christ"
+      ]
+    },
+    {
+      "id": "son-not-angel",
+      "subject": "god",
+      "kind": "doctrine",
+      "title": "Jesus is the Son, set above the angels, not Michael the archangel",
+      "summary": "Hebrews argues at length that Jesus is not an angel: \"unto which of the angels said he at any time, Thou art my Son, this day have I begotten thee?\" He was made a little lower than the angels, a man of flesh and blood, and was then exalted far above them, so that \"all the angels of God\" worship him. Michael is \"one of the chief princes\" and did not dare rebuke the false accuser; at Christ's coming the archangel's voice goes with him, as the trumpet does, without being him.",
+      "passages": [
+        "Heb.1.4-8",
+        "Heb.2.9",
+        "Jud.1.9"
+      ],
+      "points": [
+        {
+          "claim": "No angel was ever called the Son, and the angels are bidden to worship him.",
+          "passages": [
+            "Heb.1.4-6",
+            "Heb.1.13-14",
+            "Psa.2.7"
+          ]
+        },
+        {
+          "claim": "He was made lower than the angels, taking not their nature but Abraham's seed.",
+          "passages": [
+            "Heb.2.9",
+            "Heb.2.14-17",
+            "Gal.4.4"
+          ]
+        },
+        {
+          "claim": "Raised, he was set far above every principality, angels made subject to him.",
+          "passages": [
+            "Eph.1.20-22",
+            "1Pe.3.22",
+            "Php.2.9-10"
+          ]
+        },
+        {
+          "claim": "Michael is one of the chief princes, who did not dare bring a railing accusation; Christ is the judge.",
+          "passages": [
+            "Dan.10.13",
+            "Dan.12.1",
+            "Jud.1.9",
+            "Jhn.5.22"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "He descends \"with the voice of the archangel\", so he is the archangel.",
+          "answer": "He descends \"with the voice of the archangel, and with the trump of God\": the trumpet is not Christ, and nor is the archangel whose voice accompanies him.",
+          "passages": [
+            "1Th.4.16",
+            "Mat.24.31"
+          ]
+        },
+        {
+          "objection": "Michael leads the angels in Revelation, as Christ does.",
+          "answer": "Revelation's Michael is a figure in a sign; Christ in it is the Lamb, worshipped by every creature, which is said of no angel, and an angel refuses John's worship.",
+          "passages": [
+            "Rev.5.11-14",
+            "Rev.22.8-9",
+            "Rev.12.1"
+          ]
+        }
+      ],
+      "related": [
+        "one-god",
+        "jesus-a-man",
+        "revelation-12-7",
+        "revelation-7-4"
+      ],
+      "topics": [
+        "nature-of-christ",
+        "pre-existence"
+      ]
+    },
+    {
+      "id": "psalm-82-6",
+      "subject": "god",
+      "kind": "passage",
+      "title": "Psalm 82:6, \"I have said, Ye are gods\", read as men becoming gods",
+      "summary": "The psalm rebukes Israel's judges, called elohim, mighty ones, as the law calls them, and goes on: \"But ye shall die like men.\" Jesus cited it of those \"unto whom the word of God came\", to show it was no blasphemy for him to be called the Son of God. God was never a man, \"I am Yahweh, I change not\", and beside him there is none. The faithful will be raised immortal and share the divine nature, equal to the angels, but they remain the sons who worship the one God, not gods who rise to his place.",
+      "passages": [
+        "Psa.82.1-8"
+      ],
+      "points": [
+        {
+          "claim": "Elohim is used of judges: the law sends a case \"unto the judges\", the same word.",
+          "passages": [
+            "Exo.21.6",
+            "Exo.22.8-9",
+            "Exo.22.28",
+            "Psa.82.2-4"
+          ]
+        },
+        {
+          "claim": "These \"gods\" die like men: they are mortal judges.",
+          "passages": [
+            "Psa.82.7",
+            "Psa.146.3-4"
+          ]
+        },
+        {
+          "claim": "Jesus used it of those to whom the word came, to answer the charge of blasphemy, not to make men gods.",
+          "passages": [
+            "Jhn.10.33-36"
+          ]
+        },
+        {
+          "claim": "God was never a man, does not change, and has no god before or after him.",
+          "passages": [
+            "Num.23.19",
+            "Hos.11.9",
+            "Mal.3.6",
+            "Psa.90.2",
+            "Isa.43.10"
+          ]
+        },
+        {
+          "claim": "The faithful will be made like Christ and share the divine nature at the resurrection, and worship God for ever.",
+          "passages": [
+            "2Pe.1.4",
+            "1Jn.3.2",
+            "Luk.20.35-36",
+            "Rev.22.3-4"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "\"Partakers of the divine nature\" means believers are deified.",
+          "answer": "They share his nature as children share their father's: holiness now, and immortality when raised. Children do not become the Father; \"there is one God, the Father, of whom are all things.\"",
+          "passages": [
+            "2Pe.1.4",
+            "1Co.15.53",
+            "1Co.8.6"
+          ]
+        },
+        {
+          "objection": "As man is, God once was; as God is, man may become.",
+          "answer": "Scripture says the opposite: \"from everlasting to everlasting, thou art God\", and \"God is not a man\". Before him there was no God formed, neither shall there be after him.",
+          "passages": [
+            "Psa.90.2",
+            "Num.23.19",
+            "Isa.43.10",
+            "Isa.44.6"
+          ]
+        }
+      ],
+      "related": [
+        "one-god",
+        "resurrection-hope",
+        "john-10-30"
+      ],
+      "topics": [
+        "exaltation",
+        "trinity"
+      ]
+    },
+    {
       "id": "no-idols",
       "subject": "worship",
       "kind": "doctrine",
@@ -4446,6 +5694,453 @@
       ],
       "topics": [
         "mary-saints"
+      ]
+    },
+    {
+      "id": "breaking-of-bread",
+      "subject": "worship",
+      "kind": "doctrine",
+      "title": "The bread and the wine are a memorial of Christ's death, until he come",
+      "summary": "On the night he was betrayed Jesus took bread and the cup and said, \"this do in remembrance of me.\" Paul gives its meaning: \"as often as ye eat this bread, and drink this cup, ye do shew the Lord's death till he come.\" The first believers, baptised into his death, met on the first day of the week to break bread. It is a memorial and a fellowship, not a sacrifice repeated: Christ was offered once, and \"by one offering he hath perfected for ever them that are sanctified.\"",
+      "passages": [
+        "1Co.11.23-26",
+        "Luk.22.19-20",
+        "Act.20.7"
+      ],
+      "points": [
+        {
+          "claim": "Jesus gave the bread and the cup to be done in remembrance of him.",
+          "passages": [
+            "Luk.22.19-20",
+            "1Co.11.23-25",
+            "Mat.26.26-28"
+          ]
+        },
+        {
+          "claim": "It shows the Lord's death until he comes, and looks to his kingdom.",
+          "passages": [
+            "1Co.11.26",
+            "Mat.26.29",
+            "Luk.22.16-18"
+          ]
+        },
+        {
+          "claim": "The baptised met to break bread on the first day of the week.",
+          "passages": [
+            "Act.2.41-42",
+            "Act.20.7",
+            "1Co.10.16-17"
+          ]
+        },
+        {
+          "claim": "Christ was offered once for all: there is no sacrifice to repeat.",
+          "passages": [
+            "Heb.10.10-14",
+            "Heb.9.25-28",
+            "Heb.7.27"
+          ]
+        },
+        {
+          "claim": "It is to be eaten worthily, examining oneself.",
+          "passages": [
+            "1Co.11.27-29"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Jesus said, \"This is my body.\"",
+          "answer": "He said it holding bread, with his body before them; he speaks so of himself as the door and the vine. After the words the cup is still \"this fruit of the vine,\" and Paul still calls it bread.",
+          "passages": [
+            "Mat.26.26-29",
+            "Jhn.10.9",
+            "Jhn.15.1",
+            "1Co.11.26-28"
+          ]
+        },
+        {
+          "objection": "The mass is the one sacrifice of Calvary made present, not repeated.",
+          "answer": "Hebrews sets Christ's once against the priests' daily offering: \"where remission of these is, there is no more offering for sin.\" The supper looks back to a finished work, and on to his coming.",
+          "passages": [
+            "Heb.10.11-18",
+            "Jhn.19.30"
+          ]
+        }
+      ],
+      "related": [
+        "atonement",
+        "gospel-and-baptism",
+        "john-6-53"
+      ],
+      "topics": [
+        "lords-supper",
+        "the-cross"
+      ]
+    },
+    {
+      "id": "john-6-53",
+      "subject": "worship",
+      "kind": "passage",
+      "title": "John 6:53, \"except ye eat the flesh of the Son of man\", read as the bread becoming his body",
+      "summary": "Jesus explains his own words in the same discourse: \"he that cometh to me shall never hunger; and he that believeth on me shall never thirst,\" and \"the words that I speak unto you, they are spirit, and they are life.\" To eat his flesh is to believe and take in his words, the bread from heaven as the manna was. He spoke it a year before the supper was given, to a crowd who did not break bread, and the law forbade drinking blood, a command the apostles kept for Gentile believers.",
+      "passages": [
+        "Jhn.6.53-58"
+      ],
+      "points": [
+        {
+          "claim": "Coming to him and believing on him is eating and drinking.",
+          "passages": [
+            "Jhn.6.35",
+            "Jhn.6.40",
+            "Jhn.6.47-48"
+          ]
+        },
+        {
+          "claim": "Jesus says his words are spirit and life, and the flesh profits nothing.",
+          "passages": [
+            "Jhn.6.63",
+            "Jhn.6.68",
+            "Deu.8.3",
+            "Jer.15.16"
+          ]
+        },
+        {
+          "claim": "It was spoken before the supper was instituted, to those who did not keep it.",
+          "passages": [
+            "Jhn.6.4",
+            "Jhn.6.24-26",
+            "Jhn.6.66"
+          ]
+        },
+        {
+          "claim": "The law forbade drinking blood, and the apostles kept the command.",
+          "passages": [
+            "Lev.17.10-14",
+            "Gen.9.4",
+            "Act.15.20",
+            "Act.15.29"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The hearers took him literally, and he did not correct them.",
+          "answer": "He did: \"It is the spirit that quickeneth; the flesh profiteth nothing.\" Those who went back went back because they would not believe, as he said.",
+          "passages": [
+            "Jhn.6.60-66"
+          ]
+        }
+      ],
+      "related": [
+        "breaking-of-bread"
+      ],
+      "topics": [
+        "lords-supper"
+      ]
+    },
+    {
+      "id": "priesthood-of-believers",
+      "subject": "worship",
+      "kind": "doctrine",
+      "title": "Christ is the one high priest, and his people are a priesthood",
+      "summary": "Under the law many priests served because death ended each one; Christ \"because he continueth ever, hath an unchangeable priesthood,\" one that passes to no successor. There is one mediator between God and men, and every believer is of \"an holy priesthood, to offer up spiritual sacrifices.\" The ecclesia has elders and servants who care for it as examples, not a priesthood that stands between God and his people: \"call no man your father upon the earth,\" and an overseer is to be the husband of one wife.",
+      "passages": [
+        "Heb.7.23-27",
+        "1Pe.2.5",
+        "1Pe.2.9"
+      ],
+      "points": [
+        {
+          "claim": "Christ's priesthood is unchangeable: it does not pass to another.",
+          "passages": [
+            "Heb.7.23-25",
+            "Heb.8.1",
+            "Heb.4.14-16"
+          ]
+        },
+        {
+          "claim": "There is one mediator, and he offered once.",
+          "passages": [
+            "1Ti.2.5",
+            "Heb.7.27",
+            "Heb.10.12"
+          ]
+        },
+        {
+          "claim": "All believers are a priesthood, offering spiritual sacrifices.",
+          "passages": [
+            "1Pe.2.5",
+            "1Pe.2.9",
+            "Rev.1.6",
+            "Rom.12.1",
+            "Heb.13.15-16"
+          ]
+        },
+        {
+          "claim": "Elders serve as examples, not lords over God's heritage, and none is to be called father.",
+          "passages": [
+            "1Pe.5.1-3",
+            "Mat.23.8-10",
+            "Act.20.28"
+          ]
+        },
+        {
+          "claim": "An overseer was a married man; forbidding to marry is a mark of the falling away.",
+          "passages": [
+            "Tit.1.5-7",
+            "1Ti.3.2",
+            "1Ti.4.1-3",
+            "1Co.9.5"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The apostles passed on their authority by laying on of hands.",
+          "answer": "They appointed elders and passed on spirit gifts, but no priesthood: Christ \"hath an unchangeable priesthood,\" and the apostles' own office was to witness his resurrection.",
+          "passages": [
+            "Heb.7.24",
+            "Act.1.21-22",
+            "Act.14.23"
+          ]
+        },
+        {
+          "objection": "The Aaronic and Melchizedek priesthoods were restored to men in these days.",
+          "answer": "The Aaronic was changed with the law, and Melchizedek's order is Christ's alone, held \"after the power of an endless life.\"",
+          "passages": [
+            "Heb.7.11-17",
+            "Psa.110.4"
+          ]
+        }
+      ],
+      "related": [
+        "one-mediator",
+        "breaking-of-bread"
+      ],
+      "topics": [
+        "priesthood",
+        "mary-saints"
+      ]
+    },
+    {
+      "id": "spirit-gifts",
+      "subject": "worship",
+      "kind": "doctrine",
+      "title": "The spirit gifts were given to found the ecclesia, and ceased with the apostles",
+      "summary": "The gifts of the spirit were given by the laying on of the apostles' hands: Simon saw \"that through laying on of the apostles' hands the holy spirit was given.\" They confirmed the word while it was new, and with the apostles gone there were none to pass them on. Tongues were languages men understood, a sign to unbelievers. Today God's word is the spirit's sword, able to make wise unto salvation. The gifts will be given again in the age to come, the powers of which the first believers tasted.",
+      "passages": [
+        "Act.8.14-18",
+        "Heb.2.3-4",
+        "1Co.13.8-10"
+      ],
+      "points": [
+        {
+          "claim": "The gifts were given by the laying on of the apostles' hands.",
+          "passages": [
+            "Act.8.14-18",
+            "Act.19.6",
+            "2Ti.1.6",
+            "Rom.1.11"
+          ]
+        },
+        {
+          "claim": "They were given to confirm the word as it was first preached.",
+          "passages": [
+            "Mrk.16.20",
+            "Heb.2.3-4",
+            "Act.14.3"
+          ]
+        },
+        {
+          "claim": "Tongues were real languages, heard by men of many nations, and a sign to unbelievers.",
+          "passages": [
+            "Act.2.4-11",
+            "1Co.14.22",
+            "1Co.14.27-28"
+          ]
+        },
+        {
+          "claim": "Paul foretold that tongues and prophecies would cease; many take \"that which is perfect\" for the completed word, a reading that is debated, but the gifts' passing with the apostles does not rest on it.",
+          "passages": [
+            "1Co.13.8-10",
+            "Eph.4.11-14"
+          ]
+        },
+        {
+          "claim": "The word, now complete, is the spirit's work in believers.",
+          "passages": [
+            "Eph.6.17",
+            "2Ti.3.15-17",
+            "Jhn.17.17",
+            "Jhn.6.63"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Believers speak in tongues and heal today.",
+          "answer": "What is heard today is not a language of the nations, and the healings are not of the man lame from birth or the dead raised. Signs alone prove nothing: false prophets show great signs.",
+          "passages": [
+            "Act.3.2-8",
+            "Act.9.40",
+            "Mat.24.24"
+          ]
+        },
+        {
+          "objection": "Joel's promise was for all flesh.",
+          "answer": "Peter said Pentecost was \"that which was spoken by the prophet Joel\"; its full outpouring belongs to the age to come, whose powers the first believers tasted.",
+          "passages": [
+            "Act.2.16-21",
+            "Jol.2.28-32",
+            "Heb.6.4-5"
+          ]
+        }
+      ],
+      "related": [
+        "holy-spirit-power",
+        "mark-16-17",
+        "scripture-sufficient",
+        "john-14-16"
+      ],
+      "topics": [
+        "spiritual-gifts",
+        "holy-spirit"
+      ]
+    },
+    {
+      "id": "mark-16-17",
+      "subject": "worship",
+      "kind": "passage",
+      "title": "Mark 16:17-18, \"these signs shall follow them that believe\", read as signs for believers today",
+      "summary": "Mark says how they were fulfilled: the apostles \"went forth, and preached every where, the Lord working with them, and confirming the word with signs following.\" The same list has serpents and deadly poison, which no one now takes as a test, and which Paul survived on Malta. Even then the gifts healed at God's will, not at a believer's: Paul left Trophimus sick and told Timothy to take wine for his stomach. Signs prove nothing alone; false prophets would show great signs.",
+      "passages": [
+        "Mrk.16.17-18"
+      ],
+      "points": [
+        {
+          "claim": "The signs confirmed the word as the apostles first preached it.",
+          "passages": [
+            "Mrk.16.20",
+            "Heb.2.3-4"
+          ]
+        },
+        {
+          "claim": "The same promise includes serpents and poison, fulfilled in Paul.",
+          "passages": [
+            "Mrk.16.18",
+            "Act.28.3-6",
+            "Luk.10.19"
+          ]
+        },
+        {
+          "claim": "Healing was not at a believer's will: Paul left Trophimus sick.",
+          "passages": [
+            "2Ti.4.20",
+            "1Ti.5.23",
+            "Php.2.25-27",
+            "2Co.12.7-9"
+          ]
+        },
+        {
+          "claim": "Signs alone prove nothing.",
+          "passages": [
+            "Mat.7.22-23",
+            "Mat.24.24",
+            "2Th.2.9",
+            "Deu.13.1-3"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "\"Them that believe\" means every believer in every age.",
+          "answer": "Then every believer would drink poison unharmed. The promise was kept in those who first believed, and Mark records it kept.",
+          "passages": [
+            "Mrk.16.20",
+            "Act.5.12-16"
+          ]
+        }
+      ],
+      "related": [
+        "spirit-gifts",
+        "health-and-wealth"
+      ],
+      "topics": [
+        "spiritual-gifts"
+      ]
+    },
+    {
+      "id": "health-and-wealth",
+      "subject": "worship",
+      "kind": "doctrine",
+      "title": "God does not promise health and wealth now",
+      "summary": "Paul warned of men \"supposing that gain is godliness,\" and wrote that \"the love of money is the root of all evil.\" Jesus taught his disciples to lay up treasure in heaven, and the apostles taught that \"we must through much tribulation enter into the kingdom of God.\" The faithful of old were sawn asunder and went about destitute, and Paul's thorn was not taken away. God has chosen the poor of this world, rich in faith, heirs of the kingdom: the reward is at Christ's coming, not now.",
+      "passages": [
+        "1Ti.6.5-10",
+        "Act.14.22",
+        "Jas.2.5"
+      ],
+      "points": [
+        {
+          "claim": "Gain is not godliness; the love of money is the root of all evil.",
+          "passages": [
+            "1Ti.6.5-10",
+            "Luk.12.15",
+            "Heb.13.5"
+          ]
+        },
+        {
+          "claim": "Treasure is laid up in heaven, to be given at his coming.",
+          "passages": [
+            "Mat.6.19-21",
+            "Mat.16.27",
+            "Rev.22.12",
+            "1Pe.1.4-5"
+          ]
+        },
+        {
+          "claim": "The faithful suffered and were poor, and received not the promise in this life.",
+          "passages": [
+            "Heb.11.36-40",
+            "1Co.4.11-13",
+            "2Co.6.10",
+            "Jas.2.5"
+          ]
+        },
+        {
+          "claim": "Paul's thorn was not removed: God's strength is made perfect in weakness.",
+          "passages": [
+            "2Co.12.7-10",
+            "Rom.8.18",
+            "Act.14.22"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "John prayed that Gaius might prosper and be in health.",
+          "answer": "It is a letter's greeting, a wish for a friend, not a promise; John rejoiced most that Gaius walked in the truth.",
+          "passages": [
+            "3Jn.1.2-4"
+          ]
+        },
+        {
+          "objection": "\"By his stripes we are healed.\"",
+          "answer": "Peter gives its meaning: he \"bare our sins in his own body on the tree, that we, being dead to sins, should live unto righteousness.\" The body's healing comes at the resurrection.",
+          "passages": [
+            "Isa.53.5",
+            "1Pe.2.24",
+            "Rom.8.23"
+          ]
+        }
+      ],
+      "related": [
+        "suffering",
+        "mark-16-17"
+      ],
+      "topics": [
+        "spiritual-gifts",
+        "suffering"
       ]
     },
     {
@@ -5163,6 +6858,131 @@
       "objections": null
     },
     {
+      "id": "jeremiah-1-5",
+      "subject": "death",
+      "kind": "passage",
+      "title": "Jeremiah 1:5, \"before I formed thee in the belly I knew thee\", read as the soul living before birth",
+      "summary": "God knew Jeremiah before he was formed as he knows all his purpose beforehand, \"calling those things which be not as though they were\": in his book all David's members were written \"when as yet there was none of them.\" Man began when God formed him: \"Yahweh God formed man of the dust of the ground, ... and man became a living soul.\" Jacob and Esau, \"being not yet born, neither having done any good or evil,\" had no life before.",
+      "passages": [
+        "Jer.1.5"
+      ],
+      "points": [
+        {
+          "claim": "God knows and calls what is not yet, as though it were.",
+          "passages": [
+            "Rom.4.17",
+            "Isa.46.10",
+            "Psa.139.16"
+          ]
+        },
+        {
+          "claim": "His people are foreknown and chosen in his purpose, not alive in heaven.",
+          "passages": [
+            "Rom.8.29",
+            "Eph.1.4",
+            "Isa.49.1",
+            "Gal.1.15"
+          ]
+        },
+        {
+          "claim": "Man began when he was formed, and became a living soul.",
+          "passages": [
+            "Gen.2.7",
+            "Psa.139.13-15",
+            "Zec.12.1"
+          ]
+        },
+        {
+          "claim": "Before birth there is no deed, good or evil.",
+          "passages": [
+            "Rom.9.11"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "God \"sanctified\" and \"ordained\" him then; he must have existed to be ordained.",
+          "answer": "Christ himself was \"foreordained before the foundation of the world, but was manifest in these last times\": God appoints in his purpose what he brings about in its time.",
+          "passages": [
+            "1Pe.1.20",
+            "Rev.13.8"
+          ]
+        }
+      ],
+      "related": [
+        "soul-mortal",
+        "one-life"
+      ],
+      "topics": [
+        "pre-existence",
+        "immortal-soul"
+      ]
+    },
+    {
+      "id": "1-corinthians-3-15",
+      "subject": "death",
+      "kind": "passage",
+      "title": "1 Corinthians 3:15, \"saved; yet so as by fire\", read as purgatory",
+      "summary": "The fire tries each man's work, what he built on the foundation, not his soul, and it comes in \"the day,\" when the Lord comes and makes manifest the counsels of the hearts. A teacher whose converts fall away loses his reward but is saved himself, as one escaping through a fire. The blood of Christ \"cleanseth us from all sin\": by one offering he has perfected for ever them that are sanctified, and \"there is no more offering for sin.\" The dead know not anything, and no prayer is made for them in Scripture.",
+      "passages": [
+        "1Co.3.11-15"
+      ],
+      "points": [
+        {
+          "claim": "The fire tests works built on the foundation, and the day that declares it is Christ's coming.",
+          "passages": [
+            "1Co.3.12-14",
+            "1Co.4.5",
+            "2Co.5.10"
+          ]
+        },
+        {
+          "claim": "Christ's blood cleanses from all sin; nothing is left to be purged after death.",
+          "passages": [
+            "1Jn.1.7",
+            "Heb.10.14-18",
+            "Heb.1.3"
+          ]
+        },
+        {
+          "claim": "The dead know nothing; there is no work or device in the grave.",
+          "passages": [
+            "Ecc.9.5-6",
+            "Ecc.9.10",
+            "Psa.146.4"
+          ]
+        },
+        {
+          "claim": "Prayer cannot change the state of the dead: David ceased to fast when the child died.",
+          "passages": [
+            "2Sa.12.22-23",
+            "Psa.49.7",
+            "Heb.9.27"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "2 Maccabees 12 commends prayer and sacrifice for the dead.",
+          "answer": "Maccabees is not Scripture: it was never in the Hebrew Bible Jesus called \"the law, the prophets, and the psalms,\" and its writer asks pardon if he has written \"slenderly and meanly.\" Even there Judas offers for the dead in hope of their resurrection, not their release from fire.",
+          "passages": [
+            "Luk.24.44",
+            "Rom.3.2"
+          ]
+        }
+      ],
+      "related": [
+        "grave-and-hinnom",
+        "resurrection-hope",
+        "atonement",
+        "apocrypha"
+      ],
+      "topics": [
+        "purgatory",
+        "heaven-at-death"
+      ]
+    },
+    {
       "id": "adversary-not-angel",
       "subject": "adversary",
       "kind": "doctrine",
@@ -5770,6 +7590,211 @@
       "objections": null
     },
     {
+      "id": "1-thessalonians-4-17",
+      "subject": "kingdom",
+      "kind": "passage",
+      "title": "1 Thessalonians 4:16-17, \"caught up ... to meet the Lord in the air\", read as a secret rapture to heaven",
+      "summary": "Nothing is secret: the Lord descends \"with a shout, with the voice of the archangel, and with the trump of God,\" and the dead in Christ rise first. To \"meet\" him was what a city did for a coming king, going out to welcome him and returning with him, as the brethren came out to meet Paul and the virgins went out to meet the bridegroom. Jesus comes once, after the tribulation, as lightning seen by all, and his feet stand on the mount of Olives; his saints reign with him on the earth.",
+      "passages": [
+        "1Th.4.16-17"
+      ],
+      "points": [
+        {
+          "claim": "His coming is open and loud, with a shout and a trumpet, and the dead rise first.",
+          "passages": [
+            "1Th.4.16",
+            "1Co.15.51-52",
+            "Mat.24.30-31"
+          ]
+        },
+        {
+          "claim": "To meet him is to go out and welcome a coming king, and come back with him.",
+          "passages": [
+            "Act.28.15",
+            "Mat.25.6",
+            "Zec.14.5"
+          ]
+        },
+        {
+          "claim": "He comes once, after the tribulation, as lightning seen by all.",
+          "passages": [
+            "Mat.24.27-31",
+            "Rev.1.7",
+            "Heb.9.28"
+          ]
+        },
+        {
+          "claim": "He comes to the earth, and his saints reign with him there.",
+          "passages": [
+            "Zec.14.4-5",
+            "Act.1.11",
+            "Rev.5.10"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "\"The one shall be taken, and the other left.\"",
+          "answer": "As in the days of Noah, the flood \"came, and took them all away\": those taken are taken in judgement. Asked \"Where, Lord?\", Jesus answered, \"wheresoever the body is, thither will the eagles be gathered together.\"",
+          "passages": [
+            "Mat.24.37-41",
+            "Luk.17.34-37"
+          ]
+        },
+        {
+          "objection": "He comes \"as a thief in the night.\"",
+          "answer": "Unexpected to the world, not unseen: \"sudden destruction cometh upon them,\" but \"ye, brethren, are not in darkness, that that day should overtake you as a thief.\"",
+          "passages": [
+            "1Th.5.2-4",
+            "Rev.16.15"
+          ]
+        }
+      ],
+      "related": [
+        "return-of-christ",
+        "kingdom-on-earth"
+      ],
+      "topics": [
+        "rapture",
+        "second-coming"
+      ]
+    },
+    {
+      "id": "revelation-7-4",
+      "subject": "kingdom",
+      "kind": "passage",
+      "title": "Revelation 7:4, \"an hundred and forty and four thousand\", read as a heavenly class apart from an earthly great crowd",
+      "summary": "The number is a sign, twelve thousand sealed from each tribe of Israel, and John turns to see \"a great multitude, which no man could number,\" in the same vision, also before the throne and serving God in his temple. All the redeemed, of every nation, sing that they \"shall reign on the earth.\" There is \"one hope of your calling\" and \"one fold, and one shepherd\": the faithful of old are not made perfect without the rest, but all together.",
+      "passages": [
+        "Rev.7.4-9"
+      ],
+      "points": [
+        {
+          "claim": "The sealed are numbered by the tribes of Israel, a sign of the whole Israel of God.",
+          "passages": [
+            "Rev.7.4-8",
+            "Gal.6.16",
+            "Rev.21.12"
+          ]
+        },
+        {
+          "claim": "The great multitude stands before the same throne and serves in the same temple.",
+          "passages": [
+            "Rev.7.9-15",
+            "Rev.14.1-3"
+          ]
+        },
+        {
+          "claim": "All the redeemed, of every nation, will reign on the earth.",
+          "passages": [
+            "Rev.5.9-10",
+            "Mat.5.5",
+            "Dan.7.27"
+          ]
+        },
+        {
+          "claim": "There is one hope, one flock, and the faithful are made perfect together.",
+          "passages": [
+            "Eph.4.4",
+            "Jhn.10.16",
+            "Heb.11.39-40"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Jesus spoke of a \"little flock\" to receive the kingdom.",
+          "answer": "The little flock is all his disciples, few beside the world, and the kingdom given them is the kingdom on the earth promised to all the saints, not a heaven for some.",
+          "passages": [
+            "Luk.12.32",
+            "Mat.7.14",
+            "Dan.7.18"
+          ]
+        }
+      ],
+      "related": [
+        "kingdom-on-earth",
+        "abraham-promise"
+      ],
+      "topics": [
+        "kingdom",
+        "heaven-at-death"
+      ]
+    },
+    {
+      "id": "no-date-setting",
+      "subject": "kingdom",
+      "kind": "doctrine",
+      "title": "No man knows the day: the dates set for his coming failed",
+      "summary": "\"Of that day and hour knoweth no man, no, not the angels of heaven, but my Father only.\" William Miller set the coming for 1843 and then 1844 from Daniel 8:14; when nothing was seen, his followers said a judgement had begun in heaven instead. The Watchtower set 1874, then 1914, 1925 and 1975, and said of the first two that he had come invisibly. A word that does not come to pass is one Yahweh has not spoken. Believers are told to watch the signs and look up, not to fix the day.",
+      "passages": [
+        "Mat.24.36",
+        "Act.1.7",
+        "Deu.18.22"
+      ],
+      "points": [
+        {
+          "claim": "No man knows the day or hour, and it is not for us to know the times.",
+          "passages": [
+            "Mat.24.36",
+            "Mat.24.42-44",
+            "Act.1.7"
+          ]
+        },
+        {
+          "claim": "A prophecy that fails was not spoken by Yahweh.",
+          "passages": [
+            "Deu.18.21-22",
+            "Jer.28.9"
+          ]
+        },
+        {
+          "claim": "His coming is seen by every eye, not invisible nor confined to a room in heaven.",
+          "passages": [
+            "Rev.1.7",
+            "Mat.24.23-27",
+            "Act.1.11"
+          ]
+        },
+        {
+          "claim": "Daniel 8:14 is the sanctuary trodden down by the little horn and cleansed when the desolation ends; it says nothing of a judgement begun in heaven in 1844.",
+          "passages": [
+            "Dan.8.11-14",
+            "Dan.8.17"
+          ]
+        },
+        {
+          "claim": "Believers watch the signs and look up, ready at any hour.",
+          "passages": [
+            "Luk.21.28-31",
+            "1Th.5.1-6",
+            "Mat.25.13"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Daniel gave numbers of days: they must be meant to be reckoned.",
+          "answer": "They mark the length of events once they begin, so the faithful could know where they stood; they were never given to fix the hour of his return, which Jesus said the Father kept in his own power.",
+          "passages": [
+            "Dan.12.11-12",
+            "Act.1.7",
+            "Mat.24.15-16"
+          ]
+        }
+      ],
+      "related": [
+        "return-of-christ",
+        "fulfilled-prophecy",
+        "later-prophets"
+      ],
+      "topics": [
+        "dates",
+        "second-coming",
+        "later-prophets"
+      ]
+    },
+    {
       "id": "law-fulfilled",
       "subject": "law",
       "kind": "doctrine",
@@ -6313,6 +8338,371 @@
       ],
       "topics": [
         "one-way"
+      ]
+    },
+    {
+      "id": "acts-16-33",
+      "subject": "salvation",
+      "kind": "passage",
+      "title": "Acts 16:33, \"he and all his, straightway\", the jailer's household, read as the baptism of infants",
+      "summary": "Paul and Silas \"spake unto him the word of the Lord, and to all that were in his house,\" and the jailer \"rejoiced, believing in God with all his house\": those baptised were those who heard and believed. Crispus \"believed on the Lord with all his house,\" and the household of Stephanas, whom Paul baptised, \"addicted themselves to the ministry of the saints.\" No household is said to hold an infant, and every baptism in Scripture follows belief and repentance, which an infant cannot give.",
+      "passages": [
+        "Act.16.31-34"
+      ],
+      "points": [
+        {
+          "claim": "The word was spoken to all in the house, and all the house believed and rejoiced.",
+          "passages": [
+            "Act.16.32",
+            "Act.16.34"
+          ]
+        },
+        {
+          "claim": "The other households baptised are households of believers: Crispus's believed, and Stephanas's served the saints.",
+          "passages": [
+            "Act.18.8",
+            "1Co.1.16",
+            "1Co.16.15"
+          ]
+        },
+        {
+          "claim": "Baptism follows belief and repentance, and is asked for by the one baptised.",
+          "passages": [
+            "Act.2.38",
+            "Act.8.12",
+            "Act.8.36-37",
+            "Mrk.16.16"
+          ]
+        },
+        {
+          "claim": "Baptism is a burial into Christ's death, which the one baptised chooses to share.",
+          "passages": [
+            "Rom.6.3-5",
+            "1Pe.3.21"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Baptism replaced circumcision, which was given to infants.",
+          "answer": "The circumcision Paul sets beside baptism is \"made without hands,\" of the heart, and comes \"through the faith of the operation of God\": it is the believer's, not the infant's.",
+          "passages": [
+            "Col.2.11-12",
+            "Rom.2.28-29"
+          ]
+        },
+        {
+          "objection": "Jesus said, \"Suffer little children to come unto me.\"",
+          "answer": "He laid his hands on them and blessed them; he did not baptise them. They are the pattern of the humility a believer needs: \"of such is the kingdom of God.\"",
+          "passages": [
+            "Mrk.10.13-16",
+            "Mat.18.3-4"
+          ]
+        }
+      ],
+      "related": [
+        "gospel-and-baptism",
+        "1-corinthians-15-29"
+      ],
+      "topics": [
+        "baptism"
+      ]
+    },
+    {
+      "id": "1-corinthians-15-29",
+      "subject": "salvation",
+      "kind": "passage",
+      "title": "1 Corinthians 15:29, \"baptized for the dead\", read as baptism on behalf of the dead",
+      "summary": "The verse is obscure, and Paul neither commands nor describes a rite; he argues that if the dead rise not, those who are baptised in hope of the dead's rising do so in vain, as he stood in jeopardy every hour in vain. The whole chapter answers those who said there is no resurrection. Elsewhere each one believes and is baptised for himself, and none can redeem his brother: \"it is appointed unto men once to die, but after this the judgment.\"",
+      "passages": [
+        "1Co.15.29"
+      ],
+      "points": [
+        {
+          "claim": "The chapter answers those who said there is no resurrection of the dead.",
+          "passages": [
+            "1Co.15.12-19"
+          ]
+        },
+        {
+          "claim": "Baptism, like Paul's danger every hour, is pointless if the dead rise not: both are done in the hope of resurrection.",
+          "passages": [
+            "1Co.15.29-32",
+            "Rom.6.4-5"
+          ]
+        },
+        {
+          "claim": "Each one must believe and be baptised for himself.",
+          "passages": [
+            "Mrk.16.16",
+            "Ezk.18.20",
+            "Psa.49.7"
+          ]
+        },
+        {
+          "claim": "Death ends the time of choosing; judgement follows.",
+          "passages": [
+            "Heb.9.27",
+            "Ecc.9.10",
+            "Luk.16.26"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Paul mentions the practice without condemning it.",
+          "answer": "He names no rite and no one who did it; where Scripture speaks plainly, the righteousness of the righteous is upon him, and the soul that sins shall die. An obscure verse does not overturn the plain ones.",
+          "passages": [
+            "Ezk.18.20",
+            "2Pe.3.16"
+          ]
+        }
+      ],
+      "related": [
+        "resurrection-hope",
+        "gospel-and-baptism"
+      ],
+      "topics": [
+        "baptism",
+        "resurrection-of-dead"
+      ]
+    },
+    {
+      "id": "the-lost-perish",
+      "subject": "salvation",
+      "kind": "doctrine",
+      "title": "Not all will be saved: the wicked perish, and those without knowledge remain dead",
+      "summary": "God gave his Son \"that whosoever believeth in him should not perish, but have everlasting life\": the alternative to life is perishing, not torment, and not life for all. The way to life is narrow, \"and few there be that find it.\" Those who know God's will are raised to judgement, some to life and some to condemnation; the wicked are punished with everlasting destruction, the second death. \"Man that is in honour, and understandeth not, is like the beasts that perish\": those who never knew remain in the congregation of the dead.",
+      "passages": [
+        "Jhn.3.16",
+        "Mat.7.13-14",
+        "Psa.49.20",
+        "Jhn.5.28-29"
+      ],
+      "points": [
+        {
+          "claim": "The choice is life or perishing.",
+          "passages": [
+            "Jhn.3.16",
+            "Rom.6.23",
+            "Deu.30.19"
+          ]
+        },
+        {
+          "claim": "Not all will be saved: the way to life is narrow, and few find it.",
+          "passages": [
+            "Mat.7.13-14",
+            "Luk.13.23-28"
+          ]
+        },
+        {
+          "claim": "Those who knew the will of God are raised to judgement, to life or to condemnation.",
+          "passages": [
+            "Jhn.5.28-29",
+            "Dan.12.2",
+            "Rom.2.12",
+            "Jhn.12.48"
+          ]
+        },
+        {
+          "claim": "The wicked are destroyed, the second death, and burnt up root and branch.",
+          "passages": [
+            "2Th.1.8-9",
+            "Rev.20.14-15",
+            "Mal.4.1-3",
+            "Psa.37.20"
+          ]
+        },
+        {
+          "claim": "Those without understanding remain dead, and do not rise.",
+          "passages": [
+            "Psa.49.20",
+            "Pro.21.16",
+            "Isa.26.14",
+            "Jer.51.39"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "God \"will have all men to be saved\": a loving God would save everyone.",
+          "answer": "He wills it, and calls all to repent, but men \"will not come\" to him for life; a love that compelled would not be love, and God does not preserve for ever those who choose death.",
+          "passages": [
+            "1Ti.2.4",
+            "2Pe.3.9",
+            "Jhn.5.40",
+            "Ezk.18.31-32"
+          ]
+        },
+        {
+          "objection": "\"As in Adam all die, even so in Christ shall all be made alive.\"",
+          "answer": "All in Christ are made alive, \"every man in his own order: ... they that are Christ's at his coming.\" Those in Adam die; those in Christ live.",
+          "passages": [
+            "1Co.15.22-23",
+            "Gal.3.27"
+          ]
+        }
+      ],
+      "related": [
+        "grave-and-hinnom",
+        "one-way",
+        "matthew-25-46",
+        "sin-and-death"
+      ],
+      "topics": [
+        "universalism",
+        "hell",
+        "one-way"
+      ]
+    },
+    {
+      "id": "romans-9",
+      "subject": "salvation",
+      "kind": "passage",
+      "title": "Romans 9:10-23, \"Jacob have I loved, but Esau have I hated\", read as God choosing who will be saved and who damned",
+      "summary": "The words were said of two nations: \"Two nations are in thy womb ... the elder shall serve the younger,\" and Malachi said \"I hated Esau\" of Edom's land laid waste. Paul uses them to show God's right to choose the line of promise, and so to call the Gentiles: \"Even us, whom he hath called, not of the Jews only, but also of the Gentiles.\" The potter remakes a vessel as a nation turns or does not, and a man may purge himself to be a vessel unto honour. God \"will have all men to be saved,\" and \"whosoever will, let him take the water of life freely.\"",
+      "passages": [
+        "Rom.9.10-23"
+      ],
+      "points": [
+        {
+          "claim": "Jacob and Esau are two nations, and the words concern their place, not their salvation.",
+          "passages": [
+            "Gen.25.23",
+            "Mal.1.2-4",
+            "Rom.9.12"
+          ]
+        },
+        {
+          "claim": "Paul's point is God's right to call the Gentiles, and Israel's stumbling for want of faith.",
+          "passages": [
+            "Rom.9.24-26",
+            "Rom.9.30-33",
+            "Rom.11.20-23"
+          ]
+        },
+        {
+          "claim": "The potter shapes a vessel as it responds: a nation that turns is spared.",
+          "passages": [
+            "Jer.18.6-10",
+            "2Ti.2.20-21"
+          ]
+        },
+        {
+          "claim": "God wills all to repent and be saved, and the call is to whosoever will.",
+          "passages": [
+            "1Ti.2.4",
+            "2Pe.3.9",
+            "Ezk.18.23",
+            "Ezk.18.32",
+            "Rev.22.17"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "God hardened Pharaoh's heart: he chose Pharaoh for destruction.",
+          "answer": "Pharaoh first hardened his own heart, and God confirmed him in the way he chose; God endured him \"with much longsuffering\" and raised him up to show his power.",
+          "passages": [
+            "Exo.8.15",
+            "Exo.8.32",
+            "Exo.9.12",
+            "Rom.9.17",
+            "Rom.9.22"
+          ]
+        },
+        {
+          "objection": "We were \"predestinated\" and chosen \"before the foundation of the world.\"",
+          "answer": "God chose beforehand that there should be a people in Christ, holy and adopted, and whom he foreknew; who enters is open to all who will believe and be baptised into him.",
+          "passages": [
+            "Eph.1.4-5",
+            "Rom.8.29",
+            "Gal.3.26-27"
+          ]
+        }
+      ],
+      "related": [
+        "grace-and-works",
+        "hold-fast"
+      ],
+      "topics": [
+        "predestination",
+        "grace-works"
+      ]
+    },
+    {
+      "id": "hold-fast",
+      "subject": "salvation",
+      "kind": "doctrine",
+      "title": "The called must hold fast to the end",
+      "summary": "Salvation is God's gift, and it is kept by holding fast: \"we are made partakers of Christ, if we hold the beginning of our confidence stedfast unto the end.\" Jesus said, \"he that shall endure unto the end, the same shall be saved,\" and Paul kept his body under \"lest that by any means, when I have preached to others, I myself should be a castaway.\" The believer's assurance is God's faithfulness, not a past moment: he that has begun a good work will perform it, and he is able to keep us from falling.",
+      "passages": [
+        "Heb.3.12-14",
+        "Mat.24.13",
+        "Col.1.23"
+      ],
+      "points": [
+        {
+          "claim": "We are partakers of Christ if we hold fast to the end.",
+          "passages": [
+            "Heb.3.12-14",
+            "Col.1.21-23",
+            "Rev.2.10"
+          ]
+        },
+        {
+          "claim": "Those once enlightened can fall away.",
+          "passages": [
+            "Heb.6.4-6",
+            "Heb.10.26-29",
+            "2Pe.2.20-22"
+          ]
+        },
+        {
+          "claim": "Paul himself watched lest he be a castaway, and warned the standing to take heed lest they fall.",
+          "passages": [
+            "1Co.9.27",
+            "1Co.10.12",
+            "Php.3.12-14"
+          ]
+        },
+        {
+          "claim": "Assurance rests on God's faithfulness: he forgives the one who confesses, and keeps the one who trusts him.",
+          "passages": [
+            "Php.1.6",
+            "1Jn.1.9",
+            "Jud.1.24",
+            "1Co.10.13"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "\"Neither shall any man pluck them out of my hand.\"",
+          "answer": "No one can snatch away the sheep who \"hear my voice ... and they follow me\"; but a sheep may stray, and the shepherd goes after it. The promise is to those who follow.",
+          "passages": [
+            "Jhn.10.27-29",
+            "Luk.15.4",
+            "Jhn.15.6"
+          ]
+        },
+        {
+          "objection": "Then no one can be sure of salvation.",
+          "answer": "The believer may be sure of God, who \"is faithful and just to forgive us our sins\": the confidence is in his promise, held fast, not in ourselves.",
+          "passages": [
+            "1Jn.1.9",
+            "1Jn.5.13",
+            "Heb.10.23"
+          ]
+        }
+      ],
+      "related": [
+        "grace-and-works",
+        "romans-9"
+      ],
+      "topics": [
+        "predestination",
+        "grace-works"
       ]
     }
   ]
