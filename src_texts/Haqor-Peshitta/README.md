@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-3, 2 John, 3 John, and Jude
-(3,065 of 7,958 Peshitta verses; 4,893 remain). John 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-4, 2 John, 3 John, and Jude
+(3,119 of 7,958 Peshitta verses; 4,839 remain). John 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1252,3 +1252,16 @@ Source checks for John 3:
 - John 3:27 renders the own-will/self expression idiomatically as “on his own”; John 3:28-30 retains John's denial of being the Messiah, being sent ahead, the bridegroom/friend distinction, emphatically completed personal joy, and the increase/decrease contrast.
 - John 3:31 preserves all three earth expressions and both “above all” predicates within their own linked phrases. John 3:34 keeps both causal links and “it was not by measure that God gave the Spirit”, without adding a recipient.
 - John 3:36 renders מתטפיס contextually as “heed”; CAL's Syriac Ct entry explicitly includes “obey, consent” (https://cal.huc.edu/cal_entry_web.php?lemma=pys+V). The final future predicate remains “God's wrath will remain upon him.”
+
+Source checks for John 4:
+
+- John 4:1-4 retains Jesus as the named subject, the comparative baptizing clause, the explicit statement that his disciples rather than Jesus baptized, and the necessity of passing through the Samaritans with the discourse transition.
+- John 4:5-8 retains Sychar, Jacob's gift to Joseph his son, the water well, Jesus' weariness from the journey, the sixth hour, and the causal explanation that his disciples had gone to buy food for themselves.
+- John 4:9-12 preserves the Samaritan/Jewish contrast, God's gift, the hypothetical request and living-water answer, the missing bucket and deep well, and Jacob, his sons, and his flocks. The demonstrative at John 4:11,15 stays with “that woman,” distinct from the following address “my lord.”
+- John 4:12,29,33 treats למא contextually as an interrogative, without mechanically importing causal “why.” CAL's general-interrogative entry directly cites near-identical Old Syriac John 4:33 as “has anyone brought him something to eat?” (https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c).
+- John 4:14-18 preserves both water/giver relative clauses, the spring welling up to eternal life, the woman's request, five husbands, and the separate present “not your husband” predicate.
+- John 4:19-26 keeps the mountain/Jerusalem contrast, the plural worship/knowledge contrasts, salvation from the Jews, worship in spirit and truth, the Father's “also,” and the speaker's “I am he” self-identification.
+- John 4:27-38 retains the disciples' amazement and unasked questions, the woman's testimony, “Our Rabbi,” the food/will/work imagery, four months, fields already ready for harvest, future shared rejoicing, and the causal “for others have labored.”
+- John 4:39-44 preserves the woman's testimony and the Samaritans' own hearing as distinct grounds for belief. John 4:42 keeps the fronted “we” with the hearing clause and retains “the Messiah, the Life-Giver of the world.” John 4:41 says “many,” without adding a comparative “more”; both two-day references and the prophet's own-city statement remain explicit.
+- John 4:45-50 retains the Galileans' reception after seeing the Jerusalem feast signs, Cana and Capernaum, the royal official's sick son, and the subject “This man” when he hears of Jesus' arrival. The request, signs-and-wonders condition, living-son declaration, belief, and departure remain distinct.
+- John 4:51-54 retains the servants' meeting, announcement and saying, the seventh hour yesterday, the fever leaving, the father's recognition and household belief, and the second-sign conclusion after the journey from Judea to Galilee.
