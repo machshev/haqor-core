@@ -958,6 +958,9 @@ mod tests {
         assert_eq!(year("Jerusalem and the house of Yahweh burned"), -586);
         assert_eq!(year("Cyrus's decree: the house of God to be built"), -536);
         assert_eq!(year("Nehemiah sent to build the wall"), -444);
+        // Estimated lives, from birth to the last year each is seen.
+        assert_eq!(year("Lifetime of Daniel"), -621);
+        assert_eq!(year("Lifetime of Nehemiah"), -480);
         // An added event names a TIPNR record by its key.
         let named: i64 = db
             .query_row(
