@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-16, 2 John, 3 John, and Jude
-(2,560 of 7,958 Peshitta verses; 5,398 remain). Luke 17 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-17, 2 John, 3 John, and Jude
+(2,597 of 7,958 Peshitta verses; 5,361 remain). Luke 18 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -771,3 +771,44 @@ Source checks for Luke 16:
   in 16:28 the five brothers are warned lest they too come. In 16:30
   the visitor comes from the dead; in 16:31 the final clause explicitly
   says they will not believe "him", preserving its pronominal complement.
+
+Source checks for Luke 17:
+
+- In 17:1 both negatives are retained in the impossibility of offenses not
+  coming. In 17:2 the millstone is associated with a donkey. In 17:4 the
+  quoted "I repent" ends before the command to forgive; both seven-times
+  expressions and both day references remain explicit.
+- In 17:5 the apostles address "our Lord". In 17:6 the tree is a mulberry,
+  and the condition compares faith to a grain of mustard. In 17:7 the
+  servant drives a plough or tends a flock. In 17:8 he prepares supper,
+  girds his loins, and serves before he too eats and drinks.
+- In 17:9 `qbl` with the favor/thanks noun is an idiom meaning thank;
+  [CAL documents this Syriac combination under D 2(c)](https://cal.huc.edu/getlex.php?coord=5100104111&word=8).
+  The question concerns a master thanking the servant.
+  In 17:10 the final clause states the obligation without adding "only".
+- In 17:11 the ethnic term is plural Samaritans, followed by the directional
+  prefix on Galilee; the rendering follows the among-Samaritans route
+  toward Galilee. In 17:12 ten leprous men meet him and stand at a distance.
+- In 17:15 the man turns back and "was praising God"; the dative after
+  turning is rendered naturally without adding a receiver. In 17:16
+  "this man" was a Samaritan. In 17:17 both ten and nine remain explicit.
+- In 17:18 `prsh` has the departure sense, as in
+  [CAL's Syriac examples under G 3](https://cal.huc.edu/cal_entry_web.php?lemma=pr%24+V).
+  The question follows Murdock's contextual gone-away/without-coming
+  construction, with this man from a foreign nation as the exception.
+  The opening `lma` introduces the question; it does not require "why"
+  here, as discussed for this [interrogative particle](https://eprints.glos.ac.uk/3339/1/292355.pdf),
+  p. 147, citing Payne Smith and Nöldeke. In 17:19 the faith has given him life.
+- In 17:20 the Pharisees ask Jesus, and the kingdom does not come with
+  observation. In 17:21 it is "within you". In 17:22 the requested sight
+  is one of the days; no plural object is supplied to the final seeing
+  verb. In 17:23 no following-them command is added. In 17:24 lightning
+  flashes from heaven and illuminates all beneath heaven.
+- In 17:27 taking wives and giving women to husbands preserve the active
+  marriage expressions. In 17:28 planting has its own past auxiliary.
+  In 17:29 the Lord rains fire and sulphur, destroying them all. In 17:31
+  both prohibitions remain, along with his belongings and taking them.
+- In 17:33 both life nouns and their following object suffixes remain.
+  In 17:34 the time is night and the bed is one; 17:35 has two women,
+  and the field scene in 17:36 is present in this Peshitta source.
+  In 17:37 the address is "our Lord", and the eagles gather at the body.
