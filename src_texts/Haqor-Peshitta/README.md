@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-3, 2 John, 3 John, and Jude
-(1,972 of 7,958 Peshitta verses; 5,986 remain). Luke 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-4, 2 John, 3 John, and Jude
+(2,016 of 7,958 Peshitta verses; 5,942 remain). Luke 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -422,3 +422,24 @@ Source checks for Luke 3:
 - The genealogy retains John in 3:27 and Aram in 3:33, rather than the
   local reference's Joanna and Ram. The final relation in 3:38 is
   "from God", not a further explicit "son of" phrase.
+
+Source checks for Luke 4:
+
+- In 4:4 the source includes every word of God. In 4:5 Satan is explicit;
+  no separate dismissal of Satan is supplied in 4:8. In 4:6 "all" qualifies
+  the authority, followed by its glory.
+- In 4:18 the final verb is rendered "strengthen", following the
+  [dictionary entry for sharrar](https://sedra.bethmardutho.org/lexeme/get/3306).
+  The brokenhearted, release for captives, sight for the blind, and the
+  final forgiveness phrase are all retained; no sins noun is added.
+- In 4:27 the negative and exception mean none was cleansed except Naaman.
+  In 4:29 "their city" and the relative clause ending with "on it" stay
+  together, before the distinct purpose of casting him from the cliff.
+- In 4:34 "Leave me alone" is singular, but the following question uses
+  plural "we". In 4:36 the feminine command verb agrees with the word,
+  which is its grammatical subject.
+- In 4:41 "also" and both Messiah and Son of God are retained. The final
+  clause gives the reason for silencing the demons: they knew he was
+  Messiah; compare [Etheridge's translation](https://www.studylight.org/bible/eng/jet/luke/4.html).
+- In 4:43 the sending verb is first person, "I was sent", and the preceding
+  copula emphasizes the purpose. In 4:44 the source names Galilee.
