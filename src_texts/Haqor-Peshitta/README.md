@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1, 2 John, 3 John, and Jude
-(1,882 of 7,958 Peshitta verses; 6,076 remain). Luke 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-2, 2 John, 3 John, and Jude
+(1,934 of 7,958 Peshitta verses; 6,024 remain). Luke 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -388,3 +388,19 @@ Source checks for Luke 1:
 - In 1:77 the forgiveness phrase is introduced by "through", rather than
   an added conjunction. In 1:78 the visitation is future and explicitly
   includes its first-person object: "will visit us".
+
+Source checks for Luke 2:
+
+- In 2:9 the angel is explicitly "of God", while the following glory is
+  "of the Lord". In 2:10 the announced joy is for all the world.
+- In 2:14 the source says "good hope", which is retained alongside peace.
+- In 2:22 the purification has a plural possessor, "their". In 2:27 the
+  parents are explicit, while 2:41 uses the distinct expression "his people".
+- In 2:29 the release request is imperative. In 2:30 the object is
+  "your mercy"; in 2:35 the piercing weapon is a spear.
+- In 2:36 the seven years with Anna's husband are explicit. In 2:37 the
+  eighty-four-year wording is retained without resolving its age/duration
+  ambiguity; both fasting and prayer are linked separately.
+- In 2:43 and 2:45 the dative following "returned" is idiomatic, without
+  an added external recipient. In 2:49 the Father's house is explicit,
+  and 2:52 retains both "his stature" and "his wisdom".
