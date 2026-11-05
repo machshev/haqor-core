@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-2, 2 John, 3 John, and Jude
-(1,934 of 7,958 Peshitta verses; 6,024 remain). Luke 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-3, 2 John, 3 John, and Jude
+(1,972 of 7,958 Peshitta verses; 5,986 remain). Luke 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -404,3 +404,21 @@ Source checks for Luke 2:
 - In 2:43 and 2:45 the dative following "returned" is idiomatic, without
   an added external recipient. In 2:49 the Father's house is explicit,
   and 2:52 retains both "his stature" and "his wisdom".
+
+Source checks for Luke 3:
+
+- In 3:1 the repeated head/fourth expression is the tetrarch title.
+  In 3:4 both the plain and the first-person plural "our God" are explicit.
+- In 3:9 the tree must produce good fruits; the negated clause retains
+  both the fruit noun and its adjective.
+- In 3:14 the second prohibition is rendered "oppress no one"; compare
+  [CAL's entry for the verb](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28%24q+V),
+  which cites this verse under the oppression sense.
+- In 3:16 the source has no separate "after me" phrase. The straps and
+  sandals are plural, as are the threshing floors in 3:17; the burning
+  predicate in 3:17 is future.
+- In 3:22 the final address is second person, "in you", rather than the
+  reference's "in whom". In 3:23 no beginning-of-ministry wording is added.
+- The genealogy retains John in 3:27 and Aram in 3:33, rather than the
+  local reference's Joanna and Ram. The final relation in 3:38 is
+  "from God", not a further explicit "son of" phrase.
