@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, 2 John, 3 John, and Jude
-(3,832 of 7,958 Peshitta verses; 4,126 remain). Acts 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1, 2 John, 3 John, and Jude
+(3,858 of 7,958 Peshitta verses; 4,100 remain). Acts 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1455,3 +1455,11 @@ Source checks for John 21:
 - John 21:20-21 keeps Simon Cephas turning, the loved disciple coming after him, the recollection of supper and Jesus' breast, “my Lord,” the betrayal question, and the question about this other disciple. There is no added “called” predicate between Simon and Cephas, and the demonstrative is rendered “this one.”
 - John 21:22-23 preserves “this one” remaining, coming, the personal question and the emphatic “You come after me,” then distinguishes the brothers' report from what Jesus actually said. הנא refers to the disciple and is not an added locative “here.” The first לכ is read with coming (“come to you”), while the second remains in the question “what is that to you?” Both forms are preserved in the repeated saying. The negative saying clause keeps the actual speech predicate before the contrasting conditional quotation.
 - John 21:24-25 retains the disciple's testimony about all these things, his also writing them, plural “we know” and true testimony, many other things Jesus did, “one by one,” the world's insufficiency for the books, singular “I suppose,” and the further writing clause. The negative remains with “not even the world itself.” The final relative/anaphoric link is rendered through two natural English sentences, retaining its reference as “they” in the conditional.
+
+Source checks for Acts 1:
+
+- Acts 1:1-9 retains the first book, Theophilus, our Lord Jesus Messiah, the apostles and Holy Spirit, forty days, eating bread together, the Father's promise, water and Spirit baptism, the kingdom question, the Father's authority, witnesses among the Samaritans, and both the cloud receiving Jesus and his being hidden. Acts 1:7 says “the time or times,” without replacing the actual terms with a remembered Greek formulation.
+- Acts 1:10-14 keeps the two men in white, the ascension and return, the mountain called House of Olives, about seven stadia from Jerusalem, the upper room, all eleven names, women, Mary the mother of Jesus, and his brothers. The distance retains the source unit; no Sabbath-day journey is substituted. Judas is explicitly “son of James,” rather than “brother of James.”
+- Acts 1:15-19 retains Simon Cephas, about one hundred twenty, “our brothers,” Scripture, the Holy Spirit speaking through David, Judas's guide role and ministry share, and the field, wages of sin, fall, bursting and entrails. The narrator's parenthesis in 1:18-19 is separate from Peter's speech, which resumes in 1:20. The field's name is preserved as “Haqel Dama,” followed by its explicit “Field of Blood” explanation and the source's “language of the country.”
+- Acts 1:20-22 preserves both Psalm sayings and the candidate's accompanying the group from John's baptism through the ascension, to become a witness of the resurrection. The initial verb in 1:22 is retained; its association/attachment sense is recorded under [CAL's nqp entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=nqp%232+V), including the causative stem used here.
+- Acts 1:23-26 keeps Joseph, Barsabbas, Justus and Matthias, the prayer to the Lord who knows all hearts, present “you choose,” ministry and apostleship, Judas's departure to his own place, casting lots, the lot coming up for Matthias and his being counted with the eleven apostles. No different tense or downward lot motion is imported from the reference translation.
