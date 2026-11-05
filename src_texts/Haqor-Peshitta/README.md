@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-11, 2 John, 3 John, and Jude
-(2,368 of 7,958 Peshitta verses; 5,590 remain). Luke 12 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-12, 2 John, 3 John, and Jude
+(2,427 of 7,958 Peshitta verses; 5,531 remain). Luke 13 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -615,3 +615,36 @@ Source checks for Luke 11:
   In 11:53 Jesus is actively saying these things; Pael `tks` means
   contradict/rebut, as documented in the [CAL entry](https://cal.huc.edu/cal_entry_web.php?lemma=tks+V).
   In 11:54 the final two-word idiom means accusing him, rather than eating.
+
+Source checks for Luke 12:
+
+- In 12:2 both covered and hidden things are explicit. In 12:3 speech
+  in darkness is heard in the light, while whispering in chambers and
+  ears is proclaimed on rooftops. In 12:4 the speaker says "I" and
+  addresses "my friends".
+- In 12:7 the sparrows belong to the value comparison, not the fear
+  prohibition. In 12:10 both forgiveness clauses retain their recipient.
+  In 12:11 the defense expression is rendered as a coherent idiom.
+- In 12:15 Jesus explicitly addresses his disciples. In 12:16 the land
+  yields produce. In 12:19 the rich man's speech remains first person,
+  "I will say to my soul"; the requirement of his soul in 12:20 does not
+  identify the unspecified requiring agents.
+- In 12:25 the measure is a cubit of stature. In 12:28 the grass falls
+  into the oven. In 12:30 "you too need" preserves the source's emphasis
+  on the disciples' need, rather than adding "also" to the Father's knowing.
+- In 12:35 the loins are girded and the lamps shine. In 12:36 the source
+  specifies a feast. In 12:37 the master girds himself, has the servants
+  recline, and serves them. In 12:39 the final past auxiliary belongs to
+  not allowing the break-in.
+- In 12:41 Simon Cephas says "Our Lord" and asks whether the parable is
+  for "us". In 12:47 readiness is according to the master's will; no
+  separate doing verb is supplied. In 12:49 the fire's kindling is wished
+  for, while 12:50 retains the baptism and pressure until completion.
+- In 12:53 all six family relationships retain their possessives,
+  including mother-in-law and daughter-in-law. In 12:54 the crowds are
+  plural and the cloud rises in the west; in 12:55 the wind is southern.
+  In 12:57 the judgment concerns truth.
+- In 12:58 "make a settlement" is a contextual legal rendering of the
+  commercial expression; [CAL lists its noun as merchandise/business dealings](https://cal.huc.edu/browseSKEYheaders.php?first3=%22t%22).
+  The judge and officer remain distinct actors. In 12:59 the speaker
+  says "I", and the payment ends with the last coin.
