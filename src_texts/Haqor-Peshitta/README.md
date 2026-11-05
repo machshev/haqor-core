@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-23, 2 John, 3 John, and Jude
-(2,900 of 7,958 Peshitta verses; 5,058 remain). Luke 24 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, 2 John, 3 John, and Jude
+(2,953 of 7,958 Peshitta verses; 5,005 remain). John 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1113,3 +1113,58 @@ Source checks for Luke 23:
   in a hewn tomb where no one had yet been laid. In 23:55 the women
   see how his body is placed. In 23:56 spices and ointments remain
   distinct, followed by Sabbath rest as commanded.
+
+Source checks for Luke 24:
+
+- In 24:1 the day expression is the first day of the week, not a first
+  Sabbath. Dawn and continuing darkness remain, with the prepared spices
+  and other women accompanying them. The preparation auxiliary belongs
+  to preparing the spices, before the other women are introduced.
+- In 24:4 the two men stand opposite the women, with gleaming clothing.
+  In 24:5 the masculine speakers address the frightened women, rather
+  than the women asking the resurrection question. In 24:7 delivery
+  into sinful men's hands, crucifixion, and third-day rising all remain.
+- In 24:10 the named women include Mary Magdalene, Joanna, and Mary the
+  mother of James, together with the others. In 24:11 the apostles do
+  not believe them. In 24:12 the name is Simon, and the linen sheets
+  are lying alone. In 24:13 Emmaus is sixty stades from Jerusalem;
+  the source unit is retained without a modern distance conversion.
+- In 24:14 the two were speaking with one another. In 24:15 Jesus
+  reaches them and was walking with them. In 24:16 their held eyes
+  prevent their recognition of him. In 24:18 Cleopas answers and then
+  speaks; the Jerusalem stranger expression is rendered idiomatically
+  in its conversational setting, retaining the question's addressee.
+- In 24:19 Jesus is from Nazareth, a prophet mighty in word and deed
+  before God and all the people. The suffix on all resumes the people;
+  it does not introduce a possessive his people. In 24:20 the chief
+  priests and elders deliver him to a death sentence and crucify him.
+  In 24:21 they were hoping for Israel's deliverance, with three days
+  elapsed since these things occurred.
+- In 24:23 the women report angels and the statement that he is alive.
+  In 24:24 the final masculine pronoun begins the following clause,
+  but him they did not see; it is not a recipient of the women's report.
+  In 24:25 deficient understanding and a heavy heart are distinct.
+  In 24:27 he began from Moses and was explaining the Scriptures.
+- In 24:28 he makes them think he is going to a distant place. In
+  24:29 the day is inclining toward darkness. In 24:30 the blessing
+  has no added object. In 24:31 recognition and withdrawal are distinct.
+  In 24:32 the recorded source is `יקיר`, heavy, with singular our heart;
+  see [CAL's adjective entry](https://cal.huc.edu/cal_entry_web.php?lemma=yqyr+A).
+  The supplied Murdock reference uses burn. The English follows the
+  actual recorded form, together with speaking and explaining to us.
+- In 24:33-34 the assembled eleven and those with them are saying that
+  our Lord has risen and appeared to Simon. In 24:35 the two describe
+  his recognition at the breaking of bread. In 24:36 the full greeting
+  includes peace, it is I, and the command not to fear.
+- In 24:39 my hands, my feet, and I myself retain their first-person
+  references, with flesh and bones in the comparison. In 24:42 broiled
+  fish and some honeycomb are both present; honeycomb naturally renders
+  the comb-of-honey expression. In 24:43 he eats before their eyes.
+  In 24:44 the law of Moses, prophets, and psalms are all named; in
+  24:45 mind is a singular collective and its opening is for understanding.
+- In 24:46 fittingness has the past auxiliary, unlike the necessity
+  expression in 24:44. In 24:47 repentance for forgiveness is proclaimed
+  in his name to all nations, beginning from Jerusalem. In 24:49 I will
+  send is future, my Father is possessive, and the city is Jerusalem.
+  In 24:50 Bethany and his lifted hands remain; blessing, separation,
+  ascent, worship, return, continual praise, and Amen complete 24:51-53.
