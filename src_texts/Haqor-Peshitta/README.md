@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, 2 John, 3 John, and Jude
-(1,802 of 7,958 Peshitta verses; 6,156 remain). Luke 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1, 2 John, 3 John, and Jude
+(1,882 of 7,958 Peshitta verses; 6,076 remain). Luke 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -372,3 +372,19 @@ Source checks for Mark 16:
 - In 16:19 and 16:20 "our Lord" retains its first-person possessive.
   In 16:20 the Lord was helping and confirming their words; the signs
   were being performed by the plural actors.
+
+Source checks for Luke 1:
+
+- In 1:2 the ministers serve the word; the anticipatory feminine suffix
+  refers forward to that noun. In 1:3 both "all of them" and "everything"
+  are retained, as is the distinct ordering phrase "in its order".
+- In 1:8 the source names God, rather than the local Murdock reference's
+  Lord. In 1:15 the Holy Spirit is explicit, and the temporal phrase is
+  "while he is in his mother's womb".
+- In 1:28 "Our Lord" and in 1:43 "my Lord" retain their distinct possessives.
+- In 1:39 the adverb is rendered "with diligence", following the careful
+  and diligent senses in [SEDRA's lexical entry](https://sedra.bethmardutho.org/lexeme/get/368).
+- In 1:72 the holy covenants are plural, as are the oaths in 1:73.
+- In 1:77 the forgiveness phrase is introduced by "through", rather than
+  an added conjunction. In 1:78 the visitation is future and explicitly
+  includes its first-person object: "will visit us".
