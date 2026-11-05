@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-25, 2 John, 3 John, and Jude
-(963 of 7,958 Peshitta verses; 6,995 remain). Matthew 26 is next.
+Current coverage: Matthew 1-26, 2 John, 3 John, and Jude
+(1,038 of 7,958 Peshitta verses; 6,920 remain). Matthew 27 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -19,6 +19,9 @@ zero-based source positions. `[English phrase|0]` links a phrase to one
 Aramaic word. `[English phrase|0,1]` renders a contiguous idiom together.
 Keep the links in source order. Prefixes and suffixes belong to their
 source word; a phrase may therefore translate more than one English word.
+Separate linked phrases with spaces where English words need separation;
+markup does not insert spaces between spans. Review the running English as
+well as each individual source-to-English mapping.
 
 Both `db gen-runtime` and `db gen-translation` load this tracked source
 from the supplied `--src-texts` directory on every build. The source file
@@ -125,3 +128,13 @@ Source checks for Matthew 25:
 - In 25:41 the king speaks to those on his left; the imperative with its
   reflexive dative is linked separately from "from me". The false-accuser
   title follows the established rendering used in earlier chapters.
+
+Source checks for Matthew 26:
+
+- In 26:39 the cup petition is volitional, rather than a bare infinitive.
+  The repeated first-person forms belong to the willing predicate; they do
+  not require a detached extra English "I".
+- In 26:69 the past auxiliary belongs to the assertion that Peter was with
+  Jesus. It is not part of the following "Nazarene" epithet.
+- In 26:75 the cock-crow clause is future-relative, not past: "before the
+  cock crows" is followed by "you will deny me".
