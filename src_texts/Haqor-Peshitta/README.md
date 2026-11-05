@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-7, 2 John, 3 John, and Jude
-(2,154 of 7,958 Peshitta verses; 5,804 remain). Luke 8 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-8, 2 John, 3 John, and Jude
+(2,210 of 7,958 Peshitta verses; 5,748 remain). Luke 9 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -510,3 +510,27 @@ Source checks for Luke 7:
 - In 7:47 the loving verb is perfect, "she has loved much", with the
   explicit causal connector retained. In 7:50 the causative life verb
   is rendered "has given you life".
+
+Source checks for Luke 8:
+
+- In 8:1 the twelve are explicitly his; in 8:3 the women serve "them",
+  plural. In 8:4 people come from all the cities, and parables are plural.
+- In 8:10 the mystery is singular. In 8:12 the enemy takes the word from
+  their heart so that they may not believe and live. In 8:13 their faith
+  is temporary; in 8:15 holding the word and producing fruits are distinct.
+- In 8:19 the family cannot speak with him because of the crowd. In 8:24
+  both calls retain "Our Rabbi". The winds, storms, and sea in 8:25 are
+  distinct objects of the command.
+- In 8:26 the place name is Gadarenes. In 8:28 the initial question uses
+  "we", while the plea ends "do not torment me". In 8:29 the man is bound
+  and breaks his bonds; the demon leads him into the wilderness.
+- In 8:36 those who saw the healing report it to the visitors. In 8:38
+  Jesus dismisses the man before speaking. In 8:39 the command names God,
+  while the man's proclamation names Jesus.
+- In 8:40 the crowd receives Jesus. In 8:44 the blood flow stops; the
+  feminine verb does not describe the woman standing up. In 8:45 both
+  Simon Cephas and those with him speak, addressing Jesus as "Our Rabbi".
+- In 8:48 "Take courage, my daughter" is explicit, and the causative life
+  verb is rendered "has given you life". In 8:50 Jesus addresses the girl's
+  father and says she will live. In 8:56 he warns the parents to tell no
+  one what happened.
