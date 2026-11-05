@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-5, 2 John, 3 John, and Jude
-(2,055 of 7,958 Peshitta verses; 5,903 remain). Luke 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-6, 2 John, 3 John, and Jude
+(2,104 of 7,958 Peshitta verses; 5,854 remain). Luke 7 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -463,3 +463,26 @@ Source checks for Luke 5:
   remain under the negative. In 5:36 the feminine final predicate agrees
   with the patch: it does not fit the old garment. In 5:39 the old wine
   is pleasant, without an added comparative.
+
+Source checks for Luke 6:
+
+- In 6:1 the disciples rub the ears in their hands. In 6:4 the source
+  names the bread of the Lord's table; its possessive suffix anticipates
+  the Lord, without a separate "his".
+- In 6:6 the past auxiliary belongs with teaching before the separate
+  man/hand clause. The right hand is explicit. In 6:13 Jesus actively
+  names the apostles; 6:14 names Cephas, and 6:16 says Jude son of James.
+- In 6:18 people came to hear his word and to be healed; the purpose
+  clause is distinct from the following statement that healing was ongoing.
+  In 6:26 the source says people, without an added "all".
+- In 6:35 the lending command is followed by "do not cut off anyone's
+  hope". The kindness clause addresses the evil and then the ungrateful.
+- In 6:38 the measure is pressed down and overflowing, without a separate
+  shaking action; the recipients' laps are plural. In 6:41 the beam is
+  the subject of the passive seeing clause.
+- In 6:45 both stores of treasures are plural, and the lips speak from
+  the heart's abundance. In 6:46 both titles retain their first-person
+  possessive: "My Lord, my Lord".
+- In 6:48 foundations are initially plural, while the final foundation is
+  singular. In 6:49 the river beats against the house, which immediately
+  falls; the two-word hour expression is not part of the river noun.
