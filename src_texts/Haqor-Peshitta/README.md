@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, 2 John, 3 John, and Jude
-(1,124 of 7,958 Peshitta verses; 6,834 remain). Mark 1 is next.
+Current coverage: Matthew 1-28, Mark 1, 2 John, 3 John, and Jude
+(1,169 of 7,958 Peshitta verses; 6,789 remain). Mark 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -156,3 +156,11 @@ Source checks for Matthew 28:
   dataset uses person code 3 for first person.
 - The distinct verbs in 28:19 and 28:20 are rendered "instruct" and "teach",
   respectively.
+
+Source checks for Mark 1:
+
+- In 1:2 Isaiah is explicitly named and is retained.
+- In 1:31 the woman ministers to "them", preserving the plural source object
+  rather than copying the singular object of Matthew 8:15.
+- In 1:21-22 the teaching predicates retain their subjects and auxiliaries;
+  the postpositive explanatory particle stays with the second teaching clause.
