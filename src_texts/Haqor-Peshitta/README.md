@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-21, 2 John, 3 John, and Jude
-(781 of 7,958 Peshitta verses; 7,177 remain). Matthew 22 is next.
+Current coverage: Matthew 1-22, 2 John, 3 John, and Jude
+(827 of 7,958 Peshitta verses; 7,131 remain). Matthew 23 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -87,3 +87,6 @@ Source checks for Matthew 17-20:
 
 Source check for Matthew 21: the praise quotation divided across Murdock
 21:16-17 is entirely in Peshitta 21:16 and is linked there.
+
+Source check for Matthew 22: 22:37 explicitly includes strength as well as
+heart, soul, and mind; all four are retained and linked to their source words.
