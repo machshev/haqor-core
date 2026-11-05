@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-15, 2 John, 3 John, and Jude
-(3,635 of 7,958 Peshitta verses; 4,323 remain). John 16 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-16, 2 John, 3 John, and Jude
+(3,668 of 7,958 Peshitta verses; 4,290 remain). John 17 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1389,3 +1389,14 @@ Source checks for John 15:
 - John 15:19-24 preserves belonging to or being chosen from the world, hatred, the remembered servant saying, persecution and keeping words, the name and sender, the coming/speaking and unique-works counterfactuals, sin and excuse, and hatred of the speaker and his Father. John 15:22 retains singular “their sin”; John 15:24 keeps the works being done “in their sight.”
 - John 15:25 uses “without cause” for מגנ. [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=mgn+X) records the Syriac “for no reason” sense and a Peshitta Psalm 69:5 example, distinct from the word's gratis/free-of-charge sense. The quoted hatred remains part of the law-word fulfillment clause.
 - John 15:26 retains “Advocate,” consistent with John 14, and both actual “my Father” phrases. נפק is vocalised as a present participle, supporting “proceeds.” John 15:27 keeps the hearers' predicative “you also are witnesses” and their being with the speaker from the beginning. The chapter remains one continuous speech, with nested quotations in John 15:20 and 15:25.
+
+Source checks for John 16:
+
+- John 16:1-4 retains the purpose of preventing stumbling, expulsion from their synagogues, the killing/offering supposition, ignorance of the speaker and his Father, and remembering the warning when its time arrives. The second “these things” belongs to the explanation about not speaking from the beginning, rather than being moved into the preceding warning.
+- John 16:5-7 preserves going to the sender, the unasked destination question, sorrow filling the hearers' hearts, truthful speech, the benefit of departure, both conditional branches, and the sending of the Advocate. The repeated first-person pronoun after the going predicate remains with that predicate; it does not become the Advocate's subject.
+- John 16:8-11 retains conviction of the world concerning sin, righteousness and judgment, with the explanatory clauses about unbelief, going to my Father and no longer being seen, and the judgment of this world's ruler. The d-prefixed explanations remain distinct from the discourse particle דינ.
+- John 16:12-15 keeps the still-ungraspable teaching, the Spirit of truth's guidance, not speaking from his own mind, speaking what he hears, making future things known, glorifying the speaker, and receiving and showing what is his. John 16:15 explicitly retains “my Father.”
+- John 16:16-19 preserves the two little-while sayings and the speakers' questions. The actual Father noun is unsuffixed in John 16:16, “the Father,” but possessive in John 16:17, “my Father.” John 16:19 ends with seeing again; the Father-going continuation in the supplied Murdock reference is absent from this source verse and is not added.
+- John 16:20-24 distinguishes the hearers' weeping and sorrow from the world's rejoicing, sorrow becoming joy, the woman's day of childbirth, a son and the human born into the world, the speaker's seeing the hearers again, and joy no one takes away. Asking the speaker and asking his Father in his name remain distinct, followed by the ask/receive command and complete joy.
+- John 16:25-28 keeps parables and future plain speech, asking in the speaker's name, the Father's own love, and departure and return. עינ בגלא is rendered together as “plainly,” an adverbial idiom recorded by [CAL](https://cal.huc.edu/cal_entry_web.php?lemma=%28yn%40bgl%29+N), rather than inventing a separate revealing predicate. John 16:27 says “God,” unlike the supplied Murdock's “Father”; John 16:28's first-person ethical לי is absorbed naturally into “I go,” without introducing a third-person recipient.
+- John 16:29-33 preserves plain speaking, not one parable, knowing everything, belief in coming from God, scattering each to his place, the Father with the speaker, peace, affliction, courage, and overcoming the world. John 16:31's actual הַימֵנו is tagged as a second-person plural imperative and is rendered “Believe!” rather than the reference's question. Quotation boundaries distinguish the disciples' speech from Jesus' preceding and final replies.
