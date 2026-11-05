@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-8, 2 John, 3 John, and Jude
-(3,349 of 7,958 Peshitta verses; 4,609 remain). John 9 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-9, 2 John, 3 John, and Jude
+(3,390 of 7,958 Peshitta verses; 4,568 remain). John 10 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1317,3 +1317,13 @@ Source checks for John 8:
 - John 8:44-47 keeps the accuser, the father's desire, the murderer-from-the-beginning predicate, standing “in the truth,” truth's absence, speaking a lie/from himself, the liar and its father, the truth/unbelief contrast, conviction concerning sin, and hearing God's words. The lie's possessive is retained in “its father.”
 - John 8:48-56 preserves the Samaritan/demon accusation, the denial, honor and glory, the death/word promise and repeated challenge, Abraham and the prophets, the Father's glorifying, knowing and keeping his word, and Abraham's desire and rejoicing. John 8:54 retains the actual first-person plural “our God” in the reported claim.
 - John 8:57-59 retains the fifty-year comparison, Abraham question, “before Abraham was, I am,” and the full final movements: stones taken up, Jesus hiding, leaving the temple, passing among them, and going away. The named Jesus and hiding verb remain in the same linked phrase.
+
+Source checks for John 9:
+
+- John 9:1-7 retains blindness from the mother's womb, “Our Rabbi,” the parents/sin question, the works-of-God purpose clause, the speaker's singular obligation, day/night and world/light imagery, clay made from his spittle, and the Siloam washing. Jesus' answer continues through John 9:5. John 9:7 names the pool of Siloam without adding a supplied name etymology; John 9:11 explicitly says “the waters of Siloam.”
+- John 9:8-14 preserves the neighbors' identification debate, ongoing begging, the man's identification and named-Jesus account, the nested washing command, ignorance of Jesus' location, the Pharisee referral, and the Sabbath setting. The subject and auxiliary in John 9:9 remain with the man's speaking, separate from his quoted answer.
+- John 9:15-19 keeps the restored-sight question and reply, the Pharisees' Sabbath objection and disagreement, the man's prophet declaration, the Jews' disbelief, and the parents' questioning. The subject at John 9:15 belongs to “But he said,” and the auxiliary at John 9:16 belongs to “others were saying.” The object “them” in John 9:19 stays with “asked.”
+- John 9:20-24 retains “our son,” blindness at birth, the parents' uncertainty about present sight, their separate assertion that he has come of age, his ability to speak for himself, fear of the Jews, the prior expulsion decision, the second summons, and the causal “for we know.” The age statement is not turned into another uncertainty clause.
+- John 9:25-30 preserves the one-thing contrast, present sight, repeated questioning, the invitation to become disciples, the insult, the Moses/Jesus disciple contrast, known divine speech to Moses, unknown origin, and the man's astonishment and “my own eyes.” John 9:28's anticipatory possessive stays with “that man's disciple”; גיר is rendered emphatically as “indeed,” an attested Syriac sense in [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=gyr+X).
+- John 9:31-34 retains the voice of sinners, fear of God and doing his will, the hearing response, the unprecedented opening of a man born blind's eyes, the from-God counterfactual, the accusation of being born wholly in sins, and the expulsion. The quoted testimony runs through John 9:33.
+- John 9:35-41 retains the actual “Son of God,” the healed man's explicit subject, both “My Lord” addresses, seeing/speaking identification, falling and worshiping, “the judgment of this world,” the seeing/blind reversal, and the final conditional and present sin. John 9:41's מטל הנא is the causal “for this reason,” without adding a demonstrative to “your sin.”
