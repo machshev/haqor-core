@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-26, 2 John, 3 John, and Jude
-(1,038 of 7,958 Peshitta verses; 6,920 remain). Matthew 27 is next.
+Current coverage: Matthew 1-27, 2 John, 3 John, and Jude
+(1,104 of 7,958 Peshitta verses; 6,854 remain). Matthew 28 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -138,3 +138,12 @@ Source checks for Matthew 26:
   Jesus. It is not part of the following "Nazarene" epithet.
 - In 26:75 the cock-crow clause is future-relative, not past: "before the
   cock crows" is followed by "you will deny me".
+
+Source checks for Matthew 27:
+
+- In 27:9 the source names only "the prophet"; no individual name is added.
+- In 27:38 the two robbers are crucified: the verb is passive. In 27:52,
+  by contrast, the bodies arise; the past auxiliary belongs to the sleeping
+  description rather than making the rising verb passive.
+- In 27:47 the past auxiliary belongs to "were saying". The explicit
+  demonstrative then begins their claim: "This one calls for Elijah."
