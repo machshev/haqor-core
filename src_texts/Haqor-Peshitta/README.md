@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-8, 2 John, 3 John, and Jude
-(2,210 of 7,958 Peshitta verses; 5,748 remain). Luke 9 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-9, 2 John, 3 John, and Jude
+(2,272 of 7,958 Peshitta verses; 5,686 remain). Luke 10 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -534,3 +534,31 @@ Source checks for Luke 8:
   verb is rendered "has given you life". In 8:50 Jesus addresses the girl's
   father and says she will live. In 8:56 he warns the parents to tell no
   one what happened.
+
+Source checks for Luke 9:
+
+- In 9:1 the twelve are his, while the suffix on "all" anticipates the
+  demons. In 9:11–12, 9:16, and 9:18 the crowds are plural. In 9:12 the
+  villages are around "us", and the disciples say "we are" in the wilderness.
+- In 9:9 Herod says he cut off John's head; the following hearing clause
+  remains first person. In 9:20 the title is the Messiah of God, without
+  a separate "his" before the genitive.
+- In 9:23 both following phrases say "after me". In 9:24 the motive is
+  "for my sake"; the following demonstrative resumes the person who loses
+  his life. In 9:25 his life is explicit. In 9:26 the Son of man is the
+  subject of the second ashamed predicate.
+- In 9:31 Moses and Elijah speak about his departure and its completion
+  in Jerusalem. In 9:34 they are explicitly named as entering the cloud.
+  In 9:35 the Son is beloved.
+- In 9:39 the feminine spirit seizes the child; the masculine predicates
+  describe the child crying out, gnashing his teeth, and foaming. The
+  feminine subject returns for the spirit's departure and crushing him.
+- In 9:48 the final demonstrative resumes the least person: "this one
+  will be great". In 9:49 the address is "Our Rabbi", followed by "your
+  name", "with us", and "after you". In 9:50 both final suffixes are "you".
+- In 9:51 the days being fulfilled are distinct from Jesus setting his
+  face toward Jerusalem. In 9:52 messengers are plural, without a numeral.
+  In 9:54 the address is "Our Lord", and Elijah is explicitly named.
+- In 9:56 souls are not to be destroyed, and the causative life verb is
+  rendered "to give life". In 9:58 his head is explicit. In 9:61 the
+  household idiom does not identify its members as biological sons.
