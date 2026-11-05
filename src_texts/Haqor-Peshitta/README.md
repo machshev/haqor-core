@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-12, 2 John, 3 John, and Jude
-(1,626 of 7,958 Peshitta verses; 6,332 remain). Mark 13 is next.
+Current coverage: Matthew 1-28, Mark 1-13, 2 John, 3 John, and Jude
+(1,663 of 7,958 Peshitta verses; 6,295 remain). Mark 14 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -310,3 +310,16 @@ Source checks for Mark 12:
 - In 12:41 the past auxiliary belongs with casting. In 12:44 it belongs
   with what the widow had; the feminine demonstrative begins the contrast
   with the other contributors, and her entire property is retained.
+
+Source checks for Mark 13:
+
+- In 13:6 the two first-person forms express one claim, "I am he".
+  In 13:9 the explanatory "for" belongs to delivering the hearers to judges;
+  the following synagogues retain their possessive.
+- In 13:10 the first-person possessive is retained: "my good news".
+  In 13:11 the delivery verb explicitly includes its "you" object.
+- In 13:14 Daniel is explicitly named. In 13:32 the Son is explicitly
+  included before the exception for the Father.
+- In 13:34 the journey, leaving, giving, and commanding verbs are past.
+  In 13:37 the two saying clauses remain distinct: the first addresses
+  "you", and the second addresses "you all".
