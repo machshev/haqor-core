@@ -6,6 +6,16 @@
       "note": "The evidence that the world was made, and why it suffers."
     },
     {
+      "id": "faith",
+      "title": "Faith and reason",
+      "note": "Faith rests on evidence, and miracles are not incredible if there is a God."
+    },
+    {
+      "id": "morality",
+      "title": "Right and wrong",
+      "note": "Right and wrong come from God, and his judgements are just."
+    },
+    {
       "id": "resurrection",
       "title": "The resurrection of Jesus",
       "note": "The evidence that Jesus rose from the dead."
@@ -71,6 +81,22 @@
       "title": "Why God allows suffering"
     },
     {
+      "id": "faith-reason",
+      "title": "Faith and evidence"
+    },
+    {
+      "id": "miracles",
+      "title": "Are miracles possible?"
+    },
+    {
+      "id": "morality",
+      "title": "Where right and wrong come from"
+    },
+    {
+      "id": "god-good",
+      "title": "Is the God of the Bible good?"
+    },
+    {
       "id": "resurrection-evidence",
       "title": "Evidence for the resurrection"
     },
@@ -81,6 +107,14 @@
     {
       "id": "bible-reliable",
       "title": "Is the Bible reliable?"
+    },
+    {
+      "id": "historical-jesus",
+      "title": "Did Jesus exist?"
+    },
+    {
+      "id": "contradictions",
+      "title": "Does the Bible contradict itself?"
     },
     {
       "id": "scripture-tradition",
@@ -600,19 +634,28 @@
       "id": "sceptic",
       "religion": "none",
       "title": "Sceptics and atheists",
-      "note": "Begin from history, not from the Bible's authority: the crucifixion, which historians grant, then the empty tomb, the witnesses and how early the records are, then prophecy fulfilled and the world as made.",
+      "note": "Begin from history and reason, not from the Bible's authority. Common ground first: Jesus lived and was crucified, man is mortal, and no one is tormented for ever. Then show that the Bible's faith rests on evidence and that miracles are not incredible if there is a God; then the empty tomb, the witnesses and the records, prophecy fulfilled and the world as made. Answer the hard passages on morals when they are raised.",
       "agree": [
-        "crucifixion"
+        "jesus-existed",
+        "crucifixion",
+        "soul-mortal",
+        "grave-and-hinnom"
       ],
       "differ": [
+        "faith-and-evidence",
+        "miracles",
         "empty-tomb",
         "appearances",
         "transformed-witnesses",
         "early-testimony",
+        "gospel-agreement",
         "bible-preserved",
         "fulfilled-prophecy",
         "creator",
-        "suffering"
+        "moral-law",
+        "suffering",
+        "canaanites",
+        "slavery"
       ]
     },
     {
@@ -623,12 +666,37 @@
       "agree": [],
       "differ": [
         "creator",
+        "faith-and-evidence",
+        "miracles",
         "empty-tomb",
         "appearances",
         "early-testimony",
         "suffering",
         "one-way",
         "sin-and-death"
+      ]
+    },
+    {
+      "id": "deconverted",
+      "religion": "none",
+      "title": "Former believers",
+      "note": "Those who left a church, often over hell, suffering, the Bible's hard passages or its apparent contradictions. Many rejected what the Bible does not teach: begin by setting its plain teaching apart from the creeds they left, then answer the hard passages, then the evidence that Jesus rose.",
+      "agree": [
+        "jesus-existed",
+        "crucifixion"
+      ],
+      "differ": [
+        "grave-and-hinnom",
+        "soul-mortal",
+        "suffering",
+        "gospel-agreement",
+        "canaanites",
+        "slavery",
+        "faith-and-evidence",
+        "miracles",
+        "empty-tomb",
+        "appearances",
+        "early-testimony"
       ]
     }
   ],
@@ -668,6 +736,22 @@
     "targum-jonathan": {
       "title": "Targum Jonathan on the Prophets",
       "licence": "public-domain"
+    },
+    "paley-evidences": {
+      "title": "A View of the Evidences of Christianity",
+      "author": "William Paley",
+      "year": 1794,
+      "licence": "public-domain",
+      "url": "https://www.gutenberg.org/ebooks/14780",
+      "file": "src_texts/Apologetics/paley-evidences-of-christianity.txt"
+    },
+    "greenleaf-testimony": {
+      "title": "An Examination of the Testimony of the Four Evangelists",
+      "author": "Simon Greenleaf",
+      "year": 1846,
+      "licence": "public-domain",
+      "url": "https://www.gutenberg.org/ebooks/34989",
+      "file": "src_texts/Apologetics/greenleaf-testimony-of-the-evangelists.txt"
     }
   },
   "entries": [
@@ -749,7 +833,9 @@
         "suffering",
         "one-god",
         "no-idols",
-        "sin-and-death"
+        "sin-and-death",
+        "moral-law",
+        "miracles"
       ],
       "topics": [
         "creator"
@@ -830,10 +916,433 @@
         "creator",
         "sin-and-death",
         "resurrection-hope",
-        "kingdom-on-earth"
+        "kingdom-on-earth",
+        "canaanites"
       ],
       "topics": [
-        "suffering"
+        "suffering",
+        "god-good"
+      ]
+    },
+    {
+      "id": "faith-and-evidence",
+      "subject": "faith",
+      "kind": "doctrine",
+      "title": "Faith rests on evidence, and is not belief against it",
+      "summary": "Faith in the Bible is the assurance of what God has promised, grounded on what he has shown. He showed himself alive \"by many infallible proofs\", and has given assurance unto all men in that he raised Jesus from the dead. Believers are bidden to prove all things, to search the Scriptures as the Bereans did, and to give a reason for their hope. The Gospels were written that their readers might believe, and Paul staked the faith on a fact that could be shown false: if Christ be not raised, your faith is vain.",
+      "passages": [
+        "Heb.11.1",
+        "Act.1.3",
+        "Act.17.31",
+        "1Pe.3.15",
+        "1Co.15.14-19"
+      ],
+      "points": [
+        {
+          "claim": "Faith is the assurance of things hoped for, and comes by hearing the word of God.",
+          "passages": [
+            "Heb.11.1",
+            "Rom.10.17"
+          ]
+        },
+        {
+          "claim": "God gave proof: Jesus showed himself alive by many infallible proofs, and his resurrection is God's assurance to all men.",
+          "passages": [
+            "Act.1.3",
+            "Act.17.31"
+          ]
+        },
+        {
+          "claim": "Believers are bidden to test what they hear, and to give a reason for their hope.",
+          "passages": [
+            "1Th.5.21",
+            "Act.17.11",
+            "1Pe.3.15",
+            "1Jn.4.1"
+          ]
+        },
+        {
+          "claim": "The records were written from what was seen, that their readers might believe.",
+          "passages": [
+            "Jhn.20.30-31",
+            "Luk.1.1-4",
+            "1Jn.1.1-3"
+          ]
+        },
+        {
+          "claim": "Paul staked the faith on a fact that could be shown false: if Christ is not raised, faith is vain.",
+          "passages": [
+            "1Co.15.14-19"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Faith is believing without evidence; Jesus blessed those who have not seen.",
+          "answer": "Those who have not seen believe on the word of those who did, as we believe most of history; John adds at once that these things are written that ye might believe.",
+          "passages": [
+            "Jhn.20.29-31",
+            "1Jn.1.1-3"
+          ]
+        },
+        {
+          "objection": "If God existed he would make himself plain.",
+          "answer": "He has spoken by the prophets and by his Son, and raised him before chosen witnesses. Signs did not compel those who would not believe: \"neither will they be persuaded, though one rose from the dead.\" He is not far from any who seek him.",
+          "passages": [
+            "Heb.1.1-2",
+            "Act.10.40-41",
+            "Luk.16.31",
+            "Act.17.27",
+            "Jer.29.13"
+          ]
+        },
+        {
+          "objection": "Belief is a matter of upbringing: born elsewhere, you would believe otherwise.",
+          "answer": "Where a belief came from does not settle whether it is true, and the argument cuts against unbelief as much as belief. The Bereans were commended for searching the Scriptures, not for taking what they were told.",
+          "passages": [
+            "Act.17.11",
+            "1Th.5.21"
+          ]
+        }
+      ],
+      "related": [
+        "miracles",
+        "empty-tomb",
+        "early-testimony",
+        "creator"
+      ],
+      "topics": [
+        "faith-reason"
+      ]
+    },
+    {
+      "id": "miracles",
+      "subject": "faith",
+      "kind": "evidence",
+      "title": "Miracles are not incredible if there is a God",
+      "summary": "A miracle is not an effect without a cause, but an act of the God who made the world and set its ordinances. The Bible's miracles are few, gathered at chosen times, and given as signs with a purpose. They were done openly, and the enemies of Jesus and the apostles granted the works while disputing their source. The witnesses expected none and doubted until they saw. Whether God raised Jesus is a question of evidence, not of what usually happens: \"Why should it be thought a thing incredible with you, that God should raise the dead?\"",
+      "passages": [
+        "Act.26.8",
+        "Jer.32.17",
+        "Act.2.22",
+        "Act.4.16"
+      ],
+      "points": [
+        {
+          "claim": "The God who made the world and set its ordinances can act in it; nothing is too hard for him.",
+          "passages": [
+            "Jer.33.25",
+            "Jer.32.17",
+            "Gen.18.14"
+          ],
+          "sources": [
+            {
+              "work": "paley-evidences",
+              "loc": "Preparatory Considerations",
+              "quote": "In a word, once believe that there is a God, and miracles are not incredible."
+            }
+          ]
+        },
+        {
+          "claim": "The miracles were signs with a purpose, done openly, few and at chosen times.",
+          "passages": [
+            "Jhn.20.30-31",
+            "Act.2.22",
+            "Heb.2.3-4"
+          ]
+        },
+        {
+          "claim": "Enemies granted the works, and disputed only their source.",
+          "passages": [
+            "Act.4.16",
+            "Jhn.11.47",
+            "Mat.12.24"
+          ]
+        },
+        {
+          "claim": "The witnesses expected no miracle; they doubted until they saw.",
+          "passages": [
+            "Luk.24.11",
+            "Luk.24.37-43",
+            "Jhn.20.25-28"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Dead men do not rise.",
+          "answer": "The disciples knew that as well as anyone, and called the women's report idle tales. The claim is not that nature raises the dead, but that God raised Jesus; whether he did is a question of evidence.",
+          "passages": [
+            "Luk.24.11",
+            "Act.26.8"
+          ]
+        },
+        {
+          "objection": "Miracles break the laws of nature.",
+          "answer": "The laws of nature describe what happens when nothing else acts; a hand that catches a falling stone breaks no law. The God who set the ordinances of heaven and earth is not bound by them.",
+          "passages": [
+            "Jer.33.25",
+            "Psa.148.5-6"
+          ]
+        },
+        {
+          "objection": "Every religion claims miracles.",
+          "answer": "Claims are tested, not counted: Elijah put the gods to a public test, and a prophet whose word failed was not to be feared. Scripture itself warns of false signs. The resurrection rests on named witnesses, a known tomb, and a movement begun in the city where it happened.",
+          "passages": [
+            "1Ki.18.21-39",
+            "Deu.18.21-22",
+            "Mat.24.24",
+            "1Co.15.3-8"
+          ]
+        }
+      ],
+      "related": [
+        "faith-and-evidence",
+        "empty-tomb",
+        "appearances",
+        "creator"
+      ],
+      "topics": [
+        "miracles",
+        "faith-reason",
+        "resurrection-evidence"
+      ]
+    },
+    {
+      "id": "moral-law",
+      "subject": "morality",
+      "kind": "evidence",
+      "title": "Right and wrong are real, and point to a Lawgiver",
+      "summary": "Men everywhere know that some things are truly wrong, not merely disliked: Paul says the work of the law is written in their hearts, their conscience bearing witness. Man is made in the image of God, so his life has a worth no one else gave and no one may take. If there is no Lawgiver, good and evil are only preference and custom, and a people that called evil good would be different, not wrong. The prophets condemn exactly that, and God requires of man to do justly, to love mercy, and to walk humbly with him.",
+      "passages": [
+        "Rom.2.14-15",
+        "Gen.1.27",
+        "Mic.6.8",
+        "Isa.5.20"
+      ],
+      "points": [
+        {
+          "claim": "Men everywhere know right and wrong: the work of the law is written in their hearts.",
+          "passages": [
+            "Rom.2.14-15"
+          ]
+        },
+        {
+          "claim": "Man is made in the image of God, and so has a worth no one else gave him.",
+          "passages": [
+            "Gen.1.27",
+            "Gen.9.6",
+            "Jas.3.9"
+          ]
+        },
+        {
+          "claim": "Without a Lawgiver, every man does what is right in his own eyes; the prophets condemn calling evil good.",
+          "passages": [
+            "Jdg.21.25",
+            "Isa.5.20"
+          ]
+        },
+        {
+          "claim": "God requires justice, mercy and humility, and sums the law in love of God and neighbour.",
+          "passages": [
+            "Mic.6.8",
+            "Mat.22.37-40"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Atheists can be good without God.",
+          "answer": "They can, and Paul says why: the law is written in their hearts. The question is not whether a man can do good without believing in God, but why good binds him at all.",
+          "passages": [
+            "Rom.2.14-15"
+          ]
+        },
+        {
+          "objection": "Morality evolved, or is what a society agrees.",
+          "answer": "Then a society that agreed to cruelty would not be wrong, only different. Yet we judge whole nations, and honour those who stood against their own; to do so is to appeal to a standard above every people.",
+          "passages": [
+            "Isa.5.20",
+            "Act.5.29"
+          ]
+        },
+        {
+          "objection": "Religion has done great evil.",
+          "answer": "Much has been done in Christ's name that he forbade. He told Peter to put up his sword, said his kingdom was not of this world, and foretold that wolves would arise among his followers. Judge the teaching by its teacher, not by those who departed from it.",
+          "passages": [
+            "Mat.26.52",
+            "Jhn.18.36",
+            "Act.20.29-30",
+            "Mat.7.21-23"
+          ]
+        }
+      ],
+      "related": [
+        "creator",
+        "suffering",
+        "canaanites",
+        "sin-and-death"
+      ],
+      "topics": [
+        "morality"
+      ]
+    },
+    {
+      "id": "canaanites",
+      "subject": "morality",
+      "kind": "passage",
+      "title": "Deuteronomy 20:16-18, the destruction of the Canaanites, read as genocide",
+      "summary": "The command was a judgement on nations whose iniquity God had borne for four hundred years, who burned their sons and daughters to their gods. It was not for race or for Israel's righteousness: the same land would spue out Israel for the same sins, and did. It was for that land at that time, not a standing command, and those who turned, as Rahab and the Gibeonites, were spared. The Judge of all the earth does right, and has no pleasure in the death of the wicked.",
+      "passages": [
+        "Deu.20.16-18",
+        "Jos.6.21"
+      ],
+      "points": [
+        {
+          "claim": "God waited four hundred years, until the Amorites' iniquity was full.",
+          "passages": [
+            "Gen.15.13-16"
+          ]
+        },
+        {
+          "claim": "Their sins are named, among them the burning of their children; it was for their wickedness, not Israel's righteousness.",
+          "passages": [
+            "Lev.18.21-25",
+            "Deu.12.31",
+            "Deu.9.4-5"
+          ]
+        },
+        {
+          "claim": "It was not for race: Israel was warned the land would spue them out for the same sins, and it did.",
+          "passages": [
+            "Lev.18.26-28",
+            "2Ki.17.6-18"
+          ]
+        },
+        {
+          "claim": "Those who turned were spared: Rahab and her house, and the Gibeonites.",
+          "passages": [
+            "Jos.2.9-13",
+            "Jos.6.25",
+            "Jos.9.24-27"
+          ]
+        },
+        {
+          "claim": "The Judge of all the earth does right, and has no pleasure in the death of the wicked.",
+          "passages": [
+            "Gen.18.25",
+            "Ezk.18.23",
+            "Ezk.33.11"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Even the children were killed.",
+          "answer": "They were, as in the flood and in Sodom, and as every child of Adam dies under God's hand. He who gives life has the right to take it; and Abraham, pleading for Sodom, found that the Judge would spare the whole city for ten righteous.",
+          "passages": [
+            "Deu.32.39",
+            "Job.1.21",
+            "Gen.18.23-32"
+          ]
+        },
+        {
+          "objection": "Every conquest has been justified by a god's command.",
+          "answer": "This was given once, for one land, its end foretold four centuries before by a prophet whose word was proved. No one now has such a command, and Christ forbade his disciples the sword.",
+          "passages": [
+            "Gen.15.13-16",
+            "Mat.26.52",
+            "Jhn.18.36"
+          ]
+        }
+      ],
+      "related": [
+        "moral-law",
+        "suffering",
+        "law-fulfilled"
+      ],
+      "topics": [
+        "god-good"
+      ]
+    },
+    {
+      "id": "slavery",
+      "subject": "morality",
+      "kind": "passage",
+      "title": "Exodus 21:2-11, the law of servants, read as the Bible approving slavery",
+      "summary": "The law did not invent bondage but restrained it. Stealing and selling a man was death; a Hebrew who sold himself for debt went free in the seventh year, with provision, and was not to be ruled with rigour; a servant maimed by his master went free; and a runaway was not to be handed back. Some of its allowances, as with divorce, were given for the hardness of men's hearts. The gospel made master and servant brothers under one Master, bade the servant take his freedom if he could, and condemned menstealers.",
+      "passages": [
+        "Exo.21.2-11",
+        "Lev.25.44-46",
+        "Eph.6.5-9"
+      ],
+      "points": [
+        {
+          "claim": "Stealing and selling a man was punished with death.",
+          "passages": [
+            "Exo.21.16",
+            "Deu.24.7",
+            "1Ti.1.10"
+          ]
+        },
+        {
+          "claim": "A Hebrew who sold himself for debt went free in the seventh year, with provision, and was not to be ruled with rigour.",
+          "passages": [
+            "Exo.21.2",
+            "Deu.15.12-15",
+            "Lev.25.39-43"
+          ]
+        },
+        {
+          "claim": "A servant maimed by his master went free, and his death was avenged.",
+          "passages": [
+            "Exo.21.20",
+            "Exo.21.26-27"
+          ]
+        },
+        {
+          "claim": "A runaway servant was not to be handed back to his master.",
+          "passages": [
+            "Deu.23.15-16"
+          ]
+        },
+        {
+          "claim": "In Christ master and servant are brothers under one Master, and the servant may take his freedom.",
+          "passages": [
+            "Gal.3.28",
+            "Eph.6.9",
+            "1Co.7.21",
+            "Phm.1.15-16"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Leviticus 25:44-46 lets Israel keep servants of other nations for ever.",
+          "answer": "It did, and that is not to be explained away. The law regulated a hard world it did not yet end, as Jesus said of divorce: because of the hardness of your hearts. Yet those servants too were freed if maimed, avenged if killed, and not handed back if they fled.",
+          "passages": [
+            "Mat.19.8",
+            "Exo.21.20",
+            "Exo.21.26-27",
+            "Deu.23.15-16"
+          ]
+        },
+        {
+          "objection": "Paul told servants to obey their masters, and sent Onesimus back.",
+          "answer": "He told masters to forbear threatening, knowing their own Master is in heaven, and servants to take freedom if they could. He sent Onesimus back not as a servant but a brother beloved, to be received as Paul himself.",
+          "passages": [
+            "Eph.6.9",
+            "1Co.7.21",
+            "Phm.1.15-17"
+          ]
+        }
+      ],
+      "related": [
+        "moral-law",
+        "law-fulfilled"
+      ],
+      "topics": [
+        "god-good"
       ]
     },
     {
@@ -916,7 +1425,8 @@
       ],
       "topics": [
         "resurrection-evidence",
-        "resurrection-of-dead"
+        "resurrection-of-dead",
+        "miracles"
       ]
     },
     {
@@ -1124,7 +1634,8 @@
       ],
       "topics": [
         "the-cross",
-        "resurrection-evidence"
+        "resurrection-evidence",
+        "historical-jesus"
       ]
     },
     {
@@ -1193,10 +1704,173 @@
       "related": [
         "appearances",
         "crucifixion",
-        "fulfilled-prophecy"
+        "fulfilled-prophecy",
+        "jesus-existed",
+        "gospel-agreement"
       ],
       "topics": [
         "resurrection-evidence",
+        "bible-reliable",
+        "historical-jesus"
+      ]
+    },
+    {
+      "id": "jesus-existed",
+      "subject": "records",
+      "kind": "evidence",
+      "title": "Jesus lived, and was put to death under Pontius Pilate",
+      "summary": "The Gospels set Jesus among named rulers, places and years. Paul, writing within twenty-five years, had met his brother James and his disciple Peter. Tacitus records that Christus suffered under Pontius Pilate, and Josephus names James \"the brother of Jesus, who was called Christ\". His enemies called him a deceiver and said his body was stolen; none said he never lived. That he lived and was crucified is granted by historians of every belief.",
+      "passages": [
+        "Luk.3.1-2",
+        "Gal.1.18-19"
+      ],
+      "points": [
+        {
+          "claim": "The Gospels set him among named rulers, places and years.",
+          "passages": [
+            "Luk.3.1-2",
+            "Luk.2.1-2",
+            "Mat.27.2"
+          ]
+        },
+        {
+          "claim": "Paul met Peter and James the Lord's brother three years after his conversion, and wrote within twenty-five years of the crucifixion.",
+          "passages": [
+            "Gal.1.18-19",
+            "1Co.9.5",
+            "1Co.15.3-8"
+          ]
+        },
+        {
+          "claim": "Tacitus records that Christus suffered under Pontius Pilate; Josephus names James, the brother of Jesus who was called Christ.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "tacitus-annals",
+              "loc": "15.44"
+            },
+            {
+              "work": "josephus-antiquities",
+              "loc": "20.200"
+            }
+          ]
+        },
+        {
+          "claim": "His enemies called him a deceiver and said his body was stolen; none said he never lived.",
+          "passages": [
+            "Mat.27.63",
+            "Mat.12.24",
+            "Mat.28.13"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Jesus is a myth, copied from pagan gods who died and rose.",
+          "answer": "The first believers were Jews who had turned from idols and loathed the gods of the nations. They preached a man crucified under a known governor and raised on the third day before named witnesses, not a god of the seasons dying every year. The resurrection they hoped for was Israel's, of the dead at the last day; his came first.",
+          "passages": [
+            "1Th.1.9",
+            "Dan.12.2",
+            "Jhn.11.24",
+            "1Co.15.20"
+          ]
+        },
+        {
+          "objection": "No record from his own lifetime names him.",
+          "answer": "Few records of anyone from first-century Galilee survive, and a carpenter's son put to death as a criminal would not be written in Rome's annals while he lived. Paul's letters are within a generation, and Tacitus and Josephus within a lifetime.",
+          "passages": [
+            "Mrk.6.3",
+            "Gal.1.18-19"
+          ]
+        }
+      ],
+      "related": [
+        "crucifixion",
+        "early-testimony",
+        "transformed-witnesses"
+      ],
+      "topics": [
+        "historical-jesus",
+        "bible-reliable"
+      ]
+    },
+    {
+      "id": "gospel-agreement",
+      "subject": "records",
+      "kind": "evidence",
+      "title": "The Gospels differ as independent witnesses do, and agree in substance",
+      "summary": "Four accounts agree in substance and differ in detail, as honest witnesses do; agreement in every word would point to collusion. One account often explains another without meaning to: John says Jesus asked Philip where to buy bread, and only Luke says they were near Bethsaida, and only John that Philip came from there. Most differences are of selection: one names the angel who spoke, another the two who were there. They kept what told against themselves: the disciples' unbelief and Peter's denial.",
+      "passages": [
+        "Luk.1.1-4",
+        "Jhn.6.5",
+        "Luk.9.10"
+      ],
+      "points": [
+        {
+          "claim": "The accounts agree in substance and differ in detail, as independent witnesses do.",
+          "passages": [
+            "Luk.1.1-4"
+          ],
+          "sources": [
+            {
+              "work": "greenleaf-testimony",
+              "loc": "§ 34",
+              "quote": "There is enough of discrepancy to show that there could have been no previous concert among them; and at the same time such substantial agreement as to show that they all were independent narrators of the same great transaction, as the events actually occurred."
+            }
+          ]
+        },
+        {
+          "claim": "One account explains another without meaning to: Philip is asked about bread near Bethsaida, his own city; the green grass of Mark is the spring of John's Passover.",
+          "passages": [
+            "Jhn.6.4-5",
+            "Luk.9.10",
+            "Jhn.12.21",
+            "Mrk.6.39"
+          ]
+        },
+        {
+          "claim": "Differences are of selection, not contradiction: one names the angel who spoke, another the two who were there.",
+          "passages": [
+            "Mat.28.5",
+            "Luk.24.4",
+            "Jhn.20.12"
+          ]
+        },
+        {
+          "claim": "They kept what told against them: the disciples' unbelief and Peter's denial.",
+          "passages": [
+            "Luk.24.11",
+            "Mrk.14.66-72",
+            "Mat.28.17"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The resurrection accounts contradict each other on the women, the angels and the hour.",
+          "answer": "To name one woman or one angel is not to deny the others: John names only Mary Magdalene, yet she says \"we know not where they have laid him.\" They set out while it was yet dark and came at the rising of the sun.",
+          "passages": [
+            "Jhn.20.1-2",
+            "Mrk.16.2",
+            "Luk.24.10"
+          ]
+        },
+        {
+          "objection": "Matthew says Judas hanged himself; Acts says he fell headlong and burst asunder.",
+          "answer": "Both can be true of one death: he hanged himself, and his body fell. The priests bought the field with his money, so Acts reckons it his.",
+          "passages": [
+            "Mat.27.5-7",
+            "Act.1.18"
+          ]
+        }
+      ],
+      "related": [
+        "early-testimony",
+        "empty-tomb",
+        "bible-preserved"
+      ],
+      "topics": [
+        "contradictions",
         "bible-reliable"
       ]
     },
@@ -2777,7 +3451,8 @@
         "soul-mortal"
       ],
       "topics": [
-        "hell"
+        "hell",
+        "god-good"
       ]
     },
     {
