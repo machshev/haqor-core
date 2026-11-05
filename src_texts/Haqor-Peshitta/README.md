@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-4, 2 John, 3 John, and Jude
-(1,273 of 7,958 Peshitta verses; 6,685 remain). Mark 5 is next.
+Current coverage: Matthew 1-28, Mark 1-5, 2 John, 3 John, and Jude
+(1,316 of 7,958 Peshitta verses; 6,642 remain). Mark 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -194,3 +194,14 @@ Source checks for Mark 4:
   the object suffix anticipates the fruit noun; no extra recipient is added.
 - In 4:30 the question asks to what the kingdom should be likened; the
   kingdom remains the object of comparison.
+
+Source checks for Mark 5:
+
+- In 5:9 the name suffix is plural: "our name". In 5:12 the speakers are
+  explicitly identified as those demons, not left as an unnamed pronoun.
+- In 5:30 the knowledge clause says that power had gone out from Jesus;
+  the clause-introducing prefix is linked with the power noun.
+- In 5:41 the command is simply "Girl, arise"; no explanatory wording from
+  another textual tradition is supplied.
+- In 5:42 the first past auxiliary belongs to the walking predicate. The
+  following existential clause explains that she was twelve years old.
