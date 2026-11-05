@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-9, 2 John, 3 John, and Jude
-(1,497 of 7,958 Peshitta verses; 6,461 remain). Mark 10 is next.
+Current coverage: Matthew 1-28, Mark 1-10, 2 John, 3 John, and Jude
+(1,549 of 7,958 Peshitta verses; 6,409 remain). Mark 11 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -266,3 +266,20 @@ Source checks for Mark 9:
 - In 9:41 the name/belonging construction is rendered as belonging to
   Messiah. The repeated worm/fire clauses in 9:44, 9:46, and 9:48 remain,
   as do both the fire and sacrifice clauses in 9:49.
+
+Source checks for Mark 10:
+
+- In 10:13 Jesus is the singular subject of touching the children. In
+  10:14 the dative belongs to his being displeased, rather than identifying
+  someone he was offended at; the kingdom belongs to those like the children.
+- In 10:24 "my children" and "their possessions" retain their distinct
+  possessors. In 10:27 both occurrences of "with God" and the explanatory
+  "for" are retained, with the positive predicate supplied in the ellipsis.
+- The lists in 10:29 and 10:30 remain distinct: the first includes a wife,
+  father, and fields; the second includes mothers and fields, without a
+  repeated wife or father. The first-person "my gospel" is retained.
+- In 10:38 the repeated first-person pronoun completes the drinking
+  predicate; it is not a possessive attached to the immersion noun.
+- In 10:46 the source names Timaeus and then son of Timaeus. In 10:52 the
+  imperative is "See", and the ending describes going along the way;
+  no following-after-him phrase is supplied from the reference translation.
