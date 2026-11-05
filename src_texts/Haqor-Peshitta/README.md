@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-12, 2 John, 3 John, and Jude
-(448 of 7,958 Peshitta verses; 7,510 remain). Matthew 13 is next.
+Current coverage: Matthew 1-16, 2 John, 3 John, and Jude
+(609 of 7,958 Peshitta verses; 7,349 remain). Matthew 17 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -57,3 +57,14 @@ Source checks for Matthew 7-12:
   those words are not added or linked to unrelated source positions.
 - Matthew 11:14 explicitly names Elijah, although the local Murdock
   reference omits his name.
+
+Source checks for Matthew 13-16:
+
+- The final clause of Murdock 13:12 (taking away from the one who does not
+  have) belongs to Peshitta 13:13 and is linked there.
+- Matthew 13:21 distinguishes the word (feminine: it has no root in him)
+  from its hearer (masculine: he is temporary). In 13:22 the word becomes
+  fruitless; the final verb is feminine.
+- Matthew 13:37 says "Son of man", rather than the local Murdock
+  reference file's "Son of God".
+- Matthew 15:39 names Magdu; the reference renders the place as Magdala.
