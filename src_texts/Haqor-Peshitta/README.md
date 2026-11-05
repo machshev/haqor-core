@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-14, 2 John, 3 John, and Jude
-(3,608 of 7,958 Peshitta verses; 4,350 remain). John 15 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-15, 2 John, 3 John, and Jude
+(3,635 of 7,958 Peshitta verses; 4,323 remain). John 16 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1380,3 +1380,12 @@ Source checks for John 14:
 - John 14:19-24 retains the world's not seeing, the disciples' seeing and living, mutual indwelling, commandments and love, the self-revelation promise, Judas explicitly distinguished from Iscariot, and the Father's love, coming and dwelling. John 14:19 uses the source's simple “not,” without adding “no longer.” The speaking and love/coming predicates in John 14:22-23 remain with their own source words; the singular word heard in John 14:24 belongs to the Father who sent the speaker.
 - John 14:25-29 preserves the present being-with-the-hearers clause, teaching and remembering, peace and its distinct giving, the heart's not being troubled or afraid, the repeated going/coming report, love and rejoicing, the Father's greatness, and the foretelling/belief sequence. John 14:29 keeps both “before it happens” and “when it happens” in their respective linked clauses.
 - John 14:30-31 retains limited further speech, the coming ruler, “he has nothing in me,” the world's knowing the speaker's love for his Father, the Father's command and the speaker's doing, and the rise/depart commands. The ruler's possessive relation is retained rather than reduced to a statement that nothing is in the speaker. Quote boundaries keep Judas's question separate from Jesus' preceding and following discourses.
+
+Source checks for John 15:
+
+- John 15:1-6 preserves the true vine and cultivator, unfruitful and fruitful branches, taking away and cleansing, cleanness through the word, mutual remaining, bearing fruit, and inability without the speaker. Both “unless” clauses in John 15:4 remain explicit. John 15:6 begins with אלא, rendered “Unless”; a separate לא is not needed for this attested Syriac conditional sense. The gathering and throwing predicates are both retained, followed by the fire and burning clause.
+- John 15:7-12 retains remaining words, the request and its result, the Father's glory and much fruit, discipleship, the Father's and speaker's love, commandments and remaining in love, the speaker's and hearers' joy, and the reciprocal-love command. Repeated pronouns and possessives are rendered naturally; “my Father's commandments” does not become an extra owner or “his commandments of my Father.”
+- John 15:13-18 keeps life laid down for friends, friendship and obedience, the servant/master distinction, disclosure of everything heard from the Father, the speaker's choice and appointment, going and bearing enduring fruit, asking the Father in the speaker's name, the love command, and the world's prior hatred of the speaker. The full chain of purpose clauses in John 15:16 remains explicit.
+- John 15:19-24 preserves belonging to or being chosen from the world, hatred, the remembered servant saying, persecution and keeping words, the name and sender, the coming/speaking and unique-works counterfactuals, sin and excuse, and hatred of the speaker and his Father. John 15:22 retains singular “their sin”; John 15:24 keeps the works being done “in their sight.”
+- John 15:25 uses “without cause” for מגנ. [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=mgn+X) records the Syriac “for no reason” sense and a Peshitta Psalm 69:5 example, distinct from the word's gratis/free-of-charge sense. The quoted hatred remains part of the law-word fulfillment clause.
+- John 15:26 retains “Advocate,” consistent with John 14, and both actual “my Father” phrases. נפק is vocalised as a present participle, supporting “proceeds.” John 15:27 keeps the hearers' predicative “you also are witnesses” and their being with the speaker from the beginning. The chapter remains one continuous speech, with nested quotations in John 15:20 and 15:25.
