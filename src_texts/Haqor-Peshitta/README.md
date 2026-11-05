@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-5, 2 John, 3 John, and Jude
-(4,010 of 7,958 Peshitta verses; 3,948 remain). Acts 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-6, 2 John, 3 John, and Jude
+(4,025 of 7,958 Peshitta verses; 3,933 remain). Acts 7 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1504,3 +1504,11 @@ Source checks for Acts 5:
 - Acts 5:29-34 retains Simon with the apostles, obedience to God more than human beings, the God of our fathers, Jesus raised and killed by hanging on a tree, God's establishing him as leader and giver of life and also exalting him, repentance and forgiveness for Israel, the witnesses and Holy Spirit, anger and considering killing, and Gamaliel's honored standing and order to remove the apostles briefly. Acts 5:32 says God “gave” the Spirit to those who “believe in him,” without substituting a different tense or the familiar “obey him” reading.
 - Acts 5:35-39 keeps caution, consideration, Theudas' claim, about four hundred men, his killing and the followers' scattering and coming to nothing, Judas the Galilean, registration for the head tax, leading many astray, his death and all his followers' scattering. Both “this plan” and “this work,” their dissolving and passing away, human versus divine origin, inability to overthrow and the danger of standing against God remain explicit. No external dates or chronological harmonization are supplied.
 - Acts 5:40-42 retains agreeing with Gamaliel, calling the apostles, scourging, the speaking prohibition in Jesus' name, release, rejoicing in worthiness to be dishonored for the name and continuing daily teaching in the temple and at home. The assent clause belongs to source 5:40, despite the supplied reference's placing it at the end of 5:39. The final preaching clause explicitly includes “our Lord Jesus Messiah.”
+
+Source checks for Acts 6:
+
+- Acts 6:1-4 retains the increasing disciples, Hellenist disciples' complaint against the Hebrews, neglected widows and daily service, the twelve apostles, the whole assembly, the word of God and serving tables. The opening resumptive pronoun belongs to “those days,” without adding a separate “among them” group. The speech preserves searching and choosing seven, “my brothers,” attestation, fullness of the Spirit of the Lord and wisdom, appointment over the matter, and continued prayer and ministry of the word.
+- Acts 6:5-6 keeps Stephen, Philip, Prochorus, Nicanor, Timon, Parmenas and Nicolas, the latter described as an Antiochian proselyte. Stephen is full of faith and the Holy Spirit. The selected men “stood” before the apostles: the source's intransitive verb is retained rather than replaced by a different actor presenting them. Prayer and laying a hand on them remain distinct predicates.
+- Acts 6:7-10 distinguishes God's word growing from the number of disciples increasing greatly in Jerusalem; each past auxiliary stays with its own predicate. The final group in 6:7 is many people “from among the Jews,” without substituting “priests.” Acts 6:8 has “grace and power,” and the synagogue/group list retains the Freedmen, Cyrenians, Alexandrians, Cilicia and Asia. In 6:10 the Spirit “was speaking through him,” preserving the source speaker rather than reversing the roles into Stephen speaking by the Spirit.
+- Acts 6:11-14 retains sending men and instructing them to make their allegation, rather than supplying a different inducement verb; stirring up the people, elders and scribes; coming, rising against, seizing and bringing Stephen before the council; and false witnesses speaking against the law and this holy place. Their second statement continues into 6:14, including hearing him say that this Jesus the Nazarene will destroy the place and change the customs Moses delivered “to you,” not “to us.” These remain the witnesses' quoted allegations.
+- Acts 6:15 preserves all those sitting in the council looking at him and seeing his face “like the face of an angel.” The simile is retained without adding a claim that he became an angel.
