@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-15, 2 John, 3 John, and Jude
-(1,782 of 7,958 Peshitta verses; 6,176 remain). Mark 16 is next.
+Current coverage: Matthew 1-28, Mark 1-16, 2 John, 3 John, and Jude
+(1,802 of 7,958 Peshitta verses; 6,156 remain). Luke 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -357,3 +357,18 @@ Source checks for Mark 15:
   taking courage and going in to Pilate remain separate actions.
 - In 15:46 Joseph buys a linen sheet, without an added quality adjective;
   the lowering, wrapping, placing, and rolling predicates remain distinct.
+
+Source checks for Mark 16:
+
+- In 16:1 Mary the mother of James and Salome remain separate members
+  of the three-woman list. In 16:10 the first past auxiliary belongs to
+  those who had been with Jesus, and the second to their mourning.
+- In 16:11 the feminine plural saying, recipient, and object forms are
+  retained as the reporting women; no individual women are identified
+  beyond what the source states. In 16:13 the additive negative is
+  rendered "did not believe them either".
+- In 16:15 "my tidings" is explicit. In 16:16 the living and condemnation
+  predicates retain the source's present formulation.
+- In 16:19 and 16:20 "our Lord" retains its first-person possessive.
+  In 16:20 the Lord was helping and confirming their words; the signs
+  were being performed by the plural actors.
