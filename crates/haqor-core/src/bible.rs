@@ -1271,6 +1271,8 @@ pub struct ApologeticReligion {
     pub title: String,
     /// Who they are, and where to begin.
     pub note: String,
+    /// What it holds; empty for a database built without them.
+    pub beliefs: Vec<String>,
 }
 
 /// Whom a conversation is with: a denomination, or another faith or none.
@@ -1282,6 +1284,9 @@ pub struct ApologeticAudience {
     pub title: String,
     /// What they hold, and where to begin.
     pub note: String,
+    /// What they hold, those that set them apart first; empty for a
+    /// database built without them.
+    pub beliefs: Vec<String>,
     /// An [`ApologeticReligion`]'s key; empty for a database built without
     /// them.
     pub religion: String,
@@ -5397,16 +5402,30 @@ impl Bible {
         if !self.has_table("apologetic_religion")? {
             return Ok(Vec::new());
         }
+        let beliefs = self.beliefs_column("apologetic_religion")?;
         self.db
-            .prepare_cached("SELECT key, title, note FROM data.apologetic_religion ORDER BY ord")?
+            .prepare_cached(&format!(
+                "SELECT key, title, note, {beliefs} FROM data.apologetic_religion ORDER BY ord"
+            ))?
             .query_map([], |row| {
                 Ok(ApologeticReligion {
                     key: row.get(0)?,
                     title: row.get(1)?,
                     note: row.get(2)?,
+                    beliefs: serde_json::from_str(&row.get::<_, String>(3)?).unwrap_or_default(),
                 })
             })?
             .collect()
+    }
+
+    /// The SQL for an apologetics `table`'s key beliefs: its `beliefs`
+    /// column, or an empty list on a database that predates it.
+    fn beliefs_column(&self, table: &str) -> rusqlite::Result<&'static str> {
+        Ok(if self.has_column(table, "beliefs")? {
+            "beliefs"
+        } else {
+            "'[]'"
+        })
     }
 
     /// Whom a conversation may be with, in order, each with its religion and
@@ -5423,9 +5442,10 @@ impl Bible {
         } else {
             "''"
         };
+        let beliefs = self.beliefs_column("apologetic_audience")?;
         self.db
             .prepare_cached(&format!(
-                "SELECT key, title, note, agree, differ, {religion} \
+                "SELECT key, title, note, agree, differ, {religion}, {beliefs} \
                  FROM data.apologetic_audience ORDER BY ord"
             ))?
             .query_map([], |row| {
@@ -5436,6 +5456,7 @@ impl Bible {
                     agree: keys(row.get(3)?),
                     differ: keys(row.get(4)?),
                     religion: row.get(5)?,
+                    beliefs: keys(row.get(6)?),
                 })
             })?
             .collect()
@@ -7203,6 +7224,15 @@ impl Bible {
         )
     }
 
+    /// Whether the data database's `table` has `column`.
+    pub(crate) fn has_column(&self, table: &str, column: &str) -> rusqlite::Result<bool> {
+        self.db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM pragma_table_info(?1, 'data') WHERE name = ?2)",
+            [table, column],
+            |row| row.get(0),
+        )
+    }
+
     pub fn chapter_count(&self, book: u8) -> rusqlite::Result<u8> {
         self.db.query_row(
             "SELECT MAX((ref >> 8) & 255) FROM data.verse WHERE ref BETWEEN ?1 AND ?2",
@@ -8239,8 +8269,12 @@ mod tests {
             for r in &religions {
                 assert!(audiences.iter().any(|a| a.religion == r.key), "{}", r.key);
             }
+            for r in &religions {
+                assert!(!r.beliefs.is_empty(), "{}", r.key);
+            }
             for a in &audiences {
                 assert!(!a.differ.is_empty());
+                assert!(!a.beliefs.is_empty(), "{}", a.key);
                 if !religions.is_empty() {
                     assert!(religions.iter().any(|r| r.key == a.religion), "{}", a.key);
                 }

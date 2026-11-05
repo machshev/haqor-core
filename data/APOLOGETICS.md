@@ -51,16 +51,18 @@ heaven at death, the devil. An entry names its topics in `topics`.
 
 `religions` lists the faiths, and none, that audiences belong to, in the
 order a reader is shown them: Christianity, Judaism, Islam, the Bahá'í Faith,
-Hinduism, Sikhism, Buddhism, no religion. Each has an `id`, a `title`
-and a `note` on who they are and where to begin, and at least one
-audience.
+Hinduism, Sikhism, Buddhism, no religion. Each has an `id`, a `title`,
+a `note` on who they are and where to begin, `beliefs`, what the faith
+holds as a whole in a few short statements, and at least one audience.
 
 `audiences` lists whom a conversation may be with: a denomination or
 school of a religion, or none, grouped under its religion in the order
 shown. Each has an `id`, its `religion`, a `title`, a `note` on what they
-hold and where to begin, `agree`, the entries they agree with, and
-`differ`, those where they differ, each in the order to raise them. An
-entry is listed once per audience.
+hold and where to begin, `beliefs`, their key beliefs and practices in
+short statements, those that set them apart first, described fairly and
+not answered (the entries answer them), `agree`, the entries they agree
+with, and `differ`, those where they differ, each in the order to raise
+them. An entry is listed once per audience.
 
 `works` maps each work's id to its `title`, `author`, `year` where known,
 its `licence`, a `url` where it can be read, and the `file` in
@@ -92,8 +94,9 @@ Each entry of `entries` has:
 
 `db gen-apologetics` (or `db gen-runtime`) builds the file into
 `haqor.db`: `apologetic_subject`, `apologetic_topic`,
-`apologetic_religion`, `apologetic_audience` (its religion, and its
-entries' ids as JSON in `agree` and `differ`), `apologetic` (each entry,
+`apologetic_religion` (its beliefs as JSON), `apologetic_audience` (its
+religion, and its beliefs and its entries' ids as JSON in `beliefs`,
+`agree` and `differ`), `apologetic` (each entry,
 its points, objections, related entries and topics as JSON in `detail`)
 and `apologetic_passage`, the passages the reader marks, renumbered onto
 the Hebrew text as `prophecies.json`'s are. After an edit, rebuild with
@@ -108,4 +111,5 @@ A build fails, naming every fault, on a passage that cannot be read or
 is outside the corpus, an entry with no passages, an unknown subject,
 kind, topic, work, licence or related entry, an audience's unknown
 religion, unknown or repeated entry or empty `differ`, a religion with no
-audiences, a repeated id, or a `quote` from a work under copyright.
+audiences, a religion or audience with no beliefs or an empty one, a
+repeated id, or a `quote` from a work under copyright.

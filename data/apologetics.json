@@ -282,42 +282,98 @@
     {
       "id": "christianity",
       "title": "Christianity",
-      "note": "Those who confess Jesus as Lord and hold the Bible as Scripture: the common ground is wide, and the conversation is over what the Bible says."
+      "note": "Those who confess Jesus as Lord and hold the Bible as Scripture: the common ground is wide, and the conversation is over what the Bible says.",
+      "beliefs": [
+        "Jesus of Nazareth is the Christ, the Son of God, who died for sins and rose from the dead.",
+        "The Bible, the Old and New Testaments, is God's word.",
+        "Salvation is through Jesus, by God's grace.",
+        "Believers are baptised, and remember Christ's death with bread and wine.",
+        "Jesus will come again to judge the living and the dead."
+      ]
     },
     {
       "id": "judaism",
       "title": "Judaism",
-      "note": "Those who hold the Law and the Prophets: begin from the Hebrew Scriptures and the promises."
+      "note": "Those who hold the Law and the Prophets: begin from the Hebrew Scriptures and the promises.",
+      "beliefs": [
+        "God is one, the Creator, who chose Israel and made his covenant with Abraham and at Sinai.",
+        "The Torah is God's teaching, with the Prophets and the Writings as Scripture.",
+        "The commandments are kept in daily life: the sabbath, the feasts, the food laws and prayer.",
+        "The land of Israel was promised to Abraham's descendants.",
+        "Most look for a Messiah of David's line and a world set right, though not in Jesus."
+      ]
     },
     {
       "id": "islam",
       "title": "Islam",
-      "note": "Those who honour Jesus as a prophet and the Messiah, but not as the Son of God who died and rose: begin from the one God and the history of the cross."
+      "note": "Those who honour Jesus as a prophet and the Messiah, but not as the Son of God who died and rose: begin from the one God and the history of the cross.",
+      "beliefs": [
+        "God, Allah, is one, without partner or son.",
+        "Muhammad is the last of the prophets, and the Qur'an God's final word, given through him.",
+        "Jesus, Isa, was a prophet and the Messiah, born of a virgin, but not God or God's Son.",
+        "Each person will be judged by God on the last day, to paradise or to hell.",
+        "Faith is lived by submission to God's law, prayer, fasting, almsgiving and pilgrimage."
+      ]
     },
     {
       "id": "bahai",
       "title": "Bahá'í Faith",
-      "note": "Those who hold Bahá'u'llah the latest of God's messengers, after Moses, Jesus and Muhammad: begin from the Scripture they honour, and its warning against later prophets."
+      "note": "Those who hold Bahá'u'llah the latest of God's messengers, after Moses, Jesus and Muhammad: begin from the Scripture they honour, and its warning against later prophets.",
+      "beliefs": [
+        "God is one and unknowable, revealed in turn by messengers, Abraham, Moses, Jesus, Muhammad and others.",
+        "Bahá'u'llah, who declared himself in 1863, is the messenger for this age.",
+        "All the great religions are one faith revealed by stages.",
+        "Humanity is one, and is to be united in a world order of peace and justice.",
+        "The soul is immortal, and grows nearer to God after death."
+      ]
     },
     {
       "id": "hinduism",
       "title": "Hinduism",
-      "note": "Many traditions, most holding rebirth and karma and many forms of the divine: begin from the Creator and the one life."
+      "note": "Many traditions, most holding rebirth and karma and many forms of the divine: begin from the Creator and the one life.",
+      "beliefs": [
+        "Many traditions share the Vedas and later scriptures such as the Upanishads and the Bhagavad Gita.",
+        "The soul, atman, passes through birth after birth, samsara, by the law of karma.",
+        "Liberation, moksha, is release from rebirth.",
+        "The divine is worshipped in many forms, often as one ultimate reality behind them all.",
+        "Life is ordered by dharma, duty and right conduct, with worship at home and in temples."
+      ]
     },
     {
       "id": "sikhism",
       "title": "Sikhism",
-      "note": "One God, the Creator, known by the Name and the Gurus' teaching: begin from the one Creator and the grace of God."
+      "note": "One God, the Creator, known by the Name and the Gurus' teaching: begin from the one Creator and the grace of God.",
+      "beliefs": [
+        "God is one, the Creator, formless, timeless and beyond birth, named Waheguru.",
+        "Guru Nanak and the nine Gurus after him taught the way, and the Guru Granth Sahib is now the living Guru.",
+        "God is known by remembering the Name, honest work and sharing with others.",
+        "The soul passes through rebirth by karma, until freed by God's grace.",
+        "All people are equal, regardless of caste, sex or creed."
+      ]
     },
     {
       "id": "buddhism",
       "title": "Buddhism",
-      "note": "A path to end suffering, without a Creator: begin from suffering, its cause, and the resurrection that ends it."
+      "note": "A path to end suffering, without a Creator: begin from suffering, its cause, and the resurrection that ends it.",
+      "beliefs": [
+        "Siddhartha Gautama, the Buddha, awoke to the truth about suffering and taught the way to end it.",
+        "Life is marked by suffering, impermanence and the absence of an enduring self.",
+        "Beings are reborn by karma until craving is ended.",
+        "Nirvana, the end of craving and rebirth, is the goal.",
+        "There is no Creator God on whom salvation depends."
+      ]
     },
     {
       "id": "none",
       "title": "No religion",
-      "note": "Those who hold no faith: begin from history and the world itself, not from the Bible's authority."
+      "note": "Those who hold no faith: begin from history and the world itself, not from the Bible's authority.",
+      "beliefs": [
+        "There is no God, or none that can be known.",
+        "The world and life are explained by natural causes, and life by evolution.",
+        "Right and wrong come from reason, conscience, society or evolution, not from God.",
+        "This life is the only one, and death is its end.",
+        "Claims are to be believed on evidence, and religion often lacks it."
+      ]
     }
   ],
   "audiences": [
@@ -326,6 +382,17 @@
       "religion": "christianity",
       "title": "Catholics",
       "note": "Catholic teaching holds the Trinity, an immortal soul judged at death to heaven, purgatory or hell, the baptism of infants, tradition and the Pope's teaching office beside Scripture, and the intercession of Mary and the saints. Begin from the creeds' own words, \"the resurrection of the body\": if the dead are conscious already, why is it needed?",
+      "beliefs": [
+        "The pope, as Peter's successor, leads the whole church, and teaches without error when he defines doctrine on faith and morals.",
+        "Scripture and sacred tradition together are the word of God, interpreted by the church's teaching office.",
+        "In the Mass the bread and wine become Christ's body and blood, and his one sacrifice is offered again on the altar.",
+        "Seven sacraments convey grace: baptism, confirmation, the Eucharist, confession, anointing of the sick, holy orders and marriage.",
+        "Mary was conceived without sin, remained ever virgin, and was taken body and soul into heaven.",
+        "Mary and the saints intercede for the living, and are honoured with images and prayers.",
+        "Souls not yet pure are cleansed in purgatory, and the prayers and Masses of the living help them.",
+        "God is a Trinity; the soul is immortal, judged at death to heaven, purgatory or hell.",
+        "Infants are baptised to wash away original sin, and priests are celibate men ordained by bishops."
+      ],
       "agree": [
         "empty-tomb",
         "appearances",
@@ -369,6 +436,17 @@
       "religion": "christianity",
       "title": "Eastern Orthodox",
       "note": "Orthodox Christians hold the Trinity as the councils defined it, holy tradition beside Scripture, the veneration of icons, the intercession of the Mother of God and the saints, and the baptism of infants by threefold immersion. Begin from the resurrection, which the Orthodox hold at the centre of their faith, and from what the apostles themselves wrote.",
+      "beliefs": [
+        "Holy tradition, the councils, the fathers and the liturgy, is the life of the church, with Scripture at its heart.",
+        "The seven ecumenical councils define the faith; the bishops together, not one pope, guard it.",
+        "Icons of Christ, the Mother of God and the saints are venerated, and the honour passes to whom they show.",
+        "Salvation is theosis: by grace man is made a partaker of the divine nature, becoming by grace what God is by nature.",
+        "The holy mysteries, chief among them the Eucharist, truly give Christ's body and blood.",
+        "The Mother of God and the saints intercede, and the departed are prayed for.",
+        "Infants are baptised by threefold immersion, then chrismated and given communion at once.",
+        "God is a Trinity, the spirit proceeding from the Father alone, and the soul lives on after death.",
+        "The church keeps long fasts, the Julian calendar in many places, and married parish priests."
+      ],
       "agree": [
         "empty-tomb",
         "appearances",
@@ -408,6 +486,16 @@
       "religion": "christianity",
       "title": "Coptic, Ethiopian, Armenian and Syriac Orthodox",
       "note": "The Oriental Orthodox churches hold the Trinity and that Christ has one nature, at once divine and human; holy tradition and the liturgy beside Scripture, the Ethiopian canon wider still, with Enoch and Jubilees; the intercession of Mary and the saints, icons, fasting, and the baptism of infants. Begin from the apostles' writings, which they read in the oldest tongues, and from the resurrection they keep at the heart of their year.",
+      "beliefs": [
+        "Christ has one nature, at once fully divine and fully human, as Cyril taught; they did not accept the council of Chalcedon.",
+        "Holy tradition, the liturgy and the fathers stand with Scripture; the Ethiopian canon also holds Enoch and Jubilees.",
+        "The Eucharist truly gives Christ's body and blood, and the liturgy is kept in ancient tongues such as Coptic, Ge'ez, Armenian and Syriac.",
+        "Mary, the Theotokos, and the saints intercede, and icons are venerated.",
+        "Long and strict fasts fill much of the year; the Ethiopian church also keeps some customs of the law, such as circumcision and food laws.",
+        "Infants are baptised, chrismated and given communion.",
+        "God is a Trinity, the soul lives on after death, and the departed are prayed for.",
+        "Each church is led by its own patriarch or catholicos, such as the Coptic pope of Alexandria."
+      ],
       "agree": [
         "empty-tomb",
         "appearances",
@@ -445,6 +533,16 @@
       "religion": "christianity",
       "title": "Anglicans and Episcopalians",
       "note": "Anglicans hold the creeds and the Trinity, two sacraments, the baptism of infants, bishops, priests and deacons, and a soul that goes to God at death; they range from evangelical to Anglo-Catholic and liberal. Their own Articles say Scripture \"containeth all things necessary to salvation\", and read the Apocrypha \"for example of life\" but not for doctrine: begin there, and test each teaching by the Scripture they confess suffices.",
+      "beliefs": [
+        "The Church of England and the churches in communion with it hold the creeds, the Thirty-nine Articles and the Book of Common Prayer.",
+        "Scripture contains all things necessary to salvation; the Apocrypha is read for example of life, not to establish doctrine.",
+        "Bishops in succession from the apostles ordain priests and deacons; in many provinces women are ordained.",
+        "Two sacraments are ordained by Christ, baptism and the Lord's supper, with infants baptised and confirmed later by a bishop.",
+        "The church is broad: evangelical, Anglo-Catholic and liberal wings hold differing views of the supper, the saints and Scripture.",
+        "Worship follows a set liturgy and a church year, with the reading of Scripture at its centre.",
+        "God is a Trinity, and the soul goes to God at death.",
+        "In England the monarch is the church's supreme governor, and it is established by law."
+      ],
       "agree": [
         "scripture-sufficient",
         "empty-tomb",
@@ -483,6 +581,16 @@
       "religion": "christianity",
       "title": "Lutherans",
       "note": "Lutherans hold Scripture alone and salvation by grace through faith alone, the Trinity, baptism as a means of grace given to infants, and the body and blood of Christ truly present in, with and under the bread and wine. Begin from Luther's own ground, Scripture over councils and popes, and carry it through to the soul, the supper and baptism.",
+      "beliefs": [
+        "Scripture alone is the rule of faith, and the Lutheran confessions, chiefly the Augsburg Confession, faithfully explain it.",
+        "Man is justified by grace alone through faith alone, for Christ's sake, without works of the law.",
+        "Christ's body and blood are truly present in, with and under the bread and wine.",
+        "Baptism is a means of grace that regenerates, and is given to infants.",
+        "Law and gospel are to be rightly divided: the law shows sin, the gospel forgives it.",
+        "Images, vestments and liturgy may be kept where Scripture does not forbid them.",
+        "God is a Trinity, and the soul goes to God at death to await the resurrection.",
+        "There are two kingdoms: God rules the world by the sword of the state and the church by the gospel."
+      ],
       "agree": [
         "scripture-sufficient",
         "traditions-of-men",
@@ -521,6 +629,17 @@
       "religion": "christianity",
       "title": "Reformed and Presbyterians",
       "note": "Reformed churches hold Scripture alone, God's sovereign choice of those he will save and their perseverance to the end, the Trinity, the baptism of believers' infants as a sign of the covenant, and worship without images. Begin from the covenant with Abraham, which they rightly set at the centre, and ask what it promised: the land, for ever, at the resurrection.",
+      "beliefs": [
+        "God is sovereign in salvation: he chose the elect before creation, and Christ died to save them.",
+        "Man is wholly unable to turn to God until God regenerates him; grace cannot finally be resisted.",
+        "The saints persevere: none truly born again can finally fall away.",
+        "Scripture alone rules faith and worship, and worship includes only what Scripture commands, without images.",
+        "God deals with his people by covenant, and the children of believers are baptised as a sign of it.",
+        "Christ is spiritually present in the Lord's supper, fed upon by faith.",
+        "Churches are governed by elders, in Presbyterian churches through sessions, presbyteries and assemblies.",
+        "God is a Trinity, the soul goes to God at death, and the wicked are punished for ever.",
+        "The Westminster Confession and catechisms, or the Three Forms of Unity, state their faith."
+      ],
       "agree": [
         "scripture-sufficient",
         "traditions-of-men",
@@ -564,6 +683,16 @@
       "religion": "christianity",
       "title": "Methodists and Wesleyans",
       "note": "Methodists hold that grace is offered to all and may be refused, that a believer can fall away, and that God calls his people to holiness; they hold the Trinity, the baptism of infants, and going to God at death. Begin from the common ground on free grace and holy living, then from the hope Wesley's hymns still sing, the resurrection at Christ's coming.",
+      "beliefs": [
+        "God's grace goes before every person, enabling all to respond; Christ died for all, not for the elect alone.",
+        "A believer may fall from grace and be lost.",
+        "Christians are called to holiness, and may by grace be made perfect in love in this life.",
+        "Believers may have assurance, the spirit witnessing with their spirit that they are God's children.",
+        "Scripture is primary, read with tradition, reason and experience, the Wesleyan quadrilateral.",
+        "Two sacraments, baptism, given to infants, and the Lord's supper, with Christ really present in a spiritual way.",
+        "Faith is shown in works of mercy and social action, and hymn singing is central to worship.",
+        "God is a Trinity, and the soul goes to God at death."
+      ],
       "agree": [
         "romans-9",
         "hold-fast",
@@ -599,6 +728,16 @@
       "religion": "christianity",
       "title": "Baptists",
       "note": "Baptists hold Scripture alone, the baptism of believers by immersion, the bread and wine as a memorial, the priesthood of all believers and the self-government of each congregation; most hold the Trinity, going to heaven at death and eternal punishment, many that the saved cannot be lost, and many a rapture before the tribulation. Begin from the large common ground on baptism and the supper, then ask why baptism was preached as for the remission of sins.",
+      "beliefs": [
+        "Only believers are baptised, by immersion, as a public confession of faith; infants are not.",
+        "Baptism and the Lord's supper are ordinances, symbols and memorials, not means of grace.",
+        "Each congregation governs itself, and all believers are priests with direct access to God.",
+        "Scripture alone is the rule of faith and practice; most hold it without error.",
+        "Salvation is by grace through faith alone; many hold that one truly saved can never be lost.",
+        "Church and state should be separate, with liberty of conscience for all.",
+        "Many hold that Christ will take his church to heaven in a rapture before the tribulation.",
+        "God is a Trinity, the soul goes to heaven or hell at death, and hell is eternal punishment."
+      ],
       "agree": [
         "scripture-sufficient",
         "traditions-of-men",
@@ -641,6 +780,16 @@
       "religion": "christianity",
       "title": "Mennonites, Amish and Anabaptists",
       "note": "Anabaptists hold the baptism of believers only, the bread and wine as a memorial, a church separate from the world and its powers, and refusal to bear arms or swear oaths; they hold the Trinity and going to God at death. They share more than most with the brethren's own way of life: begin from that common ground, and from the kingdom Christ will set up, for which his people wait as strangers here.",
+      "beliefs": [
+        "Only believers who confess faith are baptised; the first Anabaptists were rebaptised as adults.",
+        "Followers of Christ do not take up arms, take part in war or swear oaths.",
+        "The church is separate from the world and its government; many do not hold public office.",
+        "Discipleship means following Jesus in daily life, especially the Sermon on the Mount.",
+        "The congregation keeps discipline, admonishing members and putting away the unrepentant.",
+        "The Lord's supper is a memorial, often with foot washing.",
+        "The Amish and some Mennonites keep plain dress and limit modern technology to guard the community.",
+        "God is a Trinity, and the soul goes to God at death."
+      ],
       "agree": [
         "acts-16-33",
         "breaking-of-bread",
@@ -676,6 +825,16 @@
       "religion": "christianity",
       "title": "Evangelicals",
       "note": "Evangelicals hold the Bible's authority, the Trinity, salvation by faith, going to heaven at death and eternal punishment in hell. The shared regard for Scripture is the way in: ask what a passage says before what it is taken to mean.",
+      "beliefs": [
+        "Scripture is the inspired, authoritative word of God, and for many without error.",
+        "A person must be born again by personal faith in Christ, often marked by a moment of conversion.",
+        "Christ's death was a substitution, bearing the punishment for sin in the sinner's place.",
+        "Salvation is by grace through faith alone, not by works or sacraments.",
+        "Believers are called to share the gospel and to see others converted.",
+        "Many hold that Christ will take his church to heaven in a rapture, and that the saved cannot be lost.",
+        "God is a Trinity, the soul goes to heaven or hell at death, and hell is eternal.",
+        "Evangelicals are found across denominations and in independent churches."
+      ],
       "agree": [
         "empty-tomb",
         "appearances",
@@ -723,6 +882,16 @@
       "religion": "christianity",
       "title": "Pentecostals and charismatics",
       "note": "Pentecostals hold the Trinity, the holy spirit as a person giving gifts today, and spiritual warfare against the devil and demons. Begin from what the spirit is in Scripture, God's power, and from Jesus' own healings.",
+      "beliefs": [
+        "Believers should seek the baptism in the holy spirit after conversion, with speaking in tongues as its sign.",
+        "The spirit's gifts, tongues, prophecy, healing and miracles, are given to believers today.",
+        "Divine healing is provided in Christ's atonement and is to be sought by prayer.",
+        "Worship is lively and expressive, with raised hands, prophecy and tongues.",
+        "Believers wage spiritual warfare against the devil and demons, casting them out in Jesus' name.",
+        "Some churches teach that God wills his people to prosper in health and wealth.",
+        "Many hold that Christ will take his church to heaven in a rapture before the tribulation.",
+        "God is a Trinity, believers are baptised by immersion, and the soul goes to heaven or hell at death."
+      ],
       "agree": [
         "empty-tomb",
         "return-of-christ",
@@ -756,6 +925,16 @@
       "religion": "christianity",
       "title": "Oneness Pentecostals",
       "note": "Oneness Pentecostals hold that God is one and not three persons, but that Jesus is himself the Father, the Son and the spirit; they baptise by immersion in the name of Jesus for the remission of sins, and hold speaking in tongues the sign of receiving the spirit. Begin from the large common ground, one God and baptism into the name of Jesus, then from the Son praying to his Father.",
+      "beliefs": [
+        "God is one, not three persons: Father, Son and holy spirit are titles or manifestations of the one God.",
+        "Jesus is that one God: the Father dwells in the Son's flesh, and Jesus is the name of Father, Son and spirit.",
+        "Baptism is by immersion in the name of Jesus only, for the remission of sins; baptism in the threefold formula is not valid.",
+        "Speaking in tongues is the sign of receiving the holy spirit, needed for salvation.",
+        "Repentance, baptism in Jesus' name and the gift of the spirit are the new birth of Acts 2:38.",
+        "Holiness standards govern dress and appearance, in many churches with long hair and dresses for women.",
+        "The spirit's gifts and divine healing are for today.",
+        "The soul goes to heaven or hell at death, and many expect a rapture."
+      ],
       "agree": [
         "matthew-28-19",
         "gospel-and-baptism",
@@ -789,6 +968,16 @@
       "religion": "christianity",
       "title": "Churches of Christ and Restorationists",
       "note": "Churches of Christ seek to restore the first-century church without creeds: believers baptised by immersion for the remission of sins, the bread and wine every first day of the week, elders over each congregation, and the spirit gifts ended with the apostles. Most hold the Trinity, the soul going to God at death and eternal punishment. Begin from the plea they share, the Bible alone, and carry it through to the hope of Israel and the nature of man.",
+      "beliefs": [
+        "They seek to restore the church of the New Testament, with no creed but the Bible and no name but Christ's.",
+        "Believers are baptised by immersion for the remission of sins; baptism is part of being saved.",
+        "The Lord's supper is kept every first day of the week as a memorial.",
+        "Many sing without instruments, holding that the New Testament authorises only singing in worship.",
+        "Each congregation is self-governing under its own elders, with no wider body over it.",
+        "The miraculous gifts ended with the apostles; the spirit works through the word.",
+        "A believer can fall away and be lost.",
+        "Most hold the Trinity, the soul going to God at death, and eternal punishment."
+      ],
       "agree": [
         "gospel-and-baptism",
         "acts-16-33",
@@ -827,6 +1016,16 @@
       "religion": "christianity",
       "title": "Seventh-day Adventists",
       "note": "Adventists hold that the dead sleep until the resurrection, that the wicked are destroyed rather than tormented, and that Christ will return in person, and they baptise by immersion. They hold the Trinity, a personal devil, a thousand years in heaven before the earth is made new, and the seventh-day sabbath, and count Ellen White's writings a continuing source of truth. Begin from the common ground on death.",
+      "beliefs": [
+        "The seventh-day sabbath, Friday sunset to Saturday sunset, is binding, and will be the test of loyalty at the end.",
+        "Ellen G. White had the gift of prophecy, and her writings are a continuing source of truth.",
+        "In 1844 Christ began an investigative judgement in the heavenly sanctuary, from Daniel 8:14.",
+        "The body is the spirit's temple: many keep a vegetarian diet and avoid unclean meats, alcohol and tobacco.",
+        "The dead sleep until the resurrection, and the wicked are destroyed, not tormented for ever.",
+        "Christ will return visibly, take the saved to heaven for a thousand years, then make the earth new.",
+        "Believers are baptised by immersion, and the Lord's supper is kept with foot washing.",
+        "God is a Trinity, and the devil is a fallen angel who rebelled in heaven."
+      ],
       "agree": [
         "soul-mortal",
         "resurrection-hope",
@@ -867,7 +1066,8 @@
         "law-fulfilled",
         "scripture-sufficient",
         "later-prophets",
-        "no-date-setting"
+        "no-date-setting",
+        "not-of-this-world"
       ]
     },
     {
@@ -875,6 +1075,16 @@
       "religion": "christianity",
       "title": "Jehovah's Witnesses",
       "note": "Witnesses hold that God is one and not a Trinity, that the soul dies, that hell is the grave, and that the kingdom will be on the earth. They hold that Jesus existed before his birth as Michael the archangel, that the devil is a fallen angel, that Christ's presence began invisibly in 1914, and that 144,000 reign in heaven. Begin from the large common ground.",
+      "beliefs": [
+        "Christ's invisible presence and kingdom rule began in 1914, and the last days have run since then.",
+        "Only 144,000 anointed go to heaven to rule with Christ; a great crowd will live for ever on a paradise earth.",
+        "The Governing Body is the faithful and discreet slave through whom God feeds his people.",
+        "Jesus is God's first creation, Michael the archangel, who became a man and was raised a spirit.",
+        "God's name is Jehovah, and his witnesses preach from door to door.",
+        "Blood transfusions are refused, from the command to abstain from blood.",
+        "Birthdays, Christmas, Easter and national holidays are not kept, and members take no part in war or politics.",
+        "God is one, not a Trinity; the soul dies, and hell is the grave."
+      ],
       "agree": [
         "one-god",
         "soul-mortal",
@@ -922,6 +1132,17 @@
       "religion": "christianity",
       "title": "Latter-day Saints",
       "note": "Latter-day Saints hold that the Father and the Son are separate beings, that all people lived as spirits before birth, and that the Book of Mormon and later revelations are Scripture beside the Bible, which they hold to be true as far as it is translated correctly; they look for Christ's return to reign on the earth and baptise by immersion. Begin from the Bible's account of man made from the dust.",
+      "beliefs": [
+        "Joseph Smith was a prophet who restored the true church, and his successors are living prophets.",
+        "The Book of Mormon, the Doctrine and Covenants and the Pearl of Great Price are Scripture beside the Bible.",
+        "The Father, the Son and the holy spirit are three separate beings; the Father has a glorified body of flesh and bone.",
+        "All people lived as spirit children of heavenly parents before birth.",
+        "The faithful may be exalted to become like God, with families sealed for eternity in temples.",
+        "Temple ordinances, including baptism for the dead, are performed on behalf of the departed.",
+        "Worthy men hold the Aaronic and Melchizedek priesthoods.",
+        "Members keep the Word of Wisdom, abstaining from alcohol, tobacco, coffee and tea, and tithe.",
+        "Most will receive a kingdom of glory; Christ will return to reign on the earth."
+      ],
       "agree": [
         "return-of-christ",
         "kingdom-on-earth",
@@ -955,6 +1176,16 @@
       "religion": "christianity",
       "title": "Christian Scientists",
       "note": "Christian Science, from Mary Baker Eddy's Science and Health, holds that God is Mind and all that is real is spiritual, so that matter, sickness, sin and death are illusions to be healed by right understanding; Jesus is the man who showed the Christ, not God, and his blood did not atone. Begin from the Bible's own account of sin, pain and death as real, and of a Saviour who truly died and rose.",
+      "beliefs": [
+        "Mary Baker Eddy discovered Christian Science; her Science and Health with Key to the Scriptures is read with the Bible.",
+        "God is Mind, Spirit, Life, Truth and Love; only Spirit is real, and matter is an illusion.",
+        "Sickness, sin and death are errors of mortal mind, healed by understanding the truth of being.",
+        "Healing is by prayer, often with a Christian Science practitioner, rather than by medicine.",
+        "Jesus was the human man who showed the Christ, the divine idea; he is not God.",
+        "Christ's death did not pay for sin by blood; it showed Life overcoming death.",
+        "There are no clergy; the Bible and Science and Health are the pastor, read by lay readers.",
+        "God is Father-Mother, and heaven and hell are states of thought, not places."
+      ],
       "agree": [
         "grave-and-hinnom"
       ],
@@ -977,6 +1208,16 @@
       "religion": "christianity",
       "title": "Quakers (Friends)",
       "note": "Friends hold that the inner light of Christ is in every person and guides them directly; they keep no outward baptism or supper, no clergy, and plain, silent worship, and are known for peace and integrity. Many today are liberal or universalist. Begin from the common ground of worship without priests or images, then ask where the light is to be tested: \"To the law and to the testimony.\"",
+      "beliefs": [
+        "There is that of God in everyone: the inner light of Christ guides each person directly.",
+        "Worship is waiting in silence, and anyone may speak as moved by the spirit.",
+        "There are no outward sacraments; baptism and communion are inward and spiritual.",
+        "There are no clergy; meetings decide together by seeking the sense of the meeting.",
+        "The testimonies of peace, simplicity, integrity, equality and community guide life; Friends refuse to fight or swear oaths.",
+        "Revelation continues; Scripture is honoured but tested by the spirit that gave it.",
+        "Some meetings are evangelical with pastors; many in Britain and America are liberal or universalist.",
+        "Friends have long led in social causes, such as the end of slavery and the reform of prisons."
+      ],
       "agree": [
         "priesthood-of-believers",
         "no-idols",
@@ -1002,6 +1243,16 @@
       "religion": "christianity",
       "title": "Liberal and progressive Christians",
       "note": "Liberal Christians hold the Bible a human record of faith, its miracles and authorship open to doubt, evolution settled, and Jesus' teaching on love its heart; many hold that all will be saved, and many have already set aside hell and a personal devil. Begin from that common ground, then from the evidence: the records, fulfilled prophecy, and the empty tomb.",
+      "beliefs": [
+        "The Bible is a human record of faith, inspired as other great writings are, and open to criticism.",
+        "Jesus' teaching on love and justice is the heart of the faith, more than doctrine.",
+        "Miracles, the virgin birth and a bodily resurrection may be read as symbols rather than history.",
+        "Evolution and modern science are accepted, and Genesis read as myth or poetry.",
+        "God's love will in the end save all, or at least many outside the faith.",
+        "Hell and a personal devil are set aside or reinterpreted.",
+        "The church should work for social justice, inclusion and the care of the earth.",
+        "Other religions are paths to God, to be learned from in dialogue."
+      ],
       "agree": [
         "grave-and-hinnom",
         "adversary-not-angel",
@@ -1034,6 +1285,16 @@
       "religion": "christianity",
       "title": "Biblical Unitarians",
       "note": "Biblical Unitarians, among them the Church of God of the Abrahamic Faith, hold that God is one, the Father, that Jesus is his Son who began at his birth, and that the holy spirit is God's power; many hold the soul mortal, the dead asleep and the kingdom on the earth. The common ground is very wide: begin from it, and raise the adversary and the spirit gifts, where some differ.",
+      "beliefs": [
+        "God is one person, the Father, the only true God.",
+        "Jesus is the Son of God, a man, who began at his virgin birth and did not exist before.",
+        "Jesus was raised and exalted to God's right hand, and is Lord and Messiah.",
+        "The holy spirit is God's power and presence, not a third person.",
+        "Many hold that man is mortal, that the dead sleep until the resurrection, and that the wicked perish.",
+        "Many look for the kingdom of God on the earth, promised to Abraham and David.",
+        "Most baptise believers by immersion.",
+        "Views of the devil and the spirit gifts differ among them."
+      ],
       "agree": [
         "one-god",
         "jesus-a-man",
@@ -1062,6 +1323,16 @@
       "religion": "christianity",
       "title": "Unitarian Universalists",
       "note": "Unitarian Universalists grew from churches that held God one and all to be saved, and now hold no creed: members may be Christian, theist, humanist or Buddhist, and seek truth by reason and conscience. Begin from the history they honour, the one God their founders found in Scripture, then from the evidence that Jesus rose.",
+      "beliefs": [
+        "There is no creed: members seek truth by reason, conscience and experience.",
+        "Members may be Christian, theist, humanist, Buddhist, pagan or agnostic.",
+        "Their roots are in Unitarianism, God as one, and Universalism, all people saved.",
+        "Every person has worth and dignity, and the interdependent web of existence is to be respected.",
+        "Wisdom is drawn from many sources, the world's religions, science and humanism among them.",
+        "Congregations govern themselves democratically.",
+        "Social justice, peace and the care of the earth are central callings.",
+        "Jesus is honoured as a great moral teacher, not worshipped as God."
+      ],
       "agree": [
         "one-god",
         "grave-and-hinnom",
@@ -1085,6 +1356,16 @@
       "religion": "christianity",
       "title": "Messianic Jews and Hebrew Roots",
       "note": "Messianic Jews confess Jesus, Yeshua, the Messiah of Israel while keeping the sabbath, the feasts and much of the law; Hebrew Roots believers, many of them Gentiles, seek the same. Most hold the Trinity and going to heaven at death. Begin from the large common ground in the promises to Israel, then from the new covenant that Jeremiah foretold.",
+      "beliefs": [
+        "Jesus, Yeshua, is the promised Messiah of Israel.",
+        "Jewish believers in Yeshua remain Jews, keeping their identity and calling.",
+        "The sabbath, the biblical feasts and the food laws are kept, many as obedience, some as heritage.",
+        "Hebrew Roots believers, many of them Gentiles, hold the law of Moses binding on all believers.",
+        "Worship uses Hebrew prayers, the Torah scroll and Jewish customs.",
+        "Israel and the Jewish people still have a place in God's purpose, and the land is theirs.",
+        "Most hold the Trinity, and the soul going to God at death.",
+        "Many expect a rapture, and Christ's reign from Jerusalem."
+      ],
       "agree": [
         "abraham-promise",
         "kingdom-on-earth",
@@ -1114,6 +1395,15 @@
       "religion": "judaism",
       "title": "Orthodox and traditional Jews",
       "note": "Orthodox Judaism holds that God is one, the Torah written and oral, the resurrection of the dead, and a Messiah of David's line who will gather Israel and reign on the earth; it rejects Jesus, often because Christians call him God. Begin from the Shema and the promises: Jesus fulfils them without being a second God.",
+      "beliefs": [
+        "The written Torah was given to Moses at Sinai, with the oral Torah, now in the Mishnah and Talmud, to explain it.",
+        "The 613 commandments bind every Jew: the sabbath, kosher food, prayer three times a day and the feasts.",
+        "Rabbis interpret the law, and halakhah, Jewish law, governs daily life.",
+        "The Messiah will be a man of David's line, not God, who will rebuild the temple and gather Israel.",
+        "The dead will be raised, and the righteous of all nations have a share in the world to come.",
+        "The Shema, \"Hear, O Israel: Yahweh our God is one Yahweh\", is the heart of the faith.",
+        "Jesus is not the Messiah: he did not bring peace or gather Israel, and worshipping a man is idolatry."
+      ],
       "agree": [
         "one-god",
         "creator",
@@ -1145,6 +1435,15 @@
       "religion": "judaism",
       "title": "Reform and secular Jews",
       "note": "Reform and secular Jews hold Jewish identity and ethics, often without a personal Messiah, a resurrection of the dead, or the Torah as given by God word for word. Begin from history: Israel's scattering and return, and the evidence that Jesus rose.",
+      "beliefs": [
+        "The Torah is inspired but written by men, and its laws may change with the times.",
+        "The commandments of ritual are a matter of choice; the ethical law and justice for all are central.",
+        "Many look for a messianic age of peace brought about by human effort, rather than a personal Messiah.",
+        "Many hold the soul immortal rather than a resurrection of the body, or hold no life after death.",
+        "Jewish identity is a people and a culture as much as a faith; many secular Jews hold no belief in God.",
+        "Men and women are equal in worship, and women may be rabbis.",
+        "The land and the state of Israel matter to most, as a home for the Jewish people."
+      ],
       "agree": [
         "one-god",
         "no-idols"
@@ -1169,6 +1468,16 @@
       "religion": "islam",
       "title": "Sunni and Shia Muslims",
       "note": "Islam holds that God is one, and that Jesus was a prophet and the Messiah, born of a virgin, but not the Son of God, and that he was not crucified but taken up, and will return before the end. It holds the Qur'an God's final word, the earlier Scriptures changed, and a man judged by his deeds. Begin from the one God, and from the evidence that Jesus died and rose.",
+      "beliefs": [
+        "The Five Pillars: the confession of faith, prayer five times a day, almsgiving, fasting in Ramadan and pilgrimage to Mecca.",
+        "The Qur'an is God's uncreated word, perfect in its Arabic; the hadith record Muhammad's words and deeds.",
+        "Sharia, God's law, governs worship, family, food and society.",
+        "Sunnis follow the consensus of the community and the first four caliphs.",
+        "Shia follow Ali and the imams of his line, and Twelvers await the hidden twelfth imam, the Mahdi.",
+        "Jesus was not crucified, but taken up to God, and will return before the last day.",
+        "The Torah, Psalms and Gospel were given by God but have since been changed.",
+        "Each soul is judged by its deeds, weighed on the last day, to paradise or hell."
+      ],
       "agree": [
         "one-god",
         "creator",
@@ -1198,6 +1507,15 @@
       "religion": "islam",
       "title": "Ahmadi Muslims",
       "note": "Ahmadis hold that Jesus was put on the cross but taken down alive, recovered, and died in old age in Kashmir, and that his promised return was fulfilled in Mirza Ghulam Ahmad. Begin from the common ground that he was crucified, then from the evidence that he died there and rose.",
+      "beliefs": [
+        "Jesus was put on the cross but taken down alive, recovered, and died in old age in Kashmir.",
+        "Mirza Ghulam Ahmad of Qadian, who died in 1908, was the promised Messiah and Mahdi.",
+        "The community is led by a khalifa, the successor of Mirza Ghulam Ahmad.",
+        "Jihad by the sword is not for this age; Islam spreads by the pen and by peace.",
+        "Muhammad is the seal of the prophets, but prophets without a new law may follow him.",
+        "They keep the Five Pillars and the Qur'an, as other Muslims do.",
+        "Other Muslims, and many Muslim states, count them outside Islam."
+      ],
       "agree": [
         "one-god",
         "creator",
@@ -1223,6 +1541,16 @@
       "religion": "bahai",
       "title": "Bahá'ís",
       "note": "Bahá'ís hold one God revealed in turn by messengers, Abraham, Moses, Jesus, Muhammad, the Báb and Bahá'u'llah, whose coming in 1844 and after they count Christ's promised return and the Comforter he spoke of; they hold the unity of all religions, an immortal soul that grows after death, and the resurrection as spiritual. Begin from the one God and from what Jesus said of his own return.",
+      "beliefs": [
+        "Progressive revelation: God sends a messenger for each age, each building on the last.",
+        "The Báb, from 1844, heralded Bahá'u'llah, whose writings are Scripture for this age.",
+        "Bahá'u'llah fulfils the promised return of Christ, and of the awaited figures of other faiths.",
+        "The Universal House of Justice, elected and seated in Haifa, guides the faith; there are no clergy.",
+        "The oneness of humanity: the equality of men and women, an end to prejudice, and a world government.",
+        "Science and religion agree, and each person must search out truth for himself.",
+        "Members pray daily, fast for nineteen days each year, and abstain from alcohol and party politics.",
+        "Heaven and hell are states of the soul, nearness to God or distance from him."
+      ],
       "agree": [
         "creator",
         "no-idols"
@@ -1245,6 +1573,15 @@
       "religion": "hinduism",
       "title": "Devotional Hindus",
       "note": "Vaishnavas, Shaivas and Hare Krishnas worship a personal Lord, Vishnu, Krishna or Shiva, who comes down in avatars; they hold rebirth and karma, worship before images, and may count Jesus a holy man or an avatar among many. Begin from the one Creator, and from the one life Scripture gives.",
+      "beliefs": [
+        "Bhakti, loving devotion to a personal God, is the way to liberation.",
+        "Vaishnavas worship Vishnu, chiefly as Krishna or Rama; Shaivas worship Shiva; Shaktas worship the Goddess.",
+        "God descends in avatars, such as Krishna and Rama, to restore dharma.",
+        "God is worshipped in images, murtis, in which he is present, with offerings, songs and chanting his names.",
+        "The Bhagavad Gita and the Puranas are central scriptures; ISKCON, the Hare Krishnas, follow Krishna as the Supreme Person.",
+        "The soul is eternal, distinct from God, and is reborn by karma until freed by his grace.",
+        "Liberation is eternal life in loving service of God, not merging into him."
+      ],
       "agree": [
         "creator"
       ],
@@ -1267,6 +1604,15 @@
       "religion": "hinduism",
       "title": "Advaita Hindus and yoga",
       "note": "Advaita holds that only Brahman is real, that the self is one with it, that the world and its suffering are illusion, and that liberation is knowing this and escaping rebirth; much Western yoga and meditation teaching comes from it. Begin from the world as made and real, and from sin and death as real.",
+      "beliefs": [
+        "Brahman alone is real: one, without a second, beyond every name and form.",
+        "The self, atman, is Brahman: \"Thou art that.\"",
+        "The world of many things is maya, appearance, mistaken for reality through ignorance.",
+        "Moksha, liberation from rebirth, comes by knowledge that the self is Brahman, not by works.",
+        "Personal gods are Brahman as worshippers conceive it, real only at a lower level.",
+        "Shankara taught it from the Upanishads, the Gita and the Brahma Sutras.",
+        "Meditation, yoga and a teacher's guidance prepare the mind to realise the truth."
+      ],
       "agree": [],
       "differ": [
         "creator",
@@ -1287,6 +1633,15 @@
       "religion": "sikhism",
       "title": "Sikhs",
       "note": "Sikhs hold one God, the Creator, formless and worshipped without images, known by meditating on the Name; the ten Gurus and the Guru Granth Sahib as the Word; rebirth and karma, ended by God's grace; and that God may be reached by many paths. Begin from the one Creator and from grace.",
+      "beliefs": [
+        "The Guru Granth Sahib is the eternal Guru, holding the Gurus' hymns and those of Hindu and Muslim saints.",
+        "Waheguru is one, formless, never incarnate, and worshipped without images.",
+        "The Khalsa, the initiated, keep the five Ks: uncut hair, a comb, a steel bangle, a short sword and undershorts.",
+        "Naam simran, meditating on God's Name, with honest work and sharing, is the way to God.",
+        "The gurdwara is open to all, and the langar, the free kitchen, feeds all alike.",
+        "Caste, idol worship, fasting and pilgrimage as means to God are rejected.",
+        "The soul is reborn by karma until united with God by grace; many paths may lead to him."
+      ],
       "agree": [
         "creator",
         "one-god",
@@ -1308,6 +1663,16 @@
       "religion": "buddhism",
       "title": "Buddhists",
       "note": "Buddhists, Theravada and Mahayana, follow the Buddha's path to end suffering, which they trace to craving; they hold rebirth and karma without a Creator or an enduring self, and seek nirvana. Begin from suffering, which both take seriously, and from the denial of an immortal soul, which both share.",
+      "beliefs": [
+        "The four noble truths: life is suffering, suffering comes from craving, it can end, and the way is the eightfold path.",
+        "The eightfold path: right view, intention, speech, action, livelihood, effort, mindfulness and concentration.",
+        "Anatta: there is no enduring self or soul, only a stream of changing states.",
+        "Beings are reborn by karma, until craving is ended and nirvana is reached.",
+        "Theravada seeks liberation by one's own practice, following the Pali scriptures and the monks.",
+        "Mahayana honours bodhisattvas, who delay nirvana to save others; Pure Land Buddhists trust Amida Buddha's grace.",
+        "They take refuge in the Buddha, the dharma, his teaching, and the sangha, the community.",
+        "No Creator is needed or worshipped; the Buddha was a man who awoke, not a god."
+      ],
       "agree": [
         "soul-mortal"
       ],
@@ -1327,6 +1692,15 @@
       "religion": "none",
       "title": "Sceptics and atheists",
       "note": "Begin from history and reason, not from the Bible's authority. Common ground first: Jesus lived and was crucified, man is mortal, and no one is tormented for ever. Then show that the Bible's faith rests on evidence and that miracles are not incredible if there is a God; then the empty tomb, the witnesses and the records, prophecy fulfilled and the world as made. Answer the hard passages on morals when they are raised.",
+      "beliefs": [
+        "There is no God; the natural world is all there is.",
+        "Belief should follow evidence, and miracles are too unlikely to accept on testimony.",
+        "The universe, life and man are explained by natural laws, the big bang and evolution.",
+        "The Bible is a human book, full of errors, contradictions and borrowed myth.",
+        "Morality comes from evolved empathy and reason, and is better without the Bible's commands.",
+        "Suffering in the world counts against a good and powerful God.",
+        "Death is the end, and meaning is made in this life."
+      ],
       "agree": [
         "jesus-existed",
         "crucifixion",
@@ -1369,6 +1743,15 @@
       "religion": "none",
       "title": "Agnostics and the spiritual but not religious",
       "note": "Agnostics are unsure whether God can be known; the spiritual but not religious often hold that every path leads to the same place and that the self has a spark of the divine. Begin from what can be known: the world as made, and the evidence that Jesus rose.",
+      "beliefs": [
+        "Whether God exists cannot be known, or has not been shown.",
+        "Many of the spiritual but not religious hold that every faith leads to the same place.",
+        "The divine, or a spark of it, is within each person, found by looking inward.",
+        "Experience and feeling guide belief more than doctrine or Scripture.",
+        "Practices such as meditation, yoga or mindfulness are taken from many traditions.",
+        "Organised religion is distrusted, for its claims to sole truth and its record of harm.",
+        "Something may continue after death, but no one can be sure what."
+      ],
       "agree": [],
       "differ": [
         "creator",
@@ -1391,6 +1774,15 @@
       "religion": "none",
       "title": "Former believers",
       "note": "Those who left a church, often over hell, suffering, the Bible's hard passages or its apparent contradictions. Many rejected what the Bible does not teach: begin by setting its plain teaching apart from the creeds they left, then answer the hard passages, then the evidence that Jesus rose.",
+      "beliefs": [
+        "They once believed, often in an evangelical or strict church, and have left the faith.",
+        "Many left over hell: a loving God would not torment people for ever.",
+        "Many left over suffering, unanswered prayer, or the hard passages of the Old Testament.",
+        "Many came to think the Bible full of contradictions, or science to have disproved it.",
+        "Some were hurt by a church's conduct, or by its rules and control.",
+        "Some now hold no belief in God; others still believe, but not in the church.",
+        "Many are wary of being argued back, and want honest answers more than certainty."
+      ],
       "agree": [
         "jesus-existed",
         "crucifixion"
