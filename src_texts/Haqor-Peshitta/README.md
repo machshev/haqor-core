@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-14, 2 John, 3 John, and Jude
-(2,497 of 7,958 Peshitta verses; 5,461 remain). Luke 15 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-15, 2 John, 3 John, and Jude
+(2,529 of 7,958 Peshitta verses; 5,429 remain). Luke 16 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -705,3 +705,36 @@ Source checks for Luke 14:
 - In 14:35 the first predicate concerns suitability for soil or manure;
   "outside" belongs to throwing it away. The hearing exhortation retains
   both having ears and hearing.
+
+Source checks for Luke 15:
+
+- In 15:1 the approach is ongoing. In 15:2 scribes precede Pharisees,
+  and the murmuring has a past auxiliary; the demonstrative identifies
+  the one receiving sinners, rather than making a sinner the subject.
+- In 15:4 the question retains a hundred sheep, one lost, ninety-nine
+  left in the open country, and seeking until finding. In 15:6 the
+  speaker calls his friends and neighbors concerning his own lost sheep.
+- In 15:7 the comparison concerns one repenting sinner and ninety-nine
+  righteous people who need no repentance. In 15:8 the woman has ten
+  coins, lights a lamp, sweeps, and searches carefully. In 15:9 her friends
+  and neighbors are grammatically feminine; 15:10 names the angels of God.
+- In 15:11 Jesus speaks to them again. In 15:12 the portion comes
+  "from your house", and the father divides his property among them.
+  In 15:13 the younger son is the subject gathering what fell to him,
+  not an object gathered by someone else.
+- In 15:15 the sons-of-the-city expression means citizens; the employer
+  sends the son to tend pigs; "the latter" clarifies that subject change.
+  In 15:16 the food is carob pods; the longing, pigs' eating, and
+  absence of giving all have past auxiliaries.
+- In 15:17 "now", "here", and the speaker's hunger remain explicit.
+  In 15:19 he says "no longer worthy"; in 15:21 he says "not worthy"
+  without repeating the petition to become a hired servant. In 15:20
+  the father sees him, has compassion on him, runs, embraces, and kisses him.
+- In 15:22 the robe is the best; no quickly adverb is supplied. In 15:23,
+  15:27, and 15:30 the animal is a fattened ox. In 15:25 the elder son
+  hears many singing, with no dancing term in this source.
+- In 15:29 both never clauses remain, together with the labor/service
+  expression. In 15:31 the first clause concerns the son always being
+  with his father; the second says everything the father owns is the son's.
+  In 15:32 the vocalized suitability predicate means it was right for
+  them to rejoice, rather than being a negation.
