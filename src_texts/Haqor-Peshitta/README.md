@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-20, 2 John, 3 John, and Jude
-(735 of 7,958 Peshitta verses; 7,223 remain). Matthew 21 is next.
+Current coverage: Matthew 1-21, 2 John, 3 John, and Jude
+(781 of 7,958 Peshitta verses; 7,177 remain). Matthew 22 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -85,5 +85,5 @@ Source checks for Matthew 17-20:
 - Matthew 18:29 has no equivalent of Murdock's added "the whole".
 - Matthew 19:5 says "one flesh"; 19:6 uses the distinct word "body".
 
-Next review caution: the praise quotation divided across Murdock 21:16-17
-is entirely in Peshitta 21:16. Check the source boundary when aligning it.
+Source check for Matthew 21: the praise quotation divided across Murdock
+21:16-17 is entirely in Peshitta 21:16 and is linked there.
