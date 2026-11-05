@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-15, 2 John, 3 John, and Jude
-(2,529 of 7,958 Peshitta verses; 5,429 remain). Luke 16 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-16, 2 John, 3 John, and Jude
+(2,560 of 7,958 Peshitta verses; 5,398 remain). Luke 17 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -738,3 +738,36 @@ Source checks for Luke 15:
   with his father; the second says everything the father owns is the son's.
   In 15:32 the vocalized suitability predicate means it was right for
   them to rejoice, rather than being a negation.
+
+Source checks for Luke 16:
+
+- In 16:1 the accusations are brought to the rich man against the
+  steward; the two pronominal references remain distinct. In 16:2 he
+  can no longer be the master's steward. In 16:4 leaving the stewardship
+  and being received into their houses remain separate clauses.
+- In 16:6 the oil debt is a hundred measures, changed to fifty, with
+  sitting down quickly explicit. In 16:7 the wheat debt is a hundred
+  cors, changed to eighty; sitting is repeated without the quickly adverb.
+- In 16:8 the subject is explicitly "our Lord". The generation phrase
+  retains both "this" and "theirs". In 16:9 it is the mammon that comes
+  to an end, and the eternal shelters belong to the receiving group.
+- In 16:11 truth is what is entrusted, and the disciples are recipients.
+  In 16:12 the first property is "not yours", distinct from the final
+  "your own"; the negative about being found faithful is also retained.
+- In 16:14 both loving money and mocking have past auxiliaries. In 16:15
+  hearts are plural. In 16:16 everyone presses to enter the kingdom.
+  In 16:17 the measure is one letter, and `pshiq` means easy in the
+  comparative construction, despite the supplied gloss list; see
+  [CAL's easy sense and adjectival reference](https://cal.huc.edu/cal_entry_web.php?lemma=p%24q+V).
+- In 16:19 the garments are linen and purple, in that order. In 16:20
+  Lazarus lies at that rich man's gate, afflicted with ulcers. In 16:21
+  the longing and dogs' coming retain their past auxiliaries, and the
+  new clause begins "but even" the dogs.
+- In 16:23 the place is Sheol. In 16:24 the request concerns the tip of
+  Lazarus's finger and the speaker's tongue. In 16:25 the good and bad
+  things retain their possessors, followed by "now", "behold", and "here".
+- In 16:26 the chasm has been placed between us and you, and passage is
+  denied in both directions. In 16:27 "I ask you" includes the recipient;
+  in 16:28 the five brothers are warned lest they too come. In 16:30
+  the visitor comes from the dead; in 16:31 the final clause explicitly
+  says they will not believe "him", preserving its pronominal complement.
