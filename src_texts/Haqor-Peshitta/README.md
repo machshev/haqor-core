@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-13, 2 John, 3 John, and Jude
-(3,577 of 7,958 Peshitta verses; 4,381 remain). John 14 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-14, 2 John, 3 John, and Jude
+(3,608 of 7,958 Peshitta verses; 4,350 remain). John 15 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1370,3 +1370,13 @@ Source checks for John 13:
 - John 13:27-30 retains Satan's entry after the bread, the prompt-action command, the table companions' lack of understanding, their suppositions about Judas's money bag and festival/poor provisions, Judas's immediate departure, and the nighttime statement. John 13:28 renders על מנא as “why,” an attested compound in [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28l%40m%29+c). The ethical dative accompanying departure is not rendered as a new “from it” object or an added house.
 - John 13:31-35 preserves the Son-of-Man/God glorification clauses, immediate future glorifying, “My children,” remaining briefly, seeking, the statement to the Jews and its repetition to the disciples, and the new commandment to love one another as the speaker loved them. The final love clause is grammatical English while retaining the reciprocal source expression.
 - John 13:36-38 distinguishes “Our Lord” from “My Lord,” retains where/now/later following, the laying-down-life offer and reply, both “Truly” words, and the rooster's not crowing until three denials. The speaking predicates stay linked with Simon Cephas and Jesus in their respective introductions.
+
+Source checks for John 14:
+
+- John 14:1-7 retains the untroubled-heart commands, belief in God and the speaker, the Father's house and dwellings, preparation and return, knowing the destination and way, Thomas's “Our Lord,” and the way/truth/life and Father-knowing statements. John 14:2 keeps the conditional and going/preparing clauses; the causal reading of the latter follows the supplied Murdock without imposing a remembered Greek question.
+- John 14:8-12 preserves Philip's request, seeing the speaker and the Father, the mutual indwelling, words and works, the grounds for belief, and the believer's doing the works and greater things. The repeated first-person pronoun in John 14:12 belongs to “the works that I do,” followed by the separate “he too will do.” Its final Father noun is unsuffixed “the Father,” not the reference's supplied “my Father.”
+- John 14:13-18 retains asking in the speaker's name, “ask me,” the Father's glorification in his Son, loving and keeping commandments, asking the Father, another Advocate, the Spirit of truth, and knowing, seeing, receiving and dwelling. John 14:17 distinguishes “with you” from “in you”; the final “in a little while” remains in John 14:18 at the actual source boundary.
+- John 14:16,26 consistently uses “Advocate” for פרקלטא. [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=prqly%2B+N) records this Syriac lexical sense and the Paraclete/Holy Spirit use. John 14:26 retains “my Father” from the actual possessive suffix and the present “all that I say to you.”
+- John 14:19-24 retains the world's not seeing, the disciples' seeing and living, mutual indwelling, commandments and love, the self-revelation promise, Judas explicitly distinguished from Iscariot, and the Father's love, coming and dwelling. John 14:19 uses the source's simple “not,” without adding “no longer.” The speaking and love/coming predicates in John 14:22-23 remain with their own source words; the singular word heard in John 14:24 belongs to the Father who sent the speaker.
+- John 14:25-29 preserves the present being-with-the-hearers clause, teaching and remembering, peace and its distinct giving, the heart's not being troubled or afraid, the repeated going/coming report, love and rejoicing, the Father's greatness, and the foretelling/belief sequence. John 14:29 keeps both “before it happens” and “when it happens” in their respective linked clauses.
+- John 14:30-31 retains limited further speech, the coming ruler, “he has nothing in me,” the world's knowing the speaker's love for his Father, the Father's command and the speaker's doing, and the rise/depart commands. The ruler's possessive relation is retained rather than reduced to a statement that nothing is in the speaker. Quote boundaries keep Judas's question separate from Jesus' preceding and following discourses.
