@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-14, 2 John, 3 John, and Jude
-(1,735 of 7,958 Peshitta verses; 6,223 remain). Mark 15 is next.
+Current coverage: Matthew 1-28, Mark 1-15, 2 John, 3 John, and Jude
+(1,782 of 7,958 Peshitta verses; 6,176 remain). Mark 16 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -342,3 +342,18 @@ Source checks for Mark 14:
 - In 14:70 "also" qualifies the Galilean claim, not the preceding
   statement that Cephas is one of them. The twice/thrice counts in
   14:30 and 14:72 are retained.
+
+Source checks for Mark 15:
+
+- In 15:32 the title is "king of Israel", rather than the local Murdock
+  reference's "king of the Jews"; the descent clause is third-person
+  volitional, rendered "Let Messiah ... descend".
+- In 15:34 the quoted cry and its explicit English interpretation remain
+  distinct. In 15:35 the past auxiliary belongs to "they were saying";
+  calling for Elijah is a separate past predicate.
+- In 15:38 the curtain expression appay tar'a is rendered as an idiom;
+  compare [Brock and Kiraz's dictionary entry](https://sedra.bethmardutho.org/lexeme/get/6121).
+- In 15:39 "this man" is explicit in the centurion's statement. In 15:43
+  taking courage and going in to Pilate remain separate actions.
+- In 15:46 Joseph buys a linen sheet, without an added quality adjective;
+  the lowering, wrapping, placing, and rolling predicates remain distinct.
