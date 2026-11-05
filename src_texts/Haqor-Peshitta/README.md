@@ -3,12 +3,15 @@
 `translation.tsv` contains Haqor's English renderings in Peshitta
 word order, using James Murdock's public-domain translation as a reference.
 The unmodified reference remains in `src_texts/Murdock/murdock.tsv`.
+The goal is reviewed, word-linked English for all 7,958 Peshitta verses.
 This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-6, 2 John, 3 John, and Jude
-(225 of 7,958 Peshitta verses). Matthew 7 is the next review batch.
+Current coverage: Matthew 1-12, 2 John, 3 John, and Jude
+(448 of 7,958 Peshitta verses; 7,510 remain). Matthew 13 is next.
+The unlinked Murdock fallback is temporary coverage, not a completed
+translation or word alignment.
 
 Each non-comment row is `book<TAB>chapter:verse<TAB>translation`, using
 Haqor's one-based book numbers (Matthew = 40), Peshitta verse numbering, and
@@ -43,3 +46,14 @@ runtime database to the paired Flutter app's `assets/db/haqor.db` and update
 its `assets/db/version.txt`. The reader already supports these links;
 no public binding change is required. Run the generator translation tests
 and the Flutter `verse_row_selection_test.dart` widget tests.
+
+Source checks for Matthew 7-12:
+
+- Matthew 8:15 has a singular object: she ministered to him, rather than
+  Murdock's "to them".
+- Matthew 9:20 has twelve years, rather than the local Murdock reference
+  file's "fourteen years".
+- Matthew 10:8 has no source words for Murdock's supplied "raise the dead";
+  those words are not added or linked to unrelated source positions.
+- Matthew 11:14 explicitly names Elijah, although the local Murdock
+  reference omits his name.
