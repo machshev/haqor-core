@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-10, 2 John, 3 John, and Jude
-(3,432 of 7,958 Peshitta verses; 4,526 remain). John 11 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-11, 2 John, 3 John, and Jude
+(3,489 of 7,958 Peshitta verses; 4,469 remain). John 12 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1338,3 +1338,15 @@ Source checks for John 10:
 - John 10:31-36 preserves the stones, good-works challenge, blasphemy accusation, human-being/God contrast, the law's plural “gods,” the word of God being with its recipients, Scripture's permanence, the Father's sanctifying and sending, and “I am the Son of God.” In John 10:36 the plural “you say” and singular “you blaspheme” have separate linked clauses; על ד introduces “because I said.”
 - John 10:37 uses “Unless I do my Father's works,” followed by “do not believe me.” [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29l%29+c) records אלא as “except, unless,” including Syriac usage. John 10:38 retains the works-directed pronoun with “believe the works,” the knowing/believing purpose, and both “my Father” phrases.
 - John 10:39-42 retains the renewed seizure attempt, escape, journey across the Jordan to John's former baptizing place, staying there, the statement that John performed not even one sign, the truth of everything he said about Jesus, and the many believers. Quotation boundaries distinguish the two shepherd discourses, the later temple exchange, and the final crowd testimony.
+
+Source checks for John 11:
+
+- John 11:1-6 preserves Lazarus's Bethany origin, Mary and Martha as his sisters, the anointing identification, the sisters' message, the death/glory contrast, Jesus' love for all three, and the two-day delay. In John 11:5 the named Jesus stays with the loving predicate rather than being moved into a neighboring span.
+- John 11:7-16 keeps Judea, “Our Rabbi” and “Our Lord,” the twelve-hour/day/night illustration, “Lazarus our friend,” the sleep/death misunderstanding, the explicit death announcement, joy for the disciples' sake and belief, and Thomas's Twin designation and invitation to die with Jesus. The speech verb in John 11:16 remains with Thomas's introduction.
+- John 11:17-24 retains the four days in the tomb, Bethany's distance of about fifteen stadia from Jerusalem, the visitors' comforting, Martha's meeting and Mary's remaining seated, Martha's request, and the last-day resurrection reply. The distance clause is spatial, without an invented traveler; “your brother will rise” keeps its predicate and subject together.
+- John 11:25-27 uses “resurrection” for נוחמא, matching the exported lexical alternatives and [CAL's Syriac entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=nwxm+N), which directly cites John 11:24. The supplied Murdock's “consolation” is not copied into this passage. The life/belief/death promise, the belief question, Messiah, Son of God, and coming into the world remain explicit; a repeated first-person pronoun is not turned into an extra affirmation verb.
+- John 11:28-37 preserves “Our Rabbi,” Mary's quick response, the visitors' following and supposition that she was going to the tomb to weep, Mary's address, the Jews' weeping, strong inner agitation, the grave-location question, Jesus' tears, and the blind-man comparison. John 11:35 retains tears as the grammatical subject; John 11:37's second “this man” belongs to the clause about Lazarus not dying.
+- John 11:38 keeps בינוהי ולה together as “within himself.” [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=byn+p) records the identical-suffix idiom and a near-identical Old Syriac John 11:38 example. The second word belongs to that expression rather than to the following coming verb; the cave and stone over its entrance remain explicit.
+- John 11:39-44 retains “this stone,” Martha as the dead man's sister, the four-day explanation, the glory reminder, the stone's removal, Jesus' raised eyes and prayer, the crowd-directed belief purpose, the loud Lazarus command, bound hands and feet, the face cloth, and the release command. The bound predicate stays with the limbs and bandages in its own linked phrase.
+- John 11:45-52 distinguishes belief from reporting to the Pharisees, the chief priests' and Pharisees' assembly, signs, Roman threat to “our place” and “our nation,” Caiaphas's year as high priest, and his unwitting prophecy. John 11:50 retains “for us”; John 11:51's negation, speaking, own initiative, priesthood, and prophecy clauses stay with their actual predicates. The final gathering of God's scattered children remains part of the prophecy.
+- John 11:53-57 keeps the death plot, Jesus' withdrawal to Ephraim near the wilderness, his stay with the disciples, the approaching Jewish Passover, purification, the temple question, and the command to report his location for seizure. The singular ethical dative accompanying his departure does not introduce another recipient “from them.”
