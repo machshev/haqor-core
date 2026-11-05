@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-6, 2 John, 3 John, and Jude
-(2,104 of 7,958 Peshitta verses; 5,854 remain). Luke 7 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-7, 2 John, 3 John, and Jude
+(2,154 of 7,958 Peshitta verses; 5,804 remain). Luke 8 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -486,3 +486,27 @@ Source checks for Luke 6:
 - In 6:48 foundations are initially plural, while the final foundation is
   singular. In 6:49 the river beats against the house, which immediately
   falls; the two-word hour expression is not part of the river noun.
+
+Source checks for Luke 7:
+
+- In 7:1 all the words are completed in the people's hearing. In 7:6–8
+  the centurion's first-person speech retains "My Lord", "my roof",
+  "my servant", his own coming to Jesus, and his command over soldiers.
+- In 7:12 the dead man is his mother's only son, and his mother is a
+  widow. In 7:15 he sits up and begins speaking; Jesus gives him to his
+  mother, without a change of actor.
+- In 7:18 John's disciples tell him what happened. In 7:26 prophets are
+  plural. In 7:27 "my messenger" has a first-person suffix, while "the way"
+  has no possessive suffix. The prophet and Baptizer titles in 7:28 and
+  the tax collectors in 7:29 are explicit.
+- In 7:36 the Pharisee invites Jesus; Jesus then enters and reclines.
+  In 7:37 the feminine demonstrative describes "that city", and the
+  masculine demonstrative describes "that Pharisee".
+- In 7:41 one debtor owes five hundred denarii and the other fifty.
+  In 7:42 both debts are forgiven.
+- In 7:44 Jesus says he entered the house; in 7:45 the entry verb is
+  feminine, referring to the woman. In 7:46 oil for his head and perfumed
+  oil for his feet remain distinct.
+- In 7:47 the loving verb is perfect, "she has loved much", with the
+  explicit causal connector retained. In 7:50 the causative life verb
+  is rendered "has given you life".
