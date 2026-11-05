@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-3, 2 John, 3 John, and Jude
-(1,232 of 7,958 Peshitta verses; 6,726 remain). Mark 4 is next.
+Current coverage: Matthew 1-28, Mark 1-4, 2 John, 3 John, and Jude
+(1,273 of 7,958 Peshitta verses; 6,685 remain). Mark 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -182,3 +182,15 @@ Source checks for Mark 3:
   claim, with the explanatory particle linked to "they were saying".
 - In 3:29 the source specifies eternal judgment; no different object is
   substituted. The first-person family possessives in 3:35 are retained.
+
+Source checks for Mark 4:
+
+- In 4:5 the two-word hour expression means "immediately", not a literal
+  duration of an hour.
+- In 4:6 the heat predicate is retained despite the morphology dataset's
+  unrelated noun gloss; compare "it became hot" in
+  [Etheridge's Syriac translation](https://studybible.info/Etheridge/Mark%204%3A6).
+- In 4:27 the explicit knowing subject is the man, not the seed. In 4:28
+  the object suffix anticipates the fruit noun; no extra recipient is added.
+- In 4:30 the question asks to what the kingdom should be likened; the
+  kingdom remains the object of comparison.
