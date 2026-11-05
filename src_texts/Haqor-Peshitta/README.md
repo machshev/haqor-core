@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-7, 2 John, 3 John, and Jude
-(4,085 of 7,958 Peshitta verses; 3,873 remain). Acts 8 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-8, 2 John, 3 John, and Jude
+(4,125 of 7,958 Peshitta verses; 3,833 remain). Acts 9 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1525,3 +1525,14 @@ Source checks for Acts 7:
 - Acts 7:51-53 retains the stiff-neck and uncircumcised-heart/hearing descriptions, the third-person possessives rendered naturally through “whose,” then the direct “you” standing against the Holy Spirit. The causal question retains both persecuting and killing, those announcing the Righteous One's coming, the hearers' handing him over and killing him, the law through angels' command and failure to keep it. Stephen's outer speech closes only after 7:53; the prophetic quotations remain nested within it.
 - Acts 7:54-58 preserves anger in the hearers' souls and gnashing, Stephen explicitly full of faith and the Holy Spirit, his looking and seeing God's glory, Jesus standing at God's right hand, the Son of Man, the loud cry and stopped ears, rushing, seizure, removal outside the city and stoning. Those who testified against him lay their garments at the feet of the young man Saul; no additional action by Saul is inserted here.
 - Acts 7:59-60 retains stoning Stephen while he prays and speaks, “Our Lord Jesus, receive my spirit,” kneeling and the loud cry, “Our Lord” and the request not to hold this sin against them, and falling asleep after speaking. Both first-person plural Lord possessives remain explicit.
+
+Source checks for Acts 8:
+
+- Acts 8:1-4 retains Saul's approval and participation in Stephen's killing, that day's persecution of the ecclesia in Jerusalem, scattering through Judea's villages and among the Samaritans except for the apostles, Stephen's gathering and burial by believing men, and Saul's persecution of God's ecclesia. His entry into houses, dragging away men and women and delivery to prison remain distinct from the scattered believers' proclamation.
+- Acts 8:5-8 keeps Philip's descent to a Samaritan city, proclamation concerning the Messiah, the people's listening and conviction because of the signs, and the city's great joy. In 8:7 the masculine human criers are distinguished from the feminine-plural spirits that come out of them; the translation does not silently substitute a different subject throughout the sentence.
+- Acts 8:9-13 preserves Simon's long residence, sorceries, misleading the Samaritan people, self-exaltation, the people's description of him as God's great power, and their subsequent belief and baptism. Philip proclaims God's kingdom in the name of “our Lord Jesus Messiah”; Simon's belief, baptism, attachment to Philip and astonishment remain explicit.
+- Acts 8:14-19 names Simon Cephas and John as the apostles sent from Jerusalem, distinguishes receiving God's word from receiving the Holy Spirit, and retains baptism in the name of “our Lord Jesus.” The laying on of a hand, reception of the Spirit and Simon's offer of money and request for authority remain separate actions.
+- Acts 8:20-24 retains Simon Cephas' condemnation, God's gift and worldly wealth, no portion in “this faith,” the heart not upright before God, repentance, prayer, possible forgiveness of the heart's deceit, bitter gall and bonds of iniquity. Simon's answer asks the apostles to pray to God for him; it does not add an unexpressed resolution of his story.
+- Acts 8:25-31 preserves Simon and John's testimony, teaching, return and preaching in Samaritan villages, the Lord's angel, the southward desert road from Jerusalem to Gaza, and the eunuch from Cush serving Candace, queen of the Cushites, in charge of her treasury. Verse 8:29 says “the Spirit,” without adding “Holy.” The eunuch's question, need for instruction and invitation into the chariot remain explicit.
+- Acts 8:32-35 keeps the lamb, slaughter, sheep, shearer, silence, unopened mouth, humiliation, imprisonment and judgment, generation question and life taken from the earth. The humiliation phrase belongs to source 8:33, although the supplied reference places it in 8:32. The Scripture quotation continues across both verses; Philip begins from this Scripture to proclaim “our Lord Jesus.”
+- Acts 8:36-40 translates verse 37's actual dataset words, including wholehearted belief and the confession that Jesus Messiah is God's Son. Both men descend to the water, Philip baptizes the eunuch, the Lord's Spirit snatches Philip away, and the eunuch continues rejoicing. Azotus, preaching in all the cities and arrival at Caesarea are retained without adding a route or place identification to the source.
