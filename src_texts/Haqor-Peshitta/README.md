@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-7, 2 John, 3 John, and Jude
-(1,409 of 7,958 Peshitta verses; 6,549 remain). Mark 8 is next.
+Current coverage: Matthew 1-28, Mark 1-8, 2 John, 3 John, and Jude
+(1,447 of 7,958 Peshitta verses; 6,511 remain). Mark 9 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -236,3 +236,18 @@ Source checks for Mark 7:
   compare the [Peshitta text](https://peshitta.eu/nt/mark/7.html). In 7:36
   the hearers are warned to tell no one; the comparative clause begins
   with the following "And the more".
+
+Source checks for Mark 8:
+
+- The dismissal clause belongs to source 8:10, after the population count
+  in 8:9; it is not duplicated from Murdock's earlier verse boundary.
+- In 8:14 the exception precedes the negative: apart from one loaf, they
+  had no bread. The connective has an exception sense in this construction;
+  compare the [CAL entry for ella](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29l%29+c).
+- In 8:20 the breaking action is elliptical after 8:19. English supplies
+  the repeated action to express the question grammatically.
+- In 8:28 both occurrences of "others" are plural and retain their
+  conjunctions. In 8:29 the Son of the living God is explicitly included.
+- In 8:35 the gospel has a first-person possessive, "my gospel". In 8:38
+  the suffix in "Son of man" anticipates the following genitive, while
+  "his Father" and "his holy angels" retain independent possessives.
