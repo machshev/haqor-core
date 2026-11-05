@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-16, 2 John, 3 John, and Jude
-(609 of 7,958 Peshitta verses; 7,349 remain). Matthew 17 is next.
+Current coverage: Matthew 1-20, 2 John, 3 John, and Jude
+(735 of 7,958 Peshitta verses; 7,223 remain). Matthew 21 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -41,6 +41,14 @@ review the mappings before adding rows, paying attention to negation,
 subjects, suffixes, idioms, and differences from familiar Greek numbering.
 Work in book and chapter order.
 
+Keep working context limited to one chapter: export its records to a file,
+review and append that chapter, validate, sync, and commit it before starting
+the next. Between chapters retain only the goal, coverage and next chapter,
+translation conventions, verification commands, and unresolved questions.
+Use this README and the committed TSV as the checkpoint; do not reload
+completed chapter records routinely. Reopen a specific earlier verse only
+when needed to resolve a consistency or accuracy question.
+
 Rebuild with `cargo run --release -- db gen-translation`, then copy the
 runtime database to the paired Flutter app's `assets/db/haqor.db` and update
 its `assets/db/version.txt`. The reader already supports these links;
@@ -68,3 +76,14 @@ Source checks for Matthew 13-16:
 - Matthew 13:37 says "Son of man", rather than the local Murdock
   reference file's "Son of God".
 - Matthew 15:39 names Magdu; the reference renders the place as Magdala.
+
+Source checks for Matthew 17-20:
+
+- Matthew 17:15 positions 8-9 form the idiom bar egara, rendered "epilepsy"
+  as a linked phrase. Brock and Kiraz record the expression under
+  [egara in SEDRA](https://sedra.bethmardutho.org/lexeme/get/27).
+- Matthew 18:29 has no equivalent of Murdock's added "the whole".
+- Matthew 19:5 says "one flesh"; 19:6 uses the distinct word "body".
+
+Next review caution: the praise quotation divided across Murdock 21:16-17
+is entirely in Peshitta 21:16. Check the source boundary when aligning it.
