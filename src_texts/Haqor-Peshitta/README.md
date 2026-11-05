@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-2, 2 John, 3 John, and Jude
-(1,197 of 7,958 Peshitta verses; 6,761 remain). Mark 3 is next.
+Current coverage: Matthew 1-28, Mark 1-3, 2 John, 3 John, and Jude
+(1,232 of 7,958 Peshitta verses; 6,726 remain). Mark 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -174,3 +174,11 @@ Source checks for Mark 2:
 - In 2:17 the illness expression is one idiom, not an additional action of
   laboring.
 - In 2:26 Abiathar is retained as named; no other priest is substituted.
+
+Source checks for Mark 3:
+
+- In 3:8 the crowd expression is plural: "great multitudes".
+- In 3:21 the out-of-his-mind expression remains the kinsmen's reported
+  claim, with the explanatory particle linked to "they were saying".
+- In 3:29 the source specifies eternal judgment; no different object is
+  substituted. The first-person family possessives in 3:35 are retained.
