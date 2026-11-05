@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-9, 2 John, 3 John, and Jude
-(3,390 of 7,958 Peshitta verses; 4,568 remain). John 10 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-10, 2 John, 3 John, and Jude
+(3,432 of 7,958 Peshitta verses; 4,526 remain). John 11 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1327,3 +1327,14 @@ Source checks for John 9:
 - John 9:25-30 preserves the one-thing contrast, present sight, repeated questioning, the invitation to become disciples, the insult, the Moses/Jesus disciple contrast, known divine speech to Moses, unknown origin, and the man's astonishment and “my own eyes.” John 9:28's anticipatory possessive stays with “that man's disciple”; גיר is rendered emphatically as “indeed,” an attested Syriac sense in [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=gyr+X).
 - John 9:31-34 retains the voice of sinners, fear of God and doing his will, the hearing response, the unprecedented opening of a man born blind's eyes, the from-God counterfactual, the accusation of being born wholly in sins, and the expulsion. The quoted testimony runs through John 9:33.
 - John 9:35-41 retains the actual “Son of God,” the healed man's explicit subject, both “My Lord” addresses, seeing/speaking identification, falling and worshiping, “the judgment of this world,” the seeing/blind reversal, and the final conditional and present sin. John 9:41's מטל הנא is the causal “for this reason,” without adding a demonstrative to “your sin.”
+
+Source checks for John 10:
+
+- John 10:1-6 preserves the door/fold contrast, thief and robber, shepherd, doorkeeper, names and voice, leading out, following, stranger, and the hearers' failure to understand. John 10:3's first door noun forms “doorkeeper,” while its second is the door opened; the initial demonstrative is the recipient, not a modifier of the guard.
+- John 10:7-14 keeps the renewed introduction, door-of-the-flock image, entry and pasture, theft/killing/destruction, life and “something more,” laying down life for his flock, the hired worker's lack of ownership and concern, the wolf's actions, and knowing/being known. John 10:8 has no source phrase “before me”; John 10:11 retains the flock's possessive suffix.
+- John 10:15-18 retains “my Father,” the other sheep, this fold, bringing and hearing, the whole flock becoming one with one shepherd, the Father's love, voluntary laying down and taking up life, both authority clauses, and the Father's command. The object at John 10:16 position 17 belongs to bringing, followed by hearing at positions 18-19; the whole-flock quantifier remains explicit.
+- John 10:19-24 preserves the division among the Jews, demon/madness accusation and reply, the Feast of Dedication in Jerusalem during winter, Solomon's portico, the surrounding Jews, the suspense question, and the request for a plain Messiah declaration. The spoken accusations remain distinct from the narrator's statements.
+- John 10:25-30 retains the works in the Father's name as witnesses, unbelief and sheep membership, “my own sheep,” hearing/knowing/following, eternal life, never perishing, the Father's gift and greatness, and “I and my Father are one.” John 10:28's hand noun is plural in the actual source (“my hands”); John 10:29's Father's hand is singular.
+- John 10:31-36 preserves the stones, good-works challenge, blasphemy accusation, human-being/God contrast, the law's plural “gods,” the word of God being with its recipients, Scripture's permanence, the Father's sanctifying and sending, and “I am the Son of God.” In John 10:36 the plural “you say” and singular “you blaspheme” have separate linked clauses; על ד introduces “because I said.”
+- John 10:37 uses “Unless I do my Father's works,” followed by “do not believe me.” [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29l%29+c) records אלא as “except, unless,” including Syriac usage. John 10:38 retains the works-directed pronoun with “believe the works,” the knowing/believing purpose, and both “my Father” phrases.
+- John 10:39-42 retains the renewed seizure attempt, escape, journey across the Jordan to John's former baptizing place, staying there, the statement that John performed not even one sign, the truth of everything he said about Jesus, and the many believers. Quotation boundaries distinguish the two shepherd discourses, the later temple exchange, and the final crowd testimony.
