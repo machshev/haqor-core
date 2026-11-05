@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-13, 2 John, 3 John, and Jude
-(2,462 of 7,958 Peshitta verses; 5,496 remain). Luke 14 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-14, 2 John, 3 John, and Jude
+(2,497 of 7,958 Peshitta verses; 5,461 remain). Luke 15 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -676,3 +676,32 @@ Source checks for Luke 13:
   another day. In 13:34 the sent ones go "to her", before the address
   shifts to "your children". In 13:35 the house is left "to you", and
   the final coming is in the name of the Lord.
+
+Source checks for Luke 14:
+
+- In 14:1 the leaders and Pharisees are plural. In 14:2 the gathered-water
+  expression describes fluid retention. In 14:5 the rescue example says
+  "son or ox", and both drawing out and bringing up remain explicit.
+- In 14:6 the answer belongs to the give-him clause. In 14:7 the seeing
+  clause retains its past auxiliary. In 14:8 the invitation is to a feast;
+  no wedding is specified. In 14:9 the place has no possessive modifier.
+- In 14:10 the address is "My friend", and moving higher is followed by
+  reclining. In 14:12 the invitation warning includes "not even" the
+  brothers, and the final demonstrative refers to the repayment.
+- In 14:15 one of those reclining hears these things and speaks to him.
+  In 14:17 everything is ready "for you". In 14:18 all begin "as one";
+  the field's buyer is obliged to go, rather than the field compelling him.
+- In 14:19 the purchase is five pairs of oxen. In 14:20 taking a wife is
+  the marriage idiom. In 14:22 the command has been fulfilled. In 14:23
+  the route goes between the hedges. In 14:24 the negative covers every
+  previously invited man, rather than only one member of the group.
+- In 14:26 "hate" is retained, and the family order is father, mother,
+  brothers, sisters, wife, children, then the person's own life. In 14:28
+  the builder calculates its cost and considers resources for completion.
+- In 14:29 the introductory connector is "lest"; the future mocking
+  predicate supplies no beginning verb. In 14:31 the opposing ruler is
+  a fellow king, with ten thousand facing twenty thousand. In 14:33 all
+  the person's possessions remain explicit.
+- In 14:35 the first predicate concerns suitability for soil or manure;
+  "outside" belongs to throwing it away. The hearing exhortation retains
+  both having ears and hearing.
