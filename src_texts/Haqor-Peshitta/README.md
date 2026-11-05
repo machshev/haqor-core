@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-13, 2 John, 3 John, and Jude
-(1,663 of 7,958 Peshitta verses; 6,295 remain). Mark 14 is next.
+Current coverage: Matthew 1-28, Mark 1-14, 2 John, 3 John, and Jude
+(1,735 of 7,958 Peshitta verses; 6,223 remain). Mark 15 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -323,3 +323,22 @@ Source checks for Mark 13:
 - In 13:34 the journey, leaving, giving, and commanding verbs are past.
   In 13:37 the two saying clauses remain distinct: the first addresses
   "you", and the second addresses "you all".
+
+Source checks for Mark 14:
+
+- In 14:5 the masculine suffix in vocalized `bēh` is rendered "at it",
+  rather than the reference's "at her"; compare the
+  [vocalized Peshitta text](https://aramaicnewtestament.org/gospel/mark_14.htm).
+- The first-person possessives in 14:9 ("my gospel") and 14:14
+  ("Our Rabbi") are retained. In 14:13 the man will meet the hearers;
+  carrying the water jar is a separate description.
+- In 14:23 "all" describes the people drinking, rather than how much
+  was drunk. In 14:31 "my Lord" is explicit, and the past auxiliary
+  belongs to the emphatic saying predicate.
+- In 14:42 the first-person object belongs to handing over, rather
+  than adding a second "to me" after drawing near.
+- In 14:53 Caiaphas is explicitly named. In 14:56 the testimonies are
+  plural and do not agree; 14:59 instead has singular collective testimony.
+- In 14:70 "also" qualifies the Galilean claim, not the preceding
+  statement that Cephas is one of them. The twice/thrice counts in
+  14:30 and 14:72 are retained.
