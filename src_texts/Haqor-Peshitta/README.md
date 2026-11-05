@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-6, 2 John, 3 John, and Jude
-(1,372 of 7,958 Peshitta verses; 6,586 remain). Mark 7 is next.
+Current coverage: Matthew 1-28, Mark 1-7, 2 John, 3 John, and Jude
+(1,409 of 7,958 Peshitta verses; 6,549 remain). Mark 8 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -219,3 +219,20 @@ Source checks for Mark 6:
 - In 6:45 Bethsaida is explicitly named as the destination. In 6:52
   the demonstrative specifies "that bread"; in 6:56 the streets are
   explicitly retained as the place where the sick were being laid.
+
+Source checks for Mark 7:
+
+- In 7:11 the second-person pronoun completes "you say" before the
+  conditional begins. The offering noun retains its first-person suffix.
+- In 7:19 the feminine cleansing predicate remains with the physical
+  elimination process. The source noun has cleansing and excrement senses;
+  compare the [dictionary entry for tadkitha](https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=46502).
+- In 7:25 the masculine suffix in the hearing phrase refers to Jesus:
+  the woman heard "about him". The following daughter clause is kept
+  distinct, with the unclean spirit as what her daughter had.
+- In 7:26 the woman is a Gentile from Phoenicia of Syria. In 7:31 the
+  final location is in the territory of Decapolis.
+- In 7:28 the source has plural "tables", matching its vocalisation;
+  compare the [Peshitta text](https://peshitta.eu/nt/mark/7.html). In 7:36
+  the hearers are warned to tell no one; the comparative clause begins
+  with the following "And the more".
