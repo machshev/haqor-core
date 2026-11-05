@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-4, 2 John, 3 John, and Jude
-(3,119 of 7,958 Peshitta verses; 4,839 remain). John 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-5, 2 John, 3 John, and Jude
+(3,166 of 7,958 Peshitta verses; 4,792 remain). John 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1265,3 +1265,16 @@ Source checks for John 4:
 - John 4:39-44 preserves the woman's testimony and the Samaritans' own hearing as distinct grounds for belief. John 4:42 keeps the fronted “we” with the hearing clause and retains “the Messiah, the Life-Giver of the world.” John 4:41 says “many,” without adding a comparative “more”; both two-day references and the prophet's own-city statement remain explicit.
 - John 4:45-50 retains the Galileans' reception after seeing the Jerusalem feast signs, Cana and Capernaum, the royal official's sick son, and the subject “This man” when he hears of Jesus' arrival. The request, signs-and-wonders condition, living-son declaration, belief, and departure remain distinct.
 - John 4:51-54 retains the servants' meeting, announcement and saying, the seventh hour yesterday, the fever leaving, the father's recognition and household belief, and the second-sign conclusion after the journey from Judea to Galilee.
+
+Source checks for John 5:
+
+- John 5:1-5 retains the unnamed Jewish festival, Jerusalem, Bethesda's Hebrew name, five porticoes, the waiting sick, the angel's periodic descent and stirring, the first descent and healing, and the man's thirty-eight years of illness. The source's angel clause is retained in full.
+- John 5:4,7 uses “pool” for מעמודיתא; CAL explicitly gives Syriac “basin, pool” alongside baptism/ablution (https://cal.huc.edu/getlex.php?coord=620441037&word=12). The auxiliary after the first descent stays with that predicate, followed by the explicit stirring “of the waters.”
+- John 5:6-15 preserves the request to be healed, the lack of a helper and another person's prior descent, the bed/walk commands, the immediate healing, Sabbath objection, and later temple encounter. John 5:13 renders the withdrawal with “himself,” without treating the ethical/reflexive dative as a newly introduced recipient.
+- John 5:16 retains the causal explanation and active-participle-plus-HWA aspect: the Jews “were persecuting” and “were seeking,” because Jesus “was doing these things” on the Sabbath. The initial ד can introduce a causal subordinate clause; see Younansardaroud §14.6 (https://d-nb.info/1184881278/34#page=140).
+- John 5:17-19 distinguishes Jesus' short first answer, the narrative reaction, and the ensuing discourse. The reaction's יתיראית remains “all the more,” followed by the Sabbath and Father/equality claims.
+- John 5:19-27 retains the Father/Son working, loving, showing, raising, life-giving, judgment, and honor clauses; the repeated “also” particles and the hearing/believing/passing-from-death clauses remain explicit. Authority “also to execute judgment” is retained at John 5:27.
+- John 5:28 begins with the actual stored clause דברה הו דינ דאנשא, rendered “But as for his being the Son of Man,” followed by “do not marvel at this.” It is a clause about the subject, not a vocative addressed to the hearers. The clause stays linked to its actual John 5:28 positions despite the different boundary in the supplied reference; hearing and coming from the graves lead to both resurrection outcomes.
+- John 5:30-38 keeps the own-will/sender's-will contrast and the distinct testimonies of the speaker, John, the works, and the Father. John 5:35 renders דתשתבהרונ as “take pride,” consistent with CAL's reflexive “boast, be proud” sense (https://cal.huc.edu/oneentry.php?cits=all&lemma=%24bhr+V).
+- John 5:39 remains the imperative “Search the Scriptures,” with the relative “in which you think you have eternal life” and their testimony about Jesus. John 5:40-44 retains unwillingness to come, eternal life, human glory, God's love, the Father's name, another's own name, and glory from “the only God.”
+- John 5:45 preserves the source's למא as a contextual question, “Do you think,” followed by Moses as accuser and the hope placed in him; CAL allows the general-interrogative use (https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c). John 5:46-47 retains both Moses' writing about the speaker and the final writings/words belief question.
