@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-27, 2 John, 3 John, and Jude
-(1,104 of 7,958 Peshitta verses; 6,854 remain). Matthew 28 is next.
+Current coverage: Matthew 1-28, 2 John, 3 John, and Jude
+(1,124 of 7,958 Peshitta verses; 6,834 remain). Mark 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -147,3 +147,12 @@ Source checks for Matthew 27:
   description rather than making the rising verb passive.
 - In 27:47 the past auxiliary belongs to "were saying". The explicit
   demonstrative then begins their claim: "This one calls for Elijah."
+
+Source checks for Matthew 28:
+
+- In 28:1 the evening wording and the first-day-of-the-week idiom are
+  retained, without replacing the source timing with a different formulation.
+- In 28:10 the possessive in "my brothers" is first person; the morphology
+  dataset uses person code 3 for first person.
+- The distinct verbs in 28:19 and 28:20 are rendered "instruct" and "teach",
+  respectively.
