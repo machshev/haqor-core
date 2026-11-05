@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-10, 2 John, 3 John, and Jude
-(2,314 of 7,958 Peshitta verses; 5,644 remain). Luke 11 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-11, 2 John, 3 John, and Jude
+(2,368 of 7,958 Peshitta verses; 5,590 remain). Luke 12 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -586,3 +586,32 @@ Source checks for Luke 10:
 - In 10:39 Mary listens to the words of "our Lord", while Martha says
   "My Lord" in 10:40. In 10:42 Mary's portion is good, without an added
   comparative, and it will not be taken from her.
+
+Source checks for Luke 11:
+
+- In 11:1 the address is "Our Lord". In 11:2 the prayer explicitly has
+  "Our Father in heaven" and the petition for his will on earth as in
+  heaven. In 11:3 the bread is "of our need"; in 11:4 sins are forgiven,
+  while the following clause names everyone indebted to us.
+- In 11:12 `bartha` means egg in this context, despite the incomplete
+  supplied glosses. The [Comprehensive Aramaic Lexicon's egg sense](https://cal.huc.edu/cal_entry_web.php?lemma=brh+N)
+  gives Syriac textual examples, including a stork egg and a bird from
+  its egg. The source word is retained without substituting another form.
+- In 11:15 the demonstrative means "this one", the subject casting out
+  demons. In 11:19 the sons cast them out "by what means", and those sons
+  become the judges. In 11:20 the finger of God is explicit.
+- In 11:25 the return is conditional, "if". In 11:26 both comparisons
+  retain "worse than". In 11:27 the woman speaks to him, and in 11:28
+  he speaks to her. In 11:29 Jonah's prophet title is explicit.
+- In 11:34 the eye is upright/simple, paired with evil. In 11:36 the
+  second illumination predicate begins after the dark-part clause.
+- In 11:37 Jesus enters and reclines after the invitation. In 11:38 the
+  washing precedes the meal. In 11:41 what is available is given as alms,
+  and the final clean predicate is present.
+- In 11:44 scribes, Pharisees, and hypocrites are explicit. In 11:46 one
+  of their fingers remains part of the accusation. In 11:49 persecution
+  precedes killing in the text; in 11:51 temple precedes altar.
+- In 11:52 keys are plural, and taking, entering, and hindering are past.
+  In 11:53 Jesus is actively saying these things; Pael `tks` means
+  contradict/rebut, as documented in the [CAL entry](https://cal.huc.edu/cal_entry_web.php?lemma=tks+V).
+  In 11:54 the final two-word idiom means accusing him, rather than eating.
