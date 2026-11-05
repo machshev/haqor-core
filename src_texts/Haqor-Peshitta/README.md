@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-5, 2 John, 3 John, and Jude
-(3,166 of 7,958 Peshitta verses; 4,792 remain). John 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-6, 2 John, 3 John, and Jude
+(3,237 of 7,958 Peshitta verses; 4,721 remain). John 7 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1278,3 +1278,16 @@ Source checks for John 5:
 - John 5:30-38 keeps the own-will/sender's-will contrast and the distinct testimonies of the speaker, John, the works, and the Father. John 5:35 renders דתשתבהרונ as “take pride,” consistent with CAL's reflexive “boast, be proud” sense (https://cal.huc.edu/oneentry.php?cits=all&lemma=%24bhr+V).
 - John 5:39 remains the imperative “Search the Scriptures,” with the relative “in which you think you have eternal life” and their testimony about Jesus. John 5:40-44 retains unwillingness to come, eternal life, human glory, God's love, the Father's name, another's own name, and glory from “the only God.”
 - John 5:45 preserves the source's למא as a contextual question, “Do you think,” followed by Moses as accuser and the hope placed in him; CAL allows the general-interrogative use (https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c). John 5:46-47 retains both Moses' writing about the speaker and the final writings/words belief question.
+
+Source checks for John 6:
+
+- John 6:1-6 retains Galilee/Tiberias, the mountain, the near Jewish Passover feast, Philip, and Jesus' testing question and prior knowledge. The feeding account keeps the two hundred denarii, five barley loaves, two fish, five thousand, and twelve baskets explicit.
+- John 6:13 preserves the attachment of the fragments left for those who had eaten “from the five barley loaves”; the from-phrase belongs to the loaves, not to the people. John 6:14-15 keeps the prophet claim distinct from the crowd's intended seizure and kingship.
+- John 6:19 retains the generic travel verb and “about twenty-five or thirty stadia,” rather than importing a rowing verb. John 6:20-21 renders the identity reply “It is I,” willingness to take him into the boat, and the time clause before the boat's arrival; willingness is distinct from gladness.
+- John 6:22 retains the sole boat and disciples' boarding, with “except the one” as natural conditional-exception English. Jesus is explicitly the subject who had not entered the boat with his disciples. John 6:23-24 keeps the other boats from Tiberias, the bread/blessing location, and the crowd's movement to Capernaum.
+- John 6:25,34 retains “Our Rabbi” and “Our Lord.” John 6:27 links “remains” to its food noun and the fronted demonstrative להנא to “For God the Father has sealed this one,” keeping the Son-of-Man/giver and sealing clauses distinct.
+- John 6:32-40 preserves Moses' negative giving clause, the Father's true bread, hunger/thirst, the coming/believing promises, the sender's will and loss/raising contrasts, and the last-day raising. John 6:37 uses the plain negative “I will not cast out.”
+- John 6:45 retains the singular בנביא, vocalised בַּנבִֿיָא and marked singular in the source, as “in the prophet,” with causal “For” and “Therefore.” “From him” stays with learning, followed by coming to Jesus. The discourse introduced at John 6:43 continues through John 6:51.
+- John 6:50-58 preserves the recorded descent tense, the adjective חיא as “living” in “living bread,” the final active “I give for the life of the world,” and the body/give/us roles in the Jews' question. The body/blood, abiding, life, and last-day clauses remain explicit; John 6:58 retains manna and the fathers' death rather than inserting a second bread noun.
+- John 6:59-66 distinguishes synagogue narration, disciples' reaction, Jesus' reply and the narrator's knowledge explanation. John 6:60 takes מנ תלמידוהי as the partitive with “many,” yielding “many of his disciples, on hearing this,” rather than inventing outsiders hearing from them. John 6:62 retains the conditional question without supplying an apodosis; the Spirit/body/words and nonbelief clauses remain explicit.
+- John 6:67 retains the contextual yes/no question “Do you also want to leave?” CAL records למא as a general interrogative in Syriac direct speech (https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c). John 6:68-71 consistently uses Simon Cephas, retains “the Messiah, the Son of the living God,” the adversary predicate, Judas son of Simon Iscariot, and “one of the twelve.”
