@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-10, 2 John, 3 John, and Jude
-(1,549 of 7,958 Peshitta verses; 6,409 remain). Mark 11 is next.
+Current coverage: Matthew 1-28, Mark 1-11, 2 John, 3 John, and Jude
+(1,582 of 7,958 Peshitta verses; 6,376 remain). Mark 12 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -283,3 +283,14 @@ Source checks for Mark 10:
 - In 10:46 the source names Timaeus and then son of Timaeus. In 10:52 the
   imperative is "See", and the ending describes going along the way;
   no following-after-him phrase is supplied from the reference translation.
+
+Source checks for Mark 11:
+
+- In 11:2 the final word includes the command to bring the colt. In 11:3
+  the title is "Our Lord", and "immediately" belongs to sending it here.
+- In 11:6 the plural pronoun is the object of commanding: Jesus commanded
+  them. In 11:22 the possession construction expresses having faith in God.
+- In 11:23 both predicates are retained: believing that what is said will
+  happen, and having whatever is said. The mountain command ends at the sea.
+- In 11:25 the grievance is something the hearers have against someone.
+  The negative conditional and its consequence in 11:26 remain in full.
