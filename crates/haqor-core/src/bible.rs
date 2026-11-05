@@ -1296,6 +1296,55 @@ pub struct ApologeticAudience {
     pub differ: Vec<String>,
 }
 
+/// A book outline of Haqor's (see `haqor-db-gen`'s `outlines` module): the
+/// structure of a book or a stretch of books as a tree of sections — the
+/// Psalms' books, collections and psalms, the Torah's weekly portions.
+#[derive(Debug, Clone, PartialEq)]
+pub struct Outline {
+    pub key: String,
+    pub title: String,
+    pub note: String,
+    /// The facts its sections are indexed by, like a psalm's author, in
+    /// order.
+    pub facets: Vec<OutlineFacet>,
+    /// Every section, in order, each parent before its children.
+    pub sections: Vec<OutlineSection>,
+}
+
+/// A fact an [`Outline`]'s sections are indexed by.
+#[derive(Debug, Clone, PartialEq)]
+pub struct OutlineFacet {
+    pub key: String,
+    pub title: String,
+}
+
+/// A section of an [`Outline`]: a book of the Psalms, a collection, a psalm.
+#[derive(Debug, Clone, PartialEq)]
+pub struct OutlineSection {
+    /// The index in [`Outline::sections`] of the section holding it; `None`
+    /// at the top.
+    pub parent: Option<u32>,
+    /// Its verses, in the corpus numbering: a psalm's take in its title.
+    pub span: VerseSpan,
+    pub title: String,
+    /// A line under the title, or empty.
+    pub subtitle: String,
+    /// The heading the text itself gives it, like a psalm's title, or empty.
+    pub superscription: String,
+    pub note: String,
+    /// Its values of the outline's facets, in the facets' order; a facet it
+    /// has none of is left out.
+    pub facts: Vec<OutlineFact>,
+}
+
+/// A section's values of one [`OutlineFacet`].
+#[derive(Debug, Clone, PartialEq)]
+pub struct OutlineFact {
+    /// The facet's key.
+    pub facet: String,
+    pub values: Vec<String>,
+}
+
 /// One step of an [`Apologetic`]'s argument.
 #[derive(Debug, Clone, PartialEq)]
 pub struct ApologeticPoint {
@@ -5569,6 +5618,89 @@ impl Bible {
         Ok(entries)
     }
 
+    /// Every book outline of Haqor's, in the file's order, each with all its
+    /// sections; empty for a database built without them. There are few
+    /// enough to send whole.
+    pub fn outlines(&self) -> rusqlite::Result<Vec<Outline>> {
+        if !self.has_table("outline")? {
+            return Ok(Vec::new());
+        }
+        let mut outlines = self
+            .db
+            .prepare_cached("SELECT ord, key, title, note, facets FROM data.outline ORDER BY ord")?
+            .query_map([], |row| {
+                let facets: String = row.get(4)?;
+                let facets: serde_json::Value = serde_json::from_str(&facets).unwrap_or_default();
+                Ok((
+                    row.get::<_, i64>(0)?,
+                    Outline {
+                        key: row.get(1)?,
+                        title: row.get(2)?,
+                        note: row.get(3)?,
+                        facets: facets
+                            .as_array()
+                            .into_iter()
+                            .flatten()
+                            .map(|f| OutlineFacet {
+                                key: f[0].as_str().unwrap_or_default().to_string(),
+                                title: f[1].as_str().unwrap_or_default().to_string(),
+                            })
+                            .collect(),
+                        sections: Vec::new(),
+                    },
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        let index: HashMap<i64, usize> = outlines
+            .iter()
+            .enumerate()
+            .map(|(i, (ord, _))| (*ord, i))
+            .collect();
+        let mut sections = self.db.prepare_cached(
+            "SELECT outline, parent, ref, end_ref, title, subtitle, superscription, note, facts \
+             FROM data.outline_section ORDER BY outline, ord",
+        )?;
+        let rows = sections.query_map([], |row| {
+            let facts: String = row.get(8)?;
+            let facts: serde_json::Value = serde_json::from_str(&facts).unwrap_or_default();
+            Ok((
+                row.get::<_, i64>(0)?,
+                OutlineSection {
+                    parent: row.get(1)?,
+                    span: VerseSpan {
+                        first: VerseRef::unpack(row.get(2)?),
+                        last: VerseRef::unpack(row.get(3)?),
+                    },
+                    title: row.get(4)?,
+                    subtitle: row.get(5)?,
+                    superscription: row.get(6)?,
+                    note: row.get(7)?,
+                    facts: facts
+                        .as_array()
+                        .into_iter()
+                        .flatten()
+                        .map(|f| OutlineFact {
+                            facet: f[0].as_str().unwrap_or_default().to_string(),
+                            values: f[1]
+                                .as_array()
+                                .into_iter()
+                                .flatten()
+                                .filter_map(|v| v.as_str().map(str::to_string))
+                                .collect(),
+                        })
+                        .collect(),
+                },
+            ))
+        })?;
+        for row in rows {
+            let (outline, section) = row?;
+            if let Some(&i) = index.get(&outline) {
+                outlines[i].1.sections.push(section);
+            }
+        }
+        Ok(outlines.into_iter().map(|(_, o)| o).collect())
+    }
+
     /// The prophecies one verse belongs to: as part of a prophecy's passage,
     /// or of a passage fulfilling one.
     pub fn verse_prophecies(
@@ -8287,6 +8419,49 @@ mod tests {
 
     /// A prophecy is found from its own passage and from a fulfilment; the
     /// listing filters by book, theme and whether it is messianic.
+    /// The outlines come back whole: the Psalms in their five books, each
+    /// psalm taking in its title, with its author.
+    #[test]
+    fn outlines_read_whole() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        let outlines = bible.outlines().unwrap();
+        if outlines.is_empty() {
+            eprintln!("skipping: data/haqor.db has no outline tables");
+            return;
+        }
+        let psalms = outlines.iter().find(|o| o.key == "psalms").unwrap();
+        assert!(psalms.facets.iter().any(|f| f.key == "author"));
+        let books = psalms.sections.iter().filter(|s| s.parent.is_none());
+        assert_eq!(books.count(), 5);
+        // Psalm 51's title is verses 1-2 of the Hebrew text.
+        let psalm = psalms
+            .sections
+            .iter()
+            .find(|s| s.title == "Psalm 51")
+            .unwrap();
+        assert_eq!(
+            (
+                psalm.span.first.book,
+                psalm.span.first.chapter,
+                psalm.span.first.verse
+            ),
+            (27, 51, 1)
+        );
+        assert!(psalm.superscription.contains("Bathsheba"));
+        let parent = &psalms.sections[psalm.parent.unwrap() as usize];
+        assert_eq!(parent.title, "Psalms of David");
+        assert_eq!(
+            psalm
+                .facts
+                .iter()
+                .find(|f| f.facet == "author")
+                .unwrap()
+                .values,
+            vec!["David".to_string()]
+        );
+    }
+
     #[test]
     fn prophecies_link_both_ways() {
         require_data!();

@@ -1,0 +1,429 @@
+{
+  "outlines": [
+    {
+      "id": "psalms",
+      "title": "The Psalms",
+      "note": "Five books, each closing with a blessing of Yahweh (41:13; 72:18-19; 89:52; 106:48; and Psalm 150 for the last), gathered from the collections of David, the sons of Korah, Asaph and others. A psalm's title stands in the Hebrew text as its first verse or two, and names its author, its kind, its music and at times its occasion.",
+      "contiguous": true,
+      "facets": [
+        {"id": "author", "title": "Author"},
+        {"id": "kind", "title": "Kind"},
+        {"id": "occasion", "title": "Occasion"}
+      ],
+      "sections": [
+        {"title": "Book One", "subtitle": "Psalms 1–41", "passage": "Psa.1-41", "note": "Almost all of David; it closes with a blessing (41:13).", "sections": [
+          {"title": "The gateway", "subtitle": "Psalms 1–2", "passage": "Psa.1-2", "note": "Two untitled psalms open the whole book: the man blessed in Yahweh's law (1:1), and all blessed who trust in his anointed king (2:12).", "sections": [
+            {"title": "Psalm 1", "subtitle": "The two ways", "passage": "Psa.1", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 2", "subtitle": "Yahweh's king in Zion", "passage": "Psa.2", "facts": {"author": "David"}, "note": "Untitled in the Hebrew; Acts 4:25-26 names David as its author. Quoted of Christ in Acts 13:33 and Hebrews 1:5; 5:5."}
+          ]},
+          {"title": "Psalms of David", "subtitle": "Psalms 3–41", "passage": "Psa.3-41", "sections": [
+            {"title": "Psalm 3", "subtitle": "Many rise against me", "passage": "Psa.3", "superscription": "A psalm of David, when he fled from the face of Absalom his son.", "facts": {"author": "David", "kind": "Psalm", "occasion": "Absalom's revolt"}, "note": "2 Samuel 15–18."},
+            {"title": "Psalm 4", "subtitle": "An evening prayer", "passage": "Psa.4", "superscription": "For the chief musician; with stringed instruments. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 5", "subtitle": "A morning prayer", "passage": "Psa.5", "superscription": "For the chief musician; on the flutes. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 6", "subtitle": "Rebuke me not in your anger", "passage": "Psa.6", "superscription": "For the chief musician; with stringed instruments; on Sheminith. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 7", "subtitle": "Judge me, Yahweh", "passage": "Psa.7", "superscription": "A shiggaion of David, which he sang to Yahweh concerning the words of Cush the Benjamite.", "facts": {"author": "David", "kind": "Shiggaion", "occasion": "Saul's pursuit"}, "note": "Cush is not named elsewhere; a Benjamite, of Saul's own tribe, he was likely one of the men who slandered David to Saul (1 Samuel 24:9)."},
+            {"title": "Psalm 8", "subtitle": "The son of man crowned", "passage": "Psa.8", "superscription": "For the chief musician; on Gittith. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}, "note": "Hebrews 2:6-9 reads it of Christ."},
+            {"title": "Psalm 9", "subtitle": "Yahweh judges the nations", "passage": "Psa.9", "superscription": "For the chief musician; on “The Death of the Son.” A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}, "note": "Psalms 9 and 10 make one acrostic, and the Greek Septuagint joins them."},
+            {"title": "Psalm 10", "subtitle": "Why do you stand far off?", "passage": "Psa.10", "facts": {"author": "Unnamed"}, "note": "Untitled; it carries on Psalm 9's acrostic."},
+            {"title": "Psalm 11", "subtitle": "In Yahweh I take refuge", "passage": "Psa.11", "superscription": "For the chief musician. Of David.", "facts": {"author": "David"}},
+            {"title": "Psalm 12", "subtitle": "Help, Yahweh", "passage": "Psa.12", "superscription": "For the chief musician; on Sheminith. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 13", "subtitle": "How long, Yahweh?", "passage": "Psa.13", "superscription": "For the chief musician. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 14", "subtitle": "The fool says, No God", "passage": "Psa.14", "superscription": "For the chief musician. Of David.", "facts": {"author": "David"}, "note": "Psalm 53 gives it again, with God for Yahweh. Romans 3:10-12."},
+            {"title": "Psalm 15", "subtitle": "Who may dwell on your holy hill?", "passage": "Psa.15", "superscription": "A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 16", "subtitle": "You will not leave my soul in the grave", "passage": "Psa.16", "superscription": "A miktam of David.", "facts": {"author": "David", "kind": "Miktam"}, "note": "Acts 2:25-31 and 13:35: David spoke of the resurrection of Christ."},
+            {"title": "Psalm 17", "subtitle": "Hear a just cause", "passage": "Psa.17", "superscription": "A prayer of David.", "facts": {"author": "David", "kind": "Prayer"}},
+            {"title": "Psalm 18", "subtitle": "Yahweh my rock", "passage": "Psa.18", "superscription": "For the chief musician. Of David the servant of Yahweh, who spoke to Yahweh the words of this song on the day that Yahweh delivered him from the hand of all his enemies, and from the hand of Saul.", "facts": {"author": "David", "kind": "Song", "occasion": "David's reign"}, "note": "2 Samuel 22 gives it again."},
+            {"title": "Psalm 19", "subtitle": "The heavens and the law declare", "passage": "Psa.19", "superscription": "For the chief musician. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 20", "subtitle": "In the day of trouble", "passage": "Psa.20", "superscription": "For the chief musician. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 21", "subtitle": "The king rejoices in your strength", "passage": "Psa.21", "superscription": "For the chief musician. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 22", "subtitle": "My God, my God, why have you forsaken me?", "passage": "Psa.22", "superscription": "For the chief musician; on “The Doe of the Dawn.” A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}, "note": "Christ's cry from the cross (Matthew 27:46); 22:18 at the cross (John 19:24); 22:22 in Hebrews 2:12."},
+            {"title": "Psalm 23", "subtitle": "Yahweh is my shepherd", "passage": "Psa.23", "superscription": "A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 24", "subtitle": "The King of glory comes in", "passage": "Psa.24", "superscription": "A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 25", "subtitle": "To you I lift up my soul", "passage": "Psa.25", "superscription": "Of David.", "facts": {"author": "David"}, "note": "An acrostic."},
+            {"title": "Psalm 26", "subtitle": "Vindicate me", "passage": "Psa.26", "superscription": "Of David.", "facts": {"author": "David"}},
+            {"title": "Psalm 27", "subtitle": "Yahweh is my light", "passage": "Psa.27", "superscription": "Of David.", "facts": {"author": "David"}},
+            {"title": "Psalm 28", "subtitle": "My rock, be not deaf to me", "passage": "Psa.28", "superscription": "Of David.", "facts": {"author": "David"}},
+            {"title": "Psalm 29", "subtitle": "The voice of Yahweh", "passage": "Psa.29", "superscription": "A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 30", "subtitle": "Mourning turned to dancing", "passage": "Psa.30", "superscription": "A psalm; a song at the dedication of the house. Of David.", "facts": {"author": "David", "kind": ["Psalm", "Song"]}},
+            {"title": "Psalm 31", "subtitle": "Into your hand I commit my spirit", "passage": "Psa.31", "superscription": "For the chief musician. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}, "note": "Christ's last words on the cross (Luke 23:46)."},
+            {"title": "Psalm 32", "subtitle": "Blessed is the one forgiven", "passage": "Psa.32", "superscription": "A maskil of David.", "facts": {"author": "David", "kind": "Maskil"}, "note": "Romans 4:6-8."},
+            {"title": "Psalm 33", "subtitle": "Sing for joy, you righteous", "passage": "Psa.33", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 34", "subtitle": "Taste and see", "passage": "Psa.34", "superscription": "Of David, when he changed his behaviour before Abimelech, who drove him away, and he departed.", "facts": {"author": "David", "occasion": "Saul's pursuit"}, "note": "1 Samuel 21:10-15, where the king of Gath is Achish: Abimelech was a title of the Philistine kings (Genesis 20; 26). An acrostic."},
+            {"title": "Psalm 35", "subtitle": "Contend with those who contend with me", "passage": "Psa.35", "superscription": "Of David.", "facts": {"author": "David"}, "note": "35:19 in John 15:25."},
+            {"title": "Psalm 36", "subtitle": "The wicked, and your faithfulness", "passage": "Psa.36", "superscription": "For the chief musician. Of the servant of Yahweh, of David.", "facts": {"author": "David"}},
+            {"title": "Psalm 37", "subtitle": "Fret not because of evildoers", "passage": "Psa.37", "superscription": "Of David.", "facts": {"author": "David"}, "note": "An acrostic. The meek shall inherit the earth (37:11; Matthew 5:5)."},
+            {"title": "Psalm 38", "subtitle": "Rebuke me not in your wrath", "passage": "Psa.38", "superscription": "A psalm of David, to bring to remembrance.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 39", "subtitle": "My days a handbreadth", "passage": "Psa.39", "superscription": "For the chief musician; for Jeduthun. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 40", "subtitle": "I delight to do your will", "passage": "Psa.40", "superscription": "For the chief musician. Of David. A psalm.", "facts": {"author": "David", "kind": "Psalm"}, "note": "40:6-8 in Hebrews 10:5-9, of Christ. 40:13-17 is Psalm 70."},
+            {"title": "Psalm 41", "subtitle": "Blessed is he who considers the poor", "passage": "Psa.41", "superscription": "For the chief musician. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}, "note": "41:9 in John 13:18, of Judas. 41:13 closes Book One."}
+          ]}
+        ]},
+        {"title": "Book Two", "subtitle": "Psalms 42–72", "passage": "Psa.42-72", "note": "It closes with a blessing, and with the words: the prayers of David the son of Jesse are ended (72:18-20).", "sections": [
+          {"title": "Of the sons of Korah", "subtitle": "Psalms 42–49", "passage": "Psa.42-49", "note": "The Levites descended from the Korah who rebelled (Numbers 16; 26:11), singers in the house of Yahweh (1 Chronicles 6:31-38).", "sections": [
+            {"title": "Psalm 42", "subtitle": "As the deer pants", "passage": "Psa.42", "superscription": "For the chief musician. A maskil of the sons of Korah.", "facts": {"author": "Sons of Korah", "kind": "Maskil"}, "note": "Psalms 42 and 43 share a refrain (42:5, 11; 43:5)."},
+            {"title": "Psalm 43", "subtitle": "Send out your light and your truth", "passage": "Psa.43", "facts": {"author": "Unnamed"}, "note": "Untitled; it carries on Psalm 42 and shares its refrain."},
+            {"title": "Psalm 44", "subtitle": "We have heard with our ears", "passage": "Psa.44", "superscription": "For the chief musician. A maskil of the sons of Korah.", "facts": {"author": "Sons of Korah", "kind": "Maskil"}, "note": "44:22 in Romans 8:36."},
+            {"title": "Psalm 45", "subtitle": "The king's wedding song", "passage": "Psa.45", "superscription": "For the chief musician; on “Lilies.” A maskil of the sons of Korah; a song of loves.", "facts": {"author": "Sons of Korah", "kind": ["Maskil", "Song"]}, "note": "45:6-7 in Hebrews 1:8-9, of Christ."},
+            {"title": "Psalm 46", "subtitle": "God is our refuge", "passage": "Psa.46", "superscription": "For the chief musician. Of the sons of Korah; on Alamoth. A song.", "facts": {"author": "Sons of Korah", "kind": "Song"}},
+            {"title": "Psalm 47", "subtitle": "God has gone up with a shout", "passage": "Psa.47", "superscription": "For the chief musician. A psalm of the sons of Korah.", "facts": {"author": "Sons of Korah", "kind": "Psalm"}},
+            {"title": "Psalm 48", "subtitle": "The city of the great King", "passage": "Psa.48", "superscription": "A song; a psalm of the sons of Korah.", "facts": {"author": "Sons of Korah", "kind": ["Song", "Psalm"]}},
+            {"title": "Psalm 49", "subtitle": "Man in honour does not abide", "passage": "Psa.49", "superscription": "For the chief musician. A psalm of the sons of Korah.", "facts": {"author": "Sons of Korah", "kind": "Psalm"}}
+          ]},
+          {"title": "Of Asaph", "subtitle": "Psalm 50", "passage": "Psa.50", "note": "Asaph, David's chief singer (1 Chronicles 16:5-7), a seer (2 Chronicles 29:30). His other psalms open Book Three.", "sections": [
+            {"title": "Psalm 50", "subtitle": "The Mighty One summons the earth", "passage": "Psa.50", "superscription": "A psalm of Asaph.", "facts": {"author": "Asaph", "kind": "Psalm"}}
+          ]},
+          {"title": "Psalms of David", "subtitle": "Psalms 51–71", "passage": "Psa.51-71", "sections": [
+            {"title": "Psalm 51", "subtitle": "Create in me a clean heart", "passage": "Psa.51", "superscription": "For the chief musician. A psalm of David, when Nathan the prophet came to him, after he had gone in to Bathsheba.", "facts": {"author": "David", "kind": "Psalm", "occasion": "David's reign"}, "note": "2 Samuel 11–12."},
+            {"title": "Psalm 52", "subtitle": "Why do you boast in evil?", "passage": "Psa.52", "superscription": "For the chief musician. A maskil of David, when Doeg the Edomite came and told Saul, and said to him, “David has come to the house of Ahimelech.”", "facts": {"author": "David", "kind": "Maskil", "occasion": "Saul's pursuit"}, "note": "1 Samuel 21:7; 22:9-23."},
+            {"title": "Psalm 53", "subtitle": "The fool says, No God", "passage": "Psa.53", "superscription": "For the chief musician; on Mahalath. A maskil of David.", "facts": {"author": "David", "kind": "Maskil"}, "note": "Psalm 14 again, with God for Yahweh."},
+            {"title": "Psalm 54", "subtitle": "Save me by your name", "passage": "Psa.54", "superscription": "For the chief musician; with stringed instruments. A maskil of David, when the Ziphites came and said to Saul, “Is not David hiding himself among us?”", "facts": {"author": "David", "kind": "Maskil", "occasion": "Saul's pursuit"}, "note": "1 Samuel 23:19; 26:1."},
+            {"title": "Psalm 55", "subtitle": "Wings like a dove", "passage": "Psa.55", "superscription": "For the chief musician; with stringed instruments. A maskil of David.", "facts": {"author": "David", "kind": "Maskil"}},
+            {"title": "Psalm 56", "subtitle": "In God I trust", "passage": "Psa.56", "superscription": "For the chief musician; on “The Silent Dove of Far-off Places.” Of David. A miktam, when the Philistines seized him in Gath.", "facts": {"author": "David", "kind": "Miktam", "occasion": "Saul's pursuit"}, "note": "1 Samuel 21:10-15."},
+            {"title": "Psalm 57", "subtitle": "In the shadow of your wings", "passage": "Psa.57", "superscription": "For the chief musician; “Do Not Destroy.” Of David. A miktam, when he fled from Saul, in the cave.", "facts": {"author": "David", "kind": "Miktam", "occasion": "Saul's pursuit"}, "note": "1 Samuel 22:1 or 24:3. 57:7-11 is taken into Psalm 108."},
+            {"title": "Psalm 58", "subtitle": "Surely there is a God who judges", "passage": "Psa.58", "superscription": "For the chief musician; “Do Not Destroy.” Of David. A miktam.", "facts": {"author": "David", "kind": "Miktam"}},
+            {"title": "Psalm 59", "subtitle": "Deliver me from my enemies", "passage": "Psa.59", "superscription": "For the chief musician; “Do Not Destroy.” Of David. A miktam, when Saul sent, and they watched the house to kill him.", "facts": {"author": "David", "kind": "Miktam", "occasion": "Saul's pursuit"}, "note": "1 Samuel 19:11."},
+            {"title": "Psalm 60", "subtitle": "Through God we shall do valiantly", "passage": "Psa.60", "superscription": "For the chief musician; on “The Lily of Testimony.” A miktam of David, to teach; when he fought with Aram-naharaim and with Aram-zobah, and Joab returned and struck twelve thousand of Edom in the Valley of Salt.", "facts": {"author": "David", "kind": "Miktam", "occasion": "David's reign"}, "note": "2 Samuel 8:3-14; 1 Chronicles 18. 60:5-12 is taken into Psalm 108."},
+            {"title": "Psalm 61", "subtitle": "Lead me to the rock", "passage": "Psa.61", "superscription": "For the chief musician; on a stringed instrument. Of David.", "facts": {"author": "David"}},
+            {"title": "Psalm 62", "subtitle": "My soul waits in silence for God", "passage": "Psa.62", "superscription": "For the chief musician; for Jeduthun. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 63", "subtitle": "My soul thirsts for you", "passage": "Psa.63", "superscription": "A psalm of David, when he was in the wilderness of Judah.", "facts": {"author": "David", "kind": "Psalm", "occasion": "Absalom's revolt"}, "note": "The king of 63:11 is David himself, fleeing Absalom across the wilderness (2 Samuel 15:23-28; 16:2, 14)."},
+            {"title": "Psalm 64", "subtitle": "Hide me from the secret plots", "passage": "Psa.64", "superscription": "For the chief musician. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 65", "subtitle": "Praise waits for you in Zion", "passage": "Psa.65", "superscription": "For the chief musician. A psalm of David. A song.", "facts": {"author": "David", "kind": ["Psalm", "Song"]}},
+            {"title": "Psalm 66", "subtitle": "Come and see the works of God", "passage": "Psa.66", "superscription": "For the chief musician. A song; a psalm.", "facts": {"author": "Unnamed", "kind": ["Song", "Psalm"]}},
+            {"title": "Psalm 67", "subtitle": "God be gracious to us", "passage": "Psa.67", "superscription": "For the chief musician; with stringed instruments. A psalm; a song.", "facts": {"author": "Unnamed", "kind": ["Psalm", "Song"]}},
+            {"title": "Psalm 68", "subtitle": "Let God arise", "passage": "Psa.68", "superscription": "For the chief musician. Of David. A psalm; a song.", "facts": {"author": "David", "kind": ["Psalm", "Song"]}, "note": "68:18 in Ephesians 4:8."},
+            {"title": "Psalm 69", "subtitle": "The waters have come in to my soul", "passage": "Psa.69", "superscription": "For the chief musician; on “Lilies.” Of David.", "facts": {"author": "David"}, "note": "69:9 in John 2:17 and Romans 15:3; 69:21 at the cross (Matthew 27:34, 48); 69:25 in Acts 1:20."},
+            {"title": "Psalm 70", "subtitle": "Make haste to help me", "passage": "Psa.70", "superscription": "For the chief musician. Of David, to bring to remembrance.", "facts": {"author": "David"}, "note": "Psalm 40:13-17 again."},
+            {"title": "Psalm 71", "subtitle": "My hope from my youth", "passage": "Psa.71", "facts": {"author": "Unnamed"}, "note": "Untitled; it follows on from Psalm 70."}
+          ]},
+          {"title": "Of Solomon", "subtitle": "Psalm 72", "passage": "Psa.72", "sections": [
+            {"title": "Psalm 72", "subtitle": "The king's son reigns", "passage": "Psa.72", "superscription": "Of Solomon.", "facts": {"author": "Solomon"}, "note": "Of Solomon, or for him: it prays for the king's son (72:1), and its last verse closes the prayers of David (72:20). The kingdom of Christ."}
+          ]}
+        ]},
+        {"title": "Book Three", "subtitle": "Psalms 73–89", "passage": "Psa.73-89", "note": "Mostly of Asaph and the sons of Korah; it closes with a blessing (89:52).", "sections": [
+          {"title": "Of Asaph", "subtitle": "Psalms 73–83", "passage": "Psa.73-83", "sections": [
+            {"title": "Psalm 73", "subtitle": "Surely God is good to Israel", "passage": "Psa.73", "superscription": "A psalm of Asaph.", "facts": {"author": "Asaph", "kind": "Psalm"}},
+            {"title": "Psalm 74", "subtitle": "Why have you cast us off for ever?", "passage": "Psa.74", "superscription": "A maskil of Asaph.", "facts": {"author": "Asaph", "kind": "Maskil"}},
+            {"title": "Psalm 75", "subtitle": "When I take the appointed time", "passage": "Psa.75", "superscription": "For the chief musician; “Do Not Destroy.” A psalm of Asaph; a song.", "facts": {"author": "Asaph", "kind": ["Psalm", "Song"]}},
+            {"title": "Psalm 76", "subtitle": "In Judah God is known", "passage": "Psa.76", "superscription": "For the chief musician; with stringed instruments. A psalm of Asaph; a song.", "facts": {"author": "Asaph", "kind": ["Psalm", "Song"]}},
+            {"title": "Psalm 77", "subtitle": "I remember the days of old", "passage": "Psa.77", "superscription": "For the chief musician; for Jeduthun. Of Asaph. A psalm.", "facts": {"author": "Asaph", "kind": "Psalm"}},
+            {"title": "Psalm 78", "subtitle": "Dark sayings of old", "passage": "Psa.78", "superscription": "A maskil of Asaph.", "facts": {"author": "Asaph", "kind": "Maskil"}, "note": "78:2 in Matthew 13:35."},
+            {"title": "Psalm 79", "subtitle": "The nations have come into your inheritance", "passage": "Psa.79", "superscription": "A psalm of Asaph.", "facts": {"author": "Asaph", "kind": "Psalm"}},
+            {"title": "Psalm 80", "subtitle": "Shepherd of Israel, restore us", "passage": "Psa.80", "superscription": "For the chief musician; on “Lilies. A Testimony.” Of Asaph. A psalm.", "facts": {"author": "Asaph", "kind": "Psalm"}},
+            {"title": "Psalm 81", "subtitle": "Sing aloud to God our strength", "passage": "Psa.81", "superscription": "For the chief musician; on Gittith. Of Asaph.", "facts": {"author": "Asaph"}},
+            {"title": "Psalm 82", "subtitle": "God judges among the gods", "passage": "Psa.82", "superscription": "A psalm of Asaph.", "facts": {"author": "Asaph", "kind": "Psalm"}, "note": "82:6 in John 10:34-36: the judges of Israel, to whom the word of God came."},
+            {"title": "Psalm 83", "subtitle": "Keep not silence, O God", "passage": "Psa.83", "superscription": "A song; a psalm of Asaph.", "facts": {"author": "Asaph", "kind": ["Song", "Psalm"]}}
+          ]},
+          {"title": "Of the sons of Korah", "subtitle": "Psalms 84–88", "passage": "Psa.84-88", "note": "With one of David's (86).", "sections": [
+            {"title": "Psalm 84", "subtitle": "How lovely are your dwellings", "passage": "Psa.84", "superscription": "For the chief musician; on Gittith. Of the sons of Korah. A psalm.", "facts": {"author": "Sons of Korah", "kind": "Psalm"}},
+            {"title": "Psalm 85", "subtitle": "You have favoured your land", "passage": "Psa.85", "superscription": "For the chief musician. Of the sons of Korah. A psalm.", "facts": {"author": "Sons of Korah", "kind": "Psalm"}},
+            {"title": "Psalm 86", "subtitle": "Incline your ear", "passage": "Psa.86", "superscription": "A prayer of David.", "facts": {"author": "David", "kind": "Prayer"}},
+            {"title": "Psalm 87", "subtitle": "Born in Zion", "passage": "Psa.87", "superscription": "Of the sons of Korah. A psalm; a song.", "facts": {"author": "Sons of Korah", "kind": ["Psalm", "Song"]}},
+            {"title": "Psalm 88", "subtitle": "My soul is full of troubles", "passage": "Psa.88", "superscription": "A song; a psalm of the sons of Korah. For the chief musician; on Mahalath Leannoth. A maskil of Heman the Ezrahite.", "facts": {"author": ["Sons of Korah", "Heman"], "kind": ["Song", "Psalm", "Maskil"]}, "note": "Heman, a singer of David's (1 Chronicles 6:33; 15:19), and a wise man (1 Kings 4:31)."}
+          ]},
+          {"title": "Of Ethan", "subtitle": "Psalm 89", "passage": "Psa.89", "sections": [
+            {"title": "Psalm 89", "subtitle": "I will sing of Yahweh's covenant faithfulness", "passage": "Psa.89", "superscription": "A maskil of Ethan the Ezrahite.", "facts": {"author": "Ethan", "kind": "Maskil"}, "note": "The covenant with David (2 Samuel 7), and the throne cast down. 89:52 closes Book Three."}
+          ]}
+        ]},
+        {"title": "Book Four", "subtitle": "Psalms 90–106", "passage": "Psa.90-106", "note": "Opening with Moses and mostly untitled, it proclaims that Yahweh reigns; it closes with a blessing (106:48).", "sections": [
+          {"title": "Moses' prayer and its answer", "subtitle": "Psalms 90–92", "passage": "Psa.90-92", "sections": [
+            {"title": "Psalm 90", "subtitle": "Lord, you have been our dwelling place", "passage": "Psa.90", "superscription": "A prayer of Moses the man of God.", "facts": {"author": "Moses", "kind": "Prayer"}, "note": "The oldest psalm, from the wilderness."},
+            {"title": "Psalm 91", "subtitle": "Under the shadow of the Almighty", "passage": "Psa.91", "facts": {"author": "Unnamed"}, "note": "91:11-12 was quoted to Jesus in the wilderness (Matthew 4:6)."},
+            {"title": "Psalm 92", "subtitle": "It is good to give thanks", "passage": "Psa.92", "superscription": "A psalm; a song for the Sabbath day.", "facts": {"author": "Unnamed", "kind": ["Psalm", "Song"]}}
+          ]},
+          {"title": "Yahweh reigns", "subtitle": "Psalms 93–100", "passage": "Psa.93-100", "note": "The kingdom of God: Yahweh is king, and comes to judge the earth (96:13; 98:9).", "sections": [
+            {"title": "Psalm 93", "subtitle": "Yahweh reigns, robed in majesty", "passage": "Psa.93", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 94", "subtitle": "God of vengeance, shine forth", "passage": "Psa.94", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 95", "subtitle": "Today, if you will hear his voice", "passage": "Psa.95", "facts": {"author": "David"}, "note": "Untitled in the Hebrew; Hebrews 4:7 says God spoke it in David. 95:7-11 in Hebrews 3:7–4:11."},
+            {"title": "Psalm 96", "subtitle": "Sing to Yahweh a new song", "passage": "Psa.96", "facts": {"author": "Unnamed"}, "note": "1 Chronicles 16:23-33 gives it, sung when the ark was brought to Zion."},
+            {"title": "Psalm 97", "subtitle": "Yahweh reigns; let the earth rejoice", "passage": "Psa.97", "facts": {"author": "Unnamed"}, "note": "97:7 in Hebrews 1:6."},
+            {"title": "Psalm 98", "subtitle": "He has done marvellous things", "passage": "Psa.98", "superscription": "A psalm.", "facts": {"author": "Unnamed", "kind": "Psalm"}},
+            {"title": "Psalm 99", "subtitle": "Holy is he", "passage": "Psa.99", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 100", "subtitle": "Make a joyful noise", "passage": "Psa.100", "superscription": "A psalm of thanksgiving.", "facts": {"author": "Unnamed", "kind": "Psalm"}}
+          ]},
+          {"title": "Of David, and of the afflicted", "subtitle": "Psalms 101–103", "passage": "Psa.101-103", "sections": [
+            {"title": "Psalm 101", "subtitle": "I will walk with a perfect heart", "passage": "Psa.101", "superscription": "Of David. A psalm.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 102", "subtitle": "The prayer of the afflicted", "passage": "Psa.102", "superscription": "A prayer of the afflicted, when he is faint, and pours out his complaint before Yahweh.", "facts": {"author": "Unnamed", "kind": "Prayer"}, "note": "102:25-27 in Hebrews 1:10-12, of Christ."},
+            {"title": "Psalm 103", "subtitle": "Bless Yahweh, my soul", "passage": "Psa.103", "superscription": "Of David.", "facts": {"author": "David"}}
+          ]},
+          {"title": "Creation and history", "subtitle": "Psalms 104–106", "passage": "Psa.104-106", "note": "Yahweh's works from creation (104) through the covenant with the fathers (105) to Israel's unfaithfulness and his mercy (106).", "sections": [
+            {"title": "Psalm 104", "subtitle": "Clothed with honour and majesty", "passage": "Psa.104", "facts": {"author": "Unnamed"}, "note": "Creation, in the order of the six days of Genesis 1."},
+            {"title": "Psalm 105", "subtitle": "Remember his covenant with Abraham", "passage": "Psa.105", "facts": {"author": "Unnamed"}, "note": "105:1-15 in 1 Chronicles 16:8-22."},
+            {"title": "Psalm 106", "subtitle": "We have sinned with our fathers", "passage": "Psa.106", "facts": {"author": "Unnamed"}, "note": "106:1, 47-48 in 1 Chronicles 16:34-36. 106:48 closes Book Four."}
+          ]}
+        ]},
+        {"title": "Book Five", "subtitle": "Psalms 107–150", "passage": "Psa.107-150", "note": "The redeemed gathered, the songs of the pilgrim feasts, and a closing crescendo of praise.", "sections": [
+          {"title": "The redeemed gathered", "subtitle": "Psalm 107", "passage": "Psa.107", "sections": [
+            {"title": "Psalm 107", "subtitle": "Let the redeemed of Yahweh say so", "passage": "Psa.107", "facts": {"author": "Unnamed"}}
+          ]},
+          {"title": "Of David", "subtitle": "Psalms 108–110", "passage": "Psa.108-110", "sections": [
+            {"title": "Psalm 108", "subtitle": "My heart is steadfast", "passage": "Psa.108", "superscription": "A song; a psalm of David.", "facts": {"author": "David", "kind": ["Song", "Psalm"]}, "note": "Psalm 57:7-11 and 60:5-12 joined."},
+            {"title": "Psalm 109", "subtitle": "Let another take his office", "passage": "Psa.109", "superscription": "For the chief musician. Of David. A psalm.", "facts": {"author": "David", "kind": "Psalm"}, "note": "109:8 in Acts 1:20, of Judas."},
+            {"title": "Psalm 110", "subtitle": "Sit at my right hand", "passage": "Psa.110", "superscription": "Of David. A psalm.", "facts": {"author": "David", "kind": "Psalm"}, "note": "Jesus names David its author (Matthew 22:43-45). The psalm the New Testament quotes most: Acts 2:34-35; Hebrews 1:13; 5:6; 7:17."}
+          ]},
+          {"title": "Twin acrostics", "subtitle": "Psalms 111–112", "passage": "Psa.111-112", "note": "Each opens with Hallelujah, and each line begins with the next letter of the alphabet: the works of Yahweh, and the man who fears him.", "sections": [
+            {"title": "Psalm 111", "subtitle": "Great are the works of Yahweh", "passage": "Psa.111", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 112", "subtitle": "Blessed is the man who fears Yahweh", "passage": "Psa.112", "facts": {"author": "Unnamed"}}
+          ]},
+          {"title": "The Egyptian Hallel", "subtitle": "Psalms 113–118", "passage": "Psa.113-118", "note": "Sung at the Passover, remembering the exodus (114:1): after the supper Jesus and the disciples sang a hymn (Matthew 26:30).", "sections": [
+            {"title": "Psalm 113", "subtitle": "Who is like Yahweh our God?", "passage": "Psa.113", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 114", "subtitle": "When Israel went out of Egypt", "passage": "Psa.114", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 115", "subtitle": "Not to us, Yahweh", "passage": "Psa.115", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 116", "subtitle": "I love Yahweh, for he hears", "passage": "Psa.116", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 117", "subtitle": "Praise Yahweh, all nations", "passage": "Psa.117", "facts": {"author": "Unnamed"}, "note": "The shortest psalm; 117:1 in Romans 15:11."},
+            {"title": "Psalm 118", "subtitle": "The stone the builders rejected", "passage": "Psa.118", "facts": {"author": "Unnamed"}, "note": "118:22-23 in Matthew 21:42, Acts 4:11 and 1 Peter 2:7; 118:26 at the entry into Jerusalem (Matthew 21:9)."}
+          ]},
+          {"title": "The law", "subtitle": "Psalm 119", "passage": "Psa.119", "sections": [
+            {"title": "Psalm 119", "subtitle": "Your word is a lamp to my feet", "passage": "Psa.119", "facts": {"author": "Unnamed"}, "note": "An acrostic of 22 stanzas of eight verses, each verse of a stanza beginning with its letter; almost every verse names Yahweh's word."}
+          ]},
+          {"title": "Songs of ascents", "subtitle": "Psalms 120–134", "passage": "Psa.120-134", "note": "Songs of the going up to Jerusalem for the feasts (122:1-4).", "sections": [
+            {"title": "Psalm 120", "subtitle": "In my distress I cried", "passage": "Psa.120", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}},
+            {"title": "Psalm 121", "subtitle": "I lift up my eyes to the hills", "passage": "Psa.121", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}},
+            {"title": "Psalm 122", "subtitle": "Let us go to the house of Yahweh", "passage": "Psa.122", "superscription": "A song of ascents. Of David.", "facts": {"author": "David", "kind": "Song of ascents"}},
+            {"title": "Psalm 123", "subtitle": "To you I lift up my eyes", "passage": "Psa.123", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}},
+            {"title": "Psalm 124", "subtitle": "If Yahweh had not been for us", "passage": "Psa.124", "superscription": "A song of ascents. Of David.", "facts": {"author": "David", "kind": "Song of ascents"}},
+            {"title": "Psalm 125", "subtitle": "As the mountains surround Jerusalem", "passage": "Psa.125", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}},
+            {"title": "Psalm 126", "subtitle": "When Yahweh restored Zion", "passage": "Psa.126", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}},
+            {"title": "Psalm 127", "subtitle": "Unless Yahweh builds the house", "passage": "Psa.127", "superscription": "A song of ascents. Of Solomon.", "facts": {"author": "Solomon", "kind": "Song of ascents"}},
+            {"title": "Psalm 128", "subtitle": "Blessed is everyone who fears Yahweh", "passage": "Psa.128", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}},
+            {"title": "Psalm 129", "subtitle": "They have afflicted me from my youth", "passage": "Psa.129", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}},
+            {"title": "Psalm 130", "subtitle": "Out of the depths", "passage": "Psa.130", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}},
+            {"title": "Psalm 131", "subtitle": "Like a weaned child", "passage": "Psa.131", "superscription": "A song of ascents. Of David.", "facts": {"author": "David", "kind": "Song of ascents"}},
+            {"title": "Psalm 132", "subtitle": "Remember David", "passage": "Psa.132", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}, "note": "132:11 in Acts 2:30: the oath to David, of Christ."},
+            {"title": "Psalm 133", "subtitle": "Brothers dwelling together", "passage": "Psa.133", "superscription": "A song of ascents. Of David.", "facts": {"author": "David", "kind": "Song of ascents"}},
+            {"title": "Psalm 134", "subtitle": "Bless Yahweh in the night", "passage": "Psa.134", "superscription": "A song of ascents.", "facts": {"author": "Unnamed", "kind": "Song of ascents"}}
+          ]},
+          {"title": "Praise, and the exile", "subtitle": "Psalms 135–137", "passage": "Psa.135-137", "sections": [
+            {"title": "Psalm 135", "subtitle": "Praise the name of Yahweh", "passage": "Psa.135", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 136", "subtitle": "His covenant faithfulness is for ever", "passage": "Psa.136", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 137", "subtitle": "By the rivers of Babylon", "passage": "Psa.137", "facts": {"author": "Unnamed"}, "note": "Sung in the exile in Babylon."}
+          ]},
+          {"title": "Of David", "subtitle": "Psalms 138–145", "passage": "Psa.138-145", "sections": [
+            {"title": "Psalm 138", "subtitle": "I will praise you with my whole heart", "passage": "Psa.138", "superscription": "Of David.", "facts": {"author": "David"}},
+            {"title": "Psalm 139", "subtitle": "You have searched me and known me", "passage": "Psa.139", "superscription": "For the chief musician. Of David. A psalm.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 140", "subtitle": "Deliver me from the evil man", "passage": "Psa.140", "superscription": "For the chief musician. A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 141", "subtitle": "Let my prayer be set forth as incense", "passage": "Psa.141", "superscription": "A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 142", "subtitle": "My refuge in the cave", "passage": "Psa.142", "superscription": "A maskil of David, when he was in the cave. A prayer.", "facts": {"author": "David", "kind": ["Maskil", "Prayer"], "occasion": "Saul's pursuit"}, "note": "1 Samuel 22:1 or 24:3."},
+            {"title": "Psalm 143", "subtitle": "Enter not into judgment", "passage": "Psa.143", "superscription": "A psalm of David.", "facts": {"author": "David", "kind": "Psalm"}},
+            {"title": "Psalm 144", "subtitle": "Blessed be Yahweh my rock", "passage": "Psa.144", "superscription": "Of David.", "facts": {"author": "David"}},
+            {"title": "Psalm 145", "subtitle": "I will extol you, my God and King", "passage": "Psa.145", "superscription": "A praise of David.", "facts": {"author": "David", "kind": "Praise"}, "note": "An acrostic."}
+          ]},
+          {"title": "The final Hallel", "subtitle": "Psalms 146–150", "passage": "Psa.146-150", "note": "Each opens and closes with Hallelujah, praise Yahweh.", "sections": [
+            {"title": "Psalm 146", "subtitle": "Put not your trust in princes", "passage": "Psa.146", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 147", "subtitle": "He heals the broken-hearted", "passage": "Psa.147", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 148", "subtitle": "Praise him, sun and moon", "passage": "Psa.148", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 149", "subtitle": "Sing a new song in the assembly", "passage": "Psa.149", "facts": {"author": "Unnamed"}},
+            {"title": "Psalm 150", "subtitle": "Let everything that has breath praise Yahweh", "passage": "Psa.150", "facts": {"author": "Unnamed"}, "note": "It closes Book Five, and the whole book."}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "id": "proverbs",
+      "title": "The Proverbs",
+      "note": "A father's ten lectures to his son, with wisdom's own appeals between them (1–9), then the collections of sayings each headed in the text: Solomon's, the words of the wise, those Hezekiah's men copied out, Agur's and Lemuel's, and the woman of strength.",
+      "contiguous": true,
+      "facets": [
+        {"id": "author", "title": "Author"}
+      ],
+      "sections": [
+        {"title": "A father's instruction", "subtitle": "Proverbs 1–9", "passage": "Pro.1-9", "superscription": "The proverbs of Solomon the son of David, king of Israel.", "facts": {"author": "Solomon"}, "note": "Ten lectures, each opening My son, with interludes in which wisdom speaks for herself.", "sections": [
+          {"title": "Prologue", "subtitle": "To know wisdom and instruction", "passage": "Pro.1.1-7", "note": "The fear of Yahweh is the beginning of knowledge (1:7)."},
+          {"title": "Lecture 1", "subtitle": "Refuse the company of the violent", "passage": "Pro.1.8-19"},
+          {"title": "Interlude", "subtitle": "Wisdom cries in the street", "passage": "Pro.1.20-33"},
+          {"title": "Lecture 2", "subtitle": "Seek her as silver", "passage": "Pro.2"},
+          {"title": "Lecture 3", "subtitle": "Trust in Yahweh with all your heart", "passage": "Pro.3.1-12", "note": "3:11-12 in Hebrews 12:5-6."},
+          {"title": "Interlude", "subtitle": "Happy is the one who finds wisdom", "passage": "Pro.3.13-20"},
+          {"title": "Lecture 4", "subtitle": "Do not withhold good", "passage": "Pro.3.21-35", "note": "3:34 in James 4:6 and 1 Peter 5:5."},
+          {"title": "Lecture 5", "subtitle": "Get wisdom", "passage": "Pro.4.1-9"},
+          {"title": "Lecture 6", "subtitle": "The two paths", "passage": "Pro.4.10-19"},
+          {"title": "Lecture 7", "subtitle": "Keep your heart", "passage": "Pro.4.20-27"},
+          {"title": "Lecture 8", "subtitle": "Drink from your own cistern", "passage": "Pro.5"},
+          {"title": "Interlude", "subtitle": "Surety, sloth, and seven abominations", "passage": "Pro.6.1-19"},
+          {"title": "Lecture 9", "subtitle": "The adulteress costs a life", "passage": "Pro.6.20-35"},
+          {"title": "Lecture 10", "subtitle": "The young man void of understanding", "passage": "Pro.7"},
+          {"title": "Interlude", "subtitle": "Wisdom beside Yahweh at the creation", "passage": "Pro.8"},
+          {"title": "Interlude", "subtitle": "Wisdom's feast, and folly's", "passage": "Pro.9"}
+        ]},
+        {"title": "The proverbs of Solomon", "subtitle": "Proverbs 10:1–22:16", "passage": "Pro.10.1-22.16", "superscription": "The proverbs of Solomon.", "facts": {"author": "Solomon"}, "note": "375 sayings, mostly of two lines each.", "sections": [
+          {"title": "The righteous and the wicked", "subtitle": "Proverbs 10–15", "passage": "Pro.10-15", "note": "Mostly contrasts: the second line sets the opposite against the first."},
+          {"title": "Yahweh weighs the heart", "subtitle": "Proverbs 16:1–22:16", "passage": "Pro.16.1-22.16", "note": "Mostly sayings whose second line carries on the first."}
+        ]},
+        {"title": "The words of the wise", "subtitle": "Proverbs 22:17–24:22", "passage": "Pro.22.17-24.22", "superscription": "Incline your ear, and hear the words of the wise.", "facts": {"author": "The wise"}, "note": "Thirty sayings (22:20), addressed again to a son."},
+        {"title": "These also are of the wise", "subtitle": "Proverbs 24:23-34", "passage": "Pro.24.23-34", "superscription": "These also are of the wise.", "facts": {"author": "The wise"}},
+        {"title": "Copied by Hezekiah's men", "subtitle": "Proverbs 25–29", "passage": "Pro.25-29", "superscription": "These also are proverbs of Solomon, which the men of Hezekiah king of Judah copied out.", "facts": {"author": "Solomon"}, "note": "Gathered some two hundred and fifty years after Solomon, in Hezekiah's reformation.", "sections": [
+          {"title": "Comparisons", "subtitle": "Proverbs 25–27", "passage": "Pro.25-27", "note": "Sayings drawn from nature and daily life. 25:21-22 in Romans 12:20."},
+          {"title": "The righteous and the wicked in power", "subtitle": "Proverbs 28–29", "passage": "Pro.28-29"}
+        ]},
+        {"title": "The words of Agur", "subtitle": "Proverbs 30", "passage": "Pro.30", "superscription": "The words of Agur the son of Jakeh, the oracle.", "facts": {"author": "Agur"}, "note": "Who has gone up to heaven? What is his name, and his son's name? (30:4). Then sayings by number: three things, and four."},
+        {"title": "The words of King Lemuel", "subtitle": "Proverbs 31:1-9", "passage": "Pro.31.1-9", "superscription": "The words of King Lemuel, the oracle which his mother taught him.", "facts": {"author": "Lemuel"}},
+        {"title": "The woman of strength", "subtitle": "Proverbs 31:10-31", "passage": "Pro.31.10-31", "facts": {"author": "Unnamed"}, "note": "An acrostic, untitled; it may carry on the teaching of Lemuel's mother."}
+      ]
+    },
+    {
+      "id": "torah-portions",
+      "title": "The Torah portions",
+      "note": "The five books of Moses read through in the synagogue in a year, a portion each Sabbath, each named after a word near its start. Moses of old time has in every city those who preach him, being read in the synagogues every Sabbath (Acts 15:21); a reading from the prophets followed (Luke 4:16-17; Acts 13:15).",
+      "contiguous": true,
+      "sections": [
+        {"title": "Genesis", "subtitle": "Bereshit", "passage": "Gen.1-50", "sections": [
+          {"title": "Bereshit", "subtitle": "In the beginning", "passage": "Gen.1.1-6.8"},
+          {"title": "Noach", "subtitle": "Noah", "passage": "Gen.6.9-11.32"},
+          {"title": "Lech Lecha", "subtitle": "Go forth", "passage": "Gen.12.1-17.27"},
+          {"title": "Vayera", "subtitle": "And he appeared", "passage": "Gen.18.1-22.24"},
+          {"title": "Chayei Sarah", "subtitle": "The life of Sarah", "passage": "Gen.23.1-25.18"},
+          {"title": "Toledot", "subtitle": "Generations", "passage": "Gen.25.19-28.9"},
+          {"title": "Vayetze", "subtitle": "And he went out", "passage": "Gen.28.10-32.2"},
+          {"title": "Vayishlach", "subtitle": "And he sent", "passage": "Gen.32.3-36.43"},
+          {"title": "Vayeshev", "subtitle": "And he settled", "passage": "Gen.37.1-40.23"},
+          {"title": "Miketz", "subtitle": "At the end", "passage": "Gen.41.1-44.17"},
+          {"title": "Vayigash", "subtitle": "And he drew near", "passage": "Gen.44.18-47.27"},
+          {"title": "Vayechi", "subtitle": "And he lived", "passage": "Gen.47.28-50.26"}
+        ]},
+        {"title": "Exodus", "subtitle": "Shemot", "passage": "Exo.1-40", "sections": [
+          {"title": "Shemot", "subtitle": "Names", "passage": "Exo.1.1-6.1"},
+          {"title": "Va'era", "subtitle": "And I appeared", "passage": "Exo.6.2-9.35"},
+          {"title": "Bo", "subtitle": "Come", "passage": "Exo.10.1-13.16"},
+          {"title": "Beshalach", "subtitle": "When he let go", "passage": "Exo.13.17-17.16"},
+          {"title": "Yitro", "subtitle": "Jethro", "passage": "Exo.18.1-20.26"},
+          {"title": "Mishpatim", "subtitle": "Judgments", "passage": "Exo.21.1-24.18"},
+          {"title": "Terumah", "subtitle": "Offering", "passage": "Exo.25.1-27.19"},
+          {"title": "Tetzaveh", "subtitle": "You shall command", "passage": "Exo.27.20-30.10"},
+          {"title": "Ki Tisa", "subtitle": "When you take", "passage": "Exo.30.11-34.35"},
+          {"title": "Vayakhel", "subtitle": "And he assembled", "passage": "Exo.35.1-38.20"},
+          {"title": "Pekudei", "subtitle": "Accounts", "passage": "Exo.38.21-40.38"}
+        ]},
+        {"title": "Leviticus", "subtitle": "Vayikra", "passage": "Lev.1-27", "sections": [
+          {"title": "Vayikra", "subtitle": "And he called", "passage": "Lev.1.1-6.7"},
+          {"title": "Tzav", "subtitle": "Command", "passage": "Lev.6.8-8.36"},
+          {"title": "Shemini", "subtitle": "Eighth", "passage": "Lev.9.1-11.47"},
+          {"title": "Tazria", "subtitle": "She conceives", "passage": "Lev.12.1-13.59"},
+          {"title": "Metzora", "subtitle": "The leper", "passage": "Lev.14.1-15.33"},
+          {"title": "Acharei Mot", "subtitle": "After the death", "passage": "Lev.16.1-18.30"},
+          {"title": "Kedoshim", "subtitle": "Holy", "passage": "Lev.19.1-20.27"},
+          {"title": "Emor", "subtitle": "Speak", "passage": "Lev.21.1-24.23"},
+          {"title": "Behar", "subtitle": "On the mountain", "passage": "Lev.25.1-26.2"},
+          {"title": "Bechukotai", "subtitle": "In my statutes", "passage": "Lev.26.3-27.34"}
+        ]},
+        {"title": "Numbers", "subtitle": "Bamidbar", "passage": "Num.1-36", "sections": [
+          {"title": "Bamidbar", "subtitle": "In the wilderness", "passage": "Num.1.1-4.20"},
+          {"title": "Naso", "subtitle": "Take up", "passage": "Num.4.21-7.89"},
+          {"title": "Beha'alotecha", "subtitle": "When you set up", "passage": "Num.8.1-12.16"},
+          {"title": "Shelach", "subtitle": "Send", "passage": "Num.13.1-15.41"},
+          {"title": "Korach", "subtitle": "Korah", "passage": "Num.16.1-18.32"},
+          {"title": "Chukat", "subtitle": "Statute", "passage": "Num.19.1-22.1"},
+          {"title": "Balak", "subtitle": "Balak", "passage": "Num.22.2-25.9"},
+          {"title": "Pinchas", "subtitle": "Phinehas", "passage": "Num.25.10-29.40"},
+          {"title": "Matot", "subtitle": "Tribes", "passage": "Num.30.1-32.42"},
+          {"title": "Masei", "subtitle": "Journeys", "passage": "Num.33.1-36.13"}
+        ]},
+        {"title": "Deuteronomy", "subtitle": "Devarim", "passage": "Deu.1-34", "sections": [
+          {"title": "Devarim", "subtitle": "Words", "passage": "Deu.1.1-3.22"},
+          {"title": "Va'etchanan", "subtitle": "And I pleaded", "passage": "Deu.3.23-7.11"},
+          {"title": "Eikev", "subtitle": "Because", "passage": "Deu.7.12-11.25"},
+          {"title": "Re'eh", "subtitle": "See", "passage": "Deu.11.26-16.17"},
+          {"title": "Shoftim", "subtitle": "Judges", "passage": "Deu.16.18-21.9"},
+          {"title": "Ki Teitzei", "subtitle": "When you go out", "passage": "Deu.21.10-25.19"},
+          {"title": "Ki Tavo", "subtitle": "When you come in", "passage": "Deu.26.1-29.9"},
+          {"title": "Nitzavim", "subtitle": "Standing", "passage": "Deu.29.10-30.20"},
+          {"title": "Vayelech", "subtitle": "And he went", "passage": "Deu.31"},
+          {"title": "Ha'azinu", "subtitle": "Give ear", "passage": "Deu.32"},
+          {"title": "Vezot Haberachah", "subtitle": "And this is the blessing", "passage": "Deu.33-34"}
+        ]}
+      ]
+    },
+    {
+      "id": "law",
+      "title": "The law of Moses",
+      "note": "The law given at Sinai and repeated in Moab, as the books set it out: the Ten Words and the Book of the Covenant, the tabernacle and its priesthood, the offerings, cleanness and holiness, the laws given in the wilderness, and Moses' sermons on the plains of Moab. The narrative between is left out. The law was a schoolmaster to bring us to Christ (Galatians 3:24), a shadow of good things to come (Hebrews 10:1).",
+      "sections": [
+        {"title": "At Sinai: Exodus", "subtitle": "Exodus 20–40", "passage": "Exo.20.1-40.38", "sections": [
+          {"title": "The Ten Words", "passage": "Exo.20.1-17", "note": "Spoken by God from the mountain, and written on two tablets of stone (Exodus 34:28; Deuteronomy 4:13)."},
+          {"title": "The Book of the Covenant", "passage": "Exo.20.22-23.33", "note": "Named when Moses read it to the people (24:7).", "sections": [
+            {"title": "The altar", "passage": "Exo.20.22-26"},
+            {"title": "Servants", "passage": "Exo.21.1-11"},
+            {"title": "Violence and injury", "passage": "Exo.21.12-36"},
+            {"title": "Property and restitution", "passage": "Exo.22.1-15"},
+            {"title": "Holiness and justice", "passage": "Exo.22.16-23.9"},
+            {"title": "Sabbaths and feasts", "passage": "Exo.23.10-19"},
+            {"title": "The angel and the land", "passage": "Exo.23.20-33"}
+          ]},
+          {"title": "The covenant sealed with blood", "passage": "Exo.24.1-11", "note": "Hebrews 9:18-20."},
+          {"title": "The tabernacle and the priesthood commanded", "passage": "Exo.25.1-31.18", "note": "Made after the pattern shown on the mountain (25:40; Hebrews 8:5).", "sections": [
+            {"title": "The ark, the table and the lampstand", "passage": "Exo.25.1-40"},
+            {"title": "The tabernacle", "passage": "Exo.26.1-37"},
+            {"title": "The altar and the court", "passage": "Exo.27.1-21"},
+            {"title": "The priests' garments", "passage": "Exo.28.1-43"},
+            {"title": "The priests consecrated", "passage": "Exo.29.1-46"},
+            {"title": "The incense altar, ransom, laver, oil and incense", "passage": "Exo.30.1-38"},
+            {"title": "The craftsmen, and the Sabbath sign", "passage": "Exo.31.1-18"}
+          ]},
+          {"title": "The covenant renewed", "passage": "Exo.34.1-35", "note": "After the golden calf, the tablets written again."},
+          {"title": "The tabernacle made", "passage": "Exo.35.1-40.38", "note": "As Yahweh commanded Moses; and the glory filled it (40:34)."}
+        ]},
+        {"title": "At Sinai: Leviticus", "subtitle": "Leviticus 1–27", "passage": "Lev.1-27", "sections": [
+          {"title": "The offerings", "passage": "Lev.1.1-7.38", "sections": [
+            {"title": "The burnt offering", "passage": "Lev.1.1-17"},
+            {"title": "The meal offering", "passage": "Lev.2.1-16"},
+            {"title": "The peace offering", "passage": "Lev.3.1-17"},
+            {"title": "The sin offering", "passage": "Lev.4.1-5.13"},
+            {"title": "The trespass offering", "passage": "Lev.5.14-6.7"},
+            {"title": "The law of the offerings, for the priests", "passage": "Lev.6.8-7.38"}
+          ]},
+          {"title": "The priests consecrated", "passage": "Lev.8.1-10.20", "note": "And Nadab and Abihu's strange fire (10:1-3)."},
+          {"title": "Clean and unclean", "passage": "Lev.11.1-15.33", "sections": [
+            {"title": "Food", "passage": "Lev.11.1-47"},
+            {"title": "Childbirth", "passage": "Lev.12.1-8"},
+            {"title": "Leprosy", "passage": "Lev.13.1-14.57"},
+            {"title": "Discharges", "passage": "Lev.15.1-33"}
+          ]},
+          {"title": "The Day of Atonement", "passage": "Lev.16.1-34", "note": "Hebrews 9:7-12."},
+          {"title": "The Holiness Code", "passage": "Lev.17.1-26.46", "note": "You shall be holy, for I Yahweh your God am holy (19:2; 1 Peter 1:16).", "sections": [
+            {"title": "The blood", "passage": "Lev.17.1-16", "note": "The life of the flesh is in the blood (17:11)."},
+            {"title": "Unlawful unions", "passage": "Lev.18.1-30"},
+            {"title": "Holy living", "passage": "Lev.19.1-20.27", "note": "You shall love your neighbour as yourself (19:18)."},
+            {"title": "Holy priests and holy things", "passage": "Lev.21.1-22.33"},
+            {"title": "The feasts of Yahweh", "passage": "Lev.23.1-44"},
+            {"title": "The lamp, the bread, and the blasphemer", "passage": "Lev.24.1-23"},
+            {"title": "The Sabbath year and the jubilee", "passage": "Lev.25.1-55"},
+            {"title": "Blessings and curses", "passage": "Lev.26.1-46"}
+          ]},
+          {"title": "Vows and things devoted", "passage": "Lev.27.1-34"}
+        ]},
+        {"title": "In the wilderness", "subtitle": "Numbers 5–36", "passage": "Num.5.1-36.13", "sections": [
+          {"title": "The camp kept pure; the Nazirite; the blessing", "passage": "Num.5.1-6.27"},
+          {"title": "The second Passover", "passage": "Num.9.1-14"},
+          {"title": "Offerings in the land; the tassels", "passage": "Num.15.1-41"},
+          {"title": "Priests' and Levites' dues; the red heifer", "passage": "Num.18.1-19.22", "note": "Hebrews 9:13-14."},
+          {"title": "The daughters of Zelophehad", "passage": "Num.27.1-11"},
+          {"title": "The calendar of offerings", "passage": "Num.28.1-29.40"},
+          {"title": "Vows", "passage": "Num.30.1-16"},
+          {"title": "The Levites' cities and the cities of refuge", "passage": "Num.35.1-34"},
+          {"title": "Daughters who inherit", "passage": "Num.36.1-13"}
+        ]},
+        {"title": "In Moab", "subtitle": "Deuteronomy", "passage": "Deu.1-34", "note": "Moses' sermons to the generation about to enter the land.", "sections": [
+          {"title": "The first address", "passage": "Deu.1.1-4.43", "note": "The journey from Horeb remembered."},
+          {"title": "The second address", "passage": "Deu.4.44-26.19", "sections": [
+            {"title": "The Ten Words repeated", "passage": "Deu.4.44-5.33"},
+            {"title": "Hear, O Israel", "passage": "Deu.6.1-11.32", "note": "You shall love Yahweh your God with all your heart (6:4-5; Mark 12:29-30)."},
+            {"title": "The statutes and judgments", "passage": "Deu.12.1-26.19", "sections": [
+              {"title": "One place of worship, one God", "passage": "Deu.12.1-13.18"},
+              {"title": "A holy people's food", "passage": "Deu.14.1-21"},
+              {"title": "Tithes, release and the feasts", "passage": "Deu.14.22-16.17"},
+              {"title": "Judges, king, priests and the prophet", "passage": "Deu.16.18-18.22", "note": "A prophet like me (18:15-19; Acts 3:22-23)."},
+              {"title": "Life, refuge and war", "passage": "Deu.19.1-21.9"},
+              {"title": "Family, neighbour and the poor", "passage": "Deu.21.10-25.19"},
+              {"title": "Firstfruits, and the covenant affirmed", "passage": "Deu.26.1-19"}
+            ]}
+          ]},
+          {"title": "Blessings and curses", "passage": "Deu.27.1-28.68"},
+          {"title": "The covenant in Moab", "passage": "Deu.29.1-30.20", "note": "I have set before you life and death (30:19)."},
+          {"title": "Moses' last words", "passage": "Deu.31.1-34.12", "sections": [
+            {"title": "Joshua charged; the law laid beside the ark", "passage": "Deu.31.1-30"},
+            {"title": "The song of Moses", "passage": "Deu.32.1-52"},
+            {"title": "The blessing of the tribes, and Moses' death", "passage": "Deu.33.1-34.12"}
+          ]}
+        ]}
+      ]
+    }
+  ]
+}

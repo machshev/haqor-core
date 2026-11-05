@@ -332,6 +332,20 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// Rebuild the book outlines of a runtime haqor.db in place from
+    /// `data/outlines.json`.
+    GenOutlines {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Haqor's book outlines.
+        #[arg(long, default_value = "data/outlines.json")]
+        outlines: PathBuf,
+        /// Source texts directory holding STEPBible-Data, for the KJV/Hebrew
+        /// verse numbering.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     /// Rebuild the `prophecy` tables of a runtime haqor.db in place
     /// (gen-runtime also builds them): Haqor's curated prophecies with the
     /// NT citation formulas found linked to them.
@@ -724,6 +738,19 @@ fn main() -> Result<()> {
                     summary.religions,
                     summary.audiences,
                     summary.passages,
+                    db.display()
+                );
+            }
+            DbCommands::GenOutlines {
+                db,
+                outlines,
+                src_texts,
+            } => {
+                let summary = haqor_db_gen::gen_outlines(&db, &outlines, &src_texts)?;
+                println!(
+                    "Wrote {} outlines with {} sections to {}",
+                    summary.outlines,
+                    summary.sections,
                     db.display()
                 );
             }
