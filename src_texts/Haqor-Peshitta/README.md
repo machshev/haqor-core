@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, 2 John, 3 John, and Jude
-(4,839 of 7,958 Peshitta verses; 3,119 remain). Romans 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1, 2 John, 3 John, and Jude
+(4,871 of 7,958 Peshitta verses; 3,087 remain). Romans 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1753,3 +1753,7 @@ Source checks for Acts 27:
 Source check for Acts 28: the chapter retains the island's name, the foreigners' kindness, the viper and the change from expecting Paul's death to calling him a god. Publius, his father's fever and bowel pain, the healing, the island's other sick people, honors and provisions remain explicit. The route preserves the three months, Alexandrian ship, sign of the Twins, Syracuse, Rhegium, the south wind, Puteoli, the seven-day stay and Rome, followed by the Appian Forum, Three Taverns, centurion, and soldier guarding Paul.
 
 Paul's account to the Jewish leaders keeps the absence of an accusation worthy of death, his appeal to Caesar, the hope of Israel, the lack of letters or evil reports from Judea and Jerusalem, and the invitation to explain the teaching. The day-long explanation preserves the kingdom of God, Jesus, Moses, the prophets, and the responses of persuasion and refusal. The Isaiah quotation retains the continuous negative purpose concerning seeing, hearing, understanding, returning and forgiveness. The final statement keeps God's redemption being sent to the Gentiles: the source form is plural and its people/nation/Gentiles sense is resolved by the immediate contrast and Murdock context. Paul's two-year rented-house ministry preserves his own expense, reception of visitors, proclamation of God's kingdom, teaching about our Lord Jesus Messiah, openness and lack of hindrance. Quotation boundaries run continuously from Paul's speech in 28:17 through 28:20 and through the nested Isaiah quotation in 28:25-28.
+
+Source check for Romans 1: the opening preserves Paul's servant and apostolic calling, the Gospel promised through the prophets, Jesus Messiah as God's Son, grace and apostleship among the nations, the Roman greeting, Paul's thanksgiving and prayer, and his desire to visit Rome. The chapter retains the explicit source order and predicates in the witness clause (God is Paul's witness), the adversative in 1:13, Paul's indebtedness to everyone in 1:14, the negation and Gospel power in 1:16, and the manifestation of God's knowledge in 1:19. The righteousness of God is revealed from faith to faith, and the repeated darkness and lack of understanding in 1:21 remain distinct.
+
+Romans 1:23-32 retains the source's non-corruptible God, human and animal images, delivery over by God, unclean lust and shame, feared and served creation, their Creator, pain and shame, their nature, the male and female clauses, fitting recompense received in their persons, the delivered-over mind and improper acts, the full vice lists, the covenant and three separate negative clauses, and the final distinction between doing such things and being their companions. Source suffixes, repeated negatives, “these” demonstratives, judgment, death, condemnation, and the final “those who do these” clause remain explicit.
