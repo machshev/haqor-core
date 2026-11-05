@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-22, 2 John, 3 John, and Jude
-(827 of 7,958 Peshitta verses; 7,131 remain). Matthew 23 is next.
+Current coverage: Matthew 1-23, 2 John, 3 John, and Jude
+(866 of 7,958 Peshitta verses; 7,092 remain). Matthew 24 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -90,3 +90,13 @@ Source check for Matthew 21: the praise quotation divided across Murdock
 
 Source check for Matthew 22: 22:37 explicitly includes strength as well as
 heart, soul, and mind; all four are retained and linked to their source words.
+
+Source checks for Matthew 23:
+
+- The two-word face-taking expression is rendered as the single linked idiom
+  "hypocrites", rather than adding a separate appearance phrase.
+- In 23:37, the participial descriptions of Jerusalem and the third-person
+  "to her" are retained; Murdock changes the latter to direct address. Compare
+  the [Peshitta interlinear, page 5](https://www.atour.com/media/files/religion/peshitta/interlinear-nt/Mattai/Mattich23.pdf).
+- In 23:39, the negated future is a prediction that they will not see him,
+  rather than a prohibition on seeing him.
