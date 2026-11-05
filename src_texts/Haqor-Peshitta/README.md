@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-2, 2 John, 3 John, and Jude
-(3,029 of 7,958 Peshitta verses; 4,929 remain). John 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-3, 2 John, 3 John, and Jude
+(3,065 of 7,958 Peshitta verses; 4,893 remain). John 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1239,3 +1239,16 @@ Source checks for John 2:
 - John 2:13 keeps the movement verb, Jerusalem, and Jesus together in one source-linked phrase, matching positions 4–6.
 - John 2:22 retains both Scripture and the word spoken by Jesus after the disciples remember his saying.
 - John 2:24-25 preserves Jesus' refusal to entrust himself, his knowledge of everyone, and the explicit claim that he needs no human testimony.
+
+Source checks for John 3:
+
+- John 3:3,7 renders מנ דריש idiomatically as “anew,” rather than mechanically translating its parts as “from the beginning.” Younansardaroud's Classical Syriac Course Book, p. 97, lists /men d-rēš/ as “again” (https://d-nb.info/1184881278/34#page=108).
+- John 3:4 retains both תוב (“again”) and דתרתינ זבנינ (“a second time”), and the rhetorical possibility of entering the mother's womb, with “enter” linked to its actual source position.
+- John 3:5-8 retains birth of water and the Spirit; רוחא is rendered “wind” in the blowing/sound comparison and “Spirit” in its birth application. Both meanings occur in the supplied lexicon.
+- John 3:11 preserves the plural knowing, speaking, seeing, testimony, and reception clauses; John 3:12 retains the final first-person object suffix as “believe me,” without duplicating the heavenly-things condition.
+- John 3:13 retains the final source clause “who is in heaven”; John 3:15-18 keeps each universal believer clause, the non-perishing/eternal-life contrast, and the already-judged negative explicitly linked.
+- John 3:20 retains causal גיר (“for”) and the reproof of deeds. John 3:22-24 retains Judea, Aenon near Salim, abundant water, ongoing staying/baptizing and coming/being baptized, and John's not-yet-imprisoned chronology.
+- John 3:25 identifies one of John's disciples and a certain Jew, rather than changing them into collective groups. John 3:26 retains “Our Rabbi,” testimony about the other baptizer, and “many” going to him.
+- John 3:27 renders the own-will/self expression idiomatically as “on his own”; John 3:28-30 retains John's denial of being the Messiah, being sent ahead, the bridegroom/friend distinction, emphatically completed personal joy, and the increase/decrease contrast.
+- John 3:31 preserves all three earth expressions and both “above all” predicates within their own linked phrases. John 3:34 keeps both causal links and “it was not by measure that God gave the Spirit”, without adding a recipient.
+- John 3:36 renders מתטפיס contextually as “heed”; CAL's Syriac Ct entry explicitly includes “obey, consent” (https://cal.huc.edu/cal_entry_web.php?lemma=pys+V). The final future predicate remains “God's wrath will remain upon him.”
