@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-22, 2 John, 3 John, and Jude
-(2,844 of 7,958 Peshitta verses; 5,114 remain). Luke 23 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-23, 2 John, 3 John, and Jude
+(2,900 of 7,958 Peshitta verses; 5,058 remain). Luke 24 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -988,7 +988,7 @@ Source checks for Luke 21:
   clause is supplied. In 21:26 agitation drives out people's souls
   from fear of what is to come, and heaven's powers are shaken.
 - In 21:27 the clouds are plural. In 21:28 deliverance belongs to the
-  hearers. In 21:29 Jesus was telling the parable. In 21:30 the sprouting
+  hearers. In 21:29 Jesus told the parable. In 21:30 the sprouting
   trees supply the inference about summer. In 21:31 all these things
   happening indicate the nearness of God's kingdom.
 - In 21:33 the source has my words, plural, rather than Murdock's
@@ -1057,3 +1057,59 @@ Source checks for Luke 22:
   blasphemies retain their ongoing past forms. In 22:68 answering and
   releasing him are distinct. In 22:69 the right hand is of God's power;
   in 22:71 they have heard from his mouth.
+
+Source checks for Luke 23:
+
+- In 23:2 the accusation concerns our people, head-tax money for Caesar,
+  and the claim to be king Messiah. The English forbidding construction
+  absorbs the source negative without reversing the tax accusation.
+  In 23:5 the accusers were crying out; Judea, Galilee, and here remain.
+- In 23:6 Pilate hears the name Galilee. In 23:8 Herod's long desire,
+  hearing many things, and hope of seeing a sign remain distinct.
+  In 23:9 Herod was asking questions, while Jesus gives no answer.
+  In 23:10 the priests and scribes were standing and accusing him.
+- In 23:11 the source has plural scarlet garments, not Murdock's purple
+  robe. In 23:13 Pilate calls the chief priests, rulers, and people;
+  the people are coordinated with the rulers, not their genitive.
+  In 23:15 Pilate says I sent him to him, and no death-deserving act
+  has been done by Jesus, rather than an act being done to him.
+- In 23:17 releasing one at the festival is customary. In 23:19 riot
+  in the city and murder explain the imprisonment. In 23:23 both the
+  crowd's and the chief priests' voice prevail; the source's ending
+  is retained despite its absence from the supplied Murdock reference.
+  In 23:25 the requested prisoner is released, while Jesus is handed
+  over to their will; Jesus belongs to that second clause.
+- In 23:26 Simon is the Cyrenian coming from the countryside, with
+  the cross laid on him to carry after Jesus. In 23:27 the women were
+  mourning and wailing over him. In 23:28 the daughters of Jerusalem
+  are to weep for themselves and their children. In 23:30 the future
+  verb addresses you in the plural: you will begin to say.
+- In 23:32 two other wrongdoers accompany him to be killed, rather
+  than importing Murdock's crucified into that verse. In 23:33 their
+  actual crucifixion is at the place called Skull, one on each side.
+  In 23:34 Jesus said Father, without a possessive suffix;
+  his garments are divided, and a lot is cast over them. The perfect
+  with its auxiliary is rendered as simple past, as also corrected
+  in 21:29; see [Younansardaroud, section 11.6](https://d-nb.info/1184881278/34#page=107).
+- In 23:35-37 the people watch while rulers and soldiers mock him;
+  the saving verbs preserve their respective objects and reflexives.
+  In 23:38 the inscription is above him in Greek, Latin, and Hebrew,
+  and reads this is the king of the Jews. In 23:39 a single wrongdoer
+  is reviling him among the plural men crucified with him.
+- In 23:41 just punishment, deserved recompense, and the other man's
+  innocence remain distinct. The passive participle with the l-dative
+  permits the active perfect he has done; see [Younansardaroud, section 11.5](https://d-nb.info/1184881278/34#page=107).
+  In 23:42 the address is my Lord, and the kingdom is yours. In 23:43
+  today's promise places the addressee with Jesus in paradise.
+- In 23:44 the darkness lasts from about the sixth to the ninth hour.
+  In 23:45 the temple-door expression is the dictionary idiom for
+  curtain, documented in [Brock and Kiraz's SEDRA entry](https://sedra.bethmardutho.org/lexeme/get/6121).
+  In 23:46 the address is my Father, your hands are plural, and the
+  committed spirit is mine. In 23:48 the crowds are plural; in 23:49
+  acquaintances and women stand at a distance and were watching.
+- In 23:50 Joseph is a councillor from Ramath, a city of Judea, and
+  is good and righteous. In 23:51 he had not agreed to their decision
+  and deed and was awaiting God's kingdom. In 23:53 the body is put
+  in a hewn tomb where no one had yet been laid. In 23:55 the women
+  see how his body is placed. In 23:56 spices and ointments remain
+  distinct, followed by Sabbath rest as commanded.
