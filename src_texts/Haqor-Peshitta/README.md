@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-4, 2 John, 3 John, and Jude
-(2,016 of 7,958 Peshitta verses; 5,942 remain). Luke 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-5, 2 John, 3 John, and Jude
+(2,055 of 7,958 Peshitta verses; 5,903 remain). Luke 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -443,3 +443,23 @@ Source checks for Luke 4:
   Messiah; compare [Etheridge's translation](https://www.studylight.org/bible/eng/jet/luke/4.html).
 - In 4:43 the sending verb is first person, "I was sent", and the preceding
   copula emphasizes the purpose. In 4:44 the source names Galilee.
+
+Source checks for Luke 5:
+
+- In 5:3 the boat belongs to Simon Cephas; both the ownership and the
+  second name are explicit. The net is singular in 5:4 and 5:6, while
+  the fishermen's nets in 5:2 are plural.
+- In 5:5 "at your word" introduces Simon's decision to cast the net,
+  rather than qualifying the unsuccessful catch. In 5:6 the final
+  quantity word intensifies "many" fish, without calling them good fish.
+- In 5:13 the two-word hour expression means "immediately", not an address
+  to a son. The explicit final statement that he was cleansed is retained.
+- In 5:14 the priests are plural. In 5:17 the healing object is "them";
+  in 5:20 "Man" is a direct address to the paralytic. In 5:25 glorifying
+  God accompanies the journey home, rather than following it.
+- In 5:24 the Son of man has authority to forgive sins; the suffix in
+  the title anticipates the following genitive, without a separate "his".
+- In 5:34 the wedding guests expression and the causative "make fast"
+  remain under the negative. In 5:36 the feminine final predicate agrees
+  with the patch: it does not fit the old garment. In 5:39 the old wine
+  is pleasant, without an added comparative.
