@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-24, 2 John, 3 John, and Jude
-(917 of 7,958 Peshitta verses; 7,041 remain). Matthew 25 is next.
+Current coverage: Matthew 1-25, 2 John, 3 John, and Jude
+(963 of 7,958 Peshitta verses; 6,995 remain). Matthew 26 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -48,6 +48,11 @@ translation conventions, verification commands, and unresolved questions.
 Use this README and the committed TSV as the checkpoint; do not reload
 completed chapter records routinely. Reopen a specific earlier verse only
 when needed to resolve a consistency or accuracy question.
+
+Use chapter subagents to keep the main session limited to the checkpoint.
+If needed, split a chapter into short verse batches in separate files and
+cross-review each batch with another subagent. Merge and validate the complete
+chapter before syncing and committing it.
 
 Rebuild with `cargo run --release -- db gen-translation`, then copy the
 runtime database to the paired Flutter app's `assets/db/haqor.db` and update
@@ -109,3 +114,14 @@ Source checks for Matthew 24:
   alone; no intervening person is supplied.
 - The masculine and feminine pairs in 24:40-41 are expressed as two men and
   two women, respectively.
+
+Source checks for Matthew 25:
+
+- In 25:1 both the bridegroom and the bride are explicit source words and
+  are retained.
+- The differently pointed past auxiliary is first person in 25:24 ("I knew")
+  and second person in 25:26 ("you knew"). It is linked with the knowing
+  predicate, rather than with the following description or reaping predicate.
+- In 25:41 the king speaks to those on his left; the imperative with its
+  reflexive dative is linked separately from "from me". The false-accuser
+  title follows the established rendering used in earlier chapters.
