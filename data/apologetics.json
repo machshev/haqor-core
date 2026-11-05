@@ -6,6 +6,11 @@
       "note": "The evidence that the world was made, and why it suffers."
     },
     {
+      "id": "creation-science",
+      "title": "Creation science",
+      "note": "What the rocks, fossils and living things show of a recent creation, a worldwide flood, and life designed."
+    },
+    {
       "id": "faith",
       "title": "Faith and reason",
       "note": "Faith rests on evidence, and miracles are not incredible if there is a God."
@@ -83,6 +88,18 @@
     {
       "id": "evolution",
       "title": "Evolution"
+    },
+    {
+      "id": "flood",
+      "title": "The flood and the rocks"
+    },
+    {
+      "id": "origin-of-life",
+      "title": "How did life begin?"
+    },
+    {
+      "id": "design",
+      "title": "Design in living things"
     },
     {
       "id": "suffering",
@@ -397,7 +414,11 @@
         "no-idols",
         "six-days",
         "evolution",
-        "flood"
+        "flood",
+        "soft-tissue",
+        "polystrate-fossils",
+        "rapid-layers",
+        "noahs-ark"
       ],
       "differ": [
         "one-god",
@@ -672,9 +693,14 @@
         "bible-preserved",
         "fulfilled-prophecy",
         "creator",
+        "fine-tuning",
+        "probability-of-life",
         "evolution",
         "six-days",
         "flood",
+        "soft-tissue",
+        "polystrate-fossils",
+        "noahs-ark",
         "moral-law",
         "suffering",
         "canaanites",
@@ -689,6 +715,8 @@
       "agree": [],
       "differ": [
         "creator",
+        "fine-tuning",
+        "probability-of-life",
         "evolution",
         "faith-and-evidence",
         "miracles",
@@ -786,6 +814,90 @@
       "licence": "public-domain",
       "url": "https://www.gutenberg.org/ebooks/1228",
       "file": "src_texts/Apologetics/darwin-origin-of-species-1859.txt"
+    },
+    "schweitzer-2005": {
+      "title": "Soft-tissue vessels and cellular preservation in Tyrannosaurus rex",
+      "author": "Mary H. Schweitzer, Jennifer L. Wittmeyer, John R. Horner and Jan K. Toporski",
+      "year": 2005,
+      "licence": "copyright"
+    },
+    "asara-2007": {
+      "title": "Protein sequences from mastodon and Tyrannosaurus rex revealed by mass spectrometry",
+      "author": "John M. Asara, Mary H. Schweitzer and others",
+      "year": 2007,
+      "licence": "copyright"
+    },
+    "austin-1996": {
+      "title": "Excess argon within mineral concentrates from the new dacite lava dome at Mount St Helens volcano",
+      "author": "Steven A. Austin",
+      "year": 1996,
+      "licence": "copyright"
+    },
+    "rate-2005": {
+      "title": "Radioisotopes and the Age of the Earth, volume II",
+      "author": "Larry Vardiman, Andrew A. Snelling and Eugene F. Chaffin (editors)",
+      "year": 2005,
+      "licence": "copyright"
+    },
+    "miller-1953": {
+      "title": "A production of amino acids under possible primitive earth conditions",
+      "author": "Stanley L. Miller",
+      "year": 1953,
+      "licence": "copyright"
+    },
+    "axe-2004": {
+      "title": "Estimating the prevalence of protein sequences adopting functional enzyme folds",
+      "author": "Douglas D. Axe",
+      "year": 2004,
+      "licence": "copyright"
+    },
+    "behe-1996": {
+      "title": "Darwin's Black Box",
+      "author": "Michael J. Behe",
+      "year": 1996,
+      "licence": "copyright"
+    },
+    "parsons-1997": {
+      "title": "A high observed substitution rate in the human mitochondrial DNA control region",
+      "author": "Thomas J. Parsons and others",
+      "year": 1997,
+      "licence": "copyright"
+    },
+    "gibbons-1998": {
+      "title": "Calibrating the mitochondrial clock",
+      "author": "Ann Gibbons",
+      "year": 1998,
+      "licence": "copyright"
+    },
+    "kondrashov-1995": {
+      "title": "Contamination of the genome by very slightly deleterious mutations: why have we not died 100 times over?",
+      "author": "Alexey S. Kondrashov",
+      "year": 1995,
+      "licence": "copyright"
+    },
+    "sanford-2005": {
+      "title": "Genetic Entropy and the Mystery of the Genome",
+      "author": "John C. Sanford",
+      "year": 2005,
+      "licence": "copyright"
+    },
+    "whitcomb-morris-1961": {
+      "title": "The Genesis Flood",
+      "author": "John C. Whitcomb and Henry M. Morris",
+      "year": 1961,
+      "licence": "copyright"
+    },
+    "woodmorappe-1996": {
+      "title": "Noah's Ark: A Feasibility Study",
+      "author": "John Woodmorappe",
+      "year": 1996,
+      "licence": "copyright"
+    },
+    "hong-1994": {
+      "title": "Safety investigation of Noah's Ark in a seaway",
+      "author": "S. W. Hong and others",
+      "year": 1994,
+      "licence": "copyright"
     }
   },
   "entries": [
@@ -871,7 +983,8 @@
         "moral-law",
         "miracles",
         "six-days",
-        "evolution"
+        "evolution",
+        "fine-tuning"
       ],
       "topics": [
         "creator"
@@ -971,7 +1084,9 @@
         "creator",
         "evolution",
         "flood",
-        "sin-and-death"
+        "sin-and-death",
+        "radiometric-dating",
+        "soft-tissue"
       ],
       "topics": [
         "age-of-earth",
@@ -1077,7 +1192,10 @@
         "creator",
         "six-days",
         "sin-and-death",
-        "suffering"
+        "suffering",
+        "probability-of-life",
+        "irreducible-complexity",
+        "genetic-clock"
       ],
       "topics": [
         "evolution",
@@ -1159,10 +1277,774 @@
       "related": [
         "six-days",
         "evolution",
-        "return-of-christ"
+        "return-of-christ",
+        "noahs-ark",
+        "polystrate-fossils",
+        "rapid-layers"
+      ],
+      "topics": [
+        "age-of-earth",
+        "flood"
+      ]
+    },
+    {
+      "id": "noahs-ark",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "The ark was large enough, and built to survive the flood",
+      "summary": "The ark was 300 cubits long, 50 broad and 30 high: about 137 by 23 by 14 metres, with three decks and some 43,000 cubic metres of space, the room of over five hundred railway stock wagons. Noah took two of every kind of air-breathing land animal and bird, and seven of the clean, not every species: a kind can hold many species, and the sea creatures stayed in the sea. Studies count at most some 16,000 animals, most no larger than a sheep, the large ones young; they fit in under half the ark, leaving room for food and water. Its proportions, length six times its breadth, are those of modern ships, and a study of naval engineers found them close to the best for stability, strength and riding out heavy seas. It was not built to sail anywhere, only to float, and God shut them in.",
+      "passages": [
+        "Gen.6.14-22",
+        "Gen.7.1-16"
+      ],
+      "points": [
+        {
+          "claim": "The ark was 300 by 50 by 30 cubits, about 137 by 23 by 14 metres, with three decks: some 43,000 cubic metres, the room of over five hundred railway stock wagons.",
+          "passages": [
+            "Gen.6.15-16"
+          ],
+          "sources": [
+            {
+              "work": "whitcomb-morris-1961",
+              "loc": "chapter 2"
+            }
+          ]
+        },
+        {
+          "claim": "Noah took two of every kind of air-breathing land animal and bird, and seven of the clean; a kind holds many species, and the creatures of the sea stayed in it.",
+          "passages": [
+            "Gen.6.19-20",
+            "Gen.7.2-3",
+            "Gen.7.21-22"
+          ]
+        },
+        {
+          "claim": "At most some 16,000 animals were needed, most no larger than a sheep and the large ones young; they fit in under half the ark, with room for food and water.",
+          "passages": [
+            "Gen.6.21"
+          ],
+          "sources": [
+            {
+              "work": "woodmorappe-1996",
+              "loc": "chapters 1-3"
+            }
+          ]
+        },
+        {
+          "claim": "Its proportions, length six times breadth, are those of modern ships; naval engineers found them close to the best for stability, strength and riding heavy seas.",
+          "passages": [
+            "Gen.6.15"
+          ],
+          "sources": [
+            {
+              "work": "hong-1994",
+              "loc": "Creation Ex Nihilo Technical Journal 8(1):26-36"
+            }
+          ]
+        },
+        {
+          "claim": "It was built to float, not to sail, sealed with pitch within and without, and God shut them in.",
+          "passages": [
+            "Gen.6.14",
+            "Gen.7.16",
+            "Heb.11.7"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Millions of species could not fit on one boat.",
+          "answer": "Noah took kinds, not species: the dogs, wolves and foxes from one pair, as the varieties seen today come from few. Insects and sea creatures were not taken, and most animals are small.",
+          "passages": [
+            "Gen.6.20",
+            "Gen.7.22"
+          ]
+        },
+        {
+          "objection": "Eight people could not feed and clean so many animals for a year.",
+          "answer": "Studies of the work (Woodmorappe, 1996), using the means farmers have long used, stored food and water fed by gravity and floors that drain, find it within the strength of eight. God, who brought the animals to the ark, kept them in it.",
+          "passages": [
+            "Gen.6.21",
+            "Gen.7.9",
+            "Gen.8.1"
+          ]
+        },
+        {
+          "objection": "No wooden ship that large could hold together.",
+          "answer": "The ark did not need to be driven through the sea, only to ride it; its proportions and size are those engineers judge best for that, and Noah built it as God commanded.",
+          "passages": [
+            "Gen.6.15",
+            "Gen.6.22"
+          ]
+        },
+        {
+          "objection": "How did the animals reach distant lands afterwards?",
+          "answer": "They spread from Ararat as the earth was refilled, over land since parted by the sea, as men were scattered from Babel.",
+          "passages": [
+            "Gen.8.17",
+            "Gen.8.19",
+            "Gen.11.8-9"
+          ]
+        }
+      ],
+      "related": [
+        "flood",
+        "polystrate-fossils",
+        "rapid-layers"
+      ],
+      "topics": [
+        "flood"
+      ]
+    },
+    {
+      "id": "polystrate-fossils",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "Fossils were buried quickly, many through layers said to span ages",
+      "summary": "Upright fossil tree trunks stand through several layers of rock and coal, as at Joggins in Nova Scotia; a trunk does not stand for thousands of years waiting to be buried, so the layers around it were laid down while it stood. Fossils form only when a creature is buried before it rots or is eaten, and the rocks hold them in their billions: fish caught swallowing other fish, ichthyosaurs in the act of giving birth, jellyfish with their soft outlines, whole graveyards of bones jumbled by water. Sea creatures lie in rock on every continent and at the summit of Everest. This is the record of a sudden, watery, worldwide burial, as Genesis describes.",
+      "passages": [
+        "Gen.7.21-23",
+        "2Pe.3.5-6"
+      ],
+      "points": [
+        {
+          "claim": "Upright tree trunks pass through several layers of rock and coal, as at Joggins, Nova Scotia: the layers around them were laid down while they stood, not over ages.",
+          "passages": []
+        },
+        {
+          "claim": "A fossil forms only when a creature is buried before it rots or is eaten; fish caught mid-meal, ichthyosaurs mid-birth and soft jellyfish show burial in moments.",
+          "passages": []
+        },
+        {
+          "claim": "Fossil graveyards gather bones by the thousand, jumbled and sorted by moving water.",
+          "passages": [
+            "Gen.7.21-23"
+          ]
+        },
+        {
+          "claim": "Sea creatures lie in rock high on every continent, even at the summit of Everest: the waters stood over the mountains.",
+          "passages": [
+            "Gen.7.19-20",
+            "Psa.104.6-8"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The upright trees grew where they stand, one forest over another, through long ages.",
+          "answer": "Many have no roots in place, or are cut off from their roots, and stand in sandstone laid down by water. Their trunks did not rot through the ages the layers are said to span: they were buried quickly, and so were the layers.",
+          "passages": [
+            "Gen.7.11",
+            "Gen.7.17-19"
+          ]
+        },
+        {
+          "objection": "Fossils form slowly in quiet water over long ages.",
+          "answer": "A carcass on the sea floor is eaten or decays within weeks. What is slow is not burial but the hardening after it; a creature preserved whole, or in mid-act, was buried at once.",
+          "passages": [
+            "Gen.7.21-23"
+          ]
+        }
+      ],
+      "related": [
+        "flood",
+        "rapid-layers",
+        "soft-tissue"
+      ],
+      "topics": [
+        "flood",
+        "age-of-earth"
+      ]
+    },
+    {
+      "id": "rapid-layers",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "The rock layers were laid down quickly, and bent while soft",
+      "summary": "Mount St Helens, in 1980, laid down finely layered deposits many metres thick in hours, and a mudflow in 1982 cut a canyon through them in a day: layers and canyons do not need ages. In the Grand Canyon whole series of layers are folded without cracking, as though bent while still soft, though they are said to have been laid down over hundreds of millions of years. Between many layers the contact is flat and sharp, with no sign of the erosion that millions of missing years would leave. Single layers run across whole continents, as no river or local sea lays them. This is the work of the flood, not of ages.",
+      "passages": [
+        "Gen.7.11",
+        "Gen.8.2-3",
+        "Psa.104.6-9"
+      ],
+      "points": [
+        {
+          "claim": "At Mount St Helens finely layered deposits many metres thick were laid down in hours in 1980, and a mudflow in 1982 cut a canyon through them: layers and canyons do not need ages.",
+          "passages": []
+        },
+        {
+          "claim": "Whole series of layers in the Grand Canyon are folded without cracking, as rock bends only while soft: they were laid down and folded together, not over hundreds of millions of years.",
+          "passages": [
+            "Psa.104.8"
+          ]
+        },
+        {
+          "claim": "Many layers meet in flat, sharp contacts with no erosion between them, though millions of years are said to be missing there.",
+          "passages": []
+        },
+        {
+          "claim": "Single layers run across whole continents, as only waters over the whole earth would lay them.",
+          "passages": [
+            "Gen.7.19-20"
+          ]
+        },
+        {
+          "claim": "The fountains of the great deep broke up, and as the waters went down the mountains rose and the valleys sank.",
+          "passages": [
+            "Gen.7.11",
+            "Gen.8.2-3",
+            "Psa.104.6-9"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Geologists see the present as the key to the past: slow processes over long ages.",
+          "answer": "Peter foretold that men would say all things continue as they were from the beginning, willingly ignorant that the world then perished by water. The rocks themselves show catastrophe, and geologists now grant many layers were laid down quickly.",
+          "passages": [
+            "2Pe.3.3-6"
+          ]
+        }
+      ],
+      "related": [
+        "flood",
+        "polystrate-fossils",
+        "radiometric-dating"
+      ],
+      "topics": [
+        "flood",
+        "age-of-earth"
+      ]
+    },
+    {
+      "id": "soft-tissue",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "Dinosaur bones still hold soft tissue",
+      "summary": "In 2005 Mary Schweitzer reported flexible, branching blood vessels, with small round structures like blood cells inside them, from the thigh bone of a Tyrannosaurus rex said to be 68 million years old. Fragments of its collagen protein were later sequenced, and soft tissue has since been found in many other dinosaur bones. Proteins and vessels break down in thousands of years, not tens of millions. The bones are not as old as they are said to be: dinosaurs were made on the sixth day with the other land animals, and were buried in the flood.",
+      "passages": [
+        "Gen.1.24-25",
+        "Job.40.15-19"
+      ],
+      "points": [
+        {
+          "claim": "Flexible, branching vessels, with small round structures like blood cells inside, were found in a Tyrannosaurus rex thigh bone said to be 68 million years old.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "schweitzer-2005",
+              "loc": "Science 307:1952-1955"
+            }
+          ]
+        },
+        {
+          "claim": "Fragments of its collagen protein were sequenced, and soft tissue has since been found in many other dinosaur bones.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "asara-2007",
+              "loc": "Science 316:280-285"
+            }
+          ]
+        },
+        {
+          "claim": "Proteins and vessels break down in thousands of years, not tens of millions.",
+          "passages": []
+        },
+        {
+          "claim": "The land animals, dinosaurs among them, were made on the sixth day with man; behemoth was made with Job.",
+          "passages": [
+            "Gen.1.24-25",
+            "Job.40.15-19"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Iron from the blood preserved the tissue for millions of years.",
+          "answer": "The experiment offered for it (Schweitzer and others, 2014) kept ostrich vessels soaked in concentrated blood for two years, not tens of millions, and in a state no buried bone was in. That tissue survives at all is what a young world would lead us to expect.",
+          "passages": []
+        },
+        {
+          "objection": "The tissue is bacterial slime, not the animal's own.",
+          "answer": "The collagen sequenced matched that of animals, not of bacteria, and the vessels branch and hold cell-like structures as an animal's do.",
+          "passages": []
+        }
+      ],
+      "related": [
+        "six-days",
+        "flood",
+        "radiometric-dating"
       ],
       "topics": [
         "age-of-earth"
+      ]
+    },
+    {
+      "id": "radiometric-dating",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "Radiometric dates fail on rocks of known age, and radiocarbon remains where none should",
+      "summary": "Lava from Mount St Helens that cooled in 1986 was dated by potassium-argon at 350,000 years, and lava from New Zealand flows of the 1950s at millions of years: the method gives ages to rock whose age is known, and gives them wrongly. Different methods on the same rock disagree. Radiocarbon, which cannot last 100,000 years, is found in coal and in diamonds said to be hundreds of millions or billions of years old. Helium made by decay is still in tiny zircon crystals, though it leaks out quickly enough that billions of years would have emptied them. The dates rest on assumptions; where they can be checked, they fail.",
+      "passages": [
+        "Job.38.4",
+        "Exo.20.11"
+      ],
+      "points": [
+        {
+          "claim": "Lava from Mount St Helens that cooled in 1986 was dated by potassium-argon at 350,000 years: the method dates rock of known age wrongly.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "austin-1996",
+              "loc": "Creation Ex Nihilo Technical Journal 10(3):335-343"
+            }
+          ]
+        },
+        {
+          "claim": "The dates rest on assumptions no one could see: how much of each element there was at the start, that none came in or went out, and that the rate never changed.",
+          "passages": [
+            "Job.38.4"
+          ]
+        },
+        {
+          "claim": "Radiocarbon, which cannot last 100,000 years, is found in coal and in diamonds said to be hundreds of millions or billions of years old.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "rate-2005",
+              "loc": "chapter 8, Baumgardner, 14C evidence for a recent global flood and a young earth"
+            }
+          ]
+        },
+        {
+          "claim": "Helium made by decay is still held in tiny zircon crystals, though it leaks out fast enough that billions of years would have emptied them.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "rate-2005",
+              "loc": "chapter 2, Humphreys, Young helium diffusion age of zircons supports accelerated nuclear decay"
+            }
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The radiocarbon in coal and diamonds is contamination.",
+          "answer": "Diamond is the hardest and most closed of materials, and the amounts are above the laboratories' own background and much alike in coal from every era, as from one recent burial.",
+          "passages": []
+        },
+        {
+          "objection": "Different methods agree on the great ages.",
+          "answer": "They agree when the results are chosen to agree; discordant dates are commonly set aside as disturbed. A method that fails on rock of known age cannot be trusted on rock of unknown age.",
+          "passages": [
+            "Pro.18.17"
+          ]
+        }
+      ],
+      "related": [
+        "six-days",
+        "soft-tissue",
+        "young-earth-clocks"
+      ],
+      "topics": [
+        "age-of-earth"
+      ]
+    },
+    {
+      "id": "young-earth-clocks",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "Many natural processes limit the age of the earth",
+      "summary": "Short-period comets lose material at every pass of the sun and would be gone in a few hundred thousand years; to keep billions of years a store of new comets is supposed, the Oort cloud, which no one has seen. The strength of the earth's magnetic field has fallen by about a tenth since it was first measured in the 1830s. At present rates the continents would be worn to sea level many times over in the age claimed. These are limits, not dates: they tell against billions of years, and agree with the thousands Scripture gives. Arguments such as the depth of moon dust and human footprints beside dinosaur tracks at Paluxy have been set aside by creationists themselves, and are not used here.",
+      "passages": [
+        "Psa.102.25-26",
+        "Isa.51.6"
+      ],
+      "points": [
+        {
+          "claim": "Short-period comets wear away at every pass of the sun and would be gone in a few hundred thousand years; the Oort cloud supposed to replace them has never been seen.",
+          "passages": [
+            "Psa.102.25-26"
+          ]
+        },
+        {
+          "claim": "The strength of the earth's magnetic field has fallen by about a tenth since it was first measured in the 1830s.",
+          "passages": []
+        },
+        {
+          "claim": "At present rates of erosion the continents would be worn to sea level many times over in the age claimed.",
+          "passages": [
+            "Job.14.18-19"
+          ]
+        },
+        {
+          "claim": "The heavens and the earth wax old as a garment: the creation is running down, not building up.",
+          "passages": [
+            "Psa.102.25-26",
+            "Isa.51.6",
+            "Rom.8.20-22"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Rates were not always as they are now.",
+          "answer": "That is so, and it is what creationists say of the radiometric clocks. Those who assume constant rates for the dates they accept cannot set them aside for the limits they do not.",
+          "passages": [
+            "Pro.20.10"
+          ]
+        }
+      ],
+      "related": [
+        "radiometric-dating",
+        "six-days"
+      ],
+      "topics": [
+        "age-of-earth"
+      ]
+    },
+    {
+      "id": "genetic-clock",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "Human genetics points to a recent first pair, and a genome running down",
+      "summary": "Every living person's mitochondrial DNA traces back to one woman, and every man's Y chromosome to one man, as all are of one blood, from Eve and through Noah. When the mutation rate of mitochondrial DNA was measured in real families it was far faster than had been assumed; at that rate the first mother lived about 6,000 years ago. Mankind is genetically very alike, as a young race from few people would be. Harmful mutations accumulate in every generation faster than selection can remove them: the genome is running down, as the creation was made subject to corruption, not building up.",
+      "passages": [
+        "Act.17.26",
+        "Gen.3.20",
+        "Gen.9.18-19",
+        "Rom.8.20-21"
+      ],
+      "points": [
+        {
+          "claim": "All mankind's mitochondrial DNA traces to one woman, and all men's Y chromosomes to one man: all are of one blood.",
+          "passages": [
+            "Act.17.26",
+            "Gen.3.20",
+            "Gen.9.18-19"
+          ]
+        },
+        {
+          "claim": "Measured in real families, mitochondrial DNA mutates far faster than had been assumed; at that rate the first mother lived about 6,000 years ago.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "parsons-1997",
+              "loc": "Nature Genetics 15:363-368"
+            },
+            {
+              "work": "gibbons-1998",
+              "loc": "Science 279:28-29"
+            }
+          ]
+        },
+        {
+          "claim": "Harmful mutations accumulate in every generation faster than selection removes them: the genome is running down.",
+          "passages": [
+            "Rom.8.20-21"
+          ],
+          "sources": [
+            {
+              "work": "kondrashov-1995",
+              "loc": "Journal of Theoretical Biology 175:583-594"
+            },
+            {
+              "work": "sanford-2005",
+              "loc": "chapters 2-5"
+            }
+          ]
+        },
+        {
+          "claim": "Lifespans fell after the flood from near a thousand years to seventy, as a decaying inheritance would.",
+          "passages": [
+            "Gen.5.27",
+            "Gen.11.10-32",
+            "Psa.90.10"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The mitochondrial Eve of science lived about 200,000 years ago and was not the only woman alive.",
+          "answer": "That age rests on a rate calibrated by assumed ages of descent from apes, not on the rate measured in families. That all trace to one mother is what Scripture says: she was the mother of all living.",
+          "passages": [
+            "Gen.3.20",
+            "Act.17.26"
+          ]
+        },
+        {
+          "objection": "Most of our DNA is junk left over from evolution.",
+          "answer": "The ENCODE project (2012) reported biochemical activity across most of the genome, and functions for once-dismissed DNA are found year by year. Calling what is not yet understood junk is an argument from ignorance.",
+          "passages": [
+            "Psa.139.14"
+          ]
+        }
+      ],
+      "related": [
+        "evolution",
+        "six-days",
+        "sin-and-death"
+      ],
+      "topics": [
+        "evolution",
+        "age-of-earth"
+      ]
+    },
+    {
+      "id": "probability-of-life",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "Life's information could not arise by chance",
+      "summary": "DNA is a code, written in four letters and read by machines that are themselves built from its instructions: the code needs the machines, and the machines need the code. A working protein is a precise sequence; Douglas Axe estimated that only about one in 10^77 sequences of a modest protein's length fold to work, more than the number of atoms in our galaxy. The simplest living cell needs hundreds of such proteins at once. Natural selection cannot help before there is life to reproduce. Codes and machines come from minds: life is fearfully and wonderfully made.",
+      "passages": [
+        "Psa.139.13-16",
+        "Heb.3.4",
+        "Rom.1.20"
+      ],
+      "points": [
+        {
+          "claim": "DNA is a code read by machines built from its own instructions: each needs the other from the first.",
+          "passages": [
+            "Psa.139.15-16"
+          ]
+        },
+        {
+          "claim": "Only about one in 10^77 protein sequences of a modest length folds to work, and the simplest cell needs hundreds at once.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "axe-2004",
+              "loc": "Journal of Molecular Biology 341:1295-1315"
+            }
+          ]
+        },
+        {
+          "claim": "Natural selection works only on things that reproduce; it cannot make the first living thing.",
+          "passages": []
+        },
+        {
+          "claim": "Codes and machines come from minds: as a house shows a builder, life shows its Maker.",
+          "passages": [
+            "Heb.3.4",
+            "Rom.1.20",
+            "Psa.139.14"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Given enough time, anything can happen.",
+          "answer": "The odds exceed every trial the universe could have made, and time breaks such molecules apart in water as fast as it joins them.",
+          "passages": [
+            "Heb.3.4"
+          ]
+        },
+        {
+          "objection": "Life began in an RNA world, with molecules that copied themselves.",
+          "answer": "No self-copying RNA has been found to arise by itself; those made in laboratories were designed and selected by chemists, which is the point: it takes a mind.",
+          "passages": [
+            "Rom.1.20"
+          ]
+        }
+      ],
+      "related": [
+        "chirality",
+        "irreducible-complexity",
+        "creator",
+        "evolution"
+      ],
+      "topics": [
+        "origin-of-life",
+        "design",
+        "creator"
+      ]
+    },
+    {
+      "id": "chirality",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "Life's molecules are all of one hand, as chance never makes them",
+      "summary": "Many molecules come in left- and right-handed forms, mirror images of each other. The amino acids in living proteins are all left-handed, and the sugars in DNA and RNA all right-handed; a few of the wrong hand spoil a protein's fold or a DNA strand. Every unguided reaction makes the two hands in equal measure: Stanley Miller's famous experiment of 1953 made amino acids, but an even mixture of both. The few natural processes that favour one hand give a small excess, not the purity life needs. One-handedness is the mark of selection by a mind.",
+      "passages": [
+        "Psa.139.14",
+        "Rom.1.20"
+      ],
+      "points": [
+        {
+          "claim": "The amino acids in living proteins are all left-handed, and the sugars of DNA and RNA all right-handed; a few of the wrong hand spoil them.",
+          "passages": [
+            "Psa.139.14"
+          ]
+        },
+        {
+          "claim": "Unguided reactions make both hands equally: Miller's experiment of 1953 made amino acids, but an even mixture of both.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "miller-1953",
+              "loc": "Science 117:528-529"
+            }
+          ]
+        },
+        {
+          "claim": "One-handedness is the mark of selection by a mind.",
+          "passages": [
+            "Rom.1.20",
+            "Heb.3.4"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Some meteorites, and polarised light, show an excess of one hand.",
+          "answer": "The excesses found are small, and fall far short of the complete purity life needs; and a mixture enriched by a few parts still spoils every chain built from it.",
+          "passages": []
+        }
+      ],
+      "related": [
+        "probability-of-life",
+        "irreducible-complexity",
+        "evolution"
+      ],
+      "topics": [
+        "origin-of-life",
+        "design"
+      ]
+    },
+    {
+      "id": "irreducible-complexity",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "Living machines need all their parts at once",
+      "summary": "Darwin wrote that if any complex organ could not have been formed by numerous, successive, slight modifications, his theory would absolutely break down. The bacterial flagellum is a rotary motor of some forty kinds of protein, with a rotor, stator, drive shaft and propeller, and without any of its core parts it does not turn. The clotting of blood is a cascade in which a missing step means bleeding to death or clotting solid. A part that does nothing until the whole is built gives selection nothing to keep. Such machines were made whole.",
+      "passages": [
+        "Psa.104.24",
+        "Job.12.7-10"
+      ],
+      "points": [
+        {
+          "claim": "Darwin set the test himself: an organ that could not be formed by numerous, slight steps would overthrow his theory.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "darwin-origin",
+              "loc": "Chapter VI",
+              "quote": "If it could be demonstrated that any complex organ existed, which could not possibly have been formed by numerous, successive, slight modifications, my theory would absolutely break down."
+            }
+          ]
+        },
+        {
+          "claim": "The bacterial flagellum is a rotary motor of some forty kinds of protein; without any of its core parts it does not turn.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "behe-1996",
+              "loc": "chapter 3"
+            }
+          ]
+        },
+        {
+          "claim": "Blood clotting is a cascade in which a missing step means bleeding to death, or clotting solid.",
+          "passages": [
+            "Lev.17.11"
+          ],
+          "sources": [
+            {
+              "work": "behe-1996",
+              "loc": "chapter 4"
+            }
+          ]
+        },
+        {
+          "claim": "A part that does nothing until the whole is built gives selection nothing to keep: the hand of Yahweh has wrought this.",
+          "passages": [
+            "Job.12.7-10",
+            "Psa.104.24"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Parts of the flagellum are found in a secretion system with another use.",
+          "answer": "That some of its parts serve elsewhere does not show a path of small useful steps to the whole motor, and many researchers hold the secretion system came after the flagellum, not before it.",
+          "passages": []
+        },
+        {
+          "objection": "This is an argument from ignorance: one day the steps will be found.",
+          "answer": "It is an argument from what is known: machines with interlocking parts are, in every case where we know the cause, the work of a designer.",
+          "passages": [
+            "Heb.3.4"
+          ]
+        }
+      ],
+      "related": [
+        "probability-of-life",
+        "chirality",
+        "evolution"
+      ],
+      "topics": [
+        "design",
+        "evolution"
+      ]
+    },
+    {
+      "id": "fine-tuning",
+      "subject": "creation-science",
+      "kind": "evidence",
+      "title": "The universe and the earth are fitted for life",
+      "summary": "The strengths of gravity and of the forces in the atom, and the energy of empty space, lie within narrow bounds outside which there could be no stars, no chemistry and no life; the last is set to about one part in 10^120. The earth is placed at the distance from the sun where water is liquid, and water itself is unlike almost any other substance: ice floats, so lakes and seas freeze from the top and life survives beneath. Yahweh formed the earth to be inhabited, and stretched out the heavens.",
+      "passages": [
+        "Isa.45.18",
+        "Jer.33.25",
+        "Isa.40.26"
+      ],
+      "points": [
+        {
+          "claim": "The forces of nature lie within narrow bounds outside which there could be no stars, chemistry or life; the energy of empty space is set to about one part in 10^120.",
+          "passages": [
+            "Jer.33.25",
+            "Isa.40.26"
+          ]
+        },
+        {
+          "claim": "The earth is placed where water is liquid, and ice floats, so waters freeze from the top and life survives beneath.",
+          "passages": [
+            "Job.38.29-30",
+            "Isa.45.18"
+          ]
+        },
+        {
+          "claim": "He formed the earth to be inhabited, and made the heavens by his word.",
+          "passages": [
+            "Isa.45.18",
+            "Psa.33.6-9"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "There are countless universes, and we are in one that happens to fit.",
+          "answer": "No other universe has been or can be observed: it is a belief held to avoid a Maker, and a machine that made universes would need explaining too.",
+          "passages": [
+            "Rom.1.20-22"
+          ]
+        },
+        {
+          "objection": "If it were not fitted for life we would not be here to notice.",
+          "answer": "A man who survives a firing squad of a hundred marksmen cannot say it was no surprise because otherwise he would not be there to wonder: he asks why they all missed.",
+          "passages": [
+            "Psa.19.1"
+          ]
+        }
+      ],
+      "related": [
+        "creator",
+        "probability-of-life"
+      ],
+      "topics": [
+        "creator",
+        "design"
       ]
     },
     {
@@ -2840,7 +3722,8 @@
       "topics": [
         "nature-of-christ",
         "the-cross"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "holy-spirit-power",
@@ -2977,7 +3860,8 @@
       ],
       "topics": [
         "pre-existence"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "john-8-58",
@@ -3019,7 +3903,8 @@
       ],
       "topics": [
         "pre-existence"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "john-10-30",
@@ -3059,7 +3944,8 @@
       ],
       "topics": [
         "trinity"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "john-20-28",
@@ -3109,7 +3995,8 @@
       "topics": [
         "trinity",
         "nature-of-christ"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "philippians-2-6",
@@ -3160,7 +4047,8 @@
         "trinity",
         "pre-existence",
         "nature-of-christ"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "colossians-1-16",
@@ -3214,7 +4102,8 @@
       ],
       "topics": [
         "pre-existence"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "isaiah-9-6",
@@ -3264,7 +4153,8 @@
         "pre-existence",
         "kingdom",
         "messiah"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "matthew-28-19",
@@ -3310,7 +4200,8 @@
         "trinity",
         "holy-spirit",
         "baptism"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "no-idols",
@@ -3904,7 +4795,8 @@
         "heaven-at-death",
         "kingdom",
         "baptism"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "luke-16-19",
@@ -3997,7 +4889,8 @@
       ],
       "topics": [
         "immortal-soul"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "matthew-10-28",
@@ -4039,7 +4932,8 @@
       "topics": [
         "immortal-soul",
         "hell"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "matthew-25-46",
@@ -4132,7 +5026,8 @@
       "topics": [
         "heaven-at-death",
         "resurrection-of-dead"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "philippians-1-23",
@@ -4180,7 +5075,8 @@
         "heaven-at-death",
         "second-coming",
         "resurrection-of-dead"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "1-peter-3-19",
@@ -4218,7 +5114,8 @@
       ],
       "topics": [
         "heaven-at-death"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "matthew-11-14",
@@ -4262,7 +5159,8 @@
       ],
       "topics": [
         "reincarnation"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "adversary-not-angel",
@@ -4518,7 +5416,8 @@
       ],
       "topics": [
         "devil"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "ezekiel-28",
@@ -4558,7 +5457,8 @@
       ],
       "topics": [
         "devil"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "revelation-12-7",
@@ -4603,7 +5503,8 @@
       ],
       "topics": [
         "devil"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "kingdom-on-earth",
@@ -4865,7 +5766,8 @@
       "topics": [
         "heaven-at-death",
         "second-coming"
-      ]
+      ],
+      "objections": null
     },
     {
       "id": "law-fulfilled",
