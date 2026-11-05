@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-21, 2 John, 3 John, and Jude
-(2,773 of 7,958 Peshitta verses; 5,185 remain). Luke 22 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-22, 2 John, 3 John, and Jude
+(2,844 of 7,958 Peshitta verses; 5,114 remain). Luke 23 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1000,3 +1000,60 @@ Source checks for Luke 21:
   teaching and going out to lodge at the mountain called the Place
   of Olives. In 21:38 the people were coming early to hear his word,
   with an explicit singular object and third-person possessive.
+
+Source checks for Luke 22:
+
+- In 22:1 the feast of unleavened bread is called Passover. In 22:2
+  the priests and scribes were seeking to kill him and feared the people.
+  In 22:4 both scribes and temple commanders are named. In 22:6 Judas
+  was seeking an opportunity to hand him over without the crowd.
+- In 22:8 Jesus sends Cephas and John to prepare the Passover for us.
+  In 22:11 the message says our Rabbi and my disciples. In 22:12 the
+  furnished upper room is shown, with preparations to be made there.
+  In 22:14 Jesus comes and reclines with the twelve apostles.
+- In 22:15 the desire is emphatic and precedes suffering. In 22:16
+  he will not eat it from now on until fulfillment in God's kingdom.
+  In 22:17 taking the cup, thanksgiving, and division among the disciples
+  are all present in the source. In 22:19 my body, given for you, and
+  remembrance of me retain their possessive and beneficiary relations.
+- In 22:20 the cup is explicitly the topic after they have eaten supper;
+  the covenant is new, the blood is mine, and it is poured out for you.
+  In 22:21 the betrayer's hand is on the table without an added with me.
+  In 22:22 the appointed course and the man through whose hand the Son
+  of Man is handed over remain distinct. In 22:24 the dispute is about
+  which of them is greatest.
+- In 22:25 the kings are lords over the nations, and those exercising
+  authority are called benefactors. In 22:26 greatness is contrasted
+  with being least and leadership with service. In 22:29 the kingdom
+  is promised to you as my Father promised to me; in 22:30 eating and
+  drinking, sitting on thrones, and judging twelve tribes all remain.
+- In 22:31 Satan's sifting object is plural you, while the prayer,
+  faith, turning, and strengthening command in 22:32 address Simon
+  in the singular. The turning clause is imperative, not a subordinate
+  when-you-have-turned clause. In 22:33 the address is my Lord; in
+  22:34 Jesus names Simon, with three denials before today's crowing.
+- In 22:35 purses, wallets, and sandals are plural. In 22:36 the person
+  without a sword sells his own garment and buys himself a sword.
+  In 22:37 I will be counted is first-person future; the final completion
+  perfect is rendered prospectively in the context of the impending
+  scriptural fulfillment. In 22:38 the address is our Lord, two swords
+  are present, and the answer says they are sufficient.
+- In 22:39 the mountain is of the Place of Olives, with his disciples
+  following. In 22:41 kneeling precedes ongoing prayer. In 22:42 the
+  direct address is Father, followed by my will and yours. In 22:44
+  fear and earnest ongoing prayer precede the sweat like drops of blood
+  falling to the ground. In 22:47 Judas's prior sign explicitly identifies
+  whomever I kiss; in 22:48 the kiss belongs to its own source span.
+- In 22:49 those with him are the people who see and ask our Lord about
+  striking. In 22:51 the ear belongs to the person who was struck, while
+  the feminine healing suffix refers to the ear: healed it. In 22:52
+  chief priests, elders, and temple captains come against him. In 22:54
+  Simon is the subject of ongoing following, and in 22:55 he too was
+  sitting among the people around the fire.
+- In 22:57 the denial uses present knowing, despite Murdock's perfect.
+  In 22:58 Cephas belongs to the following speech clause. In 22:61 Jesus,
+  Cephas, Simon, and our Lord's word retain their distinct references.
+  In 22:63-65 mocking, blindfolding, striking his face, and uttering
+  blasphemies retain their ongoing past forms. In 22:68 answering and
+  releasing him are distinct. In 22:69 the right hand is of God's power;
+  in 22:71 they have heard from his mouth.
