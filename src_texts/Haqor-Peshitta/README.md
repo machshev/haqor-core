@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, 2 John, 3 John, and Jude
-(2,953 of 7,958 Peshitta verses; 5,005 remain). John 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1, 2 John, 3 John, and Jude
+(3,004 of 7,958 Peshitta verses; 4,954 remain). John 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1168,3 +1168,59 @@ Source checks for Luke 24:
   send is future, my Father is possessive, and the city is Jerusalem.
   In 24:50 Bethany and his lifted hands remain; blessing, separation,
   ascent, worship, return, continual praise, and Amen complete 24:51-53.
+
+Source checks for John 1:
+
+- In 1:1 the Word's being with God and being God retain their distinct
+  predicates. In 1:3 both finite predicates and the final relative about
+  coming into being remain. Agency is expressed by the hand idiom. In
+  1:4 life is in him and is humanity's light; in 1:5 the light shines,
+  while the darkness does not comprehend it.
+- In 1:6 John is sent from God. In 1:7 the source explicitly includes
+  the purpose that everyone might believe through him, although this
+  clause is absent from the supplied Murdock reference. In 1:8 John is
+  not the light and comes to testify about it. In 1:9 the true light
+  enlightens everyone coming into the world, with for and the past copula.
+- In 1:10 the world comes through his hand and does not know him.
+  In 1:11 his own do not receive him. In 1:12 those receiving him are
+  given authority to become God's children. In 1:13 the plural birth
+  is from God, contrasted with blood, flesh's desire, and man's desire;
+  the birth predicate remains with its actual final source position.
+- In 1:14 the Word becomes flesh and dwells among us; we see his glory.
+  Only-begotten, from the Father, and full of grace and truth remain
+  distinct. In 1:15 the coming-after, being-before, and prior-to-me
+  expressions keep their respective first-person references. In 1:16
+  we all receive from his fullness, and grace in place of grace.
+- In 1:17 the source order is truth and grace, after the law given
+  through Moses' hand; they come through Jesus the Messiah's hand.
+  In 1:18 the recorded title is only-begotten God. He is in his Father's
+  bosom and makes the unseen God known, with the understood object
+  supplied naturally in English.
+- In 1:19 the Jews from Jerusalem are the senders, priests and Levites
+  the delegates, and John the recipient of their questions. The full
+  sending clause is linked together to preserve those roles in English.
+  In 1:20 confession and non-denial remain explicit. In 1:21 the two
+  questions concern Elijah and a prophet, each with its own denial.
+- In 1:23 the voice is calling in the wilderness and commands making
+  the Lord's way smooth, as Isaiah said. In 1:24 the sent men are from
+  the Pharisees. In 1:26 the standing one is among you but unknown to
+  you. In 1:27 John is unworthy to loosen the straps of his sandals.
+- In 1:28 Bethany is across the Jordan; the location phrase is present
+  in the source despite its absence from the supplied Murdock reference.
+  In 1:29 the Lamb bears the world's sin, singular. In 1:31 the purpose
+  is that Jesus be made known to Israel, with John's coming to baptize
+  as the means. In 1:32 the Spirit descends like a dove and remains on
+  him; John is the witness, not the one who remains on Jesus.
+- In 1:33 the sign is the person on whom the Spirit descends and remains,
+  identifying the one baptizing with the Holy Spirit. In 1:34 John's
+  seeing and testimony concern the Son of God. In 1:38 the address is
+  our Rabbi. In 1:39 Jesus' lodging and the two disciples' being with
+  him are separate clauses, followed by that day and the tenth hour.
+- In 1:40 the hearing is from John and the following is after Jesus;
+  Andrew is Simon's brother. In 1:41 the source verb is saw. In 1:42
+  Simon is son of Jonah and will be called Cephas, without an added
+  Greek name gloss. In 1:44 Bethsaida is the city of Andrew and Simon.
+  In 1:45 we have found stays at its actual source position, with
+  Jesus, Joseph, and Nazareth distinct. In 1:51 the future audience is
+  plural, with God's angels ascending and descending toward the Son
+  of Man; both introductory amens remain.
