@@ -17,6 +17,7 @@ errors; the scans are kept too, in Git LFS (`git lfs pull` fetches them).
 | `tacitus-annals-church-brodribb.txt` | Tacitus, *Annals*, tr. A. J. Church and W. J. Brodribb (1876), from English Wikisource | Translators died 1912 and 1905 |
 | `josephus-antiquities-whiston.txt` | Josephus, *Antiquities of the Jews*, tr. William Whiston (1737), Project Gutenberg #2848 | Published 1737 |
 | `pliny-letters-melmoth.txt` | Pliny the Younger, *Letters*, tr. William Melmoth, rev. F. C. T. Bosanquet, Project Gutenberg #2811 | Translators died 1799 and 1918 |
+| `darwin-origin-of-species-1859.txt` | Charles Darwin, *On the Origin of Species* (1859, first edition), Project Gutenberg #1228 | Published 1859; author died 1882 |
 
 The Project Gutenberg files keep the Gutenberg licence header and footer,
 as that licence requires when redistributing them with the name.

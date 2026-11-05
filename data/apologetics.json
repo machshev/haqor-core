@@ -77,6 +77,14 @@
       "title": "Is there a Creator?"
     },
     {
+      "id": "age-of-earth",
+      "title": "How old is the earth?"
+    },
+    {
+      "id": "evolution",
+      "title": "Evolution"
+    },
+    {
       "id": "suffering",
       "title": "Why God allows suffering"
     },
@@ -272,7 +280,9 @@
         "matthew-28-19",
         "grace-and-works",
         "gospel-and-baptism",
-        "kingdom-on-earth"
+        "kingdom-on-earth",
+        "six-days",
+        "evolution"
       ]
     },
     {
@@ -301,7 +311,9 @@
         "john-1-1",
         "holy-spirit-power",
         "gospel-and-baptism",
-        "kingdom-on-earth"
+        "kingdom-on-earth",
+        "six-days",
+        "evolution"
       ]
     },
     {
@@ -382,7 +394,10 @@
         "atonement",
         "creator",
         "one-mediator",
-        "no-idols"
+        "no-idols",
+        "six-days",
+        "evolution",
+        "flood"
       ],
       "differ": [
         "one-god",
@@ -413,7 +428,9 @@
         "one-mediator",
         "traditions-of-men",
         "law-fulfilled",
-        "creator"
+        "creator",
+        "evolution",
+        "flood"
       ],
       "differ": [
         "john-1-1",
@@ -426,7 +443,8 @@
         "job-1-6",
         "return-of-christ",
         "abraham-promise",
-        "gospel-and-baptism"
+        "gospel-and-baptism",
+        "six-days"
       ]
     },
     {
@@ -500,7 +518,9 @@
         "empty-tomb",
         "appearances",
         "resurrection-hope",
-        "kingdom-on-earth"
+        "kingdom-on-earth",
+        "six-days",
+        "evolution"
       ]
     },
     {
@@ -652,6 +672,9 @@
         "bible-preserved",
         "fulfilled-prophecy",
         "creator",
+        "evolution",
+        "six-days",
+        "flood",
         "moral-law",
         "suffering",
         "canaanites",
@@ -666,6 +689,7 @@
       "agree": [],
       "differ": [
         "creator",
+        "evolution",
         "faith-and-evidence",
         "miracles",
         "empty-tomb",
@@ -696,7 +720,9 @@
         "miracles",
         "empty-tomb",
         "appearances",
-        "early-testimony"
+        "early-testimony",
+        "evolution",
+        "six-days"
       ]
     }
   ],
@@ -752,6 +778,14 @@
       "licence": "public-domain",
       "url": "https://www.gutenberg.org/ebooks/34989",
       "file": "src_texts/Apologetics/greenleaf-testimony-of-the-evangelists.txt"
+    },
+    "darwin-origin": {
+      "title": "On the Origin of Species",
+      "author": "Charles Darwin",
+      "year": 1859,
+      "licence": "public-domain",
+      "url": "https://www.gutenberg.org/ebooks/1228",
+      "file": "src_texts/Apologetics/darwin-origin-of-species-1859.txt"
     }
   },
   "entries": [
@@ -835,10 +869,300 @@
         "no-idols",
         "sin-and-death",
         "moral-law",
-        "miracles"
+        "miracles",
+        "six-days",
+        "evolution"
       ],
       "topics": [
         "creator"
+      ]
+    },
+    {
+      "id": "six-days",
+      "subject": "creation",
+      "kind": "doctrine",
+      "title": "God made the world in six days, a few thousand years ago",
+      "summary": "Each day of Genesis 1 is numbered and bounded by an evening and a morning, and the fourth commandment rests the week on them: \"in six days Yahweh made heaven and earth, the sea, and all that in them is, and rested the seventh day.\" The genealogies run unbroken from Adam to Abraham, giving their years, and Luke runs them on to Jesus. Jesus said man was made male and female \"from the beginning of the creation\", not at the end of ages. Death came into the world by Adam's sin, so there were no ages of death before him. The earth is thousands of years old, not billions.",
+      "passages": [
+        "Gen.1.1-2.3",
+        "Exo.20.11",
+        "Mrk.10.6",
+        "Gen.5.3-32"
+      ],
+      "points": [
+        {
+          "claim": "Each day is numbered and bounded by an evening and a morning.",
+          "passages": [
+            "Gen.1.5",
+            "Gen.1.31",
+            "Gen.2.2-3"
+          ]
+        },
+        {
+          "claim": "The fourth commandment rests man's week on God's: six days of work, and the seventh a rest.",
+          "passages": [
+            "Exo.20.9-11",
+            "Exo.31.17"
+          ]
+        },
+        {
+          "claim": "The genealogies run from Adam to Abraham with their years, and Luke runs them on to Jesus; Enoch was the seventh from Adam.",
+          "passages": [
+            "Gen.5.3-32",
+            "Gen.11.10-26",
+            "Luk.3.23-38",
+            "Jud.1.14"
+          ]
+        },
+        {
+          "claim": "Man was made male and female from the beginning of the creation, not at the end of long ages.",
+          "passages": [
+            "Mrk.10.6",
+            "Mat.19.4"
+          ]
+        },
+        {
+          "claim": "God made all very good; death entered by Adam's sin.",
+          "passages": [
+            "Gen.1.31",
+            "Rom.5.12",
+            "1Co.15.21"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "With the Lord a day is as a thousand years.",
+          "answer": "Peter speaks of God's patience in delaying the promised day, not of the length of the days of Genesis; he says also that a thousand years are as one day. The commandment counts the days of creation as man's days of work.",
+          "passages": [
+            "2Pe.3.8-9",
+            "Exo.20.9-11"
+          ]
+        },
+        {
+          "objection": "Ages may lie between Genesis 1:1 and 1:2.",
+          "answer": "In six days Yahweh made heaven and earth, the sea, and all that in them is: the heaven and earth of verse 1 are within the six days, not before them.",
+          "passages": [
+            "Exo.20.11",
+            "Gen.1.1-2"
+          ]
+        },
+        {
+          "objection": "Science has measured the earth at four and a half billion years.",
+          "answer": "No one measured the past; the dates rest on what was assumed of it: how much there was to begin with, and that rates never changed across ages no one saw. God asks Job where he was when the earth's foundations were laid. The one witness who was there has said when.",
+          "passages": [
+            "Job.38.4",
+            "Exo.20.11",
+            "Heb.11.3"
+          ]
+        },
+        {
+          "objection": "Genesis is poetry, not history.",
+          "answer": "Genesis is told as history, with genealogies, ages and places. Jesus and Paul took Adam and Eve as the first man and woman, and Paul rests the gospel on it: as in Adam all die, so in Christ shall all be made alive.",
+          "passages": [
+            "Mat.19.4-6",
+            "1Ti.2.13-14",
+            "Rom.5.14",
+            "1Co.15.22"
+          ]
+        }
+      ],
+      "related": [
+        "creator",
+        "evolution",
+        "flood",
+        "sin-and-death"
+      ],
+      "topics": [
+        "age-of-earth",
+        "creator"
+      ]
+    },
+    {
+      "id": "evolution",
+      "subject": "creation",
+      "kind": "evidence",
+      "title": "Life was made after its kind, not evolved from one ancestor",
+      "summary": "Genesis says ten times that God made living things \"after their kind\", and Paul that all flesh is not the same flesh. Adam was formed from the dust and Eve from his side, not from an animal ancestor. What is seen is variation within kinds, as in Jacob's flocks and every breed of dog, not one kind becoming another. Darwin owned that the missing transitional forms were the gravest objection to his theory, and that the sudden appearance of whole groups in the lowest fossil-bearing rocks was graver still; the major groups of animals still appear there suddenly. Evolution needs ages of death before man, which Scripture says came by sin.",
+      "passages": [
+        "Gen.1.24-25",
+        "Gen.2.7",
+        "1Co.15.39"
+      ],
+      "points": [
+        {
+          "claim": "God made the plants, fish, birds and beasts each after its kind.",
+          "passages": [
+            "Gen.1.11-12",
+            "Gen.1.21",
+            "Gen.1.24-25"
+          ]
+        },
+        {
+          "claim": "All flesh is not the same flesh: of men, of beasts, of fish and of birds.",
+          "passages": [
+            "1Co.15.39"
+          ]
+        },
+        {
+          "claim": "Adam was formed from the dust and Eve from his side; Luke ends Jesus' genealogy with \"Adam, which was the son of God.\"",
+          "passages": [
+            "Gen.2.7",
+            "Gen.2.21-22",
+            "Luk.3.38"
+          ]
+        },
+        {
+          "claim": "What is seen is variation within a kind, as in Jacob's flocks, not one kind becoming another.",
+          "passages": [
+            "Gen.30.37-43",
+            "Gen.1.12"
+          ]
+        },
+        {
+          "claim": "Darwin owned that the missing transitional forms were the gravest objection to his theory, laid it to the imperfection of the fossil record, and had no answer for the sudden appearance of whole groups in the lowest fossil-bearing rocks. The major groups of animals still appear there suddenly, fully formed.",
+          "passages": [],
+          "sources": [
+            {
+              "work": "darwin-origin",
+              "loc": "Chapter VI",
+              "quote": "Firstly, why, if species have descended from other species by insensibly fine gradations, do we not everywhere see innumerable transitional forms? Why is not all nature in confusion instead of the species being, as we see them, well defined?"
+            },
+            {
+              "work": "darwin-origin",
+              "loc": "Chapter IX",
+              "quote": "To the question why we do not find records of these vast primordial periods, I can give no satisfactory answer."
+            }
+          ]
+        },
+        {
+          "claim": "Life is fearfully and wonderfully made: its order is the work of a Mind, as a house shows a builder.",
+          "passages": [
+            "Psa.139.14",
+            "Heb.3.4",
+            "Rom.1.20"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Evolution is proven science.",
+          "answer": "Change within a kind is seen and is not in dispute. That all life descended from a single cell is an inference about a past no one observed, and the fossils do not show the fine gradations it requires.",
+          "passages": [
+            "Gen.1.24-25",
+            "Job.38.4"
+          ]
+        },
+        {
+          "objection": "Shared DNA shows common ancestry.",
+          "answer": "Likeness shows a common Maker as well as a common ancestor: one builder uses the same plans for many houses. Creatures made of one dust, for one world, are alike where they must be.",
+          "passages": [
+            "Heb.3.4",
+            "Gen.2.19",
+            "Psa.104.24"
+          ]
+        },
+        {
+          "objection": "God could have used evolution.",
+          "answer": "Then ages of death, struggle and suffering before Adam are what God called very good, and death did not come by sin. But Paul's gospel rests on a first man by whom death came, as by the second comes the resurrection.",
+          "passages": [
+            "Gen.1.31",
+            "Rom.5.12",
+            "1Co.15.21-22",
+            "1Co.15.45"
+          ]
+        }
+      ],
+      "related": [
+        "creator",
+        "six-days",
+        "sin-and-death",
+        "suffering"
+      ],
+      "topics": [
+        "evolution",
+        "creator"
+      ]
+    },
+    {
+      "id": "flood",
+      "subject": "creation",
+      "kind": "doctrine",
+      "title": "The flood covered the whole earth",
+      "summary": "The waters prevailed over all the high hills under the whole heaven, and every living thing on the land died except those in the ark. A local flood needed no ark a hundred and twenty years in building, and would break God's promise never again to destroy the earth by a flood, for local floods come every year. Jesus and Peter speak of the flood as history and a pattern of judgement to come. A flood over the whole earth for a year would lay down rock in layers and bury creatures by the billion: much of what is read as ages is the record of that judgement.",
+      "passages": [
+        "Gen.7.17-23",
+        "Gen.9.11",
+        "2Pe.3.5-7",
+        "Mat.24.37-39"
+      ],
+      "points": [
+        {
+          "claim": "The waters covered all the high hills under the whole heaven, and all flesh on the land died.",
+          "passages": [
+            "Gen.7.19-23"
+          ]
+        },
+        {
+          "claim": "God promised never again to destroy the earth by a flood; local floods come every year, so the flood was not local.",
+          "passages": [
+            "Gen.9.11-15",
+            "Isa.54.9"
+          ]
+        },
+        {
+          "claim": "Jesus and Peter speak of the flood as history, and the pattern of the judgement to come.",
+          "passages": [
+            "Mat.24.37-39",
+            "Luk.17.26-27",
+            "2Pe.3.5-7",
+            "1Pe.3.20"
+          ]
+        },
+        {
+          "claim": "The fountains of the great deep broke up; afterwards the mountains rose and the valleys sank, and the waters went down.",
+          "passages": [
+            "Gen.7.11",
+            "Gen.8.2-3",
+            "Psa.104.6-9"
+          ]
+        }
+      ],
+      "objections": [
+        {
+          "objection": "The rock layers took millions of years to form.",
+          "answer": "Slow deposition is assumed, not seen. Water moving over the whole earth for a year lays down layers quickly and buries creatures before they decay, and the fossils are a record of death on a vast scale, which Scripture lays to sin and judgement.",
+          "passages": [
+            "Gen.7.11",
+            "Gen.7.21-23",
+            "2Pe.3.5-6"
+          ]
+        },
+        {
+          "objection": "Where did the water come from, and where did it go?",
+          "answer": "From the fountains of the great deep as well as the windows of heaven; afterwards the mountains rose and the valleys sank to the place God founded for them.",
+          "passages": [
+            "Gen.7.11",
+            "Psa.104.6-9"
+          ]
+        },
+        {
+          "objection": "Flood stories are told by many nations; Genesis borrowed one.",
+          "answer": "If every nation is descended from Noah's sons, many nations remembering a great flood is what should be found. Genesis gives it soberly, with dates and an ark fit to float, not as a quarrel of gods.",
+          "passages": [
+            "Gen.10.32",
+            "Gen.6.15",
+            "Gen.7.11"
+          ]
+        }
+      ],
+      "related": [
+        "six-days",
+        "evolution",
+        "return-of-christ"
+      ],
+      "topics": [
+        "age-of-earth"
       ]
     },
     {
@@ -4842,7 +5166,8 @@
         "suffering",
         "atonement",
         "grace-and-works",
-        "soul-mortal"
+        "soul-mortal",
+        "evolution"
       ],
       "topics": [
         "suffering",
