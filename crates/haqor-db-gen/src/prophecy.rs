@@ -988,6 +988,9 @@ mod tests {
             ))
             .unwrap();
         }
+        // Detached, so the build's DROP TABLEs cannot reach the real file:
+        // an unqualified name falls through to an attached database.
+        db.execute_batch("DETACH DATABASE src").unwrap();
         let summary =
             build_prophecies(&db, &root.join("data").join(PROPHECIES), &src_texts).unwrap();
         eprintln!("{summary:?}");
