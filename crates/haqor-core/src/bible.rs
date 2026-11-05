@@ -7150,14 +7150,21 @@ impl Bible {
         if !self.has_table("bible_event")? {
             return Ok(Vec::new());
         }
+        // A database built before events could be estimated has none.
+        let estimated = if self.has_column("bible_event", "estimated")? {
+            "estimated"
+        } else {
+            "0"
+        };
         let mut events: Vec<BibleEvent> = self
             .db
-            .prepare(
-                "SELECT event_id, title, year, duration, unit, note FROM data.bible_event \
+            .prepare(&format!(
+                "SELECT event_id, title, year, duration, unit, note, {estimated} \
+                 FROM data.bible_event \
                  WHERE ?1 IS NULL OR event_id IN \
                    (SELECT event_id FROM data.bible_event_name WHERE entity_id = ?1) \
                  ORDER BY ord",
-            )?
+            ))?
             .query_map([entity], |row| {
                 Ok(BibleEvent {
                     id: row.get(0)?,
@@ -7169,6 +7176,7 @@ impl Bible {
                     people: Vec::new(),
                     places: Vec::new(),
                     note: row.get(5)?,
+                    estimated: row.get(6)?,
                 })
             })?
             .collect::<rusqlite::Result<_>>()?;

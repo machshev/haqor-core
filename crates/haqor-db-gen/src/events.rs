@@ -41,6 +41,8 @@ DROP TABLE IF EXISTS bible_event_name;
 -- An event of the Bible, by Theographic's id, in time order (`ord`). `year`
 -- is the year it began, BC negative, with no year 0; it lasted `duration`
 -- `unit`s (years, months, weeks or days), 0 and empty where none is given.
+-- `estimated` where its dates are reckoned rather than read: Haqor's lifetimes
+-- of those whose birth and death Scripture does not give.
 CREATE TABLE bible_event(
     event_id INTEGER PRIMARY KEY,
     ord      INTEGER NOT NULL,
@@ -48,7 +50,8 @@ CREATE TABLE bible_event(
     year     INTEGER NOT NULL,
     duration INTEGER NOT NULL,
     unit     TEXT    NOT NULL,
-    note     TEXT    NOT NULL
+    note     TEXT    NOT NULL,
+    estimated INTEGER NOT NULL DEFAULT 0
 );
 
 -- The verses telling it, as spans of Haqor's numbering.
@@ -408,7 +411,8 @@ struct Overrides {
     /// A person or place's TIPNR key, or none to leave it out.
     names: HashMap<String, Option<String>>,
     /// Haqor's own events, written as Theographic's are (`id`, `title`,
-    /// `duration`, `note`, `verses`, `people`, `places`), each with the id of
+    /// `duration`, `note`, `verses`, `people`, `places`, and `estimated` for
+    /// dates reckoned rather than read), each with the id of
     /// the event it comes `after`, whose year it takes unless it gives a `year`.
     added: Vec<(u32, Value)>,
 }
@@ -731,8 +735,8 @@ pub(crate) fn build(
 
     tx.execute_batch(SCHEMA)?;
     let mut insert_event = tx.prepare(
-        "INSERT INTO bible_event(event_id, ord, title, year, duration, unit, note) \
-         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
+        "INSERT INTO bible_event(event_id, ord, title, year, duration, unit, note, estimated) \
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
     )?;
     let mut insert_passage = tx.prepare(
         "INSERT INTO bible_event_passage(event_id, ord, first_ref, last_ref) \
@@ -748,7 +752,8 @@ pub(crate) fn build(
             row.year,
             row.duration,
             row.unit,
-            row.note
+            row.note,
+            row.event["estimated"].as_bool().unwrap_or(false)
         ])?;
         summary.events += 1;
         for (i, (first, last)) in row.spans.iter().enumerate() {
@@ -961,6 +966,14 @@ mod tests {
         // Estimated lives, from birth to the last year each is seen.
         assert_eq!(year("Lifetime of Daniel"), -621);
         assert_eq!(year("Lifetime of Nehemiah"), -480);
+        let estimated: i64 = db
+            .query_row(
+                "SELECT count(*) FROM bible_event WHERE estimated",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+        assert_eq!(estimated, 10);
         // An added event names a TIPNR record by its key.
         let named: i64 = db
             .query_row(

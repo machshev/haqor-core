@@ -353,6 +353,9 @@ pub struct BibleEvent {
     pub places: Vec<NameSummary>,
     /// A line about its date; may be empty.
     pub note: String,
+    /// Whether its dates are reckoned rather than read: a lifetime of one
+    /// whose birth and death Scripture does not give.
+    pub estimated: bool,
 }
 
 /// A run of the Bible's events ordered by what the text says came before
