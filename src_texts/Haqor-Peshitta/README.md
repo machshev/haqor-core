@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-16, 2 John, 3 John, and Jude
-(3,668 of 7,958 Peshitta verses; 4,290 remain). John 17 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-17, 2 John, 3 John, and Jude
+(3,694 of 7,958 Peshitta verses; 4,264 remain). John 18 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1400,3 +1400,14 @@ Source checks for John 16:
 - John 16:20-24 distinguishes the hearers' weeping and sorrow from the world's rejoicing, sorrow becoming joy, the woman's day of childbirth, a son and the human born into the world, the speaker's seeing the hearers again, and joy no one takes away. Asking the speaker and asking his Father in his name remain distinct, followed by the ask/receive command and complete joy.
 - John 16:25-28 keeps parables and future plain speech, asking in the speaker's name, the Father's own love, and departure and return. עינ בגלא is rendered together as “plainly,” an adverbial idiom recorded by [CAL](https://cal.huc.edu/cal_entry_web.php?lemma=%28yn%40bgl%29+N), rather than inventing a separate revealing predicate. John 16:27 says “God,” unlike the supplied Murdock's “Father”; John 16:28's first-person ethical לי is absorbed naturally into “I go,” without introducing a third-person recipient.
 - John 16:29-33 preserves plain speaking, not one parable, knowing everything, belief in coming from God, scattering each to his place, the Father with the speaker, peace, affliction, courage, and overcoming the world. John 16:31's actual הַימֵנו is tagged as a second-person plural imperative and is rendered “Believe!” rather than the reference's question. Quotation boundaries distinguish the disciples' speech from Jesus' preceding and final replies.
+
+Source checks for John 17:
+
+- John 17:1-3 keeps Jesus' raised eyes and prayer, “my Father,” the arrived hour, mutual glorification, authority over all flesh, the gift of eternal life, and knowing the only true God and the sent Jesus Messiah. The name and title remain with their actual source positions.
+- John 17:4-5 preserves glorifying on earth, completing the assigned work, and the glory before the world's existence. John 17:5 retains both actual לותכ relations: glorifying the speaker with the Father and the glory he had with the Father. The compound מנ קדמ is rendered “before,” an attested Syriac sense in [CAL](https://cal.huc.edu/cal_entry_web.php?lemma=mn%40qwdm+p); it also occurs before the foundation phrase in John 17:24.
+- John 17:6-8 retains disclosure of the Father's name to the people given from the world, their belonging to the Father, giving them to the speaker, keeping the word, receiving the words, certain knowledge, and belief in the sender. John 17:7's actual ידעת is first-person perfect, rendered resultatively as “Now I know,” with the same first-person subject as the supplied Murdock reference; it is not changed to a third-person plural reading.
+- John 17:9-12 distinguishes prayer for those given from prayer for the world, the reciprocal possessions and glorification, no longer being in the world, the disciples' remaining, coming to the Father, and keeping them united. In John 17:11 the given antecedent is “your name”; John 17:12 separately speaks of keeping those given and the exception of the son of destruction, with Scripture's fulfillment.
+- John 17:13-17 keeps the present coming and speaking, complete joy, the world's hatred, not belonging to the world, the request for protection rather than removal, and sanctification in the Father's truth. The causal גיר in John 17:16 and explanatory d-prefix in John 17:17 remain explicit; “your word” naturally renders the repeated possessive without inventing another owner.
+- John 17:18-20 preserves the paired sending into the world, sanctifying himself on their behalf, their sanctification in truth, and prayer also for those believing through their word. The source's on-behalf expressions are rendered idiomatically rather than as literal faces; the believer clause remains attached to the recipients of prayer.
+- John 17:21-23 retains all being one, “my Father,” mutual indwelling, unity in the speaker and Father, the world's believing and knowing the sender, the glory given and passed on, perfected unity, and the comparison of the Father's love for them and for the speaker. Each knowing, sending and loving predicate stays in its own linked clause.
+- John 17:24-26 keeps the desire for those given to be with the speaker and see his glory, love before the world's foundation, “my righteous Father,” the world's lack of knowledge, the speaker's knowledge and the disciples' knowledge, disclosure of the name, and love and the speaker being in them. Bare “Father” in John 17:24 remains distinct from possessive “my Father” in John 17:25. The prayer forms one continuous quotation after its narrative introduction.
