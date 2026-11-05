@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-9, 2 John, 3 John, and Jude
-(2,272 of 7,958 Peshitta verses; 5,686 remain). Luke 10 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-10, 2 John, 3 John, and Jude
+(2,314 of 7,958 Peshitta verses; 5,644 remain). Luke 11 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -562,3 +562,27 @@ Source checks for Luke 9:
 - In 9:56 souls are not to be destroyed, and the causative life verb is
   rendered "to give life". In 9:58 his head is explicit. In 9:61 the
   household idiom does not identify its members as biological sons.
+
+Source checks for Luke 10:
+
+- In 10:1 Jesus sets apart another seventy from his disciples and sends
+  them two by two. In 10:3 the disciples are the object of his sending,
+  rather than recipients of a separate message.
+- In 10:6 their peace rests on the son of peace or returns to them.
+  In 10:7 the worker is worthy of his wage; these nouns remain distinct.
+- In 10:12 and 10:14 the judgment expressions are comparative: more
+  tolerable for one city than another. In 10:13 the conditional context
+  gives the time expression its "long ago" sense.
+- In 10:16 rejecting the disciples means rejecting Jesus, and rejecting
+  him means rejecting the one who sent him. In 10:17 the address is
+  "Our Lord". In 10:18 Satan is named; 10:19 instead says the enemy.
+- In 10:21 the Holy Spirit is explicit and both addresses say "my Father".
+  In 10:23 the eyes have no "your" suffix. In 10:28 "this" is the object
+  of "do", followed by "you will live".
+- In 10:30 the robbers fall upon the man, and little life remains in him.
+  In 10:34 wine precedes oil, and his donkey is explicit. In 10:35 "when"
+  begins the return clause after spending anything more; in 10:36 the
+  hands of the robbers are explicit.
+- In 10:39 Mary listens to the words of "our Lord", while Martha says
+  "My Lord" in 10:40. In 10:42 Mary's portion is good, without an added
+  comparative, and it will not be taken from her.
