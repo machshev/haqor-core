@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-23, 2 John, 3 John, and Jude
-(866 of 7,958 Peshitta verses; 7,092 remain). Matthew 24 is next.
+Current coverage: Matthew 1-24, 2 John, 3 John, and Jude
+(917 of 7,958 Peshitta verses; 7,041 remain). Matthew 25 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -100,3 +100,12 @@ Source checks for Matthew 23:
   the [Peshitta interlinear, page 5](https://www.atour.com/media/files/religion/peshitta/interlinear-nt/Mattai/Mattich23.pdf).
 - In 23:39, the negated future is a prediction that they will not see him,
   rather than a prohibition on seeing him.
+
+Source checks for Matthew 24:
+
+- The feminine form in 24:33 is rendered with neutral "it", rather than
+  personal masculine "he".
+- In 24:36 the source goes directly from the angels of heaven to the Father
+  alone; no intervening person is supplied.
+- The masculine and feminine pairs in 24:40-41 are expressed as two men and
+  two women, respectively.
