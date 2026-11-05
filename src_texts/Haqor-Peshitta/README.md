@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-7, 2 John, 3 John, and Jude
-(3,290 of 7,958 Peshitta verses; 4,668 remain). John 8 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-8, 2 John, 3 John, and Jude
+(3,349 of 7,958 Peshitta verses; 4,609 remain). John 9 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1304,3 +1304,16 @@ Source checks for John 7:
 - John 7:37-43 distinguishes Jesus' invitation and living-water saying from the narrator's explicit Spirit explanation: the Spirit had not yet been given, because Jesus had not yet been glorified. The prophet/Messiah reports, David/Bethlehem origin question, and division because of Jesus remain explicit.
 - John 7:44-49 preserves attempted seizure, untouched hands, the officers' return and reply, and the Pharisees' questions. The source's plural accursed predicate is rendered with natural English agreement: “these people ... do not know ... they are accursed.”
 - John 7:50-53 retains Nicodemus' membership and previous nighttime visit, “our law,” hearing before judgment, the Galilee challenge, “Search and see for yourself,” the no-prophet claim, and each person's departure to his own house. Speaker changes and nested quotations are punctuated across the actual verse boundaries.
+
+Source checks for John 8:
+
+- John 8:1-11 retains the Mount of Olives, dawn return, accused woman, Moses-law challenge, writing on the ground, first-stone command, departures, and the condemnation/sin exchange. John 8:5 keeps “You therefore” with the question; the generic stoning command is rendered without adding an execution actor. The act/preposition and first/cast/stone/her links stay in their own source phrases.
+- John 8:12-20 preserves light, darkness, life, self-testimony, origin/destination, the Father, two witnesses, the law, treasury, and the still-unarrived hour. John 8:15 renders the bodily criterion as “according to the body”; the repeated second-person pronoun stays with that clause. John 8:20's implicit subject is “He,” and its full negated hour/coming clause is kept together.
+- John 8:21-27 retains the going/seeking/death clauses, the Jews' self-killing question, below/above and world contrasts, the speaker's identity, the concessive beginning-to-speak clause, and the narrator's Father explanation. John 8:25 retains the explicit “Jews” subject.
+- John 8:24 keeps “unless you believe.” CAL explicitly lists אלא as “except, unless,” including Syriac usage; an additional separate לא is not required for that conditional sense (https://cal.huc.edu/oneentry.php?cits=all&lemma=%29l%29+c).
+- John 8:28-32 retains the Son-of-Man lifting, recognition, own-initiative and Father-taught speech, the sender's presence, pleasing actions, believers, remaining in the word, truth, and liberation.
+- John 8:33-40 preserves Abrahamic descent, slavery, sin's slave, house/son permanence, freedom, intended killing, the speaker's word, and what each side has seen with its father. בני חארא is rendered idiomatically as “free people”; CAL defines the compound as “free individual” and records plural free-person usage (https://cal.huc.edu/oneentry.php?cits=all&lemma=br%40xyryn+N).
+- John 8:41-43 retains the denial of prostitution origin, the one Father identified as God, coming out from God, being sent, and both occurrences of “my word.” The compound מטל מנא is the opening “Why”; the following על דלא introduces the causal explanation “Because you cannot hear.”
+- John 8:44-47 keeps the accuser, the father's desire, the murderer-from-the-beginning predicate, standing “in the truth,” truth's absence, speaking a lie/from himself, the liar and its father, the truth/unbelief contrast, conviction concerning sin, and hearing God's words. The lie's possessive is retained in “its father.”
+- John 8:48-56 preserves the Samaritan/demon accusation, the denial, honor and glory, the death/word promise and repeated challenge, Abraham and the prophets, the Father's glorifying, knowing and keeping his word, and Abraham's desire and rejoicing. John 8:54 retains the actual first-person plural “our God” in the reported claim.
+- John 8:57-59 retains the fifty-year comparison, Abraham question, “before Abraham was, I am,” and the full final movements: stones taken up, Jesus hiding, leaving the temple, passing among them, and going away. The named Jesus and hiding verb remain in the same linked phrase.
