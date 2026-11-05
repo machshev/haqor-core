@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1, 2 John, 3 John, and Jude
-(3,004 of 7,958 Peshitta verses; 4,954 remain). John 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-2, 2 John, 3 John, and Jude
+(3,029 of 7,958 Peshitta verses; 4,929 remain). John 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1224,3 +1224,18 @@ Source checks for John 1:
   Jesus, Joseph, and Nazareth distinct. In 1:51 the future audience is
   plural, with God's angels ascending and descending toward the Son
   of Man; both introductory amens remain.
+
+Source checks for John 2:
+
+- John 2:1 renders משתותא as a wedding feast and preserves Cana as a city of Galilee.
+- John 2:3 retains the source's explicit “they have no wine” negative and the mother's address to Jesus.
+- John 2:4 preserves the question “What is that to me and to you, woman?” and the not-yet-arrived hour.
+- John 2:6 preserves six stone water jars, their Jewish purification use, and the two-or-three-measure capacity.
+- John 2:9 distinguishes the master’s ignorance of the wine's source from the attendants' knowledge and their having filled them with water, without adding a causal conjunction or an unlicensed “jars.”
+- John 2:10 renders the source drunk predicate directly and retains the source “then” before the inferior wine.
+- John 2:15 preserves the reflexive dative in “he made himself a whip,” the singular cord, the expulsion of all named groups, poured-out money, and overturned tables.
+- John 2:19-21 distinguishes the Jews' literal temple from Jesus' temple-as-body explanation; “I will raise it up” has no added “again,” and the explanatory verb is simple past “he spoke.”
+- John 2:20 preserves the source position order for forty-six years, the built temple, second-person “you,” three days, and the raising question.
+- John 2:13 keeps the movement verb, Jerusalem, and Jesus together in one source-linked phrase, matching positions 4–6.
+- John 2:22 retains both Scripture and the word spoken by Jesus after the disciples remember his saying.
+- John 2:24-25 preserves Jesus' refusal to entrust himself, his knowledge of everyone, and the explicit claim that he needs no human testimony.
