@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1, 2 John, 3 John, and Jude
-(1,169 of 7,958 Peshitta verses; 6,789 remain). Mark 2 is next.
+Current coverage: Matthew 1-28, Mark 1-2, 2 John, 3 John, and Jude
+(1,197 of 7,958 Peshitta verses; 6,761 remain). Mark 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -164,3 +164,13 @@ Source checks for Mark 1:
   rather than copying the singular object of Matthew 8:15.
 - In 1:21-22 the teaching predicates retain their subjects and auxiliaries;
   the postpositive explanatory particle stays with the second teaching clause.
+
+Source checks for Mark 2:
+
+- In 2:2 the gathering is intransitive, and the singular containing predicate
+  refers to the available space, not to the assembled people.
+- In 2:4 the ascent includes a reflexive dative. The lowering verb anticipates
+  the following bed noun; no separate human object is added.
+- In 2:17 the illness expression is one idiom, not an additional action of
+  laboring.
+- In 2:26 Abiathar is retained as named; no other priest is substituted.
