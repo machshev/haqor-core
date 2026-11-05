@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-20, 2 John, 3 John, and Jude
-(2,735 of 7,958 Peshitta verses; 5,223 remain). Luke 21 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-21, 2 John, 3 John, and Jude
+(2,773 of 7,958 Peshitta verses; 5,185 remain). Luke 22 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -954,3 +954,49 @@ Source checks for Luke 20:
   In 20:46 robes have no added long adjective, while marketplaces,
   synagogues, and suppers are plural. In 20:47 widows' houses, the
   pretext of prolonging their prayers, and greater condemnation remain.
+
+Source checks for Luke 21:
+
+- In 21:1 the rich were putting their offerings into the treasury.
+  In 21:3 the comparison concerns this poor widow. In 21:4 all these
+  people contribute from their surplus, while this woman gives from
+  her poverty everything she possessed; both demonstratives remain.
+- In 21:5 some people were speaking about the adorned temple. In
+  21:7 they were questioning him about the timing and sign. In 21:8
+  the claim explicitly includes the Messiah, with my name and the
+  warning not to follow them. In 21:9 these things happen first.
+- In 21:11 the earthquakes, famines, plagues, terrors, fearful events,
+  great signs seen from heaven, and great storms all remain. In
+  21:12 the delivery to councils and prisons precedes being brought
+  before kings and governors, because of my name.
+- In 21:14 the answer/defense expression is a compound idiom; its
+  component spirit word does not introduce a separate actor or means.
+  In 21:15 the gift is a mouth and wisdom which none of their enemies
+  can withstand. In 21:16 parents, brothers, relatives, and friends
+  hand them over, and some of them are put to death.
+- In 21:18 even a hair of their head will not perish. In 21:19 endurance
+  preserves their lives. In 21:20 an army surrounds Jerusalem, and the
+  impending desolation is the city's own. In 21:21 the mountain is
+  singular, and those in the countryside must not enter the city.
+- In 21:22 all that is written is to be fulfilled. In 21:23 the
+  demonstrative belongs to those days, not to the nursing clause;
+  distress in the land and wrath against this people remain distinct.
+  In 21:24 captivity goes to every place, while Jerusalem is trampled
+  by the Gentiles until their times are fulfilled.
+- In 21:25 the distress of nations and the wringing of hands have
+  distinct source spans. Amazement concerns the sea's roar; no waves
+  clause is supplied. In 21:26 agitation drives out people's souls
+  from fear of what is to come, and heaven's powers are shaken.
+- In 21:27 the clouds are plural. In 21:28 deliverance belongs to the
+  hearers. In 21:29 Jesus was telling the parable. In 21:30 the sprouting
+  trees supply the inference about summer. In 21:31 all these things
+  happening indicate the nearness of God's kingdom.
+- In 21:33 the source has my words, plural, rather than Murdock's
+  singular word; the possessive is first person. In 21:34 lest scopes
+  both hearts being weighed down and that day arriving suddenly.
+  In 21:35 the snare falls on all inhabitants of the whole earth.
+- In 21:36 the prayer concerns being worthy to escape and standing
+  before the Son of Man. In 21:37 the past auxiliaries accompany
+  teaching and going out to lodge at the mountain called the Place
+  of Olives. In 21:38 the people were coming early to hear his word,
+  with an explicit singular object and third-person possessive.
