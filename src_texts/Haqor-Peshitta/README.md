@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-8, 2 John, 3 John, and Jude
-(1,447 of 7,958 Peshitta verses; 6,511 remain). Mark 9 is next.
+Current coverage: Matthew 1-28, Mark 1-9, 2 John, 3 John, and Jude
+(1,497 of 7,958 Peshitta verses; 6,461 remain). Mark 10 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -251,3 +251,18 @@ Source checks for Mark 8:
 - In 8:35 the gospel has a first-person possessive, "my gospel". In 8:38
   the suffix in "Son of man" anticipates the following genitive, while
   "his Father" and "his holy angels" retain independent possessives.
+
+Source checks for Mark 9:
+
+- In 9:5 there are three booths, one each for Jesus, Moses, and Elijah.
+  The following "one" belongs to each preceding recipient phrase.
+- In 9:22 the requests are singular: "help me" and "have compassion on me".
+  In 9:23 belief is explicit; 9:24 retains "my Lord" and "my faith";
+  9:29 explicitly includes both fasting and prayer.
+- In 9:25 the crowd is both running and gathering. The final prohibition
+  concerns entering the boy again, following the command to come out.
+- In 9:20 the past auxiliary belongs with writhing. In 9:32 it belongs
+  with understanding; the object suffix anticipates the following saying.
+- In 9:41 the name/belonging construction is rendered as belonging to
+  Messiah. The repeated worm/fire clauses in 9:44, 9:46, and 9:48 remain,
+  as do both the fire and sacrifice clauses in 9:49.
