@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-12, 2 John, 3 John, and Jude
-(2,427 of 7,958 Peshitta verses; 5,531 remain). Luke 13 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-13, 2 John, 3 John, and Jude
+(2,462 of 7,958 Peshitta verses; 5,496 remain). Luke 14 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -648,3 +648,31 @@ Source checks for Luke 12:
   commercial expression; [CAL lists its noun as merchandise/business dealings](https://cal.huc.edu/browseSKEYheaders.php?first3=%22t%22).
   The judge and officer remain distinct actors. In 12:59 the speaker
   says "I", and the payment ends with the last coin.
+
+Source checks for Luke 13:
+
+- In 13:4 the comparison uses "sinners". In 13:3 and 13:5 the warnings
+  address the whole audience; 13:5 explicitly says
+  "like them".
+- In 13:6–9 the fig tree belongs to a man and is planted in his vineyard.
+  The three years, cultivation, and manure remain explicit. The positive
+  fruit condition in 13:9 is elliptical; "next year" belongs to the
+  following cutting-down clause.
+- In 13:11 the infirmity has lasted eighteen years. In 13:13 his hand
+  is singular. In 13:15 the address is the singular "Hypocrite", and the
+  animal-release example is a negative rhetorical question. In 13:16
+  the source names the Accuser and repeats the eighteen years.
+- In 13:17 the opponents are ashamed, while all the people rejoice at
+  the wonders. In 13:19 the bird is singular and the tree is large.
+  In 13:21 all three measures of flour are leavened.
+- In 13:23 the asking verb has an explicit "him" suffix. In 13:25 both
+  calls say "Our Lord"; the master's answer is followed by his own
+  first-person "I tell you". In 13:26 the visitors ate and drank, but
+  the master is the subject of "you taught".
+- In 13:27 the phrase is "workers of falsehood". In 13:29 the direction
+  order is east, west, south, north. In 13:32 the fox is "this"; the
+  completion predicate does not supply an additional work or death noun.
+- In 13:33 today's and tomorrow's activity is distinct from going on
+  another day. In 13:34 the sent ones go "to her", before the address
+  shifts to "your children". In 13:35 the house is left "to you", and
+  the final coming is in the name of the Lord.
