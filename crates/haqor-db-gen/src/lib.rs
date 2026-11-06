@@ -8,6 +8,7 @@ mod apologetics;
 mod artifacts;
 mod cognate_search;
 mod cognates;
+mod egyptian;
 mod events;
 mod geocoding;
 mod greek_lexicon;

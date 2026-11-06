@@ -293,6 +293,17 @@ pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Resul
     }
     writeln!(out)?;
 
+    // Egyptian and Coptic words the root's words are said to come from or
+    // go to, looked up in their own dictionaries below.
+    let mut egyptian: Vec<(String, String)> = Vec::new();
+    for v in &hebrew {
+        for l in v["links"].as_array().into_iter().flatten() {
+            if let (Some(lang @ ("egy" | "cop")), Some(word)) = (l[1].as_str(), l[2].as_str()) {
+                egyptian.push((lang.to_string(), word.to_string()));
+            }
+        }
+    }
+
     // Entries elsewhere that link to one of the words.
     let mut linked: BTreeMap<String, Vec<String>> = BTreeMap::new();
     for v in wiktionary.iter().filter(|v| text(v, "lang") != "he") {
@@ -310,6 +321,9 @@ pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Resul
                         .is_some_and(|w| words.contains(&bare_letters(w)))
             })
         });
+        if (hit.is_some() || descends) && matches!(text(v, "lang"), "egy" | "cop") {
+            egyptian.push((text(v, "lang").to_string(), text(v, "word").to_string()));
+        }
         if let Some(how) = hit {
             linked
                 .entry(lang_name(text(v, "lang")).to_string())
@@ -353,6 +367,53 @@ pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Resul
         }
     }
     writeln!(out)?;
+
+    if !egyptian.is_empty() {
+        egyptian.sort();
+        egyptian.dedup();
+        writeln!(
+            out,
+            "Egyptian and Coptic words named, in their own dictionaries:\n"
+        )?;
+        let aed = crate::egyptian::read_tei(&src_texts.join("Egyptian/aed-dictionary.xml"))?;
+        let coptic = crate::egyptian::read_tei(&src_texts.join("Egyptian/coptic-lexicon.xml"))?;
+        for (lang, word) in &egyptian {
+            let (entries, key, source): (
+                &[crate::egyptian::EgyptianEntry],
+                fn(&str) -> String,
+                &str,
+            ) = if lang == "egy" {
+                (&aed, crate::egyptian::egyptian_key, "TLA")
+            } else {
+                (&coptic, crate::egyptian::coptic_key, "Coptic Lexicon")
+            };
+            let wanted = key(word);
+            let found: Vec<&crate::egyptian::EgyptianEntry> = entries
+                .iter()
+                .filter(|e| e.forms.iter().any(|f| key(f) == wanted))
+                .take(5)
+                .collect();
+            writeln!(
+                out,
+                "- {} {word}:{}",
+                lang_name(lang),
+                if found.is_empty() { " not found" } else { "" }
+            )?;
+            for e in found {
+                writeln!(
+                    out,
+                    "  - {} {} ({}): {} [{source} {}; {}]",
+                    e.forms.join(", "),
+                    e.pos,
+                    e.id,
+                    clip(&e.glosses.join("; "), 200),
+                    e.id,
+                    clip(&e.bibl.join("; "), 160)
+                )?;
+            }
+        }
+        writeln!(out)?;
+    }
 
     writeln!(
         out,

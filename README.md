@@ -84,6 +84,8 @@ entries for the Semitic languages, Egyptian, Coptic and Sumerian
 roots, etymologies and their cognate links).
 Anderson and Moser's Proto-Semitic root derivations
 (`src_texts/ProtoSemitic/`) give each root's descendants in seven languages.
+The Thesaurus Linguae Aegyptiae's Egyptian lemma list and the Comprehensive
+Coptic Lexicon (`src_texts/Egyptian/`) trace Egyptian loanwords.
 
 ## Commands
 
@@ -466,6 +468,12 @@ published by kaikki.org.
 **Proto-Semitic roots** — Adam Anderson and Jason Moser, *Protosemitic Root
 Derivations* (Zenodo, 2024, <https://doi.org/10.5281/zenodo.14160276>),
 licensed CC BY 4.0.
+
+**Egyptian and Coptic** — the *Thesaurus Linguae Aegyptiae* lemma list
+(Berlin-Brandenburg Academy of Sciences, January 2018 extract, in the
+[AED TEI edition](https://github.com/JKatzwinkel/aed-tei)) and the
+*Comprehensive Coptic Lexicon* v1.2 (BBAW and FU Berlin, 2020, via
+[KELLIA](https://github.com/KELLIA/dictionary)), both CC BY-SA 4.0.
 
 **Rabbinic and Aramaic dictionary** — Marcus Jastrow, *A Dictionary of the
 Targumim, the Talmud Babli and Yerushalmi, and the Midrashic Literature*
