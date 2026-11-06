@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-4, 2 John, 3 John, and Jude
-(5,363 of 7,958 Peshitta verses; 2,595 remain). 1 Corinthians 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-5, 2 John, 3 John, and Jude
+(5,376 of 7,958 Peshitta verses; 2,582 remain). 1 Corinthians 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2420,3 +2420,41 @@ Source checks for 1 Corinthians 4:
 All 21 verses and 301 source words received source-to-English and running
 English review. The seven גיר, five דין and one הכיל occurrences were
 checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 5:
+
+- Verses 1-2 retain the report of sexual immorality, the contrast with
+  what is not even named among the Gentiles, and the specific son/father's
+  wife relation. The addressees' inflated state contrasts with mourning
+  and the removal of the person who committed the deed.
+- Verses 3-5 keep Paul's bodily distance and spiritual presence, his
+  already-given judgment, the assembly in the name of our Lord Jesus
+  Messiah, and the Lord's power. Repeated Lord/Jesus/Messiah names in
+  distinct clauses remain explicit. Name, power and day suffixes followed
+  by their explicit genitives do not add separate owners. The delivery
+  verb's object suffix and following demonstrative name one offender;
+  his body, life in spirit, and the day of our Lord remain distinct.
+- Verses 6-7 retain the negative assessment of boasting, little leaven
+  affecting the whole lump, purging old leaven, a new lump, and being
+  unleavened. The causal Passover clause identifies Messiah, who was
+  sacrificed for us; the copula does not introduce a second actor.
+- Verse 8 has three actual occurrences of חמירא, including the final
+  “leaven of purity and holiness.” This agrees with the supplied Murdock
+  reference and is retained instead of replacing it with familiar
+  “unleavened bread” wording. Both preceding negatives and the contrast
+  remain explicit, as do wickedness and bitterness.
+- Verses 9-11 distinguish the earlier letter's instruction from a blanket
+  ban on association with people in this world. The conditional necessity
+  of leaving the world is preserved. The person called a brother, every
+  named vice, and the final not-even-eating-bread prohibition remain
+  explicit; the final bread noun is not dropped into a generic meal.
+- Verses 12-13 preserve the causal question about judging outsiders and
+  the following imperative דונו, “judge,” addressed to the readers about
+  those within. No negative rhetorical question is substituted for that
+  imperative. God judges outsiders. The final removal command and its
+  masculine singular object identify the wicked person; they do not
+  introduce a second object or replace it with abstract wickedness.
+
+All 13 verses and 200 source words received source-to-English and running
+English review. The three גיר and four דין occurrences were checked
+individually against the final English clauses.
