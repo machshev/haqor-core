@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-6, 2 John, 3 John, and Jude
-(5,825 of 7,958 Peshitta verses; 2,133 remain). 2 Corinthians 7 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-7, 2 John, 3 John, and Jude
+(5,841 of 7,958 Peshitta verses; 2,117 remain). 2 Corinthians 8 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3490,3 +3490,62 @@ Source checks for 2 Corinthians 6:
 All 18 verses and 221 source words received source-to-English and running
 English review. The two גיר and four דין occurrences were checked
 individually against the final English clauses.
+
+Source checks for 2 Corinthians 7:
+
+- All 16 verses and 275 source positions were compared with the exported
+  Syriac forms, the complete SEDRA gloss alternatives and morphology, and
+  Murdock in context, followed by peer repair and an independent final
+  chapter review. The seven causal `gir`, two adversative `din`, and one
+  inferential `hakil` were checked in their clauses. Verse 1 retains both
+  "therefore" and "because," and renders the source's "holiness" rather
+  than Murdock's "righteousness."
+- Verse 2 has "our brothers" and three separate first-person plural
+  denials: wronging, corrupting, and defrauding no one. "Bear with us"
+  supplies the contextually understood object of the opening imperative.
+  Verse 3 keeps "not to condemn you" attached to "I speak," followed by
+  the causal reminder and the shared dying and living together.
+- Verse 4 preserves both first-person singular possessive constructions,
+  joy as the subject of "abounds," and "all my afflictions." Verse 5
+  follows the vocalised plural gentilic and SEDRA's "Macedonian" lemma
+  with "to the Macedonians," where Murdock has "to Macedonia." It also
+  keeps "not even one" respite, "our body," conflict outside, and fear
+  within. No geographic data or route is inferred from this wording.
+- Verses 6-7 distinguish God's continuing comfort of the lowly from his
+  past comfort of us through Titus's arrival. Titus is the person refreshed
+  by the recipients and the person reporting their love, grief, and zeal;
+  "on our behalf" renders the face idiom. The final "I had great joy"
+  renders the joy/was/to-me construction without adding another owner.
+  Verse 8 retains both grief predicates, both mentions of the letter,
+  the present absence of regret, the prior regret, and "for I see."
+- Verse 9 keeps the two grief clauses distinct from the sorrow that
+  brought the recipients to repentance. "So that you might suffer no
+  loss" preserves the purpose and imperfect verb rather than asserting
+  a completed absence of loss. Verse 10 retains the negative "does not
+  turn back" and the separate positive causative "leads to life";
+  the latter must not be swallowed into a negated turning to life.
+- Verse 11 treats the construct noun plus prepositional phrase
+  `mappaq b-ruha` as the defense/apology idiom, linking its two source
+  positions together. It is not a separate "spirit" entry in the list.
+  See the [Comprehensive Aramaic Lexicon compound entry](https://cal.huc.edu/cal_entry_web.php?lemma=mpq%40brwx%29+N)
+  and [Gutman, section 3.4, example 8, page 51](https://refubium.fu-berlin.de/bitstream/fub188/21964/1/123-3-1034-1-10-20180423.pdf).
+  All seven responses remain, including the source's "love." The closing
+  reflexive "yourselves" and proleptic "in that matter" each express one
+  referent, without adding souls or another object.
+- Verse 12 uses "let this be clear" for the introductory future/jussive
+  be-construction; "clear" is supplied to make the introduction readable,
+  as Murdock supplies "seen." It adds no separate showing action.
+  The offender and the person wronged each retain their own negation;
+  the analytic expression for the wronged person does not add an
+  independent "in him" circumstance. The purpose concerns the recipients'
+  care for us becoming known before God, not our care for them.
+- Verses 13-16 retain Titus's joy, his refreshed spirit with all the
+  recipients, both truth expressions, first-person singular boasting
+  versus "our boasting," and Titus remembering their obedience and their
+  receiving him. "All" in verse 15 belongs to their obedience; verse 16
+  has "in everything" and then simply "in you."
+- Three five-position groups preserve local English dependencies: the
+  delayed boasting noun in verse 4, the joy/made/to-me construction in
+  verse 9, and the passive predicate with its delayed care-for-us subject
+  and before-God phrase in verse 12. All other groups have at most four
+  source positions. Each source position occurs exactly once in order.
