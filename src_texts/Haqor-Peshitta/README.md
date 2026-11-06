@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-7, 2 John, 3 John, and Jude
-(5,841 of 7,958 Peshitta verses; 2,117 remain). 2 Corinthians 8 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-8, 2 John, 3 John, and Jude
+(5,865 of 7,958 Peshitta verses; 2,093 remain). 2 Corinthians 9 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3549,3 +3549,71 @@ Source checks for 2 Corinthians 7:
   verse 9, and the passive predicate with its delayed care-for-us subject
   and before-God phrase in verse 12. All other groups have at most four
   source positions. Each source position occurs exactly once in order.
+
+Source checks for 2 Corinthians 8:
+
+- All 24 verses and 316 source words received source-to-English and running
+  English review, peer repair, and an independent final chapter audit. The
+  six causal `gir`, eight discourse/contrast `din`, and the inferential
+  markers in verses 23-24 were checked in their actual clauses. In verse 1
+  `din` is "But," not an extra causal "For."
+- Verse 1 preserves "our brothers," God's single ownership of grace,
+  plural ecclesias, and the Macedonians. Verse 2 keeps their affliction,
+  abounding joy, depth of poverty, and rich generosity. "Generosity"
+  expresses the giving context of `peshitutha`, also glossed simplicity
+  and directness in SEDRA; compare Murdock's liberality and the
+  [Classical Syriac noun entry](https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=11506).
+- Verses 3-4 retain both ability expressions, the donors' own willingness,
+  the finite "they asked us," and the third-person plural "that they
+  might share." Verse 5 has their giving themselves first to our Lord
+  and also to us, by God's will. Verse 6 keeps the first-person plural
+  imperfect request as a result/purpose, followed by Titus's beginning
+  and completion of the same beneficence.
+- Verse 7 has "our love toward you," not the reverse direction. Verse 8
+  treats the negative formula plus infinitive absolute and finite command
+  as one emphatic negative-command predicate, followed by the distinct
+  testing of the sincerity of their love through their companions'
+  diligence. Verse 9 retains our Lord Jesus the Messiah, his becoming
+  poor for their sake while rich, and their becoming rich by his poverty.
+- Verse 10 likewise has one emphatic counsel predicate, rather than two
+  separate recommendations. "From last year," "not only to desire," and
+  "but also to do" remain distinct. Verse 11 retains both completion
+  predicates, both deed expressions, prior readiness and willing intent,
+  and the actual "from what you have." Verse 12 keeps the condition of
+  willingness, acceptance according to what one has, and the separate
+  negated comparison with what one does not have. Its implicit donor is
+  expressed as "he," as in Murdock's supplied person, rather than making
+  willingness itself the possessor of material resources.
+- Verses 13-14 distinguish others' relief from the recipients' affliction
+  and preserve both directions of the intended equality: your own
+  abundance supplies these people's need, and those people's abundance
+  supplies your own need. The perfect form `hww` functions contextually
+  as the exhortation "be in equality," not an assertion that they were
+  already equal. For the Syriac perfect's imperative use, see
+  [Cox, page 107, note 48](https://www.andrews.edu/library/car/cardigital/Periodicals/AUSS/1977-2/1977-2-01.pdf).
+  This is a contextual reading of the recorded form, not a morphology
+  change. Verse 15 keeps each gathering verb with its much/little clause,
+  followed by its own absence of surplus/lack; it does not say that the
+  first person gathered no surplus or the second gathered no deficiency.
+- Verses 16-17 keep God as the giver of diligence in Titus's heart and
+  Titus as the one accepting our request and going out to the recipients
+  of his own accord. The analytic dative in his concern adds no separate
+  beneficiary. The unnamed brothers in verses 18 and 22 are not identified
+  with a conjectured historical person.
+- Verse 19 has "with us," where Murdock has "with me." The infinitive and
+  passive participle express emphatic choosing by the ecclesias; the
+  beneficence is ministered by us, for God's own glory and our own
+  encouragement. Each explicit "own" survives with a single owner.
+  Verses 20-21 retain our care against blame and concern for good things
+  before both God and people, with the causal connector intact.
+- Verse 22 keeps the brother's having been proved to us, "always," "in
+  many things," and his current greater diligence with confidence in
+  the recipients. Verse 23 supplies "if it concerns" for its elliptical
+  conditional topics and preserves "my own partner," our other brothers,
+  and the compact genitive chain "ecclesias of the Messiah's glory."
+  Verse 24 retains the demonstration of your love and our boasting in
+  you; the English resumptive "it" refers to that one fronted object.
+- Only verses 8 and 10 use five-position groups, each to render a single
+  emphatic predicate with its intervening particles or pronoun. All other
+  groups contain at most four positions. All 316 source positions occur
+  exactly once in ascending order, with no unlinked lexical text.
