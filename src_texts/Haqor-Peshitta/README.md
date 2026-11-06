@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-2, 2 John, 3 John, and Jude
-(6,499 of 7,958 Peshitta verses; 1,459 remain). 1 Thessalonians 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-3, 2 John, 3 John, and Jude
+(6,512 of 7,958 Peshitta verses; 1,446 remain). 1 Thessalonians 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4768,3 +4768,41 @@ Source checks for 1 Thessalonians 2:
 - The vocative suffixes are retained: my brothers in verses 1 and 14,
   our brothers in verses 9 and 17. The singular me in verse 18 remains
   distinct from the speakers' plural we.
+
+Source checks for 1 Thessalonians 3:
+
+- Verses 1–3 retain the inability to endure, willingness to remain alone
+  in Athens and to send Timothy, our brother, God's servant and our
+  helper in Messiah's gospel. The gospel suffix anticipates its Messiah
+  owner. Strengthening the recipients and asking them about their faith
+  remain separate predicates; the explicit you object of asking is kept.
+  Discouragement by afflictions and the knowledge of being appointed to
+  them remain, with the clauses joined into complete English.
+- Verses 4–5 retain the former warning of suffering, its occurrence and
+  the recipients' knowledge, followed by the speaker's first-person
+  singular sending to learn their faith. Until stays with its actual
+  source word. The tempter's possible tempting and the labor's possibly
+  proving vain remain hypothetical. The labor, its copular verb and vain
+  quality form one coherent span.
+- Verses 6–7 preserve Timothy's return from the recipients, his good news
+  about faith and love, their good remembrance of the speakers at all
+  times, and reciprocal longing to see one another. The return/report
+  clause leads to comfort by the recipients amid the speakers' distress
+  and affliction because of their faith. The first-person plural our
+  brothers is retained; the English does not imply physical co-presence.
+- Verses 8–10 retain And now, living conditionally on the recipients'
+  standing firm in our Lord, the causal thanksgiving question, repayment
+  to God for them, all the joy because of them, and earnest prayer night
+  and day to see their faces and complete what is lacking in their faith.
+  Faces is plural in the source. The ellā plus d construction is rendered
+  as except that, joining the prayer to the rhetorical question.
+- Verses 11–13 preserve God our Father, our Lord Jesus Messiah, the
+  speakers' way to the recipients, increasing and abounding love toward
+  one another and everyone, the speakers' own love for them, establishing
+  hearts blameless in holiness, and our Lord Jesus Messiah's coming with
+  all his holy ones. God our Father is an apposition, with the our suffix
+  on Father. Love remains its own predicate, rather than a general do.
+  The increase/abound verbs retain their actual causative stems and the
+  continuing divine subject; [CAL's sgy causative entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=sgy+V)
+  supports making something increase. The coordinating establish clause
+  continues the prayer instead of becoming an isolated fragment.
