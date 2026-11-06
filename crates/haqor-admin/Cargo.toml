@@ -14,5 +14,5 @@ crossterm = "0.29.0"
 haqor-core = { path = "../haqor-core", version = "0.9.15" }
 haqor-sync-server = { path = "../haqor-sync-server", version = "0.9.15" }
 ratatui = "0.30.2"
-rusqlite = { version = "0.40.2", features = ["bundled"] }
+rusqlite = { version = "0.41.1", features = ["bundled"] }
 serde_json = "1.0"
