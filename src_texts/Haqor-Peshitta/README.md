@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 2 John, 3 John, and Jude
-(6,605 of 7,958 Peshitta verses; 1,353 remain). 1 Timothy 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1, 2 John, 3 John, and Jude
+(6,625 of 7,958 Peshitta verses; 1,333 remain). 1 Timothy 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4967,3 +4967,33 @@ Source checks for 2 Thessalonians 3:
   third-person possessive, while the following “Our Lord” has the genuine
   first-person plural suffix. Verses 17–18 retain Paul's handwritten
   greeting and sign, how he writes, grace with everyone, and Amen.
+
+Source checks for 1 Timothy 1:
+
+- Verses 1–2 retain God as our life-giver, Messiah Jesus as our hope,
+  Timothy as the speaker's true son, our Father and our Lord.
+- Verses 3–4 retain the first-person request, remaining in Ephesus,
+  Macedonia, the prohibition on different teaching, fables and endless
+  genealogies, and the intensifier in the contention/edification contrast.
+  The coordinated instructions join across the verse boundary.
+- Verses 5–8 retain love from a pure heart, good conscience and sincere
+  faith, straying from these things, empty words, the causal explanation
+  about would-be law teachers, both negatives, and the condition of
+  conducting oneself lawfully in the law.
+- Verses 9–11 keep the righteous and the contrastive “but” on their actual
+  source positions. The lists retain striking parents, lying with males,
+  kidnapping free people, lying and violating oaths. Sound teaching joins
+  to the gospel of the glory of the blessed God; the glory suffix anticipates
+  that God owner and does not require an additional independent possessor.
+- Verses 12–14 preserve thanks, our Lord strengthening the speaker,
+  counting him faithful and appointing him to service, his former conduct,
+  mercy, ignorance and unbelief, and grace increasing in him with faith
+  and love. The grace statement has one predicate and one grace noun.
+- Verses 15–17 retain the trustworthy saying, acceptance, Jesus Messiah
+  at their own positions, giving life to sinners, the speaker's emphatic
+  first-person statement, all patience, believers and eternal life.
+  The doxology retains the explicit Amen.
+- Verses 18–20 retain former prophecies and plural “in them,” faith and
+  good conscience, rejecting this from themselves and becoming devoid of
+  faith, rather than importing a nautical image. Hymenaeus, Alexander,
+  handing over to Satan and learning not to blaspheme remain explicit.
