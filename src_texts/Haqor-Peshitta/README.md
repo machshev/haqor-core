@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-3, 2 John, 3 John, and Jude
-(5,768 of 7,958 Peshitta verses; 2,190 remain). 2 Corinthians 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-4, 2 John, 3 John, and Jude
+(5,786 of 7,958 Peshitta verses; 2,172 remain). 2 Corinthians 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3282,4 +3282,76 @@ Source checks for 2 Corinthians 3:
 
 All 18 verses and 248 source words received source-to-English and running
 English review. The six גיר, six דין and two הכיל occurrences were
+checked individually against the final English clauses.
+
+Source checks for 2 Corinthians 4:
+
+- Verses 1-2 retain the service received, the mercies upon us, rejection
+  of the hidden things of shame, and both negative clauses about walking
+  in craftiness and dealing deceitfully with God's word. Manifestation
+  of truth, showing ourselves, all human consciences and being before
+  God remain distinct. Anticipating suffixes do not add another owner.
+- Verse 3 makes the Gospel's being hidden the condition, with its being
+  hidden to those perishing the result. Both hidden predicates remain.
+  Verse 4 keeps the God-of-this-world expression, his blinding their
+  minds, and the separate causal unbelief and negative dawning clauses.
+  The causal "because they do not believe" follows the source's
+  `al d-` construction, rather than Murdock's purpose wording; compare
+  the conjunction discussion in [Classical Syriac Coursebook, lesson 14,
+  page 126](https://refubium.fu-berlin.de/bitstream/fub188/15883/1/ClassicalxSyriacxCoursexBook-HY-NEU.pdf).
+  Light, Gospel, Messiah's glory and his being God's likeness remain
+  separate nouns and relations.
+- Verses 5-6 retain the denial of preaching ourselves, Messiah Jesus
+  our Lord, ourselves as the addressees' servants for Jesus' sake,
+  God's saying that light arise from darkness, and his shining in
+  our hearts. The purpose is explicitly that we may be illuminated
+  with knowledge of God's glory on the face of Jesus Messiah; it is
+  not replaced by a generic illumination noun.
+- Verse 7 retains this treasure in a singular earthen vessel and the
+  greatness of power coming from God rather than us. Verses 8-9 keep
+  each separate condition and contrasting negation: constrained but
+  not suffocated, beaten but not guilty, persecuted but not forsaken,
+  and cast down but not perishing. The beaten/not-guilty pair is not
+  replaced with a familiar perplexity/despair pair.
+- Verses 10-11 distinguish both plural "our bodies" occurrences in
+  verse 10 from the singular "this body of ours that dies" in verse 11.
+  Bearing Jesus' death and manifestation of Jesus' life are different
+  predicates. Manifestation remains passive and prospective; we are
+  not made its active subject. The first purpose and the second
+  conditional, being handed over alive to death, Jesus' sake, thus
+  and both also particles remain explicit.
+- Verse 12 has "now," without an additional therefore. Death is at
+  work in us and life in the addressees. The contextual active sense
+  is consistent with Murdock and the broader Ethpaal usage in the
+  [CAL entry for hpt](https://cal.huc.edu/oneentry.php?cits=all&lemma=xp%2B+V),
+  rather than mechanically substituting a Pael exhortation gloss.
+- Verses 13-14 retain the same spirit of faith as one possession,
+  therefore, the written quotation's "I believed" and "I also spoke,"
+  our believing and also speaking, and both because-of-this clauses.
+  The one who raised our Lord Jesus will also raise us through Jesus
+  and bring us near with the addressees to himself. None of us, Jesus,
+  the addressees or himself is collapsed into another participant.
+- Verse 15 keeps causal "For" separately from the addressees' sake,
+  everything, grace abounding through many, and the purpose that
+  thanksgiving increase to God's glory. Verse 16 retains the denial
+  of weariness, "for even if" the outer person is corrupted, the
+  contrasting renewal of the inner person, and day by day. The inner
+  person is the contextual counterpart of the explicit outer person,
+  not an additional individual.
+- Verse 17 makes the affliction of this time the subject preparing
+  great glory for us, with very small, light, without end and for ever
+  and ever retained. The initial possessive anticipates this time;
+  it does not mean my affliction. No weight noun or double comparative
+  is supplied. The object, its modifiers and the late predicate at
+  positions 8-15 form one necessary larger dependency so that English
+  keeps affliction as preparer and glory as its object.
+- Verse 18 follows the annotated source's `hadinan` from `hdy` as
+  "we rejoice," rather than substituting Murdock's "look." Compare the
+  [CAL entry for hdy](https://cal.huc.edu/oneentry.php?cits=all&lemma=xdy+V).
+  Both seen/not-seen pairs remain; the things seen are temporal and
+  those not seen eternal. The final negative belongs to the not-seen
+  subject, not to the temporal predicate.
+
+All 18 verses and 259 source words received source-to-English and running
+English review. The seven גיר, four דין and one הכיל occurrences were
 checked individually against the final English clauses.
