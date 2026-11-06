@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-2, 2 John, 3 John, and Jude
-(6,426 of 7,958 Peshitta verses; 1,532 remain). Colossians 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-3, 2 John, 3 John, and Jude
+(6,451 of 7,958 Peshitta verses; 1,507 remain). Colossians 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4585,3 +4585,59 @@ Source checks for Colossians 2:
   scope. The last verb has a physical-contact use documented in
   [J. Payne Smith, pp. 351–352](https://tmcdaniel.palmerseminary.edu/Payne_Smith_1-626%2BTP.pdf#page=353);
   the contextual rendering "handle" follows this physical-contact use.
+
+Source checks for Colossians 3:
+
+- Verses 1–4 retain the conditional rising with Messiah, seeking and
+  thinking about what is above, Messiah at God's right hand, the negative
+  contrast with earth, death and hidden life, and the revealing of both
+  Messiah and the recipients in glory. The postpositive causal particle
+  belongs to "For you have died." Verse 4 retains the source's "our life."
+- Verses 5–7 preserve the command to put earthly members to death and the
+  full list of fornication, impurity, passions, evil desire and
+  covetousness. The rendering "passions" is a contextual interpretation
+  of kēʾbē within this vice list; its primary lexical senses are pain,
+  grief and suffering, as recorded in
+  [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29b+N).
+  Worship of idols is the attested religious sense of the fear compound;
+  [J. Payne Smith, p. 89](https://tmcdaniel.palmerseminary.edu/Payne_Smith_1-626%2BTP.pdf#page=90)
+  records this compound as idolatry. The idol noun is plural. The causal
+  statement preserves God's wrath and the children-of-disobedience
+  idiom, followed by the recipients' former conduct and life in these
+  things. The anticipatory suffix in children of disobedience does not
+  introduce another possessor.
+- Verses 8–11 retain the complete anger/wrath/malice/blasphemy/speech list,
+  the reciprocal prohibition on lying, stripping off the old human with
+  his practices, putting on the new one, renewal in knowledge and the
+  Creator's image. The source's Jew/Aramaean, circumcision/uncircumcision,
+  Greek/barbarian and slave/free contrasts all remain, followed by
+  Messiah as all and in everyone. The relative clauses and list
+  punctuation form complete running English.
+- Verses 12–14 retain God's chosen, holy and beloved people, compassion,
+  tenderness, kindness, humility of mind, gentleness and long-suffering.
+  Long-suffering is one compound with spirit. The reciprocal bearing and
+  forgiving clauses remain, followed by the complaint conditional and
+  Messiah's forgiveness of the recipients as the model for their own
+  forgiveness. Put on love supplies the garment imperative understood
+  with verse 14's nominal love phrase; the bond of perfection remains.
+- Verses 15–17 preserve Messiah's peace guiding their hearts, their
+  calling in one body, thanksgiving to Messiah, his word dwelling richly,
+  wisdom, reciprocal teaching and instruction, psalms, hymns and songs of
+  the Spirit, grace, singing in their hearts and God as recipient. Singing
+  is attached to its actual auxiliary and participle, followed by hearts
+  in their own span. Word and deed, our Lord Jesus Messiah's name, doing
+  and thanksgiving through him to God the Father all remain. The name
+  phrase and its doing predicate are grouped to permit natural English
+  order within their actual six source positions.
+- Verses 18–21 retain wives, husbands, children and parents as the actual
+  addressed groups, the rightness/pleasing clauses, the prohibitions on
+  bitterness and provoking children, and the discouraged outcome avoided
+  by the latter prohibition. Provoke, children and the lest-clause each
+  remain attached to their own source positions.
+- Verses 22–25 preserve servants, obedience in everything, bodily human
+  mastery rendered as earthly masters, the eyeservice contrast, pleasing
+  people, sincerity and fear of the Lord. Doing with the whole soul is
+  directed to our Lord, with the explicit negative contrast with people.
+  Receipt of recompense as an inheritance, service to Lord Messiah, the
+  wrongdoer's corresponding recompense, and the negative face-taking
+  idiom rendered as no partiality all remain.
