@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1, 2 John, 3 John, and Jude
-(6,736 of 7,958 Peshitta verses; 1,222 remain). 2 Timothy 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-2, 2 John, 3 John, and Jude
+(6,762 of 7,958 Peshitta verses; 1,196 remain). 2 Timothy 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5147,3 +5147,12 @@ Source checks for 2 Timothy 1:
 - 1:15 renders `דאיתיהונ מנהונ` as the source-owned existential/partitive clause: “and among them are Phygelus and Hermogenes.”
 - 1:17 retains the emphatic `אפ` in “But even when he came to Rome”; 1:18 renders `לות מרנ` as “with our Lord,” preserving the source relation.
 - 1:10 renders `דמחיננ` as “life-giver” and `מתחבלנותא` as “incorruptibility”; ecclesia terminology is not present in this chapter.
+
+Source checks for 2 Timothy 2:
+
+- Verse 2 keeps the two relative clauses distinct: the things heard from Paul are committed to believing men, and those men are the ones able to teach others.
+- Verses 3–6 preserve the source imagery of service, lawful competition, and the ploughman; `פלחא` is rendered as soldier only in the explicit comparison, while the surrounding verbal forms retain service/labor senses.
+- Verses 11–13 preserve the repeated conditional structure and the contrast between denying him and his own faithfulness; the suffixes in `עמה`, `בה`, and `בנפשה` are reflected as “with him,” “in him,” and “himself.”
+- Verse 19 follows the Syriac order of the seal: the foundation stands, the Lord knows his own, and those calling on the Lord’s name depart from unrighteousness.
+- Verse 20 distinguishes the source’s vessel materials (gold, silver, wood, pottery) and its paired honor/shame purposes rather than collapsing them into a generic household image.
+- Verse 26 retains the source’s capture clause and final `לצבינה` as “according to his will”; the captured persons are rescued from Satan’s snare after coming to repentance and knowledge of truth.
