@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, 2 John, 3 John, and Jude
-(5,966 of 7,958 Peshitta verses; 1,992 remain). Galatians 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1, 2 John, 3 John, and Jude
+(5,990 of 7,958 Peshitta verses; 1,968 remain). Galatians 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3894,3 +3894,35 @@ Source checks for 2 Corinthians 13:
 - Verse 9 preserves the contrast between Paul's weakness and their strength, followed by the prayer for their completion/perfection.
 - Verses 10–11 retain the absent-writing purpose, authority for edification rather than destruction, and the closing imperatives and God-of-love/peace blessing.
 - Verses 12–14 retain the holy kiss, the holy ones as the subject who salute, and the three-part final benediction with Amen.
+
+Source checks for Galatians 1:
+
+- Verse 1 retains both negations concerning human origin and agency, and
+  the explicit clause about raising Jesus from among the dead. Verses 2–5
+  preserve the ecclesias in Galatia, the grace and peace greeting, the
+  rescue purpose, and the concluding glory and Amen.
+- Verse 6 explicitly names the Messiah as the one from whom the hearers
+  are turning and retains the grace-call clause. Verse 7 preserves the
+  nonexistent-other-gospel contrast and the separate troubling and
+  changing predicates.
+- Verses 8–9 retain the conditional proclamation, the angel from heaven,
+  the received message, and both curse declarations.
+- Verse 10 retains both questions and the conditional contrast between
+  pleasing people and being the Messiah's servant. Verses 11–12 retain
+  the negative human origin, the not-even emphasis on receiving,
+  both receiving and learning with their object, and revelation of Jesus the Messiah.
+- Verses 13–14 preserve God's ecclesia and the separate wasting action,
+  the comparative progress in Judaism, contemporaries among his own
+  people, and intensified zeal for the teaching of Paul's fathers.
+- Verses 15–17 retain the setting apart from the mother's womb, calling
+  by grace, revelation of the Son through Paul, the Gentile proclamation,
+  and the connected denial of consulting flesh and blood or going up to
+  the earlier apostles. The Jerusalem, Arabia, and Damascus destinations
+  remain distinct.
+- Verse 18 retains three years, Cephas, staying with him, and fifteen
+  days. Verse 19 preserves the exception for James and the first-person
+  plural possessive in "our Lord." Verse 20 retains the before-God
+  affirmation and explicit denial of lying.
+- Verse 22 renders the ecclesias of Judea as the subject of not knowing
+  Paul personally. Verse 23 retains both former-time descriptions and
+  the now/behold transition; verse 24 preserves the source's "in me."
