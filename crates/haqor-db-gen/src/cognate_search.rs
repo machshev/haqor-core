@@ -199,10 +199,13 @@ fn latin_skeleton(form: &str) -> String {
     out.into_iter().collect()
 }
 
+/// A Proto-Semitic root set: its name and its `(language, entry)` rows.
+type RootSet = (String, Vec<(String, String)>);
+
 /// Anderson and Moser's Proto-Semitic root sets that hold a Hebrew entry
 /// with the root's consonants: each as the root and its rows
 /// `(language, entry)`.
-fn root_sets(src_texts: &Path, root: &str) -> Result<Vec<(String, Vec<(String, String)>)>> {
+fn root_sets(src_texts: &Path, root: &str) -> Result<Vec<RootSet>> {
     let path = src_texts.join("ProtoSemitic/SemiticRootDerivations.csv");
     if !path.exists() {
         return Ok(Vec::new());
