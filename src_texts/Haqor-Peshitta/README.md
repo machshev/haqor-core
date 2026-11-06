@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, 2 John, 3 John, and Jude
-(6,872 of 7,958 Peshitta verses; 1,086 remain). Hebrews 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1, 2 John, 3 John, and Jude
+(6,886 of 7,958 Peshitta verses; 1,072 remain). Hebrews 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5223,3 +5223,12 @@ Source checks for Philemon 1:
 - Verse 13 keeps the “to/with me” relation with keeping Onesimus and the source’s “that he might be” serving me instead of Philemon; verse 18 retains the indefinite “in anything” object.
 - Verse 15 renders the idiom as Onesimus departing for an hour so that Philemon might receive him forever; “from the age” is not treated as a literal geographic departure.
 - Verse 22 renders the opening בחדא דינ idiomatically as “And herewith,” then retains the lodging request, hope, prayer basis, and passive return to Philemon.
+
+Source checks for Hebrews 1:
+
+- Verses 1–2 retain the twofold “portions/forms” and “last days” contrasts, with the Son as the appointed heir and the agent through whom the worlds were made.
+- Verse 3 keeps the copular/explanatory opening, the Son’s own person, the cleansing of sins, and his sitting at the right hand on high; the possessive suffixes are rendered rather than omitted.
+- Verses 4–8 preserve the explicit contrast between the Son and angels, including the Son’s inherited superior name, the command for all God’s angels to worship him, and the direct address “O God.”
+- Verse 9 retains the causal force (“because”) and the repeated “God, your God” construction before the anointing and comparison with companions.
+- Verses 10–12 preserve the second-person subjects, the fold-up/changed contrast, and the negated completion of the Son’s years.
+- Verses 13–14 retain the angel question, the “from among” phrase, the footstool image, and the description of angels as ministering spirits sent for those prepared to inherit life.
