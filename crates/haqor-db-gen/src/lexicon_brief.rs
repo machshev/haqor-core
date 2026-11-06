@@ -556,7 +556,8 @@ pub fn lexicon_brief(
 }
 
 /// `db lexicon-rank`: the `n` most frequent roots in the Old Testament, a
-/// token whose spelling could be several words counting a share to each, with
+/// token whose spelling could be several words counting a share to each,
+/// proper names left out (they get their own entries), with
 /// the id of each root's entry in `lexicon_dir` where it has one.
 pub fn lexicon_rank(data_dir: &Path, lexicon_dir: &Path, n: usize) -> Result<String> {
     let bible = Bible::open(data_dir).with_context(|| format!("opening {}", data_dir.display()))?;
@@ -573,11 +574,11 @@ pub fn lexicon_rank(data_dir: &Path, lexicon_dir: &Path, n: usize) -> Result<Str
                     FROM data.surface_entry) \
          SELECT e.root, round(sum(k.share)) AS tokens, \
                 (SELECT group_concat(x.word, ' · ') FROM \
-                   (SELECT word FROM data.lexicon_entry WHERE root = e.root AND (kind IS NOT 'root' OR coalesce(pos, '') <> '') \
+                   (SELECT word FROM data.lexicon_entry WHERE root = e.root AND (kind IS NOT 'root' OR coalesce(pos, '') <> '') AND coalesce(pos, '') NOT LIKE 'n.pr%' \
                     ORDER BY key LIMIT 4) x) \
          FROM data.word w JOIN k USING(surface_id) \
          JOIN data.lexicon_entry e ON e.key = k.key \
-         WHERE w.ref < ?1 AND e.root <> '' \
+         WHERE w.ref < ?1 AND e.root <> '' AND coalesce(e.pos, '') NOT LIKE 'n.pr%' \
          GROUP BY e.root ORDER BY tokens DESC LIMIT ?2",
     )?;
     let mut out = String::from("| Rank | Root | Tokens | Words | Entry |\n|---|---|---|---|---|\n");
