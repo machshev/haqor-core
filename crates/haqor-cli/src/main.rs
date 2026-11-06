@@ -498,7 +498,8 @@ enum DbCommands {
         /// Source texts directory holding unfoldingWord and Murdock.
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
-        /// Directory holding the supplement to the TR's English.
+        /// Directory holding the supplement to the TR's English and Haqor's
+        /// revisions of the ULT (data/ult_revisions.tsv).
         #[arg(long, default_value = "data")]
         data_dir: PathBuf,
     },

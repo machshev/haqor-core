@@ -522,6 +522,10 @@ pub(crate) fn replace_words(text: &str, words: &[(&str, &str)]) -> String {
 /// `data_dir`: see [`read_supplement`].
 pub const SUPPLEMENT: &str = "tr_translation_supplement.tsv";
 
+/// Haqor's reviewed revisions of the ULT's English, in `data_dir`: see
+/// [`apply_revisions`].
+pub const ULT_REVISIONS: &str = "ult_revisions.tsv";
+
 /// The translation's own zstd dictionary in `blob_dict`, beside the one the
 /// rest of the build trains (1). A dictionary trained on Hebrew verses knows
 /// nothing useful about English, and each compressed frame names the
@@ -1722,6 +1726,74 @@ fn read_prepared(dir: &Path) -> Result<HashMap<usize, PreparedBook>> {
     Ok(books)
 }
 
+/// The source words a verse's English renders, each once, in order.
+fn rendered(pieces: &[SourcePiece]) -> Vec<usize> {
+    let mut out: Vec<usize> = Vec::new();
+    for piece in pieces {
+        if let SourcePiece::Word { renders, .. } = piece {
+            for &word in renders {
+                if !out.contains(&word) {
+                    out.push(word);
+                }
+            }
+        }
+    }
+    out.sort_unstable();
+    out
+}
+
+/// Replace verses of the prepared ULT with Haqor's reviewed revisions, from
+/// [`ULT_REVISIONS`] when the file exists. Each line is `book \t chapter:verse
+/// \t English \t why`, the book and verse as the ULT numbers them and the
+/// English in the prepared form (`[word|source index]`, `{supplied}`). A
+/// revision changes only the English: it must render exactly the source words
+/// the ULT's verse renders, so no alignment is lost or invented. Blank lines
+/// and lines starting `#` are comments.
+fn apply_revisions(books: &mut HashMap<usize, PreparedBook>, path: &Path) -> Result<usize> {
+    if !path.exists() {
+        return Ok(0);
+    }
+    let text =
+        std::fs::read_to_string(path).with_context(|| format!("reading {}", path.display()))?;
+    let mut applied = 0;
+    for (index, line) in text.lines().enumerate() {
+        let at = || format!("{}:{}", path.display(), index + 1);
+        if line.trim().is_empty() || line.starts_with('#') {
+            continue;
+        }
+        let fields: Vec<&str> = line.split('\t').collect();
+        let [book, verse, english, why] = fields[..] else {
+            bail!("{}: expected book, verse, English and why", at());
+        };
+        if why.trim().is_empty() {
+            bail!("{}: a revision must say why", at());
+        }
+        let book: usize = book
+            .parse()
+            .with_context(|| format!("{}: unreadable book", at()))?;
+        let verse: ChapterVerse = verse
+            .split_once(':')
+            .and_then(|(c, v)| Some((c.parse().ok()?, v.parse().ok()?)))
+            .with_context(|| format!("{}: unreadable verse {verse:?}", at()))?;
+        let pieces = parse_pieces(english).with_context(at)?;
+        let target = books
+            .get_mut(&book)
+            .and_then(|b| b.verses.iter_mut().find(|v| v.verse == verse))
+            .with_context(|| format!("{}: the ULT has no verse {book} {verse:?}", at()))?;
+        if rendered(&pieces) != rendered(&target.pieces) {
+            bail!(
+                "{}: the revision renders source words {:?}, the ULT's verse {:?}",
+                at(),
+                rendered(&pieces),
+                rendered(&target.pieces)
+            );
+        }
+        target.pieces = pieces;
+        applied += 1;
+    }
+    Ok(applied)
+}
+
 /// Haqor's own English for verses of the TR, in `data_dir`'s [`SUPPLEMENT`]:
 /// a line a verse, its reference as `1Jn.5.7`, a tab, and its English in the
 /// stored form, its links naming the verse's TR words by position. Blank
@@ -1922,7 +1994,8 @@ pub fn build_translation(
     src_texts: &Path,
     data_dir: &Path,
 ) -> Result<TranslationBuild> {
-    let books = read_prepared(&source_dir(src_texts))?;
+    let mut books = read_prepared(&source_dir(src_texts))?;
+    apply_revisions(&mut books, &data_dir.join(ULT_REVISIONS))?;
     let tx = db.unchecked_transaction()?;
     tx.execute_batch(SCHEMA)?;
     let mut build = TranslationBuild::default();
@@ -2144,6 +2217,71 @@ pub fn gen_translation(path: &Path, src_texts: &Path, data_dir: &Path) -> Result
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    fn exodus_3_14() -> HashMap<usize, PreparedBook> {
+        let mut books = HashMap::new();
+        books.insert(
+            2,
+            PreparedBook {
+                source: Vec::new(),
+                verses: vec![SourceVerse {
+                    verse: (3, 14),
+                    pieces: parse_pieces(r"“[I|810]\n[AM|810]\n[WHO|811]\n[I|812]\n[AM|812].”")
+                        .unwrap(),
+                }],
+            },
+        );
+        books
+    }
+
+    fn revise(books: &mut HashMap<usize, PreparedBook>, file: &str) -> Result<usize> {
+        let path = std::env::temp_dir().join(format!(
+            "haqor-ult-revisions-{}-{}.tsv",
+            std::process::id(),
+            file.len()
+        ));
+        std::fs::write(&path, file).unwrap();
+        let result = apply_revisions(books, &path);
+        std::fs::remove_file(&path).unwrap();
+        result
+    }
+
+    #[test]
+    fn a_revision_replaces_the_ults_english() {
+        let mut books = exodus_3_14();
+        let applied = revise(
+            &mut books,
+            "# comment\n02\t3:14\t“[I|810]\\n[WILL|810]\\n[BE|810]\\n[WHO|811]\\n[I|812]\\n[WILL|812]\\n[BE|812].”\timperfect\n",
+        )
+        .unwrap();
+        assert_eq!(applied, 1);
+        let words: Vec<&str> = books[&2].verses[0]
+            .pieces
+            .iter()
+            .filter_map(|p| match p {
+                SourcePiece::Word { text, .. } => Some(text.as_str()),
+                SourcePiece::Text(_) => None,
+            })
+            .collect();
+        assert_eq!(words, ["I", "WILL", "BE", "WHO", "I", "WILL", "BE"]);
+    }
+
+    #[test]
+    fn a_revision_keeps_every_alignment() {
+        let mut books = exodus_3_14();
+        // Drops 812: refused, and the verse is left as it was.
+        let error = revise(
+            &mut books,
+            "02\t3:14\t“[I|810]\\n[WILL|810]\\n[BE|810].”\twhy\n",
+        )
+        .unwrap_err()
+        .to_string();
+        assert!(error.contains("renders source words"), "{error}");
+        // A revision must give its reason.
+        assert!(revise(&mut books, "02\t3:14\t[I|810]\\n[WHO|811]\\n[I|812]\t \n").is_err());
+        // And name a verse the ULT has.
+        assert!(revise(&mut books, "02\t3:15\t[I|810]\twhy\n").is_err());
+    }
 
     /// Genesis 1:1-2 as the UHB has them, abridged.
     const UHB: &str = "\\id GEN unfoldingWord® Hebrew Bible

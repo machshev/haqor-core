@@ -198,6 +198,12 @@ name; `gen-runtime` reads their words and alignments, prepared, from
 cargo run --release -- db gen-translation   # rebuild the table alone
 ```
 
+Where the ULT's English mistranslates the Hebrew, Haqor revises it in
+`data/ult_revisions.tsv`: one verse per line, in the prepared form, with the
+reason. The build checks that a revision renders exactly the Hebrew words the
+ULT's verse renders, so an alignment is never lost or invented. Exodus 3:14
+is the first: אֶהְיֶה is imperfect, "I WILL BE", not the ULT's "I AM".
+
 Both unfoldingWord texts follow the English verse numbering, so the import
 goes by words rather than references. The UHB's words are lined up against
 the corpus by their letters, book by book: the two are the same Leningrad
