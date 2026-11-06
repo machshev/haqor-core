@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-3, 2 John, 3 John, and Jude
-(6,351 of 7,958 Peshitta verses; 1,607 remain). Philippians 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, 2 John, 3 John, and Jude
+(6,374 of 7,958 Peshitta verses; 1,584 remain). Colossians 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4432,3 +4432,45 @@ Source checks for Philippians 3:
   heaven, expectation from there, the life-giver and our Lord Jesus
   Messiah. Transformation retains our humiliation-body, his glory-body,
   likeness, great power, and subjection of all things to himself.
+
+Source checks for Philippians 4:
+
+- Verse 1 retains the beloved brothers, the speaker's joy and crown,
+  the explicit "thus" with standing firm, our Lord, and the closing
+  beloved address, punctuated as a vocative.
+- Verses 2–3 preserve Euodia and Syntyche, one mind in our Lord, the
+  feminine-plural recipients, the true yokefellow's first-person
+  possessive, help for the women who labored with the speaker, Clement,
+  the other helpers, and names written in the book of life. Requesting
+  from someone is rendered with natural English direct objects without
+  changing the people or their roles.
+- Verses 4–7 retain both rejoice commands, always and again, humility
+  known to everyone, our Lord's nearness, the negative anxiety command,
+  prayer/petition/thanksgiving, requests before God, and God's peace
+  guarding hearts and minds in Jesus Messiah.
+- Verses 8–9 retain every quality and the distinct praise/commendation
+  deeds, thinking on these things, learning/receiving/hearing/seeing in
+  the speaker, and doing them. Verse 7's peace of God remains distinct
+  from verse 9's God of peace.
+- Verses 10–12 preserve beginning to care, prior care and lack of
+  means, the denial that need motivates the statement, learning, and
+  sufficiency. Verse 11 maps its single speech predicate separately from
+  "for I have learned," and retains whatever the speaker has as the
+  subject of sufficiency. Verse 10 uses the verb's causative co-verb sense
+  of beginning an action, recorded by [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=nqp%232+V)
+  under C(3). Verse 12 retains training, with humbled/abounding,
+  fullness/hunger, and abundance/need.
+- Verses 13–17 retain ability through the strengthening Messiah,
+  partnership in affliction, Philippians, Macedonia, the gospel's
+  beginning, the ecclesia contrast, the account of receiving and giving,
+  Thessalonica, the explicit "once and twice," needed support, and the
+  gift-versus-increasing-fruit contrast.
+- Verses 18–20 preserve receipt, surplus, explicit fullness, the repeated
+  reception clause, Epaphroditus, pleasant odor, acceptable sacrifice,
+  and pleasing God. My God fills the recipients' need according to his
+  riches, in Jesus Messiah's glory. The doxology retains our Father,
+  glory and honor, eternity, and Amen.
+- Verses 21–23 retain greetings to all the holy ones in Jesus Messiah,
+  the brothers with the speaker greeting the recipients, all the holy
+  ones, especially Caesar's household, and our Lord Jesus Messiah's
+  grace with all of you, retaining the actual closing recipients.
