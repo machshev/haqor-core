@@ -19,6 +19,9 @@ pub mod greek;
 /// Grammar concepts and learner-facing teaching content.
 pub mod grammar;
 
+/// Haqor's own lexicon (ADR 7): its schema, checks and review I/O.
+pub mod haqor_lexicon;
+
 /// Hand-maintained lexicon and learner-gloss overlays.
 pub mod lexicon_overlay;
 

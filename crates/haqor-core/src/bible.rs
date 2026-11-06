@@ -4670,6 +4670,14 @@ impl Bible {
             .transpose()
     }
 
+    /// Every verse of the text, packed (`book << 16 | chapter << 8 | verse`):
+    /// what the Haqor lexicon's references are checked against when the
+    /// review page saves an entry (see [`crate::haqor_lexicon::save_entry`]).
+    pub fn verse_refs(&self) -> rusqlite::Result<std::collections::HashSet<i64>> {
+        let mut stmt = self.db.prepare("SELECT ref FROM data.verse")?;
+        stmt.query_map([], |row| row.get(0))?.collect()
+    }
+
     /// Whether this `haqor.db` carries Klein and Jastrow at all.
     fn has_dictionaries(&self) -> rusqlite::Result<bool> {
         self.db.query_row(
