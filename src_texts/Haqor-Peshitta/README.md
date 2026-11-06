@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-9, 2 John, 3 John, and Jude
-(7,042 of 7,958 Peshitta verses; 916 remain). Hebrews 10 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-10, 2 John, 3 John, and Jude
+(7,081 of 7,958 Peshitta verses; 877 remain). Hebrews 11 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5313,3 +5313,13 @@ Source checks for Hebrews 9:
 - Verses 15–17 retain the source's covenant/testament and death grammar. The mediator's death is redemption for those who transgressed the first covenant; where there is a testament, the maker's death is shown, and it has no usefulness while its maker lives. The causal For in 9:16 is rendered in the span owning גיר.
 - Verses 18–23 retain the causal and negative relations: the first covenant was not established without blood; Moses' commanded sprinkling covers the scroll, all the people, the tabernacle, and its service vessels; without shedding blood there is no forgiveness; likenesses of heavenly things are distinguished from the heavenly things requiring a better sacrifice. In 9:19, גיר is included in the opening “For when it was commanded” span.
 - Verses 24–28 preserve the Messiah's true-heaven contrast and all time/repetition roles: the chief priest repeatedly enters yearly with another's blood, whereas the Messiah offers himself once at the end of the age; humans die once and face judgment; the Messiah was offered once and appears a second time without sins for the life of those who await him, retaining the plural suffix in לחייהון and the final “to him” relation.
+
+Source checks for Hebrews 10:
+
+- In 10:1, the law had a shadow in it; it is not itself called a shadow. The repeated-pronoun construction at positions 18–20 identifies the same sacrifices. Their passive offering at 22–23 remains distinct from their inability to perfect at 24–27 and the active offering at 29–30.
+- In 10:2, the long-ago adverb belongs to the consequent cessation clause, and the contrast particle introduces that consequence. The conscience predicate retains its negative and its affected persons; the final dative belongs to the cleansing construction rather than introducing another beneficiary.
+- In 10:5, the source says that God clothed the speaker with a body. In 10:6 and 10:8, the whole-burnt-offering compound is one kind of offering, not two separate offerings. The repeated first-person forms in 10:7 complete the coming predicate and do not introduce a second speaker. In 10:10, both the explanatory particle and the possessive in “will of his” are retained; the one-time expression is rendered “once.”
+- In 10:11, the chief priest’s repeated offerings retain their past auxiliaries. In 10:17, sins are not remembered against the people. The confidence expression in 10:19 and the veil compound in 10:20 are translated as complete idioms; the latter follows the sanctuary compound checked in Hebrews 9. The renewal verb in 10:20 remains a finite relative predicate.
+- In 10:21, the noun followed by “great” is distinguished from the chief-priest compound in 10:11. In 10:24–25, the reciprocal expressions refer to one another; the final demonstrative belongs to “that day.” In 10:27, the adversaries are plural.
+- In 10:29, the blood of the covenant is reckoned as anyone’s blood, while the sanctification relative is retained. In 10:30, no explanatory “for” is added to the opening knowing predicate. In 10:32, the source explicitly names baptism. In 10:34, the grief is for imprisoned people; in 10:35, the great reward is prepared for the confidence the readers have.
+- In 10:37, the future coming predicate and its pronominal/relative subject are read together. In 10:38, “my faith” retains the first-person possessive; the feminine discouragement construction with an affected-person dative is an idiom also found in 1 Thessalonians 3:3, rather than a reason to make faith its subject. In 10:39, the final noun is singular “our soul,” with a first-person plural possessor, and the separate “for us” relation is retained.
