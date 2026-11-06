@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-13, 2 John, 3 John, and Jude
-(5,189 of 7,958 Peshitta verses; 2,769 remain). Romans 14 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-14, 2 John, 3 John, and Jude
+(5,212 of 7,958 Peshitta verses; 2,746 remain). Romans 15 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2117,3 +2117,45 @@ Source checks for Romans 13:
 
 All nine causal גיר occurrences were checked individually against the final
 linked text. Numeric morphology was decoded with the SEDRA source codebook.
+
+Source checks for Romans 14:
+
+- Romans 14:1-3 preserves the weak-in-faith recipient, the giving-a-hand
+  idiom, the addressees' thoughts, and the repeated eater/non-eater
+  subjects and negatives. The believing and weak subjects in 14:2 are
+  distinct; the causal God-receiving clause in 14:3 remains explicit.
+- Romans 14:4 preserves the servant who does not belong to the addressee,
+  his Lord, the repeated stand/fall clauses and the final establish-him
+  object. מטא גיר באידי מרה is rendered as the local reach/power idiom
+  “for it is within his Lord's power”; the causal and copular functions
+  are not assigned to the wrong source words.
+- Romans 14:5 renders כלהון יומתא as “all days,” not an invented possessor's
+  “their days.” The day comparisons and each person's assurance in his own
+  mind remain distinct. Romans 14:6 preserves the repeated day-assessment,
+  eating/non-eating, Lord and thanksgiving clauses, including every negative.
+- Romans 14:7-12 retains living/dying for oneself and for our Lord, the
+  first-person-plural possessives, conditionals and “therefore,” the
+  judgment-seat statement, and each person's account for himself to God.
+  Local groups replace an unnecessary whole-verse link in 14:12.
+- Romans 14:13-15 preserves both prohibitions about judgment/stumbling,
+  the food/brother conditional and the Messiah-died relative clause.
+  Romans 14:14 retains the negative existential and both self/unclean
+  relations; the knowing and persuaded predicates remain separately linked.
+- Romans 14:16 uses the source's passive/reflexive blasphemy construction
+  with “our good,” not an active prohibition with the wrong subject.
+  Romans 14:17-20 retains the kingdom's eating/drinking contrast, the
+  righteousness/peace/joy triad, serving Messiah, God's approval, pursuit
+  of peace and mutual building, and the food/work/purity/stumbling clauses.
+- Romans 14:21 preserves all three coordinated negatives and “our brother.”
+  Romans 14:22 keeps faith in the addressee, the imperative's object, the
+  before-God relation and the reflexive judgment/approval clause.
+- Romans 14:23 renders אתחיב לה as “is condemned,” absorbing the
+  coreferential/ethical dative into its predicate. לֵה is third masculine
+  singular; it does not introduce a separate causal “for it” referent.
+  The following מטל already supplies the explicit reason, and the final
+  not-from-faith/sin statement retains its own subject and negation.
+
+All eleven גיר occurrences were checked individually against the final
+linked English. Decoded morphology distinguishes finite and participial
+forms, with first/second/third-person and passive/reflexive roles reviewed
+against the source codebook and running context.
