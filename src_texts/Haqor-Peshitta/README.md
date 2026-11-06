@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1, 2 John, 3 John, and Jude
-(6,886 of 7,958 Peshitta verses; 1,072 remain). Hebrews 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-2, 2 John, 3 John, and Jude
+(6,904 of 7,958 Peshitta verses; 1,054 remain). Hebrews 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5232,3 +5232,15 @@ Source checks for Hebrews 1:
 - Verse 9 retains the causal force (“because”) and the repeated “God, your God” construction before the anointing and comparison with companions.
 - Verses 10–12 preserve the second-person subjects, the fold-up/changed contrast, and the negated completion of the Son’s years.
 - Verses 13–14 retain the angel question, the “from among” phrase, the footstool image, and the description of angels as ministering spirits sent for those prepared to inherit life.
+
+Source checks for Hebrews 2:
+
+- 2:1 keeps מטל + הנא as “Therefore,” חיביננ as “we must,” and the explicit negative דלא before “fall”; the warning is “we must be exceedingly careful ... so that we do not fall away.”
+- 2:2 retains the opening conditional אנ ... גיר as “If indeed,” rather than flattening it to a causal “for”; the confirming verb and the final retribution/justice phrase remain linked to their actual source spans.
+- 2:3 renders the complete source clause naturally as “we despise these things which are our life. These things began to be spoken by our Lord and were confirmed among us by those who heard from him.” This keeps מרנ “our Lord,” מנ “from,” and בנ “among us” owned by the final source spans.
+- 2:4 follows the source's actual subject order by rendering סהד ... עליהון ... אלהא as “God testified about them,” and keeps חילא as “mighty works” and פולגא as “distributions.”
+- 2:6 keeps דמסהד + כתבא as “the Scripture testifies,” matching the actual verb-then-subject source order.
+- 2:8 distinguishes the negative-subjection phrase from the contrastive present: “nothing that was not subjected. But now we do not yet see ...”; השא is “now” and דינ is “but/yet.”
+- 2:9 identifies the lowered one as “this one ... Jesus” (הו ... ישוע), then gives “because of the suffering of death”; its final clause is “on behalf of everyone ... tasted death,” with God's grace kept explicit.
+- 2:10-11 preserve the distinct roles and suffixes: many sons are brought to glory, the prince of their life is perfected through suffering, the sanctifier and sanctified are from one, and 2:11's מטל + הנא remains “Therefore.”
+- 2:14 and 2:17 retain actual source ownership for the participation/likeness clauses: “also he in the same likeness ...,” and “in everything he should be like his brothers.” The active Pael participle מחסא is rendered “might make expiation,” not as a noun “atonement.” 2:16 follows the passive syntax: מותא is explicit “death,” and both משלט predicates mean “authorized,” not “assumed a nature.”
