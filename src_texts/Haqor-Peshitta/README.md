@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-13, 2 John, 3 John, and Jude
-(5,587 of 7,958 Peshitta verses; 2,371 remain). 1 Corinthians 14 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-14, 2 John, 3 John, and Jude
+(5,627 of 7,958 Peshitta verses; 2,331 remain). 1 Corinthians 15 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2891,3 +2891,72 @@ Source checks for 1 Corinthians 13:
 All 13 verses and 185 source words received source-to-English and running
 English review. The three גיר and five דין occurrences were checked
 individually against the final English clauses.
+
+Source checks for 1 Corinthians 14:
+
+- Verses 1-5 keep pursuing love, gifts of the Spirit and the preference
+  for prophecy. Verse 2 retains both causal clauses, speaking to God
+  rather than humans, no one understanding the utterance and speaking
+  a mystery in spirit. Self-building and building the ecclesia remain
+  distinct. Verse 5 keeps all the addressees, the greater prophet,
+  the exception for interpretation and the explicit interpretation/
+  ecclesia-building condition.
+- Verses 6-9 retain the profit question and its exception for revelation,
+  knowledge, prophecy or teaching. The lifeless instruments emit sound;
+  pipe, harp, distinction between notes, sung/played sound, trumpet and
+  preparation for battle remain explicit. Verse 9 keeps the need for
+  interpretation and the comparison to speaking to the air.
+- Verses 10-13 retain many kinds of languages in the world, not one
+  lacking significance, and both sides of the foreigner comparison.
+  The first foreigner noun is not swallowed by the following recipient
+  phrase. Ethical datives do not create another actor. The command is
+  to seek excellence for building the ecclesia, and the tongue-speaker
+  is to pray to interpret.
+- Verses 14-17 distinguish the speaker's spirit praying from his
+  understanding lacking fruit. Verse 15 has four first-person prayer
+  and singing intentions, not commands addressed to someone else. The
+  unlearned hearer cannot say Amen because he does not know what the
+  addressee says; the final verb is not reassigned to "you." Verse 17
+  keeps blessing well and the neighbor not being built up.
+- Verses 18-20 retain thanks to God, speaking in tongues more than all
+  the addressees, five intelligible words versus ten thousand, and the
+  purpose of also teaching others. The maturity instructions remain
+  commands: not children in thought, infants toward evil, mature in
+  thought. They do not become descriptions of existing behavior.
+- Verses 21-22 retain the law quotation, foreign speech, another tongue,
+  this people and still not listening to the Lord. The anticipatory
+  suffix names this people once. Tongues are a sign for unbelievers,
+  while prophecies have the contrasting believer/unbeliever scope.
+- Verses 23-25 retain the whole ecclesia, all the speakers and both
+  visitor categories. The visitor is examined and rebuked by all; he
+  is not made the examiner of everyone. His heart's hidden things are
+  revealed, he falls on his face, worships God and acknowledges God
+  among the addressees. No extra recipient is created by the ethical
+  dative in the quoted madness statement.
+- Verses 26-31 keep every listed contribution, all for building, two
+  speakers or at most three, one by one and one interpreter. Without
+  an interpreter the tongue-speaker is silent in the ecclesia and
+  speaks privately to himself and God. Prophets number two or three,
+  with the rest judging. Revelation to another who is sitting makes
+  the first speaker silent. All may prophesy in turn so everyone may
+  learn and everyone be comforted.
+- Verse 32 has singular spirit of the prophets, subject to the prophets,
+  with causal "For" rather than a prepositional "for the prophets."
+  Verse 33 keeps God of peace rather than tumult and all the ecclesias
+  of the saints.
+- Verses 34-35 retain the addressees' women, silence, the prohibition
+  on speaking, subjection and the law. The actual permission-recipient
+  suffix remains plural. The home phrase modifies asking their husbands,
+  and the explanation retains causal "For" with shameful speaking in
+  the ecclesia; it is not absorbed into a prepositional "for women."
+- Verses 36-40 keep God's word coming forth from the addressees or
+  reaching only them as questions, the conditional claims to prophetic
+  or spiritual status, and recognition of the Lord's commands. Verse 38
+  says if someone does not know, let him not know; it is not replaced
+  with a different passive reading. The final commands retain zeal for
+  prophecy, not forbidding tongues, and everything done decently and
+  in order.
+
+All 40 verses and 565 source words received source-to-English and running
+English review. The eleven גיר, eleven דין and four הכיל occurrences
+were checked individually against the final English clauses.
