@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-2, 2 John, 3 John, and Jude
-(6,160 of 7,958 Peshitta verses; 1,798 remain). Ephesians 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-3, 2 John, 3 John, and Jude
+(6,181 of 7,958 Peshitta verses; 1,777 remain). Ephesians 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4160,3 +4160,34 @@ Source checks for Ephesians 2:
 - Verses 21–22 retain the building's joining and growth, the holy temple,
   the Lord, and the final second-person participation in God's dwelling
   by the Spirit, with the subordinate clause joined to its antecedent.
+
+Source checks for Ephesians 3:
+
+- Verses 1–4 preserve Paul's prisoner statement, the second-person
+  recipients, the conditional hearing of the grace given to him, revelation,
+  writing briefly, reading, and understanding his knowledge of the mystery.
+  Verse 4 groups the explicit ability predicate with reading and understanding.
+- Verses 5–7 retain the negative other-generations statement, the present
+  revelation to the holy apostles and prophets, the Spirit, and all three
+  Gentile relationships: inheritance, body, and promise through the gospel.
+- Verses 8–10 preserve the least-among-all comparison, unsearchable riches,
+  with the appositive "who am the least," bringing the mystery to light, its concealment from the ages, God as
+  creator, and the ecclesia's role in making his varied wisdom known.
+- Verse 11 groups the relative clause with both prepared/accomplished
+  predicates, so its shared English object also owns the Syriac resumptive
+  suffix without a duplicated "it." "Our Lord" and the full Jesus Messiah
+  name remain explicit. Verses 12–13 retain confidence, "his faith,"
+  afflictions, the recipients' sake, and their glory.
+- Verses 14–16 preserve the kneeling prayer, the Father relationship,
+  "our Lord," every family's naming, both heaven and earth, his glory,
+  the strengthening purpose, his Spirit, and the hearers' inner person.
+- Verse 17 separately owns faith, the hearers' hearts, love, and the
+  temporal clause about their root and foundation. Verse 18 retains
+  comprehension with all the holy ones and all four dimensions.
+- Verse 19 renders the anticipatory possessive and explicit Messiah
+  genitive as one owner in "Messiah's love," retaining both knowledge
+  and greatness and the filling with all God's fullness.
+- Verses 20–21 preserve separate comparisons, "more than everything"
+  and "even more than what we ask and think," with the first-person plural
+  asking/thinking and "in us," his ecclesia, Jesus Messiah, all generations,
+  both plural age terms, and Amen.
