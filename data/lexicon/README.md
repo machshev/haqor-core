@@ -88,7 +88,7 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 | `gloss` | Its meaning in its own language. |
 | `relation` | `cognate`, `possible` (argued but uncertain), or `loan` (borrowed one way or the other). |
 | `note` | Optional: how its meaning bears on the Hebrew. |
-| `evidence` | At least one source citation: its dictionary entry, or the text it occurs in. |
+| `evidence` | At least one citation: its dictionary entry or the text it occurs in, or a verse where scripture itself has the cognate (Biblical Aramaic, or the Peshitta's Syriac). |
 
 ### Greek
 

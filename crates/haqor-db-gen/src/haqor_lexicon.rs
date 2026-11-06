@@ -557,7 +557,9 @@ impl Checker<'_> {
             }
             self.text(&at, "form", &cognate.form);
             self.text(&at, "gloss", &cognate.gloss);
-            self.evidence(&at, &cognate.evidence, Accepts::Source);
+            // Its own language's dictionary, or a verse where scripture itself has
+            // the cognate: Biblical Aramaic, or the Peshitta's Syriac.
+            self.evidence(&at, &cognate.evidence, Accepts::Either);
         }
         for (i, doctrine) in entry.doctrine.iter().enumerate() {
             let at = format!("{at}.doctrine[{i}]");
