@@ -242,8 +242,13 @@ fn root_sets(src_texts: &Path, root: &str) -> Result<Vec<RootSet>> {
 }
 
 /// Markdown for the brief's cognates section: the root `root` (a root key),
-/// whose words are `lemmas`, against the vendored sources under `src_texts`.
-pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Result<String> {
+/// whose words are `lemmas` glossed `glosses` (which rank the looser matches), against the vendored sources under `src_texts`.
+pub fn cognate_section(
+    src_texts: &Path,
+    root: &str,
+    lemmas: &[String],
+    glosses: &[String],
+) -> Result<String> {
     let mut out = String::new();
     let wiktionary = lines(&src_texts.join("Wiktionary/semitic.jsonl"))?;
     let lane = lines(&src_texts.join("Lane/lane.jsonl"))?;
@@ -499,12 +504,29 @@ pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Resul
             .collect::<Vec<_>>()
             .join(", ")
     )?;
-    let mut any = false;
-    for v in oracc.iter().filter(|v| text(v, "lang") == "akk") {
-        let skeleton = akkadian_skeleton(text(v, "cf"));
-        let feminine = skeleton.strip_suffix('t').map(str::to_string);
-        if akkadian.contains(&skeleton) || feminine.is_some_and(|f| akkadian.contains(&f)) {
-            any = true;
+    // A short key (the gutturals Akkadian lost) matches many unrelated
+    // lemmas, so the matches are ranked by the words their meanings share
+    // with the root's glosses, then by how often they are attested.
+    let gloss_words = words_of(&glosses.join(" "));
+    let mut matches: Vec<(usize, i64, &Value)> = oracc
+        .iter()
+        .filter(|v| text(v, "lang") == "akk")
+        .filter(|v| {
+            let skeleton = akkadian_skeleton(text(v, "cf"));
+            let feminine = skeleton.strip_suffix('t').map(str::to_string);
+            akkadian.contains(&skeleton) || feminine.is_some_and(|f| akkadian.contains(&f))
+        })
+        .map(|v| {
+            let meaning = format!("{} {}", text(v, "gw"), strings(v, "meanings").join(" "));
+            let shared = words_of(&meaning).intersection(&gloss_words).count();
+            (shared, v["icount"].as_i64().unwrap_or(0), v)
+        })
+        .collect();
+    matches.sort_by(|a, b| b.0.cmp(&a.0).then(b.1.cmp(&a.1)));
+    let total = matches.len();
+    let any = total > 0;
+    for &(_, _, v) in matches.iter().take(AKKADIAN_SHOWN) {
+        {
             let entries = v["entries"].as_array().cloned().unwrap_or_default();
             let cite = entries
                 .first()
@@ -530,9 +552,46 @@ pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Resul
     }
     if !any {
         writeln!(out, "- None.")?;
+    } else if total > AKKADIAN_SHOWN {
+        writeln!(out, "- … and {} more", total - AKKADIAN_SHOWN)?;
     }
     writeln!(out)?;
     Ok(out)
+}
+
+/// How many Akkadian matches a brief lists.
+const AKKADIAN_SHOWN: usize = 12;
+
+/// The English content words of a gloss, lower case, for comparing meanings.
+fn words_of(text: &str) -> HashSet<String> {
+    const STOP: &[&str] = &[
+        "the",
+        "a",
+        "an",
+        "of",
+        "to",
+        "be",
+        "become",
+        "and",
+        "or",
+        "in",
+        "on",
+        "for",
+        "with",
+        "as",
+        "by",
+        "one",
+        "someone",
+        "something",
+        "who",
+        "that",
+        "is",
+        "it",
+    ];
+    text.split(|c: char| !c.is_alphabetic())
+        .map(str::to_lowercase)
+        .filter(|w| w.len() > 2 && !STOP.contains(&w.as_str()))
+        .collect()
 }
 
 #[cfg(test)]

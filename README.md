@@ -86,6 +86,8 @@ Anderson and Moser's Proto-Semitic root derivations
 (`src_texts/ProtoSemitic/`) give each root's descendants in seven languages.
 The Thesaurus Linguae Aegyptiae's Egyptian lemma list and the Comprehensive
 Coptic Lexicon (`src_texts/Egyptian/`) trace Egyptian loanwords.
+Oracc's Akkadian and Sumerian glossaries (`src_texts/Oracc/`) give the
+cuneiform cognates and loans.
 
 ## Commands
 
@@ -474,6 +476,11 @@ licensed CC BY 4.0.
 [AED TEI edition](https://github.com/JKatzwinkel/aed-tei)) and the
 *Comprehensive Coptic Lexicon* v1.2 (BBAW and FU Berlin, 2020, via
 [KELLIA](https://github.com/KELLIA/dictionary)), both CC BY-SA 4.0.
+
+**Akkadian and Sumerian** — the glossaries of
+[Oracc](https://oracc.museum.upenn.edu/) and its projects, including ePSD2 (The
+Pennsylvania Sumerian Dictionary Project), released under CC0 as each file
+states.
 
 **Rabbinic and Aramaic dictionary** — Marcus Jastrow, *A Dictionary of the
 Targumim, the Talmud Babli and Yerushalmi, and the Midrashic Literature*

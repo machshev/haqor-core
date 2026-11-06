@@ -386,8 +386,9 @@ pub fn lexicon_brief(
     writeln!(out)?;
 
     let lemmas: Vec<String> = words.iter().map(|w| w.word.clone()).collect();
+    let glosses: Vec<String> = words.iter().map(|w| w.gloss.clone()).collect();
     out.push_str(&crate::cognate_search::cognate_section(
-        src_texts, &root, &lemmas,
+        src_texts, &root, &lemmas, &glosses,
     )?);
 
     writeln!(
