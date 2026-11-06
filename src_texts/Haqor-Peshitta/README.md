@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1, 2 John, 3 John, and Jude
-(6,138 of 7,958 Peshitta verses; 1,820 remain). Ephesians 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-2, 2 John, 3 John, and Jude
+(6,160 of 7,958 Peshitta verses; 1,798 remain). Ephesians 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4127,3 +4127,36 @@ Source checks for Ephesians 1:
 - Verses 21–23 retain the repeated above relation, the clause about the
   name that is named, the present/coming contrast, ecclesia, and the body/fullness/filling
   relations, with their actual source pronouns and participants.
+
+Source checks for Ephesians 2:
+
+- Verses 1–3 preserve the fronted second-person topic and subsequent
+  first-person shift. Relative and resumptive locatives are grouped with
+  their own clauses, with "this spirit," the flesh/thought possessives,
+  and the emphatic comparison with the rest retained.
+- Verses 4–7 retain God's mercy and love, making alive, rescue, raising,
+  seating, and the purpose of showing his grace and kindness. The joins
+  across verses 3–7 keep the main predicate sequence intelligible.
+- Verse 8 explicitly maps "by his grace" and first-person plural
+  "we have been rescued through faith," followed by second-person
+  "not from you."
+  Verses 8–10 preserve the negative source contrast, God's gift, works,
+  the no-boasting purpose, creation, and the prepared-works walking clause.
+- Verses 11–12 retain the former flesh/circumcision descriptions,
+  exclusion from Israel's customs and the covenant of promise, and the distinct
+  hope/God statements. Verse 13 renders the blood suffix and explicit
+  genitive naturally as the single owner in "the Messiah's blood."
+- Verses 14–16 preserve the two/one contrasts, the intervening barrier,
+  the flesh/enmity and commandment/decree phrases, one new person,
+  reconciliation with God in one body, and the cross. The legal
+  possessive is rendered "its decrees," with the law as its referent. The killing of
+  enmity remains a completed predicate.
+- Verses 17–18 retain the separate far/near recipients, access through
+  him, both groups in one Spirit, and the Father. The source's "both"
+  belongs to its own grouped access/Spirit phrase.
+- Verses 19–20 preserve both negatives, fellow-citizens with the holy
+  ones, God's household, apostles and prophets, and Jesus Messiah as
+  cornerstone. "Cornerstone" renders the idiom "head of the corner."
+- Verses 21–22 retain the building's joining and growth, the holy temple,
+  the Lord, and the final second-person participation in God's dwelling
+  by the Spirit, with the subordinate clause joined to its antecedent.
