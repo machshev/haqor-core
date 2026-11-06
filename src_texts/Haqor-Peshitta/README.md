@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1, 2 John, 3 John, and Jude
-(6,479 of 7,958 Peshitta verses; 1,479 remain). 1 Thessalonians 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-2, 2 John, 3 John, and Jude
+(6,499 of 7,958 Peshitta verses; 1,459 remain). 1 Thessalonians 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4719,3 +4719,52 @@ Source checks for 1 Thessalonians 1:
   and destination into natural English. The fear-of-idols compound uses
   its attested religious worship sense. Jesus remains the named Son whom
   God raised from among the dead and who delivers us from coming wrath.
+
+Source checks for 1 Thessalonians 2:
+
+- Verses 1–4 retain the recipients' knowledge of the speakers' entrance,
+  suffering and mistreatment at Philippi, great conflict, boldness and
+  our God, and speaking Messiah's gospel. The suffix on gospel anticipates
+  the explicit Messiah owner; it does not make Messiah another person's
+  possession. Error, impurity and deceit remain negated. God's approval,
+  entrusting of the gospel, pleasing God and his examination of hearts
+  all remain.
+- Verses 5–7 preserve the denial of flattering speech, a pretext for
+  greed and seeking human glory, God as witness, the recipients/others
+  alternatives, the apostolic claim and possible burden, and gentleness
+  illustrated by a nursing mother cherishing her children.
+- Verses 8–10 retain love and longing as distinct predicates, giving the
+  gospel and the speakers' own lives, the recipients' dearness to them,
+  remembered labor and toil, manual work night and day, avoidance of a
+  burden, gospel proclamation, purity, righteousness and blamelessness.
+  The longing verb stays with its own source span, followed by the
+  separate giving infinitive. The actual hnan forms are first-person
+  plural, despite the base pronoun's singular dictionary gloss.
+- Verses 11–12 retain entreating each recipient as a father his children,
+  comforting their hearts and bearing testimony, joined to the purpose
+  of walking worthily of God who calls them into his kingdom and glory.
+  The fronted objects and father comparison are grouped with their
+  entreating predicate to allow natural English order. The comfort idiom
+  is documented in [CAL, mly, Peal sense 7](https://cal.huc.edu/oneentry.php?cits=all&lemma=mly+V).
+- Verses 13–14 preserve continual thanksgiving, receiving God's word
+  from the speakers, the human/divine contrast, its actual divine status,
+  and its work in believers. The imitation comparison retains God's
+  Judean ecclesias in Messiah Jesus, the recipients' suffering from their
+  own countrymen, and the parallel suffering from Jews.
+- Verses 15–16 retain killing our Lord Jesus Messiah and the prophets
+  from among them, persecution of the speakers, not pleasing God,
+  opposition to all people, hindrance of speech to Gentiles so that they
+  may live, continuing sins and arriving wrath. The killing verb and
+  our-Lord possessive stay in their actual source group; the prophets'
+  from-among-them relative stays with the prophets. The ongoing negative
+  pleasing and opposed predicates remain present in English.
+- Verses 17–20 preserve bereavement for a short time, presence contrasted
+  with heart, eagerness to see their faces with affection, the desired
+  visit, Paul, once and twice, Satan's hindering me, hope, joy, the crown
+  of boasting, our Lord Jesus and his coming, and the recipients as the
+  speakers' glory and joy. [CAL's hpt Ethpaal entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=xp%2B+V)
+  supports the eagerness sense of the actual derived stem. Verse 19 is one
+  coherent rhetorical question with the if-not-you construction.
+- The vocative suffixes are retained: my brothers in verses 1 and 14,
+  our brothers in verses 9 and 17. The singular me in verse 18 remains
+  distinct from the speakers' plural we.
