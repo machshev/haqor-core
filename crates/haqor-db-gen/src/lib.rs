@@ -9,6 +9,7 @@ mod artifacts;
 mod events;
 mod geocoding;
 mod greek_lexicon;
+mod haqor_lexicon;
 mod harness;
 mod hebrew_db;
 mod journeys;
@@ -41,6 +42,9 @@ pub use apologetics::{APOLOGETICS, ApologeticsSummary, build_apologetics, gen_ap
 pub use artifacts::{ARTIFACTS, ArtifactsSummary, build_artifacts, gen_artifacts};
 pub use events::{EVENT_OVERRIDES, EventsSummary};
 pub use haqor_core::normalize_surface;
+pub use haqor_lexicon::{
+    LEXICON_DIR, Lexicon, LexiconSummary, check_lexicon, check_lexicon_dir, read_lexicon,
+};
 pub use harness::{eval_from_db, parse_eval};
 pub use hebrew_db::{
     book_name, book_number, generate_hebrew, generate_hebrew_with_sources, parse_passage,

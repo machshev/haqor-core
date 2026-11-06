@@ -318,6 +318,19 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// Check Haqor's own lexicon (`data/lexicon/`) against its schema, the
+    /// text's verses and the source registry, listing every fault.
+    CheckLexicon {
+        /// The lexicon directory.
+        #[arg(short, long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+        /// Runtime database whose verses references must name.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// Source texts directory holding the cited works' copies.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     /// Rebuild the apologetics of a runtime haqor.db in place from
     /// `data/apologetics.json`.
     GenApologetics {
@@ -722,6 +735,17 @@ fn main() -> Result<()> {
                     summary.attestations,
                     summary.passages,
                     db.display()
+                );
+            }
+            DbCommands::CheckLexicon {
+                lexicon,
+                db,
+                src_texts,
+            } => {
+                let s = haqor_db_gen::check_lexicon_dir(&lexicon, &db, &src_texts)?;
+                println!(
+                    "Lexicon OK: {} entries ({} reviewed), {} words, {} senses, {} citations",
+                    s.entries, s.reviewed, s.words, s.senses, s.citations
                 );
             }
             DbCommands::GenApologetics {
