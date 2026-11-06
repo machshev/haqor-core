@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, 2 John, 3 John, and Jude
-(7,175 of 7,958 Peshitta verses; 783 remain). James 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1, 2 John, 3 John, and Jude
+(7,202 of 7,958 Peshitta verses; 756 remain). James 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5359,3 +5359,14 @@ Source checks for Hebrews 13:
 - In 13:18, the explanatory particle belongs to “for we are confident,” followed by the conscience complement and conduct rationale. It is not moved into a new independent conscience clause. In 13:19, the quickness modifies the writer's return. In 13:20, the great Shepherd is identified as Jesus the Messiah, our Lord; the covenant is not made the antecedent of that identification.
 - In 13:21, the second-person plural recipients of “make you complete” are distinct from `בנ`, “in us,” in the following working/accomplishing clause. The blessing retains its volitional force. In 13:23, “with him” belongs to the writer's seeing the readers with Timothy after his arrival, not to Timothy arriving with himself.
 - In 13:24, the first greeting is an imperative, but the Italy greeting is a declaration with those from Italy as its subject. The final grace greeting retains its plural recipients and Amen.
+
+Source checks for James 1:
+
+- 1:1 retains “our Lord,” twelve tribes, dispersed nations, and peace greeting.
+- 1:3 renders the testing of faith as producing patience; 1:4 keeps patience’s complete work and “lacking nothing.”
+- 1:5–8 preserves asking in faith without doubting, the wind-stirred wave, and the relative “who is divided in his mind.”
+- 1:12 uses temporal “when he is proved”; 1:13 preserves the direct temptation quotation, the statement that God is not tempted by evil, and the independent “no one” negative.
+- 1:14 retains the personal temptation, the relation to one’s own desire, and the lusting/drawing predicates. In 1:15, desire conceives and gives birth to sin; completed sin gives birth to death.
+- 1:17 has one gift noun with “good and complete” modifiers; 1:19 coordinates quick hearing, slow speaking, and slow anger.
+- 1:21 preserves first-person-plural “our nature”; 1:23 retains “a doer of it”; 1:24 assigns “goes away” and “forgets” to their own source words.
+- 1:25 retains demonstrative “this one”; 1:26 renders the heart as deceiving him; 1:27 retains masculine “keep himself,” orphans/widows, oppression, and the world.
