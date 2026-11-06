@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1, 2 John, 3 John, and Jude
-(6,625 of 7,958 Peshitta verses; 1,333 remain). 1 Timothy 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-2, 2 John, 3 John, and Jude
+(6,640 of 7,958 Peshitta verses; 1,318 remain). 1 Timothy 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4997,3 +4997,30 @@ Source checks for 1 Timothy 1:
   good conscience, rejecting this from themselves and becoming devoid of
   faith, rather than importing a nautical image. Hymenaeus, Alexander,
   handing over to Satan and learning not to blaspheme remain explicit.
+
+Source checks for 1 Timothy 2:
+
+- Verses 1–2 retain the first-person request, all four prayer nouns,
+  prayer for kings and rulers, and the speakers' first-person plural
+  living calmly and quietly in reverence for God and purity.
+- Verses 3–5 retain God as our life-giver, the desire that all people
+  live and turn to knowledge of truth, both actual “one” quantifiers,
+  the mediator and human-being language, and Jesus Messiah.
+- Verses 6–7 retain giving himself as a ransom, everyone, the testimony
+  that came at its time, the appointment, herald and apostle, speaking
+  truth without lying, and teaching the Gentiles in faith and truth.
+- Verse 8 has men praying, with third-person plural “their hands,”
+  distinct from the speakers' plural in verse 2. Anger and the second
+  thought/reasoning prohibition remain separate negatives.
+- Verses 9–10 retain modest clothing as well as modesty and self-control,
+  the finite adornment predicate, the entire prohibited adornment list,
+  and the contrasting “with good works, as is fitting” construction.
+  The instruction joins across the verse boundary.
+- Verses 11–12 retain learning quietly with submission, both prohibited
+  infinitives, and the following quietness clause. The Aphel infinitive
+  is rendered “act boldly”; compare the [CAL entry for mrh](https://cal.huc.edu/oneentry.php?cits=all&lemma=mrx+V).
+- Verses 13–15 retain Adam's formation before Eve, both deception clauses,
+  transgression concerning the commandment, the woman's life statement,
+  “her children,” and the plural conditional “they remain,” with faith,
+  love, holiness and modesty. The plural offspring reading follows the
+  actual form; compare the [CAL child/offspring entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=yld+N).
