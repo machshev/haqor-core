@@ -6,6 +6,7 @@
 
 mod apologetics;
 mod artifacts;
+mod cognates;
 mod events;
 mod geocoding;
 mod greek_lexicon;
@@ -41,6 +42,7 @@ mod xml;
 
 pub use apologetics::{APOLOGETICS, ApologeticsSummary, build_apologetics, gen_apologetics};
 pub use artifacts::{ARTIFACTS, ArtifactsSummary, build_artifacts, gen_artifacts};
+pub use cognates::{Lang as CognateLang, cognate_keys};
 pub use events::{EVENT_OVERRIDES, EventsSummary};
 pub use haqor_core::normalize_surface;
 pub use haqor_lexicon::{
