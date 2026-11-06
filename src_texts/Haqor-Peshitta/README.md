@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-5, 2 John, 3 John, and Jude
-(5,376 of 7,958 Peshitta verses; 2,582 remain). 1 Corinthians 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-6, 2 John, 3 John, and Jude
+(5,396 of 7,958 Peshitta verses; 2,562 remain). 1 Corinthians 7 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2458,3 +2458,49 @@ Source checks for 1 Corinthians 5:
 All 13 verses and 200 source words received source-to-English and running
 English review. The three גיר and four דין occurrences were checked
 individually against the final English clauses.
+
+Source checks for 1 Corinthians 6:
+
+- Verses 1-4 retain the controversy with one's brother, the unjust versus
+  holy judges, the holy ones judging the world, and the world being judged
+  by the addressees. Judging angels and the lesser matters of this world
+  have distinct objects. The appointment of people despised in the
+  ecclesia remains an imperative concerning the addressees' own cases.
+- Verses 5-7 preserve shame, the lack of even one wise person able to
+  settle matters between brothers, and litigation before unbelievers.
+  Verse 5's ability and settling predicates remain separately explicit.
+  The opening temporal idiom in verse 7 is “already,” rather than the
+  misleading concatenation “from ... it suffices.” Self-condemnation,
+  litigation with one another, and the two questions about accepting wrong
+  or defrauding retain their separate roles and connectors.
+- Verses 8-10 retain doing wrong and defrauding even one's brothers, with
+  no third predicate invented from a repeated pronoun. Every vice in both
+  lists remains explicit, including distinct corrupt people
+  and those who lie with males. The repeated kingdom-of-God clauses have
+  one owner each, with the full negative inheritance predicate.
+- Verse 11 retains “some of you,” washing, and the separately passive
+  sanctified/justified predicates. The name belongs to our Lord Jesus
+  Messiah and the Spirit to our God; proleptic suffixes do not add an
+  extra owner or actor.
+- Verses 12-14 preserve both lawful statements, the profitable/unprofitable
+  qualification, and the final human subject who will not have dominion
+  over Paul. That subject is not replaced with Murdock's supplied
+  “none of them.” Food/belly and body/Lord relations remain reciprocal;
+  God's doing away with both is distinct from raising our Lord and us.
+- Verses 15-17 distinguish plural bodies/members from the singular member
+  in the following question. The source's third-person actor is retained,
+  rather than imposing a first-person question. The quoted “shall be”
+  belongs to the two becoming one body; the explicit two, one body and
+  one spirit are all retained.
+- Verses 18-20 keep the body-related contrast between every sin and
+  fornication, the singular body as temple with plural possessors, the
+  Spirit dwelling in the addressees and received from God, and the
+  denial of self-ownership. Feminine Syriac agreement does not supply a
+  female identity or a new actor. Both body and spirit remain explicit
+  in the final exhortation, followed by their belonging to God. The
+  copula in verse 20 is retained with “Therefore be glorifying,” rather
+  than swallowed into the preceding bought-with-a-price clause.
+
+All 20 verses and 293 source words received source-to-English and running
+English review. The three גיר, six דין and two הכיל occurrences were
+checked individually against the final English clauses.
