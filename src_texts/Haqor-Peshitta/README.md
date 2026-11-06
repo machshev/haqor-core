@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-4, 2 John, 3 John, and Jude
-(5,786 of 7,958 Peshitta verses; 2,172 remain). 2 Corinthians 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-5, 2 John, 3 John, and Jude
+(5,807 of 7,958 Peshitta verses; 2,151 remain). 2 Corinthians 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3355,3 +3355,75 @@ Source checks for 2 Corinthians 4:
 All 18 verses and 259 source words received source-to-English and running
 English review. The seven גיר, four דין and one הכיל occurrences were
 checked individually against the final English clauses.
+
+Source checks for 2 Corinthians 5:
+
+- Verse 1 retains our earthly house and its bodily description,
+  dissolution, the building from God and a house not made by hands,
+  in heaven eternally. No tabernacle noun is substituted for the
+  actual body noun. Verse 2 keeps causal For, also, groaning, desire
+  to put on our house and its source from heaven.
+- Verse 3 has no separate negative word before being found naked.
+  The initial `ella` is understood conditionally as "Otherwise,"
+  followed by even when clothed and the positive found-naked predicate.
+  This contextual choice agrees with the conditional reading in
+  [Lamsa's Syriac-derived rendering](https://biblehub.com/2_corinthians/5-3.htm),
+  which begins "If not so." It differs from the supplied Murdock
+  wording and does not move a supplied not into the final predicate.
+- Verse 4 retains now, this house, groaning from its burden, our
+  desire not to strip it off but to be clothed over it, and its
+  mortality being swallowed up in life. The desire is first-person
+  plural, rather than Murdock's "ye desire." The swallowing remains
+  passive, with mortality as its subject and life as its destination.
+- Verse 5 makes God the present preparer of us for this, and keeps
+  his past giving of the pledge of his Spirit. The anticipating
+  target suffix does not add another object. Verses 6-8 keep knowing
+  and being persuaded, bodily lodging with absence from our Lord,
+  walking by faith rather than sight, and the wish to depart from
+  the body and be with our Lord.
+- Verse 9 retains striving, the absent/dwelling alternatives and
+  pleasing him. The target "to him" belongs to pleasing, not to
+  dwelling. Verse 10 keeps all of us due to stand before Messiah's
+  tribunal, each person's recompense in his body, what he has done,
+  and both good and evil alternatives. The distributive person-person
+  expression means each person; the final dative in the done-expression
+  is not another recipient of the deeds.
+- Verse 11 retains fear of our Lord, persuasion of people, being
+  manifest to God, the singular I-hope clause, both discourse contrasts
+  and the addressees' own minds. Manifestness to God is not changed
+  into a passive revelation by God. Verse 12 keeps not again praising
+  ourselves, giving the addressees an occasion to boast in us, and
+  the face/appearance versus heart contrast of those who boast.
+- Verse 13 keeps causal For separately from for-God and for-you,
+  and both foolishness and soundness conditions. Verse 14 preserves
+  Messiah's love constraining us to consider this: one died for
+  everyone, and therefore everyone died. The final dative does not
+  create an additional for-him beneficiary.
+- Verse 15 repeats his dying for everyone, the purpose that the living
+  not live for themselves, and the one who died on their behalf and
+  rose. The on-their-behalf construction is an idiom, not physical
+  faces. A separate no-longer expression is not supplied here.
+- Verse 16 retains both actual body expressions, the first negative
+  knowing, the conditional past knowing of Messiah and the final
+  present negative knowing from now on. Body is not replaced with
+  an absent flesh noun. Verse 17 ends with old things passing away;
+  verse 18 explicitly begins with all things becoming new from God.
+  Those verse boundaries and both old/new statements remain intact.
+- Verses 18-19 keep God reconciling us to himself through Messiah, giving
+  the service of reconciliation, reconciling the world with his
+  majesty, not reckoning their sins to them, and placing in us the
+  word of reconciliation. The actual greatness/majesty noun in
+  verse 19 is not replaced by a generic to-himself expression.
+- Verse 20 retains ambassadors for Messiah, both therefore particles,
+  God beseeching the addressees through us, our beseeching on Messiah's
+  behalf, and the imperative to be reconciled to God. Verse 21 keeps
+  the one who had not known sin, God's making him sin for your sake,
+  and the purpose that we become God's righteousness in him. Your
+  is second-person plural, not us. Both sin nouns remain without
+  expanding one into a doctrinal paraphrase. The final clause uses
+  an English cleft to identify the sinless one as the object of God's
+  making, while keeping causal For distinct from for-your-sake.
+
+All 21 verses and 286 source words received source-to-English and running
+English review. The nine גיר, five הכיל, two דין and one מכיל occurrences
+were checked individually against the final English clauses.
