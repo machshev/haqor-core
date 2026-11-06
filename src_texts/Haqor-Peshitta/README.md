@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1, 2 John, 3 John, and Jude
-(7,202 of 7,958 Peshitta verses; 756 remain). James 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-2, 2 John, 3 John, and Jude
+(7,228 of 7,958 Peshitta verses; 730 remain). James 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5370,3 +5370,13 @@ Source checks for James 1:
 - 1:17 has one gift noun with “good and complete” modifiers; 1:19 coordinates quick hearing, slow speaking, and slow anger.
 - 1:21 preserves first-person-plural “our nature”; 1:23 retains “a doer of it”; 1:24 assigns “goes away” and “forgets” to their own source words.
 - 1:25 retains demonstrative “this one”; 1:26 renders the heart as deceiving him; 1:27 retains masculine “keep himself,” orphans/widows, oppression, and the world.
+
+Source checks for James 2:
+
+- 2:1 retains the face-taking/partiality relation explicitly.
+- 2:5 preserves the contrastive particle: God chose the poor, but rich in faith, as heirs.
+- 2:7 retains the passive/name invocation: the good name called over the readers.
+- 2:10 renders the one-point stumble without adding an unsupported commandment word.
+- 2:13 positions 10-14 are second-person plural and passive; the imperfect is rendered “you will be raised by mercy above judgment,” rather than making mercy the grammatical subject.
+- 2:20 retains the contrastive particle in “But do you want to know.”
+- 2:21-25 preserve the work/faith argument and named Abraham, Isaac, Rahab relations in source order.
