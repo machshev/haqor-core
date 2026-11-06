@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-12, 2 John, 3 John, and Jude
-(5,574 of 7,958 Peshitta verses; 2,384 remain). 1 Corinthians 13 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-13, 2 John, 3 John, and Jude
+(5,587 of 7,958 Peshitta verses; 2,371 remain). 1 Corinthians 14 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2843,4 +2843,51 @@ Source checks for 1 Corinthians 12:
 
 All 31 verses and 425 source words received source-to-English and running
 English review. The seven גיר and eighteen דין occurrences were checked
+individually against the final English clauses.
+
+Source checks for 1 Corinthians 13:
+
+- Verses 1-3 retain every human tongue and that of angels, prophecy,
+  all mysteries, all knowledge, all faith and moving mountains. The
+  conditions repeatedly specify love not being in the speaker. The
+  results are becoming resounding brass or a sounding cymbal, being
+  nothing, and gaining nothing respectively. The ethical dative in
+  verse 1 does not introduce another recipient.
+- Verse 3 retains feeding the poor with all the speaker possesses,
+  handing over his own body, and its being burned. The burning wording
+  is not replaced with a Greek variant about boasting.
+- Verse 4's long-spirit expression is an idiom for patience, not another
+  personal spirit. All three explicit love nouns remain, along with
+  kindness and the distinct negatives of envy, boisterous or agitated
+  behavior, and puffing up. Verse 5 continues love as subject and keeps
+  shameful action, seeking its own, provocation and thinking evil as
+  separate negatives; thinking evil is not replaced with the familiar
+  phrase about keeping a record of wrongs.
+- Verses 6-7 retain rejoicing in truth rather than in iniquity and four
+  distinct predicates with their own "all": bearing, believing, hoping
+  and enduring. Each quantity is linked with its actual predicate,
+  rather than borrowing the next predicate's all-word.
+- Verse 8 keeps love never failing, plural prophecies ceasing, tongues
+  becoming silent and knowledge ceasing. Its postpositive גיר is causal
+  "For," rather than a substituted "but" or an omitted conjunction.
+- Verses 9-10 distinguish present partial knowledge and prophecy from
+  the coming of completeness, when the partial ceases. The source's
+  "little of much" wording expresses the limited present knowledge and
+  prophecy; it is not an assertion that the speaker knows everything.
+  Completeness remains an abstract noun without an added identification.
+- Verse 11 preserves all three childhood comparisons and their distinct
+  speaking, thinking and reasoning predicates, followed by becoming a
+  man and putting away these childhood things. The repeated perfect BE
+  forms are auxiliaries, not three extra "I was" clauses.
+- Verse 12 keeps the mirror and the source's comparison or similitude
+  term, rather than importing "darkly." Both now/then contrasts remain,
+  as do face to face, limited current knowledge and future knowing.
+  The final known verb is passive; it is not changed into another active
+  "I know" or supplemented with an unexpressed "fully."
+- Verse 13 retains causal "For," the explicit three that remain, faith,
+  hope and love, and love as greatest of these. The grammatical pronouns
+  do not add another person to the list.
+
+All 13 verses and 185 source words received source-to-English and running
+English review. The three גיר and five דין occurrences were checked
 individually against the final English clauses.
