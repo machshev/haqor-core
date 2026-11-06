@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-5, 2 John, 3 John, and Jude
-(6,697 of 7,958 Peshitta verses; 1,261 remain). 1 Timothy 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 John, 3 John, and Jude
+(6,718 of 7,958 Peshitta verses; 1,240 remain). 2 Timothy 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5108,3 +5108,33 @@ Source checks for 1 Timothy 5:
   separate reasons, the recipient's stomach and continuing ailments,
   sins going before or following people to judgment, and the concluding
   visibility and concealment of good works.
+
+Source checks for 1 Timothy 6:
+
+- Verses 1–2 retain the yoke, their masters, God's name and his teaching,
+  believing masters as brothers, and the benefit of service. The final
+  teaching/exhortation command remains a separate sentence.
+- Verses 3–6 retain approaching the sound words of our Lord Jesus Messiah,
+  the fear-of-God teaching, arrogance and ignorance, disputes and their
+  consequences, corrupted minds, deprivation of truth and supposed gain.
+  The withdrawal command remains explicit. Verse 6 keeps the causal “For,”
+  the speakers' gain, fear of God, use and their sufficiency.
+- Verses 7–10 retain bringing nothing and carrying nothing away, sufficient
+  food/clothing, the dangers of seeking riches, the root of these evils,
+  love of money, straying from faith and the reflexive misery statement.
+- Verses 11–12 retain “you, man of God,” fleeing from these things, all six
+  pursuit objects, the contest, eternal life, calling, good confession and
+  many witnesses. Verse 19 separately has true/steadfast life.
+- Verses 13–16 form one charge and its linked clauses. God gives life to
+  all, Jesus Messiah's testimony is before Pontius Pilate, and the command
+  is kept until our Lord's manifestation. God reveals him in his time;
+  blessing, unique might, kingship/lordship, deathlessness, inaccessible
+  light, inability to see him, honor, power and Amen remain explicit.
+- Verse 17 keeps the rich of this age and the negated exaltation in their
+  minds in their actual source spans. The provision clause has all things
+  as its object and “for our rest” as its purpose, with the first-person
+  plural suffix retained. Verses 18–19 retain good deeds, sharing, a
+  foundation for what is to come and attaining true life.
+- Verses 20–21 retain Timothy's entrusted charge, empty speech, opposing
+  principles of false knowledge, the feminine singular reference to that
+  knowledge, straying from faith, the final addressed “you,” grace and Amen.
