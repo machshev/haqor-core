@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-2, 2 John, 3 John, and Jude
-(6,640 of 7,958 Peshitta verses; 1,318 remain). 1 Timothy 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-3, 2 John, 3 John, and Jude
+(6,656 of 7,958 Peshitta verses; 1,302 remain). 1 Timothy 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5024,3 +5024,29 @@ Source checks for 1 Timothy 2:
   “her children,” and the plural conditional “they remain,” with faith,
   love, holiness and modesty. The plural offspring reading follows the
   actual form; compare the [CAL child/offspring entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=yld+N).
+
+Source checks for 1 Timothy 3:
+
+- Verses 1–3 retain the conditional desire for an elder's office, good
+  work, no blemish, one wife, watchful mind, sobriety, order, hospitality
+  and teaching. The wine, swift striking hand, humility, contentiousness
+  and money qualifications remain distinct.
+- Verses 4–7 retain the elder's own house and children, the repeated
+  guiding predicate, God's ecclesia, the recent disciple, passive
+  exaltation and Satan's judgment. The testimony clause keeps having a
+  good testimony and its source among outsiders in their own spans.
+- Verses 8–10 retain plural deacons, pure conduct, the idiomatic
+  “not double-tongued,” wine and gain prohibitions, holding the faith's
+  mystery with a pure conscience, testing beforehand and then serving.
+  “But” introduces the positive requirement after the prohibitions;
+  compare the [CAL entry for ella](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29l%29+c).
+- Verse 11 has plural women and feminine-plural “their minds,” followed
+  by faithfulness in everything and the separate slander prohibition.
+  Verse 12 returns to a singular deacon; verse 13 retains procuring a
+  good rank for themselves and boldness in the faith of Jesus Messiah.
+- Verses 14–15 retain the speaker's writing, hope, coming and possible
+  delay, the addressed person's conduct, God's house, the living God's
+  ecclesia and the pillar/foundation description of truth.
+- Verse 16 retains the mystery of this righteousness and all six linked
+  passive events: revealed in flesh, justified in spirit, seen by angels,
+  proclaimed among nations, believed in the world and taken up in glory.
