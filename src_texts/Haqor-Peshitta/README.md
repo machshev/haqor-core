@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-4, 2 John, 3 John, and Jude
-(6,939 of 7,958 Peshitta verses; 1,019 remain). Hebrews 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-5, 2 John, 3 John, and Jude
+(6,953 of 7,958 Peshitta verses; 1,005 remain). Hebrews 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5263,3 +5263,13 @@ Source checks for Hebrews 4:
 - Verse 12 links each predicate to its own source span: the word is living and fully effective, sharper than a sword with two edges, and reaches the division of soul/spirit and joints/marrow/bones before judging heart-thoughts and intentions.
 - Verse 14’s רב כומרא רבא is one great high-priest title, followed by Jesus the Messiah, God’s Son, with the ascent-to-heaven clause; the three source words are therefore grouped as “a great high priest” rather than splitting the two רב forms across roles.
 - Verse 15 retains both source negations and the subject/object roles: “we have not a high priest who is not able to feel with our weakness,” but one tested in every respect like us, apart from sin; verse 16 keeps the mercy and grace-for-help objects of approaching the throne.
+
+Source checks for Hebrews 5:
+
+- The high-priest compound is retained as “high priest” at verses 1, 5, and 10; the repeated רב + כומרא forms were checked against their actual contiguous spans rather than treating רב as an isolated title.
+- Verse 1 preserves the human origin and representative role: the priest is from humans, appointed over the things that belong to God, and is to offer both an offering and a sacrifice for sin.
+- In verse 5, דברי carries the first-person suffix (“my Son”), while ילדתכ carries the second-person suffix (“begotten you”); the appointment/quotation wording therefore keeps the one who speaks and the addressee distinct.
+- Verse 7 keeps the prayer sequence, strong crying, tears, the one able to save him from death, and the final “he was heard” as separate source-linked clauses.
+- Melchizedek is preserved as a proper name in verses 6, 10, and 11; דמותה in verses 6 and 10 is rendered with its third-person possessive (“his likeness”).
+- Verse 4 retains the reflexive “himself” before the contrast with the one called by God; verse 11 retains both “concerning him” and “concerning this Melchizedek,” the discourse object, and the object suffix in “explain it.”
+- Verses 12–14 preserve the teacher obligation, “your time in instruction,” plural first written lines of the beginning, milk/copula sequence, and mature/solid-food contrast; the relative, causal, negative, and trained-senses clauses remain linked to their actual source positions.
