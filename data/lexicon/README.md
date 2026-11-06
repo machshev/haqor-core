@@ -36,7 +36,7 @@ rules for writing an entry.
 | Field | |
 |---|---|
 | `id` | Kebab case ASCII, Haqor's own, never reused (`nephesh`, `amar`). The file is `<id>.json`. |
-| `root` | The root's consonants, sin written `שׂ` and shin `שׁ`. A noun with no verbal root gives its own consonants. |
+| `root` | The root as the database keys roots, so entries join to the words: bare consonants with no final forms, sin written `שׂ` and shin a bare `ש` (`נפש`, `מלכ`, `עשׂה`). A noun with no verbal root gives its own consonants. |
 | `homograph` | 1, 2… where two unrelated roots share consonants; left out otherwise. |
 | `status` | `draft` until the user has reviewed it, then `reviewed`. |
 | `updated` | The date of the last substantive change, `YYYY-MM-DD`. |

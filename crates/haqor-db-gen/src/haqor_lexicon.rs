@@ -357,11 +357,10 @@ fn is_date(s: &str) -> bool {
             .all(|(i, c)| i == 4 || i == 7 || c.is_ascii_digit())
 }
 
-/// Hebrew consonants, with the shin and sin dots.
+/// A root key as the database files roots: consonants, finals folded, a sin
+/// kept apart from a bare shin.
 fn is_root(s: &str) -> bool {
-    !s.is_empty()
-        && s.chars()
-            .all(|c| ('\u{05D0}'..='\u{05EA}').contains(&c) || c == '\u{05C1}' || c == '\u{05C2}')
+    is_hebrew(s) && haqor_core::data_support::fold_consonants(s) == s
 }
 
 fn is_hebrew(s: &str) -> bool {
@@ -530,7 +529,10 @@ impl Checker<'_> {
         if !is_root(&entry.root) {
             self.fault(
                 &at,
-                format_args!("root `{}` must be bare Hebrew consonants", entry.root),
+                format_args!(
+                    "root `{}` must be a root key (consonants, no finals, sin as שׂ, shin bare)",
+                    entry.root
+                ),
             );
         }
         if entry.homograph == Some(0) {
@@ -651,7 +653,7 @@ mod tests {
 
     const ENTRY: &str = r#"{
         "id": "nephesh",
-        "root": "נפשׁ",
+        "root": "נפש",
         "status": "draft",
         "updated": "2026-11-06",
         "tags": ["life"],
@@ -746,6 +748,15 @@ mod tests {
             error.contains("`Gen.2.99` is no verse of the text"),
             "{error}"
         );
+    }
+
+    #[test]
+    fn a_root_is_a_root_key() {
+        for root in ["נפשׁ", "מלך"] {
+            let json = ENTRY.replace("\"root\": \"נפש\"", &format!("\"root\": \"{root}\""));
+            let error = check(&json).unwrap_err().to_string();
+            assert!(error.contains("must be a root key"), "{root}: {error}");
+        }
     }
 
     #[test]
