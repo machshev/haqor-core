@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, 2 John, 3 John, and Jude
-(6,115 of 7,958 Peshitta verses; 1,843 remain). Ephesians 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1, 2 John, 3 John, and Jude
+(6,138 of 7,958 Peshitta verses; 1,820 remain). Ephesians 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4093,3 +4093,37 @@ Source checks for Galatians 6:
   "our Lord" in the marks clause, the body suffix, and the bearing predicate.
 - Verse 18 preserves the grace blessing, "our Lord," the hearers' spirit,
   the "my brothers" address, and Amen.
+
+Source checks for Ephesians 1:
+
+- Verses 1–3 retain the repeated Messiah names and the possessives in
+  "our Father" and "our Lord," together with the blessing and heavenly
+  setting. The divine-will genitive is rendered without adding a second
+  owner.
+- Verses 4–6 preserve choosing beforehand, foreordaining, the purpose
+  that we should be holy, and the passive praise predicate. The relative after grace
+  introduces grace being poured upon us through the Beloved.
+- Verse 7 retains redemption, the conjunction before the blood phrase,
+  and forgiveness of sins. Verse 8 renders the relative as "which abounded
+  in us," retaining the in-all-wisdom and understanding complements.
+- Verses 9–12 keep making the mystery known, the previously determined
+  action, renewal anew in the Messiah, heaven and earth, election, and first
+  hope. Verse 10 explicitly retains the d-linked content/purpose clause,
+  "that everything may be renewed anew." Compare
+  [Younansardaroud, §§4.3, 5.5, and 14.6](https://d-nb.info/1184881278/34).
+  The sentence joins across verses 9–10 and 11–12 remain continuous.
+- Verse 13 preserves "your life," hearing, belief, passive sealing, and
+  the Spirit that was promised. Verse 14 renders the redemption phrase
+  as a contextual temporal goal, "until the redemption," with the living
+  participants and the distinct praise/honor wording retained.
+- Verses 15–17 preserve the faith/love report and thanksgiving as a
+  continuing prayer, with "our Lord" and the knowledge-of-him complement.
+  Verse 18 makes the eyes of the hearers' hearts the subject of the
+  enlightenment clause rather than adding a second divine action verb.
+- Verses 18–19 retain both what-is clauses, the calling/inheritance
+  possessives, the holy ones, and the distinct power/strength nouns with
+  the believing group, with the power "in us." Verse 20 preserves both causative predicates and
+  renders the resurrection idiom as "from among the dead."
+- Verses 21–23 retain the repeated above relation, the clause about the
+  name that is named, the present/coming contrast, ecclesia, and the body/fullness/filling
+  relations, with their actual source pronouns and participants.
