@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-15, 2 John, 3 John, and Jude
-(5,245 of 7,958 Peshitta verses; 2,713 remain). Romans 16 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 2 John, 3 John, and Jude
+(5,272 of 7,958 Peshitta verses; 2,686 remain). 1 Corinthians 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -45,6 +45,8 @@ subjects, suffixes, idioms, and differences from familiar Greek numbering.
 Decode numeric morphology with `src_texts/SEDRA/SEDRA3.README.TXT`; a lemma
 gloss is not an inflected translation. Check causal particles, relative
 prefixes, and copular pronouns explicitly in the final linked text.
+Use the generator's established “ecclesia/ecclesias” terminology for
+congregations so the reviewed source and runtime text match exactly.
 Work in book and chapter order.
 
 Keep working context limited to one chapter: export its records to a file,
@@ -2204,3 +2206,50 @@ Source checks for Romans 15:
 All 33 verses and 412 source words received source-to-English and running-
 English review. All four גיר occurrences were checked individually in their
 final English constructions.
+
+Source checks for Romans 16:
+
+- Romans 16:1-4 preserves the sister/minister and church relations, the
+  receiving/support purpose, assistance to many and to Paul himself,
+  Priscilla and Aquila's plural service, their necks and Paul's life, and
+  the contrast between Paul's thanks and the Gentile churches' thanks.
+- Romans 16:5-9 keeps the church in their house, Epaenetus's first-fruits
+  relation to Achaia, Mary's work, and the distinct kinship, captivity,
+  beloved and service relations. Urbanus's singular service is not confused
+  with the plural description of Priscilla and Aquila.
+- Romans 16:7 uses “Junia” following the supplied Murdock reference and
+  source יוניא; SEDRA's alternate English gloss “Junias” does not decide
+  historical gender. “My kinsfolk” adds no personal gender inference.
+  וידיעין אנון is present “and are known,” distinct from past הוו in the
+  captivity and earlier-in-Messiah clauses. Local groups preserve that
+  tense distinction and the “among the apostles” relation.
+- Romans 16:10-15 preserves the named companions, household owners,
+  repeated workers and separate Persis clause, Rufus's mother relation,
+  Nereus's sister, and brothers/saints with the named groups. The explicit
+  household names each supply one owner, not duplicate proleptic owners.
+- Romans 16:16 attaches “all” to the churches, not to the addressees.
+  Romans 16:17 renders לבר מן as the local idiom “contrary to” the learned
+  teaching; it does not require two independent English prepositions.
+  Division/stumbling actors and the avoidance command remain distinct.
+- Romans 16:18 retains causal גיר as “For,” negated service of our Lord
+  versus their belly, and the speech/blessings/deception/hearts relations.
+- Romans 16:19-23 preserves obedience and its addressees, wise/good versus
+  guileless/evil, the peace/quickness/feet statement and separate grace
+  blessing. The anticipatory object suffix and Satan form one object.
+  Timothy's group, Tertius as letter writer, Gaius as host, Erastus's city
+  office and the other brother retain their speakers and relationships.
+- Romans 16:24-26 follows this dataset's doxology layout: mystery hidden
+  and revealed, prophetic writings, the eternal God's command, the nations
+  and faith's obedience, the one who alone is wise, Jesus Messiah mediation
+  and glory. ובפוקדנה דאלהא דלעלם is one owner relation, “by the command of
+  the eternal God.” אתידע stays passive “is made known”; God is not made
+  a new active subject by misreading the genitive or proleptic suffix.
+  Romans 16:27 remains the separate final grace blessing.
+
+All 27 verses and 323 source words received source-to-English and running
+English review. The single גיר occurrence was checked in its final causal
+construction.
+
+Romans 16 uses the established “ecclesia/ecclesias” vocabulary in the five
+congregation spans. The generator already normalizes “church/churches” to
+these terms; the tracked wording matches that runtime convention.
