@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-10, 2 John, 3 John, and Jude
-(5,509 of 7,958 Peshitta verses; 2,449 remain). 1 Corinthians 11 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-11, 2 John, 3 John, and Jude
+(5,543 of 7,958 Peshitta verses; 2,415 remain). 1 Corinthians 12 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2727,3 +2727,62 @@ Source checks for 1 Corinthians 10:
 All 33 verses and 420 source words received source-to-English and running
 English review. The five גיר, nine דין, two הכיל and one מכיל occurrences
 were checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 11:
+
+- Verses 1-3 preserve imitation of Paul as he imitates Messiah, both
+  remembering Paul and holding the delivered precepts, and all three
+  head relationships. The suffixes anticipating explicit possessors do
+  not introduce another owner. Man and woman remain the source terms;
+  the translation does not resolve each head reference into an
+  unexpressed husband or another named person.
+- Verses 4-7 retain praying or prophesying, covered versus uncovered
+  heads, dishonoring one's head, and the distinct cutting and shaving
+  expressions. The causal explanation remains explicit. Man is called
+  God's likeness and glory, retaining both nouns, while woman is called
+  man's glory.
+- Verses 8-12 distinguish origin from man or woman, creation for the
+  other, and the mutual not-without statements in our Lord. Verse 10
+  says authority on her head because of angels; Murdock's bracketed
+  supplement "mark" is not an additional source word. Verse 12 retains
+  woman from man, man through woman, and everything from God.
+- Verses 13-16 retain judgment among the addressees, nature teaching,
+  the long-hair comparisons, and the woman's hair given to her as a
+  covering. The ecclesia of God in verse 16 is singular in this source.
+- Verses 17-19 retain the refusal to commend, progress versus descent
+  into deterioration, divisions heard of among those assembling, and
+  believing the report in part. The future necessity of contentions
+  and the approved people becoming known remain distinct from an
+  assertion that the contentions already exist.
+- Verse 20 has the day of our Lord and both eating and drinking. It is
+  not replaced with the familiar Greek wording about the Lord's supper,
+  and the day is not identified with a particular weekday. Verses 21-22
+  retain each person's supper beforehand, the hungry and drunken people,
+  houses for eating and drinking, despising God's ecclesia as the object,
+  and shaming those who have nothing. "In this" qualifies the final
+  refusal to praise.
+- Verses 23-25 distinguish Paul's receiving and handing on from Jesus
+  being handed over. They retain taking bread, blessing, breaking,
+  saying, taking and eating, the body broken for the addressees' sake,
+  and doing thus in remembrance of Jesus. The cup is given after they
+  have eaten supper and is the new covenant in his blood. Both commands
+  to do thus are exhortations, not reports of past or future behavior.
+- Verse 26 uses the source's commemorating or remembering of our Lord's
+  death, rather than substituting the familiar "proclaim." Bread, cup,
+  eating, drinking and the limit until his coming remain explicit.
+  Verse 27 preserves the source order blood and then body, each with
+  the Lord as owner, and the unworthy participant's guilt.
+- Verses 28-30 retain examining oneself, then eating and drinking,
+  both actual eating/drinking predicates in verse 29, condemnation upon
+  oneself and not discerning the Lord's body. Both "many" quantities
+  and the distinct weak, sick and sleeping descriptions remain.
+- Verses 31-34 keep the first-person plural conditional about judging
+  ourselves, being judged by our Lord, passive discipline, and the
+  purpose of not being condemned with the world. The gathering command
+  is to wait for one another. A hungry person is to eat at home so that
+  the assembly is not for condemnation; directions about the rest await
+  Paul's coming.
+
+All 34 verses and 471 source words received source-to-English and running
+English review. The twelve גיר, eleven דין, two הכיל and one מכיל
+occurrences were checked individually against the final English clauses.
