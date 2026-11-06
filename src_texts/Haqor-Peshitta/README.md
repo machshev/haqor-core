@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-3, 2 John, 3 John, and Jude
-(6,451 of 7,958 Peshitta verses; 1,507 remain). Colossians 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 2 John, 3 John, and Jude
+(6,469 of 7,958 Peshitta verses; 1,489 remain). 1 Thessalonians 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4641,3 +4641,47 @@ Source checks for Colossians 3:
   Receipt of recompense as an inheritance, service to Lord Messiah, the
   wrongdoer's corresponding recompense, and the negative face-taking
   idiom rendered as no partiality all remain.
+
+Source checks for Colossians 4:
+
+- Verses 1–4 retain masters, equality and justice toward their servants,
+  knowledge of their own master in heaven, continuing prayer, watchfulness
+  and thanksgiving. The request for prayer retains God opening a door for
+  speech, speaking Messiah's mystery, the speaker's being bound because
+  of it, and revealing and speaking it as he ought. The speaking infinitive
+  stays with source positions 8–10 in verse 3.
+- Verses 5–6 preserve wise conduct toward outsiders, redeeming the
+  opportunity, speech always with grace and the salt-seasoning comparison.
+  The following knowledge clause retains the each-person object and the
+  give-an-answer expression in a single span where their English order
+  differs from the source order. Its opening remains a coordinated
+  exhortation to know.
+- Verses 7–9 preserve Tychicus, the speaker's circumstances, beloved
+  brother, faithful minister and our companion in the Lord. The discourse
+  particle is explicit as Now. The apposition is made a natural nominal
+  sentence with the same Tychicus subject. The sending purpose retains
+  his learning the recipients' circumstances and comforting their hearts,
+  followed by Onesimus as a faithful and beloved brother from among them.
+  The final plural subject refers to both messengers making known what
+  concerns the speakers.
+- Verses 10–11 retain Aristarchus as a fellow captive, Mark as Barnabas's
+  cousin, instructions about welcoming Mark if he comes, and Jesus called
+  Justus. The son-of-an-uncle kinship compound stays together in its own
+  span; the possessive anticipates the explicit Barnabas name. The Mark
+  instructions are parenthetical so that the greeting list continues to
+  Jesus. The circumcision group, their unique help in God's kingdom and
+  their comfort to the speaker remain.
+- Verses 12–14 preserve Epaphras from among the recipients, servant of
+  Messiah, continual labor in prayer, their standing mature and complete
+  in God's will, the speaker's testimony to his zeal, Laodicea and
+  Hierapolis. Luke remains physician and our beloved, followed by Demas.
+  The greetings put each subject and greeting predicate in one coherent
+  span where natural English reverses the source's verb-first order.
+- Verses 15–17 retain the Laodicean brothers, Nymphas and the ecclesia
+  in his house; the source's house suffix is masculine singular. Both
+  directions of letter-reading remain, including the Laodicean letter
+  and the explicit recipients' own reading. Archippus is addressed about
+  the ministry received in our Lord and its fulfillment.
+- Verse 18 retains this greeting, the speaker's own hand, Paul as its
+  named author, the remembrance of his bonds, grace with the recipients
+  and Amen. The signature is rendered as a complete English sentence.
