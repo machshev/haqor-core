@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-10, 2 John, 3 John, and Jude
-(5,898 of 7,958 Peshitta verses; 2,060 remain). 2 Corinthians 11 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-11, 2 John, 3 John, and Jude
+(5,931 of 7,958 Peshitta verses; 2,027 remain). 2 Corinthians 12 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3739,3 +3739,80 @@ Source checks for 2 Corinthians 10:
   for the delayed giving predicate and purpose in verse 8, and six for the
   imperative, its relative subject, and the fronted object in verse 11.
   All other linked groups contain at most four source positions.
+
+Source checks for 2 Corinthians 11:
+
+- All 33 verses and 466 source words received source-to-English and running
+  English review, peer repair, and an independent final chapter audit.
+  The nine causal `gir` and three discourse/contrast `din` were checked in
+  their clauses. The two `gir` in verse 2 both remain causal; neither is
+  swallowed into the prepositional phrase about jealousy over you.
+- Verse 1 retains the wish to be borne with a little, the purpose of
+  speaking foolishly, and the separate present "you do bear with me."
+  Verse 2 preserves one husband, a pure virgin, and the first-person purpose
+  of presenting the recipients to the Messiah. Verse 3 has plural minds
+  becoming corrupted and one noun for simplicity toward the Messiah; the
+  preceding source word is "from," and no second purity noun is added.
+- Verse 4 keeps the visiting speaker as the active proclaimer, the separate
+  alternatives of another Jesus, spirit, and gospel, the earlier negative
+  proclamation/reception clauses, and the conditional persuasion. "Readily"
+  renders the closing adverb without endorsing the rival message. Verse 5
+  retains "in nothing" and the greatly excelling apostles. Verse 6 has my
+  speech and my knowledge, followed by plural "we have been made manifest."
+- Verse 7 treats the opening as a rhetorical question with one emphatic
+  wrongdoing predicate, followed by humbling myself, your being exalted,
+  and the finite past proclamation of God's gospel freely. Verse 8 retains
+  other ecclesias, plundering, plural payments, and serving you.
+- Verse 9 has the brothers supplying my need. English uses the equivalent
+  passive "my need was supplied by the brothers" so that the following
+  relative clause clearly describes the brothers; the Syriac supplying verb
+  is active, with those same brothers as agent. The plural Macedonian
+  gentilic is retained. "In everything" belongs to guarding myself, not
+  to the brothers' supplying clause. Past "I guarded" and present "I guard"
+  remain distinct, with the purpose of not burdening the recipients.
+- Verses 10-11 preserve the Messiah's truth in me, the boasting not being
+  annulled in me in Achaia's regions, and both questions about why and love,
+  followed by God knowing. Verse 12 keeps both occasion nouns and the
+  single ownership by those seeking an occasion; they may be found like us.
+  Verses 13-15 retain these false apostles, deceitful workers, their
+  disguising themselves, Satan's disguising himself as an angel of light,
+  and his servants' actual disguising predicate. Their future end is
+  according to their deeds; no extra actor is introduced by a copula.
+- Verse 16 renders the rebuttal about being thought foolish as the negative
+  appeal "let no one," following Murdock's contextual reading. It retains
+  the imperative "receive me," the hypothetical comparison with a fool,
+  and the purpose of my boasting a little. The understood copula in that
+  comparison is supplied in English. Verse 17 retains both speaking
+  predicates and the negative cleft concerning speaking in our Lord.
+- Verses 18-20 distinguish the many boasting, my future boasting, the
+  recipients listening to those lacking understanding, and their own
+  wisdom. All five independent recipient/relative branches remain:
+  enslaving you, devouring you, taking from you, exalting himself over you,
+  and striking you on your plural faces. Verse 21 has both first-person
+  speaking predicates, plural weakness, and the anyone/I comparison.
+- Verse 22 preserves all three conditional identities and all three "so
+  am I also" responses. Verse 23 has the initial "I am more than they"
+  before labor, followed by three further comparative expressions for
+  labor, blows, and chains. The plural deaths expression is rendered
+  figuratively as dangers of death, with "many times" retained.
+- Verse 24 renders the repeated forty distributively: five occasions,
+  forty blows less one each time. Verse 25 retains three rod-beatings,
+  one stoning, three shipwrecks, day before night, and the separate
+  shipless stay in the sea. Both "I was" predicates remain. Verse 26 keeps
+  all eight peril categories and both first-person past predicates for
+  cities and wilderness. Verse 27 retains both "much" qualifiers and
+  each condition, including hunger and thirst as separate nouns.
+- Verse 28 distinguishes the singular daily gathering/thronging upon me
+  from care on behalf of all the ecclesias. The faces expression is an
+  idiom for that concern. Verse 29 has two questions and both first-person
+  negative responses. Verse 30's vocalised `wale` means fitting/proper;
+  its surface resemblance to "and not" does not license a negative.
+- Verse 31 has one knowing God, the Father of our Lord Jesus the Messiah,
+  blessed forever and ever, and the explicit "I do not lie." Verse 32 keeps
+  the army chief of Aretas the king, his guarding the Damascenes' city, and
+  the purpose of seizing me. Verse 33 keeps the window, basket, wall,
+  their lowering me, my escape, and the singular possessor's plural hands.
+- Only verse 24 uses a five-position group, to keep the distributive
+  numeral, subtraction, and receiving predicate readable together. All
+  other linked groups have at most four positions. Every source position
+  appears exactly once in ascending order, with no unlinked lexical text.
