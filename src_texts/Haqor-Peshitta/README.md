@@ -5150,12 +5150,21 @@ Source checks for 2 Timothy 1:
 
 Source checks for 2 Timothy 2:
 
-- Verse 2 keeps the two relative clauses distinct: the things heard from Paul are committed to believing men, and those men are the ones able to teach others.
-- Verses 3–6 preserve the source imagery of service, lawful competition, and the ploughman; `פלחא` is rendered as soldier only in the explicit comparison, while the surrounding verbal forms retain service/labor senses.
-- Verses 11–13 preserve the repeated conditional structure and the contrast between denying him and his own faithfulness; the suffixes in `עמה`, `בה`, and `בנפשה` are reflected as “with him,” “in him,” and “himself.”
-- Verse 19 follows the Syriac order of the seal: the foundation stands, the Lord knows his own, and those calling on the Lord’s name depart from unrighteousness.
-- Verse 20 distinguishes the source’s vessel materials (gold, silver, wood, pottery) and its paired honor/shame purposes rather than collapsing them into a generic household image.
-- Verse 26 retains the source’s capture clause and final `לצבינה` as “according to his will”; the captured persons are rescued from Satan’s snare after coming to repentance and knowledge of truth.
+- Verse 2 keeps the two relative clauses distinct: the things heard from Paul
+  are committed to believing men, who are able to teach others.
+- Verses 3–6 retain the service, lawful competition and ploughman imagery;
+  verses 11–13 retain the repeated conditions and personal suffixes.
+- The ethpeal form of שאל in verses 16 and 23 means “shun/avoid” in this
+  context, as in the source checks for Acts 20. The exported lemma's “ask”
+  gloss does not establish the sense of this derived form.
+- Verse 17 keeps the copula and connective with the identification of
+  Hymenaeus. Verse 20 keeps gold, only, or and silver together in their
+  source-owned spans, followed by the wood and pottery contrast.
+- Verse 25 retains the disputants, humility, God giving repentance and
+  knowing truth in their actual clauses. The possibility particle is
+  “perhaps”; “lest” would reverse the sense of the positive possibility.
+- Verse 26 keeps the snare and Satan relation distinct from the locative
+  clause, “in which,” and retains capture and the final will phrase.
 
 Source checks for 2 Timothy 3:
 
