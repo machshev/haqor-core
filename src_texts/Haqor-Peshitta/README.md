@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-12, 2 John, 3 John, and Jude
-(5,952 of 7,958 Peshitta verses; 2,006 remain). 2 Corinthians 13 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, 2 John, 3 John, and Jude
+(5,966 of 7,958 Peshitta verses; 1,992 remain). Galatians 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3881,3 +3881,16 @@ Source checks for 2 Corinthians 12:
 - Only verse 18 uses a five-position group, for Titus's question with its
   delayed subject and indefinite quantity. All other linked groups contain
   at most four positions; no lexical text is left unlinked.
+
+Source checks for 2 Corinthians 13:
+
+- Verse 1 retains the source's third-time wording and renders the mouth expression as "on the testimony of two or three witnesses."
+- Verse 2 renders the two temporal statements as Paul's prior warning and renewed advance warning; the source's absent/far-away writing and sinful/rest groups are retained.
+- Verse 3 keeps the complementizer introducing the Messiah's speech through Paul and the repeated claim that he is not weak but strong among the Corinthians.
+- Verse 4 groups the postpositive causal particle with its opening clause and preserves the contrast between crucifixion in weakness and life by God's power: Paul and his co-workers share weakness and life with the Messiah, by God's power among the Corinthians.
+- Verse 5 keeps both examination commands, the explicit copula in "Jesus the Messiah is in you," and the conditional "if not" clause.
+- Verse 7 preserves the causal request that no evil thing be among them, the purpose connector leading to the proof appearing, the proof belonging to Paul and his co-workers, and the contrast with their doing good.
+- Verse 8 retains both the inability to act against truth and the positive action for truth.
+- Verse 9 preserves the contrast between Paul's weakness and their strength, followed by the prayer for their completion/perfection.
+- Verses 10–11 retain the absent-writing purpose, authority for edification rather than destruction, and the closing imperatives and God-of-love/peace blessing.
+- Verses 12–14 retain the holy kiss, the holy ones as the subject who salute, and the three-part final benediction with Amen.
