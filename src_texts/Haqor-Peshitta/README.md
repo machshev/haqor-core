@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-5, 2 John, 3 John, and Jude
-(6,246 of 7,958 Peshitta verses; 1,712 remain). Ephesians 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, 2 John, 3 John, and Jude
+(6,270 of 7,958 Peshitta verses; 1,688 remain). Philippians 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4266,3 +4266,39 @@ Source checks for Ephesians 5:
 - Verses 31–33 preserve father and mother, clinging to the wife, the
   explicit two becoming one flesh, the great mystery, the Messiah and
   his ecclesia, each husband's love, and the wife's fear of her husband.
+
+Source checks for Ephesians 6:
+
+- Verses 1–4 retain obedience to fathers in our Lord, the first
+  commandment with a promise, father and mother, well-being and long life,
+  the prohibition on provoking children, and raising them in our Lord's
+  instruction and teaching.
+- Verses 5–8 preserve masters according to the flesh, fear and trembling,
+  sincerity, eye-service and pleasing people, Messiah's servants, God's
+  will, whole-self service in love, recompense, and servant/free status.
+- Verse 9 retains the actual command to forgive the servants' wrongdoing,
+  the masters' own master in heaven, and the face-acceptance idiom as
+  partiality. This is not replaced with a familiar Greek-based reading.
+- Verses 10–12 retain our Lord's strength and power, God's armor, the
+  accuser's singular trick, and the source's second-person plural in
+  "your struggle." The flesh/blood, principalities, rulers, dark-world
+  possessors, and evil-spirit contrasts all remain, ending under heaven.
+- Verses 13–17 preserve preparation and standing, the complete armor,
+  truth, righteousness, gospel readiness, peace, faith, flaming darts,
+  deliverance, and the Spirit's sword as God's word. "Evil one" is a
+  substantive reading of the actual adjective; verse 13 adds no day noun.
+- Verses 18–20 keep plural prayers and petitions, prayer in the Spirit,
+  watchfulness, constant prayer, intercession, all the holy ones, and the
+  speaker's request. Verse 19 retains "to me," the opening of his mouth,
+  and boldly proclaiming the gospel's mystery. The eye/open expression
+  belongs to the boldness idiom rather than the preceding mouth phrase;
+  the [Syriac dictionary](https://www.syriacdictionary.net/index.cgi?langsel=en&word=%DC%A5%DC%9D%DC%A2%DC%90)
+  lists the exact expression as "openly, boldly." Verse 20 preserves
+  ambassadorship, chains, bold speech, and speaking as is right.
+- Verses 21–22 retain Tychicus as the subject who informs the recipients,
+  his beloved-brother and faithful-minister descriptions, our Lord,
+  sending him for this purpose, knowledge of the speaker's circumstances,
+  and encouragement of their hearts. The apposition is rendered as a
+  complete English copular sentence, continuing into the relative clause.
+- Verses 23–24 preserve "our brothers," peace, love with faith, God the
+  Father, our Lord Jesus Messiah, all who love him, incorruption, and Amen.
