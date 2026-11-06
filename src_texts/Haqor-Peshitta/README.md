@@ -1899,6 +1899,29 @@ Source checks for Romans 6:
   connector's function. Romans 6:21-23 preserves fruit/end, death versus
   eternal life, the payment/gift contrast and our Lord Jesus Messiah.
 
-Romans 7 source-linked review notes
+Source checks for Romans 7:
 
-Reviewed all 25 verses against the exported Syriac forms, vocalisation, morphology, suffixes, gloss alternatives, and Murdock context. Preserved source order and explicit negations, conjunctions, subjects, objects, and possessive suffixes. Key readings include the law's dominion while a person lives (7:1), release from the law through Messiah's body (7:4), no-longer status in 7:17 and 7:20, and the final contrast between mind and flesh in 7:25. The repeated law/sin contrasts and the commandment's role in producing desire/death were checked against the actual Syriac positions rather than memorized Greek wording.
+- Romans 7:1-3 keeps the law's dominion, the living/dead conditions and the
+  woman/husband roles distinct. The last condition in 7:3 says that she may
+  be joined to another man; it does not say she becomes another man.
+- Romans 7:4 keeps the relative “who” and being joined to the one raised
+  from among the dead. Romans 7:5 preserves the causal connector, the law,
+  passions and bearing fruit. Romans 7:6 links released/from/law to their
+  actual words and renders the deictic reference neutrally as “to that
+  which held us,” consistent with the law context and Murdock, without
+  inventing a personal male actor from grammatical masculine gender.
+- Romans 7:7-8 retains the knowledge/negation contrast, desire, commandment,
+  occasion and sin as distinct source elements. The suffixed recipient in
+  finding an occasion is retained. The accomplishment predicates are read
+  in their actual desire/death contexts.
+- Romans 7:9-16 preserves the came-to-life/died contrast, commandment, the
+  finding predicate and “to me,” opportunity and its suffix, the good/death
+  question, sin's role, fleshly/sold status, knowing, willing and doing.
+  The final demonstrative and doing predicate are rendered as a grammatical
+  local construction rather than dropping the first-person contrast.
+- Romans 7:17-20 preserves the I/sin-in-me distinction and the exact negative
+  scopes around dwelling, good, willingness, ability and doing. Necessary
+  English copulas and local constructions clarify the source order without
+  adding another actor. Romans 7:21-25 retains the conscience/law relation,
+  members and mind, captivity, the deliverance question, thanksgiving and
+  the final mind/flesh service contrast.
