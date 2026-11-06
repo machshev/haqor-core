@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-4, 2 John, 3 John, and Jude
-(4,956 of 7,958 Peshitta verses; 3,002 remain). Romans 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-5, 2 John, 3 John, and Jude
+(4,977 of 7,958 Peshitta verses; 2,981 remain). Romans 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1843,3 +1843,31 @@ Source checks for Romans 4:
   “to us.” The raising of our Lord Jesus Messiah from the dead remains
   explicit. Romans 4:25 preserves the passive delivery, our sins and the
   raising/justification parallel.
+
+Source checks for Romans 5:
+
+- Romans 5:1-2 retains justification by faith, peace, access to this grace
+  and the hope of God's glory. The possessive-plus-genitive construction in
+  “God's glory” expresses one ownership relation.
+- Romans 5:3 renders the contiguous object/predicate construction as
+  “perfects patience in us.” Romans 5:4 supplies the English elliptical
+  progression predicates in “endurance produces proof” and “proof produces
+  hope”; these clarify the source's nominal progression without inventing
+  separate Syriac verbs. Romans 5:5 renders the negative and shame predicate
+  as “does not bring shame,” without inserting an unexpressed object, and
+  retains the love of God, our hearts and the given Spirit of holiness.
+- Romans 5:8 keeps God's showing his love, our being sinners and the
+  Messiah's death for us explicit. Romans 5:9 renders ובה contextually as
+  “by him,” following Murdock's Syriac rendering. Its masculine suffix alone
+  does not decide between the Messiah and the nearby blood; “by it” would
+  commit to a different antecedent without sufficient contextual evidence.
+- Romans 5:10-14 retains reconciliation, the Son's death and life, the
+  source's death/sin sequence, the negatives about law and sin, and the
+  Adam/type/coming contrast. The source's subjects and prepositional
+  arguments are kept with their actual linked words.
+- Romans 5:15-17 preserves fault versus gift, the comparative and
+  conditional particles, the repeated one/many contrasts, grace, gift and
+  righteousness. Romans 5:18-19 preserves condemnation versus
+  justification and disobedience versus obedience. Romans 5:20-21 retains
+  the law/sin increase and the parallel reign of sin in death and grace in
+  righteousness unto eternal life through our Lord Jesus Messiah.
