@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, 2 John, 3 John, and Jude
-(6,270 of 7,958 Peshitta verses; 1,688 remain). Philippians 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1, 2 John, 3 John, and Jude
+(6,300 of 7,958 Peshitta verses; 1,658 remain). Philippians 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4302,3 +4302,46 @@ Source checks for Ephesians 6:
   complete English copular sentence, continuing into the relative clause.
 - Verses 23–24 preserve "our brothers," peace, love with faith, God the
   Father, our Lord Jesus Messiah, all who love him, incorruption, and Amen.
+
+Source checks for Philippians 1:
+
+- Verses 1–2 retain Paul and Timothy, Jesus Messiah's servants, all the
+  holy ones at Philippi, elders and deacons, grace and peace, God our
+  Father, and our Lord Jesus Messiah.
+- Verses 3–6 preserve thanksgiving, remembrance, all the speaker's
+  prayers, joy, gospel fellowship from the first day until now, confidence,
+  the good work begun in the recipients, and its completion through the
+  day of our Lord Jesus Messiah. The English prayer and cause clauses
+  form complete sentences.
+- Verse 7 renders the compound with its first-person suffix as
+  "my defense." Verse 16 uses the same compound as "defense," without
+  adding "spiritual." The [CAL compound entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mpq%40brwx%29+N)
+  records its apology/defense sense. Verse 7 also preserves heart, bonds,
+  the gospel's truth, and participation in grace.
+- Verses 8–11 retain God's witness, the Messiah's mercies, increasing
+  love, knowledge and spiritual understanding, discernment, purity,
+  freedom from offense, righteous fruit, and praise and glory to God.
+- Verses 12–18 retain the gospel's advance, bonds, the whole praetorium,
+  everyone else, the brothers' confidence, and "all the more" boldness.
+  Verse 15 makes Messiah the object of proclamation, as in verse 17;
+  goodwill and love describe the contrasting motivation. The insincere
+  proclamation, added affliction, pretense/truth contrast, and rejoicing
+  all remain.
+- Verses 19–23 keep the causal "For," the speaker's life, recipients'
+  prayers, the Spirit's gift, hope and expectation, freedom from shame,
+  open proclamation, magnification in the body, and life/death contrast.
+  This life of the flesh, fruitful labor, and uncertainty about choosing
+  for oneself remain;
+  verse 23 has the explicit cardinal "two," departure, being with the
+  Messiah, and benefit to the speaker.
+- Verses 24–26 retain remaining in "my body," the matter/business on
+  the recipients' behalf urging the speaker, abiding, their joy and
+  faith's progress, another visit, and rejoicing in Jesus Messiah alone.
+  Verse 24's postposed subject and predicate are grouped for natural
+  English order; no comparative necessity is supplied.
+- Verses 27–30 retain worthy conduct, coming/seeing and absence/hearing,
+  the repeated one-spirit/one-soul/united-striving expressions, gospel
+  faith, being in no way shaken, and those who oppose "us." The sign is linked to
+  its own source word, followed by their destruction and the recipients'
+  life. God's grant includes both belief and suffering for the Messiah,
+  continuing into the conflict seen and now heard in the speaker.
