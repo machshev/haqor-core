@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-9, 2 John, 3 John, and Jude
-(5,476 of 7,958 Peshitta verses; 2,482 remain). 1 Corinthians 10 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-10, 2 John, 3 John, and Jude
+(5,509 of 7,958 Peshitta verses; 2,449 remain). 1 Corinthians 11 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2668,3 +2668,62 @@ Source checks for 1 Corinthians 9:
 All 27 verses and 422 source words received source-to-English and running
 English review. The seven גיר, six דין and two הכיל occurrences were
 checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 10:
+
+- Verses 1-4 keep every “all,” passing through the sea, baptism through
+  Moses in cloud and sea, and the same spiritual food and drink. The
+  second drinking clause has its own causal גיר. The accompanying rock
+  and Messiah form one identification; copular pronouns do not create
+  another actor.
+- Verse 5 says God was not pleased with many of the people; it does not
+  say their number or multitude displeased him. Verses 6-10 retain the
+  example for us, not desiring evil, the quoted eating/drinking/rising,
+  twenty-three thousand in one day, tempting Messiah, serpents destroying
+  them and the destroyer. The exhortation in verse 10 addresses “you,”
+  whereas the preceding “let us” clauses retain first-person plurality.
+- Verse 11 keeps all the events happening to them as an example for us,
+  and writing for our instruction. The final source has one singular
+  end of plural ages; the suffix anticipates the explicit ages genitive,
+  rather than adding “their” as a separate owner.
+- Verses 12-13 preserve standing versus falling, the human trial and
+  faithful God, no testing beyond the addressees' ability, the second
+  explicit trial noun, an exit and ability to endure. The initial מכיל
+  is logical “therefore” here. The exit is not detached from its actual
+  trial or its endurance purpose.
+- Verses 14-16 retain fleeing idolatry, speaking to wise people and their
+  judging, the thanksgiving cup and blessed/broken elements, and both
+  rhetorical communion questions. Blood and body each belong to Messiah
+  once; no extra owner is made from their proleptic suffixes.
+- Verse 17 predicates that the bread is one, rather than leaving the
+  dangling phrase “one bread is.” Both all-of-us clauses, one body and
+  the repeated one bread remain explicit, with causal “for we all.”
+  Verse 18 makes the sacrifice-eaters the subject of the altar question,
+  without inserting a second “they” actor.
+- Verses 19-22 retain both idol/sacrifice questions and their explicit
+  “No,” both actual sacrifice verbs, demons rather than God as recipients,
+  the refusal of demonic partnership, both cup/table prohibitions and
+  our Lord's ownership. Provoking jealousy and being stronger than the
+  Lord are rhetorical questions; no dependent “lest” clause or normative
+  demand to be stronger replaces them.
+- Verses 23-28 keep both lawful statements and their distinct profit and
+  building qualifications, own/fellow interests, the meat-market, and
+  eating without inquiry about conscience. The earth belongs to the Lord
+  in the earth's fullness. The invitation and willingness conditions,
+  everything set before the addressees, the identified sacrificial meat,
+  and not eating for the informant/conscience remain explicit.
+- Verses 29-30 clarify the informant's conscience rather than the
+  addressees' own, then retain the complete causal liberty question.
+  The conscience noun is singular and its “others” possessor is plural.
+  Paul partakes by grace, is reproached and gives thanks; repeated
+  analytic pronouns do not add speakers or predicates.
+- Verses 31-33 retain eating, drinking or doing anything as parallel
+  conditions, followed by the command to do everything for God's glory.
+  The exhortative copula/participle is not changed into a claim that the
+  addressees already do everything for that glory. Jews, Gentiles and
+  God's ecclesia remain distinct recipients of the no-offense command.
+  Paul seeks not his own benefit but that of many, that they may live.
+
+All 33 verses and 420 source words received source-to-English and running
+English review. The five גיר, nine דין, two הכיל and one מכיל occurrences
+were checked individually against the final English clauses.
