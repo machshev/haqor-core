@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-11, 2 John, 3 John, and Jude
-(5,931 of 7,958 Peshitta verses; 2,027 remain). 2 Corinthians 12 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-12, 2 John, 3 John, and Jude
+(5,952 of 7,958 Peshitta verses; 2,006 remain). 2 Corinthians 13 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3816,3 +3816,68 @@ Source checks for 2 Corinthians 11:
   numeral, subtraction, and receiving predicate readable together. All
   other linked groups have at most four positions. Every source position
   appears exactly once in ascending order, with no unlinked lexical text.
+
+Source checks for 2 Corinthians 12:
+
+- All 21 verses and 369 source words received source-to-English and running
+  English review, peer repair, and an independent final chapter audit.
+  The nine causal `gir`, five discourse/contrast `din`, and the inferential
+  `hakil` were checked in their clauses, alongside the causal and purpose
+  uses of `metul`. Every source position occurs exactly once in order.
+- Verse 1 preserves positive `wale`, "is fitting," and the separate
+  "but not profitable." The first-person dative is absorbed in "I proceed"
+  without adding a beneficiary; `gir` is causal. Visions and revelations
+  remain plural, with one owner, our Lord.
+- Verses 2-4 retain present "I know," the fourteen-year date of the
+  catching-up event, both repeated body/without-body alternatives, both
+  God-knows formulas, and the same man across the parenthesis. Punctuation
+  places the temporal phrase with the catching-up assertion. The plural-form
+  `shamaya` uses conventional English "third heaven." Verse 4's "who"
+  continues the man in verse 3. Both inexpressible words and the prohibition
+  on a person's uttering them remain; the English relative expresses the
+  one object resumed by the final Syriac pronoun.
+- Verse 5 has plural infirmities without an explicit "my" suffix, unlike
+  verse 9. Verse 6 retains both causal particles, the conditional wish to
+  boast, not being a fool, the truth cleft, and "I refrain." The last
+  clauses concern another person's seeing in me and hearing from me;
+  the first-person enclitic on refraining adds no object "him."
+- Verse 7 preserves both prevention clauses, read with the speaker as
+  their understood subject in the context of "to me," "my flesh," and
+  oppression of me. The giving remains passive; thorn, flesh, messenger,
+  Satan, and oppression remain explicit. Verse 8 has three requests to
+  my Lord, and the requested departure is of it from me, not of the Lord.
+- Verse 9 marks the quotation boundary: my grace and my power belong to
+  the replying Lord, followed by Paul's glad boasting in my infirmities.
+  "For you" and "therefore" remain explicit. The Messiah is the single
+  owner of the power that may rest upon me. Verse 10 retains all five
+  hardship categories, including imprisonment, the Messiah-sake face idiom,
+  and causal "For when I am weak, then I am strong."
+- Verse 11 has you compelling me, your past obligation to bear witness
+  for me, inferiority in nothing to the greatly excelling apostles, and
+  "even if I was nothing." Verse 12 retains plural apostles and all three
+  with-phrases for prodigies, wonders, and mighty works, with all patience.
+  Verse 13 preserves causal "For in what," the exception construction,
+  other ecclesias, my not burdening you, and the direct forgiveness request.
+- Verse 14 states third-time readiness to come, preserves the contrast
+  between what is yours and you, and retains the children/parents obligation
+  with plural treasures. Verse 15 keeps plural expenses, giving myself
+  for your plural souls, both "even if" and "when," and the asymmetrical
+  more/less love comparison. Verse 16 retains "perhaps" and the rhetorical
+  craft/deceit accusation, followed by the agency questions in verses 17-18.
+- Verse 17 renders the hand expression as "through" the person sent.
+  Verse 18 has plural brothers, Titus's question including "in anything,"
+  one spirit, and the same plural footsteps. Verse 19 renders `npq ruha`
+  as the defense/apology idiom, following the supplied defend gloss and
+  Murdock's contextual reading. The noun is not an added "in spirit"
+  adjunct. Before God, in the Messiah, we speak; all these things, my
+  beloved, are for your building up.
+- Verses 20-21 retain both finding directions and their distinct persons,
+  the actual negative predicates as well as the lest clauses, all eight
+  contention/vice categories, my God humbling me, my mourning over many,
+  and their prior sin and non-repentance. The final impurity, fornication,
+  and lasciviousness have three distinct from-phrases and a shared committed
+  predicate. Verse 20 has no inserted "when" before its coming clause;
+  verse 21 has its own explicit when-clause.
+- Only verse 18 uses a five-position group, for Titus's question with its
+  delayed subject and indefinite quantity. All other linked groups contain
+  at most four positions; no lexical text is left unlinked.
