@@ -78,7 +78,10 @@ Haqor's own lexicon (ADR 7, `data/lexicon/`) searches the dictionaries of
 Hebrew's sister languages for each root's cognates. They are vendored the same
 way, each by its own `scripts/fetch-*.sh`: Lane's *Arabic-English Lexicon*
 (`src_texts/Lane/`, from the Perseus TEI as corrected by the laneslexicon
-project, its Arabic converted to Unicode by `db import-lane`).
+project, its Arabic converted to Unicode by `db import-lane`) and Wiktionary's
+entries for the Semitic languages, Egyptian, Coptic and Sumerian
+(`src_texts/Wiktionary/`, extracted by wiktextract and reduced to glosses,
+roots, etymologies and their cognate links).
 
 ## Commands
 
@@ -451,6 +454,12 @@ Library, with funding from The U.S. Department of Education and The Max Planck
 Society; corrected by the [laneslexicon](https://github.com/laneslexicon/lexicon_xml)
 project. Perseus's availability statement is reproduced in
 `src_texts/Lane/README.md`.
+
+**Wiktionary** — entries for the Semitic languages, Egyptian, Coptic and
+Sumerian by Wiktionary's contributors (<https://en.wiktionary.org/>), under
+CC BY-SA 4.0 and the GFDL, as extracted by Tatu Ylonen's
+[wiktextract](https://github.com/tatuylonen/wiktextract) (LREC 2022) and
+published by kaikki.org.
 
 **Rabbinic and Aramaic dictionary** — Marcus Jastrow, *A Dictionary of the
 Targumim, the Talmud Babli and Yerushalmi, and the Midrashic Literature*

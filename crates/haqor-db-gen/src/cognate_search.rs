@@ -52,10 +52,11 @@ fn strings(v: &Value, key: &str) -> Vec<String> {
         .unwrap_or_default()
 }
 
-/// The first `n` characters of `s`, marked when cut.
+/// The first `n` characters of `s` on one line, marked when cut.
 fn clip(s: &str, n: usize) -> String {
+    let s = s.split_whitespace().collect::<Vec<_>>().join(" ");
     if s.chars().count() <= n {
-        s.to_string()
+        s
     } else {
         format!("{}…", s.chars().take(n).collect::<String>())
     }
@@ -364,6 +365,12 @@ pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Resul
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn clipped_text_stays_on_one_line() {
+        assert_eq!(clip("a\nb  c", 10), "a b c");
+        assert_eq!(clip("abcdef", 3), "abc…");
+    }
 
     #[test]
     fn akkadian_skeletons_drop_vowels_and_doubling() {
