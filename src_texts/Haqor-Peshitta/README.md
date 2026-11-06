@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 John, 3 John, and Jude
-(6,558 of 7,958 Peshitta verses; 1,400 remain). 2 Thessalonians 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1, 2 John, 3 John, and Jude
+(6,570 of 7,958 Peshitta verses; 1,388 remain). 2 Thessalonians 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4894,3 +4894,25 @@ Source checks for 1 Thessalonians 5:
   all our brothers with a holy kiss, the first-person adjuration by our
   Lord, reading this letter to all the holy brothers, the grace of our
   Lord Jesus Messiah with the recipients and Amen.
+
+Source checks for 2 Thessalonians 1:
+
+- Verse 3 retains both giving thanks and being obliged, the speaker's
+  “my brothers,” and love as the subject of the second growth predicate.
+  Verse 4 has one boasting predicate, with faith and endurance retained.
+- Verses 6–8 retain the conditional “if,” followed by the promise to the
+  afflicted. The Aphel life verb is “make alive,” rather than substituting
+  relief from another textual tradition; compare the
+  [Peshitta morphology for 1:7](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=2Thessalonians+1%3A7).
+  The vengeance clause is temporal, with no extra coming predicate.
+  Both negative groups remain, including those who do not acknowledge
+  the good news of our Lord Jesus Messiah.
+- Verses 9–10 retain eternal destruction, our Lord's presence, his power's
+  glory, his holy ones and believers, and the testimony concerning the
+  recipients being believed on that day. The testimony predicate is not
+  assigned to the believers as its subject. The temporal clauses join
+  across verse boundaries into complete running English.
+- Verses 11–12 retain the reason for prayer, calling, good purpose, works
+  of faith and power, our Lord's name being glorified in the recipients,
+  their being glorified in him, and the grace of our God and our Lord
+  Jesus Messiah. The name and its genitive owner form one natural span.
