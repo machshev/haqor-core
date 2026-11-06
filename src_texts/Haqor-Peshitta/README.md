@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1, 2 John, 3 John, and Jude
-(6,817 of 7,958 Peshitta verses; 1,141 remain). Titus 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-2, 2 John, 3 John, and Jude
+(6,832 of 7,958 Peshitta verses; 1,126 remain). Titus 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5191,3 +5191,13 @@ Source checks for Titus 1:
 - v6 renders `אינא דדלא רשינ` idiomatically as “Who is blameless”; v7 uses “elder” for `קשישא`, not an imported “overseer.”
 - v7–v8 preserve each prohibition, the hand/strike idiom, gain phrase, contrast, and moral qualifications; v15–v16 retain negation, plural suffixes, denial, and disqualification.
 - v12 and v14 preserve source order and conjunctions through coherent grouped spans: “are always liars” and “to Jewish myths and to human commandments.”
+
+Source checks for Titus 2:
+
+- The chapter repeatedly uses finite forms of the Syriac verb “be” (הוא) as copulas with plural subjects (vv. 2–6); these are rendered as English infinitival or coordinated clauses without dropping the predicates. In v. 8, the source adjective is “sober,” distinct from the following “not corrupted.”
+- In vv. 4–5, the source explicitly makes the young women modest and then directs them to love their husbands and children; the feminine-plural group and possessive suffixes on husbands, children, households, and husbands are retained as “their.”
+- Verse 6 retains the opening conjunction in “And as for young men,” while v. 7 renders דינ as “however” (but/yet), rather than introducing an unsupported temporal “then.”
+- Verse 8 contains two separate negatives before “corrupted” and “despise,” followed by a relative clause about the person standing against “us”; the translation keeps both prohibitions and the first-person plural object.
+- In vv. 9–10, servants are told to obey masters, please them, avoid argumentative contradiction, and not steal; their displayed faithfulness is the good quality that is good in everything and adorns God's teaching.
+- Verse 12 distinguishes rejecting ungodliness and worldly desires from the three positive ways of life: sensible conduct, uprightness, and fear of God in the present world.
+- Verses 13–14 preserve the linked sequence “blessed hope,” revelation of the great God's glory and our Life-giver Jesus the Messiah, followed by his self-giving, redemption, purification of us, and a new zealous people.
