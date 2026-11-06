@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-9, 2 John, 3 John, and Jude
-(5,097 of 7,958 Peshitta verses; 2,861 remain). Romans 10 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-10, 2 John, 3 John, and Jude
+(5,118 of 7,958 Peshitta verses; 2,840 remain). Romans 11 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1989,3 +1989,28 @@ Source checks for Romans 9:
   causal elements, faith/works negation scope and the stumbling-stone
   quotation, without replacing source-specific words with a remembered
   parallel passage.
+
+Source checks for Romans 10:
+
+- Romans 10:1 retains the plural recipient in חלפיהונ, “for them.”
+  Romans 10:2 preserves both causal גיר and the concerning-them relation
+  in the local testimony construction. Romans 10:3 renders each God genitive
+  as one ownership relation, “the righteousness of God,” distinct from
+  “their own righteousness”; the proleptic suffix does not add another owner.
+- Romans 10:4-7 preserves the law/Messiah and faith/righteousness relations,
+  Moses and the source's life predicate, and the heart/heaven/abyss questions
+  with their Messiah explanations. The quote roles and verb subjects are
+  not replaced by a remembered parallel text.
+- Romans 10:8-14 keeps word, mouth and heart, confession, belief, God and
+  Jesus, resurrection and life/salvation, the Jew/Gentile distinction and
+  the calling/hearing/believing questions. Romans 10:10 דמודא בה is rendered
+  “that confesses him”: the Syriac verb's governed complement is expressed
+  by English transitive confession, as in Murdock, rather than an unidiomatic
+  locative “confesses in him.” The earlier believing-in-him phrase retains
+  its own prepositional construction. Romans 10:12 keeps causal “For.”
+- Romans 10:15-21 preserves the feet/herald sequence, sending and preaching,
+  the negative scope in the good-news response, and the “our voice” suffix
+  in Isaiah's question. Romans 10:17 retains the word-of-God reading supplied
+  by the dataset. The rhetorical hearing/knowledge questions, Moses/Isaiah
+  quote speakers and nation/Israel recipients, and the final outstretched
+  hands and disobedience predicates remain source-linked.
