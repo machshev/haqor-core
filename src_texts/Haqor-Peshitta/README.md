@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-3, 2 John, 3 John, and Jude
-(6,040 of 7,958 Peshitta verses; 1,918 remain). Galatians 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-4, 2 John, 3 John, and Jude
+(6,071 of 7,958 Peshitta verses; 1,887 remain). Galatians 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3994,3 +3994,37 @@ Source checks for Galatians 3:
   three negative contrasts and renders the social status as "freeborn."
 - Verse 29 renders the anticipatory possessive and explicit genitive
   naturally as "Abraham's seed," without creating a second owner.
+
+Source checks for Galatians 4:
+
+- Verses 2–5 retain the appointed-time and fullness wording, the Son's
+  sending, and the redemption and adoption clauses, with their distinct
+  source predicates and participants.
+- Verse 3 explicitly retains the enslavement predicate.
+  Verse 8 retains the causal connector and a finite serving predicate.
+  Verse 9 preserves both the turning and serving clauses, with the later
+  `min dresh` rendered idiomatically as "anew." Verse 10 retains all four
+  time categories: days, months, seasons, and years.
+- Verse 12 keeps the appeal and the reassurance that the hearers have not
+  wronged Paul in anything. Verses 13–14 retain the weakness of his flesh
+  and both comparisons, an angel of God and Jesus the Messiah.
+- Verse 16 preserves the rhetorical enemy question without adding
+  "therefore." Verse 17 distinguishes the third-person plural "they want"
+  from the later second-person purpose clause concerning the hearers' zeal.
+  Verse 18 explicitly retains the addressed second-person subject.
+- Verses 19–20 retain Paul's labouring and the Messiah's formation in
+  the hearers, followed by the wish to be present, change of voice, and
+  astonishment at them.
+- Verse 21 retains the repeated law reference but renders the resumptive
+  object naturally as "hear the law." Verses 22–23 preserve the two sons,
+  the two one-phrases, and the flesh/promise contrast.
+- Verse 24 preserves plural "allegories," the two covenants, Sinai,
+  bondage, and Hagar. Verses 25–26 retain the present Jerusalem relation,
+  her children, the upper Jerusalem's freedom, and "our mother."
+- Verse 27 retains both joy commands, both negative descriptions, the
+  causal clause, and the more-than comparison and its multiplication predicate. Verse 28 renders the
+  repeated first-person pronouns as one natural grammatical subject and
+  copula, with Isaac and the promise retained.
+- Verses 29–31 preserve the flesh/Spirit contrast, the persecution object,
+  "so also now," the quoted expulsion and inheritance exclusion, and the
+  concluding bondwoman/free-woman contrast.
