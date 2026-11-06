@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-3, 2 John, 3 John, and Jude
-(6,181 of 7,958 Peshitta verses; 1,777 remain). Ephesians 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-4, 2 John, 3 John, and Jude
+(6,213 of 7,958 Peshitta verses; 1,745 remain). Ephesians 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4191,3 +4191,41 @@ Source checks for Ephesians 3:
   and "even more than what we ask and think," with the first-person plural
   asking/thinking and "in us," his ecclesia, Jesus Messiah, all generations,
   both plural age terms, and Amen.
+
+Source checks for Ephesians 4:
+
+- Verses 1–3 retain the speaker's prisoner status, "our Lord," the
+  recipients' calling, humility of mind, gentleness, patience, mutual
+  endurance, love, and preserving the Spirit's unity in peace.
+- Verses 4–6 preserve "be in one body and in one Spirit," the calling's
+  one hope, the repeated one-Lord/faith/baptism/God sequence, and the
+  final first-person plural "in us all."
+- Verses 7–10 retain the grace/gift measure, ascent quotation, captivity,
+  gifts to human beings, the descent question and exception, beforehand,
+  lower regions, above all heavens, and completing all things.
+- Verses 11–13 retain apostles, prophets, evangelists, shepherds, and
+  teachers; all three purpose phrases; and faith, knowledge of God's Son,
+  maturity, stature, and the Messiah's fullness. The dependent clauses
+  continue across the verse boundaries.
+- Verses 14–16 retain the two motion predicates, every wind, human
+  teachings, their craftiness, plotting and leading astray. Verse 15 keeps
+  the first-person plural growth predicate, with "all that is ours" as
+  its complement. The body/joints/gift/member/growth/building sequence
+  remains intact.
+- Verses 17–21 preserve the former Gentile conduct, ignorance and heart
+  blindness, lost hope, surrender to impurity and greed, the Messiah
+  object, the conditional hearing/learning clause, and truth in Jesus.
+- Verses 22–27 retain the old/new person contrast, ongoing corruption,
+  renewal, creation, truth/neighbor reciprocity, anger without sin, the
+  sunset prohibition, and the accuser. Appositional and conditional
+  clauses are punctuated as complete running English.
+- Verses 28–31 preserve work with one's hands, giving to the needy,
+  hateful speech, edification and grace to hearers, the Holy Spirit of God,
+  sealing for redemption, and every bitterness/anger/wrath/uproar/
+  blasphemy/wickedness category.
+- Verse 32 keeps the distinct kind/compassionate/forgiving predicates
+  and the actual first-person plural in "God in Messiah forgave us."
+
+  The Syriac adjective is rendered "kind" using the
+  [CAL adjective entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=bsym+A),
+  which explicitly lists the Syriac sense "kind, lenient."
