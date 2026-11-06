@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-4, 2 John, 3 John, and Jude
-(6,672 of 7,958 Peshitta verses; 1,286 remain). 1 Timothy 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-5, 2 John, 3 John, and Jude
+(6,697 of 7,958 Peshitta verses; 1,261 remain). 1 Timothy 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5078,3 +5078,33 @@ Source checks for 1 Timothy 4:
 - Verse 16 retains watching oneself and one's teaching, persevering,
   doing these things, and the recipient saving himself and those who
   hear him, with the source's explicit second-person address.
+
+Source checks for 1 Timothy 5:
+
+- Verses 1–4 retain the elder/younger comparisons, possessive brothers
+  and sisters, purity, actual widows, sons or grandsons, and doing right
+  among the members of their household. The household-member construction
+  keeps the household's owner and its members in their source roles.
+- Verses 5–8 retain the solitary widow's hope and prayers, the living/dead
+  contrast, blamelessness, caring for one's own and especially the household
+  of faith, and that person's denial of faith. Both source faith words
+  remain. The long conditional binds the care verb to its actual objects
+  in one grammatical span so that the English stays natural.
+- Verses 9–12 retain sixty years, one husband, each good-work condition,
+  the younger-widow instruction, Messiah, marriage and former faith.
+  The derived verb in verse 11 is rendered “avoid”; Lesson 12 of
+  [Younansardaroud's Syriac course book](https://refubium.fu-berlin.de/bitstream/handle/fub188/24490/Classical_Syriac_Course_Book_3-2019.pdf?isAllowed=y&sequence=3)
+  gives the form as “decline,” and [Peshitta Titus 3:9](https://www.dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=Titus+3%3A9)
+  supplies the same derived verb with the from-preposition in an avoidance
+  instruction.
+- Verses 13–16 retain movement among houses, idle speech, marriage and
+  household care, having begun to turn aside after Satan, the believing
+  man/woman distinction, supporting widows and sparing the ecclesia's burden.
+- Verses 17–22 retain the elders' double honor, both Scripture quotations,
+  two or three witnesses, public rebuke, our Lord Jesus Messiah and his
+  chosen angels, the mental-priority clause, partiality, hand-laying,
+  other people's sins and personal purity.
+- Verses 23–25 retain the from-now-on instruction, a little wine, both
+  separate reasons, the recipient's stomach and continuing ailments,
+  sins going before or following people to judgment, and the concluding
+  visibility and concealment of good works.
