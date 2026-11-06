@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-15, 2 John, 3 John, and Jude
-(5,685 of 7,958 Peshitta verses; 2,273 remain). 1 Corinthians 16 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 John, 3 John, and Jude
+(5,709 of 7,958 Peshitta verses; 2,249 remain). 2 Corinthians 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3040,3 +3040,61 @@ Source checks for 1 Corinthians 15:
 All 58 verses and 703 source words received source-to-English and running
 English review. The eleven גיר, fourteen דין, one הכיל and one מכיל
 occurrences were checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 16:
+
+- Verses 1-2 retain the collection for the saints, the Galatian ecclesias
+  and the command to do likewise. Each first day of the week, each of
+  the addressees is to put aside and keep at his home what comes into
+  his hands. Both putting and keeping remain, with the purpose of no
+  collections when Paul comes.
+- Verses 3-4 distinguish the chosen envoys from the gift they carry.
+  The anticipatory object suffix does not make the envoys a second set
+  of recipients. Paul sends them with a letter to carry the addressees'
+  gift to Jerusalem; if the matter warrants his going too, they go with
+  him.
+- Verses 5-7 retain passing from Macedonia and passing through Macedonia
+  as separate clauses, the possible stay or wintering, accompanying Paul
+  where he goes, and the hope of spending time together. The permitter
+  is explicitly "my Lord," with a singular first-person possessor.
+  Both causal clauses in verse 7 remain explicit.
+- Verses 8-11 distinguish the discourse particle about remaining in
+  Ephesus until Pentecost from the causal explanation of the opened
+  great door, its activities and many opponents. Timothy is to be
+  without fear, does the Lord's work as Paul does, and is not to be
+  despised. The peaceful escort, coming to Paul and Paul's awaiting
+  him with the brothers remain distinct.
+- Verse 12 keeps Apollos, the earnest request, coming with the brothers,
+  and the later opportunity. The modal "perhaps" retains כבר and leaves
+  the willingness noun without an added possessor. The [published parallel
+  translations](https://www.dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=1Corinthians+16%3A12)
+  also show Lamsa's modal reading; the categorical Murdock rendering is
+  not treated as the only possible interpretation of this clause.
+- Verses 13-16 keep all four vigilance/faith/courage/strength commands,
+  all the addressees' affairs in love, and the request about Stephanas's
+  household. The explanatory firstfruits/service parenthesis connects
+  with the request that the addressees also obey such people and everyone
+  working with us and helping. It is not a separate past-tense report.
+- Verses 17-18 retain all three named arrivals, what the addressees
+  lacked toward Paul, and what those visitors supplied. They refreshed
+  Paul's own spirit and the addressees'; the conclusion is a command
+  to acknowledge such people. The perfect BE/participle construction
+  is not turned into an unrelated past statement.
+- Verses 19-20 preserve both greetings, all the Asian ecclesias, much
+  greeting in our Lord, Aquila and Priscilla, and the ecclesia in their
+  house. Verse 20's brother noun has a first-person plural suffix:
+  "our brothers." The second greeting is a reciprocal command with a
+  holy kiss; its verb is not linked into the preceding greeting.
+- Verse 21 identifies Paul's own handwriting with one named owner.
+  Verse 22 retains our Lord Jesus Messiah, the negative love condition
+  and the curse. Its final vocalized verb is perfect Peal, rendered
+  "Our Lord has come." The [published SEDRA analysis](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=150&verse=1Corinthians+16%3A22)
+  confirms that form and gives a matching Lamsa rendering, alongside
+  Murdock's interpretive "cometh."
+- Verses 23-24 retain grace from our Lord Jesus Messiah and Paul's love
+  with all the addressees in Messiah Jesus. The supplied Syriac ends
+  at Jesus; Murdock's final Amen has no source word here and is not added.
+
+All 24 verses and 278 source words received source-to-English and running
+English review. The seven גיר, nine דין and two הכיל occurrences were
+checked individually against the final English clauses.
