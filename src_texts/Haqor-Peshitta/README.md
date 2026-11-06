@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 John, 3 John, and Jude
-(6,718 of 7,958 Peshitta verses; 1,240 remain). 2 Timothy 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1, 2 John, 3 John, and Jude
+(6,736 of 7,958 Peshitta verses; 1,222 remain). 2 Timothy 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5138,3 +5138,12 @@ Source checks for 1 Timothy 6:
 - Verses 20–21 retain Timothy's entrusted charge, empty speech, opposing
   principles of false knowledge, the feminine singular reference to that
   knowledge, straying from faith, the final addressed “you,” grace and Amen.
+
+Source checks for 2 Timothy 1:
+
+- 1:5 retains the source’s remembrance construction and second-person possessive: “the remembrance I have of your genuine faith.” The maternal sequence identifies Lois as Timothy’s grandmother; the running English makes that relation natural while preserving source order.
+- 1:12 retains `באידוהי` as “in his hands,” between the ability predicate and “my deposit,” and retains the first-person object in “for me.”
+- 1:13 renders the sound words as the subject and “a pattern” as the predicate: “Let the sound words which you heard from me be a pattern for you.”
+- 1:15 renders `דאיתיהונ מנהונ` as the source-owned existential/partitive clause: “and among them are Phygelus and Hermogenes.”
+- 1:17 retains the emphatic `אפ` in “But even when he came to Rome”; 1:18 renders `לות מרנ` as “with our Lord,” preserving the source relation.
+- 1:10 renders `דמחיננ` as “life-giver” and `מתחבלנותא` as “incorruptibility”; ecclesia terminology is not present in this chapter.
