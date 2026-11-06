@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-2, 2 John, 3 John, and Jude
-(6,011 of 7,958 Peshitta verses; 1,947 remain). Galatians 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-3, 2 John, 3 John, and Jude
+(6,040 of 7,958 Peshitta verses; 1,918 remain). Galatians 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3964,3 +3964,33 @@ Source checks for Galatians 2:
   one another or with the supplied Murdock wording. Verse 21 retains
   the negated rejection of grace, the conditional righteousness-through-law
   claim, and the final "for nothing."
+
+Source checks for Galatians 3:
+
+- Verse 1 renders the actual Peal verb as "has envied," retaining the
+  source reading rather than substituting the familiar "bewitched." Compare
+  [CAL's Peal sense](https://cal.huc.edu/oneentry.php?cits=all&lemma=xsm+V).
+  The portrayal clause preserves initial "how" and later "when" separately.
+- Verses 2 and 5 preserve the distinct source/receiving clauses and both
+  alternatives, works of the law and hearing of faith. Verse 3 retains
+  the completed beginning, present completion, explicit now, and flesh.
+- Verse 4 preserves the source's optative as "Would that it were in vain!"
+  without adding a first-person speaker or "only." Verse 8 retains both
+  the foreknowing and advance-proclamation predicates and causal links;
+  verse 10 retains its repeated causal wording and final "this law."
+- Verse 12 preserves the feminine plural suffix in "by them." Verses
+  13–14 retain the first-person plural participants, including "for us"
+  and "we might receive."
+- Verse 16 distinguishes third-person singular "his seed" from both
+  second-person singular "your seeds" and "your seed." Verse 17 explicitly
+  retains four hundred thirty years, with the covenant/promise argument.
+- Verses 19–20 retain the mediator continuation and the statement that
+  God is one. The opening "Now" in verse 20 renders a discourse transition.
+- Verse 23 distinguishes the law guarding us from our being confined;
+  the passive confinement does not become a second active act by the law.
+  Verse 24 retains "our tutor" and "we might be justified."
+- Verses 26–27 preserve the second-person plural references and the
+  distinct baptism and putting-on predicates. Verse 28 retains the
+  three negative contrasts and renders the social status as "freeborn."
+- Verse 29 renders the anticipatory possessive and explicit genitive
+  naturally as "Abraham's seed," without creating a second owner.
