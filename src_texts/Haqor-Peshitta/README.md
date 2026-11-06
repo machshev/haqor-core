@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-2, 2 John, 3 John, and Jude
-(6,904 of 7,958 Peshitta verses; 1,054 remain). Hebrews 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-3, 2 John, 3 John, and Jude
+(6,923 of 7,958 Peshitta verses; 1,035 remain). Hebrews 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5244,3 +5244,13 @@ Source checks for Hebrews 2:
 - 2:9 identifies the lowered one as “this one ... Jesus” (הו ... ישוע), then gives “because of the suffering of death”; its final clause is “on behalf of everyone ... tasted death,” with God's grace kept explicit.
 - 2:10-11 preserve the distinct roles and suffixes: many sons are brought to glory, the prince of their life is perfected through suffering, the sanctifier and sanctified are from one, and 2:11's מטל + הנא remains “Therefore.”
 - 2:14 and 2:17 retain actual source ownership for the participation/likeness clauses: “also he in the same likeness ...,” and “in everything he should be like his brothers.” The active Pael participle מחסא is rendered “might make expiation,” not as a noun “atonement.” 2:16 follows the passive syntax: מותא is explicit “death,” and both משלט predicates mean “authorized,” not “assumed a nature.”
+
+Source checks for Hebrews 3:
+
+- In 3:1, אחי is plural with a first-person singular suffix, so “my holy brothers” preserves both the plural addressees and possessive suffix; חזאוהי is an imperative “consider/see him” with a masculine singular object suffix.
+- In 3:3–4, טב is comparative in the glory/building comparison (“greater”), while גיר supplies “for”; the explanatory clause identifies God as the one who builds everything.
+- In 3:5 and 3:10, the possessive suffix in בכלה is rendered “his house,” and מאנת ... לי is rendered as the first-person “I was weary of this generation,” rather than reversing the Syriac subject and object.
+- In 3:6, the house statement is rendered “his house are we,” retaining the copular verb and the explicit first-person plural pronoun; the conditional span keeps “if we hold until the end” with the perseverance object.
+- In 3:7–10, the causal particle and speaking Spirit are retained, and the fathers’ testing, seeing the works, forty years, generation, wandering hearts, and lack of knowledge are all separately represented.
+- In 3:12–15, דלמא is the negative-purpose “lest,” not a positive “perhaps”; the warnings retain the evil unbelieving heart, departure from the living God, deception of sin, and the quoted “today” exhortation.
+- In 3:17–19, the questions preserve the contrast between those whose bones fell in the wilderness and those who did not believe; the final causal clause explicitly links inability to enter with unbelief.
