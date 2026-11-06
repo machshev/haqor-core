@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 2 John, 3 John, and Jude
-(5,272 of 7,958 Peshitta verses; 2,686 remain). 1 Corinthians 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1, 2 John, 3 John, and Jude
+(5,303 of 7,958 Peshitta verses; 2,655 remain). 1 Corinthians 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2253,3 +2253,46 @@ construction.
 Romans 16 uses the established “ecclesia/ecclesias” vocabulary in the five
 congregation spans. The generator already normalizes “church/churches” to
 these terms; the tracked wording matches that runtime convention.
+
+Source checks for 1 Corinthians 1:
+
+- Verses 1-3 preserve Paul's call/apostleship, God's will, Sosthenes,
+  the ecclesia of God in Corinth, sanctification in Jesus Messiah,
+  calling and invocation of the Lord, including the place and possessive phrases. Grace, peace,
+  God the Father and our Lord remain distinct without duplicate owners.
+- Verses 4-9 retain thanksgiving, given grace, enrichment in word and
+  knowledge, confirmed testimony, gifts and awaited revelation, the
+  strengthening/blamelessness purpose and God's faithful call to fellowship.
+- Verse 10 treats מנכון as the governed addressee of “I beseech you,”
+  rather than turning the appeal into a spatial “among you.” The clauses about agreement,
+  absence of divisions, one mind and one thought retain their subjects.
+- Verse 11 keeps causal גיר attached to reporting, עליכון as “concerning
+  you,” Paul as recipient and Chloe's house as the report's source. The
+  impersonal plural reporting verb becomes grammatical English passive;
+  the ד prefix introduces the reported contentions among the addressees.
+- Verses 12-16 retain the four separate allegiance quotes, the division,
+  crucifixion and baptism questions, name ownership, Crispus, Gaius and
+  Stephanas's household, the baptism exceptions and what Paul does not know.
+- Verses 17-20 state that Messiah did not send Paul to baptize but to preach.
+  They retain the purpose that his cross not be emptied, the perishing/living
+  contrast, God's power, the written quotation's first-person speaker, and
+  the questions about the wise, scribe, disputer and the world's wisdom.
+- Verse 21 keeps both causal functions in “For since ..., God was pleased
+  ...”: explanatory גיר and the subordinate מטול clause. God/world/wisdom/
+  knowing, preaching, saving and believing retain their actual roles.
+- Verses 22-24 render ארמיא contextually as “Gentiles” in the contrast with
+  Jews, following the supplied gloss alternative and Murdock. This does
+  not restrict the clause to ethnic Arameans or substitute a Greek text.
+  The broader gentile/pagan sense is also recorded in the
+  [CAL lexical entry](https://cal.huc.edu/cal_entry_web.php?lemma=%29rmy%232+A).
+  First-person preaching, crucified Messiah, stumbling/foolishness and
+  calling/wisdom/power remain source-linked.
+- Verses 25-31 preserve God's foolishness/weakness comparisons, the three
+  “not many” clauses, God's chosen subjects and shamed/nullified objects,
+  flesh not boasting, being in Messiah, wisdom from God and the distinct
+  righteousness/sanctification/redemption terms. The final boasting quote
+  retains the Lord as its reference.
+
+All 31 verses and 382 source words received source-to-English and running
+English review. All six גיר occurrences were checked individually for their
+causal function; coverage alone was not used as proof of meaning.
