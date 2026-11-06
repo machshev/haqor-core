@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-3, 2 John, 3 John, and Jude
-(6,656 of 7,958 Peshitta verses; 1,302 remain). 1 Timothy 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-4, 2 John, 3 John, and Jude
+(6,672 of 7,958 Peshitta verses; 1,286 remain). 1 Timothy 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5050,3 +5050,31 @@ Source checks for 1 Timothy 3:
 - Verse 16 retains the mystery of this righteousness and all six linked
   passive events: revealed in flesh, justified in spirit, seen by angels,
   proclaimed among nations, believed in the world and taken up in glory.
+
+Source checks for 1 Timothy 4:
+
+- Verses 1–3 retain the Spirit's explicit speech, plural people departing
+  and following errant spirits, plural teachings of demons, deceptive
+  speech, seared consciences, the marriage and food prohibitions, and
+  foods created for use and thanksgiving for believers who know truth.
+  The description continues across verses 2–3.
+- Verses 4–5 retain every created thing being good, the negative rejection
+  clause, the thanksgiving condition, and sanctification by God's word
+  and prayer. Both explanatory connectors remain in complete English.
+- Verse 6 has “your brothers,” explicit “you” being nourished, plural
+  “words of faith,” and the distinct singular good teaching learned.
+  Verses 7–9 retain training, the bodily-exercise contrast, the promise
+  of present and future life, and the saying's trustworthiness/acceptance.
+- Verse 10 preserves the speakers' first-person plural labor, reproach
+  and trust, the living God as life-giver of all people, and “especially”
+  concerning believers. Verses 11–12 retain teaching, commanding, the
+  youth prohibition, and word, conduct, love, faith and purity.
+- Verse 13 specifically has reading, prayer and teaching. Verse 14
+  retains the gift in the recipient, its being given to him, prophecy,
+  and the singular hand-laying expression with eldership.
+- Verse 15 expresses becoming known to everyone that the recipient is
+  advancing. The directional phrase belongs to the progress idiom;
+  compare the [CAL entry for lqdm](https://cal.huc.edu/oneentry.php?cits=all&lemma=lqdm+p).
+- Verse 16 retains watching oneself and one's teaching, persevering,
+  doing these things, and the recipient saving himself and those who
+  hear him, with the source's explicit second-person address.
