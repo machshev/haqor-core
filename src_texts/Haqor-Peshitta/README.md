@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-2, 2 John, 3 John, and Jude
-(6,832 of 7,958 Peshitta verses; 1,126 remain). Titus 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, 2 John, 3 John, and Jude
+(6,847 of 7,958 Peshitta verses; 1,111 remain). Philemon 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5201,3 +5201,14 @@ Source checks for Titus 2:
 - In vv. 9–10, servants are told to obey masters, please them, avoid argumentative contradiction, and not steal; their displayed faithfulness is the good quality that is good in everything and adorns God's teaching.
 - Verse 12 distinguishes rejecting ungodliness and worldly desires from the three positive ways of life: sensible conduct, uprightness, and fear of God in the present world.
 - Verses 13–14 preserve the linked sequence “blessed hope,” revelation of the great God's glory and our Life-giver Jesus the Messiah, followed by his self-giving, redemption, purification of us, and a new zealous people.
+
+Source checks for Titus 3:
+
+- Verse 1 retains the two governing groups (rulers and authorities) and distinguishes being subject from obeying, while preserving the readiness clause.
+- Verse 3 keeps the first-person plural subject throughout the sequence, including the paired negatives, the former condition, and the reciprocal hatred at the close.
+- Verses 4–7 preserve the causal progression from God's kindness and compassion, through mercy, new birth, renewal, and the Spirit poured out through Jesus the Messiah, to justification and heirship in hope of eternal life.
+- Verse 8 separates “and in these things” from the first-person desire verb, then preserves the relation between those who have believed in God and diligence in good works, with the concluding assessment that these works are good and beneficial to people.
+- Verse 9 keeps the repeated avoidance/prepositional particles and assigns the final conjunction and vanity clause to the correct source positions; verse 10 likewise retains the source's “from” construction and once-and-twice admonition sequence.
+- Verses 12–13 retain the dative “to you” before Artemas, the contrastive “but” before “the scribe,” and the complete “something/no/lack/to them” sequence as natural “lack nothing.”
+- Verse 15 preserves the third-person plural subject “all who are with me” as the ones who greet you, followed by the imperative “greet with peace”; the four closing sentences retain both relative groups and the grace benediction.
+- Verse 14 preserves both negative elements in “may not be without fruit,” rather than collapsing the source's two negative markers into one.
