@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1, 2 John, 3 John, and Jude
-(5,990 of 7,958 Peshitta verses; 1,968 remain). Galatians 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-2, 2 John, 3 John, and Jude
+(6,011 of 7,958 Peshitta verses; 1,947 remain). Galatians 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3926,3 +3926,41 @@ Source checks for Galatians 1:
 - Verse 22 renders the ecclesias of Judea as the subject of not knowing
   Paul personally. Verse 23 retains both former-time descriptions and
   the now/behold transition; verse 24 preserves the source's "in me."
+
+Source checks for Galatians 2:
+
+- Verses 1–2 retain fourteen years, Barnabas and Titus, revelation, the
+  gospel among the Gentiles, and both running predicates in the negative
+  purpose clause. Verse 3 preserves the absence of compulsion to circumcise.
+- Verses 4–5 retain the false brothers, the group's freedom in Jesus
+  Messiah, the enslaving purpose, and the refusal to yield even for an hour.
+  Verse 6 preserves both the earlier status qualification and the face-taking
+  idiom about God's impartiality, followed by adding nothing to Paul.
+- Verses 7–8 preserve the distinct circumcision and uncircumcision
+  commissions and the parallel predicates concerning Cephas and Paul.
+  Verse 8 renders the actual D-stem verb as "encouraged," following
+  [CAL's direct Syriac sense](https://cal.huc.edu/getlex.php?coord=620480208&word=2),
+  rather than borrowing a different stem's sense.
+- Verses 9–10 retain all three named leaders, Barnabas, the right hand of
+  fellowship, the two mission domains, remembering the poor, and Paul's
+  own concern to do so.
+- Verses 11–12 preserve Cephas's arrival, the face-to-face opposition,
+  the timing relative to the people from James, withdrawal and separation,
+  and the causal fear of those of the circumcision.
+- Verse 13 renders the face-taking expression as showing partiality to
+  them, retaining its plural recipient. Compare the Syriac examples under
+  [CAL's nsb entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=nsb+V).
+  Verse 14 retains the full manner-of-living question and begins the speech
+  that continues through verse 21.
+- Verses 15–16 preserve the causal wording, Jews by nature and Gentile
+  sinners, all law/faith contrasts, the repeated name phrase in "we have
+  believed in Jesus Messiah," and the emphatic final "no flesh."
+- Verses 17–19 retain the conditional sinner question and rejection,
+  rebuilding what Paul destroyed, with its feminine plural object,
+  the commandment-transgression
+  description, and both law phrases with the purpose of living to God.
+- Verse 20 retains "loved me" but ends with the distinct first-person
+  plural "gave himself for us." These suffixes are not harmonized with
+  one another or with the supplied Murdock wording. Verse 21 retains
+  the negated rejection of grace, the conditional righteousness-through-law
+  claim, and the final "for nothing."
