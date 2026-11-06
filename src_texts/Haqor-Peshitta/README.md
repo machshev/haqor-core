@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-11, 2 John, 3 John, and Jude
-(5,154 of 7,958 Peshitta verses; 2,804 remain). Romans 12 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-12, 2 John, 3 John, and Jude
+(5,175 of 7,958 Peshitta verses; 2,783 remain). Romans 13 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2047,3 +2047,38 @@ Source checks for Romans 11:
   ways, and the questions about the Lord's mind, counsel and repayment.
   The final verse keeps the three all-things clauses, “through his hand,”
   praise, blessing and eternity supplied by the Syriac.
+
+Source checks for Romans 12:
+
+- Romans 12:1-3 preserves the appeal, bodies offered as a living sacrifice,
+  the mercies of God, and the renewal/testing clause. The repeated thinking
+  predicates and the beyond-what-is-proper contrast retain their subjects,
+  negation and the distribution/measure-of-faith relation.
+- Romans 12:4-8 keeps the body/member image and the distinct gift,
+  prophecy, service, teaching, exhortation, giving, presiding and mercy
+  clauses. Romans 12:7 treats אית לה as possession, “which he has,”
+  within the existential service construction. Romans 12:8 retains the
+  relative ד on each distinct gift-bearer: the one who gives, stands at
+  the head, and has compassion. These are not three further acts with
+  the comforter as their shared subject. “His comforting” names the
+  consoling activity rather than comfort received.
+- Romans 12:9-14 renders the deceit/love contrast as readable English,
+  retains both reciprocal phrases in the brotherly-love/honor clause,
+  and preserves the repeated exhortations in hope, endurance and prayer.
+  Sharing in the saints' needs and loving strangers follow the Syriac
+  constructions. Both commands to bless and the final prohibition of
+  cursing are retained.
+- Romans 12:15-18 preserves rejoicing/weeping and the two sets of people,
+  the source's comparison of thinking about yourselves and your brothers,
+  both negatives about pride/wisdom, and the evil-for-evil prohibition.
+  The possible/from-you qualification limits the peace command as in the
+  source rather than turning it into an unconditional assertion.
+- Romans 12:19 keeps the prohibition of self-vengeance, the beloved
+  addressees and room-for-wrath command. Causal גיר belongs to “For it is
+  written” before the quotation. The quotation retains the Syriac-specific
+  conditional “If you do not execute judgment for yourself, I will execute
+  your judgment,” and its attribution to God.
+- Romans 12:20 retains the enemy-feeding/drinking conditions and the
+  source's further condition about doing these things, followed by the
+  coals-of-fire/head image. Romans 12:21 preserves the negative and positive
+  overcoming predicates, repeated evil and the final “with good.”
