@@ -74,6 +74,12 @@ cargo run --release -- db gen-lexicon
 The script streams the ~2.5 GB dump, keeps only its `lexicon_entry`
 collection, and records the dump date and checksum in `src_texts/Sefaria/SOURCE`.
 
+Haqor's own lexicon (ADR 7, `data/lexicon/`) searches the dictionaries of
+Hebrew's sister languages for each root's cognates. They are vendored the same
+way, each by its own `scripts/fetch-*.sh`: Lane's *Arabic-English Lexicon*
+(`src_texts/Lane/`, from the Perseus TEI as corrected by the laneslexicon
+project, its Arabic converted to Unicode by `db import-lane`).
+
 ## Commands
 
 The CLI is the workspace's default member, so it remains available from the
@@ -438,6 +444,13 @@ licensed CC BY-NC. Haqor carries the entries a reader of the Hebrew Bible or the
 Peshitta can reach, converted from Sefaria's HTML into its own entry format;
 the wording is unchanged. The non-commercial terms apply to this data wherever
 Haqor is redistributed.
+
+**Arabic lexicon** — Edward William Lane, *An Arabic-English Lexicon*
+(Williams and Norgate, London, 1863–93). Text provided by Perseus Digital
+Library, with funding from The U.S. Department of Education and The Max Planck
+Society; corrected by the [laneslexicon](https://github.com/laneslexicon/lexicon_xml)
+project. Perseus's availability statement is reproduced in
+`src_texts/Lane/README.md`.
 
 **Rabbinic and Aramaic dictionary** — Marcus Jastrow, *A Dictionary of the
 Targumim, the Talmud Babli and Yerushalmi, and the Midrashic Literature*

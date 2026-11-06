@@ -14,6 +14,7 @@ mod haqor_lexicon;
 mod harness;
 mod hebrew_db;
 mod journeys;
+mod lane;
 mod lexicon_brief;
 mod lexicon_db;
 mod murdock;
@@ -54,6 +55,7 @@ pub use hebrew_db::{
     preview_missing, refresh_reader_glosses,
 };
 pub use journeys::JOURNEYS;
+pub use lane::{LaneSummary, arabic_root_key, buckwalter_to_arabic, import_lane};
 pub use lexicon_brief::{lexicon_brief, lexicon_rank};
 pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,

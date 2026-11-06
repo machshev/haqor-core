@@ -257,6 +257,17 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/lexicon.db")]
         output: PathBuf,
     },
+    /// Prepare Lane's Arabic-English Lexicon from the laneslexicon project's
+    /// corrected Perseus TEI into the checked-in src_texts/Lane/lane.jsonl.
+    /// Run by scripts/fetch-lane.sh.
+    ImportLane {
+        /// Directory of the `lexicon_xml` checkout's XML files.
+        #[arg(short, long)]
+        input: PathBuf,
+        /// Directory the prepared file is written to.
+        #[arg(short, long, default_value = "src_texts/Lane")]
+        output: PathBuf,
+    },
     /// Filter the Klein and Jastrow entries out of Sefaria's `lexicon_entry`
     /// collection (as JSON lines, from bsondump) into the checked-in
     /// src_texts/Sefaria files. Run by scripts/fetch-sefaria-lexicons.sh.
@@ -717,6 +728,13 @@ fn main() -> Result<()> {
             DbCommands::GenLexicon { src_texts, output } => {
                 let total = haqor_db_gen::generate_lexicon(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
+            }
+            DbCommands::ImportLane { input, output } => {
+                let s = haqor_db_gen::import_lane(&input, &output)?;
+                println!(
+                    "Lane: {} entries under {} roots from {} files",
+                    s.entries, s.roots, s.files
+                );
             }
             DbCommands::ImportSefaria {
                 input,
