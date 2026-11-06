@@ -82,6 +82,8 @@ project, its Arabic converted to Unicode by `db import-lane`) and Wiktionary's
 entries for the Semitic languages, Egyptian, Coptic and Sumerian
 (`src_texts/Wiktionary/`, extracted by wiktextract and reduced to glosses,
 roots, etymologies and their cognate links).
+Anderson and Moser's Proto-Semitic root derivations
+(`src_texts/ProtoSemitic/`) give each root's descendants in seven languages.
 
 ## Commands
 
@@ -460,6 +462,10 @@ Sumerian by Wiktionary's contributors (<https://en.wiktionary.org/>), under
 CC BY-SA 4.0 and the GFDL, as extracted by Tatu Ylonen's
 [wiktextract](https://github.com/tatuylonen/wiktextract) (LREC 2022) and
 published by kaikki.org.
+
+**Proto-Semitic roots** — Adam Anderson and Jason Moser, *Protosemitic Root
+Derivations* (Zenodo, 2024, <https://doi.org/10.5281/zenodo.14160276>),
+licensed CC BY 4.0.
 
 **Rabbinic and Aramaic dictionary** — Marcus Jastrow, *A Dictionary of the
 Targumim, the Talmud Babli and Yerushalmi, and the Midrashic Literature*

@@ -143,6 +143,101 @@ fn akkadian_keys(root: &str) -> HashSet<String> {
     keys
 }
 
+/// A Hebrew root key in the Latin consonants Anderson and Moser write Hebrew
+/// in.
+fn hebrew_latin(root: &str) -> String {
+    let mut out = String::new();
+    let mut chars = root.chars().peekable();
+    while let Some(c) = chars.next() {
+        let sin = c == 'ש' && chars.peek() == Some(&'\u{05C2}');
+        if sin {
+            chars.next();
+        }
+        out.push_str(match c {
+            'א' => "ʾ",
+            'ב' => "b",
+            'ג' => "g",
+            'ד' => "d",
+            'ה' => "h",
+            'ו' => "w",
+            'ז' => "z",
+            'ח' => "ḥ",
+            'ט' => "ṭ",
+            'י' => "y",
+            'כ' | 'ך' => "k",
+            'ל' => "l",
+            'מ' | 'ם' => "m",
+            'נ' | 'ן' => "n",
+            'ס' => "s",
+            'ע' => "ʿ",
+            'פ' | 'ף' => "p",
+            'צ' | 'ץ' => "ṣ",
+            'ק' => "q",
+            'ר' => "r",
+            'ש' if sin => "ś",
+            'ש' => "š",
+            'ת' => "t",
+            _ => "",
+        });
+    }
+    out
+}
+
+/// A transliterated form's consonants without its weak letters, doubled
+/// letters single: what a root and its words share.
+fn latin_skeleton(form: &str) -> String {
+    let form = form.split('[').next().unwrap_or_default();
+    let mut out: Vec<char> = Vec::new();
+    for c in form.chars() {
+        if "aeiouāēīōūâêîôûəwy'-".contains(c) {
+            continue;
+        }
+        if out.last() != Some(&c) {
+            out.push(c);
+        }
+    }
+    out.into_iter().collect()
+}
+
+/// Anderson and Moser's Proto-Semitic root sets that hold a Hebrew entry
+/// with the root's consonants: each as the root and its rows
+/// `(language, entry)`.
+fn root_sets(src_texts: &Path, root: &str) -> Result<Vec<(String, Vec<(String, String)>)>> {
+    let path = src_texts.join("ProtoSemitic/SemiticRootDerivations.csv");
+    if !path.exists() {
+        return Ok(Vec::new());
+    }
+    let mut reader =
+        csv::Reader::from_path(&path).with_context(|| format!("opening {}", path.display()))?;
+    let rows: Vec<csv::StringRecord> = reader.records().collect::<std::result::Result<_, _>>()?;
+    let key = latin_skeleton(&hebrew_latin(root));
+    let mut ids: Vec<String> = Vec::new();
+    for row in &rows {
+        if &row[5] == "hebrew"
+            && latin_skeleton(&row[7]) == key
+            && !ids.contains(&row[1].to_string())
+        {
+            ids.push(row[1].to_string());
+        }
+    }
+    Ok(ids
+        .into_iter()
+        .map(|id| {
+            let set: Vec<&csv::StringRecord> = rows.iter().filter(|r| r[1] == *id).collect();
+            let name = set
+                .first()
+                .map(|r| format!("*{} ({})", &r[3], &r[2]))
+                .unwrap_or_default();
+            (
+                name,
+                set.iter()
+                    .map(|r| (r[5].to_string(), r[7].to_string()))
+                    .collect(),
+            )
+        })
+        .collect())
+}
+
 /// Markdown for the brief's cognates section: the root `root` (a root key),
 /// whose words are `lemmas`, against the vendored sources under `src_texts`.
 pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Result<String> {
@@ -256,6 +351,20 @@ pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Resul
     }
     writeln!(out)?;
 
+    writeln!(
+        out,
+        "Proto-Semitic root sets (Anderson and Moser 2024, a working hypothesis):\n"
+    )?;
+    let sets = root_sets(src_texts, root)?;
+    if sets.is_empty() {
+        writeln!(out, "- None.")?;
+    }
+    for (name, rows) in &sets {
+        let rows: Vec<String> = rows.iter().map(|(l, e)| format!("{l} {e}")).collect();
+        writeln!(out, "- {name}: {}", rows.join("; "))?;
+    }
+    writeln!(out)?;
+
     writeln!(out, "### By sound correspondence\n")?;
     let arabic: Vec<String> = cognate_keys(root, Lang::Arabic);
     writeln!(out, "Arabic roots tried: {}\n", arabic.join(", "))?;
@@ -365,6 +474,20 @@ pub fn cognate_section(src_texts: &Path, root: &str, lemmas: &[String]) -> Resul
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn hebrew_entries_match_by_consonants() {
+        assert_eq!(latin_skeleton(&hebrew_latin("שמע")), "šmʿ");
+        assert_eq!(latin_skeleton("šamaʿ[hear]V"), "šmʿ");
+        assert_eq!(
+            latin_skeleton(&hebrew_latin("עשׂה")),
+            latin_skeleton("ʿaśah[do]V")
+        );
+        assert_eq!(
+            latin_skeleton("ʾallown[oak]N"),
+            latin_skeleton(&hebrew_latin("אלנ"))
+        );
+    }
 
     #[test]
     fn clipped_text_stays_on_one_line() {
