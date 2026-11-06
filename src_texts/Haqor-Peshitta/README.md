@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-4, 2 John, 3 John, and Jude
-(6,071 of 7,958 Peshitta verses; 1,887 remain). Galatians 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-5, 2 John, 3 John, and Jude
+(6,097 of 7,958 Peshitta verses; 1,861 remain). Galatians 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4028,3 +4028,38 @@ Source checks for Galatians 4:
 - Verses 29–31 preserve the flesh/Spirit contrast, the persecution object,
   "so also now," the quoted expulsion and inheritance exclusion, and the
   concluding bondwoman/free-woman contrast.
+
+Source checks for Galatians 5:
+
+- Verse 3 retains both the renewed testimony and discourse connector.
+  Verse 2 groups the repeated first-person pronouns with their speech
+  clause without duplicating the English subject. Verses 4–5 retain severance from the Messiah, the law/grace contrast,
+  and the explicit first-person plural waiting predicate.
+- Verse 6 retains both negative circumcision/uncircumcision clauses and
+  faith perfected through love. Verse 7 preserves the passive persuasion
+  construction; verse 8 renders the hearers' persuasion without adding
+  an unsupported demonstrative.
+- Verse 10 retains emphatic "I myself," "our Lord," the judgment suffix,
+  and the "whoever he may be" qualification.
+- Verse 11 renders the final clause as a rhetorical "Could it be that…?"
+  rather than a purpose clause introduced by "lest." The offense belongs
+  to the cross; the cross is not an appositional explanation of the offense.
+- Verses 12–13 retain the wish and emphasis, the contrastive transitions,
+  the freedom calling, and service to one another through love. Verses
+  14–18 preserve the neighbor/self quotation, active reciprocal consumption
+  warning, Spirit
+  and flesh contrasts, negation, and final guidance conditional.
+  Verse 14's "in this" retains the preposition on its source demonstrative.
+- Verses 19–21 preserve every source vice category and the separate
+  resembling and doing predicates. Verse 21 renders the actual music/
+  singing term as "singing," distinct from the preceding drunkenness.
+- Verse 22 renders `magrat ruha` as one construct-linked "long-suffering"
+  idiom; its second word is not an additional fruit called "spirit."
+  The verse ends with faithfulness; verse 23 begins with meekness and
+  endurance before the law statement.
+- Verse 24 preserves the flesh, its passions, and its desires with their
+  possessive relationships; English neuter "its" does not add different
+  personal actors for differing Syriac grammatical suffix genders.
+- Verses 25–26 preserve both Spirit phrases, the first-person plural
+  life/following predicates, the negative becoming clause, vain glory,
+  and both reciprocal "one another" expressions.
