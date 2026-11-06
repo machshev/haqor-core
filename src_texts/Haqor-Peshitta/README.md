@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1, 2 John, 3 John, and Jude
-(6,300 of 7,958 Peshitta verses; 1,658 remain). Philippians 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-2, 2 John, 3 John, and Jude
+(6,330 of 7,958 Peshitta verses; 1,628 remain). Philippians 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4345,3 +4345,48 @@ Source checks for Philippians 1:
   its own source word, followed by their destruction and the recipients'
   life. God's grant includes both belief and suffering for the Messiah,
   continuing into the conflict seen and now heard in the speaker.
+
+Source checks for Philippians 2:
+
+- Verses 1–4 retain all four conditional appeals, the explicit heart
+  noun, encouragement, love, Spirit fellowship, affections and mercies,
+  the speaker's joy, one mind/love/soul/thought, humility, the companion,
+  and the contrast between one's own concerns and the other's.
+- Verses 5–8 preserve the mind in the addressees, Jesus Messiah, God's
+  likeness, the distinct equality assertion, robbery, self-emptying,
+  servant and human likeness, being found human, self-humbling, and
+  obedience. The two death nouns and the cross qualifier are linked to
+  their own source positions.
+- Verses 9–11 retain God's exaltation, giving him the name, every name,
+  Jesus' name, every knee, heaven/earth/under-earth, every tongue, and
+  glory to God his Father. "Gave him" belongs to its own verb and pronoun;
+  the nominal confession reads "Jesus the Messiah is Lord."
+- Verses 12–13 retain the beloved addressees, their obedience, the
+  near/far contrast and its actual "only" particle, all the more, fear
+  and trembling, and both the work command and work noun. God urges
+  them to will and work; the final clause explicitly says what they
+  desire, preserving its second-person plural subject.
+- Verses 14–16 retain the prohibitions on murmuring and dispute,
+  harmlessness, freedom from blemish, pure children of God, dwelling
+  in a perverse and crooked generation, and appearing as lights.
+  Verse 16 preserves the indicative "you are" relation and renders the
+  in-place-of idiom as "take the place of life for them," followed by
+  the speaker's boasting, the Messiah's day, and running/laboring not
+  in vain. [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=dwkh+N)
+  explicitly records the Syriac in-place-of construction under section
+  3(3); it is not treated as a physical location or replaced with a
+  different source noun.
+- Verses 17–18 preserve the conditional outpouring, sacrifice and
+  service of the addressees' faith, both rejoicing predicates, all the
+  recipients, and reciprocal joy with the speaker.
+- Verses 19–24 retain our Lord Jesus, Timothy's sending, the speaker's
+  relief, knowledge of the recipients, sincere care, the contrast with
+  self-seeking people, proven character, son/father service, contingent
+  travel, confidence, and the explicit "also" in coming to them.
+- Verses 25–30 keep Epaphroditus, brother/helper/fellow-worker and the
+  recipients' sent-one/minister roles, longing and distress, illness,
+  both recipients of God's mercy, sorrow upon sorrow, eager sending,
+  renewed joy and relief, reception and honor, the Messiah's work,
+  approaching death, risking his life, and completing their service
+  deficiency toward the speaker. The causal illness and work clauses
+  remain connected as complete English sentences.
