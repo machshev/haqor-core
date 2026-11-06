@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-2, 2 John, 3 John, and Jude
-(6,330 of 7,958 Peshitta verses; 1,628 remain). Philippians 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-3, 2 John, 3 John, and Jude
+(6,351 of 7,958 Peshitta verses; 1,607 remain). Philippians 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4390,3 +4390,45 @@ Source checks for Philippians 2:
   approaching death, risking his life, and completing their service
   deficiency toward the speaker. The causal illness and work clauses
   remain connected as complete English sentences.
+
+Source checks for Philippians 3:
+
+- Verses 1–3 retain my brothers, our Lord, the repeated same-things
+  construction, writing without weariness, the warning for the recipients,
+  all three beware commands, mutilation of flesh, circumcision, service
+  of God in spirit, glorying in Jesus Messiah, and no confidence in flesh.
+- Verses 4–6 preserve the speaker's own flesh-confidence, the causal
+  "for" and conditional comparison, eighth-day circumcision, Israel,
+  Benjamin, Hebrew ancestry, law and Pharisee identity, zeal, persecution
+  of the ecclesia, and blamelessness. The ancestry list continues the
+  comparison sentence. Concessive bare kad is an attested construction;
+  [Francois section 11.3(c)](https://markfrancois.wordpress.com/wp-content/uploads/2023/02/classical-syriac-grammar-week-11.pdf)
+  illustrates it with John 4:2.
+- Verses 7–9 retain the gain/loss reckoning, Jesus Messiah my Lord,
+  surpassing knowledge, loss of everything, refuse, gaining the Messiah,
+  being found in him, and the contrasted law/faith righteousness sources
+  with righteousness from God.
+- Verses 10–11 keep the explicit Jesus name, resurrection power,
+  participation in sufferings, conformity to his death, and the
+  conditional possibility of attaining resurrection. "From among the
+  dead" uses the attested prepositional sense of beth, recorded by
+  [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=byt+p), rather
+  than imposing a physical house on the expression.
+- Verses 12–14 preserve not-yet attainment and perfection, running,
+  taking hold, Jesus Messiah's taking hold of the speaker, what is behind
+  and ahead, the mark, victory, God's calling from above, and Jesus
+  Messiah. The fronted "one thing" remains with "I know" after the
+  postpositive particle, and the forget/stretch/run sequence forms
+  coherent English.
+- Verses 15–17 retain maturity, the conditional different way of thinking,
+  God's revelation to the recipients, what has been attained, both one
+  path and one accord, imitation, observing those who walk thus, and
+  the pattern seen in us.
+- Verses 18–19 preserve the many walkers, repeated prior telling,
+  present weeping, enemies of the Messiah's cross, destruction, belly,
+  the contrasted glory/shame, and earthly thoughts with the actual
+  possessive relations.
+- Verses 20–21 render the source noun as "our own service," preserving
+  heaven, expectation from there, the life-giver and our Lord Jesus
+  Messiah. Transformation retains our humiliation-body, his glory-body,
+  likeness, great power, and subjection of all things to himself.
