@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-12, 2 John, 3 John, and Jude
-(5,175 of 7,958 Peshitta verses; 2,783 remain). Romans 13 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-13, 2 John, 3 John, and Jude
+(5,189 of 7,958 Peshitta verses; 2,769 remain). Romans 14 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -42,6 +42,9 @@ Murdock, exact source positions and forms, morphology, and all SEDRA gloss
 alternatives. Translate each verse against these records. Independently
 review the mappings before adding rows, paying attention to negation,
 subjects, suffixes, idioms, and differences from familiar Greek numbering.
+Decode numeric morphology with `src_texts/SEDRA/SEDRA3.README.TXT`; a lemma
+gloss is not an inflected translation. Check causal particles, relative
+prefixes, and copular pronouns explicitly in the final linked text.
 Work in book and chapter order.
 
 Keep working context limited to one chapter: export its records to a file,
@@ -2082,3 +2085,35 @@ Source checks for Romans 12:
   source's further condition about doing these things, followed by the
   coals-of-fire/head image. Romans 12:21 preserves the negative and positive
   overcoming predicates, repeated evil and the final “with good.”
+
+Source checks for Romans 13:
+
+- Romans 13:1 retains plural governing authorities and the repeated
+  source copulas. פקידין is a masculine plural passive participle:
+  “are appointed,” agreeing with authorities; the lemma gloss “command”
+  does not turn it into an active “he commanded.” The two הו tokens
+  remain copular/emphatic rather than supplying a conjunction or a new
+  acting subject. The second clause keeps appointment by God distinct
+  from the relative clause about authorities existing.
+- Romans 13:2-5 preserves the repeated standing-against constructions,
+  their subjects and recipients, the sword image and both minister
+  clauses. Romans 13:5 is impersonal necessity, not a new personal
+  subject urging someone. All causal גיר occurrences remain represented.
+- Romans 13:6-7 renders כסף רשא as “head-money,” retains קימין as standing,
+  and keeps the repeated tax, fear and honor recipients. דמתחיב לה is
+  “what is owed to him”; the obligation is not reversed into what he owes.
+- Romans 13:8 retains the reciprocal חד לחד as “one another” and causal
+  גיר in the explanation about loving one's neighbor and fulfilling the
+  law. Romans 13:9 retains the repeated prohibitions and דתרחם as the
+  complement “that you love,” not an added temporal “when.” Romans 13:10
+  keeps love as the subject and the neighbor as its recipient.
+- Romans 13:11-14 preserves our sleep/life, the approaching day and the
+  works-of-darkness/armor-of-light contrast. “Our life” retains the
+  source's possessive life predicate; salvation is a contextual alternative.
+  Romans 13:13 uses contextual “revelry” for music/merriment in the vice
+  list, rather than implying a general prohibition on singing. The
+  impurity-of-the-bed phrase also retains the source bed noun. Our Lord,
+  Messiah Jesus, the flesh and its lust relation remain source-linked.
+
+All nine causal גיר occurrences were checked individually against the final
+linked text. Numeric morphology was decoded with the SEDRA source codebook.
