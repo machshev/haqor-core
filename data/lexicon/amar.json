@@ -11,7 +11,7 @@
     "creation"
   ],
   "gloss": "say, speak; say in the heart, think; command",
-  "summary": "The Hebrew Bible's ordinary verb of saying: it introduces nearly every reported speech, from \"And God said\" at creation to the prophets' \"Thus says Yahweh\". What is said may be spoken to another, said \"in the heart\" as thought or resolve, or spoken with authority as a command. Its nouns name what is said, and אִמְרָה above all names Yahweh's word, called refined and trusted as his promise. The same root means \"see\" in Akkadian and \"command\" in Arabic, while Aramaic, Syriac, Phoenician and Ugaritic share the sense \"say\".",
+  "summary": "The Hebrew Bible's ordinary verb of saying: it introduces nearly every reported speech, from \"And God said\" at creation to the prophets' \"Thus says Yahweh\". What is said may be spoken to another, said \"in the heart\" as thought or resolve, or spoken with authority as a command. Its nouns name what is said, and אִמְרָה above all names Yahweh's word, called refined and trusted as his promise. Aramaic, Syriac and Phoenician share the sense \"say\", Arabic has \"command\" and Ge'ez \"show, make known\"; Akkadian and Ugaritic have a verb ʾmr \"see\", which may be the same root.",
   "words": [
     {
       "lemma": "אָמַר",
@@ -581,9 +581,9 @@
       "lang": "syc",
       "form": "ܐܡܪ",
       "translit": "ʾemar",
-      "gloss": "say; speak; announce",
+      "gloss": "say, speak; tell; think; command",
       "relation": "cognate",
-      "note": "The Peshitta's New Testament keeps the Hebrew idiom: Paul's \"do not say in your heart\" is דּלָא תִּאמַר בּלֵבָּך.",
+      "note": "Its senses run as the Hebrew's: say, think, command, and in the passive be said, be called. The Peshitta's New Testament keeps the Hebrew idiom: Paul's \"do not say in your heart\" is דּלָא תִּאמַר בּלֵבָּך.",
       "evidence": [
         {
           "ref": "Rom.10.6",
@@ -592,6 +592,18 @@
         {
           "ref": "2Co.4.6",
           "note": "Peshitta: \"God who said (דֵּאמַר)\"."
+        },
+        {
+          "source": "payne-smith-1903",
+          "locator": "p. 20, ܐܡܰܪ",
+          "url": "https://www.dukhrana.com/lexicon/PayneSmith/pages/0029.jpg",
+          "note": "\"to say, speak ... to tell, affirm, assert, intend\"; Ethpe. \"to be said, told\"."
+        },
+        {
+          "source": "brockelmann-1928",
+          "locator": "p. 26, ܐܡܰܪ",
+          "url": "https://www.dukhrana.com/lexicon/Brockelmann/pages/0044.jpg",
+          "note": "\"dixit ... putavit ... cogitavit, constituit ... jussit\"; Etpe. \"dictus est ... appellatus est\"."
         },
         {
           "source": "sedra",
@@ -603,51 +615,18 @@
       "lang": "phn",
       "form": "𐤀𐤌𐤓",
       "translit": "ʾmr",
-      "gloss": "say",
+      "gloss": "say; say to oneself, think",
       "relation": "cognate",
-      "note": "Punic.",
+      "note": "Phoenician and Punic, with the noun ʾmr \"word\" beside it, as Hebrew has אֹמֶר.",
       "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 61, ʾ-M-R I and ʾMR II",
+          "note": "\"1. SAY; 2. SAY to one's self, THINK\"; noun \"WORD\". Cites KAI 14.2 (Eshmunazor, \"saying\") and KAI 50.2 (\"say to my sister\")."
+        },
         {
           "source": "anderson-moser-2024",
           "locator": "SEM000565, PUN000148"
-        }
-      ]
-    },
-    {
-      "lang": "uga",
-      "form": "𐎀𐎎𐎗",
-      "translit": "ʾmr",
-      "gloss": "see; say",
-      "relation": "cognate",
-      "note": "Ugaritic has both senses, the Akkadian \"see\" and the West Semitic \"say\".",
-      "evidence": [
-        {
-          "source": "wiktionary",
-          "locator": "𐎀𐎎𐎗, Ugaritic",
-          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%8E%F0%90%8E%97"
-        },
-        {
-          "source": "anderson-moser-2024",
-          "locator": "SEM000565, UGC000405"
-        }
-      ]
-    },
-    {
-      "lang": "akk",
-      "form": "amāru",
-      "translit": "amāru",
-      "gloss": "see, look at; find; read (a tablet)",
-      "relation": "cognate",
-      "note": "In Akkadian the root is the ordinary verb \"see\", attested more than twelve thousand times in Oracc's corpora. Hebrew uses it only of speaking.",
-      "evidence": [
-        {
-          "source": "oracc",
-          "locator": "armep x000006530, amāru [see] V",
-          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000006530.html"
-        },
-        {
-          "source": "anderson-moser-2024",
-          "locator": "SEM000565, AKK000451"
         }
       ]
     },
@@ -657,12 +636,13 @@
       "translit": "ʾamara",
       "gloss": "command, order, bid; (stem II) make someone commander",
       "relation": "cognate",
-      "note": "Arabic keeps the root for speech with authority: أَمْر \"command, affair\", أَمِير \"commander\".",
+      "note": "Arabic keeps the root for speech with authority: أَمْر \"command, affair\".",
       "evidence": [
         {
           "source": "lane",
-          "locator": "p. 95, أَمَرَهُ",
-          "note": "\"He commanded him; ordered him; bade him.\""
+          "locator": "pp. 95–99, root أمر; p. 95, أَمَرَهُ",
+          "url": "https://ejtaal.net/aa/img/ll/1/ll-0132.png",
+          "note": "\"He commanded him; ordered him; bade him; enjoined him.\""
         },
         {
           "source": "lane",
@@ -675,12 +655,73 @@
       "lang": "gez",
       "form": "አመረ",
       "translit": "ʾammara",
-      "gloss": "show, make known",
+      "gloss": "show, indicate, make known, tell",
       "relation": "cognate",
+      "note": "Ge'ez uses the root of making known, and in another stem (አእመረ) of knowing.",
       "evidence": [
         {
-          "source": "anderson-moser-2024",
-          "locator": "SEM000565, GEZ000300"
+          "source": "dillmann-1865",
+          "locator": "col. 728, አመረ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n387",
+          "note": "\"monstrare, ostendere, significare, indicare ... notum facere alicui, edocere\"; II,1 \"cognoscere, nosse, scire\"."
+        },
+        {
+          "source": "leslau-1987",
+          "locator": "p. 25, ʾammara",
+          "note": "\"show, indicate, tell, make a sign, make known, demonstrate, inform, instruct\"."
+        }
+      ]
+    },
+    {
+      "lang": "akk",
+      "form": "amāru",
+      "translit": "amāru",
+      "gloss": "see, look at; find; read (a tablet)",
+      "relation": "possible",
+      "note": "The ordinary Akkadian verb \"see\", attested more than twelve thousand times in Oracc's corpora, with the root ʾmr; it is never used of speaking. Whether it is the Hebrew root depends on a development \"see / be clear > show > say\", which the Ge'ez \"show, make known\" would bridge; Brockelmann counts ʾmr \"say\" common Semitic \"except Akkadian and Ethiopic\".",
+      "evidence": [
+        {
+          "source": "cad",
+          "locator": "A/2 p. 5, amāru A v.",
+          "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_a2.pdf",
+          "note": "\"to see, behold, look at ... to find ... to read (a tablet, a document, an inscription)\"."
+        },
+        {
+          "source": "ebl",
+          "locator": "amāru I",
+          "url": "https://www.ebl.lmu.de/api/words/am%C4%81ru%20I",
+          "note": "Guide word \"see\"; root ʾmr."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000006530, amāru [see] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000006530.html"
+        },
+        {
+          "source": "brockelmann-1928",
+          "locator": "p. 26, ܐܡܰܪ",
+          "note": "\"(SEM exc. Acc et Aeth)\"."
+        }
+      ]
+    },
+    {
+      "lang": "uga",
+      "form": "𐎀𐎎𐎗",
+      "translit": "ʾmr",
+      "gloss": "(Gt) see, look at",
+      "relation": "possible",
+      "note": "Attested as \"see\" (KTU 1.2 I 32), with Akkadian; no use as \"say\" was found. Its relation to the Hebrew is the Akkadian's question. Still to consult: DULAT, and Sanmartín, \"Semantisches über ʾmr/'Sehen' und ʾmr/'Sagen' im Ugaritischen\", UF 5 (1973) 263–270.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 44, ʾmr",
+          "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-lexical-relationship_fisher-milton-charles_1969-04/page/n55",
+          "note": "\"ʾmr Gt: 'see, look at'\", compared with Ge'ez ʾammara \"show, indicate\"."
+        },
+        {
+          "source": "leslau-1987",
+          "locator": "p. 25, ʾammara",
+          "note": "Lists Ugaritic ʾmr \"see\"."
         }
       ]
     }
@@ -759,5 +800,5 @@
       ]
     }
   ],
-  "note": "Left out, for their own entries: אָמִיר \"top, bough\" (Isa 17:6, 9) and its Hiphil (Hos 4:7), which BDB files here but which Wiktionary links to Proto-Semitic *rayam- \"be high\" (its \"top\" sense is not the Arabic أَمِير \"commander\", which belongs with أَمَرَ \"command\", Lane p. 96); אֱמֹרִי \"Amorite\", a people's name, not from \"say\"; אִמֵּר, אִמְרִי and אוֹמָר, names whose link to the verb is uncertain; and the unrelated words BDB's section also holds (אֶמֶשׁ, אָנָּא, אֹן, אַמְרָפֶל, אִמַּר \"lamb\"). The Ugaritic should be checked in DULAT (lookup only), and the Ge'ez in Dillmann (lookup only), before review. Daniel's Aramaic is a cognate here, not a separate word, because the entry is the Hebrew root's."
+  "note": "Left out, for their own entries: אָמִיר \"top, bough\" (Isa 17:6, 9), which Wiktionary links to Proto-Semitic *rayam- \"be high\"; Hos 4:7 אָמִיר, filed here by Haqor's word data but the Hiphil of מוּר \"exchange\" (MACULA's lemma; LXX θήσομαι); אֱמֹרִי \"Amorite\", a people's name; אִמֵּר, אִמְרִי and אוֹמָר, names whose link to the verb is uncertain; and the unrelated words BDB's section also holds (אֶמֶשׁ, אָנָּא, אֹן, אַמְרָפֶל, אִמַּר \"lamb\"). BDB's אֶמְרָה is the same word as אִמְרָה (the same occurrences). Ugaritic: DULAT not yet consulted (no open copy found). Daniel's Aramaic is a cognate here, not a separate word, because the entry is the Hebrew root's."
 }
