@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-6, 2 John, 3 John, and Jude
-(6,973 of 7,958 Peshitta verses; 985 remain). Hebrews 7 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-7, 2 John, 3 John, and Jude
+(7,001 of 7,958 Peshitta verses; 957 remain). Hebrews 8 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5282,3 +5282,11 @@ Source checks for Hebrews 6:
 - In 6:9–12, the contrastive דינ particles are rendered as “however”/“but,” including the exhortation to show diligence and not become discouraged. “Ecclesia” terminology is not present in this chapter.
 - In 6:13–18, Abraham, God, the promise, the greater one, the oath, the two unchangeable things, refuge, comfort, and hope are all retained. The source’s oath sequence in 6:13 is compressed into natural English while preserving the self-swearing clause.
 - In 6:19–20, the anchor, soul, unshaken condition, veil, Jesus’ prior entrance, priesthood forever, and Melchizedek likeness are each linked. The contiguous אפי תרעא is an attested sanctuary-entry curtain/veil compound (CAL, https://cal.huc.edu/oneentry.php?cits=all&lemma=%29pyn+N); with לגו מן it is rendered “within the veil,” retaining the spatial construction without inventing a second “inner” adjective.
+
+Source checks for Hebrews 7:
+
+- Verses 1–4 retain the copula identifying Melchisedec as king and priest, the later subject who meets Abraham, the blessing and tithe, and the discourse contrasts in “however” (7:1, 4). The genealogy clause in 7:3 says that his parents, beginning, and end are not written, rather than asserting that he literally had no parents.
+- Verses 5–10 preserve the causal “for,” the Levitical priesthood and law command, the people/brothers and Abraham-loins relations, and the temporal “when” (not “although”). Scripture is explicitly the witness that the one receiving tithes lives (7:8), and the Levi-through-Abraham argument remains intact.
+- Verses 11–15 preserve the conditional perfection question and both priesthood likenesses. The source’s אמר ... דינ ... likeness-of-Aaron clause is rendered as a complete counterfactual sentence, “It would have said instead: he would be according to the likeness of Aaron,” without importing an unsupported “not be called”; 7:13 keeps the born-of-another-tribe and no-altar-service argument, and 7:14 retains “our Lord” and the Moses contrast.
+- Verses 16–22 retain the two-part fleshly-precepts/life-power contrast, the weakness and no-benefit rationale, the better hope and approach to God, and the oath mediated through David. Jesus remains the guarantee of the better covenant.
+- Verses 23–28 preserve the mortal-versus-enduring priesthood contrast, life and intercession, the priest’s purity and separation from sins, the one-time self-offering, and the law/oath appointment of the perfected Son. Verse 26 says “such a priest”; “high priest” remains only where the source has the chief-priest compound in 7:27.
