@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, 2 John, 3 John, and Jude
-(6,801 of 7,958 Peshitta verses; 1,157 remain). Titus 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1, 2 John, 3 John, and Jude
+(6,817 of 7,958 Peshitta verses; 1,141 remain). Titus 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5183,3 +5183,11 @@ Source checks for 2 Timothy 4:
 - Rendered verse 8's preserved crown, repayment by the Lord, righteous Judge, and beneficiaries in one grammatical sentence while retaining each source position.
 - Kept personal suffixes explicit in the appeals to Timothy (come to me, bring him with you, beware of him) and in the greetings.
 - Used “evangelist” and “ministry” in verse 5 and “Lord,” “Messiah,” and “kingdom” terminology consistently with the existing Peshitta translation.
+
+Source checks for Titus 1:
+
+- v1 renders `בהימנותא דגביא דאלהא` as “in the faith of God's chosen,” retaining the preposition, chosen plural, and genitive relation.
+- v2–v5 retain the finite person/number distinctions, attached possessive suffixes, and relational d-prefixes, including “his word,” “its season,” “our proclamation,” and Titus-directed actions.
+- v6 renders `אינא דדלא רשינ` idiomatically as “Who is blameless”; v7 uses “elder” for `קשישא`, not an imported “overseer.”
+- v7–v8 preserve each prohibition, the hand/strike idiom, gain phrase, contrast, and moral qualifications; v15–v16 retain negation, plural suffixes, denial, and disqualification.
+- v12 and v14 preserve source order and conjunctions through coherent grouped spans: “are always liars” and “to Jewish myths and to human commandments.”
