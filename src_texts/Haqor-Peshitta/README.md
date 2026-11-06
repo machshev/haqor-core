@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-14, 2 John, 3 John, and Jude
-(5,212 of 7,958 Peshitta verses; 2,746 remain). Romans 15 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-15, 2 John, 3 John, and Jude
+(5,245 of 7,958 Peshitta verses; 2,713 remain). Romans 16 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2159,3 +2159,48 @@ All eleven גיר occurrences were checked individually against the final
 linked English. Decoded morphology distinguishes finite and participial
 forms, with first/second/third-person and passive/reflexive roles reviewed
 against the source codebook and running context.
+
+Source checks for Romans 15:
+
+- Romans 15:1-3 preserves the strong/weak obligation, the infirmity being
+  borne, both self-pleasing negatives, the neighbor's good and the quoted
+  reproach/reproachers roles.
+- Romans 15:4 retains the passive wording about things written beforehand
+  and the instruction predicate. The purpose prefix in דבמסיברנותא is explicit in “so that
+  through endurance”; endurance, Scripture's comfort and hope keep their
+  distinct links. סברא נהוא לנ is the possessive existential “we may have
+  hope,” rather than forcing a bare gloss sequence into the English.
+- Romans 15:5-11 retains mutual thought, one mind and one mouth, God as
+  the Father of our Lord, reciprocal receiving, the glory of God and the
+  truth of God. Proleptic suffixes do not duplicate the explicit owners.
+  The Gentiles/mercy clause and quoted confession, singing, rejoicing and
+  praise retain their speakers, recipients, vocatives and imperatives.
+- Romans 15:12-14 keeps Jesse's root, rising/chief roles and Gentile hope;
+  “all joy” is one quantified phrase, not an extra “all of it.” The source
+  Holy Spirit phrase does not add another God noun. Repeated emphatic
+  first-person forms identify one persuaded speaker, not two separate
+  persuasion predicates.
+- Romans 15:15 retains the ב prefix in בטיבותא as the reason supplied by grace
+  for the reminder; grace is not made the reminder's object. Romans
+  15:16-18 keeps the minister/offering roles and passive acceptance,
+  possession in “I have,” and Messiah as the actor who worked through
+  Paul's hands. “My hands” does not become “Messiah's hands.”
+- Romans 15:19-22 retains the Jerusalem/Illyricum extent, the single Spirit
+  of God ownership chain, the participial preaching continuation, the statement about
+  Messiah's name, the see/hear quotation and the repeated hindrance to coming.
+- Romans 15:23-25 preserves the desire over many years and future route through
+  the addressees to Spain, “a little” refreshment, “you will accompany me,”
+  and the present Jerusalem journey to serve the saints.
+- Romans 15:26-27 retains Macedonia/Achaia, fellowship with the needy saints
+  in Jerusalem, the Gentiles' participation and the spiritual/physical
+  service contrast. Both גיר tokens are causal discourse connectors,
+  not prepositional “for those” or “for spiritual things.”
+- Romans 15:28-33 keeps completion, sealing and fruit, the blessing of the Gospel of
+  Messiah, the governed request “I ask you,” prayer for the speaker
+  to God, deliverance and passive acceptance of the service, joy and
+  refreshment. The closing “But the God of peace” retains the connector
+  without duplicating God.
+
+All 33 verses and 412 source words received source-to-English and running-
+English review. All four גיר occurrences were checked individually in their
+final English constructions.
