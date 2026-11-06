@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-7, 2 John, 3 John, and Jude
-(7,001 of 7,958 Peshitta verses; 957 remain). Hebrews 8 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-8, 2 John, 3 John, and Jude
+(7,014 of 7,958 Peshitta verses; 944 remain). Hebrews 9 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5290,3 +5290,13 @@ Source checks for Hebrews 7:
 - Verses 11–15 preserve the conditional perfection question and both priesthood likenesses. The source’s אמר ... דינ ... likeness-of-Aaron clause is rendered as a complete counterfactual sentence, “It would have said instead: he would be according to the likeness of Aaron,” without importing an unsupported “not be called”; 7:13 keeps the born-of-another-tribe and no-altar-service argument, and 7:14 retains “our Lord” and the Moses contrast.
 - Verses 16–22 retain the two-part fleshly-precepts/life-power contrast, the weakness and no-benefit rationale, the better hope and approach to God, and the oath mediated through David. Jesus remains the guarantee of the better covenant.
 - Verses 23–28 preserve the mortal-versus-enduring priesthood contrast, life and intercession, the priest’s purity and separation from sins, the one-time self-offering, and the law/oath appointment of the perfected Son. Verse 26 says “such a priest”; “high priest” remains only where the source has the chief-priest compound in 7:27.
+
+Source checks for Hebrews 8:
+
+- The opening contrast particle דינ is rendered as “but,” while the repeated causal גיר is retained as “for” in 8:3, 8:7, and 8:8.
+- The priest terminology distinguishes רב כומרא as “chief priest,” and כומרא in the plural as “priests”; the offering nouns קורבנא and דבחא are kept as “gifts” and “sacrifices.” In 8:6, בה מצעיא is retained as “in it as mediator” rather than dropping the preposition.
+- The relative and copular sequence in 8:2 is rendered “the true tabernacle that God has fixed and not a human being,” retaining both the divine actor and the negative human contrast.
+- The Moses instruction in 8:5 preserves the imperative “See, make everything,” the pattern relative, and the suffix “to you,” rather than treating the citation as an unlinked quotation.
+- The covenant quotation in 8:8–12 retains the family/house wording, the hand-taking and exodus sequence, the negative covenant-abiding clause, the “to me a people” relation, and the paired youngest-to-oldest range.
+- In 8:10, the source order is rendered with the law in their minds, writing it on their hearts, and the paired “I will be their God / they will be my people” relation; 8:11 keeps the finite verb and its first-person object together as “all of them will know me.”
+- In 8:13, the source distinguishes the first covenant being made old from what has itself grown old and decayed; the final clause therefore reads “is near to decay.”
