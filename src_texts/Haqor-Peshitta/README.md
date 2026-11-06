@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-4, 2 John, 3 John, and Jude
-(6,213 of 7,958 Peshitta verses; 1,745 remain). Ephesians 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-5, 2 John, 3 John, and Jude
+(6,246 of 7,958 Peshitta verses; 1,712 remain). Ephesians 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4229,3 +4229,40 @@ Source checks for Ephesians 4:
   The Syriac adjective is rendered "kind" using the
   [CAL adjective entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=bsym+A),
   which explicitly lists the Syriac sense "kind, lenient."
+
+Source checks for Ephesians 5:
+
+- Verses 1–4 retain beloved children, the Messiah's love for us and
+  self-delivery for us, offering, sacrifice, fragrance, the prohibited
+  conduct and speech, and thanksgiving in place of these things.
+- Verses 5–7 preserve the idol-worship clause, inheritance in the kingdom
+  of Messiah and God, empty words, the causal explanation of God's wrath,
+  disobedience, and the prohibition on partnership. The anticipatory
+  possessive on kingdom is absorbed into the following explicit genitives.
+- Verses 8–10 preserve the causal particle, former darkness and present
+  light in our Lord, the instruction to walk as children of light,
+  plural fruits, goodness, righteousness, truth, and discerning what
+  pleases our Lord. The closing instruction in verse 8 is linked to its
+  own source positions.
+- Verses 11–14 retain fruitless works, reproof, secret actions, impersonal
+  loathsomeness even to mention them, exposure and revelation by light,
+  and the wake/rise/illumination quotation. Verse 12 introduces no
+  first-person speaker; verse 13 preserves the finite exposure and
+  revelation predicates and the final identification with light.
+- Verses 15–17 retain walking worthily, foolish/wise people, the wise
+  buying their opportunity, evil days, understanding, and God's will.
+- Verses 18–24 preserve wine and excess, filling with the Spirit, psalms,
+  praises and songs, singing in the hearts, thanksgiving for everyone,
+  our Lord Jesus Messiah, and God the Father. Verse 21 says the Messiah's
+  love. Verse 22 retains our Lord, and verse 23 the body's life-giver.
+- Verses 25–27 keep the Messiah's love and self-delivery for his ecclesia,
+  sanctifying and cleansing, water and word, establishing it for himself,
+  glory, stain, wrinkle, resemblance, holiness, and freedom from blemish.
+  The purpose clauses continue as a complete English sentence.
+- Verses 28–30 retain loving one's wife as one's body and oneself,
+  nourishing and caring, the Messiah's ecclesia, and membership in his
+  body, flesh, and bones. The comparison in verse 29 starts at the actual
+  comparison word, and verse 30 continues the causal sentence.
+- Verses 31–33 preserve father and mother, clinging to the wife, the
+  explicit two becoming one flesh, the great mystery, the Messiah and
+  his ecclesia, each husband's love, and the wife's fear of her husband.
