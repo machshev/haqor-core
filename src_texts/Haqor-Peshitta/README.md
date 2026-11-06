@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-11, 2 John, 3 John, and Jude
-(5,543 of 7,958 Peshitta verses; 2,415 remain). 1 Corinthians 12 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-12, 2 John, 3 John, and Jude
+(5,574 of 7,958 Peshitta verses; 2,384 remain). 1 Corinthians 13 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2786,3 +2786,61 @@ Source checks for 1 Corinthians 11:
 All 34 verses and 471 source words received source-to-English and running
 English review. The twelve גיר, eleven דין, two הכיל and one מכיל
 occurrences were checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 12:
+
+- Verses 1-3 preserve the desire for the addressees to know, their former
+  pagan condition, voiceless idols and being led without discernment.
+  The source's positive desire to know is not replaced with the familiar
+  wording about not wanting ignorance. Speaking by God's Spirit cannot
+  declare Jesus accursed, and confessing Jesus as Lord requires the Holy
+  Spirit; both speech predicates and both negative qualifications remain.
+- Verses 4-6 retain the distinct gifts, services and powers, with one
+  Spirit, one Lord and one God respectively. God works all in everyone.
+  Verses 7-10 keep each recipient, the manifestation and its benefit,
+  words of wisdom and knowledge, faith, healing gifts, miracles, prophecy,
+  discerning spirits, kinds of tongues and their interpretation. Repeated
+  Spirit references and the local discourse particles remain explicit.
+- Verse 11 makes the one Spirit the worker and distributor of all these
+  things according to the Spirit's will. Grammatical feminine agreement
+  is not turned into a new actor or a claim about human sex. Repeated
+  datives and anticipatory suffixes do not create extra recipients.
+- Verses 12-14 retain one body, many members, all the members, and the
+  analogy with Messiah. The first-person plural חנן is "we," not a
+  singular dictionary gloss. All of us were baptized by one Spirit into
+  one body, with Jews/Gentiles and slave/free distinctions; all drank one
+  Spirit. The final drinking verb is active in the supplied Syriac.
+- Verses 15-16 keep the foot/hand and ear/eye contrasts and the quoted
+  claims not to belong to the body. Those claims do not actually remove
+  the member from the body. The final rhetorical questions expect "No";
+  an English "is it not ... not of the body?" would suggest the opposite
+  answer. The repeated "from it/from the body"
+  constructions name one relation rather than an additional body.
+- Verses 17-21 retain both counterfactuals about eye, hearing and smell,
+  God's placing every member as he willed, the question where the body
+  would be if all were one member, and many members versus one body.
+  The eye/hand and head/feet statements keep their distinct speakers,
+  recipients, singular/plural forms and inability to declare the other
+  unnecessary.
+- Verses 22-25 retain the necessity of members considered weak, greater
+  honor and decoration for the less regarded members, and no need of
+  honor for the honored members in us. God tempered the body and gave
+  greater honor to the lesser member. The purpose is no division, with
+  all members caring equally for one another.
+- Verse 26 keeps both shared suffering and shared honor. Its final
+  predicate says all the members are honored, rather than substituting
+  the familiar "rejoice." Verse 27 retains the addressees as Messiah's
+  body and members "in your place."
+- Verses 28-30 keep God's ecclesia and every listed role or gift:
+  apostles, prophets, teachers, workers of miracles, healing gifts,
+  helpers, leaders and kinds of tongues. The repeated "after them"
+  sequence and every rhetorical "all" question remain explicit; healing,
+  speaking in tongues and interpreting are separate questions.
+- Verse 31 begins with the source's explicit condition: if the
+  addressees are zealous for greater gifts, Paul further shows them a
+  superior way. It is not changed into the familiar imperative to desire
+  gifts.
+
+All 31 verses and 425 source words received source-to-English and running
+English review. The seven גיר and eighteen דין occurrences were checked
+individually against the final English clauses.
