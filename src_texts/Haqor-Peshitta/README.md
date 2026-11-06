@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1, 2 John, 3 John, and Jude
-(6,403 of 7,958 Peshitta verses; 1,555 remain). Colossians 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-2, 2 John, 3 John, and Jude
+(6,426 of 7,958 Peshitta verses; 1,532 remain). Colossians 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4522,3 +4522,66 @@ Source checks for Colossians 1:
   with their respective predicates, and the given power's assistance
   remains explicit. Relative and conditional clauses are joined into
   complete English sentences.
+
+Source checks for Colossians 2:
+
+- Verses 1–3 retain the speaker's desire and struggle for the recipients,
+  Laodicea, and the rest who have not seen his face in the flesh. The
+  first-person dative belongs with having the struggle; face and flesh
+  stay with their actual source positions. The following purpose keeps
+  encouraged hearts, approach in love, riches of assurance, understanding
+  of knowledge, the mystery of God the Father and Messiah, and the hidden
+  treasures of wisdom and knowledge.
+- Verses 4–5 retain the discourse connective, the warning against
+  persuasive words, the causal/concessive opening, absence in the flesh,
+  presence in spirit, rejoicing, observed order, and steadfast faith.
+  The flesh phrase remains explicit even though the opening span groups
+  the postpositive causal particle with its English clause.
+- Verses 6–8 retain receiving Jesus Messiah our Lord, walking in him,
+  strengthening the recipients' roots, being built and established,
+  learned faith and thanksgiving. The root-strengthening verb is Pael
+  active, with roots as its object, followed by the passive building
+  verb. The warning preserves
+  plundering through philosophy and empty deceit, human teaching, worldly
+  elements, and the negative contrast with Messiah.
+- Verses 9–12 preserve the relative link to Messiah, bodily fullness of
+  divinity, completeness in him, all principalities and authorities,
+  circumcision without hands, putting off the flesh of sins, Messiah's
+  circumcision, burial in baptism, rising in him and with him, belief in
+  God's power,
+  and his raising him from among the dead. The conjunctions at the start
+  of the circumcision and burial statements remain explicit. The masculine
+  suffix in the rising clause refers to him, rather than the feminine
+  baptism noun.
+- Verses 13–15 preserve the recipients' death in sins and uncircumcision,
+  being made alive with him, and forgiveness of all our sins. The
+  first-person plural suffixes stay first person. The record of our debt
+  is blotted out by his decrees, removed and fastened to his cross. The
+  source's stripping off his body remains the means of exposing the
+  principalities and authorities, followed by their shame openly in
+  his own person; neither possessive is dropped.
+- Verses 16–17 retain the prohibition on troubling the recipients about
+  food, drink, distinctions of festivals, new moons and Sabbaths, followed
+  by shadows of coming things and the body/Messiah contrast.
+- Verses 18–19 retain wishing, humility of mind, condemnation and the
+  separate second-person subjection-to-angel-worship predicate. The
+  negative caution is supported by
+  [CAL's lmh entry, sense 2](https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c), which records
+  its lest-with-imperfect use in Syriac. Prying into unseen things, vain
+  inflation in a fleshly mind, failure to hold the head, the whole body,
+  joints and members, construction and establishment, and God's growth
+  all remain. The while-clause keeps the same third-person actor through
+  the following failure to hold the head.
+- Verses 20–23 retain the causal conditional, dying with Messiah from
+  worldly elements, and the question about being judged as though living
+  in the world. One seven-word source span allows the question's predicate
+  and comparison to appear in natural English order without moving a
+  predicate into a neighboring span. The three prohibitions are quoted
+  together; the quotation closes before the explanation of perishing use
+  and human commandments and teachings. The appearance of wisdom,
+  displayed humility, fear of God, not sparing the body, and the final
+  honorable/use-of-flesh contrast remain explicit.
+- Verse 21 retains the three prohibitions under shared English negative
+  scope. The last verb has a physical-contact use documented in
+  [J. Payne Smith, pp. 351–352](https://tmcdaniel.palmerseminary.edu/Payne_Smith_1-626%2BTP.pdf#page=353);
+  the contextual rendering "handle" follows this physical-contact use.
