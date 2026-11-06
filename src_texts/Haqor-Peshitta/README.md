@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1, 2 John, 3 John, and Jude
-(5,733 of 7,958 Peshitta verses; 2,225 remain). 2 Corinthians 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-2, 2 John, 3 John, and Jude
+(5,750 of 7,958 Peshitta verses; 2,208 remain). 2 Corinthians 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3158,4 +3158,62 @@ Source checks for 2 Corinthians 1:
 
 All 24 verses and 356 source words received source-to-English and running
 English review. The six גיר, five דין and one הכיל occurrences were
+checked individually against the final English clauses.
+
+Source checks for 2 Corinthians 2:
+
+- Verses 1-2 retain Paul's decision within himself, not coming again
+  in sadness, grieving the addressees and the question of who will
+  gladden him except the one he made sad. The repeated first-person
+  forms identify one actor rather than introducing another person.
+- Verse 3 makes the others the subjects of "to gladden me": the actual
+  verb has a third-person plural subject and first-person singular
+  object. This differs from Murdock's "whom I ought to make joyful."
+  Both occurrences of "all of you" remain, along with Paul's joy and
+  their joy. Verse 4 retains both sources of distress, these things
+  written with many tears, and the purposes of not causing grief but
+  making known the exceeding love Paul has for the addressees.
+- Verse 5 keeps Paul as the person grieved in the second grief clause,
+  not as its cause. "Alone" expresses the contextual contrast with
+  "all of you," as in Murdock's supplied "only"; it is not a separate
+  Syriac word. The small degree and the actual noun "word" in the
+  final clause remain explicit.
+- Verse 6 treats the masculine demonstrative as the recipient of the
+  rebuke, not as a modifier of the feminine rebuke noun. The sufficiency
+  expression is rendered "sufficient" without requiring a separate
+  temporal "already." Verses 7-8 preserve therefore, the contrary
+  course of forgiving and comforting him, the passive swallowing of
+  such a person in excessive grief, and confirmation to him of the
+  addressees' love.
+- Verse 9 retains both the causal particle and "for this reason," with
+  also, writing, knowing by testing, and obedience in everything.
+  Verse 10 keeps the shared forgiveness predicate, all three actual
+  past "I forgave" forms, their relative objects, the causal particle,
+  the addressees' sake and the presence of Messiah. It does not add a
+  conditional "if" or turn repeated identifying pronouns into another
+  actor. Verse 11 retains Satan's possible overreaching of us and the
+  positive statement that we know his devices.
+- Verses 12-13 retain Troas, the Gospel of Messiah, the opened door in
+  the Lord, Paul's lack of rest in his spirit, not finding Titus his
+  brother, taking leave of them and departure into Macedonia. Titus
+  is not made a companion on that departure.
+- Verse 14 retains the noun for sight or spectacle in "makes a
+  triumphal display." "Triumphal" is a contextual interpretation:
+  the [published Syriac analysis and English parallels](https://www.dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=2Corinthians+2%3A14)
+  show the spectacle noun and Etheridge's and Murdock's triumph
+  renderings. No captive or victor role is added. The separate "for
+  us" and "through us," Messiah, the odor of knowledge of him and
+  every place remain explicit.
+- Verses 15-16 retain "we," the sweet odor through Messiah to God,
+  those living and those perishing, and the two distinct expressions
+  "death to death" and "life to life." All four source death and life
+  nouns remain, followed by the question of adequacy for these things.
+- Verse 17 retains the negative comparison with others, diluting the
+  plural "words of God," truth, being from God, speaking before God
+  in Messiah and the actual speaking predicate. All three references
+  to God remain; a possessive suffix anticipating the named owner
+  does not introduce another owner.
+
+All 17 verses and 230 source words received source-to-English and running
+English review. The six גיר, seven דין and one מכיל occurrences were
 checked individually against the final English clauses.
