@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-4, 2 John, 3 John, and Jude
-(6,530 of 7,958 Peshitta verses; 1,428 remain). 1 Thessalonians 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 John, 3 John, and Jude
+(6,558 of 7,958 Peshitta verses; 1,400 remain). 2 Thessalonians 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4848,3 +4848,49 @@ Source checks for 1 Thessalonians 4:
   and reciprocal comfort with these words. Descend is rendered at its
   actual position 9; from heaven is at positions 10–11. The source order
   is preserved across these distinct instrumental and predicate spans.
+
+Source checks for 1 Thessalonians 5:
+
+- Verses 1–3 retain times and seasons, my brothers, the impersonal lack
+  of need for writing, emphatic knowledge, our Lord's day and the thief
+  at night comparison. The late coming predicate is grouped with its
+  actual comparison words for natural English order. Peace and tranquility
+  are coordinated in the reported speech. Sudden destruction, labor pains
+  on a pregnant woman and the negative escape clause remain. The destruction
+  noun at position 9 stays with its verb and target, while the comparison
+  begins at position 10. The min-shely suddenly expression is also attested
+  in [CAL's qpl examples](https://cal.huc.edu/oneentry.php?cits=all&lemma=qpl+V).
+- Verses 4–7 preserve the darkness contrast, that day overtaking like a
+  thief, the repeated sons-of-light/day/night/darkness statements, and
+  both negatives. The postposed you belongs to the sons-of-light clause.
+  Sleeping contrasted with wakefulness and sobriety remains, followed by
+  the separate nighttime sleeping and drunkenness clauses. Night at
+  position 8 belongs to the second drunkenness predicate, not its subject.
+- Verses 8–11 preserve the daytime identity, mental wakefulness, the
+  breastplate of faith and love, the helmet of life's hope, God's not
+  appointing the speakers for wrath, acquiring life through our Lord
+  Jesus Messiah, his death for them, the waking/sleeping alternatives,
+  living together with him and reciprocal encouragement and building.
+  The causal appointment clause and the following death-relative are
+  joined to the preceding exhortation in complete running English.
+- Verses 12–15 retain my brothers, recognizing those laboring among the
+  recipients, standing before them in our Lord and teaching them, esteem
+  in love because of their work and peace with them. The renewed appeal
+  preserves the plural offenders, encouragement of the faint-hearted,
+  bearing the weak people's burden and patience toward everyone. The
+  prohibition on repaying evil for evil retains no one among you, followed
+  by pursuing good toward one another and everyone.
+- Verses 16–22 preserve continual rejoicing and prayer, thanksgiving in
+  everything as God's will for them in Jesus Messiah, the prohibitions
+  on quenching the Spirit and despising prophecies, examination of
+  everything, holding what is good and fleeing every evil thing.
+- Verses 23–24 retain the God of peace, sanctifying all the recipients
+  completely, their whole spirit, their soul and their body, keeping
+  without blame, and our Lord Jesus Messiah's coming. The keeping verb
+  at position 11 stays with the entities it governs in positions 7–10.
+  The first-person possessives belong to our Lord. The past calling and
+  future doing remain distinct: he has called them and he will do it.
+- Verses 25–28 preserve my brothers, prayer for the speakers, greeting
+  all our brothers with a holy kiss, the first-person adjuration by our
+  Lord, reading this letter to all the holy brothers, the grace of our
+  Lord Jesus Messiah with the recipients and Amen.
