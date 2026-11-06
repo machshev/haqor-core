@@ -50,6 +50,9 @@ struct Token {
     aramaic: bool,
     /// Other BDB words the same spelling may be.
     also: Vec<String>,
+    /// The root the token's own analysis gives, and whether it is a verb.
+    analysed_root: String,
+    verb: bool,
 }
 
 /// A BDB word under the root. BDB files many verbs as the root's own entry
@@ -61,9 +64,31 @@ struct Word {
     pos: String,
     gloss: String,
     tokens: Vec<Token>,
+    /// Tokens filed under the word by spelling whose own analysis is a verb of
+    /// another root (Hos 4:7 אָמִיר is מוּר 'exchange', not אָמִיר 'top').
+    elsewhere: Vec<Token>,
+}
+
+/// Whether two root keys are one root, the weak ו and י aside (the
+/// morphology may spell a hollow root בוא where BDB has ביא).
+fn same_root(a: &str, b: &str) -> bool {
+    let strong = |s: &str| -> String {
+        haqor_core::data_support::bare_letters(s)
+            .chars()
+            .filter(|c| *c != 'ו' && *c != 'י')
+            .collect()
+    };
+    strong(a) == strong(b)
 }
 
 fn words_of(db: &Connection, root: &str) -> Result<Vec<Word>> {
+    // Roots BDB has verbs under: a token analysed as one of these, not the
+    // brief's root, belongs to that verb. A root only the morphology spells
+    // (הוי for היה) has none, and decides nothing.
+    let verb_roots: std::collections::HashSet<String> = db
+        .prepare("SELECT DISTINCT root FROM data.lexicon_entry WHERE pos LIKE 'vb%'")?
+        .query_map([], |r| r.get(0))?
+        .collect::<rusqlite::Result<_>>()?;
     let mut words: Vec<Word> = Vec::new();
     let mut stmt = db.prepare(
         "SELECT key, coalesce(word, ''), coalesce(pos, ''), coalesce(gloss, '') \
@@ -76,6 +101,7 @@ fn words_of(db: &Connection, root: &str) -> Result<Vec<Word>> {
             pos: r.get(2)?,
             gloss: r.get(3)?,
             tokens: Vec::new(),
+            elsewhere: Vec::new(),
         })
     })? {
         words.push(row?);
@@ -83,7 +109,8 @@ fn words_of(db: &Connection, root: &str) -> Result<Vec<Word>> {
     let mut stmt = db.prepare(
         "SELECT w.ref, w.position, s.text, coalesce(c.form, ''), s.language IS NOT NULL, \
                 (SELECT group_concat(o.key, ' ') FROM data.surface_entry o \
-                 WHERE o.surface_id = w.surface_id AND o.key <> ?1) \
+                 WHERE o.surface_id = w.surface_id AND o.key <> ?1), \
+                coalesce(i.root, ''), c.part_of_speech = 'Verb' \
          FROM data.surface_entry se \
          JOIN data.word w ON w.surface_id = se.surface_id \
          JOIN data.surface s ON s.surface_id = w.surface_id \
@@ -103,9 +130,19 @@ fn words_of(db: &Connection, root: &str) -> Result<Vec<Word>> {
                     .get::<_, Option<String>>(5)?
                     .map(|s| s.split(' ').map(str::to_string).collect())
                     .unwrap_or_default(),
+                analysed_root: r.get(6)?,
+                verb: r.get::<_, Option<bool>>(7)?.unwrap_or(false),
             })
         })? {
-            word.tokens.push(token?);
+            let token = token?;
+            if token.verb
+                && !same_root(&token.analysed_root, root)
+                && verb_roots.contains(&token.analysed_root)
+            {
+                word.elsewhere.push(token);
+            } else {
+                word.tokens.push(token);
+            }
         }
     }
     words.sort_by_key(|w| std::cmp::Reverse(w.tokens.len()));
@@ -336,8 +373,30 @@ pub fn lexicon_brief(
     writeln!(out)?;
 
     let mut quoted: Vec<(i64, u16)> = Vec::new();
-    for w in words.iter().filter(|w| !w.tokens.is_empty()) {
+    for w in words
+        .iter()
+        .filter(|w| !w.tokens.is_empty() || !w.elsewhere.is_empty())
+    {
         writeln!(out, "## {} ({}, {})\n", w.word, w.pos, w.key)?;
+        if !w.elsewhere.is_empty() {
+            let listed: Vec<String> = w
+                .elsewhere
+                .iter()
+                .map(|t| {
+                    format!(
+                        "{} {} (root {})",
+                        written(t.reference),
+                        t.surface,
+                        t.analysed_root
+                    )
+                })
+                .collect();
+            writeln!(
+                out,
+                "Filed here by spelling, but analysed as a verb of another root, so left out: {}\n",
+                listed.join("; ")
+            )?;
+        }
         let mut stems: BTreeMap<&str, Vec<&Token>> = BTreeMap::new();
         for t in &w.tokens {
             stems.entry(t.stem.as_str()).or_default().push(t);
@@ -549,6 +608,14 @@ mod tests {
     #[test]
     fn references_are_written_as_the_lexicon_writes_them() {
         assert_eq!(written(crate::runtime_db::pack_ref(1, 2, 7)), "Gen.2.7");
+    }
+
+    #[test]
+    fn roots_match_with_their_weak_letters_aside() {
+        assert!(same_root("בוא", "ביא"));
+        assert!(same_root("אמר", "אמר"));
+        assert!(!same_root("מור", "אמר"));
+        assert!(!same_root("בנה", "בוא"));
     }
 
     #[test]
