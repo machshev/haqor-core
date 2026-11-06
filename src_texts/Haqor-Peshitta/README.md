@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-5, 2 John, 3 John, and Jude
-(4,977 of 7,958 Peshitta verses; 2,981 remain). Romans 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-6, 2 John, 3 John, and Jude
+(5,000 of 7,958 Peshitta verses; 2,958 remain). Romans 7 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1871,3 +1871,30 @@ Source checks for Romans 5:
   justification and disobedience versus obedience. Romans 5:20-21 retains
   the law/sin increase and the parallel reign of sin in death and grace in
   righteousness unto eternal life through our Lord Jesus Messiah.
+
+Source checks for Romans 6:
+
+- Romans 6:1-5 preserves the rhetorical questions, remaining in sin versus
+  abounding grace, death to sin, baptism into Jesus Messiah and his death,
+  burial, new life, and the planting/likeness/resurrection relations.
+  The repeated baptism predicate and its possessive death phrase are
+  rendered as grammatical local constructions.
+- Romans 6:6 keeps “For we know that,” our old human being crucified with
+  him, and the purpose that the body of sin be annulled. The final דתוב לא
+  predicate is contextual cessation, “so that we may no longer serve sin,”
+  rather than a bare additive “furthermore.” Romans 6:7 keeps the causal
+  connector and the dying/freedom-from-sin relation together.
+- Romans 6:9-15 preserves the death/life predicates, the dead/alive contrast,
+  the commands about the mortal body and members, sin's rule, and the
+  law/grace contrast. Source pronouns remain with their actual predicates.
+- Romans 6:16 retains “to whomever,” the purpose verb “obey,” its recipient,
+  and bondage. The nominal predicate is “you are his own servants,” followed
+  by the singular owner whom they obey. Its final hearing/ear construction
+  is rendered as giving ear to righteousness. The source's sin/obedience
+  alternatives do not contain an extra death clause.
+- Romans 6:17-19 keeps the thanksgiving, heart/teaching relation, freedom
+  from sin, service to righteousness, human analogy and bodily weakness.
+  Romans 6:20 renders גיר as clause-level “For when you were servants,”
+  separately from “of sin”; prepositional “for sin” would lose the causal
+  connector's function. Romans 6:21-23 preserves fruit/end, death versus
+  eternal life, the payment/gift contrast and our Lord Jesus Messiah.
