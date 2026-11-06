@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-2, 2 John, 3 John, and Jude
-(5,750 of 7,958 Peshitta verses; 2,208 remain). 2 Corinthians 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-3, 2 John, 3 John, and Jude
+(5,768 of 7,958 Peshitta verses; 2,190 remain). 2 Corinthians 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3216,4 +3216,70 @@ Source checks for 2 Corinthians 2:
 
 All 17 verses and 230 source words received source-to-English and running
 English review. The six גיר, seven דין and one מכיל occurrences were
+checked individually against the final English clauses.
+
+Source checks for 2 Corinthians 3:
+
+- Verse 1 retains both beginning again and the from-the-beginning
+  expression, showing the addressees what we are, and the alternatives
+  about letters of recommendation. The letters are the subjects of
+  being written to the addressees about us; the addressees are the
+  subjects of the final writing and recommending. The interrogative
+  particle is understood in the question, not as a purpose "lest."
+- "Recommendation/recommend" in verse 1 is a contextual lexical choice
+  following the supplied Syriac-derived Murdock reference. SEDRA's brief
+  glosses list command/precept senses, but the broader
+  [CAL verb entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=pqd+V)
+  includes a Syriac Pael commendation sense, and the
+  [Syriac dictionary entry](https://syriacdictionary.net/mobile/index.cgi?hidden=Search&word=%DC%A6%DC%A9%DC%B0%DC%95)
+  includes recommendation for the noun. The abbreviated gloss list
+  does not require replacing this contextual sense with literal commands.
+- Verse 2 keeps "our own letter" as one emphasized owner, the
+  addressees as the letter, writing in our heart and being known and
+  read by everyone. Verse 3 explicitly says "you know," rather than
+  substituting a familiar "you show." The letter belongs to Messiah
+  and is ministered by us. Both writing contrasts retain their
+  negations, ink, the Spirit of the living God, stone tablets and
+  tablets of the heart of flesh.
+- Verses 4-5 retain confidence in Messiah toward God, the denial of
+  self-sufficiency to think anything as from ourselves, and the distinct
+  power or strength that comes from God. Verse 6 keeps God's making
+  us fit to be ministers of a new covenant. Writing and Spirit remain
+  distinct, with the causal writing-kills clause and the contrasting
+  Spirit-gives-life clause. The two writing nouns are not made three.
+- Verses 7-9 preserve the ministry of death engraved in writing on
+  stone, its glory, Israel's inability to look at Moses' face, and
+  the glory of his face that ceased. The final relative refers to
+  the glory, not Moses or the ministry. The Spirit's ministry retains
+  the question's negation and future glory. Condemnation ministry
+  having glory and righteousness ministry abounding in glory remain
+  separate comparisons.
+- Verses 10-11 distinguish the formerly glorified thing from its
+  comparative lack of glory beside this excellent glory. "As though"
+  and "not even" remain explicit. What ceased was in glory; what
+  remains will be in glory. Neither comparison reverses which thing
+  was glorified or which thing remains.
+- Verse 12 retains both because and therefore, this hope possessed by
+  us, exceeding openness and the actual conduct predicate. The open-eye
+  construction is understood idiomatically rather than as a claim
+  about physical eyesight. Verse 13 keeps Moses putting a physical
+  veil on his face and the purpose that Israel's children not behold
+  the end of what is being annulled.
+- Verse 14 says they were blinded in their minds, rather than importing
+  a different hardening predicate. The old covenant is read, the same
+  veil remains upon them, and it is not revealed that in Messiah it
+  is annulled. Verse 15 retains reading Moses and a veil laid upon
+  their hearts. This is physical veil language, not atonement terminology.
+- Verse 16 explicitly names a person from among them turning toward
+  the Lord, with the veil taken from him. Verse 17 retains the Lord
+  as the Spirit, the Spirit of the Lord and freedom where that Spirit
+  is. The anticipating possessive does not create another owner.
+- Verse 18 keeps all of us, uncovered faces, active beholding of the
+  Lord's glory as in a mirror and passive transformation into the
+  same likeness. The anticipating target suffix does not add an owner
+  of the likeness. Both separate glory nouns in "from glory to glory"
+  and the final relation to the Lord, the Spirit, remain explicit.
+
+All 18 verses and 248 source words received source-to-English and running
+English review. The six גיר, six דין and two הכיל occurrences were
 checked individually against the final English clauses.
