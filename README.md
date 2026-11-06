@@ -88,6 +88,9 @@ The Thesaurus Linguae Aegyptiae's Egyptian lemma list and the Comprehensive
 Coptic Lexicon (`src_texts/Egyptian/`) trace Egyptian loanwords.
 Oracc's Akkadian and Sumerian glossaries (`src_texts/Oracc/`) give the
 cuneiform cognates and loans.
+MACULA Hebrew's Septuagint alignment (`src_texts/MACULA-LXX/`) traces the New
+Testament's Greek back to the Hebrew word; it is a bridge, not evidence of
+the Hebrew's meaning.
 
 ## Commands
 

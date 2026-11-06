@@ -257,6 +257,20 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/lexicon.db")]
         output: PathBuf,
     },
+    /// Prepare the Septuagint's Greek for each Hebrew word from MACULA Hebrew's
+    /// lowfat XML into src_texts/MACULA-LXX/lxx.tsv. Run by
+    /// scripts/fetch-macula-lxx.sh.
+    ImportLxx {
+        /// Directory of MACULA's `WLC/lowfat` chapter files.
+        #[arg(short, long)]
+        lowfat: PathBuf,
+        /// Open Scriptures' strongs-greek-dictionary.js, naming the lemmas.
+        #[arg(long)]
+        strongs: PathBuf,
+        /// Directory the prepared file is written to.
+        #[arg(short, long, default_value = "src_texts/MACULA-LXX")]
+        output: PathBuf,
+    },
     /// Prepare Lane's Arabic-English Lexicon from the laneslexicon project's
     /// corrected Perseus TEI into the checked-in src_texts/Lane/lane.jsonl.
     /// Run by scripts/fetch-lane.sh.
@@ -731,6 +745,17 @@ fn main() -> Result<()> {
             DbCommands::GenLexicon { src_texts, output } => {
                 let total = haqor_db_gen::generate_lexicon(&src_texts, &output)?;
                 println!("Wrote {} rows to {}", total, output.display());
+            }
+            DbCommands::ImportLxx {
+                lowfat,
+                strongs,
+                output,
+            } => {
+                let s = haqor_db_gen::import_lxx(&lowfat, &strongs, &output)?;
+                println!(
+                    "LXX: {} of {} words aligned to Greek ({} lemmas unnamed)",
+                    s.aligned, s.words, s.unnamed
+                );
             }
             DbCommands::ImportLane { input, output } => {
                 let s = haqor_db_gen::import_lane(&input, &output)?;

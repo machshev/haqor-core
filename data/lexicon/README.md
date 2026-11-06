@@ -10,17 +10,21 @@ rules for writing an entry.
 - **The entry stands on its own.** Other lexicons are where to look for
   evidence, never what an entry cites. Follow a lexicon's conclusion back to
   its evidence (a verse, a cognate in its own language's dictionary, an
-  inscription, the Septuagint's rendering) and cite that. Never write "BDB
+  inscription) and cite that. Never write "BDB
   gives…", and never compare lexicons.
 - **Every claim cites its evidence.** A sense cites the verses that show it, a
   cognate cites its own language's dictionary or text, and a doctrinal
   statement cites scripture only.
+- **Weighing evidence.** Scripture's own use of the Hebrew decides its
+  meaning, including the New Testament where it quotes or expounds the
+  passage. Cognates in the other Semitic languages come next. The Septuagint
+  is a translation and no evidence of the Hebrew's meaning; it is kept only
+  as the bridge from the New Testament's Greek back to the Hebrew word.
 - **Distilled first.** `gloss`, then `summary`, then the detail that backs them
   up. Someone who reads only the first two should come away with the right
   idea.
 - **Scripture interprets scripture.** Meaning comes from how the text uses the
-  word: where its use fixes the sense, its parallels and opposites, and the
-  Greek the New Testament gives it when quoting. Doctrine rests on scripture
+  word: where its use fixes the sense, and its parallels and opposites. Doctrine rests on scripture
   alone, never on tradition or commentators, and is written evidence-first:
   what the verses show, then what follows from them.
 - **Hebrew names.** Use the text's Hebrew (יַהְוֶה, and its own names for months
@@ -88,9 +92,12 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 
 ### Greek
 
-How the New Testament (where it quotes the Hebrew) and the Septuagint render
-the word: `lemma` (`ψυχή`), `gloss`, and `evidence`: scripture citations for
-the New Testament, source citations for the Septuagint.
+The Greek words that connect the New Testament to this Hebrew word: `lemma`
+(`ψυχή`), `gloss`, and `evidence`: New Testament verses that quote or expound
+a passage using the Hebrew word (scripture citations), and the Septuagint's
+rendering as a source citation. The Septuagint here is the bridge to the New
+Testament's vocabulary, not evidence of the Hebrew's meaning; that rests on the
+senses' verses and the cognates.
 
 ### Usage
 

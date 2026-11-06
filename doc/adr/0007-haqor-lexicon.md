@@ -28,8 +28,8 @@ None of them gives what the project wants:
 - **Meaning drawn from scripture.** A lexicon's definitions are its authors'
   conclusions, which they reached from evidence they cite only in part. A
   meaning should be shown from that evidence: the verses where the word's use
-  fixes its sense, its parallels and opposites, its cognates, and the Greek
-  the Septuagint and the New Testament use for it.
+  fixes its sense, its parallels and opposites, and its cognates in the other
+  Semitic languages.
 - **Doctrine from scripture alone.** Where a word bears on doctrine (נֶפֶשׁ,
   רוּחַ, שְׁאוֹל, עוֹלָם), the entry should say so, resting on scripture only,
   never on tradition or commentators.
@@ -45,8 +45,8 @@ occur most often. It is a lexicon in its own right, not a survey of others.
 
 Other lexicons are where to look for evidence, never what an entry cites. When
 BDB or Gesenius reaches a conclusion, the entry goes to the evidence behind it
-(the verse, the cognate in its own language's dictionary, the inscription, the
-Septuagint's rendering) and cites that. An entry never says "BDB gives…",
+(the verse, the cognate in its own language's dictionary, the inscription) and
+cites that. An entry never says "BDB gives…",
 and it does not list where lexicons agree or differ.
 
 Every claim cites its evidence, and the validator enforces it:
@@ -54,6 +54,22 @@ Every claim cites its evidence, and the validator enforces it:
 - a sense cites the verses that show it;
 - a cognate cites the dictionary entry or text of its own language;
 - a doctrinal statement cites scripture and nothing else.
+
+### How evidence is weighed
+
+1. **Scripture's own use** of the Hebrew decides its meaning: where its use
+   fixes the sense, its parallels and opposites. This includes the New
+   Testament where it quotes or expounds a Hebrew passage, which is scripture
+   interpreting scripture, cited by its verse.
+2. **Cognates** in the other Semitic languages come next: the same root in
+   Akkadian, Ugaritic, Aramaic, Arabic, Ge'ez and the rest, each cited from
+   its own language's dictionary or texts.
+3. **The Septuagint** is a translation, and no evidence of what the Hebrew
+   means. It is kept as the bridge to the New Testament: the Greek word the
+   New Testament uses can be traced through it back to the Hebrew word.
+
+The validator holds senses to scripture alone, so neither a cognate nor the
+Septuagint can be a sense's evidence.
 
 ### Distilled first
 

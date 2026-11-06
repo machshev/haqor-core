@@ -19,6 +19,7 @@ mod journeys;
 mod lane;
 mod lexicon_brief;
 mod lexicon_db;
+mod lxx;
 mod murdock;
 mod names;
 mod occurrences;
@@ -62,6 +63,7 @@ pub use lexicon_brief::{lexicon_brief, lexicon_rank};
 pub use lexicon_db::{
     generate_lexicon, load_noun_inventory, load_proper_inventory, load_root_inventory,
 };
+pub use lxx::{LxxSummary, import_lxx};
 pub use names::{NamesSummary, build_names, gen_names};
 pub use occurrences::parse_ot_coverage;
 pub use outlines::{OUTLINES, OutlinesSummary, build_outlines, gen_outlines};

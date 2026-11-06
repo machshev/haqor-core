@@ -201,6 +201,89 @@ fn plain_text(json: &str) -> String {
     out.join(" ")
 }
 
+/// A pointed word without its accents, which lexicons mark differently.
+fn unaccented(word: &str) -> String {
+    word.chars()
+        .filter(|c| !('\u{0591}'..='\u{05AF}').contains(c) && *c != '\u{05BD}')
+        .collect()
+}
+
+/// The Greek lemmas the Septuagint renders each of `words` by, from MACULA's
+/// alignment in `src_texts`, each with its New Testament occurrences. A
+/// translation is no evidence of the Hebrew's meaning: this is the bridge
+/// from the New Testament's Greek back to the Hebrew word.
+fn septuagint_section(bible: &Bible, src_texts: &Path, words: &[Word]) -> Result<String> {
+    use haqor_core::data_support::bare_letters;
+    let mut out = String::from(
+        "## Septuagint renderings (the bridge to the New Testament)\n\n\
+         Not evidence of the Hebrew's meaning, which rests on scripture's use \
+         and the cognates: these are the Greek words the New Testament's \
+         vocabulary connects through. From MACULA Hebrew's word alignment; \
+         homographs pointed alike are counted together.\n\n",
+    );
+    let path = src_texts.join("MACULA-LXX/lxx.tsv");
+    if !path.exists() {
+        out.push_str("Not vendored (run scripts/fetch-macula-lxx.sh).\n\n");
+        return Ok(out);
+    }
+    // A lemma is matched by its pointing, so that נֶפֶשׁ and נָפַשׁ stay
+    // apart; by its consonants only where those are one word's.
+    let pointed: HashMap<String, &str> = words
+        .iter()
+        .map(|w| (unaccented(&w.word), w.word.as_str()))
+        .collect();
+    let mut by_letters: HashMap<String, Vec<&str>> = HashMap::new();
+    for w in words {
+        by_letters
+            .entry(bare_letters(&w.word))
+            .or_default()
+            .push(w.word.as_str());
+    }
+    let lookup = |lemma: &str| -> Option<&str> {
+        pointed.get(&unaccented(lemma)).copied().or_else(|| {
+            match by_letters.get(&bare_letters(lemma)).map(Vec::as_slice) {
+                Some([only]) => Some(*only),
+                _ => None,
+            }
+        })
+    };
+    let mut tally: HashMap<&str, HashMap<String, usize>> = HashMap::new();
+    for line in std::fs::read_to_string(&path)?.lines() {
+        let fields: Vec<&str> = line.split('\t').collect();
+        if fields.len() < 6 {
+            continue;
+        }
+        if let Some(word) = lookup(fields[2]) {
+            *tally
+                .entry(word)
+                .or_default()
+                .entry(fields[5].to_string())
+                .or_default() += 1;
+        }
+    }
+    for w in words {
+        let Some(greek) = tally.get(w.word.as_str()) else {
+            continue;
+        };
+        let mut greek: Vec<_> = greek.iter().collect();
+        greek.sort_by(|a, b| b.1.cmp(a.1).then(a.0.cmp(b.0)));
+        let listed: Vec<String> = greek
+            .iter()
+            .take(10)
+            .map(|(lemma, n)| {
+                let nt = bible
+                    .greek_lemma_occurrences(lemma)
+                    .map(|o| o.len())
+                    .unwrap_or(0);
+                format!("{lemma} ×{n} (NT ×{nt})")
+            })
+            .collect();
+        writeln!(out, "- {}: {}", w.word, listed.join("; "))?;
+    }
+    writeln!(out)?;
+    Ok(out)
+}
+
 /// `db lexicon-brief`: the evidence for the root `root` (a root key, as
 /// `data/lexicon/README.md` describes) from the runtime database in
 /// `data_dir`, with up to `examples` example verses per word and stem and
@@ -390,6 +473,7 @@ pub fn lexicon_brief(
     out.push_str(&crate::cognate_search::cognate_section(
         src_texts, &root, &lemmas, &glosses,
     )?);
+    out.push_str(&septuagint_section(&bible, src_texts, &words)?);
 
     writeln!(
         out,
