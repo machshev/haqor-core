@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-9, 2 John, 3 John, and Jude
-(5,880 of 7,958 Peshitta verses; 2,078 remain). 2 Corinthians 10 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-10, 2 John, 3 John, and Jude
+(5,898 of 7,958 Peshitta verses; 2,060 remain). 2 Corinthians 11 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3675,3 +3675,67 @@ Source checks for 2 Corinthians 9:
   love because of the abundance of God's grace upon you. Verse 15 retains
   the thanksgiving idiom, the discourse connector, his gift, and its
   negative passive description as something that cannot be expressed.
+
+Source checks for 2 Corinthians 10:
+
+- All 18 verses and 273 source words received source-to-English and running
+  English review, peer repair, and an independent final chapter audit. The
+  seven causal `gir` and six discourse/contrast `din` were checked in their
+  clauses, along with the separate causal `metul` constructions. Every
+  source position occurs exactly once in ascending order.
+- Verse 1 retains I, Paul, the Messiah's single ownership of gentleness
+  and humility, the concessive "although," humility in person, and
+  confidence when distant. Verse 2 keeps the prospective coming clause,
+  the negative constraint, the confidence I have, my thinking, and the
+  other people's thinking about us. The accusation about walking according
+  to the flesh remains within their reported judgment.
+- Verse 3 keeps both first-person plural predicates, walking and serving.
+  Its negative cleft is explicit: "it is not according to the flesh that
+  we serve." The recorded third-singular `hwa` belongs to this construction;
+  it does not introduce another person or an independent past event. See
+  [Pat-El, Syntactical Aspects of Negation in Syriac](https://doi.org/10.1093/jss/fgl006)
+  on Syriac negation and negative clefts. The verb `plah` is rendered
+  "serve," with the military setting made explicit by verse 4's weapons
+  and warfare. Verse 4 retains God's power, our subduing, and both the
+  plural strongholds and their rebellious character.
+- Verse 5 has two active first-person plural predicates, demolishing
+  thoughts and taking all thoughts captive. Every lofty thing is raised
+  against the knowledge of God; obedience is to the Messiah. Each explicit
+  genitive has a single owner. Verse 6 retains prepared readiness, executing
+  vengeance on those who disobey, and the prospective completion of your
+  obedience. The source has no separate "all" before the disobedient group.
+- Verse 7 renders the faces expression as outward appearances and retains
+  the question, confidence in oneself, "this one," knowing for himself,
+  and both statements of belonging to the Messiah, including "so also do
+  we." Verse 8 preserves "even if," the somewhat greater boasting, and the
+  distinct recipients in our Lord's giving authority to me and giving it
+  to us for your building up. Causal "because" remains separate from that
+  purpose and from the negated destruction purpose.
+- Verse 9 retains forbearance, the passive "lest I be thought," and one
+  emphatic terrifying predicate from the infinitive absolute plus finite
+  verb. My letters are plural. Verse 10 likewise has plural letters and
+  plural weighty/strong predicates, followed by his weak bodily presence
+  and contemptible speech. Verse 11 separately has singular "our letter,"
+  the plural speaker, and the correspondence between absent written speech
+  and present action. "When we are present" is not a direction toward us.
+- Verse 12 keeps both reckoning and comparing ourselves with others,
+  their boasting of themselves, their comparing themselves with themselves,
+  and their not understanding. Verse 13 retains measure, boundary, God's
+  allotment to us, and reaching even as far as you. The third-singular
+  reaching predicate is read here with the boundary as its antecedent;
+  compare the recorded morphology in the
+  [source analysis](https://www.dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=2Corinthians+10%3A13).
+- Verse 14 preserves both negatives in the opening comparison, both causal
+  particles, stretching ourselves, and the distinct past "we reached"
+  in the gospel of the Messiah. Verses 15-16 retain both mentions of our
+  measure, plural others, growing faith, our magnification by you, the
+  separate abounding predicate, preaching beyond you, and the negative
+  boasting clause about others' measure and prepared things.
+- Verses 17-18 distinguish boasting in the Lord from praising oneself.
+  The final approval cleft preserves causal "For," the single reflexive
+  actor, and the Lord's future praise of the object him. The emphatic and
+  copular pronouns create no additional person.
+- Two longer groups preserve local grammatical dependencies: five positions
+  for the delayed giving predicate and purpose in verse 8, and six for the
+  imperative, its relative subject, and the fronted object in verse 11.
+  All other linked groups contain at most four source positions.
