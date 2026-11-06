@@ -4,8 +4,10 @@ Date: 2026-11-06
 
 ## Status
 
-Proposed. The schema and its validator come first, then a tool that gathers
-the evidence for a root, then entries, then the app.
+Accepted (2026-11-06): one entry per root, with the words it forms inside it,
+and doctrine written evidence-first. Implemented so far: the schema and its
+validator, the evidence brief, and the cognate sources. Next: entries, then the
+app.
 
 ## Context
 

@@ -113,6 +113,10 @@ Each item has a kebab case `topic` (`mortality`, `resurrection`,
 `kingdom-of-god`), a `statement`, and `evidence`, which must be scripture
 citations only.
 
+The statement is written evidence-first: what the verses show, in their own
+terms, and then what follows from them. It is not a creed with proof texts
+attached; a reader should be able to check each step against the verses cited.
+
 ## Citations
 
 An `evidence` list holds citations of two kinds.
