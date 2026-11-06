@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-3, 2 John, 3 John, and Jude
-(6,779 of 7,958 Peshitta verses; 1,179 remain). 2 Timothy 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, 2 John, 3 John, and Jude
+(6,801 of 7,958 Peshitta verses; 1,157 remain). Titus 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5175,3 +5175,11 @@ Source checks for 2 Timothy 3:
 - 3:14 renders the knowing-that clause and the from-whom learned clause.
 - 3:15 preserves childhood, holy Scriptures, learning, wisdom, salvation, faith, and Jesus Messiah roles.
 - 3:16-17 preserves Spirit-written Scripture's instructional uses and the man of God as perfect and complete for every good work.
+
+Source checks for 2 Timothy 4:
+
+- Preserved the repeated first-person forms in verse 6 and rendered the clause as an imminent pouring-out, rather than silently dropping either source token.
+- Kept the causal/contrast particles and the full hearing clause in verses 3-4, including the itching of their hearing and the turn toward fables.
+- Rendered verse 8's preserved crown, repayment by the Lord, righteous Judge, and beneficiaries in one grammatical sentence while retaining each source position.
+- Kept personal suffixes explicit in the appeals to Timothy (come to me, bring him with you, beware of him) and in the greetings.
+- Used “evangelist” and “ministry” in verse 5 and “Lord,” “Messiah,” and “kingdom” terminology consistently with the existing Peshitta translation.
