@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-3, 2 John, 3 John, and Jude
-(6,512 of 7,958 Peshitta verses; 1,446 remain). 1 Thessalonians 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-4, 2 John, 3 John, and Jude
+(6,530 of 7,958 Peshitta verses; 1,428 remain). 1 Thessalonians 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4806,3 +4806,45 @@ Source checks for 1 Thessalonians 3:
   continuing divine subject; [CAL's sgy causative entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=sgy+V)
   supports making something increase. The coordinating establish clause
   continues the prayer instead of becoming an isolated fragment.
+
+Source checks for 1 Thessalonians 4:
+
+- Verses 1–2 retain the speaker's my brothers, both requesting and
+  pleading, our Lord Jesus, what the recipients received from the speakers,
+  walking and pleasing God, increasing further and the commandments given
+  in our Lord Jesus. The postpositive causal particle starts the English
+  For you know clause rather than becoming a preposition before its object.
+- Verses 3–5 preserve God's will, sanctification, separation from sexual
+  immorality, each person's knowing how to possess his vessel in holiness
+  and honor, and the negative contrast with lustful passion and Gentiles
+  who do not know God. The source's vessel metaphor and its possessive
+  remain explicit. Verse 3's causal particle is rendered For.
+- Verse 6 preserves the prohibition on anyone daring to overstep bounds
+  or defraud his brother in this matter, our Lord as avenger concerning
+  all these things, and the speakers' prior warning and testimony. The
+  indefinite subject and governing verbs form one span for natural English
+  order. As belongs to position 16; also beforehand and the saying verb
+  stay with their own following words. The our-Lord suffix is retained.
+- Verses 7–9 preserve God's call to holiness with impurity negated,
+  rejection of a human contrasted with rejection of God, and his giving
+  his holy Spirit in the recipients. The writing-need construction is
+  rendered naturally with the recipients as the people being written to.
+  The following you begins the causal God-taught clause, not the preceding
+  to-you phrase. Teaching by God to love one another remains explicit.
+- Verses 10–12 retain love for all the Macedonian brothers, the speaker's
+  renewed appeal to my brothers to abound further, quiet conduct, one's
+  own affairs, work with one's own hands, the previous command, proper
+  conduct toward outsiders and independence from others' support.
+- Verses 13–15 preserve the first-person singular desire that my brothers
+  know about those who sleep, the instruction against sorrow like those
+  without hope, belief in Jesus' death and resurrection, and God's bringing
+  those sleeping in Jesus with him. The message is given by our Lord's
+  word; the living remaining at his coming do not precede the sleepers.
+  The coming suffix anticipates the explicit our-Lord owner.
+- Verses 16–18 retain the causal descent statement, our Lord, command,
+  the voice of the chief of angels, God's trumpet, heaven, the dead in
+  Messiah rising first, the living remaining, being caught up together
+  with them in clouds, meeting our Lord in the air, being always with him,
+  and reciprocal comfort with these words. Descend is rendered at its
+  actual position 9; from heaven is at positions 10–11. The source order
+  is preserved across these distinct instrumental and predicate spans.
