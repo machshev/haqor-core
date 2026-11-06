@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, 2 John, 3 John, and Jude
-(6,374 of 7,958 Peshitta verses; 1,584 remain). Colossians 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1, 2 John, 3 John, and Jude
+(6,403 of 7,958 Peshitta verses; 1,555 remain). Colossians 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4474,3 +4474,51 @@ Source checks for Philippians 4:
   the brothers with the speaker greeting the recipients, all the holy
   ones, especially Caesar's household, and our Lord Jesus Messiah's
   grace with all of you, retaining the actual closing recipients.
+
+Source checks for Colossians 1:
+
+- Verses 1–4 retain Paul, Jesus Messiah, God's will, Timothy, the
+  Colossae address, holy brothers and believers, peace and grace, God
+  our Father, thanksgiving, prayer, faith, and love for the holy ones.
+- Verses 5–8 retain the reserved heavenly hope, the word of truth and
+  gospel, proclamation throughout the world, fruit and growth, knowledge
+  of God's grace, Epaphras as our beloved companion, his faithful ministry
+  for the recipients, and the report of their love in the Spirit.
+- Verses 9–14 preserve the continuing prayer, knowledge of God's will,
+  wisdom and spiritual understanding, worthy walking, pleasing God,
+  fruitful work and growing knowledge, strengthening, and God's glory.
+  Long-suffering is one compound, followed separately by "and with joy";
+  [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=rwx+N) records
+  the patience sense of spirit with words of length/endurance. Giving
+  thanks belongs to its own source verb, God the Father to its own name
+  phrase, and the qualification object is "us." Darkness, deliverance,
+  the beloved Son's kingdom, redemption, and forgiveness all remain.
+- Verses 15–18 retain the invisible God's image, firstborn of all
+  creation, both creation statements, heaven/earth, visible/invisible,
+  all four alternatives of throne/dominion/principality/authority,
+  his hand and "in him," being before all things, and all things standing
+  in him. The head/body/ecclesia statement is distinct from the following
+  copula, beginning, and firstborn from among the dead, with being first
+  in all things.
+- Verses 19–20 preserve volition, fullness and dwelling, reconciliation
+  of all things to him, the distinct peace-making verb, the blood of his
+  cross, repeated instrumentality, and earth/heaven alternatives. The
+  peace-making predicate and each hand/instrument phrase stay with
+  their own source positions.
+- Verses 21–23 retain the recipients' former estrangement and enmity,
+  evil deeds, present reconciliation, flesh/body/death, and presentation
+  holy, without blemish and without accusation. The condition keeps
+  remaining in faith, their steadfast foundation, not being moved away
+  from gospel hope, what was heard and proclaimed under heaven, and
+  Paul as its minister.
+- Verses 24–27 preserve suffering for the recipients, the speaker's
+  flesh, what is lacking in Messiah's afflictions for his body/ecclesia,
+  ministry and God's administration, the word and mystery, hidden ages
+  and generations, present revelation, the Gentiles, Messiah in the
+  recipients, and the source's "our glory."
+- Verses 28–29 retain plural proclamation/teaching/presentation and
+  every-person objects, wisdom and maturity in Jesus Messiah, followed
+  by the speaker's labor and striving. The two first-person forms stay
+  with their respective predicates, and the given power's assistance
+  remains explicit. Relative and conditional clauses are joined into
+  complete English sentences.
