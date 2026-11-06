@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 John, 3 John, and Jude
-(5,709 of 7,958 Peshitta verses; 2,249 remain). 2 Corinthians 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1, 2 John, 3 John, and Jude
+(5,733 of 7,958 Peshitta verses; 2,225 remain). 2 Corinthians 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3097,4 +3097,65 @@ Source checks for 1 Corinthians 16:
 
 All 24 verses and 278 source words received source-to-English and running
 English review. The seven גיר, nine דין and two הכיל occurrences were
+checked individually against the final English clauses.
+
+Source checks for 2 Corinthians 1:
+
+- Verses 1-3 retain Paul and Timothy, Jesus Messiah, God's will, God's
+  ecclesia in Corinth, all the saints and all Achaia. Grace and peace
+  come from God our Father and our Lord Jesus Messiah. Father of our
+  Lord, Father of mercies and God of all comfort remain distinct titles;
+  anticipatory possessors do not create another father or owner.
+- Verse 4 repeats the same possessively pointed affliction form in both
+  places. This rendering retains "our" in both, following the chosen
+  annotated source. The [published SEDRA analysis](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=2Corinthians+1%3A4)
+  likewise assigns a first-person plural suffix to both occurrences,
+  although its displayed English parallels make the second generic.
+  God's comforting us, our ability also to comfort others, the same
+  comfort and being comforted by God remain separate relations.
+- Verses 5-7 retain Messiah's sufferings abounding in us and our comfort
+  abounding through Messiah. Both actual afflicted predicates in verse 6
+  remain, with the addressees' comfort and life, being comforted and
+  diligence in them to endure the sufferings that we also suffer. The
+  final object suffix does not introduce another beneficiary. Hope about
+  the addressees is steadfast, with sharing suffering and comfort linked.
+- Verses 8-10 retain the Asian affliction, its excess beyond our strength
+  and our lives nearing destruction. The sentence of death is passed by
+  us upon ourselves; it is not substituted with a passive Greek wording.
+  The purpose is confidence in God who raises the dead rather than in
+  ourselves. The rescue expression uses plural death forms, with rescue
+  of us and hope of renewed rescue kept explicit.
+- Verse 11 keeps the addressees' prayers on our behalf, his gift toward
+  us, favor done on account of many, and many thanking him on our behalf.
+  The two actual "many" quantities are not collapsed into one group.
+- Verse 12 keeps our boast and the testimony of our conscience, simplicity,
+  purity, God's grace, conduct in the world, rejection of fleshly wisdom
+  and especially conduct toward the addressees. Verse 13 retains writing
+  no other things, what they know and acknowledge, and the confidence
+  that they will acknowledge to the end.
+- Verses 14-16 preserve limited acknowledgment, we as the addressees'
+  boast and they as ours, the day of our Lord Jesus Messiah, and the
+  former intention to visit. The purpose is receiving grace doubly.
+  Passing through them into Macedonia, returning from Macedonia and
+  their accompanying Paul to Judea remain separate route relations.
+- Verse 17 retains both rhetorical questions about the plan, rashness
+  and fleshly purposes, with the modal clause and repeated "Yes, yes"
+  and "No, no." The source locative is "in them," not "in me."
+- Verse 18 calls God faithful; it does not replace that predicate with
+  Murdock's interpretive witness wording. Verses 19-20 retain God's Son
+  Jesus Messiah, proclamation through us and the named Paul, Silvanus
+  and Timothy, not Yes and No but Yes in him, all God's promises in
+  Messiah, and our Amen through him for God's glory.
+- Verses 21-22 make God the establisher, anointer and sealer of us with
+  the addressees in Messiah, giving the pledge of his Spirit in our
+  hearts. The Spirit's possessor and the hearts' possessors remain
+  different and explicit. No new actor is made from the repeated
+  identifying pronouns.
+- Verses 23-24 retain Paul's calling God as witness upon his own soul,
+  sparing the addressees as the reason for not coming to Corinth, the
+  denial of lordship over their faith and helping their joy instead.
+  The final causal clause says they stand by faith.
+
+All 24 verses and 356 source words received source-to-English and running
+English review. The six גיר, five דין and one הכיל occurrences were
 checked individually against the final English clauses.
