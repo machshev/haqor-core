@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-5, 2 John, 3 John, and Jude
-(6,097 of 7,958 Peshitta verses; 1,861 remain). Galatians 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, 2 John, 3 John, and Jude
+(6,115 of 7,958 Peshitta verses; 1,843 remain). Ephesians 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4063,3 +4063,33 @@ Source checks for Galatians 5:
 - Verses 25–26 preserve both Spirit phrases, the first-person plural
   life/following predicates, the negative becoming clause, vain glory,
   and both reciprocal "one another" expressions.
+
+Source checks for Galatians 6:
+
+- Verse 1 retains the plural spiritual addressees, restoring the person,
+  their caution, and their own possible temptation. Verse 2 keeps the
+  causal/result link and identifies the law as the Messiah's.
+- Verse 3 retains both being something and being nothing, followed by
+  self-deception. Verses 4–5 preserve the self/other contrast in boasting
+  and each person's own burden. Verse 4 retains plural "others."
+- Verse 6 preserves the sharing relationship between the person receiving
+  instruction and the person instructing, without duplicating the linked
+  demonstrative and pronoun into separate recipients.
+- Verse 7 retains "in anything" in the mocking statement and the sower/
+  harvest relation, with the human idiom rendered as generic "a person." Verse 8 preserves both "from" complements and the
+  corruption/eternal-life contrast with their respective participants.
+- Verse 9 renders the final impersonal clause naturally as "and it will
+  not weary us," retaining the first-person plural dative without changing
+  the final clause to an additional "we" subject. The earlier exhortation
+  "let us not grow weary" renders the ethical-dative construction naturally
+  with the same affected participants.
+- Verses 10–11 preserve the time available to us, the universal and
+  faith-household recipients, both writing predicates, and "with my hand."
+- Verses 12–14 preserve the circumcision/purpose contrasts, "your flesh,"
+  both crucifixion relationships, and "our Lord Jesus the Messiah" with
+  the cross as one genitive relationship.
+- Verses 15–16 retain both negatives, new creation, the following rule,
+  peace and mercy, and the Israel of God. Verse 17 explicitly retains
+  "our Lord" in the marks clause, the body suffix, and the bearing predicate.
+- Verse 18 preserves the grace blessing, "our Lord," the hearers' spirit,
+  the "my brothers" address, and Amen.
