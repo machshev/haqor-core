@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-6, 2 John, 3 John, and Jude
-(5,000 of 7,958 Peshitta verses; 2,958 remain). Romans 7 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-7, 2 John, 3 John, and Jude
+(5,025 of 7,958 Peshitta verses; 2,933 remain). Romans 8 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1898,3 +1898,7 @@ Source checks for Romans 6:
   separately from “of sin”; prepositional “for sin” would lose the causal
   connector's function. Romans 6:21-23 preserves fruit/end, death versus
   eternal life, the payment/gift contrast and our Lord Jesus Messiah.
+
+Romans 7 source-linked review notes
+
+Reviewed all 25 verses against the exported Syriac forms, vocalisation, morphology, suffixes, gloss alternatives, and Murdock context. Preserved source order and explicit negations, conjunctions, subjects, objects, and possessive suffixes. Key readings include the law's dominion while a person lives (7:1), release from the law through Messiah's body (7:4), no-longer status in 7:17 and 7:20, and the final contrast between mind and flesh in 7:25. The repeated law/sin contrasts and the commandment's role in producing desire/death were checked against the actual Syriac positions rather than memorized Greek wording.
