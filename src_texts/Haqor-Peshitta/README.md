@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-2, 2 John, 3 John, and Jude
-(4,900 of 7,958 Peshitta verses; 3,058 remain). Romans 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-3, 2 John, 3 John, and Jude
+(4,931 of 7,958 Peshitta verses; 3,027 remain). Romans 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1788,3 +1788,29 @@ Source checks for Romans 2:
   “has become.” Romans 2:26 retains the question and renders the presentative
   particle as “then”; [CAL records its now-then use](https://cal.huc.edu/cal_entry_web.php?lemma=h%29+I). Romans 2:28-29 keeps the outward/hidden Jew and
   circumcision contrasts, with smaller meaningful source links.
+
+Source checks for Romans 3:
+
+- Romans 3:2 retains the passive entrusting of God's words. Romans 3:3 keeps
+  the explanatory connector in its question about unbelief. Romans 3:8
+  preserves the reported slander and repeated saying predicates rather than
+  replacing them with a remembered parallel text.
+- Romans 3:12 retains the passive/mediopassive sense of becoming worthless or
+  rejected. Romans 3:13 renders חמתא as venom in the asp construction;
+  [CAL's ḥmh/ḥmtʾ entry, sense 2](https://cal.huc.edu/oneentry.php?cits=all&lemma=xmh+N)
+  explicitly cites this verse for venom. The abbreviated anger glosses in
+  the export do not exhaust the source word's contextual senses.
+- Romans 3:19 keeps the contrastive connector in “But we know,” the law's
+  hearers, every mouth being stopped and the world being condemned before
+  God. Romans 3:20 retains justification, works of the law and the knowledge
+  of sin as separate predicates and constructions.
+- Romans 3:22 renders the source's possessive-plus-genitive construction as
+  “God's righteousness, however,” expressing one ownership relation without
+  inventing two owners. Romans 3:23 preserves “all of them.” Romans 3:25
+  retains propitiation, with its source faith and blood wording, consistent
+  with the Syriac context and Murdock's reference rendering.
+- Romans 3:26 renders במגרת רוחה idiomatically as “in his patience”; its
+  spirit/breath word belongs to the patience construction and does not
+  introduce a separate spiritual actor. Romans 3:31 retains the question
+  about annulling the law and the contrasting assertion of establishing it,
+  using grammatical English cleft constructions for the source copulas.
