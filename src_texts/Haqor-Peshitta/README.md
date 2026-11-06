@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-8, 2 John, 3 John, and Jude
-(5,064 of 7,958 Peshitta verses; 2,894 remain). Romans 9 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-9, 2 John, 3 John, and Jude
+(5,097 of 7,958 Peshitta verses; 2,861 remain). Romans 10 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1956,3 +1956,36 @@ Source checks for Romans 8:
   supply the present/future pair, rather than literal “standing/prepared”
   descriptions. Compare [CAL's qwm entry, including being present](https://cal.huc.edu/oneentry.php?cits=all&lemma=qwm+V)
   and [its ʿtyd analysis, including future things](https://cal.huc.edu/getlex.php?coord=620442623&word=7).
+
+Source checks for Romans 9:
+
+- Romans 9:1-5 keeps the truth/conscience/sorrow statements, kinship and
+  Israel's sonship, glory, covenant, law, service and promise relations.
+  The appearance of Messiah, the relative God-over-all clause and the
+  recipient of praise/blessing remain with their actual source words.
+- Romans 9:6-11 preserves the Israel and Abraham/seed distinctions, the
+  flesh-children/promise-children contrast, the promise cleft, Sarah and
+  Rebecca, and the one-partner/Isaac construction. The pre-birth condition,
+  good/evil acts, election being known beforehand, its remaining, works and
+  the one who calls are kept distinct. Local grammatical constructions
+  express the source's copulas and ethical datives without adding owners.
+- Romans 9:12-22 retains the causal “For it was said,” Jacob/Esau love/hate
+  contrast, Moses and Pharaoh as recipients, and the mercy/compassion,
+  will/power/name and potter/clay/vessel relations. Romans 9:19 keeps the
+  conjunction in “And perhaps,” its causal connector and the will suffix.
+- Romans 9:25 preserves two separate people expressions: עמי (“my people”)
+  and עמא דילי (“my own people”). The two identical אתרחמת forms are
+  passive/third-feminine forms in the parallel naming construction:
+  the one not pitied is called “pitied.” They are not rewritten as an
+  independent first-person future “I will have mercy.” The earlier calling
+  predicate governs both naming pairs.
+- Romans 9:26-29 preserves the quotation/calling relations, the remnant and
+  Lord-of-hosts condition. The Sodom and Gomorrah comparisons are linked
+  separately with grammatical counterfactual English; the comparative
+  predicate is not left as an English postposition after Gomorrah.
+- Romans 9:30 retains all three righteousness occurrences in their own
+  links, including the appositional righteousness/faith construction.
+  Romans 9:31-33 preserves the law/righteousness pursuit contrast, both
+  causal elements, faith/works negation scope and the stumbling-stone
+  quotation, without replacing source-specific words with a remembered
+  parallel passage.
