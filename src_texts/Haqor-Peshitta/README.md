@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-3, 2 John, 3 John, and Jude
-(6,923 of 7,958 Peshitta verses; 1,035 remain). Hebrews 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-4, 2 John, 3 John, and Jude
+(6,939 of 7,958 Peshitta verses; 1,019 remain). Hebrews 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5254,3 +5254,12 @@ Source checks for Hebrews 3:
 - In 3:7–10, the causal particle and speaking Spirit are retained, and the fathers’ testing, seeing the works, forty years, generation, wandering hearts, and lack of knowledge are all separately represented.
 - In 3:12–15, דלמא is the negative-purpose “lest,” not a positive “perhaps”; the warnings retain the evil unbelieving heart, departure from the living God, deception of sin, and the quoted “today” exhortation.
 - In 3:17–19, the questions preserve the contrast between those whose bones fell in the wilderness and those who did not believe; the final causal clause explicitly links inability to enter with unbelief.
+
+Source checks for Hebrews 4:
+
+- The chapter repeatedly uses ניחתא for the promised divine “rest”; the translation keeps “rest” in the promise, oath, Sabbath-rest, and exhortation contexts, while משבתו in verse 9 is rendered “Sabbath-rest” because the verse explicitly makes the Sabbath observance/rest remain for God’s people.
+- Verse 3 preserves the oath as direct speech: דימית is first-person “I swore,” ברוגזי carries the first-person suffix “my wrath,” and the דלא נעלונ construction means “they shall not enter” (נעלונ itself is the plural imperfect entry verb). The following “works of God” clause is kept separate and retains “from the foundation of the world.”
+- Verse 8 names ישוע בר נונ; in this contextual contrast with the later day, the referent is Joshua son of Nun, so the English uses “Joshua” rather than the New Testament name “Jesus.”
+- Verse 12 links each predicate to its own source span: the word is living and fully effective, sharper than a sword with two edges, and reaches the division of soul/spirit and joints/marrow/bones before judging heart-thoughts and intentions.
+- Verse 14’s רב כומרא רבא is one great high-priest title, followed by Jesus the Messiah, God’s Son, with the ascent-to-heaven clause; the three source words are therefore grouped as “a great high priest” rather than splitting the two רב forms across roles.
+- Verse 15 retains both source negations and the subject/object roles: “we have not a high priest who is not able to feel with our weakness,” but one tested in every respect like us, apart from sin; verse 16 keeps the mercy and grace-for-help objects of approaching the throne.
