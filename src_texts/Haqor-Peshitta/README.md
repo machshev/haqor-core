@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1, 2 John, 3 John, and Jude
-(5,303 of 7,958 Peshitta verses; 2,655 remain). 1 Corinthians 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-2, 2 John, 3 John, and Jude
+(5,319 of 7,958 Peshitta verses; 2,639 remain). 1 Corinthians 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2296,3 +2296,47 @@ Source checks for 1 Corinthians 1:
 All 31 verses and 382 source words received source-to-English and running
 English review. All six גיר occurrences were checked individually for their
 causal function; coverage alone was not used as proof of meaning.
+
+Source checks for 1 Corinthians 2:
+
+- Verses 1-5 preserve Paul's coming and speech, God's mystery, the negative
+  self-judgment and exception concerning Jesus Messiah, and the passive
+  crucifixion description. Weakness, fear, trembling, Spirit, power and
+  human wisdom retain their separate roles. The purpose prefix in verse 5
+  explicitly connects the addressees' faith with God's power rather than
+  human wisdom.
+- Verses 6-8 retain mature hearers, this world's rulers and their being
+  annulled, hidden wisdom and God's appointment of it beforehand for our
+  glory. The explicit God subject and wisdom object suffix remain active
+  in “God appointed it beforehand.” The knowing/crucifixion condition is
+  counterfactual; the Lord of glory has one owner relation, not an added
+  “his Lord of glory.”
+- Verse 9 keeps the three eye/ear/heart negatives and God's preparation
+  for those who love him. Verse 10 retains both Spirit occurrences, God's
+  revealing and the Spirit's active searching of everything and God's
+  depths. The explanatory clause begins “for the Spirit searches.”
+- Verse 11 preserves the analogy with the human spirit, both knowledge exclusions
+  and “what is in God” for דבאלהא. The question's copular function is
+  explicit. The Spirit of God does not acquire a second proleptic owner.
+- Verse 12 retains the contrastive דין as “But we,” reception of the
+  Spirit from God rather than the world's spirit, the knowing purpose and
+  gifts given to us. The two explicit God occurrences belong to separate
+  clauses and are both retained.
+- Verse 13 retains speaking and the contrasting sources of teaching.
+  We use the interpretation addressed to spiritual recipients, supported
+  by the [CAL pḥm entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=pxm+V),
+  which specifically cites this verse for the interpretive sense, and the
+  [CAL rwḥn entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=rwxn+A).
+  Murdock's comparison wording is an alternative. The construction and
+  lexical attestation support this choice; gender alone would not settle it.
+- Verses 14-15 describe the natural person once, retain the two
+  causal גיר clauses and the further causal ד prefix, and preserve the
+  negative reception/ability clauses. Judging and being judged remain
+  distinct, including discernment by the Spirit and “by no man.”
+- Verse 16 keeps knowing the Lord's mind and teaching him in their actual
+  direction. The final אית לנ is possession, “is ours,” with the mind of
+  Messiah as its subject; it is not an extra instruction predicate.
+
+All 16 verses and 224 source words received source-to-English and running
+English review. All six גיר occurrences were checked individually in the
+final English clauses.
