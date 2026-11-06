@@ -141,3 +141,18 @@ A source in `sources.json`:
 - `url`: where it is published.
 - `local`: its path under `src_texts`, where a copy is kept; empty while not
   yet vendored.
+
+## Writing an entry
+
+1. `cargo run -- db lexicon-rank -n 50` lists the roots by how often they
+   occur in the Old Testament, with the entry each already has. Take the next
+   one without an entry.
+2. `cargo run -- db lexicon-brief <root> > brief.md` gathers the evidence: the
+   words BDB files under the root, their tokens by stem with how the English
+   renders each and examples spread across the canon, every reference, the New
+   Testament's quotations of verses using the root (`--min-score` to widen),
+   the Peshitta's cognate root, and the other lexicons' text, as leads only.
+3. Write `<id>.json` from the brief, following the evidence back to the verses
+   and to the cognate languages' own dictionaries.
+4. `cargo run -- db check-lexicon` checks it, listing every fault.
+5. Leave it `draft` until the user has reviewed it.

@@ -331,6 +331,35 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// List the most frequent Old Testament roots, with the id of each
+    /// root's Haqor lexicon entry where it has one: the order to write them in.
+    LexiconRank {
+        /// Directory holding the runtime haqor.db.
+        #[arg(short, long, default_value = "data")]
+        data_dir: PathBuf,
+        /// The lexicon directory.
+        #[arg(short, long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+        /// How many roots to list.
+        #[arg(short, default_value_t = 50)]
+        n: usize,
+    },
+    /// Gather the evidence for writing a Haqor lexicon entry for a root, as
+    /// Markdown: its words, tokens by stem, renderings, examples, New
+    /// Testament quotations, Peshitta cognate and the other lexicons' text.
+    LexiconBrief {
+        /// The root, as a root key (`נפש`, `מלכ`, `עשׂה`).
+        root: String,
+        /// Directory holding the runtime haqor.db.
+        #[arg(short, long, default_value = "data")]
+        data_dir: PathBuf,
+        /// Example verses per word and stem.
+        #[arg(short, long, default_value_t = 12)]
+        examples: usize,
+        /// Weakest New Testament quotation to list (see `db gen-quotes`).
+        #[arg(long, default_value_t = 12.0)]
+        min_score: f64,
+    },
     /// Rebuild the apologetics of a runtime haqor.db in place from
     /// `data/apologetics.json`.
     GenApologetics {
@@ -746,6 +775,24 @@ fn main() -> Result<()> {
                 println!(
                     "Lexicon OK: {} entries ({} reviewed), {} words, {} senses, {} citations",
                     s.entries, s.reviewed, s.words, s.senses, s.citations
+                );
+            }
+            DbCommands::LexiconRank {
+                data_dir,
+                lexicon,
+                n,
+            } => {
+                print!("{}", haqor_db_gen::lexicon_rank(&data_dir, &lexicon, n)?);
+            }
+            DbCommands::LexiconBrief {
+                root,
+                data_dir,
+                examples,
+                min_score,
+            } => {
+                print!(
+                    "{}",
+                    haqor_db_gen::lexicon_brief(&data_dir, &root, examples, min_score)?
                 );
             }
             DbCommands::GenApologetics {
