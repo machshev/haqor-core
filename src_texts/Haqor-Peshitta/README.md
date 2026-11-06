@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-8, 2 John, 3 John, and Jude
-(5,449 of 7,958 Peshitta verses; 2,509 remain). 1 Corinthians 9 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-9, 2 John, 3 John, and Jude
+(5,476 of 7,958 Peshitta verses; 2,482 remain). 1 Corinthians 10 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2609,4 +2609,62 @@ Source checks for 1 Corinthians 8:
 
 All 13 verses and 190 source words received source-to-English and running
 English review. The four גיר, six דין and one הכיל occurrences were
+checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 9:
+
+- Verses 1-2 retain every rhetorical negative, the free man/apostle
+  distinction, seeing Jesus Messiah our Lord, the addressees as Paul's
+  work in his Lord, others versus the addressees, and the seal of his
+  apostleship. Distinct our/my possessors remain explicit.
+- Verse 3 groups מפק ברוחי as the compound “my defense.” It does not add
+  a separate “in my spirit” claim. The whole expression is independently
+  attested as apology/defense in
+  [CAL's compound entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mpq%40brwx%29+N).
+  The following judging predicate still has its actual object “me.”
+- Verses 4-9 keep eating and drinking authority, a sister as wife,
+  the other apostles, our Lord's brothers and Cephas, Paul and Barnabas,
+  and the right not to work. Warfare/own expense, vineyard/fruit and
+  shepherd/flock/milk remain separate examples. Human speech and the
+  law's speech remain distinct; Moses, the threshing ox and God's care
+  for oxen retain their actual source words and roles.
+- Verse 10 has a first-person plural suffix in both “for our sake”
+  phrases; Murdock's first “whose sake” is not substituted for it. The
+  explanatory גיר is kept causal, separate from the sake phrase. Hope
+  qualifies ploughing and threshing, with the produce noun retained.
+- Verses 11-12 retain spiritual things sown and bodily things reaped,
+  among/from the addressees, others' authority versus the apostles'
+  greater claim, actual nonuse of this authority, enduring everything,
+  and not hindering Messiah's Gospel in anything. The Spirit/body nouns
+  are not dropped inside verb spans.
+- Verses 13-14 retain both temple references, altar service and sharing,
+  our Lord's command and both occurrences of his Gospel. The initial
+  temple and Gospel nouns are not swallowed into generic “those” spans.
+- Verses 15-18 keep nonuse, the purpose for writing, actually dying,
+  nobody voiding Paul's boasting, both causal necessity clauses, and
+  woe if he does not preach. Willing versus unwilling work and reward
+  remain distinct. רבּת ביתותא is a stewardship compound, not a separate
+  “great” modifier; being entrusted remains explicit. The reward answer
+  retains cost-free proclamation and the given Gospel authority not used.
+- Verses 19-23 preserve freedom from all, servitude to each, gaining
+  many, and every repeated Jew/law/without-law/weak clause. God's law
+  relation and Messiah's law have their actual owners. The final gain
+  clause in verse 21 retains “also”; verse 22 aims at saving everyone,
+  rather than replacing the source with familiar “some” wording. Verse
+  23 is a purpose of becoming a Gospel participant, not an assertion
+  that existing participation is the cause.
+- Verses 24-25 retain all runners versus the one receiving victory,
+  running so as to attain, the competitor's restraint, and perishing
+  versus imperishable crowns. The explicit first-person plural חנן is
+  “we,” not the dictionary's singular “I” gloss. The restraint phrase
+  retains the source's mind/intentional-control concept.
+- Verses 26-27 retain running toward no unknown object, fighting air,
+  subduing the body and bringing it into servitude, preaching to others,
+  and Paul's own possible rejection. The analytic participle/pronoun
+  expresses one running actor; the impersonal לא הוא negative is not
+  turned into a new first-person clause. The final rejection predicate
+  absorbs its ethical dative rather than adding another recipient.
+
+All 27 verses and 422 source words received source-to-English and running
+English review. The seven גיר, six דין and two הכיל occurrences were
 checked individually against the final English clauses.
