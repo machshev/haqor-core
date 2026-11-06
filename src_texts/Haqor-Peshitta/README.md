@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-7, 2 John, 3 John, and Jude
-(5,025 of 7,958 Peshitta verses; 2,933 remain). Romans 8 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-8, 2 John, 3 John, and Jude
+(5,064 of 7,958 Peshitta verses; 2,894 remain). Romans 9 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1925,3 +1925,34 @@ Source checks for Romans 7:
   adding another actor. Romans 7:21-25 retains the conscience/law relation,
   members and mind, captivity, the deliverance question, thanksgiving and
   the final mind/flesh service contrast.
+
+Source checks for Romans 8:
+
+- Romans 8:1-3 retains the condemnation, law, Spirit/life, flesh and sin
+  relations. In 8:3 the law is weak; the following weakness/flesh
+  phrase expresses one proleptic genitive. מטלתה דחטיתא is one causal
+  construction, “because of sin,” not two independent causes. The resumed
+  object in דנחיביה לחטיתא is sin: “that he might condemn sin,” not
+  “condemn it as sin.” The Son-sending and final flesh suffix remain explicit.
+- Romans 8:5-10 keeps the flesh/Spirit contrasts and dwelling relations.
+  Romans 8:7 preserves both the law's ל preposition and causal גיר in the
+  fronted “for, to the law of God” phrase. Romans 8:10 keeps the conditional
+  and contrastive opening.
+- Romans 8:11-20 preserves the resurrection/life and debt/service clauses,
+  the Spirit/children relation, the filial cry, inheritance and suffering,
+  and creation's subjection. Romans 8:15 retains “again to fear,” with the
+  source preposition. Adoption is a contextual rendering alongside the
+  literal sonship sense. Romans 8:20 uses contextual “in hope,” consistent
+  with Murdock's Syriac rendering.
+- Romans 8:21-30 keeps creation's release, first-fruits, adoption and bodily
+  redemption, Spirit help and prayer, God's will and intercession, and the
+  knowing/calling/justifying/glorifying recipients. The 8:26 prayer question
+  is split into smaller source-linked constructions: “what to pray for,”
+  “as is fitting,” and “we do not know.” Romans 8:28 retains the all-things
+  and beneficiaries relation; 8:30 retains the contrastive דינ.
+- Romans 8:31-39 retains the rhetorical questions, delivery of the Son,
+  death/resurrection/intercession, separation/love and the cited slaughter
+  image. In 8:38 שולטנא remains the authority slot, while דקימנ and דעתידנ
+  supply the present/future pair, rather than literal “standing/prepared”
+  descriptions. Compare [CAL's qwm entry, including being present](https://cal.huc.edu/oneentry.php?cits=all&lemma=qwm+V)
+  and [its ʿtyd analysis, including future things](https://cal.huc.edu/getlex.php?coord=620442623&word=7).
