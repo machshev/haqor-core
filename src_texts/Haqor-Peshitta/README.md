@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-6, 2 John, 3 John, and Jude
-(5,396 of 7,958 Peshitta verses; 2,562 remain). 1 Corinthians 7 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-7, 2 John, 3 John, and Jude
+(5,436 of 7,958 Peshitta verses; 2,522 remain). 1 Corinthians 8 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2504,3 +2504,63 @@ Source checks for 1 Corinthians 6:
 All 20 verses and 293 source words received source-to-English and running
 English review. The three גיר, six דין and two הכיל occurrences were
 checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 7:
+
+- Verses 1-4 retain the written question, approaching a woman, and the
+  reciprocal wife/husband obligations. Each spouse's body and the other
+  spouse's authority remain distinct; no extra predicate is invented
+  from a repeated copular pronoun.
+- Verses 5-9 preserve mutual consent, the time devoted to fasting and
+  prayer, returning together, and Satan's temptation because of bodily
+  desire. The statement to weak people is distinguished from a command.
+  Verse 7 explicitly retains purity, every person's gift from God, and
+  the different gifts; enduring, marrying and burning with desire remain
+  separate predicates.
+- Verses 10-14 keep the speaker's distinction between his own instruction
+  and his Lord's, separation, remaining without a husband, reconciliation,
+  and not dismissing a spouse. The unbelieving husband and wife clauses
+  remain reciprocal. Sanctified spouses and clean/unclean children use
+  their actual separate source terms; their children are plural and the
+  possessors are not silently changed to the addressees.
+- Verses 15-20 retain the unbeliever's departure, brother or sister not
+  being enslaved in such cases, God's calling to peace, and both spouses'
+  questions about saving the other. Each person's distribution/calling
+  and walking, the orders in all ecclesias, circumcision/uncircumcision,
+  God's commands and remaining in one's calling remain explicit.
+- Verse 21 follows the source's “choose for yourself to serve,” rather
+  than importing Murdock's supplied preference for freedom over service.
+  The choice verb plus ethical dative and a following ד clause has a
+  directly comparable construction under the Syriac preference sense in
+  [CAL's gby entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=gby+V),
+  citing Ps.-Clementine Homilies 12.302:4 about choosing to remain a widow.
+  This is a grammatical judgment from the actual source construction.
+  [Lamsa's Syriac translation, verse 21](https://biblehub.com/lamsa/1_corinthians/7.htm)
+  independently reads the service choice. The distinction from Murdock
+  is recorded rather than hidden in a broad linked span.
+- Verses 22-27 preserve God's freedman (the explicit owner is God),
+  Messiah's servant, purchase with a price, and not becoming human
+  servants. They also retain remaining with God, no command concerning
+  virginity versus counsel, received mercy and faithfulness, the present
+  necessity, and both bound/free-wife instructions.
+- Verses 28-31 preserve both marrying without sin and bodily trouble,
+  Paul's sparing the addressees, the shortened time, and every wives,
+  weeping, rejoicing and buying comparison. Using this world is qualified
+  by proper use; its passing fashion has its own causal clause.
+- Verses 32-35 retain the unmarried/married and woman/maiden contrasts,
+  their Lord/spouse/world concerns, holiness in both body and spirit,
+  the addressees' benefit, no snare, and devotion to their Lord without
+  worldly distraction. Qualifiers are not dropped into generic advice.
+- Verses 36-38 retain the maiden's age, not having given her to a husband,
+  the decision to give or keep her, firm judgment, absence of compulsion,
+  and authority over one's will. “Daughter” is not inserted merely from
+  Murdock's bracketed supplement. The good/better contrast keeps both
+  repeated references to the man's maiden and their giving predicates.
+- Verses 39-40 preserve the law-bound wife while her husband lives,
+  his sleeping in death, her freedom and choice only in our Lord, and
+  the final opinion about remaining so. The final Spirit belongs to God
+  and is in Paul; it is not an extra owner or independent copular actor.
+
+All 40 verses and 619 source words received source-to-English and running
+English review. The eight גיר, nineteen דין and two הכיל occurrences
+were checked individually against the final English clauses.
