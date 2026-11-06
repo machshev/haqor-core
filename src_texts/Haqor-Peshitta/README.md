@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-2, 2 John, 3 John, and Jude
-(7,228 of 7,958 Peshitta verses; 730 remain). James 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-3, 2 John, 3 John, and Jude
+(7,246 of 7,958 Peshitta verses; 712 remain). James 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5380,3 +5380,13 @@ Source checks for James 2:
 - 2:13 positions 10-14 are second-person plural and passive; the imperfect is rendered “you will be raised by mercy above judgment,” rather than making mercy the grammatical subject.
 - 2:20 retains the contrastive particle in “But do you want to know.”
 - 2:21-25 preserve the work/faith argument and named Abraham, Isaac, Rahab relations in source order.
+
+Source checks for James 3:
+
+- 3:1 preserves the prohibition on many becoming teachers, the direct address to brothers, and first-person plural liability to a greater judgment.
+- 3:2-4 retains the source's progression from many/for/all stumbling to the tongue, bridles, and the ship's small timber; causal particles and the singular mouth are represented.
+- 3:5-6 preserves the tongue's small-member and raised/arrogant construction, the fire/forest image, the tongue's defiling, the course of generations, the wheel, and the final fire assertion.
+- 3:7-9 keeps the passive subjection of animals, the tongue's inability to be subdued, and the human beings made in God's likeness.
+- 3:10-12 retains the same-mouth contrast, the fountain question, and the fig-tree/vine/fruit and salty-water impossibilities.
+- 3:13-16 preserves the wise person's conduct, bitter envy/contention, the prohibition on boasting against truth, and the causal confusion/evil result.
+- 3:17-18 retains the source's wisdom qualities, including mercy, good fruits, no partiality, no respect of persons, and the peace-mediated sowing of righteous fruits.
