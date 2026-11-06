@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-8, 2 John, 3 John, and Jude
-(5,865 of 7,958 Peshitta verses; 2,093 remain). 2 Corinthians 9 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-9, 2 John, 3 John, and Jude
+(5,880 of 7,958 Peshitta verses; 2,078 remain). 2 Corinthians 10 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3617,3 +3617,61 @@ Source checks for 2 Corinthians 8:
   emphatic predicate with its intervening particles or pronoun. All other
   groups contain at most four positions. All 316 source positions occur
   exactly once in ascending order, with no unlinked lexical text.
+
+Source checks for 2 Corinthians 9:
+
+- All 15 verses and 223 source words received source-to-English and running
+  English review, peer review and repair, and an independent final chapter
+  audit. All three causal `gir` and six discourse/contrast `din` were checked
+  in their clauses. Verse 13 retains both the causal "For" and the distinct
+  "because of the proof" construction. Every linked group contains at most
+  four source positions, and all positions occur exactly once in order.
+- Verse 1 retains the genitive "service of the saints," the first-person
+  predicate "I do something unnecessary," and the explicit condition
+  "if I write to you." Verse 2 has the readiness of your singular mind,
+  one proleptic owner, and first-person singular boasting in you to the
+  Macedonians. Achaia is the place ready since last year; your own zeal
+  stirred up many. The explicit "own" and "many" are preserved.
+- Verse 3 distinguishes "I sent" from our boasting and "we boasted in
+  you." "Lest" carries the source negation: another "not" would reverse
+  the intended prevention of empty boasting. The final purpose has the
+  recipients prepared, as I said. Verse 4 retains the Macedonians coming
+  with me and finding you unprepared, followed by both shame predicates:
+  we might be ashamed, not to say that you might be ashamed.
+- Verse 5 renders the impersonal concern plus "to me" as "I was concerned"
+  and keeps these my brothers coming before me to you. Both mentions of
+  blessing remain, together with advance preparation and the contrast
+  with greed. The second-person plural Ethpeal hearing expression is
+  rendered "which you were informed beforehand should be ready," following
+  the source and Murdock's notice/advice reading. See the
+  [source-form analysis](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=ubs&verse=2Corinthians+9%3A5).
+- Verse 6 keeps each sowing/reaping modifier: sparingly twice and
+  bountifully twice. The blessing language conveys generous giving here.
+  The first reaping participle is gnomic present, and the second reaping
+  verb is future. Verse 7 supplies "should give" for the opening elliptical
+  exhortation to each person. It retains his mind, sadness and compulsion,
+  and the causal cleft about a cheerful giver. The named subject is God,
+  where the local Murdock reference says Lord.
+- Verse 8 renders the reach/hands expression idiomatically as "within the
+  power of God." It keeps all grace, always, everything, what is sufficient
+  for you becoming yours, and your abounding in every good work. Verse 9
+  preserves the separate scattering and giving predicates, the poor,
+  and his righteousness abiding forever.
+- Verses 10-11 distinguish the continuing provision of seed and bread
+  from the prayer that he give, multiply your seed, and increase the plural
+  fruits of your righteousness. Everything and all generosity survive.
+  Generosity accomplishes thanksgiving through us; the hands expression
+  is "through us," and the thanksgiving noun has no possessive suffix.
+  "Generosity" in verses 11 and 13 uses the contextual sense of
+  `peshitutha`, as in chapter 8; see the
+  [Classical Syriac noun entry](https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=11506).
+- Verse 12 keeps the work of this service supplying the saints' need
+  and also abounding in many thanksgivings to God. Verse 13 has the actual
+  third-person plural "they glorify God," where Murdock has "we." The
+  recipients' submission and sharing are perfect predicates. "Confession"
+  expresses the Gospel profession here; Messiah is the single owner of
+  the gospel. Both sharing with them and with everyone remain explicit.
+- Verse 14 has plural people offering singular prayer for you, with much
+  love because of the abundance of God's grace upon you. Verse 15 retains
+  the thanksgiving idiom, the discourse connector, his gift, and its
+  negative passive description as something that cannot be expressed.
