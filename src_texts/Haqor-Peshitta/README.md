@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-10, 2 John, 3 John, and Jude
-(5,118 of 7,958 Peshitta verses; 2,840 remain). Romans 11 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-11, 2 John, 3 John, and Jude
+(5,154 of 7,958 Peshitta verses; 2,804 remain). Romans 12 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2014,3 +2014,36 @@ Source checks for Romans 10:
   by the dataset. The rhetorical hearing/knowledge questions, Moses/Isaiah
   quote speakers and nation/Israel recipients, and the final outstretched
   hands and disobedience predicates remain source-linked.
+
+Source checks for Romans 11:
+
+- Romans 11:1-4 retains the rejection question, Paul's Israelite identity,
+  the people known beforehand, Elijah's complaint and the answering
+  revelation. Possessive and reflexive relations remain explicit without
+  multiplying owners in the English.
+- Romans 11:5-8 renders גביתא as contextual “election,” following the
+  remnant/election contrast and Murdock rather than the supplied isolated
+  alms-collection gloss. The grace/work conditional clauses preserve all
+  repeated negations. Romans 11:8 renders מדערניתא “contentious,” following
+  the Syriac lexical sense; Murdock's “stupid” is a different contextual
+  choice. The seeing/hearing negatives and “until this day” remain explicit.
+- Romans 11:9-16 preserves David's quotation, the stumbling/falling
+  question and its emphatic denial, the jealousy purpose, and the
+  Gentile/Israel comparison. Romans 11:15 retains בית in “the house of
+  the dead”; the life-from-death image is not silently shortened.
+- Romans 11:17 expresses מן סוכא as the partitive “some of the branches,”
+  and the olive-from-the-wild phrase as one idiomatic description. The
+  grafted recipient and the root/branch, kindness/severity and
+  faith/disobedience contrasts retain their pronouns and negation.
+  Romans 11:24 keeps the natural/contrary-to-nature comparison and its
+  concluding grafting question; local groups avoid selecting the whole
+  opening clause as one unit.
+- Romans 11:25-29 retains blindness of heart, Israel, the Gentile fullness,
+  the deliverer/Jacob and covenant/sin clauses, the Gospel/election
+  contrast, and God's gift and calling. Romans 11:26 uses “will live,”
+  matching the source life predicate and Murdock's wording.
+- Romans 11:30-36 preserves the distinct you/they obedience and mercy
+  relations, the purpose of mercy for all, the unsearched judgments and
+  ways, and the questions about the Lord's mind, counsel and repayment.
+  The final verse keeps the three all-things clauses, “through his hand,”
+  praise, blessing and eternity supplied by the Syriac.
