@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-2, 2 John, 3 John, and Jude
-(6,587 of 7,958 Peshitta verses; 1,371 remain). 2 Thessalonians 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 2 John, 3 John, and Jude
+(6,605 of 7,958 Peshitta verses; 1,353 remain). 1 Timothy 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4942,3 +4942,28 @@ Source checks for 2 Thessalonians 2:
 - Verses 15–17 retain commands, word and letter, our Lord Jesus Messiah
   and God our Father, loving and giving, eternal encouragement, good
   hope through his grace, hearts, and every word and every good deed.
+
+Source checks for 2 Thessalonians 3:
+
+- Verses 1–2 retain “our brothers,” the word of our Lord running and
+  being glorified, deliverance from wicked people, and the causal
+  statement that not everyone has faith. The prayer joins across verses.
+- Verse 3 says that the Lord will guard the recipients, rather than
+  substituting strengthening. Verse 4 retains confidence in our Lord,
+  what the speakers command, and both completed and ongoing obedience.
+  Verse 5 retains our Lord, God's love and Messiah's patient endurance.
+- Verse 6 retains “my brothers,” our Lord Jesus Messiah, withdrawal
+  from disorderly conduct, and the commandment that “they received”
+  from the speakers, matching the third-person plural source verb.
+- Verses 7–10 retain imitation, working with toil night and day, avoiding
+  a burden, the right to support, setting an example, and the condition
+  that anyone unwilling to work should not eat. The explanation about
+  authority and example continues the preceding work statement.
+- Verse 11 retains the explicit empty or vain things, rather than
+  replacing them with meddling. Verse 12 retains working quietly and
+  eating one's own bread. Verse 13 has “my brothers”; verse 14 has
+  plural “our words,” marking, avoiding association and becoming ashamed.
+- Verse 16 is a prayer. Its Lord-of-peace construction has an anticipatory
+  third-person possessive, while the following “Our Lord” has the genuine
+  first-person plural suffix. Verses 17–18 retain Paul's handwritten
+  greeting and sign, how he writes, grace with everyone, and Amen.
