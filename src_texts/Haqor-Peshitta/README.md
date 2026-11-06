@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-5, 2 John, 3 John, and Jude
-(6,953 of 7,958 Peshitta verses; 1,005 remain). Hebrews 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-6, 2 John, 3 John, and Jude
+(6,973 of 7,958 Peshitta verses; 985 remain). Hebrews 7 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5273,3 +5273,12 @@ Source checks for Hebrews 5:
 - Melchizedek is preserved as a proper name in verses 6, 10, and 11; דמותה in verses 6 and 10 is rendered with its third-person possessive (“his likeness”).
 - Verse 4 retains the reflexive “himself” before the contrast with the one called by God; verse 11 retains both “concerning him” and “concerning this Melchizedek,” the discourse object, and the object suffix in “explain it.”
 - Verses 12–14 preserve the teacher obligation, “your time in instruction,” plural first written lines of the beginning, milk/copula sequence, and mature/solid-food contrast; the relative, causal, negative, and trained-senses clauses remain linked to their actual source positions.
+
+Source checks for Hebrews 6:
+
+- In 6:1–2, the source joins the foundation question to repentance from dead works and faith in God, then continues the list through baptism, laying on of hands, resurrection from the dead, and eternal judgment. The laying-on-of-hands compound is kept together while retaining both source positions.
+- In 6:4–6, the repeated “again/from the beginning” wording is retained rather than smoothed away: those who have received the heavenly gift, Holy Spirit, good word, and coming-age power cannot return to sin and renewal, nor crucify the Son of God again and despise him.
+- In 6:7–8, the earth imagery preserves the causal particle for the rain-bearing ground and the adversative turn before the thorn-bearing ground. The prefixed relative perfect דאשתית is rendered “which has drunk”; the suffix on דמטלתהונ is third-person masculine plural, referring to the preceding “those,” so the cultivation relation is rendered “those for whose benefit it is cultivated.” 6:8 retains רחיקא as “far” in “not far from a curse.”
+- In 6:9–12, the contrastive דינ particles are rendered as “however”/“but,” including the exhortation to show diligence and not become discouraged. “Ecclesia” terminology is not present in this chapter.
+- In 6:13–18, Abraham, God, the promise, the greater one, the oath, the two unchangeable things, refuge, comfort, and hope are all retained. The source’s oath sequence in 6:13 is compressed into natural English while preserving the self-swearing clause.
+- In 6:19–20, the anchor, soul, unshaken condition, veil, Jesus’ prior entrance, priesthood forever, and Melchizedek likeness are each linked. The contiguous אפי תרעא is an attested sanctuary-entry curtain/veil compound (CAL, https://cal.huc.edu/oneentry.php?cits=all&lemma=%29pyn+N); with לגו מן it is rendered “within the veil,” retaining the spatial construction without inventing a second “inner” adjective.
