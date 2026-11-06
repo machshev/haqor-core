@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 2 John, 3 John, and Jude
-(6,469 of 7,958 Peshitta verses; 1,489 remain). 1 Thessalonians 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1, 2 John, 3 John, and Jude
+(6,479 of 7,958 Peshitta verses; 1,479 remain). 1 Thessalonians 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4685,3 +4685,37 @@ Source checks for Colossians 4:
 - Verse 18 retains this greeting, the speaker's own hand, Paul as its
   named author, the remembrance of his bonds, grace with the recipients
   and Amen. The signature is rendered as a complete English sentence.
+
+Source checks for 1 Thessalonians 1:
+
+- Verse 1 preserves Paul, Silvanus and Timothy, the Thessalonian ecclesia,
+  the relative phrase placing it in God the Father and our Lord Jesus
+  Messiah, and grace with the recipients and peace. The named senders
+  are punctuated as separate people.
+- Verses 2–4 retain thanksgiving to God always for all the recipients,
+  continual remembrance in prayer, remembrance before God the Father,
+  the works of their faith, the toil of their love and the endurance of
+  their hope in our Lord Jesus Messiah. Works is plural in the source.
+  The causal knowledge statement retains their election and the speaker's
+  "my brothers," beloved by God; the beloved suffix anticipates God as
+  the one possessor.
+- Verse 5 retains the preaching contrast: not in words alone, but to the
+  recipients also in power, the Holy Spirit and true assurance. Words is
+  plural. The two second-person subject forms are grouped as "you
+  yourselves know," with both subject forms belonging to the knowing
+  predicate. The speakers' conduct among the recipients for their sake
+  remains explicit.
+- Verses 6–8 preserve imitation of both the speakers and our Lord,
+  reception of the word in great affliction and the Holy Spirit's joy,
+  being a pattern for believers in Macedonia and Achaia, and the word of
+  our Lord being heard from the recipients. The negative only/but contrast,
+  every place, their faith in God, and the speakers' lack of need to say
+  anything about them all remain. The first-person plural in the imitation
+  clause stays with its actual source positions.
+- Verses 9–10 preserve what others report about the speakers' coming to
+  the recipients, their turning to God from worship of idols, service of
+  the living and true God, and awaiting his Son from heaven. The phrase
+  about coming groups the actual entry noun, copula, first-person dative
+  and destination into natural English. The fear-of-idols compound uses
+  its attested religious worship sense. Jesus remains the named Son whom
+  God raised from among the dead and who delivers us from coming wrath.
