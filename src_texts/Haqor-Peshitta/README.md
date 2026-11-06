@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, 2 John, 3 John, and Jude
-(6,847 of 7,958 Peshitta verses; 1,111 remain). Philemon 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, 2 John, 3 John, and Jude
+(6,872 of 7,958 Peshitta verses; 1,086 remain). Hebrews 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5212,3 +5212,14 @@ Source checks for Titus 3:
 - Verses 12–13 retain the dative “to you” before Artemas, the contrastive “but” before “the scribe,” and the complete “something/no/lack/to them” sequence as natural “lack nothing.”
 - Verse 15 preserves the third-person plural subject “all who are with me” as the ones who greet you, followed by the imperative “greet with peace”; the four closing sentences retain both relative groups and the grace benediction.
 - Verse 14 preserves both negative elements in “may not be without fruit,” rather than collapsing the source's two negative markers into one.
+
+Source checks for Philemon 1:
+
+- The opening preserves the distinct people and roles: Paul is a prisoner of Jesus the Messiah, Timothy is a brother, Philemon is beloved, and the servant designation carries its “with us” suffix.
+- Verse 5 keeps both directional links: Philemon’s faith and love are toward the Lord Jesus and toward all the holy ones; the plural holy-ones form is not reduced to a singular recipient.
+- Verse 6 retains the fellowship/faith subject and the source’s fruit-in-works expression before the knowledge of every good thing in Jesus the Messiah.
+- Verses 8–9 preserve the demonstrative “because of this,” the source’s “boldness is mine” construction, and the sequence “I, Paul, who am aged”; the appeal’s “from you” relation is retained within the appeal span.
+- Verses 11–14 preserve the former useless/present useful contrast, the “thus receive him” connective, and Paul’s refusal to act without counsel so that goodness is not by compulsion but by will.
+- Verse 13 keeps the “to/with me” relation with keeping Onesimus and the source’s “that he might be” serving me instead of Philemon; verse 18 retains the indefinite “in anything” object.
+- Verse 15 renders the idiom as Onesimus departing for an hour so that Philemon might receive him forever; “from the age” is not treated as a literal geographic departure.
+- Verse 22 renders the opening בחדא דינ idiomatically as “And herewith,” then retains the lodging request, hope, prayer basis, and passive return to Philemon.
