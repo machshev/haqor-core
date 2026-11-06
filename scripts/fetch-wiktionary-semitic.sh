@@ -23,7 +23,7 @@ readonly destination="${1:-src_texts/Wiktionary}"
 
 # Wiktionary language codes. Every `sem-…` code is kept too (Proto-Semitic and
 # its subgroups, Ammonite, Old South Arabian, …).
-readonly langs='he akk uga phn xpu arc oar syc jpa tmr sam smp myz xna xsa xqt inm xhd gez ar gdq sqt tig am egy cop sux xeb obm xdm afa-pro'
+readonly langs='he hbo akk uga phn xpu arc oar syc jpa tmr sam smp myz xna xsa xqt inm xhd gez ar gdq sqt tig am egy cop sux xeb obm xdm afa-pro'
 
 for tool in jq curl gzip; do
   if ! command -v "${tool}" >/dev/null; then

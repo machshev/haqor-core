@@ -66,6 +66,7 @@ fn clip(s: &str, n: usize) -> String {
 fn lang_name(code: &str) -> &str {
     match code {
         "he" => "Hebrew",
+        "hbo" => "Biblical Hebrew",
         "akk" => "Akkadian",
         "uga" => "Ugaritic",
         "phn" => "Phoenician",
@@ -93,6 +94,11 @@ fn lang_name(code: &str) -> &str {
         "afa-pro" => "Proto-Afroasiatic",
         other => other,
     }
+}
+
+/// Wiktionary's codes for Hebrew: Modern and Biblical.
+fn is_hebrew(code: &str) -> bool {
+    code == "he" || code == "hbo"
 }
 
 /// A Wiktionary entry's one-line summary.
@@ -265,7 +271,7 @@ pub fn cognate_section(
     // Wiktionary's own Hebrew entries for the root add its words too.
     let hebrew: Vec<&Value> = wiktionary
         .iter()
-        .filter(|v| text(v, "lang") == "he")
+        .filter(|v| is_hebrew(text(v, "lang")))
         .filter(|v| {
             strings(v, "roots")
                 .iter()
@@ -311,16 +317,16 @@ pub fn cognate_section(
 
     // Entries elsewhere that link to one of the words.
     let mut linked: BTreeMap<String, Vec<String>> = BTreeMap::new();
-    for v in wiktionary.iter().filter(|v| text(v, "lang") != "he") {
+    for v in wiktionary.iter().filter(|v| !is_hebrew(text(v, "lang"))) {
         let links = v["links"].as_array().cloned().unwrap_or_default();
         let hit = links.iter().find_map(|l| {
             let rel = l[0].as_str()?;
-            (l[1].as_str()? == "he" && words.contains(&bare_letters(l[2].as_str()?)))
+            (is_hebrew(l[1].as_str()?) && words.contains(&bare_letters(l[2].as_str()?)))
                 .then(|| format!("{rel} {}", l[2].as_str().unwrap_or_default()))
         });
         let descends = v["descendants"].as_array().is_some_and(|d| {
             d.iter().any(|x| {
-                x[0].as_str() == Some("he")
+                x[0].as_str().is_some_and(is_hebrew)
                     && x[1]
                         .as_str()
                         .is_some_and(|w| words.contains(&bare_letters(w)))
