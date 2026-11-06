@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-3, 2 John, 3 John, and Jude
-(4,931 of 7,958 Peshitta verses; 3,027 remain). Romans 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-4, 2 John, 3 John, and Jude
+(4,956 of 7,958 Peshitta verses; 3,002 remain). Romans 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1814,3 +1814,32 @@ Source checks for Romans 3:
   introduce a separate spiritual actor. Romans 3:31 retains the question
   about annulling the law and the contrasting assertion of establishing it,
   using grammatical English cleft constructions for the source copulas.
+
+Source checks for Romans 4:
+
+- Romans 4:1-5 retains Abraham's relation to the fathers, the flesh/works
+  questions, boasting before God, the reckoning of faith as righteousness,
+  and the contrast between grace and what is owed. Romans 4:6 links “also”
+  and “David” to their own source words. Romans 4:7-8 keeps forgiveness,
+  covering and the negated reckoning of sin distinct; the last clause uses
+  one contiguous grammatical construction to preserve its participants.
+- Romans 4:9-12 keeps the circumcision/uncircumcision questions and Abraham's
+  faith as the object of reckoning. The source-fronted reckoning predicate
+  and Abraham/faith construction are rendered together where English needs
+  the grammatical relation. The sign, seal and fatherhood clauses remain
+  explicit. Romans 4:13-16 preserves the law, promise, faith and grace
+  contrasts, the conditionals and the source negatives.
+- Romans 4:17-18 retains God's life-giving and calling, the things that are
+  not, the repeated hope wording and the seed/nations promise.
+- Romans 4:19 preserves “his faith,” consideration of the body as dead,
+  “since he was,” and the bar-hundred-years age idiom. The second dead
+  description belongs to Sarah's womb. The repeated prefixed object
+  construction is rendered with “looking at” the body and “at the dead
+  womb,” keeping the womb and its adjective with their actual source words.
+- Romans 4:24 separates מטלתנ (“for our sake”) from דאפלנ, contextually
+  d- plus af plus lan (“for also to us”). The compound's empty exported
+  gloss is not evidence for an invented demonstrative. The later אילינ
+  supplies “the ones,” followed by the believers; it is not the source of
+  “to us.” The raising of our Lord Jesus Messiah from the dead remains
+  explicit. Romans 4:25 preserves the passive delivery, our sins and the
+  raising/justification parallel.
