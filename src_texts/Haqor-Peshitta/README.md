@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-2, 2 John, 3 John, and Jude
-(5,319 of 7,958 Peshitta verses; 2,639 remain). 1 Corinthians 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-3, 2 John, 3 John, and Jude
+(5,342 of 7,958 Peshitta verses; 2,616 remain). 1 Corinthians 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2340,3 +2340,46 @@ Source checks for 1 Corinthians 2:
 All 16 verses and 224 source words received source-to-English and running
 English review. All six גיר occurrences were checked individually in the
 final English clauses.
+
+Source checks for 1 Corinthians 3:
+
+- Verses 1-4 preserve the spiritual/fleshly and babe contrasts, milk versus
+  food, former and current inability, envy/strife/divisions, and the
+  distinct Paul/Apollos allegiance statements. The מָא construction in
+  verse 4 is temporal “For when,” not an invented “What is it” question.
+  Both גיר clauses in verse 3 are grammatical causal openings.
+- Verses 5-8 retain the ministers through whom belief came, assigned
+  service, planting and watering, and God as the one who gives growth. The
+  “therefore neither ... nor ... but God” construction keeps both negatives.
+  Shared labor does not erase each worker's individual reward.
+- Verses 9-11 preserve working with God, the field/building relations,
+  given grace, Paul's foundation and the other builder, and Jesus Messiah
+  as the foundation. The “which is laid” qualifier in verse 11 is explicit
+  within the foundation clause. The two דין markers in verse 10 retain
+  their local contrasts, including “But let each one see.”
+- Verses 12-15 keep all six building materials and distinguish the work,
+  day, fire and person. Verse 13 has one day noun: “for the day will reveal
+  it”; an added “on the day” is not retained as a second occurrence. Fire
+  reveals/tests the work, while remaining or burning work leads to reward
+  or loss. The person escapes; the source's comparison is “but in this way,
+  as ... from fire,” retaining דין and מן rather than imposing “through.”
+- Verses 16-17 keep plural “you” and singular “temple,” with God as its
+  owner. They also retain God's Spirit dwelling in the addressees and
+  the temple's holiness.
+  The repeated חבל is rendered “ruins ... God will ruin him,” retaining
+  the damaging/destructive sense and the temple/person actors. Murdock's
+  repeated “mar” supports that sense; the wording does not suggest God
+  causes moral corruption in the person.
+- Verses 18-20 preserve self-deception, becoming foolish/wise, worldly
+  wisdom in relation to God, and both scriptural quotations. The Lord
+  knows the wise people's thoughts; the thoughts, not an invented new
+  subject, are described as vain.
+- Verses 21-23 retain the prohibition of boasting in people and every
+  listed item: Paul, Apollos, Cephas, the world, life, death, the present
+  and the future. Their relation to the addressees is followed by the
+  addressees belonging to Messiah, and Messiah to God. Actual repeated
+  nouns are not lost as supposed duplicate proleptic owners.
+
+All 23 verses and 309 source words received source-to-English and running
+English review. The twelve גיר, six דין and one הכיל occurrences were
+checked individually against the final English clauses.
