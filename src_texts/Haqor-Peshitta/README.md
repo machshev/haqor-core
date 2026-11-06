@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-14, 2 John, 3 John, and Jude
-(5,627 of 7,958 Peshitta verses; 2,331 remain). 1 Corinthians 15 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-15, 2 John, 3 John, and Jude
+(5,685 of 7,958 Peshitta verses; 2,273 remain). 1 Corinthians 16 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2960,3 +2960,83 @@ Source checks for 1 Corinthians 14:
 All 40 verses and 565 source words received source-to-English and running
 English review. The eleven גיר, eleven דין and four הכיל occurrences
 were checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 15:
+
+- Verses 1-4 keep the proclaimed, received and sustaining gospel, the
+  explicit remembrance condition and believing in vain. Messiah died
+  for our sins, was buried and rose on the third day; both written-text
+  references remain. The "on account of" idiom does not introduce faces
+  as another object.
+- Verses 5-9 retain Cephas, the twelve, more than five hundred brothers
+  at once, many still living and some asleep, James and all the apostles.
+  Paul is last of all, like an untimely birth, least among the apostles
+  and unworthy to be called one because he persecuted God's ecclesia.
+- Verse 10 retains God's grace, both later "his grace" possessors,
+  grace in Paul versus with Paul, labor more than all the others and
+  not Paul but grace as the explanation. Verse 11 retains I/they,
+  our proclamation and the addressees' belief.
+- Verses 12-19 preserve every resurrection condition and its resulting
+  negation. Our preaching and the addressees' faith each have an actual
+  empty predicate in verse 14. The false witnesses testify about God's
+  raising Messiah; the source does not have the additional Greek clause
+  sometimes supplied at the end of verse 15. Remaining in their sins,
+  the Messiah-sleepers perishing and hope in this life only remain
+  distinct consequences, with all the original persons and possessors.
+  For כבר in verse 18, inferential "indeed" follows Murdock's "doubtless"
+  within the preceding hypothetical argument. The [CAL entry for kbr](https://cal.huc.edu/oneentry.php?cits=all&lemma=kbr+X)
+  records temporal and modal senses; the inferential reading is an
+  interpretation of the context.
+- Verses 20-23 keep risen Messiah as firstfruits, death through a human
+  versus resurrection through a human, all humans in Adam and all in
+  Messiah, each one's order and Messiah's own people at his coming.
+- Verses 24-28 retain kingdom delivery to God the Father, every ruler,
+  every authority and all powers. Verse 24's Pael perfect is active:
+  he has abolished them. Verse 25 also has an active placing of all his
+  enemies under his feet. Death is the last enemy abolished. The one
+  subjecting all is distinguished from the one receiving that subjection,
+  and the Son's own subjection leads to God all in all; agent and recipient
+  are not reversed.
+- Verses 29-32 retain both questions about baptism for the dead without
+  adding an explanation of the practice, the failure-to-rise condition,
+  our danger every hour, boasting in our Lord Jesus Messiah and dying
+  daily. Verse 32 says Paul was cast to beasts at Ephesus, rather than
+  substituting the familiar "fought with beasts." The final saying keeps
+  eating, drinking and causal "for tomorrow we die."
+- Verse 33 has evil stories or talk corrupting good minds, rather than
+  replacing those nouns with familiar Greek company and morals. Verse 34
+  explicitly has knowledge of God, despite the local Murdock reference's
+  "love of God." Arousing the addressees' hearts righteously, not sinning,
+  some people's lack of knowledge and speaking to their shame remain.
+- Verses 35-38 keep both questions about the dead's rising and their
+  body, seed not living unless it dies, and not sowing the future body.
+  The naked grain examples explicitly include wheat, barley and other
+  seeds; barley is not omitted to match familiar Greek wording. God gives
+  each its own natural body as he wills.
+- Verses 39-41 use the source's body noun for human, beast, bird and fish,
+  then heavenly and earthly bodies with different glory. Sun, moon and
+  stars retain their separate glory references and the comparison of
+  one star with another.
+- Verses 42-46 retain the sowing/rising contrasts of corruption versus
+  incorruption, dishonor versus glory, weakness versus power and natural
+  versus spiritual body. The first Adam becomes a living soul; the last
+  Adam is a life-giving spirit. "Last" is not replaced with Murdock's
+  "second." The natural comes first, then the spiritual.
+- Verses 47-50 retain the first human of dust from earth, the second
+  human explicitly the Lord from heaven, the corresponding earthly and
+  heavenly people, and both likeness-wearing clauses. Verse 50 says
+  kingdom of heaven, not the familiar Greek kingdom of God. Flesh and
+  blood cannot inherit it, and corruption does not inherit incorruption.
+- Verses 51-54 keep not all sleeping but all changing, the sudden
+  eye-twinkle, last trumpet, incorruptible rising and our own changing.
+  Both putting-on clauses, both corruptible/mortal conditions and the
+  written word coming to pass remain: death is swallowed in victory.
+- Verses 55-58 distinguish death's sting from the grave's victory,
+  identify the sting with sin and sin's power with the law, and retain
+  God's victory given to us through our Lord Jesus Messiah. The final
+  steadfastness, not being shaken and always abounding are commands,
+  with the assurance that the addressees' labor is not vain in the Lord.
+
+All 58 verses and 703 source words received source-to-English and running
+English review. The eleven גיר, fourteen דין, one הכיל and one מכיל
+occurrences were checked individually against the final English clauses.
