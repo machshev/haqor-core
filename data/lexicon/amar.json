@@ -3,7 +3,13 @@
   "root": "אמר",
   "status": "draft",
   "updated": "2026-11-06",
-  "tags": ["speech", "thought", "command", "word-of-god", "creation"],
+  "tags": [
+    "speech",
+    "thought",
+    "command",
+    "word-of-god",
+    "creation"
+  ],
   "gloss": "say, speak; say in the heart, think; command",
   "summary": "The Hebrew Bible's ordinary verb of saying: it introduces nearly every reported speech, from \"And God said\" at creation to the prophets' \"Thus says Yahweh\". What is said may be spoken to another, said \"in the heart\" as thought or resolve, or spoken with authority as a command. Its nouns name what is said, and אִמְרָה above all names Yahweh's word, called refined and trusted as his promise. The same root means \"see\" in Akkadian and \"command\" in Arabic, while Aramaic, Syriac, Phoenician and Ugaritic share the sense \"say\".",
   "words": [
@@ -20,17 +26,33 @@
               "gloss": "say, speak",
               "definition": "Utter words to someone, the words themselves usually quoted. This is the verb's commonest use, reporting speech throughout narrative, law and prophecy.",
               "evidence": [
-                { "ref": "Gen.1.3", "role": "defining", "note": "\"And God said, Let there be light\": the words said follow directly." },
-                { "ref": "Exo.3.14", "note": "\"You shall say this to the sons of Israel\": words given to be passed on." },
-                { "ref": "Gen.42.22" }
+                {
+                  "ref": "Gen.1.3",
+                  "role": "defining",
+                  "note": "\"And God said, Let there be light\": the words said follow directly."
+                },
+                {
+                  "ref": "Exo.3.14",
+                  "note": "\"You shall say this to the sons of Israel\": words given to be passed on."
+                },
+                {
+                  "ref": "Gen.42.22"
+                }
               ],
               "senses": [
                 {
                   "gloss": "saying (introducing the words)",
                   "definition": "The infinitive לֵאמֹר, \"saying\", marks the start of quoted words after another verb of speaking or asking, much as a colon or quotation mark does.",
                   "evidence": [
-                    { "ref": "Exo.6.10", "role": "defining", "note": "וַיְדַבֵּר יַהְוֶה אֶל־מֹשֶׁה לֵּאמֹר: \"And Yahweh spoke to Moses, saying\"." },
-                    { "ref": "Gen.44.19", "note": "After שָׁאַל, \"asked ... saying\"." }
+                    {
+                      "ref": "Exo.6.10",
+                      "role": "defining",
+                      "note": "וַיְדַבֵּר יַהְוֶה אֶל־מֹשֶׁה לֵּאמֹר: \"And Yahweh spoke to Moses, saying\"."
+                    },
+                    {
+                      "ref": "Gen.44.19",
+                      "note": "After שָׁאַל, \"asked ... saying\"."
+                    }
                   ]
                 }
               ]
@@ -39,30 +61,69 @@
               "gloss": "say in the heart: think, resolve",
               "definition": "Words \"said in the heart\" are unspoken thoughts or resolves, reported as speech.",
               "evidence": [
-                { "ref": "Gen.17.17", "role": "defining", "note": "Abraham laughed and said in his heart, \"Will a child be born to a man a hundred years old?\"" },
-                { "ref": "Psa.14.1", "role": "defining", "note": "\"The fool says in his heart, No God.\"" },
-                { "ref": "Gen.27.41" },
-                { "ref": "Deu.8.17" },
-                { "ref": "Psa.10.11" },
-                { "ref": "Psa.4.5", "note": "\"Say in your heart on your bed, and be silent\": meditate." }
+                {
+                  "ref": "Gen.17.17",
+                  "role": "defining",
+                  "note": "Abraham laughed and said in his heart, \"Will a child be born to a man a hundred years old?\""
+                },
+                {
+                  "ref": "Psa.14.1",
+                  "role": "defining",
+                  "note": "\"The fool says in his heart, No God.\""
+                },
+                {
+                  "ref": "Gen.27.41"
+                },
+                {
+                  "ref": "Deu.8.17"
+                },
+                {
+                  "ref": "Psa.10.11"
+                },
+                {
+                  "ref": "Psa.4.5",
+                  "note": "\"Say in your heart on your bed, and be silent\": meditate."
+                }
               ]
             },
             {
               "gloss": "say to do: intend",
               "definition": "Followed by an infinitive, to say to do something is to purpose it.",
               "evidence": [
-                { "ref": "Exo.2.14", "role": "defining", "note": "\"Are you saying to kill me?\": do you mean to kill me?" },
-                { "ref": "1Ki.5.19", "role": "defining", "note": "\"Behold, I am saying to build a house for the name of Yahweh\": I intend to build." },
-                { "ref": "2Sa.21.16" }
+                {
+                  "ref": "Exo.2.14",
+                  "role": "defining",
+                  "note": "\"Are you saying to kill me?\": do you mean to kill me?"
+                },
+                {
+                  "ref": "1Ki.5.19",
+                  "role": "defining",
+                  "note": "\"Behold, I am saying to build a house for the name of Yahweh\": I intend to build."
+                },
+                {
+                  "ref": "2Sa.21.16"
+                }
               ]
             },
             {
               "gloss": "command",
               "definition": "When the speaker has authority, what he says is an order; with an infinitive, to say that something be done.",
               "evidence": [
-                { "ref": "Psa.33.9", "role": "defining", "note": "\"He said, and it came to be; he commanded (צִוָּה), and it stood\": אָמַר stands in parallel with צִוָּה." },
-                { "ref": "Est.1.10", "role": "defining", "to": "Est.1.11", "note": "The king \"said to\" his eunuchs \"to bring Vashti\"." },
-                { "ref": "1Ch.21.17", "note": "\"Was it not I who said to number the people?\"" }
+                {
+                  "ref": "Psa.33.9",
+                  "role": "defining",
+                  "note": "\"He said, and it came to be; he commanded (צִוָּה), and it stood\": אָמַר stands in parallel with צִוָּה."
+                },
+                {
+                  "ref": "Est.1.10",
+                  "role": "defining",
+                  "to": "Est.1.11",
+                  "note": "The king \"said to\" his eunuchs \"to bring Vashti\"."
+                },
+                {
+                  "ref": "1Ch.21.17",
+                  "note": "\"Was it not I who said to number the people?\""
+                }
               ]
             }
           ]
@@ -75,18 +136,36 @@
               "gloss": "be said",
               "definition": "Of words that are said, or will be said, about someone or something.",
               "evidence": [
-                { "ref": "Gen.10.9", "role": "defining", "note": "\"Therefore it is said, Like Nimrod, a mighty hunter before Yahweh.\"" },
-                { "ref": "Jer.16.14" }
+                {
+                  "ref": "Gen.10.9",
+                  "role": "defining",
+                  "note": "\"Therefore it is said, Like Nimrod, a mighty hunter before Yahweh.\""
+                },
+                {
+                  "ref": "Jer.16.14"
+                }
               ]
             },
             {
               "gloss": "be called (by a name)",
               "definition": "To have a name said of one: to be called.",
               "evidence": [
-                { "ref": "Gen.32.29", "role": "defining", "note": "\"Your name will no longer be said (יֵאָמֵר) Jacob, but Israel.\"" },
-                { "ref": "Hos.2.1", "role": "defining", "note": "Where \"it was said to them, You are not my people\", \"it will be said to them, Sons of the living God\"." },
-                { "ref": "Isa.4.3" },
-                { "ref": "Isa.62.4" }
+                {
+                  "ref": "Gen.32.29",
+                  "role": "defining",
+                  "note": "\"Your name will no longer be said (יֵאָמֵר) Jacob, but Israel.\""
+                },
+                {
+                  "ref": "Hos.2.1",
+                  "role": "defining",
+                  "note": "Where \"it was said to them, You are not my people\", \"it will be said to them, Sons of the living God\"."
+                },
+                {
+                  "ref": "Isa.4.3"
+                },
+                {
+                  "ref": "Isa.62.4"
+                }
               ]
             }
           ]
@@ -99,8 +178,16 @@
               "gloss": "have declared (in covenant)",
               "definition": "Used only of the covenant's two declarations in Deuteronomy 26: Israel has declared Yahweh to be their God, and Yahweh has declared Israel to be his people.",
               "evidence": [
-                { "ref": "Deu.26.17", "role": "defining", "note": "\"Yahweh you have declared (הֶאֱמַרְתָּ) today to be your God.\"" },
-                { "ref": "Deu.26.18", "role": "defining", "note": "\"Yahweh has declared you (הֶאֱמִירְךָ) today to be his people.\"" }
+                {
+                  "ref": "Deu.26.17",
+                  "role": "defining",
+                  "note": "\"Yahweh you have declared (הֶאֱמַרְתָּ) today to be your God.\""
+                },
+                {
+                  "ref": "Deu.26.18",
+                  "role": "defining",
+                  "note": "\"Yahweh has declared you (הֶאֱמִירְךָ) today to be his people.\""
+                }
               ]
             }
           ]
@@ -112,9 +199,14 @@
             {
               "gloss": "speak of oneself: boast",
               "definition": "Its one occurrence stands with words for arrogant speech, and is read from them: evildoers who \"pour out, speak arrogance\" are said to יִתְאַמְּרוּ.",
-              "tags": ["uncertain"],
+              "tags": [
+                "uncertain"
+              ],
               "evidence": [
-                { "ref": "Psa.94.4", "role": "defining" }
+                {
+                  "ref": "Psa.94.4",
+                  "role": "defining"
+                }
               ]
             }
           ]
@@ -125,17 +217,34 @@
           "lemma": "εἶπον",
           "gloss": "said",
           "evidence": [
-            { "ref": "2Co.4.6", "note": "\"God who said (ὁ εἰπών), Light shall shine out of darkness\" takes up Gen 1:3." },
-            { "ref": "Rom.10.6", "note": "\"Do not say (μὴ εἴπῃς) in your heart\" takes up Deu 9:4 and 30:12." },
-            { "ref": "Rom.9.26", "note": "\"Where it was said (ἐρρήθη) to them\" takes up the niphal of Hos 2:1." },
-            { "source": "macula-lxx", "locator": "GEN 1:3 word 1", "note": "The Septuagint's εἶπεν for וַיֹּאמֶר." }
+            {
+              "ref": "2Co.4.6",
+              "note": "\"God who said (ὁ εἰπών), Light shall shine out of darkness\" takes up Gen 1:3."
+            },
+            {
+              "ref": "Rom.10.6",
+              "note": "\"Do not say (μὴ εἴπῃς) in your heart\" takes up Deu 9:4 and 30:12."
+            },
+            {
+              "ref": "Rom.9.26",
+              "note": "\"Where it was said (ἐρρήθη) to them\" takes up the niphal of Hos 2:1."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 1:3 word 1",
+              "note": "The Septuagint's εἶπεν for וַיֹּאמֶר."
+            }
           ]
         },
         {
           "lemma": "λέγω",
           "gloss": "say",
           "evidence": [
-            { "source": "macula-lxx", "locator": "EXO 4:22 word 5", "note": "λέγει in \"thus says Yahweh\"." }
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 4:22 word 5",
+              "note": "λέγει in \"thus says Yahweh\"."
+            }
           ]
         }
       ],
@@ -144,29 +253,64 @@
           {
             "lemma": "צִוָּה",
             "note": "command: what Yahweh says is what he commands.",
-            "evidence": [{ "ref": "Psa.33.9" }]
+            "evidence": [
+              {
+                "ref": "Psa.33.9"
+              }
+            ]
           },
           {
             "lemma": "דִּבֵּר",
             "note": "speak: the two are joined as \"he spoke ... saying\".",
-            "evidence": [{ "ref": "Exo.6.10" }]
+            "evidence": [
+              {
+                "ref": "Exo.6.10"
+              }
+            ]
           }
         ],
         "phrases": [
           {
             "phrase": "כֹּה אָמַר יַהְוֶה",
             "gloss": "thus says Yahweh: the messenger's formula introducing a prophet's message",
-            "evidence": [{ "ref": "Exo.4.22" }, { "ref": "Isa.43.1" }, { "ref": "Jer.29.17" }]
+            "evidence": [
+              {
+                "ref": "Exo.4.22"
+              },
+              {
+                "ref": "Isa.43.1"
+              },
+              {
+                "ref": "Jer.29.17"
+              }
+            ]
           },
           {
             "phrase": "אָמַר בְּלִבּוֹ",
             "gloss": "said in his heart: thought",
-            "evidence": [{ "ref": "Gen.17.17" }, { "ref": "Psa.14.1" }, { "ref": "Isa.14.13" }]
+            "evidence": [
+              {
+                "ref": "Gen.17.17"
+              },
+              {
+                "ref": "Psa.14.1"
+              },
+              {
+                "ref": "Isa.14.13"
+              }
+            ]
           },
           {
             "phrase": "לֵאמֹר",
             "gloss": "saying: introduces quoted words",
-            "evidence": [{ "ref": "Exo.6.10" }, { "ref": "Gen.44.19" }]
+            "evidence": [
+              {
+                "ref": "Exo.6.10"
+              },
+              {
+                "ref": "Gen.44.19"
+              }
+            ]
           }
         ]
       }
@@ -182,21 +326,50 @@
           "gloss": "word, saying",
           "definition": "What someone says, set beside their voice or teaching.",
           "evidence": [
-            { "ref": "Gen.4.23", "role": "defining", "note": "\"Hear my voice ... give ear to my saying\": קוֹל // אִמְרָה." },
-            { "ref": "Deu.32.2", "note": "\"My teaching ... my saying\" (לִקְחִי // אִמְרָתִי)." },
-            { "ref": "Isa.28.23" }
+            {
+              "ref": "Gen.4.23",
+              "role": "defining",
+              "note": "\"Hear my voice ... give ear to my saying\": קוֹל // אִמְרָה."
+            },
+            {
+              "ref": "Deu.32.2",
+              "note": "\"My teaching ... my saying\" (לִקְחִי // אִמְרָתִי)."
+            },
+            {
+              "ref": "Isa.28.23"
+            }
           ]
         },
         {
           "gloss": "Yahweh's word; his promise",
           "definition": "Yahweh's spoken word, refined like tested silver; what he has said and will keep, so that the psalmist waits on it as promise.",
           "evidence": [
-            { "ref": "Psa.18.31", "role": "defining", "note": "\"The word of Yahweh is refined.\"" },
-            { "ref": "Pro.30.5", "role": "defining", "note": "\"Every word of God is refined.\"" },
-            { "ref": "Psa.119.50", "role": "defining", "note": "\"Your word has given me life\": comfort in affliction." },
-            { "ref": "Psa.119.82", "note": "\"My eyes fail for your word\": waiting for what he said." },
-            { "ref": "Psa.119.11" },
-            { "ref": "Psa.147.15", "note": "\"He sends his word to the earth\": his word as command." }
+            {
+              "ref": "Psa.18.31",
+              "role": "defining",
+              "note": "\"The word of Yahweh is refined.\""
+            },
+            {
+              "ref": "Pro.30.5",
+              "role": "defining",
+              "note": "\"Every word of God is refined.\""
+            },
+            {
+              "ref": "Psa.119.50",
+              "role": "defining",
+              "note": "\"Your word has given me life\": comfort in affliction."
+            },
+            {
+              "ref": "Psa.119.82",
+              "note": "\"My eyes fail for your word\": waiting for what he said."
+            },
+            {
+              "ref": "Psa.119.11"
+            },
+            {
+              "ref": "Psa.147.15",
+              "note": "\"He sends his word to the earth\": his word as command."
+            }
           ]
         }
       ],
@@ -204,12 +377,22 @@
         {
           "lemma": "λόγιον",
           "gloss": "saying, oracle",
-          "evidence": [{ "source": "macula-lxx", "locator": "PSA 12:7 word 3" }]
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 12:7 word 3"
+            }
+          ]
         },
         {
           "lemma": "λόγος",
           "gloss": "word",
-          "evidence": [{ "source": "macula-lxx", "locator": "PRO 30:5 word 2" }]
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PRO 30:5 word 2"
+            }
+          ]
         }
       ],
       "usage": {
@@ -217,7 +400,14 @@
           {
             "lemma": "קוֹל",
             "note": "voice",
-            "evidence": [{ "ref": "Gen.4.23" }, { "ref": "Isa.28.23" }]
+            "evidence": [
+              {
+                "ref": "Gen.4.23"
+              },
+              {
+                "ref": "Isa.28.23"
+              }
+            ]
           }
         ]
       }
@@ -232,19 +422,42 @@
           "gloss": "utterance, word",
           "definition": "What is said; in the plural, someone's words or sayings, often set beside other words for speech and instruction.",
           "evidence": [
-            { "ref": "Psa.19.4", "role": "defining", "note": "\"There is no utterance (אֹמֶר) and there are no words (דְּבָרִים)\"." },
-            { "ref": "Pro.4.20", "role": "defining", "note": "\"Listen to my words (דְּבָרַי); incline your ear to my sayings (אֲמָרַי).\"" },
-            { "ref": "Num.24.4", "note": "\"the words of God\"." },
-            { "ref": "Psa.19.15" }
+            {
+              "ref": "Psa.19.4",
+              "role": "defining",
+              "note": "\"There is no utterance (אֹמֶר) and there are no words (דְּבָרִים)\"."
+            },
+            {
+              "ref": "Pro.4.20",
+              "role": "defining",
+              "note": "\"Listen to my words (דְּבָרַי); incline your ear to my sayings (אֲמָרַי).\""
+            },
+            {
+              "ref": "Num.24.4",
+              "note": "\"the words of God\"."
+            },
+            {
+              "ref": "Psa.19.15"
+            }
           ]
         },
         {
           "gloss": "word that commands or promises",
           "definition": "A word that sets something in motion or binds: Yahweh gives the word, a man decrees a thing, a promise may seem to fail.",
           "evidence": [
-            { "ref": "Psa.68.12", "role": "defining", "note": "\"The Lord gives the word.\"" },
-            { "ref": "Job.22.28", "note": "\"You will decree a thing (תִגְזַר־אוֹמֶר) and it will stand.\"" },
-            { "ref": "Psa.77.9", "note": "\"Has his word come to an end?\"" }
+            {
+              "ref": "Psa.68.12",
+              "role": "defining",
+              "note": "\"The Lord gives the word.\""
+            },
+            {
+              "ref": "Job.22.28",
+              "note": "\"You will decree a thing (תִגְזַר־אוֹמֶר) and it will stand.\""
+            },
+            {
+              "ref": "Psa.77.9",
+              "note": "\"Has his word come to an end?\""
+            }
           ]
         }
       ],
@@ -252,7 +465,12 @@
         {
           "lemma": "ῥῆμα",
           "gloss": "word, utterance",
-          "evidence": [{ "source": "macula-lxx", "locator": "PSA 19:3 word 4" }]
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 19:3 word 4"
+            }
+          ]
         }
       ],
       "usage": {
@@ -260,12 +478,26 @@
           {
             "lemma": "דָּבָר",
             "note": "word",
-            "evidence": [{ "ref": "Psa.19.4" }, { "ref": "Pro.4.20" }]
+            "evidence": [
+              {
+                "ref": "Psa.19.4"
+              },
+              {
+                "ref": "Pro.4.20"
+              }
+            ]
           },
           {
             "lemma": "מִצְוָה",
             "note": "commandment",
-            "evidence": [{ "ref": "Pro.2.1" }, { "ref": "Pro.7.1" }]
+            "evidence": [
+              {
+                "ref": "Pro.2.1"
+              },
+              {
+                "ref": "Pro.7.1"
+              }
+            ]
           }
         ]
       }
@@ -281,9 +513,18 @@
           "gloss": "command, decree",
           "definition": "An order given by one with authority.",
           "evidence": [
-            { "ref": "Est.1.15", "role": "defining", "note": "Vashti did not do \"the command of King Ahasuerus\"." },
-            { "ref": "Est.2.20" },
-            { "ref": "Est.9.32", "note": "\"The decree of Esther confirmed these matters of Purim.\"" }
+            {
+              "ref": "Est.1.15",
+              "role": "defining",
+              "note": "Vashti did not do \"the command of King Ahasuerus\"."
+            },
+            {
+              "ref": "Est.2.20"
+            },
+            {
+              "ref": "Est.9.32",
+              "note": "\"The decree of Esther confirmed these matters of Purim.\""
+            }
           ]
         }
       ]
@@ -298,10 +539,20 @@
           "gloss": "Amariah, a name of several men",
           "definition": "Borne by several men, among them priests in the line of Aaron and a chief priest in Jehoshaphat's day.",
           "evidence": [
-            { "ref": "1Ch.5.33", "note": "In the high-priestly line." },
-            { "ref": "2Ch.19.11", "note": "\"Amariah the chief priest\"." },
-            { "ref": "Zep.1.1" },
-            { "ref": "Neh.10.4" }
+            {
+              "ref": "1Ch.5.33",
+              "note": "In the high-priestly line."
+            },
+            {
+              "ref": "2Ch.19.11",
+              "note": "\"Amariah the chief priest\"."
+            },
+            {
+              "ref": "Zep.1.1"
+            },
+            {
+              "ref": "Neh.10.4"
+            }
           ]
         }
       ]
@@ -316,8 +567,14 @@
       "relation": "cognate",
       "note": "Biblical Aramaic, in Daniel and Ezra, with the same senses as the Hebrew, including command.",
       "evidence": [
-        { "ref": "Dan.2.5", "note": "\"The king answered and said\" (עָנֵה ... וְאָמַר)." },
-        { "ref": "Dan.3.19", "note": "\"He said to heat the furnace\": command." }
+        {
+          "ref": "Dan.2.5",
+          "note": "\"The king answered and said\" (עָנֵה ... וְאָמַר)."
+        },
+        {
+          "ref": "Dan.3.19",
+          "note": "\"He said to heat the furnace\": command."
+        }
       ]
     },
     {
@@ -328,9 +585,18 @@
       "relation": "cognate",
       "note": "The Peshitta's New Testament keeps the Hebrew idiom: Paul's \"do not say in your heart\" is דּלָא תִּאמַר בּלֵבָּך.",
       "evidence": [
-        { "ref": "Rom.10.6", "note": "Peshitta: \"do not say (תִּאמַר) in your heart\"." },
-        { "ref": "2Co.4.6", "note": "Peshitta: \"God who said (דֵּאמַר)\"." },
-        { "source": "sedra", "locator": "lexeme 171 (אמר)" }
+        {
+          "ref": "Rom.10.6",
+          "note": "Peshitta: \"do not say (תִּאמַר) in your heart\"."
+        },
+        {
+          "ref": "2Co.4.6",
+          "note": "Peshitta: \"God who said (דֵּאמַר)\"."
+        },
+        {
+          "source": "sedra",
+          "locator": "lexeme 171 (אמר)"
+        }
       ]
     },
     {
@@ -341,7 +607,10 @@
       "relation": "cognate",
       "note": "Punic.",
       "evidence": [
-        { "source": "anderson-moser-2024", "locator": "SEM000565, PUN000148" }
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000565, PUN000148"
+        }
       ]
     },
     {
@@ -352,8 +621,15 @@
       "relation": "cognate",
       "note": "Ugaritic has both senses, the Akkadian \"see\" and the West Semitic \"say\".",
       "evidence": [
-        { "source": "wiktionary", "locator": "𐎀𐎎𐎗, Ugaritic", "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%8E%F0%90%8E%97" },
-        { "source": "anderson-moser-2024", "locator": "SEM000565, UGC000405" }
+        {
+          "source": "wiktionary",
+          "locator": "𐎀𐎎𐎗, Ugaritic",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%8E%F0%90%8E%97"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000565, UGC000405"
+        }
       ]
     },
     {
@@ -364,8 +640,15 @@
       "relation": "cognate",
       "note": "In Akkadian the root is the ordinary verb \"see\", attested more than twelve thousand times in Oracc's corpora. Hebrew uses it only of speaking.",
       "evidence": [
-        { "source": "oracc", "locator": "armep x000006530, amāru [see] V", "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000006530.html" },
-        { "source": "anderson-moser-2024", "locator": "SEM000565, AKK000451" }
+        {
+          "source": "oracc",
+          "locator": "armep x000006530, amāru [see] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000006530.html"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000565, AKK000451"
+        }
       ]
     },
     {
@@ -376,8 +659,16 @@
       "relation": "cognate",
       "note": "Arabic keeps the root for speech with authority: أَمْر \"command, affair\", أَمِير \"commander\".",
       "evidence": [
-        { "source": "lane", "locator": "p. 95, أَمَرَهُ", "note": "\"He commanded him; ordered him; bade him.\"" },
-        { "source": "lane", "locator": "p. 96, أمّرهُ", "note": "\"He made him, or appointed him, commander, governor, lord, prince, or king.\"" }
+        {
+          "source": "lane",
+          "locator": "p. 95, أَمَرَهُ",
+          "note": "\"He commanded him; ordered him; bade him.\""
+        },
+        {
+          "source": "lane",
+          "locator": "p. 96, أمّرهُ",
+          "note": "\"He made him, or appointed him, commander, governor, lord, prince, or king.\""
+        }
       ]
     },
     {
@@ -387,7 +678,10 @@
       "gloss": "show, make known",
       "relation": "cognate",
       "evidence": [
-        { "source": "anderson-moser-2024", "locator": "SEM000565, GEZ000300" }
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000565, GEZ000300"
+        }
       ]
     }
   ],
@@ -396,36 +690,72 @@
       "topic": "creation-by-word",
       "statement": "In the account of creation each work begins with God's saying, and what he says comes to be: \"And God said, Let there be light, and there was light\" (Gen 1:3), and so through the days (Gen 1:6, 1:9). The Psalm draws it together: \"he said, and it came to be; he commanded, and it stood\" (Psa 33:9). Paul takes the first of these sayings for the new creation: the God who said light should shine out of darkness has shone in our hearts, to give the knowledge of his glory in the face of Jesus Christ (2Co 4:6).",
       "evidence": [
-        { "ref": "Gen.1.3" },
-        { "ref": "Gen.1.6" },
-        { "ref": "Gen.1.9" },
-        { "ref": "Psa.33.9" },
-        { "ref": "2Co.4.6" }
+        {
+          "ref": "Gen.1.3"
+        },
+        {
+          "ref": "Gen.1.6"
+        },
+        {
+          "ref": "Gen.1.9"
+        },
+        {
+          "ref": "Psa.33.9"
+        },
+        {
+          "ref": "2Co.4.6"
+        }
       ]
     },
     {
       "topic": "thoughts-of-the-heart",
       "statement": "What a person \"says in his heart\" is treated as speech that God hears and judges. Israel is told not to say in their heart that their own strength won their wealth (Deu 8:17), or that their righteousness won them the land (Deu 9:4). The fool \"says in his heart, No God\" (Psa 14:1); the king of Babylon \"said in his heart, I will ascend to the heavens\", and is brought down to Sheol (Isa 14:13, 15). Paul takes up Moses's \"do not say in your heart\" to set the righteousness of faith against a righteousness of one's own (Rom 10:6, from Deu 9:4 and 30:12).",
       "evidence": [
-        { "ref": "Deu.8.17" },
-        { "ref": "Deu.9.4" },
-        { "ref": "Psa.14.1" },
-        { "ref": "Isa.14.13" },
-        { "ref": "Isa.14.15" },
-        { "ref": "Deu.30.12" },
-        { "ref": "Rom.10.6" }
+        {
+          "ref": "Deu.8.17"
+        },
+        {
+          "ref": "Deu.9.4"
+        },
+        {
+          "ref": "Psa.14.1"
+        },
+        {
+          "ref": "Isa.14.13"
+        },
+        {
+          "ref": "Isa.14.15"
+        },
+        {
+          "ref": "Deu.30.12"
+        },
+        {
+          "ref": "Rom.10.6"
+        }
       ]
     },
     {
       "topic": "word-of-god",
       "statement": "Yahweh's אִמְרָה, his spoken word, is said to be refined like tested silver (Psa 12:7; 18:31; Pro 30:5), and the psalmist lives by it as promise: it gives him life in affliction (Psa 119:50), he waits for it until his eyes fail (Psa 119:82), and he stores it in his heart so as not to sin (Psa 119:11).",
       "evidence": [
-        { "ref": "Psa.12.7" },
-        { "ref": "Psa.18.31" },
-        { "ref": "Pro.30.5" },
-        { "ref": "Psa.119.50" },
-        { "ref": "Psa.119.82" },
-        { "ref": "Psa.119.11" }
+        {
+          "ref": "Psa.12.7"
+        },
+        {
+          "ref": "Psa.18.31"
+        },
+        {
+          "ref": "Pro.30.5"
+        },
+        {
+          "ref": "Psa.119.50"
+        },
+        {
+          "ref": "Psa.119.82"
+        },
+        {
+          "ref": "Psa.119.11"
+        }
       ]
     }
   ],

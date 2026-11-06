@@ -167,3 +167,19 @@ A source in `sources.json`:
    and to the cognate languages' own dictionaries.
 4. `cargo run -- db check-lexicon` checks it, listing every fault.
 5. Leave it `draft` until the user has reviewed it.
+
+## Reviewing in the app
+
+The app's **Lexicon review** page (reader menu, in admin mode) shows each
+entry as readers will see it, with every cited verse's Hebrew or Greek and
+English a tap away, and can edit its text and mark it reviewed. Run the
+desktop app with this directory named:
+
+```sh
+HAQOR_LEXICON_DIR=$HOME/base/haqor-core/data/lexicon flutter run -d linux
+```
+
+A save is checked first (schema, verses, sources, across the whole lexicon)
+and nothing is written if it fails. Files are kept in the layout `jq .`
+writes, which is also the layout the page saves in, so a save's diff shows
+only what changed.
