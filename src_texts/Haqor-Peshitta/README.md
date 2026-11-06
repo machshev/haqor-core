@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1, 2 John, 3 John, and Jude
-(4,871 of 7,958 Peshitta verses; 3,087 remain). Romans 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-2, 2 John, 3 John, and Jude
+(4,900 of 7,958 Peshitta verses; 3,058 remain). Romans 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -1757,3 +1757,34 @@ Paul's account to the Jewish leaders keeps the absence of an accusation worthy o
 Source check for Romans 1: the opening preserves Paul's servant and apostolic calling, the Gospel promised through the prophets, Jesus Messiah as God's Son, grace and apostleship among the nations, the Roman greeting, Paul's thanksgiving and prayer, and his desire to visit Rome. The chapter retains the explicit source order and predicates in the witness clause (God is Paul's witness), the adversative in 1:13, Paul's indebtedness to everyone in 1:14, the negation and Gospel power in 1:16, and the manifestation of God's knowledge in 1:19. The righteousness of God is revealed from faith to faith, and the repeated darkness and lack of understanding in 1:21 remain distinct.
 
 Romans 1:23-32 retains the source's non-corruptible God, human and animal images, delivery over by God, unclean lust and shame, feared and served creation, their Creator, pain and shame, their nature, the male and female clauses, fitting recompense received in their persons, the delivered-over mind and improper acts, the full vice lists, the covenant and three separate negative clauses, and the final distinction between doing such things and being their companions. Source suffixes, repeated negatives, “these” demonstratives, judgment, death, condemnation, and the final “those who do these” clause remain explicit.
+
+Source checks for Romans 2:
+
+- Romans 2:1 retains the no-excuse construction, the neighbor being judged,
+  the emphatic self-condemnation and the judge's own conduct. The related
+  breath/escape expressions in 2:1 and 2:15 are rendered idiomatically as
+  excuse, rather than adding an independent spiritual actor; compare
+  [CAL’s mappaq b-ruha idiom](https://cal.huc.edu/cal_entry_web.php?lemma=mpq%40brwx%29+N).
+- Romans 2:4 keeps the repeated preposition with the riches of goodness,
+  patience and opportunity, and renders the insolent/daring predicate as
+  “do you presume.” The repentance predicate retains its recipient.
+  [CAL's mrḥ entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mrx+V)
+  records the daring sense. Romans 2:5 links the negative with repentance,
+  and keeps both laying up and a store of wrath, the day and the revelation.
+- Romans 2:7 retains glory, honor and incorruptibility in source order before
+  seeking; the following recipient is explicit in “he gives them life
+  forever.” Romans 2:9-10 retains the Jew/Gentile parallels. Romans 2:12
+  keeps both without-law phrases in its first half, followed by the separate
+  under-law and by-law judgment clauses.
+- Romans 2:13 renders כאנינ as “who are righteous,” distinct from the next
+  words, “before God.” The exported root's gloss alternatives do not exhaust
+  the actual form's adjectival sense. [CAL's kʾn adjective entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A)
+  defines just/honest and illustrates the righteous sense in Romans 3:10.
+- Romans 2:23 keeps boasting, transgression against the law and dishonoring
+  God himself distinct. Romans 2:25 retains present “is profitable,” the two
+  conditional clauses, “however,” and the circumcision/uncircumcision
+  contrast. Its second-person ethical dative belongs with “you depart,”
+  without inventing an object “it”; the final dative is absorbed into
+  “has become.” Romans 2:26 retains the question and renders the presentative
+  particle as “then”; [CAL records its now-then use](https://cal.huc.edu/cal_entry_web.php?lemma=h%29+I). Romans 2:28-29 keeps the outward/hidden Jew and
+  circumcision contrasts, with smaller meaningful source links.
