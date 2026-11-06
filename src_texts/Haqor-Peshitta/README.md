@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-3, 2 John, 3 John, and Jude
-(5,342 of 7,958 Peshitta verses; 2,616 remain). 1 Corinthians 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-4, 2 John, 3 John, and Jude
+(5,363 of 7,958 Peshitta verses; 2,595 remain). 1 Corinthians 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2382,4 +2382,41 @@ Source checks for 1 Corinthians 3:
 
 All 23 verses and 309 source words received source-to-English and running
 English review. The twelve גיר, six דין and one הכיל occurrences were
+checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 4:
+
+- Verses 1-2 distinguish Messiah's ministers and household stewards of
+  God's mysteries, retaining the requirement that each be found faithful.
+  The compound for household stewards and the proleptic mysteries suffix
+  do not introduce additional chiefs, houses, or owners.
+- Verses 3-5 retain judgment by the addressees, judgment by any person,
+  Paul's self-judgment, and his clear conscience without making that
+  conscience a justification. Both causal clauses in verse 4 remain
+  explicit, with the Lord as judge. The hidden things of darkness and
+  thoughts of hearts each have one genitive relation. The Lord's coming,
+  disclosure, and each person's praise from God remain distinct.
+- Verses 6-7 retain Paul and Apollos, the purpose of learning within the
+  written limit, the passive warning against being exalted above one's
+  companion because of a person, and the received/not-received questions.
+- Verse 8 uses contextual “By now” for the opening temporal idiom, rather
+  than suggesting a new future claim with “From now.” The fullness,
+  riches, reigning without the apostles, contrasting wish, and purpose
+  that we also might reign with you retain their actors and connectors.
+- Verses 9-14 keep God appointing the apostles last, the death comparison,
+  all three spectacle audiences, every we/you contrast, and the hardship
+  list. Work with their hands, blessing, endurance, and entreaty remain
+  separate responses. The world and everyone are explicit in verse 13;
+  verse 14 distinguishes shaming from admonishing beloved children.
+- Verses 15-17 retain a singular myriad of tutors, not-many fathers,
+  Paul's begetting through the Gospel in Jesus Messiah, the imitation
+  appeal, and Timothy's sending to remind the addressees of Paul's ways.
+  Teaching in all ecclesias uses the generator's canonical terminology.
+- Verses 18-21 preserve the contrastive non-coming supposition, inflated
+  people, the Lord-willing visit, their word versus their power, and
+  God's kingdom in power rather than word. The final question contrasts
+  the rod with love and a gentle disposition; it adds no separate actor.
+
+All 21 verses and 301 source words received source-to-English and running
+English review. The seven גיר, five דין and one הכיל occurrences were
 checked individually against the final English clauses.
