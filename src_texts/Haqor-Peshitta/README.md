@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-5, 2 John, 3 John, and Jude
-(5,807 of 7,958 Peshitta verses; 2,151 remain). 2 Corinthians 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-6, 2 John, 3 John, and Jude
+(5,825 of 7,958 Peshitta verses; 2,133 remain). 2 Corinthians 7 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -3427,3 +3427,66 @@ Source checks for 2 Corinthians 5:
 All 21 verses and 286 source words received source-to-English and running
 English review. The nine גיר, five הכיל, two דין and one מכיל occurrences
 were checked individually against the final English clauses.
+
+Source checks for 2 Corinthians 6:
+
+- Verse 1 keeps helpers, our entreaty to the addressees and the grace
+  of God that they received. The relative belongs to grace, and the
+  purpose is that this grace not be made void in them. Verse 2 keeps
+  "he said" as the clause introduced by causal For, "I answered you,"
+  "I helped you," and both acceptable-time/day-of-life statements
+  with their separate behold and now markers.
+- Verse 3 keeps the second-person plural giving predicate and the
+  cause of stumbling in anything, with no blemish in our ministry
+  as the purpose. The opening `lama` has a preventive reading here:
+  the [CAL entry for lmh](https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c)
+  includes lest with an imperfect, also in Syriac. The brief why
+  gloss alone does not require a question that reverses the warning.
+  The preventive force is rendered as "Do not," following Murdock's
+  contextual prohibition, without claiming another separate not-word.
+- Verses 4-5 keep ourselves as God's ministers, much endurance,
+  afflictions, necessity and confinement, then scourging, chains,
+  tumults, labour, watching and fasting. Confinement and chains
+  remain distinct entries. The identifying we does not introduce
+  a second subject after ourselves.
+- Verses 6-7 retain purity, knowledge, long-suffering of spirit,
+  gentleness, the Holy Spirit and love without deceit. The first
+  spirit completes the long-suffering expression; it is not another
+  owner of the Holy Spirit. Word of truth, God's power, armour of
+  righteousness and both right and left remain explicit.
+- Verses 8-10 preserve each paired description: glory/dishonour,
+  good report/reproach, deceivers/true, unknown/known, dead/alive,
+  chastised/not dying, sorrowful/always rejoicing, poor/enriching
+  many, and having nothing/holding everything. The final death verb
+  in verse 9 is active, not a passive killed predicate. The dative
+  in sorrow and possession identifies us; it does not create another
+  person sorrowing for our benefit or an extra owner of our possessions.
+- Verses 11-12 keep our mouth open toward the Corinthians and our
+  heart expanded, then both constrained predicates: not in us, but
+  in the addressees' own affections. The expanded-heart wording follows
+  the actual form and context, not the abbreviated smell gloss.
+  Verse 13 retains speaking as to children, repayment to me and
+  enlargement of the addressees' love toward me; no my-children
+  possessor is supplied.
+- Verses 14-15 keep the son-of-yoke partnership idiom and those who
+  do not believe, followed by all four questions: righteousness with
+  iniquity, light with darkness, Messiah with Satan, and a believer
+  with an unbeliever. Satan is the actual source name. There is no
+  separate unequal adjective to add to the yoke expression.
+- Verse 16 retains both discourse particles, God's temple and that
+  of demons, the explicit you as the temple of the living God, and
+  the full divine promise. The demons expression is not replaced
+  with an absent idols noun. The repeated identifying you names one
+  group. Dwelling among them, walking among them, being their God
+  and their becoming my people remain four distinct relations;
+  the and-they pronoun begins the people clause.
+- Verses 17-18 retain coming out from among them, separation from
+  them, not approaching the unclean and God's receiving the addressees.
+  The first commands are plural, while the receiving speaker is
+  singular. Father to you, sons and daughters to me, and the concluding
+  divine utterance remain explicit. The all-holding expression is
+  rendered as the established Lord Almighty title, not another actor.
+
+All 18 verses and 221 source words received source-to-English and running
+English review. The two גיר and four דין occurrences were checked
+individually against the final English clauses.
