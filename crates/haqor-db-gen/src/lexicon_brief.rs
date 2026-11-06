@@ -52,7 +52,9 @@ struct Token {
     also: Vec<String>,
 }
 
-/// A BDB word under the root.
+/// A BDB word under the root. BDB files many verbs as the root's own entry
+/// (`kind` 'root'), so only a bare root heading, with no part of speech, is
+/// left out.
 struct Word {
     key: String,
     word: String,
@@ -65,7 +67,7 @@ fn words_of(db: &Connection, root: &str) -> Result<Vec<Word>> {
     let mut words: Vec<Word> = Vec::new();
     let mut stmt = db.prepare(
         "SELECT key, coalesce(word, ''), coalesce(pos, ''), coalesce(gloss, '') \
-         FROM data.lexicon_entry WHERE root = ?1 AND kind IS NOT 'root' ORDER BY key",
+         FROM data.lexicon_entry WHERE root = ?1 AND (kind IS NOT 'root' OR coalesce(pos, '') <> '') ORDER BY key",
     )?;
     for row in stmt.query_map([root], |r| {
         Ok(Word {
@@ -512,7 +514,7 @@ pub fn lexicon_rank(data_dir: &Path, lexicon_dir: &Path, n: usize) -> Result<Str
                     FROM data.surface_entry) \
          SELECT e.root, round(sum(k.share)) AS tokens, \
                 (SELECT group_concat(x.word, ' · ') FROM \
-                   (SELECT word FROM data.lexicon_entry WHERE root = e.root AND kind IS NOT 'root' \
+                   (SELECT word FROM data.lexicon_entry WHERE root = e.root AND (kind IS NOT 'root' OR coalesce(pos, '') <> '') \
                     ORDER BY key LIMIT 4) x) \
          FROM data.word w JOIN k USING(surface_id) \
          JOIN data.lexicon_entry e ON e.key = k.key \
