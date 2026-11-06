@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-10, 2 John, 3 John, and Jude
-(7,081 of 7,958 Peshitta verses; 877 remain). Hebrews 11 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-11, 2 John, 3 John, and Jude
+(7,121 of 7,958 Peshitta verses; 837 remain). Hebrews 12 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5323,3 +5323,15 @@ Source checks for Hebrews 10:
 - In 10:21, the noun followed by “great” is distinguished from the chief-priest compound in 10:11. In 10:24–25, the reciprocal expressions refer to one another; the final demonstrative belongs to “that day.” In 10:27, the adversaries are plural.
 - In 10:29, the blood of the covenant is reckoned as anyone’s blood, while the sanctification relative is retained. In 10:30, no explanatory “for” is added to the opening knowing predicate. In 10:32, the source explicitly names baptism. In 10:34, the grief is for imprisoned people; in 10:35, the great reward is prepared for the confidence the readers have.
 - In 10:37, the future coming predicate and its pronominal/relative subject are read together. In 10:38, “my faith” retains the first-person possessive; the feminine discouragement construction with an affected-person dative is an idiom also found in 1 Thessalonians 3:3, rather than a reason to make faith its subject. In 10:39, the final noun is singular “our soul,” with a first-person plural possessor, and the separate “for us” relation is retained.
+
+Source checks for Hebrews 11:
+
+- In 11:1, the existential construction and its dative are read together in the comparison with actual occurrence. In 11:3, the visible-things relative, past being predicate, and source preposition retain their own positions; the English copula is not assigned to the preposition alone.
+- In 11:4, the comparative retains the intensifier, the testimony is concerning Abel, and God is the witness to his offering. Abel is not made the speaker of testimony to God. The removal, negation, and prior testimony clauses in 11:5 remain distinct.
+- In 11:6, God remains the rewarder of those who seek him. The English retains the active rewarder predicate and its subject, with the seekers in the preceding dative phrase, rather than replacing the clause with a passive statement about being rewarded.
+- In 11:9, the heirs/inheritance construction retains the singular possessive and promise genitive as “the heirs of his promise.” In 11:10, the dative completes the city's foundation/possession construction, while the following relative identifies its builder and maker.
+- In 11:11, Sarah is the subject; her barren condition is subordinate to her receiving strength, and she gives birth outside the time of her years. The final clause says she firmly believed the promiser was faithful, rather than merely saying that she was strengthened by belief. In 11:13, the promise noun is singular with a plural possessor; dying, not receiving, the promise, and the following contrast are linked to their actual source positions.
+- In 11:16, the desired city is better than the former city, namely the one in heaven; the heavenly city is not the inferior term of the comparison. In 11:17, the possessive in “his trial” is retained, and the source's only-son/receiving-by-promise clause is followed without importing the familiar Greek construction about receiving promises. In 11:19, the ability to raise from the dead belongs to God.
+- In 11:23, Moses' parents hide him for three months after his birth; the description is of a beautiful boy. The source-order comparison in 11:26 keeps the Messiah's reproach and Egypt's treasure in their proper comparative relationship.
+- The list introduced in 11:32 continues through the following relative clauses. In 11:34, the source says they were strengthened out of illnesses, rather than changing the from-phrase into a temporal “after.” In 11:35, the source's giving to women of their sons remains part of the preceding agents' deeds; the following tortured group and its better-resurrection clause remain separate.
+- In 11:39–40, the negative reception of the promise is followed by the reason and purpose. The anticipatory looking construction in 11:40 is rendered “God looked ahead to our own advantage,” retaining both the help/advantage noun and the possessive emphasis before the clause about not being perfected without us.
