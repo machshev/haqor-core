@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1, 2 John, 3 John, and Jude
-(6,570 of 7,958 Peshitta verses; 1,388 remain). 2 Thessalonians 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-2, 2 John, 3 John, and Jude
+(6,587 of 7,958 Peshitta verses; 1,371 remain). 2 Thessalonians 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -4916,3 +4916,29 @@ Source checks for 2 Thessalonians 1:
   of faith and power, our Lord's name being glorified in the recipients,
   their being glorified in him, and the grace of our God and our Lord
   Jesus Messiah. The name and its genitive owner form one natural span.
+
+Source checks for 2 Thessalonians 2:
+
+- Verses 1–2 retain the speaker's “my brothers,” the assembly toward
+  Jesus, both being shaken and being troubled, and the day-of-our-Lord
+  claim framed as reported speech, rather than the narrator's assertion.
+- Verse 3 retains the general interrogative, followed by the conditional
+  about rebellion coming first and the man of sin being revealed. The
+  revelation verb belongs to the man, not rebellion. Compare the
+  [CAL entry for lma](https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c).
+- Verses 4–8 retain the opponent's self-exaltation, sitting in God's
+  temple and displaying himself as God, the former teaching, the one
+  restraining, removal from the midst, and our Lord Jesus consuming and
+  abolishing the lawless one. The start-plus-derived verb in verse 7 is
+  rendered “beginning to be stirred up,” preserving its inciting sense;
+  compare the [CAL entry for hpt](https://cal.huc.edu/oneentry.php?cits=all&lemma=xp%2B+V).
+- Verses 9–12 retain Satan's working, power, signs and lying wonders,
+  deception among those perishing, not receiving love of the truth,
+  God's sending deception, belief in a lie, and judgment of those who
+  preferred unrighteousness. The coordinated clauses join across verses.
+- Verse 13 has “our brothers,” distinct from “my brothers” in verses 1
+  and 15. God's choosing, life, sanctification and faith remain. Verse
+  14 retains plural “these things” and becoming our Lord's glory.
+- Verses 15–17 retain commands, word and letter, our Lord Jesus Messiah
+  and God our Father, loving and giving, eternal encouragement, good
+  hope through his grace, hearts, and every word and every good deed.
