@@ -211,6 +211,7 @@ pub fn lexicon_brief(
     root: &str,
     examples: usize,
     min_score: f64,
+    src_texts: &Path,
 ) -> Result<String> {
     let bible = Bible::open(data_dir).with_context(|| format!("opening {}", data_dir.display()))?;
     let db = haqor_core::data_support::connection(&bible);
@@ -383,6 +384,11 @@ pub fn lexicon_brief(
         writeln!(out, "- {}: {}", lexeme.lexeme, lexeme.meanings.join("; "))?;
     }
     writeln!(out)?;
+
+    let lemmas: Vec<String> = words.iter().map(|w| w.word.clone()).collect();
+    out.push_str(&crate::cognate_search::cognate_section(
+        src_texts, &root, &lemmas,
+    )?);
 
     writeln!(
         out,

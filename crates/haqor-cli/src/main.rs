@@ -370,6 +370,9 @@ enum DbCommands {
         /// Weakest New Testament quotation to list (see `db gen-quotes`).
         #[arg(long, default_value_t = 12.0)]
         min_score: f64,
+        /// Source texts directory holding the cognate dictionaries.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
     },
     /// Rebuild the apologetics of a runtime haqor.db in place from
     /// `data/apologetics.json`.
@@ -807,10 +810,11 @@ fn main() -> Result<()> {
                 data_dir,
                 examples,
                 min_score,
+                src_texts,
             } => {
                 print!(
                     "{}",
-                    haqor_db_gen::lexicon_brief(&data_dir, &root, examples, min_score)?
+                    haqor_db_gen::lexicon_brief(&data_dir, &root, examples, min_score, &src_texts)?
                 );
             }
             DbCommands::GenApologetics {

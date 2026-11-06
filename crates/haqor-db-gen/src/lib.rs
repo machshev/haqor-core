@@ -6,6 +6,7 @@
 
 mod apologetics;
 mod artifacts;
+mod cognate_search;
 mod cognates;
 mod events;
 mod geocoding;
