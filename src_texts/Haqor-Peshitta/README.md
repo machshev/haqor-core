@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-7, 2 John, 3 John, and Jude
-(5,436 of 7,958 Peshitta verses; 2,522 remain). 1 Corinthians 8 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-8, 2 John, 3 John, and Jude
+(5,449 of 7,958 Peshitta verses; 2,509 remain). 1 Corinthians 9 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -2564,3 +2564,49 @@ Source checks for 1 Corinthians 7:
 All 40 verses and 619 source words received source-to-English and running
 English review. The eight גיר, nineteen דין and two הכיל occurrences
 were checked individually against the final English clauses.
+
+Source checks for 1 Corinthians 8:
+
+- Verses 1-2 retain knowledge in all of us, knowledge puffing up and love
+  building up, the person's claim to know, not yet knowing anything,
+  and the standard of knowing as one ought. Postpositive discourse
+  particles are grouped with their actual clauses rather than making
+  “but thinks” mean merely thinking.
+- Verse 3 retains the passive “is known by him” for the person who loves
+  God. It is not changed to an active knowing of God. Verse 4 retains
+  “an idol is nothing in the world”; reversing this into “nothing is an
+  idol” would reverse the English subject and predicate. The food from
+  sacrifices and the one-God exception are both explicit.
+- Verses 5-6 preserve called gods, both heaven and earth, many gods and
+  many lords, and the separate one God/Father and one Lord/Jesus Messiah
+  clauses. The plural vocalized lords form is read in context rather
+  than mechanically adopting the lemma's “dominion” gloss. All things
+  from the Father, we in him, all things through the Lord and we also
+  through him remain distinct; repeated quantities are not discarded.
+- Verse 7 distinguishes knowledge not being in everyone from the next
+  existential “For there are” clause. It retains conscience, until now,
+  eating as a sacrifice to idols, weakness and passive defilement. The
+  conscience noun is singular with plural possessors.
+- Verse 8 preserves both eating conditions and their separate negative
+  outcomes. The first negative governs abounding, while the second
+  governs decreasing; neither is swallowed into the condition of not
+  eating. Food remains the subject that does not bring us near to God.
+- Verses 9-10 retain the addressees' authority becoming a stumbling block,
+  the observer seeing one addressee who has knowledge reclining in the
+  idol-house, and the observer's conscience being strengthened to eat.
+  The weak-person clause and conscience predicate keep their distinct
+  grammatical roles; the proleptic object marker adds no second person.
+- Verses 11-12 keep the weak person perishing through the addressee's own
+  knowledge, Messiah dying for that person, and sin against brothers and
+  their weak consciences as sin against Messiah. An ethical dative does
+  not introduce another cause or recipient; the explicit ב prefix on
+  knowledge supplies the by/through relation. The plural weak consciences
+  and possessors remain explicit.
+- Verse 13 keeps food causing the brother to stumble, the speaker's
+  future first-person refusal ever to eat flesh, and the final purpose
+  of not causing the brother to stumble. The causative predicate is not
+  replaced with a different actor or an omitted object.
+
+All 13 verses and 190 source words received source-to-English and running
+English review. The four גיר, six דין and one הכיל occurrences were
+checked individually against the final English clauses.
