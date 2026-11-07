@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-19
-(7,895 of 7,958 Peshitta verses; 63 remain). Revelation 20 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-20
+(7,910 of 7,958 Peshitta verses; 48 remain). Revelation 21 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -7387,3 +7387,104 @@ https://cal.huc.edu/oneentry.php?cits=all&lemma=tryc+A ;
 https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A ;
 https://dukhrana.com/lexicon/PayneSmith/page.php?p=117 ;
 https://assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=8443 .
+
+Source checks for Revelation 20:
+
+- All 15 verses and 237 actual source positions were checked against the inflected
+  forms, every supplied gloss alternative, numeric morphology, suffixes, and final
+  English owners. Each source position occurs once in ascending order. Two- and
+  three-position noun phrases, compound prepositions, negative verb units, and short
+  verb/subject units give grammatical English without hiding long clauses in combined
+  links. The source's five ITH constructions have no HWA auxiliary: none is inherently a
+  past existential, and no extra past/present assertion is manufactured. Supplied
+  articles, copulas, and relative constructions support English grammar without
+  replacing the actual lexical owners.
+
+- In 20:1 ANOTHER angel is explicit. He descended is perfect; the following relative
+  existential preserves the key UPON HIM and the separate great chain IN HIS HAND. In
+  20:2 the seizure suffix anticipates the dragon object rather than adding another
+  person. The FIRST serpent, the identifying existential, ACCUSER, Satan, bound HIM, and
+  a thousand years remain. There is no source clause about deceiving the whole habitable
+  world to import from the reference.
+
+- In 20:3 the casting, closing, and sealing are perfect actions. English "it" supplies
+  the understood abyss object for closing and sealing; it does not introduce a door
+  noun. L'EL MIN is the short compound "above," with HIM as its genuine pronominal
+  complement, not an extra independent "from him" clause. The negative, AGAIN, and
+  imperfect deception verb form the short unit "so that he would not again deceive,"
+  followed by ALL THE NATIONS. There is no source "until these thousand years are completed"
+  clause. AFTER THESE THINGS is followed by YIHIV, a passive participle, and the
+  infinitive TO RELEASE HIM for a little time. "It is granted" retains an impersonal
+  passive permission construction rather than inventing an active giver or turning the
+  following infinitive into an independent future event. CAL yhb G sense 3 confirms
+  permit/allow beyond the simple give gloss.
+
+- In 20:4 the parenthetical sitting and grant of judgment preserve the initial I SAW as
+  governing seats AND THE SOULS; the souls noun has no recipient L-prefix, so no "and TO
+  the souls" is supplied. The English "of those" gives the souls' human referents,
+  retaining the demonstrative and following relative construction; AND OF THOSE at
+  position 16 remains a second explicit genitive group. ETPSEQ is encoded as a masculine
+  singular passive perfect; English "who were cut off" agrees with the plural human
+  referents without inventing a HEAD noun or silently claiming the source verb is
+  plural. Both causal phrases, testimony of Jesus and word of God, remain. All three
+  worship/image/mark negatives are kept. ON BETWEEN THEIR EYES is rendered "on the
+  space between their eyes," with a supplied English nominal head for the locative,
+  rather than replacing EYES with forehead. THEIR HANDS are plural. D'HAYAW gives the
+  relative WHO LIVED, followed by the perfect AND REIGNED; the Messiah has no THEIR
+  suffix, and the thousand years have no THESE demonstrative. Verse 20:5 has only "And
+  this is the first resurrection"; no rest-of-the-dead clause is imported from another
+  textual tradition.
+
+- In 20:6 blessed and holy, the singular person with a share, the first resurrection,
+  and OVER THESE retain their actual owners. LAYT explicitly negates the authority
+  available to the second death. "They will be" is imperfect, not an additional present
+  "are"; priests belong to God AND THE MESSIAH, with no HIS suffix on Messiah. They WILL
+  REIGN WITH HIM for a thousand years. In 20:7 MA D- is temporal WHEN, and the perfect
+  completion form presents the years as completed before the future release. English
+  uses "have been completed" in the temporal clause; a short three-position unit gives
+  the verb and count phrase in grammatical English order. Satan WILL BE RELEASED is
+  passive imperfect. His imprisonment retains its genuine singular possessor; no THESE
+  is added to the years.
+
+- In 20:8 he WILL GO OUT, with two purpose infinitives, to deceive ALL the nations and
+  to gather THEM for battle. The corners suffix anticipates earth, and the numeral FOUR
+  remains. L-Gog and L-Magog are definite direct-object markers in apposition to the
+  nations, not new recipients requiring English "to Gog." Syriac's L-prefix can mark
+  definite direct objects (Robinson/Coakley, sections 7 and 18). The final relative
+  keeps THOSE, THEIR NUMBER, and the comparison with the sand of the sea; no plural
+  actor replaces singular Satan.
+
+- In 20:9 the breadth suffix anticipates EARTH and the surrounding suffix anticipates
+  the named CITY. The source explicitly has THE CITY OF THE ENCAMPMENT OF THE HOLY ONES
+  and then THE BELOVED CITY; the first CITY is not omitted as in the reference, and
+  encampment is a noun, not an adjective modifying holy ones. The fire DESCENDED FROM
+  HEAVEN, FROM GOD, in that order, and CONSUMED THEM. In 20:10 the Accuser is THEIR
+  DECEIVER, an owned noun rather than a new past deception verb. He WAS CAST into the
+  lake of fire AND sulfur; WHERE introduces the beast and false prophet, without an
+  additional ALSO. The torment is a passive imperfect, WILL BE TORMENTED, day and night
+  for the age of ages. Both source age nouns remain.
+
+- In 20:11 the great white throne and the one SITTING ABOVE IT retain the actual
+  participle and L'EL MIN compound. The resumed THE ONE introduces FROM BEFORE WHOSE
+  FACE the earth and heaven FLED; FACE has the idiomatic plural form with a singular
+  possessor, naturally singular English face. A PLACE WAS NOT FOUND FOR THEM is passive
+  perfect; there is no possessive suffix on place or THIS demonstrative. In 20:12 the
+  dead STOOD (perfect, not an active participle) before the throne. BOOKS plural were
+  opened, then ANOTHER BOOK singular was opened, WHICH IS OF JUDGMENT, not the
+  reference's life. The dead WERE JUDGED from the written things IN THE BOOK, singular
+  in the actual vocalization and metadata, according to THEIR DEEDS. No source noun is
+  moved to own the judgment verb or FROM particle.
+
+- In 20:13 the sea GAVE UP its dead, and DEATH AND SHEOL GAVE UP those WITH THEM. The
+  passive judgment verb is singular, followed by the distributive HAD HAD, EACH ONE OF
+  THEM; the final possessor remains THEIR DEEDS, not the reference's his deeds. In 20:14
+  death and Sheol WERE CAST into the lake of fire, followed only by THIS IS THE SECOND
+  DEATH. There is no repeated "namely, this lake of fire" clause. In 20:15 AND WHOEVER
+  introduces the negative passive finding, with MARKED as a passive participle, IN THE
+  BOOK OF LIFE; the main casting verb is a separate passive perfect. No IF or THIS
+  before the lake is imported from the reference.
+
+Lexical and grammatical support:
+https://cal.huc.edu/oneentry.php?cits=all&lemma=yhb+V ;
+https://cal.huc.edu/cal_entry_web.php?lemma=l%28yl+X ;
+https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf .
