@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-18
-(7,874 of 7,958 Peshitta verses; 84 remain). Revelation 19 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-19
+(7,895 of 7,958 Peshitta verses; 63 remain). Revelation 20 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -7282,3 +7282,108 @@ Source checks for Revelation 18:
   narrative setting. There is NO extra all-other-people slain clause in this source. The
   blood belongs to the named prophets and holy ones; the source is not expanded to the
   reference's universal final group.
+
+Source checks for Revelation 19:
+
+- Revelation 19 was checked against all 332 actual source positions, every exported
+  gloss alternative, inflected forms, morphology, suffixes, and the final English
+  owners. All 21 verses retain every source position once in ascending order. Short noun
+  phrases, postpositive particles, possessive constructions, and title units use two or
+  three positions; no whole long clause is hidden in a combined link. Supplied English
+  copulas, articles, relative constructions, and inversion make the running text
+  grammatical without treating dictionary glosses as inflected English.
+
+- In 19:1 and 19:6 the crowds are plural. There is no additional honor noun in 19:1. The
+  three source nouns deliverance, glory, and power are kept in their actual order; the
+  dative supplies the English possession predicate "belong to our God." Both causal
+  particles in 19:2 remain. K'ANIN at 19:2 position 2 is "just," despite the export's
+  incomplete generic KWN glosses; CAL's k'n adjective confirms just/fair/proper. His
+  judgments and his servants retain their masculine singular possessor; her fornication
+  and her plural hands retain their feminine singular possessor. Requiring the servants'
+  blood from her hands preserves TBA and the source's MIN. In 19:3 D'TARTEN is "a second
+  time" and SLĒQ is perfect, "has ascended."
+
+- In 19:4 the source explicitly says "our God," rather than Murdock's unsuffixed God.
+  Twenty-four elders and four living creatures remain separate subjects. The sitting
+  participle is present; "were saying" places the saying participle in the past vision
+  without mislabelling it as a perfect. In 19:5 the source has a voice from the throne,
+  without a come-forth verb. Both ALL quantifiers, "his name," the little, WITH, and the
+  great remain. In 19:6 all three voice comparisons are retained; AMLEK is a
+  third-person singular perfect (form 5), not an active participle. "Has reigned"
+  preserves its completed aspect. There is no OUR suffix on Lord or God there. AHID KUL
+  is the short title "Almighty," not an extra "entirely" after an already complete
+  Almighty rendering.
+
+- In 19:7 the first two first-person plural forms are current rejoicing and exulting;
+  the first-person imperfect gives "let us give." The feast has come, and HIS WIFE has
+  made ready HERSELF. The feast's suffix anticipates "of the Lamb" rather than
+  introducing another possessor. In 19:8 the permission is passive and the clothing
+  clause gives its content. The linen is clean AND bright. The feminine plural nominal
+  TRĪṢĀTHĀ is rendered "upright deeds" with its implicit nominal head; CAL tryc confirms
+  upright/correct. The plural pronominal copula agrees with that predicate in Syriac;
+  English "is" agrees with mass-noun linen.
+
+- In 19:9 the first speech verb is explicitly plural "they said," whereas the second is
+  singular "he said." The beatitude keeps its called plural subject and supper, wedding
+  feast, and Lamb chain. Its final statement retains THESE WORDS, TRUE, OF GOD, and the
+  plural existential; there is no MY suffix. In 19:10 the narrator worshiped him (a
+  perfect action, not an infinitive purpose). The response is "No!" and a separate
+  assertion of being the hearer's fellow servant and that of his brothers; no SEE/LOOK
+  verb is added, and this assertion is not changed into a prohibition against worshiping
+  a fellow servant. The testimony belongs to Jesus. The God-directed imperative retains
+  YATIRAIT's especially/above-all force, and the following GAR is causal "for," not part
+  of the Jesus name link.
+
+- In 19:11 MHAYMNA is "Faithful," supported by CAL mhymn's trustworthy/faithful sense
+  beyond the export's believer gloss. The rider judges and wages war, with present
+  participles. In 19:12 his eyes, his head, many diadems, and a singular written name
+  remain; no extra names or written-on-him clause is imported from Murdock. The except
+  construction combines ELLA EN, and the generic negative knowing construction gives "no
+  one knows except himself." In 19:13 the garment has no possessive suffix. ZLĪʿ is a
+  passive participle; Payne Smith, Compendious Syriac Dictionary p. 117, explicitly
+  gives "mingled, infected" for this form, supporting "mingled with blood" beyond
+  SEDRA's limited draw-out gloss. Both clothing and naming are states; his NAME is
+  called Word of God.
+
+- In 19:14 the plural armies were following HIM; HWA is the actual third-person plural
+  perfect auxiliary, not an additional event. NQYPYN has passive-shaped morphology but
+  the lexical idiom "follow" gives active English following. White horses and white AND
+  clean linen remain. In 19:15 the actual suffix says "their mouth," and NEQTLUN says
+  "they will kill"; neither is silently changed to the singular rider from the
+  reference. There is no two-edged adjective. The separate singular subject will tend
+  THEM, the explicit plural object at position 10, with an iron rod; the next singular
+  subject tramples (a participle). The wrath suffix anticipates God, and AHID KUL again
+  gives Almighty.
+
+- In 19:16 the garments and thighs are both plural, each with HIS as possessor, and both
+  ON phrases remain without an invented conjunction. The inscription is a singular
+  written name, King of kings and Lord of lords. The vocalized MĀRAWĀTHĀ is the plural
+  of lord/master, confirmed by the Classical Syriac dictionary's mara entry; the generic
+  dominion gloss and feminine plural metadata do not override that actual form.
+
+- In 19:17 ANOTHER angel is explicit. He cried and said are perfects, whereas standing
+  and flying are participles. The bird noun is a feminine singular collective, naturally
+  English "birds" alongside the plural come/gather imperatives; no ALL or THIS is
+  imported. In 19:18 all five flesh nouns remain, with commanders of THOUSANDS (the
+  lexical numeral is plural), mighty people, horses and their riders, free and servants,
+  little and great. No additional ALL or free-BORN is supplied.
+
+- In 19:19 the beast's armies and the kings' soldiers remain distinct, with their actual
+  possessors. Gathering is an active participle, and making war is the purpose
+  infinitive. War WITH these opponents gives idiomatic English "against"; no white
+  adjective is supplied for the horse. In 19:20 the capture and casting are passive
+  perfects; the false prophet performed signs before the beast and deceived people BY
+  those signs. The mark, worshipers, and its image remain. BOTH DESCENDED is a separate
+  explicit perfect action before they were cast; there is no ALIVE word. The short final
+  noun phrase retains fire, its burning participle, AND OF sulfur as coordinated
+  genitives. In 19:21 the rest were killed, with the adversative DEYN retained. The
+  sword's suffix anticipates its named rider; the relative instrument repeats that
+  sword. Here HIS mouth is singular, distinct from THEIR mouth in 19:15. The collective
+  bird noun and feminine singular perfect are English plural "all the birds were
+  satisfied," and THEIR flesh retains its genuine plural possessor.
+
+Lexical support: https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A ;
+https://cal.huc.edu/oneentry.php?cits=all&lemma=tryc+A ;
+https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A ;
+https://dukhrana.com/lexicon/PayneSmith/page.php?p=117 ;
+https://assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=8443 .
