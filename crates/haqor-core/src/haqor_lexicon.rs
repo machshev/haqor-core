@@ -90,10 +90,12 @@ pub const STEMS: &[&str] = &[
 ];
 
 /// The languages a cognate may be in (see the README).
-pub const COGNATE_LANGS: &[&str] = &["akk", "uga", "phn", "arc", "syc", "ar", "gez", "sem", "grc"];
+pub const COGNATE_LANGS: &[&str] = &[
+    "akk", "uga", "phn", "arc", "syc", "ar", "gez", "sem", "grc", "egy",
+];
 
 /// Languages outside the Semitic family, whose words can only be loans.
-pub const LOAN_ONLY_LANGS: &[&str] = &["grc"];
+pub const LOAN_ONLY_LANGS: &[&str] = &["grc", "egy"];
 
 /// The languages a word of scripture may be in besides Hebrew, the default:
 /// Biblical Aramaic, and the Syriac of the Peshitta.
@@ -841,7 +843,7 @@ impl Checker<'_> {
                 self.fault(
                     &at,
                     format_args!(
-                        "`{}` is no Semitic language: its words can only be loans",
+                        "`{}` is not a Semitic language: its words can only be loans",
                         cognate.lang
                     ),
                 );
@@ -1390,7 +1392,19 @@ mod tests {
             r#""lang": "grc", "form": "ψυχή""#,
         );
         let error = check(&json).unwrap_err().to_string();
-        assert!(error.contains("`grc` is no Semitic language"), "{error}");
+        assert!(error.contains("`grc` is not a Semitic language"), "{error}");
+        let loan = json.replace(r#""relation": "cognate""#, r#""relation": "loan""#);
+        check(&loan).unwrap();
+    }
+
+    #[test]
+    fn egyptian_cognates_are_loans_only() {
+        let json = ENTRY.replace(
+            r#""lang": "ar", "form": "نفس""#,
+            r#""lang": "egy", "form": "pr-ꜥꜣ""#,
+        );
+        let error = check(&json).unwrap_err().to_string();
+        assert!(error.contains("`egy` is not a Semitic language"), "{error}");
         let loan = json.replace(r#""relation": "cognate""#, r#""relation": "loan""#);
         check(&loan).unwrap();
     }

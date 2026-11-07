@@ -88,21 +88,66 @@ were there. The individual readings may be refined. The overall picture is
 of a Semitic people in Egypt writing their own tongue, and scripture says who
 that people was.
 
-One point turns on scripture itself: when the stay in Egypt began.
+One point turns on scripture itself: how long Israel was in Egypt. Both
+readings have scriptural evidence.
 
-- 1 Kings 6:1 puts the exodus 480 years before the fourth year of Solomon,
-  about 1446 BC.
-- Exodus 12:40–41 gives the stay as 430 years. Read as 430 years in Egypt,
-  Jacob arrives about 1876 BC, and the inscriptions from 1842 BC fall in
-  Joseph's lifetime.
-- Galatians 3:17 counts 430 years from the promise to the law. With the
-  Septuagint and the Samaritan Pentateuch at Exodus 12:40 ("in Egypt and in
-  the land of Canaan"), that leaves about 215 years in Egypt. Jacob would then
-  arrive about 1660 BC, after the earliest inscriptions.
+For 430 years in Egypt:
 
-Petrovich's dates need the long stay in Egypt. The short one would make the
-earliest inscriptions the work of other Semites, with Israel adopting the
-script after it arrived.
+- Exodus 12:40–41 (Masoretic text): "the sojourning of the children of
+  Israel, who dwelt in Egypt, was four hundred and thirty years".
+- Genesis 15:13 (quoted in Acts 7:6): Abram's seed will be strangers in a
+  land not theirs, serving and afflicted, four hundred years.
+- Israel grows from seventy souls (Genesis 46:27) to 603,550 men of fighting
+  age (Numbers 1:46).
+- 1 Chronicles 7:20–27 counts about ten generations from Ephraim to Joshua.
+- At Sinai the Amramites are one of four Kohathite clans, with 8,600 Kohathite
+  males (Numbers 3:27–28): too many to be the descendants of Moses' own father.
+  That suggests the Amram of Exodus 6:20 is a forebear several generations
+  back, and the genealogy is shortened, as genealogies often are.
+
+For 215 years in Egypt:
+
+- Galatians 3:17: the law came 430 years after the covenant with Abraham.
+  From the promise (Abram aged 75, Genesis 12:4) to Jacob's arrival in Egypt
+  is 25 + 60 + 130 = 215 years (Genesis 21:5, 25:26, 47:9), which leaves 215
+  in Egypt. The long reading answers that the promise was confirmed last to
+  Jacob as he went down (Genesis 46:3–4), and the count can start there.
+- The Septuagint and the Samaritan Pentateuch at Exodus 12:40 add "and in the
+  land of Canaan".
+- Genesis 15:16: "in the fourth generation they shall come hither again":
+  Levi, Kohath, Amram, Moses (Exodus 6:16–20).
+- Jochebed, Moses' mother, was "the daughter of Levi, whom her mother bare to
+  Levi in Egypt" (Numbers 26:59). If Levi's own daughter bore Moses, the stay
+  cannot have been 430 years. On the long reading "daughter" means descendant.
+- Kohath came down with Jacob (Genesis 46:11). His years (133), Amram's (137)
+  and Moses' 80 at the exodus add up to at most 350 years.
+
+With the exodus about 1446 BC, the long stay puts Jacob's arrival about
+1876 BC and the short one about 1661 BC. On the conventional Egyptian dates
+Petrovich uses, the earliest inscriptions (about 1842 BC) fall in Joseph's
+lifetime only on the long stay. The inscriptions' dates depend on the Egyptian
+chronology as much as on scripture's (see David Rohl's chronology, below).
+
+### Petrovich and David Rohl
+
+David Rohl (*A Test of Time*, 1995) also places Joseph and Israel in the
+Middle Kingdom, and the exodus about 1447 BC. But he lowers Egypt's dates by
+up to about three and a half centuries (his "New Chronology"), which Petrovich does not accept.
+
+| | Petrovich | Rohl |
+|---|---|---|
+| Exodus | about 1446 BC (1 Kings 6:1) | about 1447 BC |
+| Egyptian dates | conventional | lowered, by up to about 350 years |
+| Stay in Egypt | 430 years | 215 years |
+| Joseph | 12th dynasty | 12th dynasty (Amenemhat III) |
+| Pharaoh of the exodus | Amenhotep II (18th dynasty) | Dudimose (13th dynasty) |
+| Israel's settlement | Avaris, Middle Kingdom | Avaris; the tomb with a Semitic official's statue read as Joseph's |
+
+They reach the same biblical dates by different routes, because the 12th
+dynasty sits about 200 years later on Rohl's dates. If those dates were right,
+the earliest alphabetic inscriptions would fall after 1661 BC, during the
+short stay, and Petrovich's reading of them as Hebrew would fit the short
+stay too.
 
 ### What it means for scripture
 
@@ -181,8 +226,7 @@ Petrovich adds three more:
   house"), יְאֹר "the Nile" (*itrw*), סוּף "reeds" (*ṯwf*), גֹּמֶא
   "papyrus" (*qmꜣ*), תֵּבָה "chest" (*ṯbt*), אָחוּ "reed grass" (*ꜣḫ*),
   חַרְטֹם "magician" (*ḥry-tp*). An entry for such a word should record its
-  Egyptian source as a loan. The lexicon does not yet accept Egyptian as a
-  cognate language.
+  Egyptian source as a loan (`egy`).
 - **The inscriptions are Hebrew evidence outside scripture.** The words read
   in them are the earliest written Hebrew. They rank below scripture's use
   and, being Hebrew itself, above cognates.

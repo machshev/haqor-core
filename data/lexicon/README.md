@@ -119,7 +119,7 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 | Field | |
 |---|---|
 | `id` | Optional, kebab case, unique in the entry (`ar-gharb`), for `cognate_ids` to name. |
-| `lang` | `akk` Akkadian, `uga` Ugaritic, `phn` Phoenician, `arc` Aramaic, `syc` Syriac, `ar` Arabic, `gez` Ge'ez, `sem` other Semitic, and `grc` Greek, which is no Semitic language: a Greek word can only be a `loan`. |
+| `lang` | `akk` Akkadian, `uga` Ugaritic, `phn` Phoenician, `arc` Aramaic, `syc` Syriac, `ar` Arabic, `gez` Ge'ez, `sem` other Semitic; and two languages that are not Semitic, whose words can only be a `loan`: `grc` Greek (a Hebrew or Aramaic word borrowed into Greek) and `egy` Egyptian (an Egyptian word borrowed into Hebrew, such as פַּרְעֹה from *pr-ꜥꜣ*; give a Coptic form, if any, in the `note`). |
 | `form` | The word in its own script. |
 | `translit` | A transliteration. |
 | `gloss` | Its meaning in its own language. |
