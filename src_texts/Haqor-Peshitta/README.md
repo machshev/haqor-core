@@ -5737,12 +5737,16 @@ Source checks for 1 John 2:
 - 2:21 retains both the negative writing statement and the negative knowing
   clause. The feminine all-quantifier belongs to the following falsehood,
   not to knowing the masculine truth. The resulting clause is "and that no
-  falsehood was from the truth", with its anticipatory origin phrase absorbed.
+  falsehood is from the truth", with its anticipatory origin phrase absorbed.
 - 2:22 keeps the rhetorical question and renders the denial as a quoted
   negative statement. This retains the source's `לא` while avoiding the
-  opposite English meaning produced by "denies that Jesus was not ...".
+  opposite English meaning produced by "denies that Jesus is not ...".
   Compare the [Syriac text and translations](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=1John+2%3A22).
   The following Father/Son denial sequence stays in the source's order.
+- In 2:21–22, the negative constructions `לא הות` and `לא הוא` retain
+  present assertions, rather than mechanically importing past time from
+  their perfect-form being verbs. Compare the non-inherent-predicate
+  and negative-cleft uses in [Pat-El on Syriac negation](https://doi.org/10.1093/jss/fgl006).
 - 2:23 has an active believing/trusting predicate with the Father, and the
   later Father noun belongs to a second explicit confession predicate.
   2:24 retains the message's remaining with the addressees, the "for if"
