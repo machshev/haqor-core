@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1, 2 John, 3 John, and Jude
-(7,409 of 7,958 Peshitta verses; 549 remain). 2 Peter 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-2, 2 John, 3 John, and Jude
+(7,431 of 7,958 Peshitta verses; 527 remain). 2 Peter 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5586,3 +5586,50 @@ Source checks for 2 Peter 1:
   metaphorical meaning.
 - 1:21 distinguishes being moved from speaking. The Holy Spirit occupies
   positions 11-13; the speakers are third-person plural holy people of God.
+
+Source checks for 2 Peter 2:
+
+- 2:1 retains the people noun, rather than Murdock's world, and preserves the
+  Lord buying the false teachers, their denial, and their bringing destruction
+  upon themselves. In 2:3 the demonstrative introduces the teachers whose
+  judgment follows; it is not a second object after the exploited addressees.
+- 2:4-9 keep the extended conditional sentence. The explanation of Lot's
+  distress in 2:8 is parenthetical, so the Lord's knowledge in 2:9 completes
+  the conditional. The lower places in 2:4 remain source vocabulary, and
+  2:5 retains Noah's ordinal description.
+- 2:6 ends with the third-singular perfect placement verb `סמ`. It establishes
+  the example for future ungodliness; it is not part of a future passive
+  description of people being placed. In 2:7 the plural copula completes the
+  lawless people's description, before the separate active delivery of Lot.
+- 2:8 retains the past dwelling construction and the active Pael tormenting
+  predicate. The righteous soul is the object, not a passive or locative
+  subject. The upright man is identified appositionally in the English.
+- 2:10 retains singular glory and its relation to fear, rather than importing
+  plural glorious beings. The source preposition `מן` with `זוע` can introduce
+  the object of fear; the English uses "of glory". Compare the fear sense and
+  its pronominal objects in [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=zw%28+V).
+- 2:12 keeps the explicit past copula and the subsequent future destruction
+  predicate. In 2:13 the singular copula belongs to the iniquity/reward
+  construction. The plural defilement descriptions qualify the people,
+  rather than the singular daytime revelry.
+- 2:14 distinguishes possessing the eyes and trained heart from being
+  children of the curse. It does not say that these teachers possess cursed
+  offspring. The curse description is an English nominal predicate.
+- 2:16 preserves the donkey's lack of ordinary speech, her human-voice
+  speaking, and the restraint of the prophet's foolishness. The two actions
+  remain active, and the possessive on foolishness is absorbed into its
+  following prophet genitive.
+- 2:17 treats the repeated demonstrative as a topic: the gloom is reserved
+  for these people; the people are not equated with darkness. In 2:18 the
+  barely escaping description follows the supplied source and Murdock.
+- 2:19 `זכא` is marked as a passive participle: the man is vanquished, not
+  the conqueror of the thing that enslaves him. The English active equivalent
+  makes that thing the agent overcoming the man. Both anticipatory/resumptive
+  objects and the final enslavement relation are retained.
+- 2:20 absorbs the anticipatory possessives in the world and Lord genitives.
+  Entanglement and being overcome remain distinct, and the evil-plus-`מן`
+  comparison is English "worse than". The result is declarative, not a question.
+- 2:21 keeps the causal particle and the separate backward/turning elements.
+  In 2:22 the things of the proverb are plural, the dog's return is past,
+  and the sow's bathing is active. The final wallowing phrase uses the
+  coordinated proverb's understood return rather than inventing a source verb.
