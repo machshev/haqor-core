@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-3, 2 John, 3 John, and Jude
-(7,512 of 7,958 Peshitta verses; 446 remain). 1 John 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-4, 2 John, 3 John, and Jude
+(7,533 of 7,958 Peshitta verses; 425 remain). 1 John 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5791,3 +5791,37 @@ Source checks for 1 John 3:
   In 3:24, the keeping predicate is passive (“is kept by him”), followed
   by the distinct dwelling predicate and its explicit “and he” subject.
   The later third-person dwelling verb is also rendered with “he.”
+
+Source checks for 1 John 4:
+
+- In 4:1, the second-person plural imperfect is a prohibition; the
+  following being/discerning construction supplies the contrasting command
+  to discern spirits. In 4:2, “the Spirit of God” is the subject of “is
+  known”; the separate “every spirit” begins the following test.
+- In 4:3, the supplied confession clause names Jesus without repeating
+  the Messiah title found in 4:2. The later source explicitly names the
+  false Messiah. `מנ כדו` is the temporal idiom “already.” In 4:4, the
+  comparative “than” is distinct from the following “in the world.”
+- In 4:5, `מטל הנא` together means “therefore.” In 4:6, the two negated
+  predicates remain distinct, and the repeated prepositional demonstrative
+  construction supplies “By this.”
+- In 4:9, the Son precedes the sending verb and its subject, God.
+  English uses a local passive while retaining God as the sender.
+  The anticipatory possessives in “the love of God” are absorbed naturally.
+- In 4:10, the two occurrences of unvocalized `אחבנ` have different
+  vocalizations and morphology: “we loved” and “he loved us.” `על אפי`
+  is the on-behalf-of idiom. In 4:12, the fronted God is the object of
+  “no one has ever seen”; the verb's resumptive object suffix refers to him.
+- In 4:13, the Spirit phrase retains its partitive “from,” rather than
+  making the Spirit the cause or subject of giving. In 4:14, the Saviour
+  is “for the world.” In 4:16, the believing and knowing verbs are perfect;
+  the supplied source ends with abiding in God without another reciprocal
+  dwelling clause.
+- In 4:17, confidence/open faces is a possession idiom, rendered “that we
+  may have confidence.” The being verb there is imperfect, while the later
+  “as he was” has an explicit perfect. In 4:18, the separate fear nouns
+  retain their object and subject roles, and the supplied noun is danger.
+- In 4:19, the first-person plural imperfect is hortative, “let us love.”
+  In 4:20, “I love God” is first-person speech; the following hatred is
+  third-person narration about that speaker. In 4:21, the two love verbs
+  have distinct roles: whoever loves God should also love his brother.
