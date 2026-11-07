@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-8
-(7,697 of 7,958 Peshitta verses; 261 remain). Revelation 9 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-9
+(7,718 of 7,958 Peshitta verses; 240 remain). Revelation 10 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6316,3 +6316,79 @@ Source checks for Revelation 8:
   separate seeing, tail, blood, loud voice, or remaining modifier here.
   Singular sound belongs to plural trumpets of three angels, who are ready
   to sound; readiness is a state rather than a completed sounding action.
+
+Source checks for Revelation 9:
+
+- 9:1-4: The fifth sounds in the established trumpet sequence; the seer is
+  first person. The star had fallen from heaven, and the key is given to him.
+  The pits/wells are plural throughout 9:1-2; the abyss suffix is anticipatory.
+  This source has no pit-opening clause in 9:2. Smoke rises like smoke from
+  a great kindled furnace and darkens sun and air. Locusts come from it and
+  receive the power that scorpions have, with no additional comparison word.
+  The locusts must not harm earth's grass, any green herb, or even trees;
+  the exception is people without God's seal between their eyes. "Except"
+  renders the but-if construction, and existential non-possession is "did
+  not have." Negative scope gives English "or any" for the coordinated herb.
+- 9:5-6: The locusts may not kill the people, but the people are to be
+  tormented for five months. The torment verb is passive in stem 4, not an
+  active command to torment themselves; its English subject is made explicit
+  from the preceding object. Their torment resembles a scorpion's when it
+  falls upon a person. The imperfect predictions retain seeking death,
+  failing to find it, longing to die, and death fleeing from them. Small
+  subject/verb links keep the postverbal people and death grammatical in
+  English, while the death object suffix remains on "find it."
+- 9:7-10: All the appearance/form and comparison words are retained.
+  Prepared horses are the battle comparison, a singular crown resembles
+  gold, and the locusts' faces resemble human faces. Hair possession is
+  idiomatic object-fronted "hair they had"; their teeth resemble lions'.
+  The breastplate is singular, like a breastplate of iron; wing sound is
+  compared to chariots of many horses running into battle. Tails resemble
+  the form of a singular scorpion. "Stings, however, were in their tails"
+  retains the postpositive contrastive particle and actual nominal order.
+  Their power harms people for five months. Existential possession and
+  nominal comparisons receive English copulas in the ongoing vision scene.
+- 9:11: The king is the angel of the abyss, named Abaddon in Hebrew.
+  The second name is the source participle shara, rendered "Destroyer,"
+  rather than an imported Apollyon noun. CAL's shry simple-stem entry
+  explicitly includes destroying/breaking with Syriac examples
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=%24ry+V).
+  The vocalized armayit is rendered "in Gentile usage" in this naming
+  context; it is not silently changed to an Aramaic or Greek language label.
+  CAL distinguishes pagan usage from the related Syriac-language adverb
+  (https://cal.huc.edu/cal_entry_web.php?lemma=%29rmy%232+A).
+  The name/dative/existential phrase becomes idiomatic "his name is."
+- 9:12-16: One woe has passed; two more are coming. "After these things"
+  begins source verse 13 and completes the prediction across the boundary.
+  The sixth angel sounds and the seer hears one voice from four horns of
+  the gold altar before God. Its saying clause continues into 9:14, with
+  second-singular "Release" addressing the trumpet-bearing sixth angel.
+  The four angels bound at the great Euphrates are released; they were
+  prepared for the hour, day, month, and year to kill a third of humankind.
+  Passive English inversion keeps the release verb before its subject.
+  The forces of horsemen number two myriads of myriads; the source's numeric
+  terms remain explicit, as does the seer's hearing of their number.
+- 9:17-19: The vision gives the seated riders a singular breastplate.
+  The difficult material phrase retains fire, chalcedony, and the actual
+  genitive "of sulfur" after chalcedony, without inserting a third
+  coordinating conjunction or an unsupported color adjective. This is a
+  literal visionary description; the material relation is uncertain. The
+  same genitive reading occurs in the independently published Syriac text
+  (https://www.textgridrep.org/browse/49fh6.0?mode=gallery).
+  "Their horses" keeps its genuine possessive, and their heads resemble
+  lions' heads. Mouth remains the source's singular collective with a plural
+  possessor. Fire, sulfur, and smoke issue in that order in both 9:17-18.
+  These are the three plagues killing a third of humankind; "and specifically
+  by" marks the explanatory repetition of the three causes. The horses'
+  power is in their mouth and also their tails. There is no serpent-tail,
+  head, or striking clause in source 9:19.
+- 9:20-21: The surviving remainder is not killed by the plagues and does
+  not repent. English makes the source relative description a coordinated
+  finite statement, preserving both negative clauses and their conjunction.
+  The work of their hands and the purpose of ceasing demon/idol worship
+  remain explicit. Wood precedes stone. The four-position link in 9:20
+  renders the shared delayed ability predicate with its coordinated negative
+  infinitives as "able to see or hear," governed by "are not"; this retains
+  both negative scopes in grammatical English. "Or to walk" also remains.
+  All five explicit negative particles are represented. The final verse
+  retains murders, sorceries, and fornication, with their possessors and
+  three coordinated from/of phrases; this source has no theft phrase.
