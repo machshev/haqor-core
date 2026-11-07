@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, and Jude
-(7,554 of 7,958 Peshitta verses; 404 remain). Revelation 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1
+(7,574 of 7,958 Peshitta verses; 384 remain). Revelation 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5866,3 +5866,42 @@ Source checks for 1 John 5:
   fear/awe noun is documented in the [Comprehensive Aramaic Lexicon](https://cal.huc.edu/getlex.php?coord=620540603&word=15),
   including Syriac religion, cult, and devotion senses. The noun and the
   separate plural idols remain individually linked.
+
+Source checks for Revelation 1:
+
+- In 1:1, the passive giving construction with the being infinitive is
+  rendered “is appointed to happen.” The opening English supplies a
+  presentative copula; the later making-known and sending predicates keep
+  their third-person subjects. John's testimony continues into 1:2.
+- In 1:3, the reader is singular and the hearers plural; English “are”
+  agrees with their coordinated subject. The final drawing-near verb is
+  perfect, “has drawn near.” In 1:5, loving and releasing are active
+  participles, while the following making verb in 1:6 is perfect.
+- In 1:6, the supplied source has a priestly kingdom: `כהניתא` is a
+  singular adjective modifying the kingdom, not a separate plural priests.
+  In 1:7, eyes and tribes retain their respective seeing and mourning roles;
+  local English passive wording keeps the source's postposed agents.
+  The piercing form `דדקרוהי` follows plural `אילינ`; its vocalized ending
+  and antecedent support “those who pierced him” despite the singular raw tag.
+- In 1:8, the source names the Syriac letters Olaph and Taw. In 1:9,
+  the son/partner construction means a fellow partner, not a separate son.
+  The source has tribulation and endurance in Jesus without another
+  Messiah title there; the title is present later in the same verse.
+- In 1:10, `חדבשבא` explicitly names Sunday. In 1:12, the infinitive is
+  knowing/recognizing the voice, and the speaking verb is perfect.
+  The seeing clause continues into the human-form figure in 1:13, where
+  the actual garment noun is ephod. No down-to-the-feet wording is added.
+- In 1:14, one white adjective describes head and hair, followed by wool
+  and snow comparisons. In 1:15, the source's Lebanese brass is heated:
+  the heating form is passive, not an active heating agent. In 1:16, the
+  weapon is a sharp spear, and the showing/strength description retains
+  the feminine third-person suffix as English “its.”
+- In 1:18, the Living One continues the preceding first/last titles;
+  “I was dead” has its own first-person perfect. The key noun is singular
+  in both the supplied vocalization and morphology, also visible in the
+  [Syriac source analysis](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=Revelation+1%3A18).
+  Death and Sheol remain in the source's order.
+- In 1:19, the present things and the future/prepared things remain
+  coordinated separately. In 1:20, the stars and lampstands have distinct
+  explanations, both final seven-quantifiers are retained, and gold belongs
+  to the later lampstand phrase rather than the earlier one.
