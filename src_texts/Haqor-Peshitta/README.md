@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-4, 2 John, 3 John, and Jude
-(7,533 of 7,958 Peshitta verses; 425 remain). 1 John 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, and Jude
+(7,554 of 7,958 Peshitta verses; 404 remain). Revelation 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5825,3 +5825,40 @@ Source checks for 1 John 4:
   In 4:20, “I love God” is first-person speech; the following hatred is
   third-person narration about that speaker. In 4:21, the two love verbs
   have distinct roles: whoever loves God should also love his brother.
+
+Source checks for 1 John 5:
+
+- In 5:1, the two birth forms differ: the first is a passive participle
+  and the second a perfect. In 5:4, the first overcoming verb is an active
+  participle, while the victory “has overcome” uses a perfect. The final
+  first-person plural possessive belongs to “our faith.”
+- In 5:5, the Son noun precedes its copula; the small linked predicate
+  retains both rather than assigning “Son” to the copular pronoun.
+  The supplied 5:7 has the Spirit's testimony and truth; 5:8 names the
+  Spirit, water, and blood, whose agreement is expressed as “in one.”
+- In 5:6 and 5:16–17, `לא הוא` is read as a negative/emphatic construction,
+  without mechanically importing past time from the perfect-form `הוא`.
+  This distinction follows the negative and negative-cleft uses discussed
+  in [Pat-El's Syriac negation study](https://doi.org/10.1093/jss/fgl006).
+- In 5:9, `חד כמא` supplies the comparative degree in the question about
+  God's testimony. In 5:10, the believer's present participle is distinct
+  from the later perfect “has not believed.” The possessive/existential
+  construction is “has this testimony in himself.”
+- In 5:11, English passive wording preserves the source's fronted life
+  object, with God still explicitly the giver and us the recipients.
+  In 5:12, passive-classified `אחיד` describes the holding/possessing state;
+  it does not mean that the person is held by the Son. In 5:13, the
+  believing verb is perfect, “you ... have believed.”
+- In 5:15, “we have received” is perfect, and `מנ כדו` is the temporal
+  “already.” The later asking verb is also perfect. In 5:16, life is given
+  “to him,” with the following plural recipients retained as a clarification.
+  The negative sin and prayer clauses keep their separate scopes.
+- In 5:18, the born-of-God person “keeps himself”; the self noun is not
+  replaced with a different person as object. In 5:19, the passive placing
+  state is rendered “lies in the evil one.” In 5:20, the two first-person
+  plural imperfects express knowing and being as purposes of the gift.
+- In 5:21, `דחלת פתכרא` is religious reverence or worship of idols, not
+  merely being frightened by them. The broader religious sense of the
+  fear/awe noun is documented in the [Comprehensive Aramaic Lexicon](https://cal.huc.edu/getlex.php?coord=620540603&word=15),
+  including Syriac religion, cult, and devotion senses. The noun and the
+  separate plural idols remain individually linked.
