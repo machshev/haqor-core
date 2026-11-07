@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-2
-(7,603 of 7,958 Peshitta verses; 355 remain). Revelation 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-3
+(7,625 of 7,958 Peshitta verses; 333 remain). Revelation 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5956,3 +5956,61 @@ Source checks for Revelation 2:
   are perfect, and no “unto the end” phrase occurs. The infinitive “to tend”
   in 2:27 continues the grant of authority in 2:26; the breaking verb is
   active second-person plural, followed by the speaker's perfect “received.”
+
+Source checks for Revelation 3:
+
+- Reviewed the 22 verses and 361 source positions against exact forms,
+  vocalization, complete gloss alternatives, numeric morphology, and running
+  English. Genuine possessives remain; possessive datives, anticipatory
+  genitives, and resumptive pronouns are rendered idiomatically. The hearing
+  formulas retain plural “ears” and the established ecclesias terminology.
+- Revelation 3:1 retains the source's coordination of works, a name the
+  addressee has, and the alive/dead nominal clauses. This preserves the
+  explicit source sequence rather than silently assigning the name phrase
+  to remembered English wording.
+- Revelation 3:2 is syntactically difficult. The vocalized *qayem* is read as
+  a command coordinated with “be awake,” despite the export's perfect tag.
+  The “you were about to die” construction is second-person singular, not
+  a statement that plural things were dying. Its relative/causal prefix is
+  interpreted causally: “the remainder of those things, for you were about
+  to die.” This is an interpretive resolution of the awkward clause.
+  “I have not found you” retains the object suffix; the following completed
+  works remain plural, rendered in a short two-word source construction as
+  “with your works completed.” The final God noun has no “my.”
+- In 3:3, “heard” precedes “received,” and the next command is “take heed.”
+  The last bare “coming” participle has the same vocalized form as the first;
+  the speaker's first person is inherited from context even though the raw
+  export assigns its unaccompanied occurrence a third-person tag. No new
+  third-person actor is introduced. In 3:4 the source says “I have” and
+  “before me,” not the reference's “you have” and “with me.”
+- Revelation 3:7 has vocalized and tagged plural “keys.” In 3:8 the suffix
+  on “close it” resumes the door; English absorbs it into the relative
+  “which ... to close.” The word and name belong to the speaker, and the
+  keeping and non-denial to the addressee. In 3:9 “some from” expresses
+  partitive *min*, not an added count; the first giving verb is participial,
+  followed by the future making them come, pay homage, and know.
+- Revelation 3:10 has no “hour” noun. The speaker's patience and promise to
+  keep the addressee remain distinct from the trial coming upon the world.
+  The inhabitants' suffix anticipates “of the earth,” rather than adding
+  another possessor. In 3:12 the first “God” lacks “my,” while the later
+  two occurrences have it. There is no “heaven” word. Both the new city
+  and the speaker's own new name remain. In 3:14 the creation suffix
+  anticipates God, and *rishitha* is rendered “beginning.”
+- Revelation 3:15 keeps cold before hot and renders the evaluative
+  participle with *hwa* as “it would be fitting,” rather than inserting
+  “I wish.” In 3:16 the lukewarm clause begins with “and”; no causal
+  “because” is imported. The imminent vomiting retains its object suffix.
+- Revelation 3:17 has an actual person shift: second-person perfect “you
+  said” and “that you are rich,” then first-person “I have grown rich” and
+  “I have no need,” then second-person “you do not know.” Punctuation marks
+  the shift from indirect report to quoted continuation, rather than
+  silently changing source pronouns. The causal sentence continues with
+  “I counsel you” in 3:18. The source has no “blind” adjective in 3:17.
+- Revelation 3:18 retains the passive tested gold, white garments, shame of
+  nakedness, and eyesalve. There is no separate “eyes” noun. The applying
+  verb is imperative, with eyesalve fronted as its object. In 3:19 the
+  emphatic initial “I” is rendered “As for me,” followed by the fronted
+  object and repeated first-person subject of rebuking and chastising.
+  In 3:20 perfect “I have stood” precedes future “I will knock”; no “to
+  him” is added after entering. In 3:21 overcoming and sitting with the
+  Father are perfect, and the two throne possessors remain distinct.
