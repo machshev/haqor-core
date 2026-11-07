@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-4, 2 John, 3 John, and Jude
-(7,263 of 7,958 Peshitta verses; 695 remain). James 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 2 John, 3 John, and Jude
+(7,283 of 7,958 Peshitta verses; 675 remain). 1 Peter 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5404,3 +5404,13 @@ Source checks for James 4:
 - James 4:12 keeps one lawgiver and judge, the make-alive/destroy contrast, and the repeated second-person neighbor question.
 - James 4:13-15 preserves the opening question "But what shall we say concerning those who say," the city/year/trading/gain sequence, the vapor that appears briefly and vanishes, and the Lord-willing condition.
 - James 4:17 keeps the additive "And whoever" opening, the good-known/not-done construction, and the final "to him it is sin" mapping.
+
+Source checks for James 5:
+
+- James 5:4–5: `עלת` is rendered in the complete “has entered the ears of the Lord of hosts” phrase, and `גיר` is retained in the causal opening “For you have lived merrily on the earth.”
+- James 5:8 and 5:10: `ולבותכונ שררו` is “and strengthen your hearts”; `דמותא לנביא סבו` owns “Take the prophets as an example”; `למגרת רוחא דאולצניכונ` retains long-suffering, spirit, and the plural 2mp “your afflictions”; and `הנון דמללו בשמה דמריא` explicitly resumes the prophets as “namely, those who spoke in the name of the Lord.”
+- James 5:14: `עדתא` is rendered with the project’s established terminology as “ecclesia.”
+- James 5:16: `חילה דצלותא` is the anticipatory genitive “the power of the prayer”; the final third-person feminine resumptive `לה` is absorbed into the complete relative “which a righteous man prays,” without a dangling “to.”
+- James 5:16 grammar check: anticipatory suffix/genitive and relative resumptive analysis follows Mark Francois, *Classical Syriac Grammar*, chapter 7 §§7.3–7.4, [pp. 73–75](https://markfrancois.wordpress.com/wp-content/uploads/2023/01/classical-syriac-grammar-week-7.pdf#page=5).
+- James 5:18: plural `פאריה` is rendered “its fruits.”
+- James 5:11 and 5:19: `יהביננ טובא לאילין דסיברו` is rendered as giving blessedness to those who endured, and the contiguous `ונפניוהי אנש` phrase is rendered “someone turns him back.”
