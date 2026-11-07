@@ -90,7 +90,10 @@ pub const STEMS: &[&str] = &[
 ];
 
 /// The languages a cognate may be in (see the README).
-pub const COGNATE_LANGS: &[&str] = &["akk", "uga", "phn", "arc", "syc", "ar", "gez", "sem"];
+pub const COGNATE_LANGS: &[&str] = &["akk", "uga", "phn", "arc", "syc", "ar", "gez", "sem", "grc"];
+
+/// Languages outside the Semitic family, whose words can only be loans.
+pub const LOAN_ONLY_LANGS: &[&str] = &["grc"];
 
 /// The languages a word of scripture may be in besides Hebrew, the default:
 /// Biblical Aramaic, and the Syriac of the Peshitta.
@@ -274,6 +277,10 @@ pub struct Greek {
     pub lemma: String,
     #[serde(default)]
     pub gloss: String,
+    /// Whether the Greek word renders the Hebrew (the Septuagint's bridge, no
+    /// evidence of meaning) or is the Hebrew word itself, borrowed.
+    #[serde(default)]
+    pub relation: GreekRelation,
     pub evidence: Vec<Citation>,
 }
 
@@ -311,6 +318,19 @@ pub struct Doctrine {
     pub topic: String,
     pub statement: String,
     pub evidence: Vec<Citation>,
+}
+
+/// How a word's Greek is related to it.
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Deserialize)]
+#[serde(rename_all = "lowercase")]
+pub enum GreekRelation {
+    /// The Greek the Septuagint renders the word by: the bridge to the New
+    /// Testament's vocabulary, no evidence of the Hebrew's meaning.
+    #[default]
+    Rendering,
+    /// The Hebrew or Aramaic word borrowed into Greek (ἀρραβών from
+    /// עֵרָבוֹן): the New Testament's use of it is scripture's use of the word.
+    Loan,
 }
 
 /// A citation: a verse of scripture or a place in a registered source.
@@ -744,6 +764,14 @@ impl Checker<'_> {
             let at = format!("{at}.greek[{i}]");
             self.text(&at, "lemma", &greek.lemma);
             self.evidence(&at, &greek.evidence, Accepts::Either);
+            if greek.relation == GreekRelation::Loan
+                && !greek
+                    .evidence
+                    .iter()
+                    .any(|c| matches!(c, Citation::Scripture(_)))
+            {
+                self.fault(&at, "a loan cites the New Testament verses that use it");
+            }
         }
         for (field, related) in [
             ("parallels", &word.usage.parallels),
@@ -806,6 +834,17 @@ impl Checker<'_> {
             }
             if !COGNATE_LANGS.contains(&cognate.lang.as_str()) {
                 self.fault(&at, format_args!("unknown language `{}`", cognate.lang));
+            }
+            if LOAN_ONLY_LANGS.contains(&cognate.lang.as_str())
+                && cognate.relation != Relation::Loan
+            {
+                self.fault(
+                    &at,
+                    format_args!(
+                        "`{}` is no Semitic language: its words can only be loans",
+                        cognate.lang
+                    ),
+                );
             }
             self.text(&at, "form", &cognate.form);
             self.text(&at, "gloss", &cognate.gloss);
@@ -1342,5 +1381,40 @@ mod tests {
         assert_eq!(splits[0].sounds["ġ"], ["עֶרֶב: evening"]);
         assert_eq!(splits[0].sounds["ʿ"], ["עָרַב qal: pledge"]);
         assert!(sound_splits_report(&lexicon).contains("**ערב** `erev` (split)"));
+    }
+
+    #[test]
+    fn greek_cognates_are_loans_only() {
+        let json = ENTRY.replace(
+            r#""lang": "ar", "form": "نفس""#,
+            r#""lang": "grc", "form": "ψυχή""#,
+        );
+        let error = check(&json).unwrap_err().to_string();
+        assert!(error.contains("`grc` is no Semitic language"), "{error}");
+        let loan = json.replace(r#""relation": "cognate""#, r#""relation": "loan""#);
+        check(&loan).unwrap();
+    }
+
+    #[test]
+    fn a_greek_loan_cites_its_verses() {
+        let with = |evidence: &str| {
+            ENTRY.replace(
+                r#""gloss": "living being",
+            "senses""#,
+                &format!(
+                    r#""gloss": "living being",
+            "greek": [{{ "lemma": "ἀρραβών", "relation": "loan", "evidence": [{evidence}] }}],
+            "senses""#
+                ),
+            )
+        };
+        check(&with(r#"{ "ref": "Gen.2.7" }"#)).unwrap();
+        let error = check(&with(r#"{ "source": "lane", "locator": "p. 1" }"#))
+            .unwrap_err()
+            .to_string();
+        assert!(
+            error.contains("a loan cites the New Testament verses"),
+            "{error}"
+        );
     }
 }

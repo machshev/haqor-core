@@ -108,7 +108,7 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 | Field | |
 |---|---|
 | `id` | Optional, kebab case, unique in the entry (`ar-gharb`), for `cognate_ids` to name. |
-| `lang` | `akk` Akkadian, `uga` Ugaritic, `phn` Phoenician, `arc` Aramaic, `syc` Syriac, `ar` Arabic, `gez` Ge'ez, `sem` other Semitic. |
+| `lang` | `akk` Akkadian, `uga` Ugaritic, `phn` Phoenician, `arc` Aramaic, `syc` Syriac, `ar` Arabic, `gez` Ge'ez, `sem` other Semitic, and `grc` Greek, which is no Semitic language: a Greek word can only be a `loan`. |
 | `form` | The word in its own script. |
 | `translit` | A transliteration. |
 | `gloss` | Its meaning in its own language. |
@@ -147,6 +147,23 @@ a passage using the Hebrew word (scripture citations), and the Septuagint's
 rendering as a source citation. The Septuagint here is the bridge to the New
 Testament's vocabulary, not evidence of the Hebrew's meaning; that rests on the
 senses' verses and the cognates.
+
+A Greek word is either kind, as its `relation` says:
+
+- `rendering` (the default): the Greek the Septuagint renders the Hebrew by,
+  as above.
+- `loan`: the Hebrew or Aramaic word itself, borrowed into Greek (ἀρραβών
+  from עֵרָבוֹן, σάκκος from שַׂק, σάββατον from Aramaic שַׁבָּתָא). The
+  New Testament's use of a loan is scripture's use of the word, so its
+  verses are evidence of the word's sense, and a loan must cite at least one.
+  Cite the Greek lexicon's etymology as a source too. A loan's use in
+  classical Greek is weaker evidence than a Semitic cognate (a borrowed word
+  can drift); record it, if at all, as a `grc` cognate with `relation:
+  "loan"`.
+
+Greek is not related to Hebrew by descent, so only a loan a Greek lexicon
+derives from the Hebrew or Aramaic counts: never a Greek word that only looks
+or sounds like a Hebrew one.
 
 ### Usage
 
@@ -211,7 +228,9 @@ A source in `sources.json`:
    words BDB files under the root, their tokens by stem with how the English
    renders each and examples spread across the canon, every reference, the New
    Testament's quotations of verses using the root (`--min-score` to widen),
-   the Peshitta's cognate root, and the other lexicons' text, as leads only.
+   the Peshitta's cognate root, the Greek words Abbott-Smith or Thayer derive
+   from the root's words (loans) with their New Testament verses, and the
+   other lexicons' text, as leads only.
 3. Write `<id>.json` from the brief, following the evidence back to the verses
    and to the cognate languages' own dictionaries.
 4. `cargo run -- db check-lexicon` checks it, listing every fault.

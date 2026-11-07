@@ -323,6 +323,165 @@ fn septuagint_section(bible: &Bible, src_texts: &Path, words: &[Word]) -> Result
     Ok(out)
 }
 
+/// Whether the text just before a Hebrew word in a Greek lexicon's
+/// etymology names it as the Greek word's source (`Hebr. שַׂק`, `(Aram.
+/// מָמוֺנָא`, `cf. Heb. בּוּץ`), not as what the Septuagint renders by it
+/// (`Sept. chiefly for רַע`).
+fn names_a_source(before: &str) -> bool {
+    let tail: String = before
+        .trim_end()
+        .trim_end_matches(['(', '[', ',', ' '])
+        .chars()
+        .rev()
+        .take(12)
+        .collect::<Vec<_>>()
+        .into_iter()
+        .rev()
+        .collect();
+    [
+        "Hebr.", "Heb.", "Aram.", "Chald.", "Syr.", "Phoen.", "Phoenic.", "Phœn.",
+    ]
+    .iter()
+    .any(|marker| tail.ends_with(marker))
+}
+
+/// The New Testament's Greek words that Abbott-Smith or Thayer derive from
+/// one of the root's words (or the root itself): loans, which the New
+/// Testament's use makes evidence of the Hebrew word's sense, unlike a
+/// Septuagint rendering. Read from their etymologies in `src_texts`; names
+/// (capitalised headwords) are left out, as from the entries.
+fn greek_loans_section(
+    bible: &Bible,
+    src_texts: &Path,
+    root: &str,
+    words: &[Word],
+) -> Result<String> {
+    use haqor_core::data_support::fold_consonants;
+    let mut out = String::from(
+        "## Greek loans\n\n\
+         Greek words the lexicons' etymologies derive from this root's \
+         Hebrew or Aramaic. Where the New Testament uses one, that use is \
+         scripture's and evidence of the word's sense; a loan's classical \
+         Greek use is weaker evidence than a Semitic cognate. Candidates: \
+         check each etymology before recording it as a `grc` loan.\n\n",
+    );
+    let path = src_texts.join("STEPBible-Data/greek_lexicon.jsonl");
+    if !path.exists() {
+        out.push_str("Not vendored (run haqor db prepare stepbible).\n\n");
+        return Ok(out);
+    }
+    let mut keys: std::collections::HashSet<String> =
+        words.iter().map(|w| fold_consonants(&w.word)).collect();
+    keys.insert(root.to_string());
+    // Headword -> (gloss, forms, the Hebrew it cites, each source's etymology).
+    let mut found: BTreeMap<String, (String, Vec<String>, Vec<String>, Vec<String>)> =
+        BTreeMap::new();
+    for line in std::fs::read_to_string(&path)?.lines() {
+        let Ok(entry) = serde_json::from_str::<serde_json::Value>(line) else {
+            continue;
+        };
+        let headword = entry["headword"].as_str().unwrap_or_default();
+        if headword.chars().next().is_none_or(char::is_uppercase) {
+            continue;
+        }
+        let Some(spans) = entry["body"]["forms"].as_array() else {
+            continue;
+        };
+        let mut before = String::new();
+        let mut sourced = false;
+        let mut hebrew = Vec::new();
+        for span in spans {
+            let text = span["t"].as_str().unwrap_or_default();
+            if span["rtl"].as_bool() == Some(true) {
+                sourced |= names_a_source(&before);
+                for word in text.split(|c: char| !('\u{0591}'..='\u{05F4}').contains(&c)) {
+                    if !word.is_empty() {
+                        hebrew.push(word.to_string());
+                    }
+                }
+            }
+            before.push_str(text);
+        }
+        let matched: Vec<String> = hebrew
+            .into_iter()
+            .filter(|w| {
+                // An Aramaic form may carry the emphatic ending (שַׁבָּתָא).
+                let key = fold_consonants(w);
+                keys.contains(&key)
+                    || key
+                        .strip_suffix('א')
+                        .is_some_and(|bare| keys.contains(bare))
+            })
+            .collect();
+        if !sourced || matched.is_empty() {
+            continue;
+        }
+        // One New Testament word, whatever accent each lexicon heads it with.
+        let key = entry["forms"][0].as_str().unwrap_or(headword).to_string();
+        let item = found.entry(key).or_default();
+        if item.0.is_empty() {
+            item.0 = entry["gloss"].as_str().unwrap_or_default().to_string();
+        }
+        for form in entry["forms"].as_array().into_iter().flatten() {
+            if let Some(form) = form.as_str()
+                && !item.1.iter().any(|f| f == form)
+            {
+                item.1.push(form.to_string());
+            }
+        }
+        for w in matched {
+            if !item.2.contains(&w) {
+                item.2.push(w);
+            }
+        }
+        let etymology: String = before.chars().take(240).collect();
+        item.3.push(format!(
+            "{}: {}",
+            entry["source"].as_str().unwrap_or_default(),
+            etymology.trim()
+        ));
+    }
+    if found.is_empty() {
+        out.push_str("None found.\n\n");
+        return Ok(out);
+    }
+    let db = haqor_core::data_support::connection(bible);
+    let mut lemma_gloss =
+        db.prepare("SELECT gloss FROM data.greek_lemma WHERE lemma = ?1 LIMIT 1")?;
+    for (headword, (gloss, forms, hebrew, etymologies)) in &found {
+        let gloss = if gloss.is_empty() {
+            lemma_gloss
+                .query_row([headword], |r| r.get::<_, String>(0))
+                .unwrap_or_default()
+        } else {
+            gloss.clone()
+        };
+        let mut refs = Vec::new();
+        for form in forms {
+            for o in bible.greek_lemma_occurrences(form)? {
+                let packed =
+                    (i64::from(o.book) << 16) | (i64::from(o.chapter) << 8) | i64::from(o.verse);
+                let r = written(packed);
+                if !refs.contains(&r) {
+                    refs.push(r);
+                }
+            }
+        }
+        writeln!(
+            out,
+            "- **{headword}** ({gloss}) from {}: NT ×{} {}",
+            hebrew.join(", "),
+            refs.len(),
+            refs.join(", ")
+        )?;
+        for etymology in etymologies {
+            writeln!(out, "  - {etymology}")?;
+        }
+    }
+    writeln!(out)?;
+    Ok(out)
+}
+
 /// `db lexicon-brief`: the evidence for the root `root` (a root key, as
 /// `data/lexicon/README.md` describes) from the runtime database in
 /// `data_dir`, with up to `examples` example verses per word and stem and
@@ -534,6 +693,7 @@ pub fn lexicon_brief(
     out.push_str(&crate::cognate_search::cognate_section(
         src_texts, &root, &lemmas, &glosses,
     )?);
+    out.push_str(&greek_loans_section(&bible, src_texts, &root, &words)?);
     out.push_str(&septuagint_section(&bible, src_texts, &words)?);
 
     writeln!(
