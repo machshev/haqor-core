@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-14
-(7,803 of 7,958 Peshitta verses; 155 remain). Revelation 15 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-15
+(7,811 of 7,958 Peshitta verses; 147 remain). Revelation 16 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6778,3 +6778,64 @@ Source checks for Revelation 14:
   FROM THE WINEPRESS, clauses omitted by the reference. The blood reaches the bridles of
   plural horses. The distance is A THOUSAND AND TWO HUNDRED STADES, 1,200, not Murdock's
   1,600. Stades preserves the historical unit without an unwarranted modern conversion.
+
+Source checks for Revelation 15:
+
+- 15:1: Another sign is great and wondrous; the following angels carry SEVEN PLAGUES.
+  This source has no seven numeral modifying angels in this verse, though seven angels
+  are explicit later. The existential/on-them unit becomes upon-whom-were. The last ones
+  refers to the plagues, as does the feminine plural in-these suffix. Completed is
+  passive perfect, retaining the vision's completed perspective. The wrath suffix
+  anticipates God rather than adding an independent his possessor. Wondrous describes a
+  sign worthy of wonder, not an inanimate sign feeling astonishment.
+- 15:2: The vision has something LIKE a sea of glass mingled with fire, then those who
+  had prevailed. Prevail-OVER renders the victory construction with from; beast, image
+  and number of its name all remain. The genuine feminine image/name possessors refer to
+  the beast. Standing is an active participle placed within the past vision, while
+  prevailed is perfect and anterior to that standing. LʿL MIN is ABOVE, retained as a
+  short compound relation rather than on-from. The harps are UPON THEM; the harp suffix
+  anticipates God, so no additional independent his is added to God's harps.
+- 15:3: Singing the hymn is the musical praise sense of the verb and noun, followed by
+  AND-WERE-SAYING. The servant suffix anticipates God. Great and wondrous are YOUR
+  DEEDS; the second predicate again says YOUR DEEDS, not the reference's ways. Wondrous
+  renders the passive-shaped description as things wondered at. KʾANIN is the
+  just/proper adjective despite the incomplete exported verb-gloss set: CAL's kʾn entry
+  explicitly gives just/honest and the proper/fair sense for inanimates
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A). It is not translated as a
+  created/existing event merely from the root glosses. Holder-of-all retains both title
+  words; King-of-ages retains the plural age/world noun. The speech continues into the
+  next verse.
+- 15:4: The rhetorical question retains not, fear YOU, Lord, glorify and YOUR name. All
+  three causal particles remain as For, for and because. You-alone-are uses a short
+  copula/adverb unit; holy has NO added and-just predicate. All nations will come and
+  worship BEFORE YOU. The ending is because YOU ARE UPRIGHT, a second-singular
+  predicate, not the reference's revealed righteousnesses. CAL's trīṣ entry gives
+  upright/honest and right/correct
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=tryc+A), corroborating this actual
+  form without importing an absent reveal verb or righteousness noun.
+- 15:5: From-after is the temporal after compound, followed by plural these-things.
+  Looked is the intransitive English rendering of seeing the following scene. The temple
+  WAS OPENED passively; inversion keeps the complete
+  temple-of-the-tabernacle-of-testimony genitive chain in source order, followed by
+  in-heaven. No extra behold is supplied.
+- 15:6: Here SEVEN ANGELS is explicit. They come out from the temple, identified as
+  those bearing seven plagues. While, clothed and girded remain distinct, with both
+  clothing predicates passive participles. The linen is CLEAN AND BRIGHT; the noun and
+  adjectives form a short English-order unit. Their chests/breasts are plural with
+  genuine plural possessors. The source belt is singular, retained as a-belt-of-gold in
+  the normal distributive sense for the angels, rather than silently recoding the source
+  as plural belts.
+- 15:7: One of the four living creatures GAVE seven BOWLS to the seven angels. Filled is
+  a passive participle; the bowls contain the wrath OF GOD, with the wrath suffix
+  anticipating that explicit possessor. There is NO gold word describing these bowls.
+  God IS LIVING, with both existential and living adjective retained,
+  for-the-age-of-ages. The final AMEN, absent from the reference, remains explicit.
+- 15:8: The temple was filled WITH SMOKE; with is the idiomatic English complement of
+  fill for the source's from/partitive relation. The smoke-of-the-glory genitive is read
+  as source/origin, hence smoke FROM THE GLORY OF GOD, coordinated with the explicit AND
+  FROM HIS POWER. The glory suffix anticipates God; his-power is a genuine possessor.
+  No-one-was-able preserves the negative existential, ability participle and explicit
+  past auxiliary, followed by enter-the-temple. Until-the-plagues-were-completed is the
+  passive until-condition backshifted within that past frame; inversion keeps both seven
+  numerals and the angels' genitive contiguous. The completion verb is imperfect in the
+  source, unlike the completed perfect in verse 1.
