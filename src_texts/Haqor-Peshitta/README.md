@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-7
-(7,684 of 7,958 Peshitta verses; 274 remain). Revelation 8 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-8
+(7,697 of 7,958 Peshitta verses; 261 remain). Revelation 9 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6250,3 +6250,69 @@ Source checks for Revelation 7:
   rather than an imported "living water" modifier. The last wiping verb is
   third singular with an implicit subject; no absent "God" noun or explicit
   change of actor is added. All tears and their eyes are retained.
+
+Source checks for Revelation 8:
+
+- 8:1-2: The seventh seal is opened by the implicit third-person subject;
+  silence follows for about half an hour. The comparative particle with a
+  measure gives the approximate duration. The seer is first person; seven
+  angels were standing before God and received seven trumpets. The standing
+  participle and past auxiliary form one ongoing past description; the
+  following passive and plural dative retain the trumpet recipients. Short
+  links keep the ordinal seal phrase and passive relative grammatical.
+- 8:3-4: Another angel came and stood at the altar. Existential possession is
+  idiomatic "he had," rather than a fabricated holding verb. Gold modifies
+  the censer; no second gold adjective is supplied for the later altar.
+  Much incense was given to him so that he might offer it with the prayers
+  of all the saints. The imperfect complement expresses purpose, and its
+  understood offering object is the incense. "All the saints" resolves the
+  anticipatory suffix without inventing "their saints." Incense is an
+  English mass noun despite the Syriac plural shape. The smoke rises with
+  the prayers from the angel's hand before God, retaining that source order.
+- 8:5-7: English passive inversion retains the taking verb before the angel
+  and censer, while preserving the angel as actor. He fills the censer with
+  fire on the altar and casts it onto the earth; partitive min becomes
+  English "with" for the filling material. Peals of thunder, voices, flashes
+  of lightning, and an earthquake retain the actual list order and the
+  source plurals. The trumpets are on the angels, expressed as possession;
+  they prepare themselves. The first sounds; hail and fire are mingled with
+  water, not blood, and are cast onto the earth. A third of the earth and
+  trees, and all the grass of the earth, burn. The intransitive burning
+  predicates retain their affected subjects; the first angel is not made
+  the actor of those burning verbs.
+- 8:6-13: The cry/sound root is rendered in the explicit trumpet context as
+  "sound." This contextual interpretation is supported by CAL's z(q entry,
+  which records horn sounding in the simple stem and a horn being sounded
+  in the corresponding passive causative, while its causative entries also
+  cover loud cries and summons (https://cal.huc.edu/getlex.php?coord=5610110631&word=10).
+  This does not claim that every stem has a separate dictionary gloss
+  "blow a trumpet." The ordinal second, third, and fourth identify the
+  successive participants without importing an absent angel noun each time.
+- 8:8-11: Something like a great burning mountain falls into the sea; there
+  is no separate fire noun and no passive casting verb in 8:8. A third of
+  the sea becomes blood. The short three-position copular units in 8:8 and
+  8:11 keep the fraction and its referent together with the becoming verb;
+  their final predicates remain separately linked. A third of the living
+  sea creatures dies and a third of the ships is destroyed. The relative
+  existential "life in it" is idiomatic "which had life." The plural creation
+  noun means creatures here; CAL independently includes creation/creature
+  and Syriac examples (https://cal.huc.edu/cal_entry_web.php?lemma=bryyh+N).
+  A great star falls from heaven, burning like a flame, not a lamp; it falls
+  upon rivers and springs of water. CAL's eye/spring entry confirms the
+  spring sense with water (https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N).
+  Its name is Wormwood. The waters become like wormwood, retaining the
+  comparative particle. Many people die because the waters have been made
+  bitter; the inverted passive keeps the waters as the postverbal subject.
+  No absent "from the waters" phrase is added before the cause clause.
+- 8:12-13: The affected fractions of sun, moon, and stars are struck, and a
+  third of them is darkened; the source has one darkening verb. English
+  singular agreement follows the collective fraction. The day does not show
+  light for a third of its duration, and the night likewise; light is
+  understood from the luminaries and darkness, while the negative, showing
+  verb, fraction, and day suffix remain represented. Anticipatory fraction,
+  star-name, and earth-inhabitant suffixes are resolved through their
+  following referents, without duplicate possessors. The seer only hears
+  one eagle flying in heaven and saying three woes. The source contains no
+  separate seeing, tail, blood, loud voice, or remaining modifier here.
+  Singular sound belongs to plural trumpets of three angels, who are ready
+  to sound; readiness is a state rather than a completed sounding action.
