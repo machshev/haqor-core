@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 2 John, 3 John, and Jude
-(7,283 of 7,958 Peshitta verses; 675 remain). 1 Peter 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1, 2 John, 3 John, and Jude
+(7,308 of 7,958 Peshitta verses; 650 remain). 1 Peter 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5414,3 +5414,10 @@ Source checks for James 5:
 - James 5:16 grammar check: anticipatory suffix/genitive and relative resumptive analysis follows Mark Francois, *Classical Syriac Grammar*, chapter 7 §§7.3–7.4, [pp. 73–75](https://markfrancois.wordpress.com/wp-content/uploads/2023/01/classical-syriac-grammar-week-7.pdf#page=5).
 - James 5:18: plural `פאריה` is rendered “its fruits.”
 - James 5:11 and 5:19: `יהביננ טובא לאילין דסיברו` is rendered as giving blessedness to those who endured, and the contiguous `ונפניוהי אנש` phrase is rendered “someone turns him back.”
+
+Source checks for 1 Peter 1:
+
+- Position-sensitive revisions absorb auxiliaries and explicit pronouns into contiguous grammatical spans: `דנהוונ למשמעתא` is “become obedient”; `נטירינ אנתונ` is “you are kept”; and the repeated 2PL pronouns in vv. 6 and 8 are not duplicated in English.
+- Relative and appositional clauses were kept source-led: v. 10 makes the prophets the subject of “inquired”; v. 11 makes the Messiah’s indwelling Spirit the showing/testifying subject and keeps the sufferings-of-Messiah relation; v. 19 attaches Messiah to the spotless Lamb; v. 20 keeps appointed-beforehand, pre-foundation, and last-time manifestation components.
+- Negation and suffixes were retained explicitly: v. 12 “not for themselves,” “for us,” and “announced to you”; v. 14 “did not know”; v. 17 retains the second-person possessive in “your sojourning”; v. 18 both silver/gold negatives and the fathers suffix; v. 22 retains the pure/perfect-heart and one-another phrases.
+- In v. 22, the verbs `נהוינ` and `ונהוינ` are third-person feminine plural imperfects agreeing with “your souls”; the coordinated rendering keeps nonpast “your souls become holy ... and become full”; `תהוונ מחבינ חד לחד` is second-person plural imperfect plus participle, rendered “be loving one another.” Verse 24 keeps the causal particle as “For” and joins the grass/flower clause with a semicolon rather than leaving a fragment.
