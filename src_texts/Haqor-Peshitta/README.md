@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-4, 2 John, 3 John, and Jude
-(7,374 of 7,958 Peshitta verses; 584 remain). 1 Peter 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 John, 3 John, and Jude
+(7,388 of 7,958 Peshitta verses; 570 remain). 2 Peter 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5526,3 +5526,19 @@ Source checks for 1 Peter 4:
 - 4:17: Grouped the source-order copular/relative clause 0–4 as “because it is time for judgment to begin,” and 8–11 as “if it begins with us.” “Those who do not obey the Gospel of God” retains the relative plural and negation.
 - 4:18: Kept “scarcely lives” (not “is made alive”); the source has the ungodly and sinner before the “where ... be found” predicate, so the final span preserves that source ordering while remaining readable.
 - 4:19: Rendered `מטל הנא` as the causal-demonstrative “For this reason,” retaining both source words before the relative subject. `בעבדא שפירא` is singular/mass “in good work,” not plural “works.” The final `איכ דלברויא מהימנא` is rendered “as to the faithful Creator,” attaching the comparison/recipient to the preceding “to him” while preserving the Creator noun and faithful adjective.
+
+Source checks for 1 Peter 5:
+
+- 5:1 — Render the opening verb with its first-person subject as “I entreat”; place the source’s adversative connector naturally as “however”; retain both explicit first-person forms, the elder identity, associate, witness, Messiah’s sufferings, and the future revelation of his glory.
+- 5:2 — “Feed” is rendered “tend” for the flock, while the passive source form is “entrusted”; preserve the spiritual oversight, the force/willingness contrast, and the filthy-gain/whole-hearted contrast as “with all your heart.”
+- 5:3 — The negative comparison is “not as lords over the flock”; the following exhortation is to become a good example for them, not to rule them.
+- 5:4 — Keep the temporal clause and the source’s chief-shepherd subject; “crown of glory” is received from him and is explicitly unfading.
+- 5:5 — “Young men” and “elders” retain their ecclesial terminology; the reflexive submission and clothing metaphor lead into humility of mind toward one another, followed by God’s opposition to the self-exalting and the source-ordered “to the humble he gives grace.”
+- 5:6 — Preserve the therefore inference, the “under the mighty hand of God” image, and the purpose/result relation “that he may exalt you” at the fitting time.
+- 5:7 — Keep the addressed plural command and the “all your care” object; the final clause keeps the source’s God-directed construction and his care concerning the addressees.
+- 5:8 — The clause keeps the second-person plural imperatives, the possessive suffix in “your adversary,” and the distinct source title “Satan” at position 4; commas make “like a lion” modify the roaring action rather than the name.
+- 5:9 — “Stand therefore against him” preserves the suffix object; the causal/comparative particle and explicit second-person plural pronoun are rendered as “as you are steadfast,” and the final clause keeps “these same sufferings” as the subject that befalls the brothers.
+- 5:10 — The first relative (3–4) modifies the God of grace, while the independent הו at 10 is rendered as the equative “is the one.” This keeps דיהב at 11 as the relative “who has granted,” its recipient “us” at 12, and דכד at 13 introducing the granted content: “that, while we endure” the little afflictions, we may be strengthened, confirmed, and established. The perfect gift and ongoing endurance are therefore both retained without inventing a separate gift noun. The God/postpositive “But” pair is grouped together, and the complete sentence ends before the doxology in 5:11.
+- 5:12 — Commas make “as I consider” a parenthetical while the second demonstrative remains appositional: “this is the true grace of God—this in which you stand,” without duplicating “in.” The sentence closes before the following greeting.
+- 5:13 — The colon makes the postposed subject explicit: the chosen ecclesia in Babylon greets the addressees, with Mark coordinated afterward; the first-person possessive suffix remains “my son,” and “ecclesia” follows established terminology. A period separates it from the imperative in 5:14.
+- 5:14 — The reciprocal phrase is kept as “one another,” and the final relative/resumptive sequence is rendered “those who are in the Messiah” without duplicating the addressees.
