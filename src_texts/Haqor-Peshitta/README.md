@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-11
-(7,748 of 7,958 Peshitta verses; 210 remain). Revelation 12 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-12
+(7,765 of 7,958 Peshitta verses; 193 remain). Revelation 13 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6477,3 +6477,92 @@ Source checks for Revelation 11:
 - 11:17: We-give-thanks is first plural, addressed to singular you. Holder of all retains both source words. The two third-person singular existential expressions plus past auxiliary become the appositive “the one who is and who was,” referring to the God being addressed. There is no coming clause. Taking up the addressee's great power and reigning are second-singular perfects.
 - 11:18: The nations were angry; the addressee's wrath and the time of the dead share came. English repeats the shared verb at time to clarify the coordinated clause, without adding another event. The dead are to be judged passively. Giving a reward and destroying are second-singular imperfects, contrasted with the third-plural perfect “who destroyed” the earth. Prophets, saints and those fearing the addressee's name all remain explicit, including the small with the great.
 - 11:19: The opened temple is in heaven, without an added God noun. The ark is seen in the temple; the standalone his belongs to covenant and supplies no additional temple possessor. The final list follows the actual order: lightnings, thunders, voices, earthquake and great hail. Short copular/passive units keep English grammatical while every source position occurs once in ascending order.
+
+Source checks for Revelation 12:
+
+- 12:1: The great sign is seen passively in heaven. Clothed is a passive participle; the
+  moon is under her plural feet, and a crown of twelve stars is on her head. The crown
+  and stars remain separate source nouns in their actual order.
+- 12:2: Pregnant, crying aloud, labour, also, torment and giving birth all remain
+  explicit. The labour form `ומחבלנ` is encoded as a feminine plural active participle
+  amid predicates about one woman. English follows the singular woman context without
+  changing that source encoding or inventing other women. CAL's labour homonym
+  explicitly cites the same Revelation 12:2 form under pael “to be in labor”:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=xbl%232+V . The narrative setting
+  supplies past auxiliaries; the source also/`אף` remains explicit.
+- 12:3: Another sign is seen, followed by a great dragon of fire. The source supplies
+  fire, not a separate red adjective. Existential plus dative gives who-had. The dragon
+  has seven heads, ten horns and seven diadems on his HEADS, plural despite Murdock's
+  singular head.
+- 12:4: Dragging is an active participle, rendered with a narrative past auxiliary
+  beside the perfect casting. The third of the stars and the standing dragon are
+  distinct predicates. Ready-to-give-birth retains the prepared participle; `מא ד` is
+  temporal when within the dragon's purpose, not a free-standing what. The masculine
+  object suffix on devour anticipates the explicit son; her on son is a genuine feminine
+  possessor.
+- 12:5: The male son is destined/prepared to shepherd all the nations, with a rod of
+  iron. Shepherd preserves the feed/tend lexeme rather than replacing it with an
+  unrelated ruling verb. All's plural suffix anticipates nations. The son is snatched
+  away passively; her son and God's his-throne remain distinct genuine possessors.
+- 12:6: The first place/region expression functions as where. The existential, past
+  auxiliary and feminine dative form the short three-position grammar unit “she had.” A
+  two-position place/there unit gives normal English order to the actual place noun and
+  its location. Prepared is passive, with God as its source/agent. Nourish is third
+  plural with a feminine object, retained as they-might-nourish-her. A separate
+  four-position duration unit renders 1,260 days in normal English number order.
+- 12:7: War is in heaven. Michael and HIS angels are fighting with the dragon; the
+  dragon and HIS angels fought. The first fight is an active participle, placed in the
+  established past narrative; the second is perfect. The sentence continues into the
+  next verse.
+- 12:8: Both negatives remain: they could not prevail, and no place was found for them
+  in heaven. Could-not-prevail supplies the understood fight complement of be-able, not
+  an additional source event. The source has no separate any-more expression.
+- 12:9: The dragon is cast out passively. `רישא` is rendered “of the beginning” with
+  serpent, using the beginning/origin sense also listed by CAL for this lexeme:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=ry%24+N . Accuser and Satan are
+  explicit names. Deceived is perfect, form 5, not an active participle. All's feminine
+  singular suffix anticipates earth. The second casting has an explicit on-earth
+  location, and his angels are cast with him.
+- 12:10: The voice is FROM heaven and said is perfect. Behold is retained; “there has
+  been” renders the perfect existential in the proclamation of established deliverance,
+  power and God's kingdom. This source has no Messiah/dominion clause here. The causal
+  prefix on cast introduces the passive expulsion of our brothers' accuser. Accusing is
+  an active participle with a past auxiliary; the source order is night AND day, before
+  OUR God.
+- 12:11: They overcame by the Lamb's blood and through the word of HIS testimony. The
+  testimony suffix is genuinely third masculine singular, not Murdock's their; the
+  English leaves that possessor as his, with the Lamb the nearest named antecedent. The
+  explicit negative governs loving their own life/soul, idiomatically plural lives for
+  the plural possessors, even unto death.
+- 12:12: The surface `מטלהנא` combines because-of (`מטל`) and this (`הנא`), supplying therefore despite its missing dictionary gloss.
+  The plural imperative addresses heavens and those lodged in them; the latter is a
+  passive-participle state, rendered are-lodged. Woe is to earth and sea, because the
+  Accuser is descending TO THEM: the suffix is third plural, not Murdock's second-person
+  you. Having great wrath and knowing are distinct; having attaches the wrath to the descending Accuser without a distant relative clause; while renders the temporal particle.
+  The final existential/dative expresses that little time is available to him,
+  preserving the amount, time and possessor without importing a separate shortness verb.
+- 12:13: When the dragon saw is followed by a passive perfect casting, rendered as
+  anterior had-been-cast in the narrative. The same dragon persecuted the woman who bore
+  the male. No additional child noun is supplied where the source only has male.
+- 12:14: Two wings of the great eagle are given to the woman. English plural agreement
+  follows wings although the preceding Syriac passive is encoded singular. She might fly
+  to her place in the wilderness TO BE NOURISHED: this is a passive infinitive, not a
+  second finite event. There, a time, plural times and half a time all remain; there is
+  no source conjunction before times. From-before plus the face expression is rendered
+  away-from-the-presence of the serpent, with the face suffix anticipating the serpent
+  rather than adding another possessor.
+- 12:15: The serpent casts waters from his mouth after the woman, like a river. The
+  final feminine carrying/bearer noun, water and make-her predicate form a short
+  three-position causative unit: “so that he might cause her to be carried away by
+  water.” This interprets the river's intended effect on the woman in context; it does
+  not turn the waters into a plural object of carry or drop the explicit feminine object
+  of make.
+- 12:16: Earth helps the woman and opens ITS mouth; the river is swallowed. The object
+  suffix on swallowed anticipates the explicit river. The source names the DRAGON as the
+  one who cast the river from HIS mouth, rather than Murdock's serpent. These mouth
+  possessors remain distinct.
+- 12:17: The dragon is angry with the woman and goes to make war with the rest of her
+  offspring. They keep God's commandments and have Jesus' testimony. The commandment
+  suffix anticipates God; the testimony suffix anticipates Jesus. The existential/dative
+  supplies have. The actual source chapter ends here, without Murdock's final
+  standing-on-the-sand sentence.
