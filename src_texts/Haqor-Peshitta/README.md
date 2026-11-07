@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1, 2 John, 3 John, and Jude
-(7,459 of 7,958 Peshitta verses; 499 remain). 1 John 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-2, 2 John, 3 John, and Jude
+(7,488 of 7,958 Peshitta verses; 470 remain). 1 John 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5713,3 +5713,48 @@ Source checks for 1 John 1:
   action. Forgiveness and cleansing retain their third-person agent and
   first-person plural recipients. In 1:10 the source says the word is not
   "with us", which is retained rather than replaced from another text.
+
+Source checks for 1 John 2:
+
+- 2:1 uses the existential/first-person dative as "we have", without adding
+  a second locative "with us". In 2:2 the identifying expression and
+  postpositive causal particle form "For he is". `על אפי` is a bound
+  prepositional expression; its face noun is not a displaced possessive.
+  The sins retain "our", and the following conjunction/negation is explicit.
+- 2:3 keeps the initial conjunction. In 2:6 `דאיכ` is the according-to
+  expression, the following walkings are a noun, and final `נהלכ` is the
+  walking verb. The verb is not moved onto the preposition. In 2:7 and
+  2:18 the first-person singular possessives remain "my beloved/children".
+- 2:12-14 retain the source's present writing forms and subsequent perfect
+  writing forms in their actual verse positions. The causal knowing clauses
+  use "because you have known"; the correlative/copular descriptions retain
+  their own positions. The source's verse boundary does not move the final
+  children/Father clause to match the Murdock reference's numbering.
+- 2:16's anticipatory masculine reference points to the world, followed by
+  a plural pronoun/copula. It is "they are from the world itself", rather
+  than a personal "from him" with the Father as an apparent antecedent.
+  2:18 retains the source's false-Messiah title and its plural counterpart.
+- 2:21 retains both the negative writing statement and the negative knowing
+  clause. The feminine all-quantifier belongs to the following falsehood,
+  not to knowing the masculine truth. The resulting clause is "and that no
+  falsehood was from the truth", with its anticipatory origin phrase absorbed.
+- 2:22 keeps the rhetorical question and renders the denial as a quoted
+  negative statement. This retains the source's `לא` while avoiding the
+  opposite English meaning produced by "denies that Jesus was not ...".
+  Compare the [Syriac text and translations](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=1John+2%3A22).
+  The following Father/Son denial sequence stays in the source's order.
+- 2:23 has an active believing/trusting predicate with the Father, and the
+  later Father noun belongs to a second explicit confession predicate.
+  2:24 retains the message's remaining with the addressees, the "for if"
+  connective, and the addressees' corresponding remaining in Father and Son.
+- 2:25 keeps both the promise noun and the separate perfect promised verb.
+  2:27 likewise keeps the conditional remaining verb and its "with you"
+  phrase, rather than replacing those positions with only the anointing noun.
+- 2:27's feminine pronoun and teaching participle share the explicit anointing
+  subject. The negative existential, feminine locative, and falsehood noun
+  form a small grammatical phrase. The final masculine "in him" is distinct
+  from that feminine "in it". The comparative teaching clauses lead into
+  the separate imperative "remain".
+- 2:29 `דעו` is imperative "know", followed by "also that". The concluding
+  origin statement is "is from him"; it does not add a birth verb absent
+  from this supplied source.
