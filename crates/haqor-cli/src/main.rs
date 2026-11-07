@@ -356,6 +356,14 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// List the lexicon's roots where cognates show which older sound stands
+    /// behind a merged letter (ע ח ש ז צ), grouping the senses by sound: the
+    /// roots one spelling covers two of, and the patterns across roots.
+    LexiconSplits {
+        /// The lexicon directory.
+        #[arg(short, long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+    },
     /// List the most frequent Old Testament roots, with the id of each
     /// root's Haqor lexicon entry where it has one: the order to write them in.
     LexiconRank {
@@ -822,6 +830,13 @@ fn main() -> Result<()> {
                 println!(
                     "Lexicon OK: {} entries ({} reviewed), {} words, {} senses, {} citations",
                     s.entries, s.reviewed, s.words, s.senses, s.citations
+                );
+            }
+            DbCommands::LexiconSplits { lexicon } => {
+                let lexicon = haqor_core::haqor_lexicon::read_lexicon(&lexicon)?;
+                print!(
+                    "{}",
+                    haqor_core::haqor_lexicon::sound_splits_report(&lexicon)
                 );
             }
             DbCommands::LexiconRank {

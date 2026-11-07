@@ -1,8 +1,8 @@
 {
   "id": "amar",
   "root": "אמר",
-  "status": "reviewed",
-  "updated": "2026-11-06",
+  "status": "draft",
+  "updated": "2026-11-07",
   "tags": [
     "speech",
     "thought",
@@ -556,61 +556,73 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "אֲמַר",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "say; tell; command",
+      "summary": "Biblical Aramaic, in Daniel and Ezra, with the same senses as the Hebrew, including command.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "say; command",
+          "senses": [
+            {
+              "gloss": "say",
+              "definition": "Speak words to someone; with עֲנָה, answer and say.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.5",
+                  "note": "\"The king answered and said\" (עָנֵה ... וְאָמַר)."
+                }
+              ]
+            },
+            {
+              "gloss": "command",
+              "definition": "Say what is to be done: order it.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.19",
+                  "note": "\"He said to heat the furnace\": command."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֶמַר",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "say, speak",
+      "summary": "The Peshitta's ܐܡܪ (ʾemar). Its New Testament keeps the Hebrew idiom: Paul's \"do not say in your heart\" is דּלָא תִּאמַר בּלֵבָּך.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "say",
+          "senses": [
+            {
+              "gloss": "say",
+              "definition": "Speak; with \"in the heart\", say to oneself.",
+              "evidence": [
+                {
+                  "ref": "Rom.10.6",
+                  "note": "Peshitta: \"do not say (תִּאמַר) in your heart\"."
+                },
+                {
+                  "ref": "2Co.4.6",
+                  "note": "Peshitta: \"God who said (דֵּאמַר)\"."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [
-    {
-      "lang": "arc",
-      "form": "אֲמַר",
-      "translit": "ʾămar",
-      "gloss": "say; tell; command",
-      "relation": "cognate",
-      "note": "Biblical Aramaic, in Daniel and Ezra, with the same senses as the Hebrew, including command.",
-      "evidence": [
-        {
-          "ref": "Dan.2.5",
-          "note": "\"The king answered and said\" (עָנֵה ... וְאָמַר)."
-        },
-        {
-          "ref": "Dan.3.19",
-          "note": "\"He said to heat the furnace\": command."
-        }
-      ]
-    },
-    {
-      "lang": "syc",
-      "form": "ܐܡܪ",
-      "translit": "ʾemar",
-      "gloss": "say, speak; tell; think; command",
-      "relation": "cognate",
-      "note": "Its senses run as the Hebrew's: say, think, command, and in the passive be said, be called. The Peshitta's New Testament keeps the Hebrew idiom: Paul's \"do not say in your heart\" is דּלָא תִּאמַר בּלֵבָּך.",
-      "evidence": [
-        {
-          "ref": "Rom.10.6",
-          "note": "Peshitta: \"do not say (תִּאמַר) in your heart\"."
-        },
-        {
-          "ref": "2Co.4.6",
-          "note": "Peshitta: \"God who said (דֵּאמַר)\"."
-        },
-        {
-          "source": "payne-smith-1903",
-          "locator": "p. 20, ܐܡܰܪ",
-          "url": "https://www.dukhrana.com/lexicon/PayneSmith/pages/0029.jpg",
-          "note": "\"to say, speak ... to tell, affirm, assert, intend\"; Ethpe. \"to be said, told\"."
-        },
-        {
-          "source": "brockelmann-1928",
-          "locator": "p. 26, ܐܡܰܪ",
-          "url": "https://www.dukhrana.com/lexicon/Brockelmann/pages/0044.jpg",
-          "note": "\"dixit ... putavit ... cogitavit, constituit ... jussit\"; Etpe. \"dictus est ... appellatus est\"."
-        },
-        {
-          "source": "sedra",
-          "locator": "lexeme 171 (אמר)"
-        }
-      ]
-    },
     {
       "lang": "phn",
       "form": "𐤀𐤌𐤓",
@@ -800,5 +812,5 @@
       ]
     }
   ],
-  "note": "Left out, for their own entries: אָמִיר \"top, bough\" (Isa 17:6, 9), which Wiktionary links to Proto-Semitic *rayam- \"be high\"; Hos 4:7 אָמִיר, the Hiphil of מוּר \"exchange\" (as the reader analyses it, with MACULA's lemma and the LXX's θήσομαι), which only the spelling index files here; אֱמֹרִי \"Amorite\", a people's name; אִמֵּר, אִמְרִי and אוֹמָר, names whose link to the verb is uncertain (names will have their own entries, linking back to their roots); and the unrelated words BDB's section also holds (אֶמֶשׁ, אָנָּא, אֹן, אַמְרָפֶל, אִמַּר \"lamb\"). BDB's אֶמְרָה is the same word as אִמְרָה (the same occurrences). Ugaritic: DULAT not consulted (no open copy found); worth checking if a copy turns up. Daniel's Aramaic is a cognate here, not a separate word, because the entry is the Hebrew root's."
+  "note": "Left out, for their own entries: אָמִיר \"top, bough\" (Isa 17:6, 9), which Wiktionary links to Proto-Semitic *rayam- \"be high\"; Hos 4:7 אָמִיר, the Hiphil of מוּר \"exchange\" (as the reader analyses it, with MACULA's lemma and the LXX's θήσομαι), which only the spelling index files here; אֱמֹרִי \"Amorite\", a people's name; אִמֵּר, אִמְרִי and אוֹמָר, names whose link to the verb is uncertain (names will have their own entries, linking back to their roots); and the unrelated words BDB's section also holds (אֶמֶשׁ, אָנָּא, אֹן, אַמְרָפֶל, אִמַּר \"lamb\"). BDB's אֶמְרָה is the same word as אִמְרָה (the same occurrences). Ugaritic: DULAT not consulted (no open copy found); worth checking if a copy turns up. Scripture's Aramaic of the root (Daniel, and the Peshitta) is kept as words of this entry. Leads for the Peshitta's ܐܡܪ, not yet followed to verses: Payne Smith p. 20 and Brockelmann p. 26 give \"think\" and \"command\", and the Ethpeel \"be said, be called\"; SEDRA lexeme 171."
 }

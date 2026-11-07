@@ -10,7 +10,7 @@
 //! The types live here, not in the generator, so that the build, the app's
 //! review page and its reader all read one schema.
 
-use std::collections::HashSet;
+use std::collections::{BTreeMap, BTreeSet, HashSet};
 use std::path::Path;
 
 use anyhow::{Context, Result, bail};
@@ -92,6 +92,43 @@ pub const STEMS: &[&str] = &[
 /// The languages a cognate may be in (see the README).
 pub const COGNATE_LANGS: &[&str] = &["akk", "uga", "phn", "arc", "syc", "ar", "gez", "sem"];
 
+/// The languages a word of scripture may be in besides Hebrew, the default:
+/// Biblical Aramaic, and the Syriac of the Peshitta.
+pub const WORD_LANGS: &[&str] = &["arc", "syc"];
+
+/// The stems an Aramaic verb's `stems` may name, Biblical Aramaic's and the
+/// Peshitta's.
+pub const ARAMAIC_STEMS: &[&str] = &[
+    "peal",
+    "peil",
+    "pael",
+    "aphel",
+    "haphel",
+    "shaphel",
+    "hophal",
+    "hithpeel",
+    "hithpaal",
+    "ithpeel",
+    "ithpaal",
+    "hishtaphel",
+    "ethpeel",
+    "ethpaal",
+    "ettaphal",
+    "eshtaphal",
+    "palpel",
+    "ethpalpal",
+];
+
+/// The Hebrew letters that each stand for more than one older sound, with the
+/// sounds a cognate may show behind them (see the README's "Sounds").
+pub const MERGED_LETTERS: &[(&str, &[&str])] = &[
+    ("ח", &["ḥ", "ḫ"]),
+    ("ע", &["ʿ", "ġ"]),
+    ("ש", &["š", "ṯ"]),
+    ("ז", &["z", "ḏ"]),
+    ("צ", &["ṣ", "ṣ\u{301}", "ṯ\u{323}"]),
+];
+
 #[derive(Debug, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct Entry {
@@ -151,6 +188,16 @@ pub enum Gender {
 #[serde(deny_unknown_fields)]
 pub struct Word {
     pub lemma: String,
+    /// `arc` or `syc` for a word of scripture's Aramaic; Hebrew when absent.
+    #[serde(default)]
+    pub lang: Option<String>,
+    /// The word's own root key where its spelling differs from the entry's
+    /// (Aramaic דהב under Hebrew זהב).
+    #[serde(default)]
+    pub root: Option<String>,
+    /// The entry's cognates whose sounds go with this word (see `Cognate::id`).
+    #[serde(default)]
+    pub cognate_ids: Vec<String>,
     pub pos: Pos,
     #[serde(default)]
     pub gender: Option<Gender>,
@@ -172,6 +219,8 @@ pub struct Word {
 pub struct Stem {
     pub stem: String,
     pub gloss: String,
+    #[serde(default)]
+    pub cognate_ids: Vec<String>,
     pub senses: Vec<Sense>,
 }
 
@@ -183,6 +232,8 @@ pub struct Sense {
     pub evidence: Vec<Citation>,
     #[serde(default)]
     pub tags: Vec<String>,
+    #[serde(default)]
+    pub cognate_ids: Vec<String>,
     #[serde(default)]
     pub senses: Vec<Sense>,
 }
@@ -198,7 +249,15 @@ pub enum Relation {
 #[derive(Debug, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct Cognate {
+    /// Kebab case, unique in the entry, so a word, stem or sense can name the
+    /// cognates that go with it in `cognate_ids`.
+    #[serde(default)]
+    pub id: Option<String>,
     pub lang: String,
+    /// For a letter of the root that stands for more than one older sound
+    /// (`MERGED_LETTERS`), the sound this cognate shows behind it: `{"ע": "ġ"}`.
+    #[serde(default)]
+    pub sounds: BTreeMap<String, String>,
     pub form: String,
     #[serde(default)]
     pub translit: String,
@@ -490,10 +549,24 @@ fn is_hebrew(s: &str) -> bool {
     s.chars().any(|c| ('\u{05D0}'..='\u{05EA}').contains(&c))
 }
 
+/// A root key's letters, each with the marks that follow it (sin is `שׂ`).
+fn root_letters(root: &str) -> Vec<String> {
+    let mut letters: Vec<String> = Vec::new();
+    for c in root.chars() {
+        match letters.last_mut() {
+            Some(last) if !('\u{05D0}'..='\u{05EA}').contains(&c) => last.push(c),
+            _ => letters.push(c.to_string()),
+        }
+    }
+    letters
+}
+
 /// Collects every fault with the path to it, so one run reports them all.
 struct Checker<'a> {
     verses: &'a HashSet<i64>,
     sources: HashSet<&'a str>,
+    /// The `id`s of the cognates of the entry being checked.
+    cognates: HashSet<String>,
     faults: Vec<String>,
     summary: LexiconSummary,
 }
@@ -583,8 +656,42 @@ impl Checker<'_> {
             self.text(&at, "gloss", &sense.gloss);
             self.text(&at, "definition", &sense.definition);
             self.tags(&at, &sense.tags);
+            self.cognate_ids(&at, &sense.cognate_ids);
             self.evidence(&at, &sense.evidence, Accepts::Scripture);
             self.senses(&at, &sense.senses);
+        }
+    }
+
+    fn cognate_ids(&mut self, at: &str, ids: &[String]) {
+        for id in ids {
+            if !self.cognates.contains(id) {
+                self.fault(at, format_args!("names no cognate `{id}` of the entry"));
+            }
+        }
+    }
+
+    fn sounds(&mut self, at: &str, root: &str, sounds: &BTreeMap<String, String>) {
+        let letters = root_letters(root);
+        for (letter, sound) in sounds {
+            let Some((_, allowed)) = MERGED_LETTERS.iter().find(|(l, _)| l == letter) else {
+                self.fault(at, format_args!("`{letter}` stands for only one sound"));
+                continue;
+            };
+            if !letters.iter().any(|l| l == letter) {
+                self.fault(
+                    at,
+                    format_args!("`{letter}` is no letter of the root `{root}`"),
+                );
+            }
+            if !allowed.contains(&sound.as_str()) {
+                self.fault(
+                    at,
+                    format_args!(
+                        "`{letter}` stands for {}, not `{sound}`",
+                        allowed.join(" or ")
+                    ),
+                );
+            }
         }
     }
 
@@ -593,6 +700,20 @@ impl Checker<'_> {
         if !is_hebrew(&word.lemma) {
             self.fault(at, format_args!("lemma `{}` must be Hebrew", word.lemma));
         }
+        let aramaic = match word.lang.as_deref() {
+            None => false,
+            Some(lang) if WORD_LANGS.contains(&lang) => true,
+            Some(lang) => {
+                self.fault(at, format_args!("unknown language `{lang}`"));
+                false
+            }
+        };
+        if let Some(root) = &word.root
+            && !is_root(root)
+        {
+            self.fault(at, format_args!("root `{root}` must be a root key"));
+        }
+        self.cognate_ids(at, &word.cognate_ids);
         self.text(at, "gloss", &word.gloss);
         if word.pos == Pos::Verb {
             if word.stems.is_empty() || !word.senses.is_empty() {
@@ -604,13 +725,15 @@ impl Checker<'_> {
         let mut seen = HashSet::new();
         for (i, stem) in word.stems.iter().enumerate() {
             let at = format!("{at}.stems[{i}]");
-            if !STEMS.contains(&stem.stem.as_str()) {
+            let stems = if aramaic { ARAMAIC_STEMS } else { STEMS };
+            if !stems.contains(&stem.stem.as_str()) {
                 self.fault(&at, format_args!("unknown stem `{}`", stem.stem));
             }
             if !seen.insert(stem.stem.as_str()) {
                 self.fault(&at, format_args!("stem `{}` listed twice", stem.stem));
             }
             self.text(&at, "gloss", &stem.gloss);
+            self.cognate_ids(&at, &stem.cognate_ids);
             if stem.senses.is_empty() {
                 self.fault(&at, "a stem needs at least one sense");
             }
@@ -670,19 +793,29 @@ impl Checker<'_> {
         if entry.words.is_empty() {
             self.fault(&at, "an entry needs at least one word");
         }
-        for (i, word) in entry.words.iter().enumerate() {
-            self.word(&format!("{at}.words[{i}]"), word);
-        }
+        self.cognates.clear();
         for (i, cognate) in entry.cognates.iter().enumerate() {
             let at = format!("{at}.cognates[{i}]");
+            if let Some(id) = &cognate.id {
+                if !is_kebab(id) {
+                    self.fault(&at, "`id` must be kebab case");
+                }
+                if !self.cognates.insert(id.clone()) {
+                    self.fault(&at, format_args!("cognate `{id}` listed twice"));
+                }
+            }
             if !COGNATE_LANGS.contains(&cognate.lang.as_str()) {
                 self.fault(&at, format_args!("unknown language `{}`", cognate.lang));
             }
             self.text(&at, "form", &cognate.form);
             self.text(&at, "gloss", &cognate.gloss);
-            // Its own language's dictionary, or a verse where scripture itself has
-            // the cognate: Biblical Aramaic, or the Peshitta's Syriac.
-            self.evidence(&at, &cognate.evidence, Accepts::Either);
+            self.sounds(&at, &entry.root, &cognate.sounds);
+            // Its own language's dictionary. Scripture's own Aramaic is a word of
+            // the entry, not a cognate.
+            self.evidence(&at, &cognate.evidence, Accepts::Source);
+        }
+        for (i, word) in entry.words.iter().enumerate() {
+            self.word(&format!("{at}.words[{i}]"), word);
         }
         for (i, doctrine) in entry.doctrine.iter().enumerate() {
             let at = format!("{at}.doctrine[{i}]");
@@ -705,6 +838,7 @@ pub fn check_lexicon(
     let mut checker = Checker {
         verses,
         sources: HashSet::new(),
+        cognates: HashSet::new(),
         faults: Vec::new(),
         summary: LexiconSummary::default(),
     };
@@ -756,6 +890,118 @@ pub fn check_lexicon_dir(dir: &Path, db: &Path, src_texts: &Path) -> Result<Lexi
     let lexicon = read_lexicon(dir)?;
     let db = Connection::open(db).with_context(|| format!("opening {}", db.display()))?;
     check_lexicon(&lexicon, &verses_of(&db)?, Some(src_texts))
+}
+
+/// Where cognates show which older sound stands behind a merged letter of an
+/// entry's root, the senses that go with each sound: one line per sense.
+#[derive(Debug, PartialEq, Eq)]
+pub struct SoundSplit {
+    pub entry: String,
+    pub root: String,
+    pub letter: String,
+    /// Each sound the entry's senses show behind `letter`, with the senses
+    /// (`lemma stem: gloss`) that go with it.
+    pub sounds: BTreeMap<String, Vec<String>>,
+}
+
+/// Every entry's sounds behind each merged letter of its root, as its words,
+/// stems and senses name them through `cognate_ids` (a sense inherits its
+/// word's and stem's). An entry with two sounds behind one letter is a split.
+pub fn sound_splits(lexicon: &Lexicon) -> Vec<SoundSplit> {
+    fn walk<'a>(
+        label: &str,
+        senses: &'a [Sense],
+        inherited: &[&'a str],
+        out: &mut Vec<(String, Vec<&'a str>)>,
+    ) {
+        for sense in senses {
+            let mut ids = inherited.to_vec();
+            ids.extend(sense.cognate_ids.iter().map(String::as_str));
+            out.push((format!("{label}: {}", sense.gloss), ids.clone()));
+            walk(label, &sense.senses, &ids, out);
+        }
+    }
+    let mut splits = Vec::new();
+    for entry in &lexicon.entries {
+        let sounds_of: BTreeMap<&str, &BTreeMap<String, String>> = entry
+            .cognates
+            .iter()
+            .filter_map(|c| Some((c.id.as_deref()?, &c.sounds)))
+            .collect();
+        let mut senses = Vec::new();
+        for word in &entry.words {
+            let ids: Vec<&str> = word.cognate_ids.iter().map(String::as_str).collect();
+            walk(&word.lemma, &word.senses, &ids, &mut senses);
+            for stem in &word.stems {
+                let mut ids = ids.clone();
+                ids.extend(stem.cognate_ids.iter().map(String::as_str));
+                walk(
+                    &format!("{} {}", word.lemma, stem.stem),
+                    &stem.senses,
+                    &ids,
+                    &mut senses,
+                );
+            }
+        }
+        let mut by_letter: BTreeMap<String, BTreeMap<String, Vec<String>>> = BTreeMap::new();
+        for (label, ids) in &senses {
+            let mut seen = BTreeSet::new();
+            for sounds in ids.iter().filter_map(|id| sounds_of.get(id)) {
+                for (letter, sound) in sounds.iter() {
+                    if seen.insert((letter, sound)) {
+                        by_letter
+                            .entry(letter.clone())
+                            .or_default()
+                            .entry(sound.clone())
+                            .or_default()
+                            .push(label.clone());
+                    }
+                }
+            }
+        }
+        for (letter, sounds) in by_letter {
+            splits.push(SoundSplit {
+                entry: entry.id.clone(),
+                root: entry.root.clone(),
+                letter,
+                sounds,
+            });
+        }
+    }
+    splits
+}
+
+/// [`sound_splits`] as Markdown, grouped by letter: the splits first, then the
+/// entries whose senses all show one sound.
+pub fn sound_splits_report(lexicon: &Lexicon) -> String {
+    use std::fmt::Write;
+    let splits = sound_splits(lexicon);
+    let mut out = String::new();
+    for (letter, sounds) in MERGED_LETTERS {
+        let here: Vec<_> = splits.iter().filter(|s| s.letter == *letter).collect();
+        if here.is_empty() {
+            continue;
+        }
+        let _ = writeln!(out, "## {letter} ({})\n", sounds.join(" / "));
+        let (split, single): (Vec<&SoundSplit>, Vec<&SoundSplit>) =
+            here.iter().copied().partition(|s| s.sounds.len() > 1);
+        for s in split.iter().chain(&single) {
+            let kind = if s.sounds.len() > 1 {
+                "split"
+            } else {
+                "one sound"
+            };
+            let _ = writeln!(out, "- **{}** `{}` ({kind})", s.root, s.entry);
+            for (sound, senses) in &s.sounds {
+                let _ = writeln!(out, "  - {sound}: {}", senses.join("; "));
+            }
+        }
+        out.push('\n');
+    }
+    if out.is_empty() {
+        out.push_str("No entry yet names the sound behind a merged letter.\n");
+    }
+    out
 }
 
 #[cfg(test)]
@@ -953,5 +1199,148 @@ mod tests {
         )
         .unwrap();
         eprintln!("{summary:?}");
+    }
+
+    /// One spelling, two older roots: evening behind ġ, pledge behind ʿ, with
+    /// an Aramaic word of scripture inside the entry.
+    const EREV: &str = r#"{
+        "id": "erev",
+        "root": "ערב",
+        "status": "draft",
+        "updated": "2026-11-07",
+        "gloss": "evening; pledge",
+        "summary": "Two older roots spelled alike.",
+        "words": [{
+            "lemma": "עֶרֶב",
+            "pos": "noun",
+            "gloss": "evening",
+            "cognate_ids": ["ar-gharb"],
+            "senses": [{
+                "gloss": "evening",
+                "definition": "The end of the day.",
+                "evidence": [{ "ref": "Gen.1.24" }]
+            }]
+        }, {
+            "lemma": "עָרַב",
+            "pos": "verb",
+            "gloss": "stand surety",
+            "stems": [{
+                "stem": "qal",
+                "gloss": "stand surety",
+                "cognate_ids": ["ar-arabun"],
+                "senses": [{
+                    "gloss": "pledge",
+                    "definition": "Give a pledge.",
+                    "evidence": [{ "ref": "Gen.2.7" }]
+                }]
+            }]
+        }, {
+            "lemma": "עֲרַב",
+            "lang": "arc",
+            "pos": "verb",
+            "gloss": "mix",
+            "stems": [{
+                "stem": "hithpaal",
+                "gloss": "be mixed",
+                "senses": [{
+                    "gloss": "be mixed",
+                    "definition": "Be mixed together.",
+                    "evidence": [{ "ref": "Gen.2.8" }]
+                }]
+            }]
+        }],
+        "cognates": [{
+            "id": "ar-gharb", "lang": "ar", "form": "غرب", "gloss": "set (of the sun)",
+            "relation": "cognate", "sounds": { "ע": "ġ" },
+            "evidence": [{ "source": "lane", "locator": "p. 2238" }]
+        }, {
+            "id": "ar-arabun", "lang": "ar", "form": "عربون", "gloss": "earnest money",
+            "relation": "cognate", "sounds": { "ע": "ʿ" },
+            "evidence": [{ "source": "lane", "locator": "p. 1995" }]
+        }]
+    }"#;
+
+    #[test]
+    fn accepts_aramaic_words_and_sounds() {
+        let summary = check(EREV).unwrap();
+        assert_eq!(summary.words, 3);
+    }
+
+    #[test]
+    fn an_aramaic_verb_has_aramaic_stems() {
+        let error = check(&EREV.replace("\"hithpaal\"", "\"hithpael\""))
+            .unwrap_err()
+            .to_string();
+        assert!(error.contains("unknown stem `hithpael`"), "{error}");
+        let error = check(&EREV.replace("\"qal\"", "\"peal\""))
+            .unwrap_err()
+            .to_string();
+        assert!(error.contains("unknown stem `peal`"), "{error}");
+        let error = check(&EREV.replace("\"arc\"", "\"aram\""))
+            .unwrap_err()
+            .to_string();
+        assert!(error.contains("unknown language `aram`"), "{error}");
+    }
+
+    #[test]
+    fn a_sound_is_one_its_letter_can_stand_for() {
+        let error = check(&EREV.replace("\"ע\": \"ġ\"", "\"ע\": \"ḫ\""))
+            .unwrap_err()
+            .to_string();
+        assert!(error.contains("`ע` stands for ʿ or ġ, not `ḫ`"), "{error}");
+        let error = check(&EREV.replace("\"ע\": \"ġ\"", "\"ח\": \"ḫ\""))
+            .unwrap_err()
+            .to_string();
+        assert!(
+            error.contains("`ח` is no letter of the root `ערב`"),
+            "{error}"
+        );
+        let error = check(&EREV.replace("\"ע\": \"ġ\"", "\"ר\": \"r\""))
+            .unwrap_err()
+            .to_string();
+        assert!(error.contains("`ר` stands for only one sound"), "{error}");
+    }
+
+    #[test]
+    fn a_bare_shin_is_not_a_sin() {
+        assert_eq!(root_letters("עשׂה"), ["ע", "שׂ", "ה"]);
+        assert!(!root_letters("עשׂה").iter().any(|l| l == "ש"));
+    }
+
+    #[test]
+    fn cognate_ids_name_the_entrys_cognates() {
+        let error = check(&EREV.replace("[\"ar-arabun\"]", "[\"ar-urbun\"]"))
+            .unwrap_err()
+            .to_string();
+        assert!(error.contains("names no cognate `ar-urbun`"), "{error}");
+    }
+
+    #[test]
+    fn scriptures_aramaic_is_a_word_not_a_cognate() {
+        let json = ENTRY.replace(
+            r#""lang": "ar", "form": "نفس", "gloss": "breath", "relation": "cognate",
+            "evidence": [{ "source": "lane", "locator": "p. 2826" }]"#,
+            r#""lang": "arc", "form": "נְפַשׁ", "gloss": "self", "relation": "cognate",
+            "evidence": [{ "ref": "Gen.2.7" }]"#,
+        );
+        let error = check(&json).unwrap_err().to_string();
+        assert!(
+            error.contains("must cite a source, not scripture"),
+            "{error}"
+        );
+    }
+
+    #[test]
+    fn finds_a_sound_split() {
+        let lexicon = Lexicon {
+            sources: sources(),
+            entries: vec![serde_json::from_str(EREV).unwrap()],
+        };
+        let splits = sound_splits(&lexicon);
+        assert_eq!(splits.len(), 1);
+        assert_eq!(splits[0].letter, "ע");
+        assert_eq!(splits[0].sounds["ġ"], ["עֶרֶב: evening"]);
+        assert_eq!(splits[0].sounds["ʿ"], ["עָרַב qal: pledge"]);
+        assert!(sound_splits_report(&lexicon).contains("**ערב** `erev` (split)"));
     }
 }

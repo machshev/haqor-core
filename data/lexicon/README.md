@@ -1,7 +1,9 @@
 # The Haqor lexicon
 
-Haqor's own Hebrew lexicon: one JSON file per root, written a root at a time,
-the most frequent first. Why it is built this way is in
+Haqor's own lexicon of scripture's Hebrew and Aramaic: one JSON file per root
+spelling, written a root at a time, the most frequent first. The Aramaic of
+scripture (Daniel, Ezra, the Peshitta) sits in the same entries as words of the
+Hebrew root it answers to. Why it is built this way is in
 [ADR 7](../../doc/adr/0007-haqor-lexicon.md); this file is the schema and the
 rules for writing an entry.
 
@@ -27,6 +29,16 @@ rules for writing an entry.
   understood: keep it and say in its `summary` that the link is not clear.
   Leave a word out only when the evidence puts it under another root (a loan,
   or cognates pointing elsewhere); proper names have their own entries.
+- **One spelling, one entry.** Where cognates show that one Hebrew spelling
+  covers two older roots (ערב "evening" behind ġ, "pledge" behind ʿ), the
+  entry stays one, and each sense names the cognates that go with it
+  (`cognate_ids`), whose `sounds` record the older sound behind the merged
+  letter. `db lexicon-splits` lists these across the lexicon.
+- **Hebrew and Aramaic together.** Scripture's Aramaic words are words of the
+  entry, marked by `lang`, with their own `root` where the spelling differs
+  (Aramaic דְּהַב under Hebrew זָהָב). Their meaning is shown from their own
+  verses, as the Hebrew's is. Other Aramaic (Targums, inscriptions) is a
+  cognate.
 - **Distilled first.** `gloss`, then `summary`, then the detail that backs them
   up. Someone who reads only the first two should come away with the right
   idea.
@@ -63,12 +75,15 @@ rules for writing an entry.
 
 | Field | |
 |---|---|
-| `lemma` | The pointed dictionary form (`נֶפֶשׁ`, `אָמַר`). |
+| `lemma` | The pointed dictionary form (`נֶפֶשׁ`, `אָמַר`), in Hebrew script for the Aramaic too (`אֲמַר`). |
+| `lang` | `arc` for Biblical Aramaic, `syc` for the Peshitta's Syriac; left out for Hebrew. |
+| `root` | The word's own root key, where its spelling differs from the entry's (`דהב`, `אתר`); left out otherwise. |
+| `cognate_ids` | Optional: the `id`s of the entry's cognates that go with this word. Its stems and senses inherit them. |
 | `pos` | `verb`, `noun`, `adjective`, `adverb`, `preposition`, `conjunction`, `particle`, `pronoun`, `numeral`, `interjection` or `name`. |
 | `gender` | `m`, `f` or `mf`, for nouns where it applies. |
 | `gloss` | A few words. |
 | `summary` | Optional, a sentence or two where the word differs from the root's summary. |
-| `stems` | For a verb: each stem it occurs in (`qal`, `niphal`, `piel`, `pual`, `hiphil`, `hophal`, `hithpael`, or a rarer one such as `polel`), each with its own `gloss` and `senses`. |
+| `stems` | For a verb: each stem it occurs in (`qal`, `niphal`, `piel`, `pual`, `hiphil`, `hophal`, `hithpael`, or a rarer one such as `polel`), or for an Aramaic verb `peal`, `pael`, `aphel`, `haphel`, `hithpeel`, `hithpaal`, `ethpeel`, `ethpaal` and the rest), each with its own `gloss`, `senses` and optional `cognate_ids`. |
 | `senses` | For anything else: its senses (below). |
 | `greek` | Greek words that render it (below). |
 | `usage` | `parallels`, `opposites` and `phrases` (below). |
@@ -83,19 +98,44 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 | `definition` | A sentence or two, drawn from the evidence. |
 | `evidence` | At least one scripture citation. Mark the verses whose use fixes the sense `"role": "defining"`. |
 | `tags` | Optional. |
+| `cognate_ids` | Optional: the entry's cognates that go with this sense, as on a word. |
 | `senses` | Optional narrower senses, in the same shape. |
 
 ### A cognate
 
 | Field | |
 |---|---|
+| `id` | Optional, kebab case, unique in the entry (`ar-gharb`), for `cognate_ids` to name. |
 | `lang` | `akk` Akkadian, `uga` Ugaritic, `phn` Phoenician, `arc` Aramaic, `syc` Syriac, `ar` Arabic, `gez` Ge'ez, `sem` other Semitic. |
 | `form` | The word in its own script. |
 | `translit` | A transliteration. |
 | `gloss` | Its meaning in its own language. |
 | `relation` | `cognate`, `possible` (argued but uncertain), or `loan` (borrowed one way or the other). |
 | `note` | Optional: how its meaning bears on the Hebrew. |
-| `evidence` | At least one citation: its dictionary entry or the text it occurs in, or a verse where scripture itself has the cognate (Biblical Aramaic, or the Peshitta's Syriac). |
+| `sounds` | Optional: for each letter of the root that stands for more than one older sound, the sound this cognate shows (`{"ע": "ġ"}`; see Sounds). |
+| `evidence` | At least one citation of its dictionary entry or the text it occurs in. Scripture's own Aramaic is not a cognate but a word of the entry. |
+
+### Sounds
+
+The 22 letters cover about 29 older consonants, so five letters each stand for
+more than one. A cognate in a language that keeps them apart (Arabic,
+Ugaritic, South Arabian, Ge'ez, and Aramaic for some) shows which one stands
+behind the letter in a given word, and `sounds` records it:
+
+| Letter | Sounds |
+|---|---|
+| ח | `ḥ`, `ḫ` |
+| ע | `ʿ`, `ġ` |
+| ש | `š`, `ṯ` |
+| ז | `z`, `ḏ` |
+| צ | `ṣ`, `ṣ́`, `ṯ̣` |
+
+(Sin, `שׂ`, is its own letter in a root key and stands for one sound.) The
+sound is what the cognates show, not a reconstructed root, and says nothing of
+which language came first. Two senses showing different sounds behind a letter
+are two older roots in one spelling; two senses showing the same sound are
+evidence that their meanings belong together. `cargo run -- db
+lexicon-splits` lists each entry's sounds by letter, splits first.
 
 ### Greek
 

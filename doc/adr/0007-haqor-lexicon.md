@@ -5,7 +5,10 @@ Date: 2026-11-06
 ## Status
 
 Accepted (2026-11-06): one entry per root, with the words it forms inside it,
-and doctrine written evidence-first. Implemented so far: the schema and its
+and doctrine written evidence-first. Amended (2026-11-07): one entry per root
+spelling, with the older sounds behind merged letters recorded per sense, and
+scripture's Aramaic in the same entries as the Hebrew (see "Hebrew and
+Aramaic, one spelling" below). Implemented so far: the schema and its
 validator, the evidence brief, and the cognate sources. Next: entries, then the
 app.
 
@@ -108,6 +111,32 @@ occurrence of the root grouped by word and stem with its English rendering, the
 Greek it is given in the New Testament's quotations, its parallels, and the
 other lexicons' text, only so their evidence can be followed up. An entry starts
 as `draft` and becomes `reviewed` once the user has checked it.
+
+### Hebrew and Aramaic, one spelling
+
+Added 2026-11-07. The lexicon rests on the premise that scripture's Hebrew has
+a systematic, self-consistent root system, and that the Aramaic portions (and
+the Peshitta) record the same roots in the dialect of their speakers. So:
+
+- **Hebrew and Aramaic share entries.** A word of scripture's Aramaic is a
+  word of the entry for the Hebrew root it answers to, marked `arc` (Biblical
+  Aramaic) or `syc` (the Peshitta), with its own root key where the spelling
+  differs (Aramaic דהב under Hebrew זהב, from one older ḏ). Its meaning is
+  shown from its own verses, as a Hebrew word's is. Aramaic outside scripture
+  stays a cognate. A root that scripture has only in Aramaic gets its own
+  entry, keyed by its Aramaic spelling.
+- **One entry per spelling.** The 22 letters cover about 29 older consonants,
+  so one Hebrew spelling can hold two older roots (ערב: "evening", whose
+  cognates have ġ; "pledge", whose cognates have ʿ). The entry stays one;
+  each word, stem or sense names the cognates that go with it, and each
+  cognate records the sound it shows behind the merged letter. That is what
+  explains two senses in one spelling, and two senses showing the same sound
+  is evidence that they belong together.
+- **No direction assumed.** The sounds are what cognates show, not a
+  reconstructed ancestor root, and the data assumes no language came first.
+- **Patterns across roots.** `db lexicon-splits` groups the entries by merged
+  letter, so it can be seen whether one merger explains two senses in many
+  roots.
 
 ### In the app
 

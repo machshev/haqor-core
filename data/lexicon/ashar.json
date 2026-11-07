@@ -15,6 +15,9 @@
   "words": [
     {
       "lemma": "אֲשֶׁר",
+      "cognate_ids": [
+        "ar-athar"
+      ],
       "pos": "particle",
       "gloss": "who, which, that; where; because; so that",
       "summary": "Never inflected. It marks the clause after it as describing a word before it, or as standing in for a noun itself; a pronoun or שָׁם \"there\" inside the clause often shows the part the word plays in it. The shorter שֶׁ־ does the same work (Psa 146:5; 137:8).",
@@ -620,6 +623,9 @@
     },
     {
       "lemma": "אֲשֻׁר",
+      "cognate_ids": [
+        "ar-athar"
+      ],
       "pos": "noun",
       "gender": "f",
       "gloss": "step",
@@ -768,67 +774,77 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "אֲתַר",
+      "lang": "arc",
+      "root": "אתר",
+      "pos": "noun",
+      "gloss": "place; (בָּאתַר) after",
+      "summary": "Biblical Aramaic, where Hebrew's שׁ answers to Aramaic ת. The house of God is to be built \"on its place\".",
+      "senses": [
+        {
+          "gloss": "place",
+          "definition": "The spot where something is or belongs.",
+          "evidence": [
+            {
+              "ref": "Dan.2.35",
+              "note": "\"no place was found for them\"."
+            },
+            {
+              "ref": "Ezr.5.15",
+              "role": "defining",
+              "note": "\"let the house of God be built on its place\" (עַל־אַתְרֵהּ)."
+            },
+            {
+              "ref": "Ezr.6.5"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בָּאתַר",
+            "gloss": "after, in the track of",
+            "evidence": [
+              {
+                "ref": "Dan.7.6",
+                "note": "בָּאתַר דְּנָה: \"after this\"."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אַתְרָא",
+      "lang": "syc",
+      "root": "אתר",
+      "pos": "noun",
+      "gloss": "place; region, country",
+      "summary": "The Peshitta's ܐܰܬܪܳܐ (ʾaṯrā).",
+      "senses": [
+        {
+          "gloss": "region, country",
+          "definition": "A land or district.",
+          "evidence": [
+            {
+              "ref": "Mat.2.22",
+              "note": "The Peshitta's לאתרא for \"to the region of Galilee\"."
+            },
+            {
+              "ref": "Mat.2.12",
+              "note": "\"to their country\"."
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [
     {
-      "lang": "arc",
-      "form": "אֲתַר",
-      "translit": "ʾăṯar",
-      "gloss": "place",
-      "relation": "cognate",
-      "note": "Biblical Aramaic, where Hebrew's שׁ answers to Aramaic ת. The house of God is to be built \"on its place\"; with בְּ it gives בָּאתַר \"after\", \"in the track of\".",
-      "evidence": [
-        {
-          "ref": "Dan.2.35",
-          "note": "\"no place was found for them\"."
-        },
-        {
-          "ref": "Ezr.5.15",
-          "note": "\"let the house of God be built on its place\" (עַל־אַתְרֵהּ)."
-        },
-        {
-          "ref": "Ezr.6.5"
-        },
-        {
-          "ref": "Dan.7.6",
-          "note": "בָּאתַר דְּנָה: \"after this\"."
-        }
-      ]
-    },
-    {
-      "lang": "syc",
-      "form": "ܐܰܬܪܳܐ",
-      "translit": "ʾaṯrā",
-      "gloss": "place; region, country; (as a conjunction) where, wherever",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "ref": "Mat.2.22",
-          "note": "The Peshitta's לאתרא for \"to the region of Galilee\"."
-        },
-        {
-          "ref": "Mat.2.12",
-          "note": "\"to their country\"."
-        },
-        {
-          "source": "payne-smith-1903",
-          "locator": "p. 33, ܐܰܬܪܳܐ",
-          "url": "https://www.dukhrana.com/lexicon/PayneSmith/pages/0042.jpg"
-        },
-        {
-          "source": "brockelmann-1928",
-          "locator": "pp. 55–56, ܐܬܪܐ",
-          "url": "https://www.dukhrana.com/lexicon/Brockelmann/pages/0073.jpg",
-          "note": "Sets beside it Arabic أثر \"footprint\", Akkadian ašru \"place\" and Hebrew אֲשֶׁר."
-        },
-        {
-          "source": "sedra",
-          "locator": "lexeme 324 (אתרא)"
-        }
-      ]
-    },
-    {
+      "id": "ar-athar",
       "lang": "ar",
       "form": "أَثَرٌ",
       "translit": "ʾaṯar",
@@ -845,7 +861,10 @@
           "source": "lane",
           "locator": "p. 18, art. اثر, 8 اِئْتَثَرَهُ \"he followed his footsteps\""
         }
-      ]
+      ],
+      "sounds": {
+        "ש": "ṯ"
+      }
     },
     {
       "lang": "gez",
@@ -984,5 +1003,5 @@
       ]
     }
   ],
-  "note": "Kept as one root: the particle, the step, the verb, the happiness words and the tree. The cognates join the particle to a noun for footstep, trace or place (Brockelmann sets אֲשֶׁר beside Syriac ܐܬܪܐ, Arabic أثر and Akkadian ašru; Akkadian ašar \"where\" is the noun doing a particle's work), and Ge'ez አሠר and Dillmann join \"footprint\" to the step אֲשֻׁר; Ugaritic ʾṯr is a verb \"march\". No dictionary consulted links אֶשֶׁר \"happiness\" to these; within scripture the piel carries both \"lead on\" and \"call happy\" (Gen 30:13 has the noun and the verb together). The tree תְּאַשּׁוּר is kept though its link to the root's sense is not clear. Left out, for their own entries: the names אָשֵׁר Asher and the gentilic אָשֵׁרִי (Jdg 1:32), whom Leah names with this root's words (Gen 30:13), so his entry should link back here; אֲשֵׁרָה Asherah, a goddess's name and her cult pole (Ugaritic ʾaṯrt), whose entry should weigh a link to this root; and אַשּׁוּר Assyria, from the Akkadian city name Aššur, which belongs to another word. BDB lists the same occurrences under both אֲשׁוּר and אַשֻּׁר, one word here. CAD and Leslau not consulted. The particle's senses are illustrated, not exhaustive: 5,500 tokens."
+  "note": "Kept as one root: the particle, the step, the verb, the happiness words and the tree. The cognates join the particle to a noun for footstep, trace or place (Brockelmann sets אֲשֶׁר beside Syriac ܐܬܪܐ, Arabic أثر and Akkadian ašru; Akkadian ašar \"where\" is the noun doing a particle's work), and Ge'ez አሠר and Dillmann join \"footprint\" to the step אֲשֻׁר; Ugaritic ʾṯr is a verb \"march\". No dictionary consulted links אֶשֶׁר \"happiness\" to these; within scripture the piel carries both \"lead on\" and \"call happy\" (Gen 30:13 has the noun and the verb together). The tree תְּאַשּׁוּר is kept though its link to the root's sense is not clear. Left out, for their own entries: the names אָשֵׁר Asher and the gentilic אָשֵׁרִי (Jdg 1:32), whom Leah names with this root's words (Gen 30:13), so his entry should link back here; אֲשֵׁרָה Asherah, a goddess's name and her cult pole (Ugaritic ʾaṯrt), whose entry should weigh a link to this root; and אַשּׁוּר Assyria, from the Akkadian city name Aššur, which belongs to another word. BDB lists the same occurrences under both אֲשׁוּר and אַשֻּׁר, one word here. CAD and Leslau not consulted. The particle's senses are illustrated, not exhaustive: 5,500 tokens. Scripture's Aramaic אֲתַר and the Peshitta's ܐܬܪܐ are kept as words of this entry, under their own root אתר (Aramaic ת for Hebrew ש, both from ṯ). Leads for ܐܬܪܐ not yet followed to verses: Payne Smith p. 33 and Brockelmann pp. 55–56 give \"region, country\" and, as a conjunction, \"where\"; Brockelmann sets it beside Arabic أثر, Akkadian ašru and Hebrew אֲשֶׁר; SEDRA lexeme 324."
 }
