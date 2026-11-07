@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1
-(7,574 of 7,958 Peshitta verses; 384 remain). Revelation 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-2
+(7,603 of 7,958 Peshitta verses; 355 remain). Revelation 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5905,3 +5905,54 @@ Source checks for Revelation 1:
   coordinated separately. In 1:20, the stars and lampstands have distinct
   explanations, both final seven-quantifiers are retained, and gold belongs
   to the later lampstand phrase rather than the earlier one.
+
+Source checks for Revelation 2:
+
+- Reviewed all 29 verses and 441 source positions against the exact forms,
+  complete gloss alternatives, numeric morphology, and continuous English.
+  Possessive datives, anticipatory genitives, and copular/resumptive pronouns
+  are rendered idiomatically. Short contiguous constructions group the words
+  needed for English grammar, including the four-word tree-of-life infinitive
+  in 2:7 and the four-word negative copular clause in 2:9.
+- The supplied text differs materially from the Murdock reference: 2:1 has
+  neither “all things,” “right,” nor a second “seven”; 2:5 says “went out,”
+  omits an early repentance command, “quickly,” and “from its place”; 2:7
+  says “God,” without “my”; 2:9 and 2:13 omit “your works.” These words
+  are not imported from familiar English versions.
+- Revelation 2:8 has perfect “came to life.” In 2:10 the opening second-person
+  singular changes to plural for the prisoners, testing, exhortation, and
+  promised crown. The hearing formulas retain plural “ears.” The imperative
+  “repent” belongs to 2:16, following “Likewise” at the end of 2:15.
+- Revelation 2:13 is difficult in the supplied text. The vocalized verb at
+  position 14 is second-person singular perfect, rendered “you contended.”
+  Both witness phrases remain. The first is interpreted as a coordinated
+  nominal predicate with an implicit copula and inherited second-person
+  subject: “and were my own faithful witness.” In the second, “is faithful”
+  is read as the predicate, followed by an extraposed restrictive relative,
+  “who from among you was killed.” This is an uncertain syntactic reading,
+  not an unambiguous identification of the witness. No “Antipas,” “spectacle,”
+  “with,” or additional statement of Satan's dwelling is supplied.
+  [Dukhrana's verse analysis](https://dukhrana.com/peshitta/analyze_verse.php?font=XenoType+SY+Darmasuq&size=125%25&source=&verse=Revelation+2%3A13)
+  corroborates the forms and records Etheridge's “with” variant; that
+  preposition is absent from the source used here.
+- In 2:17, “white tally” is a contextual rendering of *hushbana*, whose
+  supplied glosses are “reckoning,” “calculation,” and “account.” The
+  [Comprehensive Aramaic Lexicon](https://cal.huc.edu/oneentry.php?cits=all&lemma=xw%24bn+N)
+  also records a concrete account item and a possible written account slip.
+  That lexical evidence supports the contextual inference of a tally, but
+  does not establish a stone or any specific ritual or civic function.
+  Both occurrences remain linked. “In writing” renders the noun *ktaba*;
+  it is not described as a passive participle. The final verb is perfect,
+  “has received.” No eating verb is supplied for the manna in this verse.
+- Revelation 2:18 has singular “eye” and “Lebanese brass.” In 2:20 the text
+  says “much” and “your woman”; the genuine possessive is retained without
+  deciding whether marriage is meant. The teaching, leading astray, and
+  sacrifices of idols each retain their own source positions. The warnings
+  in 2:5 and 2:22 preserve their conditional “unless” construction.
+- Revelation 2:23 retains “kill with death,” plural “kidneys,” and singular
+  “heart”; no disease is inferred. The ecclesias' knowing is read as the
+  predicted result of the warning. In 2:24 the recipients do not “have” the
+  teaching; no receiving verb is present. In 2:26 both overcoming and keeping
+  are perfect, and no “unto the end” phrase occurs. The infinitive “to tend”
+  in 2:27 continues the grant of authority in 2:26; the breaking verb is
+  active second-person plural, followed by the speaker's perfect “received.”
