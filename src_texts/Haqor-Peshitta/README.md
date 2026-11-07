@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1, 2 John, 3 John, and Jude
-(7,308 of 7,958 Peshitta verses; 650 remain). 1 Peter 2 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-2, 2 John, 3 John, and Jude
+(7,333 of 7,958 Peshitta verses; 625 remain). 1 Peter 3 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5421,3 +5421,65 @@ Source checks for 1 Peter 1:
 - Relative and appositional clauses were kept source-led: v. 10 makes the prophets the subject of “inquired”; v. 11 makes the Messiah’s indwelling Spirit the showing/testifying subject and keeps the sufferings-of-Messiah relation; v. 19 attaches Messiah to the spotless Lamb; v. 20 keeps appointed-beforehand, pre-foundation, and last-time manifestation components.
 - Negation and suffixes were retained explicitly: v. 12 “not for themselves,” “for us,” and “announced to you”; v. 14 “did not know”; v. 17 retains the second-person possessive in “your sojourning”; v. 18 both silver/gold negatives and the fathers suffix; v. 22 retains the pure/perfect-heart and one-another phrases.
 - In v. 22, the verbs `נהוינ` and `ונהוינ` are third-person feminine plural imperfects agreeing with “your souls”; the coordinated rendering keeps nonpast “your souls become holy ... and become full”; `תהוונ מחבינ חד לחד` is second-person plural imperfect plus participle, rendered “be loving one another.” Verse 24 keeps the causal particle as “For” and joins the grass/flower clause with a semicolon rather than leaving a fragment.
+
+Source checks for 1 Peter 2:
+
+- 2:1 keeps the imperative at position 0 and `therefore` at 1; positions 7–8
+  are one genuine face-taking idiom rendered “hypocrisy,” not “in the face.”
+- 2:2 groups positions 8–10 as “pure spiritual milk” while retaining the
+  source order through one grammatical adjective group.
+- 2:3 joins the conditional to verse 2 with punctuation and groups positions
+  3–5 as “that he, the Lord, is good,” so the good lexeme, copula, and Lord
+  are all owned without a stranded subordinate sentence.
+- 2:4 groups positions 0–4 as “to whom you draw near: he is,” preserving the
+  third-person copula referent rather than making “you” singular; `לות` is
+  rendered “toward God,” one of its actual source senses.
+- 2:5 preserves plural temples and priests; neither is replaced by a singular
+  temple or the abstract noun priesthood.
+- 2:6 places causal `גיר` first in a grammatical “for it is said” group and
+  groups the quoted put/place verb with its explicit first-person subject.
+- 2:7 places the believing predicate at 5–6 and the contrast at 8, while one
+  adjacent grammar group keeps “to you who believe ... this honor” complete.
+  Its contrast continues into the stone predicate in 2:8 as one sentence.
+- 2:8 repairs the stone/stumbling opening, keeps the `בדלא` negative causal
+  connector, and renders positions 9–11 as “the word to which they were
+  appointed,” retaining the plural appointed verb and demonstrative relation.
+- 2:9 renders active participial `דמכהנא` as “officiating as priests” and
+  `למלכותא` as “for the kingdom”; redeemed ecclesia, praise/calling relation,
+  and the 3sg “his” suffix on light remain explicit.
+- 2:10 adds the finite “are” to the now/current people-of-God predicate while
+  preserving the formerly/now contrast and both mercy clauses.
+- 2:11 retains first-person request, 2pl “from you,” abstention, and the
+  demonstrative `הלין` as “those” followed by its relative “that wage war.”
+- 2:12 groups the copular exhortation as “let your conduct be good,” retains
+  the 2pl “against you” suffix, and renders `נחזונ` as third-person “they may
+  see,” followed by “and praise.”
+- 2:13 retains the two causal `because` words separately: God, then kings,
+  then their authority. The authority suffix is plural “their.”
+- 2:14 keeps the third-person plural “they are sent,” with separate purposes
+  for offender punishment and good-doer praise.
+- 2:15 uses “your good deeds” from the deed suffix and keeps singular “mouth,”
+  the foolish relative, explicit negation, and God once.
+- 2:16 renders the adjacent freedom phrase as people who make freedom for
+  themselves a covering for their wickedness; the third-plural suffix on
+  wickedness is explicit.
+- 2:17 uses one contiguous idiom group for `ומנ אלהא דחלו`: “and fear God.”
+  This is the natural governed fear-God construction, while retaining all
+  three source links and the imperative parallelism.
+- 2:19 uses the existential+dative possession idiom “For these have grace before
+  God,” then identifies them as those who, because of a good conscience, endure
+  distress that comes upon them wrongfully. The final `בעולא` is retained.
+- 2:20 resolves the rhetoric as: those suffering from their own wrongdoing have
+  no praise; when the addressed hearers do good, third-person plural actors
+  pressure them, and they endure it, their praise is great with God. The
+  second-person and third-person plural subjects are kept distinct.
+- 2:21 keeps the source's first-person plural “for us” (not “for
+  you”) and the example/footsteps sequence.
+- 2:22 keeps the guile noun before the “was found” verb and preserves both
+  negative elements.
+- 2:23 renders the final roles as Christ entrusting his judgment/cause to the
+  righteous Judge; no reflexive “himself” is inserted.
+- 2:24 keeps all our sins, plural “them,” first-person plural “we are dead / we
+  live,” his own righteousness, plural wounds, and second-person plural healing.
+- 2:25 combines the astray and “you were” forms into one natural “You were
+  astray,” then keeps the present return to Shepherd and Overseer of your souls.
