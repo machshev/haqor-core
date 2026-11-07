@@ -1628,6 +1628,15 @@ pub fn support_report_dir(dir: &Path, db: &Path) -> Result<String> {
     Ok(support_report(&lexicon, &db, ""))
 }
 
+/// The evidence for each word of the entry written as `json`, counting uses
+/// in `bible`'s text, as JSON (a list of `WordSupport`): for the review page.
+pub fn entry_support_json(bible: &crate::bible::Bible, json: &str) -> Result<String> {
+    let entry: Entry = serde_json::from_str(json)?;
+    let db = bible.conn();
+    let uses = bdb_uses(db, "data.", &entry);
+    Ok(serde_json::to_string(&entry_support(&entry, &uses))?)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
