@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-13
-(7,783 of 7,958 Peshitta verses; 175 remain). Revelation 14 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-14
+(7,803 of 7,958 Peshitta verses; 155 remain). Revelation 15 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6672,3 +6672,109 @@ Source checks for Revelation 13:
   number/is/for unit moves postpositive FOR into natural English order. The number is of
   a human being, followed directly by SIX HUNDRED AND SIXTY AND SIX; no extra
   its-number-is clause is imported.
+
+Source checks for Revelation 14:
+
+- 14:1: The Lamb is standing on Mount Zion, with 144,000. Both HIS name and HIS Father's
+  name remain. The existential/on-them relative becomes on-whom-were, with normal
+  English agreement for the coordinated names, followed by written. The location is
+  on-between-their-eyes; space supplies English grammar for that relation. The
+  conjunction on with-him is retained.
+- 14:2: The voice/sound is compared with many waters and great thunder, then with ONE
+  harpist striking HIS HARPS, plural. These are not plural harpists with one harp each.
+  Sound is the contextual audible sense of voice. English supplies was in the final
+  nominal comparison; the striking participle remains linked to the singular musician.
+- 14:3: Praise is both the action and the new hymn. The explicit as/like particle
+  remains as-with. CAL's šbḥ entry includes singing a hymn
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=%24bx+V); hymn is the musical praise
+  in this scene, not a separate imported event. Before is repeated for the throne, four
+  living creatures and elders. No one was able to learn it; the object suffix
+  anticipates the hymn. Except-for renders the short `אלא אנ` exception idiom. The
+  144,000 are purchased from earth, a passive-participle description.
+- 14:4: These/are/those is explicit. With-women precedes the negative passive
+  defilement. The short virgins/for/they-are unit gives grammatical English while
+  retaining the postpositive causal particle. Followed is perfect, with its object
+  suffix anticipating Lamb. Would-go gives the following imperfect a habitual setting
+  within that past following. Purchased is passive perfect; this source has NO by-Jesus
+  agent. The human group is firstfruits to God AND the Lamb.
+- 14:5: The verse opens with a d-prefixed in-their-mouth, continued as
+  for-in-their-mouth, without adding an absent and. Mouth is singular with plural
+  possessors. The negative and passive found retain falsehood as subject. The short
+  four-position without/blemish/for/they-are unit gives for-they-are-without-blemish; no
+  negation or causal particle is lost.
+- 14:6: The angel flies in the MIDST of heaven and has an everlasting gospel UPON HIM.
+  There is no blood word here despite the reference. The gospel's eternity expression is
+  rendered with the adjective everlasting in a short unit. The audience list is people,
+  nations, tribes and language in the actual order and numbers; every scopes the list,
+  and the final every repeats that scope for grammatical English. The proclamation
+  continues into the next verse's saying infinitive.
+- 14:7: The first command is FEAR God, not Murdock's worship; the from particle belongs
+  to the fear-God construction and is rendered with the verb in a short unit. Giving him
+  glory and worshiping the one WHO MADE remain separate commands. His judgment's hour
+  HAS COME. Springs is the water-source sense of `עינא`, not literal anatomical eyes;
+  CAL lists both eye and spring/fountain
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N).
+- 14:8: Another, the second, is following him; the source leaves angel implicit here.
+  The following participle has a past auxiliary, and saying shares that narrative
+  setting. Both fallen predicates remain before Babylon the great. The source says she
+  gave the nations drink FROM THE WRATH OF HER HARLOTRY, with no wine noun here. All's
+  plural suffix anticipates nations.
+- 14:9: The third angel followed THEM. Worshiped and took are both PERFECT, rendered as
+  completed acts in the generic whoever clause. The beast's image and mark retain their
+  genuine feminine possessors. The location is between HIS eyes, the worshiper's, with
+  NO or-on-his-hand alternative. The sentence and quotation continue into the judgment
+  in the next two verses.
+- 14:10: Also HE will drink. The wrath suffix anticipates THE LORD; the source does not
+  name God at this position. Mixed and without-admixture are both explicit and are
+  retained as the source's metaphor rather than replacing mixed with an absent poured
+  verb. The cup's HIS indignation is a genuine possessor. Torment is passive imperfect,
+  with fire and sulphur, before the holy angels AND THE LAMB, not the reference's
+  throne.
+- 14:11: Smoke of THEIR torment WILL ASCEND, imperfect, for the age of ages. Rest is
+  negated for them by day AND night. Those worshiping the beast and its image are
+  followed by the full additional AND-FOR-WHOEVER-TOOK-THE-MARK-OF-ITS-NAME clause
+  absent from the reference. Took is perfect; its-name belongs to the beast. The third
+  angel's quotation closes here.
+- 14:12: Here-is-endurance has an anticipatory feminine singular existential suffix, not
+  another possessor. The saints HAVE KEPT the commandments, a perfect rather than a
+  present participle. The commandment suffix anticipates God and the faith suffix
+  anticipates Jesus; English keeps the explicit genitives without duplicate his
+  pronouns.
+- 14:13: The voice says write, a second-singular imperative. Blessed-are-the-dead
+  renders the beatitude construction idiomatically. DEPARTED is perfect and the Lord has
+  a genuine FIRST-PLURAL suffix: OUR Lord. Dashes keep the completed-departure relative
+  parenthetical so from-now-on can qualify the blessing. Yes, says the Spirit, because
+  they will rest from THEIR TOILS: the rest verb is imperfect in its causative/passive
+  stem, with the restful outcome rendered in normal English. This source has NO
+  their-deeds-follow-them clause.
+- 14:14: The source opens AND BEHOLD, without another I-saw verb. A white cloud bears a
+  sitting LIKENESS OF A HUMAN BEING; the source noun likeness remains, without importing
+  a separate Son title. English inversion preserves the sitting figure as subject. The
+  possessive existential gives he-had, followed by a gold crown ON HIS HEAD and a sharp
+  sickle ON HIS HAND. These genuine masculine possessors refer to the figure.
+- 14:15: Another angel came from the temple AND CRIED ALOUD, both perfects. The seated
+  figure on the cloud receives the full second-singular command: SEND YOUR SICKLE AND
+  REAP, because the hour has come TO REAP. The reference omits these source words. No
+  extra ripe-harvest clause is added beyond the actual ending.
+- 14:16: The one sitting on the cloud is explicit and casts HIS SICKLE on earth. English
+  uses passive inversion, there-was-cast BY-THE-ONE ... HIS-SICKLE, preserving that
+  actor and object while keeping source links ascending. The final passive clause is the
+  earth was reaped; it is not another act by an unspecified reaper.
+- 14:17: Another angel came out of the temple IN HEAVEN. On-him plus the existential
+  gives upon-him-was a sharp sickle in the narrative setting, without adding the
+  reference's separate also. The adjective and sickle form a short English-order unit.
+- 14:18: The angel from the altar has authority OVER FIRE and cries to the one with the
+  sharp sickle. Both existential/dative possession expressions remain. The explicit
+  second-person YOU is retained in the short You-send imperative unit, followed by YOUR
+  sharp sickle. The clusters belong to earth's vineyard: the vineyard suffix anticipates
+  earth. ITS GRAPES HAVE GROWN retains the perfect and the masculine singular possessor
+  referring to vineyard, not a feminine possessor referring directly to earth.
+- 14:19: The angel casts his sickle and gathers/plucks earth's vineyard; harvested is
+  the English verb for that vineyard-gathering metonym. The implied object of the
+  following cast is made explicit as the harvest, the grapes just gathered. GREAT
+  modifies the feminine WINEPRESS, not masculine God. The wrath suffix anticipates God,
+  so there is no independent extra his possessor.
+- 14:20: The full source has a winepress trampled OUTSIDE THE CITY and BLOOD COMING OUT
+  FROM THE WINEPRESS, clauses omitted by the reference. The blood reaches the bridles of
+  plural horses. The distance is A THOUSAND AND TWO HUNDRED STADES, 1,200, not Murdock's
+  1,600. Stades preserves the historical unit without an unwarranted modern conversion.
