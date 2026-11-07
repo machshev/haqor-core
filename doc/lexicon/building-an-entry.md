@@ -136,6 +136,15 @@ A sense cites scripture only; the validator rejects anything else.
      one entry; the tags make the split visible.
    - Two senses showing the **same** sound are evidence that their meanings
      belong together (זכר "remember" and "male", both ḏkr).
+5. **Name a cognate only where it shares the meaning.** Naming it in
+   `cognate_ids` says the word or sense shares its meaning; leaving it out says
+   it does not, and `db lexicon-support` counts it against that word, twice
+   over. A cognate that means something else entirely is the strongest
+   evidence the word may belong to another root, or have moved far from it.
+6. **Kin.** Where a sense shares its meaning with a sibling word's sense (the
+   noun אֶשֶׁר "happy is…!" and the verb's "call happy"), give the sibling
+   sense an `id` and name it in `kin`. The sibling's uses and cognates then
+   count for it, and its cognates no longer count against it.
 
 ## 6. Record the Greek
 
@@ -176,9 +185,14 @@ left out and why, sources not yet consulted, leads not yet followed to verses
 ```sh
 cargo run -- db check-lexicon     # schema, verses, sources, across the lexicon
 cargo run -- db lexicon-splits    # each root's sounds behind merged letters
+cargo run -- db lexicon-support   # each word's uses, verses, cognates for and against, kin
 ```
 
-`check-lexicon` lists every fault at once. `lexicon-splits` shows whether the
+`check-lexicon` lists every fault at once. `lexicon-support` counts each word's
+evidence: give each word its `bdb` keys so its uses in scripture are counted.
+A word with few uses, few defining verses, or a negative balance (cognates of
+another meaning outnumbering those sharing it, which count double) is one
+whose meaning rests on little, and its `summary` should say so. `lexicon-splits` shows whether the
 new entry adds to a pattern across roots: the same merger explaining two
 senses again and again.
 

@@ -91,6 +91,7 @@ Further reading:
 | `lemma` | The pointed dictionary form (`נֶפֶשׁ`, `אָמַר`), in Hebrew script for the Aramaic too (`אֲמַר`). |
 | `lang` | `arc` for Biblical Aramaic, `syc` for the Peshitta's Syriac; left out for Hebrew. |
 | `root` | The word's own root key, where its spelling differs from the entry's (`דהב`, `אתר`); left out otherwise. |
+| `bdb` | Optional: the BDB keys (`a.gj.ab`, as the brief lists them) whose tokens in the text are this word, so its uses are counted. Where BDB lists the same occurrences under two keys, name one. |
 | `cognate_ids` | Optional: the `id`s of the entry's cognates that go with this word. Its stems and senses inherit them. |
 | `pos` | `verb`, `noun`, `adjective`, `adverb`, `preposition`, `conjunction`, `particle`, `pronoun`, `numeral`, `interjection` or `name`. |
 | `gender` | `m`, `f` or `mf`, for nouns where it applies. |
@@ -107,11 +108,13 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 
 | Field | |
 |---|---|
+| `id` | Optional, kebab case, unique in the entry (`happy-is`), for a sibling word's `kin` to name. |
 | `gloss` | A few words. |
 | `definition` | A sentence or two, drawn from the evidence. |
 | `evidence` | At least one scripture citation. Mark the verses whose use fixes the sense `"role": "defining"`. |
 | `tags` | Optional. |
 | `cognate_ids` | Optional: the entry's cognates that go with this sense, as on a word. |
+| `kin` | Optional: the `id`s of sibling words' senses that share this sense's meaning (אֶשֶׁר "happy is…!" and the piel of אָשַׁר "call happy"). Never a sense of the same word. |
 | `senses` | Optional narrower senses, in the same shape. |
 
 ### A cognate
@@ -127,6 +130,28 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 | `note` | Optional: how its meaning bears on the Hebrew. |
 | `sounds` | Optional: for each letter of the root that stands for more than one older sound, the sound this cognate shows (`{"ע": "ġ"}`; see Sounds). |
 | `evidence` | At least one citation of its dictionary entry or the text it occurs in. Scripture's own Aramaic is not a cognate but a word of the entry. |
+
+### Counting the evidence
+
+`cargo run -- db lexicon-support` counts the evidence for each word, and for
+each sense where a word's senses differ:
+
+| Column | What it counts |
+|---|---|
+| Uses | The word's Old Testament tokens, from its `bdb` keys. One use is a word scripture barely fixes. |
+| Verses cited (defining) | The verses its senses cite, and how many of them fix a meaning. |
+| Cognates sharing its meaning | The cognates it names in `cognate_ids` (its own or inherited) as `cognate`, or as a loan into Hebrew, and how many languages they come from. |
+| Cognates with another meaning | The root's other cognates (`cognate`, Semitic) that neither it nor its kin name: the same root meaning something else. For a word, those that share none of its senses' meanings. |
+| Balance | Languages sharing the meaning, less **twice** the languages with another meaning: opposing evidence weighs double. |
+| Possible | Cognates it names only as `possible`; they count neither way. |
+| Kin senses | Sibling senses sharing its meaning, with their own uses, verses and cognates: support from the rest of the root. |
+
+So naming a cognate in `cognate_ids` says it shares that meaning, and leaving
+it out says it does not. Name each cognate on every word and sense whose
+meaning it shares, and on none other: a cognate named on no word is listed
+under the table. A word whose root's cognates all mean something else (the
+happiness words of אשר, whose cognates mean "footstep, trace") shows a
+negative balance; one whose meaning they share shows a positive one.
 
 ### Sounds
 
@@ -245,6 +270,8 @@ A source in `sources.json`:
 3. Write `<id>.json` from the brief, following the evidence back to the verses
    and to the cognate languages' own dictionaries.
 4. `cargo run -- db check-lexicon` checks it, listing every fault.
+   `cargo run -- db lexicon-support` counts each word's evidence (see
+   "Counting the evidence").
 5. Leave it `draft` until the user has reviewed it.
 
 ## Reviewing in the app

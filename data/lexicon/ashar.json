@@ -15,8 +15,14 @@
   "words": [
     {
       "lemma": "אֲשֶׁר",
+      "bdb": [
+        "a.gk.aa"
+      ],
       "cognate_ids": [
-        "ar-athar"
+        "akk-ashru",
+        "ar-athar",
+        "gez-asar",
+        "phn-ash"
       ],
       "pos": "particle",
       "gloss": "who, which, that; where; because; so that",
@@ -255,12 +261,16 @@
     },
     {
       "lemma": "אֶשֶׁר",
+      "bdb": [
+        "a.gj.ab"
+      ],
       "pos": "noun",
       "gender": "m",
       "gloss": "happiness; (אַשְׁרֵי) happy is…!",
       "summary": "Found only in the plural, as the exclamation אַשְׁרֵי \"the happinesses of…!\" or with a pronoun (אַשְׁרֶיךָ \"your happiness!\"). It is said of people, a people and once a land, never of God.",
       "senses": [
         {
+          "id": "happy-is",
           "gloss": "happy is…!",
           "definition": "Declares the well-being of someone, and in the same breath says what it rests on: the way they walk, whom they trust, what has been done for them.",
           "evidence": [
@@ -373,6 +383,10 @@
                 }
               ]
             }
+          ],
+          "kin": [
+            "call-happy",
+            "be-called-happy"
           ]
         }
       ],
@@ -436,6 +450,9 @@
     },
     {
       "lemma": "אָשַׁר",
+      "bdb": [
+        "a.gj.aa"
+      ],
       "pos": "verb",
       "gloss": "go straight on; lead on; call happy",
       "stems": [
@@ -444,6 +461,7 @@
           "gloss": "go straight on, stride",
           "senses": [
             {
+              "id": "go-straight-on",
               "gloss": "go straight on",
               "definition": "Walk on in a way.",
               "evidence": [
@@ -452,6 +470,12 @@
                   "role": "defining",
                   "note": "וְאִשְׁרוּ בְּדֶרֶךְ בִּינָה: \"and go straight on in the way of understanding\"."
                 }
+              ],
+              "kin": [
+                "step"
+              ],
+              "cognate_ids": [
+                "uga-athr"
               ]
             }
           ]
@@ -461,6 +485,7 @@
           "gloss": "go on; lead on, guide; call happy",
           "senses": [
             {
+              "id": "go-on",
               "gloss": "go on, advance",
               "definition": "Walk on in a way, set beside \"go\" (בּוֹא).",
               "evidence": [
@@ -469,9 +494,13 @@
                   "role": "defining",
                   "note": "\"On the path of the wicked do not go, and do not walk on (אַל־תְּאַשֵּׁר) in the way of evil men\"."
                 }
+              ],
+              "kin": [
+                "step"
               ]
             },
             {
+              "id": "lead-on",
               "gloss": "lead on, guide",
               "definition": "Make someone, or one's heart, go on in a way; of leaders, to guide a people, rightly or astray.",
               "evidence": [
@@ -493,9 +522,13 @@
                   "ref": "Isa.1.17",
                   "note": "אַשְּׁרוּ חָמוֹץ, beside \"seek justice\": set right the oppressor, or lead on the oppressed; חָמוֹץ occurs only here."
                 }
+              ],
+              "kin": [
+                "step"
               ]
             },
             {
+              "id": "call-happy",
               "gloss": "call happy, count fortunate",
               "definition": "Say אַשְׁרֵי of someone: call them happy, praise their good fortune.",
               "evidence": [
@@ -527,6 +560,10 @@
                 {
                   "ref": "Sng.6.9"
                 }
+              ],
+              "kin": [
+                "happy-is",
+                "happiness"
               ]
             }
           ]
@@ -536,6 +573,7 @@
           "gloss": "be led; be made happy",
           "senses": [
             {
+              "id": "be-led",
               "gloss": "be led",
               "definition": "Be the ones guided.",
               "evidence": [
@@ -544,9 +582,13 @@
                   "role": "defining",
                   "note": "וּמְאֻשָּׁרָיו מְבֻלָּעִים: \"and those led by them are swallowed up\"."
                 }
+              ],
+              "kin": [
+                "step"
               ]
             },
             {
+              "id": "be-called-happy",
               "gloss": "be made happy, be called happy",
               "definition": "Be the one of whom אַשְׁרֵי is said.",
               "evidence": [
@@ -559,6 +601,10 @@
                   "ref": "Psa.41.3",
                   "note": "\"he will be called happy in the land\", after \"happy the one who considers the lowly\" (Psa 41:2)."
                 }
+              ],
+              "kin": [
+                "happy-is",
+                "happiness"
               ]
             }
           ]
@@ -623,8 +669,13 @@
     },
     {
       "lemma": "אֲשֻׁר",
+      "bdb": [
+        "a.gj.ad"
+      ],
       "cognate_ids": [
-        "ar-athar"
+        "akk-ashru",
+        "ar-athar",
+        "gez-asar"
       ],
       "pos": "noun",
       "gender": "f",
@@ -632,6 +683,7 @@
       "summary": "Always plural or with a pronoun (\"my steps\", \"his step\"), and only in poetry. BDB lists the same occurrences under the spellings אֲשׁוּר and אַשֻּׁר.",
       "senses": [
         {
+          "id": "step",
           "gloss": "step, footstep",
           "definition": "Where the foot goes, set beside \"feet\" and \"footsteps\": and so a person's course, which may keep to Yahweh's way or turn from it.",
           "evidence": [
@@ -671,6 +723,10 @@
             {
               "ref": "Psa.17.11"
             }
+          ],
+          "kin": [
+            "go-straight-on",
+            "go-on"
           ]
         }
       ],
@@ -728,6 +784,9 @@
     },
     {
       "lemma": "תְּאַשּׁוּר",
+      "bdb": [
+        "a.gj.ai"
+      ],
       "pos": "noun",
       "gender": "f",
       "gloss": "a tree of Lebanon (box tree?)",
@@ -757,12 +816,16 @@
     },
     {
       "lemma": "אֹשֶׁר",
+      "bdb": [
+        "a.gj.ac"
+      ],
       "pos": "noun",
       "gender": "m",
       "gloss": "happiness",
       "summary": "Found only once, in Leah's cry at Asher's birth.",
       "senses": [
         {
+          "id": "happiness",
           "gloss": "happiness",
           "definition": "Good fortune that others will call happy.",
           "evidence": [
@@ -771,12 +834,19 @@
               "role": "defining",
               "note": "בְּאָשְׁרִי: \"In my happiness!\", followed by the verb: \"the daughters will call me happy\"."
             }
+          ],
+          "kin": [
+            "happy-is",
+            "call-happy"
           ]
         }
       ]
     },
     {
       "lemma": "אֲתַר",
+      "bdb": [
+        "xa.bk.aa"
+      ],
       "lang": "arc",
       "root": "אתר",
       "pos": "noun",
@@ -815,7 +885,12 @@
             ]
           }
         ]
-      }
+      },
+      "cognate_ids": [
+        "akk-ashru",
+        "ar-athar",
+        "gez-asar"
+      ]
     },
     {
       "lemma": "אַתְרָא",
@@ -839,6 +914,11 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "akk-ashru",
+        "ar-athar",
+        "gez-asar"
       ]
     }
   ],
@@ -867,6 +947,7 @@
       }
     },
     {
+      "id": "gez-asar",
       "lang": "gez",
       "form": "አሠር",
       "translit": "ʾaśar",
@@ -883,6 +964,7 @@
       ]
     },
     {
+      "id": "akk-ashru",
       "lang": "akk",
       "form": "ašru",
       "translit": "ašru",
@@ -908,6 +990,7 @@
       ]
     },
     {
+      "id": "uga-athr",
       "lang": "uga",
       "form": "𐎀𐎘𐎗",
       "translit": "ʾṯr",
@@ -927,6 +1010,7 @@
       ]
     },
     {
+      "id": "phn-ash",
       "lang": "phn",
       "form": "𐤀𐤔",
       "translit": "ʾš",

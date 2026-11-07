@@ -15,6 +15,9 @@
   "words": [
     {
       "lemma": "אָמַר",
+      "bdb": [
+        "a.ea.aa"
+      ],
       "pos": "verb",
       "gloss": "say, speak",
       "stems": [
@@ -23,6 +26,7 @@
           "gloss": "say, speak; think; intend; command",
           "senses": [
             {
+              "id": "say",
               "gloss": "say, speak",
               "definition": "Utter words to someone, the words themselves usually quoted. This is the verb's commonest use, reporting speech throughout narrative, law and prophecy.",
               "evidence": [
@@ -106,6 +110,7 @@
               ]
             },
             {
+              "id": "command",
               "gloss": "command",
               "definition": "When the speaker has authority, what he says is an order; with an infinitive, to say that something be done.",
               "evidence": [
@@ -313,16 +318,25 @@
             ]
           }
         ]
-      }
+      },
+      "cognate_ids": [
+        "ar-amara",
+        "gez-amara",
+        "phn-amar"
+      ]
     },
     {
       "lemma": "אִמְרָה",
+      "bdb": [
+        "a.ea.ac"
+      ],
       "pos": "noun",
       "gender": "f",
       "gloss": "word, saying; (of Yahweh) word, promise",
       "summary": "Mostly poetic, and most often Yahweh's own word. BDB also lists the same occurrences under the spelling אֶמְרָה.",
       "senses": [
         {
+          "id": "word-saying",
           "gloss": "word, saying",
           "definition": "What someone says, set beside their voice or teaching.",
           "evidence": [
@@ -338,6 +352,9 @@
             {
               "ref": "Isa.28.23"
             }
+          ],
+          "kin": [
+            "say"
           ]
         },
         {
@@ -410,15 +427,24 @@
             ]
           }
         ]
-      }
+      },
+      "cognate_ids": [
+        "ar-amara",
+        "gez-amara",
+        "phn-amar"
+      ]
     },
     {
       "lemma": "אֹמֶר",
+      "bdb": [
+        "a.ea.ab"
+      ],
       "pos": "noun",
       "gender": "m",
       "gloss": "utterance, word, saying",
       "senses": [
         {
+          "id": "utterance",
           "gloss": "utterance, word",
           "definition": "What is said; in the plural, someone's words or sayings, often set beside other words for speech and instruction.",
           "evidence": [
@@ -439,6 +465,9 @@
             {
               "ref": "Psa.19.15"
             }
+          ],
+          "kin": [
+            "say"
           ]
         },
         {
@@ -500,16 +529,25 @@
             ]
           }
         ]
-      }
+      },
+      "cognate_ids": [
+        "ar-amara",
+        "gez-amara",
+        "phn-amar"
+      ]
     },
     {
       "lemma": "מַאֲמָר",
+      "bdb": [
+        "a.ea.ak"
+      ],
       "pos": "noun",
       "gender": "m",
       "gloss": "command, decree",
       "summary": "Found only in Esther, of the king's, Mordecai's and Esther's commands.",
       "senses": [
         {
+          "id": "decree",
           "gloss": "command, decree",
           "definition": "An order given by one with authority.",
           "evidence": [
@@ -525,17 +563,29 @@
               "ref": "Est.9.32",
               "note": "\"The decree of Esther confirmed these matters of Purim.\""
             }
+          ],
+          "kin": [
+            "command"
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-amara",
+        "gez-amara",
+        "phn-amar"
       ]
     },
     {
       "lemma": "אֲמַרְיָה",
+      "bdb": [
+        "a.ea.aj"
+      ],
       "pos": "name",
       "gloss": "Amariah",
       "summary": "A name built on the verb: \"Yah has said\". Also spelled אֲמַרְיָהוּ.",
       "senses": [
         {
+          "id": "amariah",
           "gloss": "Amariah, a name of several men",
           "definition": "Borne by several men, among them priests in the line of Aaron and a chief priest in Jehoshaphat's day.",
           "evidence": [
@@ -553,12 +603,18 @@
             {
               "ref": "Neh.10.4"
             }
+          ],
+          "kin": [
+            "say"
           ]
         }
       ]
     },
     {
       "lemma": "אֲמַר",
+      "bdb": [
+        "xa.at.aa"
+      ],
       "lang": "arc",
       "pos": "verb",
       "gloss": "say; tell; command",
@@ -569,6 +625,7 @@
           "gloss": "say; command",
           "senses": [
             {
+              "id": "aramaic-say",
               "gloss": "say",
               "definition": "Speak words to someone; with עֲנָה, answer and say.",
               "evidence": [
@@ -576,9 +633,13 @@
                   "ref": "Dan.2.5",
                   "note": "\"The king answered and said\" (עָנֵה ... וְאָמַר)."
                 }
+              ],
+              "kin": [
+                "say"
               ]
             },
             {
+              "id": "aramaic-command",
               "gloss": "command",
               "definition": "Say what is to be done: order it.",
               "evidence": [
@@ -586,10 +647,18 @@
                   "ref": "Dan.3.19",
                   "note": "\"He said to heat the furnace\": command."
                 }
+              ],
+              "kin": [
+                "command"
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-amara",
+        "gez-amara",
+        "phn-amar"
       ]
     },
     {
@@ -604,6 +673,7 @@
           "gloss": "say",
           "senses": [
             {
+              "id": "peshitta-say",
               "gloss": "say",
               "definition": "Speak; with \"in the heart\", say to oneself.",
               "evidence": [
@@ -615,15 +685,24 @@
                   "ref": "2Co.4.6",
                   "note": "Peshitta: \"God who said (דֵּאמַר)\"."
                 }
+              ],
+              "kin": [
+                "say"
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-amara",
+        "gez-amara",
+        "phn-amar"
       ]
     }
   ],
   "cognates": [
     {
+      "id": "phn-amar",
       "lang": "phn",
       "form": "𐤀𐤌𐤓",
       "translit": "ʾmr",
@@ -643,6 +722,7 @@
       ]
     },
     {
+      "id": "ar-amara",
       "lang": "ar",
       "form": "أَمَرَ",
       "translit": "ʾamara",
@@ -664,6 +744,7 @@
       ]
     },
     {
+      "id": "gez-amara",
       "lang": "gez",
       "form": "አመረ",
       "translit": "ʾammara",
@@ -685,6 +766,7 @@
       ]
     },
     {
+      "id": "akk-amaru",
       "lang": "akk",
       "form": "amāru",
       "translit": "amāru",
@@ -717,6 +799,7 @@
       ]
     },
     {
+      "id": "uga-amr",
       "lang": "uga",
       "form": "𐎀𐎎𐎗",
       "translit": "ʾmr",

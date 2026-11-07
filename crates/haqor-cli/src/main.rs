@@ -364,6 +364,17 @@ enum DbCommands {
         #[arg(short, long, default_value = "data/lexicon")]
         lexicon: PathBuf,
     },
+    /// Count each lexicon word's evidence: its uses in scripture, the verses
+    /// cited for it, the cognates sharing its meaning and those with another
+    /// (weighed double), and its kin senses in sibling words.
+    LexiconSupport {
+        /// The lexicon directory.
+        #[arg(short, long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+        /// Runtime database whose tokens count the uses.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+    },
     /// List the most frequent Old Testament roots, with the id of each
     /// root's Haqor lexicon entry where it has one: the order to write them in.
     LexiconRank {
@@ -830,6 +841,12 @@ fn main() -> Result<()> {
                 println!(
                     "Lexicon OK: {} entries ({} reviewed), {} words, {} senses, {} citations",
                     s.entries, s.reviewed, s.words, s.senses, s.citations
+                );
+            }
+            DbCommands::LexiconSupport { lexicon, db } => {
+                print!(
+                    "{}",
+                    haqor_core::haqor_lexicon::support_report_dir(&lexicon, &db)?
                 );
             }
             DbCommands::LexiconSplits { lexicon } => {

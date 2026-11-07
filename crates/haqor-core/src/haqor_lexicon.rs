@@ -10,7 +10,7 @@
 //! The types live here, not in the generator, so that the build, the app's
 //! review page and its reader all read one schema.
 
-use std::collections::{BTreeMap, BTreeSet, HashSet};
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
 use std::path::Path;
 
 use anyhow::{Context, Result, bail};
@@ -200,6 +200,10 @@ pub struct Word {
     /// (Aramaic דהב under Hebrew זהב).
     #[serde(default)]
     pub root: Option<String>,
+    /// The BDB keys (`a.ea.ab`) whose tokens in the text are this word, as
+    /// the brief lists them: how its uses in scripture are counted.
+    #[serde(default)]
+    pub bdb: Vec<String>,
     /// The entry's cognates whose sounds go with this word (see `Cognate::id`).
     #[serde(default)]
     pub cognate_ids: Vec<String>,
@@ -232,6 +236,10 @@ pub struct Stem {
 #[derive(Debug, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct Sense {
+    /// Kebab case, unique in the entry, so a sense of a sibling word can name
+    /// it in `kin`.
+    #[serde(default)]
+    pub id: Option<String>,
     pub gloss: String,
     pub definition: String,
     pub evidence: Vec<Citation>,
@@ -239,6 +247,10 @@ pub struct Sense {
     pub tags: Vec<String>,
     #[serde(default)]
     pub cognate_ids: Vec<String>,
+    /// The senses of the entry's other words (by `id`) that share this
+    /// sense's meaning, so their evidence supports it too.
+    #[serde(default)]
+    pub kin: Vec<String>,
     #[serde(default)]
     pub senses: Vec<Sense>,
 }
@@ -589,6 +601,10 @@ struct Checker<'a> {
     sources: HashSet<&'a str>,
     /// The `id`s of the cognates of the entry being checked.
     cognates: HashSet<String>,
+    /// The `id`s of the entry's senses, with the index of the word each is in.
+    sense_ids: HashMap<String, usize>,
+    /// The index of the word being checked.
+    word: usize,
     faults: Vec<String>,
     summary: LexiconSummary,
 }
@@ -679,6 +695,16 @@ impl Checker<'_> {
             self.text(&at, "definition", &sense.definition);
             self.tags(&at, &sense.tags);
             self.cognate_ids(&at, &sense.cognate_ids);
+            for kin in &sense.kin {
+                match self.sense_ids.get(kin) {
+                    None => self.fault(&at, format_args!("`kin` names no sense `{kin}` of the entry")),
+                    Some(&word) if word == self.word => self.fault(
+                        &at,
+                        format_args!("`kin` `{kin}` is a sense of the same word: kin are a sibling word's senses"),
+                    ),
+                    Some(_) => {}
+                }
+            }
             self.evidence(&at, &sense.evidence, Accepts::Scripture);
             self.senses(&at, &sense.senses);
         }
@@ -855,7 +881,27 @@ impl Checker<'_> {
             // the entry, not a cognate.
             self.evidence(&at, &cognate.evidence, Accepts::Source);
         }
+        self.sense_ids.clear();
         for (i, word) in entry.words.iter().enumerate() {
+            let mut ids = Vec::new();
+            sense_ids_of(word, &mut ids);
+            for id in ids {
+                if !is_kebab(id) {
+                    self.fault(
+                        &format!("{at}.words[{i}]"),
+                        format_args!("sense `id` `{id}` must be kebab case"),
+                    );
+                }
+                if self.sense_ids.insert(id.to_string(), i).is_some() {
+                    self.fault(
+                        &format!("{at}.words[{i}]"),
+                        format_args!("sense `id` `{id}` is used twice"),
+                    );
+                }
+            }
+        }
+        for (i, word) in entry.words.iter().enumerate() {
+            self.word = i;
             self.word(&format!("{at}.words[{i}]"), word);
         }
         for (i, doctrine) in entry.doctrine.iter().enumerate() {
@@ -880,6 +926,8 @@ pub fn check_lexicon(
         verses,
         sources: HashSet::new(),
         cognates: HashSet::new(),
+        sense_ids: HashMap::new(),
+        word: 0,
         faults: Vec::new(),
         summary: LexiconSummary::default(),
     };
@@ -930,7 +978,16 @@ pub fn check_lexicon(
 pub fn check_lexicon_dir(dir: &Path, db: &Path, src_texts: &Path) -> Result<LexiconSummary> {
     let lexicon = read_lexicon(dir)?;
     let db = Connection::open(db).with_context(|| format!("opening {}", db.display()))?;
-    check_lexicon(&lexicon, &verses_of(&db)?, Some(src_texts))
+    let summary = check_lexicon(&lexicon, &verses_of(&db)?, Some(src_texts))?;
+    let unknown = unknown_bdb_keys(&db, "", &lexicon)?;
+    if !unknown.is_empty() {
+        bail!(
+            "the lexicon has {} faults:\n  {}",
+            unknown.len(),
+            unknown.join("\n  ")
+        );
+    }
+    Ok(summary)
 }
 
 /// Where cognates show which older sound stands behind a merged letter of an
@@ -1043,6 +1100,532 @@ pub fn sound_splits_report(lexicon: &Lexicon) -> String {
         out.push_str("No entry yet names the sound behind a merged letter.\n");
     }
     out
+}
+
+/// Every sense `id` of a word, in its stems and nested senses.
+fn sense_ids_of<'a>(word: &'a Word, out: &mut Vec<&'a str>) {
+    fn walk<'a>(senses: &'a [Sense], out: &mut Vec<&'a str>) {
+        for sense in senses {
+            out.extend(sense.id.as_deref());
+            walk(&sense.senses, out);
+        }
+    }
+    walk(&word.senses, out);
+    for stem in &word.stems {
+        walk(&stem.senses, out);
+    }
+}
+
+/// Every sense of a word, in its stems and nested senses, with the cognate
+/// ids each inherits from its word and stem, and a label (`lemma stem: gloss`).
+fn senses_of(word: &Word) -> Vec<(String, &Sense, Vec<&str>)> {
+    fn walk<'a>(
+        label: &str,
+        senses: &'a [Sense],
+        inherited: &[&'a str],
+        out: &mut Vec<(String, &'a Sense, Vec<&'a str>)>,
+    ) {
+        for sense in senses {
+            let mut ids = inherited.to_vec();
+            ids.extend(sense.cognate_ids.iter().map(String::as_str));
+            out.push((format!("{label}: {}", sense.gloss), sense, ids.clone()));
+            walk(label, &sense.senses, &ids, out);
+        }
+    }
+    let mut out = Vec::new();
+    let ids: Vec<&str> = word.cognate_ids.iter().map(String::as_str).collect();
+    walk(&word.lemma, &word.senses, &ids, &mut out);
+    for stem in &word.stems {
+        let mut ids = ids.clone();
+        ids.extend(stem.cognate_ids.iter().map(String::as_str));
+        walk(
+            &format!("{} {}", word.lemma, stem.stem),
+            &stem.senses,
+            &ids,
+            &mut out,
+        );
+    }
+    out
+}
+
+/// A cognate language's name, by the schema's code.
+pub fn language_name(code: &str) -> &str {
+    match code {
+        "akk" => "Akkadian",
+        "uga" => "Ugaritic",
+        "phn" => "Phoenician",
+        "arc" => "Aramaic",
+        "syc" => "Syriac",
+        "ar" => "Arabic",
+        "gez" => "Ge'ez",
+        "sem" => "Semitic",
+        "grc" => "Greek",
+        "egy" => "Egyptian",
+        other => other,
+    }
+}
+
+/// Whether two root keys are one root, the weak ו and י aside (the
+/// morphology may spell a hollow root בוא where BDB has ביא).
+fn same_root(a: &str, b: &str) -> bool {
+    let strong = |s: &str| -> String {
+        crate::data_support::bare_letters(s)
+            .chars()
+            .filter(|c| *c != 'ו' && *c != 'י')
+            .collect()
+    };
+    strong(a) == strong(b)
+}
+
+/// The Old Testament tokens of BDB `key`, as `db lexicon-brief` counts them:
+/// leaving out tokens filed under it by spelling whose own analysis is a verb
+/// of another root BDB has verbs for. `schema` prefixes the runtime
+/// database's tables (`"data."` through a `Bible`, `""` opened directly).
+pub fn bdb_tokens(db: &Connection, schema: &str, key: &str, root: &str) -> rusqlite::Result<usize> {
+    const NT_START: i64 = 40 << 16;
+    let mut stmt = db.prepare_cached(&format!(
+        "SELECT coalesce(i.root, ''), coalesce(c.part_of_speech = 'Verb', 0), count(*) \
+         FROM {schema}surface_entry se \
+         JOIN {schema}word w ON w.surface_id = se.surface_id \
+         LEFT JOIN {schema}word_info i ON i.info_id = w.info_id \
+         LEFT JOIN {schema}morph_cell c ON c.cell_id = i.cell_id \
+         WHERE se.key = ?1 AND w.ref < ?2 GROUP BY 1, 2"
+    ))?;
+    let rows: Vec<(String, bool, usize)> = stmt
+        .query_map(rusqlite::params![key, NT_START], |r| {
+            Ok((r.get(0)?, r.get(1)?, r.get::<_, i64>(2)? as usize))
+        })?
+        .collect::<rusqlite::Result<_>>()?;
+    let mut verb_root = db.prepare_cached(&format!(
+        "SELECT EXISTS(SELECT 1 FROM {schema}lexicon_entry WHERE root = ?1 AND pos LIKE 'vb%')"
+    ))?;
+    let mut total = 0;
+    for (analysed, verb, n) in rows {
+        let elsewhere = verb
+            && !same_root(&analysed, root)
+            && verb_root.query_row([&analysed], |r| r.get::<_, bool>(0))?;
+        if !elsewhere {
+            total += n;
+        }
+    }
+    Ok(total)
+}
+
+/// The `bdb` keys the lexicon's words name that the runtime database has no
+/// entry for, as `entry: key`.
+pub fn unknown_bdb_keys(db: &Connection, schema: &str, lexicon: &Lexicon) -> Result<Vec<String>> {
+    let mut stmt = db.prepare(&format!(
+        "SELECT EXISTS(SELECT 1 FROM {schema}lexicon_entry WHERE key = ?1)"
+    ))?;
+    let mut unknown = Vec::new();
+    for entry in &lexicon.entries {
+        for word in &entry.words {
+            for key in &word.bdb {
+                if !stmt.query_row([key], |r| r.get::<_, bool>(0))? {
+                    unknown.push(format!(
+                        "{}: {} names no BDB key `{key}`",
+                        entry.id, word.lemma
+                    ));
+                }
+            }
+        }
+    }
+    Ok(unknown)
+}
+
+/// A sibling word's sense that shares a sense of the word (`Sense::kin`).
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize)]
+pub struct KinSupport {
+    /// The sibling's sense, `lemma stem: gloss`.
+    pub sense: String,
+    /// The sibling word's uses in scripture, where its `bdb` keys count them.
+    pub uses: Option<usize>,
+    /// Verses its sense cites, and how many of them fix the meaning.
+    pub cited: usize,
+    pub defining: usize,
+    /// Cognates sharing its meaning (`cognate`, or a loan into Hebrew).
+    pub cognates: usize,
+}
+
+/// The cognate evidence for a word or one of its senses, counted.
+#[derive(Debug, Clone, Default, PartialEq, Eq, serde::Serialize)]
+pub struct CognateCount {
+    /// The cognates it names (through `cognate_ids`, its own or inherited)
+    /// that share its meaning: `cognate`, or a loan into Hebrew. Each as
+    /// `Language form`.
+    pub sharing: Vec<String>,
+    /// How many languages those come from.
+    pub sharing_languages: usize,
+    /// The root's other cognates (`cognate`, from a Semitic language) that
+    /// neither it nor its kin name: the same root with another meaning,
+    /// evidence against its meaning being the root's. Each as
+    /// `Language form (gloss)`.
+    pub differing: Vec<String>,
+    pub differing_languages: usize,
+    /// Cognates it names only as `possible`.
+    pub possible: Vec<String>,
+    /// Languages sharing its meaning less twice those with another meaning:
+    /// opposing evidence weighs double.
+    pub balance: i64,
+}
+
+/// The evidence for one sense of a word, counted.
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize)]
+pub struct SenseSupport {
+    /// `lemma stem: gloss`.
+    pub sense: String,
+    /// Verses it cites, and how many of them fix its meaning.
+    pub cited: usize,
+    pub defining: usize,
+    pub cognates: CognateCount,
+    /// Sibling words' senses sharing its meaning.
+    pub kin: Vec<KinSupport>,
+}
+
+/// The evidence for one word of an entry, counted.
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize)]
+pub struct WordSupport {
+    pub lemma: String,
+    pub lang: Option<String>,
+    /// Its uses in scripture: the Old Testament tokens of its `bdb` keys.
+    /// `None` when it names none.
+    pub uses: Option<usize>,
+    /// The verses its senses cite, and how many of them fix a meaning
+    /// (`role: defining`).
+    pub cited: usize,
+    pub defining: usize,
+    /// Across its senses: the cognates sharing any sense's meaning, and those
+    /// with a meaning other than every sense's.
+    pub cognates: CognateCount,
+    /// Its senses' kin, each once.
+    pub kin: Vec<KinSupport>,
+    pub senses: Vec<SenseSupport>,
+}
+
+/// The entry's evidence for each of its words and their senses. `uses`
+/// counts a word's uses in scripture from its `bdb` keys (see `bdb_tokens`);
+/// it returns `None` when they cannot be counted.
+pub fn entry_support(entry: &Entry, uses: &dyn Fn(&Word) -> Option<usize>) -> Vec<WordSupport> {
+    let by_cognate_id: HashMap<&str, &Cognate> = entry
+        .cognates
+        .iter()
+        .filter_map(|c| Some((c.id.as_deref()?, c)))
+        .collect();
+    // A loan into Greek is scripture's use, not a cognate's.
+    let shares = |c: &Cognate| match c.relation {
+        Relation::Cognate => true,
+        Relation::Loan => c.lang != "grc",
+        Relation::Possible => false,
+    };
+    let verses = |senses: &[&Sense]| {
+        let mut cited = BTreeSet::new();
+        let mut defining = BTreeSet::new();
+        for sense in senses {
+            for citation in &sense.evidence {
+                if let Citation::Scripture(c) = citation {
+                    cited.insert(c.reference.as_str());
+                    if c.role == Role::Defining {
+                        defining.insert(c.reference.as_str());
+                    }
+                }
+            }
+        }
+        (cited.len(), defining.len())
+    };
+    // Count the cognates `named` names against the entry's: those sharing the
+    // meaning are `own`'s; those differing are all the rest of the root's.
+    let count =
+        |own: &BTreeSet<&str>, named: &BTreeSet<&str>, differs: &dyn Fn(&Cognate) -> bool| {
+            let mut out = CognateCount::default();
+            let mut sharing = BTreeSet::new();
+            let mut differing = BTreeSet::new();
+            for c in own.iter().filter_map(|id| by_cognate_id.get(id)) {
+                let name = format!("{} {}", language_name(&c.lang), c.form);
+                if shares(c) {
+                    sharing.insert(c.lang.as_str());
+                    out.sharing.push(name);
+                } else if c.relation == Relation::Possible {
+                    out.possible.push(name);
+                }
+            }
+            for c in &entry.cognates {
+                let is_named = c.id.as_deref().is_some_and(|id| named.contains(id));
+                if c.relation == Relation::Cognate
+                    && !LOAN_ONLY_LANGS.contains(&c.lang.as_str())
+                    && !is_named
+                    && differs(c)
+                {
+                    differing.insert(c.lang.as_str());
+                    out.differing.push(format!(
+                        "{} {} ({})",
+                        language_name(&c.lang),
+                        c.form,
+                        c.gloss
+                    ));
+                }
+            }
+            out.sharing_languages = sharing.len();
+            out.differing_languages = differing.len();
+            // Opposing evidence weighs double.
+            out.balance = sharing.len() as i64 - 2 * differing.len() as i64;
+            out
+        };
+    let words: Vec<Vec<(String, &Sense, Vec<&str>)>> = entry.words.iter().map(senses_of).collect();
+    let mut by_id: HashMap<&str, (usize, &str, &Sense, &[&str])> = HashMap::new();
+    for (w, senses) in words.iter().enumerate() {
+        for (label, sense, ids) in senses {
+            if let Some(id) = &sense.id {
+                by_id.insert(id.as_str(), (w, label.as_str(), *sense, ids.as_slice()));
+            }
+        }
+    }
+    entry
+        .words
+        .iter()
+        .zip(&words)
+        .map(|(word, senses)| {
+            let mut sense_supports = Vec::new();
+            let mut sense_named = Vec::new();
+            let mut all_own = BTreeSet::new();
+            let mut all_kin: Vec<KinSupport> = Vec::new();
+            for (label, sense, ids) in senses {
+                let own: BTreeSet<&str> = ids.iter().copied().collect();
+                let mut named = own.clone();
+                let mut kin = Vec::new();
+                for id in &sense.kin {
+                    let Some(&(w, kin_label, kin_sense, kin_ids)) = by_id.get(id.as_str()) else {
+                        continue;
+                    };
+                    named.extend(kin_ids.iter().copied());
+                    let (cited, defining) = verses(&[kin_sense]);
+                    let kin_ids: BTreeSet<&str> = kin_ids.iter().copied().collect();
+                    kin.push(KinSupport {
+                        sense: kin_label.to_string(),
+                        uses: uses(&entry.words[w]),
+                        cited,
+                        defining,
+                        cognates: kin_ids
+                            .iter()
+                            .filter_map(|id| by_cognate_id.get(id))
+                            .filter(|c| shares(c))
+                            .count(),
+                    });
+                }
+                let (cited, defining) = verses(&[*sense]);
+                sense_supports.push(SenseSupport {
+                    sense: label.clone(),
+                    cited,
+                    defining,
+                    cognates: count(&own, &named, &|_| true),
+                    kin: kin.clone(),
+                });
+                all_own.extend(own);
+                for k in kin {
+                    if !all_kin.iter().any(|seen| seen.sense == k.sense) {
+                        all_kin.push(k);
+                    }
+                }
+                sense_named.push(named);
+            }
+            // A cognate counts against the word only when its meaning is
+            // none of the word's senses'.
+            let differs_from_all = |c: &Cognate| {
+                sense_named
+                    .iter()
+                    .all(|named| c.id.as_deref().is_none_or(|id| !named.contains(id)))
+            };
+            let cognates = count(&all_own, &BTreeSet::new(), &differs_from_all);
+            let all_senses: Vec<&Sense> = senses.iter().map(|(_, s, _)| *s).collect();
+            let (cited, defining) = verses(&all_senses);
+            WordSupport {
+                lemma: word.lemma.clone(),
+                lang: word.lang.clone(),
+                uses: uses(word),
+                cited,
+                defining,
+                cognates,
+                kin: all_kin,
+                senses: sense_supports,
+            }
+        })
+        .collect()
+}
+
+/// The `uses` for `entry_support` from the runtime database: the tokens of a
+/// word's `bdb` keys, `None` when it names none.
+pub fn bdb_uses<'a>(
+    db: &'a Connection,
+    schema: &'a str,
+    entry: &'a Entry,
+) -> impl Fn(&Word) -> Option<usize> + 'a {
+    move |word: &Word| {
+        if word.bdb.is_empty() {
+            return None;
+        }
+        let root = word.root.as_deref().unwrap_or(&entry.root);
+        word.bdb
+            .iter()
+            .map(|key| bdb_tokens(db, schema, key, root).ok())
+            .sum()
+    }
+}
+
+/// `db lexicon-support`: each entry's words, and where their senses differ,
+/// their senses, with the evidence counted; and the cognates no word names.
+pub fn support_report(lexicon: &Lexicon, db: &Connection, schema: &str) -> String {
+    use std::fmt::Write;
+    fn listed(items: &[String], languages: usize) -> String {
+        if items.is_empty() {
+            return "0".to_string();
+        }
+        format!(
+            "{} in {languages} language{}: {}",
+            items.len(),
+            if languages == 1 { "" } else { "s" },
+            items.join(", ")
+        )
+    }
+    fn kin(kin: &[KinSupport]) -> String {
+        if kin.is_empty() {
+            return "–".to_string();
+        }
+        kin.iter()
+            .map(|k| {
+                format!(
+                    "{} ({} uses, {} cited ({} defining), {} cognates)",
+                    k.sense,
+                    k.uses.map_or("–".to_string(), |n| n.to_string()),
+                    k.cited,
+                    k.defining,
+                    k.cognates
+                )
+            })
+            .collect::<Vec<_>>()
+            .join("; ")
+    }
+    let row = |out: &mut String,
+               name: &str,
+               uses: &str,
+               cited: usize,
+               defining: usize,
+               c: &CognateCount,
+               k: &[KinSupport]| {
+        let possible = if c.possible.is_empty() {
+            "0".to_string()
+        } else {
+            format!("{}: {}", c.possible.len(), c.possible.join(", "))
+        };
+        let _ = writeln!(
+            out,
+            "| {name} | {uses} | {cited} ({defining}) | {} | {} | {} | {possible} | {} |",
+            listed(&c.sharing, c.sharing_languages),
+            listed(&c.differing, c.differing_languages),
+            c.balance,
+            kin(k)
+        );
+    };
+    let mut out = String::new();
+    out.push_str(
+        "Uses: the word's Old Testament tokens (its `bdb` keys). Balance: languages \
+         with cognates sharing the meaning, less twice the languages with cognates of \
+         another meaning (opposing evidence weighs double). A word's cognates of \
+         another meaning are those that share none of its senses' meanings; its \
+         senses are listed under it where they differ.\n\n",
+    );
+    for entry in &lexicon.entries {
+        let _ = writeln!(out, "## {} `{}`\n", entry.root, entry.id);
+        let _ = writeln!(
+            out,
+            "| Word | Uses | Verses cited (defining) | Cognates sharing its meaning | Cognates with another meaning | Balance | Possible | Kin senses |"
+        );
+        let _ = writeln!(out, "|---|---|---|---|---|---|---|---|");
+        let uses = bdb_uses(db, schema, entry);
+        for s in entry_support(entry, &uses) {
+            let lang = s
+                .lang
+                .as_deref()
+                .map(|l| format!(" ({l})"))
+                .unwrap_or_default();
+            let n = s.uses.map_or("–".to_string(), |n| n.to_string());
+            row(
+                &mut out,
+                &format!("**{}**{lang}", s.lemma),
+                &n,
+                s.cited,
+                s.defining,
+                &s.cognates,
+                &s.kin,
+            );
+            let differ = s
+                .senses
+                .windows(2)
+                .any(|w| w[0].cognates != w[1].cognates || w[0].kin != w[1].kin);
+            if differ {
+                for sense in &s.senses {
+                    let gloss = sense
+                        .sense
+                        .rsplit_once(": ")
+                        .map_or(sense.sense.as_str(), |(_, gloss)| gloss);
+                    let stem = sense
+                        .sense
+                        .strip_prefix(&s.lemma)
+                        .and_then(|rest| rest.split_once(':'))
+                        .map(|(stem, _)| stem.trim())
+                        .filter(|stem| !stem.is_empty())
+                        .map(|stem| format!("{stem}: "))
+                        .unwrap_or_default();
+                    row(
+                        &mut out,
+                        &format!("↳ {stem}{gloss}"),
+                        "",
+                        sense.cited,
+                        sense.defining,
+                        &sense.cognates,
+                        &sense.kin,
+                    );
+                }
+            }
+        }
+        let named: BTreeSet<&str> = entry
+            .words
+            .iter()
+            .flat_map(|w| {
+                senses_of(w)
+                    .into_iter()
+                    .flat_map(|(_, _, ids)| ids)
+                    .collect::<Vec<_>>()
+            })
+            .chain(entry.words.iter().flat_map(|w| {
+                w.cognate_ids
+                    .iter()
+                    .chain(w.stems.iter().flat_map(|s| &s.cognate_ids))
+                    .map(String::as_str)
+            }))
+            .collect();
+        let unnamed: Vec<String> = entry
+            .cognates
+            .iter()
+            .filter(|c| c.id.as_deref().is_none_or(|id| !named.contains(id)))
+            .map(|c| format!("{} {}", language_name(&c.lang), c.form))
+            .collect();
+        if !unnamed.is_empty() {
+            let _ = writeln!(
+                out,
+                "\nCognates no word names (give them an `id` and name them in `cognate_ids`): {}",
+                unnamed.join(", ")
+            );
+        }
+        out.push('\n');
+    }
+    out
+}
+
+/// `db lexicon-support` on the lexicon in `dir`, counting uses in the
+/// runtime database at `db`.
+pub fn support_report_dir(dir: &Path, db: &Path) -> Result<String> {
+    let lexicon = read_lexicon(dir)?;
+    let db = Connection::open(db).with_context(|| format!("opening {}", db.display()))?;
+    Ok(support_report(&lexicon, &db, ""))
 }
 
 #[cfg(test)]
@@ -1300,6 +1883,76 @@ mod tests {
             "evidence": [{ "source": "lane", "locator": "p. 1995" }]
         }]
     }"#;
+
+    #[test]
+    fn kin_names_a_sibling_words_sense() {
+        let with_kin = |kin: &str| {
+            EREV.replace(
+                r#""gloss": "evening",
+                "definition""#,
+                &format!(
+                    r#""gloss": "evening",
+                "kin": ["{kin}"],
+                "definition""#
+                ),
+            )
+            .replace(
+                r#""gloss": "pledge","#,
+                r#""id": "pledge", "gloss": "pledge","#,
+            )
+        };
+        check(&with_kin("pledge")).unwrap();
+        let error = check(&with_kin("dusk")).unwrap_err().to_string();
+        assert!(error.contains("`kin` names no sense `dusk`"), "{error}");
+        let same = with_kin("evening").replace(
+            r#""gloss": "evening",
+                "kin""#,
+            r#""id": "evening", "gloss": "evening",
+                "kin""#,
+        );
+        let error = check(&same).unwrap_err().to_string();
+        assert!(error.contains("is a sense of the same word"), "{error}");
+    }
+
+    #[test]
+    fn a_cognate_of_another_meaning_counts_double() {
+        let entry: Entry = serde_json::from_str(EREV).unwrap();
+        let support = entry_support(&entry, &|word| (word.lemma == "עֶרֶב").then_some(134));
+        let evening = &support[0];
+        assert_eq!(evening.uses, Some(134));
+        assert_eq!((evening.cited, evening.defining), (1, 0));
+        assert_eq!(evening.cognates.sharing, ["Arabic غرب"]);
+        assert_eq!(evening.cognates.differing, ["Arabic عربون (earnest money)"]);
+        // One language for, one against: the one against counts twice.
+        assert_eq!(evening.cognates.balance, -1);
+        // The Aramaic "be mixed" shares neither cognate's meaning.
+        assert_eq!(support[2].cognates.differing_languages, 1);
+        assert_eq!(support[2].cognates.balance, -2);
+    }
+
+    #[test]
+    fn a_kin_senses_cognates_do_not_count_against_it() {
+        let json = EREV
+            .replace(
+                r#""gloss": "be mixed",
+                    "definition""#,
+                r#""gloss": "be mixed",
+                    "kin": ["pledge"],
+                    "definition""#,
+            )
+            .replace(
+                r#""gloss": "pledge","#,
+                r#""id": "pledge", "gloss": "pledge","#,
+            );
+        let entry: Entry = serde_json::from_str(&json).unwrap();
+        let support = entry_support(&entry, &|_| None);
+        let mixed = &support[2];
+        assert_eq!(mixed.kin.len(), 1);
+        assert_eq!(mixed.kin[0].sense, "עָרַב qal: pledge");
+        assert_eq!(mixed.kin[0].cognates, 1);
+        // عربون goes with its kin; only غرب has another meaning.
+        assert_eq!(mixed.cognates.differing, ["Arabic غرب (set (of the sun))"]);
+    }
 
     #[test]
     fn accepts_aramaic_words_and_sounds() {
