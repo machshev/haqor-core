@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-5
-(7,650 of 7,958 Peshitta verses; 308 remain). Revelation 6 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-6
+(7,667 of 7,958 Peshitta verses; 291 remain). Revelation 7 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6129,3 +6129,73 @@ Source checks for Revelation 5:
   speaking to the Lamb is not imported. In 5:14 the creatures' saying is
   participial, while the elders' falling and worshiping are perfect. No
   additional twenty-four count or living-forever phrase is supplied there.
+
+Source checks for Revelation 6:
+
+- Reviewed all 17 verses and 268 source positions against exact forms,
+  vocalization, complete gloss alternatives, numeric morphology, suffix
+  roles, and running English. Short contiguous grammatical constructions
+  render ordinals, passives, possession, and reciprocal objects. Narrative
+  descriptions use contextual past English without relabeling participles
+  as perfect forms. The fig-tree comparison retains generic present time.
+- In 6:1 the Lamb is the subject of the opening verb, not its object. In 6:2
+  both hearing and seeing remain, as do the three separate expressions for
+  being victorious, conquering, and the purpose of conquering. The recipient
+  passives “he was given” preserve the rider's receiving role. In 6:4 the
+  source has no “another” adjective for the red horse, and the reciprocal
+  killing clause remains separate from taking peace from the earth.
+- The third seal's opening in 6:5 is passive. The commands in 6:3, 6:5, and
+  6:7 are only “Come,” without an additional seeing command. There is no
+  extra “I looked” before the black horse in 6:5. The fourth-seal sentence
+  in 6:7 does not repeat “fourth” for its living creature. In 6:6 no “four”
+  modifies the creatures, wine precedes oil, and the prohibition addresses
+  both. The grain unit is the source's cab measure, not an assumed Greek
+  choenix or a modern volume conversion; the price remains a denarius.
+- Revelation 6:8 has no “behold” word. The pale horse's rider is Death,
+  with Sheol following him. Authority is given to a singular recipient over
+  a fourth part of the earth. The final beast/animal is singular and has no
+  additional “ravenous” adjective. Anticipatory possessives in the rider's
+  name and the earth's fourth part are rendered as ordinary English genitives.
+- In 6:9 the testimony is “of Jesus,” rather than the reference's “to the
+  Lamb.” The final relative is past possession, “which they had.” In 6:10
+  the actual form *daman* is interpreted as the blood noun with first-plural
+  possession, “our blood,” despite the export's homographic MN “who” lemma
+  and absent suffix annotation. The blood-avenging syntax and the following
+  “from/upon the earth's inhabitants” support that reading. The
+  [CAL blood entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=dm+N)
+  confirms the DM noun; it does not itself disambiguate this inflected
+  occurrence. The raw annotation remains unchanged, and the interpretation
+  is documented rather than silently treating the machine gloss as authority.
+  The past possessive dative in 6:9 is idiomatic English “they had.” In
+  6:10 the blood-recompense construction uses Syriac “from” for those
+  answerable for the blood; English “avenge ... upon” preserves that role.
+  The [CAL demand/avenge entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=tb%28+V)
+  documents the vengeance sense and its blood/source constructions.
+  The judging/avenging participles form an ongoing appeal rendered with
+  prospective English “will you not,” not past acts.
+- Revelation 6:11 retains the distributive white robe, the instruction to
+  rest, both time nouns, and the fellow servants and brothers with their
+  possessives. The completion verb is nominalized as “completion is reached
+  also for ...,” preserving the people whose completion is in view while
+  keeping separate word owners. No explicit “number” noun is invented.
+  The final killing comparison supplies English ellipsis “they too were”
+  for the earlier martyrs, retaining the source's additional “also.”
+- In 6:12 the hair-sackcloth comparison precedes the sun's becoming black;
+  the earthquake, blackness, and whole moon's blood comparison each retain
+  their own copular/result construction. In 6:13 the fig tree casts its own
+  unripe figs because of the strong wind when shaken; the causal wind phrase
+  remains before the temporal clause. Revelation 6:14 has plural writings/
+  scrolls and a plural rolling verb. Its first separating verb is tagged
+  singular with the plural-shaped heavens; English uses plural concord.
+  Every mountain and every island remain, with the collective/distributive
+  “their place” before the movement verb.
+- Revelation 6:15 preserves the coordinated ranks and the free-person idiom.
+  “Armies” applies the military sense of *hayla* in context; the
+  [CAL army/force entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=xyl+N)
+  supports that sense beyond the export's power/strength glosses. The hiding
+  verb and selves form a reflexive English expression; rocks are not replaced
+  by an unsourced cleft noun. In 6:16 only the face of the Lamb is named:
+  no throne-occupant or wrath phrase is imported from the longer reference.
+  The unmarked English imperative “hide” does not require choosing between
+  the export's singular tag and its plural addressees. Revelation 6:17 keeps
+  the plural possessor “their wrath” and the question about ability to stand.
