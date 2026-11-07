@@ -421,6 +421,19 @@ enum DbCommands {
         #[arg(short, long, default_value = "src_texts")]
         src_texts: PathBuf,
     },
+    /// Rebuild the Haqor lexicon tables of a runtime haqor.db in place from
+    /// `data/lexicon`, checking it first (gen-runtime also builds them).
+    GenHaqorLexicon {
+        /// Runtime database to update.
+        #[arg(short, long, default_value = "data/haqor.db")]
+        db: PathBuf,
+        /// The lexicon's directory.
+        #[arg(long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+        /// Source texts directory, for the sources' local copies.
+        #[arg(short, long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     /// Rebuild the book outlines of a runtime haqor.db in place from
     /// `data/outlines.json`.
     GenOutlines {
@@ -891,6 +904,14 @@ fn main() -> Result<()> {
                     summary.passages,
                     db.display()
                 );
+            }
+            DbCommands::GenHaqorLexicon {
+                db,
+                lexicon,
+                src_texts,
+            } => {
+                let entries = haqor_db_gen::gen_haqor_lexicon(&db, &lexicon, &src_texts)?;
+                println!("Wrote {entries} Haqor lexicon entries to {}", db.display());
             }
             DbCommands::GenOutlines {
                 db,

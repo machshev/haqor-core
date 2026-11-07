@@ -4125,19 +4125,7 @@ impl Bible {
         word: &str,
         prefix: &str,
     ) -> rusqlite::Result<Vec<BdbEntry>> {
-        // The prefix may store its points in another order than the word does
-        // (dagesh before sheva), so compare them in one order.
-        let (word, prefix) = (
-            normalize_hebrew_combining(word),
-            normalize_hebrew_combining(prefix),
-        );
-        let target = if prefix.is_empty() {
-            word.clone()
-        } else {
-            strip_proclitic(&word, &prefix)
-                .or_else(|| strip_proclitic_letters(&word, &prefix))
-                .unwrap_or_else(|| word.clone())
-        };
+        let target = surface_target(word, prefix);
         let cons = fold_consonants(&target);
         if cons.is_empty() {
             return Ok(Vec::new());
@@ -4185,6 +4173,73 @@ impl Bible {
             })
             .filter(BdbEntry::has_content)
             .collect())
+    }
+
+    /// The Haqor lexicon entry (ADR 7) for a word, as its id and JSON: the
+    /// entry whose root, or one of whose words' roots, is `root`, or which
+    /// holds a BDB entry of `root`'s tree; for a rootless word (`root` empty)
+    /// the one holding a BDB entry spelled like `word` with its `prefix` cut
+    /// off, as [`Self::hebrew_bdb_for_surface`] finds them. `None` where
+    /// Haqor has no entry, or the database was built without the lexicon.
+    pub fn haqor_lexicon_entry(
+        &self,
+        root: &str,
+        word: &str,
+        prefix: &str,
+    ) -> rusqlite::Result<Option<(String, String)>> {
+        if !self.has_table("haqor_lexicon")? {
+            return Ok(None);
+        }
+        let entry = |id: Option<String>| -> rusqlite::Result<Option<(String, String)>> {
+            let Some(id) = id else { return Ok(None) };
+            self.db
+                .query_row(
+                    "SELECT id, json FROM data.haqor_lexicon WHERE id = ?1",
+                    [&id],
+                    |row| Ok((row.get(0)?, row.get(1)?)),
+                )
+                .optional()
+        };
+        let root = fold_consonants(root);
+        if !root.is_empty() {
+            let by_root = self
+                .db
+                .query_row(
+                    "SELECT id FROM data.haqor_lexicon_root WHERE root = ?1 ORDER BY id LIMIT 1",
+                    [&root],
+                    |row| row.get(0),
+                )
+                .optional()?;
+            if by_root.is_some() {
+                return entry(by_root);
+            }
+            return entry(
+                self.db
+                    .query_row(
+                        "SELECT h.id FROM data.haqor_lexicon_bdb h \
+                         JOIN entry_root er ON er.key = h.key \
+                         WHERE er.root = ?1 ORDER BY er.ord LIMIT 1",
+                        [&root],
+                        |row| row.get(0),
+                    )
+                    .optional()?,
+            );
+        }
+        let cons = fold_consonants(&surface_target(word, prefix));
+        if cons.is_empty() {
+            return Ok(None);
+        }
+        entry(
+            self.db
+                .query_row(
+                    "SELECT h.id FROM data.haqor_lexicon_bdb h \
+                     JOIN lexicon_entry b ON b.key = h.key \
+                     WHERE b.cons = ?1 ORDER BY b.key LIMIT 1",
+                    [&cons],
+                    |row| row.get(0),
+                )
+                .optional()?,
+        )
     }
 
     /// [`Self::hebrew_bdb_by_root`] for a SEDRA root, the Hebrew cognates of a
@@ -8438,6 +8493,31 @@ mod tests {
     /// The outlines come back whole: the Psalms in their five books, each
     /// psalm taking in its title, with its author.
     #[test]
+    fn haqor_lexicon_entries_found_by_root_and_particle() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        if !bible.has_table("haqor_lexicon").unwrap() {
+            eprintln!("skipping: data/haqor.db has no Haqor lexicon tables");
+            return;
+        }
+        let id = |root: &str, word: &str, prefix: &str| {
+            bible
+                .haqor_lexicon_entry(root, word, prefix)
+                .unwrap()
+                .map(|(id, _)| id)
+        };
+        // By the entry's root, and by an Aramaic word's own root.
+        assert_eq!(id("אמר", "", "").as_deref(), Some("amar"));
+        assert_eq!(id("אתר", "", "").as_deref(), Some("ashar"));
+        // The rootless particle, through its BDB key, prefix and all.
+        assert_eq!(id("", "אֲשֶׁר", "").as_deref(), Some("ashar"));
+        assert_eq!(id("", "כַּאֲשֶׁר", "כַּ").as_deref(), Some("ashar"));
+        // No entry yet.
+        assert_eq!(id("ברא", "", ""), None);
+        assert_eq!(id("", "אֶל", ""), None);
+    }
+
+    #[test]
     fn outlines_read_whole() {
         require_data!();
         let bible = Bible::open(data_dir()).unwrap();
@@ -11104,5 +11184,22 @@ mod tests {
             entries.iter().any(|e| !e.content_json.is_empty()),
             "the Lexicon tab needs definition content"
         );
+    }
+}
+
+/// The word a rootless lookup is spelled as: `word` with its stored proclitic
+/// `prefix` cut off. The prefix may store its points in another order than the
+/// word does (dagesh before sheva), so both are compared in one order.
+fn surface_target(word: &str, prefix: &str) -> String {
+    let (word, prefix) = (
+        normalize_hebrew_combining(word),
+        normalize_hebrew_combining(prefix),
+    );
+    if prefix.is_empty() {
+        word
+    } else {
+        strip_proclitic(&word, &prefix)
+            .or_else(|| strip_proclitic_letters(&word, &prefix))
+            .unwrap_or(word)
     }
 }

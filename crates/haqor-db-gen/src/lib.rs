@@ -50,7 +50,8 @@ pub use cognates::{Lang as CognateLang, cognate_keys};
 pub use events::{EVENT_OVERRIDES, EventsSummary};
 pub use haqor_core::normalize_surface;
 pub use haqor_lexicon::{
-    LEXICON_DIR, Lexicon, LexiconSummary, check_lexicon, check_lexicon_dir, read_lexicon,
+    LEXICON_DIR, Lexicon, LexiconSummary, build_haqor_lexicon, check_lexicon, check_lexicon_dir,
+    gen_haqor_lexicon, read_lexicon,
 };
 pub use harness::{eval_from_db, parse_eval};
 pub use hebrew_db::{

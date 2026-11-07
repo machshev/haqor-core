@@ -427,6 +427,12 @@ pub fn generate_runtime(
         &data_dir.join(crate::outlines::OUTLINES),
         src_texts,
     )?;
+    // After the verses and the BDB entries it is checked against.
+    crate::haqor_lexicon::build_haqor_lexicon(
+        &Connection::open(output)?,
+        &data_dir.join(crate::haqor_lexicon::LEXICON_DIR),
+        src_texts,
+    )?;
 
     // VACUUM cannot run on an attached database, so the reclaim happens on the
     // finished file. It matters: the bulk load leaves the free pages that make
