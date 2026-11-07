@@ -75,6 +75,15 @@ its picture, it would have changed when the picture did. Benner's chart
 reflects the forms that became standard, which were a convention that
 emerged, not one fixed from the start.
 
+The pictures themselves are read differently by those who read them most
+closely. Douglas Petrovich's chart, which matches each letter to an Egyptian
+hieroglyph (see [the alphabet's origin](alphabet-origin.md)), takes ש from
+the sign for breasts (שָׁדַיִם), not teeth, ז from the eyebrow and זֵעָה
+"sweat", not a cutting tool, and ט from the Egyptian sign for "good" (טוֹב).
+Two careful readings of the same pictures that disagree on what several of
+them show cannot both be the source of their letters' meanings; on both,
+what stays fixed is the sound.
+
 ### One letter covers several older sounds
 
 The 22 letters cover about 29 older consonants. So in some roots ע stands for

@@ -57,7 +57,7 @@ the Proto-Consonantal Script* (Carta, 2016), argues that:
 - each letter can be matched to a particular Egyptian hieroglyph, its sound
   taken from the first consonant of the Hebrew word for the thing pictured;
 - some inscriptions name people known from scripture: he reads the names
-  Asenath, Ahisemach (as Science News spells it) and Moses.
+  Asenath, Ahisamach and Moses.
 
 The project takes this as its working account. The case rests on the
 inscriptions themselves, and the evidence is weighed below, not counted by
@@ -84,18 +84,55 @@ lingered. Moses then provoked astonishment. It is a year of astonishment."
 Petrovich counts **22 letters from the start, not 27**. Earlier charts
 (Albright's among them) gave the early script 27 signs, some for sounds Hebrew
 writes with one letter. Petrovich takes the extra signs as forms of the 22,
-and gives each letter one Middle Egyptian hieroglyph as its exemplar and one
-Hebrew word as its acrophone. His full chart is Figure 1 of the book. The rows
-below are the five shown in the figure Science News published from it
-(19 November 2016); the rest are to be added from the book.
+and gives each letter a Middle Egyptian hieroglyph as its exemplar and a
+Hebrew word as its acrophone. His chart, *Hebrew Consonantals* (© 2015), is
+[published by the Ancient Hebrew Research Center](https://www.ancient-hebrew.org/alphabet/files/hebrew-alphabet-evolution-petrovich-chart.pdf).
+It also draws each letter as written in the Middle Kingdom (about 1842–1760
+BC), the New Kingdom (about 1560–1307 BC) and Iron Age Canaan (about
+1150–587 BC), with the inscriptions each form comes from.
 
-| Letter | Picture | Middle Egyptian exemplar |
-|---|---|---|
-| א | ox head with horns | the ox head (Gardiner F1) |
-| ג | an angle, a bent stroke | an angle of the same shape |
-| ה | a man with both arms raised | a man with raised arms (A28) |
-| מ | a wavy line, water | the water ripple (N35) |
-| ע | an eye | the eye (D4) |
+| Letter | Exemplar (Gardiner) | Acrophone | Meaning | NIVEC |
+|---|---|---|---|---|
+| א | ox head (F1) | אֶלֶף *ʾelef* | cattle | 477 |
+| ב | house plan (O1), reed shelter (O4) | בַּיִת *bayit* | house | 1074 |
+| ג | corner of a wall (O38) | גָּהַר *gāhar* | bend | 1566 |
+| ד | door (O31) | דֶּלֶת *delet* | door | 1946 |
+| ה | man with raised arms (A28) | הָלַל *hālal* | praise | 2146 |
+| ו | support pole (O30) | וָו *wāw* | pillar, support | 2260 |
+| ז | eyebrow (D13) | זֵעָה *zēʿāh* | sweat (of the brows) | 2399 |
+| ח | enclosure (O6); twisted wick (V28) | חָצֵר *ḥāṣēr*; חוּט *ḥûṭ* | enclosure; thread | 2958; 2562 |
+| ט | heart and windpipe (F35) | טוֹב *ṭôv* | good | 3201 |
+| י | arm (D36), hand (D47) | יָד *yād* | hand | 3338 |
+| כ | raised arms (D28) | כַּף *kap* | palm | 4090 |
+| ל | crook (S39) | לָמַד *lāmad* | teach | 4340, 4913 |
+| מ | water ripple (N35) | מַיִם *mayim* | water | 4784 |
+| נ | horned viper (I9), cobra (I10) | נָחָשׁ *nāḥāš* | snake | 5729 |
+| ס | hair (D3); fish (K5) | שֵׂעָר *śēʿār*; סָרַח *sāraḥ* | hair; stink | 8482; 6244 |
+| ע | eye (D4) | עַיִן *ʿayin* | eye | 6523 |
+| פ | mouth (D21) | פֶּה *peh* | mouth | 7023 |
+| צ | linen bag (V33) | צְרוֹר *ṣǝrôr* | sack | 7655 |
+| ק | V25 | קוּר *qûr* | spun fibre | 7770 |
+| ר | head (D1) | רֹאשׁ *roʾš* | head | 8031 |
+| ש | breasts (D27) | שָׁדַיִם *šādayim* | breasts | 8716 |
+| ת | flower (M42) | תַּיִשׁ *tayiš* | male goat | 9411 |
+
+The exemplars, sign numbers, acrophones and NIVEC numbers are Petrovich's;
+the short descriptions of the Egyptian signs are added here. His chart draws
+no Middle Kingdom form for ט, צ or ש: their earliest forms are from the New
+Kingdom.
+
+Two things in the chart bear on the lexicon:
+
+- **ח and ס each have two exemplars, and the two acrophones begin with two
+  different older sounds.** חָצֵר "enclosure" has ḥ, while חוּט "thread" has
+  ḫ (Arabic خيط *ḫayṭ*). שֵׂעָר "hair" has ś, while סָרַח has s. The chart
+  does not say so, but the first writers appear to have had a sign for each
+  sound of a pair that the 22 letters later write with one letter. This is
+  the same merger the lexicon's `sounds` record (see the table under
+  "One letter, several older sounds").
+- **Some acrophones come from what the Egyptian sign meant, not from what it
+  pictured.** F35 is the Egyptian *nfr* "good", and ט is טוֹב "good". The
+  letter is still made by acrophony, from the first sound of a Hebrew word.
 
 The letters lost their pictures over the centuries: Petrovich traces this as
 their "residual pictographic value", less in each period from the Middle
