@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-3
-(7,625 of 7,958 Peshitta verses; 333 remain). Revelation 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-4
+(7,636 of 7,958 Peshitta verses; 322 remain). Revelation 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6014,3 +6014,59 @@ Source checks for Revelation 3:
   In 3:20 perfect “I have stood” precedes future “I will knock”; no “to
   him” is added after entering. In 3:21 overcoming and sitting with the
   Father are perfect, and the two throne possessors remain distinct.
+
+Source checks for Revelation 4:
+
+- Reviewed all 11 verses and 209 source positions against exact forms,
+  vocalization, all gloss alternatives, numeric morphology, source roles,
+  and continuous English. Short contiguous constructions render numbers,
+  possession, and grammatical subject placement; no long source clause is
+  collapsed into a single link. Spatial anticipatory suffixes before an
+  explicit throne noun are absorbed into natural English rather than
+  duplicated as “around it of the throne.”
+- Revelation 4:1 has no “first” adjective for the voice. “Spoke” is perfect,
+  and the quoted voice, rather than the seer, promises “I will show you.”
+  The final passive “is given” and infinitive “to take place” preserve the
+  supplied construction rather than importing an unsourced necessity verb.
+  Narrative copulas and participial descriptions are rendered in the past
+  where they describe the vision introduced by “I saw” and “I was”; this is
+  a contextual temporal choice, not a claim that participles are perfect.
+- Revelation 4:3 retains the distinct form, appearance, stone, jasper,
+  sardius, cloud-rainbow, throne, and emerald expressions. English supplies
+  copulas for the nominal predicates. In 4:4 both twenty-four counts remain,
+  along with the elders, white garments, their heads, and crowns of gold.
+- In 4:5 the first throne noun is plural, while the later throne is singular.
+  The source order is thunders, lightnings, and voices. The seven lights are
+  burning, with no separate “fire” noun supplied. The final relative
+  identifies the lights as the seven Spirits of God. In 4:6 the sea and
+  glass are distinct words. The eyes' spatial phrases refer to the creatures'
+  front and rear; their suffixes do not introduce other participants.
+- Revelation 4:7 uses the ordinary numerical ordinal idiom for the second,
+  third, and fourth creatures. The third creature's possessive existential
+  is “had a face”; the source's plural-shaped face noun is idiomatic singular
+  English here. The flying participle describes the eagle comparison.
+- Revelation 4:8 explicitly includes each creature's standing, its claws,
+  “and upward,” six wings around it, and the creatures' interior eyes.
+  None is omitted to match the shorter reference English. The negative
+  possessive existential is “they have no cessation,” followed by the
+  saying infinitive. “The holder of all” retains both words of the divine
+  title. The final existential-plus-perfect construction is “the one who
+  was,” followed by distinct “and is” and “and is coming.”
+- In 4:9, *qobbal taybutha* is a two-word idiom rendered “thanksgiving,”
+  not independent “acceptance” and “favor.” The
+  [Brock–Kiraz dictionary entry](https://sedra.bethmardutho.org/lexeme/get/1203)
+  explicitly records the compound as gratitude/thankfulness.
+  The perfect giving form precedes a plural four-creature subject. The
+  English uses plural agreement and a completed temporal condition,
+  “whenever ... have given,” followed by the future falling, worshiping,
+  and casting of 4:10. This resolves the unusual agreement/context without
+  silently treating the perfect as a participle.
+- Both “Amen” words in 4:9–10 remain as parenthetical affirmations. The
+  temporal clause continues across the verse boundary. “Down will fall”
+  permits grammatical inversion while keeping the verb before the elders;
+  worship's duration and Amen precede its delayed living-one object.
+  The final saying clause retains the explicit “while” relation. In 4:11
+  “You are worthy” accounts for the second-person worthy form and copular
+  pronoun; “our” belongs to both Lord and God. There is no “Holy” adjective
+  or separate “by you they exist” clause. The conclusion is “through your
+  will they existed and were created,” with both final perfect forms kept.
