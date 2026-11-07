@@ -1,17 +1,16 @@
 # Word-linked English of the Peshitta
 
-`translation.tsv` contains Haqor's English renderings in Peshitta
+`translation.tsv` contains Haqor's reviewed English renderings in Peshitta
 word order, using James Murdock's public-domain translation as a reference.
 The unmodified reference remains in `src_texts/Murdock/murdock.tsv`.
-The goal is reviewed, word-linked English for all 7,958 Peshitta verses.
-This is an incremental translation project: only the verses in the TSV have
-word links. Other verses retain the existing Murdock translation and select
-whole verses in the English reader.
+All 7,958 Peshitta verses have reviewed English and complete word links.
+Every source word is linked in order, and every Peshitta verse supports
+word selection in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-21
-(7,937 of 7,958 Peshitta verses; 21 remain). Revelation 22 is next.
-The unlinked Murdock fallback is temporary coverage, not a completed
-translation or word alignment.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-22
+(7,958 of 7,958 Peshitta verses; 0 remain). All Peshitta verses are translated and linked.
+All Peshitta verses use the reviewed, linked source; none requires the
+unlinked Murdock fallback.
 
 Each non-comment row is `book<TAB>chapter:verse<TAB>translation`, using
 Haqor's one-based book numbers (Matthew = 40), Peshitta verse numbering, and
@@ -7641,3 +7640,122 @@ https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A ;
 https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N ;
 https://cal.huc.edu/oneentry.php?cits=all&lemma=%2Bpr+N ;
 https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=48938 .
+
+Source checks for Revelation 22:
+
+- All 21 verses and 283 actual source positions were checked against the inflected
+  forms, vocalization, every gloss alternative, morphology, suffixes, and final English
+  owners. Every position occurs once in ascending order. Short noun phrases, negative
+  units, and predicates use two or three positions; long clauses are not hidden in
+  combined links. The final chapter had two full independent source reviews and a
+  continuous-English review, with the final narrow wording changes checked against the
+  frozen baseline. Supplied English articles, copulas, nominal heads, and resumptive
+  constructions express grammar without replacing actual actors or lexical owners.
+
+- In 22:1 he SHOWED ME is perfect, while the river PROCEEDS is an active participle. The
+  waters, life, PURE, ALSO BRIGHT, and crystal comparison remain distinct source words.
+  The throne suffix anticipates God, with AND OF THE LAMB retained. In 22:2 the city's
+  STREETS are plural; paired MEKA gives ON THIS SIDE AND ON THAT, along the river, with
+  the tree of life. BEARS and GIVES are present participles. TWELVE FRUITS is not
+  expanded to twelve kinds, and EVERY MONTH remains; ITS FRUITS and ITS LEAVES retain
+  their genuine singular tree possessor and plural noun forms. No ONE is supplied before
+  the monthly fruits. The leaves are FOR THE HEALING OF THE NATIONS.
+
+- In 22:3 ALL CURSE under negation is the short unit NO CURSE, with WILL BE THERE
+  retained. The throne OF GOD AND OF THE LAMB WILL BE IN IT, and HIS SERVANTS WILL SERVE
+  HIM; the latter keeps both the genuine servant possessor and the verb's object suffix.
+  In 22:4 HIS FACE has the idiomatic plural form, naturally singular English, and HIS
+  NAME is ON BETWEEN THEIR EYES. A supplied English nominal head gives "on the space
+  between their eyes," without replacing EYES with a forehead noun. The name's future
+  copula is supplied from the connected future description, not claimed as an extra
+  source HWA word.
+
+- In 22:5 night WILL NOT BE THERE, and the second negative governs passive imperfect
+  REQUIRE: light AND a lamp AND the light OF THE SUN will not be required FOR THEM. The
+  source's separate light, lamp, and sunlight nouns are not collapsed into light OF a
+  lamp. The sun's light suffix is anticipatory. The Lord God GIVES LIGHT TO THEM renders
+  the active causative participle and its pronominal complement, not a future or passive
+  event. The final word at position 16 is the noun THEIR KING, not a they-will-reign
+  verb; English "and is their King" supplies the identifying copula, with FOR THE AGE OF
+  AGES retained.
+
+- In 22:6 THESE WORDS ARE FAITHFUL AND TRUE retains the recognizable absolute predicate
+  MHAYMNAN, despite the export's generic believe/trust gloss. CAL mhymn confirms
+  trustworthy/faithful. SPIRITS is plural, and HOLY modifies PROPHETS. The Lord God SENT
+  HIS ANGEL: there is no ME object to import from the reference. The angel is to SHOW
+  HIS SERVANTS WHAT IS GRANTED TO COME TO BE QUICKLY; YIHIV is a passive participle and
+  HWA an infinitive. No independent MUST word is added. In 22:7 I AM COMING is a
+  first-person active participle plus explicit I, followed by QUICKLY. The blessedness
+  suffix anticipates the singular keeper; words, prophecy, and THIS BOOK remain
+  separately owned.
+
+- In 22:8 I AM JOHN identifies the narrator. The relative SAW and HEARD at positions 2-3
+  are third-person singular perfects referring to John; the later I SAW and HEARD at 6-7
+  are first-person perfects. Both sequences retain SEE before HEAR. I FELL TO WORSHIP is
+  a perfect followed by a genuine purpose infinitive. The feet suffix anticipates the
+  named ANGEL, whose SHOWING is a present participle, with ME and THESE THINGS retained.
+  In 22:9 LOOK is an affirmative singular imperative, followed by NO, the elliptical
+  refusal of the worship. It is not a prohibition against looking. Syriac normally
+  expresses negative commands with LA plus an imperfect, as the grammar explains; the
+  actual following verse has that construction. YOUR FELLOW SERVANT I AM and the
+  genitive extensions to YOUR BROTHERS, THE PROPHETS, and the keepers of THESE WORDS OF
+  THIS BOOK retain the separate identity assertion. TO GOD PAY HOMAGE preserves the
+  object-fronted imperative and the second-person singular command.
+
+- In 22:10 DO NOT SEAL renders LA plus the second-person imperfect prohibition. The
+  words OF THE PROPHECY OF THIS BOOK remain, followed by GAR and THE TIME HAS DRAWN
+  NEAR: QREB is perfect, not a nominal IS NEAR. In 22:11 the wrongdoer is a present
+  participle, whereas the first filthy-state verb is perfect, "has become filthy." All
+  four AGAIN tokens remain with their imperfect hortatives: do wrong, become filthy,
+  practice RIGHTEOUSNESS, and BE SANCTIFIED. In 22:12 coming is present participial, AT
+  ONCE is its own adverb, MY REWARD and WITH ME are separately linked, and AND I WILL
+  GIVE is an active first-person imperfect, not an infinitive recompense clause.
+  EVERYONE, ACCORDING TO, and HIS WORK retain their owners.
+
+- In 22:13 both explicit I pronouns give I AM OLAPH AND I AM TAW, consistent with
+  Revelation 1:8 and 21:6. The first, last, beginning, and end remain separate
+  predicates. In 22:14 DOING HIS COMMANDMENTS is present participial; THEIR AUTHORITY
+  WILL BE OVER THE TREE OF LIFE retains the plural possessor, singular authority noun,
+  and future existence. The actual GATE is singular, through which THEY WILL ENTER THE
+  CITY. In 22:15 fornicators, murderers, and worshipers OF IDOLS precede OUTSIDE.
+  Supplied English copulas and resumption connect the subsequent unclean people,
+  sorcerers, and ALL OBSERVERS AND DOERS OF FALSEHOOD. OBSERVERS is a plural noun, not
+  the reference's lovers; no dogs word occurs in this source.
+
+- In 22:16 I, JESUS, SENT MY ANGEL is perfect with the genuine first-person angel
+  possessor. The purpose clause is THAT HE MIGHT TESTIFY AMONG YOU THESE THINGS BEFORE
+  THE ECCLESIAS, retaining the second-person plural audience. Both following I pronouns
+  give the emphatic I MYSELF AM. The lineage suffix anticipates DAVID; the ROOT AND
+  LINEAGE OF DAVID are not given an extra independent HIS. AND WITH HIM is a genuine
+  separate pronominal phrase and is not omitted or assigned a new named antecedent. The
+  following coordinated predicate retains the STAR, MORNING, and BRIGHT in the short
+  bright-morning-star noun phrase.
+
+- In 22:17 the Spirit and bride SAY, with an active participle; COME is a singular
+  imperative. The hearer LET HIM SAY and the thirsty one LET HIM COME AND TAKE are
+  imperfect hortatives. The source has no separate whoever-is-willing clause. The
+  waters, life, and FREELY remain. In 22:18 I TESTIFY is present participial, and the
+  audience hears THE WORD, singular, OF THE PROPHECY OF THIS BOOK. The next relative
+  introduces anyone ADDING TO THEM, with the genuine feminine plural pronominal
+  complement preserved even though the earlier word noun is singular. GOD is the
+  explicit active subject of WILL PLACE UPON HIM THE PLAGUES WRITTEN IN THIS BOOK. A
+  short verb/prepositional-object/subject unit makes that English clause grammatical
+  without inventing another agent.
+
+- In 22:19 the first decreasing verb is a present participle with FROM, "takes away
+  from" the words of the book OF THIS PROPHECY; THIS is feminine and belongs to
+  prophecy. GOD WILL DIMINISH is an active causative imperfect, not an agentless
+  passive. HIS PORTION retains its genuine possessor, FROM THE TREE OF LIFE AND FROM THE
+  HOLY CITY. The final plural THOSE THINGS WRITTEN IN THIS BOOK is a resumptive
+  apposition, not a singular relative modifying city alone. In 22:20 HE SAYS and WHILE
+  TESTIFYING retain the two participles and temporal KAD; YES, I AM COMING QUICKLY
+  follows. COME, LORD JESUS is a separate imperative. There is no AMEN in verse 20. In
+  22:21 the grace suffix anticipates OUR LORD JESUS THE MESSIAH, and the final
+  benediction is WITH ALL HIS HOLY ONES. HIS is a genuine singular possessor on the
+  plural holy ones. The explicit final AMEN is retained in its actual verse.
+
+Lexical and grammatical support:
+https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A ;
+https://cal.huc.edu/oneentry.php?cits=all&lemma=yhb+V ;
+https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf
+(sections 10 and 13-14 on participles, negative commands, and infinitives).
