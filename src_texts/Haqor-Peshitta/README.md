@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 John, 3 John, and Jude
-(7,388 of 7,958 Peshitta verses; 570 remain). 2 Peter 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1, 2 John, 3 John, and Jude
+(7,409 of 7,958 Peshitta verses; 549 remain). 2 Peter 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5542,3 +5542,47 @@ Source checks for 1 Peter 5:
 - 5:12 — Commas make “as I consider” a parenthetical while the second demonstrative remains appositional: “this is the true grace of God—this in which you stand,” without duplicating “in.” The sentence closes before the following greeting.
 - 5:13 — The colon makes the postposed subject explicit: the chosen ecclesia in Babylon greets the addressees, with Mark coordinated afterward; the first-person possessive suffix remains “my son,” and “ecclesia” follows established terminology. A period separates it from the imperative in 5:14.
 - 5:14 — The reciprocal phrase is kept as “one another,” and the final relative/resumptive sequence is rendered “those who are in the Messiah” without duplicating the addressees.
+
+Source checks for 2 Peter 1:
+
+- 1:1 retains the plural finite worthiness predicate. The Lord and Saviour
+  possessives are first person plural.
+- 1:3 uses a topical introduction and fronted object to preserve the late
+  giving verb at position 11. `מנ` is the relative form, not the preposition
+  "from". Recognition and calling retain their own source positions.
+- 1:4 distinguishes the initial feminine plural reference to the preceding
+  glory/excellence from the later reference to the promises. The plural
+  promises are the fronted object of giving, not its means. Positions 8-11
+  retain becoming, partakers, nature, and divine in order.
+- 1:5-7 keep the additive virtues as an elliptical imperative list. In 1:8,
+  the causative `מקימנ` and its object describe the virtues rendering the
+  addressees neither idle nor unfruitful, rather than standing in them.
+- 1:9 retains the passive lack of these qualities and forgotten cleansing of
+  former sins. In 1:10, calling and choice belong to the addressees. The noun
+  `גביתא` supports choice as well as collection; see the
+  [CAL index](https://cal.huc.edu/browseSKEYheaders.php?direction=1&sortkey=cb+g).
+  The intensity adverb and possessive on brothers are retained.
+- 1:13-15 preserve the judgment of what is proper, causal knowledge of bodily
+  departure, and making remembrance afterward. In 1:14, the disclosure verb
+  has a first-person singular recipient, while the Lord title has a
+  first-person plural possessive despite Murdock's singular title.
+- 1:16 retains first-person plural going and making known, the second-person
+  plural recipient, and the first-person plural Lord title. The fables are
+  described as fashioned artfully, not as a preceding temporal event.
+- 1:17-18 form a continuous sentence around the voice report. The declaration
+  keeps the copula, "my Son", and the speaker's pleasure. The glory's feminine
+  possessive differs from the Son's masculine referent. In 1:18, the first
+  `ל` pronoun anticipates the following voice object; it is absorbed into the
+  English object. The later recipient of the voice's coming remains explicit.
+- 1:19 keeps the additive particle and the relative connection to attending
+  to the prophetic word. The place noun and its following adjective form a
+  small phrase. The knowing construction in 1:20 continues this sentence.
+- 1:20 retains writing and its possessive, rather than substituting a claim
+  about private interpretation. The verbal noun `שריא` is contextually an
+  interpretation or exposition: its root has a metaphorical expounding sense
+  in [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24ry+V), and
+  [Murdock's translation and note](https://aramaicnewtestament.org/peshitta/murdock/epistle/2peter_1.htm)
+  support this reading. CAL's noun gloss "release" alone does not settle the
+  metaphorical meaning.
+- 1:21 distinguishes being moved from speaking. The Holy Spirit occupies
+  positions 11-13; the speakers are third-person plural holy people of God.
