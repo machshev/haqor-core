@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-2, 2 John, 3 John, and Jude
-(7,333 of 7,958 Peshitta verses; 625 remain). 1 Peter 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-3, 2 John, 3 John, and Jude
+(7,355 of 7,958 Peshitta verses; 603 remain). 1 Peter 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5483,3 +5483,24 @@ Source checks for 1 Peter 2:
   live,” his own righteousness, plural wounds, and second-person plural healing.
 - 2:25 combines the astray and “you were” forms into one natural “You were
   astray,” then keeps the present return to Shepherd and Overseer of your souls.
+
+Source checks for 1 Peter 3:
+
+- 3:1 preserves the relative clause after “husbands”: those not persuaded by the word may be won through the wives’ good conduct, without importing a separate recipient or extra action.
+- 3:2 keeps `מתדברנ` as the explicit second-person feminine plural verbal predicate: “you conducting yourselves in reverence and modesty,” rather than nominalizing it as “your conduct.”
+- 3:3 retains all three source adornment categories: outward hair-braiding, a gold ornament, and excellent clothing.
+- 3:5 renders `מן קדימ` as the temporal phrase “in former times,” followed by the subject “holy women”; it does not make “from old” an origin or age modifier of the women.
+- 3:6 retains the source’s copular auxiliaries around Sarah’s submission/calling and the second-person “you are her daughters”; `מתתזיענ` is rendered “you are not shaken” rather than confused with the following fear noun.
+- 3:7 reads the final clause from its actual morphology: `תהוונ` is second-person plural and `מתתקלינ` is a plural passive participle, while `בצלותכונ` means “in your prayers”; therefore it is rendered “so that you may not be hindered in your prayers.”
+- 3:9 keeps the source order “to no one evil for evil do not repay” and the distinct reviling-for-reviling pair; the contrast is plural “opposite of these,” followed by the positive action “bless.”
+- 3:10 renders `הכיל` as inferential “therefore,” not temporal “then,” and attaches “to see” to “good days” in a complete maxim: whoever desires life and loves to see good days.
+- 1 Peter 3:12 keeps the source's causal opening and contrasts the Lord's ears (hearing them) with his face against the evil; “evil” follows the source adjective rather than importing “wicked.”
+- 3:13's מנו is rendered as “who is he,” and the imperfect verb as a prospective “will do”; the object is “evil” before “to you,” preserving source order.
+- 3:14 preserves the conditional suffering and source “blessedness,” but renders מנ אילין דמדחלין לכון as “of those who frighten you”; the separate final prohibition is “do not be troubled.”
+- 3:15 places “in your hearts” before “the Lord Messiah” because that is the source order. מפק ברוחא is rendered “for a defense” as the fixed defensive-response noun compound (CAL, [mappaq brūḥā](https://cal.huc.edu/oneentry.php?cits=all&lemma=mpq%40brwx%29+N)); it is not read as a literal “spirit” phrase. The final source phrase is humility followed by fear.
+- 3:16 assigns תארתא טבתא to “a good conscience,” keeps איכנא דהנונ as “so that those,” preserves the explicit “evil men” comparison, and renders טלם as “reject” (not an inferred “slander”).
+- 3:17 uses the source's profit/advantage predicate and retains both temporal “while” clauses and the explicit “if this is God's will.”
+- 3:18 preserves “once,” the substitution contrast “the righteous for sinners,” the object “you” of bringing near, and the body/spirit contrast. Messiah is used consistently with the source glossary.
+- 3:19-20 render שיול as “Sheol” (the source's explicit term), keep the relative link to the souls, and preserve the source's former non-obedience, Noah-day setting, divine longsuffering, ark command, repentance hope, eight souls, entry, and water-saving sequence.
+- 3:21 follows the source's type/baptism explanation: active חיינ with its explicit second-person subject is rendered “you live in baptism,” not passive “are made alive.” The negative/contrast clauses distinguish washing bodily filth from confessing God with a pure conscience; the resurrection phrase remains attached to Jesus Messiah. The repeated copular subject pronoun is absorbed into “live,” retaining the initial “you” once in English.
+- 3:22 keeps the source's relative continuation (“who”), ascension to heaven, right-hand location, and its genuine inversion “and subject to him are angels, authorities, and powers.”
