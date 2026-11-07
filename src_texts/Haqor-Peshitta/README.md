@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-2, 2 John, 3 John, and Jude
-(7,488 of 7,958 Peshitta verses; 470 remain). 1 John 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-3, 2 John, 3 John, and Jude
+(7,512 of 7,958 Peshitta verses; 446 remain). 1 John 4 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5758,3 +5758,36 @@ Source checks for 1 John 2:
 - 2:29 `דעו` is imperative "know", followed by "also that". The concluding
   origin statement is "is from him"; it does not add a birth verb absent
   from this supplied source.
+
+Source checks for 1 John 3:
+
+- In 3:1, `מטל הנא` is the causal demonstrative construction “Therefore,”
+  followed by “the world.” The calling and making predicates both retain
+  their first-person plural objects; the final knowing verb is perfect.
+- In 3:2, “My beloved” preserves the first-person singular possessive.
+  The revelation clause introduces the expected event, while the separate
+  first-person plural being predicate carries “in his likeness.”
+- In 3:4, the postpositive contrast and “for” are retained, as are both
+  sin nouns and both iniquity nouns. In 3:5, the separate second sin noun
+  belongs to “and sin is not in him,” rather than to “our sins.”
+- In 3:8, the two copular pronouns belong to the Satan/sinner clause;
+  neither supplies an extra subject before the following “Son of God.”
+  The loosening verb is rendered “undo” in relation to Satan's works.
+  In 3:9, “and he is not able to sin” explicitly returns to the person
+  born of God after the intervening clause about God's seed.
+- In 3:12, the masculine emphatic evil adjective is substantivized as
+  “the evil one” in the preceding Satan contrast. Its comparison continues
+  the command in 3:11. In 3:14, the separate “by this” demonstrative
+  explicitly introduces the evidence of loving our brothers.
+- In 3:15, the plural ability and abiding participles agree with the
+  Syriac plural life noun. English uses the mass noun “life,” with the
+  source-order construction “cannot have abiding in him life eternal.”
+- In 3:16, the soul/self noun is rendered “life/lives” in the giving-up
+  context. `על אפי` is the idiom “for/on behalf of,” not physical faces.
+  In 3:17, closing one's mercies is “closes his heart”; in 3:21, open
+  faces before God express “we have confidence.”
+- In 3:19, the supplied source explicitly says “before he comes,” with
+  a third-person singular coming verb and its following subject pronoun.
+  In 3:24, the keeping predicate is passive (“is kept by him”), followed
+  by the distinct dwelling predicate and its explicit “and he” subject.
+  The later third-person dwelling verb is also rendered with “he.”
