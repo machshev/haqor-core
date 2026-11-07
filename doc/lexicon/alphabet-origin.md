@@ -57,11 +57,63 @@ the Proto-Consonantal Script* (Carta, 2016), argues that:
 - each letter can be matched to a particular Egyptian hieroglyph, its sound
   taken from the first consonant of the Hebrew word for the thing pictured;
 - some inscriptions name people known from scripture: he reads the names
-  Asenath, Ahisamach and Moses.
+  Asenath, Ahisemach (as Science News spells it) and Moses.
 
 The project takes this as its working account. The case rests on the
 inscriptions themselves, and the evidence is weighed below, not counted by
 who holds which view.
+
+### His dates and inscriptions
+
+Petrovich gives these as the earliest Hebrew inscriptions, all from the reign
+of Amenemhat III (his reply to Christopher Rollston of 20 December 2016):
+
+| Date | Inscription | Where |
+|---|---|---|
+| 1842 BC | a single letter | Serabit el-Khadim, Sinai |
+| 1840 BC | Sinai 377 (year 20 of Amenemhat III), "the oldest fully Hebrew inscription" | Wadi Nasb, Sinai |
+| 1834 BC | Wadi el-Hol 1 and 2 (year 26), beside the Egyptian Wadi el-Hol 3 | Upper Egypt |
+| 1831 BC | the Lahun bilingual ostracon, found by Petrie | Lahun, Middle Egypt |
+| about 1772 BC | Sinai 376 | Wadi Nasb |
+
+The latest he reads is Sinai 361, about 1446 BC: "Our bond servitude had
+lingered. Moses then provoked astonishment. It is a year of astonishment."
+
+### His letters
+
+Petrovich counts **22 letters from the start, not 27**. Earlier charts
+(Albright's among them) gave the early script 27 signs, some for sounds Hebrew
+writes with one letter. Petrovich takes the extra signs as forms of the 22,
+and gives each letter one Middle Egyptian hieroglyph as its exemplar and one
+Hebrew word as its acrophone. His full chart is Figure 1 of the book. The rows
+below are the five shown in the figure Science News published from it
+(19 November 2016); the rest are to be added from the book.
+
+| Letter | Picture | Middle Egyptian exemplar |
+|---|---|---|
+| א | ox head with horns | the ox head (Gardiner F1) |
+| ג | an angle, a bent stroke | an angle of the same shape |
+| ה | a man with both arms raised | a man with raised arms (A28) |
+| מ | a wavy line, water | the water ripple (N35) |
+| ע | an eye | the eye (D4) |
+
+The letters lost their pictures over the centuries: Petrovich traces this as
+their "residual pictographic value", less in each period from the Middle
+Bronze Age to the Iron Age.
+
+### Distinctively Hebrew words
+
+Petrovich answers the charge that the inscriptions' words are common Semitic
+by reading words that he argues only Hebrew has. In Sinai 349: "They yearned
+for Hathor, but the quiver of our brothers was thoroughly despised", where
+תְּלִי "quiver" (Genesis 27:3) and אַשְׁפָּה "quiver" stand for the Hebrews'
+children, and the oppressor "performed terror (אֵימָה) against their quiver"
+(compare Psalm 127:4–5, "as arrows… happy is the man that hath his quiver
+full of them"). Another line of Sinai 349: "He sought occasion to cut away to
+barrenness our great number, our swelling without measure", as Pharaoh did in
+Exodus 1. He holds that a corpus with several such words, and with names
+found only in the Hebrew Bible, is Hebrew as a whole, as any Iron Age Hebrew
+inscription is.
 
 ### Weighing the evidence
 
@@ -147,7 +199,20 @@ They reach the same biblical dates by different routes, because the 12th
 dynasty sits about 200 years later on Rohl's dates. If those dates were right,
 the earliest alphabetic inscriptions would fall after 1661 BC, during the
 short stay, and Petrovich's reading of them as Hebrew would fit the short
-stay too.
+stay too. Both put the first inscriptions under Amenemhat III, whom Rohl makes
+Joseph's pharaoh.
+
+On the inscriptions, Rohl works with Michael Shelomo Bar-Ron, who also reads
+them as Hebrew (the film *The Moses Controversy*, and Patterns of Evidence's
+articles). They and Petrovich agree on the language and on Israel's presence,
+but differ on particular readings: Bar-Ron finds Moses in Sinai 357 ("This is
+from Moses"), Petrovich in Sinai 361. Rohl asks whether Joseph made the
+alphabet and Moses wrote some of the inscriptions, without, in what was found
+for this page, settling either. Rohl writes (*Legendary Kings*, 2021, as
+adapted in "The Golden Calf") that the Serabit inscriptions show the
+Semites working the mines before the exodus worshipped Hathor as Baʿalat, and
+he ties the calf at Sinai to that worship. Neither has been found commenting
+on the other's work.
 
 ### What it means for scripture
 
@@ -186,8 +251,9 @@ for Hathor, the goddess of the temple at Serabit el-Khadim. Hathor was shown
 as a cow. Scripture says Israel served other gods in Egypt: "put away the gods
 which your fathers served on the other side of the flood, and in Egypt"
 (Joshua 24:14; Ezekiel 20:7–8, 23:3). The calf at Sinai (Exodus 32) was made
-in the same wilderness, by a people who had known that worship. Petrovich
-also reads inscriptions speaking of bondage, as Exodus 1 does.
+in the same wilderness, by a people who had known that worship, as David
+Rohl also argues (above). Petrovich also reads inscriptions speaking of
+bondage and of the oppressor cutting down their numbers, as Exodus 1 does.
 
 **El before יַהְוֶה's name was known.** The inscriptions name God as *ʾl*,
 El. Exodus 6:3: "I appeared unto Abraham, unto Isaac, and unto Jacob, by the
@@ -210,12 +276,13 @@ The three points the lexicon rests on hold on Petrovich's account:
 2. The script was **fitted to a language already spoken**, with its roots
    already formed.
 3. The earliest inscriptions show **several forms for some letters**, which
-   later writing settled into one. The d sign, for instance, is often read
-   as a fish, Hebrew דָּג, where the later name *dalet* is a door.
+   later writing settled into one. Petrovich traces the pictures
+   simplifying over the centuries.
 
 Petrovich adds three more:
 
-- **The 22 letters were chosen for Hebrew.** If Hebrews made the alphabet,
+- **The 22 letters were chosen for Hebrew.** Petrovich counts 22 letters from
+  the first inscriptions. If Hebrews made the alphabet with 22,
   they wrote two spoken sounds with one letter from the start: Γάζα shows ġ
   still spoken under ע more than a thousand years later. Twenty-two letters
   were enough to record the language without spelling every sound apart. The
