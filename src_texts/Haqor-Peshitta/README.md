@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-4
-(7,636 of 7,958 Peshitta verses; 322 remain). Revelation 5 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-5
+(7,650 of 7,958 Peshitta verses; 308 remain). Revelation 6 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6070,3 +6070,62 @@ Source checks for Revelation 4:
   pronoun; “our” belongs to both Lord and God. There is no “Holy” adjective
   or separate “by you they exist” clause. The conclusion is “through your
   will they existed and were created,” with both final perfect forms kept.
+
+Source checks for Revelation 5:
+
+- Reviewed all 14 verses and 221 positions against exact source forms,
+  all gloss alternatives, numeric morphology, suffix roles, and continuous
+  English. Nominal copulas and participial descriptions use the observed
+  narrative context; perfects, infinitives, prohibitions, and future
+  promises remain distinct. Anticipatory object/genitive suffixes are
+  absorbed naturally into their following explicit book, hand, or Lamb
+  referent instead of duplicated in English.
+- Revelation 5:1 retains the right-hand expression, inside and outside
+  inscription, sealing, and seven seals. In 5:2 the source says “another”
+  mighty angel. Revelation 5:3 includes opening, loosening its seals, and
+  seeing the book; 5:4 instead ends with opening and loosening its seals.
+  The weeping participle with past auxiliary is “I was weeping.”
+- Revelation 5:5 puts the perfect overcoming verb before the Lion. English
+  resumes its subject in apposition: “he has triumphed—the Lion ... the Root
+  of David.” The later verb is the distinct future “He will open.” There
+  is no “seven” adjective before the seals in this verse. In 5:6 the throne,
+  four living creatures, and elders all precede the standing Lamb; none is
+  dropped to match the shorter reference. The seven horns, seven eyes,
+  seven Spirits of God, and sending throughout the earth remain. In 5:7
+  the source says “hand,” without the reference's additional “right.”
+- Revelation 5:8 has a singular bowl for each one, with a harp and gold.
+  The distributive construction is rendered “there was for each one of
+  them,” using short spans. The possession clause is parenthesized so the
+  plural praising/speaking relative at 5:9 resumes the creatures and elders.
+  The source's plural-shaped *basma* is English mass “incense”; its relative
+  therefore takes English “is,” with the prayers as its metaphorical
+  predicate. The [Comprehensive Aramaic Lexicon's bsm entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=bsm+N)
+  records incense as often plural-only. This does not change the singular
+  bowl into plural bowls or invent a second set of containers.
+- In 5:9 the cognate praise/praise construction is rendered in its musical
+  context as “singing a new song of praise,” after the preceding harps.
+  The slaughtering is passive and second-person; the buying is active,
+  second-person, with first-person plural “us,” followed by “your blood”
+  and “for God.” Tribes, peoples, and nations remain plural. There is no
+  tongue/language noun in this source verse.
+- Revelation 5:10 retains third-person “them,” first-person “our God,”
+  singular “a kingdom,” and both plural “priests” and “kings,” in that order.
+  The last verb is third-person plural imperfect, “they will reign.” The
+  [CAL mlk entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mlk+V)
+  explicitly records the causative stem's intransitive Syriac sense “to
+  rule”; it is not forced into an unsourced act of making others kings.
+- Revelation 5:11 keeps both seeing and hearing, the comparison before the
+  voice, its many angels, the throne/creatures/elders, and both large-number
+  expressions. The existential plus past auxiliary belongs to “their number
+  was.” Revelation 5:12 has the same vocalized second-person worthy form as
+  5:9, rendered as direct address: “You are worthy, Lamb who was slaughtered.”
+  All seven objects of receiving remain separate.
+- Revelation 5:13 fronts the creation and all-in-them topic. English supplies
+  the topic marker “as for,” and renders the additive hearing clause as “I
+  also heard.” The postposed source copula remains “exists,” following the
+  relative clause's spatial phrases. The seer hears the creation's plural
+  voices speaking; the throne's occupant and the Lamb are joint recipients
+  of blessing, honor, glory, and dominion. The reference's throne occupant
+  speaking to the Lamb is not imported. In 5:14 the creatures' saying is
+  participial, while the elders' falling and worshiping are perfect. No
+  additional twenty-four count or living-forever phrase is supplied there.
