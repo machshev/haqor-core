@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-16
-(7,832 of 7,958 Peshitta verses; 126 remain). Revelation 17 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-17
+(7,850 of 7,958 Peshitta verses; 108 remain). Revelation 18 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6965,3 +6965,155 @@ Source checks for Revelation 16:
   remains, followed by a short four-source predicate/copula/subject/degree unit: ITS
   PLAGUE IS VERY GREAT. This unit keeps the genuine feminine possessor, the copula and
   the final much/very intensifier without shifting them onto earlier source positions.
+
+Source checks for Revelation 17:
+
+- 17:1-2: One of SEVEN ANGELS came and spoke, both perfects. Upon-whom-were renders the
+  existential plus on-them relation, followed by SEVEN BOWLS. COME AFTER ME retains the
+  imperative and genuine first-singular after-me suffix, absent from the reference.
+  I-WILL-SHOW-YOU is first-singular imperfect with a second-singular object. There is NO
+  great adjective on harlot in verse 1. The relative WITH WHOM continues into verse 2;
+  English passive FORNICATION WAS COMMITTED BY THE KINGS retains the active source's
+  kings as agents while preserving link order. Kings and inhabitants have anticipatory
+  feminine suffixes referring to EARTH; HER FORNICATION has a genuine harlot possessor.
+  ALL BECAME DRUNK is followed by its appositive THE INHABITANTS OF THE EARTH, retaining
+  the all quantifier and FROM THE WINE relation.
+
+- 17:3: He LED ME OUT is a perfect causative with a genuine first-singular object. INTO
+  THE WILDERNESS precedes IN THE SPIRIT. The woman is SITTING on a SCARLET BEAST FILLED
+  WITH NAMES OF BLASPHEMY. The possession existential refers to the beast and gives
+  SEVEN HEADS. HORNS, BUT, TEN become BUT THE HORNS WERE TEN in short English copular
+  units, preserving the adversative rather than substituting the reference's and.
+  Sitting remains an active participle, filled a passive one.
+
+- 17:4: The woman WAS THERE, CLOTHED IN PURPLE AND SCARLET. The clothing predicate is
+  feminine singular; the following GILDED predicate is feminine PLURAL and is read of
+  the purple/scarlet clothing, not of the singular woman. English WHICH WERE makes that
+  agreement explicit. GOLD, PRECIOUS STONES and PEARLS remain; precious is the
+  good/valuable sense in the stone idiom. SHE HAD is existential possession in the
+  vision, followed by a CUP OF GOLD ON HER HAND, with a genuine feminine possessor.
+  FILLED is masculine singular and describes the cup; IMPURITY AND ABOMINATION are
+  singular complements of HER FORNICATION. No earth phrase is added at this verse's end.
+
+- 17:5: ON plus BETWEEN renders the location BETWEEN HER EYES, preserving the eye noun
+  and genuine feminine possessor without replacing the whole expression by forehead.
+  WRITTEN is a masculine singular passive participle, followed by MYSTERY; there is NO
+  NAME noun in this source. BABYLON THE GREAT is MOTHER OF HARLOTS AND OF THE
+  ABOMINATIONS OF THE EARTH. Abominations is plural; its suffix anticipates earth,
+  without an independent extra her.
+
+- 17:6: I SAW the woman DRUNK, a passive-shaped state, FROM THE BLOOD OF THE HOLY ONES
+  AND FROM THE BLOOD OF THE WITNESSES OF JESUS. Both from/blood phrases remain. The
+  witness suffix anticipates Jesus, rather than adding a separate his before the named
+  owner. I MARVELED WITH GREAT WONDER precedes WHEN I SAW HER, retaining both
+  first-singular perfects and the genuine feminine object on the final seeing verb.
+
+- 17:7: AND IT WAS SAID TO ME BY THE ANGEL is an English passive inversion of the active
+  said, with the angel kept as its agent. WHY HAVE YOU MARVELED retains the
+  second-singular perfect. I AM TELLING YOU renders the explicit emphatic I,
+  first-person speaking participle plus pronoun, and genuine second-singular dative; it
+  does not import a future will. The beast IS LADEN WITH HER, retaining the
+  passive-shaped carrying/load state and genuine woman object. CAL's tn entry gives
+  carrying and loading, including loaded animals
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=%2B%28n+V); the form can also bear
+  the idiomatic active carrying sense. The following WHICH HAS is a separate existential
+  possession with SEVEN HEADS AND TEN HORNS.
+
+- 17:8: The first beast WAS AND IS NOT, with the existential plus past auxiliary and
+  negative existential kept distinct. The following past HWA controls ITH as a single
+  past existential, not two coordinate present/past assertions; Robinson/Coakley section
+  14, page 66, explains this construction
+  (https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
+  READY is passive-shaped prospective description, followed by TO ASCEND FROM THE SEA:
+  sea is explicit, not the reference's abyss. TO DESTRUCTION IT IS GOING retains the
+  active participle. The earth-dwellers WILL BE AMAZED; English predicate inversion
+  keeps them the plural subject. Their NAMES ARE NOT WRITTEN is a short
+  negative/passive/subject unit with the genuine plural possessor. The BOOK OF LIFE is
+  FROM THE FOUNDATIONS OF THE WORLD: foundations is plural and its suffix anticipates
+  world. AS THEY SEE renders the seeing relative participle as the circumstance of their
+  wonder. The final beast again WAS AND IS NOT, and HAS DRAWN NEAR is perfect, rather
+  than the reference's present approaches.
+
+- 17:9: HERE IS UNDERSTANDING is FOR THE ONE WHO HAS WISDOM, retaining the possessive
+  dative rather than changing it to the mind's possession. SEVEN HEADS ARE SEVEN
+  MOUNTAINS retains both numerals and the explicit plural copula. WHERE plus SITS, WOMAN
+  and ON THEM forms a short four-source relative unit, ON WHICH THE WOMAN SITS. This
+  gives grammatical English to the source's resumptive locative without losing the
+  plural on-them relation.
+
+- 17:10: AND THEY ARE SEVEN KINGS is a short noun/numeral/copula unit continuing the
+  heads' explanation. FIVE HAVE FALLEN is perfect, ONE EXISTS, and THAT OTHER ONE HAS
+  NOT YET COME retains the demonstrative, negation, yet and perfect come. AND WHEN HE
+  HAS COME is the temporal ma d- construction with its completed-event perspective. A
+  LITTLE WHILE IS GIVEN TO HIM TO REMAIN retains the duration idiom, passive giving
+  participle, genuine masculine singular recipient and infinitive; no separate must verb
+  is asserted to exist.
+
+- 17:11: The source unusually names both DRAGON AND BEAST, followed by singular
+  resumptions. English AS FOR introduces this loose coordinated topic, with THAT ONE and
+  IT TOO preserving the singular resumption of the nearest beast. This keeps the
+  source's ambiguity without asserting that the two names identify one entity or
+  deleting dragon. The source says WHICH IS AND IS NOT: there is NO past HWA auxiliary
+  here, unlike the was sequences in verse 8. EIGHTH, FROM THE SEVEN, the explicit
+  singular copula and TO DESTRUCTION IT IS GOING all remain; going is a feminine
+  singular active participle.
+
+- 17:12: TEN HORNS WHICH YOU SAW ARE TEN KINGS retains both ten numerals and the
+  explicit plural copula. BY WHOM A KINGDOM HAS NOT YET BEEN RECEIVED is English passive
+  inversion of their active receiving; the kings remain the agents and both negative and
+  yet are retained. AUTHORITY, AS KINGS, FOR ONE HOUR THEY RECEIVE preserves the fronted
+  object, comparison, time and active receiving participle. WITH THE BEAST has a
+  singular beast, not the reference's beasts.
+
+- 17:13: THESE HAVE ONE PURPOSE uses a short four-source numeral/noun/existential/dative
+  possession unit; purpose renders will/desire in this shared-intent context. POWER AND
+  AUTHORITY OF THEIR OWN retains both nouns, their conjunctions and the genuine plural
+  ownership applying to both. TO THE BEAST THEY GIVE preserves the actual active
+  participle in the present, without automatically importing the reference's future
+  will.
+
+- 17:14: THESE AGAINST THE LAMB WILL MAKE WAR AND THE LAMB WILL OVERCOME THEM keeps the
+  imperfect conflict verbs and plural object. Against is the adversarial sense of with
+  in the fighting construction. CAL qrb, causative stem sense 2, gives
+  carry-on-war/attack with an example using the same am preposition
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=qrb+V); the Lamb overcoming THEM
+  confirms that opposition here. HE IS LORD OF LORDS AND KING OF KINGS retains both
+  titles and the explicit singular copula. The actual vocalized MARAWATHA is the
+  irregular plural lords, despite the exported dominion lemma gloss and feminine
+  metadata; it is not the abstract MARUTHA. The Classical Syriac dictionary explicitly
+  gives this plural of lord/master
+  (https://assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=8443). THOSE
+  WITH HIM ARE CALLED AND CHOSEN AND FAITHFUL retains the genuine masculine singular
+  with-him suffix and all three plural descriptions. Faithful is supported by CAL mhymn,
+  sense 1, alongside believer in sense 2
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A); the incomplete export gloss
+  set does not require substituting a different lemma.
+
+- 17:15: AS FOR THE WATERS introduces the source's topic; WHICH YOU SAW is
+  second-singular perfect, ON WHICH SITS THE HARLOT keeps the plural prepositional
+  suffix and active sitting participle. PEOPLES AND MULTITUDES AND NATIONS AND LANGUAGES
+  are all plural and remain separately linked. The final THEY ARE retains the explicit
+  plural existential after the fronted predicate list.
+
+- 17:16: The TEN HORNS WHICH YOU SAW ON THE BEAST are the topic resumed by THESE and the
+  feminine plural HATE verb. On-the-beast renders the l-phrase's association/possession;
+  it is NOT an and-the-beast coordinated subject. Thus the horns remain the actors. They
+  WILL HATE THE HARLOT and MAKE HER DESOLATE AND NAKED, EAT HER FLESH and BURN HER WITH
+  FIRE. Both genuine feminine object suffixes and the flesh possessor remain. The
+  destruction verbs are imperfect; burning is in the causative stem, not an automatic
+  active participle.
+
+- 17:17: FOR GOD PUTS INTO THEIR HEARTS renders the active giving participle with its
+  placement idiom in the present, not a past has-put. The purpose clause is THAT THEY
+  SHOULD DO HIS WILL AND MAKE THEIR WILL ONE AND GIVE THEIR KINGDOM TO THAT BEAST. HIS
+  WILL and THEIR WILL are distinct genuine possessors, followed by one as their will's
+  resulting unity. THAT remains the feminine demonstrative of beast. UNTIL THERE ARE
+  FULFILLED THE WORDS OF GOD keeps passive completion in the until-condition and English
+  inversion for ascending links. The words suffix anticipates God, without adding an
+  extra independent his.
+
+- 17:18: The WOMAN WHOM YOU SAW IS THE GREAT CITY retains the identification and
+  second-singular perfect. WHICH HAS is the existential plus genuine feminine possessive
+  dative. KINGSHIP renders the royal reign/kingdom noun in its rule-over relation to the
+  KINGS OF THE EARTH. The kings' feminine suffix anticipates earth, rather than adding a
+  separate her referring to the city.
