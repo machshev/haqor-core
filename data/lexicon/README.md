@@ -7,6 +7,17 @@ Hebrew root it answers to. Why it is built this way is in
 [ADR 7](../../doc/adr/0007-haqor-lexicon.md); this file is the schema and the
 rules for writing an entry.
 
+Further reading:
+
+- [Building an entry, step by step](../../doc/lexicon/building-an-entry.md):
+  the process from choosing a root to review, and how evidence is weighed.
+- [The origin of the Hebrew alphabet](../../doc/lexicon/alphabet-origin.md):
+  how the letters were made (including Douglas Petrovich's proposal), why
+  they carry sounds and not meanings, and the older sounds behind merged
+  letters.
+- [Jeff Benner's letter-meaning approach](../../doc/lexicon/benner-evaluation.md):
+  an evaluation: what the lexicon takes from it and what it does not.
+
 ## Principles
 
 - **The entry stands on its own.** Other lexicons are where to look for
