@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-6
-(7,667 of 7,958 Peshitta verses; 291 remain). Revelation 7 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-7
+(7,684 of 7,958 Peshitta verses; 274 remain). Revelation 8 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6199,3 +6199,54 @@ Source checks for Revelation 6:
   The unmarked English imperative “hide” does not require choosing between
   the export's singular tag and its plural addressees. Revelation 6:17 keeps
   the plural possessor “their wrath” and the question about ability to stand.
+
+Source checks for Revelation 7:
+
+- 7:1-3: The seer is first person; four angels stand and hold four winds.
+  The demonstrative in 7:1 is singular, and no second "of the earth" follows
+  "four winds." The wind is prevented from blowing on the earth, sea, or any
+  tree. The other angel ascended (perfect), has the living God's seal through
+  an existential possessive dative, and cries to the four angels who were
+  granted permission to harm. The prohibition addresses them in the second
+  plural; "we seal" is first plural. The servants' anticipatory possessive is
+  resolved as "the servants of God," with no unsupported "our" on God.
+  The seal's location is the source's "between their eyes."
+- 7:4-8: The total is 144,000 from all Israel's tribes, with twelve thousand
+  in each named group. The source order in 7:7 is Simeon, Issachar, Levi.
+  Asher and the tribal Joseph follow the contextual names, rather than
+  Murdock's spelling or a lexeme's unrelated biographical gloss. The list
+  continues across verse boundaries; "sealed" occurs at 7:4 and finally
+  7:8, without inventing a separate sealing verb for each entry. Repeated
+  anticipatory tribe suffixes are idiomatic "the tribe of X."
+- 7:9-12: The seer sees a great multitude; the negative existential plus
+  ability construction makes its number beyond anyone's ability to count.
+  The short four-position link retains that grammatical unit. Peoples,
+  tribes, nations, languages, standing, white robes, and palms in their hands
+  are retained. A repeated English "from" keeps the mixed singular and
+  plural nouns grammatical while sharing the source preposition.
+  Anticipatory suffixes become "before the Lamb" and "around
+  the throne." The coordinated "and to him who sits" remains explicit.
+  Angels stand around the throne, elders, and four living creatures, then
+  fall on their faces before the throne; no absent worship verb or possessive
+  on that throne is imported. The following saying clause continues the
+  sentence. Praise precedes blessing; "thanksgiving" renders the compound
+  qobbal taybutha, and both occurrences of "our God" retain first-plural
+  possession. Participles describe the ongoing scene in contextual English
+  past, while the seated figure's description remains present.
+- 7:13-14: One elder answers and speaks to the seer. English passive grammar
+  preserves the answer's actor while keeping source order.
+  The white-robed people's identity and origin remain questions. "My lord"
+  and "you know" address the elder, with the repeated second-person subject
+  expressed as one emphatic English clause. The people came from great
+  affliction and actively washed their own robes and made them white in the
+  Lamb's blood; the plural actors and robe object remain distinct.
+- 7:15-17: "Therefore" renders "because of this"; they serve him day and
+  night in his temple. The seated one will shelter them: the verb's covering
+  and protective sense with al is independently supported by CAL's gnn
+  causative entry (https://cal.huc.edu/oneentry.php?cits=all&lemma=gnn+V).
+  English fronting preserves the sun clause's source order, every negative,
+  and "any heat," with no unsupported "any more." The Lamb feeds and leads
+  them to life and to fountains of water, two coordinated destinations,
+  rather than an imported "living water" modifier. The last wiping verb is
+  third singular with an implicit subject; no absent "God" noun or explicit
+  change of actor is added. All tears and their eyes are retained.
