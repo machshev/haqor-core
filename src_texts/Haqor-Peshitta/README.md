@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-2, 2 John, 3 John, and Jude
-(7,431 of 7,958 Peshitta verses; 527 remain). 2 Peter 3 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 2 John, 3 John, and Jude
+(7,449 of 7,958 Peshitta verses; 509 remain). 1 John 1 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5633,3 +5633,54 @@ Source checks for 2 Peter 2:
   In 2:22 the things of the proverb are plural, the dog's return is past,
   and the sow's bathing is active. The final wallowing phrase uses the
   coordinated proverb's understood return rather than inventing a source verb.
+
+Source checks for 2 Peter 3:
+
+- 3:1 `מן כדו` is the idiom "already/now", rather than a statement that
+  something suffices. Compare the lexical adverb in the
+  [Classical Syriac course book](https://refubium.fu-berlin.de/bitstream/handle/fub188/24490/Classical_Syriac_Course_Book_3-2019.pdf?isAllowed=y&sequence=3).
+  The plural reference to the letters is retained, and the purpose clause
+  in 3:2 continues the sentence. In 3:3 the prefixed `ד־` introduces the
+  content known beforehand; it does not make knowing a temporal condition
+  for the mockers' arrival. Their walking and the preceding "while" keep
+  their own source positions. The quoted question and argument in 3:4 are
+  punctuated as the mockers' speech.
+- 3:5 has a singular feminine subject, "this", with plural experiencers:
+  it escapes their notice by their choice. The plural willing verb is
+  distinct from the singular initial predicate. The earth's rising from
+  and through water remains explicit. In 3:6, the flooding verb permits an
+  intransitive inundation rendering; it does not make the world the agent
+  flooding something else.
+- 3:7 `אסינינ` is a passive participle, not an active storing action.
+  The following reservation for fire shares the heavens/earth subject.
+  In 3:8 the singular fact is the subject and the addressees are the object
+  of the forgetting/escaping construction; "my beloved" retains its suffix.
+- 3:9 keeps plural promises. The long-spirit expression is idiomatic
+  patience, and the closing repentance clause remains parallel with the
+  preceding clause about perishing. In 3:10 `מן שלי` is the suddenly idiom;
+  "suddenly" is also among the supplied gloss alternatives.
+- 3:10 ends with `תשתכח`, a future Ethpeal "will be found". There is no
+  negative particle in the supplied verse, although Murdock's reference
+  says "will not be found". The affirmative rendering follows the source;
+  compare the [Syriac text and analysis](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=ubs&verse=2Peter+3%3A10).
+  The works are described as being in the earth, without adding a separate
+  possessive to the works noun. Burning remains intransitive, and the
+  dissolution predicates remain passive.
+- 3:11-12 form one question: the expectation of the day continues the
+  question about fitting conduct. The fire-testing predicate in 3:12 is
+  passive, while the elements' melting is future. In 3:13 the new heavens
+  and earth are fronted objects of first-person plural expectation.
+- 3:14 keeps the care/striving imperative, the purpose clause, the spot and
+  blemish negations, the passive finding, and its personal recipient.
+  In 3:15 the source says "the Lord", without the first-person possessive
+  found in the closing title. Patience is the idiom; `פורקנא` includes
+  redemption, salvation, and deliverance among its glosses.
+- 3:15-16 form a continuous writing/speaking comparison. Paul's speaking
+  verb is past. The difficult things, the people without instruction, their
+  unstable condition, and their distortion of the writings retain distinct
+  source roles; the stability participle is not an active supporting action.
+  The final possessive belongs to their own destruction.
+- 3:17 distinguishes the lawless people from their error and retains the
+  addressees' own steadfastness. The closing 3:18 includes both the Lord/
+  Saviour title and the explicit genitive "and of God the Father". The
+  Father phrase is present in this Syriac source and is retained.
