@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-3, 2 John, 3 John, and Jude
-(7,355 of 7,958 Peshitta verses; 603 remain). 1 Peter 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-4, 2 John, 3 John, and Jude
+(7,374 of 7,958 Peshitta verses; 584 remain). 1 Peter 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5504,3 +5504,25 @@ Source checks for 1 Peter 3:
 - 3:19-20 render שיול as “Sheol” (the source's explicit term), keep the relative link to the souls, and preserve the source's former non-obedience, Noah-day setting, divine longsuffering, ark command, repentance hope, eight souls, entry, and water-saving sequence.
 - 3:21 follows the source's type/baptism explanation: active חיינ with its explicit second-person subject is rendered “you live in baptism,” not passive “are made alive.” The negative/contrast clauses distinguish washing bodily filth from confessing God with a pure conscience; the resurrection phrase remains attached to Jesus Messiah. The repeated copular subject pronoun is absorbed into “live,” retaining the initial “you” once in English.
 - 3:22 keeps the source's relative continuation (“who”), ascension to heaven, right-hand location, and its genuine inversion “and subject to him are angels, authorities, and powers.”
+
+Source checks for 1 Peter 4:
+
+- 4:1: Rendered `כלמנ` (position 12, no exported gloss) as “every one,” matching the clause and Murdock context; rendered `לה מנ` (17–18) as the “from” relation before “all sins.”
+- 4:2: Kept `נחא` as “live,” not “save,” and grouped the adjacent lust/human/live sequence into “to live for human lusts”; `כמא זבנא דאיתוהי` is rendered “as long as he is.”
+- 4:3: Preserved the sequence of profane desire, luxury, drunkenness, lasciviousness, revelry/music, and demon worship; the final `פולחנא` is contextually “worship,” not generic work.
+- 4:4: Rendered the imperfect plural verbs as the present “they marvel and blaspheme,” and retained the negative `בדלא` as “because you do not revel.”
+- 4:5: Rendered `עתיד` in the relative clause as “is ready,” with `למדנ` as the infinitive “to judge”; the objects remain “the dead and the living.”
+- 4:6: Rendered `אסתבר` (Ethpeal perfect) as “was preached,” and `נתדינונ` as the passive “might be judged”; `ונחונ` remains active “live,” not “are made alive.”
+- 4:7 preserves contrastive `דינ` as “But” in the initial predicate. The separate `מטל הנא` supplies “therefore” before the exhortations “be sober” and “be watchful.”
+- 4:8: Rendered `חובא` as “love,” `חריפא` as “fervent,” and `חדדא` as “one another”; the final clause is “love covers a multitude of sins.”
+- 4:9: Rendered `אכסניא` as “strangers” and preserved `דלא` as “without,” yielding “without murmuring.”
+- 4:10: Preserved the second-person plural suffix in `מנכונ` as “of you,” the feminine singular object suffix in `בה` as “with it” (the gift), and the third-person masculine singular suffix in `לחברוהי` as “his associates.” `רבי ביתא טבא` is rendered contextually as “good stewards.”
+- 4:11: Rendered the two כל-מנ forms as “whoever” and kept the repeated speech/minister predicates. The 13–14 giving form includes its dative suffix as “has given him”; 18–19 preserve “God may be glorified” despite source verb-before-subject order. Positions 23–25 are the resumptive possessive/copula relationship, rendered “to whom belongs.”
+- 4:12: Kept the plural address and suffixes in both “to you” phrases. The final 11–14 causal/copular group is rendered “because it was for your testing”; this avoids the ungrammatical source-order fragment while retaining the explicit “it was.”
+- 4:13: The source places “at the revelation of his glory” before the two second-person rejoicing verbs; retained that order as “thus also, at the revelation of his glory, rejoice and exult.” The 4–5 phrase is Messiah’s sufferings, not a generic suffering.
+- 4:14: Preserved the plural “you” in reproach and the dative plural “upon you.” Positions 8–10 are the actual noun phrase `רוחא משבחתא דאלהא`: “the praiseworthy Spirit of God”; no causal “because” is inserted. “The name of the Messiah” follows the construct relationship.
+- 4:15: The source closes with the suffering predicate (13–14), after the three role descriptions. Rendered “as one who does evil suffer” to keep all classifications and avoid moving the verb across source positions.
+- 4:16: Retained the conditional and contrast, the Christian designation, negated shame, and the demonstrative “this name.”
+- 4:17: Grouped the source-order copular/relative clause 0–4 as “because it is time for judgment to begin,” and 8–11 as “if it begins with us.” “Those who do not obey the Gospel of God” retains the relative plural and negation.
+- 4:18: Kept “scarcely lives” (not “is made alive”); the source has the ungodly and sinner before the “where ... be found” predicate, so the final span preserves that source ordering while remaining readable.
+- 4:19: Rendered `מטל הנא` as the causal-demonstrative “For this reason,” retaining both source words before the relative subject. `בעבדא שפירא` is singular/mass “in good work,” not plural “works.” The final `איכ דלברויא מהימנא` is rendered “as to the faithful Creator,” attaching the comparison/recipient to the preceding “to him” while preserving the Creator noun and faithful adjective.
