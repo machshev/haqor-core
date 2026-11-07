@@ -54,9 +54,10 @@ Benner's method has four parts:
 The alphabet was made by *acrophony*: each picture stands for the first sound
 of the Semitic word for the thing pictured (ox, *ʾalp*, for ʾ). The ox head
 was chosen for א because the word for ox began with that sound, not because
-the sound meant strength. This holds both in the mainstream account and in
-Douglas Petrovich's (see [the alphabet's origin](alphabet-origin.md)). On
-either account the picture is a memory aid for a sound.
+the sound meant strength. This holds on Douglas Petrovich's account, where the
+letters were made by Hebrews for Hebrew words (see [the alphabet's
+origin](alphabet-origin.md)), and on every other reading of the inscriptions.
+The picture is a memory aid for a sound.
 
 ### The language came before the letters
 

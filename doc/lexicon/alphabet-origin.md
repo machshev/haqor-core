@@ -45,31 +45,147 @@ script writes consonants only (Semitic words begin with a consonant), and why
 the letters' names keep their old meanings after the shapes stopped looking
 like pictures.
 
-## Douglas Petrovich's proposal
+## Douglas Petrovich: the alphabet was Hebrew
 
 Douglas Petrovich, in *The World's Oldest Alphabet: Hebrew as the Language of
 the Proto-Consonantal Script* (Carta, 2016), argues that:
 
 - the earliest alphabetic script was invented by Hebrews in Egypt, in the
   Middle Kingdom period he assigns to Joseph and Israel's stay in Egypt;
-- its language is Hebrew in particular, not Canaanite in general;
-- each letter can be matched to a particular Egyptian hieroglyph, and some
-  inscriptions name people known from the Bible.
+- its language is Hebrew in particular: he reads sixteen inscriptions, from
+  about 1842 to 1446 BC, as Hebrew;
+- each letter can be matched to a particular Egyptian hieroglyph, its sound
+  taken from the first consonant of the Hebrew word for the thing pictured;
+- some inscriptions name people known from scripture: he reads the names
+  Asenath, Ahisamach and Moses.
 
-Most epigraphers reject the identification of the language as Hebrew, and read
-the inscriptions as early Canaanite in a Canaanite script (the epigrapher
-Christopher Rollston among the critics). This project takes no
-position on that here, because **the conclusions below hold either way**.
-Petrovich's account and the mainstream one agree on the points that matter
-for the lexicon:
+The project takes this as its working account. The case rests on the
+inscriptions themselves, and the evidence is weighed below, not counted by
+who holds which view.
+
+### Weighing the evidence
+
+What the inscriptions show on any reading is firm: Semitic speakers living in
+Egypt and working in Sinai made the alphabet in the Middle Kingdom, from
+Egyptian hieroglyphs, for their own language. Egypt's own records put large
+numbers of such people there at that time. Excavations at Tell el-Dabʿa
+(Avaris), in the eastern Delta where Genesis places Goshen, found a large
+Semitic settlement growing from the late 12th dynasty. Egyptian expedition
+inscriptions at Serabit el-Khadim name Semitic men from Retjenu (Canaan and
+Syria) among the mining parties.
+
+The step from "Semitic" to "Hebrew" rests on particular readings: a word, a
+name, a grammatical form that Hebrew has and its neighbours lack. The texts are
+short, written in consonants only, and some are worn, so a reading can turn
+on one doubtful letter. The dialects of Canaan in the second millennium also
+differed less than their later forms do. That is where Petrovich's case should
+be checked, inscription by inscription.
+
+Scripture is evidence too. It puts Israel in Egypt in this period, multiplying
+in Goshen and kept at forced labour (Exodus 1). If Semitic speakers in Egypt
+at that time made a script for their language, scripture names the people who
+were there. The individual readings may be refined. The overall picture is
+of a Semitic people in Egypt writing their own tongue, and scripture says who
+that people was.
+
+One point turns on scripture itself: when the stay in Egypt began.
+
+- 1 Kings 6:1 puts the exodus 480 years before the fourth year of Solomon,
+  about 1446 BC.
+- Exodus 12:40–41 gives the stay as 430 years. Read as 430 years in Egypt,
+  Jacob arrives about 1876 BC, and the inscriptions from 1842 BC fall in
+  Joseph's lifetime.
+- Galatians 3:17 counts 430 years from the promise to the law. With the
+  Septuagint and the Samaritan Pentateuch at Exodus 12:40 ("in Egypt and in
+  the land of Canaan"), that leaves about 215 years in Egypt. Jacob would then
+  arrive about 1660 BC, after the earliest inscriptions.
+
+Petrovich's dates need the long stay in Egypt. The short one would make the
+earliest inscriptions the work of other Semites, with Israel adopting the
+script after it arrived.
+
+### What it means for scripture
+
+**Moses could write, and so could Israel.** Scripture has Moses writing from
+the start of the wilderness: "Write this for a memorial in a book"
+(Exodus 17:14), the words of the covenant (Exodus 24:4, 34:27), the stages of
+the journey (Numbers 33:2), the whole law (Deuteronomy 31:9, 24). The old
+claim that writing came too late for Moses is answered by the inscriptions on
+any reading. On Petrovich's, the script was Israel's own, centuries old when
+Moses wrote.
+
+**Writing for everyone, not only for scribes.** Hieroglyphs took years of
+scribal training. An alphabet of a few dozen signs can be learnt in days, and
+its inventors were miners and labourers, not scribes. The law expects that
+kind of literacy. Every household writes the words on its doorposts
+(Deuteronomy 6:9, 11:20). A man writes his own bill of divorce
+(Deuteronomy 24:1). The king copies the law himself (Deuteronomy 17:18). A
+young man of Succoth writes down the names of its elders (Judges 8:14). The
+alphabet made a people able to keep a written word.
+
+**Israel kept records in Egypt.** In Exodus 5:6–19 the שֹׁטְרִים, the
+"officers of the children of Israel" whom Pharaoh's taskmasters set over them,
+keep the tally of bricks and answer for it. The root שטר is Akkadian *šaṭāru*
+"to write", and Aramaic שְׁטָר is a written deed: the officers were Israel's
+own record-keepers.
+
+**Written records from the patriarchs.** Genesis 5:1 calls its genealogy "the
+book of the generations of Adam". If Hebrews were writing in Joseph's day,
+records reaching Moses in writing are possible. Scripture does not say how
+Moses gathered Genesis, and the inscriptions do not show it, but they remove
+the objection that no one could have written it down.
+
+**Life in Egypt as scripture tells it.** The Sinai inscriptions are prayers
+and dedications at the mines, many to *Baʿalat*, "the Lady", the Semitic name
+for Hathor, the goddess of the temple at Serabit el-Khadim. Hathor was shown
+as a cow. Scripture says Israel served other gods in Egypt: "put away the gods
+which your fathers served on the other side of the flood, and in Egypt"
+(Joshua 24:14; Ezekiel 20:7–8, 23:3). The calf at Sinai (Exodus 32) was made
+in the same wilderness, by a people who had known that worship. Petrovich
+also reads inscriptions speaking of bondage, as Exodus 1 does.
+
+**El before יַהְוֶה's name was known.** The inscriptions name God as *ʾl*,
+El. Exodus 6:3: "I appeared unto Abraham, unto Isaac, and unto Jacob, by the
+name of El Shaddai, but by my name יַהְוֶה was I not known to them."
+
+**Names from Exodus and Genesis.** Petrovich's readings of Asenath, Joseph's
+wife (Genesis 41:45), and Ahisamach, father of Oholiab the engraver (Exodus
+31:6, 38:23), are the most direct links. Oholiab's work was engraving
+(Exodus 35:35). The names given to Hebrews in Egypt also appear in Egyptian
+lists: a 13th-dynasty household list (Brooklyn Papyrus 35.1446) names many
+Semitic servants, one read as Shiphrah, the name of a Hebrew midwife in
+Exodus 1:15.
+
+### What it means for the lexicon
+
+The three points the lexicon rests on hold on Petrovich's account:
 
 1. The letters were made by **acrophony**: each picture stands for the first
-   sound of a Semitic word.
+   sound of a word.
 2. The script was **fitted to a language already spoken**, with its roots
    already formed.
 3. The earliest inscriptions show **several forms for some letters**, which
-   later writing settled into one. Some letters went through more than one
-   picture before a single form won out.
+   later writing settled into one. The d sign, for instance, is often read
+   as a fish, Hebrew דָּג, where the later name *dalet* is a door.
+
+Petrovich adds three more:
+
+- **The 22 letters were chosen for Hebrew.** If Hebrews made the alphabet,
+  they wrote two spoken sounds with one letter from the start: Γάζα shows ġ
+  still spoken under ע more than a thousand years later. Twenty-two letters
+  were enough to record the language without spelling every sound apart. The
+  sound splits the lexicon records are differences in speech that the
+  script, by design, did not mark.
+- **Hebrew words from Egypt.** The Hebrew of Genesis and Exodus has words
+  from Egyptian where the story is set in Egypt: פַּרְעֹה (*pr-ʿꜣ* "great
+  house"), יְאֹר "the Nile" (*itrw*), סוּף "reeds" (*ṯwf*), גֹּמֶא
+  "papyrus" (*qmꜣ*), תֵּבָה "chest" (*ṯbt*), אָחוּ "reed grass" (*ꜣḫ*),
+  חַרְטֹם "magician" (*ḥry-tp*). An entry for such a word should record its
+  Egyptian source as a loan. The lexicon does not yet accept Egyptian as a
+  cognate language.
+- **The inscriptions are Hebrew evidence outside scripture.** The words read
+  in them are the earliest written Hebrew. They rank below scripture's use
+  and, being Hebrew itself, above cognates.
 
 ## What the letters carried: sounds, not meanings
 
@@ -81,9 +197,9 @@ already had. Five lines of evidence agree.
 ### One letter, several older sounds
 
 Comparing the Semitic languages shows that their common ancestor had about 29
-consonants. The 22-letter alphabet fits the sounds of the Canaanite dialects
-after several of them had merged, so five Hebrew letters each cover more than
-one older sound:
+consonants. The 22 letters write fewer sounds than were spoken (some had
+merged in speech, others were still spoken apart but written with one letter),
+so five Hebrew letters each cover more than one older sound:
 
 | Letter | Older sounds | Example |
 |---|---|---|
