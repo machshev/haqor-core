@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-3, 2 John, 3 John, and Jude
-(7,246 of 7,958 Peshitta verses; 712 remain). James 4 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-4, 2 John, 3 John, and Jude
+(7,263 of 7,958 Peshitta verses; 695 remain). James 5 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5390,3 +5390,17 @@ Source checks for James 3:
 - 3:10-12 retains the same-mouth contrast, the fountain question, and the fig-tree/vine/fruit and salty-water impossibilities.
 - 3:13-16 preserves the wise person's conduct, bitter envy/contention, the prohibition on boasting against truth, and the causal confusion/evil result.
 - 3:17-18 retains the source's wisdom qualities, including mercy, good fruits, no partiality, no respect of persons, and the peace-mediated sowing of righteous fruits.
+
+Source checks for James 4:
+
+- James 4:1 preserves the question's source order: "from where" asks about wars and strifes among you, and the final relative verb explicitly wages war in your members.
+- James 4:2 links the negative come/hand construction as "nothing comes into your hands" and keeps the repeated second-person subjects and final causal "because you do not ask."
+- James 4:4 distinguishes the source's adulterers, this-world love, enmity, friend, and enemy terms; the postpositive "therefore" remains visible between "whoever" and "desires," and "God" is linked at both occurrences.
+- James 4:5 renders the source's contiguous jealousy-desire-spirit construction as "the jealous desire of the spirit that dwells in us" rather than importing a remembered verse wording.
+- James 4:6 exposes the source roles as "But greater grace our Lord gives to us" (retaining the first-person plural suffix in "our Lord") and renders מטל הדא אמר as "for this reason he says" rather than making "this" the speaker.
+- James 4:7 keeps the postpositive connective visible as "Submit yourselves therefore to God."
+- James 4:8 retains both draw-near verbs, the hand/heart objects, and the final divided-in-soul description.
+- James 4:11 maps both speak-against and judge-against-law clauses separately, then preserves the conditional distinction between judging the law and being its doer or judge.
+- James 4:12 keeps one lawgiver and judge, the make-alive/destroy contrast, and the repeated second-person neighbor question.
+- James 4:13-15 preserves the opening question "But what shall we say concerning those who say," the city/year/trading/gain sequence, the vapor that appears briefly and vanishes, and the Lord-willing condition.
+- James 4:17 keeps the additive "And whoever" opening, the good-known/not-done construction, and the final "to him it is sin" mapping.
