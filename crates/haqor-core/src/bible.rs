@@ -26,6 +26,9 @@ pub struct BdbEntry {
     /// speech of its own (it is pure root etymology, not a lexeme), the app
     /// heads it under "Root" rather than among the root's actual lexemes.
     pub is_root: bool,
+    /// Its key in BDB (`a.ea.aa`), by which Haqor's lexicon names the words it
+    /// covers.
+    pub key: String,
 }
 
 impl BdbEntry {
@@ -4131,7 +4134,7 @@ impl Bible {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare(
-            "SELECT word, root, gloss, body, pos, kind FROM lexicon_entry \
+            "SELECT word, root, gloss, body, pos, kind, key FROM lexicon_entry \
              WHERE cons = ?1 ORDER BY key",
         )?;
         let rows = stmt
@@ -4143,6 +4146,7 @@ impl Bible {
                     self.entry_body(row.get::<_, Option<Vec<u8>>>(3)?)?,
                     row.get::<_, Option<String>>(4)?.unwrap_or_default(),
                     row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
+                    row.get::<_, String>(6)?,
                 ))
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
@@ -4158,7 +4162,7 @@ impl Bible {
             .filter(|(w, ..)| {
                 !has_exact || normalize_hebrew_combining(&strip_accents(w)) == canonical
             })
-            .map(|(word, root, gloss, body, pos, is_root)| {
+            .map(|(word, root, gloss, body, pos, is_root, key)| {
                 display_bdb_entry(
                     &self.db,
                     BdbEntry {
@@ -4168,6 +4172,7 @@ impl Bible {
                         content_json: body,
                         pos,
                         is_root,
+                        key,
                     },
                 )
             })
@@ -4242,6 +4247,55 @@ impl Bible {
         )
     }
 
+    /// The BDB keys of the words Haqor's lexicon entry `id` holds: the BDB
+    /// entries it stands in for.
+    pub fn haqor_lexicon_keys(&self, id: &str) -> rusqlite::Result<HashSet<String>> {
+        if !self.has_table("haqor_lexicon_bdb")? {
+            return Ok(HashSet::new());
+        }
+        self.db
+            .prepare_cached("SELECT key FROM data.haqor_lexicon_bdb WHERE id = ?1")?
+            .query_map([id], |row| row.get(0))?
+            .collect()
+    }
+
+    /// Whether the text's spelling `surface` is a word of Haqor's lexicon
+    /// entry `id`: one of the BDB entries the spelling is filed under is the
+    /// entry's. `None` when the spelling is filed under none.
+    pub fn haqor_lexicon_covers_surface(
+        &self,
+        id: &str,
+        surface: &str,
+    ) -> rusqlite::Result<Option<bool>> {
+        if !self.has_table("haqor_lexicon_bdb")? {
+            return Ok(None);
+        }
+        // The stored spellings keep their points in the text's order, so they
+        // are found by their consonants and compared in one order.
+        let canonical = normalize_hebrew_combining(&strip_accents(surface));
+        let rows: Vec<(String, String)> = self
+            .db
+            .prepare_cached(
+                "SELECT s.text, se.key FROM data.surface s \
+                 JOIN data.surface_entry se ON se.surface_id = s.surface_id \
+                 WHERE s.cons = ?1",
+            )?
+            .query_map([fold_consonants(surface)], |row| {
+                Ok((row.get(0)?, row.get(1)?))
+            })?
+            .collect::<rusqlite::Result<_>>()?;
+        let keys: Vec<String> = rows
+            .into_iter()
+            .filter(|(text, _)| normalize_hebrew_combining(&strip_accents(text)) == canonical)
+            .map(|(_, key)| key)
+            .collect();
+        if keys.is_empty() {
+            return Ok(None);
+        }
+        let covered = self.haqor_lexicon_keys(id)?;
+        Ok(Some(keys.iter().any(|k| covered.contains(k))))
+    }
+
     /// [`Self::hebrew_bdb_by_root`] for a SEDRA root, the Hebrew cognates of a
     /// Peshitta word: Syriac has the one ש, so a root with one names the shin
     /// root and the sin root spelled alike, shin's entries first.
@@ -4268,7 +4322,7 @@ impl Bible {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare(
-            "SELECT b.word, b.root, b.gloss, b.body, b.pos, b.kind FROM lexicon_entry b \
+            "SELECT b.word, b.root, b.gloss, b.body, b.pos, b.kind, b.key FROM lexicon_entry b \
              JOIN entry_root er ON er.key = b.key \
              WHERE er.root = ?1 ORDER BY er.ord, b.key",
         )?;
@@ -4287,6 +4341,7 @@ impl Bible {
                         content_json: self.entry_body(row.get::<_, Option<Vec<u8>>>(3)?)?,
                         pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
                         is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
+                        key: row.get(6)?,
                     },
                 ))
             })?
@@ -4533,6 +4588,7 @@ impl Bible {
                             content_json: self.entry_body(row.get::<_, Option<Vec<u8>>>(3)?)?,
                             pos: row.get::<_, Option<String>>(4)?.unwrap_or_default(),
                             is_root: row.get::<_, Option<String>>(5)?.as_deref() == Some("root"),
+                            key: key.to_string(),
                         },
                     ))
                 },
@@ -8515,6 +8571,22 @@ mod tests {
         // No entry yet.
         assert_eq!(id("ברא", "", ""), None);
         assert_eq!(id("", "אֶל", ""), None);
+        // Which words of the text the entry is for: the particle is, the name
+        // Asher and "yesterday" (filed by BDB under אמר) are not.
+        assert!(
+            bible
+                .haqor_lexicon_keys("ashar")
+                .unwrap()
+                .contains("a.gk.aa")
+        );
+        let covers =
+            |id: &str, surface: &str| bible.haqor_lexicon_covers_surface(id, surface).unwrap();
+        assert_eq!(covers("ashar", "אֲשֶׁר"), Some(true));
+        assert_eq!(covers("ashar", "אָשֵׁר"), Some(false));
+        assert_eq!(covers("amar", "אֶמֶשׁ"), Some(false));
+        // BDB's entries carry their keys, to tell the covered ones apart.
+        let tree = bible.hebrew_bdb_by_root("אמר").unwrap();
+        assert!(tree.iter().any(|e| e.key == "a.ea.aa"));
     }
 
     #[test]
