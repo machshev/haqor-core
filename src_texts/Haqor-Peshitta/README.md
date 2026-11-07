@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-20
-(7,910 of 7,958 Peshitta verses; 48 remain). Revelation 21 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-21
+(7,937 of 7,958 Peshitta verses; 21 remain). Revelation 22 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -7488,3 +7488,156 @@ Lexical and grammatical support:
 https://cal.huc.edu/oneentry.php?cits=all&lemma=yhb+V ;
 https://cal.huc.edu/cal_entry_web.php?lemma=l%28yl+X ;
 https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf .
+
+Source checks for Revelation 21:
+
+- All 27 verses and 411 actual source positions were checked against the inflected
+  forms, vocalization, every supplied gloss alternative, numeric morphology, suffixes,
+  and final English owners. Each source position occurs once in ascending order. Two-
+  and three-position noun phrases, postpositive particles, possessive constructions,
+  negative verb units, and short predicates give grammatical English without putting
+  long clauses into combined links. Actual forms control incomplete or inconsistent
+  metadata. Articles, copulas, English nominal heads, and relative constructions are
+  supplied where the languages require them; these do not replace named actors or move
+  lexical words to other links.
+
+- In 21:1 new heavens and new earth are distinct from the former heavens and former
+  earth. The postpositive GAR belongs with the former-heavens phrase, and AZALU is a
+  plural perfect. LAYT with TOB gives the sea's present negative existence, "is no
+  more," not an additional past event. In 21:2 the holy city, new Jerusalem, is the
+  fronted object of I SAW; the seeing suffix resumes that object without introducing a
+  second city. DESCENDING is an active participle, PREPARED a passive participle, and
+  ADORNED an adjective. The order is FROM HEAVEN, FROM THE PRESENCE OF GOD, then the
+  bride comparison and HER HUSBAND. TSĒD denotes presence/proximity, not a new travel
+  destination.
+
+- In 21:3 the dwelling belongs to God and is WITH HUMANS. He DWELLS is an active
+  participle, not an automatic future. THEY WILL BE HIS OWN PEOPLE is a short
+  nominal-predicate/possessor/future-copula unit; it does not assert a separate present
+  and future being. The final nominal God-with-them phrase supplies English "is with
+  them," followed by the explicit AND WILL BE THEIR GOD. In 21:4 HE WILL WIPE AWAY ALL
+  TEARS retains the active singular agent and plural tear noun, rather than making the
+  wiping agentless. Their eyes have a genuine plural possessor. Death will not be
+  HENCEFORTH, and mourning, UPROAR, and pain have their own negatives. AGAIN belongs
+  with the final imperfect existence verb. The verse ends ON HER FACE: the actual suffix
+  is third-feminine-singular, not their. Its antecedent is not silently replaced with a
+  new noun. There is no former-things-passed causal clause in this source.
+
+- In 21:5 AND I WENT is an explicit first-person perfect before the speech. English
+  passive transposition "I was told by the one sitting" preserves the source's active
+  speaker and indirect object while allowing the subject to follow the speech verb in
+  source order. SITTING is an active participle, and ON THE THRONE remains. NEW + MAKE +
+  I forms the short unit "I am renewing," followed separately by ALL THINGS; the present
+  making is not converted into a perfect. The second HE SAID TO ME, the singular WRITE
+  imperative, THESE WORDS, FAITHFUL AND TRUE, and the plural identifying existential
+  remain. There is no BECAUSE particle or OF GOD ending to import from the reference.
+  CAL mhymn confirms faithful/trustworthy beyond the export's limited believer gloss.
+
+- In 21:6 HWAY is a separate third-feminine-plural perfect, "They have come to pass,"
+  not a copula belonging to the next I. Both explicit first-person pronouns remain in I
+  AM OLAPH AND I AM TAW. The actual Syriac letter names are retained, consistent with
+  Revelation 1:8, rather than replacing them with Greek letters. Beginning and end are
+  separate nouns. L-D-TSĀHE introduces THE THIRSTY ONE: despite the export's
+  first-person coding, the bare stative form has no attached first-person pronoun and
+  functions as the nominal recipient of I WILL GIVE. No extra assertion "I am thirsty"
+  is introduced. The explicit I and first-person imperfect GIVE remain at positions
+  10-11. EINA means SPRING in the waters/life context (CAL ayn), beyond the isolated eye
+  gloss. FROM, the waters, life, and FREELY remain. In 21:7 the conquering verb is
+  perfect, "the one who conquered," followed by the explicit HE and future inheritance.
+  The two datives give natural English HIS GOD and MY SON, with both future copulas.
+
+- In 21:8 the fearful list keeps the adversative DEYN, the separate unbelieving
+  negation, unrighteous and defiled people, murderers, SORCERERS before FORNICATORS,
+  worshipers OF IDOLS, and ALL LIARS. THEIR PORTION is a genuine plural possessor; the
+  all suffix anticipates liars instead of adding another group. The burning lake, OF
+  FIRE AND sulfur, and the second-death identification retain their actual source words.
+  In 21:9 ONE OF SEVEN ANGELS is explicit. The relative existential and ON THEM give
+  those upon whom are seven bowls, filled with the SEVEN LAST PLAGUES. He SPOKE is
+  perfect; SAYING renders the following speech infinitive. Come and show-you retain
+  their singular addressee. The wife's suffix anticipates the named Lamb; it does not
+  introduce an additional independent owner.
+
+- In 21:10 he LED ME AWAY in the spirit and SHOWED ME are third-person perfect actions
+  with genuine first-person objects. The mountain is explicitly GREAT AND HIGH. The city
+  is HOLY JERUSALEM, DESCENDING from heaven, from the presence of God. In 21:11 ITH plus
+  the city's dative gives "it has" the glory of God. ITS LIGHT is a genuine possessive
+  noun, followed by the actual repeated comparisons and both likeness nouns: precious
+  stone, jasper, and CRYSTAL. No bright adjective or extra VERY is supplied from the
+  reference.
+
+- In 21:12 the city HAS a great and high wall, HAS twelve gates, and ON THE GATES are
+  TWELVE ANGELS, which the reference omits. THEIR NAMES are written and identified as
+  the names of TWELVE TRIBES OF ISRAEL; there is no children noun. The plural pronoun is
+  retained without substituting a new explicit possessor. In 21:13 all four directions,
+  east, north, south, and west, each have THREE GATES; FROM remains, with supplied
+  English existential copulas for the nominal descriptions. In 21:14 the wall HAS twelve
+  foundations, and ON THEM are twelve names of the apostles OF THE SON, not Lamb. The
+  apostles' suffix anticipates the named Son, and the only twelve before names is not
+  repeated as an additional apostle numeral.
+
+- In 21:15 the speaking participle plus HWA gives WHO WAS SPEAKING. The separate ITH HWA
+  ON HIM construction gives one past possession, HAD UPON HIM, not an extra present and
+  past existence. Reed, measure, and gold form the short golden-measuring-reed noun
+  phrase. The measuring infinitive's object suffix anticipates the city; the purpose is
+  to measure THE CITY AND ITS WALL, with no gates noun. In 21:16 foursquare layout is a
+  passive participial state; its length is like its breadth. The measuring action is
+  perfect and its suffix anticipates the city. TWELVE THOUSAND STADES is the actual
+  count and unit, without a second twelve or an unverified metric conversion. The final
+  length, breadth, and height all retain their city possessor; the equal participle and
+  plural copula give ARE EQUAL.
+
+- In 21:17 the measuring verb's masculine suffix anticipates WALL, while the wall's
+  feminine suffix identifies the city as possessor. The count is ONE HUNDRED AND
+  FORTY-FOUR CUBITS. BY THE MEASURE OF A HUMAN, WHICH IS THE ANGEL'S retains the
+  explicit genitive comparison of the measuring standard, without adding a second cubit
+  unit. In 21:18 the wall's structure is jasper, and the city is OF PURE GOLD, IN THE
+  LIKENESS OF PURE GLASS. In 21:19 the foundations of the wall of the city are adorned
+  WITH PRECIOUS STONES, plural; there is no EVERY. The adornment is a passive
+  participle, not a perfect event. The first foundation is jasper, followed in order by
+  the second sapphire, third chalcedony, and fourth emerald.
+
+- In 21:20 the fifth has SARDIUS AND ONYX as two actual coordinated source words. They
+  are not collapsed into the reference's single sardonyx: CAL tpr explicitly cites this
+  verse's additional AND ONYX and contrasts it with the Greek's single stone. The
+  identical SARDON word at the sixth is also sardius. The seventh's KEPH DAHBA,
+  literally stone-of-gold, is the recognizable name CHRYSOLITE, supported by the Syriac
+  dictionary's specific compound entry. The two-position lexical unit retains both
+  constituents; it does not assert a uniquely identified modern mineral specimen. Eighth
+  beryl, ninth topaz, tenth chrysoprase, eleventh jacinth, and twelfth amethyst retain
+  their actual numerals and lexical owners. The last two numerals have no conjunction
+  prefix, so no extra AND is supplied.
+
+- In 21:21 twelve gates AND twelve pearls are ONE FOR ONE: a supplied English copula
+  expresses the source's nominal correspondence without adding a second gate/pearl
+  equation. EACH ONE OF THE GATES WAS OF ONE PEARL retains the single past existential
+  ITH HWA and the material MIN complement. The street OF THE CITY retains DEYN, OF PURE
+  GOLD, LIKE GLASS, and the final present ITH BAH, IS IN IT. No bright adjective or
+  extra AND before IS is imported. In 21:22 the fronted temple object is governed by I
+  DID NOT SEE IN IT. GAR gives FOR; Lord, God, AHID KUL/ALMIGHTY, the explicit HE, IS,
+  and ITS TEMPLE retain their source order and owners. There is no Lamb token in verse
+  22.
+
+- In 21:23 W-L-LAMB and W-L-CITY are parallel dative complements of passive METHBEA: FOR
+  THE LAMB AND FOR THE CITY the sun is not required, nor the moon, that THEY might shine
+  FOR IT. The two prefixes are not discarded to make a bare compound subject or move the
+  Lamb into verse 22. The glory suffix anticipates God; ILLUMINATED IT is an active
+  causative perfect with glory as its feminine singular agent and the city as object,
+  not a present generic shining or an agentless passive. ITS LAMP IS THE LAMB retains
+  the singular lamp and existential identification.
+
+- In 21:24 nations WALK and kings BRING are present active participles, not
+  automatically future. The source has neither a SAVED adjective nor THEIR on glory, nor
+  a wealth-of-nations clause. TO IT remains. In 21:25 the city's gates WILL NOT BE
+  CLOSED BY DAY is negative passive imperfect, and FOR NIGHT WILL NOT BE THERE keeps
+  GAR, the second negation, future copula, and THERE. In 21:26 they WILL BRING TO IT
+  GLORY AND HONOR OF THE NATIONS. In 21:27 the actual negative is WILL NOT BE THERE, not
+  an ENTER verb. ANYTHING UNCLEAN, anyone DOING ABOMINATION AND FALSEHOOD, and ELLA EN,
+  BUT ONLY, remain in the exclusion/exception construction. The qualifying people are
+  WRITTEN IN THE BOOK OF THE LAMB. The book's suffix anticipates the Lamb, and there is
+  no LIFE word in this source.
+
+Lexical support:
+https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A ;
+https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N ;
+https://cal.huc.edu/oneentry.php?cits=all&lemma=%2Bpr+N ;
+https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=48938 .
