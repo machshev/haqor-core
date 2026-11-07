@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-9
-(7,718 of 7,958 Peshitta verses; 240 remain). Revelation 10 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-10
+(7,729 of 7,958 Peshitta verses; 229 remain). Revelation 11 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6392,3 +6392,66 @@ Source checks for Revelation 9:
   All five explicit negative particles are represented. The final verse
   retains murders, sorceries, and fornication, with their possessors and
   three coordinated from/of phrases; this source has no theft phrase.
+
+Source checks for Revelation 10:
+
+- 10:1-2: The seer sees another angel descending from heaven and clothed
+  with a cloud. There is no source adjective "mighty." The rainbow's
+  heaven relation is retained, and the sun comparison is his appearance,
+  not an imported face noun. His feet resemble fire pillars. Existential
+  possession is idiomatic "he had" an open booklet in his hand. The right
+  foot is placed upon the sea; the left, however, is upon land. The
+  postpositive contrastive particle remains after the left-foot phrase.
+- 10:3-4: The angel cries with a loud voice like a roaring lion. The seven
+  thunders speak with their plural voices. Short subject/verb units keep
+  the postverbal thunders grammatical in English without losing the
+  independent voice noun. The seer's preparation and hearing are first
+  singular. The source's "of seven" after heaven in 10:4 is read as "the
+  seventh heaven," using the same noun-plus-cardinal ordinal construction
+  as "the seventh angel" in 10:7. This is an explicit syntactic reading;
+  the raw gloss remains "seven." The independently published Syriac text
+  confirms the extra word (https://betaportal.textgrid.d.sub.uni-goettingen.de/browse/49fh6.0).
+  It is not omitted to match the reference English. Both seal and do-not-
+  write commands address the seer in the second singular; the writing
+  verb's object suffix is singular "it," referring to what was spoken.
+- 10:5-7: The angel raises his hand and swears; no unsupported "right"
+  adjective is added to the hand. The first verse continues into the oath
+  across the boundary. He swears by the living one, creator of heaven,
+  its contents, earth, and its contents; this source has no separate sea
+  creation clause. The creation verb's anticipatory object suffix resolves
+  into its following object. The negative copular time clause uses one
+  short four-position unit so again/further, time, not, and be all remain
+  represented in grammatical English. In the seventh angel's days, when
+  ready to sound, God's mystery is to be completed. The ma d- construction
+  has its established temporal sense "when," rather than the isolated
+  pronominal gloss "what" (https://cal.huc.edu/oneentry.php?cits=all&lemma=mh%40d_+c).
+  The source's perfect
+  completion is rendered prospectively within the oath's future setting,
+  and its resumptive conjunction becomes English "then." It is not made
+  into an already completed event in the narrator's present. God declared
+  this mystery to his servants, the prophets; the active declarer and the
+  appositional mystery reference remain distinct.
+- 10:8-9: The voice again speaks with the seer and gives second-singular
+  go/take commands. The booklet has no repeated open adjective in 10:8.
+  The angel's locations are land then sea in that verse, preserving the
+  source order. Hand-of-angel suffixes resolve idiomatically rather than
+  becoming duplicated possessors. The seer goes to the angel while telling
+  him to give the booklet; the participle plus explicit pronoun is first
+  person, not an imported third-person speaker. The angel's take/eat
+  commands are second singular, with the booklet as "it." The causative
+  bitter verb, affected-person dative, and possessed belly form a short
+  three-position unit: "it will make your belly bitter." This absorbs the
+  repeated possessor without inventing a separate beneficiary. Belly is
+  singular. In the mouth it will be like honey; no absent sweet adjective
+  is supplied in 10:9.
+- 10:10-11: The seer takes the booklet from the angel's hand and eats it.
+  The explicit sweet state follows the honey comparison in the source;
+  their short three-position comparative unit gives "sweet as honey."
+  English inversion retains the bitter predicate before "my belly," with
+  the seer as eater and the belly as the affected singular subject. The
+  final speech retains passive-participial "given," the second-person
+  recipient, again, and the actual time noun, rather than replacing the
+  whole commission with an unsupported modal. The prophecy concerns
+  peoples, nations, languages, and many kings; the source has no princes
+  noun. The final adjective is kept with the immediately preceding kings
+  in a short noun/adjective unit.
