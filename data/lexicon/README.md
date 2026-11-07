@@ -108,13 +108,13 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 
 | Field | |
 |---|---|
-| `id` | Optional, kebab case, unique in the entry (`happy-is`), for a sibling word's `kin` to name. |
+| `id` | Optional, kebab case, unique in the entry (`right-path-is`), for a sibling word's `kin` to name. |
 | `gloss` | A few words. |
 | `definition` | A sentence or two, drawn from the evidence. |
 | `evidence` | At least one scripture citation. Mark the verses whose use fixes the sense `"role": "defining"`. |
 | `tags` | Optional. |
 | `cognate_ids` | Optional: the entry's cognates that go with this sense, as on a word. |
-| `kin` | Optional: the `id`s of sibling words' senses that share this sense's meaning (אֶשֶׁר "happy is…!" and the piel of אָשַׁר "call happy"). Never a sense of the same word. |
+| `kin` | Optional: the `id`s of sibling words' senses that share this sense's meaning (אֶשֶׁר "on the right path is…!" and the piel of אָשַׁר "call on the right path"). Never a sense of the same word. |
 | `senses` | Optional narrower senses, in the same shape. |
 
 ### A cognate
@@ -150,7 +150,7 @@ So naming a cognate in `cognate_ids` says it shares that meaning, and leaving
 it out says it does not. Name each cognate on every word and sense whose
 meaning it shares, and on none other: a cognate named on no word is listed
 under the table. A word whose root's cognates all mean something else (the
-happiness words of אשר, whose cognates mean "footstep, trace") shows a
+tree תְּאַשּׁוּר of אשר, whose cognates mean "footstep, trace") shows a
 negative balance; one whose meaning they share shows a positive one.
 
 ### Sounds

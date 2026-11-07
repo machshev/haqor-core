@@ -142,7 +142,8 @@ A sense cites scripture only; the validator rejects anything else.
    over. A cognate that means something else entirely is the strongest
    evidence the word may belong to another root, or have moved far from it.
 6. **Kin.** Where a sense shares its meaning with a sibling word's sense (the
-   noun אֶשֶׁר "happy is…!" and the verb's "call happy"), give the sibling
+   noun אֶשֶׁר "on the right path is…!" and the verb's "call on the right
+   path"), give the sibling
    sense an `id` and name it in `kin`. The sibling's uses and cognates then
    count for it, and its cognates no longer count against it.
 
