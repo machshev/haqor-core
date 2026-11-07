@@ -65,7 +65,10 @@ Every claim cites its evidence, and the validator enforces it:
 1. **Scripture's own use** of the Hebrew decides its meaning: where its use
    fixes the sense, its parallels and opposites. This includes the New
    Testament where it quotes or expounds a Hebrew passage, which is scripture
-   interpreting scripture, cited by its verse.
+   interpreting scripture, cited by its verse, and the Peshitta: its New
+   Testament may be the original of some books, and is at least a translation
+   from the apostles' own time, so its use of a word counts for sense as the
+   Hebrew's does.
 2. **Cognates** in the other Semitic languages come next: the same root in
    Akkadian, Ugaritic, Aramaic, Arabic, Ge'ez and the rest, each cited from
    its own language's dictionary or texts.

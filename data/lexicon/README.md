@@ -19,7 +19,9 @@ rules for writing an entry.
   statement cites scripture only.
 - **Weighing evidence.** Scripture's own use of the Hebrew decides its
   meaning, including the New Testament where it quotes or expounds the
-  passage. Cognates in the other Semitic languages come next. The Septuagint
+  passage, and the Peshitta, whose New Testament may be the original of some
+  books and is at least a translation from the apostles' own time. Cognates
+  in the other Semitic languages come next. The Septuagint
   is a translation and no evidence of the Hebrew's meaning; it is kept only
   as the bridge from the New Testament's Greek back to the Hebrew word.
 - **One root, all its words.** Every word is taken to go back to a root,
