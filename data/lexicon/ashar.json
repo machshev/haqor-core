@@ -11,7 +11,7 @@
     "forgiveness"
   ],
   "gloss": "step, go straight on; happy; (particle) who, which, that",
-  "summary": "The root of the step and the way walked. The verb is to go straight on, or to lead someone on, in a way; אֲשֻׁר is a step; and אַשְׁרֵי, \"the happinesses of…!\", is the exclamation over one whose way goes well, above all the one who walks in Yahweh's way and the one whose sin he has forgiven. From the same verb comes the call \"happy!\" itself: to count or call someone happy. The particle אֲשֶׁר, \"who, which, that\", the Hebrew Bible's commonest way of joining one clause to a word in another, goes back in the related languages to a noun for a footstep, trace or place, which Akkadian also uses for \"where\".",
+  "summary": "The root of the step and the way walked. The verb is to go straight on, or to lead someone on, in a way; אֲשֻׁר is a step; and אַשְׁרֵי, \"the happinesses of…!\", is the exclamation over one whose way goes well, above all the one who walks in Yahweh's way and the one whose sin he has forgiven. From the same verb comes the call \"happy!\" itself: to count or call someone happy. The particle אֲשֶׁר, \"who, which, that\", the Hebrew Bible's commonest way of joining one clause to a word in another, goes back in the related languages to a noun for a footstep, trace or place, which Akkadian also uses for \"where\". The tree תְּאַשּׁוּר is built on the root too, though how is not clear.",
   "words": [
     {
       "lemma": "אֲשֶׁר",
@@ -721,6 +721,35 @@
       }
     },
     {
+      "lemma": "תְּאַשּׁוּר",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a tree of Lebanon (box tree?)",
+      "summary": "A noun with the prefix תְּ־ on this root. How a tree's name joins the root's sense of going straight on is not clear; the tree itself is named only in lists of trees, so which one it is cannot be fixed from scripture.",
+      "senses": [
+        {
+          "gloss": "a tree, named with the cypress and the plane",
+          "definition": "One of the trees Yahweh will set in the wilderness, and one of \"the glory of Lebanon\" that will beautify his sanctuary.",
+          "evidence": [
+            {
+              "ref": "Isa.41.19",
+              "role": "defining",
+              "note": "\"the cypress, the plane and the תְּאַשּׁוּר together\", planted in the Arabah."
+            },
+            {
+              "ref": "Isa.60.13",
+              "role": "defining",
+              "note": "The same three trees, \"the glory of Lebanon\", brought to beautify the place of the sanctuary."
+            },
+            {
+              "ref": "Ezk.27.6",
+              "note": "שֵׁן בַּת־אֲשֻׁרִים, the ivory of Tyre's deck, may be ivory set in this wood if the letters are read as one word (בִּתְאַשֻּׁרִים, \"in תְּאַשּׁוּר wood\"); as divided in the text, \"the daughter of Ashurim\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "lemma": "אֹשֶׁר",
       "pos": "noun",
       "gender": "m",
@@ -955,5 +984,5 @@
       ]
     }
   ],
-  "note": "Left out, for their own entries: אָשֵׁר Asher, the tribe and its land, and the gentilic אָשֵׁרִי (Jdg 1:32): Leah names him with this root's words (Gen 30:13), so his entry should link back here; אֲשֵׁרָה Asherah, a goddess's name and her cult pole (Ugaritic ʾaṯrt), whether from this root is not settled; אַשּׁוּר Assyria (Akkadian Aššur); תְּאַשּׁוּר, a tree (Isa 41:19; 60:13), and בַּת־אֲשֻׁרִים (Ezk 27:6), which may be the same tree word: their link to the root is uncertain. BDB files the particle in its own section apart from the verb; one entry here because the cognates join the particle to a noun for footstep, trace or place, and Ge'ez አሠר joins \"footprint\" and \"step\", Ugaritic ʾṯr is a verb \"march\", and Brockelmann and Dillmann set the Hebrew words beside them. Whether אֶשֶׁר \"happiness\" belongs with \"step\" or with another root is argued (some lexicons compare Ugaritic or Arabic words for good fortune); within scripture the piel uses both senses, \"lead on\" and \"call happy\". The particle's senses are illustrated, not exhaustive: 5,500 tokens."
+  "note": "Kept as one root: the particle, the step, the verb, the happiness words and the tree. The cognates join the particle to a noun for footstep, trace or place (Brockelmann sets אֲשֶׁר beside Syriac ܐܬܪܐ, Arabic أثر and Akkadian ašru; Akkadian ašar \"where\" is the noun doing a particle's work), and Ge'ez አሠר and Dillmann join \"footprint\" to the step אֲשֻׁר; Ugaritic ʾṯr is a verb \"march\". No dictionary consulted links אֶשֶׁר \"happiness\" to these; within scripture the piel carries both \"lead on\" and \"call happy\" (Gen 30:13 has the noun and the verb together). The tree תְּאַשּׁוּר is kept though its link to the root's sense is not clear. Left out, for their own entries: the names אָשֵׁר Asher and the gentilic אָשֵׁרִי (Jdg 1:32), whom Leah names with this root's words (Gen 30:13), so his entry should link back here; אֲשֵׁרָה Asherah, a goddess's name and her cult pole (Ugaritic ʾaṯrt), whose entry should weigh a link to this root; and אַשּׁוּר Assyria, from the Akkadian city name Aššur, which belongs to another word. BDB lists the same occurrences under both אֲשׁוּר and אַשֻּׁר, one word here. CAD and Leslau not consulted. The particle's senses are illustrated, not exhaustive: 5,500 tokens."
 }

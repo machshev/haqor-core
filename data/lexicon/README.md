@@ -20,6 +20,13 @@ rules for writing an entry.
   passage. Cognates in the other Semitic languages come next. The Septuagint
   is a translation and no evidence of the Hebrew's meaning; it is kept only
   as the bridge from the New Testament's Greek back to the Hebrew word.
+- **One root, all its words.** Every word is taken to go back to a root,
+  even where no one has yet reconstructed how its meaning does. Keep all the
+  root's words in its entry, even where a dictionary files them apart, and
+  never leave a word out because its link to the root's sense is not yet
+  understood: keep it and say in its `summary` that the link is not clear.
+  Leave a word out only when the evidence puts it under another root (a loan,
+  or cognates pointing elsewhere); proper names have their own entries.
 - **Distilled first.** `gloss`, then `summary`, then the detail that backs them
   up. Someone who reads only the first two should come away with the right
   idea.
