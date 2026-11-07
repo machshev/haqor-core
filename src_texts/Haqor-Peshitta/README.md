@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-17
-(7,850 of 7,958 Peshitta verses; 108 remain). Revelation 18 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-18
+(7,874 of 7,958 Peshitta verses; 84 remain). Revelation 19 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -7117,3 +7117,168 @@ Source checks for Revelation 17:
   dative. KINGSHIP renders the royal reign/kingdom noun in its rule-over relation to the
   KINGS OF THE EARTH. The kings' feminine suffix anticipates earth, rather than adding a
   separate her referring to the city.
+
+Source checks for Revelation 18:
+
+- 18:1: AFTER THESE THINGS is the temporal from-after compound. I SAW is first-singular
+  perfect, and WHO DESCENDED is perfect, not an active descending participle. WHO HAD is
+  existential possession backshifted within the vision, followed by GREAT AUTHORITY. The
+  earth SHONE FROM HIS GLORY, retaining its active shining verb and the genuine
+  masculine singular glory possessor.
+
+- 18:2: The angel CRIED ALOUD with a LOUD VOICE. Both FALLEN perfects remain before
+  BABYLON THE GREAT. She became a HABITATION FOR DEMONS AND A PRISON FOR ALL SPIRITS
+  THAT ARE UNCLEAN AND DETESTABLE. Prison renders custody as the place of confinement.
+  The explicit not-clean pair remains in unclean; both adjectives are plural. This
+  source has NO BIRD OR BEAST clauses beyond these spirits.
+
+- 18:3: FROM THE WINE OF HER FORNICATION SHE POURED FOR ALL THE NATIONS retains the
+  feminine singular perfect subject, not a plural nations-drank clause. CAL mzg gives
+  mixing and the pouring/serving-liquid sense
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=mzg+V). Her fornication is not
+  changed to the reference's wrath. The kings' feminine suffix anticipates EARTH; WITH
+  HER is a genuine Babylon reference. The merchants GREW RICH FROM THE POWER OF HER
+  MADNESS. Madness retains SHNAYA rather than silently importing luxury; CAL's shny noun
+  entry confirms insanity/madness
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=%24ny+N).
+
+- 18:4: COME OUT is second-plural imperative, followed by FROM WITHIN HER and MY PEOPLE,
+  with genuine feminine and first-singular suffixes. SO THAT YOU MAY NOT SHARE IN HER
+  SINS retains the negative purpose construction. LEST YOU RECEIVE SOME OF HER PLAGUES
+  renders the following prohibitive clause, with some-of giving normal English to the
+  partitive from relation. Sins and plagues have genuine feminine possessors.
+
+- 18:5: SINS HAVE CLUNG TO HER is a short verb/complement/subject unit retaining the
+  explicit to-her relation, followed by UP TO HEAVEN. It does not drop that pronoun in
+  favor of only sins-reaching-heaven. GOD REMEMBERED HER INIQUITIES retains God as the
+  singular semantic subject of the middle/reflexive remember verb and the genuine
+  feminine possessor on plural iniquities.
+
+- 18:6: REPAY HER, DOUBLE IT and MIX are three second-plural imperatives. AS ALSO SHE
+  REPAID retains the explicit also and feminine pronoun. DOUBLE IT FOR HER is followed
+  by the explanatory A DOUBLE MEASURE ACCORDING TO HER DEEDS: the second double noun
+  describes the resulting repayment, not another doubling of an already doubled measure.
+  IN THAT CUP WHICH SHE MIXED retains the demonstrative and perfect; MIX FOR HER A
+  DOUBLE MEASURE retains the second genuine recipient and final double noun. It supplies
+  the understood repayment object in double-it, not a new source actor or event.
+
+- 18:7: The proportional clause describes how she GLORIFIED HERSELF AND EXALTED HERSELF,
+  both perfects. IN LIKE MEASURE SHALL BE THE TORMENT AND MOURNING supplies an English
+  copula to the matching-degree predicate; there is NO give verb in this source verse.
+  IN HER HEART SHE SAYS is active participle speech. I SIT AS A QUEEN retains the
+  first-person sitting participle and explicit I; A WIDOW I AM NOT keeps the negative
+  existential, and MOURNING I WILL NOT SEE keeps the second negative and first-singular
+  imperfect.
+
+- 18:8: METULHANA has null exported glosses but is the recognizable
+  because-of-this/THEREFORE compound. IN ONE DAY is an actual numeral phrase. Plagues
+  WILL COME UPON HER: death AND mourning AND famine, with all three named. WITH FIRE SHE
+  WILL BURN retains the intransitive basic-stem imperfect. MIGHTY IS THE LORD WHO JUDGED
+  HER retains the genuine object and perfect judging, without importing a separate God
+  noun or changing judged to present judges.
+
+- 18:9-10: The two future lament verbs and both feminine references become WEEPING FOR
+  HER AND MOURNING OVER HER BY THE KINGS OF THE EARTH. This English nominal inversion
+  keeps the kings explicit as agents while maintaining source links. Their perfect
+  fornication and self-exaltation remain distinct, followed by WHEN THEY SEE THE SMOKE
+  OF HER BURNING and WHILE STANDING FAR AWAY FROM FEAR OF HER TORMENT across the verse
+  boundary. THEY WILL SAY retains the imperfect. There are THREE separate WOES in verse
+  10. GREAT CITY, BABYLON and MIGHTY CITY all remain. IN ONE HOUR THERE HAS COME YOUR
+  JUDGMENT preserves the perfect and genuine second-feminine-singular judgment
+  possessor.
+
+- 18:11: The merchants WILL WEEP AND MOURN OVER HER. AND THEIR CARGO HAS NO BUYER
+  ANYMORE renders cargo, the negative existential, the nominalized buying participle and
+  again as grammatical English. Their is a genuine plural owner, not her. The
+  conjunction is AND, not an invented because. The colon introduces the repeated cargo
+  noun and the catalogue continuing through verses 12-13.
+
+- 18:12-13: Every actual commodity remains: gold, silver, precious stones, pearls,
+  linen, purple, scarlet silk, aromatic wood, ivory vessels, vessels of precious wood,
+  brass, iron, marble, cinnamon, ointments, perfume, frankincense, wine, oil, fine
+  flour, sheep, horses, chariots, bodies and souls of humans. The source's
+  silk-OF-scarlet is one short scarlet-silk unit, not a silently added and-scarlet item.
+  Aromatic-wood renders wood-of-perfume. All three all/every expressions in verse 12
+  remain. Verse 13 has NO amomum, wheat or separate beasts-of-burden item. Bodies AND
+  souls are both plural, with OF HUMANS attached to the pair.
+
+- 18:14: YOUR FRUIT and YOUR SOUL both retain genuine second-feminine-singular
+  possessors. THE DESIRE OF YOUR SOUL is appositional to the fruit desired. HAS DEPARTED
+  occurs twice; the second subject is ALL THAT IS RICH AND PRAISEWORTHY. NOT AGAIN WILL
+  YOU SEE THEM is second-feminine-singular imperfect with a separate plural object; the
+  source does not say the traders will obtain them.
+
+- 18:15: AND THEY WILL NOT FIND THEM retains the negative plus third-plural active
+  imperfect and plural object, completing the preceding loss theme. A sentence boundary
+  then introduces THE MERCHANTS OF THESE THINGS, WHO GREW RICH FROM HER, FROM AFAR WILL
+  STAND. This preserves the source's basic-stem find rather than recoding it as a
+  passive merchants-will-be-found clause. FROM FEAR OF HER TORMENT keeps the genuine
+  feminine possessor. WHILE WEEPING AND MOURNING uses the active weeping participle and
+  passive-shaped mourning state, continuing into saying in verse 16.
+
+- 18:16-17: Two WOES precede the GREAT CITY CLOTHED IN LINEN AND PURPLE AND SCARLET.
+  Clothed is feminine singular; WHICH WERE GILDED is feminine PLURAL and describes the
+  clothing, followed by GOLD, PRECIOUS STONES AND PEARLS. The opening of verse 17
+  continues that lament: FOR IN ONE HOUR THERE WAS EMPTIED WEALTH SUCH AS THIS. The
+  emptying is perfect in its passive/reflexive stem. Then a new narrative sentence names
+  ALL PILOTS OF SHIPS, ALL WHO TRAVEL IN SHIPS TO PLACES, MARINERS AND ALL WHO WORK AT
+  SEA. The three all quantifiers and plural ships/places remain; AT A DISTANCE STOOD
+  retains the final perfect, rather than automatically carrying the earlier future stand
+  into this scene.
+
+- 18:18: THEY WEPT FOR HER is perfect with a genuine feminine object, not the
+  reference's unsuffixed cried. WHILE WATCHING and AND SAYING retain the participial
+  circumstances of that past lament. WHO IS IT THAT RESEMBLES THE GREAT CITY retains the
+  interrogative, copular pronoun and relative resembling verb. No separate other or this
+  word is inserted.
+
+- 18:19: They CAST DUST ON THEIR HEADS AND CRIED ALOUD, both perfects, followed by WHILE
+  WEEPING AND MOURNING AND SAYING. Heads has a genuine plural possessor. Both WOES
+  remain. IN WHICH GREW RICH THOSE WHO HAD A SHIP AT SEA keeps the locative relative,
+  perfect enrichment and possessive existential. Ship is SINGULAR, naturally
+  distributive for these owners; no extra all is placed before those. FROM HER SPLENDOR
+  renders the genuine possessor and honor/glory noun in the enrichment context. The
+  final d-prefix introduces the causal FOR IN ONE HOUR SHE BECAME DESOLATE, a perfect
+  result.
+
+- 18:20: REJOICE OVER HER is second-plural imperative, addressed to HEAVENS AND HOLY
+  ONES AND APOSTLES AND PROPHETS. The source has holy ones, not angels. GOD HAS JUDGED
+  YOUR CASE AGAINST HER renders the perfect judge verb and cognate judgment noun as the
+  legal case settled for the plural addressees. Against-her gives idiomatic English to
+  the adverse/retributive relation of the source's from-her; it does not erase the
+  feminine pronoun or turn your plural claim into her judgment.
+
+- 18:21: English passive inversion, THERE WAS TAKEN UP BY ONE OF THE MIGHTY ANGELS A
+  GREAT STONE, preserves the taking actor and all source nouns while keeping ascending
+  links. Mighty is plural with angels; GREAT modifies STONE, not the following
+  millstone. HE CAST IT INTO THE SEA AND SAID retains both perfects, followed by THUS
+  WITH A VIOLENT RUSH THERE WILL BE CAST DOWN BABYLON THE GREAT CITY. The final verb
+  TESHKAḤ is a feminine third-singular basic-stem imperfect, unlike the passive cast
+  verb. SHE WILL NOT PREVAIL AGAIN uses the independently attested overcoming/capability
+  sense: CAL shkh, G sense 2, independent-verb subsection, gives overcome/conquer with
+  Syriac examples (https://cal.huc.edu/oneentry.php?cits=all&lemma=%24kx+V). This
+  contextual loss of power after overthrow is distinguished from the reference's passive
+  be-found reading; the actual source form is retained.
+
+- 18:22: SOUND OF A HARP AND OF A TRUMPET AND OF KINDS OF MUSIC AND OF TRUMPETERS
+  preserves the actual instrument and performer inventory. Harp and trumpet are
+  singular, kinds and trumpeters plural. WILL NOT BE HEARD IN YOU AGAIN is passive
+  imperfect with a genuine second-feminine-singular location suffix. No pipers or
+  additional artisan clause is imported from the reference.
+
+- 18:23: LIGHT OF A LAMP WILL NOT BE VISIBLE TO YOU AGAIN renders the passive visual
+  verb with its actual TO-YOU dative; the following voices use IN YOU. VOICE occurs
+  twice, for BRIDEGROOM AND BRIDE, and both not/again pairs remain. YOUR MERCHANTS WERE
+  THE GREAT ONES OF THE EARTH retains the past existential, not separate present and
+  past assertions; the great-ones suffix anticipates earth. The printed merchant suffix
+  is second person and the export encodes feminine plural, despite the singular city
+  context and form; English your preserves the address without silently altering the
+  source metadata. Both causal particles remain. BY YOUR SORCERIES YOU DECEIVED ALL THE
+  NATIONS is active causative perfect with second-feminine-singular subject, not an
+  agentless passive nations-were-deceived clause.
+
+- 18:24: IN HER WAS FOUND THE BLOOD OF PROPHETS AND HOLY ONES WHO WERE SLAIN ON THE
+  EARTH preserves the past passive finding and plural slain participle in its past
+  narrative setting. There is NO extra all-other-people slain clause in this source. The
+  blood belongs to the named prophets and holy ones; the source is not expanded to the
+  reference's universal final group.
