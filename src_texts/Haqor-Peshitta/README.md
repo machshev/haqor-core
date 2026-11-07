@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-12
-(7,765 of 7,958 Peshitta verses; 193 remain). Revelation 13 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-13
+(7,783 of 7,958 Peshitta verses; 175 remain). Revelation 14 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -6566,3 +6566,109 @@ Source checks for Revelation 12:
   suffix anticipates God; the testimony suffix anticipates Jesus. The existential/dative
   supplies have. The actual source chapter ends here, without Murdock's final
   standing-on-the-sand sentence.
+
+Source checks for Revelation 13:
+
+- 13:1: The source opens with FIRST-person singular stood on the sand of the sea, then
+  I-saw, rather than Murdock's previous-chapter third-person standing sentence. The
+  ascending beast has ten horns, seven heads and ten diadems. Name is SINGULAR on its
+  plural heads, not Murdock's names. Short ascending/beast and existential/dative units
+  give normal English order and possession.
+- 13:2: Likeness is an actual noun, retained in was-in-the-likeness of a leopard. The
+  feet are compared with a BEAR, not Murdock's wolf; lions is plural in the mouth
+  comparison. English supplies the understood feet/mouth in those comparisons. The
+  give/to-it/dragon unit retains the dragon as giver and the beast as recipient. HIS
+  power and HIS throne belong to the dragon, distinct from the beast's feminine suffixes
+  on its feet and mouth.
+- 13:3: One of its heads is as though battered to death. The export has no gloss for
+  `פעיעתא`; Ginoskos lists the exact lemma `ܦܥܝܥܐ` as battered/beaten/bruised/worn and
+  the related `ܦܥ` as beat/wound
+  (https://ginoskos.com/dictionary?o%5Bascension%5D=desc&o%5Bcolumn%5D=lemma&p%5Bpage%5D=74&p%5Bsize%5D=20).
+  Battered follows that lexical evidence, with to-death supplied by the next source
+  word, rather than guessing from an empty gloss. The separate wound-of-its-death
+  construction is idiomatically its-mortal-wound, healed passively. All's suffix
+  anticipates earth. Following renders the after/behind relation of the earth's
+  amazement toward the beast.
+- 13:4: Both worship clauses remain: worship of the dragon because he gave authority,
+  then worship of the beast. The saying infinitive introduces BOTH questions, including
+  who resembles this beast, absent from the reference. Fight-with-it uses the fighting
+  sense of the infinitive's root in context; ability is a separate active participle.
+- 13:5: A mouth and authority are given to the beast in two separate passive clauses.
+  Speaking is an active participle modifying mouth; great things is plural, and
+  blasphemy is a mass noun. Authority is to act for forty-two months, with the
+  three-position duration retaining both numerals and months.
+- 13:6: Opened is a feminine singular perfect referring to the beast. Blaspheme occurs
+  twice: an infinitive, then an imperfect purpose clause. Name and lodging have NO
+  possessive suffixes; lodging belongs to THOSE WHO ARE LODGED in heaven. The latter is
+  a passive-participle state. The English keeps the against/in relations with both
+  objects without importing Murdock's his-name/his-tabernacle or a separate and-them
+  object.
+- 13:7: The permission to make war with the saints and overcome THEM precedes the giving
+  of authority, unlike the reference order. All's feminine plural suffix anticipates the
+  list of plural tribes, nations, languages and peoples. The two giving clauses remain
+  passive; the two actions granted are infinitives.
+- 13:8: The future worship predicate becomes English passive worship-will-be-offered TO
+  the beast BY all the inhabitants, preserving both actor and recipient without a long
+  reordered span. Those who are not inscribed are the people themselves: this source has
+  no names noun here. The book of life is further identified as that of the Lamb.
+  `קטילא` is slain/killed, despite the erroneous SEDRA stain gloss; CAL explicitly lists
+  the derived adjective qṭīl as murdered/killed
+  (https://cal.huc.edu/oneentry.php?cits=all&lemma=q%2Bl+V). This nominal adjective is
+  not mislabeled as numeric tense 6 in the export. The source says BEFORE the plural
+  foundations of the world, not Murdock's from; the foundation suffix anticipates world.
+- 13:9: The existential plus dative is idiomatic has; ears is plural. The final
+  third-singular imperfect has the exhortative force let-him-hear, rather than an
+  invented second-person imperative.
+- 13:10: Lead-away is an ACTIVE participle in a generic captor clause; others supplies
+  its understood transitive object. The captor goes into captivity, and whoever kills
+  with the sword will be killed by the sword. The latter is passive imperfect, not a
+  passive participle. Here is FAITH then ENDURANCE of the saints, in the actual source
+  order.
+- 13:11: The second beast ascends from earth and has two horns. Resemble is feminine
+  SINGULAR, so the BEAST itself resembles a lamb; the source does not attach that
+  comparison merely to plural horns. The existential/past/dative unit supplies it-had.
+  Speaking is an active participle with an explicit past auxiliary, like the dragon.
+- 13:12: The first beast's authority is fronted as object, with all-of-it resuming
+  authority. Exercise and cause are imperfects, rendered prospectively will in the
+  vision's prediction; the preceding past vision and this prospective description remain
+  distinct. Before-HIM has a genuine masculine singular suffix: the English leaves its
+  antecedent unresolved rather than silently changing the source form or confidently
+  identifying a different actor. The complete earth-and-dwellers worship clause, omitted
+  by the reference, remains. English normalizes the coordinated result as
+  cause-them-to-worship. A four-position relative/passive unit gives
+  whose-mortal-wound-was-healed, retaining relative, healing, wound and its-death
+  relation.
+- 13:13: The beast will perform great signs; fire is fronted as the object it will cause
+  to descend. Both make/do predicates are imperfects; descend is infinitive. From
+  heaven, on earth, and before human beings are three distinct relations. The
+  great-signs noun/adjective unit does not hide another source actor or event.
+- 13:14: Deceive is imperfect, rendered prospectively. The means are signs granted to
+  the second beast TO PERFORM before the first beast, a full clause absent from the
+  reference. English plural were-granted agrees with signs although the preceding Syriac
+  passive is encoded singular. Telling is the continuing force of the saying infinitive.
+  The earth-dwellers are told to make an image FOR the beast which has the sword wound
+  AND LIVED; lived is perfect, not a future recovery verb.
+- 13:15: Granted and give are separate source verbs; the gift is BREATH/spirit to the
+  beast's image, not an independent life lexeme. The following cause verb is feminine
+  singular, identifying the SECOND BEAST as the one causing the deaths, rather than the
+  masculine image. The source has no image-speaking clause. The anticipatory masculine
+  object at to-it/the-image is rendered as one short object unit. Those refusing worship
+  are to be killed passively.
+- 13:16: The prospective cause predicate is bring-it-about, with both the
+  for-all-of-them scope and the later to-them recipient retained. Small precedes great;
+  rich and poor are followed by MASTERS AND SERVANTS, not Murdock's bond and free. A
+  mark is to be given passively on their RIGHT HANDS, plural, or on the space BETWEEN
+  THEIR EYES. Space supplies normal English grammar for on-between, without substituting
+  an absent forehead noun.
+- 13:17: This clause continues the mark arrangement: no one may buy or sell AGAIN except
+  the marked person. The buy/sell distinction follows peal versus pael vocalization of
+  the same root; there is no independent ability word. The mark is OF THE NAME of the
+  beast, not mark-OR-name. On-him retains the actual locative suffix, while its-name
+  refers to the beast.
+- 13:18: Here-is-wisdom has an anticipatory feminine singular existential suffix, not a
+  second owner of wisdom. And-whoever-has-within-him understanding retains the relative
+  prefix, conjunction and in-him relation. Let-him-calculate is a third-singular
+  imperfect exhortation; its object suffix anticipates the explicit number. A short
+  number/is/for unit moves postpositive FOR into natural English order. The number is of
+  a human being, followed directly by SIX HUNDRED AND SIXTY AND SIX; no extra
+  its-number-is clause is imported.
