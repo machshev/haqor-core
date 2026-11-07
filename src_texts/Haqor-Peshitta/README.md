@@ -8,8 +8,8 @@ This is an incremental translation project: only the verses in the TSV have
 word links. Other verses retain the existing Murdock translation and select
 whole verses in the English reader.
 
-Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 2 John, 3 John, and Jude
-(7,449 of 7,958 Peshitta verses; 509 remain). 1 John 1 is next.
+Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1, 2 John, 3 John, and Jude
+(7,459 of 7,958 Peshitta verses; 499 remain). 1 John 2 is next.
 The unlinked Murdock fallback is temporary coverage, not a completed
 translation or word alignment.
 
@@ -5684,3 +5684,32 @@ Source checks for 2 Peter 3:
   addressees' own steadfastness. The closing 3:18 includes both the Lord/
   Saviour title and the explicit genitive "and of God the Father". The
   Father phrase is present in this Syriac source and is retained.
+
+Source checks for 1 John 1:
+
+- 1:1 retains the source's opening first-person plural declaration. The
+  seeing verb's resumptive object is absorbed into the English relative
+  construction, rather than duplicating its object. The coordinated seeing,
+  looking, and touching predicates retain the same first-person participants.
+- 1:2 distinguishes the past manifestation and seeing from the present
+  testimony and proclamation. Positions 3-4 are active participles without
+  a past auxiliary; they are not rendered as past actions. The later
+  existential/copula and past auxiliary are a small combined construction.
+- 1:3 retains the postpositive contrastive particle and both possessive
+  forms as "and yet our own fellowship". It does not turn the contrastive
+  particle into a relative pronoun. The possession/existence construction
+  describing the addressees' fellowship is rendered as a small grammatical unit.
+- 1:4 has first-person plural "our joy" and second-person plural "in you";
+  neither participant is substituted for the other.
+- 1:5 combines the light noun and its actual following copula. It does not
+  assign an unsupported "indeed" to that copula. The conjunction before
+  darkness and the full emphatic negation remain explicit. In 1:6 the
+  conjunction coordinating the negative walking clause is likewise retained.
+- 1:6, 1:8, and 1:10 retain the initial "and if" prefix. The postpositive
+  contrast in 1:7 and 1:9 is English "but if". The conditional subjects,
+  first-person objects, and the negative scope in all five clauses are kept.
+- 1:9's trustworthiness expression is a passive-participial/adjectival
+  construction with its copular pronoun, rather than an active believing
+  action. Forgiveness and cleansing retain their third-person agent and
+  first-person plural recipients. In 1:10 the source says the word is not
+  "with us", which is retained rather than replaced from another text.
