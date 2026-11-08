@@ -11,7 +11,7 @@
     "healing"
   ],
   "gloss": "go up, rise; bring up; on, above",
-  "summary": "עָלָה is upward movement: people ascend, water or smoke rises, and plants come up. The hiphil brings something up, including an offering presented on the altar; related words name an ascent, a step, an upper room, or what is high. עַל expresses being on or over something and extends to opposition, concern, and cause. Leaves, a pestle, a water-channel and healing remain in the family, without treating their links to rising as settled.",
+  "summary": "עָלָה is upward movement: people ascend, water or smoke rises, and plants come up. The hiphil brings something up, including an offering presented on the altar; related words name an ascent, a step, an upper room, or what is high. עַל expresses being on or over something and extends to opposition, concern, and cause. Leaves, a pestle, a water-channel and healing remain in the family, without treating their links to rising as settled. Akkadian, Ugaritic, Phoenician, Arabic and Ge'ez share both the verb of going up and the preposition “on”; Ugaritic and Phoenician also use the verb for offering up a sacrifice, and Phoenician names the whole burnt offering ʿlt.",
   "words": [
     {
       "lemma": "עַל",
@@ -38,7 +38,10 @@
           ],
           "cognate_ids": [
             "ar-ala-prep",
-            "akk-eli"
+            "akk-eli",
+            "uga-al",
+            "phn-al",
+            "gez-laela"
           ]
         },
         {
@@ -53,7 +56,9 @@
           ],
           "cognate_ids": [
             "ar-ala-prep",
-            "akk-eli"
+            "akk-eli",
+            "uga-al",
+            "phn-al"
           ]
         },
         {
@@ -73,7 +78,8 @@
           ],
           "cognate_ids": [
             "ar-ala-prep",
-            "akk-eli"
+            "akk-eli",
+            "phn-al"
           ]
         },
         {
@@ -93,7 +99,9 @@
           ],
           "cognate_ids": [
             "ar-ala-prep",
-            "akk-eli"
+            "akk-eli",
+            "uga-al",
+            "phn-al"
           ]
         },
         {
@@ -112,7 +120,8 @@
             }
           ],
           "cognate_ids": [
-            "akk-eli"
+            "akk-eli",
+            "phn-al"
           ]
         }
       ]
@@ -151,7 +160,8 @@
                 "ar-ala",
                 "akk-elu",
                 "uga-aly",
-                "phn-aly"
+                "phn-aly",
+                "gez-laala"
               ]
             },
             {
@@ -176,7 +186,8 @@
                 "ar-ala",
                 "akk-elu",
                 "uga-aly",
-                "phn-aly"
+                "phn-aly",
+                "gez-laala"
               ]
             }
           ]
@@ -203,7 +214,8 @@
                 "ar-ala",
                 "akk-elu",
                 "uga-aly",
-                "phn-aly"
+                "phn-aly",
+                "gez-laala"
               ]
             },
             {
@@ -225,7 +237,9 @@
                 "burnt-offering"
               ],
               "cognate_ids": [
-                "akk-elu"
+                "akk-elu",
+                "uga-aly",
+                "phn-aly"
               ]
             }
           ]
@@ -252,7 +266,8 @@
                 "ar-ala",
                 "akk-elu",
                 "uga-aly",
-                "phn-aly"
+                "phn-aly",
+                "gez-laala"
               ]
             },
             {
@@ -290,6 +305,9 @@
                   "role": "defining",
                   "note": "The account is brought into the book of Israel’s kings."
                 }
+              ],
+              "cognate_ids": [
+                "phn-aly"
               ]
             }
           ]
@@ -310,7 +328,8 @@
               ],
               "cognate_ids": [
                 "ar-ala",
-                "akk-elu"
+                "akk-elu",
+                "gez-laala"
               ]
             }
           ]
@@ -371,6 +390,9 @@
           "id": "burnt-offering",
           "kin": [
             "offer-up"
+          ],
+          "cognate_ids": [
+            "phn-alt"
           ]
         },
         {
@@ -433,7 +455,8 @@
       ],
       "cognate_ids": [
         "ar-ala",
-        "akk-elenu"
+        "akk-elenu",
+        "gez-laela"
       ]
     },
     {
@@ -563,6 +586,9 @@
             "ar-ala"
           ]
         }
+      ],
+      "cognate_ids": [
+        "gez-leul"
       ]
     },
     {
@@ -630,7 +656,8 @@
       "gender": "f",
       "cognate_ids": [
         "ar-ala",
-        "ar-ulliyya"
+        "ar-ulliyya",
+        "phn-alt-chamber"
       ]
     },
     {
@@ -705,7 +732,8 @@
       ],
       "cognate_ids": [
         "ar-ala",
-        "akk-elitu"
+        "akk-elitu",
+        "gez-leul"
       ]
     },
     {
@@ -798,7 +826,10 @@
       "root": "על",
       "cognate_ids": [
         "ar-ala-prep",
-        "akk-eli"
+        "akk-eli",
+        "uga-al",
+        "phn-al",
+        "gez-laela"
       ]
     },
     {
@@ -826,7 +857,10 @@
       ],
       "lang": "arc",
       "root": "עלת",
-      "gender": "f"
+      "gender": "f",
+      "cognate_ids": [
+        "phn-alt"
+      ]
     },
     {
       "lemma": "עִלַּי",
@@ -856,7 +890,8 @@
       "lang": "arc",
       "root": "עלי",
       "cognate_ids": [
-        "ar-ala"
+        "ar-ala",
+        "gez-leul"
       ]
     },
     {
@@ -886,7 +921,8 @@
       "lang": "arc",
       "root": "עליונ",
       "cognate_ids": [
-        "ar-ala"
+        "ar-ala",
+        "gez-leul"
       ]
     },
     {
@@ -914,7 +950,8 @@
       "gender": "f",
       "cognate_ids": [
         "ar-ala",
-        "ar-ulliyya"
+        "ar-ulliyya",
+        "phn-alt-chamber"
       ]
     },
     {
@@ -941,7 +978,8 @@
       "lang": "arc",
       "root": "עלא",
       "cognate_ids": [
-        "ar-ala"
+        "ar-ala",
+        "gez-leul"
       ],
       "summary": "The emphatic form עִלָּאָה is written with א in these passages, beside עִלָּיָא in Daniel 4:22, 29."
     },
@@ -969,7 +1007,8 @@
       "root": "עלא",
       "cognate_ids": [
         "ar-ala",
-        "akk-elenu"
+        "akk-elenu",
+        "gez-laela"
       ]
     },
     {
@@ -1008,7 +1047,10 @@
       "root": "על",
       "cognate_ids": [
         "ar-ala-prep",
-        "akk-eli"
+        "akk-eli",
+        "uga-al",
+        "phn-al",
+        "gez-laela"
       ]
     },
     {
@@ -1035,7 +1077,8 @@
                 }
               ],
               "cognate_ids": [
-                "ar-ala"
+                "ar-ala",
+                "gez-laala"
               ]
             }
           ]
@@ -1059,7 +1102,8 @@
                 }
               ],
               "cognate_ids": [
-                "ar-ala"
+                "ar-ala",
+                "gez-laala"
               ]
             }
           ]
@@ -1107,7 +1151,8 @@
       "lang": "syc",
       "root": "עלא",
       "cognate_ids": [
-        "ar-ala"
+        "ar-ala",
+        "gez-leul"
       ]
     },
     {
@@ -1140,7 +1185,8 @@
       "gender": "f",
       "cognate_ids": [
         "ar-ala",
-        "ar-ulliyya"
+        "ar-ulliyya",
+        "phn-alt-chamber"
       ]
     },
     {
@@ -1163,7 +1209,10 @@
       "lang": "syc",
       "root": "עלא",
       "gender": "f",
-      "summary": "An altar in its one occurrence. The form is retained with the offering-family, without using this one verse to reconstruct its derivation."
+      "summary": "An altar in its one occurrence. The form is retained with the offering-family, without using this one verse to reconstruct its derivation.",
+      "cognate_ids": [
+        "phn-alt"
+      ]
     }
   ],
   "cognates": [
@@ -1298,13 +1347,17 @@
       "lang": "uga",
       "form": "𐎓𐎍𐎊",
       "translit": "ʿly",
-      "gloss": "go up",
+      "gloss": "go up; (Š) erect, offer up",
       "relation": "cognate",
       "sounds": {
         "ע": "ʿ"
       },
-      "note": "Ugaritic writes ʿ and ġ with different letters; this verb has ʿ.",
+      "note": "Ugaritic writes ʿ and ġ with different letters; this verb has ʿ. Its causative (Š) is “erect, offer up”, as the hiphil of עָלָה offers a sacrifice.",
       "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "pp. 153–154, ʿly"
+        },
         {
           "source": "anderson-moser-2024",
           "locator": "SEM000600 ʿly [rise], UGC000918 ʿly [go]"
@@ -1316,14 +1369,19 @@
       "lang": "phn",
       "form": "𐤏𐤋𐤉",
       "translit": "ʿly",
-      "gloss": "go up",
+      "gloss": "go up, come up against; sail upstream; go up (of a burnt offering on the altar); be entered in a book; (yiphʿil) offer up a burnt sacrifice, raise a building",
       "relation": "cognate",
       "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 369–370, ʿ-L-Y"
+        },
         {
           "source": "anderson-moser-2024",
           "locator": "SEM000600 ʿly [rise], PUN001527 ʿly [go]"
         }
-      ]
+      ],
+      "note": "Phoenician uses the verb of a whole burnt offering going up on the altar (CIS i 170), and its causative of offering one up (KAI 159). “Be entered in a book” (KAI 124) is the use of the hophal in 2Ch 20:34, which Krahmalkov compares."
     },
     {
       "id": "ar-ulliyya",
@@ -1376,6 +1434,120 @@
         {
           "source": "lane",
           "locator": "p. 2288, root غلو, 6 تغالى; p. 2287, 4 اغلى"
+        }
+      ]
+    },
+    {
+      "id": "gez-laala",
+      "lang": "gez",
+      "form": "ለዐለ",
+      "translit": "laʿala",
+      "gloss": "be high, superior, exalted; (causative አልዐለ) raise, lift up, exalt; (ተለዐለ) be raised, exalted",
+      "relation": "cognate",
+      "note": "The ʿ and l stand in the other order. Dillmann explains the form from a doubled ʿlʿl and sets it beside עָלָה and Arabic علا; Fisher pairs it with Ugaritic ʿly “go up”.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 54–55, ለዐለ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n50"
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "pp. 153–154, ʿly"
+        }
+      ]
+    },
+    {
+      "id": "gez-leul",
+      "lang": "gez",
+      "form": "ልዑል",
+      "translit": "ləʿul",
+      "gloss": "high, exalted, superior; (of God) Most High",
+      "relation": "cognate",
+      "note": "Dillmann: used very often of God, where the Greek has ὕψιστος, as עֶלְיוֹן is the Most High.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 56, ልዑል",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n51"
+        }
+      ]
+    },
+    {
+      "id": "gez-laela",
+      "lang": "gez",
+      "form": "ላዕለ",
+      "translit": "laʿla",
+      "gloss": "(preposition) on, upon, over, above; (ላዕል) height, above",
+      "relation": "cognate",
+      "note": "Dillmann gives the preposition as the same word as עַל and Arabic عَلَى.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 56, ላዕል and ላዕለ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n51"
+        }
+      ]
+    },
+    {
+      "id": "uga-al",
+      "lang": "uga",
+      "form": "𐎓𐎍",
+      "translit": "ʿl",
+      "gloss": "upon, on (a day); owed by, in charge of; against",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 153, ʿl"
+        }
+      ]
+    },
+    {
+      "id": "phn-al",
+      "lang": "phn",
+      "form": "𐤏𐤋",
+      "translit": "ʿl",
+      "gloss": "on, upon; at, along; against; greater than; in charge of; incumbent upon; for the sake of",
+      "relation": "cognate",
+      "note": "The same range as עַל: position on, opposition, authority over, and a duty resting on someone (“I shall be responsible for my taxes”, KAI 3).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 367–369, ʿL I"
+        }
+      ]
+    },
+    {
+      "id": "phn-alt",
+      "lang": "phn",
+      "form": "𐤏𐤋𐤕",
+      "translit": "ʿlt",
+      "gloss": "whole burnt offering",
+      "relation": "cognate",
+      "note": "Offered up with a minḥa-offering in the sanctuary (KAI 159), as עֹלָה and מִנְחָה stand together.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 373, ʿLT I"
+        }
+      ]
+    },
+    {
+      "id": "phn-alt-chamber",
+      "lang": "phn",
+      "form": "𐤏𐤋𐤕",
+      "translit": "ʿlt",
+      "gloss": "chamber",
+      "relation": "cognate",
+      "note": "Krahmalkov compares Hebrew עֲלִיָּה; the inscription is at the entrance of a tomb chamber.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 373, ʿLT II"
         }
       ]
     }
@@ -1489,5 +1661,5 @@
       ]
     }
   ],
-  "note": "Duplicate spelling inventories p.cs.ae/af (עֹלָה), p.cs.ai/aj (עֶלְיוֹן), p.cs.an/ao (מַעֲלָה), and p.cs.ap/aq (תְּעָלָה) share occurrences: one key per combined word is used. The key totals can therefore include a sibling meaning or a verbal participle and are not sense totals. The rare hithpael at Jer 51:3 and ascent/burnt-offering at 1Ki 10:5 need review; the noun’s ascent sense is instead anchored at Ezk 40:26. Proper names and redirect-only rows are omitted. עַלְוָה “injustice” at Hos 10:9 is assigned elsewhere under עלוה/עול, not taken from the name Alvah. Aramaic/Syriac enter-verbs contracted to על belong with עלל, not with “ascend”; they are not included on spelling alone. Syriac עלוא “waking state” has no Peshitta token and is omitted. Leaf, pestle, water-channel and healing are retained without speculative semantic bridges or unrelated cognates. Left out for עלל: Biblical Aramaic עִלָּה and the Peshitta's ܥܠܬܐ “cause, ground of accusation” (Dan 6:5–6; Mat 19:3), which answer to Arabic عِلَّة ʿilla “cause, pretext”, of the root علل, not علو; they go with the עלל entry, as the enter-verbs do. Cognates added 2026-11-08 from Oracc, Lane and Anderson–Moser. Leads not yet followed to their dictionaries: Ge'ez ልዕለ ləʿla “be high” and ላዕለ laʿla “above” (with ʿ and l in the other order; Dillmann), the Ugaritic preposition ʿl and causative šʿly “make go up, offer”, and Phoenician ʿl “on”; Krahmalkov and DULAT not consulted."
+  "note": "Duplicate spelling inventories p.cs.ae/af (עֹלָה), p.cs.ai/aj (עֶלְיוֹן), p.cs.an/ao (מַעֲלָה), and p.cs.ap/aq (תְּעָלָה) share occurrences: one key per combined word is used. The key totals can therefore include a sibling meaning or a verbal participle and are not sense totals. The rare hithpael at Jer 51:3 and ascent/burnt-offering at 1Ki 10:5 need review; the noun’s ascent sense is instead anchored at Ezk 40:26. Proper names and redirect-only rows are omitted. עַלְוָה “injustice” at Hos 10:9 is assigned elsewhere under עלוה/עול, not taken from the name Alvah. Aramaic/Syriac enter-verbs contracted to על belong with עלל, not with “ascend”; they are not included on spelling alone. Syriac עלוא “waking state” has no Peshitta token and is omitted. Leaf, pestle, water-channel and healing are retained without speculative semantic bridges or unrelated cognates. Left out for עלל: Biblical Aramaic עִלָּה and the Peshitta's ܥܠܬܐ “cause, ground of accusation” (Dan 6:5–6; Mat 19:3), which answer to Arabic عِلَّة ʿilla “cause, pretext”, of the root علل, not علو; they go with the עלל entry, as the enter-verbs do. Cognates added 2026-11-08 from Oracc, Lane and Anderson–Moser. Checked 2026-11-08: Ge'ez in Dillmann cols. 54–56, Ugaritic in Fisher pp. 153–154, Phoenician in Krahmalkov pp. 367–373. Krahmalkov also has ʿLH, a temple column called a “riser” (p. 367; he compares Hebrew עֹלֶה, “one going up”), and ʿLYN “Highest One”, known only from Philo of Byblos' Greek (Ἐλιοῦν, p. 370); neither is entered as a cognate. DULAT not consulted."
 }
