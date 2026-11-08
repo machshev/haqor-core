@@ -119,6 +119,13 @@ Source checks for Matthew 17-20:
 - Matthew 17:15 positions 8-9 form the idiom bar egara, rendered "epilepsy"
   as a linked phrase. Brock and Kiraz record the expression under
   [egara in SEDRA](https://sedra.bethmardutho.org/lexeme/get/27).
+- Matthew 17:24-25 has kesef risha, rendered "head tax" with the head
+  modifier and tax noun linked separately. Compare
+  [kesef in CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=ksp+N).
+- Matthew 17:26 has bnay haire, "free individuals", before the copula;
+  the final bnya supplies the subject "the children". The first bnay
+  belongs to the status expression. Compare CAL's explicit
+  [Matthew 17:26 citation](https://cal.huc.edu/oneentry.php?cits=all&lemma=br%40xyryn+N).
 - Matthew 18:29 has no equivalent of Murdock's added "the whole".
 - Matthew 19:5 says "one flesh"; 19:6 uses the distinct word "body".
 
