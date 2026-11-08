@@ -50,6 +50,15 @@ class AlignmentReviewTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "verse inventory"):
             audit.audit({}, self.db, {})
 
+    def test_broken_english_span_cannot_swallow_the_next_span(self):
+        for text in ["[place], [and sent|0]", "[Holy [Spirit|0,1]"]:
+            with self.subTest(text=text), self.assertRaises(ValueError):
+                audit.spans(text)
+        self.assertEqual(
+            audit.spans(r"[a \[rare\] thing|0] [is|1]"),
+            [("a [rare] thing", (0,)), ("is", (1,))],
+        )
+
     def test_exception_needs_exact_text_positions_reason_and_review_hash(self):
         self.rows = {(40, 1, 1): "[Holy Spirit|0,1]."}
         checkpoint = {"sha256": audit.chapter_hash(self.rows, 40, 1),

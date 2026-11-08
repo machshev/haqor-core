@@ -35,6 +35,8 @@ def spans(text):
                     i += 1
                     if i == len(text):
                         raise ValueError("unterminated escape")
+                elif text[i] in "[]":
+                    raise ValueError("unescaped bracket in linked English")
                 english += text[i]
                 i += 1
             if i == len(text):
