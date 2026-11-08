@@ -7811,6 +7811,14 @@ mod tests {
         assert_eq!(*verse, 1);
         assert!(spans[0].text.starts_with("A psalm"), "{spans:?}");
 
+        // A reviewed ULT revision (data/ult_revisions.tsv): 2Ch 22:10's
+        // וַתְּדַבֵּר is "put down", not the parallel's "destroyed".
+        let chronicles = bible.chapter_translation(39, 22).unwrap();
+        let (_, spans) = chronicles.iter().find(|(v, _)| *v == 10).unwrap();
+        let text: String = spans.iter().map(|s| s.text.as_str()).collect();
+        assert!(text.contains("she put down all of the seed"), "{text}");
+        assert!(!text.contains("destroyed"), "{text}");
+
         // Reviewed Peshitta English names every source word in Matthew 1:1.
         let matthew = bible.chapter_translation(40, 1).unwrap();
         let (verse, spans) = &matthew[0];
