@@ -1,0 +1,374 @@
+{
+  "id": "yom",
+  "root": "יומ",
+  "status": "draft",
+  "updated": "2026-11-08",
+  "tags": [
+    "time",
+    "day",
+    "night",
+    "judgment"
+  ],
+  "gloss": "day; time",
+  "summary": "יוֹם names daylight as opposed to night, and also the counted day that includes evening and morning. It can locate an event (“on the day when”), or in the plural describe the span of a life or a period of history. יוֹמָם means by day; Biblical Aramaic and the Peshitta use the same day-word.",
+  "words": [
+    {
+      "lemma": "יוֹם",
+      "pos": "noun",
+      "gloss": "day; time",
+      "bdb": [
+        "j.ay.aa"
+      ],
+      "senses": [
+        {
+          "gloss": "daylight",
+          "definition": "The light part of the cycle, contrasted with night.",
+          "evidence": [
+            {
+              "ref": "Gen.1.5",
+              "role": "defining",
+              "note": "God calls the light יוֹם and the darkness לַיְלָה."
+            },
+            {
+              "ref": "Gen.1.16",
+              "role": "defining",
+              "note": "The greater light governs the day; the lesser governs the night."
+            }
+          ]
+        },
+        {
+          "gloss": "counted day",
+          "definition": "A day counted in sequence, including the alternation of evening and morning; used for dates and durations.",
+          "evidence": [
+            {
+              "ref": "Gen.1.5",
+              "role": "defining",
+              "note": "Evening and morning mark one day."
+            },
+            {
+              "ref": "Exo.20.9",
+              "role": "defining",
+              "note": "Six days of labor precede the seventh day of rest."
+            },
+            {
+              "ref": "Lev.23.34",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "time, occasion; when",
+          "definition": "A day specified by an event; with בְּ and an infinitive, often the time when that event happens, without itself specifying its duration.",
+          "evidence": [
+            {
+              "ref": "Gen.2.4",
+              "role": "defining",
+              "note": "בְּיוֹם עֲשׂוֹת describes the making of earth and heavens."
+            },
+            {
+              "ref": "Exo.10.28",
+              "role": "defining",
+              "note": "On the day you see my face, you will die."
+            }
+          ]
+        },
+        {
+          "gloss": "days of a life or period",
+          "definition": "In the plural, the duration of life or the period associated with a person or event.",
+          "evidence": [
+            {
+              "ref": "Gen.5.5",
+              "role": "defining",
+              "note": "All Adam’s days total 930 years."
+            },
+            {
+              "ref": "Jer.3.6",
+              "role": "defining",
+              "note": "The days of King Josiah locate the prophecy in his reign."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-yawm",
+        "akk-umu"
+      ],
+      "greek": [
+        {
+          "lemma": "ἡμέρα",
+          "gloss": "day",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.95.7 (LXX 94:7), הַיּוֹם → σήμερον; Psa.95.8, כְּיוֹם → κατὰ τὴν ἡμέραν"
+            },
+            {
+              "ref": "Heb.3.7"
+            },
+            {
+              "ref": "Heb.3.8"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "לַיְלָה",
+            "note": "Day and night are distinguished, and together describe the recurring cycle.",
+            "evidence": [
+              {
+                "ref": "Gen.1.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יוֹם יַהְוֶה",
+            "gloss": "the day of יַהְוֶה",
+            "evidence": [
+              {
+                "ref": "Amo.5.18",
+                "role": "defining",
+                "note": "It is darkness, not light, for the people addressed."
+              },
+              {
+                "ref": "Zep.1.14",
+                "role": "defining",
+                "note": "The great day of יַהְוֶה is near."
+              }
+            ]
+          },
+          {
+            "phrase": "הַיּוֹם",
+            "gloss": "today",
+            "evidence": [
+              {
+                "ref": "Deu.11.26",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "מִיָּמִים יָמִימָה",
+            "gloss": "year by year",
+            "evidence": [
+              {
+                "ref": "Exo.13.10",
+                "role": "defining",
+                "note": "Keep the observance at its appointed time."
+              },
+              {
+                "ref": "Jdg.11.40",
+                "role": "defining",
+                "note": "The following words specify four days in the year."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יוֹמָם",
+      "pos": "adverb",
+      "gloss": "by day, in daylight",
+      "bdb": [
+        "j.ay.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "by day",
+          "definition": "During daylight, commonly contrasted with בַּלַּיְלָה, by night.",
+          "evidence": [
+            {
+              "ref": "Exo.13.21",
+              "role": "defining",
+              "note": "Cloud by day and fire by night guide Israel."
+            },
+            {
+              "ref": "Job.5.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.42.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-yawm",
+        "akk-umu"
+      ]
+    },
+    {
+      "lemma": "יוֹם",
+      "pos": "noun",
+      "gloss": "day",
+      "bdb": [
+        "xj.ad.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "day, days",
+          "definition": "A day or a series of days marking time.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.9",
+              "role": "defining",
+              "note": "The supplies are to be given day by day."
+            },
+            {
+              "ref": "Dan.6.8",
+              "role": "defining",
+              "note": "The proposed prohibition is to last thirty days."
+            }
+          ]
+        },
+        {
+          "gloss": "days, in a title of antiquity",
+          "definition": "The plural in “Ancient of Days” names the one seated for judgment.",
+          "evidence": [
+            {
+              "ref": "Dan.7.9",
+              "role": "defining",
+              "note": "The Ancient of Days sits, clothed in white."
+            },
+            {
+              "ref": "Dan.7.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-yawm",
+        "akk-umu"
+      ]
+    },
+    {
+      "lemma": "יַוְמָא",
+      "pos": "noun",
+      "gloss": "day",
+      "senses": [
+        {
+          "gloss": "day, days",
+          "definition": "A counted day or a period marked by days.",
+          "evidence": [
+            {
+              "ref": "Mat.4.2",
+              "role": "defining",
+              "note": "Forty days stand beside forty nights."
+            },
+            {
+              "ref": "Mat.2.1",
+              "role": "defining",
+              "note": "In the days of King Herod dates the narrative."
+            }
+          ]
+        },
+        {
+          "gloss": "day of an event",
+          "definition": "The day identified by an event, including judgment.",
+          "evidence": [
+            {
+              "ref": "Mat.10.15",
+              "role": "defining",
+              "note": "The day of judgment is named."
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-yawm",
+        "akk-umu"
+      ]
+    },
+    {
+      "lemma": "יַוְמָנָא",
+      "pos": "adverb",
+      "gloss": "today",
+      "senses": [
+        {
+          "gloss": "today",
+          "definition": "The present day, or the day on which a speaker is speaking.",
+          "evidence": [
+            {
+              "ref": "Mat.6.11",
+              "role": "defining",
+              "note": "Give us today the bread we need."
+            },
+            {
+              "ref": "Luk.2.11",
+              "role": "defining",
+              "note": "Today a deliverer has been born."
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-yawm",
+      "lang": "ar",
+      "form": "يَوْم",
+      "translit": "yawm",
+      "gloss": "day; time",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3064, root يوم, يَوْمٌ (n44826)"
+        }
+      ]
+    },
+    {
+      "id": "akk-umu",
+      "lang": "akk",
+      "form": "ūmu",
+      "translit": "ūmu",
+      "gloss": "day, daylight, time",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000002270, ūmu [day] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000002270.html"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "day-of-yahweh",
+      "statement": "Amos asks those desiring the day of יַהְוֶה why they desire it: for them it is darkness, not light (Amo 5:18–20). Zephaniah describes that day as wrath and distress (Zep 1:14–15). The expression therefore identifies יַהְוֶה’s intervention, whose character the passage explains; the noun “day” alone does not promise safety to those who name it.",
+      "evidence": [
+        {
+          "ref": "Amo.5.18"
+        },
+        {
+          "ref": "Amo.5.19"
+        },
+        {
+          "ref": "Amo.5.20"
+        },
+        {
+          "ref": "Zep.1.14"
+        },
+        {
+          "ref": "Zep.1.15"
+        }
+      ]
+    }
+  ],
+  "note": "The Aramaic key xj.ad.ad also matches many Hebrew spellings; the brief’s token counts for the two languages overlap and are not separate language totals. The sense of בְּיוֹם is determined by its construction and context, not by assigning a fixed duration to every occurrence. Aramaic and Syriac words are scripture words here, not external cognates."
+}
