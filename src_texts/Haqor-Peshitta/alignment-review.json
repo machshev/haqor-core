@@ -558,6 +558,32 @@
           "reason": "Bish avidin, literally badly made/disposed, expresses the illness state rather than a separate making action. The preceding d-bish at position 12 independently owns the relative and intensifier who/very; the stative participle at 14 also supports the English copula were."
         }
       ]
+    },
+    "40:15": {
+      "sha256": "2a2e0bec1c52461ebba39190990a33c7f4288500200cf3244970b77e31db4b73",
+      "original_shared_spans": 57,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 7,
+          "english": "Hypocrites",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The participle nasbay and b-appe form the established face-taking idiom for hypocrites. The English lexical equivalent does not divide into a taking action and a separate face object."
+        },
+        {
+          "verse": 38,
+          "english": "were",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The active participle hawayn and past auxiliary hwaw jointly form the past copula. English expresses this with the single word were; splitting it would either invent a counting expression or change the simple past state to a progressive event."
+        }
+      ]
     }
   }
 }
