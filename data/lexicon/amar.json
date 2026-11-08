@@ -1,7 +1,8 @@
 {
   "id": "amar",
   "root": "אמר",
-  "status": "draft",
+  "status": "reviewed",
+  "reviewed": "2026-11-08",
   "updated": "2026-11-08",
   "tags": [
     "speech",
@@ -11,7 +12,7 @@
     "creation"
   ],
   "gloss": "say, speak; say in the heart, think; command",
-  "summary": "The Hebrew Bible's ordinary verb of saying: it introduces nearly every reported speech, from \"And God said\" at creation to the prophets' \"Thus says Yahweh\". What is said may be spoken to another, said \"in the heart\" as thought or resolve, or spoken with authority as a command. Its nouns name what is said, and אִמְרָה above all names Yahweh's word, called refined and trusted as his promise. Aramaic, Syriac and Phoenician share the sense \"say\", Arabic has \"command\" and Ge'ez \"show, make known\"; Akkadian and Ugaritic have a verb ʾmr \"see\", which may be the same root.",
+  "summary": "The Hebrew Bible's ordinary verb of saying: it introduces nearly every reported speech, from \"And God said\" at creation to the prophets' \"Thus says יַהְוֶה\". What is said may be spoken to another, said \"in the heart\" as thought or resolve, or spoken with authority as a command. Its nouns name what is said, and אִמְרָה above all names יַהְוֶה's word, called refined and trusted as his promise. Aramaic, Syriac and Phoenician share the sense \"say\", Arabic has \"command\" and Ge'ez \"show, make known\"; Akkadian and Ugaritic have a verb ʾmr \"see\", which may be the same root.",
   "words": [
     {
       "lemma": "אָמַר",
@@ -51,7 +52,7 @@
                     {
                       "ref": "Exo.6.10",
                       "role": "defining",
-                      "note": "וַיְדַבֵּר יַהְוֶה אֶל־מֹשֶׁה לֵּאמֹר: \"And Yahweh spoke to Moses, saying\"."
+                      "note": "וַיְדַבֵּר יַהְוֶה אֶל־מֹשֶׁה לֵּאמֹר: \"And יַהְוֶה spoke to Moses, saying\"."
                     },
                     {
                       "ref": "Gen.44.19",
@@ -102,7 +103,7 @@
                 {
                   "ref": "1Ki.5.19",
                   "role": "defining",
-                  "note": "\"Behold, I am saying to build a house for the name of Yahweh\": I intend to build."
+                  "note": "\"Behold, I am saying to build a house for the name of יַהְוֶה\": I intend to build."
                 },
                 {
                   "ref": "2Sa.21.16"
@@ -144,7 +145,7 @@
                 {
                   "ref": "Gen.10.9",
                   "role": "defining",
-                  "note": "\"Therefore it is said, Like Nimrod, a mighty hunter before Yahweh.\""
+                  "note": "\"Therefore it is said, Like Nimrod, a mighty hunter before יַהְוֶה.\""
                 },
                 {
                   "ref": "Jer.16.14"
@@ -181,17 +182,17 @@
           "senses": [
             {
               "gloss": "have declared (in covenant)",
-              "definition": "Used only of the covenant's two declarations in Deuteronomy 26: Israel has declared Yahweh to be their God, and Yahweh has declared Israel to be his people.",
+              "definition": "Used only of the covenant's two declarations in Deuteronomy 26: Israel has declared יַהְוֶה to be their God, and יַהְוֶה has declared Israel to be his people.",
               "evidence": [
                 {
                   "ref": "Deu.26.17",
                   "role": "defining",
-                  "note": "\"Yahweh you have declared (הֶאֱמַרְתָּ) today to be your God.\""
+                  "note": "\"יַהְוֶה you have declared (הֶאֱמַרְתָּ) today to be your God.\""
                 },
                 {
                   "ref": "Deu.26.18",
                   "role": "defining",
-                  "note": "\"Yahweh has declared you (הֶאֱמִירְךָ) today to be his people.\""
+                  "note": "\"יַהְוֶה has declared you (הֶאֱמִירְךָ) today to be his people.\""
                 }
               ]
             }
@@ -248,7 +249,7 @@
             {
               "source": "macula-lxx",
               "locator": "EXO 4:22 word 5",
-              "note": "λέγει in \"thus says Yahweh\"."
+              "note": "λέγει in \"thus says יַהְוֶה\"."
             }
           ]
         }
@@ -257,7 +258,7 @@
         "parallels": [
           {
             "lemma": "צִוָּה",
-            "note": "command: what Yahweh says is what he commands.",
+            "note": "command: what יַהְוֶה says is what he commands.",
             "evidence": [
               {
                 "ref": "Psa.33.9"
@@ -277,7 +278,7 @@
         "phrases": [
           {
             "phrase": "כֹּה אָמַר יַהְוֶה",
-            "gloss": "thus says Yahweh: the messenger's formula introducing a prophet's message",
+            "gloss": "thus says יַהְוֶה: the messenger's formula introducing a prophet's message",
             "evidence": [
               {
                 "ref": "Exo.4.22"
@@ -334,8 +335,8 @@
       ],
       "pos": "noun",
       "gender": "f",
-      "gloss": "word, saying; (of Yahweh) word, promise",
-      "summary": "Mostly poetic, and most often Yahweh's own word. BDB also lists the same occurrences under the spelling אֶמְרָה.",
+      "gloss": "word, saying; (of יַהְוֶה) word, promise",
+      "summary": "Mostly poetic, and most often יַהְוֶה's own word. BDB also lists the same occurrences under the spelling אֶמְרָה.",
       "senses": [
         {
           "id": "word-saying",
@@ -360,13 +361,13 @@
           ]
         },
         {
-          "gloss": "Yahweh's word; his promise",
-          "definition": "Yahweh's spoken word, refined like tested silver; what he has said and will keep, so that the psalmist waits on it as promise.",
+          "gloss": "יַהְוֶה's word; his promise",
+          "definition": "יַהְוֶה's spoken word, refined like tested silver; what he has said and will keep, so that the psalmist waits on it as promise.",
           "evidence": [
             {
               "ref": "Psa.18.31",
               "role": "defining",
-              "note": "\"The word of Yahweh is refined.\""
+              "note": "\"The word of יַהְוֶה is refined.\""
             },
             {
               "ref": "Pro.30.5",
@@ -476,7 +477,7 @@
         },
         {
           "gloss": "word that commands or promises",
-          "definition": "A word that sets something in motion or binds: Yahweh gives the word, a man decrees a thing, a promise may seem to fail.",
+          "definition": "A word that sets something in motion or binds: יַהְוֶה gives the word, a man decrees a thing, a promise may seem to fail.",
           "evidence": [
             {
               "ref": "Psa.68.12",
@@ -894,7 +895,7 @@
     },
     {
       "topic": "word-of-god",
-      "statement": "Yahweh's אִמְרָה, his spoken word, is said to be refined like tested silver (Psa 12:7; 18:31; Pro 30:5), and the psalmist lives by it as promise: it gives him life in affliction (Psa 119:50), he waits for it until his eyes fail (Psa 119:82), and he stores it in his heart so as not to sin (Psa 119:11).",
+      "statement": "יַהְוֶה's אִמְרָה, his spoken word, is said to be refined like tested silver (Psa 12:7; 18:31; Pro 30:5), and the psalmist lives by it as promise: it gives him life in affliction (Psa 119:50), he waits for it until his eyes fail (Psa 119:82), and he stores it in his heart so as not to sin (Psa 119:11).",
       "evidence": [
         {
           "ref": "Psa.12.7"
