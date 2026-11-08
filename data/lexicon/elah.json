@@ -1,0 +1,799 @@
+{
+  "id": "elah",
+  "root": "אלה",
+  "status": "draft",
+  "updated": "2026-11-08",
+  "tags": [
+    "god",
+    "divinity",
+    "demonstrative",
+    "oath",
+    "curse"
+  ],
+  "gloss": "God, god; these; oath, curse",
+  "summary": "This spelling holds several families whose meanings must be distinguished: אֱלֹהִים, אֵל and אֱלוֹהַּ name God or a god; אֵלֶּה points to “these”; אָלָה names an oath and its curse. אֱלֹהִים has a plural form but can take singular grammar when naming God, or refer to multiple gods. The entry also retains the fat-tail word, the single verb of lamenting, and the conditional אִלּוּ; their connection to the other families is unclear.",
+  "words": [
+    {
+      "lemma": "אֱלֹהִים",
+      "pos": "noun",
+      "gloss": "God; gods; divine beings",
+      "bdb": [
+        "a.dl.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "God",
+          "definition": "The God who creates and addresses his people; although the noun’s form is plural, its grammar is commonly singular in this use.",
+          "evidence": [
+            {
+              "ref": "Gen.1.1",
+              "role": "defining",
+              "note": "אֱלֹהִים is the subject of singular בָּרָא, “created”."
+            },
+            {
+              "ref": "Deu.4.35",
+              "role": "defining",
+              "note": "יַהְוֶה is identified as הָאֱלֹהִים, with no other besides him."
+            }
+          ]
+        },
+        {
+          "gloss": "gods",
+          "definition": "More than one being regarded or worshipped as a god.",
+          "evidence": [
+            {
+              "ref": "Exo.20.3",
+              "role": "defining",
+              "note": "Israel is forbidden other gods."
+            },
+            {
+              "ref": "Num.25.2",
+              "role": "defining",
+              "note": "The people are invited to sacrifices of the women’s gods."
+            }
+          ]
+        },
+        {
+          "gloss": "divine beings; those called gods",
+          "definition": "Beings spoken of as אֱלֹהִים in a divine assembly or in contrast with humanity. The word’s use does not by itself settle the identity or nature of every referent.",
+          "evidence": [
+            {
+              "ref": "Psa.8.6",
+              "role": "defining",
+              "note": "Humanity is made a little lower than אֱלֹהִים; Heb 2:7 takes up the passage with “angels”."
+            },
+            {
+              "ref": "Psa.82.1",
+              "role": "defining",
+              "note": "God judges among אֱלֹהִים."
+            },
+            {
+              "ref": "Psa.82.6",
+              "role": "defining",
+              "note": "Those addressed are called gods and sons of the Most High; the next verse says they will die."
+            },
+            {
+              "ref": "Jhn.10.34",
+              "role": "defining",
+              "note": "Jesus quotes Psa 82:6; 10:35 speaks of those to whom God’s word came."
+            }
+          ]
+        },
+        {
+          "gloss": "one acting in God’s authority",
+          "definition": "A title given to a person in a representative relation, without making that person the God of Israel.",
+          "evidence": [
+            {
+              "ref": "Exo.7.1",
+              "role": "defining",
+              "note": "Moses is made אֱלֹהִים to Pharaoh, and Aaron is his prophet."
+            }
+          ]
+        },
+        {
+          "gloss": "a godlike being in a reported vision",
+          "definition": "A being described as אֱלֹהִים by the woman at En Dor. The immediate narrative reports what she says she sees, rather than defining a new class of being.",
+          "evidence": [
+            {
+              "ref": "1Sa.28.13",
+              "role": "defining",
+              "note": "The woman says she sees אֱלֹהִים ascending from the earth."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-ilah",
+        "akk-ilu"
+      ],
+      "greek": [
+        {
+          "lemma": "θεός",
+          "gloss": "God; god",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.1, אֱלֹהִים → θεός; Psa.82.6 (LXX 81:6), אֱלֹהִים → θεοί"
+            },
+            {
+              "ref": "Jhn.10.34"
+            }
+          ]
+        },
+        {
+          "lemma": "ἄγγελος",
+          "gloss": "angel",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.8.6 (LXX 8:6), מֵאֱלֹהִים → παρ᾽ ἀγγέλους"
+            },
+            {
+              "ref": "Heb.2.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֵלֶּה",
+      "pos": "pronoun",
+      "gloss": "these",
+      "bdb": [
+        "a.dk.aa"
+      ],
+      "senses": [
+        {
+          "gloss": "these",
+          "definition": "Point to the people or things named nearby, often introducing a list or identifying a group.",
+          "evidence": [
+            {
+              "ref": "Gen.2.4",
+              "role": "defining",
+              "note": "These are the generations of the heavens and earth."
+            },
+            {
+              "ref": "Lev.11.31",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.26.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ula"
+      ],
+      "summary": "A plural demonstrative for people or things, not a word for deity. Its relation to the God-words is not established."
+    },
+    {
+      "lemma": "אֵל",
+      "pos": "noun",
+      "gloss": "God, god",
+      "bdb": [
+        "a.dl.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "God, god",
+          "definition": "The divine title, applied to the God of Israel and to a supposed other god.",
+          "evidence": [
+            {
+              "ref": "Gen.46.3",
+              "role": "defining",
+              "note": "I am אֵל, the God of your father."
+            },
+            {
+              "ref": "Isa.44.10",
+              "role": "defining",
+              "note": "Who has formed a god or cast an image?"
+            },
+            {
+              "ref": "Psa.19.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-ilah",
+        "akk-ilu"
+      ]
+    },
+    {
+      "lemma": "אֱלוֹהַּ",
+      "pos": "noun",
+      "gloss": "God, god",
+      "bdb": [
+        "a.dl.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "God, god",
+          "definition": "The singular divine title, frequently naming God and also used of a god worshipped by others.",
+          "evidence": [
+            {
+              "ref": "Deu.32.15",
+              "role": "defining",
+              "note": "Jeshurun abandons the God who made him."
+            },
+            {
+              "ref": "Dan.11.38",
+              "role": "defining",
+              "note": "The ruler honors a god his fathers did not know."
+            },
+            {
+              "ref": "Job.11.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-ilah",
+        "akk-ilu"
+      ]
+    },
+    {
+      "lemma": "אָלָה",
+      "pos": "noun",
+      "gloss": "oath; curse",
+      "bdb": [
+        "a.dm.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "binding oath",
+          "definition": "A solemn undertaking, or the oath by which someone is bound.",
+          "evidence": [
+            {
+              "ref": "Gen.24.41",
+              "role": "defining",
+              "note": "The servant can be released from Abraham’s oath."
+            },
+            {
+              "ref": "Ezk.17.18",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "curse, oath-sanction",
+          "definition": "The curse pronounced or written as the sanction of an oath, and by extension an imprecation.",
+          "evidence": [
+            {
+              "ref": "Num.5.23",
+              "role": "defining",
+              "note": "The priest writes the curses and washes them into the water."
+            },
+            {
+              "ref": "Deu.29.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.31.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ala"
+      ],
+      "summary": "An oath that binds its parties, including its invoked sanction, and a curse pronounced upon someone. The oath-family is not derived here from the God-words."
+    },
+    {
+      "lemma": "אָלָה",
+      "pos": "verb",
+      "gloss": "swear, curse; put under oath",
+      "bdb": [
+        "a.dm.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "swear, curse",
+          "senses": [
+            {
+              "gloss": "swear, pronounce a curse",
+              "definition": "Utter an oath or curse, sometimes falsely or wrongfully.",
+              "evidence": [
+                {
+                  "ref": "Jdg.17.2",
+                  "role": "defining",
+                  "note": "Micah’s mother has pronounced a curse concerning the stolen silver."
+                },
+                {
+                  "ref": "Hos.4.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Hos.10.4",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ala"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "put under oath, adjure",
+          "senses": [
+            {
+              "gloss": "bind by oath",
+              "definition": "Require someone to act or answer under the sanction of an oath.",
+              "evidence": [
+                {
+                  "ref": "1Sa.14.24",
+                  "role": "defining",
+                  "note": "Saul binds the people with a curse against eating before evening."
+                },
+                {
+                  "ref": "1Ki.8.31",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ala"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַלְיָה",
+      "pos": "noun",
+      "gloss": "fat tail",
+      "bdb": [
+        "a.dn.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "fatty tail",
+          "definition": "The fatty tail removed near the backbone and presented with the animal’s fat.",
+          "evidence": [
+            {
+              "ref": "Lev.3.9",
+              "role": "defining",
+              "note": "The whole fat tail is removed close to the backbone."
+            },
+            {
+              "ref": "Exo.29.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.7.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-alya"
+      ],
+      "summary": "The fatty tail of a sheep offered with its other fat. The anatomical meaning has an Arabic counterpart, but its link to the entry’s other meanings is unclear."
+    },
+    {
+      "lemma": "אִלּוּ",
+      "pos": "conjunction",
+      "gloss": "if, even if",
+      "bdb": [
+        "a.dn.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "if, even if",
+          "definition": "Introduce a supposed situation, often one contrary to the present facts.",
+          "evidence": [
+            {
+              "ref": "Est.7.4",
+              "role": "defining",
+              "note": "If the people had merely been sold as slaves, Esther says she would have kept silent."
+            },
+            {
+              "ref": "Ecc.6.6",
+              "role": "defining",
+              "note": "Even if someone lived two thousand years without seeing good."
+            }
+          ]
+        }
+      ],
+      "summary": "Introduces a hypothetical condition in two passages. Its connection to the other words of this spelling has not been established."
+    },
+    {
+      "lemma": "תַּאֲלָה",
+      "pos": "noun",
+      "gloss": "curse",
+      "bdb": [
+        "a.dm.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "curse",
+          "definition": "A curse invoked against enemies; the noun occurs once.",
+          "evidence": [
+            {
+              "ref": "Lam.3.65",
+              "role": "defining",
+              "note": "The speaker asks for God’s curse upon them."
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ala"
+      ]
+    },
+    {
+      "lemma": "אָלָה",
+      "pos": "verb",
+      "gloss": "lament, wail",
+      "bdb": [
+        "a.dn.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lament",
+          "senses": [
+            {
+              "gloss": "lament, wail",
+              "definition": "Mourn in grief like a young woman bereaved of her husband.",
+              "evidence": [
+                {
+                  "ref": "Jol.1.8",
+                  "role": "defining",
+                  "note": "The lament is compared to a virgin girded with sackcloth for the husband of her youth."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "summary": "A single command to lament. The verse fixes the act of mourning, but does not explain a link with swearing or deity."
+    },
+    {
+      "lemma": "אֵל",
+      "pos": "pronoun",
+      "gloss": "these",
+      "bdb": [
+        "a.dj.aa"
+      ],
+      "senses": [
+        {
+          "gloss": "these",
+          "definition": "Identify a plural group already in view.",
+          "evidence": [
+            {
+              "ref": "Gen.26.3",
+              "role": "defining",
+              "note": "All these lands: הָאֲרָצֹת הָאֵל."
+            },
+            {
+              "ref": "Gen.19.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ula"
+      ],
+      "summary": "A shorter demonstrative form beside אֵלֶּה, distinct from the divine noun אֵל."
+    },
+    {
+      "lemma": "אֱלָהּ",
+      "pos": "noun",
+      "gloss": "God, god",
+      "bdb": [
+        "xa.an.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "God, god; gods",
+          "definition": "The divine title, with singular or plural forms as required.",
+          "evidence": [
+            {
+              "ref": "Dan.2.37",
+              "role": "defining",
+              "note": "The God of heaven gives the king his kingdom."
+            },
+            {
+              "ref": "Jer.10.11",
+              "role": "defining",
+              "note": "The gods that did not make heaven and earth will perish."
+            },
+            {
+              "ref": "Dan.5.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-ilah",
+        "akk-ilu"
+      ]
+    },
+    {
+      "lemma": "אֵלֶּה",
+      "pos": "pronoun",
+      "gloss": "these",
+      "bdb": [
+        "xa.ao.aa"
+      ],
+      "senses": [
+        {
+          "gloss": "these",
+          "definition": "A plural demonstrative in the Aramaic saying in Jeremiah.",
+          "evidence": [
+            {
+              "ref": "Jer.10.11",
+              "role": "defining",
+              "note": "“Under these heavens” closes the Aramaic verse."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "ar-ula"
+      ]
+    },
+    {
+      "lemma": "אִלֵּין",
+      "pos": "pronoun",
+      "gloss": "these",
+      "bdb": [
+        "xa.aq.aa"
+      ],
+      "senses": [
+        {
+          "gloss": "these",
+          "definition": "Point to a plurality named in the discourse.",
+          "evidence": [
+            {
+              "ref": "Dan.2.40",
+              "role": "defining",
+              "note": "The fourth kingdom will crush all these."
+            },
+            {
+              "ref": "Dan.7.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "אלינ",
+      "cognate_ids": [
+        "ar-ula"
+      ]
+    },
+    {
+      "lemma": "אַלָהָא",
+      "pos": "noun",
+      "gloss": "God, god",
+      "senses": [
+        {
+          "gloss": "God; a god",
+          "definition": "The divine title used for God, or for what someone regards as a god.",
+          "evidence": [
+            {
+              "ref": "Mat.4.10",
+              "role": "defining",
+              "note": "Worship the Lord your God and serve him alone."
+            },
+            {
+              "ref": "Jhn.1.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.28.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-ilah",
+        "akk-ilu"
+      ]
+    },
+    {
+      "lemma": "אַלָהוּתָא",
+      "pos": "noun",
+      "gloss": "divinity, Godhead",
+      "senses": [
+        {
+          "gloss": "divinity, divine nature",
+          "definition": "What belongs to being God, rather than an image made by human craft.",
+          "evidence": [
+            {
+              "ref": "Act.17.29",
+              "role": "defining",
+              "note": "Divinity is not to be thought like gold, silver, or carved stone."
+            },
+            {
+              "ref": "Rom.1.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Col.2.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ilah",
+        "akk-ilu"
+      ]
+    },
+    {
+      "lemma": "אַלָהָיָא",
+      "pos": "adjective",
+      "gloss": "divine",
+      "senses": [
+        {
+          "gloss": "divine",
+          "definition": "Belonging to God or to the divine nature.",
+          "evidence": [
+            {
+              "ref": "2Pe.1.3",
+              "role": "defining",
+              "note": "His divine power has given what is needed for life and godliness."
+            },
+            {
+              "ref": "2Pe.1.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-ilah",
+        "akk-ilu"
+      ]
+    },
+    {
+      "lemma": "אַלָהְתָא",
+      "pos": "noun",
+      "gloss": "goddess",
+      "senses": [
+        {
+          "gloss": "goddess",
+          "definition": "A female deity, in the account of Artemis’s worship at Ephesus.",
+          "evidence": [
+            {
+              "ref": "Act.19.27",
+              "role": "defining",
+              "note": "The great goddess Artemis is named."
+            },
+            {
+              "ref": "Act.19.37",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ilah",
+        "akk-ilu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ilah",
+      "lang": "ar",
+      "form": "إِلَٰه",
+      "translit": "ʾilāh",
+      "gloss": "god, deity, object of worship",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 82, root أله, إِلٰهٌ / إِلَاهٌ (n1116)"
+        }
+      ]
+    },
+    {
+      "id": "akk-ilu",
+      "lang": "akk",
+      "form": "ilu",
+      "translit": "ilu",
+      "gloss": "god",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000002980, ilu [god] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000002980.html"
+        }
+      ]
+    },
+    {
+      "id": "ar-ula",
+      "lang": "ar",
+      "form": "أُولَاءِ",
+      "translit": "ʾulāʾi",
+      "gloss": "these, those",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "pp. 86–87, root ألي, أُلَى / أُولَاءِ (n1143)"
+        }
+      ]
+    },
+    {
+      "id": "ar-ala",
+      "lang": "ar",
+      "form": "آلَى",
+      "translit": "ʾālā",
+      "gloss": "swear an oath",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 84, root ألو, stem IV آلَى (n1128)"
+        }
+      ],
+      "note": "Arabic attests the oath, not a general assertion that every curse-word derives from the divine noun."
+    },
+    {
+      "id": "ar-alya",
+      "lang": "ar",
+      "form": "أَلْيَة",
+      "translit": "ʾalya",
+      "gloss": "rump; fat tail of a sheep",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 87, root ألي, أَلْيَةٌ (n1148)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "yahweh-is-god",
+      "statement": "Deuteronomy 4:35 identifies יַהְוֶה as God and says there is no other besides him. Paul distinguishes the many beings called gods and lords from “one God, the Father” and “one Lord, Jesus Christ” confessed by believers (1Co 8:5–6). Thus the word’s application to something worshipped does not establish that it is God in the sense affirmed of יַהְוֶה.",
+      "evidence": [
+        {
+          "ref": "Deu.4.35"
+        },
+        {
+          "ref": "1Co.8.5"
+        },
+        {
+          "ref": "1Co.8.6"
+        }
+      ]
+    }
+  ],
+  "note": "The spelling is a container, not a claim that deity, demonstratives, oaths, fat tails and lament share an established semantic origin. Proper names, including the month אֱלוּל, are left for name entries, even where the imported POS field is empty. Terebinth אֵלָה is not filed under this root in the brief; no claim about its root is made here. Redirects are omitted. The Hebrew short demonstrative (rootless a.dj.aa) and Aramaic אִלֵּין are included as forms of the demonstrative family. The Aramaic short אֵל (xa.an.aa) has no distinct Aramaic occurrence established here and is not added from Hebrew spelling matches alone. Exo 21:6 and 22:7–8 can be read as appearing before God or before judges; they are not used to make “judges” an unqualified separate sense. Psalm 82’s referents and 1Sa 28:13’s reported vision need contextual review; neither sense asserts an ontology. Cognates support separate families, not all the senses indiscriminately; the resulting negative support balances are deliberate."
+}
