@@ -93,8 +93,9 @@ brief's sections:
 - **Leave a word out** only when the evidence puts it under another root: a
   loan from another language (Assyria, from Akkadian Aššur), or cognates that
   point elsewhere. Say why in the entry's `note`.
-- **Leave proper names out.** They get their own entries, which link back to
-  the root.
+- **Leave proper names out.** They get their own entries in
+  `data/lexicon/names/`, which link back to the root and tag the people who
+  bear them (see the README's "A name entry").
 - **Add scripture's Aramaic words** of the root as words of the entry, with
   `lang` (`arc` Biblical Aramaic, `syc` the Peshitta) and their own `root`
   where the spelling differs (Aramaic דְּהַב under Hebrew זָהָב, אֲתַר under

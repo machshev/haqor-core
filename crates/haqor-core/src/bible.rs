@@ -4247,6 +4247,54 @@ impl Bible {
         )
     }
 
+    /// The Haqor name entry (`data/lexicon/names`) of the person
+    /// `entity_id` (a `name_entity` id), as its id and JSON. `None` where
+    /// Haqor has none, or the database was built without them.
+    pub fn haqor_lexicon_name_for_entity(
+        &self,
+        entity_id: i64,
+    ) -> rusqlite::Result<Option<(String, String)>> {
+        if !self.has_table("haqor_lexicon_person")? {
+            return Ok(None);
+        }
+        self.db
+            .query_row(
+                "SELECT n.id, n.json FROM data.haqor_lexicon_person p \
+                 JOIN data.haqor_lexicon_name n ON n.id = p.id \
+                 WHERE p.entity_id = ?1 ORDER BY n.id LIMIT 1",
+                [entity_id],
+                |row| Ok((row.get(0)?, row.get(1)?)),
+            )
+            .optional()
+    }
+
+    /// The Haqor name entries formed from the root entry `id`, as id and
+    /// JSON, in id order.
+    pub fn haqor_lexicon_names_of(&self, id: &str) -> rusqlite::Result<Vec<(String, String)>> {
+        if !self.has_table("haqor_lexicon_name")? {
+            return Ok(Vec::new());
+        }
+        self.db
+            .prepare_cached(
+                "SELECT id, json FROM data.haqor_lexicon_name WHERE entry = ?1 ORDER BY id",
+            )?
+            .query_map([id], |row| Ok((row.get(0)?, row.get(1)?)))?
+            .collect()
+    }
+
+    /// The `name_entity` ids of the people the Haqor name entry `id` names.
+    pub fn haqor_lexicon_name_people(&self, id: &str) -> rusqlite::Result<Vec<i64>> {
+        if !self.has_table("haqor_lexicon_person")? {
+            return Ok(Vec::new());
+        }
+        self.db
+            .prepare_cached(
+                "SELECT entity_id FROM data.haqor_lexicon_person WHERE id = ?1 ORDER BY entity_id",
+            )?
+            .query_map([id], |row| row.get(0))?
+            .collect()
+    }
+
     /// The BDB keys of the words Haqor's lexicon entry `id` holds: the BDB
     /// entries it stands in for.
     pub fn haqor_lexicon_keys(&self, id: &str) -> rusqlite::Result<HashSet<String>> {

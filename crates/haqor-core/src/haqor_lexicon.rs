@@ -159,6 +159,80 @@ pub struct Entry {
     pub note: String,
 }
 
+/// The lexicon's subdirectory of name entries.
+pub const NAMES_DIR: &str = "names";
+
+/// The people and places STEP Bible's TIPNR tells apart, as prepared for the
+/// build, under `src_texts`: what a name entry's `people` name.
+pub const PEOPLE_RECORDS: &str = "STEPBible-Data/names.jsonl";
+
+/// A proper name's own entry (`names/<id>.json`): what the name means, from
+/// the root it is formed from, and the people who bear it. Its root's own
+/// entry holds the evidence for the root's sense; the name cites what ties it
+/// to that sense.
+#[derive(Debug, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct NameEntry {
+    pub id: String,
+    /// The pointed name as the text spells it (`שִׁפְרָה`).
+    pub name: String,
+    /// The name in English (`Shiphrah`).
+    pub english: String,
+    /// The root key the name is formed from.
+    pub root: String,
+    /// The id of the root's entry, which this one links back to.
+    pub entry: String,
+    /// The lemma of the root entry's word the name is, or is formed from,
+    /// where it is one of them.
+    #[serde(default)]
+    pub word: Option<String>,
+    pub status: Status,
+    #[serde(default)]
+    pub reviewed: Option<String>,
+    pub updated: String,
+    /// The BDB keys whose tokens are this name.
+    #[serde(default)]
+    pub bdb: Vec<String>,
+    /// The people who bear it, by their TIPNR key (`Shiphrah@Exo.1.15`).
+    pub people: Vec<String>,
+    /// What the name means, in a few words.
+    pub gloss: String,
+    pub summary: String,
+    /// What ties the name to its meaning: scripture's use of the root's
+    /// words, and sources.
+    pub evidence: Vec<Citation>,
+    /// The root entry's cognates that bear on the name's meaning.
+    #[serde(default)]
+    pub cognate_ids: Vec<String>,
+    #[serde(default)]
+    pub note: String,
+}
+
+/// Whether an entry's text is a name entry's rather than a root's.
+pub fn is_name_entry(text: &str) -> bool {
+    serde_json::from_str::<serde_json::Value>(text)
+        .ok()
+        .is_some_and(|v| v.get("people").is_some() && v.get("words").is_none())
+}
+
+/// The people records under `src_texts` ([`PEOPLE_RECORDS`]): each TIPNR key
+/// with the record's id (the database's `name_entity.entity_id`) and kind.
+pub fn people_records(src_texts: &Path) -> Result<HashMap<String, (i64, String)>> {
+    let path = src_texts.join(PEOPLE_RECORDS);
+    let raw =
+        std::fs::read_to_string(&path).with_context(|| format!("reading {}", path.display()))?;
+    let mut out = HashMap::new();
+    for line in raw.lines().filter(|l| !l.trim().is_empty()) {
+        let record: serde_json::Value =
+            serde_json::from_str(line).with_context(|| format!("parsing {}", path.display()))?;
+        if let (Some(key), Some(id)) = (record["key"].as_str(), record["id"].as_i64()) {
+            let kind = record["kind"].as_str().unwrap_or_default().to_string();
+            out.insert(key.to_string(), (id, kind));
+        }
+    }
+    Ok(out)
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
 #[serde(rename_all = "lowercase")]
 pub enum Status {
@@ -414,6 +488,8 @@ pub struct Source {
 pub struct Lexicon {
     pub sources: Vec<Source>,
     pub entries: Vec<Entry>,
+    /// The name entries, from [`NAMES_DIR`].
+    pub names: Vec<NameEntry>,
 }
 
 /// What a check found, for the log and the tests.
@@ -424,10 +500,59 @@ pub struct LexiconSummary {
     pub words: usize,
     pub senses: usize,
     pub citations: usize,
+    pub names: usize,
 }
 
-/// Read every entry and the source registry from `dir`, entries in file name
-/// order. Fails on JSON that does not fit the schema, naming the file.
+/// The entry files in `dir` (not `sources.json`), in name order; none where
+/// `dir` does not exist and `optional`.
+fn entry_paths(dir: &Path, optional: bool) -> Result<Vec<std::path::PathBuf>> {
+    if optional && !dir.exists() {
+        return Ok(Vec::new());
+    }
+    let mut paths = Vec::new();
+    for dirent in std::fs::read_dir(dir).with_context(|| format!("reading {}", dir.display()))? {
+        let path = dirent?.path();
+        if path.is_file()
+            && path.extension().is_some_and(|e| e == "json")
+            && path.file_name() != Some(SOURCES.as_ref())
+        {
+            paths.push(path);
+        }
+    }
+    paths.sort();
+    Ok(paths)
+}
+
+/// Read the JSON files at `paths` as `T`, each named by the id `id_of` gives.
+fn read_entries<T: serde::de::DeserializeOwned>(
+    paths: Vec<std::path::PathBuf>,
+    id_of: impl Fn(&T) -> &str,
+) -> Result<Vec<T>> {
+    let mut entries = Vec::new();
+    for path in paths {
+        let raw = std::fs::read_to_string(&path)
+            .with_context(|| format!("reading {}", path.display()))?;
+        let entry: T =
+            serde_json::from_str(&raw).with_context(|| format!("parsing {}", path.display()))?;
+        let stem = path
+            .file_stem()
+            .and_then(|s| s.to_str())
+            .unwrap_or_default();
+        if stem != id_of(&entry) {
+            bail!(
+                "{} holds entry `{}`: the file must be named by its id",
+                path.display(),
+                id_of(&entry)
+            );
+        }
+        entries.push(entry);
+    }
+    Ok(entries)
+}
+
+/// Read every entry, every name entry and the source registry from `dir`,
+/// entries in file name order. Fails on JSON that does not fit the schema,
+/// naming the file.
 pub fn read_lexicon(dir: &Path) -> Result<Lexicon> {
     let sources_path = dir.join(SOURCES);
     let raw = std::fs::read_to_string(&sources_path)
@@ -435,52 +560,31 @@ pub fn read_lexicon(dir: &Path) -> Result<Lexicon> {
     let sources = serde_json::from_str::<SourcesFile>(&raw)
         .with_context(|| format!("parsing {}", sources_path.display()))?
         .sources;
-    let mut paths = Vec::new();
-    for dirent in std::fs::read_dir(dir).with_context(|| format!("reading {}", dir.display()))? {
-        let path = dirent?.path();
-        if path.extension().is_some_and(|e| e == "json")
-            && path.file_name() != Some(SOURCES.as_ref())
-        {
-            paths.push(path);
-        }
-    }
-    paths.sort();
-    let mut entries = Vec::new();
-    for path in paths {
-        let raw = std::fs::read_to_string(&path)
-            .with_context(|| format!("reading {}", path.display()))?;
-        let entry: Entry =
-            serde_json::from_str(&raw).with_context(|| format!("parsing {}", path.display()))?;
-        let stem = path
-            .file_stem()
-            .and_then(|s| s.to_str())
-            .unwrap_or_default();
-        if stem != entry.id {
-            bail!(
-                "{} holds entry `{}`: the file must be named by its id",
-                path.display(),
-                entry.id
-            );
-        }
-        entries.push(entry);
-    }
-    Ok(Lexicon { sources, entries })
+    let entries = read_entries(entry_paths(dir, false)?, |e: &Entry| &e.id)?;
+    let names = read_entries(entry_paths(&dir.join(NAMES_DIR), true)?, |e: &NameEntry| {
+        &e.id
+    })?;
+    Ok(Lexicon {
+        sources,
+        entries,
+        names,
+    })
+}
+
+/// Every name entry file's id and text as written, in file name order.
+pub fn read_name_texts(dir: &Path) -> Result<Vec<(String, String)>> {
+    texts_of(entry_paths(&dir.join(NAMES_DIR), true)?)
 }
 
 /// Every entry file's id and text as written, in file name order: what the
-/// review page shows and edits.
+/// review page shows and edits. Root entries only; [`read_name_texts`] reads
+/// the names.
 pub fn read_entry_texts(dir: &Path) -> Result<Vec<(String, String)>> {
+    texts_of(entry_paths(dir, false)?)
+}
+
+fn texts_of(paths: Vec<std::path::PathBuf>) -> Result<Vec<(String, String)>> {
     let mut out = Vec::new();
-    let mut paths = Vec::new();
-    for dirent in std::fs::read_dir(dir).with_context(|| format!("reading {}", dir.display()))? {
-        let path = dirent?.path();
-        if path.extension().is_some_and(|e| e == "json")
-            && path.file_name() != Some(SOURCES.as_ref())
-        {
-            paths.push(path);
-        }
-    }
-    paths.sort();
     for path in paths {
         let id = path
             .file_stem()
@@ -528,11 +632,22 @@ pub fn references_in(text: &str) -> Vec<(String, (u8, u8, u8))> {
 /// text's `verses`. Nothing is written when it fails. The text is written as
 /// given, so the editor keeps the file's order and layout.
 pub fn save_entry(dir: &Path, text: &str, verses: &HashSet<i64>) -> Result<LexiconSummary> {
-    let entry: Entry = serde_json::from_str(text).context("the entry does not fit the schema")?;
-    let id = entry.id.clone();
     let mut lexicon = read_lexicon(dir)?;
-    lexicon.entries.retain(|e| e.id != id);
-    lexicon.entries.push(entry);
+    let (id, dir) = if is_name_entry(text) {
+        let name: NameEntry =
+            serde_json::from_str(text).context("the name entry does not fit the schema")?;
+        let id = name.id.clone();
+        lexicon.names.retain(|e| e.id != id);
+        lexicon.names.push(name);
+        (id, dir.join(NAMES_DIR))
+    } else {
+        let entry: Entry =
+            serde_json::from_str(text).context("the entry does not fit the schema")?;
+        let id = entry.id.clone();
+        lexicon.entries.retain(|e| e.id != id);
+        lexicon.entries.push(entry);
+        (id, dir.to_path_buf())
+    };
     let summary = check_lexicon(&lexicon, verses, None)?;
     let path = dir.join(format!("{id}.json"));
     let temporary = dir.join(format!(".{id}.json.{}.tmp", std::process::id()));
@@ -931,6 +1046,110 @@ impl Checker<'_> {
             self.evidence(&at, &doctrine.evidence, Accepts::Scripture);
         }
     }
+
+    fn status(&mut self, at: &str, status: Status, reviewed: &Option<String>, updated: &str) {
+        if !is_date(updated) {
+            self.fault(at, "`updated` must be YYYY-MM-DD");
+        }
+        match (status, reviewed) {
+            (Status::Reviewed, None) => {
+                self.fault(
+                    at,
+                    "a `reviewed` entry needs its sign-off date in `reviewed`",
+                );
+            }
+            (Status::Draft, Some(_)) => self.fault(at, "a `draft` entry has no `reviewed` date"),
+            (_, Some(date)) if !is_date(date) => self.fault(at, "`reviewed` must be YYYY-MM-DD"),
+            _ => {}
+        }
+    }
+
+    /// A name entry, against the root entries it links back to and, where
+    /// they are at hand, the people records it names.
+    fn name(
+        &mut self,
+        name: &NameEntry,
+        entries: &[Entry],
+        people: Option<&HashMap<String, (i64, String)>>,
+    ) {
+        let at = format!("{NAMES_DIR}/{}.json", name.id);
+        self.summary.names += 1;
+        if !is_kebab(&name.id) {
+            self.fault(&at, "`id` must be kebab case");
+        }
+        if !is_hebrew(&name.name) {
+            self.fault(&at, format_args!("name `{}` must be Hebrew", name.name));
+        }
+        self.text(&at, "english", &name.english);
+        if !is_root(&name.root) {
+            self.fault(&at, format_args!("root `{}` must be a root key", name.root));
+        }
+        self.status(&at, name.status, &name.reviewed, &name.updated);
+        self.text(&at, "gloss", &name.gloss);
+        self.text(&at, "summary", &name.summary);
+        match entries.iter().find(|e| e.id == name.entry) {
+            None => self.fault(
+                &at,
+                format_args!("`entry` names no root entry `{}`", name.entry),
+            ),
+            Some(entry) => {
+                let roots_match = entry.root == name.root
+                    || entry
+                        .words
+                        .iter()
+                        .any(|w| w.root.as_deref() == Some(&name.root));
+                if !roots_match {
+                    self.fault(
+                        &at,
+                        format_args!(
+                            "root `{}` is not the root of entry `{}`",
+                            name.root, entry.id
+                        ),
+                    );
+                }
+                if let Some(word) = &name.word
+                    && !entry.words.iter().any(|w| &w.lemma == word)
+                {
+                    self.fault(
+                        &at,
+                        format_args!("`word` `{word}` is no word of `{}`", entry.id),
+                    );
+                }
+                for id in &name.cognate_ids {
+                    if !entry.cognates.iter().any(|c| c.id.as_deref() == Some(id)) {
+                        self.fault(
+                            &at,
+                            format_args!("names no cognate `{id}` of `{}`", entry.id),
+                        );
+                    }
+                }
+            }
+        }
+        if name.people.is_empty() {
+            self.fault(&at, "`people` must name at least one");
+        }
+        let mut seen = HashSet::new();
+        for key in &name.people {
+            if !seen.insert(key) {
+                self.fault(&at, format_args!("`{key}` listed twice"));
+            }
+            if !key.contains('@') {
+                self.fault(&at, format_args!("`{key}` is no TIPNR key (`Name@Ref`)"));
+            } else if let Some(people) = people {
+                match people.get(key) {
+                    None => self.fault(
+                        &at,
+                        format_args!("`{key}` is in no record of {PEOPLE_RECORDS}"),
+                    ),
+                    Some((_, kind)) if kind != "person" => {
+                        self.fault(&at, format_args!("`{key}` is a {kind}, not a person"))
+                    }
+                    Some(_) => {}
+                }
+            }
+        }
+        self.evidence(&at, &name.evidence, Accepts::Either);
+    }
 }
 
 /// Check the lexicon against the text's `verses` and, where `src_texts` is
@@ -969,6 +1188,7 @@ pub fn check_lexicon(
     }
     checker.sources = ids;
     let mut roots = HashSet::new();
+    let mut bdb_keys: HashMap<&str, &str> = HashMap::new();
     for entry in &lexicon.entries {
         if !roots.insert((entry.root.as_str(), entry.homograph)) {
             checker.fault(
@@ -980,6 +1200,33 @@ pub fn check_lexicon(
             );
         }
         checker.entry(entry);
+        for key in entry.words.iter().flat_map(|w| &w.bdb) {
+            if let Some(other) = bdb_keys.insert(key, &entry.id) {
+                checker.fault(
+                    &format!("{}.json", entry.id),
+                    format_args!("BDB key `{key}` is also in `{other}`"),
+                );
+            }
+        }
+    }
+    let people = match src_texts {
+        Some(src_texts) => Some(people_records(src_texts)?),
+        None => None,
+    };
+    let mut name_ids = HashSet::new();
+    for name in &lexicon.names {
+        if !name_ids.insert(name.id.as_str()) {
+            checker.fault(&format!("{NAMES_DIR}/{}.json", name.id), "id used twice");
+        }
+        checker.name(name, &lexicon.entries, people.as_ref());
+        for key in &name.bdb {
+            if let Some(other) = bdb_keys.insert(key, &name.id) {
+                checker.fault(
+                    &format!("{NAMES_DIR}/{}.json", name.id),
+                    format_args!("BDB key `{key}` is also in `{other}`"),
+                );
+            }
+        }
     }
     if !checker.faults.is_empty() {
         bail!(
@@ -1245,6 +1492,16 @@ pub fn unknown_bdb_keys(db: &Connection, schema: &str, lexicon: &Lexicon) -> Res
                         entry.id, word.lemma
                     ));
                 }
+            }
+        }
+    }
+    for name in &lexicon.names {
+        for key in &name.bdb {
+            if !stmt.query_row([key], |r| r.get::<_, bool>(0))? {
+                unknown.push(format!(
+                    "{}: {} names no BDB key `{key}`",
+                    name.id, name.name
+                ));
             }
         }
     }
@@ -1643,6 +1900,14 @@ pub fn support_report(lexicon: &Lexicon, db: &Connection, schema: &str) -> Strin
                     .chain(w.stems.iter().flat_map(|s| &s.cognate_ids))
                     .map(String::as_str)
             }))
+            // A name formed from the root names the cognates its meaning rests on.
+            .chain(
+                lexicon
+                    .names
+                    .iter()
+                    .filter(|n| n.entry == entry.id)
+                    .flat_map(|n| n.cognate_ids.iter().map(String::as_str)),
+            )
             .collect();
         let unnamed: Vec<String> = entry
             .cognates
@@ -1738,8 +2003,59 @@ mod tests {
         let lexicon = Lexicon {
             sources: sources(),
             entries: vec![entry],
+            names: Vec::new(),
         };
         check_lexicon(&lexicon, &verses(), None)
+    }
+
+    const NAME: &str = r#"{
+        "id": "naphish",
+        "name": "נָפִישׁ",
+        "english": "Naphish",
+        "root": "נפש",
+        "entry": "nephesh",
+        "word": "נֶפֶשׁ",
+        "status": "draft",
+        "updated": "2026-11-08",
+        "people": ["Naphish@Gen.25.15"],
+        "gloss": "refreshed",
+        "summary": "A son of Ishmael.",
+        "evidence": [{ "ref": "Gen.2.7", "role": "defining" }]
+    }"#;
+
+    fn check_name(name: &str) -> Result<LexiconSummary> {
+        let lexicon = Lexicon {
+            sources: sources(),
+            entries: vec![serde_json::from_str(ENTRY)?],
+            names: vec![serde_json::from_str(name)?],
+        };
+        check_lexicon(&lexicon, &verses(), None)
+    }
+
+    #[test]
+    fn accepts_a_name_entry_linked_to_its_root() {
+        assert!(is_name_entry(NAME));
+        assert!(!is_name_entry(ENTRY));
+        assert_eq!(check_name(NAME).unwrap().names, 1);
+    }
+
+    #[test]
+    fn rejects_a_name_entry_with_broken_links() {
+        let json = NAME
+            .replace(r#""entry": "nephesh""#, r#""entry": "ruach""#)
+            .replace(r#"["Naphish@Gen.25.15"]"#, r#"["Naphish"]"#);
+        let error = check_name(&json).unwrap_err().to_string();
+        assert!(error.contains("names no root entry `ruach`"), "{error}");
+        assert!(error.contains("is no TIPNR key"), "{error}");
+        let json = NAME
+            .replace(r#""root": "נפש""#, r#""root": "רוח""#)
+            .replace(r#""word": "נֶפֶשׁ""#, r#""word": "רוּחַ""#);
+        let error = check_name(&json).unwrap_err().to_string();
+        assert!(
+            error.contains("is not the root of entry `nephesh`"),
+            "{error}"
+        );
+        assert!(error.contains("is no word of `nephesh`"), "{error}");
     }
 
     #[test]
@@ -1753,6 +2069,7 @@ mod tests {
                 words: 1,
                 senses: 1,
                 citations: 4,
+                names: 0,
             }
         );
     }
@@ -2128,6 +2445,7 @@ mod tests {
         let lexicon = Lexicon {
             sources: sources(),
             entries: vec![serde_json::from_str(EREV).unwrap()],
+            names: Vec::new(),
         };
         let splits = sound_splits(&lexicon);
         assert_eq!(splits.len(), 1);

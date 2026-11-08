@@ -852,8 +852,8 @@ fn main() -> Result<()> {
             } => {
                 let s = haqor_db_gen::check_lexicon_dir(&lexicon, &db, &src_texts)?;
                 println!(
-                    "Lexicon OK: {} entries ({} reviewed), {} words, {} senses, {} citations",
-                    s.entries, s.reviewed, s.words, s.senses, s.citations
+                    "Lexicon OK: {} entries ({} reviewed), {} names, {} words, {} senses, {} citations",
+                    s.entries, s.reviewed, s.names, s.words, s.senses, s.citations
                 );
             }
             DbCommands::LexiconSupport { lexicon, db } => {

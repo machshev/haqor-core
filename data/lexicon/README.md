@@ -41,7 +41,8 @@ Further reading:
   never leave a word out because its link to the root's sense is not yet
   understood: keep it and say in its `summary` that the link is not clear.
   Leave a word out only when the evidence puts it under another root (a loan,
-  or cognates pointing elsewhere); proper names have their own entries.
+  or cognates pointing elsewhere); proper names have their own entries (see
+  "A name entry").
 - **One spelling, one entry.** Where cognates show that one Hebrew spelling
   covers two older roots (ערב "evening" behind ġ, "pledge" behind ʿ), the
   entry stays one, and each sense names the cognates that go with it
@@ -132,6 +133,35 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 | `note` | Optional: how its meaning bears on the Hebrew. |
 | `sounds` | Optional: for each letter of the root that stands for more than one older sound, the sound this cognate shows (`{"ע": "ġ"}`; see Sounds). |
 | `evidence` | At least one citation of its dictionary entry or the text it occurs in. Scripture's own Aramaic is not a cognate but a word of the entry. |
+
+## A name entry
+
+A proper name has its own entry in `names/<id>.json`, linked back to the
+entry of the root it is formed from, and tagged with the people who bear it.
+The root's entry holds the evidence for the root's sense; the name entry
+cites what ties the name to it.
+
+| Field | |
+|---|---|
+| `id` | Kebab case ASCII (`shiphrah`). The file is `names/<id>.json`. |
+| `name` | The pointed name as the text spells it (`שִׁפְרָה`). |
+| `english` | The name in English (`Shiphrah`). |
+| `root` | The root key it is formed from: the root entry's own, or one of its words' `root`s. |
+| `entry` | The `id` of that root's entry, which must exist. |
+| `word` | Optional: the `lemma` of the root entry's word the name is, where it is one (Shiphrah is the noun שִׁפְרָה, "fairness"). |
+| `status`, `reviewed`, `updated` | As for an entry. |
+| `bdb` | Optional: the BDB keys whose tokens are the name. A key is in one entry or name only. |
+| `people` | The people who bear it, by their TIPNR key (`Shiphrah@Exo.1.15`, as in `src_texts/STEPBible-Data/names.jsonl`); each must be a person there. A spelling borne by several people names them all. |
+| `gloss` | What the name means, in a few words. Where its root is uncertain, the readings (`girl; or one who cries out`). |
+| `summary` | Who bears it, and how the name comes from the root. |
+| `evidence` | Citations, scripture or sources, for the name and its meaning: the verse naming the person, and the verses or cognates the meaning rests on. |
+| `cognate_ids` | Optional: the root entry's cognates the meaning rests on. Naming one here counts as naming it on a word. |
+| `note` | For editors, as for an entry. |
+
+The build puts each name in `haqor_lexicon_name` and its people in
+`haqor_lexicon_person` (by `name_entity` id), so the app shows the name's
+entry for a word naming one of them, and the root entry lists the names
+formed from it.
 
 ### Counting the evidence
 
