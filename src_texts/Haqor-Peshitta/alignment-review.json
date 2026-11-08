@@ -377,6 +377,41 @@
           "reason": "Had kma, literally one/how-much, is the established idiomatic proportional comparison how much more. The numeral participates in this comparative idiom rather than counting an independent object or supplying a separate English one."
         }
       ]
+    },
+    "40:11": {
+      "sha256": "9c7f8f7e20988c824fda9085edd0b5f682b270771c2df2a8d808f3e68400d12f",
+      "original_shared_spans": 41,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 2,
+          "english": "in prison",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "The Syriac construct combines house with prisoner to express the lexical location prison; separate English nouns would not preserve this established idiom."
+        },
+        {
+          "verse": 27,
+          "english": "except",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The fixed exceptive conjunction ella en, literally but if, jointly means except/unless. The conditional element is part of the idiom, not an independent condition on whether the Father/Son knows; literal except if would distort this exclusive knowledge assertion."
+        },
+        {
+          "verse": 27,
+          "english": "except",
+          "positions": [
+            18,
+            19
+          ],
+          "reason": "The fixed exceptive conjunction ella en, literally but if, jointly means except/unless. The conditional element is part of the idiom, not an independent condition on whether the Father/Son knows; literal except if would distort this exclusive knowledge assertion."
+        }
+      ]
     }
   }
 }
