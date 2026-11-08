@@ -287,8 +287,12 @@ A source in `sources.json`:
 - `lang`: the language it is a dictionary or text of.
 - `licence`: as the source states it.
 - `url`: where it is published.
-- `local`: its path under `src_texts`, where a copy is kept; empty while not
-  yet vendored.
+- `local`: its path under `src_texts` to a required, vendored copy; empty for
+  remote references and optional consultation copies. The validator and
+  database generator require every nonempty path to exist.
+  Optional reference scans, mapped to source IDs in their download manifest,
+  and their fetch instructions are in
+  [ReferenceScans](../../src_texts/ReferenceScans/README.md).
 
 ## Writing an entry
 
