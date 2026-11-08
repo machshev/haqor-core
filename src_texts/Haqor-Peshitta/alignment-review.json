@@ -325,6 +325,32 @@
           "reason": "Beth qvure, literally house/place of graves, is the lexical burial-location expression. The English tombs denotes that place; the construct head does not assert a separate inhabited house."
         }
       ]
+    },
+    "40:9": {
+      "sha256": "cb890545d606541be401a37ea4845455afc94c906b1e19e8a0c40eb4f05895ea",
+      "original_shared_spans": 53,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 9,
+          "english": "at the tax office",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Beth makhse is the lexical location expression for the tax office, literally the house/place of the tax collectors. It names one institution rather than adding a separately asserted house and tax-collector subject."
+        },
+        {
+          "verse": 12,
+          "english": "who are ill",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "D-bishayith avidin is the conventional illness expression, literally those badly made/disposed. Here the passive made predicate supplies the state and the badly adverb specifies illness; translating it as a separate making action would introduce an event absent from the idiomatic reference to patients."
+        }
+      ]
     }
   }
 }
