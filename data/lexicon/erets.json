@@ -40,7 +40,10 @@
           ],
           "cognate_ids": [
             "ar-ard",
-            "akk-ersetu"
+            "akk-ersetu",
+            "uga-ars",
+            "phn-ars",
+            "sab-ard"
           ]
         },
         {
@@ -60,7 +63,11 @@
           ],
           "cognate_ids": [
             "ar-ard",
-            "akk-ersetu"
+            "akk-ersetu",
+            "uga-ars",
+            "phn-ars",
+            "moab-ars",
+            "sab-ard"
           ]
         },
         {
@@ -80,7 +87,8 @@
           ],
           "cognate_ids": [
             "ar-ard",
-            "akk-ersetu"
+            "akk-ersetu",
+            "uga-ars"
           ]
         },
         {
@@ -187,7 +195,11 @@
       "root": "ארע",
       "cognate_ids": [
         "ar-ard",
-        "akk-ersetu"
+        "akk-ersetu",
+        "uga-ars",
+        "phn-ars",
+        "moab-ars",
+        "sab-ard"
       ]
     },
     {
@@ -215,7 +227,10 @@
       "gender": "f",
       "cognate_ids": [
         "ar-ard",
-        "akk-ersetu"
+        "akk-ersetu",
+        "uga-ars",
+        "phn-ars",
+        "sab-ard"
       ],
       "summary": "The form with ק occurs once, beside the form with ע later in the same Aramaic verse."
     },
@@ -241,7 +256,11 @@
           ],
           "cognate_ids": [
             "ar-ard",
-            "akk-ersetu"
+            "akk-ersetu",
+            "uga-ars",
+            "phn-ars",
+            "moab-ars",
+            "sab-ard"
           ]
         },
         {
@@ -256,7 +275,8 @@
           ],
           "cognate_ids": [
             "ar-ard",
-            "akk-ersetu"
+            "akk-ersetu",
+            "uga-ars"
           ]
         }
       ],
@@ -323,6 +343,90 @@
           "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003460.html"
         }
       ]
+    },
+    {
+      "id": "uga-ars",
+      "lang": "uga",
+      "form": "𐎀𐎗𐎕",
+      "translit": "ʾarṣ",
+      "gloss": "earth, land, ground",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎀𐎗𐎕 (ảrṣ)",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%97%F0%90%8E%95",
+          "note": "\"earth; land; ground\"; \"From Proto-Semitic *ʔarṣ́-.\""
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000575 ʾrḍ [earth], UGC000591 arṣ [earth]"
+        }
+      ],
+      "note": "Ugaritic writes ṣ here, so it does not show which older sound stands behind צ."
+    },
+    {
+      "id": "phn-ars",
+      "lang": "phn",
+      "form": "𐤀𐤓𐤑",
+      "translit": "ʾrṣ",
+      "gloss": "earth, land",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤀𐤓𐤑; Punic 𐤀𐤓𐤑",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A4%80%F0%90%A4%93%F0%90%A4%91",
+          "note": "Phoenician \"earth; land\", plural ʾrṣt; Punic \"earth; land\"."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000575 ʾrḍ [earth], PUN000219 ʾrṣ [earth;]"
+        }
+      ],
+      "note": "Phoenician and Punic."
+    },
+    {
+      "id": "moab-ars",
+      "lang": "sem",
+      "form": "ארץ",
+      "translit": "ʾrṣ",
+      "gloss": "land",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 5–6, 7–8, 10, 29, 31",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 10 ואש גד ישב בארץ עטרת מעלמ; lines 5–6 כי יאנפ כמש בארצה; lines 7–8 וירש עמרי את [אר]ץ מהבא; line 29 אשר יספתי על הארצ; line 31 הארץ."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 5–8, 10, 29, 31",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"Kemôš was angry with his land\"; \"ʿOmrî possessed the [land] of Mehēḏeḇā\"; \"the men of Gaḏ had dwelt in the land of ʿǎṭarôṯ from of old\"; \"the cities which I added to the land\"."
+        }
+      ],
+      "note": "Moabite, the Mesha stele: a particular land, a god's own land, and the district a king holds and adds cities to, as אֶרֶץ names a territory."
+    },
+    {
+      "id": "sab-ard",
+      "lang": "sem",
+      "form": "𐩱𐩧𐩳",
+      "translit": "ʾrḍ",
+      "gloss": "earth, land",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Proto-Semitic *ʔarṣ́-, descendants: Sabaic, Minaean, Qatabanic and Hadramitic 𐩱𐩧𐩳 (ʾrḍ)",
+          "url": "https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%94ar%E1%B9%A3%CC%81-"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Old South Arabian. Its ḍ agrees with Arabic on the older emphatic lateral behind צ. Only Wiktionary's list of descendants consulted; Biella not yet checked."
     }
   ],
   "doctrine": [
