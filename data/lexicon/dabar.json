@@ -11,7 +11,7 @@
     "wilderness"
   ],
   "gloss": "speak; word, matter; lead, subdue",
-  "summary": "דִּבֵּר is to speak, and דָּבָר is what is spoken: a word, message, command, or promise, and also a matter, event, or thing. The same spelling holds subduing and leading, clearer in the Peshitta’s verb of guiding and its nouns for conduct and administration. Pestilence, wilderness, bees, rafts and the inner sanctuary are retained as words of the family, but their connections to speech or leading are not treated as settled.",
+  "summary": "דִּבֵּר is to speak, and דָּבָר is what is spoken: a word, message, command, or promise, and also a matter, event, or thing. The same spelling holds subduing and leading, clearer in the Peshitta’s verb of guiding and its nouns for conduct and administration. The inner sanctuary is the place of speaking: the room of the ark’s cover, from above which Yahweh speaks. Pestilence, wilderness, bees and rafts are retained as words of the family, but their connections to speech or leading are not treated as settled.",
   "words": [
     {
       "lemma": "דָּבָר",
@@ -131,6 +131,7 @@
           "gloss": "speak; destroy",
           "senses": [
             {
+              "id": "speak",
               "gloss": "speak, address",
               "definition": "Utter speech or address someone; what follows gives the message or command.",
               "evidence": [
@@ -261,6 +262,7 @@
           "gloss": "speak",
           "senses": [
             {
+              "id": "voice-speaking",
               "gloss": "speak, be speaking",
               "definition": "The participle describes a voice or speaker addressing a hearer.",
               "evidence": [
@@ -441,19 +443,25 @@
     {
       "lemma": "דְּבִיר",
       "pos": "noun",
-      "gloss": "inner sanctuary",
+      "gloss": "inner sanctuary, the place Yahweh speaks from",
       "bdb": [
         "d.ai.aj"
       ],
       "senses": [
         {
-          "gloss": "inner sanctuary",
-          "definition": "The innermost temple chamber, identified with the holy of holies and the place of the ark.",
+          "id": "speaking-place",
+          "gloss": "inner sanctuary, place of speaking",
+          "definition": "The innermost room of the temple, the holy of holies, where the ark stands under the cherubim’s wings: the place above the cover of the ark from which Yahweh said he would speak (Exo 25:22) and from which Moses heard the voice speaking (Num 7:89).",
           "evidence": [
             {
               "ref": "1Ki.6.19",
               "role": "defining",
               "note": "The room is prepared within the house to hold the ark."
+            },
+            {
+              "ref": "1Ki.8.6",
+              "role": "defining",
+              "note": "The ark is brought to the דְּבִיר of the house, the holy of holies, under the wings of the cherubim: the place of Exo 25:22."
             },
             {
               "ref": "2Ch.5.7",
@@ -462,13 +470,26 @@
             },
             {
               "ref": "Psa.28.2",
-              "role": "defining"
+              "role": "defining",
+              "note": "The psalmist asks Yahweh not to be silent to him (28:1) as he lifts his hands toward the holy דְּבִיר: the room he looks to for an answer."
+            },
+            {
+              "ref": "Exo.25.22",
+              "note": "“There I will meet with you and speak (וְדִבַּרְתִּי) with you from above the cover, from between the two cherubim on the ark”: the place the דְּבִיר was made to hold."
+            },
+            {
+              "ref": "Num.7.89",
+              "note": "Moses enters the tent to speak with him and hears the voice speaking (מִדַּבֵּר) to him from above the cover, between the two cherubim."
             }
+          ],
+          "kin": [
+            "speak",
+            "voice-speaking"
           ]
         }
       ],
       "gender": "m",
-      "summary": "The inner room of the temple where the ark is placed. Arabic “rear” supplies a possible comparison for its position, but the room is defined by the temple passages, not by a proposed derivation.",
+      "summary": "The holy of holies, where the ark stands under the cherubim: the room named for the speaking from above the ark’s cover that Yahweh promised (Exo 25:22) and Moses heard (Num 7:89), as the psalmist faces it asking Yahweh not to be silent (Psa 28:1–2). Arabic “rear” remains a possible comparison for its position at the back of the house.",
       "cognate_ids": [
         "ar-dabr-rear",
         "phn-dbr-cella"
@@ -1351,5 +1372,5 @@
       ]
     }
   ],
-  "note": "Proper names and the redirect m.ak.ah are omitted. מִדְבָּר’s two meanings share the spelling inventories d.ai.ao/ap; only d.ai.ap is assigned. דֹּבֶר and דִּבֵּר share the three indexed forms in Isa 5:17, Jer 5:13 and Mic 2:12: d.ai.ad is assigned once and the speech noun is left without a BDB key rather than counting that same inventory twice. The support totals are therefore not counts of the separate meanings. The Pual in Sng 8:8 and the destructive Piel in 2Ch 22:10 are included after checking the source even though the brief’s stem summary omits them. The speech and leading families stay together without a reconstructed semantic bridge; so do pestilence, bees, rafts and the sanctuary. Lane’s دبر section is in the vendored JSONL under the mis-keyed root دبخ; the cited pp. 844–845 were also checked in the page scan (https://www.thelastdialogue.org/wp-content/uploads/2020/09/Lanes-Lexicon-Arabic-Dictionary-Root-Word-%D8%AF-Dal.pdf, PDF pp. 6–7) and its linked transcription. Akkadian dabābu is not assumed cognate merely because it means “speak”; the consonants differ. The brief’s Greek-loan leads are not accepted without an etymology."
+  "note": "Proper names and the redirect m.ak.ah are omitted. מִדְבָּר’s two meanings share the spelling inventories d.ai.ao/ap; only d.ai.ap is assigned. דֹּבֶר and דִּבֵּר share the three indexed forms in Isa 5:17, Jer 5:13 and Mic 2:12: d.ai.ad is assigned once and the speech noun is left without a BDB key rather than counting that same inventory twice. The support totals are therefore not counts of the separate meanings. The Pual in Sng 8:8 and the destructive Piel in 2Ch 22:10 are included after checking the source even though the brief’s stem summary omits them. The speech and leading families stay together without a reconstructed semantic bridge; so do pestilence, bees and rafts. The sanctuary is tied to speech by scripture’s own account of the speaking from above the cover (Exo 25:22, Num 7:89). Lane’s دبر section is in the vendored JSONL under the mis-keyed root دبخ; the cited pp. 844–845 were also checked in the page scan (https://www.thelastdialogue.org/wp-content/uploads/2020/09/Lanes-Lexicon-Arabic-Dictionary-Root-Word-%D8%AF-Dal.pdf, PDF pp. 6–7) and its linked transcription. Akkadian dabābu is not assumed cognate merely because it means “speak”; the consonants differ. The brief’s Greek-loan leads are not accepted without an etymology."
 }
