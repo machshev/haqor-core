@@ -107,7 +107,8 @@
             }
           ],
           "cognate_ids": [
-            "akk-ersetu"
+            "akk-ersetu",
+            "uga-ars"
           ]
         }
       ],
@@ -353,6 +354,21 @@
       "relation": "cognate",
       "evidence": [
         {
+          "source": "segert-1984",
+          "locator": "p. 180, §93 Glossary, arṣ",
+          "note": "\"arṣ /ʾarṣ-/, cf. ar-ṣum U:V:137:III:14′, “earth” (H. ʾæræṣ, Aram. ʾarqāʾ, ʾarʿāʾ, Arab. ʾarḍ)\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 94, §64.52, KTU 1.4:VIII:8",
+          "note": "tspr.by|rdm.arṣ, \"you will be counted among those who go down (in)to the earth\"."
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "p. 47, arṣ",
+          "note": "Ugaritic arṣ \"earth\" beside Tigre ʾarḍ, ʾɨrḍ, ʾardāt \"earth, land\", which Leslau takes to be Arabic loans; Fisher adds \"But note ESA ʾrḍ\"."
+        },
+        {
           "source": "wiktionary",
           "locator": "Ugaritic 𐎀𐎗𐎕 (ảrṣ)",
           "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%97%F0%90%8E%95",
@@ -363,16 +379,21 @@
           "locator": "SEM000575 ʾrḍ [earth], UGC000591 arṣ [earth]"
         }
       ],
-      "note": "Ugaritic writes ṣ here, so it does not show which older sound stands behind צ."
+      "note": "Ugaritic writes ṣ here, so it does not show which older sound stands behind צ. Those who die “go down into the earth” (KTU 1.4:VIII:8), as אֶרֶץ can be the dwelling of the dead."
     },
     {
       "id": "phn-ars",
       "lang": "phn",
       "form": "𐤀𐤓𐤑",
       "translit": "ʾrṣ",
-      "gloss": "earth, land",
+      "gloss": "earth; land, country; motherland; region; territory of a state",
       "relation": "cognate",
       "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 73–74, ʾRṢ, pl. ʾRṢT",
+          "note": "\"[Heb. ʾereṣ] n.f. 1. THE EARTH\", KAI 26 A 18 and KAI 129.1 ʾl qn ʾrṣ, \"El, Creator of the Earth\"; \"2. LAND, COUNTRY\", KAI 26 A I 9 bʾrṣ, \"in the land\"; \"3. MOTHERLAND\"; \"4. REGION, AREA\", KAI 14.18–19; \"5. TERRITORY of a state\", KAI 26 A I 4–5, \"I enlarged the territory of the Valley of Adana\"."
+        },
         {
           "source": "wiktionary",
           "locator": "Phoenician 𐤀𐤓𐤑; Punic 𐤀𐤓𐤑",
@@ -384,7 +405,7 @@
           "locator": "SEM000575 ʾrḍ [earth], PUN000219 ʾrṣ [earth;]"
         }
       ],
-      "note": "Phoenician and Punic."
+      "note": "Phoenician and Punic, with the range of אֶרֶץ: the whole earth made by El, a country, a region and a state’s territory."
     },
     {
       "id": "moab-ars",
@@ -414,9 +435,15 @@
       "lang": "sem",
       "form": "𐩱𐩧𐩳",
       "translit": "ʾrḍ",
-      "gloss": "earth, land",
+      "gloss": "land (political entity); piece of land, territory, field; earth",
       "relation": "cognate",
       "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 27, ʾRḌ",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"(1) LAND (political entity) [Ar ʾarḍ id]\", J555/4 ʾrḍ QTBN \"the land of Q.\"; \"(2) PIECE OF LAND = TERRITORY, FIELD\"; \"(3) EARTH\", MuBilinguis/2–3 mrʾ smyn wʾrḍn \"Lord of heaven and earth\"."
+        },
         {
           "source": "wiktionary",
           "locator": "Proto-Semitic *ʔarṣ́-, descendants: Sabaic, Minaean, Qatabanic and Hadramitic 𐩱𐩧𐩳 (ʾrḍ)",
@@ -426,7 +453,7 @@
       "sounds": {
         "צ": "ṣ́"
       },
-      "note": "Old South Arabian. Its ḍ agrees with Arabic on the older emphatic lateral behind צ. Only Wiktionary's list of descendants consulted; Biella not yet checked."
+      "note": "Sabaic, with ḍ agreeing with Arabic on the older emphatic lateral behind צ; Wiktionary also lists Minaean, Qatabanic and Hadramitic. “Lord of heaven and earth” pairs the word with heaven as Gen 14:19 pairs אֶרֶץ with שָׁמַיִם."
     }
   ],
   "doctrine": [
