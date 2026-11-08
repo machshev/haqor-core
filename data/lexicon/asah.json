@@ -10,7 +10,7 @@
     "obedience"
   ],
   "gloss": "do, make; handle, press",
-  "summary": "עָשָׂה names doing an act or making something, from everyday work to God’s making the heavens and earth. What is done supplies the particular force: keep a command, perform a rite, produce a crop, or deal with someone. מַעֲשֶׂה is the act or the work produced; the piel’s handling of the breast in Ezekiel is retained here, though its relation to making is unclear.",
+  "summary": "עָשָׂה names doing an act or making something, from everyday work to God’s making the heavens and earth. What is done supplies the particular force: keep a command, perform a rite, produce a crop, or deal with someone. מַעֲשֶׂה is the act or the work produced; the piel’s pressing of the breast in Ezekiel matches an Aramaic “press” and may be a second, older root in the same spelling.",
   "words": [
     {
       "lemma": "עָשָׂה",
@@ -61,6 +61,9 @@
                   "ref": "1Ki.17.13",
                   "role": "defining"
                 }
+              ],
+              "cognate_ids": [
+                "arc-asy-make"
               ]
             },
             {
@@ -93,6 +96,10 @@
                   "role": "defining",
                   "note": "God acted to preserve many people alive."
                 }
+              ],
+              "cognate_ids": [
+                "uga-asy",
+                "gez-asaya"
               ]
             },
             {
@@ -110,6 +117,10 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "moab-asah",
+            "sab-asy"
           ]
         },
         {
@@ -135,6 +146,9 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "moab-asah"
           ]
         },
         {
@@ -152,6 +166,9 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "moab-asah"
           ]
         },
         {
@@ -160,7 +177,7 @@
           "senses": [
             {
               "gloss": "handle, press the breast",
-              "definition": "In Ezekiel’s image of two sisters, handle or press their breasts. These are the only two occurrences; the link to the ordinary verb “make” is not established.",
+              "definition": "In Ezekiel’s image of two sisters, handle or press their breasts. These are the only two occurrences. Aramaic עַסֵּי, in the same stem, is “press, pound” and “force”; Arabic غَشِيَ “come upon (a woman)” may show an older ġ behind the ע, where the cognates of “make” show ʿ. No link to the ordinary verb “make” is established.",
               "evidence": [
                 {
                   "ref": "Ezk.23.3",
@@ -173,6 +190,10 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "arc-assi-press",
+            "ar-ghashiya"
           ]
         }
       ],
@@ -276,10 +297,164 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "moab-asah"
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "moab-asah",
+      "lang": "sem",
+      "form": "ואעש",
+      "translit": "wʾʿś",
+      "gloss": "make, construct",
+      "relation": "cognate",
+      "note": "Moabite, the Mesha stele: the king's building works, with the verb paired with בנה \"build\" as Hebrew pairs them: \"I made this high place for Chemosh\" (line 3, ואעש), \"I made the reservoirs\" (lines 9, 23, ואעש, עשתי), \"I made the highway by the Arnon\" (line 26, עשתי), and the imperative to the people, \"Make, each man, a cistern in his house\" (lines 24–25, עשו).",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 3, 9, 23, 24–25, 26",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 3 ואעש הבמת זאת לכמש בקרחה; line 24 ואמר לכל העמ עשו ל[כמ אש בר בביתה]; line 26 ואנכ עשתי המסלת בארנן."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 3, 9, 23–26",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"And I made this high place for Kemôš in Ḳrḥh\"; \"And I said to all the people, Make to you every man a cistern in his house\"; \"I built ʿărōʿēr and I made the high-road by the Arnon.\""
+        }
+      ]
+    },
+    {
+      "id": "sab-asy",
+      "lang": "sem",
+      "form": "𐩲𐩪𐩺",
+      "translit": "ʿs¹y",
+      "gloss": "make, construct; acquire, buy; present an offering",
+      "relation": "possible",
+      "note": "Old South Arabian (Sabaic, also Minaic and Qatabanic \"acquire\"): \"make\" often beside bny \"build\" in tomb inscriptions, as Hebrew and Moabite pair עשׂה with בנה; and \"acquire\", as Hebrew עָשָׂה is used of acquiring property (Gen 12:5, 31:1). Possible, not certain, because the sibilant is s¹ where Hebrew שׂ would lead one to expect s²; Biella notes the mismatch herself.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 375, ʿSY",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"(1) MAKE, CONSTRUCT [For this and sense² cf Heb ʿāśāh \"make; obtain,\" despite the unexpected ś in the Heb verb (š would be expected).] R3954/1: ʿsy wbny rbʿ qbrm \"he made and built one quarter of the tomb\" AND OFTEN with bny ... (2) ACQUIRE, BUY ... (3) PRESENT AN OFFERING\"; h-stem \"CAUSE TO BUY = SELL\"."
+        },
+        {
+          "source": "sabaweb",
+          "locator": "root ʿsy, lemma ʿsy 01 (68 attestations in 53 texts)",
+          "url": "http://sabaweb.uni-jena.de/SabaWeb/Suche/Suche/SearchResultList?idSearchRoot=%CA%BFsy",
+          "note": "\"kaufen, erwerben\"; CIH 414/1 ʿsy kl nḫl-hw ... w-bny ḥrrt-hw, \"hat seinen gesamten Palmgarten ... erworben und sein Kanalsystem ... gebaut\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-asy",
+      "lang": "uga",
+      "form": "𐎓𐎌𐎊",
+      "translit": "ʿšy",
+      "gloss": "do (something bad) to a person?; disturb?",
+      "relation": "possible",
+      "note": "Ugaritic, once secure, in the duties of a son in Aqhat: grš d ʿšy lnh \"who drives out whoever would ʿšy him\". Written with ʿ, not ġ. Segert glosses it doubtfully and compares both Hebrew עשׂה \"do\" and Ezekiel's piel. If \"do (harm) to someone\", it is the Hebrew \"deal with\" use; Ugaritic's ordinary \"make\" is another word.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 197, glossary ʿ-š-y; text §87.1, KTU 1.17 I 29",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "\"'to do something bad (to a person)'(?) (cf. H. ʿ-ś-y 'to do, make'; cf. H. Pi ʿiśśû 'to press' Ezek 23:3, 8(?)) or 'to disturb'(?)\"."
+        }
+      ]
+    },
+    {
+      "id": "gez-asaya",
+      "lang": "gez",
+      "form": "ዐሰየ",
+      "translit": "ʿasaya",
+      "gloss": "repay, reward, requite",
+      "relation": "possible",
+      "note": "Ge'ez, also spelled ዐሠየ with ś: doing to someone in return, for good or ill, with the nouns ʿəsset \"wages, reward\". Barth compared it with Hebrew עָשָׂה, rendering it \"einem antun\" (do to someone); Dillmann was unsure. It is the Hebrew \"deal with\" use, not \"make\".",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 974, ዐሰየ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft",
+          "note": "\"ዐሰየ (etiam ዐሠየ) [quod nescio an cum עָשָׂה fecit componi possit] ... (pro meritis) rependere, retribuere, a) in bonam partem: remunerari, gratiam referre ... b) in malam\"."
+        },
+        {
+          "source": "leslau-1987",
+          "locator": "p. 73, ʿasaya",
+          "note": "\"'repay, reward, recompense, requite (a favor)' ... Barth 1893:56 compares Heb. ʿāśā (ʿśy) 'make' with G. ʿasaya (so also Dillmann 974) that he translates 'einem antun, entrichten, geben'\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-asy-make",
+      "lang": "arc",
+      "form": "עשׂי",
+      "translit": "ʿśy",
+      "gloss": "create",
+      "relation": "possible",
+      "note": "Aramaic has the verb \"make\" only in Old Aramaic personal names from Assyria; Aramaic's verb for doing and making is עבד. Too thin to show the sense.",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ʿśy vb.",
+          "url": "https://cal.huc.edu/oneentry.php?cits=all&lemma=%28%26y+V",
+          "note": "\"to create\"; \"Cf. Hebrew \"to make\" -- only in OA personal names from Assyria.\""
+        }
+      ]
+    },
+    {
+      "id": "arc-assi-press",
+      "lang": "arc",
+      "form": "עַסֵּי",
+      "translit": "ʿassī",
+      "gloss": "(Pael) press, pound; grind the teeth; force, compel",
+      "relation": "cognate",
+      "note": "Aramaic s answers to Hebrew שׂ. In the same doubled stem as Ezekiel's piel, it is pressing by force: the Targums use it for pressing and for grinding the teeth (Targ. Job 30:17; Ps 112:10; Lam 2:16), the Babylonian Talmud for compelling someone. This is Ezekiel's \"press\", not \"make\".",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "p. 1097, עֲסֵי",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%A2%D6%B2%D7%A1%D6%B5%D7%99.1",
+          "note": "\"Pa. עַסֵּי to press, tread. Targ. Esth. I, 10. Targ. Job XXX, 17 ... Esp. to press the teeth together, gnash the teeth ... Targ. Lam. II, 16 ... Targ. Ps. CXII, 10\"."
+        },
+        {
+          "source": "cal",
+          "locator": "ʿsy vb.",
+          "url": "https://cal.huc.edu/oneentry.php?cits=all&lemma=%28sy+V",
+          "note": "\"to press, pound\"; D \"to grind (one's teeth) as a sign of animosity\" (TgPs 37:12, TgLam 2:16), \"fig.: to force, compel\" (BT Ket 53a)."
+        }
+      ]
+    },
+    {
+      "id": "ar-ghashiya",
+      "lang": "ar",
+      "form": "غَشِيَ",
+      "translit": "ġašiya",
+      "gloss": "cover, come upon; (of a man) lie with a woman",
+      "relation": "possible",
+      "note": "Arabic š answers to Hebrew שׂ, so the consonants match if ע here is older ġ. Covering or coming upon someone, and so used of a man with a woman, which fits Ezekiel's sexual image better than \"make\" does. Possible only: the meaning is close, not the same.",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "pp. 2261–2262, art. غشو / غشى, 1 غَشِيَهُ",
+          "note": "\"It covered, or concealed, him, or it ... It came upon ... as a thing that covered, him\"; \"غَشِيَهَا ... (tropical:) He compressed her; namely, a woman\"."
+        }
+      ]
+    }
+  ],
   "doctrine": [
     {
       "topic": "doing-the-word",
@@ -297,5 +472,5 @@
       ]
     }
   ],
-  "note": "One verb holds the ordinary uses and Ezekiel’s piel; no etymological bridge is claimed. The spelling index assigns the same 2,628 tokens to p.fy.aa and p.fz.aa: only p.fy.aa is named so support counts are not doubled. The combined key therefore does not measure the piel separately. Proper names (including עֵשָׂו and the עשׂה names) and redirect-only keys are omitted. No scripture Syriac word of this root was found; עבד “do” is another root and is not added as though it were a spelling variant. The Ugaritic ʿšy lead has not been checked against a text and is not treated as established evidence; the Arabic sound-search matches in the brief do not establish cognacy. ποιέω and ἔργον are renderings, not Semitic loans."
+  "note": "One verb holds the ordinary uses and Ezekiel’s piel; no etymological bridge is claimed. Cognates checked 2026-11-08, language by language. Make: Moabite secure (Mesha, five uses); Sabaic ʿs¹y possible (s¹ where s² is expected); Ugaritic ʿšy (KTU 1.17 I 29) and Ge'ez ʿasaya “repay” possible, for “deal with”; Aramaic ʿśy “create” only in Old Aramaic names (CAL). Press (piel): Aramaic ʿsy Pael (Jastrow, CAL); Arabic ġšy possible (the comparison BDB’s עָשָׂה II makes). Rejected or not found: Arabic سَعَى saʿā “act” (a metathesis, Barth; rejected by Fraenkel per Leslau p. 73); Arabic عَسَى ʿasā (s for ś, a mismatch); Punic ʿšy (listed by Anderson & Moser PUN001607, but no inscription or Krahmalkov page found; Phoenician’s “make” is pʿl); Syriac (no ʿsy in Payne Smith cols. 2935–38 or Brockelmann p. 536; CAL’s Syriac “press” rests on one queried citation); Akkadian (epēšu is another root; esû “bring to pass”, CDA, is linked by no source); Ammonite, Edomite, Deir ʿAlla (none found; Deir ʿAlla checked only through secondary summaries). Not consulted: DULAT, Krahmalkov, HALOT, the Sabaic Dictionary (only via SabaWeb), DASI. Sabaic also has mʿsm “construction” (Biella p. 375), a possible match for מַעֲשֶׂה. The spelling index assigns the same 2,628 tokens to p.fy.aa and p.fz.aa: only p.fy.aa is named so support counts are not doubled. The combined key therefore does not measure the piel separately. Proper names (including עֵשָׂו and the עשׂה names) and redirect-only keys are omitted. No scripture Syriac word of this root was found; עבד “do” is another root and is not added as though it were a spelling variant. ποιέω and ἔργον are renderings, not Semitic loans."
 }
