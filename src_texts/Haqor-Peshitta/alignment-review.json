@@ -255,6 +255,50 @@
           "verse": 16
         }
       ]
+    },
+    "40:7": {
+      "sha256": "e4979ecf78bc0aa2acd53f98180aa3f0c25250e0ea62a8b19daf1159be06ae5a",
+      "original_shared_spans": 47,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 5,
+          "english": "Hypocrite",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The participle naseb and prepositional b-appe form the established face-taking idiom for a hypocrite; the English lexical equivalent does not divide into a taking action and a separate face object."
+        },
+        {
+          "verse": 12,
+          "english": "people",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Bnay anasha, literally sons of man, is the generic human-being expression here; people renders that lexicalized construct rather than asserting literal sons."
+        },
+        {
+          "verse": 15,
+          "english": "inwardly",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Men l-gaw is the compound interior-location adverb, literally from within. In this description of the false prophets inward nature it means inwardly; men contributes to that adverb rather than a separate origin complement. The following adversative deyn at position 10 is linked separately."
+        },
+        {
+          "verse": 23,
+          "english": "ever",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Men mtum is the temporal idiom from ever/at any time, here governed by the separately linked negative at position 5. Its English adverb ever renders the compound; the relative prefix on position 3 independently owns that earlier in the clause."
+        }
+      ]
     }
   }
 }
