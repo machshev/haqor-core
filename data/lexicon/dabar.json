@@ -11,7 +11,7 @@
     "wilderness"
   ],
   "gloss": "speak; word, matter; lead, subdue",
-  "summary": "דִּבֵּר is to speak, and דָּבָר is what is spoken: a word, message, command, or promise, and also a matter, event, or thing. The same spelling holds subduing and leading, clearer in the Peshitta’s verb of guiding and its nouns for conduct and administration. The inner sanctuary is the place of speaking: the room of the ark’s cover, from above which Yahweh speaks. Pestilence, wilderness, bees and rafts are retained as words of the family, but their connections to speech or leading are not treated as settled.",
+  "summary": "דִּבֵּר is to speak, and דָּבָר is what is spoken: a word, message, command, or promise, and also a matter, event, or thing. The same spelling holds subduing and leading, clearer in the Peshitta’s verb of guiding and its nouns for conduct and administration. The inner sanctuary is the place of speaking: the room of the ark’s cover, from above which Yahweh speaks. The wilderness is where he leads his people like a flock and speaks to them. Pestilence, bees and rafts are retained as words of the family, but their connections to speech or leading are not treated as settled.",
   "words": [
     {
       "lemma": "דָּבָר",
@@ -291,6 +291,7 @@
           "gloss": "subdue",
           "senses": [
             {
+              "id": "subdue",
               "gloss": "subdue, bring under control",
               "definition": "Bring peoples under someone’s power; both examples put those subdued “under” the ruler.",
               "evidence": [
@@ -349,8 +350,9 @@
       ],
       "senses": [
         {
+          "id": "wilderness",
           "gloss": "wilderness, open country",
-          "definition": "Land outside settled or cultivated habitation, often used for grazing but also described as dry and dangerous.",
+          "definition": "Land outside settled or cultivated habitation, grazed by flocks but also dry and dangerous: the land Yahweh led his people through like a flock, and where he spoke to them.",
           "evidence": [
             {
               "ref": "Jer.2.6",
@@ -365,11 +367,54 @@
             {
               "ref": "Gen.14.6",
               "role": "defining"
+            },
+            {
+              "ref": "Psa.65.13",
+              "note": "The “pastures of the wilderness” drip with rain."
+            },
+            {
+              "ref": "Psa.78.52",
+              "role": "defining",
+              "note": "He set out his people like sheep and guided them like a flock in the wilderness."
+            },
+            {
+              "ref": "Deu.8.15",
+              "note": "Yahweh led you through the great and terrible wilderness."
+            },
+            {
+              "ref": "Num.1.1",
+              "note": "Yahweh spoke (וַיְדַבֵּר) to Moses in the wilderness of Sinai; the book takes its Hebrew name בְּמִדְבַּר from here."
+            },
+            {
+              "ref": "Hos.2.16",
+              "role": "defining",
+              "note": "“I will lead her into the wilderness and speak to her heart (וְדִבַּרְתִּי עַל לִבָּהּ)”: the leading and the speaking of the root in one verse."
+            },
+            {
+              "ref": "Deu.8.2",
+              "to": "Deu.8.3",
+              "note": "Forty years in the wilderness to humble and test, to know what was in the heart, and to make known that man lives by everything that comes from Yahweh’s mouth."
+            },
+            {
+              "ref": "Mat.4.1",
+              "to": "Mat.4.4",
+              "note": "Led into the wilderness and tested, Jesus answers with Deu 8:3."
+            },
+            {
+              "ref": "Isa.40.3",
+              "note": "A voice calls in the wilderness."
             }
           ],
           "cognate_ids": [
             "akk-madbaru",
-            "uga-mdbr"
+            "uga-mdbr",
+            "uga-dbr-pasture",
+            "arc-dabra",
+            "ar-tadabbara"
+          ],
+          "kin": [
+            "speak",
+            "subdue"
           ]
         },
         {
@@ -388,7 +433,7 @@
         }
       ],
       "gender": "m",
-      "summary": "The wilderness is open land, including pasture and dry or uninhabited country. The same written noun in Song 4:3 refers to the woman’s mouth or speech; its relation to the landscape-word is unclear.",
+      "summary": "The wilderness is open land, including pasture and dry or uninhabited country. Scripture makes it the land where Yahweh leads his people as a flock (Psa 78:52, Deu 8:15) and speaks to them (Num 1:1, Hos 2:16), testing what is in their heart and teaching them to live by what comes from his mouth (Deu 8:2–3). It thus holds both the leading and the speaking of the root, as the דְּבִיר is the room he speaks from. The same written noun in Song 4:3 refers to the woman’s mouth or speech; its relation to the landscape-word is unclear.",
       "greek": [
         {
           "lemma": "ἔρημος",
@@ -1059,6 +1104,22 @@
         }
       ],
       "note": "A comparison for managing and directing, particularly the Syriac family. The same dictionary entry marks the report-transmission sense as disputed; it is not used to establish Arabic “speak”."
+    },
+    {
+      "id": "ar-tadabbara",
+      "lang": "ar",
+      "form": "تَدَبَّرَ",
+      "translit": "tadabbara",
+      "gloss": "consider, ponder, study repeatedly",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 844, root دبر, under دَبَّرَ (n11990), تَدَبَّرَهُ",
+          "url": "https://www.laneslexicon.com/word/%D8%AF%D8%A8%D8%B1/n11990"
+        }
+      ],
+      "note": "“He looked into it, considered it, examined it, or studied it, repeatedly, in order to know it”; Lane derives it from looking to the end (دُبْر) of a matter. A comparison for the wilderness as a place where the heart is searched (Deu 8:2); scripture shows the wilderness as where Yahweh speaks and tests, not as a place of reflection, so it is not counted."
     },
     {
       "id": "ar-dabara-perish",
