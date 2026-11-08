@@ -142,6 +142,9 @@ pub struct Entry {
     #[serde(default)]
     pub homograph: Option<u8>,
     pub status: Status,
+    /// The date the entry was signed off, while `status` is `reviewed`.
+    #[serde(default)]
+    pub reviewed: Option<String>,
     pub updated: String,
     #[serde(default)]
     pub tags: Vec<String>,
@@ -842,6 +845,21 @@ impl Checker<'_> {
         }
         if !is_date(&entry.updated) {
             self.fault(&at, "`updated` must be YYYY-MM-DD");
+        }
+        match (entry.status, &entry.reviewed) {
+            (Status::Reviewed, None) => {
+                self.fault(
+                    &at,
+                    "a `reviewed` entry needs its sign-off date in `reviewed`",
+                );
+            }
+            (Status::Draft, Some(_)) => {
+                self.fault(&at, "a `draft` entry has no `reviewed` date");
+            }
+            (_, Some(date)) if !is_date(date) => {
+                self.fault(&at, "`reviewed` must be YYYY-MM-DD");
+            }
+            _ => {}
         }
         self.tags(&at, &entry.tags);
         self.text(&at, "gloss", &entry.gloss);
@@ -1713,6 +1731,33 @@ mod tests {
                 citations: 4,
             }
         );
+    }
+
+    #[test]
+    fn a_signed_off_entry_carries_its_date() {
+        let signed = ENTRY.replace(
+            "\"status\": \"draft\",",
+            "\"status\": \"reviewed\", \"reviewed\": \"2026-11-08\",",
+        );
+        assert_eq!(check(&signed).unwrap().reviewed, 1);
+
+        let undated = ENTRY.replace("\"status\": \"draft\",", "\"status\": \"reviewed\",");
+        let error = check(&undated).unwrap_err().to_string();
+        assert!(error.contains("needs its sign-off date"), "{error}");
+
+        let draft = ENTRY.replace(
+            "\"status\": \"draft\",",
+            "\"status\": \"draft\", \"reviewed\": \"2026-11-08\",",
+        );
+        let error = check(&draft).unwrap_err().to_string();
+        assert!(error.contains("has no `reviewed` date"), "{error}");
+
+        let bad = ENTRY.replace(
+            "\"status\": \"draft\",",
+            "\"status\": \"reviewed\", \"reviewed\": \"8 Nov\",",
+        );
+        let error = check(&bad).unwrap_err().to_string();
+        assert!(error.contains("`reviewed` must be YYYY-MM-DD"), "{error}");
     }
 
     #[test]

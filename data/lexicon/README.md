@@ -74,7 +74,8 @@ Further reading:
 | `id` | Kebab case ASCII, Haqor's own, never reused (`nephesh`, `amar`). The file is `<id>.json`. |
 | `root` | The root as the database keys roots, so entries join to the words: bare consonants with no final forms, sin written `שׂ` and shin a bare `ש` (`נפש`, `מלכ`, `עשׂה`). A noun with no verbal root gives its own consonants. |
 | `homograph` | 1, 2… where two unrelated roots share consonants; left out otherwise. |
-| `status` | `draft` until the user has reviewed it, then `reviewed`. |
+| `status` | `draft` until the user has signed it off, then `reviewed`. |
+| `reviewed` | The date it was signed off, `YYYY-MM-DD`, while `status` is `reviewed`; left out of a draft. An `updated` later than it means the entry has changed since. |
 | `updated` | The date of the last substantive change, `YYYY-MM-DD`. |
 | `tags` | Kebab case topics to filter by (`life`, `death`, `body`, `speech`). |
 | `gloss` | A few words: the root's core meaning, as the word sheet shows it. |
@@ -278,7 +279,13 @@ A source in `sources.json`:
 
 The app's **Lexicon review** page (reader menu, in admin mode) shows each
 entry as readers will see it, with every cited verse's Hebrew or Greek and
-English a tap away, and can edit its text and mark it reviewed. Run the
+English a tap away, and can edit its text and sign it off. Its list marks each entry signed off,
+draft, or changed since sign-off, and filters to the entries still to review
+or searches them by id, root or gloss. **Sign off** sets `status` to
+`reviewed` and `reviewed` to the day and saves at once (any unsaved edits
+with it); **Withdraw sign-off** puts the entry back to `draft`. Saving an
+edit to a signed-off entry moves `updated` past `reviewed`, so it shows as
+changed since sign-off until it is signed off again. Run the
 desktop app with this directory named:
 
 ```sh

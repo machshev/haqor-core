@@ -209,7 +209,9 @@ HAQOR_LEXICON_DIR=$HOME/base/haqor-core/data/lexicon flutter run -d linux
 and open **Lexicon review** from the reader menu (admin mode). Every cited
 verse opens with its Hebrew or Greek, the Peshitta for New Testament verses,
 and the English. Texts can be edited in place. A save checks the whole lexicon
-first and writes nothing if it fails. The reviewer marks the entry reviewed.
+first and writes nothing if it fails. The reviewer signs it off with **Sign off**, which sets `"status":
+"reviewed"` and the day in `"reviewed"`; an entry edited after that shows as
+changed since sign-off until it is signed off again.
 
 ## 12. Commit
 
