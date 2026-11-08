@@ -99,7 +99,21 @@
             }
           ]
         }
-      ]
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "דְּבַר יַהְוֶה",
+            "gloss": "the word of יַהְוֶה",
+            "evidence": [
+              {
+                "ref": "2Ki.7.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "lemma": "דָּבַר",
@@ -134,7 +148,7 @@
             },
             {
               "gloss": "destroy",
-              "definition": "Do away with a royal family. This single use is fixed by the narrative’s account of killing, but its relation to speaking or subduing is unclear.",
+              "definition": "Do away with a royal family. The parallel account (2Ki 11:1) has וַתְּאַבֵּד “and she destroyed” where this verse has וַתְּדַבֵּר, which fixes the sense; its relation to speaking or subduing is unclear.",
               "evidence": [
                 {
                   "ref": "2Ch.22.10",
@@ -292,16 +306,6 @@
                 "ref": "Gen.50.21",
                 "role": "defining",
                 "note": "Joseph comforts his brothers and speaks to their heart."
-              }
-            ]
-          },
-          {
-            "phrase": "דְּבַר יַהְוֶה",
-            "gloss": "the word of יַהְוֶה",
-            "evidence": [
-              {
-                "ref": "2Ki.7.1",
-                "role": "defining"
               }
             ]
           }
@@ -477,7 +481,7 @@
             },
             {
               "ref": "Heb.7.17",
-              "role": "example"
+              "role": "defining"
             }
           ]
         }
