@@ -1848,7 +1848,9 @@ pub struct TranslationBuild {
 /// Read the reviewed, word-linked Peshitta translation overrides. The file is
 /// a required source file: verses absent from it retain Murdock's translation
 /// and remain unaligned. Each override must account for every Peshitta word
-/// exactly once, in source order; punctuation and spaces may stand alone.
+/// at least once. English word order may differ from source order, and a
+/// source word's prefixes and stem may own separate English spans. Punctuation
+/// and spaces may stand alone.
 fn read_peshitta_overrides(
     src_texts: &Path,
     db: &Connection,
@@ -1935,6 +1937,8 @@ fn read_peshitta_overrides(
                 linked.push(word.position);
             }
         }
+        linked.sort_unstable();
+        linked.dedup();
         if linked != expected {
             bail!(
                 "{path:?}:{line_no}: linked positions {:?}, expected {:?}",
@@ -2698,7 +2702,7 @@ mod tests {
     }
 
     #[test]
-    fn peshitta_override_requires_every_word_in_order() {
+    fn peshitta_override_covers_every_word_in_english_order() {
         let db = Connection::open_in_memory().unwrap();
         db.execute(
             "CREATE TABLE verse(ref INTEGER PRIMARY KEY, words BLOB NOT NULL)",
@@ -2728,13 +2732,16 @@ mod tests {
         fs::create_dir_all(root.join("Haqor-Peshitta")).unwrap();
         fs::write(
             root.join(PESHITTA_TRANSLATION),
-            "# reviewed\n40\t1:1\t[one|0] [two|1] [three|2].\n",
+            "# reviewed\n40\t1:1\t[and by|1] [another|0] [way|1] [there|2].\n",
         )
         .unwrap();
         let mut peshitta = HashSet::new();
         peshitta.insert(reference);
         let overrides = read_peshitta_overrides(&root, &db, &peshitta).unwrap();
-        assert_eq!(overrides[&reference], "[one|0] [two|1] [three|2].");
+        assert_eq!(
+            overrides[&reference],
+            "[and by|1] [another|0] [way|1] [there|2]."
+        );
         fs::remove_dir_all(root).unwrap();
     }
 
@@ -2799,8 +2806,7 @@ mod tests {
         let peshitta = HashSet::from([reference]);
         for text in [
             "[one|0]",
-            "[one|0] [two|0]",
-            "[two|1] [one|0]",
+            "[one|0] [two|0]", // Repetition cannot substitute for a missing word.
             "[one|0] [two|2]",
             "[one|0] [two|2:1]",
             "[|0] [two|1]",

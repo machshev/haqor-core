@@ -10,12 +10,22 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--db", type=Path, default=Path("data/haqor.db"))
     ap.add_argument("--murdock", type=Path, default=Path("src_texts/Murdock/murdock.tsv"))
+    ap.add_argument("--translation", type=Path,
+                    default=Path("src_texts/Haqor-Peshitta/translation.tsv"))
     ap.add_argument("--book", type=int, default=40, help="Haqor book number (Matthew=40)")
     ap.add_argument("--first-chapter", type=int, default=1)
     ap.add_argument("--last-chapter", type=int)
     ap.add_argument("--out", type=Path, default=Path("/tmp/haqor-nt-review.jsonl"))
     args = ap.parse_args()
     last = args.last_chapter or args.first_chapter
+    translations = {}
+    for line in args.translation.read_text().splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        book, cv, text = line.split("\t", 2)
+        chapter, verse = map(int, cv.split(":"))
+        if int(book) == args.book and args.first_chapter <= chapter <= last:
+            translations[(chapter, verse)] = text
     murdock = {}
     with args.murdock.open(encoding="utf-8") as f:
         for line in f:
@@ -49,7 +59,8 @@ def main():
         # Keep all SEDRA gloss alternatives, but emit one source-word record.
         if key not in verses:
             verses[key] = {"book": args.book, "chapter": key[0], "verse": key[1],
-                            "murdock": murdock.get(key, ""), "words": []}
+                            "murdock": murdock.get(key, ""),
+                            "translation": translations.get(key, ""), "words": []}
         words = verses[key]["words"]
         if words and words[-1]["position"] == word["position"]:
             words[-1]["glosses"].append({"before": word.pop("gloss_before"),

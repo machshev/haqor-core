@@ -1,10 +1,10 @@
 # Word-linked English of the Peshitta
 
-`translation.tsv` contains Haqor's reviewed English renderings in Peshitta
-word order, using James Murdock's public-domain translation as a reference.
+`translation.tsv` contains Haqor's English renderings of the Peshitta,
+using James Murdock's public-domain translation as a reference.
 The unmodified reference remains in `src_texts/Murdock/murdock.tsv`.
 All 7,958 Peshitta verses have reviewed English and complete word links.
-Every source word is linked in order, and every Peshitta verse supports
+Every source word is linked, and every Peshitta verse supports
 word selection in the English reader.
 
 Current coverage: Matthew 1-28, Mark 1-16, Luke 1-24, John 1-21, Acts 1-28, Romans 1-16, 1 Corinthians 1-16, 2 Corinthians 1-13, Galatians 1-6, Ephesians 1-6, Philippians 1-4, Colossians 1-4, 1 Thessalonians 1-5, 2 Thessalonians 1-3, 1 Timothy 1-6, 2 Timothy 1-4, Titus 1-3, Philemon, Hebrews 1-13, James 1-5, 1 Peter 1-5, 2 Peter 1-3, 1 John 1-5, 2 John, 3 John, Jude, and Revelation 1-22
@@ -15,9 +15,19 @@ unlinked Murdock fallback.
 Each non-comment row is `book<TAB>chapter:verse<TAB>translation`, using
 Haqor's one-based book numbers (Matthew = 40), Peshitta verse numbering, and
 zero-based source positions. `[English phrase|0]` links a phrase to one
-Aramaic word. `[English phrase|0,1]` renders a contiguous idiom together.
-Keep the links in source order. Prefixes and suffixes belong to their
+Aramaic word. Use one source word per span by default. `[English phrase|0,1]`
+is reserved for exceptional expressions that cannot reasonably be rendered
+with separate spans, with a specific linguistic reason recorded in the
+alignment review ledger. Ordinary noun phrases, negation, auxiliaries and
+clauses should be split wherever their English constituents can be assigned
+to individual source words. English spans may appear in English word order:
+`[Holy|1] [Spirit|0]` does not require a combined span merely because the
+Aramaic noun precedes its modifier. Prefixes and suffixes belong to their
 source word; a phrase may therefore translate more than one English word.
+One Aramaic word can own separate English spans when its prefixes, stem or
+suffixes are separated in English: `[and by|7] [another|8] [way|7]` keeps
+each English span attached to its actual source word. Repeated source links
+are permitted for this purpose; every source word must still be covered.
 Separate linked phrases with spaces where English words need separation;
 markup does not insert spaces between spans. Review the running English as
 well as each individual source-to-English mapping.
@@ -27,7 +37,7 @@ from the supplied `--src-texts` directory on every build. The source file
 is required: a missing file fails the build instead of dropping the links.
 The runtime `haqor.db` is generated output.
 
-The generator rejects missing or duplicated source positions, reversed or
+The generator rejects missing or invalid source positions,
 cross-verse links, duplicate verse entries, empty renderings, unlinked
 lexical text, and malformed markup. These checks validate structure;
 they cannot establish translation accuracy. Every addition needs comparison
@@ -47,6 +57,21 @@ prefixes, and copular pronouns explicitly in the final linked text.
 Use the generator's established “ecclesia/ecclesias” terminology for
 congregations so the reviewed source and runtime text match exactly.
 Work in book and chapter order.
+
+The review of shared spans is tracked separately in `alignment-review.json`.
+Its baseline contains 26,851 shared spans across 260 chapters. The earlier
+translation completion does not mean those spans meet the single-source
+policy above. Each independently reviewed chapter records its final TSV
+SHA-256 and a linguistic reason for every remaining shared span; changes
+invalidate that chapter's checkpoint.
+
+Run `python3 scripts/audit-peshitta-links.py --out /tmp/peshitta-links.json`
+from the repository root to check source coverage, list every shared span
+beside its exact source forms, and report reviewed and pending chapters.
+Use `--require-reviewed` to require completion of the entire review. The
+chapter exporter now includes the current linked translation alongside the
+source morphology and all gloss alternatives. The inventory and coverage
+checks are structural; they do not replace linguistic review.
 
 Keep working context limited to one chapter: export its records to a file,
 review and append that chapter, validate, sync, and commit it before starting
