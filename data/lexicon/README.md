@@ -59,8 +59,9 @@ Further reading:
   word: where its use fixes the sense, and its parallels and opposites. Doctrine rests on scripture
   alone, never on tradition or commentators, and is written evidence-first:
   what the verses show, then what follows from them.
-- **Hebrew names.** Use the text's Hebrew (יַהְוֶה, and its own names for months
-  and feasts), with any translation second.
+- **Hebrew names.** Use the text's own names for months and feasts, with any
+  translation second. In English prose write the divine name as Yahweh; keep
+  יַהְוֶה only inside Hebrew phrases and quotations.
 
 ## Files
 
