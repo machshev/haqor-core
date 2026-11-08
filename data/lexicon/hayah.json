@@ -10,7 +10,7 @@
     "covenant"
   ],
   "gloss": "be, become, happen",
-  "summary": "הָיָה says that someone or something exists, is in a condition, becomes something, or happens. With a person and לְ it can express possession or a relationship; with עִם it can express presence and help. Its Aramaic counterpart הֲוָה carries these uses in Daniel and Ezra and in the Peshitta.",
+  "summary": "הָיָה says that someone or something exists, is in a condition, becomes something, or happens. With a person and לְ it can express possession or a relationship; with עִם it can express presence and help. Its Aramaic counterpart הֲוָא carries these uses in Daniel and Ezra and in the Peshitta.",
   "words": [
     {
       "lemma": "הָיָה",
@@ -224,7 +224,7 @@
       }
     },
     {
-      "lemma": "הֲוָה",
+      "lemma": "הֲוָא",
       "pos": "verb",
       "gloss": "be, become, happen",
       "stems": [
@@ -266,10 +266,13 @@
         }
       ],
       "lang": "arc",
-      "root": "הוה"
+      "root": "הוא",
+      "bdb": [
+        "xe.ae.aa"
+      ]
     },
     {
-      "lemma": "הֱוָא",
+      "lemma": "הֲוָא",
       "pos": "verb",
       "gloss": "be, become, happen",
       "stems": [
@@ -311,7 +314,7 @@
         }
       ],
       "lang": "syc",
-      "root": "הוה"
+      "root": "הוא"
     }
   ],
   "cognates": [
@@ -352,5 +355,5 @@
       ]
     }
   ],
-  "note": "Mic 2:4 נִהְיָה is filed by spelling but analysed under נהה, and is not evidence for this verb. The Aramaic הוה words are included under their own root key; the brief for היה does not find them automatically. The special Niphal uses in Dan 2:1 and 8:27 need review. No separate derivation of the divine name is asserted."
+  "note": "Mic 2:4 נִהְיָה is filed by spelling but analysed under נהה, and is not evidence for this verb. The Aramaic הֲוָא words are included under their own root key; the brief for היה does not find them automatically. The special Niphal uses in Dan 2:1 and 8:27 need review. No separate derivation of the divine name is asserted. The database root key is הוא for both Aramaic forms; it is a verb here, distinct from the pronoun of the same consonants."
 }

@@ -197,6 +197,35 @@
       ]
     },
     {
+      "lemma": "אֲרַק",
+      "pos": "noun",
+      "gloss": "earth",
+      "bdb": [
+        "xa.bi.ag"
+      ],
+      "senses": [
+        {
+          "gloss": "earth",
+          "definition": "The earth as what the gods addressed did not create.",
+          "evidence": [
+            {
+              "ref": "Jer.10.11",
+              "role": "defining",
+              "note": "The first land-word is אַרְקָא; the second is אַרְעָא."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "ארק",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ard",
+        "akk-ersetu"
+      ],
+      "summary": "The form with ק occurs once, beside the form with ע later in the same Aramaic verse."
+    },
+    {
       "lemma": "אַרְעָא",
       "pos": "noun",
       "gloss": "earth, land, ground",
@@ -322,5 +351,5 @@
       ]
     }
   ],
-  "note": "אַרְצָא, a person’s name, is left for a name entry. The Aramaic land-word has root ארע, so a brief for ארצ misses it. Syriac ארע “meet” and אורעא “meeting” share its written root key but are not land-words; no derivation of them from ארצ is asserted. Hebrew earth/land is feminine; the isolated masculine agreement noted in grammatical inventories does not require another word. The Arabic sound is recorded as ṣ́, the README’s notation for the older emphatic lateral, not modern Arabic pronunciation."
+  "note": "אַרְצָא, a person’s name, is left for a name entry. The Aramaic land-word has root ארע, so a brief for ארצ misses it. Syriac ארע “meet” and אורעא “meeting” share its written root key but are not land-words; no derivation of them from ארצ is asserted. Hebrew earth/land is feminine; the isolated masculine agreement noted in grammatical inventories does not require another word. The Arabic sound is recorded as ṣ́, the README’s notation for the older emphatic lateral, not modern Arabic pronunciation. The ק-form אֲרַק of Jer 10:11 is also included under its own database key ארק."
 }
