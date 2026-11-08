@@ -163,6 +163,7 @@
                 }
               ],
               "cognate_ids": [
+                "ar-dabara-perish",
                 "akk-duppuru"
               ]
             }
@@ -433,6 +434,7 @@
       "gender": "m",
       "summary": "A destructive outbreak affecting people or animals. No derivation from the divine word or from speaking is established by these occurrences.",
       "cognate_ids": [
+        "ar-dabara-perish",
         "uga-dbr-plague"
       ]
     },
@@ -1038,6 +1040,22 @@
       "note": "A comparison for managing and directing, particularly the Syriac family. The same dictionary entry marks the report-transmission sense as disputed; it is not used to establish Arabic “speak”."
     },
     {
+      "id": "ar-dabara-perish",
+      "lang": "ar",
+      "form": "دَبَرَ",
+      "translit": "dabara",
+      "gloss": "(of a people) perish; (with بِ) take away, cause to cease; دَبَار perdition",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 844, root دبر, دَبَرَ (n11989), senses 4–5",
+          "url": "https://www.laneslexicon.com/word/%D8%AF%D8%A8%D8%B1/n11989"
+        }
+      ],
+      "note": "دَبَرَ القَوْمُ “the people perished”, its verbal noun دَبَار set beside دَمَار “destruction”, and the curse عَلَيْهِ الدَّبَارُ “perdition befall him”; دَبَرَ بِهِ “he took it away, caused it to cease”. Lane derives it from going away with the back turned, not from speech. It is named for the plague that destroys and the Piel “destroy” (2Ch 22:10)."
+    },
+    {
       "id": "ar-dabr-bees",
       "lang": "ar",
       "form": "دَبْر",
@@ -1333,5 +1351,5 @@
       ]
     }
   ],
-  "note": "Proper names and the redirect m.ak.ah are omitted. מִדְבָּר’s two meanings share the spelling inventories d.ai.ao/ap; only d.ai.ap is assigned. דֹּבֶר and דִּבֵּר share the three indexed forms in Isa 5:17, Jer 5:13 and Mic 2:12: d.ai.ad is assigned once and the speech noun is left without a BDB key rather than counting that same inventory twice. The support totals are therefore not counts of the separate meanings. The Pual in Sng 8:8 and the destructive Piel in 2Ch 22:10 are included after checking the source even though the brief’s stem summary omits them. The speech and leading families stay together without a reconstructed semantic bridge; so do pestilence, bees, rafts and the sanctuary. Lane’s دبر section is missing from the vendored JSONL; the cited pp. 844–845 were checked in the page scan (https://www.thelastdialogue.org/wp-content/uploads/2020/09/Lanes-Lexicon-Arabic-Dictionary-Root-Word-%D8%AF-Dal.pdf, PDF pp. 6–7) and its linked transcription. Akkadian dabābu is not assumed cognate merely because it means “speak”; the consonants differ. The brief’s Greek-loan leads are not accepted without an etymology."
+  "note": "Proper names and the redirect m.ak.ah are omitted. מִדְבָּר’s two meanings share the spelling inventories d.ai.ao/ap; only d.ai.ap is assigned. דֹּבֶר and דִּבֵּר share the three indexed forms in Isa 5:17, Jer 5:13 and Mic 2:12: d.ai.ad is assigned once and the speech noun is left without a BDB key rather than counting that same inventory twice. The support totals are therefore not counts of the separate meanings. The Pual in Sng 8:8 and the destructive Piel in 2Ch 22:10 are included after checking the source even though the brief’s stem summary omits them. The speech and leading families stay together without a reconstructed semantic bridge; so do pestilence, bees, rafts and the sanctuary. Lane’s دبر section is in the vendored JSONL under the mis-keyed root دبخ; the cited pp. 844–845 were also checked in the page scan (https://www.thelastdialogue.org/wp-content/uploads/2020/09/Lanes-Lexicon-Arabic-Dictionary-Root-Word-%D8%AF-Dal.pdf, PDF pp. 6–7) and its linked transcription. Akkadian dabābu is not assumed cognate merely because it means “speak”; the consonants differ. The brief’s Greek-loan leads are not accepted without an etymology."
 }
