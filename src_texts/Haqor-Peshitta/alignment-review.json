@@ -9,11 +9,252 @@
   },
   "chapters": {
     "40:1": {
-      "sha256": "9a3ed70676c79a99a95b6a1e207008d224d3c619a5d3e80595ca4c417043ea2d",
+      "sha256": "2da0e2a9bd5aeee13077cd90e5491759521b0c797a98b119a8baf203a2342809",
       "original_shared_spans": 11,
       "independent_review": true,
       "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
-      "exceptions": []
+      "exceptions": [
+        {
+          "positions": [
+            0,
+            1
+          ],
+          "english": "after",
+          "reason": "The compound preposition men batar means after. The first preposition belongs to this temporal expression, not to the genitive of Babylon, whose d-prefix is on position 4.",
+          "source": "https://refubium.fu-berlin.de/bitstream/handle/fub188/24490/Classical_Syriac_Course_Book_3-2019.pdf?isAllowed=y&sequence=3",
+          "verse": 12
+        }
+      ]
+    },
+    "40:2": {
+      "sha256": "d907a8c584f3042718d3279ccac6a6a688e15f2bc28c79ec647c2332cfb4b39c",
+      "original_shared_spans": 32,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "positions": [
+            18,
+            19
+          ],
+          "english": "above",
+          "reason": "The Syriac prepositional construction combines the on/from elements into the English relational phrase above; splitting would leave the source from without a natural English owner.",
+          "verse": 9
+        },
+        {
+          "positions": [
+            9,
+            10
+          ],
+          "english": "have died",
+          "reason": "The plural dead predicate and its ethical/benefactive dative are rendered together; assigning the dative to a separate English pronoun would falsely make it the subject.",
+          "verse": 20
+        }
+      ]
+    },
+    "40:3": {
+      "sha256": "8875a1bfeee574a3756b24998b3de99f706a04375b62957c835997fe7687cfdd",
+      "original_shared_spans": 28,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "english": "has drawn near",
+          "reason": "The Syriac qrb verb plus its attached dative lə form one approached/has-drawn-near predicate; splitting the dative as an independent English 'to' would reverse the ethical/anticipatory construction.",
+          "verse": 2
+        },
+        {
+          "positions": [
+            3,
+            4
+          ],
+          "english": "had",
+          "reason": "The Aramaic existential and copular forms jointly supply the English past possession construction; splitting them would assign an artificial standalone auxiliary to one source word.",
+          "verse": 4
+        }
+      ]
+    },
+    "40:4": {
+      "sha256": "f1e482305dfaf3bcdfa8eb1f7fa486f0f977fd8ed69eecffabcaed5ce6c534f3",
+      "original_shared_spans": 25,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "positions": [
+            5,
+            6
+          ],
+          "english": "that not",
+          "reason": "The d-la negative relative/prefix and following hwa copula jointly form the negative copular construction.",
+          "verse": 4
+        },
+        {
+          "positions": [
+            6,
+            7
+          ],
+          "english": "he withdrew",
+          "reason": "The departure verb and its attached ethical dative form one Syriac withdrawal predicate; Galilee is separately linked to position 8.",
+          "verse": 12
+        },
+        {
+          "positions": [
+            7,
+            8
+          ],
+          "english": "has drawn near",
+          "reason": "The qrb predicate plus its attached dative form the approached/has-drawn-near construction; position 8 is not an independent English 'near' complement.",
+          "verse": 17
+        },
+        {
+          "positions": [
+            8,
+            9
+          ],
+          "english": "of people",
+          "reason": "The source is the construct d-bnay anasha, 'sons of man/mankind,' the established human-being idiom used in the fishers-of-people expression.",
+          "verse": 19
+        },
+        {
+          "positions": [
+            17,
+            18
+          ],
+          "english": "and those with epilepsy",
+          "reason": "The source d-bar agra is the established Syriac epilepsy idiom, literally a son/roof expression; splitting it would lose the lexical diagnosis.",
+          "verse": 24
+        }
+      ]
+    },
+    "40:5": {
+      "sha256": "42624e43e4ea672fca30d2b07f0039bb6b7262619c0d2f86eb90e64648b01ff8",
+      "original_shared_spans": 98,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "positions": [
+            10,
+            11
+          ],
+          "english": "before you",
+          "reason": "The Syriac men-qdam compound means before, with the second-person suffix on the same phrase.",
+          "verse": 12
+        },
+        {
+          "positions": [
+            10,
+            11,
+            12
+          ],
+          "english": "It is good for nothing",
+          "reason": "Fixed something/not/depart idiom.",
+          "verse": 13
+        },
+        {
+          "positions": [
+            0,
+            1
+          ],
+          "english": "If",
+          "reason": "The conditional particle is a two-token Syriac form.",
+          "verse": 23
+        },
+        {
+          "positions": [
+            3,
+            4
+          ],
+          "english": "your accuser",
+          "reason": "Bael-din is the lexical legal adversary/party-of-judgment expression.",
+          "verse": 25
+        },
+        {
+          "positions": [
+            11,
+            12
+          ],
+          "english": "your accuser",
+          "reason": "Bael-din is the lexical legal adversary/party-of-judgment expression.",
+          "verse": 25
+        },
+        {
+          "positions": [
+            8,
+            10
+          ],
+          "english": "hair",
+          "reason": "The two source hair constituents form one English hair unit; the numeral is separately linked to position 9.",
+          "verse": 36
+        }
+      ]
+    },
+    "40:6": {
+      "sha256": "84e82ff2adddaf8d30ff77fa4040c317c2955a621422c2b69a94a939b6475aa5",
+      "original_shared_spans": 61,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "positions": [
+            6,
+            7
+          ],
+          "english": "people",
+          "reason": "Construct expression for human beings (sons of man).",
+          "verse": 1
+        },
+        {
+          "positions": [
+            18,
+            19
+          ],
+          "english": "people",
+          "reason": "Construct expression for human beings (sons of man).",
+          "verse": 2
+        },
+        {
+          "positions": [
+            11,
+            12
+          ],
+          "english": "the hypocrites",
+          "reason": "Established Syriac face-taking/hypocrite idiom.",
+          "verse": 2
+        },
+        {
+          "positions": [
+            6,
+            7
+          ],
+          "english": "the hypocrites",
+          "reason": "Established Syriac face-taking/hypocrite idiom.",
+          "verse": 5
+        },
+        {
+          "positions": [
+            15,
+            16
+          ],
+          "english": "by people",
+          "reason": "The source is the same construct human-being expression (by sons of man), naturally rendered as one English phrase.",
+          "verse": 5
+        },
+        {
+          "positions": [
+            8,
+            9
+          ],
+          "english": "the hypocrites",
+          "reason": "Established Syriac face-taking/hypocrite idiom.",
+          "verse": 16
+        }
+      ]
     }
   }
 }
