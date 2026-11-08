@@ -412,6 +412,52 @@
           "reason": "The fixed exceptive conjunction ella en, literally but if, jointly means except/unless. The conditional element is part of the idiom, not an independent condition on whether the Father/Son knows; literal except if would distort this exclusive knowledge assertion."
         }
       ]
+    },
+    "40:12": {
+      "sha256": "83c01d999e91a0a03b0aaea8746a3fcdb2563b6d9bdc2d897c8641da66968a24",
+      "original_shared_spans": 83,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 4,
+          "english": "except",
+          "positions": [
+            17,
+            18
+          ],
+          "reason": "Ella en is the fixed exceptive conjunction, literally but if. Here it excludes everyone but the priests from permission to eat; the conditional word contributes to except rather than introducing a separate condition."
+        },
+        {
+          "verse": 28,
+          "english": "has drawn near",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The qrb predicate and its subject-coreferential feminine singular ethical dative lah jointly express has drawn near. The dative does not introduce another destination or recipient: the actual second-person plural destination is separately expressed by alaykhon at position 9. An independent to/for it would falsely add a destination, while a separate reflexive intensifier would add emphasis absent from this conventional verbal construction.",
+          "source": "https://api.pageplace.de/preview/DT0400.9781463235109_A38591854/preview-9781463235109_A38591854.pdf#page=21"
+        },
+        {
+          "verse": 29,
+          "english": "unless",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "The Syriac adversative plus conditional pair (but + if) forms the irreducible English conjunction unless; splitting it would produce the ungrammatical 'but if' in this rhetorical question.",
+          "type": "lexical_idiom"
+        },
+        {
+          "verse": 36,
+          "english": "people",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Bnay anasha, literally sons of man, is the conventional generic human-being expression here. People renders its collective human reference rather than asserting literal sons."
+        }
+      ]
     }
   }
 }
