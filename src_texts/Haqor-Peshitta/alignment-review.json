@@ -733,6 +733,32 @@
           "reason": "The existential ith and past auxiliary hwa jointly express past possession. English had fuses those two functions; splitting the positive simple-past state into did have would add emphasis or require an unnecessarily expanded possession phrase. The possessor he at12 and causal for at13 are separately linked."
         }
       ]
+    },
+    "40:20": {
+      "sha256": "0c8460196c57a80f2f2c1dbb943076f8d15bcc3cd7330c563bb7a8a0baa5fb88",
+      "original_shared_spans": 51,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 17,
+          "english": "privately",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Beynawhi w-lehon, literally between himself and/to them, marks the exclusive company in which Jesus takes and addresses the disciples. The conventional private/aside expression has no natural separate English between-himself and to-them constituents here."
+        },
+        {
+          "verse": 34,
+          "english": "immediately",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Bar shateh, literally son of the hour, is the conventional temporal idiom immediately. Its two nouns do not independently denote a son and an hour in this use. The w-prefix at5 independently supplies and."
+        }
+      ]
     }
   }
 }

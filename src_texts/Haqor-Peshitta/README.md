@@ -128,6 +128,11 @@ Source checks for Matthew 17-20:
   [Matthew 17:26 citation](https://cal.huc.edu/oneentry.php?cits=all&lemma=br%40xyryn+N).
 - Matthew 18:29 has no equivalent of Murdock's added "the whole".
 - Matthew 19:5 says "one flesh"; 19:6 uses the distinct word "body".
+- Matthew 20:30 links "by" and "the side" separately, and renders yahbu qala
+  as "they gave a shout" with separate verb and noun links. Compare the
+  spatial senses of [yad in CAL](https://cal.huc.edu/cal_entry_web.php?lemma=yd+N)
+  and the vocalization construction under
+  [yhb in CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=yhb+V).
 
 Source check for Matthew 21: the praise quotation divided across Murdock
 21:16-17 is entirely in Peshitta 21:16 and is linked there.
