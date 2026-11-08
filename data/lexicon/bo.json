@@ -124,6 +124,34 @@
                   "ref": "Jer.31.8",
                   "role": "defining"
                 }
+              ],
+              "senses": [
+                {
+                  "id": "bring-in-harvest",
+                  "gloss": "bring in the harvest",
+                  "definition": "Gather the land’s produce and bring it home.",
+                  "evidence": [
+                    {
+                      "ref": "Hag.1.6",
+                      "role": "defining",
+                      "note": "“You have sown much and brought in little.”"
+                    },
+                    {
+                      "ref": "2Sa.9.10",
+                      "role": "defining",
+                      "note": "Ziba is to work Mephibosheth’s land and bring in its yield."
+                    },
+                    {
+                      "ref": "Hag.1.9",
+                      "role": "example",
+                      "note": "What they brought home, Yahweh blew away."
+                    }
+                  ],
+                  "kin": [
+                    "produce",
+                    "revenue"
+                  ]
+                }
               ]
             }
           ],
@@ -215,8 +243,9 @@
       ],
       "senses": [
         {
+          "id": "produce",
           "gloss": "produce, crop",
-          "definition": "What land or agricultural work yields.",
+          "definition": "What land or agricultural work yields: the harvest brought in.",
           "evidence": [
             {
               "ref": "Lev.25.21",
@@ -231,11 +260,15 @@
               "ref": "Gen.47.24",
               "role": "defining"
             }
+          ],
+          "kin": [
+            "bring-in-harvest"
           ]
         },
         {
+          "id": "revenue",
           "gloss": "revenue, gain; result",
-          "definition": "What comes as income or the fruit of activity, including figurative gain.",
+          "definition": "What comes in as income or the fruit of activity, including figurative gain.",
           "evidence": [
             {
               "ref": "Isa.23.3",
@@ -251,10 +284,16 @@
               "ref": "Pro.16.8",
               "role": "defining"
             }
+          ],
+          "kin": [
+            "bring-in-harvest"
           ]
         }
       ],
-      "gender": "f"
+      "gender": "f",
+      "cognate_ids": [
+        "gez-abea"
+      ]
     },
     {
       "lemma": "מָבוֹא",
@@ -465,7 +504,7 @@
       "lang": "gez",
       "form": "አብአ",
       "translit": "ʾabʾa",
-      "gloss": "(causative) bring in, lead in; carry in, bring (gifts, sacrifices); (ተበውአ) be brought in",
+      "gloss": "(causative) bring in, lead in; carry in, bring (gifts, sacrifices); carry produce into the granaries; (ተበውአ) be brought in",
       "relation": "cognate",
       "evidence": [
         {
@@ -473,7 +512,8 @@
           "locator": "cols. 525–526, አብአ and ተበውአ",
           "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n286"
         }
-      ]
+      ],
+      "note": "Dillmann gives “invehere proventum in horrea”, bringing the harvest into store (Deut. 28:38 in the Ge’ez Bible), the sense behind תְּבוּאָה."
     },
     {
       "id": "gez-baat",
