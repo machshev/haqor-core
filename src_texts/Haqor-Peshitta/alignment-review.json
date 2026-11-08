@@ -494,6 +494,70 @@
           "reason": "W-bar shaateh is the same conventional temporal idiom as in verse 5, literally and son of its hour. The English adverb immediately expresses the whole two-word timing construction."
         }
       ]
+    },
+    "40:14": {
+      "sha256": "f4caae7792572e9caabcdc8a2f5883d0ae7dfd1eb2d719c1ea818e6d9c1f954b",
+      "original_shared_spans": 49,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 3,
+          "english": "into prison",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Beth asire, literally the house of prisoners, is the lexical institution prison. The location is not a separately asserted dwelling and a group of prisoners; its English institutional name renders the compound."
+        },
+        {
+          "verse": 6,
+          "english": "the birthday celebration",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Beth yaldeh is the established birthday expression, literally house of his birth. The compound names the birthday occasion, not a separate house and a birth event. CAL records the birthday sense with a Matthew 14:6 citation.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=byt%40yld%29+N"
+        },
+        {
+          "verse": 10,
+          "english": "in prison",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Beth asire repeats the lexical prison expression of verse 3, literally house of prisoners; the English institutional/location phrase prison expresses the whole construct."
+        },
+        {
+          "verse": 15,
+          "english": "has passed",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "The passing predicate avar is followed by its subject-coreferential ethical dative leh, referring to the time. They jointly express that the time has passed; a free for it would falsely introduce an additional participant.",
+          "source": "https://api.pageplace.de/preview/DT0400.9781463235109_A38591854/preview-9781463235109_A38591854.pdf#page=21"
+        },
+        {
+          "verse": 31,
+          "english": "And immediately",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "W-bar shaateh, literally and son of its hour, is the conventional temporal idiom immediately. The two lexical words jointly supply the instantaneous timing rather than a literal son and hour."
+        },
+        {
+          "verse": 35,
+          "english": "ill",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "Bish avidin, literally badly made/disposed, expresses the illness state rather than a separate making action. The preceding d-bish at position 12 independently owns the relative and intensifier who/very; the stative participle at 14 also supports the English copula were."
+        }
+      ]
     }
   }
 }
