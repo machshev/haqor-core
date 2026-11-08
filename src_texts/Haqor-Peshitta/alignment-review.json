@@ -645,6 +645,59 @@
           "reason": "Bishayith avid, literally badly made/disposed, describes a state of severe illness here, not a separate making action. Both words supply the illness expression; the w-prefix at 10 separately owns and, and the stative passive participle at 11 also supplies is."
         }
       ]
+    },
+    "40:18": {
+      "sha256": "e4bc7ccf12ad28158755e24518c103588a73aa6a3c2a3375de06d13e57dcd263",
+      "original_shared_spans": 58,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 19,
+          "english": "from",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "Min lwath is a compound source preposition, literally from with/toward. Together the two relational particles mark origin from the Father; a separate English with or toward would change that relation. The Father noun at 16 is independently linked."
+        },
+        {
+          "verse": 22,
+          "english": "seven",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "The repeated numeral shba shba is distributive, expressing the sevenfold multiplier after seventy times, rather than a second independent seven factor. Natural English seventy times seven uses one final numeral for the two-token distributive expression. Compare Burkitt, Evangelion da-Mepharreshe II p.121: https://netzarimemunah.org/wp-content/uploads/2018/07/evangelion-da-mepharreshe-ii.pdf."
+        },
+        {
+          "verse": 26,
+          "english": "have patience",
+          "positions": [
+            7,
+            9
+          ],
+          "reason": "The imperative agar, prolong, and ruha, spirit, form the long-spirit/patience idiom. Its English equivalent cannot be split into a literal lengthening action and a separate spirit object. Alay at 8 independently supplies with me."
+        },
+        {
+          "verse": 29,
+          "english": "Have patience",
+          "positions": [
+            9,
+            11
+          ],
+          "reason": "The same agar ruha long-spirit idiom expresses patience, not a separate instruction concerning a spirit. Alay at 10 independently supplies with me."
+        },
+        {
+          "verse": 30,
+          "english": "into prison",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "Beth asire, literally house of prisoners, is the conventional prison compound. Neither noun independently denotes a prison, and a literal separate prisoners house would suggest an ordinary residence rather than detention. English into supplies the destination relation of the locative compound."
+        }
+      ]
     }
   }
 }
