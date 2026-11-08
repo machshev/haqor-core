@@ -322,7 +322,9 @@
       "cognate_ids": [
         "ar-amara",
         "gez-amara",
-        "phn-amar"
+        "phn-amar",
+        "moab-amar",
+        "arc-amar"
       ]
     },
     {
@@ -431,7 +433,9 @@
       "cognate_ids": [
         "ar-amara",
         "gez-amara",
-        "phn-amar"
+        "phn-amar",
+        "moab-amar",
+        "arc-amar"
       ]
     },
     {
@@ -533,7 +537,9 @@
       "cognate_ids": [
         "ar-amara",
         "gez-amara",
-        "phn-amar"
+        "phn-amar",
+        "moab-amar",
+        "arc-amar"
       ]
     },
     {
@@ -572,7 +578,9 @@
       "cognate_ids": [
         "ar-amara",
         "gez-amara",
-        "phn-amar"
+        "phn-amar",
+        "moab-amar",
+        "arc-amar"
       ]
     },
     {
@@ -623,7 +631,9 @@
       "cognate_ids": [
         "ar-amara",
         "gez-amara",
-        "phn-amar"
+        "phn-amar",
+        "moab-amar",
+        "arc-amar"
       ]
     },
     {
@@ -661,7 +671,9 @@
       "cognate_ids": [
         "ar-amara",
         "gez-amara",
-        "phn-amar"
+        "phn-amar",
+        "moab-amar",
+        "arc-amar"
       ]
     }
   ],
@@ -683,6 +695,51 @@
         {
           "source": "anderson-moser-2024",
           "locator": "SEM000565, PUN000148"
+        }
+      ]
+    },
+    {
+      "id": "moab-amar",
+      "lang": "sem",
+      "form": "ויאמר",
+      "translit": "wyʾmr",
+      "gloss": "say",
+      "relation": "cognate",
+      "note": "Moabite, the Mesha stele: the verb as Hebrew narrative uses it, with the same wayyiqtol form, of Chemosh speaking to the king (lines 14, 32), of Omri's son (line 6) and of Mesha to his people (line 24, ואמר).",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 6, 14, 24, 32",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 14 ויאמר לי כמש לכ אחז את נבה על ישראל, \"And Kemôš said unto me, Go, seize Neḇôh against Yisrāʾēl\"; line 6 ויאמר גם הא אענו את מאב, \"and he too said, I will afflict Mōʾāḇ\"."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 6, 14, 24, 32",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation"
+        }
+      ]
+    },
+    {
+      "id": "arc-amar",
+      "lang": "arc",
+      "form": "אמר",
+      "translit": "ʾmr",
+      "gloss": "say",
+      "relation": "cognate",
+      "note": "Aramaic outside scripture says it the same way: on the Old Aramaic Zakkur stele Baal-shamayn \"said\" to the king, \"Do not fear\", and the Targums render Hebrew אָמַר with it (Onkelos Gen 1:3).",
+      "evidence": [
+        {
+          "source": "deaps",
+          "locator": "Zakkur stele (KAI 202, Louvre AO 8185), side A lines 12–13, 15",
+          "url": "https://deaps.osu.edu/text_objects/11642",
+          "note": "Line 12 ויאמר א[לי, line 13 בעלשמינ אל ת⸢ז⸣חל; line 15 ו⸢י⸣אמר ל[י. Text and translation by James Moore."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲמַר (ch.), sense 1",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%90%D6%B2%D7%9E%D6%B7%D7%A8",
+          "note": "\"as preced.\" (to say), citing Targ. Gen. I, 3."
         }
       ]
     },
@@ -860,5 +917,5 @@
       ]
     }
   ],
-  "note": "Left out, for their own entries: אָמִיר \"top, bough\" (Isa 17:6, 9), which Wiktionary links to Proto-Semitic *rayam- \"be high\"; Hos 4:7 אָמִיר, the Hiphil of מוּר \"exchange\" (as the reader analyses it, with MACULA's lemma and the LXX's θήσομαι), which only the spelling index files here; אֱמֹרִי \"Amorite\", a people's name; אֲמַרְיָה “Yah has said” (also אֲמַרְיָהוּ), a name built on the verb, and אִמֵּר, אִמְרִי and אוֹמָר, names whose link to the verb is uncertain (names will have their own entries, linking back to their roots); and the unrelated words BDB's section also holds (אֶמֶשׁ, אָנָּא, אֹן, אַמְרָפֶל, אִמַּר \"lamb\"). BDB's אֶמְרָה is the same word as אִמְרָה (the same occurrences). Ugaritic: DULAT not consulted (no open copy found); worth checking if a copy turns up. Scripture's Aramaic of the root (Daniel, and the Peshitta) is kept as words of this entry. Leads for the Peshitta's ܐܡܪ, not yet followed to verses: Payne Smith p. 20 and Brockelmann p. 26 give \"think\" and \"command\", and the Ethpeel \"be said, be called\"; SEDRA lexeme 171."
+  "note": "Left out, for their own entries: אָמִיר \"top, bough\" (Isa 17:6, 9), which Wiktionary links to Proto-Semitic *rayam- \"be high\"; Hos 4:7 אָמִיר, the Hiphil of מוּר \"exchange\" (as the reader analyses it, with MACULA's lemma and the LXX's θήσομαι), which only the spelling index files here; אֱמֹרִי \"Amorite\", a people's name; אֲמַרְיָה “Yah has said” (also אֲמַרְיָהוּ), a name built on the verb, and אִמֵּר, אִמְרִי and אוֹמָר, names whose link to the verb is uncertain (names will have their own entries, linking back to their roots); and the unrelated words BDB's section also holds (אֶמֶשׁ, אָנָּא, אֹן, אַמְרָפֶל, אִמַּר \"lamb\"). BDB's אֶמְרָה is the same word as אִמְרָה (the same occurrences). Ugaritic: DULAT not consulted (no open copy found); worth checking if a copy turns up. Scripture's Aramaic of the root (Daniel, and the Peshitta) is kept as words of this entry. Leads for the Peshitta's ܐܡܪ, not yet followed to verses: Payne Smith p. 20 and Brockelmann p. 26 give \"think\" and \"command\", and the Ethpeel \"be said, be called\"; SEDRA lexeme 171. Leads not yet confirmed in their own sources: Old South Arabian ʾmr (Beeston et al., Sabaic Dictionary; the online Sabaweb and DASI could not be reached), and \"said\" in the Deir ʿAlla plaster text, Combination I lines 4–6 (seen only in English translation)."
 }
