@@ -1,0 +1,886 @@
+{
+  "id": "melek",
+  "root": "מלכ",
+  "status": "draft",
+  "updated": "2026-11-08",
+  "tags": [
+    "king",
+    "kingdom",
+    "rule",
+    "counsel",
+    "promise"
+  ],
+  "gloss": "king; reign, kingdom; counsel",
+  "summary": "מֶלֶךְ is a king, and מָלַךְ is to be or become king; the nouns name kingship, royal dignity, a reign, or the kingdom ruled. Scripture applies the family both to human rulers and to יַהְוֶה’s rule. The spelling also holds counsel-language, clear in Aramaic מְלֵךְ and Syriac verbs for advising and promising; its relation to kingship is not established by the cited uses.",
+  "words": [
+    {
+      "lemma": "מֶלֶךְ",
+      "pos": "noun",
+      "gloss": "king",
+      "bdb": [
+        "m.cd.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "king",
+          "definition": "The ruler of a people or territory.",
+          "evidence": [
+            {
+              "ref": "Gen.14.1",
+              "role": "defining",
+              "note": "Four rulers are each named as king of a place."
+            },
+            {
+              "ref": "Deu.17.14",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "God as king",
+          "definition": "God named as the one ruling his people and the earth.",
+          "evidence": [
+            {
+              "ref": "Psa.47.8",
+              "role": "defining",
+              "note": "God is king of all the earth."
+            },
+            {
+              "ref": "Psa.10.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-malik"
+      ],
+      "greek": [
+        {
+          "lemma": "βασιλεύς",
+          "gloss": "king",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.2.2, מַלְכֵי → βασιλεῖς; Zec.9.9, מַלְכֵּךְ → βασιλεύς σου"
+            },
+            {
+              "ref": "Act.4.26"
+            },
+            {
+              "ref": "Mat.21.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָלַךְ",
+      "pos": "verb",
+      "gloss": "reign; consider, take counsel",
+      "bdb": [
+        "m.cd.ae"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be king, reign",
+          "senses": [
+            {
+              "gloss": "become king, reign",
+              "definition": "Hold or begin to hold kingship over a people.",
+              "evidence": [
+                {
+                  "ref": "Gen.36.31",
+                  "role": "defining",
+                  "note": "The kings of Edom reigned before a king reigned over Israel."
+                },
+                {
+                  "ref": "1Ki.1.30",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-mulk"
+              ]
+            },
+            {
+              "gloss": "reign, of God",
+              "definition": "Exercise kingship, said of יַהְוֶה.",
+              "evidence": [
+                {
+                  "ref": "Psa.93.1",
+                  "role": "defining",
+                  "note": "יַהְוֶה reigns, clothed in majesty."
+                },
+                {
+                  "ref": "1Sa.8.7",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-mulk"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make king or queen",
+          "senses": [
+            {
+              "gloss": "appoint as king or queen",
+              "definition": "Cause someone to occupy the royal office.",
+              "evidence": [
+                {
+                  "ref": "Jdg.9.6",
+                  "role": "defining",
+                  "note": "Shechem’s leaders make Abimelech king."
+                },
+                {
+                  "ref": "Est.2.17",
+                  "role": "defining",
+                  "note": "The king makes Esther queen in Vashti’s place."
+                }
+              ],
+              "cognate_ids": [
+                "ar-mulk"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be made king",
+          "senses": [
+            {
+              "gloss": "be installed as king",
+              "definition": "Be placed in kingship by another; this stem occurs once.",
+              "evidence": [
+                {
+                  "ref": "Dan.9.1",
+                  "role": "defining",
+                  "note": "Darius was made king over the kingdom of the Chaldeans."
+                }
+              ],
+              "cognate_ids": [
+                "ar-mulk"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "consider, take counsel (uncertain)",
+          "senses": [
+            {
+              "gloss": "consider inwardly; be moved to a decision",
+              "definition": "Nehemiah’s heart acts upon him before he challenges the nobles. “I took counsel with myself” and “my heart ruled over me” are two readings of the construction; the single occurrence does not settle the link between counsel and rule.",
+              "evidence": [
+                {
+                  "ref": "Neh.5.7",
+                  "role": "defining",
+                  "note": "וַיִּמָּלֵךְ לִבִּי עָלַי precedes Nehemiah’s rebuke of lending at interest."
+                }
+              ],
+              "cognate_ids": [
+                "akk-malaku"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַמְלָכָה",
+      "pos": "noun",
+      "gloss": "kingdom, royal rule",
+      "bdb": [
+        "m.cd.al"
+      ],
+      "senses": [
+        {
+          "gloss": "kingdom, realm",
+          "definition": "The territory and people under a king.",
+          "evidence": [
+            {
+              "ref": "Gen.10.10",
+              "role": "defining",
+              "note": "Babel and other cities form the beginning of Nimrod’s kingdom."
+            },
+            {
+              "ref": "1Ki.10.20",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "royal rule, sovereignty",
+          "definition": "Kingship as authority exercised or transferred.",
+          "evidence": [
+            {
+              "ref": "1Sa.28.17",
+              "role": "defining",
+              "note": "The kingdom is torn from Saul’s hand and given to David."
+            },
+            {
+              "ref": "Deu.17.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-mulk"
+      ]
+    },
+    {
+      "lemma": "מַלְכוּת",
+      "pos": "noun",
+      "gloss": "kingship, kingdom, reign",
+      "bdb": [
+        "m.cd.ak"
+      ],
+      "senses": [
+        {
+          "gloss": "kingship, royal dignity",
+          "definition": "Royal standing and authority, also characterizing a royal crown or garment.",
+          "evidence": [
+            {
+              "ref": "Est.2.17",
+              "role": "defining",
+              "note": "A crown of royalty is placed on Esther’s head."
+            },
+            {
+              "ref": "Est.6.8",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "kingdom, reign",
+          "definition": "The rule a king exercises, the realm under that rule, or its duration.",
+          "evidence": [
+            {
+              "ref": "Psa.145.13",
+              "role": "defining",
+              "note": "God’s kingdom and dominion endure through all generations."
+            },
+            {
+              "ref": "Dan.8.22",
+              "role": "defining",
+              "note": "Four kingdoms arise from the nation."
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-mulk"
+      ]
+    },
+    {
+      "lemma": "מַלְכָּה",
+      "pos": "noun",
+      "gloss": "queen",
+      "bdb": [
+        "m.cd.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "queen",
+          "definition": "A royal woman, whether a reigning queen or a king’s queen.",
+          "evidence": [
+            {
+              "ref": "1Ki.10.1",
+              "role": "defining",
+              "note": "The queen of Sheba comes to test Solomon."
+            },
+            {
+              "ref": "Est.2.22",
+              "role": "defining",
+              "note": "Esther acts as queen in reporting the plot."
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-malik"
+      ]
+    },
+    {
+      "lemma": "מְלוּכָה",
+      "pos": "noun",
+      "gloss": "kingship, royal rule",
+      "bdb": [
+        "m.cd.aj"
+      ],
+      "senses": [
+        {
+          "gloss": "kingship, royal authority",
+          "definition": "The office or authority of a king, and royal status.",
+          "evidence": [
+            {
+              "ref": "1Sa.10.25",
+              "role": "defining",
+              "note": "Samuel sets out the judgment or rule of the kingship."
+            },
+            {
+              "ref": "1Ki.2.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Oba.1.21",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "royal descent",
+          "definition": "In “seed of royalty”, the royal family or lineage.",
+          "evidence": [
+            {
+              "ref": "2Ki.25.25",
+              "role": "defining",
+              "note": "Ishmael is of royal descent."
+            },
+            {
+              "ref": "Dan.1.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-mulk"
+      ]
+    },
+    {
+      "lemma": "מַמְלָכוּת",
+      "pos": "noun",
+      "gloss": "kingdom, reign",
+      "bdb": [
+        "m.cd.am"
+      ],
+      "senses": [
+        {
+          "gloss": "kingdom; reign",
+          "definition": "A royal realm or the period of its ruler; a less frequent formation beside מַמְלָכָה.",
+          "evidence": [
+            {
+              "ref": "Jos.13.12",
+              "role": "defining",
+              "note": "The kingdom of Og names his territory."
+            },
+            {
+              "ref": "Jer.26.1",
+              "role": "defining",
+              "note": "The beginning of Jehoiakim’s reign dates the prophecy."
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-mulk"
+      ]
+    },
+    {
+      "lemma": "מְלֶכֶת",
+      "pos": "noun",
+      "gloss": "queen (in a divine title)",
+      "bdb": [
+        "m.cd.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "queen of the heavens",
+          "definition": "The title of the deity to whom cakes, incense, and drink offerings are given in Jeremiah. The title identifies a female recipient; these passages do not give her a personal name.",
+          "evidence": [
+            {
+              "ref": "Jer.7.18",
+              "role": "defining",
+              "note": "Cakes are made for the queen of the heavens."
+            },
+            {
+              "ref": "Jer.44.19",
+              "role": "defining",
+              "note": "The worshippers make cakes depicting her and pour offerings to her."
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-malik"
+      ]
+    },
+    {
+      "lemma": "מֶלֶךְ",
+      "pos": "noun",
+      "gloss": "king",
+      "bdb": [
+        "xm.ag.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "king",
+          "definition": "A ruler addressed or described by his royal title.",
+          "evidence": [
+            {
+              "ref": "Dan.2.37",
+              "role": "defining",
+              "note": "Nebuchadnezzar is called king of kings, whose authority the God of heaven gave him."
+            },
+            {
+              "ref": "Ezr.7.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-malik"
+      ]
+    },
+    {
+      "lemma": "מַלְכּוּ",
+      "pos": "noun",
+      "gloss": "kingdom, royal rule",
+      "bdb": [
+        "xm.ag.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "kingdom, royal authority",
+          "definition": "A king’s rule or the realm entrusted to him.",
+          "evidence": [
+            {
+              "ref": "Dan.2.39",
+              "role": "defining",
+              "note": "Kingdoms arise in succession."
+            },
+            {
+              "ref": "Dan.7.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.7.27",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "reign",
+          "definition": "The period during which a king rules.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.15",
+              "role": "defining",
+              "note": "The temple is finished in the sixth year of Darius’s reign."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-mulk"
+      ]
+    },
+    {
+      "lemma": "מַלְכָּה",
+      "pos": "noun",
+      "gloss": "queen",
+      "bdb": [
+        "xm.ag.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "queen",
+          "definition": "The royal woman who comes to the banquet and advises the king.",
+          "evidence": [
+            {
+              "ref": "Dan.5.10",
+              "role": "defining",
+              "note": "The queen enters and speaks to the king."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-malik"
+      ]
+    },
+    {
+      "lemma": "מְלֵךְ",
+      "pos": "noun",
+      "gloss": "counsel, advice",
+      "bdb": [
+        "xm.ah.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "counsel",
+          "definition": "Advice offered to someone; attested once in Biblical Aramaic.",
+          "evidence": [
+            {
+              "ref": "Dan.4.24",
+              "role": "defining",
+              "note": "Daniel asks that his counsel please the king and urges righteousness and mercy to the poor."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "gender": "m",
+      "cognate_ids": [
+        "akk-malaku"
+      ]
+    },
+    {
+      "lemma": "מַלְכָּא",
+      "pos": "noun",
+      "gloss": "king",
+      "senses": [
+        {
+          "gloss": "king",
+          "definition": "A ruler holding the royal office.",
+          "evidence": [
+            {
+              "ref": "Mat.2.1",
+              "role": "defining",
+              "note": "Herod is called king."
+            },
+            {
+              "ref": "Mat.2.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-malik"
+      ]
+    },
+    {
+      "lemma": "מַלְכְּתָא",
+      "pos": "noun",
+      "gloss": "queen",
+      "senses": [
+        {
+          "gloss": "queen",
+          "definition": "A female royal ruler.",
+          "evidence": [
+            {
+              "ref": "Mat.12.42",
+              "role": "defining",
+              "note": "The queen of the south came to hear Solomon’s wisdom."
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-malik"
+      ]
+    },
+    {
+      "lemma": "מַלְכּוּתָא",
+      "pos": "noun",
+      "gloss": "kingdom, reign",
+      "senses": [
+        {
+          "gloss": "kingdom, rule",
+          "definition": "Royal authority or the realm ruled, including the kingdom of heaven or of God.",
+          "evidence": [
+            {
+              "ref": "Mat.3.2",
+              "role": "defining",
+              "note": "The kingdom of heaven has drawn near."
+            },
+            {
+              "ref": "Mat.6.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.18.36",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "reign",
+          "definition": "The continuing exercise of kingship.",
+          "evidence": [
+            {
+              "ref": "Luk.1.33",
+              "role": "defining",
+              "note": "His reign will have no end."
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-mulk"
+      ]
+    },
+    {
+      "lemma": "מְלַךְ",
+      "pos": "verb",
+      "gloss": "advise, promise; reign",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "advise; promise",
+          "senses": [
+            {
+              "gloss": "advise, counsel",
+              "definition": "Offer a course of action.",
+              "evidence": [
+                {
+                  "ref": "Jhn.18.14",
+                  "role": "defining",
+                  "note": "Caiaphas had advised that one man should die for the people."
+                },
+                {
+                  "ref": "Act.27.22",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "akk-malaku"
+              ]
+            },
+            {
+              "gloss": "promise",
+              "definition": "Give one’s word that something will be done.",
+              "evidence": [
+                {
+                  "ref": "Rom.4.21",
+                  "role": "defining",
+                  "note": "Abraham is assured that God can fulfill what he promised."
+                },
+                {
+                  "ref": "Tit.1.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be promised",
+          "senses": [
+            {
+              "gloss": "be promised",
+              "definition": "Be the object or recipient of a promise.",
+              "evidence": [
+                {
+                  "ref": "Gal.3.16",
+                  "role": "defining",
+                  "note": "Promises were made to Abraham and his seed."
+                },
+                {
+                  "ref": "Heb.11.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "take counsel together",
+          "senses": [
+            {
+              "gloss": "consult, take counsel together",
+              "definition": "Confer together concerning a proposed course.",
+              "evidence": [
+                {
+                  "ref": "Mat.26.4",
+                  "role": "defining",
+                  "note": "They take counsel together to seize and kill Jesus."
+                },
+                {
+                  "ref": "Act.4.26",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "akk-malaku"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "reign, rule as king",
+          "senses": [
+            {
+              "gloss": "reign",
+              "definition": "Exercise royal power.",
+              "evidence": [
+                {
+                  "ref": "Luk.1.33",
+                  "role": "defining",
+                  "note": "He will reign over the house of Jacob forever."
+                },
+                {
+                  "ref": "Rom.5.14",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-mulk"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "מֵלְכָּא",
+      "pos": "noun",
+      "gloss": "counsel, plan",
+      "senses": [
+        {
+          "gloss": "counsel, decision",
+          "definition": "Advice or a course agreed upon, including a hostile plan.",
+          "evidence": [
+            {
+              "ref": "Mat.12.14",
+              "role": "defining",
+              "note": "They take counsel against him, how to destroy him."
+            },
+            {
+              "ref": "Act.25.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m",
+      "cognate_ids": [
+        "akk-malaku"
+      ]
+    },
+    {
+      "lemma": "מוּלְכָּנָא",
+      "pos": "noun",
+      "gloss": "promise",
+      "senses": [
+        {
+          "gloss": "promise",
+          "definition": "An undertaking or assurance given, often what God has promised.",
+          "evidence": [
+            {
+              "ref": "Luk.24.49",
+              "role": "defining",
+              "note": "Jesus sends the promise of his Father."
+            },
+            {
+              "ref": "Rom.4.13",
+              "role": "defining"
+            },
+            {
+              "ref": "2Co.1.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-malik",
+      "lang": "ar",
+      "form": "مَلِك",
+      "translit": "malik",
+      "gloss": "king",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3023, root ملك, مَلِكُ الأَمْلَاكِ (n43700)"
+        }
+      ],
+      "note": "The expression is “king of kings”; the noun is the comparison for the royal title."
+    },
+    {
+      "id": "ar-mulk",
+      "lang": "ar",
+      "form": "مُلْك",
+      "translit": "mulk",
+      "gloss": "dominion, sovereignty, kingship",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3023, root ملك, مُلْكٌ (n43698)"
+        }
+      ]
+    },
+    {
+      "id": "akk-malaku",
+      "lang": "akk",
+      "form": "malāku",
+      "translit": "malāku",
+      "gloss": "advise, deliberate, take counsel",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000022380, malāku [discuss] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000022380.html"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "kingdom-given-by-god",
+      "statement": "Daniel tells the king that the God of heaven gave him his kingdom (Dan 2:37). The vision later gives enduring dominion and kingdom to one like a son of man, and the kingdom to the people of the holy ones (Dan 7:13–14, 27). Luke announces that Jesus will receive David’s throne and reign over Jacob’s house without end (Luk 1:32–33). In these passages kingship is authority received and exercised, not merely a place-name.",
+      "evidence": [
+        {
+          "ref": "Dan.2.37"
+        },
+        {
+          "ref": "Dan.7.13"
+        },
+        {
+          "ref": "Dan.7.14"
+        },
+        {
+          "ref": "Dan.7.27"
+        },
+        {
+          "ref": "Luk.1.32"
+        },
+        {
+          "ref": "Luk.1.33"
+        }
+      ]
+    }
+  ],
+  "note": "One Hebrew verb holds the reign and counsel uses: m.cd.ae and m.ce.aa match the same occurrences, so only m.cd.ae is assigned. Its support count cannot distinguish those meanings. Neh 5:7 remains explicitly uncertain: the local translation reads “my heart reigned over me”, while counsel-language has a strong Aramaic and Akkadian comparison. No historical derivation from ruling to advising or promising is asserted. מְלֶכֶת is a common title, so it is included; מֹלֶךְ, מִלְכֹּם, personal names, and the Malkielite gentilic are left for name entries. The Syriac king/queen lexeme is one SEDRA row, but the feminine word is displayed separately. Malchus (SEDRA 1780) is a proper name. Cognates of counsel are deliberately not assigned to reign, and conversely."
+}
