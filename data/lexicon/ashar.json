@@ -21,8 +21,11 @@
       "cognate_ids": [
         "akk-ashru",
         "ar-athar",
+        "arc-ashr",
         "gez-asar",
-        "phn-ash"
+        "moab-ashr",
+        "phn-ash",
+        "uga-athr-shrine"
       ],
       "pos": "particle",
       "gloss": "who, which, that; where; because; so that",
@@ -388,6 +391,7 @@
             "akk-ashru",
             "ar-athar",
             "ar-ashira",
+            "arc-ashr",
             "gez-asar"
           ],
           "kin": [
@@ -571,6 +575,7 @@
                 "akk-ashru",
                 "ar-athar",
                 "ar-ashira",
+                "arc-ashr",
                 "gez-asar"
               ],
               "kin": [
@@ -618,6 +623,7 @@
                 "akk-ashru",
                 "ar-athar",
                 "ar-ashira",
+                "arc-ashr",
                 "gez-asar"
               ],
               "kin": [
@@ -693,6 +699,7 @@
       "cognate_ids": [
         "akk-ashru",
         "ar-athar",
+        "arc-ashr",
         "gez-asar"
       ],
       "pos": "noun",
@@ -857,6 +864,7 @@
             "akk-ashru",
             "ar-athar",
             "ar-ashira",
+            "arc-ashr",
             "gez-asar"
           ],
           "kin": [
@@ -952,9 +960,9 @@
       "lang": "ar",
       "form": "أَثَرٌ",
       "translit": "ʾaṯar",
-      "gloss": "footstep, footprint, track; trace, mark",
+      "gloss": "footstep, footprint, track; trace, mark; (إِثْرَ) after",
       "relation": "cognate",
-      "note": "The verb's eighth stem is \"follow someone's footsteps\".",
+      "note": "The verb's eighth stem is \"follow someone's footsteps\". As a preposition, فِى إِثْرِهِ is \"after him, at his heel, … as though treading in his footsteps\": the footprint become \"after\", as Aramaic בָּאתַר.",
       "evidence": [
         {
           "source": "lane",
@@ -964,6 +972,12 @@
         {
           "source": "lane",
           "locator": "p. 18, art. اثر, 8 اِئْتَثَرَهُ \"he followed his footsteps\""
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 19, art. اثر, خَرَجْتُ … فِى أَثَرِهِ and فِى إِثْرِهِ",
+          "url": "https://ejtaal.net/aa/img/ll/0/ll-0056.png",
+          "note": "\"I went out, and I came, after him: or at his heel … or following near upon him … as though treading in his footsteps.\""
         }
       ],
       "sounds": {
@@ -1014,6 +1028,46 @@
       ]
     },
     {
+      "id": "arc-ashr",
+      "lang": "arc",
+      "form": "אשר",
+      "translit": "ʾšr",
+      "gloss": "place; base on which something stands; trace",
+      "relation": "cognate",
+      "note": "Old Aramaic, written with ש for the older ṯ, so spelled exactly as Hebrew אשר; later Aramaic writes it אתר, scripture's אֲתַר. Beside \"place\" it is a trace: \"your trace\" on the Nerab stele, as Arabic أَثَرٌ is.",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ˀtr, ˀtrˀ n.m. place",
+          "url": "https://cal.huc.edu/oneentry.php?lemma=%29tr%20N&cits=all",
+          "note": "\"OA: אשר\"; Sefire III (Sf.3 a5) wltˀmr lhm šlw ˁl ˀšrkm \"you may not say to them: stay quietly in your place\"; Nerab 1.8 mn ˀšrh \"from its place\"; Nerab 1.10 wˀšrk \"your trace\"; derived bāṯar \"after\"."
+        }
+      ]
+    },
+    {
+      "id": "moab-ashr",
+      "lang": "sem",
+      "form": "אשר",
+      "translit": "ʾšr",
+      "gloss": "who, which, that",
+      "relation": "cognate",
+      "note": "Moabite, the Mesha stele: the same particle, in the same consonants, doing the same work: \"the cities which I added to the land\" (line 29).",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, line 29",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "בקרנ אשר יספתי על הארצ."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, line 29",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"in the cities which I added to the land\"."
+        }
+      ]
+    },
+    {
       "id": "uga-athr",
       "lang": "uga",
       "form": "𐎀𐎘𐎗",
@@ -1030,6 +1084,23 @@
         {
           "source": "anderson-moser-2024",
           "locator": "SEM001073, UGC000714, HEB000778"
+        }
+      ]
+    },
+    {
+      "id": "uga-athr-shrine",
+      "lang": "uga",
+      "form": "𐎀𐎘𐎗",
+      "translit": "ʾaṯr",
+      "gloss": "shrine",
+      "relation": "possible",
+      "note": "A noun beside the verb \"march\": a holy place, as Akkadian ašru is a place. Only Wiktionary consulted, which derives it from the noun behind Arabic أَثَرٌ.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎀𐎘𐎗",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%98%F0%90%8E%97",
+          "note": "\"/ʾaṯru/ 1. shrine\"; \"From Proto-Semitic *ʔaṯar-. Compare Arabic أَثَر\"."
         }
       ]
     },
@@ -1127,5 +1198,5 @@
       ]
     }
   ],
-  "note": "Kept as one root: the particle, the step, the verb, the words for the right path and the tree. The cognates join the particle to a noun for footstep, trace or place (Brockelmann sets אֲשֶׁר beside Syriac ܐܬܪܐ, Arabic أثر and Akkadian ašru; Akkadian ašar \"where\" is the noun doing a particle's work), and Ge'ez አሠר and Dillmann join \"footprint\" to the step אֲשֻׁר; Ugaritic ʾṯr is a verb \"march\". No dictionary consulted links אֶשֶׁר to these; within scripture the piel carries both \"lead on\" and \"call happy\" (Gen 30:13 has the noun and the verb together). Scripture ties אַשְׁרֵי to the path: of the 42 verses with אַשְׁרֵי or its suffixed forms, 10 have a word of way, walking, foot or step in the verse itself (Psa 1:1, 119:1, 128:1, 84:6, Pro 8:32, 20:7 among them) and 5 more in the verse beside it, where 8.5% of Old Testament verses have one (as of Psalms, Proverbs and Job alone): about 3.6 of 42 by chance, p ≈ 0.002. Unpointed, אשרי is both \"on the right path is…!\" and \"my steps\" (אֲשֻׁרַי, Psa 17:5, 73:2; Job 31:7). So \"on the right path\" is taken as the primary sense of אֶשֶׁר, אֹשֶׁר and the piel and pual that call or count someone so, and \"happy\" as the secondary sense that follows from it; on that reading the footprint cognates share their meaning and are named on them. The reading rests on scripture's use and is to be refined as more evidence comes to light. Against it, Arabic أَشِرَ \"exult\" (ar-ashira) is closer to \"happy\" but has the wrong sibilant. \"In order, prospering\" belongs to another root, ישר (Akkadian išaru, Ugaritic yšr, with š, not ṯ). Open lead: Akkadian ašāru, perhaps \"muster, check, take care of\", not confirmed; CAD A/2 to consult. The tree תְּאַשּׁוּר is kept though its link to the root's sense is not clear. Left out, for their own entries: the names אָשֵׁר Asher and the gentilic אָשֵׁרִי (Jdg 1:32), whom Leah names with this root's words (Gen 30:13), so his entry should link back here; אֲשֵׁרָה Asherah, a goddess's name and her cult pole (Ugaritic ʾaṯrt), whose entry should weigh a link to this root; and אַשּׁוּר Assyria, from the Akkadian city name Aššur, which belongs to another word. BDB lists the same occurrences under both אֲשׁוּר and אַשֻּׁר, one word here. CAD and Leslau not consulted. The particle's senses are illustrated, not exhaustive: 5,500 tokens. Scripture's Aramaic אֲתַר and the Peshitta's ܐܬܪܐ are kept as words of this entry, under their own root אתר (Aramaic ת for Hebrew ש, both from ṯ). Leads for ܐܬܪܐ not yet followed to verses: Payne Smith p. 33 and Brockelmann pp. 55–56 give \"region, country\" and, as a conjunction, \"where\"; Brockelmann sets it beside Arabic أثر, Akkadian ašru and Hebrew אֲשֶׁר; SEDRA lexeme 324."
+  "note": "Kept as one root: the particle, the step, the verb, the words for the right path and the tree. The cognates join the particle to a noun for footstep, trace or place (Brockelmann sets אֲשֶׁר beside Syriac ܐܬܪܐ, Arabic أثر and Akkadian ašru; Akkadian ašar \"where\" is the noun doing a particle's work), and Ge'ez አሠר and Dillmann join \"footprint\" to the step אֲשֻׁר; Ugaritic ʾṯr is a verb \"march\". No dictionary consulted links אֶשֶׁר to these; within scripture the piel carries both \"lead on\" and \"call happy\" (Gen 30:13 has the noun and the verb together). Scripture ties אַשְׁרֵי to the path: of the 42 verses with אַשְׁרֵי or its suffixed forms, 10 have a word of way, walking, foot or step in the verse itself (Psa 1:1, 119:1, 128:1, 84:6, Pro 8:32, 20:7 among them) and 5 more in the verse beside it, where 8.5% of Old Testament verses have one (as of Psalms, Proverbs and Job alone): about 3.6 of 42 by chance, p ≈ 0.002. Unpointed, אשרי is both \"on the right path is…!\" and \"my steps\" (אֲשֻׁרַי, Psa 17:5, 73:2; Job 31:7). So \"on the right path\" is taken as the primary sense of אֶשֶׁר, אֹשֶׁר and the piel and pual that call or count someone so, and \"happy\" as the secondary sense that follows from it; on that reading the footprint cognates share their meaning and are named on them. The reading rests on scripture's use and is to be refined as more evidence comes to light. Against it, Arabic أَشِرَ \"exult\" (ar-ashira) is closer to \"happy\" but has the wrong sibilant. \"In order, prospering\" belongs to another root, ישר (Akkadian išaru, Ugaritic yšr, with š, not ṯ). Open lead: Akkadian ašāru, perhaps \"muster, check, take care of\", not confirmed; CAD A/2 to consult. The tree תְּאַשּׁוּר is kept though its link to the root's sense is not clear. Left out, for their own entries: the names אָשֵׁר Asher and the gentilic אָשֵׁרִי (Jdg 1:32), whom Leah names with this root's words (Gen 30:13), so his entry should link back here; אֲשֵׁרָה Asherah, a goddess's name and her cult pole (Ugaritic ʾaṯrt), whose entry should weigh a link to this root; and אַשּׁוּר Assyria, from the Akkadian city name Aššur, which belongs to another word. BDB lists the same occurrences under both אֲשׁוּר and אַשֻּׁר, one word here. CAD and Leslau not consulted. The particle's senses are illustrated, not exhaustive: 5,500 tokens. Scripture's Aramaic אֲתַר and the Peshitta's ܐܬܪܐ are kept as words of this entry, under their own root אתר (Aramaic ת for Hebrew ש, both from ṯ). Leads for ܐܬܪܐ not yet followed to verses: Payne Smith p. 33 and Brockelmann pp. 55–56 give \"region, country\" and, as a conjunction, \"where\"; Brockelmann sets it beside Arabic أثر, Akkadian ašru and Hebrew אֲשֶׁר; SEDRA lexeme 324. Added 2026-11-08: Moabite אשר, the relative particle (Mesha line 29); Old Aramaic אשר \"place; trace\" (Sefire III, Nerab), the older spelling of אֲתַר; Arabic إِثْرَ \"after\" (Lane p. 19) under ar-athar; Ugaritic ʾaṯr \"shrine\" (Wiktionary only, possible). Open leads: DULAT for Ugaritic ʾaṯr as a noun \"place\" and a preposition \"after\" (Segert glossary pp. 175–206 not reached); Sabaic ʾṯr (SabaWeb unreachable, Biella not read); Mandaic atra \"place\" (Drower–Macuch)."
 }
