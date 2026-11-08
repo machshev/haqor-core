@@ -822,6 +822,32 @@
           "reason": "Men lwath is the compound preposition expressing source from the Lord, literally from toward. Splitting its English preposition would misstate the relationship; the Lord remains separately linked at position 16."
         }
       ]
+    },
+    "40:22": {
+      "sha256": "dfde9ead14be3861768a86c80d7b3c22681bbbdfcfcdfe6f3ea346131a67a5f5",
+      "original_shared_spans": 27,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 16,
+          "english": "show partiality",
+          "positions": [
+            24,
+            26
+          ],
+          "reason": "Naseb b-appe, literally taking faces, is the idiom for showing partiality or respecting persons. The predicate cannot here denote taking and physical faces separately. The intervening subject pronoun at position 25 and the negative at position 22 remain independently linked."
+        },
+        {
+          "verse": 18,
+          "english": "hypocrites",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Nasbay b-appe, literally takers of faces, is the fixed personal designation hypocrites in this rebuke. Its verb-derived noun and prepositional face complement together supply the English vocative, without separate face-taking actions or physical faces."
+        }
+      ]
     }
   }
 }

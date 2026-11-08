@@ -143,8 +143,17 @@ Source checks for Matthew 21:
   cites this verse under the adverbial sense of
   [bish](https://cal.huc.edu/oneentry.php?cits=all&lemma=by%24+A).
 
-Source check for Matthew 22: 22:37 explicitly includes strength as well as
-heart, soul, and mind; all four are retained and linked to their source words.
+Source checks for Matthew 22:
+
+- Matthew 22:24 makes the brother the subject of taking the deceased man's
+  wife; the wife's possessive suffix is retained. In 22:25, the number seven
+  and the noun brothers have separate source owners.
+- Matthew 22:30 renders hawayn l-gabre contextually as "become married to
+  men", with the verb and its complement linked separately. Compare the
+  marital example under "to become" in
+  [CAL's hwy entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=hwy+V).
+- Matthew 22:37 explicitly includes strength as well as heart, soul, and
+  mind; all four are retained and linked to their source words.
 
 Source checks for Matthew 23:
 
