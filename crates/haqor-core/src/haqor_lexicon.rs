@@ -1274,10 +1274,11 @@ pub struct CognateCount {
     pub sharing: Vec<String>,
     /// How many languages those come from.
     pub sharing_languages: usize,
-    /// The root's other cognates (`cognate`, from a Semitic language) that
-    /// neither it nor its kin name: the same root with another meaning,
-    /// evidence against its meaning being the root's. Each as
-    /// `Language form (gloss)`.
+    /// The root's cognates (`cognate`, from a Semitic language) that count
+    /// against it: all those it and its kin do not name, where they name
+    /// none sharing its meaning; otherwise those showing an older sound
+    /// behind a merged letter other than the ones named (another older
+    /// root). Each as `Language form (gloss)`.
     pub differing: Vec<String>,
     pub differing_languages: usize,
     /// Cognates it names only as `possible`.
@@ -1350,44 +1351,71 @@ pub fn entry_support(entry: &Entry, uses: &dyn Fn(&Word) -> Option<usize>) -> Ve
         }
         (cited.len(), defining.len())
     };
-    // Count the cognates `named` names against the entry's: those sharing the
-    // meaning are `own`'s; those differing are all the rest of the root's.
-    let count =
-        |own: &BTreeSet<&str>, named: &BTreeSet<&str>, differs: &dyn Fn(&Cognate) -> bool| {
-            let mut out = CognateCount::default();
-            let mut sharing = BTreeSet::new();
-            let mut differing = BTreeSet::new();
-            for c in own.iter().filter_map(|id| by_cognate_id.get(id)) {
-                let name = format!("{} {}", language_name(&c.lang), c.form);
-                if shares(c) {
-                    sharing.insert(c.lang.as_str());
-                    out.sharing.push(name);
-                } else if c.relation == Relation::Possible {
-                    out.possible.push(name);
-                }
+    // Count the cognates `own` names, and the root's cognates that count
+    // against them. `named` is every cognate that goes with the meaning (its
+    // own and its kin's). Where none of them shares it, cognates show no
+    // connection to the root, and each of the root's other cognates counts
+    // against it. Where one does, another word of the same root is no
+    // evidence against it: a cognate counts against it only when it shows,
+    // behind a merged letter, an older sound other than those it names (an
+    // older root merged into the same spelling).
+    let count = |own: &BTreeSet<&str>, named: &BTreeSet<&str>| {
+        let mut out = CognateCount::default();
+        let mut sharing = BTreeSet::new();
+        let mut differing = BTreeSet::new();
+        for c in own.iter().filter_map(|id| by_cognate_id.get(id)) {
+            let name = format!("{} {}", language_name(&c.lang), c.form);
+            if shares(c) {
+                sharing.insert(c.lang.as_str());
+                out.sharing.push(name);
+            } else if c.relation == Relation::Possible {
+                out.possible.push(name);
             }
-            for c in &entry.cognates {
-                let is_named = c.id.as_deref().is_some_and(|id| named.contains(id));
-                if c.relation == Relation::Cognate
-                    && !LOAN_ONLY_LANGS.contains(&c.lang.as_str())
-                    && !is_named
-                    && differs(c)
-                {
-                    differing.insert(c.lang.as_str());
-                    out.differing.push(format!(
-                        "{} {} ({})",
-                        language_name(&c.lang),
-                        c.form,
-                        c.gloss
-                    ));
-                }
+        }
+        let connecting: Vec<&Cognate> = named
+            .iter()
+            .filter_map(|id| by_cognate_id.get(id).copied())
+            .filter(|c| shares(c))
+            .collect();
+        let mut shown: BTreeMap<&str, BTreeSet<&str>> = BTreeMap::new();
+        for c in &connecting {
+            for (letter, sound) in &c.sounds {
+                shown
+                    .entry(letter.as_str())
+                    .or_default()
+                    .insert(sound.as_str());
             }
-            out.sharing_languages = sharing.len();
-            out.differing_languages = differing.len();
-            // Opposing evidence weighs double.
-            out.balance = sharing.len() as i64 - 2 * differing.len() as i64;
-            out
+        }
+        let another_root = |c: &Cognate| {
+            connecting.is_empty()
+                || c.sounds.iter().any(|(letter, sound)| {
+                    shown
+                        .get(letter.as_str())
+                        .is_some_and(|sounds| !sounds.contains(sound.as_str()))
+                })
         };
+        for c in &entry.cognates {
+            let is_named = c.id.as_deref().is_some_and(|id| named.contains(id));
+            if c.relation == Relation::Cognate
+                && !LOAN_ONLY_LANGS.contains(&c.lang.as_str())
+                && !is_named
+                && another_root(c)
+            {
+                differing.insert(c.lang.as_str());
+                out.differing.push(format!(
+                    "{} {} ({})",
+                    language_name(&c.lang),
+                    c.form,
+                    c.gloss
+                ));
+            }
+        }
+        out.sharing_languages = sharing.len();
+        out.differing_languages = differing.len();
+        // Opposing evidence weighs double.
+        out.balance = sharing.len() as i64 - 2 * differing.len() as i64;
+        out
+    };
     let words: Vec<Vec<(String, &Sense, Vec<&str>)>> = entry.words.iter().map(senses_of).collect();
     let mut by_id: HashMap<&str, (usize, &str, &Sense, &[&str])> = HashMap::new();
     for (w, senses) in words.iter().enumerate() {
@@ -1434,7 +1462,7 @@ pub fn entry_support(entry: &Entry, uses: &dyn Fn(&Word) -> Option<usize>) -> Ve
                     sense: label.clone(),
                     cited,
                     defining,
-                    cognates: count(&own, &named, &|_| true),
+                    cognates: count(&own, &named),
                     kin: kin.clone(),
                 });
                 all_own.extend(own);
@@ -1445,14 +1473,9 @@ pub fn entry_support(entry: &Entry, uses: &dyn Fn(&Word) -> Option<usize>) -> Ve
                 }
                 sense_named.push(named);
             }
-            // A cognate counts against the word only when its meaning is
-            // none of the word's senses'.
-            let differs_from_all = |c: &Cognate| {
-                sense_named
-                    .iter()
-                    .all(|named| c.id.as_deref().is_none_or(|id| !named.contains(id)))
-            };
-            let cognates = count(&all_own, &BTreeSet::new(), &differs_from_all);
+            // The word goes with every cognate any of its senses goes with.
+            let all_named: BTreeSet<&str> = sense_named.into_iter().flatten().collect();
+            let cognates = count(&all_own, &all_named);
             let all_senses: Vec<&Sense> = senses.iter().map(|(_, s, _)| *s).collect();
             let (cited, defining) = verses(&all_senses);
             WordSupport {
@@ -1545,16 +1568,17 @@ pub fn support_report(lexicon: &Lexicon, db: &Connection, schema: &str) -> Strin
     let mut out = String::new();
     out.push_str(
         "Uses: the word's Old Testament tokens (its `bdb` keys). Balance: languages \
-         with cognates sharing the meaning, less twice the languages with cognates of \
-         another meaning (opposing evidence weighs double). A word's cognates of \
-         another meaning are those that share none of its senses' meanings; its \
-         senses are listed under it where they differ.\n\n",
+         with cognates sharing the meaning, less twice the languages with cognates \
+         against it (opposing evidence weighs double). Against a word with no \
+         cognate of its own (nor its kin's) count all the root's cognates; against \
+         one with cognates, only those showing another older sound behind a merged \
+         letter. Its senses are listed under it where they differ.\n\n",
     );
     for entry in &lexicon.entries {
         let _ = writeln!(out, "## {} `{}`\n", entry.root, entry.id);
         let _ = writeln!(
             out,
-            "| Word | Uses | Verses cited (defining) | Cognates sharing its meaning | Cognates with another meaning | Balance | Possible | Kin senses |"
+            "| Word | Uses | Verses cited (defining) | Cognates sharing its meaning | Cognates against it | Balance | Possible | Kin senses |"
         );
         let _ = writeln!(out, "|---|---|---|---|---|---|---|---|");
         let uses = bdb_uses(db, schema, entry);
@@ -1982,6 +2006,27 @@ mod tests {
         // The Aramaic "be mixed" shares neither cognate's meaning.
         assert_eq!(support[2].cognates.differing_languages, 1);
         assert_eq!(support[2].cognates.balance, -2);
+    }
+
+    #[test]
+    fn another_word_of_the_same_older_root_does_not_count_against_it() {
+        // A second ġ cognate, "west", named on no word: another word of the
+        // evening's older root, so no evidence against it.
+        let json = EREV.replace(
+            r#""cognates": [{"#,
+            r#""cognates": [{
+            "id": "ar-maghrib", "lang": "ar", "form": "مغرب", "gloss": "west",
+            "relation": "cognate", "sounds": { "ע": "ġ" },
+            "evidence": [{ "source": "lane", "locator": "p. 2239" }]
+        }, {"#,
+        );
+        let entry: Entry = serde_json::from_str(&json).unwrap();
+        let support = entry_support(&entry, &|_| None);
+        let evening = &support[0];
+        // Only the ʿ cognate, another older root, counts against it.
+        assert_eq!(evening.cognates.differing, ["Arabic عربون (earnest money)"]);
+        // The Aramaic "be mixed" names no cognate: every one counts against it.
+        assert_eq!(support[2].cognates.differing.len(), 3);
     }
 
     #[test]

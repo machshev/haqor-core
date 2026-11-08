@@ -142,17 +142,20 @@ each sense where a word's senses differ:
 | Uses | The word's Old Testament tokens, from its `bdb` keys. One use is a word scripture barely fixes. |
 | Verses cited (defining) | The verses its senses cite, and how many of them fix a meaning. |
 | Cognates sharing its meaning | The cognates it names in `cognate_ids` (its own or inherited) as `cognate`, or as a loan into Hebrew, and how many languages they come from. |
-| Cognates with another meaning | The root's other cognates (`cognate`, Semitic) that neither it nor its kin name: the same root meaning something else. For a word, those that share none of its senses' meanings. |
-| Balance | Languages sharing the meaning, less **twice** the languages with another meaning: opposing evidence weighs double. |
+| Cognates against it | Where it and its kin name no cognate sharing its meaning, all the root's cognates (`cognate`, Semitic): nothing ties it to the root. Where they name one, only those showing a different older sound behind a merged letter than the ones named (see Sounds): another older root in the same spelling. Another word of the same root is no evidence against it. |
+| Balance | Languages sharing the meaning, less **twice** the languages against it: opposing evidence weighs double. |
 | Possible | Cognates it names only as `possible`; they count neither way. |
 | Kin senses | Sibling senses sharing its meaning, with their own uses, verses and cognates: support from the rest of the root. |
 
-So naming a cognate in `cognate_ids` says it shares that meaning, and leaving
-it out says it does not. Name each cognate on every word and sense whose
-meaning it shares, and on none other: a cognate named on no word is listed
-under the table. A word whose root's cognates all mean something else (the
-tree תְּאַשּׁוּר of אשר, whose cognates mean "footstep, trace") shows a
-negative balance; one whose meaning they share shows a positive one.
+So naming a cognate in `cognate_ids` says it shares that meaning. Name each
+cognate on every word and sense whose meaning it shares, and on none other: a
+cognate named on no word is listed under the table. The balance is there to
+find the words with no evident tie to their root: a word no cognate shares
+(the tree תְּאַשּׁוּר of אשר, whose cognates mean "footstep, trace") counts
+all the root's cognates against it, which says the root's sense is not yet
+understood, or the word belongs to another root, or its own sense is not. A
+word whose cognates show one older sound behind a merged letter is opposed by
+those showing another (ערב "evening", ġ, against عربون "pledge", ʿ).
 
 ### Sounds
 

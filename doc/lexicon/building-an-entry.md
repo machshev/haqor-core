@@ -191,9 +191,9 @@ cargo run -- db lexicon-support   # each word's uses, verses, cognates for and a
 
 `check-lexicon` lists every fault at once. `lexicon-support` counts each word's
 evidence: give each word its `bdb` keys so its uses in scripture are counted.
-A word with few uses, few defining verses, or a negative balance (cognates of
-another meaning outnumbering those sharing it, which count double) is one
-whose meaning rests on little, and its `summary` should say so. `lexicon-splits` shows whether the
+A word with few uses, few defining verses, or a negative balance (no cognate of its own, so
+the root's cognates count against it, double; or cognates of another older root
+behind a merged letter) is one whose meaning or tie to the root rests on little, and its `summary` should say so. `lexicon-splits` shows whether the
 new entry adds to a pattern across roots: the same merger explaining two
 senses again and again.
 
