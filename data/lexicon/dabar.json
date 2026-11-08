@@ -180,14 +180,14 @@
     {
       "lemma": "דָּבַר",
       "pos": "verb",
-      "gloss": "speak; subdue; destroy",
+      "gloss": "speak; subdue, impose one’s will",
       "bdb": [
         "d.ai.aa"
       ],
       "stems": [
         {
           "stem": "piel",
-          "gloss": "speak; destroy",
+          "gloss": "speak; impose one’s will",
           "senses": [
             {
               "id": "speak",
@@ -241,13 +241,17 @@
               ]
             },
             {
-              "gloss": "destroy",
-              "definition": "Do away with a royal family. The parallel account (2Ki 11:1) has וַתְּאַבֵּד “and she destroyed” where this verse has וַתְּדַבֵּר, which fixes the sense; its relation to speaking or subduing is unclear.",
+              "gloss": "impose one’s will on, subjugate (to death)",
+              "definition": "Impose one’s will on others and put them under it, as the Hiphil subdues peoples. Once only, of Athaliah and the royal family. She makes them permanently subject by doing away with them. The parallel account (2Ki 11:1) has וַתְּאַבֵּד “and she destroyed” where this verse has וַתְּדַבֵּר. That gives what her will came to, not what the word means.",
               "evidence": [
                 {
                   "ref": "2Ch.22.10",
                   "role": "defining",
-                  "note": "Athaliah destroys the royal offspring after her son’s death."
+                  "note": "After her son’s death Athaliah rises and וַתְּדַבֵּר all the royal seed; 22:11 calls them “the king’s sons who were being put to death”, from among whom Joash was stolen away."
+                },
+                {
+                  "ref": "2Ki.11.1",
+                  "note": "The parallel: וַתְּאַבֵּד “and she destroyed” all the royal seed."
                 }
               ],
               "cognate_ids": [
@@ -1226,7 +1230,7 @@
           "url": "https://www.laneslexicon.com/word/%D8%AF%D8%A8%D8%B1/n11989"
         }
       ],
-      "note": "دَبَرَ القَوْمُ “the people perished”, its verbal noun دَبَار set beside دَمَار “destruction”, and the curse عَلَيْهِ الدَّبَارُ “perdition befall him”; دَبَرَ بِهِ “he took it away, caused it to cease”. Lane derives it from going away with the back turned, not from speech. It is named for the plague that destroys and the Piel “destroy” (2Ch 22:10)."
+      "note": "دَبَرَ القَوْمُ “the people perished”, its verbal noun دَبَار set beside دَمَار “destruction”, and the curse عَلَيْهِ الدَّبَارُ “perdition befall him”; دَبَرَ بِهِ “he took it away, caused it to cease”. Lane derives it from going away with the back turned, not from speech. It is named for the plague that destroys and for the Piel of 2Ch 22:10, where Athaliah’s will takes away the royal seed."
     },
     {
       "id": "ar-dabr-bees",
@@ -1418,7 +1422,7 @@
       "translit": "duppuru",
       "gloss": "(D) move away, withdraw, flee; remove",
       "relation": "possible",
-      "note": "A D-stem verb of removing or going away, compared here with the Piel “destroy” (2Ch 22:10); the link is a comparison of sense and consonants, not shown by a text.",
+      "note": "A D-stem verb of removing or going away, compared here with the Piel of 2Ch 22:10 (Athaliah does away with the royal seed); the link is a comparison of sense and consonants, not shown by a text.",
       "evidence": [
         {
           "source": "oracc",
@@ -1524,5 +1528,5 @@
       ]
     }
   ],
-  "note": "Proper names and the redirect m.ak.ah are omitted. מִדְבָּר’s two meanings share the spelling inventories d.ai.ao/ap; only d.ai.ap is assigned. דֹּבֶר and דִּבֵּר share the three indexed forms in Isa 5:17, Jer 5:13 and Mic 2:12: d.ai.ad is assigned once and the speech noun is left without a BDB key rather than counting that same inventory twice. The support totals are therefore not counts of the separate meanings. The Pual in Sng 8:8 and the destructive Piel in 2Ch 22:10 are included after checking the source even though the brief’s stem summary omits them. The speech and leading families stay together without a reconstructed semantic bridge; so do pestilence, bees and rafts. The sanctuary is tied to speech by scripture’s own account of the speaking from above the cover (Exo 25:22, Num 7:89). Lane’s دبر section is in the vendored JSONL under the mis-keyed root دبخ; the cited pp. 844–845 were also checked in the page scan (https://www.thelastdialogue.org/wp-content/uploads/2020/09/Lanes-Lexicon-Arabic-Dictionary-Root-Word-%D8%AF-Dal.pdf, PDF pp. 6–7) and its linked transcription. Akkadian dabābu is not assumed cognate merely because it means “speak”; the consonants differ. The brief’s Greek-loan leads are not accepted without an etymology."
+  "note": "Proper names and the redirect m.ak.ah are omitted. מִדְבָּר’s two meanings share the spelling inventories d.ai.ao/ap; only d.ai.ap is assigned. דֹּבֶר and דִּבֵּר share the three indexed forms in Isa 5:17, Jer 5:13 and Mic 2:12: d.ai.ad is assigned once and the speech noun is left without a BDB key rather than counting that same inventory twice. The support totals are therefore not counts of the separate meanings. The Pual in Sng 8:8 and the Piel of 2Ch 22:10 (Athaliah imposing her will on the royal seed) are included after checking the source even though the brief’s stem summary omits them. The speech and leading families stay together without a reconstructed semantic bridge; so do pestilence, bees and rafts. The sanctuary is tied to speech by scripture’s own account of the speaking from above the cover (Exo 25:22, Num 7:89). Lane’s دبر section is in the vendored JSONL under the mis-keyed root دبخ; the cited pp. 844–845 were also checked in the page scan (https://www.thelastdialogue.org/wp-content/uploads/2020/09/Lanes-Lexicon-Arabic-Dictionary-Root-Word-%D8%AF-Dal.pdf, PDF pp. 6–7) and its linked transcription. Akkadian dabābu is not assumed cognate merely because it means “speak”; the consonants differ. The brief’s Greek-loan leads are not accepted without an etymology."
 }
