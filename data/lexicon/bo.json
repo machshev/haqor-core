@@ -42,6 +42,12 @@
                   "ref": "1Sa.21.16",
                   "role": "defining"
                 }
+              ],
+              "cognate_ids": [
+                "akk-bau",
+                "uga-ba",
+                "phn-ba",
+                "gez-boa"
               ]
             },
             {
@@ -89,6 +95,10 @@
                   "ref": "Gen.30.3",
                   "role": "defining"
                 }
+              ],
+              "cognate_ids": [
+                "gez-boa",
+                "ar-baaa"
               ]
             }
           ]
@@ -116,6 +126,10 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "gez-abea",
+            "ar-bawwaa"
           ]
         },
         {
@@ -141,6 +155,9 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "gez-abea"
           ]
         }
       ],
@@ -260,6 +277,9 @@
               "ref": "Jer.38.14",
               "role": "defining"
             }
+          ],
+          "cognate_ids": [
+            "gez-baat"
           ]
         },
         {
@@ -271,6 +291,9 @@
               "role": "defining",
               "note": "The people come as a people’s gathering comes."
             }
+          ],
+          "cognate_ids": [
+            "gez-baat"
           ]
         },
         {
@@ -311,7 +334,10 @@
           ]
         }
       ],
-      "gender": "f"
+      "gender": "f",
+      "cognate_ids": [
+        "gez-baat"
+      ]
     },
     {
       "lemma": "מוֹבָא",
@@ -333,7 +359,10 @@
           ]
         }
       ],
-      "gender": "m"
+      "gender": "m",
+      "cognate_ids": [
+        "gez-baat"
+      ]
     }
   ],
   "cognates": [
@@ -351,6 +380,159 @@
         }
       ],
       "note": "Arabic attests returning or coming back, a narrower movement sense than Hebrew’s ordinary coming and entering."
+    },
+    {
+      "id": "akk-bau",
+      "lang": "akk",
+      "form": "bâʾu",
+      "translit": "bâʾu",
+      "gloss": "go along, pass by, move through; come up to, enter; (causative) make pass, make flow over",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000052930, bâʾu [go along] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000030 bwʾ [come], AKK001419 bâʾu [go along]"
+        }
+      ]
+    },
+    {
+      "id": "uga-ba",
+      "lang": "uga",
+      "form": "𐎁𐎀",
+      "translit": "bʾ",
+      "gloss": "come, enter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 53, bwʾ “come, enter”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000030 bwʾ [come], UGC001105 bʾ [enter]"
+        }
+      ]
+    },
+    {
+      "id": "phn-ba",
+      "lang": "phn",
+      "form": "𐤁𐤀",
+      "translit": "bʾ",
+      "gloss": "come",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤁𐤀; Punic 𐤁𐤀",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A4%81%F0%90%A4%80"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000030 bwʾ [come], PUN000291 bʾ [come]"
+        }
+      ]
+    },
+    {
+      "id": "gez-boa",
+      "lang": "gez",
+      "form": "ቦአ",
+      "translit": "boʾa",
+      "gloss": "go in, enter; go in to a woman; enter a community, be admitted",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 524–525, ቦአ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n285"
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "p. 53, bwʾ “come, enter”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000030 bwʾ [come], GEZ001246 bwʾ [enter]"
+        }
+      ],
+      "note": "Ge’ez uses the verb as Hebrew does with a woman as object (Dillmann cites Gen. 16:2 and 19:31 in the Ge’ez Bible)."
+    },
+    {
+      "id": "gez-abea",
+      "lang": "gez",
+      "form": "አብአ",
+      "translit": "ʾabʾa",
+      "gloss": "(causative) bring in, lead in; carry in, bring (gifts, sacrifices); (ተበውአ) be brought in",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 525–526, አብአ and ተበውአ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n286"
+        }
+      ]
+    },
+    {
+      "id": "gez-baat",
+      "lang": "gez",
+      "form": "በአት",
+      "translit": "baʾat",
+      "gloss": "entering, entrance, way in; cave",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 526, በአት",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n286"
+        }
+      ]
+    },
+    {
+      "id": "ar-bawwaa",
+      "lang": "ar",
+      "form": "بَوَّأَ",
+      "translit": "bawwaʾa",
+      "gloss": "lodge someone in an abode, settle someone in a place",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 271, root بوأ, بوّأهُ مَنْزِلًا (n3480)"
+        }
+      ],
+      "note": "The causative brings someone into a place to live, near the hiphil “bring in”."
+    },
+    {
+      "id": "ar-baaa",
+      "lang": "ar",
+      "form": "بَآءَةٌ",
+      "translit": "bāʾa",
+      "gloss": "marriage; conjugal union",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 272, root بوأ, بَآءَةٌ (n3488)"
+        }
+      ],
+      "note": "Lane’s sources derive it from “place of abode”, where the husband lodges his wife."
+    },
+    {
+      "id": "ar-mabaa",
+      "lang": "ar",
+      "form": "مَبَآءَةٌ",
+      "translit": "mabāʾa",
+      "gloss": "place camels are brought back to lie down; abode",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 272, root بوأ, مَبَآءَةٌ (n3493)"
+        }
+      ]
     }
   ],
   "doctrine": [],
