@@ -198,6 +198,15 @@ Source checks for Matthew 25:
 
 - In 25:1 both the bridegroom and the bride are explicit source words and
   are retained.
+- In 25:8 the third-person dative resumes the lamps, not their first-person
+  possessors. "They—our lamps—have gone out" preserves both references.
+- In 25:9 lma with an imperfect expresses apprehension, rendered "for fear",
+  rather than a question asking why. See [CAL's lmh entry, sense 2](https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c).
+  The negative and the two recipient phrases remain separately linked.
+- In 25:15 the repeated anash anash is distributive, "each person". The
+  institution compound beth asire is retained as "in prison" in 25:36,
+  25:39, 25:43 and 25:44; its two nouns do not separately mean "in" and
+  "prison".
 - The differently pointed past auxiliary is first person in 25:24 ("I knew")
   and second person in 25:26 ("you knew"). It is linked with the knowing
   predicate, rather than with the following description or reaping predicate.
