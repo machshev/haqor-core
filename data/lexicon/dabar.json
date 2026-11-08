@@ -113,7 +113,10 @@
             ]
           }
         ]
-      }
+      },
+      "cognate_ids": [
+        "phn-dbr-word"
+      ]
     },
     {
       "lemma": "דָּבַר",
@@ -144,6 +147,9 @@
                   "ref": "Zep.3.13",
                   "role": "defining"
                 }
+              ],
+              "cognate_ids": [
+                "phn-dbr-say"
               ]
             },
             {
@@ -155,6 +161,9 @@
                   "role": "defining",
                   "note": "Athaliah destroys the royal offspring after her son’s death."
                 }
+              ],
+              "cognate_ids": [
+                "akk-duppuru"
               ]
             }
           ]
@@ -193,6 +202,9 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "phn-dbr-say"
           ]
         },
         {
@@ -218,6 +230,9 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "phn-dbr-say"
           ]
         },
         {
@@ -235,6 +250,9 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "phn-dbr-say"
           ]
         },
         {
@@ -260,6 +278,9 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "phn-dbr-say"
           ]
         },
         {
@@ -281,6 +302,10 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "arc-dbr-lead",
+            "uga-dbr-administer"
           ]
         }
       ],
@@ -338,6 +363,10 @@
               "ref": "Gen.14.6",
               "role": "defining"
             }
+          ],
+          "cognate_ids": [
+            "akk-madbaru",
+            "uga-mdbr"
           ]
         },
         {
@@ -349,6 +378,9 @@
               "role": "defining",
               "note": "Your lips are like scarlet thread, and your מִדְבָּר is lovely."
             }
+          ],
+          "cognate_ids": [
+            "phn-dbr-say"
           ]
         }
       ],
@@ -399,7 +431,10 @@
         }
       ],
       "gender": "m",
-      "summary": "A destructive outbreak affecting people or animals. No derivation from the divine word or from speaking is established by these occurrences."
+      "summary": "A destructive outbreak affecting people or animals. No derivation from the divine word or from speaking is established by these occurrences.",
+      "cognate_ids": [
+        "uga-dbr-plague"
+      ]
     },
     {
       "lemma": "דְּבִיר",
@@ -433,7 +468,8 @@
       "gender": "m",
       "summary": "The inner room of the temple where the ark is placed. Arabic “rear” supplies a possible comparison for its position, but the room is defined by the temple passages, not by a proposed derivation.",
       "cognate_ids": [
-        "ar-dabr-rear"
+        "ar-dabr-rear",
+        "phn-dbr-cella"
       ]
     },
     {
@@ -486,7 +522,10 @@
           ]
         }
       ],
-      "gender": "f"
+      "gender": "f",
+      "cognate_ids": [
+        "phn-dbr-word"
+      ]
     },
     {
       "lemma": "דְּבוֹרָה",
@@ -522,7 +561,8 @@
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-dabr-bees"
+        "ar-dabr-bees",
+        "arc-dabbara-bees"
       ],
       "summary": "A bee, often in a swarm. Its Arabic counterpart supports the insect sense; it does not establish a derivation from buzzing or speech."
     },
@@ -543,6 +583,11 @@
               "role": "defining",
               "note": "Like a flock within its דֹּבֶר; gathering sheep fixes the pastoral setting."
             }
+          ],
+          "cognate_ids": [
+            "arc-dabra",
+            "gez-dabr",
+            "uga-dbr-pasture"
           ]
         },
         {
@@ -577,7 +622,10 @@
           ]
         }
       ],
-      "gender": "m"
+      "gender": "m",
+      "cognate_ids": [
+        "phn-dbr-word"
+      ]
     },
     {
       "lemma": "דֹּבְרוֹת",
@@ -622,7 +670,10 @@
           ]
         }
       ],
-      "gender": "f"
+      "gender": "f",
+      "cognate_ids": [
+        "phn-dbr-word"
+      ]
     },
     {
       "lemma": "דִּבְרָה",
@@ -650,7 +701,10 @@
       ],
       "lang": "arc",
       "root": "דברה",
-      "gender": "f"
+      "gender": "f",
+      "cognate_ids": [
+        "phn-dbr-word"
+      ]
     },
     {
       "lemma": "דְּבַר",
@@ -767,7 +821,11 @@
           ]
         }
       ],
-      "lang": "syc"
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-dbr-lead",
+        "uga-dbr-administer"
+      ]
     },
     {
       "lemma": "מַדְבְּרָא",
@@ -795,7 +853,11 @@
         }
       ],
       "lang": "syc",
-      "gender": "m"
+      "gender": "m",
+      "cognate_ids": [
+        "akk-madbaru",
+        "uga-mdbr"
+      ]
     },
     {
       "lemma": "דַּבְרָא",
@@ -823,7 +885,10 @@
         }
       ],
       "lang": "syc",
-      "gender": "m"
+      "gender": "m",
+      "cognate_ids": [
+        "arc-dabra"
+      ]
     },
     {
       "lemma": "דּוּבָּרָא",
@@ -862,7 +927,10 @@
         }
       ],
       "lang": "syc",
-      "gender": "m"
+      "gender": "m",
+      "cognate_ids": [
+        "arc-dbr-lead"
+      ]
     },
     {
       "lemma": "מַדְבְּרָיָא",
@@ -881,7 +949,11 @@
           ]
         }
       ],
-      "lang": "syc"
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-madbaru",
+        "uga-mdbr"
+      ]
     },
     {
       "lemma": "מְדַבְּרָנָא",
@@ -911,7 +983,8 @@
       "lang": "syc",
       "gender": "m",
       "cognate_ids": [
-        "ar-dabbara"
+        "ar-dabbara",
+        "uga-udbr"
       ]
     },
     {
@@ -942,7 +1015,8 @@
       "lang": "syc",
       "gender": "f",
       "cognate_ids": [
-        "ar-dabbara"
+        "ar-dabbara",
+        "uga-udbr"
       ]
     }
   ],
@@ -993,6 +1067,253 @@
         }
       ],
       "note": "A possible comparison for דְּבִיר as the room at the rear; the shared spelling does not establish the derivation."
+    },
+    {
+      "id": "phn-dbr-say",
+      "lang": "phn",
+      "form": "𐤃𐤁𐤓",
+      "translit": "dbr",
+      "gloss": "say; tell (someone to do something)",
+      "relation": "cognate",
+      "note": "The Eshmunazor inscription opens “King Eshmunazor, King of the Sidonians, says” (KAI 14.2–3), and warns “even if people tell you <to do it>, do not listen to their words” (KAI 14.6), where the verb and the noun stand side by side. The Punic speeches in Plautus’ Poenulus use it as “I am told”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 144, D-B-R I"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000043 dbr [speak], PUN000540 dbr [say]"
+        }
+      ]
+    },
+    {
+      "id": "phn-dbr-word",
+      "lang": "phn",
+      "form": "𐤃𐤁𐤓",
+      "translit": "dbr",
+      "gloss": "thing, matter, act; word, promise; (pl.) affairs, history; statement",
+      "relation": "cognate",
+      "note": "The same spread as דָּבָר from word to thing: “that act would be an abomination to Astarte” (KAI 13.5–6), “trust in my word” (KAI 50.5), and “the book of the affairs” of a family (KAI 124), as דִּבְרֵי הַיָּמִים is a book of the affairs of the days.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 144–145, DBR II"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000998 dbr [thing], PUN000541 dbr [thing]"
+        }
+      ]
+    },
+    {
+      "id": "phn-dbr-cella",
+      "lang": "phn",
+      "form": "𐤃𐤁𐤓",
+      "translit": "dbr",
+      "gloss": "cella of a temple (?)",
+      "relation": "possible",
+      "note": "One Neo-Punic text: “the dbr of the holy place caught fire” (KAI 173.5). Krahmalkov compares דְּבִיר but marks the translation problematic, since Phoenician has another term for a temple’s cella.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 145, DBR III"
+        }
+      ]
+    },
+    {
+      "id": "uga-dbr-pasture",
+      "lang": "uga",
+      "form": "𐎄𐎁𐎗",
+      "translit": "dbr",
+      "gloss": "pasture",
+      "relation": "cognate",
+      "note": "KTU 1.6 II 20 (cf. 1.5 V 18), where dbr stands parallel to šd “field”; Segert sets it beside Hebrew דֹּבֶר.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 183, glossary dbr; KTU 1.6 II 20, 1.5 V 18",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n210",
+          "note": "\"dbr 1.6:II:20 = 88.55 'pasture' (cf. 1.5:V:18) (H. dåbr-)\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-mdbr",
+      "lang": "uga",
+      "form": "𐎎𐎄𐎁𐎗",
+      "translit": "mdbr",
+      "gloss": "desert, wilderness",
+      "relation": "cognate",
+      "note": "The same m-noun as מִדְבָּר.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎎𐎄𐎁𐎗 (mdbr)"
+        }
+      ]
+    },
+    {
+      "id": "uga-dbr-administer",
+      "lang": "uga",
+      "form": "𐎄𐎁𐎗",
+      "translit": "dbr",
+      "gloss": "(D?) administer (?), or flee (?)",
+      "relation": "possible",
+      "note": "One form, tdbr in KTU 1.16 VI 43. Segert offers “to administer”, comparing the Syriac Pael and Arabic stem II, or “to flee”, comparing Arabic stem I; he gives no “speak”. Anderson and Moser file the verb under dbr “speak”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 183, glossary /d-b-r/; KTU 1.16 VI 43",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n210",
+          "note": "\"tdbr D? 1.16:VI:43 = 85.1 'to administer'(?) (cf. Syr. d-b-r Pa., Arab. d-b-r II) or 'to flee'(?) (cf. Arab. d-b-r I)\"."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000043 dbr [speak], UGC001346 and UGC001347 dbr [D]"
+        }
+      ]
+    },
+    {
+      "id": "uga-udbr",
+      "lang": "uga",
+      "form": "𐎜𐎄𐎁𐎗",
+      "translit": "ủdbr",
+      "gloss": "manager, administrator (for someone else); partner, leaseholder",
+      "relation": "possible",
+      "note": "A noun of management, beside the Syriac family of guiding and administration.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎜𐎄𐎁𐎗 (ủdbr)"
+        }
+      ]
+    },
+    {
+      "id": "uga-dbr-plague",
+      "lang": "uga",
+      "form": "𐎄𐎁𐎗",
+      "translit": "dbr",
+      "gloss": "plague",
+      "relation": "possible",
+      "note": "Listed by Anderson and Moser without a text reference. Segert reads dbr in KTU 1.5 V 18 and 1.6 II 20 as “pasture”; which texts are meant by “plague” has not been checked.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000042 dbr [plague], UGC001349 dbr [plague]"
+        }
+      ]
+    },
+    {
+      "id": "akk-madbaru",
+      "lang": "akk",
+      "form": "madbaru",
+      "translit": "madbaru",
+      "gloss": "steppe, desert",
+      "relation": "cognate",
+      "note": "The same m-noun as מִדְבָּר. Oracc attests it 287 times, all in Middle and Neo-Assyrian texts.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000047490, madbaru [steppe] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000047490.html"
+        }
+      ]
+    },
+    {
+      "id": "akk-duppuru",
+      "lang": "akk",
+      "form": "duppuru",
+      "translit": "duppuru",
+      "gloss": "(D) move away, withdraw, flee; remove",
+      "relation": "possible",
+      "note": "A D-stem verb of removing or going away, compared here with the Piel “destroy” (2Ch 22:10); the link is a comparison of sense and consonants, not shown by a text.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000066670, duppuru [move away] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000066670.html"
+        }
+      ]
+    },
+    {
+      "id": "gez-debr",
+      "lang": "gez",
+      "form": "ደብር",
+      "translit": "däbr",
+      "gloss": "mountain, hill country; boundary, territory; monastery",
+      "relation": "possible",
+      "note": "Dillmann sets it beside Arabic دُبْر “back”, named from rising up, and takes the “be behind” meanings of Arabic and Hebrew dbr as secondary.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 1102, ደብር",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n574"
+        }
+      ]
+    },
+    {
+      "id": "gez-dabr",
+      "lang": "gez",
+      "form": "ዳብር",
+      "translit": "dabr",
+      "gloss": "village, territory; perhaps pasture",
+      "relation": "possible",
+      "note": "It renders ἔπαυλις (Jdg 10:4). Dillmann compares דֹּבֶר “pasture”, but finds the derivation difficult, since the root is otherwise unused in Ge’ez.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 1102, ዳብር and ደብር",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n574"
+        }
+      ]
+    },
+    {
+      "id": "arc-dbr-lead",
+      "lang": "arc",
+      "form": "דְּבַר",
+      "translit": "dəḇar",
+      "gloss": "seize, take, lead, drive; conduct oneself; (Pael) lead, drive",
+      "relation": "cognate",
+      "note": "Targum Onqelos uses it for Hebrew לקח “take” (Gen 19:15) and נהג “drive” (Gen 31:18; the Pael, Exo 3:1), the same leading as the Peshitta’s.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דְּבַר",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%93%D6%B0%D6%BC%D7%91%D6%B7%D7%A8.1"
+        }
+      ]
+    },
+    {
+      "id": "arc-dabra",
+      "lang": "arc",
+      "form": "דַּבְרָא",
+      "translit": "daḇrā",
+      "gloss": "pasture, field",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דַּבְרָא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%93%D6%B7%D6%BC%D7%91%D6%B0%D7%A8%D6%B8%D7%90.1",
+          "note": "\"pasture, field. Taan. 4b. Ab. Zar. 68b\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-dabbara-bees",
+      "lang": "arc",
+      "form": "דַּבָּרָא",
+      "translit": "dabbārā",
+      "gloss": "(pl.) bees",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דַּבָּרָא II",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%93%D6%B7%D6%BC%D7%91%D6%B8%D6%BC%D7%A8%D6%B8%D7%90%20II.1"
+        }
+      ]
     }
   ],
   "doctrine": [
