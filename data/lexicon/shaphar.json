@@ -1,0 +1,704 @@
+{
+  "id": "shaphar",
+  "root": "שפר",
+  "status": "draft",
+  "updated": "2026-11-08",
+  "tags": [
+    "beauty",
+    "pleasing",
+    "dawn",
+    "horn",
+    "worship",
+    "war"
+  ],
+  "gloss": "be fair, pleasing; brightness; the shofar",
+  "summary": "The root describes what is fair and pleasing: the inheritance that is beautiful to its owner, words of beauty, the heavens made fair, and in scripture's Aramaic what seems good to a king and the bright first light of dawn. In the Peshitta it is the common word for pleasing God and others, and for what is good or beautiful. The shofar, the ram's horn blown as a signal, in war, at Sinai and at the feasts, shares the spelling, but its link to the root's sense is not established.",
+  "words": [
+    {
+      "lemma": "שׁוֹפָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "shofar, ram's horn",
+      "bdb": [
+        "v.fm.ah"
+      ],
+      "cognate_ids": [
+        "akk-sapparu"
+      ],
+      "summary": "A horn, made from a ram's horn, blown to give a signal. It is the root's commonest word, but how it relates to 'be fair, pleasing' is not clear from the text; the Akkadian word for a wild ram has a similar form but does not match the root's first letter regularly.",
+      "senses": [
+        {
+          "id": "shofar-horn",
+          "gloss": "ram's horn",
+          "definition": "The instrument itself, a horn taken from a ram and carried by priests.",
+          "evidence": [
+            {
+              "ref": "Jos.6.4",
+              "role": "defining",
+              "note": "Seven priests carry seven שׁוֹפְרוֹת הַיּוֹבְלִים, rams' horns, before the ark."
+            },
+            {
+              "ref": "Jos.6.13"
+            }
+          ]
+        },
+        {
+          "id": "shofar-alarm",
+          "gloss": "signal of war and alarm",
+          "definition": "Blown to summon fighters, to warn of an enemy's approach, or to call off a pursuit.",
+          "evidence": [
+            {
+              "ref": "Jdg.3.27",
+              "role": "defining",
+              "note": "Ehud blows the shofar and Israel goes down after him."
+            },
+            {
+              "ref": "Ezk.33.3",
+              "role": "defining",
+              "note": "The watchman sees the sword coming and blows the shofar to warn the people."
+            },
+            {
+              "ref": "Jer.4.5"
+            },
+            {
+              "ref": "Amo.3.6",
+              "note": "Is a shofar blown in a city and the people not tremble?"
+            },
+            {
+              "ref": "2Sa.2.28",
+              "note": "Joab blows the shofar and the people stop pursuing Israel."
+            }
+          ]
+        },
+        {
+          "id": "shofar-proclamation",
+          "gloss": "signal of proclamation",
+          "definition": "Blown to announce a king or a public declaration.",
+          "evidence": [
+            {
+              "ref": "1Ki.1.34",
+              "role": "defining",
+              "note": "Blow the shofar and say, Long live King Solomon!"
+            },
+            {
+              "ref": "2Sa.15.10",
+              "role": "defining",
+              "note": "At the sound of the shofar, say, Absalom reigns in Hebron."
+            },
+            {
+              "ref": "1Ki.1.39"
+            },
+            {
+              "ref": "2Ki.9.13"
+            }
+          ]
+        },
+        {
+          "id": "shofar-sinai",
+          "gloss": "the sound at Sinai",
+          "definition": "The sound of a shofar, growing louder and louder, at Yahweh's descent on Sinai.",
+          "evidence": [
+            {
+              "ref": "Exo.19.16",
+              "role": "defining",
+              "note": "Thunder, lightning, a heavy cloud and קֹל שֹׁפָר חָזָק מְאֹד; all the people tremble."
+            },
+            {
+              "ref": "Exo.19.19"
+            },
+            {
+              "ref": "Exo.20.18"
+            }
+          ]
+        },
+        {
+          "id": "shofar-worship",
+          "gloss": "horn of feasts and praise",
+          "definition": "Blown at the appointed times and in praise of Yahweh.",
+          "evidence": [
+            {
+              "ref": "Lev.25.9",
+              "role": "defining",
+              "note": "The shofar is sounded through the land on the Day of Atonement of the fiftieth year."
+            },
+            {
+              "ref": "Psa.81.4",
+              "role": "defining",
+              "note": "Blow the shofar at the new moon, at the full moon, on our feast day."
+            },
+            {
+              "ref": "2Sa.6.15",
+              "note": "David brings up the ark with shouting and the sound of the shofar."
+            },
+            {
+              "ref": "Psa.98.6"
+            },
+            {
+              "ref": "Psa.150.3"
+            }
+          ]
+        },
+        {
+          "id": "shofar-day-of-yahweh",
+          "gloss": "horn of Yahweh's day",
+          "definition": "The horn that announces Yahweh's day of judgment, and that gathers the scattered to worship him.",
+          "evidence": [
+            {
+              "ref": "Jol.2.1",
+              "role": "defining",
+              "note": "Blow the shofar in Zion, for the day of Yahweh is coming."
+            },
+            {
+              "ref": "Isa.27.13",
+              "role": "defining",
+              "note": "A great shofar is blown, and the lost in Assyria and the outcasts in Egypt come and worship Yahweh in Jerusalem."
+            },
+            {
+              "ref": "Zep.1.16"
+            },
+            {
+              "ref": "Zec.9.14",
+              "note": "Adonai Yahweh himself blows the shofar."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σάλπιγξ",
+          "gloss": "trumpet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.27.13, שׁוֹפָר → σάλπιγξ"
+            },
+            {
+              "ref": "Mat.24.31",
+              "note": "The Son of Man sends his angels with a great trumpet to gather his chosen, as the great shofar gathers the scattered in Isa 27:13."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "קוֹל שׁוֹפָר",
+            "gloss": "the sound of the shofar",
+            "evidence": [
+              {
+                "ref": "Exo.19.16"
+              },
+              {
+                "ref": "2Sa.15.10"
+              },
+              {
+                "ref": "Jer.4.19"
+              }
+            ]
+          },
+          {
+            "phrase": "תָּקַע בַּשּׁוֹפָר",
+            "gloss": "blow the shofar",
+            "evidence": [
+              {
+                "ref": "Jos.6.4"
+              },
+              {
+                "ref": "Jdg.3.27"
+              },
+              {
+                "ref": "Jol.2.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שֶׁפֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "beauty",
+      "bdb": [
+        "v.fm.ab"
+      ],
+      "summary": "Its one use describes words. BDB lists the same three tokens under this noun and under the place name Mount Shepher (Num 33:23–24), so its count includes the mountain's two.",
+      "senses": [
+        {
+          "id": "shepher-beauty",
+          "gloss": "beauty, fairness",
+          "definition": "What is fair or pleasing; here, of speech.",
+          "kin": [
+            "shaphar-pleasing"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.49.21",
+              "role": "defining",
+              "note": "Naphtali הַנֹּתֵן אִמְרֵי־שָׁפֶר, who gives words of beauty."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁפְרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "fairness, clearness",
+      "bdb": [
+        "v.fm.ad"
+      ],
+      "cognate_ids": [
+        "ar-asfara"
+      ],
+      "summary": "Its one use describes the sky. The midwife's name in Exo 1:15 is spelled the same; BDB lists those tokens under both, and her name has its own entry.",
+      "senses": [
+        {
+          "id": "shiphrah-fairness",
+          "gloss": "fairness, clearness of the sky",
+          "definition": "The fair, clear state of the heavens, brought about by God's breath.",
+          "kin": [
+            "shaphar-pleasing"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.26.13",
+              "role": "defining",
+              "note": "בְּרוּחוֹ שָׁמַיִם שִׁפְרָה, by his breath the heavens are fairness; set beside his hand piercing the fleeing serpent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁפַר",
+      "pos": "verb",
+      "gloss": "be pleasing, be fair",
+      "bdb": [
+        "v.fm.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be pleasing, beautiful",
+          "senses": [
+            {
+              "id": "shaphar-pleasing",
+              "gloss": "be pleasing, beautiful to someone",
+              "definition": "Be fair in someone's eyes; the one use describes an inheritance that delights its owner.",
+              "evidence": [
+                {
+                  "ref": "Psa.16.6",
+                  "role": "defining",
+                  "note": "נַחֲלָת שָׁפְרָה עָלָי, the inheritance is beautiful to me, parallel to the lines fallen in pleasant places (בַּנְּעִמִים)."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָעִים",
+            "note": "The lines have fallen to me in pleasant places; the inheritance is beautiful to me.",
+            "evidence": [
+              {
+                "ref": "Psa.16.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שַׁפְרִיר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "royal canopy",
+      "bdb": [
+        "v.fm.ai"
+      ],
+      "summary": "Its one use is the qere of Jer 43:10 (written שׁפרורו). It is spread over a king's throne, so it is some royal canopy or carpet; whether it was named for its splendour, from the root's 'fair', is not clear.",
+      "senses": [
+        {
+          "gloss": "royal canopy",
+          "definition": "Something Nebuchadnezzar spreads over the stones where his throne is set.",
+          "evidence": [
+            {
+              "ref": "Jer.43.10",
+              "role": "defining",
+              "note": "He will set his throne over these stones, and spread his שַׁפְרִיר over them."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁפַר",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "seem good, be pleasing",
+      "bdb": [
+        "xv.bd.aa"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "seem good, be pleasing",
+          "senses": [
+            {
+              "id": "arc-shephar-pleasing",
+              "gloss": "seem good to someone",
+              "definition": "Be pleasing or acceptable before someone, of a plan or a decision.",
+              "kin": [
+                "shaphar-pleasing"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.3.32",
+                  "role": "defining",
+                  "note": "It has seemed good before me to declare the signs the Most High has done."
+                },
+                {
+                  "ref": "Dan.6.2",
+                  "role": "defining",
+                  "note": "It seemed good before Darius to set 120 satraps over the kingdom."
+                },
+                {
+                  "ref": "Dan.4.24",
+                  "note": "May my counsel be pleasing to you."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁפַרְפָּר",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dawn, first light",
+      "bdb": [
+        "xv.bd.ac"
+      ],
+      "cognate_ids": [
+        "ar-asfara"
+      ],
+      "summary": "Formed by repeating the root's last two letters. Its one use sets it beside נָגְהָא, brightness.",
+      "senses": [
+        {
+          "id": "arc-dawn",
+          "gloss": "dawn, first light",
+          "definition": "The first brightness of the day.",
+          "evidence": [
+            {
+              "ref": "Dan.6.20",
+              "role": "defining",
+              "note": "בִּשְׁפַּרְפָּרָא יְקוּם בְּנָגְהָא, the king rose at first light, at daybreak, and hurried to the lions' den."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁפַר",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "please, be pleasing",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "please, be pleasing",
+          "senses": [
+            {
+              "id": "syc-please-god",
+              "gloss": "please God",
+              "definition": "Be pleasing to God, as the faithful are and as the Son always is.",
+              "kin": [
+                "arc-shephar-pleasing"
+              ],
+              "evidence": [
+                {
+                  "ref": "Heb.11.5",
+                  "role": "defining",
+                  "note": "Before Enoch was taken it was testified of him that he pleased God."
+                },
+                {
+                  "ref": "Heb.11.6",
+                  "role": "defining",
+                  "note": "Without faith a man cannot please God."
+                },
+                {
+                  "ref": "Jhn.8.29",
+                  "role": "defining",
+                  "note": "I always do what pleases him."
+                },
+                {
+                  "ref": "Rom.8.8"
+                },
+                {
+                  "ref": "1Th.4.1"
+                },
+                {
+                  "ref": "Heb.13.16"
+                }
+              ]
+            },
+            {
+              "id": "syc-please-people",
+              "gloss": "please someone",
+              "definition": "Be pleasing to another person, or seek to be.",
+              "kin": [
+                "arc-shephar-pleasing"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mrk.6.22",
+                  "role": "defining",
+                  "note": "Herodias' daughter danced and pleased Herod and his guests."
+                },
+                {
+                  "ref": "Gal.1.10",
+                  "role": "defining",
+                  "note": "If I were still pleasing men I would not be a servant of the Messiah."
+                },
+                {
+                  "ref": "Rom.15.2"
+                },
+                {
+                  "ref": "Act.12.3",
+                  "note": "Herod saw that it pleased the Jews."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁפִּירָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "beautiful, good; well",
+      "senses": [
+        {
+          "gloss": "good, fine",
+          "definition": "Good of its kind, or fitting.",
+          "kin": [
+            "shepher-beauty"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.7.17",
+              "role": "defining",
+              "note": "Every good tree bears good fruit."
+            },
+            {
+              "ref": "Mrk.9.50",
+              "note": "Salt is good."
+            },
+            {
+              "ref": "Mrk.9.5",
+              "note": "It is good for us to be here."
+            }
+          ]
+        },
+        {
+          "gloss": "beautiful, fair to look at",
+          "definition": "Fair in appearance.",
+          "kin": [
+            "shepher-beauty"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.23.27",
+              "role": "defining",
+              "note": "Whitewashed tombs that appear beautiful outside but are full of dead men's bones."
+            }
+          ]
+        },
+        {
+          "gloss": "well (adverb)",
+          "definition": "Rightly, aptly.",
+          "evidence": [
+            {
+              "ref": "Mrk.12.28",
+              "role": "defining",
+              "note": "He saw that Jesus had answered them well."
+            },
+            {
+              "ref": "Mrk.7.37",
+              "note": "He has done all things well."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שׁוּפְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "beauty",
+      "senses": [
+        {
+          "gloss": "beauty",
+          "definition": "Comeliness of appearance, which passes away.",
+          "kin": [
+            "shepher-beauty"
+          ],
+          "evidence": [
+            {
+              "ref": "Jas.1.11",
+              "role": "defining",
+              "note": "The flower falls and the beauty of its appearance perishes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁפְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dawn, early morning",
+      "cognate_ids": [
+        "ar-asfara"
+      ],
+      "senses": [
+        {
+          "gloss": "dawn, early morning",
+          "definition": "The first light of the day.",
+          "kin": [
+            "arc-dawn"
+          ],
+          "evidence": [
+            {
+              "ref": "Mrk.16.2",
+              "role": "defining",
+              "note": "Early on the first day of the week they came to the tomb as the sun rose."
+            },
+            {
+              "ref": "Mrk.16.9",
+              "note": "He rose early on the first day of the week."
+            },
+            {
+              "ref": "Luk.24.1"
+            },
+            {
+              "ref": "Act.5.21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁיפּוּרָא",
+      "lang": "syc",
+      "root": "שיפורא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "trumpet",
+      "summary": "The Peshitta's form of שׁוֹפָר, for the trumpet of the gathering and of the visions of Revelation.",
+      "senses": [
+        {
+          "gloss": "trumpet",
+          "definition": "The horn blown at the gathering of the chosen and by the angels of Revelation.",
+          "kin": [
+            "shofar-day-of-yahweh"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.24.31",
+              "role": "defining",
+              "note": "He sends his angels with a great trumpet, and they gather his chosen from the four winds."
+            },
+            {
+              "ref": "Rev.8.2",
+              "role": "defining",
+              "note": "Seven trumpets are given to the seven angels who stand before God."
+            },
+            {
+              "ref": "Rev.1.10",
+              "note": "A great voice like a trumpet."
+            },
+            {
+              "ref": "Rev.4.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-asfara",
+      "lang": "ar",
+      "form": "أَسْفَرَ",
+      "translit": "ʾasfara",
+      "gloss": "(of the dawn) shine",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Form IV of سفر: the dawn shone clearly; سَفِير is the whiteness of the sky before night. It matches the Aramaic and Syriac words for dawn and the fair, clear sky of Job 26:13.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1370, art. سفر, اسفر (n19932); سفّر (n19931)"
+        }
+      ]
+    },
+    {
+      "id": "akk-sapparu",
+      "lang": "akk",
+      "form": "sappāru",
+      "translit": "sappāru",
+      "gloss": "wild ram",
+      "relation": "possible",
+      "note": "A wild ram whose horn would make a shofar. Akkadian s does not regularly match Hebrew שׁ, so it is at most a word borrowed one way or the other.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000002790, sappāru [wild ram] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000002790.html"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "pleasing-god",
+      "statement": "In the Peshitta this root is the word for pleasing God. Enoch was testified to have pleased God before he was taken, and without faith no one can please him (Heb 11:5–6); those who are in the flesh cannot please him (Rom 8:8). The Son always does what pleases the Father (Jhn 8:29), and the Messiah did not please himself (Rom 15:3), so each is to please his neighbour for his good (Rom 15:2), and not to seek to please men in place of God (Gal 1:10). So pleasing God rests on faith, is seen perfectly in the Son, and turns from pleasing oneself to the good of others.",
+      "evidence": [
+        {
+          "ref": "Heb.11.5"
+        },
+        {
+          "ref": "Heb.11.6"
+        },
+        {
+          "ref": "Rom.8.8"
+        },
+        {
+          "ref": "Jhn.8.29"
+        },
+        {
+          "ref": "Rom.15.3"
+        },
+        {
+          "ref": "Rom.15.2"
+        },
+        {
+          "ref": "Gal.1.10"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: שֶׁפֶר Mount Shepher (v.fm.ac, Num 33:23) and שָׁפִיר Shaphir (v.fm.af, Mic 1:11), place names awaiting their own entries; שְׁפַתַּיִם (v.fm.ak), which BDB lists here but whose tokens are filed under שׁפת. The midwife שִׁפְרָה is names/shiphrah. Peshitta words from SEDRA root שפר (lexemes 3294–3297) and שיפורא (3188); their Syriac pointing in Hebrew letters is ours. 1Co 15:52 and 1Th 4:16 have קרנא, horn, in the Peshitta, not שיפורא. Leads not yet followed: Ugaritic and Phoenician for š-p-r 'beautiful'; Akkadian šuparruru 'spread out' for שַׁפְרִיר."
+}

@@ -1,0 +1,162 @@
+{
+  "id": "paah",
+  "root": "פעה",
+  "status": "draft",
+  "updated": "2026-11-08",
+  "tags": [
+    "sound",
+    "birth",
+    "animals"
+  ],
+  "gloss": "cry out, groan; viper",
+  "summary": "The verb occurs once: Yahweh, silent for a long time, cries out like a woman in labour. Aramaic uses the root for an animal's cry, a lamb's bleat. The viper אֶפְעֶה shares the spelling, with a cognate in Arabic, but how it relates to the cry is not established.",
+  "words": [
+    {
+      "lemma": "פָּעָה",
+      "pos": "verb",
+      "gloss": "cry out, groan",
+      "bdb": [
+        "q.cd.aa"
+      ],
+      "cognate_ids": [
+        "arc-peei"
+      ],
+      "summary": "Its one use is Isa 42:14. BDB's count for it includes the three uses of the viper, which are spelled the same.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cry out, groan",
+          "senses": [
+            {
+              "id": "paah-cry",
+              "gloss": "cry out as in childbirth",
+              "definition": "Cry out aloud, like a woman in labour; said by Yahweh of his breaking a long silence.",
+              "evidence": [
+                {
+                  "ref": "Isa.42.14",
+                  "role": "defining",
+                  "note": "כַּיּוֹלֵדָה אֶפְעֶה, like a woman giving birth I will cry out, I will gasp and pant; set against I have kept silent, I have restrained myself."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "חָשָׁה",
+            "note": "I have kept quiet from of old... now I will cry out.",
+            "evidence": [
+              {
+                "ref": "Isa.42.14"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "שָׁאַף",
+            "note": "I will cry out, I will gasp and pant together.",
+            "evidence": [
+              {
+                "ref": "Isa.42.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֶפְעֶה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "viper",
+      "bdb": [
+        "q.cd.ab"
+      ],
+      "cognate_ids": [
+        "ar-afa"
+      ],
+      "summary": "A venomous snake. Its Arabic cognate shows the older ʿ behind its ע. Whether it was named for the snake's hiss, from the root's cry, is not clear.",
+      "senses": [
+        {
+          "gloss": "viper",
+          "definition": "A venomous snake of the desert, whose bite kills.",
+          "evidence": [
+            {
+              "ref": "Job.20.16",
+              "role": "defining",
+              "note": "He sucks the poison of cobras; the viper's tongue kills him."
+            },
+            {
+              "ref": "Isa.30.6",
+              "role": "defining",
+              "note": "In the land of trouble, with the lioness and lion, the viper and the flying serpent."
+            },
+            {
+              "ref": "Isa.59.5",
+              "note": "When an egg is crushed, a viper hatches."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-afa",
+      "lang": "ar",
+      "form": "أَفْعًى",
+      "translit": "ʾafʿā",
+      "gloss": "viper",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "A malignant kind of serpent; تفعّى, become like the viper in evil.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2421, art. فعو / فعى, أَفْعًى (n34226)"
+        }
+      ]
+    },
+    {
+      "id": "arc-peei",
+      "lang": "arc",
+      "form": "פְּעֵי",
+      "translit": "pəʿē",
+      "gloss": "cry, bleat, low",
+      "relation": "cognate",
+      "note": "Of animals: the lambs bleated (Targum Sheni to Esther 1:2).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פְּעֵי, פְּעָא (ch.)"
+        }
+      ]
+    },
+    {
+      "id": "uga-pgt",
+      "lang": "uga",
+      "form": "𐎔𐎙𐎚",
+      "translit": "pġt",
+      "gloss": "girl; Pughat, a woman's name",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "Segert's glossary gives pġt 'girl' (KTU 4.349:3, beside pġy 'boy') and a woman's name (KTU 1.19 II 6), the sister of Aqhat. If the midwife's name פּוּעָה goes with it, her ע stands for an older ġ, not the ʿ of the viper's Arabic. The scanned text's OCR garbles the ġ; the reading is from the glossary's order and its cross-reference to pġy.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 198, glossary pġt; KTU 4.349:3, 1.19 II 6",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Left out: פָּעוּ / פָּעִי Pau (q.cd.ac), the Edomite city, a place name awaiting its own entry. The midwife פּוּעָה is names/puah; BDB files her without a root (q.ap.ae). The Issacharite פּוּאָה / פֻּוָּה (q.am.ab) is spelled with א and is not filed here. uga-pgt is named only by names/puah. Leads not yet followed: Arabic فَاغِيَة, the flower of henna (Lane p. 2423, n34257), another ġ word; Ge'ez ʾafʿot and Ugaritic ảpʿ 'viper' (not in Segert's glossary); Syriac has no root פעא in SEDRA."
+}
