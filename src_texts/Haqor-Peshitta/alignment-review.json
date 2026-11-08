@@ -458,6 +458,42 @@
           "reason": "Bnay anasha, literally sons of man, is the conventional generic human-being expression here. People renders its collective human reference rather than asserting literal sons."
         }
       ]
+    },
+    "40:13": {
+      "sha256": "bf0adddfde979076db49538a527d027cd849ce545dc308f5a6c15fd175d86b10",
+      "original_shared_spans": 95,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 5,
+          "english": "and immediately",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "W-bar shaateh, literally and son of its hour, is the conventional temporal idiom immediately. Its two lexical words jointly give the instantaneous timing, not a separate son and hour assertion."
+        },
+        {
+          "verse": 15,
+          "english": "has grown dull",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The thickening/growing-dull predicate is followed by the subject-coreferential ethical dative leh. They jointly express the heart growing dull; an independent to/for it would falsely introduce a second participant, and an independent reflexive intensifier would add unexpressed emphasis.",
+          "source": "https://api.pageplace.de/preview/DT0400.9781463235109_A38591854/preview-9781463235109_A38591854.pdf#page=21"
+        },
+        {
+          "verse": 20,
+          "english": "and immediately",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "W-bar shaateh is the same conventional temporal idiom as in verse 5, literally and son of its hour. The English adverb immediately expresses the whole two-word timing construction."
+        }
+      ]
     }
   }
 }
