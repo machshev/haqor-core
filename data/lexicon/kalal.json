@@ -1,0 +1,580 @@
+{
+  "id": "kalal",
+  "root": "כלל",
+  "status": "draft",
+  "updated": "2026-11-08",
+  "tags": [
+    "wholeness",
+    "completion",
+    "beauty",
+    "marriage",
+    "crown"
+  ],
+  "gloss": "whole, all; complete; bride",
+  "summary": "The main family names a whole or all of a set, and the verb describes making something complete or perfect. כָּלִיל can mean entire or an offering consumed wholly; other nouns name completeness or fine attire. כַּלָּה names a bride or daughter-in-law, with a matching Akkadian word, but its relation to completion is not established. The Peshitta also has the crown-family, kept here without assuming that a crown explains the other words.",
+  "words": [
+    {
+      "lemma": "כֹּל",
+      "pos": "noun",
+      "gloss": "all, every, the whole",
+      "bdb": [
+        "k.bn.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "all, the whole",
+          "definition": "An entire quantity or set, whose bounds are given by the following noun or the context.",
+          "evidence": [
+            {
+              "ref": "Gen.1.31",
+              "role": "defining",
+              "note": "God sees all that he has made."
+            },
+            {
+              "ref": "Exo.16.1",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "every, each; any",
+          "definition": "Each member of a class; under a negative, not any member.",
+          "evidence": [
+            {
+              "ref": "Gen.2.16",
+              "role": "defining",
+              "note": "From every tree of the garden you may eat."
+            },
+            {
+              "ref": "Exo.20.10",
+              "role": "defining",
+              "note": "You shall not do any work."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-kull",
+        "akk-kullatu"
+      ]
+    },
+    {
+      "lemma": "כַּלָּה",
+      "pos": "noun",
+      "gloss": "bride, daughter-in-law",
+      "bdb": [
+        "k.bo.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "bride",
+          "definition": "The woman entering marriage, or addressed in bridal language.",
+          "evidence": [
+            {
+              "ref": "Isa.61.10",
+              "role": "defining",
+              "note": "A bride adorns herself with jewels."
+            },
+            {
+              "ref": "Sng.4.10",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "daughter-in-law",
+          "definition": "The wife of someone’s son.",
+          "evidence": [
+            {
+              "ref": "Gen.11.31",
+              "role": "defining",
+              "note": "Sarai is Terah’s daughter-in-law, the wife of his son Abram."
+            },
+            {
+              "ref": "Rut.1.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-kallatu"
+      ],
+      "summary": "The woman in a marriage, or the wife of one’s son. The link to the root’s completion-family is unclear; the matching Akkadian word supports the family relationship rather than a derivation from “complete”.",
+      "greek": [
+        {
+          "lemma": "νύμφη",
+          "gloss": "bride, daughter-in-law",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Mic.7.6, כַּלָּה → νύμφη"
+            },
+            {
+              "ref": "Mat.10.35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כָּלִיל",
+      "pos": "adjective",
+      "gloss": "whole, entire; wholly offered",
+      "bdb": [
+        "k.bn.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "entire, complete",
+          "definition": "Entirely of a material, or complete in the quality specified.",
+          "evidence": [
+            {
+              "ref": "Exo.28.31",
+              "role": "defining",
+              "note": "The robe is entirely of blue."
+            },
+            {
+              "ref": "Ezk.16.14",
+              "role": "defining",
+              "note": "The beauty is complete through the splendor given to her."
+            }
+          ],
+          "cognate_ids": [
+            "ar-kull",
+            "akk-kullatu"
+          ]
+        },
+        {
+          "gloss": "wholly offered",
+          "definition": "An offering given wholly to the altar rather than partly eaten.",
+          "evidence": [
+            {
+              "ref": "Lev.6.16",
+              "role": "defining",
+              "note": "Every priest’s grain offering is כָּלִיל and must not be eaten."
+            },
+            {
+              "ref": "1Sa.7.9",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "ar-kull",
+            "akk-kullatu"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כָּלַל",
+      "pos": "verb",
+      "gloss": "complete, perfect",
+      "bdb": [
+        "k.bn.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "complete, perfect",
+          "senses": [
+            {
+              "gloss": "make complete or perfect",
+              "definition": "Bring something to its full state; both occurrences describe completing Tyre’s beauty.",
+              "evidence": [
+                {
+                  "ref": "Ezk.27.4",
+                  "role": "defining",
+                  "note": "The builders perfected your beauty."
+                },
+                {
+                  "ref": "Ezk.27.11",
+                  "role": "defining",
+                  "note": "The shields hung on the walls complete the city’s beauty."
+                }
+              ],
+              "cognate_ids": [
+                "akk-kullatu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִכְלוֹל",
+      "pos": "noun",
+      "gloss": "splendid attire",
+      "bdb": [
+        "k.bn.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "splendid attire",
+          "definition": "The impressive equipment or clothing in which troops are arrayed.",
+          "evidence": [
+            {
+              "ref": "Ezk.23.12",
+              "role": "defining",
+              "note": "Assyrian warriors are clothed in מִכְלוֹל."
+            },
+            {
+              "ref": "Ezk.38.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "Both occurrences describe military dress. The context supports splendid or complete attire; the noun’s exact range is limited by these two uses."
+    },
+    {
+      "lemma": "מַכְלֻל",
+      "pos": "noun",
+      "gloss": "fine garment",
+      "bdb": [
+        "k.bn.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "fine garments",
+          "definition": "Goods of fine clothing or textiles in Tyre’s trade; attested only here in the plural.",
+          "evidence": [
+            {
+              "ref": "Ezk.27.24",
+              "role": "defining",
+              "note": "Listed with blue and embroidered fabrics among the traded wares."
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מִכְלָל",
+      "pos": "noun",
+      "gloss": "perfection, completeness",
+      "bdb": [
+        "k.bn.af"
+      ],
+      "senses": [
+        {
+          "gloss": "perfection",
+          "definition": "The complete or perfect expression of a quality; in its single occurrence, Zion’s beauty.",
+          "evidence": [
+            {
+              "ref": "Psa.50.2",
+              "role": "defining",
+              "note": "Zion is the perfection of beauty."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-kullatu"
+      ]
+    },
+    {
+      "lemma": "כְּלוּלָה",
+      "pos": "noun",
+      "gloss": "bridal love, betrothal",
+      "bdb": [
+        "k.bo.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "bridal state, betrothal",
+          "definition": "The time or state of being a bride, in the image of Israel’s early devotion.",
+          "evidence": [
+            {
+              "ref": "Jer.2.2",
+              "role": "defining",
+              "note": "The love of your כְּלוּלֹת is parallel to the devotion of your youth."
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "summary": "Attested only in a plural expression for Israel’s bridal time or state. Its link is to the bride-word; a more precise distinction between betrothal and marriage is not fixed by this verse alone.",
+      "cognate_ids": [
+        "akk-kallatu"
+      ]
+    },
+    {
+      "lemma": "כֹּל",
+      "pos": "noun",
+      "gloss": "all, the whole",
+      "bdb": [
+        "xk.ad.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "all, every",
+          "definition": "A whole set, or each member of it.",
+          "evidence": [
+            {
+              "ref": "Dan.2.38",
+              "role": "defining",
+              "note": "The king is made ruler over them all."
+            },
+            {
+              "ref": "Dan.7.23",
+              "role": "defining",
+              "note": "The kingdom devours the whole earth."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "כל",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-kull",
+        "akk-kullatu"
+      ]
+    },
+    {
+      "lemma": "כְּלַל",
+      "pos": "verb",
+      "gloss": "complete",
+      "bdb": [
+        "xk.ad.aa"
+      ],
+      "stems": [
+        {
+          "stem": "shaphel",
+          "gloss": "complete, finish",
+          "senses": [
+            {
+              "gloss": "complete a building",
+              "definition": "Bring construction to completion.",
+              "evidence": [
+                {
+                  "ref": "Ezr.5.11",
+                  "role": "defining",
+                  "note": "The king built and completed the house."
+                },
+                {
+                  "ref": "Ezr.6.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hishtaphel",
+          "gloss": "be completed",
+          "senses": [
+            {
+              "gloss": "be completed",
+              "definition": "Of walls whose building is finished.",
+              "evidence": [
+                {
+                  "ref": "Ezr.4.13",
+                  "role": "defining",
+                  "note": "If the city is rebuilt and its walls completed."
+                },
+                {
+                  "ref": "Ezr.4.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "כֻּל",
+      "pos": "noun",
+      "gloss": "all, every",
+      "senses": [
+        {
+          "gloss": "all, every",
+          "definition": "The whole of something or every member of a stated class.",
+          "evidence": [
+            {
+              "ref": "Mat.1.17",
+              "role": "defining",
+              "note": "All the generations are counted in three groups."
+            },
+            {
+              "ref": "Mat.3.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "כל",
+      "cognate_ids": [
+        "ar-kull",
+        "akk-kullatu"
+      ]
+    },
+    {
+      "lemma": "כַּלְתָא",
+      "pos": "noun",
+      "gloss": "bride, daughter-in-law",
+      "senses": [
+        {
+          "gloss": "bride",
+          "definition": "The woman joined to a bridegroom, also used in the image of the holy city.",
+          "evidence": [
+            {
+              "ref": "Jhn.3.29",
+              "role": "defining",
+              "note": "The one who has the bride is the bridegroom."
+            },
+            {
+              "ref": "Rev.21.2",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "daughter-in-law",
+          "definition": "A son’s wife, set in relation to her mother-in-law.",
+          "evidence": [
+            {
+              "ref": "Mat.10.35",
+              "role": "defining",
+              "note": "Daughter-in-law and mother-in-law are set against one another."
+            },
+            {
+              "ref": "Luk.12.53",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "כל",
+      "gender": "f",
+      "cognate_ids": [
+        "akk-kallatu"
+      ]
+    },
+    {
+      "lemma": "כְּלִילָא",
+      "pos": "noun",
+      "gloss": "crown, wreath",
+      "senses": [
+        {
+          "gloss": "crown, wreath",
+          "definition": "A head-wreath, including the crown of thorns.",
+          "evidence": [
+            {
+              "ref": "Mat.27.29",
+              "role": "defining",
+              "note": "They weave thorns into a crown and place it on his head."
+            }
+          ]
+        },
+        {
+          "gloss": "crown of honor or reward",
+          "definition": "A crown promised or awarded, or a person spoken of as someone’s crown.",
+          "evidence": [
+            {
+              "ref": "1Co.9.25",
+              "role": "defining",
+              "note": "Athletes compete for a perishable crown; believers for an imperishable one."
+            },
+            {
+              "ref": "2Ti.4.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Php.4.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "כל",
+      "gender": "m",
+      "summary": "A circlet or wreath worn on the head, and figuratively a reward or honor. The relation of crowning to the other כלל meanings is not established by the cited verses."
+    },
+    {
+      "lemma": "כַּלֵּל",
+      "pos": "verb",
+      "gloss": "crown",
+      "stems": [
+        {
+          "stem": "ethpaal",
+          "gloss": "be crowned",
+          "senses": [
+            {
+              "gloss": "be crowned",
+              "definition": "Receive the athlete’s crown; this word occurs only here in the Peshitta.",
+              "evidence": [
+                {
+                  "ref": "2Ti.2.5",
+                  "role": "defining",
+                  "note": "An athlete is not crowned unless he competes lawfully."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "כל"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-kull",
+      "lang": "ar",
+      "form": "كُلّ",
+      "translit": "kull",
+      "gloss": "all, the whole; every",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3002, root كل, كُلٌّ (n43086); كُلِّيٌّ (n43088)"
+        }
+      ],
+      "note": "The noun’s constructions express a whole or any member; the adjective kulliyy means total or universal."
+    },
+    {
+      "id": "akk-kullatu",
+      "lang": "akk",
+      "form": "kullatu",
+      "translit": "kullatu",
+      "gloss": "totality, all, the whole",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000011310, kullatu [totality] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000011310.html"
+        }
+      ]
+    },
+    {
+      "id": "akk-kallatu",
+      "lang": "akk",
+      "form": "kallātu",
+      "translit": "kallātu",
+      "gloss": "bride, daughter-in-law",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000026150, kallātu [daughter-in-law] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000026150.html"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The bride and completion words are retained together without an asserted etymology. The crown-family is included from scripture’s Syriac, whose root key is כל. כְּלָל is a person’s name, left for its own entry; the remaining unassigned BDB rows are redirects. xk.ad.ab and k.bn.ab overlap on Hebrew spellings, and support counts cannot be read as separate language totals. The brief for כלל omits the Aramaic quantifier because it is filed under כל; that word is included here. Cognate assignment deliberately separates the bridal and totality senses, so a negative evidence balance is expected for each group rather than concealed."
+}
