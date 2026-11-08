@@ -1924,6 +1924,7 @@ fn read_peshitta_overrides(
         }
         let mut linked = Vec::new();
         for span in &spans {
+            let mut span_positions = HashSet::new();
             if !span.words.is_empty() && !span.text.chars().any(char::is_alphanumeric) {
                 bail!("{path:?}:{line_no}: linked text is empty");
             }
@@ -1933,6 +1934,9 @@ fn read_peshitta_overrides(
             for word in &span.words {
                 if (word.chapter, word.verse) != (chapter, verse) {
                     bail!("{path:?}:{line_no}: link leaves {book}:{chapter}:{verse}");
+                }
+                if !span_positions.insert(word.position) {
+                    bail!("{path:?}:{line_no}: duplicate source position within one span");
                 }
                 linked.push(word.position);
             }
@@ -2807,6 +2811,7 @@ mod tests {
         for text in [
             "[one|0]",
             "[one|0] [two|0]", // Repetition cannot substitute for a missing word.
+            "[one|0,0] [two|1]",
             "[one|0] [two|2]",
             "[one|0] [two|2:1]",
             "[|0] [two|1]",

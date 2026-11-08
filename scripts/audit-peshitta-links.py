@@ -46,6 +46,8 @@ def spans(text):
             raw = text[i:end].split(",")
             if not all(link.isascii() and link.isdecimal() for link in raw):
                 raise ValueError("invalid or cross-verse link")
+            if len(set(map(int, raw))) != len(raw):
+                raise ValueError("duplicate source position within one span")
             if not any(c.isalnum() for c in english):
                 raise ValueError("empty linked English")
             result.append((english, tuple(map(int, raw))))

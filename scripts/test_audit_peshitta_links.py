@@ -41,7 +41,8 @@ class AlignmentReviewTests(unittest.TestCase):
 
     def test_cross_verse_unlinked_empty_and_malformed_spans_fail(self):
         for text in ["[Holy Spirit|1:0,1]", "Holy [Spirit|0,1]", "[|0,1]",
-                     "[Holy Spirit|0,1", "{[Holy Spirit|0,1]", "[Holy Spirit|0,1]}"]:
+                     "[Holy Spirit|0,0,1]", "[Holy Spirit|0,1",
+                     "{[Holy Spirit|0,1]", "[Holy Spirit|0,1]}"]:
             with self.subTest(text=text), self.assertRaises(ValueError):
                 audit.spans(text)
 
