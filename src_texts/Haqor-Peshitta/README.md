@@ -173,6 +173,20 @@ Source checks for Matthew 23:
 
 Source checks for Matthew 24:
 
+- Matthew 24:3 renders baynayhon w-leh as "privately". CAL records the
+  different-suffix byn plus l construction as a private exchange; see
+  [byn in CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=byn+p).
+- Matthew 24:5 has Peal neṭ'un, "many will go astray", whereas 24:11 has
+  the causative Aph'el form, "lead many astray". The vocalization, stem,
+  and subject/object roles are retained; compare the G and C senses of
+  [ṭʿy in CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=%2B%28y+V).
+- Matthew 24:6 retains distinct wars and reports of wars, and the explicit
+  obligation "must". Matthew 24:7 retains the distributive repeated-place
+  construction as "in various places".
+- Matthew 24:31 renders the repeated rishhon endpoints as "one end" and
+  "the other end" with separate links. CAL records the spatial end sense
+  and the rish-to-rish merism under
+  [rish](https://cal.huc.edu/oneentry.php?cits=all&lemma=ry%24+N).
 - The feminine form in 24:33 is rendered with neutral "it", rather than
   personal masculine "he".
 - In 24:36 the source goes directly from the angels of heaven to the Father
