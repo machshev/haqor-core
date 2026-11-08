@@ -215,6 +215,15 @@ pub fn is_name_entry(text: &str) -> bool {
         .is_some_and(|v| v.get("people").is_some() && v.get("words").is_none())
 }
 
+/// The id of the root entry a name entry's text links back to (`entry`).
+pub fn name_entry_root(text: &str) -> Option<String> {
+    serde_json::from_str::<serde_json::Value>(text)
+        .ok()?
+        .get("entry")?
+        .as_str()
+        .map(str::to_string)
+}
+
 /// The people records under `src_texts` ([`PEOPLE_RECORDS`]): each TIPNR key
 /// with the record's id (the database's `name_entity.entity_id`) and kind.
 pub fn people_records(src_texts: &Path) -> Result<HashMap<String, (i64, String)>> {
