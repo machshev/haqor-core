@@ -159,6 +159,12 @@ Source checks for Matthew 23:
 
 - The two-word face-taking expression is rendered as the single linked idiom
   "hypocrites", rather than adding a separate appearance phrase.
+- Matthew 23:17 retains the separate anticipatory object pronoun and its
+  explicit noun as "sanctifies it (the gold)". The apposition preserves each
+  source owner.
+- Matthew 23:26 has plural "blind Pharisees" and a plural imperative.
+- Matthew 23:34 separates the independent subject, sending participle, and
+  postposed personal copula as "I am sending".
 - In 23:37, the participial descriptions of Jerusalem and the third-person
   "to her" are retained; Murdock changes the latter to direct address. Compare
   the [Peshitta interlinear, page 5](https://www.atour.com/media/files/religion/peshitta/interlinear-nt/Mattai/Mattich23.pdf).
