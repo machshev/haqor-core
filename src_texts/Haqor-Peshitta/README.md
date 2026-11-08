@@ -134,8 +134,14 @@ Source checks for Matthew 17-20:
   and the vocalization construction under
   [yhb in CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=yhb+V).
 
-Source check for Matthew 21: the praise quotation divided across Murdock
-21:16-17 is entirely in Peshitta 21:16 and is linked there.
+Source checks for Matthew 21:
+
+- The praise quotation divided across Murdock 21:16-17 is entirely in
+  Peshitta 21:16 and is linked there.
+- Matthew 21:41 has the reduplicated adverb bish bish, rendered "in the
+  worst way", with its complement prefix linked separately. CAL explicitly
+  cites this verse under the adverbial sense of
+  [bish](https://cal.huc.edu/oneentry.php?cits=all&lemma=by%24+A).
 
 Source check for Matthew 22: 22:37 explicitly includes strength as well as
 heart, soul, and mind; all four are retained and linked to their source words.

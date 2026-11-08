@@ -759,6 +759,69 @@
           "reason": "Bar shateh, literally son of the hour, is the conventional temporal idiom immediately. Its two nouns do not independently denote a son and an hour in this use. The w-prefix at5 independently supplies and."
         }
       ]
+    },
+    "40:21": {
+      "sha256": "47dfcfa8cc1df975eba3cfe61863a58e0c657a6c4ec819ba96b50814eedd3e4d",
+      "original_shared_spans": 22,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 16,
+          "english": "ever",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Men metom is the temporal idiom from ever/at any time, governed here by the separately linked negative at position 13. Its English adverb ever renders the compound; the auxiliary and subject belong to the reading predicate at position 14."
+        },
+        {
+          "verse": 19,
+          "english": "except",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Ella en is the fixed exceptive conjunction, literally but if, introducing the leaves as the sole exception. Literal separate English constituents would incorrectly express a conditional."
+        },
+        {
+          "verse": 20,
+          "english": "suddenly",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Bar shateh, literally son of the hour, is a temporal idiom meaning suddenly or immediately. Its two nouns do not denote a son and an hour separately here."
+        },
+        {
+          "verse": 28,
+          "english": "had",
+          "positions": [
+            6,
+            7,
+            8
+          ],
+          "reason": "Ith hwaw leh is a past existential possession construction: there were to him two sons. English had combines existence, past tense and the dative possessor, which refers back to the separately expressed man. Independent spans would duplicate the possessor or distort this predicate."
+        },
+        {
+          "verse": 41,
+          "english": "in the worst way",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Bish bish is a reduplicated adverb of manner, in the worst way, explicitly cited for this verse in CAL under bish. The repeated singular forms do not designate evil men. The complement prefix d- on position 2 is linked separately as that."
+        },
+        {
+          "verse": 42,
+          "english": "from",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "Men lwath is the compound preposition expressing source from the Lord, literally from toward. Splitting its English preposition would misstate the relationship; the Lord remains separately linked at position 16."
+        }
+      ]
     }
   }
 }
