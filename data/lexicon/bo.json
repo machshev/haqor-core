@@ -1,0 +1,358 @@
+{
+  "id": "bo",
+  "root": "בוא",
+  "status": "draft",
+  "updated": "2026-11-08",
+  "tags": [
+    "movement",
+    "arrival",
+    "entrance",
+    "harvest"
+  ],
+  "gloss": "come, enter; bring",
+  "summary": "בּוֹא describes movement to a place or into it: come, go, enter, or arrive. The hiphil brings someone or something in, and the hophal describes being brought. Its nouns name an entrance or arrival, the sun’s setting, and what comes in as produce or income.",
+  "words": [
+    {
+      "lemma": "בּוֹא",
+      "pos": "verb",
+      "gloss": "come, enter; bring",
+      "bdb": [
+        "b.ap.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "come, go in, arrive",
+          "senses": [
+            {
+              "gloss": "come, arrive, enter",
+              "definition": "Move to a place or into it; “come” and “go” depend on the speaker’s viewpoint.",
+              "evidence": [
+                {
+                  "ref": "Gen.7.1",
+                  "role": "defining",
+                  "note": "Noah is told to enter the ark."
+                },
+                {
+                  "ref": "Gen.24.63",
+                  "role": "defining",
+                  "note": "Camels are approaching."
+                },
+                {
+                  "ref": "1Sa.21.16",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "come upon, arrive in time",
+              "definition": "Of a time, event, report, or trouble reaching someone.",
+              "evidence": [
+                {
+                  "ref": "Gen.41.29",
+                  "role": "defining",
+                  "note": "Seven years of plenty are coming."
+                },
+                {
+                  "ref": "Job.3.24",
+                  "role": "defining",
+                  "note": "Sighing comes before the speaker’s food."
+                }
+              ]
+            },
+            {
+              "gloss": "set, go in",
+              "definition": "Of the sun, disappear at the end of daylight.",
+              "evidence": [
+                {
+                  "ref": "Gen.15.12",
+                  "role": "defining",
+                  "note": "The sun is about to go in."
+                },
+                {
+                  "ref": "Deu.24.15",
+                  "role": "defining",
+                  "note": "Wages must be paid before the sun goes in."
+                }
+              ]
+            },
+            {
+              "gloss": "go in to a woman",
+              "definition": "With אֶל and a woman as object, enter into sexual union.",
+              "evidence": [
+                {
+                  "ref": "Gen.16.2",
+                  "role": "defining",
+                  "note": "Sarai tells Abram to go in to her servant."
+                },
+                {
+                  "ref": "Gen.30.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring, bring in",
+          "senses": [
+            {
+              "gloss": "bring, bring in",
+              "definition": "Cause someone or something to come to a person or place.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.19",
+                  "role": "defining",
+                  "note": "God brought the animals to the man."
+                },
+                {
+                  "ref": "Gen.47.17",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.31.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be brought",
+          "senses": [
+            {
+              "gloss": "be brought",
+              "definition": "Be conveyed or presented to a person or place.",
+              "evidence": [
+                {
+                  "ref": "Gen.33.11",
+                  "role": "defining",
+                  "note": "Jacob asks Esau to accept the gift brought to him."
+                },
+                {
+                  "ref": "Gen.43.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.40.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-baa"
+      ],
+      "greek": [
+        {
+          "lemma": "ἔρχομαι",
+          "gloss": "come",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.118.26 (LXX 117:26), הַבָּא → ἐρχόμενος"
+            },
+            {
+              "ref": "Mat.21.9"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "יָצָא",
+            "note": "Going out and coming in name opposite directions and can together describe the conduct of daily life or leadership.",
+            "evidence": [
+              {
+                "ref": "Num.27.17",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בּוֹא אֶל",
+            "gloss": "go in to (a woman)",
+            "evidence": [
+              {
+                "ref": "Gen.16.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תְּבוּאָה",
+      "pos": "noun",
+      "gloss": "produce, yield, income",
+      "bdb": [
+        "b.ap.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "produce, crop",
+          "definition": "What land or agricultural work yields.",
+          "evidence": [
+            {
+              "ref": "Lev.25.21",
+              "role": "defining",
+              "note": "The sixth year produces enough for three years."
+            },
+            {
+              "ref": "Lev.23.39",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.47.24",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "revenue, gain; result",
+          "definition": "What comes as income or the fruit of activity, including figurative gain.",
+          "evidence": [
+            {
+              "ref": "Isa.23.3",
+              "role": "defining",
+              "note": "The Nile harvest is Tyre’s revenue."
+            },
+            {
+              "ref": "Pro.8.19",
+              "role": "defining",
+              "note": "Wisdom compares her yield with choice silver."
+            },
+            {
+              "ref": "Pro.16.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מָבוֹא",
+      "pos": "noun",
+      "gloss": "entrance; coming in; sunset",
+      "bdb": [
+        "b.ap.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "entrance, way in",
+          "definition": "The access by which one enters a city, house, or other place.",
+          "evidence": [
+            {
+              "ref": "Jdg.1.24",
+              "role": "defining",
+              "note": "A man is asked to show the entrance to the city."
+            },
+            {
+              "ref": "Jer.38.14",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "coming",
+          "definition": "An approach or arrival.",
+          "evidence": [
+            {
+              "ref": "Ezk.33.31",
+              "role": "defining",
+              "note": "The people come as a people’s gathering comes."
+            }
+          ]
+        },
+        {
+          "gloss": "sunset, west",
+          "definition": "With the sun, its going in or the direction where it sets.",
+          "evidence": [
+            {
+              "ref": "Psa.113.3",
+              "role": "defining",
+              "note": "From the sun’s rising to its setting."
+            },
+            {
+              "ref": "Zec.8.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "בִּיאָה",
+      "pos": "noun",
+      "gloss": "entrance",
+      "bdb": [
+        "b.ap.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "entrance",
+          "definition": "The place of entry, in its single occurrence at a temple gate.",
+          "evidence": [
+            {
+              "ref": "Ezk.8.5",
+              "role": "defining",
+              "note": "The image of jealousy stands at the entrance."
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מוֹבָא",
+      "pos": "noun",
+      "gloss": "entrance",
+      "bdb": [
+        "b.ap.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "entrance",
+          "definition": "An entryway, attested in the plural among the temple’s architectural features.",
+          "evidence": [
+            {
+              "ref": "Ezk.43.11",
+              "role": "defining",
+              "note": "The temple’s exits and entrances are listed together."
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-baa",
+      "lang": "ar",
+      "form": "بَاءَ",
+      "translit": "bāʾa",
+      "gloss": "return, come back",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 270, root بوأ, بَاءَ إِلَيْهِ (n3479)"
+        }
+      ],
+      "note": "Arabic attests returning or coming back, a narrower movement sense than Hebrew’s ordinary coming and entering."
+    }
+  ],
+  "doctrine": [],
+  "note": "The brief files unrelated spellings such as אָבִי “my father”, נָבִיא “prophet”, and בָּנוּ “in us” under the verb; these are not senses of בוא. Redirect keys b.ab.ad, m.ai.ae, m.as.af and w.ae.ag add no separate word. The source lemma בִּאָה is displayed here with its full dictionary spelling בִּיאָה. No Peshitta cognate was found; its ordinary verbs אתא and עלל belong to other root entries."
+}
