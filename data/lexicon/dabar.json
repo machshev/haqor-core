@@ -11,54 +11,100 @@
     "wilderness"
   ],
   "gloss": "speak; word, matter; lead, subdue",
-  "summary": "דִּבֵּר is to speak, and דָּבָר is what is spoken: a word, message, command, or promise, and also a matter, event, or thing. The same spelling holds subduing and leading, clearer in the Peshitta’s verb of guiding and its nouns for conduct and administration. The inner sanctuary is the place of speaking: the room of the ark’s cover, from above which Yahweh speaks. The wilderness is where he leads his people like a flock and speaks to them. Pestilence, bees and rafts are retained as words of the family, but their connections to speech or leading are not treated as settled.",
+  "summary": "דָּבָר is intent, desire or thought passed from one to another, whether voiced, written, seen in a vision or held in the heart (Deu 30:14, Deu 15:9, Isa 2:1): a word, message, command or promise, and also the matter, event or thing it concerns. דִּבֵּר is to convey it, to speak. Arabic دَبَّرَ “consider the outcome of an affair, plan” is the same forming of intent. The same spelling holds subduing and leading, clearer in the Peshitta’s verb of guiding and its nouns for conduct and administration. The inner sanctuary is the place of speaking: the room of the ark’s cover, from above which Yahweh speaks. The wilderness is where he leads his people like a flock and speaks to them. Pestilence, bees and rafts are retained as words of the family, but their connections to speech or leading are not treated as settled.",
   "words": [
     {
       "lemma": "דָּבָר",
       "pos": "noun",
-      "gloss": "word, message; matter, thing",
+      "gloss": "word: intent conveyed; matter, thing",
       "bdb": [
         "d.ai.ab"
       ],
       "senses": [
         {
-          "gloss": "word, speech",
-          "definition": "What is said, whether one utterance or a body of speech.",
+          "id": "word",
+          "gloss": "word: intent, desire or thought conveyed",
+          "definition": "What one means and passes to another: intent, desire, thought. Whether it is voiced, written, seen in a vision or still held in the heart does not change what it is.",
           "evidence": [
             {
-              "ref": "Gen.11.1",
+              "ref": "Deu.30.14",
               "role": "defining",
-              "note": "The whole earth has one language and common words."
+              "note": "The דָּבָר is very near you, in your mouth and in your heart, to do it: held in the heart, carried in the mouth, and done."
             },
             {
-              "ref": "Exo.34.28",
-              "role": "defining"
+              "ref": "Deu.15.9",
+              "role": "defining",
+              "note": "“Beware lest there be a worthless דָבָר with your heart”: an intent never voiced."
+            },
+            {
+              "ref": "Psa.45.2",
+              "role": "defining",
+              "note": "The heart stirs with a good דָּבָר before the tongue writes it out like a scribe’s pen."
+            },
+            {
+              "ref": "Isa.2.1",
+              "role": "defining",
+              "note": "The דָּבָר that Isaiah saw (חָזָה); so “the words of Amos … which he saw” (Amo 1:1)."
+            },
+            {
+              "ref": "Gen.15.1",
+              "note": "The word of Yahweh comes to Abram in a vision; when it was rare there was no vision (1Sa 3:1)."
+            },
+            {
+              "ref": "Gen.44.18",
+              "note": "“Let your servant speak a דָּבָר in my lord’s ears”: the same word voiced."
             }
-          ]
-        },
-        {
-          "gloss": "message, command, promise",
-          "definition": "A communication received or given, whose force is determined by its content.",
-          "evidence": [
+          ],
+          "cognate_ids": [
+            "phn-dbr-word",
+            "ar-dabbara"
+          ],
+          "senses": [
             {
-              "ref": "2Ki.7.1",
-              "role": "defining",
-              "note": "The word of Yahweh is followed by a specific announcement."
+              "gloss": "word, speech",
+              "definition": "The intent as uttered, whether one utterance or a body of speech, or written down.",
+              "evidence": [
+                {
+                  "ref": "Gen.11.1",
+                  "role": "defining",
+                  "note": "The whole earth has one language and common words."
+                },
+                {
+                  "ref": "Exo.34.28",
+                  "role": "defining",
+                  "note": "The ten דְּבָרִים, written on the tablets."
+                },
+                {
+                  "ref": "Psa.19.4",
+                  "note": "The heavens declare without אֹמֶר or דְּבָרִים, their voice unheard: the intent passes without the words."
+                }
+              ]
             },
             {
-              "ref": "1Ki.8.56",
-              "role": "defining",
-              "note": "No word of the good promise has failed."
-            },
-            {
-              "ref": "Deu.29.8",
-              "role": "defining"
+              "gloss": "message, command, promise",
+              "definition": "The intent given to another to receive and act on, whose force is determined by its content.",
+              "evidence": [
+                {
+                  "ref": "2Ki.7.1",
+                  "role": "defining",
+                  "note": "The word of Yahweh is followed by a specific announcement."
+                },
+                {
+                  "ref": "1Ki.8.56",
+                  "role": "defining",
+                  "note": "No word of the good promise has failed."
+                },
+                {
+                  "ref": "Deu.29.8",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         },
         {
           "gloss": "matter, event, affair",
-          "definition": "A situation or happening spoken about, considered, or acted on.",
+          "definition": "The matter itself that intent concerns or carries out: a situation or happening considered, judged or done.",
           "evidence": [
             {
               "ref": "Gen.15.1",
@@ -69,6 +115,10 @@
               "ref": "Exo.18.16",
               "role": "defining",
               "note": "When a matter comes to Moses, he judges between the parties."
+            },
+            {
+              "ref": "Gen.18.14",
+              "note": "“Is any דָּבָר too wondrous for Yahweh?”: the promised son, the thing he intends to do."
             }
           ]
         },
@@ -1094,7 +1144,7 @@
       "lang": "ar",
       "form": "دَبَّرَ",
       "translit": "dabbara",
-      "gloss": "manage, conduct, regulate affairs",
+      "gloss": "consider the outcome of an affair, plan; manage, conduct, regulate affairs",
       "relation": "cognate",
       "evidence": [
         {
@@ -1103,7 +1153,7 @@
           "url": "https://www.laneslexicon.com/word/%D8%AF%D8%A8%D8%B1/n11990"
         }
       ],
-      "note": "A comparison for managing and directing, particularly the Syriac family. The same dictionary entry marks the report-transmission sense as disputed; it is not used to establish Arabic “speak”."
+      "note": "Lane’s first meaning of دَبَّرَ الأَمْرَ is “he considered, or forecast, the issues, or results, of the affair”: the intent formed about a matter, as דָּבָר is intent conveyed; and تَدَبَّرَ القَوْلَ is to think upon what has been said and endeavour to understand it. Also a comparison for managing and directing, particularly the Syriac family. The same dictionary entry marks the report-transmission sense as disputed; it is not used to establish Arabic “speak”."
     },
     {
       "id": "ar-tadabbara",
