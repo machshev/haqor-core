@@ -299,6 +299,32 @@
           "reason": "Men mtum is the temporal idiom from ever/at any time, here governed by the separately linked negative at position 5. Its English adverb ever renders the compound; the relative prefix on position 3 independently owns that earlier in the clause."
         }
       ]
+    },
+    "40:8": {
+      "sha256": "f3409f55d8c05d543e837f1f00941156981abe5ce6ce002395f92b9f0143b20c",
+      "original_shared_spans": 56,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 16,
+          "english": "ill",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "Bishayith avidin is the conventional illness expression, literally badly made/disposed. Ill renders its lexical state rather than asserting a separate making action. The relative prefix on position 13 and the actual past auxiliary at position 15 are linked separately as who and were."
+        },
+        {
+          "verse": 28,
+          "english": "the tombs",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Beth qvure, literally house/place of graves, is the lexical burial-location expression. The English tombs denotes that place; the construct head does not assert a separate inhabited house."
+        }
+      ]
     }
   }
 }
