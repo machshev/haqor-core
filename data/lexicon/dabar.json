@@ -1,0 +1,1012 @@
+{
+  "id": "dabar",
+  "root": "דבר",
+  "status": "draft",
+  "updated": "2026-11-08",
+  "tags": [
+    "speech",
+    "word-of-god",
+    "matter",
+    "guidance",
+    "wilderness"
+  ],
+  "gloss": "speak; word, matter; lead, subdue",
+  "summary": "דִּבֵּר is to speak, and דָּבָר is what is spoken: a word, message, command, or promise, and also a matter, event, or thing. The same spelling holds subduing and leading, clearer in the Peshitta’s verb of guiding and its nouns for conduct and administration. Pestilence, wilderness, bees, rafts and the inner sanctuary are retained as words of the family, but their connections to speech or leading are not treated as settled.",
+  "words": [
+    {
+      "lemma": "דָּבָר",
+      "pos": "noun",
+      "gloss": "word, message; matter, thing",
+      "bdb": [
+        "d.ai.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "word, speech",
+          "definition": "What is said, whether one utterance or a body of speech.",
+          "evidence": [
+            {
+              "ref": "Gen.11.1",
+              "role": "defining",
+              "note": "The whole earth has one language and common words."
+            },
+            {
+              "ref": "Exo.34.28",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "message, command, promise",
+          "definition": "A communication received or given, whose force is determined by its content.",
+          "evidence": [
+            {
+              "ref": "2Ki.7.1",
+              "role": "defining",
+              "note": "The word of יַהְוֶה is followed by a specific announcement."
+            },
+            {
+              "ref": "1Ki.8.56",
+              "role": "defining",
+              "note": "No word of the good promise has failed."
+            },
+            {
+              "ref": "Deu.29.8",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "matter, event, affair",
+          "definition": "A situation or happening spoken about, considered, or acted on.",
+          "evidence": [
+            {
+              "ref": "Gen.15.1",
+              "role": "defining",
+              "note": "After these things, the word of יַהְוֶה comes to Abram."
+            },
+            {
+              "ref": "Exo.18.16",
+              "role": "defining",
+              "note": "When a matter comes to Moses, he judges between the parties."
+            }
+          ]
+        },
+        {
+          "gloss": "thing",
+          "definition": "A thing considered as a member of a set, not necessarily a spoken word.",
+          "evidence": [
+            {
+              "ref": "Isa.39.4",
+              "role": "defining",
+              "note": "Hezekiah says that there is not a thing in his treasures he has not shown."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "greek": [
+        {
+          "lemma": "ῥῆμα",
+          "gloss": "word, utterance",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.40.8, וּדְבַר → τὸ δὲ ῥῆμα (the Greek clause, not an aligned lemma row)"
+            },
+            {
+              "ref": "1Pe.1.25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּבַר",
+      "pos": "verb",
+      "gloss": "speak; subdue; destroy",
+      "bdb": [
+        "d.ai.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "speak; destroy",
+          "senses": [
+            {
+              "gloss": "speak, address",
+              "definition": "Utter speech or address someone; what follows gives the message or command.",
+              "evidence": [
+                {
+                  "ref": "Exo.6.29",
+                  "role": "defining",
+                  "note": "יַהְוֶה speaks and commands Moses to speak everything given him."
+                },
+                {
+                  "ref": "Gen.8.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Zep.3.13",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "destroy",
+              "definition": "Do away with a royal family. This single use is fixed by the narrative’s account of killing, but its relation to speaking or subduing is unclear.",
+              "evidence": [
+                {
+                  "ref": "2Ch.22.10",
+                  "role": "defining",
+                  "note": "Athaliah destroys the royal offspring after her son’s death."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "speak; spoken",
+          "senses": [
+            {
+              "gloss": "speak, speaking",
+              "definition": "Used in participles for the person speaking.",
+              "evidence": [
+                {
+                  "ref": "Num.32.27",
+                  "role": "defining",
+                  "note": "As my lord is speaking."
+                },
+                {
+                  "ref": "Gen.16.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.5.7",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "spoken",
+              "definition": "A passive participle describing a word uttered aptly.",
+              "evidence": [
+                {
+                  "ref": "Pro.25.11",
+                  "role": "defining",
+                  "note": "A word spoken in its fitting circumstances is compared to gold in silver."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "speak with one another",
+          "senses": [
+            {
+              "gloss": "converse, confer",
+              "definition": "Speak together or among oneself, sometimes in opposition to another.",
+              "evidence": [
+                {
+                  "ref": "Mal.3.16",
+                  "role": "defining",
+                  "note": "Those fearing יַהְוֶה speak with one another."
+                },
+                {
+                  "ref": "Mal.3.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.119.23",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be spoken of",
+          "senses": [
+            {
+              "gloss": "be spoken of",
+              "definition": "Be the subject of speech; in its one explicit finite example, a sister is spoken for in a marriage context.",
+              "evidence": [
+                {
+                  "ref": "Sng.8.8",
+                  "role": "defining",
+                  "note": "The sisters ask what to do on the day she is spoken of."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "speak",
+          "senses": [
+            {
+              "gloss": "speak, be speaking",
+              "definition": "The participle describes a voice or speaker addressing a hearer.",
+              "evidence": [
+                {
+                  "ref": "Num.7.89",
+                  "role": "defining",
+                  "note": "Moses hears the voice speaking to him from above the cover."
+                },
+                {
+                  "ref": "Ezk.2.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.43.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "subdue",
+          "senses": [
+            {
+              "gloss": "subdue, bring under control",
+              "definition": "Bring peoples under someone’s power; both examples put those subdued “under” the ruler.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.48",
+                  "role": "defining",
+                  "note": "God subdues peoples under the speaker."
+                },
+                {
+                  "ref": "Psa.47.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אָמַר",
+            "note": "Speaking and saying stand together when speech is introduced.",
+            "evidence": [
+              {
+                "ref": "Exo.6.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "דִּבֵּר עַל לֵב",
+            "gloss": "speak to the heart: reassure, persuade",
+            "evidence": [
+              {
+                "ref": "Gen.50.21",
+                "role": "defining",
+                "note": "Joseph comforts his brothers and speaks to their heart."
+              }
+            ]
+          },
+          {
+            "phrase": "דְּבַר יַהְוֶה",
+            "gloss": "the word of יַהְוֶה",
+            "evidence": [
+              {
+                "ref": "2Ki.7.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מִדְבָּר",
+      "pos": "noun",
+      "gloss": "wilderness; mouth, speech",
+      "bdb": [
+        "d.ai.ap"
+      ],
+      "senses": [
+        {
+          "gloss": "wilderness, open country",
+          "definition": "Land outside settled or cultivated habitation, often used for grazing but also described as dry and dangerous.",
+          "evidence": [
+            {
+              "ref": "Jer.2.6",
+              "role": "defining",
+              "note": "The wilderness is described as desert, pits, dryness and death-shadow."
+            },
+            {
+              "ref": "Exo.3.1",
+              "role": "defining",
+              "note": "Moses leads the flock to the far side of the wilderness."
+            },
+            {
+              "ref": "Gen.14.6",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "mouth, speech",
+          "definition": "The mouth as the organ of speech, or the speech itself. The one occurrence stands beside the lips and is called lovely.",
+          "evidence": [
+            {
+              "ref": "Sng.4.3",
+              "role": "defining",
+              "note": "Your lips are like scarlet thread, and your מִדְבָּר is lovely."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "The wilderness is open land, including pasture and dry or uninhabited country. The same written noun in Song 4:3 refers to the woman’s mouth or speech; its relation to the landscape-word is unclear.",
+      "greek": [
+        {
+          "lemma": "ἔρημος",
+          "gloss": "wilderness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.95.8 (LXX 94:8), בַּמִּדְבָּר → ἐν τῇ ἐρήμῳ"
+            },
+            {
+              "ref": "Heb.3.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֶּבֶר",
+      "pos": "noun",
+      "gloss": "pestilence, plague",
+      "bdb": [
+        "d.ai.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "pestilence, plague",
+          "definition": "A deadly outbreak, distinguished from famine and the sword.",
+          "evidence": [
+            {
+              "ref": "Exo.9.3",
+              "role": "defining",
+              "note": "A heavy plague strikes the livestock."
+            },
+            {
+              "ref": "Num.14.12",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.8.37",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "A destructive outbreak affecting people or animals. No derivation from the divine word or from speaking is established by these occurrences."
+    },
+    {
+      "lemma": "דְּבִיר",
+      "pos": "noun",
+      "gloss": "inner sanctuary",
+      "bdb": [
+        "d.ai.aj"
+      ],
+      "senses": [
+        {
+          "gloss": "inner sanctuary",
+          "definition": "The innermost temple chamber, identified with the holy of holies and the place of the ark.",
+          "evidence": [
+            {
+              "ref": "1Ki.6.19",
+              "role": "defining",
+              "note": "The room is prepared within the house to hold the ark."
+            },
+            {
+              "ref": "2Ch.5.7",
+              "role": "defining",
+              "note": "The ark is brought into the דְּבִיר, the holy of holies."
+            },
+            {
+              "ref": "Psa.28.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "The inner room of the temple where the ark is placed. Arabic “rear” supplies a possible comparison for its position, but the room is defined by the temple passages, not by a proposed derivation.",
+      "cognate_ids": [
+        "ar-dabr-rear"
+      ]
+    },
+    {
+      "lemma": "דִּבְרָה",
+      "pos": "noun",
+      "gloss": "cause, reason; manner",
+      "bdb": [
+        "d.ai.af"
+      ],
+      "senses": [
+        {
+          "gloss": "cause, case",
+          "definition": "The cause or case committed to someone.",
+          "evidence": [
+            {
+              "ref": "Job.5.8",
+              "role": "defining",
+              "note": "The speaker would commit his cause to God."
+            }
+          ]
+        },
+        {
+          "gloss": "reason, purpose",
+          "definition": "In expressions with עַל, the reason or purpose for something.",
+          "evidence": [
+            {
+              "ref": "Ecc.8.2",
+              "role": "defining",
+              "note": "The king’s command is kept on account of the oath of God."
+            },
+            {
+              "ref": "Ecc.7.14",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "manner, order",
+          "definition": "The manner or order in which someone serves; the form and construction in this verse need review.",
+          "evidence": [
+            {
+              "ref": "Psa.110.4",
+              "role": "defining",
+              "note": "Priest forever עַל דִּבְרָתִי מַלְכִּי צֶדֶק; Hebrews expounds this as according to Melchizedek’s order."
+            },
+            {
+              "ref": "Heb.7.17",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "דְּבוֹרָה",
+      "pos": "noun",
+      "gloss": "bee",
+      "bdb": [
+        "d.ai.ag"
+      ],
+      "senses": [
+        {
+          "gloss": "bee",
+          "definition": "The stinging insect, in a swarm or producing honey.",
+          "evidence": [
+            {
+              "ref": "Jdg.14.8",
+              "role": "defining",
+              "note": "Bees and honey are found in the lion’s body."
+            },
+            {
+              "ref": "Deu.1.44",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.7.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.118.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-dabr-bees"
+      ],
+      "summary": "A bee, often in a swarm. Its Arabic counterpart supports the insect sense; it does not establish a derivation from buzzing or speech."
+    },
+    {
+      "lemma": "דֹּבֶר",
+      "pos": "noun",
+      "gloss": "pasture, grazing place",
+      "bdb": [
+        "d.ai.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "pasture, fold",
+          "definition": "The place in which a flock is gathered or grazes.",
+          "evidence": [
+            {
+              "ref": "Mic.2.12",
+              "role": "defining",
+              "note": "Like a flock within its דֹּבֶר; gathering sheep fixes the pastoral setting."
+            }
+          ]
+        },
+        {
+          "gloss": "pasture or accustomed manner (uncertain)",
+          "definition": "The phrase כְּדָבְרָם describes how or where lambs graze; this verse alone does not resolve the distinction.",
+          "evidence": [
+            {
+              "ref": "Isa.5.17",
+              "role": "defining",
+              "note": "Lambs will graze כְּדָבְרָם after the judgment on the proud."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "A place for a flock in Micah. Isaiah’s matching form may describe its pasture or its accustomed manner; the connection with speech is unclear."
+    },
+    {
+      "lemma": "דִּבֵּר",
+      "pos": "noun",
+      "gloss": "speech, word",
+      "senses": [
+        {
+          "gloss": "speech, word",
+          "definition": "What is spoken, here denied to the prophets who are called wind.",
+          "evidence": [
+            {
+              "ref": "Jer.5.13",
+              "role": "defining",
+              "note": "The דִּבֵּר is not in them."
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "דֹּבְרוֹת",
+      "pos": "noun",
+      "gloss": "rafts",
+      "bdb": [
+        "d.ai.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "rafts",
+          "definition": "Floating assemblies of timber that can be broken apart at their destination.",
+          "evidence": [
+            {
+              "ref": "1Ki.5.23",
+              "role": "defining",
+              "note": "The timber is carried by sea as rafts and disassembled for delivery."
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "summary": "Timbers bound for transport by sea. Its one context fixes the object, but not a derivation from leading or speech."
+    },
+    {
+      "lemma": "דַּבֶּרֶת",
+      "pos": "noun",
+      "gloss": "word, instruction",
+      "bdb": [
+        "d.ai.am"
+      ],
+      "senses": [
+        {
+          "gloss": "words, instruction",
+          "definition": "Words received by the people at the feet of the one instructing them. The form occurs only here and the surrounding syntax is difficult.",
+          "evidence": [
+            {
+              "ref": "Deu.33.3",
+              "role": "defining",
+              "note": "He receives from your מִדַּבְּרֹת."
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "דִּבְרָה",
+      "pos": "noun",
+      "gloss": "reason, purpose",
+      "bdb": [
+        "xd.ac.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "reason, purpose",
+          "definition": "In עַל דִּבְרַת דִּי, introduce the purpose for which something occurs.",
+          "evidence": [
+            {
+              "ref": "Dan.2.30",
+              "role": "defining",
+              "note": "The mystery is revealed so that the king may know its interpretation."
+            },
+            {
+              "ref": "Dan.4.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "דברה",
+      "gender": "f"
+    },
+    {
+      "lemma": "דְּבַר",
+      "pos": "verb",
+      "gloss": "lead, take; guide, manage",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "take, lead",
+          "senses": [
+            {
+              "gloss": "take along, lead",
+              "definition": "Take someone with oneself or lead someone to a place.",
+              "evidence": [
+                {
+                  "ref": "Mat.2.13",
+                  "role": "defining",
+                  "note": "Joseph is told to take the child and his mother."
+                },
+                {
+                  "ref": "Mat.4.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mat.15.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be led, be taken",
+          "senses": [
+            {
+              "gloss": "be led or taken",
+              "definition": "Be conducted or carried by another.",
+              "evidence": [
+                {
+                  "ref": "Mat.4.1",
+                  "role": "defining",
+                  "note": "Jesus is led by the Spirit into the wilderness."
+                },
+                {
+                  "ref": "Mat.24.40",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "guide, manage",
+          "senses": [
+            {
+              "gloss": "guide, direct, administer",
+              "definition": "Direct someone’s course or manage a household or community.",
+              "evidence": [
+                {
+                  "ref": "Jhn.16.13",
+                  "role": "defining",
+                  "note": "The Spirit of truth will guide the disciples into all truth."
+                },
+                {
+                  "ref": "1Ti.3.4",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-dabbara"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be guided; conduct oneself",
+          "senses": [
+            {
+              "gloss": "be guided",
+              "definition": "Have one’s course directed by another.",
+              "evidence": [
+                {
+                  "ref": "Rom.8.14",
+                  "role": "defining",
+                  "note": "Those led by God’s Spirit are God’s sons."
+                },
+                {
+                  "ref": "Gal.5.18",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-dabbara"
+              ]
+            },
+            {
+              "gloss": "conduct oneself",
+              "definition": "Live or behave in a stated manner.",
+              "evidence": [
+                {
+                  "ref": "Php.1.27",
+                  "role": "defining",
+                  "note": "Conduct yourselves worthily of the good news."
+                },
+                {
+                  "ref": "Act.23.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "מַדְבְּרָא",
+      "pos": "noun",
+      "gloss": "wilderness, desert",
+      "senses": [
+        {
+          "gloss": "wilderness",
+          "definition": "Open or uninhabited land, in the narratives of John and Jesus and of Israel’s journey.",
+          "evidence": [
+            {
+              "ref": "Mat.4.1",
+              "role": "defining",
+              "note": "Jesus is led into the wilderness."
+            },
+            {
+              "ref": "Mrk.1.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.6.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m"
+    },
+    {
+      "lemma": "דַּבְרָא",
+      "pos": "noun",
+      "gloss": "open country",
+      "senses": [
+        {
+          "gloss": "open country, wilderness",
+          "definition": "Land away from habitation, where plants grow or sheep are left.",
+          "evidence": [
+            {
+              "ref": "Mat.6.28",
+              "role": "defining",
+              "note": "The lilies grow in the open country."
+            },
+            {
+              "ref": "Luk.15.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Mrk.6.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m"
+    },
+    {
+      "lemma": "דּוּבָּרָא",
+      "pos": "noun",
+      "gloss": "conduct, manner of life",
+      "senses": [
+        {
+          "gloss": "conduct, way of life",
+          "definition": "The manner in which someone lives and acts.",
+          "evidence": [
+            {
+              "ref": "Act.26.4",
+              "role": "defining",
+              "note": "Paul refers to his conduct from his youth."
+            },
+            {
+              "ref": "2Ti.3.10",
+              "role": "defining"
+            },
+            {
+              "ref": "1Pe.3.1",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "civic life, commonwealth",
+          "definition": "The life or polity shared by a people.",
+          "evidence": [
+            {
+              "ref": "Eph.2.12",
+              "role": "defining",
+              "note": "The addressees had been strangers to Israel’s commonwealth."
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m"
+    },
+    {
+      "lemma": "מַדְבְּרָיָא",
+      "pos": "adjective",
+      "gloss": "desert, uninhabited",
+      "senses": [
+        {
+          "gloss": "desert, uninhabited",
+          "definition": "Describes the road to Gaza as a wilderness road; attested only here.",
+          "evidence": [
+            {
+              "ref": "Act.8.26",
+              "role": "defining",
+              "note": "Philip is directed along the desert road."
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "מְדַבְּרָנָא",
+      "pos": "noun",
+      "gloss": "leader, guide",
+      "senses": [
+        {
+          "gloss": "guide, leader",
+          "definition": "One who directs others or is responsible for them.",
+          "evidence": [
+            {
+              "ref": "Mat.23.10",
+              "role": "defining",
+              "note": "The disciples have one leader, the Messiah."
+            },
+            {
+              "ref": "Act.1.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Heb.13.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-dabbara"
+      ]
+    },
+    {
+      "lemma": "מְדַבְּרָנוּתָא",
+      "pos": "noun",
+      "gloss": "administration, stewardship",
+      "senses": [
+        {
+          "gloss": "administration, stewardship",
+          "definition": "The ordering of affairs or a responsibility entrusted to someone.",
+          "evidence": [
+            {
+              "ref": "Eph.1.10",
+              "role": "defining",
+              "note": "The administration of the fullness of times."
+            },
+            {
+              "ref": "Eph.3.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Col.1.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-dabbara"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-dabbara",
+      "lang": "ar",
+      "form": "دَبَّرَ",
+      "translit": "dabbara",
+      "gloss": "manage, conduct, regulate affairs",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 844, root دبر, stem II دَبَّرَ (n11990)",
+          "url": "https://www.laneslexicon.com/word/%D8%AF%D8%A8%D8%B1/n11990"
+        }
+      ],
+      "note": "A comparison for managing and directing, particularly the Syriac family. The same dictionary entry marks the report-transmission sense as disputed; it is not used to establish Arabic “speak”."
+    },
+    {
+      "id": "ar-dabr-bees",
+      "lang": "ar",
+      "form": "دَبْر",
+      "translit": "dabr",
+      "gloss": "swarm of bees; hornets",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 845, root دبر, دَبْرٌ (n11995), insect sense",
+          "url": "https://www.laneslexicon.com/word/%D8%AF%D8%A8%D8%B1/n11995"
+        }
+      ]
+    },
+    {
+      "id": "ar-dabr-rear",
+      "lang": "ar",
+      "form": "دَبْر",
+      "translit": "dabr",
+      "gloss": "rear, the part behind",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 845, root دبر, دَبْرٌ (n11995), first sense",
+          "url": "https://www.laneslexicon.com/word/%D8%AF%D8%A8%D8%B1/n11995"
+        }
+      ],
+      "note": "A possible comparison for דְּבִיר as the room at the rear; the shared spelling does not establish the derivation."
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "enduring-word",
+      "statement": "Isaiah sets withering grass and fading flowers against the enduring word of God (Isa 40:8). First Peter quotes that contrast and identifies the enduring word as the good news announced to its hearers (1Pe 1:24–25). The word’s endurance is asserted of God’s message; דָּבָר elsewhere also names ordinary speech, matters, and objects.",
+      "evidence": [
+        {
+          "ref": "Isa.40.8"
+        },
+        {
+          "ref": "1Pe.1.24"
+        },
+        {
+          "ref": "1Pe.1.25"
+        }
+      ]
+    }
+  ],
+  "note": "Proper names and the redirect m.ak.ah are omitted. מִדְבָּר’s two meanings share the spelling inventories d.ai.ao/ap; only d.ai.ap is assigned. דֹּבֶר and דִּבֵּר share the three indexed forms in Isa 5:17, Jer 5:13 and Mic 2:12: d.ai.ad is assigned once and the speech noun is left without a BDB key rather than counting that same inventory twice. The support totals are therefore not counts of the separate meanings. The Pual in Sng 8:8 and the destructive Piel in 2Ch 22:10 are included after checking the source even though the brief’s stem summary omits them. The speech and leading families stay together without a reconstructed semantic bridge; so do pestilence, bees, rafts and the sanctuary. Lane’s دبر section is missing from the vendored JSONL; the cited pp. 844–845 were checked in the page scan (https://www.thelastdialogue.org/wp-content/uploads/2020/09/Lanes-Lexicon-Arabic-Dictionary-Root-Word-%D8%AF-Dal.pdf, PDF pp. 6–7) and its linked transcription. Akkadian dabābu is not assumed cognate merely because it means “speak”; the consonants differ. The brief’s Greek-loan leads are not accepted without an etymology."
+}
