@@ -1,0 +1,356 @@
+{
+  "id": "hayah",
+  "root": "היה",
+  "status": "draft",
+  "updated": "2026-11-08",
+  "tags": [
+    "existence",
+    "change",
+    "presence",
+    "covenant"
+  ],
+  "gloss": "be, become, happen",
+  "summary": "הָיָה says that someone or something exists, is in a condition, becomes something, or happens. With a person and לְ it can express possession or a relationship; with עִם it can express presence and help. Its Aramaic counterpart הֲוָה carries these uses in Daniel and Ezra and in the Peshitta.",
+  "words": [
+    {
+      "lemma": "הָיָה",
+      "pos": "verb",
+      "gloss": "be, become, happen",
+      "bdb": [
+        "e.bf.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be; become; happen",
+          "senses": [
+            {
+              "gloss": "be, exist",
+              "definition": "Be present or exist, or be in a stated condition or place.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.2",
+                  "role": "defining",
+                  "note": "The earth was formless and empty: a condition, not a change expressed by the verb itself."
+                },
+                {
+                  "ref": "Gen.2.5",
+                  "role": "defining",
+                  "note": "No shrub was yet in the earth."
+                },
+                {
+                  "ref": "Exo.3.12",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "become",
+              "definition": "Come to be what the following expression names.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.7",
+                  "role": "defining",
+                  "note": "The man became a living נֶפֶשׁ."
+                },
+                {
+                  "ref": "Gen.19.26",
+                  "role": "defining",
+                  "note": "The woman became a pillar of salt."
+                }
+              ],
+              "cognate_ids": [
+                "akk-ewu"
+              ]
+            },
+            {
+              "gloss": "happen, come to pass",
+              "definition": "Introduce an occurrence or mark its taking place in time.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.1",
+                  "role": "defining",
+                  "note": "After these things, the testing of Abraham takes place."
+                },
+                {
+                  "ref": "Gen.1.3",
+                  "role": "defining",
+                  "note": "God speaks, and light comes to be."
+                }
+              ]
+            },
+            {
+              "gloss": "belong to; stand in a relationship",
+              "definition": "With לְ, be someone’s possession, people, God, or other stated relation.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.16",
+                  "role": "defining",
+                  "note": "Livestock and servants belonged to Abram."
+                },
+                {
+                  "ref": "Jer.31.33",
+                  "role": "defining",
+                  "note": "I will be their God, and they will be my people."
+                }
+              ]
+            },
+            {
+              "gloss": "be with",
+              "definition": "Be present with someone; where the context promises help, support that person.",
+              "evidence": [
+                {
+                  "ref": "Exo.3.12",
+                  "role": "defining",
+                  "note": "אֶהְיֶה עִמָּךְ promises Moses God’s presence."
+                },
+                {
+                  "ref": "Gen.39.2",
+                  "role": "defining",
+                  "note": "יַהְוֶה was with Joseph, and Joseph prospered."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "happen; become; be brought into a condition",
+          "senses": [
+            {
+              "gloss": "happen, be done",
+              "definition": "Of an event that comes about, often something exceptional.",
+              "evidence": [
+                {
+                  "ref": "Exo.11.6",
+                  "role": "defining",
+                  "note": "A cry unlike anything that has happened before."
+                },
+                {
+                  "ref": "Deu.4.32",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.19.30",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "become",
+              "definition": "Enter a state or relationship.",
+              "evidence": [
+                {
+                  "ref": "Deu.27.9",
+                  "role": "defining",
+                  "note": "Today you have become a people to יַהְוֶה."
+                }
+              ],
+              "cognate_ids": [
+                "akk-ewu"
+              ]
+            },
+            {
+              "gloss": "be spent, exhausted",
+              "definition": "In Daniel’s account, be left overcome or spent. The precise force in these two passages is less certain than the ordinary sense “happen”.",
+              "evidence": [
+                {
+                  "ref": "Dan.8.27",
+                  "role": "defining",
+                  "note": "Daniel was overcome and ill for days."
+                },
+                {
+                  "ref": "Dan.2.1",
+                  "role": "defining",
+                  "note": "The king’s spirit is troubled and his sleep is gone."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γίνομαι",
+          "gloss": "become, happen",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.7, וַיְהִי → ἐγένετο"
+            },
+            {
+              "ref": "1Co.15.45"
+            }
+          ]
+        },
+        {
+          "lemma": "εἰμί",
+          "gloss": "be",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.31.33, וְהָיִיתִי → ἔσομαι"
+            },
+            {
+              "ref": "Heb.8.10"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "אֶהְיֶה עִמָּךְ",
+            "gloss": "I will be with you",
+            "evidence": [
+              {
+                "ref": "Exo.3.12",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "אֶהְיֶה אֲשֶׁר אֶהְיֶה",
+            "gloss": "I will be who I will be",
+            "evidence": [
+              {
+                "ref": "Exo.3.14",
+                "role": "defining",
+                "note": "The same אֶהְיֶה as in the promise of 3:12; the formula is God’s answer to Moses’s question about his name."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הֲוָה",
+      "pos": "verb",
+      "gloss": "be, become, happen",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be, become, happen",
+          "senses": [
+            {
+              "gloss": "be, become",
+              "definition": "Exist in a condition, or come into it.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.20",
+                  "role": "defining",
+                  "note": "May God’s name be blessed."
+                },
+                {
+                  "ref": "Dan.4.22",
+                  "role": "defining",
+                  "note": "Your dwelling will be with the animals."
+                }
+              ],
+              "cognate_ids": [
+                "akk-ewu"
+              ]
+            },
+            {
+              "gloss": "happen",
+              "definition": "Come about, including a future event.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.28",
+                  "role": "defining",
+                  "note": "What will happen at the end of days."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "הוה"
+    },
+    {
+      "lemma": "הֱוָא",
+      "pos": "verb",
+      "gloss": "be, become, happen",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be, become, happen",
+          "senses": [
+            {
+              "gloss": "become, come to be",
+              "definition": "Come into existence or a stated condition.",
+              "evidence": [
+                {
+                  "ref": "Jhn.1.3",
+                  "role": "defining",
+                  "note": "The Peshitta says that everything came to be through him."
+                },
+                {
+                  "ref": "Jhn.1.14",
+                  "role": "defining",
+                  "note": "The word became flesh."
+                }
+              ],
+              "cognate_ids": [
+                "akk-ewu"
+              ]
+            },
+            {
+              "gloss": "happen",
+              "definition": "Of an event that occurs.",
+              "evidence": [
+                {
+                  "ref": "Mat.1.22",
+                  "role": "defining",
+                  "note": "All this happened so that what was spoken would be fulfilled."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "הוה"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-ewu",
+      "lang": "akk",
+      "form": "ewû",
+      "translit": "ewû",
+      "gloss": "become; make into",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000075680, ewû [become] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000075680.html"
+        }
+      ],
+      "note": "The Akkadian verb supplies a comparison for becoming, rather than every use of Hebrew “be”."
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "divine-presence",
+      "statement": "In Exodus 3:12 יַהְוֶה answers Moses’s fear with אֶהְיֶה עִמָּךְ, “I will be with you”; in 3:14 he uses אֶהְיֶה in answering the question about his name. The name-answer belongs to this promise of his own presence and action. The verb itself also describes ordinary created things and does not by itself define a divine attribute.",
+      "evidence": [
+        {
+          "ref": "Exo.3.12"
+        },
+        {
+          "ref": "Exo.3.13"
+        },
+        {
+          "ref": "Exo.3.14"
+        },
+        {
+          "ref": "Gen.1.2"
+        }
+      ]
+    }
+  ],
+  "note": "Mic 2:4 נִהְיָה is filed by spelling but analysed under נהה, and is not evidence for this verb. The Aramaic הוה words are included under their own root key; the brief for היה does not find them automatically. The special Niphal uses in Dan 2:1 and 8:27 need review. No separate derivation of the divine name is asserted."
+}
