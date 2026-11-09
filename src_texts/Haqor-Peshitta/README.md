@@ -1426,10 +1426,26 @@ Source checks for Luke 10:
 
 Source checks for Luke 11:
 
+- The chapter's 238 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Eleven remain:
+  possession, a resumed subject, two predicates with datives, three
+  generic human designations, two compound prepositions, the hypocrite
+  designation, and the accusation idiom. Their exact positions and
+  linguistic reasons are in the ledger. Ordinary negatives, auxiliaries,
+  modifiers, noun phrases, and clause constituents have separate owners.
 - In 11:1 the address is "Our Lord". In 11:2 the prayer explicitly has
   "Our Father in heaven" and the petition for his will on earth as in
   heaven. In 11:3 the bread is "of our need"; in 11:4 sins are forgiven,
   while the following clause names everyone indebted to us.
+- In 11:5 the visitor has a friend and goes to him; "midnight" keeps
+  the half/middle and night words separately linked. In 11:6 "nothing"
+  separates the negative existential from the something noun, and 11:7
+  "cannot" separates ability from negation. In 11:8 the final clause
+  expresses how much the visitor needs, rather than another asking verb.
+- In 11:11-12 the rhetorical question particle owns English "would",
+  while the offering verb and its objects remain separate. In 11:13 the
+  pronouns before and after the qualifying clause identify one subject;
+  the copula, evil quality, knowing, gifts, and giving stay separate.
 - In 11:12 `bartha` means egg in this context, despite the incomplete
   supplied glosses. The [Comprehensive Aramaic Lexicon's egg sense](https://cal.huc.edu/cal_entry_web.php?lemma=brh+N)
   gives Syriac textual examples, including a stork egg and a bird from
@@ -1437,6 +1453,10 @@ Source checks for Luke 11:
 - In 11:15 the demonstrative means "this one", the subject casting out
   demons. In 11:19 the sons cast them out "by what means", and those sons
   become the judges. In 11:20 the finger of God is explicit.
+- In 11:20 the kingdom's feminine ethical dative adds no participant,
+  while the destination "to you" remains separate. In 11:23 the two
+  copulas are distinct, and the scattering infinitive supplies emphasis
+  separately from the scattering predicate.
 - In 11:25 the return is conditional, "if". In 11:26 both comparisons
   retain "worse than". In 11:27 the woman speaks to him, and in 11:28
   he speaks to her. In 11:29 Jonah's prophet title is explicit.
@@ -1452,6 +1472,10 @@ Source checks for Luke 11:
   In 11:53 Jesus is actively saying these things; Pael `tks` means
   contradict/rebut, as documented in the [CAL entry](https://cal.huc.edu/cal_entry_web.php?lemma=tks+V).
   In 11:54 the final two-word idiom means accusing him, rather than eating.
+- In 11:38 the first/before adverb remains separate from the compound
+  temporal preposition before the meal. In 11:53 the displeasure predicate
+  and its experiencer dative refer to the already named scribes and
+  Pharisees; growing angry and contradicting remain separate predicates.
 
 Source checks for Luke 12:
 
