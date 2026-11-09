@@ -7063,6 +7063,236 @@
           "source": "מֵנ קדִֿימ"
         }
       ]
+    },
+    "44:4": {
+      "sha256": "58d1d403a9eb67cd64385c58cbdba7ec186037b2bfd85154057e4aa2d4cd5d15",
+      "original_shared_spans": 174,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 8,
+          "english": "of the people",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The suffix on rulers anticipates the explicit people genitive. Of the people realizes one resumed possessor while rulers remains separately at 8.",
+          "source": "אַרכֻֿונַוה_י דּעַמָא"
+        },
+        {
+          "verse": 10,
+          "english": "of Jesus",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "The masculine suffix on by-his-name anticipates the following Jesus genitive. Of Jesus expresses one resumed possessor; that by the name remains separately at 6 and the title words at 8 and 9.",
+          "source": "דּבַֿשמֵה דּיֵשֻוע"
+        },
+        {
+          "verse": 10,
+          "english": "whom",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "The relative prefix on d-antun and masculine object suffix on crucified resume the same Jesus. Whom realizes one relative object, with you at 11 and crucified at 12 separately.",
+          "source": "דַּאנ_תֻּונ זקַפֿתֻּונָיה_י"
+        },
+        {
+          "verse": 10,
+          "english": "that very one",
+          "positions": [
+            19,
+            20
+          ],
+          "reason": "Beh b-haw repeats the same instrumental referent, him/that one, emphatically. That very one expresses this pronominal resumption without introducing two agents; by remains separately at 19.",
+          "source": "בֵּה בּהַו"
+        },
+        {
+          "verse": 13,
+          "english": "of Simon",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The masculine suffix on message anticipates Simon in the explicit genitive, followed by John. Of Simon expresses the resumed possessor while the message remains at 2 and John at 4.",
+          "source": "מֵלתֵֿה דּשֵמעֻונ"
+        },
+        {
+          "verse": 13,
+          "english": "which",
+          "positions": [
+            5,
+            7
+          ],
+          "reason": "The relative prefix on d-ayn and feminine object suffix on amruh resume the same feminine message. Which represents that one relative object; they spoke remains at 7 and the openly idiom at 5 and 6.",
+          "source": "דּעִינ אַמרֻוה"
+        },
+        {
+          "verse": 13,
+          "english": "openly",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Ayn b-gle is the idiomatic adverb openly, literally in the open eye. Eye does not name another participant or add an act of seeing; the relative prefix at 5 is represented separately through which.",
+          "source": "דּעִינ בַּגֿלֵא"
+        },
+        {
+          "verse": 16,
+          "english": "these",
+          "positions": [
+            2,
+            4
+          ],
+          "reason": "The plural pronominal complement lhun is resumed by these men. These realizes the pronominal/demonstrative resumption while with is at 2 and men at 3 separately.",
+          "source": "להֻונ הָלֵינ"
+        },
+        {
+          "verse": 16,
+          "english": "of Jerusalem",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "The feminine suffix on residents anticipates Jerusalem in the following genitive. Of Jerusalem expresses the resumed city possessor; the residents remains separately at 12.",
+          "source": "עָמֻורֵיה דֻּאורִשלֵמ"
+        },
+        {
+          "verse": 20,
+          "english": "of what",
+          "positions": [
+            4,
+            8
+          ],
+          "reason": "The relative what and masculine object suffix on speak resume the same things seen and heard. Of what realizes the single relative object; speaking remains separately at 8 and the two negative constructions outside.",
+          "source": "דּמָא נמַללִיוה_י"
+        },
+        {
+          "verse": 21,
+          "english": "to punish",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Sam b-risha, literally put on the head, is the Syriac idiom punish. CAL swm+V body-part idiom explicitly cites Acts 4:21 for this sense. Them is separately linked to the suffix at 10; no literal new head event is invented.",
+          "source": "דַּנסִימֻונ בּרִשהֻונ"
+        },
+        {
+          "verse": 22,
+          "english": "whom",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The relative prefix on d-hwat and pronominal beh resume the same healed man. Whom expresses that single relative object, with on separately at 11 and had occurred at 10.",
+          "source": "דַּהוָתֿ בֵּה"
+        },
+        {
+          "verse": 29,
+          "english": "openly",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Ayn b-gle is the adverbial idiom openly. The eye and revealed elements together denote open proclamation, not another observer. The d-prefix at 8 separately introduces that; the modal auxiliary and proclaiming remain at 10 and 11.",
+          "source": "דּעִינ בַּגֿלֵא"
+        },
+        {
+          "verse": 30,
+          "english": "of",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The masculine suffix on in-his-name anticipates the following Son genitive. Of expresses the one resumed genitive relation, with your and Son at 9, holy at 10 and Jesus at 11 separately; the name remains at 8.",
+          "source": "בַּשמֵה דַּבֿרָכֿ"
+        },
+        {
+          "verse": 31,
+          "english": "openly",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "Ayn b-gle is the same idiomatic openly expression as in 13 and 29. It qualifies the speaking without making eye a separate participant; the word and God retain independent owners.",
+          "source": "עִינ בַּגֿלֵא"
+        },
+        {
+          "verse": 32,
+          "english": "owned",
+          "positions": [
+            19,
+            20
+          ],
+          "reason": "The possessive-state participle qne plus past hwa denotes property he owned at that time. Owned realizes one past stative predicate without the misleading episodic was owning or the implication of lost prior ownership in had owned. The relative prefix and subject remain separately at 19. CAL qny+V records the active possessive use of the passive participle.",
+          "source": "דַּקנֵא ה_וָא"
+        },
+        {
+          "verse": 32,
+          "english": "had",
+          "positions": [
+            26,
+            27,
+            28
+          ],
+          "reason": "The relative existential ith plus past hwa and plural possessor lhun forms the single past possession predicate had. They is separately linked to the possessor at 28; all and that remain outside.",
+          "source": "דִּאיתֿ ה_וָא להֻונ"
+        },
+        {
+          "verse": 33,
+          "english": "of Jesus",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The masculine suffix on resurrection anticipates Jesus in the following genitive. Of Jesus expresses one resumed possessor; the resurrection and Messiah remain separately linked.",
+          "source": "קיָמתֵּה דּיֵשֻוע"
+        },
+        {
+          "verse": 34,
+          "english": "owned",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The plural possessive-state participle qneyn plus past hwa denotes those who owned fields and houses at that time. Owned expresses the single past stative possession predicate, avoiding an episodic was owning or an implication of ceased prior ownership. Who is separately at 7; property and sale predicates remain outside. Compare CAL qny+V passive participle with active possession meaning.",
+          "source": "דַּקנֵינ ה_וַו"
+        },
+        {
+          "verse": 35,
+          "english": "of the apostles",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The plural suffix on feet anticipates the explicit apostles genitive. Of the apostles expresses the one resumed possessor while at and the feet remain separate.",
+          "source": "רֵגֿלַיהֻונ דַּשלִיחֵא"
+        },
+        {
+          "verse": 37,
+          "english": "had",
+          "positions": [
+            0,
+            1,
+            2
+          ],
+          "reason": "The existential ith plus past hwa and singular possessor leh forms the one past possession predicate had, whose subject Joseph is explicit in the preceding verse. A field remains separately at 3; no extra owner or clause is introduced.",
+          "source": "אִיתֿ ה_וָא לֵה"
+        },
+        {
+          "verse": 37,
+          "english": "of the apostles",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "The plural suffix on feet anticipates the apostles genitive. Of the apostles expresses one resumed possessor; before and the feet remain separately linked.",
+          "source": "רֵגֿלַיהֻונ דַּשלִיחֵא"
+        }
+      ]
     }
   }
 }
