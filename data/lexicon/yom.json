@@ -2,27 +2,29 @@
   "id": "yom",
   "root": "יומ",
   "status": "draft",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "tags": [
     "time",
     "day",
     "night",
+    "life",
     "judgment"
   ],
-  "gloss": "day; time",
-  "summary": "יוֹם names daylight as opposed to night, and also the counted day that includes evening and morning. It can locate an event (“on the day when”), or in the plural describe the span of a life or a period of history. יוֹמָם means by day; Biblical Aramaic and the Peshitta use the same day-word.",
+  "gloss": "day; time; (pl.) lifetime, years",
+  "summary": "יוֹם names the light part of the cycle as against night, and the counted day of evening and morning. With the article it is “today”, “this day”; with בְּ it marks the time when something happens, without fixing its length; joined to an event or to Yahweh it names the day that event or his judgment defines. In the plural the days are a lifetime, a reign or an age, and a whole year’s round of days. The cognates in Ugaritic, Phoenician, Moabite, Sabaic, Akkadian, Aramaic and Arabic carry the same day-word with the same range.",
   "words": [
     {
       "lemma": "יוֹם",
       "pos": "noun",
-      "gloss": "day; time",
+      "gloss": "day; today; time; (pl.) lifetime, years",
       "bdb": [
         "j.ay.aa"
       ],
       "senses": [
         {
-          "gloss": "daylight",
-          "definition": "The light part of the cycle, contrasted with night.",
+          "id": "daylight",
+          "gloss": "daylight, the day as against night",
+          "definition": "The light part of the cycle, set against night, which the sun governs.",
           "evidence": [
             {
               "ref": "Gen.1.5",
@@ -30,70 +32,223 @@
               "note": "God calls the light יוֹם and the darkness לַיְלָה."
             },
             {
-              "ref": "Gen.1.16",
+              "ref": "Gen.1.14",
               "role": "defining",
+              "note": "The lights divide between the day and the night."
+            },
+            {
+              "ref": "Gen.1.16",
               "note": "The greater light governs the day; the lesser governs the night."
+            },
+            {
+              "ref": "Gen.8.22",
+              "note": "Day and night shall not cease while the earth remains."
             }
+          ],
+          "cognate_ids": [
+            "ar-yawm",
+            "akk-umu"
           ]
         },
         {
-          "gloss": "counted day",
-          "definition": "A day counted in sequence, including the alternation of evening and morning; used for dates and durations.",
+          "id": "counted-day",
+          "gloss": "a day, counted",
+          "definition": "A day counted in sequence, made up of evening and morning; used for dates (the fifteenth day of the month) and for durations (six days).",
           "evidence": [
             {
               "ref": "Gen.1.5",
               "role": "defining",
-              "note": "Evening and morning mark one day."
+              "note": "Evening and morning make one day."
             },
             {
               "ref": "Exo.20.9",
               "role": "defining",
-              "note": "Six days of labor precede the seventh day of rest."
+              "note": "Six days of labour precede the seventh day of rest."
             },
             {
               "ref": "Lev.23.34",
-              "role": "defining"
+              "role": "defining",
+              "note": "On the fifteenth day of the seventh month: a date by the day of the month."
             }
+          ],
+          "cognate_ids": [
+            "ar-yawm",
+            "akk-umu",
+            "uga-ym",
+            "phn-ym",
+            "sab-ywm",
+            "arc-yoma"
           ]
         },
         {
-          "gloss": "time, occasion; when",
-          "definition": "A day specified by an event; with בְּ and an infinitive, often the time when that event happens, without itself specifying its duration.",
+          "id": "today",
+          "gloss": "today, this day; now",
+          "definition": "With the article, הַיּוֹם, the present day, the day on which the speaker speaks; כַּיּוֹם, “as the day”, now, at this time.",
+          "evidence": [
+            {
+              "ref": "Psa.95.7",
+              "role": "defining",
+              "note": "הַיּוֹם אִם־בְּקֹלוֹ תִשְׁמָעוּ, “today, if you hear his voice”; Heb 4:7 expounds it as a day God appoints, “Today”."
+            },
+            {
+              "ref": "Heb.4.7",
+              "role": "defining",
+              "note": "“He again appoints a certain day, ‘Today’”, quoting Psa 95:7; the Peshitta has יַוְמָנָא."
+            },
+            {
+              "ref": "Gen.4.14",
+              "note": "“You have driven me out today.”"
+            },
+            {
+              "ref": "Psa.2.7",
+              "note": "“Today I have begotten you”, quoted in Act 13:33 and Heb 5:5."
+            },
+            {
+              "ref": "Gen.25.31",
+              "note": "מִכְרָה כַיּוֹם, “sell me now (first) your birthright”."
+            },
+            {
+              "ref": "Deu.11.26",
+              "note": "“I am setting before you today a blessing and a curse.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-umu",
+            "akk-uma",
+            "gez-yom",
+            "arc-yomana"
+          ],
+          "kin": [
+            "syc-today"
+          ]
+        },
+        {
+          "id": "when",
+          "gloss": "the time when; on the day that",
+          "definition": "With בְּ and an infinitive or clause, the time when something happens, without fixing its length: the day stands for the occasion.",
           "evidence": [
             {
               "ref": "Gen.2.4",
               "role": "defining",
-              "note": "בְּיוֹם עֲשׂוֹת describes the making of earth and heavens."
+              "note": "בְּיוֹם עֲשׂוֹת covers the making of earth and heavens, which Gen 1 spreads over six days."
+            },
+            {
+              "ref": "Num.7.84",
+              "role": "defining",
+              "note": "“The dedication of the altar, בְּיוֹם הִמָּשַׁח אֹתוֹ”, sums up offerings brought over twelve days (Num 7:78)."
+            },
+            {
+              "ref": "Num.3.1",
+              "note": "“In the day Yahweh spoke with Moses on Mount Sinai.”"
             },
             {
               "ref": "Exo.10.28",
-              "role": "defining",
-              "note": "On the day you see my face, you will die."
+              "note": "“In the day you see my face you shall die.”"
             }
+          ],
+          "cognate_ids": [
+            "akk-umu",
+            "sab-ywm"
           ]
         },
         {
-          "gloss": "days of a life or period",
-          "definition": "In the plural, the duration of life or the period associated with a person or event.",
+          "id": "day-of-event",
+          "gloss": "the day of an event; a day of battle or judgment",
+          "definition": "A day named by what happens on it or by whom it belongs to: the day of Midian’s defeat, the day of Jezreel, the day of Jerusalem’s fall, the day of Yahweh.",
+          "evidence": [
+            {
+              "ref": "Isa.9.3",
+              "role": "defining",
+              "note": "כְּיוֹם מִדְיָן, “as in the day of Midian”: the day is the battle (Jdg 7)."
+            },
+            {
+              "ref": "Psa.137.7",
+              "role": "defining",
+              "note": "“The day of Jerusalem”, when Edom said “Lay it bare.”"
+            },
+            {
+              "ref": "Hos.2.2",
+              "note": "“Great is the day of Jezreel.”"
+            },
+            {
+              "ref": "Amo.5.18",
+              "note": "The day of Yahweh: darkness, not light."
+            }
+          ],
+          "cognate_ids": [
+            "ar-yawm",
+            "sab-ywm",
+            "phn-ym"
+          ]
+        },
+        {
+          "id": "lifetime",
+          "gloss": "(pl.) days of a life, a reign or an age",
+          "definition": "In the plural, the span of a person’s life or reign, or a period of history.",
           "evidence": [
             {
               "ref": "Gen.5.5",
               "role": "defining",
-              "note": "All Adam’s days total 930 years."
+              "note": "All Adam’s days were 930 years."
+            },
+            {
+              "ref": "Psa.90.10",
+              "role": "defining",
+              "note": "“The days of our years are seventy years.”"
             },
             {
               "ref": "Jer.3.6",
-              "role": "defining",
-              "note": "The days of King Josiah locate the prophecy in his reign."
+              "note": "“In the days of Josiah the king”: a reign."
+            },
+            {
+              "ref": "Gen.24.1",
+              "note": "Abraham was old, בָּא בַיָּמִים, “gone into days”."
+            },
+            {
+              "ref": "Deu.4.40",
+              "note": "“That you may prolong days on the land.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-umu",
+            "phn-ym",
+            "moab-ym",
+            "arc-yoma"
+          ],
+          "senses": [
+            {
+              "id": "year",
+              "gloss": "(pl.) a year, the year’s round of days",
+              "definition": "The plural יָמִים, “days”, for a full year: the yearly sacrifice, a yearly wage, a year’s right of redemption.",
+              "evidence": [
+                {
+                  "ref": "Lev.25.29",
+                  "role": "defining",
+                  "note": "Redemption lasts “until the end of the year (שְׁנַת) of its sale: יָמִים shall be its redemption”."
+                },
+                {
+                  "ref": "1Sa.1.21",
+                  "role": "defining",
+                  "note": "זֶבַח הַיָּמִים, the yearly sacrifice, which 1Sa 1:3 says Elkanah went up to offer “from days to days”."
+                },
+                {
+                  "ref": "1Sa.2.19",
+                  "note": "Hannah brings a robe מִיָּמִים יָמִימָה when she goes up for זֶבַח הַיָּמִים."
+                },
+                {
+                  "ref": "Jdg.17.10",
+                  "note": "Ten pieces of silver לַיָּמִים, “by the year”."
+                },
+                {
+                  "ref": "1Sa.27.7",
+                  "note": "David stays in Philistine country יָמִים וְאַרְבָּעָה חֳדָשִׁים, “a year and four months”."
+                }
+              ]
             }
           ]
         }
       ],
       "gender": "m",
-      "cognate_ids": [
-        "ar-yawm",
-        "akk-umu"
-      ],
       "greek": [
         {
           "lemma": "ἡμέρα",
@@ -101,13 +256,34 @@
           "evidence": [
             {
               "source": "macula-lxx",
-              "locator": "Psa.95.7 (LXX 94:7), הַיּוֹם → σήμερον; Psa.95.8, כְּיוֹם → κατὰ τὴν ἡμέραν"
+              "locator": "Psa.95.8, כְּיוֹם → κατὰ τὴν ἡμέραν; ἡμέρα renders יוֹם ×1723"
+            },
+            {
+              "ref": "Heb.3.8"
+            },
+            {
+              "ref": "Act.2.20",
+              "note": "“The great day of the Lord”, quoting Joel’s יוֹם יַהְוֶה."
+            }
+          ]
+        },
+        {
+          "lemma": "σήμερον",
+          "gloss": "today",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.95.7 (LXX 94:7), הַיּוֹם → σήμερον; σήμερον renders יוֹם ×160"
             },
             {
               "ref": "Heb.3.7"
             },
             {
-              "ref": "Heb.3.8"
+              "ref": "Heb.4.7"
+            },
+            {
+              "ref": "Heb.5.5",
+              "note": "Quoting Psa 2:7, אֲנִי הַיּוֹם יְלִדְתִּיךָ."
             }
           ]
         }
@@ -121,6 +297,23 @@
               {
                 "ref": "Gen.1.5",
                 "role": "defining"
+              },
+              {
+                "ref": "Gen.8.22"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "שָׁנָה",
+            "note": "Days stand beside years for a life or for the round of a year.",
+            "evidence": [
+              {
+                "ref": "Psa.90.10"
+              },
+              {
+                "ref": "Lev.25.29"
               }
             ]
           }
@@ -147,8 +340,11 @@
             "gloss": "today",
             "evidence": [
               {
-                "ref": "Deu.11.26",
+                "ref": "Psa.95.7",
                 "role": "defining"
+              },
+              {
+                "ref": "Deu.11.26"
               }
             ]
           },
@@ -159,12 +355,52 @@
               {
                 "ref": "Exo.13.10",
                 "role": "defining",
-                "note": "Keep the observance at its appointed time."
+                "note": "Keep the statute at its appointed time “from days to days”: the Passover comes once a year."
               },
               {
                 "ref": "Jdg.11.40",
                 "role": "defining",
-                "note": "The following words specify four days in the year."
+                "note": "“From days to days … four days in the year.”"
+              },
+              {
+                "ref": "1Sa.2.19"
+              }
+            ]
+          },
+          {
+            "phrase": "כָּל־הַיָּמִים",
+            "gloss": "always, all one’s life",
+            "evidence": [
+              {
+                "ref": "Deu.5.29",
+                "note": "“To keep all my commandments all the days.”"
+              },
+              {
+                "ref": "Deu.4.40"
+              }
+            ]
+          },
+          {
+            "phrase": "בָּא בַיָּמִים",
+            "gloss": "advanced in years, old",
+            "evidence": [
+              {
+                "ref": "Gen.18.11",
+                "role": "defining",
+                "note": "Abraham and Sarah were old, “gone into days”; Sarah was past childbearing."
+              },
+              {
+                "ref": "Gen.24.1"
+              }
+            ]
+          },
+          {
+            "phrase": "הֶאֱרִיךְ יָמִים",
+            "gloss": "prolong days, live long",
+            "evidence": [
+              {
+                "ref": "Deu.4.40",
+                "role": "defining"
               }
             ]
           }
@@ -175,11 +411,13 @@
       "lemma": "יוֹמָם",
       "pos": "adverb",
       "gloss": "by day, in daylight",
+      "summary": "The day-word with the adverb ending ־ָם: in daytime, mostly set against בַּלַּיְלָה, by night.",
       "bdb": [
         "j.ay.ab"
       ],
       "senses": [
         {
+          "id": "by-day",
           "gloss": "by day",
           "definition": "During daylight, commonly contrasted with בַּלַּיְלָה, by night.",
           "evidence": [
@@ -190,18 +428,24 @@
             },
             {
               "ref": "Job.5.14",
-              "role": "defining"
+              "role": "defining",
+              "note": "They meet darkness by day and grope at noon as at night."
             },
             {
               "ref": "Psa.42.9",
-              "role": "defining"
+              "note": "By day Yahweh commands his kindness; at night his song is with me."
             }
+          ],
+          "kin": [
+            "daylight",
+            "syc-daytime"
           ]
         }
       ],
       "cognate_ids": [
         "ar-yawm",
-        "akk-umu"
+        "akk-umu",
+        "arc-imama"
       ]
     },
     {
@@ -213,6 +457,7 @@
       ],
       "senses": [
         {
+          "id": "arc-day",
           "gloss": "day, days",
           "definition": "A day or a series of days marking time.",
           "evidence": [
@@ -224,23 +469,29 @@
             {
               "ref": "Dan.6.8",
               "role": "defining",
-              "note": "The proposed prohibition is to last thirty days."
+              "note": "The prohibition is to last thirty days."
             }
+          ],
+          "kin": [
+            "counted-day"
           ]
         },
         {
-          "gloss": "days, in a title of antiquity",
-          "definition": "The plural in “Ancient of Days” names the one seated for judgment.",
+          "id": "arc-ancient-of-days",
+          "gloss": "days, of great age",
+          "definition": "In עַתִּיק יוֹמִין, “advanced in days”, the plural marks great age; the title names the one who sits in judgment.",
           "evidence": [
             {
               "ref": "Dan.7.9",
               "role": "defining",
-              "note": "The Ancient of Days sits, clothed in white."
+              "note": "The Ancient of Days sits, his clothing white as snow and his hair like pure wool."
             },
             {
-              "ref": "Dan.7.22",
-              "role": "defining"
+              "ref": "Dan.7.22"
             }
+          ],
+          "kin": [
+            "lifetime"
           ]
         }
       ],
@@ -248,7 +499,11 @@
       "gender": "m",
       "cognate_ids": [
         "ar-yawm",
-        "akk-umu"
+        "akk-umu",
+        "uga-ym",
+        "phn-ym",
+        "sab-ywm",
+        "arc-yoma"
       ]
     },
     {
@@ -257,6 +512,7 @@
       "gloss": "day",
       "senses": [
         {
+          "id": "syc-day",
           "gloss": "day, days",
           "definition": "A counted day or a period marked by days.",
           "evidence": [
@@ -268,11 +524,16 @@
             {
               "ref": "Mat.2.1",
               "role": "defining",
-              "note": "In the days of King Herod dates the narrative."
+              "note": "“In the days of Herod the king” dates the narrative."
             }
+          ],
+          "kin": [
+            "counted-day",
+            "lifetime"
           ]
         },
         {
+          "id": "syc-day-of-event",
           "gloss": "day of an event",
           "definition": "The day identified by an event, including judgment.",
           "evidence": [
@@ -281,6 +542,9 @@
               "role": "defining",
               "note": "The day of judgment is named."
             }
+          ],
+          "kin": [
+            "day-of-event"
           ]
         }
       ],
@@ -288,15 +552,21 @@
       "gender": "m",
       "cognate_ids": [
         "ar-yawm",
-        "akk-umu"
+        "akk-umu",
+        "uga-ym",
+        "phn-ym",
+        "sab-ywm",
+        "arc-yoma"
       ]
     },
     {
       "lemma": "יַוְמָנָא",
       "pos": "adverb",
       "gloss": "today",
+      "summary": "“This day”, the Aramaic contraction of יוֹמָא דְנָא; the Peshitta’s word where the Hebrew has הַיּוֹם (Heb 3:7; 4:7; 5:5 quoting Psa 95:7 and 2:7).",
       "senses": [
         {
+          "id": "syc-today",
           "gloss": "today",
           "definition": "The present day, or the day on which a speaker is speaking.",
           "evidence": [
@@ -309,11 +579,72 @@
               "ref": "Luk.2.11",
               "role": "defining",
               "note": "Today a deliverer has been born."
+            },
+            {
+              "ref": "Heb.3.7",
+              "note": "Quoting Psa 95:7, where the Hebrew has הַיּוֹם."
+            },
+            {
+              "ref": "Act.13.33",
+              "note": "Quoting Psa 2:7, אֲנִי הַיּוֹם יְלִדְתִּיךָ."
             }
+          ],
+          "kin": [
+            "today"
           ]
         }
       ],
-      "lang": "syc"
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-yomana",
+        "gez-yom",
+        "akk-uma"
+      ]
+    },
+    {
+      "lemma": "אִימָמָא",
+      "pos": "noun",
+      "gloss": "daytime",
+      "summary": "The Syriac answer to יוֹמָם: daytime, set beside night. The initial א (as in Aramaic אִימָמָא) stands where Hebrew has י.",
+      "root": "איממ",
+      "senses": [
+        {
+          "id": "syc-daytime",
+          "gloss": "daytime, by day",
+          "definition": "The light part of the day, paired with night: “night and day”, “three days and three nights”.",
+          "evidence": [
+            {
+              "ref": "Mrk.4.27",
+              "role": "defining",
+              "note": "He sleeps and rises night and day."
+            },
+            {
+              "ref": "Luk.2.37",
+              "role": "defining",
+              "note": "Anna serves with fastings and prayers night and day."
+            },
+            {
+              "ref": "Act.9.24",
+              "note": "They watched the gates day and night."
+            },
+            {
+              "ref": "Mat.12.40",
+              "note": "Three days and three nights, as Jon 2:1 has שְׁלֹשָׁה יָמִים וּשְׁלֹשָׁה לֵילוֹת."
+            }
+          ],
+          "kin": [
+            "by-day",
+            "daylight"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m",
+      "cognate_ids": [
+        "arc-imama",
+        "ar-yawm",
+        "akk-umu"
+      ]
     }
   ],
   "cognates": [
@@ -322,53 +653,265 @@
       "lang": "ar",
       "form": "يَوْم",
       "translit": "yawm",
-      "gloss": "day; time",
+      "gloss": "time; day (sunrise to sunset); civil day; a day of battle",
       "relation": "cognate",
       "evidence": [
         {
           "source": "lane",
-          "locator": "p. 3064, root يوم, يَوْمٌ (n44826)"
+          "locator": "p. 3064, root يوم, يَوْمٌ (n44826)",
+          "note": "\"A time, whether night or day … and day, meaning the period from the rising of the sun to its setting … the time when the sun is above the earth … and a civil day\"; \"A day, as in our phrase 'he won the day;' meaning contest, fight, or battle\"; أَيَّامُ العَرَبِ \"the [days, meaning] conflicts of the Arabs\"."
         }
-      ]
+      ],
+      "note": "Daylight against night, the counted day, time in general, and the day named by its battle, as יוֹם מִדְיָן (Isa 9:3)."
     },
     {
       "id": "akk-umu",
       "lang": "akk",
       "form": "ūmu",
       "translit": "ūmu",
-      "gloss": "day, daylight, time",
+      "gloss": "day, daylight, daytime; time, lifetime; on the day, when",
       "relation": "cognate",
       "evidence": [
         {
           "source": "oracc",
           "locator": "armep x000002270, ūmu [day] N",
-          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000002270.html"
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000002270.html",
+          "note": "Senses include \"day\", \"daylight\", \"daytime\", \"date\", \"lifetime\", \"time\", \"today\", \"on the day\", \"when\"."
         }
-      ]
+      ],
+      "note": "The same range as יוֹם, including the plural for a lifetime and the day as “when”."
+    },
+    {
+      "id": "akk-uma",
+      "lang": "akk",
+      "form": "ūma",
+      "translit": "ūma",
+      "gloss": "today, on this day; now; by day",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tsae x000031130, ūma [today] AV",
+          "url": "https://oracc.museum.upenn.edu/tsae/cbd/akk/x000031130.html",
+          "note": "\"by day; ever?; now; on this day; today\"."
+        }
+      ],
+      "note": "The day-word used as an adverb for “today”, as הַיּוֹם."
+    },
+    {
+      "id": "uga-ym",
+      "lang": "uga",
+      "form": "𐎊𐎎",
+      "translit": "ym, pl. ymm",
+      "gloss": "day",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 188, §93 Glossary, ym (the first of two)",
+          "note": "\"ym /yām-/ (?), cf. ya-mu U:V:138:2, pl. ymm “day” (cf. H. yōm, pl. yāmīm; cf. Aram. yōm, pl. yōmīn, Arab. yaum, Akkad. ūmu)\"; the next entry is ym /yamm-/ “sea”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§63.3, KTU 1.14:III:3",
+          "note": "ṯdṯ ym, \"the sixth day\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§74.3, KTU 1.14:IV:31–32",
+          "note": "tlkn ym wṯn, \"they go a day and a second (day)\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎊𐎎 (ym), noun: day",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%8A%F0%90%8E%8E"
+        }
+      ],
+      "note": "Kept apart from ym “sea” (Hebrew יָם), a different word written alike; the plural ymm matches יָמִים. Days are counted with ordinals as in Hebrew."
+    },
+    {
+      "id": "phn-ym",
+      "lang": "phn",
+      "form": "𐤉𐤌",
+      "translit": "ym, pl. ymm, ymt",
+      "gloss": "day; (pl.) time of a person, period of a reign",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 209, YM II, pl. YMM and YMT",
+          "note": "\"[Heb. yōm] n.m. 1. DAY\", KAI 40.1 bymm 7 lyrḥ ḥyr, \"On day 7 of the month of Ḥiyar\"; \"2. pl. TIME(S) of a person, esp. a king, PERIOD of reign\", KAI 26 A II 3–6 wbymty, \"in my time\"; KAI 10.8–9 wtʾrk ymw wšntw ʿl gbl, \"may she make long his days and years over Byblos\"."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "s.v. YMNʿMWBRK",
+          "note": "bym nʿm wbym brk, \"the good and happy day\", a day named by the vow fulfilled on it (Punic)."
+        }
+      ],
+      "note": "Phoenician and Punic: the counted day in dates, and in the plural a king’s days as his reign. “Make long his days and years” is the Hebrew הֶאֱרִיךְ יָמִים (Deu 4:40) with שָׁנִים beside it."
+    },
+    {
+      "id": "moab-ym",
+      "lang": "sem",
+      "form": "ימ",
+      "translit": "ym, pl. ymn",
+      "gloss": "(pl.) days, the span of a reign",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 5, 6, 8, 9, 33",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 5 ויענו את מאב ימנ רבנ; line 6 בימי; line 8 וישב בה ימה וחצי ימי בנה ארבענ שת; lines 9 and 33 בימי."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 5–9, 33",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"he afflicted Mōʾāḇ days many\"; \"In my days he said s[o]\"; \"(Israel) dwelt therein, his days and half the days of his son, forty years\"; \"Kemôš restored it in my days\"."
+        }
+      ],
+      "note": "Moabite, the Mesha stele: “his days and half the days of his son, forty years” counts reigns in days and sums them in years, as Gen 5:5 sums Adam’s days."
+    },
+    {
+      "id": "sab-ywm",
+      "lang": "sem",
+      "form": "𐩺𐩥𐩣",
+      "translit": "ywm, var. ym",
+      "gloss": "day; (adverbially) on the day when; battle, military expedition",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 231, YWM n¹ and n²",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"(1) DAY [Ar yawm id.]\", J651/19 bywm šhrm \"on the day of the new moon\", R4176/7 bywm sbʿ \"on the seventh day\"; \"(2) used adverbially: (ON THE DAY) WHEN [Ar yawma id.]\", C957 ywm dbḥ ʿṮTR \"(on the day) when he sacrificed to ʿAṯtar\"; n² \"BATTLE; MILITARY EXPEDITION [Cf the Ar exp ʾayyām al-ʿarab]\"."
+        }
+      ],
+      "note": "Sabaic has the day as “when” (as בְּיוֹם) and the day named by its battle (as יוֹם מִדְיָן)."
+    },
+    {
+      "id": "gez-yom",
+      "lang": "gez",
+      "form": "ዮም",
+      "translit": "yom",
+      "gloss": "today, this day; now (properly “day”)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 1075, ዮም",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n561",
+          "note": "\"proprie subst. dies [יוֹם …], frequentatur pro Adv. hodie, hoc die, σήμερον\", citing Gen 21:26, Psa 2:7, Mat 6:11, Heb 13:8; \"β) hoc tempore, nunc\"; እስከ ፡ ዮም \"usque ad hodiernum diem\"."
+        }
+      ],
+      "note": "Ge’ez keeps the day-word almost only as “today”; it stands in Psa 2:7 and Mat 6:11 where the Hebrew has הַיּוֹם and the Peshitta יַוְמָנָא."
+    },
+    {
+      "id": "arc-yoma",
+      "lang": "arc",
+      "form": "יוֹמָא",
+      "translit": "yōmā, pl. yōmīn",
+      "gloss": "day; daylight, sun",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יוֹם II, יוֹמָא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%99%D7%95%D6%B9%D7%9D_%C2%B2.1",
+          "note": "Targ. Gen 1:5; בַּר יוֹמֵיה \"on the same day\"; \"a good day, and … a bad day\"; \"towards the sunlight\"; pl. יוֹמִין, יוֹמַיָּא, Targ. Gen 8:10."
+        }
+      ],
+      "note": "Targum and Talmudic Aramaic; the same word as Biblical Aramaic יוֹם and Syriac יַוְמָא."
+    },
+    {
+      "id": "arc-yomana",
+      "lang": "arc",
+      "form": "יוֹמָנָא",
+      "translit": "yōmānā",
+      "gloss": "this day, today",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יוֹמָנָא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%99%D7%95%D6%B9%D7%9E%D6%B8%D7%A0%D6%B8%D7%90.1",
+          "note": "\"(contr. of יוֹמָא דְנָא) this day, this life\", Targ. Y. Deut 27:1, Targ. Prov 7:14."
+        }
+      ],
+      "note": "The Targums’ form of the Peshitta’s יַוְמָנָא, contracted from “this day”."
+    },
+    {
+      "id": "arc-imama",
+      "lang": "arc",
+      "form": "אִימָמָא",
+      "translit": "ʾīmāmā",
+      "gloss": "daytime",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אִימָמָא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%90%D6%B4%D7%99%D7%9E%D6%B8%D7%9E%D6%B8%D7%90.1",
+          "note": "\"(v. אִי־) day time\", Y. Ber. III, 6d, א׳ ארך \"the day growing longer\"."
+        }
+      ],
+      "note": "Palestinian Aramaic daytime-word, the counterpart of יוֹמָם and of Syriac אִימָמָא."
     }
   ],
   "doctrine": [
     {
       "topic": "day-of-yahweh",
-      "statement": "Amos asks those desiring the day of Yahweh why they desire it: for them it is darkness, not light (Amo 5:18–20). Zephaniah describes that day as wrath and distress (Zep 1:14–15). The expression therefore identifies Yahweh’s intervention, whose character the passage explains; the noun “day” alone does not promise safety to those who name it.",
+      "statement": "Amos asks those desiring the day of Yahweh why they desire it: for them it is darkness, not light (Amo 5:18–20). Zephaniah describes that day as wrath and distress (Zep 1:14–15). Joel sets the sun darkened and the moon turned to blood before it, and Peter quotes him at Pentecost, calling on all to be saved by calling on the name (Joe 3:4–5; Act 2:20–21); Paul says it comes as a thief in the night (1Th 5:2). The expression names Yahweh’s intervention, whose character each passage explains; the noun “day” alone does not promise safety to those who name it.",
       "evidence": [
         {
-          "ref": "Amo.5.18"
+          "ref": "Amo.5.18",
+          "to": "Amo.5.20"
         },
         {
-          "ref": "Amo.5.19"
+          "ref": "Zep.1.14",
+          "to": "Zep.1.15"
         },
         {
-          "ref": "Amo.5.20"
+          "ref": "Jol.3.4",
+          "to": "Jol.3.5"
         },
         {
-          "ref": "Zep.1.14"
+          "ref": "Act.2.20",
+          "to": "Act.2.21"
         },
         {
-          "ref": "Zep.1.15"
+          "ref": "1Th.5.2"
+        }
+      ]
+    },
+    {
+      "topic": "today",
+      "statement": "Psalm 95 ends its call to worship with “today, if you hear his voice, do not harden your hearts” (Psa 95:7–8). Hebrews reads that “today” as a day God still appoints: the exhortation holds “while it is called Today”, and David’s “today”, long after Joshua, shows that God’s rest still remains to be entered (Heb 3:7–15; 4:7–9). The “today” of Psa 2:7, “you are my son, today I have begotten you”, Paul applies to God raising Jesus (Act 13:33), and Hebrews to his appointment as high priest (Heb 5:5).",
+      "evidence": [
+        {
+          "ref": "Psa.95.7",
+          "to": "Psa.95.8"
+        },
+        {
+          "ref": "Heb.3.7",
+          "to": "Heb.3.15"
+        },
+        {
+          "ref": "Heb.4.7",
+          "to": "Heb.4.9"
+        },
+        {
+          "ref": "Psa.2.7"
+        },
+        {
+          "ref": "Act.13.33"
+        },
+        {
+          "ref": "Heb.5.5"
         }
       ]
     }
   ],
-  "note": "The Aramaic key xj.ad.ad also matches many Hebrew spellings; the brief’s token counts for the two languages overlap and are not separate language totals. The sense of בְּיוֹם is determined by its construction and context, not by assigning a fixed duration to every occurrence. Aramaic and Syriac words are scripture words here, not external cognates."
+  "note": "The Aramaic key xj.ad.ad also matches many Hebrew spellings; the brief’s token counts for the two languages overlap and are not separate language totals. The sense of בְּיוֹם is determined by its construction and context, not by assigning a fixed duration to every occurrence. Aramaic and Syriac words are scripture words here, not external cognates. Open: (1) Syriac אִימָמָא is given its own root key איממ; SEDRA files it under איממא, Jastrow refers its Aramaic counterpart to אִי־; whether the א is a prothetic vowel before *ymm (from *yawmām, cf. יוֹמָם) needs a Syriac grammar to confirm. (2) The plural יָמִים for “a year” has no cognate found yet; Phoenician “days and years” (KAI 10) sets the two side by side rather than equating them. (3) Old Aramaic inscriptions (CAL ywm) were not reached; CAL’s entry page redirected to its home page. (4) Arabic اليوم “today” is not in Lane’s article, so Arabic is not named on the “today” sense. (5) Krahmalkov’s YMNʿMWBRK is cited by headword only: its page (after p. 209) was not checked on the scan."
 }
