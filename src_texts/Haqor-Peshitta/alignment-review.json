@@ -3329,6 +3329,78 @@
           "reason": "Beth asire, literally house of bound people, is the fixed prison designation. The house noun and bound-prisoner noun jointly denote the place of confinement; casting, its patient and the officer remain separate."
         }
       ]
+    },
+    "42:13": {
+      "sha256": "3ad93d6209c4b27191279dec32f674c426f51a3308cac1d8d88d4acffedbd2f6",
+      "original_shared_spans": 156,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 6,
+          "english": "had",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "The existential ith and past copula hwat jointly express past possession. The possessor dative a man is separately rendered as the English subject, and the fig tree and planted predicate remain separate."
+        },
+        {
+          "verse": 11,
+          "english": "had",
+          "positions": [
+            4,
+            5,
+            6
+          ],
+          "reason": "The existential, past copula and feminine possessor dative jointly express past possession. The possessor is already the woman represented by the relative who, owned by the prefix on position 4; no additional beneficiary is introduced. The spirit, infirmity and duration remain separate."
+        },
+        {
+          "verse": 15,
+          "english": "Hypocrite",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Nasab b-appe, literally taking with respect to faces, is the fixed singular hypocrite designation. The taking participle and face noun jointly name the addressed person; the negative rhetorical question remains separate."
+        },
+        {
+          "verse": 25,
+          "english": "you",
+          "positions": [
+            27,
+            29
+          ],
+          "reason": "The anticipatory pronominal object of know and the subject of the embedded origin question identify the same callers. English expresses the embedded subject once in I do not know where you are from; the knowing verb, origin adverb and copula remain separately linked."
+        },
+        {
+          "verse": 27,
+          "english": "you",
+          "positions": [
+            5,
+            7
+          ],
+          "reason": "The anticipatory pronominal object of know and the subject of the embedded origin question identify the same callers. English expresses that person once as the subject of where you are from; knowing, origin and copula remain separate."
+        },
+        {
+          "verse": 27,
+          "english": "depart",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The departure imperative and its subject-coreferential dative lekhon jointly command departure. The dative adds no beneficiary or other participant; from me remains separately linked."
+        },
+        {
+          "verse": 31,
+          "english": "depart",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The going imperative and its subject-coreferential dative lakh jointly command departure. The dative adds no separate beneficiary; go out and from here remain separately linked."
+        }
+      ]
     }
   }
 }

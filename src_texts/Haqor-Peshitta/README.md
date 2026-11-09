@@ -1539,6 +1539,13 @@ Source checks for Luke 12:
 
 Source checks for Luke 13:
 
+- The chapter's 156 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Seven remain: two
+  past-possession constructions, the singular hypocrite designation,
+  two repeated references to the callers, and two departure predicates
+  with subject-coreferential datives. Their exact positions and linguistic
+  reasons are in the ledger. Ordinary negatives, auxiliaries, modifiers,
+  noun phrases, names, and clause constituents have separate source owners.
 - In 13:4 the comparison uses "sinners". In 13:3 and 13:5 the warnings
   address the whole audience; 13:5 explicitly says
   "like them".
@@ -1546,6 +1553,10 @@ Source checks for Luke 13:
   The three years, cultivation, and manure remain explicit. The positive
   fruit condition in 13:9 is elliptical; "next year" belongs to the
   following cutting-down clause.
+- In 13:6 the possessor is separately linked as "a man"; the existential
+  and past copula jointly express "had". In 13:11 the corresponding
+  construction also includes the possessor dative, since its relative
+  subject already identifies the woman. The relative prefix stays separate.
 - In 13:11 the infirmity has lasted eighteen years. In 13:13 his hand
   is singular. In 13:15 the address is the singular "Hypocrite", and the
   animal-release example is a negative rhetorical question. In 13:16
@@ -1553,10 +1564,20 @@ Source checks for Luke 13:
 - In 13:17 the opponents are ashamed, while all the people rejoice at
   the wonders. In 13:19 the bird is singular and the tree is large.
   In 13:21 all three measures of flour are leavened.
+- In 13:14 the instruction to come and be healed is directive, while
+  the negative Sabbath restriction remains separate. In 13:15 "each"
+  and "one" separately render the distributive repetition. In 13:17
+  the speech, opposition, shame, rejoicing, and occurrence predicates
+  keep their own past auxiliaries and participants.
 - In 13:23 the asking verb has an explicit "him" suffix. In 13:25 both
   calls say "Our Lord"; the master's answer is followed by his own
   first-person "I tell you". In 13:26 the visitors ate and drank, but
   the master is the subject of "you taught".
+- In 13:25 and 13:27 the anticipatory object of knowing and the subject
+  of the origin question identify the same callers. English expresses
+  each pair once as "you"; knowing, origin, and copula remain separate.
+  In 13:27 and 13:31 the departure datives introduce no beneficiary;
+  "from me" and "from here" remain separately linked.
 - In 13:27 the phrase is "workers of falsehood". In 13:29 the direction
   order is east, west, south, north. In 13:32 the fox is "this"; the
   completion predicate does not supply an additional work or death noun.
