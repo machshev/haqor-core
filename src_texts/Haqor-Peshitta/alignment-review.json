@@ -2482,6 +2482,87 @@
           "reason": "The existential ithawhy and past copula hwa jointly express the age predicate of the explicit subject Jesus himself. English has one past copula; an additional he would repeat the named subject."
         }
       ]
+    },
+    "42:4": {
+      "sha256": "f04aa09e2fb35ea0fa69021f301ac3637a18ca2ba98e6f448b4cde547c547c15",
+      "original_shared_spans": 161,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 13,
+          "english": "from him",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Men plus the suffixed lwath is the compound source preposition from him; lwath does not introduce another destination or participant."
+        },
+        {
+          "verse": 27,
+          "english": "except",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "Ela en is the fixed exception construction, literally but if. Here it gives the one exception to no one being cleansed, not a separate condition on whether Naaman was cleansed."
+        },
+        {
+          "verse": 34,
+          "english": "What have we to do",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The interrogative plus first-party dative is the elliptical paired-dative involvement idiom ma lan wa-lakh. It has no independent literal have/do verbs; the addressee complement with you remains separately linked to its own dative."
+        },
+        {
+          "verse": 39,
+          "english": "over her",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Leel plus the suffixed men is the compound above/over relation. English over her expresses that one spatial relation; a separate from would misstate it."
+        },
+        {
+          "verse": 40,
+          "english": "had",
+          "positions": [
+            5,
+            6,
+            7
+          ],
+          "reason": "The existential ith, past copula hwa, and dative possessor lehon jointly form past possession. English had fuses existence, past tense, and possession. The relative prefix remains separately linked to dith, and the sick people are a separate object."
+        },
+        {
+          "verse": 42,
+          "english": "and departed",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Azal plus the subject-coreferential ethical dative leh expresses his departure. The dative does not add a destination or a beneficiary."
+        },
+        {
+          "verse": 42,
+          "english": "go away",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "The departure verb with its subject-coreferential ethical dative leh expresses his going away. The purpose marker, negation, and source phrase are independently linked."
+        },
+        {
+          "verse": 42,
+          "english": "from them",
+          "positions": [
+            18,
+            19
+          ],
+          "reason": "Men plus the suffixed lwath is the compound source preposition from them; it does not introduce another destination."
+        }
+      ]
     }
   }
 }

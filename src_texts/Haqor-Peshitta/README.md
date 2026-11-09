@@ -1093,24 +1093,49 @@ Source checks for Luke 3:
 
 Source checks for Luke 4:
 
+- The chapter's 161 original shared spans were checked against exact
+  forms, morphology, and continuous English. Eight remain, with exact
+  reasons in the ledger: two source prepositions, the exception marker,
+  the paired-dative involvement question, the above-her relation, past
+  possession, and two departure predicates with ethical datives. Ordinary
+  auxiliaries, negatives, names, modifiers, and clause constituents have
+  separate source owners.
 - In 4:4 the source includes every word of God. In 4:5 Satan is explicit;
   no separate dismissal of Satan is supplied in 4:8. In 4:6 "all" qualifies
-  the authority, followed by its glory.
+  the authority, followed by its glory. The final dative in 4:6 is the
+  recipient "to him", resumed by "whom I choose"; the understood gift
+  object belongs to "give it", not to that recipient pronoun.
+- In 4:4 and 4:22 la hwa is nominal negation in the present statements,
+  rather than an instruction to force English past tense. The written/said
+  predicates in 4:4, 4:8, and 4:12 retain separate copular links.
 - In 4:18 the final verb is rendered "strengthen", following the
   [dictionary entry for sharrar](https://sedra.bethmardutho.org/lexeme/get/3306).
   The brokenhearted, release for captives, sight for the blind, and the
   final forgiveness phrase are all retained; no sins noun is added.
+  The adjacent broken/hearted spans jointly spell "brokenhearted".
+  In 4:19 the year is "acceptable to the Lord", retaining the preposition.
+- In 4:20 the eyes belong to all those in the synagogue, and are the
+  subject of gazing. In 4:23 "we heard" and "you did" retain their
+  distinct persons within the anticipated local criticism.
 - In 4:27 the negative and exception mean none was cleansed except Naaman.
   In 4:29 "their city" and the relative clause ending with "on it" stay
   together, before the distinct purpose of casting him from the cliff.
 - In 4:34 "Leave me alone" is singular, but the following question uses
-  plural "we". In 4:36 the feminine command verb agrees with the word,
-  which is its grammatical subject.
+  plural "we". "I know you" retains its explicit object before "who you
+  are". In 4:35 the demon throws the man and leaves him without harm.
+  In 4:36 the feminine command verb agrees with the word, which is its
+  grammatical subject.
+- In 4:38-39 the fever leaves the woman, who rises and serves them.
+  In 4:40 the people who had sick people remain distinct from the patients
+  they bring; the existential, past copula, and dative jointly express
+  "had". His hand is singular, and each/one/of-them remain separately linked.
 - In 4:41 "also" and both Messiah and Son of God are retained. The final
   clause gives the reason for silencing the demons: they knew he was
   Messiah; compare [Etheridge's translation](https://www.studylight.org/bible/eng/jet/luke/4.html).
 - In 4:43 the sending verb is first person, "I was sent", and the preceding
-  copula emphasizes the purpose. In 4:44 the source names Galilee.
+  copula emphasizes the purpose. In 4:42 both departure verbs retain their
+  ethical datives without another beneficiary, while "from them" remains
+  a distinct source phrase. In 4:44 the source names Galilee.
 
 Source checks for Luke 5:
 
