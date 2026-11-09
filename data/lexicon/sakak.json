@@ -1,0 +1,1013 @@
+{
+  "id": "sakak",
+  "root": "סככ",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "shelter",
+    "covering",
+    "feast",
+    "dwelling",
+    "protection"
+  ],
+  "gloss": "screen, cover over; shut in; booth",
+  "summary": "סָכַךְ is to put something over or before a thing so that it is screened: the cherubim's wings over the כַּפֹּרֶת, the veil before the ark, Yahweh's hand over Moses, his pinions over the one who trusts him; and to shut in or hedge about. Its nouns name what screens: the hanging at the tent's entrance (מָסָךְ), a hedge, and the סֻכָּה, a booth roofed with branches, in which Israel dwells seven days at חַג הַסֻּכּוֹת to remember that Yahweh made them dwell in booths when he brought them out of Egypt (Lev 23:42–43). Yahweh's own shelter and dwelling are a סֻכָּה or סֹךְ. Arabic سَكَّ “close up” and Akkadian sakāku “block” share the closing-off; Ugaritic sk “den” matches the lion's covert.",
+  "words": [
+    {
+      "lemma": "סֻכָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "booth, shelter; covert",
+      "bdb": [
+        "o.bb.ad"
+      ],
+      "summary": "A shelter roofed with leafy branches. The feast of the seventh month is named for it, and scripture uses it of Yahweh's covering of cloud and of his shelter over his people. BDB's key also counts the tokens of the place Succoth, which are left out here.",
+      "senses": [
+        {
+          "id": "booth",
+          "gloss": "booth, shelter of branches",
+          "definition": "A shelter roofed with leafy branches, put up for shade or for a stay in the field: for cattle, for a watchman in a vineyard, for an army in the field, for Jonah outside Nineveh, and for Israel at the feast.",
+          "evidence": [
+            {
+              "ref": "Jon.4.5",
+              "role": "defining",
+              "note": "Jonah makes a סֻכָּה and sits under it in the shade."
+            },
+            {
+              "ref": "Neh.8.15",
+              "role": "defining",
+              "note": "Made from branches of olive, oil tree, myrtle, palm and leafy trees."
+            },
+            {
+              "ref": "Lev.23.42",
+              "role": "defining",
+              "note": "All native Israelites dwell in סֻכֹּת seven days."
+            },
+            {
+              "ref": "Lev.23.43",
+              "note": "Yahweh made Israel dwell in סֻכּוֹת when he brought them out of Egypt."
+            },
+            {
+              "ref": "Gen.33.17",
+              "note": "Jacob makes סֻכֹּת for his cattle."
+            },
+            {
+              "ref": "Isa.1.8",
+              "note": "A booth in a vineyard, beside a lodge in a cucumber field."
+            },
+            {
+              "ref": "Job.27.18",
+              "note": "The booth a watchman makes."
+            },
+            {
+              "ref": "2Sa.11.11",
+              "note": "The ark, Israel and Judah dwell in booths in the field."
+            },
+            {
+              "ref": "Neh.8.16"
+            }
+          ],
+          "kin": [
+            "screen-over"
+          ]
+        },
+        {
+          "id": "feast-of-booths",
+          "gloss": "חַג הַסֻּכּוֹת, the feast of booths",
+          "definition": "Yahweh's appointed time from the fifteenth day of the seventh month: seven days of dwelling in booths and rejoicing, when the harvest of threshing floor and winepress has been gathered.",
+          "evidence": [
+            {
+              "ref": "Lev.23.34",
+              "role": "defining",
+              "note": "On the fifteenth day of this seventh month, חַג הַסֻּכּוֹת seven days to Yahweh."
+            },
+            {
+              "ref": "Deu.16.13",
+              "role": "defining",
+              "note": "Kept seven days when you gather from your threshing floor and winepress."
+            },
+            {
+              "ref": "Deu.16.16",
+              "note": "One of the three feasts at which every male appears before Yahweh."
+            },
+            {
+              "ref": "Deu.31.10",
+              "note": "The law read to all Israel at this feast in the year of release."
+            },
+            {
+              "ref": "Neh.8.14",
+              "note": "Found written in the law: Israel to dwell in booths at the feast of the seventh month."
+            },
+            {
+              "ref": "Ezr.3.4"
+            },
+            {
+              "ref": "Zec.14.16",
+              "note": "The nations go up year by year to keep חַג הַסֻּכּוֹת."
+            },
+            {
+              "ref": "2Ch.8.13"
+            }
+          ],
+          "kin": [
+            "screen-over"
+          ]
+        },
+        {
+          "id": "yahwehs-shelter",
+          "gloss": "Yahweh's covering, shelter",
+          "definition": "The covering of cloud and darkness Yahweh sets about himself, and the shelter he spreads over his people as shade and refuge.",
+          "evidence": [
+            {
+              "ref": "Psa.18.12",
+              "role": "defining",
+              "note": "He made darkness his hiding place, his סֻכָּה around him, dark waters and clouds."
+            },
+            {
+              "ref": "Isa.4.6",
+              "role": "defining",
+              "note": "A סֻכָּה for shade by day from heat, and refuge and hiding from storm and rain."
+            },
+            {
+              "ref": "Psa.31.21",
+              "role": "defining",
+              "note": "You hide them in a סֻכָּה from the strife of tongues."
+            },
+            {
+              "ref": "Job.36.29",
+              "note": "The thunderings of his סֻכָּה."
+            }
+          ],
+          "kin": [
+            "screen-over",
+            "abode"
+          ]
+        },
+        {
+          "id": "covert",
+          "gloss": "covert, thicket",
+          "definition": "The thicket where lions lie in wait.",
+          "evidence": [
+            {
+              "ref": "Job.38.40",
+              "role": "defining",
+              "note": "Lions crouch in dens (מְעוֹנוֹת) and lie in the סֻכָּה to ambush."
+            }
+          ],
+          "kin": [
+            "lair"
+          ],
+          "cognate_ids": [
+            "ar-sakka",
+            "uga-sk"
+          ]
+        },
+        {
+          "id": "booth-of-david",
+          "gloss": "the fallen booth of David",
+          "definition": "David's house pictured as a booth that has fallen, which Yahweh will raise up and rebuild as in the days of old, so that the nations called by his name are possessed.",
+          "evidence": [
+            {
+              "ref": "Amo.9.11",
+              "role": "defining",
+              "note": "“I will raise up the fallen סֻכָּה of David, wall up its breaches, raise its ruins.”"
+            },
+            {
+              "ref": "Act.15.16",
+              "note": "James quotes Amos of God taking a people for his name from the nations."
+            }
+          ],
+          "kin": [
+            "screen-over"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σκηνή",
+          "gloss": "tent, booth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.42, סֻּכֹּת → σκηναῖς"
+            },
+            {
+              "ref": "Act.15.16",
+              "note": "“I will rebuild the σκηνή of David which has fallen”, quoting Amo 9:11."
+            }
+          ]
+        },
+        {
+          "lemma": "σκηνοπηγία",
+          "gloss": "the feast of booths",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.16.16, חַג הַסֻּכּוֹת → σκηνοπηγίας"
+            },
+            {
+              "ref": "Jhn.7.2",
+              "note": "The feast of the Jews, the σκηνοπηγία, was near."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מְלוּנָה",
+            "note": "A lodge in a cucumber field.",
+            "evidence": [
+              {
+                "ref": "Isa.1.8",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מַחְסֶה",
+            "note": "With מִסְתּוֹר: refuge and hiding place.",
+            "evidence": [
+              {
+                "ref": "Isa.4.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "סֵתֶר",
+            "note": "Yahweh's hiding place.",
+            "evidence": [
+              {
+                "ref": "Psa.18.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.31.21"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חַג הַסֻּכּוֹת",
+            "gloss": "the feast of booths",
+            "evidence": [
+              {
+                "ref": "Lev.23.34"
+              },
+              {
+                "ref": "Deu.16.13"
+              },
+              {
+                "ref": "Zec.14.16"
+              }
+            ]
+          },
+          {
+            "phrase": "סֻכַּת דָּוִיד",
+            "gloss": "the booth of David",
+            "evidence": [
+              {
+                "ref": "Amo.9.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָסָךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "screen, hanging; covering",
+      "bdb": [
+        "o.ba.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "screen, hanging",
+          "definition": "A woven hanging that screens an opening: at the entrance of the tent and at the gate of the court; and the veil before the ark, called “the veil of the screen”.",
+          "evidence": [
+            {
+              "ref": "Exo.26.36",
+              "role": "defining",
+              "note": "A מָסָךְ for the entrance of the tent, of blue, purple and scarlet."
+            },
+            {
+              "ref": "Exo.35.12",
+              "role": "defining",
+              "note": "פָּרֹכֶת הַמָּסָךְ, the veil of the screen."
+            },
+            {
+              "ref": "Exo.40.21",
+              "role": "defining",
+              "note": "He set up the veil of the screen and screened (וַיָּסֶךְ) the ark."
+            },
+            {
+              "ref": "Exo.27.16",
+              "note": "The screen of the court's gate."
+            },
+            {
+              "ref": "Num.4.5",
+              "note": "The veil of the screen taken down to cover the ark on the march."
+            }
+          ],
+          "kin": [
+            "screen-over"
+          ],
+          "cognate_ids": [
+            "ar-sakka",
+            "akk-sakaku"
+          ]
+        },
+        {
+          "gloss": "covering",
+          "definition": "Something spread over a thing to cover or shelter it.",
+          "evidence": [
+            {
+              "ref": "2Sa.17.19",
+              "role": "defining",
+              "note": "A woman spreads the covering over the mouth of the well and grain on it."
+            },
+            {
+              "ref": "Psa.105.39",
+              "role": "defining",
+              "note": "Yahweh spread a cloud for a covering, and fire to give light by night."
+            },
+            {
+              "ref": "Isa.22.8",
+              "note": "He removed the covering of Judah."
+            }
+          ],
+          "kin": [
+            "screen-over"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καταπέτασμα",
+          "gloss": "veil, curtain",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.36.37, מָסָךְ → καταπέτασμα"
+            },
+            {
+              "ref": "Heb.9.3",
+              "note": "“After the second καταπέτασμα”: the first is the screen at the tent's entrance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סָכַךְ",
+      "pos": "verb",
+      "gloss": "screen, cover over; shut in; weave",
+      "bdb": [
+        "o.as.aa",
+        "o.ba.aa",
+        "u.an.aa"
+      ],
+      "summary": "The database analyses most of its forms under the hollow root סוכ, and its BDB key o.as.aa also holds one token of סוּךְ “anoint” (2Sa 12:20), which belongs to another root; so its counted uses here are not exact. It is spelled with שׂ in Exo 33:22 (וְשַׂכֹּתִי), Job 1:10 and Hos 2:8, where the same senses and constructions show the same verb. The knitting of a body in the womb (qal Psa 139:13, poel Job 10:11) and the pilpel “stir up against” (Isa 9:10; 19:2) share no cognate found so far: Job 10:11 sets the knitting beside clothing with skin, a covering, but how “stir up” goes with screening is not clear.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "screen over; shut in; weave",
+          "senses": [
+            {
+              "id": "screen-over",
+              "gloss": "screen, cover over",
+              "definition": "Spread something over or before a thing so as to shield or hide it: the cherubim's wings over the כַּפֹּרֶת, Yahweh's hand over Moses, the veil before the ark, a man's head in battle.",
+              "evidence": [
+                {
+                  "ref": "Exo.25.20",
+                  "role": "defining",
+                  "note": "The cherubim spread their wings upward, screening the כַּפֹּרֶת with their wings."
+                },
+                {
+                  "ref": "Exo.33.22",
+                  "role": "defining",
+                  "note": "“I will screen my hand over you until I have passed by” (spelled with שׂ)."
+                },
+                {
+                  "ref": "Exo.40.3",
+                  "role": "defining",
+                  "note": "Screen the ark with the veil."
+                },
+                {
+                  "ref": "Psa.140.8",
+                  "role": "defining",
+                  "note": "You screened my head in the day of weapons."
+                },
+                {
+                  "ref": "1Ki.8.7",
+                  "note": "The cherubim screen the ark and its poles from above."
+                },
+                {
+                  "ref": "Ezk.28.14",
+                  "note": "The anointed cherub that screens (הַסּוֹכֵךְ)."
+                },
+                {
+                  "ref": "Job.40.22",
+                  "note": "The lotus trees screen him with their shade."
+                },
+                {
+                  "ref": "Heb.9.5",
+                  "note": "The New Testament: the cherubim of glory overshadowing the mercy seat."
+                }
+              ],
+              "cognate_ids": [
+                "ar-sakka",
+                "akk-sakaku"
+              ]
+            },
+            {
+              "id": "shut-off",
+              "gloss": "shut off, hedge in",
+              "definition": "Close something in or off so that nothing gets through: a cloud so that prayer cannot pass, a hedge around a man and his house, thorns across a way.",
+              "evidence": [
+                {
+                  "ref": "Lam.3.44",
+                  "role": "defining",
+                  "note": "You screened yourself with a cloud, so that prayer cannot pass through."
+                },
+                {
+                  "ref": "Job.1.10",
+                  "role": "defining",
+                  "note": "Have you not hedged around him, his house and all he has? (spelled שַׂכְתָּ)"
+                },
+                {
+                  "ref": "Hos.2.8",
+                  "role": "defining",
+                  "note": "I will hedge your way with thorns; parallel גָּדַר “wall up”."
+                },
+                {
+                  "ref": "Lam.3.43",
+                  "note": "You screened yourself with anger and pursued us."
+                }
+              ],
+              "cognate_ids": [
+                "ar-sakka",
+                "akk-sakaku"
+              ]
+            },
+            {
+              "id": "weave",
+              "gloss": "weave, knit together",
+              "definition": "Form a body in the womb by knitting it together.",
+              "evidence": [
+                {
+                  "ref": "Psa.139.13",
+                  "role": "defining",
+                  "note": "You formed my kidneys; you knit me together in my mother's womb."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "screen, shelter; shut in; cover the feet",
+          "senses": [
+            {
+              "gloss": "screen, shelter",
+              "definition": "Spread a covering over someone to shelter them, of Yahweh over those who take refuge in him, and of the veil before the ark.",
+              "evidence": [
+                {
+                  "ref": "Psa.91.4",
+                  "role": "defining",
+                  "note": "He screens you with his pinions, and under his wings you take refuge."
+                },
+                {
+                  "ref": "Psa.5.12",
+                  "role": "defining",
+                  "note": "May you screen over those who take refuge in you."
+                },
+                {
+                  "ref": "Exo.40.21"
+                }
+              ],
+              "cognate_ids": [
+                "ar-sakka",
+                "akk-sakaku"
+              ]
+            },
+            {
+              "gloss": "shut in, hedge about",
+              "definition": "Close someone or something in on every side.",
+              "evidence": [
+                {
+                  "ref": "Job.3.23",
+                  "role": "defining",
+                  "note": "A man whose way is hidden, whom God has hedged in: Job's own words turned back on Job 1:10."
+                },
+                {
+                  "ref": "Job.38.8",
+                  "role": "defining",
+                  "note": "Who shut in the sea with doors when it burst out of the womb?"
+                }
+              ],
+              "cognate_ids": [
+                "ar-sakka",
+                "akk-sakaku"
+              ]
+            },
+            {
+              "gloss": "cover the feet",
+              "definition": "A euphemism for relieving oneself, in private.",
+              "evidence": [
+                {
+                  "ref": "Jdg.3.24",
+                  "role": "defining",
+                  "note": "Eglon's servants suppose he is covering his feet in the cool room."
+                },
+                {
+                  "ref": "1Sa.24.4",
+                  "role": "defining",
+                  "note": "Saul goes into the cave to cover his feet."
+                }
+              ],
+              "cognate_ids": [
+                "ar-sakka"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "knit together",
+          "senses": [
+            {
+              "gloss": "knit together",
+              "definition": "Knit a body together with bones and sinews, after clothing it with skin and flesh.",
+              "evidence": [
+                {
+                  "ref": "Job.10.11",
+                  "role": "defining",
+                  "note": "You clothed me with skin and flesh and knit me together with bones and sinews."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pilpel",
+          "gloss": "stir up against (link unclear)",
+          "senses": [
+            {
+              "gloss": "stir up, set against",
+              "definition": "Stir up people against one another or against an enemy so that they fight. How this goes with screening is not clear.",
+              "evidence": [
+                {
+                  "ref": "Isa.19.2",
+                  "role": "defining",
+                  "note": "I will stir up Egypt against Egypt, and they will fight, brother against brother."
+                },
+                {
+                  "ref": "Isa.9.10",
+                  "note": "Yahweh stirs up Rezin's enemies against him."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָסָה",
+            "note": "He screens you; under his wings you take refuge.",
+            "evidence": [
+              {
+                "ref": "Psa.91.4",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "גָּדַר",
+            "note": "Hedge a way with thorns, wall up her wall.",
+            "evidence": [
+              {
+                "ref": "Hos.2.8",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "לָבַשׁ",
+            "note": "Hiphil “clothe” with skin and flesh, beside knitting with bones and sinews.",
+            "evidence": [
+              {
+                "ref": "Job.10.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "סֹךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "lair; Yahweh's shelter, abode",
+      "bdb": [
+        "o.bb.ac",
+        "u.bf.ab"
+      ],
+      "summary": "Spelled with שׂ in Lam 2:6 (שֻׂכּוֹ), where it stands beside מוֹעֲדוֹ as Psa 76:3 has סֻכּוֹ beside מְעוֹנָתוֹ: the same word.",
+      "senses": [
+        {
+          "id": "lair",
+          "gloss": "lair, covert",
+          "definition": "The covert of a lion, from which it lies in wait or which it leaves.",
+          "evidence": [
+            {
+              "ref": "Jer.25.38",
+              "role": "defining",
+              "note": "Like a young lion he has left his סֹךְ."
+            },
+            {
+              "ref": "Psa.10.9",
+              "role": "defining",
+              "note": "He lies in wait in hiding like a lion in his סֹךְ."
+            }
+          ],
+          "kin": [
+            "covert"
+          ],
+          "cognate_ids": [
+            "ar-sakka",
+            "uga-sk"
+          ]
+        },
+        {
+          "id": "abode",
+          "gloss": "Yahweh's shelter, abode",
+          "definition": "Yahweh's dwelling in Zion, where he hides his own in the day of trouble.",
+          "evidence": [
+            {
+              "ref": "Psa.76.3",
+              "role": "defining",
+              "note": "His סֹךְ is in Salem, his dwelling (מְעוֹנָה) in Zion."
+            },
+            {
+              "ref": "Psa.27.5",
+              "role": "defining",
+              "note": "He hides me in his סֹךְ in the day of evil, in the hiding place of his tent."
+            },
+            {
+              "ref": "Lam.2.6",
+              "role": "defining",
+              "note": "He has stripped his booth like a garden and ruined his place of meeting (מוֹעֵד)."
+            }
+          ],
+          "kin": [
+            "yahwehs-shelter",
+            "screen-over"
+          ],
+          "cognate_ids": [
+            "akk-sukku"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְסוּכָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "hedge",
+      "bdb": [
+        "o.as.ab",
+        "u.bg.ab"
+      ],
+      "summary": "Spelled מְשׂוּכָּה in Isa 5:5 and Pro 15:19.",
+      "senses": [
+        {
+          "gloss": "hedge (of thorns)",
+          "definition": "A hedge of thorny growth closing in a vineyard or blocking a way.",
+          "evidence": [
+            {
+              "ref": "Isa.5.5",
+              "role": "defining",
+              "note": "I will take away its hedge, break down its wall (גָּדֵר)."
+            },
+            {
+              "ref": "Pro.15.19",
+              "role": "defining",
+              "note": "The way of the sluggard is like a hedge of thorns; the path of the upright a built road."
+            },
+            {
+              "ref": "Mic.7.4",
+              "note": "The upright one worse than a thorn hedge."
+            }
+          ],
+          "kin": [
+            "shut-off"
+          ],
+          "cognate_ids": [
+            "ar-sakka",
+            "akk-sakaku"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סֹכֵךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "screen (in a siege)",
+      "bdb": [
+        "o.bb.af"
+      ],
+      "summary": "The qal participle, “the screening thing”, used once of a shelter set up at a city wall; what it was is known only from this context.",
+      "senses": [
+        {
+          "gloss": "siege screen",
+          "definition": "A screen made ready at the wall under which attackers shelter.",
+          "evidence": [
+            {
+              "ref": "Nam.2.6",
+              "role": "defining",
+              "note": "They hurry to her wall, and the סֹכֵךְ is made ready."
+            }
+          ],
+          "kin": [
+            "screen-over"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְסֻכָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "covering",
+      "bdb": [
+        "o.ba.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "covering",
+          "definition": "What covers someone as a garment or overlay.",
+          "evidence": [
+            {
+              "ref": "Ezk.28.13",
+              "role": "defining",
+              "note": "Every precious stone was your covering, in Eden the garden of God."
+            }
+          ],
+          "kin": [
+            "screen-over"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מוּסָךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "covered structure (unclear)",
+      "bdb": [
+        "o.ba.ad"
+      ],
+      "summary": "Once, in “the מוּסַךְ of the Sabbath” that Ahaz removed from Yahweh's house (written מיסך). Something covered or screened is likely from the root, but what the structure was is not clear.",
+      "senses": [
+        {
+          "gloss": "covered structure (of the Sabbath)",
+          "definition": "A structure built in Yahweh's house for the Sabbath, removed by Ahaz for the king of Assyria.",
+          "evidence": [
+            {
+              "ref": "2Ki.16.18",
+              "role": "defining",
+              "note": "The מוּסַךְ of the Sabbath which they had built in the house."
+            }
+          ],
+          "kin": [
+            "screen-over"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סַךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "throng? (unclear)",
+      "bdb": [
+        "o.bb.ab"
+      ],
+      "summary": "Once, in a line about going in procession to the house of God; whether it is a throng, or something screened, is not fixed by the verse, and its link to the root is not clear.",
+      "senses": [
+        {
+          "gloss": "throng (?)",
+          "definition": "Apparently the festal company with whom the psalmist went up to the house of God.",
+          "evidence": [
+            {
+              "ref": "Psa.42.5",
+              "role": "defining",
+              "note": "I passed along בַּסָּךְ, I led them to the house of God, a multitude keeping festival."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-sakka",
+      "lang": "ar",
+      "form": "سَكَّ",
+      "translit": "sakka",
+      "gloss": "close up, stop up, make fast (a door); (اِسْتَكَّ) be closed up; of herbage, grow dense",
+      "relation": "cognate",
+      "note": "The closing-off of סָכַךְ: a door made fast, ears stopped, and herbage so dense that its gaps are closed, which matches the thicket where a lion lurks. سُكٌّ is a narrow well or a road stopped up.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "pp. 1386–1387, root سك, سَكَّ (n20156), اِسْتَكَّ (n20158), سُكٌّ (n20160)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001356 skk [block]: ARB013966 sakka"
+        }
+      ]
+    },
+    {
+      "id": "akk-sakaku",
+      "lang": "akk",
+      "form": "sakāku",
+      "translit": "sakāku",
+      "gloss": "block, be blocked; (adjective sakku, sukkuku) blocked, deaf",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000044260, sakāku [block] V; armep x000113630, sakku [blocked] AJ"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001356 skk [block]: AKK010237 sakāku [block]"
+        }
+      ]
+    },
+    {
+      "id": "uga-sk",
+      "lang": "uga",
+      "form": "sk",
+      "translit": "sk",
+      "gloss": "den, lair",
+      "relation": "cognate",
+      "note": "Known here only from Anderson–Moser's set, which puts it with סֹךְ “thicket” and Arabic سُكّ “narrow”; not checked in a Ugaritic dictionary.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000408 sk [den] N: UGC003738 sk [den]; HEB005131 sok [thicket]; ARB013972 sukk [narrow]"
+        }
+      ]
+    },
+    {
+      "id": "akk-sukku",
+      "lang": "akk",
+      "form": "sukku",
+      "translit": "sukku",
+      "gloss": "chapel, shrine",
+      "relation": "possible",
+      "note": "A god's chapel; close to סֹךְ as Yahweh's abode in Zion (Psa 76:3; Lam 2:6), but the Akkadian word may have another origin.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000051970, sukku [shrine] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "dwelling-in-booths",
+      "statement": "Yahweh's law sets the feast in the seventh month: for seven days all Israel is to dwell in booths, “so that your generations may know that I made the sons of Israel dwell in booths when I brought them out of the land of Egypt” (Lev 23:42–43). It is kept when the harvest of threshing floor and winepress is in, and its command is to rejoice (Lev 23:40; Deu 16:13–15). The booth recalls that Yahweh housed his people on the way out of Egypt. When the returned exiles found it written and made booths again, there was very great joy (Neh 8:14–17). Zechariah sees the nations left after Jerusalem's trouble going up year by year to worship the King, Yahweh of hosts, and keep חַג הַסֻּכּוֹת (Zec 14:16); in the same chapter living waters go out from Jerusalem (Zec 14:8). At this feast, on its last and great day, Jesus stood and cried, “If anyone thirsts, let him come to me and drink”, speaking of the Spirit that those who believed in him would receive (Jhn 7:2, 37–39).",
+      "evidence": [
+        {
+          "ref": "Lev.23.42",
+          "to": "Lev.23.43"
+        },
+        {
+          "ref": "Lev.23.40"
+        },
+        {
+          "ref": "Deu.16.13",
+          "to": "Deu.16.15"
+        },
+        {
+          "ref": "Neh.8.14",
+          "to": "Neh.8.17"
+        },
+        {
+          "ref": "Zec.14.16"
+        },
+        {
+          "ref": "Zec.14.8"
+        },
+        {
+          "ref": "Jhn.7.2"
+        },
+        {
+          "ref": "Jhn.7.37",
+          "to": "Jhn.7.39"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-screens-his-own",
+      "statement": "Yahweh is the one who screens. He put Moses in the cleft of the rock and screened him with his hand while his glory passed by (Exo 33:22). He screens with his pinions the one who takes refuge under his wings (Psa 91:4), screens over those who take refuge in him (Psa 5:12), and screened David's head in battle (Psa 140:8). He hides his own in his סֹךְ in the day of trouble (Psa 27:5) and in a סֻכָּה from the strife of tongues (Psa 31:21), and promises a סֻכָּה over Zion for shade by day and refuge from storm (Isa 4:6). Yet he can also screen himself with a cloud so that prayer cannot pass through (Lam 3:44), and the hedge he set around Job's house (Job 1:10) is, in Job's suffering, a hedging in (Job 3:23).",
+      "evidence": [
+        {
+          "ref": "Exo.33.22"
+        },
+        {
+          "ref": "Psa.91.4"
+        },
+        {
+          "ref": "Psa.5.12"
+        },
+        {
+          "ref": "Psa.140.8"
+        },
+        {
+          "ref": "Psa.27.5"
+        },
+        {
+          "ref": "Psa.31.21"
+        },
+        {
+          "ref": "Isa.4.6"
+        },
+        {
+          "ref": "Lam.3.44"
+        },
+        {
+          "ref": "Job.1.10"
+        },
+        {
+          "ref": "Job.3.23"
+        }
+      ]
+    },
+    {
+      "topic": "the-screen-before-the-ark",
+      "statement": "In the Dwelling the ark was screened twice over: the cherubim's wings screened the כַּפֹּרֶת (Exo 25:20), and the veil, called “the veil of the screen”, screened the ark itself (Exo 40:3, 21; Exo 35:12); a second מָסָךְ screened the entrance of the tent (Exo 26:36). Hebrews reads these screens as showing that the way into the holy place was not yet open while the first tent stood (Heb 9:3, 5, 8). The veil was torn from top to bottom when Jesus died (Mat 27:51), and Hebrews calls the way he opened “through the veil, that is, his flesh”, so that we may draw near with boldness (Heb 10:19–22).",
+      "evidence": [
+        {
+          "ref": "Exo.25.20"
+        },
+        {
+          "ref": "Exo.40.3"
+        },
+        {
+          "ref": "Exo.40.21"
+        },
+        {
+          "ref": "Exo.35.12"
+        },
+        {
+          "ref": "Exo.26.36"
+        },
+        {
+          "ref": "Heb.9.3"
+        },
+        {
+          "ref": "Heb.9.5"
+        },
+        {
+          "ref": "Heb.9.8"
+        },
+        {
+          "ref": "Mat.27.51"
+        },
+        {
+          "ref": "Heb.10.19",
+          "to": "Heb.10.22"
+        }
+      ]
+    },
+    {
+      "topic": "the-booth-of-david-raised",
+      "statement": "Amos promises that Yahweh will raise up the fallen סֻכָּה of David, wall up its breaches and rebuild it as in the days of old, so that they may possess the remnant of Edom and all the nations over whom Yahweh's name is called (Amo 9:11–12). At the council in Jerusalem James says that God has visited the nations to take from them a people for his name, and that the prophets agree, quoting this promise (Act 15:14–17). The rebuilt house of David is where the nations are gathered.",
+      "evidence": [
+        {
+          "ref": "Amo.9.11",
+          "to": "Amo.9.12"
+        },
+        {
+          "ref": "Act.15.14",
+          "to": "Act.15.17"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: the place Succoth (o.bb.ae; its tokens are also counted under o.bb.ad), Secacah (o.bb.ag), and Succoth-benoth (2Ki 17:30), names. Also left out: סוּךְ “anoint, pour oil” (o.ar.aa; Rut 3:3, Deu 28:40, 2Sa 12:20) and its אָסוּךְ “oil flask” (o.ar.ab): a different meaning that scripture never mixes with screening; and שֵׂךְ “splinter” (Num 33:55, u.bh.ab) and שֻׂכָּה “harpoon” (Job 40:31, u.bh.ac): their sense is a point that pierces, as in Arabic شَكَّ “pierce with a spear” (Lane p. 1582, n22783), which shows ش, Hebrew שׂ, not س; they go with a שׂכך “pierce” entry. Included, decided by evidence: the שׂ spellings of this root's words (Exo 33:22 וְשַׂכֹּתִי as in Exo 25:20; Lam 2:6 שֻׂכּוֹ as Psa 76:3 סֻכּוֹ; Job 1:10 שַׂכְתָּ בַעֲדוֹ answered by Job 3:23 וַיָּסֶךְ בַּעֲדוֹ; Isa 5:5 מְשׂוּכָּה as Mic 7:4 מְסוּכָה) and the hedge verb BDB files as סוך/שׂוך (o.as.aa, u.an.aa). No word sets a separate `root`: the database keys the verb's forms under סוכ, shared with “anoint”, and the שׂ nouns under שׂככ, shared with the “pierce” words; claiming either key would route those words here. Counting: lexicon-support undercounts the verb, because its forms analysed under סוכ are dropped from o.as.aa's count. Open: (1) the pilpel סִכְסֵךְ “stir up” (Isa 9:10; 19:2) and סַךְ (Psa 42:5) have no evident tie to screening. (2) Arabic شَكَّ also means “join, put in a row” and “a garment was put on him” (Lane p. 1582): whether the weave sense (Psa 139:13; Job 10:11) belongs with ش rather than س is not decided; not entered. (3) Ugaritic sk is cited from Anderson–Moser only (Fisher/DULAT not consulted). (4) The Peshitta renders the feast of booths with מְטַלֵּא (root טלל, Jhn 7:2) and Amos's סֻכָּה with מַשְׁכְּנָא (Act 15:16), not with this root, so there is no Syriac word of the entry. (5) BDB's key o.bb.ad counts Succoth place-name tokens too."
+}

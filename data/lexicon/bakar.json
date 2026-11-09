@@ -1,0 +1,1027 @@
+{
+  "id": "bakar",
+  "root": "בכר",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "family",
+    "inheritance",
+    "offering",
+    "harvest",
+    "first"
+  ],
+  "gloss": "first, firstborn; first-ripe; birthright",
+  "summary": "בכר is being first: the firstborn son or daughter, the first male of the herd and flock, the fruit that ripens first, and the firstborn's standing and double share (בְּכֹרָה). Scripture sets the firstborn beside “the beginning (רֵאשִׁית) of strength” (Gen 49:3; Deu 21:17). Every firstborn in Israel belongs to Yahweh, who calls Israel “my son, my firstborn” (Exo 4:22); and the first-ripe fruits, בִּכּוּרִים, are brought to his house, the loaves of the feast of weeks among them (Lev 23:17, 20). The New Testament calls Christ the firstborn of the dead. Arabic بِكْر and باكورة, Akkadian bukru, Ugaritic and Punic bkr share the meaning; Arabic and Akkadian also name a young camel or foal from the root.",
+  "words": [
+    {
+      "lemma": "בְּכוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "firstborn; firstling",
+      "bdb": [
+        "b.br.ab"
+      ],
+      "cognate_ids": [
+        "ar-bikr",
+        "akk-bukru",
+        "uga-bkr",
+        "phn-bkr"
+      ],
+      "senses": [
+        {
+          "id": "firstborn",
+          "gloss": "firstborn son",
+          "definition": "The first son born to his father, who stands first among his brothers and is called the beginning of his father's strength.",
+          "evidence": [
+            {
+              "ref": "Gen.49.3",
+              "role": "defining",
+              "note": "“Reuben, you are my firstborn, my strength and the beginning (רֵאשִׁית) of my vigour.”"
+            },
+            {
+              "ref": "Gen.43.33",
+              "role": "defining",
+              "note": "Seated the firstborn by his birthright and the youngest (צָעִיר) by his youth."
+            },
+            {
+              "ref": "Deu.21.17",
+              "role": "defining",
+              "note": "He must acknowledge the firstborn, the beginning of his strength."
+            },
+            {
+              "ref": "Gen.41.51"
+            },
+            {
+              "ref": "Exo.4.23",
+              "note": "Pharaoh's son, his firstborn."
+            },
+            {
+              "ref": "Num.3.2"
+            }
+          ]
+        },
+        {
+          "id": "firstborn-of-beasts",
+          "gloss": "firstling of herd and flock",
+          "definition": "The first male an animal bears, which, like the firstborn son, is Yahweh's.",
+          "evidence": [
+            {
+              "ref": "Exo.13.2",
+              "role": "defining",
+              "note": "Every firstborn that opens the womb, of man and of beast: it is mine."
+            },
+            {
+              "ref": "Deu.15.19",
+              "role": "defining",
+              "note": "Every firstborn male of your herd and flock you shall set apart to Yahweh."
+            },
+            {
+              "ref": "Exo.13.15"
+            },
+            {
+              "ref": "Lev.27.26",
+              "note": "A firstling already belongs to Yahweh and cannot be dedicated."
+            },
+            {
+              "ref": "Num.18.17"
+            }
+          ]
+        },
+        {
+          "id": "yahwehs-firstborn",
+          "gloss": "Yahweh's firstborn",
+          "definition": "Israel, Ephraim, and the king of David's line, each called Yahweh's firstborn: the son he owns and sets first.",
+          "evidence": [
+            {
+              "ref": "Exo.4.22",
+              "role": "defining",
+              "note": "“Israel is my son, my firstborn.”"
+            },
+            {
+              "ref": "Jer.31.9",
+              "role": "defining",
+              "note": "“I am a father to Israel, and Ephraim is my firstborn.”"
+            },
+            {
+              "ref": "Psa.89.28",
+              "role": "defining",
+              "note": "“I will make him firstborn, highest of the kings of the earth.”"
+            },
+            {
+              "ref": "Rev.1.5",
+              "note": "Jesus “the firstborn of the dead and ruler of the kings of the earth”, in Psa 89:28's words."
+            },
+            {
+              "ref": "Col.1.15"
+            },
+            {
+              "ref": "Heb.1.6"
+            }
+          ]
+        },
+        {
+          "gloss": "foremost of (figurative)",
+          "definition": "The foremost or most extreme of a kind.",
+          "evidence": [
+            {
+              "ref": "Isa.14.30",
+              "role": "defining",
+              "note": "The firstborn of the poor will graze: the poorest."
+            },
+            {
+              "ref": "Job.18.13",
+              "role": "defining",
+              "note": "The firstborn of death devours his limbs."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πρωτότοκος",
+          "gloss": "firstborn",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.89.28 (LXX 88:28), בְּכוֹר → πρωτότοκον"
+            },
+            {
+              "ref": "Rev.1.5"
+            },
+            {
+              "ref": "Col.1.15"
+            },
+            {
+              "ref": "Col.1.18"
+            },
+            {
+              "ref": "Rom.8.29"
+            },
+            {
+              "ref": "Heb.1.6"
+            },
+            {
+              "ref": "Heb.12.23"
+            },
+            {
+              "ref": "Heb.11.28",
+              "note": "The destroyer of the firstborn (Exo 12:23, 29)."
+            },
+            {
+              "ref": "Luk.2.7"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רֵאשִׁית",
+            "note": "The firstborn is the beginning of a father's strength.",
+            "evidence": [
+              {
+                "ref": "Gen.49.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.21.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.51"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "צָעִיר",
+            "note": "The firstborn and the youngest.",
+            "evidence": [
+              {
+                "ref": "Gen.43.33",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "פֶּטֶר רֶחֶם",
+            "gloss": "the one that opens the womb",
+            "evidence": [
+              {
+                "ref": "Exo.13.2"
+              },
+              {
+                "ref": "Num.3.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בִּכּוּרִים",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "first-ripe fruits",
+      "bdb": [
+        "b.br.al"
+      ],
+      "cognate_ids": [
+        "ar-bakura"
+      ],
+      "summary": "Always plural: the produce that ripens first. Distinct from רֵאשִׁית “the first (portion)”, with which it is joined in Exo 23:19: “the first of the first-ripe fruits of your ground”.",
+      "senses": [
+        {
+          "id": "first-ripe",
+          "gloss": "first-ripe fruits, first produce",
+          "definition": "Grain, grapes or figs that ripen first in the year, brought to Yahweh's house and given to the priests.",
+          "evidence": [
+            {
+              "ref": "Exo.23.19",
+              "role": "defining",
+              "note": "The first of the בִּכּוּרִים of your ground you shall bring to the house of Yahweh."
+            },
+            {
+              "ref": "Num.13.20",
+              "role": "defining",
+              "note": "The season was the days of the first-ripe grapes."
+            },
+            {
+              "ref": "Lev.2.14",
+              "role": "defining",
+              "note": "A grain offering of first-ripe grain: fresh ears roasted in fire."
+            },
+            {
+              "ref": "Nam.3.12",
+              "note": "Fig trees with first-ripe figs that fall into the eater's mouth when shaken."
+            },
+            {
+              "ref": "Num.18.13"
+            },
+            {
+              "ref": "Neh.10.36"
+            },
+            {
+              "ref": "Ezk.44.30"
+            },
+            {
+              "ref": "2Ki.4.42",
+              "note": "Bread of the first-ripe fruits brought to the man of God."
+            }
+          ]
+        },
+        {
+          "id": "firstfruits-of-weeks",
+          "gloss": "the first-ripe loaves of the feast of weeks",
+          "definition": "The two leavened loaves of the new wheat brought on the fiftieth day, and the day itself, יוֹם הַבִּכּוּרִים.",
+          "evidence": [
+            {
+              "ref": "Lev.23.17",
+              "role": "defining",
+              "note": "Two loaves baked with leaven, בִּכּוּרִים to Yahweh."
+            },
+            {
+              "ref": "Lev.23.20",
+              "role": "defining",
+              "note": "The priest raises them with the bread of the בִּכּוּרִים before Yahweh."
+            },
+            {
+              "ref": "Num.28.26",
+              "role": "defining",
+              "note": "The day of the בִּכּוּרִים, when you bring a new grain offering in your weeks."
+            },
+            {
+              "ref": "Exo.34.22",
+              "role": "defining",
+              "note": "The feast of weeks, of the first-ripe fruits of the wheat harvest."
+            },
+            {
+              "ref": "Exo.23.16"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "יוֹם הַבִּכּוּרִים",
+            "gloss": "the day of the first-ripe fruits",
+            "evidence": [
+              {
+                "ref": "Num.28.26"
+              }
+            ]
+          },
+          {
+            "phrase": "רֵאשִׁית בִּכּוּרֵי אַדְמָתְךָ",
+            "gloss": "the first of the first-ripe fruits of your ground",
+            "evidence": [
+              {
+                "ref": "Exo.23.19"
+              },
+              {
+                "ref": "Exo.34.26"
+              }
+            ]
+          },
+          {
+            "phrase": "לֶחֶם הַבִּכּוּרִים",
+            "gloss": "the bread of the first-ripe fruits",
+            "evidence": [
+              {
+                "ref": "Lev.23.20"
+              },
+              {
+                "ref": "2Ki.4.42"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בְּכֹרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "birthright; firstlings",
+      "bdb": [
+        "b.br.ah"
+      ],
+      "cognate_ids": [
+        "ar-bikr"
+      ],
+      "senses": [
+        {
+          "id": "birthright",
+          "gloss": "birthright, right of the firstborn",
+          "definition": "The firstborn's standing and his double share of the inheritance. It could be sold, despised, or given to another.",
+          "evidence": [
+            {
+              "ref": "Gen.25.34",
+              "role": "defining",
+              "note": "Esau ate, drank, rose and went: so Esau despised the birthright."
+            },
+            {
+              "ref": "Deu.21.17",
+              "role": "defining",
+              "note": "A double portion to the firstborn: the right (מִשְׁפָּט) of the בְּכֹרָה is his."
+            },
+            {
+              "ref": "1Ch.5.1",
+              "role": "defining",
+              "note": "Reuben defiled his father's bed, so his birthright was given to the sons of Joseph."
+            },
+            {
+              "ref": "Gen.25.31"
+            },
+            {
+              "ref": "Gen.27.36",
+              "note": "“He took my birthright, and now he has taken my blessing.”"
+            },
+            {
+              "ref": "1Ch.5.2"
+            },
+            {
+              "ref": "Heb.12.16",
+              "note": "Esau sold his birthright for one meal."
+            }
+          ]
+        },
+        {
+          "gloss": "firstlings",
+          "definition": "In the plural, the firstborn of flock and herd, brought to the place Yahweh chooses.",
+          "evidence": [
+            {
+              "ref": "Gen.4.4",
+              "role": "defining",
+              "note": "Abel brought of the firstlings of his flock and of their fat."
+            },
+            {
+              "ref": "Deu.12.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.14.23"
+            }
+          ],
+          "kin": [
+            "firstborn-of-beasts"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πρωτοτόκια",
+          "gloss": "birthright",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.25.34, בְּכֹרָה → πρωτοτόκια"
+            },
+            {
+              "ref": "Heb.12.16",
+              "note": "Esau sold his πρωτοτόκια for one meal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּכִירָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "firstborn daughter, elder",
+      "bdb": [
+        "b.br.aj"
+      ],
+      "cognate_ids": [
+        "ar-bikr",
+        "akk-bukurtu"
+      ],
+      "senses": [
+        {
+          "gloss": "firstborn daughter, the elder",
+          "definition": "The first-born of two or more daughters, set against the younger.",
+          "evidence": [
+            {
+              "ref": "Gen.29.26",
+              "role": "defining",
+              "note": "It is not done here to give the younger before the firstborn."
+            },
+            {
+              "ref": "Gen.19.31",
+              "role": "defining",
+              "note": "The firstborn said to the younger (צְעִירָה)."
+            },
+            {
+              "ref": "1Sa.14.49",
+              "note": "The firstborn Merab and the younger Michal."
+            }
+          ],
+          "kin": [
+            "firstborn"
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "צְעִירָה",
+            "note": "The firstborn daughter and the younger.",
+            "evidence": [
+              {
+                "ref": "Gen.19.31",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.29.26",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בָּכַר",
+      "pos": "verb",
+      "gloss": "make firstborn; bear first; ripen early",
+      "bdb": [
+        "b.br.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "make firstborn; bear early fruit",
+          "senses": [
+            {
+              "gloss": "treat as firstborn",
+              "definition": "Give a son the firstborn's right.",
+              "evidence": [
+                {
+                  "ref": "Deu.21.16",
+                  "role": "defining",
+                  "note": "He may not make the son of the loved wife firstborn ahead of the son of the hated, the firstborn."
+                }
+              ],
+              "kin": [
+                "birthright"
+              ],
+              "cognate_ids": [
+                "ar-bikr"
+              ]
+            },
+            {
+              "gloss": "bear early fruit",
+              "definition": "Of trees, bear fresh fruit early, month by month.",
+              "evidence": [
+                {
+                  "ref": "Ezk.47.12",
+                  "role": "defining",
+                  "note": "By the river every tree will bear fresh fruit every month; its leaf for healing."
+                },
+                {
+                  "ref": "Rev.22.2",
+                  "note": "The tree of life yields its fruit every month, its leaves for healing."
+                }
+              ],
+              "kin": [
+                "first-ripe"
+              ],
+              "cognate_ids": [
+                "ar-bakara",
+                "ar-bakura"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be born first",
+          "senses": [
+            {
+              "gloss": "be born first, be a firstling",
+              "definition": "Of an animal, be born first and so belong to Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Lev.27.26",
+                  "role": "defining",
+                  "note": "A firstling which is born first to Yahweh among beasts."
+                }
+              ],
+              "kin": [
+                "firstborn-of-beasts"
+              ],
+              "cognate_ids": [
+                "ar-bikr"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bear a first child",
+          "senses": [
+            {
+              "gloss": "bear a first child",
+              "definition": "Of a woman, give birth for the first time.",
+              "evidence": [
+                {
+                  "ref": "Jer.4.31",
+                  "role": "defining",
+                  "note": "A cry like a woman in labour, anguish like one bearing her first child."
+                }
+              ],
+              "cognate_ids": [
+                "ar-bikr"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּכּוּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "first-ripe fig",
+      "bdb": [
+        "b.br.ak"
+      ],
+      "cognate_ids": [
+        "ar-bakura"
+      ],
+      "senses": [
+        {
+          "gloss": "first-ripe fig",
+          "definition": "The fig that ripens first, before summer, longed for and eaten at once.",
+          "evidence": [
+            {
+              "ref": "Hos.9.10",
+              "role": "defining",
+              "note": "Like the first-ripe fruit on the fig tree in its beginning I saw your fathers."
+            },
+            {
+              "ref": "Isa.28.4",
+              "role": "defining",
+              "note": "Like a first-ripe fig before summer, swallowed as soon as it is in the hand."
+            },
+            {
+              "ref": "Mic.7.1",
+              "role": "defining",
+              "note": "No first-ripe fig that my soul desires."
+            },
+            {
+              "ref": "Jer.24.2",
+              "note": "Very good figs, like first-ripe figs."
+            }
+          ],
+          "kin": [
+            "first-ripe"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֶּכֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "young camel",
+      "cognate_ids": [
+        "ar-bakr",
+        "akk-bakru"
+      ],
+      "summary": "Once, in the plural construct בִּכְרֵי (BDB counts it under b.br.ag, with בִּכְרָה). Arabic بَكْر is a camel in its youthful vigour and Akkadian bakru a foal, so the word is the root's, though how it goes with “first” is not shown by scripture's use.",
+      "senses": [
+        {
+          "id": "young-camel",
+          "gloss": "young camel",
+          "definition": "A young camel, one of the camels of the east bringing gold and frankincense to Zion.",
+          "evidence": [
+            {
+              "ref": "Isa.60.6",
+              "role": "defining",
+              "note": "A multitude of camels will cover you, the young camels of Midian and Ephah."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּכְרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "young she-camel",
+      "bdb": [
+        "b.br.ag"
+      ],
+      "cognate_ids": [
+        "ar-bakr",
+        "akk-bakru"
+      ],
+      "senses": [
+        {
+          "gloss": "young she-camel",
+          "definition": "A young female camel, running this way and that.",
+          "evidence": [
+            {
+              "ref": "Jer.2.23",
+              "role": "defining",
+              "note": "A swift young she-camel crisscrossing her ways: Israel running after the Baals."
+            }
+          ],
+          "kin": [
+            "young-camel"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בּוּכְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "firstborn",
+      "summary": "The Peshitta's word wherever the Greek has πρωτότοκος.",
+      "senses": [
+        {
+          "id": "syc-firstborn",
+          "gloss": "firstborn",
+          "definition": "A mother's first son; the firstborn of Egypt; and Christ, the firstborn of all creation, of the dead, and among many brothers.",
+          "evidence": [
+            {
+              "ref": "Luk.2.7",
+              "role": "defining",
+              "note": "She bore her firstborn son."
+            },
+            {
+              "ref": "Heb.11.28",
+              "role": "defining",
+              "note": "So that the destroyer would not touch their firstborn."
+            },
+            {
+              "ref": "Col.1.15",
+              "role": "defining",
+              "note": "The firstborn of all creation."
+            },
+            {
+              "ref": "Mat.1.25"
+            },
+            {
+              "ref": "Col.1.18"
+            },
+            {
+              "ref": "Rom.8.29"
+            },
+            {
+              "ref": "Heb.1.6"
+            },
+            {
+              "ref": "Heb.12.23",
+              "note": "The assembly of the firstborn enrolled in heaven."
+            },
+            {
+              "ref": "Rev.1.5",
+              "note": "The firstborn of the dead and head of the kings of the earth."
+            }
+          ],
+          "kin": [
+            "firstborn",
+            "yahwehs-firstborn"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בּוּכְרוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "birthright",
+      "senses": [
+        {
+          "gloss": "birthright",
+          "definition": "The firstborn's right, which Esau sold for a meal.",
+          "evidence": [
+            {
+              "ref": "Heb.12.16",
+              "role": "defining",
+              "note": "Esau, who for one meal sold his birthright."
+            }
+          ],
+          "kin": [
+            "birthright"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּכִירָיָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "early",
+      "senses": [
+        {
+          "gloss": "early (of rain)",
+          "definition": "Coming first in its season: the early rain, set against the late.",
+          "evidence": [
+            {
+              "ref": "Jas.5.7",
+              "role": "defining",
+              "note": "Until he receives the early rain and the late (לַקִישָׁיָא)."
+            }
+          ],
+          "cognate_ids": [
+            "ar-bakara",
+            "ar-bakura"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-bikr",
+      "lang": "ar",
+      "form": "بِكْرٌ",
+      "translit": "bikr",
+      "gloss": "firstborn of his parents; the first of anything; a woman or she-camel that has borne once; virgin",
+      "relation": "cognate",
+      "note": "Covers the firstborn (Lane: “this is the first-born of his parents”), the mother bearing for the first time (as the hiphil, Jer 4:31), and the first of anything.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 240, root بكر, بِكْرٌ (n3069)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001343 bkr [firstborn] V: ARB002117 bakara"
+        }
+      ]
+    },
+    {
+      "id": "ar-bakara",
+      "lang": "ar",
+      "form": "بَكَرَ",
+      "translit": "bakara",
+      "gloss": "go forth early in the morning; (بَكَّرَ) be early; of a palm, be early with its fruit",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 239, root بكر, بَكَرَ (n3064), بَكَّرَ (n3065)"
+        }
+      ]
+    },
+    {
+      "id": "ar-bakura",
+      "lang": "ar",
+      "form": "بَاكُورَةٌ",
+      "translit": "bākūra",
+      "gloss": "the first of fruit, the first to ripen; (بَكُورٌ) a palm that ripens first; rain in the first of its season",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 241, root بكر, بَكُورٌ (n3076), بَاكُورَةٌ (n3081)"
+        }
+      ]
+    },
+    {
+      "id": "ar-bakr",
+      "lang": "ar",
+      "form": "بَكْرٌ",
+      "translit": "bakr",
+      "gloss": "a young he-camel in its youthful vigour; (بَكْرَةٌ) a young she-camel",
+      "relation": "cognate",
+      "note": "Lane's sources liken بَكْر among camels to فَتًى “youth” among men.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 240, root بكر, بَكْرٌ (n3067)"
+        }
+      ]
+    },
+    {
+      "id": "akk-bukru",
+      "lang": "akk",
+      "form": "bukru",
+      "translit": "bukru",
+      "gloss": "son (offspring)",
+      "relation": "cognate",
+      "note": "Oracc glosses it only “son”; its use for a firstborn heir has not been checked in CAD.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000002610, bukru [son] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-bukurtu",
+      "lang": "akk",
+      "form": "bukurtu",
+      "translit": "bukurtu",
+      "gloss": "daughter",
+      "relation": "cognate",
+      "note": "The feminine of bukru; Oracc glosses it only “daughter”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000040910, bukurtu [daughter] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-bakru",
+      "lang": "akk",
+      "form": "bakru",
+      "translit": "bakru",
+      "gloss": "foal, young (of a camel or donkey)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000131860, bakru [foal] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-bkr",
+      "lang": "uga",
+      "form": "bkr",
+      "translit": "bkr",
+      "gloss": "firstborn",
+      "relation": "cognate",
+      "note": "Cited from Anderson–Moser's sets; not checked in a Ugaritic dictionary.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000668 bkūr [first-born] N: UGC001175 bkr [first-born]; SEM001343 bkr: UGC001174 bkr [D] V"
+        }
+      ]
+    },
+    {
+      "id": "phn-bkr",
+      "lang": "phn",
+      "form": "bkr",
+      "translit": "bkr",
+      "gloss": "firstborn (Punic)",
+      "relation": "cognate",
+      "note": "Cited from Anderson–Moser's sets; not checked in Krahmalkov.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000668 bkūr [first-born] N: PUN000322 bkr [firstborn]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-firstborn-are-yahwehs",
+      "statement": "Yahweh sent Moses to say to Pharaoh, “Israel is my son, my firstborn: let my son go… if you refuse, I will kill your son, your firstborn” (Exo 4:22–23). On the night he struck every firstborn in Egypt, the firstborn of Israel were spared (Exo 12:12–13), and from that day every firstborn in Israel, of man and beast, was his: “on the day I struck every firstborn in the land of Egypt, I set apart for myself every firstborn in Israel” (Num 3:13; Exo 13:2). The firstborn sons were to be redeemed (Exo 13:13, 15), and the Levites were taken for Yahweh in their place (Num 3:12). Hebrews reads the keeping of the פֶּסַח as faith, so that the destroyer of the firstborn would not touch them (Heb 11:28). Mary's firstborn son was presented in the temple, as the law of the Lord says, “every male that opens the womb shall be called holy to the Lord” (Luk 2:7, 22–23, from Exo 13:2, 12). The firstborn live because Yahweh spared them, and so they are his.",
+      "evidence": [
+        {
+          "ref": "Exo.4.22",
+          "to": "Exo.4.23"
+        },
+        {
+          "ref": "Exo.12.12",
+          "to": "Exo.12.13"
+        },
+        {
+          "ref": "Num.3.13"
+        },
+        {
+          "ref": "Exo.13.2"
+        },
+        {
+          "ref": "Exo.13.13"
+        },
+        {
+          "ref": "Exo.13.15"
+        },
+        {
+          "ref": "Num.3.12"
+        },
+        {
+          "ref": "Heb.11.28"
+        },
+        {
+          "ref": "Luk.2.7"
+        },
+        {
+          "ref": "Luk.2.22",
+          "to": "Luk.2.23"
+        }
+      ]
+    },
+    {
+      "topic": "christ-the-firstborn",
+      "statement": "Of David's heir Yahweh says, “He will call to me, ‘You are my Father’… and I will make him firstborn, highest of the kings of the earth” (Psa 89:27–28). John calls Jesus “the firstborn of the dead and the ruler of the kings of the earth” (Rev 1:5). Scripture calls the firstborn “the beginning (רֵאשִׁית) of his strength” (Gen 49:3; Deu 21:17), and Paul joins the same two words of Christ: “he is the beginning, the firstborn from the dead, so that in all things he may be first” (Col 1:18), as he is “the firstborn of all creation” (Col 1:15). He is the firstborn among many brothers, conformed to his image (Rom 8:29), and those who come to God come to “the assembly of the firstborn enrolled in heaven” (Heb 12:23). Zechariah foretold mourning over the one they pierced “as one mourns over a firstborn” (Zec 12:10), and John cites that verse at the cross (Jhn 19:37).",
+      "evidence": [
+        {
+          "ref": "Psa.89.27",
+          "to": "Psa.89.28"
+        },
+        {
+          "ref": "Rev.1.5"
+        },
+        {
+          "ref": "Gen.49.3"
+        },
+        {
+          "ref": "Deu.21.17"
+        },
+        {
+          "ref": "Col.1.15"
+        },
+        {
+          "ref": "Col.1.18"
+        },
+        {
+          "ref": "Rom.8.29"
+        },
+        {
+          "ref": "Heb.12.23"
+        },
+        {
+          "ref": "Zec.12.10"
+        },
+        {
+          "ref": "Jhn.19.37"
+        }
+      ]
+    },
+    {
+      "topic": "the-birthright",
+      "statement": "The birthright went with birth, not with a father's favour: he may not make the son of the loved wife firstborn over the son of the hated, but must give the firstborn a double portion (Deu 21:15–17). Esau sold his for a meal of bread and lentils and despised it (Gen 25:31–34), and later lost the blessing too (Gen 27:36). Reuben lost his by defiling his father's bed, and it went to the sons of Joseph (1Ch 5:1–2). Hebrews warns that no one be godless like Esau, who for one meal sold his birthright and afterward, wanting the blessing, was rejected, though he sought it with tears (Heb 12:16–17).",
+      "evidence": [
+        {
+          "ref": "Deu.21.15",
+          "to": "Deu.21.17"
+        },
+        {
+          "ref": "Gen.25.31",
+          "to": "Gen.25.34"
+        },
+        {
+          "ref": "Gen.27.36"
+        },
+        {
+          "ref": "1Ch.5.1",
+          "to": "1Ch.5.2"
+        },
+        {
+          "ref": "Heb.12.16",
+          "to": "Heb.12.17"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: the names בִּכְרִי (Bichri), בֶּכֶר (Becher, b.br.ac), בַּכְרִי (Becherite), בֹּכְרוּ (Bocheru), בְּכוֹרַת (Becorath); and בַּלְאֲדָן (Baladan, b.br.ao), an Akkadian royal name filed here by BDB, not formed from this root. בֶּכֶר “young camel” has no BDB key of its own: its one token (Isa 60:6) is counted under b.br.ag with בִּכְרָה. Firstfruits in the New Testament: “Christ the firstfruits (ἀπαρχή) of those who sleep” (1Co 15:20–23), and ἀπαρχή in Jas 1:18 and Rev 14:4, answer to רֵאשִׁית, not to בִּכּוּרִים: the Peshitta renders all three with רִשִׁיתָא, and the sheaf brought on the morrow after the sabbath is the רֵאשִׁית of the harvest (Lev 23:10), while בִּכּוּרִים are the loaves of the fiftieth day (Lev 23:17, 20). Those passages belong in the doctrine of a ראשׁ entry, so no firstfruits doctrine is written here. Open: (1) Should a doctrine note that the day of the בִּכּוּרִים (Num 28:26) is the fiftieth day (Lev 23:16), the day on which Luke dates the coming of the Spirit (Act 2:1)? Scripture states both facts but does not connect the Spirit with the בִּכּוּרִים loaves, so it is left for review. (2) Ge'ez bakwara, which Anderson–Moser gloss “offer” (GEZ001030), not checked in Dillmann or Leslau; not entered. (3) Ugaritic and Punic bkr from Anderson–Moser only; Akkadian bukru “son” not checked in CAD for “firstborn heir”. (4) The young-camel words: Arabic and Akkadian share them, but scripture's use does not show the tie to “first”; Lane's بَكْر is a camel in its youth, which may be the link (the first years)."
+}

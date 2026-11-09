@@ -1,0 +1,664 @@
+{
+  "id": "pasach",
+  "root": "פסח",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "feast",
+    "sacrifice",
+    "deliverance",
+    "movement",
+    "body"
+  ],
+  "gloss": "pass over, sparing; hop, limp; the פֶּסַח",
+  "summary": "פָּסַח is a movement of the legs: people hop or limp, and a man is lame. Its great use is Yahweh's act on the night he struck Egypt: he saw the blood on the doors and passed over the houses, not letting the destroyer in, and so spared those inside. Scripture sets that act beside shielding, delivering and rescuing (Exo 12:27; Isa 31:5). The פֶּסַח is named for it: the lamb slaughtered on the fourteenth of the first month, and the appointed time kept by eating it. The New Testament keeps the word itself as πάσχα, and calls Christ our πάσχα (1Co 5:7).",
+  "words": [
+    {
+      "lemma": "פֶּסַח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "the פֶּסַח: its lamb, its appointed time",
+      "bdb": [
+        "q.by.ab"
+      ],
+      "summary": "Named for Yahweh's passing over the houses: “it is the sacrifice of פֶּסַח to Yahweh, who passed over (פָּסַח) the houses of the sons of Israel” (Exo 12:27). The word names both the animal slaughtered and the appointed time at which it is eaten.",
+      "senses": [
+        {
+          "id": "pesach-offering",
+          "gloss": "the פֶּסַח lamb or kid; its sacrifice",
+          "definition": "The animal from the flock (in Deuteronomy also the herd) slaughtered at twilight on the fourteenth of the first month, whose blood marked the houses in Egypt and whose meat was eaten that night; not a bone of it was to be broken.",
+          "evidence": [
+            {
+              "ref": "Exo.12.21",
+              "role": "defining",
+              "note": "“Take a lamb for your families and slaughter the פֶּסַח.”"
+            },
+            {
+              "ref": "Exo.12.27",
+              "role": "defining",
+              "note": "The name explained: the sacrifice of פֶּסַח to Yahweh, who passed over the houses."
+            },
+            {
+              "ref": "Exo.12.11",
+              "note": "Eaten in haste, ready to travel: “it is פֶּסַח to Yahweh.”"
+            },
+            {
+              "ref": "Num.9.12",
+              "note": "No bone of it broken, by every statute of the פֶּסַח."
+            },
+            {
+              "ref": "Deu.16.2",
+              "note": "Sacrificed from flock and herd at the place Yahweh chooses."
+            },
+            {
+              "ref": "2Ch.30.17",
+              "note": "The Levites slaughter the פְּסָחִים for those not clean."
+            },
+            {
+              "ref": "2Ch.35.11"
+            }
+          ],
+          "kin": [
+            "pass-over-sparing"
+          ]
+        },
+        {
+          "id": "pesach-feast",
+          "gloss": "the פֶּסַח, Yahweh's appointed time",
+          "definition": "Yahweh's appointed time on the fourteenth day of the first month, between the evenings, kept by eating the פֶּסַח; with the seven days of unleavened bread that follow, the whole feast.",
+          "evidence": [
+            {
+              "ref": "Lev.23.5",
+              "role": "defining",
+              "note": "In the first month, on the fourteenth of the month, between the evenings, is פֶּסַח to Yahweh."
+            },
+            {
+              "ref": "Num.9.2",
+              "role": "defining",
+              "note": "Israel is to keep the פֶּסַח at its appointed time (מוֹעֲדוֹ)."
+            },
+            {
+              "ref": "Num.28.16"
+            },
+            {
+              "ref": "Ezk.45.21",
+              "note": "The פֶּסַח, a feast of seven days, unleavened bread eaten."
+            },
+            {
+              "ref": "Jos.5.10",
+              "note": "Kept at Gilgal on entering the land."
+            },
+            {
+              "ref": "2Ki.23.21",
+              "to": "2Ki.23.23",
+              "note": "Josiah's פֶּסַח, kept as written in the book of the covenant."
+            },
+            {
+              "ref": "Ezr.6.19"
+            }
+          ],
+          "kin": [
+            "pass-over-sparing"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πάσχα",
+          "gloss": "the Passover; its lamb; its meal",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "πάσχα: indeclinable, from Aramaic פַּסְחָא (the digitised text misprints it טַּסְחָא); in the LXX for פֶּסַח"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.5, פֶּסַח → πάσχα"
+            },
+            {
+              "ref": "1Co.5.7",
+              "role": "defining",
+              "note": "“Christ our πάσχα was sacrificed for us”: the lamb sense."
+            },
+            {
+              "ref": "Mrk.14.12",
+              "role": "defining",
+              "note": "The first day of unleavened bread, when they sacrificed the πάσχα."
+            },
+            {
+              "ref": "Luk.22.15",
+              "note": "“I have desired to eat this πάσχα with you before I suffer.”"
+            },
+            {
+              "ref": "Mat.26.2",
+              "note": "The feast: after two days is the πάσχα."
+            },
+            {
+              "ref": "Jhn.19.14",
+              "note": "The day of preparation of the πάσχα."
+            },
+            {
+              "ref": "Heb.11.28",
+              "note": "Moses kept the πάσχα and the sprinkling of blood."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "זֶבַח פֶּסַח",
+            "gloss": "the sacrifice of the פֶּסַח",
+            "evidence": [
+              {
+                "ref": "Exo.12.27"
+              },
+              {
+                "ref": "Exo.34.25"
+              }
+            ]
+          },
+          {
+            "phrase": "עָשָׂה פֶסַח",
+            "gloss": "keep (do) the פֶּסַח",
+            "evidence": [
+              {
+                "ref": "Num.9.2"
+              },
+              {
+                "ref": "Jos.5.10"
+              },
+              {
+                "ref": "2Ki.23.21"
+              }
+            ]
+          },
+          {
+            "phrase": "חֻקַּת הַפֶּסַח",
+            "gloss": "the statute of the פֶּסַח",
+            "evidence": [
+              {
+                "ref": "Exo.12.43"
+              },
+              {
+                "ref": "Num.9.12"
+              },
+              {
+                "ref": "Num.9.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פָּסַח",
+      "pos": "verb",
+      "gloss": "pass over, sparing; hop, limp",
+      "bdb": [
+        "q.by.aa"
+      ],
+      "summary": "The qal names two things scripture keeps apart only by context: Yahweh's passing over the marked houses, and people hopping or limping. Both are movements of the feet; the parallels in Exo 12:27 and Isa 31:5 show that Yahweh's passing over is an act of protection, not merely of going by: in Exo 12:23 his going through Egypt to strike is עָבַר, and פָּסַח is what he does at the door so that the destroyer does not enter.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pass over, sparing; hop between",
+          "senses": [
+            {
+              "id": "pass-over-sparing",
+              "gloss": "pass over, sparing",
+              "definition": "Of Yahweh at the houses marked with blood: pass over (עַל) the house or its door so that the destroyer does not enter and those inside are spared. Set beside shielding, delivering and rescuing.",
+              "evidence": [
+                {
+                  "ref": "Exo.12.13",
+                  "role": "defining",
+                  "note": "“I will see the blood and pass over you, and no plague will be on you to destroy.”"
+                },
+                {
+                  "ref": "Exo.12.23",
+                  "role": "defining",
+                  "note": "Yahweh goes through (עָבַר) to strike, but passes over the door and does not let the destroyer enter."
+                },
+                {
+                  "ref": "Exo.12.27",
+                  "role": "defining",
+                  "note": "He passed over the houses and delivered (הִצִּיל) them."
+                },
+                {
+                  "ref": "Isa.31.5",
+                  "role": "defining",
+                  "note": "Like birds flying, Yahweh shields Jerusalem: shielding and delivering, passing over and rescuing."
+                },
+                {
+                  "ref": "Heb.11.28",
+                  "note": "The New Testament's reading: so that the destroyer of the firstborn would not touch them."
+                }
+              ],
+              "kin": [
+                "pesach-offering",
+                "pesach-feast"
+              ],
+              "cognate_ids": [
+                "ar-fasaha"
+              ]
+            },
+            {
+              "id": "hop-between",
+              "gloss": "hop, limp between",
+              "definition": "Hop or limp back and forth between two, going neither way: Elijah's charge against Israel undecided between Yahweh and Baal.",
+              "evidence": [
+                {
+                  "ref": "1Ki.18.21",
+                  "role": "defining",
+                  "note": "“How long will you hop on the two branches (סְעִפִּים)? If Yahweh is God, go after him.”"
+                }
+              ],
+              "kin": [
+                "lame"
+              ],
+              "cognate_ids": [
+                "ar-fasaha",
+                "akk-pessu"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "become lame",
+          "senses": [
+            {
+              "gloss": "become lame",
+              "definition": "Be made lame by an injury.",
+              "evidence": [
+                {
+                  "ref": "2Sa.4.4",
+                  "role": "defining",
+                  "note": "Jonathan's son falls as his nurse flees and becomes lame; he is “stricken in the feet”."
+                }
+              ],
+              "kin": [
+                "lame"
+              ],
+              "cognate_ids": [
+                "akk-pessu",
+                "ar-fasakha"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "hop about, limp around",
+          "senses": [
+            {
+              "gloss": "hop about, limp around",
+              "definition": "Hop or limp around an altar, a movement of the prophets of Baal as they call on him.",
+              "evidence": [
+                {
+                  "ref": "1Ki.18.26",
+                  "role": "defining",
+                  "note": "They called on Baal from morning to noon and hopped about the altar they had made."
+                }
+              ],
+              "cognate_ids": [
+                "ar-fasaha"
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "גָּנַן",
+            "note": "Yahweh shields (יָגֵן, גָּנוֹן) Jerusalem in the same line.",
+            "evidence": [
+              {
+                "ref": "Isa.31.5",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נָצַל",
+            "note": "Hiphil “deliver”, beside פָּסַח in both places.",
+            "evidence": [
+              {
+                "ref": "Exo.12.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.31.5",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מָלַט",
+            "note": "Hiphil “rescue”, paired with פָּסֹחַ.",
+            "evidence": [
+              {
+                "ref": "Isa.31.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עָבַר",
+            "note": "Yahweh passes through (עָבַר) Egypt to strike, but passes over (פָּסַח) the marked door.",
+            "evidence": [
+              {
+                "ref": "Exo.12.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.12.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פִּסֵּחַ",
+      "pos": "adjective",
+      "gloss": "lame",
+      "bdb": [
+        "q.bz.ac"
+      ],
+      "senses": [
+        {
+          "id": "lame",
+          "gloss": "lame, crippled in the feet",
+          "definition": "Unable to walk soundly; nearly always set beside the blind. A lame man may not draw near as priest, and a lame animal may not be offered.",
+          "evidence": [
+            {
+              "ref": "Lev.21.18",
+              "role": "defining",
+              "note": "A blind or lame man of Aaron's line may not draw near."
+            },
+            {
+              "ref": "Deu.15.21",
+              "role": "defining",
+              "note": "A lame or blind firstling is not to be sacrificed."
+            },
+            {
+              "ref": "2Sa.9.13",
+              "role": "defining",
+              "note": "Mephibosheth was lame in both his feet."
+            },
+            {
+              "ref": "Job.29.15",
+              "role": "defining",
+              "note": "“I was eyes to the blind and feet to the lame.”"
+            },
+            {
+              "ref": "Mal.1.8",
+              "note": "Offering the blind and the lame is evil."
+            },
+            {
+              "ref": "Isa.35.6",
+              "note": "Then the lame will leap like a deer."
+            },
+            {
+              "ref": "Jer.31.8",
+              "note": "The blind and the lame among those gathered back."
+            },
+            {
+              "ref": "Pro.26.7",
+              "note": "The legs of the lame hang useless."
+            }
+          ],
+          "kin": [
+            "hop-between"
+          ],
+          "cognate_ids": [
+            "akk-pessu",
+            "ar-fasakha"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χωλός",
+          "gloss": "lame",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.15.21, פִּסֵּחַ → χωλός"
+            },
+            {
+              "ref": "Mat.11.5",
+              "note": "“The lame walk”: Jesus' answer to John, in the words of Isa 35:5–6."
+            },
+            {
+              "ref": "Act.3.8",
+              "note": "The man lame from birth leaps up and walks, as Isa 35:6 has the lame leap."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עִוֵּר",
+            "note": "The blind and the lame are named together.",
+            "evidence": [
+              {
+                "ref": "Lev.21.18"
+              },
+              {
+                "ref": "Deu.15.21"
+              },
+              {
+                "ref": "2Sa.5.6"
+              },
+              {
+                "ref": "Jer.31.8"
+              },
+              {
+                "ref": "Mal.1.8"
+              },
+              {
+                "ref": "Job.29.15",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פֵּצְחָא",
+      "lang": "syc",
+      "root": "פצח",
+      "pos": "noun",
+      "gloss": "the Passover; its lamb",
+      "summary": "The Peshitta's word wherever the Greek has πάσχα, spelled with צ where the Hebrew has ס. SEDRA files it under the root פצח beside a verb “rejoice”; whether the spelling is only the Syriac form of the borrowed word, or was drawn to that root, is not settled (see the note).",
+      "senses": [
+        {
+          "id": "syc-pesach-feast",
+          "gloss": "the Passover feast",
+          "definition": "The appointed time of the Jews, to which Jesus went up and at which he was condemned.",
+          "evidence": [
+            {
+              "ref": "Jhn.2.13",
+              "role": "defining",
+              "note": "The פֵּצְחָא of the Jews was near, and Jesus went up to Jerusalem."
+            },
+            {
+              "ref": "Jhn.19.14",
+              "note": "The day of preparation of the פֵּצְחָא."
+            },
+            {
+              "ref": "Luk.22.1"
+            }
+          ],
+          "kin": [
+            "pesach-feast"
+          ]
+        },
+        {
+          "id": "syc-pesach-offering",
+          "gloss": "the Passover lamb; the Passover meal",
+          "definition": "The lamb sacrificed and eaten, and the meal at which it is eaten; Christ is called our פֵּצְחָא, sacrificed for us.",
+          "evidence": [
+            {
+              "ref": "Mrk.14.12",
+              "role": "defining",
+              "note": "When they sacrificed the פֵּצְחָא."
+            },
+            {
+              "ref": "1Co.5.7",
+              "role": "defining",
+              "note": "“Our פֵּצְחָא is the Messiah, who was sacrificed for us.”"
+            },
+            {
+              "ref": "Luk.22.15"
+            },
+            {
+              "ref": "Heb.11.28"
+            }
+          ],
+          "kin": [
+            "pesach-offering"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-fasaha",
+      "lang": "ar",
+      "form": "فَسَحَ",
+      "translit": "fasaḥa",
+      "gloss": "make room (for someone); be spacious; (verbal noun فَسْح) the making of wide steps",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Lane's article gives فَسْحٌ “the making wide steps”, a stride, and اِفْسَحْ عَنِّى “withdraw from me”; a stride is near the stepping or passing over of פָּסַח, but the article's main sense is space and making room, so the link is uncertain.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2395, root فسح, فَسُحَ (n33826)",
+          "note": "spacious; made room for him; فَسْحٌ the making wide steps"
+        }
+      ]
+    },
+    {
+      "id": "ar-fasakha",
+      "lang": "ar",
+      "form": "فَسَخَ",
+      "translit": "fasaḫa",
+      "gloss": "dislocate (a limb) without breaking it; undo, annul",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "A dislocated limb lames, but the Arabic word is about the joint, not the gait, and it shows ḫ where فَسَحَ shows ḥ: if both were cognate, פסח would hide two older roots. Neither is secure.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2395, root فسخ, فَسَخَ (n33839)",
+          "note": "he dislocated one's arm or a limb, without breaking"
+        }
+      ]
+    },
+    {
+      "id": "akk-pessu",
+      "lang": "akk",
+      "form": "pessû",
+      "translit": "pessû",
+      "gloss": "lame; lame one, dwarf",
+      "relation": "possible",
+      "note": "The sense matches פִּסֵּחַ exactly. Akkadian writes no ḥ, so the word cannot show whether the root had ḥ or ḫ, and Oracc gives it no root; it is recorded as possible until a dictionary of Akkadian roots is checked.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000140820, pessû [lame] AJ; armep x000078400, pessû [lame one] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "christ-our-pesach",
+      "statement": "Each household of Israel took a male lamb without blemish (Exo 12:5) and slaughtered it at twilight on the fourteenth day of the first month (Exo 12:6; Lev 23:5); its blood on the doorposts was a sign, and Yahweh said, “when I see the blood, I will pass over you” (Exo 12:13). Not a bone of it was to be broken (Exo 12:46; Num 9:12). Jesus ate the פֶּסַח with his disciples before he suffered, and gave them the cup as the new covenant in his blood (Luk 22:15, 20). He was condemned on the day of preparation of the פֶּסַח (Jhn 19:14), and his legs were not broken, which John says fulfilled the scripture “not a bone of him shall be broken” (Jhn 19:33, 36). Paul draws the conclusion: “Christ our פֶּסַח was sacrificed for us; so let us keep the feast… with the unleavened bread of sincerity and truth” (1Co 5:7–8). Peter says we were redeemed with the precious blood of Christ, as of a lamb without blemish (1Pe 1:18–19), the word the law used of the פֶּסַח lamb.",
+      "evidence": [
+        {
+          "ref": "Exo.12.5"
+        },
+        {
+          "ref": "Exo.12.6"
+        },
+        {
+          "ref": "Lev.23.5"
+        },
+        {
+          "ref": "Exo.12.13"
+        },
+        {
+          "ref": "Exo.12.46"
+        },
+        {
+          "ref": "Num.9.12"
+        },
+        {
+          "ref": "Luk.22.15"
+        },
+        {
+          "ref": "Luk.22.20"
+        },
+        {
+          "ref": "Jhn.19.14"
+        },
+        {
+          "ref": "Jhn.19.33"
+        },
+        {
+          "ref": "Jhn.19.36"
+        },
+        {
+          "ref": "1Co.5.7",
+          "to": "1Co.5.8"
+        },
+        {
+          "ref": "1Pe.1.18",
+          "to": "1Pe.1.19"
+        }
+      ]
+    },
+    {
+      "topic": "spared-at-the-sign-of-blood",
+      "statement": "On the night Yahweh went through Egypt to strike every firstborn, he saw the blood on the lintel and doorposts and passed over the door, and did not let the destroyer come into the houses (Exo 12:12, 23). Those inside were not spared for being Israelites alone, but at the sign Yahweh had appointed: “the blood shall be a sign for you on the houses… and when I see the blood, I will pass over you” (Exo 12:13). The children were to be told that Yahweh passed over their houses and delivered them (Exo 12:26–27). Isaiah uses the same word for Yahweh's protection of Jerusalem: shielding and delivering, passing over and rescuing (Isa 31:5). Hebrews reads Moses' keeping of the פֶּסַח and the sprinkling of blood as faith, so that the destroyer of the firstborn would not touch them (Heb 11:28).",
+      "evidence": [
+        {
+          "ref": "Exo.12.12"
+        },
+        {
+          "ref": "Exo.12.23"
+        },
+        {
+          "ref": "Exo.12.13"
+        },
+        {
+          "ref": "Exo.12.26",
+          "to": "Exo.12.27"
+        },
+        {
+          "ref": "Isa.31.5"
+        },
+        {
+          "ref": "Heb.11.28"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: the names פָּסֵחַ (Paseah, q.bz.ab), פָּסָךְ (Pasach, q.bz.ad) and the place תִּפְסַח (Tiphsah, q.by.ac); names get their own entries. BDB keys q.by.aa (pass over) and q.bz.aa (limp) list the same verb tokens; the one verb is entered under q.by.aa. Decided from scripture's use: whether Yahweh's פָּסַח is “pass over” or “hover over, protect”. The verb's other uses (hop between two, hop about the altar, become lame) are movements of the feet, and in Exo 12:23 the going through Egypt is עָבַר, so the motion is passing or stepping over; the parallels (הִצִּיל Exo 12:27 and Isa 31:5; גָּנַן, הִמְלִיט Isa 31:5) and the destroyer kept out (Exo 12:23) show that the point of the act is sparing and protection. The birds of Isa 31:5 go with יָגֵן, not with פָּסַח, so they do not make the verb mean “hover”. Cognates: none secure. Arabic فَسَحَ (ḥ, a wide step) and فَسَخَ (ḫ, dislocate a limb) and Akkadian pessû (lame) are all recorded as possible; if both Arabic words were cognate they would show two older roots behind ח. Not entered: Ge'ez fśḥ “rejoice”, which Anderson–Moser set under *psḥ “free” (SEM000714), and Syriac פצח “rejoice”: Hebrew has its own פָּצַח “break out (in song)”. Open: (1) the Peshitta's פֵּצְחָא with צ: whether this is the regular Syriac form of the Aramaic פַּסְחָא or the word was drawn to the root “rejoice” needs a Syriac grammar (Payne Smith and Brockelmann not consulted). (2) Akkadian pessû: CAD not consulted for its root or for a verb of limping. (3) Ugaritic and Phoenician (Fisher/DULAT, Krahmalkov) not consulted for psḥ. (4) The Greek χωλός evidence cites Mat 11:5 and Act 3:8 as allusions to Isa 35:6, not quotations; review whether to keep them."
+}
