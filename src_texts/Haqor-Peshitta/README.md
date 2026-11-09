@@ -283,10 +283,34 @@ Source checks for Matthew 28:
 
 - In 28:1 the evening wording and the first-day-of-the-week idiom are
   retained, without replacing the source timing with a different formulation.
+  The first day and week constituents have separate links.
+- In 28:3 the existential form and past auxiliary are separated with
+  a resumptive English "it" for his appearance. In 28:4 the first past
+  auxiliary belongs to "were guarding", before the separate became verb.
+- In 28:6 the dative with arose is coreferential with its subject, rendered
+  "he has risen". The laid participle, past auxiliary and locative relative
+  retain separate owners. In 28:7 beth is the preposition "among" in
+  "from among the dead".
 - In 28:10 the possessive in "my brothers" is first person; the morphology
   dataset uses person code 3 for first person.
+- In 28:11 the demonstrative modifies the guards, rather than adding
+  a clause saying they were there. In 28:12 the litotes "no little money"
+  has separate negative, adjective and noun links.
+- In 28:14 the second assurance retains the negative anxiety predicate
+  with make, "make you free from anxiety". In 28:15 the object of taught
+  becomes the English subject of "they had been taught"; it does not own
+  the next clause's conjunction. The story has spread, retaining its verb.
+  The teaching verb is Pael: [CAL's ʾlp entry](https://cal.huc.edu/cal_entry_web.php?lemma=%29lp+V)
+  distinguishes this teach stem from Peal learn. The English passive
+  preserves the instructed guards and leaves the implicit teachers unnamed.
+- In 28:16 the object pronoun means "them", not "had". The verb is
+  "had summoned"; [CAL's wʿd entry](https://cal.huc.edu/cal_entry_web.php?lemma=w%28d+V)
+  lists invite/summon in the Pael and directly cites this verse. In 28:17
+  the perfect with the past auxiliary gives "had doubted", distinct from
+  a participle with its auxiliary.
 - The distinct verbs in 28:19 and 28:20 are rendered "instruct" and "teach",
-  respectively.
+  respectively. Holy and Spirit, I and am, and all and the days have
+  separate links; the final Amen follows the closing speech.
 
 Source checks for Mark 1:
 
