@@ -1588,15 +1588,29 @@ Source checks for Luke 13:
 
 Source checks for Luke 14:
 
+- The chapter's 131 original shared spans were checked against exact
+  source forms, morphology, and continuous English. One remains: the
+  existential and possessor dative jointly express "has" in 14:35,
+  with its exact positions and linguistic reason in the ledger.
+  Ordinary negatives, auxiliaries, modifiers, noun phrases, names,
+  and clause constituents have separate source owners.
 - In 14:1 the leaders and Pharisees are plural. In 14:2 the gathered-water
   expression describes fluid retention. In 14:5 the rescue example says
   "son or ox", and both drawing out and bringing up remain explicit.
+- In 14:2 retaining fluid describes the man's condition; the gathering
+  participle, past copula, and fluid noun stay separately linked.
+  In 14:3 the question is reported with "whether", retaining its source
+  question marker separately from the lawful predicate and healing verb.
 - In 14:6 the answer belongs to the give-him clause. In 14:7 the seeing
   clause retains its past auxiliary. In 14:8 the invitation is to a feast;
   no wedding is specified. In 14:9 the place has no possessive modifier.
 - In 14:10 the address is "My friend", and moving higher is followed by
   reclining. In 14:12 the invitation warning includes "not even" the
   brothers, and the final demonstrative refers to the repayment.
+- In 14:8 and 14:10 English "recline yourself" keeps the posture verb
+  and its coreferential dative separate through ordinary reflexive
+  valency. In 14:10 "you will have honour" separately links the possessor,
+  future predicate, and honour noun; no further beneficiary is introduced.
 - In 14:15 one of those reclining hears these things and speaks to him.
   In 14:17 everything is ready "for you". In 14:18 all begin "as one";
   the field's buyer is obliged to go, rather than the field compelling him.
@@ -1604,6 +1618,10 @@ Source checks for Luke 14:
   the marriage idiom. In 14:22 the command has been fulfilled. In 14:23
   the route goes between the hedges. In 14:24 the negative covers every
   previously invited man, rather than only one member of the group.
+- In 14:18 "as" and "one" separately render the unity expression.
+  In 14:18-19 the excuse requests retain the asking, first-person
+  speakers, addressee, allowing, and excused state. In 14:20 the marriage
+  idiom remains "I have taken a wife", with verb and wife separate.
 - In 14:26 "hate" is retained, and the family order is father, mother,
   brothers, sisters, wife, children, then the person's own life. In 14:28
   the builder calculates its cost and considers resources for completion.
@@ -1614,6 +1632,9 @@ Source checks for Luke 14:
 - In 14:35 the first predicate concerns suitability for soil or manure;
   "outside" belongs to throwing it away. The hearing exhortation retains
   both having ears and hearing.
+- In 14:35 the generic subject already identifies the possessor of ears,
+  so the dative introduces no other participant. Ears, the hearing purpose,
+  and the final hearing command remain separate from "has".
 
 Source checks for Luke 15:
 
