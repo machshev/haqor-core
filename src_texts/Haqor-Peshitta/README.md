@@ -1935,10 +1935,17 @@ Source checks for Luke 19:
 
 Source checks for Luke 20:
 
+- The chapter's 166 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Seven remain:
+  two generic human designations, two repeated servant references,
+  the architectural corner designation, the partiality idiom, and one
+  possession construction. Their exact positions and linguistic reasons
+  are in the ledger. Ordinary negatives, auxiliaries, modifiers, and
+  clause constituents have separate source owners.
 - In 20:1 the chief priests, scribes, and elders confront Jesus while
-  he is teaching and preaching. The English passive preserves those roles
-  while keeping the source links in order. In 20:4 John's baptism is
-  contrasted as from heaven or from people.
+  he is teaching and preaching. The English has those leaders stand up
+  against him, preserving their roles with separate source owners.
+  In 20:4 John's baptism is contrasted as from heaven or from people.
 - In 20:5 the leaders were reasoning among themselves. In 20:6 the
   whole people would stone them, because the people are persuaded that
   John was a prophet. In 20:8 Jesus retains the first-person refusal
@@ -1960,7 +1967,11 @@ Source checks for Luke 20:
   In 20:21 taking faces is the idiom for partiality. In 20:22 the question
   concerns the head tax. In 20:25 Caesar's and God's respective claims
   and recipients remain distinct; in 20:26 the answer is singular.
-- In 20:28 the man who dies has the wife without children, and his brother
+  In 20:21 the negative, subject, and auxiliary remain outside the
+  partiality idiom. In 20:24 the writing form is plural, rendered
+  "inscriptions". In 20:28 the possessive clitic in "a man's brother"
+  belongs to the brother word's suffix, with the man's stem separate.
+- In 20:28 the brother who dies has the wife without children, and his brother
   is to take her and raise offspring for his brother. In 20:30 the second
   takes her for his wife, then this one dies. In 20:31 the third and all
   seven share the same outcome. In 20:33 all seven taking her belongs to
@@ -1975,6 +1986,9 @@ Source checks for Luke 20:
   to him. In 20:41 the scribes' claim is that the Messiah is David's son.
   In 20:42 both speech verbs remain, with my Lord and my right hand;
   in 20:43 the speaker says I will place your enemies under your feet.
+  The nested quotation marks distinguish David's "my Lord" from the
+  Lord's "my right hand"; the seating imperative and its coreferential
+  dative separately own "seat" and "yourself".
 - In 20:44 David calls him my Lord. In 20:45 the disciples are his.
   In 20:46 robes have no added long adjective, while marketplaces,
   synagogues, and suppers are plural. In 20:47 widows' houses, the
