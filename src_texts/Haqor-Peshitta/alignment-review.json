@@ -6348,6 +6348,104 @@
           "source": "בּרֵה דַּאלָהָא"
         }
       ]
+    },
+    "43:21": {
+      "sha256": "6699bab53272e637b3c46e3b63dc2e71ba13b9b6a7af7deb3691320e1ec49399",
+      "original_shared_spans": 149,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 5,
+          "english": "have",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "The existential ith with the suffixed possessive dative expresses have. The question particle and the explicit English you are separately linked; have realizes only the combined possession predicate.",
+          "source": "אִיתֿ לכֻֿונ"
+        },
+        {
+          "verse": 6,
+          "english": "the net",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "The infinitive has a feminine singular object suffix anticipating the explicit net noun. English names the one object once; the drawing predicate remains separately linked.",
+          "source": "למֵגּדָֿה לַמצִידֿתָּא"
+        },
+        {
+          "verse": 7,
+          "english": "whom",
+          "positions": [
+            3,
+            5
+          ],
+          "reason": "The relative prefix on the loving participle and the singular masculine object pronoun leh refer to the same disciple. The single English whom realizes that resumed relative object, with Jesus and the predicate outside this span.",
+          "source": "דּרָחֵמ לֵה"
+        },
+        {
+          "verse": 7,
+          "english": "loved",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The loving participle plus past hwa expresses a single past loving predicate. English loved realizes the combined tense without a ceased-love implication; its relative prefix has a separate span.",
+          "source": "דּרָחֵמ ה_וָא"
+        },
+        {
+          "verse": 8,
+          "english": "net",
+          "positions": [
+            18,
+            19
+          ],
+          "reason": "The independent feminine singular dative pronoun lah resumes the explicit net noun. English expresses this single object once as net, while that and the fish phrase remain separate.",
+          "source": "לָה לַמצִידֿתָּא"
+        },
+        {
+          "verse": 11,
+          "english": "the net",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The drawing verb bears a feminine singular object suffix anticipating the explicit net noun. English names the same object once while the drawing predicate remains separately linked.",
+          "source": "ונַגֿדָּה לַמצִידֿתָּא"
+        },
+        {
+          "verse": 17,
+          "english": "Cephas",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The independent masculine singular dative pronoun leh resumes the explicitly named Cephas as the experiencer of sorrow. English names him once as the subject of was grieved; the sorrow predicate remains separate.",
+          "source": "לֵה לכִֿאפָֿא"
+        },
+        {
+          "verse": 20,
+          "english": "loved",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "The loving participle plus past hwa expresses a single past loving predicate. English loved realizes the combined tense without a ceased-love implication; the relative prefix remains separately linked.",
+          "source": "דּרָחֵמ ה_וָא"
+        },
+        {
+          "verse": 20,
+          "english": "Jesus’",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "The possessive suffix on breast anticipates the following explicit Jesus possessor. English expresses that one possessor once as Jesus’, while breast and on retain separate owners.",
+          "source": "חַדֿיֵה דּיֵשֻוע"
+        }
+      ]
     }
   }
 }
