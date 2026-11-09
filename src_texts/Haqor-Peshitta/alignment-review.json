@@ -1025,6 +1025,41 @@
           "reason": "Beth asire is the institution compound prison, literally house of prisoners; the compound supplies the single English institution name."
         }
       ]
+    },
+    "40:26": {
+      "sha256": "c0eff57a7e9fc2a58631b42a325cec227e3af4fa75503b75aea368b03d6eb906",
+      "original_shared_spans": 210,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 22,
+          "english": "each one",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "The repeated had had is a distributive expression, each one, rather than two distinct individuals."
+        },
+        {
+          "verse": 32,
+          "english": "after",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Men bathar is the compound temporal preposition after; literal from after is not a reasonable English rendering before its temporal complement."
+        },
+        {
+          "verse": 73,
+          "english": "after",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Men bathar is the compound temporal preposition after; literal from after is not a reasonable English rendering before its temporal complement."
+        }
+      ]
     }
   }
 }

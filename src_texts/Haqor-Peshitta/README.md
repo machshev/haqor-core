@@ -216,9 +216,26 @@ Source checks for Matthew 25:
 
 Source checks for Matthew 26:
 
+- In 26:3 the priests, scribes and elders are the subjects of "assembled".
+  In 26:5 the past auxiliary belongs to "were saying", before the quoted
+  prohibition. In 26:17 the preparing verb is first-person plural, "us to
+  prepare", rather than a second-person act by Jesus.
+- In 26:18 the time has arrived: the verb is perfect, and the following
+  dative resumes the time rather than introducing another recipient.
+- In 26:22 had had is distributive, "each one". Men bathar in 26:32 and
+  26:73 is the compound temporal preposition "after".
+- The feminine dative in 26:38 resumes "my soul", rather than its
+  first-person possessor; "It—my soul—is grieved" retains both references.
 - In 26:39 the cup petition is volitional, rather than a bare infinitive.
   The repeated first-person forms belong to the willing predicate; they do
   not require a detached extra English "I".
+- In 26:44 the feminine pronoun anticipates the feminine "word" as the
+  object of saying; "said that word" does not introduce another recipient.
+  In 26:52 the relative clause retains the perfect "who have taken".
+- In 26:65 the passive required predicate with "to us" is rendered
+  "do we need witnesses", rather than an active act of seeking. The
+  contracted first-person form in 26:74 supplies both "I" and "know",
+  separated in English by the independently linked negative.
 - In 26:69 the past auxiliary belongs to the assertion that Peter was with
   Jesus. It is not part of the following "Nazarene" epithet.
 - In 26:75 the cock-crow clause is future-relative, not past: "before the
