@@ -5524,6 +5524,63 @@
           "reason": "Negated existential LAYT plus third-person L-possessor jointly express possession, English HAVE. The clause is rendered he does not have anything in me; HE, auxiliary DOES, negative NOT, ANYTHING and IN ME are separately linked outside this minimal possessive predicate."
         }
       ]
+    },
+    "43:15": {
+      "sha256": "2ca80ca81e30552c141fa4911cfffff999c1506f05b58fb677d371df7a91513c",
+      "original_shared_spans": 111,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 3,
+          "english": "already",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "MEN KADDU is a compound temporal adverb, here ALREADY: the disciples are clean through the word spoken with them. MEN is not a separate source participant and KADDU does not mean literal sufficiency in this expression. Subject YOU, copula ARE, CLEAN, cause and the speech clause stay independently linked.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=kdw+X"
+        },
+        {
+          "verse": 22,
+          "english": "have",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "Negated existential LAYT plus the third-person plural L-possessor jointly express possession, English HAVE. THEY, NO, EXCUSE and the following sin phrase remain separately linked."
+        },
+        {
+          "verse": 22,
+          "english": "for",
+          "positions": [
+            15,
+            16
+          ],
+          "reason": "AL APPAY is a compound preposition FOR or CONCERNING in the no-excuse clause. It relates the excuse to their sin; APPAY is not an independent face participant. THEIR SIN is separately linked and the noun remains singular.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=%28l%40%29py+p"
+        },
+        {
+          "verse": 26,
+          "english": "from",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "MEN LWATH is the compound preposition FROM, from the presence of, in sending the Advocate from my Father. It does not introduce a separate movement toward him. Sender, relative object, recipients and MY FATHER remain separate.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40lwt+p"
+        },
+        {
+          "verse": 26,
+          "english": "from",
+          "positions": [
+            15,
+            16
+          ],
+          "reason": "The second MEN LWATH is the same compound FROM in the separate proceeds-from-my-Father clause. The relative prefix and referent, proceeds predicate and second MY FATHER remain separately represented.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40lwt+p"
+        }
+      ]
     }
   }
 }
