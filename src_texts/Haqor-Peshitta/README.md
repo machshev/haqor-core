@@ -807,14 +807,42 @@ Source checks for Mark 12:
 
 Source checks for Mark 13:
 
-- In 13:6 the two first-person forms express one claim, "I am he".
-  In 13:9 the explanatory "for" belongs to delivering the hearers to judges;
-  the following synagogues retain their possessive.
-- In 13:10 the first-person possessive is retained: "my good news".
-  In 13:11 the delivery verb explicitly includes its "you" object.
-- In 13:14 Daniel is explicitly named. In 13:32 the Son is explicitly
-  included before the exception for the Father.
-- In 13:34 the journey, leaving, giving, and commanding verbs are past.
+- The chapter's 147 original shared spans were checked against exact
+  forms, morphology, and context. Two remain: the compound exceptive in
+  13:32 and the sudden-arrival idiom in 13:36. Ordinary noun phrases,
+  negation, auxiliaries, commands, and coordinated clauses have separate
+  source owners; the ledger gives the reasons for the two exceptions.
+- In 13:2 both stone nouns and both negative predicates are retained.
+  In 13:4 the question includes both when the events happen and the sign
+  of their approaching completion. In 13:6 the two first-person forms
+  express one claim, "I am he". In 13:8 the place repetition is rendered
+  "in place after place", preserving its distributive meaning.
+- In 13:9 the delivery verb is active with a plural subject and a
+  second-person plural object. The explanatory "for" belongs to delivering
+  the hearers to judges; the following synagogues retain their possessive.
+  In 13:10 the first-person possessive is retained: "my good news".
+  In 13:11 the delivery verb explicitly includes its "you" object, and
+  the separate anxiety and premeditation prohibitions precede the contrast
+  between the hearers speaking and the Holy Spirit.
+- In 13:13 the one enduring to the end is the subject of "will live".
+  In 13:14 Daniel is explicitly named; the sign is standing, the reader
+  is to understand, and those in Judea are to flee. The roof and field
+  commands remain singular, distinct from the plural flight and prayer
+  instructions. In 13:19-20 both future and conditional negatives, both
+  shortening predicates, and the elect whom he chose remain intact.
+- In 13:24-27 the sun, moon, stars, and heavenly powers retain their
+  separate predicates; the Son of man sends his angels and gathers his
+  elect from the four winds. In 13:28 the branch and leaf possessors
+  remain attached to the fig tree, and mata is rendered "has arrived".
+  In 13:29 the occurrences are plural, while "it is near" remains
+  impersonal. In 13:31 the separate negator belongs to the words not
+  passing away.
+- In 13:32 the Son is explicitly included before the exception for the
+  Father. In 13:33 taking heed, watching, and praying remain three commands.
+  In 13:34 the journey, leaving, giving, and commanding verbs are past;
+  each person's work remains distinct from the servants' authority.
+  In 13:35 the four time alternatives retain their individual owners.
+  In 13:36 the sleeping state belongs to the hearers whom he may find.
   In 13:37 the two saying clauses remain distinct: the first addresses
   "you", and the second addresses "you all".
 
