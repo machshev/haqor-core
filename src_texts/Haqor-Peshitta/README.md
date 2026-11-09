@@ -1996,6 +1996,13 @@ Source checks for Luke 20:
 
 Source checks for Luke 21:
 
+- The chapter's 141 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Ten remain:
+  three repeated references, three nearness predicates with their ethical
+  datives, the prison and defense compounds, the expression for wringing
+  of hands, and the adverb "suddenly". Their exact positions and
+  linguistic reasons are in the ledger. Ordinary negatives, auxiliaries,
+  modifiers, and clause constituents have separate source owners.
 - In 21:1 the rich were putting their offerings into the treasury.
   In 21:3 the comparison concerns this poor widow. In 21:4 all these
   people contribute from their surplus, while this woman gives from
@@ -2006,10 +2013,15 @@ Source checks for Luke 21:
   warning not to follow them. In 21:9 these things happen first.
 - In 21:11 the earthquakes, famines, plagues, terrors, fearful events,
   great signs seen from heaven, and great storms all remain. In
-  21:12 the delivery to councils and prisons precedes being brought
+  21:12 the delivery to councils and prison precedes being brought
   before kings and governors, because of my name.
 - In 21:14 the answer/defense expression is a compound idiom; its
   component spirit word does not introduce a separate actor or means.
+  [CAL's npq entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=npq+V)
+  records the defensive-response sense with ruha. The learning/preparing
+  word remains outside that compound. In 21:15 the relative and resumed
+  feminine object of "against it" identify the same wisdom, expressed
+  once as "which"; the preposition, ability, and negative stay separate.
   In 21:15 the gift is a mouth and wisdom which none of their enemies
   can withstand. In 21:16 parents, brothers, relatives, and friends
   hand them over, and some of them are put to death.
@@ -2026,9 +2038,12 @@ Source checks for Luke 21:
   distinct source spans. Amazement concerns the sea's roar; no waves
   clause is supplied. In 21:26 agitation drives out people's souls
   from fear of what is to come, and heaven's powers are shaken.
+  The expression for wringing of hands combines the abstract anxiety noun
+  with hands; the anxiety noun is not independently assigned a physical
+  wringing action. The conjunction remains separate from this expression.
 - In 21:27 the clouds are plural. In 21:28 deliverance belongs to the
   hearers. In 21:29 Jesus told the parable. In 21:30 the sprouting
-  trees supply the inference about summer. In 21:31 all these things
+  trees supply the inference about summer. In 21:31 these things
   happening indicate the nearness of God's kingdom.
 - In 21:33 the source has my words, plural, rather than Murdock's
   singular word; the possessive is first person. In 21:34 lest scopes
