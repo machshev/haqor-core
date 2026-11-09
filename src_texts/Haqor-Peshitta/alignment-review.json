@@ -1715,6 +1715,86 @@
           "reason": "The died predicate mith is followed by its subject-coreferential ethical dative leh, referring to the boy. They jointly express the observers saying that he has died; the dative does not add another recipient or beneficiary."
         }
       ]
+    },
+    "41:10": {
+      "sha256": "4683033dc44b694c69ce002a020132f021a983946b140c455ae5451e99b3b579",
+      "original_shared_spans": 185,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 14,
+          "english": "and was displeased",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Ethpeal displeasure verb with its experiencer/ethical dative leh expresses Jesus' displeasure; the dative does not identify someone he is displeased at."
+        },
+        {
+          "verse": 18,
+          "english": "except",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Ella en is the compound exceptive connective, not a new independent if-clause."
+        },
+        {
+          "verse": 22,
+          "english": "sorrowful",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The sorrow predicate ayyiqa with experiencer dative leh describes his state; English sorrowful incorporates that predication without inventing an additional beneficiary."
+        },
+        {
+          "verse": 22,
+          "english": "had",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Existential ith plus past auxiliary hwa forms the past possession predicate; the separate leh at position 11 owns English he."
+        },
+        {
+          "verse": 23,
+          "english": "who have",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Relative existential d-ith and possessive dative lhon jointly mean who have; neither token independently denotes possession in this relative construction."
+        },
+        {
+          "verse": 27,
+          "english": "people",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "Bnay nasha, literally sons of mankind, is the generic human-being idiom, not a statement of parentage."
+        },
+        {
+          "verse": 30,
+          "english": "a hundredfold",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Had b-maa, literally one in a hundred, is the compound numerical expression for a hundredfold return."
+        },
+        {
+          "verse": 46,
+          "english": "beside",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "Al yad, literally at the hand of, is the spatial beside idiom; yad is not a person's literal hand here."
+        }
+      ]
     }
   }
 }

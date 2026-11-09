@@ -699,20 +699,37 @@ Source checks for Mark 9:
 
 Source checks for Mark 10:
 
+- The chapter's 185 original shared spans were reviewed against exact
+  source forms, morphology, and context. Eight remain: the displeasure and
+  sorrow predicates with their experiencer datives, the exceptive connective,
+  past and relative possession, the human-being idiom, the hundredfold
+  expression, and the spatial beside idiom. The ledger records each reason.
+- The husband is the divorcing subject in 10:11; 10:12 switches to the woman
+  divorcing her husband and belonging to another. Ordinary negation,
+  auxiliaries, noun modifiers, and the separate commands retain their own links.
 - In 10:13 Jesus is the singular subject of touching the children. In
   10:14 the dative belongs to his being displeased, rather than identifying
   someone he was offended at; the kingdom belongs to those like the children.
+- In 10:19 the false testimony noun and modifier retain separate links.
+  "Defraud" is a Syriac sense of [tlm in CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=%2Blm+V),
+  beyond the export's shorter gloss list. In 10:21 the dative completes
+  "one thing is lacking to you"; it does not belong to "Go". The cross noun
+  has no possessive suffix.
 - In 10:24 "my children" and "their possessions" retain their distinct
   possessors. In 10:27 both occurrences of "with God" and the explanatory
   "for" are retained, with the positive predicate supplied in the ellipsis.
 - The lists in 10:29 and 10:30 remain distinct: the first includes a wife,
   father, and fields; the second includes mothers and fields, without a
   repeated wife or father. The first-person "my gospel" is retained.
-- In 10:38 the repeated first-person pronoun completes the drinking
-  predicate; it is not a possessive attached to the immersion noun.
-- In 10:46 the source names Timaeus and then son of Timaeus. In 10:52 the
-  imperative is "See", and the ending describes going along the way;
-  no following-after-him phrase is supplied from the reference translation.
+- In 10:38 the repeated first-person pronouns complete their drinking and
+  immersion predicates, rather than adding possessors to the immersion noun.
+  In 10:42 the copular pronoun completes "are their lords" before the next
+  clause. In 10:45 passive "to be served" contrasts with active "to serve";
+  [CAL also attests ransom for purqana](https://cal.huc.edu/oneentry.php?cits=all&lemma=pwrqn+N).
+- In 10:46 the source names Timaeus and then son of Timaeus; al yad is the
+  spatial "beside" idiom. In 10:48 the silent subject is the blind man.
+  In 10:52 the imperative is "See", and the ending describes going along
+  the way; no following-after-him phrase is supplied from the reference.
 
 Source checks for Mark 11:
 
