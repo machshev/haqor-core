@@ -1,0 +1,1159 @@
+{
+  "id": "baqar",
+  "root": "בקר",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "time",
+    "morning",
+    "livestock",
+    "offering",
+    "seeking"
+  ],
+  "gloss": "morning; cattle, herd; look into, search out",
+  "summary": "Three groups of words share the spelling בקר. בֹּקֶר is the morning, when the night ends and it grows light, set against evening and night (“there was evening and there was morning”, Gen 1:5), and in the Psalms the time when Yahweh's help and kindness come (Psa 46:6; Lam 3:23). בָּקָר is cattle, the herd beside the flock, and בֶּן־בָּקָר, “a son of the herd”, the young bull of the offerings (Lev 23:18); the piel בִּקֵּר and Aramaic בַּקַּר are to look closely into a thing or search it out, as the shepherd seeks out his scattered sheep (Ezk 34:11–12) and the king's men search the records (Ezr 4:15). Arabic بَقَرَ “slit, lay open; examine, search to the utmost” shares the searching sense, and Arabic, Aramaic, Ugaritic, Akkadian and Punic share the word for cattle; no cognate of the root means “morning”, and how the three meanings belong together is not shown.",
+  "words": [
+    {
+      "lemma": "בֹּקֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "morning",
+      "bdb": [
+        "b.cu.ad"
+      ],
+      "summary": "No cognate of this root means “morning”, so its tie to the root's other words rests on the shared spelling alone. Scripture speaks of light “breaking forth like the dawn” with another root, בקע “split” (Isa 58:8), but never so of בֹּקֶר; a “dawn as the breaking open of the night” is not shown for this word. Arabic says “early morning” (بُكْرَة) and “go early in the morning” (بَكَرَ) with the root that is Hebrew בכר “first”, which differs from this one only in k against q: a likeness of sound, not evidence that the two are one root.",
+      "senses": [
+        {
+          "id": "morning",
+          "gloss": "morning",
+          "definition": "The time when the night ends and it becomes light, the second part of the day's evening and morning, and the start of the day's work.",
+          "evidence": [
+            {
+              "ref": "Gen.1.5",
+              "role": "defining",
+              "note": "“There was evening and there was morning, one day”: עֶרֶב and בֹּקֶר together make the day."
+            },
+            {
+              "ref": "Gen.44.3",
+              "role": "defining",
+              "note": "“The morning was light (הַבֹּקֶר אוֹר), and the men were sent away.”"
+            },
+            {
+              "ref": "Jdg.19.26",
+              "role": "defining",
+              "note": "She came “at the turning of the morning” and lay at the door “until it was light”."
+            },
+            {
+              "ref": "2Sa.23.4",
+              "role": "defining",
+              "note": "“The light of morning when the sun rises, a morning without clouds.”"
+            },
+            {
+              "ref": "Isa.21.12",
+              "role": "defining",
+              "note": "The watchman: “Morning comes, and also the night.”"
+            },
+            {
+              "ref": "Job.38.12",
+              "note": "Yahweh asks Job whether he has ever commanded the morning or shown the dawn (שַׁחַר) its place."
+            },
+            {
+              "ref": "Psa.90.6",
+              "note": "In the morning the grass flourishes; by evening it withers."
+            },
+            {
+              "ref": "Exo.14.24",
+              "note": "“In the morning watch” Yahweh looked down on the camp of Egypt."
+            }
+          ],
+          "senses": [
+            {
+              "id": "morning-of-help",
+              "gloss": "morning, the time of deliverance",
+              "definition": "The morning that ends a night of distress, named as the time when Yahweh helps, and his kindness is heard and praised.",
+              "evidence": [
+                {
+                  "ref": "Psa.46.6",
+                  "role": "defining",
+                  "note": "“God will help her at the turning of the morning.”"
+                },
+                {
+                  "ref": "Psa.30.6",
+                  "role": "defining",
+                  "note": "“Weeping may lodge at evening, but at morning a shout of joy.”"
+                },
+                {
+                  "ref": "Psa.143.8",
+                  "role": "defining",
+                  "note": "“Let me hear your kindness (חֶסֶד) in the morning, for in you I trust.”"
+                },
+                {
+                  "ref": "Psa.90.14",
+                  "note": "“Satisfy us in the morning with your kindness.”"
+                },
+                {
+                  "ref": "Psa.59.17",
+                  "note": "“I will sing aloud of your kindness in the morning, for you have been my refuge in the day of my distress.”"
+                },
+                {
+                  "ref": "Isa.33.2",
+                  "note": "“Be their arm every morning, our salvation in the time of trouble.”"
+                },
+                {
+                  "ref": "Exo.14.27",
+                  "note": "The sea returned “at the turning of the morning” over the Egyptians."
+                },
+                {
+                  "ref": "Psa.5.4",
+                  "note": "“Yahweh, in the morning you hear my voice; in the morning I set it out before you and watch.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "next-morning",
+          "gloss": "the next morning; by morning",
+          "definition": "The coming morning as the end of a night or as the time set for something to happen.",
+          "evidence": [
+            {
+              "ref": "Exo.12.10",
+              "role": "defining",
+              "note": "“You shall leave none of it until morning.”"
+            },
+            {
+              "ref": "Num.16.5",
+              "role": "defining",
+              "note": "“In the morning Yahweh will make known who is his.”"
+            },
+            {
+              "ref": "Jdg.16.2",
+              "role": "defining",
+              "note": "They lay in wait all night: “until the light of the morning, then we will kill him.”"
+            },
+            {
+              "ref": "Exo.34.2",
+              "note": "“Be ready by morning, and come up in the morning to Mount Sinai.”"
+            },
+            {
+              "ref": "Rut.3.13",
+              "note": "“Stay the night, and in the morning, if he will redeem you…”"
+            },
+            {
+              "ref": "Exo.16.7",
+              "note": "“In the morning you shall see the glory of Yahweh.”"
+            }
+          ]
+        },
+        {
+          "id": "every-morning",
+          "gloss": "every morning; morning by morning",
+          "definition": "Repeated (בַּבֹּקֶר בַּבֹּקֶר) or in the plural (לַבְּקָרִים), each morning in turn: the daily gathering of the manna, the morning offering, and what Yahweh renews each day.",
+          "evidence": [
+            {
+              "ref": "Exo.16.21",
+              "role": "defining",
+              "note": "They gathered the manna “morning by morning”."
+            },
+            {
+              "ref": "Exo.29.39",
+              "role": "defining",
+              "note": "One lamb in the morning, the other between the evenings: the continual burnt offering."
+            },
+            {
+              "ref": "Lam.3.23",
+              "role": "defining",
+              "note": "Yahweh's mercies “are new every morning (לַבְּקָרִים)”."
+            },
+            {
+              "ref": "Isa.50.4",
+              "note": "“Morning by morning he wakens my ear to hear as those who are taught.”"
+            },
+            {
+              "ref": "Zep.3.5",
+              "note": "“Morning by morning he brings his justice to light.”"
+            },
+            {
+              "ref": "Psa.73.14",
+              "note": "“My rebuke comes every morning.”"
+            },
+            {
+              "ref": "Psa.101.8",
+              "note": "“Every morning I will destroy all the wicked of the land.”"
+            },
+            {
+              "ref": "Num.28.4"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "עֶרֶב",
+            "note": "Evening and morning, the two ends of the day's light.",
+            "evidence": [
+              {
+                "ref": "Gen.1.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.30.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.16.8"
+              },
+              {
+                "ref": "Psa.90.6"
+              }
+            ]
+          },
+          {
+            "lemma": "לַיְלָה",
+            "note": "Morning set against the night.",
+            "evidence": [
+              {
+                "ref": "Isa.21.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.92.3"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "שַׁחַר",
+            "note": "The dawn, beside the morning.",
+            "evidence": [
+              {
+                "ref": "Job.38.12",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "אוֹר",
+            "note": "The morning is the coming of the light.",
+            "evidence": [
+              {
+                "ref": "Gen.44.3",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.23.4"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר",
+            "gloss": "and there was evening and there was morning",
+            "evidence": [
+              {
+                "ref": "Gen.1.5"
+              },
+              {
+                "ref": "Gen.1.31"
+              }
+            ]
+          },
+          {
+            "phrase": "לִפְנוֹת בֹּקֶר",
+            "gloss": "at the turning of the morning, toward daybreak",
+            "evidence": [
+              {
+                "ref": "Psa.46.6"
+              },
+              {
+                "ref": "Exo.14.27"
+              },
+              {
+                "ref": "Jdg.19.26"
+              }
+            ]
+          },
+          {
+            "phrase": "אוֹר הַבֹּקֶר",
+            "gloss": "the light of the morning, daybreak",
+            "evidence": [
+              {
+                "ref": "Jdg.16.2"
+              },
+              {
+                "ref": "1Sa.25.36"
+              },
+              {
+                "ref": "2Sa.23.4"
+              }
+            ]
+          },
+          {
+            "phrase": "אַשְׁמֹרֶת הַבֹּקֶר",
+            "gloss": "the morning watch, the last watch of the night",
+            "evidence": [
+              {
+                "ref": "Exo.14.24"
+              },
+              {
+                "ref": "1Sa.11.11"
+              }
+            ]
+          },
+          {
+            "phrase": "עֹלַת הַבֹּקֶר",
+            "gloss": "the burnt offering of the morning",
+            "evidence": [
+              {
+                "ref": "Num.28.23"
+              },
+              {
+                "ref": "2Ki.16.15"
+              }
+            ]
+          },
+          {
+            "phrase": "כּוֹכְבֵי בֹקֶר",
+            "gloss": "the morning stars",
+            "evidence": [
+              {
+                "ref": "Job.38.7"
+              }
+            ]
+          },
+          {
+            "phrase": "עֶרֶב בֹּקֶר",
+            "gloss": "evening and morning, counting days",
+            "evidence": [
+              {
+                "ref": "Dan.8.14"
+              },
+              {
+                "ref": "Dan.8.26"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "πρωΐ",
+          "gloss": "early, in the morning",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.5, בֹקֶר → πρωΐ"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.46.6 (LXX 45:6), בֹּקֶר → πρωΐ"
+            },
+            {
+              "ref": "Mrk.1.35"
+            },
+            {
+              "ref": "Mrk.16.2"
+            }
+          ]
+        },
+        {
+          "lemma": "ὄρθρος",
+          "gloss": "daybreak, early morning",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jdg.19.26, בֹּקֶר → ὄρθρος"
+            },
+            {
+              "ref": "Luk.24.1"
+            },
+            {
+              "ref": "Jhn.8.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בָּקָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cattle, herd; head of cattle",
+      "bdb": [
+        "b.cu.ab"
+      ],
+      "cognate_ids": [
+        "ar-baqar",
+        "arc-baqra",
+        "uga-bqr-cattle",
+        "akk-buqarum",
+        "phn-bqr"
+      ],
+      "senses": [
+        {
+          "id": "herd",
+          "gloss": "cattle, the herd",
+          "definition": "Cattle taken together, the herd, named beside the flock of sheep and goats (צֹאן) as a man's wealth and as the animals of the offerings.",
+          "evidence": [
+            {
+              "ref": "Gen.13.5",
+              "role": "defining",
+              "note": "Lot also had “flocks and herds (צֹאן וּבָקָר) and tents”."
+            },
+            {
+              "ref": "Lev.1.2",
+              "role": "defining",
+              "note": "An offering of livestock is brought “from the herd and from the flock”."
+            },
+            {
+              "ref": "Hab.3.17",
+              "role": "defining",
+              "note": "“The flock is cut off from the fold, and there is no herd in the stalls.”"
+            },
+            {
+              "ref": "Gen.12.16"
+            },
+            {
+              "ref": "Ecc.2.7",
+              "note": "“Possessions of herds and flocks (מִקְנֵה בָקָר וָצֹאן).”"
+            },
+            {
+              "ref": "2Sa.12.2"
+            }
+          ]
+        },
+        {
+          "id": "ox",
+          "gloss": "a head of cattle, ox",
+          "definition": "With a number, or in work, the single animals of the herd: oxen that are counted, yoked, and plough.",
+          "evidence": [
+            {
+              "ref": "Exo.21.37",
+              "role": "defining",
+              "note": "A thief “shall repay five cattle (בָקָר) for the ox (שׁוֹר)”: בָּקָר counts heads of the herd."
+            },
+            {
+              "ref": "Num.7.3",
+              "role": "defining",
+              "note": "Six wagons and twelve oxen (בָּקָר), “an ox (שׁוֹר) for each”."
+            },
+            {
+              "ref": "Job.1.14",
+              "role": "defining",
+              "note": "“The oxen were ploughing.”"
+            },
+            {
+              "ref": "1Ki.19.21",
+              "note": "Elisha slaughtered the yoke of oxen and boiled their flesh with the oxen's gear."
+            },
+            {
+              "ref": "Isa.11.7",
+              "note": "“The lion shall eat straw like the ox.”"
+            },
+            {
+              "ref": "2Ch.4.4",
+              "note": "The sea stood on twelve oxen."
+            }
+          ]
+        },
+        {
+          "id": "son-of-the-herd",
+          "gloss": "בֶּן־בָּקָר, a young bull or calf",
+          "definition": "“A son of the herd”: a young animal of the cattle, tender and good for a meal, and the young bull (פַּר בֶּן־בָּקָר) of the burnt offering and sin offering.",
+          "evidence": [
+            {
+              "ref": "Gen.18.7",
+              "role": "defining",
+              "note": "Abraham ran to the herd and took “a son of the herd, tender and good”."
+            },
+            {
+              "ref": "Lev.4.3",
+              "role": "defining",
+              "note": "The anointed priest brings “a bull, a son of the herd, without blemish” for his sin."
+            },
+            {
+              "ref": "Lev.23.18",
+              "role": "defining",
+              "note": "With the loaves of the feast of weeks, “one young bull (פַּר בֶּן־בָּקָר)” as a burnt offering."
+            },
+            {
+              "ref": "Num.28.11"
+            },
+            {
+              "ref": "Lev.1.5"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "צֹאן",
+            "note": "The herd beside the flock: the pair names a man's livestock.",
+            "evidence": [
+              {
+                "ref": "Gen.13.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.1.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.21.37"
+              },
+              {
+                "ref": "Ecc.2.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בֶּן־בָּקָר",
+            "gloss": "a son of the herd: a young bull, a calf",
+            "evidence": [
+              {
+                "ref": "Gen.18.7"
+              },
+              {
+                "ref": "Lev.1.5"
+              },
+              {
+                "ref": "Lev.23.18"
+              }
+            ]
+          },
+          {
+            "phrase": "עֶגְלַת בָּקָר",
+            "gloss": "a heifer of the herd",
+            "evidence": [
+              {
+                "ref": "Deu.21.3"
+              }
+            ]
+          },
+          {
+            "phrase": "צֶמֶד בָּקָר",
+            "gloss": "a yoke of oxen",
+            "evidence": [
+              {
+                "ref": "1Ki.19.21"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "βοῦς",
+          "gloss": "ox, head of cattle",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.1.2, בָּקָר → βοῶν (βοῦς)"
+            },
+            {
+              "ref": "Jhn.2.14"
+            },
+            {
+              "ref": "Luk.14.19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בָּקַר",
+      "pos": "verb",
+      "gloss": "look into, examine; search out",
+      "bdb": [
+        "b.cu.aa"
+      ],
+      "cognate_ids": [
+        "ar-baqara",
+        "arc-baqqar",
+        "syc-bqr",
+        "uga-bqr-examine",
+        "akk-buqquru"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "look closely into; search out",
+          "senses": [
+            {
+              "id": "look-into",
+              "gloss": "look into, examine, consider",
+              "definition": "Look closely at a thing to find out what it is or how it stands: the priest searching a sore for yellow hair, an owner sorting the animals of his tithe into good and bad, a man thinking again over his vows, the worshipper looking on in Yahweh's temple.",
+              "evidence": [
+                {
+                  "ref": "Lev.13.36",
+                  "role": "defining",
+                  "note": "If the scall has spread, “the priest need not look for the yellow hair”: he is unclean."
+                },
+                {
+                  "ref": "Lev.27.33",
+                  "role": "defining",
+                  "note": "Of the tithe of herd and flock: “he shall not inquire whether it is good or bad, nor exchange it.”"
+                },
+                {
+                  "ref": "Pro.20.25",
+                  "role": "defining",
+                  "note": "A snare: to say rashly “Holy!” and only after the vows to consider (לְבַקֵּר)."
+                },
+                {
+                  "ref": "Psa.27.4",
+                  "role": "defining",
+                  "note": "“To behold (לַחֲזוֹת) the beauty of Yahweh and to inquire (לְבַקֵּר) in his temple”: the two infinitives stand in parallel."
+                },
+                {
+                  "ref": "2Ki.16.15",
+                  "note": "Ahaz: the bronze altar “shall be for me to inquire (לְבַקֵּר)”. What the inquiring was, whether seeking a sign or deciding what to do with the altar, the verse does not say."
+                }
+              ]
+            },
+            {
+              "id": "search-out",
+              "gloss": "search out, seek out (the flock)",
+              "definition": "Go looking through the flock to find and gather the sheep that are scattered; parallel to דָּרַשׁ “seek” and ending in their rescue.",
+              "evidence": [
+                {
+                  "ref": "Ezk.34.11",
+                  "role": "defining",
+                  "note": "“Behold, I, I myself will seek (דָרַשְׁתִּי) my sheep and search them out (בִקַּרְתִּים).”"
+                },
+                {
+                  "ref": "Ezk.34.12",
+                  "role": "defining",
+                  "note": "“As a shepherd searches out his herd… so I will search out my sheep and rescue them from all the places where they were scattered.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπισκέπτομαι",
+          "gloss": "look upon, inspect; visit",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.27.4 (LXX 26:4), בַקֵּר → ἐπισκέπτεσθαι (ἐπισκέπτομαι)"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.34.11, בִקַּרְתִּים → ἐπισκέψομαι (ἐπισκέπτομαι)"
+            },
+            {
+              "ref": "Act.15.36",
+              "note": "“Let us return and visit (ἐπισκεψώμεθα) the brothers… to see how they are.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּקַר",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "search, inquire",
+      "bdb": [
+        "xb.al.aa"
+      ],
+      "cognate_ids": [
+        "ar-baqara",
+        "arc-baqqar",
+        "syc-bqr",
+        "uga-bqr-examine",
+        "akk-buqquru"
+      ],
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "search; inquire into",
+          "senses": [
+            {
+              "id": "arc-search",
+              "gloss": "search (the records); inquire into",
+              "definition": "Search written records to find out what happened, or inquire into how a people and city stand.",
+              "evidence": [
+                {
+                  "ref": "Ezr.4.15",
+                  "role": "defining",
+                  "note": "“That search may be made in the book of the records of your fathers; you will find… that this city is a rebellious city.”"
+                },
+                {
+                  "ref": "Ezr.4.19",
+                  "role": "defining",
+                  "note": "“They searched and found” the city's old revolts."
+                },
+                {
+                  "ref": "Ezr.6.1",
+                  "role": "defining",
+                  "note": "They searched “in the house of the books, where the treasures were stored”."
+                },
+                {
+                  "ref": "Ezr.7.14",
+                  "role": "defining",
+                  "note": "Ezra is sent “to inquire concerning Judah and Jerusalem by the law of your God”."
+                }
+              ],
+              "kin": [
+                "look-into"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpaal",
+          "gloss": "be searched; let search be made",
+          "senses": [
+            {
+              "gloss": "let search be made",
+              "definition": "The search made in the king's treasure-house for Cyrus's decree.",
+              "evidence": [
+                {
+                  "ref": "Ezr.5.17",
+                  "role": "defining",
+                  "note": "“Let search be made in the king's treasure-house in Babylon, whether a decree was made by Cyrus.”"
+                }
+              ],
+              "kin": [
+                "look-into"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπισκέπτομαι",
+          "gloss": "look into, inspect",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezr.6.1, בַקַּרוּ → ἐπεσκέψατο (ἐπισκέπτομαι)"
+            },
+            {
+              "ref": "Act.15.36"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בּוֹקֵר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "herdsman",
+      "bdb": [
+        "b.cu.ac"
+      ],
+      "cognate_ids": [
+        "ar-baqqar"
+      ],
+      "summary": "Used once, by Amos of himself. It is formed from בָּקָר “herd”, but Amos goes on to say that Yahweh took him “from following the flock (צֹאן)” (Amo 7:15) and is named among the sheep-breeders (נֹקְדִים, Amo 1:1), so the word may name a herder of livestock in general; the Peshitta's בַּקְרָא is a herd of swine (Mat 8:30).",
+      "senses": [
+        {
+          "gloss": "herdsman",
+          "definition": "One who keeps livestock for his living, as against a prophet by calling.",
+          "evidence": [
+            {
+              "ref": "Amo.7.14",
+              "role": "defining",
+              "note": "“I was no prophet… but I was a herdsman (בוֹקֵר) and a dresser of sycamore figs.”"
+            },
+            {
+              "ref": "Amo.7.15",
+              "note": "“Yahweh took me from following the flock.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בַּקָּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "searching out",
+      "bdb": [
+        "b.cu.ae"
+      ],
+      "cognate_ids": [
+        "ar-baqara"
+      ],
+      "senses": [
+        {
+          "gloss": "searching out",
+          "definition": "A shepherd's searching through his flock for the sheep that are scattered: the verb's noun in its one use.",
+          "evidence": [
+            {
+              "ref": "Ezk.34.12",
+              "role": "defining",
+              "note": "“As a shepherd's searching out (כְּבַקָּרַת) of his herd on the day he is among his scattered sheep.”"
+            }
+          ],
+          "kin": [
+            "search-out"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּקֹּרֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "inquiry",
+      "bdb": [
+        "b.cu.af"
+      ],
+      "cognate_ids": [
+        "ar-baqara"
+      ],
+      "summary": "Used once. Read from the verb, it is an inquiry into the case; the verse shows only that what follows is not death, and the next verse requires a guilt offering (Lev 19:21). Whether the word names the inquiry itself or what it leads to is not clear from this one use.",
+      "senses": [
+        {
+          "gloss": "inquiry, investigation",
+          "definition": "The inquiry that is to follow when a man lies with a slave woman pledged to another man who has not been redeemed or freed, in place of the death penalty.",
+          "evidence": [
+            {
+              "ref": "Lev.19.20",
+              "role": "defining",
+              "note": "“There shall be an inquiry (בִּקֹּרֶת); they shall not be put to death, because she was not free.”"
+            },
+            {
+              "ref": "Lev.19.21",
+              "note": "He brings a ram as a guilt offering."
+            }
+          ],
+          "kin": [
+            "look-into"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בַּקְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "herd",
+      "cognate_ids": [
+        "ar-baqar",
+        "arc-baqra"
+      ],
+      "summary": "In the Peshitta's New Testament it is only the herd of swine of Gadara, which shows it naming a herd of any animal, not cattle alone.",
+      "senses": [
+        {
+          "gloss": "herd",
+          "definition": "A herd of animals feeding together: the herd of swine into which the demons were sent.",
+          "evidence": [
+            {
+              "ref": "Mat.8.30",
+              "role": "defining",
+              "note": "“A herd of many swine (בַּקְרָא דַּחְזִירֵא) feeding.”"
+            },
+            {
+              "ref": "Mrk.5.11",
+              "role": "defining",
+              "note": "“A great herd of swine feeding by the mountain.”"
+            },
+            {
+              "ref": "Mat.8.31"
+            },
+            {
+              "ref": "Mat.8.32"
+            },
+            {
+              "ref": "Mrk.5.13"
+            },
+            {
+              "ref": "Luk.8.32"
+            },
+            {
+              "ref": "Luk.8.33"
+            }
+          ],
+          "kin": [
+            "herd"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-baqara",
+      "lang": "ar",
+      "form": "بَقَرَ",
+      "translit": "baqara",
+      "gloss": "slit, rip open, split lengthwise; open, lay open; reveal a story; know the state of a people and examine them; inquire and search to the utmost after knowledge",
+      "relation": "cognate",
+      "note": "The one verb runs from splitting open to laying open and so to searching out: “He knew the state… of the sons of such a one, and examined, or inspected, them”; “he inquired, and searched to the utmost, after sciences”. The participle بَاقِرٌ is one who searches out knowledge to the utmost. This shares the Hebrew and Aramaic verb's sense of looking into a thing closely; Lane gives no sense of morning, dawn or light for the root.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 233, root بقر, بَقَرَ (n2985), senses b2, b5, b7, b8"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 234, root بقر, البَاقِرُ (n2993), b2"
+        }
+      ]
+    },
+    {
+      "id": "ar-baqar",
+      "lang": "ar",
+      "form": "بَقَرٌ",
+      "translit": "baqar",
+      "gloss": "the bovine kind, oxen and cows, domestic and wild; (بَقَرَةٌ) one head of cattle, male or female",
+      "relation": "cognate",
+      "note": "A collective with a noun of unity, as Hebrew בָּקָר is collective and counted by heads. Lane gives no link between this noun and the verb بَقَرَ “slit”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 234, root بقر, بَقَرٌ (n2988)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000989 bqr [cattle] N: ARB002070 baqar"
+        }
+      ]
+    },
+    {
+      "id": "ar-baqqar",
+      "lang": "ar",
+      "form": "بَقَّارٌ",
+      "translit": "baqqār",
+      "gloss": "an owner or keeper of oxen or cows",
+      "relation": "cognate",
+      "note": "Lane lists this sense under a separate head from بَقَّارٌ “grave-digger; blacksmith”, which goes with the verb “slit, dig”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 234, root بقر, بَقَّارٌ (n2991), A2"
+        }
+      ]
+    },
+    {
+      "id": "arc-baqqar",
+      "lang": "arc",
+      "form": "בַּקַּר",
+      "translit": "baqqar",
+      "gloss": "(pael) search, examine",
+      "relation": "cognate",
+      "note": "The Targum uses it in Lev 13:36, where the Hebrew has the piel of this root.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בְּקַר (ch.), Pa. sense 1, citing Targ. O. Lev. XIII, 36"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001337 bqr [seek] V: ARM004688 BQR [search] V"
+        }
+      ]
+    },
+    {
+      "id": "arc-baqra",
+      "lang": "arc",
+      "form": "בַּקְרָא",
+      "translit": "baqrā",
+      "gloss": "herd; (בַּקְרַת תּוֹרִין) a herd of oxen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בַּקְרָא, citing Targ. Y. Deut. VII, 13; Targ. Joel I, 18"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000989 bqr [cattle] N: ARM004690 bqr [cattle] N"
+        }
+      ]
+    },
+    {
+      "id": "syc-bqr",
+      "lang": "syc",
+      "form": "ܒܩܪ",
+      "translit": "bqar",
+      "gloss": "seek; bore",
+      "relation": "cognate",
+      "note": "A Syriac verb with no use in the Peshitta's New Testament (so a cognate here, not a word of the entry). Its two glosses, “seek” and “bore”, pair searching with piercing as Arabic بَقَرَ pairs searching with slitting.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 451, BXR (root 305), seek; bore"
+        }
+      ]
+    },
+    {
+      "id": "uga-bqr-examine",
+      "lang": "uga",
+      "form": "bqr",
+      "translit": "bqr",
+      "gloss": "examine",
+      "relation": "cognate",
+      "note": "From Anderson–Moser's sets only; not checked in a Ugaritic dictionary.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001337 bqr [seek] V: UGC001245 bqr [examine] V"
+        }
+      ]
+    },
+    {
+      "id": "uga-bqr-cattle",
+      "lang": "uga",
+      "form": "bqr",
+      "translit": "bqr",
+      "gloss": "cattle",
+      "relation": "cognate",
+      "note": "From Anderson–Moser's sets only; not checked in a Ugaritic dictionary.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000989 bqr [cattle] N: UGC001246 bqr [cattle] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-buqarum",
+      "lang": "akk",
+      "form": "buqārum",
+      "translit": "buqārum",
+      "gloss": "cattle",
+      "relation": "cognate",
+      "note": "From Anderson–Moser's sets only; Oracc's glossaries have no such word, and it is not checked in CAD.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000989 bqr [cattle] N: AKK001630 buqārum [cattle] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-buqquru",
+      "lang": "akk",
+      "form": "buqquru",
+      "translit": "buqquru",
+      "gloss": "inquire (Anderson–Moser); baqāru (lay) claim to, contest (Oracc)",
+      "relation": "possible",
+      "note": "Anderson–Moser give the D-stem buqquru as “inquire”; Oracc glosses the verb baqāru (also written paqāru) only “(lay) claim to, contest, dispute”, in legal contexts. Whether a contested claim is the same verb as “inquire”, and whether it belongs to this root, is not checked in CAD.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001337 bqr [seek] V: AKK001634 buqquru [inquire] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "atae x000017780, baqāru [(lay) claim to] V"
+        }
+      ]
+    },
+    {
+      "id": "phn-bqr",
+      "lang": "phn",
+      "form": "bqr",
+      "translit": "bqr",
+      "gloss": "cattle (Punic)",
+      "relation": "cognate",
+      "note": "From Anderson–Moser's sets only; not checked in Krahmalkov.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000989 bqr [cattle] N: PUN000428 bqr [cattle] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mercies-new-every-morning",
+      "statement": "Scripture sets the morning against the night of distress: “weeping may lodge at evening, but at morning a shout of joy” (Psa 30:6), and of the city where God dwells, “God will help her at the turning of the morning” (Psa 46:6). So the morning is when the psalmists ask to hear Yahweh's kindness and to be satisfied with it, and when they sing of it (Psa 143:8; 90:14; 59:17; 92:3); Isaiah prays, “be their arm every morning, our salvation in the time of trouble” (Isa 33:2). In the ruin of Jerusalem the poet says that Yahweh's kindnesses have not ended and his mercies have not failed: “they are new every morning; great is your faithfulness” (Lam 3:22–23); and Zephaniah says that “morning by morning” Yahweh brings his justice to light (Zep 3:5). Yahweh's kindness is not used up by one day's trouble: it is given again each morning, as the manna was gathered morning by morning (Exo 16:21).",
+      "evidence": [
+        {
+          "ref": "Psa.30.6"
+        },
+        {
+          "ref": "Psa.46.6"
+        },
+        {
+          "ref": "Psa.143.8"
+        },
+        {
+          "ref": "Psa.90.14"
+        },
+        {
+          "ref": "Psa.59.17"
+        },
+        {
+          "ref": "Psa.92.3"
+        },
+        {
+          "ref": "Isa.33.2"
+        },
+        {
+          "ref": "Lam.3.22",
+          "to": "Lam.3.23"
+        },
+        {
+          "ref": "Zep.3.5"
+        },
+        {
+          "ref": "Exo.16.21"
+        }
+      ]
+    },
+    {
+      "topic": "the-shepherd-seeks-out-his-sheep",
+      "statement": "Against the shepherds of Israel who fed themselves and left the flock scattered (Ezk 34:2–6), Yahweh says, “I, I myself will seek my sheep and search them out (בִקַּרְתִּים); as a shepherd searches out his herd on the day he is among his scattered sheep, so I will search out my sheep and rescue them” (Ezk 34:11–12). He will “seek the lost and bring back the strayed” (Ezk 34:16) and set over them one shepherd, “my servant David” (Ezk 34:23). Jesus says, “I am the good shepherd; the good shepherd lays down his life for the sheep”, and that he has other sheep he must bring, so that there will be one flock and one shepherd (Jhn 10:11, 16); and, “the Son of Man came to seek and to save the lost” (Luk 19:10), the work Yahweh says in Ezekiel 34:16 that he will do himself. The searching out of the scattered flock that Yahweh promised he would do in person, Jesus says he has come to do.",
+      "evidence": [
+        {
+          "ref": "Ezk.34.2",
+          "to": "Ezk.34.6"
+        },
+        {
+          "ref": "Ezk.34.11",
+          "to": "Ezk.34.12"
+        },
+        {
+          "ref": "Ezk.34.16"
+        },
+        {
+          "ref": "Ezk.34.23"
+        },
+        {
+          "ref": "Jhn.10.11"
+        },
+        {
+          "ref": "Jhn.10.16"
+        },
+        {
+          "ref": "Luk.19.10"
+        }
+      ]
+    },
+    {
+      "topic": "seeking-yahwehs-presence",
+      "statement": "David asks one thing of Yahweh: to dwell in Yahweh's house all his days, “to behold the beauty of Yahweh and to inquire (לְבַקֵּר) in his temple” (Psa 27:4); and when Yahweh says “seek my face”, his heart answers, “your face, Yahweh, I will seek” (Psa 27:8). The verb that elsewhere is the priest's close examination (Lev 13:36) here stands beside beholding: what the worshipper wants in Yahweh's house is to look on him and to look closely into what is there, not only to be safe in it.",
+      "evidence": [
+        {
+          "ref": "Psa.27.4"
+        },
+        {
+          "ref": "Psa.27.8"
+        },
+        {
+          "ref": "Lev.13.36"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: the name בַּקְבַּקַּר (Bakbakkar, 1Ch 9:15), whose form is unclear, to a name entry if wanted. Not entered as words: the later Hebrew and Targum senses “visit the sick” and “declare ownerless” (a form of פקר) from Jastrow, which are not scripture's. The Peshitta's verb בְּקַר “seek; bore” (SEDRA lexeme 451) has no token in the Peshitta New Testament text, so it is recorded as a cognate (syc-bqr), not a word; the Peshitta's Old Testament was not searched. The Peshitta does not use this root for “morning” (Mrk 1:35 has צַפְרָא, Mrk 16:2 שַׁפְרָא). Unity of the root: Arabic بَقَرَ ties “split open, lay open” to “examine, search to the utmost” within one verb, and SEDRA's Syriac verb is glossed “seek; bore”, so “look into, search out” has a plausible source in “open up”; the noun “cattle” has cognates across the languages, but no source checked (Lane included) derives it from the verb; and no cognate of this root means “morning”. A “dawn as the splitting of the night” is shown in Arabic only for another root, فَجْر from فَجَرَ “cleave” (Lane p. 2341, n33048: “because it is a cleaving of the darkness from before the light”), and in scripture only with בקע (Isa 58:8); neither is evidence for בֹּקֶר, and it is not entered. Lev 27:33 uses the verb of examining the herd's tithe, but one verse joining the verb and cattle is no evidence that the noun comes from the verb. Similar-sounding root (for cross-root work, not evidence of one root): בכר (the bakar entry) is “first, firstborn; first-ripe”, and its Arabic counterpart بَكَرَ / بُكْرَة is “go forth early in the morning; early morning” (Lane pp. 239, 241, n3064, n3074), while Hebrew says “morning” with בֹּקֶר of this root. The two roots differ only in k against q, both stops at the back of the mouth. In Hebrew, בכר never means morning and בקר never means first, so the overlap is in Arabic's بكر and Hebrew's בקר; it is recorded in בֹּקֶר's summary as a likeness of sound only. Egyptian bkꜣ “morning, morrow” (TLA tla57830, cited from Wb 1, 481.17–18 and Wilson's Ptolemaic lexicon) looks like בֹּקֶר; it is late, and there is no evidence of a loan either way, so it is not entered. Septuagint: MACULA aligns בֹּקֶר with φωσφόρος 88 times, which looks like an alignment fault and is not used. Open: (1) Ugaritic bqr “examine” and “cattle”, Punic bqr, Akkadian buqārum and buqquru are from Anderson–Moser only, not checked in DUL, Krahmalkov or CAD; Akkadian baqāru “claim, contest” in Oracc may be a different verb. (2) Ge'ez baqala “examine, punish” (with l) and Sabaic bqr “cattle” (Wiktionary) not checked in Leslau, Dillmann or a Sabaic dictionary; not entered. (3) בּוֹקֵר: herdsman of cattle, or herder in general? Amos's own animals are צֹאן (Amo 1:1; 7:15). (4) 2Ki 16:15 לְבַקֵּר: what Ahaz meant to do at the bronze altar is not clear. (5) Lane's pages are cited from the vendored lane.jsonl page fields, not checked against a scan."
+}
