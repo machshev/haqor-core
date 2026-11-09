@@ -5581,6 +5581,90 @@
           "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40lwt+p"
         }
       ]
+    },
+    "43:16": {
+      "sha256": "a94d6c602c1b7c654f458c8f6d30aac8276a7cdd0275e4d6b76368728b9a08b1",
+      "original_shared_spans": 134,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 4,
+          "english": "from the beginning,",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "MEN QDIM is a temporal compound, here FROM THE BEGINNING. It qualifies not telling these things earlier; the speaking, negation, recipients, demonstrative and because-I-was-with-you explanation remain separate."
+        },
+        {
+          "verse": 8,
+          "english": "the world",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The third-person singular object suffix on WILL CONVICT anticipates explicit WORLD. Only the single resumed English object jointly owns the suffix-bearing verb and explicit object; HE WILL CONVICT remains separately linked to its verb."
+        },
+        {
+          "verse": 15,
+          "english": "has",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Existential ITH plus the L-prefixed possessor jointly express possession, English HAS. ALL, THINGS, THAT, MY FATHER, ARE and MINE remain separately linked; no ordinary noun phrase is combined."
+        },
+        {
+          "verse": 17,
+          "english": "said",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Perfect AMARU plus past HWA jointly supply the narrative past SAID here. The construction does not force English anterior HAD SAID in this sequential exchange. AND, HIS DISCIPLES, ONE and TO ANOTHER remain separate; the next verse has participle plus HWA and separately renders WERE/SAYING.",
+          "source": "https://refubium.fu-berlin.de/bitstream/handle/fub188/24490/Classical_Syriac_Course_Book_3-2019.pdf?isAllowed=y&sequence=3"
+        },
+        {
+          "verse": 25,
+          "english": "plainly",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "AYN B-GLE is an adverbial idiom meaning openly or clearly, here PLAINLY in contrast with parables. It supplies neither a physical eye participant nor an independent revealing predicate. MAKE KNOWN, TO YOU, ABOUT and THE FATHER remain separately linked.",
+          "source": "https://cal.huc.edu/cal_entry_web.php?lemma=%28yn%40bgl%29+N"
+        },
+        {
+          "verse": 27,
+          "english": "from",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "MEN LWATH is the compound preposition FROM, from the presence of, in the claim of coming from God. It is not two contrary directions. I, CAME and actual GOD remain separately linked.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40lwt+p"
+        },
+        {
+          "verse": 28,
+          "english": "from",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "MEN LWATH again jointly expresses FROM in I CAME OUT FROM THE FATHER. CAME OUT, THE FATHER, coming into the world and the later leaving/going clauses remain separately owned.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40lwt+p"
+        },
+        {
+          "verse": 33,
+          "english": "the world.",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "The third-person singular object suffix on the first-person perfect HAVE OVERCOME resumes explicit WORLD. The single English object jointly owns both source positions, while I and HAVE OVERCOME remain separate. The suffix is not a first-person object."
+        }
+      ]
     }
   }
 }
