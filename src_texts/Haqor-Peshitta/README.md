@@ -1267,17 +1267,36 @@ Source checks for Luke 7:
 
 Source checks for Luke 8:
 
+- The chapter's 274 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Eighteen remain, with
+  exact reasons in the ledger: temporal and possession constructions,
+  ethical datives, the confrontation formula, and repeated references to
+  one participant. Ordinary modifiers, negatives, auxiliaries, names,
+  noun phrases, and clause constituents have separate source owners.
 - In 8:1 the twelve are explicitly his; in 8:3 the women serve "them",
   plural. In 8:4 people come from all the cities, and parables are plural.
 - In 8:10 the mystery is singular. In 8:12 the enemy takes the word from
   their heart so that they may not believe and live. In 8:13 their faith
   is temporary; in 8:15 holding the word and producing fruits are distinct.
+- In 8:6 the two-word hour expression is "immediately". In 8:13 the
+  anticipatory object pronoun and the explicitly named word identify one
+  received object. In 8:16 the spatial relation is split as "on top of".
+  In 8:17 adjacent no/thing spans spell "nothing"; in 8:18 the completed
+  hearing and the distinction between having and thinking one has remain.
 - In 8:19 the family cannot speak with him because of the crowd. In 8:24
   both calls retain "Our Rabbi". The winds, storms, and sea in 8:25 are
   distinct objects of the command.
 - In 8:26 the place name is Gadarenes. In 8:28 the initial question uses
   "we", while the plea ends "do not torment me". In 8:29 the man is bound
   and breaks his bonds; the demon leads him into the wilderness.
+- In 8:23 the sleep predicate's ethical dative adds no beneficiary. The
+  explicit pronoun and Jesus name identify one subject here and in 8:37,
+  8:42, and 8:48. In 8:29 the time clause leads into the man's captivity;
+  the demon is the captor. The command's anticipatory addressee and the
+  spirit noun identify one spirit, with its unclean modifier separate.
+- In 8:35 the finding verb's object suffix anticipates the man. His
+  demons have gone out; he is clothed, composed, and sitting at Jesus's
+  feet. In 8:37 the departure's ethical dative adds no second destination.
 - In 8:36 those who saw the healing report it to the visitors. In 8:38
   Jesus dismisses the man before speaking. In 8:39 the command names God,
   while the man's proclamation names Jesus.
@@ -1288,6 +1307,13 @@ Source checks for Luke 8:
   verb is rendered "has given you life". In 8:50 Jesus addresses the girl's
   father and says she will live. In 8:56 he warns the parents to tell no
   one what happened.
+- The woman introduced in 8:43 remains the subject of approaching in
+  8:44. In 8:47 the negative stays with escaping his notice, and the
+  reason for touching and the immediate healing have separate owners.
+  In 8:49 and 8:53 the death predicates have subject-coreferential ethical
+  datives. In 8:52 the finite death verb and the separate sleeping clause
+  each supply their own English predicate. In 8:55 the giving verb,
+  female recipient, and eating complement have separate source owners.
 
 Source checks for Luke 9:
 
