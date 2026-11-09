@@ -6925,6 +6925,144 @@
           "source": "דִּאיתֿ ה_וָא להֻונ"
         }
       ]
+    },
+    "44:3": {
+      "sha256": "66dd514437c40fb42c96f09a1a12ede001444be75258ffbab6542cc5478409c5",
+      "original_shared_spans": 126,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 6,
+          "english": "have",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "The negative existential layt with first-person possessor li expresses I have no. English I have realizes the existential-plus-possessor construction; no retains the negation at position 5 separately. It is possession, not an assertion of legal ownership. The first-person English subject is separately linked to the possessor suffix, leaving only have shared.",
+          "source": "לַיתּ לִי"
+        },
+        {
+          "verse": 6,
+          "english": "have",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "The relative existential d-ith plus first-person possessor li forms the single positive possession predicate I have, governed by what. Neither word alone supplies the personal have construction; the relative is licensed by the English what-clause. The first-person English subject is separately linked to the possessor suffix, leaving only have shared.",
+          "source": "דִּאיתֿ לִי"
+        },
+        {
+          "verse": 6,
+          "english": "of Jesus",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "The masculine suffix on in-his-name anticipates the following Jesus genitive. Of Jesus realizes that one resumed possessor; in the name stays separately linked to position 14.",
+          "source": "בַּשמֵה דּיֵשֻוע"
+        },
+        {
+          "verse": 7,
+          "english": "at once",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "The temporal ba-h b-shata is the compact at-once expression, literally in it, in the hour. The feminine pronominal resumption and hour noun together specify the same instant, not two separate times. The conjunction is separately attached to position 4.",
+          "source": "ובָֿה בּשָעתָֿא"
+        },
+        {
+          "verse": 12,
+          "english": "as though",
+          "positions": [
+            18,
+            19
+          ],
+          "reason": "Ayk haw introduces the hypothetical comparison as though, literally as that, with the following d-clause. Haw is not a new male participant; by, power and the explicit first-plural possessor remain separate owners.",
+          "source": "אַיכֿ הַו"
+        },
+        {
+          "verse": 13,
+          "english": "of Abraham",
+          "positions": [
+            0,
+            2
+          ],
+          "reason": "The masculine suffix on God anticipates Abraham in the following genitive. Of Abraham realizes one resumed possessor while the God stays at position 0 and the copular/personal hu at 1 stays separate.",
+          "source": "אַלָהֵה דַּאבֿרָהָמ"
+        },
+        {
+          "verse": 13,
+          "english": "whom",
+          "positions": [
+            11,
+            14
+          ],
+          "reason": "The relative prefix on d-antun and the pronominal complement beh resume the same Jesus object across handed over and denied. One English whom serves both coordinated verbs; you remains separately at 11 and no redundant English him is added after denied.",
+          "source": "דַּאנ_תֻּונ בֵּה"
+        },
+        {
+          "verse": 13,
+          "english": "Pilate’s",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "The masculine suffix on presence/faces anticipates the explicit Pilate genitive. English Pilates possessive realizes that single resumed possessor while presence remains separately linked at 16.",
+          "source": "אַפַּוה_י דּפִֿילַטָוס"
+        },
+        {
+          "verse": 19,
+          "english": "from",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Men qdam is the compound source preposition from before or from being in the presence of, here rendered from, with the following face noun separately expressed as the presence. The qdam component does not introduce an additional temporal event. CAL mn@qwdm+p also records simple from with divine figures.",
+          "source": "מֵנ קדָֿמ"
+        },
+        {
+          "verse": 19,
+          "english": "of the Lord",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "The masculine suffix on his-presence anticipates the Lord genitive. Of the Lord realizes the one resumed possessor, and the presence remains separately at 12.",
+          "source": "פַּרצֻופֵּה דּמָריָא"
+        },
+        {
+          "verse": 24,
+          "english": "after him",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Men bathreh is the compound temporal preposition after him, with the relative d-prefix at 5 separately rendered who. Men does not add a second source-from event to the following after-him phrase; were is separately at 7.",
+          "source": "דּמֵנ בָּתֿרֵה"
+        },
+        {
+          "verse": 25,
+          "english": "of the prophets",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The third-plural suffix on their-children anticipates the explicit prophets genitive. Of the prophets realizes the single resumed possessor; the children remains separately at 2, and the covenant keeps its own genitive owner.",
+          "source": "בּנַיהֻונ דַּנבִֿיֵא"
+        },
+        {
+          "verse": 26,
+          "english": "first",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Men qdim is the temporal adverbial compound first or beforehand. It marks the priority of the sending to the audience, without a separate spatial from-clause; to you remains outside at 0.",
+          "source": "מֵנ קדִֿימ"
+        }
+      ]
     }
   }
 }
