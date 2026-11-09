@@ -391,11 +391,35 @@ Source checks for Mark 2:
 
 Source checks for Mark 3:
 
+- In 3:4 the plural pronoun begins "But they were silent"; it is not
+  an object of destroy in the preceding question. In 3:5 the experiencer
+  dative supplies "he" with the grieved predicate.
+- Bar shateh in 3:6 retains the immediate-time compound "at once".
+  The household members and Herod have separate links.
 - In 3:8 the crowd expression is plural: "great multitudes".
+  The preceding following verb in 3:7 is perfect with a past auxiliary,
+  "had followed". In 3:10 the healing verb is a participle with its past
+  auxiliary, "was healing", distinct from that perfect construction.
+- In 3:11 the afflicted people remain the actors of the falling and
+  speaking. Their possessive/experiencer pronoun is resumed as the English
+  subject "they". In 3:12 the negative and the modal belonging to the
+  revealing verb have separate owners.
+- The purpose clauses in 3:14-15 keep the plural selected disciples and
+  singular sender distinct. The list continues through 3:19, with naming
+  remarks in parentheses. In 3:17 "them" is plural and gives the name
+  Boanerges to both James and John.
 - In 3:21 the out-of-his-mind expression remains the kinsmen's reported
   claim, with the explanatory particle linked to "they were saying".
+  It can be rendered separately as "had gone out / of / his mind".
+  In 3:23 in parables describes the speaking, rather than the calling.
+- In 3:26 the rising and dividing verbs are perfect in the conditional
+  clause, and the following feminine copular pronoun resumes the end noun.
+  Ela en in 3:27 remains the compound "unless". Bnay anasha in 3:28 is
+  the human-being idiom "people", consistent with the fishers expression.
 - In 3:29 the source specifies eternal judgment; no different object is
   substituted. The first-person family possessives in 3:35 are retained.
+  The past auxiliary in the explanatory 3:30 belongs to "were saying";
+  the unclean-spirit assertion stays inside their reported speech.
 
 Source checks for Mark 4:
 

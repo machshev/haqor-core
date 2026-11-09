@@ -1199,6 +1199,41 @@
           "reason": "Ela en is the compound exception particle except/unless. Literal but if would introduce a conditional clause where the source supplies an exception; the following noun or prepositional complement remains separately linked."
         }
       ]
+    },
+    "41:3": {
+      "sha256": "4cb089fd323dcf522479565176c792fca1299862f0de82db6ab5475b8468644f",
+      "original_shared_spans": 105,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 6,
+          "english": "at once",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Bar shateh, literally son of its hour, is the lexical immediate-time expression; its two constituents jointly mean at once, as in Mark2:12."
+        },
+        {
+          "verse": 27,
+          "english": "unless",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Ela en is the compound exception particle unless. Literal but if is not a reasonable independent translation of the exception to the preceding negative ability statement."
+        },
+        {
+          "verse": 28,
+          "english": "people",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Bnay anasha, literally sons of man/mankind, is the established human-being idiom. It supplies people, as in the reviewed fishers-of-people expression in Matthew4:19 and Mark1:17."
+        }
+      ]
     }
   }
 }
