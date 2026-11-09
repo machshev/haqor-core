@@ -1,0 +1,715 @@
+{
+  "id": "rua",
+  "root": "רוע",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "sound",
+    "shout",
+    "war",
+    "joy",
+    "worship",
+    "feasts",
+    "kingship"
+  ],
+  "gloss": "raise a shout; sound a blast",
+  "summary": "רוּעַ (hiphil הֵרִיעַ) is to raise a great shout: the war-cry of an army, the acclamation of a king, the people's shout of joy before Yahweh, and the signal-blast sounded on trumpets or the shofar. Its noun תְּרוּעָה is that shout or blast; the first day of the seventh month is a זִכְרוֹן תְּרוּעָה, a remembrance of teruah (Lev 23:24), a יוֹם תְּרוּעָה (Num 29:1). Scripture's own use carries the meaning; no cognate shown to share it has been confirmed.",
+  "words": [
+    {
+      "lemma": "רוּעַ",
+      "pos": "verb",
+      "gloss": "shout; sound the alarm; shout for joy",
+      "summary": "Used almost only in the hiphil, הֵרִיעַ, “raise a shout”. The verb is set beside blowing the shofar but kept apart from it: on the trumpets, “you shall blow, but not sound the alarm” (Num 10:7).",
+      "bdb": [
+        "t.bo.aa"
+      ],
+      "cognate_ids": [
+        "ar-ragha"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "raise a shout; sound an alarm",
+          "senses": [
+            {
+              "id": "war-shout",
+              "gloss": "raise the war-cry",
+              "definition": "Shout together as an army going into battle or at the moment of attack.",
+              "evidence": [
+                {
+                  "ref": "Jos.6.10",
+                  "role": "defining",
+                  "note": "“You shall not shout, nor let your voice be heard … until the day I say to you, Shout! Then you shall shout.”"
+                },
+                {
+                  "ref": "Jos.6.16",
+                  "role": "defining",
+                  "note": "At the seventh time round, with the shofars: “Shout, for Yahweh has given you the city.”"
+                },
+                {
+                  "ref": "1Sa.17.20",
+                  "role": "defining",
+                  "note": "The army going out to the battle line shouted for the battle."
+                },
+                {
+                  "ref": "Jos.6.20"
+                },
+                {
+                  "ref": "Jdg.15.14",
+                  "note": "The Philistines came shouting to meet Samson."
+                },
+                {
+                  "ref": "2Ch.13.15",
+                  "note": "The men of Judah shouted, and God struck Jeroboam."
+                },
+                {
+                  "ref": "Isa.42.13",
+                  "note": "Yahweh goes out like a warrior; he shouts, yes, he raises the war-cry."
+                }
+              ]
+            },
+            {
+              "id": "sound-alarm",
+              "gloss": "sound the alarm, blow a signal",
+              "definition": "Sound teruah on trumpets or shofar: a signal for war or for breaking camp, distinct from the plain blowing that gathers the assembly.",
+              "evidence": [
+                {
+                  "ref": "Num.10.7",
+                  "role": "defining",
+                  "note": "“When gathering the assembly, you shall blow (תִּתְקְעוּ), but not sound the alarm (וְלֹא תָרִיעוּ).”"
+                },
+                {
+                  "ref": "Num.10.9",
+                  "role": "defining",
+                  "note": "When you go to war, “you shall sound the alarm on the trumpets, and you will be remembered before Yahweh your God and saved from your enemies.”"
+                },
+                {
+                  "ref": "Hos.5.8",
+                  "note": "Blow the shofar in Gibeah … sound the alarm at Beth-aven."
+                },
+                {
+                  "ref": "Jol.2.1",
+                  "note": "Blow the shofar in Zion, sound the alarm on my holy mountain, for the day of Yahweh is coming."
+                }
+              ]
+            },
+            {
+              "id": "shout-acclaim",
+              "gloss": "shout in acclamation, shout for joy",
+              "definition": "Shout aloud in acclaim of a king, or for joy and in praise before Yahweh.",
+              "evidence": [
+                {
+                  "ref": "1Sa.10.24",
+                  "role": "defining",
+                  "note": "All the people shouted and said, “Let the king live!”"
+                },
+                {
+                  "ref": "Psa.47.2",
+                  "role": "defining",
+                  "note": "“All peoples, clap your hands; shout to God with the voice of a ringing cry.”"
+                },
+                {
+                  "ref": "Ezr.3.11",
+                  "role": "defining",
+                  "note": "All the people shouted a great teruah in praise to Yahweh, because the house of Yahweh was founded."
+                },
+                {
+                  "ref": "Zec.9.9",
+                  "note": "“Rejoice greatly, daughter of Zion; shout, daughter of Jerusalem: your king is coming to you.”"
+                },
+                {
+                  "ref": "Psa.98.6",
+                  "note": "With trumpets and the sound of the shofar shout before the King, Yahweh."
+                },
+                {
+                  "ref": "Psa.66.1"
+                },
+                {
+                  "ref": "Psa.100.1"
+                },
+                {
+                  "ref": "Zep.3.14"
+                },
+                {
+                  "ref": "Job.38.7",
+                  "note": "When the morning stars sang together and all the sons of God shouted for joy."
+                },
+                {
+                  "ref": "Psa.41.12",
+                  "note": "My enemy does not shout in triumph over me."
+                }
+              ]
+            },
+            {
+              "gloss": "cry out in distress",
+              "definition": "Cry aloud in fear or pain.",
+              "evidence": [
+                {
+                  "ref": "Mic.4.9",
+                  "role": "defining",
+                  "note": "“Why do you cry out a cry (תָרִיעִי רֵעַ)? … pain has seized you like a woman in labour.”"
+                },
+                {
+                  "ref": "Isa.15.4",
+                  "note": "The armed men of Moab cry out; his soul trembles."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "shout in triumph; shout for joy",
+          "senses": [
+            {
+              "gloss": "shout in triumph, shout for joy",
+              "definition": "Raise one's shout of triumph or gladness.",
+              "evidence": [
+                {
+                  "ref": "Psa.60.10",
+                  "role": "defining",
+                  "note": "“Over Philistia I shout in triumph.”"
+                },
+                {
+                  "ref": "Psa.65.14",
+                  "role": "defining",
+                  "note": "The valleys covered with grain shout for joy; yes, they sing."
+                },
+                {
+                  "ref": "Psa.108.10"
+                }
+              ],
+              "kin": [
+                "joyful-shout"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polal",
+          "gloss": "be shouted",
+          "senses": [
+            {
+              "gloss": "be shouted (for joy)",
+              "definition": "Of the vintage shout: be raised.",
+              "evidence": [
+                {
+                  "ref": "Isa.16.10",
+                  "role": "defining",
+                  "note": "In the vineyards there is no singing, no shout is raised; the treader treads no wine."
+                }
+              ],
+              "kin": [
+                "joyful-shout"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀλαλάζω",
+          "gloss": "raise a shout",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 47:2 word 5",
+              "note": "ἀλαλάξατε for הָרִיעוּ."
+            }
+          ]
+        },
+        {
+          "lemma": "κηρύσσω",
+          "gloss": "proclaim aloud",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ZEC 9:9 word 5",
+              "note": "κήρυσσε for הָרִיעִי."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תָּקַע שׁוֹפָר",
+            "note": "blow the shofar: set beside the shout, but kept distinct from it (Num 10:7).",
+            "evidence": [
+              {
+                "ref": "Jol.2.1"
+              },
+              {
+                "ref": "Hos.5.8"
+              },
+              {
+                "ref": "Jos.6.16"
+              }
+            ]
+          },
+          {
+            "lemma": "גִּיל",
+            "note": "rejoice.",
+            "evidence": [
+              {
+                "ref": "Zec.9.9"
+              }
+            ]
+          },
+          {
+            "lemma": "רָנַן",
+            "note": "sing for joy.",
+            "evidence": [
+              {
+                "ref": "Job.38.7"
+              },
+              {
+                "ref": "Psa.98.4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תְּרוּעָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "shout; blast, alarm",
+      "summary": "The shout itself: a battle-cry, a shout of joy or acclaim, or the blast sounded on trumpets and shofar. Leviticus 23 names the first day of the seventh month by it.",
+      "bdb": [
+        "t.bo.ac"
+      ],
+      "cognate_ids": [
+        "ar-ragha"
+      ],
+      "senses": [
+        {
+          "id": "battle-cry",
+          "gloss": "battle-cry, war-shout",
+          "definition": "The shout of an army in battle, often with the shofar.",
+          "evidence": [
+            {
+              "ref": "Jer.4.19",
+              "role": "defining",
+              "note": "“You have heard the sound of the shofar, my soul, the teruah of war.”"
+            },
+            {
+              "ref": "Amo.1.14",
+              "role": "defining",
+              "note": "With teruah on the day of battle, with a storm on the day of the whirlwind."
+            },
+            {
+              "ref": "Job.39.25",
+              "role": "defining",
+              "note": "The war-horse smells the battle from afar, the thunder of the captains and the teruah."
+            },
+            {
+              "ref": "Jos.6.20",
+              "note": "The people shouted a great teruah, and the wall fell."
+            },
+            {
+              "ref": "1Sa.4.5",
+              "note": "When the ark came into the camp, all Israel shouted a great teruah, and the earth rang (1Sa 4:6)."
+            },
+            {
+              "ref": "Amo.2.2"
+            },
+            {
+              "ref": "Jer.49.2"
+            },
+            {
+              "ref": "Ezk.21.27"
+            }
+          ],
+          "kin": [
+            "war-shout"
+          ]
+        },
+        {
+          "id": "joyful-shout",
+          "gloss": "shout of joy, acclamation",
+          "definition": "A shout of gladness or of acclaim, in worship or for a king.",
+          "evidence": [
+            {
+              "ref": "Ezr.3.13",
+              "role": "defining",
+              "note": "The people could not tell the sound of the shout of joy from the sound of the people's weeping."
+            },
+            {
+              "ref": "Job.8.21",
+              "role": "defining",
+              "note": "He will yet fill your mouth with laughter and your lips with teruah."
+            },
+            {
+              "ref": "Num.23.21",
+              "role": "defining",
+              "note": "“Yahweh his God is with him, and the teruah of a king is among them.”"
+            },
+            {
+              "ref": "2Sa.6.15",
+              "note": "David and all Israel brought up the ark of Yahweh with teruah and the sound of the shofar."
+            },
+            {
+              "ref": "Psa.47.6",
+              "note": "“God has gone up with teruah, Yahweh with the sound of the shofar.”"
+            },
+            {
+              "ref": "Psa.27.6",
+              "note": "Sacrifices of teruah in his tent."
+            },
+            {
+              "ref": "Psa.89.16",
+              "note": "Happy the people who know the teruah."
+            },
+            {
+              "ref": "Psa.33.3"
+            },
+            {
+              "ref": "Job.33.26"
+            },
+            {
+              "ref": "Ezr.3.11"
+            },
+            {
+              "ref": "1Ch.15.28"
+            },
+            {
+              "ref": "2Ch.15.14"
+            }
+          ],
+          "kin": [
+            "shout-acclaim"
+          ]
+        },
+        {
+          "id": "signal-blast",
+          "gloss": "blast, alarm (on trumpet or shofar)",
+          "definition": "A signal sounded on the silver trumpets or the shofar: for breaking camp, for war, and on the jubilee. A shofar or trumpet “of teruah” is one sounded so.",
+          "evidence": [
+            {
+              "ref": "Num.10.5",
+              "role": "defining",
+              "note": "“When you blow a teruah, the camps on the east shall set out”; a second teruah moves the south (Num 10:6)."
+            },
+            {
+              "ref": "Lev.25.9",
+              "role": "defining",
+              "note": "On the Day of Atonement of the fiftieth year, sound the shofar of teruah through all your land."
+            },
+            {
+              "ref": "Num.31.6",
+              "note": "The trumpets of teruah go with the army to war."
+            },
+            {
+              "ref": "2Ch.13.12",
+              "note": "The priests with the trumpets of teruah to sound against you."
+            },
+            {
+              "ref": "Zep.1.16",
+              "note": "The day of Yahweh: a day of shofar and teruah."
+            },
+            {
+              "ref": "Psa.150.5",
+              "note": "Cymbals of teruah."
+            }
+          ],
+          "kin": [
+            "sound-alarm"
+          ],
+          "senses": [
+            {
+              "id": "day-of-teruah",
+              "gloss": "the day of teruah",
+              "definition": "The first day of the seventh month, a sabbath-rest and holy convocation, is named by the teruah sounded on it: זִכְרוֹן תְּרוּעָה, a remembrance of teruah (Lev 23:24), and יוֹם תְּרוּעָה, a day of teruah (Num 29:1). Neither verse names the instrument or says more of the day's meaning; Num 10:9–10 joins the trumpets' alarm and their blowing at the appointed times to Israel's being remembered before Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.24",
+                  "role": "defining",
+                  "note": "“In the seventh month, on the first of the month, you shall have a sabbath-rest, a remembrance of teruah, a holy convocation.”"
+                },
+                {
+                  "ref": "Num.29.1",
+                  "role": "defining",
+                  "note": "“It shall be a day of teruah for you.”"
+                },
+                {
+                  "ref": "Num.10.10",
+                  "note": "On your appointed times and new moons you shall blow the trumpets over your offerings, “and they shall be to you for a remembrance before your God.”"
+                },
+                {
+                  "ref": "Num.10.9",
+                  "note": "The alarm in war: “and you will be remembered before Yahweh your God.”"
+                }
+              ],
+              "kin": [
+                "sound-alarm"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σάλπιγξ",
+          "gloss": "trumpet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:24 word 14",
+              "note": "μνημόσυνον σαλπίγγων, “a memorial of trumpets”, for זִכְרוֹן תְּרוּעָה."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀλαλαγμός",
+          "gloss": "shout, war-cry",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 47:6 word 3",
+              "note": "ἐν ἀλαλαγμῷ for בִּתְרוּעָה."
+            }
+          ]
+        },
+        {
+          "lemma": "κραυγή",
+          "gloss": "outcry",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ZEP 1:16 word 3",
+              "note": "κραυγῆς for תְרוּעָה."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קוֹל שׁוֹפָר",
+            "note": "the sound of the shofar, set beside the teruah.",
+            "evidence": [
+              {
+                "ref": "Psa.47.6"
+              },
+              {
+                "ref": "Jer.4.19"
+              },
+              {
+                "ref": "2Sa.6.15"
+              }
+            ]
+          },
+          {
+            "lemma": "שְׂחוֹק",
+            "note": "laughter.",
+            "evidence": [
+              {
+                "ref": "Job.8.21"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "בְּכִי",
+            "note": "weeping, heard together with the shout of joy at the founding of the second house.",
+            "evidence": [
+              {
+                "ref": "Ezr.3.12"
+              },
+              {
+                "ref": "Ezr.3.13"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "זִכְרוֹן תְּרוּעָה",
+            "gloss": "remembrance of teruah: the first day of the seventh month",
+            "evidence": [
+              {
+                "ref": "Lev.23.24"
+              }
+            ]
+          },
+          {
+            "phrase": "יוֹם תְּרוּעָה",
+            "gloss": "day of teruah: the first day of the seventh month",
+            "evidence": [
+              {
+                "ref": "Num.29.1"
+              }
+            ]
+          },
+          {
+            "phrase": "שׁוֹפַר תְּרוּעָה",
+            "gloss": "shofar of teruah: the shofar sounded in alarm or proclamation",
+            "evidence": [
+              {
+                "ref": "Lev.25.9"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵרִיעַ תְּרוּעָה",
+            "gloss": "shout a shout",
+            "evidence": [
+              {
+                "ref": "Jos.6.20"
+              },
+              {
+                "ref": "1Sa.4.5"
+              },
+              {
+                "ref": "Ezr.3.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רֵעַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "shout, noise",
+      "summary": "A rare noun of the shout: the noise of a crowd and a cry of distress. Three uses, one of them (Job 36:33) uncertain in sense; its tie to the verb rests on Mic 4:9, where it is the verb's own object.",
+      "bdb": [
+        "t.bo.ab"
+      ],
+      "cognate_ids": [
+        "ar-ragha"
+      ],
+      "senses": [
+        {
+          "gloss": "shout, noise of shouting",
+          "definition": "The noise of shouting, of a crowd or of one in distress.",
+          "evidence": [
+            {
+              "ref": "Exo.32.17",
+              "role": "defining",
+              "note": "Joshua heard the noise of the people in its shouting (בְּרֵעֹה) and took it for war in the camp."
+            },
+            {
+              "ref": "Mic.4.9",
+              "role": "defining",
+              "note": "“Why do you cry out a cry (תָרִיעִי רֵעַ)?”"
+            },
+            {
+              "ref": "Job.36.33",
+              "note": "Uncertain: in a storm scene, “its noise declares concerning him”."
+            }
+          ],
+          "kin": [
+            "war-shout",
+            "shout-acclaim"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ragha",
+      "lang": "ar",
+      "form": "رَغَا",
+      "translit": "raġā",
+      "gloss": "(of a camel) grumble, utter its cry; (form VI) shout to one another",
+      "relation": "possible",
+      "note": "The camel's grumbling cry (رُغَاء); in form VI, تَرَاغَوْا عَلَيْهِ, “they shouted one to another against him”, to kill him. It shares the shouting, but its root is third-weak (r-ġ-w) where the Hebrew is hollow (r-w-ʿ), so the link is uncertain.",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "pp. 1114–1115, root رغو, رَغَا (n16046), تَرَاغَوْا (n16049)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-shout-for-the-king",
+      "statement": "Teruah is the sound that greets a king. Balaam sees that Yahweh his God is with Israel, “and the teruah of a king is among them” (Num 23:21). When Saul is shown to the people, they shout, “Let the king live!” (1Sa 10:24). The psalms call all peoples to shout to God, for Yahweh Most High is a great king over all the earth; God has gone up with teruah, Yahweh with the sound of the shofar (Psa 47:2–3, 6–8); and with trumpets and shofar Israel shouts before the King, Yahweh (Psa 98:6). Zechariah tells the daughter of Jerusalem to shout, because her king is coming to her, righteous and saved, humble and riding on a donkey (Zec 9:9). The gospels say this was fulfilled when Jesus rode into Jerusalem on a donkey (Mat 21:4–5; Jhn 12:14–15), and the crowds cried out to him as the King of Israel coming in the name of the Lord (Jhn 12:13).",
+      "evidence": [
+        {
+          "ref": "Num.23.21"
+        },
+        {
+          "ref": "1Sa.10.24"
+        },
+        {
+          "ref": "Psa.47.2",
+          "to": "Psa.47.3"
+        },
+        {
+          "ref": "Psa.47.6",
+          "to": "Psa.47.8"
+        },
+        {
+          "ref": "Psa.98.6"
+        },
+        {
+          "ref": "Zec.9.9"
+        },
+        {
+          "ref": "Mat.21.4",
+          "to": "Mat.21.5"
+        },
+        {
+          "ref": "Jhn.12.13",
+          "to": "Jhn.12.15"
+        }
+      ]
+    },
+    {
+      "topic": "remembered-before-yahweh",
+      "statement": "When Israel goes to war against an enemy who oppresses them, they are to sound the alarm on the trumpets, “and you will be remembered before Yahweh your God, and you will be saved from your enemies” (Num 10:9). On their days of gladness, appointed times and new moons the trumpets are blown over the offerings, “for a remembrance before your God” (Num 10:10). The first day of the seventh month is called a זִכְרוֹן תְּרוּעָה, a remembrance of teruah, a sabbath-rest and holy convocation (Lev 23:24), a יוֹם תְּרוּעָה (Num 29:1). Scripture says no more of that day's purpose; what these verses show is that the teruah is sounded before Yahweh so that his people are remembered by him. In the fiftieth year the shofar of teruah sounds through the land on the Day of Atonement, and liberty is proclaimed to all its inhabitants (Lev 25:9–10).",
+      "evidence": [
+        {
+          "ref": "Num.10.9"
+        },
+        {
+          "ref": "Num.10.10"
+        },
+        {
+          "ref": "Lev.23.24"
+        },
+        {
+          "ref": "Num.29.1"
+        },
+        {
+          "ref": "Lev.25.9",
+          "to": "Lev.25.10"
+        }
+      ]
+    },
+    {
+      "topic": "the-day-of-yahweh",
+      "statement": "The prophets announce the day of Yahweh with the shofar and teruah: “Blow the shofar in Zion, sound the alarm (הָרִיעוּ) on my holy mountain; let all the inhabitants of the land tremble, for the day of Yahweh is coming” (Jol 2:1); the great day of Yahweh is near, “a day of shofar and teruah” (Zep 1:14–16). The New Testament describes the Lord's coming in the same sounds: the Lord himself will come down from heaven with a shout, with the voice of an archangel and with the trumpet of God, and the dead in the Messiah will rise (1Th 4:16); at the last trumpet the dead will be raised incorruptible (1Co 15:52); the Son of Man will send his angels with a great trumpet to gather his chosen (Mat 24:31). These verses do not use the Hebrew word, and none of them names the day of teruah of the seventh month; they show the shout and the trumpet marking the coming of the Lord, as teruah and shofar mark the day of Yahweh in the prophets.",
+      "evidence": [
+        {
+          "ref": "Jol.2.1"
+        },
+        {
+          "ref": "Zep.1.14",
+          "to": "Zep.1.16"
+        },
+        {
+          "ref": "1Th.4.16"
+        },
+        {
+          "ref": "1Co.15.52"
+        },
+        {
+          "ref": "Mat.24.31"
+        }
+      ]
+    }
+  ],
+  "note": "Words left out, as belonging to other roots: רֵעַ “friend, neighbour” (BDB t.dl.ab, root רעה “associate with”; its tokens 2Sa 13:3, Jer 9:3, Hos 3:1, 1Ch 27:33 are also listed under t.bo.ab, so that key's 7 tokens include 4 of “friend”: the true “shout” uses are Exo 32:17, Mic 4:9, Job 36:33); רַע, רָעָה, רֹעַ “bad, evil” and the verb רָעַע “be evil” and “break” (root רעע; Anderson–Moser SEM000381 rʿʿ “bad”; Biblical Aramaic רְעַע “crush”, Dan 2:40); 1Ki 16:25 וַיָּרַע, which the brief files under רוע by spelling but which is “he did evil” (רעע). Isa 8:9 רֹעוּ עַמִּים is filed under רעע “be broken”, and its parallel וָחֹתּוּ “and be shattered” supports that; it could also be read “shout (the war-cry), peoples”; left with רעע, open for review. Psa 2:9 תְּרֹעֵם “you will break them” is רעע (Aramaic רְעַע). Cognates: no Semitic cognate sharing the meaning was confirmed. Arabic رغا (Lane pp. 1114–1115) is entered as possible, with ġ behind ע; Arabic روع “frighten, put in fear; heart, mind” (Lane pp. 1187–1188, with ʿ) was checked and not entered: it shares no use the Hebrew shows. Wiktionary gives no cognate for the root; Anderson–Moser has no rwʿ set; Segert's Ugaritic glossary and Krahmalkov's Phoenician-Punic dictionary have no shout word of this root (searched by English “shout”); Oracc gave only unrelated r- words. Not consulted: DULAT, CAD, Ge'ez (Dillmann, Leslau), Sabaic, Syriac dictionaries (the Peshitta's Old Testament is not in the database; its New Testament has no word of this root among the brief's findings). The New Testament quotes no verse using the root, so the Greek entries carry the Septuagint's renderings only. For review: (1) whether Lev 23:24's teruah is the people's shout or a blast on the shofar or trumpets — the verse does not say; this draft places it under the signal-blast sense because of Num 10:10 and Lev 25:9, and says so in the definition. (2) The doctrine's third item joins the prophets' day of Yahweh to the New Testament's trumpet at the Lord's coming by their shared terms only; it does not identify the day of teruah with that coming, and the user may prefer to drop or narrow it."
+}

@@ -1,0 +1,1643 @@
+{
+  "id": "qara",
+  "root": "קרא",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "speech",
+    "calling",
+    "naming",
+    "proclamation",
+    "reading",
+    "assembly",
+    "worship",
+    "feasts"
+  ],
+  "gloss": "call out; call, summon, name; proclaim; read aloud",
+  "summary": "קָרָא is to call out with the voice: to call to someone and so summon or invite him, to call on Yahweh, to give or speak a name, to proclaim a day or a message, and to read a book aloud in people's hearing. Its noun מִקְרָא is the calling out itself: a summons that gathers the people (the מִקְרָא קֹדֶשׁ, holy convocation, of each appointed time in Leviticus 23), and the reading aloud of the law (Neh 8:8). Akkadian, Ugaritic and Phoenician share call and invoke, Phoenician and Arabic share read; the Aramaic of Daniel and Ezra and the Peshitta use the same verb for calling, naming and reading. The same spelling also serves a verb of meeting and befalling (לִקְרַאת, to meet), which scripture also writes קרה; its link to calling is not established.",
+  "words": [
+    {
+      "lemma": "קָרָא",
+      "pos": "verb",
+      "gloss": "call out; call, summon, invite; name; proclaim; read aloud",
+      "bdb": [
+        "s.cy.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "call; call on; name; proclaim; read",
+          "senses": [
+            {
+              "id": "call-aloud",
+              "gloss": "call out, cry aloud",
+              "definition": "Raise the voice to be heard: cry out, loudly and openly.",
+              "evidence": [
+                {
+                  "ref": "Isa.58.1",
+                  "role": "defining",
+                  "note": "“Call with the throat, do not hold back; lift up your voice like the shofar.”"
+                },
+                {
+                  "ref": "1Ki.18.27",
+                  "role": "defining",
+                  "note": "Elijah tells the prophets of Baal to call with a loud voice."
+                },
+                {
+                  "ref": "Gen.39.14",
+                  "note": "“I called with a loud voice.”"
+                },
+                {
+                  "ref": "Isa.40.3",
+                  "note": "A voice calling in the wilderness; taken up of John in Mat 3:3, Mrk 1:3, Luk 3:4 and Jhn 1:23."
+                },
+                {
+                  "ref": "Isa.40.6",
+                  "note": "“A voice says, Call! And I said, What shall I call?”"
+                },
+                {
+                  "ref": "Pro.1.21"
+                }
+              ],
+              "cognate_ids": [
+                "akk-qeru",
+                "uga-qra",
+                "phn-qra"
+              ]
+            },
+            {
+              "id": "summon",
+              "gloss": "call to, summon",
+              "definition": "Call someone so that he comes; send for him.",
+              "evidence": [
+                {
+                  "ref": "1Sa.3.4",
+                  "role": "defining",
+                  "note": "Yahweh calls Samuel, and he runs to Eli: “Here I am, for you called me” (1Sa 3:5)."
+                },
+                {
+                  "ref": "Exo.2.7",
+                  "role": "defining",
+                  "note": "“Shall I go and call you a nurse?”"
+                },
+                {
+                  "ref": "Gen.41.14",
+                  "note": "Pharaoh sent and called Joseph."
+                },
+                {
+                  "ref": "2Ki.4.12"
+                },
+                {
+                  "ref": "Isa.42.6",
+                  "note": "Yahweh: “I have called you in righteousness.”"
+                },
+                {
+                  "ref": "Hos.11.1",
+                  "note": "“Out of Egypt I called my son”, taken up in Mat 2:15."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qeru",
+                "uga-qra",
+                "phn-qra"
+              ]
+            },
+            {
+              "id": "invite",
+              "gloss": "invite, call to a meal or sacrifice",
+              "definition": "Call guests to a meal or a sacrifice; the passive participle קְרוּאִים is “those invited”.",
+              "evidence": [
+                {
+                  "ref": "1Sa.9.13",
+                  "role": "defining",
+                  "note": "The people will not eat until the seer blesses the sacrifice; then “the invited” (הַקְּרֻאִים) eat."
+                },
+                {
+                  "ref": "1Sa.16.5",
+                  "role": "defining",
+                  "note": "Samuel calls Jesse and his sons to the sacrifice."
+                },
+                {
+                  "ref": "1Ki.1.9",
+                  "note": "Adonijah invites the king's sons to his sacrifice."
+                },
+                {
+                  "ref": "Job.1.4",
+                  "note": "Job's sons invite their sisters to eat and drink with them."
+                },
+                {
+                  "ref": "Zep.1.7",
+                  "note": "Yahweh has prepared a sacrifice and consecrated his invited ones."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qeru"
+              ]
+            },
+            {
+              "id": "call-on",
+              "gloss": "call on, call to (God)",
+              "definition": "Cry to God for help or in worship, and especially קָרָא בְּשֵׁם יְהוָה, call on the name of Yahweh. The one who calls looks for an answer.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.26",
+                  "role": "defining",
+                  "note": "“Then it was begun to call on the name of Yahweh.”"
+                },
+                {
+                  "ref": "1Ki.18.24",
+                  "role": "defining",
+                  "note": "“You call on the name of your god, and I will call on the name of Yahweh, and the God who answers by fire, he is God.”"
+                },
+                {
+                  "ref": "Psa.145.18",
+                  "role": "defining",
+                  "note": "“Yahweh is near to all who call on him, to all who call on him in truth.”"
+                },
+                {
+                  "ref": "Jer.33.3",
+                  "note": "“Call to me and I will answer you.”"
+                },
+                {
+                  "ref": "Gen.12.8",
+                  "note": "Abram builds an altar and calls on the name of Yahweh."
+                },
+                {
+                  "ref": "Jol.3.5",
+                  "note": "“Everyone who calls on the name of Yahweh will be saved”; quoted in Act 2:21 and Rom 10:13."
+                },
+                {
+                  "ref": "Zep.3.9"
+                }
+              ],
+              "cognate_ids": [
+                "akk-qeru",
+                "uga-qra",
+                "phn-qra"
+              ]
+            },
+            {
+              "id": "name",
+              "gloss": "call, name",
+              "definition": "Speak the name of something or someone, and so give or fix its name: קָרָא שֵׁם, call the name.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.5",
+                  "role": "defining",
+                  "note": "God called the light Day and the darkness he called Night."
+                },
+                {
+                  "ref": "Gen.2.19",
+                  "role": "defining",
+                  "note": "Whatever the man called each living creature, that was its name."
+                },
+                {
+                  "ref": "Gen.4.25"
+                },
+                {
+                  "ref": "Isa.7.14",
+                  "note": "“She will call his name Immanuel”; quoted in Mat 1:23."
+                }
+              ]
+            },
+            {
+              "id": "proclaim",
+              "gloss": "proclaim, call out publicly; convoke",
+              "definition": "Call out a message, a day or a decree so that all hear it, and so set it in force: proclaim a feast, a fast, liberty, or an assembly of the people.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.2",
+                  "role": "defining",
+                  "note": "“The appointed times of Yahweh, which you shall proclaim as holy convocations (מִקְרָאֵי קֹדֶשׁ).”"
+                },
+                {
+                  "ref": "Lev.23.4"
+                },
+                {
+                  "ref": "Lev.23.21",
+                  "role": "defining",
+                  "note": "“You shall proclaim on this same day: it shall be a holy convocation for you.”"
+                },
+                {
+                  "ref": "Lev.23.37"
+                },
+                {
+                  "ref": "Jol.1.14",
+                  "role": "defining",
+                  "note": "“Consecrate a fast, call a solemn assembly (קִרְאוּ עֲצָרָה), gather the elders.”"
+                },
+                {
+                  "ref": "Lev.25.10",
+                  "note": "Proclaim liberty in the land in the fiftieth year."
+                },
+                {
+                  "ref": "Exo.32.5",
+                  "note": "Aaron proclaimed, “Tomorrow is a feast to Yahweh.”"
+                },
+                {
+                  "ref": "Exo.34.5",
+                  "note": "Yahweh proclaimed the name of Yahweh."
+                },
+                {
+                  "ref": "Jon.3.4",
+                  "note": "Jonah called out, “Yet forty days, and Nineveh will be overthrown.”"
+                },
+                {
+                  "ref": "Isa.61.1",
+                  "note": "Sent to proclaim liberty to captives (Isa 61:1–2); read by Jesus in Luk 4:17–21."
+                },
+                {
+                  "ref": "Jer.34.8"
+                }
+              ],
+              "cognate_ids": [
+                "phn-qra"
+              ]
+            },
+            {
+              "id": "read-aloud",
+              "gloss": "read, read aloud",
+              "definition": "Read what is written, calling the words out in people's hearing (בְּאָזְנֵי, in the ears of); one who does not know letters cannot do it.",
+              "evidence": [
+                {
+                  "ref": "Deu.31.11",
+                  "role": "defining",
+                  "note": "At Sukkot in the seventh year, “you shall read this law before all Israel in their ears.”"
+                },
+                {
+                  "ref": "Neh.8.3",
+                  "role": "defining",
+                  "note": "Ezra reads from the book before the men and women, and the ears of all the people are toward it."
+                },
+                {
+                  "ref": "Isa.29.12",
+                  "role": "defining",
+                  "note": "“Read this”, and he says, “I do not know letters.”"
+                },
+                {
+                  "ref": "Exo.24.7",
+                  "note": "Moses read the book of the covenant in the ears of the people."
+                },
+                {
+                  "ref": "Neh.8.8"
+                },
+                {
+                  "ref": "Neh.8.18",
+                  "note": "Day by day through the feast he read in the book of the law of God."
+                },
+                {
+                  "ref": "Jer.36.6"
+                },
+                {
+                  "ref": "2Ki.22.10"
+                },
+                {
+                  "ref": "Hab.2.2",
+                  "note": "Write the vision plainly, so that the one reading it may run."
+                }
+              ],
+              "cognate_ids": [
+                "ar-qaraa",
+                "phn-qra"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be called, be named; be summoned; be read",
+          "senses": [
+            {
+              "gloss": "be called, be named",
+              "definition": "Have a name given or spoken.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.23",
+                  "role": "defining",
+                  "note": "“She shall be called Woman.”"
+                },
+                {
+                  "ref": "Gen.17.5",
+                  "role": "defining",
+                  "note": "“Your name shall no longer be called Abram.”"
+                },
+                {
+                  "ref": "Isa.56.7",
+                  "note": "“My house shall be called a house of prayer for all peoples”; quoted in Mrk 11:17."
+                },
+                {
+                  "ref": "Isa.54.5"
+                }
+              ]
+            },
+            {
+              "id": "name-called-over",
+              "gloss": "have a name called over: belong to",
+              "definition": "With שֵׁם … עַל, “a name is called over” a city, house or people: it belongs to the one whose name it bears.",
+              "evidence": [
+                {
+                  "ref": "2Sa.12.28",
+                  "role": "defining",
+                  "note": "Joab: take the city yourself, lest I take it and my name be called over it."
+                },
+                {
+                  "ref": "Deu.28.10",
+                  "role": "defining",
+                  "note": "The peoples will see that the name of Yahweh is called over you, and will fear you."
+                },
+                {
+                  "ref": "Jer.7.10",
+                  "note": "The house over which my name is called."
+                },
+                {
+                  "ref": "Jer.15.16",
+                  "note": "“Your name is called over me, Yahweh God of hosts.”"
+                },
+                {
+                  "ref": "Amo.9.12",
+                  "note": "All the nations over whom my name is called; quoted in Act 15:17."
+                }
+              ]
+            },
+            {
+              "gloss": "be summoned",
+              "definition": "Be called to come before someone.",
+              "evidence": [
+                {
+                  "ref": "Est.4.11",
+                  "role": "defining",
+                  "note": "Whoever comes to the king who is not called is put to death; Esther has not been called these thirty days."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qeru",
+                "uga-qra",
+                "phn-qra"
+              ]
+            },
+            {
+              "gloss": "be read out",
+              "definition": "Be read aloud in someone's hearing.",
+              "evidence": [
+                {
+                  "ref": "Neh.13.1",
+                  "role": "defining",
+                  "note": "It was read in the book of Moses in the ears of the people."
+                },
+                {
+                  "ref": "Est.6.1",
+                  "note": "The book of records was read before the king."
+                }
+              ],
+              "cognate_ids": [
+                "ar-qaraa",
+                "phn-qra"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be called, be named",
+          "senses": [
+            {
+              "gloss": "be called, be named",
+              "definition": "Be named; the participle is “one called”.",
+              "evidence": [
+                {
+                  "ref": "Isa.48.12",
+                  "role": "defining",
+                  "note": "“Listen to me, Jacob, and Israel my called one.”"
+                },
+                {
+                  "ref": "Isa.62.2",
+                  "role": "defining",
+                  "note": "You will be called by a new name which the mouth of Yahweh will designate."
+                },
+                {
+                  "ref": "Isa.61.3",
+                  "note": "They will be called oaks of righteousness."
+                },
+                {
+                  "ref": "Isa.65.1",
+                  "note": "A nation not called by my name."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καλέω",
+          "gloss": "call, name, invite",
+          "evidence": [
+            {
+              "ref": "Mat.1.23",
+              "note": "“They will call his name Immanuel” takes up Isa 7:14."
+            },
+            {
+              "ref": "Mat.2.15",
+              "note": "“Out of Egypt I called my son” takes up Hos 11:1."
+            },
+            {
+              "ref": "Mrk.11.17",
+              "note": "“My house shall be called a house of prayer” takes up the niphal of Isa 56:7."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 43:1 word 13",
+              "note": "ἐκάλεσα for קָרָאתִי, “I have called you by your name”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐπικαλέομαι",
+          "gloss": "call upon",
+          "evidence": [
+            {
+              "ref": "Act.2.21",
+              "note": "Takes up Jol 3:5, “everyone who calls on the name of the Lord”."
+            },
+            {
+              "ref": "Rom.10.13",
+              "note": "The same verse of Joel."
+            },
+            {
+              "ref": "Act.15.17",
+              "note": "“Upon whom my name has been called” takes up the niphal of Amo 9:12."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "JOL 3:5 word 4",
+              "note": "ἐπικαλέσηται for יִקְרָא."
+            }
+          ]
+        },
+        {
+          "lemma": "βοάω",
+          "gloss": "cry out",
+          "evidence": [
+            {
+              "ref": "Mat.3.3",
+              "note": "“The voice of one crying in the wilderness” takes up Isa 40:3."
+            },
+            {
+              "ref": "Jhn.1.23",
+              "note": "John applies Isa 40:3 to himself."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 40:3 word 2",
+              "note": "βοῶντος for קוֹרֵא."
+            }
+          ]
+        },
+        {
+          "lemma": "κηρύσσω",
+          "gloss": "proclaim as a herald",
+          "evidence": [
+            {
+              "ref": "Luk.4.18",
+              "note": "“To proclaim release to captives” takes up Isa 61:1."
+            },
+            {
+              "ref": "Luk.4.19",
+              "note": "“To proclaim the acceptable year of the Lord” takes up Isa 61:2."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 61:1 word 15",
+              "note": "κηρύξαι for לִקְרֹא."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀναγινώσκω",
+          "gloss": "read",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 31:11 word 12",
+              "note": "ἀναγνώσεσθε for תִּקְרָא, read the law before all Israel."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NEH 8:8 word 1",
+              "note": "ἀνέγνωσαν for וַיִּקְרְאוּ."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עָנָה",
+            "note": "answer: calling looks for an answer, and Yahweh promises one.",
+            "evidence": [
+              {
+                "ref": "Jer.33.3"
+              },
+              {
+                "ref": "Isa.65.24"
+              },
+              {
+                "ref": "1Ki.18.24"
+              }
+            ]
+          },
+          {
+            "lemma": "הֵרִים קוֹל",
+            "note": "lift up the voice.",
+            "evidence": [
+              {
+                "ref": "Isa.58.1"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "קָרָא בְּשֵׁם יְהוָה",
+            "gloss": "call on the name of Yahweh; also, of Yahweh, proclaim his own name",
+            "evidence": [
+              {
+                "ref": "Gen.4.26"
+              },
+              {
+                "ref": "Gen.12.8"
+              },
+              {
+                "ref": "1Ki.18.24"
+              },
+              {
+                "ref": "Exo.34.5"
+              }
+            ]
+          },
+          {
+            "phrase": "קָרָא שֵׁם",
+            "gloss": "call the name: give a name",
+            "evidence": [
+              {
+                "ref": "Gen.4.25"
+              },
+              {
+                "ref": "Isa.7.14"
+              }
+            ]
+          },
+          {
+            "phrase": "נִקְרָא שֵׁם עַל",
+            "gloss": "a name is called over: belongs to its bearer",
+            "evidence": [
+              {
+                "ref": "2Sa.12.28"
+              },
+              {
+                "ref": "Deu.28.10"
+              },
+              {
+                "ref": "Amo.9.12"
+              }
+            ]
+          },
+          {
+            "phrase": "קָרָא דְּרוֹר",
+            "gloss": "proclaim liberty",
+            "evidence": [
+              {
+                "ref": "Lev.25.10"
+              },
+              {
+                "ref": "Isa.61.1"
+              },
+              {
+                "ref": "Jer.34.8"
+              }
+            ]
+          },
+          {
+            "phrase": "קָרָא בְּאָזְנֵי",
+            "gloss": "read in the ears of: read aloud to",
+            "evidence": [
+              {
+                "ref": "Exo.24.7"
+              },
+              {
+                "ref": "Deu.31.11"
+              },
+              {
+                "ref": "Jer.36.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מִקְרָא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "calling together, convocation; reading aloud",
+      "summary": "The act of calling out, made a noun: the summons that gathers the people, and the reading that calls out the words of a book. Leviticus 23 calls the sabbath and the chief days of the appointed times each a מִקְרָא קֹדֶשׁ, a holy calling-together, which Israel is to proclaim (קָרָא) and on which no work is done.",
+      "bdb": [
+        "s.cy.af"
+      ],
+      "senses": [
+        {
+          "id": "convocation",
+          "gloss": "calling together, convocation",
+          "definition": "A calling of the people together: a summoned assembly. A מִקְרָא קֹדֶשׁ, holy convocation, is an assembly called on a holy day, on which no work of labour is done.",
+          "evidence": [
+            {
+              "ref": "Num.10.2",
+              "role": "defining",
+              "note": "The silver trumpets are “for the calling of the congregation (לְמִקְרָא הָעֵדָה)”: when both are blown, all the congregation gathers at the tent of meeting (Num 10:3)."
+            },
+            {
+              "ref": "Lev.23.2",
+              "role": "defining",
+              "note": "The appointed times of Yahweh, which Israel proclaims as holy convocations: the noun answers to the verb."
+            },
+            {
+              "ref": "Isa.1.13",
+              "role": "defining",
+              "note": "“New moon and sabbath, the calling of a convocation (קְרֹא מִקְרָא): I cannot bear iniquity with the solemn assembly (עֲצָרָה).”"
+            },
+            {
+              "ref": "Lev.23.3",
+              "note": "The sabbath."
+            },
+            {
+              "ref": "Lev.23.7",
+              "note": "The first day of Unleavened Bread (and its seventh day, Lev 23:8)."
+            },
+            {
+              "ref": "Lev.23.21",
+              "note": "The day of Weeks."
+            },
+            {
+              "ref": "Lev.23.24",
+              "note": "The first day of the seventh month, a remembrance of teruah."
+            },
+            {
+              "ref": "Lev.23.27",
+              "note": "The Day of Atonement."
+            },
+            {
+              "ref": "Lev.23.35",
+              "note": "The first and the eighth day of Sukkot (Lev 23:36)."
+            },
+            {
+              "ref": "Lev.23.37"
+            },
+            {
+              "ref": "Exo.12.16"
+            },
+            {
+              "ref": "Num.29.1"
+            },
+            {
+              "ref": "Isa.4.5",
+              "note": "Yahweh's cloud and fire over Mount Zion and over her convocations."
+            }
+          ],
+          "cognate_ids": [
+            "akk-qeru",
+            "uga-qra",
+            "phn-qra"
+          ],
+          "kin": [
+            "proclaim",
+            "summon"
+          ]
+        },
+        {
+          "id": "reading",
+          "gloss": "reading aloud",
+          "definition": "The reading of a book aloud to hearers.",
+          "evidence": [
+            {
+              "ref": "Neh.8.8",
+              "role": "defining",
+              "note": "“They read in the book, in the law of God, distinctly, and gave the sense, and they understood the reading (בַּמִּקְרָא).”"
+            }
+          ],
+          "cognate_ids": [
+            "ar-qaraa",
+            "phn-qra"
+          ],
+          "kin": [
+            "read-aloud"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κλητός",
+          "gloss": "called",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:2 word 12",
+              "note": "κλητὰς ἁγίας, “called holy (days)”, for מִקְרָאֵי קֹדֶשׁ; so through Lev 23."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνάγνωσις",
+          "gloss": "reading",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "NEH 8:8 word 9",
+              "note": "ἀναγνώσει for בַּמִּקְרָא."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עֲצָרָה",
+            "note": "solemn assembly, set beside the convocation.",
+            "evidence": [
+              {
+                "ref": "Isa.1.13"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִקְרָא קֹדֶשׁ",
+            "gloss": "holy convocation: the day of an appointed time on which the people are called together and do no work",
+            "evidence": [
+              {
+                "ref": "Lev.23.2"
+              },
+              {
+                "ref": "Lev.23.36"
+              },
+              {
+                "ref": "Exo.12.16"
+              },
+              {
+                "ref": "Num.28.18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָרִיא",
+      "pos": "adjective",
+      "gloss": "called, summoned",
+      "summary": "Those called (to the council): leaders of the congregation, the same men Num 1:16 calls קְרוּאֵי הָעֵדָה with the verb's passive participle.",
+      "bdb": [
+        "s.cy.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "called, summoned (to the assembly)",
+          "definition": "Called to the assembly: men summoned as its leaders.",
+          "evidence": [
+            {
+              "ref": "Num.16.2",
+              "role": "defining",
+              "note": "250 leaders of the congregation, “called ones of the meeting (קְרִאֵי מוֹעֵד), men of name”."
+            },
+            {
+              "ref": "Num.26.9",
+              "note": "Dathan and Abiram, “called ones of the congregation”."
+            },
+            {
+              "ref": "Num.1.16",
+              "note": "The same title with the passive participle, קְרוּאֵי הָעֵדָה."
+            }
+          ],
+          "cognate_ids": [
+            "akk-qeru",
+            "uga-qra",
+            "phn-qra"
+          ],
+          "kin": [
+            "summon"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְרִיאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "proclamation",
+      "summary": "Once only: the message a prophet is sent to call out.",
+      "bdb": [
+        "s.cy.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "proclamation, message called out",
+          "definition": "What is called out publicly: the message given to proclaim.",
+          "evidence": [
+            {
+              "ref": "Jon.3.2",
+              "role": "defining",
+              "note": "“Call out to it the proclamation that I tell you.”"
+            }
+          ],
+          "cognate_ids": [
+            "phn-qra"
+          ],
+          "kin": [
+            "proclaim"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֹרֵא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "partridge",
+      "summary": "A bird hunted in the hills; the form is the verb's participle, “caller”, but scripture says nothing of its call, so its link to the root's sense is not established. It rests on two verses and no cognate.",
+      "bdb": [
+        "s.cy.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "partridge",
+          "definition": "A wild bird of the mountains, hunted, and said to sit on eggs it did not lay.",
+          "evidence": [
+            {
+              "ref": "1Sa.26.20",
+              "role": "defining",
+              "note": "David: the king has come out as one hunts the partridge in the mountains."
+            },
+            {
+              "ref": "Jer.17.11",
+              "role": "defining",
+              "note": "Like a partridge that gathers what it did not lay is one who gets riches unjustly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָרָא",
+      "pos": "verb",
+      "gloss": "meet, encounter; befall",
+      "summary": "A verb of meeting: to come upon someone, in friendship or in battle, or of trouble, to befall. Its infinitive with לְ, לִקְרַאת, is “to meet, toward”. Scripture writes the same verb also with ה (קָרָה): the same idiom “lest harm befall him” is spelled with א at Gen 42:4 and with ה at Gen 44:29, “the God of the Hebrews has met with us” with ה at Exo 3:18 and with א at Exo 5:3, and 2Sa 1:6 has both in one phrase. Ugaritic keeps qry “meet” apart from qrʾ “call”. So the evidence points to a third-weak root קרה written here with א; its link to calling is not established.",
+      "bdb": [
+        "s.cz.aa"
+      ],
+      "cognate_ids": [
+        "uga-qry"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "meet; befall; (לִקְרַאת) to meet, toward",
+          "senses": [
+            {
+              "gloss": "befall, come upon",
+              "definition": "Of harm or events: happen to someone, come upon him.",
+              "evidence": [
+                {
+                  "ref": "Gen.42.4",
+                  "role": "defining",
+                  "note": "“Lest harm befall him (יִקְרָאֶנּוּ אָסוֹן)”; the same words with קָרָה at Gen 44:29."
+                },
+                {
+                  "ref": "Gen.49.1",
+                  "role": "defining",
+                  "note": "“That I may tell you what will befall you in the last days.”"
+                },
+                {
+                  "ref": "Deu.31.29",
+                  "note": "Evil will befall you in the latter days."
+                },
+                {
+                  "ref": "Lev.10.19",
+                  "note": "“Such things have befallen me.”"
+                },
+                {
+                  "ref": "Isa.51.19"
+                },
+                {
+                  "ref": "Job.4.14",
+                  "note": "Dread came upon me."
+                }
+              ]
+            },
+            {
+              "gloss": "go to meet; against",
+              "definition": "In the infinitive לִקְרַאת: go out to meet someone, in welcome or in battle; toward, opposite.",
+              "evidence": [
+                {
+                  "ref": "Gen.18.2",
+                  "role": "defining",
+                  "note": "Abraham runs from the tent door to meet the three men."
+                },
+                {
+                  "ref": "Exo.19.17",
+                  "role": "defining",
+                  "note": "Moses brings the people out of the camp to meet God, at the foot of the mountain."
+                },
+                {
+                  "ref": "1Sa.17.21",
+                  "role": "defining",
+                  "note": "Battle line against battle line."
+                },
+                {
+                  "ref": "Amo.4.12",
+                  "note": "“Prepare to meet your God, Israel.”"
+                },
+                {
+                  "ref": "Gen.14.17"
+                },
+                {
+                  "ref": "Jdg.11.34",
+                  "note": "His daughter comes out to meet him with tambourines."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "happen to meet, chance to be",
+          "senses": [
+            {
+              "gloss": "happen to meet; chance to be present",
+              "definition": "Meet unexpectedly, or happen to be in a place.",
+              "evidence": [
+                {
+                  "ref": "2Sa.1.6",
+                  "role": "defining",
+                  "note": "“I happened by chance (נִקְרֹא נִקְרֵיתִי) to be on Mount Gilboa”: א and ה in one phrase."
+                },
+                {
+                  "ref": "Exo.5.3",
+                  "role": "defining",
+                  "note": "“The God of the Hebrews has met with us (נִקְרָא)”; Exo 3:18 has נִקְרָה."
+                },
+                {
+                  "ref": "2Sa.18.9",
+                  "note": "Absalom happened to meet David's servants."
+                },
+                {
+                  "ref": "Deu.22.6",
+                  "note": "If a bird's nest happens to be before you on the way."
+                },
+                {
+                  "ref": "2Sa.20.1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring upon",
+          "senses": [
+            {
+              "gloss": "cause to befall",
+              "definition": "Make something come upon someone.",
+              "evidence": [
+                {
+                  "ref": "Jer.32.23",
+                  "role": "defining",
+                  "note": "“You have made all this evil befall them.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "συνάντησις",
+          "gloss": "meeting",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 19:17 word 5",
+              "note": "εἰς συνάντησιν τοῦ θεοῦ for לִקְרַאת הָאֱלֹהִים."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "לִקְרַאת",
+            "gloss": "to meet; toward; against",
+            "evidence": [
+              {
+                "ref": "Gen.18.2"
+              },
+              {
+                "ref": "Exo.19.17"
+              },
+              {
+                "ref": "Amo.4.12"
+              },
+              {
+                "ref": "1Sa.17.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קְרָא",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "call out; read; (hithpeel) be called",
+      "summary": "Biblical Aramaic, in Daniel and Ezra: a herald calls out, the wise men are asked to read the writing on the wall, a letter is read aloud before the king, and Daniel is called in.",
+      "bdb": [
+        "xs.aj.aa"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "call out; read",
+          "senses": [
+            {
+              "gloss": "call out, proclaim",
+              "definition": "Call out aloud, as a herald.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.4",
+                  "role": "defining",
+                  "note": "The herald calls out in strength: “To you it is commanded, peoples…”"
+                },
+                {
+                  "ref": "Dan.4.11"
+                },
+                {
+                  "ref": "Dan.5.7",
+                  "note": "The king calls out in strength to bring in the enchanters."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qeru",
+                "uga-qra",
+                "phn-qra"
+              ],
+              "kin": [
+                "call-aloud",
+                "proclaim"
+              ]
+            },
+            {
+              "gloss": "read",
+              "definition": "Read a writing, and make it known.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.8",
+                  "role": "defining",
+                  "note": "The wise men could not read the writing or make known its interpretation."
+                },
+                {
+                  "ref": "Dan.5.17",
+                  "note": "“I will read the writing to the king.”"
+                },
+                {
+                  "ref": "Dan.5.15"
+                }
+              ],
+              "cognate_ids": [
+                "ar-qaraa",
+                "phn-qra"
+              ],
+              "kin": [
+                "read-aloud"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "peil",
+          "gloss": "be read aloud",
+          "senses": [
+            {
+              "gloss": "be read aloud",
+              "definition": "Be read out before someone.",
+              "evidence": [
+                {
+                  "ref": "Ezr.4.18",
+                  "role": "defining",
+                  "note": "“The letter you sent us has been read distinctly before me.”"
+                },
+                {
+                  "ref": "Ezr.4.23"
+                }
+              ],
+              "cognate_ids": [
+                "ar-qaraa",
+                "phn-qra"
+              ],
+              "kin": [
+                "read-aloud"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpeel",
+          "gloss": "be called, be summoned",
+          "senses": [
+            {
+              "gloss": "be summoned",
+              "definition": "Be called in.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.12",
+                  "role": "defining",
+                  "note": "“Now let Daniel be called, and he will show the interpretation.”"
+                }
+              ],
+              "cognate_ids": [
+                "akk-qeru",
+                "uga-qra",
+                "phn-qra"
+              ],
+              "kin": [
+                "summon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְרָא",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "call, call on, name; read",
+      "summary": "The Peshitta's ܩܪܐ (qrā). Its New Testament keeps the Hebrew uses where it takes up the Old: the voice “calling” in the wilderness, “everyone who calls on the name of the Lord”, “out of Egypt I called my son”, “my name is called over them”; and it is the verb for reading the law and the prophets in the synagogue. In 1Co 15:52 the horn “calls” (תֵּקרֵא) when the dead are raised.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "call; call on; name; read",
+          "senses": [
+            {
+              "gloss": "call out; call, summon",
+              "definition": "Call aloud; call someone, so that he comes.",
+              "evidence": [
+                {
+                  "ref": "Mat.3.3",
+                  "role": "defining",
+                  "note": "Peshitta: “the voice of one calling (דּקָרֵא) in the wilderness”, for Isa 40:3."
+                },
+                {
+                  "ref": "Mat.2.15",
+                  "note": "Peshitta: “out of Egypt I called (קרִית) my son”, for Hos 11:1."
+                },
+                {
+                  "ref": "Jhn.10.3",
+                  "note": "Peshitta: he calls (קָרֵא) his own sheep by their names."
+                },
+                {
+                  "ref": "Rom.8.30",
+                  "note": "Peshitta: those he marked out beforehand he called (קרָא)."
+                },
+                {
+                  "ref": "Mat.22.3",
+                  "note": "Peshitta: to call those invited to the wedding feast."
+                },
+                {
+                  "ref": "1Co.15.52",
+                  "note": "Peshitta: “at the last horn, when it calls (תֵּקרֵא), the dead will rise”: the horn's sounding is a calling."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qeru",
+                "uga-qra",
+                "phn-qra"
+              ],
+              "kin": [
+                "call-aloud",
+                "summon",
+                "invite"
+              ]
+            },
+            {
+              "gloss": "call on (the name of the Lord)",
+              "definition": "Call on God by name.",
+              "evidence": [
+                {
+                  "ref": "Rom.10.13",
+                  "role": "defining",
+                  "note": "Peshitta: “everyone who calls (דּנֵקרֵא) on the name of the Lord will live”, for Jol 3:5."
+                },
+                {
+                  "ref": "Act.2.21",
+                  "note": "Peshitta: the same verse of Joel."
+                },
+                {
+                  "ref": "Rom.10.14",
+                  "note": "Peshitta: “how will they call (נֵקרֻון) on him in whom they have not believed?”"
+                },
+                {
+                  "ref": "1Co.1.2",
+                  "note": "Peshitta: all who call on the name of our Lord Jesus the Messiah."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qeru",
+                "uga-qra",
+                "phn-qra"
+              ],
+              "kin": [
+                "call-on"
+              ]
+            },
+            {
+              "gloss": "call, name",
+              "definition": "Give a name.",
+              "evidence": [
+                {
+                  "ref": "Mat.1.21",
+                  "role": "defining",
+                  "note": "Peshitta: “you shall call (ותֵקרֵא) his name Jesus”."
+                },
+                {
+                  "ref": "Mat.1.23",
+                  "note": "Peshitta: “they will call his name Immanuel”, for Isa 7:14."
+                }
+              ],
+              "kin": [
+                "name"
+              ]
+            },
+            {
+              "gloss": "read",
+              "definition": "Read a book aloud, as the law and the prophets in the synagogue.",
+              "evidence": [
+                {
+                  "ref": "Luk.4.16",
+                  "role": "defining",
+                  "note": "Peshitta: on the sabbath Jesus stood up to read (למֵקרָא), and was given the book of Isaiah."
+                },
+                {
+                  "ref": "Act.15.21",
+                  "note": "Peshitta: Moses is read (קָרֵין) in the synagogues every sabbath."
+                },
+                {
+                  "ref": "Rev.1.3",
+                  "note": "Peshitta: blessed is he who reads (דּקָרֵא) and those who hear."
+                }
+              ],
+              "cognate_ids": [
+                "ar-qaraa",
+                "phn-qra"
+              ],
+              "kin": [
+                "read-aloud"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be called; be read",
+          "senses": [
+            {
+              "gloss": "be called; have a name called over",
+              "definition": "Be named; with עַל, have a name called over one.",
+              "evidence": [
+                {
+                  "ref": "Act.15.17",
+                  "role": "defining",
+                  "note": "Peshitta: the nations over whom my name is called (דֵּאתקרִי), for Amo 9:12."
+                },
+                {
+                  "ref": "Mat.21.13",
+                  "note": "Peshitta: my house shall be called (נֵתקרֵא) a house of prayer, for Isa 56:7."
+                }
+              ],
+              "kin": [
+                "name-called-over"
+              ]
+            },
+            {
+              "gloss": "be read",
+              "definition": "Be read aloud.",
+              "evidence": [
+                {
+                  "ref": "Act.13.15",
+                  "role": "defining",
+                  "note": "Peshitta: after the law and the prophets were read (דֵּאתקרִי)."
+                },
+                {
+                  "ref": "Act.13.27",
+                  "note": "Peshitta: the writings of the prophets that are read every sabbath."
+                },
+                {
+                  "ref": "2Co.3.14"
+                }
+              ],
+              "cognate_ids": [
+                "ar-qaraa",
+                "phn-qra"
+              ],
+              "kin": [
+                "read-aloud"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַרְיָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "called",
+      "summary": "The Peshitta's ܩܪܝܐ (qaryā), “called”: of an apostle, of believers, and of the many called to the feast.",
+      "senses": [
+        {
+          "gloss": "called",
+          "definition": "Called, summoned by God.",
+          "evidence": [
+            {
+              "ref": "Rom.1.1",
+              "role": "defining",
+              "note": "Peshitta: Paul, a servant of Jesus the Messiah, called (קַריָא) and sent."
+            },
+            {
+              "ref": "Rom.1.7",
+              "note": "Peshitta: to all in Rome, God's beloved, called (קרַיָא) and holy."
+            },
+            {
+              "ref": "1Co.1.2",
+              "note": "Peshitta: to the church of God in Corinth, called and holy."
+            },
+            {
+              "ref": "Mat.22.14",
+              "note": "Peshitta: many are called (קרַיָא), few chosen."
+            }
+          ],
+          "cognate_ids": [
+            "akk-qeru",
+            "uga-qra",
+            "phn-qra"
+          ],
+          "kin": [
+            "summon",
+            "invite"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֶרְיָנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "reading",
+      "summary": "The Peshitta's ܩܪܝܢܐ (qeryānā), “reading”, as the Hebrew מִקְרָא is at Neh 8:8.",
+      "senses": [
+        {
+          "gloss": "reading",
+          "definition": "The reading aloud of scripture.",
+          "evidence": [
+            {
+              "ref": "1Ti.4.13",
+              "role": "defining",
+              "note": "Peshitta: “until I come, attend to the reading (בּקֵריָנָא), the exhortation and the teaching”."
+            }
+          ],
+          "cognate_ids": [
+            "ar-qaraa",
+            "phn-qra"
+          ],
+          "kin": [
+            "reading"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-qeru",
+      "lang": "akk",
+      "form": "qerû",
+      "translit": "qerû",
+      "gloss": "call; invite",
+      "relation": "cognate",
+      "note": "Oracc glosses the verb “call, invite”, and its adjective qerû “called, invited”; the noun qerītu “banquet” goes with the inviting, as the Hebrew קְרוּאִים are those invited to a sacrifice.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000040280, qerû [call] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000112110, qerû [called] AJ"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000334 qrʾ [call], AKK009577 qerû [call]"
+        }
+      ]
+    },
+    {
+      "id": "uga-qra",
+      "lang": "uga",
+      "form": "𐎖𐎗𐎀",
+      "translit": "qrʾ",
+      "gloss": "call, invoke",
+      "relation": "cognate",
+      "note": "iqra, “I will invoke” (the gods), KTU 1.23:1 and 23.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 200, §93 glossary, /q-r-ʾ/ “to call”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000334 qrʾ [call], UGC003507 qrʾ [call]"
+        }
+      ]
+    },
+    {
+      "id": "phn-qra",
+      "lang": "phn",
+      "form": "𐤒𐤓𐤀",
+      "translit": "qrʾ",
+      "gloss": "read; call, invoke; call to (a god); (noun) crier or lector",
+      "relation": "cognate",
+      "note": "Yehawmilk of Byblos: “I called my Lady Baalat of Byblos and she heard my voice” (KAI 10); Neo-Punic “read the inscription on this stele” (KAI 165); a Punic qrʾ “crier or lector” (CIS i 4883). Phoenician has both the calling and the reading.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 430–431, Q-R-ʾ I (read; call, invoke; call to a god) and QRʾ II (crier or lector)"
+        }
+      ]
+    },
+    {
+      "id": "ar-qaraa",
+      "lang": "ar",
+      "form": "قَرَأَ",
+      "translit": "qaraʾa",
+      "gloss": "read, recite; (said to be primary) collect, put together",
+      "relation": "cognate",
+      "note": "Lane gives “he read, or recited” a book or scripture, aloud or not, and reports the Arab lexicographers' view that the first sense is “collected together”. Arabic does not use it for calling.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2502, root قرأ, قَرَأَ (n35367)"
+        }
+      ]
+    },
+    {
+      "id": "uga-qry",
+      "lang": "uga",
+      "form": "𐎖𐎗𐎊",
+      "translit": "qry",
+      "gloss": "meet; offer",
+      "relation": "cognate",
+      "note": "A third-weak root, kept apart from qrʾ “call” in the same glossary: the cognate of the Hebrew verb of meeting (קָרָה, here written קָרָא), not of calling.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 200, §93 glossary, /q-r-y/ “to meet”; qryy “to offer”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "calling-on-the-name",
+      "statement": "From the days of Enosh people began to call on the name of Yahweh (Gen 4:26). Abram builds an altar wherever he settles and calls on Yahweh's name (Gen 12:8). On Carmel the test is which God answers the one who calls on his name, and Yahweh answers by fire (1Ki 18:24, 38). Yahweh is near to all who call on him in truth (Psa 145:18); he says “call to me and I will answer you” (Jer 33:3), and “before they call I will answer” (Isa 65:24). Joel says that everyone who calls on the name of Yahweh will be saved, and that among the survivors are those whom Yahweh calls (Jol 3:5): the calling goes both ways. Zephaniah looks to the peoples calling on the name of Yahweh, all of them, to serve him (Zep 3:9). Peter quotes Joel at Pentecost (Act 2:21), and Paul quotes it to say there is no distinction between Jew and Greek, for the same Lord is rich to all who call on him (Rom 10:12–13), and asks how they can call on him in whom they have not believed (Rom 10:14). The Peshitta keeps Joel's verb in both places. So those who belong to the Messiah are “all who call on the name of our Lord Jesus the Messiah” (1Co 1:2): the name of Yahweh called on in Joel is the name of Jesus in Paul.",
+      "evidence": [
+        {
+          "ref": "Gen.4.26"
+        },
+        {
+          "ref": "Gen.12.8"
+        },
+        {
+          "ref": "1Ki.18.24"
+        },
+        {
+          "ref": "1Ki.18.38"
+        },
+        {
+          "ref": "Psa.145.18"
+        },
+        {
+          "ref": "Jer.33.3"
+        },
+        {
+          "ref": "Isa.65.24"
+        },
+        {
+          "ref": "Jol.3.5"
+        },
+        {
+          "ref": "Zep.3.9"
+        },
+        {
+          "ref": "Act.2.21"
+        },
+        {
+          "ref": "Rom.10.12",
+          "to": "Rom.10.14"
+        },
+        {
+          "ref": "1Co.1.2"
+        }
+      ]
+    },
+    {
+      "topic": "called-by-name",
+      "statement": "Yahweh calls his people: “I have called you by your name; you are mine” (Isa 43:1); “I, Yahweh, have called you in righteousness” (Isa 42:6); “out of Egypt I called my son” (Hos 11:1), which Matthew reads of Jesus brought back from Egypt (Mat 2:15). To have his name called over a people or a house is to be his: Joab will not take a city lest his own name be called over it (2Sa 12:28), and the peoples will fear Israel when they see that the name of Yahweh is called over them (Deu 28:10). Amos foresees all the nations over whom Yahweh's name is called (Amo 9:12), and James cites it to show that God takes from the nations a people for his name (Act 15:14–17). The shepherd calls his own sheep by name and leads them out (Jhn 10:3), and those God marked out beforehand he also called, and justified, and glorified (Rom 8:30).",
+      "evidence": [
+        {
+          "ref": "Isa.43.1"
+        },
+        {
+          "ref": "Isa.42.6"
+        },
+        {
+          "ref": "Hos.11.1"
+        },
+        {
+          "ref": "Mat.2.15"
+        },
+        {
+          "ref": "2Sa.12.28"
+        },
+        {
+          "ref": "Deu.28.10"
+        },
+        {
+          "ref": "Amo.9.12"
+        },
+        {
+          "ref": "Act.15.14",
+          "to": "Act.15.17"
+        },
+        {
+          "ref": "Jhn.10.3"
+        },
+        {
+          "ref": "Rom.8.30"
+        }
+      ]
+    },
+    {
+      "topic": "proclaimed-times-and-the-read-word",
+      "statement": "Yahweh's appointed times are days Israel is to call out: “the appointed times of Yahweh, which you shall proclaim as holy convocations” (Lev 23:2, 4, 37), each a מִקְרָא קֹדֶשׁ on which the people are called together and do no work (Lev 23:3–36). In the fiftieth year, after the shofar has sounded on the Day of Atonement, Israel proclaims liberty in the land (Lev 25:9–10). The calling is also of the word: at Sukkot in the year of release the law is to be read before all Israel in their hearing, men, women, children and the stranger, so that they hear and learn to fear Yahweh (Deu 31:10–12). After the return, Ezra reads the law to the assembly on the first day of the seventh month, distinctly, giving the sense, so that they understand the reading (Neh 8:2–8), and through the seven days of Sukkot he reads in it day by day (Neh 8:18). Isaiah's anointed one is sent to proclaim liberty to captives and to proclaim the year of Yahweh's favour (Isa 61:1–2). Jesus stands up in the synagogue on the sabbath to read, reads this passage, and says, “Today this scripture is fulfilled in your hearing” (Luk 4:16–21).",
+      "evidence": [
+        {
+          "ref": "Lev.23.2"
+        },
+        {
+          "ref": "Lev.23.4"
+        },
+        {
+          "ref": "Lev.23.37"
+        },
+        {
+          "ref": "Lev.23.3",
+          "to": "Lev.23.36"
+        },
+        {
+          "ref": "Lev.25.9",
+          "to": "Lev.25.10"
+        },
+        {
+          "ref": "Deu.31.10",
+          "to": "Deu.31.12"
+        },
+        {
+          "ref": "Neh.8.2",
+          "to": "Neh.8.8"
+        },
+        {
+          "ref": "Neh.8.18"
+        },
+        {
+          "ref": "Isa.61.1",
+          "to": "Isa.61.2"
+        },
+        {
+          "ref": "Luk.4.16",
+          "to": "Luk.4.21"
+        }
+      ]
+    }
+  ],
+  "note": "Words left out: קוֹרֵא Kore (BDB s.cy.ac), a Levite's name, for a name entry. BDB's s.cy.aa key total (1355) includes 615 tokens of the spelling לִי “to me”, a spelling-index artifact, so its use count is far too high; the participle tokens are also counted under קֹרֵא (s.cy.ab), whose true uses as “partridge” are only 1Sa 26:20 and Jer 17:11. The niphal tokens are listed under both s.cy.aa and s.cz.aa; the sense split here (named / met) follows the verses. The meeting verb (s.cz.aa, with לִקְרַאת, BDB's s.cz.ab קְרַאת has no tokens of its own) is kept in this entry by its spelling, as asked; the evidence (Gen 42:4 ‖ 44:29, Exo 3:18 ‖ 5:3, 2Sa 1:6, and Ugaritic qry “meet” beside qrʾ “call”) points to a third-weak root קרה. OPEN QUESTION for review: move it to a קרה entry (with קָרָה, מִקְרֶה “chance”, קוֹרָה “beam”?), or keep it here? Also for review: (1) the doctrine items are drafted from the verses only; the second takes Matthew's reading of Hos 11:1 and James's of Amo 9:12 as they stand. (2) The LXX renders מִקְרָא קֹדֶשׁ κλητὴ ἁγία, and Paul greets believers as κλητοῖς ἁγίοις (Rom 1:7; 1Co 1:2; Peshitta קרַיָא וקַדִּישֵא, “called and holy”); the New Testament does not quote Lev 23 there, so this is not entered as evidence; worth the user's judgement. (3) Exo 19:16–19 (God descends, the shofar sounds, the people go out לִקְרַאת הָאֱלֹהִים) and 1Th 4:16–17 (the Lord descends, the trumpet, we go to meet him, εἰς ἀπάντησιν; the Peshitta uses ܐܘܪܥܐ, not ܩܪܐ) share their terms; not entered as doctrine. (4) The “name” senses (qal name, niphal/pual be called) name no cognate: none checked shows naming, so lexicon-support counts the root's cognates against them; the partridge likewise has no cognate. Cognates checked: Lane قرأ pp. 2502–2504 (and قرى p. 2988, the Supplement, nothing for meeting); Oracc qerû and qerītu; Segert's glossary p. 200 read from the Archive.org OCR only (no PDF renderer available to check the page image); Krahmalkov pp. 430–431 from the local text; Anderson–Moser SEM000334. Wiktionary was used only as a lead. Not consulted: DULAT, CAD, Dillmann/Leslau (Ge'ez), Sabaic. Lane also reports قَرْءٌ “menstrual period; time”, not entered."
+}
