@@ -11,7 +11,7 @@
     "curse"
   ],
   "gloss": "mighty one, power; these; oath, curse",
-  "summary": "This spelling holds several families, which the cognates keep apart. אֱלֹהִים, אֵל and אֱלוֹהַּ name the mighty one: one who holds power over others. Scripture sets אֵל against man and flesh (“the Egyptians are men and not אֵל, their horses flesh and not spirit”), and the idiom יֵשׁ לְאֵל יָדִי, “it is in the power of my hand”, uses the word for power itself. The title belongs above all to Yahweh, the Mighty One, but scripture also gives it to angels, to judges and to Moses acting for him, and to the gods the nations serve; Ugaritic, Phoenician, Sabaic, Akkadian, Aramaic and Arabic all have the word, ʾil or ʾilāh, for a god. אֵלֶּה points to “these” (Phoenician, Sabaic and Ge'ez ʾl, ʾellu); אָלָה is the curse that sanctions an oath, and the oath sworn under it (Sabaic ʾlh “curse, swear”, Arabic ʾālā “swear”). The entry also keeps the fat tail אַלְיָה and the one-time verb “lament”, each with Aramaic cognates of its own, and the conditional אִלּוּ; no tie between these and the other families is shown.",
+  "summary": "אֱלֹהִים, אֵל and אֱלוֹהַּ name the mighty one: one who holds power over others. Scripture sets אֵל against man and flesh (“the Egyptians are men and not אֵל, their horses flesh and not spirit”), and the idiom יֵשׁ לְאֵל יָדִי, “it is in the power of my hand”, uses the word for power itself. The title belongs above all to Yahweh, the Mighty One, but scripture also gives it to angels, to judges and to Moses acting for him, and to the gods the nations serve; Ugaritic, Phoenician, Sabaic, Akkadian, Aramaic and Arabic all have the word, ʾil or ʾilāh, for a god. אָלָה is the oath sworn under the Mighty One’s curse: Yahweh cuts it with his covenant and calls it his own, it is sworn before his altar, and he carries out the curse on the one who breaks it (Sabaic writes “curse, swear” with the same letters as its god-word). אֵלֶּה points to “these” (Phoenician, Sabaic and Ge'ez ʾl, ʾellu). The entry also keeps the fat tail אַלְיָה and the one-time verb “lament”, each with Aramaic cognates of its own, and the conditional אִלּוּ; no tie between these and the rest is shown.",
   "words": [
     {
       "lemma": "אֱלֹהִים",
@@ -444,7 +444,7 @@
     {
       "lemma": "אָלָה",
       "pos": "noun",
-      "gloss": "oath; curse",
+      "gloss": "oath under God’s curse; curse",
       "bdb": [
         "a.dm.ab"
       ],
@@ -471,6 +471,23 @@
               "ref": "Ezk.17.19",
               "role": "defining",
               "note": "Yahweh: “my אָלָה that he despised and my covenant that he broke”."
+            },
+            {
+              "ref": "Deu.29.11",
+              "role": "defining",
+              "note": "Israel enters בִּבְרִית יַהְוֶה אֱלֹהֶיךָ וּבְאָלָתוֹ, “the covenant of Yahweh your God and his אָלָה”, which Yahweh cuts with them."
+            },
+            {
+              "ref": "Deu.29.13",
+              "note": "“I cut this covenant and this אָלָה”, with those present and those not yet born."
+            },
+            {
+              "ref": "Neh.10.30",
+              "note": "The returned exiles enter בְּאָלָה וּבִשְׁבוּעָה, “into an אָלָה and an oath”, to walk in God’s law."
+            },
+            {
+              "ref": "1Ki.8.31",
+              "note": "The man put under an אָלָה comes “before your altar in this house”, and God hears in heaven and judges."
             }
           ]
         },
@@ -499,6 +516,23 @@
             {
               "ref": "Zec.5.3",
               "note": "The curse goes out over the land against the thief and the false swearer."
+            },
+            {
+              "ref": "Deu.29.19",
+              "role": "defining",
+              "note": "“All the אָלָה written in this book shall lie on him, and Yahweh shall blot out his name”: the curse is Yahweh’s to carry out."
+            },
+            {
+              "ref": "Dan.9.11",
+              "note": "“The אָלָה and the oath written in the law of Moses has been poured out on us, because we sinned against him.”"
+            },
+            {
+              "ref": "Psa.10.7",
+              "note": "The wicked man’s mouth is full of אָלָה, “cursing”, and deceit; Paul quotes it in Rom 3:14."
+            },
+            {
+              "ref": "Rom.3.14",
+              "note": "“Whose mouth is full of cursing (ἀρά) and bitterness”, quoting Psa 10:7 of all who are under sin."
             }
           ]
         }
@@ -508,7 +542,7 @@
         "ar-ala",
         "sab-elah-curse"
       ],
-      "summary": "The curse a person invokes on himself if he breaks his word, and so the oath sworn under it; also a curse pronounced on someone. Sabaic has the same root for “curse, swear” and Arabic for “swear”.",
+      "summary": "The oath by which someone binds himself under the Mighty One’s curse, and the curse itself. Yahweh cuts his covenant “and his אָלָה” with Israel (Deu 29:11); the oath is sworn before his altar and he judges by it (1Ki 8:31); and he carries out the curse on the one who breaks it (Num 5:21; Deu 29:19). Sabaic has one word, written like its god-word, for “curse, swear”, and Arabic has “swear”.",
       "usage": {
         "parallels": [
           {
@@ -544,7 +578,38 @@
             ]
           }
         ]
-      }
+      },
+      "greek": [
+        {
+          "lemma": "ἀρά",
+          "gloss": "curse",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.29.19, Num.5.21, Psa.10.7 (LXX 9:28), אָלָה → ἀρά"
+            },
+            {
+              "ref": "Rom.3.14"
+            }
+          ]
+        },
+        {
+          "lemma": "κατάρα",
+          "gloss": "curse",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.9.11, Job.31.30, אָלָה → κατάρα"
+            },
+            {
+              "ref": "Gal.3.10"
+            },
+            {
+              "ref": "Gal.3.13"
+            }
+          ]
+        }
+      ]
     },
     {
       "lemma": "אָלָה",
@@ -608,6 +673,11 @@
             }
           ]
         }
+      ],
+      "summary": "Swear or put someone under an oath that calls down the Mighty One’s curse on the one who breaks it. Micah’s mother pronounces the curse and then blesses her son “to Yahweh” (Jdg 17:2); the one put under oath stands before Yahweh’s altar (1Ki 8:31).",
+      "cognate_ids": [
+        "ar-ala",
+        "sab-elah-curse"
       ]
     },
     {
@@ -699,7 +769,8 @@
       "cognate_ids": [
         "ar-ala",
         "sab-elah-curse"
-      ]
+      ],
+      "summary": "A curse invoked on enemies, asked of Yahweh: “give them … your תַּאֲלָה”. Formed from the verb אָלָה."
     },
     {
       "lemma": "אָלָה",
@@ -1459,7 +1530,40 @@
           "ref": "1Co.8.6"
         }
       ]
+    },
+    {
+      "topic": "curse-of-the-covenant",
+      "statement": "Yahweh cut his covenant with Israel together with “his אָלָה”, the curse under which they bound themselves (Deu 29:11, 13). Whoever turned away would have “all the אָלָה written in this book” lie on him, and Yahweh would blot out his name (Deu 29:19). Israel broke it, and Daniel confesses that “the אָלָה and the oath written in the law of Moses” had been poured out on them because they sinned (Dan 9:11); the returned exiles bound themselves again under an אָלָה to walk in God’s law (Neh 10:30). Paul says that all who rest on the works of the law are under the curse, as “everyone who does not continue in all things written in the book of the law” (Gal 3:10, quoting Deu 27:26 in the words of Deu 29:19), and that Christ redeemed us from the curse of the law by becoming a curse for us, so that the blessing of Abraham might come to the nations (Gal 3:13–14). The curse Israel swore under is the curse Christ bore.",
+      "evidence": [
+        {
+          "ref": "Deu.29.11"
+        },
+        {
+          "ref": "Deu.29.13"
+        },
+        {
+          "ref": "Deu.29.19"
+        },
+        {
+          "ref": "Dan.9.11"
+        },
+        {
+          "ref": "Neh.10.30"
+        },
+        {
+          "ref": "Deu.27.26"
+        },
+        {
+          "ref": "Gal.3.10"
+        },
+        {
+          "ref": "Gal.3.13"
+        },
+        {
+          "ref": "Gal.3.14"
+        }
+      ]
     }
   ],
-  "note": "The spelling holds words of several older roots, not one semantic origin. Proper names, including the month אֱלוּל, are left for name entries. Terebinth אֵלָה is not filed under this root in the brief (its tree-words go with אַיִל, אֵלוֹן); no claim about its root is made here. Redirects are omitted. The Hebrew short demonstrative (rootless a.dj.aa) and Aramaic אִלֵּין are included as forms of the demonstrative family. The Aramaic short אֵל (xa.an.aa) has no distinct Aramaic occurrence established here. Exo 21:6 and 22:7–8 can be read as appearing before God or before judges; they are not used to make “judges” an unqualified separate sense. Psalm 82’s אֱלֹהִים are read as Jesus reads them (Jhn 10:35), and Psa 8:6’s as Hebrews reads them (Heb 2:7); 1Sa 28:13’s reported vision still needs contextual review.\n\nOpen questions (2026-11-09): (1) The Hebrew forms themselves point to two older roots behind the spelling: אֱלוֹהַּ has a consonantal ה (mappiq), as Sabaic and Arabic ʾlh “god”, while the oath verb is third-weak (וַיֹּאֶל, אָלִית, תַּאֲלָה), as Arabic ʾlw/ʾly “swear”; the lament אֱלִי and the fat tail אַלְיָה are also ʾly. ה is not one of the merged letters the `sounds` field records, so the split shows only here. Against it, Sabaic writes “curse, swear” ʾlh with the same letters as its god-word, and Arabic إِلّ joins “God” (disputed) and “covenant”: whether the oath was first sworn by the god is open. (2) The “power” sense of אֵל (יֵשׁ לְאֵל יָדִי) and the superlative “mountains of God” may be another root (BDB's leads: אול “be strong”); no cognate meaning “power” has been found. (3) אִלּוּ looks like a compound (אִם/אִן + לוּ) rather than a word of this root; consider moving it out. (4) Not found or not checked: Ugaritic has no oath, fat-tail or lament word of this shape in Segert or Fisher; Krahmalkov has no Phoenician ʾlt “oath, curse” (the Arslan Tash amulet's ʾlt, if wanted, needs DNWSI); the Mesha stele text was not checked for ʾl; Ge'ez has no god-word of this root (አምላክ is from mlk), so none is cited; Syriac (Payne Smith) not yet consulted for the lament and fat-tail words.\n\nGloss change (2026-11-09, user's direction): the God-words are glossed “mighty one”, not “God”, because scripture gives the title to men and angels and sets אֵל against man and flesh (Isa 31:3, Ezk 28:2, Hos 11:9), and the idiom יֵשׁ לְאֵל יָדִי uses it for power. Against this: every cognate (Ugaritic il, Akkadian ilu, Phoenician ʾl, Sabaic ʾl/ʾlh, Arabic ʾilāh) means “god”, none “power”, so the sense rests on scripture's use alone; and the superlative uses could run either way (from “mighty” to “divine” or the reverse). Related spellings with י/ו to weigh later: אֵיל גּוֹיִם “mighty one of the nations” of Nebuchadnezzar (Ezk 31:11), אֵילֵי הָאָרֶץ “the mighty of the land” (2Ki 24:15, ketiv אולי), אֱיָלוּת “strength” (Psa 22:20), אוּל “strength” (Psa 73:4)."
+  "note": "The spelling holds words of several older roots, not one semantic origin. Proper names, including the month אֱלוּל, are left for name entries. Terebinth אֵלָה is not filed under this root in the brief (its tree-words go with אַיִל, אֵלוֹן); no claim about its root is made here. Redirects are omitted. The Hebrew short demonstrative (rootless a.dj.aa) and Aramaic אִלֵּין are included as forms of the demonstrative family. The Aramaic short אֵל (xa.an.aa) has no distinct Aramaic occurrence established here. Exo 21:6 and 22:7–8 can be read as appearing before God or before judges; they are not used to make “judges” an unqualified separate sense. Psalm 82’s אֱלֹהִים are read as Jesus reads them (Jhn 10:35), and Psa 8:6’s as Hebrews reads them (Heb 2:7); 1Sa 28:13’s reported vision still needs contextual review.\n\nOpen questions (2026-11-09): (1) The Hebrew forms themselves point to two older roots behind the spelling: אֱלוֹהַּ has a consonantal ה (mappiq), as Sabaic and Arabic ʾlh “god”, while the oath verb is third-weak (וַיֹּאֶל, אָלִית, תַּאֲלָה), as Arabic ʾlw/ʾly “swear”; the lament אֱלִי and the fat tail אַלְיָה are also ʾly. ה is not one of the merged letters the `sounds` field records, so the split shows only here. Against it, Sabaic writes “curse, swear” ʾlh with the same letters as its god-word, and Arabic إِلّ joins “God” (disputed) and “covenant”: whether the oath was first sworn by the god is open. (2) The “power” sense of אֵל (יֵשׁ לְאֵל יָדִי) and the superlative “mountains of God” may be another root (BDB's leads: אול “be strong”); no cognate meaning “power” has been found. (3) אִלּוּ looks like a compound (אִם/אִן + לוּ) rather than a word of this root; consider moving it out. (4) Not found or not checked: Ugaritic has no oath, fat-tail or lament word of this shape in Segert or Fisher; Krahmalkov has no Phoenician ʾlt “oath, curse” (the Arslan Tash amulet's ʾlt, if wanted, needs DNWSI); the Mesha stele text was not checked for ʾl; Ge'ez has no god-word of this root (አምላክ is from mlk), so none is cited; Syriac (Payne Smith) not yet consulted for the lament and fat-tail words.\n\nGloss change (2026-11-09, user's direction): the God-words are glossed “mighty one”, not “God”, because scripture gives the title to men and angels and sets אֵל against man and flesh (Isa 31:3, Ezk 28:2, Hos 11:9), and the idiom יֵשׁ לְאֵל יָדִי uses it for power. Against this: every cognate (Ugaritic il, Akkadian ilu, Phoenician ʾl, Sabaic ʾl/ʾlh, Arabic ʾilāh) means “god”, none “power”, so the sense rests on scripture's use alone; and the superlative uses could run either way (from “mighty” to “divine” or the reverse). Related spellings with י/ו to weigh later: אֵיל גּוֹיִם “mighty one of the nations” of Nebuchadnezzar (Ezk 31:11), אֵילֵי הָאָרֶץ “the mighty of the land” (2Ki 24:15, ketiv אולי), אֱיָלוּת “strength” (Psa 22:20), אוּל “strength” (Psa 73:4).\n\nOath and the Mighty One (2026-11-09, user's direction): the oath words are tied to “mighty one” by scripture's use: the אָלָה is Yahweh's (Deu 29:11), sworn before his altar (1Ki 8:31), carried out by him (Num 5:21, Deu 29:19). Formally the oath verb is third-weak (וַיֹּאֶל, אָלִית), as Arabic ʾlw “swear”, while אֱלוֹהַּ has a consonantal ה and אֵל has no third letter; Sabaic writes both ʾlh. A two-letter base ʾl extended two ways would fit, but is inference. Gal 3:10 quotes Deu 27:26 (אָרוּר), whose curse words are ארר, not this root; the doctrine ties it to אָלָה through Deu 29:19's “written in this book” and Dan 9:11's κατάρα, which Paul uses."
 }
