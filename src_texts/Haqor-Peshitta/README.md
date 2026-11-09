@@ -2057,6 +2057,14 @@ Source checks for Luke 21:
 
 Source checks for Luke 22:
 
+- The chapter's 259 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Seven remain:
+  the compound after, two repeated personal references, the prison
+  designation, the denial construction with its negative knowledge
+  complement, and two existential-dative possession predicates.
+  Their exact positions and linguistic reasons are in the ledger.
+  Ordinary negatives, auxiliaries, modifiers, and clause constituents
+  have separate source owners.
 - In 22:1 the feast of unleavened bread is called Passover. In 22:2
   the priests and scribes were seeking to kill him and feared the people.
   In 22:4 both scribes and temple commanders are named. In 22:6 Judas
@@ -2077,7 +2085,8 @@ Source checks for Luke 22:
   of Man is handed over remain distinct. In 22:24 the dispute is about
   which of them is greatest.
 - In 22:25 the kings are lords over the nations, and those exercising
-  authority are called benefactors. In 22:26 greatness is contrasted
+  authority are called doers of good, with the two parts of the
+  benefactor title separately linked. In 22:26 greatness is contrasted
   with being least and leadership with service. In 22:29 the kingdom
   is promised to you as my Father promised to me; in 22:30 eating and
   drinking, sitting on thrones, and judging twelve tribes all remain.
@@ -2086,6 +2095,9 @@ Source checks for Luke 22:
   in the singular. The turning clause is imperative, not a subordinate
   when-you-have-turned clause. In 22:33 the address is my Lord; in
   22:34 Jesus names Simon, with three denials before today's crowing.
+  The negative knowledge complement belongs to the denial construction;
+  English expresses the repudiation once as denying that he knows Jesus.
+  Repeating both deny and not know would reverse that repudiation.
 - In 22:35 purses, wallets, and sandals are plural. In 22:36 the person
   without a sword sells his own garment and buys himself a sword.
   In 22:37 I will be counted is first-person future; the final completion
@@ -2105,11 +2117,13 @@ Source checks for Luke 22:
   Simon is the subject of ongoing following, and in 22:55 he too was
   sitting among the people around the fire.
 - In 22:57 the denial uses present knowing, despite Murdock's perfect.
-  In 22:58 Cephas belongs to the following speech clause. In 22:61 Jesus,
+  In 22:58 Cephas belongs to the following speech clause; his copular
+  denial answers the present claim of membership, "I am not." In 22:61 Jesus,
   Cephas, Simon, and our Lord's word retain their distinct references.
   In 22:63-65 mocking, blindfolding, striking his face, and uttering
   blasphemies retain their ongoing past forms. In 22:68 answering and
-  releasing him are distinct. In 22:69 the right hand is of God's power;
+  releasing him are distinct and both fall under the negative scope.
+  In 22:69 the right hand is of God's power;
   in 22:71 they have heard from his mouth.
 
 Source checks for Luke 23:
