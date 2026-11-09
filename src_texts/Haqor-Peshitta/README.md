@@ -536,6 +536,49 @@ Source checks for Mark 6:
 
 Source checks for Mark 7:
 
+- All 122 original shared spans were checked against the exact forms,
+  morphology and connected English. Twelve justified exceptions remain:
+  the conditional marker in 7:3, the face-taking idiom in 7:6, six
+  human-being expressions, and four existential/dative or past-state
+  constructions. Ordinary predicates, negation and noun modifiers have
+  separate source owners.
+- In 7:1 the Jerusalem relative clause modifies the Pharisees and scribes.
+  In 7:2 and 7:5 the hands are not washed; the passive descriptions do
+  not become an active washing event. In 7:3 en hu supplies the conditional
+  marker, with the washing negation retained separately.
+- In 7:6 the collective people's lips have a singular possessor, while
+  "their heart" retains its actual plural possessor. The face-taking
+  expression is the hypocrisy idiom. In 7:8 the forsaking verb is perfect,
+  separate from the following holding predicate and its explicit subject.
+- In 7:10 the death noun intensifies the finite dying verb, rendered
+  "shall surely die" with separate owners. In 7:11 both second-person
+  pronouns remain before the conditional; the offering noun retains
+  "my offering", and the following benefit is from the speaker.
+- In 7:16 the existential and its dative express possession of ears;
+  the dative is not moved into the following hear command. In 7:18
+  subject and copular pronouns remain distinct, and the separate can/not
+  owners form the English word "cannot" without a shared span.
+- In 7:19 la hwa is rendered as a negative cleft, "it is not into his
+  heart that it enters", rather than forcing a past-time assertion.
+  Compare the analysis of negative clefts in
+  [Pat-El's study of Syriac negation](https://doi.org/10.1093/jss/fgl006).
+  The following feminine cleansing predicate describes physical elimination;
+  it is not reassigned to the speaker. In 7:23 the cleft and anticipatory
+  object pronoun retain their own source positions.
+- In 7:25 the relative daughter clause follows the woman, while "about
+  him" remains masculine. The existential and past auxiliary jointly
+  express the daughter's possession of an unclean spirit. In 7:26 the
+  woman's past identification is separate from her asking predicate.
+- In 7:29 the ethical dative resumes the departing demon, rather than
+  naming an additional beneficiary. In 7:30 "her demon" retains the
+  genuine possessive suffix. In 7:31 Tyre and Sidon both belong to the
+  departure region; the arrival is at Galilee's sea in Decapolis's region.
+- In 7:32 the hand is singular; in 7:33 the fingers and ears are plural.
+  In 7:35 "at that hour" has separate temporal owners. In 7:36 the
+  negative warning and the two progressive predicates retain their
+  respective pronouns and auxiliaries. In 7:37 the making verb governs
+  both hearing and speaking, with the negative speaking description
+  kept separate from the final positive speaking verb.
 - In 7:11 the second-person pronoun completes "you say" before the
   conditional begins. The offering noun retains its first-person suffix.
 - In 7:19 the feminine cleansing predicate remains with the physical
