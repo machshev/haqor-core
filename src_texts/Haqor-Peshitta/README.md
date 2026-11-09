@@ -315,8 +315,41 @@ Source checks for Matthew 28:
 Source checks for Mark 1:
 
 - In 1:2 Isaiah is explicitly named and is retained.
+- In 1:6 the hair and camels, strap and leather, and wild and honey
+  constituents remain separately owned. The food's existential form and
+  past auxiliary are rendered with a resumptive "it was".
+- In 1:7 the sandal straps are plural. The relative prefix and negative
+  in d-la can own separated English spans; the past auxiliary belongs
+  to the proclaiming verb. In 1:11 the voice says "in you", second person,
+  rather than substituting "in whom".
+- In 1:14 the dative after came is coreferential with Jesus; it does not
+  make John the recipient of his journey. The destination is Galilee.
+  In 1:15 the time has reached fulfillment, and the kingdom "has arrived"
+  renders the actual perfect arrival verb, rather than replacing it with
+  a drawing-near verb from another text.
+- In 1:16 nets is plural. In 1:17 bnay anasha is the human-being idiom,
+  "of people", consistent with Matthew 4:19. In 1:19 the two brothers'
+  resumptive object becomes the English subject of the mending clause,
+  retaining the same actors. Sabbaths and synagogues in 1:21 are plural.
+- In 1:24 the ma lan wa-lakh involvement formula retains a minimal shared
+  "What have we to do", with its addressee separately linked. The later
+  identification is made into fluent English with an appositive "you are".
+  Shut and your mouth in 1:25, and one, with and another in 1:27, can be
+  split without losing their meanings.
 - In 1:31 the woman ministers to "them", preserving the plural source object
   rather than copying the singular object of Matthew 8:15.
+- In 1:32 and 1:34 the badly-afflicted constituents and their auxiliaries
+  are separately linked. In 1:34 the demons' stative knowing with its past
+  auxiliary is rendered "were aware of him". In 1:35 the early-acting and
+  rising verbs give "rose very early" with separate owners.
+- In 1:38 d-af retains both the purpose connective and also, "so that
+  I may preach there also". In 1:40 the two independent second-person
+  pronouns supply "you", rather than making either an object "it".
+- In 1:44 lma supplies the caution "that ... not" after see;
+  [CAL's lmh entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c)
+  records the lest sense. The following pronoun, telling verb and anyone
+  remain separate. In 1:45 the perfect beginning verb and past auxiliary
+  give "had begun"; the solitary place is singular.
 - In 1:21-22 the teaching predicates retain their subjects and auxiliaries;
   the postpositive explanatory particle stays with the second teaching clause.
 

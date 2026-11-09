@@ -1138,6 +1138,32 @@
       "independent_review": true,
       "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
       "exceptions": []
+    },
+    "41:1": {
+      "sha256": "a429c128e5546a02d54fc1fd5b21989905631244c76b0a16b54025f19f5b7832",
+      "original_shared_spans": 129,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 17,
+          "english": "of people",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The construct d-bnay anasha, literally sons of man/mankind, is the established human-being idiom in the fishers-of-people expression, as in Matthew 4:19. The separate fishers noun remains singly linked."
+        },
+        {
+          "verse": 24,
+          "english": "What have we to do",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "The interrogative plus paired-dative formula ma lan wa-lakh asks what involvement the speaker has with the addressee. It supplies an elliptical relationship predicate, not separate literal have/do verbs. The addressee complement with you remains separately linked to its own dative."
+        }
+      ]
     }
   }
 }
