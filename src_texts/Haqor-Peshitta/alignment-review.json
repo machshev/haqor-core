@@ -1991,6 +1991,86 @@
           "reason": "Men shelya, literally from stillness or quiet, is the fixed adverbial suddenly idiom, not a literal source location."
         }
       ]
+    },
+    "41:14": {
+      "sha256": "b8f8b4bf8c8f1030a8fa73c308847351150e885f7dc0c2cb68e3ea554df7ce37",
+      "original_shared_spans": 257,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 3,
+          "english": "who had with her",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Relative existential d-ith plus al-possessive/locative suffix aleha expresses the woman having the jar with her; neither token independently denotes the English possession predicate."
+        },
+        {
+          "verse": 4,
+          "english": "who were displeased",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "The impersonal Ethpeal displeasure verb plus its experiencer dative lhon expresses the disciples' displeasure; the dative does not name a separate object they are displeased at."
+        },
+        {
+          "verse": 8,
+          "english": "could",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Existential d-ith plus past hwa, in the frame what was available to this woman, expresses her capacity here. English what she could renders that availability as ability; the dative lah owns she and the following demonstrative identifies this woman."
+        },
+        {
+          "verse": 9,
+          "english": "wherever",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Kul ayka, literally every where, is the universal locative relative wherever; kul quantifies the locative rather than a separately named place."
+        },
+        {
+          "verse": 34,
+          "english": "sorrowful",
+          "positions": [
+            2,
+            4
+          ],
+          "reason": "The sorrow predicate with its anticipatory experiencer dative lah describes my soul's state; the separate soul phrase owns the English subject, and the copular pronoun owns is."
+        },
+        {
+          "verse": 37,
+          "english": "have you fallen asleep",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The second-person sleep predicate with its subject-coreferential ethical dative lakh asks whether Simon has gone to sleep; the dative introduces no additional beneficiary."
+        },
+        {
+          "verse": 43,
+          "english": "from",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "Men lwath is the compound source preposition from, literally from the presence/side of; lwath does not introduce a second destination here."
+        },
+        {
+          "verse": 45,
+          "english": "And immediately",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "W-bar shateh, literally and son of the hour, is the fixed immediate-time idiom."
+        }
+      ]
     }
   }
 }

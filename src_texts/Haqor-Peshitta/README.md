@@ -848,22 +848,51 @@ Source checks for Mark 13:
 
 Source checks for Mark 14:
 
-- In 14:5 the masculine suffix in vocalized `bēh` is rendered "at it",
-  rather than the reference's "at her"; compare the
-  [vocalized Peshitta text](https://aramaicnewtestament.org/gospel/mark_14.htm).
-- The first-person possessives in 14:9 ("my gospel") and 14:14
-  ("Our Rabbi") are retained. In 14:13 the man will meet the hearers;
-  carrying the water jar is a separate description.
+- The chapter's 257 original shared spans were checked against exact
+  forms, morphology, and context. Eight remain: relative possession,
+  displeasure, availability as capacity, the universal locative relative,
+  sorrow with its experiencer, sleep with its ethical dative, the compound
+  source preposition, and the immediate-time idiom. The ledger gives each
+  expression's specific reason; ordinary negation, auxiliaries, modifiers,
+  commands, and clauses have separate source owners.
+- In 14:3 the woman opens and pours the vessel's contents, with the
+  ointment, choice nard, and price kept distinct. In 14:4 the disciples'
+  displeasure has an experiencer dative. In 14:5 the masculine suffix in
+  vocalized bēh is rendered "at it", rather than the reference's "at her";
+  compare the [vocalized Peshitta text](https://aramaicnewtestament.org/gospel/mark_14.htm).
+  In 14:8 the availability clause is rendered "what she could"; the dative
+  owns "she", and the following demonstrative identifies this woman.
+- The first-person possessives in 14:9 ("gospel of mine") and 14:14
+  ("our Rabbi") are retained. In 14:13 the man will meet the hearers;
+  carrying the water jar is a separate description. In 14:21 the man
+  through whose hand the Son of man is delivered remains distinct from
+  the Son, with the counterfactual birth clause retained in full.
 - In 14:23 "all" describes the people drinking, rather than how much
-  was drunk. In 14:31 "my Lord" is explicit, and the past auxiliary
-  belongs to the emphatic saying predicate.
-- In 14:42 the first-person object belongs to handing over, rather
-  than adding a second "to me" after drawing near.
-- In 14:53 Caiaphas is explicitly named. In 14:56 the testimonies are
+  was drunk. In 14:24 the new covenant modifies the blood, and the
+  poured-out predicate retains "for many". In 14:30 and 14:72 the
+  two crowings and three denials retain their counts.
+- In 14:31 "my Lord" is explicit, and the past auxiliary belongs to
+  the emphatic saying predicate. In 14:34 the soul is the experiencer
+  of sorrow. In 14:36 the separate "my own" and "yours" retain their
+  owners. In 14:37 the sleep predicate has its ethical dative, and the
+  one-hour watch question has no supplied "with me" from the reference.
+- In 14:41 the end "has arrived", followed by the distinct
+  arrival of the hour. In 14:42 the first-person object belongs to
+  handing over, rather than adding a second "to me" after drawing near.
+  In 14:44 the sign and the first-person kiss remain distinct from the
+  hearers' commands to seize securely and lead him away.
+- In 14:49 the Scriptures' fulfillment clause retains its own predicate.
+  The young man and linen cloth in 14:51-52 remain distinct from the
+  fleeing disciples. In 14:53 Caiaphas is explicitly named. In 14:55
+  the assembly retains its possessive. In 14:56 the testimonies are
   plural and do not agree; 14:59 instead has singular collective testimony.
-- In 14:70 "also" qualifies the Galilean claim, not the preceding
-  statement that Cephas is one of them. The twice/thrice counts in
-  14:30 and 14:72 are retained.
+- In 14:58 the quoted destruction and rebuilding remain the witnesses'
+  reported claim. In 14:62 "I am", the Son of man, the right of power,
+  and the clouds of heaven retain their individual owners. In 14:65
+  spitting, face covering, maltreatment, the prophecy command, and the
+  guards' cheek strikes remain separate actions. In 14:70 "also"
+  qualifies the Galilean claim, not the preceding claim of membership.
+  In 14:72 the recalled saying and the beginning of weeping remain distinct.
 
 Source checks for Mark 15:
 
