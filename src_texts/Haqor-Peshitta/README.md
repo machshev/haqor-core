@@ -1804,10 +1804,21 @@ Source checks for Luke 17:
 
 Source checks for Luke 18:
 
+- The chapter's 155 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Thirteen remain:
+  the weary and two sorrow predicates with their datives, the legal
+  adversary and patience idioms, negative concord, three repeated
+  references, exclusion, possession, the generic human designation,
+  and the immediate-time idiom. Their exact positions and linguistic
+  reasons are in the ledger. Ordinary negatives, auxiliaries, modifiers,
+  and clause constituents have separate source owners.
 - In 18:1 the parable is also told to them, without an added demonstrative;
   the final dative belongs to growing weary, not being weary of them.
   In 18:3 the widow was coming to him in that city. In 18:5 tiring the
   judge and subsequently hurting him use distinct verbs.
+  In 18:4-5 the concession reads "though ... yet because", following
+  Murdock's clause sequence; [CAL's apn entry](https://cal.huc.edu/cal_entry_web.php?lemma=%29pn+c)
+  records both even-if and nonetheless usages.
 - In 18:6 the subject is "our Lord", and the judge "said" the preceding
   words. In 18:7 the greater vindication, the chosen ones calling by day
   and by night, and God's patience with them remain distinct. The patience
@@ -1818,6 +1829,9 @@ Source checks for Luke 18:
   "I have not been" like others. In 18:12 he fasts twice a week and
   tithes everything he acquires. In 18:13 the tax collector was beating
   his own breast, and his prayer names himself as a sinner.
+  The repeated negatives before willing and after even have one scope,
+  rendered "not even willing"; even, willing, eyes, raising, and the
+  past auxiliary retain their separate owners.
 - In 18:14 the comparative explicitly has more/than, with justified
   belonging to the tax collector's descent to his house. The comparison
   names that Pharisee. The two following maxims retain their reflexive
@@ -1827,6 +1841,10 @@ Source checks for Luke 18:
   18:17 it is of God. In 18:18 one of the chiefs asks him, then speaks
   to him. In 18:20 killing precedes adultery, stealing, false testimony,
   and honoring father and mother.
+  In 18:16 the two copulas separately own "is" and "are", and the
+  possessive construction owns "the possession of those". In 18:21 the
+  fronted demonstrative and repeated object pronoun identify the same
+  commandments, expressed once as "these".
 - In 18:21 the youth is the speaker's own. In 18:22 he is to sell all,
   give to the poor, and come after Jesus; no cross clause is supplied.
   In 18:23 he is sorrowful without an added departure; in 18:24 Jesus
