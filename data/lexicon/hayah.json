@@ -2,7 +2,7 @@
   "id": "hayah",
   "root": "היה",
   "status": "draft",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "tags": [
     "existence",
     "change",
@@ -10,7 +10,7 @@
     "covenant"
   ],
   "gloss": "be, become, happen",
-  "summary": "הָיָה says that someone or something exists, is in a condition, becomes something, or happens. With a person and לְ it can express possession or a relationship; with עִם it can express presence and help. Its Aramaic counterpart הֲוָא carries these uses in Daniel and Ezra and in the Peshitta.",
+  "summary": "הָיָה says that someone or something exists, is in a condition, becomes something, or happens. With לְ it says what someone has or what they are to another (“I will be their God”); with עִם it says someone is present with another, often to help. Its Aramaic counterpart הֲוָא carries the same uses in Daniel and Ezra, in the Peshitta, and in Aramaic inscriptions from the Old Aramaic period on, and the rarer Hebrew הָוָה is the same verb with the Aramaic ו.",
   "words": [
     {
       "lemma": "הָיָה",
@@ -25,6 +25,7 @@
           "gloss": "be; become; happen",
           "senses": [
             {
+              "id": "be-exist",
               "gloss": "be, exist",
               "definition": "Be present or exist, or be in a stated condition or place.",
               "evidence": [
@@ -36,36 +37,73 @@
                 {
                   "ref": "Gen.2.5",
                   "role": "defining",
-                  "note": "No shrub was yet in the earth."
+                  "note": "No shrub was yet in the earth: not yet existing."
                 },
                 {
-                  "ref": "Exo.3.12",
-                  "role": "defining"
+                  "ref": "Job.10.19",
+                  "role": "defining",
+                  "note": "“I would be as though I had not been”: being set against not having existed."
+                },
+                {
+                  "ref": "Gen.15.13",
+                  "note": "Your seed will be sojourners in a land not theirs; Acts 7:6 retells it."
+                },
+                {
+                  "ref": "Act.7.6"
                 }
+              ],
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
               ]
             },
             {
+              "id": "become",
               "gloss": "become",
-              "definition": "Come to be what the following expression names.",
+              "definition": "Come to be what the following expression names, often with לְ before it.",
               "evidence": [
                 {
                   "ref": "Gen.2.7",
                   "role": "defining",
-                  "note": "The man became a living נֶפֶשׁ."
+                  "note": "The man became a living נֶפֶשׁ; 1 Cor 15:45 quotes it."
+                },
+                {
+                  "ref": "1Co.15.45"
                 },
                 {
                   "ref": "Gen.19.26",
                   "role": "defining",
                   "note": "The woman became a pillar of salt."
+                },
+                {
+                  "ref": "Gen.2.24",
+                  "role": "defining",
+                  "note": "The two become one flesh; quoted in Matt 19:5 and Eph 5:31."
+                },
+                {
+                  "ref": "Mat.19.5"
+                },
+                {
+                  "ref": "Eph.5.31"
+                },
+                {
+                  "ref": "Isa.1.9",
+                  "note": "“We would have become like Sodom”; Rom 9:29 quotes it."
+                },
+                {
+                  "ref": "Rom.9.29"
                 }
               ],
               "cognate_ids": [
-                "akk-ewu"
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
               ]
             },
             {
+              "id": "happen",
               "gloss": "happen, come to pass",
-              "definition": "Introduce an occurrence or mark its taking place in time.",
+              "definition": "Of an event or thing that comes about, or of the coming of a time; וַיְהִי “and it came to pass” introduces an occurrence in narrative.",
               "evidence": [
                 {
                   "ref": "Gen.22.1",
@@ -76,12 +114,32 @@
                   "ref": "Gen.1.3",
                   "role": "defining",
                   "note": "God speaks, and light comes to be."
+                },
+                {
+                  "ref": "Exo.32.1",
+                  "role": "defining",
+                  "note": "“We do not know what has happened to him”; Acts 7:40 quotes it."
+                },
+                {
+                  "ref": "Act.7.40"
+                },
+                {
+                  "ref": "Jol.3.1",
+                  "note": "“It will come to pass afterward”: a time to come; Acts 2:17 takes it up."
+                },
+                {
+                  "ref": "Act.2.17"
                 }
+              ],
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
               ]
             },
             {
-              "gloss": "belong to; stand in a relationship",
-              "definition": "With לְ, be someone’s possession, people, God, or other stated relation.",
+              "id": "belong-to",
+              "gloss": "belong to; be to someone as",
+              "definition": "With לְ, be someone’s possession, or be to someone what the phrase names: their God, their people, father or son.",
               "evidence": [
                 {
                   "ref": "Gen.12.16",
@@ -91,11 +149,27 @@
                 {
                   "ref": "Jer.31.33",
                   "role": "defining",
-                  "note": "I will be their God, and they will be my people."
+                  "note": "I will be their God, and they will be my people; Heb 8:10 quotes it."
+                },
+                {
+                  "ref": "Heb.8.10"
+                },
+                {
+                  "ref": "2Sa.7.14",
+                  "role": "defining",
+                  "note": "“I will be to him a father, and he will be to me a son”; Heb 1:5 quotes it of Christ."
+                },
+                {
+                  "ref": "Heb.1.5"
                 }
+              ],
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
               ]
             },
             {
+              "id": "be-with",
               "gloss": "be with",
               "definition": "Be present with someone; where the context promises help, support that person.",
               "evidence": [
@@ -109,17 +183,20 @@
                   "role": "defining",
                   "note": "Yahweh was with Joseph, and Joseph prospered."
                 }
+              ],
+              "cognate_ids": [
+                "syc-hwa"
               ]
             }
           ]
         },
         {
           "stem": "niphal",
-          "gloss": "happen; become; be brought into a condition",
+          "gloss": "happen, be brought about; become; be done",
           "senses": [
             {
-              "gloss": "happen, be done",
-              "definition": "Of an event that comes about, often something exceptional.",
+              "gloss": "happen, be brought about",
+              "definition": "Of an event that comes about, often something exceptional, or a thing brought about by someone.",
               "evidence": [
                 {
                   "ref": "Exo.11.6",
@@ -128,12 +205,26 @@
                 },
                 {
                   "ref": "Deu.4.32",
-                  "role": "defining"
+                  "role": "defining",
+                  "note": "Has anything as great as this happened?"
                 },
                 {
                   "ref": "Jdg.19.30",
                   "role": "defining"
+                },
+                {
+                  "ref": "1Ki.12.24",
+                  "role": "defining",
+                  "note": "“This thing has been brought about from me”: Yahweh is its cause."
+                },
+                {
+                  "ref": "Dan.12.1",
+                  "note": "A time of distress such as has not been."
                 }
+              ],
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
               ]
             },
             {
@@ -147,22 +238,45 @@
                 }
               ],
               "cognate_ids": [
-                "akk-ewu"
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
               ]
             },
             {
-              "gloss": "be spent, exhausted",
-              "definition": "In Daniel’s account, be left overcome or spent. The precise force in these two passages is less certain than the ordinary sense “happen”.",
+              "gloss": "be done, fulfilled",
+              "definition": "Of a thing that has come about in full: a desire fulfilled, a promised day that comes and is done.",
               "evidence": [
                 {
-                  "ref": "Dan.8.27",
+                  "ref": "Pro.13.19",
                   "role": "defining",
-                  "note": "Daniel was overcome and ill for days."
+                  "note": "תַּאֲוָה נִהְיָה, a desire that has come about, is sweet to the soul."
                 },
                 {
-                  "ref": "Dan.2.1",
+                  "ref": "Ezk.39.8",
                   "role": "defining",
-                  "note": "The king’s spirit is troubled and his sleep is gone."
+                  "note": "“It is coming and it will be done”: the day Yahweh spoke of."
+                }
+              ],
+              "cognate_ids": [
+                "syc-hwa"
+              ],
+              "senses": [
+                {
+                  "gloss": "be done for, spent",
+                  "definition": "Of a person or his sleep: be finished, gone, spent. Only in Daniel, and the force rests on the context: sleep that was “done” on the troubled king, Daniel “done” and then sick for days.",
+                  "evidence": [
+                    {
+                      "ref": "Dan.2.1",
+                      "role": "defining",
+                      "note": "The king’s spirit was troubled, and his sleep נִהְיְתָה עָלָיו: it was over, gone from him."
+                    },
+                    {
+                      "ref": "Dan.8.27",
+                      "role": "defining",
+                      "note": "נִהְיֵיתִי וְנֶחֱלֵיתִי: Daniel was spent and was sick for days."
+                    }
+                  ]
                 }
               ]
             }
@@ -219,9 +333,81 @@
                 "note": "The same אֶהְיֶה as in the promise of 3:12; the formula is God’s answer to Moses’s question about his name."
               }
             ]
+          },
+          {
+            "phrase": "וַיְהִי",
+            "gloss": "and it came to pass",
+            "evidence": [
+              {
+                "ref": "Gen.22.1",
+                "role": "defining",
+                "note": "Opens a new event in the narrative."
+              }
+            ]
           }
         ]
       }
+    },
+    {
+      "lemma": "הָוָה",
+      "pos": "verb",
+      "gloss": "be, become",
+      "summary": "The same verb as הָיָה, spelled with the ו of Aramaic הֲוָא; a handful of uses, mostly in poetry and late books. Job 37:6 is sometimes read “fall” on the strength of Arabic hawā; the verse itself only says the snow is to “be” on the earth.",
+      "root": "הוא",
+      "bdb": [
+        "e.az.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be, become",
+          "senses": [
+            {
+              "gloss": "be, become",
+              "definition": "Be or become what follows, as הָיָה does.",
+              "kin": [
+                "be-exist",
+                "become"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.27.29",
+                  "role": "defining",
+                  "note": "הֱוֵה גְבִיר לְאַחֶיךָ, “be lord over your brothers”."
+                },
+                {
+                  "ref": "Isa.16.4",
+                  "role": "defining",
+                  "note": "הֱוִי־סֵתֶר לָמוֹ, “be a hiding place for them”."
+                },
+                {
+                  "ref": "Neh.6.6",
+                  "role": "defining",
+                  "note": "You are becoming their king."
+                },
+                {
+                  "ref": "Ecc.11.3",
+                  "role": "defining",
+                  "note": "Where the tree falls, there it will be (יְהוּא)."
+                },
+                {
+                  "ref": "Ecc.2.22",
+                  "note": "What is there for a man in all his toil? With לְ, as הָיָה."
+                },
+                {
+                  "ref": "Job.37.6",
+                  "note": "He says to the snow, הֱוֵא אָרֶץ, “be (on the) earth”: the snow falls, but the verb says “be”."
+                }
+              ],
+              "cognate_ids": [
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "lemma": "הֲוָא",
@@ -245,10 +431,17 @@
                   "ref": "Dan.4.22",
                   "role": "defining",
                   "note": "Your dwelling will be with the animals."
+                },
+                {
+                  "ref": "Dan.2.35",
+                  "role": "defining",
+                  "note": "The stone that struck the image became a great mountain."
                 }
               ],
               "cognate_ids": [
-                "akk-ewu"
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
               ]
             },
             {
@@ -260,6 +453,10 @@
                   "role": "defining",
                   "note": "What will happen at the end of days."
                 }
+              ],
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
               ]
             }
           ]
@@ -296,7 +493,9 @@
                 }
               ],
               "cognate_ids": [
-                "akk-ewu"
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
               ]
             },
             {
@@ -308,6 +507,10 @@
                   "role": "defining",
                   "note": "All this happened so that what was spoken would be fulfilled."
                 }
+              ],
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
               ]
             }
           ]
@@ -319,20 +522,83 @@
   ],
   "cognates": [
     {
+      "id": "arc-hwy",
+      "lang": "arc",
+      "form": "הוה",
+      "translit": "hwy, hăwā",
+      "gloss": "be; become; exist; come to pass, happen; with l- possess",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "hwy vb., G pəˁal “to be”",
+          "url": "https://cal.huc.edu/oneentry.php?cits=all&lemma=hwy+V",
+          "note": "Senses “to be”; “to become” (Old Aramaic Tell Fakhariyah 12 hdd gbr lhwy qblh “may hero Hadad become his accuser”; Sefire 3 a22 qtlw mrʾkm whwy ḥlph “kill your lord and become his successor”); “w. l_: to change state, to turn into”; “to endure, to exist” (Bukân stele 3 “every kind of plague that ever existed in the whole world”); “w. l_: to possess”; “to come to pass, to happen”, “to come into existence” (Idumean document 6 bnyn dkryn zy yhwwn ly “male children that I will have”; Targum Onqelos Gen 1:3); Official Aramaic imperative TAD A4.1 R.5 dkyn hww “be pure”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הֲוֵי (הֲוָא, הֲוָה)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%94%D6%B2%D7%95%D6%B5%D7%99.1",
+          "note": "“same” as Hebrew הוי “to exist; to be, become; to occur, come to pass”; Targ. Gen. I, 3; Ber. 3ᵃ ג׳ משמרות הוי “the night consists of three watches”; B. Bath. 73ᵇ הוה אזלינן “it happened that we…”; Ned. 50ᵃ אי הואי לי “if I become wealthy”."
+        }
+      ],
+      "note": "Aramaic outside scripture, from the Old Aramaic inscriptions through the Official Aramaic of Egypt to the Targums and Talmud, uses this verb for every main use of הָיָה: being, existing, becoming, happening, and having (with l-), as Daniel and Ezra do."
+    },
+    {
+      "id": "syc-hwa",
+      "lang": "syc",
+      "form": "ܗܘܐ",
+      "translit": "hwā",
+      "gloss": "be, exist; be with; have (with l-); become, be done, come to pass",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "p. 101, ܗܘܐ",
+          "url": "https://www.dukhrana.com/lexicon/PayneSmith/pages/0110.jpg",
+          "note": "“a) the substantive verb to be, to exist; to be, remain or live in a place … with ܥܡ to be with, follow; … with ܠ to have, possess; to be for, serve as …; with ܠܘܬ to be with, stay with … b) to begin to be, become, be made, done or wrought, to come to pass, happen”; Aph. “to give existence, to create”."
+        }
+      ],
+      "note": "Syriac outside the Peshitta, with the whole range of הָיָה: “be with” (Exod 3:12) and “be done” (the niphal of Prov 13:19, Ezek 39:8) included."
+    },
+    {
       "id": "akk-ewu",
       "lang": "akk",
       "form": "ewû",
-      "translit": "ewû",
-      "gloss": "become; make into",
+      "translit": "ewû(m), emû",
+      "gloss": "become, turn into; stative “is (like)”; D, Š make into, make like",
       "relation": "cognate",
       "evidence": [
+        {
+          "source": "ebl",
+          "locator": "ewû I",
+          "url": "https://www.ebl.lmu.de/api/words/ew%C3%BB%20I",
+          "note": "“to become” Bab., OA; G with acc., of day “turn into” darkness, of loan into grain; with -iš, e.g. awīliš “into a man”; with kī(ma) “become like”; stat. “is (like)”; D and Š “make s.o./s.th. like” or “into”."
+        },
         {
           "source": "oracc",
           "locator": "armep x000075680, ewû [become] V",
           "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000075680.html"
         }
       ],
-      "note": "The Akkadian verb supplies a comparison for becoming, rather than every use of Hebrew “be”."
+      "note": "Akkadian keeps the “become” use (day becoming darkness, as the woman became a pillar of salt), and its stative says what something is like; it is not Akkadian’s ordinary word for “be” or “happen”, so it is named only on the senses of becoming."
+    },
+    {
+      "id": "ar-hawa",
+      "lang": "ar",
+      "form": "هَوَى",
+      "translit": "hawā",
+      "gloss": "fall down; (n. hawā) love, desire; (huwwa, hāwiya) pit, abyss; (hawāʾ) empty space",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3046, root هوى, هَوَى بِهِ (n44380), الهَوَى (n44385), هُوَّةٌ (n44386), هَاوِيَةٌ (n44390)",
+          "url": "https://www.laneslexicon.com/word/%D9%87%D9%88%D9%89/n44380",
+          "note": "هَوَى بِهِ “He made it to fall down”; الهَوَى “Love, and attachment: then, inclination of the soul … to a thing”; هُوَّةٌ “A deep hollow in the ground”; هَاوِيَةٌ “An abyss”."
+        }
+      ],
+      "note": "Same consonants, but no Arabic use given means “be”, “become” or “happen”; it is named on no word. Its senses “desire” and “fall, pit” match the nouns הַוָּה “desire” and “ruin” (spelled הוה, not yet in the lexicon) more than this verb. The bridge sometimes argued, “fall” → “befall” → “happen”, is not shown in Arabic’s own use; Job 37:6 הֱוֵא אָרֶץ (snow) is the one Hebrew verse where “fall” could fit."
     }
   ],
   "doctrine": [
@@ -355,5 +621,5 @@
       ]
     }
   ],
-  "note": "Mic 2:4 נִהְיָה is filed by spelling but analysed under נהה, and is not evidence for this verb. The Aramaic הֲוָא words are included under their own root key; the brief for היה does not find them automatically. The special Niphal uses in Dan 2:1 and 8:27 need review. No separate derivation of the divine name is asserted. The database root key is הוא for both Aramaic forms; it is a verb here, distinct from the pronoun of the same consonants."
+  "note": "Mic 2:4 נִהְיָה is filed by spelling but analysed under נהה, and is not evidence for this verb. The Aramaic הֲוָא words and the Hebrew הָוָה are under the database root key הוא (verb, distinct from the pronoun of the same consonants); the brief for היה does not find them automatically (run the brief for הוה: its הָוָה tokens Gen 27:29, Isa 16:4, Job 37:6, Ecc 2:22, 11:3, Neh 6:6 are analysed under הוא; lexicon-support counts them through e.az.aa). Open: should Hebrew הָוָה stay here or go to a future הוה entry with the nouns הַוָּה “desire; ruin” and הֹוָה “disaster”? Kept here because its uses are all “be/become”. Niphal Dan 2:1 and 8:27: the forms נִהְיְתָה, נִהְיֵיתִי are regular niphals of היה (a niphal of הוה would keep the ו), so they are kept here under “be done” (Prov 13:19, Ezek 39:8) as “be done for, spent”; the alternative is a link to הַוָּה “ruin”, which the morphology does not support. Cognates checked and not found: Ugaritic says “be” with k-w-n (ykn, Segert 1984 p. 189), Phoenician with K-N I “BE” (Krahmalkov 2000 p. 231); neither has hwy “be” in those works. Biella’s Sabaic HWY is ḤWY “live” (a different root, cf. חיה), so no Sabaic cognate is recorded. The Mesha stele has no form of the verb. No Ge'ez cognate looked up yet (Dillmann/Leslau not consulted). CAD E (ewû A) not yet consulted; eBL cited instead. Akkadian ewû’s e- for Hebrew ה needs a source on the correspondence. The divine name: no derivation asserted here; it belongs to a name entry."
 }
