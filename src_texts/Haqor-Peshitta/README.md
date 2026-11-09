@@ -971,7 +971,7 @@ Source checks for Mark 16:
 Source checks for Luke 1:
 
 - The chapter's 199 original shared spans were checked against exact
-  forms, morphology, and continuous English. Thirteen remain, with precise
+  forms, morphology, and continuous English. Twelve remain, with precise
   reasons in the ledger: compound prepositions, the conception and greeting
   predicates, the human-beings compound, narrative and existential copulas,
   Gabriel's relative-clause agreement, and the sign-making and mute-state
@@ -1003,8 +1003,9 @@ Source checks for Luke 1:
   Elizabeth separately linked. In 1:58 the source names God as the one
   magnifying his mercy, rather than the reference's Lord. Neighbors,
   family members, and their rejoicing remain distinct.
-- In 1:66 and 1:80 the existential and past copulas jointly express
-  the past locations of the Lord's hand and the child, respectively.
+- In 1:66 the existential and past copulas jointly express the past
+  location of the Lord's hand. In 1:80 the suffixed existential and past
+  copula have separate English "he" and "was" spans.
 - In 1:72 the holy covenants are plural, as are the oaths in 1:73.
 - In 1:77 the forgiveness phrase is introduced by "through", rather than
   an added conjunction. In 1:78 the visitation is future and explicitly
