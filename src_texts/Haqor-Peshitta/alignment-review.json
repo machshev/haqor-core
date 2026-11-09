@@ -7573,6 +7573,94 @@
           "source": "אֵנֻונ לַשלִיחֵא"
         }
       ]
+    },
+    "44:6": {
+      "sha256": "4bbc634139a5adf841831150819f49d8610d0a91135c4f8e503b081c2ee99742",
+      "original_shared_spans": 66,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 1,
+          "english": "in",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The preposition b is repeated on the anticipatory pronoun and the explicit days noun. In expresses that one resumed temporal relation, not two locations. And remains at 0; the days noun and its demonstrative remain separate.",
+          "source": "וַבֿהֻונ בּיַומָתָֿא"
+        },
+        {
+          "verse": 1,
+          "english": "those",
+          "positions": [
+            0,
+            2
+          ],
+          "reason": "The plural suffix on bahun anticipates the following hanun days demonstrative. Those expresses one resumed temporal referent without adding a separate among-them group. The preposition in and days are separately linked.",
+          "source": "וַבֿהֻונ הָנֻונ"
+        },
+        {
+          "verse": 3,
+          "english": "whom",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The relative d-prefix on dith and plural prepositional pronoun alayhun resume the same seven men. Whom realizes that single relative object; about stays at 8, there is at 7 and testimony at 9.",
+          "source": "דִּאיתֿ עלַיהֻונ"
+        },
+        {
+          "verse": 3,
+          "english": "of the Lord",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "The masculine suffix on Spirit anticipates the following Lord genitive. Of the Lord realizes the single resumed possessor; of the Spirit remains separately at 11 and wisdom outside.",
+          "source": "רֻוחֵה דּמָריָא"
+        },
+        {
+          "verse": 6,
+          "english": "the apostles",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The plural suffix on the postposition before anticipates the apostles named in the following genitive. The apostles realizes the one resumed prepositional object, with before separately at 2. The standing and prayer predicates stay outside.",
+          "source": "קדָֿמַיהֻונ דַּשלִיחֵא"
+        },
+        {
+          "verse": 7,
+          "english": "of God",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The masculine suffix on word anticipates God in the following genitive. Of God realizes the one resumed possessor; and the word remains at 0 and the growing predicate outside.",
+          "source": "ומֵלתֵֿה דַּאלָהָא"
+        },
+        {
+          "verse": 9,
+          "english": "arose",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Qamu with past hwa gives the single narrative past arose. Was rising would impose a progressive action and had arisen an unnecessary earlier viewpoint; the conjunction and stays separately at 0, with the men and groups outside.",
+          "source": "וקָמו ה_וַו"
+        },
+        {
+          "verse": 14,
+          "english": "place",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The masculine object suffix on will destroy is resumed by the explicit place object. Place realizes that one object; will destroy stays at 8 and this at 10. The separate subject pronoun and other allegation words remain outside.",
+          "source": "נֵשרֵיוה_י לַאתֿרָא"
+        }
+      ]
     }
   }
 }
