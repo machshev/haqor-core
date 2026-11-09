@@ -1,0 +1,2385 @@
+{
+  "id": "qadash",
+  "root": "קדש",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "holiness",
+    "separation",
+    "worship",
+    "sanctuary",
+    "appointed-times",
+    "priesthood"
+  ],
+  "gloss": "set apart as God's, holy; consecrate; sanctuary",
+  "summary": "קדש marks what is set apart to God, his and taken out of common use. Scripture defines it by its opposite: the priests are to separate “between the holy and the common (חֹל)”, as between unclean and clean (Lev 10:10), and Yahweh, who is holy, separates Israel from the peoples to be his (Lev 20:26). Yahweh is the Holy One; people, places, times and things are holy as his: the Sabbath and his appointed times are proclaimed as מִקְרָא קֹדֶשׁ, “a holy convocation” (Lev 23), and the מִקְדָּשׁ is the sanctuary where he dwells among them. The verb sets apart, consecrates, or treats as holy; קָדֵשׁ and קְדֵשָׁה name a man or woman dedicated to another god's cult, whom scripture sets beside the harlot and forbids. Ugaritic, Phoenician, Akkadian, Arabic and Ge'ez use the root for holy, consecrate and sanctuary (Akkadian and Arabic also for pure), and Akkadian and Ugaritic name a cult-dedicated woman with it.",
+  "words": [
+    {
+      "lemma": "קֹדֶשׁ",
+      "bdb": [
+        "s.an.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "holiness; what is set apart, holy thing; holy place",
+      "cognate_ids": [
+        "ar-quds"
+      ],
+      "senses": [
+        {
+          "id": "qodesh-holiness",
+          "gloss": "holiness, Yahweh's own",
+          "definition": "What Yahweh is, setting him apart from every other: he is “majestic in holiness” beyond all the gods, and swears by his holiness as by himself.",
+          "evidence": [
+            {
+              "ref": "Exo.15.11",
+              "role": "defining",
+              "note": "“Who is like you among the gods, Yahweh, majestic in holiness?”"
+            },
+            {
+              "ref": "Amo.4.2",
+              "role": "defining",
+              "note": "Yahweh swears by his holiness; Amo 6:8 has the same oath “by himself” (בְּנַפְשׁוֹ)."
+            },
+            {
+              "ref": "Amo.6.8"
+            },
+            {
+              "ref": "Psa.89.36",
+              "note": "“Once I have sworn by my holiness.”"
+            },
+            {
+              "ref": "Lev.22.32",
+              "note": "“The name of my holiness”, set against profaning it."
+            },
+            {
+              "ref": "Isa.63.10",
+              "note": "“They grieved the spirit of his holiness.”"
+            },
+            {
+              "ref": "Psa.51.13",
+              "note": "“Do not take the spirit of your holiness from me.”"
+            },
+            {
+              "ref": "Psa.29.2",
+              "note": "“Bow down to Yahweh in the adornment of holiness.”"
+            }
+          ]
+        },
+        {
+          "id": "qodesh-holy-thing",
+          "gloss": "what is set apart to Yahweh; holy thing",
+          "definition": "What is taken out of common use and belongs to Yahweh: offerings, tithes, devoted things, the priests' portions, which the common person may not eat. It stands opposite חֹל, the common.",
+          "evidence": [
+            {
+              "ref": "Lev.10.10",
+              "role": "defining",
+              "note": "The priests separate between the holy and the common, between the unclean and the clean."
+            },
+            {
+              "ref": "1Sa.21.5",
+              "role": "defining",
+              "note": "“There is no common bread (לֶחֶם חֹל), only holy bread (לֶחֶם קֹדֶשׁ)”; Jesus recounts it (Mat 12:3–4)."
+            },
+            {
+              "ref": "Lev.22.10",
+              "role": "defining",
+              "note": "No outsider may eat a holy thing."
+            },
+            {
+              "ref": "Lev.27.30",
+              "role": "defining",
+              "note": "The tithe “is Yahweh's; it is holy to Yahweh.”"
+            },
+            {
+              "ref": "Lev.23.20",
+              "note": "The firstfruits bread and the two lambs “shall be holy to Yahweh, for the priest.”"
+            },
+            {
+              "ref": "Exo.28.36",
+              "note": "The gold plate on the high priest's turban: “Holy to Yahweh.”"
+            },
+            {
+              "ref": "Jer.2.3",
+              "note": "Israel was holy to Yahweh, the firstfruits of his harvest."
+            },
+            {
+              "ref": "Zec.14.20",
+              "to": "Zec.14.21",
+              "note": "In that day even the horses' bells and every pot in Jerusalem will be “holy to Yahweh”."
+            },
+            {
+              "ref": "Mat.12.4"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "most holy (קֹדֶשׁ קָדָשִׁים)",
+              "definition": "The highest degree of what is set apart: the altar and the tabernacle's vessels, which make holy what touches them, and the devoted thing, which can be neither sold nor redeemed.",
+              "evidence": [
+                {
+                  "ref": "Exo.29.37",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.30.29"
+                },
+                {
+                  "ref": "Lev.27.28",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.6.10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "qodesh-holy-place",
+          "gloss": "holy place, sanctuary",
+          "definition": "The place set apart for Yahweh's presence: the outer room of the tabernacle and, behind the veil, the Holy of Holies; by extension his holy mountain and holy city, which the uncircumcised and unclean will not enter.",
+          "evidence": [
+            {
+              "ref": "Exo.26.33",
+              "role": "defining",
+              "note": "The veil separates between the Holy and the Holy of Holies."
+            },
+            {
+              "ref": "Lev.16.2",
+              "note": "Aaron is not to come at all times into the holy place within the veil."
+            },
+            {
+              "ref": "1Ki.8.6"
+            },
+            {
+              "ref": "Psa.134.2"
+            },
+            {
+              "ref": "Isa.56.7",
+              "note": "“The mountain of my holiness … my house shall be called a house of prayer for all peoples”, quoted by Jesus (Mrk 11:17)."
+            },
+            {
+              "ref": "Isa.52.1",
+              "role": "defining",
+              "note": "Jerusalem, “city of holiness”, which the uncircumcised and the unclean will no longer enter."
+            },
+            {
+              "ref": "Mrk.11.17"
+            }
+          ],
+          "cognate_ids": [
+            "uga-qdsh-n",
+            "phn-qdsh-n"
+          ]
+        },
+        {
+          "id": "qodesh-of-holiness",
+          "gloss": "holy (in “X of holiness”)",
+          "definition": "After another noun, marking it as set apart to Yahweh: holy ground, holy garments, the holy Sabbath, and the holy convocations of his appointed times, days on which Israel is called together and does no ordinary work.",
+          "evidence": [
+            {
+              "ref": "Exo.3.5",
+              "role": "defining",
+              "note": "“Do not come near … the place where you stand is ground of holiness”; quoted in Act 7:33."
+            },
+            {
+              "ref": "Lev.23.2",
+              "role": "defining",
+              "note": "“The appointed times of Yahweh, which you shall proclaim as holy convocations: these are my appointed times.”"
+            },
+            {
+              "ref": "Lev.23.3",
+              "role": "defining",
+              "note": "The seventh day is “a Sabbath of rest, a holy convocation; you shall do no work.”"
+            },
+            {
+              "ref": "Lev.23.4"
+            },
+            {
+              "ref": "Lev.23.7"
+            },
+            {
+              "ref": "Lev.23.8"
+            },
+            {
+              "ref": "Lev.23.21"
+            },
+            {
+              "ref": "Lev.23.24"
+            },
+            {
+              "ref": "Lev.23.27"
+            },
+            {
+              "ref": "Lev.23.35"
+            },
+            {
+              "ref": "Lev.23.36"
+            },
+            {
+              "ref": "Lev.23.37"
+            },
+            {
+              "ref": "Exo.12.16"
+            },
+            {
+              "ref": "Exo.16.23",
+              "note": "“A Sabbath of holiness to Yahweh.”"
+            },
+            {
+              "ref": "Exo.28.2",
+              "note": "Garments of holiness for Aaron."
+            },
+            {
+              "ref": "Act.7.33"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἅγιος",
+          "gloss": "holy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.3.5, אַדְמַת־קֹדֶשׁ → γῆ ἁγία; Isa.52.1, עִיר הַקֹּדֶשׁ → πόλις ἡ ἁγία; Psa.51.13 (LXX 50:13), רוּחַ קָדְשְׁךָ → τὸ πνεῦμα τὸ ἅγιόν σου"
+            },
+            {
+              "ref": "Act.7.33"
+            },
+            {
+              "ref": "Mat.4.5"
+            },
+            {
+              "ref": "Mat.1.18"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "חֹל",
+            "note": "The common, what is not set apart: the priests are to separate and teach the difference.",
+            "evidence": [
+              {
+                "ref": "Lev.10.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.22.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.44.23"
+              },
+              {
+                "ref": "1Sa.21.5"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִקְרָא קֹדֶשׁ",
+            "gloss": "holy convocation: a day set apart on which Israel is called together and does no ordinary work",
+            "evidence": [
+              {
+                "ref": "Lev.23.2"
+              },
+              {
+                "ref": "Lev.23.3"
+              },
+              {
+                "ref": "Lev.23.7"
+              },
+              {
+                "ref": "Lev.23.24"
+              },
+              {
+                "ref": "Lev.23.27"
+              },
+              {
+                "ref": "Lev.23.36"
+              },
+              {
+                "ref": "Exo.12.16"
+              },
+              {
+                "ref": "Num.29.1"
+              }
+            ]
+          },
+          {
+            "phrase": "קֹדֶשׁ הַקֳּדָשִׁים",
+            "gloss": "the Holy of Holies; most holy",
+            "evidence": [
+              {
+                "ref": "Exo.26.33"
+              },
+              {
+                "ref": "1Ki.8.6"
+              },
+              {
+                "ref": "Exo.29.37"
+              }
+            ]
+          },
+          {
+            "phrase": "קֹדֶשׁ לַיהוָה",
+            "gloss": "holy to Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.28.36"
+              },
+              {
+                "ref": "Lev.27.30"
+              },
+              {
+                "ref": "Zec.14.20"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר קָדְשִׁי",
+            "gloss": "my holy mountain",
+            "evidence": [
+              {
+                "ref": "Isa.11.9"
+              },
+              {
+                "ref": "Isa.56.7"
+              },
+              {
+                "ref": "Psa.2.6"
+              }
+            ]
+          },
+          {
+            "phrase": "עִיר הַקֹּדֶשׁ",
+            "gloss": "the holy city",
+            "evidence": [
+              {
+                "ref": "Isa.52.1"
+              },
+              {
+                "ref": "Neh.11.1"
+              }
+            ]
+          },
+          {
+            "phrase": "רוּחַ קָדְשׁוֹ",
+            "gloss": "the spirit of his holiness",
+            "evidence": [
+              {
+                "ref": "Isa.63.10"
+              },
+              {
+                "ref": "Isa.63.11"
+              },
+              {
+                "ref": "Psa.51.13"
+              }
+            ]
+          },
+          {
+            "phrase": "שֵׁם קָדְשִׁי",
+            "gloss": "my holy name",
+            "evidence": [
+              {
+                "ref": "Lev.20.3"
+              },
+              {
+                "ref": "Lev.22.2"
+              },
+              {
+                "ref": "Lev.22.32"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָדַשׁ",
+      "bdb": [
+        "s.an.ad"
+      ],
+      "pos": "verb",
+      "gloss": "be holy; set apart, consecrate; treat as holy",
+      "cognate_ids": [
+        "ar-qadusa",
+        "uga-qdsh-v",
+        "phn-qdsh-v",
+        "gez-qaddasa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be holy, become holy",
+          "senses": [
+            {
+              "gloss": "become holy by contact",
+              "definition": "Pass into the state of what is set apart by touching what is most holy, so that it belongs to the sanctuary.",
+              "evidence": [
+                {
+                  "ref": "Exo.29.37",
+                  "role": "defining",
+                  "note": "“Whatever touches the altar will become holy”; Jesus: the altar sanctifies the gift (Mat 23:19)."
+                },
+                {
+                  "ref": "Exo.30.29"
+                },
+                {
+                  "ref": "Lev.6.11"
+                },
+                {
+                  "ref": "Hag.2.12",
+                  "role": "defining",
+                  "note": "Holy flesh carried in a garment does not make bread holy that the garment touches."
+                },
+                {
+                  "ref": "Exo.29.21",
+                  "note": "Aaron and his garments become holy by the sprinkled blood and oil."
+                }
+              ]
+            },
+            {
+              "gloss": "be forfeit as holy",
+              "definition": "Be lost to common use because it has come to belong to the sanctuary.",
+              "evidence": [
+                {
+                  "ref": "Num.17.2",
+                  "to": "Num.17.3",
+                  "role": "defining",
+                  "note": "The censers presented before Yahweh “are holy” and are beaten into plating for the altar."
+                },
+                {
+                  "ref": "Deu.22.9",
+                  "note": "A vineyard sown with two kinds becomes forfeit."
+                }
+              ]
+            },
+            {
+              "gloss": "hold oneself holy",
+              "definition": "Of idolaters, keep others at a distance as being holier than they.",
+              "evidence": [
+                {
+                  "ref": "Isa.65.5",
+                  "role": "defining",
+                  "note": "“Keep to yourself, do not come near me, for I am holy to you.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "show oneself holy; be treated as holy",
+          "senses": [
+            {
+              "gloss": "show himself holy",
+              "definition": "Of Yahweh, be shown to be holy, in judgment or in saving, before those near him and before the nations; set beside being honoured, glorified, exalted.",
+              "evidence": [
+                {
+                  "ref": "Lev.10.3",
+                  "role": "defining",
+                  "note": "“Among those near me I will show myself holy, and before all the people I will be honoured (אֶכָּבֵד).”"
+                },
+                {
+                  "ref": "Lev.22.32",
+                  "role": "defining",
+                  "note": "Set against profaning his holy name."
+                },
+                {
+                  "ref": "Ezk.28.22",
+                  "role": "defining",
+                  "note": "Parallel “I will be glorified (וְנִכְבַּדְתִּי)”."
+                },
+                {
+                  "ref": "Isa.5.16",
+                  "note": "Parallel “Yahweh of hosts is exalted in justice”."
+                },
+                {
+                  "ref": "Num.20.13"
+                },
+                {
+                  "ref": "Ezk.36.23"
+                },
+                {
+                  "ref": "Ezk.39.27"
+                }
+              ]
+            },
+            {
+              "gloss": "be made holy",
+              "definition": "Of the tent of meeting, be set apart by Yahweh's glory.",
+              "evidence": [
+                {
+                  "ref": "Exo.29.43",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "set apart, consecrate; keep holy",
+          "senses": [
+            {
+              "gloss": "consecrate to Yahweh's service",
+              "definition": "Set a person or thing apart for Yahweh, by anointing, blood, or his word: priests, altar, tabernacle, firstborn.",
+              "evidence": [
+                {
+                  "ref": "Exo.28.41",
+                  "role": "defining",
+                  "note": "Anoint them, fill their hand, consecrate them, “that they may serve me as priests”."
+                },
+                {
+                  "ref": "Exo.13.2",
+                  "role": "defining",
+                  "note": "“Consecrate to me every firstborn … it is mine”; Luk 2:23 cites it as “called holy to the Lord”."
+                },
+                {
+                  "ref": "Lev.8.30"
+                },
+                {
+                  "ref": "Exo.29.36"
+                },
+                {
+                  "ref": "Exo.40.9"
+                },
+                {
+                  "ref": "Luk.2.23"
+                }
+              ]
+            },
+            {
+              "gloss": "set apart a time; keep it holy",
+              "definition": "Set a day or year apart as Yahweh's, and keep it so by not doing ordinary work in it.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.3",
+                  "role": "defining",
+                  "note": "God blessed the seventh day and set it apart, because on it he rested."
+                },
+                {
+                  "ref": "Exo.20.8"
+                },
+                {
+                  "ref": "Exo.20.11"
+                },
+                {
+                  "ref": "Jer.17.22",
+                  "role": "defining",
+                  "note": "“Do no work, but keep the Sabbath day holy.”"
+                },
+                {
+                  "ref": "Lev.25.10",
+                  "note": "The fiftieth year."
+                },
+                {
+                  "ref": "Ezk.20.20"
+                }
+              ]
+            },
+            {
+              "id": "qadash-yahweh-sanctifies",
+              "gloss": "make holy (Yahweh his people)",
+              "definition": "Yahweh's own act on Israel and its priests, by which they are his: “I am Yahweh who makes you holy (מְקַדִּשְׁכֶם)”.",
+              "evidence": [
+                {
+                  "ref": "Exo.31.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.20.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.21.8"
+                },
+                {
+                  "ref": "Ezk.20.12"
+                },
+                {
+                  "ref": "Ezk.37.28"
+                }
+              ]
+            },
+            {
+              "gloss": "prepare the people for Yahweh",
+              "definition": "Make people ready to meet Yahweh or to sacrifice, by washing and keeping themselves apart.",
+              "evidence": [
+                {
+                  "ref": "Exo.19.10",
+                  "role": "defining",
+                  "note": "“Consecrate them today and tomorrow, and let them wash their garments.”"
+                },
+                {
+                  "ref": "Exo.19.14"
+                },
+                {
+                  "ref": "Jos.7.13"
+                },
+                {
+                  "ref": "1Sa.16.5"
+                },
+                {
+                  "ref": "Job.1.5"
+                }
+              ],
+              "cognate_ids": [
+                "akk-qadashu"
+              ]
+            },
+            {
+              "gloss": "proclaim, appoint (a fast, assembly, war)",
+              "definition": "Set apart and proclaim a fast or solemn assembly, or prepare war as a sacred undertaking; and of Yahweh, appoint destroyers against a people.",
+              "evidence": [
+                {
+                  "ref": "Jol.1.14",
+                  "role": "defining",
+                  "note": "“Consecrate a fast, call an assembly.”"
+                },
+                {
+                  "ref": "Jol.2.15"
+                },
+                {
+                  "ref": "2Ki.10.20",
+                  "note": "Jehu's assembly for Baal."
+                },
+                {
+                  "ref": "Jer.6.4",
+                  "role": "defining",
+                  "note": "“Consecrate war against her.”"
+                },
+                {
+                  "ref": "Jol.4.9"
+                },
+                {
+                  "ref": "Mic.3.5"
+                },
+                {
+                  "ref": "Jer.22.7"
+                }
+              ]
+            },
+            {
+              "id": "qadash-treat-holy",
+              "gloss": "treat as holy",
+              "definition": "Treat Yahweh, or his name, as the Holy One; the opposite of profaning.",
+              "evidence": [
+                {
+                  "ref": "Ezk.36.23",
+                  "role": "defining",
+                  "note": "“I will sanctify my great name, profaned among the nations.”"
+                },
+                {
+                  "ref": "Deu.32.51",
+                  "role": "defining",
+                  "note": "“Because you did not treat me as holy in the midst of the sons of Israel.”"
+                },
+                {
+                  "ref": "Mat.6.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be consecrated",
+          "senses": [
+            {
+              "gloss": "be consecrated",
+              "definition": "Be set apart: priests for incense, the appointed times of Yahweh, gifts, and the warriors Yahweh musters.",
+              "evidence": [
+                {
+                  "ref": "Ezr.3.5",
+                  "role": "defining",
+                  "note": "“All the consecrated appointed times of Yahweh (מוֹעֲדֵי יְהוָה הַמְקֻדָּשִׁים)”: the times of Lev 23."
+                },
+                {
+                  "ref": "2Ch.26.18",
+                  "role": "defining",
+                  "note": "The priests, sons of Aaron, “consecrated to burn incense”."
+                },
+                {
+                  "ref": "2Ch.31.6"
+                },
+                {
+                  "ref": "Isa.13.3"
+                },
+                {
+                  "ref": "Ezk.48.11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "consecrate, dedicate; regard as holy",
+          "senses": [
+            {
+              "gloss": "dedicate (property) to Yahweh",
+              "definition": "Give a house, field, animal or spoil to Yahweh, so that it passes out of the giver's common use.",
+              "evidence": [
+                {
+                  "ref": "Lev.27.14",
+                  "role": "defining",
+                  "note": "“When a man consecrates his house as holy to Yahweh.”"
+                },
+                {
+                  "ref": "Lev.27.16"
+                },
+                {
+                  "ref": "2Sa.8.11"
+                },
+                {
+                  "ref": "Lev.22.2",
+                  "note": "The holy things the sons of Israel consecrate to Yahweh."
+                },
+                {
+                  "ref": "Jdg.17.3",
+                  "note": "Silver consecrated to Yahweh to make an idol."
+                }
+              ]
+            },
+            {
+              "gloss": "set apart (persons, house) as his",
+              "definition": "Of Yahweh, claim persons or a house as his own: the firstborn, a prophet before birth, the temple.",
+              "evidence": [
+                {
+                  "ref": "Num.3.13",
+                  "role": "defining",
+                  "note": "“I consecrated for myself every firstborn in Israel … they are mine.”"
+                },
+                {
+                  "ref": "Jer.1.5",
+                  "role": "defining",
+                  "note": "“Before you came out of the womb I set you apart.”"
+                },
+                {
+                  "ref": "1Ki.9.3"
+                },
+                {
+                  "ref": "Deu.15.19"
+                }
+              ]
+            },
+            {
+              "id": "hiphil-regard-holy",
+              "gloss": "regard as holy",
+              "definition": "Treat Yahweh as the Holy One, in fear and trust.",
+              "evidence": [
+                {
+                  "ref": "Isa.8.13",
+                  "role": "defining",
+                  "note": "“Yahweh of hosts, him you shall regard as holy; let him be your fear and your dread”; 1Pe 3:15 quotes it of the Lord Messiah."
+                },
+                {
+                  "ref": "Num.20.12",
+                  "role": "defining",
+                  "note": "“You did not trust me, to treat me as holy before the eyes of the sons of Israel.”"
+                },
+                {
+                  "ref": "Isa.29.23"
+                },
+                {
+                  "ref": "1Pe.3.15"
+                }
+              ]
+            },
+            {
+              "gloss": "set apart for slaughter",
+              "definition": "Mark out for a day of slaughter, as a sacrifice is set apart.",
+              "evidence": [
+                {
+                  "ref": "Jer.12.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Zep.1.7",
+                  "note": "Yahweh has prepared a sacrifice and consecrated his guests."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "consecrate oneself; purify oneself",
+          "senses": [
+            {
+              "gloss": "consecrate oneself",
+              "definition": "Make oneself ready to come near Yahweh, to carry the ark, or to keep the Passover.",
+              "evidence": [
+                {
+                  "ref": "Exo.19.22",
+                  "role": "defining",
+                  "note": "The priests who come near Yahweh must consecrate themselves."
+                },
+                {
+                  "ref": "Jos.3.5"
+                },
+                {
+                  "ref": "1Ch.15.12",
+                  "role": "defining",
+                  "note": "“Consecrate yourselves … and bring up the ark of Yahweh.”"
+                },
+                {
+                  "ref": "2Ch.30.15"
+                },
+                {
+                  "ref": "2Ch.29.34"
+                }
+              ]
+            },
+            {
+              "gloss": "make oneself holy",
+              "definition": "Keep oneself set apart to Yahweh, refusing what makes one unclean, because he is holy.",
+              "evidence": [
+                {
+                  "ref": "Lev.11.44",
+                  "role": "defining",
+                  "note": "“Consecrate yourselves and be holy, for I am holy; do not make yourselves unclean.”"
+                },
+                {
+                  "ref": "Lev.20.7",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "purify oneself",
+              "definition": "Cleanse oneself ritually from uncleanness; of idolaters, purify themselves for their garden rites.",
+              "evidence": [
+                {
+                  "ref": "2Sa.11.4",
+                  "role": "defining",
+                  "note": "“She was purifying herself from her uncleanness.”"
+                },
+                {
+                  "ref": "Isa.66.17",
+                  "role": "defining",
+                  "note": "Parallel “those who purify themselves (הַמִּטַּהֲרִים)”."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qadashu"
+              ]
+            },
+            {
+              "gloss": "show himself holy",
+              "definition": "Of Yahweh, make his holiness known among the nations.",
+              "evidence": [
+                {
+                  "ref": "Ezk.38.23",
+                  "role": "defining",
+                  "note": "“I will magnify myself and show myself holy.”"
+                }
+              ]
+            },
+            {
+              "gloss": "be kept holy (of a feast)",
+              "definition": "Of a feast, be set apart and kept, with song and gladness.",
+              "evidence": [
+                {
+                  "ref": "Isa.30.29",
+                  "role": "defining",
+                  "note": "“As in the night when a feast is kept holy.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἁγιάζω",
+          "gloss": "sanctify, make or treat as holy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.8.13, תַקְדִּישׁוּ → ἁγιάσατε; Ezk.36.23, קִדַּשְׁתִּי → ἁγιάσω; Exo.29.37, יִקְדָּשׁ → ἁγιασθήσεται"
+            },
+            {
+              "ref": "1Pe.3.15"
+            },
+            {
+              "ref": "Mat.6.9"
+            },
+            {
+              "ref": "Mat.23.19"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "חָלַל",
+            "note": "To profane, treat as common: Yahweh's name is profaned or treated as holy.",
+            "evidence": [
+              {
+                "ref": "Lev.22.32",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.36.23",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "כָּבֵד",
+            "note": "Niphal: be honoured, glorified, beside showing himself holy.",
+            "evidence": [
+              {
+                "ref": "Lev.10.3"
+              },
+              {
+                "ref": "Ezk.28.22"
+              }
+            ]
+          },
+          {
+            "lemma": "טָהֵר",
+            "note": "Hithpael: purify oneself.",
+            "evidence": [
+              {
+                "ref": "Isa.66.17"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּדַל",
+            "note": "Hiphil: separate. Aaron was separated to consecrate him.",
+            "evidence": [
+              {
+                "ref": "1Ch.23.13"
+              },
+              {
+                "ref": "Lev.20.26"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֲנִי יְהוָה מְקַדִּשְׁכֶם",
+            "gloss": "I am Yahweh who makes you holy",
+            "evidence": [
+              {
+                "ref": "Exo.31.13"
+              },
+              {
+                "ref": "Lev.20.8"
+              },
+              {
+                "ref": "Lev.22.32"
+              }
+            ]
+          },
+          {
+            "phrase": "קַדְּשׁוּ צוֹם",
+            "gloss": "consecrate a fast",
+            "evidence": [
+              {
+                "ref": "Jol.1.14"
+              },
+              {
+                "ref": "Jol.2.15"
+              }
+            ]
+          },
+          {
+            "phrase": "קַדְּשׁוּ מִלְחָמָה",
+            "gloss": "consecrate war: prepare for battle",
+            "evidence": [
+              {
+                "ref": "Jer.6.4"
+              },
+              {
+                "ref": "Jol.4.9"
+              },
+              {
+                "ref": "Mic.3.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָדוֹשׁ",
+      "bdb": [
+        "s.an.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "holy: set apart as God's; Holy One",
+      "cognate_ids": [
+        "ar-quds",
+        "akk-quddushu",
+        "akk-qashdu",
+        "uga-qdsh-adj",
+        "phn-qdsh-adj",
+        "gez-qeddus"
+      ],
+      "senses": [
+        {
+          "id": "qadosh-yahweh",
+          "gloss": "holy (of Yahweh); the Holy One",
+          "definition": "What Yahweh is, beyond comparison with any other: none is holy like him; he is God and not man.",
+          "evidence": [
+            {
+              "ref": "Isa.6.3",
+              "role": "defining",
+              "note": "“Holy, holy, holy is Yahweh of hosts”; Rev 4:8."
+            },
+            {
+              "ref": "1Sa.2.2",
+              "role": "defining",
+              "note": "“None is holy like Yahweh; there is none besides you.”"
+            },
+            {
+              "ref": "Hos.11.9",
+              "role": "defining",
+              "note": "“I am God and not man, the Holy One in your midst.”"
+            },
+            {
+              "ref": "Lev.19.2"
+            },
+            {
+              "ref": "Jos.24.19",
+              "note": "“He is a holy God, a jealous God.”"
+            },
+            {
+              "ref": "Isa.57.15",
+              "note": "His name is Holy; he dwells on high and with the crushed and lowly."
+            },
+            {
+              "ref": "Psa.99.3"
+            },
+            {
+              "ref": "Psa.99.5"
+            },
+            {
+              "ref": "Rev.4.8"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "the Holy One of Israel",
+              "definition": "Yahweh's title as the Holy One who has bound himself to Israel, chiefly in Isaiah.",
+              "evidence": [
+                {
+                  "ref": "Isa.1.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.41.14"
+                },
+                {
+                  "ref": "Isa.43.3"
+                },
+                {
+                  "ref": "Psa.71.22"
+                },
+                {
+                  "ref": "Psa.78.41"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "qadosh-people",
+          "gloss": "holy: set apart to Yahweh (of people)",
+          "definition": "Of people who belong to Yahweh because he chose and separated them: Israel as a nation, the priests, the Nazirite, a man of God; “holy ones” of his people.",
+          "evidence": [
+            {
+              "ref": "Lev.20.26",
+              "role": "defining",
+              "note": "“You shall be holy to me, for I Yahweh am holy, and I have separated you from the peoples to be mine.”"
+            },
+            {
+              "ref": "Deu.7.6",
+              "role": "defining",
+              "note": "A people holy to Yahweh, chosen out of all peoples as his treasured possession."
+            },
+            {
+              "ref": "Num.16.5",
+              "role": "defining",
+              "note": "Yahweh will show “who is his, and who is holy”, and bring him near."
+            },
+            {
+              "ref": "Exo.19.6",
+              "note": "“A kingdom of priests and a holy nation”; 1Pe 2:9."
+            },
+            {
+              "ref": "Num.16.7"
+            },
+            {
+              "ref": "Lev.21.6"
+            },
+            {
+              "ref": "Num.6.8",
+              "note": "The Nazirite is holy to Yahweh all the days of his separation."
+            },
+            {
+              "ref": "2Ki.4.9"
+            },
+            {
+              "ref": "Psa.34.10",
+              "note": "“Fear Yahweh, you his holy ones.”"
+            },
+            {
+              "ref": "1Pe.1.16"
+            },
+            {
+              "ref": "1Pe.2.9"
+            }
+          ]
+        },
+        {
+          "id": "qadosh-heavenly",
+          "gloss": "holy ones (of heaven)",
+          "definition": "The heavenly beings around Yahweh, his council and assembly, who come with him.",
+          "evidence": [
+            {
+              "ref": "Psa.89.6",
+              "role": "defining",
+              "note": "“Your faithfulness in the assembly of the holy ones.”"
+            },
+            {
+              "ref": "Psa.89.8",
+              "role": "defining",
+              "note": "“A God greatly feared in the council of the holy ones.”"
+            },
+            {
+              "ref": "Job.5.1"
+            },
+            {
+              "ref": "Zec.14.5",
+              "note": "“Yahweh my God will come, and all the holy ones with him”; 1Th 3:13."
+            },
+            {
+              "ref": "Dan.8.13"
+            },
+            {
+              "ref": "1Th.3.13"
+            }
+          ]
+        },
+        {
+          "id": "qadosh-place-time",
+          "gloss": "holy (of places and days)",
+          "definition": "Of a place or day set apart to Yahweh: the place where priests eat the holy portions, the camp in which he walks, the day holy to him, kept with joy and not mourning.",
+          "evidence": [
+            {
+              "ref": "Lev.6.9"
+            },
+            {
+              "ref": "Deu.23.15",
+              "role": "defining",
+              "note": "Yahweh walks in the camp, so it shall be holy, that he see nothing indecent in it."
+            },
+            {
+              "ref": "Neh.8.9",
+              "role": "defining",
+              "note": "On the first of the seventh month: “This day is holy to Yahweh your God; do not mourn or weep.”"
+            },
+            {
+              "ref": "Neh.8.10"
+            },
+            {
+              "ref": "Neh.8.11"
+            },
+            {
+              "ref": "Isa.58.13",
+              "note": "The Sabbath, “the holy of Yahweh, honoured”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἅγιος",
+          "gloss": "holy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.11.44, קְדֹשִׁים … קָדוֹשׁ → ἅγιοι … ἅγιος; Isa.6.3, קָדוֹשׁ ×3 → ἅγιος ×3; Exo.19.6, גוֹי קָדוֹשׁ → ἔθνος ἅγιον"
+            },
+            {
+              "ref": "1Pe.1.16"
+            },
+            {
+              "ref": "Rev.4.8"
+            },
+            {
+              "ref": "1Pe.2.9"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֵל",
+            "note": "The Holy One is the Mighty One, set against man.",
+            "evidence": [
+              {
+                "ref": "Hos.11.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.24.19"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "טָמֵא",
+            "note": "Being holy means not making oneself unclean.",
+            "evidence": [
+              {
+                "ref": "Lev.11.44",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "קְדוֹשׁ יִשְׂרָאֵל",
+            "gloss": "the Holy One of Israel",
+            "evidence": [
+              {
+                "ref": "Isa.1.4"
+              },
+              {
+                "ref": "Isa.5.24"
+              },
+              {
+                "ref": "Isa.12.6"
+              },
+              {
+                "ref": "Psa.71.22"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מִקְדָּשׁ",
+      "bdb": [
+        "s.an.ah"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sanctuary, holy place",
+      "cognate_ids": [
+        "ar-maqdis",
+        "phn-mqdsh",
+        "gez-maqdas",
+        "uga-qdsh-n"
+      ],
+      "senses": [
+        {
+          "gloss": "Yahweh's sanctuary",
+          "definition": "The place set apart where Yahweh dwells among his people: the tabernacle, the temple, and the sanctuary he promises to set among them forever.",
+          "evidence": [
+            {
+              "ref": "Exo.25.8",
+              "role": "defining",
+              "note": "“Let them make me a sanctuary, that I may dwell in their midst.”"
+            },
+            {
+              "ref": "Ezk.37.26",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.37.28",
+              "role": "defining",
+              "note": "The nations will know that Yahweh sanctifies Israel when his sanctuary is in their midst forever."
+            },
+            {
+              "ref": "Lev.26.2",
+              "note": "“Keep my Sabbaths and fear my sanctuary.”"
+            },
+            {
+              "ref": "Lev.21.12"
+            },
+            {
+              "ref": "Exo.15.17"
+            },
+            {
+              "ref": "Lam.2.7"
+            },
+            {
+              "ref": "Dan.11.31"
+            }
+          ]
+        },
+        {
+          "gloss": "Yahweh himself as sanctuary",
+          "definition": "Yahweh as the refuge and meeting-place of those who fear him, where no building stands.",
+          "evidence": [
+            {
+              "ref": "Isa.8.14",
+              "role": "defining",
+              "note": "“He will be a sanctuary, and a stone of stumbling to both houses of Israel.”"
+            },
+            {
+              "ref": "Ezk.11.16",
+              "role": "defining",
+              "note": "“I have been to them a little sanctuary in the lands where they have gone.”"
+            }
+          ]
+        },
+        {
+          "gloss": "sanctuary of other worship",
+          "definition": "A holy place of worship not authorized by Yahweh, or of another god.",
+          "evidence": [
+            {
+              "ref": "Amo.7.13",
+              "role": "defining",
+              "note": "Bethel, “the king's sanctuary”."
+            },
+            {
+              "ref": "Isa.16.12",
+              "note": "Moab goes to its sanctuary to pray."
+            },
+            {
+              "ref": "Lev.26.31"
+            },
+            {
+              "ref": "Ezk.28.18"
+            }
+          ]
+        },
+        {
+          "gloss": "holy portion",
+          "definition": "The part of a gift set apart to Yahweh.",
+          "evidence": [
+            {
+              "ref": "Num.18.29",
+              "role": "defining",
+              "note": "From all the Levites' gifts, Yahweh's contribution, “its holy part”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἅγιος",
+          "gloss": "τὰ ἅγια: the sanctuary",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.26.2, מִקְדָּשִׁי → τῶν ἁγίων μου; Ezk.37.28, מִקְדָּשִׁי → τὰ ἅγιά μου"
+            },
+            {
+              "ref": "Heb.9.24"
+            },
+            {
+              "ref": "Heb.9.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָדֵשׁ",
+      "bdb": [
+        "s.an.ae"
+      ],
+      "pos": "noun",
+      "gender": "mf",
+      "gloss": "one dedicated to a foreign cult; cult prostitute (f. קְדֵשָׁה)",
+      "summary": "A man (קָדֵשׁ) or woman (קְדֵשָׁה) set apart to the cult of another god. Scripture never calls them holy to Yahweh: it sets the קְדֵשָׁה beside the harlot (זוֹנָה), forbids both to Israel, and lists them among the nations' abominations. The tie to the root is dedication to a god; that their role was harlotry rests on scripture's parallels, not on a description of it.",
+      "cognate_ids": [
+        "akk-qadishtu",
+        "uga-qdsht"
+      ],
+      "senses": [
+        {
+          "gloss": "one dedicated to a foreign cult; cult prostitute",
+          "definition": "A person dedicated to the rites of another god at a shrine, set beside the harlot and the hire of harlotry, forbidden among Israel.",
+          "evidence": [
+            {
+              "ref": "Deu.23.18",
+              "role": "defining",
+              "note": "No קְדֵשָׁה among the daughters of Israel nor קָדֵשׁ among the sons; the next verse forbids a harlot's hire in Yahweh's house."
+            },
+            {
+              "ref": "Deu.23.19"
+            },
+            {
+              "ref": "Gen.38.21",
+              "role": "defining",
+              "note": "Hirah asks for “the קְדֵשָׁה” whom Judah took for a harlot (זוֹנָה, Gen 38:15)."
+            },
+            {
+              "ref": "Gen.38.15"
+            },
+            {
+              "ref": "Hos.4.14",
+              "role": "defining",
+              "note": "“They go aside with harlots and sacrifice with the קְדֵשׁוֹת.”"
+            },
+            {
+              "ref": "1Ki.14.24",
+              "note": "“There were also קָדֵשׁ in the land; they did all the abominations of the nations.”"
+            },
+            {
+              "ref": "1Ki.15.12"
+            },
+            {
+              "ref": "1Ki.22.47"
+            },
+            {
+              "ref": "2Ki.23.7",
+              "note": "Their houses stood by Yahweh's house, where women wove for Asherah."
+            },
+            {
+              "ref": "Job.36.14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדִּישׁ",
+      "lang": "arc",
+      "root": "קדיש",
+      "bdb": [
+        "xs.ab.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "holy; holy one",
+      "cognate_ids": [
+        "ar-quds",
+        "akk-quddushu",
+        "uga-qdsh-adj",
+        "phn-qdsh-adj",
+        "gez-qeddus"
+      ],
+      "senses": [
+        {
+          "gloss": "holy (gods), in the king's words",
+          "definition": "In Nebuchadnezzar's and the queen's mouths, the “holy gods” whose spirit is in Daniel.",
+          "evidence": [
+            {
+              "ref": "Dan.4.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.4.6"
+            },
+            {
+              "ref": "Dan.4.15"
+            },
+            {
+              "ref": "Dan.5.11"
+            }
+          ]
+        },
+        {
+          "gloss": "holy one (of heaven)",
+          "definition": "A heavenly being, “a watcher and a holy one” who comes down from heaven and announces the decree.",
+          "evidence": [
+            {
+              "ref": "Dan.4.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.4.14"
+            },
+            {
+              "ref": "Dan.4.20"
+            }
+          ],
+          "kin": [
+            "qadosh-heavenly"
+          ]
+        },
+        {
+          "gloss": "the holy ones of the Most High",
+          "definition": "The people who belong to the Most High, warred against by the horn, who receive the kingdom forever.",
+          "evidence": [
+            {
+              "ref": "Dan.7.27",
+              "role": "defining",
+              "note": "The kingdom is given to “the people of the holy ones of the Most High”."
+            },
+            {
+              "ref": "Dan.7.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.7.21"
+            },
+            {
+              "ref": "Dan.7.22"
+            },
+            {
+              "ref": "Dan.7.25"
+            },
+            {
+              "ref": "1Co.6.2",
+              "note": "“The holy ones will judge the world”, as Dan 7:22 gives judgment to them."
+            }
+          ],
+          "kin": [
+            "qadosh-people"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדִּישָׁא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "holy; holy one, saint",
+      "cognate_ids": [
+        "ar-quds",
+        "akk-quddushu",
+        "uga-qdsh-adj",
+        "phn-qdsh-adj",
+        "gez-qeddus"
+      ],
+      "senses": [
+        {
+          "gloss": "holy (of God)",
+          "definition": "What God is; the Peshitta's word where the New Testament quotes קָדוֹשׁ of Yahweh.",
+          "evidence": [
+            {
+              "ref": "Rev.4.8",
+              "role": "defining",
+              "note": "“Holy, holy, holy, the Lord God”, from Isa 6:3."
+            },
+            {
+              "ref": "1Pe.1.15",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "qadosh-yahweh"
+          ]
+        },
+        {
+          "gloss": "holy, set apart (of people, places)",
+          "definition": "Set apart to God: his people, the firstborn, the ground where he appears; “the holy ones” of his people.",
+          "evidence": [
+            {
+              "ref": "1Pe.1.16",
+              "role": "defining",
+              "note": "“Be holy, as I am holy”, from Lev 11:44 and 19:2."
+            },
+            {
+              "ref": "1Pe.2.9",
+              "note": "“A holy people”, from Exo 19:6."
+            },
+            {
+              "ref": "Luk.2.23",
+              "note": "The firstborn male “shall be called holy to the Lord”, from Exo 13:2."
+            },
+            {
+              "ref": "Act.7.33",
+              "note": "“The ground on which you stand is holy”, from Exo 3:5."
+            },
+            {
+              "ref": "1Co.6.2"
+            }
+          ],
+          "kin": [
+            "qadosh-people"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קוּדְשָׁא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "holiness; holy thing",
+      "cognate_ids": [
+        "ar-quds"
+      ],
+      "senses": [
+        {
+          "gloss": "holiness",
+          "definition": "In “the Spirit of holiness” and “the city of holiness”, the Peshitta's phrases answering רוּחַ קָדְשׁוֹ and עִיר הַקֹּדֶשׁ.",
+          "evidence": [
+            {
+              "ref": "Mat.1.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.4.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Rom.15.16"
+            }
+          ],
+          "kin": [
+            "qodesh-holiness"
+          ]
+        },
+        {
+          "gloss": "what is holy",
+          "definition": "A holy thing, not to be given to the unclean.",
+          "evidence": [
+            {
+              "ref": "Mat.7.6",
+              "role": "defining",
+              "note": "“Do not give what is holy to dogs.”"
+            }
+          ],
+          "kin": [
+            "qodesh-holy-thing"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדֵּשׁ",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "sanctify; be sanctified, hallowed",
+      "cognate_ids": [
+        "ar-qadusa",
+        "uga-qdsh-v",
+        "phn-qdsh-v",
+        "gez-qaddasa"
+      ],
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "sanctify, consecrate",
+          "senses": [
+            {
+              "gloss": "sanctify, set apart",
+              "definition": "Set apart to God: the Father sanctifies the Son and sends him; Jesus sanctifies himself for his disciples and asks that they be sanctified in the truth; his blood sanctifies the people; the altar sanctifies the gift.",
+              "evidence": [
+                {
+                  "ref": "Jhn.17.17",
+                  "role": "defining",
+                  "note": "“Father, sanctify them in your truth.”"
+                },
+                {
+                  "ref": "Jhn.17.19",
+                  "role": "defining",
+                  "note": "“For them I sanctify myself, that they also may be sanctified in truth.”"
+                },
+                {
+                  "ref": "Jhn.10.36"
+                },
+                {
+                  "ref": "Mat.23.17"
+                },
+                {
+                  "ref": "Mat.23.19",
+                  "note": "The altar sanctifies the offering, as Exo 29:37."
+                },
+                {
+                  "ref": "Heb.13.12"
+                },
+                {
+                  "ref": "Heb.2.11"
+                }
+              ],
+              "kin": [
+                "qadash-yahweh-sanctifies"
+              ]
+            },
+            {
+              "gloss": "regard as holy",
+              "definition": "Hold the Lord as holy in the heart.",
+              "evidence": [
+                {
+                  "ref": "1Pe.3.15",
+                  "role": "defining",
+                  "note": "“Sanctify the Lord Messiah in your hearts”, from Isa 8:13."
+                }
+              ],
+              "kin": [
+                "hiphil-regard-holy"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be sanctified, hallowed",
+          "senses": [
+            {
+              "gloss": "be hallowed, be sanctified",
+              "definition": "Be held holy (of God's name); be made holy (of his people).",
+              "evidence": [
+                {
+                  "ref": "Mat.6.9",
+                  "role": "defining",
+                  "note": "“May your name be hallowed”: Yahweh's promise to sanctify his name (Ezk 36:23) made a prayer."
+                },
+                {
+                  "ref": "Luk.11.2"
+                },
+                {
+                  "ref": "Heb.10.10",
+                  "role": "defining",
+                  "note": "“We have been sanctified through the offering of the body of Jesus the Messiah once.”"
+                },
+                {
+                  "ref": "Rev.22.11"
+                }
+              ],
+              "kin": [
+                "qadash-treat-holy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַקְדְּשָׁא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sanctuary",
+      "cognate_ids": [
+        "ar-maqdis",
+        "phn-mqdsh",
+        "gez-maqdas"
+      ],
+      "senses": [
+        {
+          "gloss": "sanctuary",
+          "definition": "In בֵּית מַקְדְּשָׁא, the holy place the high priest entered yearly with blood not his own, and the true one Christ entered once with his own.",
+          "evidence": [
+            {
+              "ref": "Heb.9.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Heb.9.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Heb.9.25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדִּישׁוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "holiness, sanctification",
+      "cognate_ids": [
+        "ar-quds"
+      ],
+      "senses": [
+        {
+          "gloss": "holiness, sanctification",
+          "definition": "The state of being set apart to God, set against impurity and sexual immorality; pursued by believers, and God's own holiness they are brought to share.",
+          "evidence": [
+            {
+              "ref": "1Th.4.3",
+              "role": "defining",
+              "note": "“This is God's will: your holiness, that you be separated from all fornication.”"
+            },
+            {
+              "ref": "1Th.4.7",
+              "role": "defining",
+              "note": "“God did not call you to uncleanness but to holiness.”"
+            },
+            {
+              "ref": "Heb.12.10"
+            },
+            {
+              "ref": "Heb.12.14"
+            },
+            {
+              "ref": "2Co.7.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-qadusa",
+      "lang": "ar",
+      "form": "قَدُسَ",
+      "translit": "qadusa",
+      "gloss": "be holy, be pure; (II qaddasa) hallow, sanctify, consecrate; declare (God) holy; purify; (V taqaddasa) be hallowed",
+      "relation": "cognate",
+      "note": "Lane cites a commentator deriving “he declared Him far removed from every impurity” from قَدَسَ فِى الأَرْضِ “he went far away into the land”; this is recorded, not relied on.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2496, root قدس, قَدَسَ فِى الأَرْضِ / قَدُسَ (n35303); قدّسهُ (n35304)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2497, root قدس, تقدّس (n35305)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000323 qdš [holy], ARB028261 qadusa [pure]"
+        }
+      ]
+    },
+    {
+      "id": "ar-quds",
+      "lang": "ar",
+      "form": "قُدْس",
+      "translit": "quds",
+      "gloss": "holiness, sanctity, purity; al-quddūs, the All-holy (of God)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2497, root قدس, قُدْسٌ (n35306); القُدُّوسُ (n35310)"
+        }
+      ]
+    },
+    {
+      "id": "ar-maqdis",
+      "lang": "ar",
+      "form": "مَقْدِس",
+      "translit": "maqdis",
+      "gloss": "in bayt al-maqdis, the hallowed house: Jerusalem",
+      "relation": "cognate",
+      "note": "Lane has it only in the name of Jerusalem, which may carry Jewish or Christian usage rather than an independent Arabic word for “sanctuary”.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2497, root قدس, مُقَدَّسٌ (n35312); بَيْتُ المَقْدِسِ (n35311)"
+        }
+      ]
+    },
+    {
+      "id": "akk-qadashu",
+      "lang": "akk",
+      "form": "qadāšu",
+      "translit": "qadāšu",
+      "gloss": "be(come) pure; (D) purify, cleanse oneself",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000014610, qadāšu [be(come) pure] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000323 qdš [holy], AKK009397 qadāšu [be(come) pure]"
+        }
+      ]
+    },
+    {
+      "id": "akk-quddushu",
+      "lang": "akk",
+      "form": "quddušu",
+      "translit": "quddušu",
+      "gloss": "holy; purified",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000015080, quddušu [purified] AJ"
+        }
+      ]
+    },
+    {
+      "id": "akk-qashdu",
+      "lang": "akk",
+      "form": "qašdu",
+      "translit": "qašdu",
+      "gloss": "holy, pure",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000141400, qašdu [pure] AJ"
+        }
+      ]
+    },
+    {
+      "id": "akk-qadishtu",
+      "lang": "akk",
+      "form": "qadištu",
+      "translit": "qadištu",
+      "gloss": "a type of priestess; sacred woman",
+      "relation": "cognate",
+      "note": "A class of women dedicated to a cult, formed from the root as קְדֵשָׁה is. Oracc's gloss does not say what the office involved.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000021290, qadištu [(a type of priestess)] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-qdsh-v",
+      "lang": "uga",
+      "form": "𐎖𐎄𐎌",
+      "translit": "qdš",
+      "gloss": "(Š) consecrate, offer",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 199, §93 Glossary, /q-d-š/",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n226",
+          "note": "\"Š “to consecrate, offer” (H. q-d-š Hi.)\" (read from the OCR text)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 97, §64, denominative causatives",
+          "note": "1.119:29–30 \"we shall consecrate the buffaloes/bulls of Baal\"."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000323 qdš [holy], UGC003456 qdš [consecrate]"
+        }
+      ]
+    },
+    {
+      "id": "uga-qdsh-n",
+      "lang": "uga",
+      "form": "𐎖𐎄𐎌",
+      "translit": "qdš",
+      "gloss": "sanctuary",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 199, §93 Glossary, qdš",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n226",
+          "note": "\"“sanctuary” … (H. qōdæš, Syr. qudša, Arab. quds)\" (read from the OCR text)."
+        }
+      ]
+    },
+    {
+      "id": "uga-qdsh-adj",
+      "lang": "uga",
+      "form": "𐎖𐎄𐎌",
+      "translit": "qdš",
+      "gloss": "holy; epithet of the god Il",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 199, §93 Glossary, qdš",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n226",
+          "note": "\"“holy” 1.16:I:22, epithet of the god Il (cf. H. qādōš, Aram. qaddīš, Arab. qiddīs, qaddūs …)\" (read from the OCR text)."
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "p. 173, qdš",
+          "note": "Ugaritic qdš \"holy; a shrine\" set beside Ethiopic qaddasa (read from the OCR text)."
+        }
+      ]
+    },
+    {
+      "id": "uga-qdsht",
+      "lang": "uga",
+      "form": "𐎖𐎄𐎌𐎚",
+      "translit": "qdšt",
+      "gloss": "hierodule: a woman dedicated to a cult",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 41, §43.22, qatil- pattern, f. /qadišt-/",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n68",
+          "note": "\"f. /qadišt-/ qdšt qa-di-iš-ti “hierodule”\" (read from the OCR text)."
+        }
+      ]
+    },
+    {
+      "id": "phn-qdsh-v",
+      "lang": "phn",
+      "form": "𐤒𐤃𐤔",
+      "translit": "qdš",
+      "gloss": "(yiphil) dedicate, consecrate; (hithpael) dedicate oneself",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 424, Q-D-Š I",
+          "note": "KAI 43.8/9 \"I presented and dedicated many shrines … to my Lord Milqart\"; KAI 138 htqdš \"dedicated himself unto <the god> Baaliddir\"."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000323 qdš [holy], PUN001782 qdš [dedicate]"
+        }
+      ]
+    },
+    {
+      "id": "phn-qdsh-adj",
+      "lang": "phn",
+      "form": "𐤒𐤃𐤔",
+      "translit": "qdš",
+      "gloss": "holy; holy one, god(dess)",
+      "relation": "cognate",
+      "note": "Krahmalkov infers the adjective's form /qiddīš/ from the spelling qyds, the pattern of Aramaic קַדִּישׁ.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 424–425, QDŠ II (holy one, god) and QDŠ (adj. holy)",
+          "note": "KAI 14.9 hʾlnm hqdšm \"the holy gods\"; CIS i 4841 \"Sakun, the holy god\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-qdsh-n",
+      "lang": "phn",
+      "form": "𐤒𐤃𐤔",
+      "translit": "qdš",
+      "gloss": "holy place, temple",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 424, QDŠ (n.m. holy place, temple)",
+          "note": "\"the servitor of Astarte at the gate of the temple (bšʿr hqdš)\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-mqdsh",
+      "lang": "phn",
+      "form": "𐤌𐤒𐤃𐤔",
+      "translit": "mqdš",
+      "gloss": "sanctuary (main room and cella) of a temple",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 305–306, MQDŠ",
+          "note": "KAI 43.2/3 \"that I erected in the sanctuary <of the temple> of Milqart\"; KAI 62 \"these three sanctuaries\"."
+        }
+      ]
+    },
+    {
+      "id": "gez-qaddasa",
+      "lang": "gez",
+      "form": "ቀደሰ",
+      "translit": "qaddasa",
+      "gloss": "be holy; sanctify, hallow, consecrate",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 173, qdš",
+          "note": "Common Ethiopic verb, D stem, \"be holy; sanctify, hallow, consecrate\" (read from the OCR text)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000323 qdš [holy], GEZ004220 qaddasa [sanctify]"
+        }
+      ]
+    },
+    {
+      "id": "gez-qeddus",
+      "lang": "gez",
+      "form": "ቅዱስ",
+      "translit": "qəddus",
+      "gloss": "sacred, holy",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 173, qdš",
+          "note": "Common Ethiopic adjective \"sacred, holy\" (read from the OCR text)."
+        }
+      ]
+    },
+    {
+      "id": "gez-maqdas",
+      "lang": "gez",
+      "form": "መቅደስ",
+      "translit": "maqdas",
+      "gloss": "sanctuary, temple",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 173, qdš",
+          "note": "Ethiopic noun \"sanctuary, temple\" (read from the OCR text)."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "be-holy-for-i-am-holy",
+      "statement": "Yahweh grounds his call on what he is: “You shall be holy, for I, Yahweh your God, am holy” (Lev 19:2; Lev 11:44–45). The holiness is a belonging: “you shall be holy to me, for I Yahweh am holy, and I have separated you from the peoples to be mine” (Lev 20:26); he chose Israel out of all peoples as a people holy to him (Deu 7:6), a kingdom of priests and a holy nation (Exo 19:6). It is both his act and their keeping: “consecrate yourselves and be holy … keep my statutes and do them; I am Yahweh who makes you holy” (Lev 20:7–8). Peter gives the same command to those called in Christ: “as he who called you is holy, be holy in all your conduct, because it is written, Be holy, for I am holy” (1Pe 1:15–16), and calls them by Exodus's words a holy people (1Pe 2:9). Paul names it God's will and sets it against impurity: “this is God's will, your holiness, that you be separated from all fornication … God did not call you to uncleanness but to holiness” (1Th 4:3, 7). So holiness is not first a feeling or a degree of goodness but belonging to Yahweh, shown by living apart from what he calls unclean.",
+      "evidence": [
+        {
+          "ref": "Lev.19.2"
+        },
+        {
+          "ref": "Lev.11.44",
+          "to": "Lev.11.45"
+        },
+        {
+          "ref": "Lev.20.26"
+        },
+        {
+          "ref": "Deu.7.6"
+        },
+        {
+          "ref": "Exo.19.6"
+        },
+        {
+          "ref": "Lev.20.7",
+          "to": "Lev.20.8"
+        },
+        {
+          "ref": "1Pe.1.15",
+          "to": "1Pe.1.16"
+        },
+        {
+          "ref": "1Pe.2.9"
+        },
+        {
+          "ref": "1Th.4.3"
+        },
+        {
+          "ref": "1Th.4.7"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-who-sanctifies",
+      "statement": "The one who makes holy is Yahweh: מְקַדִּשְׁכֶם, “who makes you holy”, is how he names himself over Israel and its priests (Exo 31:13; Lev 20:8; Lev 21:8; Lev 22:32), and the nations will know it when his sanctuary is in their midst forever (Ezk 37:28). The priests were made holy by the blood from the altar and the anointing oil sprinkled on them (Exo 29:21; Lev 8:30), and whatever touched the most holy altar became holy (Exo 29:37); Jesus says it is the altar that sanctifies the gift (Mat 23:19). Jesus says the Father sanctified him and sent him into the world (Jhn 10:36), and before his death he prays, “Father, sanctify them in your truth … for them I sanctify myself, that they also may be sanctified in truth” (Jhn 17:17–19). Hebrews says that by God's will “we have been sanctified through the offering of the body of Jesus the Messiah once” (Heb 10:10), that Jesus suffered outside the city to sanctify the people through his own blood (Heb 13:12), and that the one who sanctifies and those who are sanctified are all from one, so he is not ashamed to call them brothers (Heb 2:11). What the altar and the blood did for the priests, scripture says Christ does for his people by his own offering.",
+      "evidence": [
+        {
+          "ref": "Exo.31.13"
+        },
+        {
+          "ref": "Lev.20.8"
+        },
+        {
+          "ref": "Lev.21.8"
+        },
+        {
+          "ref": "Lev.22.32"
+        },
+        {
+          "ref": "Ezk.37.28"
+        },
+        {
+          "ref": "Exo.29.21"
+        },
+        {
+          "ref": "Lev.8.30"
+        },
+        {
+          "ref": "Exo.29.37"
+        },
+        {
+          "ref": "Mat.23.19"
+        },
+        {
+          "ref": "Jhn.10.36"
+        },
+        {
+          "ref": "Jhn.17.17",
+          "to": "Jhn.17.19"
+        },
+        {
+          "ref": "Heb.10.10"
+        },
+        {
+          "ref": "Heb.13.12"
+        },
+        {
+          "ref": "Heb.2.11"
+        }
+      ]
+    },
+    {
+      "topic": "treating-yahweh-as-holy",
+      "statement": "Yahweh is holy beyond comparison: “Holy, holy, holy is Yahweh of hosts” (Isa 6:3), which the living creatures say without rest (Rev 4:8); “none is holy like Yahweh” (1Sa 2:2). He is “God and not man, the Holy One in your midst”, and for that reason does not come to destroy Ephraim (Hos 11:9). He will be shown holy among those who come near him (Lev 10:3), and Moses and Aaron were kept from bringing Israel into the land because they did not trust him, “to treat me as holy before the eyes of the sons of Israel” (Num 20:12). His name, profaned among the nations by Israel, he will sanctify himself by gathering them, cleansing them and giving them a new spirit (Ezk 36:23–27); Jesus teaches his disciples to pray, “may your name be hallowed” (Mat 6:9). Isaiah says, “Yahweh of hosts, him you shall regard as holy; let him be your fear and your dread” (Isa 8:13), and Peter, taking up those words, writes in the Peshitta “sanctify the Lord Messiah in your hearts” (1Pe 3:15): he gives to the Messiah the holiness Isaiah gives to Yahweh of hosts.",
+      "evidence": [
+        {
+          "ref": "Isa.6.3"
+        },
+        {
+          "ref": "Rev.4.8"
+        },
+        {
+          "ref": "1Sa.2.2"
+        },
+        {
+          "ref": "Hos.11.9"
+        },
+        {
+          "ref": "Lev.10.3"
+        },
+        {
+          "ref": "Num.20.12"
+        },
+        {
+          "ref": "Ezk.36.23",
+          "to": "Ezk.36.27"
+        },
+        {
+          "ref": "Mat.6.9"
+        },
+        {
+          "ref": "Isa.8.13"
+        },
+        {
+          "ref": "1Pe.3.15"
+        }
+      ]
+    },
+    {
+      "topic": "holy-times",
+      "statement": "God set the seventh day apart at creation because on it he rested from his work (Gen 2:3), and Israel is to remember the Sabbath day to keep it holy, doing no work in it (Exo 20:8–11). Yahweh's appointed times, מוֹעֲדֵי יְהוָה, are holy convocations, מִקְרָאֵי קֹדֶשׁ, which Israel is to proclaim, and he calls them “my appointed times” (Lev 23:2, 4, 37): the weekly Sabbath (Lev 23:3); the first and seventh days of חַג הַמַּצּוֹת, from the fifteenth of the first month after the פֶּסַח (Lev 23:5–8); the fiftieth day counted from the omer (Lev 23:15–21); the first of the seventh month, a memorial of teruah (Lev 23:24); יוֹם הַכִּפֻּרִים on the tenth (Lev 23:27); and the first and eighth days of חַג הַסֻּכּוֹת from the fifteenth (Lev 23:34–36). On each, no ordinary work is done. The returned exiles kept “all the consecrated appointed times of Yahweh” (Ezr 3:5). A holy day is a day of joy: when the people wept on the first of the seventh month at hearing the law, they were told, “This day is holy to Yahweh your God; do not mourn or weep … the joy of Yahweh is your strength” (Neh 8:2, 9–11). The Sabbath is a sign “that you may know that I am Yahweh who makes you holy” (Exo 31:13; Ezk 20:12), and Isaiah calls it a delight, “the holy of Yahweh, honoured” (Isa 58:13). The times are holy because they are Yahweh's: he sets them apart, and his people meet him in them.",
+      "evidence": [
+        {
+          "ref": "Gen.2.3"
+        },
+        {
+          "ref": "Exo.20.8",
+          "to": "Exo.20.11"
+        },
+        {
+          "ref": "Lev.23.2"
+        },
+        {
+          "ref": "Lev.23.3"
+        },
+        {
+          "ref": "Lev.23.4"
+        },
+        {
+          "ref": "Lev.23.5",
+          "to": "Lev.23.8"
+        },
+        {
+          "ref": "Lev.23.15",
+          "to": "Lev.23.21"
+        },
+        {
+          "ref": "Lev.23.24"
+        },
+        {
+          "ref": "Lev.23.27"
+        },
+        {
+          "ref": "Lev.23.34",
+          "to": "Lev.23.36"
+        },
+        {
+          "ref": "Lev.23.37"
+        },
+        {
+          "ref": "Ezr.3.5"
+        },
+        {
+          "ref": "Neh.8.2"
+        },
+        {
+          "ref": "Neh.8.9",
+          "to": "Neh.8.11"
+        },
+        {
+          "ref": "Exo.31.13"
+        },
+        {
+          "ref": "Ezk.20.12"
+        },
+        {
+          "ref": "Isa.58.13"
+        }
+      ]
+    },
+    {
+      "topic": "sanctuary-in-their-midst",
+      "statement": "The sanctuary exists so that Yahweh may dwell among his people: “let them make me a מִקְדָּשׁ, that I may dwell in their midst” (Exo 25:8). He promises to set his dwelling among them and walk among them, to be their God and they his people (Lev 26:11–12), and Israel is to keep his Sabbaths and fear his sanctuary (Lev 26:2). When they were scattered he was himself “a little sanctuary” to them in the lands (Ezk 11:16), and he promised a covenant of peace, with his sanctuary in their midst forever, so that the nations would know that he is Yahweh who makes Israel holy (Ezk 37:26–28). To those who regard him as holy he is a sanctuary, but to both houses of Israel a stone of stumbling (Isa 8:13–14). Paul quotes the promise to the church: “you are the temple of the living God, as it is said, I will dwell among them and walk among them” (2Co 6:16), and draws from it, “let us cleanse ourselves from all impurity of flesh and spirit, and work holiness in the fear of God” (2Co 7:1). Hebrews says the Messiah entered not a sanctuary made by hands but heaven itself, once, with his own blood (Heb 9:12, 24).",
+      "evidence": [
+        {
+          "ref": "Exo.25.8"
+        },
+        {
+          "ref": "Lev.26.11",
+          "to": "Lev.26.12"
+        },
+        {
+          "ref": "Lev.26.2"
+        },
+        {
+          "ref": "Ezk.11.16"
+        },
+        {
+          "ref": "Ezk.37.26",
+          "to": "Ezk.37.28"
+        },
+        {
+          "ref": "Isa.8.13",
+          "to": "Isa.8.14"
+        },
+        {
+          "ref": "2Co.6.16"
+        },
+        {
+          "ref": "2Co.7.1"
+        },
+        {
+          "ref": "Heb.9.12"
+        },
+        {
+          "ref": "Heb.9.24"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-09 for Leviticus 23. Left out: the place names Kadesh/Kadesh-barnea (s.an.ag), Kedesh (s.an.af), and the redirect rows b.de.ac (Barnea), m.df.ak and w.an.ae (Tahtim-hodshi), which are names, not words of the root.\n\nCounts: BDB's s.an.ae (קָדֵשׁ/קְדֵשָׁה) shares 11 Kadesh place-name tokens with s.an.ag (Gen 14:7, 16:14, 20:1, Num 27:14, 33:36, Deu 1:2, 1:19, 32:51, Ezk 47:19, 48:28, Psa 29:8), so its use count is about double; the word itself occurs 11 times (Gen 38:21 ×2, 38:22, Deu 23:18 ×2, 1Ki 14:24, 15:12, 22:47, 2Ki 23:7, Hos 4:14, Job 36:14). BDB files two verb tokens under no stem: Ezk 7:24 מְקַדְשֵׁיהֶם (read here as “their sanctuaries”, מִקְדָּשׁ) and 2Ch 15:18 קָדָשָׁיו (the noun קֹדֶשׁ); they are not given a stem. Verse references are in the Hebrew numbering (Num 17:2–3 = Eng 16:37–38; 1Sa 21:5–6 = Eng 21:4–5; Psa 89:6, 8 = Eng 89:5, 7; Psa 51:13 = Eng 51:11; Dan 4:5–20 = Eng 4:8–23).\n\nOpen questions for review: (1) Gloss: “set apart as God's” is taken from scripture's use (Lev 10:10, holy against common; Lev 20:26, holy because separated to be his; Num 16:5, “who is his and who is holy”). No cognate checked shows “separate”: they give holy, consecrate, sanctuary, and in Akkadian and Arabic also pure. The only “far away” sense is Lane's قَدَسَ فِى الأَرْضِ, offered by a commentator as the source of “declare God far removed from impurity”; it is recorded on ar-qadusa and not relied on. (2) Pure: scripture keeps holy/common apart from clean/unclean (Lev 10:10), so “pure” is not taken as the root's core; the hithpael “purify oneself” (2Sa 11:4; Isa 66:17) is the one Hebrew use that matches Akkadian qadāšu, and akk-qadashu is named only there and on the piel “prepare the people”. (3) קָדֵשׁ/קְדֵשָׁה: kept as a word of the root (dedicated to a god), with Akkadian qadištu and Ugaritic qdšt as cognates of the same formation. That the role was harlotry rests on scripture's parallels with זוֹנָה (Gen 38:15, 21; Hos 4:14; Deu 23:18–19); neither cognate source checked says so. Review the gloss “cult prostitute”. (4) Peshitta 1Pe 3:15 reads “the Lord Messiah”, the Textus Receptus κύριον τὸν θεόν; the doctrine follows the Peshitta's wording and says so. (5) Doctrine on holy times gives Lev 23 in the text's own terms; whether to add the New Testament's words on feasts and Sabbaths (Col 2:16–17; Heb 4:9) is left for the user's direction. (6) Arabic مَقْدِس occurs in Lane only in the name of Jerusalem, and Sabaic qds is attested in Biella (p. 447) only in sixth-century Christian inscriptions (“Holy Spirit”, “hold Mass”); either may carry Jewish or Christian usage. Sabaic is not entered as a cognate.\n\nSources checked 2026-11-09: Lane pp. 2496–2497 (root قدس); Oracc glossary (qadāšu, quddušu, qašdu, qadištu; qudāšu “earring” left out); Anderson–Moser SEM000323; Segert pp. 41, 97, 199; Fisher p. 173; Krahmalkov pp. 305–306, 424–425; Biella p. 447; SEDRA root קדש for the Peshitta words; MACULA-LXX alignments. Segert, Fisher and Krahmalkov were read from the OCR text only (no PDF renderer was available), so forms and page numbers need checking against the PDFs. Not consulted: Dillmann and Leslau (Ge'ez), DULAT (Ugaritic), CAD (Akkadian), Payne Smith (Syriac), DNWSI."
+}
