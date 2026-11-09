@@ -970,19 +970,46 @@ Source checks for Mark 16:
 
 Source checks for Luke 1:
 
+- The chapter's 199 original shared spans were checked against exact
+  forms, morphology, and continuous English. Thirteen remain, with precise
+  reasons in the ledger: compound prepositions, the conception and greeting
+  predicates, the human-beings compound, narrative and existential copulas,
+  Gabriel's relative-clause agreement, and the sign-making and mute-state
+  constructions. Ordinary auxiliaries, negatives, names, and modifiers
+  have separate source owners.
+- In 1:1 both independent pronouns and the convinced predicate are
+  first-person plural. In 1:4 the instruction concerns the preceding words.
 - In 1:2 the ministers serve the word; the anticipatory feminine suffix
   refers forward to that noun. In 1:3 both "all of them" and "everything"
   are retained, as is the distinct ordering phrase "in its order".
 - In 1:8 the source names God, rather than the local Murdock reference's
   Lord. In 1:15 the Holy Spirit is explicit, and the temporal phrase is
-  "while he is in his mother's womb".
+  "while he is in the womb of his mother".
+- In 1:19 the first-person speaker is Gabriel; the English relative
+  "who stands" still describes him. In 1:20 the causal preposition belongs
+  to "because", not to the preceding happening predicate. The negation,
+  belief verb, and "these words of mine" remain distinct.
+- In 1:22 the cognate infinitive and participle describe one sign-making
+  activity; the auxiliary and recipients are separate. The circumstantial
+  mute state remains the complement of his remaining.
 - In 1:28 "Our Lord" and in 1:43 "my Lord" retain their distinct possessives.
+- In 1:31 the receive-plus-conception predicate means "you will conceive".
+  The noun has no locative prefix or possessive suffix; [CAL's bṭn entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=b%2Bn+N)
+  lists conception and pregnancy in Syriac. In 1:36 "and this" introduces
+  the sixth month, with Elizabeth as the recipient of the time expression.
 - In 1:39 the adverb is rendered "with diligence", following the careful
   and diligent senses in [SEDRA's lexical entry](https://sedra.bethmardutho.org/lexeme/get/368).
+- In 1:40 the asking-peace construction is the greeting idiom, with
+  Elizabeth separately linked. In 1:58 the source names God as the one
+  magnifying his mercy, rather than the reference's Lord. Neighbors,
+  family members, and their rejoicing remain distinct.
+- In 1:66 and 1:80 the existential and past copulas jointly express
+  the past locations of the Lord's hand and the child, respectively.
 - In 1:72 the holy covenants are plural, as are the oaths in 1:73.
 - In 1:77 the forgiveness phrase is introduced by "through", rather than
   an added conjunction. In 1:78 the visitation is future and explicitly
-  includes its first-person object: "will visit us".
+  includes its first-person object: "will visit us". Both mercy nouns are
+  retained, and the dayspring is the subject of that visitation.
 
 Source checks for Luke 2:
 

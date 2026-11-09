@@ -2179,6 +2179,131 @@
           "reason": "Men batar, literally from after, is the compound temporal after relation introducing his speech with them before the ascent."
         }
       ]
+    },
+    "42:1": {
+      "sha256": "bb81a0147629fba14e0677feddfe5f01c0641f9a92b2a2fde80b8281d9f82973",
+      "original_shared_spans": 199,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 8,
+          "english": "it happened",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The repeated hwa forms are the narrative occurrence formula with a past auxiliary. They jointly express the single English event-introducing predicate, without another event or subject."
+        },
+        {
+          "verse": 19,
+          "english": "who stands",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The relative standing participle and first-person subject pronoun describe Gabriel, the speaker. The English relative predicate agrees with Gabriel in third person and fuses the source subject agreement; the pronoun does not name an additional actor."
+        },
+        {
+          "verse": 22,
+          "english": "making signs",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "The cognate infinitive and participle form the emphatic sign-making predicate. They describe one ongoing activity, with the past auxiliary separately linked."
+        },
+        {
+          "verse": 22,
+          "english": "mute",
+          "positions": [
+            19,
+            20
+          ],
+          "reason": "The circumstantial kd plus mute describes the state in which he remained. English remained mute realizes that circumstantial state as a complement; no separate when-event is introduced."
+        },
+        {
+          "verse": 24,
+          "english": "after",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Men batar is the compound temporal after relation, not a separate movement from a place."
+        },
+        {
+          "verse": 25,
+          "english": "people",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Bnay ansha is the human-beings compound, literally sons of mankind, without a separate genealogical assertion."
+        },
+        {
+          "verse": 26,
+          "english": "from",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Men lwath is the compound source preposition from, literally from the presence of; lwath does not add a second destination."
+        },
+        {
+          "verse": 31,
+          "english": "you will conceive",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The receive verb plus conception noun is the light-verb conception predicate; it expresses conceiving, not receiving a separate object or a locative in your womb."
+        },
+        {
+          "verse": 38,
+          "english": "from her",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "Men plus the suffixed lwath forms the source preposition from her. Lwath is not a second destination or a new participant."
+        },
+        {
+          "verse": 40,
+          "english": "and greeted",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The asking-peace verbal idiom expresses greeting, not a separate inquiry and a separate utterance of peace; Elizabeth remains the separately linked recipient."
+        },
+        {
+          "verse": 45,
+          "english": "by",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Men lwath is the compound source/agent preposition introducing the Lord as the source of the spoken things; the Lord remains separately linked."
+        },
+        {
+          "verse": 66,
+          "english": "was",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "The existential ith and past copula hwat jointly express the past location of the Lord's hand with him; there is one English past copula and no extra participant."
+        },
+        {
+          "verse": 80,
+          "english": "he was",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The suffixed existential ithawhy and past copula hwa jointly express his past location in the wilderness. The subject and past copula are one natural English predicate."
+        }
+      ]
     }
   }
 }
