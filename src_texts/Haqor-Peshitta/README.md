@@ -1139,23 +1139,54 @@ Source checks for Luke 4:
 
 Source checks for Luke 5:
 
+- The chapter's 138 original shared spans were checked against exact
+  forms, morphology, and continuous English. Nine remain, with exact
+  reasons in the ledger: two predicates with ethical datives, the people
+  and wedding-guests idioms, the boats' anticipatory object, the immediate
+  timing expression, the exception and conditional markers, and the illness
+  predicate. Ordinary modifiers, negatives, auxiliaries, names, and clause
+  constituents have separate source owners.
+- The narrative introduction in 5:1 continues into the seeing predicate
+  in 5:2. The gathered crowd and Jesus standing beside the lake remain
+  distinct from the fishermen washing their nets.
 - In 5:3 the boat belongs to Simon Cephas; both the ownership and the
   second name are explicit. The net is singular in 5:4 and 5:6, while
   the fishermen's nets in 5:2 are plural.
 - In 5:5 "at your word" introduces Simon's decision to cast the net,
   rather than qualifying the unsuccessful catch. In 5:6 the final
   quantity word intensifies "many" fish, without calling them good fish.
+- In 5:7 the object pronoun is explicit before its apposition "both boats";
+  the boats are the feminine plural subject of nearing the sinking state.
+  In 5:8 the departure imperative has its subject-coreferential ethical
+  dative, with "from me" kept separate. In 5:10 "for life" retains the
+  phrase with ḥayyē; [CAL's noun entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=xyyn+N)
+  records its life sense. In 5:11 the anticipatory object and explicit boats
+  name one object, without an additional group.
 - In 5:13 the two-word hour expression means "immediately", not an address
   to a son. The explicit final statement that he was cleansed is retained.
 - In 5:14 the priests are plural. In 5:17 the healing object is "them";
   in 5:20 "Man" is a direct address to the paralytic. In 5:25 glorifying
   God accompanies the journey home, rather than following it.
+- In 5:17 the existential and past copula have distinct English "present"
+  and "was" spans. In 5:19 the ascent's ethical dative adds no recipient.
+  Both questions in 5:21 remain distinct, and "except" is the fixed ela en
+  construction. In 5:26 the report is first-person plural: "We have seen".
 - In 5:24 the Son of man has authority to forgive sins; the suffix in
   the title anticipates the following genitive, without a separate "his".
+  The source copula and authority predicate have separate English owners.
+- In 5:30 the question addresses the disciples in the second-person plural.
+  In 5:31 bish avidin is the illness predicate, while the first d-bish owns
+  the relative and intensifier "who/very" and the stative participle also
+  supplies "are".
 - In 5:34 the wedding guests expression and the causative "make fast"
-  remain under the negative. In 5:36 the feminine final predicate agrees
-  with the patch: it does not fit the old garment. In 5:39 the old wine
-  is pleasant, without an added comparative.
+  remain under the negative; adjacent can/not spans spell "cannot".
+  In 5:36 the feminine final predicate agrees with the patch: it does not
+  fit the old garment. The masculine nominalized new/old expressions
+  retain their understood garment head. In 5:37 the en-la conditional
+  is "otherwise", with the contrast separately linked. In 5:38 the generic
+  plural actively puts the wine into new wineskins; the passive preservation
+  predicate is separate. In 5:39 the old wine is pleasant, without an added
+  comparative.
 
 Source checks for Luke 6:
 
