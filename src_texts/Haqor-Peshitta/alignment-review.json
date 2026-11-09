@@ -6446,6 +6446,245 @@
           "source": "חַדֿיֵה דּיֵשֻוע"
         }
       ]
+    },
+    "44:1": {
+      "sha256": "c6d25b90fb4ffff7cca4de47125cb36912bbcb41e73b496649780b300e27c8b3",
+      "original_shared_spans": 136,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 2,
+          "english": "after",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Men bathar is a compound temporal preposition, rendered after; separate English from after would misstate the construction.",
+          "source": "מֵנ בָּתַֿר"
+        },
+        {
+          "verse": 2,
+          "english": "the apostles",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "The independent plural object pronoun enun anticipates the explicitly named apostles. English names that single object once, with the commanding verb outside the span.",
+          "source": "אֵנֻונ לַשלִיחֵא"
+        },
+        {
+          "verse": 3,
+          "english": "those",
+          "positions": [
+            0,
+            3
+          ],
+          "reason": "The initial demonstrative hanun is resumed by the plural suffixed recipient pronoun lehun. English those realizes that one recipient reference; to and the showing predicate remain separate.",
+          "source": "הָנֻונ להֻונ"
+        },
+        {
+          "verse": 3,
+          "english": "after",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "Men bathar is the compound temporal preposition after; it does not introduce a second independent temporal relation.",
+          "source": "מֵנ בָּתַֿר"
+        },
+        {
+          "verse": 4,
+          "english": "the Father’s",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "The suffix on promise anticipates the explicit Father possessor. English names this single possessor once, while for and promise have separate spans.",
+          "source": "לשֻוו_דָּיֵה דַּאבָֿא"
+        },
+        {
+          "verse": 7,
+          "english": "which",
+          "positions": [
+            11,
+            14
+          ],
+          "reason": "The relative aylen and the independent plural object pronoun enun refer to the same times. The one English which realizes that resumed relative object; Father and the setting predicate remain separate.",
+          "source": "אַילֵינ אֵנֻונ"
+        },
+        {
+          "verse": 8,
+          "english": "of the earth.”",
+          "positions": [
+            18,
+            19
+          ],
+          "reason": "The feminine singular suffix on ends anticipates the explicitly named earth. English of the earth expresses that one possessor while ends remains separately linked.",
+          "source": "לסַופֵּיה דַּארעָא"
+        },
+        {
+          "verse": 11,
+          "english": "just as",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "Ayk ma is the compound comparative conjunction just as, introducing the comparison to their seeing Jesus ascend; ma is not a new interrogative what.",
+          "source": "אַיכֿ מָא"
+        },
+        {
+          "verse": 12,
+          "english": "afterward",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Men batharken forms the temporal adverb afterward. The conjunction on the first source word is separately linked; no extra from-then relation is introduced.",
+          "source": "ומֵנ בָּתַֿרכֵּנ"
+        },
+        {
+          "verse": 12,
+          "english": "beside",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Al genb is the spatial expression beside, literally at the side of. English beside expresses the single relation without adding another location.",
+          "source": "עַל גֵּנ_בֿ"
+        },
+        {
+          "verse": 13,
+          "english": "after",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Men bathar is the compound temporal preposition after. The conjunction on the first word has its own span.",
+          "source": "ומֵנ בָּתַֿר"
+        },
+        {
+          "verse": 13,
+          "english": "where",
+          "positions": [
+            7,
+            9
+          ],
+          "reason": "The relative prefix on haweyn and the feminine locative pronoun bah refer to the same upper room. English where expresses that resumed relative location; were and present remain separate.",
+          "source": "דּהָוֵינ בָּה"
+        },
+        {
+          "verse": 14,
+          "english": "of Jesus",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "The masculine suffix on mother anticipates the explicitly named Jesus possessor. English of Jesus realizes this one possessor, while the mother remains separate.",
+          "source": "אֵמֵה דּיֵשֻוע"
+        },
+        {
+          "verse": 15,
+          "english": "in",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The initial suffixed temporal phrase and the following explicit days both carry b-. English in expresses their resumed single temporal relation; the conjunction, demonstrative and days have separate spans.",
+          "source": "וַבֿהֻונ בּיַומָתָֿא"
+        },
+        {
+          "verse": 15,
+          "english": "those",
+          "positions": [
+            0,
+            2
+          ],
+          "reason": "The plural suffix in the initial temporal phrase points to the days identified by the following demonstrative hanun. English those realizes the same anaphoric/deictic reference once; in and days remain separate.",
+          "source": "וַבֿהֻונ הָנֻונ"
+        },
+        {
+          "verse": 16,
+          "english": "David’s",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "The masculine possessive suffix on mouth anticipates the explicitly named David possessor. English David’s realizes that single possessor; through and mouth retain separate owners.",
+          "source": "בּפֻֿומֵה דּדַֿוִידֿ"
+        },
+        {
+          "verse": 17,
+          "english": "had",
+          "positions": [
+            4,
+            5,
+            6
+          ],
+          "reason": "The existential ith, past hwa and suffixed possessive dative leh together express the single past possession predicate had. The conjunction, he and share remain separately linked.",
+          "source": "וִאיתֿ ה_וָא לֵה"
+        },
+        {
+          "verse": 19,
+          "english": "this",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The initial feminine subject pronoun hi resumes the demonstrative hada referring to this event. English this expresses the same subject once, while and and became known remain separate.",
+          "source": "והִי הָדֵֿא"
+        },
+        {
+          "verse": 19,
+          "english": "of the country",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The masculine suffix on language anticipates the explicit country possessor. English of the country names this one possessor; in the language remains separate.",
+          "source": "בּלֵשָנֵה דַּאתֿרָא"
+        },
+        {
+          "verse": 19,
+          "english": "whose",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "The relative prefix on the copular expression and the feminine possessive suffix on interpretation refer to the same field/name. English whose realizes this possessive relative once; interpretation and is remain separately linked.",
+          "source": "דִּאיתַֿוה_י תֻּורגָּמָה"
+        },
+        {
+          "verse": 22,
+          "english": "of John",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The masculine suffix on baptism anticipates the explicitly named John possessor. English of John names this single possessor, while the baptism remains separate.",
+          "source": "מַעמֻודִֿיתֵֿה דּיֻוחַנָנ"
+        },
+        {
+          "verse": 22,
+          "english": "from",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "Men lwath is the compound preposition from or away from. English from expresses its single source relation; the first-person plural suffix has its own us span.",
+          "source": "מֵנ לוָתַֿנ"
+        },
+        {
+          "verse": 22,
+          "english": "to be",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "The complementizer plus resumed third-person subject d-hu and imperfect nehwe form the predicate controlled by one of these men in the preceding verse. English to be realizes that controlled infinitive without repeating its subject; with us and witness remain separate.",
+          "source": "דּהֻו נֵהוֵא"
+        }
+      ]
     }
   }
 }
