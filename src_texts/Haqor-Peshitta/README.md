@@ -2200,6 +2200,14 @@ Source checks for Luke 23:
 
 Source checks for Luke 24:
 
+- The chapter's 191 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Four remain:
+  rising and day-inclining predicates with their ethical datives,
+  the repeated Jesus subject, and negative existential-dative
+  possession. Their exact positions and linguistic reasons are in the
+  ledger. Ordinary negatives, auxiliaries, modifiers, and clause
+  constituents have separate source owners. The burial-chamber nouns
+  and the honey and comb components are separately linked.
 - In 24:1 the day expression is the first day of the week, not a first
   Sabbath. Dawn and continuing darkness remain, with the prepared spices
   and other women accompanying them. The preparation auxiliary belongs
@@ -2210,7 +2218,9 @@ Source checks for Luke 24:
   into sinful men's hands, crucifixion, and third-day rising all remain.
 - In 24:10 the named women include Mary Magdalene, Joanna, and Mary the
   mother of James, together with the others. In 24:11 the apostles do
-  not believe them. In 24:12 the name is Simon, and the linen sheets
+  not believe them; their words appear as mad ravings in their eyes.
+  In 24:10 the demonstrative identifies the women who had spoken to
+  the apostles. In 24:12 the name is Simon, and the linen sheets
   are lying alone. In 24:13 Emmaus is sixty stades from Jerusalem;
   the source unit is retained without a modern distance conversion.
 - In 24:14 the two were speaking with one another. In 24:15 Jesus
@@ -2231,7 +2241,9 @@ Source checks for Luke 24:
   In 24:27 he began from Moses and was explaining the Scriptures.
 - In 24:28 he makes them think he is going to a distant place. In
   24:29 the day is inclining toward darkness. In 24:30 the blessing
-  has no added object. In 24:31 recognition and withdrawal are distinct.
+  has no added object. In 24:31 recognition and withdrawal are distinct;
+  the reflexive English removed himself keeps the verb and dative
+  separately linked without adding an intensive himself to the subject.
   In 24:32 the recorded source is `יקיר`, heavy, with singular our heart;
   see [CAL's adjective entry](https://cal.huc.edu/cal_entry_web.php?lemma=yqyr+A).
   The supplied Murdock reference uses burn. The English follows the
@@ -2250,6 +2262,7 @@ Source checks for Luke 24:
   expression in 24:44. In 24:47 repentance for forgiveness is proclaimed
   in his name to all nations, beginning from Jerusalem. In 24:49 I will
   send is future, my Father is possessive, and the city is Jerusalem.
+  The Peal clothing verb is rendered actively as put on power.
   In 24:50 Bethany and his lifted hands remain; blessing, separation,
   ascent, worship, return, continual praise, and Amen complete 24:51-53.
 
