@@ -244,11 +244,40 @@ Source checks for Matthew 26:
 Source checks for Matthew 27:
 
 - In 27:9 the source names only "the prophet"; no individual name is added.
+  The quotation begins with first-person "I took". The agreeing verb has
+  a plural subject, with "from among the sons of Israel" identifying them.
+- The responsibility formulas in 27:4 and 27:24 are rendered contextually
+  as "you are to see to it" and "you must see to it", following Murdock's
+  sense. The former has a participle and copular pronoun; the latter has
+  an imperfect. Neither is described as a morphological imperative.
+- In 27:6 the putting verb is first-person plural, "for us to put it".
+  The house of offering retains separate constituent links. The lexical
+  beth qvura/qvure burial compounds in 27:7, 27:52 and 27:60 remain minimal
+  shared spans; [CAL's house entry](https://cal.huc.edu/cal_entry_web.php?lemma=by+N)
+  lists these compounds as burial place, tomb or cemetery.
+- In 27:12 akhl qarso is the accusation idiom, with its auxiliary and
+  object suffix separately linked. In 27:19 the negative paired-dative
+  formula supplies "have nothing to do"; the following demonstrative and
+  righteous one retain separate links.
 - In 27:38 the two robbers are crucified: the verb is passive. In 27:52,
   by contrast, the bodies arise; the past auxiliary belongs to the sleeping
   description rather than making the rising verb passive.
 - In 27:47 the past auxiliary belongs to "were saying". The explicit
-  demonstrative then begins their claim: "This one calls for Elijah."
+  demonstrative then begins their claim: "This one has called for Elijah."
+  The calling verb is perfect, not a participle.
+- In 27:46 the two God forms have no possessive suffix; "my" is not
+  imported from familiar versions of the quotation. In 27:51 appay can
+  mean curtain independently of the following door noun (Muraoka,
+  Classical Syriac, section 21); the singular English keeps separate links.
+- In 27:55 the women had come after Jesus; the after word is a
+  preposition, not a following verb. In 27:57 Joseph had become a disciple,
+  retaining the derived verb and its past auxiliary separately.
+- In 27:60 Joseph's laying verb is singular, but rolled, placed and
+  departed are plural. In 27:63 the auxiliary belongs to "had said",
+  before "while he was alive"; men bathar remains the compound "after".
+  In 27:64 beth means "among" in "from among the dead", rather than
+  adding a house. In 27:66 the feminine demonstrative modifies the stone,
+  not the masculine tomb.
 
 Source checks for Matthew 28:
 

@@ -1060,6 +1060,77 @@
           "reason": "Men bathar is the compound temporal preposition after; literal from after is not a reasonable English rendering before its temporal complement."
         }
       ]
+    },
+    "40:27": {
+      "sha256": "fc625665eb3ee50804ac4918836e340888dcfc9cc7f9fc13af8e465f89d2531d",
+      "original_shared_spans": 184,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 7,
+          "english": "as a burial place",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Beth qvura/qvure is a lexical burial-place/tomb compound, not an independent house followed by another tomb. CAL lists the compound as burial place/tomb or cemetery; the prefixed conjunction, preposition and possessive/modifier constituents remain separately linked where applicable."
+        },
+        {
+          "verse": 12,
+          "english": "accusing",
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Akhl qarso, literally eating pieces of someone, is the lexical idiom accuse. The eating verb and pieces noun jointly supply accusing; the past auxiliary and the pronominal object suffix remain separately linked."
+        },
+        {
+          "verse": 19,
+          "english": "Have nothing to do",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "The elliptical negative paired-dative formula la lakh wa-l excludes involvement between the addressee and the named person. It has no independent relation verb for English have/do. Keep the negative-addressee formula together, while linking with that and righteous one separately."
+        },
+        {
+          "verse": 52,
+          "english": "the tombs",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Beth qvura/qvure is a lexical burial-place/tomb compound, not an independent house followed by another tomb. CAL lists the compound as burial place/tomb or cemetery; the prefixed conjunction, preposition and possessive/modifier constituents remain separately linked where applicable."
+        },
+        {
+          "verse": 60,
+          "english": "tomb",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Beth qvura/qvure is a lexical burial-place/tomb compound, not an independent house followed by another tomb. CAL lists the compound as burial place/tomb or cemetery; the prefixed conjunction, preposition and possessive/modifier constituents remain separately linked where applicable."
+        },
+        {
+          "verse": 60,
+          "english": "the tomb",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "Beth qvura/qvure is a lexical burial-place/tomb compound, not an independent house followed by another tomb. CAL lists the compound as burial place/tomb or cemetery; the prefixed conjunction, preposition and possessive/modifier constituents remain separately linked where applicable."
+        },
+        {
+          "verse": 63,
+          "english": "After",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Men bathar is the compound temporal preposition after; literal from after is not a reasonable English rendering before the temporal complement."
+        }
+      ]
     }
   }
 }
