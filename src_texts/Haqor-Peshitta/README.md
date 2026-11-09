@@ -1377,17 +1377,35 @@ Source checks for Luke 9:
 
 Source checks for Luke 10:
 
+- The chapter's 173 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Ten remain: the
+  greeting idiom, three predicates with datives, two repeated references
+  to one participant, three exclusion/free-choice constructions, and
+  past possession. Their exact positions and reasons are in the ledger.
+  Ordinary modifiers, negatives, auxiliaries, noun phrases, names, and
+  clause constituents have separate source owners.
 - In 10:1 Jesus sets apart another seventy from his disciples and sends
   them two by two. In 10:3 the disciples are the object of his sending,
   rather than recipients of a separate message.
 - In 10:6 their peace rests on the son of peace or returns to them.
   In 10:7 the worker is worthy of his wage; these nouns remain distinct.
+- In 10:4 asking after peace is the greeting idiom, with the negative
+  separate. In 10:10 the going-out imperative's dative adds no beneficiary;
+  in 10:11 the nearness predicate's feminine dative refers to the kingdom,
+  while the second-person destination remains separate.
 - In 10:12 and 10:14 the judgment expressions are comparative: more
   tolerable for one city than another. In 10:13 the conditional context
   gives the time expression its "long ago" sense.
+- In 10:13 the actual and counterfactual mighty deeds have separate
+  occurrence predicates. In 10:15 the relative prefix and limit stem in
+  d-adma separately own "who" and "up to"; the later limit is distinct.
 - In 10:16 rejecting the disciples means rejecting Jesus, and rejecting
   him means rejecting the one who sent him. In 10:17 the address is
   "Our Lord". In 10:18 Satan is named; 10:19 instead says the enemy.
+- In 10:18 the anticipatory object and Satan name identify one entity.
+  In 10:22 both exclusions use ela en, while the conditional relative
+  supplies "whomever"; the choosing, revealing, and recipient preposition
+  remain separate. In 10:26 the pronoun and Jesus name identify one speaker.
 - In 10:21 the Holy Spirit is explicit and both addresses say "my Father".
   In 10:23 the eyes have no "your" suffix. In 10:28 "this" is the object
   of "do", followed by "you will live".
@@ -1395,9 +1413,16 @@ Source checks for Luke 10:
   In 10:34 wine precedes oil, and his donkey is explicit. In 10:35 "when"
   begins the return clause after spending anything more; in 10:36 the
   hands of the robbers are explicit.
+- In 10:34 the care predicate's dative adds no new participant; its
+  separate patient remains "of him". In 10:35 the giving verb expresses
+  repayment in the context of further expenses, with the return clause
+  kept separate from the spending clause.
 - In 10:39 Mary listens to the words of "our Lord", while Martha says
   "My Lord" in 10:40. In 10:42 Mary's portion is good, without an added
   comparative, and it will not be taken from her.
+- In 10:39 past possession is "she had", with the possessor and sister
+  separate. English "seated herself" keeps the sitting verb and its
+  coreferential dative separate through ordinary reflexive valency.
 
 Source checks for Luke 11:
 
