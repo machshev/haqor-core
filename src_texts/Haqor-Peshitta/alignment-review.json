@@ -2652,6 +2652,77 @@
           "reason": "En la is the elliptical conditional if not, meaning otherwise if the preceding rule is not followed. Its conditional and negative elements jointly form the English adverb; the separate deyn contrast is linked as but."
         }
       ]
+    },
+    "42:6": {
+      "sha256": "f79dbc81d020e1f394b14c0991da0db3af3a2025f4e963a89b108beb00b5e57b",
+      "original_shared_spans": 213,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 7,
+          "english": "to accuse him",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Akhel qartse is the accusation idiom, literally eating accusations. The verb and its accusation noun with the object suffix jointly supply to accuse him; neither receives an independent literal eating rendering."
+        },
+        {
+          "verse": 8,
+          "english": "and come",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The imperative ta with its subject-coreferential ethical dative lakh commands the addressee to come. The dative supplies neither another beneficiary nor a separate destination."
+        },
+        {
+          "verse": 26,
+          "english": "people",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Bne ansha, literally sons of humanity, is the lexical human plural people. Splitting its constituents would introduce literal children or a new family relationship."
+        },
+        {
+          "verse": 31,
+          "english": "people",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Bne ansha is the lexical human plural people, not literal sons of an independently specified man. Its two constituents jointly express the human subject."
+        },
+        {
+          "verse": 39,
+          "english": "Can",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "The rhetorical interrogative particle lama and the ability predicate meshkah jointly yield the inverted English modal Can. The particle marks the question rather than adding an independent why clause; the infinitive lead remains separately linked."
+        },
+        {
+          "verse": 42,
+          "english": "Hypocrite",
+          "positions": [
+            19,
+            20
+          ],
+          "reason": "Naseb b-appe, literally taking faces, is the indivisible hypocrite idiom. Neither face nor a separate taking action is intended in the rebuke."
+        },
+        {
+          "verse": 49,
+          "english": "immediately",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "Bar shaateh is the fixed temporal idiom immediately, literally son of its hour. It does not identify a son, a possessor or an additional time argument."
+        }
+      ]
     }
   }
 }

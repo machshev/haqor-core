@@ -1190,12 +1190,23 @@ Source checks for Luke 5:
 
 Source checks for Luke 6:
 
+- The chapter's 213 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Seven remain: the
+  accusation, people, hypocrite, and immediate-timing idioms, the coming
+  imperative with its ethical dative, and the rhetorical ability question.
+  Their exact source positions and reasons are recorded in the ledger.
+  Ordinary modifiers, names, negatives, auxiliaries, and clause constituents
+  have separate source owners.
 - In 6:1 the disciples rub the ears in their hands. In 6:4 the source
   names the bread of the Lord's table; its possessive suffix anticipates
   the Lord, without a separate "his".
 - In 6:6 the past auxiliary belongs with teaching before the separate
   man/hand clause. The right hand is explicit. In 6:13 Jesus actively
   names the apostles; 6:14 names Cephas, and 6:16 says Jude son of James.
+- In 6:7 eating accusations is the accusation idiom. In 6:8 the coming
+  imperative's ethical dative adds no beneficiary. In 6:12 the prayer
+  noun's suffix anticipates the following objective genitive: prayer
+  to God, without a second standalone possessor.
 - In 6:18 people came to hear his word and to be healed; the purpose
   clause is distinct from the following statement that healing was ongoing.
   In 6:26 the source says people, without an added "all".
@@ -1204,6 +1215,9 @@ Source checks for Luke 6:
 - In 6:38 the measure is pressed down and overflowing, without a separate
   shaking action; the recipients' laps are plural. In 6:41 the beam is
   the subject of the passive seeing clause.
+- In 6:42 the first casting-out form is first-person singular, following
+  "allow": "me to cast out". The later imperative is second-person
+  singular. The final seeing predicate retains the addressee as experiencer.
 - In 6:45 both stores of treasures are plural, and the lips speak from
   the heart's abundance. In 6:46 both titles retain their first-person
   possessive: "My Lord, my Lord".
