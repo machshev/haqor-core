@@ -359,9 +359,35 @@ Source checks for Mark 2:
   refers to the available space, not to the assembled people.
 - In 2:4 the ascent includes a reflexive dative. The lowering verb anticipates
   the following bed noun; no separate human object is added.
+  The passive participle describes the man's position, "was lying";
+  [CAL's rmy entry](https://cal.huc.edu/cal_entry_web.php?lemma=rmy+V)
+  explicitly records this passive-participle sense and cites Mark 1:30.
+- In 2:6 the location adverb remains "at that place"; the following
+  partitive supplies "some". In 2:8 the first demonstrative can identify
+  the reasoning men, while the later demonstrative is the object
+  "these things" in Jesus' question.
+- Ela en in 2:7 and 2:26 is the compound exception particle "except".
+  Bar shateh in 2:12 is the immediate-time expression "at once".
+  These three minimal shared spans retain reasons in the ledger.
+- In 2:14 the house and plural tax collectors are rendered literally
+  with separate links. [CAL's house entry](https://cal.huc.edu/cal_entry_web.php?lemma=by+N)
+  also lists the custom-house compound; no singular tax-office noun is
+  assigned to the tax collectors word alone.
 - In 2:17 the illness expression is one idiom, not an additional action of
   laboring.
+  Its repeated bish intensifies the state: "who are very badly afflicted"
+  retains separate links for the relative prefix, intensifier and predicate,
+  as with the illness state in Mark 1:32 and 1:34.
+- In 2:18 the first Pharisees noun lacks the genitive prefix found in
+  the later "of the Pharisees". In 2:19 the interrogative particle and
+  ability predicate are separate; the explicit answer "No" is retained.
+  In 2:20 the temporal clause anticipates the bridegroom being taken,
+  followed by then and the future fasting verb.
 - In 2:26 Abiathar is retained as named; no other priest is substituted.
+  Chief and the plural priests retain separate links. The relative prefix
+  and negative in d-la have separate English spans. In 2:27 the second
+  nominal clause is elliptical, "man was not for the Sabbath", rather
+  than claiming a second created stem in the source.
 
 Source checks for Mark 3:
 

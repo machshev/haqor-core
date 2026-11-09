@@ -1164,6 +1164,41 @@
           "reason": "The interrogative plus paired-dative formula ma lan wa-lakh asks what involvement the speaker has with the addressee. It supplies an elliptical relationship predicate, not separate literal have/do verbs. The addressee complement with you remains separately linked to its own dative."
         }
       ]
+    },
+    "41:2": {
+      "sha256": "d11e1bbc28141c0f3718eb0700a36e420bc6e8a7beae81b65db09fa9d118d8b8",
+      "original_shared_spans": 67,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 7,
+          "english": "except",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Ela en is the compound exception particle except/unless. Literal but if would introduce a conditional clause where the source supplies an exception; the following noun or prepositional complement remains separately linked."
+        },
+        {
+          "verse": 12,
+          "english": "at once",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Bar shateh, literally son of its hour, is the lexical immediate-time expression. The son and hour constituents jointly mean at once, rather than an independent son or clock-time statement."
+        },
+        {
+          "verse": 26,
+          "english": "except",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "Ela en is the compound exception particle except/unless. Literal but if would introduce a conditional clause where the source supplies an exception; the following noun or prepositional complement remains separately linked."
+        }
+      ]
     }
   }
 }
