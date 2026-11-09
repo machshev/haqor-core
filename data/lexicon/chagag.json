@@ -1,0 +1,496 @@
+{
+  "id": "chagag",
+  "root": "חגג",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "feast",
+    "worship",
+    "joy",
+    "time",
+    "pilgrimage"
+  ],
+  "gloss": "go to keep a feast; pilgrim feast",
+  "summary": "חָגַג is to keep a חַג: to go up and gather before Yahweh at the time and place he sets, with offerings, eating and rejoicing. חַג is that festival gathering, in the Law the three yearly feasts at which every male appears before Yahweh, unleavened bread, weeks and booths (Deu 16:16), and in a few verses the festival's sacrifice. Arabic ḥajja and Sabaic ḥgg are the same root for going on pilgrimage to a sanctuary. The verb is used once of men reeling like a drunkard, and the noun חָגָּא once of a dread that comes on Egypt; how these belong with the feast is not clear.",
+  "words": [
+    {
+      "lemma": "חַג",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pilgrim feast, festival gathering",
+      "bdb": [
+        "h.am.ab"
+      ],
+      "senses": [
+        {
+          "id": "feast",
+          "gloss": "feast to Yahweh, pilgrim feast",
+          "definition": "A festival kept by gathering before Yahweh at the time and place he appoints, with offerings and rejoicing; in the Law the three yearly feasts, חַג הַמַּצּוֹת (unleavened bread), חַג הַשָּׁבֻעוֹת (weeks) and חַג הַסֻּכּוֹת (booths), when every male is to appear before him.",
+          "evidence": [
+            {
+              "ref": "Deu.16.16",
+              "role": "defining",
+              "note": "Three times a year every male appears before Yahweh at the place he chooses, at the חַג of unleavened bread, of weeks and of booths, and not empty-handed."
+            },
+            {
+              "ref": "Lev.23.6",
+              "role": "defining",
+              "note": "On the fifteenth of the first month, חַג הַמַּצּוֹת to Yahweh, seven days."
+            },
+            {
+              "ref": "Lev.23.34",
+              "role": "defining",
+              "note": "On the fifteenth of the seventh month, חַג הַסֻּכּוֹת, seven days to Yahweh."
+            },
+            {
+              "ref": "Lev.23.39",
+              "note": "When you have gathered the produce of the land, keep the חַג of Yahweh seven days."
+            },
+            {
+              "ref": "Lev.23.41",
+              "note": "Keep it as a חַג to Yahweh, seven days in the year, a statute for ever."
+            },
+            {
+              "ref": "Deu.16.14",
+              "role": "defining",
+              "note": "Rejoice in your חַג, with son, daughter, servants, Levite, sojourner, fatherless and widow."
+            },
+            {
+              "ref": "Exo.10.9",
+              "note": "We must go with young and old, for we have a חַג of Yahweh."
+            },
+            {
+              "ref": "Exo.12.14",
+              "note": "Keep this day as a חַג to Yahweh through your generations."
+            },
+            {
+              "ref": "Exo.23.16",
+              "note": "The חַג of the harvest and the חַג of the ingathering."
+            },
+            {
+              "ref": "Exo.34.25",
+              "note": "The sacrifice of חַג הַפָּסַח."
+            },
+            {
+              "ref": "Psa.81.4",
+              "note": "Blow the shofar at the new moon, at the full moon, on the day of our חַג."
+            },
+            {
+              "ref": "Zec.14.16",
+              "note": "The nations go up year by year to worship the King and keep חַג הַסֻּכּוֹת."
+            },
+            {
+              "ref": "Exo.32.5",
+              "note": "Aaron proclaims a חַג to Yahweh before the calf."
+            },
+            {
+              "ref": "1Ki.12.32",
+              "note": "Jeroboam makes a חַג in the eighth month, like the חַג in Judah."
+            },
+            {
+              "ref": "Amo.5.21",
+              "note": "I hate, I reject your feasts."
+            },
+            {
+              "ref": "Jhn.7.2",
+              "note": "The feast of booths was near."
+            },
+            {
+              "ref": "Jhn.7.37",
+              "note": "On the last, great day of the feast Jesus stands and cries out."
+            }
+          ],
+          "kin": [
+            "keep-feast"
+          ]
+        },
+        {
+          "id": "festal-sacrifice",
+          "gloss": "festival sacrifice",
+          "definition": "The victim offered at the feast, in a few verses where the word stands for the sacrifice itself.",
+          "evidence": [
+            {
+              "ref": "Exo.23.18",
+              "role": "defining",
+              "note": "The fat of my חַג shall not remain until morning, parallel to the blood of my sacrifice."
+            },
+            {
+              "ref": "Psa.118.27",
+              "role": "defining",
+              "note": "Bind the חַג with cords up to the horns of the altar."
+            },
+            {
+              "ref": "Mal.2.3",
+              "note": "The dung of your feasts, that is, of their victims, spread on the priests' faces."
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-hajj",
+        "sab-hgg",
+        "arc-hagga"
+      ],
+      "greek": [
+        {
+          "lemma": "ἑορτή",
+          "gloss": "feast",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.6, חַג → ἑορτὴ; Hos.2.13, חַגָּהּ → ἑορτὰς; ἑορτή renders חַג ×48"
+            },
+            {
+              "ref": "Jhn.7.2",
+              "note": "The feast of booths of Lev 23:34."
+            },
+            {
+              "ref": "Col.2.16",
+              "note": "Feast, new moon and sabbaths, the sequence of Hos 2:13."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָגַג",
+      "pos": "verb",
+      "gloss": "keep a feast; celebrate; reel",
+      "bdb": [
+        "h.am.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "keep a feast, go to a feast",
+          "senses": [
+            {
+              "id": "keep-feast",
+              "gloss": "keep a feast to Yahweh",
+              "definition": "Keep a חַג: go up and gather before Yahweh at the set time, and celebrate it with offerings and joy.",
+              "evidence": [
+                {
+                  "ref": "Exo.5.1",
+                  "role": "defining",
+                  "note": "Let my people go, that they may keep a feast to me in the wilderness."
+                },
+                {
+                  "ref": "Exo.23.14",
+                  "role": "defining",
+                  "note": "Three times in the year you shall keep a feast to me."
+                },
+                {
+                  "ref": "Exo.12.14",
+                  "role": "defining",
+                  "note": "You shall keep it as a feast to Yahweh, a statute for ever."
+                },
+                {
+                  "ref": "Lev.23.39",
+                  "role": "defining",
+                  "note": "You shall keep the feast of Yahweh seven days."
+                },
+                {
+                  "ref": "Lev.23.41",
+                  "note": "In the seventh month you shall keep it."
+                },
+                {
+                  "ref": "Num.29.12"
+                },
+                {
+                  "ref": "Deu.16.15",
+                  "note": "Seven days keep the feast to Yahweh at the place he chooses, and be altogether joyful."
+                },
+                {
+                  "ref": "Psa.42.5",
+                  "role": "defining",
+                  "note": "I went with the throng to the house of God, with shouts of joy and thanks, a multitude keeping the feast."
+                },
+                {
+                  "ref": "Zec.14.16",
+                  "role": "defining",
+                  "note": "Go up year by year to worship the King, Yahweh of hosts, and to keep the feast of booths."
+                },
+                {
+                  "ref": "Zec.14.18"
+                },
+                {
+                  "ref": "Zec.14.19"
+                },
+                {
+                  "ref": "Nam.2.1",
+                  "note": "Keep your feasts, Judah, pay your vows."
+                },
+                {
+                  "ref": "1Co.5.8",
+                  "note": "Let us keep the feast (ἑορτάζωμεν), with the unleavened bread of sincerity and truth."
+                }
+              ],
+              "kin": [
+                "feast"
+              ],
+              "cognate_ids": [
+                "ar-hajja",
+                "sab-hgg",
+                "arc-hagag"
+              ]
+            },
+            {
+              "gloss": "celebrate, make merry",
+              "definition": "Feast and make merry, of raiders over their spoil, with eating and drinking.",
+              "evidence": [
+                {
+                  "ref": "1Sa.30.16",
+                  "role": "defining",
+                  "note": "The Amalekites are spread over the land, eating, drinking and חֹגְגִים over the great spoil."
+                }
+              ],
+              "cognate_ids": [
+                "arc-hagag"
+              ]
+            },
+            {
+              "id": "reel",
+              "gloss": "reel",
+              "definition": "Reel to and fro, of sailors in a storm, in its one use.",
+              "evidence": [
+                {
+                  "ref": "Psa.107.27",
+                  "role": "defining",
+                  "note": "יָחוֹגּוּ וְיָנוּעוּ כַּשִּׁכּוֹר, they reel and stagger like a drunkard."
+                }
+              ],
+              "cognate_ids": [
+                "arc-hagag-circle"
+              ]
+            }
+          ]
+        }
+      ],
+      "summary": "To keep a feast before Yahweh, going up to it, and once of raiders making merry. In Psa 107:27 it is to reel like a drunkard; the link of that use to the feast is not clear. Jewish Aramaic חֲגַג is both “celebrate a feast” and “turn, draw a circle” (Targ. Prov 8:27, where a manuscript reads חֲגַל), and Hebrew has חוּג “circle”, so a sense of going round may lie behind reeling, and perhaps behind the feast's procession (Psa 42:5); this is not shown.",
+      "greek": [
+        {
+          "lemma": "ἑορτάζω",
+          "gloss": "keep a feast",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.12.14, וְחַגֹּתֶם … תְּחָגֻּהוּ → ἑορτάσετε; Lev.23.39, Lev.23.41, תָּחֹגּוּ → ἑορτάσετε"
+            },
+            {
+              "ref": "1Co.5.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָגָּא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "dread, reeling",
+      "bdb": [
+        "h.am.ac"
+      ],
+      "summary": "Once: the land of Judah becomes a חָגָּא to Egypt, and everyone who mentions it to them is afraid. The context fixes it as a dread; if it is the root's “reel” (Psa 107:27), it is what makes one reel. Its link to the feast is not clear.",
+      "senses": [
+        {
+          "gloss": "dread, terror",
+          "definition": "A cause of dread, in its one occurrence.",
+          "evidence": [
+            {
+              "ref": "Isa.19.17",
+              "role": "defining",
+              "note": "Judah will be a חָגָּא to Egypt; whoever mentions it to them will be afraid (יִפְחָד)."
+            }
+          ],
+          "kin": [
+            "reel"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-hagag-circle"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-hajja",
+      "lang": "ar",
+      "form": "حَجَّ",
+      "translit": "ḥajja",
+      "gloss": "repair to, go to, especially to an object of reverence; visit repeatedly; perform the pilgrimage to Mecca",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Lane's earliest sense is going to a person or an object of reverence, and going there again and again; the pilgrimage is the narrowed use. So חָגַג is going up to keep the feast (Exo 23:14; Zec 14:16).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 513, root حج, حَجَّ (n7106)",
+          "note": "“He repaired, or betook himself, to, or towards … an object of reverence, veneration, respect, or honour … and he went to, or visited, a person repeatedly, or frequently.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-hajj",
+      "lang": "ar",
+      "form": "حَجّ، حِجّ، حِجَّة",
+      "translit": "ḥajj, ḥijj, ḥijja",
+      "gloss": "the pilgrimage; a single pilgrimage; a year",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "The yearly pilgrimage gives ḥijja also the sense “a year”, as the חַגִּים come round each year (Exo 23:14; Zec 14:16).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 514, root حج, حَجٌّ (n7112); حِجَّةٌ (n7116)",
+          "note": "“The pilgrimage to Mekkeh … to perform the religious rites and ceremonies”; حِجَّةٌ “Also A year”."
+        }
+      ]
+    },
+    {
+      "id": "sab-hgg",
+      "lang": "sem",
+      "form": "𐩢𐩴𐩴",
+      "translit": "ḥgg; n. ḥgt",
+      "gloss": "make a pilgrimage; (n.) pilgrimage",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Sabaic: “they made a pilgrimage to (the god) dS at Y” (C 547/6); “on the third day of the pilgrimage” (C 533/4), a pilgrimage lasting days, as the feasts last seven.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 165, ḤGG I (C 547/6; C 533/4)",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“MAKE A PILGRIMAGE [Ar ḥajja id.]”; n. “PILGRIMAGE [Ar ḥijja id.]”."
+        }
+      ]
+    },
+    {
+      "id": "arc-hagag",
+      "lang": "arc",
+      "form": "חֲגַג",
+      "translit": "ḥăgag",
+      "gloss": "celebrate a festival; feast",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums, rendering חָגַג (Targ. Onq. Deu 16:15 תֵּיחוֹג; Targ. 1Sa 30:16). It may echo the Hebrew it translates.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲגַג, 2)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%97%D6%B2%D7%92%D6%B7%D7%92.1",
+          "note": "“to celebrate a festival; to feast. Targ. O. Deut. XVI, 15 תֵּיחוֹג … Targ. I Sam. XXX, 16”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001166 ḥgg [celebrate], ARM005278 ḤGG [celebrate]"
+        }
+      ]
+    },
+    {
+      "id": "arc-hagga",
+      "lang": "arc",
+      "form": "חַגָּא",
+      "translit": "ḥaggā",
+      "gloss": "festival",
+      "relation": "cognate",
+      "note": "The Targums' word for the feast (Targ. Onq. Deu 16:16). Targ. Ps.-Jonathan renders the מוֹעֵד of Gen 18:14 as זמן חגא, “the time of the festival”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חַגָּא I",
+          "note": "“Targ. Deut. XVI, 16.—Targ. Y. Gen. XVIII, 14 זמן ח׳ (h. text מועד)”; pl. חַגַּיָּא, חַגִּין."
+        }
+      ]
+    },
+    {
+      "id": "arc-hagag-circle",
+      "lang": "arc",
+      "form": "חֲגַג",
+      "translit": "ḥăgag",
+      "gloss": "turn, draw a circle",
+      "relation": "possible",
+      "note": "One Targum passage (Prov 8:27, rendering Hebrew חוּג “circle”), where a manuscript reads חֲגַל. If ḥgg once meant going round, it would explain the verb's reeling (Psa 107:27) and חָגָּא; the evidence is one variant reading.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲגַג, 1)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%97%D6%B2%D7%92%D6%B7%D7%92.1",
+          "note": "“to turn, draw a circle. Targ. Prov. VIII, 27 (Ms. חֲגַל)”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "a-feast-to-yahweh",
+      "statement": "A חַג is kept “to Yahweh” (Exo 12:14; Lev 23:6, 41). It is what Israel is brought out of Egypt for: “Let my people go, that they may keep a feast to me in the wilderness” (Exo 5:1; 10:9). Three times a year every male is to appear before Yahweh at the place he chooses, at the feasts of unleavened bread, weeks and booths, and not empty-handed (Deu 16:16). The feast is shared joy: “you shall rejoice in your feast”, with son and daughter, servants, the Levite, the sojourner, the fatherless and the widow (Deu 16:14–15). A feast kept on terms people set is rejected: Aaron proclaims a חַג to Yahweh before the calf (Exo 32:5), Jeroboam makes a חַג in the month he devised from his own heart (1Ki 12:32–33), and to those who keep the feasts without justice Yahweh says, “I hate, I reject your feasts … let justice roll down like waters” (Amo 5:21–24). The feast is to Yahweh on his terms, and its joy reaches the poor of the people.",
+      "evidence": [
+        {
+          "ref": "Exo.12.14"
+        },
+        {
+          "ref": "Lev.23.6"
+        },
+        {
+          "ref": "Lev.23.41"
+        },
+        {
+          "ref": "Exo.5.1"
+        },
+        {
+          "ref": "Exo.10.9"
+        },
+        {
+          "ref": "Deu.16.14",
+          "to": "Deu.16.16"
+        },
+        {
+          "ref": "Exo.32.5"
+        },
+        {
+          "ref": "1Ki.12.32",
+          "to": "1Ki.12.33"
+        },
+        {
+          "ref": "Amo.5.21",
+          "to": "Amo.5.24"
+        }
+      ]
+    },
+    {
+      "topic": "keeping-the-feast-in-christ",
+      "statement": "Paul writes: “Christ our פֶּסַח (Passover) has been sacrificed; so let us keep the feast (ἑορτάζωμεν, the Greek of חָגַג), not with old leaven, the leaven of malice and wickedness, but with the unleavened bread of sincerity and truth” (1Co 5:7–8). The feast he names is חַג הַמַּצּוֹת, the seven days of unleavened bread that follow the פֶּסַח (Lev 23:5–6), and he says it is kept by putting away malice. At חַג הַסֻּכּוֹת (Lev 23:34), on the last, great day of the feast, Jesus stood and cried, “If anyone thirsts, let him come to me and drink”, and John says he spoke of the Spirit whom those who believed in him would receive (Jhn 7:2, 37–39). Zechariah sees the nations going up year by year to worship the King, Yahweh of hosts, and to keep חַג הַסֻּכּוֹת (Zec 14:16).",
+      "evidence": [
+        {
+          "ref": "1Co.5.7",
+          "to": "1Co.5.8"
+        },
+        {
+          "ref": "Lev.23.5",
+          "to": "Lev.23.6"
+        },
+        {
+          "ref": "Lev.23.34"
+        },
+        {
+          "ref": "Jhn.7.2"
+        },
+        {
+          "ref": "Jhn.7.37",
+          "to": "Jhn.7.39"
+        },
+        {
+          "ref": "Zec.14.16"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: the names חַגַּי (Haggai), חַגִּית (Haggith), חַגִּי (Haggi, and the gentilic), חַגִּיָּה (Haggiah), for name entries. Job 26:10 חָג (spelled like חַג) is the verb חוּג “draw a circle” and is not counted here. The Peshitta has no word of this root: SEDRA lists no ܚܓ root, and its feast words ܥܐܕܐ, ܥܕܥܕܐ (e.g. 1Co 5:8, Col 2:16) are another root, ʿyd. Open: (1) whether reeling (Psa 107:27) and חָגָּא (Isa 19:17) belong to the feast: the only lead is Targumic ḥgg “draw a circle” on one variant reading (arc-hagag-circle, possible) and Hebrew חוּג; they are kept, with the link marked unclear. (2) Biella p. 165 was read from the scan's OCR, which drops the dots (it prints HGG); the ḥ is restored from Biella's own comparison with Arabic ḥajja; check on the scan. (3) The Jewish Aramaic forms are Targumic and may echo the Hebrew they render; no Ugaritic, Phoenician, Akkadian or Ge'ez cognate was found in the vendored sources (Segert, Fisher, Krahmalkov, Oracc searched by text). (4) Lane gives Arabic حِجَّة “year”; whether that bears on the feast's yearly round is an inference, not a cognate meaning, and is stated only in the cognate's note. (5) The festal-sacrifice sense (Exo 23:18; Psa 118:27; Mal 2:3) names no cognate of its own beyond the word's; review."
+}
