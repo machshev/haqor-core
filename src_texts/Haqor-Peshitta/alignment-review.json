@@ -5480,6 +5480,50 @@
           "reason": "BAR SHA'TEH, literally son of its hour, is a lexicalized temporal idiom meaning AT ONCE. Separate son/hour renderings would misstate the temporal adverb. Subject, taking, bread, and both going-out clauses remain separate."
         }
       ]
+    },
+    "43:14": {
+      "sha256": "0075fcace0532599604704aa13da7ae1b026e9674d4df63d7c134cb96a6eb7b1",
+      "original_shared_spans": 143,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 6,
+          "english": "except",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "ELLA EN is the exclusive conditional conjunction, English EXCEPT in the route clause no one comes except through me. The following prepositional phrase THROUGH ME remains separate; translating EN as an independent IF would misstate the exception."
+        },
+        {
+          "verse": 17,
+          "english": "whom",
+          "positions": [
+            2,
+            6
+          ],
+          "reason": "HAW introduces the relative referent and the receive infinitive resumes that same object with a third-person suffix. English WHOM realizes this one object once. The world, ability, negation and TO RECEIVE are separately owned; the shared span contains only the co-referential relative/object expression."
+        },
+        {
+          "verse": 21,
+          "english": "has",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Existential D-ITH plus LWATHE, with him, jointly express possession of the commandments, natural English HAS. WHOEVER, commandments and their MY possessor, keeping, object THEM and the identity/love clauses remain independently linked."
+        },
+        {
+          "verse": 30,
+          "english": "have",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Negated existential LAYT plus third-person L-possessor jointly express possession, English HAVE. The clause is rendered he does not have anything in me; HE, auxiliary DOES, negative NOT, ANYTHING and IN ME are separately linked outside this minimal possessive predicate."
+        }
+      ]
     }
   }
 }
