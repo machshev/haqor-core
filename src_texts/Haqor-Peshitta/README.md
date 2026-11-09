@@ -1750,6 +1750,13 @@ Source checks for Luke 16:
 
 Source checks for Luke 17:
 
+- The chapter's 138 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Six remain: two
+  possession constructions, the thanks idiom and its anticipatory servant
+  reference, the return verb's ethical dative, and the anticipatory Jesus
+  object. Their exact positions and linguistic reasons are in the ledger.
+  Ordinary negatives, auxiliaries, modifiers, and clause constituents
+  have separate source owners.
 - In 17:1 both negatives are retained in the impossibility of offenses not
   coming. In 17:2 the millstone is associated with a donkey. In 17:4 the
   quoted "I repent" ends before the command to forgive; both seven-times
@@ -1761,6 +1768,9 @@ Source checks for Luke 17:
 - In 17:9 `qbl` with the favor/thanks noun is an idiom meaning thank;
   [CAL documents this Syriac combination under D 2(c)](https://cal.huc.edu/getlex.php?coord=5100104111&word=8).
   The question concerns a master thanking the servant.
+  The thanks noun's suffix and the explicit servant identify the same
+  recipient, expressed once; the demonstrative and who-did clause remain
+  separately linked.
   In 17:10 the final clause states the obligation without adding "only".
 - In 17:11 the ethnic term is plural Samaritans, followed by the directional
   prefix on Galilee; the rendering follows the among-Samaritans route
@@ -1768,6 +1778,8 @@ Source checks for Luke 17:
 - In 17:15 the man turns back and "was praising God"; the dative after
   turning is rendered naturally without adding a receiver. In 17:16
   "this man" was a Samaritan. In 17:17 both ten and nine remain explicit.
+  The two copular forms in 17:17 separately own "was it" and "were";
+  the relative prefix belongs to the cleansing word.
 - In 17:18 `prsh` has the departure sense, as in
   [CAL's Syriac examples under G 3](https://cal.huc.edu/cal_entry_web.php?lemma=pr%24+V).
   The question follows Murdock's contextual gone-away/without-coming
@@ -1776,9 +1788,10 @@ Source checks for Luke 17:
   here, as discussed for this [interrogative particle](https://eprints.glos.ac.uk/3339/1/292355.pdf),
   p. 147, citing Payne Smith and Nöldeke. In 17:19 the faith has given him life.
 - In 17:20 the Pharisees ask Jesus, and the kingdom does not come with
-  observation. In 17:21 it is "within you". In 17:22 the requested sight
-  is one of the days; no plural object is supplied to the final seeing
-  verb. In 17:23 no following-them command is added. In 17:24 lightning
+  observation. The asking verb's anticipatory object suffix identifies
+  the explicitly named Jesus. In 17:21 it is "within you". In 17:22 the
+  requested sight is one of the days; no plural object is supplied to the
+  final seeing verb. In 17:23 no following-them command is added. In 17:24 lightning
   flashes from heaven and illuminates all beneath heaven.
 - In 17:27 taking wives and giving women to husbands preserve the active
   marriage expressions. In 17:28 planting has its own past auxiliary.
