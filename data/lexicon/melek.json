@@ -2,7 +2,7 @@
   "id": "melek",
   "root": "מלכ",
   "status": "draft",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "tags": [
     "king",
     "kingdom",
@@ -10,8 +10,8 @@
     "counsel",
     "promise"
   ],
-  "gloss": "king; reign, kingdom; counsel",
-  "summary": "מֶלֶךְ is a king, and מָלַךְ is to be or become king; the nouns name kingship, royal dignity, a reign, or the kingdom ruled. Scripture applies the family both to human rulers and to Yahweh’s rule. The spelling also holds counsel-language, clear in Aramaic מְלֵךְ and Syriac verbs for advising and promising; its relation to kingship is not established by the cited uses.",
+  "gloss": "king; reign, kingdom; counsel, decision",
+  "summary": "מֶלֶךְ is a king, and מָלַךְ is to be or become king; the nouns name kingship, royal dignity, a reign, or the kingdom ruled, and scripture applies them both to human rulers and to Yahweh’s rule. King and reign stand in the same consonants in Ugaritic, Phoenician, Moabite, Sabaic, Ge’ez, Arabic, Akkadian and Aramaic. The spelling also holds counsel: Aramaic מְלֵךְ “counsel” (Dan 4:24), perhaps Neh 5:7, and the Peshitta’s verbs for advising and promising, as Akkadian and Aramaic use the root for advising and deciding. No verse joins the two meanings, and the cognates cannot separate them.",
   "words": [
     {
       "lemma": "מֶלֶךְ",
@@ -33,6 +33,16 @@
             {
               "ref": "Deu.17.14",
               "role": "defining"
+            },
+            {
+              "ref": "Zec.9.9",
+              "note": "Zion’s king comes to her, righteous and lowly, riding on a donkey; quoted of Jesus in Mat 21:5 and Jhn 12:15."
+            },
+            {
+              "ref": "Mat.21.5"
+            },
+            {
+              "ref": "Jhn.12.15"
             }
           ]
         },
@@ -48,13 +58,27 @@
             {
               "ref": "Psa.10.16",
               "role": "defining"
+            },
+            {
+              "ref": "Isa.43.15",
+              "role": "defining",
+              "note": "“I am Yahweh … the creator of Israel, your king.”"
             }
+          ],
+          "cognate_ids": [
+            "gez-amlak"
           ]
         }
       ],
       "gender": "m",
       "cognate_ids": [
-        "ar-malik"
+        "ar-malik",
+        "uga-mlk-king",
+        "phn-mlk-king",
+        "moab-mlk",
+        "sab-mlk",
+        "akk-malku",
+        "arc-malka"
       ],
       "greek": [
         {
@@ -100,9 +124,6 @@
                   "ref": "1Ki.1.30",
                   "role": "defining"
                 }
-              ],
-              "cognate_ids": [
-                "ar-mulk"
               ]
             },
             {
@@ -110,19 +131,30 @@
               "definition": "Exercise kingship, said of Yahweh.",
               "evidence": [
                 {
+                  "ref": "Exo.15.18",
+                  "role": "defining",
+                  "note": "Yahweh will reign for ever and ever."
+                },
+                {
                   "ref": "Psa.93.1",
                   "role": "defining",
                   "note": "Yahweh reigns, clothed in majesty."
                 },
                 {
                   "ref": "1Sa.8.7",
-                  "role": "defining"
+                  "role": "defining",
+                  "note": "In asking for a king the people have rejected Yahweh from reigning over them."
                 }
-              ],
-              "cognate_ids": [
-                "ar-mulk"
               ]
             }
+          ],
+          "cognate_ids": [
+            "ar-malaka",
+            "uga-mlk-reign",
+            "phn-mlk-rule",
+            "moab-mlk",
+            "gez-malaka",
+            "arc-melakh-rule"
           ]
         },
         {
@@ -142,12 +174,17 @@
                   "ref": "Est.2.17",
                   "role": "defining",
                   "note": "The king makes Esther queen in Vashti’s place."
+                },
+                {
+                  "ref": "1Sa.15.11",
+                  "note": "Yahweh regrets that he made Saul king."
                 }
-              ],
-              "cognate_ids": [
-                "ar-mulk"
               ]
             }
+          ],
+          "cognate_ids": [
+            "ar-mallaka",
+            "gez-amlaka"
           ]
         },
         {
@@ -163,11 +200,12 @@
                   "role": "defining",
                   "note": "Darius was made king over the kingdom of the Chaldeans."
                 }
-              ],
-              "cognate_ids": [
-                "ar-mulk"
               ]
             }
+          ],
+          "cognate_ids": [
+            "ar-mallaka",
+            "gez-amlaka"
           ]
         },
         {
@@ -176,7 +214,7 @@
           "senses": [
             {
               "gloss": "consider inwardly; be moved to a decision",
-              "definition": "Nehemiah’s heart acts upon him before he challenges the nobles. “I took counsel with myself” and “my heart ruled over me” are two readings of the construction; the single occurrence does not settle the link between counsel and rule.",
+              "definition": "Nehemiah’s heart acts upon him before he challenges the nobles. “I took counsel with myself” (or “my heart decided for me”) and “my heart ruled over me” are two readings of the construction. The counsel reading has Aramaic מְלֵךְ “counsel” (Dan 4:24), Aramaic מְלַךְ “decide, advise” and Akkadian “his heart counsels him” beside it; the single occurrence does not settle it.",
               "evidence": [
                 {
                   "ref": "Neh.5.7",
@@ -185,7 +223,11 @@
                 }
               ],
               "cognate_ids": [
-                "akk-malaku"
+                "akk-malaku",
+                "arc-melakh-advise"
+              ],
+              "kin": [
+                "arc-counsel"
               ]
             }
           ]
@@ -212,6 +254,19 @@
             {
               "ref": "1Ki.10.20",
               "role": "defining"
+            },
+            {
+              "ref": "Exo.19.6",
+              "role": "defining",
+              "note": "Israel is to be to Yahweh a kingdom of priests, a holy nation: a people ruled by him."
+            },
+            {
+              "ref": "1Pe.2.9",
+              "note": "Peter applies Exo 19:6 to believers."
+            },
+            {
+              "ref": "2Ki.19.15",
+              "note": "Yahweh alone is God of all the kingdoms of the earth."
             }
           ]
         },
@@ -229,11 +284,46 @@
               "role": "defining"
             }
           ]
+        },
+        {
+          "gloss": "royal (in construct)",
+          "definition": "Before another noun, belonging to the king: the royal city, the royal family, the royal house.",
+          "evidence": [
+            {
+              "ref": "1Sa.27.5",
+              "role": "defining",
+              "note": "David asks why he should live in the royal city with Achish."
+            },
+            {
+              "ref": "Jos.10.2",
+              "role": "defining",
+              "note": "Gibeon is like one of the royal cities."
+            },
+            {
+              "ref": "2Ki.11.1",
+              "role": "defining",
+              "note": "Athaliah destroys all the royal seed."
+            },
+            {
+              "ref": "Amo.7.13",
+              "role": "defining",
+              "note": "Bethel is the king’s sanctuary and a royal house."
+            }
+          ],
+          "cognate_ids": [
+            "phn-mmlkt"
+          ]
         }
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-mulk"
+        "ar-mulk",
+        "uga-mlk-kingship",
+        "phn-mlk-kingship",
+        "sab-mlk-kingship",
+        "gez-mlkna",
+        "akk-malikutu",
+        "ar-mamlaka"
       ]
     },
     {
@@ -278,7 +368,12 @@
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-mulk"
+        "ar-mulk",
+        "uga-mlk-kingship",
+        "phn-mlk-kingship",
+        "sab-mlk-kingship",
+        "gez-mlkna",
+        "akk-malikutu"
       ]
     },
     {
@@ -308,7 +403,11 @@
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-malik"
+        "uga-mlkt",
+        "phn-mlkt",
+        "sab-mlkt",
+        "akk-malkatu",
+        "arc-malketa"
       ]
     },
     {
@@ -335,6 +434,11 @@
             {
               "ref": "Oba.1.21",
               "role": "defining"
+            },
+            {
+              "ref": "Psa.22.29",
+              "role": "defining",
+              "note": "The kingship is Yahweh’s, and he rules over the nations."
             }
           ]
         },
@@ -351,12 +455,20 @@
               "ref": "Dan.1.3",
               "role": "defining"
             }
+          ],
+          "cognate_ids": [
+            "phn-mmlkt"
           ]
         }
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-mulk"
+        "ar-mulk",
+        "uga-mlk-kingship",
+        "phn-mlk-kingship",
+        "sab-mlk-kingship",
+        "gez-mlkna",
+        "akk-malikutu"
       ]
     },
     {
@@ -386,7 +498,12 @@
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-mulk"
+        "ar-mulk",
+        "uga-mlk-kingship",
+        "phn-mlk-kingship",
+        "sab-mlk-kingship",
+        "gez-mlkna",
+        "akk-malikutu"
       ]
     },
     {
@@ -416,7 +533,11 @@
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-malik"
+        "uga-mlkt",
+        "phn-mlkt",
+        "sab-mlkt",
+        "akk-malkatu",
+        "arc-malketa"
       ]
     },
     {
@@ -446,7 +567,13 @@
       "lang": "arc",
       "gender": "m",
       "cognate_ids": [
-        "ar-malik"
+        "ar-malik",
+        "uga-mlk-king",
+        "phn-mlk-king",
+        "moab-mlk",
+        "sab-mlk",
+        "akk-malku",
+        "arc-malka"
       ]
     },
     {
@@ -491,7 +618,12 @@
       "lang": "arc",
       "gender": "f",
       "cognate_ids": [
-        "ar-mulk"
+        "ar-mulk",
+        "uga-mlk-kingship",
+        "phn-mlk-kingship",
+        "sab-mlk-kingship",
+        "gez-mlkna",
+        "akk-malikutu"
       ]
     },
     {
@@ -517,7 +649,11 @@
       "lang": "arc",
       "gender": "f",
       "cognate_ids": [
-        "ar-malik"
+        "uga-mlkt",
+        "phn-mlkt",
+        "sab-mlkt",
+        "akk-malkatu",
+        "arc-malketa"
       ]
     },
     {
@@ -537,12 +673,16 @@
               "role": "defining",
               "note": "Daniel asks that his counsel please the king and urges righteousness and mercy to the poor."
             }
-          ]
+          ],
+          "id": "arc-counsel"
         }
       ],
       "lang": "arc",
       "gender": "m",
       "cognate_ids": [
+        "arc-melekh-counsel",
+        "akk-milku",
+        "akk-malku-decision",
         "akk-malaku"
       ]
     },
@@ -570,7 +710,13 @@
       "lang": "syc",
       "gender": "m",
       "cognate_ids": [
-        "ar-malik"
+        "ar-malik",
+        "uga-mlk-king",
+        "phn-mlk-king",
+        "moab-mlk",
+        "sab-mlk",
+        "akk-malku",
+        "arc-malka"
       ]
     },
     {
@@ -593,7 +739,11 @@
       "lang": "syc",
       "gender": "f",
       "cognate_ids": [
-        "ar-malik"
+        "uga-mlkt",
+        "phn-mlkt",
+        "sab-mlkt",
+        "akk-malkatu",
+        "arc-malketa"
       ]
     },
     {
@@ -635,7 +785,12 @@
       "lang": "syc",
       "gender": "f",
       "cognate_ids": [
-        "ar-mulk"
+        "ar-mulk",
+        "uga-mlk-kingship",
+        "phn-mlk-kingship",
+        "sab-mlk-kingship",
+        "gez-mlkna",
+        "akk-malikutu"
       ]
     },
     {
@@ -659,11 +814,18 @@
                 {
                   "ref": "Act.27.22",
                   "role": "defining"
+                },
+                {
+                  "ref": "Rev.3.18",
+                  "role": "defining",
+                  "note": "“I counsel you to buy from me gold refined by fire.”"
                 }
               ],
               "cognate_ids": [
-                "akk-malaku"
-              ]
+                "akk-malaku",
+                "arc-melakh-advise"
+              ],
+              "id": "syc-advise"
             },
             {
               "gloss": "promise",
@@ -677,7 +839,16 @@
                 {
                   "ref": "Tit.1.2",
                   "role": "defining"
+                },
+                {
+                  "ref": "Heb.6.13",
+                  "role": "defining",
+                  "note": "God promised Abraham and swore by himself."
                 }
+              ],
+              "id": "syc-promise",
+              "kin": [
+                "syc-counsel"
               ]
             }
           ]
@@ -699,6 +870,9 @@
                   "ref": "Heb.11.9",
                   "role": "defining"
                 }
+              ],
+              "kin": [
+                "syc-counsel"
               ]
             }
           ]
@@ -722,7 +896,8 @@
                 }
               ],
               "cognate_ids": [
-                "akk-malaku"
+                "akk-malaku",
+                "arc-melakh-advise"
               ]
             }
           ]
@@ -743,16 +918,27 @@
                 {
                   "ref": "Rom.5.14",
                   "role": "defining"
+                },
+                {
+                  "ref": "Luk.19.14",
+                  "role": "defining",
+                  "note": "“We do not want this man to reign over us.”"
                 }
               ],
               "cognate_ids": [
-                "ar-mulk"
+                "ar-malaka",
+                "uga-mlk-reign",
+                "phn-mlk-rule",
+                "moab-mlk",
+                "gez-malaka",
+                "arc-melakh-rule"
               ]
             }
           ]
         }
       ],
-      "lang": "syc"
+      "lang": "syc",
+      "summary": "One Syriac verb counsels, promises and (in the aphel) reigns. Its promising has no cognate of its own: a promise is a course of action declared and bound upon oneself, as counsel is one proposed to another and a decision (Aramaic מְלַךְ “decide”, Akkadian malāku “come to a decision”) one settled. That link is drawn from the shared verb, not shown by a verse."
     },
     {
       "lemma": "מֵלְכָּא",
@@ -772,12 +958,16 @@
               "ref": "Act.25.12",
               "role": "defining"
             }
-          ]
+          ],
+          "id": "syc-counsel"
         }
       ],
       "lang": "syc",
       "gender": "m",
       "cognate_ids": [
+        "arc-melekh-counsel",
+        "akk-milku",
+        "akk-malku-decision",
         "akk-malaku"
       ]
     },
@@ -803,11 +993,16 @@
               "ref": "2Co.1.20",
               "role": "defining"
             }
+          ],
+          "kin": [
+            "syc-promise",
+            "syc-counsel"
           ]
         }
       ],
       "lang": "syc",
-      "gender": "m"
+      "gender": "m",
+      "summary": "The noun of the verb’s promising. Its tie to the root runs through the verb, which also means to counsel; no cognate language has a word for promise from this root."
     }
   ],
   "cognates": [
@@ -836,22 +1031,549 @@
       "evidence": [
         {
           "source": "lane",
-          "locator": "p. 3023, root ملك, مُلْكٌ (n43698)"
+          "locator": "p. 3023, root ملك, مُلْكٌ (n43698)",
+          "note": "\"Dominion; sovereignty; kingship; rule; mastership; ownership; possession; right of possession; authority; sway.\""
         }
       ]
+    },
+    {
+      "id": "ar-malaka",
+      "lang": "ar",
+      "form": "مَلَكَ",
+      "translit": "malaka",
+      "gloss": "possess, own; exercise authority over",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3023, root ملك, مَلَكَهُ (n43691)",
+          "note": "\"He possessed it, or owned it, [and particularly] with ability to have it to himself exclusively: [and he exercised, or had, authority over it; for] مُلْكٌ signifies the exercise of authority to command and to forbid in respect of the generality of a people\"."
+        }
+      ],
+      "note": "The Arabic verb is first to possess, and through possession to command; Hebrew מָלַךְ is only to reign."
+    },
+    {
+      "id": "ar-mallaka",
+      "lang": "ar",
+      "form": "مَلَّكَ",
+      "translit": "mallaka",
+      "gloss": "(stem II) make king; make to possess",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3023, root ملك, مَلَّكَهُ (n43692)",
+          "note": "\"He made him to possess a thing\"; \"He made him king; or made him to have dominion, kingship, or rule.\""
+        }
+      ]
+    },
+    {
+      "id": "ar-mamlaka",
+      "lang": "ar",
+      "form": "مَمْلَكَة",
+      "translit": "mamlaka",
+      "gloss": "kingdom, realm",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3023, root ملك, مَمْلَكَةٌ (n43709)",
+          "note": "\"A kingdom, or realm.\""
+        }
+      ],
+      "note": "The same ma- formation as מַמְלָכָה."
+    },
+    {
+      "id": "uga-mlk-king",
+      "lang": "uga",
+      "form": "𐎎𐎍𐎋",
+      "translit": "mlk /malk-/",
+      "gloss": "king",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 192, §93 Glossary, mlk /malk-/",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n219",
+          "note": "\"mlk /malk-/, cf. ma-al-ku U:V:130:III:13′; 137:II:32′ “king” (H., Aram. mælæk, malk-; cf. Akkad. mal(i)ku, Arab. malik)\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-mlk-reign",
+      "lang": "uga",
+      "form": "𐎀𐎎𐎍𐎋",
+      "translit": "amlk",
+      "gloss": "reign, rule",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 192, §93 Glossary, /m-l-k/",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n219",
+          "note": "\"/m-l-k/: amlk “to reign, rule” (H. mālak, yimlōk, cf. Arab. malaka, yamliku)\"."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "*mlk (mlk [advise] V): ugaritic mlk [reign] V"
+        }
+      ],
+      "note": "The Akkadian of Ugarit has the verb too: malāku B “to rule, to hold power”, which the Chicago Assyrian Dictionary calls a West Semitic word found only at Ras Shamra (CAD M/1 p. 158)."
+    },
+    {
+      "id": "uga-mlk-kingship",
+      "lang": "uga",
+      "form": "𐎎𐎍𐎋",
+      "translit": "mlk /milk-/ or /mulk-/",
+      "gloss": "ruling, kingship",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 192, §93 Glossary, mlk /milk-/ (?), /mulk-/ (?)",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n219",
+          "note": "\"mlk /milk-/ (?), /mulk-/ (?) 1.2:IV:10 = 88.51; 1.16:VI:52 = 85.1 “ruling, kingship” (cf. Arab. mulk?)\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-mlkt",
+      "lang": "uga",
+      "form": "𐎎𐎍𐎋𐎚",
+      "translit": "mlkt /malkat-/",
+      "gloss": "queen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 192, §93 Glossary, mlkt",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n219",
+          "note": "\"mlkt /malkat-/ “queen” (H. malkā, Phoen. mlkt, Aram. malkətā)\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-mlk-rule",
+      "lang": "phn",
+      "form": "𐤌𐤋𐤊",
+      "translit": "mlk",
+      "gloss": "rule, reign over",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 285, M-L-K I",
+          "note": "\"[Heb. m-l-k] v. qal RULE, REIGN over (with ʿl, ʾlt, b- or accusative)\"; KAI 89.1 (Pu) rbt ḥwt ʾlt mlkt mysk, \"Lady ḤWT, goddess who rules the dead\"; KAI 145 I 5/6 (NPu) ḥtr myskr rzn ymm, \"<The god> ḤTR rules the land, Mescar rules the seas\"."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "*mlk (mlk [advise] V): punic mlk [possess] V"
+        }
+      ],
+      "note": "Krahmalkov also lists a verb M-L-K II “possess, own” (p. 285), with the noun mlkt “property, wealth” (p. 290), as Arabic malaka is to possess."
+    },
+    {
+      "id": "phn-mlk-king",
+      "lang": "phn",
+      "form": "𐤌𐤋𐤊",
+      "translit": "mlk",
+      "gloss": "king",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 285, MLK III",
+          "note": "\"[Heb. melek] n.m. KING\"; KAI 1.1 (Ph) ʾḥrm mlk gbl, \"Ahiram, King of Byblos\"; KAI 19.5/6 ʾdn mlkm, \"Lord of Kings\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-mlk-kingship",
+      "lang": "phn",
+      "form": "𐤌𐤋𐤊",
+      "translit": "mlk",
+      "gloss": "kingship, royalty; reign",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 285–286, MLK V",
+          "note": "\"n.m. 1. KINGSHIP, ROYALTY\", KAI 1.2 ks' mlkh, \"his royal throne\"; \"2. REIGN\", KAI 14.1 bšnt ʿsr wʾrbʿ 14 lmlky mlk ʾšmnʿzr, \"in year fourteen of the reign of King Eshmunazor\"."
+        }
+      ],
+      "note": "Dating by the year of a king’s reign, as מַלְכוּת does in Esther, Daniel and Chronicles."
+    },
+    {
+      "id": "phn-mlkt",
+      "lang": "phn",
+      "form": "𐤌𐤋𐤊𐤕",
+      "translit": "mlkt",
+      "gloss": "queen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 289, MLKT I, pl. MLKYT",
+          "note": "\"[Heb. malka] n.f. QUEEN\"; KAI 14.14/15 ʾmʿštrt ... hmlkt bt mlk ʾšmnʿzr, \"Amastarte ... the queen, the daughter of King Eshmunazor\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-mmlkt",
+      "lang": "phn",
+      "form": "𐤌𐤌𐤋𐤊𐤕",
+      "translit": "mmlkt",
+      "gloss": "person of royal lineage; king",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 293, MMLKT",
+          "note": "\"[cf. Heb. mamlaka] n.m. 1. PERSON OF ROYAL LINEAGE\", KAI 14.4 kl mmlkt wkl ʾdm, \"anyone of royal lineage or any commoner\"; \"2. KING\", KAI 10.1/2 \"whom the Lady Baalat of Byblos made king over Byblos\"."
+        }
+      ],
+      "note": "The Phoenician word names the royal person, not the realm: compare זֶרַע הַמַּמְלָכָה “the royal seed” (2Ki 11:1)."
+    },
+    {
+      "id": "moab-mlk",
+      "lang": "sem",
+      "form": "מלך",
+      "translit": "mlk",
+      "gloss": "king; reign",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 1–3, 5",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 1 מלך · מאב; line 2 אבי · מלך · על · מאב · שלשן · שת · ואנך · מלכ|תי · אחר · אבי; line 5 עמרי · מלכ · ישראל."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 1–3, 5",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"Méšaʿ son of Kemôš? king of Mōʾāḇ\"; \"My father reigned over Mōʾāḇ thirty years and I reigned after my father\"; \"ʿOmrî was king of Yisrāʾēl\"."
+        }
+      ],
+      "note": "Moabite, the Mesha stele: the noun and the verb, with the verb built as the Hebrew one is in Kings: reigning over (על) a land for a count of years, and reigning after one’s father."
+    },
+    {
+      "id": "sab-mlk",
+      "lang": "sem",
+      "form": "𐩣𐩡𐩫",
+      "translit": "mlk",
+      "gloss": "king",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 277, MLK, n¹",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"KING (cf mlkt n⁴ “queen”) [Ar malik id]\"; C1/6 mlk SBʾ, \"the king of S.\"; J577/16 sbʾw bʿly ʾmlkm wxmsm, \"they campaigned against kings and armies\"."
+        }
+      ],
+      "note": "Sabaic. Biella also gives the causative verb hmlk “cause to possess, place in the possession of” and a noun mlk “property, domain” (pp. 277–278): possession, as in Arabic, Ge’ez and Phoenician."
+    },
+    {
+      "id": "sab-mlk-kingship",
+      "lang": "sem",
+      "form": "𐩣𐩡𐩫",
+      "translit": "mlk",
+      "gloss": "office of king, kingship; reign",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 277–278, MLK, n²",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"KING; OFFICE OF KING; KINGSHIP; phps also TERM AS KING, REIGN (Cf Ar malik “king,” mulk “kingship, reign.”)\"; G1689a/3 \"his term as priest in the reign of Y.\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-mlkt",
+      "lang": "sem",
+      "form": "𐩣𐩡𐩫𐩩",
+      "translit": "mlkt",
+      "gloss": "queen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 278, MLK, n⁴",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"QUEEN\"; Ir13/7 mrʾthmw ... mlkt ḤḌRMWT, \"their lady, the queen of Ḥ.\"."
+        }
+      ]
+    },
+    {
+      "id": "gez-malaka",
+      "lang": "gez",
+      "form": "መለከ",
+      "translit": "malaka",
+      "gloss": "possess, occupy; rule, reign (often of God)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 150, መለከ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n98",
+          "note": "\"1) possidere, dominio tenere, occupare, potiri\"; \"2) dominari, sub imperio tenere, regnare\", \"saepissime de Deo\": ዘኵሉ፡ ይመልክ ὁ παντοκράτωρ."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "*mlk (mlk [advise] V): geez malaka [own] V"
+        }
+      ],
+      "note": "Ge’ez, like Arabic, has possessing first and ruling second; Dillmann sets the verb beside Hebrew מָלַךְ “regnavit” and Syriac “regnavit, consuluit”."
+    },
+    {
+      "id": "gez-amlaka",
+      "lang": "gez",
+      "form": "አምለከ",
+      "translit": "ʾamlaka",
+      "gloss": "(causative) make someone possessor, lord or ruler",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 150–151, አምለከ and ተመልከ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n98",
+          "note": "አምለከ \"possessorem, dominum, regnatorem facere vel creare aliquem\" (Sir 33:33 [Eth.]); ተመልከ \"3) dominum, regnatorem constitui\"."
+        }
+      ]
+    },
+    {
+      "id": "gez-mlkna",
+      "lang": "gez",
+      "form": "ምልክና",
+      "translit": "mǝlkǝnnā",
+      "gloss": "dominion, ownership; authority, majesty; province",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 151, ምልክና",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n99",
+          "note": "\"1) dominium, mancipium\"; \"2) potestas ... auctoritas, dominium, imperium, majestas, celsitudo\"; \"3) praefectura, satrapia\" (Esth 3:12)."
+        }
+      ]
+    },
+    {
+      "id": "gez-amlak",
+      "lang": "gez",
+      "form": "አምላክ",
+      "translit": "ʾamlāk",
+      "gloss": "God (a plural form: lords, rulers)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 151–152, አምላክ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n99",
+          "note": "\"est formâ plur. ... a singulari deperdito [መልክ] [coll. hebr. מֶלֶךְ et arab. ...] derivatum est, et dominos, dominatores significat: deinde in notionem divini numinis ... abiit\"; \"1) Deus, ὁ θεός\"."
+        }
+      ],
+      "note": "In Ge’ez the root’s word for “lords, rulers” became the common word for God, as מֶלֶךְ names Yahweh as king."
+    },
+    {
+      "id": "akk-malku",
+      "lang": "akk",
+      "form": "malku",
+      "translit": "malku (maliku)",
+      "gloss": "king, (foreign) ruler, prince",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cad",
+          "locator": "M/1 p. 166, malku A s.",
+          "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_m1.pdf",
+          "note": "\"malku A (maliku) s.; king, (foreign) ruler; from OAkk., OB (Mari), MA on\"; lexical lists equate it with šarru, the usual Akkadian word for king."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000047220, malku [prince] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000047220.html"
+        }
+      ]
+    },
+    {
+      "id": "akk-malkatu",
+      "lang": "akk",
+      "form": "malkatu",
+      "translit": "malkatu",
+      "gloss": "queen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cad",
+          "locator": "M/1 p. 166, malkatu A s.",
+          "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_m1.pdf",
+          "note": "\"malkatu A s.; queen; OAkk., OB, Bogh., SB; cf. malku A\"."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000047510, malkatu [ruler] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000047510.html"
+        }
+      ]
+    },
+    {
+      "id": "akk-malikutu",
+      "lang": "akk",
+      "form": "malkūtu",
+      "translit": "malkūtu (malikūtu)",
+      "gloss": "rule, government, overlordship",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cad",
+          "locator": "M/1 p. 169, malkūtu (malikūtu) s.",
+          "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_m1.pdf",
+          "note": "\"rule, government, overlordship; OB, SB; cf. malku A\"; of kings, and \"b) referring to divine rule\": \"he entrusted to you the rulership over all the gods\" (En. el. I 154)."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000047520, malikūtu [rulership] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000047520.html"
+        }
+      ],
+      "note": "The abstract in -ūt, the same formation as מַלְכוּת."
     },
     {
       "id": "akk-malaku",
       "lang": "akk",
       "form": "malāku",
       "translit": "malāku",
-      "gloss": "advise, deliberate, take counsel",
+      "gloss": "advise; ponder, deliberate, come to a decision",
       "relation": "cognate",
       "evidence": [
+        {
+          "source": "cad",
+          "locator": "M/1 p. 154, malāku A v.",
+          "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_m1.pdf",
+          "note": "\"1. to give advice, 2. to ponder, deliberate, to come to a decision, 3. to care for somebody or something (EA only), 4. mitluku to deliberate, 5. IV to deliberate, (passive) to be given advice\"; \"whom his heart counsels (to do so)\" (AKA 251 v 76)."
+        },
         {
           "source": "oracc",
           "locator": "armep x000022380, malāku [discuss] V",
           "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000022380.html"
+        }
+      ],
+      "note": "The agent noun māliku is “counselor, adviser” (CAD M/1 p. 162). Akkadian “his heart counsels him” is close to Neh 5:7’s וַיִּמָּלֵךְ לִבִּי עָלַי."
+    },
+    {
+      "id": "akk-milku",
+      "lang": "akk",
+      "form": "milku",
+      "translit": "milku",
+      "gloss": "advice, counsel; decision; intelligence",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000012940, milku [advice] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000012940.html",
+          "note": "\"advice; counsel; decision; intelligence; mood; plan; reason; resolution; sense\"."
+        }
+      ]
+    },
+    {
+      "id": "akk-malku-decision",
+      "lang": "akk",
+      "form": "malku",
+      "translit": "malku C",
+      "gloss": "advice, counsel; (divine) decision",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cad",
+          "locator": "M/1 p. 169, malku C s.; malku C in bēl malki",
+          "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_m1.pdf",
+          "note": "\"advice, counsel, (divine) decision; OAkk., OA; cf. malāku A\"; \"anāku malkī lušbat I will make my decision\" (CCT 2 45a:12); bēl malki \"decision maker\", in Aššur-bēl-malkim \"Aššur-Is-the-Decision-Maker\"."
+        }
+      ],
+      "note": "Spelled as malku “king” is, but kept apart by CAD as another word. A decision that stands is the point where counsel and rule meet: see the entry note."
+    },
+    {
+      "id": "arc-melakh-rule",
+      "lang": "arc",
+      "form": "מְלַךְ",
+      "translit": "məlaḵ",
+      "gloss": "rule, be king; (Aphel) make king",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְלַךְ, 1); Af. 1)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9E%D6%B0%D7%9C%D6%B7%D7%9A%D6%B0.1",
+          "note": "\"to rule. Targ. Gen. XXXVII, 8\"; Ab. Zar. 10a \"I desire that my son Severus be king after me\"; Af. \"= preced. Hif. Targ. I Kings III, 7\"."
+        }
+      ],
+      "note": "Targum Onqelos renders Joseph’s brothers’ “will you indeed reign over us?” (Gen 37:8) with the same verb."
+    },
+    {
+      "id": "arc-melakh-advise",
+      "lang": "arc",
+      "form": "מְלַךְ",
+      "translit": "məlaḵ",
+      "gloss": "decide; advise; (Ithpeel) take counsel, consult",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְלַךְ, 2)–3); Pa.; Af. 2); Ithpe.",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9E%D6%B0%D7%9C%D6%B7%D7%9A%D6%B0.1",
+          "note": "\"(mostly מליך) to decide. Targ. Is. XIV, 27\"; \"to advise. Targ. II Sam. XVII, 7. Targ. I Kings I, 12\"; Af. \"to counsel, persuade\"; Ithpe. = Hebrew Nif., \"consult my family\" (Ber. 27b)."
+        }
+      ],
+      "note": "One Aramaic verb, in the Targums and Talmud, rules, decides and advises. In Targum Isaiah 14:27 it renders Yahweh’s purpose that no one can annul (Hebrew יָעַץ)."
+    },
+    {
+      "id": "arc-melekh-counsel",
+      "lang": "arc",
+      "form": "מֵלַךְ",
+      "translit": "mēlaḵ",
+      "gloss": "counsel, advice",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מֵלַךְ",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9E%D6%B5%D7%9C%D6%B7%D7%9A%D6%B0.1",
+          "note": "\"counsel, advice. Targ. Is. III, 3. Targ. Y. Deut. VIII, 18 (O. עצה ...)\"; pl. Targ. Is. XXV, 1; Targ. Job XII, 17."
+        }
+      ],
+      "note": "Targumic Aramaic, the same noun as Daniel’s מְלֵךְ (Dan 4:24)."
+    },
+    {
+      "id": "arc-malka",
+      "lang": "arc",
+      "form": "מַלְכָּא",
+      "translit": "malkā",
+      "gloss": "king, chief",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מֶלֶךְ II (מְלֵיךְ, מַלְכָּא)",
+          "note": "\"Targ. Ps. XXIV, 7; 9. Targ. Ex. I, 8\"; Y. Ter. VIII, 46b \"he (Diocletian) became king\"; pl. Targ. Gen. XVII, 6."
+        }
+      ]
+    },
+    {
+      "id": "arc-malketa",
+      "lang": "arc",
+      "form": "מַלְכְּתָא",
+      "translit": "malkəṯā",
+      "gloss": "queen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מַלְכְּתָא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9E%D6%B7%D7%9C%D6%B0%D7%9B%D6%B0%D6%BC%D7%AA%D6%B8%D7%90.1",
+          "note": "\"Targ. I Kings XI, 19\"; pl. \"Targ. I Kings XI, 3\"."
         }
       ]
     }
@@ -859,7 +1581,7 @@
   "doctrine": [
     {
       "topic": "kingdom-given-by-god",
-      "statement": "Daniel tells the king that the God of heaven gave him his kingdom (Dan 2:37). The vision later gives enduring dominion and kingdom to one like a son of man, and the kingdom to the people of the holy ones (Dan 7:13–14, 27). Luke announces that Jesus will receive David’s throne and reign over Jacob’s house without end (Luk 1:32–33). In these passages kingship is authority received and exercised, not merely a place-name.",
+      "statement": "Daniel tells the king that the God of heaven gave him his kingdom (Dan 2:37). The vision later gives enduring dominion and kingdom to one like a son of man, and the kingdom to the people of the holy ones (Dan 7:13–14, 27). Luke announces that Jesus will receive David’s throne and reign over Jacob’s house without end (Luk 1:32–33). In these passages kingship is authority God gives, and the kingdom he gives to his son and his people does not pass to another.",
       "evidence": [
         {
           "ref": "Dan.2.37"
@@ -880,7 +1602,59 @@
           "ref": "Luk.1.33"
         }
       ]
+    },
+    {
+      "topic": "the-coming-king",
+      "statement": "Yahweh says he has set his king on Zion (Psa 2:6), and the apostles read the psalm of Jesus, against whom the kings of the earth took their stand (Act 4:25–27). Zechariah tells the daughter of Zion that her king comes to her, righteous, saved and lowly, riding on a donkey (Zec 9:9); Matthew and John say this was done when Jesus rode into Jerusalem (Mat 21:4–5; Jhn 12:14–15). Jeremiah’s branch of David is a king who will reign and act wisely and do justice in the land (Jer 23:5).",
+      "evidence": [
+        {
+          "ref": "Psa.2.6"
+        },
+        {
+          "ref": "Act.4.25",
+          "to": "Act.4.27"
+        },
+        {
+          "ref": "Zec.9.9"
+        },
+        {
+          "ref": "Mat.21.4"
+        },
+        {
+          "ref": "Mat.21.5"
+        },
+        {
+          "ref": "Jhn.12.14"
+        },
+        {
+          "ref": "Jhn.12.15"
+        },
+        {
+          "ref": "Jer.23.5"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-priests",
+      "statement": "At Sinai Yahweh tells Israel that if they obey his voice and keep his covenant they will be to him a kingdom of priests and a holy nation (Exo 19:5–6). Peter gives these words to those who believe in Christ (1Pe 2:9), and in Revelation the redeemed are made kings and priests to God, who will reign on the earth (Rev 1:6; 5:10). The people Yahweh rules is also the people who serve him and will share his rule.",
+      "evidence": [
+        {
+          "ref": "Exo.19.5"
+        },
+        {
+          "ref": "Exo.19.6"
+        },
+        {
+          "ref": "1Pe.2.9"
+        },
+        {
+          "ref": "Rev.1.6"
+        },
+        {
+          "ref": "Rev.5.10"
+        }
+      ]
     }
   ],
-  "note": "One Hebrew verb holds the reign and counsel uses: m.cd.ae and m.ce.aa match the same occurrences, so only m.cd.ae is assigned. Its support count cannot distinguish those meanings. Neh 5:7 remains explicitly uncertain: the local translation reads “my heart reigned over me”, while counsel-language has a strong Aramaic and Akkadian comparison. No historical derivation from ruling to advising or promising is asserted. מְלֶכֶת is a common title, so it is included; מֹלֶךְ, מִלְכֹּם, personal names, and the Malkielite gentilic are left for name entries. The Syriac king/queen lexeme is one SEDRA row, but the feminine word is displayed separately. Malchus (SEDRA 1780) is a proper name. Cognates of counsel are deliberately not assigned to reign, and conversely."
+  "note": "One Hebrew verb holds the reign and counsel uses: m.cd.ae and m.ce.aa match the same occurrences, so only m.cd.ae is assigned. Its support count cannot distinguish those meanings. Neh 5:7 remains explicitly uncertain: the local translation reads “my heart reigned over me”; counsel-language has Aramaic and Akkadian beside it. מְלֶכֶת is a common title, so it is included; מֹלֶךְ, מִלְכֹּם, personal names, and the Malkielite gentilic are left for name entries. The Syriac king/queen lexeme is one SEDRA row, but the feminine word is displayed separately. Malchus (SEDRA 1780) is a proper name. Cognates of counsel are deliberately not assigned to reign, and conversely.\n\nOne root or two (2026-11-09, evidence only). No letter of מלכ is a merged letter, so sounds cannot split the senses. (1) King/rule/kingdom: Ugaritic, Phoenician, Moabite, Sabaic, Ge’ez, Arabic, Akkadian (malku, malkatu, malkūtu) and Aramaic. (2) Possess/own: Arabic malaka, Ge’ez malaka, Sabaic hmlk, Phoenician M-L-K II (Krahmalkov p. 285); never in scripture’s Hebrew or Aramaic. (3) Counsel/decide: only Akkadian (malāku A, māliku, milku, malku C), Aramaic (מְלַךְ rule/decide/advise in one verb, Jastrow; Dan 4:24) and Syriac (one verb counsel/promise/reign, Payne Smith p. 277), and in Hebrew perhaps Neh 5:7. Akkadian keeps malku “king” and malku C “counsel, decision” as two headwords (CAD M/1 pp. 166, 169) but spells malku A also maliku, the spelling of māliku “counselor”, and its lists equate maliku with šarru “king”; malku C is “(divine) decision”, bēl malki “decision maker”. So where counsel occurs it sits in the same languages as king, and “decide” is the common ground (the one whose decision stands rules), but no text shows the step from one to the other. CAD notes malāku B “to rule” at Ras Shamra as a West Semitic word (p. 158).\n\nSyriac promise: Payne Smith p. 277 lists the peal as I. counsel, advise; II. promise; III. reign, and the pael likewise. It is linked by kin to the counsel noun מֵלְכָּא, not by a cognate: no cognate language has “promise”. Open question for the user: keep the kin link, or leave promise unlinked and flagged.\n\nNot consulted: CAL (refuses automated access), so no Old/Imperial Aramaic inscriptions are cited; CAD M/2 for milku (Oracc only); Leslau CDG. Fisher 1969 has no mlk pair. Phoenician mmlkt is “person of royal lineage; king” (Krahmalkov p. 293), not “kingdom”: it is named on the construct sense “royal” of מַמְלָכָה and on “royal descent” of מְלוּכָה only."
 }
