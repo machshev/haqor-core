@@ -1,0 +1,681 @@
+{
+  "id": "nuph",
+  "root": "נופ",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "movement",
+    "offering",
+    "feasts",
+    "gesture",
+    "height"
+  ],
+  "gloss": "swing, wave; lift and present (an offering)",
+  "summary": "הֵנִיף is moving something to and fro or up: swinging a tool or sickle, waving the hand as a signal or a threat, sifting in a sieve, and, in the offerings, lifting a gift before Yahweh to present it to him. Its noun תְּנוּפָה names what is so presented: the breast of the peace offering, gold and bronze for the tabernacle, the Levites themselves, and in Lev 23 the first sheaf and the two loaves of the harvest. Aramaic uses the verb for swinging, waving and winnowing, and the Peshitta for waving the hand to speak. Nouns of height (נוֹף, נָפָה, נֶפֶת) and the sieve נָפָה share the letters; their links to the verb are not clear.",
+  "words": [
+    {
+      "lemma": "נוּף",
+      "pos": "verb",
+      "gloss": "swing, wave; lift and present",
+      "bdb": [
+        "n.ce.aa"
+      ],
+      "summary": "Nearly all its uses are hiphil. A single qal (Pro 7:17), “sprinkle” a bed with myrrh, is filed here; its link to swinging is not clear.",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "swing, wield; wave (the hand); present (an offering); sift",
+          "senses": [
+            {
+              "id": "swing-tool",
+              "gloss": "swing, wield (a tool)",
+              "definition": "Move a tool to and fro or up and down in use: a chisel on stone, a sickle in grain, a saw.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.25",
+                  "role": "defining",
+                  "note": "No hewn stones for the altar, “for if you wield your tool on it, you profane it.”"
+                },
+                {
+                  "ref": "Deu.23.26",
+                  "role": "defining",
+                  "note": "Pluck ears by hand, “but you shall not swing a sickle on your neighbour’s standing grain.”"
+                },
+                {
+                  "ref": "Isa.10.15",
+                  "role": "defining",
+                  "note": "The saw and the one who wields it (מְנִיפוֹ), beside a rod wielding those who lift it (מְרִימָיו)."
+                },
+                {
+                  "ref": "Deu.27.5",
+                  "note": "An altar of stones on which no iron is wielded."
+                },
+                {
+                  "ref": "Jos.8.31",
+                  "note": "The altar on Ebal, of stones no iron was wielded on."
+                }
+              ],
+              "cognate_ids": [
+                "arc-nuph"
+              ]
+            },
+            {
+              "id": "wave-hand",
+              "gloss": "wave, shake (the hand)",
+              "definition": "Move the hand as a signal, a threat, or an act of power over something.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.2",
+                  "role": "defining",
+                  "note": "“Lift up a banner … raise the voice to them, wave the hand, that they may enter the gates.”"
+                },
+                {
+                  "ref": "Isa.19.16",
+                  "role": "defining",
+                  "note": "Egypt trembles before the waving of Yahweh’s hand, which he waves over it."
+                },
+                {
+                  "ref": "2Ki.5.11",
+                  "role": "defining",
+                  "note": "Naaman expected Elisha to wave his hand over the place and heal the leprosy."
+                },
+                {
+                  "ref": "Isa.11.15",
+                  "note": "Yahweh will wave his hand over the River with his scorching wind."
+                },
+                {
+                  "ref": "Zec.2.13",
+                  "note": "“I am waving my hand over them, and they will be plunder.”"
+                },
+                {
+                  "ref": "Job.31.21",
+                  "note": "If I have raised my hand against the fatherless."
+                }
+              ],
+              "cognate_ids": [
+                "arc-nuph"
+              ]
+            },
+            {
+              "id": "present-offering",
+              "gloss": "present (by lifting before Yahweh)",
+              "definition": "Lift or move an offering before Yahweh to give it to him; said even of the whole tribe of Levi presented from Israel, and of gold brought for the tabernacle, so the act is presenting, not only a motion of the hands.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.11",
+                  "role": "defining",
+                  "note": "“He shall wave the sheaf before Yahweh for your acceptance; on the day after the sabbath the priest shall wave it.”"
+                },
+                {
+                  "ref": "Exo.29.24",
+                  "role": "defining",
+                  "note": "Portions put on the palms of Aaron and his sons, “and you shall wave them as a תְּנוּפָה before Yahweh.”"
+                },
+                {
+                  "ref": "Num.8.11",
+                  "role": "defining",
+                  "note": "“Aaron shall present the Levites as a תְּנוּפָה before Yahweh from the sons of Israel.”"
+                },
+                {
+                  "ref": "Exo.35.22",
+                  "role": "defining",
+                  "note": "Every man who presented a תְּנוּפָה of gold to Yahweh."
+                },
+                {
+                  "ref": "Lev.23.12",
+                  "note": "On the day you wave the sheaf, a lamb as a burnt offering."
+                },
+                {
+                  "ref": "Lev.23.20",
+                  "note": "The priest waves the lambs with the bread of the firstfruits."
+                },
+                {
+                  "ref": "Lev.7.30",
+                  "note": "The offerer’s own hands bring the breast, to wave it as a תְּנוּפָה."
+                },
+                {
+                  "ref": "Num.5.25",
+                  "note": "The grain offering of jealousy waved before Yahweh."
+                },
+                {
+                  "ref": "Num.8.21",
+                  "note": "Aaron presented the Levites as a תְּנוּפָה."
+                }
+              ],
+              "kin": [
+                "wave-offering"
+              ],
+              "cognate_ids": [
+                "arc-nuph"
+              ]
+            },
+            {
+              "gloss": "shake out, shed (rain)",
+              "definition": "Send rain down abundantly.",
+              "evidence": [
+                {
+                  "ref": "Psa.68.10",
+                  "role": "defining",
+                  "note": "“A rain of generous gifts you shed, O God.”"
+                }
+              ],
+              "cognate_ids": [
+                "arc-nuph"
+              ]
+            },
+            {
+              "id": "sift",
+              "gloss": "sift",
+              "definition": "Shake to and fro in a sieve; of judgement on the nations.",
+              "evidence": [
+                {
+                  "ref": "Isa.30.28",
+                  "role": "defining",
+                  "note": "His breath reaches to the neck, “to sift (לַהֲנָפָה) the nations in the sieve (בְּנָפַת) of worthlessness.”"
+                }
+              ],
+              "kin": [
+                "sieve"
+              ],
+              "cognate_ids": [
+                "arc-nuph",
+                "akk-napu"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be waved, be presented",
+          "senses": [
+            {
+              "gloss": "be presented",
+              "definition": "Of an offering, be waved before Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Exo.29.27",
+                  "role": "defining",
+                  "note": "The breast of the תְּנוּפָה that was waved (הוּנַף)."
+                }
+              ],
+              "kin": [
+                "wave-offering"
+              ],
+              "cognate_ids": [
+                "arc-nuph"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "shake (the hand) at",
+          "senses": [
+            {
+              "gloss": "shake the hand at",
+              "definition": "Shake the fist in threat.",
+              "evidence": [
+                {
+                  "ref": "Isa.10.32",
+                  "role": "defining",
+                  "note": "At Nob the Assyrian shakes his hand at the mount of the daughter of Zion."
+                }
+              ],
+              "cognate_ids": [
+                "arc-nuph"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "sprinkle (?)",
+          "senses": [
+            {
+              "gloss": "sprinkle",
+              "definition": "Scatter scent over a bed; the only qal, and how it relates to the hiphil’s swinging is not clear.",
+              "evidence": [
+                {
+                  "ref": "Pro.7.17",
+                  "role": "defining",
+                  "note": "“I have sprinkled my bed with myrrh, aloes and cinnamon.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רוּם",
+            "note": "Wielding a saw set beside lifting a rod.",
+            "evidence": [
+              {
+                "ref": "Isa.10.15",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נָשָׂא",
+            "note": "Waving the hand beside lifting a banner and raising the voice.",
+            "evidence": [
+              {
+                "ref": "Isa.13.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הֵנִיף תְּנוּפָה לִפְנֵי יְהוָה",
+            "gloss": "present a wave offering before Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.29.24"
+              },
+              {
+                "ref": "Lev.23.20"
+              },
+              {
+                "ref": "Num.8.11"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵנִיף יָד",
+            "gloss": "wave the hand (signal, threat, power)",
+            "evidence": [
+              {
+                "ref": "Isa.13.2"
+              },
+              {
+                "ref": "Isa.19.16"
+              },
+              {
+                "ref": "Zec.2.13"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תְּנוּפָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wave offering, what is presented; waving",
+      "bdb": [
+        "n.ce.ac"
+      ],
+      "senses": [
+        {
+          "id": "wave-offering",
+          "gloss": "wave offering, presented gift",
+          "definition": "What is presented to Yahweh by waving it before him: portions of the peace offering that then go to the priests, the first sheaf and the two loaves of the harvest, metal for the tabernacle, and the Levites.",
+          "evidence": [
+            {
+              "ref": "Lev.23.15",
+              "role": "defining",
+              "note": "The count of seven sabbaths starts from “the day you brought the sheaf of the תְּנוּפָה.”"
+            },
+            {
+              "ref": "Lev.23.17",
+              "role": "defining",
+              "note": "“Two loaves of תְּנוּפָה … baked with leaven, firstfruits to Yahweh.”"
+            },
+            {
+              "ref": "Lev.7.34",
+              "role": "defining",
+              "note": "“The breast of the תְּנוּפָה … I have taken from the sons of Israel and given to Aaron and his sons.”"
+            },
+            {
+              "ref": "Num.8.11",
+              "role": "defining",
+              "note": "The Levites presented as a תְּנוּפָה from the sons of Israel, to do Yahweh’s service."
+            },
+            {
+              "ref": "Exo.38.29",
+              "role": "defining",
+              "note": "“The bronze of the תְּנוּפָה was seventy talents”: metal given for the tabernacle."
+            },
+            {
+              "ref": "Lev.23.20",
+              "note": "The loaves and two lambs waved as a תְּנוּפָה, holy to Yahweh for the priest."
+            },
+            {
+              "ref": "Exo.29.24",
+              "note": "Portions waved as a תְּנוּפָה at the priests’ ordination."
+            },
+            {
+              "ref": "Num.18.11",
+              "note": "The תְּנוּפֹת of Israel given to the priests and their households."
+            },
+            {
+              "ref": "Exo.38.24",
+              "note": "The gold of the תְּנוּפָה."
+            }
+          ],
+          "kin": [
+            "present-offering"
+          ],
+          "cognate_ids": [
+            "arc-nuph"
+          ]
+        },
+        {
+          "gloss": "waving, brandishing",
+          "definition": "The motion of a hand or weapon swung against an enemy.",
+          "evidence": [
+            {
+              "ref": "Isa.19.16",
+              "role": "defining",
+              "note": "“Before the waving (תְּנוּפַת) of the hand of Yahweh of hosts, which he waves over it.”"
+            },
+            {
+              "ref": "Isa.30.32",
+              "role": "defining",
+              "note": "“With battles of brandishing he will fight against them.”"
+            }
+          ],
+          "kin": [
+            "wave-hand"
+          ],
+          "cognate_ids": [
+            "arc-nuph"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נָפָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sieve",
+      "bdb": [
+        "n.ce.ab"
+      ],
+      "summary": "Once, beside the hiphil “sift” in the same line (Isa 30:28). Akkadian has napû “sift” and nappītu “sieve” from a root npy, so the sieve may come from that root rather than from נוּף; scripture’s own pairing keeps it here.",
+      "senses": [
+        {
+          "id": "sieve",
+          "gloss": "sieve",
+          "definition": "A sieve or winnowing tool, shaken to separate grain from what is worthless.",
+          "evidence": [
+            {
+              "ref": "Isa.30.28",
+              "role": "defining",
+              "note": "“To sift the nations in the sieve (בְּנָפַת) of worthlessness.”"
+            }
+          ],
+          "kin": [
+            "sift"
+          ],
+          "cognate_ids": [
+            "akk-napu",
+            "akk-nappitu"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נוֹף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "height, elevation",
+      "bdb": [
+        "n.cf.ab"
+      ],
+      "summary": "Once, of Mount Zion. Arabic مُنِيف “high, lofty” is from the same consonants; how height relates to the verb’s swinging and lifting is not clear.",
+      "senses": [
+        {
+          "id": "height",
+          "gloss": "height",
+          "definition": "A raised and prominent place.",
+          "evidence": [
+            {
+              "ref": "Psa.48.3",
+              "role": "defining",
+              "note": "“Beautiful in height, the joy of all the earth, is Mount Zion.”"
+            }
+          ],
+          "cognate_ids": [
+            "ar-munif"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נָפָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "height, ridge (?)",
+      "bdb": [
+        "n.cf.ac"
+      ],
+      "summary": "Only of Dor, as נָפוֹת דּוֹר / נָפַת דּוֹר, the district or heights of Dor, nearly a place name. Its sense rests on נוֹף and the Arabic; the text does not fix it.",
+      "senses": [
+        {
+          "gloss": "height, upland district",
+          "definition": "The high ground or district of Dor on the coast.",
+          "evidence": [
+            {
+              "ref": "Jos.11.2",
+              "role": "defining",
+              "note": "Kings in the hill country, the Arabah, the lowland, “and in the נָפוֹת of Dor on the west.”"
+            },
+            {
+              "ref": "Jos.12.23",
+              "note": "The king of Dor in נָפַת דּוֹר."
+            },
+            {
+              "ref": "1Ki.4.11",
+              "note": "Ben-Abinadab over all נָפַת דּוֹר."
+            }
+          ],
+          "kin": [
+            "height"
+          ],
+          "cognate_ids": [
+            "ar-munif"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נֶפֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "height (?)",
+      "bdb": [
+        "n.cf.ad"
+      ],
+      "summary": "Once, in a phrase whose sense is uncertain; read as a form of נָפָה “height”.",
+      "senses": [
+        {
+          "gloss": "height (?)",
+          "definition": "Perhaps the heights or district of the towns just listed, beside Dor.",
+          "evidence": [
+            {
+              "ref": "Jos.17.11",
+              "role": "defining",
+              "note": "Manasseh’s towns in Issachar and Asher, ending “the three of the נֶפֶת.”"
+            }
+          ],
+          "kin": [
+            "height"
+          ],
+          "cognate_ids": [
+            "ar-munif"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נָף",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "wave, shake (the hand)",
+      "summary": "The Peshitta’s verb for waving the hand to call for silence, as the Hebrew hiphil waves the hand as a signal; once for shaking off a viper.",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "wave (the hand); shake off",
+          "senses": [
+            {
+              "gloss": "wave the hand (to signal)",
+              "definition": "Motion with the hand to quiet a crowd before speaking.",
+              "evidence": [
+                {
+                  "ref": "Act.12.17",
+                  "role": "defining",
+                  "note": "Peter signalled to them with his hand to be silent."
+                },
+                {
+                  "ref": "Act.13.16",
+                  "role": "defining",
+                  "note": "Paul rose, waved his hand, and said, “Men of Israel, listen.”"
+                },
+                {
+                  "ref": "Act.19.33",
+                  "note": "Alexander waved his hand, wanting to make a defence."
+                }
+              ],
+              "kin": [
+                "wave-hand"
+              ],
+              "cognate_ids": [
+                "arc-nuph"
+              ]
+            },
+            {
+              "gloss": "shake off",
+              "definition": "Shake the hand to throw something off.",
+              "evidence": [
+                {
+                  "ref": "Act.28.5",
+                  "role": "defining",
+                  "note": "Paul shook his hand and threw the viper into the fire."
+                }
+              ],
+              "cognate_ids": [
+                "arc-nuph"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-nuph",
+      "lang": "arc",
+      "form": "נוּף",
+      "translit": "nūp̄ (aphel ʾanīp̄)",
+      "gloss": "wave, sway (of standing grain); (aphel) swing, wave, winnow; (ithpolel) swing oneself, be proud",
+      "relation": "cognate",
+      "note": "Jastrow cites the Targums of Isa 13:2 (waving the hand) and of Lev 7:30 (the wave offering) for the aphel.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "N00388, נוּף ² (ch.), Af. and Ithpol."
+        }
+      ]
+    },
+    {
+      "id": "akk-napu",
+      "lang": "akk",
+      "form": "napû",
+      "translit": "napû",
+      "gloss": "sieve, sift",
+      "relation": "cognate",
+      "note": "A verb with a third weak radical (npy), not a middle w, so it may point the sieve to another root than נוּף.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "asbp x000045090, napû [sieve] V; armep x000107890, napû [to sieve, sift] V"
+        }
+      ]
+    },
+    {
+      "id": "akk-nappitu",
+      "lang": "akk",
+      "form": "nappītu",
+      "translit": "nappītu, nappû",
+      "gloss": "sieve",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000014180, nappītu [sieve] N; armep x000081980, nappû [sieve] N"
+        }
+      ]
+    },
+    {
+      "id": "ar-munif",
+      "lang": "ar",
+      "form": "مُنِيف",
+      "translit": "munīf",
+      "gloss": "high, lofty (of a mountain or a building)",
+      "relation": "cognate",
+      "note": "Lane has only this word under نوف.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3039, root نوف, مُنِيفٌ (n44184)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "presented-before-yahweh",
+      "statement": "What is waved before Yahweh is given to him and then given by him. The offerer’s own hands bring the breast, and it is waved before Yahweh (Lev 7:30); Yahweh says he has taken it from Israel and given it to Aaron and his sons (Lev 7:34; Num 18:11). A whole tribe is presented so: Aaron presents the Levites as a תְּנוּפָה from the sons of Israel (Num 8:11, 21), and Yahweh says they are his, taken in place of every firstborn, and given as a gift to Aaron to serve at the tent of meeting (Num 8:14–19). In the feasts of Lev 23 the first sheaf of the harvest is waved before Yahweh on the day after the sabbath, “for your acceptance” (Lev 23:10–11), and no bread or grain of the new harvest is eaten until that offering is brought (Lev 23:14); seven sabbaths are counted from the day of the sheaf of the תְּנוּפָה, and two loaves are then waved as firstfruits (Lev 23:15–17, 20). Paul calls the risen Christ “the firstfruits of those who have fallen asleep”, and says each is raised in his order, Christ the firstfruits, then those who belong to him at his coming (1Co 15:20, 23).",
+      "evidence": [
+        {
+          "ref": "Lev.7.30"
+        },
+        {
+          "ref": "Lev.7.34"
+        },
+        {
+          "ref": "Num.18.11"
+        },
+        {
+          "ref": "Num.8.11"
+        },
+        {
+          "ref": "Num.8.21"
+        },
+        {
+          "ref": "Num.8.14",
+          "to": "Num.8.19"
+        },
+        {
+          "ref": "Lev.23.10",
+          "to": "Lev.23.11"
+        },
+        {
+          "ref": "Lev.23.14"
+        },
+        {
+          "ref": "Lev.23.15",
+          "to": "Lev.23.17"
+        },
+        {
+          "ref": "Lev.23.20"
+        },
+        {
+          "ref": "1Co.15.20"
+        },
+        {
+          "ref": "1Co.15.23"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-09 from the brief, for the Lev 23 sheaf and loaves. WAVE OR LIFT: scripture’s use shows both a to-and-fro motion (sickle, saw, tool on stone, sieve, hand as signal) and lifting (Isa 10:15 parallel הֵרִים; Isa 13:2 beside נָשָׂא); the offering use extends to presenting the Levites and gold, so the offering sense is glossed “present”, with “wave” kept as the motion. The Septuagint renders תְּנוּפָה with ἀφόρισμα, ἐπίθεμα, ἀφαίρεμα, none in the NT (ἀπαρχή once, Exo 38:24); no Greek recorded. BDB KEYS: n.ce.ab (sieve) and n.cf.ac (height) both count the same 4 נָפָה tokens; each word keeps its own key, so their use counts overstate. The brief’s “no stem” token (Isa 30:28 לַהֲנָפָה) is the hiphil infinitive, cited under hiphil “sift”. SIEVE: Akkadian napû/nappītu point to a III-weak root npy; kept here because Isa 30:28 pairs לַהֲנָפָה with נָפַת, and Aramaic נוּף aphel includes winnowing; review whether the sieve should move to a נפה entry. HEIGHT: נוֹף, נָפָה (Dor) and נֶפֶת rest on Psa 48:3 and Arabic مُنِيف (Lane’s only word under نوف); their tie to the verb is not shown. QAL Pro 7:17 “sprinkle” has no cognate checked (a lead points to Arabic نفّ, not in Lane’s text here); lexicon-support counts the root’s cognates against it. Not checked: Syriac lexicons beyond SEDRA (root נפ, lexeme 1937 “beckon; wave”), Ge’ez nafaya “sift” (Dillmann, Leslau not consulted), Ugaritic and Phoenician (no np- verb or sieve found in Segert, Fisher or Krahmalkov’s text). Peshitta occurrences from SEDRA’s BFBS list: Act 12:17; 13:16; 19:33; 28:5. Left out: the name מֻפִּים (BDB lists it near this root) and Egyptian נֹף (Memphis), a place name of another origin; נֹפֶת “honey” is another root. Doctrine: the firstfruits link to 1Co 15 rests on the sheaf of Lev 23:10–11, which is also the עֹמֶר and רֵאשִׁית entries’ material; keep the three consistent."
+}
