@@ -10,20 +10,20 @@
     "oath",
     "curse"
   ],
-  "gloss": "God, god; these; oath, curse",
-  "summary": "This spelling holds several families, which the cognates keep apart: אֱלֹהִים, אֵל and אֱלוֹהַּ name God or a god (Ugaritic, Phoenician, Sabaic, Akkadian, Aramaic and Arabic all have the god-word ʾil or ʾilāh); אֵלֶּה points to “these” (Phoenician, Sabaic and Ge'ez ʾl, ʾellu); אָלָה is the curse that sanctions an oath, and the oath sworn under it (Sabaic ʾlh “curse, swear”, Arabic ʾālā “swear”). אֱלֹהִים has a plural form but takes singular grammar when it names God. The entry also keeps the fat tail אַלְיָה and the one-time verb “lament”, each with Aramaic cognates of its own, and the conditional אִלּוּ; no tie between these and the other families is shown.",
+  "gloss": "mighty one, power; these; oath, curse",
+  "summary": "This spelling holds several families, which the cognates keep apart. אֱלֹהִים, אֵל and אֱלוֹהַּ name the mighty one: one who holds power over others. Scripture sets אֵל against man and flesh (“the Egyptians are men and not אֵל, their horses flesh and not spirit”), and the idiom יֵשׁ לְאֵל יָדִי, “it is in the power of my hand”, uses the word for power itself. The title belongs above all to Yahweh, the Mighty One, but scripture also gives it to angels, to judges and to Moses acting for him, and to the gods the nations serve; Ugaritic, Phoenician, Sabaic, Akkadian, Aramaic and Arabic all have the word, ʾil or ʾilāh, for a god. אֵלֶּה points to “these” (Phoenician, Sabaic and Ge'ez ʾl, ʾellu); אָלָה is the curse that sanctions an oath, and the oath sworn under it (Sabaic ʾlh “curse, swear”, Arabic ʾālā “swear”). The entry also keeps the fat tail אַלְיָה and the one-time verb “lament”, each with Aramaic cognates of its own, and the conditional אִלּוּ; no tie between these and the other families is shown.",
   "words": [
     {
       "lemma": "אֱלֹהִים",
       "pos": "noun",
-      "gloss": "God; gods; divine beings",
+      "gloss": "mighty ones; the Mighty One, God",
       "bdb": [
         "a.dl.ad"
       ],
       "senses": [
         {
-          "gloss": "God",
-          "definition": "The God who creates and addresses his people; although the noun’s form is plural, its grammar is commonly singular in this use.",
+          "gloss": "the Mighty One, God",
+          "definition": "Yahweh, the Mighty One who creates and addresses his people, “mighty one of the mighty ones”; although the noun’s form is plural, its grammar is singular in this use.",
           "evidence": [
             {
               "ref": "Gen.1.1",
@@ -34,12 +34,17 @@
               "ref": "Deu.4.35",
               "role": "defining",
               "note": "Yahweh is identified as הָאֱלֹהִים, with no other besides him."
+            },
+            {
+              "ref": "Deu.10.17",
+              "role": "defining",
+              "note": "אֱלֹהֵי הָאֱלֹהִים, “mighty one of the mighty ones”, set beside הָאֵל הַגָּדֹל הַגִּבֹּר, “the great, the mighty אֵל”."
             }
           ]
         },
         {
-          "gloss": "gods",
-          "definition": "More than one being regarded or worshipped as a god.",
+          "gloss": "gods: mighty ones worshipped",
+          "definition": "Beings regarded or worshipped as mighty ones by those who serve them.",
           "evidence": [
             {
               "ref": "Exo.20.3",
@@ -116,6 +121,30 @@
               "note": "The woman says she sees אֱלֹהִים ascending from the earth."
             }
           ]
+        },
+        {
+          "gloss": "mighty, very great (after a noun)",
+          "definition": "Set after a noun, אֱלֹהִים marks it as mighty or very great: a mighty prince, mighty wrestlings, an exceedingly great city, a very great trembling.",
+          "evidence": [
+            {
+              "ref": "Gen.23.6",
+              "role": "defining",
+              "note": "The Hittites call Abraham נְשִׂיא אֱלֹהִים, “a mighty prince”, among them."
+            },
+            {
+              "ref": "Jon.3.3",
+              "role": "defining",
+              "note": "Nineveh was עִיר גְּדוֹלָה לֵאלֹהִים, “a great city to God”: three days’ walk across."
+            },
+            {
+              "ref": "Gen.30.8",
+              "note": "נַפְתּוּלֵי אֱלֹהִים, “mighty wrestlings”, of Rachel’s struggle with her sister."
+            },
+            {
+              "ref": "1Sa.14.15",
+              "note": "חֶרְדַּת אֱלֹהִים, “a very great trembling”, as the earth quakes."
+            }
+          ]
         }
       ],
       "gender": "m",
@@ -156,7 +185,8 @@
             }
           ]
         }
-      ]
+      ],
+      "summary": "A plural of the mighty one. Used of Yahweh it takes singular grammar: he is the Mighty One, mightier than all the rest. Used of others it names those who hold power over men: angels, judges, Moses sent to Pharaoh, and the gods of the nations. After a noun it marks something as mighty, very great."
     },
     {
       "lemma": "אֵלֶּה",
@@ -198,14 +228,14 @@
     {
       "lemma": "אֵל",
       "pos": "noun",
-      "gloss": "God, god; might",
+      "gloss": "mighty one; power",
       "bdb": [
         "a.dl.ab"
       ],
       "senses": [
         {
-          "gloss": "God, god",
-          "definition": "The divine title, applied to the God of Israel and to a supposed other god.",
+          "gloss": "the Mighty One; a mighty one",
+          "definition": "One who holds power, set against man and flesh: Yahweh above all, and a supposed other god.",
           "evidence": [
             {
               "ref": "Gen.46.3",
@@ -225,6 +255,34 @@
               "ref": "Exo.15.11",
               "role": "defining",
               "note": "“Who is like you among the אֵלִם, Yahweh?”: the plural, gods."
+            },
+            {
+              "ref": "Isa.31.3",
+              "role": "defining",
+              "note": "“The Egyptians are אָדָם and not אֵל, and their horses בָּשָׂר and not רוּחַ”: man against אֵל, flesh against spirit."
+            },
+            {
+              "ref": "Ezk.28.2",
+              "role": "defining",
+              "note": "The prince of Tyre says אֵל אָנִי, “I am אֵל”, and is answered, “you are אָדָם and not אֵל”."
+            },
+            {
+              "ref": "Hos.11.9",
+              "role": "defining",
+              "note": "כִּי אֵל אָנֹכִי וְלֹא אִישׁ, “for I am אֵל and not man”."
+            },
+            {
+              "ref": "Isa.10.21",
+              "role": "defining",
+              "note": "The remnant returns אֶל אֵל גִּבּוֹר, “to the mighty אֵל”."
+            },
+            {
+              "ref": "Isa.9.5",
+              "note": "The child’s name includes אֵל גִּבּוֹר, “mighty אֵל”, as Yahweh is called in Isa 10:21."
+            },
+            {
+              "ref": "Num.23.19",
+              "note": "לֹא אִישׁ אֵל וִיכַזֵּב, “אֵל is not a man, that he should lie”."
             }
           ]
         },
@@ -267,10 +325,21 @@
             {
               "ref": "Psa.80.11",
               "note": "“Cedars of אֵל.”"
-            },
+            }
+          ]
+        },
+        {
+          "gloss": "mighty ones (of men and angels)",
+          "definition": "In the plural, mighty ones who are not God: the mighty among the warriors in the grave, and the בְּנֵי אֵלִים called to give Yahweh glory and strength.",
+          "evidence": [
             {
               "ref": "Ezk.32.21",
-              "note": "אֵלֵי גִבּוֹרִים, the mighty among the warriors, speak from Sheol."
+              "role": "defining",
+              "note": "אֵלֵי גִבּוֹרִים, “the mighty among the warriors”, speak from the midst of שְׁאוֹל: men, who have died."
+            },
+            {
+              "ref": "Psa.29.1",
+              "note": "הָבוּ לַיַהְוֶה בְּנֵי אֵלִים, “give to Yahweh, sons of the mighty”, glory and strength."
             }
           ]
         }
@@ -287,18 +356,60 @@
         "arc-elah",
         "ar-ill"
       ],
-      "summary": "The singular divine title, used of the God of Israel and of other gods. In an idiom it means the power of one's hand, and after a noun it marks the mightiest of its kind; whether that “might” is the word's own first sense or comes from the divine title is not shown by the cognates, none of which means “power”."
+      "summary": "The mighty one, set against man, who is flesh (Isa 31:3; Ezk 28:2; Hos 11:9), and named above all of Yahweh, אֵל גִּבּוֹר, “the mighty אֵל”. In the idiom יֵשׁ לְאֵל יָדִי it is power itself, “the power of my hand”, and after a noun it marks the mightiest of its kind. The cognates all have the word for a god; none of them means “power”, so the power sense rests on scripture’s own use.",
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "אָדָם",
+            "note": "Man, set against אֵל: what man cannot do, אֵל can.",
+            "evidence": [
+              {
+                "ref": "Isa.31.3"
+              },
+              {
+                "ref": "Ezk.28.2"
+              },
+              {
+                "ref": "Ezk.28.9"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּשָׂר",
+            "note": "Flesh, the weakness of man, set against אֵל and spirit.",
+            "evidence": [
+              {
+                "ref": "Isa.31.3"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "גִּבּוֹר",
+            "note": "Mighty, warrior: אֵל גִּבּוֹר, “the mighty אֵל”.",
+            "evidence": [
+              {
+                "ref": "Isa.10.21"
+              },
+              {
+                "ref": "Deu.10.17"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "lemma": "אֱלוֹהַּ",
       "pos": "noun",
-      "gloss": "God, god",
+      "gloss": "Mighty One, God; a god",
       "bdb": [
         "a.dl.ac"
       ],
       "senses": [
         {
-          "gloss": "God, god",
+          "gloss": "the Mighty One, God; a god",
           "definition": "The singular divine title, frequently naming God and also used of a god worshipped by others.",
           "evidence": [
             {
@@ -657,7 +768,7 @@
     {
       "lemma": "אֱלָהּ",
       "pos": "noun",
-      "gloss": "God, god",
+      "gloss": "Mighty One, God; a god",
       "bdb": [
         "xa.an.ab"
       ],
@@ -762,7 +873,7 @@
     {
       "lemma": "אַלָהָא",
       "pos": "noun",
-      "gloss": "God, god",
+      "gloss": "Mighty One, God; a god",
       "senses": [
         {
           "gloss": "God; a god",
@@ -1350,5 +1461,5 @@
       ]
     }
   ],
-  "note": "The spelling holds words of several older roots, not one semantic origin. Proper names, including the month אֱלוּל, are left for name entries. Terebinth אֵלָה is not filed under this root in the brief (its tree-words go with אַיִל, אֵלוֹן); no claim about its root is made here. Redirects are omitted. The Hebrew short demonstrative (rootless a.dj.aa) and Aramaic אִלֵּין are included as forms of the demonstrative family. The Aramaic short אֵל (xa.an.aa) has no distinct Aramaic occurrence established here. Exo 21:6 and 22:7–8 can be read as appearing before God or before judges; they are not used to make “judges” an unqualified separate sense. Psalm 82’s אֱלֹהִים are read as Jesus reads them (Jhn 10:35), and Psa 8:6’s as Hebrews reads them (Heb 2:7); 1Sa 28:13’s reported vision still needs contextual review.\n\nOpen questions (2026-11-09): (1) The Hebrew forms themselves point to two older roots behind the spelling: אֱלוֹהַּ has a consonantal ה (mappiq), as Sabaic and Arabic ʾlh “god”, while the oath verb is third-weak (וַיֹּאֶל, אָלִית, תַּאֲלָה), as Arabic ʾlw/ʾly “swear”; the lament אֱלִי and the fat tail אַלְיָה are also ʾly. ה is not one of the merged letters the `sounds` field records, so the split shows only here. Against it, Sabaic writes “curse, swear” ʾlh with the same letters as its god-word, and Arabic إِلّ joins “God” (disputed) and “covenant”: whether the oath was first sworn by the god is open. (2) The “power” sense of אֵל (יֵשׁ לְאֵל יָדִי) and the superlative “mountains of God” may be another root (BDB's leads: אול “be strong”); no cognate meaning “power” has been found. (3) אִלּוּ looks like a compound (אִם/אִן + לוּ) rather than a word of this root; consider moving it out. (4) Not found or not checked: Ugaritic has no oath, fat-tail or lament word of this shape in Segert or Fisher; Krahmalkov has no Phoenician ʾlt “oath, curse” (the Arslan Tash amulet's ʾlt, if wanted, needs DNWSI); the Mesha stele text was not checked for ʾl; Ge'ez has no god-word of this root (አምላክ is from mlk), so none is cited; Syriac (Payne Smith) not yet consulted for the lament and fat-tail words."
+  "note": "The spelling holds words of several older roots, not one semantic origin. Proper names, including the month אֱלוּל, are left for name entries. Terebinth אֵלָה is not filed under this root in the brief (its tree-words go with אַיִל, אֵלוֹן); no claim about its root is made here. Redirects are omitted. The Hebrew short demonstrative (rootless a.dj.aa) and Aramaic אִלֵּין are included as forms of the demonstrative family. The Aramaic short אֵל (xa.an.aa) has no distinct Aramaic occurrence established here. Exo 21:6 and 22:7–8 can be read as appearing before God or before judges; they are not used to make “judges” an unqualified separate sense. Psalm 82’s אֱלֹהִים are read as Jesus reads them (Jhn 10:35), and Psa 8:6’s as Hebrews reads them (Heb 2:7); 1Sa 28:13’s reported vision still needs contextual review.\n\nOpen questions (2026-11-09): (1) The Hebrew forms themselves point to two older roots behind the spelling: אֱלוֹהַּ has a consonantal ה (mappiq), as Sabaic and Arabic ʾlh “god”, while the oath verb is third-weak (וַיֹּאֶל, אָלִית, תַּאֲלָה), as Arabic ʾlw/ʾly “swear”; the lament אֱלִי and the fat tail אַלְיָה are also ʾly. ה is not one of the merged letters the `sounds` field records, so the split shows only here. Against it, Sabaic writes “curse, swear” ʾlh with the same letters as its god-word, and Arabic إِلّ joins “God” (disputed) and “covenant”: whether the oath was first sworn by the god is open. (2) The “power” sense of אֵל (יֵשׁ לְאֵל יָדִי) and the superlative “mountains of God” may be another root (BDB's leads: אול “be strong”); no cognate meaning “power” has been found. (3) אִלּוּ looks like a compound (אִם/אִן + לוּ) rather than a word of this root; consider moving it out. (4) Not found or not checked: Ugaritic has no oath, fat-tail or lament word of this shape in Segert or Fisher; Krahmalkov has no Phoenician ʾlt “oath, curse” (the Arslan Tash amulet's ʾlt, if wanted, needs DNWSI); the Mesha stele text was not checked for ʾl; Ge'ez has no god-word of this root (አምላክ is from mlk), so none is cited; Syriac (Payne Smith) not yet consulted for the lament and fat-tail words.\n\nGloss change (2026-11-09, user's direction): the God-words are glossed “mighty one”, not “God”, because scripture gives the title to men and angels and sets אֵל against man and flesh (Isa 31:3, Ezk 28:2, Hos 11:9), and the idiom יֵשׁ לְאֵל יָדִי uses it for power. Against this: every cognate (Ugaritic il, Akkadian ilu, Phoenician ʾl, Sabaic ʾl/ʾlh, Arabic ʾilāh) means “god”, none “power”, so the sense rests on scripture's use alone; and the superlative uses could run either way (from “mighty” to “divine” or the reverse). Related spellings with י/ו to weigh later: אֵיל גּוֹיִם “mighty one of the nations” of Nebuchadnezzar (Ezk 31:11), אֵילֵי הָאָרֶץ “the mighty of the land” (2Ki 24:15, ketiv אולי), אֱיָלוּת “strength” (Psa 22:20), אוּל “strength” (Psa 73:4)."
 }
