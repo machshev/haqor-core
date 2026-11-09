@@ -2,16 +2,17 @@
   "id": "kalal",
   "root": "כלל",
   "status": "draft",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "tags": [
     "wholeness",
     "completion",
     "beauty",
     "marriage",
-    "crown"
+    "crown",
+    "offering"
   ],
-  "gloss": "whole, all; complete; bride",
-  "summary": "The main family names a whole or all of a set, and the verb describes making something complete or perfect. כָּלִיל can mean entire or an offering consumed wholly; other nouns name completeness or fine attire. כַּלָּה names a bride or daughter-in-law, with a matching Akkadian word, but its relation to completion is not established. The Peshitta also has the crown-family, kept here without assuming that a crown explains the other words.",
+  "gloss": "whole, all; complete, perfect; bride",
+  "summary": "The root names a thing whole and complete. כֹּל is “all, the whole, every”; כָּלִיל is “entire”, an offering given wholly to the altar, and beauty brought to perfection; the verb is to complete or perfect, in Hebrew of Tyre’s beauty and in Ezra’s Aramaic of finishing the temple and the walls. כַּלָּה names the bride and the daughter-in-law; the Peshitta has the crown and crowning in the same root. Cognates attest every one of these families, ‘all’ and ‘complete’ across the whole Semitic area, the bride in Akkadian, Ugaritic and Aramaic, and the crown, veil and wedding together in Akkadian, Aramaic and Ge’ez; how the bride and crown words join the ‘complete’ sense is not settled.",
   "words": [
     {
       "lemma": "כֹּל",
@@ -32,7 +33,12 @@
             },
             {
               "ref": "Exo.16.1",
-              "role": "defining"
+              "role": "defining",
+              "note": "All the congregation of the sons of Israel comes to the wilderness of Sin."
+            },
+            {
+              "ref": "Deu.6.5",
+              "note": "Love Yahweh with all your heart, soul and might; quoted in Mat 22:37."
             }
           ]
         },
@@ -51,12 +57,53 @@
               "note": "You shall not do any work."
             }
           ]
+        },
+        {
+          "gloss": "everything, all things",
+          "definition": "Standing alone, often with the article (הַכֹּל): everything that exists or is in view.",
+          "evidence": [
+            {
+              "ref": "Isa.44.24",
+              "role": "defining",
+              "note": "“I am Yahweh, who makes all things (עֹשֶׂה כֹּל)”, stretching out the heavens alone."
+            },
+            {
+              "ref": "Psa.103.19",
+              "role": "defining",
+              "note": "His kingdom rules over all."
+            },
+            {
+              "ref": "Ecc.3.11",
+              "note": "He has made everything beautiful in its time."
+            }
+          ]
         }
       ],
       "gender": "m",
       "cognate_ids": [
         "ar-kull",
-        "akk-kullatu"
+        "akk-kullatu",
+        "uga-kl",
+        "phn-kl",
+        "moab-kl",
+        "sab-kl",
+        "gez-kwellu",
+        "arc-kol"
+      ],
+      "greek": [
+        {
+          "lemma": "ὅλος",
+          "gloss": "whole, all",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.6.5, כֹּל → ὅλος"
+            },
+            {
+              "ref": "Mat.22.37"
+            }
+          ]
+        }
       ]
     },
     {
@@ -68,17 +115,31 @@
       ],
       "senses": [
         {
+          "id": "bride",
           "gloss": "bride",
-          "definition": "The woman entering marriage, or addressed in bridal language.",
+          "definition": "The woman entering marriage, set beside the bridegroom, and the image for Yahweh’s people adorned and rejoiced over.",
           "evidence": [
+            {
+              "ref": "Jer.7.34",
+              "role": "defining",
+              "note": "“The voice of the bridegroom and the voice of the bride.”"
+            },
+            {
+              "ref": "Isa.62.5",
+              "role": "defining",
+              "note": "As the bridegroom rejoices over the bride, so your God rejoices over you."
+            },
             {
               "ref": "Isa.61.10",
               "role": "defining",
-              "note": "A bride adorns herself with jewels."
+              "note": "A bride adorns herself with her jewels."
             },
             {
-              "ref": "Sng.4.10",
-              "role": "defining"
+              "ref": "Isa.49.18",
+              "note": "Zion binds on her returning children as a bride does her ornaments."
+            },
+            {
+              "ref": "Sng.4.10"
             }
           ]
         },
@@ -87,22 +148,33 @@
           "definition": "The wife of someone’s son.",
           "evidence": [
             {
+              "ref": "Lev.18.15",
+              "role": "defining",
+              "note": "“Your daughter-in-law … she is your son’s wife.”"
+            },
+            {
               "ref": "Gen.11.31",
               "role": "defining",
               "note": "Sarai is Terah’s daughter-in-law, the wife of his son Abram."
             },
             {
-              "ref": "Rut.1.8",
-              "role": "defining"
+              "ref": "Rut.1.8"
+            },
+            {
+              "ref": "Mic.7.6",
+              "note": "Daughter-in-law against mother-in-law; quoted in Mat 10:35."
             }
           ]
         }
       ],
       "gender": "f",
       "cognate_ids": [
-        "akk-kallatu"
+        "akk-kallatu",
+        "uga-klt",
+        "arc-kallta",
+        "sab-hkll"
       ],
-      "summary": "The woman in a marriage, or the wife of one’s son. The link to the root’s completion-family is unclear; the matching Akkadian word supports the family relationship rather than a derivation from “complete”.",
+      "summary": "The woman in a marriage, or the wife of one’s son: the same two senses as Akkadian kallātu and Aramaic כַּלְּתָא, and Ugaritic klt “bride”. These languages have the word as a plain noun, so they do not show it was formed from “complete”. What they do show is a cluster around the bride in the same consonants: Akkadian kullulu “veiled” of a bride and “to crown”, Aramaic כְּלַל “crown” and “be married”, Ge’ez “crowning” for a wedding, and perhaps Sabaic hkll “give in marriage”. The tie to the root’s ‘complete’ sense remains unclear.",
       "greek": [
         {
           "lemma": "νύμφη",
@@ -122,14 +194,14 @@
     {
       "lemma": "כָּלִיל",
       "pos": "adjective",
-      "gloss": "whole, entire; wholly offered",
+      "gloss": "whole, entire; whole offering; perfect",
       "bdb": [
         "k.bn.ac"
       ],
       "senses": [
         {
-          "gloss": "entire, complete",
-          "definition": "Entirely of a material, or complete in the quality specified.",
+          "gloss": "entire, wholly of",
+          "definition": "The whole of a thing, or made entirely of one material.",
           "evidence": [
             {
               "ref": "Exo.28.31",
@@ -137,33 +209,108 @@
               "note": "The robe is entirely of blue."
             },
             {
-              "ref": "Ezk.16.14",
+              "ref": "Num.4.6",
               "role": "defining",
-              "note": "The beauty is complete through the splendor given to her."
+              "note": "A cloth wholly of blue is spread over the ark."
+            },
+            {
+              "ref": "Jdg.20.40",
+              "role": "defining",
+              "note": "The whole of the city goes up in smoke to the heavens."
             }
           ],
           "cognate_ids": [
+            "akk-shuklulu",
+            "uga-kll",
+            "phn-kll",
             "ar-kull",
             "akk-kullatu"
           ]
         },
         {
-          "gloss": "wholly offered",
-          "definition": "An offering given wholly to the altar rather than partly eaten.",
+          "gloss": "wholly, utterly",
+          "definition": "As an adverb: completely, leaving nothing.",
+          "evidence": [
+            {
+              "ref": "Isa.2.18",
+              "role": "defining",
+              "note": "The idols shall utterly pass away."
+            },
+            {
+              "ref": "Deu.13.17",
+              "note": "The city and all its spoil burnt כָּלִיל to Yahweh: wholly, and as a whole offering."
+            }
+          ],
+          "cognate_ids": [
+            "phn-kll",
+            "akk-shuklulu"
+          ]
+        },
+        {
+          "id": "whole-offering",
+          "gloss": "whole offering",
+          "definition": "An offering given wholly to the altar, of which nothing is eaten.",
           "evidence": [
             {
               "ref": "Lev.6.16",
               "role": "defining",
-              "note": "Every priest’s grain offering is כָּלִיל and must not be eaten."
+              "note": "Every priest’s grain offering is כָּלִיל: it shall not be eaten."
+            },
+            {
+              "ref": "Lev.6.15",
+              "role": "defining",
+              "note": "Wholly made to smoke to Yahweh."
             },
             {
               "ref": "1Sa.7.9",
-              "role": "defining"
+              "role": "defining",
+              "note": "Samuel offers a lamb as a whole burnt offering."
+            },
+            {
+              "ref": "Deu.33.10"
+            },
+            {
+              "ref": "Psa.51.21",
+              "note": "Burnt offering and whole offering, beside “sacrifices of righteousness”."
             }
           ],
           "cognate_ids": [
-            "ar-kull",
-            "akk-kullatu"
+            "akk-shuklulu",
+            "uga-kll",
+            "phn-kll"
+          ]
+        },
+        {
+          "id": "perfect-beauty",
+          "gloss": "perfect (in beauty)",
+          "definition": "Brought to completeness in a quality; in the construct כְּלִיל(ַת) יֹפִי “perfect of beauty”, said of Jerusalem and of Tyre.",
+          "evidence": [
+            {
+              "ref": "Ezk.16.14",
+              "role": "defining",
+              "note": "Jerusalem’s beauty is perfect through the splendour Yahweh put on her, after he clothed and adorned her and set a crown on her head (16:8–13)."
+            },
+            {
+              "ref": "Lam.2.15",
+              "role": "defining",
+              "note": "“The perfection of beauty, the joy of all the earth.”"
+            },
+            {
+              "ref": "Ezk.27.3",
+              "role": "defining",
+              "note": "Tyre says, “I am perfect of beauty.”"
+            },
+            {
+              "ref": "Ezk.28.12"
+            }
+          ],
+          "kin": [
+            "perfect",
+            "perfection"
+          ],
+          "cognate_ids": [
+            "akk-shuklulu",
+            "arc-shaklel"
           ]
         }
       ]
@@ -181,22 +328,29 @@
           "gloss": "complete, perfect",
           "senses": [
             {
+              "id": "perfect",
               "gloss": "make complete or perfect",
-              "definition": "Bring something to its full state; both occurrences describe completing Tyre’s beauty.",
+              "definition": "Bring something to its full state; both occurrences are of builders and defenders completing Tyre’s beauty, the city pictured as a ship.",
               "evidence": [
                 {
                   "ref": "Ezk.27.4",
                   "role": "defining",
-                  "note": "The builders perfected your beauty."
+                  "note": "Your builders perfected your beauty."
                 },
                 {
                   "ref": "Ezk.27.11",
                   "role": "defining",
-                  "note": "The shields hung on the walls complete the city’s beauty."
+                  "note": "Their shields hung on your walls all around perfected your beauty."
                 }
               ],
+              "kin": [
+                "perfect-beauty",
+                "finish-building"
+              ],
               "cognate_ids": [
-                "akk-kullatu"
+                "akk-shuklulu",
+                "sab-kll",
+                "arc-shaklel"
               ]
             }
           ]
@@ -206,101 +360,127 @@
     {
       "lemma": "מִכְלוֹל",
       "pos": "noun",
-      "gloss": "splendid attire",
+      "gloss": "full array, splendid attire",
       "bdb": [
         "k.bn.ad"
       ],
       "senses": [
         {
-          "gloss": "splendid attire",
-          "definition": "The impressive equipment or clothing in which troops are arrayed.",
+          "gloss": "full array, splendid attire",
+          "definition": "Complete and splendid equipment or dress, in which warriors are clothed.",
           "evidence": [
             {
               "ref": "Ezk.23.12",
               "role": "defining",
-              "note": "Assyrian warriors are clothed in מִכְלוֹל."
+              "note": "Assyrian governors and warriors clothed in מִכְלוֹל, riding horses."
             },
             {
               "ref": "Ezk.38.4",
-              "role": "defining"
+              "role": "defining",
+              "note": "Gog’s horsemen, all clothed in מִכְלוֹל, with shield, buckler and sword."
             }
           ]
         }
       ],
       "gender": "m",
-      "summary": "Both occurrences describe military dress. The context supports splendid or complete attire; the noun’s exact range is limited by these two uses."
+      "cognate_ids": [
+        "akk-shuklulu",
+        "arc-shaklel",
+        "ar-kallala"
+      ],
+      "summary": "“Clothed in completeness”: both occurrences describe soldiers fully and splendidly arrayed. The noun is formed like מִכְלָל “perfection”; Akkadian šuklultu “completeness” of decoration and Aramaic שַׁכְלֵל “finish, decorate” show the same sense of finished adornment. The exact garment or gear is not fixed by two uses."
     },
     {
       "lemma": "מַכְלֻל",
       "pos": "noun",
-      "gloss": "fine garment",
+      "gloss": "choice wares, finery",
       "bdb": [
         "k.bn.ae"
       ],
       "senses": [
         {
-          "gloss": "fine garments",
-          "definition": "Goods of fine clothing or textiles in Tyre’s trade; attested only here in the plural.",
+          "gloss": "choice wares, finery",
+          "definition": "Perfected or splendid goods in Tyre’s trade, listed first before fabrics of blue, embroidery and carpets; attested only here, in the plural.",
           "evidence": [
             {
               "ref": "Ezk.27.24",
               "role": "defining",
-              "note": "Listed with blue and embroidered fabrics among the traded wares."
+              "note": "Merchants trading in מַכְלֻלִים, wrappings of blue and embroidered work, and carpets."
             }
           ]
         }
       ],
-      "gender": "m"
+      "gender": "m",
+      "cognate_ids": [
+        "akk-shuklulu",
+        "arc-shaklel",
+        "ar-kallala"
+      ],
+      "summary": "A passive form, “things made perfect”: in one verse, among textiles, so probably fine garments or finished wares. Its sense rests on the root and on this one context."
     },
     {
       "lemma": "מִכְלָל",
       "pos": "noun",
-      "gloss": "perfection, completeness",
+      "gloss": "perfection",
       "bdb": [
         "k.bn.af"
       ],
       "senses": [
         {
+          "id": "perfection",
           "gloss": "perfection",
           "definition": "The complete or perfect expression of a quality; in its single occurrence, Zion’s beauty.",
           "evidence": [
             {
               "ref": "Psa.50.2",
               "role": "defining",
-              "note": "Zion is the perfection of beauty."
+              "note": "Out of Zion, the perfection of beauty, God shines forth."
+            },
+            {
+              "ref": "Lam.2.15",
+              "note": "The same phrase with כְּלִילַת יֹפִי, of Jerusalem."
             }
+          ],
+          "kin": [
+            "perfect-beauty"
           ]
         }
       ],
       "gender": "m",
       "cognate_ids": [
-        "akk-kullatu"
+        "akk-shuklulu",
+        "arc-shaklel"
       ]
     },
     {
       "lemma": "כְּלוּלָה",
       "pos": "noun",
-      "gloss": "bridal love, betrothal",
+      "gloss": "bridal time, betrothal",
       "bdb": [
         "k.bo.ac"
       ],
       "senses": [
         {
-          "gloss": "bridal state, betrothal",
-          "definition": "The time or state of being a bride, in the image of Israel’s early devotion.",
+          "gloss": "bridal state, bridal time",
+          "definition": "The time or state of being a bride, in the image of Israel’s early devotion to Yahweh.",
           "evidence": [
             {
               "ref": "Jer.2.2",
               "role": "defining",
-              "note": "The love of your כְּלוּלֹת is parallel to the devotion of your youth."
+              "note": "The love of your כְּלוּלֹת is parallel to the devotion of your youth, following Yahweh in the wilderness."
             }
+          ],
+          "kin": [
+            "bride"
           ]
         }
       ],
       "gender": "f",
-      "summary": "Attested only in a plural expression for Israel’s bridal time or state. Its link is to the bride-word; a more precise distinction between betrothal and marriage is not fixed by this verse alone.",
+      "summary": "Attested only in a plural abstract for Israel’s bridal time. It is formed from the bride-word; whether betrothal or the wedding itself is meant is not fixed by this verse alone.",
       "cognate_ids": [
-        "akk-kallatu"
+        "akk-kallatu",
+        "uga-klt",
+        "arc-kallta"
       ]
     },
     {
@@ -333,13 +513,19 @@
       "gender": "m",
       "cognate_ids": [
         "ar-kull",
-        "akk-kullatu"
+        "akk-kullatu",
+        "uga-kl",
+        "phn-kl",
+        "moab-kl",
+        "sab-kl",
+        "gez-kwellu",
+        "arc-kol"
       ]
     },
     {
       "lemma": "כְּלַל",
       "pos": "verb",
-      "gloss": "complete",
+      "gloss": "complete, finish",
       "bdb": [
         "xk.ad.aa"
       ],
@@ -349,18 +535,32 @@
           "gloss": "complete, finish",
           "senses": [
             {
+              "id": "finish-building",
               "gloss": "complete a building",
-              "definition": "Bring construction to completion.",
+              "definition": "Bring construction to completion: the temple, its structure, or a city’s walls.",
               "evidence": [
                 {
                   "ref": "Ezr.5.11",
                   "role": "defining",
-                  "note": "The king built and completed the house."
+                  "note": "A great king of Israel built the house and completed it."
                 },
                 {
                   "ref": "Ezr.6.14",
-                  "role": "defining"
+                  "role": "defining",
+                  "note": "They built and completed it by the decree of the God of Israel."
+                },
+                {
+                  "ref": "Ezr.4.12",
+                  "role": "defining",
+                  "note": "They are finishing the walls (שַׁכְלִילוּ)."
+                },
+                {
+                  "ref": "Ezr.5.3",
+                  "note": "Who gave you a decree to build this house and to complete this structure?"
                 }
+              ],
+              "kin": [
+                "perfect"
               ]
             }
           ]
@@ -387,7 +587,13 @@
           ]
         }
       ],
-      "lang": "arc"
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-shuklulu",
+        "sab-kll",
+        "arc-shaklel"
+      ],
+      "summary": "Like Akkadian šuklulu and Targumic שַׁכְלֵל, a Š-stem of the root: “make complete”. Sabaic kll uses the same pairing, “he built and completed”, as Ezra 5:11 does."
     },
     {
       "lemma": "כֻּל",
@@ -405,7 +611,8 @@
             },
             {
               "ref": "Mat.3.10",
-              "role": "defining"
+              "role": "defining",
+              "note": "Every tree that does not bear good fruit is cut down."
             }
           ]
         }
@@ -414,7 +621,13 @@
       "root": "כל",
       "cognate_ids": [
         "ar-kull",
-        "akk-kullatu"
+        "akk-kullatu",
+        "uga-kl",
+        "phn-kl",
+        "moab-kl",
+        "sab-kl",
+        "gez-kwellu",
+        "arc-kol"
       ]
     },
     {
@@ -424,7 +637,7 @@
       "senses": [
         {
           "gloss": "bride",
-          "definition": "The woman joined to a bridegroom, also used in the image of the holy city.",
+          "definition": "The woman joined to a bridegroom, and the holy city prepared as the Lamb’s bride.",
           "evidence": [
             {
               "ref": "Jhn.3.29",
@@ -432,8 +645,14 @@
               "note": "The one who has the bride is the bridegroom."
             },
             {
+              "ref": "Rev.21.9",
+              "role": "defining",
+              "note": "“The bride, the wife of the Lamb.”"
+            },
+            {
               "ref": "Rev.21.2",
-              "role": "defining"
+              "role": "defining",
+              "note": "The holy city prepared as a bride adorned for her husband."
             }
           ]
         },
@@ -444,7 +663,7 @@
             {
               "ref": "Mat.10.35",
               "role": "defining",
-              "note": "Daughter-in-law and mother-in-law are set against one another."
+              "note": "Daughter-in-law and mother-in-law are set against one another, from Mic 7:6."
             },
             {
               "ref": "Luk.12.53",
@@ -457,7 +676,9 @@
       "root": "כל",
       "gender": "f",
       "cognate_ids": [
-        "akk-kallatu"
+        "akk-kallatu",
+        "uga-klt",
+        "arc-kallta"
       ]
     },
     {
@@ -486,8 +707,16 @@
               "note": "Athletes compete for a perishable crown; believers for an imperishable one."
             },
             {
+              "ref": "Jas.1.12",
+              "role": "defining",
+              "note": "The one who endures testing receives the crown of life."
+            },
+            {
               "ref": "2Ti.4.8",
               "role": "defining"
+            },
+            {
+              "ref": "Rev.2.10"
             },
             {
               "ref": "Php.4.1",
@@ -499,7 +728,13 @@
       "lang": "syc",
       "root": "כל",
       "gender": "m",
-      "summary": "A circlet or wreath worn on the head, and figuratively a reward or honor. The relation of crowning to the other כלל meanings is not established by the cited verses."
+      "cognate_ids": [
+        "akk-kullulu",
+        "arc-kelal",
+        "gez-kallala",
+        "akk-kililu"
+      ],
+      "summary": "A circlet or wreath worn on the head, and figuratively a reward or honor. Akkadian kullulu “to crown” (of a king, and of a gate “crowned” with battlements) and Aramaic כְּלִיל “wreath, crown” are the same word-family; Akkadian kilīlu “wreath”, which some derive the Aramaic noun from, also means battlement. Crowning a wall is finishing it, which may be how the crown joins the root’s ‘complete’ sense, but that is not shown in scripture."
     },
     {
       "lemma": "כַּלֵּל",
@@ -512,7 +747,7 @@
           "senses": [
             {
               "gloss": "be crowned",
-              "definition": "Receive the athlete’s crown; this word occurs only here in the Peshitta.",
+              "definition": "Receive the athlete’s crown; this verb occurs only here in the Peshitta.",
               "evidence": [
                 {
                   "ref": "2Ti.2.5",
@@ -525,7 +760,12 @@
         }
       ],
       "lang": "syc",
-      "root": "כל"
+      "root": "כל",
+      "cognate_ids": [
+        "akk-kullulu",
+        "arc-kelal",
+        "gez-kallala"
+      ]
     }
   ],
   "cognates": [
@@ -539,7 +779,7 @@
       "evidence": [
         {
           "source": "lane",
-          "locator": "p. 3002, root كل, كُلٌّ (n43086); كُلِّيٌّ (n43088)"
+          "locator": "p. 3002, root كل, كُلٌّ (n43086); كُلِّيٌّ (n43088)"
         }
       ],
       "note": "The noun’s constructions express a whole or any member; the adjective kulliyy means total or universal."
@@ -556,8 +796,242 @@
           "source": "oracc",
           "locator": "armep x000011310, kullatu [totality] N",
           "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000011310.html"
+        },
+        {
+          "source": "ebl",
+          "locator": "kullatu I",
+          "url": "https://www.ebl.lmu.de/api/words/kullatu%20I",
+          "note": "\"totality, all of ...\" OAkk, Bab.(lit.); absol. \"whole (world)\"; before subst., pron. suff. \"all of ...\"."
+        },
+        {
+          "source": "ebl",
+          "locator": "kalû II",
+          "url": "https://www.ebl.lmu.de/api/words/kal%C3%BB%20II",
+          "note": "\"all, totality\": the commoner Akkadian word for “all”."
+        }
+      ],
+      "note": "Akkadian has both kullatu and kalû for the whole and for “all of”."
+    },
+    {
+      "id": "uga-kl",
+      "lang": "uga",
+      "form": "𐎋𐎍",
+      "translit": "kl /kull-/",
+      "gloss": "all, every; wholeness",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 88, §63.4, kl",
+          "note": "\"The expression kl /kull-/ is basically a noun meaning “wholeness.” ... It occurs before the singular (English “every”): kl ġr 1.6:II:15–16 “every mountain” ... klhm 1.14:II:42 “all of them.”\""
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, §93 Glossary, kl",
+          "note": "\"kl /kull-/ “every, all”; klh, klhm ... (cf. H. kōl, kål-, kull-, Aram. kål-, kŏllā, Arab. kull-)\"."
+        }
+      ],
+      "note": "Ugaritic, with the Hebrew constructions: before a singular “every”, with suffixes “all of it, all of them”."
+    },
+    {
+      "id": "phn-kl",
+      "lang": "phn",
+      "form": "𐤊𐤋",
+      "translit": "kl",
+      "gloss": "all, every, each; anyone; everything",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 226, KL II",
+          "note": "\"[Heb. kol] pron. 1. ALL, EVERY, EACH (ONE) ... 2. ANYONE ... 3. EVERYTHING ... adj. 1. ALL\", KAI 26 A I 18/19 kl hmlkm, \"all the kings who preceded me\"; \"2. EVERY, ANY\", KAI 69.20 kl khn, \"any priest\"."
         }
       ]
+    },
+    {
+      "id": "moab-kl",
+      "lang": "sem",
+      "form": "כל",
+      "translit": "kl",
+      "gloss": "all",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 4, 11, 16, 20, 24, 28",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 4 השעני מכל השלכן ... הראני בכל שנאי; line 11 ואהרג את כל העמ; line 16 ואהרג כלה; line 24 ואמר לכל העמ; line 28 כי כל דיבן משמעת."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 4, 16, 20, 24, 28",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"he had saved me from all the assailants (?)\"; \"slew all of it, 7000 men\"; \"200 men, all the head-men thereof\"; \"I said to all the people\"; \"all Daiḇôn was loyal\"."
+        }
+      ],
+      "note": "Moabite, the Mesha stele, with the Hebrew uses: before a noun, and with a suffix (כלה “all of it”)."
+    },
+    {
+      "id": "sab-kl",
+      "lang": "sem",
+      "form": "𐩫𐩡",
+      "translit": "kl",
+      "gloss": "all, every; the whole; everything; entirety",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 247, KLL, n¹ kl, n² klm, n⁴ klyt",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "kl \"ALL, EVERY; ALL OF, THE WHOLE (OF) [Ar kull id.]\", J550/1 \"the whole fill of the wall and all the niches\"; klm \"EVERYTHING, ANYTHING, ALL\", MuBilinguis/3 \"the Lord of heaven and earth, who created everything\"; klyt \"ENTIRETY [Ar kulliyat id.]\"."
+        }
+      ],
+      "note": "Sabaic, filed with the verb “bring to completion” under one root KLL. “Who created everything” matches Isa 44:24 עֹשֶׂה כֹּל."
+    },
+    {
+      "id": "gez-kwellu",
+      "lang": "gez",
+      "form": "ኵሉ",
+      "translit": "kʷəllu",
+      "gloss": "all, every; the whole",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 814–815, I. ከለለ, ኵል and ኵሉ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n430",
+          "note": "\"I. ከለለ rad. inus., cui significatus absolvendi, perficiendi inerat\"; ኵል \"proprie: universitas\"; ኵሉ \"A) Refertur ad res multas ... omnis ... B) Refertur ad rem unam, continuam ... totus\"."
+        }
+      ],
+      "note": "Ge’ez. Dillmann sets ‘all’ under an unused verbal root whose sense he gives as “finishing, perfecting”: the same pairing of ‘all’ with ‘complete’ as Hebrew."
+    },
+    {
+      "id": "arc-kol",
+      "lang": "arc",
+      "form": "כּוֹל",
+      "translit": "kol, kollā",
+      "gloss": "all, every one; any",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כּוֹל (ch.)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9B%D6%BC%D7%95%D6%B9%D7%9C.1",
+          "note": "\"all, every one; any\", Targ. O. Gen. XVI, 12; Targ. Ex. XX, 9."
+        }
+      ],
+      "note": "The Targums’ Aramaic, as in Daniel and Ezra."
+    },
+    {
+      "id": "akk-shuklulu",
+      "lang": "akk",
+      "form": "šuklulu",
+      "translit": "šuklulu",
+      "gloss": "(Š of kll) complete, make or do completely, perform perfectly; (adj.) complete, perfect, entire",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "ebl",
+          "locator": "šuklulu II",
+          "url": "https://www.ebl.lmu.de/api/words/%C5%A1uklulu%20II",
+          "note": "Root kll. Š \"to complete, make/do completely\"; \"create perfectly\" humans, form, statue; house, city etc.; \"perform perfectly\" cult; Št of house \"be completed\"."
+        },
+        {
+          "source": "ebl",
+          "locator": "šuklulu I",
+          "url": "https://www.ebl.lmu.de/api/words/%C5%A1uklulu%20I",
+          "note": "\"complete, perfect\" of things; temples, cult; \"entire, uncastrated\" of sacrificial animals."
+        },
+        {
+          "source": "ebl",
+          "locator": "šuklultu I",
+          "url": "https://www.ebl.lmu.de/api/words/%C5%A1uklultu%20I",
+          "note": "\"completion; completeness\" jB of decor; \"form\" of human body."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000058820, šuklulu [complete] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000058820.html"
+        }
+      ],
+      "note": "The Š-stem of the root, like Ezra’s שַׁכְלֵל. It is used of finishing a house or city (Ezra’s temple and walls), of perfect form and decoration (Tyre’s and Zion’s beauty), and of sacrificial animals offered entire (כָּלִיל, the whole offering)."
+    },
+    {
+      "id": "sab-kll",
+      "lang": "sem",
+      "form": "𐩫𐩡𐩡",
+      "translit": "kl, kll",
+      "gloss": "bring to completion; (n.) completion, payment in full",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 246, KLL v.",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"BRING TO COMPLETION [Cf Aram šaklil, Akk šuklulu “finish,” PBH kālīl “entire.”]\", J842/3 bny wkl fnwthw \"he built and completed his canal\"; R3902b#130/2 bnyy wkll ṭlf ḥrt \"they built and completed the embankment of the aqueduct\"."
+        },
+        {
+          "source": "biella-1982",
+          "locator": "p. 247, KLL n³ kll",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"COMPLETION > PAYMENT IN FULL\", C548/13–4."
+        }
+      ],
+      "note": "Sabaic building inscriptions pair “built and completed” exactly as Ezra 5:11 and 6:14 do."
+    },
+    {
+      "id": "arc-shaklel",
+      "lang": "arc",
+      "form": "שַׁכְלֵל",
+      "translit": "šaklēl",
+      "gloss": "finish, decorate; (pass. part.) perfect",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שַׁכְלֵל (ch.)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%A9%D7%81%D6%B7%D7%9B%D6%B0%D7%9C%D6%B5%D7%9C.1",
+          "note": "\"to finish, decorate. Targ. Y. Ex. XXXI, 17. Targ. Ez. XXVII, 4; 11 ... Part. pass. מְשַׁכְלַל ... perfect. Ib. 3. Ib. XXVIII, 12\"; Ithpa. \"to be finished, decorated. Targ. O. Gen. II, 1\"."
+        }
+      ],
+      "note": "The Targums use this verb for the heavens and earth “finished” (Gen 2:1) and to render Ezekiel’s כָּלַל and כְּלִיל יֹפִי (27:3, 4, 11; 28:12): finishing and adorning are one act in it."
+    },
+    {
+      "id": "uga-kll",
+      "lang": "uga",
+      "form": "𐎋𐎍𐎍",
+      "translit": "kll /kalīl-/",
+      "gloss": "whole; (in ritual) whole offering?",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, §93 Glossary, kll",
+          "note": "\"kll /kalīl-/ (?) “whole” 1.115:10 = 82.5 (cf. H. kəlīl constr. Judg 20:40)\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 132, §82.5, KTU 1.115:9–10",
+          "note": "Ritual rubric š lilbt šlmm kll ylḥm bh: \"/kalīlu/ “whole” (cf. H. kālīl, esp. Jdg 20:40) or kl lylḥm (?) /kullu lā yilḥamū/ (?) “all will/must not eat”; or cf. H. Lev 6:15–16 (?)\"."
+        }
+      ],
+      "note": "In a sacrificial rubric, beside a peace offering, with “they shall (not) eat of it”: Segert compares Lev 6:15–16, where the כָּלִיל is not eaten."
+    },
+    {
+      "id": "phn-kll",
+      "lang": "phn",
+      "form": "𐤊𐤋𐤋",
+      "translit": "kll",
+      "gloss": "entire, whole; (adv.) entirely, completely",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 229, KLL",
+          "note": "\"[Heb. kalīl] adj. ENTIRE, WHOLE\", KAI 69.3 (Pu) b'lp kll 'm ṣwʿt 'm šlm kll, \"For an entire ox, whether cut in pieces or entirely intact, the priests shall receive ten 10 silver\"; \"adv. ENTIRELY, COMPLETELY\", CIS i 88.2/3 \"presented and erected this statue and completely restored it\"."
+        }
+      ],
+      "note": "Punic, in the Marseilles sacrificial tariff: the animal offered entire, as with the כָּלִיל."
     },
     {
       "id": "akk-kallatu",
@@ -571,10 +1045,243 @@
           "source": "oracc",
           "locator": "armep x000026150, kallātu [daughter-in-law] N",
           "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000026150.html"
+        },
+        {
+          "source": "ebl",
+          "locator": "kallātu I",
+          "url": "https://www.ebl.lmu.de/api/words/kall%C4%81tu%20I",
+          "note": "\"daughter-in-law, bride\" of human, deities; OB ana kallāt ū mārat \"to be daughter-in-law and daughter\"; also \"young woman, bride\" in gener."
+        }
+      ],
+      "note": "The same two senses as כַּלָּה."
+    },
+    {
+      "id": "uga-klt",
+      "lang": "uga",
+      "form": "𐎋𐎍𐎚",
+      "translit": "klt /kallat-/",
+      "gloss": "bride",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, §93 Glossary, klt",
+          "note": "\"klt /kallat-/ “bride” (H. kallā, Syr. kalltā, Akkad. kallātu)\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-kallta",
+      "lang": "arc",
+      "form": "כַּלְּתָא",
+      "translit": "kallətā",
+      "gloss": "bride; daughter-in-law",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כַּלְּתָא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9B%D6%B7%D7%9C%D6%BC%D6%B0%D7%AA%D6%B8%D7%90.1",
+          "note": "\"bride; daughter-in-law. Targ. Is. LXI, 10 ... Targ. Gen. XI, 31\"; Gitt. 57ᵃ \"when they led forth bride and groom in procession\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-hkll",
+      "lang": "sem",
+      "form": "𐩠𐩫𐩡𐩡",
+      "translit": "hkll",
+      "gloss": "give in marriage (?)",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 247, KLL, h-stem inf. hklln",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"GIVE IN MARRIAGE (?) [Cf Ug klt “bride, marriageable girl,” Heb kallāh “bride, daughter-in-law,” Akk kallatu id.]\", Ir24 \"may (the god) succeed in allowing him to bring, offer and give in marriage this woman\"."
+        }
+      ],
+      "note": "One occurrence, its sense marked uncertain by the dictionary. If right, the bride-word and “complete” stand under one Sabaic root KLL."
+    },
+    {
+      "id": "akk-kullulu",
+      "lang": "akk",
+      "form": "kullulu",
+      "translit": "kullulu",
+      "gloss": "(D of kll) veil, crown; (adj.) veiled, of a bride",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "ebl",
+          "locator": "kullulu II",
+          "url": "https://www.ebl.lmu.de/api/words/kullulu%20II",
+          "note": "Root kll. D \"to veil, crown\" O/jB, M/NA face, lips, in distress; MA \"crown\" king; jB stat. of gate \"is crowned\" with crenellations."
+        },
+        {
+          "source": "ebl",
+          "locator": "kullulu I",
+          "url": "https://www.ebl.lmu.de/api/words/kullulu%20I",
+          "note": "\"veiled, covered\" M/jB of bride."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000032300, kullulu [veil] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000032300.html"
+        }
+      ],
+      "note": "Crowning a king and veiling a bride are one Akkadian verb of the root, and a gate is “crowned” with its battlements, the course that finishes a wall. This is the closest cognate link between the crown, the bride and the root’s other senses."
+    },
+    {
+      "id": "arc-kelal",
+      "lang": "arc",
+      "form": "כְּלַל, כְּלִיל",
+      "translit": "kəlal, kəlīl",
+      "gloss": "surround, crown; be crowned, be married; (n.) wreath, crown",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כְּלַל (ch.)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9B%D6%BC%D6%B0%D7%9C%D6%B7%D7%9C.1",
+          "note": "\"to surround, crown. Targ. Cant. III, 11\"; Pa. \"to surround, crown. Targ. Ps. V, 13\"; \"to prepare a bridal room\"; Ithpe. \"to be crowned, to adorn one’s self\"; \"to be led into the bridal room, be married\"."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כְּלִיל",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9B%D6%BC%D6%B0%D7%9C%D6%B4%D7%99%D7%9C.1",
+          "note": "\"circle, wreath, crown. Targ. Y. II, Ex. XXV, 11. Targ. Num. VI, 7 (h. text נֵזֶר) ... Gitt. 7ᵃ כ׳ לברתיה a bridal wreath for his daughter\"."
+        }
+      ],
+      "note": "The Targum of Song 3:11 uses it for the crown with which his mother crowned the king “on the day of his wedding”; later Aramaic uses the same verb for being married."
+    },
+    {
+      "id": "gez-kallala",
+      "lang": "gez",
+      "form": "ከለለ",
+      "translit": "kallala",
+      "gloss": "crown; surround like a crown; (ተክሊል) crowning of bride and groom, wedding",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 816–817, II. ከለለ; ክሉል; አክሊል; ተክሊል",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n431",
+          "note": "\"1) coronare ... 2) coronae instar cingere, circumdari, circumstare\"; ክሉል \"coronatus\"; አክሊል \"corona, diadema\"; ተክሊል \"coronatio (sponsi et sponsae ...) i. e. nuptiae et consecratio nuptialis\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez አክሊል (ʾäklil)",
+          "url": "https://en.wiktionary.org/wiki/%E1%8A%A0%E1%8A%AD%E1%88%8A%E1%88%8D",
+          "note": "\"crown, diadem, tiara, mitre\"; \"Borrowed from Arabic إِكْلِيل (ʔiklīl).\""
+        }
+      ],
+      "note": "Dillmann files the crown root apart from “all” (I. ከለለ). Its wedding sense comes from the church’s crowning of bride and groom, and Wiktionary takes አክሊል as a loan from Arabic, which itself has the crown-noun from Aramaic; so it may be a borrowed word, not an inherited one."
+    },
+    {
+      "id": "akk-kililu",
+      "lang": "akk",
+      "form": "kilīlu",
+      "translit": "kilīlu",
+      "gloss": "wreath, crown; battlement, parapet",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "ebl",
+          "locator": "kilīlu I",
+          "url": "https://www.ebl.lmu.de/api/words/kil%C4%ABlu%20I",
+          "note": "\"wreath\" OAkk, Bab., NA [GILIM]; no root given."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000026570, kilīlu [wreath] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000026570.html",
+          "note": "Meanings: crown, head ornament, wreath, mural crown, battlement, parapet."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܟܠܝܠܐ (kəlīlā)",
+          "url": "https://en.wiktionary.org/wiki/%DC%9F%DC%A0%DC%9D%DC%A0%DC%90",
+          "note": "Glosses include \"crown, wreath\" and \"finishing, completion (of a building)\"; derives it through Aramaic from Akkadian kilīlu."
+        }
+      ],
+      "note": "Written with a Sumerian sign, so it may be a loan into Akkadian; Wiktionary takes the Aramaic and Syriac crown-noun from it. Its use for a wall’s battlements matches kullulu."
+    },
+    {
+      "id": "ar-kallala",
+      "lang": "ar",
+      "form": "كَلَّلَ",
+      "translit": "kallala",
+      "gloss": "adorn with gems or jewels; wreathe, crown",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3002, root كل, كَلَّلَ (n43083); مُكَلَّلٌ (n43092)",
+          "note": "كَلَّلَ \"He adorned a thing with gems or jewels\"; مُكَلَّلٌ \"Adorned with gems or jewels\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic كلل (kallala); إكليل (ʔiklīl)",
+          "url": "https://en.wiktionary.org/wiki/%D9%83%D9%84%D9%84",
+          "note": "كلل \"to adorn, to wreath\", \"to crown\", \"to perform a marriage ceremony, to marry\"; إكليل \"crown, garland, wreath\", \"From Aramaic כְלִילָא\"."
+        }
+      ],
+      "note": "Arabic’s ordinary verb كَلَّ means to tire or be blunt, unrelated in sense; the adorning and crowning verb sits beside إكليل, which Wiktionary takes from Aramaic, so it may be borrowed."
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "whole-heart",
+      "statement": "Israel is to love Yahweh with all (בְּכָל) the heart, all the soul and all the strength (Deu 6:5), and to seek him with all the heart, which he answers by being found (Deu 4:29; Jer 29:13). He promises to circumcise the heart so that it can love him with all of it (Deu 30:6). Jesus names this the first and great commandment (Mat 22:37–38; Mrk 12:29–30). What is asked is not part of a person but the whole.",
+      "evidence": [
+        {
+          "ref": "Deu.6.5"
+        },
+        {
+          "ref": "Deu.4.29"
+        },
+        {
+          "ref": "Jer.29.13"
+        },
+        {
+          "ref": "Deu.30.6"
+        },
+        {
+          "ref": "Mat.22.37"
+        },
+        {
+          "ref": "Mrk.12.30"
+        }
+      ]
+    },
+    {
+      "topic": "bride",
+      "statement": "Yahweh remembers Israel’s first devotion as “the love of your bridal days”, following him in the wilderness (Jer 2:2). He takes Jerusalem in covenant, clothes and adorns her and sets a crown on her head, and her beauty is perfect (כָּלִיל) through his splendour (Ezk 16:8–14). Restored Zion is rejoiced over by her God as a bridegroom rejoices over the bride (Isa 62:5), clothed with salvation as a bride adorned (Isa 61:10). John names Jesus the bridegroom to whom the bride belongs (Jhn 3:29), and the holy city, new Jerusalem, comes down prepared as a bride adorned for her husband, the bride, the Lamb’s wife (Rev 21:2, 9).",
+      "evidence": [
+        {
+          "ref": "Jer.2.2"
+        },
+        {
+          "ref": "Ezk.16.8",
+          "to": "Ezk.16.14"
+        },
+        {
+          "ref": "Isa.62.5"
+        },
+        {
+          "ref": "Isa.61.10"
+        },
+        {
+          "ref": "Jhn.3.29"
+        },
+        {
+          "ref": "Rev.21.2"
+        },
+        {
+          "ref": "Rev.21.9"
         }
       ]
     }
   ],
-  "doctrine": [],
-  "note": "The bride and completion words are retained together without an asserted etymology. The crown-family is included from scripture’s Syriac, whose root key is כל. כְּלָל is a person’s name, left for its own entry; the remaining unassigned BDB rows are redirects. xk.ad.ab and k.bn.ab overlap on Hebrew spellings, and support counts cannot be read as separate language totals. The brief for כלל omits the Aramaic quantifier because it is filed under כל; that word is included here. Cognate assignment deliberately separates the bridal and totality senses, so a negative evidence balance is expected for each group rather than concealed."
+  "note": "Cognates checked on the page: Segert pp. 88, 132, 189; Krahmalkov pp. 226, 229 (Krahmalkov has no klt “bride”); Biella pp. 246–247; Dillmann cols. 814–817 (page images n430, n431); eBL entries as cited; Compston’s Moabite text. Not consulted: Leslau CDG (Ge’ez kʷəll, kallala), CAD K/Š (kalālu, kilīlu, kullulu, šuklulu), Fisher 1969 (OCR poor here; its pp. ~108–109 compare Ug kl/klat with Ethiopic and mention Tigre/Amharic kallala “protect, surround”), Payne Smith/Brockelmann for Syriac ܟܠܝܠܐ “completion (of a building)” — worth confirming, since it would join crown and completion inside Syriac. Open questions: (1) is the bride-word from the root (Sabaic hkll “give in marriage (?)” under KLL; Akkadian kullulu “veiled” of a bride and “crown”) or a separate primary noun that only shares the letters? (2) is the crown-family inherited (Akkadian kullulu, root kll per eBL) or a wandering loan from kilīlu (Wiktionary’s view; Ge’ez and Arabic crown words are then loans)? A crown on a wall is its finishing course (kullulu of a gate, kilīlu “battlement”), which may be how crown joins “complete”. (3) Ugaritic kll in KTU 1.115:10 may be read kl l- “all … not”; Segert gives both. Ezra 4:12 שַׁכְלִילוּ is not counted under xk.ad.aa in the database (ketiv/qere spelling); it is cited by hand. כְּלָל is a person’s name, left for its own entry; the remaining unassigned BDB rows are redirects. xk.ad.ab and k.bn.ab overlap on Hebrew spellings, so their support counts cannot be read as separate language totals. The brief for כלל omits the Aramaic quantifier because it is filed under כל; that word is included here. Doctrine items added 2026-11-09 for review."
 }
