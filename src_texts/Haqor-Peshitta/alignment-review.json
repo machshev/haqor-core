@@ -2910,6 +2910,122 @@
           "reason": "The source's dead predicate plus ethical dative to her jointly realizes the subordinate fact that she was dead; knowing at position 3 remains separate."
         }
       ]
+    },
+    "42:9": {
+      "sha256": "a27065dbd4860a7751abb4466eee6d610174e5c2a6f061a624e01ac3730dca72",
+      "original_shared_spans": 250,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 13,
+          "english": "unless",
+          "positions": [
+            18,
+            19
+          ],
+          "reason": "Ela en is the fixed exception-plus-condition construction unless. Its two particles jointly introduce the alternative condition; the going, buying and food clauses remain separately linked."
+        },
+        {
+          "verse": 25,
+          "english": "a person",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Bar ansha is the lexical human expression person, literally son of humanity. The two constituents jointly identify the individual without a biological parent or son relationship."
+        },
+        {
+          "verse": 32,
+          "english": "weighed down",
+          "positions": [
+            0,
+            2
+          ],
+          "reason": "The heaviness predicate with its subject-coreferential dative lehon describes Simon and his companions being weighed down. The dative adds no other experiencer or beneficiary; the past auxiliary and sleep complement remain separate."
+        },
+        {
+          "verse": 39,
+          "english": "suddenly",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Min shelya is the fixed temporal idiom suddenly, literally from quiet. The source does not introduce a new calm state or participant; the conjunction prefix is separately linked."
+        },
+        {
+          "verse": 41,
+          "english": "son",
+          "positions": [
+            14,
+            16
+          ],
+          "reason": "The object suffix on bring anticipates the explicit son noun. English names one boy as the object; a second him would duplicate that participant. The possessive your remains separately linked."
+        },
+        {
+          "verse": 42,
+          "english": "the boy",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "The healing verb has an anticipatory masculine object suffix before the explicit boy noun. English has one patient, the boy; the healing predicate remains separately linked."
+        },
+        {
+          "verse": 44,
+          "english": "of people",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Bne ansha is the lexical human plural people, literally sons of humanity. Its constituents jointly identify the humans into whose hands the Son of man is delivered, not biological sons of another person."
+        },
+        {
+          "verse": 45,
+          "english": "word",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The understanding verb carries an anticipatory feminine object suffix before the explicit word noun. English names one object; the understanding predicate and demonstrative remain separate."
+        },
+        {
+          "verse": 45,
+          "english": "word",
+          "positions": [
+            15,
+            17
+          ],
+          "reason": "The pronoun in about it anticipates the repeated preposition and explicit this word. English names one topic of questioning; about and this remain separately linked."
+        },
+        {
+          "verse": 56,
+          "english": "And they went",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "The going verb has its subject-coreferential ethical dative lehon. The dative adds no beneficiary or second destination; the village destination remains separately linked."
+        },
+        {
+          "verse": 58,
+          "english": "have",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "The existential ith and dative lehon jointly express possession by the already-named foxes. English have realizes that one relation, not another for-them beneficiary."
+        },
+        {
+          "verse": 58,
+          "english": "has no",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "The negative existential layt with the dative leh jointly expresses the Son of man lacking a place. The locative complement and his head remain separately linked; there is no other beneficiary."
+        }
+      ]
     }
   }
 }

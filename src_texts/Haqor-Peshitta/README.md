@@ -1317,9 +1317,22 @@ Source checks for Luke 8:
 
 Source checks for Luke 9:
 
+- The chapter's 250 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Twelve remain, with
+  exact reasons in the ledger: the exception-condition marker, human
+  expressions, the sudden-timing idiom, ethical datives, anticipatory
+  objects, and possession constructions. Ordinary modifiers, negatives,
+  auxiliaries, names, noun phrases, and clause constituents have separate
+  source owners.
 - In 9:1 the twelve are his, while the suffix on "all" anticipates the
   demons. In 9:11–12, 9:16, and 9:18 the crowds are plural. In 9:12 the
   villages are around "us", and the disciples say "we are" in the wilderness.
+- In 9:3 adjacent no/thing spans spell "nothing". In 9:4 the house's
+  resumptive dative supplies the English entry preposition, with the
+  house head separate. In 9:12 the day's beginning is a narrative use
+  of the homograph, despite its imperative morphology tag. In 9:13 the
+  fixed ela en construction is "unless"; the quantities and food remain
+  separately linked.
 - In 9:9 Herod says he cut off John's head; the following hearing clause
   remains first person. In 9:20 the title is the Messiah of God, without
   a separate "his" before the genitive.
@@ -1330,18 +1343,37 @@ Source checks for Luke 9:
 - In 9:31 Moses and Elijah speak about his departure and its completion
   in Jerusalem. In 9:34 they are explicitly named as entering the cloud.
   In 9:35 the Son is beloved.
+- In 9:32 the heaviness predicate's ethical dative adds no second
+  experiencer, and its past auxiliary remains separate. In 9:33 hwa is
+  a past auxiliary, distinct from the personal pronoun hu; it supplies
+  English past do-support under the negative. In 9:36 the completed
+  occurrence of the voice is "after the voice had sounded".
 - In 9:39 the feminine spirit seizes the child; the masculine predicates
   describe the child crying out, gnashing his teeth, and foaming. The
   feminine subject returns for the spirit's departure and crushing him.
+- In 9:39 min shelya is the fixed sudden-timing expression. The masculine
+  object in 9:40 refers to the spirit being expelled. In 9:41 and 9:42
+  the anticipatory object suffixes and the explicit son/boy noun identify
+  one child in each predicate.
 - In 9:48 the final demonstrative resumes the least person: "this one
   will be great". In 9:49 the address is "Our Rabbi", followed by "your
   name", "with us", and "after you". In 9:50 both final suffixes are "you".
+- In 9:45 the understanding verb's object anticipates "this word";
+  later "about it" anticipates "about this word". Each English clause
+  names one word, with the verbs, demonstratives, and preposition separate.
+  In 9:47 the standing verb's object is the child, while the following
+  location suffix refers to Jesus.
 - In 9:51 the days being fulfilled are distinct from Jesus setting his
   face toward Jerusalem. In 9:52 messengers are plural, without a numeral.
   In 9:54 the address is "Our Lord", and Elijah is explicitly named.
 - In 9:56 souls are not to be destroyed, and the causative life verb is
   rendered "to give life". In 9:58 his head is explicit. In 9:61 the
   household idiom does not identify its members as biological sons.
+- In 9:56 the going verb's ethical dative adds no beneficiary or second
+  destination. In 9:58 the two possession predicates keep the lairs and
+  resting-place complement separate. In 9:62 adjacent plough/share spans
+  spell "ploughshare", while the hand, looking, fitness, and kingdom have
+  their own source owners.
 
 Source checks for Luke 10:
 
