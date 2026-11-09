@@ -1013,19 +1013,42 @@ Source checks for Luke 1:
 
 Source checks for Luke 2:
 
+- The chapter's 182 original shared spans were checked against exact
+  forms, morphology, and continuous English. Eleven remain, with exact
+  reasons in the ledger: compound adverbial and prepositional expressions,
+  two existential past predicates, two anticipatory objects, and three
+  predicates with ethical datives. Ordinary names, numbers, modifiers,
+  auxiliaries, negatives, and clause constituents remain separately linked.
+- In 2:4 the house and family-line suffixes anticipate David, rather than
+  introducing separate possessions of Joseph. The suffixed existential
+  and past copula have distinct English "he" and "was" spans.
 - In 2:9 the angel is explicitly "of God", while the following glory is
   "of the Lord". In 2:10 the announced joy is for all the world.
+- In 2:13 men shly is the suddenness idiom; the plural hosts praise God.
+  In 2:15 the reciprocal "with one another" and extent "as far as Bethlehem"
+  have separate source owners. In 2:17 the repeated about-him/about-the-boy
+  expression introduces one referent, not an additional person.
 - In 2:14 the source says "good hope", which is retained alongside peace.
 - In 2:22 the purification has a plural possessor, "their". In 2:27 the
-  parents are explicit, while 2:41 uses the distinct expression "his people".
-- In 2:29 the release request is imperative. In 2:30 the object is
-  "your mercy"; in 2:35 the piercing weapon is a spear.
+  parents are explicit; the anticipatory object and the name Jesus identify
+  the same child. In 2:41 the source instead uses "his people".
+- In 2:25 the upright predicate uses the just/honest sense documented in
+  [CAL's kēn entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A),
+  beyond the export's shorter homograph glosses. The consolation belongs
+  to Israel, and the Holy Spirit is the subject of being upon Simeon.
+- In 2:29 the release request is imperative, with "you, my Lord" as its
+  explicit address and the servant as one resumptive object. In 2:30 the
+  object is "your mercy"; in 2:35 the piercing weapon is a spear.
 - In 2:36 the seven years with Anna's husband are explicit. In 2:37 the
   eighty-four-year wording is retained without resolving its age/duration
   ambiguity; both fasting and prayer are linked separately.
 - In 2:43 and 2:45 the dative following "returned" is idiomatic, without
-  an added external recipient. In 2:49 the Father's house is explicit,
-  and 2:52 retains both "his stature" and "his wisdom".
+  an added external recipient. The dative with "remained" in 2:43 likewise
+  belongs to Jesus' remaining in Jerusalem. In 2:44 the company members
+  and those who knew the parents remain separate groups. In 2:47 the
+  source has his wisdom and his words, rather than the reference's answers.
+  In 2:49 the Father's house is explicit, and 2:52 retains both "his stature"
+  and "his wisdom".
 
 Source checks for Luke 3:
 
