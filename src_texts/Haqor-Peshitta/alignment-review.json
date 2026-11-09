@@ -7661,6 +7661,505 @@
           "source": "נֵשרֵיוה_י לַאתֿרָא"
         }
       ]
+    },
+    "44:7": {
+      "sha256": "fd21fbe26c610372cd62177fdb0339123e7bea74f95e0414f109f7b5a648c993",
+      "original_shared_spans": 277,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 1,
+          "english": "whether",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "D-en hu introduces the reported yes-or-no question. Whether expresses the single interrogative formula; these things, were and so are independently assigned to 5, 7 and 6.",
+          "source": "דֵּאנ ה_ו"
+        },
+        {
+          "verse": 2,
+          "english": "before",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "Ad la is the temporal before construction. The negative is internal to that idiom, not a denial that Abraham came; came and dwell stay independently linked.",
+          "source": "עַדֿ לָא"
+        },
+        {
+          "verse": 3,
+          "english": "he said",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Perfect amar with narrative hwa gives he said, the divine instruction following the appearance. Pluperfect would impose an unnecessary earlier speech and progressive an unsupported duration; and and to him stay separate.",
+          "source": "וֵאמַר ה_וָא"
+        },
+        {
+          "verse": 5,
+          "english": "a footstep",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "Dukhta d-regla denotes the space or trace of a foot, naturally a footstep. Splitting the lexical compound would require an unnatural foot step or alter the extent of the promised land; the preceding negation and even remain separate.",
+          "source": "דֻּורכּתָֿא דּרֵגֿלָא"
+        },
+        {
+          "verse": 5,
+          "english": "he promised",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Active Eshtaphal promised with narrative past hwa expresses one promise event. He promised preserves that narrative without imposing a progressive or an earlier promise; but remains separately linked to 9.",
+          "source": "וֵאשתַּודִּי ה_וָא"
+        },
+        {
+          "verse": 5,
+          "english": "he had",
+          "positions": [
+            19,
+            20
+          ],
+          "reason": "Past hwa with dative leh expresses possession, he had. Neither the existential nor its possessor dative alone means have; when, negation and son stay outside.",
+          "source": "ה_וָא לֵה"
+        },
+        {
+          "verse": 6,
+          "english": "spoke",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Perfect mallel plus narrative hwa expresses the past speech event spoke. A progressive would impose duration and pluperfect an unnecessary earlier event; conjunction, God and with him remain separate.",
+          "source": "ומַלֵל ה_וָא"
+        },
+        {
+          "verse": 7,
+          "english": "the nation",
+          "positions": [
+            0,
+            3
+          ],
+          "reason": "The object suffix on I will judge resumes the fronted nation object. The nation expresses one object rather than an additional him; and, I and will judge remain separately linked.",
+          "source": "וַלעַמָא אֵדֻּונִיוה_י"
+        },
+        {
+          "verse": 7,
+          "english": "after",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "Men bathar is the compound temporal preposition after. These things stays at 9 and the conjunction at 7; neither constituent independently supplies another temporal relation.",
+          "source": "ומֵנ בָּתַֿר"
+        },
+        {
+          "verse": 10,
+          "english": "he rescued him",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Perfect rescued with narrative hwa gives one narrative past rescue. He rescued him preserves the subject and object suffix without imposing progressive or pluperfect aspect; and stays separately at 0.",
+          "source": "ופַֿרקֵה ה_וָא"
+        },
+        {
+          "verse": 11,
+          "english": "our fathers",
+          "positions": [
+            10,
+            12
+          ],
+          "reason": "The plural dative lahun anticipates the explicit our fathers dative. Our fathers expresses the single resumed possessor, not a second group; the have construction is separately documented.",
+          "source": "להֻונ לַאבָֿהָתַֿנ"
+        },
+        {
+          "verse": 11,
+          "english": "had",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Past existential hwa with the dative possessor lahun yields had. Negation is separately rendered nothing at 8, the fathers are separately resumed, and the satisfaction infinitive stays at 11.",
+          "source": "ה_וָא להֻונ"
+        },
+        {
+          "verse": 12,
+          "english": "he sent",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Perfect shaddar with narrative hwa gives he sent, one past sending rather than an imposed progressive or earlier sending. Our fathers and for the first time stay outside.",
+          "source": "שַדַּר ה_וָא"
+        },
+        {
+          "verse": 13,
+          "english": "of Joseph",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The masculine suffix on family anticipates the following Joseph genitive. Of Joseph realizes the one resumed possessor; the family stem and became known predicate remain separate.",
+          "source": "טֻוהמֵה דּיַוסֵפֿ"
+        },
+        {
+          "verse": 14,
+          "english": "sent",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Perfect shaddar with narrative hwa gives the single past sent. The conjunction and Joseph subject remain separately linked; no unnecessary progressive or prior sending is added.",
+          "source": "ושַדַּר ה_וָא"
+        },
+        {
+          "verse": 14,
+          "english": "his father",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The object suffix on brought is resumed by the explicit his father object. His father expresses that one object; brought and the Jacob apposition remain separate.",
+          "source": "וַאיתּיֵה לַאבֻֿוה_י"
+        },
+        {
+          "verse": 14,
+          "english": "they were",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Participial hawayn with past hwaw forms one past copular predicate, they were. Splitting these two forms would duplicate English being or impose a change of state; and and in number remain outside.",
+          "source": "והָוֵינ ה_וַו"
+        },
+        {
+          "verse": 17,
+          "english": "came",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Perfect matti with narrative hwa gives the arrival of the time, came. A progressive would change the stated arrival into approach; the time subject and when remain separate.",
+          "source": "מַטִי ה_וָא"
+        },
+        {
+          "verse": 17,
+          "english": "increased",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Perfect sgi with narrative hwa gives increased in the historical narrative. Increased preserves the resulting growth without requiring an earlier-than-main-event viewpoint; the people and grew strong remain separate.",
+          "source": "סגִֿי ה_וָא"
+        },
+        {
+          "verse": 18,
+          "english": "Joseph",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The object dative leh is resumed by explicit Joseph. Joseph realizes that single object of know without adding another him; who, did, not and know remain independently linked.",
+          "source": "לֵה ליַוסֵפֿ"
+        },
+        {
+          "verse": 20,
+          "english": "At",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The b-preposition repeats on the anticipatory pronoun and time noun. At expresses one resumed temporal relation, with the time stem separately linked.",
+          "source": "בֵּה בּזַבֿנָא"
+        },
+        {
+          "verse": 20,
+          "english": "that",
+          "positions": [
+            0,
+            2
+          ],
+          "reason": "The anticipatory masculine suffix on beh resumes the following that demonstrative. That expresses one temporal referent; at and time are separately linked.",
+          "source": "בֵּה הַו"
+        },
+        {
+          "verse": 23,
+          "english": "it came",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Perfect sleq with narrative hwa gives it came in the heart construction. This preserves the occurrence of the intention without adding progressive or pluperfect aspect; into his heart and the visit infinitive are separate.",
+          "source": "סלֵק ה_וָא"
+        },
+        {
+          "verse": 24,
+          "english": "Egyptian",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "The object suffix on killed is resumed by explicit the Egyptian. Egyptian expresses that one victim; and killed and that remain separately linked.",
+          "source": "וקַטלֵה למֵצרָיָא"
+        },
+        {
+          "verse": 29,
+          "english": "he had",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Past existential hwaw with dative leh expresses he had two sons. He had requires the existential and possessor together; the conjunction, two and sons remain separate.",
+          "source": "וַהוַו לֵה"
+        },
+        {
+          "verse": 30,
+          "english": "of the Lord",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "The masculine suffix on angel anticipates the Lord genitive. Of the Lord realizes the single possessor; the angel noun and appearance predicate stay outside.",
+          "source": "מַלַאכֵֿה דּמָריָא"
+        },
+        {
+          "verse": 32,
+          "english": "of Abraham",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "The masculine suffix on God anticipates the following Abraham genitive. Of Abraham realizes one resumed possessor; the God stem and Isaac and Jacob genitives stay separate.",
+          "source": "אַלָהֵה דַּאבֿרָהָמ"
+        },
+        {
+          "verse": 33,
+          "english": "which",
+          "positions": [
+            9,
+            11
+          ],
+          "reason": "The relative d-prefix on stand and the feminine suffix of bah refer to the same ground. Which realizes one relative referent; on stays at 11, you at 10 and stand at 9.",
+          "source": "דּקָאֵמ בָּה"
+        },
+        {
+          "verse": 34,
+          "english": "of my people",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The masculine suffix on oppression anticipates the following my people genitive. Of my people expresses one collective possessor; the oppression stem and emphatic seeing remain separately linked.",
+          "source": "אֻולצָנֵה דּעַמי"
+        },
+        {
+          "verse": 35,
+          "english": "whom",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The relative d-prefix on rejected and the prepositional object pronoun beh resume Moses. Whom expresses one relative object; they rejected remains at 2 and no separate him is introduced.",
+          "source": "דַּכֿפַֿרו בֵּה"
+        },
+        {
+          "verse": 35,
+          "english": "this very man",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Leh and the following demonstrative lehana resume one emphatically identified object. This very man expresses that one Moses object; God, sent, to them, ruler and deliverer remain separate.",
+          "source": "לֵה להָנָא"
+        },
+        {
+          "verse": 38,
+          "english": "who spoke",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "Perfect mallel with past hwa gives the angel who spoke, one past speech event. The relative remains within who spoke while the separately expressed the one, with him, fathers and mountain stay outside; no unsupported progressive or earlier viewpoint is forced.",
+          "source": "דּמַלֵל ה_וָא"
+        },
+        {
+          "verse": 43,
+          "english": "of Malchum",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The suffix on tabernacle anticipates the following Malchum genitive. Of Malchum expresses the single possessor; tabernacle and carried remain separate.",
+          "source": "מַשכּנֵה דּמַלכֻּומ"
+        },
+        {
+          "verse": 43,
+          "english": "of the god",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "The suffix on star anticipates the following god genitive. Of the god expresses the one resumed possessor; and the star remains at 4 and the Rephan apposition at 6.",
+          "source": "וכַֿוכּבֵֿה דַּאלָהָא"
+        },
+        {
+          "verse": 43,
+          "english": "beyond",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "Lhal men is the compound spatial preposition beyond, as CAL lhl sense 3.1 records. Far from would lose the far-side relation and could imply movement away from Babylon; the removal predicate and Babylon remain separate.",
+          "source": "להַל מֵנ"
+        },
+        {
+          "verse": 45,
+          "english": "this",
+          "positions": [
+            0,
+            1,
+            5
+          ],
+          "reason": "The initial object pronoun, demonstrative and object suffix on brought in refer to the same tabernacle. This realizes that one repeated object identification; and, bring in and tabernacle remain separately linked, with the emphatic infinitive independently expressed.",
+          "source": "ולֵה להָנָא אַעלֻוה_י"
+        },
+        {
+          "verse": 45,
+          "english": "of David",
+          "positions": [
+            22,
+            23
+          ],
+          "reason": "The masculine suffix on days anticipates the following David genitive. Of David expresses the one resumed possessor; until and the days remain separate.",
+          "source": "ליַומַוה_י דּדַֿוִידֿ"
+        },
+        {
+          "verse": 46,
+          "english": "God",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The masculine suffix on before anticipates the following God genitive. God realizes the one resumed prepositional object; before remains at 3 and favor outside.",
+          "source": "קדָֿמַוה_י דַּאלָהָא"
+        },
+        {
+          "verse": 46,
+          "english": "of Jacob",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The masculine suffix on God anticipates the following Jacob genitive. Of Jacob expresses one resumed possessor; for the God and the dwelling request stay separate.",
+          "source": "לַאלָהֵה דּיַעקֻובֿ"
+        },
+        {
+          "verse": 52,
+          "english": "of the Righteous One",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "The suffix on coming anticipates the following Righteous One genitive. Of the Righteous One expresses the one resumed possessor; the coming stem, about and beforehand remain separate.",
+          "source": "מֵאתִֿיתֵֿה דּזַדִּיקָא"
+        },
+        {
+          "verse": 52,
+          "english": "whom",
+          "positions": [
+            15,
+            17
+          ],
+          "reason": "The relative d-prefix on you and the masculine object suffix on killed resume the Righteous One. Whom expresses one relative object, with you, handed over and and killed separately linked.",
+          "source": "דַּאנ_תֻּונ וַקטַלתֻּונָיה_י"
+        },
+        {
+          "verse": 54,
+          "english": "they heard",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Perfect heard with narrative hwaw gives they heard, one completed hearing event before the reaction. Progressive would impose duration; these things and the resulting anger remain outside.",
+          "source": "שמַעו ה_וַו"
+        },
+        {
+          "verse": 56,
+          "english": "open",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Kad introduces the accompanying state described by the passive participle open. English perception syntax naturally renders heaven open; open expresses this single circumstantial predication without inventing a separate lies or an opening event. Heaven and I see remain separate.",
+          "source": "כַּדֿ פּתִֿיחִינ"
+        },
+        {
+          "verse": 56,
+          "english": "of Man",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The suffix on Son anticipates the following Man genitive. Of Man expresses the single resumed possessor in the title; and the Son remains separately at 7.",
+          "source": "ולַבֿרֵה דּא_נָשָא"
+        },
+        {
+          "verse": 56,
+          "english": "standing",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Kad introduces the accompanying state expressed by the participle standing. English perception syntax naturally renders the Son of Man standing; the one circumstantial predicate standing avoids an unnecessary extra temporal clause, with the title and right-hand location outside.",
+          "source": "כַּדֿ קָאֵמ"
+        },
+        {
+          "verse": 58,
+          "english": "outside",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Levar men is the compound outside-of relation. Outside expresses it once before the city; treating men as an additional source of motion would duplicate the spatial relation.",
+          "source": "לבַֿר מֵנ"
+        },
+        {
+          "verse": 58,
+          "english": "of a",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "The masculine suffix on feet anticipates the following young-man genitive. Of a expresses the resumed possessor relation; the feet, certain and young man remain separately linked.",
+          "source": "רֵגֿלַוה_י דַּעלַימָא"
+        },
+        {
+          "verse": 59,
+          "english": "Stephen",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The object dative leh is resumed by explicit Stephen. Stephen expresses one object of stoning, not a second him; the stoning participle, past auxiliary and prayer clause remain outside.",
+          "source": "לֵה לֵאסטֵפַֿנָוס"
+        },
+        {
+          "verse": 60,
+          "english": "he knelt",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Sam burka, literally placed a knee, is the idiomatic action knelt. English knelt expresses the single posture change without a misleading separate knee-placement event; when and the following cry remain separate.",
+          "source": "סָמ בֻּורכָּא"
+        }
+      ]
     }
   }
 }
