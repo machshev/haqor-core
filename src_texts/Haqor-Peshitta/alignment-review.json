@@ -1287,6 +1287,41 @@
           "reason": "The existential (with relative prefix or negation where present) and its dative possessor jointly express possession: there is/is not to him means he has/does not have. The possessor resumes the separately linked anyone; assigning the dative to who or to the following hearing/giving clause would misidentify its grammatical owner."
         }
       ]
+    },
+    "41:5": {
+      "sha256": "1c334950125b0239d983beb41e18be3f39c211577487f2f890047e32151c0181",
+      "original_shared_spans": 157,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 4,
+          "english": "whenever",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "D-kul emath, literally every when, is the distributive temporal construction whenever. Its quantifier and interrogative-time constituent jointly supply the English temporal conjunction."
+        },
+        {
+          "verse": 17,
+          "english": "that he should depart",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The departure verb is followed by its subject-coreferential ethical dative leh. They jointly express the request for him to depart; the pronoun does not introduce a second recipient or destination. The actual from-complement remains separately linked at positions 5 and 6."
+        },
+        {
+          "verse": 42,
+          "english": "And immediately",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Bar shateh, literally son of its hour, is the lexical immediate-time expression. Its two constituents jointly mean immediately, with the prefixed conjunction included."
+        }
+      ]
     }
   }
 }

@@ -452,6 +452,30 @@ Source checks for Mark 4:
 
 Source checks for Mark 5:
 
+- All 157 original shared spans were checked against the exact forms,
+  morphology and connected English. Three shared expressions remain:
+  the distributive temporal "whenever" in 5:4, the departure verb with
+  its subject-coreferential ethical dative in 5:17, and the immediate-time
+  compound in 5:42. Ordinary predicates, noun phrases and prohibitions
+  have separate source owners.
+- In 5:2 the unclean spirit is in the man; the locative pronoun is not
+  reassigned to a possession construction. In 5:8 the saying predicate
+  is participial with a past auxiliary, "was saying".
+- In 5:9 the asking verb carries its own object suffix; the following
+  saying verb and dative belong to the reply. In 5:15 the legion's past
+  existence is separate from the man's clothed, composed and sitting
+  descriptions. In 5:18 the past auxiliary belongs to asking.
+- In 5:23 asking, its auxiliary, the person asked, and the degree adverb
+  have separate links, as do the severe affliction and its modifier.
+  The woman's description continues through 5:25-27; in 5:26 the negative
+  includes "at all", and 5:27 distinguishes the press from the crowd.
+- In 5:34 the causative healing verb retains its feminine object suffix,
+  "has made you live". In 5:35 the arriving verb is perfect, "came",
+  distinct from the present speaking participle.
+- In 5:40-41 father, hand and girl have separate links. In 5:42 the
+  age classifier supplies "old" in "twelve years old", the attested
+  feminine age sense of bart; compare the
+  [Syriac dictionary entry](https://assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=18462).
 - In 5:9 the name suffix is plural: "our name". In 5:12 the speakers are
   explicitly identified as those demons, not left as an unnamed pronoun.
 - In 5:30 the knowledge clause says that power had gone out from Jesus;
