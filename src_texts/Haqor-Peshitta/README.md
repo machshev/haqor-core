@@ -1694,16 +1694,35 @@ Source checks for Luke 15:
 
 Source checks for Luke 16:
 
+- The chapter's 137 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Six remain: past
+  possession, the accusation idiom, three stewardship designations,
+  and the generic human designation. Their exact positions and linguistic
+  reasons are in the ledger. Ordinary negatives, auxiliaries, modifiers,
+  noun phrases, names, and clause constituents have separate source owners.
 - In 16:1 the accusations are brought to the rich man against the
   steward; the two pronominal references remain distinct. In 16:2 he
   can no longer be the master's steward. In 16:4 leaving the stewardship
   and being received into their houses remain separate clauses.
+- In 16:1 akal qarsa is the accusation idiom, with its recipient and
+  accused person separately linked. "The latter" identifies the steward,
+  distinct from the rich man receiving the report.
+- In 16:2-4 rabbat baytutha is the abstract stewardship designation;
+  [García González's lexical index, entry 55](https://gredos.usal.es/bitstream/handle/10366/137459/DLE_GarciaGonzalezV.pdf?sequence=1#page=15)
+  records the expression as administration. In 16:2 the genitive and
+  possessive remain separate; in 16:3 the anticipatory feminine object
+  identifies that same office, expressed once in English.
 - In 16:6 the oil debt is a hundred measures, changed to fifty, with
   sitting down quickly explicit. In 16:7 the wheat debt is a hundred
   cors, changed to eighty; sitting is repeated without the quickly adverb.
 - In 16:8 the subject is explicitly "our Lord". The generation phrase
   retains both "this" and "theirs". In 16:9 it is the mammon that comes
   to an end, and the eternal shelters belong to the receiving group.
+- The quotation closes after 16:7 so that 16:8's "our Lord commended"
+  remains the narrator's statement. Direct speech reopens at 16:9.
+  In 16:9 the two first-person pronouns separately own "I" and "am";
+  making, beneficiaries, friends, mammon, its ending, and reception stay
+  separately linked.
 - In 16:11 truth is what is entrusted, and the disciples are recipients.
   In 16:12 the first property is "not yours", distinct from the final
   "your own"; the negative about being found faithful is also retained.
@@ -1724,6 +1743,10 @@ Source checks for Luke 16:
   in 16:28 the five brothers are warned lest they too come. In 16:30
   the visitor comes from the dead; in 16:31 the final clause explicitly
   says they will not believe "him", preserving its pronominal complement.
+- In 16:26 the relative prefix and from-preposition separately own
+  "those" and "from" in the reverse-crossing clause. In 16:28-29 the
+  possessors separately own "I" and "they", while the existential owns
+  "have". In 16:31 both negatives remain separate from hearing and belief.
 
 Source checks for Luke 17:
 
