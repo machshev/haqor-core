@@ -423,6 +423,23 @@ Source checks for Mark 3:
 
 Source checks for Mark 4:
 
+- All 136 original shared spans were checked against the source forms,
+  morphology and connected English. The final five exceptions are the
+  immediate-time idiom in 4:5 and four existential/dative possession
+  constructions in 4:9, 4:23 and 4:25. The dative possessor is not a
+  relative pronoun or part of the following hearing or giving clause.
+- In 4:1 the beginning verb is perfect with a past auxiliary, distinct
+  from the participial teaching and standing predicates. In 4:10 the
+  twelve retain their possessive suffix, "his twelve".
+- In 4:13 and 4:15 the anticipatory pronouns and their explicit noun
+  objects have separate links. In 4:19 the pronoun resumes the word,
+  which becomes fruitless; the desires remain the agents of choking.
+- In 4:21 the connective and preposition in d-al have separate English
+  spans owned by the same source word. In 4:28 the anticipatory dative
+  is "it" before the explicit fruit noun, rather than a demonstrative.
+- In 4:39 the first command is imperative, while the following zgir is
+  a passive participle with an explicit second-person pronoun:
+  "Be quiet; you are restrained." The two forms are not conflated.
 - In 4:5 the two-word hour expression means "immediately", not a literal
   duration of an hour.
 - In 4:6 the heat predicate is retained despite the morphology dataset's
