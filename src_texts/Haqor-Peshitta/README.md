@@ -896,18 +896,49 @@ Source checks for Mark 14:
 
 Source checks for Mark 15:
 
+- The chapter's 150 original shared spans were checked against exact
+  forms, morphology, and context. Five remain: the accusation and greeting
+  idioms, the curtain compound, and two retrospective temporal expressions.
+  The ledger gives each reason; ordinary modifiers, auxiliaries, negatives,
+  commands, and clauses retain separate source owners.
+- In 15:1 the three with-phrases distinguish elders, scribes, and the
+  whole council. In 15:3 akhel qartse is the accusation idiom; [CAL's
+  eat entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29kl+V)
+  expressly lists this accusatory construction. In 15:11 the release verb
+  has Pilate as its singular subject, not the crowds. In 15:15 mnaggad
+  is the passive scourged state of Jesus, not an active claim that Pilate
+  personally scourged him.
+- Deyn can introduce a narrative topic without a strict contrast. The
+  "Now" and "And" renderings retain that discourse function; [Brock and
+  Kiraz and Costaz](https://sedra.bethmardutho.org/lexeme/get/690)
+  attest these broader senses beyond the export's shorter but/yet glosses.
+- In 15:18 the conventional greeting remains distinct from its quoted
+  "Hail". In 15:21 Simon, his Cyrenian description, his two named sons,
+  and carrying the cross remain distinct. In 15:23 the myrrh is mixed
+  in the wine, which Jesus does not take. The third, sixth, and ninth
+  hours remain explicit without conversion to modern clock times.
 - In 15:32 the title is "king of Israel", rather than the local Murdock
   reference's "king of the Jews"; the descent clause is third-person
-  volitional, rendered "Let Messiah ... descend".
+  volitional, rendered "Let the Messiah ... come down". The people
+  crucified with him remain a separate group reviling him.
 - In 15:34 the quoted cry and its explicit English interpretation remain
   distinct. In 15:35 the past auxiliary belongs to "they were saying";
-  calling for Elijah is a separate past predicate.
-- In 15:38 the curtain expression appay tar'a is rendered as an idiom;
+  calling for Elijah is a separate past predicate. In 15:36 the runner
+  is singular, while those saying "let us see" are plural.
+- In 15:38 the curtain expression appay tara is rendered as an idiom;
   compare [Brock and Kiraz's dictionary entry](https://sedra.bethmardutho.org/lexeme/get/6121).
-- In 15:39 "this man" is explicit in the centurion's statement. In 15:43
-  taking courage and going in to Pilate remain separate actions.
+  Its tearing, two parts, and top-to-bottom extent have separate links.
+  In 15:39 "this man" is explicit in the centurion's statement.
+- In 15:40-41 the women, family relationships, following and service,
+  and the many others coming to Jerusalem remain distinct. In 15:43
+  taking courage and going in to Pilate remain separate actions. In
+  15:44 the already and some-time-before expressions retain their
+  retrospective sense without adding an exact elapsed duration.
 - In 15:46 Joseph buys a linen sheet, without an added quality adjective;
   the lowering, wrapping, placing, and rolling predicates remain distinct.
+  In 15:47 the understood mother relationship identifies the Mary already
+  named as Joses' mother in 15:40; it introduces no new person or kinship.
+  The women see where he was laid, preserving the source's locative.
 
 Source checks for Mark 16:
 

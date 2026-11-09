@@ -2071,6 +2071,61 @@
           "reason": "W-bar shateh, literally and son of the hour, is the fixed immediate-time idiom."
         }
       ]
+    },
+    "41:15": {
+      "sha256": "94c276535199ac8fc0f4bcc579effc42f7550363a48a9f7a62e1cbe7a1662b9e",
+      "original_shared_spans": 150,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 3,
+          "english": "accusing him",
+          "positions": [
+            0,
+            2
+          ],
+          "reason": "Akhel qartse is the two-word accusation idiom, literally using eat with qartse; their joint predicate is accuse, and the suffix on qartse owns the him object.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=%29kl+V"
+        },
+        {
+          "verse": 18,
+          "english": "to greet him",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Shal b-shlameh, literally ask after his peace or welfare, is the conventional greeting idiom rather than an independent question about his welfare."
+        },
+        {
+          "verse": 38,
+          "english": "the curtain",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Appay tara, literally the faces/front of the door, is the curtain compound, explicitly attested by Brock and Kiraz; it does not refer to people or to two physical doors.",
+          "source": "https://sedra.bethmardutho.org/lexeme/get/6121"
+        },
+        {
+          "verse": 44,
+          "english": "already",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Men kaddu is the compound retrospective temporal already/by now expression, not a separate literal source introduced by men."
+        },
+        {
+          "verse": 44,
+          "english": "before",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Men qdam combines from and before as the retrospective temporal before in some time before; the noun edana at position 13 separately owns some time."
+        }
+      ]
     }
   }
 }
