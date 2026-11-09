@@ -2126,6 +2126,59 @@
           "reason": "Men qdam combines from and before as the retrospective temporal before in some time before; the noun edana at position 13 separately owns some time."
         }
       ]
+    },
+    "41:16": {
+      "sha256": "3bcb86607c510f56dbdc600db44ce6599609d4714dd9b3768765dc8a4d592136",
+      "original_shared_spans": 72,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 2,
+          "english": "to the tomb",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Beth qvura, literally house of burial, is the tomb compound; it does not identify an additional house distinct from the tomb."
+        },
+        {
+          "verse": 3,
+          "english": "of the tomb",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Beth qvura is the same tomb compound in the genitive phrase identifying the door."
+        },
+        {
+          "verse": 5,
+          "english": "the tomb",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Beth qvura is the tomb compound in the destination of the women's entry, not a separate dwelling."
+        },
+        {
+          "verse": 6,
+          "english": "He has risen",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "Qam plus its subject-coreferential ethical dative leh expresses his rising; the dative does not add a beneficiary or another person."
+        },
+        {
+          "verse": 19,
+          "english": "after",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Men batar, literally from after, is the compound temporal after relation introducing his speech with them before the ascent."
+        }
+      ]
     }
   }
 }

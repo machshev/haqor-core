@@ -942,14 +942,27 @@ Source checks for Mark 15:
 
 Source checks for Mark 16:
 
+- The chapter's 72 original shared spans were checked against exact
+  forms, morphology, and context. Five remain: three tomb compounds,
+  the rising predicate with its ethical dative, and the temporal compound
+  "after". The ledger records their exact positions and reasons.
 - In 16:1 Mary the mother of James and Salome remain separate members
-  of the three-woman list. In 16:10 the first past auxiliary belongs to
+  of the three-woman list. In 16:3 the rolling verb is morphologically
+  perfect; "will roll away" renders the prospective question in context,
+  rather than claiming a future inflection. In 16:4 the women see the
+  stone already rolled away.
+- In 16:8 astonishment and trembling seize the women, who remain the
+  plural recipients of the singular predicate. The participle's active
+  holding sense is supported by [CAL's aḥīd entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29xyd+A);
+  "had seized them" preserves these roles in English.
+  The negative and indefinite spans jointly spell "nothing".
+- In 16:10 the first past auxiliary belongs to
   those who had been with Jesus, and the second to their mourning.
 - In 16:11 the feminine plural saying, recipient, and object forms are
   retained as the reporting women; no individual women are identified
   beyond what the source states. In 16:13 the additive negative is
   rendered "did not believe them either".
-- In 16:15 "my tidings" is explicit. In 16:16 the living and condemnation
+- In 16:15 "my good news" is explicit. In 16:16 the living and condemnation
   predicates retain the source's present formulation.
 - In 16:19 and 16:20 "our Lord" retains its first-person possessive.
   In 16:20 the Lord was helping and confirming their words; the signs
