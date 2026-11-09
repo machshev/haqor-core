@@ -1795,6 +1795,77 @@
           "reason": "Al yad, literally at the hand of, is the spatial beside idiom; yad is not a person's literal hand here."
         }
       ]
+    },
+    "41:11": {
+      "sha256": "f066f222169e730e1fcd17d29796b1dbab4d9dab773d826eb63413ecaba25ced",
+      "original_shared_spans": 119,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 1,
+          "english": "near",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Al genb, literally at the side of, is the compound spatial expression near the named places; genb does not name a physical body part here."
+        },
+        {
+          "verse": 2,
+          "english": "and immediately",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "W-bar shateh, literally and son of the hour, is the fixed immediate-time idiom."
+        },
+        {
+          "verse": 13,
+          "english": "except",
+          "positions": [
+            19,
+            20
+          ],
+          "reason": "Ella en is the compound exceptive connective; en does not open a new conditional here."
+        },
+        {
+          "verse": 20,
+          "english": "withered",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Kad plus the dry-state adjective introduces the fig tree's observed circumstantial state, rendered as English attributive withered; translating kad as an independent temporal while would obscure the tree as the adjective's subject."
+        },
+        {
+          "verse": 23,
+          "english": "will have",
+          "positions": [
+            21,
+            22
+          ],
+          "reason": "Future hwa plus anaphoric possessive dative leh, literally it will be to him, forms the possession predicate whose English subject is the preceding whoever clause."
+        },
+        {
+          "verse": 30,
+          "english": "people",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Bnay nasha, literally sons of mankind, is the generic human-being idiom, not a statement about parentage."
+        },
+        {
+          "verse": 32,
+          "english": "people",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Bnay nasha, literally sons of mankind, is the generic human-being idiom in the repeated answer, not a statement about parentage."
+        }
+      ]
     }
   }
 }

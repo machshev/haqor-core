@@ -733,14 +733,36 @@ Source checks for Mark 10:
 
 Source checks for Mark 11:
 
-- In 11:2 the final word includes the command to bring the colt. In 11:3
-  the title is "Our Lord", and "immediately" belongs to sending it here.
-- In 11:6 the plural pronoun is the object of commanding: Jesus commanded
-  them. In 11:22 the possession construction expresses having faith in God.
-- In 11:23 both predicates are retained: believing that what is said will
-  happen, and having whatever is said. The mountain command ends at the sea.
+- The chapter's 119 original shared spans were checked against source
+  forms, morphology, and context. Seven remain: the near and immediate-time
+  idioms, the compound exceptive, the observed withered state, an anaphoric
+  possession predicate, and two occurrences of the human-being idiom.
+  The ledger records a specific reason for each.
+- In 11:1 the approach verb is singular. In 11:2 the final word includes
+  the command to bring the colt. In 11:3 the title is "our Lord", and
+  "immediately" belongs to sending it here. In 11:6 the plural pronoun is
+  the object of commanding: Jesus commanded them. Jesus himself rides
+  the colt in 11:7; the source does not say that others seated him.
+- In 11:9-10 the copular pronouns retain their links, the kingdom belongs
+  to "our father David", and the final phrase is "in the heights" without
+  adding a separate heavens noun. In 11:11 the evening-time noun and
+  its modifier remain separate.
+- In 11:13 the tree's leaves and the season of figs remain distinct;
+  the negative finding clause retains its exceptive, and both hwa forms
+  contribute to "had not come" in the seasonal clause. In 11:16 the
+  carried vessels are plural. In 11:15-17 buying and selling, the prayer-house
+  nouns, and the den and robbers retain separate links. In 11:20 kad
+  introduces the tree's observed withered state, not the observers' state.
+- In 11:22 "Let faith in God be in you" retains the separate predicate,
+  faith noun, and in-you phrase. In 11:23 both predicates are retained:
+  believing that what is said will happen, and having whatever is said.
+  The mountain command ends at the sea. In 11:24 the receiving predicate
+  and the future possession consequence remain distinct.
 - In 11:25 the grievance is something the hearers have against someone.
   The negative conditional and its consequence in 11:26 remain in full.
+  In 11:30 the question is "From where is John's immersion?"; the suffix
+  on immersion refers to John. In 11:32 the people hold John to be a
+  prophet, while the questioners express fear of the people.
 
 Source checks for Mark 12:
 
