@@ -2128,6 +2128,13 @@ Source checks for Luke 22:
 
 Source checks for Luke 23:
 
+- The chapter's 199 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Eleven remain:
+  two accusation idioms, the prohibition with its negative payment
+  complement, two prison designations, the curtain expression, and five
+  repeated references. Their exact positions and linguistic reasons are
+  in the ledger. Ordinary negatives, auxiliaries, modifiers, and clause
+  constituents have separate source owners.
 - In 23:2 the accusation concerns our people, head-tax money for Caesar,
   and the claim to be king Messiah. The English forbidding construction
   absorbs the source negative without reversing the tax accusation.
@@ -2159,6 +2166,8 @@ Source checks for Luke 23:
   his garments are divided, and a lot is cast over them. The perfect
   with its auxiliary is rendered as simple past, as also corrected
   in 21:29; see [Younansardaroud, section 11.6](https://d-nb.info/1184881278/34#page=107).
+  The separate auxiliary and speech verb have separate English owners
+  in did say; no prior saying is introduced by a past-perfect rendering.
 - In 23:35-37 the people watch while rulers and soldiers mock him;
   the saving verbs preserve their respective objects and reflexives.
   In 23:38 the inscription is above him in Greek, Latin, and Hebrew,
@@ -2167,6 +2176,9 @@ Source checks for Luke 23:
 - In 23:41 just punishment, deserved recompense, and the other man's
   innocence remain distinct. The passive participle with the l-dative
   permits the active perfect he has done; see [Younansardaroud, section 11.5](https://d-nb.info/1184881278/34#page=107).
+  The demonstrative subject and agent dative identify the same man,
+  rather than an act being done to him. In 23:40 the resumed in-it phrase
+  and explicit in-judgment phrase identify the same sentence.
   In 23:42 the address is my Lord, and the kingdom is yours. In 23:43
   today's promise places the addressee with Jesus in paradise.
 - In 23:44 the darkness lasts from about the sixth to the ninth hour.
@@ -2179,7 +2191,11 @@ Source checks for Luke 23:
   is good and righteous. In 23:51 he had not agreed to their decision
   and deed and was awaiting God's kingdom. In 23:53 the body is put
   in a hewn tomb where no one had yet been laid. In 23:55 the women
-  see how his body is placed. In 23:56 spices and ointments remain
+  were nearby and see how his body is placed; his is explicit.
+  In 23:53 the ordinary burial-chamber nouns are separately linked,
+  while the demonstrative, relative prefix, and resumed locative
+  identify the same chamber in English which.
+  In 23:56 spices and ointments remain
   distinct, followed by Sabbath rest as commanded.
 
 Source checks for Luke 24:
