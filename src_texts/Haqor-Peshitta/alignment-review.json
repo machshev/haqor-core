@@ -1866,6 +1866,105 @@
           "reason": "Bnay nasha, literally sons of mankind, is the generic human-being idiom in the repeated answer, not a statement about parentage."
         }
       ]
+    },
+    "41:12": {
+      "sha256": "0b70a7a9fa839b05b9dc342436ebb1383dea1c71f3019f5bf67fb61bd1656cea",
+      "original_shared_spans": 151,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 3,
+          "english": "empty-handed",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Kad plus spiq expresses the sent servant's empty state, rendered as English empty-handed; an independent while could wrongly attach the state to those sending him. Spiq here is empty, not sufficient.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=spyq+A"
+        },
+        {
+          "verse": 6,
+          "english": "had",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "Existential ith plus past auxiliary hwa forms the past possession predicate; the separate dative leh at position 7 owns English he."
+        },
+        {
+          "verse": 11,
+          "english": "from",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Men lwath is the compound source preposition from, literally from the presence/side of; lwath does not introduce a second destination here."
+        },
+        {
+          "verse": 14,
+          "english": "show partiality toward",
+          "positions": [
+            16,
+            18
+          ],
+          "reason": "Looking at faces is the partiality idiom; rendering it as literal facial observation would obscure the statement about treating people impartially. The two words jointly supply the predicate and its toward relation."
+        },
+        {
+          "verse": 14,
+          "english": "people",
+          "positions": [
+            19,
+            20
+          ],
+          "reason": "Bnay nasha, literally sons of mankind, is the generic human-being idiom rather than a claim about parentage."
+        },
+        {
+          "verse": 36,
+          "english": "Sit",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "The imperative sit with its subject-coreferential ethical dative lakh is one command to sit; the dative introduces no additional beneficiary."
+        },
+        {
+          "verse": 41,
+          "english": "the treasury",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Beth gaza, literally house of treasure, is the treasury compound naming the repository, not two separate objects."
+        },
+        {
+          "verse": 41,
+          "english": "into the treasury",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "Beth gaza is the treasury compound in the destination phrase for casting money, with the locative relation expressed as English into."
+        },
+        {
+          "verse": 43,
+          "english": "into the treasury",
+          "positions": [
+            18,
+            19
+          ],
+          "reason": "Beth gaza is the same treasury compound in the repeated destination phrase for the contributions."
+        },
+        {
+          "verse": 44,
+          "english": "had",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "Relative existential d-ith plus past auxiliary hwa forms the past possession predicate; the dative lah at position 15 owns English she, and the relative is implicit in English everything she had."
+        }
+      ]
     }
   }
 }

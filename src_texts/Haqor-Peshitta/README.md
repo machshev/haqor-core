@@ -766,19 +766,44 @@ Source checks for Mark 11:
 
 Source checks for Mark 12:
 
+- The chapter's 151 original shared spans were checked against exact
+  forms, morphology, and context. Ten remain: the servant's empty state,
+  two past possession predicates, the compound from preposition, the
+  partiality and human-being idioms, the sit command with its ethical
+  dative, and three treasury compounds. Each has a reason in the ledger.
+- In 12:1 the opening parables noun is plural. "Leased it" is supported
+  by Aphel ahed, "to let out", in the vineyard context; see
+  [Brock and Kiraz's entry](https://sedra.bethmardutho.org/lexeme/get/71).
+  In 12:3 spiq means empty, rather than sufficient: [CAL cites this verse](https://cal.huc.edu/oneentry.php?cits=all&lemma=spyq+A).
+  The servant is sent away empty-handed; the state does not describe
+  the senders. In 12:6 the dative belongs to the owner's past possession.
+- In 12:10 the stone and its becoming the head of the corner remain
+  distinct. In 12:11 "this was from the Lord" is past, while "it is a
+  wonder in our eyes" retains the present existential and our-eyes suffix.
 - In 12:13 the source names scribes and the household of Herod; no
-  different group is substituted from another textual tradition.
+  different group is substituted from another textual tradition. In
+  12:14 the negative care-taking and partiality predicates remain distinct,
+  with both alternatives in the tax question. In 12:16 the plural pronoun
+  belongs to the people replying, rather than to the inscription.
 - In 12:19 the surviving brother is the subject of taking the wife.
   In 12:24 Jesus addresses them; in 12:29 he addresses the individual scribe.
+  In 12:25 women being married to men is distinct from taking wives.
+  The negative nominal clauses retain their present meaning in context.
 - Both 12:30 and 12:33 retain heart, soul, mind, and strength, in their
-  respective source orders.
+  respective source orders. In 12:31 "like it" refers to the first
+  commandment. In 12:36 "my right" belongs to the speaker, while enemies
+  and feet belong to the addressee; the command's ethical dative adds no
+  separate beneficiary. In 12:38-40 the desired seats and couches remain
+  distinct, and those devouring widows' houses receive greater judgment.
 - In 12:42 the two coins are explicitly explained as small coins. The
   rendering keeps that explanation without assigning a specific value;
   compare the broader weight/value gloss in
   [Brock and Kiraz's entry for manya](https://sedra.bethmardutho.org/lexeme/get/1803).
-- In 12:41 the past auxiliary belongs with casting. In 12:44 it belongs
-  with what the widow had; the feminine demonstrative begins the contrast
-  with the other contributors, and her entire property is retained.
+- In 12:41 the watching auxiliary and the rich contributors' casting
+  auxiliary retain their separate owners. In 12:44 the past auxiliary
+  belongs with what the widow had; the feminine demonstrative begins
+  the contrast with the other contributors, and her entire property is
+  retained.
 
 Source checks for Mark 13:
 
