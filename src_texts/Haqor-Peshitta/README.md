@@ -1638,6 +1638,12 @@ Source checks for Luke 14:
 
 Source checks for Luke 15:
 
+- The chapter's 115 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Six remain: four
+  possession constructions, the temporal preposition "after", and the
+  citizen designation. Their exact positions and linguistic reasons
+  are in the ledger. Ordinary negatives, auxiliaries, modifiers, noun
+  phrases, names, and clause constituents have separate source owners.
 - In 15:1 the approach is ongoing. In 15:2 scribes precede Pharisees,
   and the murmuring has a past auxiliary; the demonstrative identifies
   the one receiving sinners, rather than making a sinner the subject.
@@ -1648,10 +1654,19 @@ Source checks for Luke 15:
   righteous people who need no repentance. In 15:8 the woman has ten
   coins, lights a lamp, sweeps, and searches carefully. In 15:9 her friends
   and neighbors are grammatically feminine; 15:10 names the angels of God.
+- In 15:4 and 15:8 the existential and possessor dative jointly express
+  "has"; the relative prefixes separately own "who". In 15:7 the single
+  comparison particle owns the separated English "more" and "than";
+  repentance, its negative requirement, and the righteous participants
+  retain their own source words.
 - In 15:11 Jesus speaks to them again. In 15:12 the portion comes
   "from your house", and the father divides his property among them.
   In 15:13 the younger son is the subject gathering what fell to him,
   not an object gathered by someone else.
+- In 15:11 the past-possession construction includes the resumed dative,
+  since the fronted man already supplies the possessor. In 15:14 the
+  possessor is separately linked as "he". In 15:13 "after" is men batar,
+  with the conjunction separate; "son of his" retains the son's suffix.
 - In 15:15 the sons-of-the-city expression means citizens; the employer
   sends the son to tend pigs; "the latter" clarifies that subject change.
   In 15:16 the food is carob pods; the longing, pigs' eating, and
@@ -1660,6 +1675,10 @@ Source checks for Luke 15:
   In 15:19 he says "no longer worthy"; in 15:21 he says "not worthy"
   without repeating the petition to become a hired servant. In 15:20
   the father sees him, has compassion on him, runs, embraces, and kisses him.
+- In 15:15 English "attached himself" keeps the attachment verb and
+  its coreferential dative separate through ordinary reflexive valency.
+  In 15:20 "fell upon his neck" keeps the embracing expression's
+  verb, preposition, and possessed neck separate.
 - In 15:22 the robe is the best; no quickly adverb is supplied. In 15:23,
   15:27, and 15:30 the animal is a fattened ox. In 15:25 the elder son
   hears many singing, with no dancing term in this source.
@@ -1668,6 +1687,10 @@ Source checks for Luke 15:
   with his father; the second says everything the father owns is the son's.
   In 15:32 the vocalized suitability predicate means it was right for
   them to rejoice, rather than being a negation.
+- In 15:29 the two never claims are "not ever" and "not at any time",
+  keeping their negatives and temporal expressions separately linked.
+  In 15:31 the repeated subject pronoun supplies the English copula,
+  while the two ownership forms separately express "of mine" and "yours".
 
 Source checks for Luke 16:
 
