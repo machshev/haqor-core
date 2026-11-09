@@ -1,0 +1,1119 @@
+{
+  "id": "shabat",
+  "root": "שבת",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "rest",
+    "time",
+    "worship",
+    "covenant",
+    "land"
+  ],
+  "gloss": "cease, stop; rest; ceasing, Sabbath",
+  "summary": "שָׁבַת is to cease: what was going on stops (day and night, the manna, joy), and someone stops from work, as God ceased on the seventh day from all the work he had made (Gen 2:2–3). The hiphil makes something cease, puts it away or lets it be lacking. שַׁבָּת is the ceasing itself, first the seventh day on which Israel ceases from work, which Yahweh gives as a sign between him and them (Exo 31:13), then the Day of Atonement, the land’s seventh year, and a week counted to a ceasing; שַׁבָּתוֹן is a complete ceasing, which names other feast days too. Punic and Arabic share the verb “come to an end, make cease”, and the New Testament takes the noun over into Greek as σάββατον, for the day and for the week.",
+  "words": [
+    {
+      "lemma": "שַׁבָּת",
+      "pos": "noun",
+      "gender": "mf",
+      "gloss": "ceasing, rest; the Sabbath; a week",
+      "bdb": [
+        "v.az.ac"
+      ],
+      "cognate_ids": [
+        "ar-sabata"
+      ],
+      "senses": [
+        {
+          "id": "seventh-day",
+          "gloss": "the ceasing of the seventh day, Sabbath",
+          "definition": "The seventh day, on which Israel ceases from all work because God ceased from his on the seventh day; holy to Yahweh, the first of his appointed times, and a sign between him and Israel.",
+          "evidence": [
+            {
+              "ref": "Exo.16.23",
+              "role": "defining",
+              "note": "First named with the manna: “Tomorrow is a שַׁבָּתוֹן, a holy שַׁבָּת to Yahweh.”"
+            },
+            {
+              "ref": "Exo.16.26",
+              "role": "defining",
+              "note": "Six days you gather, but on the seventh day, the שַׁבָּת, there will be none."
+            },
+            {
+              "ref": "Exo.20.10",
+              "role": "defining",
+              "note": "The seventh day is a שַׁבָּת to Yahweh: you shall not do any work."
+            },
+            {
+              "ref": "Exo.20.11",
+              "role": "defining",
+              "note": "Grounded in creation: Yahweh rested on the seventh day, so he blessed the day of the שַׁבָּת."
+            },
+            {
+              "ref": "Exo.31.13",
+              "role": "defining",
+              "note": "“My שַׁבְּתֹת you shall keep, for it is a sign between me and you.”"
+            },
+            {
+              "ref": "Exo.31.15"
+            },
+            {
+              "ref": "Deu.5.14",
+              "note": "So that your servant may rest as well as you."
+            },
+            {
+              "ref": "Deu.5.15",
+              "note": "Grounded in the slavery in Egypt and the bringing out."
+            },
+            {
+              "ref": "Lev.23.3",
+              "role": "defining",
+              "note": "The first of Yahweh’s appointed times: six days work, the seventh a שַׁבַּת שַׁבָּתוֹן, a holy assembly."
+            },
+            {
+              "ref": "Lev.23.38",
+              "note": "The feasts’ offerings are “besides the שַׁבְּתֹת of Yahweh”."
+            },
+            {
+              "ref": "Num.15.32",
+              "note": "A man gathering wood on the day of the שַׁבָּת."
+            },
+            {
+              "ref": "Isa.56.2"
+            },
+            {
+              "ref": "Isa.58.13",
+              "note": "Call the שַׁבָּת a delight, not going your own ways."
+            },
+            {
+              "ref": "Jer.17.22"
+            },
+            {
+              "ref": "Ezk.20.12",
+              "note": "“My שַׁבְּתוֹת I gave them to be a sign between me and them.”"
+            },
+            {
+              "ref": "Neh.13.15"
+            },
+            {
+              "ref": "Psa.92.1",
+              "note": "A song for the day of the שַׁבָּת."
+            }
+          ],
+          "cognate_ids": [
+            "arc-shabbeta"
+          ]
+        },
+        {
+          "gloss": "the Day of Atonement, as a ceasing",
+          "definition": "The tenth day of the seventh month, יוֹם הַכִּפֻּרִים, on which Israel humbles itself and does no work, is called a שַׁבַּת שַׁבָּתוֹן.",
+          "evidence": [
+            {
+              "ref": "Lev.16.31",
+              "role": "defining",
+              "note": "It is a שַׁבַּת שַׁבָּתוֹן to you, and you shall humble your souls."
+            },
+            {
+              "ref": "Lev.23.32",
+              "role": "defining",
+              "note": "From evening to evening “you shall cease your ceasing”, תִּשְׁבְּתוּ שַׁבַּתְּכֶם."
+            }
+          ]
+        },
+        {
+          "id": "land-sabbath",
+          "gloss": "the land’s ceasing, the seventh year",
+          "definition": "The seventh year, in which the land is not sown or pruned and keeps a ceasing to Yahweh; what grows of itself in it is food for all.",
+          "evidence": [
+            {
+              "ref": "Lev.25.2",
+              "role": "defining",
+              "note": "The land shall cease, a שַׁבָּת to Yahweh."
+            },
+            {
+              "ref": "Lev.25.4",
+              "role": "defining",
+              "note": "In the seventh year a שַׁבַּת שַׁבָּתוֹן for the land: you shall not sow your field."
+            },
+            {
+              "ref": "Lev.25.6",
+              "note": "“The שַׁבָּת of the land” is food for you, your servants, the sojourner and the beasts: its produce."
+            },
+            {
+              "ref": "Lev.26.34",
+              "role": "defining",
+              "note": "If Israel will not keep them, the land will enjoy its שַׁבְּתֹתֶיהָ while they are in exile."
+            },
+            {
+              "ref": "Lev.26.35"
+            },
+            {
+              "ref": "Lev.26.43"
+            },
+            {
+              "ref": "2Ch.36.21",
+              "note": "The land enjoyed its sabbaths for seventy years, as Jeremiah had said."
+            }
+          ]
+        },
+        {
+          "id": "week",
+          "gloss": "a week, seven days counted to a ceasing",
+          "definition": "A span of seven days ending in a שַׁבָּת, counted as one unit; and in the plural, seven-year spans counted the same way.",
+          "evidence": [
+            {
+              "ref": "Lev.23.15",
+              "role": "defining",
+              "note": "From the day the עֹמֶר is brought, count seven שַׁבָּתוֹת, complete; Deu 16:9 counts the same span as seven שָׁבֻעֹת, “weeks”."
+            },
+            {
+              "ref": "Lev.23.16",
+              "role": "defining",
+              "note": "To the morrow after the seventh שַׁבָּת you count fifty days."
+            },
+            {
+              "ref": "Deu.16.9",
+              "note": "The parallel count: seven שָׁבֻעֹת from the sickle’s first cut."
+            },
+            {
+              "ref": "Lev.25.8",
+              "role": "defining",
+              "note": "Seven שַׁבְּתֹת of years, seven times seven years."
+            }
+          ],
+          "kin": [
+            "syc-week"
+          ],
+          "cognate_ids": [
+            "arc-shabbeta"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σάββατον",
+          "gloss": "the Sabbath; a week",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. σάββατον",
+              "note": "From Aramaic שַׁבָּתָא, transliterated σάββατα, which was taken for a plural and given the singular σάββατον."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.20.8, שַׁבָּת → σαββάτων"
+            },
+            {
+              "ref": "Mrk.2.27",
+              "role": "defining",
+              "note": "“The σάββατον was made for man, not man for the σάββατον.”"
+            },
+            {
+              "ref": "Mat.12.8",
+              "note": "The Son of Man is lord of the σάββατον."
+            },
+            {
+              "ref": "Luk.4.16",
+              "note": "Jesus goes into the synagogue on the day of the σάββατα, as his custom was."
+            },
+            {
+              "ref": "Luk.13.16",
+              "note": "A daughter of Abraham bound eighteen years is loosed on the day of the σάββατον."
+            },
+            {
+              "ref": "Jhn.7.23"
+            },
+            {
+              "ref": "Col.2.16"
+            },
+            {
+              "ref": "Luk.18.12",
+              "role": "defining",
+              "note": "“I fast twice τοῦ σαββάτου”: in the week."
+            },
+            {
+              "ref": "Mat.28.1",
+              "note": "After the σάββατα, at the dawning of the first of the σάββατα: the first day of the week."
+            },
+            {
+              "ref": "Act.20.7"
+            },
+            {
+              "ref": "1Co.16.2"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מְלָאכָה",
+            "note": "Six days of work are set against the seventh, the שַׁבָּת, on which no work is done.",
+            "evidence": [
+              {
+                "ref": "Exo.20.9",
+                "to": "Exo.20.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.31.15"
+              },
+              {
+                "ref": "Lev.23.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יוֹם הַשַּׁבָּת",
+            "gloss": "the day of the ceasing, the Sabbath day",
+            "evidence": [
+              {
+                "ref": "Exo.20.8"
+              },
+              {
+                "ref": "Exo.20.11"
+              },
+              {
+                "ref": "Deu.5.12"
+              }
+            ]
+          },
+          {
+            "phrase": "שַׁבַּת שַׁבָּתוֹן",
+            "gloss": "a ceasing of complete ceasing",
+            "evidence": [
+              {
+                "ref": "Exo.31.15"
+              },
+              {
+                "ref": "Exo.35.2"
+              },
+              {
+                "ref": "Lev.16.31"
+              },
+              {
+                "ref": "Lev.23.3"
+              },
+              {
+                "ref": "Lev.23.32"
+              },
+              {
+                "ref": "Lev.25.4"
+              }
+            ]
+          },
+          {
+            "phrase": "מִמָּחֳרַת הַשַּׁבָּת",
+            "gloss": "on the morrow after the ceasing",
+            "evidence": [
+              {
+                "ref": "Lev.23.11",
+                "note": "The day the priest waves the עֹמֶר."
+              },
+              {
+                "ref": "Lev.23.15",
+                "note": "The day the count of seven שַׁבָּתוֹת begins."
+              },
+              {
+                "ref": "Lev.23.16"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שָׁבַת",
+      "pos": "verb",
+      "gloss": "cease, stop; rest; make cease",
+      "bdb": [
+        "v.az.aa"
+      ],
+      "cognate_ids": [
+        "ar-sabata"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cease, stop; rest from work",
+          "senses": [
+            {
+              "gloss": "cease, come to an end",
+              "definition": "Of something going on, stop and be no more.",
+              "evidence": [
+                {
+                  "ref": "Gen.8.22",
+                  "role": "defining",
+                  "note": "Seedtime and harvest, cold and heat, day and night shall not cease."
+                },
+                {
+                  "ref": "Jos.5.12",
+                  "role": "defining",
+                  "note": "The manna ceased the day after they ate the land’s produce."
+                },
+                {
+                  "ref": "Isa.14.4",
+                  "note": "How the oppressor has ceased!"
+                },
+                {
+                  "ref": "Lam.5.15",
+                  "note": "The joy of our heart has ceased."
+                },
+                {
+                  "ref": "Pro.22.10"
+                }
+              ],
+              "cognate_ids": [
+                "phn-sbt",
+                "uga-sbt"
+              ]
+            },
+            {
+              "id": "cease-from-work",
+              "gloss": "cease from work, rest",
+              "definition": "Stop from one’s work or from doing something, with מִן of what is left off; above all God ceasing on the seventh day, and Israel and its beasts on the seventh day after him.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.2",
+                  "role": "defining",
+                  "note": "God finished his work, and ceased on the seventh day from all his work."
+                },
+                {
+                  "ref": "Gen.2.3",
+                  "role": "defining",
+                  "note": "He blessed the seventh day, because in it he ceased from all his work."
+                },
+                {
+                  "ref": "Exo.31.17",
+                  "role": "defining",
+                  "note": "On the seventh day he ceased, וַיִּנָּפַשׁ, and was refreshed."
+                },
+                {
+                  "ref": "Exo.16.30",
+                  "note": "The people ceased on the seventh day."
+                },
+                {
+                  "ref": "Exo.23.12",
+                  "role": "defining",
+                  "note": "On the seventh day you shall cease, so that your ox and donkey may rest (יָנוּחַ)."
+                },
+                {
+                  "ref": "Exo.34.21",
+                  "note": "Even in ploughing and harvest you shall cease."
+                },
+                {
+                  "ref": "Job.32.1",
+                  "note": "The three men ceased from answering Job."
+                }
+              ],
+              "cognate_ids": [
+                "arc-shebat"
+              ]
+            },
+            {
+              "gloss": "of the land, lie at rest",
+              "definition": "Of the land, be left unsown and unworked in its seventh year, or during the exile.",
+              "evidence": [
+                {
+                  "ref": "Lev.25.2",
+                  "role": "defining",
+                  "note": "The land shall cease, a שַׁבָּת to Yahweh."
+                },
+                {
+                  "ref": "Lev.26.34"
+                },
+                {
+                  "ref": "Lev.26.35",
+                  "note": "All the days of its desolation it will cease, the ceasing it did not have in your sabbaths."
+                },
+                {
+                  "ref": "2Ch.36.21"
+                }
+              ],
+              "kin": [
+                "land-sabbath"
+              ]
+            },
+            {
+              "gloss": "keep a ceasing",
+              "definition": "Observe a שַׁבָּת by ceasing, with the noun as object.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.32",
+                  "role": "defining",
+                  "note": "On the Day of Atonement, from evening to evening, תִּשְׁבְּתוּ שַׁבַּתְּכֶם."
+                }
+              ],
+              "kin": [
+                "seventh-day"
+              ],
+              "cognate_ids": [
+                "arc-shebat"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be brought to an end",
+          "senses": [
+            {
+              "gloss": "be brought to an end, cease",
+              "definition": "Of strength, idols or a kingdom, be made to cease, in Yahweh’s judgment.",
+              "evidence": [
+                {
+                  "ref": "Isa.17.3",
+                  "role": "defining",
+                  "note": "The fortress will cease from Ephraim."
+                },
+                {
+                  "ref": "Ezk.6.6",
+                  "role": "defining",
+                  "note": "Your idols will be broken and come to an end."
+                },
+                {
+                  "ref": "Ezk.30.18"
+                },
+                {
+                  "ref": "Ezk.33.28"
+                }
+              ],
+              "cognate_ids": [
+                "phn-sbt"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make cease, put an end to; put away; let be lacking",
+          "senses": [
+            {
+              "gloss": "make cease, put an end to",
+              "definition": "Bring something going on to an end: joy, war, pride, sacrifice, or a people.",
+              "evidence": [
+                {
+                  "ref": "Psa.46.10",
+                  "role": "defining",
+                  "note": "He makes wars cease to the end of the earth."
+                },
+                {
+                  "ref": "Isa.13.11",
+                  "role": "defining",
+                  "note": "I will make the pride of the arrogant cease."
+                },
+                {
+                  "ref": "Jer.16.9",
+                  "note": "The voice of joy and the voice of the bridegroom made to cease."
+                },
+                {
+                  "ref": "Hos.2.13",
+                  "note": "Her feast, her new moon and her שַׁבָּת made to cease."
+                },
+                {
+                  "ref": "Neh.4.5",
+                  "note": "We will kill them and make the work cease."
+                },
+                {
+                  "ref": "Dan.9.27",
+                  "note": "In the middle of the seven he will make sacrifice and offering cease."
+                },
+                {
+                  "ref": "Exo.5.5",
+                  "note": "Pharaoh: you make them cease from their burdens."
+                }
+              ],
+              "cognate_ids": [
+                "phn-sbt"
+              ]
+            },
+            {
+              "gloss": "put away, remove",
+              "definition": "Make something no longer be in a place: leaven from the house, beasts from the land, idolatrous priests.",
+              "evidence": [
+                {
+                  "ref": "Exo.12.15",
+                  "role": "defining",
+                  "note": "On the first day you shall put away leaven from your houses."
+                },
+                {
+                  "ref": "Lev.26.6",
+                  "role": "defining",
+                  "note": "I will remove harmful beasts from the land."
+                },
+                {
+                  "ref": "2Ki.23.5"
+                },
+                {
+                  "ref": "Ezk.34.25"
+                }
+              ],
+              "cognate_ids": [
+                "phn-sbt"
+              ]
+            },
+            {
+              "gloss": "let be lacking",
+              "definition": "With a negative, not let something be missing.",
+              "evidence": [
+                {
+                  "ref": "Lev.2.13",
+                  "role": "defining",
+                  "note": "You shall not let the salt of your God’s covenant be lacking from your grain offering."
+                },
+                {
+                  "ref": "Rut.4.14",
+                  "role": "defining",
+                  "note": "Yahweh has not left you without a redeemer today."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καταπαύω",
+          "gloss": "cease, rest; cause to rest",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.2, וַיִּשְׁבֹּת → κατέπαυσεν"
+            },
+            {
+              "ref": "Heb.4.4",
+              "note": "Quotes Gen 2:2: God ceased on the seventh day from all his works."
+            },
+            {
+              "ref": "Heb.4.10",
+              "note": "Whoever has entered his rest has ceased from his works, as God did from his."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נוּחַ",
+            "note": "The commandment retells Gen 2:2’s וַיִּשְׁבֹּת as וַיָּנַח, “and he rested”; Exo 23:12 sets Israel’s ceasing beside the beasts’ resting.",
+            "evidence": [
+              {
+                "ref": "Exo.20.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.23.12"
+              }
+            ]
+          },
+          {
+            "lemma": "נָפַשׁ",
+            "note": "God ceased and was refreshed.",
+            "evidence": [
+              {
+                "ref": "Exo.31.17",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "כָּלָה",
+            "note": "God finished his work and ceased from it.",
+            "evidence": [
+              {
+                "ref": "Gen.2.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שַׁבָּתוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "complete ceasing, a day of ceasing",
+      "bdb": [
+        "v.az.ae"
+      ],
+      "cognate_ids": [
+        "ar-sabata"
+      ],
+      "summary": "Formed from שַׁבָּת with the ending ־וֹן. Beside שַׁבָּת it makes the phrase שַׁבַּת שַׁבָּתוֹן, a ceasing of complete ceasing; alone it names other days of ceasing.",
+      "senses": [
+        {
+          "gloss": "complete ceasing, in שַׁבַּת שַׁבָּתוֹן",
+          "definition": "Strengthens שַׁבָּת: the seventh day, the Day of Atonement and the land’s seventh year are each a שַׁבַּת שַׁבָּתוֹן.",
+          "evidence": [
+            {
+              "ref": "Exo.31.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.23.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.23.32"
+            },
+            {
+              "ref": "Lev.16.31"
+            },
+            {
+              "ref": "Lev.25.4"
+            },
+            {
+              "ref": "Exo.35.2"
+            }
+          ],
+          "kin": [
+            "seventh-day"
+          ]
+        },
+        {
+          "gloss": "a day or year of ceasing",
+          "definition": "On its own, a time of ceasing from work: the first day of the seventh month, the first and eighth days of חַג הַסֻּכּוֹת, and the land’s seventh year.",
+          "evidence": [
+            {
+              "ref": "Exo.16.23",
+              "role": "defining",
+              "note": "“Tomorrow is a שַׁבָּתוֹן, a holy שַׁבָּת to Yahweh.”"
+            },
+            {
+              "ref": "Lev.23.24",
+              "role": "defining",
+              "note": "The first day of the seventh month is a שַׁבָּתוֹן, a memorial of blowing, a holy assembly."
+            },
+            {
+              "ref": "Lev.23.39",
+              "role": "defining",
+              "note": "The first day of the feast is a שַׁבָּתוֹן, and the eighth day is a שַׁבָּתוֹן."
+            },
+            {
+              "ref": "Lev.25.5",
+              "note": "A year of שַׁבָּתוֹן for the land."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׁבֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "ceasing, idleness",
+      "bdb": [
+        "v.az.ab"
+      ],
+      "cognate_ids": [
+        "ar-sabata"
+      ],
+      "summary": "A ceasing or sitting idle, in three verses. The same spelling is the infinitive of יָשַׁב “sit, dwell”, and two of the five tokens counted under this BDB key are that word, “seat” (Amo 6:3) and “dwelling” (Oba 1:3), not this one. In Exo 21:19 and Isa 30:7 “sitting” would also make sense, so only Pro 20:3, where it takes מִן as the verb does, fixes it as a ceasing.",
+      "senses": [
+        {
+          "gloss": "ceasing, keeping away",
+          "definition": "Leaving off from something, or the time lost by ceasing from work.",
+          "evidence": [
+            {
+              "ref": "Pro.20.3",
+              "role": "defining",
+              "note": "It is an honour for a man to cease from strife, שֶׁבֶת מֵרִיב; every fool breaks out."
+            },
+            {
+              "ref": "Exo.21.19",
+              "note": "The one who struck him pays for his שִׁבְתּוֹ, the time he is kept from work, and his healing."
+            },
+            {
+              "ref": "Isa.30.7",
+              "note": "Egypt’s help is empty: “Rahab, they are שָׁבֶת”, a sitting still."
+            }
+          ],
+          "kin": [
+            "cease-from-work"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁבָּת",
+      "pos": "noun",
+      "gloss": "ceasing, end",
+      "bdb": [
+        "v.az.ag"
+      ],
+      "cognate_ids": [
+        "ar-sabata"
+      ],
+      "summary": "A noun with prefixed מ, in its one use.",
+      "senses": [
+        {
+          "gloss": "ceasing, ruin",
+          "definition": "Jerusalem’s coming to an end, at which her adversaries laugh.",
+          "evidence": [
+            {
+              "ref": "Lam.1.7",
+              "role": "defining",
+              "note": "The adversaries saw her and laughed at her מִשְׁבַּתֶּהָ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁבְּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "the Sabbath; a week",
+      "cognate_ids": [
+        "ar-sabata"
+      ],
+      "summary": "The Peshitta’s word for the Sabbath, also in the shortened form שַׁבָּא; it counts the days of the week from it, as the Greek counts them from the σάββατα.",
+      "senses": [
+        {
+          "gloss": "the Sabbath",
+          "definition": "The seventh day of ceasing.",
+          "evidence": [
+            {
+              "ref": "Mat.12.8",
+              "role": "defining",
+              "note": "The Son of Man is lord of the שַׁבְּתָא."
+            },
+            {
+              "ref": "Luk.13.16",
+              "role": "defining",
+              "note": "This daughter of Abraham loosed on the day of the שַׁבְּתָא."
+            },
+            {
+              "ref": "Heb.4.4",
+              "note": "Of the שַׁבְּתָא it is said that God rested on the seventh day."
+            },
+            {
+              "ref": "Col.2.16"
+            }
+          ],
+          "kin": [
+            "seventh-day"
+          ],
+          "cognate_ids": [
+            "arc-shabbeta"
+          ]
+        },
+        {
+          "id": "syc-week",
+          "gloss": "a week",
+          "definition": "The seven days counted to the Sabbath; “one in the שַׁבָּא” is the first day of the week.",
+          "evidence": [
+            {
+              "ref": "Luk.18.12",
+              "role": "defining",
+              "note": "I fast twice in the שַׁבְּתָא."
+            },
+            {
+              "ref": "1Co.16.2",
+              "role": "defining",
+              "note": "On every first day of the שַׁבָּא."
+            },
+            {
+              "ref": "Mat.28.1"
+            },
+            {
+              "ref": "Act.20.7"
+            }
+          ],
+          "kin": [
+            "week"
+          ],
+          "cognate_ids": [
+            "arc-shabbeta"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁבֵּת",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "keep a ceasing, rest",
+      "cognate_ids": [
+        "ar-sabata",
+        "arc-shebat"
+      ],
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "keep a ceasing, rest",
+          "senses": [
+            {
+              "gloss": "keep a ceasing",
+              "definition": "Rest from one’s works as God did, in the Peshitta’s one use, the infinitive.",
+              "evidence": [
+                {
+                  "ref": "Heb.4.9",
+                  "role": "defining",
+                  "note": "It remains for the people of God לְמַשְׁבָּתוּ, to keep a ceasing (Greek σαββατισμός)."
+                }
+              ],
+              "kin": [
+                "cease-from-work"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-sabata",
+      "lang": "ar",
+      "form": "سَبَتَ",
+      "translit": "sabata",
+      "gloss": "cut off, interrupt, put a stop to; rest, cease from work, be still",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Arabic s answers to Hebrew ש where Ugaritic and Arabic have š, not ṯ (Arabic ث). Lane’s sources give the transitive verb as “cut off, put a stop to, make cease”, and form VII as “be cut off, cease”; for the sense “rested” they report Azharī’s word that it is not known in the Arabs’ own speech, and the day name السَّبْت is explained from the Jews’ ceasing on it, so those may come from the Sabbath. The verbal noun سُبَات is rest and sleep.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1287, root سبت, سَبَتَ (n18643); انسبت (n18644)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1287, root سبت, سَبْتٌ (n18645); p. 1288, سُبَاتٌ (n18654)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001087 šbt [rest], ARB012993 sabata [Rested]"
+        }
+      ]
+    },
+    {
+      "id": "phn-sbt",
+      "lang": "phn",
+      "form": "𐤔𐤁𐤕",
+      "translit": "šbt",
+      "gloss": "(qal) come to an end; (piʿel) remove, destroy",
+      "relation": "cognate",
+      "note": "Neo-Punic “our terror came to an end” (Mactar B I 2, B II 1); Punic piʿel of removing a stele (CIS i 5510). Krahmalkov gives Hebrew š-b-t beside it.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 454, Š-B-T I"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001087 šbt [rest], PUN001923 šbt [come]"
+        }
+      ]
+    },
+    {
+      "id": "uga-sbt",
+      "lang": "uga",
+      "form": "𐎌𐎁𐎚",
+      "translit": "šbt",
+      "gloss": "stop",
+      "relation": "possible",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Listed only in Anderson and Moser’s root database; not found in Segert’s glossary or Fisher, so no text has been checked.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001087 šbt [rest], UGC003978 šbt [stop]"
+        }
+      ]
+    },
+    {
+      "id": "arc-shebat",
+      "lang": "arc",
+      "form": "שְׁבַת",
+      "translit": "šəḇaṯ",
+      "gloss": "rest; keep the Sabbath",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁבַת",
+          "note": "Targ. Ex 31:17; Targ. O. Ex 16:30; Targ. Y. Lev 23:32."
+        }
+      ]
+    },
+    {
+      "id": "arc-shabbeta",
+      "lang": "arc",
+      "form": "שַׁבְּתָא",
+      "translit": "šabbəṯā",
+      "gloss": "the Sabbath; week",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums of the Sabbath passages; “week” in Targ. Esth 2:9, and “the first in the week” for the first day.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שַׁבְּתָא",
+          "note": "Targ. Ex 16:25; Targ. Is 58:13; Targ. Hos 2:13; “week”, Targ. Esth 2:9."
+        }
+      ]
+    },
+    {
+      "id": "akk-sapattu",
+      "lang": "akk",
+      "form": "šapattu",
+      "translit": "šapattu, šabattu",
+      "gloss": "the fifteenth day of the month",
+      "relation": "possible",
+      "note": "A day of the lunar month, not the seventh day and not a word for ceasing. Whether the Hebrew noun was borrowed from it, or it from Hebrew, or the two are unrelated, is argued; the Hebrew noun’s meaning follows its own verb “cease”, which Punic and Arabic share, so it is not named on any word.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000020640; armep x000124200; armep x000147490, šapattu [15th day of month]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-seventh-day",
+      "statement": "God finished his work and ceased on the seventh day from all of it, and blessed the seventh day and made it holy, because in it he ceased (Gen 2:2–3). Israel is first told of the שַׁבָּת with the manna, before Sinai: none fell on the seventh day, and the people ceased (Exo 16:23–30). The commandment grounds Israel’s ceasing in Yahweh’s own (Exo 20:8–11), and in Deuteronomy in their slavery in Egypt, so that servant and sojourner rest as their master does (Deu 5:12–15). Yahweh calls it a sign between him and Israel, “that you may know that I am Yahweh who makes you holy”, and an everlasting covenant (Exo 31:13–17; Ezk 20:12, 20). In Lev 23 it heads the appointed times of Yahweh (Lev 23:2–3). The prophets set it before foreigners and eunuchs who hold fast to the covenant, whom Yahweh will bring to his holy mountain, for his house is to be called a house of prayer for all peoples (Isa 56:2–7), which Jesus quotes in the temple (Mrk 11:17); and they call it a delight, not doing one’s own ways on it (Isa 58:13–14). Jesus kept the day in the synagogue as his custom was (Luk 4:16), and answered those who accused him: the שַׁבָּת was made for man, not man for the שַׁבָּת, and the Son of Man is lord of it (Mrk 2:27–28); it is lawful to do good on it (Mat 12:12); and a daughter of Abraham bound eighteen years ought to be loosed on the day of the שַׁבָּת (Luk 13:15–16). From the verses: the day rests on what God did, in creating and in bringing out of slavery, and Jesus treats it as given for man’s good and as his own to rule.",
+      "evidence": [
+        {
+          "ref": "Gen.2.2",
+          "to": "Gen.2.3"
+        },
+        {
+          "ref": "Exo.16.23",
+          "to": "Exo.16.30"
+        },
+        {
+          "ref": "Exo.20.8",
+          "to": "Exo.20.11"
+        },
+        {
+          "ref": "Deu.5.12",
+          "to": "Deu.5.15"
+        },
+        {
+          "ref": "Exo.31.13",
+          "to": "Exo.31.17"
+        },
+        {
+          "ref": "Ezk.20.12"
+        },
+        {
+          "ref": "Ezk.20.20"
+        },
+        {
+          "ref": "Lev.23.2",
+          "to": "Lev.23.3"
+        },
+        {
+          "ref": "Isa.56.2",
+          "to": "Isa.56.7"
+        },
+        {
+          "ref": "Mrk.11.17"
+        },
+        {
+          "ref": "Isa.58.13",
+          "to": "Isa.58.14"
+        },
+        {
+          "ref": "Luk.4.16"
+        },
+        {
+          "ref": "Mrk.2.27",
+          "to": "Mrk.2.28"
+        },
+        {
+          "ref": "Mat.12.12"
+        },
+        {
+          "ref": "Luk.13.15",
+          "to": "Luk.13.16"
+        }
+      ]
+    },
+    {
+      "topic": "the-rest-that-remains",
+      "statement": "Psalm 95 ends with Yahweh’s oath that the generation which hardened its heart would not enter his rest (Psa 95:11). Hebrews reads that rest together with Gen 2:2: God’s works were finished from the foundation of the world, for it is written that God ceased on the seventh day from all his works (Heb 4:3–4). Since Joshua did not give them rest, and David still says “today” long after, “there remains a σαββατισμός”, a keeping of a ceasing, “for the people of God”; the Peshitta has the verb here, “it remains for the people of God to keep a ceasing” (Heb 4:8–9). The one who has entered God’s rest has himself ceased from his works, as God did from his, and so the reader is urged to strive to enter that rest (Heb 4:10–11). From the verses: the ceasing of Gen 2:2 is the pattern of a rest God holds open, which his people enter by ceasing from their own works and do not enter by unbelief.",
+      "evidence": [
+        {
+          "ref": "Psa.95.11"
+        },
+        {
+          "ref": "Heb.4.3",
+          "to": "Heb.4.4"
+        },
+        {
+          "ref": "Gen.2.2"
+        },
+        {
+          "ref": "Heb.4.8",
+          "to": "Heb.4.9"
+        },
+        {
+          "ref": "Heb.4.10",
+          "to": "Heb.4.11"
+        }
+      ]
+    },
+    {
+      "topic": "a-shadow-of-what-was-coming",
+      "statement": "Yahweh says through the prophets that he cannot bear שַׁבָּת and assemblies kept together with iniquity (Isa 1:13), and that he will make Israel’s feasts, new moons and שַׁבָּתוֹת cease (Hos 2:13). Paul tells the Colossians to let no one judge them in food or drink, or in respect of a feast, a new moon or σάββατα, “which are a shadow of the things to come, but the body is of Christ” (Col 2:16–17). Isaiah, of the new heavens and the new earth, says that from new moon to new moon and from שַׁבָּת to שַׁבָּת all flesh will come to worship before Yahweh (Isa 66:22–23). From the verses: Paul places the שַׁבָּת with the feasts and new moons as a shadow cast by what was to come, whose substance belongs to Christ, and no one is to sit in judgment over another by them; the prophets look to the day being kept by all flesh before Yahweh.",
+      "evidence": [
+        {
+          "ref": "Isa.1.13"
+        },
+        {
+          "ref": "Hos.2.13"
+        },
+        {
+          "ref": "Col.2.16",
+          "to": "Col.2.17"
+        },
+        {
+          "ref": "Isa.66.22",
+          "to": "Isa.66.23"
+        }
+      ]
+    },
+    {
+      "topic": "the-lands-sabbaths",
+      "statement": "When Israel comes into the land Yahweh gives, the land itself is to cease, a שַׁבָּת to Yahweh: in the seventh year it is not sown or pruned, and what grows of itself is food for the owner, his servants, the hired man, the sojourner and the beasts (Lev 25:2–7). Seven שַׁבְּתֹת of years are counted to the year of jubilee, when liberty is proclaimed and each returns to his possession, for the land is Yahweh’s and Israel are sojourners with him (Lev 25:8–10, 23). If Israel will not keep it, Yahweh will scatter them, and the land will enjoy its שַׁבָּתוֹת while it lies desolate (Lev 26:33–35, 43). Chronicles records it fulfilled: the land enjoyed its sabbaths for seventy years, to fulfil Yahweh’s word by Jeremiah (2Ch 36:21; Jer 25:11). From the verses: the ceasing reaches past people to the land and its creatures, and rests on the land being Yahweh’s, not Israel’s.",
+      "evidence": [
+        {
+          "ref": "Lev.25.2",
+          "to": "Lev.25.7"
+        },
+        {
+          "ref": "Lev.25.8",
+          "to": "Lev.25.10"
+        },
+        {
+          "ref": "Lev.25.23"
+        },
+        {
+          "ref": "Lev.26.33",
+          "to": "Lev.26.35"
+        },
+        {
+          "ref": "Lev.26.43"
+        },
+        {
+          "ref": "2Ch.36.21"
+        },
+        {
+          "ref": "Jer.25.11"
+        }
+      ]
+    }
+  ],
+  "note": "BDB keys v.az.aa (verb) and v.az.ad (its denominative “keep sabbath”) list the same 71 tokens; v.az.aa is used for the one verb, whose “keep a ceasing” sense (Lev 23:32) is a qal sense. m.dr.bm (מִשְׁבָּת, a cross-reference) has no tokens. Left out: the name שַׁבְּתַי (v.az.af), which belongs in names/; the tokens of יָשַׁב’s infinitive filed here by spelling (Deu 1:6, 1Sa 7:2, Psa 33:14, 127:2, 133:1, Pro 21:19, 25:24); and Amo 6:3 שֶׁבֶת “seat” and Oba 1:3 שִׁבְתּוֹ “his dwelling”, which OSHB lemmatises as 7675 (from ישב) but which the v.az.ab key still counts under שֶׁבֶת. OSHB gives Exo 21:19, Isa 30:7 and Pro 20:3 as 7674, the noun of this root; Exo 21:19 and Isa 30:7 could be read either way. Cognates checked 2026-11-09: Lane pp. 1287–1288 (root سبت), Krahmalkov p. 454 (Š-B-T I; Š-B-T II “share, divide” KAI 3 is a separate problematic root and not entered), Jastrow שְׁבַת and שַׁבְּתָא, Oracc šapattu, Anderson–Moser SEM001087. Not found: Ugaritic šbt “stop” in Segert or Fisher (Segert’s šbt at 1.12 II 59 is “draw water”, not this). Not consulted: Ge’ez ሰንበት (Dillmann), DULAT, CAD šapattu. Arabic سِبِتّ and Syriac ܫܒܬܐ “dill” are a different, borrowed word (Lane n18648: from Persian) and are not cognates. The Peshitta words (SEDRA lexemes 3113 “rest”, verb, Heb 4:9 only; 3114 “Sabbath”) are keyed in SEDRA under the root ܫܒܬܐ, which is why the brief found no Peshitta cognate root; their verses were found from SEDRA’s BFBS word list. Open questions for review: (1) Which שַׁבָּת is meant in מִמָּחֳרַת הַשַּׁבָּת (Lev 23:11, 15–16) is left to the verses: the entry glosses the phrase literally and does not decide between the weekly Sabbath and the first day of מַצּוֹת. (2) The “week” sense rests on Lev 23:15–16 beside Deu 16:9 and on the New Testament’s use; check that this reading of Lev 23:15 is wanted. (3) Whether Arabic sabata “rest” and Ugaritic šbt should be named given the doubts recorded in their notes. (4) Lev 25:6, the produce of the sabbath year called “the שַׁבָּת of the land”, is kept inside the land sense rather than a separate sense."
+}

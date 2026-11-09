@@ -1,0 +1,395 @@
+{
+  "id": "omer",
+  "root": "עמר",
+  "status": "draft",
+  "updated": "2026-11-09",
+  "tags": [
+    "harvest",
+    "measure",
+    "offering",
+    "food",
+    "slavery"
+  ],
+  "gloss": "sheaf; omer (a measure); bind sheaves",
+  "summary": "עֹמֶר is a sheaf of cut grain, the bundle a reaper leaves in the field, and also the measure of the manna, an omer a head a day, a tenth of an ephah (Exo 16:16, 36). עָמִיר is the cut grain or sheaves gathered for the threshing floor, and the piel is binding sheaves. In Lev 23 the עֹמֶר of the first of the harvest is waved before Yahweh, and the count to the feast of weeks begins from it. The hithpael, used twice of treating a captive woman or a stolen man as goods to be sold, has no link to the sheaf shown by the verses. Jewish Aramaic uses the same words for sheaf, omer and binding sheaves.",
+  "words": [
+    {
+      "lemma": "עֹמֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sheaf; omer, a dry measure",
+      "bdb": [
+        "p.dn.ab"
+      ],
+      "summary": "A sheaf, and the measure of the manna. The verses do not say how the measure is related to the sheaf; Jewish Aramaic uses one word, עוּמְרָא, for both.",
+      "senses": [
+        {
+          "id": "sheaf",
+          "gloss": "sheaf",
+          "definition": "A bundle of cut grain, as left in the field behind the reapers, carried, or brought to the priest as the first of the harvest.",
+          "evidence": [
+            {
+              "ref": "Deu.24.19",
+              "role": "defining",
+              "note": "A sheaf forgotten in the field at harvest is left for the sojourner, the fatherless and the widow."
+            },
+            {
+              "ref": "Rut.2.15",
+              "role": "defining",
+              "note": "“Let her glean even among the עֳמָרִים.”"
+            },
+            {
+              "ref": "Rut.2.7"
+            },
+            {
+              "ref": "Job.24.10",
+              "note": "The hungry carry the sheaves."
+            },
+            {
+              "ref": "Lev.23.10",
+              "role": "defining",
+              "note": "You shall bring the עֹמֶר of the first of your harvest to the priest."
+            },
+            {
+              "ref": "Lev.23.11",
+              "note": "The priest waves the עֹמֶר before Yahweh, for your acceptance, on the morrow after the שַׁבָּת."
+            },
+            {
+              "ref": "Lev.23.12",
+              "note": "On the day you wave the עֹמֶר you offer a lamb without blemish as an עֹלָה."
+            },
+            {
+              "ref": "Lev.23.15",
+              "note": "The count of seven שַׁבָּתוֹת begins from the day of the עֹמֶר of the wave offering."
+            }
+          ],
+          "cognate_ids": [
+            "arc-umra"
+          ]
+        },
+        {
+          "id": "omer-measure",
+          "gloss": "omer, a dry measure",
+          "definition": "The measure of manna gathered for each person for a day, a tenth of an ephah.",
+          "evidence": [
+            {
+              "ref": "Exo.16.16",
+              "role": "defining",
+              "note": "Gather of it each according to what he eats, an עֹמֶר a head."
+            },
+            {
+              "ref": "Exo.16.36",
+              "role": "defining",
+              "note": "The עֹמֶר is a tenth of an ephah."
+            },
+            {
+              "ref": "Exo.16.18",
+              "role": "defining",
+              "note": "Measured with the עֹמֶר, the one who gathered much had nothing over, and the one who gathered little had no lack."
+            },
+            {
+              "ref": "Exo.16.22",
+              "note": "On the sixth day two עֹמֶר for each."
+            },
+            {
+              "ref": "Exo.16.32",
+              "note": "An עֹמֶר full of it is kept for your generations."
+            },
+            {
+              "ref": "Exo.16.33"
+            },
+            {
+              "ref": "2Co.8.15",
+              "note": "Paul quotes Exo 16:18 for the Corinthians’ giving."
+            }
+          ],
+          "cognate_ids": [
+            "arc-umra",
+            "ar-ghumar"
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "עֹמֶר רֵאשִׁית קְצִירְכֶם",
+            "gloss": "the sheaf of the first of your harvest",
+            "evidence": [
+              {
+                "ref": "Lev.23.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עֹמֶר הַתְּנוּפָה",
+            "gloss": "the sheaf of the wave offering",
+            "evidence": [
+              {
+                "ref": "Lev.23.15",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָמִיר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cut grain, sheaves",
+      "bdb": [
+        "p.dn.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "cut grain, sheaves",
+          "definition": "Grain cut and lying behind the reaper, gathered to the threshing floor or loaded on a cart; used collectively.",
+          "evidence": [
+            {
+              "ref": "Jer.9.21",
+              "role": "defining",
+              "note": "Corpses fall like עָמִיר behind the reaper, with no one to gather."
+            },
+            {
+              "ref": "Mic.4.12",
+              "role": "defining",
+              "note": "He has gathered them like עָמִיר to the threshing floor."
+            },
+            {
+              "ref": "Amo.2.13",
+              "note": "A cart full of עָמִיר."
+            },
+            {
+              "ref": "Zec.12.6",
+              "note": "A fiery torch among עָמִיר."
+            }
+          ],
+          "kin": [
+            "sheaf"
+          ],
+          "cognate_ids": [
+            "arc-amira"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָמַר",
+      "pos": "verb",
+      "gloss": "bind sheaves; treat as goods",
+      "bdb": [
+        "p.do.aa"
+      ],
+      "summary": "Three uses. The piel, “one binding sheaves”, is formed from the noun עֹמֶר. The hithpael, in Deu 21:14 and 24:7, is said of a captive wife or a kidnapped Israelite, each time beside selling: to deal with a person as goods. The verses do not show how this is linked to sheaves, and no cognate with this sense has been found, so its tie to the root is not understood.",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "bind sheaves",
+          "senses": [
+            {
+              "gloss": "bind sheaves",
+              "definition": "Gather cut grain into sheaves, the work done after the reaper.",
+              "evidence": [
+                {
+                  "ref": "Psa.129.7",
+                  "role": "defining",
+                  "note": "Grass on the roof, with which the reaper does not fill his hand, nor the מְעַמֵּר his bosom."
+                }
+              ],
+              "kin": [
+                "sheaf"
+              ],
+              "cognate_ids": [
+                "arc-ammer"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "deal with as goods, as a slave",
+          "senses": [
+            {
+              "gloss": "deal with a person as goods",
+              "definition": "Treat a person as one’s property to use or dispose of, said beside selling them.",
+              "evidence": [
+                {
+                  "ref": "Deu.21.14",
+                  "role": "defining",
+                  "note": "A captive wife sent away: you shall not sell her for money, לֹא־תִתְעַמֵּר בָּהּ, because you humbled her."
+                },
+                {
+                  "ref": "Deu.24.7",
+                  "role": "defining",
+                  "note": "A man who steals one of his brothers וְהִתְעַמֶּר־בּוֹ and sells him shall die."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָצַר",
+            "note": "The binder of sheaves beside the reaper.",
+            "evidence": [
+              {
+                "ref": "Psa.129.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מָכַר",
+            "note": "The hithpael stands each time beside selling the person.",
+            "evidence": [
+              {
+                "ref": "Deu.21.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.24.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-umra",
+      "lang": "arc",
+      "form": "עוּמְרָא",
+      "translit": "ʿumrā",
+      "gloss": "sheaf; omer",
+      "relation": "cognate",
+      "note": "One word for both senses of עֹמֶר: “sheaf” at Targ. Deut 24:19, “Omer” at Targ. Ex 16:33, 36 and Targ. Lev 23:10.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עוּמְרָא",
+          "note": "“sheaf. Targ. Deut. XXIV, 19”; “Omer. Targ. Ex. XVI, 36 … Ib. 33. Targ. Lev. XXIII, 10”; pl. עוּמְרִין, Targ. Ex 16:22."
+        }
+      ]
+    },
+    {
+      "id": "arc-amira",
+      "lang": "arc",
+      "form": "עָמִירָא",
+      "translit": "ʿāmīrā",
+      "gloss": "cut grain, sheaves; grass, hay",
+      "relation": "cognate",
+      "note": "The Targums use it for עָמִיר at Amo 2:13 and Mic 4:12, and for חָצִיר “grass” at Prov 27:25.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עָמִירָא",
+          "note": "Targ. Am. II, 13; Targ. Mic. IV, 12; Targ. Prov. XXVII, 25 (h. text חציר)."
+        }
+      ]
+    },
+    {
+      "id": "arc-ammer",
+      "lang": "arc",
+      "form": "עַמֵּר",
+      "translit": "ʿammer",
+      "gloss": "(pael) bind sheaves",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲמַר I",
+          "note": "“Pa. עַמֵּר ch. as preced. Pi.” (to bind and pile sheaves), Targ. Ps 129:7."
+        }
+      ]
+    },
+    {
+      "id": "ar-ghumar",
+      "lang": "ar",
+      "form": "غُمَر",
+      "translit": "ġumar",
+      "gloss": "a small drinking-cup, by which water was shared out among travellers",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "Lane: the smallest drinking-cup, with which people divided the water among themselves on a journey when they had little, a measure for each man. It matches the omer as a ration measure for each person, but it is a cup for water, not a grain measure, and it belongs to the root غمر “cover, overflow”; if it is the same word, the ע of עֹמֶר “omer” stands for ġ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2292, root غمر, غُمَرٌ (n32394); تغمّر “he drank from a small cup such as is called غُمَر” (n32387)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-omer-of-manna",
+      "statement": "Yahweh told Israel to gather the manna each according to what he eats, an עֹמֶר a head, and when they measured it with the עֹמֶר, the one who gathered much had nothing over and the one who gathered little had no lack (Exo 16:16–18). Nothing was to be left to the morning, and what was kept bred worms (Exo 16:19–20); on the sixth day they gathered two עֹמֶר a head, because the seventh was a שַׁבָּת (Exo 16:22–23). An עֹמֶר of it was kept before Yahweh through their generations, so that they might see the bread he fed them with in the wilderness (Exo 16:32–34), and Hebrews names the golden jar of manna in the ark (Heb 9:4). Paul quotes Exo 16:18 when he asks the Corinthians to give out of their abundance to the saints in want, “that there may be equality” (2Co 8:13–15). Jesus answered the crowd who cited the manna that his Father gives the true bread from heaven, and “I am the bread of life” (Jhn 6:31–35). From the verses: the עֹמֶר measured what Yahweh gave each person for a day, enough and not more; Paul makes that measure the pattern for believers sharing with one another, and the kept עֹמֶר witnessed to the bread Jesus says he is.",
+      "evidence": [
+        {
+          "ref": "Exo.16.16",
+          "to": "Exo.16.18"
+        },
+        {
+          "ref": "Exo.16.19",
+          "to": "Exo.16.20"
+        },
+        {
+          "ref": "Exo.16.22",
+          "to": "Exo.16.23"
+        },
+        {
+          "ref": "Exo.16.32",
+          "to": "Exo.16.34"
+        },
+        {
+          "ref": "Heb.9.4"
+        },
+        {
+          "ref": "2Co.8.13",
+          "to": "2Co.8.15"
+        },
+        {
+          "ref": "Jhn.6.31",
+          "to": "Jhn.6.35"
+        }
+      ]
+    },
+    {
+      "topic": "the-first-sheaf",
+      "statement": "When Israel reaps the land’s harvest, they bring the עֹמֶר of the first of it to the priest, who waves it before Yahweh “for your acceptance” on the morrow after the שַׁבָּת, with a lamb without blemish as an עֹלָה; until that day no bread or grain of the new harvest is eaten (Lev 23:10–14). From that day seven שַׁבָּתוֹת are counted, fifty days, to a new grain offering (Lev 23:15–16). Paul says that Christ has been raised from the dead, the firstfruits of those who have fallen asleep, and that each is raised in his own order: Christ the firstfruits, then at his coming those who are Christ’s (1Co 15:20–23). Paul does not name the עֹמֶר; what the verses share is the order of a harvest, its first part brought to Yahweh and accepted before the rest is gathered. The gospels say Jesus rose early on the first day of the week, when the שַׁבָּת was past (Mrk 16:1–2, 9); Lev 23:11 sets the waving on the morrow after the שַׁבָּת but does not say which. On the day of Pentecost, the fiftieth day, the Spirit was poured out on the disciples (Act 2:1–4).",
+      "evidence": [
+        {
+          "ref": "Lev.23.10",
+          "to": "Lev.23.14"
+        },
+        {
+          "ref": "Lev.23.15",
+          "to": "Lev.23.16"
+        },
+        {
+          "ref": "1Co.15.20",
+          "to": "1Co.15.23"
+        },
+        {
+          "ref": "Mrk.16.1",
+          "to": "Mrk.16.2"
+        },
+        {
+          "ref": "Mrk.16.9"
+        },
+        {
+          "ref": "Act.2.1",
+          "to": "Act.2.4"
+        }
+      ]
+    }
+  ],
+  "note": "BDB keys p.dn.ab (עֹמֶר “sheaf”) and p.dn.ac (עֹמֶר “omer”) list the same 14 tokens, so one word with two senses carries p.dn.ab; p.do.aa (עָמַר “deal tyrannically”) and p.dn.ae (עִמֵּר “bind sheaves”, denominative) likewise both list Psa 129:7, Deu 21:14 and 24:7, so one verb carries p.do.aa. Left out: the names עֲמֹרָה Gomorrah, עָמְרִי Omri, עַמְרָם Amram and the gentilic עַמְרָמִי (names/ entries); עֲמָשָׂא, עֲמָשַׂי and עֲמַשְׁסַי, which BDB files nearby but are spelled with שׂ, not ר, so are not this root at all; and Biblical Aramaic עֲמַר “wool” (Dan 7:9, key xp.ah.ac), which answers to Hebrew צֶמֶר, Aramaic writing ע where Hebrew has צ for the older ṣ́, as in אֲרַע “earth” (Dan 2:39) for אֶרֶץ, and Jer 10:11, which writes the same word both אַרְקָא and אַרְעָא; it belongs in a צמר entry. The Peshitta’s ܥܡܪ “dwell” and its nouns ܥܘܡܪܐ “abode”, ܡܥܡܪܐ “habitation”, ܥܡܘܪܐ “inhabitant” (SEDRA lexemes 2357–2360) answer to Arabic عَمَرَ “inhabit, live long” (ʿ), which no Hebrew word of this spelling shares; they are left out on the precedent of alah’s enter-verbs, not included on spelling alone; and ܥܡܪܐ “wool” (2361) goes with צמר as above. Cognates checked 2026-11-09: Jastrow עוּמְרָא, עָמִירָא, עֲמַר I–III, עָמַר; Lane roots عمر (pp. 2153–2157) and غمر (pp. 2291–2293). Not recorded, leads only: Lane غَمِير (p. 2293, n32401), green herbage under dry, or the grain that falls from the ears of the grass بُهْمَى, as a possible match for עָמִיר; Lane مَغْمُور (n32407) “overcome, subdued, oppressed”, a figurative use of “covered by water”, and غِمْر “rancour” (n32391), as possible matches for the hithpael — all with ġ, so if any held, the Hebrew ע would be ġ throughout. Syriac ܥܡܝܪܐ “grass, hay, fodder” is reported by Wiktionary only (not in the Peshitta NT per SEDRA); Payne Smith not checked. No Ugaritic, Phoenician, Akkadian or Ge’ez cognate found in the brief, Krahmalkov or Oracc (Akkadian has no ʿ to search by). Open questions for review: (1) Whether the measure עֹמֶר and the sheaf are one word (the Aramaic usage says so; the text does not show how) or two homographs. (2) The hithpael’s link to the root: it currently has no cognate and counts the Aramaic ones against it. (3) Whether the Peshitta’s ʿmr “dwell” words should enter this entry under “one spelling, one entry”. (4) The first-sheaf doctrine sets Lev 23:10–16 beside 1Co 15:20–23 and Mrk 16, and says what the texts do not state; check it is wanted."
+}
