@@ -2268,34 +2268,46 @@ Source checks for Luke 24:
 
 Source checks for John 1:
 
+- English uses it/its for the Word, light, and Spirit in this chapter.
+  References to human participants, including John and Jesus, retain
+  personal pronouns. This includes its glory and its fullness in the
+  Word passage and it remained on him for the Spirit resting on Jesus.
+- The chapter's 191 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Thirteen remain:
+  four predicates with ethical datives, three repeated subject
+  references, and six relative/resumed references. Their exact positions
+  and linguistic reasons are in the ledger. Ordinary negatives,
+  auxiliaries, modifiers, and clause constituents have separate owners.
 - In 1:1 the Word's being with God and being God retain their distinct
   predicates. In 1:3 both finite predicates and the final relative about
-  coming into being remain. Agency is expressed by the hand idiom. In
-  1:4 life is in him and is humanity's light; in 1:5 the light shines,
+  coming into being remain. Through it renders the hand idiom of agency;
+  the same idiom with John as agent is through him in 1:7. In
+  1:4 life was in it and is humanity's light; in 1:5 the light shines,
   while the darkness does not comprehend it.
 - In 1:6 John is sent from God. In 1:7 the source explicitly includes
   the purpose that everyone might believe through him, although this
   clause is absent from the supplied Murdock reference. In 1:8 John is
-  not the light and comes to testify about it. In 1:9 the true light
+  not the light and was to testify about it. In 1:9 the true light
   enlightens everyone coming into the world, with for and the past copula.
-- In 1:10 the world comes through his hand and does not know him.
-  In 1:11 his own do not receive him. In 1:12 those receiving him are
+- In 1:10 the world came through it and did not know it.
+  In 1:11 its own do not receive it. In 1:12 those receiving it are
   given authority to become God's children. In 1:13 the plural birth
   is from God, contrasted with blood, flesh's desire, and man's desire;
   the birth predicate remains with its actual final source position.
-- In 1:14 the Word becomes flesh and dwells among us; we see his glory.
+- In 1:14 the Word becomes flesh and dwells among us; we see its glory.
   Only-begotten, from the Father, and full of grace and truth remain
   distinct. In 1:15 the coming-after, being-before, and prior-to-me
   expressions keep their respective first-person references. In 1:16
-  we all receive from his fullness, and grace in place of grace.
+  we all receive from its fullness, and grace in place of grace.
 - In 1:17 the source order is truth and grace, after the law given
   through Moses' hand; they come through Jesus the Messiah's hand.
   In 1:18 the recorded title is only-begotten God. He is in his Father's
   bosom and makes the unseen God known, with the understood object
   supplied naturally in English.
 - In 1:19 the Jews from Jerusalem are the senders, priests and Levites
-  the delegates, and John the recipient of their questions. The full
-  sending clause is linked together to preserve those roles in English.
+  the delegates, and John the recipient of their questions. The sending
+  verb, senders, origin, delegates, recipient, and purpose are separately
+  linked while preserving those roles in English.
   In 1:20 confession and non-denial remain explicit. In 1:21 the two
   questions concern Elijah and a prophet, each with its own denial.
 - In 1:23 the voice is calling in the wilderness and commands making
@@ -2318,7 +2330,8 @@ Source checks for John 1:
   Simon is son of Jonah and will be called Cephas, without an added
   Greek name gloss. In 1:44 Bethsaida is the city of Andrew and Simon.
   In 1:45 we have found stays at its actual source position, with
-  Jesus, Joseph, and Nazareth distinct. In 1:51 the future audience is
+  Jesus, Joseph, and Nazareth distinct. The b- prefix is retained as
+  "and in the prophets". In 1:51 the future audience is
   plural, with God's angels ascending and descending toward the Son
   of Man; both introductory amens remain.
 
