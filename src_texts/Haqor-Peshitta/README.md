@@ -1468,6 +1468,8 @@ Source checks for Luke 11:
 - In 11:44 scribes, Pharisees, and hypocrites are explicit. In 11:46 one
   of their fingers remains part of the accusation. In 11:49 persecution
   precedes killing in the text; in 11:51 temple precedes altar.
+- In 11:44 the relative prefix on the negative form owns English "that";
+  the passive participle separately owns "are" and "known".
 - In 11:52 keys are plural, and taking, entering, and hindering are past.
   In 11:53 Jesus is actively saying these things; Pael `tks` means
   contradict/rebut, as documented in the [CAL entry](https://cal.huc.edu/cal_entry_web.php?lemma=tks+V).
@@ -1479,10 +1481,21 @@ Source checks for Luke 11:
 
 Source checks for Luke 12:
 
+- The chapter's 250 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Ten remain: four
+  idioms or lexical designations, possession, a temporal preposition,
+  a passive predicate with its patient, and three repeated references
+  to one participant. Their exact positions and linguistic reasons are
+  in the ledger. Ordinary negatives, auxiliaries, modifiers, noun phrases,
+  and clause constituents have separate source owners.
 - In 12:2 both covered and hidden things are explicit. In 12:3 speech
   in darkness is heard in the light, while whispering in chambers and
   ears is proclaimed on rooftops. In 12:4 the speaker says "I" and
   addresses "my friends".
+- In 12:1 the taking-and-faces expression is hypocrisy. In 12:4 the
+  negative existential and possessor dative express "have", with "no"
+  and "thing" separate. In 12:5 "after" is the compound men batar;
+  the relative prefix on men separately owns "who".
 - In 12:7 the sparrows belong to the value comparison, not the fear
   prohibition. In 12:10 both forgiveness clauses retain their recipient.
   In 12:11 the defense expression is rendered as a coherent idiom.
@@ -1490,6 +1503,10 @@ Source checks for Luke 12:
   yields produce. In 12:19 the rich man's speech remains first person,
   "I will say to my soul"; the requirement of his soul in 12:20 does not
   identify the unspecified requiring agents.
+- In 12:6 "not one" preserves the universal negative. In 12:9 the passive
+  denial's pronominal patient refers to the already expressed subject.
+  In 12:20 the fronted soul and resumed feminine object identify the
+  same patient, expressed once after the active plural requirement verb.
 - In 12:25 the measure is a cubit of stature. In 12:28 the grass falls
   into the oven. In 12:30 "you too need" preserves the source's emphasis
   on the disciples' need, rather than adding "also" to the Father's knowing.
@@ -1497,6 +1514,11 @@ Source checks for Luke 12:
   specifies a feast. In 12:37 the master girds himself, has the servants
   recline, and serves them. In 12:39 the final past auxiliary belongs to
   not allowing the break-in.
+- In 12:18 and 12:24 "storehouses" keeps the store and house words
+  separately linked. In 12:30 the two references to the disciples remain
+  distinct as the topic "as for you" and the subject of "you too need".
+  In 12:37 the relative and resumed object pronouns jointly own "whom";
+  the master finds the servants awake, then serves them.
 - In 12:41 Simon Cephas says "Our Lord" and asks whether the parable is
   for "us". In 12:47 readiness is according to the master's will; no
   separate doing verb is supplied. In 12:49 the fire's kindling is wished
@@ -1509,6 +1531,11 @@ Source checks for Luke 12:
   commercial expression; [CAL lists its noun as merchandise/business dealings](https://cal.huc.edu/browseSKEYheaders.php?first3=%22t%22).
   The judge and officer remain distinct actors. In 12:59 the speaker
   says "I", and the payment ends with the last coin.
+- In 12:41 the anticipatory object and parable noun identify one spoken
+  object; "this" and both alternatives' recipients remain separate.
+  In 12:49 "by now" keeps the temporal preposition and time word separate,
+  within the wish. In 12:56 the hypocrite designation is the taking-and-faces
+  idiom; in 12:58 house-of-bound-people is the fixed prison designation.
 
 Source checks for Luke 13:
 

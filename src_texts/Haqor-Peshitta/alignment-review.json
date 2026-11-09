@@ -3126,7 +3126,7 @@
       ]
     },
     "42:11": {
-      "sha256": "a876ab255ce8ef7fbd541a5c89f87a97da9fb88ba9f0daaf643913c571c92dc5",
+      "sha256": "aae163b9ceb3103de959f4d047746703610f8e8229662a222614c5621edfe9ae",
       "original_shared_spans": 238,
       "independent_review": true,
       "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
@@ -3229,6 +3229,104 @@
             11
           ],
           "reason": "Akal qarsa is the fixed accusation idiom, literally eating pieces. The eating verb and accusation noun with its object suffix jointly express accusing him; the ability predicate remains separate."
+        }
+      ]
+    },
+    "42:12": {
+      "sha256": "d8d2b9a14385a9d5f51a4bd04816dd9389027de3cd645abd8599dd2ded6381eb",
+      "original_shared_spans": 250,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 1,
+          "english": "hypocrisy",
+          "positions": [
+            20,
+            21
+          ],
+          "reason": "Massab b-appe is the fixed hypocrisy idiom, literally taking with respect to faces. The taking noun and face noun jointly denote hypocrisy rather than literal taking."
+        },
+        {
+          "verse": 4,
+          "english": "have",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "The negative existential and possessor dative lehon jointly express possession, with no separately introduced beneficiary. The possessor is already the relative subject those who kill; no and thing remain separately linked."
+        },
+        {
+          "verse": 5,
+          "english": "after",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "Men batar is the compound temporal preposition after. The relative prefix on the first word separately owns who, and killing remains separately linked."
+        },
+        {
+          "verse": 9,
+          "english": "will be denied",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "The passive denial verb takes a b-marked pronominal patient coreferential with whoever. English renders that patient as the existing subject of will be denied, without adding another in-him participant."
+        },
+        {
+          "verse": 11,
+          "english": "you will make your defense",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "The going-out verb with ruha is the defense idiom in the judicial context, jointly meaning to make a defense. The interrogative how, alternative or, what and saying verb remain separately linked."
+        },
+        {
+          "verse": 20,
+          "english": "your soul",
+          "positions": [
+            8,
+            10
+          ],
+          "reason": "The fronted soul noun and its resumed feminine pronominal object identify the same required soul. English expresses that patient once after the active plural they require; the source leaves those requiring it unnamed."
+        },
+        {
+          "verse": 37,
+          "english": "whom",
+          "positions": [
+            3,
+            7
+          ],
+          "reason": "The relative pronoun and its resumed object pronoun identify the same servants found awake by their master. English expresses that object once as whom; the coming, finding, temporal connective and awake state remain separate."
+        },
+        {
+          "verse": 41,
+          "english": "parable",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The anticipatory object pronoun and following parable noun identify the same spoken object. English expresses that object once; this, speaking, the recipients and the alternatives remain separately linked."
+        },
+        {
+          "verse": 56,
+          "english": "Hypocrites",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Nasbay b-appe, literally takers with respect to faces, is the fixed hypocrite designation. The taking participle and face noun jointly designate hypocrites rather than a literal taking of faces."
+        },
+        {
+          "verse": 58,
+          "english": "into prison",
+          "positions": [
+            24,
+            25
+          ],
+          "reason": "Beth asire, literally house of bound people, is the fixed prison designation. The house noun and bound-prisoner noun jointly denote the place of confinement; casting, its patient and the officer remain separate."
         }
       ]
     }
