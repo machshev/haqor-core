@@ -5665,6 +5665,130 @@
           "reason": "The third-person singular object suffix on the first-person perfect HAVE OVERCOME resumes explicit WORLD. The single English object jointly owns both source positions, while I and HAVE OVERCOME remain separate. The suffix is not a first-person object."
         }
       ]
+    },
+    "43:17": {
+      "sha256": "3acea8dffd2eed7f6edf1056be096b241a97ec369db5047c1ddc8b14155e7aef",
+      "original_shared_spans": 105,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 2,
+          "english": "to all",
+          "positions": [
+            7,
+            12
+          ],
+          "reason": "The singular dative LEH resumes the collective ALL in the relative all those whom you gave him. The one English recipient phrase TO ALL jointly owns collective head and resumed dative. Purpose SO THAT, THOSE, relative giving, its HIM object, the second giving verb, ETERNAL and LIFE remain separate."
+        },
+        {
+          "verse": 4,
+          "english": "the work",
+          "positions": [
+            3,
+            8
+          ],
+          "reason": "The third-person singular object suffix on first-person HAVE COMPLETED resumes explicit WORK. Only the one English object shares those positions; I HAVE COMPLETED, WHICH, YOU GAVE, ME and TO DO remain separate."
+        },
+        {
+          "verse": 5,
+          "english": "mine",
+          "positions": [
+            7,
+            9
+          ],
+          "reason": "Existential ITH plus the first-person L-possessor jointly express possession, English MINE. The past auxiliary HWA is separately WAS, so the temporal auxiliary is not included in the possession exception. THAT, glory, both WITH YOU phrases, BEFORE and the world-existence clause stay separate."
+        },
+        {
+          "verse": 5,
+          "english": "before",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "MEN QDAM is the compound temporal preposition BEFORE in the claim about glory before the world existed. It is not an independent FROM movement. The world and its existence predicate remain separately owned.",
+          "source": "https://cal.huc.edu/cal_entry_web.php?lemma=mn%40qwdm+p"
+        },
+        {
+          "verse": 6,
+          "english": "people",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Plural BNAI ANASHA is the lexical human/person expression, here PEOPLE, not literal sons with a separate male parent. CAL explicitly documents plural BNY ANASHA as people in Syriac. TO on the first word, THOSE, name, giving, me and from-world clause remain separate.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=br%40%29n%24+N"
+        },
+        {
+          "verse": 7,
+          "english": "from",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "MEN LWATH is the compound FROM, from the presence of. The second-person suffix supplies separately linked YOU. NOW, first-person KNOW, the all-that-given clause and copula IS are separate.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40lwt+p"
+        },
+        {
+          "verse": 8,
+          "english": "from",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "MEN LWATH again expresses FROM. The d-prefix separately supplies THAT and the second-person suffix separately YOU; I CAME and the surrounding knowing, receiving and believing clauses retain their own owners.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40lwt+p"
+        },
+        {
+          "verse": 19,
+          "english": "for",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "AL APPAY is a compound preposition FOR, on behalf of, in the sanctifying-myself clause. AND and the plural pronominal complement THEM remain separate, as do the two first-person pronouns, sanctifying and myself. No physical face participant is introduced.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=%28l%40%29py+p"
+        },
+        {
+          "verse": 20,
+          "english": "for",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "AL APPAY jointly supplies FOR in not-praying-for-these-alone. Negation, prayer, subject, THESE and ALONE remain separate; APPAY is not a new face participant.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=%28l%40%29py+p"
+        },
+        {
+          "verse": 20,
+          "english": "for",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The second AL APPAY jointly supplies FOR in the separate extension to those believing through their word. BUT, ALSO, THOSE, the belief predicate, IN ME and THROUGH THEIR WORD remain separate.",
+          "source": "https://cal.huc.edu/oneentry.php?cits=all&lemma=%28l%40%29py+p"
+        },
+        {
+          "verse": 24,
+          "english": "those",
+          "positions": [
+            1,
+            9
+          ],
+          "reason": "Initial HANUN and later resumptive HENUN are the same plural people given to the speaker. Natural English uses one THOSE and a single relative clause before MAY ALSO BE WITH ME; both source references own that one referent. Giving, ME, desire, place, ALSO, being and WITH ME remain separately linked."
+        },
+        {
+          "verse": 24,
+          "english": "before",
+          "positions": [
+            20,
+            21
+          ],
+          "reason": "MEN QDAM is temporal BEFORE in the love-before-creation clause. The plural FOUNDATIONS, genitive OF THE WORLD and second-person loving-me predicate remain separately linked.",
+          "source": "https://cal.huc.edu/cal_entry_web.php?lemma=mn%40qwdm+p"
+        }
+      ]
     }
   }
 }
