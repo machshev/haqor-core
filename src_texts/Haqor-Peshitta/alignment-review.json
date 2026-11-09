@@ -2402,6 +2402,86 @@
           "reason": "Men batar is the compound temporal after relation; the conjunction is attached to men, and the three-day interval is separately linked."
         }
       ]
+    },
+    "42:3": {
+      "sha256": "0504a93d06cd9484e2e1003be98887577cc719323fa61f10fc59650724d27efd",
+      "original_shared_spans": 160,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 1,
+          "english": "was tetrarch",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Resha rabbiaya, literally fourth ruler, is the compound tetrarch office, not two independently asserted ranks. The English nominal title includes its understood copula."
+        },
+        {
+          "verse": 1,
+          "english": "was tetrarch",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "The same compound tetrarch title applies to Philip; fourth describes the office rather than his position in a succession of rulers."
+        },
+        {
+          "verse": 1,
+          "english": "was tetrarch",
+          "positions": [
+            22,
+            23
+          ],
+          "reason": "The same compound tetrarch title applies to Lysanias; the Abilene complement remains separately linked."
+        },
+        {
+          "verse": 11,
+          "english": "has",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Ith plus the subject-coreferential dative leh is the possession construction. English has fuses existence and dative possession without a second for-him participant."
+        },
+        {
+          "verse": 11,
+          "english": "has",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The negative existential with its coreferential dative forms the negative possession construction. English has fuses the existential and possessor relation; the relative prefix and negative indefinite are separately linked to dlayt."
+        },
+        {
+          "verse": 11,
+          "english": "has",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "Ith plus the subject-coreferential dative leh again forms possession; the English has expresses that one relation without another beneficiary."
+        },
+        {
+          "verse": 20,
+          "english": "in prison",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "Beth asire is the prison compound, literally house of prisoners. It names one location, not a separate house and a group of prisoners."
+        },
+        {
+          "verse": 23,
+          "english": "was",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "The existential ithawhy and past copula hwa jointly express the age predicate of the explicit subject Jesus himself. English has one past copula; an additional he would repeat the named subject."
+        }
+      ]
     }
   }
 }

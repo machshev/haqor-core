@@ -1053,18 +1053,40 @@ Source checks for Luke 2:
 
 Source checks for Luke 3:
 
+- The chapter's 160 original shared spans were checked against exact
+  forms, morphology, and continuous English. Eight remain: three tetrarch
+  titles, three existential-with-dative possession predicates, the prison
+  compound, and the copular age predicate. The ledger records exact
+  positions and reasons. All genealogy relationship words and names have
+  separate source owners, as do ordinary modifiers, negatives, and auxiliaries.
 - In 3:1 the repeated head/fourth expression is the tetrarch title.
-  In 3:4 both the plain and the first-person plural "our God" are explicit.
+  In 3:2 high and priesthood are separately linked, and the past copula
+  belongs to the word of God. In 3:4 both the plain and the first-person
+  plural "our God" are explicit. In 3:5 the future copula carries into
+  the parallel elliptical clause about the difficult place becoming a plain;
+  that place and its modifier retain separate links.
+- In 3:8 "Our father is Abraham" renders the same existential/dative
+  possession claim as "we have Abraham as our father". God remains the
+  subject of ability and raising, with stones as source and sons as object.
 - In 3:9 the tree must produce good fruits; the negated clause retains
   both the fruit noun and its adjective.
-- In 3:14 the second prohibition is rendered "oppress no one"; compare
+- In 3:11 the three possession constructions fuse as English "has";
+  the relative prefix and negative indefinite remain separate spans.
+- In 3:14 the second prohibition is rendered "do not oppress anyone"; compare
   [CAL's entry for the verb](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28%24q+V),
   which cites this verse under the oppression sense.
 - In 3:16 the source has no separate "after me" phrase. The straps and
   sandals are plural, as are the threshing floors in 3:17; the burning
-  predicate in 3:17 is future.
+  predicate in 3:17 is future. The active holding sense of aḥīd is supported
+  by [CAL's participle entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29xyd+A).
+- In 3:19 John is the source of the reproof, and Herod is the doer of
+  the evils. In 3:20 beth asire is the prison compound, not an additional
+  house and a separate group of prisoners.
 - In 3:22 the final address is second person, "in you", rather than the
-  reference's "in whom". In 3:23 no beginning-of-ministry wording is added.
+  reference's "in whom". The final first-person perfect has the stative
+  English "I delight". In 3:23 the named subject is Jesus himself; the
+  existential and past copula jointly supply the age predicate's "was".
+  No beginning-of-ministry wording is added.
 - The genealogy retains John in 3:27 and Aram in 3:33, rather than the
   local reference's Joanna and Ram. The final relation in 3:38 is
   "from God", not a further explicit "son of" phrase.
