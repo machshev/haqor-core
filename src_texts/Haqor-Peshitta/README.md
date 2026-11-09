@@ -642,6 +642,48 @@ Source checks for Mark 8:
 
 Source checks for Mark 9:
 
+- All 157 original shared spans were checked against the exact forms,
+  morphology and connected English. Eight justified exceptions remain:
+  the human-being expression in 9:3, suddenness in 9:8, the exception
+  particle in 9:9, three immediate-time expressions, spirit possession
+  in 9:17, and the dying predicate with its ethical dative in 9:26.
+- In 9:1 the kingdom's coming verb is perfect, "has come". In 9:3 the
+  clothing has two state descriptions, radiant and very white; the people
+  on earth are the actors of whitening, without an added fuller noun.
+  In 9:4 Elijah and Moses are the speakers with Jesus.
+- In 9:7 the Son retains "my" and "beloved", and hearing him is a plural
+  command. In 9:9 the prohibition's exception is temporal. In 9:10 the
+  first question word asks what the saying means; the later ma d-qam
+  introduces "when he has risen", parallel to the preceding verse.
+- In 9:11 wale supplies the right/proper/necessity predicate, "must".
+  In 9:12 the citation reading "as it is written" follows Murdock; the
+  particle also admits an interrogative reading, so this is a contextual
+  choice rather than a different source form. In 9:15 "whole" modifies
+  the crowd, separately from the immediate-time expression.
+- In 9:17 the spirit is the non-speaking subject. In 9:18 it seizes and
+  convulses the boy, while the boy foams, gnashes his teeth and withers.
+  The disciples were asked to cast out the spirit, not the boy. In 9:20
+  the spirit sees Jesus and convulses the boy; the boy then falls and
+  writhes. In 9:21 English supplies the duration predicate implicit in
+  the nominal time question, retaining for him, now and since separately.
+- In 9:24 the father cries out, retains "my Lord", and asks help with
+  the lack of his faith. In 9:25 the two first-person forms frame
+  "I am commanding you". In 9:26 the observers' death claim is distinct
+  from the narrator's comparison to a dead person.
+- In 9:31 handing over and being killed are passive, the killers are
+  plural, and rising is active. The singular day with its numeral gives
+  the third day. In 9:32 the anticipatory pronoun resumes the saying;
+  the following fear and asking clauses keep their separate owners.
+- In 9:38 the following verb is perfect. In 9:39 the negative existential
+  governs both doing mighty works and quickly speaking evil. In 9:40
+  both pronouns are "you", rather than another textual tradition's "us".
+  In 9:42 the millstone's donkey modifier and both counterfactual passive
+  predicates remain explicit.
+- In 9:43-48 each body part, possessive, causative stumble predicate,
+  command, quantity and destination has its own owner. The three refrain
+  clauses retain both possessives and both negatives. In 9:50 the final
+  hwaw is the plural imperative "be at peace" in context; its isolated
+  SEDRA perfect tag does not override the homographic command reading.
 - In 9:5 there are three booths, one each for Jesus, Moses, and Elijah.
   The following "one" belongs to each preceding recipient phrase.
 - In 9:22 the requests are singular: "help me" and "have compassion on me".
