@@ -2,7 +2,7 @@
   "id": "elah",
   "root": "אלה",
   "status": "draft",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "tags": [
     "god",
     "divinity",
@@ -11,7 +11,7 @@
     "curse"
   ],
   "gloss": "God, god; these; oath, curse",
-  "summary": "This spelling holds several families whose meanings must be distinguished: אֱלֹהִים, אֵל and אֱלוֹהַּ name God or a god; אֵלֶּה points to “these”; אָלָה names an oath and its curse. אֱלֹהִים has a plural form but can take singular grammar when naming God, or refer to multiple gods. The entry also retains the fat-tail word, the single verb of lamenting, and the conditional אִלּוּ; their connection to the other families is unclear.",
+  "summary": "This spelling holds several families, which the cognates keep apart: אֱלֹהִים, אֵל and אֱלוֹהַּ name God or a god (Ugaritic, Phoenician, Sabaic, Akkadian, Aramaic and Arabic all have the god-word ʾil or ʾilāh); אֵלֶּה points to “these” (Phoenician, Sabaic and Ge'ez ʾl, ʾellu); אָלָה is the curse that sanctions an oath, and the oath sworn under it (Sabaic ʾlh “curse, swear”, Arabic ʾālā “swear”). אֱלֹהִים has a plural form but takes singular grammar when it names God. The entry also keeps the fat tail אַלְיָה and the one-time verb “lament”, each with Aramaic cognates of its own, and the conditional אִלּוּ; no tie between these and the other families is shown.",
   "words": [
     {
       "lemma": "אֱלֹהִים",
@@ -121,7 +121,13 @@
       "gender": "m",
       "cognate_ids": [
         "ar-ilah",
-        "akk-ilu"
+        "akk-ilu",
+        "uga-il",
+        "phn-el",
+        "phn-elim",
+        "sab-el",
+        "sab-elah",
+        "arc-elah"
       ],
       "greek": [
         {
@@ -181,14 +187,18 @@
         }
       ],
       "cognate_ids": [
-        "ar-ula"
+        "ar-ula",
+        "phn-elle",
+        "sab-el-these",
+        "gez-ellu",
+        "akk-ullu"
       ],
       "summary": "A plural demonstrative for people or things, not a word for deity. Its relation to the God-words is not established."
     },
     {
       "lemma": "אֵל",
       "pos": "noun",
-      "gloss": "God, god",
+      "gloss": "God, god; might",
       "bdb": [
         "a.dl.ab"
       ],
@@ -210,6 +220,57 @@
             {
               "ref": "Psa.19.2",
               "role": "defining"
+            },
+            {
+              "ref": "Exo.15.11",
+              "role": "defining",
+              "note": "“Who is like you among the אֵלִם, Yahweh?”: the plural, gods."
+            }
+          ]
+        },
+        {
+          "gloss": "power (of one's hand)",
+          "definition": "In the idiom יֵשׁ לְאֵל יָד, “it is in the power of (one's) hand”, and its negative אֵין לְאֵל יָד: the ability to carry something out.",
+          "evidence": [
+            {
+              "ref": "Gen.31.29",
+              "role": "defining",
+              "note": "Laban: “It is in the power of my hand to do you harm.”"
+            },
+            {
+              "ref": "Deu.28.32",
+              "role": "defining",
+              "note": "Children given to another people, “and there is no power in your hand”."
+            },
+            {
+              "ref": "Mic.2.1",
+              "role": "defining",
+              "note": "They do evil at morning light “because it is in the power of their hand”."
+            },
+            {
+              "ref": "Pro.3.27"
+            },
+            {
+              "ref": "Neh.5.5"
+            }
+          ]
+        },
+        {
+          "gloss": "mighty, of God (superlative)",
+          "definition": "Set after a noun, אֵל marks the mightiest of its kind: mountains and cedars “of God”, set in parallel with the great deep.",
+          "evidence": [
+            {
+              "ref": "Psa.36.7",
+              "role": "defining",
+              "note": "“Your righteousness is like the mountains of אֵל, your judgments the great deep.”"
+            },
+            {
+              "ref": "Psa.80.11",
+              "note": "“Cedars of אֵל.”"
+            },
+            {
+              "ref": "Ezk.32.21",
+              "note": "אֵלֵי גִבּוֹרִים, the mighty among the warriors, speak from Sheol."
             }
           ]
         }
@@ -217,8 +278,16 @@
       "gender": "m",
       "cognate_ids": [
         "ar-ilah",
-        "akk-ilu"
-      ]
+        "akk-ilu",
+        "uga-il",
+        "phn-el",
+        "phn-elim",
+        "sab-el",
+        "sab-elah",
+        "arc-elah",
+        "ar-ill"
+      ],
+      "summary": "The singular divine title, used of the God of Israel and of other gods. In an idiom it means the power of one's hand, and after a noun it marks the mightiest of its kind; whether that “might” is the word's own first sense or comes from the divine title is not shown by the cognates, none of which means “power”."
     },
     {
       "lemma": "אֱלוֹהַּ",
@@ -252,7 +321,13 @@
       "gender": "m",
       "cognate_ids": [
         "ar-ilah",
-        "akk-ilu"
+        "akk-ilu",
+        "uga-il",
+        "phn-el",
+        "phn-elim",
+        "sab-el",
+        "sab-elah",
+        "arc-elah"
       ]
     },
     {
@@ -264,8 +339,8 @@
       ],
       "senses": [
         {
-          "gloss": "binding oath",
-          "definition": "A solemn undertaking, or the oath by which someone is bound.",
+          "gloss": "oath sworn under a curse",
+          "definition": "The oath by which someone binds himself, calling a curse on himself if he breaks it; often joined with a covenant, and Yahweh calls the oath he imposed “my oath”.",
           "evidence": [
             {
               "ref": "Gen.24.41",
@@ -275,6 +350,16 @@
             {
               "ref": "Ezk.17.18",
               "role": "defining"
+            },
+            {
+              "ref": "Gen.26.28",
+              "role": "defining",
+              "note": "“Let there be an אָלָה between us… let us cut a covenant with you.”"
+            },
+            {
+              "ref": "Ezk.17.19",
+              "role": "defining",
+              "note": "Yahweh: “my אָלָה that he despised and my covenant that he broke”."
             }
           ]
         },
@@ -294,15 +379,61 @@
             {
               "ref": "Job.31.30",
               "role": "defining"
+            },
+            {
+              "ref": "Num.5.21",
+              "role": "defining",
+              "note": "“The oath (שְׁבֻעָה) of the curse (אָלָה)”: the curse is what the oath calls down."
+            },
+            {
+              "ref": "Zec.5.3",
+              "note": "The curse goes out over the land against the thief and the false swearer."
             }
           ]
         }
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-ala"
+        "ar-ala",
+        "sab-elah-curse"
       ],
-      "summary": "An oath that binds its parties, including its invoked sanction, and a curse pronounced upon someone. The oath-family is not derived here from the God-words."
+      "summary": "The curse a person invokes on himself if he breaks his word, and so the oath sworn under it; also a curse pronounced on someone. Sabaic has the same root for “curse, swear” and Arabic for “swear”.",
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שְׁבוּעָה",
+            "note": "Oath, paired with אָלָה: the sworn word and the curse that sanctions it.",
+            "evidence": [
+              {
+                "ref": "Num.5.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.9.11"
+              },
+              {
+                "ref": "Neh.10.30"
+              }
+            ]
+          },
+          {
+            "lemma": "בְּרִית",
+            "note": "Covenant, which the אָלָה binds.",
+            "evidence": [
+              {
+                "ref": "Deu.29.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.17.19"
+              },
+              {
+                "ref": "Gen.26.28"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "lemma": "אָלָה",
@@ -335,7 +466,8 @@
                 }
               ],
               "cognate_ids": [
-                "ar-ala"
+                "ar-ala",
+                "sab-elah-curse"
               ]
             }
           ]
@@ -359,7 +491,8 @@
                 }
               ],
               "cognate_ids": [
-                "ar-ala"
+                "ar-ala",
+                "sab-elah-curse"
               ]
             }
           ]
@@ -396,9 +529,10 @@
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-alya"
+        "ar-alya",
+        "arc-alyeta"
       ],
-      "summary": "The fatty tail of a sheep offered with its other fat. The anatomical meaning has an Arabic counterpart, but its link to the entry’s other meanings is unclear."
+      "summary": "The fatty tail of a sheep, offered with its other fat. Arabic and Aramaic have the same word for it; how it relates to the entry's other meanings is not shown."
     },
     {
       "lemma": "אִלּוּ",
@@ -425,7 +559,10 @@
           ]
         }
       ],
-      "summary": "Introduces a hypothetical condition in two passages. Its connection to the other words of this spelling has not been established."
+      "summary": "Introduces a hypothetical condition, in two late passages. Aramaic has the same word (the Targums render both verses with it). It looks like a compound of a conditional particle (אִם, Aramaic אִן) with לוּ “if only”, not a word formed from this root; it is kept here by spelling.",
+      "cognate_ids": [
+        "arc-illu"
+      ]
     },
     {
       "lemma": "תַּאֲלָה",
@@ -449,7 +586,8 @@
       ],
       "gender": "f",
       "cognate_ids": [
-        "ar-ala"
+        "ar-ala",
+        "sab-elah-curse"
       ]
     },
     {
@@ -478,7 +616,10 @@
           ]
         }
       ],
-      "summary": "A single command to lament. The verse fixes the act of mourning, but does not explain a link with swearing or deity."
+      "summary": "A single command to lament, fixed by its simile of a young widow in sackcloth. Aramaic has the verb “lament, wail” and a noun “wailing woman”; no tie to swearing or to deity is shown.",
+      "cognate_ids": [
+        "arc-ela-lament"
+      ]
     },
     {
       "lemma": "אֵל",
@@ -505,7 +646,11 @@
         }
       ],
       "cognate_ids": [
-        "ar-ula"
+        "ar-ula",
+        "phn-elle",
+        "sab-el-these",
+        "gez-ellu",
+        "akk-ullu"
       ],
       "summary": "A shorter demonstrative form beside אֵלֶּה, distinct from the divine noun אֵל."
     },
@@ -542,7 +687,13 @@
       "gender": "m",
       "cognate_ids": [
         "ar-ilah",
-        "akk-ilu"
+        "akk-ilu",
+        "uga-il",
+        "phn-el",
+        "phn-elim",
+        "sab-el",
+        "sab-elah",
+        "arc-elah"
       ]
     },
     {
@@ -567,7 +718,11 @@
       ],
       "lang": "arc",
       "cognate_ids": [
-        "ar-ula"
+        "ar-ula",
+        "phn-elle",
+        "sab-el-these",
+        "gez-ellu",
+        "akk-ullu"
       ]
     },
     {
@@ -597,7 +752,11 @@
       "lang": "arc",
       "root": "אלינ",
       "cognate_ids": [
-        "ar-ula"
+        "ar-ula",
+        "phn-elle",
+        "sab-el-these",
+        "gez-ellu",
+        "akk-ullu"
       ]
     },
     {
@@ -629,7 +788,13 @@
       "gender": "m",
       "cognate_ids": [
         "ar-ilah",
-        "akk-ilu"
+        "akk-ilu",
+        "uga-il",
+        "phn-el",
+        "phn-elim",
+        "sab-el",
+        "sab-elah",
+        "arc-elah"
       ]
     },
     {
@@ -661,7 +826,14 @@
       "gender": "f",
       "cognate_ids": [
         "ar-ilah",
-        "akk-ilu"
+        "akk-ilu",
+        "uga-il",
+        "phn-el",
+        "phn-elim",
+        "sab-el",
+        "sab-elah",
+        "arc-elah",
+        "akk-ilutu"
       ]
     },
     {
@@ -688,7 +860,13 @@
       "lang": "syc",
       "cognate_ids": [
         "ar-ilah",
-        "akk-ilu"
+        "akk-ilu",
+        "uga-il",
+        "phn-el",
+        "phn-elim",
+        "sab-el",
+        "sab-elah",
+        "arc-elah"
       ]
     },
     {
@@ -716,7 +894,17 @@
       "gender": "f",
       "cognate_ids": [
         "ar-ilah",
-        "akk-ilu"
+        "akk-ilu",
+        "uga-il",
+        "phn-el",
+        "phn-elim",
+        "sab-el",
+        "sab-elah",
+        "arc-elah",
+        "uga-ilt",
+        "phn-elt",
+        "sab-elt",
+        "akk-iltu"
       ]
     }
   ],
@@ -792,6 +980,357 @@
           "locator": "p. 87, root ألي, أَلْيَةٌ (n1148)"
         }
       ]
+    },
+    {
+      "id": "uga-il",
+      "lang": "uga",
+      "form": "𐎛𐎍",
+      "translit": "ʾil",
+      "gloss": "god, deity; Il (the god El)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 179, §93 Glossary, il",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n206",
+          "note": "\"il /ʾil-/: ilm sing. with -m 1.5:I:7 = 88.54; ilm du. and pl. abs.; … ily pl. constr. 2.16:4 = 84.1 “god, deity” (H. ʾēl, Phoen., Aram. ʾl, Arab. ʾil, Akkad. ilu)\"; second entry: \"il /ʾil-/ … DN (cf. H. ʾēl, Phoen. ʾl …)\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 179, §93 Glossary, ilnym",
+          "note": "\"pl. … “(netherworld) gods” (cf. Phoen. pl. ʾlnm, alonim)\"."
+        }
+      ],
+      "note": "Ugaritic uses ʾil both for “a god” (plural ilm “gods”, ily ugrt “the gods of Ugarit”) and as the name of the head god, as Hebrew אֵל is both the title and, in names, God himself."
+    },
+    {
+      "id": "uga-ilt",
+      "lang": "uga",
+      "form": "𐎛𐎍𐎚",
+      "translit": "ʾilt",
+      "gloss": "goddess",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 179, §93 Glossary, ilt",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n206",
+          "note": "\"ilt 1.14:IV:35, 39 = 88.72 “goddess” (Phoen. ʾlt, cf. Akkad. iltu)\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-el",
+      "lang": "phn",
+      "form": "𐤀𐤋",
+      "translit": "ʾl",
+      "gloss": "god; El, head of the pantheon",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 49, ʾL I and ʾL II",
+          "note": "\"ʾL I [Heb. ʾel] n.m. GOD\", KAI 147.1/3 h ʾl … ʾbbrktm, \"May the god/God grant us of his blessings!\"; \"ʾL II d. ʾIL, the head of the pantheon, his full name being ʾl qn ʾrṣ, Il, Creator of the Earth\"."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 56, ʾL QN ʾRṢ",
+          "note": "KAI 26 A III 18/19 bʿlšmm wʾl qn ʾrṣ, \"Baalsamem and El, Creator of the Earth\"."
+        }
+      ],
+      "note": "“El, creator of the earth” (ʾl qn ʾrṣ) is the phrase of Gen 14:19, 22, אֵל עֶלְיוֹן קֹנֵה שָׁמַיִם וָאָרֶץ."
+    },
+    {
+      "id": "phn-elim",
+      "lang": "phn",
+      "form": "𐤀𐤋𐤌",
+      "translit": "ʾlm",
+      "gloss": "god; goddess; gods; God",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 52, ʾLM I and ʾLM II",
+          "note": "\"ʾLM I [Heb. ʾelīm] n.m. 1. GOD\", KAI 59.2 rb khnm ʾlm nrgl \"Chief Priest of the god Nergal\"; \"2. GODDESS\"; \"3. GODS\", KAI 26 A II 3/6 bʿbr bʿl wʾlm \"thanks to Baal and the gods\"; \"ʾLM II d. ʾILĪM, “God”, used like ʾdn, ʾdny, ʾdnm in place of a divine name\", e.g. mtnʾlm \"Gift of God\"."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 53–54, ʾLN",
+          "note": "\"n.m. GOD\"; \"m.pl. GODS\", KAI 14.9 hʾlnm hqdšm \"the holy gods\"; \"f.pl. GODDESSES\", Poen. 940 alonim ualonut."
+        }
+      ],
+      "note": "A plural form used of one god, and as a title in place of a god's name (ʾILĪM “God”), as אֱלֹהִים is a plural that names one God."
+    },
+    {
+      "id": "phn-elt",
+      "lang": "phn",
+      "form": "𐤀𐤋𐤕",
+      "translit": "ʾlt",
+      "gloss": "goddess",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 56, ʾLT I",
+          "note": "\"[fem. of Heb. ʾel] n.f. GODDESS\", KAI 89.1/4 rbt ḥwt ʾlt mlkt \"O Lady ḤWT, goddess who rules the dead\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-elle",
+      "lang": "phn",
+      "form": "𐤀𐤋",
+      "translit": "ʾl",
+      "gloss": "these",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 50, ʾL III",
+          "note": "\"[Heb. ʾelle] pron. THESE\", KAI 4.2/3 kl mplt hbtm ʾl \"all these ruined temples\"; KAI 14.21/22 ʾlnm hqdšm ʾl \"These holy gods\"; Poen. 938 ch ʾily gubulim \"that these are the environs\"."
+        }
+      ],
+      "note": "Phoenician writes “these” ʾl, like the short Hebrew הָאֵל (Gen 26:3)."
+    },
+    {
+      "id": "sab-el",
+      "lang": "sem",
+      "form": "𐩱𐩡",
+      "translit": "ʾl",
+      "gloss": "god (contrasted with a patron deity); the god Il",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 15, ʾL I n¹",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"GOD, contrasted with šym “patron deity” (cf ʾlh) [Heb ʾēl, Ar ʾilāh id.]\"; J643b/10 wʾlʾlt hgrn M \"and the gods of the city M.\"; \"ʾl may sometimes represent the n.pr of the god ʾIl\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-elt",
+      "lang": "sem",
+      "form": "𐩱𐩡𐩩",
+      "translit": "ʾlt",
+      "gloss": "goddess",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 15, ʾL I n²",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"GODDESS\", R4046/3 brdʾ ʾlthmw \"by the aid of their goddess\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-elah",
+      "lang": "sem",
+      "form": "𐩱𐩡𐩠",
+      "translit": "ʾlh",
+      "gloss": "god",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 17, ʾLH I",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"GOD [Ar ʾilāh id.]\", R3957/3-4 \"she confessed and vowed penance to her god\"; C541/81-2 ʾlhn bʿl smyn wʾrḍn \"the god, the lord of heaven and earth\"."
+        }
+      ],
+      "note": "Sabaic has both the short god-word ʾl and the long ʾlh, as Hebrew has אֵל beside אֱלוֹהַּ. “The god, lord of heaven and earth” is the title of Gen 14:19."
+    },
+    {
+      "id": "sab-el-these",
+      "lang": "sem",
+      "form": "𐩱𐩡𐩬",
+      "translit": "ʾln",
+      "gloss": "these",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 15–16, ʾL II",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"demonstrative adjective, d and p: THESE [Cf Eth ʾellu and the element ʾel-, ʾal- in Eth and Ar demonstratives and relatives]\", R4781/1 \"these 2 palmgroves\"; demonstrative pronoun \"THESE\", Gl447/1 \"these are the owners of the grave\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-elah-curse",
+      "lang": "sem",
+      "form": "𐩱𐩡𐩠",
+      "translit": "ʾlh",
+      "gloss": "curse, swear; (pl. ʾlht) curses, oaths",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 17, ʾLH II",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"CURSE or SWEAR [Heb ʾālāh id, n taʾalāh “curse”]\", J578/42 bn ʾlhtm dytʾlhnhmy šnʾhmw \"from curses (with) which their enemy may curse them (or, oaths which he may swear)\"."
+        },
+        {
+          "source": "biella-1982",
+          "locator": "p. 18, ʾLHT",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"CURSES or OATHS\", J578/42."
+        }
+      ],
+      "note": "One Sabaic word for curse and oath, as אָלָה is both. Sabaic writes it with the same letters as its god-word ʾlh; Arabic keeps the two apart (ʾlh “god”, ʾlw “swear”)."
+    },
+    {
+      "id": "gez-ellu",
+      "lang": "gez",
+      "form": "እሉ",
+      "translit": "ʾəllu",
+      "gloss": "these",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 1028, ዝ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n537",
+          "note": "\"ዝ pron. demonstr. m. … Pl. m. እሉ, f. እላ et እሎን … hic, haec, hoc\"."
+        }
+      ],
+      "note": "Ge'ez forms the plural of its demonstrative from ʾəll-, as Hebrew does אֵלֶּה beside the singular זֶה."
+    },
+    {
+      "id": "akk-ullu",
+      "lang": "akk",
+      "form": "ullû",
+      "translit": "ullû",
+      "gloss": "that, those; distant",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000016930, ullû [that] DP",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000016930.html"
+        }
+      ],
+      "note": "A demonstrative of the far thing (“that, yonder”), not the near “these”; kept as possible."
+    },
+    {
+      "id": "akk-iltu",
+      "lang": "akk",
+      "form": "iltu",
+      "translit": "iltu",
+      "gloss": "goddess",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000068310, iltu [goddess] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000068310.html"
+        }
+      ]
+    },
+    {
+      "id": "akk-ilutu",
+      "lang": "akk",
+      "form": "ilūtu",
+      "translit": "ilūtu",
+      "gloss": "divinity, godhead",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000036160, ilūtu [divinity] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000036160.html"
+        }
+      ],
+      "note": "An abstract noun of divinity formed from ilu, as Syriac אַלָהוּתָא is from אַלָהָא."
+    },
+    {
+      "id": "arc-elah",
+      "lang": "arc",
+      "form": "אֱלָהָא",
+      "translit": "ʾĕlāhā",
+      "gloss": "God; (pl.) gods",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֱלָהּ, אֱלָהָא",
+          "note": "\"(= h. אֱלוֹהַּ) God\", Targ. O. Deut. XXXIII, 26; Y. B. Mets. II, 8ᶜ אלההון דיהודאי \"the God of the Jews\"; \"Pl. (also plur. majest.) אֱלָהִין\"."
+        }
+      ],
+      "note": "Targum and Talmudic Aramaic, beside scripture's own Aramaic אֱלָהּ."
+    },
+    {
+      "id": "arc-alyeta",
+      "lang": "arc",
+      "form": "אַלְיְתָא",
+      "translit": "ʾalyetā",
+      "gloss": "fat tail",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אַלְיְתָא",
+          "note": "\"fat-tail. Targ. Ex. XXIX, 22\"; Ḥull. 127ᵃ \"with its fat, skin and tail\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-ela-lament",
+      "lang": "arc",
+      "form": "אֲלָא",
+      "translit": "ʾălā",
+      "gloss": "lament, wail; (אָלְיְתָא) wailing woman",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אלי II, אֲלָא",
+          "note": "\"(= ילל …) to lament, wail. Targ. II Sam. I, 17\"; Pa. \"same. Targ. Jud. XI, 40 לאַלָּאָה\"."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אָלְיְתָא",
+          "note": "\"wailing woman. Pl. … Targ. Jer. IX, 16 (17)\"."
+        }
+      ],
+      "note": "Lament for the dead (David over Saul and Jonathan) and the yearly lament for Jephthah's daughter, as Joel's lament is a young widow's."
+    },
+    {
+      "id": "arc-illu",
+      "lang": "arc",
+      "form": "אִילּוּלָא",
+      "translit": "ʾillūlā",
+      "gloss": "if; if indeed; were it not",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אִילּוּלָא, sense 2",
+          "note": "\"if indeed, if. Targ. Koh. VI, 6. Targ. Esth. VII, 4\": the Targums of the two verses that use אִלּוּ."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אִילּוּ",
+          "note": "\"(late b. h. …) if (oh that!)\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-ill",
+      "lang": "ar",
+      "form": "إِلّ",
+      "translit": "ʾill",
+      "gloss": "God (disputed); compact, covenant; relationship; anything sacred or inviolable",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 75, root ءلل, إِلٌّ (n1039)",
+          "note": "\"Anything which has a quality requiring it to be regarded as sacred, or inviolable\"; \"Relationship\"; \"A compact, or covenant\"; \"Lordship\"; \"الإِلُّ also signifies God\", a sense some deny."
+        }
+      ],
+      "note": "A short Arabic god-word of the shape ʾil, whose meaning “God” the Arabic authorities dispute; the same word means a compact or covenant. Possible only."
     }
   ],
   "doctrine": [
@@ -811,5 +1350,5 @@
       ]
     }
   ],
-  "note": "The spelling is a container, not a claim that deity, demonstratives, oaths, fat tails and lament share an established semantic origin. Proper names, including the month אֱלוּל, are left for name entries, even where the imported POS field is empty. Terebinth אֵלָה is not filed under this root in the brief; no claim about its root is made here. Redirects are omitted. The Hebrew short demonstrative (rootless a.dj.aa) and Aramaic אִלֵּין are included as forms of the demonstrative family. The Aramaic short אֵל (xa.an.aa) has no distinct Aramaic occurrence established here and is not added from Hebrew spelling matches alone. Exo 21:6 and 22:7–8 can be read as appearing before God or before judges; they are not used to make “judges” an unqualified separate sense. Psalm 82’s אֱלֹהִים are read as Jesus reads them (Jhn 10:35), men to whom God’s word came, and Psa 8:6’s as Hebrews reads them (Heb 2:7), angels; Exo 21:6 and 22:7–8 may belong with the judges. 1Sa 28:13’s reported vision still needs contextual review. Cognates support separate families, not all the senses indiscriminately; the resulting negative support balances are deliberate."
+  "note": "The spelling holds words of several older roots, not one semantic origin. Proper names, including the month אֱלוּל, are left for name entries. Terebinth אֵלָה is not filed under this root in the brief (its tree-words go with אַיִל, אֵלוֹן); no claim about its root is made here. Redirects are omitted. The Hebrew short demonstrative (rootless a.dj.aa) and Aramaic אִלֵּין are included as forms of the demonstrative family. The Aramaic short אֵל (xa.an.aa) has no distinct Aramaic occurrence established here. Exo 21:6 and 22:7–8 can be read as appearing before God or before judges; they are not used to make “judges” an unqualified separate sense. Psalm 82’s אֱלֹהִים are read as Jesus reads them (Jhn 10:35), and Psa 8:6’s as Hebrews reads them (Heb 2:7); 1Sa 28:13’s reported vision still needs contextual review.\n\nOpen questions (2026-11-09): (1) The Hebrew forms themselves point to two older roots behind the spelling: אֱלוֹהַּ has a consonantal ה (mappiq), as Sabaic and Arabic ʾlh “god”, while the oath verb is third-weak (וַיֹּאֶל, אָלִית, תַּאֲלָה), as Arabic ʾlw/ʾly “swear”; the lament אֱלִי and the fat tail אַלְיָה are also ʾly. ה is not one of the merged letters the `sounds` field records, so the split shows only here. Against it, Sabaic writes “curse, swear” ʾlh with the same letters as its god-word, and Arabic إِلّ joins “God” (disputed) and “covenant”: whether the oath was first sworn by the god is open. (2) The “power” sense of אֵל (יֵשׁ לְאֵל יָדִי) and the superlative “mountains of God” may be another root (BDB's leads: אול “be strong”); no cognate meaning “power” has been found. (3) אִלּוּ looks like a compound (אִם/אִן + לוּ) rather than a word of this root; consider moving it out. (4) Not found or not checked: Ugaritic has no oath, fat-tail or lament word of this shape in Segert or Fisher; Krahmalkov has no Phoenician ʾlt “oath, curse” (the Arslan Tash amulet's ʾlt, if wanted, needs DNWSI); the Mesha stele text was not checked for ʾl; Ge'ez has no god-word of this root (አምላክ is from mlk), so none is cited; Syriac (Payne Smith) not yet consulted for the lament and fat-tail words."
 }
