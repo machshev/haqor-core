@@ -1227,21 +1227,37 @@ Source checks for Luke 6:
 
 Source checks for Luke 7:
 
+- The chapter's 210 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Only the illness
+  predicate in 7:2 remains shared, with its past auxiliary separate and
+  its exact reason in the ledger. Ordinary negatives, modifiers, copulas,
+  names, noun phrases, and clause constituents have separate source owners.
 - In 7:1 all the words are completed in the people's hearing. In 7:6–8
   the centurion's first-person speech retains "My Lord", "my roof",
   "my servant", his own coming to Jesus, and his command over soldiers.
 - In 7:12 the dead man is his mother's only son, and his mother is a
   widow. In 7:15 he sits up and begins speaking; Jesus gives him to his
   mother, without a change of actor.
+- In 7:12 the perceived scene becomes an English object clause: he saw
+  that they were escorting a dead man. In 7:18 John remains the recipient
+  of his disciples' report in the English passive construction.
 - In 7:18 John's disciples tell him what happened. In 7:26 prophets are
   plural. In 7:27 "my messenger" has a first-person suffix, while "the way"
   has no possessive suffix. The prophet and Baptizer titles in 7:28 and
   the tax collectors in 7:29 are explicit.
+- In 7:25 the relative clause about clothing and luxury and the matrix
+  location clause retain separate copulas. In 7:30 "for themselves"
+  retains the rejecters' personal reference; [CAL's verb entry](https://cal.huc.edu/cal_entry_web.php?lemma=%2Blm+V)
+  records the Syriac spurn/deny sense used for "rejected".
 - In 7:36 the Pharisee invites Jesus; Jesus then enters and reclines.
   In 7:37 the feminine demonstrative describes "that city", and the
   masculine demonstrative describes "that Pharisee".
 - In 7:41 one debtor owes five hundred denarii and the other fifty.
   In 7:42 both debts are forgiven.
+- In 7:41 the creditor expression is split as "debt holder"; the
+  existential and past copula also have separate owners. In 7:42 the
+  lack of means to repay belongs to the debtors, and the creditor
+  forgives both of them before asking which will love him more.
 - In 7:44 Jesus says he entered the house; in 7:45 the entry verb is
   feminine, referring to the woman. In 7:46 oil for his head and perfumed
   oil for his feet remain distinct.
