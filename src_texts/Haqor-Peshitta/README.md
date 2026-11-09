@@ -2337,18 +2337,21 @@ Source checks for John 1:
 
 Source checks for John 2:
 
-- John 2:1 renders משתותא as a wedding feast and preserves Cana as a city of Galilee.
-- John 2:3 retains the source's explicit “they have no wine” negative and the mother's address to Jesus.
+- John 2:1 renders משתותא as a wedding feast and preserves Cana as a city of Galilee. The day, ordinal, city, Galilee, mother, Jesus, and final was/there have separate source owners.
+- John 2:2 retains the independent subject pronoun beside Jesus. The anticipatory dative and explicit feast complement jointly own “to the feast,” with a ledger exception.
+- John 2:3 retains the source's explicit “they have no wine” negative and the mother's address to Jesus. The perfect plus past auxiliary is “had run out”; the negative existential and possessor dative jointly own “have,” separately from “they,” “no,” and “wine.”
 - John 2:4 preserves the question “What is that to me and to you, woman?” and the not-yet-arrived hour.
-- John 2:6 preserves six stone water jars, their Jewish purification use, and the two-or-three-measure capacity.
+- John 2:6 preserves six stone water jars, their Jewish purification use, and the two-or-three-measure capacity. Existential “there,” past “were,” locative “there,” stone, jars, and six have separate owners; the repeated two/two construction is distributed as “two measures each.”
+- John 2:7 retains the anticipatory object as “them—the water jars,” with “with water” linked to its actual water noun. The master and feast nouns in 2:8-9 have separate owners.
 - John 2:9 distinguishes the master’s ignorance of the wine's source from the attendants' knowledge and their having filled them with water, without adding a causal conjunction or an unlicensed “jars.”
-- John 2:10 renders the source drunk predicate directly and retains the source “then” before the inferior wine.
+- John 2:10 renders the source drunk predicate directly and retains the source “then” before the inferior wine. The object suffix of “have kept” is retained as “it—the good wine,” with each lexical word separately linked.
 - John 2:15 preserves the reflexive dative in “he made himself a whip,” the singular cord, the expulsion of all named groups, poured-out money, and overturned tables.
-- John 2:19-21 distinguishes the Jews' literal temple from Jesus' temple-as-body explanation; “I will raise it up” has no added “again,” and the explanatory verb is simple past “he spoke.”
-- John 2:20 preserves the source position order for forty-six years, the built temple, second-person “you,” three days, and the raising question.
-- John 2:13 keeps the movement verb, Jerusalem, and Jesus together in one source-linked phrase, matching positions 4–6.
-- John 2:22 retains both Scripture and the word spoken by Jesus after the disciples remember his saying.
-- John 2:24-25 preserves Jesus' refusal to entrust himself, his knowledge of everyone, and the explicit claim that he needs no human testimony.
+- John 2:19-21 distinguishes the Jews' literal temple from Jesus' temple-as-body explanation; “I will raise it up” has no added “again.” The explanatory perfect plus past auxiliary is “he had spoken,” with separate verb and auxiliary owners.
+- John 2:20 separates forty, and six, years, temple, this, the building verb, the second-person pronouns, three, days, raising, and its object. The postposed personal copulas in 2:19-20 supply the English auxiliary separately from the raising participle.
+- John 2:13 separates the movement verb, Jerusalem, and Jesus at positions 4-6, repeating the verb's owner for its separated conjunction.
+- John 2:22 retains plural “Scriptures” and the word spoken by Jesus after the disciples remember his saying. “From,” spatial “among,” and “the dead” have separate owners; the auxiliary belongs to the earlier “had said,” not to the final “Jesus spoke.”
+- John 2:23 retains the personal existential's subject, its past copula, Jesus, the narrative particle, Passover, and feast with separate links.
+- John 2:24-25 preserves Jesus' refusal to entrust himself, his knowledge of everyone, and the explicit claim that he needs no human testimony. The negation, participle, auxiliaries, pronouns, recipients, and human nouns have separate source owners.
 
 Source checks for John 3:
 
