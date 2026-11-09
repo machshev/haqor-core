@@ -1869,6 +1869,12 @@ Source checks for Luke 18:
 
 Source checks for Luke 19:
 
+- The chapter's 172 original shared spans were checked against exact
+  source forms, morphology, and continuous English. Nine remain:
+  five repeated pronominal references, three possession constructions,
+  and the ascent verb's ethical dative. Their exact positions and
+  linguistic reasons are in the ledger. Ordinary negatives, auxiliaries,
+  modifiers, numeral ratios, and clause constituents have separate owners.
 - In 19:2 Zacchaeus is rich and chief of the tax collectors. In 19:3
   the stature clause repeats his name. In 19:4 he runs ahead of Jesus
   and climbs the sycamore fig tree to see him. In 19:5 the suitability
@@ -1878,6 +1884,13 @@ Source checks for Luke 19:
   the poor, and the repayment is fourfold. The source's "one" and "four"
   belong to that multiplier, not an additional defrauded person.
   In 19:9 life comes to this house, and this one also is Abraham's son.
+- In 19:7 position 10's `על` is read as the entering verb, followed by
+  position 11's lodging verb in the serial construction. The export tags
+  the homograph as a preposition, unlike the same entering form in 19:1
+  and 19:45. The clause context supports the verbal reading; the
+  [Peshitta text](https://www.peshitta.eu/nt/luke/19.html)
+  confirms the two-word sequence. In 19:8 the rate is "four for one",
+  with both numerals and the rate preposition separately linked.
 - In 19:10 seeking and giving life remain distinct. In 19:11 they were
   hearing and supposing; "at that hour" belongs to the expectation that
   the kingdom was about to be revealed, not to an hour being ready.
@@ -1896,6 +1909,9 @@ Source checks for Luke 19:
   "everyone who has"; no different receiver is introduced. In 19:27
   the enemies belong to the parable's ruler, who orders their execution
   before him. No additional "here" is supplied.
+  The resumed recipient is expressed once as "to everyone"; the negative
+  possession's relative, auxiliary, and negative remain separate from
+  the shared possession predicate.
 - In 19:29 the mountain is called the place of Olives, with two of his
   disciples sent. In 19:30 the village is opposite us, not you; the colt
   has never been ridden. In 19:31 and 19:34 the title is "our Lord".
@@ -1910,6 +1926,8 @@ Source checks for Luke 19:
   and press from every side, without an added rampart clause. In 19:44
   the children are within the city, and no stone upon stone is left in it;
   the time is that of its visitation.
+  In 19:42 the dative pronoun supplies English "they" for the hidden
+  things, with the hiding predicate separately linked and no new receiver.
 - In 19:45 both buying and selling occur in the temple. In 19:46 the
   house is a house of prayer, without a verb meaning call. In 19:47
   the chief priests, scribes, and elders seek to destroy him. In 19:48
