@@ -596,6 +596,37 @@ Source checks for Mark 7:
 
 Source checks for Mark 8:
 
+- All 123 original shared spans were checked against the exact forms,
+  morphology and connected English. Seven exceptions remain: the en hu
+  conditional, two circumstantial full-basket descriptions, two human-being
+  idioms, the openly expression, and the go command with its ethical dative.
+- In 8:1 the positive and negative existential clauses have separate
+  auxiliaries. In 8:2 the negative existential and the following indefinite
+  have separate owners within "nothing". In 8:3 the copular pronoun belongs
+  to the conditional marker, not to an additional participant.
+- In 8:6 the crowds are plural. In 8:7 the plural object of setting out
+  refers to the fish; the verb's English constituents surround that object
+  as "set them out". In 8:12 the feminine anticipatory dative identifies
+  the generation receiving no sign, rather than making the sign a recipient.
+- In 8:16 and 8:17 the bread clause keeps its own possessors and negation.
+  In 8:17 the heart's possessor belongs to its existential predicate, not to
+  the preceding understanding clause. In 8:18 the eyes and ears are distinct
+  possessions, each followed by its own negative perception clause.
+- In 8:19-20 kad mleyn describes the collected baskets as full; its
+  circumstantial meaning is retained in the English attributive expression.
+  In 8:23 the first hand belongs to the blind man, while the laying hand is
+  the healer's. In 8:25 the restored subject is clarified as the man; the
+  following seeing predicate retains its past auxiliary.
+- In 8:27 and 8:29 both the "of me" and "that I am" references retain their
+  own first-person forms. In 8:31 the prediction retains cardinal "three"
+  and plural "days", and the rising predicate is active. In 8:32 ayn
+  b-galya is the adverbial openly expression, not an independent physical
+  eye; compare [CAL's bgly entry](https://cal.huc.edu/cal_entry_web.php?lemma=bgly+X).
+- In 8:33 the command's dative is subject-coreferential; the actual direction
+  is behind the speaker. In 8:34-37 self, life, save, lose and their genuine
+  possessive/object suffixes remain with their own source words. In 8:36
+  the impersonal English benefit construction introduces no additional
+  person as an agent.
 - The dismissal clause belongs to source 8:10, after the population count
   in 8:9; it is not duplicated from Murdock's earlier verse boundary.
 - In 8:14 the exception precedes the negative: apart from one loaf, they

@@ -1563,6 +1563,78 @@
           "reason": "The departing predicate nphaq is followed by its subject-coreferential ethical dative leh, referring to the demon. They jointly express that the demon has departed; the dative is not an additional beneficiary or a pronoun for the daughter, whose actual from-complement remains separately linked."
         }
       ]
+    },
+    "41:8": {
+      "sha256": "61e187114bb61882a22421acd7eac23bd62f72e82dd29e73a72d27cb0a762cda",
+      "original_shared_spans": 123,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 3,
+          "english": "And if",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "En hu is the conditional construction, literally if it is. The copular pronoun is part of the conditional marker and is not a separate participant in the sending. The first-person actor and plural object remain separately linked."
+        },
+        {
+          "verse": 19,
+          "english": "full",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Kad mleyn is the circumstantial description of the baskets, while filled. English full expresses that contemporaneous state attributively; forcing when into a separate temporal clause would suggest a new condition rather than describing the collected basketfuls."
+        },
+        {
+          "verse": 20,
+          "english": "full",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Kad mleyn is the circumstantial description of the baskets, while filled. English full expresses that contemporaneous state attributively; forcing when into a separate temporal clause would suggest a new condition rather than describing the collected basketfuls."
+        },
+        {
+          "verse": 24,
+          "english": "people",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Bnay nasha, literally sons of mankind, is the human-being idiom people. The two constituents name humans rather than independent sons and a separate man; any separately rendered genitive prefix remains attached to its actual source owner."
+        },
+        {
+          "verse": 32,
+          "english": "And openly",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Ayn b-galya, literally eye in the open/revealed, is the adverbial expression openly. It describes the manner of speaking rather than an independent physical eye or act of seeing; the prefixed conjunction belongs to the same expression.",
+          "source": "https://cal.huc.edu/cal_entry_web.php?lemma=bgly+X"
+        },
+        {
+          "verse": 33,
+          "english": "Go",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The go imperative is followed by its subject-coreferential ethical dative lakh. They jointly form the command to go; the dative is not a separate destination or beneficiary. The actual behind-me destination remains separately linked."
+        },
+        {
+          "verse": 33,
+          "english": "people",
+          "positions": [
+            17,
+            18
+          ],
+          "reason": "Bnay nasha, literally sons of mankind, is the human-being idiom people. The two constituents name humans rather than independent sons and a separate man; any separately rendered genitive prefix remains attached to its actual source owner."
+        }
+      ]
     }
   }
 }
