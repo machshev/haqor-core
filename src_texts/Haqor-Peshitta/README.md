@@ -5856,16 +5856,23 @@ Source checks for 2 Corinthians 4:
   in craftiness and dealing deceitfully with God's word. Manifestation
   of truth, showing ourselves, all human consciences and being before
   God remain distinct. Anticipating suffixes do not add another owner.
+  Maana lan in verses 1 and 16 is the impersonal feminine weariness
+  predicate with a dative experiencer, rendered "we grow weary";
+  [CAL explicitly describes this construction](https://cal.huc.edu/oneentry.php?cits=all&lemma=m%29n+V).
+  Only that predicate and experiencer remain joint, with "we" separately
+  on lan and the negative separately on la.
 - Verse 3 makes the Gospel's being hidden the condition, with its being
   hidden to those perishing the result. Both hidden predicates remain.
   Verse 4 keeps the God-of-this-world expression, his blinding their
   minds, and the separate causal unbelief and negative dawning clauses.
   The causal "because they do not believe" follows the source's
   `al d-` construction, rather than Murdock's purpose wording; compare
-  the conjunction discussion in [Classical Syriac Coursebook, lesson 14,
-  page 126](https://refubium.fu-berlin.de/bitstream/fub188/15883/1/ClassicalxSyriacxCoursexBook-HY-NEU.pdf).
+  the conjunction discussion in [Classical Syriac Coursebook, section
+  14.6, pages 129–130](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Classical_Syriac_Course_Book_3-2019.pdf).
   Light, Gospel, Messiah's glory and his being God's likeness remain
-  separate nouns and relations.
+  separate nouns and relations. "Whose" combines only the relative
+  prefix and resumed possessor of minds; the God noun remains separate.
+  The later "lest" intrinsically retains the second clause's negation.
 - Verses 5-6 retain the denial of preaching ourselves, Messiah Jesus
   our Lord, ourselves as the addressees' servants for Jesus' sake,
   God's saying that light arise from darkness, and his shining in
@@ -5893,6 +5900,12 @@ Source checks for 2 Corinthians 4:
 - Verses 13-14 retain the same spirit of faith as one possession,
   therefore, the written quotation's "I believed" and "I also spoke,"
   our believing and also speaking, and both because-of-this clauses.
+  D- before "one/same" is understood causally as "since," and the
+  following hi focuses that identity with "it is ... that." The
+  d- introducing direct speech is represented by quotation punctuation;
+  section 14.6 of the coursebook discusses both causal bare d- and
+  d- before direct speech. The possessive existential, comparative
+  connector, and each member of the spirit-of-faith phrase stay distinct.
   The one who raised our Lord Jesus will also raise us through Jesus
   and bring us near with the addressees to himself. None of us, Jesus,
   the addressees or himself is collapsed into another participant.
@@ -5907,9 +5920,10 @@ Source checks for 2 Corinthians 4:
   great glory for us, with very small, light, without end and for ever
   and ever retained. The initial possessive anticipates this time;
   it does not mean my affliction. No weight noun or double comparative
-  is supplied. The object, its modifiers and the late predicate at
-  positions 8-15 form one necessary larger dependency so that English
-  keeps affliction as preparer and glory as its object.
+  is supplied. English reordering separates the object, its modifiers,
+  the late preparing predicate and "for us"; their dependency does not
+  justify a shared clause span. Only the intensive age-of-ages duration
+  idiom remains joint.
 - Verse 18 follows the annotated source's `hadinan` from `hdy` as
   "we rejoice," rather than substituting Murdock's "look." Compare the
   [CAL entry for hdy](https://cal.huc.edu/oneentry.php?cits=all&lemma=xdy+V).
@@ -5920,6 +5934,13 @@ Source checks for 2 Corinthians 4:
 All 18 verses and 259 source words received source-to-English and running
 English review. The seven גיר, four דין and one הכיל occurrences were
 checked individually against the final English clauses.
+All 126 original mappings, including 45 singles and every member of the
+81 shared spans, were checked beside the vocalised forms, full decoded
+morphology including state, all 580 individual gloss records and Murdock
+in context. Final mappings split ordinary noun phrases, prepositions,
+negatives, auxiliaries and clauses; repeated links retain separated
+English constituents on their source word. Each remaining shared span
+has a specific grammatical or idiomatic reason in the review ledger.
 
 Source checks for 2 Corinthians 5:
 
