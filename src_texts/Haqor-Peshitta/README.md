@@ -3886,6 +3886,10 @@ Source checks for Romans 13:
 - Romans 13:5 keeps the causal demonstrative separate from necessity,
   for us and that we be subject. Not/only and but/also are distinct.
   The source has singular our conscience, despite the reference's plural.
+  In 13:5–6, because of belongs to metul, and this to the following
+  demonstrative; both words of the English preposition share that one
+  source owner. See [Coakley, section 7, printed pages
+  30–31](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
 - Romans 13:6 renders the construct money/head as head tax, with
   separately linked head and tax. Paying and explicit you/are are split.
   Ministers/they are/for/of God remain distinct. The relative prefix,
