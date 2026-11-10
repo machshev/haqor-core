@@ -5776,12 +5776,12 @@ Source checks for 2 Corinthians 3:
   particle is understood in the question, not as a purpose "lest."
 - "Recommendation/recommend" in verse 1 is a contextual lexical choice
   following the supplied Syriac-derived Murdock reference. SEDRA's brief
-  glosses list command/precept senses, but the broader
-  [CAL verb entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=pqd+V)
-  includes a Syriac Pael commendation sense, and the
+  glosses list command/precept senses. The
   [Syriac dictionary entry](https://syriacdictionary.net/mobile/index.cgi?hidden=Search&word=%DC%A6%DC%A9%DC%B0%DC%95)
-  includes recommendation for the noun. The abbreviated gloss list
-  does not require replacing this contextual sense with literal commands.
+  includes recommendation for the noun and recommend among related verb
+  senses. Its Pael entry also gives commissioning and charging, so the
+  recommendation wording depends on the letters' context rather than
+  treating a brief dictionary label as an exclusive inflected meaning.
 - Verse 2 keeps "our own letter" as one emphasized owner, the
   addressees as the letter, writing in our heart and being known and
   read by everyone. Verse 3 explicitly says "you know," rather than
@@ -5810,18 +5810,25 @@ Source checks for 2 Corinthians 3:
 - Verse 12 retains both because and therefore, this hope possessed by
   us, exceeding openness and the actual conduct predicate. The open-eye
   construction is understood idiomatically rather than as a claim
-  about physical eyesight. Verse 13 keeps Moses putting a physical
-  veil on his face and the purpose that Israel's children not behold
-  the end of what is being annulled.
+  about physical eyesight; [CAL's eye/open compound](https://cal.huc.edu/cal_entry_web.php?lemma=%28yn%40bgl%29+N)
+  is explicitly an adverb meaning openly or clearly. Verse 13 keeps
+  Moses putting a physical veil on his face and the purpose that Israel's
+  children not behold the end of what is being annulled.
 - Verse 14 says they were blinded in their minds, rather than importing
-  a different hardening predicate. The old covenant is read, the same
+  a different hardening predicate. The old covenant is read, that very
   veil remains upon them, and it is not revealed that in Messiah it
-  is annulled. Verse 15 retains reading Moses and a veil laid upon
-  their hearts. This is physical veil language, not atonement terminology.
+  is annulled. The feminine hi before the demonstrative and veil is
+  understood as an emphatic anticipating pronoun; a copular reading
+  with the preceding reading participle is also grammatically possible.
+  The masculine hu after "in Messiah" focuses that prepositional
+  constituent, while the feminine annulled participle refers to the veil.
+  Verse 15 retains reading Moses and a veil laid upon their singular
+  heart. This is physical veil language, not atonement terminology.
 - Verse 16 explicitly names a person from among them turning toward
   the Lord, with the veil taken from him. Verse 17 retains the Lord
-  as the Spirit, the Spirit of the Lord and freedom where that Spirit
-  is. The anticipating possessive does not create another owner.
+  himself as the Spirit, the Spirit of the Lord and freedom where that
+  Spirit is. Huyu is hu with an enclitic copula, retaining emphasis;
+  the anticipating possessive does not create another owner.
 - Verse 18 keeps all of us, uncovered faces, active beholding of the
   Lord's glory as in a mirror and passive transformation into the
   same likeness. The anticipating target suffix does not add an owner
@@ -5831,6 +5838,16 @@ Source checks for 2 Corinthians 3:
 All 18 verses and 248 source words received source-to-English and running
 English review. The six גיר, six דין and two הכיל occurrences were
 checked individually against the final English clauses.
+All 140 original mappings, including 65 single-word mappings and 75 shared
+spans, were compared with the vocalised forms, full decoded morphology
+including state, all 552 individual gloss records and Murdock in context.
+The final mappings split ordinary noun phrases, prepositions, negatives,
+auxiliaries and predicates. Remaining shared spans cover compound
+connectors, possessive existentials, the coreferential beginning dative,
+the scalar comparison, the open-eye idiom and the single proleptic
+destination. Each has its own reason in the review ledger. Repeated
+links retain prefixes and separated English constituents on their source
+word, including explicit negation after the verse 7 result connector.
 
 Source checks for 2 Corinthians 4:
 
