@@ -10238,7 +10238,7 @@
       ]
     },
     "44:15": {
-      "sha256": "3b17ec6428b7fcc8e32ffe97ebaedeb0f618288676775a5f5912879caefaa81a",
+      "sha256": "169d0ee96079ced196003ecaf362e79e0a7971f5914164c907ce0d8cc95bf6c9",
       "original_shared_spans": 153,
       "independent_review": true,
       "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
@@ -10299,21 +10299,21 @@
         },
         {
           "verse": 10,
-          "english": "of the disciples",
+          "english": "disciples",
           "positions": [
             10,
             11
           ],
-          "reason": "The plural suffix on necks anticipates the disciples. Of the disciples expresses one possessor; the necks stem, on and placing the yoke remain separate."
+          "reason": "The plural suffix on necks10 anticipates disciples11. Disciples retains both referential owners10,11; of the belongs separately to the d-prefix and definite noun at11. The necks stem, on and placing the yoke remain outside."
         },
         {
           "verse": 11,
-          "english": "of our Lord",
+          "english": "Lord",
           "positions": [
             1,
             2
           ],
-          "reason": "The masculine suffix on grace anticipates our Lord. Of our Lord expresses one relation; by the grace, Jesus, Messiah, believing and the active life verb remain separate."
+          "reason": "The third-person masculine suffix on grace1 anticipates Lord2. Lord retains both referential owners1,2; of our belongs separately to the actual d-prefix and first-person plural suffix on d-maran2. The differently-personed suffix on grace1 does not own our; by the grace, Jesus and Messiah remain separate."
         },
         {
           "verse": 12,
@@ -10326,12 +10326,12 @@
         },
         {
           "verse": 15,
-          "english": "of the prophets",
+          "english": "prophets",
           "positions": [
             2,
             3
           ],
-          "reason": "The plural suffix on words anticipates the prophets. Of the prophets expresses one possessor; the words stem and agree remain separate."
+          "reason": "The plural suffix on words2 anticipates prophets3. Prophets retains both referential owners2,3; of the belongs separately to the actual d-prefix and definite noun at3. The words stem and agreement predicate remain outside."
         },
         {
           "verse": 15,
@@ -10353,21 +10353,21 @@
         },
         {
           "verse": 16,
-          "english": "of David",
+          "english": "David",
           "positions": [
             5,
             6
           ],
-          "reason": "The masculine suffix on tabernacle anticipates David. Of David expresses one possessor; the tabernacle stem, its falling and the promised setting up remain separate."
+          "reason": "The masculine suffix on tabernacle5 anticipates David6. David retains both referential owners5,6; of belongs separately to the actual d-prefix at6. The tabernacle stem, its falling and promised setting up remain outside."
         },
         {
           "verse": 17,
-          "english": "of humankind",
+          "english": "humankind",
           "positions": [
             2,
             3
           ],
-          "reason": "The plural suffix on remnant anticipates humankind. Of humankind expresses that one group from which the remnant comes; the remnant stem and may seek remain separate."
+          "reason": "The plural suffix on remnant2 anticipates humankind3, the group from which the remnant comes. Humankind retains both referential owners2,3; of belongs separately to the actual d-prefix at3. The remnant stem and seeking predicate remain outside."
         },
         {
           "verse": 17,
@@ -10380,12 +10380,12 @@
         },
         {
           "verse": 17,
-          "english": "upon whom",
+          "english": "whom",
           "positions": [
             8,
             10
           ],
-          "reason": "The relative d-prefix on called and the plural suffix on upon them jointly express upon whom. The demonstrative those, my name and has been called remain separately linked, without an additional them."
+          "reason": "The relative d-prefix on called8 and plural suffix on upon-them10 jointly identify whom. Whom retains both relative referent owners8,10; upon belongs separately to the actual preposition at10. Those, my name and has been called remain separately linked, without adding another them."
         },
         {
           "verse": 17,
@@ -10398,12 +10398,12 @@
         },
         {
           "verse": 18,
-          "english": "of God",
+          "english": "God",
           "positions": [
             3,
             4
           ],
-          "reason": "The masculine suffix on works anticipates God. Of God expresses one possessor; the works stem, are known, from and eternity remain separate, without adding a to God recipient."
+          "reason": "The masculine suffix on works3 anticipates God4. God retains both referential owners3,4; of belongs separately to the actual d-prefix at4. The works stem, are known, from and eternity remain outside; no additional to God recipient is introduced."
         },
         {
           "verse": 21,
@@ -10413,7 +10413,7 @@
             8,
             9
           ],
-          "reason": "Ith with past hwa and its singular possessor dative leh expresses past possession continuing from former generations. Has had realizes that single English possession predicate; Moses, heralds, every city and the Sabbath reading remain separately linked."
+          "reason": "Ith7 with past hwa8 and singular possessor leh9 expresses possession continuing from former generations in the context of habitual Sabbath reading. Has had retains that single existential-past-dative possession predicate7,8,9. English perfect has is a contextual aspectual rendering, not the lexical meaning of ith7 alone, so assigning has solely to7 would falsely separate its ownership. Moses, heralds, every city and reading remain outside; leh does not add another recipient."
         },
         {
           "verse": 22,
@@ -10426,30 +10426,39 @@
         },
         {
           "verse": 22,
-          "english": "among the brothers",
+          "english": "among",
           "positions": [
             21,
             22
           ],
-          "reason": "Behun and b-ahe identify the same group of brothers and repeat its locative case. Among the brothers expresses one leadership domain, not two groups or an additional among them; men, who were and leaders remain separate."
+          "reason": "The locative b-preposition occurs both on anticipatory behun21 and explicit b-ahe22. Among retains that single repeated-case relation21,22; the brothers separately retains their shared referent21,22. Repeated owners distinguish prepositional prefixes from the pronominal and nominal referent, without adding a second among them or another group."
+        },
+        {
+          "verse": 22,
+          "english": "the brothers",
+          "positions": [
+            21,
+            22
+          ],
+          "reason": "The plural pronominal suffix on behun21 resumes the explicit brothers22, identifying one leadership domain. The brothers retains both referential owners21,22; among separately retains the repeated b-prepositions on these words. Men, who were and leaders remain outside, and no second group or extra them is introduced."
         },
         {
           "verse": 24,
-          "english": "have heard",
+          "english": "have",
           "positions": [
             0,
             1
           ],
-          "reason": "The passive heard participle with experiencer dative lan expresses the writers having heard the report. Have heard renders that single experiential predicate naturally; we stays separately at 1, with the reported men, departure and unsettling outside."
+          "reason": "The passive heard participle shmia0 with experiencer lan1 supplies the writers' experiential perfect. Have retains both stative and experiencer components0,1; heard belongs separately to the lexical hearing stem at0, and We to the first-person plural suffix at1. Have is not assigned to lan alone or treated as possession of another object; the reported men and their actions remain outside."
         },
         {
           "verse": 26,
-          "english": "of our Lord",
+          "english": "Lord",
           "positions": [
             4,
             5
           ],
-          "reason": "The masculine suffix on name anticipates our Lord. Of our Lord expresses one possessor; the name stem, Jesus, Messiah, for and the surrendered lives remain separate."
+          "reason": "The third-person masculine suffix on name4 anticipates Lord5. Lord retains both referential owners4,5; of our belongs separately to the actual d-prefix and first-person plural suffix on d-maran5. The differently-personed suffix on name4 does not own our; the name stem, Jesus and Messiah remain separate."
         },
         {
           "verse": 27,
@@ -10471,12 +10480,12 @@
         },
         {
           "verse": 34,
-          "english": "of Silas",
+          "english": "Silas",
           "positions": [
             2,
             3
           ],
-          "reason": "The masculine suffix on will anticipates Silas. Of Silas expresses one possessor; the will stem, it was, to remain and there remain separate, without replacing the actual will construction with an additional choosing event."
+          "reason": "The masculine suffix on will2 anticipates Silas3. Silas retains both referential owners2,3; of belongs separately to the actual d-prefix at3. The will stem, it was, remaining and there remain outside, without replacing the noun with another choosing event."
         },
         {
           "verse": 35,
@@ -10489,12 +10498,12 @@
         },
         {
           "verse": 35,
-          "english": "of God",
+          "english": "God",
           "positions": [
             12,
             13
           ],
-          "reason": "The masculine suffix on word anticipates God. Of God expresses one possessor; the word stem, teaching and proclaiming remain separate."
+          "reason": "The masculine suffix on word12 anticipates God13. God retains both referential owners12,13; of belongs separately to the actual d-prefix at13. The word stem, teaching and proclaiming remain outside."
         },
         {
           "verse": 36,
@@ -10507,12 +10516,12 @@
         },
         {
           "verse": 39,
-          "english": "and went",
+          "english": "went",
           "positions": [
             12,
             13
           ],
-          "reason": "Lahun is coreferential with Barnabas and Mark going to Cyprus, not another recipient. And went expresses one movement without forced themselves; travel by sea and the destination remain separate."
+          "reason": "Lahun13 is coreferential with Barnabas and Mark going to Cyprus, not a new recipient. Went retains the lexical motion12 and ethical dative13; and belongs separately to the actual waw prefix on12. Travel by sea and Cyprus remain outside, without adding another to them or themselves."
         }
       ]
     },
