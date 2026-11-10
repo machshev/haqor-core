@@ -4642,11 +4642,13 @@ Source checks for 1 Corinthians 7:
   spouse's authority remain distinct; no extra predicate is invented
   from a repeated copular pronoun.
 - Verses 5-9 preserve mutual consent, the time devoted to fasting and
-  prayer, returning together, and Satan's temptation because of bodily
-  desire. The statement to weak people is distinguished from a command.
-  Verse 7 explicitly retains purity, every person's gift from God, and
-  the different gifts; enduring, marrying and burning with desire remain
-  separate predicates.
+  prayer, returning to the same matter, and Satan's temptation because of
+  bodily desire. The statement to weak people is distinguished from a command.
+  Verse 7 explicitly retains purity and a gift being given to each person
+  from God; the gift noun has no possessive suffix. Both existential
+  expressions describing the different gifts remain explicit. Enduring,
+  marrying and burning with desire remain separate predicates, and verse 9
+  keeps the intensifier in “much more profitable.”
 - Verses 10-14 keep the speaker's distinction between his own instruction
   and his Lord's, separation, remaining without a husband, reconciliation,
   and not dismissing a spouse. The unbelieving husband and wife clauses
@@ -4658,6 +4660,10 @@ Source checks for 1 Corinthians 7:
   questions about saving the other. Each person's distribution/calling
   and walking, the orders in all ecclesias, circumcision/uncircumcision,
   God's commands and remaining in one's calling remain explicit.
+  Verse 15's pronoun focuses the preceding “to peace”: “it is to peace
+  that God has called us.” The command-owner suffix in verse 19 and the
+  relative/resumptive pronoun in verse 20 each retain one minimal shared
+  owner or relative span.
 - Verse 21 follows the source's “choose for yourself to serve,” rather
   than importing Murdock's supplied preference for freedom over service.
   The choice verb plus ethical dative and a following ד clause has a
@@ -4673,27 +4679,50 @@ Source checks for 1 Corinthians 7:
   servants. They also retain remaining with God, no command concerning
   virginity versus counsel, received mercy and faithfulness, the present
   necessity, and both bound/free-wife instructions.
+  Verse 22's “free person” separates the two source components; it does
+  not require “freeborn.” [CAL's compound entry](https://cal.huc.edu/cal_entry_web.php?lemma=br%40xyryn+N)
+  includes a freed servant in Syriac Jeremiah 34:14. Verse 26's anticipatory
+  dative and explicit noun identify one beneficiary, “for a person.”
 - Verses 28-31 preserve both marrying without sin and bodily trouble,
   Paul's sparing the addressees, the shortened time, and every wives,
   weeping, rejoicing and buying comparison. Using this world is qualified
   by proper use; its passing fashion has its own causal clause.
+  Verse 29 retains the perfect passive, “has itself now been shortened.”
+  In verse 31 the fashion's possessive suffix anticipates “world”;
+  only that owner is shared, with “of” and “this” linked separately.
 - Verses 32-35 retain the unmarried/married and woman/maiden contrasts,
   their Lord/spouse/world concerns, holiness in both body and spirit,
   the addressees' benefit, no snare, and devotion to their Lord without
   worldly distraction. Qualifiers are not dropped into generic advice.
+  Verse 35 keeps the focus on “for your own advantage”; its fitting
+  manner noun and adjective have separate links.
 - Verses 36-38 retain the maiden's age, not having given her to a husband,
   the decision to give or keep her, firm judgment, absence of compulsion,
   and authority over one's will. “Daughter” is not inserted merely from
-  Murdock's bracketed supplement. The good/better contrast keeps both
-  repeated references to the man's maiden and their giving predicates.
+  Murdock's bracketed supplement. Verse 36 makes her time the subject of
+  “has passed,” and its final marrying verb is feminine singular.
+  Verse 37's authority over one's will follows
+  [CAL's authority/control sense with ʿal](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24ly%2B+A);
+  “has judged” retains the perfect. Verse 38 keeps “well” and “exceedingly
+  well,” both references to the man's maiden and their giving predicates.
 - Verses 39-40 preserve the law-bound wife while her husband lives,
   his sleeping in death, her freedom and choice only in our Lord, and
   the final opinion about remaining so. The final Spirit belongs to God
   and is in Paul; it is not an extra owner or independent copular actor.
+  The temporal connector “as long as” and personal relative “whomever”
+  each have a minimal shared link. Verse 40 retains the beatitude
+  “blessed is she” and both first-person pronouns in “I also am thinking.”
 
 All 40 verses and 619 source words received source-to-English and running
 English review. The eight גיר, nineteen דין and two הכיל occurrences
 were checked individually against the final English clauses.
+The shared-span review reduced 165 shared spans to 25: temporal and
+comparative connectors, relative possessors, anticipatory owner or
+beneficiary expressions, and generalising relatives. Ordinary noun phrases,
+negation, auxiliaries and clauses have separate source links. Every final
+mapping, including the single-source spans, every exact exception reason
+and the continuous English received independent review against frozen
+chapter bytes before integration.
 
 Source checks for 1 Corinthians 8:
 
