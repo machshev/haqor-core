@@ -3856,35 +3856,77 @@ Source checks for Romans 12:
 
 Source checks for Romans 13:
 
-- Romans 13:1 retains plural governing authorities and the repeated
-  source copulas. פקידין is a masculine plural passive participle:
-  “are appointed,” agreeing with authorities; the lemma gloss “command”
-  does not turn it into an active “he commanded.” The two הו tokens
-  remain copular/emphatic rather than supplying a conjunction or a new
-  acting subject. The second clause keeps appointment by God distinct
-  from the relative clause about authorities existing.
-- Romans 13:2-5 preserves the repeated standing-against constructions,
-  their subjects and recipients, the sword image and both minister
-  clauses. Romans 13:5 is impersonal necessity, not a new personal
-  subject urging someone. All causal גיר occurrences remain represented.
-- Romans 13:6-7 renders כסף רשא as “head-money,” retains קימין as standing,
-  and keeps the repeated tax, fear and honor recipients. דמתחיב לה is
-  “what is owed to him”; the obligation is not reversed into what he owes.
-- Romans 13:8 retains the reciprocal חד לחד as “one another” and causal
-  גיר in the explanation about loving one's neighbor and fulfilling the
-  law. Romans 13:9 retains the repeated prohibitions and דתרחם as the
-  complement “that you love,” not an added temporal “when.” Romans 13:10
-  keeps love as the subject and the neighbor as its recipient.
-- Romans 13:11-14 preserves our sleep/life, the approaching day and the
-  works-of-darkness/armor-of-light contrast. “Our life” retains the
-  source's possessive life predicate; salvation is a contextual alternative.
-  Romans 13:13 uses contextual “revelry” for music/merriment in the vice
-  list, rather than implying a general prohibition on singing. The
-  impurity-of-the-bed phrase also retains the source bed noun. Our Lord,
-  Messiah Jesus, the flesh and its lust relation remain source-linked.
+- All 14 verses were checked against the exact forms, decoded morphology,
+  every SEDRA gloss alternative and Murdock. Every original shared span,
+  every final mapping and the continuous English were independently
+  reviewed. The ledger records a specific linguistic reason for each
+  remaining shared span; ordinary clauses and modifiers are split.
+- Romans 13:1 keeps every/soul and the plural authorities/of high office
+  separate. The negative existential owns there is/no. In the following
+  relative clause, the present nominal negation with hwā and the explicit
+  pronoun jointly supply one English is, while which/not and from/God
+  remain separately owned. This is a construction-specific exception.
+  See [Joosten, sections 2.1 and
+  3.1](https://www.academia.edu/34446491/The_Negation_of_the_Non_Verbal_Clause_in_Early_Syriac)
+  on nominal negation and the pattern with a following pronoun; the paper
+  does not discuss this verse specifically. The later singular hu supplies
+  it is/from God/that, distinct from plural passive they are appointed.
+  The intervening relative which exist remains separate.
+- Romans 13:2 preserves both standing-against predicates and the actual
+  plural recipient suffix, splitting command/of God and receive/judgment.
+  In 13:3 judges/are/not and to/good/deeds are separate. The explicit
+  second-person pronoun supplies you and the finite support for desire;
+  the following that/not, fear/of/authority and praise/will be/for you/
+  from it retain their own source words.
+- Romans 13:4 preserves both minister/copula/of God clauses, the explicit
+  but, for you and plural for good things. The second-person pronoun,
+  doing and evil are distinct. The sword clause has present nominal
+  negation, a passive bound predicate, the sword complement and in vain.
+  Avenger/of wrath and those/who do/evil things remain split.
+- Romans 13:5 keeps the causal demonstrative separate from necessity,
+  for us and that we be subject. Not/only and but/also are distinct.
+  The source has singular our conscience, despite the reference's plural.
+- Romans 13:6 renders the construct money/head as head tax, with
+  separately linked head and tax. Paying and explicit you/are are split.
+  Ministers/they are/for/of God remain distinct. The relative prefix,
+  standing and over are separate from the one resumed complement these
+  things, which retains both the pronominal suffix and its specification.
+- Romans 13:7 preserves as with its relative connector, separately from
+  is owed/to him; the obligation is not reversed into what he owes.
+  Each to whom retains its recipient head and following relative prefix.
+  Every repeated head tax, tax, fear and honor occurrence remains linked
+  to its own noun; none is merged with its repetition.
+- Romans 13:8 splits the negative command and the reciprocal one/another,
+  retaining the infinitive to love. The one/who loves are separate, and
+  fulfilled is a perfect, has fulfilled. In 13:9 the nominal quotation
+  heading is expressed as this is also what he said: said is active
+  perfect, and what retains its head and relative prefix. Adultery comes
+  before killing in the source. Each negative and finite verb is split;
+  another/commandment and in this/word are separate. The final complement
+  is that you love, rather than a temporal when.
+- Romans 13:10 keeps love as the subject and the neighbor as its recipient.
+  Its preserves the masculine suffix with abstract love as its antecedent;
+  grammatical masculine need not become English his. Because retains
+  both causal components, and the suffix on fulfillment anticipates
+  explicit of the law. The copula remains separate.
+- Romans 13:11 preserves both time/hour copulas and the first-person
+  awakening clause, separating from/our sleep. The following focus is
+  it is/now/that. Our life retains its actual possessor and abstract
+  sense; has drawn/more/near, to us, than/when/we believed are split.
+  In 13:12 the night has passed and the day has drawn near are perfect
+  predicates. Put off/from us/therefore and works/of darkness are distinct;
+  the suffix on armor anticipates explicit of light.
+- Romans 13:13 keeps the comparison connector distinct from in/daytime,
+  and each negative from its prepositional phrase. Revelry gives the
+  contextual sense of music/merriment in this list. Unclean is an ordinary
+  adjective modifying bed, with separately linked English modifier order.
+  Envy and strife remain distinct. In 13:14 the object suffix on put on
+  anticipates our Lord; Jesus and Messiah are separate names. Finite
+  be concerned owns do, the negative remains separate, and the flesh
+  complement and plural lusts retain their actual forms.
 
 All nine causal גיר occurrences were checked individually against the final
-linked text. Numeric morphology was decoded with the SEDRA source codebook.
+linked text.
 
 Source checks for Romans 14:
 
