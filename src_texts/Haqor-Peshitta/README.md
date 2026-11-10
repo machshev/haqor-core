@@ -3930,40 +3930,90 @@ linked text.
 
 Source checks for Romans 14:
 
-- Romans 14:1-3 preserves the weak-in-faith recipient, the giving-a-hand
-  idiom, the addressees' thoughts, and the repeated eater/non-eater
-  subjects and negatives. The believing and weak subjects in 14:2 are
-  distinct; the causal God-receiving clause in 14:3 remains explicit.
-- Romans 14:4 preserves the servant who does not belong to the addressee,
-  his Lord, the repeated stand/fall clauses and the final establish-him
-  object. מטא גיר באידי מרה is rendered as the local reach/power idiom
-  “for it is within his Lord's power”; the causal and copular functions
-  are not assigned to the wrong source words.
-- Romans 14:5 renders כלהון יומתא as “all days,” not an invented possessor's
-  “their days.” The day comparisons and each person's assurance in his own
-  mind remain distinct. Romans 14:6 preserves the repeated day-assessment,
-  eating/non-eating, Lord and thanksgiving clauses, including every negative.
-- Romans 14:7-12 retains living/dying for oneself and for our Lord, the
-  first-person-plural possessives, conditionals and “therefore,” the
-  judgment-seat statement, and each person's account for himself to God.
-  Local groups replace an unnecessary whole-verse link in 14:12.
-- Romans 14:13-15 preserves both prohibitions about judgment/stumbling,
-  the food/brother conditional and the Messiah-died relative clause.
-  Romans 14:14 retains the negative existential and both self/unclean
-  relations; the knowing and persuaded predicates remain separately linked.
-- Romans 14:16 uses the source's passive/reflexive blasphemy construction
-  with “our good,” not an active prohibition with the wrong subject.
-  Romans 14:17-20 retains the kingdom's eating/drinking contrast, the
-  righteousness/peace/joy triad, serving Messiah, God's approval, pursuit
-  of peace and mutual building, and the food/work/purity/stumbling clauses.
-- Romans 14:21 preserves all three coordinated negatives and “our brother.”
-  Romans 14:22 keeps faith in the addressee, the imperative's object, the
-  before-God relation and the reflexive judgment/approval clause.
-- Romans 14:23 renders אתחיב לה as “is condemned,” absorbing the
-  coreferential/ethical dative into its predicate. לֵה is third masculine
-  singular; it does not introduce a separate causal “for it” referent.
-  The following מטל already supplies the explicit reason, and the final
-  not-from-faith/sin statement retains its own subject and negation.
+- All 23 verses were checked against the exact forms, decoded morphology,
+  every SEDRA gloss alternative and Murdock. Every original shared span,
+  every final mapping and the continuous English were independently
+  reviewed. The ledger gives a linguistic reason for each remaining
+  shared span; ordinary clauses, modifiers and negatives are split.
+- Romans 14:1 combines the initial recipient designation and resumed
+  dative as to the one, distinct from who is weak/in faith, give and
+  a hand. In 14:2 the weak person's clause retains it is/vegetables/
+  that/he eats. In 14:3 each relative designation and following prefix
+  retain their owners. Both eater/non-eater admonitions and the final
+  God/for/has brought him near clause are split.
+- Romans 14:4 preserves all three explicit second-person forms, the
+  servant who is not your own, and relative/conditional who/if in the
+  servant clause. The standing/falling predicates keep their Lord
+  complements. Surely renders the infinitive absolute; will stand gives
+  the assurance in context. The capacity idiom is minimally split as
+  it is within/the power/of his Lord/to establish him.
+  [CAL's מטי entry](https://cal.huc.edu/oneentry.php?lemma=m%2By+V&cits=all)
+  supports the ability sense and its association with hand.
+- Romans 14:5 separates both day-comparison clauses and all/days, without
+  inventing a possessor. In/his own/understanding and be assured are
+  distinct. Romans 14:6 splits every repeated day-regarding, eating,
+  non-eating, Lord and thanksgiving clause, retaining each relative,
+  conjunction, negative and genuine possessor.
+- Romans 14:7 distinguishes the relative prefixes on for himself from
+  alive and dies. In 14:8 metul and the following relative prefix jointly
+  supply because, while if remains separately owned. Before a noun,
+  metul supplies because of: see 14:9 and [Coakley, section 7, printed
+  pages 30–31](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
+  The living/dying predicates, our Lord complements, explicit focus
+  pronoun and final we are/our Lord's remain distinct. In 14:9 died,
+  lived and rose are separate perfect predicates.
+- Romans 14:10 keeps both repeated second-person frames. All of us,
+  are destined and to stand are separately owned, followed by before/
+  judgment-seat/of Messiah. In 14:11 the comparison connector is separate
+  from it is written; the oath has the adjective alive with I am.
+  The reported clause retains the prefix on to me. Every/knee and every/
+  tongue are split. In 14:12 each/one/of us, gives/an account and
+  for/himself are distinct, without an added must.
+- Romans 14:13 begins with first-person plural let us, followed by
+  separately linked henceforth/not/judge and one/another. The next judge
+  is a second-person plural imperative. This, especially, the content
+  prefix, negative, place, stumbling block and for your brother remain
+  separately owned.
+- Romans 14:14 preserves I/know and I/am/convinced, followed by the Lord
+  and Jesus. The negative existential owns there is/not, distinct from
+  anything and which is defiled. The intrinsic idiom in itself retains
+  men and its suffixed lwat complement. Thinks/of/something/as unclean
+  preserves the actual prepositional argument; the initial topic and
+  resumed to him alone remain separately expressed.
+- Romans 14:15 retains if/but, food and your food. Present negative focus
+  is it is/not/in love/that/you/are/walking. The next prohibition has no
+  added and; finite destroy supplies do. For whom retains the actual
+  relative prefix and pronominal complement. In 14:16 the passive/reflexive
+  imperfect agrees with feminine singular our good: let our good not be
+  blasphemed. The second-person masculine label is a homograph, not a
+  required new agent.
+- Romans 14:17 retains the kingdom suffix and its explicit God possessor.
+  Is/not, food/drink, righteousness/peace/joy and Holy/Spirit are split.
+  In 14:18 the relative prefix belongs to in these things, while serves
+  is an independent participle. Pleasing/to God and approved/before/
+  humans are distinct. In 14:19 run/after/peace and and after/one/
+  another's/edification retain both pursuit prepositions and the
+  reciprocal genitive.
+- Romans 14:20 has first-person plural let us and plural works of God.
+  The purity and evil clauses retain separate copulas; the relative
+  prefix belongs to with stumbling, distinct from eats. Romans 14:21
+  preserves first-person plural eating/drinking, all three negatives,
+  relative/instrumental by which and the genuine our brother possessor.
+- Romans 14:22 distinguishes in whom/there is/faith from the command
+  hold it/within yourself/before/God. The beatitude suffix identifies the
+  same designated person; its relative and negative remain separate.
+  Condemned and determined are perfects. Determined gives the contextual
+  discernment/specification sense of פרש; compare
+  [CAL](https://cal.huc.edu/oneentry.php?lemma=pr%24+V&cits=all) and
+  [Payne Smith, printed page 465](https://dukhrana.com/lexicon/PayneSmith/page.php?p=465)
+  on separating, appointing and distinguishing. This is a contextual
+  rendering, rather than importing the Greek present approves.
+- Romans 14:23 renders the perfect condemnation predicate and its
+  coreferential/ethical dative as has been condemned, without creating a
+  separate recipient. Because retains metul and the following prefix;
+  the contracted nominal negative owns it is not, and in faith is separate.
+  The final relative is/not/from/faith and matrix is/sin retain their
+  distinct copular roles.
 
 All eleven גיר occurrences were checked individually against the final
 linked English. Decoded morphology distinguishes finite and participial
