@@ -4186,46 +4186,69 @@ Source checks for Romans 16:
 
 Source checks for 1 Corinthians 1:
 
-- Verses 1-3 preserve Paul's call/apostleship, God's will, Sosthenes,
-  the ecclesia of God in Corinth, sanctification in Jesus Messiah,
-  calling and invocation of the Lord, including the place and possessive phrases. Grace, peace,
-  God the Father and our Lord remain distinct without duplicate owners.
-- Verses 4-9 retain thanksgiving, given grace, enrichment in word and
-  knowledge, confirmed testimony, gifts and awaited revelation, the
-  strengthening/blamelessness purpose and God's faithful call to fellowship.
-- Verse 10 treats מנכון as the governed addressee of “I beseech you,”
-  rather than turning the appeal into a spatial “among you.” The clauses about agreement,
-  absence of divisions, one mind and one thought retain their subjects.
-- Verse 11 keeps causal גיר attached to reporting, עליכון as “concerning
-  you,” Paul as recipient and Chloe's house as the report's source. The
-  impersonal plural reporting verb becomes grammatical English passive;
-  the ד prefix introduces the reported contentions among the addressees.
-- Verses 12-16 retain the four separate allegiance quotes, the division,
-  crucifixion and baptism questions, name ownership, Crispus, Gaius and
-  Stephanas's household, the baptism exceptions and what Paul does not know.
-- Verses 17-20 state that Messiah did not send Paul to baptize but to preach.
-  They retain the purpose that his cross not be emptied, the perishing/living
-  contrast, God's power, the written quotation's first-person speaker, and
-  the questions about the wise, scribe, disputer and the world's wisdom.
-- Verse 21 keeps both causal functions in “For since ..., God was pleased
-  ...”: explanatory גיר and the subordinate מטול clause. God/world/wisdom/
-  knowing, preaching, saving and believing retain their actual roles.
-- Verses 22-24 render ארמיא contextually as “Gentiles” in the contrast with
-  Jews, following the supplied gloss alternative and Murdock. This does
-  not restrict the clause to ethnic Arameans or substitute a Greek text.
-  The broader gentile/pagan sense is also recorded in the
-  [CAL lexical entry](https://cal.huc.edu/cal_entry_web.php?lemma=%29rmy%232+A).
-  First-person preaching, crucified Messiah, stumbling/foolishness and
-  calling/wisdom/power remain source-linked.
-- Verses 25-31 preserve God's foolishness/weakness comparisons, the three
-  “not many” clauses, God's chosen subjects and shamed/nullified objects,
-  flesh not boasting, being in Messiah, wisdom from God and the distinct
-  righteousness/sanctification/redemption terms. The final boasting quote
-  retains the Lord as its reference.
-
-All 31 verses and 382 source words received source-to-English and running
-English review. All six גיר occurrences were checked individually for their
-causal function; coverage alone was not used as proof of meaning.
+- The shared-span review covers all 31 verses and 382 source words. It
+  reduces 115 original shared spans to 22 documented exceptions: minimal
+  comparison and causal connectors, anticipated possessors and one object,
+  and the relative-plus-possessive relation “whose.” Ordinary noun phrases,
+  copulas, negatives and clauses retain separate source owners.
+  Three independent whole-chapter reviews checked all original mappings,
+  final mappings, exact exception reasons and the continuous English
+  against the frozen source evidence and candidate.
+- Verses 1-3 retain both “called” and “and sent,” God's will, Sosthenes,
+  the called and the saints, sanctification and invocation. “Theirs and
+  ours” remains after “every place,” without inserting Murdock's supplied
+  Lord. Grace and peace share the English wish but keep separate links.
+- In 1:5 the active perfect gives “you have grown rich.” In 1:6 the
+  comparison prefix and anticipatory possessor on testimony have distinct
+  functions. In 1:7 the perfect gives “you have not been lacking,” followed
+  by the participial waiting clause. In 1:8 “so that ... without blame”
+  preserves the negative construction without adding a second negation.
+  God's faithfulness and the call to fellowship remain in 1:9.
+- Verse 10 separates the appeal, its addressees and all three existence
+  verbs. “One word,” “one mind” and “one thought” have separate links.
+  In 1:11 “they sent word” retains the active plural reporting verb; Paul
+  is its recipient, Chloe's house its source, and contentions its content.
+- In 1:12 the four quoted first-person copulas give “I am of Paul,”
+  “I am of Apollos,” “I am of Cephas” and “I am of Messiah.” They are
+  not additional speakers rendered “another.” Each quoted subject,
+  copula and allegiance phrase has its own source owner.
+- In 1:13 both particles introduce rhetorical questions, “Could it be
+  that ...?” The grammar lists dalma as “lest, perhaps” and lma as a
+  rhetorical “perhaps”; see [Coakley, sections 13 and 23, printed pages
+  63 and 109](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
+  The passive division retains its patient and coreferential leh as
+  “Messiah himself has been divided.” This applies the passive-patient
+  and emphatic analysis in [Farina, sections 5.1-5.2 and 5.7](https://ricerca.sns.it/retrieve/e3aacdfd-ef1d-4c98-e053-3705fe0acb7e/Farina.pdf)
+  to this clause; the study does not cite this verse. The crucifixion
+  question retains Paul and its beneficiaries; baptism in Paul's name
+  remains a separate question.
+- Verses 14-17 preserve the baptism exceptions, Crispus, Gaius and
+  Stephanas's household, Paul's uncertainty and Messiah's sending him to
+  preach. “Lest,” “anyone,” negation, auxiliaries and the purpose that
+  the cross might not be emptied are split wherever their words permit.
+- Verses 18-20 preserve the lost/living contrast, God's power and the
+  first-person written quotation. In 1:20 the feminine object suffix
+  anticipates wisdom; wisdom's masculine possessive suffix anticipates
+  the world. These are two narrow relations, not a whole shared clause.
+- Verse 21 keeps explanatory “For” separate from causal “since,” with
+  wisdom's possessor retained. God willed to give life to believers
+  through preaching. Verses 22 and 25 retain their causal connectors.
+  In 1:23 the explicit pronoun and inflected preaching verb are first
+  plural: “we proclaim,” rather than “I proclaim.”
+  The contextual “Gentiles” in 1:22-24 retains the supplied gloss and
+  Murdock reading; compare [CAL's gentile/pagan sense](https://cal.huc.edu/cal_entry_web.php?lemma=%29rmy%232+A).
+- Verses 25-26 split “human beings” and “of noble birth” by their actual
+  components, using the membership/class sense of bar documented in
+  [CAL](https://cal.huc.edu/oneentry.php?lemma=br+N&cits=all).
+  In 1:27 the suffixes anticipate “the world,” without adding an extra
+  divine possessor to its foolish and weak ones. In 1:28 “whose” retains
+  both the relative prefix and their-birth suffix while the rest of the
+  relative clause is split. The lowly, despised and nonentities are
+  chosen to bring to nothing those who are something.
+- Verses 29-31 preserve the purpose that no flesh at all might boast,
+  being from God in Jesus Messiah, the one who became wisdom for us,
+  righteousness, sanctification and redemption, and the Lord as the
+  reference of the final boasting command.
 
 Source checks for 1 Corinthians 2:
 
