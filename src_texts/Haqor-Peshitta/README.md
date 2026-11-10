@@ -6124,7 +6124,9 @@ Source checks for 2 Corinthians 7:
   denials: wronging, corrupting, and defrauding no one. "Bear with us"
   supplies the contextually understood object of the opening imperative.
   Verse 3 keeps "not to condemn you" attached to "I speak," followed by
-  the causal reminder and the shared dying and living together.
+  the causal reminder and the shared dying and living together. Its
+  negative focus is rendered "it is not ... that," with the pronoun
+  and speaking predicate linked separately.
 - Verse 4 preserves both first-person singular possessive constructions,
   joy as the subject of "abounds," and "all my afflictions." Verse 5
   follows the vocalised plural gentilic and SEDRA's "Macedonian" lemma
@@ -6138,12 +6140,21 @@ Source checks for 2 Corinthians 7:
   renders the joy/was/to-me construction without adding another owner.
   Verse 8 retains both grief predicates, both mentions of the letter,
   the present absence of regret, the prior regret, and "for I see."
+  The impersonal regret expression includes the cognitive self:
+  [CAL's twy entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=twy+V)
+  explicitly attests this construction with napsh. Its first-person
+  dative identifies one experiencer. The letter already supplies the
+  subject of the later grieving predicate.
 - Verse 9 keeps the two grief clauses distinct from the sorrow that
   brought the recipients to repentance. "So that you might suffer no
   loss" preserves the purpose and imperfect verb rather than asserting
-  a completed absence of loss. Verse 10 retains the negative "does not
+  a completed absence of loss. "It brought me great joy" retains the
+  active feminine past verb and its contextual subject; it is not
+  replaced by a passive "joy was made." Verse 10 retains the negative "does not
   turn back" and the separate positive causative "leads to life";
   the latter must not be swallowed into a negated turning to life.
+  Its concluding pronoun focuses the preceding death: "it is death
+  that the sorrow of the world works."
 - Verse 11 treats the construct noun plus prepositional phrase
   `mappaq b-ruha` as the defense/apology idiom, linking its two source
   positions together. It is not a separate "spirit" entry in the list.
@@ -6164,11 +6175,13 @@ Source checks for 2 Corinthians 7:
   versus "our boasting," and Titus remembering their obedience and their
   receiving him. "All" in verse 15 belongs to their obedience; verse 16
   has "in everything" and then simply "in you."
-- Three five-position groups preserve local English dependencies: the
-  delayed boasting noun in verse 4, the joy/made/to-me construction in
-  verse 9, and the passive predicate with its delayed care-for-us subject
-  and before-God phrase in verse 12. All other groups have at most four
-  source positions. Each source position occurs exactly once in order.
+- Ordinary noun phrases, negation, auxiliaries and clauses are split.
+  English reordering and repeated links keep each separated constituent
+  with its source word. Remaining shared spans cover causal, temporal
+  and relative connectors, possessive existentials, impersonal emotion
+  and regret expressions, the defense and benefactive idioms, the
+  patient-resumptive wronged expression and the proleptic matter phrase.
+  Each has its own linguistic reason in the review ledger.
 
 Source checks for 2 Corinthians 8:
 
