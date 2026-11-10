@@ -5961,19 +5961,25 @@ Source checks for 2 Corinthians 5:
   mortality being swallowed up in life. The desire is first-person
   plural, rather than Murdock's "ye desire." The swallowing remains
   passive, with mortality as its subject and life as its destination.
+  L-el men forms the compound "over"; its suffixed object remains
+  separately "it," rather than treating men as a second garment source.
 - Verse 5 makes God the present preparer of us for this, and keeps
   his past giving of the pledge of his Spirit. The anticipating
   target suffix does not add another object. Verses 6-8 keep knowing
   and being persuaded, bodily lodging with absence from our Lord,
   walking by faith rather than sight, and the wish to depart from
-  the body and be with our Lord.
+  the body and be with our Lord. Kma d- is the temporal "as long as";
+  [CAL explicitly attests this Syriac usage](https://cal.huc.edu/oneentry.php?cits=all&lemma=kmh+c).
+  Its two connector members remain joint, while the complement "that,"
+  body and lodging predicate stay separate.
 - Verse 9 retains striving, the absent/dwelling alternatives and
   pleasing him. The target "to him" belongs to pleasing, not to
   dwelling. Verse 10 keeps all of us due to stand before Messiah's
   tribunal, each person's recompense in his body, what he has done,
   and both good and evil alternatives. The distributive person-person
   expression means each person; the final dative in the done-expression
-  is not another recipient of the deeds.
+  is the agent, rendered separately as "has been done" / "by him,"
+  rather than another recipient of the deeds.
 - Verse 11 retains fear of our Lord, persuasion of people, being
   manifest to God, the singular I-hope clause, both discourse contrasts
   and the addressees' own minds. Manifestness to God is not changed
@@ -5984,11 +5990,17 @@ Source checks for 2 Corinthians 5:
   and both foolishness and soundness conditions. Verse 14 preserves
   Messiah's love constraining us to consider this: one died for
   everyone, and therefore everyone died. The final dative does not
-  create an additional for-him beneficiary.
+  create an additional for-him beneficiary or refer to Messiah as a
+  separate recipient; it is coreferential with singular "everyone."
 - Verse 15 repeats his dying for everyone, the purpose that the living
   not live for themselves, and the one who died on their behalf and
   rose. The on-their-behalf construction is an idiom, not physical
-  faces. A separate no-longer expression is not supplied here.
+  faces; [CAL's al-appay entry](https://cal.huc.edu/cal_entry_web.php?lemma=%28l%40%29py+p)
+  explicitly includes the Syriac benefactive sense. The relative
+  connector and this benefactive expression have separate minimal
+  exceptions: d- and the preposition al serve different functions
+  within the same source form.
+  A separate no-longer expression is not supplied here.
 - Verse 16 retains both actual body expressions, the first negative
   knowing, the conditional past knowing of Messiah and the final
   present negative knowing from now on. Body is not replaced with
@@ -6000,19 +6012,30 @@ Source checks for 2 Corinthians 5:
   majesty, not reckoning their sins to them, and placing in us the
   word of reconciliation. The actual greatness/majesty noun in
   verse 19 is not replaced by a generic to-himself expression.
+  Ban dilan emphasizes the preceding first-plural participant as
+  "in our own selves," without adding another owner of the word.
+  Repeated links separate "in," "our," "own" and "selves."
 - Verse 20 retains ambassadors for Messiah, both therefore particles,
   God beseeching the addressees through us, our beseeching on Messiah's
   behalf, and the imperative to be reconciled to God. Verse 21 keeps
   the one who had not known sin, God's making him sin for your sake,
   and the purpose that we become God's righteousness in him. Your
   is second-person plural, not us. Both sin nouns remain without
-  expanding one into a doctrinal paraphrase. The final clause uses
-  an English cleft to identify the sinless one as the object of God's
-  making, while keeping causal For distinct from for-your-sake.
+  expanding one into a doctrinal paraphrase. Active English word order
+  identifies the sinless one as the object of "he made"; the verb's
+  object suffix resumes that named object rather than adding a second
+  him. Causal For remains distinct from for-your-sake.
 
 All 21 verses and 286 source words received source-to-English and running
 English review. The nine גיר, five הכיל, two דין and one מכיל occurrences
 were checked individually against the final English clauses.
+All 160 original mappings, including 77 singles and every member of
+83 shared spans, were checked beside the vocalised forms, full decoded
+morphology including state, all 634 individual gloss records and Murdock.
+Final mappings split ordinary noun phrases, prepositions, negatives,
+auxiliaries and clauses. Every remaining shared span has an individual
+grammatical or idiomatic reason in the review ledger; repeated links
+keep separated English constituents on their own source word.
 
 Source checks for 2 Corinthians 6:
 
