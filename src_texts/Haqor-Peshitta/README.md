@@ -5236,38 +5236,58 @@ approved the frozen translation and exception reasons.
 Source checks for 1 Corinthians 14:
 
 - Verses 1-5 keep pursuing love, gifts of the Spirit and the preference
-  for prophecy. Verse 2 retains both causal clauses, speaking to God
+  for prophecy. "Run after" in verse 1 separates the ordinary verb and
+  preposition. Verse 2 retains both causal clauses, speaking to God
   rather than humans, no one understanding the utterance and speaking
   a mystery in spirit. Self-building and building the ecclesia remain
-  distinct. Verse 5 keeps all the addressees, the greater prophet,
+  distinct. Verse 4's "it is himself that he builds up" retains the
+  focus pronoun without grouping it with the object and verb.
+  Verse 5 keeps all the addressees, the greater prophet,
   the exception for interpretation and the explicit interpretation/
   ecclesia-building condition.
 - Verses 6-9 retain the profit question and its exception for revelation,
   knowledge, prophecy or teaching. The lifeless instruments emit sound;
   pipe, harp, distinction between notes, sung/played sound, trumpet and
   preparation for battle remain explicit. Verse 9 keeps the need for
-  interpretation and the comparison to speaking to the air.
+  interpretation and the comparison to speaking to the air. The word
+  is the feminine patient of "it is not interpreted." AYK HAW D- forms
+  "as if"; the D- and AM in D-AM separately own the connector and "with."
 - Verses 10-13 retain many kinds of languages in the world, not one
   lacking significance, and both sides of the foreigner comparison.
   The first foreigner noun is not swallowed by the following recipient
   phrase. Ethical datives do not create another actor. The command is
   to seek excellence for building the ecclesia, and the tongue-speaker
   is to pray to interpret.
+  Verse 10's QALA is lexically voice or speech; "without meaning" is
+  retained as a contextual metonym in the language discussion, not
+  claimed as a direct dictionary gloss. The following "meaning of the
+  sound" shares only its anticipatory owner and explicit genitive.
 - Verses 14-17 distinguish the speaker's spirit praying from his
   understanding lacking fruit. Verse 15 has four first-person prayer
   and singing intentions, not commands addressed to someone else. The
   unlearned hearer cannot say Amen because he does not know what the
   addressee says; the final verb is not reassigned to "you." Verse 17
-  keeps blessing well and the neighbor not being built up.
+  keeps blessing well and the neighbor not being built up. Its initial
+  "you" and post-participial pronominal "are" are independently mapped.
+  Verse 14's "it is my spirit that prays" preserves the focus without
+  adding a human "he." EN HU D- is a conditional connector in verses
+  14 and 23, not another actor or event.
 - Verses 18-20 retain thanks to God, speaking in tongues more than all
   the addressees, five intelligible words versus ten thousand, and the
   purpose of also teaching others. The maturity instructions remain
   commands: not children in thought, infants toward evil, mature in
   thought. They do not become descriptions of existing behavior.
+  [CAL's REBBO numeral](https://cal.huc.edu/cal_entry_web.php?lemma=rbw+b)
+  explicitly supports "ten thousand"; the alternative SEDRA gloss
+  "thousand" does not override that sense. "Rather" and "than" retain
+  their separate words, as do teaching, also and others.
 - Verses 21-22 retain the law quotation, foreign speech, another tongue,
   this people and still not listening to the Lord. The anticipatory
   suffix names this people once. Tongues are a sign for unbelievers,
   while prophecies have the contrasting believer/unbeliever scope.
+  "It is as a sign that tongues are set" keeps the pronoun's focus on
+  the preceding sign phrase. The repeated WITH and its people's
+  reference are separately accounted for in verse 21.
 - Verses 23-25 retain the whole ecclesia, all the speakers and both
   visitor categories. The visitor is examined and rebuked by all; he
   is not made the examiner of everyone. His heart's hidden things are
@@ -5280,7 +5300,10 @@ Source checks for 1 Corinthians 14:
   speaks privately to himself and God. Prophets number two or three,
   with the rest judging. Revelation to another who is sitting makes
   the first speaker silent. All may prophesy in turn so everyone may
-  learn and everyone be comforted.
+  learn and everyone be comforted. Verse 26 separates each possessor
+  and its resumptive pronoun from WHO HAS and from the contribution.
+  Verse 31's "all of you are able to prophesy" separates subject,
+  pronominal copula, ability and its complement.
 - Verse 32 has singular spirit of the prophets, subject to the prophets,
   with causal "For" rather than a prepositional "for the prophets."
   Verse 33 keeps God of peace rather than tumult and all the ecclesias
@@ -5290,17 +5313,35 @@ Source checks for 1 Corinthians 14:
   suffix remains plural. The home phrase modifies asking their husbands,
   and the explanation retains causal "For" with shameful speaking in
   the ecclesia; it is not absorbed into a prepositional "for women."
+  The law's perfect speech verb remains "said."
 - Verses 36-40 keep God's word coming forth from the addressees or
   reaching only them as questions, the conditional claims to prophetic
   or spiritual status, and recognition of the Lord's commands. Verse 38
   says if someone does not know, let him not know; it is not replaced
   with a different passive reading. The final commands retain zeal for
   prophecy, not forbidding tongues, and everything done decently and
-  in order.
+  in order. Verse 36 keeps rhetorical DELMA as "perhaps" and the two
+  focus constructions, without a new person. Verse 37's qualitative
+  D-RUHA is "spiritual," supported by
+  [CAL's D-RUH usage](https://cal.huc.edu/oneentry.php?cits=all&lemma=rwx+N).
+  Verse 40's ordinary occurrence predicate is "let everything take place,"
+  with decently and in order independently linked.
 
 All 40 verses and 565 source words received source-to-English and running
 English review. The eleven גיר, eleven דין and four הכיל occurrences
 were checked individually against the final English clauses.
+
+The shared-span review reduced 146 spans to 34. Ordinary negatives,
+auxiliaries, clauses, list items and noun phrases now keep separate
+source words. The remaining reasons identify compound connectors,
+specific repeated references and coreferential datives, the distributive
+one-by-one expression and the limiting at-most expression. All 1,243 full
+gloss records, decoded morphology, baseline singles and shared spans,
+every final map and each exact exception reason were checked before a
+separate continuous-English reading of all 40 verses. Verse 15 was
+already correctly split and remains unchanged.
+Three independent whole-chapter readers completed those checks and
+approved the frozen translation and all 34 exception reasons.
 
 Source checks for 1 Corinthians 15:
 
