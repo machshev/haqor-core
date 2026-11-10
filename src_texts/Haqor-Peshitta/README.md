@@ -3401,30 +3401,74 @@ Source checks for Romans 6:
 
 Source checks for Romans 7:
 
+- The shared-span review checked all 25 verses and 390 source words,
+  reducing 86 original shared spans to 20 documented exceptions.
+  Three independent whole-chapter reviews checked every final mapping,
+  exact exception reason and the continuous English against the frozen
+  files. All 25 maps and their continuous English change.
 - Romans 7:1-3 keeps the law's dominion, the living/dead conditions and the
   woman/husband roles distinct. The last condition in 7:3 says that she may
-  be joined to another man; it does not say she becomes another man.
+  belong to another man; it does not say she becomes another man.
+  In 7:1 the construct recipient is “to those acquainted with the law”;
+  the law's authority and copula are separately linked. In 7:2 the
+  comparison becomes “It is like a woman who is bound,” preserving the
+  relative prefix and feminine copula. In 7:3 the change of status keeps
+  its subject-referring dative, and “even if” expresses the final
+  conditional's contextual concessive force.
 - Romans 7:4 keeps the relative “who” and being joined to the one raised
-  from among the dead. Romans 7:5 preserves the causal connector, the law,
-  passions and bearing fruit. Romans 7:6 links released/from/law to their
+  from among the dead. The relative head and prefix have separate owners,
+  as do “from,” independent “among” and “the dead.” The body's suffix
+  anticipates the explicit Messiah in one possessive relation.
+  Romans 7:5 preserves the causal connector, the law, passions and bearing
+  fruit; sins and fruits are plural. The nominal “which are through the
+  law” is distinct from the past “were active” predicate.
+  Romans 7:6 links released/from/law to their
   actual words and renders the deictic reference neutrally as “to that
   which held us,” consistent with the law context and Murdock, without
   inventing a personal male actor from grammatical masculine gender.
+  “Which,” “was,” “holding” and “us” now retain separate owners.
 - Romans 7:7-8 retains the knowledge/negation contrast, desire, commandment,
   occasion and sin as distinct source elements. The suffixed recipient in
   finding an occasion is retained. The accomplishment predicates are read
-  in their actual desire/death contexts.
+  in their actual desire/death contexts. In 7:7 the identifying pronoun
+  belongs to “Is the law sin?”, not to “Far be it.” Learned and known
+  remain distinct, and the counterfactual conditional keeps both negatives.
 - Romans 7:9-16 preserves the came-to-life/died contrast, commandment, the
   finding predicate and “to me,” opportunity and its suffix, the good/death
   question, sin's role, fleshly/sold status, knowing, willing and doing.
   The final demonstrative and doing predicate are rendered as a grammatical
   local construction rather than dropping the first-person contrast.
+  In 7:9 “but” belongs to the commandment clause, and the later conjunction
+  belongs to “and I died.” In 7:10 the demonstrative is “that,” not a
+  copula; “to be” is the English complement of “was found,” as supplied
+  in Murdock. In 7:11 the occasion retains its instrumental prefix.
+  In 7:13 “Was it ... death that” keeps the masculine identifying focus
+  distinct from feminine good and its perfect “became”; the last purpose
+  prefix and exceedingly share their actual source word. In 7:14 sold
+  remains a present passive status. In 7:15-16 nominal relatives, actors,
+  volition and doing remain distinct; negatives are separately linked.
 - Romans 7:17-20 preserves the I/sin-in-me distinction and the exact negative
   scopes around dwelling, good, willingness, ability and doing. Necessary
   English copulas and local constructions clarify the source order without
-  adding another actor. Romans 7:21-25 retains the conscience/law relation,
+  adding another actor. The negative focus remains present; no “no longer”
+  is supplied without a temporal source. In 7:18 the knowing predicate's
+  reinforcing pronoun is distinct from the actual following “that” prefix;
+  “that is” and “however” also keep separate owners. In 7:19 both sets of
+  volition, intended performing and actual performing remain distinct.
+  Romans 7:21-25 retains the conscience/law relation,
   members and mind, captivity, the deliverance question, thanksgiving and
   the final mind/flesh service contrast.
+  In 7:21 the mind is the third-person subject of desires and to do;
+  the doing verb is not first-person “I.” In 7:22 the law's proleptic
+  possessor is one relation, while inner and person are separately linked.
+  In 7:23 the conjunction and takes/captive belong to one verb, with me
+  separate. In 7:25 no bracketed rescue sentence is added from Murdock.
+- [CAL's šlyṭ entry](https://cal.huc.edu/cal_entry_web.php?lemma=%24ly%2B+A)
+  supports “in authority” in 7:1. Its
+  [kʾn entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A)
+  supports righteous in 7:12, and its
+  [pšyq entry](https://cal.huc.edu/cal_entry_web.php?lemma=p%24yq+A)
+  supports easy in 7:18, beyond the export's homographic verb glosses.
 
 Source checks for Romans 8:
 
