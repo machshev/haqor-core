@@ -4729,23 +4729,36 @@ Source checks for 1 Corinthians 8:
 - Verses 1-2 retain knowledge in all of us, knowledge puffing up and love
   building up, the person's claim to know, not yet knowing anything,
   and the standard of knowing as one ought. Postpositive discourse
-  particles are grouped with their actual clauses rather than making
-  “but thinks” mean merely thinking.
-- Verse 3 retains the passive “is known by him” for the person who loves
-  God. It is not changed to an active knowing of God. Verse 4 retains
-  “an idol is nothing in the world”; reversing this into “nothing is an
-  idol” would reverse the English subject and predicate. The food from
-  sacrifices and the one-God exception are both explicit.
+  particles have separate links. Verse 2 retains the perfect in
+  “he has not yet known”; the comparative connector “as” covers
+  ܐܝܟ ܡܐ ܕ, with “it is proper” linked separately to its predicate.
+  [CAL's comparative conjunction entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29km%29%40d+c)
+  documents the comparable ܐܝܟܡܐ ܕ construction as “as.”
+- Verse 3 retains the passive perfect “has been known by him” for the
+  person who loves God. It is not changed to an active knowing of God.
+  Verse 4 retains “an idol is not anything at all in the world”; reversing
+  this into “nothing is an idol” would reverse the English subject and
+  predicate. The food from
+  sacrifices and the one-God exception are both explicit. The copular
+  verb supplies “is,” and the following pronoun gives prominence to
+  “not anything,” expressed as “at all.” The exceptive ܐܠܐ ܐܢ has one
+  minimal “except” link, with “one” separate.
 - Verses 5-6 preserve called gods, both heaven and earth, many gods and
   many lords, and the separate one God/Father and one Lord/Jesus Messiah
   clauses. The plural vocalized lords form is read in context rather
-  than mechanically adopting the lemma's “dominion” gloss. All things
+  than mechanically adopting the lemma's “dominion” gloss:
+  [Muraoka, section 25, page 25](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf)
+  explicitly gives ܡܪܘܬܐ as the plural of “master.” All things
   from the Father, we in him, all things through the Lord and we also
   through him remain distinct; repeated quantities are not discarded.
+  Each “whom” minimally links the relative prefix and its resumptive
+  pronoun; “from” and “through” remain separately linked.
 - Verse 7 distinguishes knowledge not being in everyone from the next
   existential “For there are” clause. It retains conscience, until now,
   eating as a sacrifice to idols, weakness and passive defilement. The
-  conscience noun is singular with plural possessors.
+  conscience noun is singular with plural possessors. “As” and “what was
+  sacrificed” have separate links, while the causal connector
+  “and because” retains its preposition and following relative prefix.
 - Verse 8 preserves both eating conditions and their separate negative
   outcomes. The first negative governs abounding, while the second
   governs decreasing; neither is swallowed into the condition of not
@@ -4760,15 +4773,28 @@ Source checks for 1 Corinthians 8:
   their weak consciences as sin against Messiah. An ethical dative does
   not introduce another cause or recipient; the explicit ב prefix on
   knowledge supplies the by/through relation. The plural weak consciences
-  and possessors remain explicit.
+  and possessors remain explicit: the feminine plural adjective modifies
+  the consciences. Verse 11 keeps “own” separate from “by your knowledge”
+  and retains the coreferential dative as “himself.” Verse 12's pronoun
+  focuses the preceding complement: “it is against Messiah that you are
+  sinning.”
 - Verse 13 keeps food causing the brother to stumble, the speaker's
   future first-person refusal ever to eat flesh, and the final purpose
   of not causing the brother to stumble. The causative predicate is not
-  replaced with a different actor or an omitted object.
+  replaced with a different actor or an omitted object. “Makes” and
+  “stumble” retain one verb's source position around the separate brother
+  object; “not” and “ever” also have separate source links.
 
 All 13 verses and 190 source words received source-to-English and running
 English review. The four גיר, six דין and one הכיל occurrences were
 checked individually against the final English clauses.
+The shared-span review reduced 55 shared spans to 10: comparative and
+exceptive connectors, causal connectors, relative/resumptive pronouns,
+and one repeated object. Ordinary noun phrases, negation, auxiliaries
+and clauses have separate source links. Every final mapping, including
+single-source and repeated links, every exact exception reason and the
+continuous English received independent review against frozen chapter
+bytes before integration.
 
 Source checks for 1 Corinthians 9:
 
