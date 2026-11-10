@@ -4956,6 +4956,35 @@ All 33 verses and 420 source words received source-to-English and running
 English review. The five גיר, nine דין, two הכיל and one מכיל occurrences
 were checked individually against the final English clauses.
 
+The shared-span review separates the ordinary phrases in all 33 verses,
+reducing 123 shared spans to 22 documented exceptions. These retain only
+comparative and purpose connectors, generalising relatives, the relative/resumptive
+“whom” in verse 11, negative focus in verses 16 and 18, and possessive
+suffixes anticipating the explicit ages, Messiah and God genitives.
+Every original mapping, including the 99 single-source spans, and every
+final mapping received review beside its exact source forms. Each retained
+exception received a separate check against its forms and morphology.
+
+Verse 20 makes the focus on “to demons” explicit: הו follows that
+constituent and supplies the English cleft, rather than another subject
+for “they sacrifice.” The demonstrative emphasis in verses 4 and 17
+likewise stays with the immediately preceding demonstrative. The nominal
+לא הוא negatives in verses 16 and 18 remain present rhetorical questions;
+their separate copulas and communion/participant nouns have their own
+links. See Muraoka, *Classical Syriac: A Basic Grammar*, sections 10, 93
+and 110. The bare infinitive in verse 22 reinforces provoking jealousy
+and receives its own “indeed” link (section 98j).
+
+The forms הויתון with a participle in verses 25 and 31 retain their
+command/wish force (Coakley, *Robinson's Paradigms and Exercises in Syriac
+Grammar*, section 26, page 123). Verse 32's הוו is read as the plural
+imperative “be,” despite the local perfect homograph annotation; the
+[SEDRA lexeme's inflected forms](https://dukhrana.com/lexicon/lexeme.php?adr=1%3A783&font=Serto+Jerusalem&size=125%25)
+include that imperative. Verse 13's מן is comparative “than” after
+“more,” despite its interrogative homograph lemma; compare
+[CAL, מן, preposition, sense 5](https://cal.huc.edu/oneentry.php?cits=all&lemma=mn+p).
+The existing “that they may live” in verse 33 remains unchanged in meaning.
+
 Source checks for 1 Corinthians 11:
 
 - Verses 1-3 preserve imitation of Paul as he imitates Messiah, both
