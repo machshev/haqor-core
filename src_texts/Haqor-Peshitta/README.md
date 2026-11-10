@@ -4100,50 +4100,89 @@ Source checks for Romans 15:
 
 Source checks for Romans 16:
 
-- Romans 16:1-4 preserves the sister/minister and church relations, the
-  receiving/support purpose, assistance to many and to Paul himself,
-  Priscilla and Aquila's plural service, their necks and Paul's life, and
-  the contrast between Paul's thanks and the Gentile churches' thanks.
-- Romans 16:5-9 keeps the church in their house, Epaenetus's first-fruits
-  relation to Achaia, Mary's work, and the distinct kinship, captivity,
-  beloved and service relations. Urbanus's singular service is not confused
-  with the plural description of Priscilla and Aquila.
+- All 27 verses and 323 source positions were checked against their exact
+  forms, decoded morphology, every SEDRA gloss alternative and Murdock.
+  The 70 original shared spans are reduced to 31 specific exceptions:
+  21 greeting predicates, two connectors, one compound preposition,
+  six possessive relations and one anticipated object.
+- The recurring shael b-shlama construction is the greeting idiom “greet,”
+  literally asking after someone's welfare; see
+  [CAL's shael entry, G sense 3](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%29l+V).
+  Only the asking/welfare predicate is shared. Names, recipient suffixes,
+  kinship, service, households, subjects and other modifiers stay separate.
+  The following genitive designation becomes the recipient of English
+  “greet”; no extra peaceful-manner qualification is supplied.
+- Romans 16:1 separates I/commend, to you and the discourse connector.
+  Phoebe's feminine sister, relative copula and minister remain distinct,
+  with separate ecclesia/Cenchrea relations. Romans 16:2 preserves the
+  reception purpose, comparison connector, and/in/every, matter, asking
+  and recipient, standing up for her, the causal connector, she/also,
+  has been/supporter, many and the speaker.
+- Romans 16:3-4 keeps plural servants, their relation to Paul, plural necks,
+  giving and Paul's life. The demonstrative and identifying relative are
+  distinct. Nominal negation reads “it is not I alone who am giving
+  thanks,” retaining both first-person forms and the present focus.
+  All/ecclesias/of the Gentiles remain separate.
+- Romans 16:5-6 separates the actual give/greeting construction and the
+  ecclesia/in their house relation. The relative designation, copula and
+  first-fruits of Achaia remain distinct. Mary's relative designation,
+  toiling predicate and much have separate owners.
 - Romans 16:7 uses “Junia” following the supplied Murdock reference and
   source יוניא; SEDRA's alternate English gloss “Junias” does not decide
   historical gender. “My kinsfolk” adds no personal gender inference.
   וידיעין אנון is present “and are known,” distinct from past הוו in the
-  captivity and earlier-in-Messiah clauses. Local groups preserve that
-  tense distinction and the “among the apostles” relation.
-- Romans 16:10-15 preserves the named companions, household owners,
-  repeated workers and separate Persis clause, Rufus's mother relation,
-  Nereus's sister, and brothers/saints with the named groups. The explicit
-  household names each supply one owner, not duplicate proleptic owners.
-- Romans 16:16 attaches “all” to the churches, not to the addressees.
-  Romans 16:17 renders לבר מן as the local idiom “contrary to” the learned
-  teaching; it does not require two independent English prepositions.
-  Division/stumbling actors and the avoidance command remain distinct.
-- Romans 16:18 retains causal גיר as “For,” negated service of our Lord
-  versus their belly, and the speech/blessings/deception/hearts relations.
-- Romans 16:19-23 preserves obedience and its addressees, wise/good versus
-  guileless/evil, the peace/quickness/feet statement and separate grace
-  blessing. The anticipatory object suffix and Satan form one object.
-  Timothy's group, Tertius as letter writer, Gaius as host, Erastus's city
-  office and the other brother retain their speakers and relationships.
-- Romans 16:24-26 follows this dataset's doxology layout: mystery hidden
-  and revealed, prophetic writings, the eternal God's command, the nations
-  and faith's obedience, the one who alone is wise, Jesus Messiah mediation
-  and glory. ובפוקדנה דאלהא דלעלם is one owner relation, “by the command of
-  the eternal God.” אתידע stays passive “is made known”; God is not made
-  a new active subject by misreading the genitive or proleptic suffix.
-  Romans 16:27 remains the separate final grace blessing.
-
-All 27 verses and 323 source words received source-to-English and running
-English review. The single גיר occurrence was checked in its final causal
-construction.
-
-Romans 16 uses the established “ecclesia/ecclesias” vocabulary in the five
-congregation spans. The generator already normalizes “church/churches” to
-these terms; the tracked wording matches that runtime convention.
+  captivity and earlier-in-Messiah clauses; the copulas and predicates
+  now have separate links. The “among the apostles” relation remains.
+- Romans 16:8-9 retains beloved and our Lord, Urbanus's singular service,
+  the relative with us and Stachys's separate name and epithet.
+- Romans 16:10-11 keeps the household members and house separate, with
+  each house's suffix linked only to its named owner, Aristobulus or
+  Narcissus. The latter group's relative designation and copula split.
+- Romans 16:12 retains past “who toiled” for Tryphena and Tryphosa:
+  the actual feminine-plural form agrees with the perfect tag and weak-verb
+  paradigm. Persis's separate perfect toiling, much and beloved remain.
+- Romans 16:13 separates Rufus, chosen, our Lord, and his/own/mother/and
+  mine. Romans 16:14-15 retains every named companion and conjunction,
+  including “and Nereus,” and the brothers/saints relatives.
+- Romans 16:16 separates one/another and with a/holy/kiss. All belongs to
+  ecclesias; the ecclesias' suffix and Messiah identify one owner, while
+  the greeting's second-plural suffix independently supplies you.
+- Romans 16:17 separates the request and its recipients, beware/of,
+  those/who, make/divisions/and stumblings, and the teaching relative.
+  L-bar men is the minimal “contrary to” compound. The second content
+  prefix introduces “that you keep yourselves away”; the reflexive
+  dative stays separate and no absent conjunction or among you is added.
+- Romans 16:18 retains causal “For,” those/who/are/such, negative service
+  of our Lord Jesus Messiah versus their singular belly, and both
+  and/by prefixes in the pleasant words and blessings. Deception,
+  plural hearts and the simple remain distinct.
+- Romans 16:19 separates your/own/obedience and the perfect passive
+  “has become known,” every/person, both first-person predicates and
+  pronouns, and the plural good things/evil things contrast.
+- Romans 16:20 keeps God/of peace, the future crushing predicate,
+  quickly, under and your feet separate. The object suffix and Satan
+  identify one patient. The grace suffix and our Lord identify one
+  possessor; may/be belongs to the actual feminine imperfect.
+- Romans 16:21-23 keeps Timothy's singular service, each named companion,
+  kinship and greeting recipient distinct. Tertius's I/myself, perfect
+  wrote, letter and our Lord remain, without an invented this. Gaius's
+  hospitality to Paul and the whole ecclesia, Erastus's city office
+  and Quartus's brother designation stay separately linked.
+- Romans 16:24-26 follows this dataset's doxology order. The explanatory
+  Gospel/mystery discussion is parenthesized so the outer “to God ...
+  who alone is wise—be glory” remains clear. The Gospel's own possessor,
+  passive proclamation, concerning Jesus/Messiah, revelation, mystery,
+  times/of the ages and hidden/was remain distinct.
+- Romans 16:25 keeps the two perfect passive revelation predicates,
+  at/this/time, through/Scriptures/of the prophets and the command's
+  suffix with its explicit God owner. “Who is eternal” remains separate.
+  God is not made a new subject of revelation or being made known.
+  To all/Gentiles and for the obedience/of faith retain separate owners.
+- Romans 16:26 retains through/Jesus/Messiah, the actual unglossed
+  forever-and-ever form and Amen. The nominal glory wish supplies
+  English be without claiming an unexpressed Syriac finite verb.
+  Romans 16:27 likewise retains its separate nominal grace wish, the
+  grace/our Lord ownership chain, Jesus/Messiah and with/all of you.
 
 Source checks for 1 Corinthians 1:
 
