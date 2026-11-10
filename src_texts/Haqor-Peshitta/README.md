@@ -495,31 +495,40 @@ Source checks for Mark 5:
 Source checks for Mark 6:
 
 - All 236 original shared spans were checked against the inflected source
-  forms, morphology and connected English. Thirteen justified shared spans
+  forms, morphology and connected English. Sixteen justified shared spans
   remain; ordinary noun phrases, auxiliaries, prohibitions and quantities
   have separate source owners.
 - In 6:1 the disciples were following him. In 6:2 the dative recipient
   and the explicit "this man" belong to the question about where his
   teaching comes from; the past auxiliary belongs to the saying predicate.
 - In 6:3 "behold" is explicit in the sisters question. In 6:5 the second
-  negative reinforces "not one"; it does not negate the following healing.
+  negative reinforces "not one"; the negative and numeral now have
+  separate owners, and it does not negate the following healing.
   Ela en in 6:4, 6:5 and 6:8 remains the compound exception particle.
 - In 6:12 the implicit plural repentance subject is clarified as "people",
-  the hearers of the apostles' preaching. In 6:13 the three past auxiliaries
+  the hearers of the apostles' preaching. The finite-plus-hwa predicates
+  in 6:12, 6:14 and 6:34 express narrative "went out", "said" and "began",
+  rather than an obligatory earlier past. In 6:21 "had made" backgrounds
+  the supper before the daughter enters. In 6:13 the three past auxiliaries
   belong separately to casting out, anointing and healing.
 - In 6:17 the past auxiliary belongs to sending; the explicit John noun
   resumes the seizure verb's object suffix. The prison compounds in
   6:17 and 6:27 and the burial-place compound in 6:29 retain both owners.
+  Their locative English has separate links to the nominal head; the
+  prison compounds have bare beth, while 6:29 has an actual b-prefix.
 - In 6:31 the ethical dative belongs to the plural command "Come";
   "let us go" is first-person plural, while "rest" is a plural command
   to the disciples. The negative existential eating clause retains both
   negations and its separate room noun and dative.
+- In 6:34 the relative "that" has its own link to the d-prefix;
+  "had no" retains the negative existential and its dative possessor.
 - In 6:39-40 the grouping and numerals are distributive repetitions,
   "group by group", "a hundred by a hundred" and "fifty by fifty".
   The source in 6:39 names grass without a separate green adjective.
 - In 6:47 the existential and past copula jointly express the boat's
   location. In 6:49 the appearance is explicitly deceptive; the two
   first-person pronouns in 6:50 retain the emphatic identity assertion.
+  Its "And" belongs to the waw prefix outside the shared "immediately".
   In 6:52 the understanding verb is perfect with its past auxiliary,
   "had not understood".
 - In 6:55 the severely afflicted people, carrying, beds, and the hearing
@@ -532,7 +541,8 @@ Source checks for Mark 6:
 - In 6:20 the adverb "gladly" belongs to hearing John, following the
   separate statement that Herod listened and acted in many matters.
 - In 6:21 the linked compound means "birthday", rather than a literal
-  house of birth; compare the
+  house of birth. "On" and "his" have separate links to the actual
+  prepositional prefix and possessive suffix; compare the
   [CAL entry for beth yalda](https://cal.huc.edu/oneentry.php?cits=all&lemma=byt%40yld%29+N).
 - In 6:41 the plural verb says that they divided the two fish. In 6:43
   the twelve full baskets contain fragments and fish; fragments are not

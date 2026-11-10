@@ -1324,7 +1324,7 @@
       ]
     },
     "41:6": {
-      "sha256": "3319a493ed112da7fdad6433c0dae7d215a28c395704b321cd772a73f42e1c5f",
+      "sha256": "c1719ca3192622ad67d82d4851197cd2bcef6ff199fe0bc809c49813dbde4bd0",
       "original_shared_spans": 236,
       "independent_review": true,
       "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
@@ -1357,40 +1357,58 @@
           "reason": "Ela en is the compound exception particle except/unless. Literal but if would introduce a conditional clause where the source supplies an exception; the following complement remains separately linked."
         },
         {
+          "verse": 12,
+          "english": "went out",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The finite nphaqu with hwaw expresses the narrative past departure after the sending instructions. Went out is one past phrasal predicate; And belongs to the verb prefix and they to the plural auxiliary agreement separately. No unsupported prior departure is imposed merely because the source has hwa."
+        },
+        {
+          "verse": 14,
+          "english": "said",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The finite amar with hwa expresses Herods narrative response after hearing about Jesus. English said realizes the one past saying predicate without placing it before that hearing. And belongs to the verb prefix and he to the singular auxiliary agreement separately."
+        },
+        {
           "verse": 17,
-          "english": "in prison",
+          "english": "prison",
           "positions": [
             8,
             9
           ],
-          "reason": "Beth asire, literally house of prisoners, is the institutional compound prison. Assigning house alone to in and prisoners alone to prison would misidentify both lexical owners."
+          "reason": "Beth asire is the institutional compound prison, requiring both the house and prisoners words. Prison links the lexical head jointly; in is linked separately to position 8, the head of the bare locative compound. This is a contextual locative function, not a claimed prepositional prefix on bare beth."
         },
         {
           "verse": 21,
-          "english": "on his birthday",
+          "english": "birthday",
           "positions": [
             5,
             6
           ],
-          "reason": "Beth yalda is the lexical birthday compound, literally house of birth. The b-prefix and possessive suffix belong to this expression; the nouns do not independently mean on and birthday."
+          "reason": "Beth yalda is the lexical birthday compound, literally house of birth. Only birthday is shared; on belongs separately to the actual b-prefix on b-beth at position5, and his to the possessive suffix of yaldeh at6. Neither noun independently means birthday."
         },
         {
           "verse": 27,
-          "english": "in prison",
+          "english": "prison",
           "positions": [
             13,
             14
           ],
-          "reason": "Beth asire, literally house of prisoners, is the institutional compound prison. Assigning house alone to in and prisoners alone to prison would misidentify both lexical owners."
+          "reason": "Beth asire is the institutional compound prison, requiring both the house and prisoners words. Prison links the lexical head jointly; in is linked separately to position 13, the head of the bare locative compound. This is a contextual locative function, not a claimed prepositional prefix on bare beth."
         },
         {
           "verse": 29,
-          "english": "in a tomb",
+          "english": "tomb",
           "positions": [
             6,
             7
           ],
-          "reason": "Beth qvura is the burial-house/place compound, here in a tomb or sepulchre. The b-prefix and lexical house/place head jointly name the burial location with qvura; assigning beth only to in a would silently drop its lexical head."
+          "reason": "Beth qvura is the burial-house/place compound tomb or sepulchre. Tomb links both lexical stems; in a belongs separately to the actual b-prefix and nominal head at position6. The lexical house/place head is not dropped by assigning tomb to qvura alone."
         },
         {
           "verse": 31,
@@ -1403,12 +1421,21 @@
         },
         {
           "verse": 34,
-          "english": "that had no",
+          "english": "had no",
           "positions": [
             10,
             11
           ],
-          "reason": "The negative existential with relative prefix and its dative possessor jointly express the sheep having no shepherd. The dative resumes the separately linked sheep rather than introducing an additional beneficiary."
+          "reason": "The negative existential laith with its dative possessor lhun expresses the one negative possession predicate had no. The relative d-prefix at10 separately owns that; the dative resumes the sheep and does not introduce another beneficiary. The negative existence-and-possession construction remains shared without pretending either word alone means had."
+        },
+        {
+          "verse": 34,
+          "english": "began",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "The finite shari with hwa expresses the narrative beginning of teaching after Jesus sees the crowds and has compassion. English began realizes the one past inception predicate. And belongs to the verb prefix and he to the singular auxiliary agreement separately; no earlier beginning is imposed."
         },
         {
           "verse": 43,
@@ -1430,12 +1457,12 @@
         },
         {
           "verse": 50,
-          "english": "And immediately",
+          "english": "immediately",
           "positions": [
             4,
             5
           ],
-          "reason": "Bar shateh, literally son of its hour, is the lexical immediate-time expression. Its two constituents jointly mean immediately; the prefixed conjunction is included where present."
+          "reason": "Bar shateh, literally son of its hour, is the fixed immediate-time expression. Immediately links both lexical constituents. And belongs separately to the actual waw prefix on w-bar at position4, rather than being included in the shared adverb."
         },
         {
           "verse": 54,
