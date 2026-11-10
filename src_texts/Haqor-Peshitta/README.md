@@ -5523,6 +5523,43 @@ All 24 verses and 278 source words received source-to-English and running
 English review. The seven גיר, nine דין and two הכיל occurrences were
 checked individually against the final English clauses.
 
+The shared-span review splits ordinary subjects, predicates, modifiers,
+negation, auxiliaries and relative/copular clauses. Verse 3 explicitly
+resumes the chosen envoys with “them,” referring to the same people rather
+than another recipient group. Verse 5's object pronoun and repeated
+Macedonia name likewise identify one object of passing through.
+
+Verse 7 renders the lexical “passerby” expression, rather than treating
+its road noun as another destination. [CAL's compound entry](https://cal.huc.edu/cal_entry_web.php?lemma=%28br%40%29wrx+N)
+records the Syriac expression. The [weekday compound](https://cal.huc.edu/oneentry.php?cits=all&lemma=xd%40b%24b%29+N)
+in verse 2 is retained as “first day of the week”; its cardinal is not
+independently an ordinal.
+
+Verse 18 separates “you should” from “acknowledge.” The second-person
+perfect BE with a participle can express a command or wish, as
+[Coakley, section 26, printed page 123](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf)
+illustrates with “you should know.” The derived verb supports active
+recognition; [CAL's šwdˁ, Qt sense 1](https://cal.huc.edu/cal_entry_web.php?lemma=%24wd%28+V)
+does not require a passive rendering. Verse 11 follows Murdock's negative
+injunction: its “no” is the contextual realization of the rhetorical
+particle, rather than a claim that למא is an ordinary lexical negative.
+
+Only 17 shared spans remain: compound connectives, the weekday and
+passerby expressions, distributive and reciprocal repetition, the
+resumed Macedonia object, the greeting idiom, generalizing “whoever,”
+and [the lexical handwriting compound](https://cal.huc.edu/cal_entry_web.php?lemma=ktbt%40%29yd%29+N).
+The greeting addressee suffixes stay separately linked, as do holy/kiss,
+my/own/spirit, and the final grace and love phrases. Each retained shared
+span has its own linguistic reason in the ledger.
+
+Three independent whole-chapter reviews approved the frozen final version:
+all 278 source forms with decoded morphology and state, all 612 individual
+gloss records and 24 Murdock verses, all 122 baseline mappings including 49
+singles and every original shared English/form pair, all 292 final mappings
+including 275 singles and repeated links, and each exact exception reason
+beside decoded morphology. Each reviewer then read all 24 English verses
+separately. Shared spans fell from 73 to 17.
+
 Source checks for 2 Corinthians 1:
 
 - Verses 1-3 retain Paul and Timothy, Jesus Messiah, God's will, God's
