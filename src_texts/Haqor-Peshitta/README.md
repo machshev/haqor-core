@@ -5423,6 +5423,48 @@ All 58 verses and 703 source words received source-to-English and running
 English review. The eleven גיר, fourteen דין, one הכיל and one מכיל
 occurrences were checked individually against the final English clauses.
 
+The shared-span review splits ordinary clauses, noun phrases, negative
+existentials, auxiliaries and possessors. Repeated single-word links retain
+separated conjunctions, subjects, stems and suffixes in English order.
+Verse 19 distinguishes the focus on this life from the emphatic first-person
+plural misery predicate; verse 28's pronoun before the Son emphasizes that
+subject. Neither construction introduces another human subject.
+Verse 8 places “as to one untimely born” after “to me,” making Paul the
+comparison's recipient while retaining the source's prefixed l-.
+
+Verse 6 now preserves the perfect sleeping predicate, verse 21 the
+participial coming of resurrection, and verse 57 the perfect giving of
+victory. The latter's “thanks” is a nominal expression:
+[CAL, ṭybw, sense 3](https://cal.huc.edu/oneentry.php?cits=all&lemma=%2Bybw+N)
+explicitly records Syriac thankfulness and “thanks to” with l-. Verse 20's
+sleeping noun has a null local glossary record; the form, DMK root and
+surrounding sleep predicates support its rendering.
+
+Bare causal d- supports “because we testified” in verse 15; it does not
+require another causal particle. Temporal ma d- remains “when,” and sṭar men
+in verse 27 is exceptive. Its English “is excepted” is a contextual predicate
+for that prepositional construction, with the excluded subject separately
+linked. Verse 31's possessive existential is split into “which is” and
+“mine.” Verse 44's plural passive sowing form with singular body is rendered
+impersonally as in Murdock; its following rising verb is actually singular.
+
+The 36 retained shared spans are restricted to compound connectives and
+prepositions, relative/resumptive expressions, distributive repetition,
+the temporal “on the third day,” coreferential “have perished,” the lexical
+human expression, and negative-noun incorruptibility or immortality.
+The temporal numeral expression is not an isolated ordinal gloss:
+[Muraoka's Genesis 22 note 7](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf#page=196)
+distinguishes arrival at the third day from duration in days.
+Each retained span has its own reason in the ledger.
+
+Three independent whole-chapter reviews approved the final frozen version:
+all 703 forms with decoded morphology and state, all 1,592 individual gloss
+records, all 58 Murdock verses, all 369 baseline mappings including 155
+singles and every original shared English/form pair, all 730 final mappings
+including 694 singles and repeated links, and each exact exception reason
+beside decoded source morphology. Each reviewer then read all 58 English
+verses separately. Shared spans fell from 214 to 36.
+
 Source checks for 1 Corinthians 16:
 
 - Verses 1-2 retain the collection for the saints, the Galatian ecclesias
