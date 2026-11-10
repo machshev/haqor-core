@@ -5477,8 +5477,8 @@ Source checks for 1 Corinthians 16:
   of recipients. Paul sends them with a letter to carry the addressees'
   gift to Jerusalem; if the matter warrants his going too, they go with
   him.
-- Verses 5-7 retain passing from Macedonia and passing through Macedonia
-  as separate clauses, the possible stay or wintering, accompanying Paul
+- Verses 5-7 retain passing from the Macedonians and passing through
+  Macedonia as separate clauses, the possible stay or wintering, accompanying Paul
   where he goes, and the hope of spending time together. The permitter
   is explicitly "my Lord," with a singular first-person possessor.
   Both causal clauses in verse 7 remain explicit.
@@ -5529,6 +5529,13 @@ resumes the chosen envoys with “them,” referring to the same people rather
 than another recipient group. Verse 5's object pronoun and repeated
 Macedonia name likewise identify one object of passing through.
 
+Verse 5's first term is the vocalised plural gentilic “the Macedonians”;
+the later term names the country “Macedonia.” The
+[CAL gentilic entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mqdwny+A)
+cites this exact verse with “from the Macedonians.” The first term was
+corrected during the corresponding 2 Corinthians 1:16 consistency check,
+while the separate FROM and passing-THROUGH relations remain.
+
 Verse 7 renders the lexical “passerby” expression, rather than treating
 its road noun as another destination. [CAL's compound entry](https://cal.huc.edu/cal_entry_web.php?lemma=%28br%40%29wrx+N)
 records the Syriac expression. The [weekday compound](https://cal.huc.edu/oneentry.php?cits=all&lemma=xd%40b%24b%29+N)
@@ -5552,12 +5559,14 @@ The greeting addressee suffixes stay separately linked, as do holy/kiss,
 my/own/spirit, and the final grace and love phrases. Each retained shared
 span has its own linguistic reason in the ledger.
 
-Three independent whole-chapter reviews approved the frozen final version:
+Three fresh independent whole-chapter reviews approved the frozen version
+after the gentilic correction:
 all 278 source forms with decoded morphology and state, all 612 individual
 gloss records and 24 Murdock verses, all 122 baseline mappings including 49
-singles and every original shared English/form pair, all 292 final mappings
-including 275 singles and repeated links, and each exact exception reason
-beside decoded morphology. Each reviewer then read all 24 English verses
+singles and every original shared English/form pair, all 292 mappings in
+the previously reviewed baseline including 275 singles, all 292 final
+mappings including 275 singles and repeated links, and each exact exception
+reason beside decoded morphology. Each reviewer then read all 24 English verses
 separately. Shared spans fell from 73 to 17.
 
 Source checks for 2 Corinthians 1:
