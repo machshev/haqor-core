@@ -2020,28 +2020,28 @@
       ]
     },
     "41:14": {
-      "sha256": "b8f8b4bf8c8f1030a8fa73c308847351150e885f7dc0c2cb68e3ea554df7ce37",
+      "sha256": "6c716489e4821167fe7c433ef05d76e5c923b272b74c4c5434262230dbbf7df1",
       "original_shared_spans": 257,
       "independent_review": true,
       "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
       "exceptions": [
         {
           "verse": 3,
-          "english": "who had with her",
+          "english": "had",
           "positions": [
             11,
             12
           ],
-          "reason": "Relative existential d-ith plus al-possessive/locative suffix aleha expresses the woman having the jar with her; neither token independently denotes the English possession predicate."
+          "reason": "The existential ith with the possessive/locative aleha jointly expresses the woman having the jar. Had retains both positions11,12; who belongs separately to the relative d-prefix at11, and with her to the actual al-preposition and feminine suffix at12. Repeating12 preserves its role within possession while separately linking its locative content; had is not falsely assigned to bare ith alone."
         },
         {
           "verse": 4,
-          "english": "who were displeased",
+          "english": "were displeased",
           "positions": [
             6,
             7
           ],
-          "reason": "The impersonal Ethpeal displeasure verb plus its experiencer dative lhon expresses the disciples' displeasure; the dative does not name a separate object they are displeased at."
+          "reason": "The impersonal Ethpeal displeasure verb with its experiencer dative lhon expresses the disciples being displeased. Only were displeased remains shared across6,7; the relative d-prefix at6 separately owns who. The dative introduces no separate object they were displeased at."
         },
         {
           "verse": 8,
@@ -2072,12 +2072,12 @@
         },
         {
           "verse": 37,
-          "english": "have you fallen asleep",
+          "english": "fallen asleep",
           "positions": [
             8,
             9
           ],
-          "reason": "The second-person sleep predicate with its subject-coreferential ethical dative lakh asks whether Simon has gone to sleep; the dative introduces no additional beneficiary."
+          "reason": "The sleep predicate with its subject-coreferential ethical dative lakh asks whether Simon has fallen asleep. Fallen asleep retains the sleep lexeme8 and its ethical dative9; have you belongs separately to the perfect second-person singular morphology at8. Position9 does not own an independent subject or introduce a new beneficiary, and repeating8 separates its finite morphology from the lexical predicate."
         },
         {
           "verse": 43,
@@ -2090,12 +2090,12 @@
         },
         {
           "verse": 45,
-          "english": "And immediately",
+          "english": "immediately",
           "positions": [
             0,
             1
           ],
-          "reason": "W-bar shateh, literally and son of the hour, is the fixed immediate-time idiom."
+          "reason": "Bar shateh is the fixed immediate-time idiom. Immediately retains both lexical constituents0,1; And belongs separately to the actual waw prefix on w-bar at0. Repeating position0 preserves the bar stem within the adverb while linking its conjunction separately."
         }
       ]
     },

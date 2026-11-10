@@ -872,7 +872,11 @@ Source checks for Mark 14:
   source preposition, and the immediate-time idiom. The ledger gives each
   expression's specific reason; ordinary negation, auxiliaries, modifiers,
   commands, and clauses have separate source owners.
-- In 14:3 the woman opens and pours the vessel's contents, with the
+- In 14:3 and 14:4 the relative "who" belongs separately to its
+  d-prefix, outside the shared possession and displeasure predicates.
+  In 14:3 "with her" belongs to the preposition and feminine suffix,
+  while "had" retains both words of the possession construction.
+  In 14:3 the woman opens and pours the vessel's contents, with the
   ointment, choice nard, and price kept distinct. In 14:4 the disciples'
   displeasure has an experiencer dative. In 14:5 the masculine suffix in
   vocalized bēh is rendered "at it", rather than the reference's "at her";
@@ -893,11 +897,15 @@ Source checks for Mark 14:
   of sorrow. In 14:36 the separate "my own" and "yours" retain their
   owners. In 14:37 the sleep predicate has its ethical dative, and the
   one-hour watch question has no supplied "with me" from the reference.
+  "Have you" belongs to the finite sleep verb's perfect second-person
+  morphology; "fallen asleep" retains that verb and its ethical dative.
 - In 14:41 the end "has arrived", followed by the distinct
   arrival of the hour. In 14:42 the first-person object belongs to
   handing over, rather than adding a second "to me" after drawing near.
   In 14:44 the sign and the first-person kiss remain distinct from the
-  hearers' commands to seize securely and lead him away.
+  hearers' commands to seize securely and lead him away. In 14:45
+  "And" belongs to the waw prefix; "immediately" retains both lexical
+  words of the bar-shateh idiom.
 - In 14:49 the Scriptures' fulfillment clause retains its own predicate.
   The young man and linen cloth in 14:51-52 remain distinct from the
   fleeing disciples. In 14:53 Caiaphas is explicitly named. In 14:55
