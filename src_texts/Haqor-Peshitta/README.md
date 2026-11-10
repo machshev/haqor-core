@@ -3150,34 +3150,53 @@ Romans 1:23-32 retains the source's non-corruptible God, human and animal images
 
 Source checks for Romans 2:
 
+- The shared-span review checked all 29 verses and 407 source words, reducing 113 original shared spans to 56 documented exceptions. Every final mapping, exact exception reason and the continuous English received three independent whole-chapter reviews against the frozen files. All 29 verse maps change; English changes in 20 verses. Ordinary participants, negatives, auxiliaries, modifiers and reordered clauses retain separate source owners.
 - Romans 2:1 retains the no-excuse construction, the neighbor being judged,
   the emphatic self-condemnation and the judge's own conduct. The related
   breath/escape expressions in 2:1 and 2:15 are rendered idiomatically as
   excuse, rather than adding an independent spiritual actor; compare
-  [CAL’s mappaq b-ruha idiom](https://cal.huc.edu/cal_entry_web.php?lemma=mpq%40brwx%29+N).
+  [CAL's npq entry, G 5(1)](https://cal.huc.edu/oneentry.php?cits=all&lemma=npq+V).
+  In 2:2 the judgment clause owns its copula; in 2:3 the final explicit
+  pronoun is “you,” rather than a reflexive “yourself.”
 - Romans 2:4 keeps the repeated preposition with the riches of goodness,
   patience and opportunity, and renders the insolent/daring predicate as
   “do you presume.” The repentance predicate retains its recipient.
   [CAL's mrḥ entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mrx+V)
   records the daring sense. Romans 2:5 links the negative with repentance,
   and keeps both laying up and a store of wrath, the day and the revelation.
-- Romans 2:7 retains glory, honor and incorruptibility in source order before
-  seeking; the following recipient is explicit in “he gives them life
-  forever.” Romans 2:9-10 retains the Jew/Gentile parallels. Romans 2:12
+- Romans 2:5-8 joins the relative repayment clauses to their governing God
+  clause. In 2:7 “seek” precedes its objects in English, retaining glory,
+  honor and incorruptibility and the explicit recipient in “he gives them
+  life forever.” In 2:8 the singular repayment verb has God as its implicit
+  subject; the separate plural pronoun is its patient, “them.” The supplied
+  English “with” expresses verbal government, not an extra source preposition.
+  Romans 2:9-10 retains the Jew/Gentile parallels. Romans 2:12
   keeps both without-law phrases in its first half, followed by the separate
   under-law and by-law judgment clauses.
 - Romans 2:13 renders כאנינ as “who are righteous,” distinct from the next
   words, “before God.” The exported root's gloss alternatives do not exhaust
   the actual form's adjectival sense. [CAL's kʾn adjective entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A)
   defines just/honest and illustrates the righteous sense in Romans 3:10.
+- The relative prefixes in 2:12 and 2:14 introduce whole clauses even when
+  attached to a law noun or negative construction. In 2:14 “by their nature”
+  modifies doing the law's things. The negative existential and possessive
+  datives retain their distinct contributions. In 2:16 the relative prefix
+  and judging stem share one source word; God remains separately linked.
+- Romans 2:17-20 continues the conditional introduction into the rhetorical
+  questions of 2:21-23. In 2:19 “and you are confident” retains the conjunction.
+  The questions preserve their explicit participants, negatives and predicates.
 - Romans 2:23 keeps boasting, transgression against the law and dishonoring
   God himself distinct. Romans 2:25 retains present “is profitable,” the two
   conditional clauses, “however,” and the circumcision/uncircumcision
   contrast. Its second-person ethical dative belongs with “you depart,”
   without inventing an object “it”; the final dative is absorbed into
   “has become.” Romans 2:26 retains the question and renders the presentative
-  particle as “then”; [CAL records its now-then use](https://cal.huc.edu/cal_entry_web.php?lemma=h%29+I). Romans 2:28-29 keeps the outward/hidden Jew and
-  circumcision contrasts, with smaller meaningful source links.
+  particle as “then”; [CAL records its now-then use and cites this question](https://cal.huc.edu/cal_entry_web.php?lemma=h%29+I).
+  In 2:27 the conjunction and judging stem belong to the first source word;
+  the separate dative pronoun supplies “you.” The relative prefix on Scripture
+  supplies “who,” alongside the preposition and noun. Romans 2:28-29 keeps
+  the outward/hidden Jew and circumcision contrasts. In 2:29 circumcision has
+  its explicit identifying copula, and the feminine “whose” resumes circumcision.
 
 Source checks for Romans 3:
 
