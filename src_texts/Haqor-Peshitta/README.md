@@ -4252,25 +4252,48 @@ Source checks for 1 Corinthians 1:
 
 Source checks for 1 Corinthians 2:
 
+- The shared-span review covers all 16 verses and 224 source words,
+  reducing 57 original shared spans to 13 documented exceptions. These
+  retain minimal comparison and exceptive connectors, anticipated
+  possessors and resumed objects. Ordinary negatives, auxiliaries,
+  modifiers, noun phrases and clauses are split by their actual words.
+  Three independent whole-chapter reviewers checked every baseline and
+  final mapping, every exact exception reason and the continuous English
+  against the frozen source evidence and candidate.
 - Verses 1-5 preserve Paul's coming and speech, God's mystery, the negative
   self-judgment and exception concerning Jesus Messiah, and the passive
-  crucifixion description. Weakness, fear, trembling, Spirit, power and
+  crucifixion description. Fear, trembling, Spirit, power and
   human wisdom retain their separate roles. The purpose prefix in verse 5
   explicitly connects the addressees' faith with God's power rather than
   human wisdom.
+  In 2:1 the suffix on mystery anticipates God. In 2:2 “as if” retains
+  ayk with the following d-prefix, and “except” retains ella with en.
+  In 2:4 both words and wisdom keep their own genitive prefixes; the
+  demonstration is “of the Spirit and of power.”
 - Verses 6-8 retain mature hearers, this world's rulers and their being
   annulled, hidden wisdom and God's appointment of it beforehand for our
-  glory. The explicit God subject and wisdom object suffix remain active
-  in “God appointed it beforehand.” The knowing/crucifixion condition is
-  counterfactual; the Lord of glory has one owner relation, not an added
-  “his Lord of glory.”
+  glory. In 2:6 the possessive “world's” retains both the rulers' suffix
+  and named world, with “this” separately linked. In 2:7-8 feminine
+  relative heads and their resumed object suffixes retain one patient
+  in each clause; God is the active subject of the appointment. “From,”
+  “before,” plural “ages,” “for,” “our” and “glory” are separate.
+  The knowing/crucifixion condition is counterfactual; its auxiliary,
+  negative and crucifying participle have separate links. The Lord of
+  glory has one feminine owner relation, without an extra “her.”
 - Verse 9 keeps the three eye/ear/heart negatives and God's preparation
   for those who love him. Verse 10 retains both Spirit occurrences, God's
   revealing and the Spirit's active searching of everything and God's
   depths. The explanatory clause begins “for the Spirit searches.”
+  The homographic גלא in 2:10 is read contextually as “has revealed,”
+  despite its exported noun tag and “wave” gloss. Compare the revealing
+  sense of [CAL gly](https://cal.huc.edu/oneentry.php?lemma=gly+V&cits=all).
+  God and the revealing verb remain separately linked, and the depths'
+  possessive suffix anticipates the following God.
 - Verse 11 preserves the analogy with the human spirit, both knowledge exclusions
   and “what is in God” for דבאלהא. The question's copular function is
   explicit. The Spirit of God does not acquire a second proleptic owner.
+  The separate bar/anasha components give “of a human being,” retaining
+  the generic human sense of the single-word compounds in the same verse.
 - Verse 12 retains the contrastive דין as “But we,” reception of the
   Spirit from God rather than the world's spirit, the knowing purpose and
   gifts given to us. The two explicit God occurrences belong to separate
@@ -4286,9 +4309,19 @@ Source checks for 1 Corinthians 2:
   causal גיר clauses and the further causal ד prefix, and preserve the
   negative reception/ability clauses. Judging and being judged remain
   distinct, including discernment by the Spirit and “by no man.”
+  In 2:14 the singular Ethpeel form is rendered impersonally as
+  “discernment is made by the Spirit.” A singular passive does not
+  mechanically introduce a human subject. [Muraoka, section 79,
+  printed page 64](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf)
+  describes impersonal passive participles and Eth-patterns with the
+  unmarked third-person masculine singular. The English applies this
+  construction to the contextual act of discernment.
 - Verse 16 keeps knowing the Lord's mind and teaching him in their actual
-  direction. The final אית לנ is possession, “is ours,” with the mind of
-  Messiah as its subject; it is not an extra instruction predicate.
+  direction, with the mind's suffix and named Lord jointly retaining one
+  owner. The first lan, before postpositive dein, introduces “But as for
+  us”; the final ith lan supplies possession, “is ours.” Both first-plural
+  relations belong to the clause about Messiah's mind, without attaching
+  an extra “to us” to the preceding instruction question.
 
 All 16 verses and 224 source words received source-to-English and running
 English review. All six גיר occurrences were checked individually in the
