@@ -3472,34 +3472,88 @@ Source checks for Romans 7:
 
 Source checks for Romans 8:
 
+- The shared-span review checked all 39 verses and 518 source words,
+  reducing 135 original shared spans to 34 documented exceptions.
+  Three independent whole-chapter reviews checked every final mapping,
+  exact exception reason and the separate continuous English against
+  the frozen files. All 39 maps change; 8:21 keeps its English wording.
 - Romans 8:1-3 retains the condemnation, law, Spirit/life, flesh and sin
   relations. In 8:3 the law is weak; the following weakness/flesh
   phrase expresses one proleptic genitive. מטלתה דחטיתא is one causal
   construction, “because of sin,” not two independent causes. The resumed
   object in דנחיביה לחטיתא is sin: “that he might condemn sin,” not
   “condemn it as sin.” The Son-sending and final flesh suffix remain explicit.
+  Names, titles, copulas and ordinary modifiers are now separately linked.
+  In 8:2 the relative prefix retains “which is in Jesus.” In 8:4 the
+  negative focus remains present, with its causal prefix separately
+  represented. In 8:5 the identifying copulas supply two “it is ... that”
+  focus constructions around the respective objects of thinking.
 - Romans 8:5-10 keeps the flesh/Spirit contrasts and dwelling relations.
   Romans 8:7 preserves both the law's ל preposition and causal גיר in the
   fronted “for, to the law of God” phrase. Romans 8:10 keeps the conditional
   and contrastive opening.
+  In 8:7 the causal particles and subordinate prefixes retain both
+  components, while negation and the reflexive predicate stay separate.
+  In 8:9 nominal negation is present despite its perfect-shaped copula;
+  the two Spirit possessors are proleptic genitives, and “has ... no”
+  expresses the negative existential with its pronominal complement.
+  In 8:10 body/dead and Spirit/alive have separate copulas.
 - Romans 8:11-20 preserves the resurrection/life and debt/service clauses,
   the Spirit/children relation, the filial cry, inheritance and suffering,
   and creation's subjection. Romans 8:15 retains “again to fear,” with the
-  source preposition. Adoption is a contextual rendering alongside the
-  literal sonship sense. Romans 8:20 uses contextual “in hope,” consistent
+  source preposition. [CAL's sīmāh/sīmat entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=symh+N)
+  explicitly records the adoption compound and quotes 8:15; the export's
+  treasure/store gloss is insufficient here. Romans 8:20 uses contextual “in hope,” consistent
   with Murdock's Syriac rendering.
+  In 8:11 each resurrection clause retains its relative components;
+  the second raised verb's object suffix anticipates Jesus. “From,”
+  independent “among” and “the dead” are separately owned both times.
+  Make-alive, also, your bodies and dead retain individual owners.
+  In 8:13 the reinforced pronominal copula is distinct from destined
+  and to die; the living consequent is future in its conditional context.
+  [CAL's ʿtyd entry](https://cal.huc.edu/cal_entry_web.php?lemma=%28tyd+A)
+  records this future/destined sense beyond the export's prepare gloss.
+  In 8:16 the Spirit's pronoun is “itself.” In 8:17 the inheritance
+  suffix anticipates Jesus, and the prefixed conditional remains
+  “so that if.” In 8:18 the suffering/time possession is one relation,
+  with this/time separately linked; destined and revealed also stay
+  distinct. In 8:19 the sons' suffix anticipates God.
 - Romans 8:21-30 keeps creation's release, first-fruits, adoption and bodily
   redemption, Spirit help and prayer, God's will and intercession, and the
   knowing/calling/justifying/glorifying recipients. The 8:26 prayer question
-  is split into smaller source-linked constructions: “what to pray for,”
-  “as is fitting,” and “we do not know.” Romans 8:28 retains the all-things
-  and beneficiaries relation; 8:30 retains the contrastive דינ.
+  is split into smaller source-linked constructions: “what we should pray,”
+  “as is fitting,” and “we do not know,” with causal “for” separate.
+  In 8:22 creatures is plural; groaning/laboring and until/today split.
+  In 8:23 existential possession yields “have,” and the adoption compound
+  is distinct from redemption and plural bodies. In 8:24 the identifying
+  pronoun supplies “it is in hope that,” and the later גיר is “for,”
+  not “indeed.” In 8:26 both Spirit pronouns remain “itself”; groans,
+  the relative, negation and passive speaking retain their actual owners.
+  In 8:27 feminine “it prays” refers to the Spirit, while the masculine
+  identifying copula focuses the will of God; it does not make God the
+  praying subject. Romans 8:28 retains masculine singular “he helps,”
+  the in-every-thing relation and the resumed plural beneficiaries.
+  Appointment and being called remain separate predicates.
+  In 8:29 previously/knew/them, likeness/image/Son and firstborn/many/
+  brothers stay distinct. In 8:30 the contrastive דינ remains, and each
+  fronted object and resumed recipient retains one English identification.
 - Romans 8:31-39 retains the rhetorical questions, delivery of the Son,
   death/resurrection/intercession, separation/love and the cited slaughter
   image. In 8:38 שולטנא remains the authority slot, while דקימנ and דעתידנ
   supply the present/future pair, rather than literal “standing/prepared”
   descriptions. Compare [CAL's qwm entry, including being present](https://cal.huc.edu/oneentry.php?cits=all&lemma=qwm+V)
   and [its ʿtyd analysis, including future things](https://cal.huc.edu/getlex.php?coord=620442623&word=7).
+  In 8:32 “have pity on his Son” retains the actual on-preposition,
+  with the negative, verb and Son separately linked. In 8:33 accusation,
+  against, chosen and God are distinct from the second God/justifying
+  clause. In 8:34 Messiah/died/rose and at/right hand/God split.
+  In 8:35 and 8:39 the separation verbs have first-person singular
+  “me,” and each love phrase has one proleptic possessor.
+  In 8:36 active Peal gives “we die,” not passive “are put to death”;
+  the reckoning predicate keeps its own passive construction.
+  In 8:37 in/all/these and the one/who loved us split. In 8:38 “For”
+  belongs to actual גיר and “that/neither” to דלא. In 8:39 another/
+  creation and ability/separation retain separate owners.
 
 Source checks for Romans 9:
 
