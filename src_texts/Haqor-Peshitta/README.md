@@ -4558,49 +4558,82 @@ against the frozen chapter bytes before integration.
 
 Source checks for 1 Corinthians 6:
 
-- Verses 1-4 retain the controversy with one's brother, the unjust versus
-  holy judges, the holy ones judging the world, and the world being judged
-  by the addressees. Judging angels and the lesser matters of this world
-  have distinct objects. The appointment of people despised in the
-  ecclesia remains an imperative concerning the addressees' own cases.
-- Verses 5-7 preserve shame, the lack of even one wise person able to
-  settle matters between brothers, and litigation before unbelievers.
-  Verse 5's ability and settling predicates remain separately explicit.
-  The opening temporal idiom in verse 7 is “already,” rather than the
-  misleading concatenation “from ... it suffices.” Self-condemnation,
-  litigation with one another, and the two questions about accepting wrong
-  or defrauding retain their separate roles and connectors.
-- Verses 8-10 retain doing wrong and defrauding even one's brothers, with
-  no third predicate invented from a repeated pronoun. Every vice in both
-  lists remains explicit, including distinct corrupt people
-  and those who lie with males. The repeated kingdom-of-God clauses have
-  one owner each, with the full negative inheritance predicate.
-- Verse 11 retains “some of you,” washing, and the separately passive
-  sanctified/justified predicates. The name belongs to our Lord Jesus
-  Messiah and the Spirit to our God; proleptic suffixes do not add an
-  extra owner or actor.
-- Verses 12-14 preserve both lawful statements, the profitable/unprofitable
-  qualification, and the final human subject who will not have dominion
-  over Paul. That subject is not replaced with Murdock's supplied
-  “none of them.” Food/belly and body/Lord relations remain reciprocal;
-  God's doing away with both is distinct from raising our Lord and us.
-- Verses 15-17 distinguish plural bodies/members from the singular member
-  in the following question. The source's third-person actor is retained,
-  rather than imposing a first-person question. The quoted “shall be”
-  belongs to the two becoming one body; the explicit two, one body and
-  one spirit are all retained.
-- Verses 18-20 keep the body-related contrast between every sin and
-  fornication, the singular body as temple with plural possessors, the
-  Spirit dwelling in the addressees and received from God, and the
-  denial of self-ownership. Feminine Syriac agreement does not supply a
-  female identity or a new actor. Both body and spirit remain explicit
-  in the final exhortation, followed by their belonging to God. The
-  copula in verse 20 is retained with “Therefore be glorifying,” rather
-  than swallowed into the preceding bought-with-a-price clause.
+- Verses 1-2 separate the daring predicate, indefinite person, dispute,
+  brother, prepositions and contrasting judges. Existential possession is
+  “he”/“has,” with the possessor and predicate individually owned. The
+  holy ones judging the world, the passive world judgment, and
+  “are you”/“not”/“worthy”/“to decide”/“small”/“cases” remain separate.
+- Verse 3 keeps judging angels distinct from worldly matters. Chad/kma
+  is the minimal scalar idiom “How much more.” “Those things”/“which”/
+  “are”/“of”/“this”/“world” retains the two d-prefixes and copula;
+  masculine singular “this” modifies world across the plural copula.
+  Verse 4 retains active imperative “seat,” “those”/“who are despised”/
+  “in the ecclesia,” and “for yourselves”/“in judgment,” rather than
+  absorbing the appointment clause into “your judges.”
+- Verse 5 renders hu after the shame phrase as focus: “it is to bring
+  shame that I say to you.” The negative existential and af-la reinforce
+  one “not,” shared minimally, with “is there,” “even,” “one” and
+  “wise person” separate. “Who is able” and “to settle” keep the
+  ability and settling predicates distinct. Verse 6 separately retains
+  the brother's litigation and “those”/“who”/“do”/“not”/“believe.”
+- Verse 7 separates “Already” from “therefore”; the self-condemnation
+  keeps the perfect predicate, reflexive noun and coreferential dative.
+  “Because”/“a lawsuit,” existential “you”/“have,” and reciprocal
+  “with”/“one”/“another” have individual owners. Metul/mana forms
+  minimal “why” in each question, with the causal particle, pronouns,
+  negatives and passive predicates separate. Verse 8 retains all three
+  second-person pronouns under the two wronging/defrauding predicates.
+- Verses 9-10 keep every vice and its negative connector explicit,
+  including distinct corrupt people and those lying with males. Only
+  each kingdom suffix and explicit God share an owner relation; the
+  head noun, inheritance predicate, negation and demonstrative are separate.
+- Verse 11 renders ith/hway as “were”/“present.” Repeated absolute
+  anash/anash is distributive “in each”/“one”/“of you,” following
+  Muraoka, section 71a, and [CAL, anash](https://cal.huc.edu/oneentry.php?lemma=%29n%24+N&cits=all),
+  which documents the same anash/anash/menkun construction. Murdock's
+  “some” is not imposed on this Syriac wording. Peal sahaitun is
+  “you bathed,” the lexical intransitive sense documented in
+  [CAL, sahy](https://cal.huc.edu/oneentry.php?lemma=sxy+V&cits=all);
+  it does not require a reflexive suffix to mean washing oneself.
+  Sanctified and justified remain passive perfects. The name and Spirit
+  suffixes anticipate their explicit Lord/God owners; only those owner
+  relations are shared, with head nouns and Jesus/Messiah separate.
+- Verses 12-14 split both lawful statements, profitability, recipients,
+  the human subject and its negative dominion predicate. Food/belly and
+  body/Lord relations remain reciprocal; God's annulling both is distinct
+  from raising our Lord and us. The two w-prefixes in verse 14 are
+  correlative “both”/“and,” preserving the first conjunction as well
+  as the perfect/prospective raising contrast.
+- Verses 15-17 distinguish plural bodies/members and the later singular
+  member. The third-person actor is “someone,” with the making verb's
+  “it” object retained. “The one”/“who joins himself” keeps the head
+  and relative separate; “one”/“body,” the quoted two/shall-be clause,
+  and “one”/“spirit” follow English order with individual owners.
+- Verse 18 splits every/sin/relative/human/commits, the copula and
+  outside/of/body relation. Hu after “against his own body” focuses
+  that phrase: “it is against his own body that the one who commits
+  fornication sins.” These focus analyses follow Muraoka, section 110.
+  Feminine copular agreement with sin does not introduce a female actor.
+- Verse 19 retains singular body with plural possessors, separate
+  temple/copula and Holy/Spirit owners, the dwelling clause, and the
+  demonstrative head “that” before “which you received.” The Spirit
+  receives no personified pronoun. Present nominal negation retains
+  “and”/“you are”/“not”/“your own.”
+- Verse 20 separates purchase, causal particle and price. The plural
+  price noun has singular English, as a pluralia tantum noun.
+  “Therefore”/“be”/“glorifying” retains the second-person perfect
+  hwa command before a participle, documented in
+  [Coakley, section 26, page 123](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
+  Both body and spirit remain explicit, followed by the individually
+  linked demonstrative, relative/copula and belonging-to-God predicate.
 
-All 20 verses and 293 source words received source-to-English and running
-English review. The three גיר, six דין and two הכיל occurrences were
-checked individually against the final English clauses.
+All 20 verses, 293 source words, decoded morphology, 644 full individual
+gloss alternatives, Murdock, all 153 baseline mappings (61 single-source
+and 92 shared), and every original shared English/source pair received
+review. The final chapter has 316 mappings: 307 single-source spans and
+9 shared spans with specific reasons in the ledger. Every final mapping,
+exception reason and the continuous English received independent review
+against the frozen chapter bytes before integration.
 
 Source checks for 1 Corinthians 7:
 
