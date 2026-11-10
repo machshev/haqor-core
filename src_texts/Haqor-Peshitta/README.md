@@ -4421,40 +4421,74 @@ checked individually against the final English clauses.
 
 Source checks for 1 Corinthians 4:
 
-- Verses 1-2 distinguish Messiah's ministers and household stewards of
-  God's mysteries, retaining the requirement that each be found faithful.
-  The compound for household stewards and the proleptic mysteries suffix
-  do not introduce additional chiefs, houses, or owners.
-- Verses 3-5 retain judgment by the addressees, judgment by any person,
-  Paul's self-judgment, and his clear conscience without making that
-  conscience a justification. Both causal clauses in verse 4 remain
-  explicit, with the Lord as judge. The hidden things of darkness and
-  thoughts of hearts each have one genitive relation. The Lord's coming,
-  disclosure, and each person's praise from God remain distinct.
-- Verses 6-7 retain Paul and Apollos, the purpose of learning within the
-  written limit, the passive warning against being exalted above one's
-  companion because of a person, and the received/not-received questions.
-- Verse 8 uses contextual “By now” for the opening temporal idiom, rather
-  than suggesting a new future claim with “From now.” The fullness,
-  riches, reigning without the apostles, contrasting wish, and purpose
-  that we also might reign with you retain their actors and connectors.
-- Verses 9-14 keep God appointing the apostles last, the death comparison,
-  all three spectacle audiences, every we/you contrast, and the hardship
-  list. Work with their hands, blessing, endurance, and entreaty remain
-  separate responses. The world and everyone are explicit in verse 13;
-  verse 14 distinguishes shaming from admonishing beloved children.
-- Verses 15-17 retain a singular myriad of tutors, not-many fathers,
-  Paul's begetting through the Gospel in Jesus Messiah, the imitation
-  appeal, and Timothy's sending to remind the addressees of Paul's ways.
-  Teaching in all ecclesias uses the generator's canonical terminology.
-- Verses 18-21 preserve the contrastive non-coming supposition, inflated
-  people, the Lord-willing visit, their word versus their power, and
-  God's kingdom in power rather than word. The final question contrasts
-  the rod with love and a gentle disposition; it adds no separate actor.
+- Verses 1-2 split household/stewards into their management and household
+  components. In verse 1, “of mysteries” retains the noun's d-prefix,
+  while its possessive suffix and the explicit God identify one owner.
+  “Let us be” retains the contextual hortative perfect; perfect forms
+  can express wishes, as explained in Muraoka, section 81.
+- Verse 3 separates both “for me” relations, the judgment predicate,
+  negation, subject and reflexive. The terminal first-person pronoun
+  supplies “am,” rather than a second “myself.” Generic bar/anash is
+  “human being.” Verse 4 retains both causal particles, “in myself,”
+  the perfect “I have not been justified,” and the Lord as judge.
+- Verse 5 separates “because of”/“this,” “ahead”/“of,” the negative
+  auxiliary and judging participle. “Until” retains adamma plus d,
+  with “comes” separate. “The one” and “who” retain their respective
+  demonstrative and relative owners. The suffixes on hidden things and
+  thoughts anticipate darkness and hearts; each owner relation is
+  shared minimally, with its head noun separate. “To each”/“one” keeps
+  the distributive expression and its recipient prefix.
+- Verse 6 renders the focusing hu after “for your sake” as a cleft,
+  “it is for your sake that I have applied.” The plural “these things”
+  is the object of the first-person verb, not of singular hu.
+  “My own”/“person” stays separate, with an elliptical “and that of
+  Apollos.” D-ban retains both “so that” and “in us”; d-la retains
+  “that” and “not.” “That”/“which”/“is written” is split, and the
+  warning against being exalted stays passive. Verse 7 retains the
+  perfect “has examined you,” both received questions, and the
+  comparative head and relative, “as”/“one”/“who.”
+- Verse 8 renders men kaddu as “Already,” the lexical idiom listed in
+  [Younansardaroud, lesson 15.5 and glossary](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Classical_Syriac_Course_Book_3-2019.pdf).
+  “Yourselves” retains the coreferential dative. The perfect predicates
+  express achieved fullness, wealth and reigning; the contrasting
+  wish and purpose that we also might reign remain distinct.
+- Verse 9 keeps active “has placed,” God as subject, and the object
+  suffix resuming fronted “us.” Hu focuses the preceding “last,”
+  giving “it is last that God has placed us,” rather than shifting
+  emphasis to God. The focus analyses in verses 6 and 9 follow
+  [Muraoka, sections 10 and 110](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  The death comparison and all three spectacle audiences stay explicit.
+- Verses 10-13 separate subjects, copulas and predicates; actual “and”
+  connectors in verse 10 remain “and.” “Permanent”/“home” in verse 11
+  follows English order with individual owners. Work with their hands,
+  blessing, endurance and entreaty remain separate responses; “them”
+  in verse 13 is the governed recipient of “entreat.” The world and
+  everyone are explicit, and no extra object is added to endurance.
+- Verse 14 treats la hwa as present negative focus: “It is not in order
+  to shame you that I write.” The purpose and comparison retain their
+  d-prefixes, with the beloved-children phrase and instruction separate.
+  Verse 15 retains the myriad of tutors, not-many fathers and Paul's
+  begetting through the Gospel in Jesus Messiah. Hu emphasizes “I”
+  as “myself”; the perfect auxiliary belongs to “have begotten you.”
+- Verse 16 separates “I”/“ask”/“of you,” with d-bi supplying both
+  “that” and “me” under the English government of “imitate.” Verse 17
+  separates “because of”/“this,” “my”/“beloved”/“son,” the relative
+  “which are in Messiah,” and “the things”/“which”/“I”/“teach.”
+  Teaching in all ecclesias retains the canonical terminology.
+- Verses 18-21 preserve the hypothetical “as if,” separately linked
+  coming clause, inflated people, Lord-willing visit and word/power
+  contrast. The suffixes on word and kingdom anticipate their named
+  owners, with head nouns separate. La hwat in verse 20 expresses
+  present nominal negation. The final question keeps the rod and love,
+  with “gentle”/“spirit” linked separately in English word order.
 
-All 21 verses and 301 source words received source-to-English and running
-English review. The seven גיר, five דין and one הכיל occurrences were
-checked individually against the final English clauses.
+All 21 verses, 301 source words, decoded morphology, 644 full individual
+gloss alternatives, Murdock, all 204 baseline mappings (132 single-source
+and 72 shared), and every original shared English/source pair received
+review. The final chapter has 328 mappings: 316 single-source spans and
+12 shared spans with specific reasons in the ledger. Every final mapping,
+exception reason and the continuous English received independent review
+against the frozen chapter bytes before integration.
 
 Source checks for 1 Corinthians 5:
 
