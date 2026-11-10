@@ -6073,10 +6073,13 @@ Source checks for 2 Corinthians 6:
 - Verses 11-12 keep our mouth open toward the Corinthians and our
   heart expanded, then both constrained predicates: not in us, but
   in the addressees' own affections. The expanded-heart wording follows
-  the actual form and context, not the abbreviated smell gloss.
-  Verse 13 retains speaking as to children, repayment to me and
-  enlargement of the addressees' love toward me; no my-children
-  possessor is supplied.
+  the actual form and context: [CAL's rwyh entry](https://cal.huc.edu/cal_entry_web.php?lemma=rwyx+A)
+  gives full, wide and spacious, with Syriac examples. The abbreviated
+  smell gloss belongs to a different root. Verse 13 retains speaking
+  as to children, repayment to me, my due which you owe, and enlargement
+  of the addressees' love toward me. Both first-person suffixes in the
+  repayment request identify the same payee; no my-children possessor
+  is supplied.
 - Verses 14-15 keep the son-of-yoke partnership idiom and those who
   do not believe, followed by all four questions: righteousness with
   iniquity, light with darkness, Messiah with Satan, and a believer
@@ -6095,6 +6098,14 @@ Source checks for 2 Corinthians 6:
   singular. Father to you, sons and daughters to me, and the concluding
   divine utterance remain explicit. The all-holding expression is
   rendered as the established Lord Almighty title, not another actor.
+
+Comparative connectors include the relative prefix on their following
+source word while leaving that word's predicate or complement separate.
+The sorrow expression retains its first-person plural experiencer.
+Possessive existential have is shared only between the existential and
+its l-marked possessor; ordinary noun phrases, negatives and auxiliaries
+remain separate. Yoke-fellows joins only the lexical son-of-yoke expression,
+and Almighty only the all-holding epithet, with Lord separately linked.
 
 All 18 verses and 221 source words received source-to-English and running
 English review. The two גיר and four דין occurrences were checked
