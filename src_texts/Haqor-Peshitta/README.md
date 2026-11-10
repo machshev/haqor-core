@@ -3557,20 +3557,54 @@ Source checks for Romans 8:
 
 Source checks for Romans 9:
 
+- The source-ownership review covers all 33 verses and 432 source words,
+  reducing the original 99 shared spans to 23 documented expressions.
+  Ordinary noun phrases, modifiers, negation, relative predicates and
+  list items have separate owners. Repeated links retain prefixes,
+  stems and suffixes when English separates them.
 - Romans 9:1-5 keeps the truth/conscience/sorrow statements, kinship and
   Israel's sonship, glory, covenant, law, service and promise relations.
   The appearance of Messiah, the relative God-over-all clause and the
   recipient of praise/blessing remain with their actual source words.
+  The relative prefixes in 9:2-3 remain explicit; the Holy/Spirit modifier
+  order in 9:1 does not require a shared phrase. In 9:4 “to whom belonged”
+  keeps the possessor and past possession distinct from the adoption
+  compound. Praises and blessings in 9:5 are plural, followed by separate
+  “for the age” and “of ages.”
 - Romans 9:6-11 preserves the Israel and Abraham/seed distinctions, the
   flesh-children/promise-children contrast, the promise cleft, Sarah and
   Rebecca, and the one-partner/Isaac construction. The pre-birth condition,
   good/evil acts, election being known beforehand, its remaining, works and
-  the one who calls are kept distinct. Local grammatical constructions
+  the one who called are kept distinct. Local grammatical constructions
   express the source's copulas and ethical datives without adding owners.
+  In 9:6 the infinitive absolute intensifies the falling predicate:
+  “has actually fallen.” The nominal negative focus constructions remain
+  present; the final explicit existence word supplies “are Israel.”
+  In 9:7 the causal connectors, copulas and proleptic seed/Abraham
+  possession are distinct, and “for you” remains separate from seed.
+  The relative negative focus in 9:8 does not add a prefix to bare
+  איתיהונ. In 9:9 “of promise” belongs to דמולכנא. In 9:11 the
+  election/God suffix is one possession relation, and the calling verb
+  is perfect, “who called.”
 - Romans 9:12-22 retains the causal “For it was said,” Jacob/Esau love/hate
   contrast, Moses and Pharaoh as recipients, and the mercy/compassion,
   will/power/name and potter/clay/vessel relations. Romans 9:19 keeps the
   conjunction in “And perhaps,” its causal connector and the will suffix.
+  In 9:14 and 9:20 “Could” expresses contextual rhetorical interrogation:
+  [CAL's דלמא analysis](https://cal.huc.edu/getlex.php?coord=620480601&word=15)
+  lists this alongside its lest/perhaps sense. Relative heads and
+  participle/copula pairs in 9:15 and 9:18 retain minimal shared links.
+  In 9:17 the feminine purpose pronoun is specified by “this”; it does
+  not refer to masculine Pharaoh. In 9:18 the second object preposition
+  is retained in the documented conversion to English “hardens whomever.”
+  In 9:19 “will stand” is imperfect. In 9:21 feminine דמנה resumes
+  the feminine mass, with a second explicit “from”; masculine clay is
+  separate, and the bare preposition does not mean “same.”
+  In 9:22 wanted and brought retain the past predicates. The patience
+  compound keeps the actual “his” suffix. In 9:23 mercies is plural,
+  and the relative, passive participle, copula and agent stay distinct.
+  In 9:24 the first-person calling apposition precedes the present
+  negative focus and separate Jew/Gentile sources.
 - Romans 9:25 preserves two separate people expressions: עמי (“my people”)
   and עמא דילי (“my own people”). The two identical אתרחמת forms are
   passive/third-feminine forms in the parallel naming construction:
@@ -3581,12 +3615,23 @@ Source checks for Romans 9:
   Lord-of-hosts condition. The Sodom and Gomorrah comparisons are linked
   separately with grammatical counterfactual English; the comparative
   predicate is not left as an English postposition after Gomorrah.
+  In 9:26 the place-relative is distinct from called/were. In 9:28 the
+  prefixed conjunction and feminine object belong to “will do it,” while
+  the Lord remains separate. In 9:29 Isaiah “himself previously said”:
+  the speaking verb is active and the pronoun is not “by.”
+  “Had not left a survivor for us” uses the Aphel sense “leave a
+  remainder” documented by [CAL's יתר entry](https://cal.huc.edu/cal_entry_web.php?lemma=ytr+V).
 - Romans 9:30 retains all three righteousness occurrences in their own
   links, including the appositional righteousness/faith construction.
   Romans 9:31-33 preserves the law/righteousness pursuit contrast, both
   causal elements, faith/works negation scope and the stumbling-stone
   quotation, without replacing source-specific words with a remembered
   parallel passage.
+  The past predicate and its separate negative in 9:31 give “did not
+  attain.” In 9:32 the works suffix anticipates the actual law noun.
+  In 9:33 the relative prefix and feminine suffix on דבה give “who”
+  and “in it,” referring to the stone; the final imperfect and negative
+  remain separate.
 
 Source checks for Romans 10:
 
