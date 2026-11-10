@@ -3245,20 +3245,32 @@ Source checks for Romans 3:
 
 Source checks for Romans 4:
 
+- The shared-span review checked all 25 verses and 326 source words, reducing 61 original shared spans to 14 documented exceptions. Every final mapping, exact exception reason and the continuous English received three independent whole-chapter reviews against the frozen files. All 25 English texts and maps change. Ordinary names, noun phrases, modifiers, negatives, auxiliaries and reordered clauses retain separate source owners.
 - Romans 4:1-5 retains Abraham's relation to the fathers, the flesh/works
   questions, boasting before God, the reckoning of faith as righteousness,
   and the contrast between grace and what is owed. Romans 4:6 links “also”
-  and “David” to their own source words. Romans 4:7-8 keeps forgiveness,
-  covering and the negated reckoning of sin distinct; the last clause uses
-  one contiguous grammatical construction to preserve its participants.
+  and “David” to their own source words. In 4:1 the source says “the head of
+  the fathers,” without “our.” In 4:2 possession has one recipient; “was”
+  and “justified” are separately linked. In 4:3 “For” and “what” have the
+  correct owners. Romans 4:7-8 keeps forgiveness, covering, negation and
+  reckoning distinct, with minimal links for shared relative referents.
 - Romans 4:9-12 keeps the circumcision/uncircumcision questions and Abraham's
-  faith as the object of reckoning. The source-fronted reckoning predicate
-  and Abraham/faith construction are rendered together where English needs
-  the grammatical relation. The sign, seal and fatherhood clauses remain
-  explicit. Romans 4:13-16 preserves the law, promise, faith and grace
-  contrasts, the conditionals and the source negatives.
+  faith as the object of reckoning. In 4:9 faith, reckoning and “to Abraham”
+  remain separate. In 4:11 masculine “he” is the receiving subject, while
+  sign and seal both describe the received circumcision. The later reckoning
+  purpose is parenthesized so that 4:12's second fatherhood clause stays clear.
+  Its nominal negation is not automatically made past. In 4:13 the negative
+  frame and main past copula share only “was.” The conditional auxiliaries
+  in 4:14 have separate links. Both explanatory connectors in 4:15 remain.
+- Romans 4:16 restores the omitted “by faith,” followed by grace and the
+  imperfect “we will be justified.” The masculine copulas belong to the
+  persons from law and from faith, rather than to the feminine faith noun.
+  The quantifier's seed referent and the seed's Abrahamic possessor remain
+  distinct in “all his seed.”
 - Romans 4:17-18 retains God's life-giving and calling, the things that are
-  not, the repeated hope wording and the seed/nations promise.
+  not, the repeated hope wording and the seed/nations promise. The relative
+  prefix on the negative owns “that” in 4:17. In 4:18 “and without,” the first
+  hope noun and the second prefixed hope noun have separate owners.
 - Romans 4:19 preserves “his faith,” consideration of the body as dead,
   “since he was,” and the bar-hundred-years age idiom. The second dead
   description belongs to Sarah's womb. The repeated prefixed object
@@ -3268,9 +3280,14 @@ Source checks for Romans 4:
   d- plus af plus lan (“for also to us”). The compound's empty exported
   gloss is not evidence for an invented demonstrative. The later אילינ
   supplies “the ones,” followed by the believers; it is not the source of
-  “to us.” The raising of our Lord Jesus Messiah from the dead remains
-  explicit. Romans 4:25 preserves the passive delivery, our sins and the
-  raising/justification parallel.
+  “to us.” The prospective construction retains the active “he is to reckon
+  it also to us,” with the divine reckoner implicit in the source. “From,”
+  “among” and “the dead” have separate links; [CAL records bēṯ as the
+  preposition “among”](https://cal.huc.edu/cal_entry_web.php?lemma=byt+p),
+  despite its house-noun homograph in the export. Romans 4:25 preserves
+  passive delivery and rising, followed by the active purpose “that he might
+  justify us.” The first-person plural is a verbal object, not a noun phrase
+  “our justification.”
 
 Source checks for Romans 5:
 
