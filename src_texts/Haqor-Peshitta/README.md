@@ -495,12 +495,13 @@ Source checks for Mark 5:
 Source checks for Mark 6:
 
 - All 236 original shared spans were checked against the inflected source
-  forms, morphology and connected English. Sixteen justified shared spans
+  forms, morphology and connected English. Thirty-two justified shared spans
   remain; ordinary noun phrases, auxiliaries, prohibitions and quantities
   have separate source owners.
-- In 6:1 the disciples were following him. In 6:2 the dative recipient
-  and the explicit "this man" belong to the question about where his
-  teaching comes from; the past auxiliary belongs to the saying predicate.
+- In 6:1 the disciples were following him. In 6:2 the anticipatory dative
+  possessor and explicit demonstrative both own "this man" in the question
+  about where his teaching comes from; the past auxiliary belongs to the
+  saying predicate.
 - In 6:3 "behold" is explicit in the sisters question. In 6:5 the second
   negative reinforces "not one"; the negative and numeral now have
   separate owners, and it does not negate the following healing.
@@ -521,7 +522,23 @@ Source checks for Mark 6:
   to the disciples. The negative existential eating clause retains both
   negations and its separate room noun and dative.
 - In 6:34 the relative "that" has its own link to the d-prefix;
-  "had no" retains the negative existential and its dative possessor.
+  "had" retains the existential and dative possession construction,
+  while "no" belongs separately to the negative existential word.
+  Neither source word alone is treated as a lexical "have" verb.
+  The positive possession in 6:38 and negative possession in 6:36 likewise
+  retain both existential and dative owners. In 6:36 the single English
+  word "nothing" retains the negator and indefinite together, with
+  "at all" separately linked to the emphatic indefinite. These ownership
+  decisions follow the possession and negation constructions in
+  [Younansardaroud, section 6.6](https://refubium.fu-berlin.de/bitstream/handle/fub188/24490/Classical_Syriac_Course_Book_3-2019.pdf?isAllowed=y&sequence=3).
+- Named possessors retain their anticipatory suffix links: Mary and James
+  in 6:3, Herodias in 6:22, the kingdom in 6:23, and John in 6:24-27.
+  The first-person "my" in 6:23 belongs to the kingdom word, separately
+  from the third-person suffix on "half." In 6:27 the cutting verb's
+  object suffix resumes the head, while the head's possessive suffix
+  identifies John; these have separate shared referent spans. Quantifier
+  suffixes retain the cities in 6:33, the region in 6:55 and "those" in
+  6:56. All 56 verses retain their English wording.
 - In 6:39-40 the grouping and numerals are distributive repetitions,
   "group by group", "a hundred by a hundred" and "fifty by fifty".
   The source in 6:39 names grass without a separate green adjective.

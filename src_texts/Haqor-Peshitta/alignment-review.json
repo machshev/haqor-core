@@ -1324,11 +1324,38 @@
       ]
     },
     "41:6": {
-      "sha256": "c1719ca3192622ad67d82d4851197cd2bcef6ff199fe0bc809c49813dbde4bd0",
+      "sha256": "2f8ee69632fc2fb7d6802491e8d1010da0e4ce60c14ff744fbc490c65a363a4c",
       "original_shared_spans": 236,
       "independent_review": true,
       "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
       "exceptions": [
+        {
+          "verse": 2,
+          "english": "this man",
+          "positions": [
+            12,
+            14
+          ],
+          "reason": "The masculine singular suffix on leh12 anticipates explicit l-hana14, this man. This man retains both possessor referent owners12,14; Where remains with the interrogative11 and contextual English does and get with the dative possession expression12. These things remains separately linked to13; no additional man or second him is introduced."
+        },
+        {
+          "verse": 3,
+          "english": "Mary",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "The feminine possessive suffix on son4 anticipates Mary5. Mary retains both referential owners4,5; of belongs separately to the actual d-prefix on5 and the son stem remains outside. No additional mother or second her is introduced."
+        },
+        {
+          "verse": 3,
+          "english": "James",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "The masculine singular suffix on brother6 anticipates the first named brother James7. James retains both referential owners6,7; of belongs separately to the actual d-prefix on7. The brother stem and the further coordinated names Joses, Judas and Simon retain their own separate links."
+        },
         {
           "verse": 4,
           "english": "except",
@@ -1393,6 +1420,69 @@
           "reason": "Beth yalda is the lexical birthday compound, literally house of birth. Only birthday is shared; on belongs separately to the actual b-prefix on b-beth at position5, and his to the possessive suffix of yaldeh at6. Neither noun independently means birthday."
         },
         {
+          "verse": 22,
+          "english": "Herodias",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "The feminine possessive suffix on daughter1 anticipates Herodias2. Herodias retains both referential owners1,2; of belongs separately to the actual d-prefix on2, and daughter and her entering remain outside."
+        },
+        {
+          "verse": 23,
+          "english": "kingdom",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The feminine third-person suffix on half7 anticipates kingdom8. Kingdom retains both referential owners7,8; of my belongs separately to the actual d-prefix and first-person singular suffix on kingdom8. The differently-personed suffix on half7 does not own my; up to and half remain outside."
+        },
+        {
+          "verse": 24,
+          "english": "John",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "The masculine possessive suffix on head9 anticipates John10. John retains both referential owners9,10; of belongs separately to the actual d-prefix on10. The head stem and the baptizer title remain outside."
+        },
+        {
+          "verse": 25,
+          "english": "John",
+          "positions": [
+            15,
+            16
+          ],
+          "reason": "The masculine possessive suffix on head15 anticipates John16. John retains both referential owners15,16; of belongs separately to the actual d-prefix on16. The head stem, dish and baptizer title remain outside."
+        },
+        {
+          "verse": 27,
+          "english": "John",
+          "positions": [
+            7,
+            8
+          ],
+          "reason": "The masculine possessive suffix on head7 anticipates John8. John retains both referential owners7,8; of belongs separately to the actual d-prefix on8. Bringing, the head stem and the following severing event remain outside."
+        },
+        {
+          "verse": 27,
+          "english": "the head",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The masculine object suffix on cut-off10 resumes the explicit head11, the object severed. The head retains both object referent owners10,11; cut off remains with the lexical verb10. The separate possessive suffix on head11 identifies John12, retained in its own shared name span; these are distinct object and possessor relations."
+        },
+        {
+          "verse": 27,
+          "english": "John",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "The masculine possessive suffix on head11 anticipates John12. John retains both possessor referent owners11,12; of belongs separately to the actual d-prefix on12. The head separately retains its own object resumption from the severing verb10, without conflating the head and its possessor."
+        },
+        {
           "verse": 27,
           "english": "prison",
           "positions": [
@@ -1420,13 +1510,22 @@
           "reason": "The plural come imperative is followed by its subject-coreferential ethical dative lkhon. The pronoun does not introduce another addressee or destination; the command is come. The following first-person plural go verb retains its separate owner."
         },
         {
-          "verse": 34,
-          "english": "had no",
+          "verse": 33,
+          "english": "the cities",
           "positions": [
             10,
             11
           ],
-          "reason": "The negative existential laith with its dative possessor lhun expresses the one negative possession predicate had no. The relative d-prefix at10 separately owns that; the dative resumes the sheep and does not introduce another beneficiary. The negative existence-and-possession construction remains shared without pretending either word alone means had."
+          "reason": "The feminine plural suffix on kullhen10 resumes the explicit cities11. The cities retains both referential owners10,11; all remains separately linked to the quantifier10. From, the running and the destination remain outside."
+        },
+        {
+          "verse": 34,
+          "english": "had",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The negative existential d-layt10 with dative possessor lhun11 supplies possession in the sheep comparison. Had retains both existential and possessor components10,11; no belongs separately to the negative component of layt10 and that to its relative d-prefix. Neither source word alone means had, and no past auxiliary or new beneficiary is invented; shepherd remains separately linked."
         },
         {
           "verse": 34,
@@ -1436,6 +1535,33 @@
             14
           ],
           "reason": "The finite shari with hwa expresses the narrative beginning of teaching after Jesus sees the crowds and has compassion. English began realizes the one past inception predicate. And belongs to the verb prefix and he to the singular auxiliary agreement separately; no earlier beginning is imposed."
+        },
+        {
+          "verse": 36,
+          "english": "have",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Layt9 with dative possessor lhun10 expresses negative possession. Have retains both existential and possessor components9,10; they belongs separately to the actual plural possessor suffix10. The negative component belongs to nothing in its own shared span; no individual source word is claimed to mean have by itself."
+        },
+        {
+          "verse": 36,
+          "english": "nothing",
+          "positions": [
+            9,
+            12
+          ],
+          "reason": "The negative component of layt9 combines with indefinite medem12, something or anything, to express the single English word nothing. Nothing retains both negative and indefinite owners9,12; have separately retains the existential-possession construction9,10, and at all remains with the emphatic indefinite12. The English word cannot be divided into separately spaced no and thing without changing its wording."
+        },
+        {
+          "verse": 38,
+          "english": "have",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Existential ith8 with dative possessor lkhun9 supplies possession of the loaves. Have retains both existential and possessor components8,9; you belongs separately to the second-person plural suffix9. The loaves, their number and here remain outside; ith alone is not treated as a lexical have verb."
         },
         {
           "verse": 43,
@@ -1472,6 +1598,24 @@
             5
           ],
           "reason": "Bar shateh, literally son of its hour, is the lexical immediate-time expression. Its two constituents jointly mean immediately; the prefixed conjunction is included where present."
+        },
+        {
+          "verse": 55,
+          "english": "region",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "The feminine singular suffix on b-kullah1 resumes the explicit region2. Region retains both referential owners1,2; through and all belong separately to the actual b-prefix and quantifier1, and that to demonstrative3. Running and bringing the afflicted remain outside."
+        },
+        {
+          "verse": 56,
+          "english": "those",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "The plural suffix on w-kullhun16 resumes the explicit plural referent ailen17, those who touched him. Those retains both referential owners16,17; and all remains separately linked to the conjunction and quantifier16. Touching, its personal object and being healed remain outside."
         }
       ]
     },
