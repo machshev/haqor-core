@@ -3798,38 +3798,61 @@ Source checks for Romans 11:
 
 Source checks for Romans 12:
 
-- Romans 12:1-3 preserves the appeal, bodies offered as a living sacrifice,
-  the mercies of God, and the renewal/testing clause. The repeated thinking
-  predicates and the beyond-what-is-proper contrast retain their subjects,
-  negation and the distribution/measure-of-faith relation.
-- Romans 12:4-8 keeps the body/member image and the distinct gift,
-  prophecy, service, teaching, exhortation, giving, presiding and mercy
-  clauses. Romans 12:7 treats אית לה as possession, “which he has,”
-  within the existential service construction. Romans 12:8 retains the
-  relative ד on each distinct gift-bearer: the one who gives, stands at
-  the head, and has compassion. These are not three further acts with
-  the comforter as their shared subject. “His comforting” names the
-  consoling activity rather than comfort received.
-- Romans 12:9-14 renders the deceit/love contrast as readable English,
-  retains both reciprocal phrases in the brotherly-love/honor clause,
-  and preserves the repeated exhortations in hope, endurance and prayer.
-  Sharing in the saints' needs and loving strangers follow the Syriac
-  constructions. Both commands to bless and the final prohibition of
-  cursing are retained.
-- Romans 12:15-18 preserves rejoicing/weeping and the two sets of people,
-  the source's comparison of thinking about yourselves and your brothers,
-  both negatives about pride/wisdom, and the evil-for-evil prohibition.
-  The possible/from-you qualification limits the peace command as in the
-  source rather than turning it into an unconditional assertion.
-- Romans 12:19 keeps the prohibition of self-vengeance, the beloved
-  addressees and room-for-wrath command. Causal גיר belongs to “For it is
-  written” before the quotation. The quotation retains the Syriac-specific
-  conditional “If you do not execute judgment for yourself, I will execute
-  your judgment,” and its attribution to God.
-- Romans 12:20 retains the enemy-feeding/drinking conditions and the
-  source's further condition about doing these things, followed by the
-  coals-of-fire/head image. Romans 12:21 preserves the negative and positive
-  overcoming predicates, repeated evil and the final “with good.”
+- All 21 verses were checked against the exact forms, decoded morphology,
+  every SEDRA gloss alternative and Murdock. Every original shared span,
+  every final mapping and the continuous English were independently
+  reviewed. The remaining shared spans have individual linguistic reasons
+  in the ledger; ordinary modifiers, predicates and negatives are split.
+- Romans 12:1 retains the possessive suffix on mercies together with its
+  explicit possessor, God. Living, holy, acceptable and sacrifice have
+  separate owners in English modifier order. In 12:2 the preposition
+  belongs to world, while this is independent; what/is and will/of God
+  remain separate. In 12:3 outside/from forms beyond, and the relative
+  connectors retain their actual owners. Distributed is active, with
+  God as its subject; by measure has no added possessive suffix.
+- Romans 12:4 distinguishes both existential possession constructions
+  from present negative focus with lā hwā. The comparison connector
+  retains aykana and the relative prefix, while in/one/body and
+  many/members remain split. In 12:5 the repeated first-person pronouns
+  supply the actual we/are frames; each/one/of us and plural members
+  remain distinct. In 12:6 to us and there is are separate, and his
+  faith retains its genuine singular possessor.
+- Romans 12:7 treats ith leh as the minimal possession predicate has,
+  within the nominal relative on service. Teacher and its explicit
+  copula remain distinct. In 12:8 comforter and its copula are likewise
+  split, as are stands and at the head. The repeated relatives distinguish
+  the giver, presider and compassionate person; his comforting denotes
+  the activity.
+- Romans 12:9 makes your love the singular subject of let/be, with
+  guileful as its predicate. The repeated second-person perfect forms
+  of hwā in the exhortations have command force before adjectives or
+  participles, as described in [Coakley, section 26, printed page
+  123](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
+  They are not automatically translated as past tense. Both reciprocal
+  phrases in 12:10 are split. In 12:11 the source says your Lord,
+  despite Murdock's our Lord; 12:12 has plural your afflictions.
+  In 12:13 need is singular, followed by loving strangers.
+- Romans 12:14 keeps both blessing commands; finite curse owns its
+  English do, separately from the negative. Romans 12:15 already has
+  suitable single-word links and is unchanged. In 12:16 the free relative
+  preserves its head and relative prefix, while the English resumption
+  supplies the source's elliptical thinking predicate. Thought is singular;
+  haughty, those/who are lowly and your own/mind are split.
+- Romans 12:17 retains the third-person jussive let it be a concern,
+  separate for you and the following that you do good things clause.
+  Before/all/people remain distinct. In 12:18 the degree/responsibility
+  idiom, literally as from your side, qualifies the peace command.
+  Make/peace and with/everyone are ordinary separate words.
+- Romans 12:19 retains the prohibition of self-vengeance, the beloved
+  addressees and room for wrath. For/it is/written are separate.
+  The quotation preserves the Syriac conditional, “If you do not
+  execute judgment for yourself, I will execute your judgment,” and
+  its attribution to God. In 12:20 the third condition is and if,
+  while feeding/drinking objects and his head retain their actual suffixes.
+  In 12:21 the first verb is active with evil as its feminine subject:
+  let evil not overcome you. The second verb's feminine object suffix
+  anticipates explicit evil, retained as one resumed object; with good
+  remains separate.
 
 Source checks for Romans 13:
 
