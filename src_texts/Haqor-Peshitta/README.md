@@ -4801,7 +4801,9 @@ Source checks for 1 Corinthians 9:
 - Verses 1-2 retain every rhetorical negative, the free man/apostle
   distinction, seeing Jesus Messiah our Lord, the addressees as Paul's
   work in his Lord, others versus the addressees, and the seal of his
-  apostleship. Distinct our/my possessors remain explicit.
+  apostleship. Distinct our/my possessors remain explicit. The free-person
+  components have separate links. Nominal negative ܠܐ ܗܘܝܬ can be present
+  “I am not”; its perfect form does not require a past rendering.
 - Verse 3 groups מפק ברוחי as the compound “my defense.” It does not add
   a separate “in my spirit” claim. The whole expression is independently
   attested as apology/defense in
@@ -4813,46 +4815,87 @@ Source checks for 1 Corinthians 9:
   shepherd/flock/milk remain separate examples. Human speech and the
   law's speech remain distinct; Moses, the threshing ox and God's care
   for oxen retain their actual source words and roles.
+  The permitted-for-us construction in verses 4-5 separates the
+  permission adjective from the dative, and ordinary “at his own expense”
+  has separate links. Verse 7's ܥܢܐ is the sheep noun despite its SEDRA
+  homograph's verb annotation; [CAL's noun entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28n+N)
+  includes Syriac Genesis 27:9. It is distinct from the later “his flock.”
+  The Aphel threshing sense is independently listed in
+  [CAL's drk entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=drk+V).
+  Verse 9 retains both anticipatory relations: “in the law” and the one
+  divine experiencer of being concerned.
 - Verse 10 has a first-person plural suffix in both “for our sake”
   phrases; Murdock's first “whose sake” is not substituted for it. The
   explanatory גיר is kept causal, separate from the sake phrase. Hope
   qualifies ploughing and threshing, with the produce noun retained.
+  The first pronoun focuses “for our sake,” and the second focuses
+  “in hope”; both are explicit English clefts. The anticipatory dative
+  and ploughman noun identify one person under “ought.”
 - Verses 11-12 retain spiritual things sown and bodily things reaped,
   among/from the addressees, others' authority versus the apostles'
   greater claim, actual nonuse of this authority, enduring everything,
   and not hindering Messiah's Gospel in anything. The Spirit/body nouns
-  are not dropped inside verb spans.
+  are not dropped inside verb spans. Verse 12's Gospel-owner suffix
+  anticipates Messiah, retained in one minimal owner link.
 - Verses 13-14 retain both temple references, altar service and sharing,
   our Lord's command and both occurrences of his Gospel. The initial
   temple and Gospel nouns are not swallowed into generic “those” spans.
+  The temple's “holy house” components have separate links in English
+  adjective order. Being fed is the passive stem's contextual sense.
 - Verses 15-18 keep nonuse, the purpose for writing, actually dying,
   nobody voiding Paul's boasting, both causal necessity clauses, and
   woe if he does not preach. Willing versus unwilling work and reward
   remain distinct. רבּת ביתותא is a stewardship compound, not a separate
   “great” modifier; being entrusted remains explicit. The reward answer
   retains cost-free proclamation and the given Gospel authority not used.
+  Verse 15's ܠܘ focuses the denied writing motive, and its cognate
+  infinitive reinforces “actually die.” The source's “and not that”
+  remains explicit. Verse 16's ܐܠܐ has the conditional sense “if not,”
+  [documented by CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29yl%29+c);
+  both English components link to that one source word.
+  [García González's lexical index, entry 55](https://gredos.usal.es/bitstream/handle/10366/137459/DLE_GarciaGonzalezV.pdf?sequence=1)
+  independently lists the stewardship compound as “administración.”
+  Verse 17 focuses that entrusted stewardship. Verse 18 distinguishes
+  the anticipated Gospel object from its anticipated Messiah owner,
+  and retains the active perfect “that he gave.”
 - Verses 19-23 preserve freedom from all, servitude to each, gaining
   many, and every repeated Jew/law/without-law/weak clause. God's law
   relation and Messiah's law have their actual owners. The final gain
   clause in verse 21 retains “also”; verse 22 aims at saving everyone,
   rather than replacing the source with familiar “some” wording. Verse
   23 is a purpose of becoming a Gospel participant, not an assertion
-  that existing participation is the cause.
+  that existing participation is the cause. Purpose prefixes and their
+  nouns remain separately rendered around the gaining and saving verbs.
+  The final owner of the law in verse 21 is Messiah.
 - Verses 24-25 retain all runners versus the one receiving victory,
   running so as to attain, the competitor's restraint, and perishing
   versus imperishable crowns. The explicit first-person plural חנן is
   “we,” not the dictionary's singular “I” gloss. The restraint phrase
-  retains the source's mind/intentional-control concept.
+  retains the source's mind/intentional-control concept. Verse 24
+  explicitly retains focus on both “all of them” and “one”; its
+  anticipatory pronoun names the same victory as the following noun.
 - Verses 26-27 retain running toward no unknown object, fighting air,
   subduing the body and bringing it into servitude, preaching to others,
   and Paul's own possible rejection. The analytic participle/pronoun
   expresses one running actor; the impersonal לא הוא negative is not
   turned into a new first-person clause. The final rejection predicate
-  absorbs its ethical dative rather than adding another recipient.
+  retains its ethical dative with the explicit self in one minimal
+  “myself” link rather than adding another recipient.
+  [Muraoka, section 93.9](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf)
+  describes constituent negation with ܠܐ ܗܘܐ, supporting verse 26's
+  minimal “not” link. Verse 27's pronoun focuses “my body”; both
+  first-person pronouns in the final rejection clause remain explicit.
 
 All 27 verses and 422 source words received source-to-English and running
 English review. The seven גיר, six דין and two הכיל occurrences were
 checked individually against the final English clauses.
+The shared-span review reduced 135 shared spans to 21: lexical compounds,
+anticipatory or resumed participants and owners, comparative and purpose
+connectors, constituent negation and overlapping self references.
+Ordinary noun phrases, negation, auxiliaries and clauses have separate
+source links. Every final mapping, including single-source and repeated
+links, every exact exception reason and the continuous English received
+independent review against frozen chapter bytes before integration.
 
 Source checks for 1 Corinthians 10:
 
