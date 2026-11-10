@@ -4492,41 +4492,69 @@ against the frozen chapter bytes before integration.
 
 Source checks for 1 Corinthians 5:
 
-- Verses 1-2 retain the report of sexual immorality, the contrast with
-  what is not even named among the Gentiles, and the specific son/father's
-  wife relation. The addressees' inflated state contrasts with mourning
-  and the removal of the person who committed the deed.
-- Verses 3-5 keep Paul's bodily distance and spiritual presence, his
-  already-given judgment, the assembly in the name of our Lord Jesus
-  Messiah, and the Lord's power. Repeated Lord/Jesus/Messiah names in
-  distinct clauses remain explicit. Name, power and day suffixes followed
-  by their explicit genitives do not add separate owners. The delivery
-  verb's object suffix and following demonstrative name one offender;
-  his body, life in spirit, and the day of our Lord remain distinct.
-- Verses 6-7 retain the negative assessment of boasting, little leaven
-  affecting the whole lump, purging old leaven, a new lump, and being
-  unleavened. The causal Passover clause identifies Messiah, who was
-  sacrificed for us; the copula does not introduce a second actor.
-- Verse 8 has three actual occurrences of חמירא, including the final
-  “leaven of purity and holiness.” This agrees with the supplied Murdock
-  reference and is retained instead of replacing it with familiar
-  “unleavened bread” wording. Both preceding negatives and the contrast
-  remain explicit, as do wickedness and bitterness.
-- Verses 9-11 distinguish the earlier letter's instruction from a blanket
-  ban on association with people in this world. The conditional necessity
-  of leaving the world is preserved. The person called a brother, every
-  named vice, and the final not-even-eating-bread prohibition remain
-  explicit; the final bread noun is not dropped into a generic meal.
-- Verses 12-13 preserve the causal question about judging outsiders and
-  the following imperative דונו, “judge,” addressed to the readers about
-  those within. No negative rhetorical question is substituted for that
-  imperative. God judges outsiders. The final removal command and its
-  masculine singular object identify the wicked person; they do not
-  introduce a second object or replace it with abstract wickedness.
+- Verse 1 separates the report, its subject and location, “and”/“like”/
+  “this,” the passive naming predicate, and “among”/“the Gentiles.”
+  Aida plus d is minimal “which”; adamma plus d is the result connector
+  “to the point that,” with “a son”/“takes”/“his father's”/“wife”
+  individually linked. The son/father's-wife relation stays explicit.
+- Verse 2 separates both second-person pronouns, “puffed up,” conjunction,
+  contrast, negation, perfect sitting predicate and mourning. Contextual
+  “rather” retains the comparative adverb's sense; it is not replaced
+  solely from a dictionary's intensifying gloss. Man plus d gives “who,”
+  with “the one,” “this,” “deed” and “has done” separate. The passive
+  removal predicate remains distinct from “from”/“among you.”
+- Verse 3 retains all three first-person pronouns, actual “and,” bodily
+  distance and nearness in spirit. Men kaddu is minimal “already,”
+  separate from “have”/“judged.” “As”/“one present” is split, and the
+  object head “the one” stays separate from man plus d, “who,” and the
+  predicate “does”/“this.”
+- Verses 4-5 retain the assembly and delivery in the name and power of
+  our Lord Jesus Messiah. The suffixes on name, power and day anticipate
+  the explicit Lord; only each owner relation is shared, leaving its
+  head noun and the Jesus/Messiah names separate. “All of you”/“should
+  assemble” and “and I”/“with you”/“in spirit” are individually linked.
+  The delivery verb's object suffix and following demonstrative identify
+  one offender, “this one.” Satan, destruction and “of his body” remain
+  distinct. D-b-ruh owns both “so that” and “in spirit,” with “he may
+  live” separately linked.
+- Verses 6-7 split the negative assessment of glorying, rhetorical
+  question, little leaven, whole lump, old leaven and new mass. The
+  comparative aykana plus d is minimal “as,” with “you are” and
+  “unleavened” separate. “Our”/“Passover”/“is”/“Messiah” retains
+  individual ownership; “who was sacrificed”/“for us” stays distinct.
+- Verse 8 separates “because of”/“this” and “let us celebrate”/
+  “the festival.” All three actual חמירא nouns remain leaven, including
+  “leaven of purity and of holiness,” rather than the familiar Greek
+  “unleavened bread.” Both negative particles, old/leaven components,
+  and every coordinated genitive prefix remain explicit.
+- Verses 9-11 retain the earlier letter's instruction and distinguish it
+  from a blanket ban on association with people in this world. D-la owns
+  “that” and “not,” separately from “you should”/“associate.” Verse 10
+  retains “who are in”/“this”/“world,” “worshippers”/“of idols,” and
+  “and if”/“not”/“you would be”/“obliged,” with the leaving-world
+  complement separate. Verse 11 places the conditional clause before
+  the main prohibition for English flow; all vices, each “or,” the
+  called-brother predicate, “anyone”/“who”/“is”/“like this,” and
+  “not even”/“to eat”/“bread” retain their individual owners.
+- Verse 12 separates “for”/“what”/“is it to me,” the judging infinitive
+  and outsiders. The actual imperative dunu is “judge,” with “you” and
+  “those within” separate; no negative rhetorical question replaces it.
+  Verse 13 retains God judging outsiders and the contrasting particle.
+  The removal verb's masculine object suffix anticipates the masculine
+  substantive “the wicked person,” shared minimally with its explicit
+  object. Substantival adjectives are explained in Muraoka, section 96d;
+  [CAL, bysh](https://cal.huc.edu/oneentry.php?lemma=by%24+A&cits=all)
+  explicitly includes an evil person. The chapter's offender is the
+  contextual referent; the command does not add abstract wickedness or
+  a second object. “From”/“among you” remain separate.
 
-All 13 verses and 200 source words received source-to-English and running
-English review. The three גיר and four דין occurrences were checked
-individually against the final English clauses.
+All 13 verses, 200 source words, decoded morphology, 433 full individual
+gloss alternatives, Murdock, all 134 baseline mappings (85 single-source
+and 49 shared), and every original shared English/source pair received
+review. The final chapter has 219 mappings: 208 single-source spans and
+11 shared spans with specific reasons in the ledger. Every final mapping,
+exception reason and the continuous English received independent review
+against the frozen chapter bytes before integration.
 
 Source checks for 1 Corinthians 6:
 
