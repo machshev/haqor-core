@@ -4329,25 +4329,64 @@ final English clauses.
 
 Source checks for 1 Corinthians 3:
 
+- The shared-span review covers all 23 verses and 309 source words,
+  reducing 86 original shared spans to 17 documented exceptions. These
+  retain minimal comparison, temporal and causal connectors, anticipated
+  possessors, a resumed object and the relative possessive “whose.”
+  Ordinary noun phrases, negatives, auxiliaries and clauses have separate
+  source owners.
+  Three independent whole-chapter reviews checked every baseline and
+  final mapping, exact exception reason and the continuous English
+  against the frozen source evidence and candidate.
 - Verses 1-4 preserve the spiritual/fleshly and babe contrasts, milk versus
   food, former and current inability, envy/strife/divisions, and the
   distinct Paul/Apollos allegiance statements. The מָא construction in
   verse 4 is temporal “For when,” not an invented “What is it” question.
   Both גיר clauses in verse 3 are grammatical causal openings.
+  In 3:1 the comparison d-prefixes remain with their preceding ayk, while
+  the with/to relations and their recipients stay separately linked.
+  In 3:3 both second-plural copulas remain; English places the negative
+  in the final rhetorical tag “are you not?” over the carnal and walking
+  predicates. In 3:4 the quoted “I,” “am” and allegiance names are
+  separate. The anash/anash expression gives “each one”; compare
+  [CAL's distributive usage](https://cal.huc.edu/oneentry.php?lemma=%29n%24+N&cits=all).
+  The generalising where and temporal when constructions follow
+  [Muraoka, sections 76-77, printed page 63 and note 2](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
 - Verses 5-8 retain the ministers through whom belief came, assigned
   service, planting and watering, and God as the one who gives growth. The
   “therefore neither ... nor ... but God” construction keeps both negatives.
   Shared labor does not erase each worker's individual reward.
-- Verses 9-11 preserve working with God, the field/building relations,
+  In 3:5 “through whom” uses the instrumental by-hand(s) expression;
+  [Coakley, section 12](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf)
+  and [CAL yd](https://cal.huc.edu/oneentry.php?lemma=yd+N&cits=all)
+  document its meaning “through/by means of,” including suffixed forms.
+  In 3:8 chad with plural enun states that the planter and waterer “are
+  one.” The following w-anash begins “and each one receives his reward
+  according to his labor”; it does not turn the unity clause into “each
+  one is a man.” The planting and watering participles in 3:7-8 retain
+  their present generic roles.
+- Verses 9-11 preserve working with God, the work/building relations,
   given grace, Paul's foundation and the other builder, and Jesus Messiah
   as the foundation. The “which is laid” qualifier in verse 11 is explicit
   within the foundation clause. The two דין markers in verse 10 retain
   their local contrasts, including “But let each one see.”
+  In 3:9 the conjunction on work is retained with the reordered “and you
+  are the work of God.” In 3:10 “And according to” retains the opening
+  conjunction. In 3:11 “apart” and “from” split the two prepositional
+  components, and Jesus/Messiah remain distinct.
 - Verses 12-15 keep all six building materials and distinguish the work,
   day, fire and person. Verse 13 has one day noun: “for the day will reveal
-  it”; an added “on the day” is not retained as a second occurrence. Fire
-  reveals/tests the work, while remaining or burning work leads to reward
-  or loss. The person escapes; the source's comparison is “but in this way,
+  it”; an added “on the day” is not retained as a second occurrence.
+  The demonstrative gives “that day.” Fire is the feminine subject of
+  the active imperfect “will disclose,” whose masculine object suffix
+  resumes the work. Work's possessive suffix separately anticipates each
+  one; these are distinct relations. Compare the clarifying sense of
+  [CAL prsh, G sense 4](https://cal.huc.edu/oneentry.php?lemma=pr%24+V&cits=all).
+  Remaining or burning work leads to reward or loss. In 3:14 “whose”
+  retains the relative prefix and the work's possessed-person suffix,
+  while the building predicate and receiving verb remain separate.
+  In 3:15 the person “will be rescued,” retaining the passive rescue
+  form; the source's comparison is “but in this way,
   as ... from fire,” retaining דין and מן rather than imposing “through.”
 - Verses 16-17 keep plural “you” and singular “temple,” with God as its
   owner. They also retain God's Spirit dwelling in the addressees and
@@ -4356,10 +4395,20 @@ Source checks for 1 Corinthians 3:
   the damaging/destructive sense and the temple/person actors. Murdock's
   repeated “mar” supports that sense; the wording does not suggest God
   causes moral corruption in the person.
+  The contextual future in 3:13 and 3:17 is compatible with participial
+  morphology; [Muraoka, section 83, printed pages 66-67](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf)
+  describes prospective and conditional uses. A participle tag alone
+  does not require changing these predictions into present events.
 - Verses 18-20 preserve self-deception, becoming foolish/wise, worldly
   wisdom in relation to God, and both scriptural quotations. The Lord
   knows the wise people's thoughts; the thoughts, not an invented new
   subject, are described as vain.
+  In 3:18 “let him himself become” keeps coreferential leh separate
+  from the inchoative verb; the world modifier, foolish predicate and
+  wise purpose predicate likewise retain their own links. In 3:19 the
+  wisdom's suffix anticipates the world; in 3:20 the thoughts' plural
+  suffix anticipates the wise. Neither owner is duplicated as an extra
+  independent his/their, and the demonstrative “this” is separate.
 - Verses 21-23 retain the prohibition of boasting in people and every
   listed item: Paul, Apollos, Cephas, the world, life, death, the present
   and the future. Their relation to the addressees is followed by the
