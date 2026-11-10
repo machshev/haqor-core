@@ -5674,7 +5674,9 @@ Source checks for 2 Corinthians 2:
   in sadness, grieving the addressees and the question of who will
   gladden him except the one he made sad. The repeated first-person
   forms identify one actor rather than introducing another person.
-- Verse 3 makes the others the subjects of "to gladden me": the actual
+- Verse 3 opens "And what I wrote to you is this": the initial relative
+  prefix, copula and demonstrative retain their own English. It makes
+  the others the subjects of "to gladden me": the actual
   verb has a third-person plural subject and first-person singular
   object. This differs from Murdock's "whom I ought to make joyful."
   Both occurrences of "all of you" remain, along with Paul's joy and
@@ -5684,11 +5686,11 @@ Source checks for 2 Corinthians 2:
 - Verse 5 keeps Paul as the person grieved in the second grief clause,
   not as its cause. "Alone" expresses the contextual contrast with
   "all of you," as in Murdock's supplied "only"; it is not a separate
-  Syriac word. The small degree and the actual noun "word" in the
-  final clause remain explicit.
+  Syriac word. The compound modifier is rendered "almost" before
+  "all of you"; the actual noun "word" in the final clause remains explicit.
 - Verse 6 treats the masculine demonstrative as the recipient of the
   rebuke, not as a modifier of the feminine rebuke noun. The sufficiency
-  expression is rendered "sufficient" without requiring a separate
+  expression is rendered "suffices" without requiring a separate
   temporal "already." Verses 7-8 preserve therefore, the contrary
   course of forgiving and comforting him, the passive swallowing of
   such a person in excessive grief, and confirmation to him of the
@@ -5703,7 +5705,7 @@ Source checks for 2 Corinthians 2:
   positive statement that we know his devices.
 - Verses 12-13 retain Troas, the Gospel of Messiah, the opened door in
   the Lord, Paul's lack of rest in his spirit, not finding Titus his
-  brother, taking leave of them and departure into Macedonia. Titus
+  brother, taking leave of them and departure to the Macedonians. Titus
   is not made a companion on that departure.
 - Verse 14 retains the noun for sight or spectacle in "makes a
   triumphal display." "Triumphal" is a contextual interpretation:
@@ -5725,6 +5727,44 @@ Source checks for 2 Corinthians 2:
 All 17 verses and 230 source words received source-to-English and running
 English review. The six גיר, seven דין and one מכיל occurrences were
 checked individually against the final English clauses.
+
+The shared-span review separates ordinary prepositional and noun phrases,
+negation, auxiliaries, subjects and predicates. Verse 3 retains the
+relative d- on “what I wrote,” rather than compressing the opening into
+“I wrote this very thing.” Its relative recipient and resumed dative
+refer to the same people who ought to gladden Paul.
+
+Verse 5 follows [CAL's explicit BṢIR QALIL compound](https://cal.huc.edu/oneentry.php?cits=all&lemma=bcyr+A),
+“almost,” while “all of you” remains separately linked. Verse 4's two
+purpose clauses use the attested [purposive METUL with d-](https://cal.huc.edu/oneentry.php?cits=all&lemma=m%2Bwl+c).
+The possessive existential “have” keeps its two grammatical members,
+with “I” separately linked to the possessive suffix.
+
+Verse 10 keeps all three actual past forgiveness predicates and renders
+the preceding present ellipsis as “so do I.” The pronoun after “for your
+sake” focuses that phrase: “it is for your sake that I forgave.”
+It does not add an object “it.” Verse 13 retains the vocalised plural
+gentilic “Macedonians,” consistently with the corresponding expression
+in 1:16 and [CAL's exact 1 Corinthians 16:5 example](https://cal.huc.edu/oneentry.php?cits=all&lemma=mqdwny+A).
+The departure predicate and its dative refer to one departing subject;
+the destination stays separate. [Farina, section 5.2.1](https://ricerca.sns.it/retrieve/e3aacdfd-ef1d-4c98-e053-3705fe0acb7e/Farina.pdf)
+describes this construction with the corresponding “go out” example.
+
+Verse 16 expresses the relative connection in both D-RIHA forms, retaining
+each death and life noun separately. Verse 17's relative prepositional
+phrases describe the same speakers as acting “in truth” and being “from
+God”; they do not introduce another group. Only 13 shared spans remain:
+relative and purpose connectors, the possessive existential, the
+“almost” compound, and co-referential recipient or subject constructions.
+Each retained exception has its own linguistic reason in the ledger.
+
+Three independent whole-chapter reviews approved the same frozen version:
+all 230 vocalised forms with decoded morphology and state, all 546 full
+individual gloss records and 17 Murdock verses, all 113 baseline mappings
+including 44 singles and every original shared English/form pair, all
+246 final mappings including 233 singles and repeated links, and each
+exact exception reason beside full decoded morphology. Each reviewer
+then read all 17 English verses separately. Shared spans fell from 69 to 13.
 
 Source checks for 2 Corinthians 3:
 
