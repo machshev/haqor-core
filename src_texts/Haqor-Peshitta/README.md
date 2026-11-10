@@ -3701,36 +3701,100 @@ Source checks for Romans 10:
 
 Source checks for Romans 11:
 
+- The source-ownership review covers all 36 verses and 501 source words,
+  reducing 125 shared spans to 25 documented expressions. Ordinary
+  nouns, modifiers, negatives, copulas and quoted predicates retain
+  separate owners.
 - Romans 11:1-4 retains the rejection question, Paul's Israelite identity,
   the people known beforehand, Elijah's complaint and the answering
   revelation. Possessive and reflexive relations remain explicit without
   multiplying owners in the English.
+  In 11:1 the rejected-object suffix anticipates his people, while the
+  seed suffix anticipates Abraham. In 11:2 the foreknowledge predicate
+  is passive: “had been known to him beforehand.” The relative and
+  temporal expressions retain minimal shared links, with the past
+  auxiliary, known predicate and recipient separate. The subsequent
+  appealing participle and past auxiliary also split. In 11:3 the
+  identifying pronoun gives “it was I alone who was left.” Seven,
+  thousand, men, bowing, worshiping and both negatives in 11:4 split.
 - Romans 11:5-8 renders גביתא as contextual “election,” following the
   remnant/election contrast and Murdock rather than the supplied isolated
   alms-collection gloss. The grace/work conditional clauses preserve all
   repeated negations. Romans 11:8 renders מדערניתא “contentious,” following
   the Syriac lexical sense; Murdock's “stupid” is a different contextual
-  choice. The seeing/hearing negatives and “until this day” remain explicit.
+  choice. The discerning/hearing negatives and “until the present day”
+  remain explicit. [CAL's גבי entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=gby+V)
+  lists the גביתא derivative as choice/collection. In 11:5 the identifying
+  pronoun and perfect left predicate remain distinct. In 11:6 there is
+  no “again/no longer” word: the separate present copulas and negatives
+  give “grace is not grace” and “work is not work.” In 11:7 Israel's
+  finding verb is active, the free relative keeps its seeking predicate,
+  and heart is singular with a plural possessor. In 11:8 “with which”
+  retains the relative prefix and resumed instrumental pronoun; the
+  actual בחר predicate is discernment, distinct from the seeing verb
+  in 11:10.
 - Romans 11:9-16 preserves David's quotation, the stumbling/falling
   question and its emphatic denial, the jealousy purpose, and the
-  Gentile/Israel comparison. Romans 11:15 retains בית in “the house of
-  the dead”; the life-from-death image is not silently shortened.
+  Gentile/Israel comparison. In 11:11 the purpose/result correlative
+  and reinforced “their own” possessor retain minimal shared links.
+  In 11:13 the explicit first-person pronouns preserve the emphatic
+  topic and its resumption. In 11:14 דלמא is contextual “if perhaps,”
+  expressing the hope to provoke jealousy, rather than “lest.”
+  Romans 11:15 retains separate from/among/dead owners: [CAL's בית
+  entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=byt+p) documents
+  the prepositional among sense, alongside its ambiguity with house.
 - Romans 11:17 expresses מן סוכא as the partitive “some of the branches,”
-  and the olive-from-the-wild phrase as one idiomatic description. The
+  with the relative, olive, copular pronoun and wild description split. The
   grafted recipient and the root/branch, kindness/severity and
   faith/disobedience contrasts retain their pronouns and negation.
   Romans 11:24 keeps the natural/contrary-to-nature comparison and its
-  concluding grafting question; local groups avoid selecting the whole
-  opening clause as one unit.
+  concluding grafting question, including the actual conditional “if.”
+  Both second-person forms in 11:17 and 11:24 retain their roles as
+  subject and relative copula; places is plural. The root/fatness
+  suffixes in 11:17 anticipate one olive possessor. In 11:18 [CAL's
+  שקל entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24ql+V)
+  explicitly records an active meaning for the passive-shaped participle:
+  “bearing.” The root's resumed object, negative focus and copulas split.
+  In 11:19 the actual grafting form has no final ת. With explicit
+  “I,” it is the first-person imperfect reading “might be grafted”;
+  the homographic third-person perfect database tag does not determine
+  this clause. Compare the first-person perfect/imperfect distinction in
+  [Coakley/Robinson, section 15, pages 68-69](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
+  Only the repeated content connector is shared between branches and
+  cut off. In 11:20 the standing predicate is perfect, “have stood.”
+  In 11:21 the origin/nature expression gives the single adjective
+  “natural,” with the relative separate. In 11:22 both kindness/severity
+  suffixes anticipate God, and the resumed in-kindness expression
+  identifies one object. In 11:23 lack/of their faith splits.
 - Romans 11:25-29 retains blindness of heart, Israel, the Gentile fullness,
   the deliverer/Jacob and covenant/sin clauses, the Gospel/election
   contrast, and God's gift and calling. Romans 11:26 uses “will live,”
   matching the source life predicate and Murdock's wording.
+  In 11:25 blindness/of heart and in/your own/mind split; only the
+  limited-extent expression shares “in part.” In 11:27 the composite
+  from-my-presence preposition retains both components, while the
+  relative, first-person recipient, covenant and future existence
+  words stay separate. The temporal connector shares “when,” distinct
+  from the actual perfect forgiven predicate. In 11:28 enemies and
+  beloved remain separate from their explicit copular pronouns.
+  In 11:29 “is not changeable in his gift and in his calling” retains
+  the actual prepositions, following Murdock.
 - Romans 11:30-36 preserves the distinct you/they obedience and mercy
   relations, the purpose of mercy for all, the unsearched judgments and
   ways, and the questions about the Lord's mind, counsel and repayment.
   The final verse keeps the three all-things clauses, “through his hand,”
-  praise, blessing and eternity supplied by the Syriac.
+  praises, blessings and age/of ages supplied by the Syriac.
+  In 11:30 formerly is the temporal from-before expression; the
+  obedience suffix anticipates the explicit “of them.” The lexical
+  negative abstracts in 11:30 and 11:32 give “disobedience,” with
+  specific reasons distinct from ordinary finite negation. In 11:31
+  the obedience predicate is perfect and both mercy nouns are plural.
+  In 11:33 the causal prefix, mankind, perfect searched and negative
+  remain distinct, as do the final passive predicate and its negative.
+  In 11:34 the mind suffix anticipates the Lord, while master/of
+  counsel is an ordinary split construct. In 11:36 the causal frame
+  retains both components, and the recipient is “to whom,” without
+  adding a conjunction.
 
 Source checks for Romans 12:
 
