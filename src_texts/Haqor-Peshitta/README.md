@@ -5587,20 +5587,21 @@ Source checks for 2 Corinthians 1:
   ourselves. The rescue expression uses plural death forms, with rescue
   of us and hope of renewed rescue kept explicit.
 - Verse 11 keeps the addressees' prayers on our behalf, his gift toward
-  us, favor done on account of many, and many thanking him on our behalf.
+  us, favor done in the presence of many, and many thanking him on our behalf.
   The two actual "many" quantities are not collapsed into one group.
 - Verse 12 keeps our boast and the testimony of our conscience, simplicity,
-  purity, God's grace, conduct in the world, rejection of fleshly wisdom
+  purity, God's grace, conduct in the world, rejection of bodily wisdom
   and especially conduct toward the addressees. Verse 13 retains writing
   no other things, what they know and acknowledge, and the confidence
   that they will acknowledge to the end.
 - Verses 14-16 preserve limited acknowledgment, we as the addressees'
   boast and they as ours, the day of our Lord Jesus Messiah, and the
   former intention to visit. The purpose is receiving grace doubly.
-  Passing through them into Macedonia, returning from Macedonia and
+  Passing through them to the Macedonians, returning from Macedonia and
   their accompanying Paul to Judea remain separate route relations.
-- Verse 17 retains both rhetorical questions about the plan, rashness
-  and fleshly purposes, with the modal clause and repeated "Yes, yes"
+- Verse 17 retains both rhetorical questions about the plan, acting as
+  a rash person and fleshly purposes, with the explicit "proper" predicate
+  in the modal clause and repeated "Yes, yes"
   and "No, no." The source locative is "in them," not "in me."
 - Verse 18 calls God faithful; it does not replace that predicate with
   Murdock's interpretive witness wording. Verses 19-20 retain God's Son
@@ -5614,12 +5615,49 @@ Source checks for 2 Corinthians 1:
   identifying pronouns.
 - Verses 23-24 retain Paul's calling God as witness upon his own soul,
   sparing the addressees as the reason for not coming to Corinth, the
-  denial of lordship over their faith and helping their joy instead.
+  denial of lordship over their faith as the reason, and helping their joy.
   The final causal clause says they stand by faith.
 
 All 24 verses and 356 source words received source-to-English and running
 English review. The six גיר, five דין and one הכיל occurrences were
 checked individually against the final English clauses.
+
+The shared-span review separates ordinary subjects, predicates, possessors,
+prepositions, modifiers, auxiliaries and negation, including both afflicted
+predicates in verse 6 and both “many” forms in verse 11. Verse 6's
+anticipatory and resumptive objects refer to the same sufferings; they
+do not introduce another object or beneficiary.
+
+The purpose clause in verse 6 follows the attested purposive use of
+[METUL with d-](https://cal.huc.edu/oneentry.php?cits=all&lemma=m%2Bwl+c).
+In verse 11, “may be” belongs to the BE form, “favor” to its noun and
+“done” to its own predicate. [B-APPAY](https://cal.huc.edu/oneentry.php?cits=all&lemma=b%29py+p)
+is rendered “in the presence of,” with “many” separately linked; the
+AL APPAY expressions retain “on our behalf.”
+
+Verse 16 distinguishes the vocalised plural gentilic “Macedonians” from
+the later country name “Macedonia.” [CAL's gentilic entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mqdwny+A)
+also illustrates the distinction with the corresponding expression in
+1 Corinthians 16:5. Verse 17 retains the lexical
+[“proper” predicate](https://cal.huc.edu/cal_entry_web.php?lemma=wly+X),
+its auxiliary and the following existential clause as separate links.
+
+Verse 13's nominal negation is rendered as constituent focus, without
+automatically imposing past tense. The pronominal focus in verse 20 is
+on “in him”; in verse 21 it is on God and in verse 24 on “by faith.”
+The identifying anointing clause is placed beside God in English to
+preserve its actor. Only 16 shared spans remain: compound connectives
+and prepositions, the limited-extent and temporal expressions, and the
+two object-resumption constructions. Each has its own linguistic reason
+in the ledger.
+
+Three independent whole-chapter reviews approved the same frozen version:
+all 356 source forms with decoded morphology and state, all 848 individual
+gloss records and 24 Murdock verses, all 208 baseline mappings including
+115 singles and every original shared English/form pair, all 371 final
+mappings including 355 singles and repeated links, and every exact
+exception reason beside decoded morphology. Each reviewer then read all
+24 English verses separately. Shared spans fell from 93 to 16.
 
 Source checks for 2 Corinthians 2:
 
