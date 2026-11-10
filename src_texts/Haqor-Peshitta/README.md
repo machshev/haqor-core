@@ -5167,14 +5167,19 @@ and exception reasons after completing those checks.
 Source checks for 1 Corinthians 13:
 
 - Verses 1-3 retain every human tongue and that of angels, prophecy,
-  all mysteries, all knowledge, all faith and moving mountains. The
+  all mysteries, all knowledge, all faith and moving a mountain. The
+  mountain noun in verse 2 is singular in the supplied Syriac.
   conditions repeatedly specify love not being in the speaker. The
   results are becoming resounding brass or a sounding cymbal, being
   nothing, and gaining nothing respectively. The ethical dative in
   verse 1 does not introduce another recipient.
 - Verse 3 retains feeding the poor with all the speaker possesses,
   handing over his own body, and its being burned. The burning wording
-  is not replaced with a Greek variant about boasting.
+  is not replaced with a Greek variant about boasting. ASHLEM is the
+  first-person conditional predicate here, despite the export's
+  third-person perfect homograph label: the strong Afel first-person
+  imperfect has the same form. The Peal burning verb has the body as
+  its subject, rendered "so it may burn," without an added agent.
 - Verse 4's long-spirit expression is an idiom for patience, not another
   personal spirit. All three explicit love nouns remain, along with
   kindness and the distinct negatives of envy, boisterous or agitated
@@ -5182,6 +5187,9 @@ Source checks for 1 Corinthians 13:
   shameful action, seeking its own, provocation and thinking evil as
   separate negatives; thinking evil is not replaced with the familiar
   phrase about keeping a record of wrongs.
+  The patience idiom shares only the adjective and spirit noun; the
+  copular pronoun has its own "is." BASIM is "kind," supported by
+  [CAL's Syriac adjective sense](https://cal.huc.edu/oneentry.php?cits=all&lemma=bsym+A).
 - Verses 6-7 retain rejoicing in truth rather than in iniquity and four
   distinct predicates with their own "all": bearing, believing, hoping
   and enduring. Each quantity is linked with its actual predicate,
@@ -5194,10 +5202,13 @@ Source checks for 1 Corinthians 13:
   "little of much" wording expresses the limited present knowledge and
   prophecy; it is not an assertion that the speaker knows everything.
   Completeness remains an abstract noun without an added identification.
+  Verse 9's "it is ... that" belongs to the focus pronoun, not to the
+  knowing verb. Verse 10 retains "that thing which was partial" with
+  its relative marker and past copula, viewed from the coming completeness.
 - Verse 11 preserves all three childhood comparisons and their distinct
   speaking, thinking and reasoning predicates, followed by becoming a
   man and putting away these childhood things. The repeated perfect BE
-  forms are auxiliaries, not three extra "I was" clauses.
+  forms separately own "I used to" before their habitual predicates.
 - Verse 12 keeps the mirror and the source's comparison or similitude
   term, rather than importing "darkly." Both now/then contrasts remain,
   as do face to face, limited current knowledge and future knowing.
@@ -5210,6 +5221,17 @@ Source checks for 1 Corinthians 13:
 All 13 verses and 185 source words received source-to-English and running
 English review. The three גיר and five דין occurrences were checked
 individually against the final English clauses.
+
+The shared-span review reduced 54 spans to nine. Ordinary negatives,
+auxiliaries, quantifiers, comparisons and face/to/face now keep their
+individual source words. Remaining exceptions identify the HWA LI
+change-of-state construction, quantified pronoun references, the
+patience idiom and compound connectors. Review included all 449 full
+gloss records, decoded morphology, baseline singles and shared spans,
+every final mapping and each exact exception reason, followed by a
+separate reading of all 13 continuous English verses.
+Three independent whole-chapter readers completed those checks and
+approved the frozen translation and exception reasons.
 
 Source checks for 1 Corinthians 14:
 
