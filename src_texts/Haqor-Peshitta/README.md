@@ -5094,31 +5094,45 @@ Source checks for 1 Corinthians 12:
   discerning spirits, kinds of tongues and their interpretation. Repeated
   Spirit references and the local discourse particles remain explicit.
 - Verse 11 makes the one Spirit the worker and distributor of all these
-  things according to the Spirit's will. Grammatical feminine agreement
-  is not turned into a new actor or a claim about human sex. Repeated
-  datives and anticipatory suffixes do not create extra recipients.
+  things according to the Spirit's will. The cleft keeps the focus on
+  "one" before the copular pronoun; the Spirit remains "it." The feminine
+  helping predicate in verse 7 likewise retains its Spirit subject and
+  separate human recipient. Repeated datives and anticipatory suffixes
+  do not create extra recipients.
 - Verses 12-14 retain one body, many members, all the members, and the
   analogy with Messiah. The first-person plural חנן is "we," not a
-  singular dictionary gloss. All of us were baptized by one Spirit into
+  singular dictionary gloss. All of us were baptized in one Spirit into
   one body, with Jews/Gentiles and slave/free distinctions; all drank one
   Spirit. The final drinking verb is active in the supplied Syriac.
 - Verses 15-16 keep the foot/hand and ear/eye contrasts and the quoted
   claims not to belong to the body. Those claims do not actually remove
-  the member from the body. The final rhetorical questions expect "No";
-  an English "is it not ... not of the body?" would suggest the opposite
-  answer. The repeated "from it/from the body"
-  constructions name one relation rather than an additional body.
-- Verses 17-21 retain both counterfactuals about eye, hearing and smell,
+  the member from the body. "It does not follow ... that it is not from
+  the body" preserves both negatives while denying the inference of
+  exclusion. LAW focuses the reason METUL HADA; LAYTEH separately negates
+  membership. The English inference linkers do not claim an extra Syriac
+  verb. An English "is it not ... not of the body?" would suggest the
+  opposite answer. The repeated "from it/from the body" constructions
+  name one relation rather than an additional body.
+- Verses 17-21 retain both counterfactuals about eyes, hearing and smell,
   God's placing every member as he willed, the question where the body
   would be if all were one member, and many members versus one body.
+  Verse 17 follows the source's plural "eyes" and verbal "how would it
+  smell." Verse 18's KUL/CHAD/CHAD is "every single one."
   The eye/hand and head/feet statements keep their distinct speakers,
   recipients, singular/plural forms and inability to declare the other
   unnecessary.
 - Verses 22-25 retain the necessity of members considered weak, greater
   honor and decoration for the less regarded members, and no need of
-  honor for the honored members in us. God tempered the body and gave
-  greater honor to the lesser member. The purpose is no division, with
-  all members caring equally for one another.
+  honor for the honored members in us. Verse 22's "it is of them that
+  there is need" preserves the pronoun's focus on the preceding
+  prepositional phrase. Verse 23's DDNUKAPHA is rendered "shameful":
+  [CAL's derived NUKKAPA](https://cal.huc.edu/oneentry.php?cits=all&lemma=nkp+V)
+  denotes a shameful state, rather than merely a
+  lack of physical beauty. This is a contextual adjectival rendering
+  of the qualifying noun. Honor remains the singular passive patient
+  of "is required" in verse 24. God tempered one body and gave greater
+  honor to the lesser member. The purpose is no division, with all
+  members caring equally for one another.
 - Verse 26 keeps both shared suffering and shared honor. Its final
   predicate says all the members are honored, rather than substituting
   the familiar "rejoice." Verse 27 retains the addressees as Messiah's
@@ -5129,13 +5143,26 @@ Source checks for 1 Corinthians 12:
   sequence and every rhetorical "all" question remain explicit; healing,
   speaking in tongues and interpreting are separate questions.
 - Verse 31 begins with the source's explicit condition: if the
-  addressees are zealous for greater gifts, Paul further shows them a
-  superior way. It is not changed into the familiar imperative to desire
-  gifts.
+  addressees are zealous for great gifts, Paul will again show them a
+  superior way. The adjective does not require a morphological
+  comparative, and the showing verb retains its first-person imperfect.
+  The condition is not changed into the familiar imperative to desire gifts.
 
 All 31 verses and 425 source words received source-to-English and running
 English review. The seven גיר and eighteen דין occurrences were checked
 individually against the final English clauses.
+
+The shared-span review reduced 134 spans to 30. Ordinary predicates,
+negation, auxiliaries, modifiers and list items now retain their own
+source words. Remaining exceptions record compound connectors, the
+distributive ANASH repetition, and specific anticipatory or resumptive
+relations. Repeated links distinguish a word's preposition, stem and
+pronoun components; whole body-membership clauses are not exceptions.
+The review checked all 987 full gloss records as well as decoded
+morphology, baseline singles and shared spans, every final mapping and
+each exact exception reason before a separate continuous-English pass.
+Three independent whole-chapter readers approved the frozen translation
+and exception reasons after completing those checks.
 
 Source checks for 1 Corinthians 13:
 
