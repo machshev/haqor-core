@@ -10526,28 +10526,28 @@
       ]
     },
     "44:16": {
-      "sha256": "10a20d4ba6d12429553e387a8a872a87b93ae4c42b14584c5a1a5a5e04176de0",
+      "sha256": "7455d37b465557f90057e1ea85ddf3bdc050bd529cc17add505c4c962ede8338",
       "original_shared_spans": 187,
       "independent_review": true,
       "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
       "exceptions": [
         {
           "verse": 1,
-          "english": "And he arrived",
+          "english": "arrived",
           "positions": [
             0,
             1
           ],
-          "reason": "The finite perfect mṭy with narrative hwā forms one past arrival predicate. The auxiliary is not a separate occurrence or a requirement for English pluperfect; only the two-word predicate is shared."
+          "reason": "The finite perfect matti0 with narrative hwa1 expresses one past arrival. Arrived retains both predicate components0,1; And belongs separately to the waw on0 and he to the masculine singular auxiliary1. No extra arrival or forced pluperfect is introduced."
         },
         {
           "verse": 1,
-          "english": "of",
+          "english": "Jewish woman",
           "positions": [
             13,
             14
           ],
-          "reason": "The feminine possessive suffix on brāh anticipates d-ihudāytā, the same Jewish mother. English expresses this resumed possessor once with of; son, the mother noun, and her modifiers remain separately linked."
+          "reason": "The feminine suffix on son13 anticipates the Jewish mother14. Jewish woman retains both referential owners13,14; of belongs separately to the d-prefix at14, while son, a, certain and believing remain outside. The suffix does not identify another mother."
         },
         {
           "verse": 2,
@@ -10578,30 +10578,39 @@
         },
         {
           "verse": 7,
-          "english": "of Jesus",
+          "english": "Jesus",
           "positions": [
             13,
             14
           ],
-          "reason": "The possessive suffix on rūḥeh is specified by d-Yešūʿ. Only of Jesus shares the resumed possessor; Spirit remains linked to its own noun."
+          "reason": "The masculine suffix on Spirit13 anticipates Jesus14. Jesus retains both referential owners13,14; of belongs separately to the actual d-prefix at14. The Spirit noun and the refusal to permit travel remain separately linked."
         },
         {
           "verse": 8,
-          "english": "they went down",
+          "english": "went down",
           "positions": [
             4,
             5
           ],
-          "reason": "Nḥet with the subject-coreferential ethical dative lhun is one descent predicate. Went down absorbs the ethical dative without inventing a recipient or reflexive emphasis."
+          "reason": "The finite plural descent verb4 with subject-coreferential ethical lhun5 supplies one descent predicate. Went down retains both components4,5; they belongs separately to the actual plural finite verb4. The dative does not introduce another recipient or reflexive emphasis."
         },
         {
           "verse": 12,
-          "english": "in this",
+          "english": "in",
           "positions": [
             11,
             12
           ],
-          "reason": "Bāh and b-hāde refer to the same city through a locative pronoun and a repeated locative demonstrative. In this expresses that single location; city remains separately linked."
+          "reason": "Both bah11 and b-hade12 carry the locative b-prefix referring to this city. In retains that repeated-case relation11,12; this separately retains their shared pronominal and demonstrative referent11,12. City remains outside and no second location is introduced."
+        },
+        {
+          "verse": 12,
+          "english": "this",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "The feminine pronominal suffix on bah11 anticipates the explicit feminine demonstrative b-hade12, this city. This retains that shared pointer11,12; in separately retains the repeated b-prefixes on the same words. City remains separately linked and no second location is introduced."
         },
         {
           "verse": 13,
@@ -10614,12 +10623,12 @@
         },
         {
           "verse": 14,
-          "english": "of this woman",
+          "english": "woman",
           "positions": [
             14,
             16
           ],
-          "reason": "The fronted d-hāde and feminine possessive suffix on lebbāh identify the same woman as possessor of the heart. Of this woman expresses the possessor once; heart remains separately linked."
+          "reason": "The feminine nominal demonstrative d-hade14 identifies Lydia and is resumed by the feminine suffix on heart16. Woman retains both referential owners14,16; of this belongs separately to the d-prefix and demonstrative at14. Woman is the contextual nominal rendering of that female referent, not an additional source noun; heart remains outside."
         },
         {
           "verse": 15,
@@ -10632,12 +10641,12 @@
         },
         {
           "verse": 15,
-          "english": "and stay",
+          "english": "stay",
           "positions": [
             17,
             18
           ],
-          "reason": "The imperative šraw with ethical lkhun is one invitation to stay. The dative is coreferential with the guests, not a distinct recipient; the house is separately linked."
+          "reason": "The imperative shraw17 and coreferential ethical lkhun18 form one invitation to stay. Stay retains both predicate components17,18; and is the English coordination of the bare imperative17 after come16, not a claim that17 has a waw prefix. No new recipient or reflexive emphasis is introduced."
         },
         {
           "verse": 16,
@@ -10651,12 +10660,12 @@
         },
         {
           "verse": 17,
-          "english": "of",
+          "english": "God",
           "positions": [
             10,
             12
           ],
-          "reason": "The possessive suffix in ʿabdawhy anticipates d-Alāhā, the same God. English of realizes this resumed possessor once; servants, God and Most High remain individually linked."
+          "reason": "The masculine possessive suffix on servants10 anticipates God12. God retains both referential owners10,12; of belongs separately to the actual d-prefix at12. Servants and Most High remain outside, without introducing another divine possessor."
         },
         {
           "verse": 18,
@@ -10669,30 +10678,39 @@
         },
         {
           "verse": 18,
-          "english": "of Jesus",
+          "english": "Jesus",
           "positions": [
             14,
             15
           ],
-          "reason": "The possessive suffix in b-šmeh anticipates d-Yešūʿ. Of Jesus is the common possessor, while in the name and Messiah remain outside the shared span."
+          "reason": "The masculine suffix on name14 anticipates Jesus15. Jesus retains both referential owners14,15; of belongs separately to the actual d-prefix at15. In the name and Messiah remain separately linked."
         },
         {
           "verse": 18,
-          "english": "at that hour",
+          "english": "at",
           "positions": [
             19,
             20
           ],
-          "reason": "Bāh b-šāʿtā repeats the same time through a locative pronoun and explicit hour. At that hour expresses the time once; the conjunction and departure predicate remain separate."
+          "reason": "Both w-bah19 and b-shaata20 carry the locative b-prefix for the same hour. At retains that repeated-case relation19,20; that belongs separately to the pronominal pointer19 and hour separately retains the shared referent19,20. And and the departure predicate remain outside."
+        },
+        {
+          "verse": 18,
+          "english": "hour",
+          "positions": [
+            19,
+            20
+          ],
+          "reason": "The feminine suffix on w-bah19 anticipates the explicit hour20. Hour retains both referential owners19,20; at separately retains the repeated b-prefixes and that belongs to the pointer19. The conjunction and departure remain outside."
         },
         {
           "verse": 19,
-          "english": "had gone",
+          "english": "gone",
           "positions": [
             3,
             4
           ],
-          "reason": "The departure verb npaq with subject-coreferential ethical leh describes the hope having gone. The dative adds no new beneficiary or reflexive object; the relative and hope remain separate."
+          "reason": "The finite perfect departure verb3 with subject-coreferential ethical leh4 supplies one departure predicate. Gone retains both components3,4; had belongs separately to the completed lexical verb3 in this anterior clause, not to leh4. The masters see that the hope has already gone; that, hope and their profit remain outside, without an invented recipient or reflexive."
         },
         {
           "verse": 19,
@@ -10705,12 +10723,12 @@
         },
         {
           "verse": 20,
-          "english": "our city",
+          "english": "city",
           "positions": [
             10,
             11
           ],
-          "reason": "Lāh anticipates the explicit l-mdintan, the same affected city. Our city expresses this doubled object once, without an extra it; the troubling predicate stays separate."
+          "reason": "The feminine singular object pronoun lah10 resumes the explicit city11. City retains both referential owners10,11; our belongs separately to the actual first-person plural suffix on city11. The differently-personed pronoun10 does not own our; the troubling predicate remains outside."
         },
         {
           "verse": 23,
@@ -10732,21 +10750,21 @@
         },
         {
           "verse": 24,
-          "english": "of the prison",
+          "english": "the prison",
           "positions": [
             11,
             12
           ],
-          "reason": "D-bēth asīrē is the institutional compound of the prison. The inner room, its locative prefix, and the confinement verbs are separately linked."
+          "reason": "Beit11 with asire12 is the institutional compound prison, literally house of prisoners. The prison retains both lexical components11,12; of belongs separately to the actual d-prefix on11. The inner room and its locative prefix remain outside."
         },
         {
           "verse": 25,
-          "english": "at midnight",
+          "english": "midnight",
           "positions": [
             0,
             1
           ],
-          "reason": "B-pelgeh d-lelyā is the conventional time expression at midnight, literally at its half of the night. English midnight is lexicalized; the conjunction remains with the first word."
+          "reason": "Pelgeh0 with d-lelya1 expresses the lexicalized time midnight, literally its half of the night. Midnight retains both lexical components0,1; at belongs separately to the actual b-prefix on0 and And to its waw. The praying and praise predicates remain outside."
         },
         {
           "verse": 26,
@@ -10759,12 +10777,12 @@
         },
         {
           "verse": 26,
-          "english": "of the prison",
+          "english": "the prison",
           "positions": [
             7,
             8
           ],
-          "reason": "D-bēth asīrē is the institutional compound of the prison. Foundations and their shaking remain independently linked."
+          "reason": "Beit7 with asire8 is the institutional compound prison. The prison retains both lexical components7,8; of belongs separately to the actual d-prefix on7. Foundations and their shaking remain outside."
         },
         {
           "verse": 26,
@@ -10777,12 +10795,12 @@
         },
         {
           "verse": 26,
-          "english": "of everyone",
+          "english": "everyone",
           "positions": [
             13,
             14
           ],
-          "reason": "The plural possessive suffix on asūrayhun is specified by d-kullhun. Of everyone expresses that one resumed possessor; bonds and were loosened remain separately linked."
+          "reason": "The plural suffix on bonds13 anticipates d-kullhun14, everyone whose bonds are loosened. Everyone retains both referential owners13,14; of belongs separately to the actual d-prefix on14. Bonds and their loosening remain outside."
         },
         {
           "verse": 27,
@@ -10795,21 +10813,21 @@
         },
         {
           "verse": 27,
-          "english": "of the prison",
+          "english": "the prison",
           "positions": [
             8,
             9
           ],
-          "reason": "D-bēth asīrē is the institutional compound of the prison. Doors and their open state remain separately linked."
+          "reason": "Beit8 with asire9 is the institutional compound prison. The prison retains both lexical components8,9; of belongs separately to the actual d-prefix on8. Doors and their open state remain outside."
         },
         {
           "verse": 27,
-          "english": "had fled",
+          "english": "fled",
           "positions": [
             18,
             19
           ],
-          "reason": "The flight verb with subject-coreferential ethical lhun is one predicate had fled. The dative does not add another fleeing party, object or reflexive emphasis; that and prisoners are separate."
+          "reason": "The finite perfect flight verb18 with subject-coreferential ethical lhun19 supplies one flight predicate. Fled retains both components18,19; had belongs separately to the completed lexical verb18 within the jailer's supposition, not to lhun19 or the thinking auxiliary17. That and the prisoners remain outside; the narrative does not assert an actual escape or add a recipient or reflexive."
         },
         {
           "verse": 29,
@@ -10823,12 +10841,12 @@
         },
         {
           "verse": 30,
-          "english": "and said",
+          "english": "said",
           "positions": [
             3,
             4
           ],
-          "reason": "The finite perfect emar plus narrative hwā forms a past speech predicate and said. This differs from the participle-plus-hwā in the following verse, whose English were and saying remain separate."
+          "reason": "The finite perfect emar3 with narrative hwa4 forms one past speech predicate. Said retains both components3,4; and belongs separately to the actual waw prefix on3. This does not impose a pluperfect or absorb the addressees."
         },
         {
           "verse": 32,
@@ -10841,21 +10859,39 @@
         },
         {
           "verse": 33,
-          "english": "in that hour",
+          "english": "in",
           "positions": [
             0,
             1
           ],
-          "reason": "Bāh b-šāʿtā is a doubled temporal reference: in it, in the hour. In that hour expresses one time; the conjunction remains separate."
+          "reason": "Both w-bah0 and b-shaata1 carry the locative b-prefix referring to the same hour. In retains that repeated-case relation0,1; that belongs separately to the pronominal pointer0 and hour separately retains the shared referent0,1. The conjunction and following night expression remain outside."
         },
         {
           "verse": 33,
-          "english": "of that night",
+          "english": "hour",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "The feminine suffix on w-bah0 anticipates the explicit hour1. Hour retains both referential owners0,1; in separately retains the repeated b-prefixes and that belongs to the pointer0. The conjunction and following night remain outside."
+        },
+        {
+          "verse": 33,
+          "english": "of",
           "positions": [
             2,
             3
           ],
-          "reason": "Beh b-lelyā repeats the same night with a locative pronoun and an explicit locative noun. English of that night attaches this containing night to the preceding hour. This English temporal relation does not claim that the source has a d-prefix."
+          "reason": "Both beh2 and b-lelya3 carry the repeated locative b-prefix identifying the containing night. Of retains that temporal relation2,3 as English attaches the night to its hour; it does not claim a source d-prefix. That belongs separately to the pointer2 and night separately retains the shared referent2,3. No second night or event is introduced."
+        },
+        {
+          "verse": 33,
+          "english": "night",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The masculine suffix on beh2 anticipates the explicit night3. Night retains both referential owners2,3; of separately retains the contextual temporal relation expressed through the repeated locatives and that belongs to the pointer2. No second night is introduced."
         },
         {
           "verse": 33,
@@ -10887,12 +10923,12 @@
         },
         {
           "verse": 35,
-          "english": "to the warden",
+          "english": "the warden",
           "positions": [
             8,
             9
           ],
-          "reason": "Rab asīrē is the official role warden, literally chief of prisoners. A literal chief prisoner would wrongly imply an inmate leader. The preposition belongs to l-rab; no house word or whole release clause is included."
+          "reason": "Rab8 with asire9 expresses the official title warden, literally chief of prisoners. The warden retains both lexical components8,9; to belongs separately to the actual l-prefix on8. This does not identify a chief prisoner or absorb the release command."
         },
         {
           "verse": 36,
@@ -10941,12 +10977,12 @@
         },
         {
           "verse": 39,
-          "english": "and depart",
+          "english": "depart",
           "positions": [
             5,
             6
           ],
-          "reason": "The departure verb nšannun with ethical lhun expresses one departure. Lhun is coreferential with the departing prisoners, not another object of removal; coming out, from, and the city remain separate."
+          "reason": "The departure verb5 with coreferential ethical lhun6 supplies one departure predicate. Depart retains both components5,6; and belongs separately to the actual waw prefix on5. Coming out, from and the city remain outside, without another recipient or reflexive emphasis."
         },
         {
           "verse": 40,
