@@ -3291,16 +3291,23 @@ Source checks for Romans 4:
 
 Source checks for Romans 5:
 
+- The shared-span review checked all 21 verses and 317 source words, reducing 22 original shared spans to 19 documented exceptions. Every final mapping, exact exception reason and the continuous English received three independent whole-chapter reviews against the frozen files. All 21 English texts and maps change. The review repairs actors and predicates as well as shared spans; ordinary names, modifiers, negatives, auxiliaries and clauses retain separate owners.
 - Romans 5:1-2 retains justification by faith, peace, access to this grace
   and the hope of God's glory. The possessive-plus-genitive construction in
-  “God's glory” expresses one ownership relation.
-- Romans 5:3 renders the contiguous object/predicate construction as
-  “perfects patience in us.” Romans 5:4 supplies the English elliptical
-  progression predicates in “endurance produces proof” and “proof produces
-  hope”; these clarify the source's nominal progression without inventing
-  separate Syriac verbs. Romans 5:5 renders the negative and shame predicate
+  “the glory of God” expresses one ownership relation. In 5:1 the perfect is
+  “we have been justified,” and future existence with the plural dative gives
+  “we shall have peace,” without another “for us.” The relative in 5:2 is
+  “by whom”; “to this grace” keeps the preposition, demonstrative and noun
+  with their actual source words.
+- Romans 5:3 separates “perfects,” “patience” and “in us,” while retaining
+  the conjunction and causal “because we know.” Romans 5:4 keeps the nominal
+  progression, “and patience, proof; and proof, hope,” with the preceding
+  predicate understood. Romans 5:5 renders the negative and shame predicate
   as “does not bring shame,” without inserting an unexpressed object, and
   retains the love of God, our hearts and the given Spirit of holiness.
+- The conditional in 5:6 continues through the parenthetical 5:7 into 5:8's
+  showing of love. The later conditional in 5:8 continues into 5:9's question.
+  Neither “if” is dropped. In 5:7 “the good” is plural, not “a good person.”
 - Romans 5:8 keeps God's showing his love, our being sinners and the
   Messiah's death for us explicit. Romans 5:9 renders ובה contextually as
   “by him,” following Murdock's Syriac rendering. Its masculine suffix alone
@@ -3309,13 +3316,29 @@ Source checks for Romans 5:
 - Romans 5:10-14 retains reconciliation, the Son's death and life, the
   source's death/sin sequence, the negatives about law and sin, and the
   Adam/type/coming contrast. The source's subjects and prepositional
-  arguments are kept with their actual linked words.
+  arguments are kept with their actual linked words. In 5:10 God is the
+  subject of “was reconciled with us.” In 5:11 the imperfect gives “we will
+  glory,” with the resumed relative “through whom.” In 5:12 death is the
+  subject that passed upon all the sons of men; the sons do not pass death.
+  The historical existential and reckoning copulas in 5:13 retain distinct
+  owners. “As sin” supplies English predicate-complement grammar, not a
+  separate Syriac comparison word.
+- Romans 5:14 renders the legal compound as “lawbreaking of Adam,” keeping
+  Adam as transgressor. [CAL's ʿbr entry lists ʿbar nēmos as transgression](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28br+N).
+  The compound's suffix and explicit Adam retain a minimal shared possessor;
+  the wording does not introduce a law issued by Adam.
 - Romans 5:15-17 preserves fault versus gift, the comparative and
   conditional particles, the repeated one/many contrasts, grace, gift and
-  righteousness. Romans 5:18-19 preserves condemnation versus
-  justification and disobedience versus obedience. Romans 5:20-21 retains
+  righteousness. In 5:15 the nominal negative remains present, and “among
+  many” retains the actual prefixed preposition. In 5:17 the perfect is
+  “who have received.” Romans 5:18 keeps its two quantified human groups
+  separately linked. Romans 5:19 retains the possessed disobedience and
+  obedience constructions, and distinguishes past “became” from present
+  “become.” Romans 5:20-21 retains
   the law/sin increase and the parallel reign of sin in death and grace in
-  righteousness unto eternal life through our Lord Jesus Messiah.
+  righteousness unto eternal life through our Lord Jesus Messiah. The
+  entrance is “for the law”; its purpose clause continues into 5:21's
+  “so that, as ... so ...” construction.
 
 Source checks for Romans 6:
 
