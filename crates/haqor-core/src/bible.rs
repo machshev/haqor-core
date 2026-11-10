@@ -4230,21 +4230,22 @@ impl Bible {
                     .optional()?,
             );
         }
-        let cons = fold_consonants(&surface_target(word, prefix));
-        if cons.is_empty() {
-            return Ok(None);
-        }
-        entry(
-            self.db
+        // Resolve the pointed headword before checking which entries Haqor
+        // covers. Otherwise a new entry for אֵל also claims rootless אֶל.
+        for bdb in self.hebrew_bdb_for_surface(word, prefix)? {
+            let id = self
+                .db
                 .query_row(
-                    "SELECT h.id FROM data.haqor_lexicon_bdb h \
-                     JOIN lexicon_entry b ON b.key = h.key \
-                     WHERE b.cons = ?1 ORDER BY b.key LIMIT 1",
-                    [&cons],
+                    "SELECT id FROM data.haqor_lexicon_bdb WHERE key = ?1",
+                    [&bdb.key],
                     |row| row.get(0),
                 )
-                .optional()?,
-        )
+                .optional()?;
+            if id.is_some() {
+                return entry(id);
+            }
+        }
+        Ok(None)
     }
 
     /// The Haqor name entry (`data/lexicon/names`) of the person
@@ -8600,6 +8601,37 @@ mod tests {
         }
     }
 
+    #[test]
+    fn rootless_haqor_lexicon_lookup_distinguishes_pointed_homographs() {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch(
+            "ATTACH DATABASE ':memory:' AS data;
+             CREATE TABLE data.haqor_lexicon(id TEXT, json TEXT);
+             CREATE TABLE data.haqor_lexicon_bdb(key TEXT, id TEXT);
+             CREATE TABLE data.lexicon_entry(
+                 key TEXT, word TEXT, cons TEXT, root TEXT, gloss TEXT,
+                 body BLOB, pos TEXT, kind TEXT
+             );
+             INSERT INTO data.haqor_lexicon VALUES ('elah', '{}');
+             INSERT INTO data.haqor_lexicon_bdb VALUES ('noun', 'elah');
+             INSERT INTO data.lexicon_entry VALUES
+                 ('noun', 'אֵל', 'אל', 'אלה', 'mighty one', NULL, 'noun', ''),
+                 ('preposition', 'אֶל', 'אל', '', 'to', NULL, 'preposition', '');",
+        )
+        .unwrap();
+        let bible = Bible {
+            db,
+            blobs: BlobReader::Plain,
+            runtime_lexicon_entries: RefCell::new(HashMap::new()),
+        };
+        assert_eq!(
+            bible.haqor_lexicon_entry("", "אֵל", "").unwrap(),
+            Some(("elah".into(), "{}".into()))
+        );
+        assert_eq!(bible.haqor_lexicon_entry("", "אֶל", "").unwrap(), None);
+        assert_eq!(bible.haqor_lexicon_entry("", "וְאֶל", "וְ").unwrap(), None);
+    }
+
     /// A prophecy is found from its own passage and from a fulfilment; the
     /// listing filters by book, theme and whether it is messianic.
     /// The outlines come back whole: the Psalms in their five books, each
@@ -8624,9 +8656,11 @@ mod tests {
         // The rootless particle, through its BDB key, prefix and all.
         assert_eq!(id("", "אֲשֶׁר", "").as_deref(), Some("ashar"));
         assert_eq!(id("", "כַּאֲשֶׁר", "כַּ").as_deref(), Some("ashar"));
+        // The covered noun and uncovered preposition share consonants.
+        assert_eq!(id("", "אֵל", "").as_deref(), Some("elah"));
+        assert_eq!(id("", "אֶל", ""), None);
         // No entry yet.
         assert_eq!(id("ברא", "", ""), None);
-        assert_eq!(id("", "אֶל", ""), None);
         // Which words of the text the entry is for: the particle is, the name
         // Asher and "yesterday" (filed by BDB under אמר) are not.
         assert!(
