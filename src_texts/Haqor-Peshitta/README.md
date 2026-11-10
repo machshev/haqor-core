@@ -4026,48 +4026,77 @@ against the source codebook and running context.
 
 Source checks for Romans 15:
 
-- Romans 15:1-3 preserves the strong/weak obligation, the infirmity being
-  borne, both self-pleasing negatives, the neighbor's good and the quoted
-  reproach/reproachers roles.
-- Romans 15:4 retains the passive wording about things written beforehand
-  and the instruction predicate. The purpose prefix in דבמסיברנותא is explicit in “so that
-  through endurance”; endurance, Scripture's comfort and hope keep their
-  distinct links. סברא נהוא לנ is the possessive existential “we may have
-  hope,” rather than forcing a bare gloss sequence into the English.
-- Romans 15:5-11 retains mutual thought, one mind and one mouth, God as
-  the Father of our Lord, reciprocal receiving, the glory of God and the
-  truth of God. Proleptic suffixes do not duplicate the explicit owners.
-  The Gentiles/mercy clause and quoted confession, singing, rejoicing and
-  praise retain their speakers, recipients, vocatives and imperatives.
-- Romans 15:12-14 keeps Jesse's root, rising/chief roles and Gentile hope;
-  “all joy” is one quantified phrase, not an extra “all of it.” The source
-  Holy Spirit phrase does not add another God noun. Repeated emphatic
-  first-person forms identify one persuaded speaker, not two separate
-  persuasion predicates.
-- Romans 15:15 retains the ב prefix in בטיבותא as the reason supplied by grace
-  for the reminder; grace is not made the reminder's object. Romans
-  15:16-18 keeps the minister/offering roles and passive acceptance,
-  possession in “I have,” and Messiah as the actor who worked through
-  Paul's hands. “My hands” does not become “Messiah's hands.”
-- Romans 15:19-22 retains the Jerusalem/Illyricum extent, the single Spirit
-  of God ownership chain, the participial preaching continuation, the statement about
-  Messiah's name, the see/hear quotation and the repeated hindrance to coming.
-- Romans 15:23-25 preserves the desire over many years and future route through
-  the addressees to Spain, “a little” refreshment, “you will accompany me,”
-  and the present Jerusalem journey to serve the saints.
-- Romans 15:26-27 retains Macedonia/Achaia, fellowship with the needy saints
-  in Jerusalem, the Gentiles' participation and the spiritual/physical
-  service contrast. Both גיר tokens are causal discourse connectors,
-  not prepositional “for those” or “for spiritual things.”
-- Romans 15:28-33 keeps completion, sealing and fruit, the blessing of the Gospel of
-  Messiah, the governed request “I ask you,” prayer for the speaker
-  to God, deliverance and passive acceptance of the service, joy and
-  refreshment. The closing “But the God of peace” retains the connector
-  without duplicating God.
-
-All 33 verses and 412 source words received source-to-English and running-
-English review. All four גיר occurrences were checked individually in their
-final English constructions.
+- All 33 verses and 412 source positions were checked against their exact
+  forms, decoded morphology, every SEDRA gloss alternative and Murdock.
+  The 93 original shared spans are reduced to 27 specific exceptions;
+  ordinary noun phrases, auxiliaries, negatives and clauses are split.
+- Romans 15:1 keeps the obligation, the infinitival rendering of its
+  content prefix, bearing the weak's infirmity and not pleasing ourselves.
+  In 15:2, the distributive person and singular neighbor support “let each
+  of us please,” despite the homographic first-plural morphology tag.
+  The purpose connector stays distinct from edification.
+- In 15:3, metul with the following relative prefix supplies causal “For.”
+  The comparison connector, negative, past auxiliary, pleasing predicate,
+  singular reproach and plural reproachers remain distinct. The reported
+  content prefixes in 15:3, 15:9 and 15:21 introduce direct quotations.
+- Romans 15:4 separates each/thing, beforehand, both passive writing
+  predicates and the focal instruction clause. “May have” links only the
+  existential and personal dative; hope remains separately linked.
+- Romans 15:5-6 separates grant/you/to/think/alike, one/about/another,
+  one/mind, one/mouth and Jesus/Messiah. The Father's possessive suffix
+  remains linked to its named owner, our Lord. “May” belongs to the
+  imperfect verb, rather than the independent discourse particle.
+- Romans 15:7 retains the imperative “be,” bringing near and bearing one
+  another. The glory/God and truth/God suffix chains in 15:7-8 identify one
+  possessor each. In 15:8, saying is participial, served is perfect, and
+  promise is singular; circumcision remains the service object's noun.
+- Romans 15:9-12 keeps the Gentiles' actual initial conjunction, plural
+  mercies without an invented possessor, confession and singing, the
+  rejoicing and praise commands, and Jesse's root and the rising chief.
+  In 15:11, “all you” differs from third-plural “all”; “praise him”
+  retains its object suffix.
+- Romans 15:13-14 keeps “his hope,” the ordinary Holy/Spirit word order,
+  repeated I/myself and you/yourselves, the nominal copula, passive
+  replenishment, ability and plural others. No God noun is added to
+  the Holy Spirit phrase.
+- Romans 15:15 retains somewhat/boldly, the purpose of reminding and the
+  causal prefix on grace. In 15:16, the offering is the subject of
+  “might be acceptable and sanctified,” with both passive predicates.
+  Romans 15:17 links possessive “have” to ith and its personal dative.
+- Romans 15:18 keeps Messiah as the active subject of effected and
+  “through my hands” as Paul's instrumental role. The homographic hand
+  form's incomplete suffix tags do not turn Messiah into its possessor.
+  The word/deeds contrast retains the plural deeds.
+- Romans 15:19 retains the actual first-person imperfect Ethpeal travel
+  and Pael fulfillment predicates in the purpose/result clause: “I might
+  travel around ... and might fulfill.” The Spirit/God and Gospel/Messiah
+  suffix chains remain linked to their respective named possessors.
+- In 15:20, the Ethpaal participle is “striving,” supported by
+  [CAL's hpt entry, Dt](https://cal.huc.edu/oneentry.php?cits=all&lemma=xp%2B+V).
+  The negative qualifies the preaching location, rather than being moved
+  inside “where the name of Messiah was called.” The name's possessive
+  suffix remains linked to Messiah. Romans 15:21 retains “will see him”
+  and passive “will be persuaded,” with only the relative/resumed
+  recipient shared. In 15:22, many/times remain separate.
+- Romans 15:23 preserves for/many/years/past with separate owners.
+  In 15:24, ma with the following relative prefix supplies each “when.”
+  Qalil men saggi, literally a little from much, is the minimal degree
+  idiom “in part”; refreshment and the sight of the addressees remain
+  separate. Compare the explicit idiom note on page 500 of
+  [Bauscher's interlinear](https://www.sermon-online.com/download/aramaic/Bible/Aramaic-Bible_New_Testament_Peshitta_Aramaic_English_Interlinear_Translation.pdf).
+  The present Jerusalem journey follows in 15:25.
+- Romans 15:26-27 retains the desired partnership, existential wording,
+  needy saints, both causal discourse connectors and the things of the
+  Spirit/flesh contrast. The final independent third-plural pronoun is
+  the object “them” of serving, not an extra copula.
+- Romans 15:28 keeps both distinct demonstratives, completion and sealing.
+  In 15:29, both coming predicates and both explicit first-person pronouns
+  remain, with the focal “it is ... that” construction. The fullness,
+  blessing, Gospel and Messiah genitives are ordinary separate spans.
+- Romans 15:30-33 retains both prefixes in “and by the love,” the prayer
+  for Paul to God, the Judea and Jerusalem relatives, passive persuasion
+  and reception, joy, the will/God ownership chain and refreshment.
+  The final wish separates God/of peace, may/be and with/all of you.
 
 Source checks for Romans 16:
 
