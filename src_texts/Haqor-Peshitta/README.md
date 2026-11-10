@@ -3342,30 +3342,62 @@ Source checks for Romans 5:
 
 Source checks for Romans 6:
 
+- The shared-span review checked all 23 verses and 293 source words, reducing 69 original shared spans to 19 documented exceptions. Every final mapping, exact exception reason and the continuous English received three independent whole-chapter reviews against the frozen files. All 23 maps change; English changes in 19 verses, while 6:1,2,6,20 keep their wording. Ordinary names, noun phrases, modifiers, negatives, auxiliaries and clauses retain separate owners.
 - Romans 6:1-5 preserves the rhetorical questions, remaining in sin versus
   abounding grace, death to sin, baptism into Jesus Messiah and his death,
   burial, new life, and the planting/likeness/resurrection relations.
-  The repeated baptism predicate and its possessive death phrase are
-  rendered as grammatical local constructions.
+  In 6:1 the pronominal “in it” resumes explicit sin. In 6:3 both baptism
+  verbs are first-person plural. The fronted “it was into his death that
+  we ... were baptized” retains the death-focus copula and both verbs.
+  In 6:4 and 6:9 “from,” “among” and “the dead” have separate source owners;
+  bēṯ is the independently attested preposition, not a house/dead compound.
+  In 6:5 “For,” “if,” “together” and planting retain their actual owners.
 - Romans 6:6 keeps “For we know that,” our old human being crucified with
   him, and the purpose that the body of sin be annulled. The final דתוב לא
   predicate is contextual cessation, “so that we may no longer serve sin,”
-  rather than a bare additive “furthermore.” Romans 6:7 keeps the causal
-  connector and the dying/freedom-from-sin relation together.
+  rather than a bare additive “furthermore.” Only “no longer” joins the
+  temporal and negative words; the serving predicate is separate. Romans
+  6:7 retains perfect freeing and its subject-referring dative. In 6:8 the
+  appositional “with him, with the Messiah” keeps separate owners.
 - Romans 6:9-15 preserves the death/life predicates, the dead/alive contrast,
-  the commands about the mortal body and members, sin's rule, and the
+  the commands about the dead body and members, sin's rule, and the
   law/grace contrast. Source pronouns remain with their actual predicates.
+  In 6:10 both alive forms remain, while the second identifying pronoun
+  supplies “he is”; “one” and “time” are separate. In 6:11 the two explicit
+  nominal copulas become “to be” under “reckon yourselves.”
+  In 6:12 the negative belongs to the prohibition, not “therefore.” The
+  plural “its lusts” refers to the masculine body, not feminine sin.
+  In 6:13 the relative prefix and preposition on d-men separately supply
+  “who” and “from.” In 6:14 authority is participial present; in 6:15 nominal
+  negation remains present despite the perfect-shaped copula.
 - Romans 6:16 retains “to whomever,” the purpose verb “obey,” its recipient,
-  and bondage. The nominal predicate is “you are his own servants,” followed
-  by the singular owner whom they obey. Its final hearing/ear construction
-  is rendered as giving ear to righteousness. The source's sin/obedience
-  alternatives do not contain an extra death clause.
+  and bondage. “Servants of the one whom you obey” expresses one ownership
+  relation without duplicated possessors. Actors, reflexive object,
+  predicates and servants stay separately linked. Both conditional
+  alternatives retain “whether.” The final hearing/ear compound gives
+  “obedience to righteousness”; the second “to” expresses English government
+  of the genitival object, not an extra Syriac preposition. The source's
+  sin/obedience alternatives do not contain an extra death clause.
 - Romans 6:17-19 keeps the thanksgiving, heart/teaching relation, freedom
   from sin, service to righteousness, human analogy and bodily weakness.
+  In 6:17 “though ... yet” reads the subordinate former-state clause
+  concessively and retains the adversative conjunction. No “once” or “now”
+  is added. The delivered-to suffix refers to the masculine teaching.
+  In 6:18 the middle construction is “you became servants.” In 6:19 the
+  human analogy is parenthesized, with “I,” “am,” “speaking,” “among” and
+  “humans” independently linked.
   Romans 6:20 renders גיר as clause-level “For when you were servants,”
   separately from “of sin”; prepositional “for sin” would lose the causal
   connector's function. Romans 6:21-23 preserves fruit/end, death versus
   eternal life, the payment/gift contrast and our Lord Jesus Messiah.
+  In 6:21 the past copula owns “was” and the existential owns “there,”
+  with a minimal shared relative/resumptive object in “in what ... of.”
+  In 6:22 “have” retains existential possession; fruits is plural, and the
+  plural end suffix refers to the fruits rather than to second-person you.
+  In 6:23 the gift's suffix and explicit God retain one possession, and its
+  conjunction remains “and.” [CAL's tʾgūrā/tʾgūrtā entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=t%29gwrh+N)
+  includes reward, payment for actions and profit, supporting “wages”
+  beyond the export's merchandise/barter/trade glosses.
 
 Source checks for Romans 7:
 
