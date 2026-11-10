@@ -2894,6 +2894,9 @@ Source checks for Acts 14:
 - Acts 14:21-23 preserves preaching to the city's inhabitants and teaching many, the return to Lystra, Iconium and Antioch, strengthening the disciples' souls, remaining in the faith and necessary entry into God's kingdom through much tribulation. Appointment of elders is in every ecclesia, with fasting together and prayer. Entrusting is to “our Lord,” in whom they believed. Ethical datives are absorbed into natural English without inventing an additional recipient on the return journey.
 - Acts 14:24-26 retains the region of Pisidia, Pamphylia, proclamation of the Lord's word in the city of Perga, descent to Attalia and travel by sea to Antioch. The reason for the return is their prior entrusting from there to the Lord's grace for the work now completed; it is not changed into a new commission.
 - Acts 14:27-28 keeps gathering the whole ecclesia and recounting everything God had done with them. God remains the singular subject who opened a door of faith to the Gentiles. Their long stay is with the disciples; no numerical duration is added.
+- In 14:19 “that” and “he had” belong separately to the finite death verb's relative prefix and perfect third-person morphology; “died” retains the verb and its ethical dative. The dative does not supply an English auxiliary or add a beneficiary.
+- In 14:1, 14:12-14, 14:21 and 14:24-26 the conjunctions and finite-person material have separate links outside the shared verbal heads. The second English “and” in 14:21 expresses paratactic coordination with the arrival head; that source verb is bare ethau, with no waw prefix.
+- Genitive prefixes in 14:10-11, 14:22 and 14:26, the comparative prefix in 14:11, and “in” in 14:23 have separate links from the shared referent or compound. In 14:10 “of our” belongs to d-maran; the third-person suffix on “name” remains linked with the named Lord rather than being assigned the first-person “our.”
 
 Source checks for Acts 15:
 
