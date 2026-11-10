@@ -5044,6 +5044,41 @@ All 34 verses and 471 source words received source-to-English and running
 English review. The twelve גיר, eleven דין, two הכיל and one מכיל
 occurrences were checked individually against the final English clauses.
 
+The shared-span review reduces 133 shared spans to 29 documented
+exceptions. All 238 original mappings, including the 105 single-source
+spans, and all 522 final mappings received review beside their source
+forms. Each retained exception was checked separately against its exact
+forms and decoded morphology. The remaining shared links cover minimal
+connectors, negative focus, possessive or object resumption, distributive
+“each one,” and the repeated מדם degree expression “in part.” Ordinary
+head relationships, auxiliaries, negation and meal instructions have
+separate links.
+
+Verse 7 renders לא חיב as “is not obliged”; the positive obligation in
+verse 10 retains the same adjective. Compare the Syriac negative example
+“does not have to be afraid” under
+[CAL, חיב, sense 3](https://cal.huc.edu/oneentry.php?cits=all&lemma=xyb+A).
+Verse 14's independent הו precedes “nature” and is rendered “itself.”
+This construction differs from the following enclitic's focus on a
+preceding constituent; see Younansardaroud, *Classical Syriac Course Book*,
+section 5.1, and Muraoka, *Classical Syriac: A Basic Grammar*, section 112i.
+The focus pronouns in verses 15, 17, 26 and 29 retain the covering,
+deterioration, death and condemnation as their respective focused terms
+(Muraoka, sections 10 and 110).
+Verse 15 renders חלף as “in place of,” preserving its replacement sense
+([CAL, חלף, sense 1](https://cal.huc.edu/oneentry.php?cits=all&lemma=xwlp+p)).
+Hair remains the thing given; the covering is the focused replacement
+term, rather than the subject of “was given.”
+
+In verse 21, the feminine object pronoun resumes the supper; it does
+not identify another diner. Verses 25-26 split “every time that” across
+כל, אמתי and the following relative prefix, with the drinking/eating
+predicate separately linked to its stem. The two auxiliaries in verse 31
+remain in their own conditional clauses: “we were judging” and “we would
+not be judged.” The commands in verses 24-25 and 33 retain the
+second-person perfect הוא with participle construction, with “be” and
+“doing/waiting” separately linked (Coakley, section 26, page 123).
+
 Source checks for 1 Corinthians 12:
 
 - Verses 1-3 preserve the desire for the addressees to know, their former
