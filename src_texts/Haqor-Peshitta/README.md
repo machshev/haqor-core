@@ -3200,27 +3200,46 @@ Source checks for Romans 2:
 
 Source checks for Romans 3:
 
-- Romans 3:2 retains the passive entrusting of God's words. Romans 3:3 keeps
-  the explanatory connector in its question about unbelief. Romans 3:8
-  preserves the reported slander and repeated saying predicates rather than
-  replacing them with a remembered parallel text.
-- Romans 3:12 retains the passive/mediopassive sense of becoming worthless or
-  rejected. Romans 3:13 renders חמתא as venom in the asp construction;
+- The shared-span review checked all 31 verses and 324 source words, reducing 48 original shared spans to 24 documented exceptions. Every final mapping, exact exception reason and the continuous English received three independent whole-chapter reviews against the frozen files. English changes in 23 verses; 27 maps change, while 3:11,14-16 retain their original rows. Ordinary participants, negatives, modifiers, auxiliaries and reordered clauses retain separate source owners.
+- Romans 3:1 separates the copula from “then.” In 3:2 the singular passive
+  entrusted verb refers to the generic Jew, not plural “they.” In 3:3 the
+  actual plural annulment verb has people as its subject: “have they, by not
+  believing, annulled.” Their unbelief is not substituted as the actor.
+- In 3:5 the final copula gives the emphatic “It is as a human that I am
+  speaking.” Romans 3:8 repairs the reversed reported speakers: they slander
+  and say that we say. Its final judgment assertion is complete English.
+- Romans 3:12 retains the passive perfect, “have been rejected”;
+  [CAL's sly entry, Gt](https://cal.huc.edu/oneentry.php?cits=all&lemma=sly+V)
+  records “be rejected.” Romans 3:13 renders חמתא as venom in the asp construction;
   [CAL's ḥmh/ḥmtʾ entry, sense 2](https://cal.huc.edu/oneentry.php?cits=all&lemma=xmh+N)
   explicitly cites this verse for venom. The abbreviated anger glosses in
   the export do not exhaust the source word's contextual senses.
 - Romans 3:19 keeps the contrastive connector in “But we know,” the law's
   hearers, every mouth being stopped and the world being condemned before
-  God. Romans 3:20 retains justification, works of the law and the knowledge
-  of sin as separate predicates and constructions.
+  God. The relative prefix, copula and purpose prefix retain their owners.
+  Romans 3:20 keeps justification separate from the negated universal “no
+  flesh,” and the law's possessive construction has one owner. The final
+  perfect is “sin has become known.”
+- In 3:21 the law itself and the prophets testify concerning righteousness.
+  The masculine pronoun emphasizes the law; the feminine pronominal object
+  refers to righteousness. They are not interchanged.
 - Romans 3:22 renders the source's possessive-plus-genitive construction as
-  “God's righteousness, however,” expressing one ownership relation without
-  inventing two owners. Romans 3:23 preserves “all of them.” Romans 3:25
-  retains propitiation, with its source faith and blood wording, consistent
-  with the Syriac context and Murdock's reference rendering.
+  “the righteousness of God, however,” expressing one ownership relation.
+  The feminine pronoun supplies “is,” and the genitive is “of Jesus.” Its
+  ending is “for there is no distinction.” Romans 3:23 preserves “all of them.”
+- Romans 3:25 repairs the shifted baseline links throughout the clause:
+  God, propitiation, faith, blood, cause, sins and the temporal expression now
+  link to their actual words. The relative prefix and object suffix retain
+  their minimal shared referent in “whom.”
 - Romans 3:26 renders במגרת רוחה idiomatically as “in his patience”; its
   spirit/breath word belongs to the patience construction and does not
-  introduce a separate spiritual actor. Romans 3:31 retains the question
+  introduce a separate spiritual actor. “This time” has the correct noun and
+  demonstrative owners. The masculine copula belongs to the person in the
+  faith of our Lord, without an extra relative “that is.”
+- In 3:27 the dative belongs to the annulment predicate, not “by.” Romans
+  3:28 has one “therefore” and grammatical cleft order. In 3:29 “only” and
+  “and” belong to their actual words. The final faith expression in 3:30
+  retains the feminine pronominal resumption. Romans 3:31 retains the question
   about annulling the law and the contrasting assertion of establishing it,
   using grammatical English cleft constructions for the source copulas.
 
