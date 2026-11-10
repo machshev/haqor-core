@@ -3635,15 +3635,31 @@ Source checks for Romans 9:
 
 Source checks for Romans 10:
 
+- The source-ownership review covers all 21 verses and 260 source words,
+  reducing 44 shared spans to nine documented expressions. Ordinary
+  prepositions, noun phrases, negatives, auxiliaries and quotations
+  retain separate owners.
 - Romans 10:1 retains the plural recipient in חלפיהונ, “for them.”
   Romans 10:2 preserves both causal גיר and the concerning-them relation
   in the local testimony construction. Romans 10:3 renders each God genitive
   as one ownership relation, “the righteousness of God,” distinct from
   “their own righteousness”; the proleptic suffix does not add another owner.
+  The testimony participle and explicit first-person copula in 10:2
+  remain distinct from “for” and “concerning them.” In 10:3 knowing,
+  seeking and submission retain the perfect predicates; the negatives
+  and English finite support stay with their actual owners.
 - Romans 10:4-7 preserves the law/Messiah and faith/righteousness relations,
   Moses and the source's life predicate, and the heart/heaven/abyss questions
   with their Messiah explanations. The quote roles and verb subjects are
   not replaced by a remembered parallel text.
+  In 10:4 the end's suffix anticipates the law, while the Messiah and
+  identifying copula remain distinct. In 10:5 “wrote” is perfect,
+  and the relative head/prefix gives the minimal “whoever” construction.
+  The ascended/brought-down and descended/brought-up predicates in
+  10:6-7 are perfect, “has ascended” and its parallels. The interrogative
+  focus and conjunction retain their own words. In 10:7 and 10:9
+  from/among/dead stay separate; [CAL's בית entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=byt+p)
+  documents the prepositional “among” sense beyond the isolated house gloss.
 - Romans 10:8-14 keeps word, mouth and heart, confession, belief, God and
   Jesus, resurrection and life/salvation, the Jew/Gentile distinction and
   the calling/hearing/believing questions. Romans 10:10 דמודא בה is rendered
@@ -3651,12 +3667,37 @@ Source checks for Romans 10:
   by English transitive confession, as in Murdock, rather than an unidiomatic
   locative “confesses in him.” The earlier believing-in-him phrase retains
   its own prepositional construction. Romans 10:12 keeps causal “For.”
+  In 10:8 “did he say” preserves the perfect; word/is/near/to you and
+  to your mouth/and to your heart remain distinct. In 10:9 God and
+  the raised-him predicate retain their actual owners. The conjunction
+  on mouth in 10:10 remains, and “lives” is active. In 10:11 said,
+  for and Scripture split, as do the future predicate and negative.
+  In 10:12 the perfect distinction verb and negative concord give
+  “has not made a distinction, either ... or ...”; the one/Lord/copula
+  and rich/calling relations remain separate. In 10:13 “for” belongs
+  to גיר, and the name suffix anticipates the Lord. In 10:14 “in whom”
+  retains the relative prefix and resumed prepositional recipient;
+  “whom” retains the next relative prefix and heard-object suffix.
+  Both perfect predicates and their negatives remain separate.
 - Romans 10:15-21 preserves the feet/herald sequence, sending and preaching,
   the negative scope in the good-news response, and the “our voice” suffix
   in Isaiah's question. Romans 10:17 retains the word-of-God reading supplied
   by the dataset. The rhetorical hearing/knowledge questions, Moses/Isaiah
   quote speakers and nation/Israel recipients, and the final outstretched
   hands and disobedience predicates remain source-linked.
+  In 10:15 only the genitive relation is shared between the feet's
+  possessive suffix and both coordinated heralds; the feet, heralds,
+  peace and good things stay distinct. In 10:16 nominal negative
+  focus is distinct from the perfect obeyed predicate; message/Gospel
+  and utterance/of our voice split. In 10:17 the explicit feminine
+  copula belongs to faith's first “is”; the second clause's conjunction
+  belongs to hearing, whose nominal predicate supplies the implied
+  second “is.” Hearing/of the ear remains separately owned both times.
+  In 10:18 the ends suffix anticipates the world, while all/earth
+  remains an ordinary quantifier/noun split. The two predicates and
+  negatives in 10:20 split, with the second relative and “about me”
+  owned by דעלי. In 10:21 all/day and the contending/negative/
+  persuaded construction retain separate owners.
 
 Source checks for Romans 11:
 
