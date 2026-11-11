@@ -8360,49 +8360,103 @@ Source checks for 1 Thessalonians 4:
 
 Source checks for 1 Thessalonians 5:
 
-- Verses 1–3 retain times and seasons, my brothers, the impersonal lack
-  of need for writing, emphatic knowledge, our Lord's day and the thief
-  at night comparison. The late coming predicate is grouped with its
-  actual comparison words for natural English order. Peace and tranquility
-  are coordinated in the reported speech. Sudden destruction, labor pains
-  on a pregnant woman and the negative escape clause remain. The destruction
-  noun at position 9 stays with its verb and target, while the comparison
-  begins at position 10. The min-shely suddenly expression is also attested
-  in [CAL's qpl examples](https://cal.huc.edu/oneentry.php?cits=all&lemma=qpl+V).
-- Verses 4–7 preserve the darkness contrast, that day overtaking like a
-  thief, the repeated sons-of-light/day/night/darkness statements, and
-  both negatives. The postposed you belongs to the sons-of-light clause.
-  Sleeping contrasted with wakefulness and sobriety remains, followed by
-  the separate nighttime sleeping and drunkenness clauses. Night at
-  position 8 belongs to the second drunkenness predicate, not its subject.
-- Verses 8–11 preserve the daytime identity, mental wakefulness, the
-  breastplate of faith and love, the helmet of life's hope, God's not
-  appointing the speakers for wrath, acquiring life through our Lord
-  Jesus Messiah, his death for them, the waking/sleeping alternatives,
-  living together with him and reciprocal encouragement and building.
-  The causal appointment clause and the following death-relative are
-  joined to the preceding exhortation in complete running English.
-- Verses 12–15 retain my brothers, recognizing those laboring among the
-  recipients, standing before them in our Lord and teaching them, esteem
-  in love because of their work and peace with them. The renewed appeal
-  preserves the plural offenders, encouragement of the faint-hearted,
-  bearing the weak people's burden and patience toward everyone. The
-  prohibition on repaying evil for evil retains no one among you, followed
-  by pursuing good toward one another and everyone.
-- Verses 16–22 preserve continual rejoicing and prayer, thanksgiving in
-  everything as God's will for them in Jesus Messiah, the prohibitions
-  on quenching the Spirit and despising prophecies, examination of
-  everything, holding what is good and fleeing every evil thing.
-- Verses 23–24 retain the God of peace, sanctifying all the recipients
-  completely, their whole spirit, their soul and their body, keeping
-  without blame, and our Lord Jesus Messiah's coming. The keeping verb
-  at position 11 stays with the entities it governs in positions 7–10.
-  The first-person possessives belong to our Lord. The past calling and
-  future doing remain distinct: he has called them and he will do it.
-- Verses 25–28 preserve my brothers, prayer for the speakers, greeting
-  all our brothers with a holy kiss, the first-person adjuration by our
-  Lord, reading this letter to all the holy brothers, the grace of our
-  Lord Jesus Messiah with the recipients and Amen.
+- All 28 verses were read against all 268 exact forms, their decoded
+  morphology and all 609 individual SEDRA gloss records. The 80 baseline
+  shared spans become seven exceptions: a causal conjunction, one
+  substantive relative, a comparative linker, the al appay preposition,
+  two lexical expressions in 5:14, and the greeting formula in 5:26.
+  Ordinary phrases, negation, auxiliaries and reciprocals are split;
+  separated prefixes, stems and suffixes repeat their own single links.
+- In 5:1, dein is But, while and belongs to seasons. The second-person
+  plural need predicate owns you/have/need; no, the active infinitive
+  and its to-you recipient remain separate. The generic writer anyone
+  is explicitly supplied and contextually linked to the infinitive,
+  without claiming a written first-person agent. In 5:2, the first you
+  and repeated emphatic yourselves are distinct; the day suffix anticipates
+  of our Lord. Comes, in this way, like, thief and at night stay separate.
+- In 5:3, the reported-speech d- belongs to that, with peace separately
+  linked to the same word; hu supplies the copula. The apodotic w-hayden
+  resumes When with then in English. Suddenly is the min-shely expression,
+  also attested in [CAL's qpl examples](https://cal.huc.edu/oneentry.php?cits=all&lemma=qpl+V).
+  Destruction, will arise, upon them, like, labor pains, upon and a pregnant
+  woman retain separate owners. And/not and they will/escape are split.
+- In 5:4–6, perfect-form hwaytun in the negative nominal clauses is
+  present are, with not separate. This differs from focused la hwa before
+  an object under an independently expressed rejecting verb. The d- and
+  demonstrative at 5:4:6 separately own for and that, with the dependent
+  imperfect expressed as to overtake you. All of you, the copular pronoun,
+  every sons-of phrase and both negatives in 5:5 remain distinct. The
+  exhortation is let us not sleep, then let us be awake and sober. The
+  bare masculine plural sober participle does not require an invented
+  switch to you despite its numeric person label; the governing hwa
+  and discourse subject are first-person plural.
+- In 5:7, hu focuses each at night phrase: it is at night that they sleep
+  or get drunk (Muraoka §110). The English cleft that belongs functionally
+  with its predicate, without claiming another written d-. Those and
+  who sleep/get drunk stay separate. In 5:8, the repeated we is copular
+  are in who are sons of daytime. Prescriptive hwa owns let us be;
+  awake and in our singular mind stay separate. The passive participle
+  is clothed with, distinct from the active put-on verb for the helmet.
+  Faith and love retain separate genitives. Hope and life stay separate.
+- In 5:9–11, because jointly renders metul plus d-, with not separately
+  linked to la; the appointing verb owns did/appoint us. Possession of
+  life retains the actual noun phrase. The death-relative and because
+  clause continue 5:8 rather than becoming sentence fragments. Al appay
+  forms for, with us separately attached to its suffix; Muraoka p.43*
+  note 14, glossary p.63*, and Payne Smith attest the compound. Whether
+  and or preserve the two conditional alternatives. Because of and this,
+  both reciprocal pairs, and build up and the comparative/additive words
+  remain separate. The final verb is a second-person plural participle,
+  you are doing, rather than Murdock's you have done.
+- In 5:12–13, we ask of you preserves the first-person plural request,
+  min complement and my brothers. That you should and recognize are
+  separate; those, who labor, among you, and stand, before you, in our
+  Lord, and teach and you retain individual owners. Payne Smith gives
+  b-appay as before/in the presence of, without requiring literal faces
+  in English. The following hwa plus passive participle is that they
+  be esteemed by you in abundant love, with the preposition and love
+  separately linked to their own source word. General advice/wish is
+  supported by Muraoka §87; a past auxiliary is not imposed. And because
+  of their work introduces the separate imperative make peace with them.
+- In 5:14, rda is instruct/chastise. Its rdaw form is shared by the
+  third-person plural perfect and second-person plural imperative in
+  this weak-verb class; the surrounding imperatives require admonish
+  (Muraoka §64, paradigm II, p.107). Little of soul is the dictionary's
+  desponding/discouraged idiom, rendered the faint-hearted. Aphel aggar
+  with ruha is explicitly be patient in Payne Smith; the possessive
+  belongs within this idiom, rather than an invented in your spirit
+  preposition. And, toward and everyone stay separate. The burden is
+  singular, with the weak as its plural dependents.
+- In 5:15–22, beware, lest, anyone, among you, repay, both evil nouns
+  and for retain their owners. Run, after and plural good deeds are
+  separate; one another here is one source word. Imperative be in 5:16
+  governs rejoicing and the coordinated praying in 5:17. Without and
+  cessation are separately renderable; Payne Smith expressly defines
+  shalwa as cessation/intermission. In every thing splits the quantifier
+  and noun; be and giving thanks remain separate. This is is fused,
+  while for, the will and of God are distinct. In you retains beth.
+  Do/not/quench and Do/not/despise keep negation separate from the verbs'
+  English do-support; prophecies is plural. Examination, what is good,
+  holding, fleeing, every, evil and thing each retain their owners.
+- In 5:23–24, himself is emphatic hu. Sanctify has a proleptic object
+  suffix anticipating all of you. And/whole belong to the same word,
+  with its feminine suffix anticipating spirit; your/spirit, and your
+  soul and and your body keep their own words. May he keep is active
+  third-person masculine singular Pael, with God as subject. Without
+  and blame stay separate, and the coming suffix anticipates of our Lord.
+  The calling remains perfect, has called you; the one and who has called you
+  have separate owners, with copular is separate. The next relative who
+  has no inserted and; it after will do is explicitly supplied.
+- In 5:25–28, the greeting formula shaal b-shlama is jointly Greet,
+  directly attested by [CAL's shaal entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%29l+V),
+  rather than an independent peaceful-manner adverb. All and our brothers
+  stay separate, while with a/kiss share only their own source word
+  around holy. The first-person adjuration, you and by our Lord are
+  separate. That/be read preserves the feminine singular passive verb,
+  with this, letter, to all, holy and brothers individually linked.
+  The closing nominal blessing supplies English be with you without
+  claiming an additional written hwa. Grace's suffix anticipates its
+  explicit our-Lord owner; Jesus, Messiah and Amen remain separate.
 
 Source checks for 2 Thessalonians 1:
 
