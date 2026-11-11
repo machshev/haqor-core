@@ -6796,14 +6796,24 @@ Source checks for Galatians 3:
 - Verse 1 renders the actual Peal verb as "has envied," retaining the
   source reading rather than substituting the familiar "bewitched." Compare
   [CAL's Peal sense](https://cal.huc.edu/oneentry.php?cits=all&lemma=xsm+V).
-  The portrayal clause preserves initial "how" and later "when" separately.
+  The portrayal clause restores the comparative `ayk haw d-` as "as if,"
+  with the cognate infinitive's emphasis separately rendered "indeed,"
+  before the passive "portrayed" and auxiliary "was." Compare
+  [Coakley, §13](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf)
+  on the infinitive absolute alongside verbs or participles. Jesus Messiah,
+  "before your eyes," and the later "when he was crucified" stay separate.
 - Verses 2 and 5 preserve the distinct source/receiving clauses and both
   alternatives, works of the law and hearing of faith. Verse 3 retains
-  the completed beginning, present completion, explicit now, and flesh.
+  the completed beginning, present finishing, explicit now, and flesh.
+  Verse 5 distinguishes the perfect "has given" from the present "works"
+  and retains the rhetorical question's ellipsis.
 - Verse 4 preserves the source's optative as "Would that it were in vain!"
   without adding a first-person speaker or "only." Verse 8 retains both
   the foreknowing and advance-proclamation predicates and causal links;
   verse 10 retains its repeated causal wording and final "this law."
+  Verse 7 separates the relative clause's copula from the resumed subject
+  and main copula. The singular pronouns in verses 8–9 mark the focus on
+  "by faith" and "believers," respectively.
 - Verse 12 preserves the feminine plural suffix in "by them." Verses
   13–14 retain the first-person plural participants, including "for us"
   and "we might receive."
@@ -6814,12 +6824,21 @@ Source checks for Galatians 3:
   God is one. The opening "Now" in verse 20 renders a discourse transition.
 - Verse 23 distinguishes the law guarding us from our being confined;
   the passive confinement does not become a second active act by the law.
-  Verse 24 retains "our tutor" and "we might be justified."
+  Its prospective "destined to be revealed" follows
+  [CAL's `atid` with an infinitive](https://cal.huc.edu/cal_entry_web.php?lemma=%28tyd+A).
+  Verse 24 retains a singular "tutor for us" and "we might be justified."
+  Verse 25 corrects "a tutor" to the supplied plural "tutors," distinct
+  in both vocalization and number from verse 24.
 - Verses 26–27 preserve the second-person plural references and the
   distinct baptism and putting-on predicates. Verse 28 retains the
-  three negative contrasts and renders the social status as "freeborn."
+  three negative contrasts and renders `bar hire` as "free person."
+  [CAL's compound entry](https://cal.huc.edu/cal_entry_web.php?lemma=br%40xyryn+N)
+  includes manumitted persons, so the status is not restricted to free birth.
 - Verse 29 renders the anticipatory possessive and explicit genitive
-  naturally as "Abraham's seed," without creating a second owner.
+  as "seed of Abraham," without creating a second owner. Ordinary noun
+  phrases, negation, auxiliaries and clauses are split; the remaining
+  shared spans record only the precise connectors, temporal compounds,
+  resumed recipient relation and free-person idiom in the review ledger.
 
 Source checks for Galatians 4:
 
