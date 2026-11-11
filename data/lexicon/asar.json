@@ -1,0 +1,1222 @@
+{
+  "id": "asar",
+  "root": "עשׂר",
+  "status": "draft",
+  "updated": "2026-11-11",
+  "tags": [
+    "number",
+    "time",
+    "measure",
+    "offering",
+    "tithe"
+  ],
+  "gloss": "ten; a tenth, tithe",
+  "summary": "עשׂר is the number ten and what is counted by it. עֶשֶׂר/עֲשָׂרָה is ten, עָשָׂר/עֶשְׂרֵה the “-teen” of eleven to nineteen (the fourteenth and fifteenth days of Lev 23:5–6, 34), עֶשְׂרִים twenty; עָשׂוֹר is a ten, and above all the tenth day of a month (Lev 23:27), עֲשִׂירִי the tenth. A tenth part is the עִשָּׂרוֹן of fine flour with the offerings (Lev 23:13, 17) and the מַעֲשֵׂר, the tenth of produce and flock that is holy to Yahweh (Lev 27:30–32), which Abraham gave to Melchizedek (Gen 14:20; Heb 7:4); the verb is to take or give that tenth. Arabic, Ugaritic and Akkadian have the same root for ten, tenth, twenty and tithe, and Arabic and Ugaritic show an ʿ behind its ע.",
+  "words": [
+    {
+      "lemma": "עָשָׂר",
+      "pos": "numeral",
+      "gloss": "-teen (in eleven to nineteen)",
+      "bdb": [
+        "p.gb.ac"
+      ],
+      "summary": "The form of ten that joins a unit to make eleven to nineteen, masculine עָשָׂר and feminine עֶשְׂרֵה, as cardinal and as ordinal of the days of a month.",
+      "senses": [
+        {
+          "id": "teen",
+          "gloss": "ten, in the numbers eleven to nineteen",
+          "definition": "Ten added to a unit: אַחַד עָשָׂר eleven, שְׁנֵים עָשָׂר twelve, אַרְבָּעָה עָשָׂר fourteen, חֲמִשָּׁה עָשָׂר fifteen, and so on; with a day it counts the day of the month.",
+          "evidence": [
+            {
+              "ref": "Lev.23.5",
+              "role": "defining",
+              "note": "In the first month, בְּאַרְבָּעָה עָשָׂר לַחֹדֶשׁ, on the fourteenth of the month at evening, is Yahweh’s פֶּסַח."
+            },
+            {
+              "ref": "Lev.23.6",
+              "role": "defining",
+              "note": "On the fifteenth (בַּחֲמִשָּׁה עָשָׂר) of the same month, the feast of unleavened bread."
+            },
+            {
+              "ref": "Lev.23.34",
+              "note": "On the fifteenth day of the seventh month, the feast of booths."
+            },
+            {
+              "ref": "Lev.23.39"
+            },
+            {
+              "ref": "Gen.49.28",
+              "role": "defining",
+              "note": "All these are the twelve (שְׁנֵים עָשָׂר) tribes of Israel."
+            },
+            {
+              "ref": "Exo.24.4",
+              "note": "Twelve pillars, for the twelve tribes."
+            },
+            {
+              "ref": "Gen.14.4",
+              "note": "Twelve years they served, and in the thirteenth year they rebelled."
+            },
+            {
+              "ref": "2Ki.20.6",
+              "note": "I will add fifteen years to your days."
+            }
+          ],
+          "kin": [
+            "ten"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ashara",
+        "uga-asr",
+        "akk-eser"
+      ]
+    },
+    {
+      "lemma": "עֶשְׂרִים",
+      "pos": "numeral",
+      "gloss": "twenty",
+      "bdb": [
+        "p.gb.af"
+      ],
+      "summary": "The plural of ten, as in the other Semitic languages: twice ten.",
+      "senses": [
+        {
+          "id": "twenty",
+          "gloss": "twenty",
+          "definition": "Twice ten; in the Law the age from which a man is counted for war and pays the half-shekel.",
+          "evidence": [
+            {
+              "ref": "Exo.30.14",
+              "role": "defining",
+              "note": "Everyone who passes over to the counted, from twenty years old and upward, gives Yahweh’s contribution."
+            },
+            {
+              "ref": "Num.1.3",
+              "role": "defining",
+              "note": "From twenty years old and upward, all who go out to war."
+            },
+            {
+              "ref": "Gen.18.31",
+              "note": "Perhaps twenty will be found there."
+            },
+            {
+              "ref": "Num.14.29",
+              "note": "All counted from twenty years old and upward, who grumbled, fall in the wilderness."
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ishrun",
+        "uga-asrm",
+        "akk-esra"
+      ]
+    },
+    {
+      "lemma": "עֶשֶׂר",
+      "pos": "numeral",
+      "gloss": "ten",
+      "bdb": [
+        "p.gb.ab"
+      ],
+      "summary": "The cardinal ten, feminine עֶשֶׂר and masculine עֲשָׂרָה; עֲשֶׂרֶת is a group of ten, and with אֲלָפִים ten thousand.",
+      "senses": [
+        {
+          "id": "ten",
+          "gloss": "ten",
+          "definition": "The number ten, of people, things and times; the ten words of the covenant written on the tablets.",
+          "evidence": [
+            {
+              "ref": "Exo.34.28",
+              "role": "defining",
+              "note": "He wrote on the tablets the words of the covenant, עֲשֶׂרֶת הַדְּבָרִים, the ten words."
+            },
+            {
+              "ref": "Deu.4.13",
+              "role": "defining",
+              "note": "His covenant, which he commanded you to do, the ten words, written on two tablets of stone."
+            },
+            {
+              "ref": "Deu.10.4"
+            },
+            {
+              "ref": "Gen.18.32",
+              "role": "defining",
+              "note": "Perhaps ten will be found there. — I will not destroy it for the sake of the ten."
+            },
+            {
+              "ref": "Gen.24.10",
+              "note": "The servant took ten of his master’s camels."
+            },
+            {
+              "ref": "Num.14.22",
+              "note": "They have tested me these ten times, and not listened to my voice."
+            },
+            {
+              "ref": "Gen.31.7",
+              "note": "Your father has changed my wages ten times (עֲשֶׂרֶת מֹנִים)."
+            },
+            {
+              "ref": "Jdg.3.29",
+              "note": "About ten thousand men of Moab."
+            },
+            {
+              "ref": "1Ki.7.23",
+              "note": "Ten cubits from brim to brim."
+            }
+          ],
+          "kin": [
+            "teen"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ashara",
+        "uga-asr",
+        "akk-eser"
+      ],
+      "greek": [
+        {
+          "lemma": "δέκα",
+          "gloss": "ten",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "δέκα renders עֶשֶׂר ×42 and Aramaic עֲשַׂר ×4"
+            },
+            {
+              "ref": "Rev.13.1",
+              "note": "A beast from the sea with ten horns, after the fourth beast of Dan 7:7."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עִשָּׂרוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a tenth (of an ephah), tenth-measure",
+      "bdb": [
+        "p.gb.ah"
+      ],
+      "senses": [
+        {
+          "id": "tenth-measure",
+          "gloss": "a tenth of an ephah",
+          "definition": "A dry measure, a tenth of an ephah, by which the fine flour of the grain offering is measured with each animal offered: one tenth with a lamb, two with a ram, three with a bull.",
+          "evidence": [
+            {
+              "ref": "Lev.23.13",
+              "role": "defining",
+              "note": "With the lamb of the עֹמֶר day, its grain offering two tenths (שְׁנֵי עֶשְׂרֹנִים) of fine flour mixed with oil."
+            },
+            {
+              "ref": "Lev.23.17",
+              "role": "defining",
+              "note": "From your dwellings bring two loaves for a waving, of two tenths of fine flour, baked with leaven, firstfruits to Yahweh."
+            },
+            {
+              "ref": "Num.28.12",
+              "role": "defining",
+              "note": "Three tenths of fine flour for each bull, two tenths for the ram."
+            },
+            {
+              "ref": "Num.28.13",
+              "note": "And a tenth (עִשָּׂרוֹן עִשָּׂרוֹן) for each lamb."
+            },
+            {
+              "ref": "Exo.29.40",
+              "note": "With the first lamb of the daily offering, a tenth of fine flour."
+            },
+            {
+              "ref": "Lev.24.5",
+              "note": "Two tenths in each loaf of the bread set before Yahweh."
+            },
+            {
+              "ref": "Lev.14.10",
+              "note": "Three tenths of fine flour at the cleansing of one healed of skin disease."
+            }
+          ],
+          "kin": [
+            "tenth-part"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ushr",
+        "uga-asrt",
+        "akk-esretu"
+      ]
+    },
+    {
+      "lemma": "מַעֲשֵׂר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tenth part, tithe",
+      "bdb": [
+        "p.gb.ai"
+      ],
+      "senses": [
+        {
+          "id": "tithe",
+          "gloss": "the tithe, a tenth given to Yahweh",
+          "definition": "A tenth of all the land’s seed and fruit and of herd and flock, holy to Yahweh; he gives it to the Levites for their inheritance, since they have none in the land, and they give a tenth of it to the priest. Every third year it is laid up in the towns for the Levite, the sojourner, the fatherless and the widow.",
+          "evidence": [
+            {
+              "ref": "Lev.27.30",
+              "role": "defining",
+              "note": "All the tithe of the land, of seed and of fruit of the tree, is Yahweh’s; it is holy to Yahweh."
+            },
+            {
+              "ref": "Lev.27.32",
+              "role": "defining",
+              "note": "Of herd and flock, every tenth (הָעֲשִׂירִי) that passes under the rod is holy to Yahweh."
+            },
+            {
+              "ref": "Num.18.21",
+              "role": "defining",
+              "note": "To the sons of Levi I have given every tithe in Israel for an inheritance, in return for their service."
+            },
+            {
+              "ref": "Num.18.24"
+            },
+            {
+              "ref": "Num.18.26",
+              "role": "defining",
+              "note": "The Levites lift up from it a tenth of the tithe (מַעֲשֵׂר מִן־הַמַּעֲשֵׂר) to Yahweh."
+            },
+            {
+              "ref": "Deu.14.23",
+              "note": "Eat the tithe before Yahweh at the place he chooses, that you may learn to fear Yahweh always."
+            },
+            {
+              "ref": "Deu.14.28",
+              "to": "Deu.14.29",
+              "note": "At the end of three years bring all the tithe of that year and lay it up in your gates for the Levite, the sojourner, the fatherless and the widow."
+            },
+            {
+              "ref": "Deu.26.12"
+            },
+            {
+              "ref": "Mal.3.8",
+              "role": "defining",
+              "note": "Will a man rob God? … In the tithe and the contribution."
+            },
+            {
+              "ref": "Mal.3.10",
+              "note": "Bring all the tithe into the storehouse."
+            },
+            {
+              "ref": "Neh.10.38",
+              "note": "The tithe of our ground for the Levites."
+            },
+            {
+              "ref": "2Ch.31.5",
+              "to": "2Ch.31.6",
+              "note": "Under Hezekiah the people brought the tithe of everything in abundance."
+            },
+            {
+              "ref": "Amo.4.4",
+              "note": "Bring your tithes every three days: the tithe given at Bethel, mocked."
+            },
+            {
+              "ref": "Heb.7.5",
+              "note": "The sons of Levi have a command to take tithes from the people according to the Law."
+            }
+          ],
+          "kin": [
+            "give-tenth"
+          ]
+        },
+        {
+          "id": "tenth-part",
+          "gloss": "a tenth part",
+          "definition": "A tenth of anything: of the spoil Abraham gave to Melchizedek, or the tenth of a measure.",
+          "evidence": [
+            {
+              "ref": "Gen.14.20",
+              "role": "defining",
+              "note": "He gave him a tenth of everything (מַעֲשֵׂר מִכֹּל); Heb 7:4 says Abraham gave it, of the spoils."
+            },
+            {
+              "ref": "Heb.7.4",
+              "role": "defining",
+              "note": "Abraham the patriarch gave him a tenth of the spoils (δεκάτην; Peshitta מַעְסְרָא)."
+            },
+            {
+              "ref": "Ezk.45.11",
+              "note": "The bath a tenth of the homer, the ephah a tenth of the homer."
+            },
+            {
+              "ref": "Ezk.45.14"
+            }
+          ],
+          "kin": [
+            "tenth-measure"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ushr",
+        "uga-asrt",
+        "akk-esretu"
+      ],
+      "greek": [
+        {
+          "lemma": "δεκάτη",
+          "gloss": "a tenth, tithe",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.14.20, מַעֲשֵׂר → δεκάτην; Lev.27.30 → δεκάτη; δεκάτη renders מַעֲשֵׂר ×6, ἐπιδέκατον ×5 more (Num.18.26)"
+            },
+            {
+              "ref": "Heb.7.2",
+              "note": "To whom Abraham divided a tenth of all, of Gen 14:20."
+            },
+            {
+              "ref": "Heb.7.4"
+            },
+            {
+              "ref": "Heb.7.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲשִׂירִי",
+      "pos": "adjective",
+      "gloss": "tenth",
+      "bdb": [
+        "p.gb.ag"
+      ],
+      "summary": "The ordinal; its feminine עֲשִׂירִית is also a noun, “a tenth part”, of an ephah.",
+      "senses": [
+        {
+          "gloss": "tenth",
+          "definition": "The tenth in a series: the tenth month, the tenth generation, every tenth animal.",
+          "evidence": [
+            {
+              "ref": "Gen.8.5",
+              "role": "defining",
+              "note": "The waters decreased until the tenth month; in the tenth month, on the first of the month, the mountaintops were seen."
+            },
+            {
+              "ref": "Lev.27.32",
+              "role": "defining",
+              "note": "Every tenth animal that passes under the rod is holy to Yahweh."
+            },
+            {
+              "ref": "Deu.23.3",
+              "note": "Even to the tenth generation."
+            },
+            {
+              "ref": "Jer.39.1",
+              "note": "In the tenth month Nebuchadnezzar came against Jerusalem."
+            },
+            {
+              "ref": "Zec.8.19",
+              "note": "The fast of the tenth month will be joy and gladness to Judah."
+            }
+          ]
+        },
+        {
+          "gloss": "a tenth part",
+          "definition": "The feminine as a noun: a tenth of an ephah, the measure of the poor man’s sin offering and of the priests’ daily grain offering.",
+          "evidence": [
+            {
+              "ref": "Exo.16.36",
+              "role": "defining",
+              "note": "The עֹמֶר is a tenth of the ephah."
+            },
+            {
+              "ref": "Lev.5.11",
+              "role": "defining",
+              "note": "One who cannot afford two doves brings a tenth of an ephah of fine flour."
+            },
+            {
+              "ref": "Lev.6.13",
+              "note": "Aaron’s offering: a tenth of an ephah of fine flour, a continual grain offering."
+            },
+            {
+              "ref": "Isa.6.13",
+              "note": "Though a tenth remain in it, it will be burned again."
+            }
+          ],
+          "kin": [
+            "tenth-measure"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ushr",
+        "akk-esru"
+      ]
+    },
+    {
+      "lemma": "עָשׂוֹר",
+      "pos": "noun",
+      "gloss": "a ten; the tenth day; ten-stringed",
+      "bdb": [
+        "p.gb.ae"
+      ],
+      "senses": [
+        {
+          "id": "tenth-day",
+          "gloss": "the tenth day of the month",
+          "definition": "בֶּעָשׂוֹר לַחֹדֶשׁ, on the tenth of the month: the day the פֶּסַח lamb is taken in the first month, and the Day of Atonement in the seventh, on which the יוֹבֵל is also proclaimed.",
+          "evidence": [
+            {
+              "ref": "Lev.23.27",
+              "role": "defining",
+              "note": "But on the tenth (בֶּעָשׂוֹר) of this seventh month is the Day of Atonement."
+            },
+            {
+              "ref": "Lev.16.29",
+              "role": "defining",
+              "note": "In the seventh month, on the tenth of the month, you shall humble your souls."
+            },
+            {
+              "ref": "Exo.12.3",
+              "role": "defining",
+              "note": "On the tenth of this month they take each man a lamb."
+            },
+            {
+              "ref": "Lev.25.9",
+              "note": "On the tenth of the seventh month, the Day of Atonement, sound the shofar through the land."
+            },
+            {
+              "ref": "Num.29.7"
+            },
+            {
+              "ref": "Jos.4.19",
+              "note": "The people came up from the Jordan on the tenth of the first month."
+            },
+            {
+              "ref": "Ezk.40.1",
+              "note": "At the beginning of the year, on the tenth of the month, the vision of the house."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ashura"
+          ]
+        },
+        {
+          "gloss": "a ten, about ten",
+          "definition": "A group of ten, of days.",
+          "evidence": [
+            {
+              "ref": "Gen.24.55",
+              "role": "defining",
+              "note": "Let the girl stay with us some days, or ten (עָשׂוֹר)."
+            }
+          ],
+          "kin": [
+            "ten"
+          ]
+        },
+        {
+          "gloss": "ten-stringed (instrument)",
+          "definition": "An instrument of ten strings, used in praise.",
+          "evidence": [
+            {
+              "ref": "Psa.33.2",
+              "role": "defining",
+              "note": "With the harp of ten (בְּנֵבֶל עָשׂוֹר) make music to him."
+            },
+            {
+              "ref": "Psa.144.9",
+              "note": "A new song, on a harp of ten strings."
+            },
+            {
+              "ref": "Psa.92.4"
+            }
+          ],
+          "kin": [
+            "ten"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָשַׂר",
+      "pos": "verb",
+      "gloss": "take a tenth; give a tenth, tithe",
+      "bdb": [
+        "p.gb.ad"
+      ],
+      "summary": "Formed from the number: to take or give the tenth.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "take a tenth",
+          "senses": [
+            {
+              "id": "take-tenth",
+              "gloss": "take a tenth of",
+              "definition": "Take a tenth for oneself, of the king who would take a tenth of Israel’s seed and flocks.",
+              "evidence": [
+                {
+                  "ref": "1Sa.8.15",
+                  "role": "defining",
+                  "note": "He will take a tenth (יַעְשֹׂר) of your seed and vineyards and give it to his officers."
+                },
+                {
+                  "ref": "1Sa.8.17",
+                  "note": "He will take a tenth of your flocks, and you will be his servants."
+                }
+              ],
+              "kin": [
+                "tithe"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "give a tenth, tithe; receive tithes",
+          "senses": [
+            {
+              "id": "give-tenth",
+              "gloss": "give a tenth, tithe",
+              "definition": "Set apart a tenth of produce for God; the participle is those who receive the tithe.",
+              "evidence": [
+                {
+                  "ref": "Gen.28.22",
+                  "role": "defining",
+                  "note": "Of all that you give me, I will surely give a tenth (עַשֵּׂר אֲעַשְּׂרֶנּוּ) to you."
+                },
+                {
+                  "ref": "Deu.14.22",
+                  "role": "defining",
+                  "note": "You shall surely tithe all the produce of your seed, year by year."
+                },
+                {
+                  "ref": "Deu.26.12",
+                  "note": "When you have finished tithing all the tithe of your produce in the third year."
+                },
+                {
+                  "ref": "Neh.10.38",
+                  "note": "The Levites, they receive the tithes (הַמְעַשְּׂרִים) in all our farming towns."
+                },
+                {
+                  "ref": "Neh.10.39"
+                },
+                {
+                  "ref": "Mat.23.23",
+                  "note": "You tithe (ἀποδεκατοῦτε; Peshitta מְעַסְּרִין) mint and dill and cumin, and have left the weightier things of the Law."
+                },
+                {
+                  "ref": "Luk.18.12",
+                  "note": "I tithe all that I get."
+                }
+              ],
+              "kin": [
+                "tithe"
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ushr",
+        "uga-asr-tithe"
+      ],
+      "greek": [
+        {
+          "lemma": "ἀποδεκατόω",
+          "gloss": "give a tenth, take tithes",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.28.22, אֲעַשְּׂרֶנּוּ → ἀποδεκατώσω; Deu.14.22, תְּעַשֵּׂר → ἀποδεκατώσεις; ἀποδεκατόω renders עָשַׂר ×4"
+            },
+            {
+              "ref": "Mat.23.23"
+            },
+            {
+              "ref": "Luk.11.42"
+            },
+            {
+              "ref": "Luk.18.12"
+            },
+            {
+              "ref": "Heb.7.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲשַׂר",
+      "lang": "arc",
+      "pos": "numeral",
+      "gloss": "ten; -teen",
+      "bdb": [
+        "xp.aq.aa"
+      ],
+      "senses": [
+        {
+          "gloss": "ten",
+          "definition": "The number ten, and with a unit the teens: the ten horns of the fourth beast, which are ten kings; twelve months, twelve goats for the twelve tribes.",
+          "evidence": [
+            {
+              "ref": "Dan.7.7",
+              "role": "defining",
+              "note": "The fourth beast had ten horns (קַרְנַיִן עֲשַׂר)."
+            },
+            {
+              "ref": "Dan.7.24",
+              "role": "defining",
+              "note": "The ten horns: out of this kingdom ten kings will arise."
+            },
+            {
+              "ref": "Dan.7.20"
+            },
+            {
+              "ref": "Dan.4.26",
+              "note": "At the end of twelve months he was walking on the palace."
+            },
+            {
+              "ref": "Ezr.6.17",
+              "role": "defining",
+              "note": "Twelve he-goats for a sin offering for all Israel, by the number of the tribes of Israel."
+            }
+          ],
+          "kin": [
+            "ten",
+            "teen"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ashara",
+        "uga-asr",
+        "akk-eser"
+      ]
+    },
+    {
+      "lemma": "עֶשְׂרִין",
+      "lang": "arc",
+      "pos": "numeral",
+      "gloss": "twenty",
+      "bdb": [
+        "xp.aq.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "twenty",
+          "definition": "Twenty, in its one use, of a hundred and twenty satraps.",
+          "evidence": [
+            {
+              "ref": "Dan.6.2",
+              "role": "defining",
+              "note": "Darius set over the kingdom a hundred and twenty (מְאָה וְעֶשְׂרִין) satraps."
+            }
+          ],
+          "kin": [
+            "twenty"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ishrun",
+        "uga-asrm",
+        "akk-esra"
+      ]
+    },
+    {
+      "lemma": "עֲסַר",
+      "lang": "syc",
+      "root": "עסר",
+      "pos": "numeral",
+      "gloss": "ten",
+      "summary": "The Peshitta’s ten, spelled with ס where Hebrew has שׂ, as Aramaic often writes the old ś.",
+      "senses": [
+        {
+          "gloss": "ten",
+          "definition": "The number ten, and with a unit the teens.",
+          "evidence": [
+            {
+              "ref": "Rev.12.3",
+              "role": "defining",
+              "note": "A great red dragon with seven heads and ten horns."
+            },
+            {
+              "ref": "Rev.17.12",
+              "role": "defining",
+              "note": "The ten horns you saw are ten kings, as in Dan 7:24."
+            },
+            {
+              "ref": "Luk.17.12",
+              "note": "Ten men, lepers, met him."
+            },
+            {
+              "ref": "Luk.17.17",
+              "note": "Were not ten cleansed? Where are the nine?"
+            },
+            {
+              "ref": "Mat.25.1",
+              "note": "Ten virgins."
+            }
+          ],
+          "kin": [
+            "ten"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ashara",
+        "uga-asr",
+        "akk-eser"
+      ]
+    },
+    {
+      "lemma": "עֶסְרִין",
+      "lang": "syc",
+      "root": "עסרינ",
+      "pos": "numeral",
+      "gloss": "twenty",
+      "senses": [
+        {
+          "gloss": "twenty",
+          "definition": "Twenty.",
+          "evidence": [
+            {
+              "ref": "Rev.4.4",
+              "role": "defining",
+              "note": "Around the throne twenty-four thrones, and on them twenty-four elders."
+            },
+            {
+              "ref": "Luk.14.31",
+              "note": "To meet with ten thousand him who comes with twenty thousand."
+            },
+            {
+              "ref": "Act.1.15",
+              "note": "About a hundred and twenty names."
+            }
+          ],
+          "kin": [
+            "twenty"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ishrun",
+        "uga-asrm",
+        "akk-esra"
+      ]
+    },
+    {
+      "lemma": "מַעְסְרָא",
+      "lang": "syc",
+      "root": "מעסר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tenth, tithe",
+      "senses": [
+        {
+          "gloss": "tenth, tithe",
+          "definition": "The tenth that Abraham gave Melchizedek and that the sons of Levi take from their brothers by the Law, in Hebrews’ reading of Gen 14:20.",
+          "evidence": [
+            {
+              "ref": "Heb.7.2",
+              "role": "defining",
+              "note": "To whom Abraham set apart a tenth of everything."
+            },
+            {
+              "ref": "Heb.7.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Heb.7.5",
+              "note": "The sons of Levi take tithes from the people according to the Law."
+            },
+            {
+              "ref": "Heb.7.6"
+            },
+            {
+              "ref": "Heb.7.8",
+              "note": "Here men who die receive tithes; there one of whom it is witnessed that he lives."
+            },
+            {
+              "ref": "Heb.7.9"
+            }
+          ],
+          "kin": [
+            "tithe",
+            "tenth-part"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ushr",
+        "uga-asrt",
+        "akk-esretu"
+      ]
+    },
+    {
+      "lemma": "עַסַּר",
+      "lang": "syc",
+      "root": "עסר",
+      "pos": "verb",
+      "gloss": "give a tenth, tithe; be tithed",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "give a tenth, tithe",
+          "senses": [
+            {
+              "gloss": "tithe",
+              "definition": "Give a tenth of what one has.",
+              "evidence": [
+                {
+                  "ref": "Mat.23.23",
+                  "role": "defining",
+                  "note": "You tithe mint and dill and cumin, and have left justice, mercy and faith."
+                },
+                {
+                  "ref": "Luk.11.42"
+                },
+                {
+                  "ref": "Luk.18.12",
+                  "role": "defining",
+                  "note": "The Pharisee: I fast twice a week; I tithe all that I get."
+                }
+              ],
+              "kin": [
+                "give-tenth"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be tithed, pay tithe",
+          "senses": [
+            {
+              "gloss": "be tithed, pay a tenth",
+              "definition": "Have a tenth taken from one, in its one use.",
+              "evidence": [
+                {
+                  "ref": "Heb.7.9",
+                  "role": "defining",
+                  "note": "Through Abraham even Levi, who receives tithes, paid a tenth (אֶתְעַסַּר)."
+                }
+              ],
+              "kin": [
+                "give-tenth"
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ushr",
+        "uga-asr-tithe"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ashara",
+      "lang": "ar",
+      "form": "عَشَرَة، عَشْر",
+      "translit": "ʿašara, ʿašr",
+      "gloss": "ten",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "The Arabic for ten, with ع (ʿ), not غ (ġ); Arabic ش answers to Hebrew שׂ. In the teens Arabic also uses عَشَرَ after the unit, as Hebrew uses עָשָׂר.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2052, root عشر, عَشَرَةٌ (n29198)",
+          "note": "“[Ten;] the first of the عُقُود … عَشَرَةُ رِجَالٍ [Ten men]: and عَشْرُ نِسْوَةٍ [ten women].”"
+        }
+      ]
+    },
+    {
+      "id": "ar-ishrun",
+      "lang": "ar",
+      "form": "عِشْرُونَ",
+      "translit": "ʿišrūna",
+      "gloss": "twenty",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2052, root عشر, عِشْرُونَ (n29201)",
+          "note": "“Twenty; twice ten.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-ushr",
+      "lang": "ar",
+      "form": "عُشْر؛ عَشَرَ؛ عَشَّار",
+      "translit": "ʿušr; ʿašara; ʿaššār",
+      "gloss": "a tenth part; take one from ten, take the tenth; collector of the tenth",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "The verb takes one out of ten, and the عَشَّار is the one who takes the tenth of property: the qal of 1Sa 8:15 and the tithe.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2051, root عشر, عُشْرٌ (n29193)",
+          "note": "“A tenth; a tenth part; one part of ten parts.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2050, root عشر, عَشَرَ (n29187)",
+          "note": "“He took one from ten.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2053, root عشر, عَشَّارٌ (n29208)",
+          "note": "“One who takes, or receives, the عُشْر [q. v.] of property.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-ashura",
+      "lang": "ar",
+      "form": "عَاشُورَاء",
+      "translit": "ʿāšūrāʾ",
+      "gloss": "the tenth day of the month (al-Muḥarram)",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "A noun of the same root naming the tenth day of a month, as עָשׂוֹר names the tenth day (Lev 23:27). Lane notes some made it the ninth.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2053, root عشر, عَاشُورَآءُ (n29212)",
+          "note": "“The tenth day of the month El-Moharram.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-asr",
+      "lang": "uga",
+      "form": "𐎓𐎌𐎗",
+      "translit": "ʿšr, ʿšrt",
+      "gloss": "ten",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Ugaritic writes ʿ and ġ with different signs; ten has ʿ.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 197, §93 Glossary, ʿšr (KTU 4.213:1, 4.349:1; ʿšrt 4.146:2, 6)",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“/ʿaš(a)r-/ … “10” (H. ʿāśār, ʿæśrē, Aram. ʿăśar, Arab. ʿašr, ʿašarat)”. Page image read (leaf n224)."
+        }
+      ]
+    },
+    {
+      "id": "uga-asrm",
+      "lang": "uga",
+      "form": "𐎓𐎌𐎗𐎎",
+      "translit": "ʿšrm",
+      "gloss": "twenty",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 197, §93 Glossary, ʿšrm (KTU 4.135:1)",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“/ʿišrūma/, /-īma/ … “20” (H. ʿæśrīm, Arab. ʿišrūna)”."
+        }
+      ]
+    },
+    {
+      "id": "uga-asrt",
+      "lang": "uga",
+      "form": "𐎓𐎌𐎗𐎚",
+      "translit": "ʿšrt",
+      "gloss": "tenth (part); tithe",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "In a ritual text (KTU 1.119:32) Segert gives “tithe”, or “meal”; the second reading is the other Ugaritic ʿšr, “feast” (see the entry’s note).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 197, §93 Glossary, ʿšrt (KTU 1.109:5; 1.119:32)",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“tenth (part),” 1.119:32 “tithe” (or “meal,” …) (cf. Akkad. ešrētum; cf. H. ʿiśśārōn)”."
+        }
+      ]
+    },
+    {
+      "id": "uga-asr-tithe",
+      "lang": "uga",
+      "form": "𐎓𐎌𐎗",
+      "translit": "ʿ-š-r (D or Š)",
+      "gloss": "give the tithe",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Segert marks the stem as uncertain (D? or C?); one passage.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 197, §93 Glossary, /ʿ-š-r/ D?/C? (KTU 1.119:32–33)",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“to give the tithe” (H. ʿ-ś-r Hi.)."
+        }
+      ]
+    },
+    {
+      "id": "akk-eser",
+      "lang": "akk",
+      "form": "ešer",
+      "translit": "ešer",
+      "gloss": "ten",
+      "relation": "cognate",
+      "note": "Akkadian lost ʿ, so it cannot show which older sound stands behind ע.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008820, ešer [ten] NU"
+        }
+      ]
+    },
+    {
+      "id": "akk-esra",
+      "lang": "akk",
+      "form": "ešrā",
+      "translit": "ešrā",
+      "gloss": "twenty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000067110, ešrā [twenty] NU"
+        }
+      ]
+    },
+    {
+      "id": "akk-esretu",
+      "lang": "akk",
+      "form": "ešrētu; aširtu",
+      "translit": "ešrētu; aširtu",
+      "gloss": "one-tenth, tithe",
+      "relation": "cognate",
+      "note": "Oracc glosses ešrētu “one-tenth; tithe” and aširtu “provisions; tithe”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000035790, ešrētu [one-tenth] NU",
+          "note": "Meanings: one-tenth; tithe."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000010380, aširtu [tithe] N",
+          "note": "Meanings: provisions; tithe."
+        }
+      ]
+    },
+    {
+      "id": "akk-esru",
+      "lang": "akk",
+      "form": "ešrû",
+      "translit": "ešrû",
+      "gloss": "tenth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000128350, ešrû [tenth] AJ"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-tithe-is-yahwehs",
+      "statement": "“All the tithe of the land … is Yahweh’s; it is holy to Yahweh” (Lev 27:30, 32). Yahweh gives it to the Levites for their inheritance, because they have no portion in the land (Num 18:21, 24), and they in turn give a tenth of it to him (Num 18:26). Every third year it feeds the Levite, the sojourner, the fatherless and the widow, “that Yahweh your God may bless you” (Deu 14:28–29), and eaten before him it teaches Israel “to fear Yahweh your God always” (Deu 14:23). When Israel asks for a king like the nations, Samuel warns that the king will take the tenth (יַעְשֹׂר) of their seed and flocks for his servants, and Yahweh says, “they have rejected me” (1Sa 8:7, 15, 17). Withholding it is robbing God (Mal 3:8–10). Yet the tithe is not the whole of what is owed: Jesus tells those who tithe mint and dill and cumin that they have left the weightier things of the Law, justice, mercy and faithfulness, which they ought to have done without leaving the other undone (Mat 23:23); the Pharisee who tithes all he gets goes home not justified, the tax collector who asks for mercy justified (Luk 18:12–14).",
+      "evidence": [
+        {
+          "ref": "Lev.27.30",
+          "to": "Lev.27.32"
+        },
+        {
+          "ref": "Num.18.21"
+        },
+        {
+          "ref": "Num.18.24"
+        },
+        {
+          "ref": "Num.18.26"
+        },
+        {
+          "ref": "Deu.14.23"
+        },
+        {
+          "ref": "Deu.14.28",
+          "to": "Deu.14.29"
+        },
+        {
+          "ref": "1Sa.8.7"
+        },
+        {
+          "ref": "1Sa.8.15",
+          "to": "1Sa.8.17"
+        },
+        {
+          "ref": "Mal.3.8",
+          "to": "Mal.3.10"
+        },
+        {
+          "ref": "Mat.23.23"
+        },
+        {
+          "ref": "Luk.18.12",
+          "to": "Luk.18.14"
+        }
+      ]
+    },
+    {
+      "topic": "melchizedek-receives-the-tenth",
+      "statement": "Melchizedek, king of Salem and priest of God Most High, blesses Abram, and Abram gives him a tenth of everything (Gen 14:18–20). Yahweh swears to David’s Lord, “You are a priest for ever after the order of Melchizedek” (Psa 110:4). Hebrews reads the tenth as the proof of that order’s greatness: Abraham the patriarch gave him a tenth of the spoils; the sons of Levi take tithes from their brothers by the Law, but Melchizedek, not of their descent, took a tenth from Abraham and blessed him who had the promises, and the lesser is blessed by the greater; here men who die receive tithes, there one of whom it is witnessed that he lives; and Levi himself, who receives tithes, paid a tenth through Abraham, being still in his father’s loins (Heb 7:1–10). From this Hebrews argues that perfection was not through the Levitical priesthood, and that Jesus, of Judah, is priest “by the power of an endless life” (Heb 7:11–17).",
+      "evidence": [
+        {
+          "ref": "Gen.14.18",
+          "to": "Gen.14.20"
+        },
+        {
+          "ref": "Psa.110.4"
+        },
+        {
+          "ref": "Heb.7.1",
+          "to": "Heb.7.10"
+        },
+        {
+          "ref": "Heb.7.11",
+          "to": "Heb.7.17"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: the name עַשְׁוָת Ashvath (BDB p.gb.al, 1Ch 7:33), spelled with ש, for a name entry; BDB m.da.at מַעֲשֵׂר is a redirect with no tokens. The root עשׁר “be rich” (עָשַׁר, עֹשֶׁר, עָשִׁיר, BDB p.ge.*) is shin, not sin, and a separate root key; Aramaic and Syriac show it with ת (ʿtr, Syriac ܥܘܬܪܐ), i.e. older ṯ, so it is not this root. Ugaritic has a second ʿšr “feast, give a banquet” (Segert p. 197, KTU 1.17 VI 30, compared with Ge’ez ʿaššara “invite”, ʿašur “banquet”), which Segert offers as a possible reading of ʿšrt in KTU 1.119:32; no Hebrew word shows it, so it is not recorded as a cognate. Arabic عشر also has “consort with, kinsfolk” (عَاشَرَ, عَشِيرَة, Lane pp. 2051–2053), which Lane links to the number only for مَعْشَر; not recorded, since no Hebrew word shares it. Not consulted: Ge’ez ʿaśartu, ʿəśrā (Dillmann, Leslau; Wiktionary lead only), Phoenician ʿšr (Krahmalkov), Sabaic. Segert p. 197 checked on the page image (archive.org leaf n224). The Lev 23 forms: v5 בְּאַרְבָּעָה עָשָׂר, v6/34/39 בַּחֲמִשָּׁה עָשָׂר (עָשָׂר); v27 בֶּעָשׂוֹר; v13/17 שְׁנֵי עֶשְׂרֹנִים (עִשָּׂרוֹן). Open: (1) whether the tenth day of the seventh month (Day of Atonement) and of the first month (the lamb taken, Exo 12:3) carry a doctrine through the number itself; nothing in scripture draws on “tenth” there, so none is written (atonement belongs to כפר). (2) The qal of 1Sa 8:15, 17 is the king’s taking a tenth; it is kin to the tithe but names only the word-level cognates. (3) Syriac lemma pointings (עֲסַר, עֶסְרִין, מַעְסְרָא, עַסַּר) follow SEDRA’s forms; check the stems (SEDRA lists Mat 23:23 מְעַסְּרִין as pael participle and Heb 7:9 אֶתְעַסַּר)."
+}
