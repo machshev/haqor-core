@@ -7762,6 +7762,11 @@ Source checks for Colossians 1:
 
 Source checks for Colossians 2:
 
+- Every source form, decoded inflection, gloss alternative and baseline
+  mapping was checked. Ordinary clauses, negatives, auxiliaries and noun
+  phrases are split; the ledger records the remaining relative-head and
+  calendrical expressions individually. Repeated links keep separated
+  prefixes, stems and suffixes with their actual source word.
 - Verses 1–3 retain the speaker's desire and struggle for the recipients,
   Laodicea, and the rest who have not seen his face in the flesh. The
   first-person dative belongs with having the struggle; face and flesh
@@ -7772,8 +7777,9 @@ Source checks for Colossians 2:
 - Verses 4–5 retain the discourse connective, the warning against
   persuasive words, the causal/concessive opening, absence in the flesh,
   presence in spirit, rejoicing, observed order, and steadfast faith.
-  The flesh phrase remains explicit even though the opening span groups
-  the postpositive causal particle with its English clause.
+  The causal particle, concession, flesh phrase and all four explicit
+  first-person pronouns in verse 5 have their own owners. Verse 4's
+  deception verb is active, with the recipients as its object.
 - Verses 6–8 retain receiving Jesus Messiah our Lord, walking in him,
   strengthening the recipients' roots, being built and established,
   learned faith and thanksgiving. The root-strengthening verb is Pael
@@ -7781,6 +7787,8 @@ Source checks for Colossians 2:
   verb. The warning preserves
   plundering through philosophy and empty deceit, human teaching, worldly
   elements, and the negative contrast with Messiah.
+  The teachings are plural. Proleptic suffixes before the explicitly
+  named world, mystery or Messiah do not add a second "his."
 - Verses 9–12 preserve the relative link to Messiah, bodily fullness of
   divinity, completeness in him, all principalities and authorities,
   circumcision without hands, putting off the flesh of sins, Messiah's
@@ -7790,9 +7798,13 @@ Source checks for Colossians 2:
   of the circumcision and burial statements remain explicit. The masculine
   suffix in the rising clause refers to him, rather than the feminine
   baptism noun.
+  "Not" and "by hands" remain separate without inventing a verb
+  "made." "From" and "among" are also separate. The debt record's
+  past copular expression in verse 14 keeps "had" and "been" with
+  their respective words, rather than producing "is was."
 - Verses 13–15 preserve the recipients' death in sins and uncircumcision,
   being made alive with him, and forgiveness of all our sins. The
-  first-person plural suffixes stay first person. The record of our debt
+  first-person plural suffixes stay first person. The record of our debts
   is blotted out by his decrees, removed and fastened to his cross. The
   source's stripping off his body remains the means of exposing the
   principalities and authorities, followed by their shame openly in
@@ -7800,6 +7812,11 @@ Source checks for Colossians 2:
 - Verses 16–17 retain the prohibition on troubling the recipients about
   food, drink, distinctions of festivals, new moons and Sabbaths, followed
   by shadows of coming things and the body/Messiah contrast.
+  The food/drink conjunction is "and." The first-of-month expression
+  is rendered "new moons," as attested under risha in J. Payne Smith;
+  its conjunction and genitive prefix remain separately linked. The
+  future expression in verse 17 does not become English past merely
+  because its morphology is a passive participle.
 - Verses 18–19 retain wishing, humility of mind, condemnation and the
   separate second-person subjection-to-angel-worship predicate. The
   negative caution is supported by
@@ -7811,17 +7828,30 @@ Source checks for Colossians 2:
   the following failure to hold the head.
 - Verses 20–23 retain the causal conditional, dying with Messiah from
   worldly elements, and the question about being judged as though living
-  in the world. One seven-word source span allows the question's predicate
-  and comparison to appear in natural English order without moving a
-  predicate into a neighboring span. The three prohibitions are quoted
-  together; the quotation closes before the explanation of perishing use
+  in the world. Both second-person pronouns are retained separately;
+  only the deictic head and relative prefix in the supposed-state
+  comparison share "if," with "as," living, the recipients, and the
+  main question's auxiliary and predicate separately linked.
+  The three prohibitions are quoted
+  together; the quotation closes before the explanation of perishable necessities
   and human commandments and teachings. The appearance of wisdom,
   displayed humility, fear of God, not sparing the body, and the final
   honorable/use-of-flesh contrast remain explicit.
-- Verse 21 retains the three prohibitions under shared English negative
-  scope. The last verb has a physical-contact use documented in
+- Verse 21's lam marks reported speech, rendered "namely," rather
+  than the unsourced intensifier "at all." J. Payne Smith describes
+  its quotation function, and the Gorgias dictionary calls it a quotation
+  marker. Each prohibition keeps its own negative and conjunction.
+  The last verb has a physical-contact use documented in
   [J. Payne Smith, pp. 351–352](https://tmcdaniel.palmerseminary.edu/Payne_Smith_1-626%2BTP.pdf#page=353);
   the contextual rendering "handle" follows this physical-contact use.
+- Verses 22–23 use the attested "necessities" sense of hshahta,
+  recorded by J. Payne Smith for things needed for use and life. In
+  verse 22 the singular feminine participle modifies this collective
+  noun; the noun has no beth prefix supplying "in use." Verse 23
+  retains "in them," the display of humility, fear of God, the
+  separate pity predicate and its "on the body" complement, and the
+  distinction between body and flesh. Its final necessity noun and
+  copula remain separate, without substituting a new "serve" verb.
 
 Source checks for Colossians 3:
 
