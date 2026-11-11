@@ -7360,39 +7360,59 @@ Source checks for Ephesians 5:
 
 Source checks for Ephesians 6:
 
-- Verses 1–4 retain obedience to fathers in our Lord, the first
-  commandment with a promise, father and mother, well-being and long life,
-  the prohibition on provoking children, and raising them in our Lord's
-  instruction and teaching.
-- Verses 5–8 preserve masters according to the flesh, fear and trembling,
-  sincerity, eye-service and pleasing people, Messiah's servants, God's
-  will, whole-self service in love, recompense, and servant/free status.
-- Verse 9 retains the actual command to forgive the servants' wrongdoing,
-  the masters' own master in heaven, and the face-acceptance idiom as
-  partiality. This is not replaced with a familiar Greek-based reading.
-- Verses 10–12 retain our Lord's strength and power, God's armor, the
-  accuser's singular trick, and the source's second-person plural in
-  "your struggle." The flesh/blood, principalities, rulers, dark-world
-  possessors, and evil-spirit contrasts all remain, ending under heaven.
-- Verses 13–17 preserve preparation and standing, the complete armor,
-  truth, righteousness, gospel readiness, peace, faith, flaming darts,
-  deliverance, and the Spirit's sword as God's word. "Evil one" is a
-  substantive reading of the actual adjective; verse 13 adds no day noun.
-- Verses 18–20 keep plural prayers and petitions, prayer in the Spirit,
-  watchfulness, constant prayer, intercession, all the holy ones, and the
-  speaker's request. Verse 19 retains "to me," the opening of his mouth,
-  and boldly proclaiming the gospel's mystery. The eye/open expression
-  belongs to the boldness idiom rather than the preceding mouth phrase;
+- Verses 1–4 split the children, obedience, fathers, our Lord, the
+  commandment and promise, the parental quotation and its blessing.
+  The life noun's lexical plural has ordinary English singular “life.”
+  Negation, provoking, raising them, discipline and teaching retain
+  distinct owners. “Our Lord” is preserved in both relevant clauses.
+- Verses 5–8 keep the flesh-qualified masters, fear, trembling,
+  sincerity of heart, eye-service, pleasing people and doing God's will.
+  “Eye-service” and “as if” are minimal lexical constructions rather
+  than shared clauses. Whole-self service retains the actual possessive
+  on self and both comparisons. Verse 8 uses the focused object reading:
+  “it is the good thing which a person does that he receives back.”
+  The [CAL verb entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=pr%28+V)
+  explicitly gives Ethpeal “accept payment, be reimbursed”; the stem
+  does not require an English passive. The servant/free-person contrast
+  adds no “freeborn” restriction.
+- Verse 9 retains both exhortative auxiliaries, forgiving wrongdoing,
+  “also,” the masters' own master in heaven, and the face-acceptance
+  idiom as partiality. This is not replaced with the Greek wording.
+  Verse 10 keeps both strength/power nouns and the possessive suffix.
+- Verses 11–12 retain the complete armor, ability, standing and the
+  accuser's singular trick. J. Payne Smith distinguishes singular
+  *tsen'ta* from its n-ending plural; the written suffixed form is
+  singular despite its numeric plural tag. “Your struggle” remains
+  second-person plural. The nominal negation is present, and the source
+  genitive reads “the world of this darkness.” Every coordinated
+  “and with” and the relative “that are under heaven” remain explicit.
+- Verses 13–17 preserve preparation, standing, truth, righteousness,
+  gospel readiness, peace, the shield of faith, power, burning darts,
+  deliverance and the Spirit's sword as God's word. The sandals verb's
+  “shoe ... with” construction keeps readiness separate from feet.
+  Darts and the evil one have one possessor, without an added “his.”
+  Verse 13 adds no day noun.
+- Verse 18 keeps plural prayers and petitions with both “all” phrases,
+  prayer in the Spirit, both time expressions, the watchfulness
+  auxiliary, constant prayer and intercession for all holy ones.
+  The proleptic feminine preposition refers to the explicitly named
+  prayer, rather than being combined with the preceding Spirit phrase.
+  Only the repeated preposition combines; prayer remains separate.
+- Verse 19 keeps “also for me,” giving a word to me and the opening of
+  my mouth. The eye/open expression belongs to the boldness idiom;
   the [Syriac dictionary](https://www.syriacdictionary.net/index.cgi?langsel=en&word=%DC%A5%DC%9D%DC%A2%DC%90)
-  lists the exact expression as "openly, boldly." Verse 20 preserves
-  ambassadorship, chains, bold speech, and speaking as is right.
-- Verses 21–22 retain Tychicus as the subject who informs the recipients,
-  his beloved-brother and faithful-minister descriptions, our Lord,
-  sending him for this purpose, knowledge of the speaker's circumstances,
-  and encouragement of their hearts. The apposition is rendered as a
-  complete English copular sentence, continuing into the relative clause.
-- Verses 23–24 preserve "our brothers," peace, love with faith, God the
-  Father, our Lord Jesus Messiah, all who love him, incorruption, and Amen.
+  explicitly lists “openly, boldly.” Its purpose prefix remains “that,”
+  separate from “I may proclaim.” Verse 20 keeps one mystery referent,
+  the ambassador, chains, speaking it boldly and speaking as is right.
+- Verses 21–22 keep the explicit you, also, the speaker's circumstances
+  and activity, Tychicus as the informing subject, the beloved brother
+  and faithful minister, our Lord, sending him, and encouraging their
+  plural hearts. The apposition remains a complete English copular
+  sentence followed by its relative clause. The repeated preposition
+  in the purpose phrase has one referent rather than another “it.”
+- Verses 23–24 retain our brothers, peace, love with faith, God the
+  Father, our Lord Jesus Messiah, all those who love him, and Amen.
+  “Without” and “corruption” split as ordinary negative and noun owners.
 
 Source checks for Philippians 1:
 
