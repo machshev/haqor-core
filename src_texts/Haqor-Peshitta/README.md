@@ -9781,13 +9781,78 @@ Source checks for Hebrews 2:
 
 Source checks for Hebrews 3:
 
-- In 3:1, אחי is plural with a first-person singular suffix, so “my holy brothers” preserves both the plural addressees and possessive suffix; חזאוהי is an imperative “consider/see him” with a masculine singular object suffix.
-- In 3:3–4, טב is comparative in the glory/building comparison (“greater”), while גיר supplies “for”; the explanatory clause identifies God as the one who builds everything.
-- In 3:5 and 3:10, the possessive suffix in בכלה is rendered “his house,” and מאנת ... לי is rendered as the first-person “I was weary of this generation,” rather than reversing the Syriac subject and object.
-- In 3:6, the house statement is rendered “his house are we,” retaining the copular verb and the explicit first-person plural pronoun; the conditional span keeps “if we hold until the end” with the perseverance object.
-- In 3:7–10, the causal particle and speaking Spirit are retained, and the fathers’ testing, seeing the works, forty years, generation, wandering hearts, and lack of knowledge are all separately represented.
-- In 3:12–15, דלמא is the negative-purpose “lest,” not a positive “perhaps”; the warnings retain the evil unbelieving heart, departure from the living God, deception of sin, and the quoted “today” exhortation.
-- In 3:17–19, the questions preserve the contrast between those whose bones fell in the wilderness and those who did not believe; the final causal clause explicitly links inability to enter with unbelief.
+- Verse 1 separates my, holy and brothers, then the calling, from and
+  heavens. Consider him retains its object suffix, followed by this,
+  apostle, high, priest, our confession, Jesus and Messiah, each owned
+  separately. Verse 2 keeps faithful, to the one, who made him, as,
+  Moses, throughout and his house distinct.
+- Verse 3 separates for, glory, of this one, the copula, much, greater,
+  than and that of Moses. Both comparisons retain their degree words.
+  The suffix on builder at 11 anticipates house at 12: builder of a
+  house expresses that proleptic genitive, without adding a second
+  possessor. Compare [Muraoka, sections 91e–f and 112d](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  The final building retains its third-person possessive. Verse 4
+  separates every, house, for, by, someone, the copula and building,
+  followed by but, the one, who builds, all, is and God.
+- Verse 5 corrects the shifted owners. In the house belongs to 4,
+  whole to 5 and for testimony to 6. The suffix on whole refers to
+  the house; it does not add an unwritten his to the unpossessed house
+  noun. The passive perfect was trusted, of those things, which were
+  destined, being spoken and through his hand retain their own words.
+- Verse 6 keeps but, Messiah, as, Son, over and his house separate.
+  And we are his house renders the inverse copula without merging the
+  house and first-person plural pronoun. If, holding, until and end
+  remain separate. Galyut appe is the minimal openness-of-faces idiom
+  boldness; face is not independently an openly adverb. Boasting and
+  of his hope remain separate, retaining the hope noun's third-person
+  suffix. [Etheridge's comparison translation](https://www.dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=Hebrews+3%3A6)
+  likewise preserves his hope and notes the openness-of-faces expression.
+- Verses 7–9 keep because, the Spirit of holiness, said and the quoted
+  today distinct. The hearing clause retains the voice's possessive.
+  Do not harden, hearts, provoking him, provokers, the comparison,
+  day, testing and wilderness remain separately owned. Where, tested
+  and me are the prefix, verb and suffix of 9:0; fathers, examined,
+  saw, my works, forty and years keep their own positions.
+- Verse 10 separates because of and this, of/that/generation, and I
+  said, the people and copula, heart, wandering, they, the negative,
+  knowing and my ways. Maenat is a third-person feminine impersonal
+  verb, while li supplies the first-person experiencer. Their heart
+  is singular with a plural possessor; whose minimally combines the
+  relative prefix at 9 with the resumed possessive at 10. Heart and
+  wandering remain separately linked.
+- Verse 11 preserves and so, I swore, in my wrath, that, the negative,
+  entering and my rest. The consecutive reading retains the connector
+  rather than reducing it to and alone. Verse 12 separates beware,
+  therefore, my brothers, lest, there be, in anyone, of you, evil,
+  heart, the negative belief predicate, departing, from, living and God.
+- Verse 13 retains the reflexive inquire of yourselves, rather than
+  importing an exhort-one-another clause. All, days, until, the day,
+  which is called, today and each part of the negative hardening clause
+  remain separate. Of you belongs to 13, and deception to 14; the
+  source's until/day/relative structure is retained.
+- Verse 14 separates for, the first-person perfect we have been joined,
+  with, Messiah, if, from, beginning, and until, end and perseverance.
+  The repeated b-prepositions at 9–10 express one in, with this, firm
+  and standing separately owned. Qyama is rendered standing, supported
+  by [CAL's standing/stability range](https://cal.huc.edu/oneentry.php?cits=all&lemma=qym+N),
+  and by [Etheridge's comparison rendering](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=ubs&verse=Hebrews+3%3A14).
+  Verse 15 keeps as, it is said, today, if, hearing, an utterance,
+  of his voice, the negative, hardening, hearts and provoking him distinct.
+- Verse 16 retains the first who question, its copula, for, those,
+  hearing and provoking him, followed by the negative answer not all
+  these who went out from Egypt through Moses. Negative rhetorical
+  questions are possible in Syriac (Muraoka, section 93.2), but the
+  unmarked negative here is retained as an assertion, following both
+  [Murdock and Etheridge as comparison readings](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=ubs&verse=Hebrews+3%3A16).
+- Verse 17 uses the same impersonal feminine weariness verb as verse
+  10, this time with the third-person dative experiencer leh. [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=m%29n+V)
+  expressly records this feminine-plus-dative grow-weary construction.
+  With whom, forty, years, but, with those, who sinned, their bones,
+  fell and wilderness remain separate. Verse 18 keeps both concerning
+  phrases, who, swearing, that/not, entering and his rest, then the
+  passive were not persuaded. Verse 19 separately retains the active
+  did not believe, inability and entering; the two verbal forms are not
+  flattened into one grammatical analysis.
 
 Source checks for Hebrews 4:
 

@@ -27744,6 +27744,59 @@
           "reason": "B-hay0 and the d-prefix at 2 form the causal connector in that. The intervening for remains separately owned at 1, and the he himself pronoun stem remains separately at 2. No suffering or testing predicate is absorbed into this connector."
         }
       ]
+    },
+    "58:3": {
+      "sha256": "8e1d99475a3d350ee66ea61c5c56efdf2080515a6c4f5cc8c4ebfbec6fa0a9e5",
+      "original_shared_spans": 57,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 6,
+          "positions": [
+            13,
+            14
+          ],
+          "english": "boldness",
+          "reason": "Galyut appe, literally openness/uncovering of faces, is the established frankness/boldness idiom. Face14 is not an independent openly adverb; the two words jointly express boldness rather than a physical facial action. Neither holding nor the following boasting/hope is included."
+        },
+        {
+          "verse": 10,
+          "positions": [
+            2,
+            3
+          ],
+          "english": "I grew weary",
+          "reason": "The impersonal feminine maenat plus the first-person dative li jointly express the speaker's weariness. The feminine third-person verb is not itself a first-person inflection; the dative supplies the experiencer. The of/that/generation phrase stays separately linked."
+        },
+        {
+          "verse": 10,
+          "positions": [
+            9,
+            10
+          ],
+          "english": "whose",
+          "reason": "The relative d-prefix on wanders9 and the resumed their possessive suffix on heart10 jointly form the single English possessive relative whose. Heart10 and wanders9 remain independently linked; no larger clause is shared."
+        },
+        {
+          "verse": 14,
+          "positions": [
+            9,
+            10
+          ],
+          "english": "in",
+          "reason": "B-eh9 anticipates b-qyama10, identifying the same masculine standing object with a repeated b-preposition. English uses one in for those coreferential prepositions; this, firm and standing retain their own positions."
+        },
+        {
+          "verse": 17,
+          "positions": [
+            1,
+            2
+          ],
+          "english": "did he grow weary",
+          "reason": "The impersonal feminine maenat plus the third-person dative leh jointly express his weariness. Leh is the experiencer of the predicate, not a separate beneficiary; forty/years and the with-whom phrases remain separate."
+        }
+      ]
     }
   }
 }
