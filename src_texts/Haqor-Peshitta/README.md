@@ -8819,29 +8819,55 @@ Source checks for 1 Timothy 2:
 
 Source checks for 1 Timothy 3:
 
-- Verses 1–3 retain the conditional desire for an elder's office, good
-  work, no blemish, one wife, watchful mind, sobriety, order, hospitality
-  and teaching. The wine, swift striking hand, humility, contentiousness
-  and money qualifications remain distinct.
-- Verses 4–7 retain the elder's own house and children, the repeated
-  guiding predicate, God's ecclesia, the recent disciple, passive
-  exaltation and Satan's judgment. The testimony clause keeps having a
-  good testimony and its source among outsiders in their own spans.
-- Verses 8–10 retain plural deacons, pure conduct, the idiomatic
-  “not double-tongued,” wine and gain prohibitions, holding the faith's
-  mystery with a pure conscience, testing beforehand and then serving.
-  “But” introduces the positive requirement after the prohibitions;
-  compare the [CAL entry for ella](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29l%29+c).
-- Verse 11 has plural women and feminine-plural “their minds,” followed
-  by faithfulness in everything and the separate slander prohibition.
-  Verse 12 returns to a singular deacon; verse 13 retains procuring a
-  good rank for themselves and boldness in the faith of Jesus Messiah.
-- Verses 14–15 retain the speaker's writing, hope, coming and possible
-  delay, the addressed person's conduct, God's house, the living God's
-  ecclesia and the pillar/foundation description of truth.
-- Verse 16 retains the mystery of this righteousness and all six linked
-  passive events: revealed in flesh, justified in spirit, seen by angels,
-  proclaimed among nations, believed in the world and taken up in glory.
+- All 16 verses and 213 source words were checked against their exact forms,
+  morphology and English owners. The 65 original shared spans become three
+  minimal exceptions: slanderers in verse 11, past possession in verse 12,
+  and boldness in verse 13. Ordinary noun phrases, negatives, auxiliaries
+  and clauses are split by their actual source owners.
+- Verse 1 has plural good works. Verses 2–3 retain the right/proper
+  predicate, the relative heads, the no-blemish/found/in-him clause, the
+  separate husband copula, one wife, watchful mind, sober and ordered
+  conduct, loving strangers and teaching. Aina before a d-relative can
+  head one who; it is distinct from the numeral one modifying wife.
+  Compare Muraoka, section 111, on relative clauses and their dummy heads.
+  The wine, hand, striking, humility, contentiousness and money terms
+  retain their own owners and actual negative/conjunction morphemes.
+- Verses 4–5 restore in subjection, followed by in all purity, and keep
+  both guiding verbs distinct from how and the ability predicate. His own
+  house has separate noun and reflexive owners; the ecclesia's suffix
+  anticipates the following God possessor.
+- Verses 6–7 retain youth in his discipleship, passive exaltation and
+  falling into Satan's judgment. Both purpose negatives are explicit.
+  The good testimony, existential be, dative for him and from outsiders
+  remain separate; Satan's snares are plural.
+- Verses 8–10 retain plural deacons, purity, the actual speak/two
+  construction as speak double, the separate wine and filthy-gain
+  prohibitions, holding the faith's mystery, and a pure conscience.
+  And/they and these both remain in let these themselves be examined
+  first, followed by service while they are without accusation.
+- Verse 11 has plural women, singular mind with a feminine plural
+  possessor, and distinct be predicates, modesty, watchfulness and
+  faithfulness in all things. Slanderers renders the minimal akal qarce
+  idiom, keeping both the negative and be outside the exception; compare
+  [CAL on qarce with akal](https://cal.huc.edu/cal_entry_web.php?lemma=qrcyn+N).
+- Verse 12 retains plural deacons and a singular distributive qualification
+  for each. The feminine perfect copula and singular dative jointly express
+  has had one wife, while the following singular perfect guided governs
+  his children and his house. Verse 13 distinguishes those who have served
+  from the present obtain. The good rank and for themselves remain
+  separate; boldness renders the minimal magle appay open-face idiom,
+  with its and and much separately owned.
+- Verses 14–15 retain all three explicit first-person pronouns, the writing,
+  hoping and coming predicates, quickly, the conditional copula and delay,
+  the knowledge-purpose clause, conduct and God's house. The repeated
+  I write in verse 15 is explicitly marked supplied: it completes the
+  conditional ellipsis from the preceding verse, and its link to the
+  purpose clause does not claim a further source writing verb.
+- Verse 16 has this mystery of righteousness: masculine this qualifies
+  masculine mystery, not feminine righteousness. The relative prefix
+  introduces which was revealed, and all five following conjunctions
+  remain with their passive events. Flesh, spirit, angels, among the
+  nations, world and glory keep their actual owners.
 
 Source checks for 1 Timothy 4:
 
