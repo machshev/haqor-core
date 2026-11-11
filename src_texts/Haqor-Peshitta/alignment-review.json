@@ -27877,6 +27877,68 @@
           "reason": "B-gale en, literally with an uncovered/open eye, is a lexical confidence idiom. English with boldness renders the idiom as a whole, rather than attributing a literal eye action to the approach."
         }
       ]
+    },
+    "58:5": {
+      "sha256": "c4d77884851d50321838309cab99d816a3fc2f30727f5109ff1e7e09b566ac84",
+      "original_shared_spans": 43,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 7,
+          "english": "offered",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Perfect qarreb plus past hwa forms a narrative past predicate. English offered expresses this single past event without imposing a pluperfect backshift or a habitual action; only the finite predicate is shared, with its subject and the prayer objects separately linked."
+        },
+        {
+          "verse": 8,
+          "english": "And although",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "W-kad tab is a concessive conjunction, and although. Tab belongs to the conjunction rather than describing the Son as good. The Son and existential predicate retain separate owners."
+        },
+        {
+          "verse": 8,
+          "english": "obedience",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The feminine object suffix on yalphah anticipates the explicitly marked feminine object l-meshtamanuta. English has one object obedience; only that resumed object is shared, while he learned separately belongs to the verb."
+        },
+        {
+          "verse": 11,
+          "english": "have become",
+          "positions": [
+            13,
+            14
+          ],
+          "reason": "Hwaytun plus the coreferential dative l-khun expresses the addressees coming to be weak. English have become jointly renders the change-of-state predicate and its dative experiencer; you is separately linked to the second-plural verb inflection, and weak and your hearing retain separate owners."
+        },
+        {
+          "verse": 12,
+          "english": "have become",
+          "positions": [
+            22,
+            23
+          ],
+          "reason": "Perfect hwaytun plus coreferential l-khun expresses the addressees coming to be needy. Only have become shares the inchoative predicate and dative experiencer; and you, needy, the milk/food prepositions and negation remain separately linked."
+        },
+        {
+          "verse": 14,
+          "english": "whose",
+          "positions": [
+            6,
+            9
+          ],
+          "reason": "The relative dalath introducing the clause at d-metul and the plural possessor suffix on regshayhun resume the mature people introduced by aylen. English whose combines the relative relation and resumed possessor; those, because, senses, the practised state and the passive training predicate remain separately owned."
+        }
+      ]
     }
   }
 }

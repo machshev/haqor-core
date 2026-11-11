@@ -9949,13 +9949,111 @@ Source checks for Hebrews 4:
 
 Source checks for Hebrews 5:
 
-- The high-priest compound is retained as “high priest” at verses 1, 5, and 10; the repeated רב + כומרא forms were checked against their actual contiguous spans rather than treating רב as an isolated title.
-- Verse 1 preserves the human origin and representative role: the priest is from humans, appointed over the things that belong to God, and is to offer both an offering and a sacrifice for sin.
-- In verse 5, דברי carries the first-person suffix (“my Son”), while ילדתכ carries the second-person suffix (“begotten you”); the appointment/quotation wording therefore keeps the one who speaks and the addressee distinct.
-- Verse 7 keeps the prayer sequence, strong crying, tears, the one able to save him from death, and the final “he was heard” as separate source-linked clauses.
-- Melchizedek is preserved as a proper name in verses 6, 10, and 11; דמותה in verses 6 and 10 is rendered with its third-person possessive (“his likeness”).
-- Verse 4 retains the reflexive “himself” before the contrast with the one called by God; verse 11 retains both “concerning him” and “concerning this Melchizedek,” the discourse object, and the object suffix in “explain it.”
-- Verses 12–14 preserve the teacher obligation, “your time in instruction,” plural first written lines of the beginning, milk/copula sequence, and mature/solid-food contrast; the relative, causal, negative, and trained-senses clauses remain linked to their actual source positions.
+- The alignment review covers all 14 verses and 209 source words, reducing
+  43 original shared spans to six documented exceptions. Every original
+  single and shared mapping, the final links and exception reasons, and the
+  continuous English received independent review against the frozen chapter
+  bytes. Ordinary participants, modifiers, negatives, auxiliaries, genitives
+  and reordered clauses retain separate source owners.
+- In 5:1, causal `גיר` (3), every (0), high (1), and priest (2) are
+  separate. `דמנ` (4) owns the relative and origin preposition around “is”
+  (6); the active standing participle `קאמ` (9) owns “stands,” while
+  `חלפ` (7) and humans (8) express the representative role. The copula (6)
+  belongs to the human-origin clause, rather than an invented appointment
+  predicate. The doubled prefix on `דדאלהא` (12) supplies “that” and “of
+  God,” with the plural copula (13) separately owning “are.” `קורבנא`
+  (15), `ודבחא` (16), and `חטהא` (18) are plural: “offerings,”
+  “sacrifices,” and “sins,” correcting the baseline singulars.
+- In 5:2, who (0), ability (1), humbling (2), himself (3), feeling (4),
+  with (5), those (6), the relative negative (7), knowing (8), erring (9),
+  because (10), also (11), he (12), weakness (13), and clothing (14) have
+  separate owners. The humbling verb is Aphel imperfect; the clothing
+  predicate is a passive participle, not an independent weak-person actor.
+  In 5:3, `ומטלתה` (0) refers back to the weakness; the nominal obligation
+  (1), copula (2), as/so pair (3,6), the two representative prepositions
+  (4,8), people (5), himself (9), offering (10), for (11) and his sins (12)
+  remain separate. No unwritten second offering noun is added.
+- In 5:4, the general priesthood statement retains present English “is
+  taking” with the nominal negation and copular support (0,1), rather than
+  automatically treating perfect-form `הוא` as a past event. The person (3),
+  taking (4), honor (5), and reflexive recipient `לנפשה` (2) remain separate.
+  But (6), the one (7), passive calling (8), its agent preposition (9), God
+  (10), as (11), and Aaron (12) also retain their individual owners.
+- In 5:5, the Messiah (2), negative (3), auxiliary (4), himself (5),
+  glorification (6), becoming (7), high (8) and priest (9) are separate.
+  The contrast introduces the one (11) who said (12) to him (13), not the
+  baseline “by him” spanning all three words. The elliptical second
+  glorification clause is explicitly supplied as `{was glorified by}`;
+  its speaker and recipient are not reversed. Within the quotation,
+  `דברי` (14) means “my Son,” `אנת` (15) supplies “you are,” `אנא` (16)
+  supplies “I,” `יומנא` (17) supplies “today,” and `ילדתכ` (18) is first
+  singular perfect with a second-person masculine singular object:
+  “have begotten you.” All five quotation words retain their actual links.
+- In 5:6 and 5:10, `בדמותה דמלכיזדק` (9,10 and 5,6) is an analytic
+  genitive with an anticipatory suffix: “in the likeness of Melchizedek.”
+  The English does not add another owner in “his likeness of Melchizedek.”
+  In 5:6, the speech verb (4) is perfect “said,” and the place (2) keeps its
+  preposition on a separate span from another (3). You (5), the copula (6),
+  priest (7) and forever (8) are separate. The high-priest title in 5:10
+  splits naturally into high (3) and priest (4), after the passive naming
+  predicate (0) and its divine agent (1,2).
+- In 5:7, the flesh noun (2), passive clothing participle (3), and past
+  auxiliary (4) retain separate owners. Prayer (5) and supplication (6)
+  are the offered objects; strong (8) modifies crying with its preposition
+  (7), while tears retain their own conjunction and preposition (9).
+  Perfect `קרב` plus `הוא` (10,11) forms the narrow narrative-past
+  exception “offered”; it does not force a pluperfect or habitual action.
+  The one (12), relative ability (13), past auxiliary (14), from (15),
+  death (16), saving him (17), and being heard (18) are separate. The last
+  verb is Ethpeal perfect, keeping the passive reception of his prayer.
+- In 5:8, `וכד טב` (0,1) is the concessive compound “and although,” not
+  “though” plus an adjective “good” applied to Son (2).
+  [Doron and Assif, example 8b, p. 99](https://dwc.knaw.nl/DL/publications/PU00010817.pdf)
+  explicitly lists this compound as “although.” The existential with its
+  masculine suffix (3) is “he is.” Fear (5), the plural sufferings (6),
+  the relative “that he endured” (7), and learning (8) retain their roles.
+  The feminine object suffix on `ילפה` (8) anticipates the explicit marked
+  object `למשתמענותא` (9); only “obedience” shares this resumed reference.
+  The baseline's “he endured and learned” had obscured the relative clause.
+- In 5:9, thus (0), passive perfecting (1), becoming (2), the all/those
+  reference (3,4), obeying (5), him (6), cause (7), life with its genitive
+  prefix (8), and eternal (9) remain separate. The English reorders
+  “eternal life” without a shared adjective/noun span.
+- In 5:11, both topic expressions remain explicit: concerning him (0),
+  but (1), and concerning this Melchizedek (2-4). Much (5), the copula (6),
+  for us (7), discourse (8), saying/delivering it (9), difficulty (10), and
+  explaining it (11) are separately owned. `הויתונ לכונ` (13,14) expresses
+  coming to be weak, rendered “you have become weak”; only “have become”
+  shares the finite predicate with its coreferential dative. The second-
+  plural suffix on `במשמעתכונ` (16) remains explicit as “your hearing.”
+- In 5:12, the past obligation (0,1), teachers (3), and infinitive of being
+  (4) are rendered “you ought to have been teachers.” Because of (5), time
+  (6), your (7), and instruction (8) retain their owners. But (10), now
+  (9), again (11), needing (12), the explicit you (13), and learning (14)
+  are separate; the baseline wrongly grouped you with “to learn.” What
+  (15), the plural copula (16), writings (17), first (18), beginning (19),
+  words (20), and God (21) retain their distinct roles. In particular,
+  beginning (19) is not made to own an extra noun “lines.” The words-of-God
+  construction has an anticipatory possessor, not an extra unnamed owner.
+  The second `הויתונ לכונ` (22,23) shares only “have become,” before needy
+  (24), of (25), milk (26), and not (27), of (28), food (29) and solid (30).
+- In 5:13, the relative prefix and possessor on `דמאכולתה` (2) own
+  “whose” and “food,” while milk (3) and the copula (4) are separate.
+  Passive Aphel `מפס` (6) is rendered “versed” with its negative (5) and
+  the word with its preposition (7) separately owned. It is not treated as
+  the bare lemma's active “permit”; [CAL, `pys` C, passive participle](https://cal.huc.edu/oneentry.php?cits=all&lemma=pys+V)
+  records taught/expert and experiential understanding. Righteousness (8),
+  because (9), child (10), and the final copula (11) remain separate.
+- In 5:14, mature with its genitive/benefactive relation (0), the copula
+  (1), but (2), food (3), and solid (4) have separate owners. Those (5),
+  because (6), and the practised passive-participial state (7) refer to the
+  mature people; the senses (9) are the subject of the passive perfect
+  training verb (8), rather than an active object of an invented trainer.
+  [CAL, `npq` Dt](https://cal.huc.edu/oneentry.php?cits=all&lemma=npq+V)
+  explicitly cites this verse for the senses being trained. Only “whose”
+  shares the relative prefix (6) and resumed plural possessor (9); senses,
+  because, being practised, training, distinguishing (10), good (11), and
+  evil (12) remain separately linked.
 
 Source checks for Hebrews 6:
 
