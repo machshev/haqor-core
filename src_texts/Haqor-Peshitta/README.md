@@ -8927,33 +8927,84 @@ Source checks for 1 Timothy 4:
 
 Source checks for 1 Timothy 5:
 
-- Verses 1–4 retain the elder/younger comparisons, possessive brothers
-  and sisters, purity, actual widows, sons or grandsons, and doing right
-  among the members of their household. The household-member construction
-  keeps the household's owner and its members in their source roles.
-- Verses 5–8 retain the solitary widow's hope and prayers, the living/dead
-  contrast, blamelessness, caring for one's own and especially the household
-  of faith, and that person's denial of faith. Both source faith words
-  remain. The long conditional binds the care verb to its actual objects
-  in one grammatical span so that the English stays natural.
-- Verses 9–12 retain sixty years, one husband, each good-work condition,
-  the younger-widow instruction, Messiah, marriage and former faith.
-  The derived verb in verse 11 is rendered “avoid”; Lesson 12 of
-  [Younansardaroud's Syriac course book](https://refubium.fu-berlin.de/bitstream/handle/fub188/24490/Classical_Syriac_Course_Book_3-2019.pdf?isAllowed=y&sequence=3)
-  gives the form as “decline,” and [Peshitta Titus 3:9](https://www.dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=Titus+3%3A9)
-  supplies the same derived verb with the from-preposition in an avoidance
-  instruction.
-- Verses 13–16 retain movement among houses, idle speech, marriage and
-  household care, having begun to turn aside after Satan, the believing
-  man/woman distinction, supporting widows and sparing the ecclesia's burden.
-- Verses 17–22 retain the elders' double honor, both Scripture quotations,
-  two or three witnesses, public rebuke, our Lord Jesus Messiah and his
-  chosen angels, the mental-priority clause, partiality, hand-laying,
-  other people's sins and personal purity.
-- Verses 23–25 retain the from-now-on instruction, a little wine, both
-  separate reasons, the recipient's stomach and continuing ailments,
-  sins going before or following people to judgment, and the concluding
-  visibility and concealment of good works.
+- All 25 verses and 342 source words were checked against their exact forms,
+  morphology, original mappings and final English owners. The 98 original
+  shared spans become eight minimal exceptions: three possession constructions,
+  two ethical-dative predicates, the marital be-for-husbands expression,
+  a causal conjunction and the taking-faces idiom. Ordinary modifiers,
+  negatives, auxiliaries, noun phrases and clauses are independently owned.
+- Verses 1–3 retain the elder and younger comparisons, the actual possessive
+  brothers/sisters, mothers without an added possessor, all purity and both
+  widow nouns in the honor instruction. In verse 4 the initial there is a
+  widow remains distinct from her having sons or sons of sons. Learning,
+  acting rightly among household members, their household, repaying plural
+  recompenses, their fathers, and the explanation before God all retain
+  their own words.
+- Verses 5–6 preserve the repeated feminine topic in the solitary widow's
+  description, her hope and its copula, night/day, prayers and petitions.
+  The contrasting woman serves luxury and is dead while alive; no extra
+  actor or different life verb is introduced.
+- Verses 7 and 9 use You should for the general directive expressed by hwa
+  before a participle, rather than turning the perfect-form tag into a past
+  report; compare Muraoka, section 87. Give ... commands in verse 7 is the
+  discontinuous English rendering of the one command verb, with these
+  remaining on its own demonstrative. Verse 9 retains sixty years, the
+  negative comparison, the second relative head, the past marital state,
+  one man and the focusing hu.
+- Verse 8 keeps the full household-care conditional, both actual faith
+  words and the member/household nouns. Has denied combines only kfar
+  and its ethical dative, without inventing a new personal object. The
+  final comparison assigns worse, its copula, than, those, the relative
+  negative and believing to their actual source words.
+- Verse 10 separates testimony possession from its good-work description
+  and retains every if condition, its perfect verb and its own objects:
+  sons, strangers, the feet of saints, the afflicted and every good work.
+  Verse 11 retains the younger widows' feminine plural breakout predicate
+  with its ethical dative and the separate against the Messiah relation.
+  To marry renders the minimal to-be-for-husbands construction; the
+  distinct desire verb is not absorbed into that exception.
+- Verse 12's d-tlam has the form shared by a strong verb's third masculine
+  singular and third feminine plural perfect. The context identifies the
+  younger widows as the rejecting subject, with their sentence and their
+  former faith intact. The export's masculine singular tag alone cannot
+  decide the clause. Muraoka, section 54, page 44 and its footnote, gives
+  both zero endings and explains the later yodh distinguishing the forms.
+- Verses 13–15 retain learning idleness, going between houses, increasing
+  talk, pursuing vain things and speaking what is not proper. The younger
+  women's marriage, sons and household management remain distinct from
+  the prohibition on giving the enemy even one occasion for abuse. The
+  negative-polarity so much as renders af-la under the preceding not.
+  Verse 15 continues the sentence with because (al d-), indeed (ger),
+  now, some people, the perfect beginning and turning after Satan.
+  [CAL's ger entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=gyr+X)
+  explicitly records indeed as well as for.
+- Verse 16 retains both male and female believers, the possession and
+  support constructions, and their widow object. The following feminine
+  plural burden verb refers to the widows; its English subject head is
+  explicitly marked supplied. The final feminine singular sufficiency
+  verb refers to the ecclesia, with the genuinely widowed recipients
+  retaining their own relative, copula and truly expression.
+- Verse 17 has elders who conduct themselves well, reflecting the
+  Ethpaal form, followed by double honor and labor in word and teaching.
+  Verses 18–20 keep the Scripture quotation, ox and threshing, laborer,
+  copula and pay, the accusation rule and its two-or-three witnesses,
+  and rebuking sinners before everyone so that the rest may fear.
+- Verse 21 retains the first-person testimony, its addressee, God, our Lord
+  Jesus Messiah and his chosen angels. The mind remains the subject of
+  not being predisposed toward anything; compare the Ethpaal sense in
+  [CAL's qdm entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=qdm+V).
+  The separate prohibition on doing anything and the minimal taking-faces
+  partiality idiom remain distinct.
+- Verse 22 adds no hand possessor: the hand is laid on someone, and
+  participation concerns others' sins. Yourself belongs to keep yourself
+  in purity, not to the preceding sins phrase. Verse 23 retains both
+  drinking predicates, the actual unqualified water prohibition, a little
+  wine, the stomach and plural constant ailments.
+- Verses 24–25 retain known sins, their going before people to judgment,
+  and the alternative group after whom sins go. The second sins subject
+  is explicitly marked supplied at its plural verb, making the ellipsis
+  clear without claiming an additional source noun. Good deeds, the
+  otherwise clause, negative ability and hidden infinitive remain distinct.
 
 Source checks for 1 Timothy 6:
 
