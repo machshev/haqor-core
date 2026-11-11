@@ -9274,11 +9274,82 @@ Source checks for 2 Timothy 3:
 
 Source checks for 2 Timothy 4:
 
-- Preserved the repeated first-person forms in verse 6 and rendered the clause as an imminent pouring-out, rather than silently dropping either source token.
-- Kept the causal/contrast particles and the full hearing clause in verses 3-4, including the itching of their hearing and the turn toward fables.
-- Rendered verse 8's preserved crown, repayment by the Lord, righteous Judge, and beneficiaries in one grammatical sentence while retaining each source position.
-- Kept personal suffixes explicit in the appeals to Timothy (come to me, bring him with you, beware of him) and in the greetings.
-- Used “evangelist” and “ministry” in verse 5 and “Lord,” “Messiah,” and “kingdom” terminology consistently with the existing Peshitta translation.
+- The shared-span review checks all 22 verses and 250 source words,
+  reducing 47 shared spans to eight documented exceptions. Final source
+  ownership and continuous English are independently reviewed against
+  the frozen chapter hash. Ordinary clauses, modifiers, negatives,
+  auxiliaries and pronouns retain individual owners; separated English
+  spans may repeat their actual source word.
+- Verses 1–2 keep I, testifying, to you, God, our Lord Jesus Messiah,
+  the separate relative head, destined and judging, living and dead,
+  and the manifestation of his kingdom. The word, proclaiming,
+  standing, diligence, both seasons and their negative, rebuking and
+  reproving remain separate. Only the long-of-spirit patience idiom is
+  shared; all and teaching remain outside that exception.
+- Verses 3–5 retain for, the coming time, sound teaching, the negative
+  and listening, but, their lusts, multiplying, for themselves, teachers
+  and the itching of their hearing. Verse 4 has singular their ear,
+  with its plural possessor; from the truth, but and turning to fables
+  remain distinct. Verse 5 preserves the auxiliary-plus-watchful
+  instruction and the separate commands to endure evils, do the work
+  of an evangelist and complete your ministry.
+- Verses 6–7 keep both first-person pronouns in I/am rather than
+  inventing a second actor or dropping the copular person. Now belongs
+  to mekhil, being poured out to the sacrificial participle, and the
+  time for me to be released to the separate prospective clause; has
+  arrived is perfect. The good contest, fighting, finishing my course
+  and keeping my faith retain their own words and first-person suffixes.
+- Verse 8 keeps from/now on, the preserved crown of righteousness and
+  for me. Its repayment verb has the crown as resumed object and my
+  Lord as subject. The explanatory that is and righteous Judge are
+  placed beside my Lord in English to make that ownership clear; the
+  day has its own demonstrative. Both contrasts, not, only, also and
+  the recipients remain distinct. Have loved reflects the actual perfect.
+- Verses 9 and 21 retain the minimal impersonal concern-plus-dative
+  instruction in be diligent. Coming, to me, quickly, before and winter
+  are separate. Verse 10 keeps Demas leaving me, loving this world and
+  departing; only the departure/ethical-dative predicate is shared.
+  Thessalonica, Crescens, Galatia, Titus and Dalmatia retain their own
+  positions, without invented departure verbs for the elliptical names.
+- Verses 11–12 retain Luke, is, alone and with me. Taking Mark and
+  bringing him are distinct commands; with you, for, useful, to me and
+  service remain separate. The Tychicus sentence keeps but, the
+  first-person perfect sending and Ephesus at their actual owners.
+- Verse 13 shares only the house-of-books container compound in the
+  bookcase. The leaving, Troas, with Carpus, when, you, coming and
+  bring it remain separate; the resumed object refers to the bookcase.
+  Books, especially, plural scrolls and plural parchments are distinct.
+- Verses 14–15 keep Alexander, smith, many evils and showed me. The
+  repayment verb is Peal perfect here, rendered repaid, with our Lord
+  as actor, him as recipient and his deeds as the measure. [CAL's pr-a
+  entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=pr%28+V)
+  records pay back in this stem; the exported spring-up gloss does not
+  determine its sense in this context. Verse 15 keeps but, you, also,
+  beware and of him; the adjective/participle describes current strong
+  opposition to our words, preserving the first-person plural suffix.
+- Verse 16 keeps at, my and first outside the minimal defense compound.
+  [CAL's mappaq bruha entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mpq%40brwx%29+N)
+  explicitly records the whole expression as defense/apologia, also
+  spelled as one word. It does not require an additional literal spirit
+  location. No/one/was/with me, but/all of them/abandoned me, and the
+  negative request not to reckon this against them remain separate.
+- Verse 17 retains my Lord, stood, by me, strengthened me, through me,
+  proclamation, its passive fulfillment, hearing, all and nations. The
+  following d-prefix is retained as that I was rescued, complementing
+  hearing; no unwritten and replaces that link. Rescue is first-person
+  perfect, with from, mouth and lion separately owned.
+- Verse 18 preserves my Lord, future rescue and its first-person object,
+  every evil work, giving me life, his kingdom and the relative heavenly
+  location. Only the repeated-age forever and ever formula is shared;
+  the glory recipient, glory and Amen remain separate. Verses 19–20 keep
+  giving greetings and all recipients, the house of Onesiphorus,
+  Erastus's minimal remaining/ethical-dative predicate and Corinth,
+  Trophimus, the explicit I left him, while, sickness, Miletus and city.
+- Verse 21 renders the greeting formula with individually owned asks
+  and after your well-being, retaining the second-person suffix. Eubulus,
+  every following name, all and the brothers stay separate. Verse 22
+  retains our Lord Jesus Messiah, with, your spirit, grace, with you
+  and Amen; the English blessing copulas are grammatical supplies.
 
 Source checks for Titus 1:
 
