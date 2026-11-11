@@ -7475,48 +7475,71 @@ Source checks for Philippians 1:
 
 Source checks for Philippians 2:
 
-- Verses 1–4 retain all four conditional appeals, the explicit heart
-  noun, encouragement, love, Spirit fellowship, affections and mercies,
-  the speaker's joy, one mind/love/soul/thought, humility, the companion,
-  and the contrast between one's own concerns and the other's.
-- Verses 5–8 preserve the mind in the addressees, Jesus Messiah, God's
-  likeness, the distinct equality assertion, robbery, self-emptying,
-  servant and human likeness, being found human, self-humbling, and
-  obedience. The two death nouns and the cross qualifier are linked to
-  their own source positions.
-- Verses 9–11 retain God's exaltation, giving him the name, every name,
-  Jesus' name, every knee, heaven/earth/under-earth, every tongue, and
-  glory to God his Father. "Gave him" belongs to its own verb and pronoun;
-  the nominal confession reads "Jesus the Messiah is Lord."
-- Verses 12–13 retain the beloved addressees, their obedience, the
-  near/far contrast and its actual "only" particle, all the more, fear
-  and trembling, and both the work command and work noun. God urges
-  them to will and work; the final clause explicitly says what they
-  desire, preserving its second-person plural subject.
-- Verses 14–16 retain the prohibitions on murmuring and dispute,
-  harmlessness, freedom from blemish, pure children of God, dwelling
-  in a perverse and crooked generation, and appearing as lights.
-  Verse 16 preserves the indicative "you are" relation and renders the
-  in-place-of idiom as "take the place of life for them," followed by
-  the speaker's boasting, the Messiah's day, and running/laboring not
-  in vain. [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=dwkh+N)
-  explicitly records the Syriac in-place-of construction under section
-  3(3); it is not treated as a physical location or replaced with a
-  different source noun.
-- Verses 17–18 preserve the conditional outpouring, sacrifice and
-  service of the addressees' faith, both rejoicing predicates, all the
-  recipients, and reciprocal joy with the speaker.
-- Verses 19–24 retain our Lord Jesus, Timothy's sending, the speaker's
-  relief, knowledge of the recipients, sincere care, the contrast with
-  self-seeking people, proven character, son/father service, contingent
-  travel, confidence, and the explicit "also" in coming to them.
-- Verses 25–30 keep Epaphroditus, brother/helper/fellow-worker and the
-  recipients' sent-one/minister roles, longing and distress, illness,
-  both recipients of God's mercy, sorrow upon sorrow, eager sending,
-  renewed joy and relief, reception and honor, the Messiah's work,
-  approaching death, risking his life, and completing their service
-  deficiency toward the speaker. The causal illness and work clauses
-  remain connected as complete English sentences.
+- Verses 1–2 split all four conditional appeals, existence and the
+  recipients, encouragement, consolation in the heart in love,
+  Spirit fellowship, tenderness and mercies. The speaker's joy and
+  each one-mind/love/soul/thought expression have separate owners.
+- Verses 3–4 retain negation, contention, empty praise, humility of
+  mind, each person, his companion and the comparison with himself.
+  Concern for one's own affairs contrasts with the companion's;
+  no “only” is added to verse 4.
+- Verse 5 keeps the actual imperative “think” as the English verbal
+  idiom “be of this mind,” with both separated pieces owned by that
+  verb. Its following demonstrative and Dalath phrase identify the
+  thought also belonging to Jesus Messiah. Muraoka §91e documents
+  Dalath phrases with an omitted nucleus noun. The English preserves
+  the conjunction and adds no unsupported “in” to the bare Jesus name.
+- Verses 6–8 preserve God's likeness, the distinct equality assertion,
+  robbery, self-emptying, the servant's likeness, human likeness and
+  appearance, being found human, self-humbling and obedience.
+  The object suffix of reckon anticipates the explicit “this,”
+  without another object. The noun *pehma* is “an equal,” followed
+  by its God qualifier. Both death nouns and the cross remain distinct.
+- Verses 9–11 retain cause, this, also, God's great exaltation, giving
+  him a name, its relative superiority, all names, Jesus' name, every
+  knee and tongue, and the confession that Jesus Messiah is Lord.
+  Only “under” combines the adverb and *men*; Coakley §11 explicitly
+  lists this compound preposition. “Those,” conjunctions and earth
+  remain separate. “God, his Father” keeps the possessive suffix.
+- Verses 12–13 keep the beloved addressees, always obeying, not only
+  near but now far, all the more, both “with” phrases, working and
+  the work of their life. “It is God who urges you” retains the focused
+  pronoun; J. Payne Smith explicitly gives the Pael verb with *b-* of
+  the person urged. Both willing and doing remain, ending with the
+  recipients' own desire, rather than God's desire substituted for it.
+- Verses 14–16 split the exhortative auxiliary, doing everything,
+  both prohibitions, harmlessness, blemish, God's pure children,
+  dwelling, the perverse and crooked generation, and appearing as
+  lights. Verse 16 keeps “you are” and “in place of life for them”;
+  [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=dwkh+N)
+  explicitly gives the Syriac in-place-of construction under 3(3).
+  The speaker's own boasting, the Messiah's day, negation, running
+  and toil have distinct owners.
+- Verses 17–20 keep the conditional outpouring, sacrifice, service,
+  faith and each rejoicing predicate with its pronoun. Reciprocal
+  joy, hope in our Lord Jesus, sending Timothy soon, relief, learning
+  about the recipients and diligent care for their affairs remain.
+  Only “for me” combines the two coreferential datives in verse 19;
+  relief and its existential verb stay separate.
+- Verses 21–24 retain the focused own interests, all of them seeking,
+  the contrast with Jesus Messiah's interests, this man's proven
+  character, the son/father comparison, present service, sending him,
+  contingent timing, confidence in “my Lord,” and also coming soon.
+  The postposed first-person pronoun in verse 24 supplies “am,”
+  alongside the already explicit “I,” rather than an extra “myself.”
+- Verses 25–27 retain the matter urging the speaker, Epaphroditus,
+  the brother/helper/worker descriptions, both contrasts, the
+  recipients' sent one, ministry for the speaker's singular need,
+  longing, distress and knowing what the recipients heard. Illness
+  reaches death's threshold; God's mercy concerns him and also the
+  speaker, avoiding sorrow upon sorrow. Every negator and copula
+  remains separately linked.
+- Verses 28–30 preserve eager sending to the recipients, seeing him
+  and rejoicing again, a little relief, reception in the Lord, all joy,
+  those who are such and the resumptive “them,” and holding in honor.
+  The Messiah's work and coming right up to death remain explicit.
+  “Had little regard for his life” splits the verb, preposition and
+  noun; completing what they lacked keeps service and “to me” distinct.
 
 Source checks for Philippians 3:
 
