@@ -6746,8 +6746,12 @@ Source checks for Galatians 2:
   purpose clause. Verse 3 preserves the absence of compulsion to circumcise.
 - Verses 4–5 retain the false brothers, the group's freedom in Jesus
   Messiah, the enslaving purpose, and the refusal to yield even for an hour.
-  Verse 6 preserves both the earlier status qualification and the face-taking
-  idiom about God's impartiality, followed by adding nothing to Paul.
+  Verse 4 corrects "enslave us" to "enslave me": the supplied written
+  `d-nshaabdunani` has the first-singular objective suffix, despite SEDRA's
+  inconsistent plural tag. Compare the third-plural imperfect suffixes in
+  [Coakley, §19, pp. 90–91](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
+  Verse 6 retains the present "whatever they are," the face-taking idiom
+  about God's impartiality, and the resumed subject of adding nothing to Paul.
 - Verses 7–8 preserve the distinct circumcision and uncircumcision
   commissions and the parallel predicates concerning Cephas and Paul.
   Verse 8 renders the actual D-stem verb as "encouraged," following
@@ -6755,7 +6759,8 @@ Source checks for Galatians 2:
   rather than borrowing a different stem's sense.
 - Verses 9–10 retain all three named leaders, Barnabas, the right hand of
   fellowship, the two mission domains, remembering the poor, and Paul's
-  own concern to do so.
+  own concern to do so. The mission clauses retain their nominal predicates;
+  "work" and "they asked" are not assigned to source words that lack them.
 - Verses 11–12 preserve Cephas's arrival, the face-to-face opposition,
   the timing relative to the people from James, withdrawal and separation,
   and the causal fear of those of the circumcision.
@@ -6769,13 +6774,22 @@ Source checks for Galatians 2:
   believed in Jesus Messiah," and the emphatic final "no flesh."
 - Verses 17–19 retain the conditional sinner question and rejection,
   rebuilding what Paul destroyed, with its feminine plural object,
-  the commandment-transgression
-  description, and both law phrases with the purpose of living to God.
-- Verse 20 retains "loved me" but ends with the distinct first-person
-  plural "gave himself for us." These suffixes are not harmonized with
-  one another or with the supplied Murdock wording. Verse 21 retains
-  the negated rejection of grace, the conditional righteousness-through-law
+  the active participle "transgressing" the commandment, and both law
+  phrases with the purpose of living to God. Verse 17 includes the supplied
+  name Jesus before Messiah and renders the rejection as "Far be it!"
+- Verse 20 corrects "loved me" to "loved us": `d-ahban` has the
+  first-plural suffix `-n`, distinct from first-singular `-ny`; compare
+  [Coakley, §18, pp. 84–85](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf)
+  and the [supplied Syriac text](https://aramaicnewtestament.org/epistle/galatians_2.htm).
+  "Gave himself for us" retains its own plural suffix. The negative cleft
+  and the focus on the faith of the Son of God remain distinct, with the
+  loving and giving predicates attached to the Son. Verse 21 retains the
+  negated rejection of grace, the conditional righteousness-through-law
   claim, and the final "for nothing."
+- The alignment review splits ordinary noun phrases, negation, auxiliaries
+  and clauses. Fourteen remaining shared spans record only compound
+  connectors, the two face-taking idioms, or explicitly resumed objects
+  and prepositional referents; their exact reasons are in the review ledger.
 
 Source checks for Galatians 3:
 
