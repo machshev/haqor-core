@@ -8541,29 +8541,94 @@ Source checks for 2 Thessalonians 1:
 
 Source checks for 2 Thessalonians 2:
 
-- Verses 1–2 retain the speaker's “my brothers,” the assembly toward
-  Jesus, both being shaken and being troubled, and the day-of-our-Lord
-  claim framed as reported speech, rather than the narrator's assertion.
-- Verse 3 retains the general interrogative, followed by the conditional
-  about rebellion coming first and the man of sin being revealed. The
-  revelation verb belongs to the man, not rebellion. Compare the
-  [CAL entry for lma](https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c).
-- Verses 4–8 retain the opponent's self-exaltation, sitting in God's
-  temple and displaying himself as God, the former teaching, the one
-  restraining, removal from the midst, and our Lord Jesus consuming and
-  abolishing the lawless one. The start-plus-derived verb in verse 7 is
-  rendered “beginning to be stirred up,” preserving its inciting sense;
-  compare the [CAL entry for hpt](https://cal.huc.edu/oneentry.php?cits=all&lemma=xp%2B+V).
-- Verses 9–12 retain Satan's working, power, signs and lying wonders,
-  deception among those perishing, not receiving love of the truth,
-  God's sending deception, belief in a lie, and judgment of those who
-  preferred unrighteousness. The coordinated clauses join across verses.
-- Verse 13 has “our brothers,” distinct from “my brothers” in verses 1
-  and 15. God's choosing, life, sanctification and faith remain. Verse
-  14 retains plural “these things” and becoming our Lord's glory.
-- Verses 15–17 retain commands, word and letter, our Lord Jesus Messiah
-  and God our Father, loving and giving, eternal encouragement, good
-  hope through his grace, hearts, and every word and every good deed.
+- All 17 verses were checked against all 228 exact forms, their full
+  decoded morphology and all 539 individual SEDRA gloss records, then
+  the running English. The 72 original shared spans become six minimal
+  compounds: min lwat, en la, aykana d-, min kadu, al d- and al appay.
+  Ordinary noun phrases, auxiliaries, negation and clauses are split;
+  separated prefixes, stems and suffixes retain their own source word.
+- In 2:1–2, my brothers retains the singular possessor. Coming and its
+  Lord, Jesus and Messiah have separate owners; coming's suffix
+  anticipates its explicit genitive. Our and gathering are separate,
+  with to him retained. That and not share only their own prefixed word,
+  while you may/be shaken, quickly and in your plural minds stay separate.
+  Both predicates and all three neither/nor groups remain. Each causal
+  min is by, distinct from word, spirit and letter. The feminine copular
+  pronoun is it were, referring to the letter. From us is the minimal
+  min lwat compound, without losing lwat or translating from twice.
+  The quotation retains behold and surely: Payne Smith identifies lam
+  as a quotation marker, and Costaz also gives surely. The day-of-our-Lord
+  claim stays inside quotation marks; has arrived retains perfect aspect.
+- In 2:3, the opening remains the general interrogative why, with should
+  and deceive you at the Aphel verb. In any, of and the ways separately
+  retain the partitive construction. Unless jointly renders en plus la.
+  The missing apodosis, that day will not come, is explicitly supplied
+  in braces and linked to the conditional as its grammatical anchor;
+  it is not an extra source lexeme. The feminine comes agrees with
+  rebellion. The coordinated revelation verb belongs to the man, with
+  the son and of destruction separate. The son's proleptic suffix
+  anticipates destruction without adding another his.
+- In 2:4, the one, who/in opposition and is distinguish the demonstrative,
+  relative-prefixed predicate and copular pronoun. Exalts himself retains
+  the Eshtaphal sense. Above, every, one, who is called and God stay
+  separate. The final noun is an object of worship, not an adjective
+  revered imported into another span. So that jointly renders aykana
+  d-, with even separately at af. The modal sitting predicate is outside
+  that linker. In the temple, of God, as and God remain distinct. Make a
+  display, of and himself retain the showing verb, al and self noun.
+  As though belongs to ayk itself, explicitly attested with that sense;
+  he and were God retain the pronoun and nominal predicate separately.
+- In 2:5–8, remember and its separated do/you remain one source word,
+  distinct from not. That when, I was and with you stay separate. Used
+  to say renders the former-teaching context of the compound past,
+  with the hwa auxiliary separate from the saying verb, these things
+  and to you; it is not automatically made English pluperfect. Both
+  ahid forms can have active meaning despite their passive-participle
+  shape, explicitly noted by Payne Smith and Muraoka section 84.
+  What restrains has no added him; so that/may be revealed and he are
+  separate. Min kadu jointly means already. Has/begun and the Ethpaal
+  infinitive to be active remain separate; Gorgias and Payne Smith
+  attest the derived stem's diligent/effective/working senses, without
+  requiring an unexpressed external agent stirring it up. The one,
+  who, now and restrains are split; ma has independently attested relative
+  use. The removal verb is passive and from/the midst are separate.
+  Its conditional joins the following then into complete English.
+  Unrighteousness and unrighteous one retain the actual source stems.
+  The relative object of both consuming and abolishing is the same
+  unrighteous one; their suffixes do not require an English him after
+  the coordinated relative. Breath, of his mouth, by the manifestation
+  and of his coming retain separate owners.
+- In 2:9–12, coming, of that one, is, by the working and of Satan are
+  separate; the working phrase keeps its beth prefix. Power, signs and
+  false/wonders retain distinct words. In 2:10 the written d-hawya has
+  the feminine singular -ya ending, matching deception, despite the
+  export's plural tag: compare Muraoka's third-yodh paradigm, printed
+  page 107, singular bakya versus plural bakyan. It is which is,
+  distinct from the beth-prefixed among the perishing. The following
+  al plus d- means because; not remains separately at la, and they/did/
+  receive at the Pael perfect. Love, of the truth, by which and they
+  might live are separate, with no imported salvation predicate.
+  The fused metulhana owns for this reason; God, will send, them, the
+  working and of deception stay separate. The purpose and coordinated
+  passive judgment join across 2:11–12. All of them, who, did/believe,
+  not, in the truth, but, took pleasure and in unrighteousness retain
+  their actual owners; Ethpeal tsba with beth supports took pleasure.
+- In 2:13–17, we and are obliged stay separate from always, to give
+  thanks and to God. For jointly renders al appay, with you separately
+  at its suffix. Our brothers differs from my brothers in 2:1,15.
+  Beloved and of our Lord are split; the beloved suffix anticipates
+  the explicit owner. Because/chose you stays at its prefixed verb,
+  with God, from and the beginning separate. Life, sanctification,
+  of the Spirit, faith and in the truth remain. He called you to these
+  plural things; through/our/preaching and glory/to our Lord are split,
+  without turning the latter lamadh into a genitive of. The commands
+  are that you learned, active Peal, with whether/by word/or/by our
+  letter retaining separate owners. Himself is explicit in the final
+  blessing; the one and who loved us are separate, as are and gave and
+  us. Eternal/encouragement and and/good/hope are split. The prayer joins
+  across verses: may encourage and establish share your hearts as their
+  English object. Both every phrases remain; good modifies deed, with
+  no extra good attached to word and no unwritten you after establish.
 
 Source checks for 2 Thessalonians 3:
 
