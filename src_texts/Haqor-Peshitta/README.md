@@ -10057,12 +10057,140 @@ Source checks for Hebrews 5:
 
 Source checks for Hebrews 6:
 
-- In 6:1–2, the source joins the foundation question to repentance from dead works and faith in God, then continues the list through baptism, laying on of hands, resurrection from the dead, and eternal judgment. The laying-on-of-hands compound is kept together while retaining both source positions.
-- In 6:4–6, the repeated “again/from the beginning” wording is retained rather than smoothed away: those who have received the heavenly gift, Holy Spirit, good word, and coming-age power cannot return to sin and renewal, nor crucify the Son of God again and despise him.
-- In 6:7–8, the earth imagery preserves the causal particle for the rain-bearing ground and the adversative turn before the thorn-bearing ground. The prefixed relative perfect דאשתית is rendered “which has drunk”; the suffix on דמטלתהונ is third-person masculine plural, referring to the preceding “those,” so the cultivation relation is rendered “those for whose benefit it is cultivated.” 6:8 retains רחיקא as “far” in “not far from a curse.”
-- In 6:9–12, the contrastive דינ particles are rendered as “however”/“but,” including the exhortation to show diligence and not become discouraged. “Ecclesia” terminology is not present in this chapter.
-- In 6:13–18, Abraham, God, the promise, the greater one, the oath, the two unchangeable things, refuge, comfort, and hope are all retained. The source’s oath sequence in 6:13 is compressed into natural English while preserving the self-swearing clause.
-- In 6:19–20, the anchor, soul, unshaken condition, veil, Jesus’ prior entrance, priesthood forever, and Melchizedek likeness are each linked. The contiguous אפי תרעא is an attested sanctuary-entry curtain/veil compound (CAL, https://cal.huc.edu/oneentry.php?cits=all&lemma=%29pyn+N); with לגו מן it is rendered “within the veil,” retaining the spatial construction without inventing a second “inner” adjective.
+- The review covers all 20 verses and 252 source words, reducing 56 original
+  shared spans to eleven documented exceptions. Every original single and
+  shared mapping, the final links and exact exception reasons, and the
+  continuous English received independent review against the frozen chapter
+  bytes. Ordinary clauses, participants, modifiers, negatives, auxiliaries,
+  genitives and reordered constituents retain separate source owners.
+- In 6:1–2, because of (0) and this (1), or (8) and why (9), another (12)
+  and foundation (11), and dead (17) and works (16) are separately linked.
+  The first-plural exhortations to leave and come (2,6) remain distinct from
+  the second-plural question about laying another foundation (13). The
+  foundation question continues through the list in 6:2. Its repeated
+  prepositions remain visible: for repentance (14), for faith (18), for
+  teaching (6:2:0), for resurrection (4) and for judgment (8). `ודסים אידא`
+  (2,3) is “and of the laying on of a hand”; hand (3) is singular, correcting
+  the baseline plural. From (5), among (6), the dead (7), eternal (9), and
+  judgment (8) are separate.
+- In 6:3, `מפס` (2) is the active Aphel permission predicate. The Lord (1),
+  permits (2), the first-plural future action (3), and this (4) retain their
+  owners. This active permission sense is not substituted for the different
+  passive-participial use of the same root in 5:13.
+- In 6:4–6, English “it is not possible for those” renders the personal
+  plural inability construction without changing its experiencers. But (0),
+  not (1), ability (2) and those (3) remain separate. The relative prefix
+  and one (4), occasion (5), descent (7), and baptism (6) have individual
+  links. Holy (14) is separated from Spirit (13); good (6:5:2) is separated
+  from word (1), and the future modifier (6) from age (5). In 6:6, again (0),
+  sin (1), both from/beginning expressions (2,3 and 6,7), renewal (4), and
+  repentance (5) remain visible. The finite predicates for sin, renewal,
+  crucifixion and despising retain the preceding plural people as their
+  subject. Crucify (8) and despise (11) govern the same Son (9) of God (10);
+  reordering the shared object avoids inventing an object suffix on (11).
+- In 6:7, relative drinking (2), rain's coming (4), and producing grass (8)
+  are perfect forms, rendered with completed/experiential English. The rain
+  (3) is masculine, while the earth (0), drinking (2), producing (8), passive
+  cultivation (13), and receiving (14) are feminine. Many (7), times (6),
+  grass (9), and its usefulness (10) are separate. `דמטלתהונ` (12) has a
+  masculine plural suffix referring to those (11), not to the feminine
+  earth: “for whose benefit it is cultivated.” Blessing (15), from (16),
+  and God (17) also retain separate owners.
+- In 6:8, conditional `הו` (1) contributes the focal “indeed,” rather than
+  being treated as a feminine earth pronoun; the form itself is masculine
+  singular. The focal function is described by Muraoka §110. The feminine
+  earth remains the subject of producing (3) and becoming (6). Only
+  “becomes” shares the change-of-state verb plus coreferential dative
+  `הויא לה` (6,7); rejected (8), not (9), far (10), from (11), curse (12),
+  but (13), and its end (14) remain separate. The baseline reversed the
+  final owners: `יקדנא` (15) is burning, and `הו` (16) is the copula “is.”
+- In 6:9, the active Aphel participial form (0) is rendered as the English
+  state “we are confident,” without claiming a Syriac passive verb. But (1),
+  concerning you (2), and `אחי` (3), “my brothers,” are separate; the
+  first-singular possessive is restored. The source's positive good (5)
+  is retained in “things that are good,” rather than forcing the baseline
+  comparative “better.” Near (6), to life (7), even if (8), this way (9),
+  and speaking (10) retain their owners.
+- In 6:10, the nominal negation `לא הוא` (0,1) remains present “is not,”
+  with for (2), unjust (3) and God (4) separately linked. Your works (6),
+  your love (7), its demonstrative (8), showing (9), his name (10), past
+  service (11), the saints (12), and ongoing service (13) remain distinct.
+- In 6:11, `אנש אנש` (2,3) is a distributive expression; only “each” shares
+  the two human nouns. Person (3), among you (4), this (6), the emphatic
+  same (5), diligence (7), showing (8), completion (9), your hope (10),
+  until (11), and end (12) remain separate. The reduplicated construction
+  follows the distributive use described in Muraoka §71a.
+- In 6:12, feminine impersonal `תתקטע` plus the plural dative `לכונ` (1,2)
+  jointly expresses the addressees' discouragement. Only “be discouraged”
+  shares that construction; you (2), may (1), and not (0) remain separately
+  linked. [CAL, `qṭʿ` Dt.2](https://cal.huc.edu/oneentry.php?cits=all&lemma=q%2B%28+V)
+  records the despair sense and the feminine impersonal construction with
+  a dative experiencer. `נגירות רוחא` (8,9) is the lexical patience idiom;
+  only patience shares it, while and through belongs separately to (8).
+  `הוו` (10) is read as third-plural perfect “became” in the relative clause
+  about the heirs, rather than as a new command to the addressees. Its
+  surface is homographic with the imperative analysis selected by SEDRA;
+  [Younansardaroud §7.3, p. 49](https://www.aina.org/books/classical-syriac-course-book.pdf)
+  explicitly gives `hwāw` as third-plural perfect. The clause's antecedent
+  those (6), faith (7), heirs (11) and promise (12) remain intact.
+- In 6:13, the initial `לאברהם` (0) is resumed by `לה` (4); only the named
+  recipient “to Abraham” shares them. Promising (3) and God (5) retain their
+  owners. The later `לה` (9) belongs to existential possession with `דלית`
+  (7), not to the adjective greater (10): he did (8) not (7) have (7,9) one
+  greater (10) than himself (11). The relative oath verb `דנאמא` (12) owns
+  “he could swear,” while its relative prefix and resumed `בה` (13) jointly
+  own “by whom.” The main `ימא` (14), “he swore,” is a distinct verb, followed
+  by the explicit reflexive “by himself” (15).
+- In 6:14, the infinitives (1,3) intensify their following finite blessing
+  and multiplication verbs (2,4). They separately own “surely”; the finite
+  verbs retain the first-singular speaker and second-singular masculine
+  addressee. In 6:15, `אגר רוחה` (1,2) is the patient-endurance idiom.
+  [CAL's exact verse lookup](https://cal.huc.edu/getlex.php?coord=620580615&word=1)
+  identifies the endurance/lengthening root `ngr`; the isolated SEDRA hire
+  gloss does not govern the expression. Only “he patiently endured” shares
+  it; and thus (0), obtaining (3), and the promise (4) are separate.
+- In 6:16, humans (0), for (1), the greater oath witness (2), than themselves
+  (3), and swearing (4) are separate. Concerning (5), every (6), dispute (7),
+  arising (8), between them (9), settlement (10), firm (11), and being (13)
+  retain their owners. The singular dative (14) refers back to the dispute,
+  expressed as its settlement. In 6:17, because of (0), this (1), abundantly
+  (2), desiring (3), God (4), showing (5), heirs (6), promise (7), his
+  promise with its clause prefix (8), not (9), change (10), binding it (11),
+  and the oath (12) are separately linked.
+- The oath noun in 6:16–17 is not forced into a plural from SEDRA's tag.
+  Muraoka §24, p. 25, note 12 explicitly records identical singular and
+  plural `mawmāṯā` forms; [CAL's oath entry](https://cal.huc.edu/cal_entry_web.php?lemma=mwm%29h+N)
+  likewise gives the singular form. With no disambiguating plural points
+  in the supplied vocalisation, context supports “an oath”: the generic
+  oath settling a dispute in 6:16 and God's oath described in 6:13–14 and
+  resumed in 6:17. The two things in 6:18 then refer to promise and oath.
+- In 6:18, relative not (2), changing (3), the second relative not (4),
+  ability (5), God (6), lying (7), and the plural feminine resumed oblique
+  `בהינ` (8) retain their actual owners. “In which” shares only the relative
+  prefix (4) and resumed oblique (8); not separately belongs to (4). The
+  baseline had placed “in which” on the negative word alone and wrongly
+  made (8) a preposition for comfort. Great (10) and comfort (9) are
+  separate. `נהוא` (11) permits the third-singular reading agreeing with
+  comfort, despite the export's first-plural analysis; Younansardaroud
+  §14.2 explicitly gives `nehwē` as third-singular, while Coakley §26 shows
+  the shared third-singular/first-plural imperfect form. With first-plural
+  dative `לן` (12), it expresses comfort being for us; only “may have”
+  shares that possession relation, and we belongs separately to (12).
+  Taking refuge (13), in him (14), holding fast (15), hope (16), promised
+  (17), and to us (18) remain separate. The addressees are not made the
+  comfort or the object of their own refuge.
+- In 6:19, the hope reference (0), being (1), for us (2), like (3), anchor
+  (4), holding (5), and our soul (6) are separately owned. The feminine
+  soul is the subject of feminine “be shaken” (8); the masculine hope and
+  anchor are not substituted as that predicate's subject. The purpose and
+  negative on (7) are separated around (8). `לגו מנ` (10,11) shares only
+  “within.” [CAL, `ʾpyn` in compounds with structures](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29pyn+N)
+  records the entrance-curtain expression: entrance (13) and curtain (12)
+  are separately linked, rather than grouped with the spatial preposition.
+  In 6:20, where (0), prior entry (1,2), on our behalf (3), Jesus (4),
+  becoming (5), priest (6), forever (7), and likeness of Melchizedek (8,9)
+  remain distinct. The last genitive has an anticipatory suffix rather than
+  an extra owner, and the source says priest without adding high.
 
 Source checks for Hebrews 7:
 
