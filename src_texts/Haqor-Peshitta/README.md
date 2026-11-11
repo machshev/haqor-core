@@ -7060,37 +7060,56 @@ Source checks for Galatians 6:
 
 Source checks for Ephesians 1:
 
-- Verses 1–3 retain the repeated Messiah names and the possessives in
-  "our Father" and "our Lord," together with the blessing and heavenly
-  setting. The divine-will genitive is rendered without adding a second
-  owner.
-- Verses 4–6 preserve choosing beforehand, foreordaining, the purpose
-  that we should be holy, and the passive praise predicate. The relative after grace
-  introduces grace being poured upon us through the Beloved.
-- Verse 7 retains redemption, the conjunction before the blood phrase,
-  and forgiveness of sins. Verse 8 renders the relative as "which abounded
-  in us," retaining the in-all-wisdom and understanding complements.
-- Verses 9–12 keep making the mystery known, the previously determined
-  action, renewal anew in the Messiah, heaven and earth, election, and first
-  hope. Verse 10 explicitly retains the d-linked content/purpose clause,
-  "that everything may be renewed anew." Compare
-  [Younansardaroud, §§4.3, 5.5, and 14.6](https://d-nb.info/1184881278/34).
-  The sentence joins across verses 9–10 and 11–12 remain continuous.
-- Verse 13 preserves "your life," hearing, belief, passive sealing, and
-  the Spirit that was promised. Verse 14 renders the redemption phrase
-  as a contextual temporal goal, "until the redemption," with the living
-  participants and the distinct praise/honor wording retained.
-- Verses 15–17 preserve the faith/love report and thanksgiving as a
-  continuing prayer, with "our Lord" and the knowledge-of-him complement.
-  Verse 18 makes the eyes of the hearers' hearts the subject of the
-  enlightenment clause rather than adding a second divine action verb.
-- Verses 18–19 retain both what-is clauses, the calling/inheritance
-  possessives, the holy ones, and the distinct power/strength nouns with
-  the believing group, with the power "in us." Verse 20 preserves both causative predicates and
-  renders the resurrection idiom as "from among the dead."
-- Verses 21–23 retain the repeated above relation, the clause about the
-  name that is named, the present/coming contrast, ecclesia, and the body/fullness/filling
-  relations, with their actual source pronouns and participants.
+- Verses 1–3 keep the named owners of the will and fatherhood distinct
+  from their anticipating suffixes. Verse 2 assigns "from," "God" and
+  "our Father" to their own words. Verse 3 retains plural "blessings,"
+  with "all" on its separate source word.
+- Verse 4 separates choosing from "beforehand" and marking us out from
+  its second "beforehand." It retains plural "foundations," the purpose
+  that we should be holy, and the reflexive goal "for himself." Verse 5
+  keeps appointment, sons, Jesus and Messiah separate, with "as was
+  pleasing to his will."
+- Verse 6 separates the passive praise predicate from the glory and grace
+  nouns, and preserves "his Beloved." Its masculine relative follows the
+  masculine head "glory" in "the glory of his grace"; the English "which"
+  does not force a feminine grace antecedent. Verse 8's feminine relative
+  refers to grace. Verse 7 separates "we" from "have" while retaining
+  redemption, "and by his blood," and forgiveness of sins. Verse 8 keeps
+  both "in all" complements, without adding "spiritual."
+- Verses 9–12 split the prior determining, choosing, marking and hoping
+  constructions. Verse 9's "in himself" resolves the determining subject
+  contextually; its suffix alone is third-person masculine singular.
+  Verse 10 retains "that everything" and the heaven/earth relative.
+  Only its two-word recurrence adverb men d-rish remains shared as
+  "again"; compare [CAL, sense 2](https://cal.huc.edu/cal_entry_web.php?lemma=mn%40ry%24+X).
+- Verses 13–14 keep hearing, belief, sealing, "your life," the promised
+  Holy Spirit and the inheritance distinct. The Spirit's relative is
+  "which." The lamadh redemption phrase retains the contextual goal
+  "until the redemption," followed by the living participants and the
+  separate praise/honor nouns.
+- Verse 15 does not import Murdock's "all" before "the holy ones."
+  Verse 16 assigns the postparticipial pronoun to the English subject
+  "I," with the participle supplying "do" and "cease," the negation
+  separate, and the infinitive supplying "to give thanks." The behalf
+  expression is split as "on" and "your behalf."
+- Verses 17–19 retain the God/Lord possessives, wisdom and revelation,
+  the knowledge of him, the eyes and hearts, both interrogative copulas,
+  and the distinct excellence, greatness and power nouns. The Peal verb
+  in verse 18 has an attested metaphorical sense "be enlightened";
+  this English passive does not require changing its Syriac stem.
+  The first-plural ending on the believing participle in verse 19 is its
+  subject/copula, not a second object "in us."
+- Verses 20–21 separate "from," "among" and "the dead," and "at" from
+  "his right hand." The repeated comparative relations are "higher"
+  and "than," without adding "far." Plural principalities, authorities,
+  powers and dominions follow "all"; every/name, negation/only, and
+  but/also stay separate. "In this world" repeats the world word for its
+  preposition and noun around the separately linked demonstrative.
+- Verses 22–23 preserve one patient in the proleptic giving construction,
+  with "and" and "him" on the same prepositional word and "he gave" on
+  the verb. The higher/than/all relation, head and ecclesia remain
+  separate. Verse 23 retains "and" before fullness, with the relative,
+  filling participle and both all-expressions individually linked.
 
 Source checks for Ephesians 2:
 
