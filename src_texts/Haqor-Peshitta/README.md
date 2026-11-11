@@ -7607,45 +7607,78 @@ Source checks for Philippians 3:
 
 Source checks for Philippians 4:
 
-- Verse 1 retains the beloved brothers, the speaker's joy and crown,
-  the explicit "thus" with standing firm, our Lord, and the closing
-  beloved address, punctuated as a vocative.
-- Verses 2–3 preserve Euodia and Syntyche, one mind in our Lord, the
-  feminine-plural recipients, the true yokefellow's first-person
-  possessive, help for the women who labored with the speaker, Clement,
-  the other helpers, and names written in the book of life. Requesting
-  from someone is rendered with natural English direct objects without
-  changing the people or their roles.
-- Verses 4–7 retain both rejoice commands, always and again, humility
-  known to everyone, our Lord's nearness, the negative anxiety command,
-  prayer/petition/thanksgiving, requests before God, and God's peace
-  guarding hearts and minds in Jesus Messiah.
-- Verses 8–9 retain every quality and the distinct praise/commendation
-  deeds, thinking on these things, learning/receiving/hearing/seeing in
-  the speaker, and doing them. Verse 7's peace of God remains distinct
-  from verse 9's God of peace.
-- Verses 10–12 preserve beginning to care, prior care and lack of
-  means, the denial that need motivates the statement, learning, and
-  sufficiency. Verse 11 maps its single speech predicate separately from
-  "for I have learned," and retains whatever the speaker has as the
-  subject of sufficiency. Verse 10 uses the verb's causative co-verb sense
-  of beginning an action, recorded by [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=nqp%232+V)
-  under C(3). Verse 12 retains training, with humbled/abounding,
-  fullness/hunger, and abundance/need.
-- Verses 13–17 retain ability through the strengthening Messiah,
-  partnership in affliction, Philippians, Macedonia, the gospel's
-  beginning, the ecclesia contrast, the account of receiving and giving,
-  Thessalonica, the explicit "once and twice," needed support, and the
-  gift-versus-increasing-fruit contrast.
-- Verses 18–20 preserve receipt, surplus, explicit fullness, the repeated
-  reception clause, Epaphroditus, pleasant odor, acceptable sacrifice,
-  and pleasing God. My God fills the recipients' need according to his
-  riches, in Jesus Messiah's glory. The doxology retains our Father,
-  glory and honor, eternity, and Amen.
-- Verses 21–23 retain greetings to all the holy ones in Jesus Messiah,
-  the brothers with the speaker greeting the recipients, all the holy
-  ones, especially Caesar's household, and our Lord Jesus Messiah's
-  grace with all of you, retaining the actual closing recipients.
+- All 23 verses were reviewed against the exact written forms, complete
+  morphology, every individual full gloss alternative and Murdock. This
+  includes all original shared spans, baseline singles, final singles and
+  repeated source links; the final English was read separately afterward.
+- Verse 1 retains both beloved/dear descriptions, each actual conjunction,
+  my joy and my crown, thus standing firm in our Lord, and the final
+  first-person possessive in "my beloved." Verses 2–3 preserve asking of
+  Euodia and Syntyche, one mind being theirs, and the singular addressee
+  asked to help the women who labored with the speaker. The auxiliaries,
+  subjects, objects and relative clauses are separately linked.
+- Verse 3's bar zawgi is "my true yokefellow": only the lexical noun
+  combines bar and zawga, with "my" and "true" separately owned.
+  [Payne Smith under zawga](https://sedra.bethmardutho.org/lexeme/get/860)
+  explicitly records bar zawga as yokefellow/companion. Clement, the rest
+  of my helpers, their names, the book and life retain distinct links.
+- Verses 4–7 keep both rejoice commands, "and again," humility known to
+  everyone and our Lord's nearness. The anxious-about-anything command
+  retains separate negation; the requests "be made known" are the subject
+  of the passive verb, with prayer, petition and thanksgiving distinct.
+  Verse 7's peace suffix anticipates God, rather than adding another
+  possessor. The relative comparison, knowledge, guarding, hearts, minds
+  and Jesus Messiah remain separate.
+- Verses 8–9 retain every conjunction, all six qualities and the distinct
+  praise/commendation deeds. The written kenan in verse 8 is "right," as
+  in [CAL ken](https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A),
+  rather than the export's unhelpful bare verb gloss. The passive loving
+  form means "lovely," rather than "loving." The learning, receiving,
+  hearing and seeing predicates, repeated "these things," doing and the
+  God of peace retain their own owners.
+- Verses 10–11 keep beginning to care, prior concern and inability,
+  without importing an added "again" or a separate means noun.
+  [CAL naqp, causative sense 3](https://cal.huc.edu/oneentry.php?cits=all&lemma=nqp%232+V)
+  records the co-verb "begin to do something." Verse 11's la hwa focuses
+  the denial that lack motivates speaking; it does not automatically make
+  the denial past. The impersonal lack predicate and "for me" are distinct.
+  Speaking and learning have separate first-person subjects. What the
+  speaker has is the subject of sufficiency, with the existential and
+  beneficiary in that relative distinct from "sufficient for me."
+- Verse 12's hu focuses the preceding first-person subject: "I indeed
+  also know," rather than adding an object "it" or another actor.
+  [Muraoka section 110](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf)
+  explains the focus on the immediately preceding constituent. Humbling,
+  abounding, everything/all things, training, fullness/hunger and
+  abundance/need remain separately linked, with the actual conjunctions.
+- Verse 13's mse with hayla is the ability/strength collocation "have
+  strength," recorded by [CAL under mse, sense 2](https://cal.huc.edu/oneentry.php?cits=all&lemma=mcy+A).
+  Only that predicate is shared; the explicit "I," all things, Messiah,
+  the strengthening relative and its object remain separate. The bare
+  strength noun is not given an invented instrumental preposition, and a
+  separate "do" verb is not imported.
+- Verses 14–17 keep plural afflictions, the Philippians' knowledge,
+  Macedonia, the gospel's beginning, not even one of the ecclesias,
+  receiving and giving, and the sole exception of the recipients.
+  Verse 16 retains the causal/relative dalath, "also," one time and twice,
+  and the support sent for the speaker's need. Verse 17's negative focus
+  contrasts seeking the gift with desiring that plural fruits increase
+  for the recipients, with each subject and predicate separately linked.
+- Verses 18–20 retain receipt of everything, more for the speaker,
+  fullness and the repeated reception clause with its actual conjunction.
+  Epaphroditus, the sweet odor and acceptable sacrifice which pleases God
+  remain separate. My God fills all the recipients' need according to his
+  riches, in the glory of Jesus Messiah. The suffix on "all" agrees with
+  need; it does not add another person or force a combined noun phrase.
+  The doxology retains God our Father, glory, honor, the age of ages and Amen.
+- Verses 21–23 retain the holy ones in Jesus Messiah, the brothers who
+  are with the speaker, the greeting recipients and Caesar's household.
+  Only each greeting predicate combines the ask-after-peace/welfare
+  collocation, recorded by [CAL shal, sense 3](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%29l+V).
+  The second-person plural greeting suffixes remain separately linked as
+  "you." The household suffix anticipates Caesar, and the grace suffix
+  anticipates our Lord; neither adds another "his." The grace is with
+  all of the recipients, and both closing Amen forms remain singly linked.
 
 Source checks for Colossians 1:
 
