@@ -8287,45 +8287,76 @@ Source checks for 1 Thessalonians 3:
 
 Source checks for 1 Thessalonians 4:
 
-- Verses 1–2 retain the speaker's my brothers, both requesting and
-  pleading, our Lord Jesus, what the recipients received from the speakers,
-  walking and pleasing God, increasing further and the commandments given
-  in our Lord Jesus. The postpositive causal particle starts the English
-  For you know clause rather than becoming a preposition before its object.
-- Verses 3–5 preserve God's will, sanctification, separation from sexual
-  immorality, each person's knowing how to possess his vessel in holiness
-  and honor, and the negative contrast with lustful passion and Gentiles
-  who do not know God. The source's vessel metaphor and its possessive
-  remain explicit. Verse 3's causal particle is rendered For.
-- Verse 6 preserves the prohibition on anyone daring to overstep bounds
-  or defraud his brother in this matter, our Lord as avenger concerning
-  all these things, and the speakers' prior warning and testimony. The
-  indefinite subject and governing verbs form one span for natural English
-  order. As belongs to position 16; also beforehand and the saying verb
-  stay with their own following words. The our-Lord suffix is retained.
-- Verses 7–9 preserve God's call to holiness with impurity negated,
-  rejection of a human contrasted with rejection of God, and his giving
-  his holy Spirit in the recipients. The writing-need construction is
-  rendered naturally with the recipients as the people being written to.
-  The following you begins the causal God-taught clause, not the preceding
-  to-you phrase. Teaching by God to love one another remains explicit.
-- Verses 10–12 retain love for all the Macedonian brothers, the speaker's
-  renewed appeal to my brothers to abound further, quiet conduct, one's
-  own affairs, work with one's own hands, the previous command, proper
-  conduct toward outsiders and independence from others' support.
-- Verses 13–15 preserve the first-person singular desire that my brothers
-  know about those who sleep, the instruction against sorrow like those
-  without hope, belief in Jesus' death and resurrection, and God's bringing
-  those sleeping in Jesus with him. The message is given by our Lord's
-  word; the living remaining at his coming do not precede the sleepers.
-  The coming suffix anticipates the explicit our-Lord owner.
-- Verses 16–18 retain the causal descent statement, our Lord, command,
-  the voice of the chief of angels, God's trumpet, heaven, the dead in
-  Messiah rising first, the living remaining, being caught up together
-  with them in clouds, meeting our Lord in the air, being always with him,
-  and reciprocal comfort with these words. Descend is rendered at its
-  actual position 9; from heaven is at positions 10–11. The source order
-  is preserved across these distinct instrumental and predicate spans.
+- All 18 verses were checked against all 240 exact forms, their decoded
+  morphology and all 535 individual SEDRA gloss records, then against the
+  running English. The 57 original shared spans become 13 minimal
+  exceptions: relative and comparative linkers, causal conjunctions,
+  temporal min qdam, focused la hwa, and existential-dative possession.
+  Ordinary phrases, auxiliaries, negation and reciprocal expressions are
+  split. Repeated single-word links separate prefixes, stems and suffixes.
+- In 4:1, the participles have first-person plural subjects, we ask and
+  plead, while my brothers retains its singular possessor. The outer d-
+  introduces that; d-ayk with the next relative d- forms as. The final
+  d- resumes the request, while the adverb still more and you may increase
+  remain separate. Verse 2 has our Lord Jesus without an added Messiah.
+- In 4:3–5, the fused demonstrative-copula is this is; the will's suffix
+  anticipates of God. And that you be is separate from the passive
+  separated. The distributive anash anash is each person, with among you
+  separate. Qna permits possess, and mana remains his vessel, without
+  identifying the metaphor as a body or wife. Both holiness and honor
+  retain their prepositions, and passions remains plural.
+- In 4:6, negative command and plural hwa become let no one of you;
+  of you expresses plural agreement with the distributive indefinite,
+  without claiming a written min. Dare, to overstep, and defraud and his
+  brother keep separate owners. Our Lord, is and the avenger are separate
+  from because. As jointly renders aykana plus d-, while also belongs to
+  af. Some time translates indeterminate zabna; ago renders only min qdam.
+- In 4:7, the call verb owns did and call you, including its second-person
+  plural object suffix; not belongs to la. Verse 8's la hwa focuses the
+  human/God contrast and does not force past tense or add a copula.
+  Does/reject belongs to the actual rejecting participle. The giving verb
+  is perfect, has given; in you retains beth. His and Spirit share only
+  their own source word, with Holy separately linked.
+- In 4:9, the recipients have no need for writing to them. The generic
+  writer anyone is explicitly marked as supplied and linked contextually
+  to the active infinitive to write, without claiming an anash or an
+  expressed first-person writer. The need predicate owns you/have/need;
+  the later to you has its own word. You yourselves are taught by God
+  preserves the separate pronoun, emphatic self-expression, predicate,
+  copular pronoun and agent. One and another have separate owners.
+- In 4:10–12, also has no added and; throughout includes the relative,
+  preposition and totality, with Macedonia separate. That you may abound
+  does not add an independent more. Strive, to be, quiet, and busy and
+  in your affairs stay separate. Perfect-form hwaytun before working
+  expresses prescribed conduct, and be, rather than a past work report
+  (Coakley §26; Muraoka §87). Purpose hwa in 4:12 supplies so that you may;
+  walking stays separate. Payne Smith's eskema entry includes manners,
+  decorum and proper behaviour, supporting adverbial properly. Have/need
+  renders the need predicate, no the negator, and/of the preceding w-al,
+  and anyone its own indefinite; no support noun is added.
+- In 4:13, the impersonal feminine sorrow predicate with lkun is rendered
+  with an English experiencer subject: you should not be sorrowful.
+  Payne Smith explicitly attests this construction with those asleep.
+  You, should/be, not and sorrowful remain separately linked. Have needs
+  the negative existential and its dative possessors; no remains linked
+  to the existential, and who/hope to the relative-prefixed hope noun.
+- In 4:14–15, rose has no added again. Those who sleep in 4:13 has a
+  participle; who have fallen asleep in 4:14–15 has perfect verbs. With
+  him preserves the pronoun without inserting an antecedent's name.
+  The word and coming suffixes anticipate their explicit our-Lord owners.
+  Are left and alive are separate predicates, without an added and.
+  Aphel drk is overtake, directly attested by CAL, rather than importing
+  precede from the reference translation.
+- In 4:16–18, because is metul plus d-, while himself separately renders
+  hu. The voice retains and, and chief and angels remain separate.
+  Payne Smith explicitly includes a horn used as a trumpet under qarna.
+  Descent, from and heaven remain separate. In Messiah retains the
+  attributive prepositional phrase. And then keeps its conjunction; the
+  catching-up verb remains passive, with together, with them and in the
+  clouds separate. To meet and our Lord do not duplicate the proleptic
+  suffix. We will/be, always, with and our Lord retain their own owners.
+  Verse 18 separately renders imperative be, comforting, one, another,
+  with/words and these.
 
 Source checks for 1 Thessalonians 5:
 
