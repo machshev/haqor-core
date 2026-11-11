@@ -9503,14 +9503,60 @@ Source checks for Titus 2:
 
 Source checks for Titus 3:
 
-- Verse 1 retains the two governing groups (rulers and authorities) and distinguishes being subject from obeying, while preserving the readiness clause.
-- Verse 3 keeps the first-person plural subject throughout the sequence, including the paired negatives, the former condition, and the reciprocal hatred at the close.
-- Verses 4–7 preserve the causal progression from God's kindness and compassion, through mercy, new birth, renewal, and the Spirit poured out through Jesus the Messiah, to justification and heirship in hope of eternal life.
-- Verse 8 separates “and in these things” from the first-person desire verb, then preserves the relation between those who have believed in God and diligence in good works, with the concluding assessment that these works are good and beneficial to people.
-- Verse 9 keeps the repeated avoidance/prepositional particles and assigns the final conjunction and vanity clause to the correct source positions; verse 10 likewise retains the source's “from” construction and once-and-twice admonition sequence.
-- Verses 12–13 retain the dative “to you” before Artemas, the contrastive “but” before “the scribe,” and the complete “something/no/lack/to them” sequence as natural “lack nothing.”
-- Verse 15 preserves the third-person plural subject “all who are with me” as the ones who greet you, followed by the imperative “greet with peace”; the four closing sentences retain both relative groups and the grace benediction.
-- Verse 14 preserves both negative elements in “may not be without fruit,” rather than collapsing the source's two negative markers into one.
+- Verse 1 separates the second-person advisory auxiliary from reminding,
+  then retains them, rulers, authorities, obeying, being subject, and the
+  readiness clause. Verse 2 separates each negative, verb and object,
+  including their kindness, toward, all and people.
+- Verse 3 retains the first-person plural subject and all six past
+  auxiliaries. The former condition, lack of understanding and compliance,
+  going astray, enslavement to various lusts, conduct in wickedness and
+  envy, hateful state and reciprocal hatred each retain their own source
+  words. Men qadim is the temporal expression formerly; one and another
+  remain separately linked.
+- Verses 4–7 retain God's kindness and compassion, our life-giver, the
+  revealing verb, the negative works clause, his own mercies, and he gave
+  us life. Birth is separate from men d-rish, anew; renewal, Spirit and
+  holiness each retain their own position. Which refers to the Spirit;
+  he poured out has God as actor, followed by on us, abundantly, through,
+  Jesus, Messiah and our life-giver. Justification, grace, becoming heirs,
+  hope, life and its everlasting qualification remain separately owned.
+- Verse 8 separates the saying, copula, faithful, and in these things,
+  first-person desire, explicit I, that also, you, advisory auxiliary,
+  confirming and them. The concern verb plus its dative jointly express
+  diligence; the believers, believing, God, practicing, good and works
+  remain separate. These things, are, good, profitable and for people
+  retain their own positions.
+- Verse 9 retains each from and its object, including singular questioning,
+  stories of generations, disputes and contests of scribes. The Ethpeal
+  imperative with men means keep away, rather than the root's Peal ask;
+  see [CAL, shal](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%29l+V),
+  Gt with men. Profit, for, no existence, in them, empty and the plural
+  copula remain separate. Verse 10 likewise retains the man, factious,
+  compound after, you, admonishing, him, one and time. And two is
+  rendered and a second for the enumerated second admonition.
+- Verse 11 retains the advisory auxiliary, knowing, relative subject,
+  like this, both copulas, perverted and sinning. Its final predicate
+  remains active: and he has condemned himself, rather than losing the
+  actor or reflexive object in a single self-condemned span.
+- Verse 12 retains when, the sending verb, to you, both messengers and or.
+  The perfect in the future temporal clause is rendered I have sent;
+  see [Muraoka, section 81](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  Concern with the addressee's dative expresses be diligent; come, to me,
+  Nicopolis, there and for remain separate. Sam b-reyana is the mental
+  setting idiom I have resolved; wintering is separately linked.
+- Verse 13 retains but, concerning, both names, scribe, the repeated
+  concerning, be diligent, escort, them and well. The source's something,
+  not, lack and to them are separately rendered in so that there may be no
+  lack of anything for them; no new negative or beneficiary is supplied.
+- Verse 14 retains let learn, also, those who are ours, being, practicing,
+  good works and pressing matters. May not be without fruit keeps the
+  purpose clause's negative distinct from the privative without.
+- Verse 15 retains the third-person plural greeting from all those who
+  are with me and the addressee's welfare, then the second-person singular
+  imperative and the welfare of all those who love us in faith. Grace,
+  with, all of you and Amen remain separately linked. The greeting idiom
+  is rendered ask after welfare so that its verb and welfare noun can
+  each retain their source word.
 
 Source checks for Philemon 1:
 
