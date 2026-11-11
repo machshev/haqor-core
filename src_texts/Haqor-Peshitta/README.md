@@ -6902,38 +6902,87 @@ Source checks for Galatians 4:
 
 Source checks for Galatians 5:
 
-- Verse 3 retains both the renewed testimony and discourse connector.
-  Verse 2 groups the repeated first-person pronouns with their speech
-  clause without duplicating the English subject. Verses 4–5 retain severance from the Messiah, the law/grace contrast,
-  and the explicit first-person plural waiting predicate.
-- Verse 6 retains both negative circumcision/uncircumcision clauses and
-  faith perfected through love. Verse 7 preserves the passive persuasion
-  construction; verse 8 renders the hearers' persuasion without adding
-  an unsupported demonstrative.
-- Verse 10 retains emphatic "I myself," "our Lord," the judgment suffix,
-  and the "whoever he may be" qualification.
-- Verse 11 renders the final clause as a rhetorical "Could it be that…?"
-  rather than a purpose clause introduced by "lest." The offense belongs
-  to the cross; the cross is not an appositional explanation of the offense.
-- Verses 12–13 retain the wish and emphasis, the contrastive transitions,
-  the freedom calling, and service to one another through love. Verses
-  14–18 preserve the neighbor/self quotation, active reciprocal consumption
-  warning, Spirit
-  and flesh contrasts, negation, and final guidance conditional.
-  Verse 14's "in this" retains the preposition on its source demonstrative.
-- Verses 19–21 preserve every source vice category and the separate
-  resembling and doing predicates. Verse 21 renders the actual music/
-  singing term as "singing," distinct from the preceding drunkenness.
-- Verse 22 renders `magrat ruha` as one construct-linked "long-suffering"
-  idiom; its second word is not an additional fruit called "spirit."
-  The verse ends with faithfulness; verse 23 begins with meekness and
-  endurance before the law statement.
-- Verse 24 preserves the flesh, its passions, and its desires with their
-  possessive relationships; English neuter "its" does not add different
-  personal actors for differing Syriac grammatical suffix genders.
-- Verses 25–26 preserve both Spirit phrases, the first-person plural
-  life/following predicates, the negative becoming clause, vain glory,
-  and both reciprocal "one another" expressions.
+- The review covers all 26 verses, 297 exact source forms with their full
+  available decoded morphology and suffixes, all 681 individual complete
+  gloss records, and all 26 Murdock renderings. All 93 original mappings,
+  including 16 singles and each of the 77 shared English spans beside
+  every member form, were checked. The final chapter has 317 mappings:
+  303 singles and 14 documented two-source exceptions. Final checks
+  include repeated links from the same source word, each exact exception
+  reason beside its member forms, and the running English read separately
+  after those reasons. Ordinary clauses, noun phrases, auxiliaries and
+  negatives remain split.
+- Verses 1–3 preserve standing in freedom, passive subjection, the
+  circumcision condition and Messiah's benefit, renewed testimony and
+  obligation to do the whole law. Verse 2 separates the independent
+  I/Paul from am/saying; its postparticipial pronoun is a copula rather
+  than a second actor requiring a shared speech clause. Verse 3 retains
+  both prefixed relations separately from obliged, the copula and do.
+- Verse 4 keeps yourselves separate from the middle withdrawal predicate
+  and from/Messiah, with the law/grace contrast and perfect falling
+  intact. J. Payne Smith's dictionary, printed page 41, gives the actual
+  Ethpaal cease/have-nothing-to-do-with relation, distinct from Ethpeal
+  concern; have withdrawn is contextual English for that cessation with
+  from, rather than a generic sever definition. The source's justification
+  participle is retained without adding an independent seek verb.
+  The primary entry is available through [SEDRA BTL](https://sedra.bethmardutho.org/pages/lexeme.html?id=370).
+- Verse 5 preserves through the Spirit/which is from/faith, the explicit
+  we/await predicate, and hope/of righteousness. Verse 6 retains the
+  separate circumcision and uncircumcision negatives and the passive
+  faith which is perfected through love. Verse 7 keeps the past running,
+  actual disturbing verb and passive persuasion; its verb-initial dalath
+  belongs to the root, not an invented relative prefix. Verse 8 retains
+  your persuasion and the one/who called you, without an unsupported
+  demonstrative. Verse 9 keeps the leaven comparison word by word.
+- Verse 10 separates I/am/confident, our Lord, the thinking predicate,
+  and the topic's resumptive he. The object suffix on will bear
+  anticipates the judgment; it does not supply possessive his.
+  Only that repeated patient combines. Whoever is the minimal relative
+  connector, with he is separately owned.
+- Verse 11 retains the two hypothetical auxiliaries, the rhetorical
+  perhaps question, the offense/of the cross as one owner, and the
+  ethical dative as itself. The cross is not an appositional explanation
+  of offense. Verse 12 keeps the wish, even, and emphatic bare infinitive
+  as indeed separately from the finite predicate. Both cutting forms
+  are Peal; [SEDRA PSQ](https://sedra.bethmardutho.org/pages/lexeme.html?id=2551)
+  includes Costaz's intransitive be cut sense, supporting English
+  be cut off without claiming Ethpeal morphology or specifying castration.
+- Verse 13 preserves singular hu focusing to freedom in a cleft,
+  the passive calling, the freedom's own be-an-occasion clause, and
+  be/subject/to one another through love. Verse 14 retains in this and
+  each part of the neighbor/self quotation. Verse 15 distinguishes
+  biting/consuming from the later intransitive perish, with the causal
+  preposition separate from the reciprocal participants.
+  [CAL swp](https://cal.huc.edu/oneentry.php?cits=all&lemma=swp+V)
+  records the Peal perish sense; [CAL mn](https://cal.huc.edu/oneentry.php?cits=all&lemma=mn+p)
+  records the causal preposition.
+- Verses 16–18 preserve exhortatory being/walking, the Spirit/flesh
+  contrasts, ever as the minimal temporal compound with not separate,
+  both opposed desires, the two distinct things desired, the copula
+  and reciprocal opposition, the negative doing clause, and conditional
+  passive guidance. Negative nominal HWA constructions retain present
+  meaning in context rather than automatically becoming past English.
+- Verses 19–21 preserve each vice category and correct the resembling
+  predicate's ownership: all things which resemble these describes the
+  preceding list, not a second quality of the people who do those things.
+  Verse 21 keeps singing distinct from drunkenness, the former saying
+  and present saying predicates, as/formerly as minimal exceptions, and
+  the kingdom/of God with one owner.
+- Verse 22 retains plural fruits and the construct idiom magrat ruha,
+  long-suffering; its second word is not an extra fruit named spirit.
+  Faithfulness ends the verse, and verse 23 begins meekness/endurance,
+  followed by the separate passive setting predicate and negation.
+- Verse 24 preserves the double-prefixed relative/Messiah relation,
+  their flesh, crucifying, and its pains/and its desires.
+  [CAL keb](https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29b+N)
+  and [SEDRA](https://sedra.bethmardutho.org/pages/lexeme.html?id=1454)
+  support pains; passions is not supplied from the comparison translation.
+- Verse 25 preserves in the Spirit and the distinct to the Spirit
+  relation with let us be obedient. Verse 26 records only the minimal
+  vainglorious construct idiom and reciprocal participants as exceptions.
+  Glory is a noun, not an independently aligned adjective glorious.
+  The qualifying making-light and envying participles stay separate;
+  making light/of need no shared verb-plus-preposition span.
 
 Source checks for Galatians 6:
 
