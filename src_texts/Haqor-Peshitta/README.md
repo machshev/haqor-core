@@ -8460,25 +8460,84 @@ Source checks for 1 Thessalonians 5:
 
 Source checks for 2 Thessalonians 1:
 
-- Verse 3 retains both giving thanks and being obliged, the speaker's
-  “my brothers,” and love as the subject of the second growth predicate.
-  Verse 4 has one boasting predicate, with faith and endurance retained.
-- Verses 6–8 retain the conditional “if,” followed by the promise to the
-  afflicted. The Aphel life verb is “make alive,” rather than substituting
-  relief from another textual tradition; compare the
-  [Peshitta morphology for 1:7](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=2Thessalonians+1%3A7).
-  The vengeance clause is temporal, with no extra coming predicate.
-  Both negative groups remain, including those who do not acknowledge
-  the good news of our Lord Jesus Messiah.
-- Verses 9–10 retain eternal destruction, our Lord's presence, his power's
-  glory, his holy ones and believers, and the testimony concerning the
-  recipients being believed on that day. The testimony predicate is not
-  assigned to the believers as its subject. The temporal clauses join
-  across verse boundaries into complete running English.
-- Verses 11–12 retain the reason for prayer, calling, good purpose, works
-  of faith and power, our Lord's name being glorified in the recipients,
-  their being glorified in him, and the grace of our God and our Lord
-  Jesus Messiah. The name and its genitive owner form one natural span.
+- All 12 verses were checked against all 156 exact forms, their full
+  decoded morphology and all 374 individual SEDRA gloss records, then
+  the running English. The 36 original shared spans become six minimal
+  linkers: comparative ayk ma d-, result ayk d-, temporal ma d- twice,
+  and the overlapping prepositional/relative elements in for which.
+  Ordinary noun phrases, auxiliaries, negation and clauses are split.
+  Repeated single links keep separated prefixes, stems and suffixes
+  attached to their actual source word.
+- In 1:1–2, ecclesia retains the established terminology. Which is in
+  God belongs to the relative-prefixed prepositional phrase, with our
+  Father and and our Lord separate. The blessing has with you, not to
+  you. English be expresses the nominal blessing without claiming an
+  additional hwa. Both from phrases have separate prepositions and nouns.
+- In 1:3, the first-person plural debtor predicate is we are obliged,
+  distinct from to give thanks, to God, always and for you. My brothers
+  keeps its singular possessor. As jointly renders ayk ma d-, while is
+  right remains separately at the following predicate. Because and
+  exceedingly belong to the same relative-prefixed adverb, separated
+  around your faith and is growing. Love is the subject of the separate
+  increasing predicate. Of all of you and each one's toward his companion
+  retain both the group possessors and distributive singular possessive;
+  this is not a written two-word reciprocal one another.
+- In 1:4, ayk plus d- before the imperfect supports so that, distinct
+  from also. The two we pronouns become we ourselves; may belongs to
+  hwa, and boast to the Eshtaphal participle. In you, among the ecclesias
+  of God, about your faith and and about your endurance retain individual
+  owners. Persecution is singular with your; afflictions is plural with
+  your. That/endure and you have separate words. The totality suffix
+  anticipates persecution without adding another her/its.
+- In 1:5, the initial lamadh is retained in for a demonstration. Of the
+  judgment and righteous are separate, as is of God rather than from
+  God. The Peal verb is be worthy, without imposing an added passive
+  counting event. His kingdom remains explicit. For jointly renders
+  al plus appay; which renders the feminine demonstrative with the d-
+  prefixed to al. Their overlap uses distinct morphemes of the same
+  source word, while the appay suffix resumes kingdom and the verb
+  you suffer stays separate.
+- In 1:6–8, if remains conditional. Then renders the following w- as
+  the conditional consequence; the English sentence has an explicit
+  apodosis. It is just, before, God, that he should repay, affliction
+  and to your oppressors stay separate. Give life is the active Aphel
+  sense directly attested in Payne Smith; the preceding dative owns
+  to you, while who are afflicted and with us remain separate. Revelation's
+  suffix anticipates of our Lord, with no duplicated his. From, heaven,
+  with, might and of his angels have individual owners. Temporal ma d-
+  forms when, with he executes and vengeance separate. Flame and fire
+  retain distinct nouns. English on renders the target relation of min
+  under executing vengeance, rather than making the punished people
+  its source. Both those pronouns, both relative prefixes and both
+  negations are separated from their predicates. Peal know has present
+  stative value; Eshtaphal have not recognized retains perfect aspect,
+  with no imported obey. Good news's suffix anticipates its explicit
+  our-Lord owner.
+- In 1:9–10, for they retains the explanatory d- and plural pronoun.
+  The Ethpeal future is passive will be repaid; the judgment is followed
+  by its appositional content, eternal destruction. From and the presence
+  remain separate, without an added away. The presence suffix anticipates
+  of our Lord. And from, the glory and of his power are separate. When
+  again uses only ma plus d-; he comes, to be glorified, in his holy ones,
+  and show, his wonders and among his believers retain their own words.
+  The testimony verb is feminine singular imperfect Ethpaial, may be
+  believed, not was believed. Our testimony is its subject. The dependent
+  d- is rendered so that; concerning you, in that and day are separate.
+- In 1:11–12, the fused metulhana owns for this reason. We pray, always
+  and for you stay separate. Aphel shwa is may consider you worthy;
+  that and the verb share only their own word, with God and of your
+  calling separate. The fill verb retains its you suffix; English with
+  belongs to the verb's content-complement construction. All, willingness,
+  for plural good deeds, and works, of faith and by power remain separate.
+  This is not merely an adjective good modifying purpose. The final
+  purpose clause separates so that/may be glorified, the name, of our
+  Lord, Jesus, Messiah and in you. The name's proleptic suffix does not
+  require a shared noun phrase. Also has no w-; the coordinating and
+  needed for the elliptical English clause is explicitly supplied.
+  You also in him leaves the repeated glorification predicate understood.
+  According to, the grace, of our God, and our Lord, Jesus and Messiah
+  stay separate; our belongs to God as well as Lord. Grace's suffix
+  anticipates the explicit owner without adding another his.
 
 Source checks for 2 Thessalonians 2:
 
