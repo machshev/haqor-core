@@ -8723,33 +8723,50 @@ Source checks for 2 Thessalonians 3:
 
 Source checks for 1 Timothy 1:
 
-- Verses 1–2 retain God as our life-giver, Messiah Jesus as our hope,
-  Timothy as the speaker's true son, our Father and our Lord.
-- Verses 3–4 retain the first-person request, remaining in Ephesus,
-  Macedonia, the prohibition on different teaching, fables and endless
-  genealogies, and the intensifier in the contention/edification contrast.
-  The coordinated instructions join across the verse boundary.
-- Verses 5–8 retain love from a pure heart, good conscience and sincere
-  faith, straying from these things, empty words, the causal explanation
-  about would-be law teachers, both negatives, and the condition of
-  conducting oneself lawfully in the law.
-- Verses 9–11 keep the righteous and the contrastive “but” on their actual
-  source positions. The lists retain striking parents, lying with males,
-  kidnapping free people, lying and violating oaths. Sound teaching joins
-  to the gospel of the glory of the blessed God; the glory suffix anticipates
-  that God owner and does not require an additional independent possessor.
-- Verses 12–14 preserve thanks, our Lord strengthening the speaker,
-  counting him faithful and appointing him to service, his former conduct,
-  mercy, ignorance and unbelief, and grace increasing in him with faith
-  and love. The grace statement has one predicate and one grace noun.
-- Verses 15–17 retain the trustworthy saying, acceptance, Jesus Messiah
-  at their own positions, giving life to sinners, the speaker's emphatic
-  first-person statement, all patience, believers and eternal life.
-  The doxology retains the explicit Amen.
-- Verses 18–20 retain former prophecies and plural “in them,” faith and
-  good conscience, rejecting this from themselves and becoming devoid of
-  faith, rather than importing a nautical image. Hymenaeus, Alexander,
-  handing over to Satan and learning not to blaspheme remain explicit.
+- All 20 verses, including every original single and shared span, were
+  checked against their exact forms and full morphology. Ordinary noun
+  phrases, negation, auxiliaries and clauses use separate source owners.
+  Only existential possession, two minimal temporal expressions, a causal
+  linker and the patience idiom retain shared spans, with ledger reasons.
+- Verses 1–4 retain our life-giver and our hope. Verse 2 has a true son,
+  without adding an unwritten possessive. Verse 3 keeps the earlier request
+  and the separate going clause. In verse 4 the dative belongs to having
+  no end; the following demonstrative and relative describe those stories.
+  Focusing hu is rendered indeed, and exceedingly and and not remain
+  distinct in the disputes/edification contrast.
+- Verses 5–8 retain the copula, all three from phrases, the proleptic
+  reference to these things, the perfect wanted, both negatives, and
+  conducting oneself in the law according to it. Proleptic suffixes do not
+  require duplicate independent possessors in English.
+- Verses 9–11 retain unrighteous, perverse and the explicit not clean,
+  striking fathers and mothers, lying with males, kidnapping free people,
+  and transgressing against oaths. The participle appointed remains
+  distinct from not. The glory suffix anticipates God, while the gospel
+  remains the antecedent of the one with which I was entrusted.
+- Verses 12–14 preserve the dative me in the apposition, former conduct,
+  mercy received, the separate past knowing clause and without faith.
+  Grace, faith and love share one increased predicate; feminine singular
+  agreement can follow the first coordinated noun (Muraoka, section 92).
+- Verses 15–17 retain both copulas, acceptance of the saying, giving life,
+  and the emphatic present I myself am. Verse 16 corrects the active actor
+  to he had mercy on me. Patience renders the lengthening-of-spirit idiom;
+  those who are to believe retains the future construction. The doxology
+  assigns the ages, demonstrative, both passive participles and their
+  negatives, the one God, honor, glory and Amen to their actual words.
+- Verses 18–20 put you may wage on the finite verb and warfare on its
+  noun: Payne Smith under plh explicitly attests their military use.
+  Plural in them, with faith and good conscience, rejecting this from
+  themselves and becoming empty of faith remain explicit. Verse 19 adds
+  no holding verb or nautical image. Hymenaeus, Alexander and handing
+  over to Satan remain distinct; may be instructed preserves the Ethpeal
+  construction before not to be blaspheming.
+- The final chapter has 273 source words and five shared-span exceptions,
+  reduced from 81. Independent source and cold reviews approved the exact
+  TSV hash recorded in the ledger. In 1:12 the causal d-prefix explains
+  the thanksgiving; in 1:14 the complete particle den means but/yet.
+  Muraoka's glossary and chrestomathy document causal dalath, and
+  [SEDRA's den entry](https://sedra.bethmardutho.org/lexeme/get/690)
+  distinguishes that particle from a prefixed relative.
 
 Source checks for 1 Timothy 2:
 
