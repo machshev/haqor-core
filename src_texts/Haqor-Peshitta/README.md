@@ -6265,8 +6265,10 @@ Source checks for 2 Corinthians 9:
   English review, peer review and repair, and an independent final chapter
   audit. All three causal `gir` and six discourse/contrast `din` were checked
   in their clauses. Verse 13 retains both the causal "For" and the distinct
-  "because of the proof" construction. Every linked group contains at most
-  four source positions, and all positions occur exactly once in order.
+  "because of the proof" construction. The shared-span review reduces 62
+  original shared spans to eight, each limited to two source positions with
+  an individual reason in the ledger. Ordinary phrases are split, with
+  repeated links where one source word owns separated English constituents.
 - Verse 1 retains the genitive "service of the saints," the first-person
   predicate "I do something unnecessary," and the explicit condition
   "if I write to you." Verse 2 has the readiness of your singular mind,
@@ -6279,13 +6281,18 @@ Source checks for 2 Corinthians 9:
   recipients prepared, as I said. Verse 4 retains the Macedonians coming
   with me and finding you unprepared, followed by both shame predicates:
   we might be ashamed, not to say that you might be ashamed.
-- Verse 5 renders the impersonal concern plus "to me" as "I was concerned"
-  and keeps these my brothers coming before me to you. Both mentions of
+- Verse 5 renders the impersonal concern plus "to me" as "I was concerned,"
+  with "I" linked to the dative and "was concerned" to its predicate. It
+  keeps these my brothers coming before me to you. Both mentions of
   blessing remain, together with advance preparation and the contrast
   with greed. The second-person plural Ethpeal hearing expression is
   rendered "which you were informed beforehand should be ready," following
   the source and Murdock's notice/advice reading. See the
   [source-form analysis](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=ubs&verse=2Corinthians+9%3A5).
+  [CAL's hearing entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24m%28+V)
+  explicitly cites this verse under receiving an announcement. Only the
+  temporal compound `men qdim`, "beforehand," remains shared here; its
+  relative prefix separately owns "which."
 - Verse 6 keeps each sowing/reaping modifier: sparingly twice and
   bountifully twice. The blessing language conveys generous giving here.
   The first reaping participle is gnomic present, and the second reaping
@@ -6294,7 +6301,10 @@ Source checks for 2 Corinthians 9:
   and the causal cleft about a cheerful giver. The named subject is God,
   where the local Murdock reference says Lord.
 - Verse 8 renders the reach/hands expression idiomatically as "within the
-  power of God." It keeps all grace, always, everything, what is sufficient
+  power of God." Only "within the power" combines the two idiom members;
+  the copula, discourse particle and God remain separately linked. Compare
+  [CAL's ability construction with `b-yd`](https://cal.huc.edu/oneentry.php?cits=all&lemma=m%2By+V).
+  It keeps all grace, always, everything, what is sufficient
   for you becoming yours, and your abounding in every good work. Verse 9
   preserves the separate scattering and giving predicates, the poor,
   and his righteousness abiding forever.
@@ -6306,8 +6316,10 @@ Source checks for 2 Corinthians 9:
   "Generosity" in verses 11 and 13 uses the contextual sense of
   `peshitutha`, as in chapter 8; see the
   [Classical Syriac noun entry](https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=11506).
-- Verse 12 keeps the work of this service supplying the saints' need
-  and also abounding in many thanksgivings to God. Verse 13 has the actual
+- Verse 12 connects its causal clause to verse 11 and keeps the work of
+  this service supplying the saints' need and also abounding in many
+  thanksgivings to God. Its present negative construction is not forced
+  into English past tense by the auxiliary's perfect-form tag. Verse 13 has the actual
   third-person plural "they glorify God," where Murdock has "we." The
   recipients' submission and sharing are perfect predicates. "Confession"
   expresses the Gospel profession here; Messiah is the single owner of
