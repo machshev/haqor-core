@@ -8046,37 +8046,65 @@ Source checks for Colossians 4:
 
 Source checks for 1 Thessalonians 1:
 
+- The complete chapter was checked against exact forms, decoded morphology,
+  every gloss alternative and every baseline mapping. Ordinary clauses,
+  names, modifiers, possession, negation and auxiliaries are split. The
+  three remaining shared spans have individual linguistic reasons.
 - Verse 1 preserves Paul, Silvanus and Timothy, the Thessalonian ecclesia,
   the relative phrase placing it in God the Father and our Lord Jesus
   Messiah, and grace with the recipients and peace. The named senders
-  are punctuated as separate people.
+  are punctuated as separate people. Both written name conjunctions remain,
+  as does "and in" before our Lord. God, Father, Jesus and Messiah retain
+  their separate positions.
 - Verses 2–4 retain thanksgiving to God always for all the recipients,
   continual remembrance in prayer, remembrance before God the Father,
   the works of their faith, the toil of their love and the endurance of
   their hope in our Lord Jesus Messiah. Works is plural in the source.
   The causal knowledge statement retains their election and the speaker's
   "my brothers," beloved by God; the beloved suffix anticipates God as
-  the one possessor.
+  the one possessor. The remembrance and toil conjunctions remain explicit.
+  The ordinary works/faith, toil/love and endurance/hope phrases are split,
+  with "which is in our Lord" retaining its relative prefix.
 - Verse 5 retains the preaching contrast: not in words alone, but to the
   recipients also in power, the Holy Spirit and true assurance. Words is
-  plural. The two second-person subject forms are grouped as "you
-  yourselves know," with both subject forms belonging to the knowing
-  predicate. The speakers' conduct among the recipients for their sake
-  remains explicit.
+  plural. Only metul with its dalath clause marker shares "because."
+  The focused la-hwa negator shares only "not"; it is not an additional
+  past predicate. Muraoka, sections 93:5 and 93:9, describes this
+  constituent-negation construction. The actual feminine hwat, agreeing
+  with preaching, owns the sole "was." Reordered English reads "our
+  preaching to you was not in words alone." The conjunction before true
+  assurance remains. The two second-person subject forms have separate
+  "you" and "yourselves" spans, with "know" separately owned. The speakers'
+  conduct among the recipients for their sake remains explicit.
 - Verses 6–8 preserve imitation of both the speakers and our Lord,
   reception of the word in great affliction and the Holy Spirit's joy,
   being a pattern for believers in Macedonia and Achaia, and the word of
   our Lord being heard from the recipients. The negative only/but contrast,
   every place, their faith in God, and the speakers' lack of need to say
   anything about them all remain. The first-person plural in the imitation
-  clause stays with its actual source positions.
+  clause stays with its actual source positions. The affliction modifier,
+  joy conjunction, Spirit and Holy spans keep their own owners. Verse 7's
+  became/pattern clause describes the recipients' resulting state;
+  its perfect form is not automatically recast as a new command.
+  Both passive heard predicates in verse 8 remain separate from their
+  subjects. So/that, we have/no/need and the saying clause are split;
+  the word's suffix anticipates our Lord without another possessor.
 - Verses 9–10 preserve what others report about the speakers' coming to
   the recipients, their turning to God from worship of idols, service of
   the living and true God, and awaiting his Son from heaven. The phrase
-  about coming groups the actual entry noun, copula, first-person dative
-  and destination into natural English. The fear-of-idols compound uses
-  its attested religious worship sense. Jesus remains the named Son whom
-  God raised from among the dead and who delivers us from coming wrath.
+  about entry splits the interrogative, entry noun, past possession,
+  first-person dative and destination: "what kind of entry we had to you."
+  J. Payne Smith under maalana records ingress/entrance; the noun has no
+  written first-person suffix. The first-person ownership comes from
+  lan in the ordinary hwa-plus-lamadh possession construction, attested
+  under hwa in Gorgias. The fear-of-idols phrase uses its attested religious
+  worship sense, with worship and of idols separately linked. Jesus remains
+  the named Son whom God raised from among the dead and who delivers us
+  from coming wrath. Only "whom" combines the deictic head and relative
+  marker; the raising verb and the remaining clauses stay separate. Beth
+  has its attested prepositional sense "among," as recorded in
+  [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=byt+p), rather than
+  an untranslated house noun. The final coming participle remains prospective.
 
 Source checks for 1 Thessalonians 2:
 
