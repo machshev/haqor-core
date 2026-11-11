@@ -7293,40 +7293,70 @@ Source checks for Ephesians 4:
 
 Source checks for Ephesians 5:
 
-- Verses 1–4 retain beloved children, the Messiah's love for us and
-  self-delivery for us, offering, sacrifice, fragrance, the prohibited
-  conduct and speech, and thanksgiving in place of these things.
-- Verses 5–7 preserve the idol-worship clause, inheritance in the kingdom
-  of Messiah and God, empty words, the causal explanation of God's wrath,
-  disobedience, and the prohibition on partnership. The anticipatory
-  possessive on kingdom is absorbed into the following explicit genitives.
-- Verses 8–10 preserve the causal particle, former darkness and present
-  light in our Lord, the instruction to walk as children of light,
-  plural fruits, goodness, righteousness, truth, and discerning what
-  pleases our Lord. The closing instruction in verse 8 is linked to its
-  own source positions.
-- Verses 11–14 retain fruitless works, reproof, secret actions, impersonal
-  loathsomeness even to mention them, exposure and revelation by light,
-  and the wake/rise/illumination quotation. Verse 12 introduces no
-  first-person speaker; verse 13 preserves the finite exposure and
-  revelation predicates and the final identification with light.
-- Verses 15–17 retain walking worthily, foolish/wise people, the wise
-  buying their opportunity, evil days, understanding, and God's will.
-- Verses 18–24 preserve wine and excess, filling with the Spirit, psalms,
-  praises and songs, singing in the hearts, thanksgiving for everyone,
-  our Lord Jesus Messiah, and God the Father. Verse 21 says the Messiah's
-  love. Verse 22 retains our Lord, and verse 23 the body's life-giver.
-- Verses 25–27 keep the Messiah's love and self-delivery for his ecclesia,
-  sanctifying and cleansing, water and word, establishing it for himself,
-  glory, stain, wrinkle, resemblance, holiness, and freedom from blemish.
-  The purpose clauses continue as a complete English sentence.
-- Verses 28–30 retain loving one's wife as one's body and oneself,
-  nourishing and caring, the Messiah's ecclesia, and membership in his
-  body, flesh, and bones. The comparison in verse 29 starts at the actual
-  comparison word, and verse 30 continues the causal sentence.
-- Verses 31–33 preserve father and mother, clinging to the wife, the
-  explicit two becoming one flesh, the great mystery, the Messiah and
-  his ecclesia, each husband's love, and the wife's fear of her husband.
+- Verses 1–3 split the auxiliary, imitators, God, beloved children,
+  self-delivery and sacrifice. “Also” belongs to its own source word,
+  and the fragrance retains its preposition. The bare infinitive in
+  verse 3 reinforces the naming prohibition; “at all” represents that
+  emphasis separately from the finite verb and “not even.”
+- Verse 4 retains plural insults, words of folly, mocking and jesting,
+  the relative negation and passive “needed,” and thanksgiving instead
+  of these things. Verse 5 keeps the exhortative auxiliary, both
+  existential-relative predicates, the worshipper/idols relation and
+  the absence of inheritance for the named recipient. Kingdom has one
+  owner despite its anticipatory suffix.
+- Verse 6 preserves the warning, the focused causal phrase and both
+  “for” and the coming predicate. “Sons who are without obedience”
+  separates the negative relative from the obedience noun. Verse 7
+  separates the prohibition, partners and their relationship.
+- Verses 8–10 retain the former/present contrast, our Lord, the complete
+  instruction to walk as children of light, plural fruits, the copula,
+  goodness, righteousness, truth and discerning what pleases our Lord.
+  *Men luqdam* is the fixed temporal “formerly,” explicitly recorded in
+  the [Gorgias dictionary entry](https://sedra.bethmardutho.org/api/lexeme/2741).
+- Verses 11–14 keep both exhortative auxiliaries, works without fruits,
+  reproof, secret action and the singular object suffix in mentioning
+  it. Verse 13 reads “everything that is revealed is light”: the vocalized
+  passive participle lacks the first-syllable vowel of the active form,
+  as distinguished in Coakley section 26, pages 122–123. Verse 14 keeps
+  the sleeper and illumination quotation. “From among the dead” splits
+  *men* and *beth*; [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=byt+p)
+  explicitly records the Syriac preposition “among,” rather than
+  requiring the homophonous noun “house.”
+- Verses 15–18 preserve walking worthily, foolish/wise people, buying
+  their opportunity, evil days, understanding, God's will, wine and
+  profligacy. “In which” belongs to the relative preposition in verse 18;
+  its existential predicate is separately “there is.” Negation and the
+  exhortative auxiliary remain distinct.
+- Verses 19–23 retain the prepositions on psalms, praises and songs,
+  singing in plural hearts, thanksgiving for everyone, the name of our
+  Lord Jesus Messiah, God the Father, mutual subjection and the Messiah's
+  love. Wives, their husbands, our Lord, the two head predicates and the
+  body's life-giver retain their own links. The wife in verse 23 receives
+  no added masculine possessor from the anticipatory feminine suffix
+  on “head.” Verse 24 preserves the elliptical comparison and corrects
+  the misplaced husband and “in everything” links.
+- The compound *al appay* means “for the sake of/on behalf of” in
+  [CAL's Syriac sense](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28l%40%29py+p).
+  Only its preposition combines in verses 2, 20 and 25; us, everyone and
+  it are separate owners. Verse 25 assigns “and/himself” to the reflexive
+  source word, rather than assigning “himself” to the preposition.
+- Verses 26–27 retain sanctifying, cleansing, washing, water and word,
+  establishment of the ecclesia for himself, the circumstantial *kad*,
+  glory, the absence of stain/wrinkle/resemblance, holiness and being
+  without blemish. The purpose continues across the verses. The final
+  negative supplies no added conjunction.
+- Verses 28–30 retain the obligation to love one's wife as one's body,
+  the focused self-reference, nourishment, care, the Messiah's ecclesia
+  and membership in his body. Verse 30 represents the second “we are”
+  and both “from” phrases, rather than hiding the copula in the bones
+  phrase. Verse 31 splits the reason, parents, clinging, the explicit
+  two, becoming, one and flesh.
+- Verse 32 distinguishes the subject “I” from the post-participial
+  copula “am.” Verse 33 retains “also,” the topical you, all three
+  distributive words as “every single one,” and the manner adverb.
+  “In fear of” preserves the fear predicate and its complement; CAL's
+  [verb entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=dxl+V)
+  explicitly gives *men* as “of” with this verb.
 
 Source checks for Ephesians 6:
 
