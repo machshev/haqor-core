@@ -8108,52 +8108,94 @@ Source checks for 1 Thessalonians 1:
 
 Source checks for 1 Thessalonians 2:
 
-- Verses 1–4 retain the recipients' knowledge of the speakers' entrance,
-  suffering and mistreatment at Philippi, great conflict, boldness and
-  our God, and speaking Messiah's gospel. The suffix on gospel anticipates
-  the explicit Messiah owner; it does not make Messiah another person's
-  possession. Error, impurity and deceit remain negated. God's approval,
-  entrusting of the gospel, pleasing God and his examination of hearts
-  all remain.
-- Verses 5–7 preserve the denial of flattering speech, a pretext for
-  greed and seeking human glory, God as witness, the recipients/others
-  alternatives, the apostolic claim and possible burden, and gentleness
-  illustrated by a nursing mother cherishing her children.
-- Verses 8–10 retain love and longing as distinct predicates, giving the
-  gospel and the speakers' own lives, the recipients' dearness to them,
-  remembered labor and toil, manual work night and day, avoidance of a
-  burden, gospel proclamation, purity, righteousness and blamelessness.
-  The longing verb stays with its own source span, followed by the
-  separate giving infinitive. The actual hnan forms are first-person
-  plural, despite the base pronoun's singular dictionary gloss.
-- Verses 11–12 retain entreating each recipient as a father his children,
-  comforting their hearts and bearing testimony, joined to the purpose
-  of walking worthily of God who calls them into his kingdom and glory.
-  The fronted objects and father comparison are grouped with their
-  entreating predicate to allow natural English order. The comfort idiom
-  is documented in [CAL, mly, Peal sense 7](https://cal.huc.edu/oneentry.php?cits=all&lemma=mly+V).
-- Verses 13–14 preserve continual thanksgiving, receiving God's word
-  from the speakers, the human/divine contrast, its actual divine status,
-  and its work in believers. The imitation comparison retains God's
-  Judean ecclesias in Messiah Jesus, the recipients' suffering from their
-  own countrymen, and the parallel suffering from Jews.
-- Verses 15–16 retain killing our Lord Jesus Messiah and the prophets
-  from among them, persecution of the speakers, not pleasing God,
-  opposition to all people, hindrance of speech to Gentiles so that they
-  may live, continuing sins and arriving wrath. The killing verb and
-  our-Lord possessive stay in their actual source group; the prophets'
-  from-among-them relative stays with the prophets. The ongoing negative
-  pleasing and opposed predicates remain present in English.
-- Verses 17–20 preserve bereavement for a short time, presence contrasted
-  with heart, eagerness to see their faces with affection, the desired
-  visit, Paul, once and twice, Satan's hindering me, hope, joy, the crown
-  of boasting, our Lord Jesus and his coming, and the recipients as the
-  speakers' glory and joy. [CAL's hpt Ethpaal entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=xp%2B+V)
-  supports the eagerness sense of the actual derived stem. Verse 19 is one
-  coherent rhetorical question with the if-not-you construction.
-- The vocative suffixes are retained: my brothers in verses 1 and 14,
-  our brothers in verses 9 and 17. The singular me in verse 18 remains
-  distinct from the speakers' plural we.
+- All 20 verses retain their source subjects, possessives and negation.
+  The vocatives are my brothers in 1 and 14 and our brothers in 9 and 17.
+  In 1, focused la hwa owns not, while the separately written hwa owns
+  was. In 3 the nominal negation is present in the defense of the speakers'
+  encouragement. In 13, la hwa negates as a word of humans; accepted owns
+  the past predicate. Ordinary auxiliaries, noun phrases and clauses have
+  individual owners; shared links cover only the documented connectives,
+  focused negators and lexical human-being expressions.
+- In 2, formerly, suffering and mistreatment at Philippi, and then,
+  great conflict, speaking with the recipients, the boldness of our God
+  and Messiah's gospel remain. The suffix on gospel anticipates the
+  explicit Messiah genitive. In 4, by contrast, his gospel has no following
+  genitive owner: his refers to God. The approved participle has a
+  first-person plural subject, and the feminine singular Ethpaial verb
+  has gospel as its subject: so that his gospel may be believed. J. Payne
+  Smith's dictionary, printed pages 19–20, distinguishes this stem's
+  be-believed sense from the sense of a person receiving an entrusted
+  office. The English preserves those different subjects. Speaking,
+  pleasing humans versus God, and examination of our hearts remain.
+- Verses 5–6 retain not ever using flattering speech or a pretext for
+  greed, God as witness, the denial of seeking glory from humans, not
+  from you nor from others, and being able to be burdensome as apostles
+  of Messiah. Ever and not have separate owners. The finite we were
+  and the infinitive to be in 6 also have separate owners.
+- Verses 7–8 join the nurse comparison to so also we. The source says
+  nurse, without a separate mother noun. Both Pael cherishing and longing
+  remain distinct predicates. The implicit object of cherish is marked
+  as supplied you and attached locally to that verb; the written you
+  belongs to giving. The gift includes God's gospel and our own life,
+  retaining the singular collective life and plural possessor. Dear to us
+  preserves the speakers as the recipients' affectionate possessors.
+- Verses 9–10 retain remembered labor and toil at the work of our hands,
+  by night and by day, avoiding a burden on anyone of you, proclamation
+  of God's gospel, purity, right conduct and being without blame toward
+  all believers. The without-blame construction is affirmative, not a
+  negation of blamelessness. God too makes the coordinated witness
+  explicit in English; it supplies no additional source actor.
+- In 11, the asking verb, each one, both of phrases and the father
+  comparison remain separate. Supplied asks restores the verb in the
+  comparison and stays linked to its same-verse source verb. The d-
+  introducing the remembered content is idiomatic after as you know;
+  English needs no redundant that there. The comfort-heart idiom is
+  rendered comforting your heart, retaining the heart noun and its
+  plural recipient suffix; we were belongs to this comforting predicate.
+  J. Payne Smith's mala entry gives comfort/console with heart; see also
+  [CAL, mly, Peal sense 7](https://cal.huc.edu/oneentry.php?cits=all&lemma=mly+V).
+  Testimony remains a distinct predicate. Verse 12 retains walking as
+  is fitting for God, who has called you into his kingdom and his glory;
+  the calling verb is perfect and both destination possessives remain.
+- Verse 13 retains continual thanksgiving, accepting the word received
+  from the speakers, its human/divine contrast and actual divine status.
+  The acceptance suffix resumes the fronted word; English reorders that
+  object without adding another it. And it introduces the word's working,
+  distinct from the preceding it truly is. Payne Smith's saar entry
+  explicitly allows Ethpeal to work/effect as well as passive meanings.
+  Really renders the adverbial b-abada expression: Payne Smith's abada
+  entry explicitly gives indeed/really for adverbial use with b-.
+  In you, in those who believe is appositional: the second phrase has no
+  and prefix and introduces no additional group of believers.
+- Verse 14 retains God's Judean ecclesias in Jesus Messiah, suffering
+  from members of your tribe, and the parallel suffering from Jews.
+  Members of your tribe renders the relationship expressed by sons of
+  your tribe without importing a geographical country noun. Supplied
+  suffered restores the second comparison's ellipsis and links to the
+  same-verse suffering verb. In 15, killing governs our Lord Jesus Messiah
+  and the prophets who were from among them. Persecution, not pleasing
+  God and being opposed to all humans remain; the latter is a state,
+  with no named external maker added. Lexical bnay anasha is humans,
+  including the two-word occurrences in 4 and 15.
+- Verse 16 retains hindering us from speaking with Gentiles so that
+  they may live, the purpose infinitive to fill up their sins always,
+  and wrath having come upon them until the end. It does not substitute
+  a passive saved for the actual live verb. Until and the end have
+  separate owners.
+- Verses 17–18 retain bereavement for a brief time, in our presence
+  contrasted with in our heart, especially eager to see your faces with
+  much love, the desired visit, I Paul, one time and twice, and Satan's
+  hindering me. Brief renders the genitive of moment/hour modifying time;
+  [CAL's shaa entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%28h+N)
+  gives moment of time and the Syriac d-shaata expression for a moment.
+  [CAL's hpt Ethpaal entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=xp%2B+V)
+  supports eagerness in the actual derived stem. Both first-person plural
+  presence/heart suffixes and the contrast of we with singular me remain.
+- Verse 19 is one rhetorical question, retaining all the and conjunctions,
+  our hope, our joy, the crown of our boasting, our Lord Jesus and his
+  coming. If not jointly renders the exceptive-conditional ela en;
+  en alone has no written negator. Verse 20 retains both our glory and
+  our joy. The word's feminine pronouns in 13 remain it.
 
 Source checks for 1 Thessalonians 3:
 
