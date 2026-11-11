@@ -6414,9 +6414,14 @@ Source checks for 2 Corinthians 11:
   English review, peer repair, and an independent final chapter audit.
   The nine causal `gir` and three discourse/contrast `din` were checked in
   their clauses. The two `gir` in verse 2 both remain causal; neither is
-  swallowed into the prepositional phrase about jealousy over you.
+  swallowed into the prepositional phrase about jealousy over you. The
+  shared-span review reduces 141 original groups to 13, each with its own
+  linguistic reason in the ledger. Ordinary clauses, auxiliaries, negatives
+  and noun phrases are split; repeated links retain the ownership of
+  source constituents separated in English.
 - Verse 1 retains the wish to be borne with a little, the purpose of
-  speaking foolishly, and the separate present "you do bear with me."
+  speaking foolishly, and the separate present "it is you who bear with
+  me." The pronoun following "you" marks focus, without a new actor.
   Verse 2 preserves one husband, a pure virgin, and the first-person purpose
   of presenting the recipients to the Messiah. Verse 3 has plural minds
   becoming corrupted and one noun for simplicity toward the Messiah; the
@@ -6429,8 +6434,11 @@ Source checks for 2 Corinthians 11:
   speech and my knowledge, followed by plural "we have been made manifest."
 - Verse 7 treats the opening as a rhetorical question with one emphatic
   wrongdoing predicate, followed by humbling myself, your being exalted,
-  and the finite past proclamation of God's gospel freely. Verse 8 retains
-  other ecclesias, plundering, plural payments, and serving you.
+  and the finite past proclamation of God's gospel freely. The rhetorical
+  particle and infinitive-absolute emphasis are individually linked; see
+  [CAL's Syriac rhetorical use of `dalma`](https://cal.huc.edu/getlex.php?coord=533000645c3102&word=4).
+  Verse 8 retains other ecclesias, plundering, plural payments, and "for
+  your service," with the purpose, possessive and service separately linked.
 - Verse 9 has the brothers supplying my need. English uses the equivalent
   passive "my need was supplied by the brothers" so that the following
   relative clause clearly describes the brothers; the Syriac supplying verb
@@ -6440,17 +6448,25 @@ Source checks for 2 Corinthians 11:
   remain distinct, with the purpose of not burdening the recipients.
 - Verses 10-11 preserve the Messiah's truth in me, the boasting not being
   annulled in me in Achaia's regions, and both questions about why and love,
-  followed by God knowing. Verse 12 keeps both occasion nouns and the
+  followed by God knowing. Verse 10's content connector is represented by
+  the colon; verse 11 retains focus on God in "it is God that knows."
+  Verse 12 keeps both occasion nouns and the
   single ownership by those seeking an occasion; they may be found like us.
+  The pronoun following the cutting predicate carries its emphasis, rather
+  than adding a second object to the feminine occasion noun.
   Verses 13-15 retain these false apostles, deceitful workers, their
   disguising themselves, Satan's disguising himself as an angel of light,
   and his servants' actual disguising predicate. Their future end is
   according to their deeds; no extra actor is introduced by a copula.
+  The fixed `en hu d-` construction supplies "if," and verse 15's nominal
+  negative remains present despite the auxiliary's perfect-form tag.
 - Verse 16 renders the rebuttal about being thought foolish as the negative
   appeal "let no one," following Murdock's contextual reading. It retains
   the imperative "receive me," the hypothetical comparison with a fool,
   and the purpose of my boasting a little. The understood copula in that
-  comparison is supplied in English. Verse 17 retains both speaking
+  comparison is supplied in English. Compare
+  [CAL's preventive `lma` with the imperfect](https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c).
+  Verse 17 retains both speaking
   predicates and the negative cleft concerning speaking in our Lord.
 - Verses 18-20 distinguish the many boasting, my future boasting, the
   recipients listening to those lacking understanding, and their own
@@ -6464,7 +6480,9 @@ Source checks for 2 Corinthians 11:
   labor, blows, and chains. The plural deaths expression is rendered
   figuratively as dangers of death, with "many times" retained.
 - Verse 24 renders the repeated forty distributively: five occasions,
-  forty blows less one each time. Verse 25 retains three rod-beatings,
+  forty blows less one each time. Only "each time" shares the two repeated
+  numerals; "forty," "less," "one" and the beating predicate are separate.
+  The second forty is not treated as an Aramaic noun for blows. Verse 25 retains three rod-beatings,
   one stoning, three shipwrecks, day before night, and the separate
   shipless stay in the sea. Both "I was" predicates remain. Verse 26 keeps
   all eight peril categories and both first-person past predicates for
@@ -6472,18 +6490,21 @@ Source checks for 2 Corinthians 11:
   each condition, including hunger and thirst as separate nouns.
 - Verse 28 distinguishes the singular daily gathering/thronging upon me
   from care on behalf of all the ecclesias. The faces expression is an
-  idiom for that concern. Verse 29 has two questions and both first-person
+  idiom for that concern. "Apart" and "from" are separately linked, and
+  only the two members of "on behalf of" remain shared in this verse.
+  Verse 29 has two questions and both first-person
   negative responses. Verse 30's vocalised `wale` means fitting/proper;
   its surface resemblance to "and not" does not license a negative.
 - Verse 31 has one knowing God, the Father of our Lord Jesus the Messiah,
-  blessed forever and ever, and the explicit "I do not lie." Verse 32 keeps
+  blessed forever and ever, resumed by "he," and the explicit "I do not
+  lie." Verse 32 keeps
   the army chief of Aretas the king, his guarding the Damascenes' city, and
   the purpose of seizing me. Verse 33 keeps the window, basket, wall,
   their lowering me, my escape, and the singular possessor's plural hands.
-- Only verse 24 uses a five-position group, to keep the distributive
-  numeral, subtraction, and receiving predicate readable together. All
-  other linked groups have at most four positions. Every source position
-  appears exactly once in ascending order, with no unlinked lexical text.
+- The largest remaining groups have three members: the conditional
+  connector in verse 14 and comparative connector in verse 21. The other
+  shared groups contain two positions. Reordering English constituents
+  does not require sharing an ordinary noun phrase or entire clause.
 
 Source checks for 2 Corinthians 12:
 
