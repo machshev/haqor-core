@@ -9062,12 +9062,63 @@ Source checks for 1 Timothy 6:
 
 Source checks for 2 Timothy 1:
 
-- 1:5 retains the source’s remembrance construction and second-person possessive: “the remembrance I have of your genuine faith.” The maternal sequence identifies Lois as Timothy’s grandmother; the running English makes that relation natural while preserving source order.
-- 1:12 retains `באידוהי` as “in his hands,” between the ability predicate and “my deposit,” and retains the first-person object in “for me.”
-- 1:13 renders the sound words as the subject and “a pattern” as the predicate: “Let the sound words which you heard from me be a pattern for you.”
-- 1:15 renders `דאיתיהונ מנהונ` as the source-owned existential/partitive clause: “and among them are Phygelus and Hermogenes.”
-- 1:17 retains the emphatic `אפ` in “But even when he came to Rome”; 1:18 renders `לות מרנ` as “with our Lord,” preserving the source relation.
-- 1:10 renders `דמחיננ` as “life-giver” and `מתחבלנותא` as “incorruptibility”; ecclesia terminology is not present in this chapter.
+- The shared-span review checks all 18 verses and 236 source words,
+  reducing 65 shared spans to five documented exceptions. Final source
+  ownership and continuous English are independently reviewed against
+  the frozen chapter hash. Ordinary clauses, negatives, modifiers and
+  separate pronouns retain individual owners; repeated owners express
+  discontinuous English without combining ordinary source phrases.
+- Verses 1–2 retain Jesus and Messiah separately, the will of God,
+  the conjunction with the promise, life, the beloved son, both from
+  relations, and all three greeting nouns and their conjunctions.
+- Verses 3–5 retain each explicit I, serving from my forefathers, the
+  pure conscience, continual remembrance, prayers by night and day,
+  longing to see Timothy, his tears and the purpose of being filled
+  with joy. The remembrance which I have is a minimal possessive
+  construction; the faith has Timothy's second-person suffix. The
+  literal mother of your mother keeps both kinship words distinct and
+  identifies Lois as the grandmother, followed by your mother Eunice.
+  The past dwelling, first, persuasion, but and also all remain explicit.
+- Verse 6 keeps Because of/this, reminding and its addressee, awakening
+  the gift, God, the relative head and existential, and in you. The
+  laying-on construction has my hand in the singular in this source,
+  rather than importing plural hands. Verse 7 retains God as giver,
+  the negative, us, spirit, fear, power, love and instruction separately.
+- Verses 8–9 retain the testimony of our Lord, nor even, me as his
+  prisoner, bearing plural evils with the Gospel, and God's power.
+  God gives life and calls us with a holy calling. Works, his will and
+  his grace remain distinct; the feminine relative and passive giving
+  describe grace, not God. The temporal phrase keeps from, before,
+  singular time and plural ages at their actual positions.
+- Verses 10–11 retain grace as the feminine subject of was revealed,
+  now, the manifestation, our life-giver, Jesus and Messiah, abolishing
+  death, showing life and the Gospel. Incorruptibility jointly renders
+  the negative plus abstract corruptibility noun; it is not a negative
+  claim about what was shown. Only the Gospel's relative/resumptive in
+  which is shared in the appointment clause. I, the past appointment,
+  preacher, apostle, teacher and Gentiles remain individually owned.
+- Verse 12 keeps Because of/this, enduring these things, the independent
+  I with not being ashamed, for, knowing in whom I have believed, and
+  persuasion. The feminine matya with b-idawhi is the capability idiom:
+  [the Syriac Dictionary's mta entry](https://www.syriacdictionary.net/mobile/index.cgi?hidden=Search&word=%DC%A1%DC%9B%DC%B3%DC%90)
+  explicitly glosses the construction he can. That he is able therefore
+  jointly owns those two words. Adding a separate in his hands to that
+  capability phrase would duplicate the idiom. My deposit, keeping,
+  for me and for that day remain separate.
+- Verse 13's feminine plural imperfect agrees with sound words as the
+  subject: let the words be a pattern for you. The past hearing, from
+  me, faith, love and in Jesus Messiah retain their own owners. Verse 14
+  keeps the good deposit and guarding, links Holy separately from
+  Spirit, uses a neutral relative and preserves has dwelt as perfect.
+- Verse 15 retains knowing this, all those in Asia, their turning away
+  from me, and the plural existential with its partitive relation.
+  Among whom is the minimal relative/resumptive exception; are and both
+  names remain separate. Verses 16–18 retain our Lord in each prayer,
+  mercy, the house of Onesiphorus, because, many times, refreshing me,
+  the chains of my imprisonment, and the past unashamed predicate.
+  But even, when, Rome, diligent seeking and finding remain distinct.
+  The final prayer keeps its recipient, finding mercy with our Lord,
+  that day, service to me at Ephesus, and you know very well.
 
 Source checks for 2 Timothy 2:
 
