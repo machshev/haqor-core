@@ -6508,68 +6508,82 @@ Source checks for 2 Corinthians 11:
 
 Source checks for 2 Corinthians 12:
 
-- All 21 verses and 369 source words received source-to-English and running
-  English review, peer repair, and an independent final chapter audit.
-  The nine causal `gir`, five discourse/contrast `din`, and the inferential
-  `hakil` were checked in their clauses, alongside the causal and purpose
-  uses of `metul`. Every source position occurs exactly once in order.
-- Verse 1 preserves positive `wale`, "is fitting," and the separate
-  "but not profitable." The first-person dative is absorbed in "I proceed"
-  without adding a beneficiary; `gir` is causal. Visions and revelations
-  remain plural, with one owner, our Lord.
-- Verses 2-4 retain present "I know," the fourteen-year date of the
-  catching-up event, both repeated body/without-body alternatives, both
-  God-knows formulas, and the same man across the parenthesis. Punctuation
-  places the temporal phrase with the catching-up assertion. The plural-form
-  `shamaya` uses conventional English "third heaven." Verse 4's "who"
-  continues the man in verse 3. Both inexpressible words and the prohibition
-  on a person's uttering them remain; the English relative expresses the
-  one object resumed by the final Syriac pronoun.
-- Verse 5 has plural infirmities without an explicit "my" suffix, unlike
-  verse 9. Verse 6 retains both causal particles, the conditional wish to
-  boast, not being a fool, the truth cleft, and "I refrain." The last
-  clauses concern another person's seeing in me and hearing from me;
-  the first-person enclitic on refraining adds no object "him."
-- Verse 7 preserves both prevention clauses, read with the speaker as
-  their understood subject in the context of "to me," "my flesh," and
-  oppression of me. The giving remains passive; thorn, flesh, messenger,
-  Satan, and oppression remain explicit. Verse 8 has three requests to
-  my Lord, and the requested departure is of it from me, not of the Lord.
-- Verse 9 marks the quotation boundary: my grace and my power belong to
-  the replying Lord, followed by Paul's glad boasting in my infirmities.
-  "For you" and "therefore" remain explicit. The Messiah is the single
-  owner of the power that may rest upon me. Verse 10 retains all five
-  hardship categories, including imprisonment, the Messiah-sake face idiom,
-  and causal "For when I am weak, then I am strong."
-- Verse 11 has you compelling me, your past obligation to bear witness
-  for me, inferiority in nothing to the greatly excelling apostles, and
-  "even if I was nothing." Verse 12 retains plural apostles and all three
-  with-phrases for prodigies, wonders, and mighty works, with all patience.
-  Verse 13 preserves causal "For in what," the exception construction,
-  other ecclesias, my not burdening you, and the direct forgiveness request.
-- Verse 14 states third-time readiness to come, preserves the contrast
-  between what is yours and you, and retains the children/parents obligation
-  with plural treasures. Verse 15 keeps plural expenses, giving myself
-  for your plural souls, both "even if" and "when," and the asymmetrical
-  more/less love comparison. Verse 16 retains "perhaps" and the rhetorical
-  craft/deceit accusation, followed by the agency questions in verses 17-18.
-- Verse 17 renders the hand expression as "through" the person sent.
-  Verse 18 has plural brothers, Titus's question including "in anything,"
-  one spirit, and the same plural footsteps. Verse 19 renders `npq ruha`
-  as the defense/apology idiom, following the supplied defend gloss and
-  Murdock's contextual reading. The noun is not an added "in spirit"
+- All 21 verses, 369 source forms, and 821 individual SEDRA gloss records
+  were read with decoded morphology and Murdock. All 198 baseline mappings,
+  including 98 single-source spans and each of the 100 shared spans, were
+  checked beside their actual source forms. The revised chapter has 407
+  spans: 393 single-source spans and 14 documented two-source exceptions.
+  Repeated links separately render prefixes, predicates, and suffixes;
+  coverage does not require one occurrence or ascending source order.
+- Verse 1 retains positive "is fitting" and separate "but not profitable."
+  The coreferential motion dative is rendered "myself," without a new
+  beneficiary: compare [Farina, section 5.2](https://ricerca.sns.it/retrieve/e3aacdfd-ef1d-4c98-e053-3705fe0acb7e/Farina.pdf).
+  The plural visions and revelations belong to our Lord once, without a
+  second owner introduced by the proleptic suffix on revelations.
+- Verses 2-4 retain present knowing, the fourteen-year date of the
+  catching-up event, both body alternatives, both God-knows focus clauses,
+  and the same man across the parenthesis. Only the two pronouns in "this
+  one" and the temporal connector "ago" combine in verse 2. Verse 3's
+  "him, this man" makes object prolepsis explicit without another man.
+  Compare Muraoka, sections 111-112, on dummy antecedents, proleptic
+  objects and independent pronouns in his
+  [Classical Syriac grammar](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  Verse 4's final feminine plural pronoun resumes the words as the object
+  of uttering; it shares only "which" with the relative prefix, rather
+  than adding a copula or merging the prohibition clause.
+- Verse 5 has infirmities without an added possessive, unlike verse 9.
+  Only the two connector words in "except" combine. Verse 6 separately
+  links both causal particles, the conditional wish, the negative predicate,
+  the truth focus clause, and "I refrain." Its seeing and hearing clauses
+  retain their distinct in-me and from-me expressions.
+- Both prevention clauses in verse 7 concern the speaker. Their `ettrim`
+  forms admit the first-person imperfect reading in this purpose context,
+  despite SEDRA's homographic third-person perfect tag. Compare the
+  Ettaphal paradigm and hollow verbs in
+  [Coakley, sections 17 and 24](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
+  The passive giving, thorn, flesh, Satan's messenger and oppression remain
+  separately linked. "For my flesh" follows the actual l-prefix; CAL's
+  [thorn entry cites this verse](https://cal.huc.edu/cal_entry_web.php?lemma=%24py%233+N).
+  The messenger's proleptic suffix identifies Satan once. Verse 8 retains
+  three requests of my Lord and departure of it from me; CAL also records
+  this verse under the Afel
+  [departure sense of prq](https://cal.huc.edu/oneentry.php?cits=all&lemma=prq+V).
+- Verse 9 distinguishes the Lord's quoted my-grace/my-power from Paul's
+  subsequent my-infirmities, and places focus on "in weakness." The
+  Messiah owns the resting power once. Verse 10 retains all five hardship
+  categories, combines only the two members of "for the sake of," and
+  separately links the when connector, weakness and "it is then" focus.
+- Verse 11 separates becoming, lacking, understanding, compelling,
+  obligation, witness and inferiority; only the causal connector combines.
+  The greatly excelling apostles and "and even if I was not anything"
+  remain explicit. Verse 12 retains plural apostles, all patience, and
+  all three with-phrases. Verse 13 separates other ecclesias, the negative
+  burden predicate and forgiveness request; only "except" combines.
+- Verse 14 retains third-time readiness, the causal connector, what is
+  yours versus you, and children/parents with plural treasures. Verse 15
+  renders the initial and-coordination as "both ... and also," separates
+  expenses/pay and myself/give, and combines only the sake connector.
+  "Your souls" is one suffixed source word, not part of the face idiom.
+  Both even-if and when, the more/less comparison, and the separate
+  subject and postparticipial copular pronouns remain represented.
+- Verses 16-18 preserve the rhetorical craft/deceit accusation, through
+  the person sent, Titus's question including "in anything," plural
+  brothers, one spirit and the same plural footsteps. The question
+  particle does not mechanically become "why": compare the general
+  interrogative use in [CAL lma](https://cal.huc.edu/oneentry.php?cits=all&lemma=lmh+c).
+  All question subjects, predicates and complements are separately linked.
+- Verse 19 combines only `npq ruha`, the defense expression; compare the
+  [CAL defense entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mpq%40brwx%29+N).
+  The spirit/breath noun belongs to this idiom, without an added in-spirit
   adjunct. Before God, in the Messiah, we speak; all these things, my
-  beloved, are for your building up.
-- Verses 20-21 retain both finding directions and their distinct persons,
-  the actual negative predicates as well as the lest clauses, all eight
-  contention/vice categories, my God humbling me, my mourning over many,
-  and their prior sin and non-repentance. The final impurity, fornication,
-  and lasciviousness have three distinct from-phrases and a shared committed
-  predicate. Verse 20 has no inserted "when" before its coming clause;
-  verse 21 has its own explicit when-clause.
-- Only verse 18 uses a five-position group, for Titus's question with its
-  delayed subject and indefinite quantity. All other linked groups contain
-  at most four positions; no lexical text is left unlinked.
+  beloved, are for your building up, with each constituent separately linked.
+- Verses 20-21 retain both finding directions, their distinct persons,
+  the negative predicates, all eight vice categories, my God humbling me,
+  mourning, prior sin and non-repentance. Verse 20 has no added when or
+  third lest before the reciprocal finding predicate. Its second comparison
+  is rendered "according to what you do not desire," with only the
+  headless-relative connector shared. Verse 21 retains its explicit when,
+  three separate from-phrases and their common committed predicate.
 
 Source checks for 2 Corinthians 13:
 
