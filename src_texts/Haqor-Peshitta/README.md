@@ -7416,46 +7416,62 @@ Source checks for Ephesians 6:
 
 Source checks for Philippians 1:
 
-- Verses 1–2 retain Paul and Timothy, Jesus Messiah's servants, all the
-  holy ones at Philippi, elders and deacons, grace and peace, God our
-  Father, and our Lord Jesus Messiah.
-- Verses 3–6 preserve thanksgiving, remembrance, all the speaker's
-  prayers, joy, gospel fellowship from the first day until now, confidence,
-  the good work begun in the recipients, and its completion through the
-  day of our Lord Jesus Messiah. The English prayer and cause clauses
-  form complete sentences.
-- Verse 7 renders the compound with its first-person suffix as
-  "my defense." Verse 16 uses the same compound as "defense," without
-  adding "spiritual." The [CAL compound entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mpq%40brwx%29+N)
-  records its apology/defense sense. Verse 7 also preserves heart, bonds,
-  the gospel's truth, and participation in grace.
-- Verses 8–11 retain God's witness, the Messiah's mercies, increasing
-  love, knowledge and spiritual understanding, discernment, purity,
-  freedom from offense, righteous fruit, and praise and glory to God.
-- Verses 12–18 retain the gospel's advance, bonds, the whole praetorium,
-  everyone else, the brothers' confidence, and "all the more" boldness.
-  Verse 15 makes Messiah the object of proclamation, as in verse 17;
-  goodwill and love describe the contrasting motivation. The insincere
-  proclamation, added affliction, pretense/truth contrast, and rejoicing
-  all remain.
-- Verses 19–23 keep the causal "For," the speaker's life, recipients'
-  prayers, the Spirit's gift, hope and expectation, freedom from shame,
-  open proclamation, magnification in the body, and life/death contrast.
-  This life of the flesh, fruitful labor, and uncertainty about choosing
-  for oneself remain;
-  verse 23 has the explicit cardinal "two," departure, being with the
-  Messiah, and benefit to the speaker.
-- Verses 24–26 retain remaining in "my body," the matter/business on
-  the recipients' behalf urging the speaker, abiding, their joy and
-  faith's progress, another visit, and rejoicing in Jesus Messiah alone.
-  Verse 24's postposed subject and predicate are grouped for natural
-  English order; no comparative necessity is supplied.
-- Verses 27–30 retain worthy conduct, coming/seeing and absence/hearing,
-  the repeated one-spirit/one-soul/united-striving expressions, gospel
-  faith, being in no way shaken, and those who oppose "us." The sign is linked to
-  its own source word, followed by their destruction and the recipients'
-  life. God's grant includes both belief and suffering for the Messiah,
-  continuing into the conflict seen and now heard in the speaker.
+- Verses 1–2 separate both names, servants, Jesus Messiah, all holy
+  ones, both relative clauses, Philippi, elders and deacons, grace,
+  peace, God our Father and our Lord. Each preposition stays linked
+  to its source word.
+- Verses 3–5 retain thanksgiving, constant remembrance of the recipients,
+  all the speaker's prayers, rejoicing and supplication, gospel
+  fellowship, and the first day through now. Only the compound “for”
+  combines; the recipient suffix stays separate.
+- Verse 6 keeps plural “good works,” the one who began them, the
+  resumptive “he,” completion and our Lord's day. Only “the one”
+  combines the multiplied relative heads; the predicates stay separate. Verse 7 retains
+  “thus,” “for,” placement in the heart, both bonds and defense,
+  the gospel's truth and partnership in grace. The
+  [CAL compound entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mpq%40brwx%29+N)
+  and Gorgias attest the apology/defense expression, also used in
+  verse 16. Only the lexical noun combines; conjunctions, prepositions,
+  “my,” and surrounding clauses remain separate.
+- Verses 8–11 retain “for,” God's witness, love and the Messiah's
+  mercies, both increase and abound, knowledge and spiritual
+  understanding, discernment, purity, freedom from offense, and
+  fruits of righteousness. Verse 10 has “in the day,” rather than
+  “until”; praise and glory retain both directional prepositions.
+- Verses 12–14 keep the speaker's own affair moving forward in the
+  gospel. J. Payne Smith attests the come/before construction for
+  progress; “moving” and “forward” retain separate owners.
+  Both bonds and the Messiah, the whole praetorium, everyone else,
+  the brothers' confidence, greater boldness and speaking without
+  fear remain explicit.
+- Verses 15–18 split “some people” and “other people,” goodwill,
+  love, envy and contention. Messiah remains the object of
+  proclamation. Present negation gives “do not proclaim ... sincerely,”
+  followed by hoped-for affliction. Past and present rejoicing,
+  every way, pretense/truth and proclamation remain distinct.
+- Verses 19–20 retain “for,” life for the speaker, the recipients'
+  singular prayer and the Spirit's gift, hope and expectation.
+  “I will not be ashamed in anything” makes the source negation
+  explicit with a separately linked “not.” The previous “in nothing”
+  also expressed negation.
+  The open face, all times, also now, magnification in the body,
+  and life/death alternatives remain.
+- Verses 21–26 keep “my own life,” gain, fleshly life and plural
+  fruits of labor, choosing for oneself, pressure from the two,
+  eagerness to depart and be with the Messiah, and the benefit to
+  the speaker. Verse 24 splits the matter on the recipients' behalf
+  from urging him to remain in his own body. Repeated first-person
+  pronouns and participles in verse 25 remain separately linked.
+  The relative describing rejoicing in Jesus Messiah stays beside
+  its antecedent in verse 26.
+- Verses 27–30 preserve the exhortative auxiliary and conduct,
+  coming/seeing and absence/hearing, both “in one” phrases, striving
+  together, negation and opponents of “us,” their destruction and
+  the recipients' life. Verse 29 keeps the focus on God as the giver,
+  emphatic belief and suffering. Only “in” combines the proleptic
+  prepositions before Messiah; only “for” combines the sake idiom,
+  with “him” separate. Verse 30's demonstrative remains “that,”
+  rather than being mistaken for an auxiliary.
 
 Source checks for Philippians 2:
 
