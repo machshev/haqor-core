@@ -1,0 +1,1226 @@
+{
+  "id": "laak",
+  "root": "לאכ",
+  "status": "draft",
+  "updated": "2026-11-11",
+  "tags": [
+    "sending",
+    "messenger",
+    "work",
+    "rest",
+    "appointed-times"
+  ],
+  "gloss": "send on an errand; one sent, messenger; work",
+  "summary": "The verb is not found in scripture’s Hebrew, but Ugaritic, Arabic and Ge’ez use it for “send (a messenger)”, and scripture’s own use agrees: מַלְאָךְ is one sent, the object of שָׁלַח again and again, whether a king’s envoy, a prophet or priest carrying Yahweh’s word, or one of Yahweh’s heavenly messengers; מַלְאָכוּת is the message he carries. מְלָאכָה is the task one is set to, the work one does (God’s six days, the craftsmen’s work on the tabernacle, a man’s trade), then what is worked with or made, goods and livestock. In Lev 23 the weekly שַׁבָּת and the Day of Atonement forbid כָּל־מְלָאכָה “any work”, the other holy convocations only מְלֶאכֶת עֲבֹדָה, “work of service”.",
+  "words": [
+    {
+      "lemma": "מַלְאָךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "one sent, messenger; envoy; Yahweh’s messenger",
+      "summary": "Glossed by its use, not as “angel” by default: the word names the one sent, and only the sender tells whose messenger he is. The same word is used of Jacob’s men sent to Esau, of Haggai, of the priest, and of the heavenly messengers.",
+      "bdb": [
+        "l.af.ab"
+      ],
+      "cognate_ids": [
+        "uga-mlak",
+        "uga-lak",
+        "ar-alaka",
+        "ar-laaka",
+        "gez-laaka",
+        "gez-malak",
+        "phn-mlak",
+        "arc-malaka"
+      ],
+      "senses": [
+        {
+          "id": "envoy",
+          "gloss": "messenger, envoy sent by a man",
+          "definition": "One sent by a man, king or people to carry word, to ask or to fetch; the word is regularly the object of שָׁלַח “send”.",
+          "evidence": [
+            {
+              "ref": "Gen.32.4",
+              "role": "defining",
+              "note": "Jacob sent מַלְאָכִים before him to Esau his brother."
+            },
+            {
+              "ref": "Num.20.14",
+              "role": "defining",
+              "note": "Moses sent messengers from Kadesh to the king of Edom, with a message: “Thus says your brother Israel”."
+            },
+            {
+              "ref": "Num.22.5"
+            },
+            {
+              "ref": "1Sa.19.20",
+              "note": "Saul sent messengers to take David."
+            },
+            {
+              "ref": "Jos.6.17",
+              "role": "defining",
+              "note": "The two spies Joshua sent are called “the messengers we sent”; Jas 2:25 calls them ἀγγέλους."
+            },
+            {
+              "ref": "Jos.6.25"
+            },
+            {
+              "ref": "Isa.18.2",
+              "note": "Envoys (צִירִים) sent by sea: “Go, you swift messengers”."
+            },
+            {
+              "ref": "Neh.6.3",
+              "note": "Nehemiah sent messengers: “I am doing a great work (מְלָאכָה)”."
+            },
+            {
+              "ref": "Pro.13.17",
+              "note": "A wicked messenger falls into evil, but a faithful envoy (צִיר) is healing."
+            },
+            {
+              "ref": "2Ki.1.2"
+            }
+          ]
+        },
+        {
+          "id": "yahweh-sends-men",
+          "gloss": "Yahweh’s messenger: prophet, priest, forerunner",
+          "definition": "A man Yahweh sends with his word: a prophet, the priest who keeps knowledge and teaching, and the messenger who prepares the way before him.",
+          "evidence": [
+            {
+              "ref": "Hag.1.13",
+              "role": "defining",
+              "note": "“Haggai, the מַלְאַךְ of Yahweh, in the מַלְאֲכוּת of Yahweh, said to the people”."
+            },
+            {
+              "ref": "Mal.2.7",
+              "role": "defining",
+              "note": "The priest’s lips keep knowledge and they seek teaching from his mouth, “for he is the messenger of Yahweh of armies”."
+            },
+            {
+              "ref": "2Ch.36.15",
+              "role": "defining",
+              "note": "Yahweh sent to them by his messengers, rising early and sending."
+            },
+            {
+              "ref": "2Ch.36.16",
+              "role": "defining",
+              "note": "They mocked the messengers of God and despised his words, and scoffed at his prophets: messengers set in parallel with prophets."
+            },
+            {
+              "ref": "Isa.44.26",
+              "note": "He confirms the word of his servant and performs the counsel of his messengers."
+            },
+            {
+              "ref": "Isa.42.19",
+              "note": "“Who is deaf as my messenger whom I send?” beside “blind but my servant”."
+            },
+            {
+              "ref": "Mal.3.1",
+              "role": "defining",
+              "note": "“Behold, I send my messenger, and he will prepare the way before me”: applied to John (Mat 11:10; Mrk 1:2; Luk 7:27)."
+            },
+            {
+              "ref": "Mat.11.10",
+              "note": "Jesus of John: “This is he of whom it is written, Behold, I send my messenger before your face”."
+            }
+          ]
+        },
+        {
+          "id": "heavenly",
+          "gloss": "Yahweh’s heavenly messengers",
+          "definition": "Those who stand before Yahweh and are sent by him, mighty and doing his word; they appear among men as men, guard his servants and carry out his judgments.",
+          "evidence": [
+            {
+              "ref": "Psa.103.20",
+              "role": "defining",
+              "note": "“Bless Yahweh, you his messengers, mighty in strength, doing his word, hearkening to the voice of his word.”"
+            },
+            {
+              "ref": "Psa.104.4",
+              "role": "defining",
+              "note": "He makes his messengers winds, his ministers (מְשָׁרְתָיו) a flaming fire; quoted Heb 1:7."
+            },
+            {
+              "ref": "Gen.19.1",
+              "note": "The two messengers come to Sodom; in Gen 19:10 they are “the men”."
+            },
+            {
+              "ref": "Gen.19.15"
+            },
+            {
+              "ref": "Gen.28.12",
+              "note": "The messengers of God going up and down the ladder; taken up by Jesus in Jhn 1:51."
+            },
+            {
+              "ref": "Gen.32.2"
+            },
+            {
+              "ref": "Psa.91.11",
+              "note": "He will command his messengers concerning you, to keep you in all your ways; quoted Mat 4:6."
+            },
+            {
+              "ref": "Psa.148.2"
+            },
+            {
+              "ref": "Job.4.18",
+              "note": "Parallel to “his servants”."
+            },
+            {
+              "ref": "2Ki.19.35",
+              "note": "The messenger of Yahweh struck the camp of Assyria."
+            },
+            {
+              "ref": "2Sa.24.16",
+              "note": "Yahweh speaks to the destroying messenger: “Enough, now stay your hand.”"
+            },
+            {
+              "ref": "Psa.78.49",
+              "note": "A sending of messengers of evil."
+            },
+            {
+              "ref": "Zec.1.9",
+              "note": "“The messenger who talked with me.”"
+            },
+            {
+              "ref": "Heb.1.14",
+              "note": "Ministering spirits sent forth to serve for those who will inherit salvation."
+            }
+          ]
+        },
+        {
+          "id": "bears-the-name",
+          "gloss": "the messenger of Yahweh, speaking as Yahweh",
+          "definition": "מַלְאַךְ יְהוָה (also מַלְאַךְ הָאֱלֹהִים), the messenger sent by Yahweh who carries his name and speaks in his first person, so that those who meet him say they have seen God.",
+          "evidence": [
+            {
+              "ref": "Exo.23.20",
+              "role": "defining",
+              "note": "“Behold, I send a messenger before you to keep you in the way.”"
+            },
+            {
+              "ref": "Exo.23.21",
+              "role": "defining",
+              "note": "“Obey his voice … for my name is in him.”"
+            },
+            {
+              "ref": "Gen.16.7",
+              "note": "The messenger of Yahweh finds Hagar."
+            },
+            {
+              "ref": "Gen.16.13",
+              "note": "She called the name of Yahweh who spoke to her, “You are a God of seeing”."
+            },
+            {
+              "ref": "Gen.22.15"
+            },
+            {
+              "ref": "Gen.22.16",
+              "role": "defining",
+              "note": "The messenger calls from heaven: “By myself I have sworn, declares Yahweh”."
+            },
+            {
+              "ref": "Gen.31.11"
+            },
+            {
+              "ref": "Gen.31.13",
+              "role": "defining",
+              "note": "The messenger of God says in the dream, “I am the God of Bethel”."
+            },
+            {
+              "ref": "Exo.3.2",
+              "note": "The messenger of Yahweh appeared in the flame of the bush; in Exo 3:4–6 God calls from the bush, “I am the God of your father”; Act 7:30–32."
+            },
+            {
+              "ref": "Jdg.2.1",
+              "role": "defining",
+              "note": "“I brought you up out of Egypt … I will never break my covenant with you.”"
+            },
+            {
+              "ref": "Jdg.13.18",
+              "note": "“Why do you ask my name, seeing it is wonderful?”"
+            },
+            {
+              "ref": "Gen.48.16",
+              "note": "“The messenger who redeemed me from all evil, bless the lads.”"
+            },
+            {
+              "ref": "Isa.63.9",
+              "note": "The messenger of his face saved them."
+            },
+            {
+              "ref": "Hos.12.5",
+              "note": "Jacob strove with the messenger and prevailed (Gen 32:28: “with God”)."
+            },
+            {
+              "ref": "Zec.3.1"
+            },
+            {
+              "ref": "Zec.12.8",
+              "note": "The house of David “as God, as the messenger of Yahweh before them”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἄγγελος",
+          "gloss": "messenger; angel",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.32.4, מַלְאָכִים → ἀγγέλους; Mal.3.1, מַלְאָכִי → ἄγγελόν"
+            },
+            {
+              "ref": "Mat.11.10",
+              "note": "Mal 3:1 quoted of John."
+            },
+            {
+              "ref": "Mrk.1.2"
+            },
+            {
+              "ref": "Luk.7.27"
+            },
+            {
+              "ref": "Luk.7.24",
+              "note": "John’s own messengers are ἄγγελοι."
+            },
+            {
+              "ref": "Luk.9.52",
+              "note": "Jesus sent messengers before his face."
+            },
+            {
+              "ref": "Jas.2.25",
+              "note": "Rahab received the messengers (Jos 6:17, 25)."
+            },
+            {
+              "ref": "Heb.1.7",
+              "note": "Quotes Psa 104:4."
+            },
+            {
+              "ref": "Act.7.30",
+              "note": "The messenger in the flame of the bush."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עֶבֶד",
+            "note": "Yahweh’s servant beside his messenger.",
+            "evidence": [
+              {
+                "ref": "Isa.42.19"
+              },
+              {
+                "ref": "Isa.44.26"
+              },
+              {
+                "ref": "Job.4.18"
+              }
+            ]
+          },
+          {
+            "lemma": "צִיר",
+            "note": "Envoy.",
+            "evidence": [
+              {
+                "ref": "Pro.13.17"
+              },
+              {
+                "ref": "Isa.18.2"
+              }
+            ]
+          },
+          {
+            "lemma": "נָבִיא",
+            "note": "Prophets beside messengers.",
+            "evidence": [
+              {
+                "ref": "2Ch.36.16"
+              }
+            ]
+          },
+          {
+            "lemma": "מְשָׁרֵת",
+            "note": "Minister.",
+            "evidence": [
+              {
+                "ref": "Psa.104.4"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מַלְאַךְ יְהוָה",
+            "gloss": "the messenger of Yahweh",
+            "evidence": [
+              {
+                "ref": "Gen.16.7"
+              },
+              {
+                "ref": "Exo.3.2"
+              },
+              {
+                "ref": "Jdg.2.1"
+              },
+              {
+                "ref": "Hag.1.13"
+              },
+              {
+                "ref": "Mal.2.7"
+              }
+            ]
+          },
+          {
+            "phrase": "מַלְאַךְ הַבְּרִית",
+            "gloss": "the messenger of the covenant",
+            "evidence": [
+              {
+                "ref": "Mal.3.1"
+              }
+            ]
+          },
+          {
+            "phrase": "מַלְאַךְ פָּנָיו",
+            "gloss": "the messenger of his face",
+            "evidence": [
+              {
+                "ref": "Isa.63.9"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁלַח מַלְאָכִים",
+            "gloss": "send messengers",
+            "evidence": [
+              {
+                "ref": "Gen.32.4"
+              },
+              {
+                "ref": "Num.20.14"
+              },
+              {
+                "ref": "1Sa.19.20"
+              },
+              {
+                "ref": "2Ch.36.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מְלָאכָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "work, task, occupation; workmanship; goods",
+      "summary": "The work one is set to and does, nearly always the object of עָשָׂה “do”. Ugaritic mlakt “mission” and Phoenician ml’kt “work; temple liturgy” show the same noun, and the sense runs from an errand given to the task itself. The use for goods and livestock (Gen 33:14; 1Sa 15:9; Exo 22:7) is property as what one works with.",
+      "bdb": [
+        "l.af.ac"
+      ],
+      "cognate_ids": [
+        "uga-mlakt",
+        "phn-mlakt"
+      ],
+      "senses": [
+        {
+          "id": "task",
+          "gloss": "work, task, occupation",
+          "definition": "What a man does as his labour or trade, or a task he is set to.",
+          "evidence": [
+            {
+              "ref": "Exo.20.9",
+              "role": "defining",
+              "note": "“Six days you shall labour (תַּעֲבֹד) and do all your work.”"
+            },
+            {
+              "ref": "Jon.1.8",
+              "role": "defining",
+              "note": "“What is your occupation (מְלַאכְתְּךָ), and where do you come from?”"
+            },
+            {
+              "ref": "Gen.39.11",
+              "note": "Joseph went into the house to do his work."
+            },
+            {
+              "ref": "Pro.22.29",
+              "note": "A man skilful in his work will stand before kings."
+            },
+            {
+              "ref": "Psa.107.23",
+              "note": "Those doing business on great waters."
+            },
+            {
+              "ref": "Neh.4.11",
+              "note": "Building the wall, each doing the work with one hand."
+            },
+            {
+              "ref": "Neh.6.3"
+            },
+            {
+              "ref": "1Ki.9.23",
+              "note": "Officers over the work."
+            },
+            {
+              "ref": "Dan.8.27",
+              "note": "“I rose and did the king’s business.”"
+            },
+            {
+              "ref": "Est.3.9"
+            }
+          ]
+        },
+        {
+          "id": "gods-work",
+          "gloss": "God’s work",
+          "definition": "The work of the six days, which God finished and from which he ceased on the seventh; and Yahweh’s works, which the faithful tell.",
+          "evidence": [
+            {
+              "ref": "Gen.2.2",
+              "role": "defining",
+              "note": "God finished his work which he had made, and ceased on the seventh day from all his work; quoted Heb 4:4."
+            },
+            {
+              "ref": "Gen.2.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.73.28",
+              "note": "“To tell all your works.”"
+            }
+          ]
+        },
+        {
+          "id": "sanctuary-work",
+          "gloss": "the work of the sanctuary",
+          "definition": "The craftsmen’s work of making the tabernacle and temple and of repairing the house of Yahweh, which Moses saw finished and blessed.",
+          "evidence": [
+            {
+              "ref": "Exo.31.3",
+              "role": "defining",
+              "note": "Bezalel filled with the spirit of God “in all manner of work”."
+            },
+            {
+              "ref": "Exo.35.35"
+            },
+            {
+              "ref": "Exo.36.1",
+              "note": "“All the work of the service of the holy place” (מְלֶאכֶת עֲבֹדַת הַקֹּדֶשׁ)."
+            },
+            {
+              "ref": "Exo.36.6",
+              "note": "No more to be brought for the work."
+            },
+            {
+              "ref": "Exo.39.43",
+              "role": "defining",
+              "note": "Moses saw all the work, that they had done it as Yahweh commanded, and blessed them."
+            },
+            {
+              "ref": "Exo.40.33",
+              "role": "defining",
+              "note": "“And Moses finished the work”, וַיְכַל מֹשֶׁה אֶת־הַמְּלָאכָה, worded as Gen 2:2."
+            },
+            {
+              "ref": "1Ki.7.14"
+            },
+            {
+              "ref": "2Ki.12.12",
+              "note": "Those doing the work, overseeing the house of Yahweh."
+            },
+            {
+              "ref": "1Ch.28.20"
+            },
+            {
+              "ref": "Hag.1.14",
+              "note": "They came and did work on the house of Yahweh."
+            },
+            {
+              "ref": "Jer.48.10",
+              "note": "Cursed is he who does the work of Yahweh deceitfully."
+            }
+          ]
+        },
+        {
+          "id": "holy-day-work",
+          "gloss": "work forbidden on holy days",
+          "definition": "The work Israel does not do on Yahweh’s appointed days: on the weekly שַׁבָּת and the Day of Atonement “any work” (כָּל־מְלָאכָה), on the other holy convocations “any work of service” (כָּל־מְלֶאכֶת עֲבֹדָה). On the first and seventh days of מַצּוֹת, which Lev 23 marks with the second phrase, Exo 12:16 still allows what each one eats to be prepared.",
+          "evidence": [
+            {
+              "ref": "Lev.23.3",
+              "role": "defining",
+              "note": "The seventh day: “you shall do no work”."
+            },
+            {
+              "ref": "Lev.23.28",
+              "role": "defining",
+              "note": "The Day of Atonement: no work on that same day."
+            },
+            {
+              "ref": "Lev.23.30",
+              "note": "Whoever does any work on it, Yahweh will destroy from among his people."
+            },
+            {
+              "ref": "Lev.23.31"
+            },
+            {
+              "ref": "Lev.23.7",
+              "role": "defining",
+              "note": "First day of מַצּוֹת: “no work of service”."
+            },
+            {
+              "ref": "Lev.23.8"
+            },
+            {
+              "ref": "Lev.23.21",
+              "note": "The day of the weeks."
+            },
+            {
+              "ref": "Lev.23.25",
+              "note": "The first of the seventh month."
+            },
+            {
+              "ref": "Lev.23.35",
+              "note": "First and eighth days of סֻכּוֹת."
+            },
+            {
+              "ref": "Lev.23.36"
+            },
+            {
+              "ref": "Exo.12.16",
+              "role": "defining",
+              "note": "No work on the first and seventh days, “except what every soul must eat, that alone may be done by you”."
+            },
+            {
+              "ref": "Exo.31.15"
+            },
+            {
+              "ref": "Num.29.7"
+            },
+            {
+              "ref": "Jer.17.22"
+            }
+          ]
+        },
+        {
+          "id": "workmanship",
+          "gloss": "workmanship; a made thing",
+          "definition": "What work produces: a thing made of a material, or the craftsmanship in it.",
+          "evidence": [
+            {
+              "ref": "Lev.13.48",
+              "role": "defining",
+              "note": "“Anything made of skin” (כָּל־מְלֶאכֶת עוֹר)."
+            },
+            {
+              "ref": "Lev.11.32",
+              "note": "Any vessel with which work is done."
+            },
+            {
+              "ref": "Exo.38.24",
+              "note": "The gold used for the work."
+            },
+            {
+              "ref": "Ezk.15.3",
+              "note": "Is vine wood taken to make any work?"
+            },
+            {
+              "ref": "Ezk.28.13",
+              "note": "The workmanship of your settings."
+            }
+          ]
+        },
+        {
+          "id": "goods",
+          "gloss": "goods, property, livestock",
+          "definition": "What a man owns and works with: his flocks and herds, or goods left in another’s keeping.",
+          "evidence": [
+            {
+              "ref": "Gen.33.14",
+              "role": "defining",
+              "note": "Jacob will go at the pace of “the מְלָאכָה before me” and of the children: the livestock."
+            },
+            {
+              "ref": "1Sa.15.9",
+              "role": "defining",
+              "note": "Saul spared the best of the sheep and cattle, but “all the מְלָאכָה that was despised” they destroyed."
+            },
+            {
+              "ref": "Exo.22.7",
+              "note": "Whether he put his hand to his neighbour’s goods."
+            },
+            {
+              "ref": "Exo.22.10"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔργον",
+          "gloss": "work, deed",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.2, מְלַאכְתּוֹ → ἔργα; Lev.23.3, מְלָאכָה → ἔργα, ἔργον"
+            },
+            {
+              "ref": "Heb.4.4",
+              "note": "Quotes Gen 2:2: God ceased on the seventh day from all his works."
+            },
+            {
+              "ref": "Heb.4.10",
+              "note": "He who has entered his rest has ceased from his works, as God from his."
+            },
+            {
+              "ref": "Jhn.17.4",
+              "note": "“I have finished the work which you gave me to do.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "שַׁבָּת",
+            "note": "Six days of work against the seventh, on which no work is done.",
+            "evidence": [
+              {
+                "ref": "Exo.20.9",
+                "to": "Exo.20.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.31.15"
+              },
+              {
+                "ref": "Lev.23.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כָּל־מְלָאכָה לֹא תַעֲשׂוּ",
+            "gloss": "you shall do no work at all",
+            "evidence": [
+              {
+                "ref": "Lev.23.3"
+              },
+              {
+                "ref": "Lev.23.28"
+              },
+              {
+                "ref": "Lev.23.31"
+              },
+              {
+                "ref": "Num.29.7"
+              }
+            ]
+          },
+          {
+            "phrase": "כָּל־מְלֶאכֶת עֲבֹדָה לֹא תַעֲשׂוּ",
+            "gloss": "you shall do no work of service",
+            "evidence": [
+              {
+                "ref": "Lev.23.7"
+              },
+              {
+                "ref": "Lev.23.8"
+              },
+              {
+                "ref": "Lev.23.21"
+              },
+              {
+                "ref": "Lev.23.25"
+              },
+              {
+                "ref": "Lev.23.35"
+              },
+              {
+                "ref": "Lev.23.36"
+              },
+              {
+                "ref": "Num.28.18"
+              }
+            ]
+          },
+          {
+            "phrase": "עֹשֵׂי הַמְּלָאכָה",
+            "gloss": "those doing the work, the workmen",
+            "evidence": [
+              {
+                "ref": "2Ki.12.12"
+              },
+              {
+                "ref": "2Ki.22.9"
+              },
+              {
+                "ref": "Est.3.9"
+              }
+            ]
+          },
+          {
+            "phrase": "מְלֶאכֶת יְהוָה",
+            "gloss": "the work of Yahweh",
+            "evidence": [
+              {
+                "ref": "Jer.48.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַלְאָכוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "message, errand",
+      "summary": "Used once, of the word the messenger carries: Haggai, Yahweh’s מַלְאָךְ, speaks “in Yahweh’s מַלְאָכוּת”. Ugaritic mlakt “mission” is the nearest cognate.",
+      "bdb": [
+        "l.af.ad"
+      ],
+      "cognate_ids": [
+        "uga-mlakt",
+        "ar-alaka"
+      ],
+      "senses": [
+        {
+          "gloss": "message, errand",
+          "definition": "The message or commission a messenger carries.",
+          "evidence": [
+            {
+              "ref": "Hag.1.13",
+              "role": "defining",
+              "note": "“Haggai the messenger of Yahweh spoke in the message of Yahweh to the people: ‘I am with you’.”"
+            }
+          ],
+          "kin": [
+            "yahweh-sends-men"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַלְאַךְ",
+      "lang": "arc",
+      "root": "מלאכ",
+      "pos": "noun",
+      "cognate_ids": [
+        "arc-malaka",
+        "uga-mlak",
+        "gez-malak",
+        "phn-mlak"
+      ],
+      "gender": "m",
+      "gloss": "messenger sent by God",
+      "summary": "Biblical Aramaic, twice, both times the object of שְׁלַח “send”.",
+      "bdb": [
+        "xl.ac.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "God’s messenger, sent to deliver",
+          "definition": "One whom God sends to deliver his servants.",
+          "evidence": [
+            {
+              "ref": "Dan.3.28",
+              "role": "defining",
+              "note": "“Blessed be their God, who sent his messenger and delivered his servants.”"
+            },
+            {
+              "ref": "Dan.6.23",
+              "role": "defining",
+              "note": "“My God sent his messenger and shut the lions’ mouths.”"
+            }
+          ],
+          "kin": [
+            "heavenly"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַלְאַכָא",
+      "lang": "syc",
+      "root": "מלאכ",
+      "pos": "noun",
+      "cognate_ids": [
+        "arc-malaka",
+        "uga-mlak",
+        "gez-malak",
+        "phn-mlak"
+      ],
+      "gender": "m",
+      "gloss": "messenger; angel",
+      "summary": "The Peshitta’s ܡܠܐܟܐ (malʾakā), used, like the Hebrew, both of men sent and of God’s messengers.",
+      "senses": [
+        {
+          "gloss": "messenger sent before someone",
+          "definition": "A man sent ahead with word; John as the messenger of Mal 3:1.",
+          "evidence": [
+            {
+              "ref": "Mat.11.10",
+              "role": "defining",
+              "note": "Peshitta: “Behold, I send my מַלְאַכִי before your face”."
+            },
+            {
+              "ref": "Mrk.1.2"
+            },
+            {
+              "ref": "Luk.7.27"
+            },
+            {
+              "ref": "Luk.9.52",
+              "role": "defining",
+              "note": "Jesus sent messengers before his face to a village of Samaria."
+            }
+          ],
+          "kin": [
+            "envoy",
+            "yahweh-sends-men"
+          ]
+        },
+        {
+          "gloss": "God’s messenger",
+          "definition": "God’s heavenly messengers, by whom the law was spoken and who serve his people.",
+          "evidence": [
+            {
+              "ref": "Heb.1.7",
+              "role": "defining",
+              "note": "Quotes Psa 104:4."
+            },
+            {
+              "ref": "Act.7.30",
+              "note": "The messenger in the flame of the bush."
+            },
+            {
+              "ref": "Act.7.38"
+            },
+            {
+              "ref": "Act.7.53",
+              "note": "The law received by the ordinance of messengers."
+            },
+            {
+              "ref": "Gal.3.19"
+            },
+            {
+              "ref": "Heb.2.2"
+            },
+            {
+              "ref": "Jhn.1.51"
+            },
+            {
+              "ref": "Mat.4.6",
+              "note": "Quotes Psa 91:11."
+            }
+          ],
+          "kin": [
+            "heavenly",
+            "bears-the-name"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-lak",
+      "lang": "uga",
+      "form": "𐎍𐎀𐎋",
+      "translit": "lʾk",
+      "gloss": "send",
+      "relation": "cognate",
+      "note": "The verb the Hebrew lacks: forms likt, ilak, ylak, lak, infinitive lakm, “to send”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 190, §93 Glossary, /l-ʾ-k/; KTU 2.10:10, 2.30:19"
+        }
+      ]
+    },
+    {
+      "id": "uga-mlak",
+      "lang": "uga",
+      "form": "𐎎𐎍𐎀𐎋",
+      "translit": "mlak",
+      "gloss": "messenger",
+      "relation": "cognate",
+      "note": "/malʾak-/, the noun beside the verb “send”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 192, §93 Glossary, mlak"
+        }
+      ]
+    },
+    {
+      "id": "uga-mlakt",
+      "lang": "uga",
+      "form": "𐎎𐎍𐎀𐎋𐎚",
+      "translit": "mlakt",
+      "gloss": "mission",
+      "relation": "cognate",
+      "note": "/malʾakat-/; Segert sets it beside Hebrew מְלָאכָה. The errand on which one is sent: the link between “send” and “work”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 192, §93 Glossary, mlakt"
+        }
+      ]
+    },
+    {
+      "id": "ar-laaka",
+      "lang": "ar",
+      "form": "لَأَكَ",
+      "translit": "laʾaka",
+      "gloss": "he sent",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3007, root لأك, لَأَكَ (n43186)"
+        }
+      ]
+    },
+    {
+      "id": "ar-alaka",
+      "lang": "ar",
+      "form": "أَلَكَ، أَلُوكٌ، مَأْلَكَةٌ",
+      "translit": "ʾalaka, ʾalūk, maʾlakah",
+      "gloss": "act as messenger, send; a message",
+      "relation": "cognate",
+      "note": "The same consonants with ʾ and l in the other order. Lane’s sources give أَلَكَ as “he sent” and “acted as a messenger between the people”, أَلِكْنِى “be my messenger, bear my message”, أَلُوكٌ and مَأْلَكَةٌ “a message”. They explain مَلَكٌ “angel” as from مَأْلَكٌ by transposition, “because he conveys the message from God”; whether مَلَك is instead borrowed from Aramaic or Ge’ez is not settled here, so only the verb and “message” are relied on.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 81, root الك, أَلَكَ (n1088), أَلِكْنِى (n1089), أَلُوكٌ (n1091–n1092)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 82, root الك, مَأْلَكٌ (n1094), مَأْلَكَةٌ (n1096)"
+        }
+      ]
+    },
+    {
+      "id": "gez-laaka",
+      "lang": "gez",
+      "form": "ለአከ",
+      "translit": "laʾaka",
+      "gloss": "send, send a messenger; (III,1 taläʾka) be sent; serve, minister",
+      "relation": "cognate",
+      "note": "Dillmann: legare, nuntium mittere (Gen 37:13; Hag 1:12); the reflexive “be sent”, and much more often “minister, serve” (Mrk 1:31; Mat 20:28), of priestly and angelic ministry; ላእክ “minister, servant”. The Ge’ez shows the road from being sent to serving, beside Hebrew מְלָאכָה.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 47–48, ለአከ; ተለአከ; ላእክ"
+        }
+      ]
+    },
+    {
+      "id": "gez-malak",
+      "lang": "gez",
+      "form": "መልአክ",
+      "translit": "malʾak",
+      "gloss": "messenger, envoy; angel; prefect, ruler",
+      "relation": "cognate",
+      "note": "Dillmann gives it beside Hebrew מַלְאָךְ and Syriac: 1) nuntius, legatus (Isa 18:2); 2) God’s envoy, angel; 3) a governor or chief.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 48, መልአክ"
+        }
+      ]
+    },
+    {
+      "id": "phn-mlak",
+      "lang": "phn",
+      "form": "𐤌𐤋𐤀𐤊",
+      "translit": "mlʾk",
+      "gloss": "messenger",
+      "relation": "cognate",
+      "note": "“PHLŠ, the messenger, arrived before him” (CID 9A); also, before a god’s name, the god’s Mal’ak.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 282–283, ML’K-"
+        }
+      ]
+    },
+    {
+      "id": "phn-mlakt",
+      "lang": "phn",
+      "form": "𐤌𐤋𐤀𐤊𐤕",
+      "translit": "mlʾkt, mlkt",
+      "gloss": "work (a thing made; the activity); task; temple liturgy",
+      "relation": "cognate",
+      "note": "“Whoever continues to do work on this altar” (KAI 10); “the construction work” and “the task of plastering” (KAI 137); “the sacred liturgy” (KAI 37), as Hebrew uses מְלָאכָה for the sanctuary’s work.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 283–284, ML’KT and ML’KT QDŠT"
+        }
+      ]
+    },
+    {
+      "id": "arc-malaka",
+      "lang": "arc",
+      "form": "מַלְאֲכָא",
+      "translit": "malʾăḵā",
+      "gloss": "messenger, angel",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מַלְאֲכָא",
+          "note": "Targ. Gen 19:1; Targ. Y. I Exo 4:25."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "messenger-of-the-covenant",
+      "statement": "Yahweh says, “Behold, I send my מַלְאָךְ, and he will prepare the way before me; and suddenly the Lord whom you seek will come to his temple, and the מַלְאַךְ הַבְּרִית whom you delight in, behold, he comes” (Mal 3:1), and he names the forerunner Elijah, sent before the day of Yahweh (Mal 3:23). Jesus says of John, “This is he of whom it is written, Behold, I send my messenger before your face, who will prepare your way before you” (Mat 11:10; Luk 7:27), and that John is the Elijah who was to come (Mat 11:14); Mark opens his gospel with the same words joined to Isa 40:3 (Mrk 1:2–3). Zechariah says of his son, “you will go before the face of the Lord to prepare his ways” (Luk 1:76). The New Testament reads the verse with the words “before your face”: the first messenger goes before the one he prepares for, and John says of Jesus, “he who comes after me is mightier than I” (Mat 3:11). From the verses: the one sent ahead is John; the Lord who comes after him to his temple, bringing the covenant, is the one John announced.",
+      "evidence": [
+        {
+          "ref": "Mal.3.1"
+        },
+        {
+          "ref": "Mal.3.23"
+        },
+        {
+          "ref": "Mat.11.10"
+        },
+        {
+          "ref": "Luk.7.27"
+        },
+        {
+          "ref": "Mat.11.14"
+        },
+        {
+          "ref": "Mrk.1.2",
+          "to": "Mrk.1.3"
+        },
+        {
+          "ref": "Luk.1.76"
+        },
+        {
+          "ref": "Mat.3.11"
+        }
+      ]
+    },
+    {
+      "topic": "the-messenger-bearing-the-name",
+      "statement": "Yahweh sends a messenger before Israel and says, “obey his voice … for my name is in him” (Exo 23:20–21). This messenger speaks in Yahweh’s first person: “By myself I have sworn, declares Yahweh” (Gen 22:15–16); “I am the God of Bethel” (Gen 31:11–13); “I brought you up out of Egypt … I will never break my covenant with you” (Jdg 2:1). Hagar calls the name of Yahweh who spoke to her “You are a God of seeing” (Gen 16:7, 13), and at the bush the messenger appears in the flame while God speaks from it (Exo 3:2–6). Yet he is the one sent, not the sender: Yahweh speaks to the messenger and stays his hand (2Sa 24:16). Stephen keeps both together: “a מַלְאָךְ appeared to him in the flame of fire in the bush”, and “the voice of the Lord came: I am the God of your fathers” (Act 7:30–32), and Israel received the law “by the ordinance of messengers” (Act 7:53; Gal 3:19; Heb 2:2). From the verses: the messenger carries Yahweh’s name and speaks his words, so that to hear him is to hear Yahweh; he is still a servant sent, and Hebrews sets all such messengers as ministering spirits beneath the Son (Heb 1:4–7, 14).",
+      "evidence": [
+        {
+          "ref": "Exo.23.20",
+          "to": "Exo.23.21"
+        },
+        {
+          "ref": "Gen.22.15",
+          "to": "Gen.22.16"
+        },
+        {
+          "ref": "Gen.31.11",
+          "to": "Gen.31.13"
+        },
+        {
+          "ref": "Jdg.2.1"
+        },
+        {
+          "ref": "Gen.16.7"
+        },
+        {
+          "ref": "Gen.16.13"
+        },
+        {
+          "ref": "Exo.3.2",
+          "to": "Exo.3.6"
+        },
+        {
+          "ref": "2Sa.24.16"
+        },
+        {
+          "ref": "Act.7.30",
+          "to": "Act.7.32"
+        },
+        {
+          "ref": "Act.7.53"
+        },
+        {
+          "ref": "Gal.3.19"
+        },
+        {
+          "ref": "Heb.2.2"
+        },
+        {
+          "ref": "Heb.1.4",
+          "to": "Heb.1.7"
+        },
+        {
+          "ref": "Heb.1.14"
+        }
+      ]
+    },
+    {
+      "topic": "work-and-ceasing",
+      "statement": "The word for God’s work and man’s is the same. God finished his מְלָאכָה and ceased from it on the seventh day (Gen 2:2–3); Israel works six days and does all its מְלָאכָה, and on the seventh does none, because Yahweh made heaven and earth in six days and rested (Exo 20:9–11). The tabernacle is made in the same words: Moses sees all the work done as Yahweh commanded and blesses them, and “Moses finished the work” (Exo 39:43; 40:33). Of Yahweh’s appointed times in Lev 23, the weekly שַׁבָּת and the Day of Atonement forbid any work at all, and whoever works on the day of atonement is destroyed from his people (Lev 23:3, 28–31); the other holy convocations forbid “work of service” (Lev 23:7–8, 21, 25, 35–36). Jesus answers those who accused him of working on the שַׁבָּת, “My Father is working until now, and I am working” (Jhn 5:17), and at the end says, “I have finished the work which you gave me to do” (Jhn 17:4). Hebrews quotes Gen 2:2 and concludes that whoever has entered God’s rest has ceased from his works, as God did from his (Heb 4:4, 10). From the verses: the ceasing is from a finished work; God’s and Christ’s work is finished, and his people enter the rest by ceasing from their own.",
+      "evidence": [
+        {
+          "ref": "Gen.2.2",
+          "to": "Gen.2.3"
+        },
+        {
+          "ref": "Exo.20.9",
+          "to": "Exo.20.11"
+        },
+        {
+          "ref": "Exo.39.43"
+        },
+        {
+          "ref": "Exo.40.33"
+        },
+        {
+          "ref": "Lev.23.3"
+        },
+        {
+          "ref": "Lev.23.28",
+          "to": "Lev.23.31"
+        },
+        {
+          "ref": "Lev.23.7",
+          "to": "Lev.23.8"
+        },
+        {
+          "ref": "Lev.23.21"
+        },
+        {
+          "ref": "Lev.23.25"
+        },
+        {
+          "ref": "Lev.23.35",
+          "to": "Lev.23.36"
+        },
+        {
+          "ref": "Jhn.5.17"
+        },
+        {
+          "ref": "Jhn.17.4"
+        },
+        {
+          "ref": "Heb.4.4"
+        },
+        {
+          "ref": "Heb.4.10"
+        }
+      ]
+    }
+  ],
+  "note": "Root key לאכ (BDB l.af.aa). The Hebrew verb is not attested; the root’s sense “send” rests on Ugaritic lʾk, Arabic لأك/ألك and Ge’ez ለአከ, and on scripture’s own pairing of מַלְאָךְ with שָׁלַח. No letter of the root stands for merged older sounds, so there are no `sounds`. Left out: the names לָאֵל (l.af.af, Num 3:24; its other ten tokens are לָאֵל “to God” filed here by spelling) and מַלְאָכִי Malachi (l.af.ae; only Mal 1:1 is the name, the other tokens Exo 23:23, 32:34, Mal 3:1 are מַלְאָכִי “my messenger”, already counted under l.af.ab); names belong in names/. Cross-reference keys m.bz.aj and xm.ae.ab have no tokens. Scan cites checked against page images 2026-11-11: Segert pp. 190 and 192 (archive.org leaves 217, 219); Dillmann cols. 47–48 (leaf 47); Krahmalkov pp. 282 and 283 (local PDF pages 284–285); Krahmalkov p. 284 for “sacred liturgy” is OCR only (page unverified). Lane is the vendored text. Not consulted: Leslau’s Comparative Dictionary of Ge’ez, DULAT, CAD (no Akkadian lʾk found in Oracc). The Peshitta words were found from SEDRA lexeme 1773 (root MLACA) with the BFBS word list; the Peshitta OT (Lev 23) is not in the repository, so its word for מְלָאכָה is unchecked. Open questions for review: (1) the reading of מְלֶאכֶת עֲבֹדָה as ordinary labour, narrower than כָּל־מְלָאכָה, rests on Lev 23’s contrast and Exo 12:16; it is stated as the verses show, not further defined. (2) Whether the “goods, livestock” sense should stand as its own sense (two clear verses, Gen 33:14 and 1Sa 15:9). (3) The doctrine on the messenger bearing the name keeps strictly to what the verses say; check the wording is acceptable. (4) Arabic مَلَك “angel”: loan from Aramaic/Ge’ez or native, not decided; not cited as evidence."
+}

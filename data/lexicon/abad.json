@@ -1,0 +1,2163 @@
+{
+  "id": "abad",
+  "root": "עבד",
+  "status": "draft",
+  "updated": "2026-11-11",
+  "tags": [
+    "service",
+    "work",
+    "worship",
+    "slavery",
+    "servant-of-yahweh",
+    "appointed-times",
+    "sanctuary"
+  ],
+  "gloss": "work, serve; servant; service (Aramaic: do, make)",
+  "summary": "עָבַד is to work and to serve: to work the ground or a task, to serve a master as a bondman or a king as a subject, and to serve a god with worship and obedience, so that “whom you will serve” is the choice between Yahweh and other gods. עֶבֶד is the one who serves, from the bought slave to the king’s officer, the man who calls himself “your servant”, and Yahweh’s servants Moses, David, the prophets, Israel and the servant of Isaiah 42–53; עֲבֹדָה is the work or service itself, from Egypt’s hard bondage to the Levites’ service of the tent and the Passover rite. Scripture’s Aramaic uses עֲבַד for “do, make”, where Hebrew says עָשָׂה, and serves with פְּלַח; Hebrew itself sets עָבַד beside עָשָׂה (Isa 28:21). In Lev 23 the holy convocations forbid מְלֶאכֶת עֲבֹדָה, “work of service”, ordinary labour.",
+  "words": [
+    {
+      "lemma": "עֶבֶד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "servant, slave; subject; Yahweh’s servant",
+      "bdb": [
+        "p.ac.ab"
+      ],
+      "cognate_ids": [
+        "ar-abd",
+        "uga-abd",
+        "phn-abd-n",
+        "sab-abd",
+        "akk-abdu"
+      ],
+      "senses": [
+        {
+          "id": "slave",
+          "gloss": "slave, bondservant",
+          "definition": "A man owned by another, bought or born in the house, who serves him; Israel in Egypt was such a slave, and Egypt “the house of slaves”.",
+          "evidence": [
+            {
+              "ref": "Exo.21.2",
+              "role": "defining",
+              "note": "“If you buy a Hebrew עֶבֶד, six years he shall serve, and in the seventh he shall go out free.”"
+            },
+            {
+              "ref": "Exo.21.6",
+              "note": "If he will stay, his master bores his ear and he serves him for ever."
+            },
+            {
+              "ref": "Deu.15.17",
+              "note": "עֶבֶד עוֹלָם, a servant for ever."
+            },
+            {
+              "ref": "Lev.25.44",
+              "role": "defining",
+              "note": "Male and female slaves bought from the nations around."
+            },
+            {
+              "ref": "Lev.25.39",
+              "note": "A poor brother sold to you: “you shall not make him serve the service of a slave”."
+            },
+            {
+              "ref": "Gen.9.25",
+              "note": "“A servant of servants shall he be to his brothers.”"
+            },
+            {
+              "ref": "Deu.5.15",
+              "role": "defining",
+              "note": "“Remember that you were a slave in the land of Egypt.”"
+            },
+            {
+              "ref": "Deu.15.15"
+            },
+            {
+              "ref": "Exo.20.2",
+              "note": "“who brought you out of the land of Egypt, out of the house of slaves”."
+            }
+          ]
+        },
+        {
+          "id": "subject",
+          "gloss": "servant of a king: subject, official, vassal",
+          "definition": "One under a king: his courtiers and officers, his soldiers, and a subject people paying tribute.",
+          "evidence": [
+            {
+              "ref": "Gen.40.20",
+              "role": "defining",
+              "note": "Pharaoh made a feast for all his servants: his officials, among them the chief butler and baker."
+            },
+            {
+              "ref": "2Sa.8.2",
+              "role": "defining",
+              "note": "Moab became David’s servants, bringing tribute."
+            },
+            {
+              "ref": "1Ki.5.20",
+              "note": "Solomon’s servants beside Hiram’s."
+            },
+            {
+              "ref": "1Sa.28.2"
+            }
+          ]
+        },
+        {
+          "id": "your-servant",
+          "gloss": "“your servant”, in speaking to a superior",
+          "definition": "The speaker’s way of naming himself before a lord, a king, or God.",
+          "evidence": [
+            {
+              "ref": "Gen.18.3",
+              "role": "defining",
+              "note": "Abraham: “do not pass by your servant”."
+            },
+            {
+              "ref": "Gen.44.18",
+              "note": "Judah: “let your servant speak a word in my lord’s ears”."
+            },
+            {
+              "ref": "1Sa.3.10",
+              "role": "defining",
+              "note": "Samuel: “Speak, for your servant hears.”"
+            }
+          ]
+        },
+        {
+          "id": "servant-of-yahweh",
+          "gloss": "servant of Yahweh",
+          "definition": "One whom Yahweh owns and uses for his purpose: Abraham, Moses, David, Job, the prophets, Israel, and the servant whom Yahweh upholds and puts his spirit on, who bears the iniquities of many.",
+          "evidence": [
+            {
+              "ref": "Num.12.7",
+              "role": "defining",
+              "note": "“My servant Moses … is faithful in all my house”; Heb 3:5."
+            },
+            {
+              "ref": "Deu.34.5",
+              "note": "Moses the servant of Yahweh died."
+            },
+            {
+              "ref": "Jos.1.1"
+            },
+            {
+              "ref": "Gen.26.24",
+              "note": "“for my servant Abraham’s sake”."
+            },
+            {
+              "ref": "2Sa.7.5",
+              "note": "“Go and say to my servant David.”"
+            },
+            {
+              "ref": "Job.1.8"
+            },
+            {
+              "ref": "2Ki.17.13",
+              "role": "defining",
+              "note": "The law “which I sent to you by my servants the prophets”."
+            },
+            {
+              "ref": "Jer.7.25"
+            },
+            {
+              "ref": "Amo.3.7"
+            },
+            {
+              "ref": "Isa.41.8",
+              "role": "defining",
+              "note": "“You, Israel, my servant, Jacob whom I have chosen, the seed of Abraham my friend.”"
+            },
+            {
+              "ref": "Isa.49.3"
+            },
+            {
+              "ref": "Isa.42.1",
+              "role": "defining",
+              "note": "“Behold my servant, whom I uphold, my chosen … I have put my spirit on him; he will bring justice to the nations”; Mat 12:18–21."
+            },
+            {
+              "ref": "Isa.49.6",
+              "note": "A light to the nations; Act 13:47."
+            },
+            {
+              "ref": "Isa.52.13",
+              "role": "defining",
+              "note": "“Behold, my servant will act wisely; he will be high and lifted up.”"
+            },
+            {
+              "ref": "Isa.53.11",
+              "role": "defining",
+              "note": "“My righteous servant will make many righteous, and he will bear their iniquities.”"
+            },
+            {
+              "ref": "Zec.3.8",
+              "note": "“I will bring my servant the Branch.”"
+            },
+            {
+              "ref": "Mal.3.18",
+              "note": "Between one who serves God and one who does not."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παῖς",
+          "gloss": "servant; child",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.41.8, עַבְדִּי → παῖς; Exo.21.2, עֶבֶד → παῖδα"
+            },
+            {
+              "ref": "Mat.12.18",
+              "note": "Quotes Isa 42:1: “Behold my servant whom I have chosen.”"
+            },
+            {
+              "ref": "Act.3.13",
+              "note": "God “glorified his servant Jesus”."
+            },
+            {
+              "ref": "Act.3.26"
+            },
+            {
+              "ref": "Act.4.27"
+            }
+          ]
+        },
+        {
+          "lemma": "δοῦλος",
+          "gloss": "slave, servant",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.49.3, עַבְדִּי → δοῦλός"
+            },
+            {
+              "ref": "Php.2.7",
+              "note": "He took “the form of a servant”."
+            },
+            {
+              "ref": "Rom.1.1"
+            },
+            {
+              "ref": "Jhn.15.15",
+              "note": "“No longer do I call you servants.”"
+            },
+            {
+              "ref": "Jhn.13.16"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מַלְאָךְ",
+            "note": "Yahweh’s servant beside his messenger.",
+            "evidence": [
+              {
+                "ref": "Isa.42.19"
+              },
+              {
+                "ref": "Isa.44.26"
+              },
+              {
+                "ref": "Job.4.18"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּחִיר",
+            "note": "His servant, his chosen.",
+            "evidence": [
+              {
+                "ref": "Isa.42.1"
+              }
+            ]
+          },
+          {
+            "lemma": "שִׁפְחָה",
+            "note": "Male and female servants.",
+            "evidence": [
+              {
+                "ref": "Psa.123.2"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אָדוֹן",
+            "note": "Servant and master.",
+            "evidence": [
+              {
+                "ref": "Mal.1.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.123.2"
+              },
+              {
+                "ref": "Exo.21.6"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עֶבֶד יְהוָה",
+            "gloss": "the servant of Yahweh",
+            "evidence": [
+              {
+                "ref": "Deu.34.5"
+              },
+              {
+                "ref": "Jos.1.1"
+              },
+              {
+                "ref": "Isa.42.19"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית עֲבָדִים",
+            "gloss": "the house of slaves (Egypt)",
+            "evidence": [
+              {
+                "ref": "Exo.13.3"
+              },
+              {
+                "ref": "Exo.20.2"
+              },
+              {
+                "ref": "Deu.5.6"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲבָדַי הַנְּבִיאִים",
+            "gloss": "my servants the prophets",
+            "evidence": [
+              {
+                "ref": "2Ki.17.13"
+              },
+              {
+                "ref": "Jer.7.25"
+              },
+              {
+                "ref": "Amo.3.7"
+              }
+            ]
+          },
+          {
+            "phrase": "עֶבֶד עוֹלָם",
+            "gloss": "a servant for ever",
+            "evidence": [
+              {
+                "ref": "Deu.15.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָבַד",
+      "pos": "verb",
+      "gloss": "work; serve; worship",
+      "bdb": [
+        "p.ac.aa"
+      ],
+      "cognate_ids": [
+        "ar-abada",
+        "phn-abd-v",
+        "sab-abd"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "work; serve a master; serve God or gods",
+          "senses": [
+            {
+              "id": "work",
+              "gloss": "work, till; labour",
+              "definition": "Work the ground, a field or a vineyard; labour at one’s work through the six days.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.5",
+                  "role": "defining",
+                  "note": "“There was no man to work the ground.”"
+                },
+                {
+                  "ref": "Gen.2.15",
+                  "role": "defining",
+                  "note": "Put in the garden “to work it and to keep it”."
+                },
+                {
+                  "ref": "Gen.3.23"
+                },
+                {
+                  "ref": "Gen.4.2",
+                  "note": "Cain a worker of the ground (עֹבֵד אֲדָמָה)."
+                },
+                {
+                  "ref": "Pro.12.11",
+                  "note": "He who works his ground will be satisfied with bread."
+                },
+                {
+                  "ref": "Deu.28.39",
+                  "note": "You will plant and work vineyards."
+                },
+                {
+                  "ref": "Isa.19.9",
+                  "note": "Workers in combed flax."
+                },
+                {
+                  "ref": "Exo.20.9",
+                  "role": "defining",
+                  "note": "“Six days you shall labour and do all your work (מְלָאכָה).”"
+                },
+                {
+                  "ref": "Exo.34.21"
+                },
+                {
+                  "ref": "Ezk.48.19",
+                  "note": "The workers of the city."
+                }
+              ]
+            },
+            {
+              "id": "serve-master",
+              "gloss": "serve a master, a king, a nation",
+              "definition": "Work for another as his servant, for wages or as his bondman; be subject to a king or a people and pay him service.",
+              "evidence": [
+                {
+                  "ref": "Gen.29.18",
+                  "role": "defining",
+                  "note": "Jacob: “I will serve you seven years for Rachel.”"
+                },
+                {
+                  "ref": "Gen.29.20",
+                  "note": "They seemed to him a few days because of his love for her."
+                },
+                {
+                  "ref": "Exo.21.2",
+                  "role": "defining",
+                  "note": "The Hebrew servant serves six years."
+                },
+                {
+                  "ref": "Gen.15.13",
+                  "note": "Your seed will serve them; quoted Act 7:6."
+                },
+                {
+                  "ref": "Gen.25.23",
+                  "note": "The elder will serve the younger."
+                },
+                {
+                  "ref": "Gen.27.29",
+                  "note": "Let peoples serve you."
+                },
+                {
+                  "ref": "Exo.14.12",
+                  "note": "“Better for us to serve the Egyptians.”"
+                },
+                {
+                  "ref": "Jdg.9.28"
+                },
+                {
+                  "ref": "1Ki.12.4",
+                  "note": "Lighten the hard service of your father, “and we will serve you”."
+                },
+                {
+                  "ref": "Jer.27.6",
+                  "to": "Jer.27.8",
+                  "role": "defining",
+                  "note": "The nations shall serve Nebuchadnezzar."
+                },
+                {
+                  "ref": "Deu.28.48",
+                  "note": "You will serve your enemies, because you did not serve Yahweh with joy (28:47)."
+                },
+                {
+                  "ref": "Ezk.29.18",
+                  "note": "Nebuchadnezzar’s army served a great service against Tyre."
+                }
+              ]
+            },
+            {
+              "id": "serve-yahweh",
+              "gloss": "serve Yahweh, worship him",
+              "definition": "Belong to Yahweh as his servant and render him worship and obedience: fearing him, holding to him, keeping his commands, offering to him.",
+              "evidence": [
+                {
+                  "ref": "Exo.4.23",
+                  "role": "defining",
+                  "note": "“Let my son go, that he may serve me.”"
+                },
+                {
+                  "ref": "Exo.3.12",
+                  "note": "“You will serve God on this mountain”; Act 7:7."
+                },
+                {
+                  "ref": "Exo.7.16"
+                },
+                {
+                  "ref": "Deu.6.13",
+                  "role": "defining",
+                  "note": "“You shall fear Yahweh your God and serve him”; quoted Mat 4:10, Luk 4:8."
+                },
+                {
+                  "ref": "Deu.10.12",
+                  "note": "Fear, walk in his ways, love him, serve him with all your heart."
+                },
+                {
+                  "ref": "Deu.10.20"
+                },
+                {
+                  "ref": "Jos.24.14",
+                  "role": "defining",
+                  "note": "“Fear Yahweh and serve him in sincerity and truth, and put away the gods your fathers served.”"
+                },
+                {
+                  "ref": "Jos.24.15",
+                  "role": "defining",
+                  "note": "“Choose this day whom you will serve … as for me and my house, we will serve Yahweh.”"
+                },
+                {
+                  "ref": "1Sa.12.24"
+                },
+                {
+                  "ref": "Psa.2.11",
+                  "note": "Serve Yahweh with fear."
+                },
+                {
+                  "ref": "Psa.100.2",
+                  "note": "Serve Yahweh with gladness."
+                },
+                {
+                  "ref": "Zep.3.9",
+                  "note": "All peoples to serve him with one shoulder."
+                },
+                {
+                  "ref": "Mal.3.14",
+                  "note": "“It is vain to serve God.”"
+                },
+                {
+                  "ref": "Mal.3.17",
+                  "note": "As a man spares his son who serves him."
+                },
+                {
+                  "ref": "Mal.3.18",
+                  "role": "defining",
+                  "note": "The difference between the righteous and the wicked, between one who serves God and one who does not."
+                }
+              ]
+            },
+            {
+              "id": "serve-gods",
+              "gloss": "serve other gods",
+              "definition": "Give other gods the service owed to Yahweh, bowing down to them; the pointing תָעָבְדֵם in the commandment (Exo 20:5; Deu 5:9) is analysed by some as hophal, but its sense is this one.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.5",
+                  "role": "defining",
+                  "note": "“You shall not bow down to them nor serve them.”"
+                },
+                {
+                  "ref": "Exo.23.24"
+                },
+                {
+                  "ref": "Deu.5.9"
+                },
+                {
+                  "ref": "Deu.13.3",
+                  "note": "“Let us go after other gods … and let us serve them.”"
+                },
+                {
+                  "ref": "Deu.7.4",
+                  "note": "They will turn your son away to serve other gods."
+                },
+                {
+                  "ref": "Deu.8.19",
+                  "role": "defining",
+                  "note": "If you go after other gods and serve them and bow down to them, you will perish."
+                },
+                {
+                  "ref": "Jdg.2.11",
+                  "note": "They served the Baals."
+                },
+                {
+                  "ref": "2Ki.10.18",
+                  "note": "Ahab served Baal a little; Jehu will serve him much."
+                },
+                {
+                  "ref": "2Ki.17.33",
+                  "note": "They feared Yahweh and served their own gods."
+                },
+                {
+                  "ref": "Jer.16.13"
+                }
+              ]
+            },
+            {
+              "id": "serve-sanctuary",
+              "gloss": "serve the service of the tent",
+              "definition": "Of the Levites and priests: do the work of the tent of meeting, which Yahweh gave them.",
+              "evidence": [
+                {
+                  "ref": "Num.3.7",
+                  "role": "defining",
+                  "note": "“To serve the service of the tabernacle.”"
+                },
+                {
+                  "ref": "Num.4.23"
+                },
+                {
+                  "ref": "Num.8.11",
+                  "note": "Waved before Yahweh, “to serve the service of Yahweh”."
+                },
+                {
+                  "ref": "Num.8.25",
+                  "note": "From fifty years they return from the service and serve no more."
+                },
+                {
+                  "ref": "Num.18.6"
+                },
+                {
+                  "ref": "Num.18.7",
+                  "role": "defining",
+                  "note": "“You shall serve; I give your priesthood as a service of gift.”"
+                },
+                {
+                  "ref": "Jos.22.27",
+                  "note": "To serve the service of Yahweh before him with burnt offerings."
+                }
+              ],
+              "kin": [
+                "sanctuary-service"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be worked, tilled",
+          "senses": [
+            {
+              "gloss": "be worked, tilled",
+              "definition": "Of land: be worked and sown; of a king, be served by a field.",
+              "evidence": [
+                {
+                  "ref": "Deu.21.4",
+                  "role": "defining",
+                  "note": "A valley “which is not worked nor sown”."
+                },
+                {
+                  "ref": "Ezk.36.9",
+                  "role": "defining",
+                  "note": "“You will be worked and sown.”"
+                },
+                {
+                  "ref": "Ezk.36.34"
+                },
+                {
+                  "ref": "Ecc.5.8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be worked; be laid on as service",
+          "senses": [
+            {
+              "gloss": "be worked; be laid on as service",
+              "definition": "Of a heifer: be put to work; of hard service, be laid on a people.",
+              "evidence": [
+                {
+                  "ref": "Deu.21.3",
+                  "role": "defining",
+                  "note": "A heifer “which has not been worked, which has not pulled in a yoke”."
+                },
+                {
+                  "ref": "Isa.14.3",
+                  "note": "The hard service which was laid on you."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make serve, enslave; make work",
+          "senses": [
+            {
+              "gloss": "make serve, enslave",
+              "definition": "Make someone work or serve: Egypt enslaving Israel, Yahweh making Israel serve its enemies, a king making people labour; and, once, Josiah making all Israel serve Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Exo.1.13",
+                  "role": "defining",
+                  "note": "The Egyptians made the sons of Israel serve with rigour."
+                },
+                {
+                  "ref": "Exo.6.5",
+                  "note": "“whom the Egyptians are making to serve”."
+                },
+                {
+                  "ref": "Jer.17.4",
+                  "note": "“I will make you serve your enemies.”"
+                },
+                {
+                  "ref": "Ezk.29.18"
+                },
+                {
+                  "ref": "2Ch.2.17",
+                  "note": "To make the people work."
+                },
+                {
+                  "ref": "2Ch.34.33",
+                  "note": "Josiah made all who were in Israel serve Yahweh their God."
+                },
+                {
+                  "ref": "Isa.43.23",
+                  "role": "defining",
+                  "note": "“I have not made you serve with offerings, nor wearied you with frankincense.”"
+                },
+                {
+                  "ref": "Isa.43.24",
+                  "role": "defining",
+                  "note": "“But you have made me serve with your sins; you have wearied me with your iniquities.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λατρεύω",
+          "gloss": "serve, worship",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.6.13, תַעֲבֹד → λατρεύσεις; Exo.4.23, וְיַעַבְדֵנִי → λατρεύσῃ; Jos.24.15 → λατρεύειν"
+            },
+            {
+              "ref": "Mat.4.10",
+              "note": "Quotes Deu 6:13: “him only shall you serve”."
+            },
+            {
+              "ref": "Luk.4.8"
+            },
+            {
+              "ref": "Act.7.7",
+              "note": "“After that they will come out and serve me in this place” (Gen 15:14; Exo 3:12)."
+            },
+            {
+              "ref": "Heb.9.14",
+              "note": "To serve the living God."
+            }
+          ]
+        },
+        {
+          "lemma": "δουλεύω",
+          "gloss": "be a slave, serve",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.100.2, עִבְדוּ → δουλεύσατε; Mal.3.14, עֲבֹד → δουλεύων"
+            },
+            {
+              "ref": "Mat.6.24",
+              "note": "No one can serve two masters: God and mammon."
+            },
+            {
+              "ref": "1Th.1.9",
+              "note": "Turned from idols to serve a living and true God."
+            },
+            {
+              "ref": "Rom.6.6"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָרֵא",
+            "note": "Fear Yahweh and serve him.",
+            "evidence": [
+              {
+                "ref": "Deu.6.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.24.14"
+              },
+              {
+                "ref": "1Sa.12.24"
+              },
+              {
+                "ref": "Psa.2.11"
+              }
+            ]
+          },
+          {
+            "lemma": "הִשְׁתַּחֲוָה",
+            "note": "Bow down and serve.",
+            "evidence": [
+              {
+                "ref": "Exo.20.5"
+              },
+              {
+                "ref": "Deu.8.19"
+              },
+              {
+                "ref": "Gen.27.29"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַר",
+            "note": "Work and keep.",
+            "evidence": [
+              {
+                "ref": "Gen.2.15"
+              }
+            ]
+          },
+          {
+            "lemma": "עָשָׂה",
+            "note": "Yahweh does his deed and works his work.",
+            "evidence": [
+              {
+                "ref": "Isa.28.21",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָבַד אֱלֹהִים אֲחֵרִים",
+            "gloss": "serve other gods",
+            "evidence": [
+              {
+                "ref": "Deu.7.4"
+              },
+              {
+                "ref": "Deu.8.19"
+              },
+              {
+                "ref": "Jer.16.13"
+              }
+            ]
+          },
+          {
+            "phrase": "עָבַד אֶת־עֲבֹדַת",
+            "gloss": "serve the service (of the tent, of Yahweh)",
+            "evidence": [
+              {
+                "ref": "Num.3.7"
+              },
+              {
+                "ref": "Num.8.11"
+              },
+              {
+                "ref": "Jos.22.27"
+              }
+            ]
+          },
+          {
+            "phrase": "עֹבֵד אֲדָמָה",
+            "gloss": "a worker of the ground",
+            "evidence": [
+              {
+                "ref": "Gen.4.2"
+              },
+              {
+                "ref": "Pro.12.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֲבֹדָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "work, labour; bondage; service; the service of worship",
+      "bdb": [
+        "p.ac.ak"
+      ],
+      "cognate_ids": [
+        "ar-abada"
+      ],
+      "senses": [
+        {
+          "id": "bondage",
+          "gloss": "hard labour, bondage",
+          "definition": "Labour forced on a people: Israel’s service in Egypt, and the heavy service of a king or of exile.",
+          "evidence": [
+            {
+              "ref": "Exo.1.14",
+              "role": "defining",
+              "note": "They made their lives bitter with hard service in mortar and brick and every service in the field."
+            },
+            {
+              "ref": "Exo.2.23",
+              "role": "defining",
+              "note": "Israel groaned because of the bondage, and their cry went up to God."
+            },
+            {
+              "ref": "Exo.6.6",
+              "note": "“I will deliver you from their bondage.”"
+            },
+            {
+              "ref": "Deu.26.6"
+            },
+            {
+              "ref": "1Ki.12.4"
+            },
+            {
+              "ref": "Isa.14.3"
+            },
+            {
+              "ref": "Lam.1.3"
+            }
+          ]
+        },
+        {
+          "id": "labour",
+          "gloss": "work, labour",
+          "definition": "A man’s daily work, the tilling of the ground, a craft.",
+          "evidence": [
+            {
+              "ref": "Psa.104.23",
+              "role": "defining",
+              "note": "Man goes out to his work and his labour until evening."
+            },
+            {
+              "ref": "Psa.104.14",
+              "note": "Plants for the labour of man, to bring forth bread."
+            },
+            {
+              "ref": "1Ch.27.26",
+              "note": "Over those doing the work of the field, for the tilling of the ground."
+            },
+            {
+              "ref": "1Ch.4.21",
+              "note": "The house of the linen work."
+            },
+            {
+              "ref": "Gen.29.27",
+              "note": "Jacob’s service for Rachel."
+            }
+          ],
+          "kin": [
+            "work",
+            "serve-master"
+          ]
+        },
+        {
+          "id": "sanctuary-service",
+          "gloss": "the service of the tent and temple",
+          "definition": "The work of the Levites and priests at the tent of meeting and the house of Yahweh: carrying, keeping, and ministering, given them by Yahweh.",
+          "evidence": [
+            {
+              "ref": "Num.3.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.4.47",
+              "role": "defining",
+              "note": "“To serve the service of service and the service of burden in the tent of meeting.”"
+            },
+            {
+              "ref": "Num.8.24"
+            },
+            {
+              "ref": "Num.18.7",
+              "role": "defining",
+              "note": "“I give your priesthood as a service of gift.”"
+            },
+            {
+              "ref": "Exo.30.16",
+              "note": "The atonement silver given for the service of the tent of meeting."
+            },
+            {
+              "ref": "Exo.39.42"
+            },
+            {
+              "ref": "1Ch.23.28"
+            },
+            {
+              "ref": "1Ch.28.13"
+            },
+            {
+              "ref": "2Ch.35.10"
+            }
+          ]
+        },
+        {
+          "id": "rite",
+          "gloss": "a rite of worship",
+          "definition": "A service rendered to Yahweh as worship: the Passover rite kept in the land, burnt offerings and sacrifices before him.",
+          "evidence": [
+            {
+              "ref": "Exo.12.25",
+              "role": "defining",
+              "note": "“You shall keep this service.”"
+            },
+            {
+              "ref": "Exo.12.26",
+              "role": "defining",
+              "note": "“What do you mean by this service?”"
+            },
+            {
+              "ref": "Exo.13.5"
+            },
+            {
+              "ref": "Jos.22.27",
+              "note": "The service of Yahweh before him with burnt offerings, sacrifices and peace offerings."
+            },
+            {
+              "ref": "2Ch.35.16",
+              "note": "All the service of Yahweh was prepared that day, to keep the Passover."
+            }
+          ]
+        },
+        {
+          "id": "work-of-service",
+          "gloss": "work of service: ordinary labour (מְלֶאכֶת עֲבֹדָה)",
+          "definition": "In Lev 23 and Num 28–29, the work forbidden on the holy convocations other than the weekly שַׁבָּת and the Day of Atonement, where “any work” is forbidden; on the first and seventh days of מַצּוֹת, preparing food is still allowed (Exo 12:16). Elsewhere the same words name the sanctuary’s work (Exo 36:1; 1Ch 28:20).",
+          "evidence": [
+            {
+              "ref": "Lev.23.7",
+              "role": "defining",
+              "note": "First day of מַצּוֹת: “you shall do no work of service”."
+            },
+            {
+              "ref": "Lev.23.8"
+            },
+            {
+              "ref": "Lev.23.21",
+              "note": "The day of the weeks."
+            },
+            {
+              "ref": "Lev.23.25",
+              "note": "The first of the seventh month."
+            },
+            {
+              "ref": "Lev.23.35",
+              "note": "First day of סֻכּוֹת."
+            },
+            {
+              "ref": "Lev.23.36",
+              "note": "The eighth day, עֲצֶרֶת."
+            },
+            {
+              "ref": "Num.28.18"
+            },
+            {
+              "ref": "Num.28.25"
+            },
+            {
+              "ref": "Num.28.26"
+            },
+            {
+              "ref": "Num.29.1"
+            },
+            {
+              "ref": "Num.29.12"
+            },
+            {
+              "ref": "Num.29.35"
+            }
+          ]
+        },
+        {
+          "id": "yahwehs-work",
+          "gloss": "Yahweh’s work; the work of righteousness",
+          "definition": "What Yahweh, or righteousness, works and brings about; set in parallel with מַעֲשֶׂה “deed”.",
+          "evidence": [
+            {
+              "ref": "Isa.28.21",
+              "role": "defining",
+              "note": "“To do his deed, strange is his deed; and to work his work, foreign is his work.”"
+            },
+            {
+              "ref": "Isa.32.17",
+              "role": "defining",
+              "note": "“The deed of righteousness will be peace, and the work of righteousness quietness and trust for ever.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λατρεία",
+          "gloss": "service, worship",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.12.25, הָעֲבֹדָה → λατρείαν; Exo.12.26 → λατρεία"
+            },
+            {
+              "ref": "Rom.9.4",
+              "note": "To Israel belong “the λατρεία and the promises”."
+            },
+            {
+              "ref": "Heb.9.1",
+              "note": "The first covenant had ordinances of service."
+            },
+            {
+              "ref": "Heb.9.6",
+              "note": "The priests going in continually, accomplishing the services."
+            },
+            {
+              "ref": "Rom.12.1",
+              "note": "“Present your bodies a living sacrifice … your reasonable service.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מַעֲשֶׂה",
+            "note": "Deed and work.",
+            "evidence": [
+              {
+                "ref": "Isa.28.21"
+              },
+              {
+                "ref": "Isa.32.17"
+              }
+            ]
+          },
+          {
+            "lemma": "מְלָאכָה",
+            "note": "Work and service together.",
+            "evidence": [
+              {
+                "ref": "Exo.36.1"
+              },
+              {
+                "ref": "1Ch.28.20"
+              },
+              {
+                "ref": "1Ch.27.26"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מְלֶאכֶת עֲבֹדָה",
+            "gloss": "work of service, ordinary labour",
+            "evidence": [
+              {
+                "ref": "Lev.23.7"
+              },
+              {
+                "ref": "Lev.23.8"
+              },
+              {
+                "ref": "Lev.23.21"
+              },
+              {
+                "ref": "Lev.23.25"
+              },
+              {
+                "ref": "Lev.23.35"
+              },
+              {
+                "ref": "Lev.23.36"
+              },
+              {
+                "ref": "Num.28.18"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲבֹדָה קָשָׁה",
+            "gloss": "hard service",
+            "evidence": [
+              {
+                "ref": "Exo.1.14"
+              },
+              {
+                "ref": "Deu.26.6"
+              },
+              {
+                "ref": "Isa.14.3"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲבֹדַת אֹהֶל מוֹעֵד",
+            "gloss": "the service of the tent of meeting",
+            "evidence": [
+              {
+                "ref": "Exo.30.16"
+              },
+              {
+                "ref": "Num.4.47"
+              },
+              {
+                "ref": "Num.8.24"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עַבְדוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bondage, servitude",
+      "bdb": [
+        "p.ac.an"
+      ],
+      "cognate_ids": [
+        "ar-abd"
+      ],
+      "senses": [
+        {
+          "gloss": "bondage, servitude",
+          "definition": "The state of being slaves: Judah under Persia, and the bondage in Egypt to which the rebels wished to return.",
+          "evidence": [
+            {
+              "ref": "Ezr.9.8",
+              "role": "defining",
+              "note": "“A little reviving in our bondage.”"
+            },
+            {
+              "ref": "Ezr.9.9",
+              "role": "defining",
+              "note": "“For we are slaves; yet in our bondage our God has not forsaken us.”"
+            },
+            {
+              "ref": "Neh.9.17",
+              "note": "They appointed a head to return to their bondage."
+            }
+          ],
+          "kin": [
+            "bondage"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבֻדָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "household of servants",
+      "bdb": [
+        "p.ac.al"
+      ],
+      "cognate_ids": [
+        "ar-abd"
+      ],
+      "senses": [
+        {
+          "gloss": "body of servants, household",
+          "definition": "A great man’s servants taken together, listed beside his flocks and herds.",
+          "evidence": [
+            {
+              "ref": "Gen.26.14",
+              "role": "defining",
+              "note": "Isaac had flocks, herds “and many servants”."
+            },
+            {
+              "ref": "Job.1.3",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "slave"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבָד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "deed, work",
+      "summary": "Once, in Ecclesiastes, in the sense that Aramaic עֲבַד “do” gives its nouns; whether it is a Hebrew noun of “work” or an Aramaism is not certain.",
+      "bdb": [
+        "p.ac.ad"
+      ],
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "senses": [
+        {
+          "gloss": "deed, work",
+          "definition": "What people do.",
+          "evidence": [
+            {
+              "ref": "Ecc.9.1",
+              "role": "defining",
+              "note": "“The righteous and the wise and their works are in the hand of God.”"
+            }
+          ],
+          "kin": [
+            "make-do"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעְבָּד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "deed",
+      "summary": "Once, in Job; the noun Biblical Aramaic has as מַעֲבַד (Dan 4:34).",
+      "bdb": [
+        "p.ac.ar"
+      ],
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "senses": [
+        {
+          "gloss": "deed",
+          "definition": "What men do, which God knows.",
+          "evidence": [
+            {
+              "ref": "Job.34.25",
+              "role": "defining",
+              "note": "“He knows their deeds, and overturns them in the night.”"
+            }
+          ],
+          "kin": [
+            "make-do"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבַד",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "do, make",
+      "summary": "Scripture’s Aramaic uses עֲבַד where Hebrew uses עָשָׂה: God makes heaven and earth and does signs, a king makes an image or a feast, the horn makes war. For “serve” the same Aramaic uses פְּלַח (Dan 3:28; 6:21).",
+      "bdb": [
+        "xp.aa.aa"
+      ],
+      "cognate_ids": [
+        "arc-abad",
+        "phn-abd-v"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "do, make",
+          "senses": [
+            {
+              "id": "make-do",
+              "gloss": "do, make, perform",
+              "definition": "Make a thing, do a deed, perform a rite.",
+              "evidence": [
+                {
+                  "ref": "Jer.10.11",
+                  "role": "defining",
+                  "note": "“The gods who did not make the heavens and the earth shall perish.”"
+                },
+                {
+                  "ref": "Dan.3.1",
+                  "note": "Nebuchadnezzar made an image of gold."
+                },
+                {
+                  "ref": "Dan.3.32",
+                  "role": "defining",
+                  "note": "The signs and wonders the Most High God has done with me."
+                },
+                {
+                  "ref": "Dan.4.32",
+                  "note": "He does according to his will in the host of heaven; none can say, “What have you done?”"
+                },
+                {
+                  "ref": "Dan.5.1",
+                  "note": "Belshazzar made a great feast."
+                },
+                {
+                  "ref": "Dan.6.23",
+                  "note": "“Before you, O king, I have done no harm.”"
+                },
+                {
+                  "ref": "Dan.6.28",
+                  "note": "He does signs and wonders in heaven and on earth."
+                },
+                {
+                  "ref": "Dan.7.21",
+                  "note": "The horn made war with the saints; Rev 13:7."
+                },
+                {
+                  "ref": "Ezr.6.16",
+                  "note": "They performed the dedication of the house of God with joy."
+                },
+                {
+                  "ref": "Ezr.7.18"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpeel",
+          "gloss": "be done, be made",
+          "senses": [
+            {
+              "gloss": "be done; be made into",
+              "definition": "Be done, carried out; be made into something (limbs, a dunghill).",
+              "evidence": [
+                {
+                  "ref": "Ezr.7.23",
+                  "role": "defining",
+                  "note": "Whatever is decreed by the God of heaven, let it be done diligently."
+                },
+                {
+                  "ref": "Ezr.5.8",
+                  "note": "The work is being done diligently."
+                },
+                {
+                  "ref": "Ezr.6.12"
+                },
+                {
+                  "ref": "Dan.2.5",
+                  "role": "defining",
+                  "note": "“You will be made into limbs.”"
+                },
+                {
+                  "ref": "Dan.3.29"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבֵד",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "servant",
+      "bdb": [
+        "xp.aa.ab"
+      ],
+      "cognate_ids": [
+        "ar-abd",
+        "uga-abd",
+        "phn-abd-n",
+        "sab-abd"
+      ],
+      "senses": [
+        {
+          "gloss": "servant, of a king or of God",
+          "definition": "A king’s servants, and the servants of the Most High God.",
+          "evidence": [
+            {
+              "ref": "Dan.6.21",
+              "role": "defining",
+              "note": "“Daniel, servant of the living God, whom you serve (פָּלַח) continually.”"
+            },
+            {
+              "ref": "Dan.3.26",
+              "note": "“Servants of the Most High God, come out.”"
+            },
+            {
+              "ref": "Dan.3.28",
+              "note": "He sent his messenger and delivered his servants."
+            },
+            {
+              "ref": "Ezr.5.11",
+              "role": "defining",
+              "note": "“We are the servants of the God of heaven and earth.”"
+            },
+            {
+              "ref": "Dan.2.7",
+              "note": "“Let the king tell his servants the dream.”"
+            },
+            {
+              "ref": "Ezr.4.11"
+            }
+          ],
+          "kin": [
+            "servant-of-yahweh",
+            "subject"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבִידָה",
+      "lang": "arc",
+      "root": "עבידה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "work; service; administration",
+      "bdb": [
+        "xp.aa.ad"
+      ],
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "senses": [
+        {
+          "gloss": "work; service; administration",
+          "definition": "The work of building the house of God, the service of God by priests and Levites, and the affairs of a province.",
+          "evidence": [
+            {
+              "ref": "Ezr.4.24",
+              "role": "defining",
+              "note": "The work of the house of God ceased."
+            },
+            {
+              "ref": "Ezr.6.18",
+              "role": "defining",
+              "note": "Priests and Levites set in their divisions “for the service of God”, as written in the book of Moses."
+            },
+            {
+              "ref": "Ezr.5.8"
+            },
+            {
+              "ref": "Dan.2.49",
+              "note": "Set over the affairs of the province of Babylon."
+            }
+          ],
+          "kin": [
+            "sanctuary-service"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲבַד",
+      "lang": "arc",
+      "root": "מעבד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "work, deed",
+      "bdb": [
+        "xp.aa.ae"
+      ],
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "senses": [
+        {
+          "gloss": "work, deed",
+          "definition": "What God does.",
+          "evidence": [
+            {
+              "ref": "Dan.4.34",
+              "role": "defining",
+              "note": "“All his works are truth and his ways justice.”"
+            }
+          ],
+          "kin": [
+            "make-do"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבַד",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "do, make; keep (a feast)",
+      "summary": "The Peshitta’s ܥܒܕ (ʿbad), as in Biblical Aramaic: do, make, and keep a feast, where the Greek has ποιέω.",
+      "cognate_ids": [
+        "arc-abad",
+        "phn-abd-v"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "do, make",
+          "senses": [
+            {
+              "gloss": "do (the will, the work); keep (the Passover)",
+              "definition": "Do the will or works of the one who sends; keep a feast.",
+              "evidence": [
+                {
+                  "ref": "Jhn.4.34",
+                  "role": "defining",
+                  "note": "“My food is to do the will of him who sent me and to finish his work (עְבָדֵהּ).”"
+                },
+                {
+                  "ref": "Jhn.17.4",
+                  "note": "“I have finished the work which you gave me to do.”"
+                },
+                {
+                  "ref": "Mat.7.21"
+                },
+                {
+                  "ref": "Mat.26.18",
+                  "role": "defining",
+                  "note": "“I will keep the Passover at your house with my disciples.”"
+                },
+                {
+                  "ref": "Mat.26.19"
+                }
+              ],
+              "kin": [
+                "make-do"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַבְדָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "servant, slave",
+      "summary": "The Peshitta’s ܥܒܕܐ (ʿabdā), for δοῦλος and also for παῖς in Mat 12:18.",
+      "cognate_ids": [
+        "ar-abd",
+        "uga-abd",
+        "phn-abd-n",
+        "sab-abd"
+      ],
+      "senses": [
+        {
+          "gloss": "servant, slave",
+          "definition": "A servant of a master, of sin, or of God; the servant of Isa 42:1 and the form Christ took.",
+          "evidence": [
+            {
+              "ref": "Mat.12.18",
+              "role": "defining",
+              "note": "Quoting Isa 42:1: “Behold my servant.”"
+            },
+            {
+              "ref": "Php.2.7",
+              "role": "defining",
+              "note": "He took the likeness of a servant."
+            },
+            {
+              "ref": "Jhn.13.16"
+            },
+            {
+              "ref": "Jhn.15.15"
+            },
+            {
+              "ref": "Rom.6.16",
+              "note": "Servants of the one you obey, whether of sin or of obedience."
+            },
+            {
+              "ref": "Rom.6.22"
+            },
+            {
+              "ref": "Mrk.10.44"
+            },
+            {
+              "ref": "Rom.1.1"
+            }
+          ],
+          "kin": [
+            "slave",
+            "servant-of-yahweh"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עְבָדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "work, deed",
+      "summary": "The Peshitta’s ܥܒܕܐ (ʿbādā), for ἔργον.",
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "senses": [
+        {
+          "gloss": "work, deed",
+          "definition": "A deed done; the work given to be done.",
+          "evidence": [
+            {
+              "ref": "Jhn.4.34",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.17.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.5.16",
+              "note": "That they may see your good works."
+            },
+            {
+              "ref": "Jhn.6.28"
+            },
+            {
+              "ref": "Jhn.6.29"
+            }
+          ],
+          "kin": [
+            "make-do"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַבְדּוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bondage, service",
+      "summary": "The Peshitta’s ܥܒܕܘܬܐ (ʿabdūtā), for δουλεία.",
+      "cognate_ids": [
+        "ar-abd"
+      ],
+      "senses": [
+        {
+          "gloss": "bondage",
+          "definition": "The state of a slave, set against sonship and freedom.",
+          "evidence": [
+            {
+              "ref": "Rom.8.15",
+              "role": "defining",
+              "note": "Not the spirit of bondage again to fear, but the spirit of sonship."
+            },
+            {
+              "ref": "Gal.5.1",
+              "role": "defining",
+              "note": "Do not be held again in the yoke of bondage."
+            },
+            {
+              "ref": "Heb.2.15",
+              "note": "Through fear of death subject to bondage all their life."
+            },
+            {
+              "ref": "Gal.4.24"
+            }
+          ],
+          "kin": [
+            "bondage"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָבוֹדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "doer, maker",
+      "summary": "The Peshitta’s ܥܒܘܕܐ (ʿābodā).",
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "senses": [
+        {
+          "gloss": "doer, maker",
+          "definition": "One who does the word or the law; the maker of a city.",
+          "evidence": [
+            {
+              "ref": "Jas.1.22",
+              "role": "defining",
+              "note": "Be doers of the word, not hearers only."
+            },
+            {
+              "ref": "Jas.1.25"
+            },
+            {
+              "ref": "Rom.2.13"
+            },
+            {
+              "ref": "Heb.11.10",
+              "note": "The city whose builder and maker is God."
+            }
+          ],
+          "kin": [
+            "make-do"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעְבְּדָנוּתָא",
+      "lang": "syc",
+      "root": "מעבד",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "working, operation",
+      "summary": "The Peshitta’s ܡܥܒܕܢܘܬܐ, for ἐνέργεια; SEDRA has the agent noun ܡܥܒܕܢܐ “worker” once (Rom 4:15).",
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "senses": [
+        {
+          "gloss": "working, operation",
+          "definition": "The working of power, God’s or the adversary’s.",
+          "evidence": [
+            {
+              "ref": "Eph.1.19",
+              "role": "defining",
+              "note": "According to the working of the might of his strength."
+            },
+            {
+              "ref": "Eph.3.7"
+            },
+            {
+              "ref": "2Th.2.9"
+            },
+            {
+              "ref": "2Th.2.11"
+            }
+          ],
+          "kin": [
+            "make-do"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שׁוּעְבָּדָא",
+      "lang": "syc",
+      "root": "שעבד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "subjection",
+      "summary": "The Peshitta’s ܫܘܥܒܕܐ, the noun of the causative “bring into subjection”, for ὑποταγή.",
+      "cognate_ids": [
+        "ar-abd"
+      ],
+      "senses": [
+        {
+          "gloss": "subjection",
+          "definition": "Being placed under another.",
+          "evidence": [
+            {
+              "ref": "1Ti.2.11",
+              "role": "defining",
+              "note": "Learn in quietness with all subjection."
+            },
+            {
+              "ref": "1Ti.3.4"
+            },
+            {
+              "ref": "Gal.2.5"
+            }
+          ],
+          "kin": [
+            "subject"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-abada",
+      "lang": "ar",
+      "form": "عَبَدَ",
+      "translit": "ʿabada",
+      "gloss": "serve, worship God; obey him humbly; (II, IV, X) enslave",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Verbal noun عِبَادَة “service, worship”; form V تعبّد “made himself a servant of God, devoted himself to worship”. Arabic keeps ع (ʿ) apart from غ (ġ), so the root’s ע is ʿ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1934, root عبد, عَبَدَ ٱللّٰهَ (n27786); عبّدهُ (n27787); تعبّد (n27789)"
+        }
+      ]
+    },
+    {
+      "id": "ar-abd",
+      "lang": "ar",
+      "form": "عَبْدٌ",
+      "translit": "ʿabd",
+      "gloss": "slave, bondman; servant (of God)",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1935, root عبد, عَبْدٌ (n27791)"
+        }
+      ]
+    },
+    {
+      "id": "uga-abd",
+      "lang": "uga",
+      "form": "𐎓𐎁𐎄",
+      "translit": "ʿbd",
+      "gloss": "servant, slave",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "/ʿabd-/, syllabic ab-du; Segert sets it beside Hebrew עֶבֶד, Aramaic ʿabd- and Arabic ʿabd. Ugaritic writes ʿ and ġ with different signs. Also in names, ʿbd-yrḫ “servant of (the god) Yrḫ”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 195, §93 Glossary, ʿbd"
+        }
+      ]
+    },
+    {
+      "id": "phn-abd-v",
+      "lang": "phn",
+      "form": "𐤏𐤁𐤃",
+      "translit": "ʿbd",
+      "gloss": "serve an overlord; serve a god; do (what is requested)",
+      "relation": "cognate",
+      "note": "Phoenician “may they greatly serve Aztwadda” (KAI 26 A III 9); Punic “he served the holy ones like a priest” (CIS i 6000); Neo-Punic “because they did for him what he had requested” (RES 669) and “do what she has requested” (KAI 162). The “do” sense, the Aramaic one, is found here too.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 351, ʿ-B-D"
+        }
+      ]
+    },
+    {
+      "id": "phn-abd-n",
+      "lang": "phn",
+      "form": "𐤏𐤁𐤃",
+      "translit": "ʿbd",
+      "gloss": "servant of a god, worshipper; servant, subject, official of a king; temple servitor",
+      "relation": "cognate",
+      "note": "“Aztwadda … the servant of Baal” (KAI 26 A I 1); “PN, governor of Carthage, servant of Hirom” (KAI 31); “servitor in the temple of Astarte” (CIS i 3779).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 351–352, ʿBD II and ʿBD III"
+        }
+      ]
+    },
+    {
+      "id": "sab-abd",
+      "lang": "sem",
+      "form": "𐩲𐩨𐩵",
+      "translit": "ʿbd",
+      "gloss": "servant, slave (of a man, tribe or god); client of a king; (v.) enslave; submit oneself",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Sabaic (Old South Arabian), which keeps ʿ and ġ apart: “a manservant or maidservant” (R 3910/3); the god’s “freemen and his slaves” (R 3945/6); “they submitted themselves to the kings of A.” (Ist 7608b/8).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 349, ʿBD"
+        }
+      ]
+    },
+    {
+      "id": "arc-abad",
+      "lang": "arc",
+      "form": "עֲבַד",
+      "translit": "ʿăḇaḏ",
+      "gloss": "do, labour, make, act",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums, where it renders Hebrew עָשָׂה (Targ. Gen 1:7, “God made the firmament”). With the Peshitta and Biblical Aramaic, it shows Aramaic’s use of the root for “do, make”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲבַד I",
+          "note": "“corresp. to h. עָשָׂה … to do, labor; to make; to act”; Targ. Gen 1:7, 31:26."
+        }
+      ]
+    },
+    {
+      "id": "akk-abdu",
+      "lang": "akk",
+      "form": "abdu",
+      "translit": "abdu",
+      "gloss": "servant",
+      "relation": "possible",
+      "note": "Six attestations, all Neo-Assyrian, the period when Aramaic was spoken across Assyria; it may be a borrowing from West Semitic rather than an inherited word. Named on עֶבֶד as possible only, so it counts neither way.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000085450, abdu [servant] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "whom-you-will-serve",
+      "statement": "Israel served Egypt in hard bondage and groaned under it (Exo 1:13–14; 2:23). Yahweh’s demand to Pharaoh uses the same verb for the new master: “Let my son go, that he may serve me” (Exo 4:23; 7:16), and the sign to Moses was that the people would serve God at the mountain (Exo 3:12). So Israel are Yahweh’s servants because he brought them out of Egypt, and may not be sold as slaves (Lev 25:42, 55); Egypt is “the house of slaves” (Exo 20:2). The service is exclusive: “You shall fear Yahweh your God and serve him” (Deu 6:13), and not bow down to other gods nor serve them (Exo 20:5); Joshua sets the choice, “choose this day whom you will serve … as for me and my house, we will serve Yahweh” (Jos 24:14–15). When Israel would not serve Yahweh with joy, they served their enemies (Deu 28:47–48), and Malachi’s day will show the difference between one who serves God and one who does not (Mal 3:18). Jesus answers the tempter with Deu 6:13, “him only shall you serve” (Mat 4:10), and says no one can serve two masters (Mat 6:24); Paul writes that a man is the servant of whom he obeys, whether of sin or of righteousness, and that those set free from sin have become servants of God (Rom 6:16–22); the Thessalonians turned from idols to serve the living and true God (1Th 1:9). From the verses: redemption is a change of masters, not the end of service; Yahweh frees his people from bondage to serve him, and service given to another is taken from him.",
+      "evidence": [
+        {
+          "ref": "Exo.1.13",
+          "to": "Exo.1.14"
+        },
+        {
+          "ref": "Exo.2.23"
+        },
+        {
+          "ref": "Exo.4.23"
+        },
+        {
+          "ref": "Exo.7.16"
+        },
+        {
+          "ref": "Exo.3.12"
+        },
+        {
+          "ref": "Lev.25.42"
+        },
+        {
+          "ref": "Lev.25.55"
+        },
+        {
+          "ref": "Exo.20.2"
+        },
+        {
+          "ref": "Deu.6.13"
+        },
+        {
+          "ref": "Exo.20.5"
+        },
+        {
+          "ref": "Jos.24.14",
+          "to": "Jos.24.15"
+        },
+        {
+          "ref": "Deu.28.47",
+          "to": "Deu.28.48"
+        },
+        {
+          "ref": "Mal.3.18"
+        },
+        {
+          "ref": "Mat.4.10"
+        },
+        {
+          "ref": "Mat.6.24"
+        },
+        {
+          "ref": "Rom.6.16",
+          "to": "Rom.6.22"
+        },
+        {
+          "ref": "1Th.1.9"
+        }
+      ]
+    },
+    {
+      "topic": "the-servant-of-yahweh",
+      "statement": "Yahweh calls Israel “my servant, Jacob whom I have chosen” (Isa 41:8), yet Israel is a blind servant (Isa 42:19). He also presents a servant whom he upholds, his chosen, on whom he puts his spirit, who will bring justice to the nations (Isa 42:1–4); Matthew says this was fulfilled in Jesus, quoting it in full (Mat 12:17–21), and the Peshitta has עַבְדָּא there. The servant restores Jacob and is a light to the nations (Isa 49:5–6), which Paul and Barnabas take as their own commission (Act 13:47). Yahweh’s servant will act wisely and be high and lifted up (Isa 52:13); he is despised, bears the sins of many, is led as a lamb to the slaughter, and by his knowledge the righteous servant makes many righteous and bears their iniquities (Isa 53:3–12). Philip begins from Isa 53:7–8 and preaches Jesus (Act 8:32–35); Peter quotes the chapter of Christ’s sufferings (1Pe 2:22–25); Jesus says “he was numbered with the transgressors” must be fulfilled in him (Luk 22:37); and Peter preaches that God “glorified his servant Jesus” (Act 3:13). Paul writes that Christ took the form of a servant, the Peshitta’s עַבְדָּא, humbled himself and became obedient to death, the death of the cross; therefore God highly exalted him (Php 2:7–9), the order of Isa 52:13–53:12. Jesus himself came not to be served but to serve and to give his life a ransom for many (Mrk 10:45). Moses was faithful in Yahweh’s house as a servant, Christ as a son over his house (Num 12:7; Heb 3:5–6). From the verses: the servant of Isaiah is Jesus, whose service is his obedience to death for the sins of many, and whose exaltation follows from it.",
+      "evidence": [
+        {
+          "ref": "Isa.41.8"
+        },
+        {
+          "ref": "Isa.42.19"
+        },
+        {
+          "ref": "Isa.42.1",
+          "to": "Isa.42.4"
+        },
+        {
+          "ref": "Mat.12.17",
+          "to": "Mat.12.21"
+        },
+        {
+          "ref": "Isa.49.5",
+          "to": "Isa.49.6"
+        },
+        {
+          "ref": "Act.13.47"
+        },
+        {
+          "ref": "Isa.52.13"
+        },
+        {
+          "ref": "Isa.53.3",
+          "to": "Isa.53.12"
+        },
+        {
+          "ref": "Act.8.32",
+          "to": "Act.8.35"
+        },
+        {
+          "ref": "1Pe.2.22",
+          "to": "1Pe.2.25"
+        },
+        {
+          "ref": "Luk.22.37"
+        },
+        {
+          "ref": "Act.3.13"
+        },
+        {
+          "ref": "Php.2.7",
+          "to": "Php.2.9"
+        },
+        {
+          "ref": "Mrk.10.45"
+        },
+        {
+          "ref": "Num.12.7"
+        },
+        {
+          "ref": "Heb.3.5",
+          "to": "Heb.3.6"
+        }
+      ]
+    },
+    {
+      "topic": "the-service-of-worship",
+      "statement": "The Passover is called a עֲבֹדָה, a service Israel keeps in the land, and the children ask, “What do you mean by this service?” (Exo 12:25–27; 13:5). The Levites are given to Yahweh to serve the service of the tent, and the priesthood is “a service of gift” (Num 8:11; 18:6–7). Yahweh says he did not burden Israel with service in offerings, but they burdened him with service by their sins (Isa 43:23–24). Paul counts “the service” among Israel’s gifts (Rom 9:4), Hebrews describes the priests accomplishing the service of the first tent as a figure until the time of reformation (Heb 9:1, 6–10), and Christ’s blood cleanses the conscience from dead works “to serve the living God” (Heb 9:14). Paul calls believers to present their bodies a living sacrifice, “your reasonable service” (Rom 12:1). From the verses: the rites of the feasts were service rendered to Yahweh, pointing forward; the service he now asks is the whole life offered through Christ.",
+      "evidence": [
+        {
+          "ref": "Exo.12.25",
+          "to": "Exo.12.27"
+        },
+        {
+          "ref": "Exo.13.5"
+        },
+        {
+          "ref": "Num.8.11"
+        },
+        {
+          "ref": "Num.18.6",
+          "to": "Num.18.7"
+        },
+        {
+          "ref": "Isa.43.23",
+          "to": "Isa.43.24"
+        },
+        {
+          "ref": "Rom.9.4"
+        },
+        {
+          "ref": "Heb.9.1"
+        },
+        {
+          "ref": "Heb.9.6",
+          "to": "Heb.9.10"
+        },
+        {
+          "ref": "Heb.9.14"
+        },
+        {
+          "ref": "Rom.12.1"
+        }
+      ]
+    }
+  ],
+  "note": "Root key עבד. Sounds: Arabic, Ugaritic and Sabaic all show ʿ behind ע for both “serve” and “servant”; no cognate shows ġ, so there is no split behind the merged letter. The Aramaic and Punic sense “do, make” has no cognate in a language that keeps ʿ and ġ apart (Arabic عبد does not mean “do”), so its older sound is not shown by evidence; it is kept as one root with the Hebrew, which itself pairs עָבַד with עָשָׂה (Isa 28:21). No cognate was found for “till, work the ground”; scripture’s own use (Gen 2:5, 15; Exo 20:9) carries that sense. BDB key notes: p.ac.aa also counts the names עוֹבֵד/עֹבֵד אֱדֹם (11 tokens, “(no stem)”) and one Aramaic token (Ezr 7:18, “Peal”); xp.aa.aa counts one Hebrew token (Exo 3:12, qal) by spelling. The four “hophal” tokens (Exo 20:5, 23:24, Deu 5:9, 13:3) are kept with the qal sense “serve other gods”. Left out: the names עֶבֶד מֶלֶךְ (p.ac.ag, whose 907 tokens are in fact מֶלֶךְ filed by spelling), עֹבֵד אֱדֹם, עֶבֶד (n.pr., p.ac.ac), עַבְדִּי, עֹבַדְיָהוּ, עוֹבֵד, עֲבֵד נְגוֹ (both keys), עַבְדּוֹן, עַבְדָּא, עַבְדְּאֵל, עַבְדִּיאֵל: names belong in names/. Cross-reference keys m.ct.af and xm.al.ag have no tokens. Peshitta words from SEDRA root 1328 (lexemes 2219–2226, 3544, 3514) with verses from the BFBS word list; not entered: lexeme 2219 ܡܥܒܕܢܐ “worker” (Rom 4:15 only, mentioned in the summary of מַעְבְּדָנוּתָא), 3544 ܡܫܥܒܕܐ “subjected” (2Ti 3:3, one token) and 3514 (one token, Heb 12:27, no gloss in SEDRA). Peshitta checks: Mat 12:18 and Php 2:7 use ܥܒܕܐ; Act 3:13, 26, Mat 6:24 do not (not ʿabdā), so those are cited only from the Greek. The Peshitta’s “serve” is mostly ܦܠܚ (SEDRA root ILK), as Biblical Aramaic serves with פְּלַח (Dan 3:28; 6:21). Scan cites checked against page images 2026-11-11: Segert p. 195 (leaf 222); Krahmalkov p. 351 (local PDF page 353); Biella p. 349 (leaf 362). Krahmalkov p. 352 (ʿBD III) is OCR only (page unverified). Not consulted: Dillmann for Ge’ez ዐበደ (which the leads give as “be foolish, mad”, apparently not this root; Ge’ez serves with ገብረ), DULAT for an Ugaritic verb ʿbd, CAD for Akkadian abdu. Open questions for review: (1) the “work of service” reading (ordinary labour, narrower than כָּל־מְלָאכָה) rests on Lev 23’s contrast and Exo 12:16; see also laak.json. (2) Whether Act 3:13’s παῖς “servant” should be read as an allusion to Isa 52:13 (ἐδόξασεν; LXX δοξασθήσεται); the doctrine cites it only as Peter’s words. (3) The Greek λατρεία link to Rom 12:1 and Hebrews is through the Septuagint’s rendering of עֲבֹדָה (Exo 12:25–26), a bridge only. (4) The Syriac vocalisations in Hebrew script are standard forms, not copied from SEDRA’s vocalised words."
+}
