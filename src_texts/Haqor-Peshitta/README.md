@@ -6986,33 +6986,77 @@ Source checks for Galatians 5:
 
 Source checks for Galatians 6:
 
-- Verse 1 retains the plural spiritual addressees, restoring the person,
-  their caution, and their own possible temptation. Verse 2 keeps the
-  causal/result link and identifies the law as the Messiah's.
-- Verse 3 retains both being something and being nothing, followed by
-  self-deception. Verses 4–5 preserve the self/other contrast in boasting
-  and each person's own burden. Verse 4 retains plural "others."
-- Verse 6 preserves the sharing relationship between the person receiving
-  instruction and the person instructing, without duplicating the linked
-  demonstrative and pronoun into separate recipients.
-- Verse 7 retains "in anything" in the mocking statement and the sower/
-  harvest relation, with the human idiom rendered as generic "a person." Verse 8 preserves both "from" complements and the
-  corruption/eternal-life contrast with their respective participants.
-- Verse 9 renders the final impersonal clause naturally as "and it will
-  not weary us," retaining the first-person plural dative without changing
-  the final clause to an additional "we" subject. The earlier exhortation
-  "let us not grow weary" renders the ethical-dative construction naturally
-  with the same affected participants.
-- Verses 10–11 preserve the time available to us, the universal and
-  faith-household recipients, both writing predicates, and "with my hand."
-- Verses 12–14 preserve the circumcision/purpose contrasts, "your flesh,"
-  both crucifixion relationships, and "our Lord Jesus the Messiah" with
-  the cross as one genitive relationship.
-- Verses 15–16 retain both negatives, new creation, the following rule,
-  peace and mercy, and the Israel of God. Verse 17 explicitly retains
-  "our Lord" in the marks clause, the body suffix, and the bearing predicate.
-- Verse 18 preserves the grace blessing, "our Lord," the hearers' spirit,
-  the "my brothers" address, and Amen.
+- The review covers all 18 verses, 217 exact source forms with full
+  available decoded morphology and suffixes, all 482 individual complete
+  gloss records, and all 18 Murdock renderings. All 74 original mappings,
+  including 17 singles and each of the 57 shared English spans beside
+  every member form, were checked. The final chapter has 235 mappings:
+  229 singles and six documented two-source exceptions. Final checks
+  include every separate repeated link from the same source word,
+  each exact exception reason beside every member's morphology, and
+  the running English read separately after those reasons.
+- Verse 1 separates the addressed you, relative connector, in the Spirit
+  and copular are from the restoring command. The restored person is
+  the verb's explicit object, and the second spirit has the adjective
+  gentle, rather than a noun gentleness. Caution and the hearers' own
+  possible temptation remain separate. Verse 2 retains singular burden,
+  one-word one another, for thus, the fulfilling participle, and the
+  Messiah's single ownership of the law.
+- Verse 3 corrects the baseline's misplaced himself: the self noun at9
+  belongs to he deceives10, not to the preceding negative copula.
+  Being something and the following elliptic he is not remain distinct.
+  Verses 4–5 keep examination of his work, the self/others contrast,
+  boasting, and each person's own load. Verse 4 combines only the
+  repeated reflexive participant as himself, with within separate;
+  [CAL byn](https://cal.huc.edu/oneentry.php?cits=all&lemma=byn+p)
+  records the reflexive relation with identical pronominal endpoints.
+- Verse 6 keeps the hearer, the sharing predicate, the instructor and
+  the person instructed distinct, without creating another recipient.
+  Only man with its relative prefix combines; in all/good things
+  retains the plural source complement.
+- Verse 7 corrects the baseline's clause boundary: the thing belongs
+  to what the person sows, rather than adding in anything to God is
+  not mocked. The minimum human idiom remains separate from the
+  resumptive that and its focusing pronoun. Verse 8 likewise focuses
+  corruption, preserving the human sower, both from complements,
+  present reaping in the flesh clause and explicit future reaping
+  of eternal life in the Spirit clause. Muraoka section 110 describes
+  this focus on the immediately preceding constituent.
+- Verse 9 restores the finite existential there will be/a time/when
+  we shall reap. Its two weary clauses retain their feminine singular
+  impersonal grammar and to us, without adding a plural we subject.
+  Verse 10 preserves the available time, plural good things, both
+  toward relations, and members/of the household/of faith separately.
+  [CAL bar](https://cal.huc.edu/oneentry.php?cits=all&lemma=br+N)
+  attests the class-member sense used for members.
+- Verse 11 separates the substantival plural passive participle writings
+  from I have written, retaining what and to you without an added
+  large adjective. With my hands follows the vocalized plural form
+  and first-person singular suffix. Coakley section 6, pages 26–27,
+  and Muraoka sections 21 and 43 distinguish the singular hand form
+  from the plural stem and suffix set; the comparison's singular hand
+  does not override that morphology.
+- Verse 12 corrects make a good showing to boast, preserving the desire,
+  flesh, urging subject, passive circumcision, only/so that, negative
+  persecution and the cross/of Messiah with one owner. Verse 13 keeps
+  not even/they/these and the circumcised people without adding an
+  independent themselves. Its Peal participle has an attested
+  intransitive be circumcised sense in [CAL gzr](https://cal.huc.edu/oneentry.php?cits=all&lemma=gzr+V).
+  In your/own/flesh stays separate from the purpose and boasting.
+- Verse 14 separates the topical as for me, modal may, dative experiencer
+  I, not and boast; no never is added. The cross/of our Lord/Jesus/
+  Messiah has one owner, and both crucifixion relations remain distinct.
+  And I/am/crucified preserves the postparticipial copula without
+  introducing the baseline's unsupported too.
+- Verses 15–16 retain both negatives, new/creation as separate words,
+  the following of this path without an added all, peace and mercy,
+  and the conjunction in and upon the Israel/of God.
+- Verse 17 keeps the prohibition and its addressee separate. The
+  following causal for, independent I, copular am and bearing predicate
+  have individual owners, with our Lord, Jesus and my body intact.
+  The marks' suffix anticipates the Lord, without another his owner.
+  Verse 18 likewise preserves one owner of grace, the benediction,
+  your spirit, my brothers and Amen.
 
 Source checks for Ephesians 1:
 
