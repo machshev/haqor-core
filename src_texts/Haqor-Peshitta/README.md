@@ -7682,6 +7682,11 @@ Source checks for Philippians 4:
 
 Source checks for Colossians 1:
 
+- The complete chapter was checked against its exact forms, decoded
+  morphology, every gloss alternative and Murdock. Ordinary noun phrases,
+  negatives, auxiliaries and clauses have separate source owners; nine
+  shared spans retain only lexical compounds or co-referential relative
+  heads and resumptive suffixes, with individual reasons in the ledger.
 - Verses 1–4 retain Paul, Jesus Messiah, God's will, Timothy, the
   Colossae address, holy brothers and believers, peace and grace, God
   our Father, thanksgiving, prayer, faith, and love for the holy ones.
@@ -7705,11 +7710,32 @@ Source checks for Colossians 1:
   in him. The head/body/ecclesia statement is distinct from the following
   copula, beginning, and firstborn from among the dead, with being first
   in all things.
+  The parenthesis around God's unseen state in verse 15 keeps "and
+  firstborn" coordinated with the Son's image predicate. Verse 17's
+  "and everything" begins the second clause; it is not absorbed into
+  "before all." Verse 18's masculine relative refers to the head, not
+  to the feminine ecclesia. Ordinary "not" and passive "seen" stay split.
 - Verses 19–20 preserve volition, fullness and dwelling, reconciliation
   of all things to him, the distinct peace-making verb, the blood of his
   cross, repeated instrumentality, and earth/heaven alternatives. The
   peace-making predicate and each hand/instrument phrase stay with
   their own source positions.
+  Verse 19 reads "for it is in him that all fullness was pleased to
+  dwell": the copular pronoun focuses "in him," and fullness is the
+  subject of both volition and dwelling. Coakley's grammar, pages 16–17,
+  permits fully vocalized enclitic hu after a consonant, so its vowels
+  do not establish an independent "he." [Bunis, section 3.1, pages
+  240–241](https://brill.com/view/journals/arst/19/2/article-p225_5.pdf)
+  describes subject co-reference for Syriac infinitive complements;
+  no separate Father is supplied from Murdock's explanatory supplement.
+  Verse 20 retains the finite "and he made peace," the singular hand
+  at its start and plural hands after the cross, with the earth/heaven
+  alternatives qualifying everything reconciled.
+  Its reconciliation infinitive continues fullness's volition; the
+  following finite verb permits a subject change. "He made peace"
+  chooses the Messiah as that subject from the surrounding head/firstborn
+  discourse and his cross and hands. Masculine agreement alone does not
+  establish this choice; fullness is also grammatically masculine.
 - Verses 21–23 retain the recipients' former estrangement and enmity,
   evil deeds, present reconciliation, flesh/body/death, and presentation
   holy, without blemish and without accusation. The condition keeps
@@ -7727,6 +7753,12 @@ Source checks for Colossians 1:
   with their respective predicates, and the given power's assistance
   remains explicit. Relative and conditional clauses are joined into
   complete English sentences.
+  Proleptic possessive suffixes before God or the mystery do not add a
+  second "his." Verse 24 does not invent "my" before sufferings. Each
+  bar-nash in verse 28 is already one written word, separately linked
+  from "every"; the maturity clause keeps its copular and adjective
+  owners. Verse 29's enclitic focuses "in this," with the causal particle,
+  both first-person forms and the labor and striving predicates separate.
 
 Source checks for Colossians 2:
 
