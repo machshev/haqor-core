@@ -9856,12 +9856,96 @@ Source checks for Hebrews 3:
 
 Source checks for Hebrews 4:
 
-- The chapter repeatedly uses ניחתא for the promised divine “rest”; the translation keeps “rest” in the promise, oath, Sabbath-rest, and exhortation contexts, while משבתו in verse 9 is rendered “Sabbath-rest” because the verse explicitly makes the Sabbath observance/rest remain for God’s people.
-- Verse 3 preserves the oath as direct speech: דימית is first-person “I swore,” ברוגזי carries the first-person suffix “my wrath,” and the דלא נעלונ construction means “they shall not enter” (נעלונ itself is the plural imperfect entry verb). The following “works of God” clause is kept separate and retains “from the foundation of the world.”
-- Verse 8 names ישוע בר נונ; in this contextual contrast with the later day, the referent is Joshua son of Nun, so the English uses “Joshua” rather than the New Testament name “Jesus.”
-- Verse 12 links each predicate to its own source span: the word is living and fully effective, sharper than a sword with two edges, and reaches the division of soul/spirit and joints/marrow/bones before judging heart-thoughts and intentions.
-- Verse 14’s רב כומרא רבא is one great high-priest title, followed by Jesus the Messiah, God’s Son, with the ascent-to-heaven clause; the three source words are therefore grouped as “a great high priest” rather than splitting the two רב forms across roles.
-- Verse 15 retains both source negations and the subject/object roles: “we have not a high priest who is not able to feel with our weakness,” but one tested in every respect like us, apart from sin; verse 16 keeps the mercy and grace-for-help objects of approaching the throne.
+- The alignment review covers all 16 verses and 242 source words, reducing
+  61 original shared spans to eight documented exceptions. Ordinary
+  participants, modifiers, negatives, auxiliaries, genitives and reordered
+  clauses have separate source owners. Every final mapping and the continuous
+  English received independent review against the frozen chapter bytes.
+- In 4:1, `נשתכח` (8) owns “be found,” `אנש` (9) owns “anyone,” and
+  `מנכונ` (10) owns “among you”; the baseline had shifted finding onto the
+  human participant and participant wording onto the following words.
+  `דפאש` (11) supplies the shortfall predicate. The promise (5), entrance
+  (6), rest with its masculine possessor (7), and validity (4) are separate.
+- In 4:2, the two “also” particles (0,5), explicit subjects (1,6), benefit
+  predicate (9), negative (8), word (12) and hearing clause (13) retain their
+  own links. `אנונ להנונ` (10,11) repeats the same hearers as the object and
+  recipient; only “them” shares this reference. The negative (15), passive
+  mingling participle (16) and feminine past auxiliary (17) are separate.
+  The final `להנונ דשמעוה` (19,20) locates the faith relation in the hearers;
+  “in those who heard it” retains the hearers and the feminine heard object.
+- In 4:3, the first-person oath `דימית` (10), “my wrath” (11), negative
+  (12), plural imperfect entry (13), and “into my rest” (14) are separately
+  linked. Both `דינ` particles (1,7) remain visible. `עבדוהי דאלהא` (16,17)
+  is an analytic genitive with an anticipatory possessor, “the works of God,”
+  rather than an extra owner. `שוריה דעלמא` (19,20) likewise means “the
+  beginning of the world.” The final `הוו` (21) owns “existed”; no finishing
+  predicate is added from another textual tradition.
+- In 4:4, `איכ` (0) is “as,” correcting the baseline “for.” God (5), resting
+  (4), the seventh (7), day and its preposition (6), all (10), and his works
+  (9) have separate links. The repeated negative oath in 4:5 likewise keeps
+  not (3), entry (4) and the first-person rest possessor (5) separate.
+- In 4:6, `דאית הוא` (2,3) is a past existential: “there was room,” rather
+  than the baseline “it remains.” The repeated `אנש אנש` (5,6) distributes
+  the possible entrant as “one person or another.” The singular entry verb
+  (7) is active and `לה` (8) resumes the room; no English passive turns the
+  person into an agent of a different predicate. The past proclamation (10),
+  first (11), negative entry (12,13), and negative persuasion (14,15) remain
+  separate. This subordinate sentence continues into 4:7.
+- In 4:7, the appointing participle (3), again (0), another (2) and day (1)
+  are separate. The two narrow adverbial exceptions are `מנ בתר` (4,5),
+  “after,” and `דמנ לעל` (9,10), the earlier written reference “above.”
+  `דאמר דויד` (12,13) says that David said; David has no “through” prefix,
+  and the speech verb is perfect. Hearing (17), his voice (16), negation
+  (18), hardening (19) and your plural hearts (20) remain separate.
+- In 4:8, Joshua son of Nun (2-4) retains the contextual name Joshua.
+  Causative rest (5), the past auxiliary (6), and the plural object (7)
+  separately support “had given rest to them.” The counterfactual speech
+  clause separately links its negative (8), speech (9) and auxiliary (10).
+  `מנ בתרכנ` (11,12) is the narrow temporal exception “afterwards.”
+- In 4:9, `למשבתו` (3) is an Aphel infinitive, not a noun “Sabbath-rest.”
+  [CAL, `šbt` C.3](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24bt+V)
+  explicitly cites this verse for “to give rest.” The final “it remains to
+  give rest to the people of God” keeps the copula (2), abiding predicate
+  (1), infinitive (3), people with its preposition (4), and God (5) separate.
+- In 4:10, perfect entry (2) and resting (4) are rendered “has entered” and
+  “has rested”; the independent subject (6) is emphatic “himself,” and also
+  (5) stays separate. The final `דילה` (12) is “his own,” with no unmarked
+  added noun “works.” The first works noun (8) is explicit. In 4:11, the
+  first-plural exhortation, entry, fall and passive persuasion keep their
+  actual actors and individual links; neither negative is absorbed into a
+  whole clause.
+- In 4:12, causal `גיר` (2) is “for,” correcting baseline “indeed.” The
+  feminine copula `הי` (1), living (0), word (3) and God (4) are separate.
+  The all/fully modifier (5) is separate from effective (6), and `טב` (8)
+  keeps its intensifying force in “much sharper.” The sword (10), two with
+  its descriptive prefix (11), and edges with the sword's feminine suffix
+  (12) are separately linked as “a sword with two edges.” Penetration (13),
+  extent (14), division (15), soul (16), spirit (17), joints (18), marrow
+  (19), bones (20), judging (21), thoughts (22), intentions (23) and heart
+  (24) retain their owners, including the explicit Syriac bones.
+- In 4:13, `קדמיה` (4) has a feminine singular suffix resuming the preceding
+  word of God: English uses neutral “it.” `מנ קדמיה` (3,4) shares only the
+  compound relation “from”; the pronoun “it” links to (4) separately. The
+  later `עינוהי` (11) and `דלה` (12) have masculine suffixes, returning to
+  God as “his eyes” and “to whom.” These suffixes are not silently made
+  uniform. Creation (1), hidden (2), every (6), thing (7), naked (8), exposed
+  (9), the giving subject (13), and account (14) retain separate links.
+- In 4:14, because (0) and therefore (3) are correctly distinguished from
+  the existential (1) and first-plural possessor (2). Only “have” shares the
+  possession construction (1,2); “we” separately belongs to (2). The title
+  splits naturally into great (6), high (4), priest (5). Jesus (7), Messiah
+  (8), Son (9), God (10), ascent (11), heaven (12), perseverance (13), and
+  confession of him (14) retain separate links. Son plus God is an analytic
+  genitive, not an extra unnamed male possessor.
+- In 4:15, only “have” shares existential possession (2,3). For (1), we (3),
+  the negative (0), and the one-word high-priest compound (4) are separate.
+  The relative negative (5), ability (6), feeling (7), with (8) and our
+  weakness (9) are also separate. Passive testing (11), in every respect
+  (12), like us (13), apart (14), from (15) and sin (16) retain their owners.
+- In 4:16, `בגלא עינ` (2,3) is the confidence idiom “with boldness,” not a
+  literal eye action. Approach (0), therefore (1), the throne with its
+  direction (4), his grace (5), receiving (6), mercy (7), finding (8), grace
+  (9), help (10), time (11) and affliction (12) remain individually linked.
 
 Source checks for Hebrews 5:
 

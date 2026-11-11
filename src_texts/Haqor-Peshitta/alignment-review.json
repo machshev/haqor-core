@@ -27797,6 +27797,86 @@
           "reason": "The impersonal feminine maenat plus the third-person dative leh jointly express his weariness. Leh is the experiencer of the predicate, not a separate beneficiary; forty/years and the with-whom phrases remain separate."
         }
       ]
+    },
+    "58:4": {
+      "sha256": "e84f5790bd916d9840a7ecf2a273f362cb4920cc5825fd31ef4e447279f527b4",
+      "original_shared_spans": 61,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 2,
+          "english": "them,",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "The independent object pronoun enun is resumed by l-hanun, both referring to the same hearers. English has one object them; the narrow shared object preserves this proleptic/resumed recipient without doubling the hearers."
+        },
+        {
+          "verse": 7,
+          "english": "after",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Men batar is a compound temporal preposition meaning after. The English temporal relation has one preposition; long and time retain separate source owners."
+        },
+        {
+          "verse": 7,
+          "english": "above",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "D-men l-el refers back to the earlier written citation. English above expresses the combined anterior-reference adverb, rather than the spatial source from above; written and the introductory as remain separate."
+        },
+        {
+          "verse": 8,
+          "english": "afterwards",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Men batar-ken is the temporal compound afterwards. Only the compound temporal adverb is shared; the counterfactual auxiliaries, negation, speech, preposition and day phrase remain separate."
+        },
+        {
+          "verse": 13,
+          "english": "from",
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Men qdam is the compound relational preposition from before, idiomatically from in English hidden from it. Only the preposition is shared; the feminine suffix on qdameh separately owns it and resumes the preceding word."
+        },
+        {
+          "verse": 14,
+          "english": "have",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Existential it plus l-an, for us, expresses possession. English have jointly renders the existential and possessor relation; we is separately linked to the first-plural suffix on l-an."
+        },
+        {
+          "verse": 15,
+          "english": "have",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Existential it plus l-an, for us, expresses possession. Only have shares the existential and possessor relation; we, the negative, discourse particle and following high-priest clause remain separately linked."
+        },
+        {
+          "verse": 16,
+          "english": "with boldness",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "B-gale en, literally with an uncovered/open eye, is a lexical confidence idiom. English with boldness renders the idiom as a whole, rather than attributing a literal eye action to the approach."
+        }
+      ]
     }
   }
 }
