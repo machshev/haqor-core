@@ -7855,16 +7855,27 @@ Source checks for Colossians 2:
 
 Source checks for Colossians 3:
 
+- The complete chapter was checked against exact source forms, decoded
+  morphology, all gloss alternatives and every baseline mapping. Ordinary
+  clauses, auxiliaries, negatives, modifiers and reciprocal phrases are
+  split; the five remaining shared spans have individual ledger reasons.
 - Verses 1–4 retain the conditional rising with Messiah, seeking and
   thinking about what is above, Messiah at God's right hand, the negative
   contrast with earth, death and hidden life, and the revealing of both
   Messiah and the recipients in glory. The postpositive causal particle
   belongs to "For you have died." Verse 4 retains the source's "our life."
+  In verse 3 only "you" combines the verbal subject and its matching
+  ethical dative; "have died" and "for" remain separate. The dative
+  introduces no second beneficiary or emphatic "yourselves." [Wilson,
+  section 124:5](https://www.scribd.com/document/705066224/Wilson-Robert-Dick-Elements-of-Syriac-Grammar)
+  describes this frequent construction as generally not separately
+  translatable into English. The life nouns keep their ordinary English
+  mass-noun sense despite their Syriac plural form.
 - Verses 5–7 preserve the command to put earthly members to death and the
   full list of fornication, impurity, passions, evil desire and
   covetousness. The rendering "passions" is a contextual interpretation
   of kēʾbē within this vice list; its primary lexical senses are pain,
-  grief and suffering, as recorded in
+  grief and disease, as recorded in
   [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29b+N).
   Worship of idols is the attested religious sense of the fear compound;
   [J. Payne Smith, p. 89](https://tmcdaniel.palmerseminary.edu/Payne_Smith_1-626%2BTP.pdf#page=90)
@@ -7873,6 +7884,12 @@ Source checks for Colossians 3:
   idiom, followed by the recipients' former conduct and life in these
   things. The anticipatory suffix in children of disobedience does not
   introduce another possessor.
+  "Without" and the noun "obedience" are separately owned in verse 6;
+  the obedience noun is not recast as a finite obeying verb. The wrath
+  suffix anticipates God, without an additional "his." Verse 7 keeps
+  "and," the temporal men-qdim expression and the separate past auxiliary
+  and conduct participle. Each written conjunction in the vice list
+  remains; no unwritten "and" precedes filthy speech in verse 8.
 - Verses 8–11 retain the complete anger/wrath/malice/blasphemy/speech list,
   the reciprocal prohibition on lying, stripping off the old human with
   his practices, putting on the new one, renewal in knowledge and the
@@ -7880,13 +7897,24 @@ Source checks for Colossians 3:
   Greek/barbarian and slave/free contrasts all remain, followed by
   Messiah as all and in everyone. The relative clauses and list
   punctuation form complete running English.
+  "Do," "not," "be" and "lying" have their own owners. The imperative's
+  object suffix anticipates the named old human; it adds no extra "him."
+  "The new one" renders the substantivized adjective, and the ordinary
+  image/Creator phrase is split. The negative pairs retain their separate
+  negators and coordinated nouns, with Messiah's copula separate.
 - Verses 12–14 retain God's chosen, holy and beloved people, compassion,
   tenderness, kindness, humility of mind, gentleness and long-suffering.
   Long-suffering is one compound with spirit. The reciprocal bearing and
   forgiving clauses remain, followed by the complaint conditional and
   Messiah's forgiveness of the recipients as the model for their own
-  forgiveness. Put on love supplies the garment imperative understood
-  with verse 14's nominal love phrase; the bond of perfection remains.
+  forgiveness. The duration-of-spirit expression alone shares
+  "long-suffering"; its conjunction remains separate. J. Payne Smith
+  under naggirutha and [CAL's ruh derivatives](https://cal.huc.edu/oneentry.php?cits=all&lemma=rwx+N)
+  attest this exact patience expression. Verse 14 explicitly marks
+  "put on" as supplied from the preceding garment command. Its linked
+  nominal clause contains the written "love"; the supplied marking does
+  not claim that love is a written put-on verb. The bond of perfection
+  remains separately linked.
 - Verses 15–17 preserve Messiah's peace guiding their hearts, their
   calling in one body, thanksgiving to Messiah, his word dwelling richly,
   wisdom, reciprocal teaching and instruction, psalms, hymns and songs of
@@ -7894,20 +7922,35 @@ Source checks for Colossians 3:
   is attached to its actual auxiliary and participle, followed by hearts
   in their own span. Word and deed, our Lord Jesus Messiah's name, doing
   and thanksgiving through him to God the Father all remain. The name
-  phrase and its doing predicate are grouped to permit natural English
-  order within their actual six source positions.
+  phrase and doing predicate are now split and reordered into English.
+  The second-person perfect hwa before a participle can express a command
+  or wish, as Coakley's grammar, pages 122–123, explains; the auxiliaries
+  in these exhortations are not forced into past tense or absorbed into
+  the lexical participles. Verse 16 takes d-melteh as the possessive
+  relative "whose word," referring back to Messiah, with the imperfect
+  "is to dwell" retaining the directive context. Its dalath is not
+  mistaken for an unwritten waw. Both singing words, all instrumental
+  conjunctions, the hearts and God retain their own source positions.
 - Verses 18–21 retain wives, husbands, children and parents as the actual
   addressed groups, the rightness/pleasing clauses, the prohibitions on
   bitterness and provoking children, and the discouraged outcome avoided
   by the latter prohibition. Provoke, children and the lest-clause each
   remain attached to their own source positions.
 - Verses 22–25 preserve servants, obedience in everything, bodily human
-  mastery rendered as earthly masters, the eyeservice contrast, pleasing
-  people, sincerity and fear of the Lord. Doing with the whole soul is
+  mastery rendered as bodily masters, the eyeservice contrast, pleasing
+  people, simplicity and fear of the Lord. Doing from the whole soul is
   directed to our Lord, with the explicit negative contrast with people.
   Receipt of recompense as an inheritance, service to Lord Messiah, the
   wrongdoer's corresponding recompense, and the negative face-taking
   idiom rendered as no partiality all remain.
+  The masters' possessive, bodily modifier and noun are singly linked,
+  as are the simple-heart constituents. Only the attested sight/eye
+  expression shares "eyeservice," with "in" and "not" separate and no
+  added "only." Verse 24 keeps its opening "and" and the following
+  word's "that from." Verse 25 keeps the conjunction and negative
+  existential together at their one written word; only "partiality"
+  combines the face-taking expression, interpreted in its judgment
+  context rather than as taking physical faces.
 
 Source checks for Colossians 4:
 
