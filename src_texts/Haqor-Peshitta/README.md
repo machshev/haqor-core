@@ -7113,36 +7113,66 @@ Source checks for Ephesians 1:
 
 Source checks for Ephesians 2:
 
-- Verses 1–3 preserve the fronted second-person topic and subsequent
-  first-person shift. Relative and resumptive locatives are grouped with
-  their own clauses, with "this spirit," the flesh/thought possessives,
-  and the emphatic comparison with the rest retained.
-- Verses 4–7 retain God's mercy and love, making alive, rescue, raising,
-  seating, and the purpose of showing his grace and kindness. The joins
-  across verses 3–7 keep the main predicate sequence intelligible.
-- Verse 8 explicitly maps "by his grace" and first-person plural
-  "we have been rescued through faith," followed by second-person
-  "not from you."
-  Verses 8–10 preserve the negative source contrast, God's gift, works,
-  the no-boasting purpose, creation, and the prepared-works walking clause.
-- Verses 11–12 retain the former flesh/circumcision descriptions,
-  exclusion from Israel's customs and the covenant of promise, and the distinct
-  hope/God statements. Verse 13 renders the blood suffix and explicit
-  genitive naturally as the single owner in "the Messiah's blood."
-- Verses 14–16 preserve the two/one contrasts, the intervening barrier,
-  the flesh/enmity and commandment/decree phrases, one new person,
-  reconciliation with God in one body, and the cross. The legal
-  possessive is rendered "its decrees," with the law as its referent. The killing of
-  enmity remains a completed predicate.
-- Verses 17–18 retain the separate far/near recipients, access through
-  him, both groups in one Spirit, and the Father. The source's "both"
-  belongs to its own grouped access/Spirit phrase.
-- Verses 19–20 preserve both negatives, fellow-citizens with the holy
-  ones, God's household, apostles and prophets, and Jesus Messiah as
-  cornerstone. "Cornerstone" renders the idiom "head of the corner."
-- Verses 21–22 retain the building's joining and growth, the holy temple,
-  the Lord, and the final second-person participation in God's dwelling
-  by the Spirit, with the subordinate clause joined to its antecedent.
+- Verses 1–3 retain the fronted second-person topic and the following
+  first-person shift. Only the relative referents in verses 2–3 combine
+  the demonstrative, relative particle and agreeing resumptive suffix;
+  their prepositions, verbs and subjects remain separate. The five
+  men qadim expressions in verses 2, 3, 10, 11 and 13 remain shared as
+  "formerly" or "beforehand," each with its own recorded reason.
+- Verse 2 retains "and of this spirit," including its genitive particle,
+  and the Ethpaal participle's sense "which is active." It separates
+  "without" from "obedience," rather than assigning the negation to the
+  obedience noun. Verse 3 retains singular "our mind" and the degree
+  "fully" before "children of wrath"; it does not reduce the degree
+  adverb to "even as."
+- Verses 4–7 split God/but, the great-love phrase, dead/were, with/Messiah,
+  and each Jesus/Messiah name. Mercy is plural "mercies." The two
+  "with him" phrases remain distinct; the coming-ages phrase repeats
+  the ages word around its modifier, and the kindness clause retains
+  "which was" separately from "toward us."
+- Verse 8 preserves the focusing "it is by his grace that" with its
+  first-person plural rescue predicate. Its "and this is not from you"
+  retains the nominal negative construction; perfect-form hwat does
+  not force English past tense. Gift, copula and God remain separate.
+  Verse 9 separates not/from/works and lest/anyone/boast.
+- Verse 10 separates creation, the pronominal copula, its owner, creation
+  in Jesus Messiah, and good works. The preparation clause keeps God,
+  prepared and beforehand distinct. Its purpose, walking and in-them
+  constituents are individually owned.
+- Verse 11 keeps the directive "be remembering" distinct from its
+  past-time content, with "Gentiles of the flesh," the calling predicate,
+  uncircumcision and circumcision, and the work/of-hands phrase.
+  Verse 12 keeps every copula, both alien/stranger predicates, the customs
+  of Israel, covenant/promise, and the separate hope/God negations.
+  The pronoun following strangers marks focus as "indeed."
+- Verse 13 retains the transition to now, the earlier distance and the
+  dynamic copula "have become" with "near"; it adds no causative
+  brought-near verb. The blood suffix anticipates Messiah as its one
+  named owner, with the blood word repeated around the possessive name.
+- Verses 14–16 separate he-is/our-peace, both/one, the dismantling and
+  barrier, and the relative was/standing predicate. The following
+  enmity/by-his-flesh phrase continues the dismantling clause. The law
+  clause preserves its conjunction, commandments, decrees and abolished
+  predicate; "its decrees" takes the law as the contextual owner, without
+  claiming that the masculine suffix alone determines its antecedent.
+  The two people, one/new/person, peace, reconciliation, one/body,
+  with/God, and the killing of enmity by his cross remain distinct.
+- Verses 17–18 keep coming and proclaiming distinct, with far/near
+  recipients. The focusing pronoun before hwa emphasizes "through him";
+  "it was through him that we both had access" retains the finite
+  past basis and both participants, without adding another actor. One,
+  Spirit, to and Father remain separate.
+- Verse 19 retains the present nominal negation, both negatives, members
+  of the city of the holy ones and members of God's household. Its
+  anticipating household suffix adds no second owner.
+- Verse 20 separates the singular foundation from apostles/prophets,
+  and renders head/of-the-corner/of-the-building individually. The
+  preceding pronoun refers to the later named Jesus Messiah.
+  Verse 21 retains "and in him," the whole building, joining and growth;
+  the temple word repeats for "into a" and "temple" around "holy."
+- Verse 22 separates while, also, the subject "you," in him, the copular
+  "are," and "being built." The final pronoun is not an added emphatic
+  "you yourselves." Dwelling, God and through-the-Spirit stay separate.
 
 Source checks for Ephesians 3:
 
