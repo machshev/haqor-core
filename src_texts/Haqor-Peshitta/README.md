@@ -9560,14 +9560,79 @@ Source checks for Titus 3:
 
 Source checks for Philemon 1:
 
-- The opening preserves the distinct people and roles: Paul is a prisoner of Jesus the Messiah, Timothy is a brother, Philemon is beloved, and the servant designation carries its “with us” suffix.
-- Verse 5 keeps both directional links: Philemon’s faith and love are toward the Lord Jesus and toward all the holy ones; the plural holy-ones form is not reduced to a singular recipient.
-- Verse 6 retains the fellowship/faith subject and the source’s fruit-in-works expression before the knowledge of every good thing in Jesus the Messiah.
-- Verses 8–9 preserve the demonstrative “because of this,” the source’s “boldness is mine” construction, and the sequence “I, Paul, who am aged”; the appeal’s “from you” relation is retained within the appeal span.
-- Verses 11–14 preserve the former useless/present useful contrast, the “thus receive him” connective, and Paul’s refusal to act without counsel so that goodness is not by compulsion but by will.
-- Verse 13 keeps the “to/with me” relation with keeping Onesimus and the source’s “that he might be” serving me instead of Philemon; verse 18 retains the indefinite “in anything” object.
-- Verse 15 renders the idiom as Onesimus departing for an hour so that Philemon might receive him forever; “from the age” is not treated as a literal geographic departure.
-- Verse 22 renders the opening בחדא דינ idiomatically as “And herewith,” then retains the lodging request, hope, prayer basis, and passive return to Philemon.
+- Verses 1–3 retain Paul, prisoner of Jesus Messiah, Timothy, brother,
+  Philemon, beloved, and servant who is with us. The conjunction on
+  servant is retained; with us belongs to its own relative/preposition
+  word. Apphia's our beloved, Archippus's servant who is with us, and the
+  ecclesia which is in your house remain distinct. Grace, with you,
+  peace, both from phrases, God, our Father, our Lord and the names
+  retain their own source positions.
+- Verse 4 separates both first-person subjects from thanking and
+  remembering; the dative you belongs to remembering, while in my prayers
+  retains the prayer noun's own position. Verse 5 keeps behold, from,
+  when I heard, your faith, and love that is yours, followed by both
+  toward phrases and all the holy ones. The possessive dative is not
+  assigned to the following toward.
+- Verse 6 preserves may be and the actual giving participle separately,
+  followed by fruit in works. It does not replace giving with effective.
+  Fellowship, your faith, knowledge, all good things, that are, yours,
+  in Jesus and Messiah remain separate; good things is plural. Verse 7
+  corrects the earlier shifted owners: joy is at 0, for at 1, great at 2,
+  existence at 3, ours at 4 and consolation at 5. Because through,
+  your love, the refreshed predicate, hearts and holy ones remain distinct.
+- Verse 8 splits because of and this, great and boldness, is and mine,
+  in Messiah, commanding, you and the things that are right. Verse 9
+  renders the reinforcing infinitive as earnestly and the focusing hu as
+  emphatic do, separate from ask and its explicit I. These functions are
+  described in [Muraoka, sections 98j and 110](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  Of you, the second I, Paul, who am, old, as you know, but, now, also
+  and the imprisonment phrase retain their own words.
+- Verses 10–11 retain the renewed request, of you, concerning, my son,
+  whom I begot, in my bonds and Onesimus. In whom minimally joins the
+  relative prefix at 1 to its resumed in him at 5; formerly remains at
+  the temporal stem of 1. There, was, no, usefulness and for you remain
+  separate. The contrast retains but, now, very, useful, and the paired
+  also expressions for you and for me.
+- Verse 12 separates to you from the next clause's explicit you, then
+  but, thus, receive him, as, my own and offspring. Verse 13 keeps the
+  past auxiliary, desiring, that I might keep him with me, so that he
+  might be serving, me, instead of you, bonds and gospel. No unwritten
+  these is added to bonds. Verse 14 retains without your counsel, the
+  negative and desire verb, anything and doing, the purpose negative,
+  comparison as if by compulsion, your goodness, but and by your will.
+- Verse 15 separates but, perhaps, also, because of, this, departure,
+  for an hour, the purpose prefix, keeping him and forever. Verse 16
+  keeps henceforth and not separate, then both servant nouns, more,
+  than, beloved, brother and each independent possessive. Had kma is
+  the minimal how much more idiom, documented by [CAL, had](https://cal.huc.edu/oneentry.php?cits=all&lemma=xd+b).
+  Flesh and our Lord retain their own prepositions and the Lord's our
+  suffix. Verse 17 renders ithayk li as you are a partner to me; the
+  subject is you. Receive him, as and me remain separate.
+- Verse 18 retains in anything and the suffixed he has wronged you,
+  or is a debtor, then reckon this against me. The demonstrative is at 5
+  and against me at 6; the first-person suffix is not you. Verse 19 keeps
+  I, Paul, writing and the source's plural my hands. The tonic and clitic
+  first-person subjects of repayment are rendered I myself, without
+  making the second I start a new clause. Not to say to you, that, even,
+  your own self, you, the debt predicate and me retain their own words.
+- Verse 20 keeps yes, my brother, I, the passive refreshment, by you,
+  our Lord, refresh, my heart and Messiah. Verse 21 keeps confidence,
+  its explicit I, and the active you will obey me, rather than a passive
+  I will be obeyed. Writing, to you, knowing, its I, that, more, than,
+  what I say and the final you will do remain separately owned. The
+  participles' prospective sense follows context; see Muraoka, section 83.
+- Verse 22 renders the single word bahda as at once; [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=bxd%29+X)
+  records that adverbial sense. But and also remain separate. Lodging
+  and house are two members of one noun phrase, rather than two separate
+  objects. Prepare, for me, for, I hope, that through your prayers, the
+  passive I will be given and to you retain their own words and suffixes.
+- Verses 23–25 keep Epaphras, captive, who is with me, in Jesus and
+  Messiah separate. Asks after your welfare preserves the greeting verb
+  and its welfare noun separately. The four names with their conjunctions
+  and my helpers each retain their own position; helpers is not replaced
+  with fellow workers. The final grace, of our Lord, Jesus, Messiah,
+  with, your spirit and Amen are separately linked. No unwritten
+  brethren is added to the closing blessing.
 
 Source checks for Hebrews 1:
 

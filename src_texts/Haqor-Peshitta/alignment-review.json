@@ -27639,6 +27639,32 @@
           "reason": "The impersonal concern verb and second-person dative jointly express the addressee's diligence. The dative is the experiencer, not an independent beneficiary."
         }
       ]
+    },
+    "57:1": {
+      "sha256": "2d53806473ca738834ea097885c5434e05f4f58b116320db6d63d8ea807011ad",
+      "original_shared_spans": 38,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 11,
+          "positions": [
+            1,
+            5
+          ],
+          "english": "in whom",
+          "reason": "The relative d-prefix at 1 and the resumed b-eh, in him, at 5 jointly express one relative location in English in whom. The temporal stem b-zban at 1 remains separately rendered formerly; no usefulness, auxiliary, negation or beneficiary is absorbed into this resumed relative."
+        },
+        {
+          "verse": 16,
+          "positions": [
+            11,
+            12
+          ],
+          "english": "how much more",
+          "reason": "Had kma, literally one/how much, is the established intensifying comparison how much more. The two particles jointly express this comparative degree rather than counting one brother; the following your own stays separately owned at 13."
+        }
+      ]
     }
   }
 }
