@@ -8770,30 +8770,52 @@ Source checks for 1 Timothy 1:
 
 Source checks for 1 Timothy 2:
 
-- Verses 1–2 retain the first-person request, all four prayer nouns,
-  prayer for kings and rulers, and the speakers' first-person plural
-  living calmly and quietly in reverence for God and purity.
-- Verses 3–5 retain God as our life-giver, the desire that all people
-  live and turn to knowledge of truth, both actual “one” quantifiers,
-  the mediator and human-being language, and Jesus Messiah.
-- Verses 6–7 retain giving himself as a ransom, everyone, the testimony
-  that came at its time, the appointment, herald and apostle, speaking
-  truth without lying, and teaching the Gentiles in faith and truth.
-- Verse 8 has men praying, with third-person plural “their hands,”
-  distinct from the speakers' plural in verse 2. Anger and the second
-  thought/reasoning prohibition remain separate negatives.
-- Verses 9–10 retain modest clothing as well as modesty and self-control,
-  the finite adornment predicate, the entire prohibited adornment list,
-  and the contrasting “with good works, as is fitting” construction.
-  The instruction joins across the verse boundary.
-- Verses 11–12 retain learning quietly with submission, both prohibited
-  infinitives, and the following quietness clause. The Aphel infinitive
-  is rendered “act boldly”; compare the [CAL entry for mrh](https://cal.huc.edu/oneentry.php?cits=all&lemma=mrx+V).
-- Verses 13–15 retain Adam's formation before Eve, both deception clauses,
-  transgression concerning the commandment, the woman's life statement,
-  “her children,” and the plural conditional “they remain,” with faith,
-  love, holiness and modesty. The plural offspring reading follows the
-  actual form; compare the [CAL child/offspring entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=yld+N).
+- All 15 verses and 168 source words were checked against their exact forms,
+  morphology and English owners. Ordinary clauses, noun phrases, negatives
+  and auxiliaries have separate source owners. The only shared span is
+  before in 2:1, the minimal min qdam expression at positions 4–5; the
+  clause-linking d-prefix at 4 separately owns that.
+- Verses 1–2 retain I, of you, the active second-person offering instruction,
+  all four prayer nouns, and prayer for all people, kings and rulers. The
+  source adds neither a second pray verb nor all before rulers. Life belongs
+  to the habitation/manner-of-life noun; the first-person plural living verb
+  and both calm/quiet modifiers remain separately linked.
+- Verses 3–6 retain causal for, our life-giver, the demonstrative and relative,
+  all people living and turning, and knowledge of truth. Both one/is
+  predicates in verse 5 remain explicit. The man Jesus Messiah gave himself
+  as redemption for every person; the testimony came in its own time.
+- Verse 7 links the testimony's demonstrative and anticipatory suffixes
+  naturally in that for which I was appointed a herald and apostle. The
+  relative linker belongs to the d-prefix on I, distinct from that. The truth
+  noun belongs to I speak, not to apostle; and/not stays at its own word.
+  The perfect copula gives I have become, and the final d-prefix gives
+  of the truth, not an invented and truth.
+- In verses 8 and 11, hwa before the participle carries a directive:
+  should be praying and should be learning. Muraoka, section 87, describes
+  this use for a wish, advice or general obligation. The perfect-form tag
+  does not turn either instruction into a past report. Verse 8 retains
+  their hands, the adverb purely, and both without constructions. The
+  contextual contentious thoughts remains one source noun, whose lexical
+  range includes thought and reasoning; see the
+  [CAL entry for mhshbh](https://cal.huc.edu/oneentry.php?cits=all&lemma=mx%24bh+N).
+- Verses 9–10 keep the women's clothing topic and the finite instruction
+  about their adornment, modesty, sobriety and good works. The actual
+  and with gold is retained, followed by the separate or connectors for
+  pearls and beautiful garments. All noun modifiers and prepositions
+  retain their own owners; the instruction joins across the verse boundary.
+- Verse 12 separates for, I, not, permit, woman and both infinitives.
+  The Aphel infinitive means act boldly, with over supplied by the
+  actual following preposition; compare the
+  [CAL entry for mrh](https://cal.huc.edu/oneentry.php?cits=all&lemma=mrx+V).
+  The final quietness instruction remains explicit.
+- Verses 13–15 retain Adam's formation first and then Eve. The two Peal
+  perfects say go astray/went astray, rather than asserting passive
+  deception. Transgressed, against and the command remain distinct.
+  The woman's participial life statement and her plural children remain,
+  followed by if they remain with faith, love, holiness and sobriety.
+  The offspring reading follows the actual plural form and feminine
+  possessor; compare the
+  [CAL child/offspring entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=yld+N).
 
 Source checks for 1 Timothy 3:
 
