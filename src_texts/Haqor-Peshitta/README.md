@@ -10194,11 +10194,97 @@ Source checks for Hebrews 6:
 
 Source checks for Hebrews 7:
 
-- Verses 1–4 retain the copula identifying Melchisedec as king and priest, the later subject who meets Abraham, the blessing and tithe, and the discourse contrasts in “however” (7:1, 4). The genealogy clause in 7:3 says that his parents, beginning, and end are not written, rather than asserting that he literally had no parents.
-- Verses 5–10 preserve the causal “for,” the Levitical priesthood and law command, the people/brothers and Abraham-loins relations, and the temporal “when” (not “although”). Scripture is explicitly the witness that the one receiving tithes lives (7:8), and the Levi-through-Abraham argument remains intact.
-- Verses 11–15 preserve the conditional perfection question and both priesthood likenesses. The source’s אמר ... דינ ... likeness-of-Aaron clause is rendered as a complete counterfactual sentence, “It would have said instead: he would be according to the likeness of Aaron,” without importing an unsupported “not be called”; 7:13 keeps the born-of-another-tribe and no-altar-service argument, and 7:14 retains “our Lord” and the Moses contrast.
-- Verses 16–22 retain the two-part fleshly-precepts/life-power contrast, the weakness and no-benefit rationale, the better hope and approach to God, and the oath mediated through David. Jesus remains the guarantee of the better covenant.
-- Verses 23–28 preserve the mortal-versus-enduring priesthood contrast, life and intercession, the priest’s purity and separation from sins, the one-time self-offering, and the law/oath appointment of the perfected Son. Verse 26 says “such a priest”; “high priest” remains only where the source has the chief-priest compound in 7:27.
+- All 28 verses and 404 source positions were checked against the exact
+  forms, morphology and running English. The 103 original shared spans
+  become five narrow relative/resumptive expressions. Ordinary titles,
+  noun phrases, negation, auxiliaries and clauses have separate owners.
+- In 7:1, the Most High modifier and God are separately linked, as are
+  when/returned and from/slaughter. The object suffix on met anticipates
+  the named object Abraham. In 7:2, Abraham and apportioned retain their
+  actual positions, tithes is plural, and everything that was with him
+  separates the relative/existential, past auxiliary and prepositional
+  pronoun. Each king/title and its genitive has separate links.
+- In 7:3, his father and mother were not recorded in genealogies; the
+  source does not assert that he literally had no parents. The beginning
+  of his days preserves the possessive on days. His priesthood, not a
+  masculine personal subject, agrees with the feminine remains predicate.
+  In 7:4, chief of the fathers translates the patriarchal title with
+  separate links, and tithes and firstfruits are plural.
+- In 7:5, were belongs to the receiving predicate. There was a commandment
+  of the law for them separately preserves the existential, past auxiliary,
+  commandment and plural dative. That is introduces their brothers, and
+  when they also came out retains the temporal particle and plural subject.
+  The possessive on loins anticipates Abraham rather than adding another
+  owner. In 7:6, their genealogies and received the promise replace the
+  baseline's missing plural possessor and weakened reception predicate.
+- In 7:8, there is a separate spatial contrast, not part of tithes.
+  Scripture is the subject of the active perfect testified. Concerning
+  whom joins only the relative prefix and its resumed pronoun; the final
+  alive predicate and copula remain separate. The contrast uses an English
+  identifying copula with the one to complete the elliptical second clause. In 7:9, as someone might
+  say is compositional, through belongs to the following Abraham phrase,
+  and Levi's receiving and being tithed keep their separate predicates.
+- In 7:10, the encounter verb's object suffix anticipates the explicitly
+  marked object Melchisedec; the Abraham-side subject meets Melchisedec.
+  The loins and of his father retain their actual owners. Compare the
+  proleptic object construction in Muraoka, section 97g, and the same
+  encounter construction with Abraham as object in 7:1.
+- In 7:11, perfection had existed separates the existential and past
+  auxiliary. Under which introduces the law parenthesis; there is no
+  causal gir there, so the baseline's added for is removed. The final
+  Aaron clause remains the counterfactual it would have said instead,
+  rather than importing a negative called from the Greek. The perfect's
+  hypothetical use is described by Muraoka, section 81. Verse 12 retains
+  both perfect change predicates as has occurred.
+- In 7:13, concerning whom and from which are narrow relative/resumptive
+  relations; these things were said, the birth predicate, negative and
+  altar service remain separate. The enclitic hu focuses the other-tribe
+  assertion as indeed. In 7:14, our Lord preserves the first-plural
+  possessive, and about which combines only the relative and its feminine
+  resumed pronoun; not and the saying predicate remain separate.
+- In 7:15, from this is not a temporal when, and he said is perfect; furthermore retains the separate tub.
+  The priest's arising continues into 7:16. There the perfect auxiliary
+  and active hwy participle are rendered did not become a priest, with
+  the priest predicate understood from 7:15. The law, fleshly commandments,
+  power, life, negative relative and dissolution predicate each retain
+  their source owners; no whole-clause exception is needed.
+- In 7:17 and 7:21, you and the copula are separate from priest and forever.
+  In 7:18, the change, first commandment, weakness and absence of benefit
+  are separately linked. In 7:19, through which belongs to drawing near,
+  rather than to the preceding better than it clause.
+- In 7:20, Pael sharrreh means confirmed it, preserving its masculine
+  object suffix; it is distinct from the oath verb yema in 7:21. Compare
+  [CAL shrr, Pael establish/affirm](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24rr+V).
+  The oath noun in 7:20–21 and 7:28 is read as singular in context; its
+  singular and plural emphatic forms are identical (Muraoka, section 24,
+  page 25, note 12), so SEDRA's plural tag alone does not decide the number.
+  Verse 21 retains the explicit David mediation and will not lie.
+- In 7:22, this covenant is better retains the demonstrative and the
+  predicative adjective; the feminine absolute myattra is compatible
+  with the feminine covenant, despite the export's masculine analysis.
+  Compare the feminine justice/love predicates in
+  [CAL mytr](https://cal.huc.edu/oneentry.php?cits=all&lemma=mytr+A).
+  In which joins only the relative and its resumed feminine pronoun;
+  Jesus, has been and guarantor are separately owned. The latter predicate
+  keeps hwa as a perfect copula without requiring a change-of-state reading.
+- In 7:23–24, the former priests were dying and were not allowed to
+  continue; the source's two plural past auxiliaries are preserved.
+  This one's enduring forever is the reason his priesthood does not
+  pass away, with priesthood as the feminine subject of that predicate.
+- In 7:25, make alive renders the Aphel infinitive, and offers up prayer
+  separates the Aphel ascent verb from its prayer object. The plural
+  beneficiaries remain for them. Verse 26 has pure, without evil and
+  without stain; the baseline's extra righteous was unsupported and
+  had displaced the negative's owner. The source says a priest, and
+  separation is from sins, not an imported sinners noun.
+- In 7:27, chief priests and sacrifices are plural. One time separately
+  renders the numeral and time noun; by/offering/himself separates the
+  preposition and self from the offering predicate. In 7:28, the law
+  appoints weak human beings as priests, whereas the oath's word appoints
+  the Son. The second English appoints explicitly recovers the coordinated
+  predicate omitted in Syriac and links back to its expressed source
+  verb; it is not assigned to the Son noun. The Son's perfection and
+  forever retain their own owners.
 
 Source checks for Hebrews 8:
 
