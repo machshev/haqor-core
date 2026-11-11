@@ -225,8 +225,9 @@ pub fn name_entry_root(text: &str) -> Option<String> {
 }
 
 /// The people records under `src_texts` ([`PEOPLE_RECORDS`]): each TIPNR key
-/// with the record's id (the database's `name_entity.entity_id`) and kind.
-pub fn people_records(src_texts: &Path) -> Result<HashMap<String, (i64, String)>> {
+/// with the record's id (the database's `name_entity.entity_id`), kind and
+/// category.
+pub fn people_records(src_texts: &Path) -> Result<HashMap<String, (i64, String, String)>> {
     let path = src_texts.join(PEOPLE_RECORDS);
     let raw =
         std::fs::read_to_string(&path).with_context(|| format!("reading {}", path.display()))?;
@@ -236,7 +237,8 @@ pub fn people_records(src_texts: &Path) -> Result<HashMap<String, (i64, String)>
             serde_json::from_str(line).with_context(|| format!("parsing {}", path.display()))?;
         if let (Some(key), Some(id)) = (record["key"].as_str(), record["id"].as_i64()) {
             let kind = record["kind"].as_str().unwrap_or_default().to_string();
-            out.insert(key.to_string(), (id, kind));
+            let category = record["category"].as_str().unwrap_or_default().to_string();
+            out.insert(key.to_string(), (id, kind, category));
         }
     }
     Ok(out)
@@ -1079,7 +1081,7 @@ impl Checker<'_> {
         &mut self,
         name: &NameEntry,
         entries: &[Entry],
-        people: Option<&HashMap<String, (i64, String)>>,
+        people: Option<&HashMap<String, (i64, String, String)>>,
     ) {
         let at = format!("{NAMES_DIR}/{}.json", name.id);
         self.summary.names += 1;
@@ -1150,7 +1152,12 @@ impl Checker<'_> {
                         &at,
                         format_args!("`{key}` is in no record of {PEOPLE_RECORDS}"),
                     ),
-                    Some((_, kind)) if kind != "person" => {
+                    // A name is borne by a person, or by God or another
+                    // named being (TIPNR's Supernatural records): never by a
+                    // place, a time or a group.
+                    Some((_, kind, category))
+                        if kind != "person" && category != "Supernatural" =>
+                    {
                         self.fault(&at, format_args!("`{key}` is a {kind}, not a person"))
                     }
                     Some(_) => {}

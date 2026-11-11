@@ -151,7 +151,7 @@ cites what ties the name to it.
 | `word` | Optional: the `lemma` of the root entry's word the name is, where it is one (Shiphrah is the noun שִׁפְרָה, "fairness"). |
 | `status`, `reviewed`, `updated` | As for an entry. |
 | `bdb` | Optional: the BDB keys whose tokens are the name. A key is in one entry or name only. |
-| `people` | The people who bear it, by their TIPNR key (`Shiphrah@Exo.1.15`, as in `src_texts/STEPBible-Data/names.jsonl`); each must be a person there. A spelling borne by several people names them all. |
+| `people` | The people who bear it, by their TIPNR key (`Shiphrah@Exo.1.15`, as in `src_texts/STEPBible-Data/names.jsonl`); each must be a person there, or a Supernatural record (God, an angel). A spelling borne by several people names them all. Where one record is named by several words (TIPNR's Deity by יהוה, אֱלֹהִים, אֲדֹנָי…), `bdb` says which: the word sheet shows the name entry only on words filed under its `bdb` keys. |
 | `gloss` | What the name means, in a few words. Where its root is uncertain, the readings (`girl; or one who cries out`). |
 | `summary` | Who bears it, and how the name comes from the root. |
 | `evidence` | Citations, scripture or sources, for the name and its meaning: the verse naming the person, and the verses or cognates the meaning rests on. |

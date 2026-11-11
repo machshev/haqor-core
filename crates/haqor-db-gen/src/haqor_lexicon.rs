@@ -111,7 +111,7 @@ pub fn build_haqor_lexicon(db: &Connection, dir: &Path, src_texts: &Path) -> Res
                 .with_context(|| format!("no text for name entry `{}`", name.id))?;
             name_row.execute(params![name.id, name.entry, json])?;
             for key in &name.people {
-                let (entity_id, _) = people
+                let (entity_id, ..) = people
                     .get(key)
                     .with_context(|| format!("name entry `{}`: no person `{key}`", name.id))?;
                 person_row.execute(params![entity_id, name.id])?;

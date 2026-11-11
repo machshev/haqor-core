@@ -4269,6 +4269,67 @@ impl Bible {
             .optional()
     }
 
+    /// The Haqor name entry for the word `surface` of the text, which names
+    /// the person `entity_id`: [`Self::haqor_lexicon_name_for_entity`], but
+    /// only a name entry whose `bdb` keys are among those `surface` is filed
+    /// under, or one that lists none. One person can be named by several
+    /// words (the Deity by יהוה, אֱלֹהִים, אֲדֹנָי…), and a name entry is
+    /// one of them. A spelling filed under no BDB entry keeps every name.
+    pub fn haqor_lexicon_name_for_word(
+        &self,
+        entity_id: i64,
+        surface: &str,
+    ) -> rusqlite::Result<Option<(String, String)>> {
+        if !self.has_table("haqor_lexicon_person")? {
+            return Ok(None);
+        }
+        let names: Vec<(String, String)> = self
+            .db
+            .prepare_cached(
+                "SELECT n.id, n.json FROM data.haqor_lexicon_person p \
+                 JOIN data.haqor_lexicon_name n ON n.id = p.id \
+                 WHERE p.entity_id = ?1 ORDER BY n.id",
+            )?
+            .query_map([entity_id], |row| Ok((row.get(0)?, row.get(1)?)))?
+            .collect::<rusqlite::Result<_>>()?;
+        if names.is_empty() {
+            return Ok(None);
+        }
+        let filed = self.surface_bdb_keys(surface)?;
+        Ok(names.into_iter().find(|(_, json)| {
+            let keys: Vec<String> = serde_json::from_str::<serde_json::Value>(json)
+                .ok()
+                .and_then(|v| v.get("bdb").cloned())
+                .and_then(|v| serde_json::from_value(v).ok())
+                .unwrap_or_default();
+            keys.is_empty() || filed.is_empty() || keys.iter().any(|k| filed.contains(k))
+        }))
+    }
+
+    /// The BDB keys the text's spelling `surface` is filed under, matched
+    /// with its points (accents aside).
+    fn surface_bdb_keys(&self, surface: &str) -> rusqlite::Result<Vec<String>> {
+        // The stored spellings keep their points in the text's order, so they
+        // are found by their consonants and compared in one order.
+        let canonical = normalize_hebrew_combining(&strip_accents(surface));
+        let rows: Vec<(String, String)> = self
+            .db
+            .prepare_cached(
+                "SELECT s.text, se.key FROM data.surface s \
+                 JOIN data.surface_entry se ON se.surface_id = s.surface_id \
+                 WHERE s.cons = ?1",
+            )?
+            .query_map([fold_consonants(surface)], |row| {
+                Ok((row.get(0)?, row.get(1)?))
+            })?
+            .collect::<rusqlite::Result<_>>()?;
+        Ok(rows
+            .into_iter()
+            .filter(|(text, _)| normalize_hebrew_combining(&strip_accents(text)) == canonical)
+            .map(|(_, key)| key)
+            .collect())
+    }
+
     /// The Haqor name entries formed from the root entry `id`, as id and
     /// JSON, in id order.
     pub fn haqor_lexicon_names_of(&self, id: &str) -> rusqlite::Result<Vec<(String, String)>> {
@@ -4319,25 +4380,7 @@ impl Bible {
         if !self.has_table("haqor_lexicon_bdb")? {
             return Ok(None);
         }
-        // The stored spellings keep their points in the text's order, so they
-        // are found by their consonants and compared in one order.
-        let canonical = normalize_hebrew_combining(&strip_accents(surface));
-        let rows: Vec<(String, String)> = self
-            .db
-            .prepare_cached(
-                "SELECT s.text, se.key FROM data.surface s \
-                 JOIN data.surface_entry se ON se.surface_id = s.surface_id \
-                 WHERE s.cons = ?1",
-            )?
-            .query_map([fold_consonants(surface)], |row| {
-                Ok((row.get(0)?, row.get(1)?))
-            })?
-            .collect::<rusqlite::Result<_>>()?;
-        let keys: Vec<String> = rows
-            .into_iter()
-            .filter(|(text, _)| normalize_hebrew_combining(&strip_accents(text)) == canonical)
-            .map(|(_, key)| key)
-            .collect();
+        let keys = self.surface_bdb_keys(surface)?;
         if keys.is_empty() {
             return Ok(None);
         }
@@ -8677,6 +8720,43 @@ mod tests {
         // BDB's entries carry their keys, to tell the covered ones apart.
         let tree = bible.hebrew_bdb_by_root("אמר").unwrap();
         assert!(tree.iter().any(|e| e.key == "a.ea.aa"));
+    }
+
+    /// TIPNR tags one Deity on יהוה, אֱלֹהִים, אֲדֹנָי and more; the Yahweh
+    /// name entry is shown on the name's own words only.
+    #[test]
+    fn haqor_lexicon_name_shown_on_its_own_words() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        if !bible.has_table("haqor_lexicon_person").unwrap() {
+            eprintln!("skipping: data/haqor.db has no Haqor lexicon tables");
+            return;
+        }
+        let Some(deity) = bible.haqor_lexicon_name_people("yahweh").unwrap().first().copied()
+        else {
+            eprintln!("skipping: data/haqor.db has no yahweh name entry");
+            return;
+        };
+        let name = |surface: &str| {
+            bible
+                .haqor_lexicon_name_for_word(deity, surface)
+                .unwrap()
+                .map(|(id, _)| id)
+        };
+        assert_eq!(name("יַהְוֶה").as_deref(), Some("yahweh"));
+        assert_eq!(name("לַיַהְוֶה").as_deref(), Some("yahweh"));
+        assert_eq!(name("יָהּ").as_deref(), Some("yahweh"));
+        assert_eq!(name("אֱלֹהִים"), None);
+        assert_eq!(name("אֲדֹנָי"), None);
+        // The person page still finds it.
+        assert_eq!(
+            bible
+                .haqor_lexicon_name_for_entity(deity)
+                .unwrap()
+                .map(|(id, _)| id)
+                .as_deref(),
+            Some("yahweh")
+        );
     }
 
     #[test]

@@ -2,7 +2,7 @@
   "id": "hayah",
   "root": "היה",
   "status": "draft",
-  "updated": "2026-11-09",
+  "updated": "2026-11-11",
   "tags": [
     "existence",
     "change",
@@ -10,7 +10,7 @@
     "covenant"
   ],
   "gloss": "be, become, happen",
-  "summary": "הָיָה says that someone or something exists, is in a condition, becomes something, or happens. With לְ it says what someone has or what they are to another (“I will be their God”); with עִם it says someone is present with another, often to help. Its Aramaic counterpart הֲוָא carries the same uses in Daniel and Ezra, in the Peshitta, and in Aramaic inscriptions from the Old Aramaic period on, and the rarer Hebrew הָוָה is the same verb with the Aramaic ו.",
+  "summary": "הָיָה says that someone or something exists, is in a condition, becomes something, or happens. With לְ it says what someone has or what they are to another (“I will be their God”); with עִם it says someone is present with another, often to help. Its Aramaic counterpart הֲוָא carries the same uses in Daniel and Ezra, in the Peshitta, and in Aramaic inscriptions from the Old Aramaic period on, and the rarer Hebrew הָוָה is the same verb spelled with ו, as Aramaic spells it. The nouns הַוָּה “desire; ruin” and הֹוָה “disaster” share the spelling הוה; how they link to “be” is not clear.",
   "words": [
     {
       "lemma": "הָיָה",
@@ -352,7 +352,7 @@
       "lemma": "הָוָה",
       "pos": "verb",
       "gloss": "be, become",
-      "summary": "The same verb as הָיָה, spelled with the ו of Aramaic הֲוָא; a handful of uses, mostly in poetry and late books. Job 37:6 is sometimes read “fall” on the strength of Arabic hawā; the verse itself only says the snow is to “be” on the earth.",
+      "summary": "The same verb as הָיָה, spelled with the ו that Aramaic הֲוָא also has; a handful of uses, mostly in poetry and late books. Job 37:6 is sometimes read “fall” on the strength of Arabic hawā; the verse itself only says the snow is to “be” on the earth.",
       "root": "הוא",
       "bdb": [
         "e.az.aa"
@@ -518,6 +518,146 @@
       ],
       "lang": "syc",
       "root": "הוא"
+    },
+    {
+      "lemma": "הַוָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "desire; ruin, calamity",
+      "summary": "A noun of the spelling הוה with two senses: the craving of a soul, and ruin or calamity. How either links to “be” is not clear. Arabic هَوَى has both: “love, inclination of the soul” and “fall down”, with هَاوِيَةٌ “abyss”. In Job 6:2 the text writes היתי (ketiv) where it is read הַוָּתִי (qere), the same י/ו alternation as הָיָה beside הָוָה.",
+      "root": "הוה",
+      "bdb": [
+        "e.az.ab"
+      ],
+      "senses": [
+        {
+          "id": "hawwah-desire",
+          "gloss": "desire, craving",
+          "definition": "What a soul craves, said of the wicked and the treacherous.",
+          "cognate_ids": [
+            "ar-hawa"
+          ],
+          "evidence": [
+            {
+              "ref": "Mic.7.3",
+              "role": "defining",
+              "note": "The great one speaks הַוַּת נַפְשׁוֹ, “the craving of his soul”."
+            },
+            {
+              "ref": "Pro.10.3",
+              "role": "defining",
+              "note": "Yahweh will not let the soul (נֶפֶשׁ) of the righteous hunger, but הַוַּת רְשָׁעִים, the craving of the wicked, he thrusts away: set against a soul’s hunger."
+            },
+            {
+              "ref": "Pro.11.6",
+              "note": "By the craving of the treacherous they are caught."
+            },
+            {
+              "ref": "Psa.52.9",
+              "note": "He trusted in his great wealth, יָעֹז בְּהַוָּתוֹ, he was strong in his craving (or his ruin of others)."
+            }
+          ]
+        },
+        {
+          "id": "hawwah-ruin",
+          "gloss": "ruin, calamity",
+          "definition": "Ruin that overwhelms, and the ruin the wicked plot and speak against others.",
+          "cognate_ids": [
+            "ar-hawa"
+          ],
+          "kin": [
+            "howah-disaster"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.57.2",
+              "role": "defining",
+              "note": "I take refuge in the shadow of your wings עַד יַעֲבֹר הַוּוֹת, until the calamities pass by."
+            },
+            {
+              "ref": "Pro.19.13",
+              "role": "defining",
+              "note": "A foolish son is הַוֹּת, ruin, to his father."
+            },
+            {
+              "ref": "Psa.91.3",
+              "note": "He rescues you from the snare and מִדֶּבֶר הַוּוֹת, from the plague of calamities."
+            },
+            {
+              "ref": "Psa.5.10",
+              "note": "Their inward part is הַוּוֹת, ruin; their throat an open grave."
+            },
+            {
+              "ref": "Psa.38.13",
+              "note": "The seekers of my harm speak הַוּוֹת, ruin."
+            },
+            {
+              "ref": "Psa.52.4",
+              "note": "Your tongue devises ruin, like a sharpened razor."
+            },
+            {
+              "ref": "Psa.55.12",
+              "note": "Ruin is in the midst of the city."
+            },
+            {
+              "ref": "Psa.94.20",
+              "note": "כִּסֵּא הַוּוֹת, a throne of ruin."
+            },
+            {
+              "ref": "Pro.17.4",
+              "note": "A tongue of ruin."
+            },
+            {
+              "ref": "Job.6.2",
+              "note": "Job’s calamity, weighed in the balances; written היתי (ketiv), read הַוָּתִי."
+            },
+            {
+              "ref": "Job.6.30",
+              "note": "Can my palate not discern calamities?"
+            },
+            {
+              "ref": "Job.30.13",
+              "note": "They profit from my calamity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֹוָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "disaster, ruin",
+      "summary": "Disaster that falls on a people; the same sense as הַוָּה “ruin”. Isaiah says it “falls” (וְתִפֹּל) on Babylon, as Arabic هَوَى means “fall down”; how it links to “be” is not clear.",
+      "root": "הוה",
+      "bdb": [
+        "e.az.ad"
+      ],
+      "senses": [
+        {
+          "id": "howah-disaster",
+          "gloss": "disaster, ruin",
+          "definition": "Sudden disaster coming upon a people as judgment.",
+          "cognate_ids": [
+            "ar-hawa"
+          ],
+          "kin": [
+            "hawwah-ruin"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.47.11",
+              "role": "defining",
+              "note": "וְתִפֹּל עָלַיִךְ הֹוָה, “ruin will fall upon you”, beside רָעָה “evil” and שׁוֹאָה “devastation”."
+            },
+            {
+              "ref": "Ezk.7.26",
+              "role": "defining",
+              "note": "הֹוָה עַל־הֹוָה תָּבוֹא, “disaster upon disaster will come”."
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [
@@ -593,12 +733,12 @@
       "evidence": [
         {
           "source": "lane",
-          "locator": "p. 3046, root هوى, هَوَى بِهِ (n44380), الهَوَى (n44385), هُوَّةٌ (n44386), هَاوِيَةٌ (n44390)",
+          "locator": "p. 3046, root هوى, هَوَى بِهِ (n44380), الهَوَى (n44385), هُوَّةٌ (n44386), هَوَآءٌ (n44387), هَاوِيَةٌ (n44390)",
           "url": "https://www.laneslexicon.com/word/%D9%87%D9%88%D9%89/n44380",
-          "note": "هَوَى بِهِ “He made it to fall down”; الهَوَى “Love, and attachment: then, inclination of the soul … to a thing”; هُوَّةٌ “A deep hollow in the ground”; هَاوِيَةٌ “An abyss”."
+          "note": "هَوَى بِهِ “He made it to fall down”; الهَوَى “Love, and attachment: then, inclination of the soul … to a thing”; هُوَّةٌ “A deep hollow in the ground”; هَوَآءٌ “A vacancy; a vacuity; a vacant, or an empty, space”; هَاوِيَةٌ “An abyss”."
         }
       ],
-      "note": "Same consonants, but no Arabic use given means “be”, “become” or “happen”; it is named on no word. Its senses “desire” and “fall, pit” match the nouns הַוָּה “desire” and “ruin” (spelled הוה, not yet in the lexicon) more than this verb. The bridge sometimes argued, “fall” → “befall” → “happen”, is not shown in Arabic’s own use; Job 37:6 הֱוֵא אָרֶץ (snow) is the one Hebrew verse where “fall” could fit."
+      "note": "Same consonants, but no Arabic use given means “be”, “become” or “happen”. Its senses “desire” and “fall, pit” match the nouns הַוָּה “desire; ruin” and הֹוָה “disaster”, and it is named on them; Isaiah 47:11 says הֹוָה “falls”. The bridge sometimes argued, “fall” → “befall” → “happen”, is not shown in Arabic’s own use; Job 37:6 הֱוֵא אָרֶץ (snow) is the one Hebrew verse where “fall” could fit the verb. Nor does the root give “breathe” or “blow”: هَوَآءٌ is an empty space, the void between sky and ground, not breath or wind."
     }
   ],
   "doctrine": [
@@ -619,7 +759,69 @@
           "ref": "Gen.1.2"
         }
       ]
+    },
+    {
+      "topic": "divine-name",
+      "statement": "Yahweh calls his name “my memorial to generation after generation” (Exodus 3:15), and in Isaiah 41:4 he is the one “calling the generations from the beginning: I, Yahweh, first, and with the last ones, I am he.” The first is one; the last are many, and he is with them, as he promised Moses “I will be with you” (Exodus 3:12). Those called by his name are the ones he created, formed and made for his glory (Isaiah 43:7). The name is put on the people (Numbers 6:27); Israel is his firstborn son (Exodus 4:22); the righteous branch is called “Yahweh our righteousness” (Jeremiah 23:6), and Jerusalem is given the same name (Jeremiah 33:16). The New Testament sets out the same order: Christ the firstfruits, then those who are Christ’s at his coming (1 Corinthians 15:20, 23), as the one sheaf is waved before the two loaves of firstfruits (Leviticus 23:10–11, 17); Abraham’s seed is one, Christ, and those who are Christ’s are that seed (Galatians 3:16, 29); God made Abraham father of many nations as the one who “calls the things that are not as being” (Romans 4:17); every family is named from the Father (Ephesians 3:14–15); and the redeemed bear the Father’s name (Revelation 3:12, 14:1). So the name stands over a purpose: one who is first, and from him a family of many, brought into being and called by his name.",
+      "evidence": [
+        {
+          "ref": "Exo.3.15"
+        },
+        {
+          "ref": "Isa.41.4"
+        },
+        {
+          "ref": "Exo.3.12"
+        },
+        {
+          "ref": "Isa.43.7"
+        },
+        {
+          "ref": "Num.6.27"
+        },
+        {
+          "ref": "Exo.4.22"
+        },
+        {
+          "ref": "Jer.23.6"
+        },
+        {
+          "ref": "Jer.33.16"
+        },
+        {
+          "ref": "1Co.15.20"
+        },
+        {
+          "ref": "1Co.15.23"
+        },
+        {
+          "ref": "Lev.23.10",
+          "to": "Lev.23.11"
+        },
+        {
+          "ref": "Lev.23.17"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Gal.3.29"
+        },
+        {
+          "ref": "Rom.4.17"
+        },
+        {
+          "ref": "Eph.3.14",
+          "to": "Eph.3.15"
+        },
+        {
+          "ref": "Rev.3.12"
+        },
+        {
+          "ref": "Rev.14.1"
+        }
+      ]
     }
   ],
-  "note": "Mic 2:4 נִהְיָה is filed by spelling but analysed under נהה, and is not evidence for this verb. The Aramaic הֲוָא words and the Hebrew הָוָה are under the database root key הוא (verb, distinct from the pronoun of the same consonants); the brief for היה does not find them automatically (run the brief for הוה: its הָוָה tokens Gen 27:29, Isa 16:4, Job 37:6, Ecc 2:22, 11:3, Neh 6:6 are analysed under הוא; lexicon-support counts them through e.az.aa). Open: should Hebrew הָוָה stay here or go to a future הוה entry with the nouns הַוָּה “desire; ruin” and הֹוָה “disaster”? Kept here because its uses are all “be/become”. Niphal Dan 2:1 and 8:27: the forms נִהְיְתָה, נִהְיֵיתִי are regular niphals of היה (a niphal of הוה would keep the ו), so they are kept here under “be done” (Prov 13:19, Ezek 39:8) as “be done for, spent”; the alternative is a link to הַוָּה “ruin”, which the morphology does not support. Cognates checked and not found: Ugaritic says “be” with k-w-n (ykn, Segert 1984 p. 189), Phoenician with K-N I “BE” (Krahmalkov 2000 p. 231); neither has hwy “be” in those works. Biella’s Sabaic HWY is ḤWY “live” (a different root, cf. חיה), so no Sabaic cognate is recorded. The Mesha stele has no form of the verb. No Ge'ez cognate looked up yet (Dillmann/Leslau not consulted). CAD E (ewû A) not yet consulted; eBL cited instead. Akkadian ewû’s e- for Hebrew ה needs a source on the correspondence. The divine name: no derivation asserted here; it belongs to a name entry."
+  "note": "Mic 2:4 נִהְיָה is filed by spelling but analysed under נהה, and is not evidence for this verb. The Aramaic הֲוָא words and the Hebrew הָוָה are under the database root key הוא (verb, distinct from the pronoun of the same consonants), and the nouns הַוָּה, הֹוָה and the divine name under הוה; the brief for היה does not find them (run the brief for הוה: its הָוָה tokens Gen 27:29, Isa 16:4, Job 37:6, Ecc 2:22, 11:3, Neh 6:6 are analysed under הוא; lexicon-support counts them through e.az.aa). Hebrew הָוָה is kept here because its uses are all “be/become”; the nouns הַוָּה and הֹוָה are kept here because they share the spelling הוה (one root, all its words), with their link to “be” marked unclear. BDB’s הַיָּה (e.az.ac) is the ketiv spelling of הַוָּה at Job 6:2 (and Job 30:13 in some editions); the text reads the qere, so it has no tokens and is not a word here. The divine name has its own entry, names/yahweh.json. Niphal Dan 2:1 and 8:27: the forms נִהְיְתָה, נִהְיֵיתִי are regular niphals of היה (a niphal of הוה would keep the ו), so they are kept here under “be done” (Prov 13:19, Ezek 39:8) as “be done for, spent”; the alternative is a link to הַוָּה “ruin”, which the morphology does not support. Cognates checked and not found: Ugaritic says “be” with k-w-n (ykn, Segert 1984 p. 189), Phoenician with K-N I “BE” (Krahmalkov 2000 p. 231); neither has hwy “be” in those works. Biella’s Sabaic HWY is ḤWY “live” (a different root, cf. חיה), so no Sabaic cognate is recorded. The Mesha stele has no form of the verb. No Ge'ez cognate looked up yet (Dillmann/Leslau not consulted). CAD E (ewû A) not yet consulted; eBL cited instead. Akkadian ewû’s e- for Hebrew ה needs a source on the correspondence."
 }
