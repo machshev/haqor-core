@@ -8871,31 +8871,59 @@ Source checks for 1 Timothy 3:
 
 Source checks for 1 Timothy 4:
 
-- Verses 1–3 retain the Spirit's explicit speech, plural people departing
-  and following errant spirits, plural teachings of demons, deceptive
-  speech, seared consciences, the marriage and food prohibitions, and
-  foods created for use and thanksgiving for believers who know truth.
-  The description continues across verses 2–3.
-- Verses 4–5 retain every created thing being good, the negative rejection
-  clause, the thanksgiving condition, and sanctification by God's word
-  and prayer. Both explanatory connectors remain in complete English.
-- Verse 6 has “your brothers,” explicit “you” being nourished, plural
-  “words of faith,” and the distinct singular good teaching learned.
-  Verses 7–9 retain training, the bodily-exercise contrast, the promise
-  of present and future life, and the saying's trustworthiness/acceptance.
-- Verse 10 preserves the speakers' first-person plural labor, reproach
-  and trust, the living God as life-giver of all people, and “especially”
-  concerning believers. Verses 11–12 retain teaching, commanding, the
-  youth prohibition, and word, conduct, love, faith and purity.
-- Verse 13 specifically has reading, prayer and teaching. Verse 14
-  retains the gift in the recipient, its being given to him, prophecy,
-  and the singular hand-laying expression with eldership.
-- Verse 15 expresses becoming known to everyone that the recipient is
-  advancing. The directional phrase belongs to the progress idiom;
-  compare the [CAL entry for lqdm](https://cal.huc.edu/oneentry.php?cits=all&lemma=lqdm+p).
-- Verse 16 retains watching oneself and one's teaching, persevering,
-  doing these things, and the recipient saving himself and those who
-  hear him, with the source's explicit second-person address.
+- All 16 verses and 185 source words were checked against their exact forms,
+  morphology, original mappings and final English owners. The 59 original
+  shared spans become three minimal exceptions: a relative with a resumptive
+  object in verse 3, causal metul d- in verse 4, and existential possession
+  in verse 8. Ordinary modifiers, nouns, negatives, auxiliaries and clauses
+  retain separate source owners.
+- Verses 1–3 keep the Spirit's clear speech, the plural latter times,
+  certain people departing, errant spirits and plural teachings of demons.
+  The false appearance, active leading astray and speaking, passive searing,
+  conscience, marriage prohibition and caused abstinence remain distinct.
+  In verse 3 the feminine plural enen resumes the foods as the object of
+  God created: it is not a second are predicate. English which jointly
+  renders that resumptive object and the relative d-prefix on God; the
+  demonstrative head, God stem, creation verb, use, thanksgiving, believers
+  and knowing truth all remain separately owned.
+- Verses 4–5 keep the created thing, God as the agent, good and its explicit
+  copula, the negative existential, rejection, the thanksgiving condition
+  and passive receiving. Causal metul d- is rendered by coordinating For,
+  making the explanation a complete English sentence. The next for remains
+  at gar, followed by sanctification through God's word and prayer.
+- Verse 6 keeps both be forms in the teaching condition and its consequence,
+  your brothers, the good servant, Jesus Messiah, explicit you being
+  nourished, plural words of faith, the singular good teaching and the
+  explicit second-person statement that you have learned it.
+- Verses 7–8 retain keeping away from the foolish tales of old women and
+  training oneself in righteousness. The temporal benefit of bodily
+  exercise and the comprehensive benefit of righteousness remain distinct.
+  Focusing hu is expressed with it is ... that, all anchored to the same
+  source word, as in Muraoka, section 110. Promise possession combines only
+  the existential and dative; promise, life, this time and the coming time
+  remain individually linked.
+- Verse 9 retains both copulas in the saying's trustworthiness and worthiness
+  of acceptance, without adding an unwritten demonstrative. Verse 10 retains
+  the focusing hu construction as well: it is because of this that we labor.
+  Labor, passive reproach, because we hope, living God, the identifying
+  predicate, life-giver, all people and especially believers stay distinct.
+- Verses 11–14 separate teaching, commanding and these things. The youth
+  clause retains its actual on preposition in look down on your youth.
+  Each coordinated in phrase retains its own conjunction. Reading, prayer
+  and teaching remain explicit; the gift's be/in-you clause, demonstrative,
+  passive giving, recipient and prophecy have separate owners. The laying
+  on of the hand keeps the actual singular hand and the eldership genitive.
+- Verse 15 keeps the meditation command, the idiomatic be occupied with them,
+  passive becoming known to everyone, and the explicit you are coming
+  forward clause. The d-prefix and directional portion of l-qdamayk own
+  separate that and forward spans; no unwritten progress noun replaces
+  the actual coming verb. CAL explicitly records the coming-plus-direction
+  expression as advancing; compare its
+  [lqdm entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=lqdm+p).
+- Verse 16 retains take heed, yourself, your teaching, persevering in them,
+  gar and the temporal when clause, the doing verb and plural these things.
+  The Aphel life verb gives you will give life, with yourself and those
+  who hear you retaining their actual source owners.
 
 Source checks for 1 Timothy 5:
 
