@@ -6206,10 +6206,13 @@ Source checks for 2 Corinthians 8:
   treats the negative formula plus infinitive absolute and finite command
   as one emphatic negative-command predicate, followed by the distinct
   testing of the sincerity of their love through their companions'
-  diligence. Verse 9 retains our Lord Jesus the Messiah, his becoming
+  diligence. The infinitive's emphasis is separately linked as
+  "actually"; the negative, copula, command and pronoun each retain
+  their own source word. Verse 9 retains our Lord Jesus the Messiah, his becoming
   poor for their sake while rich, and their becoming rich by his poverty.
 - Verse 10 likewise has one emphatic counsel predicate, rather than two
-  separate recommendations. "From last year," "not only to desire," and
+  separate recommendations. Its emphatic "do" is linked to the infinitive,
+  with I, recommend and to you linked separately. "From last year," "not only to desire," and
   "but also to do" remain distinct. Verse 11 retains both completion
   predicates, both deed expressions, prior readiness and willing intent,
   and the actual "from what you have." Verse 12 keeps the condition of
@@ -6245,11 +6248,16 @@ Source checks for 2 Corinthians 8:
   conditional topics and preserves "my own partner," our other brothers,
   and the compact genitive chain "ecclesias of the Messiah's glory."
   Verse 24 retains the demonstration of your love and our boasting in
-  you; the English resumptive "it" refers to that one fronted object.
-- Only verses 8 and 10 use five-position groups, each to render a single
-  emphatic predicate with its intervening particles or pronoun. All other
-  groups contain at most four positions. All 316 source positions occur
-  exactly once in ascending order, with no unlinked lexical text.
+  you; English places the object after "show to them," preserving the
+  single demonstration without requiring a resumptive it.
+- Ordinary noun phrases, negation, auxiliaries and clauses are split,
+  using English reordering and repeated links for separated constituents.
+  The emphatic infinitives in verses 8, 10 and 19 are separately linked.
+  Remaining shared spans cover comparative, causal and relative
+  connectors, possessive existentials, the surplus and deficiency
+  constructions and Titus's impersonal concern. Each has its own
+  linguistic reason in the review ledger; all 316 source words remain
+  covered.
 
 Source checks for 2 Corinthians 9:
 
