@@ -7954,18 +7954,36 @@ Source checks for Colossians 3:
 
 Source checks for Colossians 4:
 
+- The whole chapter was checked against exact forms, decoded morphology,
+  every gloss alternative and every baseline mapping. Ordinary clauses,
+  auxiliaries, modifiers, possession and reading commands are split. The
+  remaining fifteen shared spans have individual linguistic reasons.
 - Verses 1–4 retain masters, equality and justice toward their servants,
   knowledge of their own master in heaven, continuing prayer, watchfulness
   and thanksgiving. The request for prayer retains God opening a door for
   speech, speaking Messiah's mystery, the speaker's being bound because
   of it, and revealing and speaking it as he ought. The speaking infinitive
-  stays with source positions 8–10 in verse 3.
+  and its object keep separate source positions 8–10 in verse 3. The
+  existential "there" and copular "is" in verse 1 remain separate;
+  the pronoun is not mistaken for an indefinite article. The explicit
+  "you" and thanksgiving conjunction in verse 2 remain. Second-person
+  perfect hwa before a participle can express a command or wish, as
+  Coakley's grammar, pages 122–123, explains; these exhortations are not
+  forced into past tense.
 - Verses 5–6 preserve wise conduct toward outsiders, redeeming the
   opportunity, speech always with grace and the salt-seasoning comparison.
   The following knowledge clause retains the each-person object and the
-  give-an-answer expression in a single span where their English order
-  differs from the source order. Its opening remains a coordinated
-  exhortation to know.
+  give-an-answer expression with separate owners despite their different
+  English order. Repeated anash supplies a distributive construction,
+  rendered "to each person"; the first noun has quantifier force in this
+  repetition, not an independent dictionary gloss of each. Muraoka's
+  grammar, section 71(a), describes distributive noun repetition. The
+  answering infinitive and answer noun remain separate; J. Payne Smith
+  under pethgama attests the return-word expression as giving an answer.
+  The opening of the knowledge clause remains a coordinated exhortation.
+  Verse 6 retains the comparison "as if seasoned with salt," with the
+  conjunction and salt word owning separate English constituents and
+  the finite be-word separate from the seasoning participle.
 - Verses 7–9 preserve Tychicus, the speaker's circumstances, beloved
   brother, faithful minister and our companion in the Lord. The discourse
   particle is explicit as Now. The apposition is made a natural nominal
@@ -7973,28 +7991,58 @@ Source checks for Colossians 4:
   his learning the recipients' circumstances and comforting their hearts,
   followed by Onesimus as a faithful and beloved brother from among them.
   The final plural subject refers to both messengers making known what
-  concerns the speakers.
+  concerns the speakers. In verse 8 the repeated al prepositions share
+  only "for," and the anticipatory feminine suffix with the matching
+  demonstrative shares only "this." Muraoka, section 112(a), describes
+  this proleptic prepositional construction; no second reason or lexical
+  purpose noun is added. The sent-person relative shares only "whom."
+  The ordinary what/concerns clauses, messenger names and appositions
+  remain singly linked. Relative heads and their dalath markers share
+  only the corresponding relative pronoun, with predicates separate.
 - Verses 10–11 retain Aristarchus as a fellow captive, Mark as Barnabas's
   cousin, instructions about welcoming Mark if he comes, and Jesus called
   Justus. The son-of-an-uncle kinship compound stays together in its own
   span; the possessive anticipates the explicit Barnabas name. The Mark
   instructions are parenthetical so that the greeting list continues to
   Jesus. The circumcision group, their unique help in God's kingdom and
-  their comfort to the speaker remain.
+  their comfort to the speaker remain. J. Payne Smith under dada attests
+  bar dada as first-cousin; only "cousin" combines the kinship nouns,
+  with "of Barnabas" separate. In the instruction relative, only "whom"
+  combines the deictic head, relative prefix and matching resumptive
+  suffix; "about" and the passive "you were instructed" remain separate.
+  The circumcision relative and emphatic "and they alone" preserve their
+  written constituents, as does the following "and they."
 - Verses 12–14 preserve Epaphras from among the recipients, servant of
   Messiah, continual labor in prayer, their standing mature and complete
   in God's will, the speaker's testimony to his zeal, Laodicea and
   Hierapolis. Luke remains physician and our beloved, followed by Demas.
-  The greetings put each subject and greeting predicate in one coherent
-  span where natural English reverses the source's verb-first order.
+  The greetings reorder each named subject and predicate into English.
+  Only the attested ask/peace greeting expression shares "greets";
+  its recipient suffix keeps a separate "you." J. Payne Smith under
+  shael and shlama gives this exact construction as greeting or saluting.
+  The greeting names and their modifiers remain singly linked. Verse 13
+  keeps the possessive "he has" separate from the zeal and its modifier;
+  the two city groups and their written conjunctions remain.
 - Verses 15–17 retain the Laodicean brothers, Nymphas and the ecclesia
   in his house; the source's house suffix is masculine singular. Both
   directions of letter-reading remain, including the Laodicean letter
   and the explicit recipients' own reading. Archippus is addressed about
-  the ministry received in our Lord and its fulfillment.
+  the ministry received in our Lord and its fulfillment. The imperative
+  greeting in verse 15 uses the same minimal ask/peace expression. In
+  verse 16 only "when" combines ma with dalath, and only "what" combines
+  the letter's deictic head with its relative marker. This, letter,
+  passive reading, have, the second reading predicate and both city
+  expressions remain separate. The second reading form agrees with the
+  feminine letter despite its ambiguous consonantal person form.
+  Verse 17 splits the relative pronoun, received ministry, auxiliary,
+  fulfilling participle and its object; no whole fulfillment clause shares.
 - Verse 18 retains this greeting, the speaker's own hand, Paul as its
   named author, the remembrance of his bonds, grace with the recipients
-  and Amen. The signature is rendered as a complete English sentence.
+  and Amen. The signature is rendered as a complete English sentence:
+  "This greeting is in my own hand—Paul's." The demonstrative, greeting,
+  preposition/hand, possessive and identifying genitive name all keep
+  separate owners. "Be remembering" retains the command auxiliary and
+  remembering participle separately, followed by the speaker's bonds.
 
 Source checks for 1 Thessalonians 1:
 
