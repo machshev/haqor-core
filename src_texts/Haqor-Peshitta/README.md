@@ -8199,41 +8199,91 @@ Source checks for 1 Thessalonians 2:
 
 Source checks for 1 Thessalonians 3:
 
-- Verses 1–3 retain the inability to endure, willingness to remain alone
-  in Athens and to send Timothy, our brother, God's servant and our
-  helper in Messiah's gospel. The gospel suffix anticipates its Messiah
-  owner. Strengthening the recipients and asking them about their faith
-  remain separate predicates; the explicit you object of asking is kept.
-  Discouragement by afflictions and the knowledge of being appointed to
-  them remain, with the clauses joined into complete English.
-- Verses 4–5 retain the former warning of suffering, its occurrence and
-  the recipients' knowledge, followed by the speaker's first-person
-  singular sending to learn their faith. Until stays with its actual
-  source word. The tempter's possible tempting and the labor's possibly
-  proving vain remain hypothetical. The labor, its copular verb and vain
-  quality form one coherent span.
-- Verses 6–7 preserve Timothy's return from the recipients, his good news
-  about faith and love, their good remembrance of the speakers at all
-  times, and reciprocal longing to see one another. The return/report
-  clause leads to comfort by the recipients amid the speakers' distress
-  and affliction because of their faith. The first-person plural our
-  brothers is retained; the English does not imply physical co-presence.
-- Verses 8–10 retain And now, living conditionally on the recipients'
-  standing firm in our Lord, the causal thanksgiving question, repayment
-  to God for them, all the joy because of them, and earnest prayer night
-  and day to see their faces and complete what is lacking in their faith.
-  Faces is plural in the source. The ellā plus d construction is rendered
-  as except that, joining the prayer to the rhetorical question.
-- Verses 11–13 preserve God our Father, our Lord Jesus Messiah, the
-  speakers' way to the recipients, increasing and abounding love toward
-  one another and everyone, the speakers' own love for them, establishing
-  hearts blameless in holiness, and our Lord Jesus Messiah's coming with
-  all his holy ones. God our Father is an apposition, with the our suffix
-  on Father. Love remains its own predicate, rather than a general do.
-  The increase/abound verbs retain their actual causative stems and the
-  continuing divine subject; [CAL's sgy causative entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=sgy+V)
-  supports making something increase. The coordinating establish clause
-  continues the prayer instead of becoming an isolated fragment.
+- All 13 verses retain their actual subjects, suffixes, negation and
+  clause connections. Ordinary noun phrases, auxiliaries, infinitives,
+  modifiers and clauses have individual owners. The remaining shared
+  spans are minimal clause connectives, the from-you compound preposition
+  and the impersonal discouragement construction.
+- Verses 1–2 retain and because, the speakers' inability to endure,
+  willingness to remain alone at Athens and to send Timothy to the
+  recipients, our brother, God's servant and our helper in Messiah's
+  gospel. The gospel suffix anticipates the explicit Messiah owner.
+  Strengthening the recipients and inquiring of them about their faith
+  are distinct predicates. Both the and on sending and the and on our
+  helper remain; the modal sending verb continues the willingness clause.
+- In 3, the feminine-singular Ethpaal discouragement predicate has a
+  masculine-singular affected-person dative leh. Payne Smith's qtaa entry
+  allows the derived verb to be impersonal. May be discouraged resolves
+  that construction without adding a body part or external agent.
+  By belongs to the Beth on afflictions, not to leh. No and one retain
+  separate owners. The two explicit recipient pronouns are you and
+  yourselves. The first-person plural ending on appointed is its subject
+  we, not a possessive our. The following hu focuses for this, rendered
+  it is for this that; the second English that belongs to the English
+  cleft construction, not to an additional written d- on appointed.
+- Verse 4 separates beforehand from we told. Costaz labels qdem an
+  adverbial auxiliary meaning before/beforehand; Muraoka section 98g
+  also illustrates this construction. The first-person plural atidin
+  predicate concerns what was to come, not an our suffix. Payne Smith,
+  printed page 431, explicitly gives future use of this passive participle.
+  To be afflicted retains the derived passive infinitive, and the later
+  occurrence remains stated after as you know. English does not need
+  another that before it happened there.
+- Verse 5 retains singular I, the inability to endure until I sent,
+  learning about the recipients' faith, and the hypothetical tempter and
+  possibly vain labor. The finite sending clause has its own until
+  connective. The conjunction/copula, our labor and vain remain separate;
+  the tempter's action is not asserted as an accomplished fact.
+- Verse 6 retains Timothy's coming to us from the recipients, good news
+  about their faith and about their love, and a good remembrance of us
+  with them at all times. The existential there is, with you, good and
+  remembrance noun remain distinct. The remembrance suffix is objective,
+  of us; the noun is not turned into a finite you remember predicate.
+  The temporal min d- forms since. Min tseid forms from, with the you
+  suffix remaining separately linked; tseid is a preposition to/with/at,
+  not an independently written side or company noun. The derived news
+  verb is supported by [CAL, sbr number 2, Pael](https://cal.huc.edu/oneentry.php?cits=all&lemma=sbr%232+V),
+  including news to Jacob about Joseph. It is distinct from sbr meaning
+  hope/reason. The reciprocal longing remains; the second long is marked
+  supplied and linked to its same-verse source predicate. For you is not
+  itself a written longing verb.
+- Verse 7 retains our brothers, comfort by the recipients amid all
+  our distresses and our afflictions, and their faith as its reason.
+  Both distress nouns retain their plural forms and our suffixes.
+  Comfort is passive/reflexive, not we comforted. Verse 8 retains and,
+  the focus on now, being alive conditionally on standing firm in our
+  Lord, and the our possessive. Muraoka sections 104 and 110 describe
+  hu focusing the immediately preceding constituent, including one
+  that is not a noun phrase. It is now that renders that focus; alive
+  supplies the first-person plural subject and nominal predicate.
+- Verses 9–10 form one thanksgiving question, retaining the ability
+  to render thanksgiving to God on the recipients' behalf, all the joy
+  with which the speakers rejoice because of them, and the except that
+  clause of earnest prayer before God by night and by day. The prayer
+  predicate and its manner remain separate. Seeing your faces retains
+  the plural noun. What your faith lacks renders the free-relative ma d-
+  construction and the feminine-singular faith as subject of lacking;
+  it does not add an in preposition to the bare faith noun.
+- In 11, hu is the proleptic emphatic pronoun, himself; din is but,
+  not a now word. May belongs to the directing verb. God, our Father
+  remains appositional, followed by and our Lord Jesus Messiah. The
+  direction, our way and to you remain separate.
+- Verse 12 retains both causative verbs with their singular divine
+  subject: increase your love and make it abound. The object shared by
+  those predicates is resumed in English as supplied it, linked to the
+  same love noun. [CAL's sgy causative entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=sgy+V)
+  gives make numerous/enlarge/make abundant; Brock and Kiraz's ytar entry
+  gives Pael increase/make abound. The reciprocal one toward one is
+  rendered for one another with individually linked constituents, and
+  everyone remains distinct. The comparison retains we and the actual
+  Aphel love predicate, not a general do verb.
+- Verse 13 continues the prayer to establish your hearts without blame
+  in holiness, before God, our Father. Without and blame have separate
+  owners. The coming suffix anticipates the explicit our Lord Jesus
+  Messiah genitive; no additional his precedes that owner. With all his
+  holy ones retains each preposition, quantifier and suffixed noun. The
+  d- on with introduces the attributive prepositional phrase; English
+  with expresses it without another clause or conjunction.
 
 Source checks for 1 Thessalonians 4:
 
