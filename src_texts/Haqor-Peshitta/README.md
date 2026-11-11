@@ -9700,15 +9700,84 @@ Source checks for Hebrews 1:
 
 Source checks for Hebrews 2:
 
-- 2:1 keeps מטל + הנא as “Therefore,” חיביננ as “we must,” and the explicit negative דלא before “fall”; the warning is “we must be exceedingly careful ... so that we do not fall away.”
-- 2:2 retains the opening conditional אנ ... גיר as “If indeed,” rather than flattening it to a causal “for”; the confirming verb and the final retribution/justice phrase remain linked to their actual source spans.
-- 2:3 renders the complete source clause naturally as “we despise these things which are our life. These things began to be spoken by our Lord and were confirmed among us by those who heard from him.” This keeps מרנ “our Lord,” מנ “from,” and בנ “among us” owned by the final source spans.
-- 2:4 follows the source's actual subject order by rendering סהד ... עליהון ... אלהא as “God testified about them,” and keeps חילא as “mighty works” and פולגא as “distributions.”
-- 2:6 keeps דמסהד + כתבא as “the Scripture testifies,” matching the actual verb-then-subject source order.
-- 2:8 distinguishes the negative-subjection phrase from the contrastive present: “nothing that was not subjected. But now we do not yet see ...”; השא is “now” and דינ is “but/yet.”
-- 2:9 identifies the lowered one as “this one ... Jesus” (הו ... ישוע), then gives “because of the suffering of death”; its final clause is “on behalf of everyone ... tasted death,” with God's grace kept explicit.
-- 2:10-11 preserve the distinct roles and suffixes: many sons are brought to glory, the prince of their life is perfected through suffering, the sanctifier and sanctified are from one, and 2:11's מטל + הנא remains “Therefore.”
-- 2:14 and 2:17 retain actual source ownership for the participation/likeness clauses: “also he in the same likeness ...,” and “in everything he should be like his brothers.” The active Pael participle מחסא is rendered “might make expiation,” not as a noun “atonement.” 2:16 follows the passive syntax: מותא is explicit “death,” and both משלט predicates mean “authorized,” not “assumed a nature.”
+- Verse 1 separates because of and this, obligation, to be, exceedingly,
+  cautious, what we heard and the purpose negative. Verse 2 retains for
+  and if separately, the word, its passive speaking and confirmation,
+  through angels, everyone who heard it, transgression against it,
+  receiving, recompense and the adverbial justly.
+- Verse 3 renders the despising predicate as look down on, keeping on
+  owned by the source al at 5. Those things, which, are and our life
+  remain separate. Those which began to be spoken and were confirmed
+  continue the relative description; the question runs through verse 4.
+  By, our Lord, being spoken, and/by, the witnesses, who/from him,
+  heard, among us and were confirmed retain their own source words.
+- Verse 4 separates God, testifying and about them, then signs, wonders,
+  various mighty works and distributions. Various at 7 qualifies the
+  preceding mighty works at 6. Spirit, holiness, which were given,
+  according to and his will remain distinct. Verse 5 keeps the negative,
+  auxiliary, subjection, to angels, world, coming, about which and we
+  speak separate.
+- Verse 6 corrects the shifted quotation owners: what is belongs to 5,
+  a man to 6, that you remembered him to 7, and the son to 8, of man
+  to 9 and that you visited him to 10. Both quoted verbs are perfects.
+  Scripture, testifying and saying remain separately owned. Verse 7
+  retains the causative lowering and its object, a little, than, angels,
+  glory, honour, placing, his head, giving him authority, the work and
+  your hands.
+- Verse 8 separates all and things in each occurrence. You subjected
+  retains its second-person actor; the later he subjected at 9 is also
+  active, rather than the earlier passive wording. B-hay d- is the
+  minimal in that connector; all, things, the subjecting verb and to him
+  remain outside it. Did not leave anything that was not subjected
+  retains both negatives. But, now, not, yet, we see and the final
+  subjection clause remain separately owned.
+- Verse 9 keeps became lower as the intransitive Peal perfect, distinct
+  from verse 7's causative made him lower. The one, but, a little,
+  than, angels, we see, that is and Jesus remain separate. His death
+  retains its suffix; because of the suffering of his death, glory and
+  honour were placed on his head. The final clause keeps bare God at 19 as the
+  lexical subject of tasted, with the proleptic he rendered himself at
+  16 and in his grace at 18. It does not make bare God a genitive
+  dependent of grace. This actor assignment agrees with [Murdock's
+  comparison translation](https://www.dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=Hebrews+2%3A9).
+  On behalf of, everyone, tasted and death retain their own words.
+- Verse 10 separates fitting, was, for and for him. Through whom joins
+  only the relative prefix at 4 and its resumed preposition at 5; the
+  first all and the repeated and all remain distinct. For whose sake,
+  sons, many, brought and to glory retain their own words. Brought is
+  perfect; the final perfecting verb is imperfect and retains its object
+  him, explained as the prince of their life, through his suffering.
+- Verse 11 retains both perfects, who sanctified and who were sanctified,
+  then are, all, from and one. Because of and this remain separate,
+  followed by not ashamed, calling, them and his brothers. Verse 12
+  restores and in the midst, keeps ecclesia, and separates the announcing,
+  name, brothers and praising predicates. Verse 13 retains confident,
+  I will be, in him and both and again phrases. In the second quotation,
+  God at 11 is the third-person subject of gave at 9, not a vocative
+  after an invented second-person you gave.
+- Verse 14 keeps for and because, sons, sharing, flesh, blood, he and
+  also separate. Each proleptic b-preposition pair shares only the one
+  English in: 8/9 before the same likeness and 11/12 before these.
+  Likeness belongs to 9; so that through his death belongs to 13.
+  Annulling, the one, holding, authority, of death, who is and Satan
+  remain separate. Verse 15 keeps releasing, those who, fear, death,
+  throughout all their lives, the past auxiliary, subject and slavery.
+- Verse 16 keeps death as the subject of both authorized-state predicates.
+  It was not over angels that death was authorized preserves the first
+  hwa as the negative cleft and the second as the past auxiliary; the
+  English that is a grammatical bridge for the cleft. But, over, seed,
+  of Abraham, the second authorized and its past auxiliary remain
+  separate. Neither assumed a nature nor an unwritten nature is inserted.
+- Verse 17 splits high and priest, following the single-word policy.
+  Fitting, was, that in all things, resemblance, his brothers, purpose,
+  mercy and faithful remain separately owned. B-d-alaha has an elliptical
+  nominal head, explicitly marked as supplied the things in the English
+  in the things of God. The final auxiliary and active Pael participle
+  remain and might be/making expiation, followed by for, sins and of
+  the people. The sins' possessive anticipates the people. Verse 18's
+  b-hay d- is the minimal causal in that connector; for, he himself,
+  suffering, being tested, ability, helping and those being tested remain
+  outside it.
 
 Source checks for Hebrews 3:
 
