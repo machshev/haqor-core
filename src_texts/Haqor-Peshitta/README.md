@@ -9434,13 +9434,72 @@ Source checks for Titus 1:
 
 Source checks for Titus 2:
 
-- The chapter repeatedly uses finite forms of the Syriac verb “be” (הוא) as copulas with plural subjects (vv. 2–6); these are rendered as English infinitival or coordinated clauses without dropping the predicates. In v. 8, the source adjective is “sober,” distinct from the following “not corrupted.”
-- In vv. 4–5, the source explicitly makes the young women modest and then directs them to love their husbands and children; the feminine-plural group and possessive suffixes on husbands, children, households, and husbands are retained as “their.”
-- Verse 6 retains the opening conjunction in “And as for young men,” while v. 7 renders דינ as “however” (but/yet), rather than introducing an unsupported temporal “then.”
-- Verse 8 contains two separate negatives before “corrupted” and “despise,” followed by a relative clause about the person standing against “us”; the translation keeps both prohibitions and the first-person plural object.
-- In vv. 9–10, servants are told to obey masters, please them, avoid argumentative contradiction, and not steal; their displayed faithfulness is the good quality that is good in everything and adorns God's teaching.
-- Verse 12 distinguishes rejecting ungodliness and worldly desires from the three positive ways of life: sensible conduct, uprightness, and fear of God in the present world.
-- Verses 13–14 preserve the linked sequence “blessed hope,” revelation of the great God's glory and our Life-giver Jesus the Messiah, followed by his self-giving, redemption, purification of us, and a new zealous people.
+- The shared-span review checks all 15 verses and 178 source words,
+  reducing 38 shared spans to one documented exception. Final source
+  ownership and continuous English are independently reviewed against
+  the frozen chapter hash. Ordinary clauses, modifiers, negatives,
+  auxiliaries and pronouns retain individual owners; separated English
+  spans may repeat their actual source word.
+- Verses 1–2 retain but, you, speaking, what is fitting, teaching and
+  sound separately. Teaching introduces the older men and every
+  separate should be predicate: watchful in their plural minds,
+  sober, pure and sound, followed by faith, love and patience with
+  their actual conjunctions and prepositions.
+- Verse 3 retains and also, older women, likewise, the copula, their
+  manner and its fitting relation to fear of God. Only the eating-pieces
+  accusation idiom is shared. Each negative and copula stays separate
+  from the accusation and wine predicates; enslaved, much and wine
+  retain their own owners, as do teaching and good things.
+- Verses 4–5 distinguish the older women's making modest from the
+  young women who receive that instruction. The latter group loves
+  their husbands and children; each possessive suffix is preserved.
+  The young women are sober and holy, take good care of their plural
+  households and are subject to their husbands. The good-care English
+  reordering repeats its verb owner around good, without grouping the
+  source words. The negative purpose has no/one, blaspheming, against,
+  word and God separately linked.
+- Verse 6 keeps and and of at the actual from-preposition, alongside
+  likewise, requesting, those, the masculine young group, and their
+  being sober. Verse 7 has however, not a temporal then. In everything,
+  showing, in yourself, pattern and all good works retain their own
+  source positions. The teaching suffix is your. Let your word be sound
+  preserves the separate copula, second-person dative/possessive relation,
+  word and sound adjective without a shared possession span.
+- Verse 8 keeps the positive sober adjective, its relative prefix and
+  the separate negative before corrupted. No one despise it is read
+  as part of the instructional context; despise is a participle in
+  the source, not relabeled an imperative. The feminine it refers to
+  the word. The purpose clause retains the one, standing, against us,
+  being ashamed, when, the further negative, ability, saying, anything,
+  hateful and about us, including both first-person plural suffixes.
+- Verses 9–10 retain servants, their plural masters, submission,
+  everything and being pleasing. The source's second-person plural
+  imperative be forms are represented as coordinated be instructions
+  under the English let servants frame; the participants remain the
+  servants. Obstinate and stealing retain their own predicates and
+  negatives. But, showing, their, good, faithfulness and in everything
+  are separate; good remains an adjective. The purpose adorn, second
+  in everything, teaching, God and our life-giver retain their own words.
+  The possessive teaching belongs to God, not to the servants.
+- Verse 11 retains the feminine past was revealed, grace, God and the
+  life-giving participle. Both all expressions remain explicit: grace
+  gives life to all, and was revealed to all people. Verse 12 keeps
+  grace as the instructing subject and us as its recipient, the first-
+  person plural denying and living, ungodliness, worldly lusts, this
+  world, sobriety, righteousness and fear of God.
+- Verse 13 keeps while, the explicitly first-person plural waiting,
+  hope, blessed, manifestation and the glory genitive, followed by the
+  great God and our life-giver Jesus Messiah. Each name, title, modifier,
+  conjunction and relation retains its own source word.
+- Verse 14 preserves who, gave, himself, for us, redeem us, from all
+  unrighteousness, and purify us. The purifying verb's object is not
+  absorbed into the following a new people; for himself retains its
+  own position.
+  New and people are separately linked. [CAL's hasem entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=xsm+V)
+  records a positive emulation sense with the exact good-works
+  collocation, supporting zealous here. In, good and works remain
+  separate. Verse 15 retains these things, speaking, exhorting,
+  reproving, all, authority, and, the negative, one, despising and you.
 
 Source checks for Titus 3:
 
