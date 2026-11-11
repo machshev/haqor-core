@@ -7241,41 +7241,55 @@ Source checks for Ephesians 3:
 
 Source checks for Ephesians 4:
 
-- Verses 1–3 retain the speaker's prisoner status, "our Lord," the
-  recipients' calling, humility of mind, gentleness, patience, mutual
-  endurance, love, and preserving the Spirit's unity in peace.
-- Verses 4–6 preserve "be in one body and in one Spirit," the calling's
-  one hope, the repeated one-Lord/faith/baptism/God sequence, and the
-  final first-person plural "in us all."
-- Verses 7–10 retain the grace/gift measure, ascent quotation, captivity,
-  gifts to human beings, the descent question and exception, beforehand,
-  lower regions, above all heavens, and completing all things.
-- Verses 11–13 retain apostles, prophets, evangelists, shepherds, and
-  teachers; all three purpose phrases; and faith, knowledge of God's Son,
-  maturity, stature, and the Messiah's fullness. The dependent clauses
-  continue across the verse boundaries.
-- Verses 14–16 retain the two motion predicates, every wind, human
-  teachings, their craftiness, plotting and leading astray. Verse 15 keeps
-  the first-person plural growth predicate, with "all that is ours" as
-  its complement. The body/joints/gift/member/growth/building sequence
-  remains intact.
-- Verses 17–21 preserve the former Gentile conduct, ignorance and heart
-  blindness, lost hope, surrender to impurity and greed, the Messiah
-  object, the conditional hearing/learning clause, and truth in Jesus.
-- Verses 22–27 retain the old/new person contrast, ongoing corruption,
-  renewal, creation, truth/neighbor reciprocity, anger without sin, the
-  sunset prohibition, and the accuser. Appositional and conditional
-  clauses are punctuated as complete running English.
-- Verses 28–31 preserve work with one's hands, giving to the needy,
-  hateful speech, edification and grace to hearers, the Holy Spirit of God,
-  sealing for redemption, and every bitterness/anger/wrath/uproar/
-  blasphemy/wickedness category.
-- Verse 32 keeps the distinct kind/compassionate/forgiving predicates
-  and the actual first-person plural in "God in Messiah forgave us."
-
-  The Syriac adjective is rendered "kind" using the
-  [CAL adjective entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=bsym+A),
-  which explicitly lists the Syriac sense "kind, lenient."
+- Verse 1 assigns the appeal verb to its actual source word and keeps
+  both first-person pronouns, prisoner status, our Lord, and the calling.
+  Verse 2 has patience of spirit, a construct relation rather than an
+  added “in spirit.” The auxiliary, endurance, reciprocity and love are
+  separately owned. Verses 3–6 retain the purpose clause, both “in one”
+  phrases, the comparative connective, the copula, and “in us all.”
+- Verses 7–10 preserve the distributive recipient, passive gift, ascent
+  quotation, captivity, descent question, exception and prior descent.
+  Gift, earth and heavens have one owner each despite anticipatory
+  suffixes. “Higher than” keeps the comparative preposition separate.
+  Verse 11 represents all five existential-indefinite expressions as
+  “some,” with each apostle/prophet/evangelist/shepherd/teacher role
+  separately linked.
+- Verses 12–14 retain all three purposes, the one-thing and mature-man
+  predicates, the measure and stature, both motion predicates, deceitful
+  teachings, craftiness and the purpose of leading astray. Son and
+  fullness each have one explicit genitive owner.
+- Verse 15 retains steadfastness in our love and reads the growth clause
+  as “so that all our things may grow.” The short imperfect permits a
+  third-person singular reading with the collective subject; the numeric
+  first-person label does not require adding “we” and an unmarked “in”
+  before that subject. The perfect auxiliary has contextual optative
+  force. J. Payne Smith records preterite imperative use of *hwā*,
+  especially in the second person; Muraoka section 81 discusses optative
+  perfects. Verse 16 has the body's own growth, without an extra owner
+  from the proleptic possessive, and its building as the subject of the
+  completion predicate.
+- Verses 17–21 retain both first-person pronouns, the walking auxiliary,
+  singular mind and heart, plural understandings, the lack of knowledge,
+  lost hope and self-surrender. The negative focus in verse 20 retains
+  its auxiliary; the Messiah is one patient despite the anticipatory
+  object suffix. The comparative in verse 21 does not add an independent
+  “what” object.
+- Verses 22–27 preserve former ways in apposition to that old person,
+  corruption through lusts of error, renewal, the new person and creation
+  by God, reciprocal membership, both prohibitions in verse 26, and the
+  accuser. Ordinary noun phrases and reciprocal expressions split into
+  their actual owners.
+- Verse 28 preserves the past auxiliary with the stealing participle,
+  “henceforth,” the directive imperfects, plural good deeds and the
+  possession construction with *hwā* plus *l-*. Its recipient is the
+  subject of English “he may have.” Verse 29 keeps universal negative
+  scope and the word/building/grace sequence.
+- Verse 30 assigns negation to its actual source word and retains the
+  separate auxiliary. “In which” refers to the Spirit without personal
+  pronouns. Verses 31–32 preserve every named vice and both exhortative
+  auxiliaries, with “God in the Messiah forgave us.” The adjective
+  “kind” follows the explicit Syriac sense in the
+  [CAL entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=bsym+A).
 
 Source checks for Ephesians 5:
 
