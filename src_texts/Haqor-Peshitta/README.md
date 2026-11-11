@@ -9122,21 +9122,84 @@ Source checks for 2 Timothy 1:
 
 Source checks for 2 Timothy 2:
 
-- Verse 2 keeps the two relative clauses distinct: the things heard from Paul
-  are committed to believing men, who are able to teach others.
-- Verses 3–6 retain the service, lawful competition and ploughman imagery;
-  verses 11–13 retain the repeated conditions and personal suffixes.
-- The ethpeal form of שאל in verses 16 and 23 means “shun/avoid” in this
-  context, as in the source checks for Acts 20. The exported lemma's “ask”
-  gloss does not establish the sense of this derived form.
-- Verse 17 keeps the copula and connective with the identification of
-  Hymenaeus. Verse 20 keeps gold, only, or and silver together in their
-  source-owned spans, followed by the wood and pottery contrast.
-- Verse 25 retains the disputants, humility, God giving repentance and
-  knowing truth in their actual clauses. The possibility particle is
-  “perhaps”; “lest” would reverse the sense of the positive possibility.
-- Verse 26 keeps the snare and Satan relation distinct from the locative
-  clause, “in which,” and retains capture and the final will phrase.
+- The shared-span review checks all 26 verses and 347 source words,
+  reducing 108 shared spans to eight documented exceptions. Final source
+  ownership and continuous English are independently reviewed against
+  the frozen chapter hash. Ordinary clauses, separate pronouns, negatives,
+  modifiers and prepositions retain individual owners; repeated owners
+  express discontinuous English without grouping ordinary phrases.
+- Verses 1–3 retain you, therefore, my son, the strengthening command,
+  grace in Jesus Messiah, both sets of relative heads and predicates,
+  many witnesses, entrusting to believing people, others and also.
+  The minimal reaches-in-their-hands capability idiom in verse 2 is
+  shared; the teaching, people and remaining constituents are separate.
+  Enduring plural evils, good and soldier retain their own source words.
+- Verses 4–6 keep serving and entangling distinct, the affairs of the
+  world, pleasing the one who chose him, both conditions and negatives
+  in the contest, crowning and the rule's suffix. The ploughman labors;
+  it is proper for him to be fed first from his fruits. The actual
+  passive/reflexive feeding verb is not assigned to fruits or to an
+  invented person whom the farmer feeds.
+- Verses 7–10 keep understanding, what I say, our Lord giving wisdom
+  in every thing, remembering Jesus Messiah, his past rising and
+  David's seed. Only the house-of-the-dead expression is shared in
+  among the dead; from remains separate. The Gospel is my Gospel.
+  I suffer evils to bonds as one who does evil things; God's word
+  is not bound. Enduring everything is for the chosen, so that they
+  also may obtain life in Jesus Messiah with glory that is forever.
+- Verses 11–13 retain the saying, copula and faithful predicate, for,
+  every condition, each also and with him, past we died and future
+  living and reigning. Both denying clauses preserve their subjects
+  and objects. Not believing in him contrasts with his remaining
+  in his faithfulness; ability, not, denying and himself remain separate.
+- Verse 14 preserves the preceding second-person singular perfect
+  auxiliary with its participles as an instruction to be reminding
+  and testifying, followed by the separate
+  plural auxiliary, negative and disputing predicate. Words, their lack
+  of profit, overthrow, hearers and the feminine plural object pronoun
+  referring to words retain their own positions. Verse 15's impersonal
+  concern-plus-dative instruction is a minimal exception in be diligent.
+  Presenting, yourself, perfectly, before God, worker, without shame,
+  proclaiming rightly and the word of truth are independently owned.
+- Verses 16 and 23 use the actual Ethpeal sh-al in the refusal/avoidance
+  sense, rather than the base gloss ask. [CAL's sh-al entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%29l+V)
+  records abstaining from/refusing something with men in this stem.
+  Verse 16's relative/resumptive in which is shared narrowly; usefulness,
+  negation and the existential stay separate. Those occupied with the
+  words are the postposed plural people who add to their wickedness.
+- Verse 17 keeps gangrene separate from like and assigns take and hold
+  separately to their actual verb and noun. Their word is the feminine
+  subject of taking hold of many. But, the explicit copula, one of them,
+  Hymenaeus, another and Philetus remain separate; the second English
+  copula is marked supplied. Verse 18 retains wandering, while saying,
+  the resurrection of the dead, and the minimal perfect/ethical-dative
+  has happened construction, without adding an already particle. Only
+  the repeated-person distributive is shared in of some.
+- Verse 19 keeps the steadfast foundation, God, lasting and its copula,
+  and the minimal existential/dative possession has this seal. The Lord
+  knows those who are his; the conjunction, independent copula, departure
+  command, everyone, calling, name and unrighteousness remain distinct.
+  Both written Marya forms are the Lord, without an unwritten our suffix.
+- Verse 20 retains the negative copular focus, only, gold, or, silver,
+  the separate existential and in it, but and both also particles,
+  wood and pottery. The repeated English vessel head and unwritten
+  nominal copulas are explicitly marked supplied at the related words.
+  Verse 21 retains self-cleansing, from these things, becoming a pure
+  vessel for honor, fitness for his Lord's use and the passive prepared
+  qualification, with every, good and work separately owned.
+- Verses 22–23 keep all the lusts of youth, fleeing, running after all
+  four pursuit objects, those who call on our Lord and the pure heart.
+  The foolish disputes are without instruction; keep away from them,
+  for you know that they produce contests. Verse 24 keeps the servant,
+  our Lord, obligation, not, contending, humility toward everyone and
+  teaching distinct; only the long-of-spirit patience idiom is shared.
+- Verses 25–26 attach humility to instructing the disputants, not to
+  their opposition. Perhaps is a positive possibility: God may give
+  them repentance and they may know truth, recollect themselves and
+  escape from Satan's snare. In which remains at the actual locative
+  relative, captured is passive perfect, and his will retains its
+  third-person suffix. No separate by whom or named capture agent is
+  added, and the snare and Satan retain their own separate owners.
 
 Source checks for 2 Timothy 3:
 
