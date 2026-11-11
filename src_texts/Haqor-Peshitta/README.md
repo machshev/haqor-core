@@ -6659,35 +6659,85 @@ Source checks for 2 Corinthians 13:
 
 Source checks for Galatians 1:
 
-- Verse 1 retains both negations concerning human origin and agency, and
-  the explicit clause about raising Jesus from among the dead. Verses 2–5
-  preserve the ecclesias in Galatia, the grace and peace greeting, the
-  rescue purpose, and the concluding glory and Amen.
+- All 24 verses, 301 source forms with decoded morphology, 640 individual
+  SEDRA gloss records and Murdock were read. All 121 baseline mappings,
+  including 34 singles and each of the 87 shared spans, were checked
+  beside every source member. The revised chapter has 313 spans: 300
+  single-source spans and 13 documented two-source exceptions. Ordinary
+  clauses, noun phrases, negatives and auxiliaries are separately linked.
+- Verse 1 separates human origin from human agency, preserves Jesus the
+  Messiah and God his Father, and retains the raised-him object suffix.
+  The demonstrative head and raising predicate are distinct; from, among
+  and the dead are separately linked. Verse 2 separates all the brothers,
+  who are with me, the ecclesias and their location in Galatia.
+- Verse 3 restores the actual with-you preposition in "Grace be with you,"
+  replacing the baseline's "Grace to you." The nominal blessing supplies
+  grammatical English be with the preposition, rather than assigning a
+  false lexical verb. Peace, both from-phrases, God, Father, our Lord,
+  Jesus and the Messiah retain their individual source owners.
+- Verses 4-5 separate the giver, giving, himself, for, our sins, the rescue
+  purpose, this evil age, and the will of God our Father. The suffix on
+  will is proleptic to God, without an additional owner. To whom, glory,
+  the two eternity expressions and Amen remain separately linked.
 - Verse 6 explicitly names the Messiah as the one from whom the hearers
-  are turning and retains the grace-call clause. Verse 7 preserves the
-  nonexistent-other-gospel contrast and the separate troubling and
-  changing predicates.
-- Verses 8–9 retain the conditional proclamation, the angel from heaven,
-  the received message, and both curse declarations.
-- Verse 10 retains both questions and the conditional contrast between
-  pleasing people and being the Messiah's servant. Verses 11–12 retain
-  the negative human origin, the not-even emphasis on receiving,
-  both receiving and learning with their object, and revelation of Jesus the Messiah.
-- Verses 13–14 preserve God's ecclesia and the separate wasting action,
-  the comparative progress in Judaism, contemporaries among his own
-  people, and intensified zeal for the teaching of Paul's fathers.
-- Verses 15–17 retain the setting apart from the mother's womb, calling
-  by grace, revelation of the Son through Paul, the Gentile proclamation,
-  and the connected denial of consulting flesh and blood or going up to
-  the earlier apostles. The Jerusalem, Arabia, and Damascus destinations
-  remain distinct.
-- Verse 18 retains three years, Cephas, staying with him, and fifteen
-  days. Verse 19 preserves the exception for James and the first-person
-  plural possessive in "our Lord." Verse 20 retains the before-God
-  affirmation and explicit denial of lying.
-- Verse 22 renders the ecclesias of Judea as the subject of not knowing
-  Paul personally. Verse 23 retains both former-time descriptions and
-  the now/behold transition; verse 24 preserves the source's "in me."
+  are turning and preserves the grace-call clause. Verse 7 combines only
+  the relative connector. The existential there and copular are have
+  distinct owners; people remains separate, with the following troubling,
+  you, wanting and changing predicates distinct. The plural ending of
+  the changing verb marks its third-person subject, not an object you.
+  The Messiah owns the gospel once, without an extra his before it.
+- Verses 8-9 separately link both conditional proclamations, the angel
+  from heaven, the prior and received messages, and the two curse
+  declarations. Differently/from follows Murdock's contextual comparison;
+  compare the outside/beyond construction in
+  [CAL lbar men](https://cal.huc.edu/oneentry.php?cits=all&lemma=lbr%40mn+p).
+  No supplied anything is assigned to an unrelated source word. Only the
+  relative connectors and verse 9's as and before compounds combine.
+- Verse 10 retains both questions, focus on people, both causal particles,
+  until now, and the counterfactual contrast between pleasing people and
+  being a servant of the Messiah. The subject, negative and copular
+  components are separately linked. Verses 11-12 retain the gospel's
+  feminine passive agreement, negative human origin, not-even emphasis,
+  both receiving and learning with their object suffixes, and revelation
+  of Jesus the Messiah. Single-word inflections need no shared exception.
+- Verse 13 preserves plural my ways, the formerly compound, Judaism,
+  how/exceedingly, and the two past persecution and wasting predicates.
+  The first-person auxiliary belongs to the speaker, not to the adverb.
+  God's ecclesia has one possessor; the final feminine it refers to it.
+- Verse 14 separately renders the age-peer expression as those/of my age,
+  rather than sharing the entire comparison. Compare the same-age and
+  class-member constructions under [CAL bar](https://cal.huc.edu/oneentry.php?cits=all&lemma=br+N).
+  The relative/existential and past auxiliary are separately represented
+  by who/there and were, with among my people distinct. The second past
+  predicate restores its conjunction: and I was exceedingly zealous for
+  the teaching of my fathers.
+- Verses 15-16 have one delayed subject: the one who set me apart and
+  called me willed to reveal his Son. Only man with the following
+  relative prefix combines as who. The mother's-womb phrase, grace,
+  Son, through me, proclamation and Gentiles remain separate. Bar shathe
+  is the fixed at-once expression, listed under
+  [CAL bar's time expressions](https://cal.huc.edu/oneentry.php?cits=all&lemma=br+N);
+  its two members combine without confusing its bar with the Son earlier
+  in the verse. The disclosure denial retains both to flesh and to blood.
+- Verse 17 separates both journeys, the earlier apostles, Jerusalem,
+  Arabia and Damascus; only before me combines its temporal members.
+  Verse 18 combines only the after connector, keeping three/years,
+  to see/Cephas, staying/with him and fifteen/days separate. Verse 19
+  preserves singular another, the except connector, James and the brother
+  of our Lord, with the proleptic brother suffix resolved once.
+- Verse 20 retains the topical these things, writing to you, behold,
+  before God and the explicit denial of lying. The final d-prefix is
+  represented by the assertion's punctuation, without a new predicate.
+  Verse 21 preserves plural these things and the distinct regions of
+  Syria and of Cilicia; only the after connector combines.
+- Verse 22 keeps the ecclesias of Judea as the subject of past did not
+  know me personally. Its demonstrative those and the relative in-Messiah
+  expression remain separate. The past auxiliary belongs to knowing;
+  it is not moved into the later relative clause. Verse 23 retains both
+  former-time descriptions and now/behold before the current proclamation.
+  The feminine dummy head referring to faith is distinct from the later
+  masculine he was auxiliary. Verse 24 separately links the past glorifying,
+  God and the actual in me phrase.
 
 Source checks for Galatians 2:
 
