@@ -1,0 +1,1873 @@
+{
+  "id": "qarab",
+  "root": "קרב",
+  "status": "draft",
+  "updated": "2026-11-11",
+  "tags": [
+    "nearness",
+    "approach",
+    "sacrifice",
+    "offering",
+    "feasts",
+    "priesthood",
+    "body",
+    "war",
+    "kinship"
+  ],
+  "gloss": "come near, bring near; offering; the inside, midst",
+  "summary": "To come near or bring near: a person to a place, a person to another, a day to its arrival, an army to battle. Brought to Yahweh, the hiphil is the law’s verb for offering, and its noun קָרְבָּן is “what is brought near”, every gift laid on the altar (Lev 1:2; 23:8, 14); so Yahweh “brings near” the priests he chooses (Num 16:9–10) and is himself “near” to those who call on him (Psa 145:18). The noun קֶרֶב is the inside, a body’s inner parts or the midst of a people, where Yahweh walks and puts his law (Exo 34:9; Jer 31:33); Akkadian qerbu is the same word for “midst” and “innards” beside qerēbu “come near”. קְרָב “battle” is the coming to close quarters that the verb itself describes (1Ki 20:29), and the Peshitta’s Aramaic uses the root for offering, nearness and fighting alike.",
+  "words": [
+    {
+      "lemma": "קָרַב",
+      "pos": "verb",
+      "gloss": "come near, approach; bring near, present, offer",
+      "bdb": [
+        "s.da.aa"
+      ],
+      "summary": "The qal moves the subject near: to a place, to a person (also of sexual approach), to God at the altar, to battle; days and years “come near”. The hiphil brings something or someone near: an offering to Yahweh, a gift to a king, a man to the priesthood. The piel and niphal are rare.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "come near, approach",
+          "senses": [
+            {
+              "id": "come-near",
+              "gloss": "come near, approach (a place or person)",
+              "definition": "Move close to a place, a thing or a person; with God or his holy things, to come within the bounds he sets for approach.",
+              "evidence": [
+                {
+                  "ref": "Exo.3.5",
+                  "role": "defining",
+                  "note": "“Do not come near (אַל־תִּקְרַב) here; take your sandals off your feet.”"
+                },
+                {
+                  "ref": "Lev.9.7",
+                  "role": "defining",
+                  "note": "Moses to Aaron: “Come near (קְרַב) to the altar and make your sin offering.”"
+                },
+                {
+                  "ref": "Lev.22.3",
+                  "note": "Any of Israel’s seed who comes near the holy things while unclean will be cut off."
+                },
+                {
+                  "ref": "Num.17.5",
+                  "note": "The censer plating is a memorial that no stranger not of Aaron’s seed should come near to burn incense."
+                },
+                {
+                  "ref": "Jos.7.14",
+                  "note": "Tribe, clan and house come near by turn to be taken by lot."
+                },
+                {
+                  "ref": "Zep.3.2",
+                  "role": "defining",
+                  "note": "Jerusalem “did not trust in Yahweh, did not come near to her God”."
+                },
+                {
+                  "ref": "Lam.3.57",
+                  "role": "defining",
+                  "note": "“You came near on the day I called you; you said, Do not fear.”"
+                },
+                {
+                  "ref": "Psa.69.19",
+                  "note": "“Come near to my soul, redeem it.”"
+                }
+              ],
+              "cognate_ids": [
+                "akk-qerebu",
+                "ar-qaruba",
+                "uga-qrb",
+                "gez-qarba"
+              ]
+            },
+            {
+              "id": "approach-woman",
+              "gloss": "go near (a woman)",
+              "definition": "Of a man and woman, come together; the law forbids it with near kin.",
+              "evidence": [
+                {
+                  "ref": "Lev.18.6",
+                  "role": "defining",
+                  "note": "“None of you shall come near to any flesh of his kin to uncover nakedness.”"
+                },
+                {
+                  "ref": "Isa.8.3",
+                  "role": "defining",
+                  "note": "“I went near the prophetess, and she conceived and bore a son.”"
+                },
+                {
+                  "ref": "Gen.20.4",
+                  "note": "Abimelech had not gone near Sarah."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qerebu",
+                "ar-qaruba"
+              ]
+            },
+            {
+              "id": "come-to-battle",
+              "gloss": "close in, join battle",
+              "definition": "Of an army or enemy, come up against, close with in fight; of a battle, be joined.",
+              "evidence": [
+                {
+                  "ref": "1Ki.20.29",
+                  "role": "defining",
+                  "note": "On the seventh day “the battle drew near” (וַתִּקְרַב הַמִּלְחָמָה), was joined, and Israel struck Aram."
+                },
+                {
+                  "ref": "Deu.20.10",
+                  "role": "defining",
+                  "note": "“When you come near a city to fight against it, call to it for peace.”"
+                },
+                {
+                  "ref": "Psa.27.2",
+                  "note": "“When evildoers came near me to eat my flesh, they stumbled and fell.”"
+                }
+              ],
+              "kin": [
+                "battle"
+              ],
+              "cognate_ids": [
+                "akk-qerebu"
+              ]
+            },
+            {
+              "id": "time-near",
+              "gloss": "draw near (of time)",
+              "definition": "Of days or a year, arrive soon.",
+              "evidence": [
+                {
+                  "ref": "Gen.27.41",
+                  "role": "defining",
+                  "note": "Esau: “The days of mourning for my father draw near; then I will kill Jacob my brother.”"
+                },
+                {
+                  "ref": "Deu.15.9",
+                  "role": "defining",
+                  "note": "“The seventh year, the year of release, draws near.”"
+                },
+                {
+                  "ref": "Ezk.12.23",
+                  "note": "“The days draw near, and the word of every vision.”"
+                }
+              ],
+              "kin": [
+                "near-time"
+              ],
+              "cognate_ids": [
+                "akk-qerebu",
+                "ar-qaruba"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be brought near",
+          "senses": [
+            {
+              "gloss": "be brought near (for judgment or the lot)",
+              "definition": "Be brought before God to have a matter decided.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.7",
+                  "role": "defining",
+                  "note": "If the thief is not found, the owner of the house is brought near to God."
+                },
+                {
+                  "ref": "Jos.7.14",
+                  "role": "defining",
+                  "note": "“You shall be brought near in the morning by your tribes.”"
+                }
+              ],
+              "cognate_ids": [
+                "akk-qerebu"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "bring near",
+          "senses": [
+            {
+              "gloss": "bring near, make come near",
+              "definition": "Cause to come close: things joined, a case presented, salvation brought near in time, a person drawn to God’s courts.",
+              "evidence": [
+                {
+                  "ref": "Isa.46.13",
+                  "role": "defining",
+                  "note": "“I bring near my righteousness; it will not be far, and my salvation will not delay.”"
+                },
+                {
+                  "ref": "Ezk.37.17",
+                  "role": "defining",
+                  "note": "“Bring them near one to another into one stick.”"
+                },
+                {
+                  "ref": "Psa.65.5",
+                  "role": "defining",
+                  "note": "“Happy the one you choose and bring near (וּתְקָרֵב), to dwell in your courts.”"
+                },
+                {
+                  "ref": "Isa.41.21",
+                  "note": "“Bring near your case.”"
+                }
+              ],
+              "kin": [
+                "near-to-god"
+              ],
+              "cognate_ids": [
+                "akk-qerebu",
+                "ar-qarraba"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring near; present, offer",
+          "senses": [
+            {
+              "id": "offer",
+              "gloss": "bring near to Yahweh, offer",
+              "definition": "Bring an animal, grain, or other gift to Yahweh at his altar; the law’s ordinary verb for making an offering, used with its own noun קָרְבָּן.",
+              "evidence": [
+                {
+                  "ref": "Lev.1.2",
+                  "role": "defining",
+                  "note": "“When any of you brings near (יַקְרִיב) a קָרְבָּן to Yahweh … you shall bring near your קָרְבָּן.”"
+                },
+                {
+                  "ref": "Lev.23.8",
+                  "role": "defining",
+                  "note": "“You shall bring near a fire offering to Yahweh seven days.”"
+                },
+                {
+                  "ref": "Lev.23.16",
+                  "note": "On the fiftieth day “you shall bring near a new grain offering to Yahweh.”"
+                },
+                {
+                  "ref": "Lev.23.25",
+                  "note": "The first of the seventh month: no work, “and you shall bring near a fire offering”."
+                },
+                {
+                  "ref": "Lev.23.27",
+                  "note": "יוֹם הַכִּפֻּרִים: humble yourselves “and bring near a fire offering”."
+                },
+                {
+                  "ref": "Lev.23.36",
+                  "note": "Seven days of סֻכּוֹת and the eighth: “you shall bring near a fire offering”."
+                },
+                {
+                  "ref": "Lev.23.37",
+                  "note": "The appointed times, “to bring near a fire offering to Yahweh”, each day’s on its day."
+                },
+                {
+                  "ref": "Num.9.13",
+                  "note": "Whoever does not keep the Passover “did not bring near the קָרְבָּן of Yahweh at its appointed time”."
+                },
+                {
+                  "ref": "Num.28.2",
+                  "note": "“My קָרְבָּן, my bread … you shall keep, to bring near to me at its appointed time.”"
+                }
+              ],
+              "kin": [
+                "offering"
+              ],
+              "cognate_ids": [
+                "akk-qerebu",
+                "ar-qarraba"
+              ]
+            },
+            {
+              "id": "bring-near-to-god",
+              "gloss": "bring (a person) near, to serve God",
+              "definition": "Of Moses or Yahweh, bring a man near to stand and serve before Yahweh as priest or Levite.",
+              "evidence": [
+                {
+                  "ref": "Exo.28.1",
+                  "role": "defining",
+                  "note": "“Bring near to you Aaron your brother and his sons … to serve me as priests.”"
+                },
+                {
+                  "ref": "Num.16.9",
+                  "role": "defining",
+                  "note": "The God of Israel separated the Levites “to bring you near to himself, to do the service of Yahweh’s dwelling”."
+                },
+                {
+                  "ref": "Num.16.10",
+                  "note": "“He has brought you near … and would you seek the priesthood also?”"
+                },
+                {
+                  "ref": "Jer.30.21",
+                  "role": "defining",
+                  "note": "Of Israel’s ruler from their midst: “I will bring him near, and he shall approach me; for who would pledge his heart to approach me?”"
+                },
+                {
+                  "ref": "Exo.29.4",
+                  "note": "Aaron and his sons brought near to the door of the tent to be washed."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qerebu",
+                "ar-qarraba"
+              ]
+            },
+            {
+              "gloss": "present (to a person)",
+              "definition": "Bring a gift or tribute before a ruler.",
+              "evidence": [
+                {
+                  "ref": "Jdg.3.17",
+                  "role": "defining",
+                  "note": "Ehud brought near the tribute to Eglon king of Moab."
+                },
+                {
+                  "ref": "Mal.1.8",
+                  "role": "defining",
+                  "note": "Of blemished sacrifices: “Bring it near to your governor; will he accept you?”"
+                }
+              ],
+              "cognate_ids": [
+                "akk-qerebu",
+                "ar-qarraba"
+              ]
+            },
+            {
+              "gloss": "come near (intransitive)",
+              "definition": "Once, be about to arrive.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.11",
+                  "role": "defining",
+                  "note": "When Abram came near to entering Egypt."
+                }
+              ],
+              "cognate_ids": [
+                "akk-qerebu"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προσφέρω",
+          "gloss": "bring to, offer",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.1.3, יַקְרִיב → προσφέρω; Lev.2.1, תַקְרִיב → προσφέρω"
+            },
+            {
+              "ref": "Mat.5.23",
+              "note": "“If you are offering your gift at the altar”; the Peshitta, “if you bring near (מְקָרֵב) your קוּרְבָּנָא”."
+            },
+            {
+              "ref": "Heb.5.1"
+            },
+            {
+              "ref": "Heb.9.14"
+            },
+            {
+              "ref": "Heb.10.12"
+            },
+            {
+              "ref": "Heb.11.17"
+            }
+          ]
+        },
+        {
+          "lemma": "προσάγω",
+          "gloss": "bring to, bring near",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.1.2, יַקְרִיב → προσάγω; Lev.23.8, וְהִקְרַבְתֶּם → προσάγω"
+            },
+            {
+              "ref": "1Pe.3.18",
+              "note": "Christ suffered once for sins “that he might bring us to God”; the Peshitta, “bring us near (נְקָרֵב) to God”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐγγίζω",
+          "gloss": "draw near",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.32.19, קָרַב → ἐγγίζω; Gen.37.18, יִקְרַב → ἐγγίζω"
+            },
+            {
+              "ref": "Jas.4.8"
+            },
+            {
+              "ref": "Heb.7.19"
+            }
+          ]
+        },
+        {
+          "lemma": "προσέρχομαι",
+          "gloss": "come to, approach",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.16.9, קִרְבוּ → προσέρχομαι"
+            },
+            {
+              "ref": "Heb.4.16"
+            },
+            {
+              "ref": "Heb.7.25"
+            },
+            {
+              "ref": "Heb.10.22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֶרֶב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "inside; inner parts; midst",
+      "bdb": [
+        "s.db.ab"
+      ],
+      "summary": "What is within: a body’s inward parts, a person’s inner self, and, with בְּ and מִן, the midst of a people, land or city. Its tie to “come near” is the closeness of what is inside; Akkadian and Ugaritic show the same noun for “midst” (and in Akkadian “innards”) beside their verb “come near”.",
+      "senses": [
+        {
+          "gloss": "inward parts (of a body)",
+          "definition": "The entrails and inner organs, of sacrificial animals and of the body generally.",
+          "evidence": [
+            {
+              "ref": "Lev.3.3",
+              "role": "defining",
+              "note": "“The fat that covers the קֶרֶב and all the fat that is on the קֶרֶב.”"
+            },
+            {
+              "ref": "Exo.12.9",
+              "role": "defining",
+              "note": "The Passover lamb roasted whole, “its head with its legs and its inward parts”."
+            },
+            {
+              "ref": "Gen.41.21",
+              "note": "The thin cows ate the fat ones, “and it was not known that they had come into their insides”."
+            },
+            {
+              "ref": "Exo.29.13"
+            }
+          ],
+          "cognate_ids": [
+            "akk-qerbu"
+          ]
+        },
+        {
+          "gloss": "inner self",
+          "definition": "A person’s inside as the seat of thought, laughter, spirit and life.",
+          "evidence": [
+            {
+              "ref": "Gen.18.12",
+              "role": "defining",
+              "note": "Sarah laughed “within herself” (בְּקִרְבָּהּ), saying…"
+            },
+            {
+              "ref": "Psa.51.12",
+              "role": "defining",
+              "note": "“Create in me a clean heart, O God, and renew a steadfast spirit within me (בְּקִרְבִּי).”"
+            },
+            {
+              "ref": "Psa.103.1",
+              "role": "defining",
+              "note": "“Bless Yahweh, my soul, and all that is within me (קְרָבַי), his holy name.”"
+            },
+            {
+              "ref": "Gen.25.22",
+              "note": "The sons struggled within Rebekah."
+            },
+            {
+              "ref": "1Ki.17.21",
+              "note": "“Let this child’s life return into him (עַל־קִרְבּוֹ).”"
+            },
+            {
+              "ref": "Psa.5.10",
+              "note": "“Their inside is ruin; their throat an open grave.”"
+            },
+            {
+              "ref": "Jer.31.33",
+              "role": "defining",
+              "note": "The new covenant: “I will put my law within them (בְּקִרְבָּם) and write it on their heart.”"
+            },
+            {
+              "ref": "Ezk.36.26",
+              "note": "“A new spirit I will put within you.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-qerbu"
+          ]
+        },
+        {
+          "gloss": "midst, among",
+          "definition": "With בְּ “in the midst of, among”, with מִן “from among”: the middle of a people, camp, city or land.",
+          "evidence": [
+            {
+              "ref": "Jos.13.13",
+              "role": "defining",
+              "note": "Geshur and Maacath dwell “in the midst of Israel” to this day."
+            },
+            {
+              "ref": "Exo.17.7",
+              "role": "defining",
+              "note": "“Is Yahweh among us (בְּקִרְבֵּנוּ) or not?”"
+            },
+            {
+              "ref": "Exo.34.9",
+              "note": "Moses: “Let the Lord go in our midst.”"
+            },
+            {
+              "ref": "Deu.7.21",
+              "note": "“Yahweh your God is in your midst, a great and fearful mighty one.”"
+            },
+            {
+              "ref": "Zep.3.17",
+              "note": "“Yahweh your God is in your midst, a mighty one who saves.”"
+            },
+            {
+              "ref": "Hos.11.9",
+              "note": "“I am God and not man, the Holy One in your midst.”"
+            },
+            {
+              "ref": "Amo.5.17",
+              "note": "“I will pass through your midst.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-qerbu",
+            "uga-qrb-midst",
+            "moab-bqrb"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κοιλία",
+          "gloss": "belly, inner parts",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.3.3, הַקֶּרֶב → κοιλίαν; Exo.29.13, הַקֶּרֶב → κοιλίας"
+            },
+            {
+              "ref": "Jhn.7.38"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בְּקֶרֶב",
+            "gloss": "in the midst of, among",
+            "evidence": [
+              {
+                "ref": "Jos.13.13"
+              },
+              {
+                "ref": "Exo.17.7"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָרְבָּן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "offering, what is brought near",
+      "bdb": [
+        "s.da.af"
+      ],
+      "summary": "The general word for anything brought near to Yahweh: animal, grain, gold, wood. It names the gift by the act of bringing it near, and is almost always the object of the hiphil (Lev 1:2). The late form קֻרְבָּן (Neh 10:35; 13:31) is the same word. Its Greek loan κορβᾶν is glossed by Mark himself as “a gift” (Mrk 7:11).",
+      "senses": [
+        {
+          "id": "offering",
+          "gloss": "offering, gift brought to Yahweh",
+          "definition": "Whatever is brought near to Yahweh at the sanctuary: burnt, grain, peace and sin offerings, the princes’ gifts, the spoil of gold, the wood for the altar.",
+          "evidence": [
+            {
+              "ref": "Lev.1.2",
+              "role": "defining",
+              "note": "“When any of you brings near a קָרְבָּן to Yahweh, from the cattle or the flock you shall bring near your קָרְבָּן.”"
+            },
+            {
+              "ref": "Lev.2.1",
+              "role": "defining",
+              "note": "“When anyone brings near a קָרְבַּן of grain offering, his קָרְבָּן shall be fine flour.”"
+            },
+            {
+              "ref": "Lev.23.14",
+              "role": "defining",
+              "note": "No bread or roasted grain “until you have brought the קָרְבַּן of your God”: the first sheaf."
+            },
+            {
+              "ref": "Num.7.13",
+              "note": "Nahshon’s קָרְבָּן: a silver dish, a silver basin, full of fine flour."
+            },
+            {
+              "ref": "Num.31.50",
+              "note": "The officers bring the gold they found as Yahweh’s קָרְבָּן, to make atonement for their lives."
+            },
+            {
+              "ref": "Num.28.2",
+              "note": "“My קָרְבָּן, my bread for my fire offerings.”"
+            },
+            {
+              "ref": "Neh.10.35",
+              "note": "קֻרְבַּן הָעֵצִים, the wood offering for the altar fire."
+            },
+            {
+              "ref": "Ezk.20.28",
+              "note": "Israel gave “the provocation of their קָרְבָּן” on every high hill."
+            }
+          ],
+          "kin": [
+            "offer"
+          ],
+          "cognate_ids": [
+            "ar-qurban"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κορβᾶν",
+          "gloss": "an offering, a gift to God",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. κορβάν",
+              "note": "Indeclinable, from Hebrew קׇרְבָּן: an offering, a gift offered to God (Mk 7:11); cf. κορβανᾶς."
+            },
+            {
+              "ref": "Mrk.7.11",
+              "role": "defining",
+              "note": "“If a man says to his father or mother, ‘Κορβᾶν’, that is, a gift, whatever you would have gained from me…”; the Peshitta keeps the word, קוּרְבָּנִי."
+            },
+            {
+              "ref": "Mat.27.6",
+              "note": "The chief priests will not put Judas’ silver into the κορβανᾶς, the treasury of gifts, since it is the price of blood."
+            }
+          ]
+        },
+        {
+          "lemma": "δῶρον",
+          "gloss": "gift",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.17.4, קָרְבָּן → δῶρον"
+            },
+            {
+              "ref": "Mat.5.23"
+            },
+            {
+              "ref": "Mat.8.4"
+            },
+            {
+              "ref": "Heb.5.1"
+            },
+            {
+              "ref": "Heb.8.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָרוֹב",
+      "pos": "adjective",
+      "gloss": "near; a near one, kinsman",
+      "bdb": [
+        "s.da.ae"
+      ],
+      "summary": "Near in place, in time, and in relation: a city close by, a day about to come, a near kinsman. Of God, “near” to those who call on him; of Israel, “a people near to him”; of priests, “those near me”.",
+      "senses": [
+        {
+          "gloss": "near (in place)",
+          "definition": "Close by, a short way off.",
+          "evidence": [
+            {
+              "ref": "Gen.19.20",
+              "role": "defining",
+              "note": "“That city is near to flee to.”"
+            },
+            {
+              "ref": "Exo.13.17",
+              "note": "God did not lead them by the Philistines’ road, “though it was near”."
+            }
+          ],
+          "cognate_ids": [
+            "akk-qurbu",
+            "ar-qarib"
+          ]
+        },
+        {
+          "id": "near-time",
+          "gloss": "near, at hand (in time)",
+          "definition": "About to come; above all of Yahweh’s day.",
+          "evidence": [
+            {
+              "ref": "Zep.1.14",
+              "role": "defining",
+              "note": "“Near is the great day of Yahweh, near and hastening greatly.”"
+            },
+            {
+              "ref": "Ezk.30.3",
+              "note": "“For the day is near, the day of Yahweh is near.”"
+            },
+            {
+              "ref": "Isa.56.1",
+              "note": "“My salvation is near to come.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-qurbu",
+            "ar-qarib"
+          ]
+        },
+        {
+          "id": "kinsman",
+          "gloss": "near (in kin), a kinsman",
+          "definition": "Closely related by blood; as a noun, a near relative, the one with the right and duty to redeem.",
+          "evidence": [
+            {
+              "ref": "Lev.21.2",
+              "role": "defining",
+              "note": "A priest may defile himself only “for his kin who is near to him: his mother, his father, his son…”."
+            },
+            {
+              "ref": "Lev.25.25",
+              "role": "defining",
+              "note": "“His redeemer who is near to him shall come and redeem what his brother sold.”"
+            },
+            {
+              "ref": "Rut.2.20",
+              "note": "“The man is near to us; he is one of our redeemers.”"
+            },
+            {
+              "ref": "Job.19.14",
+              "note": "“My near ones have failed.”"
+            },
+            {
+              "ref": "Psa.38.12",
+              "note": "“My near ones stand far off.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-qurbu-relative",
+            "ar-qaraba"
+          ]
+        },
+        {
+          "id": "near-to-god",
+          "gloss": "near (to God, or God near)",
+          "definition": "Of Yahweh, close to those who call on him and ready to hear; of men, brought close to him in service or as his people.",
+          "evidence": [
+            {
+              "ref": "Psa.145.18",
+              "role": "defining",
+              "note": "“Yahweh is near to all who call on him, to all who call on him in truth.”"
+            },
+            {
+              "ref": "Deu.4.7",
+              "role": "defining",
+              "note": "“What great nation has a god so near to it as Yahweh our God whenever we call on him?”"
+            },
+            {
+              "ref": "Psa.34.19",
+              "note": "“Yahweh is near to the broken-hearted.”"
+            },
+            {
+              "ref": "Isa.55.6",
+              "note": "“Call on him while he is near.”"
+            },
+            {
+              "ref": "Jer.23.23",
+              "note": "“Am I a God who is near, says Yahweh, and not a God far off?”"
+            },
+            {
+              "ref": "Lev.10.3",
+              "role": "defining",
+              "note": "“Among those near me (בִּקְרֹבַי) I will be shown holy”, said of the priests after Nadab and Abihu."
+            },
+            {
+              "ref": "Psa.148.14",
+              "note": "Israel, “a people near to him”."
+            },
+            {
+              "ref": "Deu.30.14",
+              "note": "“The word is very near you, in your mouth and in your heart, to do it.”"
+            },
+            {
+              "ref": "Isa.57.19",
+              "note": "“Peace, peace, to the far and to the near, says Yahweh.”"
+            }
+          ],
+          "kin": [
+            "come-near",
+            "nearness-to-god"
+          ],
+          "cognate_ids": [
+            "akk-qurbu",
+            "ar-qarib"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐγγύς",
+          "gloss": "near",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zep.1.14, קָרוֹב → ἐγγύς; Ecc.4.17, קָרוֹב → ἐγγύς"
+            },
+            {
+              "ref": "Rom.10.8",
+              "note": "Paul quotes Deu 30:14: “The word is near you, in your mouth and in your heart.”"
+            },
+            {
+              "ref": "Eph.2.17",
+              "note": "Paul quotes Isa 57:19: peace “to you who were far off and to those near”."
+            },
+            {
+              "ref": "Eph.2.13"
+            },
+            {
+              "ref": "Php.4.5"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "רָחוֹק",
+            "note": "Near set against far, of God and of peoples.",
+            "evidence": [
+              {
+                "ref": "Jer.23.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.57.19"
+              },
+              {
+                "ref": "Psa.38.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָרֵב",
+      "pos": "adjective",
+      "gloss": "coming near, approaching",
+      "bdb": [
+        "s.da.ab"
+      ],
+      "summary": "The verbal adjective of the qal: one who comes near, mostly the stranger who comes near the dwelling and must die. Some of its tokens are also counted under the verb.",
+      "senses": [
+        {
+          "gloss": "one who comes near",
+          "definition": "One coming close, to the sanctuary, to battle, or to a king’s table.",
+          "evidence": [
+            {
+              "ref": "Num.1.51",
+              "role": "defining",
+              "note": "“The stranger who comes near shall be put to death.”"
+            },
+            {
+              "ref": "Num.17.28",
+              "role": "defining",
+              "note": "“Everyone who comes near, who comes near the dwelling of Yahweh, dies.”"
+            },
+            {
+              "ref": "Deu.20.3",
+              "note": "“You are coming near to battle today against your enemies.”"
+            },
+            {
+              "ref": "Ezk.40.46",
+              "note": "The sons of Zadok, who come near to Yahweh to serve him."
+            }
+          ],
+          "kin": [
+            "come-near"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קִרְבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "nearness, drawing near",
+      "bdb": [
+        "s.da.ad"
+      ],
+      "summary": "Twice, both times of nearness to God. Only two uses, so the word rests on the verb and adjective beside it.",
+      "senses": [
+        {
+          "id": "nearness-to-god",
+          "gloss": "drawing near (to God)",
+          "definition": "Being near God, or coming near him, as the thing desired.",
+          "evidence": [
+            {
+              "ref": "Psa.73.28",
+              "role": "defining",
+              "note": "“But for me, the nearness of God (קִרֲבַת אֱלֹהִים) is good; I have made the Lord Yahweh my refuge.”"
+            },
+            {
+              "ref": "Isa.58.2",
+              "role": "defining",
+              "note": "“They delight in drawing near to God”, while their fasting is for quarrel."
+            }
+          ],
+          "kin": [
+            "near-to-god",
+            "come-near"
+          ],
+          "cognate_ids": [
+            "ar-qaruba"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְרָב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "battle, close fighting",
+      "bdb": [
+        "s.da.ac"
+      ],
+      "summary": "Battle, war; in poetry and late prose. Its link to “come near” is shown in scripture itself: armies “come near” to battle and a battle “draws near” when it is joined (1Ki 20:29; Deu 20:3). Akkadian qarābu “battle” and the Peshitta’s קְרָבָא “war” and aphel “fight” are the same word.",
+      "senses": [
+        {
+          "id": "battle",
+          "gloss": "battle, war",
+          "definition": "Armed conflict, the engagement of forces at close quarters.",
+          "evidence": [
+            {
+              "ref": "Psa.144.1",
+              "role": "defining",
+              "note": "“Blessed be Yahweh my rock, who teaches my hands for battle (לַקְרָב), my fingers for war (לַמִּלְחָמָה).”"
+            },
+            {
+              "ref": "Job.38.23",
+              "role": "defining",
+              "note": "“For the day of battle and war (קְרָב וּמִלְחָמָה).”"
+            },
+            {
+              "ref": "Zec.14.3",
+              "note": "Yahweh will fight “as on the day he fights, on a day of battle”."
+            },
+            {
+              "ref": "Ecc.9.18",
+              "note": "“Wisdom is better than weapons of battle.”"
+            },
+            {
+              "ref": "Psa.78.9",
+              "note": "Ephraim turned back on the day of battle."
+            },
+            {
+              "ref": "2Sa.17.11",
+              "note": "Hushai: “your presence going into the battle”."
+            },
+            {
+              "ref": "Psa.55.19",
+              "note": "“He redeemed my life in peace from the battle against me.”"
+            },
+            {
+              "ref": "Psa.68.31",
+              "note": "“Scatter the peoples who delight in wars.”"
+            }
+          ],
+          "kin": [
+            "come-to-battle"
+          ],
+          "cognate_ids": [
+            "akk-qarabu"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πόλεμος",
+          "gloss": "war, battle",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.38.23, קְרָב → πολέμου"
+            },
+            {
+              "ref": "Rev.12.7"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִלְחָמָה",
+            "note": "Battle beside war.",
+            "evidence": [
+              {
+                "ref": "Psa.144.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.38.23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קְרֵב",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "come near; bring near, offer",
+      "bdb": [
+        "xs.ak.aa"
+      ],
+      "summary": "Biblical Aramaic, used as the Hebrew is: men come near the king or the furnace; the haphel and pael bring sacrifices near; and one like a son of man is brought near before the Ancient of Days.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "come near, approach",
+          "senses": [
+            {
+              "gloss": "come near",
+              "definition": "Come close to a person or place.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.26",
+                  "role": "defining",
+                  "note": "Nebuchadnezzar came near to the door of the furnace."
+                },
+                {
+                  "ref": "Dan.6.21",
+                  "role": "defining",
+                  "note": "As the king came near to the den he cried out to Daniel."
+                },
+                {
+                  "ref": "Dan.7.16",
+                  "note": "“I came near to one of those standing by.”"
+                },
+                {
+                  "ref": "Dan.3.8",
+                  "note": "Chaldeans came near and accused the Jews."
+                },
+                {
+                  "ref": "Dan.6.13",
+                  "note": "They came near and spoke before the king."
+                }
+              ],
+              "kin": [
+                "come-near"
+              ],
+              "cognate_ids": [
+                "akk-qerebu"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "offer",
+          "senses": [
+            {
+              "gloss": "offer",
+              "definition": "Bring sacrifices to the altar.",
+              "evidence": [
+                {
+                  "ref": "Ezr.7.17",
+                  "role": "defining",
+                  "note": "Buy bulls, rams, lambs “and offer them on the altar of the house of your God”."
+                }
+              ],
+              "kin": [
+                "offer"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "bring near; offer",
+          "senses": [
+            {
+              "gloss": "bring near, present",
+              "definition": "Bring someone before a ruler; bring offerings to God.",
+              "evidence": [
+                {
+                  "ref": "Dan.7.13",
+                  "role": "defining",
+                  "note": "One like a son of man came with the clouds to the Ancient of Days, “and they brought him near before him”."
+                },
+                {
+                  "ref": "Ezr.6.17",
+                  "role": "defining",
+                  "note": "At the dedication of the house “they offered” a hundred bulls, two hundred rams…"
+                },
+                {
+                  "ref": "Ezr.6.10",
+                  "note": "That they may offer pleasing sacrifices to the God of heaven."
+                }
+              ],
+              "kin": [
+                "offer",
+                "bring-near-to-god"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְרָב",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "war",
+      "bdb": [
+        "xs.ak.ab"
+      ],
+      "summary": "Once in Biblical Aramaic. Its BDB key also counts four Hebrew tokens of קְרָב spelled alike.",
+      "senses": [
+        {
+          "gloss": "war",
+          "definition": "War waged against someone.",
+          "evidence": [
+            {
+              "ref": "Dan.7.21",
+              "role": "defining",
+              "note": "The horn “made war (עָבְדָה קְרָב) with the holy ones and prevailed over them”."
+            },
+            {
+              "ref": "Rev.13.7",
+              "note": "John’s echo of Dan 7:21: it was given to the beast “to make war with the saints”; the Peshitta has קְרָבָא."
+            }
+          ],
+          "kin": [
+            "battle"
+          ],
+          "cognate_ids": [
+            "akk-qarabu"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְרֵב",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "draw near, touch; bring near, offer; fight",
+      "summary": "The Peshitta’s verb in all three of the Hebrew root’s directions: the peal draws near (and touches), the pael brings near and offers, and the aphel fights, as קְרָב is battle.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "draw near, approach; touch",
+          "senses": [
+            {
+              "gloss": "draw near",
+              "definition": "Come close to a person or to God; of a time or the kingdom, be at hand.",
+              "evidence": [
+                {
+                  "ref": "Jas.4.8",
+                  "role": "defining",
+                  "note": "“Draw near to God, and he will draw near to you.”"
+                },
+                {
+                  "ref": "Heb.10.22",
+                  "role": "defining",
+                  "note": "“Let us draw near with a true heart.”"
+                },
+                {
+                  "ref": "Mat.4.3",
+                  "note": "The tempter came near to him."
+                },
+                {
+                  "ref": "Mat.3.2",
+                  "note": "“The kingdom of heaven has come near.”"
+                }
+              ],
+              "kin": [
+                "come-near",
+                "time-near"
+              ]
+            },
+            {
+              "gloss": "touch",
+              "definition": "Come into contact with.",
+              "evidence": [
+                {
+                  "ref": "Mat.9.20",
+                  "role": "defining",
+                  "note": "The woman touched the edge of his garment."
+                },
+                {
+                  "ref": "Mat.8.3",
+                  "note": "Jesus stretched out his hand and touched the leper."
+                }
+              ],
+              "kin": [
+                "come-near"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "bring near, offer",
+          "senses": [
+            {
+              "gloss": "offer, bring near",
+              "definition": "Bring a gift to the altar or to God; bring a person near.",
+              "evidence": [
+                {
+                  "ref": "Mat.5.23",
+                  "role": "defining",
+                  "note": "“If you are bringing your קוּרְבָּנָא to the altar…”"
+                },
+                {
+                  "ref": "Heb.9.14",
+                  "role": "defining",
+                  "note": "Christ through the eternal spirit offered himself without blemish to God."
+                },
+                {
+                  "ref": "1Pe.3.18",
+                  "role": "defining",
+                  "note": "Christ died for sins once, the righteous for the unrighteous, “to bring us near to God”."
+                },
+                {
+                  "ref": "Heb.11.17",
+                  "note": "By faith Abraham offered Isaac."
+                },
+                {
+                  "ref": "Heb.10.12",
+                  "note": "He offered one sacrifice for sins for ever."
+                },
+                {
+                  "ref": "Heb.5.1",
+                  "note": "Every high priest is appointed to offer gifts and sacrifices for sins."
+                }
+              ],
+              "kin": [
+                "offer",
+                "bring-near-to-god"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "fight, make war",
+          "senses": [
+            {
+              "gloss": "fight, make war",
+              "definition": "Engage in battle with an enemy.",
+              "evidence": [
+                {
+                  "ref": "Rev.12.7",
+                  "role": "defining",
+                  "note": "Michael and his angels fought against the dragon, and the dragon fought."
+                },
+                {
+                  "ref": "Rev.2.16",
+                  "note": "“I will fight against them with the sword of my mouth.”"
+                },
+                {
+                  "ref": "Rev.19.11",
+                  "note": "In righteousness he judges and makes war."
+                },
+                {
+                  "ref": "Rev.17.14",
+                  "note": "They will make war with the Lamb."
+                }
+              ],
+              "kin": [
+                "battle",
+                "come-to-battle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קוּרְבָּנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "offering, gift brought to God",
+      "summary": "The Peshitta’s word for the gift at the altar and for Christ’s offering of himself; it keeps the word in Mark 7:11 where the Greek has κορβᾶν.",
+      "senses": [
+        {
+          "gloss": "offering",
+          "definition": "A gift brought to God: at the altar, in the treasury, and the offering of Christ’s body.",
+          "evidence": [
+            {
+              "ref": "Mrk.7.11",
+              "role": "defining",
+              "note": "קוּרְבָּנִי, “my offering”, for Greek κορβᾶν."
+            },
+            {
+              "ref": "Mat.5.24",
+              "role": "defining",
+              "note": "“Leave your offering there before the altar; first be reconciled to your brother.”"
+            },
+            {
+              "ref": "Eph.5.2",
+              "role": "defining",
+              "note": "Christ “gave himself for us, an offering and a sacrifice to God for a sweet smell”."
+            },
+            {
+              "ref": "Heb.10.10",
+              "note": "We are made holy through the offering of the body of Jesus Christ once."
+            },
+            {
+              "ref": "Heb.10.14",
+              "note": "By one offering he has perfected for ever those made holy."
+            },
+            {
+              "ref": "Heb.10.18",
+              "note": "Where there is forgiveness, there is no more offering for sin."
+            },
+            {
+              "ref": "Rom.15.16",
+              "note": "That the offering of the nations may be acceptable."
+            },
+            {
+              "ref": "Mat.27.6",
+              "note": "Not lawful to put the silver into the house of offerings (the κορβανᾶς)."
+            }
+          ],
+          "kin": [
+            "offering",
+            "offer"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְרָבָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "war, battle",
+      "senses": [
+        {
+          "gloss": "war, battle",
+          "definition": "Armed conflict; also strife among people.",
+          "evidence": [
+            {
+              "ref": "Mat.24.6",
+              "role": "defining",
+              "note": "“You will hear of wars and reports of wars.”"
+            },
+            {
+              "ref": "Luk.14.31",
+              "role": "defining",
+              "note": "A king going to make war against another king."
+            },
+            {
+              "ref": "Rev.13.7",
+              "note": "War with the saints (Dan 7:21)."
+            },
+            {
+              "ref": "Jas.4.1",
+              "note": "“Where do wars and fightings among you come from?”"
+            }
+          ],
+          "kin": [
+            "battle"
+          ],
+          "cognate_ids": [
+            "akk-qarabu"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַרִיבָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "near; neighbour",
+      "summary": "Near in place and time, and as a noun “the near one”, the Peshitta’s word for “neighbour” in “love your neighbour as yourself”.",
+      "senses": [
+        {
+          "gloss": "near",
+          "definition": "Close by; of time, at hand; of people, brought near to God.",
+          "evidence": [
+            {
+              "ref": "Eph.2.13",
+              "role": "defining",
+              "note": "“You who once were far off have become near by the blood of Christ.”"
+            },
+            {
+              "ref": "Eph.2.17",
+              "note": "Peace to the far and the near (Isa 57:19)."
+            },
+            {
+              "ref": "Rom.10.8",
+              "note": "“The word is near you” (Deu 30:14)."
+            },
+            {
+              "ref": "Php.4.5",
+              "note": "“The Lord is near.”"
+            },
+            {
+              "ref": "Mrk.13.29",
+              "note": "It is near, at the doors."
+            }
+          ],
+          "kin": [
+            "near-to-god",
+            "near-time"
+          ]
+        },
+        {
+          "gloss": "neighbour",
+          "definition": "The one near, a fellow person to be loved.",
+          "evidence": [
+            {
+              "ref": "Mat.22.39",
+              "role": "defining",
+              "note": "“Love your neighbour as yourself” (Lev 19:18, where the Hebrew has רֵעַ)."
+            },
+            {
+              "ref": "Luk.10.29",
+              "role": "defining",
+              "note": "“And who is my neighbour?”"
+            },
+            {
+              "ref": "Luk.10.36",
+              "note": "Which of the three became neighbour to the man?"
+            },
+            {
+              "ref": "Rom.13.10",
+              "note": "Love does no harm to its neighbour."
+            }
+          ],
+          "kin": [
+            "kinsman"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קוּרָבָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "access, approach",
+      "summary": "Once in the Peshitta, for Greek προσαγωγή.",
+      "senses": [
+        {
+          "gloss": "access, approach",
+          "definition": "The way of coming near to the Father.",
+          "evidence": [
+            {
+              "ref": "Eph.2.18",
+              "role": "defining",
+              "note": "“Through him we both have access in one spirit to the Father.”"
+            }
+          ],
+          "kin": [
+            "nearness-to-god"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַרִיבוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "nearness, access",
+      "summary": "Once in the Peshitta, for Greek προσαγωγή.",
+      "senses": [
+        {
+          "gloss": "nearness, access",
+          "definition": "Freedom to come near to God.",
+          "evidence": [
+            {
+              "ref": "Eph.3.12",
+              "role": "defining",
+              "note": "In him “we have boldness and access with confidence through faith in him”."
+            }
+          ],
+          "kin": [
+            "nearness-to-god"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-qerebu",
+      "lang": "akk",
+      "form": "qerēbu",
+      "translit": "qerēbu",
+      "gloss": "come near, approach; (D) bring near, present",
+      "relation": "cognate",
+      "note": "Oracc’s senses include “approach”, “come near”, “bring near”, “be presented”, “present”: both the moving near and the bringing near of the Hebrew qal and hiphil.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000022480, qerēbu [approach] V; armep x000111710, qerēbu [be(come) close] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000328 qrb [near] V, AKK009569 qerēbu [be(come) close]"
+        }
+      ]
+    },
+    {
+      "id": "akk-qerbu",
+      "lang": "akk",
+      "form": "qerbu",
+      "translit": "qerbu",
+      "gloss": "midst, centre, interior; innards, belly",
+      "relation": "cognate",
+      "note": "One noun for both senses of קֶרֶב: “midst, within” and “innards, intestines, belly” (Oracc’s senses), beside the verb qerēbu “come near”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005000, qerbu [centre] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-qurbu",
+      "lang": "akk",
+      "form": "qurbu",
+      "translit": "qurbu",
+      "gloss": "near, close; present",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000027940, qurbu [near] AJ; armep x000050330, qerbu [near] AJ"
+        }
+      ]
+    },
+    {
+      "id": "akk-qurbu-relative",
+      "lang": "akk",
+      "form": "qurbu",
+      "translit": "qurbu",
+      "gloss": "relative, neighbour",
+      "relation": "cognate",
+      "note": "Neo-Assyrian only.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000028000, qurbu [relative] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-qarabu",
+      "lang": "akk",
+      "form": "qarābu",
+      "translit": "qarābu",
+      "gloss": "battle, warfare",
+      "relation": "cognate",
+      "note": "Neo-Assyrian only (151 attestations in Oracc); whether it is native or taken from Aramaic is not shown here.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000050310, qarābu [battle] N; armep x000141450, qarabu [battle] N"
+        }
+      ]
+    },
+    {
+      "id": "ar-qaruba",
+      "lang": "ar",
+      "form": "قَرُبَ",
+      "translit": "qaruba",
+      "gloss": "be or become near; draw near",
+      "relation": "cognate",
+      "note": "Lane: it, or he, was or became near; the contrary of بَعُدَ “be far”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2504, root قرب, قَرُبَ (n35387)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000328 qrb [near] V, ARB028532 qaruba"
+        }
+      ]
+    },
+    {
+      "id": "ar-qarraba",
+      "lang": "ar",
+      "form": "قَرَّبَ",
+      "translit": "qarraba",
+      "gloss": "make near, bring near; take into favour",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2505, root قرب, قرّبهُ (n35388)"
+        }
+      ]
+    },
+    {
+      "id": "ar-qarib",
+      "lang": "ar",
+      "form": "قَرِيبٌ",
+      "translit": "qarīb",
+      "gloss": "near (in place, time)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2507, root قرب, قَرِيبٌ (n35405)"
+        }
+      ]
+    },
+    {
+      "id": "ar-qaraba",
+      "lang": "ar",
+      "form": "قَرَابَةٌ",
+      "translit": "qarāba",
+      "gloss": "nearness of kin, relationship",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2508, root قرب, قَرَابَةٌ (n35406)"
+        }
+      ]
+    },
+    {
+      "id": "ar-qurban",
+      "lang": "ar",
+      "form": "قُرْبَانٌ",
+      "translit": "qurbān",
+      "gloss": "offering, oblation; sacrifice",
+      "relation": "possible",
+      "note": "The same pattern as קָרְבָּן. As a religious term it may have come into Arabic from Jewish or Christian Aramaic use rather than being inherited; not shown either way here.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2507, root قرب, قُرْبَانٌ (n35401)"
+        }
+      ]
+    },
+    {
+      "id": "uga-qrb",
+      "lang": "uga",
+      "form": "qrb",
+      "translit": "q-r-b",
+      "gloss": "approach",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 200, glossary, /q-r-b/: yqrb 1.17:I:16 “to approach”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000328 qrb [near] V, UGC003509 qrb [approach] V"
+        }
+      ]
+    },
+    {
+      "id": "uga-qrb-midst",
+      "lang": "uga",
+      "form": "qrb",
+      "translit": "qarb-",
+      "gloss": "midst; bqrb “in the midst (of)”",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 200, glossary, qrb /qarb-/ “midst”: 1.4:IV:22; bqrb 1.17:I:25"
+        }
+      ]
+    },
+    {
+      "id": "moab-bqrb",
+      "lang": "sem",
+      "form": "בקרב",
+      "translit": "bqrb (Moabite)",
+      "gloss": "in the midst of",
+      "relation": "cognate",
+      "note": "The Mesha stele: “there was no cistern in the midst of the city (בקרב הקר)”.",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 23–24",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 24: ובר אנ בקרב הקר בקרחה."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 23–24",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "“Now cistern there was none in the middle of the city, in Ḳrḥh.”"
+        }
+      ]
+    },
+    {
+      "id": "gez-qarba",
+      "lang": "gez",
+      "form": "ቀርበ",
+      "translit": "qarba",
+      "gloss": "approach",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000328 qrb [near] V, GEZ004423 qarba [approach] V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "offering-as-drawing-near",
+      "statement": "The law names its offerings by what is done with them: the worshipper “brings near” (הִקְרִיב) a קָרְבָּן, “a thing brought near”, to Yahweh (Lev 1:2). At every appointed time of Lev 23 Israel is told “you shall bring near a fire offering to Yahweh” (Lev 23:8, 25, 27, 36–37), the first sheaf is “the קָרְבָּן of your God” (Lev 23:14), and whoever neglects the Passover “did not bring near the קָרְבָּן of Yahweh at its appointed time” (Num 9:13). Approach itself was guarded: the unclean who came near the holy things was cut off, and the stranger who came near the dwelling died (Lev 22:3; Num 1:51; 17:28); Yahweh “brought near” only those he chose to stand before him (Exo 28:1; Num 16:9–10), and said “among those near me I will be shown holy” (Lev 10:3). Yet the psalmist calls the man happy whom God chooses and brings near to dwell in his courts (Psa 65:5), and says “the nearness of God is good for me” (Psa 73:28). Hebrews takes up the same words: the law, with sacrifices offered year by year, could never make perfect those who draw near (Heb 10:1); a better hope was brought in “through which we draw near to God” (Heb 7:19); Christ, who offered himself without blemish to God (Heb 9:14), is able to save completely those who come to God through him (Heb 7:25), so “let us draw near with a true heart in full assurance of faith” (Heb 10:22). Peter says he suffered for sins once “that he might bring us to God” (1Pe 3:18), and the Peshitta writes it with this root: “bring us near”.",
+      "evidence": [
+        {
+          "ref": "Lev.1.2"
+        },
+        {
+          "ref": "Lev.23.8"
+        },
+        {
+          "ref": "Lev.23.14"
+        },
+        {
+          "ref": "Lev.23.36",
+          "to": "Lev.23.37"
+        },
+        {
+          "ref": "Num.9.13"
+        },
+        {
+          "ref": "Lev.22.3"
+        },
+        {
+          "ref": "Num.17.28"
+        },
+        {
+          "ref": "Exo.28.1"
+        },
+        {
+          "ref": "Num.16.9",
+          "to": "Num.16.10"
+        },
+        {
+          "ref": "Lev.10.3"
+        },
+        {
+          "ref": "Psa.65.5"
+        },
+        {
+          "ref": "Psa.73.28"
+        },
+        {
+          "ref": "Heb.10.1"
+        },
+        {
+          "ref": "Heb.7.19"
+        },
+        {
+          "ref": "Heb.9.14"
+        },
+        {
+          "ref": "Heb.7.25"
+        },
+        {
+          "ref": "Heb.10.22"
+        },
+        {
+          "ref": "1Pe.3.18"
+        }
+      ]
+    },
+    {
+      "topic": "the-far-made-near",
+      "statement": "Yahweh is “near to all who call on him in truth” (Psa 145:18), and Israel was a nation with God near to it (Deu 4:7), “a people near to him” (Psa 148:14); Isaiah heard him promise “peace, peace, to the far and to the near” (Isa 57:19). Jeremiah foresaw a ruler from Israel’s own midst whom Yahweh would bring near, so that he would approach him, “for who would pledge his heart to approach me?” (Jer 30:21). Paul writes to Gentiles who were once without God and far off: “now in Christ Jesus you who once were far off have been brought near by the blood of Christ”, and he came and preached peace “to you who were far off and to those near” (Eph 2:12–13, 17, quoting Isa 57:19); through him both have access in one spirit to the Father (Eph 2:18), where the Peshitta’s words for “near” and “access” are this root’s. James calls on believers, “Draw near to God, and he will draw near to you” (Jas 4:8).",
+      "evidence": [
+        {
+          "ref": "Psa.145.18"
+        },
+        {
+          "ref": "Deu.4.7"
+        },
+        {
+          "ref": "Psa.148.14"
+        },
+        {
+          "ref": "Isa.57.19"
+        },
+        {
+          "ref": "Jer.30.21"
+        },
+        {
+          "ref": "Eph.2.12",
+          "to": "Eph.2.13"
+        },
+        {
+          "ref": "Eph.2.17",
+          "to": "Eph.2.18"
+        },
+        {
+          "ref": "Jas.4.8"
+        }
+      ]
+    },
+    {
+      "topic": "law-within",
+      "statement": "The same root names God’s presence “in the midst” (בְּקֶרֶב) of his people: Israel asked “Is Yahweh among us or not?” (Exo 17:7), Moses pleaded “let the Lord go in our midst” (Exo 34:9), and Zephaniah promises “Yahweh your God in your midst, a mighty one who saves” (Zep 3:17). The new covenant moves it within the person: “I will put my law within them (בְּקִרְבָּם), and write it on their heart” (Jer 31:33); “a new spirit I will put within you” (Ezk 36:26). Hebrews quotes Jer 31:33 as the covenant Christ mediates (Heb 8:10).",
+      "evidence": [
+        {
+          "ref": "Exo.17.7"
+        },
+        {
+          "ref": "Exo.34.9"
+        },
+        {
+          "ref": "Zep.3.17"
+        },
+        {
+          "ref": "Jer.31.33"
+        },
+        {
+          "ref": "Ezk.36.26"
+        },
+        {
+          "ref": "Heb.8.10"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-11 from the brief, for Lev 23 (וְהִקְרַבְתֶּם 23:8, 16, 18, 25, 27, 36, 37; קָרְבַּן 23:14). ONE ENTRY: approach, offering, inside/midst and battle kept together. Evidence they belong: Akkadian has qerēbu “come near”, qerbu “midst; innards” and qarābu “battle” in one root; Ugaritic has q-r-b “approach” and qrb “midst” (Segert p. 200); scripture says armies “come near” to battle and a battle “draws near” (1Ki 20:29; Deu 20:3, 10); the Peshitta uses QRB for draw near, offer (pael), fight (aphel), war (qrābā), offering and neighbour. No merged letter in קרב, so no sound split is possible. LEFT OUT: קַרְדֹּם “axe” (BDB s.db.ac, 5 tokens) is filed in this section of BDB but its consonants are q-r-d-m, not formed from קרב; it belongs to its own entry (root key קרדמ), still to be written. Proper names (none of this root found in the brief). BDB KEYS: s.da.af and s.da.ag list the same 82 קָרְבָּן tokens, so only s.da.af is used (קֻרְבָּן Neh 10:35; 13:31 is the same word). s.da.ab (verbal adj.) overlaps the verb’s 7 “no stem” tokens. xs.ak.ab (Aramaic קְרָב) counts 4 Hebrew tokens spelled alike (Zec 14:3; Psa 78:9; Job 38:23; Ecc 9:18); only Dan 7:21 is Aramaic. The brief files Psa 65:5 also under the Aramaic verb (xs.ak.aa, “piel”); it is Hebrew and is cited only under the Hebrew piel. Verse numbers are the Hebrew text’s (Exo 22:7 = Eng 22:8; Num 16:9–10, 17:5, 17:28; Psa 65:5 = Eng 65:4; Psa 69:19; Psa 34:19 = Eng 34:18; Psa 38:12 = Eng 38:11; Ecc 4:17 = Eng 5:1). PESHITTA: words and verses from SEDRA’s BFBS word list (lexemes 2874 qurāḇā, 2875 qurbānā, 2876 qreḇ, 2877 qrāḇā, 2878 qarīḇā, 2879 qarīḇūṯā); stems from SEDRA’s English table (pael “bring near / offer”, aphel “fight”). Pointing of the Syriac lemmas in Hebrew script is mine from SEDRA’s vocalised forms (geminations not marked in SEDRA; qarrīḇā may be the better form). GREEK: κορβᾶν recorded as a loan (Abbott-Smith; Mark 7:11 glosses it “a gift”); κορβανᾶς (Mat 27:6, treasury) is noted on it, not given its own record (Abbott-Smith has no separate entry in the local data). COGNATES: Segert p. 200 checked against the scan image (archive.org leaf 227). Ge’ez qarba from Anderson–Moser only (Dillmann/Leslau not consulted). A suggested link of קֶרֶב to Arabic qalb “heart” was not followed (no evidence beyond resemblance). Arabic قُرْبَان marked possible (may be a loan from Aramaic religious use). Akkadian qarābu “battle” is Neo-Assyrian only; could be from Aramaic. Phoenician/Punic qrb not looked up in Krahmalkov."
+}

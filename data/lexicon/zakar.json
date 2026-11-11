@@ -1,0 +1,1615 @@
+{
+  "id": "zakar",
+  "root": "זכר",
+  "status": "draft",
+  "updated": "2026-11-11",
+  "tags": [
+    "memory",
+    "covenant",
+    "name",
+    "speech",
+    "worship",
+    "feasts",
+    "sacrifice",
+    "male"
+  ],
+  "gloss": "remember, bring to mind; mention; memorial; male",
+  "summary": "To hold someone or something in mind so as to act on it: God remembers Noah, his covenant, or a barren woman, and acts for them (Gen 8:1; Exo 2:24; 1Sa 1:19); Israel remembers the sabbath, the exodus and the commandments, to keep and do them (Exo 20:8; Num 15:39); not to remember sin is to forgive it (Isa 43:25). The hiphil brings to another’s mind, mentions, names; its nouns are the remembrance a name keeps (Exo 3:15), the memorial set before Yahweh (Lev 23:24) and the portion burnt as a memorial (Lev 2:2). זָכָר “male” has the same consonants, and wherever a language keeps the older ḏ apart from z, remembering and male show the same ḏ (Arabic ذكر, Aramaic דכר), both in one root; scripture’s own Aramaic has דְּכַר “ram” beside דִּכְרוֹן “record”.",
+  "words": [
+    {
+      "lemma": "זָכַר",
+      "pos": "verb",
+      "gloss": "remember, call to mind; (hiphil) bring to mind, mention",
+      "bdb": [
+        "g.bh.aa"
+      ],
+      "summary": "The qal is to have in mind and act on it, the opposite of forgetting (Gen 40:23); when God is subject, remembering is followed by his doing (Gen 8:1; Exo 2:24). The niphal is to be remembered. The hiphil brings something to someone’s mind: mentioning a person to a king, calling on a name, reminding of guilt; its participle מַזְכִּיר is the king’s recorder.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "remember, call to mind",
+          "senses": [
+            {
+              "id": "remember",
+              "gloss": "remember, call to mind",
+              "definition": "Have in mind what is past or absent, the opposite of forgetting it.",
+              "evidence": [
+                {
+                  "ref": "Gen.40.23",
+                  "role": "defining",
+                  "note": "“The chief cupbearer did not remember Joseph, but forgot him (וַיִּשְׁכָּחֵהוּ).”"
+                },
+                {
+                  "ref": "Deu.8.2",
+                  "role": "defining",
+                  "note": "“Remember all the way Yahweh your God led you these forty years.”"
+                },
+                {
+                  "ref": "Psa.63.7",
+                  "note": "“When I remember you on my bed, I meditate on you in the night watches.”"
+                },
+                {
+                  "ref": "Psa.77.12",
+                  "note": "“I will remember the deeds of Yah; I will remember your wonders of old.”"
+                },
+                {
+                  "ref": "Ecc.12.1",
+                  "note": "“Remember your Creator in the days of your youth.”"
+                },
+                {
+                  "ref": "Num.11.5",
+                  "note": "“We remember the fish we ate in Egypt.”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-dhakara",
+                "uga-dhkr",
+                "phn-zkr",
+                "gez-zakara"
+              ]
+            },
+            {
+              "id": "remember-to-do",
+              "gloss": "remember (a command, a day) so as to keep it",
+              "definition": "Keep in mind what Yahweh commanded or did, so as to do it and live by it.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.8",
+                  "role": "defining",
+                  "note": "“Remember the sabbath day, to keep it holy.”"
+                },
+                {
+                  "ref": "Num.15.39",
+                  "role": "defining",
+                  "note": "The tassel: “you shall see it and remember all the commandments of Yahweh and do them.”"
+                },
+                {
+                  "ref": "Psa.103.18",
+                  "role": "defining",
+                  "note": "“Those who remember his precepts to do them.”"
+                },
+                {
+                  "ref": "Exo.13.3",
+                  "note": "“Remember this day on which you came out from Egypt.”"
+                },
+                {
+                  "ref": "Deu.5.15",
+                  "note": "“Remember that you were a slave in Egypt … therefore Yahweh commanded you to keep the sabbath day.”"
+                },
+                {
+                  "ref": "Deu.16.3",
+                  "note": "Unleavened bread seven days, “that you may remember the day you came out of Egypt all the days of your life”."
+                },
+                {
+                  "ref": "Deu.16.12",
+                  "note": "At שָׁבֻעוֹת: “remember that you were a slave in Egypt, and keep and do these statutes.”"
+                },
+                {
+                  "ref": "Mal.3.22",
+                  "note": "“Remember the law of Moses my servant.”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-dhakara",
+                "uga-dhkr",
+                "gez-zakara"
+              ]
+            },
+            {
+              "id": "god-remembers",
+              "gloss": "(of God) remember and act for",
+              "definition": "Of God, turn his attention to a person, people or covenant and act on their behalf: deliver, give a child, keep his promise.",
+              "evidence": [
+                {
+                  "ref": "Gen.8.1",
+                  "role": "defining",
+                  "note": "“God remembered Noah … and God made a wind pass over the earth, and the waters subsided.”"
+                },
+                {
+                  "ref": "Exo.2.24",
+                  "role": "defining",
+                  "note": "“God heard their groaning, and God remembered his covenant with Abraham, Isaac and Jacob.”"
+                },
+                {
+                  "ref": "1Sa.1.19",
+                  "role": "defining",
+                  "note": "“Yahweh remembered her”, and Hannah conceived (her vow, 1Sa 1:11: “remember me and do not forget your handmaid”)."
+                },
+                {
+                  "ref": "Gen.9.15",
+                  "note": "“I will remember my covenant … and the waters will never again become a flood.”"
+                },
+                {
+                  "ref": "Lev.26.42",
+                  "note": "“I will remember my covenant with Jacob … and I will remember the land.”"
+                },
+                {
+                  "ref": "Psa.105.8",
+                  "note": "“He remembers his covenant for ever.”"
+                },
+                {
+                  "ref": "Psa.106.45",
+                  "note": "“He remembered for them his covenant, and relented according to his great love.”"
+                },
+                {
+                  "ref": "Psa.103.14",
+                  "note": "“He knows our frame; he remembers that we are dust.”"
+                },
+                {
+                  "ref": "Jdg.16.28",
+                  "note": "Samson: “Remember me, please, and strengthen me only this once.”"
+                },
+                {
+                  "ref": "Neh.5.19",
+                  "note": "“Remember for me, my God, for good, all I have done for this people.”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-dhakara",
+                "uga-dhkr",
+                "phn-zkr",
+                "gez-zakara"
+              ]
+            },
+            {
+              "id": "remember-sin",
+              "gloss": "remember (sin) against; not remember, forgive",
+              "definition": "Of God, keep a sin in mind so as to punish it; not to remember sins is to forgive them.",
+              "evidence": [
+                {
+                  "ref": "Hos.9.9",
+                  "role": "defining",
+                  "note": "“He will remember their iniquity; he will punish their sins.”"
+                },
+                {
+                  "ref": "Isa.43.25",
+                  "role": "defining",
+                  "note": "“I, I am he who blots out your transgressions for my own sake, and your sins I will not remember.”"
+                },
+                {
+                  "ref": "Jer.31.34",
+                  "role": "defining",
+                  "note": "“I will forgive their iniquity, and their sin I will remember no more.”"
+                },
+                {
+                  "ref": "Psa.25.7",
+                  "note": "“Do not remember the sins of my youth; according to your covenant faithfulness remember me.”"
+                },
+                {
+                  "ref": "Psa.79.8",
+                  "note": "“Do not remember against us the iniquities of former generations.”"
+                },
+                {
+                  "ref": "Isa.64.8",
+                  "note": "“Do not remember iniquity for ever.”"
+                },
+                {
+                  "ref": "Psa.137.7",
+                  "note": "“Remember, Yahweh, against the sons of Edom the day of Jerusalem.”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-dhakara"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be remembered",
+          "senses": [
+            {
+              "gloss": "be remembered",
+              "definition": "Be held in mind, by God or by people; with “not”, be forgotten, pass out of mind.",
+              "evidence": [
+                {
+                  "ref": "Num.10.9",
+                  "role": "defining",
+                  "note": "“Sound an alarm with the trumpets, and you will be remembered before Yahweh your God, and be saved from your enemies.”"
+                },
+                {
+                  "ref": "Ezk.18.22",
+                  "role": "defining",
+                  "note": "“None of his transgressions shall be remembered against him; in his righteousness he shall live.”"
+                },
+                {
+                  "ref": "Psa.83.5",
+                  "note": "“Let the name of Israel be remembered no more.”"
+                },
+                {
+                  "ref": "Isa.65.17",
+                  "note": "New heavens and a new earth: “the former things will not be remembered”."
+                },
+                {
+                  "ref": "Jer.11.19",
+                  "note": "“Let us cut him off from the land of the living, that his name be remembered no more.”"
+                },
+                {
+                  "ref": "Est.9.28",
+                  "note": "“These days are remembered and kept in every generation.”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-dhakara",
+                "gez-zakara"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring to mind, mention, name; record",
+          "senses": [
+            {
+              "id": "remind",
+              "gloss": "bring to mind, remind, mention",
+              "definition": "Bring a person or matter to someone’s mind, by speaking of it or by an object or act that recalls it; often of guilt brought to remembrance.",
+              "evidence": [
+                {
+                  "ref": "Gen.40.14",
+                  "role": "defining",
+                  "note": "“Remember me (זְכַרְתַּנִי) … and mention me (וְהִזְכַּרְתַּנִי) to Pharaoh.”"
+                },
+                {
+                  "ref": "1Ki.17.18",
+                  "role": "defining",
+                  "note": "“Have you come to me to bring my iniquity to remembrance and to kill my son?”"
+                },
+                {
+                  "ref": "Gen.41.9",
+                  "note": "“I bring my faults to mind today.”"
+                },
+                {
+                  "ref": "Isa.43.26",
+                  "note": "“Put me in remembrance; let us argue together.”"
+                },
+                {
+                  "ref": "Isa.62.6",
+                  "note": "Watchmen on Jerusalem’s walls: “you who remind Yahweh, take no rest.”"
+                },
+                {
+                  "ref": "Num.5.15",
+                  "note": "The jealousy offering, “a grain offering of memorial, bringing iniquity to remembrance (מַזְכֶּרֶת עָוֹן)”."
+                },
+                {
+                  "ref": "Ezk.21.28",
+                  "note": "“He brings iniquity to remembrance, that they may be taken.”"
+                }
+              ],
+              "kin": [
+                "memorial-reminder"
+              ],
+              "cognate_ids": [
+                "ar-dhakkara",
+                "akk-zakaru"
+              ]
+            },
+            {
+              "id": "mention-name",
+              "gloss": "make mention of (a name), call on",
+              "definition": "Speak a name, above all a god’s, in worship or oath; of Yahweh, cause his own name to be remembered in a place.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.24",
+                  "role": "defining",
+                  "note": "“In every place where I cause my name to be remembered I will come to you and bless you.”"
+                },
+                {
+                  "ref": "Exo.23.13",
+                  "role": "defining",
+                  "note": "“Do not mention the name of other gods; let it not be heard from your mouth.”"
+                },
+                {
+                  "ref": "Psa.20.8",
+                  "role": "defining",
+                  "note": "“Some in chariots and some in horses, but we will make mention of the name of Yahweh our God.”"
+                },
+                {
+                  "ref": "Jos.23.7",
+                  "note": "Do not mention or swear by the names of the nations’ gods."
+                },
+                {
+                  "ref": "Isa.12.4",
+                  "note": "“Make mention that his name is exalted.”"
+                },
+                {
+                  "ref": "Psa.45.18",
+                  "note": "“I will cause your name to be remembered in all generations.”"
+                },
+                {
+                  "ref": "2Sa.18.18",
+                  "note": "Absalom set up a pillar, saying “I have no son to keep my name in remembrance (הַזְכִּיר שְׁמִי).”"
+                }
+              ],
+              "kin": [
+                "memorial-name"
+              ],
+              "cognate_ids": [
+                "akk-zakaru",
+                "ar-dhakara"
+              ]
+            },
+            {
+              "gloss": "recorder (participle)",
+              "definition": "מַזְכִּיר, the royal official who records and reports.",
+              "evidence": [
+                {
+                  "ref": "2Sa.8.16",
+                  "role": "defining",
+                  "note": "“Jehoshaphat son of Ahilud was recorder.”"
+                },
+                {
+                  "ref": "1Ki.4.3"
+                },
+                {
+                  "ref": "2Ki.18.18"
+                }
+              ],
+              "kin": [
+                "record"
+              ],
+              "cognate_ids": [
+                "akk-zakaru"
+              ]
+            },
+            {
+              "gloss": "to bring to remembrance (psalm heading)",
+              "definition": "In two psalm headings, לְהַזְכִּיר, a psalm for bringing to remembrance, both pleas for Yahweh to act.",
+              "evidence": [
+                {
+                  "ref": "Psa.38.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.70.1"
+                }
+              ],
+              "kin": [
+                "memorial-portion"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μιμνῄσκομαι",
+          "gloss": "remember",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.8.1, וַיִּזְכֹּר → ἐμνήσθη; Exo.2.24, וַיִּזְכֹּר → ἐμνήσθη; Gen.40.14, זְכַרְתַּנִי → μνήσθητί; Jer.31.34, אֶזְכָּר → μνησθῶ"
+            },
+            {
+              "ref": "Luk.1.54",
+              "note": "“He has helped Israel his servant, remembering mercy.”"
+            },
+            {
+              "ref": "Luk.1.72",
+              "note": "“To remember his holy covenant.”"
+            },
+            {
+              "ref": "Luk.23.42",
+              "note": "“Remember me (μνήσθητί μου) when you come in your kingdom”: the cupbearer’s words to Joseph in the Greek of Gen 40:14."
+            },
+            {
+              "ref": "Heb.8.12",
+              "note": "Quotes Jer 31:34: “their sins I will remember no more.”"
+            },
+            {
+              "ref": "Heb.10.17"
+            }
+          ]
+        },
+        {
+          "lemma": "μνημονεύω",
+          "gloss": "remember, keep in mind",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.13.3, זָכוֹר → μνημονεύετε"
+            },
+            {
+              "ref": "Luk.17.32"
+            },
+            {
+              "ref": "2Ti.2.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זָכָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "male",
+      "bdb": [
+        "g.bh.ae"
+      ],
+      "summary": "Male, of people and animals, the opposite of נְקֵבָה “female”: counted, circumcised, offered. Its consonants are those of “remember”, and the cognates show the same older ḏ behind its ז as behind the verb’s (Arabic ذَكَر “male” beside ذَكَرَ “remember”, Aramaic דְּכַר “ram” beside דִּכְרוֹן “record”). Scripture does not say how the two senses are related. Once a form pointed as the verb’s niphal, תִּזָּכָר, is read “male” (Exo 34:19).",
+      "senses": [
+        {
+          "id": "male",
+          "gloss": "male",
+          "definition": "Of the male sex, human or animal; as a noun, a male.",
+          "evidence": [
+            {
+              "ref": "Gen.1.27",
+              "role": "defining",
+              "note": "“Male and female (זָכָר וּנְקֵבָה) he created them.”"
+            },
+            {
+              "ref": "Gen.6.19",
+              "role": "defining",
+              "note": "Two of every kind into the ark, “male and female they shall be”."
+            },
+            {
+              "ref": "Lev.12.2",
+              "note": "A woman who bears a male child."
+            },
+            {
+              "ref": "Jer.30.6",
+              "note": "“Ask and see whether a male gives birth.”"
+            },
+            {
+              "ref": "Gen.17.10",
+              "note": "“Every male among you shall be circumcised.”"
+            },
+            {
+              "ref": "Num.1.2",
+              "note": "The count of “every male, by their heads”."
+            },
+            {
+              "ref": "Exo.12.5",
+              "role": "defining",
+              "note": "The Passover lamb: “without blemish, a male, a year old.”"
+            },
+            {
+              "ref": "Lev.1.3",
+              "note": "The burnt offering from the herd: “a male without blemish”."
+            },
+            {
+              "ref": "Mal.1.14",
+              "note": "Cursed the cheat who has a male in his flock and sacrifices a blemished one."
+            },
+            {
+              "ref": "Exo.34.19",
+              "note": "“All your livestock that is male (תִּזָּכָר)”, pointed as a niphal of the verb."
+            },
+            {
+              "ref": "Isa.66.7",
+              "note": "Before her pain came, Zion delivered a male child."
+            }
+          ],
+          "cognate_ids": [
+            "ar-dhakar",
+            "ar-adhkara",
+            "akk-zikaru",
+            "uga-dkr"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἄρσην",
+          "gloss": "male",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.27, זָכָר → ἄρσεν"
+            },
+            {
+              "ref": "Mat.19.4",
+              "note": "Jesus quotes Gen 1:27: “he made them male and female.”"
+            },
+            {
+              "ref": "Mrk.10.6"
+            },
+            {
+              "ref": "Gal.3.28"
+            },
+            {
+              "ref": "Rev.12.5"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "נְקֵבָה",
+            "note": "Male and female.",
+            "evidence": [
+              {
+                "ref": "Gen.1.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.6.19"
+              },
+              {
+                "ref": "Deu.4.16"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "זֵכֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "remembrance; the name by which one is remembered",
+      "bdb": [
+        "g.bh.ad"
+      ],
+      "summary": "What is remembered of someone, and so the name by which he is called to mind: set in parallel with שֵׁם “name”. Of Yahweh, his name for ever; of the righteous, a blessing; of Amalek, to be blotted out.",
+      "senses": [
+        {
+          "id": "memorial-name",
+          "gloss": "remembrance, name remembered",
+          "definition": "The memory kept of a person, which in parallel with “name” is the name itself as it is spoken and recalled through the generations.",
+          "evidence": [
+            {
+              "ref": "Exo.3.15",
+              "role": "defining",
+              "note": "“Yahweh … this is my name (שְׁמִי) for ever, and this my remembrance (זִכְרִי) from generation to generation.”"
+            },
+            {
+              "ref": "Pro.10.7",
+              "role": "defining",
+              "note": "“The remembrance of the righteous is a blessing, but the name of the wicked will rot.”"
+            },
+            {
+              "ref": "Psa.135.13",
+              "role": "defining",
+              "note": "“Yahweh, your name is for ever; Yahweh, your remembrance from generation to generation.”"
+            },
+            {
+              "ref": "Hos.12.6",
+              "note": "“Yahweh God of hosts, Yahweh is his remembrance.”"
+            },
+            {
+              "ref": "Isa.26.8",
+              "note": "“For your name and for your remembrance is the desire of our soul.”"
+            },
+            {
+              "ref": "Psa.102.13",
+              "note": "“You, Yahweh, are enthroned for ever, and your remembrance from generation to generation.”"
+            },
+            {
+              "ref": "Psa.30.5",
+              "note": "“Give thanks to the remembrance of his holiness.”"
+            },
+            {
+              "ref": "Exo.17.14",
+              "note": "“I will utterly blot out the remembrance of Amalek from under heaven.”"
+            },
+            {
+              "ref": "Deu.25.19"
+            },
+            {
+              "ref": "Ecc.9.5",
+              "note": "The dead know nothing, “for their remembrance is forgotten”."
+            },
+            {
+              "ref": "Psa.6.6",
+              "note": "“In death there is no remembrance of you; in Sheol who will praise you?”"
+            }
+          ],
+          "kin": [
+            "mention-name"
+          ],
+          "cognate_ids": [
+            "ar-dhikr",
+            "akk-zikru"
+          ]
+        },
+        {
+          "gloss": "commemoration",
+          "definition": "That by which deeds or days are kept in memory.",
+          "evidence": [
+            {
+              "ref": "Psa.111.4",
+              "role": "defining",
+              "note": "“He has made a remembrance for his wonders; Yahweh is gracious and merciful.”"
+            },
+            {
+              "ref": "Est.9.28",
+              "note": "Of the days of Purim: “their remembrance will not cease from their seed.”"
+            },
+            {
+              "ref": "Psa.145.7",
+              "note": "“They will pour out the remembrance of your great goodness.”"
+            }
+          ],
+          "kin": [
+            "memorial-reminder"
+          ],
+          "cognate_ids": [
+            "ar-dhikr",
+            "akk-zikru"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שֵׁם",
+            "note": "Remembrance set beside name.",
+            "evidence": [
+              {
+                "ref": "Exo.3.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.10.7"
+              },
+              {
+                "ref": "Psa.135.13"
+              },
+              {
+                "ref": "Isa.26.8"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "זִכָּרוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "memorial, reminder; record",
+      "bdb": [
+        "g.bh.ai"
+      ],
+      "summary": "A thing that brings something to mind: a day, a sign, stones, names on the priest’s shoulders, silver, a trumpet blast, set “before Yahweh” or for Israel. Lev 23:24 calls the first day of the seventh month זִכְרוֹן תְּרוּעָה, “a memorial of blowing”. Also a written record, and memory itself.",
+      "senses": [
+        {
+          "id": "memorial-reminder",
+          "gloss": "memorial, reminder",
+          "definition": "An object, act or day appointed to bring something to remembrance, either for Israel or before Yahweh, so that he remembers his people.",
+          "evidence": [
+            {
+              "ref": "Lev.23.24",
+              "role": "defining",
+              "note": "“In the seventh month, on the first of the month, you shall have a rest, a memorial of blowing (זִכְרוֹן תְּרוּעָה), a holy convocation.”"
+            },
+            {
+              "ref": "Num.10.10",
+              "role": "defining",
+              "note": "On feast days and new moons blow the trumpets over the offerings, “and they will be a memorial for you before your God”."
+            },
+            {
+              "ref": "Exo.12.14",
+              "role": "defining",
+              "note": "The Passover: “This day shall be a memorial for you, and you shall keep it as a feast to Yahweh.”"
+            },
+            {
+              "ref": "Exo.28.12",
+              "role": "defining",
+              "note": "Stones of memorial on the ephod: “Aaron shall bear their names before Yahweh on his two shoulders for a memorial.”"
+            },
+            {
+              "ref": "Exo.28.29",
+              "note": "The names on the breastpiece over his heart, “for a memorial before Yahweh continually”."
+            },
+            {
+              "ref": "Exo.13.9",
+              "note": "Unleavened bread “a sign on your hand and a memorial between your eyes”."
+            },
+            {
+              "ref": "Exo.30.16",
+              "note": "The atonement silver “a memorial for the sons of Israel before Yahweh”."
+            },
+            {
+              "ref": "Jos.4.7",
+              "note": "The stones from the Jordan “a memorial for the sons of Israel for ever”."
+            },
+            {
+              "ref": "Num.17.5",
+              "note": "The bronze plating a memorial that no stranger come near to burn incense."
+            },
+            {
+              "ref": "Num.5.15",
+              "note": "“A grain offering of memorial, bringing iniquity to remembrance.”"
+            },
+            {
+              "ref": "Mal.3.16",
+              "note": "“A book of remembrance was written before him for those who fear Yahweh.”"
+            },
+            {
+              "ref": "Zec.6.14",
+              "note": "The crown a memorial in Yahweh’s temple."
+            }
+          ],
+          "kin": [
+            "remind",
+            "memorial-portion"
+          ],
+          "cognate_ids": [
+            "ar-dhikr",
+            "akk-zikru"
+          ]
+        },
+        {
+          "id": "record",
+          "gloss": "record; memory",
+          "definition": "A written record of past events; memory or remembrance in general; once, memorable sayings.",
+          "evidence": [
+            {
+              "ref": "Est.6.1",
+              "role": "defining",
+              "note": "The king ordered “the book of records (הַזִּכְרֹנוֹת), the chronicles”, read before him."
+            },
+            {
+              "ref": "Ecc.1.11",
+              "role": "defining",
+              "note": "“There is no remembrance of former things.”"
+            },
+            {
+              "ref": "Ecc.2.16",
+              "note": "“There is no remembrance of the wise man, as of the fool, for ever.”"
+            },
+            {
+              "ref": "Neh.2.20",
+              "note": "“You have no portion, right or memorial in Jerusalem.”"
+            },
+            {
+              "ref": "Job.13.12",
+              "note": "“Your memorable sayings are proverbs of ashes.”"
+            },
+            {
+              "ref": "Isa.57.8",
+              "note": "Behind the door and doorpost “you have set your memorial”, in idolatry."
+            }
+          ],
+          "cognate_ids": [
+            "ar-dhikr",
+            "akk-zikru"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μνημόσυνον",
+          "gloss": "memorial",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.24, זִכְרוֹן → μνημόσυνον; Exo.12.14, לְזִכָּרוֹן → μνημόσυνον"
+            },
+            {
+              "ref": "Mat.26.13",
+              "note": "What she has done will be told “for a memorial of her”."
+            },
+            {
+              "ref": "Mrk.14.9"
+            },
+            {
+              "ref": "Act.10.4",
+              "note": "“Your prayers and alms have gone up for a memorial before God.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνάμνησις",
+          "gloss": "remembrance, reminder",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.10.10, לְזִכָּרוֹן → ἀνάμνησις"
+            },
+            {
+              "ref": "Luk.22.19",
+              "note": "“Do this for my remembrance.”"
+            },
+            {
+              "ref": "1Co.11.24"
+            },
+            {
+              "ref": "1Co.11.25"
+            },
+            {
+              "ref": "Heb.10.3",
+              "note": "In the yearly sacrifices “there is a reminder of sins every year”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אוֹת",
+            "note": "A sign on the hand, a memorial between the eyes.",
+            "evidence": [
+              {
+                "ref": "Exo.13.9",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "זִכְרוֹן תְּרוּעָה",
+            "gloss": "a memorial of blowing (the first of the seventh month)",
+            "evidence": [
+              {
+                "ref": "Lev.23.24"
+              }
+            ]
+          },
+          {
+            "phrase": "לְזִכָּרוֹן לִפְנֵי יַהְוֶה",
+            "gloss": "for a memorial before Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.28.29"
+              },
+              {
+                "ref": "Exo.30.16"
+              },
+              {
+                "ref": "Num.10.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אַזְכָּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "memorial portion",
+      "bdb": [
+        "g.bh.ak"
+      ],
+      "summary": "A noun of the hiphil, “that which brings to remembrance”: the handful of a grain offering with its frankincense that the priest burns on the altar, and the frankincense set on the bread of the presence.",
+      "senses": [
+        {
+          "id": "memorial-portion",
+          "gloss": "memorial portion",
+          "definition": "The part of a grain offering burnt on the altar to Yahweh on behalf of the whole, the rest going to the priests; and the frankincense laid on the twelve loaves.",
+          "evidence": [
+            {
+              "ref": "Lev.2.2",
+              "role": "defining",
+              "note": "The priest takes a handful of flour and oil with all the frankincense “and burns its memorial portion on the altar, a fire offering, a pleasing smell to Yahweh”."
+            },
+            {
+              "ref": "Lev.24.7",
+              "role": "defining",
+              "note": "“Put pure frankincense on each row, and it shall be for the bread as a memorial portion, a fire offering to Yahweh.”"
+            },
+            {
+              "ref": "Lev.2.9"
+            },
+            {
+              "ref": "Lev.5.12",
+              "note": "Even the poor man’s sin offering of flour has its memorial portion burnt."
+            },
+            {
+              "ref": "Lev.6.8"
+            },
+            {
+              "ref": "Num.5.26"
+            }
+          ],
+          "kin": [
+            "remind",
+            "memorial-reminder"
+          ],
+          "cognate_ids": [
+            "ar-dhakkara"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀνάμνησις",
+          "gloss": "remembrance",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.24.7, לְאַזְכָּרָה → ἀνάμνησιν"
+            },
+            {
+              "ref": "Luk.22.19"
+            },
+            {
+              "ref": "1Co.11.24"
+            }
+          ]
+        },
+        {
+          "lemma": "μνημόσυνον",
+          "gloss": "memorial",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.2.2, אַזְכָּרָתָהּ → μνημόσυνον"
+            },
+            {
+              "ref": "Act.10.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זָכוּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "males (collective)",
+      "bdb": [
+        "g.bh.af"
+      ],
+      "summary": "A collective “all your males”, in the law that every male appear before Yahweh at the three pilgrim feasts. Four uses.",
+      "senses": [
+        {
+          "gloss": "males",
+          "definition": "All the males of a people or city, taken together.",
+          "evidence": [
+            {
+              "ref": "Deu.16.16",
+              "role": "defining",
+              "note": "“Three times a year all your males shall appear before Yahweh your God … at the feast of unleavened bread, at שָׁבֻעוֹת and at סֻכּוֹת.”"
+            },
+            {
+              "ref": "Exo.23.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.34.23"
+            },
+            {
+              "ref": "Deu.20.13",
+              "note": "Strike all its males with the sword."
+            }
+          ],
+          "kin": [
+            "male"
+          ],
+          "cognate_ids": [
+            "ar-dhakar"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀρσενικός",
+          "gloss": "male",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.23.17, זְכוּרְךָ → ἀρσενικόν"
+            },
+            {
+              "ref": "Luk.2.23",
+              "note": "“Every male (ἄρσεν) that opens the womb shall be called holy to the Lord” (Exo 13:2, 12)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דְּכַר",
+      "lang": "arc",
+      "root": "דכר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ram",
+      "bdb": [
+        "xd.aj.aa"
+      ],
+      "summary": "Biblical Aramaic, always plural דִּכְרִין, among the animals for the altar. It is the Aramaic form of the word for “male” (Aramaic ד for the older ḏ that Hebrew writes ז), used of the male sheep; Ugaritic dkr “ram” is the same word.",
+      "senses": [
+        {
+          "gloss": "ram",
+          "definition": "A male sheep, for sacrifice.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.17",
+              "role": "defining",
+              "note": "At the dedication: a hundred bulls, two hundred rams (דִּכְרִין), four hundred lambs."
+            },
+            {
+              "ref": "Ezr.6.9",
+              "note": "“Young bulls, rams, or lambs for burnt offerings to the God of heaven.”"
+            },
+            {
+              "ref": "Ezr.7.17"
+            }
+          ],
+          "kin": [
+            "male"
+          ],
+          "cognate_ids": [
+            "uga-dkr",
+            "ar-dhakar"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דִּכְרוֹן",
+      "lang": "arc",
+      "root": "דכר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "record, memorandum",
+      "bdb": [
+        "xd.aj.ab"
+      ],
+      "summary": "Biblical Aramaic, the Aramaic form of זִכָּרוֹן; also spelled דָּכְרָן in “the book of the records” (Ezr 4:15).",
+      "senses": [
+        {
+          "gloss": "record, memorandum",
+          "definition": "A written record kept in the royal archives.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.2",
+              "role": "defining",
+              "note": "A scroll was found at Ecbatana, “and in it was written thus: a record (דִּכְרוֹנָה)”: Cyrus’ decree."
+            },
+            {
+              "ref": "Ezr.4.15",
+              "role": "defining",
+              "note": "“Search in the book of the records (סְפַר דָּכְרָנַיָּא) of your fathers.”"
+            }
+          ],
+          "kin": [
+            "record"
+          ],
+          "cognate_ids": [
+            "ar-dhikr",
+            "akk-zikru"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דְּכַר",
+      "lang": "syc",
+      "root": "דכר",
+      "pos": "verb",
+      "gloss": "(ethpeel) remember; (aphel) remind, mention",
+      "summary": "The Peshitta’s verb for remembering is often עֲהַד; this root’s ethpeel and aphel are used where God remembers, where sins are remembered, and for “remember me”.",
+      "stems": [
+        {
+          "stem": "ethpeel",
+          "gloss": "remember",
+          "senses": [
+            {
+              "gloss": "remember",
+              "definition": "Call to mind, of God and of people.",
+              "evidence": [
+                {
+                  "ref": "Luk.1.54",
+                  "role": "defining",
+                  "note": "“He has helped Israel his servant, and remembered his mercy.”"
+                },
+                {
+                  "ref": "Luk.23.42",
+                  "role": "defining",
+                  "note": "“My Lord, remember me when you come in your kingdom.”"
+                },
+                {
+                  "ref": "Heb.8.12",
+                  "role": "defining",
+                  "note": "Jer 31:34: “their sins I will not remember again.”"
+                },
+                {
+                  "ref": "Heb.10.17"
+                },
+                {
+                  "ref": "Mat.26.75",
+                  "note": "Peter remembered the word of Jesus."
+                },
+                {
+                  "ref": "Jhn.2.22",
+                  "note": "After he was raised his disciples remembered that he had said this."
+                },
+                {
+                  "ref": "2Ti.2.8",
+                  "note": "“Remember Jesus Christ, raised from the dead.”"
+                }
+              ],
+              "kin": [
+                "god-remembers",
+                "remember",
+                "remember-sin"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "remind, make mention",
+          "senses": [
+            {
+              "gloss": "remind, make mention",
+              "definition": "Bring to mind, by speech or by a rite.",
+              "evidence": [
+                {
+                  "ref": "Heb.10.3",
+                  "role": "defining",
+                  "note": "In the yearly sacrifices sins are brought to remembrance."
+                },
+                {
+                  "ref": "Luk.20.37",
+                  "note": "Moses made mention at the bush, calling the Lord the God of Abraham, Isaac and Jacob."
+                }
+              ],
+              "kin": [
+                "remind",
+                "mention-name"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דּוּכְרָנָא",
+      "lang": "syc",
+      "root": "דכר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "remembrance, memorial",
+      "summary": "The Peshitta’s word at the Lord’s supper, “do this for my remembrance (לְדוּכְרָנִי)”, and for the memorial of Mary’s anointing and of Cornelius’ prayers.",
+      "senses": [
+        {
+          "gloss": "remembrance, memorial",
+          "definition": "That which keeps someone in remembrance, before people or before God.",
+          "evidence": [
+            {
+              "ref": "Luk.22.19",
+              "role": "defining",
+              "note": "“This is my body, which is given for you; do this for my remembrance.”"
+            },
+            {
+              "ref": "1Co.11.24",
+              "role": "defining"
+            },
+            {
+              "ref": "1Co.11.25"
+            },
+            {
+              "ref": "Act.10.4",
+              "role": "defining",
+              "note": "“Your prayers and your alms have gone up for a memorial before God.”"
+            },
+            {
+              "ref": "Act.10.31"
+            },
+            {
+              "ref": "Mat.26.13",
+              "note": "What she did will be told for her memorial."
+            },
+            {
+              "ref": "Mrk.14.9"
+            }
+          ],
+          "kin": [
+            "memorial-reminder",
+            "memorial-portion"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֶּכְרָא",
+      "lang": "syc",
+      "root": "דכר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "male",
+      "senses": [
+        {
+          "gloss": "male",
+          "definition": "Of the male sex; a male.",
+          "evidence": [
+            {
+              "ref": "Mat.19.4",
+              "role": "defining",
+              "note": "Gen 1:27: “he made them male and female.”"
+            },
+            {
+              "ref": "Mrk.10.6"
+            },
+            {
+              "ref": "Luk.2.23",
+              "note": "Every male that opens the womb (Exo 13:2, 12)."
+            },
+            {
+              "ref": "Gal.3.28"
+            },
+            {
+              "ref": "Rev.12.5",
+              "note": "She bore a male son."
+            }
+          ],
+          "kin": [
+            "male"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-dhakara",
+      "lang": "ar",
+      "form": "ذَكَرَ",
+      "translit": "ḏakara",
+      "gloss": "keep in memory, remember; mention",
+      "relation": "cognate",
+      "note": "Lane: he preserved it in his memory; and mention of a thing with the tongue as distinct from remembrance in the heart.",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 968, root ذكر, ذَكَرَهُ (n13918)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000049 ḏkr [mention] V, ARB009764"
+        }
+      ]
+    },
+    {
+      "id": "ar-dhakkara",
+      "lang": "ar",
+      "form": "ذَكَّرَ",
+      "translit": "ḏakkara",
+      "gloss": "remind, cause to remember; admonish",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 969, root ذكر, ذكّرهُ إِيَّاهُ (n13919)"
+        }
+      ]
+    },
+    {
+      "id": "ar-dhikr",
+      "lang": "ar",
+      "form": "ذِكْرٌ",
+      "translit": "ḏikr",
+      "gloss": "remembrance; memory; mention; praise of God",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 969, root ذكر, ذِكْرٌ (n13925)"
+        }
+      ]
+    },
+    {
+      "id": "ar-dhakar",
+      "lang": "ar",
+      "form": "ذَكَرٌ",
+      "translit": "ḏakar",
+      "gloss": "male; masculine",
+      "relation": "cognate",
+      "note": "In the same Arabic root as “remember”, with the same ḏ: the Hebrew pair זָכַר / זָכָר has the same shape in Arabic.",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 969, root ذكر, ذَكَرٌ (n13926)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000048 ḏkr [male] N, ARB009777"
+        }
+      ]
+    },
+    {
+      "id": "ar-adhkara",
+      "lang": "ar",
+      "form": "أَذْكَرَ",
+      "translit": "ʾaḏkara",
+      "gloss": "(she) bore a male; also = ذَكَّرَ “remind”",
+      "relation": "cognate",
+      "note": "Lane gives form IV both as “see 2” (remind) and as “bore a male”: one verb form carrying both senses.",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 969, root ذكر, أَذْكَرَ (form 4, after n13922)"
+        }
+      ]
+    },
+    {
+      "id": "akk-zakaru",
+      "lang": "akk",
+      "form": "zakāru",
+      "translit": "zakāru",
+      "gloss": "speak, name, call, invoke, mention, swear",
+      "relation": "cognate",
+      "note": "Akkadian’s verb is speech, not memory: naming, invoking, mentioning; it answers to the Hebrew hiphil (mention a name). Akkadian writes z for both older z and ḏ, so it shows nothing about the merged letter.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000007350, zakāru [speak] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000049 ḏkr [mention] V, AKK014699 zakāru [speak]"
+        }
+      ]
+    },
+    {
+      "id": "akk-zikru",
+      "lang": "akk",
+      "form": "zikru",
+      "translit": "zikru",
+      "gloss": "utterance, word; name; fame; mention; oath",
+      "relation": "cognate",
+      "note": "“Name” and “fame” among its senses, as זֵכֶר stands beside שֵׁם.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000017750, zikru [utterance] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-zikaru",
+      "lang": "akk",
+      "form": "zikaru",
+      "translit": "zikaru",
+      "gloss": "male; man",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000017740, zikaru [male] N; cmawro x000019390, zikaru [male] AJ"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000048 ḏkr [male] N, AKK014865 zikaru [male]"
+        }
+      ]
+    },
+    {
+      "id": "uga-dkr",
+      "lang": "uga",
+      "form": "dkr",
+      "translit": "dkr",
+      "gloss": "ram; male",
+      "relation": "cognate",
+      "note": "Segert writes the word with d, as he writes other words whose Arabic has ḏ (dbḥ “sacrifice”, Arabic ḏabaḥa; dqn “beard”, Arabic ḏaqan), so the spelling does not decide the older sound here. Segert’s grammar also gives the syllabic spelling da-ka-rum “male” (§43.22). The same male-animal use as Aramaic דְּכַר.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 183, glossary, dkr: cf. [d]kr 1.119:31 “ram”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000048 ḏkr [male] N, UGC001373 dkr [male] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-dhkr",
+      "lang": "uga",
+      "form": "ḏkr",
+      "translit": "ḏkr",
+      "gloss": "remember",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000049 ḏkr [mention] V, UGC001461 ḏkr [remember] V"
+        }
+      ]
+    },
+    {
+      "id": "phn-zkr",
+      "lang": "phn",
+      "form": "zkr",
+      "translit": "z-k-r",
+      "gloss": "remember, keep in mind",
+      "relation": "cognate",
+      "note": "A Phoenician votive: “Remember me (zkrn)! For he heard my voice.” Phoenician writes z for the older ḏ, as Hebrew does.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 172, Z-K-R I, v. qal REMEMBER, KEEP IN MIND (Magnanini p. 22 no. 14.1/3)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000049 ḏkr [mention] V, PUN000617 zkr [remember] V"
+        }
+      ]
+    },
+    {
+      "id": "gez-zakara",
+      "lang": "gez",
+      "form": "ዘከረ",
+      "translit": "zakara",
+      "gloss": "remember",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000049 ḏkr [mention] V, GEZ006308 zakara [remember] V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "yahweh-remembers",
+      "statement": "When God “remembers”, he acts. He remembered Noah and made the waters subside (Gen 8:1); he set the bow in the cloud so that he would remember his covenant with all flesh (Gen 9:15–16); he heard Israel’s groaning in Egypt and remembered his covenant with Abraham, Isaac and Jacob, and brought them out (Exo 2:24; 6:5); he remembered Hannah and she conceived (1Sa 1:19). In exile Israel is promised “I will remember my covenant with Jacob … and Isaac … and Abraham” (Lev 26:42, 45), and the psalms say he remembers his covenant for ever (Psa 105:8; 106:45). Zacharias and Mary sing that this remembering has come to pass in the coming of Christ: God “has helped Israel his servant, remembering mercy, as he spoke to our fathers, to Abraham and his seed for ever” (Luk 1:54–55), “to remember his holy covenant, the oath he swore to Abraham” (Luk 1:72–73). The other side is his not remembering: “I am he who blots out your transgressions … and your sins I will not remember” (Isa 43:25); the new covenant ends “I will forgive their iniquity, and their sin I will remember no more” (Jer 31:34), which Hebrews quotes of Christ’s covenant (Heb 8:12; 10:17), setting it against the yearly sacrifices of the law, in which there was “a reminder of sins every year” (Heb 10:3).",
+      "evidence": [
+        {
+          "ref": "Gen.8.1"
+        },
+        {
+          "ref": "Gen.9.15",
+          "to": "Gen.9.16"
+        },
+        {
+          "ref": "Exo.2.24"
+        },
+        {
+          "ref": "Exo.6.5"
+        },
+        {
+          "ref": "1Sa.1.19"
+        },
+        {
+          "ref": "Lev.26.42"
+        },
+        {
+          "ref": "Lev.26.45"
+        },
+        {
+          "ref": "Psa.105.8"
+        },
+        {
+          "ref": "Psa.106.45"
+        },
+        {
+          "ref": "Luk.1.54",
+          "to": "Luk.1.55"
+        },
+        {
+          "ref": "Luk.1.72",
+          "to": "Luk.1.73"
+        },
+        {
+          "ref": "Isa.43.25"
+        },
+        {
+          "ref": "Jer.31.34"
+        },
+        {
+          "ref": "Heb.8.12"
+        },
+        {
+          "ref": "Heb.10.17"
+        },
+        {
+          "ref": "Heb.10.3"
+        }
+      ]
+    },
+    {
+      "topic": "in-remembrance-of-me",
+      "statement": "Israel’s feasts are memorials. The Passover day is “a memorial (זִכָּרוֹן) for you, and you shall keep it as a feast to Yahweh” (Exo 12:14), and unleavened bread is eaten “that you may remember the day you came out of Egypt all the days of your life” (Deu 16:3; Exo 13:3, 9). The first of the seventh month is זִכְרוֹן תְּרוּעָה, a memorial of blowing (Lev 23:24), and the trumpets blown over the offerings at the appointed times are “a memorial for you before your God”, as in war they are blown so that “you will be remembered before Yahweh your God and saved” (Num 10:9–10). The frankincense on the bread of the presence is its אַזְכָּרָה, burnt to Yahweh (Lev 24:7), and every grain offering has its memorial portion (Lev 2:2). At the Passover Jesus took bread and said “This is my body, which is given for you; do this for my remembrance” (Luk 22:19), and of the cup likewise (1Co 11:24–25). The Greek there, ἀνάμνησις, is the Greek given for זִכָּרוֹן at Num 10:10 and for אַזְכָּרָה at Lev 24:7, and the Peshitta writes לְדוּכְרָנִי, “for my remembrance”, with this root. Paul adds what the remembering does: “as often as you eat this bread and drink the cup, you proclaim the Lord’s death until he comes” (1Co 11:26). The dying thief asked the same of Christ that Joseph asked of the cupbearer: “remember me” (Luk 23:42; Gen 40:14).",
+      "evidence": [
+        {
+          "ref": "Exo.12.14"
+        },
+        {
+          "ref": "Deu.16.3"
+        },
+        {
+          "ref": "Exo.13.3"
+        },
+        {
+          "ref": "Exo.13.9"
+        },
+        {
+          "ref": "Lev.23.24"
+        },
+        {
+          "ref": "Num.10.9",
+          "to": "Num.10.10"
+        },
+        {
+          "ref": "Lev.24.7"
+        },
+        {
+          "ref": "Lev.2.2"
+        },
+        {
+          "ref": "Luk.22.19"
+        },
+        {
+          "ref": "1Co.11.24",
+          "to": "1Co.11.26"
+        },
+        {
+          "ref": "Luk.23.42"
+        },
+        {
+          "ref": "Gen.40.14"
+        }
+      ]
+    },
+    {
+      "topic": "the-memorial-name",
+      "statement": "Asked his name, God told Moses: “Yahweh, the God of your fathers, the God of Abraham, the God of Isaac and the God of Jacob, has sent me to you; this is my name for ever, and this is my remembrance (זִכְרִי) from generation to generation” (Exo 3:15). Hosea and the psalms repeat it: “Yahweh is his remembrance” (Hos 12:6); “Yahweh, your name is for ever; Yahweh, your remembrance from generation to generation” (Psa 135:13). Yahweh promised to come and bless “in every place where I cause my name to be remembered” (Exo 20:24), and his people “make mention of the name of Yahweh our God” rather than trusting chariots (Psa 20:8), while the names of other gods were not to be mentioned (Exo 23:13). Jesus answered the Sadducees from this passage: Moses showed at the bush that the dead are raised, “when he calls the Lord the God of Abraham, the God of Isaac and the God of Jacob; for he is not the God of the dead but of the living” (Luk 20:37–38), where the Peshitta says Moses “made mention” with this root.",
+      "evidence": [
+        {
+          "ref": "Exo.3.15"
+        },
+        {
+          "ref": "Hos.12.6"
+        },
+        {
+          "ref": "Psa.135.13"
+        },
+        {
+          "ref": "Exo.20.24"
+        },
+        {
+          "ref": "Psa.20.8"
+        },
+        {
+          "ref": "Exo.23.13"
+        },
+        {
+          "ref": "Luk.20.37",
+          "to": "Luk.20.38"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-11 from the brief, for Lev 23:24 זִכְרוֹן תְּרוּעָה. REMEMBER / MALE (user’s question): checked and recorded. Every language that keeps ḏ apart from z shows ḏ (or its regular reflex) for both senses: Arabic ذَكَرَ “remember” and ذَكَرٌ “male” in one root (Lane pp. 968–969), and form IV أَذْكَرَ is both “remind” and “bore a male”; Aramaic, where older ḏ becomes d, has דכר for both (Biblical Aramaic דְּכַר “ram” and דִּכְרוֹן “record”; Peshitta דֶּכְרָא “male”, דּוּכְרָנָא, ethpeel “remember”); Anderson–Moser give Ugaritic ḏkr “remember” and dkr “male” (Segert writes ḏ-words with d, so his dkr “ram” does not decide). Akkadian (z for both) has zakāru “speak, name”, zikru “name, fame”, zikaru “male”. So the two senses show the same older sound: per the README, evidence that they belong to one root, not two merged. HOW they are related is not shown: scripture never explains it, and the cognates give no bridging sense. Lane’s own bracketed conjecture (male as “the one mentioned”) is his etymology, not evidence, and is not used. The only scripture passage that puts a male heir and remembrance together is 2Sa 18:18 (Absalom: no son “to keep my name in remembrance”); cited under the hiphil only, not as an etymology. Exo 34:19 תִּזָּכָר is read “male” but pointed as a niphal of the verb; BDB counts it under the verb (g.bh.aa); cited under זָכָר with a note. BDB KEYS: g.bh.ad (זֵכֶר) counts 7 tokens that are the name Zichri (Neh 11:9 etc.) and Exo 3:15 is also counted under g.bh.ag (name Zichri) by spelling, so זֵכֶר’s use count overstates. xd.aj.ab and xd.aj.ac list the same 3 Aramaic tokens (דִּכְרוֹן / דָּכְרָן); only xd.aj.ab used. Zero-token keys g.bh.ac, g.bh.al, m.bh.ac, a.ce.ah (cross-references) not used. LEFT OUT: proper names זְכַרְיָה(וּ) (g.bh.aj), זִכְרִי (g.bh.ag), זַכּוּר (g.bh.ah), זֶכֶר (g.bh.ab), for name entries. PESHITTA: SEDRA lexemes 704 duḵrānā, 706 dkr (ethpeel/aphel), 707 deḵrā; 705 dḵīrā “mindful” has no NT token and is left out. The Peshitta’s commoner verb for “remember” is עהד (lexeme 2256, e.g. Luk 1:72; 1Co 11:2), another root; noted in the Syriac verb’s summary. Pointing of Syriac lemmas in Hebrew script is mine from SEDRA vocalisations. GREEK: no loan. μιμνῄσκομαι is MACULA’s lemma μνάομαι. COGNATE SOURCES: Segert p. 183 checked against the scan image (archive.org leaf 210). Krahmalkov p. 172 read from the local pdftotext extraction only (page from the printed footer before the entry); page unverified against the scan. Ugaritic ḏkr “remember” and Ge’ez zakara from Anderson–Moser only (Segert’s glossary has no ḏkr verb; Dillmann/Leslau not consulted). Sabaean ḏkr (Wiktionary lead) not checked in Biella."
+}
