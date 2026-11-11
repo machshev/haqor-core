@@ -1,0 +1,2664 @@
+{
+  "id": "anah",
+  "root": "ענה",
+  "status": "draft",
+  "updated": "2026-11-11",
+  "tags": [
+    "speech",
+    "prayer",
+    "humility",
+    "poverty",
+    "affliction",
+    "fasting",
+    "feasts",
+    "song",
+    "time",
+    "purpose"
+  ],
+  "gloss": "answer; be bowed down, humble, afflict; (also) time, now; for the sake of",
+  "summary": "Two verbs share the spelling, and the older sounds behind ע keep them together: עָנָה “answer, respond”, used of Yahweh answering those who call on him (1Ki 18:37; Psa 118:21), and עִנָּה “bow down, humble, afflict”, from oppression (Exo 1:11–12) to Yahweh humbling Israel to teach them (Deu 8:2–3) and Israel humbling their own souls on יוֹם הַכִּפֻּרִים (Lev 23:27–32). From the second come עָנִי “poor, afflicted”, עָנָו “humble, meek” and עֲנָוָה “humility”: the lowly whom Yahweh hears (Psa 34:7), and the king who comes עָנִי, riding on a donkey (Zec 9:9; Mat 21:5). Cognates show ʿ behind both answering (Ugaritic ʿny) and humbling (Ugaritic ʿnw, Arabic ʿanā), and in Arabic ʿanā also “occupy, concern” (Ecclesiastes’ עִנְיָן); only “sing” lines up with an older ġ (Arabic ġannā). The root’s words also include עֵת “time” and עַתָּה “now” (Ugaritic ʿnt “now”, Aramaic כְּעַן) and the purpose words לְמַעַן “for the sake of, so that” and יַעַן “because”, whose links to answering are not clear.",
+  "words": [
+    {
+      "lemma": "עַתָּה",
+      "pos": "adverb",
+      "gloss": "now; and now (so then)",
+      "bdb": [
+        "p.dt.ae"
+      ],
+      "summary": "The commonest word of the root. Its link to the verbs is not clear; Ugaritic ʿnt “now” and Aramaic כְּעַן, כְּעֶנֶת “now” keep the n that Hebrew assimilates (ʿant- > עַתָּה), which ties it to עֵת “time”.",
+      "cognate_ids": [
+        "uga-nt-now",
+        "phn-t-time"
+      ],
+      "senses": [
+        {
+          "id": "now-time",
+          "gloss": "now, at this time",
+          "definition": "The present moment, set against what was before or what is to come.",
+          "evidence": [
+            {
+              "ref": "Gen.22.12",
+              "role": "defining",
+              "note": "“Now I know that you fear God.”"
+            },
+            {
+              "ref": "Psa.113.2",
+              "role": "defining",
+              "note": "מֵעַתָּה וְעַד־עוֹלָם “from now and for ever”."
+            },
+            {
+              "ref": "Isa.48.7",
+              "note": "Things created now, not long ago."
+            },
+            {
+              "ref": "Job.16.7",
+              "note": "“But now he has exhausted me.”"
+            }
+          ]
+        },
+        {
+          "gloss": "and now, so then",
+          "definition": "With וְ, it turns from what has been said to what follows from it: a request, a command or a conclusion.",
+          "evidence": [
+            {
+              "ref": "Deu.10.12",
+              "role": "defining",
+              "note": "“And now, Israel, what does Yahweh your God ask of you, but to fear him…”"
+            },
+            {
+              "ref": "Exo.19.5",
+              "role": "defining",
+              "note": "After what Yahweh did to Egypt: “and now, if you will indeed listen to my voice…”"
+            },
+            {
+              "ref": "Gen.3.22",
+              "note": "“And now, lest he reach out his hand…”"
+            },
+            {
+              "ref": "Jer.37.20",
+              "note": "“And now, listen, please, my lord the king.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "מֵעַתָּה וְעַד־עוֹלָם",
+            "gloss": "from now and for ever",
+            "evidence": [
+              {
+                "ref": "Psa.113.2"
+              },
+              {
+                "ref": "Psa.121.8"
+              },
+              {
+                "ref": "Isa.9.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֵת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "time, season; the right time",
+      "bdb": [
+        "p.dt.ac"
+      ],
+      "summary": "A point or span of time, especially the time when something happens or is fitting. Phoenician ʿt “time, season” and Ugaritic ʿnt “now” are its cognates; how it relates to the verbs of the root is not clear.",
+      "cognate_ids": [
+        "phn-t-time",
+        "uga-nt-now"
+      ],
+      "senses": [
+        {
+          "gloss": "time, hour (of day or event)",
+          "definition": "The time at which something happens: a time of day, or the time of an event.",
+          "evidence": [
+            {
+              "ref": "Gen.8.11",
+              "role": "defining",
+              "note": "לְעֵת עֶרֶב “at evening time”."
+            },
+            {
+              "ref": "Dan.9.21",
+              "note": "At the time of the evening offering."
+            },
+            {
+              "ref": "Jdg.14.4",
+              "note": "“At that time the Philistines ruled over Israel.”"
+            }
+          ]
+        },
+        {
+          "id": "et-season",
+          "gloss": "season, appointed time",
+          "definition": "The time that belongs to a thing, its season, set by God's order.",
+          "evidence": [
+            {
+              "ref": "Ecc.3.1",
+              "role": "defining",
+              "to": "Ecc.3.8",
+              "note": "“For everything a season, and a time (עֵת) for every matter under heaven”: a time to be born and a time to die…"
+            },
+            {
+              "ref": "Jer.8.7",
+              "role": "defining",
+              "note": "The stork knows her appointed times, but my people do not know the judgment of Yahweh."
+            },
+            {
+              "ref": "Psa.1.3",
+              "note": "A tree that gives its fruit in its season."
+            },
+            {
+              "ref": "Deu.11.14",
+              "note": "Rain for your land in its season."
+            },
+            {
+              "ref": "Psa.31.16",
+              "note": "“My times are in your hand.”"
+            }
+          ]
+        },
+        {
+          "gloss": "the fitting time, the time for",
+          "definition": "The right moment for something to be done.",
+          "evidence": [
+            {
+              "ref": "Psa.119.126",
+              "role": "defining",
+              "note": "“It is time for Yahweh to act.”"
+            },
+            {
+              "ref": "Hos.10.12",
+              "role": "defining",
+              "note": "“It is time to seek Yahweh.”"
+            },
+            {
+              "ref": "Hag.1.4",
+              "note": "“Is it a time for you to dwell in paneled houses?”"
+            },
+            {
+              "ref": "Pro.15.23",
+              "note": "“A word in its time, how good it is!”"
+            },
+            {
+              "ref": "Est.4.14",
+              "note": "“For a time like this.”"
+            },
+            {
+              "ref": "Isa.49.8",
+              "note": "בְּעֵת רָצוֹן “in a time of favour I have answered you”, quoted at 2Co 6:2: “now is the favourable time”."
+            },
+            {
+              "ref": "2Co.6.2"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καιρός",
+          "gloss": "time, season, fitting time",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.49.8, בְּעֵת → καιρῷ"
+            },
+            {
+              "ref": "2Co.6.2"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "עֵת רָצוֹן",
+            "gloss": "a time of favour",
+            "evidence": [
+              {
+                "ref": "Isa.49.8"
+              },
+              {
+                "ref": "Psa.69.14"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵת קֵץ",
+            "gloss": "the time of the end",
+            "evidence": [
+              {
+                "ref": "Dan.12.4"
+              },
+              {
+                "ref": "Dan.8.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַעַן",
+      "pos": "preposition",
+      "gloss": "(לְמַעַן) for the sake of; so that",
+      "bdb": [
+        "p.dt.aj"
+      ],
+      "summary": "Almost always as לְמַעַן: the purpose or the person for whose sake something is done. Its link to the root is not clear; Pro 16:4 uses מַעֲנֶה in the same sense (“for its purpose”), and Arabic maʿnā is “meaning, what is intended”.",
+      "cognate_ids": [
+        "ar-mana-meaning"
+      ],
+      "senses": [
+        {
+          "gloss": "so that, in order that",
+          "definition": "Introduces the purpose or the intended result of an act or command.",
+          "evidence": [
+            {
+              "ref": "Lev.23.43",
+              "role": "defining",
+              "note": "Israel dwells in booths “so that your generations may know that I made the sons of Israel dwell in booths”."
+            },
+            {
+              "ref": "Deu.8.3",
+              "role": "defining",
+              "note": "He humbled you and fed you manna “so that he might make you know that man does not live by bread alone”."
+            },
+            {
+              "ref": "Deu.5.16",
+              "note": "Honour your father and mother “so that your days may be long”; quoted at Eph 6:3."
+            },
+            {
+              "ref": "Hos.8.4",
+              "note": "Of a result that follows though not wished: they made idols “so that it may be cut off”."
+            },
+            {
+              "ref": "Eph.6.3"
+            }
+          ],
+          "kin": [
+            "maaneh-purpose"
+          ]
+        },
+        {
+          "gloss": "for the sake of, on account of",
+          "definition": "On behalf of a person or a name, or because of it.",
+          "evidence": [
+            {
+              "ref": "Psa.23.3",
+              "role": "defining",
+              "note": "“He leads me in paths of righteousness for his name's sake.”"
+            },
+            {
+              "ref": "Isa.43.25",
+              "role": "defining",
+              "note": "“I, I am he who blots out your transgressions for my own sake.”"
+            },
+            {
+              "ref": "Ezk.36.22",
+              "role": "defining",
+              "note": "“Not for your sake do I act, house of Israel, but for my holy name.”"
+            },
+            {
+              "ref": "Gen.18.24",
+              "note": "Will you not spare the place for the sake of the fifty righteous?"
+            },
+            {
+              "ref": "1Ki.11.13",
+              "note": "For the sake of David my servant."
+            }
+          ],
+          "kin": [
+            "maaneh-purpose"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἵνα",
+          "gloss": "in order that",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.5.16, לְמַעַן → ἵνα; Deu.8.3, לְמַעַן → ἵνα"
+            },
+            {
+              "ref": "Eph.6.3"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "לְמַעַן שְׁמוֹ",
+            "gloss": "for his name's sake",
+            "evidence": [
+              {
+                "ref": "Psa.23.3"
+              },
+              {
+                "ref": "Psa.106.8"
+              },
+              {
+                "ref": "Ezk.20.9"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יַעַן",
+      "pos": "conjunction",
+      "gloss": "because, since",
+      "bdb": [
+        "p.dt.ah"
+      ],
+      "summary": "Gives the ground of a judgment or a promise, very often in the prophets' “because… therefore”. Its link to the root is not clear, and no cognate has been found that shares it.",
+      "senses": [
+        {
+          "gloss": "because, on account of",
+          "definition": "Introduces the reason for what is declared, often followed by לָכֵן “therefore”.",
+          "evidence": [
+            {
+              "ref": "Gen.22.16",
+              "role": "defining",
+              "note": "“By myself I swear… because (יַעַן אֲשֶׁר) you have done this thing and have not withheld your son”; Heb 6:13–14 expounds the oath."
+            },
+            {
+              "ref": "1Ki.3.11",
+              "role": "defining",
+              "note": "“Because you have asked this, and have not asked long life…”"
+            },
+            {
+              "ref": "Isa.61.1",
+              "role": "defining",
+              "note": "“The Spirit of the Lord Yahweh is on me, because Yahweh has anointed me”; read by Jesus at Luk 4:18."
+            },
+            {
+              "ref": "Ezk.13.10",
+              "note": "יַעַן וּבְיַעַן “because, even because”."
+            },
+            {
+              "ref": "Lev.26.43",
+              "note": "“Because, even because, they rejected my judgments.”"
+            },
+            {
+              "ref": "Heb.6.13"
+            },
+            {
+              "ref": "Luk.4.18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָנָה",
+      "pos": "verb",
+      "gloss": "answer, respond; testify",
+      "bdb": [
+        "p.dt.aa"
+      ],
+      "summary": "To answer: to reply to words, to respond to a call or a situation, and of Yahweh to answer prayer by acting. Before a court it is to testify (“answer against”). Ugaritic ʿny “answer” and mʿn “answer, reply” (= מַעֲנֶה) show ʿ, the same sound as the humbling verb.",
+      "cognate_ids": [
+        "uga-ny-answer",
+        "arc-ane-answer"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "answer, respond; testify",
+          "senses": [
+            {
+              "id": "answer-reply",
+              "gloss": "answer, reply",
+              "definition": "Reply to what someone has said or asked; also to speak up in response to a situation, often in the pair “answered and said”.",
+              "evidence": [
+                {
+                  "ref": "Gen.18.27",
+                  "role": "defining",
+                  "note": "“And Abraham answered and said, ‘Behold, I have undertaken to speak to the Lord.’”"
+                },
+                {
+                  "ref": "Gen.41.16",
+                  "note": "Joseph answered Pharaoh: “It is not in me; God will answer Pharaoh's peace.”"
+                },
+                {
+                  "ref": "1Ki.12.13",
+                  "note": "The king answered the people harshly."
+                },
+                {
+                  "ref": "Pro.18.23",
+                  "note": "The rich man answers roughly."
+                }
+              ]
+            },
+            {
+              "id": "yahweh-answers",
+              "gloss": "answer (a call, a prayer)",
+              "definition": "Of Yahweh: respond to one who calls on him, by speaking or by acting to save. Its opposite is silence: “there was no voice and no one answering”.",
+              "evidence": [
+                {
+                  "ref": "1Ki.18.37",
+                  "role": "defining",
+                  "note": "“Answer me, Yahweh, answer me, that this people may know that you are Yahweh God”; fire falls (1Ki 18:38)."
+                },
+                {
+                  "ref": "1Ki.18.26",
+                  "role": "defining",
+                  "note": "Of Baal: “there was no voice, and no one answering (עֹנֶה)”."
+                },
+                {
+                  "ref": "Psa.118.21",
+                  "role": "defining",
+                  "note": "“I will thank you, for you answered me and became my salvation.”"
+                },
+                {
+                  "ref": "Exo.19.19",
+                  "note": "Moses spoke, and God answered him in a voice."
+                },
+                {
+                  "ref": "Psa.3.5",
+                  "note": "“I cry to Yahweh with my voice, and he answers me from his holy hill.”"
+                },
+                {
+                  "ref": "Jon.2.3",
+                  "note": "“I called out of my distress to Yahweh, and he answered me.”"
+                },
+                {
+                  "ref": "Isa.65.24",
+                  "note": "“Before they call, I will answer.”"
+                },
+                {
+                  "ref": "Isa.58.9",
+                  "note": "“Then you will call, and Yahweh will answer.”"
+                },
+                {
+                  "ref": "Isa.49.8",
+                  "note": "“In a time of favour I have answered you”; quoted at 2Co 6:2, where the Peshitta has the same verb (ܥܢܐ)."
+                },
+                {
+                  "ref": "Psa.22.22",
+                  "note": "The sufferer of Psa 22, after the cry of verse 2: “you have answered me.”"
+                },
+                {
+                  "ref": "2Co.6.2"
+                }
+              ]
+            },
+            {
+              "gloss": "respond (of things)",
+              "definition": "Of the created order: answer in turn, as one part supplies what another needs.",
+              "evidence": [
+                {
+                  "ref": "Hos.2.23",
+                  "role": "defining",
+                  "to": "Hos.2.24",
+                  "note": "“I will answer the heavens, and they will answer the earth, and the earth will answer the grain…”"
+                },
+                {
+                  "ref": "Ecc.10.19",
+                  "note": "“Money answers everything.”"
+                }
+              ]
+            },
+            {
+              "gloss": "testify, answer (against or for)",
+              "definition": "With בְּ, give evidence about someone before a judge.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.16",
+                  "role": "defining",
+                  "note": "“You shall not answer against your neighbour as a false witness.”"
+                },
+                {
+                  "ref": "1Sa.12.3",
+                  "role": "defining",
+                  "note": "Samuel: “Here I am; testify against me before Yahweh.”"
+                },
+                {
+                  "ref": "Gen.30.33",
+                  "note": "“My righteousness will answer for me.”"
+                },
+                {
+                  "ref": "Deu.19.16",
+                  "note": "A false witness rising “to testify against him”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be answered; give an answer",
+          "senses": [
+            {
+              "gloss": "let oneself be answered, give an answer",
+              "definition": "Of Yahweh: let himself be consulted and answer.",
+              "evidence": [
+                {
+                  "ref": "Ezk.14.4",
+                  "role": "defining",
+                  "note": "To the man with idols in his heart: “I, Yahweh, will answer him myself.”"
+                },
+                {
+                  "ref": "Ezk.14.7"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπακούω",
+          "gloss": "hear and answer",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.49.8, עֲנִיתִיךָ → ἐπήκουσά"
+            },
+            {
+              "ref": "2Co.6.2"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁמַע",
+            "note": "Answering beside hearing the cry.",
+            "evidence": [
+              {
+                "ref": "Isa.65.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Jon.2.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וַיַּעַן וַיֹּאמֶר",
+            "gloss": "and he answered and said",
+            "evidence": [
+              {
+                "ref": "Gen.18.27"
+              },
+              {
+                "ref": "Gen.27.37"
+              }
+            ]
+          },
+          {
+            "phrase": "עָנָה בְ… עֵד שָׁקֶר",
+            "gloss": "testify falsely against",
+            "evidence": [
+              {
+                "ref": "Exo.20.16"
+              },
+              {
+                "ref": "Deu.5.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָנָה",
+      "pos": "verb",
+      "gloss": "be bowed down, be lowly; humble, afflict",
+      "bdb": [
+        "p.dv.aa"
+      ],
+      "summary": "To bring or be brought low: oppression and rape, Yahweh's humbling of Israel to teach them, and the humbling of one's own soul by fasting, above all on יוֹם הַכִּפֻּרִים. The servant of Isa 53 is “afflicted” (Isa 53:4, 7). Ugaritic ʿnw “be downcast”, Arabic ʿanā “be lowly, submissive” and Phoenician ʿny “subdue” all show ʿ.",
+      "cognate_ids": [
+        "uga-nw-downcast",
+        "ar-ana-humble",
+        "ar-anna-trouble",
+        "phn-ny-subdue"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "humble, afflict, oppress; violate",
+          "senses": [
+            {
+              "id": "afflict-soul",
+              "gloss": "humble (one's soul), fast",
+              "definition": "Bring one's own life low before God, by fasting and abstaining, in confession and seeking his favour. The law commands it on the tenth day of the seventh month.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.27",
+                  "role": "defining",
+                  "note": "On יוֹם הַכִּפֻּרִים “you shall humble your souls (וְעִנִּיתֶם אֶת־נַפְשֹׁתֵיכֶם)”."
+                },
+                {
+                  "ref": "Lev.23.32",
+                  "role": "defining",
+                  "note": "“A sabbath of rest for you, and you shall humble your souls.”"
+                },
+                {
+                  "ref": "Psa.35.13",
+                  "role": "defining",
+                  "note": "“I humbled my soul with fasting.”"
+                },
+                {
+                  "ref": "Isa.58.3",
+                  "role": "defining",
+                  "note": "“Why have we fasted and you do not see? Humbled our souls and you take no notice?”"
+                },
+                {
+                  "ref": "Lev.16.29",
+                  "note": "The same command in the law of the day."
+                },
+                {
+                  "ref": "Lev.16.31"
+                },
+                {
+                  "ref": "Num.29.7"
+                },
+                {
+                  "ref": "Num.30.14",
+                  "note": "A vow “to humble the soul”, which a husband may confirm or annul."
+                },
+                {
+                  "ref": "Isa.58.5",
+                  "note": "“A day for a man to humble his soul”: Yahweh asks what that fast is worth without justice (Isa 58:6–7)."
+                }
+              ]
+            },
+            {
+              "id": "humble-teach",
+              "gloss": "humble (to test and teach)",
+              "definition": "Of Yahweh: bring his people low, by hunger and hardship, to test them and teach them dependence on his word.",
+              "evidence": [
+                {
+                  "ref": "Deu.8.2",
+                  "role": "defining",
+                  "note": "Forty years in the wilderness “to humble you, to test you, to know what was in your heart”."
+                },
+                {
+                  "ref": "Deu.8.3",
+                  "role": "defining",
+                  "note": "“He humbled you and let you hunger and fed you manna… that man does not live by bread alone”; Jesus answers with it when tempted (Mat 4:4)."
+                },
+                {
+                  "ref": "Deu.8.16",
+                  "note": "“…to humble you and to test you, to do you good in your end.”"
+                },
+                {
+                  "ref": "Psa.119.75",
+                  "note": "“In faithfulness you have afflicted me.”"
+                },
+                {
+                  "ref": "Psa.90.15",
+                  "note": "“Make us glad as many days as you have afflicted us.”"
+                },
+                {
+                  "ref": "Lam.3.33",
+                  "note": "“He does not afflict from his heart.”"
+                },
+                {
+                  "ref": "Mat.4.4"
+                }
+              ]
+            },
+            {
+              "id": "oppress",
+              "gloss": "oppress, afflict",
+              "definition": "Treat harshly, keep down by force or hard service.",
+              "evidence": [
+                {
+                  "ref": "Exo.1.11",
+                  "role": "defining",
+                  "note": "Taskmasters set over Israel “to afflict them with their burdens”."
+                },
+                {
+                  "ref": "Exo.1.12",
+                  "note": "“The more they afflicted them, the more they multiplied.”"
+                },
+                {
+                  "ref": "Gen.15.13",
+                  "note": "“They will serve them, and they will afflict them four hundred years.”"
+                },
+                {
+                  "ref": "Exo.22.21",
+                  "note": "“You shall not afflict any widow or orphan.”"
+                },
+                {
+                  "ref": "Deu.26.6",
+                  "note": "“The Egyptians treated us badly and afflicted us.”"
+                },
+                {
+                  "ref": "Gen.16.6",
+                  "note": "Sarai dealt harshly with Hagar, and she fled."
+                },
+                {
+                  "ref": "Psa.105.18",
+                  "note": "Joseph: “they afflicted his feet with fetters.”"
+                }
+              ]
+            },
+            {
+              "gloss": "violate, humble (a woman)",
+              "definition": "Force a woman, or take her without the standing of a wife: she is brought low.",
+              "evidence": [
+                {
+                  "ref": "Gen.34.2",
+                  "role": "defining",
+                  "note": "Shechem took Dinah, lay with her “and humbled her”."
+                },
+                {
+                  "ref": "2Sa.13.14",
+                  "role": "defining",
+                  "note": "Amnon, being stronger than Tamar, humbled her."
+                },
+                {
+                  "ref": "Deu.22.29",
+                  "note": "“Because he has humbled her.”"
+                },
+                {
+                  "ref": "Deu.21.14",
+                  "note": "The captive woman: “because you have humbled her.”"
+                }
+              ]
+            },
+            {
+              "gloss": "subdue, weaken",
+              "definition": "Bring a strong man's strength low.",
+              "evidence": [
+                {
+                  "ref": "Jdg.16.6",
+                  "role": "defining",
+                  "note": "Delilah: “with what may you be bound, to subdue you?”"
+                },
+                {
+                  "ref": "Jdg.16.19",
+                  "note": "She began to subdue him, and his strength left him."
+                },
+                {
+                  "ref": "Psa.102.24",
+                  "note": "“He has weakened my strength in the way.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "be low, be afflicted; be cowed",
+          "senses": [
+            {
+              "id": "be-afflicted",
+              "gloss": "be bowed down, afflicted",
+              "definition": "Be brought low, in suffering or humiliation.",
+              "evidence": [
+                {
+                  "ref": "Psa.119.67",
+                  "role": "defining",
+                  "note": "“Before I was afflicted I went astray, but now I keep your word.”"
+                },
+                {
+                  "ref": "Psa.116.10",
+                  "role": "defining",
+                  "note": "“I believed, therefore I spoke: ‘I am greatly afflicted’”; Paul quotes the first words at 2Co 4:13."
+                },
+                {
+                  "ref": "Isa.31.4",
+                  "note": "A lion is not frightened at the shepherds' voice, nor cowed by their noise (parallel לֹא יֵחָת)."
+                },
+                {
+                  "ref": "Zec.10.2",
+                  "note": "The people wander like sheep; “they are afflicted, for there is no shepherd”."
+                },
+                {
+                  "ref": "2Co.4.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "humble oneself; be afflicted",
+          "senses": [
+            {
+              "gloss": "humble oneself (before)",
+              "definition": "Bow oneself low before God.",
+              "evidence": [
+                {
+                  "ref": "Exo.10.3",
+                  "role": "defining",
+                  "note": "“How long will you refuse to humble yourself before me?”"
+                }
+              ]
+            },
+            {
+              "gloss": "be afflicted",
+              "definition": "Be brought low by suffering.",
+              "evidence": [
+                {
+                  "ref": "Isa.53.7",
+                  "role": "defining",
+                  "note": "“He was oppressed, and he was afflicted (נַעֲנֶה), yet he did not open his mouth; like a lamb led to the slaughter”; quoted at Act 8:32."
+                },
+                {
+                  "ref": "Psa.119.107",
+                  "note": "“I am afflicted very much; Yahweh, give me life.”"
+                },
+                {
+                  "ref": "Act.8.32"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be humbled, be afflicted",
+          "senses": [
+            {
+              "gloss": "be humbled, afflicted",
+              "definition": "Be brought low.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.29",
+                  "role": "defining",
+                  "note": "“Every soul that is not humbled on that same day shall be cut off from his people.”"
+                },
+                {
+                  "ref": "Isa.53.4",
+                  "role": "defining",
+                  "note": "“We esteemed him stricken, struck by God, and afflicted (מְעֻנֶּה).” Mat 8:17 quotes the first half of the verse."
+                },
+                {
+                  "ref": "Psa.119.71",
+                  "note": "“It is good for me that I was afflicted, that I might learn your statutes.”"
+                },
+                {
+                  "ref": "Psa.132.1",
+                  "note": "“Remember for David all his afflictions.”"
+                },
+                {
+                  "ref": "Mat.8.17"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "humble oneself, submit; be afflicted",
+          "senses": [
+            {
+              "gloss": "humble oneself, submit",
+              "definition": "Bring oneself low: submit under another's hand, or humble oneself before God in fasting.",
+              "evidence": [
+                {
+                  "ref": "Gen.16.9",
+                  "role": "defining",
+                  "note": "“Return to your mistress and submit yourself under her hands.”"
+                },
+                {
+                  "ref": "Ezr.8.21",
+                  "role": "defining",
+                  "note": "A fast proclaimed “to humble ourselves before our God”."
+                },
+                {
+                  "ref": "Dan.10.12",
+                  "note": "“From the first day that you set your heart to understand and to humble yourself before your God, your words were heard.”"
+                },
+                {
+                  "ref": "1Ki.2.26",
+                  "note": "Abiathar shared all that David suffered."
+                },
+                {
+                  "ref": "Psa.107.17",
+                  "note": "Fools are afflicted because of their sins."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "afflict",
+          "senses": [
+            {
+              "gloss": "afflict",
+              "definition": "Of Yahweh: bring low, by withholding rain, to turn his people back.",
+              "evidence": [
+                {
+                  "ref": "1Ki.8.35",
+                  "role": "defining",
+                  "note": "The heavens are shut, and they turn from their sin “because you afflict them”."
+                },
+                {
+                  "ref": "2Ch.6.26"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ταπεινόω",
+          "gloss": "humble, bring low",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.27, וְעִנִּיתֶם → ταπεινώσετε; Lev.23.29, תְעֻנֶּה → ταπεινωθήσεται; Lev.23.32; Deu.26.6, וַיְעַנּוּנוּ → ἐταπείνωσαν"
+            },
+            {
+              "ref": "Jas.4.10"
+            },
+            {
+              "ref": "1Pe.5.6"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נִסָּה",
+            "note": "Humbling beside testing.",
+            "evidence": [
+              {
+                "ref": "Deu.8.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.8.16"
+              }
+            ]
+          },
+          {
+            "lemma": "צוּם",
+            "note": "Humbling the soul beside fasting.",
+            "evidence": [
+              {
+                "ref": "Isa.58.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.35.13"
+              }
+            ]
+          },
+          {
+            "lemma": "נָגַשׂ",
+            "note": "Afflicted beside oppressed.",
+            "evidence": [
+              {
+                "ref": "Isa.53.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עִנָּה נֶפֶשׁ",
+            "gloss": "humble the soul, fast",
+            "evidence": [
+              {
+                "ref": "Lev.16.29"
+              },
+              {
+                "ref": "Lev.23.27"
+              },
+              {
+                "ref": "Num.29.7"
+              },
+              {
+                "ref": "Isa.58.5"
+              },
+              {
+                "ref": "Psa.35.13"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָנִי",
+      "pos": "adjective",
+      "gloss": "afflicted, poor, lowly",
+      "bdb": [
+        "p.dv.ae"
+      ],
+      "summary": "One who is brought low: the poor and oppressed whom the law protects and Yahweh hears, and the lowly in spirit; the coming king is עָנִי (Zec 9:9). Its written and read forms interchange with עָנָו (Psa 9:13; Pro 3:34).",
+      "cognate_ids": [
+        "arc-anya-poor"
+      ],
+      "senses": [
+        {
+          "id": "ani-poor",
+          "gloss": "poor, afflicted (by want or oppression)",
+          "definition": "Without means and open to being wronged; often paired with אֶבְיוֹן “needy”.",
+          "evidence": [
+            {
+              "ref": "Exo.22.24",
+              "role": "defining",
+              "note": "“If you lend silver to my people, to the poor with you, do not be a creditor to him.”"
+            },
+            {
+              "ref": "Deu.24.14",
+              "role": "defining",
+              "note": "“Do not oppress a hired man who is poor and needy.”"
+            },
+            {
+              "ref": "Lev.23.22",
+              "role": "defining",
+              "note": "At the harvest feast: leave the gleanings “for the poor and for the stranger”."
+            },
+            {
+              "ref": "Lev.19.10"
+            },
+            {
+              "ref": "Isa.3.15",
+              "note": "“Grinding the faces of the poor.”"
+            },
+            {
+              "ref": "Psa.72.12",
+              "note": "The king delivers the needy who cries, and the afflicted who has no helper."
+            }
+          ]
+        },
+        {
+          "id": "ani-lowly",
+          "gloss": "lowly, humble (before God)",
+          "definition": "Low in standing and spirit, depending on Yahweh; the one he looks to and saves.",
+          "evidence": [
+            {
+              "ref": "Isa.66.2",
+              "role": "defining",
+              "note": "“To this one I will look: to the lowly (עָנִי) and contrite of spirit, who trembles at my word.”"
+            },
+            {
+              "ref": "Psa.34.7",
+              "role": "defining",
+              "note": "“This poor man called, and Yahweh heard.”"
+            },
+            {
+              "ref": "Zep.3.12",
+              "role": "defining",
+              "note": "“I will leave in your midst a people lowly and poor, and they will take refuge in the name of Yahweh.”"
+            },
+            {
+              "ref": "Psa.18.28",
+              "note": "“You save a lowly people, but haughty eyes you bring down.”"
+            },
+            {
+              "ref": "Zec.9.9",
+              "role": "defining",
+              "note": "Zion's king comes “righteous and saved, lowly and riding on a donkey”; quoted at Mat 21:5 and Jhn 12:15."
+            },
+            {
+              "ref": "Mat.21.5"
+            }
+          ],
+          "kin": [
+            "anaw-humble"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πραΰς",
+          "gloss": "gentle, meek",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zec.9.9, עָנִי → πραΰς"
+            },
+            {
+              "ref": "Mat.21.5"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֶבְיוֹן",
+            "note": "Poor and needy, the standing pair.",
+            "evidence": [
+              {
+                "ref": "Deu.24.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.40.18"
+              },
+              {
+                "ref": "Psa.72.12"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "רָם",
+            "note": "The lowly saved, the haughty eyes brought down.",
+            "evidence": [
+              {
+                "ref": "Psa.18.28",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָנִי וְאֶבְיוֹן",
+            "gloss": "poor and needy",
+            "evidence": [
+              {
+                "ref": "Psa.40.18"
+              },
+              {
+                "ref": "Psa.109.22"
+              },
+              {
+                "ref": "Deu.24.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֳנִי",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "affliction, misery",
+      "bdb": [
+        "p.dv.af"
+      ],
+      "summary": "The state of being brought low: oppression, misery, want. Yahweh sees and hears it.",
+      "senses": [
+        {
+          "gloss": "affliction, misery",
+          "definition": "Suffering under oppression or hardship, which Yahweh sees and answers.",
+          "evidence": [
+            {
+              "ref": "Exo.3.7",
+              "role": "defining",
+              "note": "“I have surely seen the affliction of my people in Egypt”; quoted by Stephen at Act 7:34."
+            },
+            {
+              "ref": "Gen.16.11",
+              "role": "defining",
+              "note": "Ishmael, “for Yahweh has heard your affliction”."
+            },
+            {
+              "ref": "1Sa.1.11",
+              "role": "defining",
+              "note": "Hannah: “if you will indeed look on the affliction of your servant”; Mary speaks in the same way at Luk 1:48."
+            },
+            {
+              "ref": "Gen.29.32",
+              "note": "“Yahweh has looked on my affliction.”"
+            },
+            {
+              "ref": "Gen.41.52",
+              "note": "“God has made me fruitful in the land of my affliction.”"
+            },
+            {
+              "ref": "Isa.48.10",
+              "note": "“I have tried you in the furnace of affliction.”"
+            },
+            {
+              "ref": "Psa.119.92",
+              "note": "“Unless your law had been my delight, I would have perished in my affliction.”"
+            },
+            {
+              "ref": "Deu.16.3",
+              "note": "The unleavened bread of Passover is לֶחֶם עֹנִי “bread of affliction”, eaten in remembrance of the hasty exodus."
+            },
+            {
+              "ref": "Act.7.34"
+            },
+            {
+              "ref": "Luk.1.48"
+            }
+          ],
+          "kin": [
+            "be-afflicted"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κάκωσις",
+          "gloss": "ill-treatment, affliction",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.3.7, עֳנִי → κάκωσιν"
+            },
+            {
+              "ref": "Act.7.34"
+            }
+          ]
+        },
+        {
+          "lemma": "ταπείνωσις",
+          "gloss": "lowliness, humiliation",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.41.52, עָנְיִי → ταπεινώσεως"
+            },
+            {
+              "ref": "Luk.1.48"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "לֶחֶם עֹנִי",
+            "gloss": "bread of affliction",
+            "evidence": [
+              {
+                "ref": "Deu.16.3"
+              }
+            ]
+          }
+        ]
+      },
+      "cognate_ids": [
+        "ar-anna-trouble"
+      ]
+    },
+    {
+      "lemma": "עֲנָה",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "answer; speak up",
+      "bdb": [
+        "xp.ai.aa"
+      ],
+      "summary": "The Aramaic of Daniel uses it as Hebrew uses עָנָה, almost always in “answered and said”, of a reply or of speaking up in response to what has happened.",
+      "cognate_ids": [
+        "arc-ane-answer"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "answer, respond",
+          "senses": [
+            {
+              "gloss": "answer, speak in response",
+              "definition": "Reply to a question or command, or speak up in response to an event (“answered and said”).",
+              "evidence": [
+                {
+                  "ref": "Dan.2.5",
+                  "role": "defining",
+                  "note": "The king answered the Chaldeans' request."
+                },
+                {
+                  "ref": "Dan.3.16",
+                  "role": "defining",
+                  "note": "Shadrach, Meshach and Abednego answered the king: “we have no need to answer you in this matter.”"
+                },
+                {
+                  "ref": "Dan.2.20",
+                  "note": "Daniel, after the secret is revealed, “answered and said: Blessed be the name of God”."
+                },
+                {
+                  "ref": "Dan.3.24",
+                  "note": "Nebuchadnezzar, seeing four men in the fire, answered and said to his counsellors."
+                }
+              ],
+              "kin": [
+                "answer-reply"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עְנָא",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "answer, respond",
+      "summary": "The Peshitta's verb for answering, the Syriac form of the root, in the gospels' “answered and said”, and at 2Co 6:2 for “I answered you” of Isa 49:8.",
+      "cognate_ids": [
+        "arc-ane-answer"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "answer",
+          "senses": [
+            {
+              "gloss": "answer, reply",
+              "definition": "Reply to words or a call.",
+              "evidence": [
+                {
+                  "ref": "Mat.4.4",
+                  "role": "defining",
+                  "note": "Jesus “answered and said: It is written, man does not live by bread alone” (Deu 8:3)."
+                },
+                {
+                  "ref": "2Co.6.2",
+                  "role": "defining",
+                  "note": "“In an acceptable time I answered you” (Isa 49:8)."
+                },
+                {
+                  "ref": "Mat.25.40",
+                  "note": "“The King will answer and say to them…”"
+                },
+                {
+                  "ref": "Act.12.13",
+                  "note": "A girl named Rhoda came to answer the knock."
+                },
+                {
+                  "ref": "Rev.7.13",
+                  "note": "One of the elders answered."
+                }
+              ],
+              "kin": [
+                "answer-reply",
+                "yahweh-answers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָנָו",
+      "pos": "adjective",
+      "gloss": "humble, meek, lowly",
+      "bdb": [
+        "p.dv.ab"
+      ],
+      "summary": "Lowly before God and dependent on him: the humble whom Yahweh guides, hears and lifts up, who will inherit the land. Moses is the model (Num 12:3). It is also said of the oppressed poor (Amo 2:7; Isa 61:1).",
+      "cognate_ids": [
+        "ar-ana-humble",
+        "uga-nw-downcast"
+      ],
+      "senses": [
+        {
+          "id": "anaw-humble",
+          "gloss": "humble, meek",
+          "definition": "Low in one's own eyes and yielding to God; the disposition opposed to pride and scoffing.",
+          "evidence": [
+            {
+              "ref": "Num.12.3",
+              "role": "defining",
+              "note": "“The man Moses was very humble, more than any man on the face of the earth” (written עָנָו, read עָנָיו)."
+            },
+            {
+              "ref": "Pro.3.34",
+              "role": "defining",
+              "note": "“He scorns the scorners, but gives favour to the humble”; quoted at Jas 4:6 and 1Pe 5:5."
+            },
+            {
+              "ref": "Pro.16.19",
+              "role": "defining",
+              "note": "“Better to be low of spirit with the humble than to divide spoil with the proud.”"
+            },
+            {
+              "ref": "Zep.2.3",
+              "note": "“Seek Yahweh, all the humble of the land… seek humility.”"
+            },
+            {
+              "ref": "Psa.25.9",
+              "note": "“He leads the humble in justice and teaches the humble his way.”"
+            },
+            {
+              "ref": "Psa.37.11",
+              "role": "defining",
+              "note": "“The meek will inherit the land”; Jesus at Mat 5:5."
+            },
+            {
+              "ref": "Psa.147.6",
+              "note": "“Yahweh lifts up the humble; he casts the wicked to the ground.”"
+            },
+            {
+              "ref": "Psa.149.4",
+              "note": "“He adorns the humble with salvation.”"
+            },
+            {
+              "ref": "Mat.5.5"
+            },
+            {
+              "ref": "Jas.4.6"
+            },
+            {
+              "ref": "1Pe.5.5"
+            }
+          ],
+          "kin": [
+            "ani-lowly"
+          ]
+        },
+        {
+          "gloss": "poor, afflicted",
+          "definition": "The lowly as the oppressed poor, to whom justice and good news are owed.",
+          "evidence": [
+            {
+              "ref": "Isa.61.1",
+              "role": "defining",
+              "note": "“He has anointed me to bring good news to the afflicted”; read by Jesus at Luk 4:18."
+            },
+            {
+              "ref": "Amo.2.7",
+              "role": "defining",
+              "note": "They “turn aside the way of the afflicted”."
+            },
+            {
+              "ref": "Isa.11.4",
+              "note": "The branch of Jesse decides with equity for the humble of the land."
+            },
+            {
+              "ref": "Psa.9.13",
+              "note": "“He does not forget the cry of the afflicted.”"
+            },
+            {
+              "ref": "Psa.10.17",
+              "note": "“Yahweh, you have heard the desire of the humble.”"
+            },
+            {
+              "ref": "Psa.22.27",
+              "note": "“The afflicted will eat and be satisfied.”"
+            },
+            {
+              "ref": "Luk.4.18"
+            }
+          ],
+          "kin": [
+            "ani-poor"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πραΰς",
+          "gloss": "gentle, meek",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.12.3, עָנָו → πραΰς; Psa.25.9 (LXX 24:9); Psa.147.6 (LXX 146:6)"
+            },
+            {
+              "ref": "Mat.5.5"
+            }
+          ]
+        },
+        {
+          "lemma": "ταπεινός",
+          "gloss": "lowly, humble",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.3.34, לַעֲנָוִים → ταπεινοῖς"
+            },
+            {
+              "ref": "Jas.4.6"
+            },
+            {
+              "ref": "1Pe.5.5"
+            }
+          ]
+        },
+        {
+          "lemma": "πτωχός",
+          "gloss": "poor",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.61.1, עֲנָוִים → πτωχοῖς"
+            },
+            {
+              "ref": "Luk.4.18"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "לֵץ",
+            "note": "The humble given favour, the scorners scorned.",
+            "evidence": [
+              {
+                "ref": "Pro.3.34",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "גֵּאֶה",
+            "note": "Low of spirit with the humble, against the proud.",
+            "evidence": [
+              {
+                "ref": "Pro.16.19",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "רָשָׁע",
+            "note": "The humble lifted up, the wicked cast down.",
+            "evidence": [
+              {
+                "ref": "Psa.147.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָנָה",
+      "pos": "verb",
+      "gloss": "be occupied, busy oneself",
+      "bdb": [
+        "p.du.aa"
+      ],
+      "summary": "Only in Ecclesiastes: the labour God has given men to be occupied with. Arabic ʿanā “concern, occupy (the mind)” shows ʿ, and the Peshitta's ܥܢܐ means “be occupied” as well as “answer”.",
+      "cognate_ids": [
+        "ar-ana-concern"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be occupied, busy oneself",
+          "senses": [
+            {
+              "id": "be-occupied",
+              "gloss": "be occupied with",
+              "definition": "Be taken up with a task.",
+              "evidence": [
+                {
+                  "ref": "Ecc.1.13",
+                  "role": "defining",
+                  "note": "“An evil business (עִנְיַן) God has given to the sons of man to be occupied with it (לַעֲנוֹת בּוֹ).”"
+                },
+                {
+                  "ref": "Ecc.3.10",
+                  "role": "defining",
+                  "note": "The same words."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "keep occupied",
+          "senses": [
+            {
+              "gloss": "keep (someone) occupied",
+              "definition": "Of God: keep a man taken up with something.",
+              "evidence": [
+                {
+                  "ref": "Ecc.5.19",
+                  "role": "defining",
+                  "note": "“He will not much remember the days of his life, for God keeps him occupied (מַעֲנֶה) with the joy of his heart.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עְנָא",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "be occupied, devote oneself",
+      "summary": "A second Peshitta use of the Syriac verb (SEDRA lexeme 2363), “be occupied with”, matching Ecclesiastes' עָנָה.",
+      "cognate_ids": [
+        "ar-ana-concern"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be occupied",
+          "senses": [
+            {
+              "gloss": "be occupied with, devote oneself to",
+              "definition": "Be taken up with a work or pursuit.",
+              "evidence": [
+                {
+                  "ref": "Luk.10.40",
+                  "role": "defining",
+                  "note": "Martha “was occupied with much serving”."
+                },
+                {
+                  "ref": "1Co.7.5",
+                  "role": "defining",
+                  "note": "“That you may be free for (devote yourselves to) fasting and prayer.”"
+                },
+                {
+                  "ref": "1Th.4.11",
+                  "note": "“Be occupied with your own affairs.”"
+                },
+                {
+                  "ref": "2Ti.2.16",
+                  "note": "Empty talk adds to the wickedness of those occupied with it."
+                }
+              ],
+              "kin": [
+                "be-occupied"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָנָה",
+      "pos": "verb",
+      "gloss": "sing (in response), chant",
+      "bdb": [
+        "p.dw.aa"
+      ],
+      "summary": "Singing or chanting, often one group answering another (Exo 15:21; 1Sa 18:7). Arabic ġannā “sing” shows ġ, a different older sound from answering (ʿ); but these uses can also be read as “answer in song”, so whether they are a separate root is not settled.",
+      "cognate_ids": [
+        "ar-ghanna-sing"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "sing, chant (responsively); shout",
+          "senses": [
+            {
+              "gloss": "sing, chant in response",
+              "definition": "Sing or chant, most often one party taking up a song in answer to another.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.21",
+                  "role": "defining",
+                  "note": "“Miriam answered (sang to) them: Sing to Yahweh, for he has triumphed gloriously.”"
+                },
+                {
+                  "ref": "1Sa.18.7",
+                  "role": "defining",
+                  "note": "The women sang as they danced: “Saul has struck his thousands, and David his ten thousands.”"
+                },
+                {
+                  "ref": "Num.21.17",
+                  "role": "defining",
+                  "note": "Israel sang this song: “Spring up, well! Sing to it.”"
+                },
+                {
+                  "ref": "Psa.147.7",
+                  "note": "“Sing to Yahweh with thanksgiving”, parallel זַמְּרוּ “make music”."
+                },
+                {
+                  "ref": "Isa.27.2",
+                  "note": "“A pleasant vineyard, sing of it.”"
+                },
+                {
+                  "ref": "1Sa.21.12",
+                  "note": "The song the women sang of Saul and David."
+                },
+                {
+                  "ref": "Jer.25.30",
+                  "note": "A shout (הֵידָד) like those who tread grapes."
+                },
+                {
+                  "ref": "Jer.51.14"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "sing",
+          "senses": [
+            {
+              "gloss": "sing",
+              "definition": "The sound of singing.",
+              "evidence": [
+                {
+                  "ref": "Exo.32.18",
+                  "role": "defining",
+                  "note": "“Not the sound of a cry of victory or of defeat; the sound of singing (עַנּוֹת) I hear.”"
+                },
+                {
+                  "ref": "Psa.88.1",
+                  "note": "In a heading: לְעַנּוֹת “for singing”(?)."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "זִמֵּר",
+            "note": "Singing beside making music.",
+            "evidence": [
+              {
+                "ref": "Psa.147.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שִׁיר",
+            "note": "The song sung in answer.",
+            "evidence": [
+              {
+                "ref": "Exo.15.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.21.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַעֲנֶה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "answer, reply; purpose",
+      "bdb": [
+        "p.dt.ai"
+      ],
+      "summary": "The answer one gives, especially the answer of the mouth. Ugaritic has the same noun, mʿn “answer, reply”. In Pro 16:4 it is the end a thing is made for.",
+      "cognate_ids": [
+        "uga-mn-answer"
+      ],
+      "senses": [
+        {
+          "gloss": "answer, reply",
+          "definition": "What is said in reply.",
+          "evidence": [
+            {
+              "ref": "Pro.15.1",
+              "role": "defining",
+              "note": "“A gentle answer turns away wrath.”"
+            },
+            {
+              "ref": "Job.32.3",
+              "role": "defining",
+              "note": "Job's friends found no answer."
+            },
+            {
+              "ref": "Pro.16.1",
+              "note": "“The answer of the tongue is from Yahweh.”"
+            },
+            {
+              "ref": "Pro.15.23",
+              "note": "“Joy to a man in the answer of his mouth, and a word in its time (בְּעִתּוֹ), how good!”"
+            },
+            {
+              "ref": "Mic.3.7",
+              "note": "The seers cover their lips, “for there is no answer from God”."
+            },
+            {
+              "ref": "Job.32.5"
+            },
+            {
+              "ref": "Pro.29.19",
+              "note": "A servant understands but gives no answer."
+            }
+          ],
+          "kin": [
+            "answer-reply"
+          ]
+        },
+        {
+          "id": "maaneh-purpose",
+          "gloss": "purpose, (its) end",
+          "definition": "That for which a thing is made.",
+          "evidence": [
+            {
+              "ref": "Pro.16.4",
+              "role": "defining",
+              "note": "“Yahweh has made everything for its purpose (לַמַּעֲנֵהוּ), even the wicked for the day of evil.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עִנְיָן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "occupation, business, task",
+      "bdb": [
+        "p.du.ab"
+      ],
+      "summary": "Only in Ecclesiastes: the toil and concern men are taken up with under the sun. The noun of “be occupied”.",
+      "cognate_ids": [
+        "ar-ana-concern",
+        "arc-inyana"
+      ],
+      "senses": [
+        {
+          "gloss": "occupation, business",
+          "definition": "The work or concern that occupies a man.",
+          "evidence": [
+            {
+              "ref": "Ecc.1.13",
+              "role": "defining",
+              "note": "“An evil business God has given to the sons of man to be occupied with.”"
+            },
+            {
+              "ref": "Ecc.3.10",
+              "role": "defining",
+              "note": "“I have seen the business God has given…”"
+            },
+            {
+              "ref": "Ecc.2.23",
+              "note": "“All his days are pains, and his business is vexation.”"
+            },
+            {
+              "ref": "Ecc.2.26",
+              "note": "To the sinner God gives the business of gathering and collecting."
+            },
+            {
+              "ref": "Ecc.4.8"
+            },
+            {
+              "ref": "Ecc.5.2",
+              "note": "A dream comes with much business."
+            },
+            {
+              "ref": "Ecc.5.13"
+            },
+            {
+              "ref": "Ecc.8.16"
+            }
+          ],
+          "kin": [
+            "be-occupied"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲנָוָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "humility, lowliness",
+      "bdb": [
+        "p.dv.ac"
+      ],
+      "summary": "The quality of the עָנָו: lowliness before God, which goes before honour.",
+      "cognate_ids": [
+        "ar-ana-humble"
+      ],
+      "senses": [
+        {
+          "gloss": "humility",
+          "definition": "Lowliness before Yahweh, set beside the fear of Yahweh and before honour.",
+          "evidence": [
+            {
+              "ref": "Pro.15.33",
+              "role": "defining",
+              "note": "“The fear of Yahweh is the instruction of wisdom, and before honour is humility.”"
+            },
+            {
+              "ref": "Pro.18.12",
+              "role": "defining",
+              "note": "“Before destruction a man's heart is lofty, and before honour is humility.”"
+            },
+            {
+              "ref": "Pro.22.4",
+              "note": "“The reward of humility, the fear of Yahweh, is riches and honour and life.”"
+            },
+            {
+              "ref": "Zep.2.3",
+              "note": "“Seek righteousness, seek humility.”"
+            },
+            {
+              "ref": "Psa.45.5",
+              "note": "The king rides out “for the cause of truth and humility and righteousness”; Heb 1:8–9 quotes Psa 45:7–8 of the Son."
+            }
+          ],
+          "kin": [
+            "anaw-humble"
+          ]
+        },
+        {
+          "gloss": "condescension (of God)",
+          "definition": "Yahweh's stooping to help, which makes the king great.",
+          "evidence": [
+            {
+              "ref": "Psa.18.36",
+              "role": "defining",
+              "note": "“Your עֲנָוָה makes me great”; the parallel 2Sa 22:36 has וַעֲנֹתְךָ “your answering”."
+            },
+            {
+              "ref": "2Sa.22.36"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֱנוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "affliction",
+      "bdb": [
+        "p.dv.ad"
+      ],
+      "summary": "Used once, in the Psalm whose opening cry Jesus took up on the cross.",
+      "senses": [
+        {
+          "gloss": "affliction",
+          "definition": "The suffering of one brought low.",
+          "evidence": [
+            {
+              "ref": "Psa.22.25",
+              "role": "defining",
+              "note": "“He has not despised or abhorred the affliction of the afflicted (עֱנוּת עָנִי), nor hidden his face from him; when he cried to him, he heard.”"
+            }
+          ],
+          "kin": [
+            "be-afflicted"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-anna-trouble"
+      ]
+    },
+    {
+      "lemma": "תַּעֲנִית",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "self-humbling, fasting",
+      "bdb": [
+        "p.dv.ag"
+      ],
+      "summary": "Once: Ezra's fasting in mourning over the people's sin, the noun of “humble one's soul”.",
+      "senses": [
+        {
+          "gloss": "self-humbling (fasting)",
+          "definition": "The act of humbling oneself before God by fasting and mourning.",
+          "evidence": [
+            {
+              "ref": "Ezr.9.5",
+              "role": "defining",
+              "note": "“At the evening offering I rose from my humbling, with my garment torn, and fell on my knees.”"
+            }
+          ],
+          "kin": [
+            "afflict-soul"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ταπείνωσις",
+          "gloss": "lowliness, humiliation",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezr.9.5, מִתַּעֲנִיתִי → ταπεινώσεως"
+            },
+            {
+              "ref": "Act.8.33"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ana-humble"
+      ]
+    },
+    {
+      "lemma": "עִתִּי",
+      "pos": "adjective",
+      "gloss": "ready, appointed (for the time)",
+      "bdb": [
+        "p.dt.ag"
+      ],
+      "summary": "Once, of the man who leads away the goat on יוֹם הַכִּפֻּרִים; formed from עֵת.",
+      "cognate_ids": [
+        "phn-t-time"
+      ],
+      "senses": [
+        {
+          "gloss": "ready, standing by",
+          "definition": "One held ready for the time a task is to be done.",
+          "evidence": [
+            {
+              "ref": "Lev.16.21",
+              "role": "defining",
+              "note": "Aaron sends the living goat, bearing Israel's iniquities, into the wilderness “by the hand of a man ready (עִתִּי)”."
+            }
+          ],
+          "kin": [
+            "et-season"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֹנָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "marital due (cohabitation)",
+      "bdb": [
+        "p.dt.ab"
+      ],
+      "summary": "Once, of what a man owes a wife beside food and clothing. Its link to the root is not clear: it may be her “time” (עֵת), or it may belong with another root.",
+      "senses": [
+        {
+          "gloss": "conjugal right",
+          "definition": "The marital relations owed to a wife.",
+          "evidence": [
+            {
+              "ref": "Exo.21.10",
+              "role": "defining",
+              "note": "“If he takes another wife, he shall not reduce her food, her clothing, or her עֹנָה.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲנָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "furrow, ploughing strip",
+      "bdb": [
+        "p.du.ac"
+      ],
+      "summary": "A furrow or the strip a yoke ploughs; the form מַעֲנִית at Psa 129:3 is the same word. Its link to the root is not clear (the ploughman's “task”?), and no cognate has been found.",
+      "senses": [
+        {
+          "gloss": "furrow",
+          "definition": "A line or strip of ploughed land.",
+          "evidence": [
+            {
+              "ref": "1Sa.14.14",
+              "role": "defining",
+              "note": "About twenty men struck “within about half a furrow of a yoke of land”."
+            },
+            {
+              "ref": "Psa.129.3",
+              "role": "defining",
+              "note": "“The ploughers ploughed on my back; they made their furrows (לְמַעֲנִיתָם) long.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּעַן",
+      "lang": "arc",
+      "pos": "adverb",
+      "gloss": "now",
+      "bdb": [
+        "xp.ai.ab"
+      ],
+      "summary": "Biblical Aramaic “now” (כְּ + ʿan), keeping the n that Hebrew עַתָּה assimilates.",
+      "cognate_ids": [
+        "uga-nt-now"
+      ],
+      "senses": [
+        {
+          "gloss": "now; and now",
+          "definition": "At this time; or, turning to what follows, “so now”.",
+          "evidence": [
+            {
+              "ref": "Dan.2.23",
+              "role": "defining",
+              "note": "“And now you have made known to me what we asked of you.”"
+            },
+            {
+              "ref": "Ezr.4.13",
+              "role": "defining",
+              "note": "“Now let it be known to the king…”"
+            },
+            {
+              "ref": "Dan.6.9",
+              "note": "“Now, O king, establish the decree.”"
+            },
+            {
+              "ref": "Dan.3.15"
+            }
+          ],
+          "kin": [
+            "now-time"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּעֶנֶת",
+      "lang": "arc",
+      "pos": "adverb",
+      "gloss": "and now (in letters)",
+      "bdb": [
+        "xp.ai.ac"
+      ],
+      "summary": "The letter form of “now”, closing a greeting and opening the business (once written כְּעֶת).",
+      "cognate_ids": [
+        "uga-nt-now"
+      ],
+      "senses": [
+        {
+          "gloss": "and now",
+          "definition": "In letters, marks the turn from address to matter.",
+          "evidence": [
+            {
+              "ref": "Ezr.4.11",
+              "role": "defining",
+              "note": "“Your servants, the men beyond the River, and now (וּכְעֶנֶת)…”"
+            },
+            {
+              "ref": "Ezr.7.12",
+              "role": "defining",
+              "note": "Artaxerxes to Ezra the priest, “and now”."
+            },
+            {
+              "ref": "Ezr.4.17",
+              "note": "Written וּכְעֶת."
+            }
+          ],
+          "kin": [
+            "now-time"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲנֵה",
+      "lang": "arc",
+      "pos": "adjective",
+      "gloss": "poor, afflicted",
+      "bdb": [
+        "xp.aj.ab"
+      ],
+      "summary": "Biblical Aramaic for the Hebrew עָנִי, once.",
+      "cognate_ids": [
+        "arc-anya-poor"
+      ],
+      "senses": [
+        {
+          "gloss": "poor, oppressed",
+          "definition": "Those brought low, to whom mercy is due.",
+          "evidence": [
+            {
+              "ref": "Dan.4.24",
+              "role": "defining",
+              "note": "Daniel to Nebuchadnezzar: “break off your iniquities by showing mercy to the poor (עֲנָיִן).”"
+            }
+          ],
+          "kin": [
+            "ani-poor"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-ny-answer",
+      "lang": "uga",
+      "form": "𐎓𐎐𐎊",
+      "translit": "ʿny (yʿn)",
+      "gloss": "to answer",
+      "relation": "cognate",
+      "note": "The epics' “and Keret answered”, “and Virgin Anat answered”.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 196, §93 glossary, /ʿ-n-y/ “to answer” (1.24:31 = 88.1)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000608 ʿny [answer] V, UGC000975 ʿny [answer]"
+        }
+      ]
+    },
+    {
+      "id": "uga-mn-answer",
+      "lang": "uga",
+      "form": "𐎎𐎓𐎐",
+      "translit": "mʿn",
+      "gloss": "answer, reply",
+      "relation": "cognate",
+      "note": "The same noun pattern as מַעֲנֶה, which Segert gives as its Hebrew counterpart.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 192, §93 glossary, mʿn “answer, reply” (2.10:15 = 86.43)"
+        }
+      ]
+    },
+    {
+      "id": "uga-nw-downcast",
+      "lang": "uga",
+      "form": "𐎓𐎐𐎆",
+      "translit": "ʿnw (tʿn)",
+      "gloss": "to be downcast",
+      "relation": "cognate",
+      "note": "Segert sets it apart from ʿny “answer” and marks the root with a query; he compares Hebrew עָנָו and Arabic ʿanā “be humble”.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 196, §93 glossary, /ʿ-n-w/ (?) “to be downcast” (1.16:VI:58 = 85.1)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000607 ʿnw [humble] V, UGC000974"
+        }
+      ]
+    },
+    {
+      "id": "uga-nt-now",
+      "lang": "uga",
+      "form": "𐎓𐎐𐎚",
+      "translit": "ʿnt",
+      "gloss": "now",
+      "relation": "cognate",
+      "note": "Segert compares Aramaic ʿenet (כְּעֶנֶת) and Hebrew עַתָּה; the n shows the Hebrew double t is assimilated nt.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 196, §93 glossary, ʿnt “now” (1.19:IV:6 = 87.4)"
+        }
+      ]
+    },
+    {
+      "id": "phn-t-time",
+      "lang": "phn",
+      "form": "𐤏𐤕",
+      "translit": "ʿt",
+      "gloss": "time; appointed time (of death); season",
+      "relation": "cognate",
+      "note": "Eshmunazor: “I was snatched away before my time (ʿty)”; Karatepe: “in the season of ploughing and the season of harvest”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "ʿT “time” (KAI 62; KAI 14.2–3; KAI 26 A III), p. 392 (from text extraction)"
+        }
+      ]
+    },
+    {
+      "id": "phn-ny-subdue",
+      "lang": "phn",
+      "form": "𐤏𐤍𐤉",
+      "translit": "ʿny (piel)",
+      "gloss": "conquer, subdue",
+      "relation": "cognate",
+      "note": "Karatepe (Azatiwada): “I subdued (ʿnt) mighty lands… that the kings before me had not subdued.” The same stem and sense as the piel “subdue, bring low”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "ʿ-N-Y, v. piel CONQUER, DEFEAT (KAI 26 A I 18–20), p. 381 (from text extraction)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001034 ʿny [oppress], PUN001571 ʿny [conquer]"
+        }
+      ]
+    },
+    {
+      "id": "ar-ana-humble",
+      "lang": "ar",
+      "form": "عَنَا",
+      "translit": "ʿanā (ʿnw); ʿānin",
+      "gloss": "be lowly, humble, submissive; (II) confine long; (ʿānin) lowly; captive",
+      "relation": "cognate",
+      "note": "Lane: “He was, or became, lowly, humble, or submissive, and obedient”; form II “he imprisoned him, confined him long, straitening him”; عَانٍ “lowly, humble”, and hence “a captive”.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2178, root عنو, عَنَا (n30821), عنّاهُ (n30822); p. 2179, عَانٍ (n30832)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000607 ʿnw [humble] V, ARB023161"
+        }
+      ]
+    },
+    {
+      "id": "ar-anna-trouble",
+      "lang": "ar",
+      "form": "عَنَّى",
+      "translit": "ʿannā; ʿanāʾ",
+      "gloss": "cause to suffer distress or trouble; (ʿanāʾ) distress, hardship",
+      "relation": "cognate",
+      "note": "Lane: “He caused him to suffer difficulty, distress, or trouble… caused him to grieve”, as the piel afflicts.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2180, root عنى, عنّاهُ (n30837), عَنَآءٌ (n30843)"
+        }
+      ]
+    },
+    {
+      "id": "ar-ana-concern",
+      "lang": "ar",
+      "form": "عَنَاهُ",
+      "translit": "ʿanāhu (al-amru)",
+      "gloss": "(the affair) concerned him, occupied him",
+      "relation": "cognate",
+      "note": "Lane: “such a thing occurred to me, and occupied me”; عُنِيتُ بِأَمْرِ فُلَانٍ “I became occupied with the affair of such a one”.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2180, root عنى, عَنَاهُ الأَمْرُ (n30836); عَنٍ (n30840)"
+        }
+      ]
+    },
+    {
+      "id": "ar-mana-meaning",
+      "lang": "ar",
+      "form": "مَعْنًى",
+      "translit": "maʿnan; ʿanā bi-",
+      "gloss": "meaning, intended sense; (ʿanā bi-l-qawl) he meant, intended by the saying",
+      "relation": "possible",
+      "note": "Lane: عَنَى بِالقَوْلِ كَذَا “he meant, or intended, by the saying such a thing” (syn. qaṣada). A possible link to מַעַן “purpose, sake”; not shown.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2180, root عنى, عَنَى بِالقَوْلِ (in n30836); مَعْنًى (n30846)"
+        }
+      ]
+    },
+    {
+      "id": "ar-ghanna-sing",
+      "lang": "ar",
+      "form": "غَنَّى",
+      "translit": "ġannā; ġināʾ",
+      "gloss": "sing, chant; (ġināʾ) song",
+      "relation": "cognate",
+      "note": "Lane: “He sang, or chanted… prolonged his voice and modulated it sweetly.” It has ġ, where answering and humbling have ʿ.",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2302, root غنى, غَنَّى (form II); p. 2303, غِنَآءٌ (n32548)"
+        }
+      ]
+    },
+    {
+      "id": "arc-ane-answer",
+      "lang": "arc",
+      "form": "עֲנֵי",
+      "translit": "ʿănē",
+      "gloss": "answer, respond",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "P00971, עֲנֵי (Targ. Ps. 34:5; 102:3)"
+        }
+      ]
+    },
+    {
+      "id": "arc-anya-poor",
+      "lang": "arc",
+      "form": "עַנְיָא",
+      "translit": "ʿanyā",
+      "gloss": "poor, afflicted",
+      "relation": "cognate",
+      "note": "The Targum's word at Exo 22:24, and in “poor bread” for לֶחֶם עֹנִי (Targ. Y. Deu 16:3).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "P00977, עַנְיָא"
+        }
+      ]
+    },
+    {
+      "id": "arc-inyana",
+      "lang": "arc",
+      "form": "עִנְיָנָא",
+      "translit": "ʿinyānā",
+      "gloss": "matter, subject, purpose",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "P00993, עִנְיָנָא (Targ. Ps. 19:5)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "humbling-the-soul",
+      "statement": "On the tenth day of the seventh month, יוֹם הַכִּפֻּרִים, Israel was to humble their souls and do no work, and the soul that was not humbled that day was cut off (Lev 23:27–32; Lev 16:29–31). Scripture shows what humbling the soul is: fasting (Psa 35:13; Isa 58:3; Ezr 8:21), bowing before God in confession (Ezr 9:5; Dan 10:12), and setting the heart to understand; Daniel was heard “from the first day” he humbled himself (Dan 10:12). Yahweh rejects a fast that bows the head while oppressing others: the humbling he chooses looses the bonds of wickedness and feeds the hungry (Isa 58:3–7). So atonement was received by a people brought low before Yahweh, not by the ritual alone. The apostles ask the same of believers: “Humble yourselves before the Lord, and he will exalt you” (Jas 4:10), under God's mighty hand (1Pe 5:6), since he “gives favour to the humble” (Pro 3:34; Jas 4:6; 1Pe 5:5).",
+      "evidence": [
+        {
+          "ref": "Lev.23.27",
+          "to": "Lev.23.32"
+        },
+        {
+          "ref": "Lev.16.29",
+          "to": "Lev.16.31"
+        },
+        {
+          "ref": "Psa.35.13"
+        },
+        {
+          "ref": "Isa.58.3",
+          "to": "Isa.58.7"
+        },
+        {
+          "ref": "Ezr.8.21"
+        },
+        {
+          "ref": "Ezr.9.5"
+        },
+        {
+          "ref": "Dan.10.12"
+        },
+        {
+          "ref": "Pro.3.34"
+        },
+        {
+          "ref": "Jas.4.6"
+        },
+        {
+          "ref": "Jas.4.10"
+        },
+        {
+          "ref": "1Pe.5.5",
+          "to": "1Pe.5.6"
+        }
+      ]
+    },
+    {
+      "topic": "humbled-to-be-taught",
+      "statement": "Yahweh led Israel forty years in the wilderness “to humble you, to test you, to know what was in your heart”; he humbled them, let them hunger and fed them manna, “so that he might make you know that man does not live by bread alone, but by every word that comes from the mouth of Yahweh”, to do them good in the end (Deu 8:2–3, 16). The psalmist says the same of his own affliction: “Before I was afflicted I went astray, but now I keep your word… it is good for me that I was afflicted, that I might learn your statutes… in faithfulness you have afflicted me” (Psa 119:67, 71, 75). Jesus, hungry after forty days in the wilderness, answered the tempter with Deu 8:3 (Mat 4:4; Luk 4:4): he was the son who learned what Israel was humbled to learn.",
+      "evidence": [
+        {
+          "ref": "Deu.8.2",
+          "to": "Deu.8.3"
+        },
+        {
+          "ref": "Deu.8.16"
+        },
+        {
+          "ref": "Psa.119.67"
+        },
+        {
+          "ref": "Psa.119.71"
+        },
+        {
+          "ref": "Psa.119.75"
+        },
+        {
+          "ref": "Mat.4.4"
+        },
+        {
+          "ref": "Luk.4.4"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-hears-the-afflicted",
+      "statement": "The same root names the lowly and Yahweh's answer to them. He heard Hagar's affliction, saw Israel's affliction in Egypt and Hannah's (Gen 16:11; Exo 3:7; 1Sa 1:11); “this poor man called, and Yahweh heard” (Psa 34:7); he does not forget the cry of the afflicted and hears the desire of the humble (Psa 9:13; 10:17). He looks to the one who is lowly and contrite in spirit and trembles at his word (Isa 66:2), leaves a lowly people who take refuge in his name (Zep 3:12), lifts up the humble and casts down the wicked (Psa 147:6). His law guards them: the gleanings of the harvest feast are left for the poor (Lev 23:22), and the poor are not to be oppressed (Exo 22:24; Deu 24:14–15). Jesus took up these words: the meek will inherit the land (Psa 37:11; Mat 5:5); he was anointed to bring good news to the afflicted (Isa 61:1; Luk 4:18). Mary, like Hannah, praised God because he had looked on the lowliness of his servant (Luk 1:48).",
+      "evidence": [
+        {
+          "ref": "Gen.16.11"
+        },
+        {
+          "ref": "Exo.3.7"
+        },
+        {
+          "ref": "1Sa.1.11"
+        },
+        {
+          "ref": "Psa.34.7"
+        },
+        {
+          "ref": "Psa.9.13"
+        },
+        {
+          "ref": "Psa.10.17"
+        },
+        {
+          "ref": "Isa.66.2"
+        },
+        {
+          "ref": "Zep.3.12"
+        },
+        {
+          "ref": "Psa.147.6"
+        },
+        {
+          "ref": "Lev.23.22"
+        },
+        {
+          "ref": "Exo.22.24"
+        },
+        {
+          "ref": "Deu.24.14",
+          "to": "Deu.24.15"
+        },
+        {
+          "ref": "Psa.37.11"
+        },
+        {
+          "ref": "Mat.5.5"
+        },
+        {
+          "ref": "Isa.61.1"
+        },
+        {
+          "ref": "Luk.4.18"
+        },
+        {
+          "ref": "Luk.1.48"
+        }
+      ]
+    },
+    {
+      "topic": "the-afflicted-and-humble-king",
+      "statement": "The servant of Isa 53 is מְעֻנֶּה, “afflicted”, bearing griefs that were ours (Isa 53:4), and נַעֲנֶה, afflicted yet silent, like a lamb led to the slaughter (Isa 53:7); Matthew applies the verse to Jesus' healing (Mat 8:17), and Philip begins from Isa 53:7–8 to preach Jesus to the Ethiopian (Act 8:32–35). In Psa 22, whose first words Jesus cried on the cross, God “has not despised the affliction of the afflicted… when he cried to him, he heard” (Psa 22:25), and the afflicted will eat and be satisfied (Psa 22:27); Hebrews says he was heard for his godly fear (Heb 5:7). Zion's king comes “righteous and saved, lowly (עָנִי), riding on a donkey” (Zec 9:9), fulfilled as Jesus entered Jerusalem (Mat 21:5; Jhn 12:15); he calls himself “gentle and lowly in heart” (Mat 11:29), and “humbled himself, becoming obedient to death” before God exalted him (Php 2:8–9). Moses, more humble than any man (Num 12:3), is the pattern of the prophet like him (Deu 18:15; Act 3:22).",
+      "evidence": [
+        {
+          "ref": "Isa.53.4"
+        },
+        {
+          "ref": "Isa.53.7"
+        },
+        {
+          "ref": "Mat.8.17"
+        },
+        {
+          "ref": "Act.8.32",
+          "to": "Act.8.35"
+        },
+        {
+          "ref": "Psa.22.25"
+        },
+        {
+          "ref": "Psa.22.27"
+        },
+        {
+          "ref": "Heb.5.7"
+        },
+        {
+          "ref": "Zec.9.9"
+        },
+        {
+          "ref": "Mat.21.5"
+        },
+        {
+          "ref": "Jhn.12.15"
+        },
+        {
+          "ref": "Mat.11.29"
+        },
+        {
+          "ref": "Php.2.8",
+          "to": "Php.2.9"
+        },
+        {
+          "ref": "Num.12.3"
+        },
+        {
+          "ref": "Deu.18.15"
+        },
+        {
+          "ref": "Act.3.22"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-11 for Lev 23 (23:27, 29, 32). SOUNDS behind ע: answer (Ugaritic ʿny, mʿn; Aramaic ʿny), humble/afflict (Ugaritic ʿnw (Segert's query), Arabic ʿnw/ʿny, Phoenician ʿny piel “subdue”), be occupied (Arabic ʿanā “concern, occupy”), now/time (Ugaritic ʿnt, Phoenician ʿt) all show ʿ. Only “sing” has a ġ cognate (Arabic ġannā). So answer and afflict are NOT a ʿ/ġ split: whether they are one older root or two is not decided by sounds; Segert lists ʿny and ʿnw as separate Ugaritic roots. Arabic ġaniya “be free from want, rich” (Lane p. 2301, n32540) is a ġ root of the opposite meaning to עָנִי; not recorded as a cognate. Whether “sing” is its own root (ġny) or “answer in song” is open: Exo 15:21 and 1Sa 18:7 read well either way. Syriac ʿānā “flock” (SEDRA 2364, Arabic ġanam) is another root; not recorded. TIME/NOW and PURPOSE words: עֵת, עַתָּה, עִתִּי, כְּעַן, כְּעֶנֶת are kept as the brief files them under the root (the n of Ugaritic ʿnt and Aramaic כְּעַן, כְּעֶנֶת supports *ʿnt); whether they share the verbs' root is not shown. Akkadian enna/inanna “now” (Oracc) might belong with them; not recorded. מַעַן/יַעַן: no cognate shares them; Arabic maʿnā recorded as possible only. עֹנָה (Exo 21:10) and מַעֲנָה “furrow” links unclear. BDB KEYS: the four verb keys overlap by spelling (p.du.aa and p.dv.aa list the same 87 tokens; p.dt.aa and p.dw.aa the same 11), so lexicon-support overcounts the “be occupied” and “sing” verbs and undercounts “answer”. Most “answer” tokens (Gen 18:27, 1Ki 18:37 etc.) are analysed in the database under root עונ, not ענה, so they are not counted at all: a root-analysis fault in the generated data to report, not fixable here. xp.ai.aa (Aramaic answer) also counts 5 tokens of the name Anath (Jos 19:38, Jdg 1:33, 3:31, 5:6). מַעֲנִית (p.du.ad, 0 tokens) is folded into מַעֲנָה; Psa 129:3 cited there. Cross-reference keys with no tokens (j.cg.ag, l.bq.ak, m.cz.ak, m.cz.al, p.dx.ae, p.dx.ag, p.gh.aj, p.gi.ad, w.bh.aj, xk.af.ae, xp.ak.af) are left off. LEFT OUT (names): עֲנָה Anah (p.dw.ab), עַתַּי Attai (p.dt.af), עֵת קָצִין (p.dt.ad), עֲנָת Anath, בַּעֲנָה, עֻנִּי, בֵּית עֲנוֹת. KETIV/QERE: עָנָו and עָנִי interchange in written and read forms (Num 12:3; Psa 9:13; Pro 3:34; and others), so the two adjectives' token lists may be split by which form is counted. PESHITTA: the brief found no Peshitta root because SEDRA keys it ענא; lexemes 2362 (answer, 158) and 2363 (be occupied, 5; its 1Co 9:7 token is ‘flock’ mislabelled and is not cited) are used here. The Peshitta renders “humble/meek” with other roots. UNVERIFIED: Krahmalkov page numbers are from the local text extraction only (no PDF renderer), page unverified. Segert pp. 192 and 196 were checked against the page images (leaves n219, n223). Not consulted: Old South Arabian (Biella's OCR is too damaged to search; Segert cites ESA ʿnw “be humble”), Ge'ez (Dillmann, Leslau), Akkadian for answer/humble. Aramaic עֲנֵי “tarry, be detained” (Jastrow P00973, Pa.) resembles Arabic ʿnw II “confine”; not recorded. Num 12:3 and Psa 37:11 עָנָו tokens may sit under the read form's key; check counts in lexicon-support. Isa 53:8 עֹצֶר, quoted at Act 8:33, is in the atsar entry."
+}

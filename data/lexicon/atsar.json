@@ -1,0 +1,765 @@
+{
+  "id": "atsar",
+  "root": "עצר",
+  "status": "draft",
+  "updated": "2026-11-11",
+  "tags": [
+    "restraint",
+    "assembly",
+    "feasts",
+    "rain",
+    "womb",
+    "plague",
+    "rule"
+  ],
+  "gloss": "hold back, restrain, shut up; (עֲצֶרֶת) closing assembly",
+  "summary": "עָצַר is to hold something back or shut it in: Yahweh shuts the womb (Gen 16:2; 20:18) and the heavens so that there is no rain (Deu 11:17; 1Ki 8:35), a man is detained or confined (Jdg 13:15; Jer 33:1), strength is retained or fails (Dan 10:8), and a plague is stayed when atonement is made (Num 17:13; 2Sa 24:25). Its noun עֲצֶרֶת names the solemn assembly that closes a feast, the eighth day of סֻכּוֹת and the seventh of מַצּוֹת, on which no work is done (Lev 23:36; Deu 16:8), and also any called assembly (Jol 1:14). Arabic ʿaṣara “withhold, hinder” and “press, squeeze”, Aramaic and Ge'ez ʿṣr “press”, and a Canaanite gloss “withheld” at Amarna share the root; the Peshitta's word is the winepress.",
+  "words": [
+    {
+      "lemma": "עָצַר",
+      "pos": "verb",
+      "gloss": "hold back, restrain, shut up; retain",
+      "bdb": [
+        "p.et.aa"
+      ],
+      "summary": "Holding back is the sense throughout: keeping a person from going, closing a womb or the sky, holding power in check, keeping strength in oneself. The niphal is said of a plague “held back” and the heavens shut.",
+      "cognate_ids": [
+        "ar-asara-withhold",
+        "can-asiri",
+        "arc-asar",
+        "akk-eseru"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hold back, restrain, shut up; retain",
+          "senses": [
+            {
+              "id": "shut-up",
+              "gloss": "shut up, close (womb, heavens)",
+              "definition": "Of Yahweh: close the womb so there is no child, or the heavens so there is no rain.",
+              "evidence": [
+                {
+                  "ref": "Gen.20.18",
+                  "role": "defining",
+                  "note": "“Yahweh had closed fast every womb of the house of Abimelech.”"
+                },
+                {
+                  "ref": "Gen.16.2",
+                  "role": "defining",
+                  "note": "Sarai: “Yahweh has kept me from bearing.”"
+                },
+                {
+                  "ref": "Deu.11.17",
+                  "role": "defining",
+                  "note": "“He will shut up the heavens so that there is no rain.”"
+                },
+                {
+                  "ref": "2Ch.7.13",
+                  "note": "“If I shut up the heavens so that there is no rain… and my people humble themselves and pray…”"
+                },
+                {
+                  "ref": "Isa.66.9",
+                  "note": "“Shall I who cause to bring forth shut the womb?”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-asara-withhold"
+              ]
+            },
+            {
+              "id": "detain",
+              "gloss": "detain, hold back, confine",
+              "definition": "Keep a person from going, or keep him shut in.",
+              "evidence": [
+                {
+                  "ref": "Jdg.13.15",
+                  "role": "defining",
+                  "note": "Manoah: “let us detain you, and prepare a young goat for you.”"
+                },
+                {
+                  "ref": "Jer.33.1",
+                  "role": "defining",
+                  "note": "Jeremiah “still shut up in the court of the guard”."
+                },
+                {
+                  "ref": "Jer.36.5",
+                  "note": "“I am restrained; I cannot go into the house of Yahweh.”"
+                },
+                {
+                  "ref": "2Ki.17.4",
+                  "note": "The king of Assyria shut Hoshea up and bound him in prison."
+                },
+                {
+                  "ref": "Neh.6.10",
+                  "note": "Shemaiah, who was shut in."
+                },
+                {
+                  "ref": "1Ch.12.1",
+                  "note": "David, while he was still kept back because of Saul."
+                },
+                {
+                  "ref": "2Ki.4.24",
+                  "note": "“Do not hold back (slacken) for me unless I tell you.”"
+                },
+                {
+                  "ref": "1Sa.21.6",
+                  "note": "“Women have been kept from us.”"
+                }
+              ]
+            },
+            {
+              "gloss": "refrain, hold in (words)",
+              "definition": "Keep oneself from speaking, or keep in what presses to come out.",
+              "evidence": [
+                {
+                  "ref": "Job.4.2",
+                  "role": "defining",
+                  "note": "“Who can keep himself from speaking?”"
+                },
+                {
+                  "ref": "Job.29.9",
+                  "role": "defining",
+                  "note": "“Princes refrained from talking and laid a hand on their mouth.”"
+                },
+                {
+                  "ref": "Jer.20.9",
+                  "note": "His word is “like a burning fire shut up in my bones; I am weary with holding it in”."
+                }
+              ]
+            },
+            {
+              "id": "keep-in-check",
+              "gloss": "keep in check, rule",
+              "definition": "Hold a people in check, govern them.",
+              "evidence": [
+                {
+                  "ref": "1Sa.9.17",
+                  "role": "defining",
+                  "note": "Of Saul: “This one shall restrain (יַעְצֹר) my people.”"
+                }
+              ]
+            },
+            {
+              "gloss": "retain (strength), be able",
+              "definition": "With כֹּחַ, keep strength in oneself; hence be able.",
+              "evidence": [
+                {
+                  "ref": "Dan.10.8",
+                  "role": "defining",
+                  "note": "“No strength was left in me… and I retained no strength.”"
+                },
+                {
+                  "ref": "1Ch.29.14",
+                  "role": "defining",
+                  "note": "“Who am I… that we should be able (נַעְצֹר כֹּחַ) to offer so willingly?”"
+                },
+                {
+                  "ref": "2Ch.2.5",
+                  "note": "“Who is able to build him a house?”"
+                },
+                {
+                  "ref": "2Ch.13.20",
+                  "note": "Jeroboam did not regain strength."
+                },
+                {
+                  "ref": "2Ch.22.9",
+                  "note": "None of Ahaziah's house had strength to hold the kingdom."
+                },
+                {
+                  "ref": "Dan.10.16"
+                }
+              ]
+            },
+            {
+              "gloss": "(passive participle) shut up, kept",
+              "definition": "In the pair עָצוּר וְעָזוּב, “bound and free”: every man, whatever his state.",
+              "evidence": [
+                {
+                  "ref": "2Ki.14.26",
+                  "role": "defining",
+                  "note": "“There was none shut up and none left free, and no helper for Israel.”"
+                },
+                {
+                  "ref": "Deu.32.36",
+                  "note": "“When he sees that their power is gone and there is none shut up or left.”"
+                },
+                {
+                  "ref": "1Ki.14.10"
+                },
+                {
+                  "ref": "1Ki.21.21"
+                },
+                {
+                  "ref": "2Ki.9.8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be held back, stayed; be shut",
+          "senses": [
+            {
+              "id": "plague-stayed",
+              "gloss": "be stayed (of a plague)",
+              "definition": "Of a plague of judgment: be held back and stop, when atonement is made or an intercessor stands.",
+              "evidence": [
+                {
+                  "ref": "Num.17.13",
+                  "role": "defining",
+                  "note": "Aaron, with incense, “stood between the dead and the living, and the plague was stayed”."
+                },
+                {
+                  "ref": "Num.25.8",
+                  "role": "defining",
+                  "note": "Phinehas acted, “and the plague was stayed from the sons of Israel”; he “made atonement” (Num 25:13)."
+                },
+                {
+                  "ref": "2Sa.24.25",
+                  "role": "defining",
+                  "note": "David built an altar and offered burnt offerings; “Yahweh was entreated for the land, and the plague was stayed.”"
+                },
+                {
+                  "ref": "Num.17.15"
+                },
+                {
+                  "ref": "2Sa.24.21"
+                },
+                {
+                  "ref": "1Ch.21.22"
+                },
+                {
+                  "ref": "Psa.106.30",
+                  "note": "“Phinehas stood up and intervened, and the plague was stayed.”"
+                }
+              ]
+            },
+            {
+              "gloss": "be shut (of the heavens)",
+              "definition": "Of the sky: be closed so that no rain falls.",
+              "evidence": [
+                {
+                  "ref": "1Ki.8.35",
+                  "role": "defining",
+                  "note": "“When the heavens are shut up and there is no rain because they have sinned against you…”"
+                },
+                {
+                  "ref": "2Ch.6.26"
+                }
+              ]
+            },
+            {
+              "gloss": "be detained",
+              "definition": "Be kept in a place.",
+              "evidence": [
+                {
+                  "ref": "1Sa.21.8",
+                  "role": "defining",
+                  "note": "Doeg the Edomite, “detained before Yahweh” at Nob."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "עָזַב",
+            "note": "Shut up against left free: all men, bound or free.",
+            "evidence": [
+              {
+                "ref": "2Ki.14.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.32.36"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָצַר כֹּחַ",
+            "gloss": "retain strength, be able",
+            "evidence": [
+              {
+                "ref": "Dan.10.8"
+              },
+              {
+                "ref": "1Ch.29.14"
+              },
+              {
+                "ref": "2Ch.2.5"
+              }
+            ]
+          },
+          {
+            "phrase": "עָצוּר וְעָזוּב",
+            "gloss": "bound and free (everyone)",
+            "evidence": [
+              {
+                "ref": "Deu.32.36"
+              },
+              {
+                "ref": "1Ki.14.10"
+              },
+              {
+                "ref": "2Ki.14.26"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֲצָרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "solemn assembly; closing day of a feast",
+      "bdb": [
+        "p.et.ad"
+      ],
+      "summary": "Also עֲצֶרֶת. A gathering held to Yahweh with no work: the closing day of the feasts (the eighth day of סֻכּוֹת, the seventh of מַצּוֹת), or an assembly called for fasting. Scripture never says why the root is used; the commandments that go with the word, no work and the people held together before Yahweh, are the nearest evidence.",
+      "cognate_ids": [
+        "arc-atsarta"
+      ],
+      "senses": [
+        {
+          "id": "closing-assembly",
+          "gloss": "closing assembly (of a feast)",
+          "definition": "The holy day that closes a feast, on which Israel gathers before Yahweh and does no work.",
+          "evidence": [
+            {
+              "ref": "Lev.23.36",
+              "role": "defining",
+              "note": "“On the eighth day you shall have a holy convocation… it is an עֲצֶרֶת; you shall do no work of labour.”"
+            },
+            {
+              "ref": "Num.29.35",
+              "role": "defining",
+              "note": "“On the eighth day you shall have an עֲצֶרֶת; you shall do no work of labour.”"
+            },
+            {
+              "ref": "Deu.16.8",
+              "role": "defining",
+              "note": "Of מַצּוֹת: “six days you shall eat unleavened bread, and on the seventh day an עֲצֶרֶת to Yahweh your God; you shall do no work.”"
+            },
+            {
+              "ref": "Neh.8.18",
+              "note": "They kept the feast seven days, “and on the eighth day an עֲצֶרֶת, according to the ordinance”, while the law was read day by day."
+            },
+            {
+              "ref": "2Ch.7.9",
+              "note": "At the dedication of the temple: “on the eighth day they held an עֲצֶרֶת”."
+            }
+          ]
+        },
+        {
+          "id": "called-assembly",
+          "gloss": "assembly called (for fasting or worship)",
+          "definition": "A sacred gathering proclaimed for a purpose, especially for fasting and crying to Yahweh; also, in judgment, the empty assemblies of a disobedient people.",
+          "evidence": [
+            {
+              "ref": "Jol.1.14",
+              "role": "defining",
+              "note": "“Consecrate a fast, call an עֲצָרָה, gather the elders… and cry out to Yahweh.”"
+            },
+            {
+              "ref": "Jol.2.15",
+              "role": "defining",
+              "note": "“Blow the shofar in Zion, consecrate a fast, call an עֲצָרָה.”"
+            },
+            {
+              "ref": "Isa.1.13",
+              "note": "“I cannot bear iniquity and the solemn assembly.”"
+            },
+            {
+              "ref": "Amo.5.21",
+              "note": "“I hate, I reject your feasts, and I take no delight in your solemn assemblies.”"
+            },
+            {
+              "ref": "2Ki.10.20",
+              "note": "Jehu: “Sanctify a solemn assembly for Baal”, to gather and destroy his worshippers."
+            }
+          ]
+        },
+        {
+          "gloss": "crowd, company",
+          "definition": "A body of people gathered together.",
+          "evidence": [
+            {
+              "ref": "Jer.9.1",
+              "role": "defining",
+              "note": "“They are all adulterers, an assembly (עֲצֶרֶת) of traitors.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֹצֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "restraint, oppression; closing (of the womb)",
+      "bdb": [
+        "p.et.ac"
+      ],
+      "summary": "Holding back in a harsh sense: coercion, oppression, and the closed womb.",
+      "cognate_ids": [
+        "ar-asara-withhold"
+      ],
+      "senses": [
+        {
+          "gloss": "oppression, coercion",
+          "definition": "Constraint used against someone; the pressure of distress.",
+          "evidence": [
+            {
+              "ref": "Isa.53.8",
+              "role": "defining",
+              "note": "“By oppression (מֵעֹצֶר) and judgment he was taken away”; quoted at Act 8:33."
+            },
+            {
+              "ref": "Psa.107.39",
+              "role": "defining",
+              "note": "“They are diminished and brought low through oppression, evil and sorrow.”"
+            },
+            {
+              "ref": "Act.8.33"
+            }
+          ]
+        },
+        {
+          "gloss": "closing (of the womb)",
+          "definition": "The womb held shut, barrenness.",
+          "evidence": [
+            {
+              "ref": "Pro.30.16",
+              "role": "defining",
+              "note": "Never satisfied: “Sheol, and the closed womb (עֹצֶר רָחַם), the land not filled with water, and the fire.”"
+            }
+          ],
+          "kin": [
+            "shut-up"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֶצֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "restraint, (ruling) control",
+      "bdb": [
+        "p.et.ab"
+      ],
+      "summary": "Once, in יוֹרֵשׁ עֶצֶר, “one who holds restraint”: there was no one ruling over Laish to keep it in check. Its sense rests on the verb (1Sa 9:17).",
+      "senses": [
+        {
+          "gloss": "restraint, ruling control",
+          "definition": "The power to hold a people in check.",
+          "evidence": [
+            {
+              "ref": "Jdg.18.7",
+              "role": "defining",
+              "note": "Laish lived quiet and secure, “and there was no one in the land putting anything to shame, possessing restraint (יוֹרֵשׁ עֶצֶר)”."
+            }
+          ],
+          "kin": [
+            "keep-in-check"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעְצוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "hindrance, restraint",
+      "bdb": [
+        "p.et.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "hindrance",
+          "definition": "Something that holds one back.",
+          "evidence": [
+            {
+              "ref": "1Sa.14.6",
+              "role": "defining",
+              "note": "Jonathan: “There is no hindrance to Yahweh to save by many or by few.”"
+            }
+          ],
+          "kin": [
+            "detain"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעְצָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "self-restraint, control",
+      "bdb": [
+        "p.et.af"
+      ],
+      "senses": [
+        {
+          "gloss": "control, self-restraint",
+          "definition": "The holding back of one's own spirit.",
+          "evidence": [
+            {
+              "ref": "Pro.25.28",
+              "role": "defining",
+              "note": "“A city broken into, without a wall, is a man who has no restraint over his spirit.”"
+            }
+          ],
+          "kin": [
+            "keep-in-check"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעְצַרְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "winepress",
+      "summary": "The Peshitta's word for the winepress, from Syriac ʿṣr “press, squeeze”: the place where grapes are pressed. It shows the “press” sense the Hebrew does not use.",
+      "cognate_ids": [
+        "ar-asara-press",
+        "arc-asar",
+        "gez-asara"
+      ],
+      "senses": [
+        {
+          "gloss": "winepress",
+          "definition": "The vat in which grapes are trodden or pressed.",
+          "evidence": [
+            {
+              "ref": "Mat.21.33",
+              "role": "defining",
+              "note": "The householder planted a vineyard and dug a winepress in it."
+            },
+            {
+              "ref": "Mrk.12.1"
+            },
+            {
+              "ref": "Rev.14.19",
+              "role": "defining",
+              "note": "“The great winepress of the wrath of God.”"
+            },
+            {
+              "ref": "Rev.14.20",
+              "note": "The winepress was trodden outside the city."
+            },
+            {
+              "ref": "Rev.19.15",
+              "note": "“He treads the winepress of the wine of the fury of the wrath of God” (compare Isa 63:3)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-asara-withhold",
+      "lang": "ar",
+      "form": "عَصَرَ",
+      "translit": "ʿaṣara (-hu)",
+      "gloss": "withhold, hinder, prevent (him); refuse",
+      "relation": "cognate",
+      "note": "Lane: عَصَرَهُ “it [or he] withheld, hindered, or prevented him”; مَا عَصَرَكَ “what withheld you?”, as Sarai says Yahweh “has withheld me” (Gen 16:2).",
+      "sounds": {
+        "ע": "ʿ",
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2061, root عصر, عَصَرَهُ (n29305), sense -A4-"
+        }
+      ]
+    },
+    {
+      "id": "ar-asara-press",
+      "lang": "ar",
+      "form": "عَصَرَ",
+      "translit": "ʿaṣara; maʿṣara",
+      "gloss": "press, squeeze out (juice, oil); (maʿṣara) winepress",
+      "relation": "cognate",
+      "note": "The common sense of the Arabic verb; مَعْصَرَةٌ is “a place in which grapes and the like are pressed”.",
+      "sounds": {
+        "ע": "ʿ",
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2061, root عصر, عَصَرَهُ (n29305); p. 2063, مِعْصَرٌ (n29331), مَعْصَرَةٌ (n29332)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000659 ʿṣr [press] V, ARB021588"
+        }
+      ]
+    },
+    {
+      "id": "arc-asar",
+      "lang": "arc",
+      "form": "עֲצַר",
+      "translit": "ʿăṣar",
+      "gloss": "press, squeeze; keep back, save",
+      "relation": "cognate",
+      "note": "Jastrow's first example is the Targum of Jdg 6:38, Gideon wringing dew from the fleece.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "P01131, עֲצַר, 1) press, squeeze; 2) keep back, save"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000659 ʿṣr [press] V, ARM022863"
+        }
+      ]
+    },
+    {
+      "id": "arc-atsarta",
+      "lang": "arc",
+      "form": "עֲצַרְתָּא",
+      "translit": "ʿăṣartā",
+      "gloss": "the Feast of Weeks",
+      "relation": "cognate",
+      "note": "In Targum Onkelos at Num 28:26 it stands for בְּשָׁבֻעֹתֵיכֶם: in Aramaic the word for a closing feast assembly names שָׁבֻעוֹת. It may be the Hebrew word borrowed.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "P01137, עֲצַרְתָּא I, Targ. O. Num. 28:26"
+        }
+      ]
+    },
+    {
+      "id": "can-asiri",
+      "lang": "sem",
+      "form": "ḫa-ṣi-ri",
+      "translit": "ʿaṣiri (Amarna gloss)",
+      "gloss": "(grain) is withheld",
+      "relation": "cognate",
+      "note": "A Canaanite gloss in a letter from Byblos/Beirut in the Amarna archive (EA 138:129–130), explaining Akkadian “grain has been withheld from my city”: the Hebrew sense “withhold” in Canaanite before Israel's texts. Cuneiform ḫ can write either ʿ or ġ, so it does not settle the sound.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "ʿ-Ṣ-R, v. qal HOLD BACK, WITHHOLD (EA 138.129–130), p. 384 (from text extraction)"
+        }
+      ]
+    },
+    {
+      "id": "gez-asara",
+      "lang": "gez",
+      "form": "ዐጸረ",
+      "translit": "ʿaṣara",
+      "gloss": "press",
+      "relation": "cognate",
+      "note": "From Anderson and Moser's root set only; not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000659 ʿṣr [press] V, GEZ000859"
+        }
+      ]
+    },
+    {
+      "id": "akk-eseru",
+      "lang": "akk",
+      "form": "esēru",
+      "translit": "esēru",
+      "gloss": "enclose, shut in, confine; hold back, dam up",
+      "relation": "possible",
+      "note": "The meaning matches the Hebrew verb closely (Oracc senses “confine”, “shut in”, “holding back”, “dam up”), but the Akkadian has s where Hebrew צ would lead one to expect ṣ, so the tie is uncertain.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000041920, esēru [enclose] V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-plague-stayed",
+      "statement": "Four times scripture says a plague of Yahweh's wrath “was stayed” (נֶעֶצְרָה), and each time by atonement or an altar. When wrath went out on the congregation, Aaron ran with incense into the midst, made atonement for the people, and “stood between the dead and the living, and the plague was stayed” (Num 17:11–13). When Israel joined itself to Baal of Peor, Phinehas acted and the plague was stayed; Yahweh says he turned back his wrath and “made atonement for the sons of Israel” (Num 25:8–13; Psa 106:30). After David's numbering of the people, he bought the threshing floor, built an altar, offered burnt offerings and peace offerings, “and Yahweh was entreated for the land, and the plague was stayed” (2Sa 24:21–25; 1Ch 21:22–27). In the same way the heavens shut up (עָצַר) for sin are opened when the people pray toward Yahweh's house, confess his name and turn (1Ki 8:35–36; 2Ch 7:13–14). What holds back judgment, in every case, is Yahweh's own provision of atonement and a mediator standing in the gap, received by a people that turns.",
+      "evidence": [
+        {
+          "ref": "Num.17.11",
+          "to": "Num.17.13"
+        },
+        {
+          "ref": "Num.25.8",
+          "to": "Num.25.13"
+        },
+        {
+          "ref": "Psa.106.30"
+        },
+        {
+          "ref": "2Sa.24.21",
+          "to": "2Sa.24.25"
+        },
+        {
+          "ref": "1Ch.21.22",
+          "to": "1Ch.21.27"
+        },
+        {
+          "ref": "1Ki.8.35",
+          "to": "1Ki.8.36"
+        },
+        {
+          "ref": "2Ch.7.13",
+          "to": "2Ch.7.14"
+        }
+      ]
+    },
+    {
+      "topic": "the-closing-assembly",
+      "statement": "The feasts of Lev 23 end with an עֲצֶרֶת: the seventh day of מַצּוֹת (Deu 16:8) and the eighth day after the seven days of סֻכּוֹת (Lev 23:36; Num 29:35), a holy convocation on which no work is done, when the people are held together before Yahweh after the feast. When the exiles kept סֻכּוֹת as written, the law was read day by day through the seven days and they held the עֲצֶרֶת on the eighth (Neh 8:18), and Solomon held one on the eighth day at the dedication of the temple (2Ch 7:9). The prophets show that an assembly is worth only the hearts in it: Yahweh cannot bear “iniquity and the solemn assembly” (Isa 1:13; Amo 5:21), but in distress he bids Zion “consecrate a fast, call an עֲצָרָה” and return to him with all the heart, for he is gracious (Jol 2:12–15). On “the last day, the great day of the feast” of סֻכּוֹת Jesus stood and cried out, “If anyone thirsts, let him come to me and drink” (Jhn 7:2, 37); whether that day is the seventh or the eighth John does not say.",
+      "evidence": [
+        {
+          "ref": "Deu.16.8"
+        },
+        {
+          "ref": "Lev.23.36"
+        },
+        {
+          "ref": "Num.29.35"
+        },
+        {
+          "ref": "Neh.8.18"
+        },
+        {
+          "ref": "2Ch.7.9"
+        },
+        {
+          "ref": "Isa.1.13"
+        },
+        {
+          "ref": "Amo.5.21"
+        },
+        {
+          "ref": "Jol.2.12",
+          "to": "Jol.2.15"
+        },
+        {
+          "ref": "Jhn.7.2"
+        },
+        {
+          "ref": "Jhn.7.37"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-11 for Lev 23:36. WHY עֲצֶרֶת: scripture never explains it. Leads (lexicons) suggest “stoppage (of work)” or “the people held back/kept together”; both rest on the commandments that accompany it (no work, Lev 23:36; Deu 16:8), not on a stated etymology, so the entry says so. Jer 9:1 (“an assembly of traitors”) shows a plain “gathered company” sense. SOUNDS: Arabic عصر has ʿ and ṣ for both “withhold” and “press”, so no split; the Hebrew uses only the holding-back side, the Peshitta (winepress) and Aramaic/Ge'ez the pressing side. Arabic ʿaṣr “time, age, afternoon” (Lane n29311) and ʿaṣar “refuge” (n29314) are in the same Arabic root; not recorded (meaning not shared). Ugaritic: Segert's glossary has only ʿṣr “bird” (another root); Ugaritic ʿṣr “press/restrain” not found. Amarna gloss and Phoenician entry are from Krahmalkov's text extraction only: page unverified (no PDF renderer here); EA 138 is from Byblos (Rib-Hadda), Krahmalkov's heading says Beirut — check. Ge'ez ʿaṣara from Anderson–Moser only (Dillmann, Leslau not consulted). Akkadian esēru “confine” recorded as possible (s vs ṣ). Old South Arabian not checked. Syriac ܥܨܪ verb (SEDRA lexeme 2393, “trample; squeeze”) has no NT token; only מַעְצַרְתָּא (SEDRA 2392) is used. Wiktionary's Syriac ܥܨܪܬܐ “religious festival” not found in SEDRA's NT; not recorded. Isa 53:8 עֹצֶר is quoted at Act 8:33 through the Greek ταπείνωσις “humiliation” (LXX); MACULA has no alignment for the verse, so no Greek is recorded. LXX renders עֲצֶרֶת by ἐξόδιον, which the NT does not use, so no Greek bridge. The brief's NT match Mat 1:13 ← Isa 66:9 is spurious (genealogy names). m.da.af (0 tokens) is a cross-reference, left off."
+}
