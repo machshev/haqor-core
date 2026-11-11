@@ -9636,12 +9636,67 @@ Source checks for Philemon 1:
 
 Source checks for Hebrews 1:
 
-- Verses 1–2 retain the twofold “portions/forms” and “last days” contrasts, with the Son as the appointed heir and the agent through whom the worlds were made.
-- Verse 3 keeps the copular/explanatory opening, the Son’s own person, the cleansing of sins, and his sitting at the right hand on high; the possessive suffixes are rendered rather than omitted.
-- Verses 4–8 preserve the explicit contrast between the Son and angels, including the Son’s inherited superior name, the command for all God’s angels to worship him, and the direct address “O God.”
-- Verse 9 retains the causal force (“because”) and the repeated “God, your God” construction before the anointing and comparison with companions.
-- Verses 10–12 preserve the second-person subjects, the fold-up/changed contrast, and the negated completion of the Son’s years.
-- Verses 13–14 retain the angel question, the “from among” phrase, the footstool image, and the description of angels as ministering spirits sent for those prepared to inherit life.
+- Verse 1 separates both in all expressions from portions and forms.
+  Kul retains all, rather than the earlier many; [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=kl+N)
+  records all/every, including its use before absolute plural nouns.
+  God, speaking, with, our fathers and through the prophets retain their
+  own words. Men qadim is the minimal temporal idiom formerly.
+- Verse 2 restores and in these, then separates last and days. The Son,
+  with us, whom, appointed, heir and of everything remain distinct.
+  And through whom continues the coordinated relative clause anchored
+  to the Son, keeping that antecedent clear into verse 3; the source's
+  through him is the resumed pronoun inside that relative scope.
+- Verse 3 keeps who is, radiance, his glory, image and his essence
+  separate. And the holder retains the conjunction and the active
+  holding sense of the construct noun; of all, by the power and of his
+  word remain distinct. And he, in his own person, made, purification
+  and of our sins retain their own words, including the first-person
+  plural suffix on sins. Sitting, on, the right, Majesty and the plural
+  heights remain separate.
+- Verse 4 keeps the perfect has become greater at 2, altogether at 1,
+  than and angels. The comparison in proportion to/how much retains
+  its two connector words. Superior belongs to 7 and inherited to 9;
+  the name, to and theirs retain their own positions.
+- Verse 5 separates for, to which, among, angels, ever, saying and God.
+  The first quotation retains you, my Son, I, today and begotten you.
+  And again introduces the reciprocal I/will be/to him/as a Father
+  and he/will be/to me/as a Son clauses, each separately linked.
+- Verse 6 retains but, again, when, the bringing participle, firstborn,
+  into the world and the perfect he said. When bringing leaves the
+  participle subordinate to that past saying. Let/worship belongs to
+  its own verb, while all, angels, of God and him remain separate.
+- Verse 7 retains but, concerning, angels, thus and the perfect he said.
+  He made likewise retains its past form. Wind is singular in the
+  source; his angels and his ministers retain their suffixes. Burning
+  and fire are separate owners. Verse 8 keeps concerning, Son and
+  saying separate, then your/own/throne, O God, and the minimal temporal
+  formula l-alam almin, forever and ever. Upright, each sceptre noun
+  and of your kingdom retain their own positions.
+- Verse 9 separates love, uprightness, hatred, iniquity, because of
+  and this. This belongs to the causal phrase, rather than to God.
+  God, your God, anointed you, oil, gladness, more, than and your
+  companions retain their own words and suffixes.
+- Verse 10 keeps and again, you, from, beginning, laid, foundations
+  and of the earth distinct. The foundations' feminine possessive
+  anticipates earth, expressed by the English genitive. The heavens,
+  work at 8, your hands at 9 and are at 10 correct the earlier shifted
+  owners. Verse 11 keeps they and passing away separate. The tonic
+  and clitic you forms at 2 and 4 express you yourself with remaining;
+  no extra you is attached to all of them growing old. Like, garment
+  and the plural aging verb retain their own words.
+- Verse 12 separates folding up from its object them and the next
+  clause's subject they from being changed. The tonic and clitic you
+  forms at 6 and 9 again express the same subject, you yourself.
+  Are as you are renders the nonverbal comparison; no lexical remain
+  is assigned to the final pronoun. And your years, the negative and
+  ending remain separately owned.
+- Verse 13 keeps but, to whom, among, angels, ever and saying separate.
+  Sit, at, my right, until, I place, your enemies, footstool, under and
+  your feet retain their own positions; men before my right has its
+  locative value here. Verse 14 retains behold separately from the
+  negative, all and are they. Spirits is plural; of service and in
+  service retain their distinct words. Who are sent, for the sake of,
+  those, who are prepared, to inherit and life remain separate.
 
 Source checks for Hebrews 2:
 
