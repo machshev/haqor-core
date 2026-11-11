@@ -9203,13 +9203,74 @@ Source checks for 2 Timothy 2:
 
 Source checks for 2 Timothy 3:
 
-- 3:2 keeps the negation/persuasion sequence separate from the following denier-of-grace phrase.
-- 3:6 renders the participle as creeping house to house, captivating women buried in sins and led by diverse lusts.
-- 3:7 retains always learning but never being able to come to knowledge of the truth.
-- 3:9 retains the advance/foolishness/known comparison and source connective sequence.
-- 3:14 renders the knowing-that clause and the from-whom learned clause.
-- 3:15 preserves childhood, holy Scriptures, learning, wisdom, salvation, faith, and Jesus Messiah roles.
-- 3:16-17 preserves Spirit-written Scripture's instructional uses and the man of God as perfect and complete for every good work.
+- The shared-span review checks all 17 verses and 207 source words,
+  reducing 62 shared spans to four documented exceptions. Final source
+  ownership and continuous English are independently reviewed against
+  the frozen chapter hash. Ordinary clauses, nouns and modifiers,
+  negatives, auxiliaries and independent pronouns retain individual
+  owners; separated English spans may repeat their actual source owner.
+- Verse 1 preserves the second-person perfect auxiliary before the
+  knowing participle as an instruction to be knowing this. The relative
+  prefix, last days, hard times and future coming stay separate.
+- Verses 2–4 retain people as the subject of will be, both loving
+  predicates and their objects, boastfulness, pride and blasphemers.
+  Their own people, not and being persuaded remain separate from the
+  following deniers of grace. The eating-pieces accusation idiom is
+  minimal; enslavement, singular lust, fierceness, hating and plural
+  good things remain separate. The list retains traitors, haste, pride
+  and the comparative preference for pleasures over loving God. The
+  love noun in that comparison is rendered by the English gerund loving;
+  God retains its separate owner.
+- Verse 5 retains the minimal existential/dative have, form, fear and
+  God separately. Being far, from and his power retain their actual
+  source words. The relative head, like this and explicit copula are
+  distinct from the command to reject them from yourself.
+- Verses 6–7 retain for, among them, are, those, creeping and captivating.
+  Only the distributive movement through houses is shared in from house
+  to house. The women are buried in sins and led by various lusts, with
+  the passive predicates and plural adjective separately owned. The
+  feminine learning participle continues to describe the women. The
+  relative prefix owns who; always, and, ever, not, ability, coming,
+  knowledge and truth retain their own source positions.
+- Verse 8 keeps both correlative expressions, Jannes and Jambres, their
+  past standing against Moses and these people's present standing against
+  truth. The corrupted mind is singular with a plural possessor; the
+  plural rejected predicate describes the people rather than their mind.
+- Verse 9 distinguishes future not going forward from the passive
+  participle and explicit feminine copula in their foolishness is
+  becoming known. For, to everyone, just as, theirs, also and the final
+  past became known remain independently owned.
+- Verses 10–11 retain past came, every separate after/and after relation,
+  and each first-person possessive: teaching, plural ways, will, faith,
+  long-suffering, love, endurance, singular persecution and plural
+  sufferings. Only the long-of-my-spirit expression is shared. The
+  explicit you, knowing, two enduring predicates and all three places
+  stay separate. The deliverer is my Lord, preserving the actual suffix,
+  and the deliverance has its first-person object.
+- Verse 12 retains and, yet, all those, desiring, living, fear, God,
+  Jesus Messiah and the passive persecution predicate. Verse 13 keeps
+  evil people, deceivers, future adding, to and their wickedness separate.
+  Its Peal participle is go astray; the following Aphel masculine-plural
+  participle can be active or passive in form (Muraoka, section 64,
+  third-yodh paradigm, p. 108). The context of deceivers supports the
+  active causative and mislead here. [CAL's t-ay entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%2B%28y+V)
+  distinguishes Peal wandering/erring from Aphel leading astray. The
+  passive SEDRA annotation is not silently changed or claimed impossible;
+  the English records a contextual choice between the ambiguous forms.
+- Verses 14–15 preserve the remaining command, learned and were assured
+  perfects, explicit present knowing, from whom and learned again. The
+  following and that remains linked to the knowing clause. Your childhood
+  keeps its second-person suffix; have learned renders the resultative
+  learned participle with its explicit you. Holy and Scriptures are
+  separate; the plural ability predicate refers to those Scriptures,
+  making you wise retains its object, and life, faith, Jesus and Messiah
+  retain their own source words. The source's faith-of-Jesus genitive
+  retains its wording and allows the relation to be read in context.
+- Verses 16–17 retain All/Scripture, the relative/by the Spirit word,
+  the explicit passive perfect was written, the separate copula and
+  profitable adjective, and each instructional use with its conjunction.
+  Righteousness has its own source word. The purpose auxiliary, man,
+  God, perfect, complete, and, for every, good and work remain separate.
 
 Source checks for 2 Timothy 4:
 
