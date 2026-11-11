@@ -7543,45 +7543,67 @@ Source checks for Philippians 2:
 
 Source checks for Philippians 3:
 
-- Verses 1–3 retain my brothers, our Lord, the repeated same-things
-  construction, writing without weariness, the warning for the recipients,
-  all three beware commands, mutilation of flesh, circumcision, service
-  of God in spirit, glorying in Jesus Messiah, and no confidence in flesh.
-- Verses 4–6 preserve the speaker's own flesh-confidence, the causal
-  "for" and conditional comparison, eighth-day circumcision, Israel,
-  Benjamin, Hebrew ancestry, law and Pharisee identity, zeal, persecution
-  of the ecclesia, and blamelessness. The ancestry list continues the
-  comparison sentence. Concessive bare kad is an attested construction;
+- All 21 verses were checked against the written forms, complete morphology,
+  every full gloss alternative and Murdock, including every original shared
+  span, final single-source span and repeated source link. The final running
+  English was read separately after the mappings.
+- Verse 1's henen kad henen is the identity construction, "the same things,"
+  rather than a temporal clause or an independently lexical "again."
+  [Payne Smith under kad](https://sedra.bethmardutho.org/lexeme/get/1468)
+  explicitly records identity when kad stands between two pronouns.
+  The writing, recipients, negation, wearisome predicate, beneficiary and
+  warning remain separately linked.
+- Verses 2–6 keep all three beware commands, flesh-mutilation, circumcision,
+  serving God in spirit and confidence in flesh. The repeated li in verse 4
+  identifies one beneficiary; the existential and past auxiliary remain
+  separately linked. The comparison says the speaker has more confidence
+  than the other person, and continues into the ancestry and status list.
   [Francois section 11.3(c)](https://markfrancois.wordpress.com/wp-content/uploads/2023/02/classical-syriac-grammar-week-11.pdf)
-  illustrates it with John 4:2.
-- Verses 7–9 retain the gain/loss reckoning, Jesus Messiah my Lord,
-  surpassing knowledge, loss of everything, refuse, gaining the Messiah,
-  being found in him, and the contrasted law/faith righteousness sources
-  with righteousness from God.
-- Verses 10–11 keep the explicit Jesus name, resurrection power,
-  participation in sufferings, conformity to his death, and the
-  conditional possibility of attaining resurrection. "From among the
-  dead" uses the attested prepositional sense of beth, recorded by
-  [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=byt+p), rather
-  than imposing a physical house on the expression.
-- Verses 12–14 preserve not-yet attainment and perfection, running,
-  taking hold, Jesus Messiah's taking hold of the speaker, what is behind
-  and ahead, the mark, victory, God's calling from above, and Jesus
-  Messiah. The fronted "one thing" remains with "I know" after the
-  postpositive particle, and the forget/stretch/run sequence forms
-  coherent English.
-- Verses 15–17 retain maturity, the conditional different way of thinking,
-  God's revelation to the recipients, what has been attained, both one
-  path and one accord, imitation, observing those who walk thus, and
-  the pattern seen in us.
-- Verses 18–19 preserve the many walkers, repeated prior telling,
-  present weeping, enemies of the Messiah's cross, destruction, belly,
-  the contrasted glory/shame, and earthly thoughts with the actual
-  possessive relations.
-- Verses 20–21 render the source noun as "our own service," preserving
-  heaven, expectation from there, the life-giver and our Lord Jesus
-  Messiah. Transformation retains our humiliation-body, his glory-body,
-  likeness, great power, and subjection of all things to himself.
+  illustrates concessive bare kad with John 4:2. Verse 5 has eight days,
+  cardinal and plural, and no added conjunction before law. Verse 6's
+  d-la reshyan means "without blame"; the contextual gloss "blameless"
+  already includes the negation and must not be negated again.
+- Verses 7–9 retain the gain/loss contrast, knowledge of Jesus Messiah my
+  Lord, loss of everything, refuse and gaining Messiah. The
+  greatness, possessors, relative heads and proleptic suffixes were checked
+  individually. Verse 9's masculine "in him" refers to Messiah; the
+  contrasted sources are law and faith of Messiah, with righteousness
+  from God. The knowledge suffix in verse 8 anticipates the explicit Jesus
+  name and does not introduce another person.
+- Verse 10's feminine d-bah is "so that by it," referring to the preceding
+  feminine righteousness/faith expression; it does not replace the explicit
+  Jesus object with a masculine pronoun. Resurrection power, sharing in
+  sufferings and conformity to his death remain distinct, with each actual
+  conjunction. Verse 11 retains "if perhaps," ability and attainment.
+  "From among the dead" uses the attested prepositional sense of beth,
+  recorded by [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=byt+p).
+- Verse 12's two men kadu expressions are the compound adverb "already,"
+  recorded by [Payne Smith](https://sedra.bethmardutho.org/lexeme/get/3481).
+  Only each adverb is shared, with negation, existential, taking and passive
+  perfection separately linked. The running and taking-hold clauses retain
+  their subjects and objects. Verse 13's postparticipial ana is copular,
+  rather than a second independent "I"; the following knowing, forgetting
+  and stretching clauses each retain their actual subjects. Verse 14 keeps
+  receiving victory and the calling which is above, of God in Jesus Messiah.
+- Verses 15–17 retain the third-person exhortation about mature people,
+  the conditional different thinking, God's revelation, the already attained
+  position, one path and one accord. The command to imitate and observe
+  retains its auxiliary and "thus." Verse 17's vocalised participle says
+  "you see," with its second-person plural enclitic subject, and "in us."
+- Verses 18–19 keep the relative marker and resumptive suffix together only
+  in "whom," with "about," "many," "times," telling and recipients separate.
+  The weeping and saying clauses have their own first-person subjects.
+  The cross suffix anticipates Messiah. Verse 19 says their glory is their
+  shame: the initial beth of the shame noun belongs to its root, rather
+  than supplying an "in" preposition. Its last clause has singular "mind,"
+  with a feminine copula, rather than plural thoughts or a plural copula.
+- Verses 20–21 retain "our own service," heaven and expectation of the
+  life-giver, our Lord Jesus Messiah. The awaiting verb's first-person plural
+  enclitic supplies "we," rather than an extra "our" before life-giver.
+  The transformation retains our humiliation-body and his glory-body,
+  likeness and his great power. "By which" resumes power, while "to him"
+  remains distinct; all things "have been made subject" uses the source's
+  passive perfect, rather than supplying an active subjection verb.
 
 Source checks for Philippians 4:
 

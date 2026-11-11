@@ -25851,6 +25851,78 @@
           "reason": "Li10 before nehwe11 is repeated as li12, identifying the same first-person singular beneficiary of relief13. One English for me resolves the anticipatory and resumptive dative, rather than adding a second recipient or a new self noun. Only for me combines10,12; there may be stays separately at11 and relief at13. So that and also remain separately at9, and the sending, learning and recipients clauses stay distinct."
         }
       ]
+    },
+    "50:3": {
+      "sha256": "af641726f0c726e934a769a9571471e991ca3dbb7679232439dcd55ac411afa1",
+      "original_shared_spans": 77,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 1,
+          "english": "the same things",
+          "positions": [
+            4,
+            5,
+            6
+          ],
+          "reason": "Henen4 kad5 henen6 is the identity construction: Payne Smith explicitly states that kad between two pronouns signifies identity, the same. The two feminine plural pronouns identify the same things rather than introducing a temporal clause or a second object. Only the same things combines4,5,6; the writing predicate7, its recipients8, negation9, wearisome predicate10, beneficiary11 and warning clause12-14 remain separate."
+        },
+        {
+          "verse": 4,
+          "english": "for me",
+          "positions": [
+            1,
+            4
+          ],
+          "reason": "Li1 preceding ith2 hwa3 is resumed by li4, the same first-person singular beneficiary of confidence5. One English for me resolves these anticipatory and resumptive datives without adding a second beneficiary or a reflexive self. There2 and was3 stay separate, as do confidence5, also6, in7, flesh8 and the subsequent conditional comparison."
+        },
+        {
+          "verse": 8,
+          "english": "whom",
+          "positions": [
+            12,
+            13
+          ],
+          "reason": "Haw12 introduces the masculine singular relative antecedent resumed by d-metulatheh13, whose relative dalath and third-person masculine suffix refer to the same Messiah. One English whom resolves the deictic-relative head and its resumptive suffix. For remains separately at13; the losing predicate15 and everything14 are not included. The earlier proleptic knowledge suffix8 is resolved by the explicit Jesus9, not an additional person."
+        },
+        {
+          "verse": 12,
+          "english": "already",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Men2 kadu3 is the attested compound adverb already: Payne Smith records men kadu as already, for some time, distinct from bare kadu, it suffices. Only already combines2,3; not0, it is/that1, and I have/taken4 remain separate. This is not a shared negative clause or an independent source-of-motion phrase."
+        },
+        {
+          "verse": 12,
+          "english": "already",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Men6 kadu7 repeats the attested compound adverb already (Payne Smith, men kadu, already/for some time). Only already combines6,7. Or5 remains separate and the first-person passive perfected predicate8 remains separate; the adverb does not absorb negation or the clause."
+        },
+        {
+          "verse": 18,
+          "english": "whom",
+          "positions": [
+            6,
+            10
+          ],
+          "reason": "The relative dalath prefixed to zabnin6 introduces the relative clause whose person is resumed by the third-person plural suffix of alayhun10. One English whom resolves that relative marker and resumptive person; about stays at10, times stays at6, many at7, I have told at8 and you at9. Those5 stays a separate deictic head, and neither the time expression nor the telling clause is combined."
+        },
+        {
+          "verse": 21,
+          "english": "which",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Haw11 is the masculine singular deictic relative head resumed by d-beh12, whose relative dalath and masculine singular suffix refer to power9. One English which resolves that head and resumptive suffix; by stays separately at12. It introduces neither a second human actor nor another in him adjunct. All things13, the passive perfect have been made subject14, and to him15 stay separate."
+        }
+      ]
     }
   }
 }
