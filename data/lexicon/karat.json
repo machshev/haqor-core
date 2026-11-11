@@ -1,0 +1,806 @@
+{
+  "id": "karat",
+  "root": "כרת",
+  "status": "draft",
+  "updated": "2026-11-11",
+  "tags": [
+    "cutting",
+    "covenant",
+    "judgment",
+    "death",
+    "divorce"
+  ],
+  "gloss": "cut off, cut down; cut (a covenant)",
+  "summary": "כָּרַת is to cut through and sever: to cut down a tree or an Asherah, cut off a head or the corner of a robe, and to “cut a covenant” (כָּרַת בְּרִית), the cutting of the beasts that a covenant was made over (Gen 15; Jer 34:18). Passive and causative, it is to be cut off or to cut off: a soul cut off from its people for breaking covenant, as in Lev 23:29; nations, names and remembrance cut off; and, with “not”, a line that will never fail. Daniel says the Messiah will be cut off (Dan 9:26). כְּרִיתוּת is the cutting off of a marriage, the writ of divorce. Akkadian karātu, Punic and Moabite krt also mean “cut off, cut”.",
+  "words": [
+    {
+      "lemma": "כָּרַת",
+      "pos": "verb",
+      "gloss": "cut off, cut down; cut (a covenant)",
+      "bdb": [
+        "k.dh.aa"
+      ],
+      "cognate_ids": [
+        "akk-karatu",
+        "akk-kurrutu",
+        "phn-krt",
+        "moab-krt"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cut off, cut down; cut a covenant",
+          "senses": [
+            {
+              "id": "cut-off",
+              "gloss": "cut off, cut down",
+              "definition": "Sever with a blade: fell a tree or an Asherah, cut off a head, a branch, a cluster, the corner of a robe, a foreskin.",
+              "evidence": [
+                {
+                  "ref": "Deu.20.19",
+                  "role": "defining",
+                  "note": "You shall not cut down the trees of a besieged city, for you eat from them."
+                },
+                {
+                  "ref": "1Sa.24.5",
+                  "role": "defining",
+                  "note": "David secretly cut off the corner of Saul's robe."
+                },
+                {
+                  "ref": "1Sa.17.51",
+                  "role": "defining",
+                  "note": "David cut off Goliath's head with his own sword."
+                },
+                {
+                  "ref": "Exo.34.13",
+                  "note": "Break their pillars and cut down their Asherim."
+                },
+                {
+                  "ref": "Jdg.6.25",
+                  "to": "Jdg.6.26"
+                },
+                {
+                  "ref": "2Ki.18.4"
+                },
+                {
+                  "ref": "Exo.4.25",
+                  "note": "Zipporah cut off her son's foreskin."
+                },
+                {
+                  "ref": "Num.13.23",
+                  "note": "They cut down a branch with one cluster of grapes."
+                },
+                {
+                  "ref": "1Ki.5.20",
+                  "note": "Cut cedars for me from Lebanon."
+                },
+                {
+                  "ref": "Isa.44.14"
+                },
+                {
+                  "ref": "Jer.10.3",
+                  "note": "A tree from the forest is cut down and shaped into an idol."
+                },
+                {
+                  "ref": "2Sa.10.4",
+                  "note": "Hanun cut off David's servants' garments in the middle."
+                }
+              ]
+            },
+            {
+              "id": "cut-covenant",
+              "gloss": "cut (make) a covenant",
+              "definition": "With בְּרִית, to make a covenant; the covenant was cut over beasts cut in two, between whose parts the parties passed. Used of Yahweh's covenants with Abraham, with Israel at Sinai, with David, and of the new covenant; and of agreements between men.",
+              "evidence": [
+                {
+                  "ref": "Gen.15.18",
+                  "role": "defining",
+                  "note": "On that day Yahweh cut a covenant with Abram, after the torch passed between the pieces (v. 17)."
+                },
+                {
+                  "ref": "Jer.34.18",
+                  "role": "defining",
+                  "note": "The men who transgressed my covenant, which they cut before me, the calf they cut in two and passed between its parts."
+                },
+                {
+                  "ref": "Psa.50.5",
+                  "role": "defining",
+                  "note": "Gather to me my faithful ones, who cut my covenant over sacrifice."
+                },
+                {
+                  "ref": "Exo.24.8",
+                  "note": "The blood of the covenant which Yahweh has cut with you."
+                },
+                {
+                  "ref": "Deu.5.2",
+                  "to": "Deu.5.3",
+                  "note": "Yahweh our God cut a covenant with us at Horeb."
+                },
+                {
+                  "ref": "Jer.31.31",
+                  "to": "Jer.31.33",
+                  "note": "I will cut a new covenant with the house of Israel and the house of Judah."
+                },
+                {
+                  "ref": "Isa.55.3",
+                  "note": "I will cut an everlasting covenant with you, the sure mercies of David."
+                },
+                {
+                  "ref": "Psa.89.4",
+                  "note": "I have cut a covenant with my chosen; I have sworn to David my servant."
+                },
+                {
+                  "ref": "Ezk.37.26",
+                  "note": "I will cut a covenant of peace with them."
+                },
+                {
+                  "ref": "Gen.21.27",
+                  "note": "Abraham and Abimelech cut a covenant."
+                },
+                {
+                  "ref": "1Sa.18.3",
+                  "note": "Jonathan and David cut a covenant."
+                },
+                {
+                  "ref": "2Ki.23.3",
+                  "note": "Josiah cut the covenant before Yahweh."
+                },
+                {
+                  "ref": "Hag.2.5",
+                  "note": "The word that I cut with you when you came out of Egypt."
+                },
+                {
+                  "ref": "Neh.10.1",
+                  "note": "We cut a firm agreement (אֲמָנָה) and write it."
+                },
+                {
+                  "ref": "Isa.28.15",
+                  "note": "“We have cut a covenant with death.”"
+                },
+                {
+                  "ref": "Exo.23.32",
+                  "note": "You shall cut no covenant with them nor with their gods."
+                }
+              ]
+            },
+            {
+              "id": "hewn",
+              "gloss": "cut, hewn (passive participle)",
+              "definition": "The passive participle: what has been cut; כְּרֻתוֹת, beams of cut cedar in Solomon's buildings; and of a beast whose testicles are cut.",
+              "evidence": [
+                {
+                  "ref": "1Ki.6.36",
+                  "role": "defining",
+                  "note": "Three rows of cut stone and a row of cut beams (כְּרֻתֹת) of cedar."
+                },
+                {
+                  "ref": "1Ki.7.2",
+                  "note": "Cut beams of cedar on the pillars."
+                },
+                {
+                  "ref": "1Ki.7.12"
+                },
+                {
+                  "ref": "Lev.22.24",
+                  "note": "Bruised, crushed, torn or cut (כָּרוּת) you shall not offer."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be cut off, be cut down; fail",
+          "senses": [
+            {
+              "id": "cut-off-from-people",
+              "gloss": "be cut off from one's people",
+              "definition": "The sentence on one who breaks the covenant or despises Yahweh's word: that soul is cut off from its people, from Israel, from before Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Gen.17.14",
+                  "role": "defining",
+                  "note": "The uncircumcised male shall be cut off from his people: he has broken my covenant."
+                },
+                {
+                  "ref": "Num.15.31",
+                  "role": "defining",
+                  "note": "He despised the word of Yahweh; that soul shall be utterly cut off, his iniquity on him."
+                },
+                {
+                  "ref": "Lev.23.29",
+                  "role": "defining",
+                  "note": "Any soul that does not afflict itself on that day shall be cut off from its people."
+                },
+                {
+                  "ref": "Exo.12.15",
+                  "note": "Whoever eats leaven in the seven days, that soul shall be cut off from Israel."
+                },
+                {
+                  "ref": "Exo.12.19"
+                },
+                {
+                  "ref": "Exo.31.14",
+                  "note": "Whoever does work on the sabbath shall be cut off from among his people."
+                },
+                {
+                  "ref": "Lev.7.20"
+                },
+                {
+                  "ref": "Lev.17.4"
+                },
+                {
+                  "ref": "Lev.22.3",
+                  "note": "That soul shall be cut off from before me."
+                },
+                {
+                  "ref": "Num.9.13",
+                  "note": "Whoever does not keep the פֶּסַח shall be cut off."
+                },
+                {
+                  "ref": "Num.19.20"
+                }
+              ]
+            },
+            {
+              "id": "perish",
+              "gloss": "be cut off, perish",
+              "definition": "To be destroyed and gone: all flesh by a flood, the land by famine, the wicked from the land the meek inherit, the Messiah.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.9",
+                  "role": "defining",
+                  "note": "Evildoers will be cut off, but those who wait for Yahweh will inherit the land."
+                },
+                {
+                  "ref": "Psa.37.22",
+                  "role": "defining",
+                  "note": "Those blessed by him inherit the land; those cursed by him are cut off."
+                },
+                {
+                  "ref": "Gen.9.11",
+                  "note": "Never again will all flesh be cut off by the waters of a flood."
+                },
+                {
+                  "ref": "Gen.41.36",
+                  "note": "That the land may not be cut off by the famine."
+                },
+                {
+                  "ref": "Psa.37.28"
+                },
+                {
+                  "ref": "Psa.37.34"
+                },
+                {
+                  "ref": "Psa.37.38"
+                },
+                {
+                  "ref": "Pro.2.22",
+                  "note": "The wicked will be cut off from the land."
+                },
+                {
+                  "ref": "Dan.9.26",
+                  "note": "After the sixty-two sevens, Messiah will be cut off and have nothing."
+                },
+                {
+                  "ref": "Job.14.7",
+                  "note": "There is hope for a tree: if it is cut down, it will sprout again."
+                },
+                {
+                  "ref": "Jos.3.13",
+                  "note": "The waters of the Jordan will be cut off and stand in a heap."
+                }
+              ]
+            },
+            {
+              "id": "not-cut-off",
+              "gloss": "(not) be cut off: never fail",
+              "definition": "Negated, a promise that something will not fail: a man on David's throne, a Levite before Yahweh, a name, a hope.",
+              "evidence": [
+                {
+                  "ref": "1Ki.2.4",
+                  "role": "defining",
+                  "note": "There shall not be cut off to you a man on the throne of Israel."
+                },
+                {
+                  "ref": "Jer.33.17",
+                  "to": "Jer.33.18",
+                  "role": "defining",
+                  "note": "David shall never lack a man on the throne, nor the Levitical priests a man before me."
+                },
+                {
+                  "ref": "Isa.56.5",
+                  "note": "I will give them an everlasting name that will not be cut off."
+                },
+                {
+                  "ref": "Pro.23.18",
+                  "note": "There is a future, and your hope will not be cut off."
+                },
+                {
+                  "ref": "Rut.4.10",
+                  "note": "That the name of the dead not be cut off from among his brothers."
+                },
+                {
+                  "ref": "Isa.55.13",
+                  "note": "An everlasting sign that will not be cut off."
+                },
+                {
+                  "ref": "1Ki.9.5"
+                },
+                {
+                  "ref": "Jer.35.19"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cut off, destroy",
+          "senses": [
+            {
+              "id": "cause-cut-off",
+              "gloss": "cut off, destroy",
+              "definition": "To make an end of people, nations, a house, names and idols, mostly with Yahweh as subject; also to take away kindness.",
+              "evidence": [
+                {
+                  "ref": "Lev.17.10",
+                  "role": "defining",
+                  "note": "I will set my face against the soul that eats blood and cut him off from among his people."
+                },
+                {
+                  "ref": "Lev.20.3",
+                  "note": "I will cut him off from among his people, because he has given of his seed to Molech."
+                },
+                {
+                  "ref": "Deu.12.29",
+                  "role": "defining",
+                  "note": "When Yahweh your God cuts off the nations before you."
+                },
+                {
+                  "ref": "1Ki.14.10",
+                  "note": "I will cut off from Jeroboam every male."
+                },
+                {
+                  "ref": "Zec.13.2",
+                  "role": "defining",
+                  "note": "I will cut off the names of the idols from the land, and they will be remembered no more."
+                },
+                {
+                  "ref": "Psa.34.17",
+                  "note": "The face of Yahweh is against evildoers, to cut off their remembrance from the earth."
+                },
+                {
+                  "ref": "Psa.12.4",
+                  "note": "May Yahweh cut off all flattering lips."
+                },
+                {
+                  "ref": "Psa.101.8"
+                },
+                {
+                  "ref": "1Sa.20.15",
+                  "note": "Do not cut off your kindness from my house for ever."
+                },
+                {
+                  "ref": "2Sa.7.9",
+                  "note": "I have cut off all your enemies from before you."
+                },
+                {
+                  "ref": "Zep.1.3",
+                  "to": "Zep.1.4"
+                },
+                {
+                  "ref": "Exo.8.5",
+                  "note": "To cut off the frogs from you and your houses."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be cut (down)",
+          "senses": [
+            {
+              "gloss": "be cut down, be cut",
+              "definition": "Passive of the qal: an Asherah cut down, a navel cord cut.",
+              "evidence": [
+                {
+                  "ref": "Jdg.6.28",
+                  "role": "defining",
+                  "note": "The Asherah beside the altar was cut down."
+                },
+                {
+                  "ref": "Ezk.16.4",
+                  "role": "defining",
+                  "note": "On the day you were born your navel cord was not cut."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be cut off",
+          "senses": [
+            {
+              "gloss": "be cut off",
+              "definition": "Passive of the hiphil.",
+              "evidence": [
+                {
+                  "ref": "Jol.1.9",
+                  "role": "defining",
+                  "note": "Grain offering and drink offering are cut off from the house of Yahweh."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "διατίθημι",
+          "gloss": "make (a covenant), appoint",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.15.18, כָּרַת → διέθετο (with διαθήκην for בְּרִית)"
+            },
+            {
+              "ref": "Heb.8.10",
+              "note": "Jer 31:33 quoted: “the covenant that I will make with the house of Israel”."
+            },
+            {
+              "ref": "Heb.10.16"
+            },
+            {
+              "ref": "Act.3.25",
+              "note": "The covenant God made with your fathers, saying to Abraham…"
+            },
+            {
+              "ref": "Luk.22.29"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐξολεθρεύω",
+          "gloss": "utterly destroy, cut off",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.29, כָּרַת → ἐξολεθρευθήσεται (ἐκ τοῦ λαοῦ αὐτῆς); Gen.17.14, the same"
+            },
+            {
+              "ref": "Act.3.23",
+              "note": "Every soul that does not hear that prophet will be utterly destroyed from among the people: Deu 18:19 told in the words of Lev 23:29."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "יָרַשׁ",
+            "note": "Cut off from the land, or inherit it.",
+            "evidence": [
+              {
+                "ref": "Psa.37.9"
+              },
+              {
+                "ref": "Psa.37.22"
+              },
+              {
+                "ref": "Psa.37.34"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כָּרַת בְּרִית",
+            "gloss": "cut a covenant: make a covenant",
+            "evidence": [
+              {
+                "ref": "Gen.15.18"
+              },
+              {
+                "ref": "Jer.31.31"
+              },
+              {
+                "ref": "Jer.34.18"
+              }
+            ]
+          },
+          {
+            "phrase": "וְנִכְרְתָה הַנֶּפֶשׁ הַהִוא מֵעַמֶּיהָ",
+            "gloss": "that soul shall be cut off from its people",
+            "evidence": [
+              {
+                "ref": "Gen.17.14"
+              },
+              {
+                "ref": "Lev.23.29"
+              },
+              {
+                "ref": "Exo.31.14"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא יִכָּרֵת לְךָ אִישׁ",
+            "gloss": "you shall never lack a man (on the throne)",
+            "evidence": [
+              {
+                "ref": "1Ki.2.4"
+              },
+              {
+                "ref": "Jer.33.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כְּרִיתוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "divorce, writ of divorce",
+      "bdb": [
+        "k.dh.ab"
+      ],
+      "summary": "A noun of the verb: the cutting off of a marriage, always in “a writ (סֵפֶר) of divorce”. No cognate with this meaning has been found; its tie to the root rests on the verb's sense of severing.",
+      "senses": [
+        {
+          "gloss": "divorce, writ of divorce",
+          "definition": "The written cutting-off a husband gave into his wife's hand when he sent her from his house; Yahweh speaks of Israel's divorce in the same terms.",
+          "evidence": [
+            {
+              "ref": "Deu.24.1",
+              "role": "defining",
+              "note": "He writes her a writ of divorce, puts it in her hand, and sends her out of his house."
+            },
+            {
+              "ref": "Deu.24.3"
+            },
+            {
+              "ref": "Jer.3.8",
+              "role": "defining",
+              "note": "I sent faithless Israel away and gave her a writ of her divorce; yet her sister Judah did not fear."
+            },
+            {
+              "ref": "Isa.50.1",
+              "note": "“Where is your mother's writ of divorce with which I sent her away? For your transgressions your mother was sent away.”"
+            }
+          ],
+          "kin": [
+            "cut-off"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀποστάσιον",
+          "gloss": "divorce, writ of divorce",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.24.1, כְּרִיתוּת → ἀποστασίου; also Deu.24.3, Isa.50.1, Jer.3.8"
+            },
+            {
+              "ref": "Mat.5.31",
+              "note": "“Whoever sends away his wife, let him give her a writ of divorce” (Deu 24:1)."
+            },
+            {
+              "ref": "Mat.19.7",
+              "note": "“Why then did Moses command to give a writ of divorce?”"
+            },
+            {
+              "ref": "Mrk.10.4"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "סֵפֶר כְּרִיתֻת",
+            "gloss": "writ of divorce",
+            "evidence": [
+              {
+                "ref": "Deu.24.1"
+              },
+              {
+                "ref": "Isa.50.1"
+              },
+              {
+                "ref": "Jer.3.8"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-karatu",
+      "lang": "akk",
+      "form": "karātu",
+      "translit": "karātu (D kurrutu)",
+      "gloss": "cut off; slice; strike",
+      "relation": "cognate",
+      "note": "Neo-Assyrian; Oracc's senses are “cut off” and “strike”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000006940, karātu [slice] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001010 krt [cut] V, AKK004926 karātu [slice]"
+        }
+      ]
+    },
+    {
+      "id": "akk-kurrutu",
+      "lang": "akk",
+      "form": "kurrutu",
+      "translit": "kurrutu",
+      "gloss": "cut off (adjective)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000135150, kurrutu [cut off] AJ"
+        }
+      ]
+    },
+    {
+      "id": "phn-krt",
+      "lang": "phn",
+      "form": "𐤊𐤓𐤕",
+      "translit": "krt (yiphil)",
+      "gloss": "cut off, kill, execute",
+      "relation": "cognate",
+      "note": "Neo-Punic, Mactar B I line 2: “he hanged [the culprits], he executed (hykrt) the worthless men”: the causative used of putting men to death, as the Hebrew hiphil is.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 243–244, K-R-T I"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001010 krt [cut] V, PUN000955 krt [cut]"
+        }
+      ]
+    },
+    {
+      "id": "moab-krt",
+      "lang": "sem",
+      "form": "כרת",
+      "translit": "krt (Moabite)",
+      "gloss": "cut (out)",
+      "relation": "cognate",
+      "note": "Mesha's stele: ואנך כרתי המכרתת לקרחה באסרי ישראל, “and I cut out the cutting for Qrḥh by means of the prisoners of Israel”, with a noun מכרתת from the root.",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, line 25",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script"
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, line 25",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "cutting-a-covenant",
+      "statement": "Yahweh told Abram to bring a heifer, a goat and a ram; Abram cut them in two and laid each half opposite the other, and after sunset a smoking oven and a flaming torch passed between the pieces: “on that day Yahweh cut a covenant with Abram” (Gen 15:9–10, 17–18). Only the torch passed between them; Abram was in a deep sleep (Gen 15:12). Jeremiah shows what passing between the parts meant: the men who cut the calf in two and passed between its parts, and then broke the covenant, were given to death, their bodies food for the birds (Jer 34:18–20). At Sinai the covenant was made with blood, “the blood of the covenant which Yahweh has cut with you” (Exo 24:8), and Yahweh's faithful are “those who cut my covenant over sacrifice” (Psa 50:5). Yahweh promised to cut a new covenant, writing his law on their hearts and remembering their sin no more (Jer 31:31–34); Hebrews quotes it of the covenant Christ mediates (Heb 8:6–13), Jesus said over the cup, “this cup is the new covenant in my blood” (Luk 22:20), and Hebrews says a covenant takes force over the dead (Heb 9:15–17). In scripture a covenant is cut over a death.",
+      "evidence": [
+        {
+          "ref": "Gen.15.9",
+          "to": "Gen.15.10"
+        },
+        {
+          "ref": "Gen.15.12"
+        },
+        {
+          "ref": "Gen.15.17",
+          "to": "Gen.15.18"
+        },
+        {
+          "ref": "Jer.34.18",
+          "to": "Jer.34.20"
+        },
+        {
+          "ref": "Exo.24.8"
+        },
+        {
+          "ref": "Psa.50.5"
+        },
+        {
+          "ref": "Jer.31.31",
+          "to": "Jer.31.34"
+        },
+        {
+          "ref": "Heb.8.6",
+          "to": "Heb.8.13"
+        },
+        {
+          "ref": "Luk.22.20"
+        },
+        {
+          "ref": "Heb.9.15",
+          "to": "Heb.9.17"
+        }
+      ]
+    },
+    {
+      "topic": "messiah-cut-off",
+      "statement": "Daniel was told that after the sixty-two sevens “Messiah will be cut off (יִכָּרֵת) and will have nothing”, and that he would confirm a covenant with many for one seven and in the middle of it make sacrifice and offering cease (Dan 9:26–27). Isaiah says the servant “was cut off from the land of the living; for the transgression of my people the stroke was on him” (Isa 53:8); the verb there is גָּזַר, whose noun names the pieces (גְּזָרִים) the torch passed between in Gen 15:17. Philip read Isa 53:7–8 to the Ethiopian and from it preached Jesus (Act 8:32–35). Elsewhere to be cut off is the sentence on the one who breaks the covenant (Gen 17:14; Num 15:31); the Messiah is cut off, and it is for the transgression of others.",
+      "evidence": [
+        {
+          "ref": "Dan.9.26",
+          "to": "Dan.9.27"
+        },
+        {
+          "ref": "Isa.53.8"
+        },
+        {
+          "ref": "Gen.15.17"
+        },
+        {
+          "ref": "Act.8.32",
+          "to": "Act.8.35"
+        },
+        {
+          "ref": "Gen.17.14"
+        },
+        {
+          "ref": "Num.15.31"
+        }
+      ]
+    },
+    {
+      "topic": "cut-off-from-the-people",
+      "statement": "The law set this sentence on the one who would not keep the covenant's signs: the uncircumcised male, “he has broken my covenant” (Gen 17:14); whoever ate leaven in the days of מַצּוֹת (Exo 12:15), worked on the sabbath (Exo 31:14), or did not keep the פֶּסַח (Num 9:13); the one who despised Yahweh's word (Num 15:30–31); and on יוֹם הַכִּפֻּרִים, any soul that did not afflict itself “shall be cut off from its people” (Lev 23:29). Peter, speaking of the prophet like Moses, says that every soul that does not hear that prophet will be utterly destroyed from among the people (Act 3:22–23): Moses' words (Deu 18:15, 19) given in the words of Lev 23:29. To refuse the prophet Yahweh raised up, Jesus, is to be cut off from Yahweh's people.",
+      "evidence": [
+        {
+          "ref": "Gen.17.14"
+        },
+        {
+          "ref": "Exo.12.15"
+        },
+        {
+          "ref": "Exo.31.14"
+        },
+        {
+          "ref": "Num.9.13"
+        },
+        {
+          "ref": "Num.15.30",
+          "to": "Num.15.31"
+        },
+        {
+          "ref": "Lev.23.29"
+        },
+        {
+          "ref": "Act.3.22",
+          "to": "Act.3.23"
+        },
+        {
+          "ref": "Deu.18.15"
+        },
+        {
+          "ref": "Deu.18.19"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: כַּשְׂדִּים Chaldeans (k.dh.ah) and כֶּשֶׂד Kesed (k.dh.ag), names spelled with כשׂד, another root; כְּרֵתִי Kerethites (k.dh.ae), a gentilic name (perhaps 'Cretans'); כְּרִית Cherith (k.dh.ac), a place name. k.da.ae has no tokens (cross-reference to כְּרִיתוּת). כְּרֻתוֹת 'beams' (1Ki 6:36; 7:2, 12) has no BDB key of its own: it is the qal passive participle and is entered as a sense of the qal. Tool oddity: the brief's '(no stem): 439 tokens' group for k.dh.aa is filled with לְךָ ('to you') tokens matched by spelling (the beams are among them too); lexicon-support's use count for k.dh.aa is therefore inflated by those. No Biblical Aramaic word of the root; the Peshitta has no root כרת (SEDRA lists none): it renders 'cut off' with other roots (Act 3:23 'perish', אבד) and Heb 8:8 'make a new covenant' with גמר. No Arabic cognate: Lane's كرت is only 'a complete year'; Ge'ez ቆረጠ has q, not k, and was not entered. Akkadian karātu is from Oracc (Neo-Assyrian, 19 attestations) and Anderson–Moser only; not checked in CAD. Moabite krt is cited from Compston on Wikisource (line numbering per the Translation page; the square-script page's line markers run one line behind). Lead not followed: the Arslan Tash amulet (KAI 27) is read by some as krt ln ʾlt ʿlm, 'an eternal covenant is cut for us', a Phoenician parallel to כָּרַת בְּרִית; Krahmalkov does not list it under K-R-T and the text was not checked. Open: Dan 9:26 וְאֵין לוֹ is glossed 'and will have nothing'; its sense is disputed and the doctrine does not lean on it."
+}

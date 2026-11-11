@@ -1,0 +1,1733 @@
+{
+  "id": "rosh",
+  "root": "ראש",
+  "status": "draft",
+  "updated": "2026-11-11",
+  "tags": [
+    "body",
+    "head",
+    "leadership",
+    "first",
+    "beginning",
+    "offering",
+    "harvest"
+  ],
+  "gloss": "head; top; chief; first, beginning",
+  "summary": "ראש is the head: the head of a body, then whatever is at the top or the front of anything, the top of a mountain or a tower, the chief over a people or a house, the start of a month or a watch, the sum of a count, and the choicest of a kind. רִאשׁוֹן is what comes first in order or time, “the first month” of the feasts (Lev 23:5) or the former days, and Yahweh calls himself רִאשׁוֹן and אַחֲרוֹן, the first and the last (Isa 44:6). רֵאשִׁית is the beginning (Gen 1:1) and the first part of a thing, above all the first of the harvest brought to Yahweh, the sheaf of Lev 23:10. The New Testament calls Christ the head of the corner, the head of his body, and the firstfruits of those who sleep, and the Peshitta writes these with the same root, רִישָׁא and רִשִׁיתָא. Arabic raʾs, Ugaritic riš, Akkadian rēšu, Phoenician rʾš and Ge'ez rəʾs all mean “head”.",
+  "words": [
+    {
+      "lemma": "רֹאשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "head; top; chief; beginning; sum; choicest",
+      "bdb": [
+        "t.ad.aa"
+      ],
+      "cognate_ids": [
+        "ar-ras",
+        "akk-reshu",
+        "uga-ris",
+        "phn-rosh",
+        "gez-rees",
+        "arc-resh"
+      ],
+      "senses": [
+        {
+          "id": "head-of-body",
+          "gloss": "head",
+          "definition": "The head of a man or a beast: the part on which a hand is laid, oil poured, dust thrown, and which is lifted up or bowed down.",
+          "evidence": [
+            {
+              "ref": "Gen.48.14",
+              "role": "defining",
+              "note": "Israel puts his right hand on Ephraim's head and his left on Manasseh's."
+            },
+            {
+              "ref": "2Ki.4.19",
+              "role": "defining",
+              "note": "The boy cries to his father, “My head, my head!”"
+            },
+            {
+              "ref": "Gen.3.15",
+              "note": "He will strike your head, and you will strike his heel."
+            },
+            {
+              "ref": "Lev.1.4",
+              "note": "He lays his hand on the head of the burnt offering."
+            },
+            {
+              "ref": "Psa.23.5",
+              "note": "You anoint my head with oil."
+            },
+            {
+              "ref": "Jos.7.6",
+              "note": "They put dust on their heads."
+            },
+            {
+              "ref": "Psa.24.7",
+              "note": "“Lift up your heads, you gates.”"
+            },
+            {
+              "ref": "Num.6.5",
+              "note": "No razor comes on the Nazirite's head."
+            }
+          ]
+        },
+        {
+          "id": "top",
+          "gloss": "top, summit",
+          "definition": "The highest part of a thing: the top of a mountain, a tower, a ladder or a pillar.",
+          "evidence": [
+            {
+              "ref": "Gen.11.4",
+              "role": "defining",
+              "note": "A tower whose top is in the heavens."
+            },
+            {
+              "ref": "Gen.28.12",
+              "role": "defining",
+              "note": "A ladder set on the earth, its top reaching to heaven."
+            },
+            {
+              "ref": "Exo.19.20",
+              "role": "defining",
+              "note": "Yahweh came down on Mount Sinai, to the top of the mountain, and called Moses to the top of it."
+            },
+            {
+              "ref": "Gen.28.18",
+              "note": "Jacob poured oil on the top of the pillar."
+            },
+            {
+              "ref": "Deu.34.1",
+              "note": "Moses went up to the top of Pisgah."
+            },
+            {
+              "ref": "Isa.2.2",
+              "note": "The mountain of Yahweh's house established at the top of the mountains."
+            },
+            {
+              "ref": "1Ki.7.16",
+              "note": "The capitals on the tops of the pillars."
+            }
+          ]
+        },
+        {
+          "id": "chief",
+          "gloss": "head, chief, leader",
+          "definition": "One set over others: the head of a people, a tribe or a father's house, a chief priest; and a land or city that leads others. Its opposite is the tail.",
+          "evidence": [
+            {
+              "ref": "Exo.18.25",
+              "role": "defining",
+              "note": "Moses chose able men and made them heads over the people, rulers of thousands and of hundreds."
+            },
+            {
+              "ref": "Jdg.11.8",
+              "to": "Jdg.11.11",
+              "role": "defining",
+              "note": "The elders of Gilead ask Jephthah to be their head, and the people make him head and commander over them."
+            },
+            {
+              "ref": "Deu.28.13",
+              "role": "defining",
+              "note": "Yahweh will make you the head and not the tail."
+            },
+            {
+              "ref": "Isa.7.8",
+              "to": "Isa.7.9",
+              "role": "defining",
+              "note": "The head of Aram is Damascus, and the head of Damascus is Rezin."
+            },
+            {
+              "ref": "Num.1.4",
+              "note": "A man from each tribe, the head of his father's house."
+            },
+            {
+              "ref": "2Ki.25.18",
+              "note": "Seraiah the chief priest (כֹּהֵן הָרֹאשׁ)."
+            },
+            {
+              "ref": "2Sa.22.44",
+              "note": "You keep me as head of the nations."
+            },
+            {
+              "ref": "1Ch.29.11",
+              "note": "Yours is the kingdom, Yahweh, and you are exalted as head over all."
+            },
+            {
+              "ref": "Isa.9.13",
+              "to": "Isa.9.14",
+              "note": "Yahweh cuts off from Israel head and tail; the elder is the head, the prophet who teaches lies the tail."
+            }
+          ]
+        },
+        {
+          "id": "head-beginning",
+          "gloss": "beginning, first (of time)",
+          "definition": "The start of a span of time: the first of the months, the start of a night watch; and מֵרֹאשׁ, “from the beginning”.",
+          "evidence": [
+            {
+              "ref": "Exo.12.2",
+              "role": "defining",
+              "note": "“This month is to you the head of months; it is the first (רִאשׁוֹן) of the months of the year.”"
+            },
+            {
+              "ref": "Isa.40.21",
+              "role": "defining",
+              "note": "“Has it not been told you from the beginning (מֵרֹאשׁ)?”"
+            },
+            {
+              "ref": "Pro.8.23",
+              "role": "defining",
+              "note": "Wisdom set up from everlasting, from the beginning, before the earth was."
+            },
+            {
+              "ref": "Isa.41.4",
+              "note": "Calling the generations from the beginning (מֵרֹאשׁ)."
+            },
+            {
+              "ref": "Num.10.10",
+              "note": "On your appointed times and at the beginnings of your months (רָאשֵׁי חָדְשֵׁיכֶם) blow the trumpets."
+            },
+            {
+              "ref": "Num.28.11",
+              "note": "The offering at the beginnings of your months."
+            },
+            {
+              "ref": "Lam.2.19",
+              "note": "Cry out in the night, at the beginning of the watches."
+            },
+            {
+              "ref": "Ecc.3.11",
+              "note": "Man cannot find out the work God has done from the beginning to the end."
+            }
+          ]
+        },
+        {
+          "id": "sum",
+          "gloss": "sum, total",
+          "definition": "The whole of a count or of a thing taken together: to “lift the head” of the people is to number them.",
+          "evidence": [
+            {
+              "ref": "Exo.30.12",
+              "role": "defining",
+              "note": "When you take the sum (תִשָּׂא אֶת־רֹאשׁ) of the sons of Israel, by their numbering."
+            },
+            {
+              "ref": "Num.1.2",
+              "role": "defining",
+              "note": "Take the sum of all the congregation, by the number of names, every male by their heads."
+            },
+            {
+              "ref": "Psa.119.160",
+              "note": "The sum of your word is truth."
+            },
+            {
+              "ref": "Psa.139.17",
+              "note": "How great is the sum of them (your thoughts)."
+            },
+            {
+              "ref": "Num.31.26",
+              "note": "Take the sum of the plunder."
+            }
+          ]
+        },
+        {
+          "id": "choicest",
+          "gloss": "choicest, best",
+          "definition": "The finest of a kind, the head of its class.",
+          "evidence": [
+            {
+              "ref": "Exo.30.23",
+              "role": "defining",
+              "note": "Take the head spices (בְּשָׂמִים רֹאשׁ) for the holy anointing oil."
+            },
+            {
+              "ref": "Sng.4.14",
+              "note": "With all the head spices."
+            },
+            {
+              "ref": "Ezk.27.22",
+              "note": "Sheba traded the head of all spices."
+            },
+            {
+              "ref": "Psa.137.6",
+              "note": "If I do not set Jerusalem above the head of my joy."
+            }
+          ]
+        },
+        {
+          "id": "company",
+          "gloss": "company, band",
+          "definition": "A division of fighting men, each going out under its own head.",
+          "evidence": [
+            {
+              "ref": "Jdg.7.16",
+              "role": "defining",
+              "note": "Gideon divided the three hundred men into three heads (companies)."
+            },
+            {
+              "ref": "1Sa.11.11",
+              "note": "Saul set the people in three heads."
+            },
+            {
+              "ref": "Job.1.17",
+              "note": "The Chaldeans formed three heads."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κεφαλή",
+          "gloss": "head",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.118.22 (LXX 117:22), רֹאשׁ → κεφαλήν; Deu.28.13, רֹאשׁ → κεφαλή"
+            },
+            {
+              "ref": "Mat.21.42",
+              "note": "Jesus quotes Psa 118:22: the stone the builders rejected has become the head of the corner."
+            },
+            {
+              "ref": "Mrk.12.10"
+            },
+            {
+              "ref": "Luk.20.17"
+            },
+            {
+              "ref": "Act.4.11"
+            },
+            {
+              "ref": "1Pe.2.7"
+            },
+            {
+              "ref": "Eph.1.22"
+            },
+            {
+              "ref": "Eph.4.15"
+            },
+            {
+              "ref": "Col.1.18"
+            },
+            {
+              "ref": "1Co.11.3"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "זָנָב",
+            "note": "Head and tail: the one who leads and the one who follows.",
+            "evidence": [
+              {
+                "ref": "Deu.28.13"
+              },
+              {
+                "ref": "Deu.28.44"
+              },
+              {
+                "ref": "Isa.9.13"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "קָדְקֹד",
+            "note": "The crown of the head, set beside the head.",
+            "evidence": [
+              {
+                "ref": "Gen.49.26"
+              },
+              {
+                "ref": "Psa.7.17"
+              },
+              {
+                "ref": "Psa.68.22"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "רֹאשׁ פִּנָּה",
+            "gloss": "head of the corner",
+            "evidence": [
+              {
+                "ref": "Psa.118.22"
+              },
+              {
+                "ref": "Mat.21.42"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא רֹאשׁ",
+            "gloss": "lift the head: restore, exalt; take the sum",
+            "evidence": [
+              {
+                "ref": "Gen.40.13"
+              },
+              {
+                "ref": "Gen.40.20"
+              },
+              {
+                "ref": "Psa.3.4"
+              },
+              {
+                "ref": "Exo.30.12"
+              }
+            ]
+          },
+          {
+            "phrase": "רֹאשׁ חֹדֶשׁ",
+            "gloss": "beginning of the month, new moon",
+            "evidence": [
+              {
+                "ref": "Num.10.10"
+              },
+              {
+                "ref": "Num.28.11"
+              }
+            ]
+          },
+          {
+            "phrase": "כֹּהֵן הָרֹאשׁ",
+            "gloss": "the chief priest",
+            "evidence": [
+              {
+                "ref": "2Ki.25.18"
+              },
+              {
+                "ref": "2Ch.19.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רִאשׁוֹן",
+      "pos": "adjective",
+      "gloss": "first; former",
+      "bdb": [
+        "t.ad.ad"
+      ],
+      "cognate_ids": [
+        "akk-reshtu-first"
+      ],
+      "summary": "Formed from רֹאשׁ: what is at the head of a series, first in order, time or rank; and, looking back, the former.",
+      "senses": [
+        {
+          "id": "first",
+          "gloss": "first (in order or time)",
+          "definition": "The first of a series: the first month, the first day of a feast, the first to set out.",
+          "evidence": [
+            {
+              "ref": "Lev.23.5",
+              "role": "defining",
+              "note": "In the first month, on the fourteenth of the month at evening, is Yahweh's פֶּסַח."
+            },
+            {
+              "ref": "Lev.23.7",
+              "role": "defining",
+              "note": "On the first day you shall have a holy convocation."
+            },
+            {
+              "ref": "Lev.23.39",
+              "to": "Lev.23.40",
+              "role": "defining",
+              "note": "On the first day of the feast of booths a rest, and on the first day you take the fruit of goodly trees."
+            },
+            {
+              "ref": "Gen.8.13",
+              "note": "In the first month, on the first of the month, the waters were dried up."
+            },
+            {
+              "ref": "Num.2.9",
+              "note": "The camp of Judah sets out first."
+            },
+            {
+              "ref": "Lev.23.35"
+            },
+            {
+              "ref": "Exo.12.2"
+            },
+            {
+              "ref": "Gen.33.2",
+              "note": "Jacob put the handmaids and their children first."
+            }
+          ]
+        },
+        {
+          "id": "former",
+          "gloss": "former, earlier",
+          "definition": "What came before and is now past: the first tablets, the former house, the former prophets, the former things.",
+          "evidence": [
+            {
+              "ref": "Exo.34.1",
+              "role": "defining",
+              "note": "Cut two tablets like the first, and I will write the words that were on the first tablets."
+            },
+            {
+              "ref": "Hag.2.3",
+              "role": "defining",
+              "note": "Who saw this house in its former glory?"
+            },
+            {
+              "ref": "Hag.2.9",
+              "note": "The latter glory of this house shall be greater than the former."
+            },
+            {
+              "ref": "Zec.7.7",
+              "note": "The words Yahweh proclaimed by the former prophets."
+            },
+            {
+              "ref": "Isa.43.18",
+              "note": "Do not remember the former things."
+            },
+            {
+              "ref": "Isa.65.17",
+              "note": "New heavens and a new earth, and the former things will not be remembered."
+            },
+            {
+              "ref": "Ecc.1.11",
+              "note": "There is no remembrance of the former, nor of the latter."
+            }
+          ]
+        },
+        {
+          "id": "at-first",
+          "gloss": "at first, formerly (adverbial)",
+          "definition": "With a preposition (בָּרִאשֹׁנָה, לָרִאשֹׁנָה), “at the first, before”.",
+          "evidence": [
+            {
+              "ref": "Gen.13.4",
+              "role": "defining",
+              "note": "The altar Abram had made there at the first."
+            },
+            {
+              "ref": "Gen.28.19",
+              "note": "Luz was the name of the city at the first."
+            },
+            {
+              "ref": "Jdg.18.29"
+            }
+          ]
+        },
+        {
+          "id": "first-rank",
+          "gloss": "first in rank, chief",
+          "definition": "Foremost in standing, among the chief.",
+          "evidence": [
+            {
+              "ref": "Est.1.14",
+              "role": "defining",
+              "note": "The seven princes who sat first in the kingdom."
+            },
+            {
+              "ref": "1Ch.18.17",
+              "note": "David's sons were first at the king's hand."
+            },
+            {
+              "ref": "Dan.10.13",
+              "note": "Michael, one of the first (chief) princes."
+            }
+          ]
+        },
+        {
+          "id": "yahweh-first",
+          "gloss": "the first (Yahweh)",
+          "definition": "Yahweh names himself the first and the last: before all and after all, with no god beside him.",
+          "evidence": [
+            {
+              "ref": "Isa.44.6",
+              "role": "defining",
+              "note": "“I am first and I am last, and besides me there is no god.”"
+            },
+            {
+              "ref": "Isa.48.12",
+              "role": "defining",
+              "note": "“I am he; I am first, also I am last.”"
+            },
+            {
+              "ref": "Isa.41.4",
+              "note": "“I, Yahweh, first, and with the last, I am he.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πρῶτος",
+          "gloss": "first",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.44.6, רִאשׁוֹן → πρῶτος; Isa.41.4 and Isa.48.12, the same"
+            },
+            {
+              "ref": "Rev.1.17",
+              "note": "“I am the first and the last.”"
+            },
+            {
+              "ref": "Rev.2.8"
+            },
+            {
+              "ref": "Rev.22.13"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "אַחֲרוֹן",
+            "note": "First and last; former and latter.",
+            "evidence": [
+              {
+                "ref": "Isa.44.6"
+              },
+              {
+                "ref": "Isa.48.12"
+              },
+              {
+                "ref": "Hag.2.9"
+              },
+              {
+                "ref": "Ecc.1.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רֵאשִׁית",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "beginning; first part, firstfruits; choicest",
+      "bdb": [
+        "t.ad.ag"
+      ],
+      "cognate_ids": [
+        "akk-reshtu",
+        "phn-reshit"
+      ],
+      "senses": [
+        {
+          "id": "beginning",
+          "gloss": "beginning",
+          "definition": "The start of a thing, set against its end (אַחֲרִית): of the heavens and the earth, of a reign, of a man's life, of a quarrel; and what knowledge and wisdom begin with.",
+          "evidence": [
+            {
+              "ref": "Gen.1.1",
+              "role": "defining",
+              "note": "In the beginning God created the heavens and the earth."
+            },
+            {
+              "ref": "Isa.46.10",
+              "role": "defining",
+              "note": "Declaring the end (אַחֲרִית) from the beginning."
+            },
+            {
+              "ref": "Job.42.12",
+              "role": "defining",
+              "note": "Yahweh blessed the latter end of Job more than his beginning."
+            },
+            {
+              "ref": "Ecc.7.8",
+              "note": "Better the end of a thing than its beginning."
+            },
+            {
+              "ref": "Jer.26.1",
+              "note": "In the beginning of the reign of Jehoiakim."
+            },
+            {
+              "ref": "Pro.1.7",
+              "note": "The fear of Yahweh is the beginning of knowledge."
+            },
+            {
+              "ref": "Psa.111.10",
+              "note": "The beginning of wisdom is the fear of Yahweh."
+            },
+            {
+              "ref": "Pro.8.22",
+              "note": "Yahweh possessed me, the beginning of his way."
+            },
+            {
+              "ref": "Pro.17.14",
+              "note": "The beginning of strife is like letting out water."
+            }
+          ]
+        },
+        {
+          "id": "firstfruits",
+          "gloss": "first part, firstfruits",
+          "definition": "The first of the harvest, the dough, the oil, the wine and the fleece, brought to Yahweh's house before the rest is used, and given to the priests.",
+          "evidence": [
+            {
+              "ref": "Lev.23.10",
+              "role": "defining",
+              "note": "You shall bring the sheaf (עֹמֶר) of the first of your harvest to the priest."
+            },
+            {
+              "ref": "Num.15.20",
+              "to": "Num.15.21",
+              "role": "defining",
+              "note": "From the first of your dough you shall give a contribution to Yahweh."
+            },
+            {
+              "ref": "Deu.26.2",
+              "role": "defining",
+              "note": "Take of the first of all the fruit of the ground, put it in a basket, and go to the place Yahweh chooses."
+            },
+            {
+              "ref": "Deu.26.10",
+              "note": "“I have brought the first of the fruit of the ground that you, Yahweh, have given me.”"
+            },
+            {
+              "ref": "Exo.23.19",
+              "note": "The first of the firstfruits (רֵאשִׁית בִּכּוּרֵי) of your ground you shall bring to the house of Yahweh."
+            },
+            {
+              "ref": "Exo.34.26"
+            },
+            {
+              "ref": "Lev.2.12",
+              "note": "An offering of firstfruits, not burnt on the altar."
+            },
+            {
+              "ref": "Num.18.12",
+              "note": "The best of the oil, wine and grain, their first, given to the priests."
+            },
+            {
+              "ref": "Deu.18.4",
+              "note": "The first of your grain, wine, oil and fleece to the priest."
+            },
+            {
+              "ref": "Pro.3.9",
+              "note": "Honour Yahweh with your wealth and with the first of all your produce."
+            },
+            {
+              "ref": "Neh.10.38"
+            },
+            {
+              "ref": "Ezk.44.30"
+            },
+            {
+              "ref": "Jer.2.3",
+              "note": "Israel was holiness to Yahweh, the first of his harvest; all who devoured it were guilty."
+            }
+          ]
+        },
+        {
+          "id": "first-strength",
+          "gloss": "first of strength (the firstborn)",
+          "definition": "The firstborn son as the first of his father's strength.",
+          "evidence": [
+            {
+              "ref": "Gen.49.3",
+              "role": "defining",
+              "note": "Reuben, my firstborn (בְּכוֹר), my might and the beginning of my strength."
+            },
+            {
+              "ref": "Deu.21.17",
+              "note": "He is the beginning of his strength; the right of the firstborn is his."
+            },
+            {
+              "ref": "Psa.78.51",
+              "note": "He struck every firstborn in Egypt, the beginning of their strength."
+            },
+            {
+              "ref": "Psa.105.36"
+            }
+          ]
+        },
+        {
+          "id": "choicest-part",
+          "gloss": "choicest, best, foremost",
+          "definition": "The best or foremost of a kind: the best of the plunder, the finest oils, the first of the nations.",
+          "evidence": [
+            {
+              "ref": "1Sa.15.21",
+              "role": "defining",
+              "note": "The people took the best (רֵאשִׁית) of the things devoted to destruction, to sacrifice."
+            },
+            {
+              "ref": "Amo.6.6",
+              "role": "defining",
+              "note": "Anointing themselves with the finest oils."
+            },
+            {
+              "ref": "Amo.6.1",
+              "note": "The notable men of the first of the nations."
+            },
+            {
+              "ref": "Num.24.20",
+              "note": "Amalek was the first of the nations."
+            },
+            {
+              "ref": "Jer.49.35",
+              "note": "The bow of Elam, the chief of their might."
+            },
+            {
+              "ref": "1Sa.2.29",
+              "note": "Fattening yourselves on the choicest of every offering."
+            },
+            {
+              "ref": "Deu.33.21"
+            },
+            {
+              "ref": "Dan.11.41"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀπαρχή",
+          "gloss": "firstfruits",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.10, רֵאשִׁית → ἀπαρχήν; also Num.15.20–21, Deu.18.4, Deu.26.2, 10, Pro.3.9"
+            },
+            {
+              "ref": "1Co.15.20",
+              "note": "Christ raised from the dead, the firstfruits of those who sleep."
+            },
+            {
+              "ref": "1Co.15.23"
+            },
+            {
+              "ref": "Rom.11.16",
+              "note": "If the firstfruit is holy, so is the lump (Num 15:20–21)."
+            },
+            {
+              "ref": "Rom.8.23",
+              "note": "We who have the firstfruits of the Spirit."
+            },
+            {
+              "ref": "Rom.16.5"
+            },
+            {
+              "ref": "1Co.16.15"
+            },
+            {
+              "ref": "Jas.1.18"
+            },
+            {
+              "ref": "Rev.14.4"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀρχή",
+          "gloss": "beginning",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.1, רֵאשִׁית → ἀρχῇ"
+            },
+            {
+              "ref": "Jhn.1.1",
+              "note": "In the beginning was the word."
+            },
+            {
+              "ref": "Mat.19.4",
+              "note": "He who made them from the beginning made them male and female (Gen 1:27)."
+            },
+            {
+              "ref": "Col.1.18"
+            },
+            {
+              "ref": "Rev.3.14",
+              "note": "The beginning of the creation of God."
+            },
+            {
+              "ref": "Rev.21.6"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "אַחֲרִית",
+            "note": "Beginning and end.",
+            "evidence": [
+              {
+                "ref": "Isa.46.10"
+              },
+              {
+                "ref": "Job.42.12"
+              },
+              {
+                "ref": "Ecc.7.8"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "בְּכוֹר",
+            "note": "The firstborn is the beginning of his father's strength (see the bakar entry).",
+            "evidence": [
+              {
+                "ref": "Gen.49.3"
+              },
+              {
+                "ref": "Psa.78.51"
+              },
+              {
+                "ref": "Psa.105.36"
+              }
+            ]
+          },
+          {
+            "lemma": "בִּכּוּרִים",
+            "note": "The first of the firstfruits (see the bakar entry).",
+            "evidence": [
+              {
+                "ref": "Exo.23.19"
+              },
+              {
+                "ref": "Exo.34.26"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בְּרֵאשִׁית",
+            "gloss": "in the beginning",
+            "evidence": [
+              {
+                "ref": "Gen.1.1"
+              }
+            ]
+          },
+          {
+            "phrase": "רֵאשִׁית קְצִירְכֶם",
+            "gloss": "the first of your harvest",
+            "evidence": [
+              {
+                "ref": "Lev.23.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רֹאשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "venom; a bitter, poisonous plant",
+      "bdb": [
+        "t.ad.aj"
+      ],
+      "summary": "A bitter, poisonous plant growing from a root and in the furrows, and the venom of serpents; always figurative, set beside wormwood (לַעֲנָה). Spelled like רֹאשׁ “head”, and its tie to the root's sense is not clear: no cognate sharing this meaning has been found.",
+      "senses": [
+        {
+          "gloss": "venom, poison; bitter plant",
+          "definition": "A bitter poisonous plant and its juice, and the venom of serpents: what idolatry and injustice yield, and the cup of judgment.",
+          "evidence": [
+            {
+              "ref": "Deu.29.17",
+              "role": "defining",
+              "note": "Lest there be among you a root bearing poison (רֹאשׁ) and wormwood."
+            },
+            {
+              "ref": "Hos.10.4",
+              "role": "defining",
+              "note": "Judgment springs up like poison in the furrows of the field."
+            },
+            {
+              "ref": "Deu.32.33",
+              "role": "defining",
+              "note": "Their wine is the venom (חֲמַת) of serpents, the cruel poison (רֹאשׁ) of asps."
+            },
+            {
+              "ref": "Job.20.16",
+              "note": "He will suck the poison of asps."
+            },
+            {
+              "ref": "Amo.6.12",
+              "note": "You have turned justice into poison and the fruit of righteousness into wormwood."
+            },
+            {
+              "ref": "Jer.8.14",
+              "note": "Yahweh has given us poisoned water (מֵי רֹאשׁ) to drink."
+            },
+            {
+              "ref": "Jer.9.14"
+            },
+            {
+              "ref": "Jer.23.15"
+            },
+            {
+              "ref": "Deu.32.32",
+              "note": "Their grapes are grapes of poison."
+            },
+            {
+              "ref": "Lam.3.19",
+              "note": "Remember my affliction, the wormwood and the poison."
+            },
+            {
+              "ref": "Psa.69.22",
+              "note": "They gave me poison for food, and for my thirst vinegar."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χολή",
+          "gloss": "gall",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.69.22 (LXX 68:22), רֹאשׁ → χολήν; Jer.8.14, רֹאשׁ → χολῆς"
+            },
+            {
+              "ref": "Mat.27.34",
+              "note": "They gave him vinegar mixed with gall to drink (Psa 69:22)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "לַעֲנָה",
+            "note": "Wormwood.",
+            "evidence": [
+              {
+                "ref": "Deu.29.17"
+              },
+              {
+                "ref": "Amo.6.12"
+              },
+              {
+                "ref": "Lam.3.19"
+              },
+              {
+                "ref": "Jer.9.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מְרַאֲשׁוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "place at the head",
+      "bdb": [
+        "t.ad.ai"
+      ],
+      "cognate_ids": [
+        "ar-ras",
+        "akk-reshu",
+        "uga-ris",
+        "phn-rosh",
+        "gez-rees"
+      ],
+      "senses": [
+        {
+          "gloss": "place at the head (of one lying down)",
+          "definition": "Always plural with a suffix: the place by or under a sleeper's head.",
+          "evidence": [
+            {
+              "ref": "Gen.28.11",
+              "role": "defining",
+              "note": "Jacob took a stone and put it at his head, and lay down."
+            },
+            {
+              "ref": "1Sa.26.11",
+              "role": "defining",
+              "note": "Take the spear that is at his head and the jug of water."
+            },
+            {
+              "ref": "1Ki.19.6",
+              "note": "At Elijah's head a cake baked on hot stones."
+            },
+            {
+              "ref": "Gen.28.18"
+            },
+            {
+              "ref": "1Sa.19.13"
+            },
+            {
+              "ref": "1Sa.26.12"
+            },
+            {
+              "ref": "Jer.13.18",
+              "note": "Your head-place has come down, the crown of your glory."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֹאשָׁה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "top (stone)",
+      "bdb": [
+        "t.ad.ac"
+      ],
+      "cognate_ids": [
+        "ar-ras",
+        "akk-reshu",
+        "uga-ris",
+        "phn-rosh",
+        "gez-rees"
+      ],
+      "senses": [
+        {
+          "gloss": "top",
+          "definition": "The topmost stone of a building, brought out to finish it.",
+          "evidence": [
+            {
+              "ref": "Zec.4.7",
+              "role": "defining",
+              "note": "He will bring out the top stone (הָאֶבֶן הָרֹאשָׁה) with shouts of “Grace, grace to it!”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רִאשָׁה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "beginning, early time",
+      "bdb": [
+        "t.ad.ab"
+      ],
+      "cognate_ids": [
+        "akk-reshtu"
+      ],
+      "senses": [
+        {
+          "gloss": "beginnings, former time",
+          "definition": "A people's early days.",
+          "evidence": [
+            {
+              "ref": "Ezk.36.11",
+              "role": "defining",
+              "note": "I will do better for you than at your beginnings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רִאשֹׁנִי",
+      "pos": "adjective",
+      "gloss": "first",
+      "bdb": [
+        "t.ad.ae"
+      ],
+      "cognate_ids": [
+        "akk-reshtu-first"
+      ],
+      "senses": [
+        {
+          "gloss": "first",
+          "definition": "A by-form of רִאשׁוֹן.",
+          "evidence": [
+            {
+              "ref": "Jer.25.1",
+              "role": "defining",
+              "note": "The first year of Nebuchadnezzar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֵאשׁ",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "head; chief; sum",
+      "bdb": [
+        "xt.aa.ac"
+      ],
+      "cognate_ids": [
+        "arc-resh"
+      ],
+      "senses": [
+        {
+          "gloss": "head",
+          "definition": "The head of a man, an image or a beast; and the head as the seat of visions in sleep.",
+          "evidence": [
+            {
+              "ref": "Dan.2.32",
+              "role": "defining",
+              "note": "The image's head was of fine gold."
+            },
+            {
+              "ref": "Dan.2.38",
+              "note": "“You are that head of gold.”"
+            },
+            {
+              "ref": "Dan.3.27",
+              "note": "Not a hair of their head was singed."
+            },
+            {
+              "ref": "Dan.7.9",
+              "note": "The hair of his head like pure wool."
+            },
+            {
+              "ref": "Dan.7.6",
+              "note": "The beast had four heads."
+            },
+            {
+              "ref": "Dan.4.2",
+              "role": "defining",
+              "note": "The visions of my head troubled me."
+            },
+            {
+              "ref": "Dan.2.28"
+            },
+            {
+              "ref": "Dan.7.15"
+            }
+          ]
+        },
+        {
+          "gloss": "sum; chief",
+          "definition": "The sum of a matter; and those at the head of others.",
+          "evidence": [
+            {
+              "ref": "Dan.7.1",
+              "role": "defining",
+              "note": "He wrote the dream and told the sum (רֵאשׁ) of the matters."
+            },
+            {
+              "ref": "Ezr.5.10",
+              "note": "The names of the men at their head."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רִישָׁא",
+      "lang": "syc",
+      "root": "ריש",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "head; chief; beginning",
+      "summary": "The Peshitta's word for head and chief, used where the Greek has κεφαλή and also where it has ἀρχή.",
+      "senses": [
+        {
+          "id": "syc-head-christ",
+          "gloss": "head",
+          "definition": "The head of the body; Christ as head of his body, the assembly, and as the head of the corner.",
+          "evidence": [
+            {
+              "ref": "Mat.5.36",
+              "role": "defining",
+              "note": "Do not swear by your head."
+            },
+            {
+              "ref": "Eph.1.22",
+              "role": "defining",
+              "note": "He gave him to be head over all to the assembly."
+            },
+            {
+              "ref": "Col.1.18",
+              "role": "defining",
+              "note": "He is the head of the body, the assembly, who is the beginning (also רִישָׁא here, for ἀρχή)."
+            },
+            {
+              "ref": "Eph.4.15"
+            },
+            {
+              "ref": "Eph.5.23"
+            },
+            {
+              "ref": "1Co.11.3",
+              "note": "The head of every man is Christ, and the head of Christ is God."
+            },
+            {
+              "ref": "Col.2.19"
+            },
+            {
+              "ref": "Mat.21.42",
+              "note": "The head of the corner (Psa 118:22)."
+            },
+            {
+              "ref": "Act.4.11"
+            }
+          ],
+          "kin": [
+            "chief",
+            "head-of-body"
+          ]
+        },
+        {
+          "gloss": "chief, ruler",
+          "definition": "One at the head of others; and in the plural, rule.",
+          "evidence": [
+            {
+              "ref": "1Co.15.24",
+              "role": "defining",
+              "note": "When he has abolished all rule (רִישׁ) and all authority."
+            }
+          ],
+          "kin": [
+            "chief"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רִשִׁיתָא",
+      "lang": "syc",
+      "root": "ריש",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "beginning; firstfruits",
+      "summary": "The Peshitta's word for ἀπαρχή and ἀρχή: the same word as Hebrew רֵאשִׁית, carrying both its senses.",
+      "senses": [
+        {
+          "id": "syc-firstfruits",
+          "gloss": "firstfruits",
+          "definition": "The first of a harvest, offered to God: Christ raised first from the dead, and those begotten by the word or redeemed as the first of the rest.",
+          "evidence": [
+            {
+              "ref": "1Co.15.20",
+              "role": "defining",
+              "note": "The Messiah has risen from the dead and become the firstfruits (רִשִׁיתָא) of those who sleep."
+            },
+            {
+              "ref": "1Co.15.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.26.23",
+              "role": "defining",
+              "note": "The Messiah would suffer and be the firstfruits (רִשִׁיתָא) of the resurrection from the dead; the Greek has “the first” (πρῶτος)."
+            },
+            {
+              "ref": "Rom.11.16"
+            },
+            {
+              "ref": "Rom.8.23"
+            },
+            {
+              "ref": "Jas.1.18"
+            },
+            {
+              "ref": "Rev.14.4"
+            },
+            {
+              "ref": "1Co.16.15"
+            },
+            {
+              "ref": "Rom.16.5"
+            }
+          ],
+          "kin": [
+            "firstfruits"
+          ]
+        },
+        {
+          "id": "syc-beginning",
+          "gloss": "beginning",
+          "definition": "The beginning, as of creation and of days.",
+          "evidence": [
+            {
+              "ref": "Jhn.1.1",
+              "role": "defining",
+              "note": "In the beginning (בְּרִשִׁית) was the word: the Peshitta's words for Gen 1:1's בְּרֵאשִׁית."
+            },
+            {
+              "ref": "Mat.19.4",
+              "note": "He who made them from the beginning."
+            },
+            {
+              "ref": "Rev.3.14",
+              "note": "The beginning of the creation of God."
+            },
+            {
+              "ref": "Rev.21.6",
+              "note": "The beginning and the end."
+            },
+            {
+              "ref": "Heb.7.3",
+              "note": "Having neither beginning of days nor end of life."
+            }
+          ],
+          "kin": [
+            "beginning"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רִישָׁיָא",
+      "lang": "syc",
+      "root": "ריש",
+      "pos": "adjective",
+      "gloss": "best, choicest",
+      "senses": [
+        {
+          "gloss": "best, choicest",
+          "definition": "The finest of a kind.",
+          "evidence": [
+            {
+              "ref": "Luk.15.22",
+              "role": "defining",
+              "note": "Bring out the best robe."
+            },
+            {
+              "ref": "Mrk.14.3",
+              "note": "Ointment of choice nard."
+            },
+            {
+              "ref": "Jhn.12.3"
+            }
+          ],
+          "kin": [
+            "choicest",
+            "choicest-part"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רִישָׁנָא",
+      "lang": "syc",
+      "root": "ריש",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "chief, ruler",
+      "senses": [
+        {
+          "gloss": "chief, ruler",
+          "definition": "A man in authority among a people.",
+          "evidence": [
+            {
+              "ref": "Luk.18.18",
+              "role": "defining",
+              "note": "A certain ruler asked him."
+            },
+            {
+              "ref": "Act.28.17",
+              "note": "Paul called together the chief men of the Jews."
+            },
+            {
+              "ref": "Act.13.27"
+            },
+            {
+              "ref": "Act.14.5"
+            }
+          ],
+          "kin": [
+            "chief"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ras",
+      "lang": "ar",
+      "form": "رَأْس",
+      "translit": "raʾs",
+      "gloss": "head; top, summit; headland; (tropical) chief",
+      "relation": "cognate",
+      "note": "Lane: the head of a man or beast, the top or summit of anything, a headland; the head of cattle in counting; and رَئِيس, the head or chief of a people.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 995, art. رأس, رَأْسٌ"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 996, art. رأس, رَئِيسٌ"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000378 rʾš [head] N, ARB009991"
+        }
+      ]
+    },
+    {
+      "id": "akk-reshu",
+      "lang": "akk",
+      "form": "rēšu",
+      "translit": "rēšu",
+      "gloss": "head; top, summit; beginning; best part",
+      "relation": "cognate",
+      "note": "Oracc's senses include head, top, summit, beginning, best part and top quality: the same range as רֹאשׁ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003720, rēšu [head] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000378 rʾš [head] N, AKK009951 rēšu"
+        }
+      ]
+    },
+    {
+      "id": "akk-reshtu",
+      "lang": "akk",
+      "form": "rēštu",
+      "translit": "rēštu",
+      "gloss": "beginning; first fruits; prime quality; peak",
+      "relation": "cognate",
+      "note": "Formed with -t from rēšu as רֵאשִׁית is from רֹאשׁ, and with the same senses: beginning, first fruits, prime quality.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000015620, rēštu [beginning] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-reshtu-first",
+      "lang": "akk",
+      "form": "rēštû",
+      "translit": "rēštû",
+      "gloss": "first, foremost; first-born; first quality",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000059980, rēštû [first] AJ; armep x000003710, rēštû [first] NU"
+        }
+      ]
+    },
+    {
+      "id": "uga-ris",
+      "lang": "uga",
+      "form": "𐎗𐎛𐎌",
+      "translit": "riš (/raʾš-/), pl. rašm",
+      "gloss": "head",
+      "relation": "cognate",
+      "note": "Ugaritic keeps š and ṯ apart, and writes this word with š.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 200, Glossary §93, riš"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000378 rʾš [head] N, UGC003582 riš"
+        }
+      ]
+    },
+    {
+      "id": "phn-rosh",
+      "lang": "phn",
+      "form": "𐤓𐤀𐤔",
+      "translit": "rʾš",
+      "gloss": "head; head of a group; headland, cape; capital of a column",
+      "relation": "cognate",
+      "note": "Also plural rʾšm, “senate”, literally the heads of the nation (Krahmalkov p. 437).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 436, Rʾš (head)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000378 rʾš [head] N, PUN001839 rʾš"
+        }
+      ]
+    },
+    {
+      "id": "phn-reshit",
+      "lang": "phn",
+      "form": "𐤓𐤀𐤔𐤕",
+      "translit": "rʾšt",
+      "gloss": "first quality, finest; firstborn",
+      "relation": "cognate",
+      "note": "The two senses of רֵאשִׁית beside בְּכוֹר: the finest copper given to a god (KAI 31), and the firstborn of one's own flesh offered (CIS i 5689).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 438, Rʾšt"
+        }
+      ]
+    },
+    {
+      "id": "gez-rees",
+      "lang": "gez",
+      "form": "ርእስ",
+      "translit": "rəʾs",
+      "gloss": "head; (verb ርእሰ) be head, be chief",
+      "relation": "cognate",
+      "note": "Dillmann gives the denominative verb ርእሰ “caput vel principem esse”, citing the Ge'ez of Col 1:18, and the noun ርእስ “caput”.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 294, ርእሰ and ርእስ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n170"
+        }
+      ]
+    },
+    {
+      "id": "arc-resh",
+      "lang": "arc",
+      "form": "רֵישָׁא",
+      "translit": "rēšā",
+      "gloss": "head, chief; beginning, first thing, firstling",
+      "relation": "cognate",
+      "note": "The Targums' word for Hebrew רֹאשׁ, and for רֵאשִׁית as “beginning, first thing, firstling”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "T00718, רֵישׁ II (רֵישָׁא), = h. רֹאשׁ, citing Targ. O. Deut. XI, 12 and Targ. O. Num. XV, 20"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "christ-the-firstfruits",
+      "statement": "Israel brought the first (רֵאשִׁית) of the harvest to Yahweh before any of it was eaten: the sheaf of Lev 23:10–14, the first of the dough, of the grain, oil and fleece (Num 15:20–21; Deu 18:4; Deu 26:2, 10). What was first was holy to Yahweh, and Israel itself was “holiness to Yahweh, the first of his harvest” (Jer 2:3). Paul writes that Christ has been raised from the dead, the firstfruits of those who sleep, and that each will be raised in order, Christ the firstfruits, then those who are Christ's at his coming (1Co 15:20–23). The Peshitta's word there is רִשִׁיתָא, the Hebrew רֵאשִׁית in Syriac, and in Paul's defence before Agrippa it says the Messiah would suffer and be the רִשִׁיתָא of the resurrection from the dead (Act 26:23). So the first of the harvest is a pledge of the rest: “if the firstfruit is holy, so is the lump” (Rom 11:16, from Num 15:20–21). Those who believe are also called firstfruits: begotten by the word of truth to be a kind of firstfruits of his creatures (Jas 1:18), redeemed from among men as firstfruits to God and to the Lamb (Rev 14:4), having the firstfruits of the Spirit while they wait for the redemption of the body (Rom 8:23). (The waving of the sheaf and its day are under the omer entry; the בִּכּוּרִים under the bakar entry.)",
+      "evidence": [
+        {
+          "ref": "Lev.23.10",
+          "to": "Lev.23.14"
+        },
+        {
+          "ref": "Num.15.20",
+          "to": "Num.15.21"
+        },
+        {
+          "ref": "Deu.18.4"
+        },
+        {
+          "ref": "Deu.26.2"
+        },
+        {
+          "ref": "Deu.26.10"
+        },
+        {
+          "ref": "Jer.2.3"
+        },
+        {
+          "ref": "1Co.15.20",
+          "to": "1Co.15.23"
+        },
+        {
+          "ref": "Act.26.23"
+        },
+        {
+          "ref": "Rom.11.16"
+        },
+        {
+          "ref": "Jas.1.18"
+        },
+        {
+          "ref": "Rev.14.4"
+        },
+        {
+          "ref": "Rom.8.23"
+        }
+      ]
+    },
+    {
+      "topic": "christ-the-head",
+      "statement": "“The stone the builders rejected has become the head (רֹאשׁ) of the corner; this is from Yahweh” (Psa 118:22–23). Jesus quoted it of himself to the chief priests and elders (Mat 21:42), and Peter told the rulers that Jesus, whom they crucified and God raised, is that stone, rejected by them as builders, which has become the head of the corner (Act 4:10–11; 1Pe 2:7). Paul says God raised Christ from the dead, seated him at his right hand, put all things under his feet, and gave him to be head over all things to the assembly, which is his body (Eph 1:20–23); believers are to grow up in all things into him who is the head (Eph 4:15). He is the head of the body, the beginning, the firstborn from the dead, so that in all things he might be first (Col 1:18): in the Peshitta “head” and “beginning” there are both רִישָׁא. The order of headship goes up to God: the head of every man is Christ, and the head of Christ is God (1Co 11:3). The rejected one was made head by Yahweh, after his death and by his resurrection.",
+      "evidence": [
+        {
+          "ref": "Psa.118.22",
+          "to": "Psa.118.23"
+        },
+        {
+          "ref": "Mat.21.42"
+        },
+        {
+          "ref": "Act.4.10",
+          "to": "Act.4.11"
+        },
+        {
+          "ref": "1Pe.2.7"
+        },
+        {
+          "ref": "Eph.1.20",
+          "to": "Eph.1.23"
+        },
+        {
+          "ref": "Eph.4.15"
+        },
+        {
+          "ref": "Col.1.18"
+        },
+        {
+          "ref": "1Co.11.3"
+        }
+      ]
+    },
+    {
+      "topic": "the-first-and-the-last",
+      "statement": "Yahweh says, “I am first (רִאשׁוֹן) and I am last, and besides me there is no god” (Isa 44:6; Isa 41:4; Isa 48:12): he was before all things and will remain after them, and his purpose runs from beginning to end (Isa 46:10). In the revelation God gave to Jesus (Rev 1:1), the risen Jesus says, “I am the first and the last, and the living one; I was dead, and behold, I am alive for ever” (Rev 1:17–18; Rev 2:8; Rev 22:13). The words Yahweh used of himself are spoken by the one he raised from death.",
+      "evidence": [
+        {
+          "ref": "Isa.44.6"
+        },
+        {
+          "ref": "Isa.41.4"
+        },
+        {
+          "ref": "Isa.48.12"
+        },
+        {
+          "ref": "Isa.46.10"
+        },
+        {
+          "ref": "Rev.1.1"
+        },
+        {
+          "ref": "Rev.1.17",
+          "to": "Rev.1.18"
+        },
+        {
+          "ref": "Rev.2.8"
+        },
+        {
+          "ref": "Rev.22.13"
+        }
+      ]
+    },
+    {
+      "topic": "the-beginning-of-wisdom",
+      "statement": "“The fear of Yahweh is the beginning (רֵאשִׁית) of knowledge; fools despise wisdom and instruction” (Pro 1:7), and “the beginning of wisdom is the fear of Yahweh; a good understanding have all who do them” (Psa 111:10). Knowing anything rightly starts with standing in awe of Yahweh; it is the first part, as the first of the harvest is, and the rest follows from it.",
+      "evidence": [
+        {
+          "ref": "Pro.1.7"
+        },
+        {
+          "ref": "Psa.111.10"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: the gentilic/proper name רֹאשׁ (t.ad.al, Rosh of Ezk 38:2–3, 39:1, whose 608 tokens BDB lists identically with t.ad.aa) and רֹאשׁ the son of Benjamin (t.ad.ak, Gen 46:21; that key also holds Lam 3:19 by spelling, which belongs to the venom word). Keys with no tokens (m.di.aj, t.ab.at, t.ad.af, t.bq.ad, t.cp.ad, t.er.ac) are cross-references to the words above and are not listed. Counts: t.ad.aj (venom) is counted by spelling and its 190 'uses' are almost all 'head'; the real venom tokens are the c. 12 verses cited. xt.aa.ac (Aramaic רֵאשׁ) also takes Pro 30:8 רֵאשׁ by spelling, which is 'poverty' (root רוש), not this word. The venom word: no cognate sharing the meaning was found; Wiktionary's 'hemlock' is modern usage. Whether it is the same word as 'head' (a plant named for its head?) is unproven; it stays under this spelling with the link marked unclear. Peshitta: SEDRA root ריש lexemes 3017 רישא (181 tokens), 3019 רישיתא (28), 3018 רישיא (4), 3541 רישנא (4), 3020 רישנותא (1, Jud 1:6, not entered). Syriac lemma pointing follows the SEDRA vocalisation as transliterated in bible.db; Payne Smith not consulted. Ugaritic riš page verified on the scan (Segert p. 200); Krahmalkov pp. 436 and 438 verified on the PDF; Dillmann col. 294 verified on the archive.org page image n170. Not entered, leads only: Sabaic rʾs¹ (Wiktionary; check Biella/SabaWeb); Akkadian ša rēši 'eunuch, courtier' behind סָרִיס (separate root entry, a loan). Open: (1) the omer entry's doctrine 'the-first-sheaf' already sets out Lev 23:10–16 with 1Co 15:20–23; this entry's 'christ-the-firstfruits' was written on the word רֵאשִׁית/רִשִׁיתָא to avoid repeating the day question — reviewer may prefer to merge or trim one. (2) Gen 1:1 בְּרֵאשִׁית and the Peshitta's בְּרִשִׁית in Jhn 1:1 are recorded as a fact on the Syriac word, not as doctrine; whether a doctrine on 'in the beginning' (with Pro 8:22, Col 1:18, Rev 3:14) belongs here is left for review. (3) Zec 4:7 הָאֶבֶן הָרֹאשָׁה and Psa 118:22 are both a 'head' stone; scripture does not link them, so no doctrine was drawn."
+}
