@@ -9008,33 +9008,57 @@ Source checks for 1 Timothy 5:
 
 Source checks for 1 Timothy 6:
 
-- Verses 1–2 retain the yoke, their masters, God's name and his teaching,
-  believing masters as brothers, and the benefit of service. The final
-  teaching/exhortation command remains a separate sentence.
-- Verses 3–6 retain approaching the sound words of our Lord Jesus Messiah,
-  the fear-of-God teaching, arrogance and ignorance, disputes and their
-  consequences, corrupted minds, deprivation of truth and supposed gain.
-  The withdrawal command remains explicit. Verse 6 keeps the causal “For,”
-  the speakers' gain, fear of God, use and their sufficiency.
-- Verses 7–10 retain bringing nothing and carrying nothing away, sufficient
-  food/clothing, the dangers of seeking riches, the root of these evils,
-  love of money, straying from faith and the reflexive misery statement.
-- Verses 11–12 retain “you, man of God,” fleeing from these things, all six
-  pursuit objects, the contest, eternal life, calling, good confession and
-  many witnesses. Verse 19 separately has true/steadfast life.
-- Verses 13–16 form one charge and its linked clauses. God gives life to
-  all, Jesus Messiah's testimony is before Pontius Pilate, and the command
-  is kept until our Lord's manifestation. God reveals him in his time;
-  blessing, unique might, kingship/lordship, deathlessness, inaccessible
-  light, inability to see him, honor, power and Amen remain explicit.
-- Verse 17 keeps the rich of this age and the negated exaltation in their
-  minds in their actual source spans. The provision clause has all things
-  as its object and “for our rest” as its purpose, with the first-person
-  plural suffix retained. Verses 18–19 retain good deeds, sharing, a
-  foundation for what is to come and attaining true life.
-- Verses 20–21 retain Timothy's entrusted charge, empty speech, opposing
-  principles of false knowledge, the feminine singular reference to that
-  knowledge, straying from faith, the final addressed “you,” grace and Amen.
+- The shared-span review checks all 21 verses and 326 source words,
+  reducing 94 shared spans to nine documented exceptions. Final source
+  ownership and continuous English are independently reviewed against
+  the frozen chapter hash. Repeated owners express discontinuous English
+  without grouping ordinary clauses or noun/adjective constructions.
+- Verses 1–2 separate the yoke and slavery, masters and all honor, God's
+  name and his teaching, and the negative purpose. The possession and
+  two causal conjunctions are minimal exceptions. The masters are the
+  believing, beloved recipients refreshed by their servants' service;
+  the explicit object of serve remains distinct from the later copula.
+- Verses 3–5 retain the sound words, teaching and fear of God, ignorance,
+  disputes and their consequences. Evil intent renders the minimal
+  setting-in-the-mind idiom: Brock and Kiraz's SEDRA entry for sam gives
+  sam b-reyana as to resolve. Evil stays at its own adjective. The singular
+  corrupted mind has a plural possessor; the plural deprived predicate
+  describes the people. Trade, the copula, fear of God and the withdrawal
+  command each retain their own source owners.
+- Verse 6 preserves both our in the gain noun and own in dilan, the
+  copula, relative existential, use and what suffices for us. Verse 7
+  renders the known/clear adjective without inventing a knowing actor.
+  The second anything is explicitly marked supplied at bring out,
+  preserving the elliptical object without claiming a second source noun.
+  Verses 8–10 retain sufficient food and clothing, desires as the subject
+  of the feminine plural harmful predicates, all these evils, love and
+  money separately, and the perfect coveting, straying and bringing.
+- Verses 11–12 retain every separate after relation, all six pursuit
+  objects, contest, faith, eternal life, calling, the confession verb and
+  noun, good and many witnesses. Verses 13–15 distinguish the giving-life
+  participle from Jesus Messiah's past testimony, preserve Pontius Pilate
+  as one source token, and keep each part of the command and manifestation
+  clauses. God is the actor of the future showing; the English relative
+  refers back to the manifestation. The final title has plural dominions.
+- Verse 16 retains is/not/corrupted, the dwelling predicate and its light.
+  The relative/resumptive exception renders the inaccessible light as
+  which a person cannot approach; the subsequent seeing clauses concern
+  God. The coordinated no/or even construction preserves both negative
+  particles. The recipient, honor, power and Amen remain separate from
+  the minimal repeated-age formula forever and ever.
+- Verse 17 retains this age, the negative exaltation in their minds,
+  confidence and wealth, and the relative/resumptive in which alongside
+  the independently owned negative existential and assurance. Living,
+  God and the relative head remain separate. Has given reflects the
+  perfect verb; us, all things, richly and for our rest retain their
+  own source words. Verses 18–19 retain both work nouns and adjectives,
+  readiness, giving, sharing, the good foundation and true life.
+- Verses 20–21 retain the entrusted charge and its addressee. Only the
+  daughters-of-voices speech compound is shared in utterances; empty,
+  both from relations, opposing principles and false knowledge remain
+  separate. The feminine object refers to knowledge. The straying verb
+  and ethical dative form a minimal documented predicate; from, faith,
+  grace, the final addressed you and Amen retain their own positions.
 
 Source checks for 2 Timothy 1:
 
