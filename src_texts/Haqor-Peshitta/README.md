@@ -6842,37 +6842,63 @@ Source checks for Galatians 3:
 
 Source checks for Galatians 4:
 
-- Verses 2–5 retain the appointed-time and fullness wording, the Son's
-  sending, and the redemption and adoption clauses, with their distinct
-  source predicates and participants.
-- Verse 3 explicitly retains the enslavement predicate.
-  Verse 8 retains the causal connector and a finite serving predicate.
-  Verse 9 preserves both the turning and serving clauses, with the later
-  `min dresh` rendered idiomatically as "anew." Verse 10 retains all four
-  time categories: days, months, seasons, and years.
-- Verse 12 keeps the appeal and the reassurance that the hearers have not
-  wronged Paul in anything. Verses 13–14 retain the weakness of his flesh
-  and both comparisons, an angel of God and Jesus the Messiah.
-- Verse 16 preserves the rhetorical enemy question without adding
-  "therefore." Verse 17 distinguishes the third-person plural "they want"
-  from the later second-person purpose clause concerning the hearers' zeal.
-  Verse 18 explicitly retains the addressed second-person subject.
-- Verses 19–20 retain Paul's labouring and the Messiah's formation in
-  the hearers, followed by the wish to be present, change of voice, and
-  astonishment at them.
-- Verse 21 retains the repeated law reference but renders the resumptive
-  object naturally as "hear the law." Verses 22–23 preserve the two sons,
-  the two one-phrases, and the flesh/promise contrast.
-- Verse 24 preserves plural "allegories," the two covenants, Sinai,
-  bondage, and Hagar. Verses 25–26 retain the present Jerusalem relation,
-  her children, the upper Jerusalem's freedom, and "our mother."
-- Verse 27 retains both joy commands, both negative descriptions, the
-  causal clause, and the more-than comparison and its multiplication predicate. Verse 28 renders the
-  repeated first-person pronouns as one natural grammatical subject and
-  copula, with Isaac and the promise retained.
-- Verses 29–31 preserve the flesh/Spirit contrast, the persecution object,
-  "so also now," the quoted expulsion and inheritance exclusion, and the
-  concluding bondwoman/free-woman contrast.
+- The checks cover all 31 verses, 376 exact source forms with their full
+  available decoded morphology and suffixes, all 816 individual complete
+  gloss records, and all 31 Murdock renderings. All 150 original mappings,
+  including 50 singles and each of the 100 shared English spans beside
+  every member form, were checked. The final chapter has 395 mappings:
+  377 singles and 18 documented exceptions, each limited to two or three
+  positions. Ordinary noun phrases, negatives, auxiliaries and clauses
+  remain separate. Final checks include repeated links from the same
+  individual source word, every exact exception reason beside its forms,
+  and the running English read separately after those reasons.
+- Verses 1–4 retain plural servants, the heir's temporary subjection to
+  guardians and household masters, the father's appointed time, actual
+  enslavement, the fullness of time, God's sending, and both coming/being
+  predicates. The elements' suffix anticipates the world without adding
+  a second owner. Verse 5 separates redemption, reception, adoption and
+  sons; [CAL simh](https://cal.huc.edu/oneentry.php?cits=all&lemma=symh+N)
+  explicitly records the adoption expression simat bnaya.
+- Verse 6 assigns because to the prefixed relative at position 0, keeps
+  the discourse word separate, and retains both Father and our Father.
+  The Spirit has a nonpersonal relative. Verses 7–9 retain the present
+  nominal negatives, the former serving clause, both perfect knowing
+  predicates, the perfect turning with yourselves, and the distinct
+  desire to be enslaved anew. Verse 10 preserves all four time categories.
+- Verses 11–15 retain fear of fruitless labor, the command and appeal,
+  the negated wronging clause, weakness of Paul's flesh, the separate
+  former-time idiom and past auxiliary, both reception comparisons, and
+  the hypothetical removal and gift of the same eyes.
+- Verse 16 retains the rhetorical perhaps/enemy question and the causal
+  proclamation of truth without adding therefore. Verse 17 distinguishes
+  active jealousy, its adverse purpose, the confining infinitive focused
+  by singular hu, plural they want, and the hearers' later jealousy.
+  [CAL hbsh](https://cal.huc.edu/oneentry.php?cits=all&lemma=xb%24+V)
+  supports confining/shutting in. Verse 18 corrects the active baseline
+  to the second-person Ethpeal passive be envied, as distinguished from
+  active envy in [CAL hsm](https://cal.huc.edu/oneentry.php?cits=all&lemma=xsm+V)
+  and [SEDRA/Brock–Kiraz](https://sedra.bethmardutho.org/lexeme/get/1109).
+  Its good things are plural, and always/and not/only remain separate.
+- Verses 19–20 preserve renewed labor, the Messiah's passive formation
+  in the hearers, the wish to be present, tone/of my voice as separate
+  owners, and astonishment. Verse 21 resolves only the repeated law
+  object; verse 22 resolves only the repeated Abraham possessor.
+  Verse 23 corrects the reversed baseline ownership: was born belongs
+  to position 5 and according to the flesh to position 4.
+- Verses 24–26 retain plural allegories, both covenants, Sinai, bearing
+  for bondage, Hagar, both Jerusalems, the active serving predicate,
+  her sons, freedom, and our mother. The correspondence relation in
+  verse 25 is explicitly attested in [CAL shlm](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24lm+V).
+- Verse 27 follows the actual feminine singular imperative ending of
+  rejoice and its parallel commands despite an inconsistent numeric
+  plural tag. It retains both negative descriptions, the multiplication
+  perfect and more/than comparison, with one maternal owner for each
+  group of children. Verse 28 distinguishes we from its later copula.
+- Verse 29 corrects the baseline's misplaced him on the past auxiliary:
+  was belongs to position 7 and the persecuted one to position 8.
+  The flesh/Spirit contrast and so/also/now remain. Verse 30 resolves
+  the command's resumed bondwoman object once and keeps future negated
+  inheritance separate; verse 31 retains the present nominal conclusion.
 
 Source checks for Galatians 5:
 
