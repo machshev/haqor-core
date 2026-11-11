@@ -6587,16 +6587,75 @@ Source checks for 2 Corinthians 12:
 
 Source checks for 2 Corinthians 13:
 
-- Verse 1 retains the source's third-time wording and renders the mouth expression as "on the testimony of two or three witnesses."
-- Verse 2 renders the two temporal statements as Paul's prior warning and renewed advance warning; the source's absent/far-away writing and sinful/rest groups are retained.
-- Verse 3 keeps the complementizer introducing the Messiah's speech through Paul and the repeated claim that he is not weak but strong among the Corinthians.
-- Verse 4 groups the postpositive causal particle with its opening clause and preserves the contrast between crucifixion in weakness and life by God's power: Paul and his co-workers share weakness and life with the Messiah, by God's power among the Corinthians.
-- Verse 5 keeps both examination commands, the explicit copula in "Jesus the Messiah is in you," and the conditional "if not" clause.
-- Verse 7 preserves the causal request that no evil thing be among them, the purpose connector leading to the proof appearing, the proof belonging to Paul and his co-workers, and the contrast with their doing good.
-- Verse 8 retains both the inability to act against truth and the positive action for truth.
-- Verse 9 preserves the contrast between Paul's weakness and their strength, followed by the prayer for their completion/perfection.
-- Verses 10–11 retain the absent-writing purpose, authority for edification rather than destruction, and the closing imperatives and God-of-love/peace blessing.
-- Verses 12–14 retain the holy kiss, the holy ones as the subject who salute, and the three-part final benediction with Amen.
+- All 14 verses, 215 source forms with decoded morphology, 527 individual
+  SEDRA gloss records, and Murdock were read. All 113 baseline mappings,
+  including 51 singles and every one of the 62 shared spans, were checked
+  beside their actual source members. The revised chapter has 235 spans:
+  228 single-source spans and seven documented two-source exceptions.
+- Verse 1 retains the third-time wording and the imperfect "will come,"
+  replacing the baseline's "have come" without adding Murdock's supplied
+  preparation. The purpose prefix, testimony, numerals, witnesses and
+  establishment predicate are separately linked. "Testimony" renders the
+  mouth metonym in this witness formula: compare
+  [CAL al pum, by the testimony of](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28l%40pwm+p),
+  including its Syriac example with two or three witnesses.
+- Verse 2 separates the past warning, the repeated advance saying, the
+  second-time visit, present absence and writing, the prior sinners and
+  the rest of the others, and the conditional coming and refusal to spare.
+  Only the initial beforehand compound and the comparative connector
+  combine. The single-word co-verb supplies the later beforehand;
+  compare [CAL qdm, Pael co-verb](https://cal.huc.edu/oneentry.php?cits=all&lemma=qdm+V).
+  Its two postparticipial pronouns are separately represented by I and am,
+  without adding a second speaker or putting a pronoun on to-you.
+- Verse 3 combines only the causal connector. Proof, seeking, the Messiah
+  who speaks through me, and the relative contrast between not weak and
+  strong among you remain separate. The demonstrative is the head "the
+  one," not another complementizer. Nominal `la hwa` has present force
+  here, without mechanically changing it to past from the numeric tag;
+  compare [Joosten, section 2.1](https://www.academia.edu/34446491/The_Negation_of_the_Non_Verbal_Clause_in_Early_Syriac).
+- Verse 4 separates the causal particle, concessive clause, passive
+  crucifixion in weakness, life by God's power, and both we/with-him
+  statements. The final d-prefixed among-you phrase modifies God's power.
+  Neither God/power phrase needs a shared span.
+- Verse 5 separately links both examination commands and reflexive objects.
+  Only "in the" combines the anticipatory in-it expression and the
+  specifying in-faith phrase, resolving the same faith once; compare
+  Muraoka112a on prepositional prolepsis in his
+  [Classical Syriac grammar](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  Or, not, recognizing, Jesus, the Messiah, is and in-you retain distinct
+  owners. The final and-if/not clause adds no supplied he-is predicate.
+- Verse 6 retains present "are not rejected." Verse 7 separates asking
+  of God, the negative existential and anything evil, our own proof
+  appearing, your being doers of good things, and we as rejected. The
+  two `nehwe` spellings admit third-person singular or first-person plural;
+  context determines anything evil as the existential subject and we as
+  the later subject, despite the alternative tags. Compare the Lamad-yod
+  imperfect paradigm in [Coakley, section 26](https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
+  Only ayk with the following d-prefix combines as the purpose connector;
+  no second negative is inserted before our own proof appearing.
+- Verse 8 separates inability, doing, anything, against and for the truth.
+  Verse 9 retains contrast, when, both weakness/strength subjects, causal
+  for, this also, prayer, and your being perfected; only when combines.
+- Verse 10 assigns the first I to being far away and the second I to
+  writing these things. The negative purpose, when I come, acting harshly,
+  authority, my Lord giving it, and your edification versus destruction
+  are separate. The coming perfect in the temporal construction has future
+  reference in this purpose context; only the when connector combines.
+- Verse 11 preserves the closing imperatives with their conjunctions,
+  the wish for unity and peace among you, and the God of love and peace
+  being with you. Verse 12 renders the greeting as inquiring after one
+  another's well-being, with each reciprocal member and holy/kiss separate.
+  Verse 13 keeps all the holy ones as the subject in normal English order.
+  Compare [CAL shal with shlam](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%29l+V),
+  explicitly including inquiry after welfare. These renderings separate
+  the inquiry verb from the well-being noun and its recipient suffix.
+- Verse 14 retains peace, rather than substituting a different blessing
+  noun. Our Lord, Jesus, the Messiah, love, God, fellowship, Holy and Spirit
+  remain separately linked; each proleptic possessor is resolved once.
+  The initial of belongs to d-ruha, and Holy to d-qudsha. The nominal
+  blessing's "be with" belongs with the with-preposition, and you-all
+  remains separate. The preposition is not treated as a lexical be verb,
+  and no lexical English is left unlinked. Amen remains explicit.
 
 Source checks for Galatians 1:
 
