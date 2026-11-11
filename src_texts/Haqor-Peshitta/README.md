@@ -9353,11 +9353,84 @@ Source checks for 2 Timothy 4:
 
 Source checks for Titus 1:
 
-- v1 renders `בהימנותא דגביא דאלהא` as “in the faith of God's chosen,” retaining the preposition, chosen plural, and genitive relation.
-- v2–v5 retain the finite person/number distinctions, attached possessive suffixes, and relational d-prefixes, including “his word,” “its season,” “our proclamation,” and Titus-directed actions.
-- v6 renders `אינא דדלא רשינ` idiomatically as “Who is blameless”; v7 uses “elder” for `קשישא`, not an imported “overseer.”
-- v7–v8 preserve each prohibition, the hand/strike idiom, gain phrase, contrast, and moral qualifications; v15–v16 retain negation, plural suffixes, denial, and disqualification.
-- v12 and v14 preserve source order and conjunctions through coherent grouped spans: “are always liars” and “to Jewish myths and to human commandments.”
+- The shared-span review checks all 16 verses and 245 source words,
+  reducing 75 shared spans to three documented exceptions. Final source
+  ownership and continuous English are independently reviewed against
+  the frozen chapter hash. Ordinary clauses, noun modifiers, negatives,
+  auxiliaries and pronouns retain individual owners; separated English
+  spans may repeat their actual source word.
+- Verses 1–2 retain servant and apostle with their respective God/Jesus
+  possessors, Messiah, in the faith, the chosen of God, knowledge, truth,
+  fear and God. The hope, life, forever, promising, true God, before,
+  plural times and singular world remain distinct. The suffix on times
+  belongs to the following world/age genitive, not a newly supplied actor.
+- Verses 3–4 retain the perfect revealing, his word, and the feminine
+  its season referring to that word. Through and our proclamation are
+  separate; the relative head, with which, I and the passive entrusting
+  retain their own owners. Command, God and our life-giver remain
+  distinct. Titus, true, son, common and faith are separately linked;
+  both from relations, God, the Father, our Lord Jesus Messiah and
+  our life-giver retain their actual nouns and suffixes.
+- Verse 5 retains the focusing copula with because of this, the leaving
+  verb and past auxiliary in that I did leave you, and Crete. The
+  perfect-plus-auxiliary construction is rendered as narrative past,
+  without requiring an additional earlier-past event. Those things,
+  lacking, setting right, establishing elders, as and I commanded you
+  remain separate. Only the repeated-city distributive is shared in
+  in every city.
+- Verse 6 separates someone, the relative prefix, is, without and blame.
+  Has been preserves the perfect husband predicate as an enduring
+  qualification; husband, one and wife remain separate. Only the
+  existential/dative possession is shared in has believing children.
+  The children do not revile: the actual Pael verb is not rendered
+  revelling. Nor, are they, without, subjection and in profligacy retain
+  the two negative constructions and the separate existential/copula.
+- Verse 7 has elder, its explicit copula, obligation, being, without
+  blame and God's steward, followed by every repeated negative and
+  auxiliary. Being led, by, his own and mind remain separate. Wrath,
+  excess and wine retain their own words. The striking clause has
+  singular his hand as subject: the feminine running/swift participle
+  and the homographic third-feminine auxiliary agree with that hand.
+  Swift and to strike are not merged into a hand/violence exception.
+  Loving, plural gains and filthy remain separately owned.
+- Verse 8 retains each positive copula, loving strangers, loving good
+  things, sober, upright and holy. Upright is the contextual adjective;
+  the homographic reprove gloss does not determine its sense. [CAL's
+  hasya entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=xsy%232+A)
+  records holy/pious. Restraining, himself, from and lusts stay distinct.
+- Verse 9 shares only the impersonal concern-plus-dative expression.
+  [CAL's btil entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=b%2Byl%232+A)
+  explicitly records btil with leh al as of concern to. About, teaching,
+  word, faith, ability, also, comforting, his sound teaching, rebuking,
+  those and disputing remain separately owned.
+- Verses 10–11 retain the existential many, relative negation and
+  submission, empty words and their possessors, leading astray the
+  plural minds of people, especially and the circumcision clause.
+  The mouth is singular with plural possessors; proper, stopping,
+  for, corrupting many households, teaching something, its negative
+  propriety clause, for the sake of and filthy gains remain separate.
+- Verses 12–13 retain someone from among them, their own prophet and
+  saying. Sons and Crete remain separate rather than forming a shared
+  ethnonym. Always, liars, the explicit copula, evil beasts and idle
+  bellies retain their own source words. This testimony is true
+  renders the adverbial truth assertion with its explicit existential.
+  Because of/this, the advice auxiliary, rebuking, them, sharply,
+  the purpose auxiliary, sound and in faith all remain separate.
+- Verses 14–15 retain both coordinated into relations with fables of
+  the Jews and commandments of people, then hating the truth. Everything,
+  for, pure, the copula and to the pure remain distinct. The plural
+  msaybin can lose its active/passive vowel distinction under inflection
+  (Muraoka, section 50, vowel-deletion note); who are impure reads it
+  adjectivally in the pure/impure contrast without changing its source
+  annotation. And, not, believing, the negative existential, anything,
+  that is pure and for them remain separate. Mind and conscience are
+  both singular with plural possessors; English are supplies normal
+  agreement with those coordinated subjects, and defiled owns its
+  separate passive predicate.
+- Verse 16 retains professing, that they know, God, but, by their deeds,
+  denying and him, the explicit plural copula and hateful predicate.
+  And without and compliance are split rather than merged into a
+  disobedient span. Rejected, for every, good and work remain separate.
 
 Source checks for Titus 2:
 
