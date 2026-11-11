@@ -6334,11 +6334,15 @@ Source checks for 2 Corinthians 10:
 - All 18 verses and 273 source words received source-to-English and running
   English review, peer repair, and an independent final chapter audit. The
   seven causal `gir` and six discourse/contrast `din` were checked in their
-  clauses, along with the separate causal `metul` constructions. Every
-  source position occurs exactly once in ascending order.
+  clauses, along with the separate causal `metul` constructions. The
+  shared-span review reduces 75 original groups to 14, each with a specific
+  linguistic reason in the ledger. English order and repeated links keep
+  ordinary nouns, subjects, auxiliaries and negatives individually linked.
 - Verse 1 retains I, Paul, the Messiah's single ownership of gentleness
   and humility, the concessive "although," humility in person, and
-  confidence when distant. Verse 2 keeps the prospective coming clause,
+  confidence when distant. The postparticipial pronoun supplies "am" after
+  the already named "I, Paul"; both prepositions in the gentleness and
+  humility appeal remain explicit. Verse 2 keeps the prospective coming clause,
   the negative constraint, the confidence I have, my thinking, and the
   other people's thinking about us. The accusation about walking according
   to the flesh remains within their reported judgment.
@@ -6363,10 +6367,17 @@ Source checks for 2 Corinthians 10:
   we." Verse 8 preserves "even if," the somewhat greater boasting, and the
   distinct recipients in our Lord's giving authority to me and giving it
   to us for your building up. Causal "because" remains separate from that
-  purpose and from the negated destruction purpose.
-- Verse 9 retains forbearance, the passive "lest I be thought," and one
-  emphatic terrifying predicate from the infinitive absolute plus finite
-  verb. My letters are plural. Verse 10 likewise has plural letters and
+  purpose and from the negated destruction purpose. The pronoun following
+  the building-up purpose marks focus: "because it is for your building up
+  that he gave it to us." Only the causal connector remains shared here.
+- Verse 9 retains forbearance and the Ethpeal "lest I seem," using the
+  attested seem/be-considered sense of
+  [CAL's `sbr` entry](https://cal.huc.edu/cal_entry_web.php?lemma=sbr+V).
+  The `ayk haw d-` comparison is "as though," with its dummy head distinct
+  from the explicit first-person subject. Only that connector is shared;
+  "greatly" belongs to the infinitive absolute and "terrify" to the finite
+  predicate. My letters are plural. Verse 10's causal clause connects to
+  verse 9 and introduces direct quotation. It likewise has plural letters and
   plural weighty/strong predicates, followed by his weak bodily presence
   and contemptible speech. Verse 11 separately has singular "our letter,"
   the plural speaker, and the correspondence between absent written speech
@@ -6388,10 +6399,14 @@ Source checks for 2 Corinthians 10:
   The final approval cleft preserves causal "For," the single reflexive
   actor, and the Lord's future praise of the object him. The emphatic and
   copular pronouns create no additional person.
-- Two longer groups preserve local grammatical dependencies: five positions
-  for the delayed giving predicate and purpose in verse 8, and six for the
-  imperative, its relative subject, and the fronted object in verse 11.
-  All other linked groups contain at most four source positions.
+- Verse 11's imperative, subject and fronted object are individually linked;
+  their dependency does not require a combined span. Verse 13 separates the
+  comparative "more" and "than," and verse 15 separates "outside" and "of."
+  Verse 16 retains the compound preposition "beyond" with its two members
+  shared and the recipient separately linked; see
+  [CAL's exact verse citation under `lhl` with `men`](https://cal.huc.edu/cal_entry_web.php?lemma=lhl+X).
+  The largest remaining group is the three-member comparative connector in
+  verse 9. All other shared groups contain two positions.
 
 Source checks for 2 Corinthians 11:
 
