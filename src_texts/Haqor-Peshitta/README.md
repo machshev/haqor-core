@@ -7176,34 +7176,68 @@ Source checks for Ephesians 2:
 
 Source checks for Ephesians 3:
 
-- Verses 1–4 preserve Paul's prisoner statement, the second-person
-  recipients, the conditional hearing of the grace given to him, revelation,
-  writing briefly, reading, and understanding his knowledge of the mystery.
-  Verse 4 groups the explicit ability predicate with reading and understanding.
-- Verses 5–7 retain the negative other-generations statement, the present
-  revelation to the holy apostles and prophets, the Spirit, and all three
-  Gentile relationships: inheritance, body, and promise through the gospel.
-- Verses 8–10 preserve the least-among-all comparison, unsearchable riches,
-  with the appositive "who am the least," bringing the mystery to light, its concealment from the ages, God as
-  creator, and the ecclesia's role in making his varied wisdom known.
-- Verse 11 groups the relative clause with both prepared/accomplished
-  predicates, so its shared English object also owns the Syriac resumptive
-  suffix without a duplicated "it." "Our Lord" and the full Jesus Messiah
-  name remain explicit. Verses 12–13 retain confidence, "his faith,"
-  afflictions, the recipients' sake, and their glory.
-- Verses 14–16 preserve the kneeling prayer, the Father relationship,
-  "our Lord," every family's naming, both heaven and earth, his glory,
-  the strengthening purpose, his Spirit, and the hearers' inner person.
-- Verse 17 separately owns faith, the hearers' hearts, love, and the
-  temporal clause about their root and foundation. Verse 18 retains
-  comprehension with all the holy ones and all four dimensions.
-- Verse 19 renders the anticipatory possessive and explicit Messiah
-  genitive as one owner in "Messiah's love," retaining both knowledge
-  and greatness and the filling with all God's fullness.
-- Verses 20–21 preserve separate comparisons, "more than everything"
-  and "even more than what we ask and think," with the first-person plural
-  asking/thinking and "in us," his ecclesia, Jesus Messiah, all generations,
-  both plural age terms, and Amen.
+- Verse 1 separates because-of/this, I/Paul/am/prisoner, Jesus/Messiah,
+  and on/your-behalf. The second ana is copular "am," not another "I."
+  Verse 2 retains "if" without an added "indeed," with grace and God
+  separately linked as one owner, and given/to-me/among-you distinct.
+- Verses 3–4 separate revelation, the mystery, making known and its
+  recipient, writing, and reading. The compound ayk ma d- is rendered
+  "as," with the comparative force recorded by J. Payne Smith under
+  ma; its three members share only this connective. The ability word
+  owns "you can," while the reading clause separates when/you-are/reading.
+  The knowledge is "in the mystery of the Messiah," retaining b- on
+  the mystery word without adding a second possessive owner.
+- Verse 5 repeats the generation word for in/generations around "other,"
+  and separates was/not/made-known. It retains both "his holy apostles"
+  and "and to his prophets," including the latter possessive. Verse 6
+  separates that/Gentiles/may-be, heirs/inheritance, body and promise,
+  and the given/in-him/through/gospel constituents.
+- Verse 7 shares only the relative owner "which" between its dummy
+  head, relative particle and minister suffix. Of/I/became/minister
+  remain separately linked, with one gospel referent. Gift, grace,
+  God, given, to me, working and power remain distinct. Men before
+  the working phrase is rendered causally as "by."
+- Verse 8 separates the least-among-all comparison, this/grace/was-given,
+  proclamation and its audience, and riches/of-the-Messiah. The riches'
+  relative, negative and searching predicate remain separate as
+  "which are not searched out." Verse 9 separates what/is, the mystery,
+  which/was/hidden, the ages, and who/created/all-things.
+- Verses 10–11 retain purpose and means separately, with ecclesia,
+  wisdom, God, "full of distinctions," making known, and the heavenly
+  principalities and authorities individually owned. Only "which"
+  shares the one wisdom object across the relative head, preparation
+  clause and resumed object of accomplishment. Both predicates,
+  the auxiliary, plural ages, and Jesus/Messiah/our-Lord stay separate.
+- Verse 12 shares only the relative referent "whom," leaving through,
+  we/have, boldness/access, and confidence/of-his-faith distinct.
+  Verse 13 corrects the earlier "you not grow weary": the source has
+  an impersonal feminine predicate and first-person singular li.
+  English "I may not grow weary" assigns "I" to that experiencer,
+  with that/may/not/grow-weary separately owned. My-afflictions and
+  which-are-on/your-behalf remain distinct; li is not folded into the
+  affliction phrase. For/this/is/your-glory are separate.
+- Verses 14–15 separate bending, knees, toward, Father, our Lord,
+  Jesus and Messiah. The fatherhood suffix anticipates the named Lord
+  without adding another owner. Only "whom" combines in from/whom;
+  every/family, the heaven/earth relative and naming predicate stay
+  individually linked.
+- Verse 16 keeps grant/to-you, according-to/riches/of-his-glory,
+  that/with-power/you-may-be-strengthened, and by-his-Spirit separate.
+  Its second d-prefix owns "so that," introducing the Messiah's dwelling
+  in verse 17. In-your/person repeats the person word around "inner."
+  The surface -kun suffix is second-person plural despite the numeric
+  third-person tag. Verse 17 adds no new "that" on the dwelling verb;
+  faith, hearts, love, and when/root/foundation/may-be/firm stay distinct.
+- Verses 18–19 separately own ability/comprehension, with/all/holy-ones,
+  the what-is question and all four dimensions. Greatness, knowledge,
+  love and Messiah are all retained, with the love suffix anticipating
+  its named owner; no knowledge noun is dropped to follow Murdock.
+  Filling, all, fullness and God remain individually assigned.
+- Verses 20–21 preserve both comparisons as more/than/everything and
+  and-more/than/what/we-ask/and-think. The first power word has no
+  possessive; the later word is "his power," followed by its passive
+  exercising predicate and "in us." Glory, his ecclesia, Jesus/Messiah,
+  all/generations, both plural age words and Amen remain distinct.
 
 Source checks for Ephesians 4:
 
