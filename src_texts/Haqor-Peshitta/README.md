@@ -8632,28 +8632,94 @@ Source checks for 2 Thessalonians 2:
 
 Source checks for 2 Thessalonians 3:
 
-- Verses 1–2 retain “our brothers,” the word of our Lord running and
-  being glorified, deliverance from wicked people, and the causal
-  statement that not everyone has faith. The prayer joins across verses.
-- Verse 3 says that the Lord will guard the recipients, rather than
-  substituting strengthening. Verse 4 retains confidence in our Lord,
-  what the speakers command, and both completed and ongoing obedience.
-  Verse 5 retains our Lord, God's love and Messiah's patient endurance.
-- Verse 6 retains “my brothers,” our Lord Jesus Messiah, withdrawal
-  from disorderly conduct, and the commandment that “they received”
-  from the speakers, matching the third-person plural source verb.
-- Verses 7–10 retain imitation, working with toil night and day, avoiding
-  a burden, the right to support, setting an example, and the condition
-  that anyone unwilling to work should not eat. The explanation about
-  authority and example continues the preceding work statement.
-- Verse 11 retains the explicit empty or vain things, rather than
-  replacing them with meddling. Verse 12 retains working quietly and
-  eating one's own bread. Verse 13 has “my brothers”; verse 14 has
-  plural “our words,” marking, avoiding association and becoming ashamed.
-- Verse 16 is a prayer. Its Lord-of-peace construction has an anticipatory
-  third-person possessive, while the following “Our Lord” has the genuine
-  first-person plural suffix. Verses 17–18 retain Paul's handwritten
-  greeting and sign, how he writes, grace with everyone, and Amen.
+- All 18 verses were checked against all 225 exact forms, their full
+  decoded morphology and all 519 individual SEDRA gloss records, then
+  the running English. The 62 original shared spans become two minimal
+  conjunctions, metul d- because and ella en except. Noun phrases,
+  auxiliaries, negation and clauses are split, including separated
+  repetitions of a single word's prefixes, stems and suffixes.
+- In 3:1–4, from/now/on separates the temporal preposition from now;
+  our brothers keeps its plural possessor. That/the word shares only
+  its prefixed word, whose suffix anticipates of our Lord. May, active
+  run and passive and be glorified are separate. In every/place and
+  as/among you are split; the prayer joins the following deliverance
+  clause. From, evil, and perverse and people retain individual owners.
+  Faith is not everyone's keeps the negative, copular pronoun and
+  d-prefixed possessive without making everyone a plural subject.
+  Faithful, is and the Lord are separate, as is the relative who before
+  guarding and rescuing. From and evil are separate. The confidence
+  clause keeps concerning you and in our Lord. That/what remains at
+  d-meddem; we command and you are separate. Have done retains the
+  perfect and are doing the participle, with and also at af.
+- In 3:5–7, the blessing retains and and separates may/direct around
+  our Lord. Love and of God are split. The exact mesabranutha entry
+  in Gorgias and Payne Smith has preaching and expectation/awaiting.
+  The prayer uses expectation of Messiah, without treating the single
+  SEDRA preaching gloss as exhaustive or importing patient endurance
+  from another textual tradition. Both noun suffixes anticipate their
+  explicit genitive owners. In the command, my brothers has a singular
+  possessor; name, of our Lord, Jesus and Messiah are separate. The
+  second-person perfect hwa before the participle has advice/command
+  force, that you should be/separate, not a past separation report:
+  compare Coakley, printed pages 122–123.
+  From/every/brother are split. Payne Smith explicitly glosses the
+  repeated bish bish as very badly; these English constituents remain
+  at the two source words in 3:6,7,11. And not, according to and plural
+  commands are separate. That they received retains the third-person
+  plural perfect. The two you forms in 3:7 become you/yourselves,
+  separate from know. How, it is proper, to imitate and us are split;
+  the beth belongs to the Syriac verb's complement construction. For/not
+  stays at d-la, with we/did/walk at the past verb and among you separate.
+- In 3:8–10, not even, bread and for free are separate from we/did/eat.
+  From/any one/of you preserves both prepositional relations. With toil,
+  and with weariness, we were, working, by night and and by day stay
+  separate. So that/on belongs to d-al, while we might/be a burden stays
+  at its predicate, not at the negator. The parenthesis is not because
+  we are not entitled: nominal la hwa is not automatically past. The
+  dative lan supplies we in the English entitlement construction, not
+  an unwritten authority noun. Because uses only metul d-; the inner
+  not remains at la. But, so that/in ourselves, we might give, you and
+  an example are separate. The final so that/us and you may imitate
+  retain the actual d-prefixed complement and verb. For, even, when,
+  we were and with you have their own words in 3:10, followed by we
+  were/commanding/you/this. That/everyone belongs to d-kul, while who/not
+  belongs to d-la. Does/wish, to work, should/eat and not even stay
+  separate. There is no added if or lost everyone in the command.
+- In 3:11–13, that there are, people and among you are separate. Anasha
+  has collective reference in this clause with plural walking and
+  working predicates, despite its singular lexical tag. Who/very and
+  badly stay separate from walk. And/at anything and do/work are split
+  around not. Except jointly renders ella en, with empty things outside
+  that linker; no imported busybody predicate replaces the explicit
+  vain-things noun. In 3:12, them and these people separately express
+  the proleptic dative and its clarification. We command, and ask, of
+  them, in our Lord, Jesus and Messiah are split. That/in quietness,
+  they should be, working, and eating and their bread are separate.
+  But you, my brothers retains the topical pronoun in 3:13. Let/be
+  wearisome is impersonal feminine singular, with doing/what is good
+  as its subject, not as a second-person grow weary. Not and to you
+  remain distinct; Payne Smith explicitly describes the impersonal
+  construction with lamadh.
+- In 3:14–18, and if, anyone, does/obey and not are separate. These is
+  plural and modifies words of ours, not singular letter; the suffix
+  is our, not my. In the letter stays at its own prefixed noun. Ethpeal
+  nethpresh is passive let/be marked out, directly attested in Payne
+  Smith; this one and by you stay separate. Lamadh can mark the agent
+  of a passive construction (Muraoka section 94); this is an analysis
+  of the construction in context, not an additional written by word.
+  And/not and you should/associate retain separate words before with
+  him and the shame-purpose clause. The following prohibition separates
+  and/not, do/regard him, as and an enemy. But, you should, admonish,
+  him, as and a brother are split. The second-person hwa clauses are
+  advice/commands, not past reports. In the prayer, may/give is separate
+  from the Lord, of peace and himself. The Lord suffix anticipates peace;
+  the following our Lord has an actual first-person plural suffix.
+  You, peace, always and in everything are separate, without an added
+  and before the latter phrase. Both nominal blessings separate be
+  with and all of you. The autograph retains handwriting/of my plural
+  hands, I/Paul, perfect have written, the greeting, which is, a sign,
+  in all/my letters and thus/I/write. Grace, of our Lord, Jesus, Messiah
+  and Amen keep their individual source owners.
 
 Source checks for 1 Timothy 1:
 
