@@ -2,7 +2,7 @@
   "id": "anah",
   "root": "ענה",
   "status": "draft",
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "tags": [
     "speech",
     "prayer",
@@ -13,10 +13,11 @@
     "feasts",
     "song",
     "time",
-    "purpose"
+    "purpose",
+    "work"
   ],
-  "gloss": "answer; be bowed down, humble, afflict; (also) time, now; for the sake of",
-  "summary": "Two verbs share the spelling, and the older sounds behind ע keep them together: עָנָה “answer, respond”, used of Yahweh answering those who call on him (1Ki 18:37; Psa 118:21), and עִנָּה “bow down, humble, afflict”, from oppression (Exo 1:11–12) to Yahweh humbling Israel to teach them (Deu 8:2–3) and Israel humbling their own souls on יוֹם הַכִּפֻּרִים (Lev 23:27–32). From the second come עָנִי “poor, afflicted”, עָנָו “humble, meek” and עֲנָוָה “humility”: the lowly whom Yahweh hears (Psa 34:7), and the king who comes עָנִי, riding on a donkey (Zec 9:9; Mat 21:5). Cognates show ʿ behind both answering (Ugaritic ʿny) and humbling (Ugaritic ʿnw, Arabic ʿanā), and in Arabic ʿanā also “occupy, concern” (Ecclesiastes’ עִנְיָן); only “sing” lines up with an older ġ (Arabic ġannā). The root’s words also include עֵת “time” and עַתָּה “now” (Ugaritic ʿnt “now”, Aramaic כְּעַן) and the purpose words לְמַעַן “for the sake of, so that” and יַעַן “because”, whose links to answering are not clear.",
+  "gloss": "answer, attend to; be bowed down (under), afflict; (also) time, now; for the sake of",
+  "summary": "Both verbs of the root are being taken up with something. Turned toward a person, עָנָה is to answer: to reply, to answer against in court, to answer in song, and of Yahweh to attend to the one who calls and meet his need (Isa 41:17; Hos 2:23–24). Held under a load, it is to be bowed down: Israel afflicted with burdens in Egypt (Exo 1:11), the toil God gave men to be occupied with (Ecc 1:13), the soul humbled by fasting on יוֹם הַכִּפֻּרִים (Lev 23:27–32); from it come עָנִי “afflicted, poor” and עָנָו “humble”, and scripture keeps the two together: “answer me, for I am afflicted” (Psa 86:1). Cognates show ʿ behind both, and Arabic keeps “attend to a need” and “toil, captivity, lowliness” in one root, so one older sense is likely though not shown; the purpose words (לְמַעַן; מַעֲנֶה “answer” and “purpose”, Pro 16:1, 4) go with answering, while the link of עֵת “time” and עַתָּה “now” is not clear.",
   "words": [
     {
       "lemma": "עַתָּה",
@@ -109,7 +110,7 @@
       "bdb": [
         "p.dt.ac"
       ],
-      "summary": "A point or span of time, especially the time when something happens or is fitting. Phoenician ʿt “time, season” and Ugaritic ʿnt “now” are its cognates; how it relates to the verbs of the root is not clear.",
+      "summary": "A point or span of time, especially the time when something happens or is fitting. Phoenician ʿt “time, season” and Ugaritic ʿnt “now” are its cognates; how it relates to the verbs of the root is not clear. Arabic ʿanā also means “it befell, occurred”, and scripture sets עֵת beside פֶּגַע “chance” (Ecc 9:11) and speaks of “the times that passed over” David (1Ch 29:30): it may be “what befalls”, but this is not shown.",
       "cognate_ids": [
         "phn-t-time",
         "uga-nt-now"
@@ -403,14 +404,15 @@
     {
       "lemma": "עָנָה",
       "pos": "verb",
-      "gloss": "answer, respond; testify",
+      "gloss": "answer, respond, attend to; testify; answer in song",
       "bdb": [
         "p.dt.aa"
       ],
-      "summary": "To answer: to reply to words, to respond to a call or a situation, and of Yahweh to answer prayer by acting. Before a court it is to testify (“answer against”). Ugaritic ʿny “answer” and mʿn “answer, reply” (= מַעֲנֶה) show ʿ, the same sound as the humbling verb.",
+      "summary": "To answer: to take up what someone has said, or the occasion itself (“answered and said” where no one has spoken), and to meet a need. Of Yahweh it is to attend to the one who calls and act for him; the heavens “answer” the earth with rain (Hos 2:23–24), and the king who would “answer” the people is the one who pleases them (1Ki 12:7; 2Ch 10:7). Before a court it is to testify (“answer against”), and in worship to answer in song (Exo 15:21; Ezr 3:11). Ugaritic ʿny “answer” and mʿn “answer, reply” show ʿ, the same sound as the humbling verb.",
       "cognate_ids": [
         "uga-ny-answer",
-        "arc-ane-answer"
+        "arc-ane-answer",
+        "ar-uniya-attend"
       ],
       "stems": [
         {
@@ -495,8 +497,8 @@
               ]
             },
             {
-              "gloss": "respond (of things)",
-              "definition": "Of the created order: answer in turn, as one part supplies what another needs.",
+              "gloss": "answer (a need), supply",
+              "definition": "Meet what another lacks: the heavens with rain, the earth with grain, Yahweh with water for the thirsty; money meets every demand.",
               "evidence": [
                 {
                   "ref": "Hos.2.23",
@@ -507,6 +509,11 @@
                 {
                   "ref": "Ecc.10.19",
                   "note": "“Money answers everything.”"
+                },
+                {
+                  "ref": "Isa.41.17",
+                  "role": "defining",
+                  "note": "“The afflicted and the needy seek water and there is none… I Yahweh will answer them”: the answer is rivers on the bare heights (41:18)."
                 }
               ]
             },
@@ -533,6 +540,74 @@
                   "note": "A false witness rising “to testify against him”."
                 }
               ]
+            },
+            {
+              "gloss": "grant, comply (with a request)",
+              "definition": "Answer someone's request by doing what they ask.",
+              "evidence": [
+                {
+                  "ref": "1Ki.12.7",
+                  "role": "defining",
+                  "note": "“If today you will be a servant to this people and serve them and answer them (וַעֲנִיתָם) and speak good words to them, they will be your servants for ever.”"
+                },
+                {
+                  "ref": "2Ch.10.7",
+                  "note": "The same counsel has “please them” (וּרְצִיתָם) in its place."
+                }
+              ]
+            },
+            {
+              "gloss": "answer in song, sing responsively; shout",
+              "definition": "Take up a song in answer to another party, or raise a shout; nearly every use is a response (Miriam to the men's song, the women to one another, the people in praise).",
+              "evidence": [
+                {
+                  "ref": "Exo.15.21",
+                  "role": "defining",
+                  "note": "“Miriam answered (sang to) them: Sing to Yahweh, for he has triumphed gloriously.”"
+                },
+                {
+                  "ref": "1Sa.18.7",
+                  "role": "defining",
+                  "note": "The women sang as they danced: “Saul has struck his thousands, and David his ten thousands.”"
+                },
+                {
+                  "ref": "Num.21.17",
+                  "role": "defining",
+                  "note": "Israel sang this song: “Spring up, well! Sing to it.”"
+                },
+                {
+                  "ref": "Psa.147.7",
+                  "note": "“Sing to Yahweh with thanksgiving”, parallel זַמְּרוּ “make music”."
+                },
+                {
+                  "ref": "Isa.27.2",
+                  "note": "“A pleasant vineyard, sing of it.”"
+                },
+                {
+                  "ref": "1Sa.21.12",
+                  "note": "The song the women sang of Saul and David."
+                },
+                {
+                  "ref": "Jer.25.30",
+                  "note": "A shout (הֵידָד) like those who tread grapes."
+                },
+                {
+                  "ref": "Jer.51.14"
+                },
+                {
+                  "ref": "Ezr.3.11",
+                  "role": "defining",
+                  "note": "“They answered (sang responsively) in praising and giving thanks to Yahweh: for he is good.”"
+                },
+                {
+                  "ref": "1Sa.29.5",
+                  "note": "“David, of whom they answered one another in dances.”"
+                }
+              ],
+              "id": "answer-in-song",
+              "cognate_ids": [
+                "ar-ghanna-sing"
+              ]
             }
           ]
         },
@@ -552,6 +627,30 @@
                 {
                   "ref": "Ezk.14.7"
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "sing",
+          "senses": [
+            {
+              "gloss": "sing",
+              "definition": "The sound of singing.",
+              "evidence": [
+                {
+                  "ref": "Exo.32.18",
+                  "role": "defining",
+                  "note": "“Not the sound of a cry of victory or of defeat; the sound of singing (עַנּוֹת) I hear.”"
+                },
+                {
+                  "ref": "Psa.88.1",
+                  "note": "In a heading: לְעַנּוֹת “for singing”, or “for afflicting”, the psalm's own theme (88:8, 10)."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ghanna-sing"
               ]
             }
           ]
@@ -584,6 +683,29 @@
               },
               {
                 "ref": "Jon.2.3"
+              }
+            ]
+          },
+          {
+            "lemma": "זִמֵּר",
+            "note": "Singing beside making music.",
+            "evidence": [
+              {
+                "ref": "Psa.147.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שִׁיר",
+            "note": "The song sung in answer.",
+            "evidence": [
+              {
+                "ref": "Exo.15.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.21.17"
               }
             ]
           }
@@ -619,16 +741,17 @@
     {
       "lemma": "עָנָה",
       "pos": "verb",
-      "gloss": "be bowed down, be lowly; humble, afflict",
+      "gloss": "be bowed down (under a load); humble, afflict; be occupied with toil",
       "bdb": [
         "p.dv.aa"
       ],
-      "summary": "To bring or be brought low: oppression and rape, Yahweh's humbling of Israel to teach them, and the humbling of one's own soul by fasting, above all on יוֹם הַכִּפֻּרִים. The servant of Isa 53 is “afflicted” (Isa 53:4, 7). Ugaritic ʿnw “be downcast”, Arabic ʿanā “be lowly, submissive” and Phoenician ʿny “subdue” all show ʿ.",
+      "summary": "To be bowed down under a load, or to bow another down: hard labour and oppression (Exo 1:11; Deu 26:6), force against a woman, binding a strong man (Jdg 16:5), Yahweh's humbling of Israel to teach them (Deu 8:2–3), and the humbling of one's own soul by fasting, above all on יוֹם הַכִּפֻּרִים. In Ecclesiastes it is the toil God has given men to be occupied with (Ecc 1:13; 3:10), and the Peshitta's same verb is devoting oneself to fasting and prayer (1Co 7:5). The servant of Isa 53 is “afflicted” (Isa 53:4, 7). Ugaritic ʿnw “be downcast”, Arabic ʿanā “be lowly; concern, trouble” and Phoenician ʿny “subdue” all show ʿ.",
       "cognate_ids": [
         "uga-nw-downcast",
         "ar-ana-humble",
         "ar-anna-trouble",
-        "phn-ny-subdue"
+        "phn-ny-subdue",
+        "ar-ana-concern"
       ],
       "stems": [
         {
@@ -799,7 +922,7 @@
         },
         {
           "stem": "qal",
-          "gloss": "be low, be afflicted; be cowed",
+          "gloss": "be low, be afflicted; be cowed; be occupied (with toil)",
           "senses": [
             {
               "id": "be-afflicted",
@@ -827,6 +950,26 @@
                 {
                   "ref": "2Co.4.13"
                 }
+              ]
+            },
+            {
+              "id": "be-occupied",
+              "gloss": "be occupied (with toil)",
+              "definition": "Be taken up with a hard task: the labour laid on men under the sun, which bows them down.",
+              "evidence": [
+                {
+                  "ref": "Ecc.1.13",
+                  "role": "defining",
+                  "note": "“An evil business (עִנְיַן) God has given to the sons of man to be occupied with it (לַעֲנוֹת בּוֹ).”"
+                },
+                {
+                  "ref": "Ecc.3.10",
+                  "role": "defining",
+                  "note": "The same words."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ana-concern"
               ]
             }
           ]
@@ -935,7 +1078,7 @@
         },
         {
           "stem": "hiphil",
-          "gloss": "afflict",
+          "gloss": "afflict; keep occupied",
           "senses": [
             {
               "gloss": "afflict",
@@ -949,6 +1092,20 @@
                 {
                   "ref": "2Ch.6.26"
                 }
+              ]
+            },
+            {
+              "gloss": "keep (someone) occupied",
+              "definition": "Of God: keep a man taken up with something.",
+              "evidence": [
+                {
+                  "ref": "Ecc.5.19",
+                  "role": "defining",
+                  "note": "“He will not much remember the days of his life, for God keeps him occupied (מַעֲנֶה) with the joy of his heart.” It can also be read “God answers him in the joy of his heart”."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ana-concern"
               ]
             }
           ]
@@ -1192,7 +1349,7 @@
       "bdb": [
         "p.dv.af"
       ],
-      "summary": "The state of being brought low: oppression, misery, want. Yahweh sees and hears it.",
+      "summary": "The state of being brought low: oppression, misery, want, set beside toil (Gen 31:42; Deu 26:7; Psa 25:18). Yahweh sees and hears it.",
       "senses": [
         {
           "gloss": "affliction, misery",
@@ -1281,6 +1438,32 @@
             "evidence": [
               {
                 "ref": "Deu.16.3"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "עָמָל",
+            "note": "Affliction beside toil.",
+            "evidence": [
+              {
+                "ref": "Deu.26.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.25.18",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יְגִיעַ",
+            "note": "Jacob's affliction is the labour of his hands.",
+            "evidence": [
+              {
+                "ref": "Gen.31.42",
+                "role": "defining"
               }
             ]
           }
@@ -1575,65 +1758,11 @@
       }
     },
     {
-      "lemma": "עָנָה",
-      "pos": "verb",
-      "gloss": "be occupied, busy oneself",
-      "bdb": [
-        "p.du.aa"
-      ],
-      "summary": "Only in Ecclesiastes: the labour God has given men to be occupied with. Arabic ʿanā “concern, occupy (the mind)” shows ʿ, and the Peshitta's ܥܢܐ means “be occupied” as well as “answer”.",
-      "cognate_ids": [
-        "ar-ana-concern"
-      ],
-      "stems": [
-        {
-          "stem": "qal",
-          "gloss": "be occupied, busy oneself",
-          "senses": [
-            {
-              "id": "be-occupied",
-              "gloss": "be occupied with",
-              "definition": "Be taken up with a task.",
-              "evidence": [
-                {
-                  "ref": "Ecc.1.13",
-                  "role": "defining",
-                  "note": "“An evil business (עִנְיַן) God has given to the sons of man to be occupied with it (לַעֲנוֹת בּוֹ).”"
-                },
-                {
-                  "ref": "Ecc.3.10",
-                  "role": "defining",
-                  "note": "The same words."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "stem": "hiphil",
-          "gloss": "keep occupied",
-          "senses": [
-            {
-              "gloss": "keep (someone) occupied",
-              "definition": "Of God: keep a man taken up with something.",
-              "evidence": [
-                {
-                  "ref": "Ecc.5.19",
-                  "role": "defining",
-                  "note": "“He will not much remember the days of his life, for God keeps him occupied (מַעֲנֶה) with the joy of his heart.”"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "lemma": "עְנָא",
       "lang": "syc",
       "pos": "verb",
       "gloss": "be occupied, devote oneself",
-      "summary": "A second Peshitta use of the Syriac verb (SEDRA lexeme 2363), “be occupied with”, matching Ecclesiastes' עָנָה.",
+      "summary": "A second Peshitta use of the Syriac verb (SEDRA lexeme 2363): to be taken up with something, matching Ecclesiastes' עָנָה. At 1Co 7:5 it is devoting oneself to fasting and prayer, what Hebrew calls humbling the soul (Lev 23:27; Isa 58:3).",
       "cognate_ids": [
         "ar-ana-concern"
       ],
@@ -1666,120 +1795,13 @@
                 }
               ],
               "kin": [
-                "be-occupied"
+                "be-occupied",
+                "afflict-soul"
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "lemma": "עָנָה",
-      "pos": "verb",
-      "gloss": "sing (in response), chant",
-      "bdb": [
-        "p.dw.aa"
-      ],
-      "summary": "Singing or chanting, often one group answering another (Exo 15:21; 1Sa 18:7). Arabic ġannā “sing” shows ġ, a different older sound from answering (ʿ); but these uses can also be read as “answer in song”, so whether they are a separate root is not settled.",
-      "cognate_ids": [
-        "ar-ghanna-sing"
-      ],
-      "stems": [
-        {
-          "stem": "qal",
-          "gloss": "sing, chant (responsively); shout",
-          "senses": [
-            {
-              "gloss": "sing, chant in response",
-              "definition": "Sing or chant, most often one party taking up a song in answer to another.",
-              "evidence": [
-                {
-                  "ref": "Exo.15.21",
-                  "role": "defining",
-                  "note": "“Miriam answered (sang to) them: Sing to Yahweh, for he has triumphed gloriously.”"
-                },
-                {
-                  "ref": "1Sa.18.7",
-                  "role": "defining",
-                  "note": "The women sang as they danced: “Saul has struck his thousands, and David his ten thousands.”"
-                },
-                {
-                  "ref": "Num.21.17",
-                  "role": "defining",
-                  "note": "Israel sang this song: “Spring up, well! Sing to it.”"
-                },
-                {
-                  "ref": "Psa.147.7",
-                  "note": "“Sing to Yahweh with thanksgiving”, parallel זַמְּרוּ “make music”."
-                },
-                {
-                  "ref": "Isa.27.2",
-                  "note": "“A pleasant vineyard, sing of it.”"
-                },
-                {
-                  "ref": "1Sa.21.12",
-                  "note": "The song the women sang of Saul and David."
-                },
-                {
-                  "ref": "Jer.25.30",
-                  "note": "A shout (הֵידָד) like those who tread grapes."
-                },
-                {
-                  "ref": "Jer.51.14"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "stem": "piel",
-          "gloss": "sing",
-          "senses": [
-            {
-              "gloss": "sing",
-              "definition": "The sound of singing.",
-              "evidence": [
-                {
-                  "ref": "Exo.32.18",
-                  "role": "defining",
-                  "note": "“Not the sound of a cry of victory or of defeat; the sound of singing (עַנּוֹת) I hear.”"
-                },
-                {
-                  "ref": "Psa.88.1",
-                  "note": "In a heading: לְעַנּוֹת “for singing”(?)."
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "usage": {
-        "parallels": [
-          {
-            "lemma": "זִמֵּר",
-            "note": "Singing beside making music.",
-            "evidence": [
-              {
-                "ref": "Psa.147.7",
-                "role": "defining"
-              }
-            ]
-          },
-          {
-            "lemma": "שִׁיר",
-            "note": "The song sung in answer.",
-            "evidence": [
-              {
-                "ref": "Exo.15.21",
-                "role": "defining"
-              },
-              {
-                "ref": "Num.21.17"
-              }
-            ]
-          }
-        ]
-      }
     },
     {
       "lemma": "מַעֲנֶה",
@@ -1854,10 +1876,11 @@
       "bdb": [
         "p.du.ab"
       ],
-      "summary": "Only in Ecclesiastes: the toil and concern men are taken up with under the sun. The noun of “be occupied”.",
+      "summary": "Only in Ecclesiastes: the task men are taken up with under the sun, set beside עָמָל “toil” as עֳנִי “affliction” is elsewhere (Ecc 2:22–23; 4:8; Deu 26:7). The noun of the verb's “be occupied (with toil)”.",
       "cognate_ids": [
         "ar-ana-concern",
-        "arc-inyana"
+        "arc-inyana",
+        "ar-anna-trouble"
       ],
       "senses": [
         {
@@ -1900,7 +1923,25 @@
             "be-occupied"
           ]
         }
-      ]
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עָמָל",
+            "note": "The occupation beside the toil, sleepless and joyless.",
+            "evidence": [
+              {
+                "ref": "Ecc.2.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.4.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "lemma": "עֲנָוָה",
@@ -2367,14 +2408,14 @@
       "translit": "ʿannā; ʿanāʾ",
       "gloss": "cause to suffer distress or trouble; (ʿanāʾ) distress, hardship",
       "relation": "cognate",
-      "note": "Lane: “He caused him to suffer difficulty, distress, or trouble… caused him to grieve”, as the piel afflicts.",
+      "note": "Lane: “He caused him to suffer difficulty, distress, or trouble… caused him to grieve”, as the piel afflicts. Form V تعنّى “he imposed upon himself the suffering of difficulty” is the same stem and sense as the hithpael הִתְעַנָּה.",
       "sounds": {
         "ע": "ʿ"
       },
       "evidence": [
         {
           "source": "lane",
-          "locator": "p. 2180, root عنى, عنّاهُ (n30837), عَنَآءٌ (n30843)"
+          "locator": "p. 2180, root عنى, عنّاهُ (n30837), عَنَآءٌ (n30843); تعنّى (n30839)"
         }
       ]
     },
@@ -2420,8 +2461,8 @@
       "form": "غَنَّى",
       "translit": "ġannā; ġināʾ",
       "gloss": "sing, chant; (ġināʾ) song",
-      "relation": "cognate",
-      "note": "Lane: “He sang, or chanted… prolonged his voice and modulated it sweetly.” It has ġ, where answering and humbling have ʿ.",
+      "relation": "possible",
+      "note": "Lane: “He sang, or chanted… prolonged his voice and modulated it sweetly.” It has ġ, where answering and humbling have ʿ, and its D-stem matches the Piel עַנּוֹת (Exo 32:18; Isa 27:2). But scripture's singing with עָנָה is answering in song, so it is kept as possible only.",
       "sounds": {
         "ע": "ġ"
       },
@@ -2472,6 +2513,24 @@
         {
           "source": "jastrow-1903",
           "locator": "P00993, עִנְיָנָא (Targ. Ps. 19:5)"
+        }
+      ]
+    },
+    {
+      "id": "ar-uniya-attend",
+      "lang": "ar",
+      "form": "عُنِيَ بِ",
+      "translit": "ʿuniya bi-; ʿanā llāhu bihi; ʿānā (III)",
+      "gloss": "be occupied with, attend to (a need); (of God) take care of, preserve; (III) tend, treat (the sick); contend with",
+      "relation": "possible",
+      "note": "Lane: عُنِيتُ بِحَاجَتِكَ “I became occupied with thy want”; عَنَى ٱللّٰهُ بِهِ “God preserved him”, said to be from attending to his want; III عَانَيْتُ المَرِيضَ “I treated the sick person”, and “he contended, disputed with him”. It is the same verb as “concern, trouble”: a possible bridge between answering (attending to someone) and being bowed down under a load, not shown.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2180, root عنى, عُنِىَ بِالأَمْرِ and عَنَى ٱللّٰهُ بِهِ (in n30836); عاناهُ (n30838)"
         }
       ]
     }
@@ -2660,5 +2719,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-11 for Lev 23 (23:27, 29, 32). SOUNDS behind ע: answer (Ugaritic ʿny, mʿn; Aramaic ʿny), humble/afflict (Ugaritic ʿnw (Segert's query), Arabic ʿnw/ʿny, Phoenician ʿny piel “subdue”), be occupied (Arabic ʿanā “concern, occupy”), now/time (Ugaritic ʿnt, Phoenician ʿt) all show ʿ. Only “sing” has a ġ cognate (Arabic ġannā). So answer and afflict are NOT a ʿ/ġ split: whether they are one older root or two is not decided by sounds; Segert lists ʿny and ʿnw as separate Ugaritic roots. Arabic ġaniya “be free from want, rich” (Lane p. 2301, n32540) is a ġ root of the opposite meaning to עָנִי; not recorded as a cognate. Whether “sing” is its own root (ġny) or “answer in song” is open: Exo 15:21 and 1Sa 18:7 read well either way. Syriac ʿānā “flock” (SEDRA 2364, Arabic ġanam) is another root; not recorded. TIME/NOW and PURPOSE words: עֵת, עַתָּה, עִתִּי, כְּעַן, כְּעֶנֶת are kept as the brief files them under the root (the n of Ugaritic ʿnt and Aramaic כְּעַן, כְּעֶנֶת supports *ʿnt); whether they share the verbs' root is not shown. Akkadian enna/inanna “now” (Oracc) might belong with them; not recorded. מַעַן/יַעַן: no cognate shares them; Arabic maʿnā recorded as possible only. עֹנָה (Exo 21:10) and מַעֲנָה “furrow” links unclear. BDB KEYS: the four verb keys overlap by spelling (p.du.aa and p.dv.aa list the same 87 tokens; p.dt.aa and p.dw.aa the same 11), so lexicon-support overcounts the “be occupied” and “sing” verbs and undercounts “answer”. Most “answer” tokens (Gen 18:27, 1Ki 18:37 etc.) are analysed in the database under root עונ, not ענה, so they are not counted at all: a root-analysis fault in the generated data to report, not fixable here. xp.ai.aa (Aramaic answer) also counts 5 tokens of the name Anath (Jos 19:38, Jdg 1:33, 3:31, 5:6). מַעֲנִית (p.du.ad, 0 tokens) is folded into מַעֲנָה; Psa 129:3 cited there. Cross-reference keys with no tokens (j.cg.ag, l.bq.ak, m.cz.ak, m.cz.al, p.dx.ae, p.dx.ag, p.gh.aj, p.gi.ad, w.bh.aj, xk.af.ae, xp.ak.af) are left off. LEFT OUT (names): עֲנָה Anah (p.dw.ab), עַתַּי Attai (p.dt.af), עֵת קָצִין (p.dt.ad), עֲנָת Anath, בַּעֲנָה, עֻנִּי, בֵּית עֲנוֹת. KETIV/QERE: עָנָו and עָנִי interchange in written and read forms (Num 12:3; Psa 9:13; Pro 3:34; and others), so the two adjectives' token lists may be split by which form is counted. PESHITTA: the brief found no Peshitta root because SEDRA keys it ענא; lexemes 2362 (answer, 158) and 2363 (be occupied, 5; its 1Co 9:7 token is ‘flock’ mislabelled and is not cited) are used here. The Peshitta renders “humble/meek” with other roots. UNVERIFIED: Krahmalkov page numbers are from the local text extraction only (no PDF renderer), page unverified. Segert pp. 192 and 196 were checked against the page images (leaves n219, n223). Not consulted: Old South Arabian (Biella's OCR is too damaged to search; Segert cites ESA ʿnw “be humble”), Ge'ez (Dillmann, Leslau), Akkadian for answer/humble. Aramaic עֲנֵי “tarry, be detained” (Jastrow P00973, Pa.) resembles Arabic ʿnw II “confine”; not recorded. Num 12:3 and Psa 37:11 עָנָו tokens may sit under the read form's key; check counts in lexicon-support. Isa 53:8 עֹצֶר, quoted at Act 8:33, is in the atsar entry."
+  "note": "RE-EVALUATED 2026-11-12 (user asked for one unifying sense). Folded: Ecclesiastes' “be occupied” (p.du.aa) is now a sense of the afflict verb (toil: עֳנִי and עִנְיָן both stand beside עָמָל, Gen 31:42; Deu 26:7; Psa 25:18; Ecc 2:22–23; 4:8; Exo 1:11; Peshitta ʿnā at 1Co 7:5); “sing” (p.dw.aa) is now answering in song under the answer verb, Arabic ġannā demoted to possible. Their BDB keys list the same tokens as p.dv.aa and p.dt.aa, so dropping them loses no uses. Bridge between answer and afflict: Arabic عنى “attend to a need / be troubled, toil” (ar-uniya-attend, possible); scripture pairs them (Psa 86:1; Isa 58:3, 9, 10; Deu 26:5–7; Psa 22:22, 25) and some verses read either way (Rut 1:21; Psa 55:20; 1Ki 8:35; 2Sa 22:36 beside Psa 18:36). Against: Ugaritic lists ʿny and ʿnw apart (but tʿn hides the third letter), Arabic has no speech sense; the w/y third letter does not separate the senses (עָנָו, עֲנָוָה w; עָנִי, עֳנִי, תַּעֲנִית y). Rated likely, not shown. Akkadian enû “change, revoke” not recorded. Drafted 2026-11-11 for Lev 23 (23:27, 29, 32). SOUNDS behind ע: answer (Ugaritic ʿny, mʿn; Aramaic ʿny), humble/afflict (Ugaritic ʿnw (Segert's query), Arabic ʿnw/ʿny, Phoenician ʿny piel “subdue”), be occupied (Arabic ʿanā “concern, occupy”), now/time (Ugaritic ʿnt, Phoenician ʿt) all show ʿ. Only “sing” has a ġ cognate (Arabic ġannā). So answer and afflict are NOT a ʿ/ġ split: whether they are one older root or two is not decided by sounds; Segert lists ʿny and ʿnw as separate Ugaritic roots. Arabic ġaniya “be free from want, rich” (Lane p. 2301, n32540) is a ġ root of the opposite meaning to עָנִי; not recorded as a cognate. Whether “sing” is its own root (ġny) or “answer in song” is open: Exo 15:21 and 1Sa 18:7 read well either way. Syriac ʿānā “flock” (SEDRA 2364, Arabic ġanam) is another root; not recorded. TIME/NOW and PURPOSE words: עֵת, עַתָּה, עִתִּי, כְּעַן, כְּעֶנֶת are kept as the brief files them under the root (the n of Ugaritic ʿnt and Aramaic כְּעַן, כְּעֶנֶת supports *ʿnt); whether they share the verbs' root is not shown. Akkadian enna/inanna “now” (Oracc) might belong with them; not recorded. מַעַן/יַעַן: no cognate shares them; Arabic maʿnā recorded as possible only. עֹנָה (Exo 21:10) and מַעֲנָה “furrow” links unclear. BDB KEYS: Most “answer” tokens (Gen 18:27, 1Ki 18:37 etc.) are analysed in the database under root עונ, not ענה, so they are not counted at all: a root-analysis fault in the generated data to report, not fixable here. xp.ai.aa (Aramaic answer) also counts 5 tokens of the name Anath (Jos 19:38, Jdg 1:33, 3:31, 5:6). מַעֲנִית (p.du.ad, 0 tokens) is folded into מַעֲנָה; Psa 129:3 cited there. Cross-reference keys with no tokens (j.cg.ag, l.bq.ak, m.cz.ak, m.cz.al, p.dx.ae, p.dx.ag, p.gh.aj, p.gi.ad, w.bh.aj, xk.af.ae, xp.ak.af) are left off. LEFT OUT (names): עֲנָה Anah (p.dw.ab), עַתַּי Attai (p.dt.af), עֵת קָצִין (p.dt.ad), עֲנָת Anath, בַּעֲנָה, עֻנִּי, בֵּית עֲנוֹת. KETIV/QERE: עָנָו and עָנִי interchange in written and read forms (Num 12:3; Psa 9:13; Pro 3:34; and others), so the two adjectives' token lists may be split by which form is counted. PESHITTA: the brief found no Peshitta root because SEDRA keys it ענא; lexemes 2362 (answer, 158) and 2363 (be occupied, 5; its 1Co 9:7 token is ‘flock’ mislabelled and is not cited) are used here. The Peshitta renders “humble/meek” with other roots. UNVERIFIED: Krahmalkov page numbers are from the local text extraction only (no PDF renderer), page unverified. Segert pp. 192 and 196 were checked against the page images (leaves n219, n223). Not consulted: Old South Arabian (Biella's OCR is too damaged to search; Segert cites ESA ʿnw “be humble”), Ge'ez (Dillmann, Leslau), Akkadian for answer/humble. Aramaic עֲנֵי “tarry, be detained” (Jastrow P00973, Pa.) resembles Arabic ʿnw II “confine”; not recorded. Num 12:3 and Psa 37:11 עָנָו tokens may sit under the read form's key; check counts in lexicon-support. Isa 53:8 עֹצֶר, quoted at Act 8:33, is in the atsar entry."
 }
