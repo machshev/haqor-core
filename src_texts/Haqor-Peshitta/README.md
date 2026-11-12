@@ -13372,53 +13372,106 @@ Source checks for Revelation 1:
 Source checks for Revelation 2:
 
 - Reviewed all 29 verses and 441 source positions against the exact forms,
-  complete gloss alternatives, numeric morphology, and continuous English.
-  Possessive datives, anticipatory genitives, and copular/resumptive pronouns
-  are rendered idiomatically. Short contiguous constructions group the words
-  needed for English grammar, including the four-word tree-of-life infinitive
-  in 2:7 and the four-word negative copular clause in 2:9.
+  vocalization, complete gloss alternatives, numeric morphology, suffixes,
+  clause boundaries, and continuous English. Reduced 79 original shared
+  spans to 15 narrow existential-possession exceptions. These link only
+  have/has, or negative possession lack in 2:24, to the existential and
+  pronominal dative. Ordinary noun phrases, modifiers, auxiliaries,
+  negatives, subjects, relatives, and copulas have separate owners.
+  Unchanged verses 8, 26, and 28 were included in the review.
 - The supplied text differs materially from the Murdock reference: 2:1 has
   neither “all things,” “right,” nor a second “seven”; 2:5 says “went out,”
   omits an early repentance command, “quickly,” and “from its place”; 2:7
   says “God,” without “my”; 2:9 and 2:13 omit “your works.” These words
   are not imported from familiar English versions.
-- Revelation 2:8 has perfect “came to life.” In 2:10 the opening second-person
-  singular changes to plural for the prisoners, testing, exhortation, and
-  promised crown. The hearing formulas retain plural “ears.” The imperative
-  “repent” belongs to 2:16, following “Likewise” at the end of 2:15.
-- Revelation 2:13 is difficult in the supplied text. The vocalized verb at
-  position 14 is second-person singular perfect, rendered “you contended.”
-  Both witness phrases remain. The first is interpreted as a coordinated
-  nominal predicate with an implicit copula and inherited second-person
-  subject: “and were my own faithful witness.” In the second, “is faithful”
-  is read as the predicate, followed by an extraposed restrictive relative,
-  “who from among you was killed.” This is an uncertain syntactic reading,
-  not an unambiguous identification of the witness. No “Antipas,” “spectacle,”
-  “with,” or additional statement of Satan's dwelling is supplied.
+- In 2:2, I and know, the relative/negative particle and ability predicate,
+  and the apostles noun and plural copula are separately owned. English
+  can/not is joined without a space to give cannot. In 2:3 and 2:21,
+  conjunctions and negatives retain their own source word, while English
+  auxiliaries stay with their predicates. In 2:4, this is supplied English
+  cataphoric framing for the following that-clause, not a source
+  demonstrative. Both link to the relative-prefixed love word; the prefix
+  owns that, while your/love and first retain their separate owners. In 2:5 and 2:16, the explicit
+  first-person pronouns are separate from the coming/moving participles.
+- In 2:6 and 2:23, repeated ANA is rendered “I myself.” The full pronoun
+  supplies the emphasis and the enclitic the subject: 2:6 positions 8/10
+  and 2:23 positions 6/7 respectively. The full relative-prefixed pronoun
+  also owns the relative or complement marker. Compare Muraoka, A Basic
+  Grammar of Classical Syriac, §§10 and 74. No unsupported also is supplied
+  for either repeated-pronoun construction.
+- In 2:7, to eat, from, tree, and of life have individual owners; the
+  demonstrative and relative-existential phrase are separately rendered
+  “the one / which is.” The hearing formulas retain plural ears.
+  Revelation 2:8 has perfect “came to life.” In 2:9, the concessive linker,
+  negation, plural copula, and second Jews noun are separately linked.
+- In 2:10, the opening address is second-person singular, changing to plural
+  for the prisoners, testing, exhortation, and promised crown. “Some of you”
+  renders partitive MIN with its plural suffix, not an extra quantifier;
+  compare Muraoka's partitive example, explanatory note 44 to the
+  Bardaisan chrestomathy text. “Into a house / of confinement” separates the construct
+  compound's two source words. Ten and days, unto and death are also
+  separate. In 2:12, the sword and sharp modifier, two and edges, have
+  separate owners, including the genuine feminine singular possessive its
+  on the plural edges noun, referring to the sword.
+- Revelation 2:13 is difficult in the supplied text. Position 14 is
+  second-person singular perfect, “you contended.” Both witness phrases
+  remain. The first is read as a coordinated nominal predicate with an
+  inherited second-person subject: “and were my own faithful witness.”
+  Muraoka §106 allows omission of an identical subject with coordinate
+  predicates, while warning that first/second-person deletion is rare.
+  In the second phrase, is faithful is the predicate, followed by an
+  extraposed restrictive relative, “who from among you was killed.”
+  This remains an uncertain syntactic reading. An alternative detaches
+  the first witness phrase, treats the causal clause as parenthetical,
+  and resumes with “the one from among you was killed”; the source does
+  not force that punctuation or resumption. No Antipas, spectacle, with,
+  or additional statement of Satan's dwelling is supplied.
   [Dukhrana's verse analysis](https://dukhrana.com/peshitta/analyze_verse.php?font=XenoType+SY+Darmasuq&size=125%25&source=&verse=Revelation+2%3A13)
-  corroborates the forms and records Etheridge's “with” variant; that
+  corroborates the forms and records Etheridge's with variant; that
   preposition is absent from the source used here.
-- In 2:17, “white tally” is a contextual rendering of *hushbana*, whose
-  supplied glosses are “reckoning,” “calculation,” and “account.” The
+- In 2:14–15, each existential possession construction keeps its dative
+  possessor without adding a recipient; the intervening also in 2:15 has
+  its own owner. The imperative repent belongs to 2:16, following Likewise
+  at the end of 2:15. In 2:17, the opening conjunction is explicit, and
+  “the manna, that / which is hidden” separates the demonstrative from
+  the relative-prefixed passive Aphel participle.
+- In 2:17, white tally is a contextual rendering of hushbana, whose supplied
+  glosses are reckoning, calculation, and account. The
   [Comprehensive Aramaic Lexicon](https://cal.huc.edu/oneentry.php?cits=all&lemma=xw%24bn+N)
-  also records a concrete account item and a possible written account slip.
-  That lexical evidence supports the contextual inference of a tally, but
-  does not establish a stone or any specific ritual or civic function.
-  Both occurrences remain linked. “In writing” renders the noun *ktaba*;
-  it is not described as a passive participle. The final verb is perfect,
-  “has received.” No eating verb is supplied for the manna in this verse.
-- Revelation 2:18 has singular “eye” and “Lebanese brass.” In 2:20 the text
-  says “much” and “your woman”; the genuine possessive is retained without
-  deciding whether marriage is meant. The teaching, leading astray, and
-  sacrifices of idols each retain their own source positions. The warnings
-  in 2:5 and 2:22 preserve their conditional “unless” construction.
-- Revelation 2:23 retains “kill with death,” plural “kidneys,” and singular
-  “heart”; no disease is inferred. The ecclesias' knowing is read as the
-  predicted result of the warning. In 2:24 the recipients do not “have” the
-  teaching; no receiving verb is present. In 2:26 both overcoming and keeping
-  are perfect, and no “unto the end” phrase occurs. The infinitive “to tend”
-  in 2:27 continues the grant of authority in 2:26; the breaking verb is
-  active second-person plural, followed by the speaker's perfect “received.”
+  records a concrete account item and a possible written account slip.
+  This supports the contextual inference of a tally, without establishing
+  a stone or specific ritual or civic function. Both tally occurrences
+  remain linked, with white separately owned. In writing renders the
+  noun ktaba, not a passive participle. New and name, relative/negation
+  and one are separately linked. The final verb is perfect, has received.
+  No eating verb is supplied for the manna in this verse.
+- Revelation 2:18 has singular eye and Lebanese brass, with the metal and
+  adjective separately owned. The Son's suffix anticipates of God and
+  does not add another his. In 2:19, latter, your works, the plural copula,
+  and more retain their own owners. In 2:20, the source says much and
+  your woman; the genuine possessive is retained without deciding whether
+  marriage is meant. About, herself, the prophetess noun and its relative,
+  and the feminine copular pronoun are separately linked. Teaching,
+  leading astray, and sacrifices of idols retain their own source words.
+  The warnings in 2:5 and 2:22 preserve their conditional unless.
+- Revelation 2:23 retains kill with death, plural kidneys, and singular
+  heart; no disease is inferred. The ecclesias' participial knowing is
+  read as the predicted result of the warning, with all, ecclesias,
+  and knowing separately owned. To each of you separates the two
+  pronominal/distributive expressions. In 2:24, lack renders negative
+  existential possession; no receiving verb is present. The negative on
+  have not known, the following prohibition, this teaching, and another
+  burden are individually linked. In 2:25, therefore, demonstrative that,
+  relative which, plural possessor, and first-person coming are separate.
+- In 2:26, both overcoming and keeping are perfect, and no unto-the-end
+  phrase occurs. The infinitive to tend in 2:27 continues the grant of
+  authority; its object them is third-person plural. The breaking verb is
+  active second-person plural with no object suffix. The English object
+  them carried into the breaking clause reuses the explicit antecedent
+  pronoun's owner at position 1, keeping the object distinct from the
+  unsuffixed verb at 7. The speaker's perfect received follows.
+  Potter and vessels, for and in this way, I also and have received are
+  separately owned. Verse 28 retains the star and morning genitive.
 
 Source checks for Revelation 3:
 
