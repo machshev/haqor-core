@@ -15194,108 +15194,169 @@ Source checks for Revelation 18:
 
 Source checks for Revelation 19:
 
-- Revelation 19 was checked against all 332 actual source positions, every exported
-  gloss alternative, inflected forms, morphology, suffixes, and the final English
-  owners. All 21 verses retain every source position once in ascending order. Short noun
-  phrases, postpositive particles, possessive constructions, and title units use two or
-  three positions; no whole long clause is hidden in a combined link. Supplied English
-  copulas, articles, relative constructions, and inversion make the running text
-  grammatical without treating dictionary glosses as inflected English.
-
-- In 19:1 and 19:6 the crowds are plural. There is no additional honor noun in 19:1. The
-  three source nouns deliverance, glory, and power are kept in their actual order; the
-  dative supplies the English possession predicate "belong to our God." Both causal
-  particles in 19:2 remain. K'ANIN at 19:2 position 2 is "just," despite the export's
-  incomplete generic KWN glosses; CAL's k'n adjective confirms just/fair/proper. His
-  judgments and his servants retain their masculine singular possessor; her fornication
-  and her plural hands retain their feminine singular possessor. Requiring the servants'
-  blood from her hands preserves TBA and the source's MIN. In 19:3 D'TARTEN is "a second
-  time" and SLĒQ is perfect, "has ascended."
-
-- In 19:4 the source explicitly says "our God," rather than Murdock's unsuffixed God.
-  Twenty-four elders and four living creatures remain separate subjects. The sitting
-  participle is present; "were saying" places the saying participle in the past vision
-  without mislabelling it as a perfect. In 19:5 the source has a voice from the throne,
-  without a come-forth verb. Both ALL quantifiers, "his name," the little, WITH, and the
-  great remain. In 19:6 all three voice comparisons are retained; AMLEK is a
-  third-person singular perfect (form 5), not an active participle. "Has reigned"
-  preserves its completed aspect. There is no OUR suffix on Lord or God there. AHID KUL
-  is the short title "Almighty," not an extra "entirely" after an already complete
-  Almighty rendering.
-
-- In 19:7 the first two first-person plural forms are current rejoicing and exulting;
-  the first-person imperfect gives "let us give." The feast has come, and HIS WIFE has
-  made ready HERSELF. The feast's suffix anticipates "of the Lamb" rather than
-  introducing another possessor. In 19:8 the permission is passive and the clothing
-  clause gives its content. The linen is clean AND bright. The feminine plural nominal
-  TRĪṢĀTHĀ is rendered "upright deeds" with its implicit nominal head; CAL tryc confirms
-  upright/correct. The plural pronominal copula agrees with that predicate in Syriac;
-  English "is" agrees with mass-noun linen.
-
-- In 19:9 the first speech verb is explicitly plural "they said," whereas the second is
-  singular "he said." The beatitude keeps its called plural subject and supper, wedding
-  feast, and Lamb chain. Its final statement retains THESE WORDS, TRUE, OF GOD, and the
-  plural existential; there is no MY suffix. In 19:10 the narrator worshiped him (a
-  perfect action, not an infinitive purpose). The response is "No!" and a separate
-  assertion of being the hearer's fellow servant and that of his brothers; no SEE/LOOK
-  verb is added, and this assertion is not changed into a prohibition against worshiping
-  a fellow servant. The testimony belongs to Jesus. The God-directed imperative retains
-  YATIRAIT's especially/above-all force, and the following GAR is causal "for," not part
-  of the Jesus name link.
-
-- In 19:11 MHAYMNA is "Faithful," supported by CAL mhymn's trustworthy/faithful sense
-  beyond the export's believer gloss. The rider judges and wages war, with present
-  participles. In 19:12 his eyes, his head, many diadems, and a singular written name
-  remain; no extra names or written-on-him clause is imported from Murdock. The except
-  construction combines ELLA EN, and the generic negative knowing construction gives "no
-  one knows except himself." In 19:13 the garment has no possessive suffix. ZLĪʿ is a
-  passive participle; Payne Smith, Compendious Syriac Dictionary p. 117, explicitly
-  gives "mingled, infected" for this form, supporting "mingled with blood" beyond
-  SEDRA's limited draw-out gloss. Both clothing and naming are states; his NAME is
-  called Word of God.
-
-- In 19:14 the plural armies were following HIM; HWA is the actual third-person plural
-  perfect auxiliary, not an additional event. NQYPYN has passive-shaped morphology but
-  the lexical idiom "follow" gives active English following. White horses and white AND
-  clean linen remain. In 19:15 the actual suffix says "their mouth," and NEQTLUN says
-  "they will kill"; neither is silently changed to the singular rider from the
-  reference. There is no two-edged adjective. The separate singular subject will tend
-  THEM, the explicit plural object at position 10, with an iron rod; the next singular
-  subject tramples (a participle). The wrath suffix anticipates God, and AHID KUL again
-  gives Almighty.
-
-- In 19:16 the garments and thighs are both plural, each with HIS as possessor, and both
-  ON phrases remain without an invented conjunction. The inscription is a singular
-  written name, King of kings and Lord of lords. The vocalized MĀRAWĀTHĀ is the plural
-  of lord/master, confirmed by the Classical Syriac dictionary's mara entry; the generic
-  dominion gloss and feminine plural metadata do not override that actual form.
-
-- In 19:17 ANOTHER angel is explicit. He cried and said are perfects, whereas standing
-  and flying are participles. The bird noun is a feminine singular collective, naturally
-  English "birds" alongside the plural come/gather imperatives; no ALL or THIS is
-  imported. In 19:18 all five flesh nouns remain, with commanders of THOUSANDS (the
-  lexical numeral is plural), mighty people, horses and their riders, free and servants,
-  little and great. No additional ALL or free-BORN is supplied.
-
-- In 19:19 the beast's armies and the kings' soldiers remain distinct, with their actual
-  possessors. Gathering is an active participle, and making war is the purpose
-  infinitive. War WITH these opponents gives idiomatic English "against"; no white
-  adjective is supplied for the horse. In 19:20 the capture and casting are passive
-  perfects; the false prophet performed signs before the beast and deceived people BY
-  those signs. The mark, worshipers, and its image remain. BOTH DESCENDED is a separate
-  explicit perfect action before they were cast; there is no ALIVE word. The short final
-  noun phrase retains fire, its burning participle, AND OF sulfur as coordinated
-  genitives. In 19:21 the rest were killed, with the adversative DEYN retained. The
-  sword's suffix anticipates its named rider; the relative instrument repeats that
-  sword. Here HIS mouth is singular, distinct from THEIR mouth in 19:15. The collective
-  bird noun and feminine singular perfect are English plural "all the birds were
-  satisfied," and THEIR flesh retains its genuine plural possessor.
-
-Lexical support: https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A ;
-https://cal.huc.edu/oneentry.php?cits=all&lemma=tryc+A ;
-https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A ;
-https://dukhrana.com/lexicon/PayneSmith/page.php?p=117 ;
-https://assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=8443 .
+- All 21 verses and 332 exact source words were checked for morphology,
+  suffixes, actors, voice, tense, negation, clause ownership and continuous
+  English. All 33 original shared spans were reviewed. Five narrow shared
+  spans remain: temporal after (19:1), possession have (19:10), possession
+  has and exceptive except (19:12), and possession has (19:16). Ordinary
+  nouns, adjectives, numerals, verbs, auxiliaries, pronouns, particles and
+  prepositions have independent owners. English order may differ from
+  source order, and separate spans may share a source word where its prefix,
+  stem, suffix or grammatical contribution requires it.
+- 19:1-3: And is separately linked to the conjunction at 0; only after
+  joins the temporal min batar compound, documented in CAL:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40btr+p.
+  These-things and first-singular perfect I-heard remain independent.
+  A/loud/voice and of/many/crowds have separate noun and modifier owners;
+  crowds is genuinely plural, followed by plural saying. Deliverance,
+  glory and power retain their actual order; no honor noun is added.
+  Belong-to-our-God expresses the dative possession relation in one word,
+  with its genuine first-plural suffix. In 19:2 both causal particles
+  remain. True and just are plural predicates; supplied are belongs to
+  the adjective predicate at 2, not the judgment subject at 3. CAL k'an
+  confirms just/fair, beyond the exported generic kwn glosses:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A.
+  His-judgments has a masculine singular possessor. The/great/harlot is
+  independently linked, followed by who/corrupted/the-earth/with-her-
+  fornication, retaining feminine singular Pael perfect corrupted. He-
+  judged and required are masculine singular perfects; his-servants and
+  her-hands retain genuine masculine and feminine singular possessors,
+  respectively, and hands is plural. In 19:3 a-second-time renders the
+  numeral expression d-tarten. They-said and has-ascended are perfects;
+  her-smoke and for-the-age/of-ages remain separate.
+- 19:4-6: The twenty/four numeral components have separate owners around
+  the written hyphen. Elders and four living-creatures are the subjects
+  of active plural perfect fell-down and worshiped, with and/fell-down
+  separately owned at 0. The source explicitly says our-God. Who-sits
+  is present participial; were-saying is an accompanying participial
+  circumstance in the past vision. In 19:5 a voice from the throne is
+  saying; no came-forth verb is supplied. Praise is second-plural Pael
+  imperative. Both all quantifiers remain, with proleptic plural suffixes;
+  his-servants and his-name have actual masculine singular possessors.
+  Those-who-fear is participial, and little/with/great stays distinct.
+  In 19:6 all three voice comparisons are retained. Of/many/crowds,
+  of/many/waters and of/mighty/thunders have separate noun and adjective
+  owners, and saying is plural. Has-reigned belongs to the masculine
+  singular Aphel perfect at 16, independently of the-Lord and God. No
+  our suffix occurs there. The-holder/of-all separates ahid and kul,
+  retaining the title's full relation rather than linking an independent
+  entirely after Almighty. This follows the same rendering elsewhere in
+  the reviewed book. CAL documents holding and this title:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=%29xyd+A.
+- 19:7-9: We-rejoice and exult are first-plural participial forms; let-us-
+  give is first-plural imperfect with its jussive force, followed by the
+  genuine masculine recipient him and glory. The feast has-come is feminine
+  perfect. The feast's suffix anticipates of-the-Lamb, while his-wife and
+  herself have genuine possessors; has-made/ready independently links the
+  feminine Pael perfect around its reflexive object for natural English.
+  In 19:8 was-granted is passive perfect and to-her is a genuine feminine
+  recipient; to-be-clothed gives the content of the permission, expressed
+  by a feminine singular Ethpaal imperfect clause. In/clean/
+  and-bright/linen separates the noun and both adjectives. For is owned
+  by postpositive gir at 7; the-linen by 6. The feminine plural nominal
+  tritsatha gives the-upright-deeds, with its implicit nominal head; CAL
+  confirms upright/correct:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=tryc+A.
+  Is belongs to explicit feminine plural pronominal copula 9; English
+  singular agrees with mass-noun linen. Of-the-holy-ones is separate.
+  In 19:9 they-said is explicitly plural, the later he-said singular,
+  and both are perfect. Blessed-are belongs to the beatitude noun and
+  proleptic plural suffix; those-who belongs to the following relative.
+  Are/called retains the explicit plural existential and called predicate,
+  followed by supper/of-the-wedding-feast/of-the-Lamb. The later sentence
+  is reordered These/are/true/words/of-God, with are on plural existential
+  16 and true on adjective 14. It neither places a words noun on true nor
+  adds a my suffix absent from the source.
+- 19:10-12: I-fell and worshiped are both first-singular perfect actions,
+  with before/his-feet and genuine masculine him. The response is No,
+  then a positive identification Your-fellow-servant/I-am/and-that-of-your-
+  brothers; no look verb or prohibition against being a servant is supplied.
+  Second-singular possessors and first-singular existential I-am remain.
+  Those/who/have/the-testimony/of-Jesus separates the relative prefix
+  from the joint existential-plus-plural-dative possession predicate.
+  To-God/pay-homage/above-all retains the second-singular imperative and
+  yattirait's especially force. For is linked to postpositive gir at 20,
+  the-testimony to 19, followed by of-Jesus/is/the-spirit/of-prophecy.
+  In 19:11 I-saw is perfect; heaven/opened retains the passive participial
+  state. A/white/horse has independent noun and modifier owners. The rider's
+  sitting and being-called are participial, with Faithful/and-True separate.
+  CAL mhymn confirms Faithful beyond the exported believer gloss:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A.
+  Judges and wages-war are present participles, the latter Aphel, and
+  in-righteousness retains its preposition. In 19:12 But belongs to
+  postpositive deyn at 1, his-eyes to 0; are-like belongs to comparator 2.
+  A-flame/of-fire retains distinct nouns. And-on/his-head/are/many/diadems
+  gives the locative predicate, with supplied are on on at 5 and separate
+  adjective 8/noun 7. And and he are independently linked at 9 and 10;
+  only has joins the existential and masculine singular dative possessor.
+  A-name/written is singular, without extra names or written-on-him words.
+  Which/no-one/knows keeps the generic negative and present knowing
+  participle. Ella en jointly gives except, retaining an exception rather
+  than an independent but-if condition. Himself belongs to explicit hu.
+- 19:13-16: Clothed and mingled are passive participial states. Garment
+  has no possessive suffix. Payne Smith's Compendious Syriac Dictionary,
+  printed p. 117, explicitly gives mingled/infected for zli', supporting
+  mingled-with-blood beyond the export's draw-out gloss:
+  https://dukhrana.com/lexicon/PayneSmith/page.php?p=117.
+  And/is-called belongs to 4 and his-name to 5, followed by the-Word/of-God;
+  the name possessor is the rider. In 19:14 were belongs to plural perfect
+  auxiliary HWA at 3, following to passive-shaped Pael participle 2 in its
+  lexical following idiom. Him is the genuine masculine dative object.
+  White/horses and in/white/and-clean/linen have independent owners.
+  The armies are plural; the clothing participle remains plural.
+  In 19:15 their-mouth genuinely has a plural possessor, and they-will-kill
+  is plural imperfect. Neither is replaced by the familiar singular rider.
+  A/sharp/sword has separate owners, with no two-edged adjective. With-which
+  retains the feminine sword reference. Explicit singular he/will-tend/them
+  keeps the plural object at 10; with-a-rod/of-iron remains separate. The
+  next explicit he/tramples is participial. The wrath suffix anticipates
+  God; the-holder/of-all is separately linked as in 19:6. In 19:16 And/he
+  is independent of shared possession has. Both on phrases remain, with
+  genuine masculine possessors on plural garments and plural thighs.
+  A-name/written is singular. King/of-kings/and-Lord/of-lords has four
+  independent owners. The vocalized marawatha is the plural of lord,
+  despite the export's generic dominion gloss and feminine metadata;
+  the Classical Syriac dictionary records this plural:
+  https://assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=8443.
+- 19:17-19: Another angel is explicit, with first-singular perfect I-saw,
+  participial standing, and perfect cried/said. With-a/loud/voice and
+  to-the/great/supper have separate noun and adjective owners. The bird
+  noun and flying participle are feminine singular collective forms,
+  naturally English birds/that-fly; come and gather-yourselves are plural
+  imperatives, the latter Ethpaal. No all or this is added. In-the-midst/
+  of-heaven and of-God remain independent. In 19:18 so-that-you-may-eat
+  is second-plural imperfect. All five flesh nouns remain with kings,
+  commanders of plural thousands, mighty people, horses and riders,
+  free and servants, little and great. No absent all or free-born is
+  supplied; sitting is participial and on-them retains its plural object.
+  In 19:19 the beast's feminine singular army possessor and the kings'
+  plural soldier possessor are genuinely distinct. Gathering is active
+  Pael participial, and to-wage is a purpose infinitive followed by war.
+  Against renders the two with relations idiomatically in warfare. The-one/
+  sitting/on/the-horse retains the demonstrative and relative participle;
+  his-soldiers has a genuine masculine singular possessor. No white
+  adjective is supplied for this horse.
+- 19:20-21: The beast/was-captured is reordered around the feminine Ethpeal
+  perfect; and/was-captured has independent spans at 0. And-the/false/
+  prophet separately links the ordinary modifier. With-it and before-it
+  retain the context's beast reference; the latter has a feminine suffix.
+  Performed and deceived are masculine singular perfects, with deceived
+  Aphel; by-which has a feminine plural suffix referring to the signs,
+  not an unexpressed instrument. Those/who-received/the-mark/of-the-beast
+  and and-those/who-worshiped/its-image retain all explicit people and
+  perfect actions, with a genuine feminine image possessor. And/both/
+  descended independently links the active plural perfect and numeral;
+  and-were-cast is a separate passive plural perfect. No alive word occurs.
+  Into-the-lake/of/burning/fire/and-of-sulfur separates the lake, genitives,
+  feminine active burning participle and coordinated sulfur. In 19:21
+  And-the-rest/however/were-killed retains postpositive deyn and plural
+  Ethpaal perfect. The sword suffix anticipates the named rider, with
+  by-the-sword/of-the-one/sitting/on/the-horse, then by-that-which/comes-out/
+  from/his-mouth. Here his-mouth has a singular possessor, unlike 19:15.
+  All has a proleptic feminine singular suffix anticipating collective
+  bird; English all-the-birds/were-satisfied naturally renders that noun
+  and feminine singular perfect. From/their-flesh retains the genuine
+  plural possessor without adding an absent all-people clause.
 
 Source checks for Revelation 20:
 
