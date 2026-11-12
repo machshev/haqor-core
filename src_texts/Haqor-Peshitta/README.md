@@ -10753,15 +10753,121 @@ Source checks for Hebrews 11:
 
 Source checks for Hebrews 12:
 
-- In 12:1, the first-person existential/copular construction is rendered “we also have,” with its dative understood grammatically. In 12:6, the Lord is the subject of loving and chastening; the postpositive explanatory particle is rendered once, and the delight-in construction is not changed into selecting sons from among a group.
-- In 12:7, the otherwise unglossed `אינו` introduces the rhetorical question about what son his father does not chasten. It is not an assertion that such a son exists. In 12:9, the fleshly fathers are plural, but the Father of spirits is singular: the third-person feminine plural suffix anticipates the following spirits, rather than supplying an English “our.” The local Murdock reference's plural “spiritual fathers” is not followed.
-- In 12:10, the earthly fathers' desire and chastening auxiliaries belong to their own predicates; God's contrasting purpose is the readers' advantage and participation in his holiness. In 12:11, “afterward” begins the fruit/result clause, not the preceding sorrow clause, and both contrast particles are retained.
-- In 12:14, holiness supplies the antecedent of “without it,” and our Lord is the object of seeing. In 12:15, the root's sprouting/growth, harm, and resulting defilement remain distinct predicates. In 12:16, the figurative human sense of `רפא` is “dissolute,” explicitly attested for this verse in [CAL's rpy entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=rpy+A).
-- In 12:17, the temporal `מן בתר` compound is rendered “thereafter,” rather than requiring an extra English “from”; [CAL lists the compound](https://cal.huc.edu/browseSKEYheaders.php?direction=1&sortkey=mn%40+ahtj+g) as after/hereafter/thereafter. The desire verb and its auxiliary are linked together. Rejection ends at source position 10; the following place/repentance/negative-finding clause gives the reason, without attaching an invented “from the place” to rejection.
-- In 12:18, the indexed source has no word for Murdock's supplied mountain; the touching form is passive/reflexive. In 12:20, the endurance predicate is second-person plural, and the following animal/mountain/stoning clause retains its source terms.
-- In 12:21, the sight is so fearful that Moses speaks; Moses is the subject of the resulting speech clause, not the possessor of the sight. The repeated first-person forms complete the fear/trembling predicates. In 12:22, the assemblies are plural, while 12:23 uses the established “ecclesia” rendering for `עדתא`.
-- In 12:25, the repeated `שאל` forms are Ethpeel, not the Peal “ask” gloss. Nöldeke explicitly records the derived-stem senses “begged to be excused” and “declined” ([Compendious Syriac Grammar, p. 113, end of section 171](https://biblicalstudies.org.uk/pdf/e-books/noldeke_theodor/syriac-grammar_noldeke.pdf)). The linked text consistently renders the verb with its from-relation as “beg off from.” The earthly hearers' failure to escape remains the main predicate; the final comparison makes its elliptical negative polarity explicit.
-- In 12:27, “this” statement is the subject of “shows.” The shaken things are made/created; the separate purpose clause says that the unshaken things may remain. The source's unglossed `עבידא` is read with its making lexeme and plural copula. In 12:29, `אכלתא` describes consuming fire; the unrelated machine gloss “weevil” is not inserted into the verse. Compare the fire/devouring sense in the [Syriac lexical entry for the eating derivative](https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=364).
+- All 29 verses and 434 source positions were checked against exact
+  forms, morphology and connected English. The 110 original shared spans
+  become six narrow exceptions: existential possession, an impersonal
+  fatigue construction, two relative resumptions, a compound temporal
+  relation and an idiomatic comparison. Ordinary noun phrases, titles,
+  negation, auxiliaries and clauses retain separate source owners.
+- In 12:1, ith with lan supplies have, separately from the explicit we,
+  also and the causal/relative prefix. All these witnesses, like and a
+  cloud remain separate. Hadirin describes their surrounding state;
+  the participial form need not be made a passive action upon the
+  witnesses. Compare the surround sense of
+  [CAL ḥdr, Peal 1](https://cal.huc.edu/oneentry.php?cits=all&lemma=xdr+V).
+  Burdens is plural, always belongs to d-bkulzban, and ready, is and
+  for us have separate owners. The contest is set for us, with the
+  dative not made an independent before preposition.
+- In 12:2, the becoming predicate is separate from beginning and
+  perfecter. Joy, its relative/existential word, past auxiliary and
+  for him remain distinct. The speaker endured the cross and showed
+  contempt for shame; and/for splits the conjunction and preposition
+  of al. The final ithev is perfect sat, correcting the baseline's
+  present sits. Right hand, throne and God retain separate links.
+- In 12:3, their own soul and your soul are singular nouns with plural
+  possessors. The feminine impersonal fatigue predicate and affected
+  plural dative together yield you may grow weary; may and the negative
+  remain separate. The following soul-fainting predicate is distinct.
+  In 12:4, the negative, yet, reaching, as far as and blood are separate.
+- In 12:5, the instruction said to the readers, with the perfect saying
+  predicate retained. The first admonition is second-singular and
+  preserves men as of in do not be neglectful of the chastening.
+  Letting the soul faint is causative, separate from the soul noun.
+  The rebuked participle, explicit you and by him remain separately linked.
+- In 12:6, the Lord is the subject of loving and chastening; for is
+  rendered once. In whom combines only the relative prefix on d-hu
+  with its resumed plural preposition; he and delights retain their
+  own owners. This is not a selection of sons out of a group.
+  In 12:7, God deals with the readers as with sons, retaining both
+  comparison and with relation. The unglossed aynaw introduces what
+  son is there. Whom combines the relative prefix with the resumed
+  object dative, separately from not, father and chastening.
+- In 12:8, hwaytun at position 8 is second-plural you have become;
+  the following lkhun is coreferential and rendered yourselves.
+  These belong to the strangers clause, not to everyone being chastened.
+  The negative at 11 belongs to not sons; it cannot own becoming.
+- In 12:9, our fleshly fathers are plural, while the Father of spirits
+  is singular. His third-person feminine plural suffix anticipates
+  spirits and does not supply an English our. Both past auxiliaries
+  in the earthly fathers and our shame clauses retain their own links.
+  In 12:10, for is retained, the time's copula is separate from short,
+  and each past auxiliary belongs to its own desire/chastening predicate.
+  God does so explicitly recovers the shared chastening predicate from
+  position 8 in the elliptical contrasting clause; our advantage and
+  sharing his holiness retain their actual owners.
+- In 12:11, the considering predicate and its own English copula are
+  separate from the nominal copula hi. Joy and sorrow retain their
+  relational prefixes. Both contrast particles are retained, and
+  afterward begins the result clause. Fruits is plural; giving,
+  peace, righteousness, past training and by it remain separate.
+  In 12:12, matul hana is because of this, not these hands. The
+  weakened hands and trembling knees have their own noun/modifier links.
+- In 12:13–14, paths and straight, limb and lame, negation, stumbling
+  and healing are separate. Run after preserves the pursuit verb and
+  its after preposition, including the repeated after before holiness.
+  Every and person are separate, without which refers to holiness,
+  and our Lord is the object of the seeing participle, not its subject.
+- In 12:15, nappeq is an Aphel imperfect bring forth and uphya is the
+  noun growth, correcting the baseline's two verbs sprout and grow.
+  The harming and resulting defilement predicates remain distinct.
+  In 12:16, rpe has the human dissolute sense, with the alternative
+  or explicitly attested for this verse in
+  [CAL rpy, human sense](https://cal.huc.edu/oneentry.php?cits=all&lemma=rpy+A).
+  Who, for and one come from d-b-hda, separately from the food noun,
+  selling predicate and possessed birthright.
+- In 12:17, men batar-ken supplies thereafter, separate from that even.
+  Wishing is perfect with a past auxiliary; English had wished does
+  not invent a when conjunction on that verb. Rejection ends at
+  position 10. The place for repentance and negative finding predicate
+  form the following clause, with no invented from the place relation.
+  The final feminine object it and tears retain their actual owners.
+- In 12:18–19, no mountain noun is supplied to the fire clause. Burning
+  is active and touching is passive/reflexive. Darkness, gloom and
+  tempest retain their conjunctions. The voice and horn are separate,
+  and those who heard it refers back to the masculine voice. Ethpeal
+  eshtelu is their plea to be excused, rendered begged in its negative
+  continuation clause; the continue predicate and passive speaking
+  retain separate source words.
+- In 12:20, mshakhin and hww are third-plural they were able, not
+  second-plural you were able. Etpaqqadu is likewise third-plural
+  they were commanded. This corrects both the baseline rendering and
+  the earlier note's person claim. The negation, endurance, what and
+  commanded predicate remain separately linked. The animal's drawing
+  near, to, mountain and future passive stoning retain their own owners.
+- In 12:21, the sight is so fearful that Moses speaks; he is not its
+  possessor. Fearful, the past auxiliary, sight, Moses and said are
+  distinct. The two first-person forms own I am in their respective
+  afraid and trembling clauses. In 12:22–24, assemblies is plural,
+  ecclesia is singular, and the firstborn are plural. Enrolment in
+  heaven, God as judge, the perfected righteous, the new covenant,
+  mediator and sprinkling of blood retain their separate owners.
+- In 12:25, the repeated SHAAL verbs are Ethpeal beg off, not Peal ask;
+  [CAL šʾl, Ethpeal 1](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%29l+V)
+  records both refusal and asking to be excused. Each from relation is
+  separately linked. All three d-mallel forms are perfect who spoke;
+  the baseline's present speaks at 6 and 25 is corrected. Had kma
+  supplies how much more, while we remains separate. The elided
+  negative escape predicate in the final comparison is explicitly
+  recovered from positions 11–12, rather than assigned to we alone.
+- In 12:26–29, the one whose voice shook the earth has promised and
+  said; fronting but now gives natural English without changing the
+  actor. Again, one and time retain their own links. This statement
+  is the subject of shows. The shaken things are made, with unglossed
+  abide read as made from its making lexeme and plural copula; the
+  separate purpose clause says the unshaken things may remain.
+  Because is retained in the received-kingdom clause. Our God, for,
+  is, consuming and fire are separate; the fire context supplies the
+  consuming sense of akheltha rather than the machine gloss weevil.
 
 Source checks for Hebrews 13:
 
