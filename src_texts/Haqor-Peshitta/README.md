@@ -10376,16 +10376,135 @@ Source checks for Hebrews 8:
 
 Source checks for Hebrews 9:
 
-- Verses 1–5 retain the sanctuary structure and furnishings from the actual source: the earthly holy house, first and inner tabernacles, second veil, golden incense house, ark and covenant overlay, golden urn, manna, Aaron's budding rod, covenant tablets, cherubim, mercy seat, and the source's statement that there is no time to speak about each arranged item.
-- In 9:3, אפי תרעא is retained as the sanctuary curtain/veil compound rather than reduced to the bare “door” gloss for תרעא. The Comprehensive Aramaic Lexicon records the compound sense “curtain or cover of something” in its אפי entry, with the sanctuary-entrance parallel at https://cal.huc.edu/oneentry.php?cits=all&lemma=%29pyn+N; “second veil” also preserves דתרינ and the spatial relation from מנ.
-- In 9:2, אית הוא בה is rendered as the complete past existential “had within it,” and ומתקרא הוא retains its conjunction as “and was called.” In 9:3, the source's דלגו מן אפי תרעא דתרינ construction is rendered as the relative spatial clause “which was within the second veil,” while preserving the established veil compound.
-- Verses 8–10 are read as complete connected predicates: the Spirit makes known that the way of holiness was not yet revealed while the first tabernacle stood; this is a symbol for the time in which offerings were made, followed by the fleshly ordinances clause through correction. Sentence punctuation was checked across the complete chapter paragraph, including the conditional join from 9:13 into 9:14.
-- Verse 10 supplies the English copula and antecedent (“they were only in food and drink...”) for the source's elliptical contrast, while retaining both kinds terms and the fleshly ordinances through correction. Verse 13 keeps postpositive גיר as “For” in “For if,” lets p12 הוו complete the plural relative “those who were defiled,” and assigns p13 ומקדש with its object p14 to the shared blood-and-ashes subject: “were sprinkled ... and sanctified them.” Verse 20 places the colon after “to them,” and verse 23 marks the contrast before the heavenly-things clause.
-- Verses 6–10 preserve the priestly access restrictions and the source's grammar: priests enter the outer tabernacle continually, the high priest enters once yearly with blood for himself and the people's transgression, and the Spirit makes known that the holy way was not yet revealed while the first tabernacle stood. Offerings and sacrifices cannot perfect the conscience, while the fleshly ordinances last until correction.
-- Verses 11–14 keep the Messiah's contrast with the former rites: his great and perfect tabernacle is not hand-made; he enters once with his own blood for eternal redemption; the cleansing contrast is from dead works so that we may serve the living God.
-- Verses 15–17 retain the source's covenant/testament and death grammar. The mediator's death is redemption for those who transgressed the first covenant; where there is a testament, the maker's death is shown, and it has no usefulness while its maker lives. The causal For in 9:16 is rendered in the span owning גיר.
-- Verses 18–23 retain the causal and negative relations: the first covenant was not established without blood; Moses' commanded sprinkling covers the scroll, all the people, the tabernacle, and its service vessels; without shedding blood there is no forgiveness; likenesses of heavenly things are distinguished from the heavenly things requiring a better sacrifice. In 9:19, גיר is included in the opening “For when it was commanded” span.
-- Verses 24–28 preserve the Messiah's true-heaven contrast and all time/repetition roles: the chief priest repeatedly enters yearly with another's blood, whereas the Messiah offers himself once at the end of the age; humans die once and face judgment; the Messiah was offered once and appears a second time without sins for the life of those who await him, retaining the plural suffix in לחייהון and the final “to him” relation.
+- All 28 verses and 454 source positions were checked against the exact
+  forms, morphology and connected English. The 115 original shared spans
+  become seven narrow exceptions: compound spatial/temporal relations,
+  one relative with its resumed pronoun, and two distributive repetitions.
+  Ordinary titles, noun phrases, negation, auxiliaries and clauses are split.
+- In 9:1–2, the existential and past auxiliary retain separate links.
+  Ordinances and service are distinct, and the earthly holy house keeps
+  its noun and modifiers separate. In 9:2, the English in comes from the
+  resumed prepositional pronoun referring to the first tabernacle. The
+  lampstand, table and bread of the Presence retain their actual owners,
+  and and/it was/called separates the calling participle and past auxiliary.
+- In 9:3, l-gaw men supplies the narrow within expression. The second
+  entrance curtain splits entrance from curtain, retaining the lexical
+  curtain use of appay rather than replacing it with faces. Compare
+  [CAL appay, structure compounds and the sanctuary-entrance example](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29pyn+N).
+  The compound takes its gender and number from its second noun, as CAL
+  notes with reference to Nöldeke section 142. Holy and of Holies are
+  separately linked; the numeral belongs to the curtain relation.
+- In 9:4, the house of incense is retained without deciding an unexpressed
+  altar/censer alternative. Its gold and the ark's covenant, complete
+  overlay and gold each keep separate owners. The urn's gold and the
+  relative/resumptive in which are distinct from the existential there
+  and past was. Aaron, the rod's budding, and the covenant tablets remain
+  separately linked.
+- In 9:5, above it refers to the ark, retaining the feminine suffix on
+  mennah; it is not assigned to the cherubim noun. The cherubim cast shade
+  over the mercy seat, with the active participle, over and propitiation-
+  place noun separately linked. The nominal negative lo hwa is read as
+  present it is not time, rather than automatically forced into past
+  tense. For us to speak retains the first-plural predicate. Each renders
+  the distributive hda hda; the arranged things retain their feminine-
+  plural passive participle and past auxiliary.
+- In 9:6, the priests actively were entering and were completing their
+  service. The baseline's was entered by the priests had changed the
+  voice. In 9:7, the tabernacle is within it, not an imported second
+  tabernacle, and menneh's suffix is separately expressed as it. The
+  priest is alone, while the enclitic hu emphasizes the one annual
+  occasion as just once. The blood demonstrative, past offering predicate,
+  himself, and the people's error have separate owners.
+- In 9:8, the Holy Spirit was making known separates the active feminine
+  participle and past auxiliary from Spirit and Holy. Qaddishe is masculine
+  plural, the holy places, not the noun holiness or a feminine-singular
+  adjective modifying way. The negative, yet and passive revelation
+  predicate are separately linked. The time phrase retains both kama
+  and zabna. There was standing for the first tabernacle preserves the
+  existential, past auxiliary, nominal qyama and dative, rather than
+  silently treating qyama as a finite participle; compare standing and
+  stability in [CAL qym](https://cal.huc.edu/oneentry.php?cits=all&lemma=qym+N).
+- In 9:9, the symbol, time, gifts and sacrifices are separate, with both
+  past auxiliaries preserved. The conscience belongs to the singular
+  one who offers them; the baseline had changed this to plural offerers.
+  The object them remains plural. In 9:10, they were supplies the English
+  elliptical subject and copula for the contrast, while various renders
+  the distributive znin znin. Food, drink, washings, fleshly ordinances
+  and the time of correction retain separate owners.
+- In 9:11, the Messiah came, and the good things are those which he did
+  (d-saar), not an imported which came from another text. The great and
+  perfect tabernacle, its not-hand-made description and its distinction
+  from these created things are separately linked.
+- In 9:12, the entire baseline position sequence was realigned: the
+  negative belongs to 0, entered to 1, blood to 2, goats to 3, calves to 4,
+  but to 5, his own blood to 6–7, the second entered to 8, one/time to 9–10,
+  the holy house to 11–12, obtained to 13, redemption to 14 and eternal to
+  15. One time and the holy house have separate links rather than broad
+  frequency or sanctuary exceptions.
+- In 9:13–14, the blood-and-ashes subject is being sprinkled and sanctifies
+  the defiled people for purification of their flesh. The relative's
+  plural past auxiliary remains with those who were defiled. The how
+  much more question continues from the if clause through 9:14. The
+  Messiah offered himself by the eternal Spirit; our conscience, dead
+  works and service of the living God retain their actual owners.
+- In 9:15, mediator, new covenant, death and redemption are separately
+  linked. The hwa forms at positions 3 and 9 retain past reference (became and was),
+  distinct from the pronouns at 2 and 8; by his death he was redemption
+  explains the mediator relation. The promised reception is
+  modal, and the people were called. Mulkana is promise, distinct from
+  the separately linked eternal inheritance; it is not replaced by an
+  inheritance gloss.
+- In 9:16, mhawya is a feminine active Pael participle, with the testament
+  as subject: it shows the maker's death. The baseline's death is shown
+  had reversed the voice. The death is what it shows retains the focal
+  enclitic hu on death; compare Muraoka section 110. In 9:17, the maker
+  is alive while the testament has no usefulness, preserving hashhu's
+  utility sense. In 9:18, the first one, confirmed predicate, without and
+  blood were realigned to their actual source positions.
+- In 9:19, the whole commandment was commanded by Moses to all the people
+  in the law; no extra for is assigned to the commandment noun. Moses
+  did take separately renders the perfect plus past hwa without forcing
+  English pluperfect chronology; compare Muraoka section 85. The wool's
+  scarlet and hyssop remain separate. Sefre is vocalized plural books,
+  not singular scroll; both on prepositions are retained before the books
+  and all the people.
+- In 9:20, This and is are separate, and the feminine demonstrative and
+  feminine commanded predicate refer to the covenant rather than the
+  masculine blood noun. The second-plural for you and by God remain
+  separately linked. In 9:21, some/of/the blood renders the partitive
+  menneh men dma with separate owners. [CAL men, partitive 2(a.1)](https://cal.huc.edu/oneentry.php?cits=all&lemma=mn+p)
+  explicitly records the pseudo-substantive use some of, illustrated by
+  suffixed menneh and menhun in its Syriac examples.
+  The vessels have no added its possessor, and all refers to the vessels.
+- In 9:22, the source says everything, with no word for almost. The
+  cleansing copula and passive predicate are separate, as are without,
+  shedding, blood and the negative existential before forgiveness.
+  In 9:23, sacrifices and superior are plural. The second English are
+  cleansed explicitly recovers the shared predicate of the coordinated
+  heavenly-things clause and links back to its source verb, rather than
+  being assigned to the heavenly-things noun.
+- In 9:24, leh is masculine singular and refers to the Messiah as an
+  ethical dative with entered, rendered he himself. It is not collapsed
+  into heaven or forced into heaven itself. The same entering construction
+  with an ethical dative appears in the Old Syriac John 4:8 and 20:5
+  examples in [CAL ʿll, Peal 1(2)](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28ll+V).
+  In John 4:8 the disciples' plural lhun accompanies a singular city,
+  distinguishing the subject-related dative from the destination. The
+  holy house, its hand-made nature, the true counterpart and appearing
+  before God's face for us retain separate owners.
+- In 9:25–26, the repeated-offering purpose is contrasted with the
+  Messiah's single offering. The chief of priests' past doing predicate
+  and annual entering remain distinct. The age's beginning and end,
+  one time, self-offering, his sacrifice and the purpose to annul sin
+  each retain their actual owners.
+- In 9:27–28, humans die one time and then face judgment. The English
+  there is supplies the copula for the source's nominal judgment clause.
+  The Messiah was offered one time; in his own person he sacrificed the
+  sins of many. The second-time appearing is future in context, though
+  the Syriac predicate is a participle. Life is a lexical plural tantum
+  (Muraoka section 70), and its plural possessor refers to the waiting
+  people; English for the life of those expresses that relation once.
+  The final personal object him remains separately linked.
 
 Source checks for Hebrews 10:
 
