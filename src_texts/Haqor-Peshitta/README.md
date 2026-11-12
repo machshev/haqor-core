@@ -10987,14 +10987,68 @@ Source checks for Hebrews 13:
 
 Source checks for James 1:
 
-- 1:1 retains “our Lord,” twelve tribes, dispersed nations, and peace greeting.
-- 1:3 renders the testing of faith as producing patience; 1:4 keeps patience’s complete work and “lacking nothing.”
-- 1:5–8 preserves asking in faith without doubting, the wind-stirred wave, and the relative “who is divided in his mind.”
-- 1:12 uses temporal “when he is proved”; 1:13 preserves the direct temptation quotation, the statement that God is not tempted by evil, and the independent “no one” negative.
-- 1:14 retains the personal temptation, the relation to one’s own desire, and the lusting/drawing predicates. In 1:15, desire conceives and gives birth to sin; completed sin gives birth to death.
-- 1:17 has one gift noun with “good and complete” modifiers; 1:19 coordinates quick hearing, slow speaking, and slow anger.
-- 1:21 preserves first-person-plural “our nature”; 1:23 retains “a doer of it”; 1:24 assigns “goes away” and “forgets” to their own source words.
-- 1:25 retains demonstrative “this one”; 1:26 renders the heart as deceiving him; 1:27 retains masculine “keep himself,” orphans/widows, oppression, and the world.
+- All 27 verses and 326 source positions were reviewed against the exact
+  forms, morphology, suffixes, clause ownership, and continuous English.
+  Ordinary phrases are split into individual source owners; the seven
+  retained shared spans have individual linguistic reasons in the ledger.
+- In 1:1, servant, God, our Lord, Jesus, and Messiah have separate owners.
+  The twelve tribes are scattered among the nations; the greeting is peace.
+  In 1:2, joy is the subject of the feminine singular be-form, rather than
+  an instruction to count something as joy. In 1:3, faith has no possessive
+  suffix: the testing of faith produces patience for the readers.
+- In 1:4, the first lah anticipates the dative patience; nehwe lah is the
+  existential possessive construction, rendered let patience have. Nehwe
+  permits both third masculine singular and first common plural readings
+  in isolation (Muraoka section 54); the singular work is its subject here.
+  The final negative purpose clause retains the be-form with lacking in
+  anything, without imposing past time on the nominal negation.
+- In 1:5, lacking, in, wisdom, ask, from, and God have their actual owners.
+  In 1:6, both waves and the object suffix referring to them are plural;
+  the wind is the subject that stirs them. The relative marker and its
+  resumed object are jointly rendered which. In 1:8, unsettled belongs to
+  its own participle, rather than to all his ways. The contrastive particle
+  in 1:9 and thus in 1:10 are explicit.
+- In 1:11, the heat belongs to the sun, and the grass is introduced by an
+  anticipatory object pronoun before its explicit noun. The sun rises and
+  dries it up; its flower falls and the beauty of its appearance perishes.
+  These participles and the rich person's withering are rendered as generic
+  present statements. In 1:12, trials is plural; the passive proved-form
+  precedes receiving the promised crown of life.
+- In 1:13, the two God nouns belong respectively to the direct quotation
+  and the following explanatory clause. God is not tempted by evil and
+  does not tempt anyone. In 1:14, repeated person is distributive each
+  person; is, tempted, desire, lusts, and is drawn away retain their owners.
+  In 1:15, and this is a demonstrative, and the two sin nouns belong to
+  separate clauses; sin's having matured precedes its giving birth to death.
+- In 1:17, there is one gift noun, qualified by good and complete. Descends
+  owns the descent, rather than from above or from the Father of lights.
+  The one and the relative with whom retain their antecedent and resumed
+  prepositional relation; no change at all and not even a shadow of turning
+  preserve the existential negation, indefinite, and second negative.
+- In 1:18, huyu focuses the personal subject, he himself (Muraoka section
+  10); willed and begot us are separate perfect verbs. The firstfruits are
+  of his creatures, a plural noun. In 1:19, each infinitive has its owner:
+  hearing, speaking, and becoming angry. In 1:20, the anger of man does
+  not perform the righteousness of God.
+- In 1:21, planted in our nature retains the first plural suffix. Which is,
+  able, and to save belong to positions 13, 14, and 15 respectively. The
+  feminine plural object pronoun enen anticipates your souls; these two
+  forms jointly name one object. This is a personal object pronoun, rather
+  than an additional demonstrative these. Compare Muraoka section 112 on
+  prolepsis, including prepositions, objects, and independent pronouns.
+- In 1:22, yourselves is the idiomatic reflexive use of your souls. In
+  1:23-24, the narrative perfect forms retain saw, went away, and forgot;
+  this one and the mirror comparison have separate owners. In 1:25, the
+  perfect forms have looked and remained precede nominal is not. The
+  hearer is of a report that is forgotten, preserving the hearing/report
+  noun and passive relative, rather than assigning forgetfulness directly
+  to the hearer. Works is plural; his work in the final clause is singular.
+- In 1:26, the heart deceives him; this one's service is empty. In 1:27,
+  the explanatory for, pure and holy service, God the Father, orphans,
+  widows, plural afflictions, and the explicit person who keeps himself
+  without spot from the world are preserved. Anticipatory genitives and
+  relative resumptions follow the constructions described in Muraoka
+  section 112 and [Francois, sections 7.3-7.4](https://markfrancois.wordpress.com/wp-content/uploads/2023/01/classical-syriac-grammar-week-7.pdf#page=4).
 
 Source checks for James 2:
 
