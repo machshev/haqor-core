@@ -13676,62 +13676,105 @@ Source checks for Revelation 4:
 
 Source checks for Revelation 5:
 
-- Reviewed all 14 verses and 221 positions against exact source forms,
-  all gloss alternatives, numeric morphology, suffix roles, and continuous
-  English. Nominal copulas and participial descriptions use the observed
-  narrative context; perfects, infinitives, prohibitions, and future
-  promises remain distinct. Anticipatory object/genitive suffixes are
-  absorbed naturally into their following explicit book, hand, or Lamb
-  referent instead of duplicated in English.
-- Revelation 5:1 retains the right-hand expression, inside and outside
-  inscription, sealing, and seven seals. In 5:2 the source says “another”
-  mighty angel. Revelation 5:3 includes opening, loosening its seals, and
-  seeing the book; 5:4 instead ends with opening and loosening its seals.
-  The weeping participle with past auxiliary is “I was weeping.”
-- Revelation 5:5 puts the perfect overcoming verb before the Lion. English
-  resumes its subject in apposition: “he has triumphed—the Lion ... the Root
-  of David.” The later verb is the distinct future “He will open.” There
-  is no “seven” adjective before the seals in this verse. In 5:6 the throne,
-  four living creatures, and elders all precede the standing Lamb; none is
-  dropped to match the shorter reference. The seven horns, seven eyes,
-  seven Spirits of God, and sending throughout the earth remain. In 5:7
-  the source says “hand,” without the reference's additional “right.”
-- Revelation 5:8 has a singular bowl for each one, with a harp and gold.
-  The distributive construction is rendered “there was for each one of
-  them,” using short spans. The possession clause is parenthesized so the
-  plural praising/speaking relative at 5:9 resumes the creatures and elders.
-  The source's plural-shaped *basma* is English mass “incense”; its relative
-  therefore takes English “is,” with the prayers as its metaphorical
-  predicate. The [Comprehensive Aramaic Lexicon's bsm entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=bsm+N)
-  records incense as often plural-only. This does not change the singular
-  bowl into plural bowls or invent a second set of containers.
-- In 5:9 the cognate praise/praise construction is rendered in its musical
-  context as “singing a new song of praise,” after the preceding harps.
-  The slaughtering is passive and second-person; the buying is active,
-  second-person, with first-person plural “us,” followed by “your blood”
-  and “for God.” Tribes, peoples, and nations remain plural. There is no
-  tongue/language noun in this source verse.
-- Revelation 5:10 retains third-person “them,” first-person “our God,”
-  singular “a kingdom,” and both plural “priests” and “kings,” in that order.
-  The last verb is third-person plural imperfect, “they will reign.” The
+- Reviewed all 14 verses and 221 verse-local source positions against exact
+  forms, vocalization, gloss alternatives, numeric morphology, suffix roles,
+  clause boundaries, and continuous English. Reduced 22 original shared
+  spans to six narrow exceptions: the paired inside/outside locatives in
+  5:1, beneath in 5:3 and 5:13, existential possession in 5:6, and the
+  past existential compound in 5:11. Ordinary numbers, modifiers, subjects,
+  relatives, copulas, negatives, and distributive constituents are separately
+  owned. Unchanged verses 3, 7, 10, and 14 were included in the review.
+- Revelation 5:1 retains the right-hand expression, inscription, sealing,
+  and seven seals. MIN-LGAW and MIN-LBAR describe the book's inscribed
+  surfaces as within and outside. These paired locative compounds absorb
+  MIN idiomatically; literal English from would suggest writing direction.
+  And remains separately owned before outside. Seals and seven are
+  independent, with English with accompanying the seal noun. Anticipatory
+  object/genitive suffixes are absorbed naturally into the following
+  explicit book, hand, or Lamb referent instead of duplicated.
+- In 5:2, another, mighty, and angel retain their separate words, as do
+  loud and the preposition/voice noun. Revelation 5:3 includes opening,
+  loosening its seals, and seeing the book; 5:4 ends with opening and
+  loosening its seals. The LTAHAT-MIN construction is relational beneath
+  in 5:3 and 5:13; MIN completes the spatial relation, not an independent
+  movement from the earth. Earth retains its own source word.
+- In 5:4, the weeping participle with past auxiliary is “I was weeping,”
+  separately linked as and/weeping at 0 and I was at 1. No multi-source
+  span is needed to retain the progressive; compare Muraoka, A Basic
+  Grammar of Classical Syriac, §86. In 5:5, the negative owns not while
+  the second-person verb owns English do-support and weep. The perfect
+  overcoming verb precedes the Lion, whose subject is resumed in
+  apposition: “he has triumphed—the Lion ... the Root of David.” The
+  later verb is the distinct future He will open. No seven adjective
+  occurs before the seals in this verse.
+- In 5:6, throne, four living creatures, and elders all precede the
+  standing Lamb; none is dropped to match the shorter reference. The
+  existential possession is rendered and/it/had, with the conjunction
+  and masculine singular dative possessor separately linked; only had
+  spans ITH and LEH. The dative does not add another recipient. Horns,
+  eyes, and their seven quantifiers, the relative head and existential,
+  and the seven Spirits of God each have independent owners. Sending
+  throughout the earth remains explicit. In 5:7, the source has hand,
+  without the reference's additional right.
+- Revelation 5:8 has one singular bowl and a harp for each one, with
+  gold separately owned. The twenty-four count is split across its tens
+  and units, joined by English hyphen punctuation. The distributive is
+  rendered “for each / one / of them,” separately linking LKOLHAD,
+  the repeated HAD, and MIN with its plural suffix. There was is the
+  existential at 12. The possession clause remains parenthetical so
+  that the plural praising/speaking relative in 5:9 resumes the
+  creatures and elders.
+- In 5:8, the plural-shaped BASMA noun is rendered as English mass
+  incense. The [CAL bsm entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=bsm+N)
+  records incense as often plural-only. The source's plural demonstrative
+  and existential at 21–22 and plural prayers at 23 remain acknowledged:
+  English “which / is / the prayers” deliberately adapts agreement to
+  mass incense as its subject, while “the prayers” is the plural predicate
+  complement. This is English concord, not a claim that the Syriac copula
+  is singular. No offerings noun, second incense set, or plural bowls
+  are added. Relative which and copular is are independently linked.
+- In 5:9, the cognate praise/praise construction is rendered in its
+  musical context as singing a new song of praise, following the harps.
+  New is separate from the praise-song noun. In both 5:9 and 5:12,
+  You and worthy belong to the second-person worthy word, while are
+  belongs to third-person HU copular support. HU is not decoded as
+  a second-person pronoun. The second-person address remains explicit.
+- In 5:9, slaughtering is passive and second-person; buying is active
+  second-person, with first-person plural us, followed by your blood
+  and for God. Tribes, peoples, and nations remain plural. There is
+  no tongue/language noun in this supplied verse. In 5:10, them is a
+  separate third-person plural object pronoun, not a suffix on made.
+  Our God, singular kingdom, and plural priests and kings remain in
+  their source order. The final verb is third-person plural imperfect
+  Aphel, they will reign. The
   [CAL mlk entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mlk+V)
-  explicitly records the causative stem's intransitive Syriac sense “to
-  rule”; it is not forced into an unsourced act of making others kings.
-- Revelation 5:11 keeps both seeing and hearing, the comparison before the
-  voice, its many angels, the throne/creatures/elders, and both large-number
-  expressions. The existential plus past auxiliary belongs to “their number
-  was.” Revelation 5:12 has the same vocalized second-person worthy form as
-  5:9, rendered as direct address: “You are worthy, Lamb who was slaughtered.”
-  All seven objects of receiving remain separate.
-- Revelation 5:13 fronts the creation and all-in-them topic. English supplies
-  the topic marker “as for,” and renders the additive hearing clause as “I
-  also heard.” The postposed source copula remains “exists,” following the
-  relative clause's spatial phrases. The seer hears the creation's plural
-  voices speaking; the throne's occupant and the Lamb are joint recipients
-  of blessing, honor, glory, and dominion. The reference's throne occupant
-  speaking to the Lamb is not imported. In 5:14 the creatures' saying is
-  participial, while the elders' falling and worshiping are perfect. No
-  additional twenty-four count or living-forever phrase is supplied there.
+  records the causative stem's intransitive Syriac rule/reign sense;
+  it is not forced into an unsourced act of making others kings.
+- Revelation 5:11 keeps both seeing and hearing, the comparison before
+  voice, many and angels separately owned, and the throne/creatures/
+  elders. And and their number are separate from the shared was,
+  which links only ITHWHI-HWA as one past state; compare Muraoka §109.
+  A myriad of myriads and a thousand of thousands remain distinct,
+  preserving the singular/plural number forms.
+- Revelation 5:12 has the same vocalized second-person worthy form as
+  5:9 and remains direct address: “You are worthy, Lamb who was
+  slaughtered.” Loud and voice are separate, as are all seven objects
+  of receiving. The slaughtered adjective retains its own source word.
+- Revelation 5:13 fronts creation and all-in-them as the topic. English
+  supplies as for as a topic marker, then renders the additive hearing
+  clause as I also heard. The existential at 8 retains its owner while
+  moving to the natural English relative position: “that / exists /
+  in heaven ...”. Its feminine singular suffix refers to creation.
+  The seer's hearing and the creation's plural saying voices are distinct;
+  the throne occupant and Lamb are joint recipients of blessing, honor,
+  glory, and dominion. No reference-only throne occupant speaking to the
+  Lamb is imported. The final age formula retains singular construct
+  age followed by plural ages, “for the age / of ages.”
+- In 5:14, the creatures' saying is participial, while the elders'
+  falling and worshiping are perfect. No additional twenty-four count
+  or living-forever phrase is supplied. Nominal copulas and participial
+  descriptions throughout follow the observed narrative context;
+  perfects, infinitives, prohibitions, and future promises remain distinct.
 
 Source checks for Revelation 6:
 

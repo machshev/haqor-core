@@ -30440,6 +30440,68 @@
           "reason": "Qobbal taybutha is a lexical compound for gratitude or thanksgiving, explicitly attested by Brock and Kiraz under taybutha. Literal independent acceptance and goodness would misrepresent the idiom. And is separately linked to the conjunction at 6; honor, the recipients, and the age formula are independent."
         }
       ]
+    },
+    "66:5": {
+      "sha256": "20ed97ec1de995ac7875b24dfd9dc88420746821d462479d95263ebe331483fd",
+      "original_shared_spans": 22,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 1,
+          "english": "within",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Men l-gaw is the paired surface-locative expression for the interior of the book, idiomatically within in the inscription description. Men marks the boundary/source side of the spatial compound; independent English from would suggest writing direction rather than the inscribed surface. The outside counterpart is separately recorded."
+        },
+        {
+          "verse": 1,
+          "english": "outside",
+          "positions": [
+            11,
+            12
+          ],
+          "reason": "Men l-bar is the paired surface-locative expression for the exterior of the book, idiomatically outside in the inscription description. And remains separately at 11. Men is absorbed by the spatial compound rather than becoming an independent source of movement; the inside counterpart and sealing remain distinct."
+        },
+        {
+          "verse": 3,
+          "english": "beneath",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "L-tahat men is a relational prepositional construction expressing below or beneath its complement. Men completes that relation, not a separate departure from the earth. Beneath is one English preposition; the earth, surrounding negatives and infinitives keep their own source words."
+        },
+        {
+          "verse": 6,
+          "english": "had",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Ith leh expresses existential possession as had in the narrative vision. And is separately linked to 10 and it to the masculine singular dative at 11, referring to the Lamb. The dative is not another recipient; horns, eyes and their seven quantifiers remain independent."
+        },
+        {
+          "verse": 11,
+          "english": "was",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Ithawhi hwa is one past existential/copular state rendered was. And remains separately at 10 and their number at 12; the matching singular existential does not introduce a second actor or another event. The myriad and thousand expressions retain their own words."
+        },
+        {
+          "verse": 13,
+          "english": "beneath",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "L-tahat men is a relational prepositional construction expressing beneath its complement. And is separately owned by 4; men completes the spatial relation rather than adding a separate origin. Earth, the other locations, existence and the hearing/saying predicates remain independently owned."
+        }
+      ]
     }
   }
 }
