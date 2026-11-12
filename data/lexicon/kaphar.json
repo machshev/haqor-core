@@ -13,17 +13,17 @@
     "settlement",
     "plants"
   ],
-  "gloss": "cover (sin, a life, the holy things); ransom; coat with pitch",
-  "summary": "כפר is literally to cover. The qal coats the ark with pitch, inside and out (Gen 6:14); the piel כִּפֶּר covers sin and the sinner, the land and the holy things, mostly with the blood of an offering, for “the blood covers by the life” (Lev 17:11), and the כֹּפֶר is the covering price given for a life that is forfeit (Exo 30:12–16; Num 35:31–33). Scripture sets beside the covering what it achieves: sin blotted out and departed, the altar purified, wrath turned back (Jer 18:23; Isa 6:7; Ezk 43:26; Num 25:11). Its nouns name יוֹם הַכִּפֻּרִים, the day of coverings on the tenth of the seventh month (Lev 23:27–28), and the כַּפֹּרֶת, the gold covering of the ark on which that day’s blood was sprinkled; Arabic kafara is “cover”, and Akkadian kapāru both “smear on” and “wipe clean”. A young lion, villages, henna, frost and bowls share the spelling; their links to covering are not clear.",
+  "gloss": "cover (the sinner and sin, a life, the holy things); ransom; coat with pitch",
+  "summary": "כפר is literally to cover. The qal coats the ark with pitch, inside and out (Gen 6:14); the piel כִּפֶּר covers the sinner, the flesh made unclean as well as the sins done, and the land and the holy things, mostly with the blood of an offering, for “the blood covers by the life” (Lev 17:11), and the כֹּפֶר is the covering price given for a life that is forfeit (Exo 30:12–16; Num 35:31–33). Scripture sets beside the covering what it achieves: sin blotted out and departed, the altar purified, wrath turned back (Jer 18:23; Isa 6:7; Ezk 43:26; Num 25:11). Its nouns name יוֹם הַכִּפֻּרִים, the day of coverings on the tenth of the seventh month (Lev 23:27–28), and the כַּפֹּרֶת, the gold covering of the ark on which that day’s blood was sprinkled; Arabic kafara is “cover”, and Akkadian kapāru both “smear on” and “wipe clean”. A young lion, villages, henna, frost and bowls share the spelling; their links to covering are not clear.",
   "words": [
     {
       "lemma": "כִּפֶּר",
       "pos": "verb",
-      "gloss": "cover (sin, a person); ransom, appease; coat with pitch",
+      "gloss": "cover (a person and their sin); ransom, appease; coat with pitch",
       "bdb": [
         "k.ct.ac"
       ],
-      "summary": "Almost all its uses are piel. What it covers is sin and iniquity, the person or land (with עַל or בְּעַד), the defiled altar and holy place, and an angry face; what covers is blood, an offering, a payment, or another’s life; and what follows is sin taken away, cleanness, forgiveness and wrath turned. The single qal coats the ark with pitch (כֹּפֶר).",
+      "summary": "Almost all its uses are piel. What it covers is first the person or land (with עַל or בְּעַד): the flesh in its unclean state, such as a mother after childbirth or a healed leper who has done no wrong, as well as the sin and iniquity done; then the altar and holy place made unclean by dwelling among Israel’s uncleanness, and an angry face. What covers is blood, an offering, a payment, or another’s life; and what follows is cleanness, sin taken away, forgiveness and wrath turned. The single qal coats the ark with pitch (כֹּפֶר).",
       "stems": [
         {
           "stem": "qal",
@@ -49,12 +49,12 @@
         },
         {
           "stem": "piel",
-          "gloss": "cover (sin, a person, the holy things); ransom, appease",
+          "gloss": "cover (a person and their sin, the holy things); ransom, appease",
           "senses": [
             {
               "id": "cover-sin",
               "gloss": "cover (sin, defilement)",
-              "definition": "Cover sin or iniquity so that it no longer stands before God, and the altar and holy place against the defilement Israel’s sins have brought on them. Scripture sets beside it what the covering does: “blot out”, “depart”, “purify” and “cleanse”.",
+              "definition": "Cover sin or iniquity so that it no longer stands before God, and cover the altar and holy place, which did not sin, against the defilement they take on from dwelling among Israel’s uncleanness. Scripture sets beside it what the covering does: “blot out”, “depart”, “purify” and “cleanse”.",
               "evidence": [
                 {
                   "ref": "Jer.18.23",
@@ -74,7 +74,7 @@
                 {
                   "ref": "Lev.16.16",
                   "role": "defining",
-                  "note": "He purges the holy place of the uncleannesses of Israel and their transgressions."
+                  "note": "He makes a covering for the holy place because of the uncleannesses of Israel and their transgressions, and so for the tent, which dwells with them in the midst of their uncleanness."
                 },
                 {
                   "ref": "Psa.78.38",
@@ -108,7 +108,7 @@
             {
               "id": "cover-for-person",
               "gloss": "make a covering for (someone)",
-              "definition": "Cover a person, people or land, with עַל or בְּעַד, mostly by the blood of an offering, so that their guilt or uncleanness is taken away and they are forgiven or clean.",
+              "definition": "Cover a person, people or land, with עַל or בְּעַד, mostly by the blood of an offering. What is covered is the person in their state as well as their deeds: a covering is made for a mother after childbirth and for a healed leper, who have done no wrong, as for one who has sinned; and the outcome is that they are clean or forgiven.",
               "evidence": [
                 {
                   "ref": "Lev.4.20",
@@ -129,6 +129,12 @@
                   "ref": "Lev.17.11",
                   "role": "defining",
                   "note": "The life of the flesh is in the blood, given on the altar to make a covering for your lives; the blood covers by the life."
+                },
+                {
+                  "ref": "Lev.12.7",
+                  "to": "Lev.12.8",
+                  "role": "defining",
+                  "note": "After childbirth: “the priest shall make a covering for her, and she will be clean.” She has done no wrong; it is her flesh that is covered."
                 },
                 {
                   "ref": "Lev.1.4",
@@ -364,16 +370,16 @@
       "lemma": "כִּפֻּרִים",
       "pos": "noun",
       "gender": "m",
-      "gloss": "coverings, the covering of guilt",
+      "gloss": "coverings (of the people and their sins)",
       "bdb": [
         "k.ct.ad"
       ],
-      "summary": "Always plural, “coverings”. It names the yearly day of the seventh month, the sin offering and ram by which guilt was covered, and once the silver given as the people’s ransom.",
+      "summary": "Always plural, “coverings”. It names the yearly day of the seventh month, on which a covering was made for the people, the priests and the holy things as well as their sins, the sin offering and ram by which a covering was made for a man, and once the silver given as the people’s ransom.",
       "senses": [
         {
           "id": "covering",
           "gloss": "covering",
-          "definition": "The covering of guilt, above all on יוֹם הַכִּפֻּרִים, the tenth day of the seventh month, and in the offerings made for it.",
+          "definition": "The covering made for the people and their sins, above all on יוֹם הַכִּפֻּרִים, the tenth day of the seventh month, and in the offerings made for it.",
           "evidence": [
             {
               "ref": "Lev.23.27",
