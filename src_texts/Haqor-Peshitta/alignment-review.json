@@ -28830,6 +28830,59 @@
           "reason": "Taking faces is the lexical partiality idiom; the verb and faces jointly become show partiality. The conjunction from position 17, auxiliary from position 19, and negative from position 18 remain separate."
         }
       ]
+    },
+    "59:4": {
+      "sha256": "232086f93aa3e3465a29fdf9a6df4c6afe1901c5e1b5421398f603a3747c4b91",
+      "original_shared_spans": 64,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 2,
+          "english": "you have nothing;",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Negative existential layt plus suffixed dative lkhon expresses absence of possession, literally there is not to you, idiomatically you have nothing; the conjunction from position 2 is separately realized."
+        },
+        {
+          "verse": 2,
+          "english": "you have nothing,",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "The repeated negative existential layt plus suffixed dative lkhon again expresses absence of possession, rendered you have nothing; the conjunction from position 16 is separately realized."
+        },
+        {
+          "verse": 12,
+          "english": "lawgiver",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The setter-of-law expression saem namusa is the lexical role lawgiver, rendered by one English compound noun. One, is, and judge remain separately linked."
+        },
+        {
+          "verse": 12,
+          "english": "your neighbor?",
+          "positions": [
+            15,
+            16
+          ],
+          "reason": "The suffixed object marker leh anticipates the explicit l-marked your neighbor; both name one object of judging, expressed once as your neighbor in English, retaining the second-person possessive suffix."
+        },
+        {
+          "verse": 14,
+          "english": "but",
+          "positions": [
+            9,
+            10
+          ],
+          "reason": "Exceptive ela en, literally but if, functions as except or but in the rhetorical what-is-life question; the single English exceptive but jointly renders this two-word exceptive construction, not a new condition."
+        }
+      ]
     }
   }
 }

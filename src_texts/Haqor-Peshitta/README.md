@@ -11218,17 +11218,88 @@ Source checks for James 3:
 
 Source checks for James 4:
 
-- James 4:1 preserves the question's source order: "from where" asks about wars and strifes among you, and the final relative verb explicitly wages war in your members.
-- James 4:2 links the negative come/hand construction as "nothing comes into your hands" and keeps the repeated second-person subjects and final causal "because you do not ask."
-- James 4:4 distinguishes the source's adulterers, this-world love, enmity, friend, and enemy terms; the postpositive "therefore" remains visible between "whoever" and "desires," and "God" is linked at both occurrences.
-- James 4:5 renders the source's contiguous jealousy-desire-spirit construction as "the jealous desire of the spirit that dwells in us" rather than importing a remembered verse wording.
-- James 4:6 exposes the source roles as "But greater grace our Lord gives to us" (retaining the first-person plural suffix in "our Lord") and renders מטל הדא אמר as "for this reason he says" rather than making "this" the speaker.
-- James 4:7 keeps the postpositive connective visible as "Submit yourselves therefore to God."
-- James 4:8 retains both draw-near verbs, the hand/heart objects, and the final divided-in-soul description.
-- James 4:11 maps both speak-against and judge-against-law clauses separately, then preserves the conditional distinction between judging the law and being its doer or judge.
-- James 4:12 keeps one lawgiver and judge, the make-alive/destroy contrast, and the repeated second-person neighbor question.
-- James 4:13-15 preserves the opening question "But what shall we say concerning those who say," the city/year/trading/gain sequence, the vapor that appears briefly and vanishes, and the Lord-willing condition.
-- James 4:17 keeps the additive "And whoever" opening, the good-known/not-done construction, and the final "to him it is sin" mapping.
+- All 17 verses and 233 source positions were checked against the exact
+  forms, morphology, suffixes, clause ownership, and continuous English.
+  Ordinary phrases have individual owners; the five retained shared
+  spans have specific linguistic reasons in the review ledger.
+- In 4:1, from and where have separate owners, as do the existential
+  predicate, wars, strifes, and among you. Is it not renders the nominal
+  rhetorical negation without mechanically imposing past time on hwa.
+  The lusts wage war in the readers' members.
+- In 4:2, both negative existential-plus-dative expressions mean you
+  have nothing; they are individually documented possession idioms.
+  Nothing comes into your hands retains the negative, come participle,
+  and hand phrase separately. Contend belongs to its own verb and its
+  explicit you pronoun. Wage belongs to the do/make verb; plural wars
+  is its object, rather than a second predicate followed by an extra act.
+  The causal clause retains because, not, ask, and its own you pronoun.
+- In 4:3, the repeated you pronouns and both negation and causation have
+  their actual owners. The purpose construction is so that you may
+  nourish your lusts, with the second-person plural Palpel verb and
+  plural lusts. A purpose is not reduced to simultaneous as you nourish.
+- In 4:4, adulterers is plural. Love of this world, enmity against God,
+  friend of this world, and enemy to God retain separate constituents.
+  The relative prefix on desires owns who, with the one as antecedent;
+  therefore remains explicit in the following inference.
+- In 4:5, perhaps preserves the rhetorical particle separately from
+  think, and in vain qualifies what the Scripture said. Said is a perfect
+  verb. The quoted clause's subject is the spirit that dwells in us;
+  raga is a feminine singular active participle, rendered yearns, rather
+  than a desire noun in jealous desire of the spirit. The b-prefix on
+  jealousy supplies with jealousy, not an unmarked direct object.
+  Compare [CAL, tnn](https://cal.huc.edu/oneentry.php?cits=all&lemma=%2Bnn+N)
+  on the noun's zeal, envy, and jealousy senses. The text does not supply
+  a further object of yearning or identify the spirit more specifically.
+- In 4:6, our Lord has given retains the first plural possessive suffix
+  and the perfect give-form. Because of this he said retains the separate
+  causal preposition, demonstrative, and perfect said. The quotation's
+  humbles and gives are present participles; lofty and humble refer to
+  plural people. The two give-forms must not be conflated as presents.
+- In 4:7-10, submission, standing against Satan, drawing near, cleansing,
+  sanctifying, grieving, and humbling retain their imperatives. The
+  following flee participle is prospective in the promised consequence;
+  the following draw-near and exalt forms are imperfects. Hands and
+  hearts are plural; divided in soul preserves the construct phrase.
+  In 4:9, the conjunction on your laughter and the passive be turned
+  predicate are retained, with mourning and sorrow separately owned.
+- In 4:11, be-form and speaking participle jointly express the finite
+  prohibition, with separate owners. The two speak-against phrases and
+  the judging predicates are distinct. The later you is singular, and
+  the nominal negative hwayt means you are not a doer of the law, rather
+  than a past-tense assertion. Its judge retains its possessive suffix.
+- In 4:12, setter of law is the lexical lawgiver expression; only that
+  compound is shared. One, is, and judge have separate owners, as do who
+  is, able, make alive, and destroy. The repeated second-person pronouns
+  are preserved as as for you, who are you, you who judge. The suffixed
+  object marker and your neighbor name one object and are jointly rendered
+  once, with the second-person possessive retained.
+- In 4:13, also belongs to its own source particle in what shall we say
+  also concerning those who say. The quotation has explicit first-person
+  plural forms for going, spending, trading, and gaining. A city,
+  whichever it may be preserves the indefinite interrogative-plus-relative
+  construction, rather than substituting this city; compare Muraoka
+  section 76 on generalizing interrogatives followed by d-. Spend one
+  year renders do/make with a time object; there, one, and year remain
+  separate, and no stay/remain verb is invented.
+- In 4:14, the third-person plural know-form is they do not know,
+  referring to those making the plans, not a second-person you. What
+  tomorrow will be contains a be-form, not an added bring verb. Our life
+  retains the first plural suffix; the noun is lexical plural-tantum
+  life, not necessarily multiple countable lives. The exceptive ela en
+  jointly becomes but in what is our life but a vapor. The vapor appears
+  briefly, vanishes, and is gone; briefly and the two final verbs retain
+  their separate owners. No independent then is added.
+- In 4:15-16, instead of their saying introduces the alternative speech
+  that the third-person plural subjects should utter. If the Lord wills
+  and we live, we will do this or that retains the condition and first
+  plural quoted voice. The third-person plural main clause is they glory
+  in their boasting; their is explicit in the suffix. There is no source
+  but now, you, or your at the beginning of 4:16. Like this has separate
+  owners, and all glorying like this is evil.
+- In 4:17, the one and who knows have separate owners. The good is the
+  object, and the negative doing-clause retains its feminine object
+  pronoun referring to that good. To him, it is, and sin have their
+  actual source owners in the final clause.
 
 Source checks for James 5:
 
