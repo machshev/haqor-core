@@ -13585,59 +13585,94 @@ Source checks for Revelation 3:
 
 Source checks for Revelation 4:
 
-- Reviewed all 11 verses and 209 source positions against exact forms,
-  vocalization, all gloss alternatives, numeric morphology, source roles,
-  and continuous English. Short contiguous constructions render numbers,
-  possession, and grammatical subject placement; no long source clause is
-  collapsed into a single link. Spatial anticipatory suffixes before an
-  explicit throne noun are absorbed into natural English rather than
-  duplicated as “around it of the throne.”
-- Revelation 4:1 has no “first” adjective for the voice. “Spoke” is perfect,
-  and the quoted voice, rather than the seer, promises “I will show you.”
-  The final passive “is given” and infinitive “to take place” preserve the
-  supplied construction rather than importing an unsourced necessity verb.
-  Narrative copulas and participial descriptions are rendered in the past
-  where they describe the vision introduced by “I saw” and “I was”; this is
-  a contextual temporal choice, not a claim that participles are perfect.
-- Revelation 4:3 retains the distinct form, appearance, stone, jasper,
-  sardius, cloud-rainbow, throne, and emerald expressions. English supplies
-  copulas for the nominal predicates. In 4:4 both twenty-four counts remain,
-  along with the elders, white garments, their heads, and crowns of gold.
-- In 4:5 the first throne noun is plural, while the later throne is singular.
-  The source order is thunders, lightnings, and voices. The seven lights are
-  burning, with no separate “fire” noun supplied. The final relative
-  identifies the lights as the seven Spirits of God. In 4:6 the sea and
-  glass are distinct words. The eyes' spatial phrases refer to the creatures'
-  front and rear; their suffixes do not introduce other participants.
-- Revelation 4:7 uses the ordinary numerical ordinal idiom for the second,
-  third, and fourth creatures. The third creature's possessive existential
-  is “had a face”; the source's plural-shaped face noun is idiomatic singular
-  English here. The flying participle describes the eagle comparison.
-- Revelation 4:8 explicitly includes each creature's standing, its claws,
-  “and upward,” six wings around it, and the creatures' interior eyes.
-  None is omitted to match the shorter reference English. The negative
-  possessive existential is “they have no cessation,” followed by the
-  saying infinitive. “The holder of all” retains both words of the divine
-  title. The final existential-plus-perfect construction is “the one who
-  was,” followed by distinct “and is” and “and is coming.”
-- In 4:9, *qobbal taybutha* is a two-word idiom rendered “thanksgiving,”
-  not independent “acceptance” and “favor.” The
-  [Brock–Kiraz dictionary entry](https://sedra.bethmardutho.org/lexeme/get/1203)
-  explicitly records the compound as gratitude/thankfulness.
-  The perfect giving form precedes a plural four-creature subject. The
-  English uses plural agreement and a completed temporal condition,
-  “whenever ... have given,” followed by the future falling, worshiping,
-  and casting of 4:10. This resolves the unusual agreement/context without
-  silently treating the perfect as a participle.
-- Both “Amen” words in 4:9–10 remain as parenthetical affirmations. The
-  temporal clause continues across the verse boundary. “Down will fall”
-  permits grammatical inversion while keeping the verb before the elders;
-  worship's duration and Amen precede its delayed living-one object.
-  The final saying clause retains the explicit “while” relation. In 4:11
-  “You are worthy” accounts for the second-person worthy form and copular
-  pronoun; “our” belongs to both Lord and God. There is no “Holy” adjective
-  or separate “by you they exist” clause. The conclusion is “through your
-  will they existed and were created,” with both final perfect forms kept.
+- Reviewed all 11 verses and 209 verse-local source positions against exact
+  forms, vocalization, gloss alternatives, numeric morphology, source roles,
+  suffixes, clause boundaries, and continuous English. Reduced 26 original
+  shared spans to six narrow exceptions: compound temporal After in 4:1,
+  existential possession in 4:7 and 4:8, negative possession and the past
+  existential compound in 4:8, and the thanksgiving idiom in 4:9. All
+  ordinary numerals, noun phrases, locatives, subjects, negatives, and
+  copulas are separately owned. Unchanged verses 2 and 3 were included.
+- Revelation 4:1 retains MIN-BATHAR as the compound temporal After; these
+  things has its own owner. The source has no first adjective for the
+  voice. “And that voice which I heard” separates the conjunction/noun,
+  demonstrative, and relative-prefixed hearing verb. Spoke is perfect,
+  and the quoted voice, rather than the seer, promises I will show you.
+  The final passive is given and infinitive to take place retain the
+  supplied construction without importing a necessity verb.
+- Narrative copulas and participial descriptions are rendered in the past
+  where they describe the vision introduced by I saw and I was. This is a
+  contextual temporal choice, not a claim that participles are perfect.
+  Revelation 4:2 keeps the passive placed/set throne and the sitting
+  participle. Revelation 4:3 retains form, appearance, stone, jasper,
+  sardius, cloud-rainbow, throne, and emerald as distinct expressions,
+  with English copulas supplied for the nominal predicates.
+- In 4:4, both twenty-four counts remain. Twenty and four each have their
+  own source owner, joined by English hyphen punctuation for the additive
+  numeral. Seats owns the English existential frame as well as its noun;
+  and/on at 5 and yet at 6 are distinct. Garments and white are separate,
+  as are the elders, sitting, their heads, and gold crowns. Spatial
+  anticipatory suffixes before explicit throne nouns are rendered
+  idiomatically rather than duplicated as around it of the throne.
+- In 4:5, the first throne noun is plural and the later one singular.
+  Proceeding is an active participle, not perfect; thunders, lightnings,
+  and voices retain their source order. Seven and lights have separate
+  owners; burning has no separate fire noun. “Those” and “which are” separate
+  the relative head from its existential clause identifying the lights
+  as the seven Spirits of God. In 4:6, sea and glass remain distinct.
+  Four and living creatures are separate; the English copular were
+  accompanies the creature noun. “At / their front” and “and at / their
+  rear” separately retain the spatial phrases and creature suffixes.
+- Revelation 4:7 uses the ordinary numerical ordinal idiom for second,
+  third, and fourth. Each creature noun and its conjunction are separate
+  from its ordinal. The third creature's existential possession is had
+  a face; the plural-shaped face noun is idiomatic singular English.
+  The dative feminine possessor refers to the creature, not another
+  recipient. The flying participle describes the eagle comparison.
+- Revelation 4:8 retains each creature's standing, its claws, and upward,
+  six wings all around, and the creatures' interior eyes. Each one and
+  of them are separate. And stays separately linked to the existential
+  that participates in shared had. “And from / within” renders MIN and
+  LGAW individually rather than collapsing the location. The filled
+  participle has a plural subject; the claw suffix is singular feminine,
+  while the creatures and plural dative in the cessation clause are
+  feminine plural. No extra participants are introduced.
+- In 4:8, “And they have no cessation” separates conjunction/cessation,
+  they, and no; only have spans the negative existential plus dative
+  possession. The saying infinitive is separate. Holder and all retain
+  the two words of the divine title. The final ITHWHI-HWA expresses one
+  past state: the one and who are separate from shared was, followed
+  by distinct “and is” and “and is coming.” Compare the past existential
+  construction in Muraoka, A Basic Grammar of Classical Syriac, §109.
+- In 4:9, QOBBAL TAYBUTHA is a lexical compound rendered thanksgiving,
+  not independent acceptance and favor. The
+  [Brock–Kiraz entry in SEDRA](https://sedra.bethmardutho.org/lexeme/get/1203)
+  explicitly records the compound as gratitude/thankfulness; the live
+  public API entry for lexeme 1203 confirms this. And remains separately
+  linked to its actual source word at 6, while thanksgiving spans 6–7.
+- Revelation 4:9 has a morphologically singular perfect giving form
+  before the explicit plural four-creature subject. English uses plural
+  agreement and a completed temporal condition, “whenever ... have given,”
+  followed by future falling, worshiping, and casting in 4:10. This
+  resolves the unusual agreement/context without treating the perfect
+  as a participle. Compare perfect in future-oriented temporal clauses
+  in Muraoka §81. The subject, numeral, and giving verb are separately
+  linked; the source forms themselves are unchanged.
+- Both Amen words in 4:9–10 remain as parenthetical affirmations. The
+  age formulas preserve singular construct age followed by plural ages:
+  “for the age / of ages.” The temporal clause continues across the
+  verse boundary. In 4:10, the elders precede will fall down in English;
+  the duration and Amen precede they will worship, retaining the
+  duration's scope over worship and its distinct living-one object.
+  The conjunction and worship predicate share their actual single
+  source owner in separate English spans. Crown possessors remain
+  plural; while and saying keep the explicit temporal relation.
+- Revelation 4:11 separates You and worthy at the second-person
+  participial word from are at the third-person HU copular support.
+  Our belongs to both Lord and God. There is no Holy adjective or
+  separate by-you-they-exist clause. The conclusion remains “through
+  your will they existed and were created,” keeping both final
+  perfect forms and the second-person possessor on will.
 
 Source checks for Revelation 5:
 
