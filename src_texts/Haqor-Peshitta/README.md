@@ -13865,54 +13865,89 @@ Source checks for Revelation 6:
 
 Source checks for Revelation 7:
 
-- 7:1-3: The seer is first person; four angels stand and hold four winds.
-  The demonstrative in 7:1 is singular, and no second "of the earth" follows
-  "four winds." The wind is prevented from blowing on the earth, sea, or any
-  tree. The other angel ascended (perfect), has the living God's seal through
-  an existential possessive dative, and cries to the four angels who were
-  granted permission to harm. The prohibition addresses them in the second
-  plural; "we seal" is first plural. The servants' anticipatory possessive is
-  resolved as "the servants of God," with no unsupported "our" on God.
-  The seal's location is the source's "between their eyes."
-- 7:4-8: The total is 144,000 from all Israel's tribes, with twelve thousand
-  in each named group. The source order in 7:7 is Simeon, Issachar, Levi.
-  Asher and the tribal Joseph follow the contextual names, rather than
-  Murdock's spelling or a lexeme's unrelated biographical gloss. The list
-  continues across verse boundaries; "sealed" occurs at 7:4 and finally
-  7:8, without inventing a separate sealing verb for each entry. Repeated
-  anticipatory tribe suffixes are idiomatic "the tribe of X."
-- 7:9-12: The seer sees a great multitude; the negative existential plus
-  ability construction makes its number beyond anyone's ability to count.
-  The short four-position link retains that grammatical unit. Peoples,
-  tribes, nations, languages, standing, white robes, and palms in their hands
-  are retained. A repeated English "from" keeps the mixed singular and
-  plural nouns grammatical while sharing the source preposition.
-  Anticipatory suffixes become "before the Lamb" and "around
-  the throne." The coordinated "and to him who sits" remains explicit.
-  Angels stand around the throne, elders, and four living creatures, then
-  fall on their faces before the throne; no absent worship verb or possessive
-  on that throne is imported. The following saying clause continues the
-  sentence. Praise precedes blessing; "thanksgiving" renders the compound
-  qobbal taybutha, and both occurrences of "our God" retain first-plural
-  possession. Participles describe the ongoing scene in contextual English
-  past, while the seated figure's description remains present.
-- 7:13-14: One elder answers and speaks to the seer. English passive grammar
-  preserves the answer's actor while keeping source order.
-  The white-robed people's identity and origin remain questions. "My lord"
-  and "you know" address the elder, with the repeated second-person subject
-  expressed as one emphatic English clause. The people came from great
-  affliction and actively washed their own robes and made them white in the
-  Lamb's blood; the plural actors and robe object remain distinct.
-- 7:15-17: "Therefore" renders "because of this"; they serve him day and
-  night in his temple. The seated one will shelter them: the verb's covering
-  and protective sense with al is independently supported by CAL's gnn
-  causative entry (https://cal.huc.edu/oneentry.php?cits=all&lemma=gnn+V).
-  English fronting preserves the sun clause's source order, every negative,
-  and "any heat," with no unsupported "any more." The Lamb feeds and leads
-  them to life and to fountains of water, two coordinated destinations,
-  rather than an imported "living water" modifier. The last wiping verb is
-  third singular with an implicit subject; no absent "God" noun or explicit
-  change of actor is added. All tears and their eyes are retained.
+- Reviewed all 17 verses and 280 source words, including all 21 original
+  shared spans, against exact forms, vocalization, morphology, gloss
+  alternatives, suffix roles, clause syntax, and continuous English.
+  Ordinary noun phrases, modifiers, recipients, negation, auxiliaries,
+  and causal demonstratives have separate owners. Three narrow shared
+  expressions remain: temporal “after,” possessive “had,” and lexical
+  “thanksgiving,” each with an individual ledger justification. Reordered
+  English and repeated source owners express actual constituents.
+- In 7:1 the seer is first person, the demonstrative is singular, and four
+  angels stand and hold four winds. The passive participle for holding has
+  that lexical sense; it does not make the angels the objects being held.
+  There is no second “of the earth” after the winds. Men batar is the
+  paired temporal preposition “after”; the conjunction at its first word
+  is separately linked. The [CAL entry family](https://cal.huc.edu/cal_entry_web.php?lemma=%29tr+N)
+  lists men batar as an after construction. In the following purpose clause,
+  D-la owns “so that” and “no,” the wind noun owns “wind,” and the
+  third-singular imperfect owns “might blow.” Earth, sea, and any tree
+  remain separate, including both following negatives.
+- In 7:2 the other angel ascended (perfect) and has the living God's seal
+  through existential possession. Only “had” jointly uses the existential
+  and possessive dative; “and” and the possessor “he” remain separately
+  linked. The passive permission clause separates “those,” “to whom,”
+  and “it was given.” Its angels receive permission to harm, rather than
+  being its givers. In 7:3 the prohibition addresses them in the second
+  plural, with English do-support owned by the harming verb and “not” by
+  the negative. “We seal” is first plural. The anticipatory possessive on
+  servants becomes the ordinary genitive “the servants of God”; God has
+  no first-plural possessive here. The location is “between their eyes.”
+- The 144,000 in 7:4 come from all Israel's tribes, with twelve thousand
+  in each named group in 7:5-8. The source order in 7:7 is Simeon,
+  Issachar, Levi. Asher and the tribal Joseph follow their contextual
+  identities. The list continues across verse boundaries: “sealed” occurs
+  in 7:4 and finally 7:8, without inventing sealing verbs for each entry.
+  The repeated tribe suffixes anticipate the following named genitives;
+  they do not require an extra English possessive alongside “of X.”
+- In 7:9 the multitude's number is beyond anyone's ability to count.
+  The relative, nominal counting complement, negative existential,
+  ability participle, and past auxiliary retain separate owners in
+  “which no one was able to number.” The
+  [CAL number/counting entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=mnyn+N)
+  records a counting sense for the noun. English recasts that nominal
+  complement as “to number”; the raw noun annotation is unchanged.
+  Its suffix refers back to the multitude, expressed as the object of
+  numbering through “which,” rather than adding another object. Hwa is
+  the past auxiliary, not a personal pronoun. Peoples, tribes, nations,
+  languages, standing, white robes, and palms in their hands remain.
+  Repeated English “from” belongs to the actual preposition. Anticipatory
+  suffixes become ordinary “before the Lamb” and “around the throne.”
+- In 7:10 the coordinated “and to him who sits” remains explicit and
+  “our God” retains its first-plural possessive. In 7:11 the past auxiliary
+  and standing participle have separate owners. Angels stand around the
+  throne, elders, and four living creatures, then fall on their faces
+  before the throne. No absent worship verb or throne possessive is added.
+  The saying clause in 7:12 continues the sentence. Praise precedes
+  blessing. Qobbal taybutha is the gratitude compound rendered
+  “thanksgiving,” documented in the
+  [Brock and Kiraz entry](https://sedra.bethmardutho.org/lexeme/get/1203);
+  it is not two coordinated ascriptions of receiving and goodness.
+  The prefixed “and” has its own span, and the second “our God” retains
+  first-plural possession. The seated figure's description remains present.
+- Revelation 7:13 uses active “one of the elders answered,” with English
+  subject-before-verb order, rather than an unnecessary passive recast.
+  Both the identity and origin of the white-robed people remain questions.
+  In 7:14 “my lord” and “you yourself know” address the elder. The
+  post-predicate subject owns “you,” the prominent independent pronoun
+  owns emphatic “yourself,” and the participle owns “know.” Muraoka's
+  *Classical Syriac: A Basic Grammar*, sections 9-10 and 74, distinguishes
+  weak predicate subjects from prominent independent pronouns. “Yourself”
+  is an intensifier, not a reflexive object of knowing. The people came
+  from great affliction and actively washed their own robes and whitened
+  them in the Lamb's blood; the plural actors and robe object remain distinct.
+- In 7:15 “because of” and singular “this” have separate owners; the next
+  existential supplies “they are.” They serve him day and night in his
+  temple. The seated one will shelter them: the protective sense with al
+  is supported by the [CAL gnn causative entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=gnn+V).
+  The preposition's suffix owns the people sheltered, without adding another
+  observer. Revelation 7:16 separates every negative from its finite verb
+  and preserves the sun and any heat, without adding “any more.”
+- In 7:17 the Lamb feeds and leads them to life and to fountains of water,
+  two coordinated destinations, rather than an imported “living water”
+  modifier. The last wiping verb is third singular with an implicit subject;
+  no absent God noun or explicit change of actor is added. All tears and
+  their eyes remain independently linked.
 
 Source checks for Revelation 8:
 
