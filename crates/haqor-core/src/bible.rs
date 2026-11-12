@@ -8732,7 +8732,11 @@ mod tests {
             eprintln!("skipping: data/haqor.db has no Haqor lexicon tables");
             return;
         }
-        let Some(deity) = bible.haqor_lexicon_name_people("yahweh").unwrap().first().copied()
+        let Some(deity) = bible
+            .haqor_lexicon_name_people("yahweh")
+            .unwrap()
+            .first()
+            .copied()
         else {
             eprintln!("skipping: data/haqor.db has no yahweh name entry");
             return;

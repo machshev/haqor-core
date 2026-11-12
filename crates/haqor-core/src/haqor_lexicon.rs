@@ -1155,9 +1155,7 @@ impl Checker<'_> {
                     // A name is borne by a person, or by God or another
                     // named being (TIPNR's Supernatural records): never by a
                     // place, a time or a group.
-                    Some((_, kind, category))
-                        if kind != "person" && category != "Supernatural" =>
-                    {
+                    Some((_, kind, category)) if kind != "person" && category != "Supernatural" => {
                         self.fault(&at, format_args!("`{key}` is a {kind}, not a person"))
                     }
                     Some(_) => {}
