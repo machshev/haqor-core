@@ -11303,13 +11303,100 @@ Source checks for James 4:
 
 Source checks for James 5:
 
-- James 5:4–5: `עלת` is rendered in the complete “has entered the ears of the Lord of hosts” phrase, and `גיר` is retained in the causal opening “For you have lived merrily on the earth.”
-- James 5:8 and 5:10: `ולבותכונ שררו` is “and strengthen your hearts”; `דמותא לנביא סבו` owns “Take the prophets as an example”; `למגרת רוחא דאולצניכונ` retains long-suffering, spirit, and the plural 2mp “your afflictions”; and `הנון דמללו בשמה דמריא` explicitly resumes the prophets as “namely, those who spoke in the name of the Lord.”
-- James 5:14: `עדתא` is rendered with the project’s established terminology as “ecclesia.”
-- James 5:16: `חילה דצלותא` is the anticipatory genitive “the power of the prayer”; the final third-person feminine resumptive `לה` is absorbed into the complete relative “which a righteous man prays,” without a dangling “to.”
-- James 5:16 grammar check: anticipatory suffix/genitive and relative resumptive analysis follows Mark Francois, *Classical Syriac Grammar*, chapter 7 §§7.3–7.4, [pp. 73–75](https://markfrancois.wordpress.com/wp-content/uploads/2023/01/classical-syriac-grammar-week-7.pdf#page=5).
-- James 5:18: plural `פאריה` is rendered “its fruits.”
-- James 5:11 and 5:19: `יהביננ טובא לאילין דסיברו` is rendered as giving blessedness to those who endured, and the contiguous `ונפניוהי אנש` phrase is rendered “someone turns him back.”
+- All 20 verses and 278 source positions were checked against the exact
+  forms, morphology, suffixes, clause ownership, and continuous English.
+  Ordinary phrases have individual owners; the three retained shared
+  spans have specific linguistic reasons in the review ledger.
+- In 5:1, the rich ones are addressed with plural imperatives, and the
+  miseries are coming upon them. In 5:2, wealth is singular; has been
+  spoiled, has rotted, and have been eaten retain the perfect verbs.
+  And belongs to the garment noun. The moth is a generic singular.
+- In 5:3, ashhet leh is the corrosion predicate with its subject-related
+  dative, jointly rendered have corroded. Leh is not a possessive attached
+  to the following their rust, which already has its own suffix. See
+  [CAL, shht, Aphel](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24xt+V),
+  which cites this exact phrase under rust. The following and their rust,
+  testimony, and against you have their own owners. Is going to consume
+  renders atida's prospective sense, not literal physical preparation;
+  compare Muraoka's glossary for atid. Fire is gathered for yourselves
+  for the last days; days is plural, not the baseline's singular day.
+- In 5:4, lands is plural. The masculine demonstrative and relative
+  identify the withheld pay; wrongfully withheld renders the defrauding
+  predicate in its wage context. The cry has entered is a perfect verb
+  with the outcry as subject. Ears is explicitly present in le-ednawhi,
+  with a third singular anticipatory suffix before of the Lord of hosts;
+  it is not supplied from another text. Pay, laborers, reapers, ears,
+  Lord, hosts, and entered retain their actual owners.
+- In 5:5, the three second-person plural perfect predicates describe
+  living merrily, indulging yourselves, and feeding plural bodies.
+  For is explicit, as are earth, day, and slaughter. In 5:6, righteous
+  one is singular; the following third masculine singular perfect is
+  he did not stand against you, with he referring to that righteous one.
+  No independent no one subject is added.
+- In 5:7, but, you, and my brothers retain their actual owners; my is
+  present in the brother noun's first-person suffix. Your spirit and
+  the farmer's his spirit are distinct. The farmer waits for precious
+  fruits, a plural noun, and is patient about them, with a plural
+  referring suffix. The early and latter qualifiers share the single
+  rain noun. In 5:8, and belongs to your hearts, with strengthen a
+  separate imperative. Has drawn near jointly renders the perfect
+  verb and centripetal dative; the feminine coming is its subject.
+- In 5:9, one against another is individually linked; the negative
+  purpose clause is so that you may not be judged. The source says
+  judgment stands before the door, not a substituted judge noun.
+  In 5:10, take, the prophets, as an example, and for yourselves have
+  separate owners. Long-suffering, spirit, and your plural afflictions
+  are retained. Those who spoke resumes the plural prophets; name
+  has an anticipatory suffix before of the Lord.
+- In 5:11, we give blessedness to those who endured preserves the
+  first plural give-form and past enduring. You have heard belongs to
+  the endurance of Job; and you have seen governs the outcome that the
+  Lord brought about for him. The conjunction before outcome remains
+  separately linked. Because the Lord is merciful and compassionate
+  retains its causal relation, adjective owners, and copular pronoun.
+- In 5:12, before all things and the contrastive but retain their
+  individual words. The non-enclitic hwaytun with swearing expresses
+  general prohibition, rather than a narrative past (Muraoka section
+  87). Heaven, earth, and another oath have separate owners, with all
+  negatives preserved. Your word is to be yes, yes, and no, no. The
+  final purpose retains not, the passive condemned-form, under, and
+  judgment separately.
+- In 5:13, the first nehwe belongs to the condition is in affliction;
+  the second belongs to let him be praying. In the second condition,
+  he is glad is the glad participle, while the third nehwe belongs to
+  let him be singing. These are three be-forms with distinct clause
+  functions; the last must not be swallowed by the glad condition.
+  In 5:14, the sick predicate, calling the elders of the ecclesia,
+  praying for him, anointing him, oil, and the name of our Lord retain
+  their owners. Ecclesia follows the project's established terminology.
+- In 5:15, the healed object is him, the one who is sick. Our Lord
+  raises him. If sins have been committed by him, they are forgiven
+  to him: the resultative passive participle plus suffixed Lamadh
+  expresses the agent of committed, while the last Lamadh is the
+  recipient of forgiveness. Compare Muraoka sections 84 and 94.
+  The participles of healing, raising, and forgiving are prospective
+  in this conditional assurance.
+- In 5:16, non-enclitic hwaytun with confessing/praying expresses
+  advice, you should be, without imposing past time. The reciprocals
+  are one to another and one for another, with to on the second one
+  in the first expression, and for on its own preposition in the second.
+  The feminine suffix on power anticipates prayer: the power of the
+  prayer, not an additional human his power. The one supplies ayda;
+  the following relative prefix and resumed feminine object lah jointly
+  become which, with a righteous man and prays separately linked.
+  See Muraoka sections 76, 111-112 and [Francois, sections 7.3-7.4](https://markfrancois.wordpress.com/wp-content/uploads/2023/01/classical-syriac-grammar-week-7.pdf#page=4)
+  on anticipatory genitives and relative resumptions.
+- In 5:17-18, Elijah is a feeling human like us; his prayer and the
+  failure of rain to descend are past, with three years and six months
+  explicit. The following heavens gave rain, and the earth gave its
+  fruits; fruits is plural and its refers to the earth.
+- In 5:19, and belongs to turns him back, while someone is separately
+  linked as its subject. The wandering and returning belong to the
+  conditional clause. In 5:20, the one and who turns have separate
+  owners. Saves is a contextual sense of Aphel hyy, not a substituted
+  root: [CAL, hyy, Aphel](https://cal.huc.edu/oneentry.php?cits=all&lemma=xyy+V)
+  includes save and sustain alongside giving or preserving life. His
+  soul, death, a multitude, and his sins retain their own source words.
 
 Source checks for 1 Peter 1:
 
