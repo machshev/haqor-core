@@ -12766,37 +12766,102 @@ Source checks for 1 John 3:
 
 Source checks for 1 John 4:
 
-- In 4:1, the second-person plural imperfect is a prohibition; the
-  following being/discerning construction supplies the contrasting command
-  to discern spirits. In 4:2, “the Spirit of God” is the subject of “is
-  known”; the separate “every spirit” begins the following test.
-- In 4:3, the supplied confession clause names Jesus without repeating
-  the Messiah title found in 4:2. The later source explicitly names the
-  false Messiah. `מנ כדו` is the temporal idiom “already.” In 4:4, the
-  comparative “than” is distinct from the following “in the world.”
-- In 4:5, `מטל הנא` together means “therefore.” In 4:6, the two negated
-  predicates remain distinct, and the repeated prepositional demonstrative
-  construction supplies “By this.”
-- In 4:9, the Son precedes the sending verb and its subject, God.
-  English uses a local passive while retaining God as the sender.
-  The anticipatory possessives in “the love of God” are absorbed naturally.
-- In 4:10, the two occurrences of unvocalized `אחבנ` have different
-  vocalizations and morphology: “we loved” and “he loved us.” `על אפי`
-  is the on-behalf-of idiom. In 4:12, the fronted God is the object of
-  “no one has ever seen”; the verb's resumptive object suffix refers to him.
-- In 4:13, the Spirit phrase retains its partitive “from,” rather than
-  making the Spirit the cause or subject of giving. In 4:14, the Saviour
-  is “for the world.” In 4:16, the believing and knowing verbs are perfect;
-  the supplied source ends with abiding in God without another reciprocal
-  dwelling clause.
-- In 4:17, confidence/open faces is a possession idiom, rendered “that we
-  may have confidence.” The being verb there is imperfect, while the later
-  “as he was” has an explicit perfect. In 4:18, the separate fear nouns
-  retain their object and subject roles, and the supplied noun is danger.
-- In 4:19, the first-person plural imperfect is hortative, “let us love.”
-  In 4:20, “I love God” is first-person speech; the following hatred is
-  third-person narration about that speaker. In 4:21, the two love verbs
-  have distinct roles: whoever loves God should also love his brother.
+- All 21 verses, 323 ordered source words and 64 original shared spans
+  were checked against the exact forms, inflections and continuous English.
+  Ordinary noun phrases, negation, auxiliaries, relative clauses and
+  copulas have separate owners. Seven retained shared spans have individual
+  linguistic reasons in the review ledger. Repeated references to one
+  source word separately express its prefixes, stem or suffixes.
+- 4:1 retains the second-person plural prohibition and all spirits. The
+  fully pronounced being verb before the discerning participle expresses
+  general advice, "you should discern", rather than past "you were";
+  compare Muraoka section 87 in the
+  [grammar](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  The finite advice and discerning stem have separate links. False and
+  prophets are separate; the final repeated locative preposition and
+  anticipatory world reference remain narrowly combined in "into".
+- In 4:2 the Spirit of God is the subject of "is known". A separate
+  every-spirit clause begins the confession test; Jesus, Messiah, coming,
+  flesh, origin and copula have separate owners. In 4:3 the confession
+  names Jesus without importing the Messiah title from 4:2. The later
+  explicit false Messiah is the antecedent of the masculine coming/world
+  clauses; the preceding feminine "this" continues the spirit reference.
+  `מנ כדו` is the temporal idiom "already", confirmed in the vocabulary
+  and glossary of [Younansardaroud's course, pages 135 and 145](https://refubium.fu-berlin.de/bitstream/handle/fub188/24490/Classical_Syriac_Course_Book_3-2019.pdf?isAllowed=y&sequence=3).
+- 4:4 separately links the addressees, copula, God origin, children,
+  overcoming and its plural object. The comparison uses "the one who is
+  in you ... the one who is in the world", without imposing personal
+  pronouns on an unspecified indwelling referent. Than remains separate
+  from the following world phrase. In 4:5 `מטל הנא` is separately
+  "because of this". The world's hearing verb and its Lamadh-marked
+  pronominal object remain "hears" and "them", not a new recipient.
+- 4:6 keeps the first "we" and the second pronominal/copular "are"
+  separately linked; the latter is not an extra subject or an omitted
+  word. Compare Muraoka sections 104-107 on pronominal nominal predicates.
+  The two negated predicates and both hearing objects remain distinct.
+  The repeated by-it/by-this construction has a narrow shared "By",
+  with the demonstrative "this" separately at its actual source word.
+- 4:7 separates one and another, the love origin/copula, every one,
+  loving, birth and knowing. The born predicate is a passive/result
+  participle, not an active begetting event. In 4:8 both loving/knowing
+  negations remain explicit. The Spirit, love, Son and God genitives in
+  4:2, 4:9 and 4:15 contain anticipatory possessive suffixes; the explicit
+  genitives realize their possessors without adding another his/her.
+- 4:9 keeps the love's passive "was made known" distinct from the active
+  sending clause. The fronted Son is the sending object and the following
+  God is the sender: "that God sent his only Son". English reordering
+  preserves this voice and independently links his, only and Son. The
+  purpose living verb and "through him" keep their own words; the latter
+  is the instrumental hand expression, not a new literal hand participant.
+- 4:10's present love statement and negative cleft are "it is not that
+  we loved God, but that he loved us". The nominal `לא הוא` does not
+  mechanically force a past copula. The two unvocalized `אחבנ` forms
+  differ in vocalization and inflection: first-person plural "we loved"
+  and third-person singular with object "he loved us". `על אפי` is the
+  narrow on-behalf-of expression, not independent physical faces.
+- 4:11 preserves the conditional God/loved-us relation and the separate
+  explicit we, obligation, infinitive loving and reciprocal objects.
+  In 4:12 God is a fronted object with a resumed object suffix on saw;
+  "God" owns just those two references in natural English order, while
+  no, one, ever and the seeing verb have separate links. The conditional
+  reciprocal love, God's abiding, his love's completion and both in-us
+  expressions remain distinct.
+- 4:13 separately links both abiding subjects, verbs and locations. The
+  causal prefix and partitive origin are separately "because" and "of"
+  on their shared source word: "because he gave us of his Spirit". This
+  preserves partitive Min; it does not make the Spirit the giver or replace
+  that relation with instrumental by. In 4:14 the source retains perfect
+  seeing, present testimony, the Father's active sending, and Saviour
+  "for the world".
+- 4:15 separates Jesus from the identifying expression "that ... is"
+  and from the Son-of-God genitive. Both reciprocal abiding clauses retain
+  their actual subject, verb and location. In 4:16 believing and knowing
+  are perfect. "The love which God has toward us" has a narrow possessive
+  has exception; the anticipatory dative does not add a second him to God.
+  The supplied verse ends with the person's abiding in God, without
+  adding another reciprocal clause.
+- In 4:17 openness of face is the confidence expression. Its purpose
+  prefix, abstract openness noun, face noun, imperfect existential and
+  first-person dative stay separately linked: "so that there may be for
+  us openness of face". The later comparison keeps the explicit past
+  "as he was", then thus, also, we, are, in this and world separately.
+- 4:18 distinguishes the first fear noun, perfect love, casting verb,
+  out adverb and resumed fear object. The latter has only a narrow fear
+  exception for the pronoun and explicit noun. `בקנטא` has an attested
+  predicative/adjectival sense "dangerous, at risk" under
+  [CAL, qenta](https://cal.huc.edu/cal_entry_web.php?lemma=qn%2B+N).
+  "Fear is dangerous" separately links fear, copula and this predicate;
+  it does not import a have verb or punishment/torment from a different
+  language's text. The later fearing person, negation and passive completed
+  predicate remain distinct.
+- In 4:19 the hortative force belongs to the first-person plural imperfect:
+  "Let" and "love" link to that verb, while "us" renders the separate
+  first-person pronoun. In 4:20 "I love God" is first-person speech,
+  followed by third-person hatred narration. The visible brother and
+  unseen God retain present passive predicates, not new past active
+  seeing statements. Both negations and the final ability/loving question
+  have distinct links. In 4:21 the received commandment, origin, loving
+  God and corresponding obligation to love one's brother remain separate.
 
 Source checks for 1 John 5:
 

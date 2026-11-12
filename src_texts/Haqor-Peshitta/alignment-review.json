@@ -29801,6 +29801,77 @@
           "reason": "Ith leh is the positive existential plus third-person dative expressing possession, idiomatically has. Whoever remains separately at 0; possessions and their of-the-world modifier have separate source owners."
         }
       ]
+    },
+    "62:4": {
+      "sha256": "cf80401a59434d71e8f6785f3dbcfac809177ff42b721b0e5e412d24bf30d8a5",
+      "original_shared_spans": 64,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 1,
+          "english": "into",
+          "positions": [
+            18,
+            19
+          ],
+          "reason": "Beh b-alma repeats the locative preposition with an anticipatory in-it reference to the explicit world. One English into renders the motion endpoint relation; the world noun remains separately at 19."
+        },
+        {
+          "verse": 3,
+          "english": "already",
+          "positions": [
+            22,
+            23
+          ],
+          "reason": "Men kaddu is the temporal adverbial idiom already, as recorded in Younansardaroud pages 135 and 145. It is not a literal from plus it suffices statement; and now and the world clause remain separately linked."
+        },
+        {
+          "verse": 6,
+          "english": "By",
+          "positions": [
+            18,
+            19
+          ],
+          "reason": "Bah b-hada repeats the relational preposition in an anticipatory by-it/by-this construction. One English By renders the single relation, while this remains separately at 19."
+        },
+        {
+          "verse": 10,
+          "english": "on behalf of",
+          "positions": [
+            14,
+            15
+          ],
+          "reason": "Al appay is the compound preposition on behalf of. It does not denote literal faces here; our sins remains separately linked at 16."
+        },
+        {
+          "verse": 12,
+          "english": "God",
+          "positions": [
+            0,
+            4
+          ],
+          "reason": "The fronted God object is resumed by the third-person object suffix on saw. One English God renders both object references in normal English order; has and seen remain separately at 4, and no, one and ever have distinct owners."
+        },
+        {
+          "verse": 16,
+          "english": "has",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Ith leh expresses positive existential possession, idiomatically has. The dative anticipates the explicit God possessor at 6, so no extra him is added. Which remains separately at 4 and toward us at 7."
+        },
+        {
+          "verse": 18,
+          "english": "fear",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Lah l-dehltha has an anticipatory feminine pronominal direct object followed by explicit fear. One English fear owns both object references; casts and out remain separately at 7 and 6."
+        }
+      ]
     }
   }
 }
