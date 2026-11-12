@@ -10508,13 +10508,117 @@ Source checks for Hebrews 9:
 
 Source checks for Hebrews 10:
 
-- In 10:1, the law had a shadow in it; it is not itself called a shadow. The repeated-pronoun construction at positions 18–20 identifies the same sacrifices. Their passive offering at 22–23 remains distinct from their inability to perfect at 24–27 and the active offering at 29–30.
-- In 10:2, the long-ago adverb belongs to the consequent cessation clause, and the contrast particle introduces that consequence. The conscience predicate retains its negative and its affected persons; the final dative belongs to the cleansing construction rather than introducing another beneficiary.
-- In 10:5, the source says that God clothed the speaker with a body. In 10:6 and 10:8, the whole-burnt-offering compound is one kind of offering, not two separate offerings. The repeated first-person forms in 10:7 complete the coming predicate and do not introduce a second speaker. In 10:10, both the explanatory particle and the possessive in “will of his” are retained; the one-time expression is rendered “once.”
-- In 10:11, the chief priest’s repeated offerings retain their past auxiliaries. In 10:17, sins are not remembered against the people. The confidence expression in 10:19 and the veil compound in 10:20 are translated as complete idioms; the latter follows the sanctuary compound checked in Hebrews 9. The renewal verb in 10:20 remains a finite relative predicate.
-- In 10:21, the noun followed by “great” is distinguished from the chief-priest compound in 10:11. In 10:24–25, the reciprocal expressions refer to one another; the final demonstrative belongs to “that day.” In 10:27, the adversaries are plural.
-- In 10:29, the blood of the covenant is reckoned as anyone’s blood, while the sanctification relative is retained. In 10:30, no explanatory “for” is added to the opening knowing predicate. In 10:32, the source explicitly names baptism. In 10:34, the grief is for imprisoned people; in 10:35, the great reward is prepared for the confidence the readers have.
-- In 10:37, the future coming predicate and its pronominal/relative subject are read together. In 10:38, “my faith” retains the first-person possessive; the feminine discouragement construction with an affected-person dative is an idiom also found in 1 Thessalonians 3:3, rather than a reason to make faith its subject. In 10:39, the final noun is singular “our soul,” with a first-person plural possessor, and the separate “for us” relation is retained.
+- All 39 verses and 487 source positions were checked against the exact
+  forms, morphology and connected English. The 126 original shared spans
+  become 18 narrow exceptions: lexical idioms, compound relations,
+  reciprocal/distributive repetition, existential possession, and a
+  relative with its resumed dative. Ordinary noun phrases, titles,
+  negation, auxiliaries and clauses retain separate owners.
+- In 10:1, the law contained a shadow; it is not itself called a shadow.
+  The in relation comes from beh, referring back to the law. The repeated
+  hanun kad hanun identifies the very same sacrifices, while the first
+  kad supplies while. Their passive offering and past auxiliary remain
+  distinct from their inability to perfect and the people's active offering.
+- In 10:2, gamrin is active: the sacrifices were bringing perfection,
+  not themselves being perfected. Long ago belongs to the cessation
+  consequence, followed by the counterfactual conscience clause. The
+  final dative is coreferential with those cleansed, rendered themselves;
+  one and time remain separate. In 10:3, in combines the proleptic bhun
+  with the repeated preposition on the sacrifices, retaining those and
+  sacrifices separately. In 10:4, the blood is the subject of being able
+  to cleanse; is, not and able have separate owners.
+- In 10:5, the source says that God clothed the speaker with a body.
+  In 10:6 and 10:8, whole modifies burnt offerings and is separately linked.
+  In 10:7, the first-person pronoun and its enclitic repetition supply
+  I and am without introducing a second speaker. Kthave is vocalized
+  plural books. In 10:8, men l-el supplies above, while the relative,
+  passive offering and past auxiliary retain separate links.
+- In 10:9–10, coming, doing God's will and annulling the first to establish
+  the second remain distinct. Will of his preserves the possessive, and
+  the offering of Jesus the Messiah's body is one time, with separate
+  numeral and time links.
+- In 10:11, the singular chief governs plural priests, rendered chief of
+  priests. Both past auxiliaries are retained. Hanun b-hanun identifies
+  the same sacrifices; men mtom supplies ever, separately from which,
+  were, not and able. In 10:12–14, the offered sacrifice, sitting, present
+  waiting, future placing of enemies, perfection and sanctification are
+  distinguished. The until clause uses English are placed for the
+  passive imperfect, and forever retains its own source word.
+- In 10:15–17, Holy and Spirit retain separate owners. The Spirit's
+  testifying participle and perfect having said are distinguished.
+  This and is are separate, men batar supplies after, and the singular
+  my law anticipates the singular object suffixes of give and write.
+  The sins are not remembered against the people. In 10:18, the required
+  predicate supplies its own English copula, separate from the negative.
+- In 10:19 and 10:35, galyuth appe is the lexical confidence idiom;
+  [CAL glyw N](https://cal.huc.edu/cal_entry_web.php?lemma=glyw+N)
+  records this compound. Existential ith with its dative expresses
+  possession in 10:19, 10:21 and 10:35; only have combines that construction,
+  with the possessor separately linked. In 10:19, my brothers preserves
+  the first-singular possessor.
+- In 10:20, the way is of life, a lexical plural tantum, and the finite
+  renewed predicate retains its relative prefix. The entrance curtain
+  splits entrance from curtain, following
+  [CAL appay, structure compounds](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29pyn+N).
+  Its gender and number follow the second noun; compare Nöldeke section
+  142. Now, for us, which is and his flesh retain their own source words.
+  In 10:21, a great priest keeps its noun and adjective separate from
+  the chief of priests construction in 10:11.
+- In 10:22–24, the heart, its true modifier, faith, the sprinkled and
+  cleansed hearts, the evil conscience, and the washed body with pure
+  water retain separate owners. Faithful and is are separate in 10:23,
+  and the one who promised is the subject. Had b-had in 10:24 is
+  reciprocal one another, as in Muraoka section 12b; incitement, love,
+  good and works remain separate.
+- In 10:25, the source has singular our assembly. The first-plural cohortative let
+  us and forsake retain separate owners, while entreat is a
+  second-plural imperative. Anash anash is distributive some people,
+  and had men had is reciprocal one another. The urgency expressions
+  are separately linked, and the approaching predicate is perfect:
+  that day has drawn near. In 10:26, men batar supplies after, receiving
+  retains its own predicate, and there is no longer is split between
+  the negative existential and the temporal adverb.
+- In 10:27–28, the fearful judgment is prepared, with a separate copula;
+  the consuming fire has plural adversaries. The transgression is
+  against Moses' law, and mouth supplies the testimony metonym. The
+  conjunction on three is retained as and, with witnesses separate.
+- In 10:29, msam b-resha is the lexical punishment expression recorded
+  in [CAL The Special Vocabulary of Syriac, page 4](https://cal.huc.edu/pdfs/SyriacSpecial.pdf).
+  Receive remains an active future predicate, rather than being assigned
+  to the punishment idiom. Kolnash is generic anyone, with its genitival
+  prefix yielding that of any person; the blood comparison is explicit.
+  The feminine by which refers grammatically to the covenant, and the
+  perfect sanctification predicate is retained without replacing its
+  antecedent with the masculine blood noun. His own and covenant are
+  separately linked, as are the Spirit and grace.
+- In 10:30–31, no opening for is supplied to we know. Vengeance, its
+  copula and mine are separate, as are the Lord, judging and his people.
+  Dehltha is the fear/dread noun, with great and is separately linked;
+  falling, the hands, God and living retain their own owners.
+- In 10:32–34, the source explicitly names baptism and perfect endured.
+  Reproach is singular, afflictions and spectacles are plural, and the
+  following people endured these things. The grief construction is
+  impersonal, rendered it grieved you, rather than treating its
+  third-singular verb as second-plural. The knowing construction is
+  present you know, with the participle and explicit pronoun separately
+  linked. The better possession, its copula, negation and passing away
+  are also separate.
+- In 10:35–37, only for which combines the relative prefix with its
+  resumed feminine dative referring to confidence; prepared, great and
+  reward retain separate owners. Endurance, the focus/copula hu,
+  required, for you, doing God's will and receiving the promise are
+  distinguished. In 10:37, the short time clause is split into its
+  components, and the coming participle is distinct from will come.
+- In 10:38, my faith retains the first-singular possessive with a separate
+  faith link. The feminine impersonal discouragement predicate with
+  its masculine affected-person dative refers to the righteous person,
+  rather than making faith its subject. Compare the impersonal Syriac
+  construction under the despair sense in
+  [CAL qṭʿ, Ethpaal](https://cal.huc.edu/oneentry.php?cits=all&lemma=q%2B%28+V).
+  The soul's present delight, negative and in him relation are separate.
+  In 10:39, la hwayn is nominal present negation in context; shrinking back
+  leads to perdition, while faith obtains for us our soul. The final noun
+  is singular with a first-plural possessor, and for us remains separate.
 
 Source checks for Hebrews 11:
 
