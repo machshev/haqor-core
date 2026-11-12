@@ -12177,50 +12177,159 @@ Source checks for 2 Peter 1:
 
 Source checks for 2 Peter 2:
 
-- 2:1 retains the people noun, rather than Murdock's world, and preserves the
-  Lord buying the false teachers, their denial, and their bringing destruction
-  upon themselves. In 2:3 the demonstrative introduces the teachers whose
-  judgment follows; it is not a second object after the exploited addressees.
-- 2:4-9 keep the extended conditional sentence. The explanation of Lot's
-  distress in 2:8 is parenthetical, so the Lord's knowledge in 2:9 completes
-  the conditional. The lower places in 2:4 remain source vocabulary, and
-  2:5 retains Noah's ordinal description.
-- 2:6 ends with the third-singular perfect placement verb `סמ`. It establishes
-  the example for future ungodliness; it is not part of a future passive
-  description of people being placed. In 2:7 the plural copula completes the
-  lawless people's description, before the separate active delivery of Lot.
-- 2:8 retains the past dwelling construction and the active Pael tormenting
-  predicate. The righteous soul is the object, not a passive or locative
-  subject. The upright man is identified appositionally in the English.
-- 2:10 retains singular glory and its relation to fear, rather than importing
-  plural glorious beings. The source preposition `מן` with `זוע` can introduce
-  the object of fear; the English uses "of glory". Compare the fear sense and
-  its pronominal objects in [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=zw%28+V).
-- 2:12 keeps the explicit past copula and the subsequent future destruction
-  predicate. In 2:13 the singular copula belongs to the iniquity/reward
-  construction. The plural defilement descriptions qualify the people,
-  rather than the singular daytime revelry.
-- 2:14 distinguishes possessing the eyes and trained heart from being
-  children of the curse. It does not say that these teachers possess cursed
-  offspring. The curse description is an English nominal predicate.
-- 2:16 preserves the donkey's lack of ordinary speech, her human-voice
-  speaking, and the restraint of the prophet's foolishness. The two actions
-  remain active, and the possessive on foolishness is absorbed into its
-  following prophet genitive.
-- 2:17 treats the repeated demonstrative as a topic: the gloom is reserved
-  for these people; the people are not equated with darkness. In 2:18 the
-  barely escaping description follows the supplied source and Murdock.
-- 2:19 `זכא` is marked as a passive participle: the man is vanquished, not
-  the conqueror of the thing that enslaves him. The English active equivalent
-  makes that thing the agent overcoming the man. Both anticipatory/resumptive
-  objects and the final enslavement relation are retained.
-- 2:20 absorbs the anticipatory possessives in the world and Lord genitives.
-  Entanglement and being overcome remain distinct, and the evil-plus-`מן`
-  comparison is English "worse than". The result is declarative, not a question.
-- 2:21 keeps the causal particle and the separate backward/turning elements.
-  In 2:22 the things of the proverb are plural, the dog's return is past,
-  and the sow's bathing is active. The final wallowing phrase uses the
-  coordinated proverb's understood return rather than inventing a source verb.
+- All 22 verses and 371 source words were checked against their exact forms,
+  morphology and continuous English. All 86 original shared spans were
+  reviewed; nine narrow exceptions remain in the alignment ledger.
+- 2:1 keeps the people noun, rather than substituting Murdock's world.
+  False prophets and false teachers are ordinary split noun phrases. The
+  demonstrative, relative bringing predicate, heresies and destruction are
+  distinct. Denying the Lord is the teachers' action; buying is the Lord's
+  perfect action, with them separately at 18. The b- on Lord supplies the
+  object relation of deny, without inserting a second action. Bringing,
+  upon, themselves, swift and destruction remain separate.
+- 2:2 separates going, after, their and impurity. Because of these combines
+  the demonstrative and the following relative causal preposition with its
+  resumed plural suffix; the way, truth and passive blaspheming are distinct.
+- 2:3 retains both the covetousness and instrumental word phrases: "and
+  with words of folly". The trading verb and b-khun are "they will make
+  gain from you", preserving the actual gain predicate without depending
+  on a modern exploitation gloss; compare
+  [CAL tgr](https://cal.huc.edu/oneentry.php?cits=all&lemma=tgr+V).
+  The later demonstrative introduces the teachers whose judgment follows;
+  it is not a second object after you. From and long ago, negation and idle,
+  destruction, negation and sleeping are split.
+- 2:4-9 remain one extended conditional. "Showed no pity toward" retains
+  the sparing/pity predicate and al preposition separately, both for the
+  angels and the former world. Angels and their sinning, chains and
+  darkness, casting and them, low places, delivery and its plural object
+  retain their owners. The dependent imperfect "so that they might be
+  kept" is explicitly plural and passive; judgment and torment are split.
+- 2:5 keeps former modifying world and Noah's ordinal "the eighth".
+  Preacher and righteousness, bringing, flood, upon, world and the ungodly
+  remain separately linked.
+- 2:6 retains both temporal kad clauses and the coordinating prefixes.
+  Burning and condemning are active perfects with God as subject and the
+  feminine cities as object; the overthrow phrase remains distinct. The
+  last verb sam is third-person masculine singular perfect: God established
+  an example. It is not part of a future passive description of people
+  being placed. Atidin and the following imperfect be describe those who
+  would be ungodly, with the ungodly noun owning the English substantive
+  those and its separated predicate adjective. The temporal clause leads
+  into God's also delivering Lot in 2:7, within the larger if construction.
+- 2:7 corrects the attachment of d-b-tanputha: it describes conduct in
+  uncleanness, not "unclean ones" as an adjective for the people. Righteous
+  and Lot, oppressed and its past auxiliary, by and conduct, uncleanness,
+  the people, relative negation and law are split. The plural ithihon hwu
+  is one past copular complex, shared as were; it completes the lawless
+  people's description, rather than belonging to the separate delivery.
+- 2:8 is parenthetical. Sight, for and hearing are separate. That upright
+  man, past being, dwelling and among them each retain their word. The
+  iterative yom men yom expression is the shared day after day; compare
+  Muraoka section 75 on adverbial expressions. The tormenting predicate
+  is active Pael, with its own past auxiliary: he was tormenting his
+  righteous soul. The l- on soul marks its direct-object relation, not a
+  new locative or passive subject. His, righteous and soul, deeds, without
+  and law are distinct.
+- 2:9 supplies the conditional's conclusion. The enclitic hu focuses the
+  knowing predicate, rendered "the Lord does know" with the English
+  auxiliary separate; compare Muraoka section 110. The rescue imperfect
+  remains its dependent how-to content, with from, affliction, those,
+  fearing and him separate. The later netar is imperfect, "he will
+  reserve", rather than the former simple present. The unjust, day,
+  judgment, while and passive tormenting are distinct.
+- 2:10 retains singular lust of impurity, rather than a grouped adjective
+  modifying flesh. Going, its relative, after and flesh are separated;
+  al marks the despising relation with dominion. Bold and proud are plural
+  descriptions of the people. D-men introduces their relative lack of fear
+  of singular glory, rather than plural glorious beings. The passive-form
+  zi'in has the lexical frightened sense; [CAL zw'](https://cal.huc.edu/oneentry.php?cits=all&lemma=zw%28+V)
+  gives fear and examples with min marking its object, including Deut 1:29.
+  Who, are, not, afraid, of and glory retain their actual owners, followed
+  by the separate temporal and blaspheming predicates.
+- 2:11 corrects greater to rawrbin at 4, rather than assigning it to power
+  at 2. The relative prefix and power share their own word in separate
+  English spans. Whereas, angels, strength, the comparison, negation,
+  bringing, against them, from, the Lord, judgment and blasphemy are split.
+  From the Lord is source vocabulary, despite its omission in Murdock.
+- 2:12 retains the relative comparison, its explicit past copula and the
+  later future destruction: those who were like mute creatures will be
+  destroyed. Nature, slaughter and corruption are separate. The things
+  they blaspheme, relative negation and knowing each retain their word.
+  Their own and corruption are split; the future destruction remains
+  passive/reflexive, not an active destruction of someone else.
+- 2:13 preserves those in whom iniquity is the reward of iniquity. In whom
+  shares only the relative prefix on being and its resumed b-hon; being
+  and iniquity remain separate. The revelry judgment is parenthetical:
+  revelry which was in daytime is reckoned as pleasure for them. Defiled
+  and full of spots are plural and describe the people, not singular
+  revelry. Full and spots, the temporal, revelling, ease and luxuriating
+  are separate. The repeated while clauses continue into 2:14.
+- 2:14 separates the existential have predicates from their possessors.
+  Eyes are filled with adultery and sins that do not cease. The enticed
+  souls are not established: smikhan is passive/resultative, not the former
+  active "do not stand firm". The trained heart and its covetousness remain
+  distinct from being children of the curse; the teachers do not possess
+  cursed offspring. The last clause is an English nominal predicate.
+- 2:15 keeps the upright adjective with way. Leaving, going astray and
+  departing remain past actions. Balaam, son, Beor, the relative/dummy
+  antecedent, loving, reward and iniquity are split; the relative prefix on
+  reward owns who, while its stem separately owns the reward.
+- 2:16 retains reproof, however, being, for him and his transgression.
+  The she-ass's lack of a voice and her speaking in a human voice are
+  distinct. Speaking and restraining remain active feminine singular
+  actions. The possessive on foolishness anticipates the following prophet
+  genitive, without an additional his. Foolishness and prophet are split.
+- 2:17 keeps wells, without and water distinct. Clouds are a second figure
+  for the same people, with min expressing the gust as passive agent.
+  The later demonstrative is a topic: gloom is reserved for these people;
+  the people are not equated with darkness. Gloom, darkness, reservation
+  and its recipients retain their own words.
+- 2:18 gunhe is a masculine plural noun, not an adjective modifying vanity:
+  astonishing things of vanity preserves the nominal head and number.
+  Speaking, enticing, the defiled adjective, plural lusts and flesh are
+  separated. Barely retains only the b-malle qalil measure idiom, with
+  the relative prefix and the fleeing predicate separately linked. Those
+  who conduct themselves in error retain the reflexive plural verb and
+  the following relative/locative relation.
+- 2:19 promise is a supported lexical meaning, not a reason to replace the
+  verb with confess; see [CAL shwdy](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24wdy+V).
+  Freedom, recipients, promising, while, they themselves, being, servants
+  and corruption each retain their source word. In the final proverb,
+  z-khe is the passive participle: the man is overcome. English reorders
+  the co-referring predicates as "a man is also enslaved to that thing by
+  which he is overcome". To that combines only the proleptic and resumed
+  demonstratives at 8 and 14. By which combines the relative prefix at 11
+  with its resumed passive-agent leh at 13; Muraoka section 94 documents
+  l- for a passive agent. The noun a man remains separately at 11, the
+  thing at 10, the passive overcome at 12 and enslaved at 16. No fronted
+  demonstrative is absorbed into the unrelated for particle at 9.
+- 2:20 corrects feminine plural tanpuwathe to impurities. Its anticipatory
+  possessive is absorbed into the following world genitive, as the
+  recognition suffix is absorbed into our Lord. Both Lord and Saviour
+  retain first-person plural possessives. The repeated b-hen b-hallen
+  locative is shared as in these, without adding an independent same.
+  Entanglement, again, while and being overcome remain distinct. Hwat
+  lah is the becoming predicate with a subject-referring feminine dative;
+  has become renders that complex without inventing a new recipient.
+  The perfect has a present result in the conditional context. Their latter
+  state is separate from it, as are worse, than and the first. The clause
+  is declarative, not a question.
+- 2:21 keeps the comparative advantage, past/irrealis being and plural
+  beneficiaries separate: it would have been better for them. Compare
+  Muraoka section 86's similar beneficial-plus-hwa construction. Negation
+  and coming to know are split; the derived knowing form is reflexive/
+  middle, not automatically passive be known. Way and righteousness are
+  separate. The later perfect knowing precedes the turning back; its
+  supplied English it refers to the already expressed way. After,
+  turning, back, from, commandment, holy, passive delivery and recipients
+  are distinct. The separate backward adverb is retained.
+- 2:22 separates but, the plural things, the true proverb, happening and
+  its recipients. The dog's return is past and its vomit is possessive.
+  The sow bathed: the verb is active, not a passive washing imported from
+  another text. The final wallowing phrase uses the coordinated proverb's
+  understood return, without inventing a separately linked return verb;
+  English to wallowing expresses the destination of that understood action.
+  Mire retains the following genitive's contextual in relation.
 
 Source checks for 2 Peter 3:
 
