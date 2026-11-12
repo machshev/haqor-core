@@ -13064,6 +13064,110 @@ Source checks for 2 John 1:
   Murdock's extra grace sentence has no words in this export and is not
   supplied. Amen retains the final source word.
 
+Source checks for 3 John 1:
+
+- All 15 verses, 211 ordered source words and 45 original shared spans
+  were checked against the exact forms, morphology and continuous English.
+  Ordinary noun phrases, negation, auxiliaries, copulas and clauses have
+  separate owners. Two retained shared spans have individual reasons in
+  the review ledger. Single source words may own separated English spans
+  for prefixes, stems, suffixes or English grammar; English word order
+  need not reproduce Aramaic order.
+- In 1:1 the beloved participle does not acquire Murdock's extra my.
+  The stressed first-person pronoun and the enclitic subject around love
+  are both expressed by I myself love, with I at 6, myself at 4 and love
+  at 5. The stressed/enclitic second-person pair in 1:3 likewise becomes
+  you yourself walk, with you at 13, yourself at 10 and walk at 12.
+  Compare sections 10 and 74 of
+  [Muraoka's grammar](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+- In 1:2 prayer, I, for you, prospering, being and healthy have separate
+  owners. Both Peal and Aphel prospering can be intransitive; the latter
+  does not make the soul an agent causing someone else to prosper. Compare
+  [CAL, slh, G and C](https://cal.huc.edu/oneentry.php?cits=all&lemma=clx+V).
+  The comparisons in 1:2-3 split according to from how, and that in 1:6
+  splits according to from what, rather than sharing whole comparative
+  clauses. The soul, its possessor, truth and walking retain their actual
+  words. In 1:3 the temporal prefix and came share one source word, with
+  brothers separately between them in English; the participles in that
+  report take their English past setting from the rejoicing context.
+- In 1:4 the negative existential is there is no and the dative is for me;
+  no shared have span is needed. Greater, joy, than and this are separate.
+  My comes from the independent possessive pronoun, children from its
+  noun, and the content prefix is retained before that noun. Hearing is
+  the first-person imperfect, and walking has the children as subject.
+- In 1:5 our beloved retains its first-person plural possessor. The two
+  doing/performing predicates and their explicit second-person subjects
+  have separate owners. That and which separately render the demonstrative
+  and relative expression. Faith, toward the brothers, especially, the
+  relative/existential and strangers remain distinct. In 1:6 the testimony
+  is perfect and concerns your love before the whole ecclesia. The whole
+  expression's feminine suffix anticipates ecclesia, not another possessor;
+  compare Muraoka section 112. Toward them, you, do, well, in that, you,
+  provide and for them separately express the resumed recipients and
+  providing clause. God remains the complement of fitting.
+- In 1:7 for is distinct from on behalf of. His name and the perfect
+  going out remain separate; the negative taking clause splits its verb,
+  not, anything, from and nations. In 1:8 such as and these have their
+  own words, and the purpose clause separates that, we may be, helpers
+  and of the truth.
+- In 1:9 the participle followed by the enclitic past-being form is I was
+  wishing, with the subject/auxiliary at 1 and wishing at 0; compare
+  Muraoka section 86. This is not changed into an assertion that a letter
+  was written. Writing, ecclesia, but, he, who loves, to be, first, among
+  them and Diotrephes have individual owners. The negative, receiving
+  verb and first-person plural object us are also distinct. The lamadh
+  on us is the normal pronominal object of the participle, not to-us as
+  an additional recipient; compare section 97(d).
+- In 1:10 because of and this are separate. `אנ הו דאתא` retains the
+  conditional/copular form if it is that I come, assigning if to 2,
+  it is to 3 and that I come to 4. The actual verb is first-person
+  singular imperfect, as is the following I will recall. The third-person
+  copular pronoun does not turn that first-person verb into Murdock's
+  he comes. Those, deeds of his and which he did retain separate owners.
+  The next word has both a content prefix and an instrumental prefix:
+  that with ... words, with evil separately linked. Maligning uses the
+  figurative speech-against sense of Peal destroy; compare
+  [CAL, str, G](https://cal.huc.edu/oneentry.php?cits=all&lemma=str+V).
+- The following sufficing verb in 1:10 is perfect plural, with these things
+  as subject: have not sufficed for him. It is not changed into a new
+  first-person actor. Negation, the present pronominal copula he is and
+  receiving are separate; `הו` is not the past verb `הוא`. The brothers
+  remain the receiving object. The later those who receive is the common
+  object of hindering and expelling from the ecclesia; English reorders
+  that object after both verbs without making the brothers the expellers.
+- In 1:11 do not imitate remains an addressed prohibition. He, who does,
+  good, is, from and God have distinct owners, as do the later he, who
+  does, evil and not. The object suffix on seen anticipates explicit God,
+  so only God retains that narrow object-reference span; has and seen
+  remain separately owned by the seeing verb.
+- In 1:12 there and is separately render the existential and copular
+  elements. The prepositions' suffixes before the explicit ecclesia and
+  truth genitives are anticipatory, not extra feminine or masculine
+  actors; compare Muraoka section 112(e). But retains the contrastive
+  particle. The stressed first-person plural subject becomes we ourselves;
+  bearing witness retains its matching enclitic first-person inflection,
+  with also separate. The second-person
+  subject, knowing, that, our, testimony, is and true are all split.
+- In 1:13 only had shares the past existential and past-being words;
+  I and many things have their own owners. The second wish is present,
+  with not and its subject distinct. Both writing forms and both to-you
+  phrases remain linked to their actual occurrences. By means of is the
+  instrumental hand expression; ink and pen remain separate. In 1:14
+  but, I, hope and that soon are distinct; the last does contain a content
+  prefix. Seeing retains its second-person singular object you. And,
+  mouth, to, mouth and first-person plural speaking are separate.
+- In 1:15 may and be come from the same verb, with peace and with you
+  separately linked. The friends are the third-person plural subject of
+  send greetings to you, not an imperative addressed to the reader. Send
+  and the suffixed greeting noun have separate owners. The later send is
+  singular imperative, with greetings, to the friends, to each one and
+  by his name individually linked. The genitives identify the greeting's
+  recipients, idiomatically to the friends rather than an additional
+  lexical to word; compare the greeting construction under
+  [CAL, shal](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%29l+V)
+  and the greeting noun under
+  [CAL, shlama](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24lm+N).
+
 Source checks for Revelation 1:
 
 - In 1:1, the passive giving construction with the being infinitive is

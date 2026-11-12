@@ -30050,6 +30050,32 @@
           "reason": "Ith hwa is past existential possession here. Had renders the single past possessive predicate; I separately owns the first-person dative at 4, and while and many things retain their own source words."
         }
       ]
+    },
+    "64:1": {
+      "sha256": "4a9c35f7e783f49e544956bf064c7ac01623c57b1bb27c2ca683b2bd15ef15d4",
+      "original_shared_spans": 45,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 11,
+          "english": "God",
+          "positions": [
+            16,
+            17
+          ],
+          "reason": "The masculine singular object suffix on seen anticipates the explicit God object marked with Lamadh. One English God renders both object references; has and seen remain separately at 16, and not remains at 15."
+        },
+        {
+          "verse": 13,
+          "english": "had",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Ith hwa is the past existential/copular compound in a possession construction. Had renders the single past predicate; I separately owns the first-person dative at 3, and many things remains at 0."
+        }
+      ]
     }
   }
 }
