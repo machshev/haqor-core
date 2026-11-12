@@ -12333,54 +12333,145 @@ Source checks for 2 Peter 2:
 
 Source checks for 2 Peter 3:
 
-- 3:1 `מן כדו` is the idiom "already/now", rather than a statement that
-  something suffices. Compare the lexical adverb in the
-  [Classical Syriac course book](https://refubium.fu-berlin.de/bitstream/handle/fub188/24490/Classical_Syriac_Course_Book_3-2019.pdf?isAllowed=y&sequence=3).
-  The plural reference to the letters is retained, and the purpose clause
-  in 3:2 continues the sentence. In 3:3 the prefixed `ד־` introduces the
-  content known beforehand; it does not make knowing a temporal condition
-  for the mockers' arrival. Their walking and the preceding "while" keep
-  their own source positions. The quoted question and argument in 3:4 are
-  punctuated as the mockers' speech.
-- 3:5 has a singular feminine subject, "this", with plural experiencers:
-  it escapes their notice by their choice. The plural willing verb is
-  distinct from the singular initial predicate. The earth's rising from
-  and through water remains explicit. In 3:6, the flooding verb permits an
-  intransitive inundation rendering; it does not make the world the agent
-  flooding something else.
-- 3:7 `אסינינ` is a passive participle, not an active storing action.
-  The following reservation for fire shares the heavens/earth subject.
-  In 3:8 the singular fact is the subject and the addressees are the object
-  of the forgetting/escaping construction; "my beloved" retains its suffix.
-- 3:9 keeps plural promises. The long-spirit expression is idiomatic
-  patience, and the closing repentance clause remains parallel with the
-  preceding clause about perishing. In 3:10 `מן שלי` is the suddenly idiom;
-  "suddenly" is also among the supplied gloss alternatives.
-- 3:10 ends with `תשתכח`, a future Ethpeal "will be found". There is no
-  negative particle in the supplied verse, although Murdock's reference
-  says "will not be found". The affirmative rendering follows the source;
-  compare the [Syriac text and analysis](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=ubs&verse=2Peter+3%3A10).
-  The works are described as being in the earth, without adding a separate
-  possessive to the works noun. Burning remains intransitive, and the
-  dissolution predicates remain passive.
-- 3:11-12 form one question: the expectation of the day continues the
-  question about fitting conduct. The fire-testing predicate in 3:12 is
-  passive, while the elements' melting is future. In 3:13 the new heavens
-  and earth are fronted objects of first-person plural expectation.
-- 3:14 keeps the care/striving imperative, the purpose clause, the spot and
-  blemish negations, the passive finding, and its personal recipient.
-  In 3:15 the source says "the Lord", without the first-person possessive
-  found in the closing title. Patience is the idiom; `פורקנא` includes
-  redemption, salvation, and deliverance among its glosses.
-- 3:15-16 form a continuous writing/speaking comparison. Paul's speaking
-  verb is past. The difficult things, the people without instruction, their
-  unstable condition, and their distortion of the writings retain distinct
-  source roles; the stability participle is not an active supporting action.
-  The final possessive belongs to their own destruction.
-- 3:17 distinguishes the lawless people from their error and retains the
-  addressees' own steadfastness. The closing 3:18 includes both the Lord/
-  Saviour title and the explicit genitive "and of God the Father". The
-  Father phrase is present in this Syriac source and is retained.
+- All 18 verses and 308 source words were checked against exact forms,
+  morphology and continuous English. All 93 original shared spans were
+  reviewed; twelve narrow exceptions remain in the alignment ledger.
+- 3:1 keeps this second epistle as the fronted object of writing, rather
+  than adding a separate "This is the second epistle" assertion. The
+  writing participle and explicit first-person pronoun are split as "I am
+  ... writing". Men kaddu is the shared already idiom, rather than a
+  statement that something suffices; the
+  [Classical Syriac course book glossary](https://d-nb.info/1184881278/34)
+  explicitly gives men kaddu as already (printed pp. 135 and 145).
+  My beloved retains its first-person singular possessive. In these
+  combines the plural demonstrative and its resumed locative relative,
+  referring to the letters rather than only one singular letter. Arousing
+  and the second explicit I, remembrance, your mind and pure are separate.
+- 3:2 is the preceding arousing predicate's purpose: so that you may
+  remember. The relative prefix on the preceding/advance verb owns which,
+  and the verb's aspectual function is beforehand; the following passive
+  perfect owns were spoken. By, prophets and holy are split. The command's
+  anticipatory possessive is absorbed into the following Lord genitive.
+  Both Lord and Saviour retain our. Through and apostles are separate;
+  b-yad is the grammaticalized instrumental expression, without inserting
+  a literal hand into the command's transmission.
+- 3:3 separates while, the explicit you, knowing, this and beforehand.
+  D- on the coming imperfect introduces the content known, not a condition
+  for the mockers' arrival. Its verb is third-person plural, while the
+  knowing subject is second-person plural. End and days, mockers and
+  mocking, while, walking, according to, their own and lusts are split.
+  The following saying clause continues the mockers' description.
+- 3:4 marks the question and following argument as the mockers' speech.
+  Where, the copula, promise and his coming are separate. For retains its
+  own postpositive source word; since combines only the men kad temporal
+  expression. Our fathers and their past sleeping are distinct. Everything,
+  thus, remaining, from, beginning and creation are separately linked.
+  The beginning suffix anticipates creation, without adding an extra its.
+- 3:5 preserves the feminine singular subject this and plural experiencers:
+  this eludes them. It does not recast the singular verb as a plural they
+  forget. The following as they wish retains the temporal/causal particle
+  and separate plural willing predicate. The d- on heavens introduces the
+  content of this. The two past existence forms are split as were and in
+  existence; from and long ago are distinct. The earth's rising is active
+  feminine singular, with from water, through water, by the word and of
+  God each retaining their owner. Water is a lexical plural rendered as
+  the English mass noun.
+- 3:6 through these combines the dummy antecedent and resumed instrumental
+  relative. B-ida is grammaticalized through/by, rather than requiring an
+  independent hand noun. The world of that time is flooded, not the agent
+  flooding another object. [CAL twp](https://cal.huc.edu/oneentry.php?cits=all&lemma=%2Bwp+V)
+  explicitly lists the Peal intransitive to be flooded and cites this verse.
+  Was flooded, with water and perished are split; the English passive
+  idiom does not imply a Syriac derived passive verb form.
+- 3:7 renders d-hasha as the modifier present with heavens, rather than
+  merely making now an adverb of storage. The heavens and earth share the
+  passive stored-up and reserved predicates. By, his and word are split;
+  while, reservation, fire, day, judgment, perdition, wicked and men remain
+  distinct. No active storing action is attributed to the heavens.
+- 3:8 preserves this one thing as the singular feminine subject of the
+  imperfect eluding predicate. Its second-person plural suffix is the
+  object you, not the verb's subject. Must, not and elude you are split;
+  my beloved retains its suffix. That one, day, with the Lord, is, as,
+  a thousand and years each retain their word; the second comparison also
+  separates thousand, years, as, one and day.
+- 3:9 keeps the plural his promises and their b- relation to delay.
+  Negation and the reflexive/middle delaying verb, the people, their
+  reckoning and delay are split. Reckon it supplies the understood English
+  object of their assessment, not a new source object. Lengthening his
+  spirit is the shared patience idiom. For your sakes retains the plural
+  recipients. B-d-la has causal force as well as negation: because he does
+  not desire, rather than merely not desiring. Because and not share their
+  own word at 12 in separate spans. The desired-content clauses remain
+  parallel: that anyone should perish, but everyone should come to
+  repentance. Repentance and coming are separately linked.
+- 3:10 separates the coming predicate, adversative, day, Lord, as and thief.
+  The day suffix anticipates the Lord genitive. In which retains the dummy
+  antecedent and resumed relative locative. Men sheli is the shared sudden
+  action idiom; compare the sudden adverb under
+  [CAL men](https://cal.huc.edu/oneentry.php?cits=all&lemma=mn+p).
+  Passing is prospective in context. The elements' postpositive den is
+  but, rather than the former neutral and. Their burning is intransitive;
+  the following loosening is passive. Earth, works and their locative
+  relative are separate. The final Ethpeal imperfect is affirmative will
+  be found: there is no negative particle in this source verse. Murdock's
+  will not be found is therefore not imported, and no separate possessive
+  is added to the works noun.
+- 3:11-12 form one question. When, therefore, all and these things are
+  split; the passive loosening participle has prospective force. What
+  sort of expresses the manner/comparison at 5, with plural personal
+  ailein separately rendered people at 6. The fitting predicate, for you
+  and subordinate be are distinct. Your conduct and holy, fear and God
+  are ordinary split phrases. Expecting and longing each retain their
+  own explicit you in 3:12. Coming, day and God are separate; in which is
+  the shared resumed relative. When, passive testing, fire and future
+  loosening are distinct. The elements' burning remains intransitive and
+  their subsequent melting is future.
+- 3:13 keeps the source's fronted heavens and earth as the objects of
+  first-person plural expectation, with each new adjective separately
+  owned. English places the expectation before its objects for a clear
+  relative antecedent. According to, his and promise are split. In which
+  combines the plural deictic and resumed relative locative; righteousness
+  and dwelling are separate. This relative continues the same sentence.
+- 3:14 splits because of and this. The plural expectation predicate and
+  explicit subject are separate from these things. Yisaphu is the plural
+  imperative be diligent. The first d- in d-d-la introduces the purpose
+  of that diligence, followed by the separate without, spot, and without
+  and blemish. The finding imperfect is passive and plural; its personal
+  recipient/agent by him remains separately at 12, and peace at 14.
+- 3:15 uses the shared long-spirit noun idiom patience, rather than
+  introducing a distinct person of the Spirit into the Lord's disposition.
+  The title is the Lord, without the first-person possessive found later.
+  Reckoning retains its second-person plural exhortative imperfect, and
+  salvation its own word. As and also are separate. Our brother and beloved,
+  Paul, according to, wisdom, its passive past giving, to him, writing and
+  to you each retain their own source word.
+- 3:15-16 form one continuous writing/speaking comparison. In 3:16 the
+  fronted b-kulhen and following b-hen express one locative relation to
+  all his epistles; shared in avoids saying in all his epistles ... in
+  them twice. All and his epistles remain separately linked. Paul's
+  speaking is past, with about and these things distinct. In which
+  includes the indefinite/dummy antecedent, the relative d- on existence
+  and the resumed b-hen; there is remains separately at 8. Something,
+  its difficult predicate and to understand are distinct. The later these
+  things is a topic, with the subsequent them retained explicitly. Those,
+  who, are, without and instruction are split. The other description is
+  negative and passive/resultative: and are not established, not an active
+  supporting action. Distorting, its object, as, also, these, other,
+  Scriptures, toward, their own and destruction are separate. The final
+  possessive belongs to the people's own destruction.
+- 3:17 keeps the first explicit you as the addressed topic, with therefore
+  and my beloved separate. The temporal/causal since, later you,
+  beforehand and knowing are split. Guard and yourselves are separate;
+  lest, when, you, going, after and error are distinct. The lawless people
+  are those who are without law, with each constituent separately owned.
+  Falling, from, your own and steadfastness retain their own words.
+- 3:18 fully pronounced hwaytun before the growing participle is a general
+  exhortation, be growing, rather than a past you were; compare Muraoka
+  section 87. But, be, growing, grace and knowledge are split. Both Lord
+  and Saviour retain our; Jesus and Messiah are separate. And of God and
+  the Father are explicit source words, retained rather than omitted to
+  match another text. To whom and the glory doxology, also, now, always,
+  days, eternity and Amen are split. No personified Spirit pronoun is added.
 
 Source checks for 1 John 1:
 
