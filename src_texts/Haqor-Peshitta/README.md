@@ -11663,24 +11663,158 @@ Source checks for 1 Peter 2:
 
 Source checks for 1 Peter 3:
 
-- 3:1 preserves the relative clause after “husbands”: those not persuaded by the word may be won through the wives’ good conduct, without importing a separate recipient or extra action.
-- 3:2 keeps `מתדברנ` as the explicit second-person feminine plural verbal predicate: “you conducting yourselves in reverence and modesty,” rather than nominalizing it as “your conduct.”
-- 3:3 retains all three source adornment categories: outward hair-braiding, a gold ornament, and excellent clothing.
-- 3:5 renders `מן קדימ` as the temporal phrase “in former times,” followed by the subject “holy women”; it does not make “from old” an origin or age modifier of the women.
-- 3:6 retains the source’s copular auxiliaries around Sarah’s submission/calling and the second-person “you are her daughters”; `מתתזיענ` is rendered “you are not shaken” rather than confused with the following fear noun.
-- 3:7 reads the final clause from its actual morphology: `תהוונ` is second-person plural and `מתתקלינ` is a plural passive participle, while `בצלותכונ` means “in your prayers”; therefore it is rendered “so that you may not be hindered in your prayers.”
-- 3:9 keeps the source order “to no one evil for evil do not repay” and the distinct reviling-for-reviling pair; the contrast is plural “opposite of these,” followed by the positive action “bless.”
-- 3:10 renders `הכיל` as inferential “therefore,” not temporal “then,” and attaches “to see” to “good days” in a complete maxim: whoever desires life and loves to see good days.
-- 1 Peter 3:12 keeps the source's causal opening and contrasts the Lord's ears (hearing them) with his face against the evil; “evil” follows the source adjective rather than importing “wicked.”
-- 3:13's מנו is rendered as “who is he,” and the imperfect verb as a prospective “will do”; the object is “evil” before “to you,” preserving source order.
-- 3:14 preserves the conditional suffering and source “blessedness,” but renders מנ אילין דמדחלין לכון as “of those who frighten you”; the separate final prohibition is “do not be troubled.”
-- 3:15 places “in your hearts” before “the Lord Messiah” because that is the source order. מפק ברוחא is rendered “for a defense” as the fixed defensive-response noun compound (CAL, [mappaq brūḥā](https://cal.huc.edu/oneentry.php?cits=all&lemma=mpq%40brwx%29+N)); it is not read as a literal “spirit” phrase. The final source phrase is humility followed by fear.
-- 3:16 assigns תארתא טבתא to “a good conscience,” keeps איכנא דהנונ as “so that those,” preserves the explicit “evil men” comparison, and renders טלם as “reject” (not an inferred “slander”).
-- 3:17 uses the source's profit/advantage predicate and retains both temporal “while” clauses and the explicit “if this is God's will.”
-- 3:18 preserves “once,” the substitution contrast “the righteous for sinners,” the object “you” of bringing near, and the body/spirit contrast. Messiah is used consistently with the source glossary.
-- 3:19-20 render שיול as “Sheol” (the source's explicit term), keep the relative link to the souls, and preserve the source's former non-obedience, Noah-day setting, divine longsuffering, ark command, repentance hope, eight souls, entry, and water-saving sequence.
-- 3:21 follows the source's type/baptism explanation: active חיינ with its explicit second-person subject is rendered “you live in baptism,” not passive “are made alive.” The negative/contrast clauses distinguish washing bodily filth from confessing God with a pure conscience; the resurrection phrase remains attached to Jesus Messiah. The repeated copular subject pronoun is absorbed into “live,” retaining the initial “you” once in English.
-- 3:22 keeps the source's relative continuation (“who”), ascension to heaven, right-hand location, and its genuine inversion “and subject to him are angels, authorities, and powers.”
+- All 22 verses and 352 source words were checked against their exact
+  forms, inflection, clause actors and continuous English. All 82
+  original shared spans were reviewed. Ordinary noun phrases, modifiers,
+  negatives, pronouns, auxiliaries and clauses now have individual
+  owners; repeated indices separate prefixes, stems and suffixes in
+  English order. The remaining shared expressions have individual
+  linguistic reasons in the ledger. The final frozen chapter, notes and
+  exceptions received independent source, peer and cold review.
+- In 3:1-2, Thus, also, explicit you, wives and submit remain separate.
+  The relative prefix at 6 introduces the purpose and its demonstrative
+  identifies those not persuaded by the word. You may win them uses the
+  second feminine plural verb and its separate plural object. The
+  apposition those who are not persuaded identifies them once without
+  making the wives the actors of persuasion or limiting submission to
+  unbelieving husbands. Your good conduct, without and toil remain
+  separate. When they see has a third plural seeing subject; that you
+  conduct yourselves is second feminine plural, with reverence and
+  modesty kept apart. The relative prefix and noun at position 2 appear
+  in separate English spans.
+- In 3:3-4, and and not belong to the negative word, apart from the
+  adornment verb. With outward adornments retains its plural noun and
+  modifier, followed by the appositional list: braids of your hair,
+  ornaments of gold and excellent garments. The genitive links qualify
+  the adornments through this English list; no adornment noun is
+  dropped or reassigned to a bare with. Or remains explicit twice.
+  Ornaments and garments are plural; hair is idiomatic English mass
+  usage for the source's plural hairs. In 3:4, hidden, person, heart,
+  gentle and spirit have separate owners. That, not and corrupted
+  are separate, as are adornment, precious, before and God. The spirit
+  is referred to as it if a pronoun is used.
+- In 3:5-6, For, thus and also are distinct. Formerly renders the
+  temporal men qdim, not an origin or an adjective old applied to the
+  women. Holy modifies women. Those who were hoping in God retain the
+  relative, participle and past auxiliary; were adorning themselves
+  and were subject retain both further auxiliaries and the explicit
+  reflexive souls. These are feminine plural predicates. Sarah was
+  subject to Abraham and was calling him my lord, with the quoted
+  address kept separate. That woman renders the feminine singular
+  demonstrative referring to Sarah, clarifying that the following
+  daughters relation does not refer to Abraham. Whose combines the
+  relative prefix on are with its resumed feminine possessive dative;
+  daughters, explicit you and are remain separately owned. Through
+  good works, while, you, not, shaken, by, any and fear are distinct.
+- In 3:7, And you, husbands and likewise are separate. Dwell retains
+  its imperative, followed by with your wives according to knowledge.
+  Hold them in honor separates the verb, feminine object and honor
+  noun. And as belongs to its own source word; weak vessels follows
+  the plural source adjective without adding an explicit comparative
+  weaker. Because, also, they, with you and inherit remain distinct.
+  The gift of eternal life separates gift, life and forever; life is
+  lexical plural in Syriac, idiomatic English singular. The final
+  second plural be verb governs the husbands, not the prayers:
+  so that you may not be hindered in your prayers. The negative,
+  auxiliary, hindered and plural prayers each keep their source word.
+- In 3:8-9, the conclusion and adversative however are separate from
+  the second plural imperfect and all of you. Sympathetic with those
+  who suffer keeps the actual suffering group explicit rather than
+  absorbing five source words into be sympathetic. Loving, one and
+  another have separate owners. The fully pronounced hwaitun forms
+  express general advice, be sympathetic, be merciful and be blessing,
+  not past events; compare [Muraoka, section 87, printed page 68](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  In 3:9, and to anyone and do not repay preserve one source negative,
+  rather than the doubled English to no one ... do not. Both evil for
+  evil and reviling for reviling have individual owners. But, contrary,
+  to these, be and blessing remain separate. For, to this and you
+  were called are distinct; that and a blessing share their one word
+  around you may inherit.
+- In 3:10-12, therefore is inferential, not an added For or temporal
+  then. Whoever, desires, life, loves, to see, good and days have
+  separate source words. Guard his tongue from evil preserves the
+  singular tongue and actual from-preposition. And let his lips not
+  speak deceit keeps the negative and third feminine plural speak
+  predicate, rather than turning them into from speaking. Turning,
+  from evil, doing good, seeking peace and running after it keep all
+  four exhortatory verbs and the separate after-it expression. The
+  causal because in 3:12 continues the preceding exhortation. Eyes
+  and face have possessives anticipating the Lord; his ears retains
+  its independent possessive. Hear is infinitive with its own plural
+  object them. Face is idiomatic English singular for Syriac appe.
+  Upon the righteous and against the evil preserve the contrast.
+- In 3:13-14, who is he belongs to the interrogative compound. The
+  prospective will do has evil at position 3 and to you at 2; the
+  previous ownership was reversed. Good things preserves the plural
+  substantivized adjective after zealous. The following conditional
+  keeps if, its copular it is and that you should suffer distinct.
+  On account of represents al appay, the compound preposition literally
+  on the face of; righteousness has its own word. Blessed are you
+  renders the blessedness noun with its second plural suffix. Both
+  prohibitions separate do, not and their verbs. Those, who frighten,
+  you and of remain separate; the readers are not the frighteners.
+- In 3:15-16, sanctify, in your hearts, the Lord and Messiah are
+  individually linked. And be ready is general advice, not past
+  were ready. For a defense is the attested mappaq bruha noun compound,
+  not a new in the Spirit clause: [CAL, mappaq bruha](https://cal.huc.edu/cal_entry_web.php?lemma=mpq%40brwx%29+N)
+  records apologia/defensive response, with Syriac examples. To everyone,
+  who demands, of you, an account, concerning, hope and your faith
+  remain separate. Humility and fear accompany the defense. While
+  you have uses the existential-plus-dative possession construction;
+  good and conscience have separate owners. So and that those are
+  distinct, as are speak, against you and the comparison concerning
+  evil men. They are the plural subjects of may be ashamed. Malign
+  is a lexical choice from the actual Peal root, not an imported
+  accusation verb: [CAL, tlm, Peal](https://cal.huc.edu/oneentry.php?cits=all&lemma=%2Blm+V)
+  includes calumniate alongside injure, oppress and spurn. The verbal
+  opposition context and Murdock's calumniated support this sense.
+  Your good conduct and that is in the Messiah retain their words.
+- In 3:17-18, For is position 3, profitable 0, it is 1 and for you 2.
+  The revision repairs the shifted owners. That and while separate
+  the two parts of d-kad. Both doing clauses retain explicit you,
+  their predicates and the good deeds or evil things objects. You
+  may suffer wrongs retains the second plural imperfect and plural
+  evils noun. If such is the will of God has individual owners for
+  such, is, will and of God; and not remains distinct from when.
+  In 3:18, For retains the causal metul. Messiah is position 2 and
+  also position 1, repairing their reversal. One time separates the
+  cardinal and time noun, apart from died. Our sins, the righteous
+  one for sinners and that he might bring you near to God retain
+  their actual number, suffixes and purpose verb. He died in the
+  body but lived in the spirit keeps two active perfect predicates;
+  it is not passive made alive imported from another text.
+- In 3:19-20, the source says souls held in Sheol, not spirits in a
+  substituted prison. Those, which, were and held have separate
+  owners. These who formerly had not been persuaded resumes the
+  same feminine plural souls. Had belongs to the auxiliary at 5,
+  not to an invented when they were before the days of Noah. The
+  earlier-time context permits English pluperfect without making
+  perfect-plus-hwa automatically pluperfect. The possessive on days
+  anticipates Noah. The patience of God represents maggrat ruha,
+  an attested lexical expression; [CAL, ruha derivatives](https://cal.huc.edu/oneentry.php?cits=all&lemma=rwx+N+)
+  lists maggrat ruha as patience. It does not introduce the Spirit
+  as a new command-giving person. Commanded is feminine singular;
+  that there be an ark preserves be and ark without assigning
+  building to a new actor. In hope of their repentance retains the
+  hope noun and plural possessive. And, only, eight, souls, entered
+  and it have their actual words. Survived renders active Peal
+  hyy in its flood context, not a new passive were saved.
+- In 3:21-22, And, you and also retain their owners. By that combines
+  the anticipatory preposition/pronoun with its repeated demonstrative
+  preposition; type remains separate, with that rather than this.
+  Are living separates the enclitic personal pronoun from the active
+  living participle, alongside the initial independent you. It does
+  not say passive are made alive. In baptism is separate. The body
+  is position 10, singular without a possessive; wash is 11 and
+  explicit you 12. You at 18, confess at 17 and God at 19 repair
+  the other shifted owners. Not when and but when preserve both
+  temporal clauses. With a pure conscience and by the resurrection
+  of Jesus the Messiah retain their own words; the possessive on
+  resurrection anticipates Jesus. The final the one, who has been
+  raised, to heaven, and is, at, the right hand and of God remain
+  distinct. Angels, and rulers and powers are the plural subjects
+  of were subjected, a perfect verb rather than present are subject.
+  To him retains its separate masculine singular suffix.
 
 Source checks for 1 Peter 4:
 
