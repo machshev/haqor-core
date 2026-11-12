@@ -13951,69 +13951,95 @@ Source checks for Revelation 7:
 
 Source checks for Revelation 8:
 
-- 8:1-2: The seventh seal is opened by the implicit third-person subject;
-  silence follows for about half an hour. The comparative particle with a
-  measure gives the approximate duration. The seer is first person; seven
-  angels were standing before God and received seven trumpets. The standing
-  participle and past auxiliary form one ongoing past description; the
-  following passive and plural dative retain the trumpet recipients. Short
-  links keep the ordinal seal phrase and passive relative grammatical.
-- 8:3-4: Another angel came and stood at the altar. Existential possession is
-  idiomatic "he had," rather than a fabricated holding verb. Gold modifies
-  the censer; no second gold adjective is supplied for the later altar.
-  Much incense was given to him so that he might offer it with the prayers
-  of all the saints. The imperfect complement expresses purpose, and its
-  understood offering object is the incense. "All the saints" resolves the
-  anticipatory suffix without inventing "their saints." Incense is an
-  English mass noun despite the Syriac plural shape. The smoke rises with
-  the prayers from the angel's hand before God, retaining that source order.
-- 8:5-7: English passive inversion retains the taking verb before the angel
-  and censer, while preserving the angel as actor. He fills the censer with
-  fire on the altar and casts it onto the earth; partitive min becomes
-  English "with" for the filling material. Peals of thunder, voices, flashes
-  of lightning, and an earthquake retain the actual list order and the
-  source plurals. The trumpets are on the angels, expressed as possession;
-  they prepare themselves. The first sounds; hail and fire are mingled with
-  water, not blood, and are cast onto the earth. A third of the earth and
-  trees, and all the grass of the earth, burn. The intransitive burning
-  predicates retain their affected subjects; the first angel is not made
-  the actor of those burning verbs.
-- 8:6-13: The cry/sound root is rendered in the explicit trumpet context as
-  "sound." This contextual interpretation is supported by CAL's z(q entry,
-  which records horn sounding in the simple stem and a horn being sounded
-  in the corresponding passive causative, while its causative entries also
-  cover loud cries and summons (https://cal.huc.edu/getlex.php?coord=5610110631&word=10).
-  This does not claim that every stem has a separate dictionary gloss
-  "blow a trumpet." The ordinal second, third, and fourth identify the
-  successive participants without importing an absent angel noun each time.
-- 8:8-11: Something like a great burning mountain falls into the sea; there
-  is no separate fire noun and no passive casting verb in 8:8. A third of
-  the sea becomes blood. The short three-position copular units in 8:8 and
-  8:11 keep the fraction and its referent together with the becoming verb;
-  their final predicates remain separately linked. A third of the living
-  sea creatures dies and a third of the ships is destroyed. The relative
-  existential "life in it" is idiomatic "which had life." The plural creation
-  noun means creatures here; CAL independently includes creation/creature
-  and Syriac examples (https://cal.huc.edu/cal_entry_web.php?lemma=bryyh+N).
-  A great star falls from heaven, burning like a flame, not a lamp; it falls
-  upon rivers and springs of water. CAL's eye/spring entry confirms the
-  spring sense with water (https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N).
-  Its name is Wormwood. The waters become like wormwood, retaining the
-  comparative particle. Many people die because the waters have been made
-  bitter; the inverted passive keeps the waters as the postverbal subject.
-  No absent "from the waters" phrase is added before the cause clause.
-- 8:12-13: The affected fractions of sun, moon, and stars are struck, and a
-  third of them is darkened; the source has one darkening verb. English
-  singular agreement follows the collective fraction. The day does not show
-  light for a third of its duration, and the night likewise; light is
-  understood from the luminaries and darkness, while the negative, showing
-  verb, fraction, and day suffix remain represented. Anticipatory fraction,
-  star-name, and earth-inhabitant suffixes are resolved through their
-  following referents, without duplicate possessors. The seer only hears
-  one eagle flying in heaven and saying three woes. The source contains no
-  separate seeing, tail, blood, loud voice, or remaining modifier here.
-  Singular sound belongs to plural trumpets of three angels, who are ready
-  to sound; readiness is a state rather than a completed sounding action.
+- Reviewed all 13 verses and 190 source words, including all 12 original
+  shared spans, against exact forms, vocalization, complete gloss
+  alternatives, numeric morphology, suffixes, clause ownership, and
+  continuous English. Ordinary noun phrases, ordinals, passive recipients,
+  auxiliaries, copular clauses, and negation now have separate owners.
+  The sole retained shared span is possessive “had” in 8:3, with its own
+  ledger reason. Conjunction and possessor remain separately linked.
+- In 8:1 the seventh seal is opened by the implicit third-person subject;
+  silence follows for about half an hour. The comparative particle with
+  a measure supplies approximation. The seer in 8:2 is first person.
+  Seven angels were standing before God and received seven trumpets.
+  “Were” and “standing” belong to the past auxiliary and participle
+  respectively. English order separates the relative prefix and “before”
+  on the same source word. The following passive perfect is “were given,”
+  separate from the plural recipient “to whom”; no extra past auxiliary
+  requires a pluperfect rendering.
+- In 8:3 another angel came and stood at the altar. Existential possession
+  is “he had,” with “and” and “he” separately owned; it is not a holding
+  verb. Gold modifies the censer, with no second gold adjective for the
+  later altar. “Much” and “incense” have distinct owners. The incense is
+  an English mass noun despite its Syriac plural shape. The imperfect
+  complement expresses the purpose of offering, and its understood object
+  is the incense. “All the saints” resolves the anticipatory suffix
+  without adding “their saints.” In 8:4 the smoke rises with the prayers
+  from the angel's hand before God, retaining the source's clause roles.
+- Revelation 8:5 uses active “the angel took the censer,” with normal
+  English subject-before-verb order. He fills it with fire on the altar
+  and casts it onto the earth. The filling verb's masculine singular
+  object suffix refers to the censer; partitive min becomes English
+  “with” for the filling material. Peals of thunder, voices, flashes of
+  lightning, and an earthquake retain their actual order and plurals.
+  In 8:6 the trumpets are on the angels, idiomatically expressed as
+  possession. The Pael perfect is “prepared,” not an imperative; the
+  separate selves noun owns “themselves.”
+- The cry/sound root in 8:6-13 is rendered “sound” in the explicit trumpet
+  context. Costaz's dictionary entry, available through
+  [SEDRA](https://sedra.bethmardutho.org/lexeme/get/903), records trumpet
+  sounding; the [CAL root entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=z%28q+V)
+  also documents horn sounding, including a passive causative example.
+  The English is a contextual rendering across the simple and causative
+  forms here, not a claim that every stem has a separate trumpet gloss.
+  The second, third, and fourth ordinals identify successive participants
+  without adding absent angel nouns.
+- In 8:7 the demonstrative head “one” and ordinal “first” have separate
+  owners, with the conjunction separately linked to its prefix. Hail and
+  fire are mingled with water, not blood, and are cast onto the earth.
+  A third of the earth and trees, and all the earth's grass, burn.
+  The intransitive burning predicates keep their affected subjects; the
+  first angel does not become the actor of those verbs.
+- In 8:8 something like a great burning mountain falls into the sea;
+  no separate fire noun or passive casting verb is supplied. A third of
+  the sea becomes blood. The conjunction, fraction, sea, and becoming
+  verb have separate owners; the fraction's anticipatory suffix resolves
+  through its following referent. In 8:9 a third of the creatures dies
+  and a third of the ships is destroyed. The
+  [CAL creation/creature entry](https://cal.huc.edu/cal_entry_web.php?lemma=bryyh+N)
+  supports the creature sense of the plural noun. The relative locative
+  and existential are separately “in which” and “there was,” with life
+  at its own word. The locative suffix is masculine singular; it is not
+  silently converted to a feminine plural agreeing with creatures.
+  English retains the relative without naming an additional antecedent
+  or forcing a choice between the sea and the collective third.
+- In 8:10 a great star falls from heaven, burning like a flame, not a
+  lamp, then falls upon rivers and springs of water. The
+  [CAL eye/spring entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N)
+  confirms the spring sense with water. In 8:11 its name is Wormwood.
+  The fraction, waters, and becoming verb are separate; the comparative
+  particle remains in “like wormwood.” Many people die because the waters
+  were made bitter. English puts the waters before the passive predicate,
+  without adding an absent “from the waters” phrase before the cause.
+- In 8:12 the coordinated fractions of sun, moon, and stars are struck.
+  The source's preceding first predicate is singular; English plural
+  concord follows the coordinated subject. Muraoka's *Classical Syriac:
+  A Basic Grammar*, section 92(6), discusses concord with multiple
+  constituents. The second predicate is plural Peal intransitive, “grew
+  dark,” with the collective “a third of them” as its subject; it is not
+  a second external striking action. The day does not show light for a
+  third of its duration, and the night likewise. Light is the understood
+  object in the luminary context, and “duration” clarifies the day-third;
+  neither is an additional source noun. The masculine singular suffix
+  resumes the day. Do-support belongs to the showing verb, separately
+  from “not.” There is only one source darkening predicate.
+- In 8:13 the seer hears one eagle flying in heaven and saying three woes.
+  The numeral and eagle noun have separate owners. No separate seeing,
+  tail, blood, loud voice, or remaining modifier is imported from the
+  longer reference. Singular sound belongs to plural trumpets of three
+  angels, who are ready to sound; readiness is a state, not a completed
+  sounding action. The earth-inhabitant suffix resolves through the
+  following earth genitive without duplicating a possessor.
 
 Source checks for Revelation 9:
 
