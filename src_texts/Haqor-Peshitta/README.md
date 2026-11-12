@@ -11400,10 +11400,116 @@ Source checks for James 5:
 
 Source checks for 1 Peter 1:
 
-- Position-sensitive revisions absorb auxiliaries and explicit pronouns into contiguous grammatical spans: `דנהוונ למשמעתא` is “become obedient”; `נטירינ אנתונ` is “you are kept”; and the repeated 2PL pronouns in vv. 6 and 8 are not duplicated in English.
-- Relative and appositional clauses were kept source-led: v. 10 makes the prophets the subject of “inquired”; v. 11 makes the Messiah’s indwelling Spirit the showing/testifying subject and keeps the sufferings-of-Messiah relation; v. 19 attaches Messiah to the spotless Lamb; v. 20 keeps appointed-beforehand, pre-foundation, and last-time manifestation components.
-- Negation and suffixes were retained explicitly: v. 12 “not for themselves,” “for us,” and “announced to you”; v. 14 “did not know”; v. 17 retains the second-person possessive in “your sojourning”; v. 18 both silver/gold negatives and the fathers suffix; v. 22 retains the pure/perfect-heart and one-another phrases.
-- In v. 22, the verbs `נהוינ` and `ונהוינ` are third-person feminine plural imperfects agreeing with “your souls”; the coordinated rendering keeps nonpast “your souls become holy ... and become full”; `תהוונ מחבינ חד לחד` is second-person plural imperfect plus participle, rendered “be loving one another.” Verse 24 keeps the causal particle as “For” and joins the grass/flower clause with a semicolon rather than leaving a fragment.
+- All 25 verses and 363 source positions were checked against their exact
+  forms, inflection, clause relations and continuous English. The 48
+  original shared spans were reviewed. Ordinary pronouns, auxiliaries,
+  negation and modifiers now have individual owners; repeated indices
+  separate prefixes, stems and suffixes in English order. The remaining
+  shared expressions are listed with linguistic reasons in the ledger.
+  The final frozen text, exceptions and these notes received independent
+  source, peer and cold reviews.
+- In 1:1-2, those who were chosen resumes the plural addressees. Prior and
+  knowledge have separate words; the possessive on knowledge anticipates
+  God the Father. Sanctification and Spirit remain separate. The purpose
+  verb is third plural, so that they may be; obedience and sprinkling are
+  nominal goals, rendered as the predicates obedient and sprinkled with
+  blood. They are not new imperatives or additional finite Syriac verbs.
+  May and increase belong to the imperfect verb, apart from grace and peace.
+- In 1:3-5, blessed and the copula are distinct. The Father's possessive
+  anticipates our Lord, and the resurrection's possessive anticipates
+  Jesus the Messiah. Who in his and mercy share their actual single source
+  word around great. Men d-rish in 1:3 and 1:23 means anew, rather than
+  the misleading birth from the beginning; [Younansardaroud, printed
+  page 97](https://d-nb.info/1184881278/34#page=108) lists the expression
+  as again. The inheritance retains its to-prefix. Its negatives,
+  corrupting, defilement, fading, demonstrative and prepared predicate
+  remain separate. You belongs to its explicit pronoun in 1:5; life is
+  prepared to be revealed in the last times, plural. Life and heaven are
+  idiomatic English singulars for their lexical plural forms.
+- In 1:6-9, the explicit pronouns own you separately from grieving, loving
+  and rejoicing. A little and varied do not share their nouns or verbs.
+  Purpose so and that the proof have their separate words. Refined modifies
+  gold; the testing is perfect-form passive, has been tested. At the
+  revelation retains its possessive relation to Jesus the Messiah.
+  In 1:8, leh is the object of love, represented by the second whom in
+  the coordinated relative clause; it does not say in him. In his faith
+  retains its own possessive. Praiseworthy modifies joy, and the following
+  relative negative describes joy that is not expressible. Recompense in
+  1:9 is pur'ana, distinct from the following life of your souls.
+- In 1:10-12, the prophets inquire; the Spirit of the Messiah, dwelling in
+  them, is the feminine singular subject of showing and testifying.
+  About which in 1:10 retains the relative prefix with its resumed
+  preposition. Did expresses the past auxiliary apart from inquire;
+  perfect plus hwa does not automatically require pluperfect. Grace was
+  going to be given, and the sufferings were to come: atid is prospective
+  here, not a physical preparation. Subsequent compresses the temporal
+  from-afterwards expression. The Spirit is referred to as it if a pronoun
+  is used. In 1:12, all, searching, were, negation, for themselves, us,
+  our emphatic ourselves, prophesying and its auxiliary have separate
+  owners. Because retains metul's causal force. Those things now revealed
+  to you are conveyed through those things which we announced to you:
+  sabbar-na-khun is first plural perfect Pael with a second plural object,
+  not third plural they preached. The Spirit of holiness was sent from
+  heaven. Into these things represents the relative preposition plus its
+  repeated demonstrative complement; angels, also, desire and to look
+  remain separate.
+- In 1:13-16, because of and this are separate; loins and minds remain
+  plural, with the minds' possessive. The source says joy that is coming,
+  rather than grace imported from another text. In 1:14, and, not, again
+  and partake have separate owners. Former modifies your lusts; the past
+  auxiliary belongs to used to lust, and without knowledge remains a
+  negative prepositional noun phrase, not a new knowing verb. In 1:15,
+  holy is the predicate of the one who called you. In 1:16, the fully
+  pronounced perfect-form hwaitun before holy expresses general advice,
+  Be holy, not a claim that the readers were holy in the past; compare
+  [Muraoka, section 87, printed page 68](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  As, also, the independent I, holy and the enclitic copular am each
+  retain their source word.
+- In 1:17-19, And if it is the Father that you call explicitly represents
+  the conditional copula and relative prefix; it adds no separate
+  call-him object. The one, before whom, there is no, partiality and
+  judging are distinct. Before whom and in whom in 1:19 are narrow
+  relative-with-resumption constructions; see [Francois, sections 7.3-7.4](https://markfrancois.wordpress.com/wp-content/uploads/2023/01/classical-syriac-grammar-week-7.pdf).
+  Face-taking is the genuine partiality idiom, also in 1:22. Everyone,
+  according to his deeds, conduct yourselves, fear, this time and your
+  sojourning retain their owners. The redemption is past, with both
+  metal negatives, your vain deeds and receipt from your fathers
+  preserved. Wears out renders bly in both 1:18 and 1:23; [CAL, bly,
+  Peal](https://cal.huc.edu/oneentry.php?cits=all&lemma=bly+V) gives being
+  worn out and being ruined or destroyed as well as growing old.
+  Precious modifies blood. The Lamb has no blemish or stain; who is
+  represents the following existential copula identifying the Messiah.
+- In 1:20-21, the one, beforehand, was and appointed have distinct words.
+  For this, from before, plural foundations of the world, revelation at
+  the end of the times and for your sake remain explicit. The plural
+  demonstrative at 1:21 resumes the addressed people, you who have
+  believed through him; it is not a singular through whom referring to
+  the Messiah. The suffix in through him does refer to the Messiah.
+  The one who raised him is God; from among the dead renders min beth
+  mithe, without suggesting an ordinary house. Gave, him and glory are
+  separate. So that your faith and your hope may be upon God preserves
+  d- plus the imperfect as purpose, not epistemic uncertainty.
+- In 1:22-23, nehwyan and w-nehwyan are third feminine plural imperfects
+  agreeing with your souls: while your souls become holy and become
+  full of love. They do not say you purified your souls. Obedience's
+  suffix anticipates the truth. The final tehwon is second plural;
+  d-men and its imperfect support so that from a pure and perfect heart
+  you may be loving one another. This purpose/result rendering follows
+  the construction described by Muraoka, section 82, printed pages 65-66,
+  rather than treating d-men as a bare from and losing its clause link.
+  Loving, one and another remain separate; people in 1:23 represents
+  collective anasha. Born is second plural perfect passive; anew has
+  its own idiom. Both seed clauses retain their source negatives and
+  from-prepositions. The living word of God remains the feminine
+  antecedent of that abides, not masculine God or a new human subject.
+- In 1:24-25, For retains the causal opening. All flesh is grass has no
+  added like; beauty is like the field's bloom. Grass dries up and bloom
+  fades have separate predicates and subjects. Its beauty refers to
+  flesh; the quantifier's possessive is anticipatory. And the word of our
+  God abides forever retains our God and the proleptic possessive, not
+  an additional his. This, is, word and the one are distinct. The final
+  second plural passive announced form is rendered which has been
+  announced to you, retaining the addressed recipients.
 
 Source checks for 1 Peter 2:
 
