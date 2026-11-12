@@ -14221,25 +14221,110 @@ Source checks for Revelation 10:
 
 Source checks for Revelation 11:
 
-- 11:1: The reed's likeness/form and rod are separate source nouns. Standing is an active participle with a past auxiliary; saying is another active participle coordinated with it. English inversion preserves the angel as the standing speaker. The commands address one person; the final singular “in it” refers to the temple.
-- 11:2: The actual text has `דלגו מנ`, inward/inside, not Murdock's outer court. The CAL entry for `gw` explicitly lists `lgw mn` as “inward from” (https://cal.huc.edu/oneentry.php?cits=all&lemma=gw+N); “inside of” retains the compound relation without harmonizing the text. The separate `מן לבר` supplies outside, and the causative imperative is rendered “leave outside.” The feminine object of do-not-measure is the court. The holy city remains the object of trampling for forty-two months.
-- 11:3: Give/grant governs an infinitive to prophesy; “permission” supplies the English complement of that construction rather than inventing a second finite prophecy verb. The genuine first-person suffix is “my witnesses.” A four-position unit keeps the duration, 1,260 days, together in English. The witnesses, not the granting speaker, are clothed in sackcloth during their prophesying.
-- 11:4: The two olive trees and two lampstands stand before the Lord of all the earth. The feminine singular suffix on all anticipates earth; it does not add an independent “his.” The relative clause fronts the before-phrase to retain ascending source links.
-- 11:5: The fire is the subject of goes-out and consumes; mouth is singular with plural possessors, and enemies is plural with the same possessors. The second attacker clause is singular/generic, but the actual final dative `להונ` is third plural. English “to such people” interprets that plural as the generic attackers just mentioned, rather than changing it to singular “him.” “It is granted” retains GIVEN and “to be killed” retains the passive infinitive. This contextual referent resolution is an interpretation of an unusual source construction.
-- 11:6: Both existential-plus-dative constructions express having power. Close governs heaven; the subordinate three-position unit retains the negative, rain and descend. Heaven and sackcloth elsewhere use their normal English singular/mass forms despite Syriac plural forms. Their prophecy remains explicit. Every plague and as-often-as-they-wish retain the universal and quantity/relative construction.
-- 11:7: `מא ד` is temporal when; the perfect completed testimony is anterior to the predicted battle. The creature ascends from the sea, not an abyss. The short make-war-with-them unit retains the participants and the noun war. Overcoming and killing have their own explicit plural objects.
-- 11:8: The bodies and streets are plural. English supplies a locative predicate, “will lie on,” for the nominal location following the future killing. Spiritually, both city names, their Lord and the passive crucifixion remain explicit; the source has no additional “also.”
-- 11:9: SEE is an active participle. “There will be observers ... of their dead bodies” nominalizes that seeing predicate to keep the viewers' origins, nations/tribes/languages/peoples, in source order without a sentence fragment. The prospective setting comes from the surrounding prediction. The repeated bodies, conjunction and negated permission are retained, as is passive placement in plural graves. Three days and a half is the idiomatic duration, not half of the whole three-day period.
-- 11:10: Both rejoice predicates remain, with make-merry distinguishing the second. Gifts precedes send in the source; the short two-position unit keeps that object fronted. The inhabitants' feminine suffixes anticipate earth. The two prophets' torment is third plural perfect, not an imperfect or singular verb.
-- 11:11: The first phrase contains a living adjective: “a living spirit.” The second is genuinely “a spirit of life.” Both clauses are retained: entering them and falling upon them, separated by their standing on their feet. Great fear WAS upon the observers. Narrative perfects supply the setting for the relative active participle “who saw.” There is no additional “these” before the duration.
-- 11:12: The plural imperative come-up-here is distinguished from the subsequent perfect ascent. A three-position unit gives normal English order to enemies watching them while retaining the genuine plural possessor on enemies and the plural object.
-- 11:13: The hour has an explicit that. One out of ten expresses the fraction of the city; “parts” supplies English fraction grammar. The passive deaths retain both source nouns, names and persons, in the metonymic “persons counted by name,” followed by seven thousand. Counted explains the enumeration, not a separate narrated counting event. The rest were in fear and gave praise to God IN HEAVEN, the latter phrase being present in this source.
-- 11:14: The source has two woes with a plural departed verb, followed by the third woe coming immediately. It is not a singular second woe.
-- 11:15: The seventh angel cried out; great voices are in heaven, with no additional thunders. A three-position copular unit renders the world's kingdom becoming our God's and his Messiah's. The kingdom suffix anticipates world, while our God and his Messiah retain their genuine possessors. The reign verb is third singular perfect, form 5, rendered “has reigned” in the proclamation's completed perspective, not mislabeled a participle or silently replaced with a future. The age of ages preserves the source's singular/plural expression.
-- 11:16: The twenty-four elders sit before God on their own plural thrones, then fall on their faces and worship God. No throne is added before God. The relative clause fronts before-God, preserving the location of the sitting. The saying infinitive at the start of the next verse continues this sentence.
-- 11:17: We-give-thanks is first plural, addressed to singular you. Holder of all retains both source words. The two third-person singular existential expressions plus past auxiliary become the appositive “the one who is and who was,” referring to the God being addressed. There is no coming clause. Taking up the addressee's great power and reigning are second-singular perfects.
-- 11:18: The nations were angry; the addressee's wrath and the time of the dead share came. English repeats the shared verb at time to clarify the coordinated clause, without adding another event. The dead are to be judged passively. Giving a reward and destroying are second-singular imperfects, contrasted with the third-plural perfect “who destroyed” the earth. Prophets, saints and those fearing the addressee's name all remain explicit, including the small with the great.
-- 11:19: The opened temple is in heaven, without an added God noun. The ark is seen in the temple; the standalone his belongs to covenant and supplies no additional temple possessor. The final list follows the actual order: lightnings, thunders, voices, earthquake and great hail. Short copular/passive units keep English grammatical while every source position occurs once in ascending order.
+- All 19 verses and 306 exact source words were checked for morphology,
+  clause meaning, source ownership and continuous English. All 39 original
+  shared spans were reviewed; five narrow construction exceptions remain:
+  outside (11:2), two possessive have predicates (11:6), after (11:11), and
+  past existential was (11:17). Numerals, modifiers, copulas, subjects,
+  objects, negation and conjunctions otherwise retain separate owners.
+- 11:1-2: The reed's likeness and rod are separate nouns. The angel's
+  standing participle and past auxiliary become "the angel was standing"
+  with distinct owners. The singular commands measure temple, altar and
+  worshippers; the final masculine in-it refers to the temple. The court
+  has d-lgo min, an inward/inside relation, preserved as "inside of" with
+  independent owners. It is not harmonized to Murdock's outside court:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=lgw+X.
+  The Aphel imperative expresses exclusion as "leave outside"; CAL records
+  the exclude sense of npq: https://cal.huc.edu/oneentry.php?cits=all&lemma=npq+V.
+  Min lbar jointly supplies the one adverb outside. CAL's compound entry
+  includes locative outside examples, alongside from-outside uses:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40lbr+X.
+  Adding an independent "from" here would change the exclusion relation.
+  The court remains the feminine object of the negative imperfect measure
+  command; do-support belongs to the verb, not the negator. Holy/city and
+  forty/two/months have independent owners.
+- 11:3-4: Give/grant governs the prophesying infinitive; English permission
+  supplies its complement, without inventing a second finite prophecy
+  verb. Sahday explicitly has a first-person singular possessive suffix,
+  "my witnesses," separately linked from the recipient numeral two. The
+  day noun and thousand/two-hundred/sixty components are independently
+  linked. The witnesses are clothed in sackcloth while prophesying. The
+  two olive trees and two lampstands stand before the Lord of all the
+  earth. All's feminine suffix anticipates earth (Muraoka §112), rather
+  than adding an independent possessor. The relative clause is reordered
+  into normal English without sharing its verb, preposition or nouns.
+- 11:5-6: Fire is the subject of both goes-out and consumes, with the fire
+  noun and verb separately linked. Mouth is singular with plural
+  possessors; enemies is plural. The second generic attacker clause is
+  singular, but the actual final dative lehon is plural. "To such people"
+  interprets it as the attackers just described; this is an explicit
+  contextual resolution of an unusual construction. Given/granted and the
+  passive killing infinitive remain explicit. Both ith-lehon sequences in
+  11:6 express one English have predicate, with power separately owned.
+  In the second sequence and and they also have separate links. The
+  rain clause separates linker, noun, future verb and negation. The
+  prophecy suffix is their. Waters, blood, striking, earth and all plagues
+  remain explicit; the plural plague noun is retained. As-often-as and
+  they-wish have separate owners, without a shared frequency clause.
+- 11:7-10: Ma d- is temporal when; completed testimony precedes the future
+  battle. The beast ascends from the sea, not an imported abyss. Make,
+  war and with-them are separate, as are overcoming/killing and their
+  explicit plural objects. The bodies and streets are plural; the nominal
+  location receives contextual "will lie on." Great/city, spiritually,
+  both city names, their Lord and passive crucifixion remain distinct;
+  there is no absent also. In 11:9 the active seeing participle is rendered
+  "those from ... will look," with its ethnic origins in the intervening
+  phrase and the bodies as its object. This reorders the predicate into
+  continuous English without adding viewers. Three/days and negation/allow
+  have separate owners. Three days and a half is the idiomatic duration,
+  not half of all three days. Placement is passive in plural graves.
+  Both rejoicing predicates and sending gifts remain. The inhabitants'
+  feminine suffixes anticipate earth, without duplicate her/its. The two
+  prophets' torment is third-plural perfect; two and prophets are separate.
+- 11:11-12: Min batar supplies one temporal after, while and is separately
+  linked to its conjunction. CAL lists the compound with this sense:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40btr+p.
+  The first spirit has an independent living adjective; the second says
+  spirit of life. Both entering them and falling upon them are preserved,
+  separated by standing on their feet. Great and fear are separate; fear
+  was upon those who saw them. The voice and great modifier, plural
+  come-up command and subsequent perfect ascent remain distinct. The last
+  clause separately links and, their enemies, were watching, and them:
+  the watching verb owns contextual ongoing past, the enemy noun its
+  possessive suffix, and the following preposition its pronominal object.
+- 11:13-16: In-that-hour, great-earthquake and seven-thousand are split
+  into independent owners. One out of ten parts conveys the city fraction;
+  parts supplies English fraction grammar. The passive deaths retain both
+  names and persons as "persons counted by name," separately linked in
+  that order. Counted explains enumeration, not another narrated event.
+  The survivors were in fear and gave praise to God in heaven, the last
+  phrase being explicit here. Two woes have passed with a plural verb;
+  the third is coming immediately. The seventh angel cried out; great
+  voices are in heaven without added thunders. Kingdom, world and has-
+  become have separate owners; the kingdom suffix anticipates world.
+  Our God and his Messiah retain their genuine possessors. Reigned is
+  perfect Aphel, rendered has-reigned in the proclamation's completed
+  perspective. The age of ages preserves its singular/plural expression.
+  The twenty-four elders sit before God on their own thrones; no throne
+  is added before God. Twenty/four/elders and the relative sitting clause
+  have separate owners. They fall on their faces and worship God.
+- 11:17-19: Saying continues the preceding sentence. We-give-thanks is
+  first plural, addressing singular you. Holder and all remain distinct.
+  The present existential and past ithawhy-hwa describe the addressee:
+  "the one who is and who was." Only was retains joint ownership of the
+  past construction (Muraoka §109); and-who is separate at the existential
+  word. Hwa is the past auxiliary, not a pronoun; no coming clause is
+  added. Your, great and power are separately linked. Taking and reigning
+  are second-singular perfects. In 11:18 wrath and came are separate; the
+  repeated English came at the coordinated time clause links back to that
+  same verb, not the time noun. Judging is passive; giving/destroying are
+  second-singular imperfects, while who-destroyed is third-plural perfect.
+  Servants, prophets, saints, those fearing the name, small and great all
+  remain. The opened temple is in heaven without an added God noun. The
+  ark's covenant has the independent his; it supplies no temple possessor.
+  The opening verb, temple and heaven have distinct owners. The final list
+  remains lightnings, thunders, voices, earthquake and great hail, with
+  and/great/hail separately linked.
 
 Source checks for Revelation 12:
 
