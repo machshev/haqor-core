@@ -11513,65 +11513,153 @@ Source checks for 1 Peter 1:
 
 Source checks for 1 Peter 2:
 
-- 2:1 keeps the imperative at position 0 and `therefore` at 1; positions 7–8
-  are one genuine face-taking idiom rendered “hypocrisy,” not “in the face.”
-- 2:2 groups positions 8–10 as “pure spiritual milk” while retaining the
-  source order through one grammatical adjective group.
-- 2:3 joins the conditional to verse 2 with punctuation and groups positions
-  3–5 as “that he, the Lord, is good,” so the good lexeme, copula, and Lord
-  are all owned without a stranded subordinate sentence.
-- 2:4 groups positions 0–4 as “to whom you draw near: he is,” preserving the
-  third-person copula referent rather than making “you” singular; `לות` is
-  rendered “toward God,” one of its actual source senses.
-- 2:5 preserves plural temples and priests; neither is replaced by a singular
-  temple or the abstract noun priesthood.
-- 2:6 places causal `גיר` first in a grammatical “for it is said” group and
-  groups the quoted put/place verb with its explicit first-person subject.
-- 2:7 places the believing predicate at 5–6 and the contrast at 8, while one
-  adjacent grammar group keeps “to you who believe ... this honor” complete.
-  Its contrast continues into the stone predicate in 2:8 as one sentence.
-- 2:8 repairs the stone/stumbling opening, keeps the `בדלא` negative causal
-  connector, and renders positions 9–11 as “the word to which they were
-  appointed,” retaining the plural appointed verb and demonstrative relation.
-- 2:9 renders active participial `דמכהנא` as “officiating as priests” and
-  `למלכותא` as “for the kingdom”; redeemed ecclesia, praise/calling relation,
-  and the 3sg “his” suffix on light remain explicit.
-- 2:10 adds the finite “are” to the now/current people-of-God predicate while
-  preserving the formerly/now contrast and both mercy clauses.
-- 2:11 retains first-person request, 2pl “from you,” abstention, and the
-  demonstrative `הלין` as “those” followed by its relative “that wage war.”
-- 2:12 groups the copular exhortation as “let your conduct be good,” retains
-  the 2pl “against you” suffix, and renders `נחזונ` as third-person “they may
-  see,” followed by “and praise.”
-- 2:13 retains the two causal `because` words separately: God, then kings,
-  then their authority. The authority suffix is plural “their.”
-- 2:14 keeps the third-person plural “they are sent,” with separate purposes
-  for offender punishment and good-doer praise.
-- 2:15 uses “your good deeds” from the deed suffix and keeps singular “mouth,”
-  the foolish relative, explicit negation, and God once.
-- 2:16 renders the adjacent freedom phrase as people who make freedom for
-  themselves a covering for their wickedness; the third-plural suffix on
-  wickedness is explicit.
-- 2:17 uses one contiguous idiom group for `ומנ אלהא דחלו`: “and fear God.”
-  This is the natural governed fear-God construction, while retaining all
-  three source links and the imperative parallelism.
-- 2:19 uses the existential+dative possession idiom “For these have grace before
-  God,” then identifies them as those who, because of a good conscience, endure
-  distress that comes upon them wrongfully. The final `בעולא` is retained.
-- 2:20 resolves the rhetoric as: those suffering from their own wrongdoing have
-  no praise; when the addressed hearers do good, third-person plural actors
-  pressure them, and they endure it, their praise is great with God. The
-  second-person and third-person plural subjects are kept distinct.
-- 2:21 keeps the source's first-person plural “for us” (not “for
-  you”) and the example/footsteps sequence.
-- 2:22 keeps the guile noun before the “was found” verb and preserves both
-  negative elements.
-- 2:23 renders the final roles as Christ entrusting his judgment/cause to the
-  righteous Judge; no reflexive “himself” is inserted.
-- 2:24 keeps all our sins, plural “them,” first-person plural “we are dead / we
-  live,” his own righteousness, plural wounds, and second-person plural healing.
-- 2:25 combines the astray and “you were” forms into one natural “You were
-  astray,” then keeps the present return to Shepherd and Overseer of your souls.
+- All 25 verses and 357 source positions were checked against the exact
+  forms, inflection, clause actors and continuous English. The 70 original
+  shared spans were reviewed. Ordinary pronouns, auxiliaries, negation,
+  modifiers, genitives and clauses now have individual owners. Repeated
+  indices separate prefixes, stems and suffixes in English order; every
+  remaining shared expression has a specific ledger reason. The frozen
+  chapter, notes and exceptions received independent source, peer and
+  cold reviews before integration.
+- In 2:1, therefore and put off have separate words, with from you
+  retained. All wickedness and all deceit retain their proleptic
+  quantifiers. Face-taking is the genuine hypocrisy idiom here, not
+  literal taking in the face. [CAL, nsb, Peal idioms](https://cal.huc.edu/oneentry.php?cits=all&lemma=nsb+V)
+  attests both favoritism and hypocritical pretense; the vice-list context
+  supports hypocrisy. Backbiting renders the accusation compound, as in
+  Murdock; envy remains separate.
+- In 2:2-3, infant and children have separate owners. Long for the word
+  collapses the proleptic for-it, for-the-word into one English object;
+  as, for milk, pure and and spiritual remain separate. The following
+  feminine by-which refers back to word, not a new person. Life is an
+  idiomatic English singular for the lexical plural. The conditional if
+  still belongs to the preceding desire/growth sentence. Tasted and seen
+  are second plural perfects; that, good, the copular is and Lord each
+  have their own source word.
+- In 2:4, the one, to whom, explicit you, draw near and who is are
+  distinct. Living modifies stone. The sons of mankind are the third
+  plural actors of the perfect rejected, not the subject of drawing near.
+  Whom and rejected share that single verb's relative prefix and object
+  suffix. Chosen and precious are separate; with God conveys lwat's
+  contextual relation of esteem, without a directional toward God.
+  The stone's human Messianic referent permits personal whom and him.
+- In 2:5-6, and and also retain the single conjunction's word around
+  explicit you. Be built and become are second plural imperatives,
+  not indicative are built. Stones, temples, priests and sacrifices
+  remain plural; spiritual and holy have separate owners. To offer is
+  the Aphel infinitive, with acceptable, before God and through Jesus
+  the Messiah kept separate. In 2:6, For, said and the copula are distinct;
+  I belongs to the independent pronoun and place to its participle.
+  Approved follows bhirta's tried/approved sense. Precious and stone
+  remain separate, as do head and corner. Whoever, believes, in him,
+  not and the imperfect will be ashamed retain their owners. The
+  Scripture quotation is balanced.
+- In 2:7-8, the repeated dative to you, to those who believe remains
+  explicit. Therefore, this, honor and has been given have separate
+  source words; the giving is perfect passive. But owns din, apart from
+  those and their relative negation and persuasion predicate. The
+  contrast continues into he is a stone of stumbling and a stone of
+  offense. Both stone nouns, their genitives and the copula have their
+  own owners. Because and not separate the causal negative from are
+  persuaded. By the word to which they are appointed retains the
+  relative demonstrative's nearest noun, word; the appointment form is
+  a plural passive participle, not a new past-tense verb.
+- In 2:9-10, But, you, copular are, elect and tribe are separate.
+  That performs priestly service is feminine singular, agreeing with
+  tribe; it is not a morphologically plural priests noun. For the
+  kingdom keeps its preposition. Holy people and redeemed ecclesia
+  have separate modifiers. To proclaim conveys the role's purpose,
+  with the second plural imperfect addressed to the readers. The
+  praises of the one who called you resolves the anticipatory
+  possessive once, rather than his praises of him. From darkness and
+  to his excellent light retain their words and suffix. The following
+  plural demonstrative resumes the addressees, you who formerly were
+  not reckoned a people. Formerly is men qdim; were is position 5,
+  people position 6, now position 7 and but position 8. Now are a
+  people of God has an English copula in a Syriac nominal predicate.
+  There, were, not even, mercies and upon you remain separate. The
+  final pouring is perfect passive, have been poured, not present
+  are poured. Both mercies forms remain plural.
+- In 2:11-12, My beloved keeps the first singular possessive; I, ask
+  and of you have separate owners. Strangers and sojourners each retain
+  their comparative particle. The body's possessive on lusts anticipates
+  the body, while all refers to the lusts. These, that wage, war,
+  against and soul are separate. And let your conduct be good retains
+  the third plural imperfect as an exhortation. All the sons of mankind
+  are distinct from the conduct predicate. Those who speak evil words
+  against you are the third plural subjects of may see and and praise;
+  the English purpose link expresses the imperfect clause's role in
+  context, not an invented second-person seeing verb. Your good deeds,
+  God, day and scrutiny retain their own words.
+- In 2:13-15, the fully pronounced hwaitun before the submission
+  participle expresses general advice, And be subject; see [Muraoka,
+  section 87, printed page 68](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  Both because-of constructions are separate from God and their
+  authority; kings is plural and authority singular with a plural
+  possessive. And to judges continues the governed list, without
+  assigning a second submission verb to the judges noun. From him
+  retains its singular suffix, and they are sent its plural subject.
+  Punishment of offenders and praise of good-doers have separate
+  owners. In 2:15, that by your good deeds retains the instrumental
+  prefix; you may stop is second plural. The deeds are the means,
+  not the actor. Mouth is singular; the foolish, those, relative
+  negative, know and God remain separate.
+- In 2:16-18, as free sons continues the addressees' manner of acting;
+  as does not own an added live verb. The freedom clause has a feminine
+  singular passive participle agreeing with their freedom. By whom
+  represents its relative prefix and resumed lhon agent, not active
+  people making something at an unowned verb. Has been made renders
+  the resultative passive-plus-l construction; compare Muraoka,
+  sections 84 and 94, printed pages 67 and 75. Their freedom and
+  their wickedness retain both plural possessives; covering is
+  separate. The possessive on servants anticipates God. In 2:17,
+  honor/everyone and love/your brothers have their correct individual
+  owners. Be afraid of God preserves the governed min apart from
+  the fear verb; and belongs to that preposition's word. Kings and
+  honor are separate. In 2:18, And those, servants, who are and
+  among you retain the introductory demonstrative and existential.
+  Submission, your lords, fear, not, only, both master categories,
+  but and also remain distinct.
+- In 2:19-20, For and these are separate. Have represents the genuine
+  existential-plus-dative possession construction, followed by grace
+  before God and those who endure sorrows because of a good conscience.
+  Sorrows and that come are plural; upon them and wrongfully retain
+  their own words. The next question contrasts those enduring
+  afflictions because of their transgressions with those doing good.
+  Both transgressions and afflictions are plural. What praise is there
+  for them preserves the interrogative and present being predicate.
+  You do and you endure have their explicit second plural pronouns;
+  and they oppress has a distinct third plural actor and conjunction,
+  followed by its object you. Then is hayden, not the different
+  demonstrative halen. Your praise is position 21; increases is the
+  active feminine singular participle at 20, not an adjective great
+  with a misplaced is. With and God remain separate at 22 and 23.
+- In 2:21-23, For is separate from to this. Because and also share
+  d-af around the Messiah: also qualifies his dying, not the
+  addressees' calling. For us and the separate us after left are both
+  first plural. This is position 9, example 10, so that you 11,
+  footsteps 12 and may walk 13. The previous shifted links omitted
+  the second us; the revision restores it. He in 2:22 resumes the
+  Messiah's relative description, with commit, not and sin separate;
+  guile and was found have their actual owners. In 2:23, when conveys
+  the first relative's temporal force; the conjunction on the negative
+  is placed first as And, apart from not. No second when is added
+  to bare and he was suffering. The past auxiliaries, suffering,
+  threatening, but and entrusting have separate owners. His judgment,
+  the Judge and of righteousness preserve the cause and recipient;
+  no himself is inserted as the entrusted object.
+- In 2:24-25, all, our sins, lifted and them have separate owners;
+  the sins are carried in his body to the cross. D-kad and the
+  imperfect express so that when we are dead to sin, in his own
+  righteousness we may live. Dead is first plural, own retains
+  his suffix, and in retains b-, rather than importing to
+  righteousness. For and by his wounds are separate. You have
+  been healed is second plural perfect passive, not present you
+  are healed; wounds remains plural. The final causal For belongs
+  to the straying participle's prefix. You were and straying
+  express the past auxiliary and participle separately; like sheep,
+  and, now, returned, to, shepherd, overseer and your souls retain
+  their source words.
 
 Source checks for 1 Peter 3:
 
