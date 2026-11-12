@@ -12658,36 +12658,111 @@ Source checks for 1 John 2:
 
 Source checks for 1 John 3:
 
-- In 3:1, `מטל הנא` is the causal demonstrative construction “Therefore,”
-  followed by “the world.” The calling and making predicates both retain
-  their first-person plural objects; the final knowing verb is perfect.
-- In 3:2, “My beloved” preserves the first-person singular possessive.
-  The revelation clause introduces the expected event, while the separate
-  first-person plural being predicate carries “in his likeness.”
-- In 3:4, the postpositive contrast and “for” are retained, as are both
-  sin nouns and both iniquity nouns. In 3:5, the separate second sin noun
-  belongs to “and sin is not in him,” rather than to “our sins.”
-- In 3:8, the two copular pronouns belong to the Satan/sinner clause;
-  neither supplies an extra subject before the following “Son of God.”
-  The loosening verb is rendered “undo” in relation to Satan's works.
-  In 3:9, “and he is not able to sin” explicitly returns to the person
-  born of God after the intervening clause about God's seed.
-- In 3:12, the masculine emphatic evil adjective is substantivized as
-  “the evil one” in the preceding Satan contrast. Its comparison continues
-  the command in 3:11. In 3:14, the separate “by this” demonstrative
-  explicitly introduces the evidence of loving our brothers.
-- In 3:15, the plural ability and abiding participles agree with the
-  Syriac plural life noun. English uses the mass noun “life,” with the
-  source-order construction “cannot have abiding in him life eternal.”
-- In 3:16, the soul/self noun is rendered “life/lives” in the giving-up
-  context. `על אפי` is the idiom “for/on behalf of,” not physical faces.
-  In 3:17, closing one's mercies is “closes his heart”; in 3:21, open
-  faces before God express “we have confidence.”
-- In 3:19, the supplied source explicitly says “before he comes,” with
-  a third-person singular coming verb and its following subject pronoun.
-  In 3:24, the keeping predicate is passive (“is kept by him”), followed
-  by the distinct dwelling predicate and its explicit “and he” subject.
-  The later third-person dwelling verb is also rendered with “he.”
+- All 24 verses, 341 ordered source words and 76 original shared spans
+  were checked against the exact forms, inflections and continuous English.
+  Ordinary noun phrases, negation, auxiliaries, pronouns and clauses have
+  separate source owners. The six retained shared spans have individual
+  linguistic reasons in the review ledger.
+- 3:1 retains the imperative see, the degree expression, the Father's love
+  toward us, and both first-person plural objects of calling and making.
+  The prefix on children introduces the following explanation; the noun
+  and calling verb stay separately linked. `מטל הנא` is separately
+  "Because of this". The world's present not knowing us is distinct from
+  its perfect not-even-having-known him; the object pronouns stay separate.
+- 3:2 retains "My beloved" and the sons-of-God genitive with its anticipatory
+  suffix. `עתידיננ דנהוא` expresses expected futurity, "we are to be",
+  rather than a separate act of preparing. The not-yet-revealed predicate,
+  future temporal clause and first-person being/seeing predicates have
+  separate links. The comparative's dummy antecedent `מדמ` is absorbed
+  only in the narrow "as" exception, not in a whole seeing clause.
+- 3:3 and 3:17 retain narrow possessive `אית לה`, "has", with the relative
+  prefix separately represented in 3:3. Hope's `עלוהי` is contextual
+  "in him", the person on whom the hope rests, not a second location of
+  the hope's owner. Purifying and the explicit self noun remain separate.
+  The final pure predicate is stative, not a new past cleansing event.
+- 3:4 explicitly links "but", "for", both sin nouns and both iniquity
+  nouns. The postposed all-quantifier is "all sin" in English order.
+  In 3:5 `דהו דאתגלי` retains the identifying and relative construction:
+  "that it is he who was revealed". Its first and second relative/content
+  prefixes are not collapsed into a generic "that he was revealed".
+  The purpose taking-away verb and our sins remain distinct from the
+  second sin noun and its negative locative predicate.
+- 3:6 preserves both subjects and the separate negative seeing/knowing
+  clauses. In 3:7 the prohibition's negation, person and misleading verb
+  have separate links. Both pronouns in "as also he, the Messiah, is
+  righteous" remain represented with the named Messiah and copula.
+- 3:8's two pronouns belong to "he, Satan, has been a sinner", not to the
+  later Son-of-God subject. English present perfect reflects the state
+  extending from the beginning; it does not invent a separate past auxiliary
+  in the source. The Son appeared "to undo" Satan's works. Possessive
+  suffixes before the explicit Father/God/Satan genitives here and in
+  3:1, 3:2, 3:10 and 3:17 are anticipatory, not additional possessors.
+- 3:9 keeps the perfect birth, present sinning, seed locative and second
+  perfect birth distinct. "And he is not able to sin" returns to the
+  person born of God, after the intervening statement about God's seed.
+  3:10 keeps the passive distinguishing predicate and both sons/genitive
+  expressions, followed by the distinct negative doing/loving predicates.
+- 3:11's initial `ד־` supplies the causal "For" in "For this is". Likewise
+  3:16 `דהו` owns "in that he", while the following word owns "gave";
+  the explicit pronoun is not transferred to the giving word. Compare
+  causal/content clauses in section 14.6 of
+  [Younansardaroud's course](https://d-nb.info/1184881278/34).
+  The reciprocal expressions in 3:11, 3:18 and 3:23 separately link
+  "one" and "another" to their respective source words.
+- 3:12 continues the preceding love command with "not as Cain". The
+  dummy antecedent, relative, past copular complex, origin and evil one
+  remain distinct. The question's "And for what" preserves both words;
+  the works were evil, with the brother's righteous works elliptically
+  contrasted. 3:13 retains the second-person prohibition and hatred object.
+  3:14 keeps the explicit "we", transition from death to life, evidence
+  "by this", our brothers and the later non-loving person's remaining.
+- In 3:15 the ability and abiding participles are plural, agreeing with
+  lexically plural life, not the singular killer. The person is a fronted
+  topic, resumed by "in him": "as for everyone who kills people, life
+  eternal cannot abide in him". No have verb is inserted and the killer
+  is not made the actor of cannot-abide. English "can" and "not" have
+  separate adjacent spans while forming the written word "cannot".
+  Life remains an English mass noun; compare Muraoka section 70 in the
+  [grammar](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+- 3:16's singular soul/self noun is "his life" and its plural is "our
+  lives" in the giving context. The impersonal fitting-plus-dative modal
+  is the narrow "ought" exception; the explicit "we" stays separate.
+  The content prefix on `דעל` owns "to" in the English giving complement;
+  only `על אפי`, "for", remains jointly linked in the brothers phrase.
+- 3:17 separates possessions from their world modifier. Closing one's
+  mercies away from the needy brother is rendered contextually "withholds
+  his compassion from him"; the verb, mercy noun and origin/separation
+  pronoun keep separate owners. Compare the closing sense under
+  [CAL, ahd](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29xd+V)
+  and the lexical plural mass noun
+  [CAL, rahmyn](https://cal.huc.edu/oneentry.php?cits=all&lemma=rxmyn+N).
+  This does not substitute the chapter's different heart noun for mercies.
+  3:18 retains plural words and deeds, singular tongue, and "in truth".
+- 3:19's derived knowing verb is active "we recognize", not "we are
+  recognized" or "we make ourselves known"; compare the recognized
+  active Qt sense under
+  [CAL, shwda](https://cal.huc.edu/cal_entry_web.php?lemma=%24wd%28+V).
+  The source explicitly says "before he comes", with its own coming
+  verb and masculine subject pronoun. The reassuring/persuading verb
+  governs singular "our heart", as do the next two verses' heart clauses.
+- 3:20 retains the conditional/causal introduction, identifying "it is",
+  heart subject, separate condemnation object, how-much comparative and
+  God's knowing everything. In 3:21 "our countenance is open" separately
+  links the face noun, feminine plural copula and open predicate. This
+  is the confidence idiom; lexical plural face is English countenance,
+  rather than replacing the whole construction with an unowned have verb.
+- 3:22 keeps asking, receiving, keeping commands and doing good things
+  as separate predicates. In 3:23 the believing and loving clauses
+  remain the commandment's content; the name, his Son, Jesus and Messiah
+  have separate owners, as do the reciprocal objects and commanded verb.
+- 3:24 distinguishes active keeping of commands, passive "is kept" and
+  active dwelling. The first `בה` is "in him", preserving its locative
+  force instead of making him an explicit passive agent. Muraoka section
+  94 describes Lamadh and Min as passive-agent markers; its illustrated
+  text does not support an OCR substitution of Beth for Min. The later
+  explicit "and he" and third-person dwelling predicate remain personal.
+  The Spirit's origin phrase and feminine dummy antecedent retain neutral
+  "his Spirit, that which he gave to us", distinct from the masculine giver.
 
 Source checks for 1 John 4:
 
