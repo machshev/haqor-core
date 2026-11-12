@@ -2,9 +2,9 @@
   "id": "kaphar",
   "root": "כפר",
   "status": "draft",
-  "updated": "2026-11-09",
+  "updated": "2026-11-12",
   "tags": [
-    "atonement",
+    "covering",
     "ransom",
     "forgiveness",
     "sacrifice",
@@ -13,17 +13,17 @@
     "settlement",
     "plants"
   ],
-  "gloss": "wipe away guilt, ransom; atone; coat with pitch",
-  "summary": "The piel כִּפֶּר takes guilt away together with the wrath it brings: scripture sets it beside “blot out”, “depart” and “purify” (Jer 18:23; Isa 6:7; Ezk 43:26), uses it of a covenant annulled (Isa 28:18), and ties it to the כֹּפֶר, the price given for a forfeited life (Exo 30:12–16; Num 35:31–33), so that blood on the altar atones “by the life” (Lev 17:11). Its nouns name יוֹם הַכִּפֻּרִים, the tenth day of the seventh month (Lev 23:27–28), and the כַּפֹּרֶת, the gold lid of the ark on which that day’s blood was sprinkled. Covering as such appears only in the qal, coating the ark with pitch (Gen 6:14); Akkadian kapāru is used both of wiping clean, in the cult as elsewhere, and of smearing on, and Punic and Aramaic kpr wipe away and forgive. A young lion, villages, henna, frost and bowls share the spelling; their links to this sense are not clear.",
+  "gloss": "cover (sin, a life, the holy things); ransom; coat with pitch",
+  "summary": "כפר is literally to cover. The qal coats the ark with pitch, inside and out (Gen 6:14); the piel כִּפֶּר covers sin and the sinner, the land and the holy things, mostly with the blood of an offering, for “the blood covers by the life” (Lev 17:11), and the כֹּפֶר is the covering price given for a life that is forfeit (Exo 30:12–16; Num 35:31–33). Scripture sets beside the covering what it achieves: sin blotted out and departed, the altar purified, wrath turned back (Jer 18:23; Isa 6:7; Ezk 43:26; Num 25:11). Its nouns name יוֹם הַכִּפֻּרִים, the day of coverings on the tenth of the seventh month (Lev 23:27–28), and the כַּפֹּרֶת, the gold covering of the ark on which that day’s blood was sprinkled; Arabic kafara is “cover”, and Akkadian kapāru both “smear on” and “wipe clean”. A young lion, villages, henna, frost and bowls share the spelling; their links to covering are not clear.",
   "words": [
     {
       "lemma": "כִּפֶּר",
       "pos": "verb",
-      "gloss": "wipe away (guilt), ransom, appease; make atonement",
+      "gloss": "cover (sin, a person); ransom, appease; coat with pitch",
       "bdb": [
         "k.ct.ac"
       ],
-      "summary": "Almost all its uses are piel. Its objects are sin and iniquity (wiped away), the person or land (atoned for, with עַל or בְּעַד), the defiled altar and holy place (purged), and an angry face (appeased); its means are blood, an offering, a payment, or another’s life. The single qal coats the ark with pitch (כֹּפֶר).",
+      "summary": "Almost all its uses are piel. What it covers is sin and iniquity, the person or land (with עַל or בְּעַד), the defiled altar and holy place, and an angry face; what covers is blood, an offering, a payment, or another’s life; and what follows is sin taken away, cleanness, forgiveness and wrath turned. The single qal coats the ark with pitch (כֹּפֶר).",
       "stems": [
         {
           "stem": "qal",
@@ -49,17 +49,17 @@
         },
         {
           "stem": "piel",
-          "gloss": "wipe away, purge; atone for; ransom, appease",
+          "gloss": "cover (sin, a person, the holy things); ransom, appease",
           "senses": [
             {
-              "id": "wipe-away-guilt",
-              "gloss": "wipe away, purge (sin, defilement)",
-              "definition": "Take away sin or iniquity so that it no longer stands before God, or purge the altar and holy place of the defilement Israel’s sins have brought on them. Its parallels are “blot out”, “purify” and “cleanse”, never a verb of covering.",
+              "id": "cover-sin",
+              "gloss": "cover (sin, defilement)",
+              "definition": "Cover sin or iniquity so that it no longer stands before God, and the altar and holy place against the defilement Israel’s sins have brought on them. Scripture sets beside it what the covering does: “blot out”, “depart”, “purify” and “cleanse”.",
               "evidence": [
                 {
                   "ref": "Jer.18.23",
                   "role": "defining",
-                  "note": "“Do not wipe away (תְּכַפֵּר) their iniquity, and do not blot out (תֶּמְחִי) their sin from before you.”"
+                  "note": "“Do not cover (תְּכַפֵּר) their iniquity, and do not blot out (תֶּמְחִי) their sin from before you.”"
                 },
                 {
                   "ref": "Ezk.43.26",
@@ -78,26 +78,27 @@
                 },
                 {
                   "ref": "Psa.78.38",
-                  "note": "Being compassionate, he wiped away iniquity and did not destroy them; he turned back his anger."
+                  "note": "Being compassionate, he covered iniquity and did not destroy them; he turned back his anger."
                 },
                 {
                   "ref": "Psa.65.4",
-                  "note": "“Our transgressions, you wipe them away.”"
+                  "note": "“Our transgressions, you cover them.”"
                 },
                 {
                   "ref": "Psa.79.9",
-                  "note": "“Deliver us and wipe away our sins for your name’s sake.”"
+                  "note": "“Deliver us and cover our sins for your name’s sake.”"
                 },
                 {
                   "ref": "Dan.9.24",
-                  "note": "Beside “to finish transgression” and “to end sins”: “to wipe away iniquity”."
+                  "note": "Beside “to finish transgression” and “to end sins”: “to cover iniquity”."
                 },
                 {
                   "ref": "Ezk.16.63",
-                  "note": "When Yahweh wipes away for Jerusalem all that she has done."
+                  "note": "When Yahweh covers for Jerusalem all that she has done."
                 }
               ],
               "cognate_ids": [
+                "ar-kafara",
                 "akk-kaparu",
                 "phn-kpr",
                 "arc-kapper",
@@ -105,48 +106,49 @@
               ]
             },
             {
-              "id": "atone-for-person",
-              "gloss": "make atonement for (someone)",
-              "definition": "Do for a person, people or land, with עַל or בְּעַד, what takes their guilt or uncleanness away, mostly by the blood of an offering, with forgiveness or cleanness as the result.",
+              "id": "cover-for-person",
+              "gloss": "make a covering for (someone)",
+              "definition": "Cover a person, people or land, with עַל or בְּעַד, mostly by the blood of an offering, so that their guilt or uncleanness is taken away and they are forgiven or clean.",
               "evidence": [
                 {
                   "ref": "Lev.4.20",
                   "role": "defining",
-                  "note": "“The priest shall make atonement for them, and they will be forgiven.”"
+                  "note": "“The priest shall make a covering for them, and they will be forgiven.”"
                 },
                 {
                   "ref": "Lev.16.30",
                   "role": "defining",
-                  "note": "“On this day he will make atonement for you, to cleanse you; from all your sins you will be clean before Yahweh.”"
+                  "note": "“On this day he will make a covering for you, to cleanse you; from all your sins you will be clean before Yahweh.”"
                 },
                 {
                   "ref": "Lev.23.28",
                   "role": "defining",
-                  "note": "No work on יוֹם כִּפֻּרִים, “to make atonement for you before Yahweh your God.”"
+                  "note": "No work on יוֹם כִּפֻּרִים, “to make a covering for you before Yahweh your God.”"
                 },
                 {
                   "ref": "Lev.17.11",
                   "role": "defining",
-                  "note": "The life of the flesh is in the blood, given on the altar to make atonement for your lives; the blood atones by the life."
+                  "note": "The life of the flesh is in the blood, given on the altar to make a covering for your lives; the blood covers by the life."
                 },
                 {
                   "ref": "Lev.1.4",
-                  "note": "The burnt offering is accepted for him, to make atonement for him."
+                  "note": "The burnt offering is accepted for him, to make a covering for him."
                 },
                 {
                   "ref": "Lev.14.20",
-                  "note": "The priest makes atonement for the healed man, and he is clean."
+                  "note": "The priest makes a covering for the healed man, and he is clean."
                 },
                 {
                   "ref": "Num.8.21",
-                  "note": "Aaron makes atonement for the Levites to cleanse them."
+                  "note": "Aaron makes a covering for the Levites to cleanse them."
                 },
                 {
                   "ref": "Deu.32.43",
-                  "note": "He will make atonement for his land, his people."
+                  "note": "He will make a covering for his land, his people."
                 }
               ],
               "cognate_ids": [
+                "ar-kafara",
                 "akk-kaparu",
                 "phn-kpr",
                 "arc-kapper",
@@ -156,12 +158,12 @@
             {
               "id": "ransom-appease",
               "gloss": "avert wrath by a ransom or gift; appease",
-              "definition": "Turn away the anger or death due by giving something in place of the life forfeited: a payment, a gift, or another’s life.",
+              "definition": "Turn away the anger or death due by covering it with something given in place of the life forfeited: a payment, a gift, or another’s life.",
               "evidence": [
                 {
                   "ref": "Exo.30.15",
                   "role": "defining",
-                  "note": "The half shekel, the כֹּפֶר of each man’s life (Exo 30:12), is given “to make atonement for your lives.”"
+                  "note": "The half shekel, the כֹּפֶר of each man’s life (Exo 30:12), is given “to make a covering for your lives.”"
                 },
                 {
                   "ref": "Gen.32.21",
@@ -176,24 +178,24 @@
                 {
                   "ref": "2Sa.21.3",
                   "role": "defining",
-                  "note": "David asks the Gibeonites “with what shall I make atonement?”; they want no silver or gold, but lives (2Sa 21:4–6)."
+                  "note": "David asks the Gibeonites “with what shall I make a covering?”; they want no silver or gold, but lives (2Sa 21:4–6)."
                 },
                 {
                   "ref": "Num.17.11",
                   "role": "defining",
-                  "note": "Wrath has gone out and the plague begun; Aaron makes atonement with incense and the plague stops (Num 17:12–13)."
+                  "note": "Wrath has gone out and the plague begun; Aaron makes a covering with incense and the plague stops (Num 17:12–13)."
                 },
                 {
                   "ref": "Num.25.13",
-                  "note": "Phinehas made atonement for Israel; he turned back Yahweh’s wrath (Num 25:11)."
+                  "note": "Phinehas made a covering for Israel; he turned back Yahweh’s wrath (Num 25:11)."
                 },
                 {
                   "ref": "Num.31.50",
-                  "note": "The officers bring gold “to make atonement for our lives before Yahweh” after the count."
+                  "note": "The officers bring gold “to make a covering for our lives before Yahweh” after the count."
                 },
                 {
                   "ref": "Exo.32.30",
-                  "note": "Moses goes up to Yahweh: “perhaps I can make atonement for your sin.”"
+                  "note": "Moses goes up to Yahweh: “perhaps I can make a covering for your sin.”"
                 },
                 {
                   "ref": "Isa.47.11",
@@ -211,21 +213,21 @@
         },
         {
           "stem": "pual",
-          "gloss": "be wiped away, be annulled; be atoned for",
+          "gloss": "be covered; be annulled",
           "senses": [
             {
-              "gloss": "be wiped away, be annulled",
-              "definition": "Of iniquity, be taken away; of a covenant, be made void; of a land, have its bloodguilt removed.",
+              "gloss": "be covered, be annulled",
+              "definition": "Of iniquity, be covered and so taken away; of a covenant, be made void; of a land, have its bloodguilt covered.",
               "evidence": [
                 {
                   "ref": "Isa.6.7",
                   "role": "defining",
-                  "note": "“Your iniquity has departed (וְסָר), and your sin is wiped away (תְּכֻפָּר).”"
+                  "note": "“Your iniquity has departed (וְסָר), and your sin is covered (תְּכֻפָּר).”"
                 },
                 {
                   "ref": "Isa.27.9",
                   "role": "defining",
-                  "note": "Jacob’s iniquity wiped away, parallel to “the removing of his sin.”"
+                  "note": "Jacob’s iniquity covered, parallel to “the removing of his sin.”"
                 },
                 {
                   "ref": "Isa.28.18",
@@ -235,19 +237,19 @@
                 {
                   "ref": "Num.35.33",
                   "role": "defining",
-                  "note": "No atonement can be made for the land for blood shed in it except by the blood of the one who shed it."
+                  "note": "No covering can be made for the land for blood shed in it except by the blood of the one who shed it."
                 },
                 {
                   "ref": "Isa.22.14",
-                  "note": "“This iniquity will not be wiped away for you until you die.”"
+                  "note": "“This iniquity will not be covered for you until you die.”"
                 },
                 {
                   "ref": "Pro.16.6",
-                  "note": "By covenant faithfulness and truth iniquity is atoned for."
+                  "note": "By covenant faithfulness and truth iniquity is covered."
                 },
                 {
                   "ref": "Exo.29.33",
-                  "note": "The priests eat what atonement was made with."
+                  "note": "The priests eat what the covering was made with."
                 }
               ],
               "cognate_ids": [
@@ -260,16 +262,16 @@
         },
         {
           "stem": "hithpael",
-          "gloss": "be atoned for",
+          "gloss": "be covered",
           "senses": [
             {
-              "gloss": "be atoned for",
-              "definition": "Of iniquity, be taken away by sacrifice or offering.",
+              "gloss": "be covered",
+              "definition": "Of iniquity, be covered by sacrifice or offering.",
               "evidence": [
                 {
                   "ref": "1Sa.3.14",
                   "role": "defining",
-                  "note": "The iniquity of Eli’s house will never be atoned for by sacrifice or offering."
+                  "note": "The iniquity of Eli’s house will never be covered by sacrifice or offering."
                 }
               ],
               "cognate_ids": [
@@ -282,16 +284,16 @@
         },
         {
           "stem": "nithpael",
-          "gloss": "be atoned for",
+          "gloss": "be covered",
           "senses": [
             {
-              "gloss": "be atoned for",
-              "definition": "Of shed blood, have its guilt removed from the people.",
+              "gloss": "be covered",
+              "definition": "Of shed blood, have its guilt covered from the people.",
               "evidence": [
                 {
                   "ref": "Deu.21.8",
                   "role": "defining",
-                  "note": "“Atone for your people Israel … and the blood will be atoned for them.”"
+                  "note": "“Cover for your people Israel … and the blood will be covered them.”"
                 }
               ],
               "cognate_ids": [
@@ -317,7 +319,7 @@
           },
           {
             "lemma": "סוּר",
-            "note": "Sin wiped away beside iniquity departing, and its removal.",
+            "note": "Sin covered beside iniquity departing, and its removal.",
             "evidence": [
               {
                 "ref": "Isa.6.7",
@@ -330,7 +332,7 @@
           },
           {
             "lemma": "טָהֵר",
-            "note": "Purging the altar beside cleansing it, and atonement made to cleanse.",
+            "note": "Purging the altar beside cleansing it, and a covering made to cleanse.",
             "evidence": [
               {
                 "ref": "Ezk.43.26",
@@ -345,7 +347,7 @@
         "phrases": [
           {
             "phrase": "כִּפֶּר עַל",
-            "gloss": "make atonement for",
+            "gloss": "make a covering for",
             "evidence": [
               {
                 "ref": "Lev.4.20"
@@ -362,16 +364,16 @@
       "lemma": "כִּפֻּרִים",
       "pos": "noun",
       "gender": "m",
-      "gloss": "atonement, the wiping away of guilt",
+      "gloss": "coverings, the covering of guilt",
       "bdb": [
         "k.ct.ad"
       ],
-      "summary": "Always plural. It names the yearly day of the seventh month, the sin offering and ram by which guilt was taken away, and once the silver given as the people’s ransom.",
+      "summary": "Always plural, “coverings”. It names the yearly day of the seventh month, the sin offering and ram by which guilt was covered, and once the silver given as the people’s ransom.",
       "senses": [
         {
-          "id": "atonement",
-          "gloss": "atonement",
-          "definition": "The taking away of guilt, above all on יוֹם הַכִּפֻּרִים, the tenth day of the seventh month, and in the offerings made for it.",
+          "id": "covering",
+          "gloss": "covering",
+          "definition": "The covering of guilt, above all on יוֹם הַכִּפֻּרִים, the tenth day of the seventh month, and in the offerings made for it.",
           "evidence": [
             {
               "ref": "Lev.23.27",
@@ -381,7 +383,7 @@
             {
               "ref": "Lev.23.28",
               "role": "defining",
-              "note": "“It is יוֹם כִּפֻּרִים, to make atonement for you before Yahweh your God.”"
+              "note": "“It is יוֹם כִּפֻּרִים, to make a covering for you before Yahweh your God.”"
             },
             {
               "ref": "Exo.30.10",
@@ -398,7 +400,7 @@
             },
             {
               "ref": "Num.5.8",
-              "note": "The ram of the כִּפֻּרִים, by which atonement is made for the man."
+              "note": "The ram of the כִּפֻּרִים, by which a covering is made for the man."
             },
             {
               "ref": "Num.29.11",
@@ -406,21 +408,21 @@
             }
           ],
           "kin": [
-            "wipe-away-guilt",
-            "atone-for-person"
+            "cover-sin",
+            "cover-for-person"
           ],
           "cognate_ids": [
             "akk-kupartu"
           ]
         },
         {
-          "gloss": "atonement money",
+          "gloss": "covering money",
           "definition": "The silver paid as ransom for the lives of those counted.",
           "evidence": [
             {
               "ref": "Exo.30.16",
               "role": "defining",
-              "note": "“The silver of the כִּפֻּרִים” from the census, “to make atonement for your lives.”"
+              "note": "“The silver of the כִּפֻּרִים” from the census, “to make a covering for your lives.”"
             }
           ],
           "kin": [
@@ -432,7 +434,7 @@
       "greek": [
         {
           "lemma": "ἱλασμός",
-          "gloss": "atonement, propitiation",
+          "gloss": "covering, propitiation",
           "evidence": [
             {
               "source": "macula-lxx",
@@ -451,7 +453,7 @@
         "phrases": [
           {
             "phrase": "יוֹם הַכִּפֻּרִים",
-            "gloss": "the Day of Atonement, the tenth of the seventh month",
+            "gloss": "יוֹם הַכִּפֻּרִים, the Day of Coverings, the tenth of the seventh month",
             "evidence": [
               {
                 "ref": "Lev.23.27"
@@ -471,14 +473,14 @@
       "lemma": "כַּפֹּרֶת",
       "pos": "noun",
       "gender": "f",
-      "gloss": "atonement lid (of the ark)",
+      "gloss": "the covering (of the ark)",
       "bdb": [
         "k.ct.ae"
       ],
-      "summary": "The gold slab laid on the ark, from which Yahweh spoke and on which the blood of יוֹם הַכִּפֻּרִים was sprinkled. Its form is a noun of the piel; scripture never uses a verb of covering for it, so whether the name means “covering” is not shown.",
+      "summary": "The gold covering laid on the ark, from which Yahweh spoke and on which the blood of יוֹם הַכִּפֻּרִים was sprinkled: a noun of the piel, “the covering”, set over the testimony inside the ark.",
       "senses": [
         {
-          "gloss": "the lid of the ark, the place of atonement",
+          "gloss": "the covering of the ark, the place of covering",
           "definition": "A slab of pure gold the size of the ark, with the two cherubim of one piece with it, set on the ark above the testimony; Yahweh meets and speaks from above it, and once a year the high priest sprinkles blood on it and before it.",
           "evidence": [
             {
@@ -519,15 +521,15 @@
             }
           ],
           "kin": [
-            "wipe-away-guilt",
-            "atone-for-person"
+            "cover-sin",
+            "cover-for-person"
           ]
         }
       ],
       "greek": [
         {
           "lemma": "ἱλαστήριον",
-          "gloss": "place or means of atonement",
+          "gloss": "place or means of covering",
           "evidence": [
             {
               "source": "macula-lxx",
@@ -541,6 +543,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-kafara"
       ]
     },
     {
@@ -1143,7 +1148,7 @@
             }
           ],
           "kin": [
-            "wipe-away-guilt"
+            "cover-sin"
           ],
           "cognate_ids": [
             "akk-kaparu",
@@ -1309,7 +1314,7 @@
       "lang": "arc",
       "form": "כַּפֵּר",
       "translit": "kappar (pael)",
-      "gloss": "wipe out, efface; forgive, atone; (ithpe.) be wiped out, be forgiven",
+      "gloss": "wipe out, efface; forgive, cover; (ithpe.) be wiped out, be forgiven",
       "relation": "cognate",
       "note": "Jastrow’s first example of the plain sense is the Targum of Pro 30:20, where the Hebrew has מָחֲתָה, “she wipes her mouth”.",
       "evidence": [
@@ -1482,7 +1487,7 @@
   "doctrine": [
     {
       "topic": "a-ransom-for-a-life",
-      "statement": "Scripture ties the verb to כֹּפֶר, a price given for a life that is forfeit. When Israel was counted, each man gave a half shekel as “the כֹּפֶר of his life” so that no plague would strike them; rich and poor gave the same, “to make atonement for your lives” (Exo 30:12–16). For a murderer no כֹּפֶר may be taken, and blood shed on the land can be atoned for only by the blood of the one who shed it (Num 35:31–33). Yahweh gives blood on the altar for this: the life of the flesh is in the blood, and the blood atones by the life (Lev 17:11). No man can give God the ransom for his brother, for the redemption of a life is costly (Psa 49:8–9); in Job a messenger pleading for a man says, “Deliver him from going down to the pit; I have found a כֹּפֶר” (Job 33:23–24), and Yahweh gives nations as Israel’s ransom, “in your place” (Isa 43:3–4). Jesus says the Son of Man came to give his life a ransom (λύτρον, the Greek given for כֹּפֶר at Pro 13:8) for many (Mat 20:28; Mrk 10:45), and Paul that he gave himself a ransom for all (1Ti 2:6).",
+      "statement": "Scripture ties the verb to כֹּפֶר, a price given for a life that is forfeit. When Israel was counted, each man gave a half shekel as “the כֹּפֶר of his life” so that no plague would strike them; rich and poor gave the same, “to make a covering for your lives” (Exo 30:12–16). For a murderer no כֹּפֶר may be taken, and blood shed on the land can be covered only by the blood of the one who shed it (Num 35:31–33). Yahweh gives blood on the altar for this: the life of the flesh is in the blood, and the blood covers by the life (Lev 17:11). No man can give God the ransom for his brother, for the redemption of a life is costly (Psa 49:8–9); in Job a messenger pleading for a man says, “Deliver him from going down to the pit; I have found a כֹּפֶר” (Job 33:23–24), and Yahweh gives nations as Israel’s ransom, “in your place” (Isa 43:3–4). Jesus says the Son of Man came to give his life a ransom (λύτρον, the Greek given for כֹּפֶר at Pro 13:8) for many (Mat 20:28; Mrk 10:45), and Paul that he gave himself a ransom for all (1Ti 2:6).",
       "evidence": [
         {
           "ref": "Exo.30.12",
@@ -1520,7 +1525,7 @@
     },
     {
       "topic": "yom-hakippurim",
-      "statement": "On the tenth day of the seventh month is יוֹם הַכִּפֻּרִים: Israel holds a holy assembly, humbles their souls and does no work, “for it is a day of כִּפֻּרִים, to make atonement for you before Yahweh your God”, and whoever does not humble himself that day is cut off (Lev 23:27–32). Lev 16 sets out what is done. Only the high priest goes inside the curtain, once a year, with blood, and sprinkles it on the כַּפֹּרֶת and before it (Lev 16:2, 14–15); he purges the holy place, the tent and the altar of Israel’s uncleannesses and makes atonement for the priests and all the people (Lev 16:16–20, 33), and the living goat carries all their iniquities away into the wilderness (Lev 16:21–22). The result is stated: “from all your sins you will be clean before Yahweh” (Lev 16:30). On this day the horn proclaims liberty in the jubilee year (Lev 25:9–10). Hebrews reads the day as pointing beyond itself: the high priest went in once a year, not without blood (Heb 9:7), and the yearly repetition was a reminder of sins, since the blood of bulls and goats cannot take sins away (Heb 10:1–4); Christ entered the holy place once for all by his own blood, obtaining eternal redemption (Heb 9:11–12), and by one offering has perfected for all time those who are made holy (Heb 10:14).",
+      "statement": "On the tenth day of the seventh month is יוֹם הַכִּפֻּרִים: Israel holds a holy assembly, humbles their souls and does no work, “for it is a day of כִּפֻּרִים, to make a covering for you before Yahweh your God”, and whoever does not humble himself that day is cut off (Lev 23:27–32). Lev 16 sets out what is done. Only the high priest goes inside the curtain, once a year, with blood, and sprinkles it on the כַּפֹּרֶת and before it (Lev 16:2, 14–15); he purges the holy place, the tent and the altar of Israel’s uncleannesses and makes a covering for the priests and all the people (Lev 16:16–20, 33), and the living goat carries all their iniquities away into the wilderness (Lev 16:21–22). The result is stated: “from all your sins you will be clean before Yahweh” (Lev 16:30). On this day the horn proclaims liberty in the jubilee year (Lev 25:9–10). Hebrews reads the day as pointing beyond itself: the high priest went in once a year, not without blood (Heb 9:7), and the yearly repetition was a reminder of sins, since the blood of bulls and goats cannot take sins away (Heb 10:1–4); Christ entered the holy place once for all by his own blood, obtaining eternal redemption (Heb 9:11–12), and by one offering has perfected for all time those who are made holy (Heb 10:14).",
       "evidence": [
         {
           "ref": "Lev.23.27",
@@ -1568,7 +1573,7 @@
       ]
     },
     {
-      "topic": "the-place-of-atonement",
+      "topic": "the-place-of-covering",
       "statement": "Yahweh says he will meet Moses and speak with him “from above the כַּפֹּרֶת, from between the two cherubim” (Exo 25:22; Num 7:89), and that he appears in the cloud over it (Lev 16:2). On יוֹם הַכִּפֻּרִים the blood of the sin offerings is sprinkled on it and before it (Lev 16:14–15): the place where Yahweh met his people is the place where blood was put to take their sins away. Hebrews names it with the Greek ἱλαστήριον (Heb 9:5), and Paul says that God set forth Christ Jesus as a ἱλαστήριον through faith in his blood, to show his righteousness in passing over sins done before (Rom 3:25). John calls him the ἱλασμός, the Greek given for כִּפֻּרִים (Lev 25:9), for our sins, and not for ours only but for the whole world’s (1Jn 2:2), sent because God loved us (1Jn 4:10).",
       "evidence": [
         {
@@ -1599,5 +1604,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-09 from the brief, for the Lev 23 feasts. COVER / WIPE / RANSOM: decided from scripture first. The piel’s parallels are מָחָה (Jer 18:23), סוּר (Isa 6:7; 27:9), טָהֵר/חִטֵּא (Ezk 43:20, 26; Lev 16:30), “not stand” (Isa 28:18); never כָּסָה. Its tie to כֹּפֶר is explicit (Exo 30:12–16; Num 35:31–33; 2Sa 21:3–6). Literal covering is only the qal, Gen 6:14 (pitch). Cognates: Akkadian kapāru covers both “wipe clean” (also cultic) and “smear/coat”; Punic kpr “wipe away, forgive”; Aramaic pael “wipe out, efface; forgive”; Arabic kafara “cover”, kaffara “efface/expiate a sin”. So the gloss leads with “wipe away guilt, ransom”, with “atone” second; review whether the reviewer wants “cover” in the root gloss. BDB KEYS: k.ct.ac and k.cu.ac list the same 109 tokens (spelling-based), so only k.ct.ac is used, on the one verb; its count includes the 7 כִּפֻּרִים tokens the brief shows as “no stem”. The four כֹּפֶר keys (k.ct.ab ransom, k.cu.ab pitch, k.cv.ac henna, k.cv.ae village) each count all 17 כֹּפֶר tokens, k.cw.ab/ac (bowl/frost) both count 12, so per-word use counts overstate for these homographs. k.cv.ah (כְּפִירִים Neh 6:2) counts the 32 כְּפִיר tokens, so it is left off that word. QAL: kept as a stem of the one verb (BDB’s separate denominative k.cu.ac has the same tokens); whether “coat with pitch” and the piel are one verb or two is open. LEFT OUT: proper names כְּפִירָה (Kephirah, k.cv.ag) and כְּפַר הָעַמּוֹנִי (Jos 18:24, k.cv.af) for name entries. כְּפִירִים Neh 6:2 kept as a word, though it may be a place name (Kephirim, perhaps Kephirah). OPEN: young lion כְּפִיר has no cognate found (Lane, Oracc, Krahmalkov, Segert, Fisher searched), so lexicon-support counts the root’s cognates against it; henna, frost and bowl rest on Aramaic only; the village word’s tie to the root is not shown (Lane’s sources link village to “earth, grave” as things that cover, which is their etymology, not evidence). Arabic kaffara/kaffāra may owe its religious sense to Jewish or Christian Aramaic use; recorded as Lane gives it. Ugaritic kpr “village” is from Anderson–Moser only; Ge’ez kapar “village” (Anderson–Moser, id GEZ000000) and Ge’ez for the other words not checked (Dillmann, Leslau not consulted). Klein’s Akkadian “kapru, bowl” was not found in Oracc. Ugaritic kpr “henna” (Baal texts) not checked: not in Segert’s glossary or Fisher. Krahmalkov page numbers read from the local text extraction (no PDF renderer here); check against the scan. Syriac “wipe” (Payne Smith) not consulted; the Peshitta’s כּוּפָּרָא (1Co 4:13, for περίψημα) is the scripture witness to it. Peshitta words found through SEDRA’s BFBS word list (lexemes 1569–1573, 3536; כַּפְרָא 1572 has no NT token). The Peshitta renders ἱλαστήριον and λύτρον with other roots; not recorded here. LXX renders כִּפֶּר by ἐξιλάσκομαι, which the NT does not use, so no Greek is given for the verb."
+  "note": "Drafted 2026-11-09 from the brief, for the Lev 23 feasts. USER 2026-11-12: כפר is literally covering, and the usual English theological term is not to be used anywhere; the entry is re-centred on “cover”, with the wiping, cleansing and ransom words as what the covering achieves. EARLIER ANALYSIS (2026-11-09, which led with “wipe away”): The piel’s parallels are מָחָה (Jer 18:23), סוּר (Isa 6:7; 27:9), טָהֵר/חִטֵּא (Ezk 43:20, 26; Lev 16:30), “not stand” (Isa 28:18); never כָּסָה. Its tie to כֹּפֶר is explicit (Exo 30:12–16; Num 35:31–33; 2Sa 21:3–6). Literal covering is only the qal, Gen 6:14 (pitch). Cognates: Akkadian kapāru covers both “wipe clean” (also cultic) and “smear/coat”; Punic kpr “wipe away, forgive”; Aramaic pael “wipe out, efface; forgive”; Arabic kafara “cover”, kaffara “efface/expiate a sin”. So the gloss leads with “wipe away guilt, ransom”; USER 2026-11-12: the word is covering; it is literally covering, and the usual English theological term is not to be used anywhere. BDB KEYS: k.ct.ac and k.cu.ac list the same 109 tokens (spelling-based), so only k.ct.ac is used, on the one verb; its count includes the 7 כִּפֻּרִים tokens the brief shows as “no stem”. The four כֹּפֶר keys (k.ct.ab ransom, k.cu.ab pitch, k.cv.ac henna, k.cv.ae village) each count all 17 כֹּפֶר tokens, k.cw.ab/ac (bowl/frost) both count 12, so per-word use counts overstate for these homographs. k.cv.ah (כְּפִירִים Neh 6:2) counts the 32 כְּפִיר tokens, so it is left off that word. QAL: kept as a stem of the one verb (BDB’s separate denominative k.cu.ac has the same tokens); whether “coat with pitch” and the piel are one verb or two is open. LEFT OUT: proper names כְּפִירָה (Kephirah, k.cv.ag) and כְּפַר הָעַמּוֹנִי (Jos 18:24, k.cv.af) for name entries. כְּפִירִים Neh 6:2 kept as a word, though it may be a place name (Kephirim, perhaps Kephirah). OPEN: young lion כְּפִיר has no cognate found (Lane, Oracc, Krahmalkov, Segert, Fisher searched), so lexicon-support counts the root’s cognates against it; henna, frost and bowl rest on Aramaic only; the village word’s tie to the root is not shown (Lane’s sources link village to “earth, grave” as things that cover, which is their etymology, not evidence). Arabic kaffara/kaffāra may owe its religious sense to Jewish or Christian Aramaic use; recorded as Lane gives it. Ugaritic kpr “village” is from Anderson–Moser only; Ge’ez kapar “village” (Anderson–Moser, id GEZ000000) and Ge’ez for the other words not checked (Dillmann, Leslau not consulted). Klein’s Akkadian “kapru, bowl” was not found in Oracc. Ugaritic kpr “henna” (Baal texts) not checked: not in Segert’s glossary or Fisher. Krahmalkov page numbers read from the local text extraction (no PDF renderer here); check against the scan. Syriac “wipe” (Payne Smith) not consulted; the Peshitta’s כּוּפָּרָא (1Co 4:13, for περίψημα) is the scripture witness to it. Peshitta words found through SEDRA’s BFBS word list (lexemes 1569–1573, 3536; כַּפְרָא 1572 has no NT token). The Peshitta renders ἱλαστήριον and λύτρον with other roots; not recorded here. LXX renders כִּפֶּר by ἐξιλάσκομαι, which the NT does not use, so no Greek is given for the verb."
 }
