@@ -12865,40 +12865,112 @@ Source checks for 1 John 4:
 
 Source checks for 1 John 5:
 
-- In 5:1, the two birth forms differ: the first is a passive participle
-  and the second a perfect. In 5:4, the first overcoming verb is an active
-  participle, while the victory “has overcome” uses a perfect. The final
-  first-person plural possessive belongs to “our faith.”
-- In 5:5, the Son noun precedes its copula; the small linked predicate
-  retains both rather than assigning “Son” to the copular pronoun.
-  The supplied 5:7 has the Spirit's testimony and truth; 5:8 names the
-  Spirit, water, and blood, whose agreement is expressed as “in one.”
-- In 5:6 and 5:16–17, `לא הוא` is read as a negative/emphatic construction,
-  without mechanically importing past time from the perfect-form `הוא`.
-  This distinction follows the negative and negative-cleft uses discussed
-  in [Pat-El's Syriac negation study](https://doi.org/10.1093/jss/fgl006).
-- In 5:9, `חד כמא` supplies the comparative degree in the question about
-  God's testimony. In 5:10, the believer's present participle is distinct
-  from the later perfect “has not believed.” The possessive/existential
-  construction is “has this testimony in himself.”
-- In 5:11, English passive wording preserves the source's fronted life
-  object, with God still explicitly the giver and us the recipients.
-  In 5:12, passive-classified `אחיד` describes the holding/possessing state;
-  it does not mean that the person is held by the Son. In 5:13, the
-  believing verb is perfect, “you ... have believed.”
-- In 5:15, “we have received” is perfect, and `מנ כדו` is the temporal
-  “already.” The later asking verb is also perfect. In 5:16, life is given
-  “to him,” with the following plural recipients retained as a clarification.
-  The negative sin and prayer clauses keep their separate scopes.
-- In 5:18, the born-of-God person “keeps himself”; the self noun is not
-  replaced with a different person as object. In 5:19, the passive placing
-  state is rendered “lies in the evil one.” In 5:20, the two first-person
-  plural imperfects express knowing and being as purposes of the gift.
-- In 5:21, `דחלת פתכרא` is religious reverence or worship of idols, not
-  merely being frightened by them. The broader religious sense of the
-  fear/awe noun is documented in the [Comprehensive Aramaic Lexicon](https://cal.huc.edu/getlex.php?coord=620540603&word=15),
-  including Syriac religion, cult, and devotion senses. The noun and the
-  separate plural idols remain individually linked.
+- All 21 verses, 292 ordered source words and 53 original shared spans
+  were checked against the exact forms, inflections and continuous English.
+  Ordinary noun phrases, negation, auxiliaries, copulas and clauses have
+  separate owners. Eleven retained shared spans have individual linguistic
+  reasons in the review ledger. Single source words may own separated
+  English spans for their prefixes, stems, suffixes or English grammar.
+- 5:1 distinguishes the passive/result birth participle from the later
+  perfect birth. Jesus, Messiah, copula, God origin, begetter, also and
+  the second birth clause remain separately linked. In 5:2 the initial
+  word includes both conjunction and by-prefix; `מא` with the following
+  relative/content prefix supplies temporal "when". Love, God and doing
+  commands have separate owners. In 5:3 for, this and is stay separate,
+  and the adjective's supplied English copula is distinct from not.
+- 5:4 preserves present overcoming, perfect "has overcome", and "our faith".
+  The first world object has an anticipatory pronominal object; the second
+  is resumed by the object suffix on overcame. Both have narrow world
+  exceptions, with the overcoming stems separately linked. The same
+  pronominal/direct-object construction recurs in 5:5. Its Son noun and
+  following copula have their own words, rather than a shared Son/is phrase.
+- 5:6 `הנו`, despite its missing dictionary gloss in the export, is the
+  demonstrative/copular presentative "This is the one". The following
+  relative owns who came. Through is the instrumental hand expression;
+  water and blood remain distinct in both clauses. `לא הוא` is the
+  restrictive negative-focus construction before by-water-only, not a
+  past event or an additional coming verb. The narrow not exception
+  renders that operator without adding an independent past was.
+- In 5:7 `דהי` owns neutral "because it", with "the Spirit" as explicit
+  apposition and the following copula separately is. The Spirit is not
+  made a personal he. The supplied verse contains its testimony and truth;
+  5:8 names Spirit, water and blood. In the latter, the three witnesses,
+  their anaphoric three-pronoun, the copula and `בחד`, "in agreement"
+  (literally in one), have separate source owners.
+- 5:9 `חד כמא` is the degree expression how much, with greater, is,
+  testimony and of God separately linked. Compare the historical
+  [Syriac-Armenian glossary, page 141](https://researchmap.jp/AMDG6250/published_papers/1582726/attachment_file.pdf),
+  which records had-kma as how much. Anticipatory suffixes before explicit
+  God genitives in 5:2-5, 5:9-10, 5:12-13 and 5:20 do not add extra his
+  possessors to children, love, Son, name or testimony.
+- 5:10 `כלמן`, the other glossless export form, is the joined universal
+  relative whoever. The positive existential/dative is narrow has, while
+  this, testimony and in himself remain separate. The present believer
+  contrasts with the later perfect not-believing predicate. Made him,
+  a liar, causal negative prefix, perfect believed, testimony, God,
+  testified and the Son phrase retain distinct owners.
+- In 5:11 the life noun is a fronted object and God is the explicit giver.
+  English uses the active source voice: "that God gave us life eternal".
+  The anaphoric plural pronoun referring back to lexical-plural life is
+  idiomatic "and this" before English mass life, with is separately linked;
+  it does not introduce counted lives or an extra subject. In 5:12 `אחיד`
+  is a holding/possessing state, not the person being held by the Son;
+  compare the active passive-participle sense under
+  [CAL, ahd](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29xd+V).
+  Negative existential possession is has no, with a narrow has exception
+  and no separately owned by the negative existential word.
+- 5:13 separates life, eternal, is and yours; the addressees are those
+  who have believed, with a perfect verb. The name/Son/God genitives retain
+  their actual possessors without duplicate pronouns. In 5:14 "this is our
+  assurance toward him" separately links the demonstrative, existential,
+  first-person dative and assurance noun. The following content clause,
+  asking, addressee, will, hearing and us remain source-visible.
+- In 5:15 persuaded/convinced and confident are states; received and
+  the later asked are perfect, distinct from present asking. `מנ כדו`
+  remains the temporal idiom already; compare the vocabulary and glossary
+  in [Younansardaroud, pages 135 and 145](https://refubium.fu-berlin.de/bitstream/handle/fub188/24490/Classical_Syriac_Course_Book_3-2019.pdf?isAllowed=y&sequence=3).
+  This verse's existing links remain unchanged and are included in the
+  whole-chapter review.
+- 5:16 preserves the conditional seeing, sinning brother, sin, negative
+  liability to death and asking. Life is the grammatical subject of the
+  passive giving participle; its Syriac plural agrees with lexical-plural
+  life, rendered English mass singular. The singular recipient to him and
+  following plural to those are both explicit; no supplied I say is inserted
+  between them. The next clause is present "who are not sinning as unto
+  death", with separate relative, copula, negation, sinning and death phrase.
+- The last clause of 5:16 is "I am not saying concerning this that anyone
+  should pray". It does not change the prayer clause into a prohibition;
+  the negative belongs to the saying/focus construction. The being word,
+  explicit first-person pronoun, saying participle, concerning-this phrase
+  and third-person anyone/should-pray predicate remain separate. The
+  negative constructions do not mechanically import past time; compare
+  sections 93(5), 93(9) of
+  [Muraoka's grammar](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+- In 5:17 the final `הו` owns is; preceding `לא הוא` is the focused
+  negative operator. Only not remains jointly linked there, rather than
+  the whole relative/copular/death clause. For, all, iniquity, is, sin,
+  and there is and the second sin noun also have distinct owners.
+- In 5:18 the born-of-God person keeps himself; the self noun is not
+  changed into another person as object. The evil one's Ethpaal approaching
+  verb is "draw near", followed by its to-him complement; compare
+  [CAL, qrb, Dt](https://cal.huc.edu/oneentry.php?cits=all&lemma=qrb+V).
+  The negative is does not, not an added cannot.
+- In 5:19 the whole world has a stative passive placing predicate, not an
+  active he-puts event. Narrow lies owns the copular pronoun and placing
+  state; in the evil one remains a separate source word. Compare the
+  located sense of the passive participle under
+  [CAL, swm](https://cal.huc.edu/oneentry.php?cits=all&lemma=swm+V).
+  No new placer or placing event is supplied. In 5:20 coming and giving
+  are perfect; both first-person imperfects are purposes, may know and
+  may be. The anticipatory in-him/in-the-True-One relation has a narrow
+  in exception. Jesus, Messiah, This, is, true, God, life and eternal
+  remain separately linked; the English life noun stays mass singular.
+- In 5:21 `דחלת פתכרא` is religious reverence/worship of idols, rather
+  than ordinary fright. Compare the religion, cult and devotion senses
+  under [CAL, dehltha](https://cal.huc.edu/cal_entry_web.php?lemma=dxlh+N).
+  The worship noun is construct singular and idols is explicitly plural;
+  both have individual links. The chapter's final verse remains unchanged
+  and is included in the whole-chapter review.
 
 Source checks for Revelation 1:
 
