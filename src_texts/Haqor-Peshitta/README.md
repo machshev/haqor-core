@@ -14781,129 +14781,119 @@ Source checks for Revelation 15:
 
 Source checks for Revelation 16:
 
-- 16:1: A LOUD VOICE FROM THE TEMPLE is explicit, though absent from the local
-  reference. Saying is an active participle; go and pour-out are second-plural
-  imperatives. Both seven numerals remain. The vessels are BOWLS, not the distinct cup
-  noun of verse 19. The wrath suffix anticipates God, without an extra independent his.
-
-- 16:2: The first went and poured HIS BOWL. Ulcer, foul and painful form a short
-  three-source noun/adjective unit. The people renders collective ANASHA in its plural
-  human context; who-had is the existential plus genuine plural possessive dative. AND
-  THOSE WHO WORSHIPED remains explicit, followed by ITS IMAGE, with the genuine feminine
-  suffix referring to the beast. Worshiped locates the active participle in the narrated
-  scene.
-
-- 16:3: The bowl is poured INTO THE SEA, and the repeated sea is the subject of became.
-  There is NO BLOOD WORD in this verse: the actual comparison is the sea becoming LIKE A
-  DEAD PERSON. Every living soul DIED in the sea, retaining the perfect and distributive
-  singular. No blood or extra things clause is imported from Murdock.
-
-- 16:4: The bowl is poured INTO rivers AND INTO springs of water, and they became BLOOD.
-  Springs is the water-source sense of the eye lexeme, confirmed by CAL's ayn entry,
-  sense 2 (https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N). The plural sources
-  and plural became remain; blood is present here, unlike verse 3.
-
-- 16:5: Righteous-are-you addresses one second-singular YOU. The one WHO IS AND WHO WAS
-  is an appositive; the past auxiliary belongs to the second existential. AND HOLY
-  remains another predicate of the addressee. Because-you-judged-these is a short
-  two-source unit, retaining the plural demonstrative and second-singular perfect judge
-  verb, without inventing a judgment noun.
-
-- 16:6: The blood belongs to PROPHETS AND HOLY ONES in that source order. Fronted
-  objects preserve ascending links while distinguishing THEY POURED OUT from YOU GAVE
-  THEM blood TO DRINK. For renders the causal connector as an explanatory conjunction,
-  keeping a complete English sentence. WORTHY ARE THEY preserves the participial
-  predicate and plural pronoun without adding a second causal particle.
-
-- 16:7: The ALTAR ITSELF is heard saying; no one-from-the-altar is added. Yes, Lord, God
-  and Almighty remain. Almighty renders the short holder-of-all title. TRUE AND
-  RIGHTEOUS are plural predicates of YOUR JUDGMENTS, also plural, with a genuine
-  second-singular possessor; the reference's singular judgment is not followed.
-
-- 16:8: The fourth ANGEL is explicit. It-was-granted retains the passive perfect, and TO
-  HIM the genuine masculine singular dative without deciding between the angel and sun
-  as referent. To-scorch is the English purpose complement for an imperfect in the
-  causative stem; form 5 is not an active-participle tense. People and fire remain.
-
-- 16:9: People WERE SCORCHED with GREAT HEAT and blasphemed THE NAME OF GOD. Who-has is
-  existential possession, followed by authority OVER THESE PLAGUES, not an extra plague
-  possessor. The negative plus perfect remains THEY DID NOT REPENT, followed by TO GIVE
-  HIM GLORY with its genuine dative.
-
-- 16:10: The fifth ANGEL pours his bowl on the THRONE OF THE BEAST; the throne's
-  feminine suffix anticipates that named possessor. ITS KINGDOM has a genuine feminine
-  possessor and became DARKNESS. THEY WERE GNAWING preserves the active participle plus
-  past auxiliary; THEIR TONGUES retains the plural owner, while FROM PAIN has no added
-  possessor.
-
-- 16:11: THE NAME OF THE GOD OF HEAVEN is explicit, including name omitted by the
-  reference. Both causes remain: BECAUSE OF THEIR PAINS AND BECAUSE OF THEIR ULCERS. The
-  perfect negation remains THEY DID NOT REPENT OF THEIR DEEDS. All three genuine plural
-  possessors are retained; heaven is the normal English collective.
-
-- 16:12: The SIXTH ANGEL pours his bowl on the GREAT RIVER EUPHRATES. ITS WATERS is
-  plural with a genuine river possessor, and dried-up is perfect.
-  So-that-a-way-might-be-prepared is a short predicate/subject unit rendering the
-  passive imperfect purpose in the past narrative. The kings come FROM THE RISING OF THE
-  SUN: the collective plural east/rising idiom is confirmed by CAL's mdnh entry, senses
-  1 and 2 (https://cal.huc.edu/oneentry.php?cits=all&lemma=mdnx+N).
-
-- 16:13: I SAW is first-singular perfect. Each repeated FROM THE MOUTH belongs to its
-  named owner: DRAGON, BEAST and FALSE PROPHET. The mouth suffixes anticipate these
-  owners, without redundant English his/her. The postposed object is THREE SPIRITS,
-  UNCLEAN, LIKE FROGS. Unclean retains the explicit not-clean pair; no separate issuing
-  verb is imported.
-
-- 16:14: FOR THEY ARE retains the existential with feminine plural suffix and causal
-  particle. SPIRITS OF DEMONS PERFORM SIGNS AND GO OUT, both verbs active participles.
-  They go to the KINGS OF THE INHABITED WORLD TO GATHER THEM, the object being genuinely
-  plural. The battle belongs to THAT GREAT DAY OF GOD ALMIGHTY. No all
-  numeral/quantifier absent from this source is added.
-
-- 16:15: The source has BEHOLD and a bare masculine singular coming participle, encoded
-  third singular, with NO first-person ANA pronoun. He-is-coming preserves that source
-  reading rather than importing the reference's I. Robinson/Coakley section 10, pages
-  46-47, explains first/second-person participial pronouns and third-person omission
-  (https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf).
-  The beatitude's suffix is idiomatic in BLESSED IS THE ONE. Awake is a passive-shaped
-  state, followed by active KEEPS HIS GARMENTS. LEST HE WALK NAKED is a short
-  negative/predicate unit; AND THEY SEE HIS SHAME stays under lest, preserving the
-  change to a plural observer.
-
-- 16:16: HE WILL GATHER retains the imperfect THIRD-SINGULAR verb, distinct from plural
-  THEM. The source does not say they-gathered. The place IS CALLED IN HEBREW MAGDU,
-  retaining the actual name rather than expanding it to the reference's Armageddon. The
-  place's passive calling is contextual.
-
-- 16:17: The SEVENTH ANGEL pours his bowl INTO THE AIR. THERE CAME OUT A LOUD VOICE is
-  grammatical existential inversion, with both FROM THE TEMPLE and FROM BEFORE THE
-  THRONE. The final perfect HWA is read as the completed-event announcement IT HAS
-  HAPPENED, following saying. CAL's hwy entry, sense 3, confirms come-to-pass/happen
-  (https://cal.huc.edu/oneentry.php?cits=all&lemma=hwy+V); no separate finished/done
-  verb is asserted to exist in the source.
-
-- 16:18: The opening lists LIGHTNINGS AND THUNDERS, then an EARTHQUAKE; there is no
-  voices word. Every source copula is retained as there-were, occurred,
-  had-not-occurred, there-were-humans and final it-was. The great quake has NO precedent
-  since humans were on earth. The second quake noun and repeated comparison/degree
-  remain in the emphatic SUCH WAS THIS EARTHQUAKE; SO GREAT IT WAS. Short English
-  copular inversion keeps the links ascending without shifting source positions.
-
-- 16:19: The GREAT CITY BECAME THREE PARTS, then the CITIES OF THE NATIONS FELL: cities
-  and fell are plural despite the reference's singular city. BABYLON THE GREAT WAS
-  REMEMBERED passively BEFORE GOD, TO GIVE HER the CUP OF THE WINE. The genuine feminine
-  recipient and both genuine masculine possessors remain in OF HIS WRATH AND OF HIS
-  INDIGNATION; the two anger nouns are not collapsed into one.
-
-- 16:20: EVERY ISLAND is distributive singular and FLED is perfect. THE MOUNTAINS are
-  plural and WERE NOT FOUND is passive perfect, with the explicit negative retained.
-
-- 16:21: GREAT HAIL descends FROM HEAVEN ON HUMANS. LIKE A TALENT IN WEIGHT explains the
-  actual weight noun without inserting a modern conversion or a new source noun for
-  hailstones. Humans BLASPHEMED GOD BECAUSE OF THE PLAGUE OF HAIL. The second BECAUSE
-  remains, followed by a short four-source predicate/copula/subject/degree unit: ITS
-  PLAGUE IS VERY GREAT. This unit keeps the genuine feminine possessor, the copula and
-  the final much/very intensifier without shifting them onto earlier source positions.
+- All 21 verses and 302 exact source words were checked for morphology,
+  suffixes, actors, voice, tense, clause ownership and continuous English.
+  All 40 original shared spans were reviewed. Two narrow exceptions remain:
+  had (16:2) and has (16:9), each expressing one existential-plus-dative
+  possession predicate. Their relative who has its own owner. Ordinary
+  numerals, nouns, modifiers, pronouns, copulas, auxiliaries, negation and
+  causal particles are separately linked. English reordering and repeated
+  owners across separate spans preserve natural wording and source roles.
+- 16:1-2: A loud voice from the temple is explicit, with voice and loud
+  separately owned. Saying is a masculine third-singular active participle,
+  not first person; go and pour-out are second-plural imperatives. Both
+  seven numerals remain. Bowls are distinct from the later cup noun, and
+  the wrath suffix anticipates God. In 16:2 and/went belong to the verb,
+  first to the ordinal. The bowl has a genuine masculine singular possessor.
+  Ulcer, foul and and-painful have independent owners. People is the English
+  plural for collective anasha in its plural context. Ith lehon gives one
+  past had predicate, with its plural dative possessor, not an extra recipient.
+  And-those-who-worshiped is explicit; worship is an active participle placed
+  in the narrated scene. Its-image has a genuine feminine singular possessor
+  referring to the beast.
+- 16:3-4: And and angel belong to the same prefixed noun; each ordinal has
+  its own owner. In 16:3 the repeated sea is separately the subject of
+  became. There is no blood word: the sea becomes like a dead person.
+  Living and soul have separate owners, and every soul is distributive
+  singular with perfect died. In 16:4 the plural rivers and springs of water
+  become blood; blood is explicit here. Springs is the water-source sense
+  of the eye lexeme:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N.
+- 16:5-7: Righteous-are-you addresses one second-singular addressee. The
+  demonstrative the-one and two existentials remain distinct in who-is and
+  and-who/was; was belongs to past HWA, not the preceding existential.
+  Holy is another predicate. Because and these belong to the d-prefixed
+  demonstrative at 11, with you-judged independently at 12, a second-singular
+  perfect. No judgment noun is invented. In 16:6 the blood is of prophets
+  and holy ones in that source order. They-poured-out and you-gave retain
+  different actors; them and to-drink are separate. Worthy/are-they retains
+  the participial predicate and plural pronoun without another causal.
+  The altar itself is heard saying in 16:7, with no added person from it.
+  Holder/of-all has separate owners instead of shared Almighty. True and
+  righteous modify plural your-judgments, with a second-masculine-singular
+  possessor; the judgment noun is plural. Supplied are belongs to the second
+  adjective predicate at 9, rather than the judgment subject noun at 10.
+- 16:8-11: Every angel and ordinal is separately owned. Granted is passive
+  perfect and to-him is masculine singular, without deciding whether the
+  dative refers to angel or sun. To-scorch expresses the purpose complement
+  of an Aphel imperfect, not a source infinitive or active participle.
+  In 16:9 and/were-scorched belong to the passive perfect and people to the
+  noun. With/great/heat are independently owned. Who-has retains one shared
+  possession predicate; authority, over, these and plagues remain distinct.
+  They-did and repent belong to the perfect verb, not to and/not. To-give,
+  him and glory remain. The beast's throne suffix in 16:10 is proleptic,
+  while its-kingdom has a genuine feminine singular possessor. Kingdom and
+  became have independent owners. And-they/gnawing belongs to the active
+  participle at 10 and were to the past auxiliary at 11. Their plural tongues
+  have plural possessors; pain has no extra possessor. In 16:11 name is
+  explicit in name-of-the-God-of-heaven. Both because-of relations and all
+  three plural possessors, pains/ulcers/deeds, remain. And/not is separately
+  owned from the perfect they-did/repent.
+- 16:12-14: Great, river and Euphrates have separate owners. And/dried-up
+  belongs to the perfect verb, its-waters to the plural noun with genuine
+  masculine singular river possessor. So-that/might-be-prepared belongs to
+  the passive imperfect purpose predicate at 10, a-way separately to 11.
+  The kings are from the rising of the sun, retaining the collective plural
+  east/rising idiom documented in CAL:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=mdnx+N.
+  In 16:13 each mouth suffix anticipates its explicit dragon, beast or false
+  prophet owner; their genders are masculine/feminine/masculine respectively.
+  False and prophet, three and spirits, not and clean are separate. The
+  postposed English not-clean description retains the source negator and
+  feminine plural adjective without inventing an issuing verb. In 16:14
+  For belongs to postpositive geyr at 1 and they-are to the feminine plural
+  existential at 0. Spirits of demons perform signs and go out as feminine
+  plural active participles. Who-go-out renders the second d-relative without
+  adding a lexical and. The kings, inhabited world, to-gather and plural them
+  retain their owners. Of/that/great/day and holder/of-all are split. No
+  absent all quantifier is added to the kings or inhabited world.
+- 16:15-17: Behold precedes the bare masculine singular coming participle,
+  encoded third person, with no first-person pronoun. He-is-coming retains
+  that reading. Robinson/Coakley §10, printed pages 46-47, explains the
+  first/second-person participial pronoun and its third-person omission:
+  https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf.
+  Blessed is the beatitude construction; the one, awake state and keeps are
+  distinct. His plural garments and his shame have genuine possessors.
+  Lest/he-walk/naked are independently linked, with plural they-see still
+  under lest. In 16:16 he-will-gather is third-singular imperfect, not a
+  plural past gathering; them is explicitly plural. Called is the contextual
+  passive/reflexive participle. Hebrew and actual Magdu remain, without an
+  Armageddon expansion. In 16:17 angel/seventh and loud/voice are split.
+  Came-out is perfect, with both from-the-temple and from-before-the-throne.
+  Final perfect HWA gives the event announcement it-has-happened; CAL includes
+  the happen/come-to-pass sense:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=hwy+V.
+- 16:18-21: The opening has plural lightnings and thunders, with no voices
+  word. A great earthquake occurred with no precedent since humans were on
+  earth. Had/occurred belong to the past verb, not to independent not. Both
+  earthquake nouns and repeated comparisons remain. In such-was/this/
+  earthquake, supplied was belongs to the comparative predicate such at 14;
+  this is the demonstrative at 15 and earthquake the noun at 16. It is not
+  an encoded copula on either noun or demonstrative. The actual final past
+  HWA belongs to so-great/it-was and remains distinct. In 16:19 and/became,
+  city and great are independently linked. Three parts, plural cities and
+  plural fell remain. Babylon the great was-remembered is passive perfect
+  before God; her is a genuine feminine singular recipient. Cup and wine
+  remain distinct, with genuine masculine singular possessors in his-wrath
+  and his-indignation; the anger nouns are not collapsed. In 16:20 every
+  island is distributive singular with perfect fled. Were/found belong to
+  the passive perfect, not to the independent negator. In 16:21 and/hail,
+  great, humans and and/blasphemed have independent owners. The talent is
+  the historical weight unit, without a modern conversion. Both causal
+  relations remain. Final its-plague/is/very/great belong separately to
+  18/17/19/16. The plague's encoded feminine singular possessor is retained
+  as its; the noun's feminine gender, copula and degree are not confused
+  with the hail noun's masculine gender or collapsed into an earlier span.
 
 Source checks for Revelation 17:
 
