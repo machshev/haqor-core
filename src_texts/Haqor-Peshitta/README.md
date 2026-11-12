@@ -13475,61 +13475,113 @@ Source checks for Revelation 2:
 
 Source checks for Revelation 3:
 
-- Reviewed the 22 verses and 361 source positions against exact forms,
-  vocalization, complete gloss alternatives, numeric morphology, and running
-  English. Genuine possessives remain; possessive datives, anticipatory
-  genitives, and resumptive pronouns are rendered idiomatically. The hearing
-  formulas retain plural “ears” and the established ecclesias terminology.
+- Reviewed all 22 verses and 361 source positions against the exact forms,
+  vocalization, complete gloss alternatives, numeric morphology, suffixes,
+  clause boundaries, and continuous English. Reduced 61 original shared
+  spans to eight narrow existential-possession exceptions, linking only
+  has/have to the existential and pronominal dative. Relative prefixes,
+  explicit subjects, numerals, modifiers, negatives, copulas, and ordinary
+  clauses are otherwise individually owned. Unchanged verses 10 and 22
+  were included in the review.
 - Revelation 3:1 retains the source's coordination of works, a name the
-  addressee has, and the alive/dead nominal clauses. This preserves the
-  explicit source sequence rather than silently assigning the name phrase
-  to remembered English wording.
-- Revelation 3:2 is syntactically difficult. The vocalized *qayem* is read as
-  a command coordinated with “be awake,” despite the export's perfect tag.
-  The “you were about to die” construction is second-person singular, not
-  a statement that plural things were dying. Its relative/causal prefix is
-  interpreted causally: “the remainder of those things, for you were about
-  to die.” This is an interpretive resolution of the awkward clause.
-  “I have not found you” retains the object suffix; the following completed
-  works remain plural, rendered in a short two-word source construction as
-  “with your works completed.” The final God noun has no “my.”
-- In 3:3, “heard” precedes “received,” and the next command is “take heed.”
-  The last bare “coming” participle has the same vocalized form as the first;
-  the speaker's first person is inherited from context even though the raw
-  export assigns its unaccompanied occurrence a third-person tag. No new
-  third-person actor is introduced. In 3:4 the source says “I have” and
-  “before me,” not the reference's “you have” and “with me.”
-- Revelation 3:7 has vocalized and tagged plural “keys.” In 3:8 the suffix
-  on “close it” resumes the door; English absorbs it into the relative
-  “which ... to close.” The word and name belong to the speaker, and the
-  keeping and non-denial to the addressee. In 3:9 “some from” expresses
-  partitive *min*, not an added count; the first giving verb is participial,
-  followed by the future making them come, pay homage, and know.
-- Revelation 3:10 has no “hour” noun. The speaker's patience and promise to
-  keep the addressee remain distinct from the trial coming upon the world.
-  The inhabitants' suffix anticipates “of the earth,” rather than adding
-  another possessor. In 3:12 the first “God” lacks “my,” while the later
-  two occurrences have it. There is no “heaven” word. Both the new city
-  and the speaker's own new name remain. In 3:14 the creation suffix
-  anticipates God, and *rishitha* is rendered “beginning.”
-- Revelation 3:15 keeps cold before hot and renders the evaluative
-  participle with *hwa* as “it would be fitting,” rather than inserting
-  “I wish.” In 3:16 the lukewarm clause begins with “and”; no causal
-  “because” is imported. The imminent vomiting retains its object suffix.
-- Revelation 3:17 has an actual person shift: second-person perfect “you
-  said” and “that you are rich,” then first-person “I have grown rich” and
-  “I have no need,” then second-person “you do not know.” Punctuation marks
-  the shift from indirect report to quoted continuation, rather than
-  silently changing source pronouns. The causal sentence continues with
-  “I counsel you” in 3:18. The source has no “blind” adjective in 3:17.
-- Revelation 3:18 retains the passive tested gold, white garments, shame of
-  nakedness, and eyesalve. There is no separate “eyes” noun. The applying
-  verb is imperative, with eyesalve fronted as its object. In 3:19 the
-  emphatic initial “I” is rendered “As for me,” followed by the fronted
-  object and repeated first-person subject of rebuking and chastising.
-  In 3:20 perfect “I have stood” precedes future “I will knock”; no “to
-  him” is added after entering. In 3:21 overcoming and sitting with the
-  Father are perfect, and the two throne possessors remain distinct.
+  addressee has, and the alive/dead nominal clauses. The explicit source
+  sequence is preserved without assigning the name phrase to remembered
+  English wording. The conjunction before the second seven belongs to the
+  numeral word, while stars retains its own noun. Each second-person
+  pronoun is separate from the alive/dead predicate and its relative prefix.
+- Revelation 3:2 is syntactically difficult. The vocalized qayem is read as
+  an imperative coordinated with be awake, despite the export's raw
+  third-person singular perfect Pael tag. The prospective construction
+  is second-person singular, “you were about to die,” not a statement that
+  plural things were dying. Its relative/causal prefix is read causally:
+  “the remainder of those things, for you were about to die.” This remains
+  an interpretive resolution of the awkward clause; compare the causal
+  use of Dalath and adverbial clauses in Muraoka, A Basic Grammar of
+  Classical Syriac, §99. For and about belong to position 5; the explicit
+  second-person past auxiliary belongs to 6. The later for belongs to
+  ger at 9, separately from not at 8 and the suffixed finding verb at 10.
+- In 3:2, “I have not found you” retains the second-person object suffix.
+  The completed-works phrase is read circumstantially, with the plural
+  passive predicate and possessive works as separate owners: with/completed
+  at 11 and your works at 12. With is English framing for the accompanying
+  state, not an extra Aramaic preposition. Compare perception verbs with
+  clausal or participial complements in Muraoka §98(e–f). The final God
+  noun has no my.
+- In 3:3, heard precedes received, followed by take heed. Negation and
+  predicates retain separate source words. The wake-up verb is Ettaphal;
+  its owner supplies English do-support as well as wake up, separated
+  around the negative particle. The final bare coming participle has the
+  same vocalized form as the first; its first-person actor is inherited
+  from context despite the unaccompanied occurrence's raw third-person
+  tag. No new third-person actor is introduced.
+- In 3:4, the source says I have and before me, not the reference's you have
+  and with me. Few and names are separate. The negative relative owns
+  who and not, while the perfect verb owns have and defiled. This is
+  repeated ownership of single source words, not a shared-span exception.
+  Worthy and the explicit plural subject are separate. In 3:5, thus and
+  the passive/reflexive clothing predicate, garments and white, and the
+  negative and blotting-out verb have independent owners. The name
+  possessives are singular, and the angels belong to the Father.
+- The hearing formulas retain plural ears and ecclesias. Revelation 3:7
+  has vocalized and tagged plural keys. In 3:8, the suffix on close it
+  resumes the door; English absorbs it into “which ... to close.” Open
+  and door, no and one, little and strength are separate. The existential
+  and dative can be individually rendered is and yours here. The word
+  and name belong to the speaker; keeping and non-denial to the addressee.
+- In 3:9, some from expresses partitive MIN, not an added count. About
+  and themselves, the Jews noun and explicit copula, and the negative
+  and existential are separate. The first giving verb is participial,
+  followed by future making them come, pay homage, and know. In 3:10,
+  there is no hour noun. The speaker's patience and promise to keep the
+  addressee remain distinct from the trial coming upon the world. The
+  inhabitants' suffix anticipates of the earth, not another possessor.
+- In 3:10, I also renders additive WAW with the explicit pronoun in the
+  reciprocal promise. In 3:20, the conditional result uses then I will
+  enter for WAW. Both contextual uses are supported by the conjunction
+  entry in [Payne Smith, p. 107](https://tmcdaniel.palmerseminary.edu/Payne_Smith_1-626%2BTP.pdf#page=108),
+  which includes also and then among its senses. In 3:11, the explicit
+  first-person coming subject, that/which heads, dative possessor, and
+  purpose/negative construction have their own owners.
+- In 3:12, the first God lacks my, while the later two occurrences have
+  it. There is no heaven word. The conjunction and outside adverb are
+  linked separately from the negative and going verb. New and city,
+  and the speaker's own/new/name, retain their respective source words.
+  Both the new city and the speaker's own new name remain. In 3:14,
+  faithful and witness are separately owned, the creation suffix
+  anticipates God, and rishitha is rendered beginning.
+- Revelation 3:15 keeps cold before hot. WALA with enclitic HWA is an
+  impersonal evaluative/irrealis construction, “it would be fitting,”
+  not an added first-person I wish. Compare Muraoka §86 and the
+  WALA-HWA examples in Numbers 12:14 and 2 Kings 5:13 under
+  [CAL wale](https://cal.huc.edu/cal_entry_web.php?lemma=wly+X).
+  The draft separates fitting at 8 from would be at 9; position 8 also
+  owns the English impersonal subject it. That/either at 10, cold at 11,
+  and you be at 12 are separate. In 3:16, the lukewarm clause begins
+  with and; no causal because is imported. The imminent vomiting
+  retains its object suffix and explicit first-person subject.
+- Revelation 3:17 has an actual person shift: second-person perfect
+  you said and you are rich, then first-person I have grown rich and
+  I have no need, then second-person you do not know. Punctuation marks
+  indirect report followed by quoted continuation without changing source
+  pronouns. The first-person ANA at 9 is the explicit enclitic subject,
+  separately linked from need and its negation. The relative-prefixed
+  you at 13 and copula at 14 are separate; the negative for knowing
+  belongs to 10. The causal sentence continues with I counsel you in
+  3:18. There is no blind adjective in 3:17.
+- Revelation 3:18 retains passive tested gold, with MIN as by and fire
+  separately owned, white garments, shame of nakedness, and eyesalve.
+  There is no separate eyes noun. Applying is imperative, with eyesalve
+  fronted as its object. In “let the shame ... not be revealed,” the
+  passive imperfect owns English jussive let and be revealed, while
+  conjunction/negative, shame, and nakedness are individually linked.
+  Such auxiliary/predicate repetition keeps one source word per span.
+- In 3:19, the emphatic initial I is rendered As for me. The fronted
+  object and relative, loving verb and explicit subject, rebuking verb
+  and subject, and chastising verb and subject are separately owned.
+  In 3:20, perfect I have stood precedes future I will knock; no to him
+  is added after entering. In 3:21, overcoming and sitting with the
+  Father are perfect. My own/throne and his own/throne are separately
+  linked, retaining the two distinct possessors.
 
 Source checks for Revelation 4:
 
