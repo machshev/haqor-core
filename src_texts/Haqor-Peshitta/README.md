@@ -11960,19 +11960,85 @@ Source checks for 1 Peter 4:
 
 Source checks for 1 Peter 5:
 
-- 5:1 — Render the opening verb with its first-person subject as “I entreat”; place the source’s adversative connector naturally as “however”; retain both explicit first-person forms, the elder identity, associate, witness, Messiah’s sufferings, and the future revelation of his glory.
-- 5:2 — “Feed” is rendered “tend” for the flock, while the passive source form is “entrusted”; preserve the spiritual oversight, the force/willingness contrast, and the filthy-gain/whole-hearted contrast as “with all your heart.”
-- 5:3 — The negative comparison is “not as lords over the flock”; the following exhortation is to become a good example for them, not to rule them.
-- 5:4 — Keep the temporal clause and the source’s chief-shepherd subject; “crown of glory” is received from him and is explicitly unfading.
-- 5:5 — “Young men” and “elders” retain their ecclesial terminology; the reflexive submission and clothing metaphor lead into humility of mind toward one another, followed by God’s opposition to the self-exalting and the source-ordered “to the humble he gives grace.”
-- 5:6 — Preserve the therefore inference, the “under the mighty hand of God” image, and the purpose/result relation “that he may exalt you” at the fitting time.
-- 5:7 — Keep the addressed plural command and the “all your care” object; the final clause keeps the source’s God-directed construction and his care concerning the addressees.
-- 5:8 — The clause keeps the second-person plural imperatives, the possessive suffix in “your adversary,” and the distinct source title “Satan” at position 4; commas make “like a lion” modify the roaring action rather than the name.
-- 5:9 — “Stand therefore against him” preserves the suffix object; the causal/comparative particle and explicit second-person plural pronoun are rendered as “as you are steadfast,” and the final clause keeps “these same sufferings” as the subject that befalls the brothers.
-- 5:10 — The first relative (3–4) modifies the God of grace, while the independent הו at 10 is rendered as the equative “is the one.” This keeps דיהב at 11 as the relative “who has granted,” its recipient “us” at 12, and דכד at 13 introducing the granted content: “that, while we endure” the little afflictions, we may be strengthened, confirmed, and established. The perfect gift and ongoing endurance are therefore both retained without inventing a separate gift noun. The God/postpositive “But” pair is grouped together, and the complete sentence ends before the doxology in 5:11.
-- 5:12 — Commas make “as I consider” a parenthetical while the second demonstrative remains appositional: “this is the true grace of God—this in which you stand,” without duplicating “in.” The sentence closes before the following greeting.
-- 5:13 — The colon makes the postposed subject explicit: the chosen ecclesia in Babylon greets the addressees, with Mark coordinated afterward; the first-person possessive suffix remains “my son,” and “ecclesia” follows established terminology. A period separates it from the imperative in 5:14.
-- 5:14 — The reciprocal phrase is kept as “one another,” and the final relative/resumptive sequence is rendered “those who are in the Messiah” without duplicating the addressees.
+- All 14 verses and 195 source words were checked against their exact forms,
+  morphology and running English. All 37 original shared spans were reviewed;
+  three idiomatic or resumptive exceptions remain in the alignment ledger.
+- 5:1 separates the asking verb, explicit first-person subject, adversative
+  and min preposition: "I ask, however, of the elders". The second explicit
+  first-person form introduces the parenthetical elder identity. Associate,
+  witness, Messiah's sufferings and participation in his glory retain their
+  own words. The sufferings suffix anticipates Messiah; atid plus the
+  infinitive describes glory due to be revealed, not physical preparation.
+- 5:2 keeps the flock, God and the feminine singular entrusted predicate
+  separate from its plural recipients. Spiritual oversight, negation,
+  force, willingness, plural filthy gains and "from all your heart" each
+  retain their source owners. The gains word owns both "for" and "gains"
+  around its separately linked adjective.
+- 5:3 retains plural lords and the flock, then aik plus d- and a second-person
+  plural imperfect: "so that you may be for them a good example". This is a
+  finite purpose clause, rather than a participial becoming predicate.
+- 5:4 separates "the chief" from "of shepherds", and the glory noun from
+  the crown. D-kad and the following imperfect preserve "so that, when ...,
+  you may receive". Relative negation and the fading verb remain separate.
+- 5:5 retains young men, their elders, reflexive submission and the clothing
+  metaphor. Humility and mind, the reciprocal construction, God's adverse
+  predicate and its copular hu, and "those who exalt themselves" are linked
+  separately. The final clause keeps "to the humble he gives grace".
+- 5:6 corrects both modifier attachment and the purpose-clause subject.
+  Feminine singular taqqifta modifies feminine ida, "the mighty hand of
+  God", not masculine God. Feminine hi and the feminine lifting verb refer
+  to that hand: "so that it may exalt you". Murdock likewise retains "it".
+  The anticipatory possessive on hand belongs to the following God genitive;
+  the time noun and fitting relative remain separately linked.
+- 5:7 separates all, the care noun with its plural possessive, cast, upon
+  and God. The final d-leh ... btil ... alaykun construction preserves God's
+  caring state and the plural recipients: "because he cares for you".
+- 5:8 keeps both imperatives: "Be alert and remember". The Peal imperative
+  of 'hd means remember or be mindful; see the
+  [CAL 'hd entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%28hd+V).
+  Your adversary, Satan, like, lion, roars, walks about, seeks and whom each
+  retain their word. The final imperfect is finite: "he may devour".
+- 5:9 preserves the explicit second-person plural subject of steadfastness
+  and the additive particle in d-ap. Hennun is the plural copular pronoun
+  in "your brothers who are in the world"; hallen supplies "these" for the
+  following sufferings. The former "those same sufferings" misassigned both
+  words. "These sufferings also come upon your brothers who are in the
+  world" preserves the actual copula, demonstrative and additive.
+- 5:10 keeps God and the postpositive adversative separate. Both calling
+  and granting have first-person plural recipients, "us". Eternal modifies
+  his glory, and hu at 10 is "is the one". The relative perfect granting
+  predicate is retained as "who has granted us that, while we endure these
+  little afflictions, we may be strengthened and confirmed and established
+  in him forever". The three final imperfects are first-person plural
+  passive/reflexive predicates; they do not become active promises that God
+  will restore "you". Little modifies the afflictions, without an added time.
+- 5:11 separates glory, dominion and honor. The age-of-ages duration formula
+  alone retains a shared "forever and ever" span.
+- 5:12 retains the few things, parenthetical judgment, writing, recipients,
+  Silvanus and faithful brother separately. Vocalized mappas is an Aphel
+  passive participle: "I am convinced", with ana supplying its first-person
+  copula. It does not become active "I exhort". The
+  [CAL pys entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=pys+V)
+  explicitly gives passive mappas as convinced, persuaded or having come to
+  realize, including a mps ana example in Ps-Clement Hom. 14.330:18; it
+  distinguishes active mappis, persuade or beseech. The following testimony
+  predicate and its explicit first-person pronoun remain distinct. "That
+  this is the true grace of God" keeps the relative/demonstrative and copula
+  owners; the following "this in which you stand" retains the demonstrative,
+  indicative participle and plural subject. "In which" shares only the
+  relative prefix on stand and its resumed bah, without duplicating "in".
+- 5:13 fronts the compound subject, "The chosen ecclesia that is in Babylon
+  and Mark, my son", before "greet you". This keeps Mark a greeting actor
+  and preserves the writer's first-person possessive. The feminine singular
+  source verb agrees with ecclesia; English uses plural agreement for the
+  full compound subject. The asks-after-your-peace greeting idiom alone
+  retains its shared verb-plus-peace span.
+- 5:14 separates greeting, peace, each reciprocal word, kiss and holy. The
+  final kulhon has a third-person plural suffix, not the second-person
+  plural of "all of you". Its anticipatory suffix and following relative
+  yield "Peace with all those who are in the Messiah"; the plural copular
+  pronoun owns "are" and the locative relative owns "who" and "in the
+  Messiah". Amen remains separate.
 
 Source checks for 2 Peter 1:
 
