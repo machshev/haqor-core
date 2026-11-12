@@ -14686,64 +14686,98 @@ Source checks for Revelation 14:
 
 Source checks for Revelation 15:
 
-- 15:1: Another sign is great and wondrous; the following angels carry SEVEN PLAGUES.
-  This source has no seven numeral modifying angels in this verse, though seven angels
-  are explicit later. The existential/on-them unit becomes upon-whom-were. The last ones
-  refers to the plagues, as does the feminine plural in-these suffix. Completed is
-  passive perfect, retaining the vision's completed perspective. The wrath suffix
-  anticipates God rather than adding an independent his possessor. Wondrous describes a
-  sign worthy of wonder, not an inanimate sign feeling astonishment.
-- 15:2: The vision has something LIKE a sea of glass mingled with fire, then those who
-  had prevailed. Prevail-OVER renders the victory construction with from; beast, image
-  and number of its name all remain. The genuine feminine image/name possessors refer to
-  the beast. Standing is an active participle placed within the past vision, while
-  prevailed is perfect and anterior to that standing. LʿL MIN is ABOVE, retained as a
-  short compound relation rather than on-from. The harps are UPON THEM; the harp suffix
-  anticipates God, so no additional independent his is added to God's harps.
-- 15:3: Singing the hymn is the musical praise sense of the verb and noun, followed by
-  AND-WERE-SAYING. The servant suffix anticipates God. Great and wondrous are YOUR
-  DEEDS; the second predicate again says YOUR DEEDS, not the reference's ways. Wondrous
-  renders the passive-shaped description as things wondered at. KʾANIN is the
-  just/proper adjective despite the incomplete exported verb-gloss set: CAL's kʾn entry
-  explicitly gives just/honest and the proper/fair sense for inanimates
-  (https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A). It is not translated as a
-  created/existing event merely from the root glosses. Holder-of-all retains both title
-  words; King-of-ages retains the plural age/world noun. The speech continues into the
-  next verse.
-- 15:4: The rhetorical question retains not, fear YOU, Lord, glorify and YOUR name. All
-  three causal particles remain as For, for and because. You-alone-are uses a short
-  copula/adverb unit; holy has NO added and-just predicate. All nations will come and
-  worship BEFORE YOU. The ending is because YOU ARE UPRIGHT, a second-singular
-  predicate, not the reference's revealed righteousnesses. CAL's trīṣ entry gives
-  upright/honest and right/correct
-  (https://cal.huc.edu/oneentry.php?cits=all&lemma=tryc+A), corroborating this actual
-  form without importing an absent reveal verb or righteousness noun.
-- 15:5: From-after is the temporal after compound, followed by plural these-things.
-  Looked is the intransitive English rendering of seeing the following scene. The temple
-  WAS OPENED passively; inversion keeps the complete
-  temple-of-the-tabernacle-of-testimony genitive chain in source order, followed by
-  in-heaven. No extra behold is supplied.
-- 15:6: Here SEVEN ANGELS is explicit. They come out from the temple, identified as
-  those bearing seven plagues. While, clothed and girded remain distinct, with both
-  clothing predicates passive participles. The linen is CLEAN AND BRIGHT; the noun and
-  adjectives form a short English-order unit. Their chests/breasts are plural with
-  genuine plural possessors. The source belt is singular, retained as a-belt-of-gold in
-  the normal distributive sense for the angels, rather than silently recoding the source
-  as plural belts.
-- 15:7: One of the four living creatures GAVE seven BOWLS to the seven angels. Filled is
-  a passive participle; the bowls contain the wrath OF GOD, with the wrath suffix
-  anticipating that explicit possessor. There is NO gold word describing these bowls.
-  God IS LIVING, with both existential and living adjective retained,
-  for-the-age-of-ages. The final AMEN, absent from the reference, remains explicit.
-- 15:8: The temple was filled WITH SMOKE; with is the idiomatic English complement of
-  fill for the source's from/partitive relation. The smoke-of-the-glory genitive is read
-  as source/origin, hence smoke FROM THE GLORY OF GOD, coordinated with the explicit AND
-  FROM HIS POWER. The glory suffix anticipates God; his-power is a genuine possessor.
-  No-one-was-able preserves the negative existential, ability participle and explicit
-  past auxiliary, followed by enter-the-temple. Until-the-plagues-were-completed is the
-  passive until-condition backshifted within that past frame; inversion keeps both seven
-  numerals and the angels' genitive contiguous. The completion verb is imperfect in the
-  source, unlike the completed perfect in verse 1.
+- All eight verses and 145 exact source words were checked for morphology,
+  actors, suffixes, clause meaning, English ownership and continuous English.
+  All 11 original shared spans were reviewed. Two narrow exceptions remain:
+  the compound spatial above (15:2) and temporal after (15:5). Ordinary
+  numerals, nouns, modifiers, copulas, pronouns and past auxiliaries have
+  independent owners. English order may differ from source order, and a
+  source word may recur to separate its conjunction or grammatical support
+  from its lexical content.
+- 15:1: The author sees another sign in heaven, great and wondrous. The
+  source has plural angels followed by seven plagues; no seven numeral
+  modifies angels here. Upon-whom and there-were separately realize the
+  suffixed location and relative existential. Seven and plagues are separate.
+  Last-ones agrees with the feminine plural plagues, as does in-these. Was-
+  completed is the feminine singular perfect in Eshtaphal, with wrath as
+  subject; the wrath suffix anticipates God. Wondrous describes the sign as
+  worthy of wonder, rather than feeling astonishment.
+- 15:2: The author sees something like a sea of glass mingled with fire,
+  followed by those who had prevailed. Mingled is a feminine singular passive
+  participle beside the feminine glass noun. The victory construction with
+  min is rendered prevailed-over, with beast, image, number and name retained.
+  Image and name have genuine feminine singular possessors referring to the
+  beast. Prevailed is perfect, anterior to the active-participial standing
+  in the past vision. L-el min is the compound relation above, not a new
+  departure from the sea. CAL lists this compound as a preposition:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=l%28yl%40mn+p.
+  Above alone retains joint ownership; both sea and glass remain independent.
+  The harps are upon them, with the existential and location separate. The
+  harp noun is plural, while its masculine singular suffix anticipates the
+  explicit God; no additional his possessor is invented.
+- 15:3: Singing the hymn is the musical praise sense of the Pael participle
+  and following noun. Both plural participles, singing and saying, belong
+  to the vision's past frame. Moses/the servant/of-God and the Lamb's hymn
+  retain independent owners. The servant suffix anticipates God. Both
+  predicates explicitly say your-deeds; the second does not say ways.
+  Wondrous describes deeds as things wondered at. Just renders kaanin as
+  an adjective despite the exported root's incomplete verbal glosses; CAL
+  includes the moral and inanimate proper/fair senses:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=k%29n+A.
+  True is independently owned. Holder-of-all keeps both title words, and
+  King-of-ages retains the plural age/world noun. The speech continues
+  through the following verse.
+- 15:4: In who-will-not-fear-you, will and fear belong to the imperfect verb
+  at 2, while not belongs to the independent negator at 1. The second-person
+  object you, Lord, glorify and your-name all remain. All three causal
+  particles are retained as For, for and because. You, alone, are and holy
+  have independent owners: the explicit subject at 8, adverb at 10 and
+  copula at 9 are not combined. There is no added and-just predicate. All
+  nations will come and worship before you; all's suffix anticipates nations.
+  The final you belongs to the explicit pronoun at 20, and are-upright to
+  the second-singular predicate at 19. CAL confirms upright/honest and
+  right/correct for this adjective:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=tryc+A.
+  No absent reveal verb or righteousness noun is imported.
+- 15:5: Min batar is one temporal after relation. And is separately linked
+  to the conjunction at 0; only after retains joint ownership of 0 and 1,
+  rather than losing min by assigning that word only its conjunction. CAL
+  explicitly lists mn btr as the temporal compound:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=mn%40btr+p.
+  These-things is plural. I-looked is the author's perfect seeing verb.
+  The temple-of-the-tabernacle-of-testimony chain and in-heaven location
+  precede was-opened in natural English subject-predicate order; and and
+  was-opened both belong to the one prefixed passive perfect at 4. There
+  is no additional behold or independent opening agent.
+- 15:6: Here seven explicitly modifies angels. And/came-out belong to the
+  perfect verb at 0, seven to 1 and angels to 2. The temple source and
+  those-upon-whom-there-were-seven-plagues identification are complete;
+  upon-whom and there-were have separate owners. While is distinct from
+  the two passive participles clothed and girded. Clothed-in owns the
+  English clothing complement at 11; clean, and-bright and linen belong
+  separately to 13, 14 and 12. No shared material/modifier span is needed.
+  Their chests are plural with plural possessors. The belt is singular,
+  naturally distributive for the angels, and gold remains its genitive;
+  source belt is not recoded as plural belts.
+- 15:7: One of the four living creatures is the feminine singular subject
+  of perfect gave. Seven bowls are given to the seven angels, with both
+  numerals and both nouns independently owned. Filled is the passive
+  participle with wrath as the content; the wrath suffix anticipates God.
+  There is no gold word modifying these bowls. Who-is and living separately
+  retain the suffixed existential and living adjective. For-the-age/of-ages
+  and the explicit final Amen remain, despite omissions in the reference.
+- 15:8: And and was-filled belong to the passive perfect at 0, while temple
+  is independently owned by 1. With-smoke is the idiomatic English complement
+  of fill for the source min relation. Smoke-of-the-glory is read as origin,
+  from-the-glory-of-God, coordinated with the explicit and-from-his-power.
+  The glory suffix anticipates God; his-power has a genuine masculine
+  singular possessor. And-no-one realizes the negative existential; was
+  belongs to past HWA at 10 and able to the passive-participial ability
+  form at 9. Enter is infinitive, with the temple as object. Until precedes
+  the-seven-plagues/of-the-seven-angels/were-completed in natural English
+  order. The final verb is feminine third-plural imperfect Eshtaphal,
+  backshifted within the past vision's until condition, unlike the completed
+  perfect in verse 1. Both seven numerals retain their distinct owners.
 
 Source checks for Revelation 16:
 
