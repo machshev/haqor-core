@@ -738,7 +738,7 @@
       "bdb": [
         "k.cv.ab"
       ],
-      "summary": "A lion grown enough to hunt for itself. Its link to the root’s sense is not clear, and no cognate for it was found.",
+      "summary": "A lion grown enough to hunt for itself. Scripture’s young lion lies under cover: it sits “in hidden places” (Psa 17:12), crouches in its dens and waits in the covert (Job 38:39–40), and leaves its covert when its land is laid waste (Jer 25:38). So it may be named as the one that lies covered, as Arabic كَافِر is a man who stays in a place and hides himself. Its roar lays waste a land and its cities (Jer 2:15), but scripture does not speak of it covering the land. The link is not certain.",
       "senses": [
         {
           "gloss": "young lion",
@@ -778,7 +778,27 @@
             {
               "ref": "Isa.11.6",
               "note": "Calf and young lion together, led by a little child."
+            },
+            {
+              "ref": "Psa.17.12",
+              "note": "Like a lion eager to tear, “like a כְּפִיר sitting in hidden places.”"
+            },
+            {
+              "ref": "Job.38.39",
+              "to": "Job.38.40",
+              "note": "The young lions crouch in their dens and sit in the covert to lie in wait."
+            },
+            {
+              "ref": "Jer.25.38",
+              "note": "“He has left his covert like the כְּפִיר.”"
+            },
+            {
+              "ref": "Jer.2.15",
+              "note": "Young lions roar over him and make his land a waste, his cities burned."
             }
+          ],
+          "cognate_ids": [
+            "ar-kafir-hiding"
           ]
         }
       ],
@@ -808,7 +828,7 @@
       "bdb": [
         "k.cv.ad"
       ],
-      "summary": "An open settlement in the countryside, as against a city. Akkadian, Phoenician, Ugaritic and Syriac have the word; Arabic took it from Syriac. Its link to the root’s sense is not clear.",
+      "summary": "An open settlement in the countryside, as against a city. Akkadian, Phoenician, Ugaritic and Syriac have the word; Arabic took it from Syriac. Scripture’s villages stand among the fields (Sng 7:12; 1Ch 27:25). Arabic calls the sower كَافِر because he covers the seed with earth, and calls the earth كَفْر because it covers what is beneath it, so the village may be the place of those who cover the seed; scripture does not show the link, and it is not certain.",
       "senses": [
         {
           "id": "village",
@@ -899,7 +919,7 @@
       "bdb": [
         "k.cv.ac"
       ],
-      "summary": "A fragrant flowering shrub of the garden and vineyard. Aramaic has the same word; its link to the root’s sense is not clear.",
+      "summary": "A fragrant flowering shrub of the garden and vineyard, spoken of as a cluster (אֶשְׁכֹּל) of blossom. Aramaic has the same word. Arabic كَافُور is the sheath that covers a palm’s blossom and the calyx that covers a vine’s unopened cluster, “because it covers what is within it”, and henna is itself a paste smeared on as a dye, as the qal smears pitch; either may give the name. Scripture does not show the link, and it is not certain.",
       "senses": [
         {
           "gloss": "henna (blossoms)",
@@ -917,7 +937,8 @@
             }
           ],
           "cognate_ids": [
-            "arc-kephora-henna"
+            "arc-kephora-henna",
+            "ar-kafara"
           ]
         }
       ]
@@ -930,7 +951,7 @@
       "bdb": [
         "k.cw.ac"
       ],
-      "summary": "The thin white frost lying on the ground. Aramaic has the same word; its link to the root’s sense is not clear.",
+      "summary": "The thin white frost lying on the ground. Scripture sets it on the earth, on the face of the wilderness (Exo 16:14), and scattered like ashes (Psa 147:16): a thin covering over the ground. Aramaic has the same word. The link to covering is drawn from how the frost lies, not stated, and is not certain.",
       "senses": [
         {
           "gloss": "hoarfrost",
@@ -966,7 +987,7 @@
       "bdb": [
         "k.cw.ab"
       ],
-      "summary": "A gold or silver bowl among the temple vessels, in the later books only. Aramaic has the same word; its link to the root’s sense is not clear.",
+      "summary": "A gold or silver bowl among the temple vessels, in the later books only. Aramaic has the same word. Scripture only counts and weighs the bowls and never describes their use or shape, so nothing shows whether they were covered, or spread wide; the link to the root’s sense is not clear.",
       "senses": [
         {
           "gloss": "bowl",
@@ -998,7 +1019,7 @@
       "lang": "syc",
       "pos": "verb",
       "gloss": "deny, disown, refuse",
-      "summary": "The Peshitta’s verb for denying: Peter denying Jesus, denying oneself, refusing. Aramaic uses כְּפַר so, and Arabic كُفْر is denial and ingratitude; the Arabic lexicographers explain that use as covering over a benefit received. That link to the Hebrew is through the cognates, not shown by scripture.",
+      "summary": "The Peshitta’s verb for denying: Peter denying Jesus, denying oneself, refusing. Aramaic uses כְּפַר so, and Arabic كُفْر is denial and ingratitude, which the Arabic lexicographers explain as covering over: one covers a benefit received, or what is so, that it may not be seen. Peter covers over that he knows Jesus to shield himself (Mat 26:69–74), and Arabic also uses the root of a man covering himself with arms or a garment (تَكَفَّرَ); to deny oneself is then to cover over one’s own self. That link to the Hebrew is through the cognates, not shown by scripture.",
       "stems": [
         {
           "stem": "peal",
@@ -1488,6 +1509,21 @@
           "locator": "p. 2621, root كفر, كَفْرٌ (n37101)"
         }
       ]
+    },
+    {
+      "id": "ar-kafir-hiding",
+      "lang": "ar",
+      "form": "كَافِر",
+      "translit": "kāfir; takaffara",
+      "gloss": "one who stays in a place and hides himself; one covered with arms; (تَكَفَّرَ) cover oneself with arms or a garment",
+      "relation": "cognate",
+      "note": "Uses of كَفَرَ “cover” for a man under cover: lying hidden in a place, or wrapped in armour or a garment.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2621, root كفر, تكفّر بِالسِّلَاحِ (n37100); p. 2622, كَافِرٌ (n37110)"
+        }
+      ]
     }
   ],
   "doctrine": [
@@ -1707,5 +1743,5 @@
       ]
     }
   ],
-  "note": "USER 2026-11-12 (Christadelphian reading): the skins in the garden covered their nakedness, the flesh which had been changed, not the sin itself directly; עוֹר is singular, coats of a skin: one lamb covering both, as Christ covers all; the lamb is read from the pattern of three worlds (2Pe 3), each founded with a lamb: garden, Passover (Exo 12), Christ our Passover (1Co 5:7), with Rev 13:8; Jesus was made sin (mortal human flesh) and did no sin. Recorded as the covering-the-flesh doctrine; Gen 3:21 does not use כפר or name the animal, and the entry says so. Drafted 2026-11-09 from the brief, for the Lev 23 feasts. USER 2026-11-12: כפר is literally covering, and the usual English theological term is not to be used anywhere; the entry is re-centred on “cover”, with the wiping, cleansing and ransom words as what the covering achieves. EARLIER ANALYSIS (2026-11-09, which led with “wipe away”): The piel’s parallels are מָחָה (Jer 18:23), סוּר (Isa 6:7; 27:9), טָהֵר/חִטֵּא (Ezk 43:20, 26; Lev 16:30), “not stand” (Isa 28:18); never כָּסָה. Its tie to כֹּפֶר is explicit (Exo 30:12–16; Num 35:31–33; 2Sa 21:3–6). Literal covering is only the qal, Gen 6:14 (pitch). Cognates: Akkadian kapāru covers both “wipe clean” (also cultic) and “smear/coat”; Punic kpr “wipe away, forgive”; Aramaic pael “wipe out, efface; forgive”; Arabic kafara “cover”, kaffara “efface/expiate a sin”. So the gloss leads with “wipe away guilt, ransom”; USER 2026-11-12: the word is covering; it is literally covering, and the usual English theological term is not to be used anywhere. BDB KEYS: k.ct.ac and k.cu.ac list the same 109 tokens (spelling-based), so only k.ct.ac is used, on the one verb; its count includes the 7 כִּפֻּרִים tokens the brief shows as “no stem”. The four כֹּפֶר keys (k.ct.ab ransom, k.cu.ab pitch, k.cv.ac henna, k.cv.ae village) each count all 17 כֹּפֶר tokens, k.cw.ab/ac (bowl/frost) both count 12, so per-word use counts overstate for these homographs. k.cv.ah (כְּפִירִים Neh 6:2) counts the 32 כְּפִיר tokens, so it is left off that word. QAL: kept as a stem of the one verb (BDB’s separate denominative k.cu.ac has the same tokens); whether “coat with pitch” and the piel are one verb or two is open. LEFT OUT: proper names כְּפִירָה (Kephirah, k.cv.ag) and כְּפַר הָעַמּוֹנִי (Jos 18:24, k.cv.af) for name entries. כְּפִירִים Neh 6:2 kept as a word, though it may be a place name (Kephirim, perhaps Kephirah). OPEN: young lion כְּפִיר has no cognate found (Lane, Oracc, Krahmalkov, Segert, Fisher searched), so lexicon-support counts the root’s cognates against it; henna, frost and bowl rest on Aramaic only; the village word’s tie to the root is not shown (Lane’s sources link village to “earth, grave” as things that cover, which is their etymology, not evidence). Arabic kaffara/kaffāra may owe its religious sense to Jewish or Christian Aramaic use; recorded as Lane gives it. Ugaritic kpr “village” is from Anderson–Moser only; Ge’ez kapar “village” (Anderson–Moser, id GEZ000000) and Ge’ez for the other words not checked (Dillmann, Leslau not consulted). Klein’s Akkadian “kapru, bowl” was not found in Oracc. Ugaritic kpr “henna” (Baal texts) not checked: not in Segert’s glossary or Fisher. Krahmalkov page numbers read from the local text extraction (no PDF renderer here); check against the scan. Syriac “wipe” (Payne Smith) not consulted; the Peshitta’s כּוּפָּרָא (1Co 4:13, for περίψημα) is the scripture witness to it. Peshitta words found through SEDRA’s BFBS word list (lexemes 1569–1573, 3536; כַּפְרָא 1572 has no NT token). The Peshitta renders ἱλαστήριον and λύτρον with other roots; not recorded here. LXX renders כִּפֶּר by ἐξιλάσκομαι, which the NT does not use, so no Greek is given for the verb."
+  "note": "USER 2026-11-12 (Christadelphian reading): the skins in the garden covered their nakedness, the flesh which had been changed, not the sin itself directly; עוֹר is singular, coats of a skin: one lamb covering both, as Christ covers all; the lamb is read from the pattern of three worlds (2Pe 3), each founded with a lamb: garden, Passover (Exo 12), Christ our Passover (1Co 5:7), with Rev 13:8; Jesus was made sin (mortal human flesh) and did no sin. Recorded as the covering-the-flesh doctrine; Gen 3:21 does not use כפר or name the animal, and the entry says so. Drafted 2026-11-09 from the brief, for the Lev 23 feasts. USER 2026-11-12: כפר is literally covering, and the usual English theological term is not to be used anywhere; the entry is re-centred on “cover”, with the wiping, cleansing and ransom words as what the covering achieves. EARLIER ANALYSIS (2026-11-09, which led with “wipe away”): The piel’s parallels are מָחָה (Jer 18:23), סוּר (Isa 6:7; 27:9), טָהֵר/חִטֵּא (Ezk 43:20, 26; Lev 16:30), “not stand” (Isa 28:18); never כָּסָה. Its tie to כֹּפֶר is explicit (Exo 30:12–16; Num 35:31–33; 2Sa 21:3–6). Literal covering is only the qal, Gen 6:14 (pitch). Cognates: Akkadian kapāru covers both “wipe clean” (also cultic) and “smear/coat”; Punic kpr “wipe away, forgive”; Aramaic pael “wipe out, efface; forgive”; Arabic kafara “cover”, kaffara “efface/expiate a sin”. So the gloss leads with “wipe away guilt, ransom”; USER 2026-11-12: the word is covering; it is literally covering, and the usual English theological term is not to be used anywhere. BDB KEYS: k.ct.ac and k.cu.ac list the same 109 tokens (spelling-based), so only k.ct.ac is used, on the one verb; its count includes the 7 כִּפֻּרִים tokens the brief shows as “no stem”. The four כֹּפֶר keys (k.ct.ab ransom, k.cu.ab pitch, k.cv.ac henna, k.cv.ae village) each count all 17 כֹּפֶר tokens, k.cw.ab/ac (bowl/frost) both count 12, so per-word use counts overstate for these homographs. k.cv.ah (כְּפִירִים Neh 6:2) counts the 32 כְּפִיר tokens, so it is left off that word. QAL: kept as a stem of the one verb (BDB’s separate denominative k.cu.ac has the same tokens); whether “coat with pitch” and the piel are one verb or two is open. LEFT OUT: proper names כְּפִירָה (Kephirah, k.cv.ag) and כְּפַר הָעַמּוֹנִי (Jos 18:24, k.cv.af) for name entries. כְּפִירִים Neh 6:2 kept as a word, though it may be a place name (Kephirim, perhaps Kephirah). USER 2026-11-12 asked whether lion, village, henna, frost, bowl and deny are covering too: lion linked through its covert (Psa 17:12; Job 38:40; Jer 25:38) and Lane’s كَافِر “one staying in a place and hiding himself” (no direct cognate for the lion itself found: Lane, Oracc, Krahmalkov, Segert, Fisher searched); village through the Arabic sower who covers seed; henna through Arabic كَافُور calyx or the smeared dye; frost through lying on the ground; bowl left unclear (no evidence); deny as covering over, with Peter shielding himself. All marked not certain. henna, frost and bowl rest on Aramaic only; the village word’s tie to the root is not shown (Lane’s sources link village to “earth, grave” as things that cover, which is their etymology, not evidence). Arabic kaffara/kaffāra may owe its religious sense to Jewish or Christian Aramaic use; recorded as Lane gives it. Ugaritic kpr “village” is from Anderson–Moser only; Ge’ez kapar “village” (Anderson–Moser, id GEZ000000) and Ge’ez for the other words not checked (Dillmann, Leslau not consulted). Klein’s Akkadian “kapru, bowl” was not found in Oracc. Ugaritic kpr “henna” (Baal texts) not checked: not in Segert’s glossary or Fisher. Krahmalkov page numbers read from the local text extraction (no PDF renderer here); check against the scan. Syriac “wipe” (Payne Smith) not consulted; the Peshitta’s כּוּפָּרָא (1Co 4:13, for περίψημα) is the scripture witness to it. Peshitta words found through SEDRA’s BFBS word list (lexemes 1569–1573, 3536; כַּפְרָא 1572 has no NT token). The Peshitta renders ἱλαστήριον and λύτρον with other roots; not recorded here. LXX renders כִּפֶּר by ἐξιλάσκομαι, which the NT does not use, so no Greek is given for the verb."
 }
