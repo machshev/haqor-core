@@ -12972,6 +12972,98 @@ Source checks for 1 John 5:
   both have individual links. The chapter's final verse remains unchanged
   and is included in the whole-chapter review.
 
+Source checks for 2 John 1:
+
+- All 13 verses, 197 ordered source words and 25 original shared spans
+  were checked against the exact source forms, morphology and continuous
+  English. Ordinary noun phrases, negation, auxiliaries, copulas and clauses
+  have separate owners. Seven retained shared spans have narrow linguistic
+  reasons in the review ledger. One source word may own separated English
+  spans for its prefixes, stem, suffixes or English grammar.
+- In 1:1 the stressed first-person pronoun and the enclitic subject around
+  loving are both represented by "I myself love": I at 7, myself at 5,
+  and love at 6. The latter pronoun does not migrate into the following
+  not-I-alone clause. Compare sections 10 and 74 of
+  [Muraoka's grammar](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  The negative-focus operator `לא הוא` before I alone is narrow not;
+  the conjunction, later I, alone and but have separate owners. It does not
+  import past time. The object suffix on know anticipates the explicit
+  truth object, so only the truth has a shared object-reference span.
+- In 1:2 the conjunction and with-us phrase come from the same source
+  word; is comes from the following existential. They have separate English
+  spans. In 1:3 `עמנ` is with us, despite Murdock's with you. The first-person
+  plural suffix on Lord remains our. The Son suffix before of the Father
+  anticipates that explicit genitive and does not add another his; compare
+  Muraoka section 112. The whole verse remains unchanged and was reviewed.
+- In 1:4 `מנ` is partitive, idiomatically some of your children. Walking
+  is an English reduced relative corresponding to the source relative plus
+  participle; it does not delete the children's role as walkers. Rejoicing,
+  finding and receiving remain perfect. The verse's existing individual
+  links remain unchanged and were included in the whole-chapter review.
+- In 1:5 entreat renders the Aphel pleading sense; compare
+  [CAL, pys, C](https://cal.huc.edu/oneentry.php?cits=all&lemma=pys+V).
+  The subject pronoun, addressee and Kuria remain separate. Only not jointly
+  owns `לא הוא`; as, new, commandment, writing, I and to you are split.
+  `אית הוא` supplies the past state was, with the relative prefix separately
+  which and `לנ` separately ours. That dative is existential possession,
+  not the distinct with-us preposition used in 1:2-3. Compare Muraoka
+  sections 92(5), 93(5) and 109. One and another have separate owners for
+  the reciprocal numeral construction; compare section 12(b).
+- In 1:6 the first-person walk clause and his commandments are distinct
+  from the later second-person plural walk clause. `פוקדנוהי` is explicitly
+  plural with a singular possessor; the two number fields are not confused.
+  This, is, commandment, according to and what have individual owners.
+  The fully pronounced being verb before the walking participle expresses
+  general advice, you should walk, rather than automatically past time;
+  compare Muraoka section 87. Its subject/modality, walking and in-it phrase
+  remain separate, with the relative/content prefix also owned by in-it's
+  source word.
+- In 1:7 the anticipatory in-it/in-the-world prepositional pair is narrow
+  into, with world separately linked. Gone out and come are perfect,
+  confessing is present, and the negative and its English auxiliary are
+  separate. Those who represents the independent relative and following
+  relative prefix. Jesus, Messiah, flesh, this one, is, deceiver and
+  antichrist keep their actual source words.
+- In 1:8 take heed is plural imperative; the following imperfects belong
+  to the warning/purpose construction. Repaid preserves the passive
+  recompense sense; with a full reward supplies its English complement,
+  with full and reward separately owned. In 1:9 negation,
+  abiding and teaching of the Messiah are split; the latter's anticipatory
+  suffix does not add a duplicate his. God is not in him remains a negative
+  location clause. The later demonstrative is explicit this one, and
+  existential/dative has is the sole shared possession span, separate from
+  both the Father and the Son. No extra recipient is introduced.
+- In 1:10-11 the greeting `חדי לכ` is rendered "Joy to you!" with joy and
+  to you separately linked; compare the Syriac greeting sense of the
+  imperative under [CAL, hdy, G](https://cal.huc.edu/oneentry.php?cits=all&lemma=xdy+V).
+  Its conjunction belongs to the source greeting word, even when English
+  puts and before do not say. The receiving verb retains its object him;
+  house does not gain a possessive your. In 1:11 for, he, saying, to him,
+  the greeting, is, participant, in his, evil and deeds all have individual
+  owners. The participle expresses participation, not an additional
+  first-person actor or a new action imposed on the deceiver.
+- In 1:12 `אית הוא לי` is past existential possession: I had. Only had
+  shares the existential and past-being words; while, I and many things
+  are separate. The negative wish is perfect, while hoping is present.
+  The instrumental expression `דביד` owns by means of. The earlier source
+  infinitive owns both to write and the English anaphoric echo to do so,
+  making the source ellipsis after wish clear without adding a second
+  writing event. Paper and ink remain the medium, not agents. Hope and
+  its I are separate, coming is first-person singular,
+  and speaking is first-person plural. And, mouth, to and mouth all have
+  separate owners. That, our, joy, may be and complete are also split.
+- In 1:13 the children are the third-person plural subject of sending
+  greetings, not a first-person we or an imperative addressed to the reader.
+  The verb and suffixed greeting noun separately own send and greetings
+  to you; compare the greeting construction under
+  [CAL, shal](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%29l+V)
+  and the greeting noun under
+  [CAL, shlama](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24lm+N).
+  Elect is feminine singular and modifies your sister, with the English
+  adjective reordered into its noun phrase and individually linked.
+  Murdock's extra grace sentence has no words in this export and is not
+  supplied. Amen retains the final source word.
+
 Source checks for Revelation 1:
 
 - In 1:1, the passive giving construction with the being infinitive is
