@@ -10288,13 +10288,91 @@ Source checks for Hebrews 7:
 
 Source checks for Hebrews 8:
 
-- The opening contrast particle דינ is rendered as “but,” while the repeated causal גיר is retained as “for” in 8:3, 8:7, and 8:8.
-- The priest terminology distinguishes רב כומרא as “chief priest,” and כומרא in the plural as “priests”; the offering nouns קורבנא and דבחא are kept as “gifts” and “sacrifices.” In 8:6, בה מצעיא is retained as “in it as mediator” rather than dropping the preposition.
-- The relative and copular sequence in 8:2 is rendered “the true tabernacle that God has fixed and not a human being,” retaining both the divine actor and the negative human contrast.
-- The Moses instruction in 8:5 preserves the imperative “See, make everything,” the pattern relative, and the suffix “to you,” rather than treating the citation as an unlinked quotation.
-- The covenant quotation in 8:8–12 retains the family/house wording, the hand-taking and exodus sequence, the negative covenant-abiding clause, the “to me a people” relation, and the paired youngest-to-oldest range.
-- In 8:10, the source order is rendered with the law in their minds, writing it on their hearts, and the paired “I will be their God / they will be my people” relation; 8:11 keeps the finite verb and its first-person object together as “all of them will know me.”
-- In 8:13, the source distinguishes the first covenant being made old from what has itself grown old and decayed; the final clause therefore reads “is near to decay.”
+- All 13 verses and 224 source positions were checked against the exact
+  forms, morphology and running English. The 44 original shared spans
+  become three narrow exceptions: existential possession, a relative with
+  its resumed pronoun, and the fellow-citizen expression. Ordinary clauses,
+  noun phrases, negatives, auxiliaries and prepositions have separate owners.
+- In 8:1 and 8:3, singular construct rav governs plural kumre: chief of
+  priests preserves the singular title and its plural dependent. This is
+  distinct from plural chief priests. In 8:1, the existential ith and
+  first-plural dative lan supply there is for us; ith is not assigned to
+  the main-point heading while have is assigned to the dative alone.
+  The relative the one, perfect who sat, and right-hand relation are split.
+- In 8:2, hwa is rendered and he was. The holy house and true tabernacle
+  split the source nouns and their modifiers. God is the subject of fixed,
+  with and not a human being preserving the contrasting agent. No shared
+  God fixed span is needed merely because the source verb precedes its subject.
+- In 8:3, qam is a Peal active participle, stands, rather than a
+  morphologically passive appointed. Gifts and sacrifices are plural.
+  Because of/this separates metul hana. The past fitting predicate and
+  modal should remain separate from have, the narrow ith plus leh
+  existential-possession expression, and from its object something.
+- In 8:4, the first hwa supplies the condition he were on earth, and
+  the participle plus following past auxiliary supply he would not even
+  be a priest. The later plural past auxiliaries remain were in both
+  there were priests and who were offering gifts. Verse 5 continues the
+  same priests with those who minister to a likeness and to shadows.
+  The shadows noun is plural in the exported inflected form.
+- In 8:5, abd hwa is the past participial construction was making;
+  the baseline's about to is not imposed on this construction. The command
+  retains both imperatives, See, and make, followed by everything. The
+  pattern noun, demonstrative that, passive feminine was shown, second-
+  singular to you and mountain each retain their source owners.
+- In 8:6, Jesus the Messiah is the active subject of has received.
+  The better ministry and better covenant are separate comparisons; the
+  ministry is not compared to the covenant. Abid is a masculine passive
+  participle: Jesus is made mediator in the feminine covenant, rather
+  than he established the covenant. In which shares only the relative
+  prefix and resumed feminine bah; the passive predicate and mediator
+  remain separately linked.
+- The final was given in 8:6 is feminine singular and refers to the
+  covenant; it cannot take the masculine-plural promises as its subject.
+  English moves this final predicate before with promises. The comparative
+  than that one's treats d-hay as a genitival reference to the other
+  covenant's promises, rather than comparing the promises directly to a
+  covenant that was given. Compare the provided Murdock reference's
+  covenant being given with better promises than the former.
+- In 8:7, without blame separates the negative from the blame noun.
+  The first feminine existential and past auxiliary remain distinct.
+  In there would have been no room, there and no separately render the
+  existential and negative components of layt, while hwa supplies the
+  counterfactual past predicate. The second covenant's this and second
+  remain separately linked.
+- In 8:8, the present finding-fault predicate and its plural dative
+  are separate from has said, rendering the perfect saying predicate. Wa-egmur is and I will complete,
+  not a when particle; the baseline had shifted the following verb and
+  preposition owners. Both family of the house sequences are retained
+  before Israel and Judah, and the covenant and new modifier are split.
+- In 8:9, the noun hand is singular with a plural possessor, their hand.
+  The first-person taking predicate, brought out verb, explicit plural
+  object and from relation remain separate. My own preserves dili's
+  possessive emphasis. I and also retain their actual positions, and the
+  first-person despised predicate governs them; the final said is perfect.
+- In 8:10, I will give carries a third-masculine object suffix anticipating
+  the explicitly marked my law, not an added plural recipient them. The
+  law is given in their minds and written on their hearts. I will write it
+  is one inflected verb; and I will be, for them, I and God follow as
+  separate source words. The final and they/will be/for me/a people are
+  likewise separately linked, rather than shifting their owners to fit
+  a remembered English covenant formula.
+- In 8:11, anash is the subject one; it is not part of fellow citizen.
+  Bar mdintheh is the narrow son-of-his-city expression, his fellow citizen.
+  Compare the group-membership use of bar in
+  [CAL br](https://cal.huc.edu/oneentry.php?cits=all&lemma=br+N).
+  All of them is separate from the finite will know me with its first-
+  person object suffix. Their least and their oldest retain both plural
+  possessor suffixes, with the from and up-to relations separate.
+- In 8:12, absolve them from their iniquity retains the verb, explicit
+  object and from relation. Their sins is the object of remembering;
+  the final plural dative lehun refers to the people, against them, not
+  a second accusative object them. Again, not and the inflected remembering
+  predicate have separate links.
+- In 8:13, in that he said keeps the perfect saying predicate. The first
+  one is the marked object of causative made old, whose feminine suffix
+  resumes it. The following grown old and aged predicates describe what
+  has itself aged; the near adjective and copula remain separate from
+  the final decay noun.
 
 Source checks for Hebrews 9:
 
