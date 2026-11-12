@@ -14558,109 +14558,131 @@ Source checks for Revelation 13:
 
 Source checks for Revelation 14:
 
-- 14:1: The Lamb is standing on Mount Zion, with 144,000. Both HIS name and HIS Father's
-  name remain. The existential/on-them relative becomes on-whom-were, with normal
-  English agreement for the coordinated names, followed by written. The location is
-  on-between-their-eyes; space supplies English grammar for that relation. The
-  conjunction on with-him is retained.
-- 14:2: The voice/sound is compared with many waters and great thunder, then with ONE
-  harpist striking HIS HARPS, plural. These are not plural harpists with one harp each.
-  Sound is the contextual audible sense of voice. English supplies was in the final
-  nominal comparison; the striking participle remains linked to the singular musician.
-- 14:3: Praise is both the action and the new hymn. The explicit as/like particle
-  remains as-with. CAL's šbḥ entry includes singing a hymn
-  (https://cal.huc.edu/oneentry.php?cits=all&lemma=%24bx+V); hymn is the musical praise
-  in this scene, not a separate imported event. Before is repeated for the throne, four
-  living creatures and elders. No one was able to learn it; the object suffix
-  anticipates the hymn. Except-for renders the short `אלא אנ` exception idiom. The
-  144,000 are purchased from earth, a passive-participle description.
-- 14:4: These/are/those is explicit. With-women precedes the negative passive
-  defilement. The short virgins/for/they-are unit gives grammatical English while
-  retaining the postpositive causal particle. Followed is perfect, with its object
-  suffix anticipating Lamb. Would-go gives the following imperfect a habitual setting
-  within that past following. Purchased is passive perfect; this source has NO by-Jesus
-  agent. The human group is firstfruits to God AND the Lamb.
-- 14:5: The verse opens with a d-prefixed in-their-mouth, continued as
-  for-in-their-mouth, without adding an absent and. Mouth is singular with plural
-  possessors. The negative and passive found retain falsehood as subject. The short
-  four-position without/blemish/for/they-are unit gives for-they-are-without-blemish; no
-  negation or causal particle is lost.
-- 14:6: The angel flies in the MIDST of heaven and has an everlasting gospel UPON HIM.
-  There is no blood word here despite the reference. The gospel's eternity expression is
-  rendered with the adjective everlasting in a short unit. The audience list is people,
-  nations, tribes and language in the actual order and numbers; every scopes the list,
-  and the final every repeats that scope for grammatical English. The proclamation
-  continues into the next verse's saying infinitive.
-- 14:7: The first command is FEAR God, not Murdock's worship; the from particle belongs
-  to the fear-God construction and is rendered with the verb in a short unit. Giving him
-  glory and worshiping the one WHO MADE remain separate commands. His judgment's hour
-  HAS COME. Springs is the water-source sense of `עינא`, not literal anatomical eyes;
-  CAL lists both eye and spring/fountain
-  (https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N).
-- 14:8: Another, the second, is following him; the source leaves angel implicit here.
-  The following participle has a past auxiliary, and saying shares that narrative
-  setting. Both fallen predicates remain before Babylon the great. The source says she
-  gave the nations drink FROM THE WRATH OF HER HARLOTRY, with no wine noun here. All's
-  plural suffix anticipates nations.
-- 14:9: The third angel followed THEM. Worshiped and took are both PERFECT, rendered as
-  completed acts in the generic whoever clause. The beast's image and mark retain their
-  genuine feminine possessors. The location is between HIS eyes, the worshiper's, with
-  NO or-on-his-hand alternative. The sentence and quotation continue into the judgment
-  in the next two verses.
-- 14:10: Also HE will drink. The wrath suffix anticipates THE LORD; the source does not
-  name God at this position. Mixed and without-admixture are both explicit and are
-  retained as the source's metaphor rather than replacing mixed with an absent poured
-  verb. The cup's HIS indignation is a genuine possessor. Torment is passive imperfect,
-  with fire and sulphur, before the holy angels AND THE LAMB, not the reference's
-  throne.
-- 14:11: Smoke of THEIR torment WILL ASCEND, imperfect, for the age of ages. Rest is
-  negated for them by day AND night. Those worshiping the beast and its image are
-  followed by the full additional AND-FOR-WHOEVER-TOOK-THE-MARK-OF-ITS-NAME clause
-  absent from the reference. Took is perfect; its-name belongs to the beast. The third
-  angel's quotation closes here.
-- 14:12: Here-is-endurance has an anticipatory feminine singular existential suffix, not
-  another possessor. The saints HAVE KEPT the commandments, a perfect rather than a
-  present participle. The commandment suffix anticipates God and the faith suffix
-  anticipates Jesus; English keeps the explicit genitives without duplicate his
-  pronouns.
-- 14:13: The voice says write, a second-singular imperative. Blessed-are-the-dead
-  renders the beatitude construction idiomatically. DEPARTED is perfect and the Lord has
-  a genuine FIRST-PLURAL suffix: OUR Lord. Dashes keep the completed-departure relative
-  parenthetical so from-now-on can qualify the blessing. Yes, says the Spirit, because
-  they will rest from THEIR TOILS: the rest verb is imperfect in its causative/passive
-  stem, with the restful outcome rendered in normal English. This source has NO
-  their-deeds-follow-them clause.
-- 14:14: The source opens AND BEHOLD, without another I-saw verb. A white cloud bears a
-  sitting LIKENESS OF A HUMAN BEING; the source noun likeness remains, without importing
-  a separate Son title. English inversion preserves the sitting figure as subject. The
-  possessive existential gives he-had, followed by a gold crown ON HIS HEAD and a sharp
-  sickle ON HIS HAND. These genuine masculine possessors refer to the figure.
-- 14:15: Another angel came from the temple AND CRIED ALOUD, both perfects. The seated
-  figure on the cloud receives the full second-singular command: SEND YOUR SICKLE AND
-  REAP, because the hour has come TO REAP. The reference omits these source words. No
-  extra ripe-harvest clause is added beyond the actual ending.
-- 14:16: The one sitting on the cloud is explicit and casts HIS SICKLE on earth. English
-  uses passive inversion, there-was-cast BY-THE-ONE ... HIS-SICKLE, preserving that
-  actor and object while keeping source links ascending. The final passive clause is the
-  earth was reaped; it is not another act by an unspecified reaper.
-- 14:17: Another angel came out of the temple IN HEAVEN. On-him plus the existential
-  gives upon-him-was a sharp sickle in the narrative setting, without adding the
-  reference's separate also. The adjective and sickle form a short English-order unit.
-- 14:18: The angel from the altar has authority OVER FIRE and cries to the one with the
-  sharp sickle. Both existential/dative possession expressions remain. The explicit
-  second-person YOU is retained in the short You-send imperative unit, followed by YOUR
-  sharp sickle. The clusters belong to earth's vineyard: the vineyard suffix anticipates
-  earth. ITS GRAPES HAVE GROWN retains the perfect and the masculine singular possessor
-  referring to vineyard, not a feminine possessor referring directly to earth.
-- 14:19: The angel casts his sickle and gathers/plucks earth's vineyard; harvested is
-  the English verb for that vineyard-gathering metonym. The implied object of the
-  following cast is made explicit as the harvest, the grapes just gathered. GREAT
-  modifies the feminine WINEPRESS, not masculine God. The wrath suffix anticipates God,
-  so there is no independent extra his possessor.
-- 14:20: The full source has a winepress trampled OUTSIDE THE CITY and BLOOD COMING OUT
-  FROM THE WINEPRESS, clauses omitted by the reference. The blood reaches the bridles of
-  plural horses. The distance is A THOUSAND AND TWO HUNDRED STADES, 1,200, not Murdock's
-  1,600. Stades preserves the historical unit without an unwarranted modern conversion.
+- All 20 verses and 351 exact source words were checked for morphology,
+  clause meaning, source ownership and continuous English. All 41 original
+  shared spans were reviewed. Six narrow exceptions remain: the anticipatory
+  hymn object and exceptive connective (14:3), and four possession predicates
+  had (14:6, 14:14, and twice in 14:18). Ordinary nouns, modifiers, numerals,
+  actors, recipients, copulas, negation and postpositive particles have
+  separate owners. Reordering preserves natural English and source roles.
+- 14:1-2: The Lamb stands on Mount Zion with 144,000. Forty and four are
+  separately linked through the English hyphen; thousand remains separate.
+  Both his name and his Father's name are retained. On-whom belongs to the
+  suffixed preposition; were to the relative existential. Their names are
+  written on the space between their eyes; on and space-between have
+  separate owners, with space supplying English grammar, not a forehead
+  noun. The sound/voice is compared with many waters and great thunder;
+  many/waters and great/thunder are separate. The final comparison is to
+  one harpist striking his plural harps. The singular musician and genuine
+  masculine harp possessor are not changed to plural harpists.
+- 14:3-5: Praise is both the action and the new hymn; new and hymn are
+  independently linked. The as/like particle remains as-with. CAL includes
+  singing a hymn under the praising root:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=%24bx+V.
+  Before is repeated for throne, four living creatures and elders. No one
+  was able to learn the hymn. The feminine object suffix is on the learning
+  infinitive (position 14), anticipating the explicit hymn (15): only the
+  English object head hymn retains joint ownership, with to-learn and the
+  article separately linked. Ella en is the compound exceptive connective
+  after the negative clause, rendered by one except rather than a false
+  independent for or if. CAL explicitly documents this sense:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=%29lhn+c.
+  The 144,000 are purchased from earth, a passive-participial description.
+  These/are/those in 14:4 remain distinct. The defilement is passive perfect;
+  were belongs to that predicate and not to the negator. For/they-are/virgins
+  have independent owners. Kol kar d- is rendered to-every/place/where-he-
+  would-go: kol supplies the universal, kar the place, and the following
+  d-prefixed imperfect the relative motion. CAL identifies kar as place:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=kr%232+N.
+  This preserves the distributive location without sharing wherever. Followed
+  is perfect, with an object suffix anticipating the Lamb; would-go is its
+  habitual imperfect setting. Purchased is passive; no by-Jesus agent occurs.
+  They are firstfruits to God and to the Lamb. In 14:5 the d-prefixed mouth
+  phrase continues as for ... in-their-mouth, without an added and. Mouth
+  is singular with plural possessors. Was/found are separately linked from
+  not, with falsehood as the subject. The final for, they-are, without and
+  blemish all have independent owners.
+- 14:6-8: The angel flies in the midst of heaven and has an everlasting
+  gospel upon him. There is no blood word here. Ith leh supplies one past
+  narrative had, with and and he independently linked. Upon-him is another
+  explicit location, retained separately. Gospel and its eternity modifier
+  everlasting have their own owners. The audience follows the actual
+  people/nations/tribes/language sequence and number. Every scopes that list;
+  its English repeat before language links back to that same quantifier,
+  not to a nonexistent suffix on language. The first plural command in 14:7
+  is be-afraid-of God, with be-afraid owned by the imperative and of by min.
+  CAL explicitly gives dhl as fear/be-afraid with min of:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=dxl+V.
+  This keeps the commanded fear and its complement without a shared verb.
+  Giving him glory and worshipping the one who made remain separate
+  commands; the hour of his judgment has come. Springs is the water-source
+  sense of the eye/spring lexeme:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N.
+  Another, the second, follows him in 14:8, with angel implicit. The following
+  form is encoded Peal passive participle (tense 6) with perfect past HWA,
+  yielding was-following; those words are independently linked. HWA is not
+  a personal pronoun. Both fallen predicates remain. The English copula is
+  assigned to the second fallen predicate, separately from Babylon and
+  the-great. She gave the nations drink from the wrath of her harlotry;
+  no wine noun occurs here. All's suffix anticipates nations (Muraoka §112).
+- 14:9-13: The third angel followed them. Worshiped and took are perfects
+  in the generic whoever clause. The image and mark have genuine feminine
+  possessors referring to the beast; his-eyes belongs to the worshipper.
+  No or-on-his-hand alternative occurs. Also he will drink follows the
+  warning, retaining the independent third-person pronoun. The wrath
+  suffix anticipates the Lord, not an added God noun. Mixed and without-
+  admixture remain the actual metaphor; mixed is not replaced with poured.
+  The cup's his-indignation is a genuine possessor. Torment is passive
+  imperfect, with fire and sulphur before the holy angels and the Lamb.
+  Holy and angels are separately linked. Smoke of their torment will
+  ascend, imperfect, for the age of ages; the negative existential retains
+  no-rest-for-them by day and by night. The complete additional and-for-
+  whoever-took-the-mark-of-its-name clause remains; took is perfect and
+  its-name belongs to the beast. Here-is-endurance has a proleptic feminine
+  existential suffix. Have-kept is perfect, not participle. Commandment
+  and faith suffixes anticipate God and Jesus. In 14:13 write is second-
+  singular imperative. Blessed-are-the-dead is the beatitude construction;
+  departed is perfect, and our-Lord has a first-plural suffix. The completed
+  departure is parenthetical, leaving from-now-on with the blessing. The
+  Spirit says yes; the imperfect rest in its Ettaphal form expresses that
+  they will rest from their plural toils. No deeds-follow-them clause occurs.
+- 14:14-17: The opening is and-behold, without another I-saw verb. White
+  and cloud are independent. A likeness of a human being was sitting on
+  the cloud; the actual likeness noun is retained without adding a Son
+  title. The figure's ith leh gives one had, with and and he separate;
+  crown, gold, head, hand, sharp and sickle retain independent owners and
+  genuine possessors. Another/angel and loud/voice are split consistently.
+  Came-out and cried-aloud in 14:15 are perfect. The seated figure receives
+  the full second-singular command send-your-sickle-and-reap, because the
+  hour has come to reap. No additional ripe-harvest clause is imported.
+  In 14:16 the casting verb is active Aphel perfect, rendered the-one-who-
+  was-sitting ... cast-his-sickle, with the actor and verb independently
+  linked. The final passive earth-was-reaped is a separate event predicate;
+  and, earth and was-reaped have their own owners. Another angel comes from
+  the temple in heaven in 14:17. Upon-him and the existential give upon-him-
+  was a sharp sickle; no separate also is added. Sharp and sickle are split.
+- 14:18-20: The angel from the altar possesses authority over fire. His
+  relative possession clause is placed beside angel in English to clarify
+  the referent; source came-out and cried-aloud keep their perfect actors.
+  Each ith leh has one shared had: who, and to-the-one-who, remain separately
+  linked to their respective prefixed existentials. Authority, fire, voice
+  and the sharp sickle have independent owners. The explicit second-singular
+  you belongs to the pronoun (18), send to the Pael imperative (17). Your,
+  sharp and sickle are separate, with your on the suffixed sickle noun.
+  The earth's vineyard owns its clusters; the vineyard suffix anticipates
+  earth. Its-grapes (27) and have-grown (26) are separate. Grown is encoded
+  feminine third-plural perfect; the grapes' suffix is masculine singular
+  and points to vineyard, not directly to feminine earth. In 14:19 the
+  angel and casting verb are separate. Harvested renders gathering/plucking
+  the vineyard as a harvest metonym. The harvest supplies the understood
+  object of the next cast, the grapes just gathered. Great modifies the
+  feminine winepress, not God, and is separately linked. The wrath suffix
+  anticipates God without another his. In 14:20 the winepress is trampled
+  outside of the city; outside/of are separately owned by lbar/min. Blood
+  and came-out have independent owners. Both full clauses are present,
+  including from-the-winepress. The blood reaches plural horses' bridles;
+  the distance is a thousand and two hundred stades, 1,200, not 1,600.
+  No modern conversion is substituted for the historical unit.
 
 Source checks for Revelation 15:
 
