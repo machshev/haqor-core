@@ -10622,15 +10622,134 @@ Source checks for Hebrews 10:
 
 Source checks for Hebrews 11:
 
-- In 11:1, the existential construction and its dative are read together in the comparison with actual occurrence. In 11:3, the visible-things relative, past being predicate, and source preposition retain their own positions; the English copula is not assigned to the preposition alone.
-- In 11:4, the comparative retains the intensifier, the testimony is concerning Abel, and God is the witness to his offering. Abel is not made the speaker of testimony to God. The removal, negation, and prior testimony clauses in 11:5 remain distinct.
-- In 11:6, God remains the rewarder of those who seek him. The English retains the active rewarder predicate and its subject, with the seekers in the preceding dative phrase, rather than replacing the clause with a passive statement about being rewarded.
-- In 11:9, the heirs/inheritance construction retains the singular possessive and promise genitive as “the heirs of his promise.” In 11:10, the dative completes the city's foundation/possession construction, while the following relative identifies its builder and maker.
-- In 11:11, Sarah is the subject; her barren condition is subordinate to her receiving strength, and she gives birth outside the time of her years. The final clause says she firmly believed the promiser was faithful, rather than merely saying that she was strengthened by belief. In 11:13, the promise noun is singular with a plural possessor; dying, not receiving, the promise, and the following contrast are linked to their actual source positions.
-- In 11:16, the desired city is better than the former city, namely the one in heaven; the heavenly city is not the inferior term of the comparison. In 11:17, the possessive in “his trial” is retained, and the source's only-son/receiving-by-promise clause is followed without importing the familiar Greek construction about receiving promises. In 11:19, the ability to raise from the dead belongs to God.
-- In 11:23, Moses' parents hide him for three months after his birth; the description is of a beautiful boy. The source-order comparison in 11:26 keeps the Messiah's reproach and Egypt's treasure in their proper comparative relationship.
-- The list introduced in 11:32 continues through the following relative clauses. In 11:34, the source says they were strengthened out of illnesses, rather than changing the from-phrase into a temporal “after.” In 11:35, the source's giving to women of their sons remains part of the preceding agents' deeds; the following tortured group and its better-resurrection clause remain separate.
-- In 11:39–40, the negative reception of the promise is followed by the reason and purpose. The anticipatory looking construction in 11:40 is rendered “God looked ahead to our own advantage,” retaining both the help/advantage noun and the possessive emphasis before the clause about not being perfected without us.
+- All 40 verses and 585 source positions were checked against the exact
+  forms, morphology and connected English. The 140 original shared spans
+  become 12 narrow exceptions: hypothetical comparisons, a compound
+  temporal relation, lexical status/ability expressions, existential
+  possession, distributive repetition, relative resumptions, and the
+  negative complement of a rejection predicate. Ordinary noun phrases,
+  titles, negation, auxiliaries and clauses retain separate owners.
+- In 11:1, faith, its copula, assurance, concerning, hoped-for things and
+  manifestation remain separately linked. Ayk haw introduces as if;
+  the perfect coming-to-be and its coreferential feminine plural dative
+  are distinguished as they had themselves come to be. The actual
+  occurrence phrase remains separate from the hypothetical comparison.
+  In 11:2, the testimony noun and past being predicate are separate.
+- In 11:3, the worlds are plural and were established by God's word.
+  The second clause's past being predicate belongs to the visible
+  things' coming to be from unseen things; it is not borrowed as the
+  first clause's auxiliary. Each negative and seeing predicate has its
+  own source owner.
+- In 11:4, Abel, offering, sacrifice, far, better, than, Cain and God
+  are separately linked. God actively testified concerning Abel's
+  offering, rather than being made the passive agent of an English
+  testimony clause. The first because-of suffix is feminine; the second
+  is masculine, rendered because of him. Even, when, dead and speaking
+  remain distinct.
+- In 11:5, Enoch's passive transfer is distinct from God's active
+  removing him. Death owns the conjunction, the negatives retain their
+  own positions, and men qdam supplies before. The prior testimony and
+  pleasing God are separately linked. In 11:6, the one approaching God
+  is obligated to believe that God exists and is a rewarder to those
+  seeking him; the rewarder is not changed into people being rewarded.
+- In 11:7, the impersonal speech construction and with him retain
+  separate links. The unseen things' past auxiliary, Noah's fearing,
+  ark, life and household phrase are separately owned. The condemnation
+  relative is feminine and the righteousness is by faith. In 11:8,
+  atid has its modal future sense in he was to receive, rather than
+  asserting that Abraham was prepared. Compare Muraoka's lexical entry
+  for atid, be due to do. Calling, obeying, departing and the past
+  knowing auxiliary remain separate.
+- In 11:9, the promised land and the foreign land remain distinct.
+  Bnay yartutha is the status expression heirs, literally sons of
+  inheritance; his and promise are separately linked. In 11:10,
+  has combines only ith with its feminine dative in existential
+  possession; foundation, builder, maker, God and the final copula
+  retain separate owners.
+- In 11:11, Sarah's barren condition is subordinate to receiving strength
+  to receive seed. Outside comes from d-la, separate from the time of
+  her years. Her giving birth and firmly believing the faithful
+  promiser remain distinct, and faithful, is, the one and who promised
+  have their actual owners. In 11:12, one, old age, the many born,
+  heavenly stars, sand and sea shore remain separate. For which
+  combines only the relative prefix and resumed dative; number and
+  the negative existential there is no are separately linked.
+- In 11:13, promise is singular with a plural possessor. The masculine
+  singular object suffixes refer to that promise and are English it;
+  grammatical masculine gender does not require a human antecedent.
+  Compare Muraoka section 75 on pronouns referring to inanimate things.
+  From and afar, rejoicing and in it, confession, strangers, the copula
+  and sojourners have separate links. In 11:14, the demonstrative is
+  plural these things, and their city retains its possessive.
+- In 11:15, from which combines only the relative with the resumed
+  feminine preposition referring to the city. Seeking, its past
+  auxiliary, the counterfactual opportunity and returning again are
+  separately linked. In 11:16, the desired city is better than the
+  former city, namely the heavenly one. The desire participle and
+  auxiliary, God's lack of shame, calling and preparing are distinct.
+- In 11:17–18, Abraham's trial keeps its possessor, and his only son is
+  raised upon the altar. The relative received predicate and its past
+  auxiliary retain separate links. In Isaac seed will be called for you
+  keeps seed separate from the second-singular dative. The earlier
+  saying predicate and its auxiliary remain distinct.
+- In 11:19, matya b-iday expresses God's ability, within his hands/power;
+  only has power combines that idiom, with God separate. Raising,
+  from and the dead retain their own words. The understood patient
+  Isaac is rendered him within the raising span, rather than being
+  assigned to the from preposition or claimed as a verbal suffix. The likeness and passive giving to him
+  remain separate. In 11:20, the past auxiliary belongs to the future
+  atid phrase, which was to come, not to Isaac's blessing predicate.
+- In 11:21, the repeated had had individualizes each recipient in every
+  single one; every, one, of, sons and Joseph remain separately linked.
+  Jacob's dying, blessing and homage upon the staff are distinct.
+  In 11:22, Joseph's dying, remembering the exodus and commanding
+  concerning his bones retain separate owners.
+- In 11:23, plural abahe has its parents sense, explicitly listed for
+  Syriac under [CAL ab, plural parents](https://cal.huc.edu/oneentry.php?cits=all&lemma=%29b+N).
+  Moses' parents hide him for three months after his birth; beautiful,
+  the past copula and boy have separate owners. Afraid and of render
+  the fearing predicate and its men preposition without dropping the
+  latter. In 11:24, kpar d-la is rejection with a negative complement;
+  [CAL kpr, Peal 2](https://cal.huc.edu/oneentry.php?cits=all&lemma=kpr+V)
+  cites this exact verse. English refused absorbs that negative-complement
+  concord; refused not to be called would reverse its meaning. Only
+  refused combines the rejection predicate and d-la, leaving the passive
+  calling, son, daughter and Pharaoh separate.
+- In 11:25–26, the chosen affliction and short pleasure in sin retain
+  their source owners. The comparison says that the wealth of the
+  Messiah's reproach is far greater than Egypt's treasures; treasures
+  is plural, and the intensifier is far, not an adjective good attached
+  to Egypt's wealth. The looking participle and past auxiliary, the
+  explanatory for and the reward phrase are separate.
+- In 11:27–30, the negative, fearing predicate and of relation are
+  distinguished. As if combines the hypothetical comparison, while
+  seeing and its past auxiliary retain separate owners. The destroying
+  participle and auxiliary belong to the destroyer of the firstborn,
+  not to the purpose of his not approaching. In 11:29, the Red Sea is
+  one source token, and dry, land and on are separate. In 11:30, men
+  followed by the relative clause introduces after the walls were
+  encircled, with seven and days separately linked.
+- In 11:31–34, Rahab's receiving the scouts is distinct from those who
+  did not obey. Each negation has its own owner. The time clause and
+  repeated about relations before the named people remain separate.
+  The list continues through their overcoming kingdoms, righteousness,
+  promises, lions' mouths, fire, sword, illnesses, battle and camps.
+  Being strengthened is out of illnesses, not a substituted after clause.
+- In 11:35–37, giving women their sons continues those agents' deeds;
+  women are not made the subject of a new receiving predicate.
+  The other people's torture and death, not expecting to be delivered,
+  and the purpose of a better resurrection remain separate. Mocking
+  is singular, scourgings are plural, and the delivered-up predicate
+  belongs to the people facing bonds and prisons. The death by sword,
+  wandering, skins, needy, afflicted and beaten descriptions retain
+  their own source words.
+- In 11:38–40, of whom and concerning whom combine only the relative
+  prefixes and their resumed oblique pronouns. World, worthy, not,
+  the past auxiliary, testimony and faith remain separately owned.
+  The promise was not received. Looked and ahead split the looking and
+  preceding verbs; our own retains the emphatic possessor separately
+  from advantage. So that and not share the one d-la word's separated
+  components, while without us and be perfected have their own owners.
 
 Source checks for Hebrews 12:
 
