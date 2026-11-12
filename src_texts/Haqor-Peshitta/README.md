@@ -12556,52 +12556,105 @@ Source checks for 1 John 1:
 
 Source checks for 1 John 2:
 
-- 2:1 uses the existential/first-person dative as "we have", without adding
-  a second locative "with us". In 2:2 the identifying expression and
-  postpositive causal particle form "For he is". `על אפי` is a bound
-  prepositional expression; its face noun is not a displaced possessive.
-  The sins retain "our", and the following conjunction/negation is explicit.
-- 2:3 keeps the initial conjunction. In 2:6 `דאיכ` is the according-to
-  expression, the following walkings are a noun, and final `נהלכ` is the
-  walking verb. The verb is not moved onto the preposition. In 2:7 and
-  2:18 the first-person singular possessives remain "my beloved/children".
-- 2:12-14 retain the source's present writing forms and subsequent perfect
-  writing forms in their actual verse positions. The causal knowing clauses
-  use "because you have known"; the correlative/copular descriptions retain
-  their own positions. The source's verse boundary does not move the final
-  children/Father clause to match the Murdock reference's numbering.
-- 2:16's anticipatory masculine reference points to the world, followed by
-  a plural pronoun/copula. It is "they are from the world itself", rather
-  than a personal "from him" with the Father as an apparent antecedent.
-  2:18 retains the source's false-Messiah title and its plural counterpart.
-- 2:21 retains both the negative writing statement and the negative knowing
-  clause. The feminine all-quantifier belongs to the following falsehood,
-  not to knowing the masculine truth. The resulting clause is "and that no
-  falsehood is from the truth", with its anticipatory origin phrase absorbed.
-- 2:22 keeps the rhetorical question and renders the denial as a quoted
-  negative statement. This retains the source's `לא` while avoiding the
-  opposite English meaning produced by "denies that Jesus is not ...".
-  Compare the [Syriac text and translations](https://dukhrana.com/peshitta/analyze_verse.php?font=Estrangelo+Edessa&size=125%25&source=&verse=1John+2%3A22).
-  The following Father/Son denial sequence stays in the source's order.
-- In 2:21–22, the negative constructions `לא הות` and `לא הוא` retain
-  present assertions, rather than mechanically importing past time from
-  their perfect-form being verbs. Compare the non-inherent-predicate
-  and negative-cleft uses in [Pat-El on Syriac negation](https://doi.org/10.1093/jss/fgl006).
-- 2:23 has an active believing/trusting predicate with the Father, and the
-  later Father noun belongs to a second explicit confession predicate.
-  2:24 retains the message's remaining with the addressees, the "for if"
-  connective, and the addressees' corresponding remaining in Father and Son.
-- 2:25 keeps both the promise noun and the separate perfect promised verb.
-  2:27 likewise keeps the conditional remaining verb and its "with you"
-  phrase, rather than replacing those positions with only the anointing noun.
-- 2:27's feminine pronoun and teaching participle share the explicit anointing
-  subject. The negative existential, feminine locative, and falsehood noun
-  form a small grammatical phrase. The final masculine "in him" is distinct
-  from that feminine "in it". The comparative teaching clauses lead into
-  the separate imperative "remain".
-- 2:29 `דעו` is imperative "know", followed by "also that". The concluding
-  origin statement is "is from him"; it does not add a birth verb absent
-  from this supplied source.
+- All 29 verses, 448 ordered source words and 114 original shared spans
+  were checked against the exact forms, inflections and running English.
+  Ordinary noun phrases, pronouns, negation, auxiliaries and clause joins
+  now have separate owners wherever English permits. The remaining shared
+  spans have individual linguistic reasons in the review ledger.
+- 2:1 separates the existential `אית`, first-person dative `לנ`, Advocate
+  noun and Father phrase: "there is an Advocate for us with the Father".
+  The purpose marker and negation on `דלא` stay distinct from the second-person
+  imperfect sinning verb. `ואנ` is "And if". In 2:2 the identifying expression
+  and postpositive causal particle separately own "he is" and "For";
+  `על אפי` remains the compound preposition "for". `חלפינ דילנ` retains
+  both "for us" and the reinforcing "ourselves".
+- 2:3 distinguishes present perceiving from the perfect knowing clause.
+  In 2:4 the supplied SEDRA record classifies `דידעתה` under the feminine
+  noun `ידעתא`, knowledge, with a third-person singular suffix, rather
+  than a first-person verb. "Who claims knowledge of him" retains that
+  nominal complement without inventing an explicit first-person pronoun.
+  Compare the vocalized [Peshitta text](https://syriaccorpus.org/141).
+- 2:5, 2:14, 2:15 and 2:17 have anticipatory possessive suffixes before
+  explicit God/Father genitives. "The love/word/will of God/the Father"
+  realizes the single possessor, without adding another "his". In 2:6
+  `דאיכ` owns "according to", the plural walkings noun retains its suffix,
+  `דילה` owns "own", and the final walking verb stays separate. The
+  exemplar is the one in whom the claimant says he is; the clause does
+  not prescribe walking according to the claimant's own conduct.
+- 2:7 retains both the demonstrative and relative expressions, the past
+  existential complex, the addressees' dative and the beginning phrase.
+  Its later `דינ`, and the same particle in 2:10, explicitly own "but".
+  The word and light remain impersonal; human Jesus remains personal.
+- In 2:8 the causal prefix on darkness owns "because". The postverbal
+  `לה` belongs to `עבר`, "has passed away", not to the following true
+  light. This is the actor-referring dative described in section 8.4 of
+  [Younansardaroud's course](https://d-nb.info/1184881278/34), not an
+  extra recipient or a "from it" phrase. Light owns its own conjunction,
+  noun and adjective, followed by the separate beginning/appearing verbs.
+- 2:11 `אנינ` is feminine plural "them", proleptically anticipating the
+  feminine plural eyes; the possessor on eyes is masculine singular "his".
+  It does not mean "their eyes" or introduce a singular darkness subject.
+  The narrow "eyes" exception owns both object references, while "his", darkness
+  and its active perfect blinding verb remain separately linked.
+- 2:12-14 retain the present writing forms and subsequent perfect writing
+  forms in their actual source verses. The last youths/Father clause
+  remains in 2:13 despite Murdock's different boundary. Resumed objects
+  before the one from the beginning and the evil one retain narrow joint
+  ownership; knowing/overcoming verbs remain separate. The feminine
+  passive participle in 2:14 is stative dwelling of God's word, not an
+  unrelated past loosening event.
+- 2:16's locative and final origin pronouns anticipate the explicit world,
+  rather than introducing a Father antecedent or an extra "itself".
+  The concluding subject is plural. In 2:17 the independent `הו` explicitly
+  owns "it" in "it and its desire"; the conjunction belongs to the
+  desire word. God's will and abiding forever remain separate.
+- 2:18 keeps the comparative `איכ מדמ ד...` as "as you have heard", with
+  its dummy antecedent included in the comparative exception. The following
+  conjunction supplies the correlative "so now". The plural perfect
+  `הוו להון` is "have arisen", with an actor-referring dative; the source
+  retains the false-Messiah title and its actual plural. In 2:19 the
+  departures and former membership are past; the unreal condition and
+  participle/past auxiliary express "would have remained".
+- 2:20 begins with "And as for you", then separately links the existing
+  anointing, second-person dative and Holy One origin phrase. The later
+  `הו` marks the predicate's focus, rendered "do", not part of "every
+  person". The source says discernment of people, not "know all things".
+  Compare Muraoka sections 109-110 in the
+  [grammar](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20With%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+- 2:21 keeps the negative writing and knowing statements, resumed truth
+  object, separate knowing-it clause, and the feminine quantifier modifying
+  falsehood. "Every falsehood is not from the truth" separates quantifier,
+  falsehood, copula and negation; only the repeated origin preposition and
+  anticipatory reference remain jointly linked. In 2:21-22 `לא הות` and
+  `לא הוא` are present nominal negations, not mechanically past assertions.
+- 2:22 keeps the rhetorical question and presents the denial as its quoted
+  negative assertion. It does not say "denies that Jesus is not ...", which
+  would reverse the intended denial. The following Father/Son denial order
+  and 2:23's believing/confession predicates remain as in the source.
+- 2:24 retains both heard-from-the-first phrases, the message's remaining
+  with the addressees, and their corresponding remaining in Father and Son.
+  The last participle and its repeated subject pronoun form one finite
+  predicate; the earlier emphatic "you" remains separately linked.
+- 2:25 keeps the promise noun and separate active perfect promised verb;
+  its third-person subject is recovered in English as "he", not changed
+  to an agentless passive. Lexically plural `חיא` is English mass "life",
+  with its eternal modifier separately linked. In 2:26 the contrastive
+  particle, written things, misleading people and addressees stay separate.
+- In 2:27 the anointing remains the feminine subject of the conditional
+  remaining, present teaching and truth clauses, with neutral "it".
+  The resumed feminine pronoun before teaching belongs to that finite
+  predicate, not to God or the following object. The source's `על` owns
+  "about" before everything. The final `דאלפכונ`, however, is masculine
+  singular perfect "he taught you", distinct from feminine `הי מלפא`
+  and the feminine "in it". Its masculine reference agrees with the
+  giver/teacher and final "in him"; it is not silently feminized to make
+  the anointing the subject. Compare the [vocalized source](https://syriaccorpus.org/141).
+- 2:28 `גליות אפא` is "openness of face", the confidence expression;
+  the face noun is not part of "at his coming", which has its own word.
+  The future existential, first-person dative, negation and shame verb
+  have distinct links. In 2:29 `דעו` is imperative "know"; the final
+  existential/origin statement does not add a birth verb absent from this
+  supplied source.
 
 Source checks for 1 John 3:
 
