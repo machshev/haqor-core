@@ -15521,156 +15521,195 @@ Source checks for Revelation 20:
 
 Source checks for Revelation 21:
 
-- All 27 verses and 411 actual source positions were checked against the inflected
-  forms, vocalization, every supplied gloss alternative, numeric morphology, suffixes,
-  and final English owners. Each source position occurs once in ascending order. Two-
-  and three-position noun phrases, postpositive particles, possessive constructions,
-  negative verb units, and short predicates give grammatical English without putting
-  long clauses into combined links. Actual forms control incomplete or inconsistent
-  metadata. Articles, copulas, English nominal heads, and relative constructions are
-  supplied where the languages require them; these do not replace named actors or move
-  lexical words to other links.
-
-- In 21:1 new heavens and new earth are distinct from the former heavens and former
-  earth. The postpositive GAR belongs with the former-heavens phrase, and AZALU is a
-  plural perfect. LAYT with TOB gives the sea's present negative existence, "is no
-  more," not an additional past event. In 21:2 the holy city, new Jerusalem, is the
-  fronted object of I SAW; the seeing suffix resumes that object without introducing a
-  second city. DESCENDING is an active participle, PREPARED a passive participle, and
-  ADORNED an adjective. The order is FROM HEAVEN, FROM THE PRESENCE OF GOD, then the
-  bride comparison and HER HUSBAND. TSĒD denotes presence/proximity, not a new travel
-  destination.
-
-- In 21:3 the dwelling belongs to God and is WITH HUMANS. He DWELLS is an active
-  participle, not an automatic future. THEY WILL BE HIS OWN PEOPLE is a short
-  nominal-predicate/possessor/future-copula unit; it does not assert a separate present
-  and future being. The final nominal God-with-them phrase supplies English "is with
-  them," followed by the explicit AND WILL BE THEIR GOD. In 21:4 HE WILL WIPE AWAY ALL
-  TEARS retains the active singular agent and plural tear noun, rather than making the
-  wiping agentless. Their eyes have a genuine plural possessor. Death will not be
-  HENCEFORTH, and mourning, UPROAR, and pain have their own negatives. AGAIN belongs
-  with the final imperfect existence verb. The verse ends ON HER FACE: the actual suffix
-  is third-feminine-singular, not their. Its antecedent is not silently replaced with a
-  new noun. There is no former-things-passed causal clause in this source.
-
-- In 21:5 AND I WENT is an explicit first-person perfect before the speech. English
-  passive transposition "I was told by the one sitting" preserves the source's active
-  speaker and indirect object while allowing the subject to follow the speech verb in
-  source order. SITTING is an active participle, and ON THE THRONE remains. NEW + MAKE +
-  I forms the short unit "I am renewing," followed separately by ALL THINGS; the present
-  making is not converted into a perfect. The second HE SAID TO ME, the singular WRITE
-  imperative, THESE WORDS, FAITHFUL AND TRUE, and the plural identifying existential
-  remain. There is no BECAUSE particle or OF GOD ending to import from the reference.
-  CAL mhymn confirms faithful/trustworthy beyond the export's limited believer gloss.
-
-- In 21:6 HWAY is a separate third-feminine-plural perfect, "They have come to pass,"
-  not a copula belonging to the next I. Both explicit first-person pronouns remain in I
-  AM OLAPH AND I AM TAW. The actual Syriac letter names are retained, consistent with
-  Revelation 1:8, rather than replacing them with Greek letters. Beginning and end are
-  separate nouns. L-D-TSĀHE introduces THE THIRSTY ONE: despite the export's
-  first-person coding, the bare stative form has no attached first-person pronoun and
-  functions as the nominal recipient of I WILL GIVE. No extra assertion "I am thirsty"
-  is introduced. The explicit I and first-person imperfect GIVE remain at positions
-  10-11. EINA means SPRING in the waters/life context (CAL ayn), beyond the isolated eye
-  gloss. FROM, the waters, life, and FREELY remain. In 21:7 the conquering verb is
-  perfect, "the one who conquered," followed by the explicit HE and future inheritance.
-  The two datives give natural English HIS GOD and MY SON, with both future copulas.
-
-- In 21:8 the fearful list keeps the adversative DEYN, the separate unbelieving
-  negation, unrighteous and defiled people, murderers, SORCERERS before FORNICATORS,
-  worshipers OF IDOLS, and ALL LIARS. THEIR PORTION is a genuine plural possessor; the
-  all suffix anticipates liars instead of adding another group. The burning lake, OF
-  FIRE AND sulfur, and the second-death identification retain their actual source words.
-  In 21:9 ONE OF SEVEN ANGELS is explicit. The relative existential and ON THEM give
-  those upon whom are seven bowls, filled with the SEVEN LAST PLAGUES. He SPOKE is
-  perfect; SAYING renders the following speech infinitive. Come and show-you retain
-  their singular addressee. The wife's suffix anticipates the named Lamb; it does not
-  introduce an additional independent owner.
-
-- In 21:10 he LED ME AWAY in the spirit and SHOWED ME are third-person perfect actions
-  with genuine first-person objects. The mountain is explicitly GREAT AND HIGH. The city
-  is HOLY JERUSALEM, DESCENDING from heaven, from the presence of God. In 21:11 ITH plus
-  the city's dative gives "it has" the glory of God. ITS LIGHT is a genuine possessive
-  noun, followed by the actual repeated comparisons and both likeness nouns: precious
-  stone, jasper, and CRYSTAL. No bright adjective or extra VERY is supplied from the
-  reference.
-
-- In 21:12 the city HAS a great and high wall, HAS twelve gates, and ON THE GATES are
-  TWELVE ANGELS, which the reference omits. THEIR NAMES are written and identified as
-  the names of TWELVE TRIBES OF ISRAEL; there is no children noun. The plural pronoun is
-  retained without substituting a new explicit possessor. In 21:13 all four directions,
-  east, north, south, and west, each have THREE GATES; FROM remains, with supplied
-  English existential copulas for the nominal descriptions. In 21:14 the wall HAS twelve
-  foundations, and ON THEM are twelve names of the apostles OF THE SON, not Lamb. The
-  apostles' suffix anticipates the named Son, and the only twelve before names is not
-  repeated as an additional apostle numeral.
-
-- In 21:15 the speaking participle plus HWA gives WHO WAS SPEAKING. The separate ITH HWA
-  ON HIM construction gives one past possession, HAD UPON HIM, not an extra present and
-  past existence. Reed, measure, and gold form the short golden-measuring-reed noun
-  phrase. The measuring infinitive's object suffix anticipates the city; the purpose is
-  to measure THE CITY AND ITS WALL, with no gates noun. In 21:16 foursquare layout is a
-  passive participial state; its length is like its breadth. The measuring action is
-  perfect and its suffix anticipates the city. TWELVE THOUSAND STADES is the actual
-  count and unit, without a second twelve or an unverified metric conversion. The final
-  length, breadth, and height all retain their city possessor; the equal participle and
-  plural copula give ARE EQUAL.
-
-- In 21:17 the measuring verb's masculine suffix anticipates WALL, while the wall's
-  feminine suffix identifies the city as possessor. The count is ONE HUNDRED AND
-  FORTY-FOUR CUBITS. BY THE MEASURE OF A HUMAN, WHICH IS THE ANGEL'S retains the
-  explicit genitive comparison of the measuring standard, without adding a second cubit
-  unit. In 21:18 the wall's structure is jasper, and the city is OF PURE GOLD, IN THE
-  LIKENESS OF PURE GLASS. In 21:19 the foundations of the wall of the city are adorned
-  WITH PRECIOUS STONES, plural; there is no EVERY. The adornment is a passive
-  participle, not a perfect event. The first foundation is jasper, followed in order by
-  the second sapphire, third chalcedony, and fourth emerald.
-
-- In 21:20 the fifth has SARDIUS AND ONYX as two actual coordinated source words. They
-  are not collapsed into the reference's single sardonyx: CAL tpr explicitly cites this
-  verse's additional AND ONYX and contrasts it with the Greek's single stone. The
-  identical SARDON word at the sixth is also sardius. The seventh's KEPH DAHBA,
-  literally stone-of-gold, is the recognizable name CHRYSOLITE, supported by the Syriac
-  dictionary's specific compound entry. The two-position lexical unit retains both
-  constituents; it does not assert a uniquely identified modern mineral specimen. Eighth
-  beryl, ninth topaz, tenth chrysoprase, eleventh jacinth, and twelfth amethyst retain
-  their actual numerals and lexical owners. The last two numerals have no conjunction
-  prefix, so no extra AND is supplied.
-
-- In 21:21 twelve gates AND twelve pearls are ONE FOR ONE: a supplied English copula
-  expresses the source's nominal correspondence without adding a second gate/pearl
-  equation. EACH ONE OF THE GATES WAS OF ONE PEARL retains the single past existential
-  ITH HWA and the material MIN complement. The street OF THE CITY retains DEYN, OF PURE
-  GOLD, LIKE GLASS, and the final present ITH BAH, IS IN IT. No bright adjective or
-  extra AND before IS is imported. In 21:22 the fronted temple object is governed by I
-  DID NOT SEE IN IT. GAR gives FOR; Lord, God, AHID KUL/ALMIGHTY, the explicit HE, IS,
-  and ITS TEMPLE retain their source order and owners. There is no Lamb token in verse
-  22.
-
-- In 21:23 W-L-LAMB and W-L-CITY are parallel dative complements of passive METHBEA: FOR
-  THE LAMB AND FOR THE CITY the sun is not required, nor the moon, that THEY might shine
-  FOR IT. The two prefixes are not discarded to make a bare compound subject or move the
-  Lamb into verse 22. The glory suffix anticipates God; ILLUMINATED IT is an active
-  causative perfect with glory as its feminine singular agent and the city as object,
-  not a present generic shining or an agentless passive. ITS LAMP IS THE LAMB retains
-  the singular lamp and existential identification.
-
-- In 21:24 nations WALK and kings BRING are present active participles, not
-  automatically future. The source has neither a SAVED adjective nor THEIR on glory, nor
-  a wealth-of-nations clause. TO IT remains. In 21:25 the city's gates WILL NOT BE
-  CLOSED BY DAY is negative passive imperfect, and FOR NIGHT WILL NOT BE THERE keeps
-  GAR, the second negation, future copula, and THERE. In 21:26 they WILL BRING TO IT
-  GLORY AND HONOR OF THE NATIONS. In 21:27 the actual negative is WILL NOT BE THERE, not
-  an ENTER verb. ANYTHING UNCLEAN, anyone DOING ABOMINATION AND FALSEHOOD, and ELLA EN,
-  BUT ONLY, remain in the exclusion/exception construction. The qualifying people are
-  WRITTEN IN THE BOOK OF THE LAMB. The book's suffix anticipates the Lamb, and there is
-  no LIFE word in this source.
-
-Lexical support:
-https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A ;
-https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N ;
-https://cal.huc.edu/oneentry.php?cits=all&lemma=%2Bpr+N ;
-https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=48938 .
+- All 27 verses and 411 exact source words were checked for morphology,
+  suffixes, actors, voice, tense, negation, lexical and clause ownership,
+  and continuous English. All 66 original shared spans were reviewed.
+  Nine narrow exceptions remain: relative whom (21:9), possession has
+  (21:11, twice in 21:12, and 21:14), past physical possession had (21:15),
+  mineral compound chrysolite (21:20), past copula was (21:21), and
+  exceptive except (21:27). Ordinary nouns, modifiers, numerals, predicates,
+  auxiliaries, subjects, pronouns, negation and prepositions have separate
+  owners. Reordered English and repeated source positions across separate
+  spans retain their distinct contributions.
+- 21:1-3: I-saw is first-singular perfect. New/heavens, and-a/new/earth,
+  for/the/former/heavens and and-the/former/earth separate nouns, modifiers
+  and postpositive causal gir at 6. Passed-away is plural perfect. The-sea/
+  is-no/more independently links the noun, suffixed negative existential
+  layt and temporal tub. In 21:2 And/I-saw/the/holy/city reorders the
+  fronted object around its first-singular perfect verb; the seeing suffix
+  anticipates that city rather than introducing another object. New and
+  Jerusalem are separate. Descending is feminine active participial,
+  prepared feminine Pael passive participial, adorned adjectival.
+  From/heaven/from/the-presence-of/God keeps both source relations and
+  tsed's proximity sense, not an additional travel destination. Like/
+  a-bride/adorned/for-her-husband retains the genuine feminine singular
+  husband possessor. In 21:3 a/loud/voice separates noun and adjective.
+  I-heard is perfect, saying participial, and behold remains independent.
+  Dwelling/of-God/is-with/humans retains the locative predicate and plural
+  humans. He-dwells is present participial with genuine plural with-them.
+  And-they/will-be/his-own/people separates explicit pronoun, plural
+  imperfect, masculine singular possessive dil and people noun; it is
+  not an additional present-and-future assertion. And-he/God/is-with-them
+  retains the personal pronoun and appositional God. And-will-be/their/God
+  separately links the future copula, plural dative possession and noun.
+- 21:4-6: Explicit he and masculine singular Peal imperfect will-wipe-away
+  retain the active agent, all and plural tears. Their-eyes has a genuine
+  masculine plural possessor. Death/will/not/be/henceforth separates the
+  noun, imperfect copula at 8 and negative at 7. Mourning, uproar and pain
+  each retain their own negatives; will-there-be belongs to imperfect 17,
+  again to 16. On/her-face retains the actual feminine singular possessor
+  with idiomatic singular English face; no new antecedent noun or former-
+  things-passed causal clause is substituted. In 21:5 And-I-went is an
+  explicit first-singular perfect. And/the-one-sitting/on/the-throne/said/
+  to-me restores the active masculine singular perfect speaker and genuine
+  first-singular recipient. Sitting is active participial; the source does
+  not make John the passive subject I-was-told. I/am-making/all-things/new
+  separately links pronoun 9, first-singular participle 8, all 10 and
+  adjective 7. The later he-said/to-me, second-singular Peal imperative
+  write, and These/words/are/faithful/and-true remain. Are belongs to the
+  suffixed plural existential; faithful and true are feminine plural
+  predicates. CAL supports faithful/trustworthy beyond the limited believer
+  gloss: https://cal.huc.edu/oneentry.php?cits=all&lemma=mhymn+A.
+  No because particle or of-God ending is added. In 21:6 They-have-come-to-
+  pass is feminine plural perfect HWA, separate from the following identity
+  clauses. I/am-Olaph/and-I/am-Taw keeps both explicit pronouns; supplied
+  am belongs to each letter-name predicate. Beginning and end are separate.
+  To-the-thirsty-one gives the nominal recipient under l-d-, despite the
+  export's first-person participial coding: the bare stative form has no
+  attached first-person pronoun and does not assert I-am-thirsty. Explicit
+  I and first-singular imperfect will-give are independently linked.
+  From/the-spring/of-the-waters/of-life/freely retains the water context,
+  not an eye interpretation; CAL records spring/fountain for ayn:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=%28yn+N.
+- 21:7-9: The-one-who-conquered is masculine singular perfect, followed by
+  explicit he and imperfect will-inherit. Both future identity clauses
+  retain their datives: I-will-be/his/God and he-will-be/my/son separately
+  link the actual dative possessors and nouns. In 21:8 But belongs to
+  deyn at 1, as-for-the-fearful to 0. And-those/not/believing separately
+  renders negative at 2 and plural believing at 3. Unrighteous, defiled,
+  murderers, sorcerers before fornicators, and worshipers/of-idols remain.
+  All has a proleptic plural suffix anticipating liars. Their-portion is
+  the subject with genuine plural possessor; supplied is belongs to the
+  locative predicate is-in-the at 14, not the subject noun at 13. Burning
+  and lake are separately linked, followed by of-fire/and-sulfur and
+  which/is/the/second/death. In 21:9 One/of/seven/angels/those retains the
+  actual count and explicit pronoun. Upon/whom/there-are narrows the
+  original clause: whom alone joins relative d-prefix 6 and genuine
+  masculine plural prepositional suffix 7. Upon and there-are retain
+  their separate owners. Seven/bowls/filled-with/the-seven/last/plagues
+  keeps both different nouns: zburin is bowls; mhwatha is wounds/plagues,
+  not another bowls noun. Filled is passive participial. He-spoke is
+  masculine singular Pael perfect, with-me genuine first-singular, and
+  saying renders the following infinitive. Come and show-you retain
+  their singular addressee. The wife suffix anticipates of-the-Lamb.
+- 21:10-12: Led-me-away is masculine singular Aphel perfect, showed-me
+  masculine singular Pael perfect; both have genuine first-singular object
+  suffixes. In-the-spirit retains its actual noun and preposition. To-a/
+  great/and-high/mountain separates the noun and both modifiers. The/holy/
+  city/Jerusalem/descending retains feminine participial descent, followed
+  by from/heaven/from/the-presence-of/God. In 21:11 And/it/has separates
+  conjunction and feminine singular possessor from shared existential-plus-
+  dative possession. Glory/of-God and its-light retain the genuine feminine
+  singular city possessor. Is-like/the-likeness/of-a/precious/stone, like/
+  jasper, like/the-likeness/of-crystal keeps all three comparisons and
+  both actual likeness nouns. No very or brilliant adjective is added.
+  In 21:12 both And/it/has and and/it/has are independently scoped
+  possession predicates. A/great/and-high/wall, twelve/gates and and-on/
+  the-gates/are/twelve/angels keep noun, modifiers and numerals distinct.
+  Supplied are belongs to locative predicate on at 9, not angels or twelve.
+  Their-names has a genuine masculine plural possessor; written is an
+  adjective, followed by which/are/the-names/of-twelve/tribes/of-Israel.
+  There is no children noun or substituted explicit name possessor.
+- 21:13-17: The four directions retain from/east, and-from/north,
+  and-from/south and and-from/west, each followed by three/gates. These
+  nominal catalogue phrases preserve the count and location without
+  assigning a supplied auxiliary to a noun subject or joining numeral
+  and noun. In 21:14 the wall/of-the-city is the subject of shared has,
+  ith plus masculine singular dative possessor, with twelve/foundations
+  independent. And-on-them/are/twelve/names links supplied are to the
+  locative predicate at 6, not numeral 7. The apostles suffix anticipates
+  explicit of-the-Son; no additional his or apostle numeral is supplied,
+  and the source says Son here, not Lamb. In 21:15 the-one/who/was/speaking/
+  with-me splits the relative and Pael participle at 1 from actual past
+  auxiliary HWA at 2. Had alone joins ith, past HWA and alawhi for the
+  single past physical possession predicate, with upon-him independently
+  retaining its actual location and masculine singular suffix. A/golden/
+  measuring/reed has independent noun, gold and measuring-relation owners.
+  To-measure is infinitive with a proleptic feminine object suffix for
+  the-city, followed by and-its-wall. No gates object is added. In 21:16
+  Is-laid-out belongs to passive participle 2 and foursquare to adverb 1.
+  Its-length/is-like/its-breadth retains feminine singular city possessors.
+  Measured is active perfect with proleptic city object, followed by city/
+  with-the-reed/to/twelve/thousand/stades. The two count components are
+  separately linked, without a second twelve or metric conversion. Its-
+  length/and-its-breadth/and-its-height/are/equal retains all three genuine
+  feminine singular possessors, explicit plural copular pronoun 17 and
+  equal participle 16. In 21:17 the measuring suffix anticipates masculine
+  wall; wall's feminine suffix identifies the city. One-hundred/and-forty/
+  four separately links the numeral components around the written hyphen,
+  followed by plural cubits. By-the-measure/of-a-human/which/is/the-angel's
+  separates actual existential copula 9 and genitive predicate 10.
+- 21:18-21: Structure/of-its-wall/is-jasper retains the genuine feminine
+  city possessor on wall and supplied copula on jasper predicate. City/
+  is-of/pure/gold and in-the-likeness/of/pure/glass separate both ordinary
+  material noun/adjective groups. In 21:19 foundations/of-the-wall/of-the-
+  city/are-adorned/with/precious/stones keeps plural passive Pael adornment
+  as a state, with reordered independent noun and modifier owners. No every
+  is supplied. And-the/first/foundation/is-jasper separates ordinal and
+  noun; second/sapphire, third/chalcedony and fourth/emerald remain. In
+  21:20 fifth/sardius/and-onyx are separate actual words; the conjunction
+  is not collapsed into one sardonyx word. CAL explicitly quotes this
+  source's extra and-onyx relative to the Greek's single stone:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=%2Bpr+N.
+  The identical raw sardon at the sixth also retains sardius. Seventh/
+  chrysolite preserves one mineral compound keph dahba, literally stone
+  of gold; the Syriac dictionary documents this compound:
+  https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=48938.
+  Miller-Naude and Naude's 2020 original research, Table 19 (printed p. 11),
+  independently compares the Syriac terms with chalcedony and chrysolite:
+  https://hts.org.za/index.php/hts/article/download/6141/16344.
+  These conventional ancient names do not assert uniquely identified modern
+  mineral specimens. Eighth/beryl, ninth/topaz, tenth/chrysoprase, eleventh/
+  jacinth and twelfth/amethyst keep all ordinals and lexical owners; the
+  last two ordinals have no extra and. In 21:21 both twelve counts and
+  both gates and pearls remain. Are-one/for-one separately renders the
+  nominal correspondence; no second equation is added. Each-one/of/the-
+  gates/was/of/one/pearl retains one joint past copula ith HWA and material
+  min complement, with noun and numeral separate. And-the-street/of-the-
+  city/however separates postpositive deyn from both nouns. Of/pure/gold/
+  like/glass/is/in-it retains the actual material description and final
+  present existential plus genuine feminine singular city location.
+- 21:22-27: Temple is the fronted object of first-singular I-did/not/see/
+  in-it, with auxiliary and see at verb 2 and negative at 1. For belongs
+  to postpositive gir at 5, the-Lord to 4. God/the-holder/of-all splits
+  the ahid kul title's lexical owners, consistent with the reviewed book.
+  Explicit he/is/its-temple retains both pronoun and suffixed existential;
+  temple has a genuine feminine singular city possessor. No Lamb token
+  occurs in 21:22. In 21:23 And-for-the-Lamb/and-for-the-city retains both
+  parallel datives. The-sun/is/not/required separates the noun, passive
+  Ethpeal participle 3 and negative 2, followed by nor/the-moon and plural
+  Aphel imperfect that-they-might-shine/for-it. For/the-glory/of-God
+  separates postpositive gir 10 from noun 9, whose suffix anticipates God.
+  Illuminated-it is feminine singular Aphel perfect, with glory as active
+  agent and the city as genuine feminine object; it is not generic present
+  shining or an agentless passive. Its-lamp/is/the-Lamb retains singular
+  lamp, feminine singular city possessor and identifying existential.
+  In 21:24 And/the-nations/walk reorders the active Pael participle and
+  subject independently; in-its-light retains the genuine city possessor.
+  Kings/of-the-earth/bring/to-it/glory retains present active Aphel
+  bringing, with no saved adjective or their-glory/wealth clause. In 21:25
+  gates/will/not/be-closed keeps plural passive Ethpeal imperfect 2 and
+  negative 1. By-day is independent. For/night/will/not/be/there separately
+  links gir 5, noun 4, future copula 7, negative 6 and location 8. In 21:26
+  They-will-bring is plural Aphel imperfect, with to-it/glory/and-honor/
+  of-the-nations separate. In 21:27 And/there-will/not/be/there separates
+  prefixed negative 0 and imperfect 1. Anything/unclean and nor-anyone-
+  who-does/abomination/and-falsehood retain the actual exclusion and active
+  participle. Ella en jointly gives except, a fixed exceptive after the
+  negative clause rather than a new standalone but-if condition. Those/
+  written/in-the-book/of-the-Lamb retains the feminine plural passive
+  participle, book's proleptic masculine singular suffix and explicit Lamb
+  genitive. No enter verb or life noun occurs in this source.
 
 Source checks for Revelation 22:
 
