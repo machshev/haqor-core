@@ -15713,14 +15713,23 @@ Source checks for Revelation 21:
 
 Source checks for Revelation 22:
 
+- The shared-span review checked all 21 verses and 283 source words, splitting all
+  31 original shared spans with no retained exceptions. Every final mapping and the
+  continuous English received independent review against the frozen chapter hash.
+  The paired side expressions, future copula and locative suffix, ordinary nouns
+  and modifiers, explicit pronouns, negators, actors and predicates are separately
+  owned. Reordered English and repeated ownership keep the clauses grammatical
+  without merging source words. Supplied copulas belong to their nominal or
+  locative predicates rather than their subjects.
+
 - All 21 verses and 283 actual source positions were checked against the inflected
-  forms, vocalization, every gloss alternative, morphology, suffixes, and final English
-  owners. Every position occurs once in ascending order. Short noun phrases, negative
-  units, and predicates use two or three positions; long clauses are not hidden in
-  combined links. The final chapter had two full independent source reviews and a
-  continuous-English review, with the final narrow wording changes checked against the
-  frozen baseline. Supplied English articles, copulas, nominal heads, and resumptive
-  constructions express grammar without replacing actual actors or lexical owners.
+  forms, vocalization, every gloss alternative, morphology, suffixes and final English
+  owners. Source positions are ordered in the export; final English freely reorders
+  them and can repeat an owner across separate spans. Every span has one source word.
+  Two independent source reviews and a cold running-English review checked the final
+  frozen TSV, notes and empty exceptions ledger. Supplied English articles, copulas,
+  nominal heads and resumptive constructions express grammar while retaining the
+  actual actors and lexical owners.
 
 - In 22:1 he SHOWED ME is perfect, while the river PROCEEDS is an active participle. The
   waters, life, PURE, ALSO BRIGHT, and crystal comparison remain distinct source words.
@@ -15731,9 +15740,10 @@ Source checks for Revelation 22:
   their genuine singular tree possessor and plural noun forms. No ONE is supplied before
   the monthly fruits. The leaves are FOR THE HEALING OF THE NATIONS.
 
-- In 22:3 ALL CURSE under negation is the short unit NO CURSE, with WILL BE THERE
-  retained. The throne OF GOD AND OF THE LAMB WILL BE IN IT, and HIS SERVANTS WILL SERVE
-  HIM; the latter keeps both the genuine servant possessor and the verb's object suffix.
+- In 22:3 ALL CURSE under negation is rendered THERE WILL NOT BE ANY CURSE
+  THERE. ANY and the conjunction retain KUL at position 0, NOT has its own negative
+  word, and the future copula and locative THERE remain distinct. The throne OF GOD
+  AND OF THE LAMB WILL BE IN IT, and HIS SERVANTS WILL SERVE HIM; the latter keeps both the genuine servant possessor and the verb's object suffix.
   In 22:4 HIS FACE has the idiomatic plural form, naturally singular English, and HIS
   NAME is ON BETWEEN THEIR EYES. A supplied English nominal head gives "on the space
   between their eyes," without replacing EYES with a forehead noun. The name's future
@@ -15787,10 +15797,10 @@ Source checks for Revelation 22:
   predicates. In 22:14 DOING HIS COMMANDMENTS is present participial; THEIR AUTHORITY
   WILL BE OVER THE TREE OF LIFE retains the plural possessor, singular authority noun,
   and future existence. The actual GATE is singular, through which THEY WILL ENTER THE
-  CITY. In 22:15 fornicators, murderers, and worshipers OF IDOLS precede OUTSIDE.
-  Supplied English copulas and resumption connect the subsequent unclean people,
-  sorcerers, and ALL OBSERVERS AND DOERS OF FALSEHOOD. OBSERVERS is a plural noun, not
-  the reference's lovers; no dogs word occurs in this source.
+  CITY. In the source of 22:15 fornicators, murderers, and worshipers OF IDOLS precede
+  OUTSIDE. The English OUTSIDE ARE fronts the locative predicate, which owns the supplied copula for the entire list, including
+  unclean people, sorcerers, and ALL OBSERVERS AND DOERS OF FALSEHOOD. OBSERVERS is a
+  plural noun, not the reference's lovers; no dogs word occurs in this source.
 
 - In 22:16 I, JESUS, SENT MY ANGEL is perfect with the genuine first-person angel
   possessor. The purpose clause is THAT HE MIGHT TESTIFY AMONG YOU THESE THINGS BEFORE
@@ -15808,8 +15818,8 @@ Source checks for Revelation 22:
   audience hears THE WORD, singular, OF THE PROPHECY OF THIS BOOK. The next relative
   introduces anyone ADDING TO THEM, with the genuine feminine plural pronominal
   complement preserved even though the earlier word noun is singular. GOD is the
-  explicit active subject of WILL PLACE UPON HIM THE PLAGUES WRITTEN IN THIS BOOK. A
-  short verb/prepositional-object/subject unit makes that English clause grammatical
+  explicit active subject of WILL PLACE UPON HIM THE PLAGUES WRITTEN IN THIS BOOK. The
+  reordered subject, verb and prepositional object each keep their own word,
   without inventing another agent.
 
 - In 22:19 the first decreasing verb is a present participle with FROM, "takes away
