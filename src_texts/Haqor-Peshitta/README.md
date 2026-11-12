@@ -11818,25 +11818,145 @@ Source checks for 1 Peter 3:
 
 Source checks for 1 Peter 4:
 
-- 4:1: Rendered `כלמנ` (position 12, no exported gloss) as “every one,” matching the clause and Murdock context; rendered `לה מנ` (17–18) as the “from” relation before “all sins.”
-- 4:2: Kept `נחא` as “live,” not “save,” and grouped the adjacent lust/human/live sequence into “to live for human lusts”; `כמא זבנא דאיתוהי` is rendered “as long as he is.”
-- 4:3: Preserved the sequence of profane desire, luxury, drunkenness, lasciviousness, revelry/music, and demon worship; the final `פולחנא` is contextually “worship,” not generic work.
-- 4:4: Rendered the imperfect plural verbs as the present “they marvel and blaspheme,” and retained the negative `בדלא` as “because you do not revel.”
-- 4:5: Rendered `עתיד` in the relative clause as “is ready,” with `למדנ` as the infinitive “to judge”; the objects remain “the dead and the living.”
-- 4:6: Rendered `אסתבר` (Ethpeal perfect) as “was preached,” and `נתדינונ` as the passive “might be judged”; `ונחונ` remains active “live,” not “are made alive.”
-- 4:7 preserves contrastive `דינ` as “But” in the initial predicate. The separate `מטל הנא` supplies “therefore” before the exhortations “be sober” and “be watchful.”
-- 4:8: Rendered `חובא` as “love,” `חריפא` as “fervent,” and `חדדא` as “one another”; the final clause is “love covers a multitude of sins.”
-- 4:9: Rendered `אכסניא` as “strangers” and preserved `דלא` as “without,” yielding “without murmuring.”
-- 4:10: Preserved the second-person plural suffix in `מנכונ` as “of you,” the feminine singular object suffix in `בה` as “with it” (the gift), and the third-person masculine singular suffix in `לחברוהי` as “his associates.” `רבי ביתא טבא` is rendered contextually as “good stewards.”
-- 4:11: Rendered the two כל-מנ forms as “whoever” and kept the repeated speech/minister predicates. The 13–14 giving form includes its dative suffix as “has given him”; 18–19 preserve “God may be glorified” despite source verb-before-subject order. Positions 23–25 are the resumptive possessive/copula relationship, rendered “to whom belongs.”
-- 4:12: Kept the plural address and suffixes in both “to you” phrases. The final 11–14 causal/copular group is rendered “because it was for your testing”; this avoids the ungrammatical source-order fragment while retaining the explicit “it was.”
-- 4:13: The source places “at the revelation of his glory” before the two second-person rejoicing verbs; retained that order as “thus also, at the revelation of his glory, rejoice and exult.” The 4–5 phrase is Messiah’s sufferings, not a generic suffering.
-- 4:14: Preserved the plural “you” in reproach and the dative plural “upon you.” Positions 8–10 are the actual noun phrase `רוחא משבחתא דאלהא`: “the praiseworthy Spirit of God”; no causal “because” is inserted. “The name of the Messiah” follows the construct relationship.
-- 4:15: The source closes with the suffering predicate (13–14), after the three role descriptions. Rendered “as one who does evil suffer” to keep all classifications and avoid moving the verb across source positions.
-- 4:16: Retained the conditional and contrast, the Christian designation, negated shame, and the demonstrative “this name.”
-- 4:17: Grouped the source-order copular/relative clause 0–4 as “because it is time for judgment to begin,” and 8–11 as “if it begins with us.” “Those who do not obey the Gospel of God” retains the relative plural and negation.
-- 4:18: Kept “scarcely lives” (not “is made alive”); the source has the ungodly and sinner before the “where ... be found” predicate, so the final span preserves that source ordering while remaining readable.
-- 4:19: Rendered `מטל הנא` as the causal-demonstrative “For this reason,” retaining both source words before the relative subject. `בעבדא שפירא` is singular/mass “in good work,” not plural “works.” The final `איכ דלברויא מהימנא` is rendered “as to the faithful Creator,” attaching the comparison/recipient to the preceding “to him” while preserving the Creator noun and faithful adjective.
+- All 19 verses and 268 source words were checked against their exact
+  forms, inflection, actors and continuous English. All 57 original
+  shared spans were reviewed. Ordinary modifiers, pronouns, auxiliaries,
+  negatives, genitives and clauses now have individual owners; repeated
+  indices separate prefixes, stems and suffixes in English order. The
+  remaining shared expressions have individual linguistic reasons in
+  the ledger. The final frozen chapter, notes and exceptions received
+  independent source, peer and cold review before integration.
+- In 4:1-2, If, Messiah, therefore, has suffered, for you and flesh
+  retain separate owners. The additive continuation supplies then ...
+  also around explicit you. Arm yourselves is the reflexive imperative;
+  with this compresses the anticipatory preposition/pronoun and repeated
+  demonstrative, apart from mind. The previous rendering lost the mind
+  phrase inside arm yourselves. For, everyone and who dies are distinct;
+  kolman is the universal-indefinite compound despite the missing export
+  gloss. Dies is an active participle used generically, not the Greek
+  suffering verb. His body retains its suffix. Has ceased includes the
+  following actor-referring dative, apart from from all sins. This
+  postverbal l- construction is commonly untranslatable independently;
+  see [Younansardaroud, section 8.4, printed page 57](https://d-nb.info/1184881278/34#page=66).
+  In 4:2, so that and not share d-la around the clause. Henceforth is
+  separate. For as long a time as he is in the body separates the
+  duration quantifier, time noun and existential copula. Live remains
+  secondarily governed by the purpose clause, with its third singular
+  subject he. For the lusts of humans and for the will of God each
+  keep their nouns and prepositions; no extra do verb is assigned to
+  the will noun.
+- In 4:3, is sufficient belongs to position 0, the active participle,
+  and For to 1. That time which has passed separates the demonstrative,
+  time and past verb. In which combines the relative prefix on
+  you carried out with the resumed in-it pronoun. The finite second
+  plural perfect at 5 supplies you carried out, not was sufficient;
+  in-it at 6 does not mean for you to work. The profane and all five
+  following activities retain their owners. Profligacy and drunkenness
+  remain distinct from lasciviousness, revelry and demon worship.
+  Revelry is not merely borrowed from a parallel translation: [CAL,
+  zmr, sense 4](https://cal.huc.edu/oneentry.php?cits=all&lemma=zmr+N)
+  explicitly attests the Syriac sense alongside song and singing, with
+  examples from Aphrahat and Romans 13:13. Worship is the contextual
+  service sense of pulhana before of demons.
+- In 4:4-6, And behold retains its conjunction, and now its own word.
+  Marvel and blaspheme have third plural subjects, with against you
+  separate. Because and not separate the causal-negative connector
+  from the second plural indulge predicate; the Ethpaal is active in
+  meaning here. With them, in that, former and profligacy are distinct.
+  Those who will give account resumes the same people; God, the one,
+  who is ready and to judge remain separate. Dead precedes living in
+  the actual source. In 4:6, For, because of and this have their own
+  source words. The gospel was preached renders the perfect Ethpaal
+  proclamation verb; gospel is its verbal content, not a separate
+  Syriac noun at that position. Also and to the dead are distinct.
+  The purpose passive they might be judged contrasts with active
+  live. As humans, in the flesh, in God and in the spirit keep
+  their own constituents. In God follows b-alaha rather than replacing
+  it with an unmarked according-to phrase.
+- In 4:7-9, But, end and of all things are separate. Has arrived
+  includes the actor-referring postverbal dative, without inventing
+  an additional female recipient or a new itself object. Because of
+  and this introduce the separate commands be sober and be watchful
+  for prayer. And above all things splits the priority preposition,
+  universal quantifier and thing noun. Let fervent love toward one
+  another be yours retains love as the singular subject of the third
+  singular imperfect; be yours renders the be/to-you possession
+  construction. Fervent is not assigned have, nor the love noun a
+  new verb. For, love, covers, multitude and of sins are separate.
+  In 4:9, And be is the fully pronounced hwaitun advice construction,
+  followed by compassionate, strangers, without and murmuring; see
+  [Muraoka, section 87, printed page 68](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+- In 4:10-11, And each of you, let minister, with it, the gift,
+  which he has received, from God and to his associates are separate.
+  The gift apposition identifies the feminine it; no gift word is
+  assigned to a ministering verb. Good household managers separates
+  the adjective, houses/households and masters/managers; the source
+  is plural, even though the opening each is distributive singular.
+  Diverse qualifies grace; its genitive and of God remain separate.
+  In 4:11, each kolman is whoever. The first speakers' instruction
+  keeps speaks apart from let him speak and according to the word
+  of God. The parallel ministering instruction restores its understood
+  directive in English, repeating minister with the same source owner
+  for one activity rather than introducing a second action. As,
+  from, that power, which God gives him have their actual owners.
+  Gives is an active participle, not has given. So that in all is
+  position 15; that you do separates 16 and explicit you at 17.
+  God at 19 is the subject of may be glorified at 18. These repair
+  the former shifted links. Through Jesus the Messiah and the one
+  whose are the glory and honor remain individually linked. Are
+  is English agreement with the compound subject; the Syriac copular
+  hi is feminine singular, agreeing with glory. Forever and ever
+  represents the age-of-ages duration formula; Amen is separate.
+- In 4:12, My beloved retains the first singular possessive. Do,
+  not and be amazed are distinct. Trials that happen and something
+  strange that is happening use present participles, not past
+  have happened or has happened. Both to-you suffixes remain separate.
+  As if something separates the comparative from its dependent
+  indefinite; strange is separately linked. The final clause is a
+  present focus construction: because it is for your testing that
+  they occur. It is belongs to hu, for your testing and that to
+  d-l-bohrankhun, and they occur to the plural participle hawen.
+  It is not the former single past it was clause; compare Muraoka,
+  section 110, on the focusing copula.
+- In 4:13-14, rejoice is imperative, followed by that you are sharers.
+  The possessive on sufferings anticipates the Messiah. So that also
+  introduces the purpose with imperfect you may rejoice and exult
+  at the revelation of his glory; these are not two new imperatives.
+  If, explicit you and are reproached remain separate. On account
+  of is the al appay compound; name and of the Messiah have their
+  own words, with the possessive on name anticipatory. Blessed are
+  you retains its suffix. For the glorious Spirit of God rests upon
+  you renders the following d- clause as the explanatory ground,
+  as in Murdock; it does not omit the connective merely because
+  there is no separate metul noun. Glorious is an adjective agreeing
+  with Spirit, not a new of glory noun phrase. Spirit is it if a
+  pronoun is used.
+- In 4:15-16, Only, let, no, one, among you, be and suffering have
+  separate owners. The three classifications retain each as and
+  or: murderer, thief and one who does evil things. Evil things
+  is plural. The next But if separates din from en. Christian,
+  suffers, not, be ashamed and glorify remain individually linked.
+  For this name uses b- causally, with its anticipatory in-it and
+  repeated in-this rendered once; the name belongs to its own word.
+  The name refers to the Christian designation, not an extra
+  possessive his name assigned to a bare noun.
+- In 4:17-19, For, the time, it is, to begin and judgment are
+  separate; the house's possessive anticipates God. But if it begins
+  from us separates the two particles, begin and first plural
+  from-us suffix. What, is, end, of those, who are not persuaded,
+  by the Gospel and of God keep their actual owners. The Gospel's
+  suffix anticipates God. In 4:18, the righteous one is singular;
+  scarcely and lives are distinct. The ungodly, sinner, where and
+  be found remain separately linked; the participial finding is
+  prospective in the judgment context. In 4:19, Because of this
+  separates its two words. Those who suffer, according to, will
+  and of God are distinct, with the will's suffix anticipatory.
+  Let entrust, their souls and to him retain the plural actors,
+  plural souls and singular recipient. In good deeds keeps both
+  the plural deeds and plural adjective, correcting the former
+  singular/mass claim in these notes. As to the faithful Creator
+  separates the comparison, recipient/title and adjective; faithful
+  is the contextual trustworthy sense of mehaymna.
 
 Source checks for 1 Peter 5:
 
